@@ -1,0 +1,3313 @@
+## Summary of Key Concepts
+
+To review key terms, go to the Vocabulary Self-Quiz (eTextbook only).
+
+## Concept 17.1: Genes specify proteins via transcription and translation
+
+\- Beadle and Tatum's studies of mutant strains of Neurospora led to the one gene–one polypeptide hypothesis. During gene expression, the information encoded in genes is used to make specific polypeptide chains (enzymes and other proteins) or RNA molecules.
+
+\- Transcription is the synthesis of RNA complementary to a template strand of DNA. Translation is the synthesis of a polypeptide whose amino acid sequence is specified by the nucleotide sequence in messenger RNA (mRNA).
+
+\- Genetic information is encoded as a sequence of nonoverlapping nucleotide triplets, or codons. A codon in mRNA either is translated into an amino acid (61 of the 64 codons) or serves as a stop signal (3 codons). Codons must be read in the correct reading frame.
+
+Describe the process of gene expression, by which a gene affects the phenotype of an organism.
+
+## Concept 17.2: Transcription is the DNA-directed synthesis of RNA: A Closer Look
+
+\- RNA synthesis is catalyzed by RNA polymerase, which links together RNA nucleotides complementary to a DNA template strand. Transcription follows the same base-pairing rules as DNA replication, except that in RNA, uracil (U) substitutes for thymine (T).
+
+![](images/dde8d32c3ebe6489db937c6e25a9de6d3a50f886fa63f08382a5a42904e97877.jpg)
+
+\- The three stages of transcription are initiation, elongation, and termination. A promoter sequence, often including a TATA box in eukaryotes, establishes where RNA synthesis is initiated. Transcription factors help eukaryotic RNA polymerase recognize promoter sequences, forming a transcription initiation complex. Termination differs in bacteria and eukaryotes.
+
+Compare the initiation of transcription in bacteria and eukaryotes.
+
+## Concept 17.3: Eukaryotic cells modify RNA after transcription
+
+\- Eukaryotic mRNAs undergo RNA processing, which includes RNA splicing, the addition of a modified nucleotide 5' cap to the 5' end, and the addition of a poly-A tail to the 3' end. The processed mRNA includes an untranslated region (5' UTR or 3' UTR) at each end of the coding segment.
+
+\- Most eukaryotic genes are split into segments: They have introns interspersed among the exons (the regions included in the mRNA). In RNA splicing, introns are removed and exons joined. RNA splicing is typically carried out by spliceosomes, but in some cases, RNA alone catalyzes its own splicing. The properties of RNA allow some RNAs (called ribozymes) to act as catalysts. The presence of introns allows for alternative RNA splicing.
+
+![](images/3488ae945378f74a1c5c454272a7c4bfd51e6c7f53e2d73c95a2a973bce2ab14.jpg)  
+What function do the 5' cap and the poly-A tail serve on a eukaryotic mRNA?
+
+## Concept 17.4: Translation is the RNA-directed synthesis of a polypeptide: A Closer Look
+
+\- A cell translates an mRNA message into protein using transfer RNAs (tRNAs). After being bound to a specific amino acid by an aminoacyl-tRNA synthetase, a tRNA lines up via its anticodon at the complementary codon on mRNA. A ribosome, made up of ribosomal RNAs (rRNAs) and proteins, facilitates this coupling with binding sites for mRNA and tRNA.
+
+\- Ribosomes coordinate the three stages of translation: initiation, elongation, and termination. The formation of peptide bonds between amino acids is catalyzed by rRNAs as tRNAs move through the A and P sites and exit through the E site.
+
+![](images/76618523cf7652fc3f7ef6d170073f5712ac41cce10ecb8f441f032bad36ce88.jpg)
+
+\- After translation, during protein processing, proteins may be modified by cleavage or by attachment of sugars, lipids, phosphates, or other chemical groups.
+
+\- Free ribosomes in the cytosol initiate synthesis of all proteins, but proteins with a signal peptide are synthesized on the ER.
+
+\- A gene can be transcribed by multiple RNA polymerases simultaneously. Also, a single mRNA molecule can be translated simultaneously by a number of ribosomes, forming a polyribosome. In bacteria, these processes are coupled, but in eukaryotes they are separated in space and time by the nuclear membrane.
+
+How do tRNAs function in the context of the ribosome during translation?
+
+## Concept 17.5: Mutations of one or a few nucleotides can affect protein structure and function
+
+\- Small-scale mutations include point mutations, changes in one DNA nucleotide pair, which may lead to production of nonfunctional proteins. Nucleotide-pair substitutions can cause missense or nonsense mutations. Nucleotide-pair insertions or deletions may produce frameshift mutations.
+
+\- Spontaneous mutations can occur during DNA replication, recombination, or repair. Chemical and physical mutagens cause DNA damage that can alter genes.
+
+\- The CRISPR-Cas9 system is a powerful new gene-editing technique with the potential to correct genetic mutations that cause disease. Significant technical and ethical questions have been raised about how this can or should be used.
+
+What will be the results of chemically modifying one nucleotide base of a gene? What role is played by DNA repair systems in the cell?
+
+For suggested answers, see Appendix A.
+
+## Test Your Understanding
+
+For more multiple-choice questions, go to the Practice Test (eTextbook only).
+
+## Levels 1-2: Remembering/Understanding
+
+1. In eukaryotic cells, transcription cannot begin until
+
+(A) the two DNA strands have completely separated and exposed the promoter.
+
+(B) several transcription factors have bound to the promoter.
+
+(C) the 5' caps are removed from the mRNA.
+
+(D) the DNA introns are removed from the template.
+
+2. Which of the following is true of a codon?
+
+(A) It never codes for the same amino acid as another codon.
+
+(B) It can code for more than one amino acid.
+
+(C) It can be either in DNA or in RNA
+
+(D) It is the basic unit of protein structure.
+
+3. The anticodon of a particular tRNA molecule is
+
+(A) complementary to the corresponding mRNA codon.
+
+(B) complementary to the corresponding triplet in rRNA.
+
+(C) the part of tRNA that bonds to a specific amino acid.
+
+(D) catalytic, making the tRNA a ribozyme.
+
+4. Which of the following is true of RNA processing?
+
+(A) Exons are cut out before mRNA leaves the nucleus.
+
+(B) Nucleotides are added at both ends of the RNA.
+
+(C) Ribozymes may function in the addition of a 5' cap.
+
+(D) RNA splicing adds a poly-A tail to the mRNA.
+
+5. Which component is directly involved in translation?
+
+(A) RNA polymerase
+
+(B) ribosome
+
+(C) spliceosome
+
+(D) DNA
+
+## Levels 3-4: Applying/Analyzing
+
+6. Using Figure 17.6, identify a $5'\rightarrow3'$ sequence of nucleotides in the DNA template strand for an mRNA coding for the polypeptide sequence Phe-Pro-Lys.
+
+(A) 5'-UUUCCCAAA-3'
+
+(B) 5'-GAACCCCTT-3'
+
+(C) 5'-CTTCGGGAA-3'
+
+(D) 5'-AAACCCUUU-3'
+
+7. Which of the following mutations would be most likely to have a harmful effect on an organism?
+
+(A) a deletion of three nucleotides near the middle of a gene
+
+(B) a single nucleotide deletion in the middle of an intron
+
+(C) a single nucleotide deletion near the end of the coding sequence
+
+(D) a single nucleotide insertion downstream of, and close to, the start of the coding sequence
+
+8. Would the coupling of the processes shown in Figure 17.24 be found in a eukaryotic cell? Explain why or why not.
+
+9. Complete the following table:
+
+<table><tr><td>Type of RNA</td><td>Functions</td></tr><tr><td>Messenger RNA (mRNA)</td><td></td></tr><tr><td>Transfer RNA (tRNA)</td><td></td></tr><tr><td></td><td>In a ribosome, plays a structural role; as a ribozyme, plays a catalytic role (catalyzes peptide bond formation)</td></tr><tr><td>Primary transcript</td><td></td></tr><tr><td>Small RNAs in the spliceosome</td><td></td></tr></table>
+
+## Levels 5-6: Evaluating/Creating
+
+10. EVOLUTION CONNECTION Most amino acids are coded for by a set of similar codons (see Figure 17.6). Propose at least one evolutionary explanation to account for this pattern.
+
+11. SCIENTIFIC INQUIRY Knowing that the genetic code is almost universal, a scientist uses molecular biological methods to insert the human $\beta$ -globin gene (shown in Figure 17.12) into bacterial cells, hoping the cells will express it and synthesize functional $\beta$ -globin protein. Instead, the protein produced is nonfunctional and is found to contain many fewer amino acids than does $\beta$ -globin made by a eukaryotic cell. Explain why.
+
+12. WRITE ABOUT A THEME: INFORMATION Evolution accounts for the unity and diversity of life, and the continuity of life is based on heritable information in the form of DNA. In a short essay (100–150 words), discuss how the fidelity with which DNA is inherited is related to the processes of evolution. (Review the discussion of proofreading and DNA repair in Concept 16.2.)
+
+## 13. SYNTHESIZE YOUR KNOWLEDGE
+
+![](images/540c29517a7433f986bb878667efd6bb79d0587ddc23b6181f5c73c33599e26c.jpg)
+
+Some mutations result in proteins that function well at one temperature but are nonfunctional at a different (usually higher) temperature. Siamese cats have such a “temperature-sensitive” mutation in a gene encoding an enzyme that makes dark pigment in the fur. The mutation results in the breed’s distinctive point markings and lighter body color (see the photo). Using this information and what you learned in the chapter, explain the pattern of the cat’s fur pigmentation.
+
+For selected answers, see Appendix A.
+
+# Explore Scientific Papers with Science in the Classroom | AAAS
+
+How is green fluorescent protein (GFP) used as a marker for gene expression? Go to “Lighting up Life” at www.scienceintheclassroom.org.
+
+Instructors: Questions can be assigned in Mastering Biology.
+
+Eye cell specialized for aquatic vision
+
+# Regulation of Gene Expression
+
+## Key Concepts
+
+18.1 Bacteria often respond to environmental change by regulating transcription
+
+18.2 Eukaryotic gene expression is regulated at many stages
+
+18.3 Noncoding RNAs play multiple roles in controlling gene expression
+
+18.4 A program of differential gene expression leads to the different cell types in a multicellular organism
+
+18.5 Cancer results from genetic changes that affect cell cycle control
+
+![](images/de4a10592c6c7f6b5132d28a5d0fd333b64d6ac56436d46a97dfcc2203065559.jpg)  
+Figure 18.1 Anableps anableps, or “cuatro ojos” (“four eyes”), glides through lakes and ponds in South America, the upper half of each eye protruding from the water. The eye’s upper half is well-suited for aerial vision and the lower half for aquatic vision. All of the fish’s eye cells, however, contain the same genes.
+
+## Study Tip
+
+Make a visual study guide: Draw a region of DNA representing a gene. For each level of gene regulation that you read about, draw a sketch of your gene being regulated at that level. A drawing of chromatin modification regulation is shown as an example.
+
+![](images/3c4952dc7e5f71367be0f7acd97699c67dd9796f87f632176fc93fb35f570bf4.jpg)
+
+Gene in region of loosely condensed chromatin (euchromatin); gene may be expressed
+
+## How can two cells with the same set of genes function differently?
+
+To be expressed, each gene requires a particular set of transcription factors. Different cells have different sets of specific transcription factors.
+
+![](images/747d1a6655cbd0c7a2c6d0edc9048ce92568e8f23c661d6dfadb9e249eac7c0d.jpg)
+
+## Differential gene
+
+expression is the expression of different genes by cells with the same genome. The uniquely expressed genes allow cells to carry out their specific function.
+
+Expressed Gene 3 product (required in all eye cells)
+
+# Concept 18.1: Bacteria often respond to environmental change by regulating transcription
+
+Bacterial cells that can conserve resources and energy have a selective advantage over cells that are unable to do so. Thus, natural selection has favored bacteria that express only the genes whose products are needed by the cell.
+
+Consider, for instance, an individual Escherichia coli (E. coli) cell living in a human colon, dependent for its nutrients on the whimsical eating habits of its host. If the environment is lacking in the amino acid tryptophan, which the bacterium needs to survive, the cell responds by activating a metabolic pathway that makes tryptophan from another compound. If the human host later eats a tryptophan-rich meal, the bacterial cell stops producing tryptophan, thus avoiding wasting resources to produce a substance that is readily available from the surrounding solution.
+
+A metabolic pathway can be controlled on two levels, as shown for the synthesis of tryptophan in Figure 18.2. First, cells can adjust the activity of enzymes already present. This is a fairly rapid physiological response, which relies on the sensitivity of many enzymes to chemical cues that increase or decrease their catalytic activity (see Concept 8.5). The activity of the first enzyme in the pathway is inhibited by the pathway's end product—tryptophan, in this case (Figure 18.2a). Thus, if tryptophan accumulates in a cell, it shuts down the synthesis of more tryptophan by inhibiting enzyme activity. Such feedback inhibition, typical of anabolic (biosynthetic) pathways, allows a cell to adapt to short-term fluctuations in the supply of a substance it needs (see Figure 8.21).
+
+Second, cells can adjust the production level of certain enzymes via a genetic mechanism; that is, they can regulate the expression of the genes encoding the enzymes. If, in our example, the environment provides all the tryptophan the cell needs, the cell stops making the enzymes that catalyze the synthesis of tryptophan (Figure 18.2b). In this case, the control of enzyme production occurs at the level of transcription, the synthesis of messenger RNA from the genes that code for these enzymes.
+
+Regulation of the tryptophan synthesis pathway is just one example of how bacteria tune their metabolism to changing environments. Many genes of the bacterial genome are switched on or off by changes in the metabolic status of the cell; some genes are regulated singly and others as groups of related genes. One basic mechanism for this type of regulation of groups of genes in bacteria, described as the operon model, was discovered in 1961 by François Jacob and Jacques Monod at the Pasteur Institute in Paris. Let's see what an operon is and how it works.
+
+## Operons: The Basic Concept
+
+E. coli synthesizes the amino acid tryptophan from a precursor molecule in the three-step pathway shown in Figure 18.2. Each reaction in the pathway is catalyzed by a specific enzyme, and the five genes that code for the subunits of these enzymes are
+
+Figure 18.2 Regulation of a metabolic pathway.
+
+In the pathway for tryptophan synthesis, an abundance of tryptophan can both (a) inhibit the activity of the first enzyme in the pathway (feedback inhibition), a rapid response, and (b) repress expression of the genes encoding all subunits of the enzymes in the pathway, a longer-term response. The minus sign in a red circle stands for inhibition.
+
+![](images/9cdf2d83c78481ac9caa961824f8d48bb081d45994e53880ed0c4870f8f51b60.jpg)
+
+clustered together on the bacterial chromosome. A single promoter serves all five genes, which together constitute a transcription unit. (Recall that a promoter is a site where RNA polymerase can bind to DNA and begin transcription; see Figure 17.8.) Thus, transcription gives rise to one long mRNA molecule that codes for the five polypeptides making up the enzymes in the tryptophan pathway (Figure 18.3a). The cell can translate this one mRNA into five separate polypeptides because the mRNA is punctuated with start and stop codons that signal where the coding sequence for each polypeptide begins and ends.
+
+A key advantage of grouping genes of related function into one transcription unit is that a single “on-off switch” can control the whole cluster of functionally related genes; in other words, these genes are coordinately controlled. When an E. coli cell must make tryptophan for itself because its surrounding environment lacks this amino acid, all the enzymes for the metabolic pathway are synthesized at the same time. The on-off switch is a segment of DNA called an operator. Both its location and name suit its function: Positioned within the promoter or, in some cases, between the promoter and the enzyme-coding genes, the operator controls the access of RNA polymerase to the genes. Together, the operator, the promoter, and the genes they control—the entire stretch of DNA required for enzyme production for the tryptophan pathway—constitute an operon. The trp operon (trp for tryptophan) is one of many operons in the E. coli genome (see Figure 18.3a).
+
+![](images/caeeda4b3b7a3dddbe5f5e93d4284be8c08b4e64b2dd4f2f57704a7f0758dbf6.jpg)  
+(a) Tryptophan absent, repressor inactive, operon on. RNA polymerase attaches to the DNA at the operon's promoter and transcribes the operon's genes. Enzymes for tryptophan synthesis are made.
+
+![](images/1b849641901b355d476d140e73d3a0fe96a7f16daf2314364b17a9a53be97873.jpg)  
+(b) Tryptophan present, repressor active, operon off. As tryptophan accumulates, it inhibits its own production by activating the repressor protein, which binds to the operator, blocking transcription. Enzymes for tryptophan synthesis are not made.
+
+If the operator is the operon's switch for controlling transcription, how does this switch work? By itself, the trp operon is turned on; that is, RNA polymerase can bind to the promoter and transcribe the genes of the operon. The trp operon can be switched off by a protein that is called the trp repressor. A repressor binds to the operator, preventing RNA polymerase from transcribing the genes, often by preventing RNA polymerase from binding (Figure 18.3b). A repressor protein is specific for the operator of a particular operon. For example, the trp repressor, which switches off the trp operon by binding to the trp operator, has no effect on other operons in the E. coli genome.
+
+A repressor protein is encoded by a regulatory gene—in this case, a gene called trpR; trpR is located some distance from the trp operon and has its own promoter. Regulatory genes are among the bacterial genes that are expressed continuously, although at a low rate, and a few trp repressor molecules are always present in E. coli cells. Why, then, is the trp operon not switched off permanently? First, the binding of repressors to operators is reversible. An operator alternates between two states: one with the repressor bound and one without the repressor bound. The relative duration of the repressor-bound state is higher when more active repressor molecules are present. Second, the trp repressor, like most regulatory
+
+Figure 18.3 The trp operon in E. coli: regulated synthesis of repressible enzymes.
+
+Tryptophan is an amino acid produced by an anabolic pathway catalyzed by three enzymes (see Figure 18.2). (a) The five genes encoding the polypeptide subunits of the enzymes in this pathway are grouped, along with a promoter, into the trp operon. The trp operator (the repressor binding site) is located within the trp promoter (the RNA polymerase binding site). (b) Accumulation of tryptophan, the end product of the pathway, represses transcription of the trp operon, thus blocking synthesis of all the enzymes in the pathway and shutting down tryptophan production.
+
+VISUAL SKILLS Describe what happens to the trp operon as the cell uses up its store of tryptophan.
+
+For suggested answer, see Appendix A.
+
+proteins, is an allosteric protein, with two alternative shapes: active and inactive (see Figure 8.20). The trp repressor is synthesized in the inactive form, which has little affinity for the trp operator. Only when a tryptophan molecule binds to the trp repressor at an allosteric site does the repressor protein change to the active form that can attach to the operator, turning the operon off.
+
+Tryptophan functions in this system as a corepressor, a small molecule that cooperates with a repressor protein to switch an operon off. As tryptophan accumulates, more tryptophan molecules associate with trp repressor molecules, which can then bind to the trp operator and shut down production of the tryptophan pathway enzymes. If the cell's tryptophan level drops, many fewer trp repressor proteins would have tryptophan bound, so most would be inactive; they would dissociate from the operator, allowing transcription of the operon's genes to resume. The trp operon is one example of how gene expression can respond to changes in the cell's internal and external environment.
+
+## Repressible and Inducible Operons: Two Types of Negative Gene Regulation
+
+The trp operon is said to be a repressible operon because its transcription is usually on but can be inhibited (repressed) when a specific small molecule (in this case, tryptophan) binds
+
+allosterically to a regulatory protein. In contrast, an inducible operon is usually off but can be stimulated (induced) to be on when a specific small molecule interacts with a different regulatory protein. The classic example of an inducible operon is the lac operon (lac stands for “lactose”).
+
+The disaccharide lactose (milk sugar) is available to $E. coli$ when the bacterium is in contact with any dairy product. Lactose metabolism by $E. coli$ begins with hydrolysis of the disaccharide into its component monosaccharides (glucose and galactose), a reaction catalyzed by the enzyme β-galactosidase. Only a few molecules of this enzyme are present in an $E. coli$ cell growing in the absence of lactose. If lactose is added to the bacterium's environment, however, the number of β-galactosidase molecules in the cell increases 1,000-fold within about 15 minutes. How can a cell ramp up enzyme production this quickly?
+
+The gene for $\beta$ -galactosidase (lacZ) is part of the lac operon, which includes two other genes coding for enzymes that function in the use of lactose (Figure 18.4). The entire transcription unit is under the command of one main operator and promoter. The regulatory gene, lacI, located outside the lac operon, codes for an allosteric repressor protein that can switch off the lac operon by binding to the lac operator. So far, this sounds just like regulation of the trp operon, but there is one important difference. Recall that the trp repressor protein is inactive by itself and requires tryptophan as a corepressor in order to bind to the operator. The lac repressor, in contrast, is active by itself, binding to the operator and switching the lac operon off. In this case, a specific small molecule, called an inducer, inactivates the repressor.
+
+![](images/0353defcb99b2ea03edd5aa145dd60002f76135d241d9f70823098d759b7911b.jpg)  
+(a) Lactose absent, repressor active, operon off. The lac repressor is innately active, and in the absence of lactose it switches off the operon by binding to the operator. The enzymes for using lactose are not made.
+
+For the lac operon, the inducer is allolactose, an isomer of lactose formed in small amounts from lactose that enters the cell. In the absence of lactose (and therefore allolactose), the lac repressor is in its active shape and binds to the operator; thus, the genes of the lac operon are silenced (Figure 18.4a). If lactose is added to the cell's surroundings, allolactose binds to the lac repressor and alters its shape so the repressor can no longer bind to the operator. Without the lac repressor bound, the lac operon is transcribed into mRNA, and the enzymes for using lactose are made (Figure 18.4b).
+
+In the context of gene regulation, the enzymes of the lactose pathway are referred to as inducible enzymes because their synthesis is induced by a chemical signal (allolactose, in this case). Analogously, the enzymes for tryptophan synthesis are said to be repressible. Repressible enzymes generally function in anabolic pathways, which synthesize essential end products from raw materials (precursors). By suspending production of an end product when it is already present in sufficient quantity, the cell can allocate its organic precursors and energy for other uses. In contrast, inducible enzymes usually function in catabolic pathways, which break down a nutrient to simpler molecules.
+
+![](images/4a69fc3515823a16c2cbdb7f8b15daa8e61b6a301cfddd5793c9b669d86e4572.jpg)  
+(b) Lactose present, repressor inactive, operon on. Allolactose, an isomer of lactose, binds to the repressor, inactivating it and "derepressing" the operon. The inactive repressor cannot bind to the operator, and so the genes of the lac operon are transcribed, and the enzymes for using lactose are made.
+
+## Figure 18.4 The lac operon in E. coli: regulated synthesis of inducible enzymes.
+
+E. coli uses three enzymes to take up and metabolize lactose, the genes for which are clustered in the lac operon. The first gene, lacZ, codes for $\beta$ -galactosidase, which hydrolyzes lactose to glucose and galactose. The second, lacY, codes for a permease, the membrane protein that transports lactose into the cell. The third, lacA, codes for transacetylase, an enzyme that detoxifies other molecules entering the cell via the permease. Unusually, the gene for the lac repressor, lacI, is adjacent to the lac operon. The function of the teal region within the promoter will be revealed in Figure 18.5.
+
+By producing the appropriate enzymes only when the nutrient is available, the cell avoids wasting energy and precursors making proteins that are not needed.
+
+Regulation of both the trp and lac operons involves the negative control of genes because the operons are switched off by the active form of their respective repressor protein. It may be easier to see this for the trp operon, but it is also true for the lac operon. In the case of the lac operon, allolactose induces enzyme synthesis not by directly activating the lac operon, but by freeing it from the negative effect of the repressor (see Figure 18.4b). Gene regulation is said to be positive only when a regulatory protein interacts directly with the genome to increase transcription.
+
+## Positive Gene Regulation
+
+When glucose and lactose are both present in its environment, E. coli preferentially uses glucose. The enzymes for glucose breakdown in glycolysis (see Figure 9.8) are continually present. Only when lactose is present and glucose is in short supply does E. coli use lactose as an energy source, and only then does it synthesize appreciable quantities of the enzymes for lactose breakdown.
+
+How does the E. coli cell sense the glucose concentration and relay this information to the lac operon? Again, the mechanism depends on the interaction of an allosteric regulatory protein with a small organic molecule, cyclic AMP (cAMP) in this case, which accumulates when glucose is scarce (see Figure 11.11 for the structure of cAMP). The regulatory protein, called cAMP receptor protein (CRP), is an activator, a protein that binds to DNA and stimulates transcription of a gene. (CRP is also called catabolite activator protein, or CAP.) When cAMP binds to this regulatory protein, CRP assumes its active shape and can attach to a specific site at the upstream end of the lac promoter (Figure 18.5a). This attachment increases the affinity of RNA polymerase for the lac promoter, which is actually rather low even when no lac repressor is bound to the operator. By facilitating the binding of RNA polymerase to the promoter and thereby increasing the rate of transcription of the lac operon, the attachment of CRP to the promoter directly stimulates gene expression. Therefore, this mechanism qualifies as positive regulation.
+
+If the amount of glucose in the cell increases, the cAMP concentration falls, and without cAMP, CRP detaches from the lac operon. Because CRP is inactive, RNA polymerase binds less efficiently to the promoter, and transcription of the lac operon proceeds only at a low level, even when lactose is present Figure 18.5b. Thus, the lac operon is under dual control: negative control by the lac repressor and positive control by CRP. Whether or not transcription occurs is controlled by allolactose: Without allolactose, the lac repressor is active and the operon is off (transcription does not occur; see Figure 18.4a); with allolactose, the lac repressor is inactive and the operon is on (transcription occurs; see Figure 18.4b). The rate of transcription is controlled by whether CRP has cAMP bound to it: With bound cAMP, the rate is high; without it, the rate is low. It is as though the operon has both an on-off switch and a volume control.
+
+Figure 18.5 Positive control of the lac operon by cAMP receptor protein (CRP).
+
+RNA polymerase has high affinity for the lac promoter only when CRP is bound to a DNA site at the upstream end of the promoter. CRP, in turn, attaches to its DNA site only when associated with cyclic AMP (cAMP), whose concentration in the cell rises when the glucose concentration falls. Thus, when glucose is present, even if lactose is also available, the cell preferentially catabolizes glucose and makes very low levels of the enzymes for using lactose.
+
+![](images/491d6a5395448faabb60baf3a6fc2204e73fdc175b8ebd9505994723c73c9abb.jpg)  
+(a) Lactose present, glucose scarce (cAMP level high): abundant lac mRNA synthesized. If glucose is scarce, the high level of cAMP activates CRP, which binds to the promoter and increases RNA polymerase binding there. The lac operon produces large amounts of mRNA coding for the enzymes that the cell needs for use of lactose.
+
+![](images/743de402312bda2f4c14a8a0f18efa61ce566416463d4b9356d7bd8883c97dd9.jpg)  
+(b) Lactose present, glucose present (cAMP level low): little lac mRNA synthesized. When glucose is present, cAMP is scarce, and CRP doesn't stimulate transcription to a significant rate, even though no repressor is bound.
+
+In addition to regulating the lac operon, CRP helps regulate other operons that encode enzymes used in catabolic pathways. All told, it may affect the expression of more than 100 genes in E. coli. When glucose is plentiful and CRP is inactive, the synthesis of enzymes that catabolize compounds other than glucose generally slows down. The ability to catabolize other compounds, such as lactose, enables a cell deprived of glucose to survive. The compounds present in any given cell at a certain moment determine which operons are switched on—the result of simple interactions of activator and repressor proteins with the promoters of the genes in question.
+
+## Concept Check 18.1
+
+1. How does binding of the trp corepressor to the trp repressor alter repressor function and transcription? How does binding of the lac inducer alter the function of the lac repressor?
+
+2. Describe the binding of repressors and activators to the lac operon, and the effect on transcription, when both lactose and glucose are scarce.
+
+3. WHAT IF? A certain mutation in $E. coli$ changes the lac operator so that the active repressor cannot bind. How would this affect the cell's production of β-galactosidase?
+
+For suggested answers, see Appendix A.
+
+## Concept 18.2: Eukaryotic gene expression is regulated at many stages
+
+All organisms, whether prokaryotic or eukaryotic, must regulate which genes are expressed at any given time. Both unicellular organisms and the cells of multicellular organisms continually turn genes on and off in response to signals from their external and internal environments. Regulation of gene expression is also essential for cell specialization in multicellular organisms, which are made up of different types of cells. To perform its own distinct role, each cell type must maintain a specific program of gene expression in which certain genes are expressed and others are not (see Figure 18.1).
+
+## Differential Gene Expression
+
+A typical human cell might express about a third to a half of its protein-coding genes at any given time. Highly differentiated cells, such as muscle or nerve cells, express a smaller fraction of their genes. Almost all the cells in a multicellular organism contain an identical genome. (Cells of the immune system are one exception, as you will see in Figure 43.13.) A subset of genes is expressed in each cell type; some of these—about 35%—are “housekeeping” genes, expressed by many cell types, while others are unique to that cell type. The uniquely expressed genes allow these cells to carry out their specific function. The differences between cell types, therefore, are due not to different genes being present, but to differential gene expression, the expression of different genes by cells with the same genome.
+
+The function of any cell depends on its expressing the appropriate set of genes. The transcription factors of a cell must locate the right genes at the right time, a task like finding a needle in a haystack. Abnormal gene expression can cause serious imbalances and diseases, including cancer.
+
+Figure 18.6 summarizes the process of gene expression in a eukaryotic cell, highlighting key stages in the expression of a protein-coding gene. Each stage depicted in Figure 18.6 is a potential control point at which gene expression can be turned on or off, accelerated, or slowed down. Many genes have more than one control point.
+
+Figure 18.6 Stages in gene expression that can be regulated in eukaryotic cells.
+
+In this diagram, the colored boxes indicate the processes most often regulated; each color indicates the type of molecule that is affected (blue = DNA, red/orange = RNA, purple = protein). The nuclear envelope separating transcription from translation in eukaryotic cells allows for RNA processing, a form of post-transcriptional control that is not possible in prokaryotic organisms. Eukaryotes also have a greater variety of control mechanisms operating before transcription and after translation. Some genes are regulated at multiple stages.
+
+![](images/de6616a2eab2bda9d299d09313217e6399750f4b0ccaae2f875ef16416f926e7.jpg)
+
+When the structure of DNA was determined in 1953, an understanding of the mechanisms that control gene expression in eukaryotes seemed almost hopelessly out of reach. Since then, advances in DNA technology (see Chapter 20) have enabled molecular biologists to uncover many details of eukaryotic gene regulation. In all organisms, gene expression is commonly controlled at transcription; regulation at this stage often occurs in response to signals coming from outside the cell, such as hormones or other signaling molecules. For this reason, the term gene expression is often equated with transcription for both bacteria and eukaryotes. While this may be the case for bacteria, the greater complexity of eukaryotic cell structure and function provides opportunities for regulating gene expression at many stages besides transcription (see Figure 18.6). Let's examine some of the important control points of eukaryotic gene expression more closely.
+
+## Regulation of Chromatin Structure
+
+Recall that the DNA of eukaryotic cells is packaged with proteins in an elaborate complex known as chromatin, the basic unit of which is the nucleosome (see Figure 16.23). The structural organization of chromatin not only packs a cell's DNA into a compact form that fits inside the nucleus, but also helps regulate gene expression in several ways. Genes within heterochromatin, which is more densely arranged than euchromatin, are usually not expressed. In euchromatin, whether or not a gene is transcribed is affected by the location of nucleosomes along a gene's promoter and also the sites where the DNA attaches to the protein scaffolding of the chromosome. Chromatin structure and gene expression can be influenced by chemical modifications of both the histone proteins of the nucleosomes around which DNA is wrapped and the nucleotides that make up that DNA. Here we examine the effects of these modifications, which are catalyzed by specific enzymes.
+
+## Histone Modifications and DNA Methylation
+
+Chemical modifications to histones, found in all eukaryotic organisms, play a direct role in the regulation of gene transcription. The N-terminus of each histone protein in a nucleosome protrudes outward from the nucleosome (Figure 18.7a). These so-called histone tails are accessible to various modifying enzymes that catalyze the addition or removal of specific chemical groups, such as acetyl ( $—COCH_{3}$ ), methyl, and phosphate groups (see Figure 4.9). Generally, histone acetylation—the addition of an acetyl group to an amino acid in a histone tail—appears to promote transcription by opening up chromatin structure (Figure 18.7b), while the addition of methyl groups to histones can lead to the condensation of chromatin and reduced transcription. Often, the addition of a particular chemical group may create a new binding site for enzymes that further modify chromatin structure.
+
+Rather than modifying histone proteins, a different set of enzymes can methylate the DNA itself on certain bases, usually cytosine. Such DNA methylation occurs in most plants, animals, and fungi. Long stretches of inactive DNA, such as that of inactivated mammalian X chromosomes (see Figure 15.8), are generally more methylated than regions of actively transcribed DNA. On a smaller scale, the DNA of individual genes is usually more heavily methylated in cells in which those genes are not expressed. Removal of the extra methyl groups can turn on some of these genes.
+
+Figure 18.7 A simple model of histone tails and the effect of histone acetylation.
+
+Amino acids in histone tails may be chemically modified by addition of acetyl groups (green balls) or other groups (such as methyl or phosphate groups). Such modifications affect chromatin structure in a region, sometimes by providing binding sites for other chromatin-modifying enzymes.
+
+![](images/2e21d742ea1753bada513f6d62d5e3670f9a41f32db7635c35425aceb9a447a4.jpg)
+
+Once methylated, genes usually stay that way through successive cell divisions in a given individual. At DNA sites where one strand is already methylated, enzymes methylate the correct daughter strand after each round of DNA replication. Methylation patterns are thus passed on to daughter cells, and cells forming specialized tissues keep a chemical record of what occurred during embryonic development. A methylation pattern maintained in this way also accounts for genomic imprinting in mammals, where methylation permanently regulates expression of either the maternal or paternal allele of particular genes at the start of development (see Figure 15.17). DNA methylation and histone modification are believed to be coordinated in their regulation.
+
+## Epigenetic Inheritance
+
+The chromatin modifications that we just discussed do not change the DNA sequence, yet they still may be passed along to future generations of cells. Inheritance of traits transmitted by mechanisms not involving the nucleotide sequence itself is called epigenetic inheritance, the study of which is called epigenetics. Whereas mutations in the DNA are permanent changes, modifications to the chromatin can be reversed. For example, DNA methylation patterns are largely erased during gamete formation and reestablished during embryonic development. Furthermore, they are changeable, thus responding more rapidly to environmental conditions.
+
+Research on epigenetics has skyrocketed over the past few decades. The importance of epigenetic information in regulating gene expression is now widely accepted. One key study by researchers at Duke University in the early 2000s used a mouse mutant whose genome had been altered so that a gene called agouti that determines coat color, normally expressed only briefly during fur formation, was instead expressed throughout development. This overexpression resulted in yellow mice (Figure 18.8, left mouse) rather than the usual brownish (“agouti”) color. Previous work had shown that factors other than DNA sequence changes (thus epigenetic factors) could affect how this mutation affected the phenotype: Merely supplementing the diet of pregnant mothers with methyl group-containing compounds (like folic acid) could shift the range of coat colors of the offspring back to normal (see Figure 18.8, right mouse). The Duke researchers reproduced this result, analyzing the state of methylation of the DNA. They showed that the extent of the color shift correlated with the level of DNA methylation. In other words, feeding methyl groups to the mothers at a key time during gestation led to a change in gene expression in the offspring’s phenotype. Further studies showed that the effects were even observed in the next generation—the “grandpups” of the original female mouse.
+
+A similar epigenetic effect due to changes in methylation occurs in humans as well. Near the end of World War II, during the winter of 1944–45, Dutch railway workers went on strike to try to prevent the Nazis from bringing in more troops. In retaliation, the Nazis blocked all deliveries of food. Over 20,000 Dutch died in the “Dutch Hunger Winter.” In long-term clinical studies, researchers found that the offspring of individuals who
+
+Figure 18.8 An example of epigenetic inheritance: Effects of maternal diet on genetically identical mice.
+
+These two mice are genetically identical (agouti mutants), but their mothers were fed different diets. A maternal diet without compounds that donate methyl groups resulted in the obese, yellow offspring on the left. A diet supplemented with methyl-donating compounds, such as folic acid, led to the speckled brown fur (normal agouti phenotype) and normal weight of the mouse on the right.
+
+![](images/60e5c543bf840b173f5fb6b4001a03999dd358406886243df69f9a1e2ef7cdfc.jpg)
+
+were in early pregnancy at that time experienced adverse health effects as adults: higher rates of obesity, high triglyceride and cholesterol levels, type 2 diabetes, and schizophrenia. Furthermore, these affected offspring had a 10% higher mortality rate after the age of 68 than their siblings who were in utero when food was readily available. A collaboration between labs in the Netherlands and the United States compared those adults with their siblings and published their findings in 2018. Statistical analysis enabled the researchers to conclude that differences between the siblings in DNA methylation of certain genes caused these long-term adverse medical conditions—examples of epigenetic inheritance.
+
+Epigenetic variations might help explain cases where one identical twin acquires a genetically based disease, such as schizophrenia, but the other does not, despite their identical genomes. Some differences in behavior or environment may lead to differing degrees of DNA methylation in the two twins. Alterations in normal patterns of DNA methylation are seen in some cancers, where they are associated with inappropriate gene expression. Evidently, enzymes that modify chromatin structure are integral parts of the eukaryotic cell's machinery for regulating transcription.
+
+## Regulation of Transcription Initiation
+
+Chromatin-modifying enzymes provide initial control of gene expression by making a region of DNA either more or less able to bind the transcription machinery. Once the chromatin of a gene is optimally modified for expression, the initiation of transcription is the next major step at which gene expression is regulated. As in bacteria, the regulation of transcription initiation in eukaryotes involves proteins that bind to DNA and either facilitate or inhibit binding of RNA polymerase. The process is more complicated in eukaryotes, however. Before looking at how eukaryotic cells control their transcription, let's review the structure of a eukaryotic gene.
+
+## Organization of a Typical Eukaryotic Gene and Its Transcript
+
+A eukaryotic gene and the DNA elements (segments) that control it are typically organized as shown in Figure 18.9, which extends what you learned about eukaryotic genes in Chapter 17. Recall that a cluster of proteins called a transcription initiation complex assembles on the promoter sequence at the “upstream” end of the gene (see Figure 17.9). One of these proteins, RNA polymerase II, then proceeds to transcribe the gene, synthesizing a primary RNA transcript (pre-mRNA). RNA processing includes enzymatic addition of a 5' cap and a poly-A tail, as well as splicing out of introns, to yield a mature mRNA. Associated with most eukaryotic genes are multiple control elements, segments of noncoding DNA that serve as binding sites for the proteins called transcription factors, which bind to the control
+
+Figure 18.9 A eukaryotic gene and its transcript.
+
+Each eukaryotic gene has a promoter—a DNA sequence where RNA polymerase II binds and starts transcription, proceeding “downstream.” A number of control elements (gold) are involved in regulating the initiation of transcription; these are DNA sequences located near (proximal to) or far from (distal to) the promoter. Distal control elements can be grouped together as enhancers, one of which is shown for this gene. At the other end of the gene, a polyadenylation (poly-A) signal sequence in the last exon of the gene elements and regulate transcription. Control elements on the DNA and the transcription factors that bind to them are critical to the precise regulation of gene expression seen in different cell types.
+
+## The Roles of General and Specific Transcription Factors
+
+There are two types of transcription factors: General transcription factors act at the promoter of all genes, while some genes require specific transcription factors that bind to control elements that may be close to or farther away from the promoter.
+
+## General Transcription Factors at the Promoter
+
+To initiate transcription, eukaryotic RNA polymerase II requires the assistance of transcription factors. Some transcription factors (such as those illustrated in Figure 17.9) are essential for the transcription of all protein-coding genes; therefore, they are often called general transcription factors. A few general transcription factors bind to a DNA sequence, such as the TATA box in most promoters, but many bind to proteins, including other transcription factors as well as RNA polymerase II. Protein-protein interactions are crucial to the initiation of eukaryotic transcription. Only when the complete initiation complex has
+
+is transcribed into an RNA sequence that signals where the transcript is cleaved and the poly-A tail added. Transcription may continue for hundreds of nucleotides beyond the poly-A signal before terminating. RNA processing of the primary transcript into a functional mRNA involves three steps: addition of the 5' cap, addition of the poly-A tail, and splicing. In the cell, the 5' cap is added soon after transcription is initiated, and splicing occurs while transcription is still under way (see Figures 17.11 and 17.12).
+
+![](images/078d0b87bb6f3e5df6d52102fbc2270a3b8ebdba405e490f498397e0c204b9ef.jpg)
+
+assembled can the polymerase begin to move along the DNA template strand and transcribe.
+
+Some genes are expressed all the time, but others are not; instead, they are regulated. For these genes, the interaction of general transcription factors and RNA polymerase II with a promoter usually leads to a low rate of initiation and production of few RNA transcripts from genes that are not expressed at significant levels all the time or in all cells. In eukaryotes, high levels of transcription of these particular genes at the appropriate time and place depend on the interaction of control elements with another set of proteins, which can be thought of as specific transcription factors.
+
+## Enhancers and Specific Transcription Factors
+
+As you can see in Figure 18.9, some control elements, named proximal control elements, are close to the promoter. The more distant distal control elements, groupings of which are called enhancers, may be thousands of nucleotides upstream or downstream of a gene or even within an intron. A given gene may have multiple enhancers, each active at a different time, cell type, or location in the organism. Each enhancer, however, is generally associated with only that gene and no other.
+
+In eukaryotes, the rate of gene expression can be strongly increased or decreased by the binding of specific transcription factors, either activators or repressors, to the control elements of enhancers. Many hundreds of transcription activators have been discovered in eukaryotes; the structure of one is shown in Figure 18.10. Researchers have identified two types of structural domains that are commonly found in a large number of transcription activators: a DNA-binding domain—a part of the protein's three-dimensional structure that binds to DNA—and one or more activation domains. Activation domains bind other regulatory proteins or components of the transcription machinery, facilitating a series of protein-protein interactions that result in enhanced transcription of a given gene.
+
+Figure 18.11 shows the currently accepted model for how binding of activators to an enhancer located far from the promoter influences transcription. Protein-mediated bending of the DNA brings the bound activators into contact with a group of mediator proteins, which in turn interact with general transcription factors at the promoter. These protein-protein interactions help assemble and position the initiation complex on the promoter. One study supporting this model shows that proteins regulating one of the mouse globin genes contact both the gene's promoter and an enhancer located about 50,000 nucleotides upstream. Protein interactions allow these two DNA regions to come together in a very specific fashion, in spite of the many nucleotide pairs between them.
+
+Specific transcription factors that function as repressors can inhibit gene expression in several different ways. Some repressors bind directly to control element DNA (in enhancers or elsewhere), blocking activator binding. Other repressors interfere with the activator itself so it can't bind the DNA.
+
+In addition to influencing transcription directly, some activators and repressors indirectly affect chromatin structure. Studies using yeast and mammalian cells show that some
+
+## Figure 18.10 The structure of MyoD, a transcriptional activator.
+
+The MyoD protein is made up of two polypeptide subunits (purple ribbon starting at upper left and salmon ribbon starting at upper right) with extensive regions of $\alpha$ helix. Each subunit has one DNA-binding domain (lower half) and one activation domain (upper half). The latter includes binding sites for the other subunit and for other proteins. MyoD is involved in muscle development in vertebrate embryos (see Concept 18.4).
+
+![](images/a397dd6f41a5a6c5508bd1ac33357241f296fc7a4e3487f4cf245022eda53299.jpg)  
+VISUAL SKILLS Describe how the two functional domains of the MyoD protein relate to the two polypeptide subunits.
+For suggested answer, see Appendix A.
+
+activators recruit proteins that acetylate histones near the promoters of specific genes, thus promoting transcription (see Figure 18.7). Similarly, some repressors recruit proteins that remove acetyl groups from histones, leading to reduced transcription, a phenomenon referred to as silencing. Indeed, recruitment of chromatin-modifying proteins seems to be the most common mechanism of repression in eukaryotic cells.
+
+## Combinatorial Control of Gene Activation
+
+In eukaryotes, the precise control of transcription depends largely on the binding of activators to DNA control elements. Considering that many genes must be regulated in a typical animal or plant cell, the number of different nucleotide sequences in control elements is surprisingly small. A dozen or so short nucleotide sequences appear again and again in the control elements for different genes. On average, each enhancer is composed of about ten control elements, each binding only one or two specific transcription factors. It is the particular combination of control elements in an enhancer associated with a gene, rather than a single unique control element, that is important in regulating transcription of the gene.
+
+Even with only a dozen control element sequences available, many combinations are possible. Each combination of control elements can activate transcription only when the appropriate transcription activators are present, which may occur at a precise time during development or in a particular cell type.
+
+Figure 18.11 A model for the action of enhancers and transcription activators.
+
+Bending of the DNA by a protein enables enhancers to influence a promoter hundreds or even many thousands of nucleotides away. Specific transcription factors (activators) bind to the enhancer DNA sequences and then to a group of mediator proteins. These in turn bind to general transcription factors and then RNA polymerase II, thus assembling the transcription initiation complex. These protein-protein interactions lead to correct positioning of the complex on the promoter and the initiation of a significant rate of RNA synthesis. Only one enhancer (with three gold control elements) is shown here, but a gene may have several enhancers that act at different times or in different cell types.
+
+![](images/44be42e3cee45046faeaf5015bd7a68da70f181b29a6e3bc8abc8368cf65d62d.jpg)  
+Transcription initiation complex
+
+In the Scientific Skills Exercise, you can work with data from an experiment that identified the control elements in an enhancer of a particular human gene. Figure 18.12 illustrates how the use of different combinations of just a few control elements can allow differential regulation of transcription in two representative cell types—liver cells and lens cells. This can occur because each cell type contains a different group of transcription activators. How cell types come to differ during this process, even though they all arise from one cell (the fertilized egg), will be explored in Concept 18.4.
+
+## Coordinately Controlled Genes in Eukaryotes
+
+How does the eukaryotic cell deal with a group of genes of related function that need to be turned on or off at the same time? Earlier in this chapter, you learned that in bacteria, such coordinately controlled genes are often clustered into an operon, which is regulated by a single promoter and transcribed into a single mRNA molecule. Thus, the genes are expressed together, and the encoded proteins are produced at the same time. With a few exceptions,
+
+operons that work in this way have not been found in eukaryotic cells.
+
+Eukaryotic genes that are co-expressed, such as genes coding for the enzymes of a metabolic pathway, are typically scattered over different chromosomes. Here, coordinate gene expression depends on every gene of a dispersed group having a specific combination of control elements. Transcription activators in the nucleus that recognize the control elements bind to them, promoting simultaneous transcription of the genes, no matter where they are in the genome.
+
+Coordinate control of dispersed genes in a eukaryotic cell often occurs in response to chemical signals from outside the cell. A steroid hormone, for example, enters a cell and binds to a specific intracellular receptor protein, forming a hormone-receptor complex that serves as a transcription activator (see Figure 11.9). Every gene whose transcription is stimulated by a given steroid hormone, regardless of its chromosomal location, has a control element recognized by that hormone-receptor complex. This is how estrogen activates a group of genes that stimulate cell division in uterine cells, preparing the uterus for pregnancy.
+
+# Scientific Skills Exercise Analyzing DNA Deletion Experiments
+
+![](images/a27a61c88b263869515c5f07968c293ddd004d0467405291e25deb36634a6207.jpg)  
+Tissue inflammation
+
+What Control Elements Regulate Expression of the mPGES-1 Gene? The promoter of a gene includes the DNA immediately upstream of the transcription start site, but the control elements (grouped in an enhancer) that regulate the level of transcription of the gene may be thousands of base pairs upstream of the promoter. Because the distance and spacing of
+
+control elements make them difficult to identify, scientists begin by deleting possible control elements and measuring the effect on gene expression. In this exercise, you will analyze data obtained from DNA deletion experiments that tested possible control elements for the human gene mPGES-1. This gene codes for an enzyme that synthesizes a type of prostaglandin, a chemical made during tissue inflammation.
+
+How the Experiment Was Done The researchers hypothesized that there were three possible control elements in an enhancer region located 8–9 kilobases (kb) upstream of the mPGES-1 gene. Control elements regulate whatever gene is in the appropriate downstream location. Thus, to test the activity of the possible elements, researchers first synthesized molecules of DNA (DNA constructs) that had the intact enhancer region upstream of a reporter gene, a gene whose mRNA product could be easily measured experimentally. Next, they made three more DNA constructs, with one of the three proposed control elements deleted in each (see the left side of the figure). The researchers then introduced each DNA construct into a separate human cell culture, where the cells took up the DNA. After 48 hours, the amount of reporter gene mRNA made by the cells was measured. Comparing these amounts allowed researchers to determine if any of the deletions had an effect on expression of the reporter gene, mimicking the effect of deletions on mPGES-1 gene expression. (The mPGES-1 gene itself couldn't be used to measure expression levels because the cells express their own mPGES-1 gene, and the mRNA from that gene would confuse the results.)
+
+Data from the Experiment The diagrams on the left side of the figure show the intact DNA sequence (top) and the three experimental DNA constructs. A red X is located on the possible control element (1, 2, or 3) that was deleted in each experimental DNA construct. The area between the slashes represents the approximately 8 kb of DNA located between the promoter and the enhancer region. The horizontal bar graph on the right shows the amount of reporter gene mRNA that was present in each cell culture after 48 hours relative to the amount that was in the culture containing the intact enhancer region (top bar = 100%).
+
+![](images/b6e113c7f2fd26bdf33b1edeadd81ca5515eca29adda2cc3f99e457fd7827f52.jpg)  
+Data from J. N. Walters et al., Regulation of human microsomal prostaglandin E synthase-1 by IL-1b requires a distal enhancer element with a unique role for C/EBPb, Biochemical Journal 443:561–571 (2012).
+
+## INTERPRET THE DATA
+
+1. (a) What is the independent variable in the graph? (b) What is the dependent variable? (c) What was the control treatment in this experiment? Label it on the diagram.
+
+2. Do the data suggest that any of these possible control elements are actual control elements? Explain.
+
+3. (a) Did deletion of any of the possible control elements cause a reduction in reporter gene expression? If so, which one(s), and how can you tell? (b) If loss of a control element causes a reduction in gene expression, what must be the normal role of that control element? Provide a biological explanation for how the loss of such a control element could lead to a reduction in gene expression.
+
+4. (a) Did deletion of any of the possible control elements cause an increase in reporter gene expression relative to the control? If so, which one(s), and how can you tell? (b) If loss of a control element causes an increase in gene expression, what must be the normal role of that control element? Propose a biological explanation for how the loss of such a control element could lead to an increase in gene expression.
+
+Instructors: A version of this Scientific Skills Exercise can be assigned in Mastering Biology.
+
+## Figure 18.12 Cell type-specific transcription.
+
+Both liver cells and lens cells have the genes for making the proteins albumin and crystallin, but only liver cells make albumin (a blood protein) and only lens cells make crystallin (the main protein of the lens of the eye). The specific transcription factors made in a cell determine which genes are expressed. In this example, the genes for albumin and crystallin are shown at the top, each with an enhancer made up of three different control elements. Although the enhancers for the two genes both have a gray control element (2), each enhancer has a unique combination of elements. All the transcription activator proteins required for high-level expression of the albumin gene are present in liver cells only (left), whereas the activators needed for expression of the crystallin gene are present in lens cells only (right). For simplicity, we consider only the role of specific transcription factors that are activators.
+
+VISUAL SKILLS Describe the enhancer for the albumin gene in each type of cell. How would the nucleotide sequence of this enhancer in the liver cell compare with that in the lens cell? For suggested answer, see Appendix A.
+
+![](images/8b08f4fd3c2bab57d0fdf025b7a11cb07b2e5b0ed43a9da402d602c29a3dd945.jpg)
+
+Many signaling molecules, such as nonsteroid hormones and growth factors, bind to receptors on a cell's surface and never actually enter the cell. Such molecules can control gene expression indirectly by triggering signal transduction pathways that activate particular transcription factors (see Figure 11.15). Coordinate regulation in such pathways is the same as for steroid hormones: Genes with the same sets of control elements are activated by the same chemical signals. Because this system for coordinating gene regulation is so widespread, biologists think that it probably arose early in evolutionary history.
+
+## Nuclear Architecture and Gene Expression
+
+Each chromosome in the interphase nucleus of animal cells occupies a distinct territory (see Figure 16.24a). Recently, chromosome conformation capture techniques (3C and others) have been developed that allow researchers to cross-link and identify regions of chromosomes associating with each other during interphase. These studies reveal two organizational details: First, the territory of each chromosome is divided into regions of chromatin loops (topologically associated domains, or TADs), within which chromatin sites associate mainly with each other. Second, loops of chromatin, each likely a TAD, extend from individual chromosomal territories into specific sites in the nucleus (Figure 18.13). Different loops from the same chromosome and loops from other chromosomes may congregate in such sites, some of which are rich in RNA polymerases and other
+
+transcription-associated proteins. Like a recreation center that draws members from many different neighborhoods, these so-called transcription factories are thought to be areas specialized for a common function.
+
+The old view that the nuclear contents are like a bowl of amorphous chromosomal spaghetti has given way to a new model of a nucleus with a defined architecture and regulated movements of chromatin. Several lines of evidence suggest that unexpressed genes are located in the outer edges of the nucleus, while those that are being expressed are found in its interior region. Relocation of particular genes from their chromosomal territories to transcription factories in the interior may be part of the process of readying genes for transcription. Research into organization of the genome over time and its relationship to genome function is a focus of current research. This is of interest in part because alterations in genome architecture have been implicated in some neuropsychological and other disorders.
+
+## Mechanisms of Post-transcriptional Regulation
+
+Transcription alone does not constitute gene expression. The expression of a protein-coding gene is ultimately measured by the amount of functional protein a cell makes, and much happens between the synthesis of the RNA transcript and the activity of
+
+Figure 18.13 Chromosomal interactions in the interphase nucleus.
+
+Although each chromosome has its own territory (see Figure 16.24a), loops of chromatin may extend into other sites in the nucleus. (Each loop may be a topologically associated domain, or TAD.) Some of these sites are transcription factories that are occupied by multiple chromatin loops from the same chromosome (blue loops at the lower left) or other chromosomes (red loop at the top and green loop on the right).
+
+![](images/8a329bd16e5651fdc5a824a7b33a539f10c2ec5fc6c0d87f6a4ec5f1b2a80d3a.jpg)  
+the protein in the cell. Many regulatory mechanisms operate at the various stages after transcription (see Figure 18.6). These mechanisms allow a cell to rapidly fine-tune gene expression in response to environmental changes without altering its transcription patterns. Here we explore how cells regulate gene expression after transcription.
+
+## RNA Processing
+
+RNA processing in the nucleus and the export of mature RNA to the cytoplasm provide opportunities for regulating gene expression not available in prokaryotic organisms. One example of regulation at the RNA-processing level is alternative RNA splicing, in which different mRNA molecules are produced from the same primary transcript, depending on which RNA segments are treated as exons and which as introns. Regulatory proteins specific to a particular cell type exert control over intron/exon choices by binding to regulatory sequences within the primary transcript.
+
+A simple example of alternative RNA splicing is shown in Figure 18.14 for the troponin T gene, which encodes multiple closely related proteins with slightly different effects on muscle contraction. Other genes code for many more products.
+
+For instance, researchers have found a Drosophila gene with enough alternatively spliced exons to generate about 19,000 membrane proteins that have different extracellular domains. At least 17,500 (94%) of the alternative mRNAs are actually synthesized. Each developing nerve cell in the fly appears to synthesize a different form of the protein, which acts as a unique identifier on the cell surface and helps prevent excessive overlap of nerve cells during development of the nervous system.
+
+Alternative RNA splicing can significantly expand the repertoire of a eukaryotic genome. In fact, alternative splicing was proposed as one explanation for the surprisingly low number of human genes counted when the human genome was sequenced. The number of human genes was found to be similar to that of a soil worm (nematode), a mustard plant, or a sea anemone. This discovery prompted questions about what, if not the number of genes, accounts for the more complex form and structure of humans. More than 90% of human protein-coding genes likely undergo alternative splicing. Thus, the extent of alternative splicing greatly multiplies the number of possible human proteins, which may be better correlated with complexity of form than the number of genes.
+
+## Initiation of Translation and mRNA Degradation
+
+Translation is another stage where gene expression is regulated, most commonly at the initiation stage (see Figure 17.19). For some mRNAs, the initiation of translation can be blocked by regulatory proteins that bind to specific sequences or structures within the untranslated region (UTR) at the 5' or 3' end, preventing the attachment of ribosomes. (Recall from Concept 17.3 that both
+
+## Figure 18.14 Alternative RNA splicing of the troponin T gene.
+
+The primary transcript of this gene can be spliced in more than one way, generating different mRNA molecules. Notice that one mRNA molecule has ended up with exon 3 (green) and the other with exon 4 (purple). These two mRNAs are translated into different but related muscle proteins.
+
+![](images/1f2fc9f25a918ce2bbd5421e20f25fad2649746b76fd7ed5b5839426608bda59.jpg)
+
+![](images/b65c6ca6183765c13f934f7ab047750127482d9aabcf8942930c5f15deffabcf.jpg)
+
+the 5' cap and the poly-A tail of an mRNA molecule are important for ribosome binding.)
+
+Alternatively, translation of all the mRNAs in a cell may be regulated simultaneously. In a eukaryotic cell, such “global” control usually involves the activation or inactivation of one or more protein factors required to initiate translation. This mechanism plays a role in starting translation of mRNAs that are stored in eggs. Just after fertilization, translation is triggered by the sudden activation of translation initiation factors. The response is a burst of synthesis of the proteins encoded by the stored mRNAs. Some plants and algae store mRNAs during periods of darkness; light then triggers the reactivation of the translational apparatus.
+
+The life span of mRNA molecules in the cytoplasm is important in determining the pattern of protein synthesis in a cell. Bacterial mRNA molecules typically are degraded by enzymes within a few minutes. This short life span of mRNAs is one reason bacteria can change their patterns of protein synthesis so quickly in response to environmental changes. In contrast, some mRNAs in multicellular eukaryotes typically survive for hours, days, or even weeks. For instance, the mRNAs for the hemoglobin polypeptides ( $\alpha$ -globin and $\beta$ -globin) in developing red blood cells are unusually stable, and these long-lived mRNAs are translated repeatedly in red blood cells.
+
+Nucleotide sequences that affect how long an mRNA remains intact are often found in the untranslated region at the 3' end of the molecule (see Figure 18.9). In one experiment, researchers transferred such a sequence from the short-lived mRNA for a growth factor to the 3' end of a normally stable globin mRNA. The globin mRNA was quickly degraded.
+
+Other mechanisms that degrade or block expression of mRNA molecules have come to light. They involve a group of RNA molecules that regulate gene expression at several levels, as you'll see shortly.
+
+## Protein Processing and Degradation
+
+The final opportunities for controlling gene expression occur after translation. Often, eukaryotic polypeptides must be processed to yield functional protein molecules. For instance, cleavage of the initial insulin polypeptide (pro-insulin) forms the active hormone. In addition, many proteins undergo chemical modifications that make them functional. Regulatory proteins are commonly activated or inactivated by the reversible addition of phosphate groups (see Figure 11.10), and proteins destined for the surface of animal cells acquire sugars (see Figure 6.12). Cell-surface proteins and many others must also be transported to target destinations in the cell in order to function (see Figure 17.22). Regulation might occur at any of the steps involved in modifying or transporting a protein.
+
+Finally, the length of time each protein functions in the cell is strictly regulated by selective degradation. Many proteins, such as the cyclins involved in regulating the cell cycle, must be relatively short-lived if the cell is to function appropriately (see Figure 12.16). To mark a protein for destruction, the cell commonly attaches molecules of a small protein called ubiquitin to the protein. Giant protein complexes called proteasomes then recognize the ubiquitin tagged proteins and degrade them.
+
+## Concept Check 18.2
+
+1. In general, what are the effects of histone acetylation and DNA methylation on gene expression?
+
+2. MAKE CONNECTIONS Speculate about whether the same enzyme could methylate both a histone and a DNA base. (See Concept 8.4.)
+
+3. Compare the roles of general and specific transcription factors in regulating gene expression.
+
+4. Once mRNA encoding a particular protein reaches the cytoplasm, what are four mechanisms that can regulate the amount of the protein that is active in the cell?
+
+5. WHAT IF? Suppose you compared the nucleotide sequences of the distal control elements in the enhancers of three genes that are expressed only in muscle cells. What would you expect to find? Why?
+
+For suggested answers, see Appendix A.
+
+## Concept 18.3: Noncoding RNAs play multiple roles in controlling gene expression
+
+Genome sequencing has revealed that protein-coding DNA accounts for only 1.5% of the human genome and a similarly small percentage of the genomes of many other multicellular eukaryotes. A very small fraction of the non-protein-coding DNA consists of genes for RNAs such as ribosomal RNA and transfer RNA. Until recently, scientists assumed that most of the remaining DNA was not transcribed, thinking that since it didn't specify proteins or the few known types of RNA, such DNA didn't contain meaningful genetic information—in fact, it was called “junk DNA.” However, genomic studies have cast doubt on this description. For example, a massive study showed that roughly 75% of the human genome is transcribed at some point in any given cell. Introns account for only a fraction of this transcribed RNA, most of which is untranslated. The verdict is still out on how much of the transcribed RNA is functional, but at least some of the genome is transcribed into non-protein-coding RNAs (also called noncoding RNAs, or ncRNAs), including a variety of small RNAs. Researchers are uncovering more evidence of the biological roles of these ncRNAs every day.
+
+These discoveries revealed a large and diverse population of RNA molecules in the cell that play crucial roles in regulating gene expression and had gone largely unnoticed. The longstanding view that mRNAs are the most important RNAs because they code for proteins needed revision. This has represented a major shift in thinking by biologists, one that you are witnessing as students entering this field of study.
+
+## Effects on mRNAs by MicroRNAs and Small Interfering RNAs
+
+Regulation by both small and large ncRNAs occurs at several points in the pathway of gene expression, including mRNA translation and chromatin modification. We'll examine two types of small ncRNAs, the importance of which was acknowledged when their discovery was the focus of the 2006 Nobel Prize in Physiology or Medicine, which was awarded for work completed only eight years earlier.
+
+Since 1993, a number of research studies have uncovered microRNAs (miRNAs)—small, single-stranded RNA molecules capable of binding to complementary sequences in mRNA molecules. A longer RNA precursor is processed by cellular enzymes into an miRNA, a single-stranded RNA of about 22 nucleotides that forms a complex with one or more proteins (Figure 18.15). The miRNA allows the complex to bind to any mRNA molecule with at least seven or eight nucleotides of complementary sequence. The miRNA-protein complex then degrades the target mRNA or, less often, simply blocks its translation. There are approximately 2,500
+
+Figure 18.15 Regulation of gene expression by microRNAs (miRNAs).
+
+An miRNA of about 22 nucleotides, formed by enzymatic processing of an RNA precursor, associates with one or more proteins in a complex that can degrade or block translation of target mRNAs.
+
+![](images/d777df128b38b19f31695767f4dc183035296c9e0edafbe381debf06a7d25605.jpg)  
+2 If miRNA and mRNA bases are complementary all along their length, the mRNA is degraded (left); if the match is less complete, translation is blocked (right).
+
+genes for miRNAs in the human genome, and biologists estimate that expression of at least one-half of all human genes may be regulated by miRNAs, a remarkable figure given that the existence of miRNAs was unknown until the early 1990s.
+
+Another class of small noncoding RNAs, similar in size and function to miRNAs, is called small interfering RNAs (siRNAs). Both miRNAs and siRNAs can associate with the same proteins, producing similar results. In fact, if siRNA precursor RNA molecules are injected into a cell, the cell's machinery can process them into siRNAs that turn off expression of genes with related sequences, similarly to how miRNAs function. The distinction between miRNAs and siRNAs is based on subtle differences in the structure of their precursors, which in both cases are RNA molecules that are mostly double-stranded. The blocking of gene expression by siRNAs, referred to as RNA interference (RNAi), is used in the laboratory as a means of disabling specific genes to investigate their function.
+
+EVOLUTION How did the RNAi pathway evolve? As you will learn in Concept 19.2, some viruses have double-stranded RNA genomes. Given that the cellular RNAi pathway can process double-stranded RNAs into homing devices that lead to destruction of related RNAs, some scientists think that this pathway may have evolved as a natural defense against infection by such viruses. However, the fact that RNAi can also affect the expression of nonviral cellular genes may reflect a different evolutionary origin for the RNAi pathway.
+
+While this section has focused on ncRNAs in eukaryotes, small ncRNAs are also used by bacteria as a defense system, called the CRISPR-Cas9 system, against viruses that infect them (see Concept 17.5). The use of ncRNAs thus evolved long ago, but we don't yet know how bacterial ncRNAs are related to those of eukaryotes.
+
+## Chromatin Remodeling and Effects on Transcription by ncRNAs
+
+In addition to regulating mRNAs, small noncoding RNAs can cause remodeling of chromatin structure. In the S phase of the cell cycle, for example, the centromeric regions of DNA must be loosened for chromosomal replication and then recondensed into heterochromatin in preparation for mitosis. In some yeasts, siRNAs produced by the yeast cells from the centromeric DNA are required to re-form the heterochromatin at the centromeres. Exactly how the process starts is still debated, but biologists agree on the general idea: The siRNA system in yeast interacts with other, larger noncoding RNAs and with chromatin-modifying enzymes to condense the centromere chromatin into heterochromatin. In most mammalian cells, siRNAs have not been found, and the mechanism for centromere DNA condensation is not yet understood. However, it may also turn out to involve small noncoding RNAs.
+
+A recently discovered class of small ncRNAs called piwi-interacting RNAs, or piRNAs, also induce formation of heterochromatin, blocking expression of some parasitic DNA elements in the genome known as transposons. (Transposons are discussed in Concept 21.4.) Usually 24–31 nucleotides in length, piRNAs are processed from a longer, single-stranded RNA precursor. They play an indispensable role in the germ cells of many animal species, where they appear to help
+
+## Interview
+
+Interview with Haifan Lin: Discovering piwi-interacting RNAs and connections to testicular cancer (eTextbook only)
+
+![](images/bb412b6f9b282543468ec541b8a8cf4702eb7b44c38978ed098317e78ec185e1.jpg)
+
+reestablish appropriate methylation patterns in the genome during gamete formation.
+
+Researchers have also found a relatively large number of long noncoding RNAs (lncRNAs), ranging from 200 to hundreds of thousands of nucleotides in length, that are expressed at significant levels in specific cell types at particular times. The functional significance of these lncRNAs has been debated, but in 2017 a large international research consortium published an atlas of almost 28,000 such RNAs; their analysis supported the idea that almost 20,000 were functional and that some were associated with specific diseases. One lncRNA, long known to be functional, is responsible for X chromosome inactivation, which prevents expression of genes located on one of the X chromosomes in most female mammals (see Figure 15.8). In this case, lncRNAs—transcripts of the XIST gene located on the chromosome to be inactivated—bind back to and coat that chromosome. This binding leads to condensation of the entire chromosome into heterochromatin.
+
+The examples just described involve chromatin remodeling in large regions of the chromosome. Because chromatin structure affects transcription and thus gene expression, RNA-based regulation of chromatin structure is sure to play an important role in gene regulation. Additionally, some experimental evidence supports the idea of an alternate role for lncRNAs in which they can act as a scaffold, bringing DNA, proteins, and other RNAs together into complexes. These associations may act either to condense chromatin or, in some cases, to help bring the enhancer of a gene together with mediator proteins and the gene's promoter, activating gene expression in a more direct fashion.
+
+Given the extensive functions of noncoding RNAs, it is not surprising that many of the ncRNAs characterized thus far play important roles in embryonic development—the topic we turn to in the next section. Embryonic development is perhaps the ultimate example of precisely regulated gene expression.
+
+# Concept 18.4: A program of differential gene expression leads to the different cell types in a multicellular organism
+
+In the embryonic development of multicellular organisms, a fertilized egg (a zygote) gives rise to cells of many different types, each with a different structure and corresponding function. Typically, cells are organized into tissues, tissues into organs, organs into organ systems, and organ systems into the whole organism. Thus, any developmental program must produce cells of different types that form higher-level structures arranged in a particular way in three dimensions. The processes that occur during animal development are detailed in Chapter 47; in this chapter, we focus on the program of regulation of gene expression that orchestrates development, using a few animal species as examples.
+
+## A Genetic Program for Embryonic Development
+
+The photos in Figure 18.16 illustrate the dramatic difference between a frog zygote (fertilized egg) and the tadpole it becomes. This remarkable transformation results from three interrelated processes: cell division, cell differentiation, and morphogenesis. Through a succession of mitotic cell divisions, the zygote gives rise to a large number of cells. Cell division alone, however, would merely produce a great ball of identical cells, nothing like a tadpole. During embryonic development, cells not only increase in number, but also undergo cell differentiation, the process by which cells become specialized in structure and function. Moreover, the different kinds of cells are not randomly distributed
+
+## Figure 18.16 From fertilized egg to animal: What a difference four days makes.
+
+It takes just four days for cell division, differentiation, and morphogenesis to transform each of the fertilized frog eggs shown in (a) into a tadpole like the one in (b).
+
+## Concept Check 18.3
+
+1. Compare miRNAs and siRNAs, including their functions.
+
+2. WHAT IF? Suppose the mRNA being degraded in Figure 18.14 coded for a protein that promotes cell division in a multicellular organism. What would happen if a mutation disabled the gene for the miRNA that triggers this degradation?
+
+3. MAKE CONNECTIONS Inactivation of one of the X chromosomes in female mammals involves a noncoding RNA (XIST). Suggest a model for how XIST RNA initiates Barr body formation (see Concept 15.2).
+
+For suggested answers, see Appendix A.
+
+![](images/b17b07d72f9baf9df42cdb5e08e43110a38d47229db189b1a66205d81a0e19e9.jpg)  
+(a) Fertilized eggs of a frog
+
+![](images/8dcbe5d1e38b6d68fda144e0cdf63d40ed69227999ad6b829d11060d0a8f1a00.jpg)  
+(b) Newly hatched tadpole
+
+but are organized into tissues and organs in a particular three-dimensional arrangement. The physical processes that give an organism its shape constitute morphogenesis, the development of the form of an organism and its structures.
+
+All three processes are rooted in cellular behavior. Even morphogenesis, the shaping of the organism, can be traced back to changes in the shape, motility, and other characteristics of the cells that make up various regions of the embryo. As you have seen, the activities of a cell depend on the genes it expresses and the proteins it produces. Almost all cells in an organism have the same genome; therefore, differential gene expression results from the genes being regulated differently in each cell type.
+
+In Figure 18.12, you saw a simplified view of how differential gene expression occurs in two cell types, a liver cell and a lens cell. Each of these fully differentiated cells has a particular mix of specific transcription factor activators that turn on the collection of genes whose products are required in the cell. The fact that both cells arose through a series of mitoses from a common fertilized egg inevitably leads to a question: How do different sets of activators come to be present in the two cells?
+
+It turns out that materials placed into the egg by maternal cells set up a sequential program of gene regulation that is carried out as embryonic cells divide, and this program coordinates cell differentiation during embryonic development. To understand how this works, we will consider two basic developmental processes. First, we'll explore how cells that arise from early embryonic mitoses develop the differences that start each cell along its own differentiation pathway. Second, we'll see how cellular differentiation leads to one particular cell type, using muscle development as an example.
+
+## Cytoplasmic Determinants and Inductive Signals
+
+What generates the first differences among cells in an early embryo? And what controls the differentiation of all the various cell types as development proceeds? You can probably deduce the answer: The specific genes expressed in any particular cell of a developing organism determine its path. Two sources of information, used to varying extents in different species, “tell” a cell which genes to express at any given time during embryonic development.
+
+One important source of information early in development is the egg's cytoplasm, which contains both RNA and proteins encoded by the mother's DNA. The cytoplasm of an unfertilized egg is not homogeneous. Messenger RNAs, proteins, other substances, and organelles are distributed unevenly in the unfertilized egg, and this unevenness has a profound impact on the development of the future embryo in many species. Maternal substances in the egg that influence the course of early development are called cytoplasmic determinants (Figure 18.17a). After fertilization, early mitotic divisions distribute the zygote's cytoplasm into separate cells. The nuclei of these cells may thus be exposed to different cytoplasmic determinants, depending on which portions of the zygotic cytoplasm a cell received. The combination of cytoplasmic determinants in a cell
+
+helps determine its developmental fate by regulating expression of the cell's genes during the course of cell differentiation.
+
+The other major source of developmental information, which becomes increasingly important as the number of embryonic cells increases, is the environment around a particular cell. Most influential are the signals conveyed to an embryonic cell from other embryonic cells in the vicinity, including contact with cell-surface molecules on neighboring cells and the binding of growth factors secreted by neighboring cells (see Concept 11.1). Such signals cause changes in the target cells, a process called induction (Figure 18.17b). The molecules that transmit these
+
+Figure 18.17 Sources of developmental information for the early embryo.  
+![](images/f6696478a5a92f9bf56588aa2ea316337bef582972be742792bde9599b41c7c0.jpg)  
+The unfertilized egg has molecules in its cytoplasm, encoded by the mother's genes, that influence development. Many of these cytoplasmic determinants, like the two shown here, are unevenly distributed in the egg. After fertilization and mitotic division, the cell nuclei of the embryo are exposed to different combinations of cytoplasmic determinants and, as a result, express different genes.
+
+![](images/4956a9c53a9695862edcbdb06f7fd22a7c41d6777b473dd558811459e5c59dde.jpg)  
+Cells in the lowest tier of cells are releasing molecules that signal (induce) nearby cells to change their gene expression.
+
+signals within the target cell are cell-surface receptors and other signaling pathway proteins. In general, the signal sends a cell down a specific developmental path by causing changes in its gene expression that lead to observable cellular changes. Thus, interactions between embryonic cells help induce differentiation into the many specialized cell types making up a new organism.
+
+## Sequential Regulation of Gene Expression During Cellular Differentiation
+
+The earliest changes that set a cell on its path to specialization are subtle ones, showing up only at the molecular level. Before biologists knew much about the molecular changes occurring in embryos, they coined the term determination to refer to the point at which an embryonic cell is irreversibly committed to becoming a particular cell type. Once it has undergone determination, an embryonic cell can be experimentally placed in another location in the embryo and it will still differentiate into the cell type that is its normal fate. Differentiation, then, is the process by which a cell attains its determined fate. As the tissues and organs of an embryo develop and their cells differentiate, the cells become more noticeably different in structure and function.
+
+Today we understand determination in terms of molecular changes that result in observable cell differentiation, marked by the expression of genes for tissue-specific proteins. Such proteins are found only in a specific cell type and give the cell its characteristic structure and function. The first sign of differentiation is the appearance of mRNAs for tissue-specific proteins. Later, differentiation is observable with a microscope as changes in cellular structure. On the molecular level, different sets of genes are sequentially expressed in a regulated manner as new cells arise when their precursors divide. Multiple steps in gene expression may be regulated during differentiation, transcription being the most common. In the fully differentiated cell, transcription remains the principal regulatory point for maintaining appropriate gene expression.
+
+Differentiated cells are specialists at making tissue-specific proteins. For example, as a result of transcriptional regulation, liver cells specialize in making albumin, and lens cells specialize in making crystallin (see Figure 18.12). Skeletal muscle cells in vertebrates are another instructive example. Each of these cells is a long fiber containing many nuclei within a single plasma membrane. Skeletal muscle cells have high concentrations of muscle-specific versions of the contractile proteins myosin and actin, as well as membrane receptor proteins that detect signals from nerve cells.
+
+Muscle cells develop from embryonic precursor cells that have the potential to develop into a number of cell types, including cartilage cells and fat cells, but particular conditions commit them to becoming muscle cells. Although the committed cells appear unchanged under the microscope, determination has occurred, and they are now a cell type called myoblasts. Eventually, myoblasts start to churn out large amounts of muscle-specific proteins and fuse to form mature, elongated, multinucleate skeletal muscle cells.
+
+Researchers have worked out what happens at the molecular level during muscle cell determination. To do so, they grew embryonic precursor cells in culture and analyzed them using molecular techniques you will learn about in Concepts 20.1 and 20.2. In a series of experiments, they isolated different genes, caused each to be expressed in a separate embryonic precursor cell, and then looked for differentiation into myoblasts and muscle cells. In this way, they identified several so-called “master regulatory genes” whose protein products commit the cells to becoming skeletal muscle cells. Thus, in the case of muscle cells, the molecular basis of determination is the expression of one or more of these master regulatory genes.
+
+To understand more about how determination occurs in muscle cell differentiation, let's focus on the master regulatory gene called myoD. The myoD gene deserves its designation as a master regulatory gene. Researchers have shown that the MyoD protein it encodes is capable of changing some kinds of fully differentiated nonmuscle cells, such as fat cells and liver cells, into muscle cells. Why doesn't MyoD work on all kinds of cells? One likely explanation is that activation of muscle-specific genes is not solely dependent on MyoD but requires a particular combination of regulatory proteins, some of which are lacking in cells that do not respond to MyoD.
+
+What is the molecular basis for muscle cell differentiation? The MyoD protein is a transcription factor (see Figure 18.10) that binds to specific control elements in the enhancers of various target genes and stimulates their expression (Figure 18.18). Some target genes for MyoD encode still other muscle-specific transcription factors. MyoD also stimulates expression of the myoD gene itself, an example of positive feedback that perpetuates MyoD's effect in maintaining the cell's differentiated state. Presumably, all the genes activated by MyoD have enhancer control elements recognized by MyoD and are thus coordinately controlled. Finally, the secondary transcription factors activate the genes for proteins such as myosin and actin that confer the unique properties of skeletal muscle cells.
+
+The determination and differentiation of some kinds of tissues likely play out in a similar fashion, while others have a more complicated scenario with more inputs. Experimental results indicate that master regulatory proteins like MyoD function by opening the chromatin in certain regions. This allows access to transcription machinery for activation of the next set of cell-type-specific genes.
+
+## Pattern Formation: Setting Up the Body Plan
+
+We have now seen how different programs of gene expression that are activated in the fertilized egg can result in differentiated cells and tissues. But for the tissues to function effectively in the organism as a whole, the organism's body plan—its overall three-dimensional arrangement—must be established and superimposed on the differentiation process. Let's look at the molecular basis for the establishment of the body plan, using the well-studied fruit fly Drosophila melanogaster as an example.
+
+Cytoplasmic determinants and inductive signals both contribute to spatially organizing the tissues and organs of an
+
+For suggested answer, see Appendix A.
+
+Figure 18.18 Determination and differentiation of muscle cells.
+
+Skeletal muscle cells arise from embryonic cells as a result of changes in gene expression. (In this depiction, the process of gene activation is greatly simplified.)
+
+1 Determination. Signals from other cells lead to activation of a master regulatory gene called myoD, and the cell makes MyoD protein, a specific transcription factor activator. The cell, now called a myoblast, is irreversibly committed to becoming a skeletal muscle cell.
+
+2 Differentiation. MyoD protein stimulates the myoD gene further and activates genes encoding other muscle-specific transcription factors, which in turn activate genes for muscle proteins. MyoD also turns on genes that block the cell cycle, thus stopping cell division. The nondividing myoblasts fuse to become mature multinucleate muscle cells, also called muscle fibers.
+
+![](images/3810c63b4b760c1951dfdaf76275ba07fccd423512ee0d1635fa10df3a5cd883.jpg)  
+WHAT IF? What would happen if a mutation in the myoD gene resulted in the production of an altered MyoD protein that could not activate the myoD gene?
+
+organism in their characteristic places. This developmental process is referred to as pattern formation.
+
+Just as the locations of the front, back, and sides of a new building are determined before construction begins, pattern formation in animals begins in the early embryo, when the major axes of an animal are established. In a bilaterally symmetrical animal, the relative positions of head and tail, right and left sides, and back and front—the three major body axes—are set up before the organs appear. The molecular cues that control pattern formation, collectively called positional information, are provided by cytoplasmic determinants and inductive signals (see Figure 18.17). These cues tell a cell its location relative to the body axes and to neighboring cells, and determine how the cell and its descendants will respond to future molecular signals.
+
+During the early 20th century, classical embryologists made detailed anatomical observations of embryonic development in a number of species and performed experiments in which they manipulated embryonic tissues. Although this research laid the groundwork for understanding the mechanisms of development, it did not reveal the specific molecules that guide development or determine how patterns are established.
+
+In the 1940s, scientists began using the genetic approach—the study of mutants—to investigate Drosophila development. That approach has had spectacular success. These studies have established that genes control development and have led to an understanding of the key roles that specific molecules play in defining position and directing differentiation. By combining anatomical, genetic, and biochemical approaches to the study of Drosophila development, researchers have discovered developmental principles common to many other species, including humans.
+
+## The Life Cycle of Drosophila
+
+Fruit flies and other arthropods have a modular construction, an ordered series of segments. These segments make up the body's three major parts: the head, the thorax (the mid-body, from which the wings and legs extend), and the abdomen (Figure 18.19a). Like other bilaterally symmetrical animals, Drosophila has an anterior-posterior (head-to-tail) axis, a dorsal-ventral (back-to-belly) axis, and a right-left axis. In Drosophila, cytoplasmic determinants that are localized in the unfertilized egg provide positional information
+
+Figure 18.19 Key events in Drosophila development.
+
+(a) Adult. The adult fly is segmented, and multiple segments make up each of the three main body parts—head, thorax, and abdomen. The body axes are shown by arrows.
+
+![](images/c7c2d8f76855688a90371df49ef060075c74c94fc1512e00e590c78566ef75d1.jpg)  
+(b) Development from egg to larva.
+
+1 Developing egg within one ovarian follicle (among many in an ovary). The egg (yellow) and nurse cells are surrounded by follicle cells.
+
+2 Mature, unfertilized egg. The developing egg enlarges as nutrients and mRNAs are supplied to it by the nurse cells, which shrink. Eventually, the mature egg fills the eggshell that has been secreted by the follicle cells.
+
+3 Fertilized egg. The egg is fertilized within the mother and then laid.
+
+4 Segmented embryo. The egg develops into a segmented embryo.
+
+![](images/801c5ec617e4e6227ee7d0d334b443b0180811c8cb0c6dc485e3be67837b78f6.jpg)
+
+The embryo develops into a larva, which has three stages. The third stage forms a pupa (not shown), within which the larva metamorphoses into the adult shown in (a).
+
+for the placement of anterior-posterior and dorsal-ventral axes even before fertilization. We'll focus here on the molecules involved in establishing the anterior-posterior axis as a case in point.
+
+The Drosophila egg develops in one of the female's ovaries, next to the nurse cells, which supply the egg with nutrients, mRNAs, and other substances needed for development. The egg and nurse cells are surrounded by follicle cells, which make the eggshell (Figure 18.19b, top). After fertilization and laying of the egg, embryonic development results in the formation of a segmented larva, which goes through three larval stages. Then, in a process much like that by which a caterpillar becomes a butterfly, the fly larva forms a pupa in which it metamorphoses into the adult fly pictured in Figure 18.19a.
+
+Figure 18.20 Abnormal pattern formation in Drosophila. Mutations in homeotic genes cause misplacement of structures in an animal, such as the legs extending from the mutant fly's head in place of antenna (colorized SEMs).  
+![](images/cd54c3337149b0e5d4060cf95e6c3af66b0c44ad5867337a112d02297cf1442b.jpg)
+
+## Genetic Analysis of Early Development: Scientific Inquiry
+
+Edward B. Lewis was a visionary American biologist who, in the 1940s, first showed the value of the genetic approach to studying embryonic development in Drosophila. Lewis studied bizarre mutant flies with developmental defects that led to extra wings or legs in the wrong place (Figure 18.20). He located the mutations on the fly's genetic map, thus connecting the developmental abnormalities to specific genes. This research supplied the first concrete evidence that genes somehow direct the developmental processes studied by embryologists. The genes Lewis discovered, called homeotic genes, are regulatory genes that control pattern formation in the fly.
+
+Further insight into pattern formation during early embryonic development did not come for another 30 years, when two researchers in Germany, Christiane Nüsslein-Volhard and Eric Wieschaus, set out to identify all the genes that affect segment formation in Drosophila. The project was daunting for three reasons. The first was the sheer number of Drosophila genes, now known to total about 14,000. The genes affecting segmentation might be just a few needles in a haystack or might be so numerous and varied that the scientists would be unable to make sense of them. Second, mutations affecting a process as fundamental as segmentation would surely be embryonic lethals, mutations with phenotypes causing death at the embryonic or larval stage. Because organisms with embryonic lethal mutations never reproduce, they cannot be bred for study. The researchers dealt with this problem by looking for recessive mutations, which can be propagated in heterozygous flies that act as genetic carriers. Third, cytoplasmic determinants in the egg were known to play a role in axis formation, so the researchers knew they would have to study the female parent's genes as well as those of the embryo. It is the female parent's genes that we will discuss further as we focus on how the anterior-posterior body axis is set up in the developing egg.
+
+Nüsslein-Volhard and Wieschaus began their search for segmentation genes by exposing flies to mutagenic agents and scanning their offspring for dead embryos or larvae with abnormal segmentation or other defects. For example, to find genes that might set up the anterior-posterior axis, they looked for embryos or larvae with abnormal ends, such as two heads or two tails, predicting that such abnormalities would arise from mutations in maternal genes required for correctly setting up the offspring's head or tail end.
+
+Using this approach, Nüsslein-Volhard and Wieschaus eventually identified about 1,200 genes essential for pattern formation during embryonic development. Of these, about 120 were essential for normal segmentation patterns. Next, the researchers were able to group these segmentation genes by general function and to isolate many of them for further study. The result was a detailed molecular understanding of the early steps in pattern formation in Drosophila.
+
+When the results of Nüsslein-Volhard and Wieschaus were combined with Lewis's earlier work, a coherent picture of Drosophila development emerged. In recognition of their discoveries, the three researchers were awarded a Nobel Prize in 1995. Let's consider a specific example of the genes that Nüsslein-Volhard, Wieschaus, and co-workers found.
+
+## Axis Establishment
+
+As we mentioned earlier, cytoplasmic determinants in the egg are the substances that initially establish the axes of the Drosophila body. These substances are encoded by genes of the female parent called maternal effect genes. A gene classified as a maternal effect gene is one that, when mutant in the female parent, results in a mutant phenotype in the offspring, regardless of the offspring's own genotype. In fruit fly development, the mRNA or protein products of maternal effect genes are placed in the egg while it is still in the female parent's ovary. When the female parent has a mutation in such a gene, she makes a defective gene product (or none at all), and her eggs are abnormal; when these eggs are fertilized, they fail to develop properly.
+
+Because maternal effect genes control the orientation (polarity) of the egg and consequently that of the fly, they are also called egg-polarity genes. Two groups of these genes set up the anterior-posterior and dorsal-ventral axes of the embryo. Like mutations in segmentation genes, mutations in maternal effect genes are generally embryonic lethals.
+
+## Bicoid: A Morphogen that Determines Head Structures
+
+To see how maternal effect genes determine the body axes of the offspring, we will focus on one such gene, called bicoid, a term meaning “two-tailed.” An embryo or larva whose mother has two mutant bicoid alleles lacks the front half of its body and has posterior structures at both ends (Figure 18.21). This phenotype suggested to Nüsslein-Volhard and her colleagues that the product of the female parent’s bicoid gene is essential for setting up the anterior end of the fly and might be concentrated at the future anterior end of the embryo. This hypothesis is an example of the morphogen gradient hypothesis first proposed by embryologists a century ago, in which gradients of substances called morphogens establish an embryo’s axes and other features of its form.
+
+Figure 18.21 Effect of the bicoid gene on Drosophila development.
+
+A wild-type fruit fly larva has a head, three thoracic (T) segments, eight abdominal (A) segments, and a tail. A larva whose mother has two mutant alleles of the bicoid gene has two tails and lacks all anterior structures (LMs).
+
+![](images/a869e018e3eb5c0067fb7eb8b4ce4619765d12d07013f8d616fb79104a41b745.jpg)
+
+DNA technology and other modern biochemical methods enabled the researchers to test whether the bicoid product, a protein called Bicoid, is in fact a morphogen that determines the anterior end of the fly. First, they asked whether the location of the mRNA and protein products of this gene in the egg was consistent with the hypothesis. They found that bicoid mRNA is highly concentrated at the extreme anterior end of the mature egg (Figure 18.22). After the egg is fertilized, the mRNA is translated into protein. The Bicoid protein then diffuses from the anterior end toward the posterior, resulting in a gradient of protein within the early embryo, most highly concentrated at the anterior end. These results are consistent with the hypothesis that Bicoid protein specifies the fly's anterior end. To test this more specifically, scientists injected pure bicoid mRNA into various regions of early embryos. The protein that resulted from its translation caused anterior structures to form at the injection sites.
+
+The bicoid research was groundbreaking for several reasons. First, it led to the identification of a specific protein required for some of the earliest steps in pattern formation. It thus helped us understand how different regions of the egg can give rise to cells that go down different developmental pathways. Second, it increased our understanding of the mother's critical role in the initial phases of embryonic development. Third, the principle that a gradient of morphogens can determine polarity and position has proved to be a key developmental concept for a number of species, just as early embryologists had hypothesized.
+
+Maternal mRNAs are crucial during development of many species. In Drosophila, gradients of specific proteins encoded by maternal mRNAs not only determine the posterior and anterior ends but also establish the dorsal-ventral axis. As the fly embryo grows, it reaches a point when the embryonic program of gene expression takes over, and the maternal mRNAs must be destroyed. Later, positional information encoded by the embryo's genes, operating on
+
+## Figure 18.22
+
+## Inquiry: Could Bicoid be a morphogen that determines the anterior end of a fruit fly?
+
+Experiment
+
+Using a genetic approach to study Drosophila development, Christiane Nüsslein-Volhard and colleagues at two research institutions in Germany analyzed expression of the bicoid gene. The researchers hypothesized that bicoid normally codes for a morphogen that specifies the head (anterior) end of the embryo. To begin to test this hypothesis, they used molecular techniques to determine whether the mRNA and protein encoded by this gene were found in the anterior end of the fertilized egg and early embryo of wild-type flies.
+
+## Results
+
+Bicoid mRNA (dark blue in the light micrographs and drawings on the left) was confined to the anterior end of the unfertilized egg. Later in development, Bicoid protein (dark orange) was seen to be concentrated in cells at the anterior end of the embryo.
+
+![](images/a375b02656bb64d53d9d50db83c0fd9407c6cec61fb268396cf60ba9576449fc.jpg)
+
+## Conclusion
+
+The location of bicoid mRNA and the diffuse gradient of Bicoid protein seen later are consistent with the hypothesis that Bicoid protein is a morphogen specifying formation of head-specific structures.
+
+Further Reading C. Nüsslein-Volhard et al., Determination of anteroposterior polarity in Drosophila, Science 238:1675–1681 (1987); W. Driever and C. Nüsslein-Volhard, A gradient of Bicoid protein in Drosophila embryos, Cell 54:83–93 (1988); T. Berleth et al., The role of localization of bicoid RNA in organizing the anterior pattern of the Drosophila embryo, EMBO Journal 7:1749–1756 (1988).
+
+WHAT IF? The researchers needed further evidence, so they injected bicoid mRNA into the anterior end of an egg from a female with a mutation disabling the bicoid gene. Given that the hypothesis was supported, what must their results have been?
+For suggested answer, see Appendix A.
+
+an ever finer scale, establishes a specific number of correctly oriented segments and triggers the formation of each segment's characteristic structures. Mutant genes affecting this final step can lead to an abnormal adult pattern, as you saw in (Figure 18.20).
+
+## Interview
+
+Interview with Nancy Hopkins: Studying the genetic basis of development in zebrafish (eTextbook only)
+
+![](images/b6dc82cf90c47f5f5f0bf877bd6e071f74cdc15e5ab47e26fc380bd653ef4ff9.jpg)
+
+## Evolutionary Developmental Biology (“Evo-Devo”)
+
+EVOLUTION The fly with legs emerging from its head in Figure 18.20 is the result of a single mutation in one gene, a homeotic gene. The gene does not encode any antenna protein, however. Instead, it encodes a transcription factor that regulates other genes, and its malfunction leads to misplaced structures, such as legs instead of antennae. The observation that a change in gene regulation during development could lead to such a fantastic change in body form prompted some scientists to consider whether these types of mutations could contribute to evolution by generating novel body shapes. Ultimately, this line of inquiry gave rise to the field of evolutionary developmental biology, so-called “evo-devo,” which will be further discussed in Concept 21.6.
+
+In this section, we have seen how a carefully orchestrated program of sequential gene regulation controls the transformation of a fertilized egg into a multicellular organism. The program is carefully balanced between turning on the genes for differentiation in the right place and turning off other genes. Even when an organism is fully developed, gene expression is regulated in a similarly fine-tuned manner. In the final section of the chapter, we'll consider how fine this tuning is by looking at how specific changes in expression of just a few genes can lead to the development of cancer.
+
+## Concept Check 18.4
+
+1. MAKE CONNECTIONS As you learned in Chapter 12, mitosis gives rise to two daughter cells that are genetically identical to the parent cell. Yet you, the product of many mitotic divisions, are not composed of identical, zygote-like cells. Why?
+
+2. MAKE CONNECTIONS Explain how the signaling molecules released by an embryonic cell can induce changes in a neighboring cell without entering the cell. (See Figures 11.15 and 11.16.)
+
+3. How do fruit fly maternal effect genes determine the polarity of the egg and the embryo?
+
+4. WHAT IF? In Figure 18.17b, the lower cell is synthesizing signaling molecules, whereas the upper cell is expressing receptors for these molecules. In terms of gene regulation and cytoplasmic determinants, explain how these cells came to synthesize different molecules.
+
+# Concept 18.5: Cancer results from genetic changes that affect cell cycle control
+
+In Concept 12.3, we considered cancer as a disease in which cells escape from their normal cell division control mechanisms. Now that we have discussed the molecular basis of gene expression and its regulation, we can look at cancer more closely. The gene regulation systems that go wrong during cancer turn out to be the very same systems that play important roles in embryonic development, the immune response, and many other biological processes. Thus, research into the molecular basis of cancer has both benefited from and informed many other fields of biology.
+
+## Types of Genes Associated with Cancer
+
+The genes that normally regulate cell growth and division during the cell cycle include genes for growth factors, their receptors, and the intracellular molecules of signaling pathways. (To review cell signaling, see Concept 11.2; for regulation of the cell cycle, see Concept 12.3.) Mutations that alter any of these genes in somatic cells can lead to cancer. The agent of such change can be random spontaneous mutation. Many cancer-causing mutations likely also result from environmental influences: chemical carcinogens, including many compounds in tobacco products, X-rays and other high-energy radiation, and some viruses.
+
+Cancer research uncovered cancer-causing genes called oncogenes (from the Greek onco, tumor) in certain types of viruses. Later, related versions of viral oncogenes were found in the genomes of humans and other animals. The normal versions of the cellular genes, called proto-oncogenes, code for proteins that stimulate normal cell growth and division.
+
+How might a proto-oncogene—a gene that has an essential function in normal cells—become an oncogene, a cancer-causing gene? In general, an oncogene arises from a genetic change that leads to an increase either in the amount of the proto-oncogene's protein product or in the intrinsic activity of each protein molecule. The genetic changes that convert proto-oncogenes to oncogenes fall into four main categories (Figure 18.23): epigenetic changes, translocations, gene amplification, and point mutations.
+
+1. Epigenetic changes that alter chromatin form. Alterations in epigenetic modifications that can lead to abnormal chromatin condensation in a cell are often found in tumor cells. If a mutation in a gene for a chromatin-modifying enzyme leads to loosening of chromatin in a region that is normally not being expressed, a proto-oncogene in that region could be expressed at abnormally high levels (see Figure 18.23a). For example, a gene for one such enzyme has been shown to be mutated in 20% of tumor cells analyzed.
+
+2. Movement of DNA within the genome. Cancer cells are frequently found to contain chromosomes that have broken and rejoined incorrectly, translocating fragments from one chromosome to another (see Figure 15.14). If a translocated proto-oncogene ends up near an especially active promoter (or other control element), its transcription may increase, making it an oncogene, as shown in Figure 18.23b. (A process called transposition, which we will discuss in Concept 21.4, can also move DNA fragments.)
+
+3. Amplification of a proto-oncogene. Amplification increases the number of copies of the proto-oncogene in the cell through repeated gene duplication (discussed in Concept 21.5; see Figure 18.23c).
+
+4. Point mutations in a control element or in the proto-oncogene itself. A point mutation either in the promoter or an enhancer that controls a proto-oncogene could cause an increase in its expression. A point mutation in the coding sequence of the proto-oncogene could change the gene's product to a protein that is more active or more resistant to degradation than the normal protein (see Figure 18.23d).
+
+Any of these four mechanisms can lead to abnormal stimulation of the cell cycle and put the cell on the path to becoming a cancer cell.
+
+In addition to genes whose products normally promote cell division, cells contain genes whose normal products inhibit cell division. Such genes are called tumor-suppressor genes since the proteins they encode help prevent uncontrolled cell growth. Any mutation that decreases the normal activity of a tumor-suppressor protein may contribute to the onset of cancer, in effect stimulating growth through the absence of suppression.
+
+The protein products of tumor-suppressor genes have various functions. Some repair damaged DNA, which prevents the cell from accumulating cancer-causing mutations. Other tumor-suppressor proteins control adhesion of cells to each other or to the extracellular matrix; proper cell anchorage is crucial in normal tissues and is often absent in cancers. Still other tumor-suppressor proteins are components of cell-signaling pathways that inhibit the cell cycle.
+
+## Interference with Normal Cell-Signaling Pathways
+
+Let's consider how protein components of cell-signaling pathways function in normal cells and what goes wrong with their function in cancer cells. We will focus on the products of two key genes, the ras proto-oncogene and the $p53$ tumor-suppressor gene. Mutations in ras occur in about 30% of human cancers and mutations in $p53$ in more than 50%.
+
+The Ras protein, encoded by the ras gene (named for rat sarcoma, a connective tissue cancer), is a G protein that relays a signal from a growth factor receptor on the plasma membrane to a cascade of protein kinases (see Figures 11.8 and 11.10). The cellular response at the end of the pathway is the synthesis of a protein that stimulates the cell cycle (Figure 18.24a, after you turn the page).
+
+Figure 18.23 Genetic changes that can turn proto-oncogenes into oncogenes.  
+![](images/a63b723bc6d23d8b1f4e8a6cb8238de35137d256f473bd65211325800889b2ec.jpg)
+
+Normally, such a pathway will not operate unless triggered by the appropriate growth factor. But certain mutations in the ras gene can lead to production of a hyperactive Ras protein that triggers the kinase cascade even in the absence of growth factor, resulting in increased cell division (Figure 18.24b). In fact, hyperactive versions or excess amounts of any of the pathway's components can have the same outcome: excessive cell division.
+
+Figure 18.25a shows a pathway in which an intracellular signal leads to the synthesis of a protein that suppresses the cell cycle. In this case, the signal is damage to the cell's DNA, perhaps as the result of exposure to ultraviolet light. Operation of this signaling pathway blocks the cell cycle until the damage has been repaired. Otherwise, the damage might contribute to tumor formation by causing mutations or chromosomal abnormalities. Thus, the genes for the components of the pathway act as tumor-suppressor genes. The p53 gene, named for the apparent molecular weight of its protein product, is a tumor-suppressor gene. The protein it encodes is a specific transcription factor that promotes the synthesis of cell cycle–inhibiting proteins. That is why a mutation that knocks out the p53 gene or in a gene required to activate the p53 protein (for example, a gene called ATM) can lead to excessive cell growth and cancer (Figure 18.25b).
+
+The p53 gene has been called the “guardian angel of the genome.” Once the p53 protein is activated—say, by the ATM protein, a protein kinase, after DNA damage—p53 activates several other genes, such as p21. The p21 protein halts the cell cycle by binding to cyclin-dependent kinases, allowing time for the cell to repair the DNA. Researchers have shown that p53 also activates expression of a group of miRNAs that inhibit the cell cycle. The p53 protein can also turn on genes directly involved in DNA repair. If DNA damage is irreparable, p53 activates “suicide” genes, whose protein products bring about programmed cell death (apoptosis; see Figure 11.20). Thus, p53 acts in several ways to prevent a cell from passing on mutations due to DNA damage. If mutations do accumulate and the cell survives through many divisions—as is more likely if the p53 tumor-suppressor gene is defective or missing—cancer may ensue. The many functions of p53 suggest a complex picture of regulation in normal cells, one that we do not yet fully understand.
+
+Figure 18.24 Normal and mutant cell cycle–stimulating pathway.
+
+## (a) Normal cell cycle-stimulating pathway.
+
+① a growth factor that binds to ② its receptor in the plasma membrane. The signal is relayed to ③ a G protein called Ras. Like all G proteins, Ras is active when GTP is bound to it. Ras passes the signal to ④ a series of protein kinases. The last kinase activates ⑤ a transcription factor (activator) that turns on one or more genes for ⑥ a protein that stimulates the cell cycle.
+
+![](images/6359ce5a0e22558fd21f982946d3746178459e97f6df3245de2867998e05a186.jpg)
+
+## (b) Mutant cell cycle—stimulating pathway.
+
+If a mutation makes Ras or any other pathway component abnormally active, excessive cell division and cancer may result.
+
+![](images/b8b4a98bb78a007ec13ee8f15cb48117d080aa8c6aba8b2fb86463251801af57.jpg)  
+Figure 18.25 Normal and mutant cell cycle-inhibiting pathway.
+
+(a) Normal cell cycle-inhibiting pathway. In the normal pathway, ① DNA damage is an intracellular signal that is passed via ② protein kinases, leading to activation of ③ p53. ④ Activated p53 promotes transcription of the gene for ⑤ a protein that inhibits the cell cycle. The resulting suppression of cell division ensures that the damaged DNA is not replicated. If the DNA damage is irreparable, then the p53 signal leads to apoptosis.
+
+(b) Mutant cell cycle-inhibiting pathway. Mutations causing deficiencies in any pathway component can contribute to the development of cancer.
+
+![](images/fc15a9e09ffe16f5478fd63db03d053f8d3dcaab3c02e7dc0806fb05fa0d6886.jpg)  
+Explain whether a cancer-causing mutation in a tumor-suppressor gene, such as p53, is more likely to be a recessive or a dominant mutation.
+
+For suggested answer, see Appendix A.
+
+Results from a study of elephants may underscore the protective role of the p53 gene. The incidence of cancer among elephants in zoo-based studies has been estimated at about 3%, compared with closer to 30% for humans. Genome sequencing revealed that elephants have 20 copies of the p53 gene, compared to one copy in humans, other mammals, and even manatees, elephants' closest living relatives. There are undoubtedly other underlying reasons, but the correlation between low cancer rate and extra copies of the p53 gene bears further investigation.
+
+For the present, the diagrams in Figure 18.24 and Figure 18.25 are an accurate view of how mutations can contribute to cancer, but we still don't know exactly how a particular cell becomes a cancer cell. Recent studies have shown, for instance, that DNA methylation and histone modification patterns in normal cells differ from those in cancer cells and that miRNAs probably participate in cancer development. There is still a lot to learn, and you and your classmates may be the ones to make important discoveries about cancer biology.
+
+## The Multistep Model of Cancer Development
+
+More than one somatic mutation or epigenetic change is generally needed to produce all the changes characteristic of a full-fledged cancer cell. This may help explain why the incidence of cancer increases greatly with age. If cancer results from an accumulation of mutations that occur throughout life, then the longer we live, the more likely we are to develop cancer.
+
+The model of a multistep path to cancer is well supported by studies of one of the best-understood types of human cancer: colorectal cancer, which affects the colon and/or rectum. About 140,000 new cases of colorectal cancer are diagnosed each year in the United States, and the disease causes 50,000 deaths per year. Like most cancers, colorectal cancer develops gradually (Figure 18.26). The first sign is often a polyp, a small, benign growth in the colon lining. The cells of the polyp look normal, although they divide unusually frequently. The tumor grows and may eventually become malignant, invading other tissues. The development of a malignant tumor is paralleled by a gradual accumulation of mutations that convert proto-oncogenes to oncogenes and knock out tumor-suppressor genes. A ras oncogene and a mutated p53 tumor-suppressor gene are often involved.
+
+About half a dozen changes must occur at the DNA level for a cell to become fully cancerous. These changes usually include the appearance of at least one active oncogene and the mutation or loss of several tumor-suppressor genes. Furthermore, since mutant tumor-suppressor alleles are usually recessive, in most cases mutations must knock out both alleles in a cell's genome to block tumor suppression. (Most oncogenes, on the other hand, behave as dominant alleles.)
+
+Since we understand the progression of this type of cancer, routine screenings (colonoscopies, for example) are recommended to identify and remove any suspicious polyps. The overall colorectal cancer mortality rate has been declining for the past 20 years due to increased screening and improved treatments. (Unfortunately, rates are on the rise for people under 50 years of age, likely due to factors such as diet, sedentary lifestyle, and alcohol consumption.) Treatments for other cancers have improved as well. Advances in the sequencing of DNA and mRNA allow medical researchers to compare the genes expressed by different types of tumors and by the same type in different people. These comparisons have led to personalized treatments based on the molecular characteristics of a person's tumor; Figure 18.27, on the next two pages, shows how this approach has been applied to breast cancer.
+
+Breast cancer is the second most common form of cancer in the United States, and the first among women. Each year, this cancer strikes over 230,000 women (and some men) in the United States and kills 40,000 (450,000 worldwide). A major problem with understanding breast cancer is its heterogeneity: Tumors differ in significant ways. Identifying differences between types of breast cancer is expected to improve treatment and decrease the mortality rate. In 2012, the Cancer Genome Atlas Network, sponsored by the National Institutes of Health, published the results of a multi-team effort that used a genomics approach to profile subtypes of breast cancer based on their molecular signatures. Four major types of breast cancer were identified (see Figure 18.27). It is now routine to screen for the presence of particular signaling receptors in any breast cancer tumors, and individuals with breast cancer, along with their physicians, can now make more informed decisions about their treatments.
+
+This type of cancer is one of the best understood. Changes in a tumor parallel a series of genetic changes, including mutations affecting several tumor-suppressor genes (such as p53 and the ras proto-oncogene. Mutations of tumor-suppressor genes often entail loss (deletion) of the gene. APC stands for adenomatous polyposis coli, and SMAD4 is a gene involved in signaling that results in apoptosis.
+
+![](images/dee9e08dda146056b4b8c262e54aba664944c484c10cbdd0b4f68a5298cf1681.jpg)  
+② Activation of ras oncogene  
+Normal colon epithelial cells  
+Small benign growth (polyp)  
+3 Loss of tumor-suppressor gene SMAD4  
+4 Loss of tumor-suppressor gene p53  
+Larger benign growth (adenoma)  
+Malignant tumor (carcinoma)
+
+Figure 18.27
+
+Modern medicine that melds genome-wide molecular studies with cell-signaling research is transforming the treatment of many diseases, such as breast cancer. Using microarray analysis (see Figure 20.13) and other techniques, researchers measured the relative levels of mRNA transcripts for every gene in hundreds of breast cancer tumor samples. They identified four major subtypes of breast cancer that differ in their expression of three signal receptors involved in regulating cell growth and division:
+
+• Progesterone receptor (PR)
+
+\- HER2, a type of receptor called a receptor tyrosine kinase (RTK); other RTKs are also present, such as HER3
+
+(ERα and PR are steroid receptors; see Figure 11.9.) The absence or excess expression of these receptors can cause aberrant cell signaling, leading in some cases to inappropriate cell division, which can contribute to cancer (see Figure 18.24).
+
+![](images/659e09f47b745978fede0b8e2e47178a54e42a5226bebc025c5f76743b23b6eb.jpg)  
+A research scientists examines DNA-sequencing data from breast cancer samples.
+
+![](images/cc513c65c8b01dfc795cf9b3dae6f4f3f2277683a58ba9160e73726bbfcb68f1.jpg)
+
+## Breast Cancer Subtypes
+
+Each breast cancer subtype is characterized by the overexpression (indicated by ++ or +++) or absence (−) of three signal receptors: ERα, PR, and HER2. Breast cancer treatments are becoming more effective because they can be tailored to the specific cancer subtype.
+
+## Luminal A
+
+![](images/b50c8b2cf2bb5a4290ba92e7822dbe6775a2d093843c587cf01e1a69a58ad062.jpg)
+
+## Luminal B
+
+\- ERα+++
+
+• ERα++
+
+\- PR++
+
+\- HER2-
+
+\- PR++
+
+\- HER2– (shown here); some HER2++
+
+• 40% of breast cancers
+
+\- Divide rapidly
+
+\- Best prognosis
+
+• 15–20% of breast cancers
+
+\- Poorer prognosis than luminal A
+
+Both luminal subtypes overexpress ERα (luminal A more than luminal B) and PR, and usually lack expression of HER2. Both can be treated with drugs that target ERα and inactivate it, the most well-known drug being tamoxifen. These subtypes can also be treated with drugs that inhibit estrogen synthesis.
+
+## HER2
+
+![](images/50116018083a35ab9ac24951364833789379cb62eedb17374022a3270d4e15cf.jpg)
+
+\- ERα- or ERα+
+
+• PR-
+
+\- HER2++
+
+• 10–15% of breast cancers - Poorer prognosis than luminal A subtype
+
+## Basal-like
+
+• ERα-
+
+\- PR-
+
+\- HER2-
+
+\- 15–20% of breast cancers
+- More aggressive; poorer prognosis than other subtypes
+
+The basal-like subtype is "triple negative"—it usually does not express ERα, PR, or HER2. It often has a mutation in the tumor-suppressor gene BRCA1 (see Concept 18.5). Treatments that target ERα, PR, or HER2 are not effective, but new treatments are being developed. Currently, patients are treated with cytotoxic chemotherapy, which selectively kills fast-growing cells.
+
+The HER2 subtype overexpresses HER2. Because it does not express PR (and, in many cases, ERα) at normal levels, the cells are unresponsive to therapies that target PR (and, for ERα– cells, ERα). However, patients with the HER2 subtype can be treated with Herceptin, an antibody protein that inactivates HER2 (see Concept 12.3).
+
+![](images/5b8c16eb99ce750acd330ec91f016952a720a015ec5bfb6579e758a596b42b24.jpg)
+
+① A signaling molecule (such as a growth factor) binds as a ligand to a single HER3 (a monomer), allowing it to associate with another HER.
+
+Response (cell division)
+
+② Even without a ligand bound, HER2 can associate with another HER. Here, HER3 and HER2 associate closely together, forming a dimer.
+
+## ③ Formation of a dimer activates each monomer.
+
+④ Each monomer adds phosphate from ATP to the other monomer, triggering a signal transduction pathway.
+
+⑤ The signal is transduced through the cell, which leads to a cellular response—in this case, turning on genes that trigger cell division. HER2 cells have up to 100 times as many HER2 receptors as normal cells, so they undergo uncontrolled cell division.
+
+## Treatment with Herceptin for the HER2 subtype
+
+![](images/ca6284bbb7c06b9529c5af08061694798bba79f03431c0b7fba8d24511307560.jpg)
+
+HER2 Bound herceptin
+
+![](images/f2605bd882ef3922bee6aa1e3f58df60bae997560e4b4df823698dcd0311a1c1.jpg)
+
+① Patients with the HER2 subtype are treated with the drug Herceptin, which can bind to HER2.
+
+② When bound to HER2, Herceptin blocks signaling and excessive cell division in certain patients.
+
+# Inherited Predisposition and Environmental Factors Contributing to Cancer
+
+The fact that multiple genetic changes are required to produce a cancer cell helps explain the observation that cancers can run in families. An individual inheriting an oncogene or a mutant allele of a tumor-suppressor gene is one step closer to accumulating the necessary mutations for cancer to develop than is an individual without any such mutations.
+
+Geneticists are working to identify inherited cancer alleles so that predisposition to certain cancers can be detected early in life. About 15% of colorectal cancers, for example, involve inherited mutations. One syndrome, called hereditary nonpolyposis colon cancer (HNPCC), increases an individual's lifetime risk of colon cancer to 50–70%. HNPCC, also known as Lynch syndrome, is caused by an autosomal dominant allele of any one of a group of DNA repair genes, underscoring the importance of DNA repair systems. This syndrome is responsible for 2–5% of colon cancers. Other inherited mutations that cause colon cancer affect the tumor-suppressor gene called adenomatous polyposis coli, or APC (see Figure 18.26). This gene has multiple functions in the cell, including regulation of cell migration and adhesion. Even in patients with no family history of the disease, the APC gene is mutated in 60% of colorectal cancers. In these individuals, new mutations must have occurred in both APC alleles before the gene's function is lost. Currently, only 15% of colorectal cancers are associated with known inherited mutations, so researchers continue to try to identify “markers” that could predict the risk of developing this type of cancer.
+
+Given the prevalence and significance of breast cancer, it is not surprising that it was one of the first cancers for which the role of inheritance was investigated. It turns out that for 5–10% of patients with breast cancer, there is evidence of a strong inherited predisposition. Geneticist Mary-Claire King began working on this problem in the mid-1970s. After 16 years of research, she convincingly demonstrated that mutations in one gene—BRCA1—were associated with increased susceptibility to breast cancer, a finding that flew in the face of medical opinion at the time. (BRCA stands for breast cancer.) Mutations in that gene or a gene called BRCA2 are found in at least half of inherited breast cancers, and tests using DNA sequencing can detect these mutations. A woman who inherits one mutant BRCA1 allele has a 60% probability of developing breast cancer before the age of 50, compared with only a 2% probability for an individual homozygous for the normal allele.
+
+## Interview
+
+Interview with Mary-Claire King: Discovering breast cancer genes (eTextbook only)
+
+![](images/f5712d3a05ddc792bd3bfbed7e14df2408c2c0c4d48c93bb45b04d6f8b36715a.jpg)
+
+BRCA1 and BRCA2 are considered tumor-suppressor genes because their wild-type alleles protect against breast cancer and their mutant alleles are recessive. (Mutations in BRCA1 are commonly found in the genomes of cells from basal-like breast cancers; see Figure 18.27.) The BRCA1 and BRCA2 proteins both appear to function in the cell's DNA damage repair pathway. More is known about BRCA2: Along with another protein, it helps repair breaks that occur in both strands of DNA, a function crucial for maintaining undamaged DNA.
+
+Because DNA breakage can contribute to cancer, it makes sense that the risk of cancer can be lowered by minimizing exposure to DNA-damaging agents, such as the ultraviolet radiation in sunlight and chemicals found in tobacco products. Novel genomics-based analyses of specific cancers, such as the approach described in Figure 18.27, are contributing to both early diagnosis and development of treatments that interfere with expression of key genes in tumors. Ultimately, such approaches are expected to lower the death rate from cancer.
+
+## The Role of Viruses in Cancer
+
+The study of genes associated with cancer, inherited or not, increases our basic understanding of how disruption of normal gene regulation can result in this disease. In addition to the mutations and other genetic alterations described in this section, a number of tumor viruses can cause cancer in various animals, including humans. In fact, one of the earliest breakthroughs in understanding cancer came in 1911, when Peyton Rous, an American pathologist, discovered a virus that causes cancer in chickens. Also, the Epstein-Barr virus, which causes infectious mononucleosis, has been linked to several types of cancer in humans, notably Burkitt's lymphoma. Papillomaviruses cause cancer of the cervix, and a virus called HTLV-1 causes a type of adult leukemia. Viruses play a role in about 15% of the cases of human cancer.
+
+Viruses may at first seem very different from mutations as a cause of cancer. However, we now know that viruses can interfere with gene regulation in several ways if they integrate their genetic material into the DNA of a cell. Viral integration may donate an oncogene to the cell, disrupt a tumor-suppressor gene, or convert a proto-oncogene to an oncogene. Some viruses produce proteins that inactivate p53 and other tumor-suppressor proteins, making the cell more prone to becoming cancerous. Viruses are powerful biological agents; you'll learn more about them in Chapter 19.
+
+## Concept Check 18.5
+
+1. Cancer-promoting mutations are likely to have different effects on the activity of proteins encoded by proto-oncogenes than they do on proteins encoded by tumor-suppressor genes. Explain.
+
+2. Under what circumstances is cancer considered to have a hereditary component?
+
+3. MAKE CONNECTIONS The p53 protein can activate genes involved in apoptosis. Review Concept 11.5, and discuss how mutations in genes coding for proteins that function in apoptosis could contribute to cancer.
+
+# Chapter 18 Review
+
+![](images/c6b25c883dee410dbe2fe26b2a76a3e6d8132df60d47b70ca25490ae6cc1ad60.jpg)
+
+## Summary of Key Concepts
+
+To review key terms, go to the Vocabulary Self-Quiz (eTextbook only).
+
+## Concept 18.1: Bacteria often respond to environmental change by regulating transcription
+
+\- Cells control metabolism by regulating enzyme activity or the expression of genes coding for enzymes. In bacteria, genes are often clustered into operons, with one promoter serving several adjacent genes. An operator site on
+
+![](images/601a3fdce4ec47795c759badbe39dcde83c3509c72393230ea4598d7ce7d410f.jpg)
+
+the DNA switches the operon on or off, resulting in coordinate regulation of the genes.
+
+\- Both repressible and inducible operons are examples of negative gene regulation. In either type of operon, binding of a specific repressor protein to the operator shuts off transcription. (The repressor is encoded by a separate regulatory gene.) In a repressible operon (usually encoding anabolic enzymes), the repressor is active when bound to a corepressor, often the end product of the pathway.
+
+![](images/d89a9d36326b9241b0d7dc70caae1630fb3ab69bf92918f25655ff4ffe068ad1.jpg)
+
+\- In an inducible operon (usually encoding catabolic enzymes), binding of an inducer to an innately active repressor inactivates the repressor and turns on transcription.
+
+![](images/4708fda96aab71c7e13bca6527b928289f471bed1e0aa8c7fe332a3ff97a22f2.jpg)  
+- Some operons have positive gene regulation via a stimulatory activator protein (such as CRP, when activated by cyclic AMP), binds to a site within the promoter and stimulates transcription.
+
+Compare and contrast the roles of a corepressor and an inducer in negative regulation of an operon.
+
+Concept 18.2: Eukaryotic gene expression is regulated at many stages  
+![](images/a339b724b80331430235fa489fb34a308006172c9b8453827568f71ea35d0fbb.jpg)  
+Describe what must happen in a cell for a gene specific to that cell type to be transcribed.
+
+Concept 18.3: Noncoding RNAs play multiple roles in controlling gene expression  
+![](images/5b384e38322f27801d50507a00ba16940af811d344b88926d3bbee4179ca914e.jpg)  
+Why are miRNAs called noncoding RNAs? Explain how they participate in gene regulation.
+
+## Concept 18.4: A program of differential gene expression leads to the different cell types in a multicellular organism
+
+\- Embryonic cells become committed to a certain fate (determination), and undergo differentiation, becoming specialized in structure and function for their determined fate.
+
+Cells differ in structure and function not because they contain different genomes but because they express different genes. Morphogenesis encompasses the processes that give shape to the organism and its various structures.
+
+\- Localized cytoplasmic determinants in the unfertilized egg are distributed differentially to daughter cells, where they regulate the expression of those cells' developmental fates. In the process called induction, signaling molecules from embryonic cells cause transcriptional changes in nearby target cells.
+
+\- Differentiation is marked by the appearance of tissue-specific proteins, which enable differentiated cells to carry out their specialized roles.
+
+\- In animals, pattern formation, the development of a spatial organization of tissues and organs, begins in the early embryo. Positional information, the molecular cues that control pattern formation, tells a cell its location relative to the body's axes and to other cells. In Drosophila, gradients of morphogens encoded by maternal effect genes determine the body axes. For example, the gradient of Bicoid protein determines the anterior-posterior axis.
+
+Describe the two main processes that cause embryonic cells to head down different pathways to their final fates.
+
+## Concept 18.5: Cancer results from genetic changes that affect cell cycle control
+
+\- The products of proto-oncogenes and tumor-suppressor genes control cell division. A DNA change that makes a proto-oncogene overly active converts it to an oncogene, which may promote extra cell division and cancer. A tumor-suppressor gene encodes a protein that inhibits abnormal cell division. A mutation that reduces the activity of its protein product may lead to excessive cell division and cancer.
+
+\- Many proto-oncogenes and tumor-suppressor genes encode components of growth-stimulating and growth-inhibiting signaling pathways, respectively, and mutations in them can interfere with normal cell-signaling pathways. A hyperactive version of a protein in a stimulatory pathway, such as Ras (a G protein), functions as an oncogene protein. A defective version of a protein in an inhibitory pathway, such as p53 (a transcription activator), fails to act as a tumor suppressor.
+
+![](images/443cbe5db4a99572c8683ad8e1c024a674fb3c0df92ebcd1d6faa3d749e96998.jpg)
+
+\- In the multistep model of cancer development, normal cells are converted to cancer cells by the accumulation of mutations affecting proto-oncogenes and tumor-suppressor genes. Technical advances in DNA and mRNA sequencing are enabling cancer treatments that are more individually based.
+
+\- Genomics-based studies have resulted in researchers proposing four subtypes of breast cancer, based on expression of genes by tumor cells.
+
+\- Individuals who inherit a mutant allele of a proto-oncogene or tumor-suppressor gene have a predisposition to develop a particular cancer. Certain viruses promote cancer by integration of viral DNA into a cell's genome.
+
+Compare the usual functions of proteins encoded by proto-oncogenes with those of proteins encoded by tumor-suppressor genes.
+
+## Test Your Understanding
+
+For more multiple-choice questions, go to the Practice Test (eTextbook only).
+
+## Levels 1-2: Remembering/Understanding
+
+1. If a particular operon encodes enzymes for making an essential amino acid and is regulated like the trp operon, then
+
+(A) the amino acid inactivates the repressor.
+
+(B) the repressor is active in the absence of the amino acid.
+
+(C) the amino acid acts as a corepressor.
+
+(D) the amino acid turns on transcription of the operon.
+
+2. Muscle cells differ from nerve cells mainly because they
+
+(A) express different genes.
+
+(B) contain different genes.
+
+(C) use different genetic codes.
+
+(D) have unique ribosomes.
+
+## 3. The functioning of enhancers is an example of
+
+(A) a eukaryotic equivalent of prokaryotic promoter functioning.
+
+(B) transcriptional control of gene expression.
+
+(C) the stimulation of translation by initiation factors.
+
+(D) post-translational control that activates certain proteins.
+
+4. Cell differentiation always involves
+
+(A) transcription of the myoD gene.
+
+(B) the movement of cells.
+
+(C) the production of tissue-specific proteins.
+
+(D) the selective loss of certain genes from the genome.
+
+5. Which of the following is an example of post-transcriptional control of gene expression?
+
+(A) the addition of methyl groups to cytosine bases of DNA
+
+(B) the binding of transcription factors to a promoter
+
+(C) the removal of introns and alternative splicing of exons
+
+(D) gene amplification contributing to cancer
+
+## Levels 3-4: Applying/Analyzing
+
+6. What would occur if the repressor of an inducible operon were mutated so it could not bind the operator?
+
+(A) irreversible binding of the repressor to the promoter
+
+(B) reduced transcription of the operon's genes
+
+(C) buildup of a substrate for the pathway controlled by the operon
+
+(D) continuous transcription of the operon's genes
+
+7. Absence of bicoid mRNA from a Drosophila egg leads to the absence of anterior larval body parts and mirror-image duplication of posterior parts. This is evidence that the product of the bicoid gene
+
+(A) normally leads to formation of head structures.
+
+(B) normally leads to formation of tail structures.
+
+(C) is transcribed in the early embryo.
+
+(D) is a protein present in all head structures.
+
+8. Which of the following statements about the DNA in one of your brain cells is true?
+
+(A) Most of the DNA codes for protein.
+
+(B) The majority of genes are likely to be transcribed.
+
+(C) It is the same as the DNA in one of your liver cells.
+
+(D) Each gene lies immediately adjacent to an enhancer.
+
+9. Within a cell, the amount of protein made using a given mRNA molecule in that cell depends partly on
+
+(A) the degree of DNA methylation.
+
+(B) the rate at which the mRNA is degraded.
+
+(C) the number of introns present in the mRNA.
+
+(D) the types of ribosomes present in the cytoplasm.
+
+10. Proto-oncogenes can change into oncogenes that cause cancer. Which of the following best explains the presence of these potential time bombs in eukaryotic cells?
+
+(A) Proto-oncogenes first arose from viral infections.
+
+(B) Proto-oncogenes are mutant versions of normal genes.
+
+(C) Proto-oncogenes are genetic "junk."
+
+(D) Proto-oncogenes normally help regulate cell division.
+
+## Levels 5-6: Evaluating/Creating
+
+11. DRAW IT The diagram below shows five genes, including their enhancers, from the genome of a certain species. Imagine that yellow, blue, green, black, red, and purple activator proteins exist that can bind to the appropriately color-coded control elements in the enhancers of these genes.
+
+![](images/8d83835f676e845ef4b8f3e9eb1c457ac980a57f48e8f376826dbc9af04128b8.jpg)
+
+(A) Draw an X above enhancer elements (of all the genes) that would have activators bound in a cell in which only gene 5 is transcribed. Identify which colored activators would be present.
+
+(B) Draw a dot above all enhancer elements that would have activators bound in a cell in which the green, blue, and yellow activators are present. Identify which gene(s) would be transcribed.
+
+(C) Imagine that genes 1, 2, and 4 code for nerve-specific proteins, and genes 3 and 5 are skin-specific. Identify which activators would be present in each cell type to ensure transcription of the appropriate genes.
+
+12. EVOLUTION CONNECTION DNA sequences can act as “tape measures of evolution” (see Concept 5.6). Scientists analyzing the human genome sequence were surprised to find that some of the regions of the human genome that are most highly conserved (similar to comparable regions in other species) don’t code for proteins. Propose a possible explanation for this observation.
+
+13. SCIENTIFIC INQUIRY Prostate cells usually require testosterone and other androgens to survive. But some prostate cancer cells thrive despite treatments that eliminate androgens. One hypothesis is that estrogen, often considered a female hormone, may be activating genes normally controlled by an androgen in these cancer cells. Describe one or more experiments to test this hypothesis. (See Figure 11.9 to review the action of these steroid hormones.)
+
+14. WRITE ABOUT A THEME: INTERACTIONS In a short essay (100–150 words), discuss how the processes shown in Figure 18.2 are examples of feedback mechanisms regulating biological systems in bacterial cells.
+
+## 15. SYNTHESIZE YOUR KNOWLEDGE
+
+![](images/a695f9a632b710c083b3eced265908fcca3b93f841f4ba635daa461e833f3279.jpg)
+
+The flashlight fish has an organ under its eye that emits light, which serves to startle predators and attract prey, and allows the fish to communicate with other fish. Some species can rotate the organ inside and then out, so the light appears to flash on and off. The light is actually emitted by bacteria (of the genus Vibrio) that live in the organ in a mutualistic relationship with the fish. (The bacteria receive nutrients from the fish.) The bacteria must multiply until they reach a certain density in the organ (a “quorum”; see Concept 11.1), at which point they all begin emitting light at the same time. There is a group of six or so genes, called lux genes, whose gene products are necessary for light formation. Given that these bacterial genes are regulated together, propose a hypothesis for how the genes are organized and regulated.
+
+For selected answers, see Appendix A.
+
+# Explore Scientific Papers with Science in the Classroom | AAAS
+
+Can cancer be stopped before it begins? Go to “Arrested Development: When Cells Make Mistakes” at www.scienceintheclassroom.org.
+
+Instructors: Questions can be assigned in Mastering Biology.
+
+## Viruses
+
+## Key Concepts
+
+19.1 A virus consists of a nucleic acid surrounded by a protein coat
+19.2 Viruses replicate only in host cells
+
+19.3 Viruses and prions are formidable pathogens in animals and plants
+
+## Study Tip
+
+Make flowcharts: Make a simple flowchart for each viral replicative cycle in this chapter. Shown here is the beginning of an example for the lysogenic cycle. Note the similarities and differences between the replicative cycles.
+
+![](images/8d125177eec819bca5ef0e93395bcf7a2bb7b596bba7a78fbd2b789f49e348d4.jpg)
+
+![](images/29072bf45ae49f1b8757fd85de28b0c25289ff10104d0848667d4141c9c28eab.jpg)  
+Figure 19.1 A human immune cell (blue) infected by human immunodeficiency virus (HIV) is releasing more HIV viruses (small gold dots), which will go on to infect other cells. Left untreated, HIV destroys vital immune system cells, causing AIDS. This disease has killed about 35 million people worldwide.
+
+## How does a virus make more viruses?
+
+A virus consists only of nucleic acid, proteins, and sometimes a membranous envelope. After infecting a host cell, it uses the host cell's molecules to make new viruses, as shown in this simplified diagram.
+
+![](images/6f59ea8216294e182f369a983352a9f191570d31bcc97241db73791545d33e96.jpg)  
+With some viruses, the host cell remains alive after the new viruses are released.
+
+## Concept 19.1: A virus consists of a nucleic acid surrounded by a protein coat
+
+For the past several years, world news has focused on the virus called SARS-CoV-2, short for Severe Acute Respiratory Syndrome-CoronaVirus-2, which causes COVID-19. This virus first infects cells in the airway, where it produces more viruses that can be transmitted to other individuals via exhaled breath. Worldwide, COVID-19 has killed more than 7 million individuals as of 2025. (The actual number is likely significantly higher as many people who died from COVID-19-like symptoms were not tested for the virus.)
+
+What distinguishes SARS-CoV-2 and other viruses from cells? Compared with eukaryotic and even prokaryotic cells, most viruses are much smaller and simpler in structure. Lacking the structures and metabolic machinery found in a cell, a virus is an infectious particle consisting of little more than genes packaged in a protein coat.
+
+Are viruses living or nonliving? Early on, they were considered biological chemicals; the Latin root for virus means “poison.” Viruses can cause a wide variety of diseases, so researchers in the late 1800s saw a parallel with bacteria and proposed that viruses were the simplest of living forms. However, viruses cannot reproduce or carry out metabolic activities outside of a host cell. Most biologists would probably agree that viruses are not alive, but instead exist in a shady area between life-forms and chemicals. The simple phrase used by two researchers describes them aptly: Viruses lead “a kind of borrowed life.”
+
+## The Discovery of Viruses: Scientific Inquiry
+
+Scientists detected viruses indirectly long before they were able to see them. The story of how viruses were discovered begins in 1883. A German scientist named Adolf Mayer was studying tobacco mosaic disease, which stunts the growth of tobacco plants and gives their leaves a mottled, or mosaic, coloration. Mayer discovered that he could transmit the disease from plant to plant by rubbing sap extracted from diseased leaves onto healthy plants. After an unsuccessful search for an infectious microorganism in the sap, he suggested that the disease was caused by unusually small bacteria that were invisible under a microscope. This hypothesis was tested a decade later by Dmitri Ivanowsky, a Russian biologist who passed sap from infected tobacco leaves through a filter designed to remove bacteria. After filtration, the sap still produced mosaic disease.
+
+But Ivanowsky reasoned that perhaps the bacteria were small enough to pass through the filter or made a toxin that could do so. The second possibility was ruled out when the Dutch botanist Martinus Beijerinck carried out a classic series of experiments that showed that the infectious agent in the filtered sap could replicate (Figure 19.2).
+
+In fact, the pathogen replicated only within the host it infected. In further experiments, Beijerinck showed that unlike bacteria used in the lab at that time, the mysterious agent of mosaic disease could not be cultivated on nutrient media in test tubes or petri dishes. Beijerinck imagined a replicating particle much smaller and simpler than a bacterium, and he is generally credited with being
+
+## Figure 19.2
+
+# Inquiry: What causes tobacco mosaic disease?
+
+## Experiment
+
+In the late 1800s, Martinus Beijerinck, of the Technical School in Delft, the Netherlands, investigated the properties of the agent that causes tobacco mosaic disease (then called spot disease).
+
+![](images/f20dda79d125d47ef95b2eefa0ee09230cf54b836cef3212dd6980be101c725b.jpg)  
+1 Extracted sap from tobacco plant with tobacco mosaic disease
+
+## Results
+
+When the filtered sap was rubbed on healthy plants, they became infected. Their sap, extracted and filtered, could then act as a source of infection for another group of plants. Each successive group of plants developed the disease to the same extent as earlier groups.
+
+## Conclusion
+
+The infectious agent was apparently not a bacterium because it could pass through a bacterium-trapping filter. The pathogen must have been replicating in the plants because its ability to cause disease was undiluted after several transfers from plant to plant.
+
+Data from M. J. Beijerinck, Concerning a contagium vivum fluidum as cause of the spot disease of tobacco leaves, Verhandelingen der Koninkyke akademie Wettenschappen te Amsterdam 65:3–21 (1898). Translation published in English as Phytopathological Classics Number 7 (1942), American Phytopathological Society Press, St. Paul, MN.
+
+WHAT IF? If Beijerinck had observed that the infection of each group was weaker than that of the previous group and that ultimately the sap could no longer cause disease, what might he have concluded?
+
+For suggested answer, see Appendix A.
+
+the first scientist to voice the concept of a virus. His suspicions were confirmed in 1935 when the American scientist Wendell Stanley crystallized the infectious particle, now known as tobacco mosaic virus (TMV). Subsequently, TMV and many other viruses were actually seen with the help of the electron microscope.
+
+## Structure of Viruses
+
+The tiniest viruses are only 20 nm in diameter—smaller than a ribosome. Millions could easily fit on a pinhead. Even the largest known virus, which has a diameter of 1,500 nm (1.5 $\mu$ m), is barely visible under the light microscope. Stanley's discovery that some viruses could be crystallized was exciting and puzzling news. Not even the simplest of cells can aggregate into regular crystals. But if viruses are not cells, then what are they? Examining the structure of a virus more closely reveals that it is an infectious particle consisting of one or more molecules of a nucleic acid enclosed in a protein coat and, for some viruses, surrounded by a membranous envelope.
+
+The simple structure of viruses make them a useful biological system: To a large extent, molecular biology was born in the laboratories of biologists studying viruses that infect bacteria. Experiments using these viruses provided evidence that genes are made of nucleic acids, and they were critical in working out the molecular mechanisms of the fundamental processes of DNA replication, transcription, and translation.
+
+## Viral Genomes
+
+We usually think of genes as being made of double-stranded DNA, but many viruses defy this convention. Their genomes may consist of double-stranded DNA, single-stranded DNA, double-stranded RNA, or single-stranded RNA, depending on the type of virus. A virus is called a DNA virus or an RNA virus based on the kind of nucleic acid that makes up its genome. In either case, the genome is usually organized as a single linear or circular molecule of nucleic acid, although the genomes of some viruses consist of multiple molecules of nucleic acid. The smallest viruses known have only three genes in their genome, while the largest have several hundred to 2,000. For comparison, bacterial genomes contain about 200 to a few thousand genes.
+
+## Capsids and Envelopes
+
+The protein shell enclosing the viral genome is called a capsid. (Together, the capsid and genome are called the nucleocapsid.) Depending on the type of virus, the capsid may be rod-shaped, polyhedral, or more complex in shape. Capsids are built from a large number of protein subunits called capsomeres, but the number of different kinds of proteins in a capsid is usually small. Tobacco mosaic virus has a rigid, rod-shaped capsid made from over 1,000 molecules of a single type of protein arranged in a helix; rod-shaped viruses are commonly called helical viruses for this reason (Figure 19.3a).
+
+Figure 19.3 Viral structure.
+
+Viruses are made up of nucleic acid (DNA or RNA) enclosed in a protein coat (the capsid) and sometimes further wrapped in a membranous envelope. The individual protein subunits making up the capsid are called capsomeres. Although diverse in size and shape, viruses have many common structural features. (All micrographs are colorized TEMs.)
+
+![](images/b1b5266e5813a0c4c7f1bf17cc3312e40ca80e67eabffcba0438d73e8cba279c.jpg)  
+(a) Tobacco mosaic virus has a helical capsid surrounding a single helical RNA molecule, with the overall shape of a rigid rod.  
+(b) Adenoviruses have an icosahedral capsid with a protein spike at each vertex (corner). The capsid, made up of capsomeres, contains double-stranded DNA.  
+(c) Influenza viruses have an outer envelope, studded with glycoprotein projections, that generally contains eight double-helical RNA-protein complexes, each associated with a viral polymerase.  
+(d) Coronaviruses, such as SARS-CoV-2 (shown here; the virus that causes COVID-19) are spherical, with a "corona" (crown) of Spike glycoproteins extending out from the membranous envelope. The genome consists of a single RNA molecule, complexed with proteins.  
+(e) Bacteriophage T4, like other "T-even" phages, has a complex capsid consisting of an icosahedral head and a tail apparatus. T4's double-stranded DNA is enclosed in the head.
+
+Adenoviruses, which infect the respiratory tracts of animals, have 252 identical protein molecules arranged in a polyhedral capsid with 20 triangular facets—an icosahedron; thus, these and other similarly shaped viruses are referred to as icosahedral viruses (Figure 19.3b).
+
+To infect their hosts, all viruses must enter host cells, and some have accessory structures that help them do so. For instance, a membranous envelope surrounds the capsids of influenza viruses, coronaviruses (such as SARS-CoV-2, the virus that causes COVID-19), and many other viruses found in animals (Figure 19.3c and d). These viral envelopes, which are derived from the membranes of the previous host cell, contain host cell phospholipids and membrane proteins. They also contain virally encoded proteins and glycoproteins—proteins with carbohydrates covalently attached, including proteins that allow fusion with the host cell membrane. These viral proteins are unique to each virus. Some viruses carry a few viral enzymes, such as viral polymerase, within their capsids.
+
+Many of the most complex capsids are found among the viruses that infect bacteria, called bacteriophages, or simply phages. The first phages studied included seven that infect Escherichia coli (E. coli). These seven phages were named type 1 (T1), type 2 (T2), and so forth, in the order of their discovery. (The T2 phage was used in the experiment that established DNA as the genetic material; see Figure 16.4.) The three “T-even” phages (T2, T4, and T6) turned out to be very similar in structure. Their capsids have elongated icosahedral heads enclosing their DNA. Attached to the head is a protein tail piece with fibers by which the phages attach to a bacterial cell (Figure 19.3e). In the next section, we’ll examine how these few viral parts function together with cellular components to produce large numbers of viral progeny.
+
+## Concept Check 19.1
+
+1. VISUAL SKILLS Describe one similarity and two differences between the structures of tobacco mosaic virus (TMV) and influenza virus (see Figure 19.3).
+
+2. MAKE CONNECTIONS Bacteriophages were used to provide evidence that DNA carries genetic information (see Figure 16.4). Briefly describe the experiment carried out by Hershey and Chase, including in your description why the researchers chose to use phages.
+
+For suggested answers, see Appendix A.
+
+## Concept 19.2: Viruses replicate only in host cells
+
+Viruses lack metabolic enzymes and equipment for making proteins, such as ribosomes. They are obligate intracellular parasites; in other words, they can replicate only within a host cell. It is fair to say that viruses in isolation are merely packaged sets of genes in transit from one host cell to another.
+
+Each particular virus can infect cells of only a limited number of host species, called the host range of the virus. This host specificity results from the evolution of recognition systems by the virus. Viruses usually identify host cells by a “handshake” fit between viral surface proteins and specific receptor molecules on the outside of cells. Such receptor molecules are most often proteins that carry out necessary functions for the host cell and have been adopted by viruses as portals of entry. Some viruses have broad host ranges. For example, West Nile virus and equine encephalitis virus are distinctly different viruses that can each infect mosquitoes, birds, horses, and humans. Other viruses have host ranges so narrow that they infect only a single species. Measles virus, for instance, can infect only humans. Furthermore, viral infection of multicellular eukaryotes is usually limited to particular tissues. Human cold viruses infect only the cells lining the upper respiratory tract, and the HIV seen in Figure 19.1 binds to receptors present only on certain types of immune cells.
+
+## General Features of Viral Replicative Cycles
+
+A viral infection begins when a virus binds to a host cell and the viral genome makes its way inside (Figure 19.4). The mechanism of genome entry depends on the type of virus and the type of host cell. For example, T-even phages use their elaborate tail apparatus to inject DNA into a bacterium (see Figure 19.3d). Other viruses are taken up by endocytosis or, in the case of enveloped viruses, by fusion of the viral envelope with the host's plasma membrane. Once the viral genome is inside, the proteins it encodes can commandeer the host, reprogramming the cell to copy the viral genome and manufacture viral proteins. The host provides the nucleotides for making viral nucleic acids, as well as enzymes, ribosomes, tRNAs, amino acids, ATP, and other components needed for making the viral proteins. Many DNA viruses use the DNA polymerases of the host cell to synthesize new genomes along the templates provided by the viral DNA. In contrast, to replicate their genomes, RNA viruses use virally encoded RNA polymerases that can use RNA as a template. (Uninfected cells generally make no enzymes for transcribing RNA from an RNA template.)
+
+After the viral nucleic acid molecules and capsomeres are produced, they spontaneously self-assemble into new viruses. In fact, researchers can separate the RNA and capsomeres of TMV and then reassemble complete viruses simply by mixing the components together under the right conditions. The simplest type of viral replicative cycle ends with the exit of hundreds or thousands of viruses from the infected host cell, a process that often damages or destroys the cell. Such cellular damage and death, as well as the body's responses to this destruction, cause many of the symptoms associated with viral infections. The viral progeny that exit a cell have the potential to infect additional cells, spreading the viral infection.
+
+There are many variations on the simplified viral replicative cycle we have just described. We will now take a look at some of these variations in bacterial viruses (phages) and animal viruses; later in the chapter, we will consider plant viruses.
+
+![](images/99b5b0ff7e8edbaee01cca3485113494f4f085c38999d4350d08e7bb2cb99213.jpg)  
+MAKE CONNECTIONS Label each of the straight gray arrows to identify the process that is occurring. Review Figure 17.25.
+
+For suggested answer, see Appendix A.
+
+## Replicative Cycles of Phages
+
+Phages are the best understood of all viruses, although some of them are also among the most complex. Research on phages led to the discovery that some double-stranded DNA viruses can replicate by two alternative mechanisms: the lytic cycle and the lysogenic cycle.
+
+## The Lytic Cycle
+
+A phage replicative cycle that culminates in death of the host cell is known as a lytic cycle. The term lytic refers to the last stage of infection, during which the bacterium lyses (breaks open) and releases the phages that were produced within the cell. Each of these phages can then infect a healthy cell, and a few successive lytic cycles can destroy an entire bacterial population in just a few
+
+Phage T4 has almost 300 genes, which are transcribed and translated using the host cell's machinery. One of the first phage genes translated after the viral DNA enters the host cell codes for an enzyme that degrades the host cell's DNA (2); the phage DNA is protected from breakdown because it contains a modified form of cytosine that is not recognized by the phage enzyme. The entire lytic cycle, from the phage's first contact with the cell surface to cell lysis, takes only 20–30 minutes at $37^{\circ}$ C.
+
+1 Attachment. The T4 phage uses its tail fibers to bind to specific surface proteins on an E. coli cell that act as receptors.
+
+5 Release. The phage directs production of an enzyme that damages the bacterial cell wall, allowing fluid to enter. The cell swells and finally bursts, releasing 100 to 200 phage particles.
+
+Entry of phage DNA and degradation of host DNA. The sheath of the tail contracts, injecting the phage DNA into the cell and leaving an empty capsid outside. The cell's DNA is hydrolyzed by a phage-encoded enzyme.
+
+![](images/d1b768d1ff4bc4e420ac4c5de99e61040c59e5469dd4bc89cb055e1c2c87465b.jpg)  
+4 Self-assembly. Three separate sets of proteins self-assemble to form phage heads, tails, and tail fibers. The phage genome is packaged inside the capsid as the head forms.
+
+hours. A phage that replicates only by a lytic cycle is a virulent phage. Figure 19.5 illustrates the major steps in the lytic cycle of T4, a typical virulent phage.
+
+## The Lysogenic Cycle
+
+Instead of lysing their host cells, many phages coexist with them in a state called lysogeny. In contrast to the lytic cycle, which kills the host cell, the lysogenic cycle allows replication of the phage genome without destroying the host. Phages capable of using both modes of replicating within a bacterium are called temperate phages. A temperate phage called lambda, written with the Greek letter $\lambda$ , has been widely used in biological research. Phage $\lambda$ resembles T4, but its tail has only one short tail fiber.
+
+3 Synthesis of viral genomes and proteins. The phage DNA directs production of more phage proteins and copies of the phage genome by host and viral enzymes, using components within the cell.
+
+Infection of an E. coli cell by phage $\lambda$ begins when the phage binds to the surface of the cell and injects its linear DNA genome (Figure 19.6, on the next page). Within the host, the $\lambda$ DNA molecule forms a circle. What happens next depends on the replicative mode: lytic cycle or lysogenic cycle. During a lytic
+
+cycle, the viral genes immediately turn the host cell into a $\lambda$ -producing factory, and the cell soon lyses and releases its virus progeny. During a lysogenic cycle, however, the $\lambda$ DNA molecule is incorporated into a specific site on the E. coli chromosome by viral proteins that break both circular DNA molecules and join them to each other. When integrated into the bacterial chromosome in this way, the viral DNA is known as a prophage. One prophage gene codes for a protein that prevents transcription of most of the other prophage genes. Thus, the phage genome is mostly silent within the bacterium. Every time the E. coli cell prepares to divide, it replicates the phage DNA along with its own chromosome such that each daughter cell inherits a prophage. A single infected cell can quickly give rise to a large population of bacteria carrying the virus in prophage form. This mechanism enables viruses to propagate without killing the host cells on which they depend.
+
+The term lysogenic signifies that prophages are capable of generating active phages that lyse their host cells. This occurs when the $\lambda$ genome (or that of another temperate phage) is
+
+Figure 19.6 The lytic and lysogenic cycles of phage $\lambda$ , a temperate phage.
+
+After entering the bacterial cell and circularizing, the $\lambda$ DNA can immediately initiate the production of a large number of progeny phages (lytic cycle) or integrate into the bacterial chromosome (lysogenic cycle). In most cases, phage $\lambda$ follows the lytic pathway, which is similar to that detailed in Figure 19.5. However, once a lysogenic cycle begins, the prophage may be carried in the host cell's chromosome for many generations. Phage $\lambda$ has one main tail fiber, which is short.
+
+![](images/1f4732082de54c38386ebb09140c161f1ae8864e9a83f1e4dad1ef3d8096c25f.jpg)
+
+induced to exit the bacterial chromosome and initiate a lytic cycle. An environmental signal, such as a certain chemical or high-energy radiation, usually triggers the switchover from the lysogenic to the lytic mode.
+
+In addition to the gene for the viral protein that prevents transcription, a few other prophage genes may be expressed during lysogeny. Expression of these genes may alter the host's phenotype, a phenomenon that can have important medical significance. For example, the three species of bacteria that cause the human diseases diphtheria, botulism, and scarlet fever would not be so harmful to humans without certain prophage genes that cause the host bacteria to make toxins. And the difference between the E. coli strain in our intestines and the O157:H7 strain that has caused several deaths by food poisoning appears to be the presence of toxin genes of prophages in the O157:H7 strain.
+
+## Bacterial Defenses Against Phages
+
+After reading about the lytic cycle, you may have wondered why phages haven't exterminated all bacteria. Lysogeny is one major reason why bacteria have been spared from extinction caused by phages. Bacteria also have their own defenses against phages. First, natural selection favors bacterial mutants with surface proteins that are no longer recognized as receptors by a particular type of phage. Second, when phage DNA does enter a bacterium, the DNA often is identified as foreign and cut up by cellular enzymes called restriction enzymes, which are so named because they restrict a phage's ability to replicate within the bacterium. (Restriction enzymes are used in molecular biology and DNA cloning techniques; see Concept 20.1.) The bacterium's own DNA is methylated in a way that prevents attack by its own restriction enzymes. A third defense is a system present in both bacteria and archaea called the CRISPR-Cas system, which you learned about in Concept 17.5.
+
+The CRISPR-Cas system was discovered during a study of repetitive DNA sequences present in the genomes of many prokaryotes. These sequences, which puzzled scientists, were named clustered regularly interspaced short palindromic repeats (CRISPRs) because each sequence reads the same forward and backward (a palindrome), with different stretches of “spacer DNA” in between the repeats. At first, scientists assumed the spacer DNA sequences were random and meaningless, but analysis by several research groups showed that each spacer sequence corresponded to DNA from a particular phage that had infected the cell. Further studies revealed that particular nuclease proteins interact with the CRISPR region. These nucleases, called Cas (CRISPR-associated) proteins, can identify and cut phage DNA, thereby defending the bacterium against phage infection.
+
+When a phage infects a bacterial cell that has the CRISPR-Cas system, the DNA of the invading phage is stored, integrated into
+
+![](images/1cda16170f4dd46edd860ef7031dc4734c6ac7d9a148d2e6ef67c466ff6ca689.jpg)
+
+Figure 19.7 The CRISPR-Cas system: a type of bacterial immune system.
+
+1 Infection by a phage triggers transcription of the CRISPR region of the bacterial DNA. This region consists of DNA from phages that previously infected the cell, separated by repeats.
+
+3 Each short RNA strand binds to a Cas protein, forming a complex. (Multiple complexes are formed.)
+
+4 Complementary RNA binds to DNA from the invading phage. The Cas protein then cuts the phage DNA.
+
+5 After being cut, the entire phage DNA molecule is degraded and can no longer be replicated.
+
+▶ Computer model of CRISPR-Cas9 gene editing complex from Streptococcus pyogenes
+
+![](images/2a931f35f875a07aa166b4b05835a330017028785a50b62aeec3a1878a303ff6.jpg)
+
+the genome between two repeat sequences (Figure 19.7). If the cell survives the infection, any further attempt by the same type of phage to infect this cell (or its offspring) triggers transcription of the CRISPR region into RNA molecules. These RNAs are cut into pieces and then bound by Cas proteins, such as the Cas9 protein (see Figure 17.28). The Cas protein uses a portion of the phage-related RNA as a homing device to identify the invading phage DNA and cut it, leading to its destruction.
+
+Just as natural selection favors bacteria that have receptors altered by mutation or that have enzymes that cut phage DNA, it also favors phage mutants that can bind to altered receptors or that are resistant to enzymes. Thus, the bacterium–phage relationship is in constant evolutionary flux.
+
+## Interview
+
+Interview with Francisco Mojica: Discovering CRISPR in bacteria (eTextbook only)
+
+![](images/db2722ddca28cf05f6b4bced2fc7d83080c9b0590d8d8f3b6e01eb782145d38a.jpg)
+
+## Replicative Cycles of Animal Viruses
+
+Everyone has suffered from viral infections, whether cold sores, influenza, or the common cold. Like all viruses, those that cause illness in humans and other animals can replicate only inside host cells. Many variations on the basic scheme of viral infection and replication are represented among the animal viruses. Key variables are the nature of the viral genome (double- or single-stranded DNA or RNA) and the presence or absence of an envelope.
+
+Whereas there are only a few bacteriophages that have an envelope or RNA genome, many animal viruses have both. In fact, nearly all animal viruses with RNA genomes have an envelope, as do some with DNA genomes. Rather than consider all the mechanisms of viral infection and replication, we will focus first on the roles of viral envelopes and then on the functioning of RNA as the genetic material of many animal viruses.
+
+## Viral Envelopes
+
+An animal virus equipped with an envelope—that is, a membranous outer layer—uses it to enter the host cell. Protruding from the outer surface of this envelope are viral glycoproteins that bind to specific receptor molecules on the surface of a host cell. For example, the Spike protein on SARS-CoV-2, the virus that causes COVID-19, binds to a protein called ACE2 on the surface of human airway (and other) cells. Figure 19.8 outlines the events in the replicative cycle of an enveloped virus with an RNA genome. Ribosomes bound to the endoplasmic reticulum (ER) of the host cell make the protein parts of the envelope glycoproteins; cellular enzymes in the ER and Golgi apparatus then add the sugars. The resulting viral glycoproteins, embedded in membrane derived from the host cell, are transported to the cell surface. In a process much like exocytosis (see Figure 7.20), new viral capsids are wrapped in membrane as they bud from the cell. In other words,
+
+Figure 19.8 The replicative cycle of an enveloped RNA virus.
+
+Shown here is a virus with a single-stranded RNA genome that functions as a template for synthesis of mRNA.
+
+![](images/4ed02747fe3c71742fc1709363fa99776d8c2704a2ab2056e9ed5a50cbdb0a74.jpg)
+
+the viral envelope is usually derived from the host cell's plasma membrane, although all or most of the molecules of this membrane are specified by viral genes. The enveloped viruses are now free to infect other cells. This replicative cycle does not necessarily kill the host cell, in contrast to the lytic cycles of phages.
+
+Some viruses have envelopes that are not derived from plasma membrane. Herpesviruses, for example, are temporarily cloaked in membrane derived from the nuclear envelope of the host; they then shed this membrane in the cytoplasm and acquire a new envelope made from membrane of the Golgi apparatus. These viruses have a double-stranded DNA genome and replicate within the host cell nucleus, using a combination of viral and cellular enzymes to replicate and transcribe their DNA. In the case of herpesviruses, copies of the viral DNA can remain behind as mini-chromosomes in the nuclei of certain nerve cells. There they remain latent until some sort of physical or emotional stress triggers a new round of active virus production. The infection of other cells by these new viruses causes the blisters characteristic of herpes, such as cold sores or genital sores. Once someone acquires a herpesvirus infection, flare-ups may recur throughout the person's life.
+
+## Viral Genetic Material
+
+Table 19.1 shows the common classification system for animal viruses, which is based on their genetic material: double- or
+
+single-stranded DNA, or double- or single-stranded RNA, with further classification of RNA viruses. Although some phages and most plant viruses are RNA viruses, the broadest variety of RNA genomes is found among the viruses that infect animals. There are three types of single-stranded RNA genomes found in animal viruses (classes IV–VI in Table 19.1). The genome of class IV viruses can directly serve as mRNA and thus can be translated into viral protein immediately after infection. (SARS-CoV-2 has this type of genome.) Figure 19.8 shows a virus of class V, in which the RNA genome serves instead as a template for mRNA synthesis. (This type is found in influenza viruses.) The RNA genome is transcribed into complementary RNA strands, which function both as mRNA and as templates for the synthesis of additional copies of genomic RNA. All viruses that use an RNA genome as a template for mRNA transcription require RNA → DNA synthesis. These viruses use a viral enzyme capable of carrying out this process; there are no such enzymes in most host cells. The enzyme used in this process is encoded by the viral genome. After the enzyme is synthesized, it is packaged during viral self-assembly with the genome inside the viral capsid.
+
+The RNA animal viruses with the most complicated replicative cycles are the retroviruses (class VI). These viruses have an enzyme called reverse transcriptase that transcribes an RNA template into a DNA copy, an RNA → DNA information flow that is the opposite of the usual direction. This unusual phenomenon is the source of the name retroviruses (retro means "backward"). Of particular medical importance is HIV (human immunodeficiency virus), the retrovirus shown in Figure 19.1 that causes AIDS (acquired immunodeficiency syndrome). HIV and other retroviruses are enveloped viruses that contain two identical molecules of single-stranded RNA and two molecules of reverse transcriptase.
+
+Table 19.1 Classes of Animal Viruses
+
+<table><tr><td>Class/Family</td><td>Envelope?</td><td>Examples That Cause Human Diseases</td></tr><tr><td colspan="3">I. Double-Stranded DNA (dsDNA)</td></tr><tr><td>Adenovirus(see Figure 19.3b)</td><td>No</td><td>Respiratory viruses</td></tr><tr><td>Papillomavirus</td><td>No</td><td>Warts, cervical cancer (HPV)</td></tr><tr><td>Polyomavirus</td><td>No</td><td>Tumors</td></tr><tr><td>Herpesvirus</td><td>Yes</td><td>Herpes simplex I and II (cold sores, genital sores); varicella zoster (shingles, chicken pox); Epstein-Barr virus (mononucleosis, Burkitt&#x27;s lymphoma)</td></tr><tr><td>Poxvirus</td><td>Yes</td><td>Smallpox virus; cowpox virus</td></tr><tr><td colspan="3">II. Single-Stranded DNA (ssDNA)</td></tr><tr><td>Parvovirus</td><td>No</td><td>B19 parvovirus (mild rash)</td></tr><tr><td colspan="3">III. Double-Stranded RNA (dsRNA)</td></tr><tr><td>Reovirus</td><td>No</td><td>Rotavirus (diarrhea); Colorado tick fever virus</td></tr><tr><td colspan="3">IV. Single-Stranded RNA (ssRNA); Serves as mRNA</td></tr><tr><td>Picornavirus</td><td>No</td><td>Rhinovirus (common cold); poliovirus; hepatitis A virus; other intestinal viruses</td></tr><tr><td>Coronavirus</td><td>Yes</td><td>Severe acute respiratory syndrome (SARS) virus; SARS-CoV-2 (COVID-19); Middle East respiratory syndrome (MERS-CoV)</td></tr><tr><td>Flavivirus</td><td>Yes</td><td>Zika virus (see Figure 19.10c); yellow fever virus; dengue virus; West Nile virus; hepatitis C virus</td></tr><tr><td>Togavirus</td><td>Yes</td><td>Chikungunya virus (see Figure 19.10b); rubella virus; equine encephalitis viruses</td></tr><tr><td colspan="3">V. ssRNA; Serves as Template for mRNA Synthesis</td></tr><tr><td>Filovirus</td><td>Yes</td><td>Ebola virus (hemorrhagic fever; see Figure 19.10a)</td></tr><tr><td>Orthomyxovirus</td><td>Yes</td><td>Influenza virus (see Figure 19.3c)</td></tr><tr><td>Paramyxovirus</td><td>Yes</td><td>Measles virus; mumps virus</td></tr><tr><td>Rhabdovirus</td><td>Yes</td><td>Rabies virus</td></tr><tr><td colspan="3">VI. ssRNA; Serves as Template for DNA Synthesis</td></tr><tr><td>Retrovirus</td><td>Yes</td><td>Human immunodeficiency virus (HIV/AIDS; see Figure 19.9); human T-lymphotropic virus type 1 (HTLV-1) (leukemia)</td></tr></table>
+
+The HIV replicative cycle (illustrated in Figure 19.9, on the next page) is typical of a retrovirus. After HIV enters a host cell, its reverse transcriptase molecules are released into the cytoplasm, where they catalyze synthesis of viral DNA. The newly made viral DNA then enters the cell's nucleus and integrates into the DNA of a chromosome. The integrated viral DNA, called a provirus, never leaves the host's genome, remaining a permanent resident of the cell. (Recall that a prophage, in contrast, leaves the host's genome at the start of a lytic cycle.) The RNA polymerase of the host transcribes the proviral DNA into RNA molecules, which can function both as mRNA for the synthesis of viral proteins and as genomes for the new viruses that will be assembled and released from the cell. In Concept 43.4, we describe how HIV causes the deterioration of the immune system that occurs in AIDS.
+
+## Evolution of Viruses
+
+EVOLUTION We began this chapter by asking whether or not viruses are alive. Viruses do not really fit our definition of living organisms. An isolated virus is biologically inert, unable to replicate its genes or regenerate its own ATP. Yet it has a genetic program written in the universal language of life. Do we think of viruses as nature's most complex associations of molecules or as the simplest forms of life? Either way, we must bend our usual definitions. Although viruses cannot replicate or carry out metabolic activities independently, their use of the genetic code makes it hard to deny their evolutionary connection to the living world.
+
+How did viruses originate? Viruses have been found that infect every form of life—not only bacteria, animals, and plants, but also archaea, fungi, and algae and other protists. Researchers estimate that each milliliter (one-fifth of a teaspoon) of seawater contains between one and 100 million viruses, ten times the number of microorganisms! Because viruses depend on cells for their own propagation, it seems likely that viruses are not the descendants of precellular forms of life but evolved—possibly multiple times—after the first cells appeared. Most molecular biologists favor the hypothesis that viruses originated from naked bits of cellular nucleic acids that moved from one cell to another, perhaps via injured cell surfaces. The evolution of genes coding for capsid proteins may have allowed viruses to bind cell membranes, thus facilitating the infection of uninjured cells.
+
+Candidates for the original sources of viral genomes include plasmids and transposons. Plasmids are small, circular DNA molecules found in bacteria and in the unicellular fungi called yeasts. Plasmids exist apart from the genome, can replicate independently of the genome, and are occasionally transferred between cells. Transposons are DNA segments that can move from one location to another within a cell's genome. Thus, plasmids, transposons, and viruses all share an important feature: They are mobile genetic elements. (We'll discuss plasmids in more detail in Concepts 20.1 and 27.2 and transposons in Concept 21.4.)
+
+Consistent with this notion of pieces of DNA shuttling from cell to cell is the observation that a viral genome can have more in common with the genome of its host than with the genomes
+
+MAKE CONNECTIONS Describe what is known about binding of HIV to immune system cells. (See Figure 7.8.) How was this discovered? For suggested answer, see Appendix A.
+
+Figure 19.9 The replicative cycle of HIV, the retrovirus that causes AIDS.
+
+The photos (artificially colored TEMs) show HIV entering and leaving a human white blood cell. See Figure 7.8 for the cell-surface proteins that act as receptors for HIV. Note in step 6 that DNA synthesized from the viral RNA genome is integrated as a provirus into the host cell chromosomal DNA, a characteristic unique to retroviruses.
+
+HIV entering a cell
+
+![](images/b48bf9510d30f91fc0950bedfc4fd70b9edecaadcf81f7ce60314df8d6e88870.jpg)  
+New HIV leaving a cell
+
+of viruses that infect other hosts. Indeed, some viral genes are essentially identical to genes of the host.
+
+Debate about the origin of viruses was reinvigorated in the early 2000s when an extremely large virus was identified: Mimivirus is a double-stranded DNA (dsDNA) virus with an icosahedral capsid that is 400 nm in diameter, the size of a small bacterium. Its genome contains 1.2 million bases (Mb)—about 100 times as many as the influenza virus genome—and an estimated 1,000 genes. Perhaps the most surprising aspect of mimivirus, however, was that its genome included genes previously found only in cellular genomes. Some of these genes code for proteins involved in translation, DNA repair, protein folding, and polysaccharide synthesis. Whether mimivirus evolved before the first cells and then developed an exploitative relationship with them or evolved more recently and simply scavenged genes from its hosts is not yet settled.
+
+In the past decade, several even larger viruses have been discovered that cannot be classified with any existing known virus. One such virus is 1 $\mu$ m (1,000 nm) in diameter, with a dsDNA genome of around 2–2.5 Mb, larger than that of some small eukaryotes. What's more, over 90% of its 2,000 or so genes are unrelated to cellular genes, inspiring the name it was given, pandoravirus. The number of genes in pandoraviruses varies from 1,500 to 2,500 genes. A second virus, called Pithovirus sibericum, with a diameter of 1.5 $\mu$ m and 500 genes, was discovered in permanently frozen soil in Siberia. This virus, once thawed, was able to infect an amoeba after being frozen for 30,000 years! How these and all other viruses fit in the tree of life is an intriguing, unresolved question.
+
+The ongoing evolutionary relationship between viruses and the genomes of their host cells is an association that continues to make viruses very useful experimental systems in molecular biology. Knowledge about viruses also allows many practical applications, since viruses have a tremendous impact on all organisms through their ability to cause disease.
+
+## Concept Check 19.2
+
+1. Compare the effect on the host cell of a lytic (virulent) phage and a lysogenic (temperate) phage.
+
+2. MAKE CONNECTIONS Compare the CRISPR-Cas system with the miRNA system discussed in Concept 18.3, including their mechanisms and their functions.
+
+3. MAKE CONNECTIONS The RNA virus in Figure 19.8 has a viral RNA polymerase that functions in step 3 of the virus's replicative cycle. Compare this with a cellular RNA polymerase in terms of template and overall function (see Figure 17.10).
+
+4. Why is HIV called a retrovirus?
+
+5. VISUAL SKILLS Looking at Figure 19.9, imagine you are a researcher trying to combat HIV infection. What molecular processes could you attempt to block?
+
+For suggested answers, see Appendix A.
+
+# Concept 19.3: Viruses and prions are formidable pathogens in animals and plants
+
+Diseases caused by viral infections afflict humans, agricultural crops, and livestock worldwide. Other smaller, less complex entities known as prions also cause disease in animals. We'll first consider animal viruses.
+
+## Viral Diseases in Animals
+
+A viral infection can produce symptoms by a number of different mechanisms. Viruses may damage or kill cells by causing the release of hydrolytic enzymes from lysosomes. Some viruses cause infected cells to produce toxins that lead to disease symptoms, and some have molecular components that are toxic, such as envelope proteins. How much damage a virus causes depends partly on the ability of the infected tissue to regenerate by cell division. People usually recover completely from colds because the epithelium of the respiratory tract, which the viruses infect, can efficiently repair itself. In contrast, damage inflicted by poliovirus to mature nerve cells is permanent because these cells do not divide and usually cannot be replaced. Many of the temporary symptoms associated with viral infections, such as fever and body aches, actually result from the body's own efforts to defend itself against infection rather than from cell death caused by the virus.
+
+The immune system is a critical part of the body's natural defenses (see Chapter 43). It is also the basis for the major medical tool used to prevent viral infections—vaccines. A vaccine is a harmless component of a pathogen that stimulates the immune system to mount defenses against the harmful pathogen. Smallpox, a viral disease that was once a devastating scourge in many parts of the world, was eradicated by 1980 due to a vaccination program carried out by the World Health Organization (WHO). The very narrow host range of the smallpox virus—it infects only humans—was a critical factor in the success of this program. Similar worldwide vaccination campaigns are under way to eradicate polio, the incidence of which has dropped by $99\%$ , and measles. Although an effective vaccine exists for measles, a large outbreak—a measles epidemic—originated in Texas in 2025, correlated with lower vaccination rates in that region. Effective vaccines are also available to protect against rubella, mumps, hepatitis B, and a number of other viral diseases. Less than a year after SARS-CoV-2 was identified as the cause of COVID-19, multiple vaccines were developed and approved for use (see Figure 43.24). Many nations immediately initiated programs to administer shots rapidly to their populations. Unfortunately, many less-resourced countries lagged behind in receiving needed vaccine doses, one factor contributing to the persistence of the pandemic.
+
+Although vaccines can prevent some viral illnesses, medical care can do little, at present, to cure most viral infections once they occur. The antibiotics that help us recover from bacterial infections are powerless against viruses. Antibiotics kill bacteria by inhibiting enzymes specific to bacteria but have little or no effect on eukaryotic or virally encoded enzymes. However, the few enzymes that are encoded only by viruses have provided targets for other drugs. Most antiviral drugs resemble nucleosides and thus interfere with viral nucleic acid synthesis. One such drug is acyclovir, which impedes herpesvirus replication by inhibiting the viral polymerase that synthesizes viral DNA but not the eukaryotic one. Similarly, azidothymidine (AZT) curbs HIV replication by interfering with the synthesis of DNA by reverse transcriptase. In the past 30 years, much effort has gone into developing drugs to treat HIV.
+
+Currently, multidrug treatments, called antiretroviral therapy or ART, are considered to be most effective. Such treatments commonly include a combination of two nucleoside mimics and a protease inhibitor, which interferes with an enzyme required for assembly of the viruses. Multidrug treatments originally involved taking up to 20 pills multiple times per day but now usually consist of a single daily tablet. However, even a daily dose has had a limited impact on the number of new infections, because many individuals are unable to comply with this dosage. Other medications have now been developed and approved for treatment—including lenacapavir, which requires only two yearly injections and a pill every 7 days. This drug has also been tested experimentally to prevent infection in individuals who either have been exposed to, or are at risk of exposure to, HIV. In 2024, HIV researchers were excited to hear the results of a clinical trial of lenacapavir in which 2,000 African women received just a twice-yearly
+
+reported in the early 1980s among young gay men in California and New York. In 1982, the Centers for Disease Control named the disease AIDS. Another example of an emerging virus is West Nile virus, which causes encephalitis, inflammation of the brain. This appeared in North America in 1999 and has spread to 49 U.S. states, by 2024 resulting in more than 60,000 cases and more than 2,400 deaths.
+
+The deadly Ebola virus (Figure 19.10a), recognized initially in 1976 in central Africa, is one of several emerging viruses that cause hemorrhagic fever, an often fatal illness characterized by fever, vomiting, massive bleeding, and circulatory system collapse. In 2014, an Ebola epidemic occurred that resulted in over 11,000 deaths by 2016. In 2017, 2018, and 2019, smaller outbreaks occurred in the Democratic Republic of the Congo. In 2024, some scientists (including this edition's Unit 3 interviewee, Dr. Pardis Sabeti) proposed that some of these viruses have probably been circulating at low levels in these areas for thousands of years and have flared up from time to time. This is based on the analysis of genomes of descendants from these regions of Africa. They suggest that in these cases, what we see aren't so much “emerging diseases” as “emerging diagnoses.”
+
+The mosquito-borne chikungunya virus (Figure 19.10b) causes an acute illness with fever, rashes, and persistent joint pain. Chikungunya has long been considered a tropical virus, but it has now appeared in Italy, France, and Spain. The Zika virus (Figure 19.10c) was first observed in Uganda in 1947, but for decades only a few cases occurred per year. In the spring of 2015, however, it became an emerging virus when it caused a
+
+HIV infection. This drug binds directly to HIV capsid proteins, blocking it from entering cells. In a similar approach, the current vaccines against SARS-CoV-2 are designed to raise an immune response against the Spike protein on the viral surface, blocking it from binding to the cell surface receptor during infection and causing COVID-19.
+
+## Emerging Viral Diseases
+
+Viruses that suddenly become apparent are often referred to as emerging viruses. As we have discussed throughout the chapter,
+
+Figure 19.10 Examples of emerging viruses.  
+![](images/1edac163f88f49503cc5d0d182e6fc99f1163d5bf819e3545700042abdd368af.jpg)  
+(a) Ebola viruses
+budding from a monkey cell (colorized SEM).
+
+![](images/64a43773aa33416e3f95ba2674cd6a07d740c9a466dc4ae0118be6007b572f3c.jpg)  
+(b) Chikungunya viruses emerging from a cell in the upper left and packing together (colorized TEM).  
+20 nm
+
+![](images/f265383b2e6aa52922efce1094a5e812c542f165c3305a52e0922ee697ebe71f.jpg)  
+(c) Computer-generated image of a Zika virus, based on a technique called cryo-electron microscopy.
+
+SARS-CoV-2 is one good example. The first case of COVID-19 was reported in Wuhan, China, in late December, 2019, and on March 11, 2020, WHO declared it a pandemic—a worldwide epidemic. Within the next 18 months, virtually every country was battling SARS-CoV-2.
+
+HIV, the AIDS virus, is another classic example: The earliest HIV infections of humans occurred in sub-Saharan Africa, perhaps as early as the 1920s or 1930s, with outbreaks in the 1960s and 1970s. In the United States, the first cases were
+
+Interview
+
+Interview with Dr. Pardis Sabeti: Analyzing genomes of viruses and their hosts to learn more about epidemics (at the start of Unit 3, before Chapter 13)
+
+![](images/b830cb7fb785059c429ad771abdbb458cea4d7cc0d5230bd5411104f4e243b9b.jpg)
+
+large outbreak in Brazil. Although symptoms of Zika are often mild, the infection of pregnant individuals was correlated with a striking increase in the number of babies born with abnormally small brains, a condition called microcephaly. Zika is a mosquito-borne flavivirus (like West Nile virus) that infects neural cells, posing a particular danger to fetal brain development.
+
+Where do these new strains of virus come from? One cause of rapidly emerging viral diseases in humans is mutation of existing viruses into new viruses that can spread more easily. RNA viruses have a high rate of mutation because viral RNA polymerases do not proofread and correct errors in replicating their RNA genomes. Some mutations change existing viruses into new viral strains that can cause disease, even in people immune to the original virus. A well-known related example is how three or four mutations causing changes in a surface protein of a cat virus (feline panleukopenia virus) resulted in the emergence in 1978 of canine parvovirus, a very contagious deadly virus infecting dogs.
+
+A second cause of the emergence of viral diseases is the spread of a viral disease from a small, isolated human population. AIDS went unnamed and virtually unnoticed for decades before spreading around the world, accelerated by affordable international travel. HIV is transmitted through exchange of bodily fluids; this happens, for instance, through blood transfusions, unprotected sexual intercourse, and reuse of needles to inject intravenous drugs. In African countries, lack of resources and stigmatization of infected individuals initially hastened the spreading of AIDS. In the United States, AIDS was seen at first as only affecting gay men. Societal prejudice toward this community led to a lack of resources to investigate and stem the spread of the disease, which contributed to its worldwide spread.
+
+# Interview
+
+Interview with David Satcher: The role of the CDC in recognizing AIDS and in public health (eTextbook only)
+
+![](images/4fe9bb721f0b3828cc7b779933473e6e4ce4bbc8df53ad36cc141a7c17eef71f.jpg)
+
+A third cause of new viral diseases in humans is the spread of existing viruses from other animals. Scientists estimate that about three-quarters of new human diseases originate in this way. Animals infected with a virus that can be transmitted to humans are said to be a natural reservoir for that virus. HIV is an example, as scientists believe that it originated from a version of the virus found in chimpanzees in central Africa, after people ate chimpanzee meat for food and were infected by exposure to chimpanzee blood. In a more recent example, the West Nile virus has been passed from wild birds to humans via mosquitoes.
+
+In general, flu epidemics provide an instructive example of these three causes of emerging viruses. There are three types of influenza virus: types B and C, which infect only humans and have never caused an epidemic, and type A, which infects a wide range of animals, including birds, pigs, horses, and humans. The influenza type A viruses present in pigs and wild and domestic birds are potential emerging viruses that represent a long-term threat to human health.
+
+A case in point is the H5N1 strain of avian influenza virus, which is highly contagious and deadly in birds. The first transmission from birds to humans was documented in Hong Kong in 1997. From 2003 to 2024, about 950 people have been infected, with an alarming mortality rate of around 50%. The high mortality rate is partly because H5N1 is very different from strains of influenza that have circulated among humans for a long time. Individuals are therefore not able to mount a strong immune response against viruses like H5N1.
+
+Different strains of influenza A are given standardized names; for example, the name H5N1 identifies which forms of two viral surface proteins are present—hemagglutinin and neuraminidase (HA and NA, respectively; see the glycoprotein spikes in Figure 19.3c). These two proteins together help determine the host range and severity of disease caused by each virus. Eighteen types of hemagglutinin, a protein that helps the flu virus attach to host cells, and 11 types of neuraminidase, an enzyme that helps release new virus particles from infected cells, have been identified. All possible combinations of HA and NA have been found in some waterbirds.
+
+Although deadly, the H5N1 strain has not yet caused an epidemic because nearly all cases have been the result of transmission from birds or other animals to people, rather than person-to-person. Epidemics occur when genetic changes allow a new viral strain to be easily transmitted between humans. An event like this occurred in 2009, when a strain of influenza virus (H1N1) appeared that was very different from the virus that causes the seasonal flu. The H1N1 influenza virus spread rapidly, prompting WHO to declare a pandemic. Within half a year, the disease had reached 207 countries, infecting over 600,000 people and killing almost 8,000.
+
+In addition to the 2009 H1N1 pandemic, influenza A strains have caused three other major flu epidemics among humans in the last 100 years. The most notable of these was the “Spanish flu” pandemic of 1918–1919, which killed 40–50 million people worldwide. In the Scientific Skills Exercise, you’ll analyze genetic changes in variants of the 2009 H1N1 influenza virus and correlate them with spread of the disease.
+
+The disease caused by H1N1 was originally called “swine flu” because parts of the viral genome were very similar to strains of influenza in pigs. However, studies revealed that the virus was not transmitted from pigs to humans. Instead, the story was more complex: H1N1 was a unique combination of swine, avian, and human influenza genes that allowed it to spread among humans.
+
+Influenza viruses can change quickly because they have a genome made up of eight segments of RNA (or seven for influenza C) rather than a single RNA molecule (see Figure 19.3c). When an animal like a pig or a bird is infected with multiple strains of influenza virus, the RNA molecules making up the viral genomes can mix and match (reassort) during viral assembly, resulting in new genetic combinations. If a flu virus from pigs recombines with viruses that circulate widely among humans, it may acquire the ability to spread easily from person to person, dramatically increasing the potential for a major human outbreak. Pigs are believed to have been the main hosts for recombination that led to the 2009 H1N1 flu virus.
+
+# Scientific Skills Exercise Analyzing a Sequence-Based Phylogenetic Tree to Understand Viral Evolution
+
+How Can Sequence Data Be Used to Track Flu Virus Evolution? In 2009, an influenza A H1N1 virus caused a pandemic, and the virus has continued to resurface in outbreaks across the world. Researchers in Taiwan were curious about why the virus kept appearing despite widespread flu vaccine initiatives. They hypothesized that newly evolved variant strains of the H1N1 virus were able to evade human immune system defenses. To test this hypothesis, they needed to determine if each wave of flu infection was caused by a different H1N1 variant strain.
+
+![](images/3b21d9eb35f85042629bb2a7a98f99d78330a9ac80f8feb175e49b1854e0c076.jpg)
+
+How the Experiment Was Done Scientists obtained the genome sequences for 4,703 virus isolates collected from patients with H1N1 flu in Taiwan, each named by type/location/identifying number/year. They compared the sequences in different strains for the viral hemagglutinin (HA) gene, and based on mutations that had occurred, arranged the isolates into a phylogenetic tree (see Figure 26.5 for information on how to read phylogenetic trees).
+
+Data from the Experiment In the phylogenetic tree shown at right, each branch tip is one variant strain of the H1N1 virus with a unique HA gene sequence. The tree is a way to visualize a working hypothesis about the evolutionary relationships between H1N1 variants.
+
+## INTERPRET THE DATA
+
+1. The more closely connected two variants are in the tree, the more alike they are in terms of HA gene sequence. Each fork in a branch, called a node, shows where two lineages separate due to different accumulated mutations. The length of the branches is a measure of how many sequence differences there are between the variants, indicating how distantly related they are. Referring to the tree, which variants are more closely
+
+related to each other: A/Taiwan/1018/2011 and A/Taiwan/552/2011 or A/Taiwan/1018/2011 and A/Taiwan/8542/2009? Explain.
+
+2. The scientists arranged the branches into groups made up of one ancestral variant and all of its descendant, mutated variants. They are color-coded and also grouped by brackets. Using group 11 as an example, trace the lineage of its variants. (a) Do all of the nodes have the same number of branches? (b) Are all of the branches in the group the same length? (c) What do these results indicate?
+
+![](images/549220ecce2fe0395363eca7cdc14132bc45e426fef3f1d0f61e57e21be2b1a3.jpg)
+
+3. The graph shows the number of isolates collected (each from an ill patient) on the y-axis and the month and year that the isolates were collected on the x-axis. Each group of variants is plotted separately with a line color and label that match the tree diagram. (a) Which group of variants was the earliest to cause the first wave of H1N1 flu in over 100 patients in Taiwan? (b) After a group of variants had a peak number of infections, did members of that same group cause another (later) wave of infection? (c) One variant in group 1 (green, uppermost branch) was used to make a vaccine that was distributed very early in the pandemic. Based on the graphed data, does it look like the vaccine was effective?
+
+4. Groups 9, 10, and 11 all had H1N1 variants that caused a large number of infections at the same time in Taiwan. Does this mean that the scientists' hypothesis, that new variants cause new waves of infection, was incorrect? Explain.
+
+To make the graph below, scientists plotted the number of isolates by the month and year of isolate collection to show the period in which each viral variant was actively causing illness in people.
+
+![](images/7312e0f1570435404097b2b6c0508a82976067b57a8f48803cc6687cc3b8e16e.jpg)  
+Data from J.-R. Yang et al., New variants and age shift to high fatality groups contribute to severe successive waves in the 2009 influenza pandemic in Taiwan, PLoS ONE 6(11): e28288 (2011).
+
+Instructors: A version of this Scientific Skills Exercise can be assigned in Mastering Biology.
+
+Influenza viruses also have a high rate of mutation, for reasons mentioned earlier. Coupled with reassortments, these mutations can lead to the emergence of a viral strain from animals that can infect human cells. Scientists have been worried that an H5N1 strain will evolve in a way that enables it to spread as easily as the H1N1 strain. The concern has become more focused because an H5N1 avian influenza virus epidemic is currently underway; it was first detected in wild birds in the United States in January 2022, and in domestic poultry the next month. Since then, somewhat alarmingly, the virus has been found in domestic cows, dogs, and cats, as well as many wild mammals, including bears, foxes, skunks, and even seals. Thus far this particular strain has not been capable of human-to-human transmission, but a 2024 laboratory study showed that one or two mutations in the bovine strain of this virus would allow it to attach to receptors in human airway cells. If such mutations were to happen in the viruses currently circulating, this would represent another major global health threat like those of the COVID-19 or 1918 influenza pandemics.
+
+In fact, we have observed a similar phenomenon in SARS-CoV-2 during the COVID-19 pandemic. Widespread SARS-CoV-2 infection of many individuals has allowed random mutations to occur, and evolutionary processes have led to new, more easily transmissible strains of the virus emerging and becoming predominant. Clearly, the COVID-19 pandemic has sharply highlighted the crucial importance of understanding the evolution and functioning of viruses.
+
+Normal seasonal flu viruses (including influenza types A and B) are not considered emerging viruses because variations of seasonal flu viruses have been circulating among humans for long enough that most components are recognized by the immune system. However, these viruses still undergo mutation and reassortment of genome segments, and variations of the HA protein are used each year to generate vaccines against the strains predicted most likely to occur the following year.
+
+As we have seen, emerging viruses are usually existing viruses that mutate, spread more widely in the current host species, or spread to new host species. Changes in host behavior or environmental changes can increase the viral traffic responsible for emerging diseases. For instance, new roads built through remote areas can allow viruses to spread between previously isolated human populations. Also, the destruction of forests to expand cropland can bring humans into contact with animals that host infectious viruses. Finally, genetic mutations and changes in host ranges can allow viruses to jump between species. Many viruses are transmitted by mosquitoes. A dramatic expansion of the disease caused by the chikungunya virus occurred in the mid-2000s when a mutation allowed it to infect not only the mosquito species Aedes aegypti but also the related Aedes albopictus. Insecticides and mosquito netting over beds are crucial tools in public health attempts to prevent diseases carried by mosquitoes (Figure 19.11).
+
+Recently, scientists have become concerned about the possible effects of climate change on worldwide viral transmission. Dengue fever, also mosquito-borne, has appeared in Florida, Texas, California, and Portugal, regions where it had not been seen before. The possibility that global climate change has allowed
+
+Figure 19.11 Netting as protection against virus-carrying mosquitoes.  
+![](images/f5a987f203cb310567d1030f5183c8f05cfb929f799bfd166aa45e708dccb271.jpg)
+
+mosquito species carrying these viruses to expand their ranges and interact more is troubling because of the increased chance of a mutation allowing a virus to jump to a new host. This is an area of active research by scientists applying climate change models to what is known about the habitat requirements of mosquito species.
+
+## Viral Diseases in Plants
+
+More than 2,000 types of viral diseases of plants are known, accounting for an annual loss of over \$30 billion worldwide due to destruction of crops. Common signs of viral infection include bleached or brown spots on leaves and fruits (Figure 19.12), stunted growth, and damaged flowers or roots, all of which can diminish the yield and quality of crops.
+
+Plant viruses have the same basic structure and mode of replication as animal viruses. Most known plant viruses, including tobacco mosaic virus (TMV), have an RNA genome. Many have a helical capsid, like TMV, while others have an icosahedral capsid (see Figure 19.3b).
+
+Viral diseases of plants spread by two major routes. In the first route, horizontal transmission, an external source infects the plant. Because the invading virus must get past the plant's outer protective layer of cells (the epidermis), a plant becomes more susceptible to viral infections if it has been damaged by wind, injury, or herbivores. Herbivores, especially insects, pose a double
+
+Figure 19.12 Immature tomato infected by a virus.
+
+![](images/459c475b0526d9b3e3c2ad108b1a97bbd04da7add82c71d39f43d5f007a17a92.jpg)
+
+## Figure 19.13 Model for how prions propagate.
+
+Prions are misfolded versions of normal brain proteins. When a prion contacts a normally folded version of the same protein, it may induce the normal protein to assume the abnormal shape. The resulting chain reaction may continue until high levels of prion aggregation cause cellular malfunction and eventual degeneration of the brain.
+
+![](images/a616506be727ababbcd247d4bf0b415c126fa3ae64a2e77491cc81e3645676d3.jpg)
+
+threat because they can also carry viruses, transmitting disease from plant to plant. Moreover, gardeners may transmit plant viruses inadvertently on pruning shears and other tools. The other route of viral infection is vertical transmission, in which a plant inherits a viral infection from a parent. Vertical transmission can occur in asexual propagation (for example, through cuttings) or in sexual reproduction via infected seeds.
+
+Once a virus enters a plant cell and begins replicating, viral genomes and associated proteins can spread throughout the plant through plasmodesmata, the cytoplasmic connections that penetrate the walls between adjacent plant cells (see Figure 36.19). The passage of viral macromolecules from cell to cell is facilitated by virally encoded proteins that cause enlargement of plasmodesmata. Scientists have not yet devised cures for most viral plant diseases, so research efforts are focused largely on reducing disease transmission and on breeding resistant varieties of crop plants.
+
+As small and simple as viruses are, they dwarf another class of plant pathogens: viroids. These are circular RNA molecules, only a few hundred nucleotides long. Viroids do not encode proteins but can replicate in host plant cells, apparently using cellular enzymes. These small RNA molecules seem to cause errors in the regulatory systems that control plant growth, and the typical signs of viroid diseases are abnormal development and stunted growth. One viroid disease, called cadang-cadang, has killed more than 10 million coconut palms in the Philippines.
+
+## Prions: Proteins as Infectious Agents
+
+The viruses discussed in this chapter are infectious agents that spread diseases, and their genetic material is composed of nucleic acids, whose ability to be replicated is well known. Surprisingly, there are also proteins that are infectious. Proteins called prions appear to cause degenerative brain diseases in various animal species. These diseases include scrapie in sheep; mad cow disease, which plagued the European beef industry several decades ago; and Creutzfeldt-Jakob disease in humans, which has recently been diagnosed in 500–600 people per year in the United States. Prions can be transmitted in food, as may occur when people eat beef from cattle with mad cow disease. Kuru, another human disease caused by prions, was identified in the early 1900s among the South Fore indigenous people of New Guinea. When a kuru epidemic peaked there in the 1960s, scientists at first thought
+
+the disease had a genetic basis because family members also often contracted the disease. Eventually, however, investigations revealed a different story: After a death, family members practiced ritual cannibalism, eating organs of the deceased, and prions were transmitted primarily in brain tissue. Women got kuru more often than men because men ate the more “prestigious” organs, like the heart, while women and children ate the brains.
+
+Two characteristics of prions are especially alarming. First, prions act very slowly, with an incubation period of at least ten years before symptoms develop. The lengthy incubation period prevents sources of infection from being identified until long after the first cases appear, allowing many more infections to occur. Second, prions are not destroyed or deactivated by heating to normal cooking temperatures. To date, there is no known cure for prion diseases, and the only hope for developing effective treatments lies in understanding the process of infection.
+
+How can a protein, which cannot replicate itself, be a transmissible pathogen? According to the leading model, a prion is a misfolded form of a protein normally present in brain cells. When the prion gets into a cell containing the normal form of the protein, the prion somehow converts normal protein molecules to the misfolded prion versions. Several prions then aggregate into a complex that can convert other normal proteins to prions, which join the chain (Figure 19.13). Prion aggregation interferes with normal cellular functions and causes disease symptoms. This model was greeted with much skepticism when it was first proposed by Stanley Prusiner in the early 1980s, but it is now widely accepted. Prusiner was awarded the Nobel Prize in 1997 for his work on prions. He has also proposed that prions are involved in neurodegenerative diseases such as Alzheimer's and Parkinson's disease, and recent evidence supporting this notion is compelling. There are many outstanding questions about these small infectious agents.
+
+## Concept Check 19.3
+
+1. Describe two ways in which a preexisting virus can become an emerging virus.
+
+2. Contrast horizontal and vertical transmission of viruses in plants.
+
+3. WHAT IF? TMV has been isolated from virtually all commercial tobacco products. Why, then, is TMV infection not an additional hazard for smokers?
+
+For suggested answers, see Appendix A.
+
+# Chapter 19 Review
+
+## Summary of Key Concepts
+
+To review key terms, go to the Vocabulary Self-Quiz (eTextbook only).
+
+## Concept 19.1: A virus consists of a nucleic acid surrounded by a protein coat
+
+\- Researchers discovered viruses in the late 1800s by studying a plant disease, tobacco mosaic disease.
+
+\- A virus is a small nucleic acid genome enclosed in a protein capsid and sometimes a membranous viral envelope. The genome may be single- or double-stranded DNA or RNA.
+
+Are viruses generally considered living or nonliving? Explain.
+
+## Concept 19.2: Viruses replicate only in host cells
+
+\- Viruses use enzymes, ribosomes, and small molecules of host cells to synthesize progeny viruses during replication.
+
+\- Each type of virus has a characteristic host range, affected by whether cell-surface proteins are present that viral surface proteins can bind to.
+
+\- Phages (viruses that infect bacteria) can replicate by two alternative mechanisms: the lytic cycle and the lysogenic cycle.
+
+![](images/ce19afbe84a85f34f750ecb4631b4cd24c7ce281e803971eb03f5846fa541460.jpg)
+
+Lytic cycle
+
+• Virulent or temperate phage
+
+Lysogenic cycle
+
+\- Destruction of host DNA
+
+• Temperate phage only
+
+• Production of new phages • Lysis of host cell causes release of progeny phages
+
+• Genome integrates into bacterial chromosome as prophage, which (1) is replicated and passed on to daughter cells and
+
+(2) can be induced to leave the
+
+chromosome and initiate a lytic cycle
+
+\- Bacteria have various ways of defending themselves against phage infections, including the CRISPR-Cas system.
+
+\- Many animal viruses have an envelope. Retroviruses (such as HIV) use the enzyme reverse transcriptase to copy their RNA genome into DNA, which can be integrated into the host genome as a provirus.
+
+\- Since viruses can replicate only within cells, they probably evolved after the first cells appeared, perhaps as packaged fragments of cellular nucleic acid.
+
+Describe enzymes that are not found in most cells but are necessary for the replication of certain types of viruses.
+
+## Concept 19.3: Viruses and prions are formidable pathogens in animals and plants
+
+\- Symptoms of viral diseases may be caused by direct viral harm to cells or by the body's immune response. Vaccines stimulate the immune system to defend the host against specific viruses.
+
+![](images/7093ed1bceedc489df851dbd8d78568eeffaca256fc1f6cf81dba23d6fc597b9.jpg)
+
+\- An epidemic, a widespread outbreak of a disease, can become a pandemic, a global epidemic.
+
+\- Outbreaks of emerging viral diseases in humans are usually not new, but rather are caused by existing viruses that expand their host territory. The H1N1 2009 flu virus was a new combination of pig, human, and avian viral genes that caused a pandemic. The H5N1 avian flu virus has the potential to cause a high-mortality flu pandemic.
+
+\- Viruses enter plant cells through damaged cell walls (horizontal transmission) or are inherited from a parent (vertical transmission).
+
+\- Prions are slow-acting, virtually indestructible infectious proteins that cause brain diseases in mammals.
+
+What aspect of an RNA virus makes it more likely than a DNA virus to become an emerging virus?
+
+For suggested answers, see Appendix A.
+
+## Test Your Understanding
+
+For more multiple-choice questions, go to the Practice Test (eTextbook only).
+
+## Levels 1-2: Remembering/Understanding
+
+1. Which of the following characteristics, structures, or processes is common to both bacteria and viruses?
+
+(A) metabolism
+
+(B) ribosomes
+
+(C) genetic material composed of nucleic acid
+
+(D) cell division
+
+2. Emerging viruses arise by
+
+(A) mutation of existing viruses.
+
+(B) the spread of existing viruses to new host species.
+
+(C) the spread of existing viruses more widely within their host species.
+
+(D) all of the above.
+
+3. To cause a human pandemic, the H5N1 avian flu virus would have to
+
+(A) spread to primates such as chimpanzees.
+
+(B) develop into a virus with a different host range.
+
+(C) become capable of human-to-human transmission.
+
+(D) become much more pathogenic.
+
+## Levels 3-4: Applying/Analyzing
+
+4. A bacterium is infected with an experimentally constructed bacteriophage composed of the T2 phage protein coat and T4 phage DNA. The new phages produced would have
+
+(A) T2 protein and T4 DNA.
+
+(B) T4 protein and T2 DNA.
+
+(C) T2 protein and T2 DNA.
+
+(D) T4 protein and T4 DNA.
+
+5. RNA viruses require their own supply of certain enzymes because (A) host cells rapidly destroy the viruses.
+
+(B) host cells lack enzymes that can replicate the viral genome.
+
+(C) these enzymes translate viral mRNA into proteins.
+
+(D) these enzymes penetrate host cell membranes.
+
+6. DRAW IT Redraw Figure 19.8 to show the replicative cycle of a virus with a single-stranded genome that can function as mRNA (a class IV virus).
+
+## Levels 5-6: Evaluating/Creating
+
+7. EVOLUTION CONNECTION The success of some viruses lies in their ability to evolve rapidly within the host. Such viruses evade the host's defenses by mutating and producing many altered progeny viruses before the body can mount an attack. Thus, the viruses present late in infection differ from those that initially infected the body. Discuss this as an example of evolution in microcosm. Which viral lineages tend to predominate?
+
+8. SCIENTIFIC INQUIRY When bacteria infect an animal, the number of bacteria in the body increases in an exponential fashion (graph A). After infection by a virulent animal virus with a lytic replicative cycle, there is no evidence of infection for a while. Later, however, the number of viruses rises suddenly and subsequently increases in a series of steps (graph B). Explain the difference in the curves.
+
+![](images/1c80c9f6b8338c266bba342210bcc980420bdf52d0b04e0362bdb7370efb7304.jpg)
+
+![](images/9ffde0b9f4e4f0e3d8b4748061bf36675a8a7bb7f3456b3907a005c79e39609e.jpg)  
+For selected answers, see Appendix A.
+
+9. WRITE ABOUT A THEME: ORGANIZATION While viruses are considered by most scientists to be nonliving, they do show some characteristics of life, including the correlation of structure and function. In a short essay (100–150 words), discuss how the structure of a virus correlates with its function.
+
+## 10. SYNTHESIZE YOUR KNOWLEDGE
+
+![](images/4bf1c4a512bf17be71a176977c508eda46e0c860ae35528c11475ed678fb57b8.jpg)
+
+Oseltamivir (Tamiflu), an antiviral drug prescribed for the flu, inhibits the enzyme neuraminidase. Explain how this drug could prevent infection in someone exposed to the flu or could shorten the course of flu in an infected patient (the reasons for which it is prescribed).
+
+# Explore Scientific Papers with Science in the Classroom | AAAS
+
+How can genomics help track the Ebola virus? Go to “Ebola Outbreak Traced to the Funeral of a Traditional Healer” at www.scienceintheclassroom.org.
+
+Instructors: Questions can be assigned in Mastering Biology.
+
+# DNA Tools and Biotechnology
+
+## Key Concepts
+
+20.1 DNA sequencing and DNA cloning are valuable tools for genetic engineering and biological inquiry
+
+20.2 Biologists use DNA technology to study gene expression and function
+
+20.3 Cloned organisms and stem cells are useful for basic research and other applications
+
+20.4 The practical applications of DNA-based biotechnology affect our lives in many ways
+
+## Study Tip
+
+Apply what you've learned: Write down a gene-related question you've wondered about. Then make a table listing techniques you could use to investigate your question and how you would apply them. Shown here is one example.
+
+<table><tr><td colspan="2">Is autism caused by genes, the environment, or both?</td></tr><tr><td>Technique</td><td>Application to question</td></tr><tr><td>DNA sequencing</td><td>-Compare DNA sequences from people with autism with sequences from nonaffected people.</td></tr></table>
+
+![](images/a2799724969d091cf468f13700d69d51adc4325fc53f3a0f252b236dbc1544a7.jpg)  
+Figure 20.1 This model shows a technique in which a DNA strand is passed through a small pore in a membrane. The resulting changes in an electrical current are used to determine the nucleotide sequence. The first human genome sequence, completed in 2003, took 13 years and cost \$1 billion; the time and cost of genome sequencing have been greatly reduced by improved methods like the one shown here.
+
+What are the main techniques and applications of biotechnology?  
+![](images/3df4dc6dea274b1f9a6efbd84081c68344adfabaefa7a05b08e0f8984ed9693b.jpg)
+
+# Concept 20.1: DNA sequencing and DNA cloning are valuable tools for genetic engineering and biological inquiry
+
+The discovery of the structure of the DNA molecule, and specifically the recognition that its two strands are complementary to each other, opened the door for the development of DNA sequencing and other techniques for manipulating DNA—known as DNA technology—used in biological research today. Key to these techniques is nucleic acid hybridization, the base pairing of one strand of a nucleic acid to a complementary sequence from another nucleic acid strand, either DNA or RNA. Nucleic acid hybridization forms the foundation of virtually every technique used in genetic engineering, the direct manipulation of genes for practical purposes. Genetic engineering has launched a revolution in fields as varied as criminal law, medicine, and basic biological research. In this section, we'll explore several important techniques and their uses.
+
+## DNA Sequencing
+
+Researchers can exploit the principle of complementary base pairing to determine the complete nucleotide sequence of a DNA molecule, a process called DNA sequencing. The first automated procedure, called dideoxy sequencing, was developed in the 1970s by biochemist Frederick Sanger, who received the Nobel Prize in 1980 for this accomplishment. Dideoxy sequencing has been largely replaced by newly developed methods.
+
+During the first decade of this century, “next-generation sequencing” techniques were developed that are rapid and inexpensive (Figure 20.2). DNA fragments are amplified (copied) to yield an enormous number of identical fragments (Figure 20.3). A single template strand of each fragment is immobilized, and the complementary strand is synthesized, one nucleotide at a time. A chemical technique enables electronic monitors to identify in real time which of the four nucleotides is added; this method is thus called sequencing by synthesis. Thousands or hundreds of
+
+Figure 20.2 Next-generation DNA sequencing machines.  
+![](images/0f4ee502d2f6d613e13aef5da3405459479cd2274686ed933ea9231079c4e684.jpg)
+
+thousands of fragments, each about 300 nucleotides long, are sequenced in parallel in machines like those shown in Figure 20.2, accounting for the high rate of nucleotides sequenced per hour. This is an example of “high-throughput” DNA technology and is currently the method of choice for studies where massive numbers of DNA samples—even a set of numerous fragments representing an entire genome—are being sequenced.
+
+More and more often, next-generation sequencing is complemented (or in some cases replaced) by “third-generation sequencing,” with each new technique being faster and less expensive than the previous one. In some new methods, the DNA is neither cut into fragments nor amplified. Instead, a single, very long DNA molecule is sequenced on its own. Several groups have developed techniques that move a single strand of a DNA molecule through a very small pore (a nanopore) in a membrane, identifying the bases one by one by the distinct way each interrupts an electrical current. One model of this concept is shown in Figure 20.1, in which the pore is a protein channel embedded in a lipid membrane. (Other researchers are using artificial membranes and nanopores.) Each type of base interrupts the electrical current for a slightly different length of time. In 2015, the first nanopore sequencer went on the market; this device is the size of a small candy bar and connects to a computer via a USB port. Associated software allows immediate identification and analysis of the sequence. This is only one of many approaches to further increase the rate and cut the cost of sequencing, while also allowing the methodology to move out of the laboratory and into the field.
+
+Improved DNA-sequencing techniques have transformed the way in which we can explore fundamental biological questions about evolution and how life works (see Make Connections Figure 5.26). Little more than 15 years after the human genome sequence was announced, researchers had completed the sequencing of thousands of genomes, with tens of thousands in progress. Complete genome sequences have been determined for cells from numerous cancers, for ancient humans, and for the many bacteria that live in the human intestine. In Chapter 21, you'll learn more about how this rapid acceleration of sequencing technology has revolutionized our study of the evolution of species and the genome itself. Now, let's consider how individual genes are studied.
+
+## Making Multiple Copies of a Gene or Other DNA Segment
+
+A molecular biologist studying a particular gene or group of genes faces a challenge. Naturally occurring DNA molecules are very long, and a single molecule usually carries hundreds or even thousands of genes. Moreover, in many eukaryotic genomes, protein-coding genes occupy only a small proportion of the chromosomal DNA, the rest being noncoding nucleotide sequences. A single human gene, for example, might constitute only 1/100,000 of a chromosomal DNA molecule. As a further complication, it's not easy to distinguish a gene from the surrounding DNA because they differ only in nucleotide sequence. To study a specific gene, scientists have developed methods to isolate a segment of DNA carrying that gene and make multiple identical copies of it—a process called DNA cloning.
+
+![](images/fbda0da8f8863b1f6994a4f554bd4414418a17c967e7ee5fa62cbdcc89affae1.jpg)
+
+## Figure 20.3
+
+# Research Method: Sequencing by Synthesis: Next-Generation Sequencing
+
+1 Genomic DNA is fragmented, and fragments of 300 base pairs are selected.
+
+2 Each fragment is placed in a droplet with a bead.
+
+## Application
+
+In current next-generation sequencing techniques, each fragment is about 300 nucleotides long; by sequencing the fragments in parallel, about 2 billion nucleotides can be sequenced in 24 hours.
+
+## Technique
+
+\- Bead
+
+3 Many copies of each fragment are made using a technique called PCR (see Figure 20.7). One million identical copies are made and attached by their 5' end to the bead.
+
+4 The bead is placed into a small well along with DNA polymerases and primers that can hybridize to the 3' end of the single (template) strand.
+
+See numbered steps and diagrams.
+
+DNA polymerase
+
+## Results
+
+Each of the 2,000,000 wells in the multiwell plate, which holds a different fragment, yields a different sequence. The results for one fragment are shown below as a “flow-gram.” The sequences of the entire set of fragments are analyzed using computer software, which “stitches” them together into a whole sequence—here, an entire genome.
+
+![](images/38599424a2f83a35936c72a9c75aab23a52d9bb0615fcb67824137aa88944211.jpg)
+
+5 The well is one of 2 million on a multiwell plate, each containing a different DNA fragment to be sequenced. A solution of one of the four nucleotides required for DNA synthesis (deoxynucleoside triphosphates, or dNTPs) is added to all wells and then washed off. This is done sequentially for all four nucleotides: dATP, dTTP, dGTP, and then dCTP. The entire process is then repeated over and over again.
+
+![](images/87b95c85b9a801126773b515282c3cbccad8ae112464a1d0be686833a11ca961.jpg)
+
+6 In each well, if the next base on the template strand (T in this example) is complementary to the added nucleotide (A, here), the nucleotide is joined to the growing strand, releasing PP $_{1}$ , which causes a flash of light that is recorded.
+
+7 The nucleotide is washed off and a different nucleotide (dTTP, here) is added. If the nucleotide is not complementary to the next template base (G, here), it is not joined to the strand, no reaction occurs, and there is no flash.
+
+8 The process of adding and washing off the four nucleotides is repeated until every fragment has a complete complementary strand. The pattern of flashes reveals the sequence of the original fragment in each well.
+
+INTERPRET THE DATA If the template strand has two or more identical nucleotides in a row, their complementary nucleotides will be added one after the other in the same flow step. How are two or more of the same nucleotide (in a row) detected in the flow-gram? (See sample sequence on the right side of the diagram.) Write out the sequence of the first 25 nucleotides in the flow-gram above, starting from the left. (Ignore the very short lines.)
+
+Most methods for cloning pieces of DNA in the laboratory share certain general features. One common approach uses bacteria, most often Escherichia coli. Recall from Figure 16.13 that the E. coli chromosome is a large, circular molecule of DNA. In addition, E. coli and many other bacteria also have plasmids, small, circular DNA molecules that are replicated separately. A plasmid has only a small number of genes; these genes may be useful when the bacterium is in a particular environment but may not be required for survival or reproduction under most conditions.
+
+To clone pieces of DNA using bacteria, scientists have isolated plasmids from bacterial cells and altered them by genetic engineering. Researchers insert DNA they want to study (“foreign” DNA) into the plasmid (Figure 20.4). The resulting plasmid is now a recombinant DNA molecule, a molecule containing DNA from two different sources, very often different species. The plasmid is then returned to a bacterial cell, producing a recombinant bacterium. This single cell reproduces through repeated cell divisions to form a clone of cells, a population of genetically identical cells. Because the dividing bacteria replicate the recombinant plasmid and pass it on to their descendants, the foreign DNA and any genes it carries are cloned at the same time. The production of multiple copies of a single gene is a type of DNA cloning called gene cloning.
+
+In Figure 20.4, the plasmid acts as a cloning vector, a DNA molecule that can carry foreign DNA into a host cell and be replicated there. Bacterial plasmids are widely used as cloning vectors for several reasons: They can be readily obtained from commercial suppliers, manipulated to form recombinant plasmids by insertion of foreign DNA in a test tube (referred to as in vitro, from the Latin meaning “in glass”), and then easily introduced into bacterial cells. The foreign DNA in Figure 20.4 is a gene from a eukaryotic cell; we will describe in more detail how the foreign DNA segment was obtained later in this section.
+
+Gene cloning is useful for two basic purposes: to make many copies of, or amplify, a particular gene and to produce a protein product from it (see Figure 20.4). Researchers can isolate copies of a cloned gene from bacteria for use in basic research or to endow another organism with a new metabolic capability, such as pest resistance. For example, a resistance gene present in one crop species might be cloned and transferred into plants of another species. (Such organisms are called genetically modified organisms, or GMOs for short; they will be discussed later in the chapter.) Alternatively, a protein with medical uses, such as human growth hormone, can be harvested in large quantities from cultures of bacteria carrying a cloned gene for the protein. (We'll look at the techniques for expressing cloned genes later.) Since one gene is only a very small part of the total DNA in a cell, the ability to amplify such a DNA fragment is crucial for any application involving a single gene.
+
+## Using Restriction Enzymes to Make a Recombinant DNA Plasmid
+
+Gene cloning and genetic engineering generally rely on the use of enzymes that cut DNA molecules at a limited number of specific locations. These enzymes, called restriction endonucleases, or restriction enzymes, were discovered in the late 1960s by
+
+Figure 20.4 Gene cloning and some uses of cloned genes.
+In this simplified diagram of gene cloning, we start with a plasmid (originally isolated from a bacterial cell) and a gene of interest from another organism. Only one plasmid and one copy of the gene of interest are shown at the top of the figure, but the starting materials would include many of each.
+
+![](images/a95854723adf63395687d662068ee6d6032ed91d2f552368428f4522c8f6a71a.jpg)
+
+biologists doing basic research on bacteria. Restriction enzymes protect the bacterial cell by cutting up foreign DNA from other organisms or phages (see Concept 19.2).
+
+Hundreds of different restriction enzymes have been identified and isolated. Each restriction enzyme is very specific, recognizing a particular short DNA sequence, or restriction site, and cutting both DNA strands at precise points within this
+
+Figure 20.5 Using a restriction enzyme and DNA ligase to make a recombinant DNA plasmid.
+
+The restriction enzyme in this example (called EcoRI) recognizes a single six-base-pair restriction site present in this plasmid. It makes staggered cuts in the sugar-phosphate backbones, producing fragments with “sticky ends.” Foreign DNA fragments with complementary sticky ends can base-pair with the plasmid ends; the ligated product is a recombinant plasmid. (If the two plasmid sticky ends base-pair, the original nonrecombinant plasmid is reformed.)
+
+![](images/1290348fc4e079eacf061403a93d5d94774183d22feaa4c569a85c3d07e0c511.jpg)  
+DRAW IT The restriction enzyme HindIII recognizes the sequence 5'-AAGCTT-3', cutting between the two A's. Draw the double-stranded sequence before and after the enzyme cuts it.
+For suggested answer, see Appendix A.
+
+restriction site. The DNA of a bacterial cell is protected from the cell's own restriction enzymes by the addition of methyl groups ( $—CH_{3}$ ) to adenines or cytosines within the sequences recognized by the enzymes.
+
+Figure 20.5 shows how restriction enzymes are used to clone a foreign DNA fragment into a bacterial plasmid. At the top of the figure is a bacterial plasmid (like the one shown in Figure 20.4) that has a single restriction site recognized by a particular restriction enzyme. As shown in this example, most restriction sites are symmetrical. In other words, the sequence of nucleotides is the same on both strands when read in the $5'\rightarrow3'$ direction. The most commonly used restriction enzymes recognize sequences containing four to eight nucleotide pairs. Because any sequence that is this short usually occurs (by chance) many times in a long DNA molecule, a restriction enzyme will make many cuts in such a DNA molecule, yielding a set of restriction fragments. Since restriction enzymes always cut at the same exact DNA sequence, copies of any given DNA molecule exposed to the same restriction enzyme always yield the same set of restriction fragments.
+
+The most useful restriction enzymes cleave the sugar-phosphate backbones in the two DNA strands in a staggered manner, as shown in ① of Figure 20.5. The resulting double-stranded restriction fragments have at least one single-stranded end, called a sticky end. These short extensions can form hydrogen-bonded base pairs with complementary sticky ends on any other DNA molecules cut with the same restriction enzyme, such as the inserted DNA shown in ② of Figure 20.5. The associations formed in this way are only temporary but can be made permanent by DNA ligase, an enzyme that catalyzes the formation of covalent bonds that close up the sugar-phosphate backbones of DNA strands (see ③ of Figure 20.5). At the bottom of Figure 20.5, you can see the stable recombinant DNA molecule that was produced by the ligase-catalyzed joining of DNA from two different sources. The end result, in this example, is the formation of a stable recombinant plasmid containing foreign DNA.
+
+After the recombinant plasmids have been copied many times in host cells, they need to be checked to make sure the fragment has been inserted (see Figure 20.4). To do so, a researcher might cut the products again using the same restriction enzyme. If the insert is there, there would be two DNA fragments, one the size of the plasmid and one the size of the inserted DNA. To separate and visualize the fragments, researchers carry out a technique called gel electrophoresis, in which an electrical current is passed through a gel made of a polymer that has microscopic holes of different sizes. The current drives the fragments through the gel, with shorter fragments traveling faster. Thus, the gel works as a molecular sieve to separate out a mixture of nucleic acid fragments by length (Figure 20.6). Gel electrophoresis is used in conjunction with many different techniques in molecular biology. The same principles are the basis of another technique increasingly in use called capillary electrophoresis, in which a current drives the sample molecules through narrow capillary tubes, separating molecules due to their size.
+
+## Figure 20.6 Gel electrophoresis.
+
+A gel made of a polymer acts as a molecular sieve to separate nucleic acids or proteins differing in size, electrical charge, or other physical properties as they move in an electric field. In the example shown here, DNA molecules are separated by length in a gel made of a polysaccharide called agarose.
+
+![](images/fa743f7f9030ccb77c9ad5d8dbe3321e4d93bb80f1b08ce66e65a3b300c94e57.jpg)  
+(a) Each sample, a mixture of different DNA molecules, is placed in a separate well near one end of a thin slab of agarose gel. The gel is set into a small plastic support and immersed in an aqueous, buffered solution in a tray with electrodes at each end. The current is then turned on, causing the negatively charged DNA molecules to move toward the positive electrode.
+
+![](images/6a4f280596a17671e5cda990aa101dd5c072ae489bc417943225fd47f8b7a291.jpg)  
+(b) Shorter molecules are slowed down less than longer molecules, so shorter molecules move faster through the gel. After the current is turned off, a DNA-binding dye is added that fluoresces pink in ultraviolet (UV) light. Each pink band corresponds to many thousands of DNA molecules of the same length. The bands at the upper and lower edges of the gel are restriction fragments of standard lengths for comparison with samples of unknown length.
+
+## Amplifying DNA: The Polymerase Chain Reaction (PCR) and Its Use in DNA Cloning
+
+Now that we have examined the cloning vector in some detail, let's consider how biologists obtain the foreign DNA to be inserted. Most researchers have some sequence information about the DNA fragment they want to clone. Using this information, they can start with genomic DNA from the particular species of interest and obtain many copies of the desired gene by using a technique called the polymerase chain reaction, or PCR. Figure 20.7 illustrates the steps in PCR. Within a few hours, this technique can make billions of copies of a specific target DNA segment in a sample, even if that segment makes up less than $0.001\%$ of the total DNA in the sample.
+
+## Figure 20.7
+
+## Research Method: The Polymerase Chain Reaction (PCR)
+
+## Application
+
+With PCR, any specific segment—the target sequence—in a DNA sample can be copied many times (amplified).
+
+## Technique
+
+PCR requires double-stranded DNA containing the target sequence, a heat-resistant DNA polymerase, all four nucleotides, and two 15- to 20-nucleotide single DNA strands that serve as primers. One primer is complementary to one end of the target sequence on one strand; the second primer is complementary to the other end of the sequence on the other strand.
+
+![](images/4a22341ba8dcb63494914a7edb597d1a0fdc5685c1883c933eda34cb88ea6665.jpg)
+
+## Results
+
+After three cycles, two molecules match the target sequence exactly. After 30 more cycles, over 1 billion ( $10^{9}$ ) molecules match.
+
+In the PCR procedure, a three-step cycle causes a chain reaction that produces an exponentially growing population of identical DNA molecules. During each cycle, the reaction mixture is ① heated to high temperatures to denature (separate) the strands of the double-stranded DNA and then ② cooled to allow annealing (hydrogen bonding) of short, single-stranded DNA primers complementary to sequences on opposite strands at each end of the target sequence; finally, ③ a specialized DNA polymerase extends the primers in the $5'\rightarrow3'$ direction. This cycle is then repeated 30–40 times. If a standard DNA polymerase were used, this enzyme would be denatured along with the DNA during the first heating step and would have to be replaced after each cycle. The key to automating PCR was the discovery of an unusual heat-stable DNA polymerase enzyme called Taq polymerase, named after the bacterial species from which it was first isolated. This bacterial species, Thermus aquaticus, lives in hot springs, and the stability of its DNA polymerase at high temperatures is an evolutionary adaptation that enables the enzyme to function at temperatures up to $95^{\circ}$ C. Today, researchers also use a DNA polymerase from the archaeal species Pyrococcus furiosus. This enzyme, called Pfu polymerase, is more accurate and stable but more expensive than Taq polymerase.
+
+PCR is speedy and very specific. Only a minuscule amount of DNA need be present in the starting material, and this DNA can be partially degraded, as long as there are a few copies of the complete target sequence. The key to the high specificity is the pair of primers used for each PCR amplification. The primer sequences are chosen so that they hybridize only to sequences at opposite ends of the target segment, one on the 3' end of each strand. (For high specificity, the primers must be at least 15 nucleotides long.) With each successive cycle, the number of target segment molecules of the correct length doubles, so the number of molecules equals $2^{n}$ , where n is the number of cycles. After 30 or so cycles, about a billion copies of the target sequence are present!
+
+Despite its speed and specificity, PCR amplification cannot substitute for gene cloning in cells to make large amounts of a gene. This is because the polymerases that are used have no proofreading function, and occasional errors during PCR replication limit the number of good copies and the length of DNA fragments that can be copied. Instead, PCR is used to provide the specific DNA fragment for cloning. PCR primers are synthesized to include a restriction site at each end of the DNA fragment that matches the site in the cloning vector, and the fragment and vector are cut and ligated together (Figure 20.8). The resulting plasmids are sequenced so that those with error-free inserts can be selected.
+
+Devised in 1985, PCR has had a major impact on biological research and genetic engineering. PCR has been used to amplify DNA from a wide variety of sources: a 40,000-year-old frozen woolly mammoth; fingerprints or tiny amounts of blood, tissue, or semen found at crime scenes; single embryonic cells for rapid prenatal diagnosis of genetic disorders (see Figure 14.19); and cells infected with viruses that are difficult to detect, such as
+
+## Figure 20.8 Use of a restriction enzyme and PCR in gene cloning.
+
+In a closer look at the beginning of the process shown in Figure 20.4, PCR is used to produce the DNA fragment or gene of interest that will be ligated into a cloning vector, in this case a bacterial plasmid.
+
+![](images/9e768acac3593be997f762b9d0f54eb89b66432152ab2489267017b42da4c7fe.jpg)
+
+HIV. (To test for HIV, viral genes are amplified.) Also, PCR tests are used to accurately detect the presence of SARS-CoV-2 (the virus that causes COVID-19) even in patients without any symptoms. We'll return to these and other applications of PCR later in the chapter.
+
+## Expressing Cloned Eukaryotic Genes
+
+Once a gene has been cloned in host cells, its protein product can be expressed in large amounts for research or for practical applications, which we'll explore in Concept 20.4. Cloned genes can be expressed in either bacterial or eukaryotic cells; each option has advantages and disadvantages.
+
+## Bacterial Expression Systems
+
+Getting a cloned eukaryotic gene to function in bacterial host cells can be difficult because certain aspects of gene expression are different in eukaryotes and bacteria. To overcome differences in promoters and other DNA control sequences (see Concept 17.2), scientists usually employ an expression vector, a cloning vector that contains a highly active bacterial promoter just upstream of a restriction site where the eukaryotic gene can be inserted in the correct reading frame. The bacterial host cell will recognize the promoter and proceed to express the foreign gene now linked to that promoter. Such expression vectors allow the synthesis of many eukaryotic proteins in bacterial cells.
+
+Another problem with expressing cloned eukaryotic genes in bacteria is the presence of noncoding regions (introns) in most eukaryotic genes (see Concept 17.3). Introns can make a eukaryotic gene very long and unwieldy, and they prevent correct expression of the gene by bacterial cells, which do not have RNA-splicing machinery. This problem can be surmounted by using a form of the gene that includes only the exons. (This is called complementary DNA, or cDNA; see Figure 20.10.)
+
+## Eukaryotic DNA Cloning and Expression Systems
+
+Molecular biologists can avoid eukaryotic-bacterial incompatibility by using eukaryotic cells such as yeasts as hosts for cloning and expressing eukaryotic genes. Yeasts, single-celled fungi, are as easy to grow as bacteria, and they have plasmids, a rarity among eukaryotes.
+
+In addition to enabling RNA splicing, eukaryotic host cells are advantageous because many eukaryotic proteins will not function unless they are modified after translation—for example, by the addition of carbohydrate groups (glycosylation) or lipid groups in the ER and Golgi. Bacterial cells lack membrane-bound organelles and cannot carry out these modifications, and if the gene product requiring such processing is from a mammalian gene, even yeast cells may not be able to modify the protein correctly. Several cultured cell types have proved successful as host cells for this purpose, including some mammalian cell lines and an insect cell line that can be infected by a virus carrying recombinant DNA.
+
+Scientists have developed other methods for introducing recombinant DNA into eukaryotic cells. In electroporation, a brief electrical pulse applied to a solution containing cells creates temporary holes in their plasma membranes, through which DNA can enter. (This technique is now commonly used for bacteria as well.) Alternatively, scientists can inject DNA directly into single eukaryotic cells using microscopically thin needles. Another way to get DNA into plant cells is by using the soil bacterium Agrobacterium tumefaciens, as we'll see later. Whatever the method, if the introduced DNA is incorporated into a cell's genome by genetic recombination, then it can be stably expressed by the cell. Expressing different versions of genes in cells allows researchers to study protein function, a topic we'll return to in Concept 20.2.
+
+## Cross-Species Gene Expression and Evolutionary Ancestry
+
+EVOLUTION The ability to express eukaryotic proteins in bacteria (even if the proteins can't be modified properly) is quite remarkable when we consider how different eukaryotic and bacterial cells are. In fact, examples abound of genes that are taken from one species and function perfectly well when transferred into another very different species, such as a firefly gene in a tobacco plant and a jellyfish gene in a pig (see Figure 17.7). These observations underscore the shared evolutionary ancestry of species living today.
+
+One example involves a gene called Pax-6, which has been found in animals as diverse as vertebrates and fruit flies. The vertebrate Pax-6 gene product (the PAX-6 protein) triggers a complex program of gene expression resulting in formation of the vertebrate eye, which has a single lens. Expression of the fly Pax-6 gene leads to formation of the compound fly eye, which is quite different from the vertebrate eye. When the mouse Pax-6 gene was cloned and introduced into a fly embryo so that it replaced the fly's own Pax-6 gene, researchers were surprised to see that the mouse version of the gene led to formation of a compound fly eye (see Figure 50.16). Conversely, when the fly Pax-6 gene was transferred into a vertebrate embryo—a frog, in this case—a frog eye formed. Although the genetic programs triggered in vertebrates and flies generate very different eyes, the two versions of the Pax-6 gene can substitute for each other to trigger lens development, evidence of their evolution from a gene in a very ancient common ancestor. Because of their ancient evolutionary roots, all living organisms share the same basic mechanisms of gene expression. This commonality is the basis of many recombinant DNA techniques described in this chapter.
+
+## Concept Check 20.1
+
+1. MAKE CONNECTIONS The restriction site for an enzyme called PvuI is the following sequence:
+
+## $5^{\prime}$ -CGATCG- $3^{\prime}$ $3^{\prime}$ -GCTAGC- $5^{\prime}$
+
+Staggered cuts are made between the T and C on each strand. What type of bonds are being cleaved? (See Concept 5.5.)
+
+2. DRAW IT One strand of a DNA molecule has the following sequence:
+
+## 5′-CTTGACGATCGTTACCG-3′
+
+Draw the other strand. Will PvuI (see question 1) cut this molecule? If so, draw the products.
+
+3. What are some potential difficulties in using plasmid vectors and bacterial host cells to produce large quantities of proteins from cloned eukaryotic genes?
+
+4. VISUAL SKILLS Compare Figure 20.7 with Figure 16.21. How does replication of DNA ends during PCR proceed without shortening the fragments each time?
+
+For suggested answers, see Appendix A.
+
+# Concept 20.2: Biologists use DNA technology to study gene expression and function
+
+To see how a biological system works, scientists seek to understand the functioning of the system's component parts. Analysis of when and where a gene or group of genes is expressed can provide important clues about their function and how they contribute to the organism as a whole.
+
+## Analyzing Gene Expression
+
+Biologists driven to understand the assorted cell types of a multicellular organism, cancer cells, or the developing tissues of an embryo first try to discover which genes are expressed by the cells of interest. The most straightforward way to do this is usually to identify the mRNAs being made. We'll first examine techniques that look for patterns of expression of specific individual genes. Next, we'll explore ways to characterize groups of genes being expressed by cells or tissues of interest. As you will see, all of these procedures depend in some way on base pairing between complementary nucleotide sequences.
+
+## Studying the Expression of Single Genes
+
+Suppose we have cloned a gene that we suspect plays an important role in the embryonic development of Drosophila melanogaster (the fruit fly). The first thing we might wonder is which embryonic cells express the gene—in other words, where in the embryo is the corresponding mRNA found? We can detect the mRNA in an embryonic sample using nucleic acid hybridization with molecules of complementary sequence to the mRNA we want to follow. Using our cloned gene as a template, we can synthesize a short, single-stranded nucleic acid (either RNA or DNA) complementary to the mRNA of interest; this is called a nucleic acid probe. For example, if part of the sequence on the mRNA were
+
+## 5' ...CUCAUCACCGGC ... 3'
+
+then we would synthesize this single-stranded DNA probe:
+
+## 3' GAGTAGTGGCCG 5'
+
+Each probe molecule is labeled during synthesis with a fluorescent tag so we can follow it. A solution containing probe molecules is applied to Drosophila embryos, allowing the probe to hybridize specifically with any complementary sequences on the many mRNAs in embryonic cells in which the gene is being transcribed. Because this technique allows us to see the mRNA in place (or in situ, in Latin) in the intact organism, this technique is called in situ hybridization. Different probes can be labeled with different fluorescent dyes, sometimes with strikingly beautiful results (Figure 20.9).
+
+Figure 20.9 Determining where single genes are expressed by in situ hybridization analysis.
+
+This Drosophila embryo was incubated in a solution containing DNA probes for five different mRNAs, each probe labeled with a different fluorescently colored tag. The embryo was then viewed using fluorescence microscopy. Each color marks where a specific gene is expressed as mRNA. The arrows from the groups of yellow and blue cells above the micrograph show a magnified view of nucleic acid hybridization of the appropriately colored probe to the mRNA. The thorax (trunk) and abdomen are made up of repeating segments. Yellow cells (expressing the wg gene) interact with blue cells (expressing the en gene); their interaction helps establish the pattern in a body segment.
+
+The yellow DNA probe hybridizes with mRNAs in cells that are expressing the wingless (wg) gene, which encodes a secreted signaling protein.
+
+The blue DNA probe hybridizes with mRNAs in cells that are expressing the engrailed (en) gene, which encodes a transcription factor.
+
+![](images/eee3e48b7d30587e9075f3aad9097d072d965037f3c114ba14e3b9fabf5e11db.jpg)
+
+Other mRNA detection techniques may be preferable for comparing the amounts of a specific mRNA in several samples at the same time—for example, in different cell types or in embryos of different stages. One method that is widely used is called the reverse transcriptase polymerase chain reaction, or RT-PCR.
+
+RT-PCR begins by turning sample sets of mRNAs into double-stranded DNAs with the corresponding sequences. First, the enzyme reverse transcriptase (from a retrovirus; see Figure 19.9) is used to synthesize a complementary DNA copy (a reverse transcript) of each mRNA in the sample (Figure 20.10, on the next page). The mRNA is then degraded by addition of a specific enzyme, and a second DNA strand, complementary to the first, is synthesized by DNA polymerase. The resulting double-stranded DNA is called complementary DNA (cDNA). (Made from mRNA, cDNA lacks introns and can be used for protein expression in bacteria, as mentioned earlier.) To analyze the timing of expression of the Drosophila gene of interest, for example, we would first isolate all the mRNAs from different stages of Drosophila embryos and make cDNA from each stage (Figure 20.11).
+
+Figure 20.10 Making complementary DNA (cDNA) from eukaryotic genes.
+
+Complementary DNA is made in a test tube using mRNA as a template for the first strand. Only one mRNA is shown after step 1, but the final collection of cDNAs would reflect all the mRNAs present in the cell.
+
+![](images/fc9d89e795152fb7d27d14a49c45a9cc09a94b4958bc50ef3d6fa0626d5ca466.jpg)
+
+Next in RT-PCR is the PCR step (see Figure 20.7). As you will recall, PCR is a way of rapidly making many copies of one specific stretch of double-stranded DNA, using primers that hybridize to the opposite ends of the segment that we are interested in studying. In our case, we would add primers corresponding to a segment of our Drosophila gene, using the cDNA from each embryonic stage as a template for PCR amplification in separate samples. When the products are analyzed on a gel, copies of the amplified region will be observed as bands only in samples that originally contained mRNA from the gene being studied. This method can tell researchers whether an mRNA is present, but not how much is there.
+
+Accurate measurement of mRNA levels requires newer, more quantitative PCR machines that use a dye that fluoresces only when bound to a double-stranded PCR product. This technique, called quantitative RT-PCR (qRT-PCR), can detect the light and measure the PCR product, thus avoiding the need for electrophoresis while providing quantitative data, a distinct advantage. Both RT-PCR and qRT-PCR can also be carried out with mRNAs collected from different tissues at one time to discover which tissue is producing a specific mRNA.
+
+Instructors: The Scientific Skills Exercise “Analyzing Quantitative and Spatial Gene Expression Data” can be assigned in Mastering Biology. Students can work with data from an experiment that investigated mRNA expression using both in situ hybridization and quantitative RT-PCR.
+
+## Figure 20.11
+
+## Research Method: RT-PCR Analysis of the Expression of Single Genes
+
+## Application
+
+RT-PCR uses the enzyme reverse transcriptase (RT) in combination with PCR and gel electrophoresis. RT-PCR can be used to compare gene expression between samples—for instance, in different embryonic stages, in different tissues, or in the same type of cell under different conditions.
+
+## Technique
+
+In this example, samples containing mRNAs from six embryonic stages of Drosophila were analyzed for a specific mRNA as shown below. (In steps 1 and 2, the mRNA from only one stage is shown.)
+
+1 cDNA synthesis is carried out by incubating the mRNAs from each stage with reverse transcriptase and other necessary components.
+
+2 PCR amplification is then performed using primers specific to the Drosophila gene of interest to see whether its mRNA was present in each sample.
+
+![](images/be789f21196f39e97197175f80d4c44db2f94f5e5604e9f8dbb1128b8867f425.jpg)
+
+3 Gel electrophoresis will reveal amplified DNA products only in samples that contained mRNA transcribed from the specific Drosophila gene.
+
+![](images/4d614b640c3ae2778ace6ca2f7dfc4b411b18027133f5ab9286d40e4eb2a1abb.jpg)
+
+## Results
+
+The mRNA for this gene is expressed from stage 2 through stage 6. The size of the amplified fragment (shown by its position on the gel) depends on the distance between the primers that were used (not on the size of the mRNA).
+
+## Studying the Expression of Interacting Groups of Genes
+
+While the techniques described above can analyze expression of only one or a few known genes, a major goal of biologists is to learn how genes act together to produce and maintain a functioning organism. Now that the genomes of a number of species have been sequenced, it is possible to study the expression of
+
+Green cDNA Genes that were expressed in tissue 2 bind to green cDNAs.
+
+large groups of genes—an approach called the systems approach. Researchers use what is known about the whole genome to investigate which genes are transcribed in different tissues or at different stages of development, or even in single cells. One aim is to identify networks of gene expression across an entire genome.
+
+To accomplish such genome-wide expression studies, today's rapid, inexpensive DNA-sequencing methods allow researchers to discover which genes are expressed by simply sequencing the cDNA samples from different tissues or different embryonic stages. This straightforward method is called RNA sequencing, or RNA-seq (pronounced "RNA-seek"), even though it is the cDNA that is actually sequenced. In RNA-seq, the mRNA (or other RNA) samples are isolated, cut into shorter, similar-sized fragments, and converted into cDNAs (Figure 20.12). These short cDNA stretches are sequenced, and a computer program reassembles them, either mapping them onto the genome of the species in question (when available) or simply putting the fragments in order from scratch based on overlapping sequences of multiple RNAs.
+
+A helpful adaptation of RNA-seq that is becoming more widely used is called single-cell RNA-seq. In this technique, the cells of a tissue or a tumor, for instance, are separated into individual wells or droplets, then each cell is subjected to the steps of RNA-seq to analyze which genes are being expressed in that cell. This is particularly useful when analyzing
+
+## Figure 20.12 Use of RNA sequencing (RNA-seq) to analyze expression of many genes.
+
+RNA-seq yields a wide range of information about expression of genes, including their level of expression.
+
+1 mRNAs are isolated from the tissue being studied.
+
+② mRNAs are cut into similar-sized, small fragments.
+
+3 mRNAs are reverse-transcribed into cDNAs of the same size.
+
+④ cDNAs are sequenced.
+
+![](images/28fe0cdc233a4cf6f9212c5d1ac58c1f9a3874ad3417443d5ca983a240da7da4.jpg)
+
+5 The short sequences are mapped by computer onto the genome sequence. The resulting data, including the number of times a sequence is present, indicate which genes are expressed in a given tissue and at what level.
+
+heterogeneous tissues where gene expression patterns of rare but important cells are masked by the overall average gene expression in the entire tissue. For example, it allows researchers and clinicians to identify a small number of cells in a tumor that are resistant to the particular treatment being used, based on their gene expression.
+
+Several characteristics make RNA-seq a powerful technique. First, it is not based on hybridization with a labeled probe, so it doesn't depend on knowing genomic sequences. Second, it can measure levels of expression over a very wide range. Third, a careful analysis provides a wealth of information about expression of a particular gene, such as relative levels of alternatively spliced mRNAs. In most cases, however, expression of individual genes still needs to be confirmed by RT-PCR.
+
+An older method of genome-wide expression studies, called DNA microarray assays, is less powerful than RNA-seq but is still used for some applications, such as fetal testing (see Figure 14.19). A DNA microarray consists of tiny amounts of a large number of single-stranded DNA fragments representing different genes fixed to a glass slide in a tightly spaced array, or grid, of dots. (The microarray is also called a DNA chip by analogy to a computer chip.) The mRNAs from the cells being studied are reverse-transcribed into cDNAs (see Figure 20.10), and a fluorescent label is added so the cDNAs can be used as probes on the microarray. Different fluorescent labels are used for different cell samples so that multiple samples can be tested in the same experiment. The resulting pattern of colored dots, shown in an actual-size microarray in Figure 20.13, reveals the
+
+## Figure 20.13 Use of microarrays to analyze expression of many genes.
+
+Researchers extracted mRNAs from two different human tissues and synthesized two sets of cDNAs, fluorescently labeled red (tissue 1) or green (tissue 2). Labeled cDNAs were hybridized with a microarray containing 5,760 human genes (about 25% of human genes), part of which is shown in the enlargement. Red indicates that the gene in that well was expressed in tissue 1, green in tissue 2, yellow in both, and black in neither. The fluorescence intensity at each spot indicates the relative expression of the gene.
+
+DNA microarray (actual size). Each dot is a well containing identical copies of DNA fragments that carry a specific gene.
+
+Red cDNA
+
+![](images/a52268a6d8d0d1ec2ef69ecbb3ced4debf33b57af98888ef2df762ff238ffed7.jpg)  
+Genes that were expressed in tissue 1 bind to red cDNAs made from mRNAs in that tissue.  
+Genes that were expressed in both tissues bind both red and green cDNAs; these wells appear yellow.
+
+Genes that were not expressed in either tissue do not bind either cDNA; these wells appear black.
+
+dots to which each probe was bound and thus the genes that are expressed in the cell samples being tested.
+
+Scientists can now measure the expression of thousands of genes at one time. DNA technology makes such studies possible; with automation, they are easily performed on a large scale. By uncovering gene interactions and providing clues to gene function, DNA microarray assays and RNA-seq may contribute to a better understanding of diseases and suggest new diagnostic techniques or therapies. For instance, comparing patterns of gene expression in breast cancer tumors and noncancerous breast tissue has already resulted in more informed and effective treatment protocols (see Figure 18.27). Ultimately, information from these methods should provide a grander view of how ensembles of genes interact to form an organism and maintain its vital systems.
+
+## Determining Gene Function
+
+Once they identify a gene of interest, how do scientists determine its function? A gene's sequence can be compared with sequences in other species. If the function of a similar gene in another species is known, one might suspect that the gene product in question performs a comparable task. Data about the location and timing of gene expression may reinforce the suggested function. To obtain stronger evidence, one approach is to disable the gene and then observe the consequences in the cell or organism.
+
+## Editing Genes and Genomes
+
+Molecular biologists have long sought techniques for altering, or editing, the genetic material of cells or organisms in a predictable way. In one such technique, called in vitro mutagenesis, specific mutations are introduced into a cloned gene, and the mutated gene is returned to a cell in such a way that it disables (“knocks out”) the normal cellular copies of the same gene. If the introduced mutations alter or destroy the function of the gene product, the phenotype of the mutant cell may help reveal the function of the missing normal protein.
+
+In Concept 17.5, you read about the CRISPR-Cas9 system, the powerful new technique for gene editing in living cells and organisms that has taken the field of genetic engineering by storm (see Figure 17.28). This system, worked out by Jennifer Doudna (Figure 20.14) and Emmanuelle Charpentier, is a highly effective way for researchers to knock out a given gene in order to study what that gene does. It has already been used in many organisms, including bacteria, fish, mice, insects, human cells, and various crop plants. Modifications of the technique allow researchers to repair a gene that has a mutation. This approach is used for gene therapy, which will be discussed later in the chapter.
+
+In another application of the CRISPR-Cas9 system, scientists are attempting to address the global problem of insect-borne diseases by altering genes in insects so that, for example, they cannot transmit disease. An extra twist to this approach is to engineer the new allele so that it is much more highly favored for inheritance than the wild-type allele. This strategy is called a gene drive because the biased inheritance of the engineered gene during reproduction rapidly “drives” the new allele through the population.
+
+Figure 20.14 Jennifer Doudna holding a model of CRISPR-Cas9.
+
+![](images/ab8c8b31e56fb65132e4790389efc9ea22bec8af07c40b87291ee3d0ed45e2df.jpg)
+
+Concerns have been raised about unpredictable negative effects of permanent genetic changes in wild populations, such as mosquitoes. In 2025, one group of researchers modified the gene drive protocol so that the CRISPR-Cas9 system itself would not be replicated in the insects. This allowed the desired genetic change to be temporary, and ensured that the population would gradually revert back to its wild-type genome.
+
+## Other Methods for Studying Gene Function
+
+Another method for silencing expression of selected genes doesn't alter the genome; instead, it exploits the phenomenon of RNA interference (RNAi), described in Concept 18.3. This experimental approach uses synthetic double-stranded RNA molecules matching the sequence of a particular gene to trigger breakdown of the gene's messenger RNA or to block its translation. In organisms such as the nematode and the fruit fly, RNAi has already proved valuable for analyzing the functions of genes on a large scale. This method is quicker than using the CRISPR-Cas9 system, but it leads to only a temporary reduction of gene expression rather than a permanent gene knockout or alteration.
+
+In humans, ethical considerations prohibit knocking out genes to determine their functions. An alternative approach to identifying disease-causing genes is to analyze the genomes of large numbers of people with a certain phenotypic condition or disease, such as heart disease or diabetes, to try to find differences they all share compared with people without that condition. The logic is that these differences may be associated with one or more malfunctioning genes and thus in a sense are naturally occurring gene knockouts. In these large-scale analyses, called genome-wide association studies, researchers look for genetic markers, DNA sequences that vary in the population. In a gene, such sequence variation is the basis of different alleles, as we have seen for sickle-cell disease (see Figure 17.26). And just like the coding sequences of genes, noncoding DNA at a specific locus on a chromosome may exhibit small nucleotide differences among individuals. Variations in coding or noncoding DNA sequences among a population are called polymorphisms (from the Greek for “many forms”).
+
+## Interview
+
+Interview with Charles Rotimi: Using genomics to study health-related conditions in African-Americans (eTextbook only)
+
+![](images/6ce999b690950b61b149d2cce1558616cc42588a1fd2e5c5927c842c36fa34aa.jpg)
+
+Among the most useful genetic markers in tracking down genes that contribute to diseases and disorders are single base-pair variations in the genomes of the human population. For more than 99% of the nucleotides in the human genome, virtually all people have the same nucleotide in each position. However, once in every 100–300 base pairs of both coding and noncoding DNA sequences are positions where the sequence varies between individuals. A single base-pair site where variation is found in at least 1% of the population is called a single nucleotide polymorphism (SNP, pronounced “snip”); a few million SNPs occur in the human genome. To find SNPs in large numbers of people, it isn’t necessary to sequence their DNA; SNPs can be detected by very sensitive microarray assays, RNA-seq, or PCR.
+
+Once a SNP is identified that is found in all people affected by the disease being studied, researchers focus on that region and sequence it. In nearly all cases, the SNP itself does not contribute directly to the disease in question by altering the encoded protein; in fact, most SNPs are in noncoding regions. Instead, having a particular SNP associated with a disease suggests that the gene whose mutation causes the disease is located very close to that SNP on that chromosome. This closeness (genetic linkage; see Concept 15.3) means that crossing over between the SNP and the gene is very unlikely during gamete formation. Therefore, the SNP and gene are almost always inherited together, so the SNP acts as a genetic marker for the disease-causing allele (Figure 20.15). SNPs have been found that correlate with diabetes, heart disease, and several types of cancer, and the search is on for genes that might be involved in these and other inherited conditions.
+
+The experimental approaches you have learned about thus far focus on working with molecules, mainly DNA and proteins. In a parallel line of inquiry, biologists have been developing powerful techniques for cloning whole multicellular organisms. One aim of this work is to obtain special types of cells, called stem cells, that can give rise to all types of tissues. Being able to manipulate stem cells would allow scientists to use the DNA-based methods previously discussed to alter stem cells for the treatment of diseases. Methods involving the cloning of organisms and production of stem cells are the subject of the next section.
+
+## Figure 20.15 Single nucleotide polymorphisms (SNPs) as genetic markers for disease-associated alleles.
+
+This diagram depicts the same region of the genome from two groups of individuals, one group having a particular disease or condition with a genetic basis. Unaffected people have an AT pair at a given SNP locus, while affected people have a CG pair there. Once the allele is confirmed as being associated with the disease in question, the SNP that varies in this way can be used as a marker for the disease-associated allele.
+
+![](images/ac8cc0c3a6ae802cf8eb04b7b95e65b482ab724bc5e0134c5bb3667b40655678.jpg)
+
+![](images/7c276c9b5857760f82e4f62c3b8d900060638eedb83da07696fa59d70fc17c5b.jpg)
+
+## Concept Check 20.2
+
+1. Describe the role of complementary base pairing during RT-PCR, RNA sequencing, and DNA microarray analysis.
+
+2. VISUAL SKILLS Consider the microarray in Figure 20.13. If a sample from normal tissue is labeled with a green fluorescent dye and a sample from cancerous tissue is labeled red, what color spots would represent genes you would be interested in if you were studying cancer? Explain.
+
+For suggested answers, see Appendix A.
+
+## Concept 20.3: Cloned organisms and stem cells are useful for basic research and other applications
+
+Along with advances in DNA technology, scientists have been developing and refining methods for cloning whole multicellular organisms from single cells. In this context, cloning produces one or more organisms that are genetically identical to the “parent” that donated the single cell. This is often called organismal cloning to differentiate it from gene cloning and, more significantly, from cell cloning—the division of an asexually reproducing cell such as a bacterium into a group of genetically identical cells. (The common theme is that the product is genetically identical to the parent.) The current interest in organismal cloning is primarily due to its ability to generate stem cells. A stem cell is a relatively unspecialized cell that can both reproduce itself indefinitely and, under appropriate conditions, differentiate into specialized cells of one or more types. Stem cells have great potential for regenerating damaged tissues.
+
+The cloning of plants and animals was first attempted over 50 years ago in experiments designed to answer basic questions about the genetic potential of single cells. For example, researchers wondered if all the cells of an organism have the same genes or whether cells lose genes during the process of differentiation (see Concept 18.4). One way to answer this question is to see whether a differentiated cell can generate a whole organism—in other words, whether cloning an organism is possible. Let's discuss these early experiments before we consider more recent progress in organismal cloning and procedures for producing stem cells.
+
+## Cloning Plants: Single-Cell Cultures
+
+The successful cloning of whole plants from single differentiated cells was accomplished at Cornell University during the 1950s by F. C. Steward and his students, who worked with carrot plants. They found that differentiated cells taken from the root (the carrot) and incubated in culture medium could grow into normal adult plants, each genetically identical to the parent plant. These results showed that differentiation does not necessarily involve irreversible changes in the DNA. In plants, mature cells can “dedifferentiate” and then give rise to all the specialized cell types of the organism; any cell with this potential is said to be totipotent.
+
+Plant cloning is used extensively in agriculture. For plants such as orchids, cloning is the only commercially practical means of producing new plants. In other cases, cloning has been used to reproduce a plant with valuable characteristics, such as resistance to plant pathogens. In fact, you yourself may be a plant cloner: If you have ever grown a new plant from a cutting, you have practiced cloning!
+
+## Cloning Animals: Nuclear Transplantation
+
+Differentiated cells from animals generally do not divide in culture, much less develop into the multiple cell types of a new organism. Therefore, early researchers had to use a different approach to answer the question of whether differentiated animal cells are totipotent. Their approach was to remove the nucleus of an egg (creating an enucleated egg) and replace it with the nucleus of a differentiated cell, a procedure called nuclear transplantation, now more commonly called somatic cell nuclear transfer. If the nucleus from the differentiated donor cell retains its full genetic potential, then it should be able to direct development of the recipient cell into all the tissues and organs of an organism. Such experiments were conducted on one species of frog (Rana pipiens) by Robert Briggs and Thomas King in the 1950s and on another frog species (Xenopus laevis) by John Gurdon in the 1970s (Figure 20.16). These researchers transplanted a nucleus from an embryonic or tadpole cell into an enucleated egg of the same species. In Gurdon's experiments, the transplanted nucleus was often able to support normal development of the egg into a tadpole. However, he found that the potential of a transplanted nucleus to direct normal development was inversely related to the age of the donor: The older the donor nucleus, the lower the percentage of normal tadpoles.
+
+From these results, Gurdon concluded that something in the nucleus does change as animal cells differentiate. In frogs and most other animals, nuclear potential tends to be restricted more and more as embryonic development and cell differentiation progress. These were foundational experiments that ultimately led to stem cell technology, and Gurdon received the 2012 Nobel Prize in Medicine for this work.
+
+## Reproductive Cloning of Mammals
+
+In addition to cloning frogs, researchers were able to clone mammals using early embryonic cells as a source of donor nuclei. Until several decades ago, though, it was not known whether a nucleus from a fully differentiated cell could be reprogrammed successfully to act as a donor nucleus. In 1997, researchers in Scotland announced the birth of Dolly, a lamb cloned from an adult sheep by nuclear transfer from a differentiated mammary gland cell (Figure 20.17). Using a technique related to that in Figure 20.16, the researchers implanted early embryos into surrogate mothers. Out of several hundred embryos, one successfully completed normal development, and Dolly was born, a genetic clone of the nucleus donor. By the age of 6, Dolly had developed premature arthritis, and complications from a lung infection led to her euthanization. This led to speculation that this sheep's cells were in some way not quite as healthy as those of a normal sheep, possibly reflecting incomplete reprogramming
+
+## Figure 20.16
+
+## Inquiry: Can the nucleus from a differentiated animal cell direct development of an organism?
+
+## Experiment
+
+John Gurdon and colleagues at Oxford University, in England, destroyed the nuclei of frog (Xenopus laevis) eggs by exposing the eggs to ultraviolet light. They then transplanted nuclei from cells of frog embryos and tadpoles into the enucleated eggs.
+
+![](images/6417a62aac8f6e31f5f1493ed42c6122e8eef6a394ed126c7dda06e4adbbdcb2.jpg)
+
+## Results
+
+When the transplanted nuclei came from an early embryo, the cells of which are relatively undifferentiated, most of the recipient eggs developed into tadpoles. But when the nuclei came from the fully differentiated intestinal cells of a tadpole, fewer than 2% of the eggs developed into normal tadpoles, and most of the embryos stopped developing at a much earlier stage.
+
+## Conclusion
+
+The nucleus from a differentiated frog cell can direct development of a tadpole. However, its ability to do so decreases as the donor cell becomes more differentiated, presumably because of changes in the nucleus.
+
+Data from J. B. Gurdon et al., The developmental capacity of nuclei transplanted from keratinized cells of adult frogs, Journal of Embryology and Experimental Morphology 34:93–112 (1975).
+
+WHAT IF? If each cell in a four-cell embryo was already so specialized that it was not totipotent, what results would you predict for the experiment on the left side of the figure?
+For suggested answer, see Appendix A.
+
+Figure 20.17 Reproductive cloning of a mammal by nuclear transfer.
+
+Dolly, shown here as a lamb, has a very different appearance from her surrogate mother, standing beside her.
+
+![](images/d80681a0a7eb8f4ebb32b079d9433c3b129b17e52b8606591674e10d3d0e3204.jpg)
+
+of the original transplanted nucleus. Reprogramming involves epigenetic changes that lead to changes in chromatin structure (see Concept 18.2), to be discussed shortly.
+
+Since that time, researchers have cloned many other mammals, including mice, cats, cows, horses, pigs, and dogs. In 2018, Chinese biologists reported the first cloning of a primate, the long-tailed macaque, using the same technique that was used to clone Dolly the sheep. Then, in 2019, a different team of researchers in China announced that they had been able to culture macaque embryos in the lab, without using a surrogate mother, for 20 days after fertilization. In this case, the aim was to be able to observe early embryonic events that cannot normally be seen. However, in most cases, the research goal has been the production of new individuals, known as reproductive cloning.
+
+We have learned from such experiments that cloned animals of the same species are not always identical. For example, in 2016, scientists examined four 7- to 9-year-old clones genetically identical to Dolly and concluded that, unlike Dolly, they were healthy and aging normally. Another example of nonidentity in clones is the first cloned cat, named CC for Carbon Copy (Figure 20.18). The color and pattern of her calico coat differed
+
+Figure 20.18 CC (“Carbon Copy”), the first cloned cat (right), and her single parent.
+
+Rainbow (left) donated the nucleus in a cloning procedure that resulted in CC. However, the two cats are not identical: Rainbow is a classic calico cat with orange patches on her fur and has a “reserved personality,” while CC has a gray and white coat and is more playful.
+
+![](images/9d8757e0bbfd22a7acb9bad0a5070b6456b2d02e42556043e1fb85eba73bc7dc.jpg)
+
+from that of her single female parent because of random X chromosome inactivation, which is a normal occurrence during embryonic development (see Figure 15.8). And identical human twins, which are naturally occurring “clones,” are always slightly different. Clearly, environmental influences and random phenomena play a significant role during development.
+
+## Epigenetic Differences in Cloned Animals
+
+In most nuclear transplantation studies thus far, only a small percentage of cloned embryos develop normally to birth. And like Dolly, many cloned animals exhibit defects. Cloned mice, for instance, are prone to obesity, pneumonia, liver failure, and premature death. Scientists assert that even cloned animals that appear normal are likely to have subtle defects.
+
+Researchers have uncovered some reasons for the low efficiency of cloning and the high incidence of abnormalities. In the nuclei of fully differentiated cells, a small subset of genes is turned on and expression of the rest of the genes is repressed. This regulation often is the result of epigenetic changes in chromatin, such as acetylation of histones or methylation of DNA (see Figure 18.7). During the nuclear transfer procedure, many of these changes must be reversed in the later-stage nucleus from a donor animal for genes to be expressed or repressed appropriately in earlier stages of development. Researchers have found that the DNA in cells from cloned embryos, like that of differentiated cells, often has abnormally high numbers of methyl groups. This finding suggests that the reprogramming of donor nuclei requires more accurate and complete chromatin restructuring than occurs during cloning procedures. Because DNA methylation helps regulate gene expression, misplaced or extra methyl groups in the DNA of donor nuclei may interfere with the pattern of gene expression necessary for normal embryonic development. In fact, the success of a cloning attempt may depend in large part on whether or not the chromatin in the donor nucleus can be artificially modified to resemble that of a newly fertilized egg.
+
+## Stem Cells of Animals
+
+Progress in cloning mammalian embryos, including primates, has heightened speculation about the cloning of humans, which has not yet been achieved past very early embryonic stages. The main reason researchers have been trying to clone human embryos is not for reproduction, but for the production of stem cells to treat human diseases. Recall that a stem cell is a relatively unspecialized cell that can both reproduce itself indefinitely and, under appropriate conditions, differentiate into specialized cells of one or more types (Figure 20.19, on the next page).
+
+## Embryonic and Adult Stem Cells
+
+Many early animal embryos contain stem cells capable of giving rise to differentiated cells of any type. Stem cells can be isolated from early embryos at a stage called the blastula stage or its human equivalent, the blastocyst stage. In culture, these embryonic stem (ES) cells reproduce indefinitely, and depending on culture conditions, they can be made to differentiate into a wide variety of specialized cells (Figure 20.20), including even eggs and sperm.
+
+The adult body also has stem cells, which serve to replace nonreproducing specialized cells as needed. In contrast to ES cells,
+
+Figure 20.19 How stem cells maintain their own population and generate differentiated cells.
+
+![](images/32d9ab7819fbf37db535f7100fa936bf9f631dd089744202f202d4dccbd90089.jpg)  
+Figure 20.20 Working with stem cells.
+
+Animal stem cells, which can be isolated from early embryos or adult tissues and grown in culture, are self-perpetuating, relatively undifferentiated cells. Embryonic stem cells are easier to grow than adult stem cells and can theoretically give rise to all types of cells in an organism. The range of cell types that can arise from adult stem cells is not yet fully understood.
+
+![](images/12e874a6cc917e44f2370b233b271586760f521624c3f6a6fdfb7800765d2692.jpg)
+
+adult stem cells are not able to give rise to all cell types in the organism, though they can generate several defined types. For example, one of the several types of stem cells in bone marrow can generate all the different kinds of blood cells (see Figure 20.20), and another type of bone marrow stem cell can differentiate into bone, cartilage, fat, muscle, and the linings of blood vessels. To the surprise of many, the adult brain has been found to contain stem cells that continue to produce certain kinds of nerve cells there. Researchers have also reported finding stem cells in skin, hair, eyes, and dental pulp. Although adult animals have only tiny numbers of stem cells, scientists are learning to identify and isolate these cells from various tissues and, in some cases, to grow them in culture. With the right culture conditions (for instance, the addition of specific growth factors), cultured stem cells from adult animals have been made to differentiate into various defined types of specialized cells, although none are as versatile as ES cells.
+
+Research with embryonic or adult stem cells is a source of valuable data about differentiation and has enormous potential for medical applications. The ultimate aim is to supply cells for the repair of damaged or diseased organs: For example, insulin-producing pancreatic cells for people with type 1 diabetes or certain kinds of brain cells for people with Parkinson's disease or Huntington's disease. Adult stem cells from bone marrow have long been used in bone marrow transplants as a source of immune system cells in patients whose own immune systems are nonfunctional because of genetic disorders or radiation treatments for cancer.
+
+The developmental potential of adult stem cells is limited to certain tissues. ES cells hold more promise than adult stem cells for most medical applications because ES cells are pluripotent, capable of differentiating into many different cell types. One source of ES cells, first reported in 2013, is cloned human blastocysts produced by transferring a nucleus from a differentiated cell into an enucleated egg (similar to cloning Dolly the sheep). Prior to that report, cells were obtained only from embryos donated by patients undergoing infertility treatments or from long-term cell cultures originally established with cells isolated from donated embryos, an issue that prompts ethical and political discussions. Although the techniques for cloning early human embryos are still being optimized and the ethics of this procedure are being actively discussed, cloned embryos represent a potential new source for ES cells that may be less controversial. Furthermore, with a donor nucleus from a person with a particular disease, researchers should be able to produce ES cells that match the patient and are thus not rejected by his or her immune system when used for treatment. When the main aim of cloning is to produce ES cells to treat disease, the process is called therapeutic cloning. Although most people believe that reproductive cloning of humans is unethical, opinions vary about the morality of therapeutic cloning.
+
+This debate has intensified with a recent result reported by the same research team in China that previously cloned macaque embryos in the laboratory. In 2021, these researchers incorporated human stem cells into 6-day-old macaque embryos, creating so-called chimeric embryos—embryos formed by cells of two different species. Most of these chimeric embryos died, but a few (3 out of 91) persisted and had about 5% human cells. The research team described the possibility that this technology could lead to growing human organs in monkeys as a rationale for doing these experiments, but other scientists have been quite troubled by the ethical questions raised by this procedure.
+
+## Induced Pluripotent Stem (iPS) Cells
+
+In another approach to producing stem cells for research and therapy, researchers succeeded in 2007 in learning how to turn back the clock in fully differentiated cells, reprogramming them to act like ES cells. Differentiated cells can be transformed into a type of ES cell by various methods, including using a modified retrovirus to introduce extra, cloned copies of four “stem cell” master regulatory genes. The “deprogrammed” cells are known as induced pluripotent stem (iPS) cells because, in using this fairly simple laboratory technique to return them to their undifferentiated state, pluripotency has been restored. The experiments that first transformed human differentiated cells into iPS cells are described in Figure 20.21. Shinya Yamanaka received the 2012 Nobel Prize in Medicine for this work, shared with John Gurdon, whose work you read about in Figure 20.16.
+
+By many criteria, iPS cells can perform most of the functions of ES cells, but there are some differences in gene expression and other cellular functions, such as cell division. At least until these differences are fully understood, the study of ES cells will continue to make important contributions to the development of stem cell therapies. (In fact, it is likely that ES cells will always be a focus of basic research as well.) In the meantime, work is proceeding using the iPS cells that have been experimentally produced.
+
+There are two major potential uses for human iPS cells. First, cells from patients with particular diseases have been reprogrammed to become iPS cells, which act as model cells for studying the disease and potential treatments. Human iPS cell lines have already been developed from individuals with type 1 diabetes, Parkinson's disease, Huntington's disease, Down syndrome, and many other diseases. Second, in the field of regenerative medicine, a patient's own cells could be reprogrammed into iPS cells and then used to replace nonfunctional tissues, such as cells of the retina of the eye that have been damaged by a condition called age-related macular degeneration (AMD). Because the eye is easily accessible to treatment, while being fairly well isolated from the immune and circulatory systems, AMD
+
+## Figure 20.21
+
+# Inquiry: Can a fully differentiated human cell be “deprogrammed” to become a stem cell?
+
+## Experiment
+
+Shinya Yamanaka and colleagues at Kyoto University, in Japan, used a retroviral vector to introduce four genes into fully differentiated human skin fibroblast cells. The cells were then cultured in a medium that would support growth of stem cells.
+
+![](images/e6d5a6343fadc6c08150c4b2f83f19606eadf3d282be87e9b6af61c60f62a2df.jpg)  
+Induced pluripotent stem (iPS) cell
+
+## Results
+
+Two weeks later, the cells resembled embryonic stem cells in appearance and were actively dividing. Their gene expression patterns, gene methylation patterns, and other characteristics were also consistent with those of embryonic stem cells. The iPS cells were able to differentiate into heart muscle cells, as well as other cell types.
+
+## Conclusion
+
+The four genes induced differentiated skin cells to become pluripotent stem cells, with characteristics of embryonic stem cells.
+
+Data from K. Takahashi et al., Induction of pluripotent stem cells from adult human fibroblasts by defined factors, Cell 131:861–872 (2007).
+
+WHAT IF? Patients with diseases such as heart disease or Alzheimer's could have their own skin cells reprogrammed to become iPS cells. Once affordable procedures have been developed for this and for converting iPS cells into heart or nervous system cells, the patients' own iPS cells might be used to treat their disease. When organs are transplanted from a donor to a recipient, the recipient's immune system may reject the transplant, a dangerous condition. Would using iPS cells be expected to carry the same risk? Why or why not? Given that these cells are actively dividing, undifferentiated cells, what risks might this procedure carry?
+
+For suggested answer, see Appendix A.
+
+and other sight disorders have been a frequent target of stem cell therapy. For instance, in the last decade, researchers have made iPS cells from skin or other cells from patients with AMD, caused them to differentiate into retinal cells, and implanted them into the patients' retinas. Thus far, there have been mixed results, depending in part on the source of the iPS cells. At best, deterioration of the patient's vision has been stopped, but some patients have experienced further loss of vision caused by factors associated with the procedure. Whether or not this approach will succeed, and be affordable enough for standard treatment, is still unknown.
+
+Over time, the procedure may become less expensive, and some researchers have suggested creating a bank for storage of donor iPS cells that could be matched to patients' tissues. Development of techniques that direct iPS cells to become specific cell types for regenerative medicine is an area of intense research. If the challenges are met, iPS cells created in this way could eventually provide tailor-made "replacement" cells for patients without using any human eggs or embryos, thus circumventing most ethical objections.
+
+## Concept Check 20.3
+
+1. Based on current knowledge, how would you explain the difference in the percentage of tadpoles that developed from the two kinds of donor nuclei in Figure 20.16?
+
+2. A few companies in China and South Korea provide the service of cloning dogs, using cells from their clients' pets to provide nuclei in procedures like that in Figure 20.17. Should their clients expect the clone to look identical to their original pet? Why or why not? What ethical questions does this bring up?
+
+3. MAKE CONNECTIONS Based on what you know about muscle differentiation (see Figure 18.18) and genetic engineering, propose the first experiment you might try if you wanted to direct an embryonic stem cell or iPS cell to develop into a muscle cell.
+
+For suggested answers, see Appendix A.
+
+# Concept 20.4: The practical applications of DNA-based biotechnology affect our lives in many ways
+
+In the last section, we'll survey the practical applications of DNA-based biotechnology, the manipulation of organisms or their components to make useful products. Today, major applications of DNA technology and genetic engineering include medical treatments and medication development, forensic evidence and genetic profiles, environmental cleanup, and agriculture.
+
+## Medical Applications
+
+One important use of DNA technology is the identification of human genes whose mutation plays a role in genetic diseases. These discoveries may lead to ways of diagnosing, treating, and even
+
+preventing such conditions. DNA technology has also identified genes that play a role in a number of “nongenetic” diseases, from arthritis to AIDS, by influencing susceptibility to these diseases. Furthermore, a wide variety of diseases involve changes in gene expression within the affected cells and often within the patient’s immune system. By using RNA-seq and DNA microarray assays (see Figures 20.12 and 20.13) or other techniques to compare gene expression in healthy and diseased tissues, researchers are finding genes that are turned on or off in particular diseases. These genes and their products are potential targets for prevention or therapy.
+
+## Diagnosis and Treatment of Diseases
+
+A new chapter in the diagnosis of infectious diseases has been opened by DNA technology, in particular the use of PCR and labeled nucleic acid probes to track down pathogens. For example, because the sequence of the RNA genome of SARS-CoV-2 is known, RT-PCR can be used to amplify and therefore detect and quantify even a small amount of SARS-CoV-2 RNA in nasal or throat swab samples (see Figure 20.11). RT-PCR is often the best way to detect an otherwise elusive infectious agent.
+
+Medical scientists can now diagnose hundreds of human genetic disorders by using PCR with primers that target the genes associated with these disorders. The amplified DNA product is then sequenced to reveal the presence or absence of the disease-causing mutation. Among the genes for human diseases targeted in this way are those for sickle-cell disease, hemophilia, cystic fibrosis, Huntington's disease, and Duchenne muscular dystrophy. Individuals with such diseases can often be identified before the onset of symptoms, even before birth (see Figure 14.19). PCR can also be used to identify symptomless carriers of potentially harmful recessive alleles as part of genetic counseling (see Concept 14.4).
+
+## Personal Genome Analysis
+
+As you learned earlier, genome-wide association studies have pinpointed SNPs (single nucleotide polymorphisms) that are linked to disease-associated alleles (see Figure 20.15). Individuals can be tested by PCR and sequencing for a SNP that is correlated with the abnormal allele. The presence of particular SNPs is correlated with increased risk for particular adverse health conditions such as heart disease, Alzheimer's disease, and some types of cancer.
+
+Direct-to-consumer genome analysis companies offer kits allowing individuals to send in a swab containing cheek cells that the company will analyze genetically. Genetic testing for risk factors like heart disease, Alzheimer's disease, and some types of cancer is carried out by looking for linked SNPs that have been previously identified (see Figure 20.15). It may be helpful for individuals to learn about their health risks, with the understanding that such genetic tests merely reflect correlations and do not make predictions.
+
+In addition to health-related genetic information, these companies compare a person's DNA segments with those from reference populations around the world, established from thousands of individuals of known ancestry. Based on how closely the segments match up, the report can tell an individual about their likely ancestral breakdown. Females can also learn about their maternal lines of descent, based on comparisons of mitochondrial
+
+DNA, which is contributed to the egg only by the female parent. For males, an analysis of the sequence of the Y chromosome can trace their paternal lines of descent. As the size of the database used by these companies increases, the results become more refined and more accurate.
+
+## Personalized Medicine
+
+The techniques described in this chapter have also prompted improvements in disease treatments—for example, by knowing which specific cancer-related genes have been mutated in a particular patient's tumor. By analyzing the expression of many genes in large numbers of breast cancer patients, researchers can refine their understanding of the different subtypes of breast cancer (see Figure 18.27). Knowing the expression levels of particular genes in a given individual can help physicians determine the likelihood that the cancer will recur, thus helping them design an appropriate treatment. Given that some low-risk patients have a $96\%$ survival rate over a ten-year period with no treatment, gene expression analysis allows doctors and patients access to valuable information when they are considering treatment options.
+
+Many researchers envision a future of personalized medicine, a type of medical care in which each person's specific genetic profile can provide information about diseases or conditions for which the person is especially at risk and help make health-care decisions. As we will see later in the chapter, a genetic profile is currently taken to mean a set of genetic markers such as SNPs. Ultimately, however, it will likely mean the complete DNA sequence of an individual—after sequencing becomes inexpensive enough. The ability to sequence a person's genome quickly and inexpensively is advancing rapidly, perhaps faster than development of appropriate treatments for the conditions. Still, the identification of genes involved in these conditions provides targets for therapeutic interventions.
+
+An individual's genomic information can be used to predict the benefits and risks of particular medications, an approach called pharmacogenetics. There are over 300 medications for which the Food and Drug Administration recommends genetic testing for patients prior to their use.
+
+## Human Gene Therapy and Gene Editing
+
+Gene therapy—the introduction of genes into an afflicted individual for therapeutic purposes—holds great potential for treating the relatively small number of disorders traceable to a single defective gene. The aim of this approach is to insert a normal allele of the defective gene into the somatic cells of the tissue affected by the disorder.
+
+For gene therapy of somatic cells to be permanent, the cells that receive the normal allele must be cells that multiply throughout the patient's life. Bone marrow cells, which include the stem cells that give rise to all the cells of the blood and immune system, are prime candidates. Figure 20.22 outlines one procedure for gene therapy in an individual whose bone marrow cells do not produce a vital enzyme because of a single defective gene. One type of severe combined immunodeficiency (SCID) is caused by this kind of defect. If the treatment is successful, the patient's bone marrow cells will begin producing the missing protein, and the patient may be cured.
+
+A retrovirus that has been rendered harmless is used as a vector in this procedure, which exploits the ability of a retrovirus to insert a DNA transcript of its RNA genome into the chromosomal DNA of its host cell (see Figure 19.9). If the foreign gene carried by the retroviral vector is expressed, the cell and its descendants will possess the gene product. Cells that reproduce throughout life, such as bone marrow cells, are ideal candidates for gene therapy.
+
+![](images/bc6dd6476abf1f1b450983da54f78661f5524e2ad5de63e2fe43eac27e35b6a1.jpg)
+
+The procedure shown in Figure 20.22 was used in gene therapy trials for SCID in France in 2000, resulting in the first indisputable success of gene therapy. However, three patients subsequently developed leukemia, a type of blood cell cancer, and one of them died. Researchers have concluded it is likely that the insertion of the retroviral vector occurred near a gene that triggers the proliferation of blood cells. Using a viral vector that does not come from a retrovirus, clinical researchers have treated several other genetic diseases somewhat successfully with gene therapy, including a type of progressive blindness (see Concept 50.3), a degenerative disease of the nervous system, and a blood disorder involving the $\beta$ -globin gene.
+
+Gene therapy raises many technical issues. For example, how can the activity of the transferred gene be controlled so that cells make appropriate amounts of the gene product at the right time and in the right place? How can we be sure that the insertion of the therapeutic gene does not harm some other necessary cell function? As more is learned about DNA control elements and gene interactions, researchers may be able to answer such questions.
+
+A more direct approach that avoids the complications of using a viral vector in gene therapy is made possible by gene editing, especially using the CRISPR-Cas9 system (see Figure 17.28). In this approach, the existing defective gene is edited to correct the mutation.
+
+Researchers have been using the CRISPR-Cas9 system to try to correct the genetic mutation that leads to sickle-cell disease. After studies using mouse models, CRISPR-based treatments for sickle-cell disease and another disease caused by a mutation of the $\beta$ -globin gene called beta-thalassemia were tested in human clinical trials. These disorders are good targets because they are caused by a mutation in a single gene, and they involve blood cells. The patients' blood cells are removed and genetically edited outside the body, then returned to the patient. In these clinical trials, rather than trying to correct the $\beta$ -globin mutation, the approach was to re-activate a gene for fetal hemoglobin, a different form that is normally turned off at birth but can substitute for $\beta$ -globin. A significant majority of patients showed remarkable results, having near-normal hemoglobin levels and not needing blood transfusions or experiencing pain crises. In 2024, this gene therapy treatment for these two blood-based disorders was approved for usage by the U.S. Food and Drug Administration (FDA). This is exciting, as it suggests that CRISPR technology could potentially treat or even cure human genetic diseases, such as autoimmune diseases, Parkinson's, or Alzheimer's disease, or even some types of cancer. As of 2025, more than 20 gene therapy treatments have been approved by the FDA.
+
+There are ongoing concerns about introducing CRISPR-treated cells into humans because of the risks associated with cutting both strands of DNA and the possible effects on so-called “off-target genes,” genes that are not meant to be edited. Researchers are studying ways of minimizing these effects; for example, using different forms of Cas proteins that are more accurate. Another approach that has been successful is to use CRISPR in association with a new technique called base editing, in which specific bases in a gene are chemically modified to resemble a different base, rather than being cut and replaced. This is done in a way that alters the resulting protein so it is no longer harmful.
+
+In addition to technical challenges, gene therapy and gene editing provoke ethical questions. Some critics believe that tampering with human genes in any way is unethical. Other observers see no fundamental difference between transplanting genes into somatic cells and transplanting organs from one person to another.
+
+An even more pressing question is the issue of engineering human germ-line cells to try to correct a defect in future generations. Such genetic engineering is now routinely done in laboratory mice, and some methods for genetic engineering of human embryos have been developed.
+
+The development of the CRISPR-Cas9 system has engendered much debate about the ethics of gene editing. Jennifer Doudna (Figure 20.14), a co-discoverer of CRISPR-Cas9, and other biologists have agreed to exercise extreme caution as the field moves forward. Together, they called for the research community to “strongly discourage” any experimental work on human eggs or embryos.
+
+In spite of this general consensus among biologists, a Chinese researcher reported in 2018 that he had used the CRISPR-Cas9 system to edit genes in embryos that completed fetal development and were born as twins and a third individual. He claimed to have edited the CCR5 gene, which codes for a co-receptor for HIV (see Figure 7.8), so that HIV would be unable to bind and infect the cells. The twins' father was HIV-positive, which was the rationale the scientist used for carrying out this genetic engineering. However, this act was roundly condemned as highly unethical by the biological community; the researcher lost his job and was released in 2022 after 3 years in prison. In 2019, the World Health Organization established the Human Genome Editing Registry to monitor such research.
+
+There are many potential technical problems with the CRISPR-Cas9 technique, like the off-target effects mentioned previously; there is strong evidence that off-target editing did occur in the three gene-edited individuals, although the consequences of these events are unknown at present. Beyond those technical concerns, however, are underlying ethical considerations: Under what circumstances, if any, should genomes of human germ lines be altered? Would alterations lead to the practice of eugenics, a deliberate effort to control the genetic makeup of human populations? It is imperative to consider these questions.
+
+## Pharmaceutical Products
+
+The pharmaceutical industry derives significant benefit from advances in DNA technology and genetic research, applying them to the development of useful drugs that can prevent, treat, or manage diseases. Pharmaceutical products are synthesized using methods of either organic chemistry or biotechnology, depending on the nature of the product.
+
+## Cell and Tissue Culture Usage in Pharmaceutical Research
+
+Cell and tissue culture involve growing and maintaining cells or tissues outside of their natural environment, typically in a Petri dish, flask, or larger vessel (see Figure 12.18). In this technique, the cells grow, divide, and function as they would inside a living organism, which allows researchers to investigate cellular interactions and responses. This fundamental approach offers insights for understanding diseases, discovering new drugs, and advancing therapies.
+
+Recently, scientists have used innovative cell culture techniques to develop organoids, which are 3-dimensional, miniature versions of organs derived from stem cells (Figure 20.23). Organoids mimic the structure and function of human organs, making them useful for disease modeling, drug testing, personalized treatment, and in the future, even transplantation.
+
+## Organic Synthesis of Small-Molecule Drugs
+
+Small-molecule drugs, developed by organic synthesis, are a key tool of modern medicine because their small size allows them to enter cells and interact with proteins to alter biological processes. For example, aspirin is a common small-molecule
+
+## Figure 20.23 Intestinal organoid.
+
+This organoid was derived from adult intestinal stem cells that are grown into colonies, then treated with factors that cause differentiation into structures called intestinal crypts (the two tubes extending outward from the central cavity). Crypts contain both stem cells and support cells. The cells have been fluorescently stained for actin (green, which stains the apical part of the cell, by the lumen), nuclei (blue), and a support cell protein (red).
+
+![](images/3382e7745e9e0d04dd7544df36011fad0b02984b95496363e681695cb35600e7.jpg)
+
+drug that inhibits an enzyme called cyclooxygenase to reduce pain, lower fever, and even improve blood flow during a heart attack.
+
+Determining the sequence and structure of proteins crucial for tumor cell survival has led to the identification of small molecules that combat certain cancers by blocking the function of these proteins. One drug, imatinib (trade name Gleevec), is a small molecule that inhibits one tyrosine kinase (see Figure 11.8). The overexpression of this kinase, resulting from a chromosomal translocation, is instrumental in causing chronic myelogenous leukemia (CML; see Figure 15.16). Patients in the early stages of CML who are treated with imatinib have exhibited nearly complete, sustained remission from the cancer. Drugs that work in a similar way have also been used with success to treat a few types of lung and breast cancers. This approach is feasible only for cancers whose molecular basis is fairly well understood.
+
+## Biologic Drugs Developed through Biotechnology
+
+Biologic drugs (biologics) are a class of drugs derived from living organisms, including from cells. Unlike traditional small-molecule drugs, they are larger in size, more complex, and can target specific components in the body. Biologics work by interacting with specific molecules in the body, such as proteins, to alter cellular function or environment. Examples of biologics include recombinant proteins, vaccines, and monoclonal antibodies. As you'll learn in Concept 43.3, monoclonal antibodies are a group of antibodies that all recognize exactly the same region of a particular molecule. Monoclonal antibodies can block protein interactions, mark cells for destruction, and neutralize pathogens. Their use
+
+as a cancer treatment has revolutionized cancer medicine because of their high specificity and prolonged therapeutic effects.
+
+You learned earlier in the chapter about DNA cloning and gene expression systems for producing large quantities of a chosen protein that is present naturally in only minute amounts. The host cells used in such expression systems can even be genetically engineered to secrete a protein as it is made, thereby simplifying the task of purifying it by traditional biochemical methods.
+
+Among the first biologics manufactured in this way were human insulin and human growth hormone (HGH). Some 2 million people with diabetes in the United States depend on insulin treatment to control their disease. Human growth hormone has been a boon to children born with a form of dwarfism caused by inadequate amounts of HGH, as well as helping patients with AIDS gain weight. Another important biologic produced by genetic engineering is tissue plasminogen activator (TPA). If administered shortly after a heart attack, TPA helps dissolve blood clots and reduces the risk of subsequent heart attacks.
+
+In some cases, instead of using cell systems to produce large quantities of protein products, pharmaceutical scientists can use whole organisms. To do this, they use a transgene, a gene that has been transferred into one organism from another. They first remove eggs from a female of the recipient species and fertilize them in vitro. Meanwhile, they clone the desired gene from a donor organism. They then inject the cloned DNA directly into the nuclei of the fertilized eggs. Some of the cells integrate the foreign DNA, the transgene, into their genome and are able to express the foreign gene. The engineered embryos that arise from these zygotes are then surgically implanted in a surrogate female. If an embryo develops successfully, the result is a transgenic organism that expresses its new, “foreign” gene.
+
+Assuming that the introduced gene encodes a protein desired in large quantities, transgenic animals can act as pharmaceutical “factories.” For example, a transgene for a human blood protein such as antithrombin, which prevents blood clots, can be inserted into the genome of a goat in such a way that the transgene’s product is secreted in the animal’s milk. The protein is then purified from the milk (which is easier than purification from a cell culture). Such proteins must be tested to ensure that they (or contaminants from the farm animals) will not cause allergic reactions or other adverse effects in patients who receive them.
+
+## Biomaterials for Drug Delivery and Treatment
+
+When treating patients with small molecule or biologic drugs, there are challenges such as rapid drug clearance from the body, poor drug absorption, or other difficulties. Biomaterials are naturally or synthetically derived materials that have a wide range of applications from developing prosthetic limbs to promoting wound healing. In drug delivery, biomaterials can serve as carriers to transport drugs to their intended destinations. They can control the release of drugs over time, target specific areas of the body, and protect sensitive medication (such as biologics) from being broken down before reaching the specific cells and tissue. For example, the COVID-19 vaccine contains mRNA, which is highly unstable and requires a protective carrier. To address this, researchers developed small structures made of lipids—lipid nanoparticles—as delivery vehicles, which encase the mRNA and ensure that it reaches the target cells intact.
+
+## Interview
+
+Interview with Kristi Anseth: Designing biological molecules that can help wounds heal wounds and repair damaged cartilage (at the start of Unit 1, before Chapter 2)
+
+![](images/14638960b6b1937a85d540f2805941f4c6cf6bd88f92320993fa36a11eea6695.jpg)
+
+## Forensic Evidence and Genetic Profiles
+
+In violent crimes, body fluids or small pieces of tissue may be left at the scene or on the clothes or other possessions of the victim or assailant. If enough blood, semen, or tissue is available, forensic laboratories can determine the blood type or tissue type by using antibodies to detect specific cell-surface proteins. However, such tests require fairly fresh samples in relatively large amounts. Also, because many people have the same blood or tissue type, this approach can only exclude a suspect; it cannot provide strong evidence of guilt.
+
+DNA testing, on the other hand, can identify the guilty individual with a high degree of certainty because the DNA sequence of every person is unique (except for identical twins). Genetic markers that vary in the population can be analyzed for a given person to determine that individual's unique set of genetic markers, or genetic profile. (This term is preferred over "DNA fingerprint" by forensic scientists, who want to emphasize the heritable aspect of these markers rather than the fact that they produce a pattern on a gel that, like a fingerprint, is visually recognizable.) The FBI started applying DNA technology to forensics in 1988, using a method involving gel electrophoresis and nucleic acid hybridization to detect similarities and differences in DNA samples. This method required much smaller samples of blood or tissue than earlier methods—only about 1,000 cells.
+
+Today, forensic scientists use an even more sensitive method that takes advantage of variations in length of genetic markers called short tandem repeats (STRs). These are tandemly repeated units of two- to five-nucleotide sequences in specific regions of the genome. The number of repeats present in these regions is highly variable from person to person (polymorphic); even for a single individual, the two alleles of an STR may differ from each other. For example, one individual may have the sequence ACAT repeated 30 times at one genome locus and 15 times at the same locus on the other homolog, whereas another individual may have 18 repeats at this locus on each homolog. (These two genotypes can be expressed by the two repeat numbers: 30,15 and 18,18.) PCR is used to amplify particular STRs, using sets of primers that are labeled with colored fluorescent tags; the length of the region, and thus the number of repeats, can then be determined by electrophoresis. The PCR step allows use of this method even when the DNA is in poor condition or available only in tiny quantities: A tissue sample containing as few as 20 cells can be sufficient.
+
+In a murder case, for example, this method can be used to compare DNA samples from the suspect, the victim, and a small amount of blood found at the crime scene. The forensic scientist tests only a few selected portions of the DNA—usually 13 STR markers. However, even this small set of markers can provide a forensically useful genetic profile because the probability that two people (who are not identical twins) would have exactly the same set of STR markers is vanishingly small. The Innocence Project, a nonprofit organization dedicated to overturning wrongful convictions, uses STR analysis of archived samples from crime scenes to revisit old cases. Hundreds of innocent people have been released from prison in the United States as a result of DNA-based forensic and legal work done by this and related groups (Figure 20.24).
+
+Genetic profiles can also be useful for other purposes. A comparison of the DNA of a mother, her child, and the purported father can conclusively settle a question of paternity. Sometimes paternity is of historical interest: Genetic profiles provided strong evidence that Thomas Jefferson or one of his close male
+
+Figure 20.24 STR analysis used to release an innocent man from prison.
+
+(a) In 1984, Earl Washington was convicted and sentenced to death for the 1982 rape and murder of Rebecca Williams. His sentence was commuted to life in prison in 1993 due to new doubts about the evidence. In 2000, STR analysis by forensic scientists associated with the Innocence Project showed conclusively that he was innocent. This photo shows Washington just before his release in 2001, after 17 years in prison.
+
+![](images/bd19d581724e570e3068423eef3ca2fe25f7183a4fc9b512433f22ccbdc6ff46.jpg)
+
+<table><tr><td>Source of sample</td><td>STR marker 1</td><td>STR marker 2</td><td>STR marker 3</td></tr><tr><td>Semen on victim</td><td>17,19</td><td>13,16</td><td>12,12</td></tr><tr><td>Earl Washington</td><td>16,18</td><td>14,15</td><td>11,12</td></tr><tr><td>Kenneth Tinsley</td><td>17,19</td><td>13,16</td><td>12,12</td></tr></table>
+
+(b) In STR analysis, selected STR markers in a DNA sample are amplified by PCR, and the PCR products are separated by electrophoresis. The procedure reveals how many repeats are present for each STR locus in the sample. An individual has two alleles per STR locus, each with a certain number of repeats. This table shows the number of repeats for three STR markers in three samples: from semen found on the victim, from Washington, and from another man (Kenneth Tinsley), who was in prison because of an unrelated conviction. These and other STR data (not shown) exonerated Washington and led Tinsley to plead guilty to the murder.
+
+relatives was the male parent of at least one of the children of Sally Hemings, one of the people Jefferson enslaved. Genetic profiles can also identify victims of mass casualties. The largest such effort occurred after the attack on the World Trade Center in 2001; more than 10,000 samples of victims' remains were compared with DNA samples from personal items, such as toothbrushes, provided by families. Ultimately, forensic scientists succeeded in identifying almost 3,000 victims using these methods.
+
+Just how reliable is a genetic profile? The greater the number of markers examined in a DNA sample, the more likely it is that the profile is unique to one individual. In forensic cases using STR analysis with 13 markers, the probability of two people having identical DNA profiles is somewhere between one in 10 billion and one in several trillion. (For comparison, the world's population is roughly 8 billion.) The exact probability depends on the frequency of those markers in the general population. Information on how common various markers are in different ethnic groups is critical because these marker frequencies may vary considerably among ethnic groups and between a particular ethnic group and the population as a whole. With the increasing availability of frequency data, forensic scientists can make extremely accurate statistical calculations. Thus, despite problems that can arise from insufficient data, human error, or flawed evidence, genetic profiles are now accepted as compelling evidence by legal experts and scientists alike.
+
+## Environmental Cleanup
+
+Increasingly, the diverse abilities of certain microorganisms to transform chemicals are being exploited for environmental cleanup. This process is called bioremediation—the use of organisms to detoxify and restore polluted and degraded ecosystems. If the growth needs of such microorganisms make them unsuitable for direct use, scientists can now transfer the genes for their valuable metabolic capabilities into other microorganisms; these transgenic microorganisms can then be used to treat environmental problems. For example, many bacteria can extract heavy metals, such as copper, lead, and nickel, from their environments and incorporate the metals into compounds such as copper sulfate or lead sulfate, which are readily recoverable. Genetically engineered microorganisms may become important in both mining (especially as ore reserves are depleted) and cleaning up highly toxic mining wastes. Biotechnologists have also identified microorganisms that can degrade chlorinated hydrocarbons and other harmful compounds, in many cases enhancing their capability through genetic engineering. These microorganisms are currently used in wastewater treatment plants and by manufacturers before the compounds are ever released into the environment.
+
+## Agricultural Applications
+
+Scientists are working to learn more about the genomes of agriculturally important plants and animals. For a number of years, they have been using DNA technology in an effort to improve agricultural productivity. The selective breeding of both livestock (animal husbandry) and crops has exploited naturally occurring mutations and genetic recombination for thousands of years.
+
+As we described earlier, DNA technology enables scientists to produce transgenic animals, which speeds up the selective breeding process. The goals of creating a transgenic animal are often the same as the goals of traditional breeding—for instance, to make a sheep with better quality wool, a pig with leaner meat, or a cow that will mature in a shorter time. Scientists might, for example, identify and clone a gene that causes the development of larger muscles (muscles make up most of the meat we eat) in one breed of cattle and transfer it to other cattle or even to sheep. However, health problems are not uncommon among farm animals carrying genes from other species, and modification of the animal's own genes using the CRISPR-Cas9 system is increasingly used as a more useful technique. Animal health and welfare are important issues to consider when genetically altering animals.
+
+Agricultural scientists have already endowed a number of crop plants with genes for desirable traits, such as delayed ripening and resistance to spoilage, disease, and drought. Modifications can also add value to food crops, giving them a longer shelf life or improved flavor or nutritional value. Examples are golden rice and golden bananas, which have been genetically engineered to have higher levels of a precursor to vitamin A. For many plant species, a single tissue cell grown in culture can give rise to an adult plant. Thus, genetic manipulations can be performed on an ordinary somatic cell and the cell then can be used to generate a plant with new traits.
+
+Genetic engineering is rapidly replacing traditional plant-breeding programs, especially for useful traits, such as herbicide or pest resistance, determined by one or a few genes. Crops engineered with a bacterial gene making the plants resistant to an herbicide can grow while weeds are destroyed, and genetically engineered crops that can resist destructive insects reduce the need for chemical insecticides.
+
+The Food and Agriculture Organization of the United Nations has predicted that we will need 70% more food by the year 2050 than the planet is currently producing. One novel approach is being taken by researchers working on the international $C_{4}$ Rice Project. The common form of rice, a global food staple, uses the $C_{3}$ form of photosynthesis (see Concept 10.5). The aim of researchers engaged in this project is to genetically engineer a strain of rice that can use $C_{4}$ photosynthesis, which is more efficient. This research has run into some hurdles, but a gene was identified in 2022 that, when knocked out, increases production in both rice and corn plants by 8–10%. (The gene is a member of the WD40 family; see Figure 21.3.)
+
+## Safety and Ethical Questions Raised by DNA Technology
+
+Early concerns about potential dangers associated with recombinant DNA technology and genetic engineering focused on the possibility that hazardous new pathogens might be created. What might happen, for instance, if in a research study, cancer cell genes were transferred into bacteria or viruses? To guard against such rogue microorganisms, scientists developed a set of guidelines that were adopted as formal government regulations in the United States and some other countries. One safety measure is a set of strict laboratory procedures designed to prevent engineered microorganisms from either infecting researchers or accidentally leaving the laboratory. In addition, strains of microorganisms to be used in recombinant DNA experiments are genetically crippled to ensure that they cannot survive outside the laboratory. Finally, certain obviously dangerous experiments have been banned.
+
+Today, most public concern about possible hazards centers not on recombinant microorganisms but on genetically modified organisms (GMOs) used as food. A GMO is a transgenic organism that has acquired one or more genes from another species or from another variety of the same species. Some salmon, for example, have been genetically modified by addition of a more active salmon growth hormone gene. However, the majority of the GMOs that contribute to our food supply are not animals, but crop plants.
+
+GM crops are widespread in the United States, Argentina, and Brazil; together, these countries account for over 80% of the world's acreage devoted to such crops. In the United States, most corn, soybean, and canola crops are genetically modified, and a recent law requires labeling of GM products, although as of 2022, the term “GMO” has been replaced by “bioengineered.” The same foods are an ongoing subject of controversy in Europe, where the GM revolution has been met with strong opposition. Many Europeans are concerned about the safety of GM foods and the possible environmental consequences of growing GM plants. Although a small number of GM crops have been grown on European soil, the European Union established a comprehensive legal framework regarding GMOs in 2015. Among other regulations, individual member states may ban either the growing or importing of GM crops, which must be clearly labeled. As of 2022, 19 of the 27 European Union member states have fully or partially banned GMOs. However, pressure is increasing to reconsider this stance, based on evidence that improving crop yields could significantly reduce carbon emissions and thus decrease climate change. In the end, though, the high degree of consumer distrust in Europe makes the future of GM crops there uncertain.
+
+Advocates of a cautious approach toward GM crops fear that transgenic plants might pass their new genes to close relatives in nearby wild areas. We know that lawn and crop grasses, for example, commonly exchange genes with wild relatives via pollen transfer. If crop plants carrying genes for resistance to herbicides, diseases, or insect pests pollinated wild ones, the offspring might become “super weeds” that are very difficult to control. Another worry involves possible risks to human health from GM foods. Some people fear that the protein products of transgenes might lead to allergic reactions. Although there is some evidence that this could happen, advocates claim that these proteins could be tested in advance to avoid producing ones that cause allergic reactions. (For further discussion of plant biotechnology and GM crops, see Concept 38.3.)
+
+Today, governments and regulatory agencies throughout the world are grappling with how to facilitate the use of
+
+biotechnology in agriculture, industry, and medicine while ensuring that new products and procedures are safe. In the United States, such applications of biotechnology must be evaluated for potential risks by various regulatory agencies, including the Food and Drug Administration, the Environmental Protection Agency, the National Institutes of Health, and the Department of Agriculture. Meanwhile, these same agencies and the public must consider the ethical implications of biotechnology.
+
+Advances in biotechnology have allowed us to obtain complete genome sequences for humans and many other species, providing a vast treasure trove of information about genes. We can ask how certain genes differ from species to species, as well as how genes and, ultimately, entire genomes have evolved. (These are the subjects of Chapter 21.) At the same time, the increasing speed and falling cost of sequencing the genomes of individuals are raising significant ethical questions. Who should have the right to examine someone else's genetic information? How should that information be used? Should a person's genome be a factor in determining eligibility for a job or insurance? Ethical considerations, as well as concerns about potential environmental and health hazards, will likely slow some applications of biotechnology. There is always a danger that too much regulation will stifle basic research and its potential benefits. On the other hand, genetic engineering—especially gene editing with the CRISPR-Cas9 system—enables us to profoundly and rapidly alter species that have been evolving for millennia. A good example is the potential use of a gene drive that would eliminate the ability of mosquito species to carry diseases or even eradicate certain mosquito species. There would probably be health benefits to this approach, at least initially, but unforeseen problems could easily arise. Given the tremendous power of DNA technology, we must proceed with humility and caution.
+
+## Interview
+
+Interview with David Suzuki: Exploring ethical issues related to DNA technology (eTextbook only)
+
+![](images/790876550decfd32386157d4c6d33765f884e5c79f0d4df42fde00f50e99527b.jpg)
+
+## Concept Check 20.4
+
+1. What is the advantage of using stem cells for gene therapy or gene editing?
+
+2. List at least three different properties that have been acquired by crop plants via genetic engineering.
+
+3. WHAT IF? As a physician, you have a patient with symptoms that suggest a hepatitis A infection, but you have not been able to detect viral proteins in the blood. Knowing that hepatitis A is an RNA virus, what lab tests could you perform to support your diagnosis? Explain the results that would support your hypothesis.
+
+For suggested answers, see Appendix A.
+
+by PCR or from another source
+
+# Chapter 20 Review
+
+![](images/a841029a5acee6173ab293479f8a1b2a7258490d27947d4bfdd7d5243e9a2129.jpg)
+
+## Summary of Key Concepts
+
+To review key terms, go to the Vocabulary Self-Quiz (eTextbook only).
+
+## Concept 20.1: DNA sequencing and DNA cloning are valuable tools for genetic engineering and biological inquiry
+
+\- Nucleic acid hybridization, the base pairing of one strand of a nucleic acid to the complementary sequence on a strand from another nucleic acid molecule, is widely used in DNA technology.
+
+\- DNA sequencing can be carried out using the dideoxy sequencing method in automated sequencing machines.
+
+\- Fast and inexpensive next-generation (high-throughput) techniques for sequencing DNA are based on sequencing by synthesis: DNA polymerase is used to synthesize a stretch of DNA using a single-stranded template, and the order in which nucleotides are added reveals the sequence. Third-generation sequencing methods, including nanopore technology, sequence long DNA molecules one at a time
+
+\- Gene cloning (or DNA cloning) produces multiple copies of a gene (or DNA segment) that can be used to manipulate and analyze DNA and to produce useful new products or organisms with beneficial traits.
+
+\- In genetic engineering, bacterial restriction enzymes are used to cut DNA molecules within short, specific nucleotide sequences (restriction sites), yielding a set of double-stranded restriction fragments with single-stranded sticky ends:
+
+![](images/b3d6e1023981206b3713c01154adf3afd5d2899a095b2b36be9e63447ea81c02.jpg)
+
+\- The sticky ends on restriction fragments from one DNA source can base-pair with complementary sticky ends on fragments from other DNA molecules. Sealing the base-paired fragments with DNA ligase produces recombinant DNA molecules.
+
+\- DNA restriction fragments of different lengths can be separated by gel electrophoresis.
+
+\- The polymerase chain reaction (PCR) can amplify (produce many copies of) a specific target segment of DNA, using primers that bracket the desired sequence and a heat-resistant DNA polymerase.
+
+• To clone a eukaryotic gene:
+
+![](images/d8820652bca4cbf25428fa7935c0a9276c978d89b45887533ccaea16487f59ee.jpg)  
+(cut by same restriction  
+enzyme used on cloning vector)  
+Recombinant DNA plasmids
+
+\- Recombinant plasmids are returned to host cells, each of which divides to form a clone of cells.
+
+\- Expressing cloned eukaryotic genes in bacterial host cells poses several technical difficulties. The use of cultured eukaryotic cells as host cells, coupled with appropriate expression vectors, helps avoid these problems.
+
+Describe how the process of gene cloning results in a cell clone containing a recombinant plasmid.
+
+## Concept 20.2: Biologists use DNA technology to study gene expression and function
+
+\- Several techniques use hybridization of a nucleic acid probe to detect the presence of specific mRNAs.
+
+\- In situ hybridization and RT-PCR can detect the presence of a given mRNA in a tissue or an RNA sample, respectively.
+
+\- Sets of genes co-expressed by a group of cells or a single cell can be detected by RNA sequencing (RNA-seq)—sequencing the cDNAs corresponding to mRNAs from the cells. DNA microarrays are also used for this purpose.
+
+\- For a gene of unknown function, experimental inactivation of the gene (a gene knockout) and observation of the resulting phenotypic effects can provide clues to its function. The CRISPR-Cas9 system allows researchers to edit genes in living cells in a specific, desired way. The new alleles can be altered so that they are inherited in a biased way through a population (gene drive).
+
+\- In humans, genome-wide association studies identify and use single nucleotide polymorphisms (SNPs) as genetic markers for alleles that are associated with particular conditions.
+
+What useful information is obtained by detecting expression of specific genes?
+
+## Concept 20.3: Cloned organisms and stem cells are useful for basic research and other applications
+
+\- The question of whether all the cells in an organism have the same genome prompted the first attempts at organismal cloning.
+
+\- Single differentiated cells from plants are often totipotent: capable of generating all the tissues of a complete new plant.
+
+\- Transplantation of the nucleus from a differentiated animal cell into an enucleated egg can sometimes give rise to a new animal.
+
+\- Certain embryonic stem cells (ES cells) from animal embryos and particular adult stem cells from adult tissues can reproduce and differentiate both in the lab and in the organism, offering the potential for medical use. ES cells are pluripotent but difficult to acquire. Induced pluripotent stem (iPS) cells resemble ES cells in their capacity to differentiate; they can be generated by reprogramming differentiated cells. iPS cells hold promise for medical research and regenerative medicine.
+
+Describe how, using mice, a researcher could carry out (1) organismal cloning, (2) production of ES cells, and (3) generation of iPS cells, focusing on how the cells are reprogrammed. (The procedures are basically the same in humans and mice.)
+
+## Concept 20.4: The practical applications of DNA-based biotechnology affect our lives in many ways
+
+\- DNA technology, including the analysis of genetic markers such as SNPs, is increasingly being used in the diagnosis of genetic and other diseases and in personal genome analysis. Personalized medicine offers potential for an individual minimizing their known risk for a disease, as well as better treatment of genetic disorders or cancers. Gene therapy or gene editing with the CRISPR-Cas9 system may also lead to permanent cures. DNA technology is used with cell cultures in the large-scale production of protein hormones and other proteins with therapeutic uses. Cell and tissue culture are important in developing useful drugs, both those synthesized chemically and biologics, those produced by living cells. Some therapeutic proteins are being produced in transgenic “pharm” animals.
+
+\- Analysis of genetic markers such as short tandem repeats (STRs) in DNA isolated from tissue or body fluids found at crime scenes leads to a genetic profile. Use of genetic profiles can provide definitive evidence that a suspect is innocent or strong evidence of guilt. Such analysis is also useful in parenthood disputes and in identifying the remains of crime victims.
+
+\- Genetically engineered microorganisms can be used to extract minerals from the environment or degrade various types of toxic waste materials, a process called bioremediation.
+
+\- The aims of developing transgenic plants and animals are to improve agricultural productivity and food quality.
+
+\- The potential benefits of genetic engineering must be carefully weighed against the potential for harm to humans or the environment.
+
+What factors affect whether a given genetic disease would be a good candidate for successful gene therapy?
+
+For suggested answers, see Appendix A.
+
+## Test Your Understanding
+
+For more multiple-choice questions, go to the Practice Test (eTextbook only).
+
+## Levels 1-2: Remembering/Understanding
+
+1. In DNA technology, the term vector can refer to
+
+(A) the enzyme that cuts DNA into restriction fragments.
+
+(B) the sticky end of a DNA fragment.
+
+(C) a SNP marker.
+
+(D) a plasmid used to transfer DNA into a living cell.
+
+2. Which of the following tools of DNA technology is incorrectly paired with its use?
+
+(A) electrophoresis—separation of DNA fragments
+
+(B) DNA ligase—cutting DNA, creating sticky ends of restriction fragments
+
+(C) DNA polymerase—polymerase chain reaction to amplify sections of DNA
+
+(D) reverse transcriptase—production of cDNA from mRNA
+
+3. Plants are more readily manipulated by genetic engineering than are animals because
+
+(A) plant genes do not contain introns.
+
+(B) more vectors are available for transferring recombinant DNA into plant cells.
+
+(C) a somatic plant cell can often give rise to a complete plant.
+
+(D) plant cells have larger nuclei.
+
+4. A paleontologist has recovered a bit of tissue from the 400-year-old preserved skin of an extinct dodo (a bird). To compare a specific region of the DNA from a sample with DNA from living birds, which of the following would be most useful for increasing the amount of dodo DNA available for testing?
+
+(A) SNP analysis
+
+(B) polymerase chain reaction (PCR)
+
+(C) electroporation
+
+(D) gel electrophoresis
+
+## Levels 3-4: Applying/Analyzing
+
+5. Which of the following is true of cDNA produced using human brain tissue as the starting material?
+
+(A) The procedure to make it requires amplification by the polymerase chain reaction.
+
+(B) It is produced from pre-mRNA using reverse transcriptase.
+
+(C) It can be labeled and used as a probe to detect genes expressed in the brain.
+
+(D) It includes the introns of the pre-mRNA.
+
+6. Expression of a cloned eukaryotic gene in a bacterial cell involves many challenges. The use of mRNA and reverse transcriptase is part of a strategy to solve the problem of
+(A) post-transcriptional processing.
+(B) post-translational processing.
+(C) nucleic acid hybridization.
+(D) restriction fragment ligation.
+
+7. Which of the following sequences in double-stranded DNA is most likely to be recognized as a cutting site for a restriction enzyme?
+(A) AAGG (C) ACCA
+TTCC TGGT
+(B) GGCC (D) AAAA
+CCGG TTTT
+
+## Levels 5-6: Evaluating/Creating
+
+8. MAKE CONNECTIONS Imagine you want to study one of the human crystallins, proteins present in the lens of the eye (see Figure 1.8). To obtain a sufficient amount of the protein of interest, you decide to clone the gene that codes for it. Assume you know the sequence of this gene. Explain how you would go about this.
+
+9. MAKE CONNECTIONS Looking at Figure 20.15, what does it mean for a SNP to be “linked” to a disease-associated allele? How does this allow the SNP to be used as a genetic marker? (See Concept 15.3.)
+
+10. DRAW IT You are cloning an aardvark gene, using a bacterial plasmid as a vector. The green diagram shows the plasmid, which contains the restriction site for the enzyme used in
+
+![](images/a2a3127192a3e621ab92e2b48c5b74bf0efbf1cda14e707fe290ab12fda42d4c.jpg)  
+Aardvark DNA
+
+![](images/b6daeec40eca89b8f669d860881430bcfd50100962408a92674c2c628e530258.jpg)  
+Plasmid
+
+Figure 20.5. Above the plasmid is a segment of linear aardvark DNA that was synthesized using PCR. Diagram your cloning procedure, and show what would happen to these two molecules during each step. Use one color for the aardvark DNA and its bases and another color for those of the plasmid. Label each step and all 5' and 3' ends.
+
+11. EVOLUTION CONNECTION Ethical considerations aside, if DNA-based technologies became widely used, discuss how they might change the way evolution proceeds, as compared with the natural evolutionary mechanisms that have operated for the past 4 billion years.
+
+12. SCIENTIFIC INQUIRY You hope to study a gene that codes for a neurotransmitter protein produced in human brain cells. You know the amino acid sequence of the protein. Explain how you might (a) identify what genes are expressed in a specific type of brain cell, (b) identify (and isolate) the neurotransmitter gene, (c) produce multiple copies of the gene for study, and (d) produce large quantities of the neurotransmitter for evaluation as a potential medication.
+
+13. WRITE ABOUT A THEME: INFORMATION In a short essay (100–150 words), discuss how the genetic basis of life plays a central role in biotechnology.
+
+14. SYNTHESIZE YOUR KNOWLEDGE The water in the
+
+![](images/069bc1ede6086c41afbe902c88ed5a1f76fbd67c9648a1bcf49ac2e25fba644e.jpg)
+
+Yellowstone National Park hot springs shown here is around $160^{\circ}$ F ( $70^{\circ}$ C). Biologists assumed that no species of organisms could live in water above about $130^{\circ}$ F ( $55^{\circ}$ C), so they were surprised to find several species of bacteria there, now called thermophiles (“heat-lovers”). You’ve
+
+learned in this chapter how an enzyme from one species, Thermus aquaticus, made feasible one of the most important DNA-based techniques used in labs today. Identify the enzyme, and indicate the value of its being isolated from a thermophile. Suggest other reasons why enzymes from this bacterium (or other thermophiles) might also be valuable.
+
+For selected answers, see Appendix A.
+
+# Explore Scientific Papers with Science in the Classroom | AAAS
+
+How can CRISPR-Cas9 be used to create a gene drive? Go to "Can We Handle the Power of CRISPR?" at www.scienceintheclassroom.org.
+
+Instructors: Questions can be assigned in Mastering Biology.
+
+# Genomes and Their Evolution
+
+## Key Concepts
+
+21.1 The Human Genome Project fostered development of faster, less expensive sequencing techniques
+
+21.2 Scientists use bioinformatics to analyze genomes and their functions
+
+21.3 Genomes vary in size, number of genes, and gene density
+
+21.4 Multicellular eukaryotes have a lot of noncoding DNA and many multigene families
+
+21.5 Duplication, rearrangement, and mutation of DNA contribute to genome evolution
+
+21.6 Comparing genome sequences provides clues to evolution and development
+
+![](images/c421798f150dbff7a9ebd5e3d2f9f1f58a44277218f63c6507fbbd6e775d6a56.jpg)  
+Figure 21.1 The elephant shark (Callorhinchus milii) looks vaguely prehistoric and has been called a “living fossil.” In fact, it has the slowest-evolving genome of any vertebrate sequenced so far. Comparing rates of genome change in different species provides insights into the evolutionary past.
+
+## Study Tip
+
+Write genomic analysis questions: As you go through the chapter, make a table of genomic analyses that are discussed and write down some questions they can address. You can include questions not covered in the text.
+
+<table><tr><td>Genomic projects and websites</td><td>Questions that can be addressed</td></tr><tr><td>Human Genome Project</td><td>How much DNA is in the human genome?How much of the human genome codes for proteins?What functions are carried out by other regions of the genome?</td></tr><tr><td>ENCODE project</td><td></td></tr></table>
+
+What are the functions of the human genome?
+
+## What are some questions that can be explored by sequencing and comparing genomes?
+
+![](images/846569ae63bd630b75cfbbf37682cb334bca7844da306d866623ab529945f7b6.jpg)  
+How do genomes differ in number of genes?
+
+![](images/ef10ff9ff863ae160a1fc80b67ab56cbcd2fd66ae2bb6a6d12bfec23bd1b185f.jpg)  
+Escherichia coli 4,400 genes
+
+![](images/a06b7a79be40c2ca094e601627822c80d195053b5b975b7c6e776e7874703e17.jpg)  
+Homo sapiens \~20,000 genes
+
+![](images/1a9b882f220ba6eff77653d39b047d9080db4e820fd4f62d63b46344e6f6c212.jpg)  
+Zea mays (corn) 32,000 genes  
+What do gene sequences tell us about evolutionary relationships between species?  
+How do genomes evolve over time?
+
+![](images/96c263a80ecdc357dd0b0b67e656d5f13f76cc2eab1a426d3b147d3d23a2b68c.jpg)
+
+![](images/9b0d335874f47aab415be7d1076686033541d7b88c70ee9cef591713532b1482.jpg)  
+Elephant shark: slower-evolving genome  
+Tiger tail sea horse: faster-evolving genome
+
+![](images/5c297c7511fe682d39370dad53e125544c66264b114608a57dc61fa7fec366ad.jpg)
+
+# Concept 21.1: The Human Genome Project fostered development of faster, less expensive sequencing techniques
+
+Upon sequencing the genome of any species, scientists can study whole sets of genes and their interactions, an approach called genomics. The sequencing efforts that feed this approach generate enormous volumes of data. The necessity of dealing with this ever-increasing flood of information has energized the field of bioinformatics, the use of computers, software, mathematical models, and other computational tools such as artificial intelligence, to process, integrate, and analyze information from large biological data sets.
+
+The sequencing of the human genome, an ambitious undertaking, officially began as the Human Genome Project in 1990. Organized by an international, publicly funded consortium of scientists at universities and research institutes, the project involved 20 large sequencing centers in six countries plus a host of other labs working on smaller parts of the project.
+
+The human genome sequence was largely completed in 2003 and since then has been fine-tuned. Regions of the genome with much repetitive DNA are difficult to sequence, and the fully completed human genome wasn't published until 2022. The original sequenced DNA was pooled from a few individuals; scientists reviewed the results and agreed on a reference genome, a full sequence that represents the genome of a species. However, a disadvantage of a reference genome is that since it is based on DNA from one or a few individuals, it is biased toward the group those individuals belong to. A more recent approach has been to assemble a pangenome, a composite genome sequence based on sequences of multiple individuals within a species. The choice of individuals includes a wide range of genetic backgrounds, therefore revealing important regions of variation that may have medical or evolutionary significance. A draft human pangenome, based on 47 individual genomes from various populations, was published in 2023, and will be continually revised by incorporating information from more individuals.
+
+The ultimate goal in mapping any genome is to determine the complete nucleotide sequence of each chromosome. For the 3 billion base pairs in the human genome, this was accomplished by scientists using sequencing machines and the dideoxy chain termination method mentioned in Concept 20.1. Two approaches complemented each other in this endeavor. The initial approach was a methodical one that ordered each fragment based on earlier genetic mapping of the human genome. In 1998, however, molecular biologist J. Craig Venter led an effort to sequence the entire human genome using an alternative strategy. The whole-genome shotgun approach starts with the cloning and sequencing of DNA fragments from randomly cut DNA. Powerful computer programs then assemble the resulting very large number of overlapping short sequences into a single continuous sequence (Figure 21.2). The whole-genome shotgun approach, in combination with newer sequencing methods, is still widely used today.
+
+A major success of the Human Genome Project was the development of sequencing machines with automated technology for faster sequencing (see Concept 20.1). While a productive lab could typically sequence 1,000 base pairs a day in the 1980s, by four decades later, widely used “next-generation” sequencing machines could sequence nearly 35 million base pairs per second (see Figure 20.3).
+
+In one approach, many very small DNA fragments (each about 300 base pairs long) are sequenced at the same time, and computer software rapidly assembles the complete sequence. Because of the sensitivity of these techniques, the DNA can be sequenced directly, either in fragments or as a single whole molecule; the cloning (2 in Figure 21.2) is unnecessary.
+
+In another approach, called long-read sequencing, new techniques enable sequencing of a single long DNA strand, of tens of thousands to over 100,000 bases, at one time. Sequencing machines using rapid sequencing techniques are an example of "high-throughput" devices because they can analyze biological materials very rapidly and produce enormous volumes of data.
+
+Along with massive increases in sequencing speed, the cost of sequencing entire genomes has plummeted. Whereas sequencing the first human genome took 13 years and cost between \$500 million and \$1 billion, the cost has decreased
+
+Figure 21.2 Whole-genome shotgun approach to sequencing. In this approach, random DNA fragments are cloned (see Figure 20.4), sequenced, and then ordered relative to each other.  
+![](images/9a7a8d1078e697bd641519f5777e2464f814cbb5ffff28bc72a3374e61b04639.jpg)  
+VISUAL SKILLS The fragments in step 2 of this figure are depicted as scattered, rather than arranged in an ordered array. How does this depiction reflect the approach? For suggested answer, see Appendix A.
+
+dramatically while the speed has increased: In 2024, the fastest machines could sequence a single human genome in less than 48 hours for about \$600.
+
+These technological advances have also facilitated an approach called metagenomics (from the Greek meta, beyond), in which DNA from an entire community of species (a metagenome) is collected from an environmental sample and sequenced. Again, computer software sorts out the partial sequences and assembles them into the individual species' partial of complete genomes. An advantage of this technique is the ability to sequence the DNA of mixed microbial populations, which eliminates the need to culture each species separately in the lab, a challenge that has limited the study of microorganisms. So far, this approach has been applied to communities found in environments as diverse as the human intestine and extreme habitats like thermal springs where the temperature exceeds $80^{\circ}$ C.
+
+Advances in sequencing techniques have significantly transformed medicine. In oncology, next-generation sequencing allows physicians to detect tumor-specific mutations, which can guide targeted treatments. In reproductive medicine, noninvasive prenatal testing utilizes sequencing to identify chromosomal abnormalities in fetal DNA, which can lead to early diagnosis and informed decision-making. Although these advances have made genetic testing a powerful tool in healthcare, it does raise some ethical considerations. One large concern centers around privacy, because storing personal genetic data creates risks of unauthorized access, misuse, and discrimination.
+
+At first glance, genome sequences of humans and other organisms are simply dry lists of nucleotide bases—millions of A's, T's, C's, and G's in mind-numbing succession. Making sense of this massive amount of data has called for new analytical approaches, which we discuss next.
+
+## Concept Check 21.1
+
+1. Describe the whole-genome shotgun approach.
+For suggested answers, see Appendix A.
+
+## Concept 21.2: Scientists use bioinformatics to analyze genomes and their functions
+
+Each of the 20 or so sequencing centers around the world working on the Human Genome Project churned out voluminous amounts of DNA sequence day after day. As the data began to accumulate, the need to coordinate efforts to keep track of all the sequences became clear. Thanks to the foresight of research scientists and government officials involved in the Human Genome Project, its goals included using bioinformatics: establishing centralized databases and refining analytical software, all made readily accessible on the Internet.
+
+## Centralized Resources for Analyzing Genome Sequences
+
+Making bioinformatics resources available to researchers worldwide and speeding up the dissemination of information served to accelerate progress in DNA sequence analysis. The National Library of Medicine (NLM) and the National Institutes of Health (NIH) maintain the National Center for Biotechnology Information (NCBI), which today maintains a website (www.ncbi.nlm.nih.gov), which has extensive bioinformatics resources. On this site are links to databases, software, and a wealth of information about genomics and related topics. Similar websites have also been established by three genome centers with which the NCBI collaborates: the European Molecular Biology Laboratory, the DNA Data Bank of Japan, and BGI (formerly known as the Beijing Genomics Institute) in Shenzhen, China. These large, comprehensive websites are complemented by others maintained by individual or small groups of laboratories. Smaller websites often provide databases and software designed for a narrower purpose, such as studying genetic and genomic changes in one particular type of cancer.
+
+The NCBI database of sequences is called GenBank. As of early 2025, it included the sequences of 256 million fragments of genomic DNA, totaling 5.4 trillion base pairs! GenBank is constantly updated, and the amount of data it contains increases rapidly. Any sequence in the database can be retrieved and analyzed using software from the NCBI website or elsewhere.
+
+One very widely used software program available on the NCBI website, called BLAST (Basic Local Alignment Search Tool), allows the user to compare a DNA sequence with every sequence in GenBank, base by base. A researcher might search for similar regions in other genes of the same species or among the genes of other species. Another program allows comparison of protein sequences. A third program can search any protein sequence for conserved (common) stretches of amino acids (domains) for which a function is known or suspected, and it can show a three-dimensional model of the domain alongside other relevant information (Figure 21.3). There are even various software programs that can align and compare a collection of sequences, either nucleic acids or polypeptides, and diagram them in the form of an evolutionary tree based on the sequence relationships. (One such diagram is shown in Figure 21.17.)
+
+Three research institutions, Rutgers University, the University of California, San Diego, and the University of California, Berkeley, also operate the U.S. data center for a worldwide database of all three-dimensional protein structures that have been experimentally determined, called the Protein Data Bank (www.wwpdb.org). These structures can be rotated by the viewer to show all sides of the protein. Throughout this book, you'll find images of protein structures that have been obtained from the Protein Data Bank.
+
+There is a vast array of resources available for researchers anywhere in the world to use free of charge. Let us now consider the types of questions scientists can address using these resources.
+
+Instructors: BLAST Data Analysis Tutorials, which teach students how to work with real data from the BLAST database, can be assigned in Mastering Biology.
+
+Some results are shown from a search for regions of proteins similar to an amino acid sequence in a muskmelon protein.
+
+Figure 21.3 National Center for Biotechnology Information (NCBI) website.
+
+In this window, a partial amino acid sequence from an unknown muskmelon protein ("Query") is aligned with sequences from other proteins that the program found to be similar. Each sequence represents a domain called WD40.
+
+2 Four hallmarks of the WD40 domain are highlighted in yellow columns. (Sequence similarity is based on chemical aspects of the amino acids, so the amino acids in each hallmark region are not always identical.)
+
+6 This window displays information about the WD40 domain from the Conserved Domain Database (CDD), which can find and describe similar domains in related proteins.
+
+![](images/52077adbf79bc36f30306f700e53a65ee519f4ff3e82907e73b1c66fa893b5d7.jpg)
+
+3 The Cn3D ("See in 3D") program displays 3D models of domains, such as this ribbon model of cow transducin (the protein highlighted across the top in purple in the Sequence Alignment Viewer). This protein is the only one of those shown for which a structure has been determined. The sequence similarity of the other proteins to cow transducin suggests that their structures are likely to be similar.
+
+4 Cow transducin contains seven WD40 domains, one of which is highlighted here in gray.
+
+5 The yellow segments correspond to the WD40 hallmarks highlighted in yellow columns in the window above.
+
+## Identifying Protein-Coding Genes and Understanding Their Functions
+
+Using available DNA sequences, geneticists can study genes directly, rather than taking the classical genetic approach, which requires determining the function of an unknown gene from the phenotype. But this more recent approach poses a new challenge: What does the gene actually do? Given a long DNA sequence from a database like GenBank, scientists aim to identify all protein-coding genes in the sequence and ultimately their functions. This process, called gene annotation, uses three lines of evidence to identify a gene.
+
+First, computers are utilized in a search for patterns that indicate the presence of genes. The usual approach is to use software to scan the stored sequences for those that represent transcriptional and translational start and stop signals, RNA-splicing sites, and other telltale signs of protein-coding genes, such as promoter sequences. The software also looks for certain short sequences that specify known mRNAs. Thousands of such sequences, called expressed sequence tags, or ESTs, have been collected from cDNA sequences and are cataloged in computer databases. This type of analysis identifies sequences that may turn out to be previously unknown protein-coding genes.
+
+Although the identities of about half of the human genes were known before the Human Genome Project began, the other genes, previously unknown, were revealed by DNA sequence analysis. Once such suspected genes are identified, the second step is to obtain clues about their identities and functions. Software is used to compare their sequences with those of known genes from other organisms. Due to redundancy in the genetic code, the DNA sequence itself may vary more among species than the protein sequence does. Thus, scientists interested in proteins often compare the predicted amino acid sequence of a protein to that of other proteins. The final step is to confirm the identities of these genes using RNA-seq (see Figure 20.12) or some other method to show that the relevant RNA is actually expressed from the proposed gene.
+
+Sometimes a newly identified sequence will match, at least partially, the sequence of a gene or protein in another species whose function is well known. For example, a plant researcher working on signaling pathways in the muskmelon would be excited to see that a partial amino acid sequence from a gene she had identified matched sequences in other species encoding a functional part of a protein called a WD40 domain (see Figure 21.3). WD40 domains are present in many eukaryotic proteins and are known to function in signal transduction pathways. Alternatively, a new gene sequence might be similar to a previously encountered sequence whose function is still unknown. Another possibility is that the sequence is entirely unlike anything ever seen before. This was true for about a third of the genes of
+
+Escherichia coli when its genome was sequenced. In such cases, protein function is usually deduced through a combination of biochemical and functional studies. The biochemical approach aims to determine the three-dimensional structure of the protein as well as other attributes, such as potential binding sites for other molecules. Functional studies usually involve knocking out (blocking or disabling) the gene in an organism to see how the phenotype is affected. The CRISPR-Cas9 system, described in Figure 17.28, is an example of an experimental technique used to block gene function.
+
+## Understanding Genes and Gene Expression at the Systems Level
+
+The impressive computational power provided by the tools of bioinformatics allows the study of whole sets of genes and their interactions, as well as the comparison of genomes from different species. Genomics is a rich source of new insights into fundamental questions about genome organization, regulation of gene expression, embryonic development, and evolution.
+
+One informative approach was taken by a long-term research project called ENCODE (Encyclopedia of DNA Elements), which began in 2003. The aim of the project was to learn everything possible about the functionally important elements in the human genome, at first using multiple experimental techniques on different types of cultured cells. Investigators sought to identify protein-coding genes and genes for noncoding RNAs, along with sequences that regulate gene expression, such as enhancers and promoters. In addition, they extensively characterized DNA and histone modifications and chromatin structure—features termed “epigenetic” since they affect gene expression without changing the sequence of nucleotide bases (see Concept 18.3). The second phase of the project, involving more than 440 scientists in 32 research groups, culminated in 2012 with the simultaneous publication of 30 papers describing over 1,600 large data sets. The project wound down after completing its fourth phase, expanding its analysis of the human genome and that of the mouse (a mammalian model organism), seeking to identify regulatory and other important sequences. The considerable power of ENCODE was that it provided the opportunity to compare results from specific projects with each other, yielding a much richer picture of the human and mouse genomes.
+
+Perhaps the most striking finding was that about 75% of the human genome is transcribed at some point in at least one of the cell types studied, even though less than 2% codes for proteins. Furthermore, biochemical functions have been assigned to DNA elements making up at least 80% of the genome. To learn more about the different types of functional elements, parallel projects analyzed in a similar way the genomes of two model organisms, the soil nematode Caenorhabditis elegans and the fruit fly Drosophila melanogaster. Because genetic and biochemical experiments using DNA technology can be performed on these species, testing the activities of potentially functional DNA elements in their genomes is expected to illuminate the workings of the human genome.
+
+To build on the legacy of the ENCODE project, a new federally funded research initiative called the Impact of Genomic Variation on Function (IGVF) was launched in 2021. This project aims to understand how the many genomic variations found among humans affect genetic functions. The 120 participating laboratories are taking advantage of new technologies to analyze gene expression in single cells, as well as using new statistical and computational methods.
+
+Yet another initiative, the Roadmap Epigenomics Project, set out to characterize the epigenome—the epigenetic features of the genome of hundreds of human cell types and tissues. The aim was to focus on the epigenomes of stem cells, normal tissues from mature adults, and relevant tissues from individuals with diseases such as cancer and neurodegenerative and autoimmune disorders. In a series of papers reporting on the results from 111 tissues, one of the most useful findings was that the original tissue in which a cancer arose can be identified in cells of a secondary tumor based on characterization of their epigenomes.
+
+## Systems Biology
+
+The scientific progress resulting from sequencing genomes and studying large sets of genes has encouraged scientists to attempt similar systematic studies of sets of proteins and their properties (such as their abundance, chemical modifications, and interactions), an approach called proteomics. (A proteome is the entire set of proteins expressed by a cell or group of cells.) Proteins, not the genes that encode them, carry out most of the activities of the cell. Therefore, if we are to understand the functioning of cells and organisms, we must study when and where proteins are produced in an organism, as well as how they interact in networks.
+
+Genomics and proteomics enable molecular biologists to approach the study of life from an increasingly integrated perspective. Using the tools we have described, biologists have begun to compile catalogs of genes and proteins, listing all the “parts” that contribute to the operation of cells, tissues, and organisms. With such catalogs in hand, researchers have shifted their attention from the individual parts—genes and proteins—to their functional integration in biological systems. As you may recall, Concept 1.1 discussed this approach, called systems biology, which aims to model the dynamic behavior of whole biological systems based on the study of the interactions among the system’s parts. Because of the vast amounts of data generated in these types of studies, advances in computer technology and bioinformatics are crucial to studying systems biology.
+
+One important use of the systems biology approach is to define gene and protein interaction networks. To map the protein interaction network in the yeast Saccharomyces cerevisiae, for instance, researchers used sophisticated techniques to knock out pairs of genes, one pair at a time, creating doubly mutant cells. They then compared the fitness of each double mutant (based in part on the size of the cell colony it formed) to that predicted from the fitness of each of the two single mutants. The researchers reasoned that if the observed fitness matched the prediction, then the products of the two genes didn't interact with each other, but if the observed fitness was greater or less than predicted, then the gene products interacted in the cell. They then used computer software to build a graphic model by “mapping” the gene products to certain locations in the model, based on the similarity of their interactions. This resulted in the network-like “functional map” of protein interactions shown in Figure 21.4. Processing the vast number of
+
+Figure 21.4 The systems biology approach to protein interactions.
+
+This global protein interaction map shows the likely interactions (lines) among about 4,500 gene products (dots) in Saccharomyces cerevisiae, the budding yeast. Dots of the same color represent gene products involved in one of the 13 similarly colored cellular functions listed around the map. The white dots represent proteins that haven't been assigned to any color-coded function. The expanded area shows additional details of one map region where the gene products (dark blue dots) carry out amino acid biosynthesis, uptake, and related functions.
+
+![](images/3ea3315cae6e7979c248eddbbcb636cf51f052d766cfa416f60c8d79efa12975.jpg)
+
+protein-protein interactions generated by this experiment and integrating them into the completed map required powerful computers, mathematical tools, and newly developed software.
+
+## Application of Systems Biology to Medicine
+
+The Cancer Genome Atlas began in 2007 and culminated in 2018 with publications called the Pan-Cancer Atlas. This project is another example of systems biology in which many interacting genes and gene products are analyzed together as a group. Under the joint leadership of the National Cancer Institute and the NIH, the project aimed to determine how changes in biological systems lead to cancer. A pilot project set out to find all the common mutations in three types of cancer—lung cancer, ovarian cancer, and glioblastoma of the brain—by comparing gene sequences and patterns of gene expression in cancer cells with those in normal cells. Work on glioblastoma confirmed the role of several suspected genes and identified a few previously unknown ones, suggesting possible new targets for therapies.
+
+As high-throughput techniques become more rapid and less expensive, they are increasingly being applied to the problem of cancer. The approach described previously proved so fruitful for those three types of cancer that it was extended to ten other types, chosen because they are common and often lethal in humans, as well as to metastatic tumors (see Figure 12.20), those that have dispersed from primary tumors and invaded organs far away in the body. Ninety percent of cancer deaths are primarily caused by metastasis. Results from the study of metastatic tumors, published in 2017,
+
+highlighted several key genes whose mutations were frequently found in metastases and could be targets for chemotherapy. Overall, the Pan-Cancer Atlas contributed significantly to understanding how, where, and why tumors arise, underscoring the value of an integrative systems biology approach to treating cancer.
+
+In addition to whole-genome sequencing, RNA-seq (see Figure 20.12) is used to analyze gene expression patterns in patients who have various cancers and other diseases. Analyzing which genes are overexpressed or underexpressed in a particular cancer allows physicians to tailor patients' treatment to their unique genetic makeup and the specifics of their cancers. This approach has been used to characterize subsets of particular cancers, enabling more refined treatments. Breast cancer is one example (see Figure 18.27).
+
+Eventually, medical records may include an individual's DNA sequence, a sort of genetic bar code, with regions highlighted that predispose the person to specific diseases. The use of such sequences for personalized medicine—disease prevention and treatment—has great potential.
+
+## Artificial Intelligence and Machine Learning Applied to Bioinformatics
+
+The term artificial intelligence (AI) describes the development and use of computer systems that can function like neural networks in the human brain to perform various tasks, such as decision-making, pattern recognition, and learning from existing data. AI is becoming an essential tool in bioinformatics,
+
+transforming how researchers analyze biological data, identify patterns, and develop new medical treatments. By automating complex tasks, AI accelerates discoveries and enhances precision in various fields of life sciences. Machine learning, a subset of AI, allows computers to learn from data, improving their ability to make predictions and recognize biological trends that would be difficult to detect using traditional methods.
+
+AI is widely used in a variety of biological applications. In genomics and sequencing, AI can analyze massive genetic datasets to identify specific genes and predict mutations that may be linked to diseases. Machine learning models help detect patterns in DNA sequences, allowing researchers to better understand genetic variations and their potential health implications. In drug discovery applications, AI is revolutionizing the process of identifying new drugs by simulating molecular interactions and predicting how different compounds will interact with biological targets. Virtual drug screening powered by AI accelerates the search for promising therapeutic compounds. Biological imaging serves as another example, in which AI-driven image analysis enhances diagnostic accuracy in medical imaging. By analyzing microscopic and other images, AI can detect cancer cells, classify tissue samples, and identify other abnormalities with high precision—for example, the broken bone in Figure 21.5. As AI continues to develop, its integration into bioinformatics will expand, driving innovation in medical research, diagnostics, and personalized medicine.
+
+Figure 21.5 Example of the use of artificial intelligence (AI) in medical diagnosis.
+
+The AI model overlays the radiograph with a "heatmap" in which the colors indicate probability of a fracture. The area highlighted red in the center of the heatmap is where AI predicts a fracture has occurred. A doctor could then check that area very carefully; this would reduce the chance a fracture might be overlooked.
+
+![](images/689ba0491557fc4d456f4604d1d7e4003c63cdb0d763b3793ac3ef096acdf212.jpg)  
+(a) Radiograph of the fibula
+
+![](images/a3db44113d1bf34f39342edc0f622f7bcb36c223333afbfeb73c0e104d6ed06a.jpg)  
+(b) Radiograph with AI-generated heatmap overlaid
+
+## Concept Check 21.2
+
+1. What role does the Internet play in current genomics and proteomics research?
+
+2. Explain the advantage of the systems biology approach to studying cancer versus the approach of studying a single gene at a time.
+
+3. MAKE CONNECTIONS The ENCODE pilot project found that at least 75% of the genome is transcribed into RNAs, far more than could be accounted for by protein-coding genes. Review Concepts 17.3 and 18.3 and suggest some roles that these RNAs might play.
+
+4. MAKE CONNECTIONS In Concept 20.2, you learned about genome-wide association studies. Explain how these studies use the systems biology approach.
+
+For suggested answers, see Appendix A.
+
+## Concept 21.3: Genomes vary in size, number of genes, and gene density
+
+The sequences of thousands of genomes have been completed, with tens of thousands of genomes either in progress or considered permanent drafts (because they require more work than it would be worth to complete them). As of early 2025, among the sequences in progress are roughly 27,500 metagenomes, with about 145,000 completed as permanent drafts. In the completely sequenced group, about 215,000 are genomes of bacteria, and 1,900 are archaeal genomes. There are roughly 2,000 completed eukaryotic species, along with 13,170 permanent drafts. Among these are vertebrates, invertebrates, protists, fungi, and plants. Next, we'll discuss what we've learned about genome size, number of genes, and gene density, focusing on general trends.
+
+## Genome Size
+
+Comparing prokaryotic bacterial and archaeal species and eukaryotic species, we find a general difference in genome size between prokaryotic and eukaryotic organisms (Table 21.1). While there are some exceptions, most prokaryotic genomes sequenced to date have between 1 and 6 million base pairs (Mb); for example, the genome of E. coli has 4.6 Mb. Eukaryotic genomes tend to be larger: The genome of the single-celled yeast Saccharomyces cerevisiae (a fungus) has about 12 Mb, while most animals and plants, which are multicellular, have genomes of at least 100 Mb. There are 165 Mb in the fruit fly genome, while humans have 3,000 Mb, about 500 to 3,000 times as many as a typical bacterium.
+
+Aside from this general difference between prokaryotic and eukaryotic organisms, a comparison of genome sizes among eukaryotes fails to reveal any systematic relationship between genome size and the organism's phenotype. For instance, the range among plants is enormous: The genome of
+
+Table 21.1 Genome Sizes and Estimated Numbers of Genes\*
+
+<table><tr><td>Organism</td><td>Haploid Genome Size (Mb)</td><td>Number of Genes</td><td>Genes per Mb</td></tr><tr><td colspan="4">Bacteria</td></tr><tr><td>Haemophilus influenzae</td><td>1.8</td><td>1,700</td><td>940</td></tr><tr><td>Escherichia coli</td><td>4.6</td><td>4,400</td><td>950</td></tr><tr><td colspan="4">Archaea**</td></tr><tr><td>Archaeoglobus fulgidus</td><td>2.2</td><td>2,500</td><td>1,130</td></tr><tr><td>Methanosarcina barkeri</td><td>4.8</td><td>3,600</td><td>750</td></tr><tr><td colspan="4">Eukarya</td></tr><tr><td>Saccharomyces cerevisiae (yeast, a fungus)</td><td>12</td><td>6,300</td><td>525</td></tr><tr><td>Utricularia gibba (floating bladderwort)</td><td>82</td><td>28,500</td><td>348</td></tr><tr><td>Caenorhabditis elegans (nematode)</td><td>100</td><td>20,100</td><td>200</td></tr><tr><td>Arabidopsis thaliana (mustard family plant)</td><td>120</td><td>27,000</td><td>225</td></tr><tr><td>Drosophila melanogaster (fruit fly)</td><td>165</td><td>14,000</td><td>85</td></tr><tr><td>Daphnia pulex (water flea)</td><td>200</td><td>31,000</td><td>155</td></tr><tr><td>Zea mays (corn)</td><td>2,300</td><td>32,000</td><td>14</td></tr><tr><td>Ailuropoda melanoleuca (giant panda)</td><td>2,400</td><td>21,000</td><td>9</td></tr><tr><td>Homo sapiens (human)</td><td>3,000</td><td>~20,000</td><td>7</td></tr><tr><td>Tmesipteris oblanceolata (a New Caledonian fork fern)</td><td>160,450</td><td>ND</td><td>ND</td></tr></table>
+
+\*Some values given here are likely to be revised as genome analysis continues. Mb = million base pairs; the haploid number is used because it represents a complete set of genetic information. ND = not determined.
+\*\*As discussed in Concept 1.2, the term Archaea here refers to prokaryotic species.
+
+Tmesipteris oblanceolata, a New Caledonian fork fern, contains about 160.5 billion base pairs (160,450 Mb), while that of another plant, Utricularia gibba, a bladderwort, contains only 82 Mb. Even more striking, there is a single-celled amoeba, Polychaos dubium, whose genome size has been estimated at 670 billion base pairs (670,000 Mb). (This genome has not yet been sequenced.) On a finer scale, comparing two insect species, the cricket (Anabrus simplex) genome turns out to have 11 times as many base pairs as the fruit fly (Drosophila melanogaster) genome. There is a wide range of genome sizes within the groups of insects, amphibians, and plants and less of a range within mammals and reptiles.
+
+## Number of Genes
+
+Prokaryotic organisms, in general, have fewer genes than eukaryotes. Free-living prokaryotic species studied have from 1,500 to 7,500 genes, while the number of genes in eukaryotes ranges from about 5,000 for unicellular fungi (yeasts) to at least 40,000 for some multicellular eukaryotes.
+
+Within the eukaryotes, the number of genes in a species is often lower than expected from considering simply the size of its genome. As shown in Table 21.1, the genome of the nematode C. elegans is 100 Mb in size and contains roughly 20,100 genes. In comparison, the genome of Drosophila melanogaster is much bigger (165 Mb) but has only about two-thirds the number of genes—14,000 genes.
+
+Considering an example closer to home, we noted that the human genome contains 3,000 Mb, well over ten times the size of either the D. melanogaster or C. elegans genome. At the outset of the Human Genome Project, biologists expected somewhere between 50,000 and 100,000 genes to be identified in the completed sequence, based on the number of known human proteins. As the project progressed, the estimate was revised downward several times. There is still debate about the number, but it is much lower, probably around 20,000. This estimate, similar to the number of genes in the nematode C. elegans, surprised biologists, who had been expecting many more human genes.
+
+What genetic attributes allow humans (and other vertebrates) to get by with no more genes than nematodes? An important factor is that vertebrate genomes “get more bang for the buck” from their coding sequences because of extensive alternative splicing of RNA transcripts. Recall that this process generates more than one polypeptide from a single gene (see Figure 18.14). A typical human gene contains about ten exons, and an estimated 90% or more of these multi-exon genes are spliced in at least two different ways. Some genes are expressed in hundreds of alternatively spliced forms, others in just two. Scientists have not yet catalogued all of the different forms, but it is clear that the number of different proteins encoded in the human genome far exceeds the proposed number of genes.
+
+Additional polypeptide diversity could result from post-translational modifications such as cleavage or the addition of carbohydrate groups in different cell types or at different developmental stages. Finally, the discovery of miRNAs and other RNAs that play regulatory roles has added a new variable to the mix (see Concept 18.3). Some scientists think that this added level of regulation of some genes, when present, may contribute to greater organismal complexity.
+
+## Gene Density and Noncoding DNA
+
+We can take both genome size and number of genes into account by comparing gene density in different species. In other words, we can ask how many genes are in a given length of DNA. When we compare the genomes of prokaryotic and eukaryotic organisms, we see that eukaryotes generally have larger genomes but fewer genes in a given number of base pairs. For example, humans have hundreds or thousands of times as many base pairs in their genome as most bacteria, as we already noted, but only 5 to 15 times as many genes; thus, gene density is lower in humans (see Table 21.1). Even unicellular eukaryotes, such as yeasts, have fewer genes per million base pairs than bacteria. Among the genomes that have been sequenced completely, humans and other mammals have the lowest gene density.
+
+In all bacterial genomes studied so far, most of the DNA consists of genes for protein, tRNA, or rRNA; the small amount remaining consists mainly of nontranscribed regulatory sequences, such as promoters. The sequence of nucleotides along a bacterial protein-coding gene is not interrupted by noncoding sequences (introns). In eukaryotic genomes, by contrast, most of the DNA neither encodes protein nor is transcribed into RNA molecules of known function, and the DNA includes more complex regulatory sequences. In fact, humans have 10,000 times as much noncoding DNA as bacteria. Some of this DNA in multicellular eukaryotes is present as introns within genes. Indeed, introns account for most of the difference in average length between human genes (27,000 base pairs) and bacterial genes (1,000 base pairs).
+
+In addition to introns, multicellular eukaryotes have a vast amount of non-protein-coding DNA between genes. In the next section, we will describe the composition and arrangement of these great stretches of DNA in the human genome.
+
+## Concept Check 21.3
+
+1. The current best estimate is that the human genome contains around 20,000 genes. However, there is evidence that human cells produce many more than 20,000 different polypeptides. What processes might account for this discrepancy?
+
+2. The Genomes Online Database (GOLD) website of the Joint Genome Institute has information about genome sequencing projects. Scroll through the page at gold.jgi.doe.gov/statistics and describe the information you find. What percent of bacterial genome projects have medical relevance?
+
+3. WHAT IF? What evolutionary processes might account for prokaryotic organisms having smaller genomes than eukaryotes?
+
+For suggested answers, see Appendix A.
+
+## Concept 21.4: Multicellular eukaryotes have a lot of noncoding DNA and many multigene families
+
+We have spent most of our time focusing on genes that code for proteins. Yet the coding regions of these genes and the genes for small RNAs like tRNAs make up a small portion of most multicellular eukaryotic genomes. For example, only a tiny part—about 1.5%—codes for proteins or is transcribed into rRNAs or tRNAs.
+
+Figure 21.6 shows what is known about the makeup of the remaining 98.5% of the genome.
+
+Gene-related regulatory sequences and introns account, respectively, for 5% and about 20% of the human genome. The rest, located between functional genes, includes some unique (single-copy) noncoding DNA, such as gene fragments and pseudogenes, former genes that have accumulated mutations over a long time and no longer produce functional proteins. (The genes that produce small noncoding RNAs are a tiny percentage of the genome, distributed between the 20% introns and the 15% unique noncoding DNA.) Most of the DNA
+
+Figure 21.6 Types of DNA sequences in the human genome. The gene sequences that code for proteins or are transcribed into rRNA or tRNA molecules make up only about 1.5% of the human genome (dark purple in the pie chart), while introns and regulatory sequences associated with genes (lighter purple) make up about a quarter. The vast majority of the human genome does not code for proteins (although much of it gives rise to RNAs), and a large amount is repetitive DNA (dark and light green and teal).
+
+![](images/92fdc0a7edd3c13b937de3683fe51a676c64c8da96f609903d0aef56475395bc.jpg)
+
+between functional genes, however, is repetitive DNA, which consists of sequences that are present in multiple copies in the genome.
+
+The bulk of many eukaryotic genomes consists of DNA sequences that neither code for proteins nor are transcribed to produce RNAs with known functions; this noncoding DNA was often described in the past as “junk DNA.” However, we now know from the ENCODE project described earlier that 80% of the genome appears to have some biochemical function, and genome comparisons over the past 10 years have revealed the persistence of this DNA in diverse genomes over many hundreds of generations. For example, the genomes of humans, rats, and mice contain almost 500 regions of noncoding DNA that are identical in sequence in all three species. This is a higher level of sequence conservation than is seen for protein-coding regions in these species, strongly supporting the hypothesis that the noncoding regions have important functions. Next, we’ll examine how genes and noncoding DNA sequences are organized within genomes of multicellular eukaryotes, using the human genome as our main example. Genome organization tells us a lot about how genomes have evolved and continue to evolve, as we’ll see in Concept 21.5.
+
+## Transposable Elements and Related Sequences
+
+Both prokaryotic and eukaryotic organisms have stretches of DNA that can move from one location to another within the genome. These stretches are known as transposable genetic elements, or simply transposable elements. During the process called transposition, a transposable element moves from one site in a cell's DNA to a different target site by a type of recombination process. Transposable elements are sometimes called "jumping genes," but actually they never entirely detach from the cell's DNA. Instead, the original and new DNA sites are brought very close together by enzymes and other proteins that bend the DNA. Surprisingly, about 75% of human repetitive DNA (44% of the entire human genome) is made up of transposable elements and sequences related to them.
+
+The first evidence for wandering DNA segments came from American geneticist Barbara McClintock's breeding experiments with calico corn (maize) in the 1940s and 1950s (Figure 21.7). Tracking corn plants through many generations, McClintock analyzed changes in the color of corn kernels. The patterns she saw led her to propose that there were genetic elements capable of moving from other locations in the genome into the genes for kernel color, disrupting the genes and changing the kernel color. McClintock's hypothesis provoked great interest among her maize colleagues, but most other scientists thought the phenomenon she had observed might occur only in maize. Her careful work and insightful ideas were finally validated many years later when transposable elements were found in bacteria. In 1983, at the age of 81, McClintock received the Nobel Prize for her pioneering research.
+
+## Movement of Transposons and Retrotransposons
+
+Eukaryotic transposable elements are of two types. The first type, transposons, move within a genome by means of a DNA intermediate. Transposons can move by a “cut-and-paste” mechanism, which removes the element from the original site, or by a “copy-and-paste” mechanism, which leaves a copy behind (Figure 21.8). Both mechanisms require an enzyme called transposase, which is generally encoded by the transposon.
+
+![](images/ea0da5cb9a7412edcf7a9d4b4d462bbe715d72e38fc229e1f6a10db7b09efe7c.jpg)
+
+![](images/c9e0cb900ef7ea3c166fb5b8ec87bfe90b557fdf0f2f7a093be854d95f63e00d.jpg)  
+Figure 21.7 The effect of transposable elements on corn kernel color.
+
+Barbara McClintock first proposed the idea of mobile genetic elements after observing variegations in the color of the kernels on a corn cob (top right).
+
+Figure 21.8 Transposon movement.  
+Movement of transposons by either the copy-and-paste mechanism (shown here) or the cut-and-paste mechanism involves a double-stranded DNA intermediate that is inserted into the genome.  
+![](images/473726ecc81e47b536d8620e34ae6b08a4a02ca82fb217b633d0a7dd47c25102.jpg)  
+VISUAL SKILLS How would this figure differ if it showed the cut-and-paste mechanism?  
+For suggested answer, see Appendix A.
+
+## Interview
+
+Interview with Virginia Walbot: Plant genetics and development (eTextbook only)
+
+![](images/9b4c6f49406318620660eaad78cda5675bfae5a4bc86605a159b130d28335c98.jpg)
+
+Most transposable elements in eukaryotic genomes are of the second type, retrotransposons, which move by means of an RNA intermediate that is a transcript of the retrotransposon DNA. Thus, retrotransposons always leave a copy at the original site during transposition (Figure 21.9). To insert at another site, the RNA intermediate is first converted back to DNA by reverse transcriptase, an enzyme encoded by the retrotransposon. (Reverse transcriptase is also encoded by retroviruses, as you learned in Concept 19.2. In fact, retroviruses may have evolved from retrotransposons, or vice versa.) Another cellular enzyme catalyzes insertion of the reverse-transcribed DNA at a new site.
+
+Figure 21.9 Retrotransposon movement.  
+Movement begins with synthesis of a single-stranded RNA intermediate. The remaining steps are essentially identical to part of the retrovirus replicative cycle (see Figure 19.8).  
+![](images/25c37c041d5976c540596ec0cc1ca35f3bc476b40f17ca8e8953c22ff7508a54.jpg)
+
+## Sequences Related to Transposable Elements
+
+Multiple copies of transposable elements and sequences related to them are scattered throughout eukaryotic genomes. A single unit is usually hundreds to thousands of base pairs long, and the dispersed copies are similar but usually not identical to each other. Some of these are transposable elements that can move; the enzymes required for this movement may be encoded by any transposable element, including the one that is moving. Others are related sequences that have lost the ability to move altogether. Transposable elements and related sequences make up 25–50% of most mammalian genomes (see Figure 21.6) and even higher percentages in amphibians and many plants. In fact, the very large size of some plant genomes is accounted for by extra transposable elements rather than by extra genes. For example, transposable elements make up 85% of the corn genome!
+
+In humans and other primates, a large portion of transposable element–related DNA consists of a family of similar sequences called Alu elements. These sequences alone account for approximately 10% of the human genome. Alu elements are about 300 nucleotides long, much shorter than most functional transposable elements, and they do not code for any protein. However, many Alu elements are transcribed into RNA, and at least some of these RNAs are thought to help regulate gene expression.
+
+An even larger percentage (17%) of the human genome is made up of a type of retrotransposon called LINE-1, or L1. These sequences are much longer than Alu elements—about 6,500 base pairs—and typically have a very low rate of transposition. However, researchers working with mice have discovered that transcription of L1 retrotransposons is crucial for the development of early (one- and two-cell stage) embryos. They have proposed that transcription of L1 retrotransposons may affect the chromatin structure in ways important for embryonic development.
+
+Although some transposable elements encode proteins, these proteins do not carry out normal cellular functions. Therefore, transposable elements are usually included in the “noncoding” DNA category, along with other repetitive sequences.
+
+## Other Repetitive DNA, Including Simple Sequence DNA
+
+Repetitive DNA that is not related to transposable elements has probably arisen from mistakes during DNA replication or recombination. Such DNA accounts for about 14% of the human genome (see Figure 21.6). About a third of this (5–6% of the human genome) consists of duplications of long stretches of DNA, with each unit ranging from 10,000 to 300,000 base pairs. These long segments seem to have been copied from one chromosomal location to another site on the same or a different chromosome and probably include some functional genes.
+
+In contrast to scattered copies of long sequences, stretches of DNA known as simple sequence DNA contain many copies of tandemly repeated short sequences, as in the following example (showing one DNA strand only):
+
+## ... GTTACGTTACGTTACGTTACGTTACGTTAC ...
+
+In this case, the repeated unit (GTTAC) consists of 5 nucleotides, but the number can range from 2 to 500. When the unit contains
+
+2–5 nucleotides, the series of repeats is called a short tandem repeat, or STR; we discussed the use of STR analysis in preparing genetic profiles by use of PCR in Concept 20.4 (see Figure 20.24). The number of copies of the repeated unit can vary from site to site within a given genome. There could be as many as several hundred thousand repetitions of the GTTAC unit at one site, but only half that number at another. STR analysis is performed on sites selected because they have relatively few repeats. The repeat number varies from person to person, and since humans are diploid, each person has two alleles per repeat site; these can differ in repeat number. This diversity produces the variation represented in the genetic profiles that result from STR analysis.
+
+Simple sequence DNA makes up 3% of the human genome, much of it located at chromosomal telomeres and centromeres, where it may play a structural role. The DNA at centromeres is essential for the separation of chromatids in cell division (see Concept 12.2) and, along with simple sequence DNA located elsewhere, may also help organize the chromatin within the interphase nucleus. The simple sequence DNA located at telomeres binds proteins that protect chromosomal ends from degradation and from joining to other chromosomes.
+
+Short repetitive sequences like those described here provide a challenge for whole-genome shotgun sequencing because the presence of many short repeats hinders accurate reassembly of fragment sequences by computers. Regions of simple sequence DNA account for much of the uncertainty present in estimates of whole-genome sizes and are the reason some sequences are considered “permanent drafts.”
+
+## Genes and Multigene Families
+
+Now, let's take a look at genes. Recall that DNA sequences that code for proteins or give rise to tRNA or rRNA make up only 1.5% of the human genome (see Figure 21.6). If we include introns and regulatory sequences, the total amount of DNA that is gene-related—coding and noncoding—constitutes about 25% of the human genome. Put another way, only about 6% (1.5% out of 25%) of the length of the average gene is represented in the final gene product.
+
+Many eukaryotic genes are present as unique sequences, with only one copy per haploid set of chromosomes. But in the human genome and the genomes of many other animals and plants, these unique genes make up less than half of the total gene-related DNA. The rest occur in multigene families, collections of two or more identical or very similar genes.
+
+In multigene families that consist of identical DNA sequences, those sequences are usually clustered tandemly and, with the notable exception of the genes for histone proteins, have RNAs as their final products. An example is the family of identical DNA sequences that each include the genes for the three largest rRNA molecules (Figure 21.10a). These rRNA molecules are transcribed from a single transcription unit that is repeated tandemly hundreds to thousands of times in one or several clusters in the genome of a multicellular eukaryote. The many copies of this rRNA transcription unit help cells to quickly make the millions of ribosomes needed for active protein synthesis. The primary transcript is cleaved to yield three rRNA molecules, which combine with proteins and one other kind of rRNA (5S rRNA) to form ribosomal subunits.
+
+Figure 21.10 Gene families.  
+![](images/6f1bbd48a2eb764eb78e789a3e85e03a9190184ae606b5ab4dccf08d5209b664.jpg)
+
+(a) Part of the ribosomal RNA gene family. The TEM at the top shows three of the hundreds of copies of rRNA transcription units in the rRNA gene family of a salamander genome. Each "feather" corresponds to a single unit being transcribed by about 100 molecules of RNA polymerase (dark dots along the DNA), moving left to right (red arrow). The growing RNA transcripts extend from the DNA, accounting for the feather-like appearance. In the diagram of a transcription unit below the TEM, the genes (darker blue) for three types of rRNA are adjacent to regions (striped) that are transcribed but later removed. A single transcript is processed to yield one of each of the three rRNAs (red), key components of the ribosome.  
+![](images/112536ebfc41093ebae8a4330fc19d3530ca9269208fb8d07a6e1342ed088300.jpg)
+
+(b) The human $\alpha$ -globin and $\beta$ -globin gene families. Adult hemoglobin is composed of two $\alpha$ -globin and two $\beta$ -globin polypeptide subunits, as shown in the molecular model. The genes (darker blue) encoding $\alpha$ - and $\beta$ -globins are found in two families, organized as shown here. The noncoding DNA (light blue) separating the functional genes within each family includes pseudogenes ( $\Psi$ ; gold), versions of the functional genes that no longer encode functional polypeptides. Genes and pseudogenes are named with Greek letters, as you have seen previously for the $\alpha$ - and $\beta$ -globins. Some genes are expressed only in the embryo or fetus.
+
+VISUAL SKILLS In the TEM at the top of part (a), how could you determine the direction of transcription if it weren't indicated by the red arrow? For suggested answer, see Appendix A.
+
+The classic examples of multigene families of nonidentical genes are two related families of genes that encode globins, a group of proteins that include the $\alpha$ and $\beta$ polypeptide subunits of hemoglobin. One family, located on chromosome 16 in humans, encodes various forms of $\alpha$ -globin; the other, on chromosome 11, encodes forms of $\beta$ -globin (Figure 21.10b). The different forms of each globin subunit are expressed at different times in development, allowing hemoglobin to function effectively in the changing environment of the developing animal. In humans, for example, the embryonic and fetal forms of hemoglobin have a higher affinity for oxygen than the adult forms, ensuring the efficient transfer of oxygen from mother to fetus. Also found in the globin gene family clusters are several pseudogenes.
+
+In Concept 21.5, we'll consider the evolution of these two globin gene families as we explore how arrangements of genes provide insight into the evolution of genomes. We'll also examine some processes that have shaped the genomes of different species over evolutionary time.
+
+## Concept Check 21.4
+
+1. Discuss the characteristics of mammalian genomes that make them larger than genomes of prokaryotic organisms.
+
+2. VISUAL SKILLS Which of the three mechanisms described in Figures 21.8 and 21.9 result(s) in a copy remaining at the original site as well as a copy appearing in a new location?
+
+3. Contrast the organizations of the rRNA gene family and the globin gene families. For each, explain how the existence of a family of genes benefits the organism.
+
+4. MAKE CONNECTIONS Assign each DNA segment at the top of Figure 18.9 to a sector in the pie chart in Figure 21.6.
+
+For suggested answers, see Appendix A.
+
+## Concept 21.5: Duplication, rearrangement, and mutation of DNA contribute to genome evolution
+
+EVOLUTION Now that we have explored the makeup of the human genome, let's see what its composition reveals about how the genome evolved. The basis of change at the genomic level is mutation, which underlies much of genome evolution. It seems likely that the earliest forms of life had a minimal number of genes—those necessary for survival and reproduction. If this were indeed the case, one aspect of evolution must have been an increase in the size of the genome, with the extra genetic material providing the raw material for gene diversification. In this section, we'll first look at how extra copies of all or part of a genome can arise and then consider subsequent processes that can lead to the evolution of proteins (or RNA products) with slightly different or entirely new functions.
+
+## Duplication of Entire Chromosome Sets
+
+An accident in meiosis, such as failure to separate homologs during meiosis I, can result in one or more extra sets of chromosomes, a condition known as polyploidy (see Concept 15.4). Although such accidents would most often be lethal, in rare cases they could facilitate the evolution of genes. In a polyploid organism, one set of genes can provide essential functions for the organism. The genes in the one or more extra sets can diverge by accumulating mutations; these variations may persist if the organism carrying them survives and reproduces. In this way, genes with novel functions can evolve. As long as one copy of an essential gene is expressed, the divergence of another copy can lead to its encoded protein acting in a novel way, thereby changing the organism's phenotype.
+
+The outcome of this accumulation of mutations may eventually be the branching off of a new species. While polyploidy is rare among animals, it is relatively common among plants, especially flowering plants. Some botanists estimate that as many as 80% of the plant species that are alive today show evidence of polyploidy having occurred among their ancestral species. You'll learn more about the details of how polyploidy leads to plant speciation in Concept 24.2.
+
+## Alterations of Chromosome Structure
+
+With the recent explosion in genomic sequence information, we can now compare the chromosomal organizations of many different species in detail. This information allows us to make inferences about the evolutionary processes that shape chromosomes and may drive speciation. For example, scientists have long known that sometime in the last 7–8 million years, when the ancestors of humans and chimpanzees diverged as species, the fusion of two ancestral chromosomes in the human line led to different haploid numbers for humans (n = 23) and chimpanzees (n = 24). The banding patterns in stained chromosomes suggested that the ancestral versions of current chimpanzee chromosomes 12 and 13 fused end to end, forming chromosome 2 in an ancestor of the human lineage (Figure 21.11).
+
+How do we know a chromosome didn't just split into two in an ancestor of chimps? A comparison of chromosomes in other great apes—gorillas, chimps, bonobos, and orangutans, our closest relatives—shows that those species have 24 chromosomes, so the simplest conclusion is that the last common ancestor of all great apes had 24 chromosomes. (You'll learn more about this type of reasoning in Concept 26.3.) Sequencing and analysis of human chromosome 2 during the Human Genome Project revealed sequences for telomeres and an extra, unused centromere in the middle of it, among other very strong supporting evidence for the model described previously (see Figure 21.11).
+
+In another study of broader scope, researchers compared the DNA sequence of each human chromosome with the whole-genome sequence of the mouse (Figure 21.12). One part of their study showed that large blocks of genes on human chromosome 16 are found on four mouse chromosomes,
+
+## Figure 21.11 Human and chimpanzee chromosomes.
+
+The positions of telomere-like and centromere-like sequences on human chromosome 2 (left) match those of telomeres on chimpanzee chromosomes 12 and 13 and the centromere on chimpanzee chromosome 13 (right). This suggests that chromosomes 12 and 13 in a human ancestor fused end to end to form human chromosome 2. The centromere from ancestral chromosome 12 remained functional on human chromosome 2, while the one from ancestral chromosome 13 did not.
+
+![](images/47b3e1a58ff8ec00470ca6d8cff77eb656cc4abf4c09995b4589f9fa3205704e.jpg)
+
+indicating that the genes in each block stayed together in both the mouse and the human lineages during their divergent evolution from a common ancestor.
+
+Performing the same comparison of chromosomes of humans and six other mammalian species allowed the researchers to reconstruct the evolutionary history of chromosomal rearrangements in these eight species. They found many duplications and inversions of large portions of chromosomes, the result of errors during meiotic recombination in which the DNA was broken and rejoined incorrectly. The rate of these events seems to have begun accelerating about 100 million years ago, around 35 million years before large
+
+## Interview
+
+Interview with Eric Lander: Exploring the human genome (eTextbook only)
+
+![](images/2b0ac2e24740faf23b1862ddae63a409e139440aafff68ea683d1bd3df398abf.jpg)
+
+## Figure 21.12 Human and mouse chromosomes.
+
+Here, we can see that DNA sequences very similar to large blocks of human chromosome 16 (colored areas in this diagram) are found on mouse chromosomes 7, 8, 16, and 17. This finding suggests that the DNA sequence in each block has stayed together in the mouse and human lineages since the time they diverged from a common ancestor.
+
+Human chromosome  
+![](images/f470f14c9c89bea0d638370411dfb0fb004b2bc476e132367669497444380c28.jpg)  
+Mouse chromosomes
+
+![](images/f1fd44f763033024d6b5d62605a855e288fe7286e89f62b9575c8c7f5a711ca0.jpg)
+
+dinosaurs became extinct and the number of mammalian species began rapidly increasing. The apparent coincidence is interesting because chromosomal rearrangements are thought to contribute to the generation of new species. Although two individuals with different arrangements could still mate and produce offspring, the offspring would have two nonequivalent sets of chromosomes, making meiosis inefficient or even impossible. Thus, chromosomal rearrangements would lead to two populations that could not successfully mate with each other, a step on the way to their becoming two separate species. (You'll learn more about this in Concept 24.2.)
+
+The same study also unearthed a pattern with medical relevance. Analysis of the chromosomal breakage points associated with the rearrangements showed that specific sites were used over and over again. A number of these recombination “hot spots” correspond to locations of chromosomal rearrangements within the human genome that are associated with congenital diseases (see Concept 15.4).
+
+## Duplication and Divergence of Gene-Sized Regions of DNA
+
+Errors during meiosis can also lead to the duplication of chromosomal regions that are smaller than the ones we've just discussed, including segments the length of individual genes. Unequal crossing over during prophase I of meiosis, for instance, can result in one chromosome with a deletion and another with a duplication of a particular gene or genes. Transposable elements can provide homologous sites where nonsister chromatids can cross over, even when other chromatid regions are not correctly aligned (Figure 21.13).
+
+Also, slippage can occur during DNA replication, such that the template shifts with respect to the new complementary strand, and a part of the template strand is either skipped by the replication machinery or used twice as a template. As a result, a segment of DNA is deleted or duplicated. It is easy to imagine how such errors could occur in regions of repeats. (See the question in Figure 21.13.) The variable number of repeated units of simple sequence DNA at a given site, used for STR analysis, is probably due to errors like these. Evidence that unequal crossing over and template slippage during DNA replication lead to duplication of genes is found in the existence of multigene families, such as the globin family.
+
+## Evolution of Genes with Related Functions: The Human Globin Genes
+
+In Figure 21.10b, you saw the organization of the $\alpha$ -globin and $\beta$ -globin gene families as they exist in the human genome today. Now, let's consider how events such as duplications can lead to the evolution of genes with related functions like the globin genes. A comparison of gene sequences within a multigene family can suggest the order in which the genes arose. Re-creating the evolutionary history of the globin genes using this approach indicates that they all evolved from one common ancestral globin gene that underwent duplication and divergence into the $\alpha$ -globin and $\beta$ -globin ancestral genes
+
+Figure 21.13 Gene duplication due to unequal crossing over. One mechanism by which a gene (or other DNA segment) can be duplicated is recombination during meiosis between copies of a transposable element (patterned yellow) flanking the gene (blue). Such recombination between misaligned nonsister chromatids of homologous chromosomes produces one chromatid with two copies of the gene and one chromatid with no copy. (Genes and transposable elements are shown only in the region of interest.)
+
+![](images/8c302a917650d188a78ba9218ccbd99e108c1848e6650b3b57e8727eab4349c6.jpg)  
+MAKE CONNECTIONS Examine how crossing over occurs in Figure 13.9. In the middle panel above, draw a line through the portions that result in the upper chromatid in the bottom panel. Use a different color to do the same for the other chromatid.  
+For suggested answer, see Appendix A.
+
+about 450–500 million years ago (Figure 21.14). Each of these genes was later duplicated several times, and the copies then diverged from each other in sequence, yielding the current family members. In fact, the common ancestral globin gene also gave rise to the oxygen-binding muscle protein myoglobin and to the plant protein leghemoglobin. The latter two proteins function as monomers, and their genes are included in a “globin superfamily.”
+
+After the duplication events, the differences between the genes in the globin families undoubtedly arose from mutations that accumulated in the gene copies over many generations. The current model is that the necessary function provided by an $\alpha$ -globin protein, for example, was fulfilled by one gene, while other copies of the $\alpha$ -globin gene accumulated random mutations. Many mutations may have had an adverse effect on the organism, and others may have had no effect. However, a few mutations must have altered the function of the protein product in a way that benefitted the organism at a particular life stage without substantially changing the protein's oxygen-carrying function. Presumably, natural selection acted on these altered genes, maintaining them in the population.
+
+![](images/0a76bd496aa4a5d327728c5017042b89e7236f06c04b92a2648f88bbdba153dc.jpg)  
+Figure 21.15 Comparison of lysozyme and $\alpha$ -lactalbumin proteins.
+
+Figure 21.14 A proposed model for the sequence of events in the evolution of the human $\alpha$ -globin and $\beta$ -globin gene families from a single ancestral globin gene.  
+![](images/371b30702d1a85732c5bd4cb178907a662a0b9289c803b7c7717ba839d4ff072.jpg)  
+The gold elements (labeled $\psi$ ) are pseudogenes. Explain how they could have arisen after gene duplication. For suggested answer, see Appendix A.
+
+In the Scientific Skills Exercise, you can compare amino acid sequences of the globin family proteins and see how such comparisons were used to generate the model for globin gene evolution shown in Figure 21.14. The existence of several pseudogenes among the functional globin genes provides
+
+additional evidence for this model: Random mutations in these “genes” over evolutionary time have destroyed their function.
+
+## Evolution of Genes with Novel Functions
+
+In the evolution of the globin gene families, gene duplication and subsequent divergence produced family members whose protein products performed similar functions (oxygen transport). Alternatively, one copy of a duplicated gene can undergo alterations that lead to a completely new function for the protein product. The genes for lysozyme and $\alpha$ -lactalbumin are a good example.
+
+Lysozyme is an enzyme that helps protect animals against bacterial infection by hydrolyzing bacterial cell walls (see Visualizing Figure 5.16); $\alpha$ -lactalbumin is a nonenzymatic protein that plays a role in milk production in mammals. The two proteins are quite similar in their amino
+
+acid sequences and three-dimensional structures (Figure 21.15). Both genes are found in mammals, but only the lysozyme gene is present in birds. These findings suggest that at some time after the lineages leading to mammals and birds had separated,
+
+Computer-generated ribbon models of the similar structures of (a) lysozyme and (b) $\alpha$ -lactalbumin are shown, along with (c) a comparison of the amino acid sequences of the two proteins. Single-letter amino acid codes are used (see Figure 5.14). Identical amino acids are highlighted in yellow, and dashes indicate gaps in one sequence that have been introduced by the software to optimize the alignment.  
+![](images/047279e4da619570c01bb0735af89ae91aebe1054a181b2825e50be3d206522c.jpg)  
+MAKE CONNECTIONS Even though two amino acids are not identical, they may be structurally and chemically similar and therefore behave similarly. Using Figure 5.14 as a reference, examine the nonidentical amino acids in positions 1–30 and note cases where the amino acids in the two sequences are similarly acidic or basic.
+
+For suggested answer, see Appendix A.
+
+Lysozyme 51 STD YGI FQI NSRYWC NDGKTP GAVN ACHL SCSAL LQDN IADAVACAKRVV
+α-lactalbumin 51 STEYGL FQISNKL WCKSSQVP QSRNIC DISC DKFL DDDIT DDIM CAKKIL
+
+Lysozyme 101 RDPQGIRAWVWRNRCQ-NRDVRQYVQGCGV
+α-lactalbumin 101 D-IKGIDYWLAHKALCT--EKLEQWLCEKL-
+
+(c) Amino acid sequence alignments of lysozyme and $\alpha$ -lactalbumin
+
+## Scientific Skills Exercise Reading an Amino Acid Sequence Identity Table
+
+How Have Amino Acid Sequences of Human Globin Genes Diverged During Their Evolution? To build a model of the evolutionary history of the globin genes (see Figure 21.14), researchers compared the amino acid sequences of the polypeptides they encode. In this exercise, you will analyze comparisons of the amino acid sequences of the globin polypeptides to shed light on their evolutionary relationships.
+
+How the Experiment Was Done Scientists obtained the DNA sequences for each of the eight globin genes and “translated” them into amino acid sequences. They then used a computer program to align the sequences (with dashes indicating gaps in one sequence) and calculate a percent identity value for each pair of globins. The percent identity reflects the number of positions with identical amino acids relative to the total number of amino acids in a globin polypeptide. The data were displayed in a table to show the pairwise comparisons.
+
+Data from the Experiment The following table shows an example of a pairwise alignment—that of the $\alpha_{1}$ -globin (alpha-1 globin) and $\zeta$ -globin (zeta globin) amino acid sequences—using the
+
+<table><tr><td>Globin</td><td>Alignment of Globin Amino Acid Sequences</td></tr><tr><td> $\alpha_{1}$ </td><td>1MMLSPADKTNVKAAWGKVGAHAGEYGAEAL</td></tr><tr><td> $\zeta$ </td><td>1MSLTKTERTIIVSMWAKISTQADTIGTETL</td></tr><tr><td> $\alpha_{1}$ </td><td>31ERMFLSFPTTKTYFPHFDLSH-GSAQVKGH</td></tr><tr><td> $\zeta$ </td><td>31ERLFLSHPQTKTYFPHFDL-HPGSAQLRAH</td></tr><tr><td> $\alpha_{1}$ </td><td>61GKKVADALTNAVAHVDDMPNALSALS D LHA</td></tr><tr><td> $\zeta$ </td><td>61GSKVVAAVGDAVKSIDDIGGALS KLS E LHA</td></tr><tr><td> $\alpha_{1}$ </td><td>91HKLRVDPVNFKLLSHCLLVTLAAHLPAEFT</td></tr><tr><td> $\zeta$ </td><td>91YILRVDPVNFKLLSHCLLVTLAARFPADFT</td></tr><tr><td> $\alpha_{1}$ </td><td>121PAVHASLDKFLASVSTVLTSKYR</td></tr><tr><td> $\zeta$ </td><td>121AEAHAWDKFLSVVSSVLTEKYR</td></tr></table>
+
+standard single-letter symbols for amino acids. To the left of each line of amino acid sequence is the number of the first amino acid in that line. The percent identity value for the $\alpha_{1}$ - and $\zeta$ -globin amino acid sequences was calculated by counting the number of matching amino acids (86, highlighted in yellow), dividing by the total number of amino acid positions (143), and
+
+![](images/88eb5a8cb9fd216c0a47c28c29bfb9d3321ee3a3c9fc0ab60073d013ba49651e.jpg)  
+Hemoglobin
+
+then multiplying by 100. This resulted in a $60\%$ identity value for the $\alpha_{1}-\zeta$ pair, as shown in the amino acid identity table below. The values for other globin pairs were calculated in the same way.
+
+## INTERPRET THE DATA
+
+1. Note that in the amino acid identity table, the data are arranged so each globin pair can be compared. (a) Some cells in the table have dashed lines. What percent identity value is implied by the dashed lines? (b) Using the information already provided in the table, fill in the missing values in the lower left half of the table. Why does it make sense that these cells were left blank?
+
+2. The earlier that two genes arose from a duplicated gene, the more their nucleotide sequences can have diverged, which may result in amino acid differences in the protein products. (a) Based on that premise, identify which two genes are most divergent from each other. What is the percent amino acid identity between their polypeptides? (b) Which two globin genes are the most recently duplicated? What is the percent identity between them?
+
+3. The model of evolution in Figure 21.14 suggests that an ancestral gene duplicated and mutated to become $\alpha$ - and $\beta$ -globin genes, and then each one was further duplicated and mutated. What features of the data set support the model?
+
+4. Make an ordered list of all the percent identity values from the table, starting with 100% at the top. Next to each number write the globin pair(s) with that percent identity value. Use one color for the globins from the $\alpha$ family and a different color for the globins from the $\beta$ family. (a) Compare the order of pairs with their positions in Figure 21.14. Does the order of pairs describe the same relative “closeness” of globin family members seen in the model? (b) Compare the percent identity values for pairs within the $\alpha$ or $\beta$ family. to the values for between-family pairs.
+
+<table><tr><td colspan="10">Amino Acid Identity Table</td></tr><tr><td colspan="5">α Family</td><td colspan="5">β Family</td></tr><tr><td></td><td></td><td> $α_1$ (alpha 1)</td><td> $α_2$ (alpha 2)</td><td>ζ(zeta)</td><td>β(beta)</td><td>δ(delta)</td><td>ε(epsilon)</td><td> $A_\gamma$ (gamma A)</td><td> $G_\gamma$ (gamma G)</td></tr><tr><td rowspan="3">α Family</td><td> $α_1$ </td><td>----</td><td>100</td><td>60</td><td>45</td><td>44</td><td>39</td><td>42</td><td>42</td></tr><tr><td> $α_2$ </td><td></td><td>----</td><td>60</td><td>45</td><td>44</td><td>39</td><td>42</td><td>42</td></tr><tr><td>ζ</td><td></td><td></td><td>----</td><td>38</td><td>40</td><td>41</td><td>41</td><td>41</td></tr><tr><td rowspan="5">β Family</td><td>β</td><td></td><td></td><td></td><td>----</td><td>93</td><td>76</td><td>73</td><td>73</td></tr><tr><td>δ</td><td></td><td></td><td></td><td></td><td>----</td><td>73</td><td>71</td><td>72</td></tr><tr><td>ε</td><td></td><td></td><td></td><td></td><td></td><td>----</td><td>80</td><td>80</td></tr><tr><td> $A_\gamma$ </td><td></td><td></td><td></td><td></td><td></td><td></td><td>----</td><td>99</td></tr><tr><td> $G_\gamma$ </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>----</td></tr></table>
+
+Compiled using data from the National Center for Biotechnology Information (NCBI).
+
+the lysozyme gene was duplicated in the mammalian lineage but not in the avian lineage. Subsequently, one copy of the duplicated lysozyme gene evolved into a gene encoding $\alpha$ -lactalbumin, a protein with a completely new function associated with a key characteristic of mammals—milk production. In one study, evolutionary biologists searched vertebrate genomes for genes with similar sequences. There appear to be at least eight members of the lysozyme family, distributed widely among mammalian species. The functions of all the encoded gene products are not yet known, but it will be exciting to discover whether they are as different as the functions of lysozyme and $\alpha$ -lactalbumin.
+
+Besides the duplication and divergence of whole genes, rearrangement of existing DNA sequences within genes has also contributed to genome evolution. The presence of introns may have promoted the evolution of new proteins by facilitating the duplication or shuffling of exons, as we'll see next.
+
+## Rearrangements of Parts of Genes: Exon Duplication and Exon Shuffling
+
+Recall from Concept 17.3 that an exon often codes for a protein domain, a distinct structural and functional region of a protein molecule, such as the WD40 domain in Figure 21.3. We've already seen that unequal crossing over during meiosis can lead to duplication of a gene on one chromosome and its loss from the homologous chromosome (see Figure 21.13). By a similar process, a particular exon within a gene could be duplicated on one chromosome and deleted from the other. The gene with the duplicated exon would code for a protein containing a second copy of the encoded domain. This change in the protein's structure might augment its function by increasing its stability, enhancing its ability to bind a particular ligand, or altering some other property. Quite a few protein-coding genes have multiple copies of related exons, which presumably arose by duplication and then diverged. The gene encoding the extracellular matrix protein collagen is a good example. Collagen is a structural protein (see Figure 5.18) with a highly repetitive amino acid sequence, which reflects the repetitive pattern of exons in the collagen gene.
+
+As an alternative possibility, we can imagine the occasional mixing and matching of different exons either within a gene or between two different (nonallelic) genes owing to errors in meiotic recombination. This process, termed exon shuffling, could lead to new proteins with novel combinations of functions. As an example, let's consider the gene for tissue plasminogen activator (TPA). The TPA protein is an extracellular protein that helps control blood clotting. It has four domains of three types, each encoded by an exon, and one of those exons is present in two copies. Because each type of exon is also found in other proteins, the current version of the gene for TPA is thought to have arisen by several instances of exon shuffling during errors in meiotic recombination and subsequent duplication (Figure 21.16).
+
+## How Transposable Elements Contribute to Genome Evolution
+
+The persistence of transposable elements as a large fraction of some eukaryotic genomes is consistent with the idea that they play an important role in shaping a genome over evolutionary
+
+Figure 21.16 Evolution of a new gene by exon shuffling.
+
+Meiotic errors could have moved exons, each encoding a particular domain, from ancestral forms of the genes for epidermal growth factor, fibronectin, and plasminogen (left) into the evolving gene for tissue plasminogen activator, TPA (right). Subsequent duplication of the “kringle” exon (K) from the plasminogen gene after its movement into the TPA gene could account for the two copies of this exon in the TPA gene existing today.
+
+![](images/b1b4c0436fc8eebcc30f3abde2b4d795f5ccf69e540fe85084dd71e6314764ea.jpg)  
+VISUAL SKILLS Looking at Figure 21.13, describe the steps by which transposable elements within introns might have facilitated the exon shuffling shown here.  
+For suggested answer, see Appendix A.
+
+time. These elements can contribute to the evolution of the genome in several ways. They can promote recombination, disrupt cellular genes or control elements, and carry entire genes or individual exons to new locations.
+
+Transposable elements of similar sequence scattered throughout the genome facilitate recombination between different (nonhomologous) chromosomes by providing homologous regions for crossing over (see Figure 21.13). Most such recombination events are probably detrimental, causing chromosomal translocations and other changes in the genome that may be lethal to the organism. But over the course of evolutionary time, an occasional recombination event of this sort may be advantageous to the organism. (For the change to be heritable, of course, it must happen in a cell that will give rise to a gamete.)
+
+The movement of a transposable element can have a variety of consequences. For instance, a transposable element that “jumps” into a protein-coding sequence will prevent the production of a normal transcript of the gene. (Introns provide a sort of “safety zone” that does not affect the transcript because the transposable element will be spliced out—unless it affects the splicing process.) If a transposable element inserts within a regulatory sequence, the transposition may lead to increased or decreased production of one or more proteins. Transposition caused both types of effects on the genes coding for pigment-synthesizing enzymes in McClintock’s corn kernels. Again, while such changes are usually harmful, in the long run some may provide a survival advantage. A possible example was mentioned earlier: At least some of the Alu transposable elements in the human genome are known to produce RNAs that regulate expression of human genes.
+
+During transposition, a transposable element may carry along a gene or even a group of genes to a new position in the genome. This occurrence probably accounts for the location of the $\alpha$ -globin and $\beta$ -globin gene families on different human chromosomes, as well as the dispersion of the genes of certain other gene families. By a similar tag-along process, an exon from one gene may be inserted into another gene in a mechanism similar to that of exon shuffling during recombination. For example, an exon may be inserted by transposition into the intron of a protein-coding gene. If the inserted exon is retained in the RNA transcript during RNA splicing, the protein that is synthesized will have an additional domain, which may confer a new function on the protein.
+
+Most often, the processes discussed in this section produce harmful effects, which may be lethal, or have no effect at all. In a few cases, however, small heritable changes that are beneficial may occur. Over many generations, the resulting genetic diversity provides valuable raw material for natural selection. Diversification of genes and their products is an important factor in the evolution of new species. Thus, the accumulation of changes in the genome of each species provides a record of its evolutionary history. To read this record, we must be able to identify genomic changes. Comparing the genomes of different species allows us to do that, increasing our understanding of how genomes evolve. You will learn more about these topics next.
+
+## Concept Check 21.5
+
+1. Describe three examples of errors in cellular processes that lead to DNA duplications.
+
+2. Explain how multiple exons might have arisen in the ancestral EGF and fibronectin genes shown in Figure 21.16 (left).
+
+3. What are three ways that transposable elements are thought to contribute to genome evolution?
+
+4. WHAT IF? In 2005, Icelandic scientists reported finding a large chromosomal inversion present in 20% of northern Europeans, and they noted that Icelandic females with this inversion had significantly more children than females without it. What would you expect to happen to the frequency of this inversion in the Icelandic population in future generations?
+
+For suggested answers, see Appendix A.
+
+# Concept 21.6: Comparing genome sequences provides clues to evolution and development
+
+EVOLUTION In the last several decades, we have seen rapid advances in genome sequencing and data collection, new techniques for assessing gene activity across the whole genome and for editing a gene sequence in a specific way in living cells, and refined approaches for understanding how genes and their products work together in complex systems. In the field of biology, we are truly in the midst of a new world.
+
+The more similar in sequence the genes and genomes of two species are, the less time has passed for mutations and other changes to accumulate, and therefore the more closely related those species are in their evolutionary history. Comparing genomes of closely related species sheds light on more recent evolutionary events, whereas comparing genomes of very distantly related species helps us understand ancient evolutionary history. In either case, learning about characteristics that are shared or divergent between groups enhances our picture of the evolution of organisms and biological processes. Evolutionary relationships between species can be represented by a diagram in the form of a tree (often turned sideways), where each branch point marks the divergence of two lineages (see Figure 1.20). Figure 21.17 shows the evolutionary relationships of some groups and species we'll now examine.
+
+Comparing genome sequences from different species reveals a lot about the evolutionary history of life, from very ancient to more recent. Similarly, comparative studies of the genetic programs that direct embryonic development in different species are uncovering the mechanisms that generated the great diversity of life-forms present today. We'll now look at what has been learned from these two approaches.
+
+## Comparing Genomes
+
+Figure 21.17 Evolutionary relationships of distantly and closely related organisms.
+
+The tree diagram at the top shows the divergence long ago of plants, animals, and fungi. A portion of the animal lineage is expanded to show the more recent divergence of three mammalian species discussed in this chapter.
+
+![](images/acc7c7071f74db1f95e678f9a991999db5e96439b1a3d7d00ea2e9d99bfa038b.jpg)
