@@ -1,0 +1,40 @@
+name: Import MinerU book ZIPs
+
+"on":
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/import-mineru-books.yml
+  workflow_dispatch:
+    inputs:
+      source_base_url:
+        description: Temporary HTTPS transfer base URL (optional)
+        required: false
+        default: ""
+        type: string
+
+concurrency:
+  group: mineru-book-import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    if: github.repository == 'kazewwk/test'
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    permissions:
+      contents: write
+    steps:
+      - name: Read the exact commit
+        env:
+          COMMIT: ${{ github.sha }}
+        run: |
+          git init --quiet .
+          git remote add origin https://github.com/kazewwk/test.git
+          git fetch --quiet --depth 1 origin "$COMMIT"
+          git checkout --quiet --detach FETCH_HEAD
+      - name: Transfer and verify thirteen book ZIPs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BOOK_SOURCE_BASE_URL: ${{ inputs.source_base_url }}
+        run: python3 scripts/import_mineru_release.py
