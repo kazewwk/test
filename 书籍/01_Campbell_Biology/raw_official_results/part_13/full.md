@@ -1,0 +1,3615 @@
+number of extra offspring that the recipient of an altruistic act produces. The cost, C, is how many fewer offspring the altruist produces. The coefficient of relatedness, r, equals the fraction of genes that, on average, are shared. Natural selection favors altruism when the benefit to the recipient multiplied by the coefficient of relatedness exceeds the cost to the altruist—in other words, when rB > C. This statement is called Hamilton's rule.
+
+To better understand Hamilton's rule, let's apply it to a human population in which the average individual has two children. We'll imagine that a teenager is close to drowning in heavy surf, and his sister risks her life to swim out and pull her sibling to safety. If the teen had drowned, his reproductive output would have been zero; but now, if we use the average, he can reach adulthood and eventually parent two children. The benefit to the brother is thus two offspring ( $B = 2$ ). What cost does his sister incur? Let's say that she has a $25\%$ chance of drowning in attempting the rescue. The cost of the altruistic act to the sister is then 0.25 times 2, the number of offspring she would be expected to have if she had stayed on shore ( $C = 0.25 \times 2 = 0.5$ ). Finally, we note that a brother and sister share half their genes on average ( $r = 0.5$ ). One way to see this is in terms of the separation of homologous chromosomes that occurs during meiosis of gametes (Figure 51.26; see also Figure 13.7).
+
+We can use our values of B, C, and r to evaluate whether natural selection would favor the altruistic act in our imaginary scenario. For the surf rescue, $rB = 0.5 \times 2 = 1$ , whereas C = 0.5.
+
+## Figure 51.26 The coefficient of relatedness between siblings.
+
+The red band indicates a particular allele (version of a gene) present on one chromosome, but not its homolog, in parent A. Sibling 1 has inherited the allele from parent A. There is a probability of $\frac{1}{2}$ that sibling 2 will also inherit this allele from parent A. Any allele present on one chromosome of either parent will behave similarly. The coefficient of relatedness between the two siblings is thus $\frac{1}{2}$ , or 0.5.
+
+![](images/5ce08303f6242f8c46057ae6ade6997e81fd6def5e896b0cbdbdab355111f767.jpg)  
+WHAT IF? The coefficient of relatedness of an individual to a full (nontwin) sibling or to either parent is the same: 0.5. Does this value also hold true in cases of polyandry and polygyny?
+For suggested answer, see Appendix A.
+
+Because $rB$ is greater than $C$ , Hamilton's rule is satisfied; thus, natural selection would favor this altruistic act.
+
+Averaging over many individuals and generations, any particular gene in a sister faced with the situation described will be passed on to more offspring if she risks the rescue than if she does not. Among the genes propagated in this way may be some that contribute to altruistic behavior. Natural selection that thus favors altruism by enhancing the reproductive success of relatives is called kin selection.
+
+Kin selection weakens with hereditary distance. Siblings have an r of 0.5, but between an aunt and her niece, $r = 0.25 \left( \frac{1}{4} \right)$ , and between first cousins, $r = 0.125 \left( \frac{1}{8} \right)$ . Notice that as the degree of relatedness decreases, the rB term in the Hamilton inequality also decreases. Would natural selection favor rescuing a cousin? Not unless the surf were less treacherous. For the original conditions, $rB = 0.125 \times 2 = 0.25$ , which is only half the value of C (0.5). British geneticist J. B. S. Haldane appears to have anticipated these ideas when he jokingly stated that he would not lay down his life for one brother, but would do so for two brothers or eight cousins.
+
+If kin selection explains altruism, then the examples of unselfish behavior we observe among diverse animal species should involve close relatives. This is apparently the case, but often in complex ways. Like most mammals, female Belding's ground squirrels settle close to their site of birth, whereas males settle at distant sites (Figure 51.27). Since nearly all alarm calls are given by females, they are most likely aiding close relatives. In the case of worker bees, who are all sterile, anything they do to help the entire hive benefits the only permanent member who is reproductively active—the queen, who is their parent.
+
+In the case of naked mole rats, DNA analyses have shown that all the individuals in a colony are closely related. Genetically, the queen appears to be a sibling, offspring, or parent of the kings, and the nonreproductive mole rats are the queen's direct
+
+## Figure 51.27 Kin selection and altruism in Belding's ground squirrels.
+
+This graph helps explain the male-female difference in altruistic behavior of ground squirrels. Once weaned (pups are nursed for about one month), females are more likely than males to live near close relatives. Alarm calls that warn these relatives increase the inclusive fitness of the female altruist.
+
+![](images/a770c9383d3fecea814142275414d995f2b4453e1f1a17c59dfb58df9c3a770d.jpg)
+
+descendants or her siblings. Therefore, when a nonreproductive individual enhances a queen's or king's chances of reproducing, the altruist increases the chance that some genes identical to its own will be passed to the next generation.
+
+## Reciprocal Altruism
+
+Some animals occasionally behave altruistically toward others who are not relatives. A baboon may help an unrelated companion in a fight, or a wolf may offer food to another wolf even though they share no kinship. Such behavior can be adaptive if the aided individual returns the favor in the future. This sort of exchange of aid, called reciprocal altruism, is commonly invoked to explain altruism that occurs between unrelated humans. Reciprocal altruism is rare in other animals; it is limited largely to species (such as chimpanzees) with social groups stable enough that individuals have many chances to exchange aid. It is generally thought to occur when individuals are likely to meet again and when there would be negative consequences associated with not returning favors to individuals who had been helpful in the past, a pattern of behavior that behavioral ecologists refer to as “cheating.”
+
+Since cheating may benefit the cheater substantially, how could reciprocal altruism evolve? Game theory provides a possible answer in the form of a behavioral strategy called tit for tat. In the tit-for-tat strategy, an individual treats another in the same way it was treated the last time they met. Individuals adopting this behavior are always altruistic, or cooperative, on the first encounter with another individual and will remain so as long as their altruism is reciprocated. When their cooperation is not reciprocated, however, individuals employing tit for tat will retaliate immediately but return to cooperative behavior as soon as the other individual becomes cooperative. The tit-for-tat strategy has been used to explain the few apparently reciprocal altruistic interactions observed in animals—ranging from blood sharing between nonrelated vampire bats to social grooming in primates.
+
+## Evolution and Human Culture
+
+As animals, humans behave (and, sometimes, misbehave). Just as humans vary extensively in anatomical features, we display substantial variations in behavior. Environment intervenes in the path from genotype to phenotype for physical traits, but does so much more profoundly for behavioral traits. Furthermore, as a consequence of our marked capacity for learning, humans are probably more able than any other animal to acquire new behaviors and skills (Figure 51.28).
+
+Some human activities have a less easily defined function in survival and reproduction than do, for example, foraging or courtship. One of these activities is play, which is sometimes defined as behavior that appears purposeless. We recognize play in children and what we think is play in the young of other vertebrates. Behavioral biologists describe “object play,” such as chimpanzees playing with leaves, “locomotor play,” such as the acrobatics of an antelope, and “social play,” such as the interactions and antics of lion cubs. These categories, however, do little to inform us about the function of play. One idea is that, rather than generating specific skills or experience, play serves
+
+as preparation for
+unexpected events and for
+circumstances that cannot
+be controlled.
+
+Figure 51.28 Learning a new behavior.
+
+Human behavior and culture are related to evolutionary theory in the discipline of sociobiology. The main premise of sociobiology is that certain behavioral characteristics exist because they are expressions of genes that have been perpetuated by natural selection. In his seminal 1975 book Sociobiology: The New Synthesis, E. O. Wilson speculated about the evolutionary basis of certain kinds of social behavior. By including a few examples from human culture, he sparked a debate that continues today.
+
+![](images/b94a0d4001d0412db3f196b9959c1a9e29d61dd62b0885cbcb6ab8917e210182.jpg)
+
+Over our recent evolutionary history, we have built up structured societies with governments, laws, cultural values, and religions that define what is acceptable behavior and what is not, even when unacceptable behavior might enhance an individual's Darwinian fitness. Perhaps it is our social and cultural institutions that make us distinct and that provide those qualities that at times make less apparent the continuum between humans and other animals. One such quality, our considerable capacity for reciprocal altruism, will be essential as we tackle current challenges, including global climate change, in which individual and collective interests often appear to be in conflict.
+
+## Interview
+
+Interview with E. O. Wilson: Pioneering the field of sociobiology (eTextbook only)
+
+![](images/6f93c92932a313f4e748a1eeadc52e6c66361f76e4999616eda147e471151a83.jpg)
+
+## Concept Check 51.4
+
+1. Explain why geographic variation in garter snake prey choice might indicate that the behavior evolved by natural selection.
+
+2. Suppose an individual organism aids the survival and reproductive success of the offspring of its sibling. How might this behavior result in indirect selection for certain genes carried by that individual?
+
+3. WHAT IF? Suppose you applied Hamilton's logic to a situation in which one individual is past reproductive age. Could there still be selection for an altruistic act?
+
+Associative learning
+
+Imprinting
+
+Cognition
+
+## Summary of Key Concepts
+
+To review key terms, go to the Vocabulary Self-Quiz (eTextbook only).
+
+## Concept 51.1: Discrete sensory inputs can stimulate both simple and complex behaviors
+
+\- Behavior is the sum of an animal's responses to external and internal stimuli. In behavior studies, proximate, or "how," questions focus on the stimuli that trigger a behavior and on genetic, physiological, and anatomical mechanisms underlying a behavioral act. Ultimate, or "why," questions address evolutionary significance.
+
+\- A fixed action pattern is a largely invariant behavior triggered by a simple cue known as a sign stimulus.
+
+\- Migratory movements involve navigation, which can be based on orientation relative to the sun, the stars, or Earth's magnetic field. Animal behavior is often synchronized to the circadian cycle of light and dark in the environment or to the seasons.
+
+\- The transmission and reception of signals constitute animal communication. Animals use visual, auditory, chemical, and tactile signals. Chemical substances called pheromones transmit species-specific information between members of a species in behaviors ranging from foraging to courtship.
+
+How is migration based on circannual rhythms poorly suited for adaptation to global climate change?
+
+## Concept 51.2: Learning establishes specific links between experience and behavior
+
+\- Cross-fostering studies can be used to measure the influence of social environment and experience on behavior.
+
+\- Learning, the modification of behavior as a result of experience, can take many forms, as summarized in the diagram that follows.
+
+![](images/4d94094c624c597a1503894d0e7c1dbbe585e0c2e3bb5b780b0898828d7d4013.jpg)
+
+![](images/8f7185d7070006c4e274b62ef0a276723e0030bcde1f27596af5adc5c002c9e2.jpg)  
+Forms of learning and problem solving
+
+![](images/018e5241cba2f99569963317eab6c345270a4c813e285ae7493246cfa4b01120.jpg)  
+Spatial learning
+
+![](images/421dbfa5d46be641fd2ca4cc16731b98fb74ad13b1d90794aff7922db80a9566.jpg)
+
+![](images/537d3538ab9ec7d6aae966b783bbadf5d3ec14fd4c3d7f1820d4d5bcfb0352ce.jpg)  
+Social learning
+
+How do imprinting in geese and song development in sparrows differ with regard to the resulting behavior?
+
+## Concept 51.3: Selection for individual survival and reproductive success can explain diverse behaviors
+
+\- Controlled experiments in the laboratory can give rise to interpretable evolutionary changes in behavior.
+
+\- An optimal foraging model is based on the idea that natural selection should favor foraging behavior that minimizes the costs of foraging and maximizes the benefits.
+
+\- Sexual dimorphism correlates with the types of mating relationship, which include monogamous and polygamous mating systems. Variations in mating system and mode of fertilization affect certainty of paternity, which in turn, through evolution, influences mating behavior and parental care.
+
+\- Game theory provides a way of thinking about evolution in situations where the fitness of a particular behavioral phenotype is influenced by other behavioral phenotypes in the population.
+
+In some spider species, the female eats the male immediately after copulation. How might you explain this behavior from an evolutionary perspective?
+
+## Concept 51.4: Genetic analyses and the concept of inclusive fitness provide a basis for studying the evolution of behavior
+
+\- Genetic studies in insects have revealed the existence of master regulatory genes that control complex behaviors. Within the underlying hierarchy, multiple genes influence specific behaviors, such as a courtship song. Research on voles illustrates how variation in a single gene can determine differences in complex behaviors.
+
+\- Behavioral variation within a species that corresponds to environmental variation may be evidence of past evolution.
+
+\- Altruism can be explained by the concept of inclusive fitness, the effect an individual has on proliferating its genes by producing its own offspring and by providing aid that enables close relatives to reproduce. The coefficient of relatedness and Hamilton's rule provide a way of measuring the strength of the selective forces favoring altruism against the potential cost of the "selfless" behavior. Kin selection favors altruistic behavior by enhancing the reproductive success of relatives.
+
+What insight about the genetic basis of behavior emerges from studying the effects of courtship mutations in fruit flies and of pair-bonding in voles? For suggested answers, see Appendix A.
+
+## Test Your Understanding
+
+For more multiple-choice questions, go to the Practice Test (eTextbook only).
+
+## Levels 1-2: Remembering/Understanding
+
+1. Which of the following is true of innate behaviors?
+
+(A) Their expression is only weakly influenced by genes.
+
+(B) They occur with or without environmental stimuli.
+
+(C) They are expressed in most individuals in a population.
+
+(D) They occur in invertebrates and some vertebrates but not mammals.
+
+2. According to Hamilton's rule, natural selection
+
+(A) favors altruistic behavior as long as it does not put the altruist at risk of death.
+
+(B) favors altruistic acts when the resulting benefit to the recipient, corrected for relatedness, exceeds the cost to the altruist.
+
+(C) is more likely to favor altruistic behavior that benefits an offspring than altruistic behavior that benefits a sibling.
+
+(D) can promote altruistic behavior between two unrelated individuals.
+
+3. Female spotted sandpipers aggressively court males and, after mating, leave the clutch of young for the male to incubate. This sequence may be repeated several times with different males until no available males remain, forcing the female to incubate her last clutch. Which of the following terms best describes this behavior?
+
+(A) polygyny
+
+(B) polyandry
+
+(C) promiscuity
+
+(D) certainty of paternity
+
+## Levels 3-4: Applying/Analyzing
+
+4. A region of the canary forebrain shrinks during the nonbreeding season and enlarges when breeding season begins. This change is probably associated with the annual
+
+(A) addition of new syllables to a canary's song repertoire.
+
+(B) crystallization of subsong into adult songs.
+
+(C) critical period in which canary parents imprint on new offspring.
+
+(D) elimination of the memorized template for songs sung the previous year.
+
+5. Although many chimpanzees live in environments with oil palm nuts, members of only a few populations use stones to crack open the nuts. The likely explanation is that
+
+(A) the behavioral difference is caused by genetic differences between populations.
+
+(B) members of different populations have different nutritional requirements.
+
+(C) the cultural tradition of using stones to crack nuts has arisen in only some populations.
+
+(D) members of different populations differ in learning ability.
+
+6. Which of the following is required for a behavioral trait to evolve by natural selection?
+
+(A) An individual's reproductive success depends in part on how the behavior is performed.
+
+(B) The behavior is very similar in all members of the population.
+
+(C) In each individual, the form of the behavior is determined entirely by genes.
+
+(D) The behavior remains constant despite changes in the environment.
+
+## Levels 5-6: Evaluating/Creating
+
+7. DRAW IT You are considering two optimal foraging models for the behavior of a mussel-feeding shorebird, the oystercatcher. In model A, the energetic reward increases solely with mussel size. In model B, you take into consideration that larger mussels are more difficult to open. Construct a graph of reward (energy benefit on a scale of 0–10) versus mussel length (scale of 0–70 mm) for each model. Assume that mussels under 10 mm provide no benefit and are ignored by the birds. Also assume that mussels start becoming difficult to open when
+
+they reach 40 mm in length and impossible to open when 70 mm long. Considering the graphs you have drawn, indicate what observations and measurements you would want to make in this shorebird's habitat to help determine which model is more accurate.
+
+8. EVOLUTION CONNECTION We often explain our behavior in terms of subjective feelings, motives, or reasons, but evolutionary explanations are based on reproductive fitness. Can both kinds of explanation be valid? For instance, is an explanation for behavior such as “falling in love” incompatible with an evolutionary explanation?
+
+9. SCIENTIFIC INQUIRY Scientists studying scrub jays found that "helpers" often assist mated pairs of birds by gathering food for their offspring. (a) Propose a hypothesis to explain what advantage there might be for the helpers to engage in this behavior instead of seeking their own territories and mates. (b) Explain how you would test your hypothesis. If it is correct, what results would you predict your tests to yield?
+
+10. SCIENCE, TECHNOLOGY, AND SOCIETY Researchers are very interested in studying identical twins separated at birth and raised apart. So far, the data reveal that such twins frequently have similar personalities, mannerisms, habits, and interests. What general question do you think researchers hope to answer by studying such twins? Why do identical twins make good subjects for this research? What are the potential pitfalls of this research? What abuses might occur if the studies are not evaluated critically? Explain your thinking.
+
+11. WRITE ABOUT A THEME: INFORMATION Learning is defined as a change in behavior as a result of experience. In a short essay (100–150 words), describe how heritable information contributes to the acquisition of learning, using some examples from imprinting and associative learning.
+
+## 12. SYNTHESIZE YOUR KNOWLEDGE
+
+![](images/fa4e589509ebf522bc5ca45ebd107adab2f33db30954a7f80425b994f88db83f.jpg)
+
+Acorn woodpeckers (Melanerpes formicivorus) stash acorns in storage holes they drill in trees. When these woodpeckers breed, the offspring from previous years often help with parental duties. Activities of these nonbreeding helpers include incubating eggs and defending stashed acorns. Propose some questions that a behavioral biologist could ask about the proximate and ultimate causation of these behaviors.
+
+For selected answers, see Appendix A.
+
+Unit 8 Ecology
+
+An Interview with Elisa Bonaccorso
+
+Dr. Elisa Bonaccorso is a professor at the University San Francisco de Quito in Ecuador, where she studies the evolutionary biology, ecology, and conservation of birds. Her recent work focuses on the ecology and genetics of hillstars, a group of hummingbirds adapted to the high elevation of the Andes. Dr. Bonaccorso is also part of the South American Classification Committee of the International Ornithologists' Union, a group of experts systematically evaluating the taxonomy of South American birds.
+
+## How have your research interests evolved?
+
+I got into ecology and ornithology as an undergraduate. During my PhD work, I got really excited about studying evolution, especially in the Andes, and how important mountain ranges and valleys are in speciation (forming new species). I became very interested in population genetics, because that is the level where speciation occurs, and that led to conservation genetics. Some of my recent work has been on the blue-throated hillstar (Oreotrochilus cyanolaemus), which we discovered in 2018 and identified as a new species based on morphological and genetic data. Because its population and range are both very small, this species has been considered “Critically Endangered” from the moment it was discovered. There are currently no public reserves protecting its habitat, but my group collaborates with the managers of a private reserve established soon after the description of the species. As we work to protect this bird, our efforts also help protect many species of plants, amphibians, and other parts of the ecosystem.
+
+![](images/cf2992cc2a7bf3bebf7ec0510521e7c8a4718990d8f1c235f25c3462b8d37e9e.jpg)
+
+At a fieldwork site in the Andes, where Dr. Bonaccorso and her team study the blue-throated hillstar (inset).
+
+![](images/859e8e1b9e2b58b95f94489764059b96bef49ff6fadd1fea382dc09c60566f08.jpg)
+
+"As we work to protect this bird species, our efforts also help protect many species of plants, amphibians, and other parts of the ecosystem."
+
+## What does your job look like day to day?
+
+It's often difficult to know how my day is going to be! I spend time in the office for many of my responsibilities. I direct a master's degree program in Tropical Ecology and Conservation, so part of my job involves teaching and giving career advice. I also do a lot of social media managing and fundraising: for example, to support scholarships for women of the Amazon region who are interested in ecology and conservation. Recently, I helped set up a water quality monitoring program for a local stream in Quito, which our graduate students run with the local community. I analyze data and write research papers. I also get out in the field: I teach a course in the Galápagos each year, and the research on the blue-throated hillstar involves fieldwork in a remote part of the Andes.
+
+## What leads to successful conservation efforts?
+
+I think there are two key pillars to conservation. One definitely is science. You need to work through conservation questions with the best scientific knowledge of species, ecosystems, and ecological interactions. But the other big part is people. Conservation biologists need to work in partnership with the people that live in the places that are the focus of conservation efforts. In many cases, the people who live in
+
+ecologically threatened areas know what needs to be done to protect them, and need support. In other cases, people may not be acting in ways that preserve ecosystems because they have other priorities—they need money to eat, need their cows, need their farming operations—but they might be open to adopting ecologically friendly practices. So, it's important to communicate with residents, politicians, and company owners to understand their needs and start
+
+![](images/c30bd5bc3545aa914c1daf65937cdd1c81c1506650ad9a09444b8a475c3b4b50.jpg)  
+Dr. Elisa Bonaccorso
+
+a dialogue to achieve conservation goals in a way that works for all. For example, preserving a “no-take” reserve (an area where fishing is prohibited) typically increases the amount of fish that can be caught outside the reserve because as the fish stock grows inside the reserve, there is fish “spillover” to nearby areas where fishing is allowed. It’s not intuitive to most people that reducing the fishing area can increase overall catch. Biologists can work with social scientists and leaders from local communities to help various groups make these connections.
+
+## What would you tell students who hope to get involved with conservation work?
+
+Many interesting things are currently happening. People are more environmentally conscious overall; there is a collective understanding that we need to act on climate change, deforestation, overuse of agricultural chemicals, and other threats to ecosystems. Our global networks system allows us to communicate about these very important issues and help give a voice to people who didn't have a strong voice before. An international initiative aims to conserve 30% of land and sea by 2030. I'm also optimistic about debt-for-nature swaps, where national debt is forgiven in exchange for investments in preserving nature, In Ecuador, we're preserving a big chunk of ocean next to the Galápagos Islands through such a system. Additionally, there are many local initiatives that help preserve natural environments. Here in Ecuador, farmers are growing organic products in mixed agricultural landscapes, and people in cities are increasingly interested in buying straight from such farmers, to reduce the environmental impact of their food. We need both these big initiatives as well as the local initiatives to reach conservation goals, and seeing more of both makes me hopeful. Students can make a difference at so many angles: academia, non-government organizations, or various levels of governments. As biologists, we're at the center of these important things; if we follow a path based on science and in understanding what various people need, we can be a very powerful force for positive change.
+
+# An Introduction to Ecology and the Biosphere
+
+## Key Concepts
+
+52.1 Earth's climate varies by latitude and season and is changing rapidly
+
+52.2 The distribution of terrestrial biomes is controlled by climate and disturbance
+
+52.3 Aquatic biomes are diverse and dynamic systems that cover most of Earth
+
+52.4 Interactions between organisms and the environment limit the distribution of species
+
+52.5 Ecological change and evolution affect one another over long and short periods of time
+
+![](images/bd8fc8e01b4e726963fff9b2df8a6a0cc61ef2a0e12fa1d48bf658834b376d9c.jpg)
+
+Figure 52.1 Dwarfed by a dime, this tiny frog (Paedophryne swiftorum) was discovered on a 2008 expedition to Papua New Guinea. The entire genus Paedophryne is known only from a single peninsula in the eastern part of the country. Adult frogs in this genus are about 8 mm long and are among the smallest adult vertebrates on Earth.  
+![](images/104c0f9ed180da332cd5e150e2289a5c4fad36f0e6e3db27e45886147d163ddd.jpg)
+
+## Study Tip
+
+Make a table: As you read the chapter, build a table listing factors that influence species distribution in terrestrial and aquatic environments. Add figure numbers or page numbers that give examples of these factors in each type of environment.
+
+<table><tr><td>Type of environment</td><td>Factor affecting what species live there</td><td>Example</td></tr><tr><td>Lake</td><td>Amount of sunlight that reaches organisms</td><td>Photosynthetic plants and algae live at shallow edges and sunlit surface (Figs. 52.15 and 52.18)</td></tr><tr><td></td><td></td><td></td></tr></table>
+
+What determines where a species such as this tiny frog lives?  
+![](images/c711e203aa902381947c1eded71ec18e30d4fec0c5b1555f68bcec56eb1c6036.jpg)  
+Dispersal and interactions among organisms, such as competition, also affect where species are found.
+
+When studying a species in nature, scientists often begin by asking, what environmental factors limit where it is found? How do variations in an organism's food supply or interactions with other species, such as predators, affect the size of their populations?
+
+Questions like these are the subject of ecology, the scientific study of the interactions between organisms and the environment. (Note that here and throughout this text, the term environment
+
+refers to other organisms as well as the physical aspects of an organism's surroundings.) The interactions studied by ecologists can be organized into a hierarchy that ranges in scale from single organisms to the planet (Figure 52.2). We'll begin our study of ecology by considering how Earth's climate and other factors determine the location of major life zones on land and in the oceans.
+
+## Exploring the Scope of Ecological Research
+
+## Figure 52.2
+
+![](images/2c1dc685a54800185d9c44bc9d8f487fef9ee4a11550bcf2c73801c084140a81.jpg)
+
+![](images/9fd89418d40d619832ce1f3db805e7f25c1821d6f8d06dd98d78b03a3ba47298.jpg)
+
+![](images/734fc81025250da775ba484ad2e19c5371102e90bdb35776e993fe0c1b290088.jpg)
+
+![](images/82c381b0ef2129c255e6dddc8382de52cfaa7030507269e1335f6550a2a60719.jpg)
+
+![](images/6aecf9b0f0b5ac1557b5f87c2045c7ce0a5a2b1128d3597af7afba8e56b4065b.jpg)
+
+Ecologists work at different levels of the biological hierarchy, from individual organisms to the planet. Here we present a sample research question for each level of the hierarchy.
+
+## Organismal Ecology
+
+Organismal ecology, which includes the subdisciplines of physiological, evolutionary, and behavioral ecology, is concerned with how an organism's structure, physiology, and behavior meet the challenges posed by its environment.
+
+How do flamingos select a mate?
+
+## Population Ecology
+
+A population is a group of individuals of the same species living in an area. Population ecology analyzes factors that affect population size and how and why it changes through time.
+
+What environmental factors affect the reproductive rate of flamingos?
+
+## Community Ecology
+
+A community is a group of populations of different species in an area. Community ecology examines how interactions between species, such as predation and competition, affect community structure and organization.
+
+What factors influence the diversity of species that interact at this African lake?
+
+## Ecosystem Ecology
+
+An ecosystem is the community of organisms in an area and the physical factors with which those organisms interact. Ecosystem ecology emphasizes energy flow and chemical cycling between organisms and the environment.
+
+What factors control photosynthetic productivity in this aquatic ecosystem?
+
+## Landscape Ecology
+
+A landscape (or seascape) is a mosaic of connected ecosystems. Research in landscape ecology focuses on the factors controlling exchanges of energy, materials, and organisms across multiple ecosystems.
+
+To what extent do nutrients from terrestrial ecosystems affect organisms in the lake?
+
+## Global Ecology
+
+The biosphere is the global ecosystem—the sum of all the planet's ecosystems and landscapes. Global ecology examines how the regional exchange of energy and materials influences the functioning and distribution of organisms across the biosphere.
+
+How do global patterns of air circulation affect the distribution of organisms?
+
+# Concept 52.1: Earth's climate varies by latitude and season and is changing rapidly
+
+The most significant influence on the distribution of organisms on land is climate, the long-term prevailing weather conditions in a given area. Four physical factors—temperature, precipitation, sunlight, and wind—are key components of climate. To set the stage for understanding how climate—and climate change—affect life on Earth, we’ll begin by examining patterns in climate at the global, regional, and local levels.
+
+## Global Climate Patterns
+
+Global climate patterns are determined largely by the input of solar energy and Earth's movement in space. The sun warms the atmosphere, land, and water. This warming establishes the temperature variations, movements of air and water, and evaporation of water that cause dramatic latitudinal variations in climate. Figure 52.3, on the next page, summarizes Earth's climate patterns and how they are formed.
+
+## Regional and Local Effects on Climate
+
+Climate varies seasonally and can be modified by other factors, such as large bodies of water and mountain ranges. We will examine each of these factors in more detail.
+
+## Seasonality
+
+In middle to high latitudes, Earth's tilted axis of rotation and its annual passage around the sun cause strong seasonal cycles in day length, solar radiation, and temperature (Figure 52.4). The changing angle of the sun over the course of the year also affects local environments. For example, the belts of wet and dry air on either side of the equator move slightly northward and southward as the sun's angle changes; this produces marked wet and dry seasons around $20^{\circ}$ north and $20^{\circ}$ south latitude, where many tropical deciduous forests grow. In addition, seasonal changes in wind patterns alter ocean currents, sometimes causing the upwelling of cold water from deep ocean layers (see Figure 52.15). This nutrient-rich water stimulates the growth of surface-dwelling phytoplankton and the organisms that feed on them. Though these upwelling zones make up only a few percent of the ocean's area, they are the source of more than $25\%$ of all fish caught globally.
+
+## Bodies of Water
+
+Ocean currents influence climate along the coasts of continents by heating or cooling overlying air masses that pass across the land. Coastal regions are also generally wetter than inland areas at the same latitude. The cool, misty climate produced by the cold California Current that flows southward along western North America supports a coniferous rain forest ecosystem along much of the continent's Pacific coast and large redwood groves farther south. Conversely, the west coast of northern Europe has a mild climate because the Gulf Stream carries warm water from the
+
+Figure 52.4 Seasonal variation in sunlight intensity.
+
+Because Earth is tilted on its axis relative to its plane of orbit around the sun, the intensity of solar radiation varies seasonally. This variation is smallest in the tropics and increases toward the poles.
+
+![](images/890d7d91350b8bdb79621f01705cee1e19d98a1657423f7c304614e3ddf6e023.jpg)
+
+## Exploring Global Climate Patterns
+
+## Figure 52.3
+
+## Latitudinal Variation in Sunlight Intensity
+
+Earth's curved shape causes latitudinal variation in the intensity of sunlight. Sunlight strikes the tropics (those regions that lie between $23.5^{\circ}$ north latitude and $23.5^{\circ}$ south latitude) most directly, while at higher latitudes, sunlight hits Earth at an oblique angle. This means that a given area at the equator (say, a square meter) receives more solar energy than the same area at higher latitudes. Therefore, temperatures are generally highest near the equator and steadily decrease with increasing latitude.
+
+## Global Air Circulation and Precipitation Patterns
+
+Intense solar radiation near the equator initiates a global pattern of air circulation and precipitation. High temperatures in the tropics evaporate water from Earth's surface and cause warm, wet air masses to rise (blue arrows) and flow toward the poles. As the rising air masses expand and cool, they release much of their water content, creating abundant precipitation in tropical regions. The high-altitude air masses, now dry, descend (tan arrows) toward Earth around $30^{\circ}$ north and south, absorbing moisture from the land and creating an arid climate conducive to the development of the deserts that are common at those latitudes. Some of the descending air then flows toward the poles. At latitudes around $60^{\circ}$ north and south, the air masses again rise and release abundant precipitation (though less than in the tropics). Some of the cold, dry rising air then flows to the poles, where it descends and flows back toward the equator, absorbing moisture and creating the comparatively rainless and bitterly cold climates of the polar regions.
+
+![](images/60426b890ee774c583604ee0e1fef5f063bd9bd9730169c3eb4801df440f2c63.jpg)
+
+![](images/2d9a889e203fcf6f54fd25a7304852e65a51425dda9649900cf299ce173d7926.jpg)
+
+![](images/8097c1cb34a1e9ee1c6278b85aa488907c0b4aa53cc0aa72d8d1270ade0363d1.jpg)
+
+Air flowing close to Earth's surface creates predictable global wind patterns. As Earth rotates on its axis, land near the equator moves faster than that at the poles, deflecting the winds from the vertical paths shown above and creating the more easterly and westerly flows shown at left. Cooling trade winds blow from the northeast to the southwest (northern hemisphere) or the southeast to the northwest (southern hemisphere) in the tropics. Prevailing westerlies blow from the southwest to the northeast (northern hemisphere) or the northwest to the southeast (southern hemisphere) in temperate zones, defined as the regions between the Tropic of Cancer and the Arctic Circle and between the Tropic of Capricorn and the Antarctic Circle.
+
+Figure 52.5 Global circulation of surface water in the oceans.
+
+Water is warmed at the equator and flows north and south toward the poles, where it cools. Note the similarities between the direction of water circulation in the gyres and the direction of the trade winds in Figure 52.3. This is due to the fact that ocean surface circulation is driven by dominant winds.
+
+![](images/6e0103134b489d57e76e7230644a5857261b5253a5bff6978874592dd94566e7.jpg)
+
+equator to the North Atlantic (Figure 52.5). As a result, northwestern Europe is warmer during winter than southeastern Canada, which is farther south but is cooled by the Labrador Current flowing south from the coast of Greenland.
+
+Because of the high specific heat of water (see Concept 3.2), oceans and large lakes tend to moderate the climate of nearby land. Therefore, coastal areas with moist air tend to have a smaller difference in temperature between day and night than deserts do. The difference in heat capacity of water and land also influences local wind patterns, resulting in a cooling breeze blowing onto land during a hot day and out to sea at night (Figure 52.6). This local moderation of climate can be limited to the coast itself, however. In southern California and southwestern Australia, cool, dry ocean breezes in summer are warmed when they contact the land, absorbing moisture and creating a hot, arid climate just a few kilometers inland (see Figure 3.5). This climate pattern also occurs around the Mediterranean Sea, which gives it the name Mediterranean climate.
+
+## Mountains
+
+Like large bodies of water, mountains influence air flow over land. When warm, moist air approaches a mountain, the air rises and cools, releasing moisture on the windward side of the peak (Figure 52.7). On the leeward side, cooler, dry air descends, absorbing moisture and producing a “rain shadow.” Such leeward rain shadows determine where many deserts are found, including the Mojave Desert of western North America and the Gobi Desert of Asia.
+
+Mountains also affect the amount of sunlight reaching an area and thus the local temperature and rainfall. South-facing slopes in
+
+Figure 52.6 Effects of the ocean on coastal wind patterns.  
+![](images/279578f31b3e0c53623be81b281655cd773ef55d8980d76d8698646fd65492d0.jpg)  
+(a) On a hot day, the land heats up more quickly than the ocean. This warmer, less dense air over the land rises and is replaced by cooler air from offshore.
+
+![](images/5d5d793ca99a208f94f6ec31be24c3b2af3a2fe1fbfbf51197bef8efb45ea597.jpg)  
+(b) When the temperature drops at night, the land cools more quickly than the ocean. Now the relatively warmer, less dense air over the water rises and is replaced by cooler air from land.
+
+Figure 52.7 How mountains affect climate.
+
+This figure illustrates what happens when warm, moist wind blows over a mountain range.
+
+![](images/86d6a3a9a12916a68ff24d884633908bc4512d4864c40d98524df73984b6f04b.jpg)
+
+the Northern Hemisphere receive more sunlight than north-facing slopes and are therefore warmer and drier. These physical differences influence species distributions locally. On many mountains in western North America, spruce and other conifers grow on the cooler north-facing slopes, but shrubby, drought-resistant plants inhabit the south-facing slopes. In addition, every 1,000-m increase in elevation produces an average temperature drop of $6^{\circ}$ C, equivalent to that produced by an 880-km increase in latitude. This is one reason that high-elevation plant communities near the equator, for example, can be similar to lower-elevation plant communities that are far from the equator.
+
+## Effects of Vegetation on Climate
+
+Climate affects where terrestrial organisms can live, but organisms can also affect climate. This is especially true of forests, which can alter the climate at local and even regional scales.
+
+When viewed from above, a forest is darker in color than a desert or grassland. As a result, a forest absorbs more (and reflects less) solar energy than does a desert or grassland, thereby contributing to a warming of Earth's surface in forested areas. This warming effect, however, is more than offset by transpiration, an evaporative loss of water from a plant that cools the plant's surface—similar to how your body is cooled when you sweat. The evaporative loss of water is much greater in forests than in other ecosystems, causing forests to affect climate in two key ways: Forests reduce Earth's surface temperature and they increase precipitation rates (Figure 52.8). As documented in regions around the world, the climate becomes hotter and drier in areas where humans have cut down large forests and becomes cooler and wetter where humans have restored large forests.
+
+## Microclimate
+
+At an even smaller scale is the microclimate, very fine, localized patterns in climatic conditions. Many features in the environment influence microclimate by casting shade, altering evaporation from soil, or changing wind patterns. For example, forest trees often moderate the microclimate below them. Cleared areas therefore
+
+Figure 52.8 How cutting down a forest affects regional climate.  
+![](images/b1b9c4f8a75b900c6d91bd933634dc385375e29293efac9571a000b4173e49d0.jpg)
+
+typically experience greater temperature extremes than the forest interior because of greater solar radiation and wind currents that arise from the rapid heating and cooling of open land. Within a forest, low-lying ground is usually wetter than higher ground and tends to be occupied by different tree species. A log or large stone can shelter organisms such as salamanders, worms, and insects, buffering them from the extremes of temperature and moisture.
+
+Every environment on Earth exhibits small-scale differences in chemical and physical attributes, such as temperature, light, water, and nutrients. Later, we'll examine how these abiotic, or nonliving, factors influence the distribution and abundance of organisms. Similarly, all of the biotic, or living, factors—the other organisms that are part of an individual's environment—also influence the distribution and abundance of life on Earth.
+
+## Global Climate Change
+
+Because climatic variables affect the geographic ranges of most plants and animals, any large-scale change in Earth's climate profoundly affects the biosphere. In fact, a large-scale climate "experiment" is under way: The burning of fossil fuels and deforestation are increasing the concentrations of carbon dioxide and other greenhouse gases in the atmosphere. This has caused climate change, a directional change to the global climate that lasts three decades or more (as opposed to short-term changes in the weather). As we'll explore in more detail in Concept 56.4, Earth has warmed an average of $1.1^{\circ}\mathrm{C}$ $(2.0^{\circ}\mathrm{F})$ since 1900 and is projected to warm $0.5 - 4.5^{\circ}\mathrm{C}$ $(1 - 8^{\circ}\mathrm{F})$ more by the year 2100. Wind and precipitation patterns also are shifting, and extreme weather events (such as major storms and droughts) are occurring more frequently.
+
+How will these changes affect the distribution of species on Earth? Some species may shift their ranges in response to climate change toward higher latitudes (toward the poles), greater elevations, or greater depths in aquatic habitats. A growing amount of research documents that such range shifts are already occurring for many species in all ecosystems. As just a few examples, as the climate has warmed in recent decades, 22 of 35 European butterfly species studied have shifted their ranges farther north by 35–240 km; marine zooplankton globally have shifted their ranges by an average of about 100 km/decade; and a study in the North Sea showed that the depth range of many fish species has deepened by several meters per decade.
+
+Yet, there is considerable variation in range shift between species: Some are adjusting their ranges much more readily than others, which is likely to lead to novel interactions in ecological communities (see Figure 56.31). There are three main reasons for this variation. First, species vary in their dispersal abilities. Animals that swim, fly, or run can more readily move in response to environmental change than sessile (nonmotile) organisms, such as plants that are rooted in place. Populations of sessile organisms can experience range shifts if offspring (which are dispersed via seeds and larvae) settle in different areas than the parents, but this generational shift is especially slow for long-lived species that have long generation times. Second, a lack of suitable habitat can impede range shifts for many species. Consider, for example, a rodent living on the southern coast of Australia or a salamander species inhabiting a mountaintop in Mexico. Range shifts to greater latitude or greater elevation, respectively, are not possible in these examples. Human activities that destroy and fragment habitats can alter how species can adjust their ranges; this is especially relevant
+
+## Figure 52.9 Examples of variation in abiotic factors.
+
+In response to a warming climate, species may adjust their ranges toward higher latitudes, deeper water, or higher elevation to stay in zones of suitable temperatures. However, other abiotic factors may not be suitable in the potential new range.
+
+![](images/c578cd1eb672ea9245135697c3bd63674b17c733af91dc0b5d957a5d0c3549e4.jpg)  
+WHAT IF? Suppose warming ocean waters cause corals to shift their ranges to higher latitudes. What changes in other abiotic factors would the corals face as latitude increases?
+For suggested answer, see Appendix A.
+
+## Interview
+
+Interview with Margaret Davis: Using fossil pollen to track tree species migration (eTextbook only)
+
+![](images/700aa4cf98ae93a3dd2b09178b341d47c851124ffe33276c3034da0593c4a5e7.jpg)
+
+for terrestrial species. Finally, it is important to remember that while temperature is a very important factor affecting species' ranges, there are many other abiotic factors that affect where organisms can live and thrive. Range shifts that would maintain an organism within its ideal temperature range may place it in an area that is unsuitable with respect to other abiotic factors (Figure 52.9).
+
+A growing body of research shows the complicated impacts of climate change on biological communities. For example, in western North America, researchers have documented nearly 200 plant species that have moved to lower elevations, most likely in response to decreased rain and snow at higher elevations. Another recent study found that, on average, the geographic ranges of 67 bumblebee species (Figure 52.10) in the Northern Hemisphere have
+
+Figure 52.10 The rusty-patched bumblebee (Bombus affinis).
+
+![](images/7ea2d4ac944e19ca943cfded2ffd19ec4c03887e69ee24296ea018da691b7e45.jpg)
+
+been shrinking: The bees have been retreating from the southern edges of their distributions, but failing to expand their ranges to the north. Many groups of organisms with limited ability for range shifts are in severe decline. For example, the increasing frequency of marine heat waves in the past two decades has severely reduced reef-building corals around the world.
+
+## Concept Check 52.1
+
+1. Explain how the sun's unequal heating of Earth's surface results in deserts near $30^{\circ}$ north and south of the equator.
+
+2. What are some of the differences in microclimate between an unplanted agricultural field and a nearby stream corridor with trees?
+
+3. WHAT IF? Changes in Earth's climate at the end of the last ice age happened gradually, taking centuries to thousands of years. If the planet continues to warm at its current, rapid rate, how might this affect the evolution of long-lived trees compared with that of annual plants, which have much shorter generation times?
+
+4. MAKE CONNECTIONS Focusing just on the effects of temperature, would you expect the global distribution of $C_{4}$ plants to expand or contract as Earth becomes warmer? Why? (See Concept 10.4.)
+
+For suggested answers, see Appendix A.
+
+# Concept 52.2: The distribution of terrestrial biomes is controlled by climate and disturbance
+
+Earth's life is distributed on a grand scale in biomes, major life zones characterized by vegetation type in terrestrial biomes (or by the physical environment in aquatic biomes). On land, what determines where biomes are located?
+
+## Climate and Terrestrial Biomes
+
+Because climate has a strong influence on the distribution of plant species, it is a major factor in determining the locations of terrestrial biomes (Figure 52.11). The importance of climate on the distribution of biomes can be shown in a climograph, a plot of the annual mean temperature and precipitation in a particular region. Figure 52.12 is a climograph for some North American biomes. Notice, for instance, that the range of precipitation in northern coniferous and temperate forests is similar but that temperate forests are generally warmer. Temperate grasslands are typically drier than either kind of forest, and deserts are drier still.
+
+Factors other than mean temperature and precipitation also play a role in determining where biomes exist. Some areas in North America with a particular combination of temperature and precipitation support a temperate broadleaf forest, but other areas with similar values support a coniferous forest (see the overlap in Figure 52.12). One reason for this variation is that climographs are based on annual averages, but the pattern of climatic variation is often as important as the average climate. For example, some areas may receive regular precipitation throughout the year, whereas other areas may have distinct wet and dry seasons.
+
+## General Features of Terrestrial Biomes
+
+Most terrestrial biomes are named for major climatic features and for their predominant vegetation. Temperate grasslands, for instance, are generally found in middle latitudes, where the climate is moderate, and are dominated by various grass species. Each biome is also characterized by microorganisms, fungi, and animals adapted to that particular environment. Temperate grasslands are usually more likely than temperate broadleaf forests to
+
+Figure 52.11 The distribution of major terrestrial biomes.  
+![](images/fec79239d6f0edae66b8890e565196525f05eaced4ea61bb0dc0773e25fd174f.jpg)
+
+## Figure 52.12 A climograph for some major biomes in North America.
+
+The areas plotted here encompass the ranges of annual mean temperature and precipitation in the biomes.
+
+![](images/1e64f90ea9edba3da46d76439fd57a4561bbadfcd2d8f7843ec606b61dda39c8.jpg)  
+INTERPRET THE DATA Some arctic tundra ecosystems receive as little rainfall as deserts but have much more dense vegetation. What climatic factor could cause this difference? Explain.
+
+be populated by arbuscular mycorrhizal fungi (see Figure 37.14) and by large grazing mammals. Although Figure 52.11 shows distinct boundaries between the biomes, terrestrial biomes usually grade into neighboring biomes, sometimes over large areas. The area of intergradation, called an ecotone, may be wide or narrow.
+
+Vertical layering of vegetation is an important feature of terrestrial biomes. In many forests, the layers from top to bottom consist of the upper canopy, the low-tree layer, the shrub understory, the ground layer of herbaceous plants, the forest floor (litter layer), and the root layer. Nonforest biomes have similar, though usually
+
+less pronounced, layers. Layering of vegetation provides many different habitats for animals, which sometimes exist in well-defined feeding groups, from the insectivorous birds and bats that feed above canopies to the worms, arthropods, and small mammals that search for food in the litter and root layers below.
+
+The species composition of each kind of biome varies from place to place. For instance, in the northern coniferous forest (taiga) of North America, red spruce is common in the east but does not occur in most other areas, where black spruce and white spruce are abundant. As Figure 52.13 shows, cacti living in deserts of North and South America resemble plants called euphorbs found in African deserts. But since cacti and euphorbs belong to different evolutionary lineages, their similarities are due to convergent evolution rather than shared ancestry.
+
+## Disturbance and Terrestrial Biomes
+
+Biomes are dynamic, and disturbance rather than stability tends to be the rule. In ecological terms, disturbance is an event such as a storm, fire, or human activity that changes a community, removing organisms from it and altering resource availability. For example, hurricanes and other storms create openings for new species in many tropical and temperate forests and can alter forest composition. After Hurricane Katrina struck the Gulf coast of the United States in 2005, mixed swamp forests in the area shifted toward a dominance of bald cypress (Taxodium distichum) and water tupelo (Nyssa aquatica) because these species are less susceptible to wind damage than other tree species found there. As a result of disturbances, biomes are often patchy, containing several different communities in a single area.
+
+In many biomes, even the dominant plants depend on periodic disturbance. Natural wildfires are an integral component of grasslands, savannas, chaparral, and many coniferous forests. Before agricultural and urban development, much of the south-eastern United States was dominated by a single conifer species, the longleaf pine. Without periodic burning, broadleaf trees tended to replace the pines. Forest managers now use fire as a tool to help maintain many coniferous forests.
+
+Figure 52.14 summarizes the major features of terrestrial biomes. As you read about the characteristics of each biome, remember that humans have altered much of Earth's surface,
+
+Figure 52.13 Convergent evolution in a cactus and a euphorb.
+
+Cacti in the genus Cereus are found in the Americas; Euphorbia canariensis, a euphorb, is native to the Canary Islands, off the northwest coast of Africa.
+
+![](images/4200d1145c51a7712c81f91efdfb565792a9b35ef45f0af8c3f4e851b3fded6d.jpg)
+
+## Exploring Terrestrial Biomes
+
+Figure 52.14
+
+## Tropical Forest
+
+Distribution Tropical forest occurs in equatorial and subequatorial regions.
+
+Precipitation In tropical rain forests, rainfall is relatively constant, about 200–400 cm annually. In tropical dry forests, precipitation is highly seasonal, about 150–200 cm annually, with a six- to seven-month dry season.
+
+Temperature High year-round, averaging 25–29°C with little seasonal variation.
+
+Plants Tropical forests are vertically layered, and competition for light is intense. Layers in rain forests include trees that grow above a closed canopy, the canopy trees, one or two layers of subcanopy trees, and layers of shrubs and herbs (small, nonwoody plants). There are generally fewer layers in tropical dry forests. Broadleaf evergreen trees are dominant in tropical rain forests, whereas many tropical dry forest trees drop
+
+![](images/a5495fc3ffbbdf47bcb6dcf7db5f85134a9684d49d97205565996c6278b03722.jpg)  
+A tropical rain forest in Costa Rica
+
+their leaves during the dry season. Epiphytes such as bromeliads and orchids generally cover tropical forest trees but are less abundant in dry forests. Thorny shrubs and succulent plants are common in some tropical dry forests.
+
+Animals Earth's tropical forests are home to millions of species, including an estimated 5–30 million still undescribed species of insects, spiders, and other arthropods. In fact, animal diversity is higher in tropical forests than in any other terrestrial biome. The animals, including amphibians, birds and other reptiles, mammals, and arthropods, are adapted to the vertically layered environment and are often inconspicuous.
+
+Human Impact Humans have long had thriving communities in tropical forests. Many tropical forests are now being cut down and converted to farmland, urban areas, and other types of land use.
+
+## Desert
+
+Distribution Deserts occur in bands near $30^{\circ}$ north and south latitude or at other latitudes in the interior of continents (for instance, the Gobi Desert of north-central Asia).
+
+Temperature Temperature is variable seasonally and daily. Maximum air temperature in hot deserts may exceed $50^{\circ}$ C; in cold deserts air temperature may fall below $-30^{\circ}$ C.
+
+![](images/b6e20a9d4802f8a5655df0baa4684030b6773c04ea1f98ebae4ad198c50446be.jpg)  
+Precipitation
+Precipitation is low and highly variable, generally less than 30 cm per year.
+
+![](images/b3a708ea2526a4efc14b5b7014ef11acfee72425a0a85b3d97ee6f83c01f58db.jpg)
+
+Plants Deserts are dominated by low, widely scattered vegetation; the proportion of bare ground is high compared with other biomes. The plants include succulents such as cacti or euphorbs, deeply rooted shrubs, and herbs that grow during the infrequent moist periods. Desert plant adaptations include tolerance of heat and dessication, water storage, and reduced leaf surface area. Physical defenses, such as spines, and chemical defenses, such as toxins in the leaves of shrubs, are common. Many of the plants exhibit $C_{4}$ or CAM photosynthesis.
+
+Animals Common desert animals include snakes and lizards, scorpions, ants, beetles, migratory and resident birds, and seed-eating rodents. Many species are nocturnal. Water conservation is a common adaptation, with some species surviving solely on water obtained from breaking down carbohydrates in seeds.
+
+Human Impact Long-distance transport of water and deep groundwater wells have allowed humans to maintain substantial populations in deserts. Urbanization and conversion to irrigated agriculture have reduced the natural biodiversity of some deserts.
+
+Organ Pipe Cactus National Monument, Arizona
+
+## Savanna
+
+Distribution Savanna occurs in equatorial and subequatorial regions.
+
+Precipitation Seasonal rainfall averages 30–50 cm per year. The dry season can last up to eight or nine months.
+
+Temperature The savanna is warm year-round, averaging 24–29°C, but with somewhat more seasonal variation than in tropical forests.
+
+Plants The scattered trees found at different densities in the savanna often are thorny and have small leaves, an apparent adaptation to the relatively dry conditions. Fires are common in the dry season, and the dominant plant species are fire-adapted and tolerant of seasonal drought. Grasses and small nonwoody plants called forbs, which make up most of the ground cover, grow rapidly in response to seasonal rains and are tolerant of grazing by large mammals and other herbivores.
+
+![](images/af167e8b7877d51ef92c3ce02b993b73933cdc80fc9e87bb08d55147bba686b9.jpg)
+
+Animals Large plant-eating mammals, such as wildebeests and zebras, and predators, including lions and hyenas, are common inhabitants. However, the dominant herbivores are actually insects, especially termites. During seasonal droughts, grazing mammals often migrate to parts of the savanna with more forage and scattered watering holes.
+
+A savanna in Kenya
+
+Human Impact The earliest humans may have lived in savannas. Fires set by humans may help maintain this biome, though overly frequent fires reduce tree regeneration by killing the seedlings and saplings. Cattle ranching and overhunting have led to declines in large-mammal populations.
+
+## Chaparral
+
+Distribution This biome occurs in midlatitude coastal regions on several continents, and its many names reflect its far-flung distribution: chaparral in North America, matorral in Spain and Chile,
+
+![](images/f8a4193fba1e8357824ece521504f6a01a0c981671ed79d576c13ed34b3ca472.jpg)
+
+Precipitation Precipitation is highly seasonal, with rainy winters and dry summers. Annual precipitation generally falls within the range of 30–50 cm.
+
+Temperature Fall, winter, and spring are cool, with average temperatures in the range of 10–12°C. Average summer temperature can reach 30°C, and daytime maximum temperature can exceed 40°C.
+
+Plants Chaparral is dominated by shrubs and small trees, along with many kinds of grasses and herbs. Plant diversity is high, with
+
+many species confined to a specific, relatively small geographic area. Adaptations of the woody plants to drought include their tough evergreen leaves, which reduce water loss. Adaptations to fire are also prominent. Some of the shrubs produce seeds that will germinate only after a hot fire; food reserves stored in their fire-resistant roots enable them to resprout quickly and use nutrients released by the fire.
+
+Animals Native mammals include browsers, such as deer and goats, that feed on twigs and buds of woody vegetation, and a high diversity of small mammals. Chaparral areas also support many species of amphibians, birds and other reptiles, and insects.
+
+Human Impact Chaparral areas have been heavily settled and reduced through conversion to agriculture and urbanization. Humans contribute to the fires that sweep across the chaparral.
+
+An area of chaparral in California
+
+(Continued)
+
+## Figure 52.14 (Continued)
+
+## Temperate Grassland
+
+Distribution The veldts of South Africa, the puszta of Hungary, the pampas of Argentina and Uruguay, the steppes of Russia, and the plains and prairies of central North America are examples of temperate grasslands.
+
+Precipitation Precipitation is often highly seasonal, with relatively dry winters and wet summers. Annual precipitation generally averages between 30 and 100 cm. Periodic drought is common.
+
+Temperature Winters are generally cold, with average temperatures falling below $-10^{\circ}C$ . Summers, with average temperatures often approaching $30^{\circ}C$ , are hot.
+
+Plants The dominant plants are grasses and forbs, which vary in height from a few centimeters to 2 m in tallgrass prairie. Many grassland plants have adaptations that help them survive periodic, protracted droughts and fire. For example, grasses can sprout quickly following fire. Grazing by large mammals helps prevent establishment of woody shrubs and trees.
+
+![](images/03887e16e22e1cd8a5e0c457df128063f02168ea02a82f0e252037da989ca5e9.jpg)  
+A grassland in Nebraska
+
+Animals Native mammals include large grazers such as bison and wild horses. Temperate grasslands are also inhabited by a wide variety of burrowing mammals, such as prairie dogs in North America.
+
+Human Impact Deep, fertile soils make temperate grasslands ideal places for agriculture, especially for growing grains. As a consequence, most grassland in North America and much of Eurasia has been converted to farmland. In some drier grasslands, cattle and other grazers have turned parts of the biome into desert.
+
+## Northern Coniferous Forest
+
+Distribution Extending in a broad band across northern North America and Eurasia to the edge of the arctic tundra, the northern coniferous forest, or taiga, is the largest terrestrial biome on Earth.
+
+Precipitation Annual precipitation generally ranges from 30 to $70\mathrm{cm}$ , and periodic droughts are common. However, some coastal coniferous forests of the U.S. Pacific Northwest are temperate
+
+rain forests that may receive over 300 cm of annual precipitation.
+
+![](images/1fdb79f5a8ffc6c6a13d58cf0abbbba1e0222613025a20c9972e32c762b7bbcd.jpg)
+
+Temperature Winters are usually cold; summers may be hot. Some areas of coniferous forest in Siberia typically range in temperature from $-50^{\circ}C$ in winter to over $20^{\circ}C$ in summer.
+
+Plants Northern coniferous forests are dominated by cone-bearing trees, such as pine, spruce, fir, and hemlock, some of which depend on fire to regenerate. The conical shape of many conifers prevents too much snow from accumulating and breaking their branches, and their needle- or scale-like leaves reduce water loss. The diversity of plants in the shrub and herb layers of these forests is lower than in temperate broadleaf forests.
+
+Animals While many migratory birds nest in northern coniferous forests, other species reside there year-round. The mammals of this biome, which include moose, brown bears, and Siberian tigers, are diverse. Periodic outbreaks of insects that feed on the dominant trees can kill vast tracts of trees.
+
+Human Impact Although they have not been heavily settled by human populations, northern coniferous forests are being logged at an alarming rate, and the old-growth stands of these trees may soon disappear.
+
+A coniferous forest in Alaska
+
+Continued on next page
+
+## Temperate Broadleaf Forest
+
+Distribution Temperate broadleaf forest is found mainly at midlatitudes in the Northern Hemisphere, with smaller areas in Chile, South Africa, Australia, and New Zealand.
+
+Precipitation Precipitation can average from about 70 to over 200 cm annually. Significant amounts fall during all seasons, including summer rain and, in some forests, winter snow.
+
+Temperature Winter temperatures average $0^{\circ}$ C. Summers, with temperatures up to $35^{\circ}$ C, are hot and humid.
+
+Plants A mature temperate broadleaf forest has distinct vertical layers, including a closed canopy, one or two strata of understory trees, a shrub layer, and an herb layer. There are few epiphytes. The dominant plants in the Northern Hemisphere are deciduous trees, which drop their leaves before winter, when low temperatures would reduce photosynthesis and make water uptake from frozen soil difficult. In Australia, evergreen eucalyptus trees dominate these forests.
+
+![](images/d411f6601a796e8e94f8813f98ab1676a4238b150ce97257fe3e295de8cea176.jpg)  
+A temperate broadleaf forest in New Jersey
+
+Animals In the Northern Hemisphere, many mammals hibernate in winter, while many bird species migrate to warmer climates. Mammals, birds, and insects make use of all the vertical layers of the forest.
+
+Human Impact Temperate broadleaf forest has been heavily settled on all continents. Logging and land clearing for agriculture and urban development cleared virtually all the original deciduous forests in North America. However, owing to their capacity for recovery, these forests are returning over much of their former range.
+
+## Tundra
+
+Distribution Tundra covers expansive areas of the Arctic, amounting to $20\%$ of Earth's land surface. High winds and low temperatures produce similar plant communities, called alpine
+
+![](images/1a8dce481ac60614d1bd59303b3f291ef503953bb0b48764e819db7081b9be75.jpg)
+
+Precipitation Precipitation averages from 20 to 60 cm annually in arctic tundra but may exceed 100 cm in alpine tundra.
+
+Temperature Winters are cold, with averages in some areas below $-30^{\circ}\mathrm{C}$ . Summer temperatures generally average less than $10^{\circ}\mathrm{C}$ .
+
+Plants The vegetation of tundra is mostly herbaceous, consisting of a mixture of mosses, grasses, and forbs, along with some dwarf shrubs and trees and lichens. A permanently frozen layer of soil called permafrost restricts the growth of plant roots.
+
+Animals Large grazing musk oxen are resident, while caribou and reindeer are migratory. Predators include bears, wolves, and foxes. Many bird species migrate to the tundra for summer nesting.
+
+Human Impact Tundra is sparsely settled but has become the focus of significant mineral and oil extraction in recent years.
+
+Tundra in Yukon Territory, Canada, in autumn
+
+replacing natural communities with urban and agricultural ones. The central United States, for example, is classified as grassland and once contained extensive areas of tallgrass prairie. Very little of the original prairie remains today, however, having been converted to farmland.
+
+## Concept Check 52.2
+
+1. Based on the climograph in Figure 52.12, what mainly differentiates temperate grassland from temperate broadleaf forest?
+
+2. Using Figure 52.14, identify the natural biome in which you live, and summarize its abiotic and biotic characteristics. Do these reflect your actual surroundings? Explain.
+
+3. WHAT IF? If average temperatures on Earth increase by $4^{\circ}$ C in this century, predict which biome would be most likely to replace tundra in some locations as a result. Explain.
+
+For suggested answers, see Appendix A.
+
+## Concept 52.3: Aquatic biomes are diverse and dynamic systems that cover most of Earth
+
+Some of the most important factors affecting aquatic biomes are the amount of light and the availability of nutrients–chemical elements required by primary producers for their growth and metabolism. Aquatic biomes are also influenced by other physical and chemical factors. For example, marine biomes generally have salt concentrations that average 3%, whereas freshwater biomes are usually characterized by a salt concentration of less than 0.1%.
+
+The oceans make up the largest marine biome, covering about $75\%$ of Earth's surface. Because of their vast size, they greatly impact the biosphere. Water evaporated from the oceans provides most of the planet's rainfall. Marine algae and photosynthetic bacteria supply much of the world's oxygen and consume large amounts of atmospheric carbon dioxide. Ocean temperatures have a major effect on global climate and wind patterns (see Figure 52.3), and along with large lakes, oceans tend to moderate the climate of nearby land.
+
+Freshwater biomes are closely linked to the soils and biotic components of the surrounding terrestrial biome. The particular characteristics of a freshwater biome are also influenced by the patterns and speed of water flow and the climate to which the biome is exposed.
+
+## Zonation in Aquatic Biomes
+
+An important feature of aquatic biomes is their physical and chemical stratification (layering), both vertically and horizontally, as illustrated for both a lake and a marine environment in Figure 52.15. Light is absorbed by water, and its intensity decreases rapidly with depth, resulting in vertical stratification. The upper photic zone is the region where there is sufficient light for photosynthesis, while the lower aphotic zone is the region where little light penetrates. Deep in the aphotic zone of the ocean lies the abyssal zone, at 2,000–6,000 m below the surface. The water column is called the pelagic zone. The bottom surface of all these aquatic zones, deep or shallow, is the benthic zone,
+
+Figure 52.15 Zonation in aquatic environments.  
+![](images/99d87a86ca6e6e5c082bdce6a11154a9a3b75ba438057f573a5d9df5d96f9837.jpg)  
+The lake environment is generally classified on the basis of three physical criteria: light penetration (photic and aphotic zones), distance from shore and water depth (littoral and limnetic zones), and whether the environment is open water (pelagic zone) or on the bottom (benthic zone).
+
+![](images/a7348adffff48aa6d2699b99115bcbd496928963f72c79ce6340e6abc0c55a31.jpg)  
+Like lakes, the marine environment is generally classified on the basis of light penetration (photic and aphotic zones), distance from shore and water depth (intertidal, littoral, neritic, and oceanic zones), and whether the environment is open water (pelagic zone) or on the bottom (benthic zone).
+
+The diagram shows a cross-section of an ocean basin in the tropics, where a permanent thermocline occurs. The thermocline limits exchange between the colder, more dense deep water below and the warmer, less dense shallow water above, resulting in low nutrient concentration in surface waters, except in areas where runoff or upwelling occur.
+
+Rivers carry nutrients (represented by orange and green circles) from terrestrial ecosystems; as a result, coastal waters typically have high nutrient availability.
+
+Nutrient concentration in surface waters is usually low when a strong thermocline is present (for example, at tropical latitudes or in the summer in temperate zones): Available nutrients are quickly used by photosynthetic organisms, and the thermocline prevents mixing of the water column.
+
+In some parts of oceans and large lakes, deep water is forced to the surface when dominant winds force surface water away from land. This process, called upwelling, brings cold, nutrient-rich water to the surface.
+
+![](images/87619707731a5b541945ca9e91d5d6f4ada854701a21e0f0a341b422a84040a4.jpg)  
+Nutrients are plentiful in the deep ocean below the photic zone, since they are released through decomposition of organisms and by the consumers when they respire, and there are no photosynthetic organisms to take up the nutrients.
+
+which consists of rocks and sediment occupied by communities of organisms collectively called the benthos. In addition, the photic zone exhibits horizontal stratification with distance from shore. Where the benthos is within the photic zone (called the littoral zone in both lakes and oceans), aquatic plants and seaweeds are important primary producers, along with phytoplankton. In areas farther from shore where the benthos is deeper than the photic zone, phytoplankton floating near the surface are the only primary producers. In lakes, this occurs in the limnetic zone (photic zone in an area of a lake that is too deep for rooted plants to grow). In oceans, this occurs in part of the neritic zone (the water column above the continental shelf) and in the oceanic zone (the water column above deep oceanic crust). A major source of food for many benthic species, especially those in the aphotic zone, is dead organic matter called detritus, which “rains” down from the productive surface waters of the photic zone.
+
+While thermal energy from sunlight warms surface waters to whatever depth the sunlight penetrates, the deeper waters remain quite cold. In many areas of oceans and lakes, a narrow layer of abrupt temperature change called a thermocline separates the more uniformly warm (and less dense) upper layer from more uniformly cold (and denser) deeper waters. Such thermoclines occur year-round in the tropics and in the summer in temperate zones. Where and when strong thermoclines occur, surface waters are typically low in nutrients, because photosynthetic organisms are constantly taking up available nutrients. Deeper waters, on the other hand, are typically nutrient-rich, because respiration and decomposition release nutrients from organic molecules, yet the aphotic zone lacks photosynthetic organisms that would take up nutrients. Several mechanisms can supply nutrients to the photic zone, including 1) runoff from land, which leads to greater nutrient levels in the neritic zone compared to the oceanic zone, especially near large rivers (Figure 52.16a); 2) upwelling of deep water toward the surface caused by winds forcing surface current away from land or away from another surface current (Figure 52.16b); and 3) vertical mixing caused by temperature-driven changes in water density.
+
+Temperature affects water density differently in marine and freshwater environments. In the oceans, water density increases continuously as temperature decreases, all the way to the point of ice formation. When surface water is cold—year-round in polar zones and in autumn, winter, and spring in temperate zones—it sinks to the bottom due to its higher density, forcing less dense, nutrient-rich deep water to the surface (Figure 52.17, on the next page). The density of fresh water, however, is highest at $4^{\circ}$ C, and so in freshwater environments the water column is stratified not just in the summer, due to warm surface water, but also in the winter, due to less dense water (colder than $4^{\circ}$ C) at the surface. As a result, a temperate lake experiences the most vertical mixing—called turnover—in spring and autumn. This seasonal turnover also plays an important role in bringing oxygen to the bottom of the lake.
+
+In both freshwater and marine environments, communities are distributed according to water depth, degree of light penetration, amount of water movement, distance from shore, and whether they are found in open water or near the bottom. Marine communities, in particular, illustrate the limitations on species distribution that result from these abiotic factors. Most of
+
+Figure 52.17 Seasonal vertical mixing in temperate marine ecosystems.
+
+The water column is well-mixed in the winter, when the surface is continuously cooled by cold air above, causing this dense water to sink to the bottom and less dense bottom water to rise to the surface. Considerable water column mixing also occurs in the spring and fall. In the summer, however, warming of surface waters by the sun leads to a strong thermocline that separates warmer, less dense surface water from colder, more dense bottom water. Nutrients become limiting in surface waters as they are used by photosynthetic organisms, and the thermocline prevents mixing of nutrient-rich bottom water with nutrient-poor surface water.
+
+![](images/8927f56dfe9ac3ff20360a91ebbbb8b702513619230f77f92943f9ccb90208f0.jpg)
+
+![](images/1ee059d9a6f542da0e94dc406d195add6809eae189fc8fcf1195719368207054.jpg)
+
+![](images/ba46b3237fb09af0e7c2cabac043a678d74804fb98ac9c28c09d863abca78e91.jpg)
+
+the plankton and fish biomass is found in the relatively shallow photic zone (see Figure 52.15b). Because water absorbs light so well and the ocean is so deep, most of the ocean volume is dark (the aphotic zone) and generally harbors a much lower density of organisms, which are mostly consumers that rely on food that falls from the photic zone above. However, there are isolated areas that teem with life, where hydrogen sulfide and other chemicals provide the energy for chemosynthetic organisms to grow. These producers in turn support a high biomass of consumers.
+
+Figure 52.18 explores the main characteristics of Earth's major aquatic biomes.
+
+![](images/a634bba85c05f22301426f6c6f5c76d007d8b78ca981f2c570446458687b99ca.jpg)
+
+## Concept Check 52.3
+
+1. Why are phytoplankton, and not benthic algae or rooted aquatic plants, the dominant photosynthetic organisms of the oceanic pelagic zone? (See Figure 52.18.)
+
+2. MAKE CONNECTIONS Many organisms living in estuaries experience freshwater and saltwater conditions each day with the rising and falling of tides. Explain how these changing conditions challenge the survival of these organisms (see Concept 44.1).
+
+3. MAKE CONNECTIONS As noted in Figure 52.18, the addition of nutrients to a lake can cause an algal bloom. When these algae die, complex molecules in their bodies are broken down by decomposers using aerobic respiration. Explain why this could reduce the lake's oxygen levels (see Concept 9.1).
+
+## Concept 52.4: Interactions between organisms and the environment limit the distribution of species
+
+Broadly speaking, species distributions are a consequence of both ecological factors and evolutionary history. Consider kangaroos, which are found in Australia and nowhere else in the world. Fossil evidence indicates that kangaroos and their close relatives originated in Australia, roughly 5 million years ago. By that time, Australia had moved close to its present location (by continental drift; see Concept 25.4), and it was not connected to other landmasses. Thus, kangaroos occur only in Australia in part because of an accident of history: The kangaroo lineage originated there at a point in time when the continent was geographically isolated.
+
+But ecological factors are also important. To date, kangaroos have not dispersed (on their own) to other continents; hence, they are restricted to the continent on which they originated. And within Australia, kangaroos are found in some habitats but not in others. The red kangaroo, for example, occurs in the arid grasslands of central Australia, but not in the tall, open forests of eastern Australia. Moreover, kangaroos are not unusual in this
+
+# Exploring Aquatic Biomes
+
+Figure 52.18
+
+## Lakes
+
+Physical Environment Standing bodies of water range from ponds a few square meters in area to lakes covering thousands of square kilometers. Light decreases with depth, creating stratification. Temperate lakes may have a seasonal thermocline; tropical lowland lakes have a thermocline year-round.
+
+Chemical Environment The salinity, oxygen concentration, and nutrient content differ greatly among lakes and can vary with season. Oligotrophic lakes tend to be nutrient-poor and generally oxygen-rich; eutrophic lakes are nutrient-rich and often depleted of oxygen in the deepest zone in summer and if covered with ice in winter. The amount of decomposable organic matter in bottom sediments is low in oligotrophic lakes and high in eutrophic lakes; high rates of decomposition in deeper layers of eutrophic lakes cause periodic oxygen depletion.
+
+Geologic Features Oligotrophic lakes tend to have less surface area relative to their depth than eutrophic lakes. Oligotrophic lakes may become more eutrophic over time as runoff adds sediments and nutrients.
+
+Photosynthetic Organisms Rooted and floating aquatic plants in lakes live in the littoral zone, the shallow, well-lit waters close to shore. Farther from shore, where water is too deep to support rooted aquatic plants, the limnetic zone is inhabited by a variety of phytoplankton, including cyanobacteria.
+
+![](images/0c5e28885c7a28342ba90f84f02318ef09744da0412092d47eb42955db5fa0cd.jpg)  
+An oligotrophic lake in Jasper National Park, Alberta
+
+Heterotrophs In the limnetic zone, small drifting heterotrophs, or zooplankton, graze on the phytoplankton. The benthic zone is inhabited by assorted invertebrates whose species composition depends partly on oxygen levels. Fishes live in all zones with sufficient oxygen.
+
+![](images/7b7a63a0b26b7c886dc209bf55a4c6e7be4b26d81a60297c8920467e4c2d6e54.jpg)  
+A eutrophic lake in the Okavango Delta, Botswana
+
+Human Impact Runoff from fertilized land and dumping of wastes lead to nutrient enrichment, which can produce large numbers of algae (an algal “bloom”) oxygen depletion, and fish kills.
+
+## Wetlands
+
+Physical Environment A wetland is a habitat that is inundated by water at least some of the time and that supports plants adapted to water-saturated soil. Some wetlands are inundated at all times, whereas others flood infrequently.
+
+Chemical Environment Because of high organic production by plants and decomposition by microbes and other organisms, both the water and the soils are periodically low in dissolved oxygen. Wetlands have a high capacity to filter dissolved nutrients and chemical pollutants.
+
+Geologic Features Basin wetlands develop in shallow basins, ranging from upland depressions to filled-in lakes and ponds. Riverine wetlands develop along shallow and periodically flooded banks of rivers and streams. Fringe wetlands occur along the coasts of large lakes and seas, where water
+
+![](images/c9bee39a774abcaebc3c01bcf461e8c965424b7b74aceae1ec4a9d85ed53e88c.jpg)
+
+flows back and forth because of rising lake levels or tidal action. Thus, fringe wetlands include both freshwater and marine biomes.
+
+Photosynthetic Organisms Wetlands are among the most productive biomes on Earth. Their water-saturated soils favor the growth of plants such as pond lilies and cattails, many sedges, bald cypress, and black spruce, which have adaptations enabling them to grow in water or in soil that is periodically anaerobic owing to the presence of unaerated water. Woody plants dominate the vegetation of swamps, while bogs are dominated by sphagnum mosses.
+
+Heterotrophs Wetlands are home to a diverse community of invertebrates, birds, and many other organisms. Herbivores, from crustaceans and aquatic insect larvae to muskrats, consume algae, detritus, and plants. Carnivores are also varied and may include dragonflies, otters, frogs, alligators, and herons.
+
+Human Impact Wetlands help purify water and reduce peak flooding. Draining and filling have destroyed up to 90% of wetlands in Europe.
+
+A basin wetland in the United Kingdom
+
+(Continued)
+
+## Figure 52.18 (Continued)
+
+## Streams and Rivers
+
+Physical Environment The most prominent physical characteristic of streams and rivers is the speed and volume of their flow. Headwater streams are generally cold, clear, swift, and turbulent. Farther downstream, where numerous tributaries may have joined, forming a river, the water is generally warmer and more turbid because of suspended sediment. Streams and rivers are stratified into vertical zones.
+
+Chemical Environment The salt and nutrient content of streams and rivers increases from the headwaters to the mouth. Headwaters are generally rich in oxygen. Downstream water may also contain substantial oxygen, except where there has been organic enrichment. A large fraction of the organic matter in rivers consists of dissolved or highly fragmented material that is carried by the current from forested streams.
+
+Geologic Features Headwater stream channels are often narrow, have a rocky bottom, and alternate between shallow sections and deeper pools. The downstream stretches of rivers are generally wide and meandering. River bottoms are often silty from sediments deposited over long periods of time.
+
+![](images/6d0ca56d141a83d71d75d90c826b318b96e6fae44c44b37d05ab366111c7ebab.jpg)  
+A headwater stream in Washington
+
+## Estuaries
+
+Physical Environment An estuary is a transition area between river and sea. Seawater flows up the estuary channel during a rising tide and flows back down during the falling tide. Often, higher-density seawater occupies the bottom of the channel and
+
+Photosynthetic Organisms Headwater streams that flow through grasslands or deserts may be rich in phytoplankton or rooted aquatic plants.
+
+![](images/a697e81023983a454b4730f9cb4fad4f2f1682eea5fa777cadecdc683ddb4107.jpg)  
+The Loire River in France, far from its headwaters
+
+Heterotrophs A great diversity of fishes and invertebrates inhabit unpolluted rivers and streams, distributed according to, and throughout, the vertical zones. In streams flowing through temperate or tropical forests, organic matter from terrestrial vegetation is the primary source of food for aquatic consumers.
+
+Human Impact Municipal, agricultural, and industrial pollution degrade water quality and kill aquatic organisms. Damming and flood control impair the natural functioning of stream and river ecosystems and threaten migratory species such as salmon.
+
+mixes little with the lower-density river water at the surface.
+
+Chemical Environment Salinity varies spatially within estuaries, from nearly that of fresh water to that of seawater. Salinity also varies with the rise and fall of the tides. Nutrients from the river make estuaries, like wetlands, among the most productive biomes.
+
+![](images/798a4e2359632f13532c69fed401909ef34bfda1894660e2aeea60d6372eb917.jpg)
+
+Geologic Features Estuarine flow patterns combined with the sediments carried by river and tidal waters create a complex network of tidal channels, islands, natural levees, and mudflats.
+
+Photosynthetic Organisms Saltmarsh grasses and algae, including phytoplankton, are the major producers in estuaries.
+
+Heterotrophs Estuaries support an abundance of worms, oysters, crabs, and many fish species that humans consume. Many marine invertebrates and fishes use estuaries as a breeding ground or migrate through them to freshwater habitats upstream. Estuaries are also crucial feeding areas for waterfowl and some marine mammals.
+
+Human Impact Filling, dredging, and pollution from upstream have disrupted estuaries worldwide.
+
+An estuary in southern Spain
+
+## Intertidal Zones
+
+Physical Environment An intertidal zone is periodically submerged and exposed by the tides, twice daily on most marine shores. Upper zones experience longer exposures to air and greater variations in temperature and salinity. Changes in physical conditions from the upper to the lower intertidal zones limit the distributions of many organisms to particular strata, as shown in the photograph.
+
+Chemical Environment Oxygen and nutrient levels are generally high and are renewed with each turn of the tides.
+
+Geologic Features The substrates of intertidal zones, which are generally either rocky or sandy, select for particular behavior and anatomy among intertidal organisms. The configuration of bays or coastlines influences the magnitude of tides and the relative exposure of intertidal organisms to wave action.
+
+Photosynthetic Organisms A high diversity and biomass of attached marine algae inhabit rocky intertidal zones, especially in the lower zone. Sandy
+
+intertidal zones exposed to vigorous wave action generally lack attached plants or algae, while sandy intertidal zones in protected bays or lagoons often support rich beds of seagrass and algae.
+
+Heterotrophs Many of the animals in rocky intertidal environments have structural adaptations that enable them to attach to the hard substrate. The composition, density, and diversity of animals change markedly from the upper to the lower intertidal zones. Many of the animals in sandy or muddy intertidal zones, such as worms, clams, and predatory crustaceans, bury themselves and feed as the tides bring sources of food. Other common animals are sponges, sea anemones, echino-derms, and small fishes.
+
+Human Impact Oil pollution has disrupted many intertidal areas. The construction of rock walls and barriers to reduce erosion from waves and storm surges has disrupted this zone in some locations.
+
+![](images/79a003f2d06231c8726651b1e5267405cc901099b011d4c4b1690d7d77a3815f.jpg)  
+A rocky intertidal zone on the Oregon coast
+
+## Oceanic Pelagic Zone
+
+Physical Environment The oceanic pelagic zone is a vast realm of open blue water, constantly mixed by wind driven oceanic currents. Because of higher water clarity, the photic zone extends to greater depths than in coastal marine waters.
+
+Chemical Environment Oxygen levels are generally high. Nutrient concentrations are generally lower than in coastal waters. Because they are thermally stratified year-round, some tropical areas of the oceanic pelagic zone have lower nutrient concentrations than temperate oceans. Turnover between fall and spring renews nutrients in the photic zones of temperate and high-latitude ocean areas.
+
+Geologic Features This biome covers approximately $70\%$ of Earth's surface and has an average depth of nearly $4,000\mathrm{m}$ . The deepest point in the ocean is more than $10,000\mathrm{m}$ beneath the surface.
+
+Photosynthetic Organisms The dominant photosynthetic organisms are phytoplankton, including photosynthetic bacteria, that drift with the oceanic currents. Spring turnover renews nutrients in temperate
+
+Open ocean near Iceland
+
+(Continued)
+
+oceans, producing a surge of phytoplankton growth. Because of this biome's large size, photosynthetic plankton account for about half of the photosynthetic activity on Earth.
+
+Heterotrophs The most abundant heterotrophs in this biome are zooplankton. These protists, worms, copepods, shrimp-like krill, jellies, and small larvae of invertebrates and fishes graze on photosynthetic plankton. The oceanic pelagic zone also includes numerous free-swimming animals, such as large squids, fishes, sea turtles, and marine mammals.
+
+Human Impact Overfishing has depleted fish stocks in all Earth's oceans; marine life has also been harmed by pollution, ocean acidification, and global warming.
+
+![](images/4fb1fdbb1d136510ec977cb27eb4847bca1e57f566106749cd669ff92c5b32e6.jpg)
+
+Figure 52.18 (Continued)
+
+Coral Reefs
+
+Physical Environment Coral reefs are formed largely from the calcium carbonate skeletons of corals. Shallow reef-building corals live in the photic zone of relatively stable tropical marine environments with high water clarity, primarily near islands and along the edge of some continents. They are sensitive to temperatures below about 18–20°C and above 30°C. Deep-sea coral reefs, found between 200 and 1,500 m deep, are less known than their shallow counterparts but harbor as much diversity as many shallow reefs do.
+
+Chemical Environment Corals require high oxygen levels and are excluded by high inputs of fresh water and nutrients.
+
+Geologic Features Corals require a solid substrate for attachment. A typical coral reef begins as a fringing reef on a young, high island, forming an offshore barrier reef later in the history of the island and becoming a coral atoll as the older island submerges.
+
+![](images/f2116b82b443c57deb6cf9b826e093c64b46d91c3530f840c7c7f45b487b471a.jpg)  
+A coral reef in the Red Sea
+
+Photosynthetic Organisms Unicellular algae live within the tissues of the corals, forming a mutualistic relationship that provides the corals with organic molecules. Diverse multicellular red and green algae growing on the reef also contribute substantial amounts of photosynthesis.
+
+Heterotrophs Corals, a diverse group of cnidarians, are themselves the predominant animals on coral reefs. However, fish and invertebrate diversity is exceptionally high. Overall animal diversity on coral reefs rivals that of tropical forests.
+Human Impact Collecting of coral
+
+skeletons and overfishing have reduced populations of corals and reef fishes. Global warming and pollution may be contributing to large-scale coral death. Development of coastal mangroves for aquaculture has also reduced spawning grounds for many species of reef fishes.
+
+## Marine Benthic Zone
+
+Physical Environment The marine benthic zone consists of the seafloor below the surface waters of the coastal, or neritic, zone and the offshore pelagic zone. Except for shallow, near-coastal areas, the marine benthic zone receives no sunlight. Water temperature declines with depth, while pressure increases. As a result, organisms in the very deep benthic, or abyssal, zone are adapted to continuous cold (about 3°C) and very high water pressure.
+
+Chemical Environment Except in areas of organic enrichment, oxygen is usually
+
+present at sufficient concentrations to support diverse animal life.
+
+Geologic Features Soft sediments cover most of the benthic zone. However, there are areas of rocky substrate on reefs, submarine mountains, and new oceanic crust.
+
+Autotrophs Photosynthetic organisms, mainly algae, are limited to shallow benthic areas with sufficient light to support them. Unique assemblages of organisms live near deep-sea hydrothermal vents on mid-ocean ridges. In these dark, hot
+
+![](images/cedac8ff045503a5610b32ccde0875b4dacc0cd9319b9a5a3de17e394abfa5e6.jpg)
+
+environments, the food producers are chemoautotrophic prokaryotes that obtain energy by oxidizing $H_{2}S$ formed by a reaction of the hot water with dissolved sulfate ( $SO_{4}^{2-}$ ).
+
+Heterotrophs Neritic benthic communities include numerous invertebrates and fishes. Beyond the photic zone, most consumers depend entirely on organic matter raining down from above. Among the animals of the deep-sea hydrothermal vent communities are giant tube worms (pictured), some more than 1 m long. They are nourished by chemoautotrophic prokaryotes that live as symbionts within their bodies. Many other invertebrates, including arthropods and echinoderms, are also abundant around the vents.
+
+Human Impact Overfishing has decimated important benthic fish populations, such as the cod of the Grand Banks off Newfoundland. Dumping of organic wastes has created oxygen-deprived benthic areas.
+
+A deep-sea hydrothermal vent community
+
+Figure 52.19 Distribution of the saguaro cactus in North America.
+
+Freezing temperatures strongly limit where saguaros are found, but other abiotic and biotic factors are also important.
+
+![](images/7ab09245ba9efaa12a06b48826c0cae18afa381c4bca81f6857cc457bc81468e.jpg)
+
+respect—all species are found in some habitats but not others. Hence, ecologists ask not only where species occur, but also why species occur where they do: What ecological factors—biotic and abiotic—determine their distribution?
+
+In many cases, both biotic and abiotic factors affect the distribution of a species, as is true of the saguaro cactus (Carnegiea gigantea). Saguaros are found almost exclusively in the Sonoran Desert of the southwestern United States and northwestern Mexico (Figure 52.19). To the north, their range is limited by an abiotic factor: temperature. Saguaros tolerate freezing temperatures only briefly, typically for less than a day, and
+
+generally cannot survive at temperatures below $-4^{\circ}C$ ( $25^{\circ}F$ ). For the same reason, saguaros are rarely found at elevations above 1,200 m (4,000 feet).
+
+However, temperature alone does not fully explain the distribution of saguaros, including why they are missing from the western portion of the Sonoran Desert. Water availability is critical because seedling survival typically requires consecutive years of moist conditions, something that may occur only a few times each century. Biotic factors almost certainly influence their distribution as well. Mice and grazers such as goats eat the seedlings, and bats pollinate the large, white flowers that open at night. Saguaros are also vulnerable to a deadly bacterial disease. Thus, for the saguaro, as for most other species, ecologists need to consider multiple factors and alternative hypotheses when attempting to explain the distribution of a species.
+
+To see how ecologists might arrive at such an explanation, let's examine the ecological factors highlighted by the questions in the flowchart in Figure 52.20.
+
+## Dispersal and Distribution
+
+One factor that contributes greatly to the global distribution of organisms is dispersal, the movement of individuals or gametes away from their area of origin or from centers of high population density. For example, while land-bound kangaroos have not reached Africa under their own power, other Australian organisms that disperse more readily, such as some birds, have. The dispersal of organisms is critical to understanding the role of geographic isolation in evolution (see Concept 24.2) as well as the patterns of species distribution we see today, including that of the Pacific diatom discussed earlier in this chapter.
+
+## Natural Range Expansions and Adaptive Radiation
+
+The importance of dispersal is most evident when organisms reach an area where they did not exist previously, called a range expansion. For instance, 200 years ago, the cattle egret (Bubulcus ibis) was found only in Africa and southwestern Europe. But in the late 1800s, some of these birds managed to cross the Atlantic Ocean and colonize northeastern South America. From there, cattle egrets gradually spread southward and also northward through Central America and into North America, reaching Florida by 1960
+
+Figure 52.20 Flowchart of factors limiting geographic distribution.  
+![](images/9700326ec0c0936f443b14297d1a56eee3afbc8fc838842fe3198990d1c9a9b6.jpg)  
+How might the importance of various abiotic factors differ for aquatic and terrestrial ecosystems? For suggested answer, see Appendix A.
+
+Figure 52.21 Dispersal of the cattle egret in the Americas.
+Native to Africa, cattle egrets were first reported in South America in 1877. The color-coding and dates show the regions to which the birds had spread at different points in time.
+
+![](images/1d2e5e701ea2c81896a6f35accdeea996a7fd074ba575ad504584b70fc6d276a.jpg)  
+Figure 52.22 Effects of feeding by sea urchins on seaweed distribution.
+
+(Figure 52.21). Today they have breeding populations as far west as the Pacific coast of the United States and as far north as southern Canada.
+
+In rare cases, such long-distance dispersal can lead to adaptive radiation, the rapid evolution of an ancestral species into new species that fill many ecological niches. The diversity of Hawaiian silverswords is one example of adaptive radiation that was possible only with the long-distance dispersal of an ancestral tarweed from North America (see Figure 25.22).
+
+Natural range expansions clearly show the influence of dispersal on distribution. However, opportunities to observe such dispersal directly are rare, so ecologists often turn to experimental methods to better understand the role of dispersal in limiting the distribution of species.
+
+## Species Transplants
+
+To determine if dispersal is a key factor limiting the distribution of a species, ecologists may observe the results of intentional or accidental transplants of the species to areas where it was previously absent. For a transplant to be successful, some of the organisms must not only survive in the new area but also reproduce there sustainably. If a transplant is successful, then we can conclude that the potential range of the species is larger than its actual range; in other words, the species could live in certain areas where it currently does not.
+
+Seaweed abundance in areas from which the long-spined sea urchin (Centrostephanus rodgersii) had been removed was much higher than seaweed abundance in adjacent control sites from which the urchin was not removed.
+
+![](images/ba6c24b1f3007e52729348e6f6beb6a04b2ffa4062563fee072099100f524c56.jpg)
+
+In some cases, species introduced to new geographic locations have disrupted the communities and ecosystems to which they have been introduced (see Concept 56.1). Consequently, ecologists rarely move species to new regions. Instead, they document the outcome when a species reaches a new region in other ways, such as when a predator is introduced to control a pest species or when a species has been moved accidentally to the area.
+
+## Biotic Factors
+
+Our next question is whether biotic factors—other species—limit the distribution of a species. Often, the ability of a species to survive and reproduce is reduced by its interactions with other species, such as predators (organisms that kill their prey) or herbivores (organisms that eat plants or algae). Figure 52.22 shows how an herbivore, the long-spined sea urchin (Centrostephanus rodgersii), has affected the distribution of a food species. In certain marine ecosystems, there is often an inverse relationship between the abundance of sea urchins and seaweeds (multicellular algae, such as kelp). Where urchins that graze on seaweeds and other algae are common, large stands of seaweeds do not become established. As shown in Figure 52.22, Australian researchers tested whether C. rodgersii is a biotic factor limiting seaweed distribution. When this urchin was removed from experimental plots, seaweed cover increased dramatically, showing that C. rodgersii limited the distribution of seaweeds.
+
+In addition to predation and herbivory, the presence or absence of pollinators, food resources, parasites, pathogens, and competing organisms can act as a biotic limitation on species distribution. Such biotic limitations are common in nature.
+
+## Abiotic Factors
+
+The last question in the flowchart in Figure 52.20 considers whether abiotic factors, such as temperature, water, oxygen, salinity, sunlight, or soil, might be limiting a species' distribution. If the physical conditions at a site do not allow a species to survive and reproduce, then the species will not be found there. Throughout this discussion, keep in mind that most abiotic factors vary substantially over space and time. Daily and annual fluctuations of abiotic factors may either blur or accentuate regional distinctions. Furthermore, organisms can avoid some stressful conditions temporarily through behaviors such as dormancy or hibernation (see Concept 40.4).
+
+## Temperature
+
+Environmental temperature is an important factor in the distribution of organisms because of its effect on biological processes. Cells may rupture if the water they contain freezes (at temperatures below $0^{\circ}$ C), and the proteins of most organisms denature at temperatures above $45^{\circ}$ C. Organisms typically function best within a specific range of environmental temperature. Temperatures outside that range may force some animals to expend energy regulating their internal temperature, as mammals and birds do (see Figure 40.16). Extraordinary adaptations enable certain organisms, such as thermophilic prokaryotes, to live outside the temperature range habitable by other life.
+
+As mentioned earlier, climate change has already caused hundreds of species to alter their geographic ranges. A shift in the range of one species can also have profound effects on the distribution of other species. Consider how rising sea temperatures have affected the geographic range of the sea urchin C. rodgersii. Since 1950, water temperatures along the coast of Tasmania, an island south of mainland Australia, have increased from 11.5°C to 12.5°C. This has enabled C. rodgersii—whose larvae fail to develop properly if temperatures drop below 12°C—to expand its range to the south (Figure 52.23). The urchin is a voracious consumer of kelp and other algae. As a result, algal communities that once harbored a rich diversity of other species have been completely destroyed in regions where the urchin has become well established (denoted by a solid orange line in Figure 52.23).
+
+## Water and Oxygen
+
+The dramatic variation in water availability among habitats is another important factor in species distribution. Species living at the seashore or in tidal wetlands can desiccate (dry out) as the tide recedes. Terrestrial organisms face a nearly constant threat of desiccation, and the distribution of terrestrial species reflects their ability to obtain and conserve water. Many amphibians, such as the tiny frog in Figure 52.1, are particularly vulnerable to drying because they use their moist, delicate skin for gas exchange. Desert organisms exhibit a variety of adaptations for acquiring and conserving water in dry environments, as described in Concept 44.4.
+
+Water affects oxygen availability in aquatic environments and in flooded soils, where the slow diffusion of oxygen in water can
+
+Figure 52.23 A sea urchin's expanding range.
+
+Since the 1950s, water temperatures along the coast of Tasmania have increased, allowing the sea urchin C. rodgersii to expand its range to the south. The bold orange type indicates the years when C. rodgersii was first observed colonizing those locations. Once its population has been established in a new location, C. rodgersii has eliminated the local kelp community.
+
+![](images/9a0e2d6f66203d23ffb855f5c27ff38c062c97bb98a1e835063ce729a6813263.jpg)
+
+limit cellular respiration and other physiological processes. Oxygen concentrations can be particularly low in deep ocean and deep lake waters, as well as in sediments where organic matter is abundant. Flooded wetland soils may also have low oxygen content. Mangroves and other trees have specialized roots that project above the water and help the root system obtain oxygen (see Figure 35.4). Unlike many flooded wetlands, the surface waters of streams and rivers tend to be well oxygenated because of rapid exchange of gases with the atmosphere.
+
+## Salinity
+
+The salt concentration of water in the environment affects the water balance of organisms through osmosis. Most aquatic organisms are restricted to either freshwater or saltwater habitats by their limited ability to osmoregulate (see Concept 44.1). Most terrestrial organisms can excrete excess salts from specialized glands or in feces or urine. However, the salt concentrations in some habitats (such as salt flats) are so high that few species of plants or animals can survive there (Figure 52.24). In the Scientific Skills Exercise, you can interpret data from an experiment investigating the influence of salinity on plant distributions.
+
+Figure 52.24 Salar de Uyuni, in Bolivia, the largest salt flat in the world.
+
+Aside from the flamingos that breed there annually, very few animals or plants inhabit the vast expanse of crusty white salt.
+
+![](images/2cd74780082bed885cecf0cb9d46f529f59ebf64cefe3db54c003e0ae7aa0b81.jpg)
+
+# Scientific Skills Exercise Making a Bar Graph and a Line Graph to Interpret Data
+
+How Do Salinity and Competition Affect the Distribution of Plants in an Estuary? Field observations show that Spartina patens (salt marsh hay) is a dominant plant in salt marshes and Typha angustifolia (cattail) is a dominant plant in freshwater marshes. In this exercise, you will graph and interpret data from an experiment that examined the influence of an abiotic factor, salinity, and a biotic factor, competition, on the growth of these two species.
+
+How the Experiment Was Done Researchers planted S. patens and T. angustifolia in salt marshes and freshwater marshes with and without neighboring plants. After two growing seasons (1.5 years), they measured the biomass of each species in each treatment. The researchers also grew both species in a greenhouse at six salinity levels and measured the biomass at each level after eight weeks.
+
+Data from the Field Experiment (averages of 16 replicate samples)
+
+<table><tr><td rowspan="3"></td><td colspan="4">Average Biomass (g/100 cm2)</td></tr><tr><td colspan="2">Spartina patens</td><td colspan="2">Typha angustifolia</td></tr><tr><td>Salt Marshes</td><td>Freshwater Marshes</td><td>Salt Marshes</td><td>Freshwater Marshes</td></tr><tr><td>With neighbors</td><td>8</td><td>3</td><td>0</td><td>18</td></tr><tr><td>Without neighbors</td><td>10</td><td>20</td><td>0</td><td>33</td></tr></table>
+
+Data from the Greenhouse Experiment
+
+<table><tr><td>Salinity (parts per thousand)</td><td>0</td><td>20</td><td>40</td><td>60</td><td>80</td><td>100</td></tr><tr><td>% maximum biomass (S. patens)</td><td>77</td><td>40</td><td>29</td><td>17</td><td>9</td><td>0</td></tr><tr><td>% maximum biomass (T. angustifolia)</td><td>80</td><td>20</td><td>10</td><td>0</td><td>0</td><td>0</td></tr></table>
+
+Data from C. M. Crain et al., Physical and biotic drivers of plant distribution across estuarine salinity gradients, Ecology 85:2539–2549 (2004).
+
+Salmon that migrate between freshwater streams and the ocean use both behavioral and physiological mechanisms to osmoregulate. They balance their salt content by adjusting the amount of water they drink and by switching their gills from taking up salt in fresh water to excreting salt in the ocean.
+
+## Sunlight
+
+Sunlight provides the energy that drives most ecosystems, and too little sunlight can limit the distribution of photosynthetic species. In forests, shading by leaves makes competition for light especially intense, particularly for seedlings growing on the forest floor. In aquatic environments, every meter of water depth absorbs about 45% of the red light and about 2% of the blue light passing through it. Thus, most photosynthesis occurs relatively near the water surface.
+
+Too much light can also limit the survival of organisms. In some ecosystems, such as deserts, high light levels can increase temperature stress if animals and plants are unable to avoid the light or to cool themselves through evaporation (see Figure 40.12).
+
+![](images/ab2a6d5a6b1cc933ba35de73817a532e5b6280279ad40ed8cfd299e394d21ffd.jpg)  
+▲ Spartina patens
+
+![](images/7b7f42f41391ec290259c2337ba4fc20362af8fc778a3617bcf9321618c6a426.jpg)  
+▲ Typha angustifolia
+
+## INTERPRET THE DATA
+
+1. Make a bar graph of the data from the field experiment. (For additional information about graphs, see the Scientific Skills Review in Appendix D.) What do these data indicate about the salinity tolerances of S. patens and T. angustifolia?
+
+2. What do the data from the field experiment indicate about the effect of competition on the growth of these two species? Which species was limited more by competition?
+
+3. Make a line graph of the data from the greenhouse experiment. Decide which values constitute the dependent and independent variables, and use these values to set up the axes of your graph.
+
+4. (a) In the field, S. patens is typically absent from freshwater marshes. Based on the data, does this appear to be due to salinity or competition? Explain your answer. (b) T. angustifolia does not grow in salt marshes. Does this appear to be due to salinity or competition? Explain your answer.
+
+Instructors: A version of this Scientific Skills Exercise can be assigned in Mastering Biology.
+
+Figure 52.25 Alpine tree line in Banff National Park, Canada. Organisms living at high elevations are exposed not only to high levels of ultraviolet radiation but also to freezing temperatures, moisture deficits, and strong winds. Above the tree line, the combination of such factors restricts the growth and survival of trees.  
+![](images/37e218d6ec4b950b2c2cda5919f6cb3ab38e4d9054a1ef77da3bf5caad09133c.jpg)
+
+At high elevations, the sun's rays are more likely to damage DNA and proteins because the atmosphere is thinner, absorbing less ultraviolet (UV) radiation. Damage from UV radiation, combined with other abiotic stresses, prevents trees from surviving above a certain elevation, resulting in the appearance of a tree line on mountain slopes (Figure 52.25).
+
+## Rocks and Soil
+
+In terrestrial environments, the pH, mineral composition, and physical structure of rocks and soil limit the distribution of plants and thus of the animals that feed on them, contributing to the patchiness of terrestrial ecosystems. The pH of soil can limit the distribution of organisms directly, through extreme acidic or basic conditions, or indirectly, by affecting the solubility of toxins and nutrients. Soil phosphorus, for instance, is relatively insoluble in basic soils and precipitates into forms unavailable to plants.
+
+In a river, the composition of rocks and soil that make up the substrate (riverbed) can affect water chemistry, which in turn influences the resident organisms. In freshwater and marine environments, the structure of the substrate determines the organisms that can attach to it or burrow into it.
+
+## Concept Check 52.4
+
+1. Describe human actions that could expand a species' range by changing its (a) dispersal or (b) biotic interactions.
+
+2. WHAT IF? You suspect that deer are restricting the distribution of a tree species by preferentially eating the seedlings of the tree. How might you test this hypothesis?
+
+3. MAKE CONNECTIONS Hawaiian silverswords underwent a remarkable adaptive radiation after their ancestor reached Hawaii, while the islands were still young (see Figure 25.23). Would you expect the cattle egret to undergo a similar adaptive radiation in the Americas (see Figure 52.21)? Explain.
+
+# Concept 52.5: Ecological change and evolution affect one another over long and short periods of time
+
+Biologists have long recognized that ecological interactions can cause evolutionary change, and vice versa (Figure 52.26). The history of life includes many examples of these reciprocal effects occurring over long periods of time. Consider the origin and diversification of plants. As described in Concept 29.3, the evolutionary origin of plants altered the chemical cycling of carbon, leading to the removal of large quantities of carbon dioxide from the atmosphere. As the adaptive radiation of plants continued over time, the appearance of new plant species provided new habitats and new sources of food for insects and other animals. In turn, the availability of new habitats and new food sources stimulated bursts of speciation in animals, leading to further ecological changes. Here, as in many other such examples, ecological and evolutionary changes had ongoing and major effects upon one another.
+
+The interplay between ecological and evolutionary change illustrated by the origin of plants occurred over millions of years. Reciprocal “eco-evolutionary” effects occurring over centuries or thousands of years are also well documented, as in the examples of the mosquitofish and the apple maggot fly discussed in Concept 24.2. But are such joint effects common over even shorter periods of time? As we’ve seen in previous chapters, ecological change can cause evolutionary change over the course of a few years to decades; examples include beak length evolution in soapberry bugs (see Figure 22.13) and the formation of new sunflower species (see Figure 24.18).
+
+Recent studies show that the causation can run both ways: Rapid evolution can also cause rapid ecological change. For
+
+Figure 52.26 Reciprocal effects of ecological and evolutionary change.
+
+An ecological change, such as the expansion of a predator's range, can alter the selective pressures faced by prey populations. This could cause evolutionary change, such as an increase in the frequency of a new defensive mechanism in a prey population; that change, in turn, could alter the outcome of ecological interactions.
+
+![](images/63b67c9611a86a4d5f386cc196e02415dfe44a90245432cd45f9957c6a864068.jpg)
+
+example, Trinidadian guppy (Poecilia reticulata) populations evolve rapidly when predators are removed: Guppy color patterns, jaw morphology, and feeding preferences all change within a few years. In 2017, researchers showed that these rapid evolutionary changes affect the stream ecosystems in which the guppies live. For instance, guppies that had evolved under different levels of predation had contrasting effects on algal abundance (Figure 52.27). Guppies that had evolved under low predation fed primarily on algae (thereby reducing algal abundance), while guppies that had evolved under high predation fed primarily on invertebrates (thereby tending to increase algal abundance because some invertebrates eat algae). As producers, algae are key components of the ecosystem: Other organisms depend on them for food, either directly (by eating them) or indirectly (by eating an organism that ate algae). Overall, this and other studies show that ecological change and evolution have the potential to exert rapid feedback effects on each other.
+
+## Concept Check 52.5
+
+1. Describe a scenario showing how ecological change and evolution can affect one another.
+
+2. MAKE CONNECTIONS Fisheries target older, larger cod fish, causing cod that reproduce at a younger age and smaller size to be favored by natural selection. Younger, smaller cod have fewer offspring than do older cod. Predict how evolution in response to fishing would affect the ability of a cod population to recover from overfishing. What other reciprocal eco-evolutionary effects might occur? (See Concept 23.3.)
+
+Figure 52.27 Rapid evolution leading to rapid ecological change. Dotted lines connect algal abundance at control sites (with no guppies) to algal abundance at nearby sites in the same streams inhabited by guppies that had evolved under either low or high levels of predation.  
+![](images/5b54f10abb6acb6bd890a67542f56856a85c52d1dddecd31de11a91e0072b04f.jpg)
+
+For suggested answers, see Appendix A.
+
+## Chapter 52 Review
+
+## Summary of Key Concepts
+
+To review key terms, go to the Vocabulary Self-Quiz (eTextbook only).
+
+## Concept 52.1: Earth's climate varies by latitude and season and is changing rapidly
+
+\- Global climate patterns are largely determined by the input of solar energy and Earth's revolution around the sun.
+
+\- The changing angle of the sun over the year, bodies of water, and mountains exert seasonal, regional, and local effects on climate.
+
+\- Climate affects where plants can live, but these effects run both ways: Vegetation can alter local and regional climate.
+
+\- Fine-scale differences in certain abiotic (nonliving) factors, such as sunlight and temperature, determine microclimate.
+
+\- Increasing greenhouse gas concentrations in the air are warming Earth and altering the distributions of many species. Some species will not be able to shift their ranges quickly enough to reach suitable habitat in the future.
+
+Suppose global air circulation suddenly reversed, with moist air ascending at $30^{\circ}$ north and south latitude and descending at the equator. At what latitude would you most likely find deserts in this scenario?
+
+![](images/ed1fef1ab83e8f95a627b6d626d829150b35ecec65b8b16078b0939176205d5e.jpg)
+
+## Concept 52.2: The distribution of terrestrial biomes is controlled by climate and disturbance
+
+\- Climographs show that temperature and precipitation are correlated with biomes. Because other factors also play roles in biome location, biomes overlap.
+
+\- Terrestrial biomes are often named for major physical or climatic factors and for their predominant vegetation. Vertical layering is an important feature of terrestrial biomes.
+
+\- Disturbance, both natural and human-induced, influences the type of vegetation found in biomes. Humans have altered much of Earth's surface, replacing the natural terrestrial communities described and depicted in Figure 52.14 with urban and agricultural ones.
+
+\- The pattern of climatic variation is as important as the average climate in determining where biomes occur.
+
+In what ways are disturbances important for savanna ecosystems and the plants in them?
+
+## Concept 52.3: Aquatic biomes are diverse and dynamic systems that cover most of Earth
+
+\- Aquatic biomes are characterized primarily by their physical and chemical environment, and are often layered with regard to light penetration, temperature, and nutrient availability. Marine biomes have a higher salt concentration than freshwater biomes.
+
+\- Light penetration decreases quickly with depth, and only the shallowest parts of aquatic biomes have enough light to sustain photosynthesis. Where waters are shallow enough that the photic zone reaches the benthic zone, benthic seaweeds (algae) and aquatic plants can be important primary producers. In areas where the benthos is deeper than the photic zone, phytoplankton are the only photosynthetic organisms.
+
+\- Availability of nutrients is an important determinant of aquatic biomes. Nutrients are often limited in the photic zone. New nutrients can be added to the photic zone via runoff from land, upwelling of nutrient-rich deep water, and density-driven mixing of the water column.
+
+In which aquatic biomes might you find an aphotic zone?
+
+## Concept 52.4: Interactions between organisms and the environment limit the distribution of species
+
+Ecologists want to know not only where species occur but also why those species occur where they do.
+
+![](images/685e48fae469605813371cf9b629a120422e35d47b16538e2a3b13b1aba0368e.jpg)  
+VISUAL SKILLS If you were an ecologist studying the chemical and physical limits to the distributions of species, how might you rearrange the flowchart preceding this question?
+
+## Concept 52.5: Ecological change and evolution affect one another over long and short periods of time
+
+\- Ecological interactions can cause evolutionary change, as when predators cause natural selection in a prey population.
+
+\- Likewise, an evolutionary change, such as an increase in the frequency of a new defensive mechanism in a prey population, can alter the outcome of ecological interactions.
+
+Suppose humans introduced a species to a new continent where it had few predators or parasites. How might this lead to eco-evolutionary feedback effects?
+
+For suggested answers, see Appendix A.
+
+## Test Your Understanding
+
+For more multiple-choice questions, go to the Practice Test (eTextbook only).
+
+## Levels 1-2: Remembering/Understanding
+
+1. Which of the following areas of study focuses on the exchange of energy, organisms, and materials between ecosystems?
+
+(A) organismal ecology
+
+(B) landscape ecology
+
+(C) ecosystem ecology
+
+(D) community ecology
+
+2. Which lake zone would be absent in a very shallow lake?
+
+(A) benthic zone
+
+(B) aphotic zone
+
+(C) pelagic zone
+
+(D) littoral zone
+
+## Levels 3-4: Applying/Analyzing
+
+3. Which of the following is characteristic of most terrestrial biomes?
+
+(A) a distribution predicted almost entirely by rock and soil patterns
+
+(B) clear boundaries between adjacent biomes
+
+(C) vegetation demonstrating vertical layering
+
+(D) cold winter months
+
+4. The oceans affect the biosphere by
+
+(A) absorbing a substantial amount of the biosphere's oxygen.
+
+(B) regulating the pH of freshwater biomes and terrestrial groundwater.
+
+(C) decreasing winter temperatures of coastal terrestrial biomes.
+
+(D) removing carbon dioxide from the atmosphere.
+
+5. Which statement about dispersal is true?
+
+(A) Dispersal is not a component of the life cycles of most plants and animals.
+
+(B) Dispersal occurs only on an evolutionary time scale.
+
+(C) Colonization of devastated areas after floods or volcanic eruptions depends on dispersal.
+
+(D) The ability to disperse does not affect the geographic distribution of a species.
+
+6. When climbing a mountain, we can observe transitions in biological communities that are analogous to the changes (A) in biomes at different latitudes.
+
+(B) in different depths in the ocean.
+
+(C) in a community through different seasons.
+
+(D) in an ecosystem as it evolves over time.
+
+7. Suppose that the number of bird species is determined mainly by the number of vertical strata found in the environment. If so, in which of the following biomes would you find the greatest number of bird species?
+
+(A) tropical rain forest
+
+(B) savanna
+
+(C) desert
+
+(D) temperate broadleaf forest
+
+## Levels 5-6: Evaluating/Creating
+
+8. WHAT IF? If the direction of Earth's rotation reversed, the most predictable effect would be
+
+(A) a big change in the length of the year.
+
+(B) winds blowing from west to east along the equator.
+
+(C) a loss of seasonal variation at high latitudes.
+
+(D) the elimination of ocean currents.
+
+9. INTERPRET THE DATA After examining Figure 52.22, you decide to study feeding relationships among sea otters, sea urchins, and kelp. You know that sea otters prey on sea urchins and that urchins eat kelp. At four coastal sites, you measure kelp abundance. Then, you spend one day at each site and mark whether otters are present or absent every 5 minutes during the day. Graph kelp abundance (on the y-axis versus otter density (on the x-axis), using the data below. Then, formulate a hypothesis to explain any pattern you observe.
+
+<table><tr><td>Site</td><td>Otter Density (# sightings per day)</td><td>Kelp Abundance (% cover)</td></tr><tr><td>1</td><td>98</td><td>75</td></tr><tr><td>2</td><td>18</td><td>15</td></tr><tr><td>3</td><td>85</td><td>60</td></tr><tr><td>4</td><td>36</td><td>25</td></tr></table>
+
+10. EVOLUTION CONNECTION Discuss how the distribution of a species can be affected both by its evolutionary history and by ecological factors. Could ongoing evolutionary change also affect its distribution? Explain.
+
+11. SCIENTIFIC INQUIRY Jens Clausen and colleagues, at the Carnegie Institution of Washington, studied how the size of yarrow plants (Achillea lanulosa) growing on the slopes of the Sierra Nevada varied with elevation. They found that plants from low elevations were generally taller than plants from high elevations, as shown in the diagram.
+
+![](images/fa018bd87787c40122a4cf51bb4a70e8e7f5b741e39bfc2103b93664d6440acd.jpg)  
+Data from J. Clausen et al., Experimental studies on the nature of species. III. Environmental responses of climatic races of Achillea, Carnegie Institution of Washington Publication No. 581 (1948).
+
+Clausen and colleagues proposed two hypotheses to explain this variation within a species: (1) There are genetic differences between populations of plants found at different elevations. (2) The
+
+species has developmental flexibility and can assume tall or short growth forms, depending on local abiotic factors. If you had seeds from yarrow plants found at low and high elevations, how would you test these hypotheses?
+
+12. WRITE ABOUT A THEME: INTERACTIONS Global warming is occurring rapidly in arctic marine and terrestrial ecosystems. The reflective white snow and ice cover are melting quickly and extensively, uncovering darker-colored ocean water, plants, and rocks. In a short essay (100–150 words), explain how this process might exemplify positive feedback.
+
+## 13. SYNTHESIZE YOUR KNOWLEDGE
+
+![](images/ee1c461d92aa3f6eec4f169b663149b1e2dfb92c3e783fe7346067cd314b3a0c.jpg)  
+If you were to hike up Mount Kilimanjaro in Tanzania, you would pass through several habitats, including savanna at the base, forest on the slopes, and alpine tundra near the top. Explain how such diverse habitats can be found at one location near the equator.  
+For selected answers, see Appendix A.
+
+# Explore Scientific Papers with Science in the Classroom | AAAS
+
+How have Earth's forests changed over time? Go to "Seeing the Forest for the Trees" at www.scienceintheclassroom.org.
+
+Instructors: Questions can be assigned in Mastering Biology.
+
+# Population Ecology
+
+## Key Concepts
+
+53.1 Biotic and abiotic factors affect population density, dispersion, and demographics
+
+53.2 The exponential model describes population growth in an idealized, unlimited environment
+
+53.3 The logistic model describes how a population grows more slowly as it nears its carrying capacity
+
+53.4 Life history traits are products of natural selection
+
+53.5 Density-dependent factors regulate population growth
+
+53.6 The human population is no longer growing exponentially but is still increasing extremely rapidly
+
+## Study Tip
+
+Annotate a graph: This chapter contains several scatter plots, graphs in which each measurement or observation is plotted as a single point. To make sure you understand a scatter plot, select one point and describe what it represents, as shown here for Figure 53.8. Do this for Figures 53.4, 53.8, 53.10, 53.16, and 53.18.
+
+![](images/0787094b3f18e9b907cde8a2e7a2f036e8c9491015ef998edd506576340443b8.jpg)
+
+![](images/0a4cfe0b8d7ef694723913ea67dd21e4ddbfe6fd21528abde2187f9e5de62e6f.jpg)  
+Figure 53.1 Although it was once common along the Atlantic coast, by 1985 prospects looked grim for the piping plover (Charadrius melodus). Since then, nesting site protection has enabled the piping plover's numbers to grow, with recent surveys finding 1,400 to 4,000 adults in recent years. Such variation is typical of natural populations, all of which vary in number (size) over time.
+
+What affects the size of a population and how it changes over time?  
+![](images/4e877977bfdb461f5e95a113ee255ec77ebe0fe2048eb90211ce474734d14326.jpg)
+
+![](images/cd47963205a7b1e8772e0cd3dd3757314084be82fd13db7ccba0defc6b501b1e.jpg)
+
+![](images/6f51999f5f8103a28ac13d3f51b800e37a0e7d52161d3639166637a8f6be39e5.jpg)
+
+![](images/58adacba93cf658c1a351e621ff034be2eddf4bd9be63cd96f42569440a65234.jpg)
+
+# Concept 53.1: Biotic and abiotic factors affect population density, dispersion, and demographics
+
+A population is a group of individuals of a single species living in the same general area. Members of a population rely on the same resources, are influenced by similar environmental factors, and are likely to interact and breed with one another.
+
+Populations are often described by their boundaries and size (the number of individuals living within those boundaries). Ecologists usually begin investigating a population by defining boundaries appropriate to the organism under study and to the questions being asked. A population's boundaries may be natural ones, as in the case of an island or a lake, or they may be arbitrarily defined by an investigator—for example, a specific county in Minnesota for a study of oak trees.
+
+In this chapter, we will explore how ecologists describe and analyze populations and the factors that can determine the abundance of organisms. We will then examine recent trends in the size and makeup of the human population.
+
+## Density and Dispersion
+
+The density of a population is the number of individuals per unit area or volume: the number of oak trees per square kilometer in the Minnesota county or the number of Escherichia coli bacteria per milliliter in a test tube. Dispersion is the pattern of spacing among individuals within the boundaries of the population.
+
+## Density: A Dynamic Perspective
+
+In some cases, population size and density can be determined by counting all individuals within the boundaries of the population. We could count all the sea stars in a tide pool, for instance. Large mammals that live in herds, such as elephants, can sometimes be counted accurately from airplanes.
+
+In most cases, however, it is impractical or impossible to count all individuals in a population. Instead, ecologists use various sampling techniques to estimate densities and total population sizes. They might count the number of oak trees in several randomly located $100 \times 100$ m plots, calculate the average density in the plots, and then extend the estimate to the population size in the entire area. Such estimates are most accurate when there are many sample plots and when the habitat is fairly homogeneous. In other cases, instead of counting single organisms, ecologists estimate density from an indicator of population size, such as the number of nests, burrows, tracks, or fecal droppings. Ecologists also use the mark-recapture method to estimate the size of wildlife populations (Figure 53.2).
+
+## Figure 53.2
+
+Research Method: Determining Population Size Using the Mark-Recapture Method
+
+## Application
+
+Ecologists cannot count all the individuals in a population if the organisms move too quickly or are hidden from view. In such cases, researchers often use
+
+![](images/b23c7e30bec77aa33c4ee49d381437ae43ee615a8efbacb64f4b0404eca24de8.jpg)  
+▲ Hector's dolphins
+
+the mark-recapture method to estimate population size. Andrew Gormley and his colleagues at the University of Otago applied this method to a population of endangered Hector's dolphins (Cephalorhynchus hectori) near Banks Peninsula, in New Zealand.
+
+## Technique
+
+Scientists typically begin by capturing a random sample of individuals in a population. They tag, or “mark,” each individual and then release it. With some species, researchers can identify individuals without physically capturing them. For example, Gormley and colleagues identified 180 Hector’s dolphins by photographing their distinctive dorsal fins from boats.
+
+After waiting for the marked or otherwise identified individuals to mix back into the population, usually a few days or weeks, scientists capture or sample a second set of individuals. At Banks Peninsula, Gormley's team encountered 44 dolphins in their second sampling, 7 of which they had photographed before. The number of marked animals captured in the second sampling (x) divided by the total number of animals captured in the second sampling (n) should equal the number of individuals marked and released in the first sampling (s) divided by the estimated population size (N):
+
+$$
+{\frac {x}{n}} = {\frac {s}{N}} \text {   or,   solving   for   population   size,   } N = {\frac {s n}{x}}
+$$
+
+The method assumes that marked and unmarked individuals have the same probability of being captured or sampled, that the marked organisms have mixed completely back into the population, and that no individuals are born, die, immigrate, or emigrate during the resampling interval.
+
+## Results
+
+Based on these initial data, the estimated population size of Hector's dolphins at Banks Peninsula would be $180 \times 44/7 = 1,131$ individuals. Repeated sampling by Gormley and colleagues suggested a true population size closer to 1,100.
+
+Data from A. M. Gormley et al., Capture-recapture estimates of Hector's dolphin abundance at Banks Peninsula, New Zealand, Marine Mammal Science 21:204–216 (2005).
+
+INTERPRET THE DATA Suppose that none of the 44 dolphins encountered in the second sampling had been photographed before. Would you be able to solve the equation for N? What might you conclude about population size in this case?
+
+Density is not a static property but can increase or decrease over time as individuals are added to or removed from a population. As seen on the opening page of this chapter, additions occur through birth (which we define here to include all forms of reproduction) and immigration, the influx of new individuals from other areas. The factors that remove individuals from a population are death (mortality) and emigration, the movement of individuals out of a population and into other locations.
+
+While birth and death rates influence the density of all populations, immigration and emigration can also have substantial effects. For example, studies of a population of Hector's dolphins (see Figure 53.2) in New Zealand showed that immigration accounted for about $15\%$ of the total population size each year. Emigration was also important, typically occurring during the winter season when the dolphins move farther from shore. In general, both immigration and emigration represent key factors affecting the populations of many species. Emigration, for example, not only reduces the density of the original population, it also can result in the establishment of new populations in regions of favorable habitat, as we'll discuss later in this chapter.
+
+## Patterns of Dispersion
+
+Within the boundaries of a population, the spacing among individuals may differ substantially, creating contrasting patterns of dispersion. Such differences in spacing can provide insight into the biotic and abiotic factors that affect individuals in the population.
+
+The most common pattern of dispersion is clumped, in which individuals are aggregated in patches. Plants and fungi are often clumped where soil conditions and other environmental factors favor germination and growth. Mushrooms, for instance, may be clumped within and on top of a rotting log. Insects and salamanders may be clumped under the same log because of the higher humidity there. Clumping of animals may also be associated with mating behavior. Sea stars in the intertidal zone group together where food is readily available and the risk of desiccation (drying out) is low (Figure 53.3a). The aggregation of individuals into groups may also increase the effectiveness of predation or defense; for example, a wolf pack is more likely than a single wolf to subdue a moose, and a flock of birds is more likely than a single bird to warn of a potential attack.
+
+A uniform, or evenly spaced, pattern of dispersion may result from direct interactions between individuals in the population. Some plants secrete chemicals that inhibit the germination and growth of nearby individuals that could compete for resources. Animals often exhibit uniform dispersion as a result of antagonistic social interactions, such as territoriality—the defense of a bounded physical space against encroachment by other individuals (Figure 53.3b).
+
+In random dispersion (unpredictable spacing), the position of each individual in a population is independent of other individuals. This pattern occurs in the absence of strong attractions or repulsions among individuals or where key physical or chemical factors are relatively constant across the study area. Plants established by windblown seeds, such as dandelions, may be randomly distributed in a fairly uniform habitat (Figure 53.3c).
+
+Figure 53.3 Patterns of dispersion within a population's geographic range.
+
+![](images/86a12f7f23776bcaa41a04f74a0f8d0977a6a624cf722c49344156985d633720.jpg)  
+(a) Clumped. Sea stars group together where food is abundant.
+
+![](images/be585ee0d0bd7eb1df962e634ce417f1ff06a28260fa1609df46925781f94d35.jpg)  
+(b) Uniform. King penguins and other birds that nest on small islands often exhibit uniform spacing, maintained by aggressive interactions between neighbors.
+
+![](images/933135b0806595eb244cc191f9234b42d38f3efa67fb0a5ce2fa07aac38f0028.jpg)  
+(c) Random. Dandelions grow from windblown seeds that land at random and later germinate.
+
+Patterns of dispersion can depend on scale. How might the penguin dispersion look from an airplane flying high above the ocean? For suggested answer, see Appendix A.
+
+## Demographics
+
+The biotic and abiotic factors that influence population density and dispersion patterns also influence other characteristics of populations, including birth, death, and migration rates. Demography is the study of these key characteristics of populations and how they change over time. A useful way to summarize demographic information for a population is to make a life table.
+
+## Life Tables
+
+A life table summarizes the survival and reproductive rates of individuals in specific age-groups within a population. To construct a life table, researchers often follow the fate of a cohort, a group of individuals of the same age, from birth until all of the individuals are dead. Building the life table requires determining the proportion of the cohort that survives from one age-group to the next. It is also necessary to keep track of the number of offspring produced by females in each age-group. Note that life tables, like basic models of population growth, only consider how births and deaths influence population growth. Of course, immigration and emigration can also be important factors in population dynamics, as we'll discuss in Concept 53.5.
+
+Demographers who study sexually reproducing species often ignore the males and concentrate on the females in a population because only females produce offspring. Using this approach, a population is viewed in terms of females giving rise to new females. Table 53.1 is a life table built in this way for female Belding's ground squirrels (Urocitellus beldingi) from a population located in the Sierra Nevada mountains of California. Next, we'll take a closer look at some of the data presented in a life table.
+
+the other points in the curve for the ground squirrel population, we multiply the proportion alive at the start of each year (the third column of Table 53.1) by 1,000 (the hypothetical beginning cohort). The result is the number alive at the start of each year. Plotting these numbers versus age for female Belding's ground squirrels yields Figure 53.4. The approximately straight line of the plot indicates a relatively constant rate of death.
+
+Figure 53.4 represents just one of many patterns of survivorship exhibited by natural populations. Though diverse, survivorship curves can be classified into three general types (Figure 53.5). A Type I curve is flat at the start, reflecting low death rates during early and middle life, and then drops steeply as death rates increase among older age-groups. Many large mammals, including humans and elephants, that produce few offspring but provide them with good care exhibit this kind of curve.
+
+In contrast, a Type III curve drops sharply at the start, reflecting very high death rates for the young, but flattens out as death rates decline for those few individuals that survive the early period of die-off. This type of curve is usually associated with organisms that produce very large numbers of offspring but provide little or no care, such as long-lived plants, many fishes, and most marine invertebrates. An oyster, for example, may release millions of eggs, but most larvae hatched from fertilized
+
+## Survivorship Curves
+
+The survival rate data in a life table can be represented graphically as a survivorship curve, a plot of the proportion or numbers in a cohort still alive at each age. As an example, let's use the data for female Belding's ground squirrels in Table 53.1 to draw a survivorship curve. Often, a survivorship curve begins with a cohort of a convenient size—say, 1,000 individuals. To obtain eggs die from predation or other causes. Those few
+
+![](images/ae68a6b690985143491de8ca2cd070c28b66db907211bba710c9cee2fb6689ff.jpg)
+
+offspring that survive long enough to attach to a suitable substrate and begin growing a hard shell tend to survive for a relatively long time. Type II curves are intermediate, with a constant death rate over the organism's life span. This kind of survivorship occurs in Belding's ground squirrels and some other rodents, many invertebrates, lizards, and annual plants.
+
+Table 53.1 Life Table for Female Belding's Ground Squirrels (Tioga Pass, in the Sierra Nevada Mountains of California)
+
+<table><tr><td>Age (years)</td><td>Number Alive at Start of Year</td><td>Proportion Alive at Start of Year*</td><td>Death Rate†</td><td>Average Number of Female Offspring per Female</td></tr><tr><td>0–1</td><td>653</td><td>1.000</td><td>0.614</td><td>0.00</td></tr><tr><td>1–2</td><td>252</td><td>0.386</td><td>0.496</td><td>1.07</td></tr><tr><td>2–3</td><td>127</td><td>0.197</td><td>0.472</td><td>1.87</td></tr><tr><td>3–4</td><td>67</td><td>0.106</td><td>0.478</td><td>2.21</td></tr><tr><td>4–5</td><td>35</td><td>0.054</td><td>0.457</td><td>2.59</td></tr><tr><td>5–6</td><td>19</td><td>0.029</td><td>0.526</td><td>2.08</td></tr><tr><td>6–7</td><td>9</td><td>0.014</td><td>0.444</td><td>1.70</td></tr><tr><td>7–8</td><td>5</td><td>0.008</td><td>0.200</td><td>1.93</td></tr><tr><td>8–9</td><td>4</td><td>0.006</td><td>0.750</td><td>1.93</td></tr><tr><td>9–10</td><td>1</td><td>0.002</td><td>1.00</td><td>1.58</td></tr></table>
+
+Data from P. W. Sherman and M. L. Morton, Demography of Belding's ground squirrel, Ecology 65:1617–1628 (1984). $^{*}$ Indicates the proportion of the original cohort of 653 individuals that are still alive at the start of a time interval. $^{\dagger}$ The death rate is the proportion of individuals alive at the start of a time interval that die during that time interval.
+
+![](images/404052f756329fc0b658bb7d706b899236fab5b938e2994890b335b478676688.jpg)  
+▲ Researchers working with a Belding's ground squirrel
+
+The logarithmic scale on the y-axis allows the number of survivors to be visible across the entire range (2–1,000 individuals) on the graph.  
+Figure 53.4 Survivorship curve for female Belding's ground squirrels.  
+![](images/9d537389be924f0eb488ce59675f946b7cf41e006f0c375fd9a6d93d91bfed90.jpg)  
+Based on this graph, what percentage of the female ground squirrels survive to be 3 years old?  
+For suggested answer, see Appendix A.
+
+Many species fall somewhere between these basic types of survivorship or show more complex patterns. In birds, mortality is often high among the youngest individuals (as in a Type III curve) but fairly constant among adults (as in a Type II curve). Some invertebrates, such as crabs, may show a “stair-stepped” curve, with brief periods of increased mortality during molts, followed by periods of lower mortality when their protective exoskeleton is hard. In addition to such variation among species, survivorship curves also can differ among the populations of a single species.
+
+In populations experiencing low levels of immigration and emigration, survivorship is one of the two key factors determining changes in population size. The other key factor that affects how population size changes over time is reproductive rate.
+
+Figure 53.5 Idealized survivorship curves: Types I, II, and III. The y-axis is logarithmic and the x-axis is on a relative scale so that species with widely varying life spans can be presented together on the same graph.  
+![](images/164c3f382bf772882888d51ff572f21d80d8c486f0306380643744a0e0cfd973.jpg)
+
+## Reproductive Rates
+
+As mentioned above, demographers often ignore the males and concentrate on the females in a population because only females produce offspring. Therefore, demographers view populations in terms of females giving rise to new females. The simplest way to describe the reproductive pattern of a population is to identify how reproductive output varies with the number of breeding females and their ages.
+
+How do ecologists estimate the number of breeding females in a population? Possible approaches include direct counts and the mark-recapture method (see Figure 53.2). Increasingly, ecologists also use molecular tools. For example, scientists working in the state of Georgia collected skin samples from 198 female loggerhead turtles between 2005 and 2009. From these samples, they amplified nuclear short tandem repeats at 14 loci using the polymerase chain reaction (PCR; see Figure 20.7) and produced a genetic profile for each female (Figure 53.6, on the next page). They then extracted DNA from an eggshell from each turtle nest on the beaches they studied and, using their database of genetic profiles, matched the nest to a specific female. This approach allowed them to determine how many of the 198 females were breeding—and how many offspring each female produced—without having to disturb the females during egg laying.
+
+Reproductive output for sexual organisms such as birds and mammals is typically measured as the average number of female offspring produced by the females in a given age-group. For some organisms, the number of offspring for each female can be counted directly; alternatively, molecular methods can be used (see Figure 53.6). Researchers directly counted the offspring of the Belding's ground squirrels, which begin to reproduce at age 1 year. The squirrels' reproductive output rises to a peak at 4–5 years of age and then gradually falls off in older females (see Table 53.1).
+
+Age-specific reproductive rates vary considerably by species. Squirrels, for example, have a litter of two to six young once a year for less than a decade, whereas oak trees drop thousands of acorns each year for tens or hundreds of years. Mussels and other invertebrates may release millions of eggs and sperm in a spawning cycle. However, a high reproductive rate will not lead to rapid population growth unless conditions are near ideal for the growth and survival of offspring, as you'll learn in the next section.
+
+## Concept Check 53.1
+
+1. DRAW IT Each female of a particular fish species produces millions of eggs per year. Draw and label the most likely survivorship curve for this species, and explain your choice.
+
+2. WHAT IF? Suppose you are constructing a life table for a population of Belding's ground squirrels (see Table 53.1). If 485 individuals are alive at the start of year 0–1 and 218 are still alive at the start of year 1–2, what is the proportion alive at the start of each of these years (see column 3 in Table 53.1)?
+
+3. MAKE CONNECTIONS A male stickleback fish attacks other males that invade its nesting territory (see Figure 51.2a). Predict the likely pattern of dispersion for male sticklebacks, and explain your reasoning.
+
+Figure 53.6 Using genetic profiles from loggerhead turtle eggshells to identify which female laid the eggs.  
+![](images/0c2735805b846d811d6b46c10c98fdec91b4a233e83984d6e988e4065d2acd2a.jpg)  
+VISUAL SKILLS Use the profiles displayed in the figure to determine which breeding female laid the eggs in the nest from which eggshell sample #74 was taken.
+For suggested answer, see Appendix A.
+
+## Concept 53.2: The exponential model describes population growth in an idealized, unlimited environment
+
+Populations of all species have the potential to expand greatly when resources are abundant. To appreciate the potential for population increase, consider a bacterium that can reproduce by fission every 20 minutes under ideal laboratory conditions. There would be two bacteria after 20 minutes, four after 40 minutes, and eight after 60 minutes. If reproduction continued at this rate for a day and a half without mortality, there would be
+
+$3.245 \times 10^{32}$ bacteria, enough to form a layer 30 cm deep over the entire globe! But unlimited growth does not occur for long in nature, where individuals typically have access to fewer resources as a population grows. Nonetheless, ecologists can study population growth in ideal, unlimited environments to reveal how fast populations are capable of growing and the conditions under which rapid growth might actually occur.
+
+## Changes in Population Size
+
+Imagine a population consisting of a few individuals living in an ideal, unlimited environment. Under these conditions, there are no external limits on the abilities of individuals to harvest energy, grow, and reproduce. The population will increase in size with every birth and with the immigration of individuals from other populations, and it will decrease in size with every death and with the emigration of individuals out of the population. We can thus define a change in population size during a fixed time interval with the following verbal equation:
+
+$$
+\begin{array}{l l} \text {Change in} & \text {Immigrants} \\ \text {population} = \text {Births} + \text {entering} & - \text {Deaths} - \text {leaving} \\ \text {size} & \text {population} \end{array}
+$$
+
+For now, we will simplify our discussion by ignoring the effects of immigration and emigration.
+
+We can use mathematical notation to express this simplified relationship more concisely. If N represents population size and t represents time, then $\Delta N$ is the change in population size and $\Delta t$ is the time interval (appropriate to the life span or generation time of the species) over which we are evaluating population growth. (The Greek letter delta, $\Delta$ , indicates change, such as change in time.) Using B for the number of births in the population during the time interval and D for the number of deaths, we can rewrite the verbal equation:
+
+$$
+\frac {\Delta N}{\Delta t} = B - D
+$$
+
+Population ecologists often are most interested in changes in population size—the number of individuals that are added to or subtracted from a population during a given time interval, symbolized by R. Here, R represents the difference between the number of births (B) and the number of deaths (D) that occur in the time interval. Thus, R = B - D, and we can simplify our equation by writing the following:
+
+$$
+\frac {\Delta N}{\Delta t} = R
+$$
+
+Next, we can convert our model to one in which changes in population size are expressed on a per individual (per capita) basis. The per capita change in population size $(r_{\Delta t})$ represents the contribution that an average member of the population makes to the number of individuals added to or subtracted from the population during the time interval $\Delta t$ . If, for example, a population of 1,000 individuals increases by 16 individuals per year, then on a per capita basis, the annual change in population size is 16/1,000, or 0.016. If we know the annual per capita change in population size, we can use the formula $R = r_{\Delta t}N$ to calculate how many individuals will be added to (or subtracted from) a population each year. For example, if $r_{\Delta t}$ is 0.016 and the population size is 500,
+
+$$
+R = r _ {\Delta t} N = 0. 0 1 6 \times 5 0 0 = 8 \text {   per   year }
+$$
+
+Since the number of individuals added to (or subtracted from) the population $(R)$ can be expressed on a per capita basis as $R = r_{\Delta t}N$ , we can revise our population growth equation to take this into account:
+
+$$
+\frac {\Delta N}{\Delta t} = r _ {\Delta t} N
+$$
+
+Remember that our equation is for a specific time interval (often one year). However, many ecologists prefer to use
+
+differential calculus to express population growth as a rate of change at each instant in time:
+
+$$
+\frac {d N}{d t} = r N
+$$
+
+In this case, $r$ represents the per capita change in population size that occurs at each instant in time (whereas $r_{\Delta t}$ represented the per capita change that occurred during the time interval $\Delta t$ ). If you have not yet studied calculus, don't be intimidated by the last equation; it is similar to the previous one, except that the time intervals $\Delta t$ are very short and are expressed in the equation as $dt$ . In fact, as $\Delta t$ becomes shorter, $r_{\Delta t}$ and $r$ become increasingly close to one another in value.
+
+Note that the per capita population growth rate $(r)$ can vary depending on circumstances. To account for this, we will make one final change to this general equation of population growth to specify that the per capita population growth rate r is the “realized” per capita growth rate—that is, what the population is actually experiencing at a given time—which we’ll call $r_{realized}$ .
+
+$$
+\frac {d N}{d t} = r _ {r e a l i z e d} N
+$$
+
+## Exponential Growth
+
+Earlier we described a population whose members all have access to abundant food and can reproduce at their physiological capacity. In some cases, a population that experiences such ideal conditions increases in size by a constant proportion at each instant in time. When this occurs, the pattern of growth that results is called exponential population growth. In exponential growth, the realized per capita population growth rate ( $r_{realized}$ ) is always the highest it can be for that particular species ( $r_{max}$ , the maximum per capita population growth rate), so we can write the equation as follows:
+
+$$
+\frac {d N}{d t} = r _ {m a x} N
+$$
+
+In this equation, dN/dt represents the rate at which the population is increasing in size at each moment in time, akin to how a glance at the speedometer of a car reveals the speed at that instant in time. As seen in the equation, dN/dt equals the current population size, N, multiplied by a constant, $r_{max}$ . Ecologists also refer to $r_{max}$ as the intrinsic rate of increase, the per capita rate at which an exponentially growing population increases in size at each instant in time.
+
+The size of a population that is growing exponentially increases at a constant rate per individual, resulting eventually in a J-shaped growth curve when population size is plotted over time (Figure 53.7). Although the per capita rate of population growth is constant (and equals $r_{max}$ ), more new individuals are added per unit of time when the population is large than when it is small; thus, the curves in Figure 53.7 get progressively steeper over time. This occurs because population growth depends on N as well as $r_{max}$ , and hence more individuals are added to larger populations than to small ones growing at the same per capita rate. It is also clear from Figure 53.7 that a population with a higher intrinsic rate of increase (dN/dt = 1.0N) will grow faster than one with a lower intrinsic rate of increase (dN/dt = 0.5N).
+
+Figure 53.7 Population growth predicted by the exponential model.
+
+This graph compares growth in a population with $r_{max} = 1.0$ (solid blue curve) to growth in a population with $r_{max} = 0.5$ (dashed red curve).
+
+![](images/495521d23ee2feba68794e062b25c173582256279b72fd72d41b21b23f436578.jpg)  
+How many generations does it take these populations to reach a size of 1,500 individuals?  
+For suggested answer, see Appendix A.
+
+The J-shaped curve of exponential growth is characteristic of some populations that are introduced into a new environment or whose numbers have been drastically reduced by a catastrophic event and are rebounding. For example, the population of elephants in Kruger National Park, South Africa, grew exponentially for approximately 60 years after they were first protected from hunting (Figure 53.8). The increasingly large number of elephants eventually caused enough damage to vegetation in the park that a collapse in their food supply was likely. To protect other species and the park ecosystem before that happened, park managers began
+
+Figure 53.8 Exponential growth in the African elephant population of Kruger National Park, South Africa.  
+![](images/c60459c9d509caa77ed621ff0cd836e842c620de7f4ccc9532bf9cfac553c69e.jpg)
+
+limiting the elephant population by giving birth control medication to females and by exporting elephants to other countries.
+
+## Concept Check 53.2
+
+1. Explain why a constant per capita rate of growth ( $r_{max}$ ) for a population produces a curve that is J-shaped.
+
+2. Where is exponential growth by a plant population more likely—in an area where a forest was destroyed by fire or in a mature, undisturbed forest? Why?
+
+3. WHAT IF? In 2022, the United States had a population of 337 million people. If the (annual) per capita change in population size $(r_{\Delta t})$ was 0.007, how many people were added to the population that year (ignoring immigration and emigration)? What would you need to know to determine whether the United States is currently experiencing exponential growth?
+
+For suggested answers, see Appendix A.
+
+## Concept 53.3: The logistic model describes how a population grows more slowly as it nears its carrying capacity
+
+The exponential growth model assumes that resources remain abundant, which is rarely the case in the real world. Instead, as the size of a population increases, each individual has access to fewer resources. Ultimately, there is a limit to the number of individuals that can occupy a habitat. Ecologists define the carrying capacity, symbolized by K, as the maximum population size that a particular environment can sustain. Carrying capacity varies over space and time with the abundance of limiting resources. Energy, shelter, refuge from predators, nutrient availability, water, and suitable nesting sites can all be limiting factors. For example, the carrying capacity for bats may be high in a habitat with abundant flying insects and roosting sites but lower where there is abundant food but fewer suitable shelters.
+
+Crowding and resource limitation can have a profound effect on population growth rate. If individuals cannot obtain sufficient resources to reproduce, then the per capita birth rate will decline. Similarly, if starvation or disease increases with density, then the per capita death rate may increase. Falling per capita birth rates or rising per capita death rates will cause the realized per capita rate of population growth to drop, a very different situation from the constant per capita growth rate ( $r_{max}$ ) seen in a population that is growing exponentially.
+
+## The Logistic Growth Model
+
+We can modify our mathematical model so that the realized per capita population growth rate decreases as N increases. In the logistic population growth model, the realized per capita rate of population growth approaches zero as the population size nears the carrying capacity (K).
+
+To construct the logistic model, we start with the exponential population growth model and add an expression that reduces the realized per capita rate of population growth as N increases. If the carrying capacity is K, then K - N is the number of additional individuals the environment can support, and $(K - N)/K$ is the fraction of K that is still available for population growth. By multiplying the exponential rate of population growth $r_{max}N$ by $(K - N)/K$ , we modify the change in population size as N increases:
+
+$$
+\frac {d N}{d t} = r _ {m a x} \Big (\frac {K - N}{K} \Big) N
+$$
+
+When N is small compared to K, the term $(K - N)/K$ is close to 1. In this scenario, the realized per capita rate of population growth, $r_{max}[(K - N)/K]$ , will be close to (but slightly less than) $r_{max}$ , the intrinsic rate of increase seen in exponential population growth. But when N is large and resources are limiting, then $(K - N)/K$ is close to 0, and the realized per capita population growth rate is small. When N equals K, the population stops growing. Table 53.2 shows calculations of population growth rate for a hypothetical population growing according to the logistic model, with $r_{max} = 1.0$ per individual per year. Notice that the overall population growth rate $(dN/dt)$ is highest, +375 individuals per year, when the population size is 750, or half the carrying capacity. At a population size of 750, the realized per capita population growth rate remains relatively high (one-half the value of $r_{max}$ ), and there are more reproducing individuals $(N)$ in the population than at lower population sizes.
+
+As shown in the bottom part of Figure 53.9, the logistic model of population growth produces a sigmoid (S-shaped) growth
+
+Table 53.2 Logistic Growth of a Hypothetical Population (K = 1,500)  
+Table 53.2 Population growth predicted by exponential and logistic models
+
+<table><tr><td>Population Size (N)</td><td>Intrinsic Rate of Increase  $\left( {{r}_{\max }\text{)}}\right)$ </td><td>Proportion of K Available for Population Growth  $\frac{K - N}{K}$ </td><td>Realized Per Capita Population Growth Rate,  ${r}_{\max }\frac{\left( {K - N}\right) }{K}$ </td><td>Overall Population Growth Rate,*  ${r}_{\max }\frac{\left( {K - N}\right) }{K}N$ </td></tr><tr><td>25</td><td>1.0</td><td>0.983</td><td>0.983</td><td>+25</td></tr><tr><td>100</td><td>1.0</td><td>0.933</td><td>0.933</td><td>+93</td></tr><tr><td>250</td><td>1.0</td><td>0.833</td><td>0.833</td><td>+208</td></tr><tr><td>500</td><td>1.0</td><td>0.667</td><td>0.667</td><td>+333</td></tr><tr><td>750</td><td>1.0</td><td>0.500</td><td>0.500</td><td>+375</td></tr><tr><td>1,000</td><td>1.0</td><td>0.333</td><td>0.333</td><td>+333</td></tr><tr><td>1,250</td><td>1.0</td><td>0.167</td><td>0.167</td><td>+208</td></tr><tr><td>1,400</td><td>1.0</td><td>0.067</td><td>0.067</td><td>+93</td></tr><tr><td>1,475</td><td>1.0</td><td>0.017</td><td>0.017</td><td>+26</td></tr><tr><td>1,500</td><td>1.0</td><td>0.000</td><td>0.000</td><td>0</td></tr><tr><td colspan="5">*Rounded to the nearest whole number.</td></tr></table>
+
+Figure 53.9 Population growth predicted by the exponential and logistic models.
+
+In exponential growth (top), the overall rate of population growth $(dN/dt)$ becomes increasingly fast as the population size $(N)$ increases, since $r_{realized}$ is always equal to $r_{max}$ . In logistic growth (bottom), the rate of population growth $(dN/dt)$ decreases as population size $(N)$ approaches the carrying capacity $(K)$ of the environment, since $r_{realized}$ decreases with increasing population size due to the term $(K - N)/K\cdot$
+
+![](images/a33788adc684a0889f9ecae6b6ad826cf7cc77cb89ac2a658494a6e7d4cd4c50.jpg)
+
+curve when N is plotted over time. Overall population growth rate $(dN/dt)$ is low at small population sizes because while the realized per capita population growth rate $(r_{realized})$ is high, there are few individuals producing offspring. New individuals are added to the population most rapidly at intermediate population sizes, when there is not only a breeding population of substantial size, but also lots of available space and other resources in the environment. The realized per capita population growth rate $(r_{realized})$ decreases dramatically as N approaches K. As a result, the overall population growth rate $(dN/dt)$ also decreases as N approaches K.
+
+Note that we haven't said anything yet about why the population growth rate decreases as $N$ approaches $K$ . For a population's growth rate to decrease, the birth rate must decrease, the death rate must increase, or both. Later in the chapter, we'll consider some of the factors affecting these rates, including the presence of disease, predation, and limited amounts of food and other resources.
+
+## The Logistic Model and Real Populations
+
+The growth of laboratory populations of some small animals, such as beetles and crustaceans, and of some microorganisms, such as bacteria, Paramecium, and yeasts, fits an S-shaped curve fairly well under conditions of limited resources (Figure 53.10a). These populations are grown in a constant environment lacking predators and competing species that may reduce growth of the populations, conditions that rarely occur in nature.
+
+Figure 53.10 How well do these populations fit the logistic growth model? In each graph, the black dots plot the measured growth of the population, and the red curve is the growth predicted by the logistic model.
+
+![](images/c909bf55e8aac0637aaa84e1b4673a8e025e3d1d4ede7918cf83074e446e4fe4.jpg)  
+(a) A Paramecium population in the lab. The growth of Paramecium aurelia in a small culture closely approximates logistic growth if the researcher maintains a constant environment.
+
+Populations in nature rarely match the predictions of the logistic model as closely as do some laboratory populations, such as the Paramecium population in Figure 53.10a. This is not surprising, since some of the assumptions built into the logistic model clearly do not apply to all populations. The logistic model assumes that populations adjust instantaneously to growth and approach carrying capacity smoothly. In reality, there is often a delay before the negative effects of an increasing population are realized. If food becomes limiting for a population, for instance, reproduction will decline eventually, but females may use their energy reserves to continue reproducing for a short time. This may cause the population to overshoot its carrying capacity temporarily, as shown for the water fleas in Figure 53.10b. In the Scientific Skills Exercise,
+
+The two animals pictured here are members of the southern subspecies, which has a population of around 17,000 individuals. The northern subspecies is critically endangered, with just a few known individuals.
+
+![](images/b1272bee0aa0c1953eeda68b25b3b362fee34aefa534e5b5059e561be95471e6.jpg)
+
+Figure 53.11 White rhinoceros mother and calf.  
+![](images/90cd4f029a1ca1f5812488e719804f7990717c9fcda6663fd64c792f06c7e3f0.jpg)  
+(b) A Daphnia population in the lab. The growth of a population of water fleas (Daphnia) in a small laboratory culture does not correspond well to the logistic model. This population overshoots the carrying capacity of its artificial environment before it settles down to an approximately stable population size.
+
+you can model what can happen to such a population when N becomes greater than K. Other populations fluctuate greatly, making it difficult even to define carrying capacity. We will examine some possible reasons for such fluctuations later in the chapter.
+
+The logistic model provides a useful starting point for thinking about how populations grow and for constructing more complex models. As such, its role is similar to that played by the Hardy-Weinberg equation for thinking about the evolution of populations. The logistic model is also important in conservation biology for predicting how rapidly a particular population might increase in numbers after it has been reduced to a small size and for estimating sustainable harvest rates for wildlife populations. Conservation biologists can also use the model to estimate the critical size below which populations of certain organisms, such as the northern subspecies of the white rhinoceros (Ceratotherium simum), may become extinct (Figure 53.11).
+
+## Concept Check 53.3
+
+1. Explain why a population that fits the logistic growth model increases more rapidly at an intermediate size than at relatively small and large sizes.
+
+2. WHAT IF? Given the latitudinal differences in sunlight intensity (see Figure 52.3), how might you expect the carrying capacity of plant species found at the equator to compare with that of plant species found at high latitudes?
+
+3. MAKE CONNECTIONS Suppose that a sudden change in environmental conditions caused a substantial drop in a population's carrying capacity. Predict how natural selection and genetic drift might affect this population. (See Concept 23.3.)
+
+# Scientific Skills Exercise Using the Logistic Equation to Model Population Growth
+
+What Happens to the Size of a Population When It Overshoots Its Carrying Capacity? In the logistic population growth model, the per capita rate of population increase approaches zero as the population size (N) approaches the carrying capacity (K). Under some conditions, however, a population in the laboratory or the field can overshoot K, at least temporarily. If food becomes limiting to a population, for instance, there may be a delay before reproduction declines, and N may briefly exceed K. In this exercise, you will use the logistic equation to model the growth of the hypothetical population in Table 53.2 when N > K.
+
+## INTERPRET THE DATA
+
+1. Assuming that $r_{max} = 1.0$ and K = 1,500, calculate the population growth rate for four cases where population size (N) is greater than carrying capacity (K): N = 1,510, 1,600, 1,750, and 2,000 individuals. To do this, first write the equation for population growth rate given in Table 53.2. Plug in the values for each of the four cases, starting with N = 1,510, and solve the equation for each one. Which population size has the highest growth rate?
+
+## Concept 53.4: Life history traits are products of natural selection
+
+EVOLUTION Natural selection favors traits that improve an organism's chances of survival and reproductive success. In every species, there are trade-offs between survival and reproductive traits such as frequency of reproduction, number of offspring (number of seeds produced by plants; litter or clutch size for animals), or investment in parental care. The traits that affect an organism's schedule of reproduction and survival make up its life history. Life history traits of an organism are evolutionary outcomes reflected in its development, physiology, and behavior.
+
+## Diversity of Life Histories
+
+We'll focus on three key components of an organism's life history: when reproduction begins (the age at first reproduction or age at maturity), how often the organism reproduces, and how many offspring are produced per reproductive episode. The fundamental idea that evolution accounts for the diversity of life is manifest in the broad range of these life history characteristics in nature. For example, the age at which reproduction begins varies considerably across species. A typical loggerhead turtle is about 30 years old
+
+Daphnia
+
+![](images/0ef7d7277fb49b7535f62b059ff740c518e5a9a03fbc6694a70f0bae84755558.jpg)
+
+2. If r is doubled, predict how the population growth rates will change for the four population sizes given in question 1. Now calculate the population growth rate for the same four cases, this time assuming that $r_{max} = 2.0$ (and with K still = 1,500).
+
+3. Now let's see how the growth of a real-world population of Daphnia corresponds to this model. At what times in Figure 53.10b is the Daphnia population changing in ways that correspond to the values you calculated? Hypothesize why the population drops below the carrying capacity briefly late in the experiment.
+
+Instructors: A version of this Scientific Skills Exercise can be assigned in Mastering Biology.
+
+when it first crawls onto a beach to lay eggs. In contrast, the coho salmon (Oncorhynchus kisutch) is often only three or four years old when it first spawns.
+
+Organisms also vary in how often they reproduce. The coho salmon is an example of organisms that undergo a “one-shot” pattern of big-bang reproduction, or semelparity (from the Latin semel, once, and parere, to beget). It hatches in the headwaters of a freshwater stream and then migrates to the Pacific Ocean, where it typically requires a few years to mature. The salmon eventually returns to the same stream to spawn, producing thousands of eggs in a single reproductive opportunity before it dies. Semelparity also occurs in some plants, such as the agave, or “century plant” (Figure 53.12a). Agaves generally grow in arid climates with unpredictable rainfall and poor soils. An agave grows for years, accumulating nutrients in its tissues, until there is an unusually wet year. It then sends up a large flowering stalk, produces seeds, and dies. This life history appears to be an adaptation to the agave’s harsh desert environment.
+
+In contrast to semelparity is iteroparity (from the Latin iterare, to repeat), or repeated reproduction. As an example, a female loggerhead turtle produces four clutches totaling approximately 300 eggs in a year. It then typically waits two to three years before laying more eggs; presumably, the turtles lack sufficient resources to produce that many eggs every year. A mature turtle may lay eggs for 30 years after the first clutch. Horses and other large mammals also reproduce repeatedly, as do many fish, sea urchins, and long-lived trees, such as maples and oaks (Figure 53.12b).
+
+Figure 53.12 Semelparity and iteroparity.  
+![](images/8ae34c7600c073641ceed93acafee92ffb11f8a2d786eaa6730bc2767d64b818.jpg)  
+(a) Semelparity: one-time reproduction. An agave (Agave americana) is an example of semelparity. The leaves of the plant are visible at the base of the giant flowering stalk, which is produced only at the end of the agave's life.
+
+![](images/57bb73727df46d9f7d1f42d2851a571222bd460fb363f276730eb00fbbe9626d.jpg)  
+(b) Iteroparity: repeat reproduction. Organisms that reproduce repeatedly, such as the bur oak (Quercus macrocarpa), undergo iteroparity. One oak tree can produce thousands of acorns (inset) per year over the course of many decades.
+
+Finally, organisms also vary in how many offspring they produce. Some species, such as the white rhinoceros (see Figure 53.11), produce a single calf when they reproduce, while most insects and many plants produce large numbers of offspring. Such variation in offspring number has other consequences as well; as you'll read, a species that produces one or a few offspring may provision them better than does a species that produces many offspring.
+
+## "Trade-offs" and Life Histories
+
+No organism could produce thousands of offspring yet provision each of them as well as does a white rhinoceros caring for its single calf. There is a trade-off between the number of offspring and the amount of resources a parent can devote to each offspring. Such trade-offs occur because organisms do not have access to unlimited amounts of resources. As a result, the use of resources for one function (such as reproduction) can reduce the resources available for supporting another function (such as survival). In Eurasian kestrels, for example, caring for a larger number of young lowered the survival rates of the parents (Figure 53.13). In another study, in Scotland, researchers found that female red deer that reproduced in a given summer were more likely to die the next winter than were females that did not reproduce.
+
+Selective pressures also influence trade-offs between the number and size of offspring. Plants and animals whose young have a low chance of survival often produce many small
+
+## Figure 53.13
+
+## Inquiry: How does caring for offspring affect parental survival in kestrels?
+
+## Experiment
+
+Cor Dijkstra and colleagues in the Netherlands studied the effects of parental caregiving in Eurasian kestrels over five years. The researchers transferred chicks among nests to produce reduced broods (three or four chicks), normal broods (five or six), and enlarged broods (seven or eight). They then measured the percentage of male and female parent birds that survived the following winter. (Both males and females provide care for chicks.)
+
+## Results
+
+![](images/22b822fd31cffa6c6d7cb9d5f040592dbfff28e3724b4d89620e34d736beae4b.jpg)
+
+## Conclusion
+
+The lower survival rates of kestrels with larger broods indicate that caring for more offspring negatively affects survival of the parents.
+
+Data from C. Dijkstra et al., Brood size manipulations in the kestrel (Falco tinnunculus): effects on offspring and parent survival, Journal of Animal Ecology 59:269–285 (1990).
+
+INTERPRET THE DATA The males of some bird species provide no parental care. If this were true for the Eurasian kestrel, predict how the experimental results would differ from those shown here.
+
+offspring. For example, plants that colonize disturbed environments usually produce many small seeds, only a few of which may reach a suitable habitat. Small size may also increase the chance of seedling establishment by enabling the seeds to be carried longer distances to a broader range of habitats (Figure 53.14a). Animals that suffer high predation rates, such as quail, sardines, and mice, also tend to produce many offspring.
+
+Figure 53.14 Variation in the number and size of seeds in plants.  
+![](images/5bba462a1d0d5b7c9636857701959aa1609d89726f30c6e43a50f17a4809f4a8.jpg)  
+(a) Dandelions grow quickly and release a large number of tiny fruits, each containing a single seed. Producing numerous seeds increases the chance that at least some will grow into plants that eventually produce seeds themselves.
+
+![](images/5df51da17c2f905bba652ae2a39429c71810a2b876463ba84c351dc4db49eb4b.jpg)  
+(b) Some plants, such as the Brazil nut tree (right), produce a moderate number of large seeds in pods (above). Each seed's large endosperm provides nutrients for the embryo, an adaptation that helps a relatively large fraction of offspring survive.
+
+![](images/5ecbe206393619bc2a3648032098c1cde1c2d9bac16489e1207006a3f139f1af.jpg)
+
+In other organisms, extra investment on the part of the parent greatly increases the offspring's chances of survival. Brazil nut and walnut trees produce large seeds packed with nutrients that help the seedlings become established (Figure 53.14b). Primates generally bear only one or two offspring at a time; parental care and an extended period of learning in the first several years of life are very important to offspring fitness. Such provisioning and extra care can be especially important in habitats with high population densities.
+
+One way to categorize variation in life history traits is related to the logistic growth model discussed in Concept 53.3. Selection for traits that are advantageous at high densities is referred to as as K-selection. In contrast, selection for traits that maximize reproductive success in uncrowded environments (low densities) is called r-selection. These names follow from the variables of the logistic equation. K-selection is said to operate in populations living at a density near the limit imposed by their resources (the carrying capacity, K), where competition among individuals is stronger. Mature trees growing in an old-growth forest are an example of K-selected organisms. In contrast, r-selection is said to maximize $r_{max}$ , the intrinsic rate of increase, and occurs in environments in which population densities are well below carrying capacity or individuals face little competition. Such conditions are often found in disturbed habitats that are being recolonized. Weeds
+
+growing in an abandoned agricultural field are an example of r-selected organisms.
+
+The concepts of K- and r-selection represent two extremes in a range of actual life histories. The framework of K- and r-selection, grounded in the idea of carrying capacity, also relates to the important question we alluded to earlier: Why does population growth rate decrease as population size approaches carrying capacity? Answering this question is the focus of the next section.
+
+## Concept Check 53.4
+
+1. Identify three key life history traits, and give examples of organisms that vary widely in each of these traits.
+
+2. In the fish called the peacock wrasse (Symphodus tinca), females disperse some of their eggs widely and lay other eggs in a nest. Only the latter receive parental care. Explain the trade-offs in reproduction that this behavior illustrates.
+
+3. WHAT IF? Mice that experience stress such as a food shortage will sometimes abandon their young. Explain how this behavior might have evolved in the context of reproductive trade-offs and life history.
+
+For suggested answers, see Appendix A.
+
+## Concept 53.5: Density-dependent factors regulate population growth
+
+As discussed in Concept 53.4, the logistic growth model predicts a decrease in realized per-capita population growth rate as a population's size increases. What causes these changes? What environmental factors keep populations from growing indefinitely? Why are some populations fairly stable in size, while others are not?
+
+Answers to such questions can be important in practical applications. Farmers may want to reduce the abundance of insect pests or stop the growth of a weed that is spreading rapidly. Conservation ecologists need to know what environmental factors create favorable feeding or breeding habitats for endangered species, such as the white rhinoceros and the whooping crane. Overall, whether seeking to reduce the size of an unwanted population or increase the size of one that is endangered, it is helpful to understand factors that affect population abundance.
+
+## Population Change and Population Density
+
+To understand why a population stops growing when it reaches a certain size, ecologists study how the rates of birth, death, immigration, and emigration change as population density rises. If immigration and emigration offset each other, then a population grows when the birth rate exceeds the death rate and declines when the death rate exceeds the birth rate.
+
+A birth rate or death rate that does not change with population density is said to be density independent. For example, researchers found that the mortality of dune fescue grass (Vulpia fasciculata) is mainly due to physical factors that kill similar proportions of a local population, regardless of its density. Drought stress that arises when the roots of the grass are uncovered by shifting sands is a density-independent factor that can kill these plants. In contrast, a death rate that increases with population density or a birth rate that falls with rising density is said to be density dependent. Researchers found that reproduction by dune fescue declines as population density increases, in part because water or nutrients become more scarce. Thus, the key factors affecting birth rate in this population are density dependent, while death rate is largely determined by density-independent factors. For situations in which immigration and emigration offset each other, Figure 53.15 shows how the combination of density-dependent reproduction and density-independent mortality can stop population growth (as in species such as dune fescue).
+
+Variation in density-independent factors such as temperature and precipitation can cause dramatic changes in population size. For example, a drought or heat wave can cause a sharp increase in mortality rates, causing the abundance of a population to plummet. Note, however, that a density-independent factor cannot consistently cause a population to decrease in size when it is large or increase in size when it is small—only a density-dependent factor can consistently cause such changes. With this in mind, a population is said to be regulated when one or more density-dependent factors cause its size to decrease when large (or increase when small).
+
+Figure 53.15 Determining equilibrium for population density. In this example, the birth rate changes with population density, while the death rate is constant; immigration and emigration rates are assumed to be equal. At the equilibrium density (Q), the birth and death rates are equal. As a result, the number of individuals added to the population equals the number removed from it, and the population stops changing in size.  
+![](images/3a9784a6eef95149d4d7fe6a9af6c3985285cb714ece05eb4e28070b9b13229d.jpg)  
+DRAW IT Redraw this figure for the case where the birth and death rates are both density dependent, as occurs for many species.
+For suggested answer, see Appendix A.
+
+Figure 53.16 An example of density-dependent regulation. At high population densities, the death rate of kelp perch increased because they ran out of spaces to hide from predators.  
+![](images/b5d3f57d8d0c12b9ee7df721e71702b9dc1b7acd81530d9b6e414bfe10980bb5.jpg)
+
+## Mechanisms of Density-Dependent Population Regulation
+
+Without some type of negative feedback between population density and the rates of birth and death, a population would never stop growing. But no population can increase in size indefinitely. Ultimately, at large population sizes, negative feedback is provided by density-dependent regulation, which halts population growth through mechanisms that reduce birth rates or increase death rates. For example, a study of kelp perch (Brachyistius frenatus) populations showed that the fish's death rate rose proportionally as its density increased (Figure 53.16). This occurred because at high densities, the fish ran out of safe spaces in the kelp where they could hide from predators. Several other mechanisms that can cause density-dependent regulation are described in Figure 53.17.
+
+These various examples of population regulation by negative feedback show how increased densities cause population growth rates to decline by affecting reproduction, growth, and survival. Although negative feedback helps explain why populations stop growing, it does not address why some populations fluctuate dramatically while others remain relatively stable.
+
+## Population Dynamics
+
+Like the piping plover (see Figure 53.1), all populations show some fluctuation in size. Such population fluctuations from year to year or place to place, called population dynamics, are influenced by many factors and in turn affect other species. For example, fluctuations in fish populations affect populations of seabirds that eat fish. The study of population dynamics focuses on the complex interactions between biotic and abiotic factors that cause variation in population sizes.
+
+# Exploring Mechanisms of Density-Dependent Regulation
+
+## Figure 53.17
+
+As population density increases, density-dependent mechanisms operating within a species can slow or stop population growth by decreasing birth rates or increasing death rates.
+
+## Competition for Resources
+
+Increasing population density leads to competition among members of a population for nutrients and other resources, reducing reproductive rates. Farmers minimize the effect of competition on the growth of wheat (Triticum aestivum) and other crops by applying fertilizers to reduce nutrient limitations on crop yield.
+
+![](images/180d6745ec268951e292de3700385dbdde143624631af57cf821b7b80efae1a2.jpg)
+
+## Territoriality
+
+Territoriality can limit population density when space becomes the resource for which individuals compete. Cheetahs (Acinonyx jubatus) use a chemical marker in urine to warn other cheetahs of their territorial boundaries. The presence of surplus, or nonbreeding, individuals is a good indication that territoriality is restricting population growth.
+
+![](images/264e69305fdb37e527d847f04b980947dcc1b60a02a54b8fc1774adc142a53f4.jpg)
+
+## Disease
+
+If the transmission rate of a disease increases as a population becomes more crowded, then the disease's impact is density dependent. In humans, the respiratory diseases influenza (flu) and tuberculosis are spread through the air when an infected person sneezes or coughs. Both diseases strike a greater percentage of people in densely populated cities than in rural areas.
+
+![](images/19c947d463b970ce28b6d97b978460fc44ca78d30463c2bd31233dfab7d26241.jpg)
+
+## Intrinsic Factors
+
+Intrinsic physiological factors (those operating within an individual organism) sometimes regulate population size. Reproductive rates of white-footed mice (Peromyscus leucopus) in a field enclosure can drop even when food and shelter are abundant. This drop in reproduction at high population density is associated with aggressive interactions and hormonal changes within individual mice that delay sexual maturation and depress the immune system.
+
+![](images/182aff6d990dc2629493541f1222bfde3090f08e3143ac5daac64e42cda4e824.jpg)
+
+![](images/05d2a6db3132e75c73475fce895e2343c45622b262c16495aebe9b8b0ecec6b8.jpg)  
+5 μm
+
+## Toxic Wastes
+
+Yeasts, such as the brewer's yeast Saccharomyces cerevisiae, are used to convert carbohydrates to ethanol in winemaking. The ethanol that accumulates in the wine is toxic to yeasts and contributes to density-dependent regulation of yeast population size. The alcohol content of wine is usually less than 13% because that is the maximum concentration of ethanol that most wine-producing yeast cells can tolerate.
+
+## Stability and Fluctuation
+
+Populations of large mammals were once thought to remain relatively stable, but long-term studies have challenged that idea. For instance, the moose population on Isle Royale in Lake Superior has fluctuated substantially since around 1900. At that time, moose from the Ontario mainland (25 km away) colonized the island, perhaps by walking across the lake when it was frozen. Wolves, which rely on moose for most of their food, reached the island around 1950 by walking across the frozen lake. The lake has not frozen over since the early 1950s, and both populations appear to have been isolated from immigration and emigration since then. Despite this isolation, the moose population experienced two major increases and collapses during the last 50 years (Figure 53.18).
+
+What factors cause the size of the moose population to change so dramatically? Harsh weather, particularly cold winters with heavy snowfall, can weaken moose and reduce food availability, decreasing the population size. When moose numbers are low and the weather is mild, food is readily available and the population grows quickly. Conversely, when moose numbers are high, density-dependent factors such as predation and an increase in the density of ticks and other parasites cause the population to shrink. The effects of some of these factors can be seen in Figure 53.18. The first major collapse coincided with a peak in the numbers of wolves from 1975 to 1980. The second major collapse, around 1995, coincided with harsh winter weather, which increased the energy needs of the moose and made it harder for them to find food under the deep snow.
+
+## Population Cycles: Scientific Inquiry
+
+While many populations fluctuate at unpredictable intervals, others undergo regular boom-and-bust cycles. Some small herbivorous mammals, such as voles and lemmings, tend to have 3- to 4-year cycles, while some birds, such as ruffed grouse and ptarmigans, have 9- to 11-year cycles.
+
+One striking example of population cycles is the roughly 10-year cycling of snowshoe hares (Lepus americanus) and lynx (Lynx canadensis) in the far northern forests of Canada and
+
+Figure 53.18 Fluctuations in moose and wolf population sizes on Isle Royale, 1959–2011.  
+![](images/aa09968c87b18620d1893c5c3c770adcb573ea71ee25daf5128a8baff1aeccdd.jpg)
+
+Figure 53.19 Population cycles in the snowshoe hare and lynx. Population counts are based on the number of pelts sold by trappers to the Hudson Bay Company.  
+![](images/4f674d128a1993d4e68f59966578ed9bf45fd3b76cb59fb87b254b7d34001651.jpg)
+
+![](images/b34232cd4a0c73ad9453e2b27d080ec4cc86c4a4c22f025115d0e6b8a002aff5.jpg)  
+INTERPRET THE DATA What do you observe about the relative timing of the peaks in lynx numbers and hare numbers? What might explain this observation?
+
+Alaska. Lynx are predators that feed predominantly on snowshoe hares, so lynx numbers might be expected to rise and fall with the numbers of hares (Figure 53.19). But why do hare numbers rise and fall in approximately 10-year cycles? Two main hypotheses have been proposed. First, the cycles may be caused by food shortage during winter. Hares eat the terminal twigs of small shrubs such as willow and birch in winter, although why this food supply might cycle in 10-year intervals is uncertain. Second, the cycles may be due to predator-prey interactions. Many predators other than lynx eat hares, and they may overexploit their prey.
+
+Let's consider the evidence for the two hypotheses. If hare cycles are due to winter food shortage, then the cycles should stop if extra food is provided to a field population. Researchers conducted such experiments in the Yukon for 20-year—over two hare cycles. They found that hare populations in the areas with extra food increased about threefold in density but continued to cycle in the same way as the unfed control populations. Therefore, food supplies alone do not cause the hare cycles shown in Figure 53.19, so we can reject the first hypothesis.
+
+To study the effects of predation, ecologists used radio collars to track individual hares to determine why they died. Predators, including lynx, coyotes, hawks, and owls, killed 95% of the hares in such studies. None of the hares appeared to have died of starvation. These data support the second hypothesis. When
+
+ecologists set up electric fences to exclude predators from certain areas, the collapse in survival that normally occurs in the decline phase of the cycle was nearly eliminated. Overexploitation by predators thus seems to be an essential part of snowshoe hare cycles; without predators, it is unlikely that hare populations would cycle in northern Canada.
+
+## Immigration, Emigration, and Metapopulations
+
+So far, our discussion of population dynamics has focused mainly on the contributions of births and deaths. However, immigration and emigration also influence populations. When a population becomes crowded and resource competition increases, emigration often increases.
+
+Immigration and emigration are particularly important when a number of local populations are linked, forming a metapopulation. Local populations in a metapopulation can be thought of as occupying discrete patches of suitable habitat in a sea of otherwise unsuitable habitat. Such patches vary in size, quality, and isolation from other patches, factors that influence how many individuals move among the populations. If one population becomes extinct, the patch it occupied may be recolonized by immigrants from another population.
+
+The Glanville fritillary (Melitaea cinxia) illustrates the movement of individuals between populations. On average, this butterfly is found in about 500 meadows across the Åland Islands of Finland, but its potential habitat in the islands is much larger, approximately 4,000 suitable patches. New populations of the butterfly regularly appear and existing populations become extinct, constantly shifting the locations of the 500 colonized patches (Figure 53.20). The species persists in a balance of local extinctions and recolonizations.
+
+An individual's ability to move between populations depends on a number of factors, including its genetic makeup. One gene that has a strong effect on the Glanville fritillary's ability to move is $Pgi$ , which codes for the enzyme phosphoglucoisomerase. This enzyme catalyzes the second step of glycolysis (see Figure 9.8), and its activity correlates with the rate of $CO_2$ production from respiration by the butterflies. Ecologists studied butterflies known to be heterozygous or homozygous for a single nucleotide polymorphism in $Pgi$ . They tracked the movements of individual butterflies using radar and transponders attached to the butterflies that emit an identifying signal. Butterfly movements ranged widely, from 10 m to 4 km, in 2-hour periods. Heterozygous individuals flew more than twice as far in the morning and at lower ambient temperatures than did homozygous individuals. The results indicated a fitness advantage to the heterozygous genotype in low temperatures and a greater likelihood of heterozygotes colonizing new locations in the metapopulation.
+
+The metapopulation concept underscores the significance of immigration and emigration for the Glanville fritillary and many other species. It also helps ecologists understand population dynamics and gene flow in patchy habitats, providing a framework for the conservation of species living in a network of habitat fragments and reserves.
+
+Figure 53.20 The Glanville fritillary: a metapopulation.
+
+On the Åland Islands, local populations of this butterfly (filled circles) are found in only a fraction of the suitable habitat patches at any given time. Individuals can move between local populations and colonize unoccupied patches (open circles).
+
+![](images/54e80a87bc48a260590028ca47eb4efd5a90ff5e83bea6e1401c480508bd62f3.jpg)  
+A Glanville fritillary (Melitaea cinxia) wearing a tracking transponder.
+
+![](images/ed43419e44a934f0873385f0d77deab185a5bb33ac1c29d2b391e57af6349c83.jpg)
+
+## Concept Check 53.5
+
+1. Describe three attributes of habitat patches that could affect population density and rates of immigration and emigration.
+
+2. DRAW IT Circle the portion of the bottom graph in Figure 53.9 in which density-dependent population regulation would likely have the most pronounced effects.
+
+3. WHAT IF? Suppose you were studying a species that has a population cycle of about ten years. How long would you need to study the species to determine if its population size were declining? Explain.
+
+4. MAKE CONNECTIONS Negative feedback is a process that regulates biological systems (see Concept 40.2). Explain how the density-dependent birth rate of dune fescue grass exemplifies negative feedback.
+
+# Concept 53.6: The human population is no longer growing exponentially but is still increasing extremely rapidly
+
+In the last few centuries, the human population has grown at an unprecedented rate, more like the elephant population in Kruger National Park (see Figure 53.8) than the fluctuating populations we considered in Concept 53.5. No population can grow indefinitely, however. In this section of the chapter, we'll apply the concepts of population dynamics to the specific case of the human population.
+
+## The Global Human Population
+
+The human population has grown explosively over the last four centuries (Figure 53.21). In 1650, about 500 million people inhabited Earth. Our population doubled to 1 billion within the next two centuries, doubled again to 2 billion by 1930, and doubled still again to 4 billion by 1975. Notice that the time it took our population to double in size decreased from 200 years in 1650 to just 45 years in 1930. Thus, historically our population has grown even faster than exponential growth, which has a constant per capita rate of increase and hence a constant doubling time.
+
+The global population is now more than 8.1 billion people and is increasing by about 70 million each year. This translates into more than 190,000 people each day, the equivalent of adding a city the size of Knoxville, Tennessee. At this rate, it takes only about 5 years to add the equivalent of another United States to the world population. Ecologists predict there will be about 9.8 billion people on Earth by the year 2050.
+
+Figure 53.21 Human population growth (data as of 2022). The global human population has grown almost continuously throughout history, but it skyrocketed after the Industrial Revolution.  
+![](images/9bce099c35708631f12b961a83c8932f7c62c950cc6886f85d6ccf9f49c38ef9.jpg)  
+Figure 53.22 Annual percent increase and recent human population growth.
+
+![](images/ee5d5498055792d422d6added74dbabbe4d1f12bf531a42520c0e28a8d0745d7.jpg)  
+VISUAL SKILLS The human population curve (blue) in this figure appears to tell a different story about human population growth than does the curve in Figure 53.21, yet both curves are accurate. Summarize what each curve conveys about recent human population growth and explain how both can be accurate.  
+For suggested answer, see Appendix A.
+
+Though the global population is still growing, the rate of growth began to slow during the 1960s (Figure 53.22). The annual rate of increase in the global population peaked at 2.2% in 1962 but was only 0.9% in 2024. Current models project a growth rate of 0.45% by 2050, which would add about 44 million more people per year if the population climbs to a projected 9.8 billion. The reduction in annual growth rate observed over the past six decades shows that the human population is now growing more slowly than expected in exponential growth. This change resulted from fundamental shifts in population dynamics due to diseases, including AIDS, as well as social change and voluntary population control.
+
+## Regional Patterns of Population Change
+
+We have described changes in the global population, but population dynamics vary widely from region to region. In a stable regional population, birth rate equals death rate (disregarding the effects of immigration and emigration). Two possible configurations for a stable population are
+
+$$
+\begin{array}{c} \text {Zero population growth = High birth rate - High death rate} \\ \text {or} \end{array}
+$$
+
+$$
+\text { Zero   population   growth } = \text { Low   birth   rate } - \text { Low   death   rate }
+$$
+
+The movement from high birth and death rates toward low birth and death rates, which tends to accompany industrialization and improved living conditions, is called the demographic transition. In Sweden, this transition took about 150 years, from 1810 to 1975, when birth rates finally approached death rates.
+
+In Mexico, where the human population is still growing rapidly, the transition is projected to take until at least 2050. Demographic transition is associated with an increase in the quality of health care and sanitation as well as improved access to education, especially for women.
+
+After 1950, death rates declined rapidly in most developing countries, but birth rates have declined more variably. Birth rates have fallen most dramatically in China. The expected number of children per woman per lifetime in China decreased from 5.9 in 1970 to 1.6 in 2011, largely due to the government's strict "one-child" policy. In some countries of Africa, the transition to lower birth rates has also been rapid, though birth rates remain high in most of sub-Saharan Africa.
+
+How do such variable birth rates affect the growth of the world's population? In industrialized nations, populations are near equilibrium, with reproductive rates near the replacement level of 2.1 children per female (over their lifetime). In many industrialized countries—including the United States, Canada, Germany, Japan, and the United Kingdom—total reproductive rates are in fact below the replacement level. These populations will eventually decline if there is no immigration and if the birth rate does not change. In fact, the population is already declining in many eastern and central European countries. Most of the current global population growth occurs in less industrialized countries, where about $80\%$ of the world's people now live.
+
+A unique feature of human population growth is our ability to control family sizes through planning and voluntary contraception. Social change and the rising educational and career aspirations of women in many cultures encourage women to delay marriage and postpone reproduction. Delayed reproduction helps to decrease population growth rates and to move a society toward zero population growth under conditions of low birth rates and low death rates. However, there is a great deal of disagreement as to how much support should be provided for global family planning efforts.
+
+## Age Structure
+
+Another important factor that can affect population growth is a country's age structure, the relative number of individuals of each age in the population. Age structure is commonly graphed as “pyramids” like those in Figure 53.23. For Zambia, the pyramid is bottom heavy, skewed toward young individuals who will grow up and perhaps sustain the explosive population growth with their own reproduction. The age structure for the United States is relatively even until the older, postreproductive ages. Although the total reproductive rate in the United States was about 1.6 children per woman in 2023—below the replacement rate—the population is projected to grow slowly through 2050 as a result of immigration. For Italy, the pyramid has a small base, indicating that individuals younger than reproductive age are relatively underrepresented in the population. This situation contributes to the projection of a future population decrease in Italy.
+
+Age-structure diagrams not only predict a population's growth trends but also can illuminate social conditions. Based on the diagrams in Figure 53.23, we can predict that employment and education opportunities will continue to be a problem for Zambia in the foreseeable future. In the United States and Italy, a decreasing proportion of younger working-age people will soon be supporting an increasing population of retired “boomers.” This demographic feature has made the future of Social Security and Medicare a major political issue in the United States. Understanding age structures is necessary to plan for the future.
+
+Figure 53.23 Age-structure pyramids for the human population of three countries. The annual growth rate was approximately $2.8\%$ in Zambia, $1.0\%$ in the United States, and $0.0\%$ in Italy. Note that Zambia's pyramid has a different scale for its $x$ -axis from that of the other two pyramids. (Data as of 2010.)  
+![](images/5ee3a8fa1c4d5ffbd3dcabc794bcb22417de2723a9e97ddea5308343410d26fb.jpg)
+
+## Infant Mortality and Life Expectancy
+
+Infant mortality, the number of infant deaths per 1,000 live births, and life expectancy at birth, the predicted average length of life at birth, vary widely in different countries. In 2023, for example, the infant mortality rate was 58 (5.8%) in Mali but only 2 (0.2%) in Japan. Life expectancy at birth was 60 years in Mali but 84 years in Japan. These differences reflect the quality of life faced by children at birth and influence the reproductive choices parents make. If infant mortality is high, then parents may choose to have more children to ensure that some reach adulthood.
+
+Although global life expectancy has been increasing since about 1950, it has recently dropped in a number of regions, including countries of the former Soviet Union and in sub-Saharan Africa. In these regions, social upheaval, decaying infrastructure, and infectious diseases such as AIDS and tuberculosis are reducing life expectancy.
+
+## Global Carrying Capacity
+
+No ecological question is more important than the future size of the human population. As noted earlier, population ecologists project a global population of about 9.8 billion people in 2050. That means that about 1.7 billion people will be added to the population in the next 25 years because of the momentum of population growth. But just how many humans can the biosphere support? Will the world be overpopulated in 2050? Is it already overpopulated?
+
+## Estimates of Carrying Capacity
+
+For over three centuries, scientists have attempted to estimate the human carrying capacity of Earth. The first known estimate, 13.4 billion people, was made in 1679 by Anton van Leeuwenhoek (a Dutch scientist who also discovered protists). Since then, estimates have varied from less than 1 billion to more than 1,000 billion (1 trillion).
+
+Carrying capacity is difficult to estimate, and scientists use different methods to produce their estimates. Some researchers use curves like that produced by the logistic equation (see Figure 53.9) to predict the future maximum of the human population. Others generalize from existing “maximum” population density and multiply this number by the area of habitable land. Still others base their estimates on a single limiting factor, such as food, and consider variables such as the amount of farmland, the average yield of crops, the prevalent diet—vegetarian or meat based—and the number of calories needed per person per day.
+
+## Limits on Human Population Size
+
+A more comprehensive approach to estimating the carrying capacity of Earth is to recognize that humans have multiple constraints: We need food, water, fuel, building materials, and other resources, such as clothing and transportation. The ecological footprint concept summarizes the aggregate land and water area required by each person, city, or nation to produce all the resources it consumes and to absorb all the waste it generates (Figure 53.24).
+
+Breaking down the overall footprint into the relative portions for specific needs shows that nearly two thirds of an average North American's ecological footprint is due to carbon emissions—the area needed to support the photosynthetic organisms that can absorb that $\mathrm{CO}_{2}$ from the atmosphere.
+
+![](images/f1017f2d5bd60bfc3eb3e3d2ba9b6dd8a4b4e4d863bc74b12a161749a61dc94b.jpg)
+
+Figure 53.25 Per capita ecological footprint by country.  
+![](images/fb32d0f1af7ef927ffdf7b0754d2ee38bf3404472f403c3f84dae00559473213.jpg)  
+Per capita ecological footprint in global hectares (gha)
+0–3 >6
+3–6 Insufficient data  
+Earth has a total of 11.9 billion gha of productive land. How many people could Earth support sustainably if the average ecological footprint were 8 gha per person (as in the United States)?  
+For suggested answer, see Appendix A.
+
+What is a sustainable ecological footprint for the entire human population? One way to estimate this footprint is to add up all the ecologically productive land and water area on the planet and divide by the size of the human population. Typically, this estimate is made using global hectares, where a global hectare (gha) represents a hectare of land or water with a productivity equal to the average of all biologically productive areas on Earth (1 hectare = 2.47 acres). This calculation yields an allotment of 1.6 gha per person—the benchmark for comparing actual ecological footprints. Anyone who consumes resources and produces waste that require more than 1.6 gha to produce or absorb is using an unsustainable share of Earth's resources, as is the case for the citizens of many countries (Figure 53.25). For example, a typical ecological footprint for a person in the United States is 8 gha. Globally, the average footprint is 2.8 gha per person, a 75% overshoot of the sustainable use (1.6 gha per person) of Earth's resources.
+
+Carbon absorption is the largest element of the ecological footprint for an individual in North America (see Figure 53.24), though average energy use differs greatly across different regions of the world. A typical person in the United States, Canada, or Norway consumes roughly 30 times the energy that a person in central Africa does. Moreover, fossil fuels, such as oil, coal, and natural gas, are the source of $80\%$ or more of the energy used in most developed nations. As Concept 56.4 discusses in more detail, this unsustainable reliance on fossil fuels is changing Earth's climate and increasing the amount of waste that humans produce. Ultimately, the combination of resource use and waste produced per person and population density determines our global ecological footprint.
+
+What factors will eventually limit the growth of the human population? Perhaps food will be the main limiting factor. Malnutrition and famine are common in some regions, but they result mainly from the unequal distribution of food rather than from inadequate production. So far, technological improvements in agriculture have allowed food supplies to keep up with global population growth. In contrast, the demands of many populations have already far exceeded the local and even regional supplies of one renewable resource—fresh water. More than 1 billion people do not have access to sufficient water to meet their basic sanitation needs. The human population may also be limited by the capacity of the environment to absorb its wastes. If so, then Earth's current human occupants could lower the planet's long-term carrying capacity for future generations.
+
+Technology has substantially increased Earth's carrying capacity, but no population can grow indefinitely. After reading this chapter, you should realize that there is no single carrying capacity. How many people our planet can sustain depends on the quality of life each of us has and the distribution of wealth across people and nations, topics of great concern and political debate. We can decide whether zero population growth will be attained through social changes based on human choices or, instead, through increased mortality due to resource limitation, plagues, war, and environmental degradation.
+
+## Concept Check 53.6
+
+1. How does a human population's age structure affect its growth rate?
+
+2. How have the rate and number of people added to the human population each year changed in recent decades?
+
+3. WHAT IF? Type "personal ecological footprint calculator" into a search engine and use one of the resulting calculators to estimate your footprint. Is your current lifestyle sustainable? If not, what choices can you make to influence your own ecological footprint?
+
+## Summary of Key Concepts
+
+To review key terms, go to the Vocabulary Self-Quiz (eTextbook only).
+
+Concept 53.1: Biotic and abiotic factors affect population density, dispersion, and demographics
+
+\- Population density—the number of individuals per unit area or volume—reflects the interplay of births, deaths, immigration, and emigration. Environmental and social factors influence the dispersion of individuals.
+
+![](images/54e260fe5a816642746459ca57ba49b56744f9e25d3cce9f2e80f88efdd6c43f.jpg)
+
+Patterns of dispersion  
+![](images/62f5335d873e1ce4b15e43585c6dc141582d02652616be7baf2bd3e55bc9e179.jpg)
+
+![](images/ddf5519229a85d48727c1df7e8d9f2c035b6eec653615b120e9f81f386c8e51d.jpg)
+
+\- Populations increase from births and immigration and decrease from deaths and emigration. Life tables and survivorship curves summarize specific trends in demography.
+
+Gray whales (Eschrichtius robustus) gather each winter near Baja California to give birth. How might such behavior make it easier for ecologists to estimate birth and death rates for the species?
+
+## Concept 53.2: The exponential model describes population growth in an idealized, unlimited environment
+
+\- If immigration and emigration are ignored, a population's per capita growth rate equals its birth rate minus its death rate.
+
+\- The exponential growth equation $dN/dt = r_{max}N$ represents a population's growth when resources are relatively abundant, where $r_{max}$ is the intrinsic rate of increase and $N$ is the number of individuals in the population.
+
+![](images/0aaf832a86926e221da1201c56369673ce8baf34acb19292c0200e95f4e36265.jpg)  
+Suppose one population has an $r_{max}$ that is twice as large as the $r_{max}$ of another population. What is the maximum size that both populations will reach over time, based on the exponential model?
+
+## Concept 53.3: The logistic model describes how a population grows more slowly as it nears its carrying capacity
+
+\- Exponential growth cannot be sustained in any population. A more realistic population model limits growth by incorporating carrying capacity (K), the maximum population size the environment can support.
+
+\- According to the logistic growth equation $dN/dt = r_{max}N(K-N)/K$ , growth levels off as population size approaches the carrying capacity.
+
+![](images/bfeeed2c3067e708e5715e83b30a22bd8c7fbd14c851540c11eb76a4bd4b8462.jpg)
+
+\- The logistic model fits few real populations perfectly, but it is useful for estimating possible growth.
+
+As an ecologist who manages a wildlife preserve, you want to increase the preserve's carrying capacity for a particular endangered species. How might you go about accomplishing this?
+
+## Concept 53.4: Life history traits are products of natural selection
+
+\- Life history traits are evolutionary outcomes reflected in the development, physiology, and behavior of organisms.
+
+\- Big-bang, or semelparous, organisms reproduce once and die. Iteroparous organisms produce offspring repeatedly.
+
+\- Life history traits such as brood size, age at maturity, and parental caregiving represent trade-offs between conflicting demands for time, energy, and nutrients. Two hypothetical life history patterns are K-selection and r-selection.
+
+Explain why ecological trade-offs are common.
+
+## Concept 53.5: Density-dependent factors regulate population growth
+
+\- In density-dependent population regulation, death rates rise and birth rates fall with increasing density. A birth or death rate that does not vary with density is said to be density independent.
+
+\- Density-dependent changes in birth and death rates curb population increase through negative feedback and can eventually stabilize a population near its carrying capacity. Density-dependent limiting factors include intraspecific competition for limited food or space, increased predation, disease, and intrinsic physiological factors.
+
+\- Because changing environmental conditions periodically disrupt them, all populations exhibit some size fluctuations. Many populations undergo regular boom-and-bust cycles that are
+
+influenced by complex interactions between biotic and abiotic factors. A metapopulation is a group of populations linked by immigration and emigration.
+
+Give an example of one biotic and one abiotic factor that contribute to yearly fluctuations in the size of the human population.
+
+## Concept 53.6: The human population is no longer growing exponentially but is still increasing extremely rapidly
+
+\- Since about 1650, the global human population has grown exponentially, but within the last 60 years, the rate of growth has fallen by more than half. Differences in age structure show that while some nations' populations are growing rapidly, those of others are stable or declining in size. Infant mortality rates and life expectancy at birth vary widely in different countries.
+
+\- Ecological footprint is the aggregate land and water area needed to produce all the resources a person or group of people consume and to absorb all of their waste. It is one measure of how close we are to the carrying capacity of Earth, which is uncertain. With a world population of more than 7.9 billion people, we are already using many resources in an unsustainable manner.
+
+How do humans differ from other species in the ability to “choose” a carrying capacity for their environment?
+
+For suggested answers, see Appendix A.
+
+## Test Your Understanding
+
+For more multiple-choice questions, go to the Practice Test (eTextbook only).
+
+## Levels 1-2: Remembering/Understanding
+
+1. Population ecologists follow the fate of same-age cohorts to
+
+(A) determine a population's carrying capacity.
+
+(B) determine the birth rate and death rate of each group in a population.
+
+(C) determine if a population is regulated by density-dependent processes.
+
+(D) determine the factors that affect the size of a population.
+
+2. A population's carrying capacity
+
+(A) may change as environmental conditions change.
+
+(B) can be accurately calculated using the logistic growth model.
+
+(C) increases as the per capita population growth rate decreases.
+
+(D) can never be exceeded.
+
+3. Analyzing ecological footprints reveals that
+
+(A) Earth's carrying capacity would increase if per capita meat consumption increased.
+
+(B) current demand by industrialized countries for resources is much smaller than the ecological footprint of those countries.
+
+(C) it is not possible for technological improvements to increase Earth's carrying capacity for humans.
+
+(D) the ecological footprint of the United States is large because per capita resource use is high.
+
+## Levels 3-4: Applying/Analyzing
+
+4. The observation that members of a population are uniformly distributed suggests that
+
+(A) resources are distributed unevenly.
+
+(B) the members of the population are competing for access to a resource.
+
+(C) the members of the population are neither attracted to nor repelled by one another.
+
+(D) the density of the population is low.
+
+## 5. According to the logistic growth equation
+
+$$
+\frac {d N}{d t} = r _ {m a x} \frac {(K - N)}{K} N
+$$
+
+(A) the number of individuals added per unit time is greatest when $N$ is close to zero.
+
+(B) the realized growth rate increases as N approaches K.
+
+(C) population growth is zero when N equals K.
+
+(D) the population grows exponentially when K is small.
+
+6. During exponential growth, a population always
+
+(A) has a constant per capita population growth rate.
+
+(B) quickly reaches its carrying capacity.
+
+(C) cycles through time.
+
+(D) loses some individuals to emigration.
+
+## Levels 5-6: Evaluating/Creating
+
+7. EVOLUTION CONNECTION Contrast the selective pressures operating in high-density populations (those near the carrying capacity, K) versus low-density populations.
+
+8. SCIENTIFIC INQUIRY You are testing the hypothesis that increased population density of a particular plant species increases the rate at which a pathogenic fungus infects the plant. Because the fungus causes visible scars on the leaves, you can easily determine whether a plant is infected. Design an experiment to test your hypothesis. Describe your experimental and control groups, how you would collect data. Indicate the results you would see if your hypothesis is correct.
+
+9. SCIENCE, TECHNOLOGY, AND SOCIETY Some people regard the rapid population growth of less industrialized countries as our most serious environmental problem. Others think that the population growth in industrialized countries, though smaller, is actually a greater environmental threat. What problems result from population growth in (a) less industrialized countries and (b) industrialized nations? Which do you think is a greater threat, and why? Explain.
+
+10. WRITE ABOUT A THEME: INTERACTIONS In a short essay (100–150 words), identify the factor or factors in Figure 53.17 that you think may ultimately be most important for density-dependent population regulation in humans, and explain your reasoning.
+
+## 11. SYNTHESIZE YOUR KNOWLEDGE
+
+![](images/08c1946c03d26e4fa581664496a63b303e5eb444bde69f5c32d07592205c2ad3.jpg)
+
+Locusts (grasshoppers in the family Acrididae) undergo cyclic population outbreaks, leading to massive swarms such as this one in Kenya in 2021. Of the mechanisms of density-dependent regulation shown in Figure 53.17, choose the two that you think most apply to locust swarms, and explain why.
+
+## Practice Applying Your Learning
+
+12. This question assesses your ability to apply your understanding of population growth and carrying capacity to a new scenario.
+
+The reticulated python (Python reticulatus), the world's longest snake, is common in the rainforests of Southeast Asia, where its diet mostly consists of rodents and other small mammals. Its lifespan is about 20 years and sexual maturity is reached within two to five years. Adult females typically lay 20–40 eggs per clutch. Population growth for this species can be modeled using a logistic growth model, and food availability is a key factor in determining the carrying capacity.
+
+Suppose there are three islands—A, B, and C—that are all similar in size and biomes and that each have a population of P. reticulatus. Islands A and B are national parkland and are undeveloped. Island A recently experienced a disease outbreak that killed 50% of its P. reticulatus, but the disease has just been eradicated from the island this year. On island C, about half of the natural rainforest was removed by the 1950s for human settlements and agriculture; land use has not changed much since then.
+
+![](images/7c145a62a46a4d3e20ac451a1e5e1c3d21996493bb120fca40cff58b47cbc898.jpg)  
+For selected answers, see Appendix A.
+
+Based on this information, evaluate each statement as more likely to be TRUE or more likely to be FALSE.
+
+a. Islands A and B have a similar carrying capacity for P. reticulatus. \_\_\_\_
+
+b. Islands B and C have a similar carrying capacity for P. reticulatus. \_\_\_\_
+
+c. If a new parasitic infection were to drastically reduce the populations of rodents on island B, you would expect the carrying capacity for P. reticulatus on this island to decline.
+
+d. The maximum per capita population growth rate ( $r_{max}$ ) for P. reticulatus is the same on all three islands. \_\_\_\_
+
+e. The $r_{max}$ of P. reticulatus is less than the $r_{max}$ of a smaller species of snake with a lifespan of four years that reaches sexual maturity at one year and lays 40–80 eggs per clutch. \_\_\_\_
+
+f. CHALLENGE: Both the current realized per capita population growth rate ( $r_{realized}$ ) and the overall population growth rate (dN/dt) for P. reticulatus are close to 0 on islands B and C. \_\_\_\_
+
+g. CHALLENGE: The current $r_{realized}$ for P. reticulatus populations is the same on islands A and B. \_\_\_\_
+
+# Community Ecology
+
+## Key Concepts
+
+54.1 Interactions between species can help, harm, or have no effect on the individuals involved
+
+54.2 Diversity and trophic structure characterize biological communities
+
+54.3 Disturbance influences species diversity and composition
+
+54.4 Biogeographic factors affect community diversity
+
+54.5 Pathogens alter community structure locally and globally
+
+![](images/9a34d386745b509823dd0f3c2e6ed152325562b1d9fd6f964daae8a90a04c2f0.jpg)  
+Figure 54.1 Although this moray eel could easily eat the cleaner wrasse in its mouth, the eel remains still, allowing the wrasse to eat parasites living in the eel's mouth. The wrasse and the eel—and the parasites in the eel's mouth—live together in a community, a group of populations of different species living in close enough proximity to interact.
+
+## Study Tip
+
+Make a table: As you read the chapter, build a table listing factors that can affect community structure. Add in figure numbers or page numbers that give examples of these factors.
+
+<table><tr><td>Factor affecting community structure</td><td>What aspect of community structure is affected?</td><td>Example</td></tr><tr><td>Competition</td><td>Locations where a species can live in a community</td><td>Competition between two barnacle species (Figure 543)</td></tr><tr><td></td><td></td><td></td></tr></table>
+
+## What are some factors that influence the structure of a community?
+
+## Foundation species
+
+Species that are large or abundant, such as the corals that form this reef, may affect community structure by providing habitat and food for other organisms, like the parrotfish below.
+
+![](images/ea47045befe92e3bc04d2d14833b778ed4a0a46cced116e34760f3b708c0ef7b.jpg)
+
+![](images/f91d2002d6f1c902c192aac9a12805ee0d0748c486efed369f39fd30f49af1dd.jpg)
+
+Interactions between species
+Predation and other interactions affect the number of species in a community and the particular species that are present. Interactions can be classified in three categories:
+
+\- Competition: negatively affects both organisms involved
+
+![](images/c9030c1935f9f4ed30551653d5f3334e93508120349681dca01a7ef8dd855f6d.jpg)  
+Disturbances
+Marine heat waves (resulting in coral bleaching, above), storms, human activities, and other disturbances can affect a community by removing organisms or altering resource availability.
+
+• Exploitation: benefits one organism while harming the other
+
+• Positive interactions: benefit one or both organisms without harming either
+
+# Concept 54.1: Interactions between species can help, harm, or have no effect on the individuals involved
+
+In the interaction shown in Figure 54.1, both organisms benefit: The cleaner wrasse gains access to a supply of food, and the moray eel is freed of parasites that might weaken it or spread disease. However, other interactions between members of different species can harm one of the participants, and still others can reduce the reproduction and survival of both participants. We'll begin this chapter by examining ecological interactions between the members of different species that live together in a community. We'll then turn to factors that affect community structure—the number of species found in a community, the particular species that are present, and the relative abundance of these species.
+
+Some key relationships in the life of an organism are its interactions with individuals of other species in the community. These interspecific interactions include competition, predation, herbivory, parasitism, mutualism, and commensalism. In this section, we'll define and describe each of these interactions, grouping them according to whether they have positive (+) or negative (−) effects on the survival and reproduction of individuals engaged in the interaction.
+
+For example, predation is a $+/-$ interaction, with a positive effect on the survival and reproduction of members of the predator population and a negative effect on members of the prey population. Mutualism is a $+/+$ interaction in which the survival and reproduction of individuals of each species is increased in the presence of the other. A zero (0) indicates that the members of a species are not affected by the interaction.
+
+We'll consider three broad categories of ecological interactions: competition $(- / -)$ , exploitation $(+ / -)$ , and positive interactions $(+ / +$ or $+ / 0)$ . As you study examples of these interactions, bear in mind that their effects can change over time. For example, an interaction that typically benefits individuals of both species may at times continue to benefit one of them, while harming or having no effect on the other.
+
+## Competition
+
+Interspecific competition is a $- / -$ interaction that occurs when individuals of different species each use a resource that limits the survival and reproduction of both individuals. (As described in Figure 53.18, competition for resources can also occur between members of the same species; this case is sometimes distinguished as intraspecific competition.) Weeds growing in a garden compete with garden plants for soil nutrients and water. Lynx and foxes in the northern forests of Alaska and Canada compete for prey such as snowshoe hares. In contrast, some resources, such as oxygen, are rarely in short supply on land; most terrestrial species use this resource but do not usually compete for it.
+
+## Competitive Exclusion and Mechanisms of Coexistence
+
+What happens in a community when individuals of two species compete for limited resources? In 1934, Russian ecologist G. F. Gause studied this question using laboratory experiments with two closely related ciliate species, Paramecium aurelia and Paramecium caudatum (see Figure 28.19a). He cultured the species under stable conditions, adding a constant amount of food each day. When Gause grew the two species separately, each population increased rapidly in number and then leveled off at the apparent carrying capacity of the culture (see Figure 53.10a for an illustration of the logistic growth of a Paramecium population). But when Gause grew the two species together, P. caudatum became extinct in the culture. Gause inferred that P. aurelia had a competitive edge in obtaining food. More generally, his results led him to conclude that two species whose members compete for the same limiting resources cannot coexist permanently in the same place. In the absence of disturbance, one species will use the resources more efficiently and reproduce more rapidly than the other. Even a slight reproductive advantage will eventually lead to local elimination of the inferior competitor, an outcome called competitive exclusion. Note, however, that coexistence can occur between species that compete for two or more resources, as long as both species are not limited by the same resource. For instance, two species of diatoms may coexist in a lake if one is limited by silicate concentration and the other one by phosphate concentration. Exploring how various competitors coexist in natural communities is an important area of research in community ecology.
+
+## Ecological Niches and Natural Selection
+
+EVOLUTION Competition for limited resources can cause evolutionary change in populations. One way to examine how this occurs is to focus on an organism's ecological niche, the specific set of biotic and abiotic resources that an organism uses in its environment. The niche of a tropical tree lizard, for instance, includes the temperature range it tolerates, the size of branches on which it perches, the time of day when it is active, and the sizes and kinds of insects it eats. Such factors define the lizard's niche, or ecological role—how it fits into an ecosystem.
+
+We can use the niche concept to restate the principle of competitive exclusion: Two species cannot coexist permanently in a community if their niches are identical. However, ecologically similar species can coexist in a community if one or more significant differences in their niches arise through time. Evolution by natural selection can result in one of the species using a different set of resources or similar resources at different times of the day or year. The differentiation of niches that enables similar species to coexist in a community is called resource partitioning (Figure 54.2).
+
+As a result of competition, a species' fundamental niche, which is the niche potentially occupied by that species, is often different from its realized niche, the portion of its fundamental niche that it actually occupies. Ecologists can identify the fundamental niche of a species by testing the range of conditions in which it grows and reproduces in the absence of competitors. They can also test whether a potential competitor limits a species' realized niche by removing the
+
+Figure 54.2 Resource partitioning among Dominican Republic lizards.
+
+Seven species of Anolis lizards live in close proximity, and all feed on insects and other small arthropods. However, competition for food is reduced because each lizard species has a different preferred perch, thus occupying a distinct niche.
+
+![](images/15200477ef08b086a6fbb8620efdbdc9b2a8c9edce438afe5cd42c00130e282d.jpg)
+
+competitor and seeing if the first species expands into the newly available space. The classic experiment depicted in Figure 54.3 clearly showed that competition between individuals of two barnacle species kept one species from occupying part of its fundamental niche.
+
+Species can partition their niches not just in space, as lizards and barnacles do, but in time as well. The common spiny mouse (Acomys cahirinus) and the golden spiny mouse (A. russatus; Figure 54.4) live in rocky habitats of the Middle East and Africa, using similar microhabitats and food sources. Where they coexist, A. cahirinus is nocturnal (active at night), while A. russatus is diurnal (active during the day). Surprisingly, laboratory research showed that A. russatus is naturally nocturnal. To be active during the day, it must override its biological clock in the presence of A. cahirinus. When researchers in Israel removed all A. cahirinus individuals from a site in the species' natural habitat, A. russatus individuals at that site became nocturnal, consistent with the
+
+Figure 54.4 The golden spiny mouse (Acomys russatus).  
+![](images/60c0aac16e7ffae2b91e897574814ff501d94b14aef68a9c8f43b56b84c6363d.jpg)
+
+## Figure 54.3
+
+# Inquiry: Can a species' niche be influenced by competition?
+
+## Experiment
+
+Ecologist Joseph Connell studied two barnacle species—Chthamalus stellatus and Balanus balanoides—that have a stratified distribution on rocks along the coast of Scotland. Chthamalus is usually found higher on the rocks than Balanus. To determine whether the distribution of Chthamalus is the result of competition with Balanus, Connell removed Balanus from the rocks at several sites.
+
+![](images/232116088d3c9c08246fa5a7f386b3c7bc202e4c178e998ad6429492a907dea1.jpg)
+
+## Results
+
+Chthamalus spread into the region formerly occupied by Balanus.
+
+![](images/41a50eee8f1b08f1245133d015dea9ba3d89b9d919213bc1bb0697a068276e40.jpg)
+
+## Conclusion
+
+Competition makes the realized niche of Chthamalus much smaller than its fundamental niche.
+
+Data from J. H. Connell, The influence of interspecific competition and other factors on the distribution of the barnacle Chthamalus stellatus, Ecology 42:710–723 (1961).
+
+WHAT IF? Other observations showed that Balanus cannot survive high on the rocks because it dries out during low tides. How would Balanus's realized niche compare with its fundamental niche?
+
+For suggested answer, see Appendix A.
+
+Instructors: A related Experimental Inquiry Tutorial can be assigned in Mastering Biology.
+
+laboratory results. This change in behavior suggests that these individuals were competing for resources and that partitioning of their active time helps them coexist.
+
+## Character Displacement
+
+Closely related species whose populations are sometimes allopatric (geographically separate; see Concept 24.2) and sometimes sympatric (geographically overlapping) provide additional evidence of how competition affects communities. In some cases, the allopatric populations of such species are morphologically similar and use similar resources. By contrast, sympatric populations, which would potentially compete for resources, show differences in body structures and in the resources they use. This tendency for characteristics to diverge more in sympatric than in allopatric populations of two species is called character displacement. An example of character displacement can be seen in two species of Galápagos finches, Geospiza fuliginosa and Geospiza fortis: Beak depths in these species are similar in allopatric populations but have diverged considerably in sympatric populations (Figure 54.5).
+
+## Figure 54.5 Character displacement: indirect evidence of past competition.
+
+Allopatric populations of Geospiza fuliginosa and Geospiza fortis on Los Hermanos and Daphne Islands have similar beak morphologies (top two graphs) and presumably eat similarly sized seeds. However, where the two species are sympatric on Floreana and San Cristóbal, G. fuliginosa has a shallower, smaller beak and G. fortis a deeper, larger one (bottom graph), adaptations that favor eating different-sized seeds.
+
+![](images/4e6dbba28cefede9371769885fa5c9bf1b51e46ca79aee4db131c59e6d13d1fa.jpg)  
+WHAT IF? If G. fuliginosa became extinct on Floreana, predict how beak depth would change over time in Floreana's G. fortis population. Explain your reasoning.
+
+## Exploitation
+
+All heterotrophic organisms must eat, and all organisms are at risk of being eaten. As a result, much of the drama in nature involves exploitation, a term for any type of $+ / -$ interaction in which individuals of one species benefit by feeding on (and thereby harming) individuals of the other species. Exploitative interactions include predation, herbivory, and parasitism.
+
+## Predation
+
+Predation is a +/− interaction in which an individual of one species, the predator, kills and eats an individual of the other species, the prey. Though the term predation generally elicits such images as a lion attacking and eating an antelope, it applies to a wide range of interactions. A rotifer (a tiny aquatic animal that is smaller than many unicellular protists) that kills a protist by eating it can also be considered a predator. Because eating and avoiding being eaten are prerequisites to reproductive success, the adaptations of both predators and prey tend to be refined through natural selection. In the Scientific Skills Exercise, after you turn the page, you can interpret data on the impact of natural selection for a specific predator-prey interaction.
+
+Many important feeding adaptations of predators are obvious and familiar. Most predators have acute senses that enable them to find and identify potential prey. Rattlesnakes and other pit vipers, for example, find their prey with a pair of heat-sensing organs located between their eyes and nostrils (see Figure 50.7b). Owls have characteristically large eyes that help them see prey at night. Many predators also have adaptations such as claws, fangs, or poison that help them catch and subdue their food. Predators that pursue their prey are generally fast and agile, whereas those that lie in ambush are often disguised in their environments.
+
+Just as predators possess adaptations for capturing prey, potential prey have adaptations that help them avoid being eaten. In animals, these adaptations include behavioral defenses such as hiding, fleeing, and forming herds or schools. Active self-defense is less common, though some large grazing mammals vigorously defend their young from predators.
+
+Animals also display a variety of morphological and physiological defensive adaptations. Mechanical or chemical defenses protect species such as porcupines and skunks (Figure 54.6a and b). Some animals, such as the European fire salamander, can synthesize toxins; others accumulate toxins passively from the plants they eat. Animals with effective chemical defenses often exhibit bright aposematic coloration, or warning coloration, such as that of poison dart frogs (Figure 54.6c). Such coloration seems to be adaptive because predators often avoid brightly colored prey. Cryptic coloration, or camouflage, makes prey difficult to see (Figure 54.6d).
+
+Some prey species are protected by their resemblance to other species. For example, in Batesian mimicry, a palatable or harmless species mimics an unpalatable or harmful species to which it is not closely related. The larva of the hawkmoth Hemeroplanes ornatus puffs up its head and thorax when disturbed, looking like the head of a small venomous snake (Figure 54.6e). In this case, the mimicry even involves behavior; the larva weaves its head back
+
+For suggested answer, see Appendix A.
+
+Figure 54.6 Examples of defensive adaptations in animals.  
+![](images/2da8d9dbfb27b2873b67596d1d02ce01b59942a38aec02a23f45f080b8e0569a.jpg)
+
+![](images/202145feded2750b862506a0f78236d08336eb6aa2f2fea1ca7c272d8f60a61c.jpg)
+
+![](images/c0bdd10a313795d9d44eb6a6d54c1e83a368f8b272328b9a7901860e93d1f5ca.jpg)
+
+![](images/f71c8d7619aa22e03ef54dc43f4471ae8b5be5a4995ea936b79953b5899dee8e.jpg)
+
+![](images/e7c0cd836ad75b5814794db61dd2ca9581607bc639b42d2161508083939732e1.jpg)  
+(f) Müllerian mimicry: Two unpalatable species mimic each other.
+
+![](images/83cacc3de4e9bc3d2eda761caf57bac3a472ca053d6e1c0930c0ebe889729672.jpg)
+
+![](images/54e5fedd4290f0543a19a2983c3e92b775c9114e3f54b477a9d9c8b336bd4797.jpg)  
+MAKE CONNECTIONS Explain how natural selection could increase the resemblance of a harmless species to a distantly related harmful species. In addition to selection, what else could account for a harmless species resembling a closely related harmful species? (See Concept 22.2.)  
+For suggested answer, see Appendix A.
+
+and forth and hisses like a snake. Such cases of Batesian mimicry are thought to result from natural selection, as individuals in the harmless species that happen to more closely resemble the harmful one are avoided by predators who have learned not to eat the harmful ones. Over time, closer and closer resemblance to the harmful species evolves. In Müllerian mimicry, two or more unpalatable species, such as the cuckoo bee and yellow jacket, resemble each other (Figure 54.6f). Presumably, the more unpalatable prey there are, the faster predators learn to avoid prey with that particular appearance.
+
+Mimicry has also evolved in many predators. The mimic octopus Thaumoctopus mimicus (Figure 54.7, after you turn the page) can take on the appearance and movement of more than a dozen marine animals, including crabs, sea stars, sea snakes, fish, and stingrays. This octopus's ability to mimic other animals enables it to approach prey—for example, imitating a crab to approach another crab and eat it. The octopus also can defend itself from predators through mimicry. When attacked by a damselfish, the octopus quickly mimics a banded sea snake, a known predator of the damselfish.
+
+# Scientific Skills Exercise Making a Bar Graph and a Scatter Plot
+
+Can a Native Predator Species Adapt Rapidly to an Introduced Prey Species? Cane toads (Bufo marinus) were introduced to Australia in 1935 in a failed attempt to control an insect pest. Since then, the toads have spread across northeastern Australia,
+
+![](images/5b1ef2990243dfb13e6377472d54e191243ba3b866de79016c1f30880c937292.jpg)
+
+with a population of over 200 million today. Cane toads have glands that produce a toxin that is poisonous to snakes and other potential predators. In this exercise, you will graph and interpret data from a two-part experiment conducted to determine whether native Australian predators have developed resistance to the cane toad toxin.
+
+How the Experiment Was Done In part 1, researchers collected 12 red-bellied black snakes (Pseudechis porphyriacus) from areas where cane toads had existed for 40–60 years and another 12 from areas free of cane toads. They recorded the percentage of snakes from each area that ate either a freshly killed native frog (Limnodynastes peronii, a species the snakes commonly eat) or a freshly killed cane toad from which the toxin gland had been removed (making the toad nonpoisonous). In part 2, researchers collected snakes from areas where cane toads had been present for 5–60 years. To assess how cane toad toxin affected the physiological activity of these snakes, they injected small amounts of the toxin into the snakes' stomachs and measured the snakes' swimming speed in a small pool.
+
+Data from the Experiment, Part 1
+
+<table><tr><td rowspan="2">Type of Prey Offered</td><td colspan="2">% of Snakes from Each Area That Ate Each Type of Prey</td></tr><tr><td>Area with Cane Toads Present for 40–60 Years</td><td>Area with No Cane Toads</td></tr><tr><td>Native frog</td><td>100</td><td>100</td></tr><tr><td>Cane toad</td><td>0</td><td>50</td></tr></table>
+
+## Interview
+
+Interview with Tracy Langkilde: Studying the evolution of novel defensive adaptations in lizards (eTextbook only)
+
+![](images/716cc0544df1e4bcf427299dbcf9654de697a87a260d2c63ed8b8393231d0e2f.jpg)
+
+## Herbivory
+
+Herbivory is an exploitative (+/−) interaction in which an organism—an herbivore—eats parts of a plant or alga, thereby harming it but usually not killing it. While large mammalian herbivores such as cattle, sheep, and water buffalo may be most familiar, most herbivores are actually invertebrates, such as grasshoppers, caterpillars, and beetles. In the ocean, herbivores include sea urchins, some fishes, and certain mammals (Figure 54.8).
+
+Data from the Experiment, Part 2
+
+<table><tr><td>Number of Years Cane Toads Had Been Present in the Area</td><td>5</td><td>10</td><td>10</td><td>20</td><td>50</td><td>60</td><td>60</td><td>60</td><td>60</td><td>60</td></tr><tr><td>% Reduction in Snake Swimming Speed</td><td>52</td><td>19</td><td>30</td><td>30</td><td>5</td><td>5</td><td>9</td><td>11</td><td>12</td><td>22</td></tr></table>
+
+Data from B. L. Phillips and R. Shine, An invasive species induces rapid adaptive change in a native predator: cane toads and black snakes in Australia, Proceedings of the Royal Society B 273:1545–1550 (2006).
+
+## INTERPRET THE DATA
+
+1. Make a bar graph of the data in part 1. (For additional information about graphs, see the Scientific Skills Review in Appendix D.)
+
+2. What do the data represented in the graph suggest about the effects of cane toads on the predatory behavior of red-bellied black snakes in areas where the toads are and are not currently found?
+
+3. Suppose a novel enzyme that deactivates the cane toad toxin evolved in a snake population exposed to cane toads. If the researchers repeated part 1 of this study, predict how the results would change.
+
+4. Identify the dependent and independent variables in part 2 and make a scatter plot. What conclusion would you draw about whether exposure to cane toads is having a selective effect on the snakes? Explain.
+
+5. Explain why a bar graph is appropriate for presenting the data in part 1 and a scatter plot is appropriate for the data in part 2.
+
+Instructors: A version of this Scientific Skills Exercise can be assigned in Mastering Biology.
+
+Like predators, herbivores have many specialized adaptations. Many herbivorous insects have chemical sensors on their feet that enable them to distinguish between plants based on their toxicity or nutritional value. Some mammalian herbivores, such as goats, use their sense of smell to examine plants, rejecting some and eating others. They may also eat just a specific part of a plant, such as the flowers. Many herbivores also have specialized teeth or digestive systems adapted for processing vegetation (see Concept 41.4).
+
+Unlike animals, plants cannot run away to avoid being eaten. Instead, a plant's arsenal against herbivores may feature chemical toxins or structures such as spines and thorns. Among the plant compounds that serve as chemical defenses are the poison strychnine, produced by the tropical vine Strychnos toxifera; nicotine, from the tobacco plant; and tannins, from a variety of plant species. Compounds that are not toxic to humans but may be distasteful to many herbivores are responsible for the familiar flavors of cinnamon, cloves, and peppermint. Certain
+
+Figure 54.7 The mimic octopus.
+
+(a) After hiding six of its tentacles in a hole in the seafloor, the octopus waves its other two tentacles to mimic a sea snake. (b) Flattening its body and arranging its arms to trail behind, the octopus mimics a sole (a flat fish). (c) It can mimic a lionfish that has its poisonous spines extended by spreading out its curved arms on each side of its body.
+
+![](images/370dc0da1547b6daed6973f8796f259264f04534bdc760708a793498e23e5e0d.jpg)  
+(a) Mimicking a sea snake
+
+![](images/ee1034faef3a69b49dd74519f80c4b7c616db0f89e7e95da80ad2cdbfff987a4.jpg)
+
+![](images/5329b8935a976fd03acd5e5d6b6c562c89d55ebfe66a9271fab8a70dc7099046.jpg)  
+(b) Mimicking a sole  
+(c) Mimicking a lionfish
+
+Figure 54.8 An herbivorous marine mammal.  
+This West Indian manatee (Trichechus manatus) in Florida is grazing on Hydrilla, an introduced plant species.  
+![](images/e9a093ab50c88977ffd3c9ebe5c2f815dc0f68b10ed34956d62a59ffb82edcba.jpg)
+
+plants produce chemicals that cause abnormal development in some insects that eat them. For more examples of how plants defend themselves, see Make Connections Figure 39.27, “Levels of Plant Defenses Against Herbivores.”
+
+## Parasitism
+
+Parasitism is a +/− exploitative interaction in which one organism, the parasite, derives its nourishment from another organism, its host, which is harmed in the process. Parasites that live within the body of their host, such as tapeworms, are called endoparasites; parasites that feed on the external surface of a host, such as ticks and lice, are called ectoparasites. Some ecologists have estimated that at least one-third of all species on Earth are parasites. In one particular type of parasitism, parasitoid insects—usually small wasps—lay eggs on or in living hosts. The larvae then feed on the body of the host, eventually killing it.
+
+Many parasites have complex life cycles involving multiple hosts. The blood fluke, which currently infects approximately 200 million people around the world, requires two hosts at different times in its development: humans and freshwater snails (see Figure 33.10). Some parasites change the behavior of their current host in ways that increase the likelihood that the parasite will reach its next host. For instance, crustaceans that are parasitized by acanthocephalan (spiny-headed) worms leave protective cover and move into the open, where they are more likely to be eaten by the birds that are the second host in the worm's life cycle.
+
+Parasites can significantly affect the survival, reproduction, and density of their host population, either directly or indirectly. For example, ticks that feed as ectoparasites on moose can weaken their hosts by withdrawing blood and causing hair breakage and loss. In their weakened condition, the moose have a greater chance of dying from cold stress or predation by wolves.
+
+## Positive Interactions
+
+While nature abounds with dramatic and gory examples of exploitative interactions, ecological communities are also heavily influenced by positive interactions, a term that refers to a +/+ or +/0 interaction between members of two species in which at least one individual benefits and neither is harmed. Positive interactions include mutualism and commensalism. As we'll see, positive interactions can affect the diversity of species found in an ecological community.
+
+## Mutualism
+
+Mutualism is a +/+ interaction that benefits individuals of both of the interacting species. Mutualisms are common in nature, as illustrated by examples seen in previous chapters, including cellulose digestion by microorganisms in the digestive systems of termites and ruminant mammals, animals that pollinate flowers or disperse seeds, nutrient exchange between fungi and plant roots in mycorrhizae, and photosynthesis by unicellular algae in corals. In some mutualisms, such as the acacia-ant example shown in Figure 54.9, each of the interacting individuals depends on the other for their survival and reproduction. In other mutualisms, however, both individuals can survive on their own.
+
+Typically, both partners in a mutualism incur costs as well as benefits. In mycorrhizae, for example, the plant often transfers carbohydrates to the fungus, while the fungus transfers limiting nutrients, such as phosphorus, to the plant. Each partner benefits, but each partner also experiences a cost: It transfers materials that it could have used to support its own growth and metabolism. For an interaction to be considered a mutualism, the benefits to each partner must exceed the costs. When this is not the case, the mutualism may break down, at least temporarily. In some mycorrhizae, for example, the plant may cease to supply carbohydrates to its fungal partner when soil nutrients are plentiful—a change that occurs because the cost of supporting the fungus has become greater than the benefits the fungus can provide.
+
+Figure 54.9 Mutualism between acacia trees and ants.  
+![](images/51b4b5314e21ef72029f29c2f42f1777ee831eff3dcf602edc861a7aaa34e947.jpg)
+
+(a) Certain species of acacia trees (genus Acacia) in Central and South America have hollow thorns (not shown) that are home to stinging ants of the genus Pseudomyrmex. The ants feed on nectar produced by the tree and on protein-rich swellings (yellow in the photograph) at the tips of leaflets.  
+![](images/08da0b2bb3dab95cdb7a45bde594bc33cc3210a1b76fad22140e7f8b773118d6.jpg)  
+(b) The acacia benefits because the pugnacious ants, which attack anything that touches the tree, remove fungal spores, small herbivores, and debris. They also clip vegetation that grows close to the acacia.
+
+## Commensalism
+
+An interaction that benefits the individuals of one of the interacting species but neither harms nor helps the individuals of the other species is called commensalism (+/0). Like mutualism, commensalisms are common in nature. For instance, many wildflowers that grow best in low light levels are found only in shaded, forest floor environments. Such shade-tolerant “specialists” depend entirely on the trees that tower above them—the trees provide their dim habitat. Yet the survival and reproduction of the trees are not affected by these wildflowers. Thus, these species are involved in a +/0 interaction in which the wildflowers benefit and the trees are not affected.
+
+Figure 54.10 Commensalism between cattle egrets and African buffalo.  
+![](images/f4324e03d879ae1b3379e8cd53dc1c32d179b2327dfd2f8a922cf38eab12069c.jpg)
+
+In another example of a commensalism, cattle egrets feed on insects flushed out of the grass by grazing bison, cattle, horses, and other herbivores (Figure 54.10). Because the birds increase their feeding rates when following the herbivores, they clearly benefit from the association. Much of the time, the herbivores are not affected by the birds. At times, however, the herbivores too may derive some benefit; for example, the birds may remove and eat ticks and other ectoparasites from the herbivores' skin, or they may warn the herbivores of a predator's approach. This example provides another illustration of a key point about ecological interactions: Their effects can change over time. In this case, an interaction whose effects are typically $+ / 0$ (commensalism) may at times become $+ / +$ (mutualism).
+
+Positive interactions can have major effects on ecological communities. For instance, the black rush Juncus gerardii alters soil conditions in ways that benefit other plant species in New England salt marshes (Figure 54.11a). Juncus shades the soil surface, which reduces evaporation and thus lowers the concentration of salt in the soil. The presence of Juncus also increases soil oxygen levels; this occurs because some oxygen leaks into the soil as Juncus transports oxygen to its belowground tissues. In one study, when Juncus was removed from areas of the marsh, those areas supported 50% fewer plant species (Figure 54.11b).
+
+Like positive interactions, competition and exploitation (predation, herbivory, and parasitism) also can strongly affect ecological communities, as examples throughout the rest of this chapter will show.
+
+## Figure 54.11 Positive interactions in New England salt marshes.
+
+When black rush (Juncus gerardii) is present, soil salt concentrations drop and soil oxygen levels rise, increasing the number of plant species that can live in the marsh.
+
+![](images/5d6115993bd697a04223c949ae515d37de30f242ef161a5daa90e333bedb95c9.jpg)  
+(a) Salt marsh with Juncus (foreground)
+
+![](images/4e54a86b751eeba92b427f608d76feeec91b70f7fd25080d6eb774bfdcd674c3.jpg)
+
+## Concept Check 54.1
+
+1. Explain how competition, predation, and mutualism differ in their effects on members of the two interacting species.
+
+2. According to the principle of competitive exclusion, what outcome is expected when two species with identical niches compete for a resource? Why?
+
+3. MAKE CONNECTIONS Figure 24.14 illustrates how a hybrid zone can change over time. Imagine that two finch species colonize a new island and are capable of hybridizing (mating and producing viable offspring). The island contains two plant species, one with large seeds and one with small seeds, growing in isolated habitats. If the two finch species specialize in eating different plant species, would reproductive barriers be reinforced, weakened, or unchanged in this hybrid zone? Explain.
+
+For suggested answers, see Appendix A.
+
+## Concept 54.2: Diversity and trophic structure characterize biological communities
+
+Ecological communities can be characterized by certain general attributes, including how diverse they are and the feeding relationships of their species. In some cases, as you'll read, a few species exert strong control on a community's structure—the number, identity, and relative abundance of its species.
+
+## Species Diversity
+
+The species diversity of a community—the variety of different kinds of organisms that make up the community—has two components. One is species richness, the number of different species in the community. The other is the relative abundance of the different species, the proportion each species represents of all individuals in the community.
+
+Imagine two small forest communities, each with 100 individuals distributed among four tree species (A, B, C, and D) as follows:
+
+Community 1: 25A, 25B, 25C, 25D
+
+Community 2: 80A, 5B, 5C, 10D
+
+The species richness is the same for both communities because they both contain four species of trees, but the relative abundance is very different (Figure 54.12). You would easily notice the four types of trees in community 1, but unless you looked carefully, you might see only the abundant species A in the second forest. Given this, many observers would intuitively describe community 1 as the more diverse of the two communities.
+
+Ecologists use many tools to compare the diversity of communities. They often calculate indexes of diversity based on species richness and relative abundance. One widely used index is the Shannon diversity index (H):
+
+$$
+H = - \left(p _ {\mathrm{A}} \ln p _ {\mathrm{A}} + p _ {\mathrm{B}} \ln p _ {\mathrm{B}} + p _ {\mathrm{C}} \ln p _ {\mathrm{C}} + \dots\right)
+$$
+
+where A, B, C... are the species in the community, p is the relative abundance of each species, and ln is the natural logarithm; the ln of each value of p can be determined using the “ln” key on a scientific calculator. A higher value of H indicates a more diverse community. Let’s use this equation to calculate the Shannon diversity index of the two communities in Figure 54.12. For community 1, p = 0.25 for each species, so
+
+$$
+H = - 4 (0. 2 5 \ln 0. 2 5) = 1. 3 9.
+$$
+
+For community 2,
+
+$$
+H = - [ 0. 8 \ln 0. 8 + 2 (0. 0 5 \ln 0. 0 5) + 0. 1 \ln 0. 1 ] = 0. 7 1.
+$$
+
+## Figure 54.12 Which forest is more diverse?
+
+Ecologists would say that community 1 has greater species diversity, a measure that includes both species richness and relative abundance.
+
+![](images/6c9e51ef45bf356704790a6eac396dcce079f956bb40c4ea2965acb2a2ba7235.jpg)  
+Community 1 A: $25\%$ B: $25\%$ C: $25\%$ D: $25\%$
+
+![](images/db999dc20d8e31a0081473849d322cc2aa5cea69d7a5d9bad65717a7917d47ca.jpg)  
+Community 2 A: $80\%$ B: $5\%$ C: $5\%$ D: $10\%$
+
+Figure 54.13 Two samples of one species, the red alga Chondracanthus harveyanus.
+
+![](images/c4bf75849680fa475f3ebc5995822db348d0630419fe03049d8ea7ab2e77bd8d.jpg)
+
+These calculations confirm our intuitive description of community 1 as more diverse. Indeed, for a given species richness, greater species evenness (that is, closer values of relative abundance between species) results in communities that have greater species diversity.
+
+Determining the number and relative abundance of species in a community can be challenging. Because most species in a community are relatively rare, it may be hard to obtain a sample size large enough to be representative. It can also be difficult to identify some of the species in the community. If an unknown organism cannot be identified on the basis of morphology alone, it is useful to compare all or part of its genome to a reference database of DNA sequences from known organisms. For example,
+
+although the two samples of red algae shown in Figure 54.13 might appear to be two different species, comparing their sequences of a short standardized section of DNA—a DNA "barcode"—to a reference database shows that they belong to the same species. Researchers are increasingly using DNA sequencing for species identification as it becomes cheaper and as DNA sequences from more organisms are added to comparative databases.
+
+It can also be difficult to census the highly mobile or less visible members of communities, such as microorganisms, deep-sea creatures, and nocturnal species. The small size of microorganisms makes them particularly difficult to sample, so ecologists now commonly use molecular tools to help determine microbial diversity (Figure 54.14).
+
+## Diversity and Community Stability
+
+In addition to measuring species diversity, ecologists manipulate diversity in experimental communities in nature and in the laboratory. Many experiments examine the potential benefits of diversity, including increased productivity and stability of biological communities.
+
+Researchers at the Cedar Creek Ecosystem Science Reserve, in Minnesota, have been manipulating plant diversity in experimental communities for more than three decades (Figure 54.15a). Higher-diversity communities generally are more productive and are better able to withstand and recover from environmental stresses, such as droughts. More diverse
+
+## Figure 54.14
+
+# Research Method: Determining Microbial Diversity Using Molecular Tools
+
+## Application
+
+Ecologists are increasingly using molecular techniques to determine microbial diversity and richness in environmental samples. One such technique produces a DNA profile for microbial taxa based on sequence variations in the DNA that encodes the small subunit of ribosomal RNA. Researchers used this method to compare the diversity of soil bacteria in 98 habitats across North and South America to help identify environmental variables associated with high bacterial diversity.
+
+## Technique
+
+Researchers first extracted and purified DNA from the microbial community in each sample. They used the polymerase chain reaction (PCR; see Figure 20.7) to amplify the ribosomal DNA and labeled it with a fluorescent dye. Restriction enzymes then cut the amplified, labeled DNA into fragments of different lengths, which are separated
+
+![](images/a88ca618319eb4fe7748dce3702b230e343cf6c2dccecfca54ba8837778b3008.jpg)
+
+by gel electrophoresis. (A gel is shown here; see also Figure 20.6.) The number and abundance of these fragments characterize the sample's DNA profile, which was then used to calculate the Shannon diversity index $(H)$ of each sample. Researchers then looked for a correlation between $H$ and several environmental variables, including vegetation type, mean annual temperature and rainfall, and soil acidity.
+
+## Results
+
+The diversity of bacterial communities was related to soil pH, with the Shannon diversity index being highest in neutral soils (pH 7) and lowest in very acidic soils (pH < 5). Amazonian rain forests, which have extremely high plant and animal diversity, had the most acidic soils and the lowest bacterial diversity of the samples tested.
+
+![](images/dd56a7a3f828a7d6f7574a5d3abe5942ca9e288bc862cab1dcdf485cc3b0aec0.jpg)  
+Data from N. Fierer and R. B. Jackson, The diversity and biogeography of soil bacterial communities, Proceedings of the National Academy of Sciences USA 103:626–631 (2006).
+
+![](images/0fe5f12f1adf685dce04310890cd33955e7ada35c26ae9436f365c405520e1ec.jpg)  
+(a) Study plots at Cedar Creek
+
+Figure 54.15 The Cedar Creek Ecosystem Science Reserve, site of long-term experiments on manipulating plant diversity.  
+![](images/c05fb4fe54ed3d373cc7f136f977573533d1ba35a855c5643df1dd88d3654dcb.jpg)  
+(b) Total biomass of plants (6 years after planting) in study plots with varying plant species richness
+
+communities are also more stable year to year in their productivity. In one decade-long experiment, for instance, researchers at Cedar Creek created 168 plots, each containing 1, 2, 4, 8, or 16 perennial grassland species. The most diverse plots consistently produced more biomass (the total mass of all organisms in a habitat) each year than did the single-species plots (Figure 54.15b).
+
+Higher-diversity communities are often more resistant to introduced species, which are organisms that humans have moved to regions outside of the species' native range. In research conducted off the coast of Connecticut, scientists created communities of different levels of diversity consisting of sessile marine invertebrates, including tunicates (see Figure 34.5). They then examined how vulnerable these experimental communities were to an introduced tunicate. They found that the introduced tunicate was four times more likely to survive in lower-diversity communities than in higher-diversity ones. The researchers concluded that relatively diverse communities captured more of the resources available in the system, leaving fewer resources for the introduced species and thus decreasing its survival.
+
+## Trophic Structure
+
+In addition to species diversity, the structure and dynamics of a community also depend on the feeding relationships between organisms—the trophic structure of the community. The transfer of chemical energy from its source in plants and other autotrophs (primary producers) through herbivores (primary consumers) to carnivores (secondary, tertiary, and quaternary consumers) and eventually to decomposers is referred to as a
+
+Figure 54.16 Examples of terrestrial and marine food chains. The arrows trace the transfer of the chemical energy in food through the trophic levels of a community when organisms feed on one another. Decomposers, which consume the remains of organisms from all trophic levels, are not shown here.  
+![](images/bde02eacbd8b1f41842cfedbe3f83111fd46b3dca630eac2c177527be187b818.jpg)  
+VISUAL SKILLS Suppose the abundance of carnivores that eat zooplankton increased greatly. Use this diagram to infer how that might affect phytoplankton abundance.
+
+For suggested answer, see Appendix A.
+
+food chain (Figure 54.16). The position an organism occupies in a food chain is called its trophic level.
+
+## Food Webs
+
+A food chain is not an isolated unit, separate from other feeding relationships in a community. Instead, a group of food chains are linked together to form a food web. Ecologists diagram the trophic relationships of a community using arrows that link species according to who eats whom. In an Antarctic pelagic community, for example, the primary producers are phytoplankton, which serve as food for the dominant grazing zooplankton, especially krill and copepods, both of which are crustaceans (Figure 54.17). These zooplankton species are in turn eaten by various carnivores, including other plankton, penguins, seals, fishes, and baleen whales. Squids, which are carnivores that feed on fishes and
+
+Figure 54.17 An Antarctic marine food web.
+
+Arrows follow the transfer of the chemical energy in food from the producers (phytoplankton) up through the trophic levels. For simplicity, this diagram omits decomposers. At various times over the last two centuries, humans have also played a role in the Antarctic food web as consumers of fish, krill, and whales.
+
+![](images/187a0b1c53f67591fbb231e468afa0f46d877f1f0ee079aaeff81f1d9395f449.jpg)  
+VISUAL SKILLS For each organism in this food web, indicate the number of other kinds of organisms that it eats. Which two organisms are both predator and prey for each other?  
+For suggested answer, see Appendix A.
+
+zooplankton, are another important link in these food webs, as they are in turn eaten by seals and toothed whales.
+
+How are food chains linked into food webs? A given species may weave into the web at more than one trophic level. In the food web shown in Figure 54.17, krill feed on phytoplankton as well as on other grazing zooplankton, such as copepods. Such “nonexclusive” consumers are also found in terrestrial communities. For instance, foxes are omnivores whose diet includes berries and other plant materials, herbivores such as mice, and other predators, such as weasels. Humans are among the most versatile of omnivores.
+
+Complicated food webs can be simplified in two ways for easier study. First, species with similar trophic relationships in a given community can be grouped into broad functional
+
+Figure 54.18 Partial food web for Chesapeake Bay estuary. The sea nettle (Chrysaora quinquecirrha) and the juvenile striped bass (Morone saxatilis) are the main predators of fish larvae.  
+![](images/eeec586b16f06d5b70ed6ebf45c10403306fc55128e6a929e7b29363fc4f065d.jpg)  
+VISUAL SKILLS Based on this food web, identify organisms that function as primary, secondary, or tertiary consumers.
+For suggested answer, see Appendix A.
+
+groups. In Figure 54.17, more than 100 phytoplankton species are grouped as the primary producers in the food web. A second way to simplify a food web is to isolate a portion of the web that interacts very little with the rest of the community. Figure 54.18 illustrates a partial food web for sea nettles (a type of cnidarian) and juvenile striped bass in the Chesapeake Bay estuary on the Atlantic coast of the United States.
+
+## Limits on Food Chain Length
+
+Each food chain within a food web is usually only a few links long. In the Antarctic web of Figure 54.17, there are rarely more than seven links from the producers to any top-level predator, and most chains in this web have fewer links. In fact, most food webs studied to date have chains consisting of five or fewer links.
+
+Why do food chains tend to be relatively short? The most common explanation suggests that the length of a food chain is limited by the inefficiency of energy transfer along the chain. On average, only about 10% of the energy stored in the organic matter of each trophic level is converted to organic matter at the next trophic level (see Concept 55.3). Thus, a producer level consisting of 100 kg of plant material can support about 10 kg of herbivore biomass and 1 kg of carnivore biomass. At a certain point, there simply is not enough energy to sustain viable populations at the next trophic level.
+
+Another factor that may limit food chain length is that carnivores tend to be larger at higher trophic levels. The size of a carnivore puts an upper limit on the size of food it can take into its mouth. And except in a few cases, large carnivores cannot live on very small food items because they cannot obtain enough food in a given time to meet their metabolic needs. Among the exceptions are baleen whales, huge filter feeders with adaptations that enable them to consume enormous quantities of krill and other small organisms (see Figure 41.5).
+
+## Species with a Large Impact
+
+Certain species have an especially large impact on the structure of entire communities because they are highly abundant or play a pivotal role in community dynamics. The impact of these species occurs through trophic interactions and their influence on the physical environment.
+
+Foundation species have strong effects on their communities as a result of their large size or high abundance. Examples of foundation species include trees, desert shrubs such as creosote, and certain marine algae, such as kelp. Such species often have community-wide effects because they provide habitat or food. Foundation species may also be competitively dominant—superior in exploiting key resources such as space, water, nutrients, or t light.
+
+The impact of a foundation species can be discovered when it is removed from the community. For example, the American chestnut was a competitively dominant tree in deciduous forests of eastern North America before 1910, making up more than 40% of mature trees. Then, humans accidentally introduced the fungal disease chestnut blight to New York City via nursery stock imported from Asia. Between 1910 and 1950, this fungus killed almost all of the chestnut trees in eastern North America. In this case, removing the foundation species had a relatively small impact on some species but large effects on others. Oaks, hickories, beeches, and red maples that were already present in the forest increased in abundance and replaced the chestnuts. No mammals or birds seemed to have been harmed by the loss of the chestnut, but seven species of moths and butterflies that fed on the tree became extinct.
+
+In contrast to foundation species, keystone species are not usually abundant in a community. They exert strong control on community structure not by numerical might but by their pivotal ecological roles. In other words, keystone species have a disproportionately high impact on the community. Figure 54.19 highlights the importance of a keystone species, a sea star, in maintaining the diversity of an intertidal community. In this case, the sea star affects its community by feeding on and thereby limiting the abundance of a competitively dominant species, a mussel.
+
+Still other organisms exert their influence on a community not through trophic interactions but by changing the physical environment. Species that create or dramatically alter their environment are called ecosystem engineers. A familiar ecosystem engineer is the beaver (Figure 54.20, on the next page). The effects
+
+## Figure 54.19
+
+# Inquiry: Is Pisaster ochraceus a keystone species?
+
+## Experiment
+
+In rocky intertidal communities of western North America, the relatively uncommon sea star Pisaster ochraceus preys on mussels such as Mytilus californianus, a dominant competitor for space. Robert Paine, of the University of Washington, removed Pisaster
+
+![](images/e89228245c3aebc1b1494e718cf8e8a0647954aca71e3ac708334ea8ec135260.jpg)
+
+from an area in the intertidal zone and examined the effect on species richness.
+
+## Results
+
+In the absence of Pisaster, species richness declined as mussels monopolized the rock face and eliminated most other invertebrates and algae. In a control area where Pisaster was not removed, species richness changed very little.
+
+![](images/43b0d5c516d15d021298f0e19c9f8a248ed126d3242043e700bba91577fb07c2.jpg)  
+Data from R. T. Paine, Intertidal community structure. Experimental studies on the relationship between a dominant competitor and its principal predator. Oecologia 15:93–120 (1974).
+
+## Conclusion
+
+Pisaster acts as a keystone species, exerting an influence on the community that is not reflected in its abundance.
+
+WHAT IF? Suppose that an invasive fungus killed most individuals of Mytilus at these sites. Predict how species richness would be affected if Pisaster were then removed.
+
+For suggested answer, see Appendix A.
+
+of ecosystem engineers on other species can be positive or negative, depending on the needs of the other species. Some foundation species, such as corals, can also be considered ecosystem engineers because their presence modifies the physical environment in ways that create habitats on which other species depend.
+
+Figure 54.20 Beavers as ecosystem engineers.
+
+By felling trees, building dams, and creating ponds, beavers can transform large areas of forest into flooded wetlands.
+
+![](images/4a2bc44ea4ef80d37bfd6b7b61b24fdcadeee70ab81454c26b2d47c5f2fe02ca.jpg)
+
+(killer whales) should increase the abundance of primary carnivores (sea otters), decrease the number of herbivores (urchins), and increase the abundance of primary producers (kelp). The effects thus move down the trophic structure as alternating +/− effects.
+
+Ecologists have applied top-down control to improve water quality in lakes with a high abundance of algae. For example, in lakes with three trophic levels, removing fish should improve water quality by increasing zooplankton density, thereby decreasing algal populations (Figure 54.22). In lakes with four trophic levels, adding top predators should have the same effect.
+
+Ecologists in Finland used this approach to help purify Lake Vesijärvi, a large lake that was polluted with city sewage and industrial waste until 1976. After pollution controls reduced these inputs, the lake's water quality began to improve. In 1986, however, massive blooms of cyanobacteria began occurring. These blooms coincided with an increase in the population of roach, a fish species that eats zooplankton, which otherwise keep cyanobacteria in check. To reverse these changes, ecologists removed nearly a million kilograms of fish from the lake between
+
+## Bottom-Up and Top-Down Controls
+
+The ways in which adjacent trophic levels affect one another can be useful for describing community organization. These effects occur in two general ways: organisms can be controlled by what they eat (“bottom-up” control) or by what eats them (“top-down” control).
+
+In bottom-up control, the abundance of organisms at each trophic level is limited by nutrient supply or the availability of food at lower trophic levels. As shown on the left side of Figure 54.21, the supply of nutrients controls plant numbers, which control herbivore numbers, which in turn control predator numbers. To change the structure of a bottom-up community, you would need to alter the biomass or abundance of organisms at lower trophic levels, allowing those changes to propagate up through the food web. For example, if you add nutrients to stimulate plant growth, then each of the higher trophic levels should also increase in biomass. If you change predator abundance, however, the effect should not extend down to the lower trophic levels.
+
+In top-down control, the abundance of organisms at each trophic level is controlled by the abundance of consumers at higher trophic levels. Thus, in top-down control, predators limit herbivores, and herbivores limit plants or algae. In the example on the right side of Figure 54.21, removing the top carnivores
+
+Figure 54.21 Bottom-up and top-down control.
+
+The abundance of organisms at each trophic level can be controlled from the bottom up (by the availability of food or nutrients) or from the top down (by rates of consumption at higher trophic levels). Large gray arrows indicate the direction of control in each of the food chains shown.
+
+![](images/ef124868969337b6121a8ac183762a2232fcd7efa9f4315a029f160a83286dad.jpg)
+
+Figure 54.22 Restoring water quality in a lake with top-down control.
+
+Decreasing the abundance of fish that ate zooplankton results in a decrease in the biomass of algae, improving water quality. Arrow thickness indicates the relative strength of each top-down control.
+
+![](images/99d3b4566f918bd75afcb6d7ca75195b62a1eb5abababd654457408203cd6fd6.jpg)
+
+1989 and 1993, reducing roach abundance by about 80%. At the same time, they added a fourth trophic level by stocking the lake with pike perch, a predatory fish that eats roach. The water cleared up, and the last cyanobacterial bloom was in 1989. Ecologists continue to monitor the lake for cyanobacterial blooms and low oxygen availability, but the lake has remained clear, even though roach removal ended in 1993. One cautionary note on this successful restoration of water quality in Lake Vesijarvi: While the introduction of the non-native pike perch to the lake accomplished the goal of improving water quality while seeming to avoid any measurable negative consequences, we need to remember that in many cases, species introduced for biological control have become pests in their introduced ecosystems, as we'll discuss more in Concept 56.1.
+
+## Concept Check 54.2
+
+1. What two components contribute to species diversity? Explain how two communities with the same number of species can differ in species diversity.
+
+2. How is a food chain different from a food web?
+
+3. WHAT IF? Consider a grassland with five trophic levels: grasses, mice, snakes, raccoons, and bobcats. If you released additional bobcats into the grassland, how would grass biomass change if bottom-up control applied? If top-down control applied?
+
+4. MAKE CONNECTIONS Rising atmospheric $CO_{2}$ levels lead to ocean acidification (see Figure 3.12) and higher ocean temperatures, both of which can reduce krill abundance. Predict how a drop in krill abundance might affect other organisms in the food web shown in Figure 54.17. Which organisms are particularly at risk? Explain.
+
+# Concept 54.3: Disturbance influences species diversity and composition
+
+Decades ago, most ecologists thought that biological communities are at equilibrium, a more or less stable balance, unless seriously disturbed by human activities. This “balance of nature” view focused on competition as a key factor determining the composition and stability of communities. Stability in this context refers to a community’s tendency to reach and maintain a relatively constant composition of species.
+
+Proponents of this view thought that the community of plants at a site had only one stable equilibrium, a climax community controlled solely by climate. They also argued that biotic interactions caused the species in the community to function as an integrated unit—in effect, as a superorganism. This argument was based on the observation that certain species of plants are often found together, such as the oaks, maples, birches, and beeches in deciduous forests of the northeastern United States.
+
+Other ecologists questioned whether most communities were at equilibrium and challenged the concept of a single climax community. They thought that differences in soils, topography, and other factors created many potential communities that were stable within a region. Rather than functioning as an integrated unit, communities could be viewed as chance assemblages of species found together because they have similar abiotic requirements, such as for temperature, rainfall, and soil type. Moreover, evidence shows that disturbance keeps many communities from reaching a state of equilibrium in species diversity or composition. A disturbance is an event, such as a storm, fire, flood, drought, or human activity, that changes a community by removing organisms from it or altering resource availability.
+
+This emphasis on change in communities led to the formulation of the nonequilibrium model, which describes most communities as constantly changing after disturbance. Even relatively stable communities can be rapidly transformed into nonequilibrium communities. Let's examine some of the ways that disturbances influence community structure.
+
+## Characterizing Disturbance
+
+The types of disturbances and their frequency and severity vary among communities. Storms disturb almost all communities, even those in the oceans through the action of waves. Fire is a significant disturbance; in fact, chaparral and some grassland biomes require regular burning to maintain their structure and species composition. Many streams and ponds are disturbed by seasonal flooding and drying. A high level of disturbance is generally the result of frequent and intense disturbance, while low disturbance levels can result from either a low frequency or low intensity of disturbance.
+
+The intermediate disturbance hypothesis states that moderate levels of disturbance foster greater species diversity than do high or low levels of disturbance. High levels of disturbance reduce diversity by creating environmental stresses that exceed the tolerances of many species or by disturbing the community so often that slow-growing or slow-colonizing species are excluded. At the other extreme, low levels of disturbance can reduce species diversity by allowing competitively dominant species to exclude less competitive ones. Meanwhile, intermediate levels of disturbance can foster greater species diversity by opening up habitats for occupation by less competitive species. Such intermediate disturbance levels rarely create conditions so severe that they exceed the environmental tolerances or recovery rates of potential community members.
+
+Figure 54.23 Testing the intermediate disturbance hypothesis. Researchers identified the taxa (species or genera) of invertebrates at two locations in each of 27 New Zealand streams. They assessed the intensity of flooding at each location using an index of streambed disturbance. The number of invertebrate taxa peaked where the intensity of flooding was at intermediate levels.  
+![](images/181935f5f949ee59d057a06dcb00c3ce7ff33bcd13942cfed6f474a5adf07db9.jpg)
+
+The intermediate disturbance hypothesis is supported by many terrestrial and aquatic studies. In one study, ecologists in New Zealand compared the richness of invertebrates living in the beds of streams exposed to different frequencies and intensities of flooding (Figure 54.23). When floods occurred either very frequently or rarely, invertebrate richness was low. Frequent floods made it difficult for some species to become established in the streambed, while rare floods resulted in species being displaced by superior competitors. Invertebrate richness peaked in streams that had an intermediate frequency or intensity of flooding, as predicted by the hypothesis.
+
+Although moderate levels of disturbance appear to maximize species diversity in some cases, small and large disturbances also can have important effects on community structure. Small-scale disturbances can create patches of different habitats across a landscape, which help maintain diversity in a community. Large-scale disturbances are also a natural part of many communities. Much of Yellowstone National Park, for example, is dominated by lodgepole pine, a tree species that requires the rejuvenating influence of periodic fires. Lodgepole pine cones remain closed until exposed to intense heat. When a forest fire burns the trees, the cones open and the seeds are released. The new generation of lodgepole pines can then thrive on nutrients released from the burned trees and in the sunlight that is no longer blocked by taller trees.
+
+In the summer of 1988, extensive areas of Yellowstone burned during a severe drought (Figure 54.24a). By 1989, many burned areas in the park were largely covered with new vegetation,
+
+Figure 54.24 Recovery following a large-scale disturbance. The 1988 Yellowstone National Park fires burned large areas of forests dominated by lodgepole pines.  
+![](images/b6a5b210cf98e9bd82bd1d1e9c67873c98a27161e9bedff3a4283f8e0b43870f.jpg)  
+(a) Soon after fire. While all trees in the foreground of this photograph were killed by the fire, unburned trees can be seen in other locations.
+
+![](images/cfd8b07a9e3e7797427d30ced281e96356d091ce6bf53c6d8b672b1b9f9b4629.jpg)  
+(b) One year after fire. The community has begun to recover. Herbaceous plants, different from those in the former forest, cover the ground.
+
+suggesting that the species in this community are adapted to rapid recovery after fire (Figure 54.24b). In fact, large-scale fires have periodically swept through the lodgepole pine forests of Yellowstone and other northern areas for thousands of years. In contrast, more southerly pine forests were historically affected by frequent but low-intensity fires. In these forests, a century of human intervention to suppress small fires has allowed an unnatural buildup of fuels in some places and elevated the risk of large, severe fires to which the species are not adapted.
+
+## Interview
+
+Interview with Monica Turner: Studying the consequences of fire and other disturbances on ecosystems (eTextbook only)
+
+![](images/eb84944724c4a76a6f2d08eacf6c48b2a3aa098e71f1cce1a2b03b96265e30cd.jpg)
+
+Studies of the Yellowstone forest community and many others indicate that they are nonequilibrium communities, changing continually because of natural disturbances and the internal processes of growth and reproduction. Mounting evidence suggests that nonequilibrium conditions are in fact the norm for most communities.
+
+## Ecological Succession
+
+Changes in the composition of terrestrial communities are most apparent after a severe disturbance, such as a volcanic eruption or a glacier, strips away all the existing vegetation. The disturbed area may be colonized by a variety of species, which are gradually replaced by other species, which are in turn replaced by still other species—a process called ecological succession. When this process begins in a virtually lifeless area, such as on a new volcanic island or on the rubble (moraine) left by a retreating glacier, it is called primary succession.
+
+Let's now examine typical patterns of succession in terrestrial ecosystems. During primary succession, the only life-forms initially present are often prokaryotic organisms and unicellular eukaryotes. Lichens and mosses, which grow from windblown spores, are commonly the first macroscopic photosynthesizers to colonize such areas. Soil develops gradually as rocks weather and organic matter accumulates from the decomposed remains of the early colonizers. Once soil is present, the lichens and mosses are usually overgrown by grasses, shrubs, and trees that sprout from seeds blown in from nearby areas or carried in by animals. Eventually, an area is colonized by plants that become the community's dominant form of vegetation. Producing such a community through primary succession may take hundreds or thousands of years.
+
+Early-arriving species and later-arriving ones may be linked by one of three key processes: facilitation, tolerance, and inhibition (Figure 54.25). In facilitation, the early arrivals may make the environment more favorable for the appearance of the later species—for example, by increasing the fertility of the soil. Alternatively, succession in some ecosystems may occur via tolerance: A number of different species are capable of becoming established early in primary succession, and the early colonizers neither help nor impede the arrival of other species. Finally, in the process of inhibition, many species are able to start a succession, and the earliest settlers inhibit the establishment of other species. It is important to note that ecological successions rarely feature only one of these patterns; the nature of the mechanisms at play may be different for various sets of species in the community and they may change as the succession progresses.
+
+Figure 54.25 Three contrasting models of succession.  
+![](images/b5bdbc851324e6fd5d1e4932d998b4b2284ff407ca7752bc97c8f6d514422b30.jpg)
+
+Ecologists have conducted some of the most extensive research on primary succession at Glacier Bay in southeastern Alaska, where glaciers have retreated more than 100 km since 1760 (Figure 54.26). By studying the communities at different distances from the mouth of the bay—with the oldest exposed areas being closest to the mouth and the more recently exposed areas being farthest—ecologists can examine different stages in succession. As the glaciers have retreated, the following sequence of events occurred on areas above the waterline of the bay: The exposed glacial moraine is colonized first by pioneering species that include liverworts, mosses, fireweed, scattered Dryas (a mat-forming shrub), and willows. ② After about three decades, Dryas dominates the plant community. ③ A few decades later, the area is invaded by alder, which forms dense thickets up to 9 m tall. ④ In the next two centuries, these alder stands are overgrown first by Sitka spruce and later by western hemlock and mountain hemlock. In areas of poor drainage, the forest floor of this spruce-hemlock forest is invaded by sphagnum moss, which holds water and acidifies the soil, eventually killing the trees. Thus, by about 300 years after glacial retreat, the vegetation consists of sphagnum bogs on the poorly drained flat areas and spruce-hemlock forest on the well-drained slopes.
+
+Succession on glacial moraines exhibits clear facilitation, especially in early in the succession, owing to changes in soil nutrients and other environmental factors caused by transitions in the vegetation. Because the bare soil after glacial retreat is low in nitrogen content, almost all the pioneer plant species begin succession with poor growth and yellow leaves due to limited nitrogen supply. The exceptions are Dryas and alder, whose roots host symbiotic bacteria that fix atmospheric nitrogen (see Figure 37.12). Soil nitrogen content increases quickly during the
+
+Figure 54.26 Glacial retreat and primary succession near the shores of Glacier Bay, Alaska. The different shades of blue on the map are based on historical information of how the area covered by Glacier Bay has increased over time due to retreat of the glaciers since 1760.  
+![](images/764d75094104d1817b33ca0140942cb978b6b1780b180b909b4b68784a9db3d7.jpg)  
+4 Spruce stage
+
+![](images/4b08cf7a7befe302cc4f881e30ca7abee6bdd567a3c58327e0a4cebff8c8595e.jpg)
+
+Figure 54.27 Changes in soil nitrogen content during succession at Glacier Bay.  
+![](images/96b6a7287ae566008f7f0d1ce6d50369279f1350707b372a901865b10a387b09.jpg)  
+MAKE CONNECTIONS Figure 37.11 illustrates two types of atmospheric nitrogen fixation by prokaryotes. At the earliest stages of primary succession, before any plants are present at a site, which type of nitrogen fixation would occur, and why?  
+For suggested answer, see Appendix A.  
+Before trawling  
+After trawling
+
+alder stage of succession and keeps increasing during the spruce stage (Figure 54.27). By altering soil properties, pioneer plant species can facilitate colonization by new plant species during early succession. In later stages of succession, interactions between species likely include a combination of facilitation, tolerance, and inhibition.
+
+In contrast to primary succession, secondary succession involves the recolonization of an area after a major disturbance has removed most but not all of the organisms in a community, as in Yellowstone following the 1988 fires (see Figure 54.25). Following the disturbance, the area may return to something like its original state. For instance, in a forested area that has been cleared for farming and later abandoned, the earliest plants to recolonize are often herbaceous species that grow from windblown or animal-borne seeds. If the area has not been burned or heavily grazed, woody shrubs may in time replace most of the herbaceous species, and forest trees may eventually replace most of the shrubs.
+
+## Human Disturbance
+
+Ecological succession is a response to disturbance of the environment, and some of the strongest disturbances result from human activities. Agricultural development has disrupted what were once the vast grasslands of the North American prairie. Tropical rain forests are quickly disappearing as a result of clear-cutting for lumber, cattle grazing, and farmland. Centuries of overgrazing and agricultural
+
+Figure 54.28 Disturbance of the ocean floor by trawling. These photos show the seafloor off northwestern Australia before and after deep-sea trawlers have passed through.
+
+disturbance have contributed to famine in parts of Africa by turning seasonal grasslands into vast barren areas.
+
+Human actions have disturbed marine ecosystems as well as terrestrial ones. The effects of ocean trawling, in which boats drag weighted nets across the seafloor, are similar to those of clear-cutting a forest or plowing a field. The trawls scrape and scour corals and other life on the seafloor (Figure 54.28). In a typical year, ships trawl an area about the size of South America, 150 times larger than the area of forests that are clear-cut annually.
+
+Because disturbance by human activities is often severe, it reduces species diversity in many communities. In Chapter 56, we'll take a closer look at how human-caused disturbance is affecting the diversity of life.
+
+## Concept Check 54.3
+
+1. Why do high and low levels of disturbance usually reduce species diversity? Why does an intermediate level of disturbance promote species diversity?
+
+2. During succession, how might the early species facilitate the arrival of other species?
+
+3. WHAT IF? Most prairies experience regular fires, typically every few years. If these disturbances were relatively modest, how would the species diversity of a prairie likely be affected if no burning occurred for 100 years? Explain.
+
+# Concept 54.4: Biogeographic factors affect community diversity
+
+So far, we have examined relatively small-scale or local factors that influence the diversity of communities, including the effects of species interactions, foundation species, and many types of disturbances. Large-scale biogeographic factors also contribute to the tremendous range of diversity observed in biological communities. Two biogeographic factors in particular—the latitude of a community and the area it occupies—have been investigated for more than a century.
+
+## Latitudinal Gradients
+
+In the 1850s, both Charles Darwin and Alfred Wallace pointed out that plant and animal life was generally more abundant and diverse in the tropics than in other parts of the globe. Since that time, many researchers have confirmed this observation. One study found that a 6.6-hectare (1 ha = 10,000 m $^{2}$ ) plot in tropical Malaysia contained 711 tree species, while a 2-ha plot of deciduous forest in Michigan typically contained just 10 to 15 tree species. Many groups of animals show similar latitudinal gradients. For instance, there are more than 200 species of ants in Brazil but only 7 in Alaska.
+
+Two key factors that can affect latitudinal gradients of species richness are evolutionary history and climate. Over the course of evolution, a series of speciation events may lead to increased species richness in a community (see Concept 24.2). Tropical communities are generally older than temperate or polar communities, which have repeatedly “started over” after major disturbances such as glaciations. As a result, species diversity may be highest in the tropics simply because there has been more time for speciation to occur in tropical communities than in temperate or polar communities.
+
+Climate is another key factor thought to affect latitudinal gradients of richness and diversity. In terrestrial communities, the two main climatic factors correlated with diversity are sunlight and precipitation, both of which occur at high levels in the tropics. These factors can be considered together by measuring a community's rate of evapotranspiration, the evaporation of water from soil and plants. Evapotranspiration, a function of solar radiation, temperature, and water availability, is much higher in hot areas with abundant rainfall than in areas with low temperatures or low precipitation. The species richness of plants and animals correlates with measures of evapotranspiration, as shown for vertebrates in Figure 54.29.
+
+## Area Effects
+
+In 1807, naturalist and explorer Alexander von Humboldt described one of the first patterns of species richness to be recognized, the species-area curve: All other factors being equal, the larger the geographic area of a community, the more species it has. One explanation for this relationship is that larger areas offer a greater diversity of habitats and microhabitats. Another factor is that larger habitats can support bigger populations, which are at lesser risk of extinction compared to small populations.
+
+Figure 54.29 Energy, water, and species richness.
+Vertebrate species richness in North America increases with an index of evapotranspiration, expressed as rainfall equivalents (mm/yr).  
+![](images/28eee7db4d0966e59690ff7f382ac99f466fb158c751f615751733f314724ebf.jpg)
+
+Predictions of the species-area relationship have been tested by examining the number of animals and plants in many different regions. As one example, in the Sunda Islands of Malaysia, the number of bird species increased with island size (Figure 54.30). Different species-area curves vary in how rapidly species richness increases with area. Even so, the basic concept of diversity increasing with increasing area applies in many situations, from surveys of ant diversity in New Guinea to studies of plant species richness on islands of different sizes.
+
+## Island Equilibrium Model
+
+Because of their isolation and limited size, islands provide excellent opportunities for studying how area and other factors affect the species diversity of communities. By “islands,” we mean not only oceanic islands, but also habitat islands on land, such as lakes, mountain peaks, or habitat fragments—any patch surrounded by an environment not suitable for the “island” species.
+
+Figure 54.30 Species richness and island area.
+The number of bird species on the Sunda Islands of Malaysia increases with island size.  
+![](images/568626529daa23574df9eba89c3dee2de8ac6e68160274bce41753ebfac6b6d5.jpg)
+
+Figure 54.31 MacArthur and Wilson's island equilibrium model. The equilibrium number of species on an island represents a balance between the immigration of new species (red curve) and the extinction of species already there (black curve). The point at which these curves intersect shows the predicted equilibrium number of species $(Q)$ .  
+![](images/fbb52820efd5cd7ce9d973d2ab6af7e6e47c44bb6e2c2811ec4eb3dbbcba61ea.jpg)  
+WHAT IF? Suppose rising sea levels substantially decreased the size of the island. How would that affect (a) the population sizes of species already on the island, (b) the extinction curve shown above, and (c) the predicted equilibrium number of species?  
+For suggested answer, see Appendix A.  
+Figure 54.32 Mangrove island.  
+The islands that researchers studied were small, each consisting of one or a few mangrove trees.
+
+Recognizing the opportunities that studying islands provides, Robert MacArthur and E. O. Wilson developed a method for predicting the species diversity of islands (Figure 54.31). In their approach, the number of species on an island represents a balance between the immigration of new species to the island and the extinction of species already there.
+
+In Figure 54.31, note that the immigration rate decreases as the number of species on the island gets larger, while the extinction rate increases. To see why this is so, consider a newly formed oceanic island that receives colonizing species from a distant mainland. At any given time, an island's immigration and extinction rates are affected by the number of species currently present. As the number of species already on the island increases, the immigration rate of new species decreases, because any individual reaching the island is less likely to represent a species that is not already present. Moreover, as more species inhabit an island, extinction rates on the island increase because of the greater likelihood of competitive exclusion.
+
+An island's size and its distance from the mainland are important elements influencing the island's species richness. Small islands generally have lower immigration rates because potential colonizers are less likely to reach a small island than a large one. Small islands also have higher extinction rates because they generally contain fewer resources, have less diverse habitats, and have smaller population sizes. With respect to distance, an island that is closer to the mainland generally has a higher immigration rate and a lower extinction rate than one farther away. Arriving colonists increase the abundance of a species on a near island, thereby reducing the species' chance of extinction.
+
+![](images/96d66317730b41de954062c8fbf7931a36ec48973f9f74385396ec2917b15830.jpg)
+
+MacArthur and Wilson's model is called the island equilibrium model because an equilibrium will eventually be reached where the rate of species immigration equals the rate of species extinction. The number of species at this equilibrium point is correlated with the island's size and distance from the mainland. Although the number of species ultimately should stabilize at a constant level, immigration and extinction continue and hence the exact species composition on the island may change over time.
+
+Researchers tested the island equilibrium model in an experiment on six small mangrove islands in the Florida Keys (Figure 54.32). To do this, they first painstakingly identified and counted all of the arthropod species on each island. As predicted by the model, they found more species on islands that were larger and closer to the mainland. They then fumigated four of the islands with methyl bromide to kill all of the arthropods. As also predicted by the model, the number of arthropod species on the islands increased over time to near their pre-fumigation values (Figure 54.33).
+
+Figure 54.33 Testing the island equilibrium model.
+
+The graph shows results for one of the islands studied. The number of arthropod species increased over time; by 140 days, it had reached levels similar to those found on the island prior to the start of the experiment.
+
+![](images/e86e2d33af64b30b248d41d767bf391c2bbd86272ba370487cf585900bd9982a.jpg)
+
+The island closest to the mainland recovered first, while the island farthest from the mainland was the slowest to recover. The number of arthropod species on the remaining two islands—which were not fumigated and hence served as controls—remained approximately constant during the study.
+
+## Concept Check 54.4
+
+1. Describe two hypotheses as to why species diversity is greater in the tropics than in temperate and polar regions.
+
+2. Describe how an island's size and distance from the mainland affect the island's species richness.
+
+3. WHAT IF? Based on MacArthur and Wilson's island equilibrium model, predict how the richness of birds on an island would compare with that of snakes and lizards there.
+
+For suggested answers, see Appendix A.
+
+## Concept 54.5: Pathogens alter community structure locally and globally
+
+Now that we have examined several important factors that structure biological communities, we'll finish the chapter by examining community interactions involving pathogens, disease-causing microorganisms, viruses, viroids, or prions. (Viroids and prions are infectious RNA molecules and proteins, respectively; see Concept 19.3.) As you'll see, pathogens have strong effects on ecological communities.
+
+Pathogens produce especially clear effects when they are introduced into new habitats, as in the case of the fungus that causes chestnut blight (see Concept 54.2). A pathogen can be particularly virulent in a new habitat because new host populations have not had a chance to become resistant to the pathogen through natural selection. The invasive chestnut blight fungus had far stronger effects on the American chestnut, for instance, than it had on Asian chestnut species in the fungus's native habitat.
+
+## Effects on Community Structure
+
+The ecological importance of disease can be highlighted by how pathogens have affected coral reef communities. White-band disease, caused by an unknown pathogen, has resulted in dramatic changes in Caribbean reefs. The disease kills corals by causing their tissue to slough off in a band from the base to the tip of the branches. Because of the disease, staghorn coral (Acropora
+
+cervicornis) has virtually disappeared from the Caribbean. Populations of elkhorn coral (Acropora palmata) have also been decimated. Such corals provide key habitat for lobsters as well as snappers and other fish species. When corals die, their skeletons often become overgrown by algae because herbivore biomass is quite low—in part because of a disease that infected a key sea urchin herbivore. Eventually, the dead coral skeletons topple because of damage from storms and other disturbances. The complex, three-dimensional structure of the reef disappears, and diversity plummets.
+
+Pathogens also influence community structure in terrestrial ecosystems. Consider sudden oak death (SOD), a recently discovered disease that is caused by the protist Phytophthora ramorum (see Concept 28.6). SOD was first described in California in 1995, when hikers noticed trees dying around San Francisco Bay. By 2014, it had spread more than 1,000 km, from the central California coast to southern Oregon, and it had killed more than a million oaks and other trees. The loss of the oaks has led to the decreased abundance of at least five bird species, including the acorn woodpecker and the oak titmouse, that rely on oaks for food and habitat. Although there is currently no cure for SOD, scientists recently sequenced the genome of P. ramorum in hopes of finding a way to fight the pathogen.
+
+## Community Ecology and Zoonotic Diseases
+
+Three-quarters of emerging human diseases and many of the most devastating established diseases are caused by zoonotic pathogens—those that are transferred to humans from other animals, either through direct contact with an infected animal or via an intermediate species, called a vector. The vectors that spread zoonotic diseases are often parasites, including ticks, lice, and mosquitoes. Established zoonotic diseases such as rabies, plague, dengue fever, Chagas' disease, Salmonella infection, and some forms of sleeping sickness cause an estimated 1 billion cases of illness in people and millions of deaths each year. Emerging zoonotic diseases such as Lyme disease, Zika virus, Ebola hemorrhagic fever, and mpox also pose a dire threat to global health and world economies.
+
+Identifying the community of hosts and vectors for a pathogen can help prevent illnesses such as Lyme disease, which is spread by ticks. For years, scientists thought that the primary host for the Lyme pathogen was the white-footed mouse because mice are heavily parasitized by young ticks. When researchers vaccinated mice against Lyme disease and released them into the wild, however, the number of infected ticks hardly changed. Further investigation in New York revealed that two inconspicuous shrew species were the source for more than half the infected ticks collected in the field (Figure 54.34). Identifying the most important hosts for a pathogen provides information that may be used to control the hosts most responsible for spreading diseases.
+
+Ecologists also use their knowledge of community interactions to track the spread of zoonotic diseases. One example, avian flu, is caused by highly contagious viruses transmitted through the saliva and feces of birds (see Concept 19.3). Most of these viruses cause milder symptoms in wild birds than in domesticated birds, the most common source of human infections. Since 2003, one particular viral strain, called H5N1, has killed hundreds of millions of poultry, as well as hundreds of thousands of wild birds and more than 450 people.
+
+Figure 54.34 Unexpected hosts of the Lyme disease pathogen. A combination of ecological data and genetic analyses enabled scientists to show that more than half of ticks carrying the Lyme pathogen became infected by feeding on the northern short-tailed shrew (Blarina brevicauda) or the masked shrew (Sorex cinereus).  
+![](images/68761f71da6cd8c26df9af15020089e2b568ecc20af809e2667dc31d1b446c78.jpg)  
+MAKE CONNECTIONS Concept 23.1 discusses the significance of genetic variation between populations. How might genetic variation between shrew populations in different locations affect the number of infected ticks? For suggested answer, see Appendix A.  
+Figure 54.35 Tracking avian flu.
+
+Control programs that quarantine domestic birds or monitor their transport can be difficult for strains of avian flu that spread naturally through the movements of wild birds. This is the case for H5N1, which, from 2003 to 2006, spread rapidly across Asia, the Middle East, Europe, and Africa. In 2021–22, the virus was transmitted from Europe to eastern Canada, perhaps transported by ducks or other migratory water birds. It then spread rapidly across the United States and Canada, forcing farmers to kill tens of millions of poultry. This outbreak also led to the deaths of thousands of wild birds, including more than 50 bald eagles. Ecologists are studying the virus by trapping and testing migrating and resident birds (Figure 54.35), but to date, efforts to halt its spread have not been successful.
+
+Human activities that lead to climate change and the destruction of natural habitat increase the risk of zoonotic disease by allowing animal carriers of disease to move into new geographic regions and by increasing the contact people have with wild animals. In addition, humans are transporting pathogens around the world at unprecedented rates. For
+
+A graduate student bands a young gyrfalcon as part of a project to monitor the spread of avian flu.  
+![](images/e5c34aecb662de470cbaf3d9be83063c228467a821ed4bf64573f5b66610464b.jpg)
+
+example, genetic analyses suggest that the pathogen that causes SOD, P. ramorum, likely came to North America from Europe in nursery plants.
+
+Similarly, the pathogens that cause human diseases are spread by the global movements of people. In recent years, coronaviruses have caused several new infectious diseases in humans. First identified in 2003 in Foshan, China, severe acute respiratory syndrome (SARS) originated from the transfer of the coronavirus SARS-CoV from bats to civet cats to humans and caused 774 confirmed deaths worldwide. In 2012, Middle East respiratory syndrome (MERS) emerged in the Saudi Arabia from the transfer of the coronavirus MERS-CoV from camels to humans and caused at least 943 deaths worldwide. The most striking coronavirus to affect humans in recent years has been SARS-CoV-2, the coronavirus that causes COVID-19. It was first detected in Wuhan, China, in late 2019. This virus quickly spread around the world when infected individuals traveled to other countries. Within three years, COVID-19 had a confirmed death toll of more than 6.5 million people, with over 1,000,000 fatalities in the United States alone. (The actual numbers may have been significantly higher since many people who died with COVID-19-like symptoms were not tested for SARS-CoV-2.) These events, as well as an alarming increase in the overall number of emerging zoonotic diseases, indicate a need to broaden our efforts to survey wildlife populations for viruses with the potential to cause human disease.
+
+While our emphasis here has been on community ecology, pathogens are also greatly influenced by changes in the physical environment. To control pathogens and the diseases they cause, scientists need an ecosystem perspective—an intimate knowledge of how the pathogens interact with other species and with all aspects of their environment. Ecosystems are the subject of Chapter 55.
+
+## Concept Check 54.5
+
+1. What are pathogens?
+
+2. WHAT IF? Rabies, a viral disease in mammals, is not currently found in the British Isles. If you were in charge of disease control
+
+For suggested answers, see Appendix A.
+
+## Chapter 54 Review
+
+there, what practical approaches might you employ to keep the rabies virus from reaching these islands?
+
+## Summary of Key Concepts
+
+To review key terms, go to the Vocabulary Self-Quiz (eTextbook only).
+
+Concept 54.1: Interactions between species can help, harm, or have no effect on the individuals involved
+
+\- Interspecific interactions affect the survival and reproduction of the individuals that engage in them. As shown in the table, these interactions can be grouped into three broad categories: competition, exploitation, and positive interactions.
+
+\- Competitive exclusion states that two species whose members compete for the same resource cannot coexist permanently in the same place. Resource partitioning is the differentiation of ecological niches that enables species to coexist in a community.
+
+For each interaction listed in the table, give an example of a pair of species that exhibit the interaction.
+
+<table><tr><td>Interaction</td><td>Description</td></tr><tr><td>Interspecific Competition (-/-)</td><td>Individuals of different species each use a limited resource, reducing the survival or reproduction of both individuals.</td></tr><tr><td>Exploitation (+/-)</td><td>Members of one species benefit by feeding upon (and thereby harming) members of the other species. Exploitation includes the following:</td></tr><tr><td>Predation</td><td>An individual of one species, the predator, kills and eats an individual of the other, the prey.</td></tr><tr><td>Herbivory</td><td>An herbivore eats part of a plant or alga.</td></tr><tr><td>Parasitism</td><td>The parasite derives its nourishment from a second organism, its host.</td></tr><tr><td>Positive interactions (+/+ or 0/+)</td><td>Members of one species benefit, while members of the other benefit or are not harmed. Positive interactions include the following:</td></tr><tr><td>Mutualism (+/+)</td><td>Members of both species benefit from the interaction.</td></tr><tr><td>Commensalism (+/0)</td><td>Members of one species benefit, while members of the other are not affected.</td></tr></table>
+
+## Concept 54.2: Diversity and trophic structure characterize biological communities
+
+\- Species diversity is affected by both the number of species in a community—its species richness—and their relative abundance.
+
+![](images/87fb544ee8ecc1e77535c94adfa2fb368bce06e072efd03adea64dd10201e873.jpg)
+
+\- More diverse communities typically produce more biomass and show less year-to-year variation in growth than less diverse communities and are more resistant to introduced species.
+
+\- Trophic structure is a key factor in community dynamics. Food chains link the trophic levels from producers to top carnivores. Branching food chains and complex trophic interactions form food webs.
+
+\- Foundation species are large or abundant members of a community that provide food or habitat. Keystone species are usually less abundant species that exert a disproportionate influence on community structure. Ecosystem engineers influence community structure through their effects on the physical environment.
+
+\- In bottom-up control, the abundance of organisms at each trophic level is limited by nutrient supply or food availability. In top-down control, each trophic level is controlled by the abundance of consumers at higher trophic levels.
+
+Based on indexes such as the Shannon diversity index, is a community of higher species richness always more diverse than a community of lower species richness? Explain.
+
+## Concept 54.3: Disturbance influences species diversity and composition
+
+\- Increasing evidence suggests that disturbance and lack of equilibrium, rather than stability and equilibrium, are the norm for most communities. According to the intermediate disturbance hypothesis, moderate levels of disturbance can foster higher species diversity than can low or high levels of disturbance.
+
+\- Ecological succession is the sequence of community and ecosystem changes after a disturbance. Primary succession occurs in an area that is virtually lifeless, while secondary succession occurs after a disturbance has removed most but not all of the organisms in a community.
+
+Is the disturbance pictured in Figure 54.28 more likely to initiate primary or secondary succession? Explain.
+
+## Concept 54.4: Biogeographic factors affect community diversity
+
+\- Species richness generally declines along a latitudinal gradient from the tropics to the poles. Climate influences the diversity gradient through energy (heat and light) and water. The greater age of tropical environments also may contribute to their greater species richness.
+
+\- Species richness is directly related to a community's geographic size, a principle formalized in the species-area curve.
+
+\- Species richness on islands depends on island size and distance from the mainland. The island equilibrium model maintains that species richness on an ecological island reaches an equilibrium where new immigrations are balanced by extinctions.
+
+How have periods of glaciation influenced latitudinal patterns of diversity?
+
+## Concept 54.5: Pathogens alter community structure locally and globally
+
+\- Pathogens play a key in structuring terrestrial and marine communities.
+
+\- Zoonotic pathogens are transferred from other animals to humans and cause most emerging human diseases. Community ecology provides the framework for identifying key species interactions associated with such pathogens and for helping us track and control their spread.
+
+Suppose a pathogen attacks a keystone species. Explain how this could alter the structure of a community.
+
+For suggested answers, see Appendix A.
+
+## Test Your Understanding
+
+For more multiple-choice questions, go to the Practice Test (eTextbook only).
+
+## Levels 1-2: Remembering/Understanding
+
+1. The feeding relationships among the species in a community determine the community's
+
+(A) secondary succession.
+
+(B) ecological niche.
+
+(C) species richness.
+
+(D) trophic structure.
+
+2. The principle of competitive exclusion states that
+
+(A) two species cannot coexist in the same habitat.
+
+(B) competition between two species always causes extinction or emigration of one species.
+
+(C) two species that have exactly the same niche cannot coexist in a community.
+
+(D) two species will stop reproducing until one species leaves the habitat.
+
+3. Based on the intermediate disturbance hypothesis, a community's species diversity is increased by
+
+(A) frequent massive disturbance.
+
+(B) stable conditions with no disturbance.
+
+(C) moderate levels of disturbance.
+
+(D) human intervention to eliminate disturbance.
+
+4. According to the island equilibrium model, species richness would be greatest on an island that is
+
+(A) large and remote.
+
+(B) small and remote.
+
+(C) large and close to a mainland.
+
+(D) small and close to a mainland.
+
+## Levels 3-4: Applying/Analyzing
+
+5. Predators that are keystone species can maintain species diversity in a community if they
+
+(A) competitively exclude other predators.
+
+(B) prey on the community's dominant competitors.
+
+(C) reduce the number of disruptions in the community.
+
+(D) prey on the least abundant species in the community.
+
+6. Food chains tend to be short because
+
+(A) only a single species of herbivore feeds on each plant species.
+
+(B) local extinction of a species causes extinction of the other species in its food chain.
+
+(C) most of the energy in a trophic level is lost as energy passes to the next higher level.
+
+(D) most producers are inedible.
+
+7. Which of the following could qualify as a top-down control on a grassland community?
+
+(A) limitation of plant biomass by rainfall amount (B) influence of temperature on interspecific competition among plants
+
+(C) influence of soil nutrients on the abundance of grasses versus wildflowers
+
+(D) effect of grazing by bison on plant species diversity
+
+8. The most plausible hypothesis to explain why species richness is higher in tropical than in temperate regions is that
+
+(A) tropical communities are younger.
+
+(B) tropical regions generally have more available water and higher levels of solar radiation.
+
+(C) tropical habitats tend to have smaller areas than temperate habitats.
+
+(D) diversity increases as evapotranspiration decreases.
+
+9. Community 1 contains 100 individuals distributed among four species: 5A, 5B, 85C, and 5D. Community 2 contains 100 individuals distributed among three species: 30A, 40B, and 30C. Calculate the Shannon diversity index (H) for each community. Which community is more diverse?
+
+## Levels 5-6: Evaluating/Creating
+
+10. DRAW IT In the Chesapeake Bay estuary, the blue crab is an omnivore that eats eelgrass and other primary producers as well as clams. It is also a cannibal. In turn, the crabs are eaten by humans and by the endangered Kemp's Ridley sea turtle. Based on this information, draw a food web that includes the blue crab. Assuming that top-down control occurs in this system, describe what would happen to the abundance of eelgrass if humans stopped eating blue crabs.
+
+11. EVOLUTION CONNECTION Explain why adaptations of particular organisms to competition may not necessarily represent instances of character displacement. What would a researcher have to demonstrate about two competing species to make a convincing case for character displacement?
+
+12. SCIENTIFIC INQUIRY An ecologist studying desert plants performed the following experiment. She staked out two identical plots, containing sagebrush plants and small annual wildflowers. She found the same five wildflower species in roughly equal numbers on both plots. She then enclosed one plot with a fence to keep out kangaroo rats, the most common grain-eaters of the area. After two years, four of the wildflower species were no longer present in the fenced plot, but one species had become much more abundant. The control plot had not changed in species diversity. Using the principles of community ecology, propose a hypothesis to explain her results. What additional evidence would support your hypothesis?
+
+13. WRITE ABOUT A THEME: INTERACTIONS In Batesian mimicry, a palatable species gains protection by mimicking an unpalatable one. Imagine that individuals of a palatable, brightly colored fly species are blown to three remote islands. The first island has no predators of that species; the second has predators but no similarly colored, unpalatable species; and the third has both predators and a similarly colored, unpalatable species. In a short essay (100–150 words), predict what might happen to the coloration of the palatable species on each island through time if coloration is a genetically controlled trait. Explain your predictions.
+
+## 14. SYNTHESIZE YOUR KNOWLEDGE
+
+![](images/485e497c98bf7191dade3dfee6ceef76326191e56045fe2e824bfeda4e86c51a.jpg)  
+For selected answers, see Appendix A.
+
+Describe two types of ecological interactions that appear to be occurring between the three species shown in this photo. (Look closely to see the three species: a flower, a bee, and a spider!) What morphological adaptation can be seen in the species that is at the highest trophic level in this scene?
+
+# Explore Scientific Papers with Science in the Classroom | AAAS
+
+How do native species evolve in response to introduced species? Go to “There’s a New Kid in Town” at www.scienceintheclassroom.org.
+
+Instructors: Questions can be assigned in Mastering Biology.
+
+# Ecosystems and Restoration Ecology
+
+## Key Concepts
+
+55.1 Physical laws govern energy flow and chemical cycling in ecosystems
+
+55.2 Energy and other limiting factors control primary production in ecosystems
+
+55.3 Energy transfer between trophic levels is typically only 10% efficient
+
+55.4 Biological and geochemical processes cycle nutrients and water in ecosystems
+
+55.5 Restoration ecologists return degraded ecosystems to a more natural state
+
+## Study Tip
+
+Make a flowchart: To connect the processes shown in Figures 55.4 and 55.14 to actual events in an ecosystem, make a flowchart like the one begun here. It should show how a carbon atom exhaled as $CO_{2}$ by a squirrel could eventually enter another squirrel after passing through decomposers, a small bird, grass, a hawk, an oak tree, and a grasshopper (not in that order).
+
+![](images/c265ce3f8e0e5f044f7c8dc201a2baeb824043be6ecb720e599057444d8ff8d3.jpg)
+
+![](images/6d819f9ee03b322a0c330cd166ea15397d2e76c53e9436b1339bbc4a46e37327.jpg)  
+Figure 55.1 When this arctic fox (Vulpes lagopus) eats the seabird it has killed, it obtains energy from the organic molecules contained in the body of the seabird and uses these molecules as building blocks for its own body. The seabird previously ate fish and excreted waste that provided key nutrients (such as phosphorus and nitrogen) for the plants on this Alaskan island. These interactions illustrate a few of the many ways that matter and energy move through ecosystems.  
+What are the dynamics of energy and matter in an ecosystem?
+
+There is a one-way flow of energy through an ecosystem, whereas matter cycles within the ecosystem.
+
+![](images/6db64ec124fc4d9461f5c894b7384a34c137b5f7cf1b35114a1d12c199dec3f3.jpg)
+
+# Concept 55.1: Physical laws govern energy flow and chemical cycling in ecosystems
+
+The “fox island” in Figure 55.1 and its community of organisms are an example of an ecosystem, the sum of all the organisms living in a given area and the abiotic factors with which they interact. An ecosystem can encompass a large area, such as a lake, forest, or island, or a microcosm, such as the space under a fallen log or a small desert spring (Figure 55.2). As with populations and communities, the boundaries of ecosystems are not always discrete. Many ecologists view the entire biosphere as a global ecosystem, a composite of all the local ecosystems on Earth.
+
+## Energy Flow and Chemical Cycling
+
+An ecosystem, regardless of its size, has two key emergent properties: energy flow and chemical cycling (see Figure 55.1). Energy enters most ecosystems as sunlight. This light energy is converted to chemical energy by autotrophs, passed to heterotrophs in the organic compounds of food, and dissipated as heat.
+
+As for chemical cycling, elements such as carbon and nitrogen are passed between the biotic and abiotic components of the ecosystem. Photosynthetic and chemosynthetic organisms take up these elements in inorganic form from the air, soil, and water and incorporate them into organic compounds, some of which are consumed by animals. The elements are returned in inorganic form to the environment by the metabolism of organisms and by the breakdown of organic wastes and dead organisms by decomposers.
+
+Both energy and chemicals are transformed in ecosystems through photosynthesis and feeding relationships. But unlike chemicals, energy cannot be recycled. An ecosystem requires a continuous influx of energy from an external source—in most cases, the sun. As we'll see, energy has a one-way flow through ecosystems, whereas chemicals cycle within them.
+
+Figure 55.2 A desert spring ecosystem.  
+![](images/f27f1e0a1c366abe592e7db2c16dfed6d974e0a9d4d897e402deb05f98cf04f9.jpg)
+
+## Conservation of Energy
+
+Cells transform energy and matter, subject to the laws of thermodynamics (see Concept 8.1). Cell biologists study these transformations within organelles and cells, and measure the amounts of energy and chemical compounds that cross the cells' boundaries. Ecosystem ecologists do the same thing, except in their case the unit of study is an entire ecosystem. By studying feeding relationships among organisms and how organisms interact with their physical environment, ecologists can follow the transformations of energy in an ecosystem and map the movements of chemical elements.
+
+To study energy flow and chemical cycling, ecosystem ecologists use approaches based on laws of physics and chemistry. The first law of thermodynamics states that energy cannot be created or destroyed but only transferred or transformed (see Concept 8.1). Plants and other photosynthetic organisms convert solar energy to chemical energy, but the total amount of energy does not change: The amount of energy stored in organic molecules must equal the total solar energy intercepted by the plant minus the amounts reflected and dissipated as heat. Ecosystem ecologists measure energy transfers within and across ecosystems, in part to understand how many organisms a habitat can support and the amount of food humans can harvest from a site.
+
+The second law of thermodynamics states that every exchange of energy increases the entropy of the universe. One implication of this law is that energy conversions are inefficient. Some energy is always lost as heat. As a result, each unit of energy that enters an ecosystem eventually exits as heat. Thus, energy flows through ecosystems—it does not cycle within them. Because energy flowing through ecosystems is ultimately lost as heat, most ecosystems would vanish if the sun were not continuously providing energy to Earth.
+
+## Conservation of Mass
+
+Matter, like energy, cannot be created or destroyed. This law of conservation of mass is as important for ecosystems as are the laws of thermodynamics. Because mass is conserved, we can determine how much of a chemical element cycles within an ecosystem or is gained or lost by that ecosystem from and to nearby ecosystems over time.
+
+Unlike energy, chemical elements are continually recycled within ecosystems. For example, a carbon atom in $\mathrm{CO}_{2}$ might be released by a decomposer from the soil to the air, where it can be taken up by a blade of grass and incorporated into an organic molecule through photosynthesis. This organic molecule might be consumed by a grazing animal and eventually returned to the soil in the animal's waste.
+
+In addition to cycling within ecosystems, elements can also be gained or lost by an ecosystem. For example, a forest gains mineral nutrients—the essential elements that plants obtain from soil—that enter as dust or as solutes dissolved in rainwater or leached from rocks in the ground. Nitrogen is also supplied through the biological process of nitrogen fixation (see Figure 37.11). In terms of losses, some elements return to the atmosphere as gases, while others are carried out of the ecosystem by moving water or by wind.
+
+Most gains and losses of matter to ecosystems are small compared to the amounts that cycle within them. Even so, the balance between inputs and outputs is important because it determines whether an ecosystem stores or loses a given element. In particular, if a nutrient's outputs exceed its inputs, that nutrient will eventually limit production in that ecosystem. Human activities often change the balance of inputs and outputs considerably, as we'll see later in this chapter and in Concept 56.4.
+
+## Energy, Mass, and Trophic Levels
+
+Ecologists group species in an ecosystem into trophic levels based on feeding relationships (see Concept 54.2). The first trophic level, which ultimately supports all others, consists of autotrophs, also called the primary producers of the ecosystem. Most autotrophs are photosynthetic organisms that use light energy to synthesize sugars and other organic compounds, which they use as fuel for cellular respiration and as building material for growth. The most common autotrophs are plants, algae, and photosynthetic bacteria. However, chemo-synthetic bacteria and archaea are the primary producers in some ecosystems, such as deep-sea hydrothermal vents (see Figure 52.16).
+
+Organisms in trophic levels above the primary producers are heterotrophs (consumers), which depend directly or indirectly on the outputs of primary producers for their source of energy. Herbivores, which eat plants and other primary producers, are primary consumers and occupy the second trophic level. Carnivores that eat herbivores are secondary consumers (third trophic level), and carnivores that eat other carnivores are tertiary consumers (fourth trophic level) or higher trophic level.
+
+Another group of heterotrophs is the decomposers, consumers that get their energy from detritus. Detritus is nonliving organic material, such as the remains of dead organisms, feces, and fallen leaves. Although some animals (such as earthworms) feed on detritus, the main decomposers are prokaryotic organisms and fungi (Figure 55.3). These organisms secrete enzymes that digest organic material; they then absorb the breakdown products. Many
+
+## Figure 55.3 Decomposers.
+
+▼ Fungi decomposing a dead tree
+
+![](images/de66e21517acb3960415734b6d7c55e4b2f26b914a9e42878772c33721ec3cad.jpg)  
+▲ Rod-shaped and spherical bacteria in compost (colorized SEM)
+
+decomposers are in turn eaten by secondary and tertiary consumers. In a forest, for instance, birds eat earthworms that have been feeding on leaf litter and its associated prokaryotic organisms and fungi. As a result, chemicals originally synthesized by plants pass from the plants to leaf litter to decomposers to birds.
+
+By recycling chemical elements to producers, decomposers also play a key role in the trophic relationships of an ecosystem (Figure 55.4). Decomposers convert organic matter from all trophic levels to inorganic compounds usable by primary producers. When the decomposers excrete waste products or die, those inorganic compounds are returned to the soil. Producers can then absorb these elements and use them to synthesize organic compounds. If decomposition stopped, life as we know it would cease as detritus piled up and the supply of ingredients needed to synthesize organic matter was exhausted.
+
+## Figure 55.4 An overview of energy and nutrient dynamics in an ecosystem.
+
+Energy enters, flows through, and exits an ecosystem, whereas matter cycles within it. Energy (orange arrows with dashed outlines) entering from the sun as radiation is transferred as chemical energy through the food web; each of these units of energy ultimately exits as heat radiated into space. Most transfers of matter (blue arrows) through the food web lead eventually to detritus; the nutrients then cycle back to the primary producers.
+
+VISUAL SKILLS In this diagram, one blue arrow leads to the box labeled "Primary consumers," and three blue arrows come out of it. For each of these arrows, describe an example of chemical transfer that the arrow could represent, using specific organisms and other components of an ecosystem in your answer.
+
+For suggested answer, see Appendix A.
+
+![](images/cfb2126eda74bac6d65c68960a6991a64d8ef6fdd01809aaa52004f1ea704615.jpg)
+
+## Concept Check 55.1
+
+1. Why is the transfer of energy in an ecosystem referred to as energy flow, not energy cycling?
+
+2. WHAT IF? You are studying nitrogen cycling on the Serengeti Plain in Africa. During your experiment, a herd of migrating wildebeests grazes through your study plot. What would you need to know to measure their effect on nitrogen balance in the plot?
+
+3. MAKE CONNECTIONS Use the second law of thermodynamics to explain why an ecosystem's energy supply must be continually replenished (see Concept 8.1).
+
+For suggested answers, see Appendix A.
+
+## Concept 55.2: Energy and other limiting factors control primary production in ecosystems
+
+The theme of energy transfer underlies all biological interactions (see Concept 1.1). In most ecosystems, the primary producers are photoautotrophs, and primary production is the amount of light energy converted to chemical energy in the form of organic compounds during a given time period. In ecosystems where the primary producers are chemoautotrophs, the initial energy input is chemical, and the initial products are the organic compounds synthesized by those microorganisms.
+
+## Ecosystem Energy Budgets
+
+In most ecosystems, primary producers use light energy to synthesize energy-rich organic molecules, and consumers acquire their organic fuels secondhand (or even third- or fourth-hand) through food webs (see Figure 54.17). Therefore, the total amount of photosynthetic production sets the “spending limit” for the entire ecosystem’s energy budget.
+
+## The Global Energy Budget
+
+Each day, Earth's atmosphere is bombarded by approximately $10^{22}$ joules of solar radiation (1 J = 0.239 cal). This is enough energy to supply the demands of the entire human population for 16 years at 2022 energy consumption levels. The intensity of the solar energy striking Earth varies with latitude, with the tropics receiving the greatest input (see Figure 52.3). About $50\%$ of incoming solar radiation is absorbed, scattered, or reflected by clouds and dust in the atmosphere. The amount of solar radiation that ultimately reaches Earth's surface limits the possible photosynthetic output of ecosystems.
+
+However, only a small fraction of the sunlight that reaches Earth's surface is actually used in photosynthesis. Much of the radiation strikes materials that don't photosynthesize, such as ice and soil. Of the radiation that does reach photosynthetic organisms, only certain wavelengths are absorbed by photosynthetic pigments (see Figure 10.9); the rest is transmitted, reflected, or lost as heat. As a result, only about $1\%$ of the visible light that strikes photosynthetic organisms is converted to chemical energy. Nevertheless, Earth's primary producers create about 150 billion metric tons $(1.50 \times 10^{14} \mathrm{~kg})$ of organic material each year.
+
+## Gross and Net Production
+
+Total primary production in an ecosystem is known as that ecosystem's gross primary production (GPP)—the amount of energy from light (or chemicals, in chemoautotrophic systems) converted to the chemical energy of organic molecules per unit time. Not all of this production is stored as organic material in the primary producers because they use some of the molecules as fuel for their own cellular respiration. Net primary production (NPP) is equal to gross primary production minus the energy used by the primary producers (autotrophs) for their cellular respiration ( $R_{a}$ , where “a” stands for autotrophs):
+
+$$
+\mathrm{NPP} = \mathrm{GPP} - \mathrm{R} _ {\mathrm{a}}
+$$
+
+On average, NPP is about one-half of GPP. To ecologists, NPP is the key measurement because it represents the storage of chemical energy that will be available to consumers in the ecosystem. Using the analogy of a paycheck, you can think of net primary production (NPP) as the take-home pay, which equals gross primary production (GPP), the gross pay, minus respiration ( $R_{a}$ ), the taxes.
+
+Net primary production can be expressed as energy per unit area per unit time $[J/(m^{2}\cdot yr)$ or as biomass (mass of autotrophs) added per unit area per unit time $[g/(m^{2}\cdot yr)]$ . (Note that biomass is usually expressed in terms of the dry mass of organic material.) An ecosystem's NPP should not be confused with the total biomass of photosynthetic autotrophs present. The net primary production is the rate at which biomass is added—in other words, the amount of new biomass built in a given period of time. Although the total biomass of a forest is large, its NPP may actually be less than that of some grasslands; grasslands do not accumulate as much biomass as forests because animals consume the plants rapidly and because grasses and herbs decompose more quickly than trees do.
+
+Satellites provide a powerful tool for studying global patterns of primary production. Images produced from satellite data show that different ecosystems vary considerably in their NPP. For example, tropical rain forests are among the most productive terrestrial ecosystems and contribute a large portion of the planet's NPP (Figure 55.5). Among marine ecosystems, estuaries, coral reefs, and upwelling zones also have very high NPP, but their contribution to the global total is smaller because these ecosystems cover only about one-tenth the area covered by tropical rain forests. In contrast, while the open oceans are relatively unproductive, their vast size means that together they contribute as much global NPP as terrestrial systems do.
+
+Whereas NPP can be expressed as the amount of new biomass added by producers in a given period of time, net ecosystem production (NEP) is a measure of the biomass accumulation by producers and consumers during that time. NEP is defined as gross primary production minus the total respiration of all organisms in the system $(R_{\mathrm{T}})$ —not just primary producers, as for the calculation of NPP, but decomposers and other heterotrophs as well:
+
+$$
+\mathrm{NEP} = \mathrm{GPP} - \mathrm{R} _ {\mathrm{T}}
+$$
+
+## Figure 55.5 Global net primary production.
+
+The map is based on satellite-collected data, such as amount of sunlight absorbed by vegetation. Note that tropical land areas have the highest rates of production [yellow to red; 2–3 kg carbon/(m $^{2}$ ·yr)].
+
+VISUAL SKILLS Does this map accurately reflect the significance of wetlands, coral reefs, and coastal zones, all highly productive habitats? Explain.
+
+For suggested answer, see Appendix A.
+
+![](images/78b578e8c85d41069796dbfabc97ae44b72b89f151415aa70a2c3ae0d012fae9.jpg)
+
+NEP is useful to ecologists because its value determines whether an ecosystem is gaining or losing carbon over time. A forest may have a positive NPP but still lose carbon if heterotrophs release it as $CO_{2}$ more quickly than primary producers incorporate it into organic compounds.
+
+The most common way to estimate NEP is to measure the net flux (flow) of $CO_{2}$ or $O_{2}$ entering or leaving the ecosystem. If more $CO_{2}$ enters than leaves, the system is storing carbon. Because $O_{2}$ release is directly coupled to photosynthesis and respiration (see Figure 9.1), a system that is giving off $O_{2}$ is also storing carbon.
+
+Next, we'll examine factors that limit production in ecosystems, focusing first on aquatic ecosystems.
+
+## Primary Production in Aquatic Ecosystems
+
+In aquatic (marine and freshwater) ecosystems, both light and nutrients are important in controlling primary production.
+
+## Light Limitation
+
+Because solar radiation drives photosynthesis, you would expect light to be a key variable in controlling primary production in oceans. Indeed, the depth of light penetration affects primary production throughout the photic zone of an ocean or lake (see Figure 52.14). About half of the solar radiation is absorbed in the first 15 m of water. Even in “clear” water, only 5–10% of the radiation may reach a depth of 75 m.
+
+If light were the main variable limiting primary production in the ocean, you would expect production to increase along a gradient from the poles toward the equator, which receives the greatest intensity of light. However, you can see in Figure 55.5 that there is no such gradient. What other factor strongly influences primary production in the ocean?
+
+## Nutrient Limitation
+
+More than light, nutrients limit primary production in most oceans and lakes. A limiting nutrient is the element that must be added for production to increase. The nutrients that most often limit aquatic production are nitrogen and phosphorus. Concentrations of these nutrients in the inorganic molecules that are usable by most producers (such as nitrate, nitrite, ammonium, and phosphate) are typically low in the photic zone because they are rapidly taken up by phytoplankton and because detritus tends to sink.
+
+In one study, detailed in Figure 55.6 on the next page, nutrient enrichment experiments found that nitrogen was limiting phytoplankton growth off the south shore of Long Island, New York. Moreover, as also seen in Figure 55.6, primary production can increase dramatically when the nutrient status of an ecosystem changes from nutrient-poor to nutrient-rich, a process known as eutrophication (from the Greek eutrophos, well nourished). One practical application of this work is in preventing algal blooms caused by excess nitrogen runoff that fertilizes the phytoplankton. Preventing such blooms is critical because their occurrence can lead to the formation of large marine “dead zones,” regions in which oxygen concentrations drop to levels that are fatal to many organisms (see Figure 56.24).
+
+The macronutrients nitrogen and phosphorus are not the only nutrients that limit aquatic production. Several large areas of the ocean have low phytoplankton densities despite relatively high nitrogen concentrations. The Sargasso Sea, a subtropical region of the Atlantic Ocean, has some of the clearest water in the world because of its low phytoplankton density. Nutrient enrichment experiments have revealed that the availability of the micro-nutrient iron limits primary production there (Table 55.1).
+
+Nutrient limitation in the photic zone is particularly severe in tropical areas where a permanent thermocline prevents mixing between shallow, well-lit warm waters and deep, nutrient-rich cold
+
+Table 55.1 Nutrient Enrichment Experiment for Sargasso Sea
+
+<table><tr><td>Nutrients Added to Experimental Culture</td><td>Relative Uptake of  $^{14}\mathrm{C}$  by Cultures*</td></tr><tr><td>None (controls)</td><td>1.00</td></tr><tr><td>Nitrogen (N) + phosphorus (P) only</td><td>1.10</td></tr><tr><td>N + P + metals, excluding iron (Fe)</td><td>1.08</td></tr><tr><td>N + P + metals, including Fe</td><td>12.90</td></tr><tr><td>N + P + Fe</td><td>12.00</td></tr></table>
+
+\*14C uptake by cultures measures primary production.
+
+Data from D. W. Menzel and J. H. Ryther, Nutrients limiting the production of phytoplankton in the Sargasso Sea, with special reference to iron, Deep Sea Research 7:276–281 (1961).
+
+INTERPRET THE DATA The element molybdenum (Mo) is another micronutrient that can limit primary production in the oceans. If the researchers found the following results for additions of Mo, what would you conclude about its relative importance for growth?
+
+$$
+N + P + M o: 6. 0 \quad N + P + F e + M o: 7 2. 0
+$$
+
+## Figure 55.6
+
+# Inquiry: Which nutrient limits phytoplankton production along the coast of Long Island?
+
+Experiment
+
+Pollution from duck farms concentrated near Moriches Bay adds both nitrogen and phosphorus to the coastal water off Long Island, New York. To determine which nutrient limits phytoplankton growth in this area, John Ryther and William Dunstan, of the Woods Hole Oceanographic Institution, cultured the phytoplankton Nannochloris atomus with water collected from several sites, identified as A through G. They added either ammonium $\left(\mathrm{NH}_{4}^{+}\right)$ or phosphate $\left(\mathrm{PO}_{4}^{3-}\right)$ to some of the cultures.
+
+## Results
+
+The addition of ammonium caused heavy phytoplankton growth in the cultures, but the addition of phosphate did not.
+
+![](images/82126b7bba256d7059c62ef1ee4ee90754687b92b66b8e023954ca7cdbe02457.jpg)
+
+## Conclusion
+
+Nitrogen is the nutrient that limits phytoplankton growth in this ecosystem because adding phosphorus did not increase Nannochloris growth, whereas adding nitrogen increased phytoplankton density dramatically.
+
+Data from J. H. Ryther and W. M. Dunstan, Nitrogen, phosphorus, and eutrophication in the coastal marine environment, Science 171:1008–1013 (1971).
+
+WHAT IF? Predict how the results would change if water samples were drawn from areas where new duck farms had greatly increased the amount of pollution in the water. Explain.
+
+For suggested answer, see Appendix A.
+
+and dense waters. Tropical marine primary production is therefore typically low year-round due to nutrient limitation. In temperate zones, a thermocline forms only in the summer; it breaks down in the fall when surface waters cool, become denser, and sink to the bottom, forcing deep nutrient-rich waters to the surface (see Figure 52.17).
+
+Primary production in temperate zones is highest in the spring and fall, when enough sunlight and nutrients for photosynthesis are present in the photic zone. It is limited by nutrients in the summer, and by light availability in the winter. In polar zones, the water column is well mixed throughout the year. Since there are plenty of nutrients in surface water, primary production is very high in polar zones for a short time in the summer, when there is enough sunlight to sustain photosynthesis.
+
+Several other mechanisms can supply nutrients to the photic zone at various latitudes (see Figure 52.16). In coastal areas, runoff from land can bring nutrients and boost primary production, especially near large rivers. In some areas, surface currents generated by dominant winds force surface water away from land or away from other surface currents, creating an area of upwelling, where deep, nutrient-rich waters are forced to the surface. Upwelling zones such as those in the Southern (Antarctic) Ocean, along the equator, and along the coastlines of Peru, California, and western Africa host highly productive ecosystems and some of the largest fisheries in the world. Finally, windblown dust from land can be important in supplying limiting nutrients to some open ocean ecosystems, such as iron to the Sargasso Sea.
+
+Nutrient limitation is also common in freshwater lakes. During the 1970s, scientists showed that the sewage and fertilizer runoff from farms and lawns adds considerable nutrients to lakes, promoting the growth of primary producers. When the primary producers die, their bodies are broken down by aerobic decomposers. This depletes the water of much or all of its oxygen, killing large numbers of fish and causing the loss of many fish species from the lakes.
+
+To prevent such fish kills, scientists need to know which nutrient is responsible. While nitrogen rarely limits primary production in lakes, many whole-lake experiments showed that phosphorus availability limited cyanobacterial growth. This and other ecological research led to the use of phosphate-free detergents and other water quality reforms.
+
+## Primary Production in Terrestrial Ecosystems
+
+At regional and global scales, temperature and moisture are the main factors controlling primary production in terrestrial ecosystems. Primary production is greater in wetter ecosystems, as shown for the plot of NPP and annual precipitation in Figure 55.7. NPP also increases with temperature and the amount of solar energy available to drive evaporation and transpiration. As a result, tropical rain forests, with their warm, wet conditions that promote plant growth, are the most productive terrestrial ecosystems. In contrast, low-productivity systems are generally dry, like many deserts and arctic tundra. Between these extremes lie the temperate forest and grassland ecosystems, with moderate climates and intermediate productivity.
+
+Nutrients can also affect NPP in terrestrial ecosystems. A dramatic example occurred after the arctic fox (see Figure 55.1) was introduced onto islands near Alaska. The presence of foxes had the surprising effect of converting grasslands to tundra, thereby lowering NPP. The foxes fed voraciously on the islands' seabirds, decreasing their density almost 100-fold. Fewer seabirds meant less bird guano (waste), a primary source of essential
+
+Forests in the American southwest are experiencing hotter droughts caused by rising temperatures in the summer and reduced snowfall in the winter. The drought-stress index indicates how greatly trees are stressed by these conditions; rising values of this index correspond to increasing drought. Higher drought stress correlates with increasing area burned by wildfires (top graph) and affected by bark beetles (bottom graph), which target drought-stressed trees with weakened defenses.
+
+![](images/6af15637812acbecdd227fe01dbc89a0c9f5864ab2240eabe8bff8db1c23ce25.jpg)
+
+Figure 55.7 A global relationship between NPP and mean annual precipitation for terrestrial ecosystems.  
+![](images/243e801e577ae78fe30086ac624e9a0f25516cca2ce8f997d1e8b7b79a9d0c8e.jpg)
+
+nutrients for plants on the islands. Researchers suspected that the scarcity of nutrients reduced the growth of nutrient-hungry grasses, favoring instead the slower-growing plants typical of tundra. To test this explanation, they added fertilizer to plots of tundra on one of the fox-infested islands. Three years later, the fertilized plots had reverted back to grassland.
+
+## Nutrient Limitations and Adaptations That Reduce Them
+
+EVOLUTION As in aquatic systems, nitrogen and phosphorus are the nutrients that most commonly limit terrestrial production. Globally, nitrogen limits plant growth most. Phosphorus limitations are common in older soils where phosphate molecules have been leached away by water, such as in many tropical ecosystems. Note that adding a nonlimiting nutrient, even one that is scarce, will not stimulate production. Conversely, adding more of the limiting nutrient will increase production until some other nutrient becomes limiting.
+
+Various adaptations have evolved in plants that can increase their uptake of limiting nutrients. One important adaptation is the mutualism between plant roots and nitrogen-fixing bacteria. Another is the mycorrhizal association between plant roots and fungi that supply phosphorus and other limiting elements to plants (see Figure 37.14). Plant roots also have hairs and other anatomical features that increase the area of soil in contact with the roots (see Figures 33.8 and 35.3). Many plants release enzymes and other substances into the soil that increase the availability of limiting nutrients; such substances include phosphatases, which cleave a phosphate group from larger molecules, and certain molecules (called chelating agents) that make micronutrients such as iron more soluble in the soil.
+
+## Effects of Climate Change on Production
+
+As we've seen, climatic factors such as temperature and precipitation affect terrestrial NPP. Thus, we might expect that climate change could affect production in terrestrial ecosystems—and it does. For example, satellite data showed that from 1982 to 1999, NPP increased by $6\%$ in terrestrial ecosystems. Nearly half of this increase occurred in the tropical forests of the Amazon, where
+
+changing climate patterns had caused cloud cover to decrease, thereby increasing the amount of solar energy available to primary producers. Since 2000, however, these gains in NPP have been erased. This reversal was affected by another aspect of climate change: a series of major droughts in the Southern Hemisphere.
+
+Effects of climate change on NPP can also be seen in the impact of “hotter droughts” on wildfires and insect outbreaks. Consider forests in the American Southwest. In recent decades, the forests of this region have experienced droughts driven by climate warming and changing patterns of precipitation. These ongoing droughts, in turn, have led to increases in the area burned by wildfires and the area affected by outbreaks of bark beetles such as the mountain pine beetle Dendroctonus ponderosae (Figure 55.8). As a result, tree mortality has increased and NPP has decreased in these forests.
+
+Climate change can also affect whether an ecosystem stores or loses carbon over time. As discussed earlier, net ecosystem production, or NEP, reflects the total biomass accumulation that occurs during a given period of time. When NEP > 0, the ecosystem gains more carbon than it loses; such ecosystems store carbon and are said to be a carbon sink. In contrast, when NEP < 0, the ecosystem loses more carbon than it gains; such ecosystems are a carbon source.
+
+Figure 55.8 Climate change, wildfires, and insect outbreaks.  
+![](images/ce827f38de7898d454661b8ac4f446a07a99e0d20c1b494573aee329b11ba2d9.jpg)
+
+## Problem-Solving Exercise
+
+## Can an insect outbreak threaten a forest's ability to absorb $\mathrm{CO}_{2}$ from the atmosphere?
+
+One way to combat climate change is to plant trees, since trees absorb large amounts of $CO_{2}$ from the atmosphere, converting it to biomass through photosynthesis. But what happens to the carbon stored as biomass in trees when an insect population explodes in number? Such insect outbreaks have become more frequent with climate change.
+
+![](images/d52743c8723a52bd599e90e474c2b681f013132143698d6431d4bae79ebed5a2.jpg)
+
+A tree with dozens of “pitch tubes,” indications of a damaging outbreak of mountain pine beetles (inset).
+
+In this exercise, you will test whether an outbreak of the mountain pine beetle (Dendroctonus ponderosae) alters the amount of $CO_{2}$ that a forest ecosystem absorbs from and releases to the atmosphere.
+
+## Your Approach
+
+The principle guiding your investigation is that every ecosystem both absorbs and releases $CO_{2}$ . Net ecosystem production (NEP) indicates whether an ecosystem is a carbon sink (absorbing more $CO_{2}$ from the atmosphere than it releases; this occurs
+
+Recent research shows that climate change can cause an ecosystem to switch from a carbon sink to a carbon source. For example, in some arctic ecosystems, climate warming has increased the metabolic activities of soil microorganisms, causing an uptick in the amount of $CO_{2}$ produced in cellular respiration. In these ecosystems, the total amount of $CO_{2}$ produced in cellular respiration now exceeds what is absorbed in photosynthesis. As a result, these ecosystems—which once were carbon sinks—are now carbon sources. When this happens, an ecosystem may contribute to climate change by releasing more $CO_{2}$ than it absorbs. Indeed, a 2017 study found that with climate warming, large regions of tundra in Alaska now release more $CO_{2}$ than they absorb—and for the years 2013 and 2014, the entire state of Alaska released more $CO_{2}$ than it absorbed. In the Problem-Solving Exercise, you can examine how outbreaks of an insect population may affect the NEP of forest ecosystems.
+
+when NEP > 0) or a carbon source (releasing more CO₂ than it absorbs; NEP < 0). To find out if the mountain pine beetle affects NEP, you will determine a forest's NEP before and after a recent outbreak of this insect.
+
+## Your Data
+
+From 2000 to 2006, an outbreak of the mountain pine beetle killed millions of trees in British Columbia, Canada. The impact of such outbreaks on whether forests gain carbon (NEP > 0) or lose carbon (NEP < 0) was poorly understood. To find out, ecologists estimated net primary production (NPP) and cellular respiration by decomposers and other heterotrophs ( $R_{h}$ ), before and after the outbreak. These data allow forest NEP to be calculated from the equation $NEP = NPP - R_{h}$ .
+
+<table><tr><td></td><td>NPP [g/(m2·yr)]</td><td> ${\mathrm{R}}_{\mathrm{h}}$   $\left\lbrack  {\mathrm{g}/\left( {{\mathrm{m}}^{2} \cdot  \mathrm{{yr}}}\right) }\right\rbrack$ </td><td>NEP [g/(m2·yr)]</td></tr><tr><td>Before outbreak</td><td>440</td><td>408</td><td></td></tr><tr><td>After outbreak</td><td>400</td><td>424</td><td></td></tr></table>
+
+## Your Analysis
+
+1. Complete the table by calculating the values of NEP before and after the outbreak. Before the outbreak, was the forest a carbon sink or a carbon source? After the outbreak?
+
+2. NEP is often defined as $NEP = GPP - R_{T}$ , where GPP is gross primary production and $R_{T}$ equals cellular respiration by autotrophs ( $R_{a}$ ) plus cellular respiration by heterotrophs ( $R_{h}$ ). Use the relation $NPP = GPP - R_{a}$ to show that the two equations for NEP introduced in this exercise are equivalent.
+
+3. Based on your results in question 1, predict whether the mountain pine beetle outbreak could have feedback effects on the global climate. Explain.
+
+Instructors: A version of this Problem-Solving Exercise can be assigned in Mastering Biology.
+
+## Concept Check 55.2
+
+1. Why is only a small portion of the solar energy that strikes Earth's atmosphere stored by primary producers?
+
+2. How can ecologists experimentally determine the factor that limits primary production in an ecosystem?
+
+3. WHAT IF? Suppose a forest was heavily burned by a wildfire. Predict how NEP of this forest would change over time.
+
+4. MAKE CONNECTIONS Explain how nitrogen and phosphorus, the nutrients that most often limit primary production, are necessary for the Calvin cycle to function in photosynthesis (see Concept 10.3).
+
+For suggested answers, see Appendix A.
+
+## Concept 55.3: Energy transfer between trophic levels is typically only 10% efficient
+
+The amount of chemical energy in consumers' food that is converted to their own new biomass during a given period is called the secondary production of the ecosystem. Consider the transfer of organic matter from primary producers to herbivores, the primary consumers. In most ecosystems, herbivores eat only a small fraction of plant material produced; globally, they consume only about one-sixth of total plant production. Moreover, they cannot digest all the plant material that they do eat, as anyone who has walked through a field where cattle have been grazing will attest. Most of an ecosystem's production is eventually consumed by decomposers. Let's analyze the process of energy transfer more closely.
+
+## Production Efficiency
+
+We'll begin by examining secondary production in one organism—a caterpillar. When a caterpillar feeds on a leaf, only about 33 J out of 200 J, or one-sixth of the potential energy in the leaf, is used for secondary production, or growth (Figure 55.9). The caterpillar stores some of the remaining energy in organic compounds that will be used for cellular respiration and passes the rest in its feces. The energy in the feces remains in the ecosystem temporarily, but most of it is lost as heat after the feces are consumed by decomposers. The energy used for the caterpillar's respiration is also eventually lost from the ecosystem as heat. Only the chemical energy stored
+
+Figure 55.9 Energy partitioning within a link of the food chain.  
+![](images/7c2c21c1ca2739141fc463502bf86badac59be26b251c0ac0df844408b929fe9.jpg)  
+INTERPRET THE DATA What percentage of the energy in the caterpillar's food is actually used for secondary production (growth)?
+
+by herbivores as biomass, through growth or the production of offspring, is available as food to secondary consumers.
+
+We can measure the efficiency of animals as energy transformers using the following equation:
+
+$$
+\text { Production   efficiency } = \frac {\text { Net   secondary   production } \times 100 \%}{\text { Assimilation   of   primary   production }}
+$$
+
+Net secondary production is the amount of energy an organism has consumed and used for growth and reproduction. Assimilation consists of the total amount of energy an organism has consumed that is absorbed inside the body (not passed as feces) and used for growth, reproduction, and respiration. Production efficiency, therefore, is the percentage of energy stored in assimilated food that is used for growth and reproduction, not respiration. For the caterpillar in Figure 55.9, production efficiency is 33%; 67 J of the 100 J of assimilated energy is used for respiration. (The 100 J of energy lost as undigested material in feces does not count toward assimilation.) Birds and mammals typically have low production efficiencies, in the range of 1–3%, because they use so much energy in maintaining a constant, high body temperature. Fishes, which are mainly ectothermic (see Concept 40.3), have production efficiencies around 10%. Insects and microorganisms are even more efficient, with production efficiencies averaging 40% or more.
+
+## Trophic Efficiency and Ecological Pyramids
+
+Let's scale up now from the production efficiencies of individual consumers to the flow of energy through trophic levels.
+
+Trophic efficiency is the percentage of production transferred from one trophic level to the next. Trophic efficiencies must always be less than production efficiencies because they take into account not only the energy lost through respiration and contained in feces, but also the energy in organic material in a lower trophic level that is not consumed by the next trophic level. Trophic efficiencies range from roughly 5% to 20% in different ecosystems, but on average are only about 10%. In other words, 90% of the energy available at one trophic level typically is not transferred to the next. This loss is multiplied over the length of a food chain. If 10% of available energy is transferred from primary producers to primary consumers, such as caterpillars, and 10% of that energy is transferred to secondary consumers (carnivores), then only 1% of net primary production is available to secondary consumers (10% of 10%). In the Scientific Skills Exercise, you can calculate trophic efficiency and other measures of energy flow in a salt marsh ecosystem.
+
+The loss of energy with each transfer in a food chain can be represented by an energy pyramid, in which the net productions of different trophic levels are arranged in tiers (Figure 55.10). The width of each tier is proportional to the net production, expressed in joules, of each trophic level. The highest level, which represents top-level predators, contains relatively few individuals. The small population size typical of top predators is one reason they tend to be vulnerable to
+
+## Scientific Skills Exercise Interpreting Quantitative Data
+
+How Efficient Is Energy Transfer in a Salt Marsh Ecosystem? In a classic experiment, John Teal studied the flow of energy through the producers, consumers, and decomposers in a salt marsh. In this exercise, you will use the data from this study to calculate some measures of energy transfer between trophic levels in this ecosystem.
+
+How the Study Was Done Teal measured the amount of solar radiation entering a salt marsh in Georgia over a year. He also measured the aboveground biomass of the dominant primary producers, which were grasses, as well as the biomass of the dominant consumers, including insects, spiders, and crabs, and of the detritus that flowed out of the marsh to the surrounding coastal waters. To determine the amount of energy in each unit of biomass, he dried the biomass, burned it in a calorimeter, and measured the amount of heat produced.
+
+Data from the Study
+
+<table><tr><td>Form of Energy</td><td>Amount [kcal/(m2·yr)]*</td></tr><tr><td>Solar radiation</td><td>600,000</td></tr><tr><td>Gross grass production</td><td>34,580</td></tr><tr><td>Net grass production</td><td>6,585</td></tr><tr><td>Gross insect production</td><td>305</td></tr><tr><td>Net insect production</td><td>81</td></tr><tr><td>Detritus leaving marsh</td><td>3,671</td></tr><tr><td colspan="2">* 1 kcal = 4.184 kJ</td></tr></table>
+
+Data from J. M. Teal, Energy flow in the salt marsh ecosystem of Georgia, Ecology 43:614 – 624 (1962).
+
+This example assumes a trophic efficiency of 10% for each link in the food chain. Notice that primary producers convert only about 1% of the energy available to them to net primary production.
+
+![](images/9ad7167992a534923b56467279e2c9f84625869fd1dae4c581bc01da00607d69.jpg)
+
+Figure 55.10 An idealized pyramid of energy.  
+![](images/dc72456987ccddf741de753243d26aa33333b9484cabc7d181c55a6c52bb5a45.jpg)
+
+## INTERPRET THE DATA
+
+1. What percentage of solar energy is incorporated into the marsh as gross primary production? As net primary production?
+
+2. How much energy is lost by primary producers as respiration in this ecosystem? How much is lost as respiration by the insect population?
+
+3. If all of the detritus leaving the marsh is plant material, what percentage of all net primary production leaves the marsh as detritus each year?
+
+Instructors: A version of this Scientific Skills Exercise can be assigned in Mastering Biology.
+
+extinction (see Concept 56.2) and to the evolutionary consequences of small population size (see Concept 23.3).
+
+One ecological consequence of low trophic efficiencies is represented in a biomass pyramid, in which each tier represents the total dry mass of all organisms in one trophic level. Most biomass pyramids narrow sharply from primary producers at the base to top-level carnivores at the apex because energy transfers between trophic levels are so inefficient (Figure 55.11a). Certain aquatic ecosystems, however, have inverted biomass pyramids, in which primary consumers outweigh the producers (Figure 55.11b).
+
+Such inverted biomass pyramids occur because the producers—phytoplankton—have very high turnover rates. They are consumed so quickly by the zooplankton that their total biomass remains at comparatively low levels. However, because the phytoplankton continually replace their biomass (via growth and reproduction) at such a rapid rate, they can support a biomass of zooplankton that is larger than their own biomass. Phytoplankton still have much higher production than zooplankton, and the pyramid of energy for this ecosystem is still bottom-heavy, like the one shown in Figure 55.10.
+
+Figure 55.11 Pyramids of biomass.  
+Numbers denote the dry mass of all organisms at each trophic level.  
+![](images/883d1ad9a310fdc626013b70c31dd52361e6045b02ac17d93dcaf5dd1ae84388.jpg)  
+(b) In some aquatic ecosystems, such as the English Channel, a small biomass of primary producers (phytoplankton) supports a larger biomass of primary consumers (zooplankton).
+
+The low trophic efficiency of ecosystems has two main ecological consequences. First, it typically limits the length of food chains to a maximum of four or five trophic levels. Only about 0.1% of the chemical energy fixed by photosynthesis can flow through a food web to a consumer such as the hawk in Figure 55.10, and only about 0.01% could be passed on a fifth trophic level above the hawk. There is simply not enough energy to sustain viable populations at higher trophic levels. Second, the number of trophic levels in a food chain, along with the primary production of a system, influences the amount of energy and biomass of top predators. Areas that have high primary production and short food chains have the highest amount of energy and biomass at the top of the food web. Indeed, some of the world's greatest densities of large whales occur in upwelling areas where high nutrient levels support exceptionally high primary production, and where the food chain can be as short as three levels, from large phytoplankton to krill to baleen whales (see Figure 54.17). In terrestrial habitats, areas that have higher primary production tend to have longer food chains, since the amount of energy stored in primary producers is high enough to support viable populations of consumers at a fourth or even fifth trophic level. In areas that have low primary production, such as the arctic tundra, large populations of top predators can still be sustained because there are few steps in the food chain (see Figure 55.19).
+
+The dynamics of energy flow through ecosystems also have implications for human consumers. For example, eating meat is a relatively inefficient way of tapping photosynthetic production. The same pound of soybeans that a person could eat for protein produces only a fifth of a pound of beef or less when fed to a cow.
+
+Agriculture worldwide could, in fact, feed many more people and require less land if we all fed more efficiently—as primary consumers, eating plant material.
+
+## Concept Check 55.3
+
+1. Explain the difference between trophic efficiency and production efficiency.
+
+2. If a small rodent that eats plant seeds containing 200 J of energy uses 145 J of that energy for respiration and excretes 50 J in its feces, how much of this food goes to the rodent's growth? What is its production efficiency? Compare these numbers to the ones in Figure 55.9. Suggest explanations for the differences in assimilation rate, respiration rate, and production efficiency.
+
+3. WHAT IF? Tobacco leaves contain nicotine, a poisonous compound that is energetically expensive for the plant to make. What advantage might the plant gain by using some of its resources to produce nicotine?
+
+For suggested answers, see Appendix A.
+
+## Concept 55.4: Biological and geochemical processes cycle nutrients and water in ecosystems
+
+Since chemical elements are available only in limited amounts in ecosystems, life depends on the recycling of these essential chemical elements. Much of an organism's chemical stock is replaced continuously as nutrients are assimilated and waste products are released. When the organism dies, the atoms in its body are returned to the atmosphere, water, or soil by decomposers. By liberating nutrients from organic matter, decomposition replenishes the pools of inorganic nutrients that plants and other autotrophs use to build new organic matter.
+
+## Decomposition and Nutrient Cycling Rates
+
+Decomposers are heterotrophs that get their energy from detritus. Their growth is controlled by the same factors that limit primary production in ecosystems, including temperature, moisture, and nutrient availability. Decomposers usually grow faster and decompose material more quickly in warmer ecosystems (Figure 55.12). In tropical rain forests, most organic material decomposes in a few months to a few years, whereas in temperate forests, decomposition takes 4 to 6 years, on average. The difference is largely the result of the higher temperatures and more abundant precipitation in tropical rain forests.
+
+## Figure 55.12
+
+# Inquiry: How does temperature affect litter decomposition in an ecosystem?
+
+## Experiment
+
+Researchers with the Canadian Forest Service placed identical samples of organic material—litter—on the ground in 21 sites across Canada. Three years later, they returned to see how much of each sample had decomposed.
+
+## Results
+
+The mass of litter in the warmest ecosystem decreased four times faster than in the coldest ecosystem.
+
+![](images/636881b287769a6dbc6d0f7b1e97436b3d939348dfc7231bc182623fc6f59010.jpg)
+
+## Conclusion
+
+Decomposition rate increases with temperature across much of Canada.
+
+Data from J. A. Trofymow and the CIDET Working Group, The Canadian Intersite Decomposition Experiment: Project and Site Establishment Report (Information Report BC-X-378), Natural Resources Canada, Canadian Forest Service, Pacific Forestry Centre (1998) and T. R. Moore et al., Litter decomposition rates in Canadian forests, Global Change Biology 5:75–82 (1999).
+
+WHAT IF? What factors other than temperature might also have varied across these 21 sites? How might this variation have affected the interpretation of the results?
+
+For suggested answer, see Appendix A.
+
+Because decomposition in a tropical rain forest is rapid, relatively little organic material accumulates as leaf litter on the forest floor; about $75\%$ of the ecosystem's nutrients is present in the woody trunks of trees, and only about $10\%$ is contained in the soil. Thus, the relatively low concentrations of some nutrients in the soil of tropical rain forests result from a short cycling time, not from a lack of these elements in the ecosystem. In temperate forests, where decomposition is much slower, the soil may
+
+contain as much as 50% of all the organic material in the ecosystem. The nutrients that are present in temperate forest detritus and soil may remain there for years before plants assimilate them.
+
+Decomposition on land is also slower when conditions are either too dry for decomposers to thrive or too wet to supply them with enough oxygen. Decomposers grow especially poorly in ecosystems that are both cold and wet, such as peatlands. As a result, net primary production greatly exceeds the rate of decomposition in such ecosystems, causing them to store large amounts of organic matter.
+
+In aquatic ecosystems, deep waters below the photic zone usually contain high levels of nutrients, since organisms that sink there are decomposed, yet there are no photosynthetic organisms to use up nutrients. Thus, processes that bring deep water to the surface, such as seasonal mixing or wind-driven upwelling of deep water, boost primary production in surface waters. Additionally, large rivers carry a lot of nutrients from terrestrial ecosystems to the coastal zone and boost primary production where they meet seawater.
+
+## Biogeochemical Cycles
+
+Because nutrient cycles involve both biotic and abiotic components, they are called biogeochemical cycles. We can recognize two general scales of biogeochemical cycles: global and local. Gaseous forms of carbon, oxygen, sulfur, and nitrogen occur in the atmosphere, and these elements' cycles are essentially global. For example, some of the carbon atoms a plant acquires from the air as $CO_{2}$ may have been released into the atmosphere by the respiration of an organism in a distant locale. Other elements—including phosphorus, potassium, and calcium—are too heavy to occur as gases at Earth's surface, although they are transported in dust. In terrestrial ecosystems, these elements cycle more locally, absorbed from the soil by plant roots and eventually returned to the soil by decomposers. In aquatic systems, however, they cycle more broadly as dissolved forms carried in currents.
+
+Let's first look at a general model of nutrient cycling that includes reservoirs where elements exist and processes that transfer elements between them (Figure 55.13). The nutrients in living organisms and detritus (reservoir A) are available to other organisms when consumers feed and when decomposers consume nonliving organic matter. The low pH and low oxygen levels found in the waterlogged sediments of swamps can inhibit decomposition, leading to the formation of peat. When this occurs, organic materials from dead organisms can be transferred from reservoir A to reservoir B; eventually, peat may be converted to fossil fuels such as coal or oil. Inorganic materials that are dissolved in water or present in soil or air (reservoir C) are available for use. Although most organisms cannot directly tap into the inorganic elements tied up in rocks (reservoir D), these nutrients may slowly become available through weathering and erosion.
+
+# Visualizing Biogeochemical Cycles
+
+## Figure 55.13
+
+![](images/54a7e302fe57532db1e65dc7569a1b1371af81e80be1a12e1e497c7d519dddc9.jpg)  
+Instructors: Additional questions related to this Visualizing Figure can be assigned in Mastering Biology.  
+For suggested answers, see Appendix A.
+
+Figure 55.14, on the next two pages, provides a detailed look at the cycling of water, carbon, nitrogen, and phosphorus. When you study each cycle, consider which steps are driven primarily by biological processes. For the carbon cycle, for instance, plants, animals, and other organisms control most of the key steps, including photosynthesis and decomposition. For the water cycle, however, purely physical processes control many key steps, such as evaporation from the oceans. Note also that human actions, such as the burning of fossil fuels and the production of fertilizers, have had major effects on the global cycling of carbon and nitrogen.
+
+## Case Study: Nutrient Cycling in the Hubbard Brook Experimental Forest
+
+Since 1963, ecologist Gene Likens and colleagues have been studying nutrient cycling at the Hubbard Brook Experimental Forest in the White Mountains of New Hampshire. Their research site is a
+
+deciduous forest that grows in six small valleys, each drained by a single creek. Impermeable bedrock underlies the soil of the forest.
+
+The research team first determined the mineral budget for each of six valleys by measuring the input and outflow of several key nutrients. They collected rainfall at several sites to measure the amount of water and dissolved minerals added to the ecosystem. To monitor the loss of water and minerals, they constructed a small concrete dam with a V-shaped spillway across the creek at the bottom of each valley (Figure 55.15a, after you turn the page). They found that about 60% of the water added to the ecosystem as rainfall and snow exits through the stream, and the remaining 40% is lost by evapotranspiration.
+
+Preliminary studies confirmed that internal cycling conserved most of the mineral nutrients in the system. For example, only about 0.3% more calcium ( $Ca^{2+}$ ) leaves a valley via its creek than is added by rainwater, and this small net loss is probably replaced by chemical decomposition of the bedrock. During most years, the forest even registers small net gains of a few mineral nutrients, including nitrogen.
+
+# Exploring Water and Nutrient Cycling
+
+## Figure 55.14
+
+Examine each cycle closely, considering the major reservoirs of water, carbon, nitrogen, and phosphorus and the processes that drive each cycle. The widths of the arrows in the diagrams approximately reflect the relative contribution of each process to the movement of water or a nutrient in the biosphere.
+
+## The Water Cycle
+
+Biological importance Water is essential to all organisms, and its availability influences the rates of ecosystem processes, particularly primary production and decomposition in terrestrial ecosystems.
+
+Forms available to life All organisms are capable of exchanging water directly with their environment. Liquid water is the primary physical phase in which water is used, though some organisms can harvest water vapor. Freezing of soil water can limit water availability to terrestrial plants.
+
+Reservoirs The oceans contain 97% of the water in the biosphere. Approximately 2% is bound in glaciers and polar ice caps, and the remaining 1% is in lakes, rivers, and groundwater, with a negligible amount in the atmosphere.
+
+Key processes The main processes driving the water cycle are evaporation of liquid water by solar energy, condensation of water vapor into clouds, and precipitation. Transpiration by terrestrial plants also moves large volumes of water into the atmosphere. Surface and groundwater flow can return water to the oceans, completing the water cycle.
+
+![](images/1725027befa7c32f4166ddde9c389ab40fe4cb0ed99ba428956976637e02202a.jpg)
+
+## The Carbon Cycle
+
+![](images/a54bb8f29ae8597d5bb705ba5fcdbba8fc0d1e34d622c4ae6f2ad0ae836c281b.jpg)
+
+Biological importance Carbon forms the framework of the organic molecules essential to all organisms.
+
+Forms available to life Photosynthetic organisms utilize $CO_{2}$ during photosynthesis and convert the carbon to organic forms that are used by consumers, including animals, fungi, and unicellular heterotrophs.
+
+Reservoirs The major reservoirs of carbon include fossil fuels, soils, the sediments of aquatic ecosystems, the oceans (dissolved $CO_{2}$ and organic compounds), the biomass of living organisms, and the atmosphere ( $CO_{2}$ ). The largest reservoir is sedimentary rocks such as limestone; however, carbon remains in this pool for long periods of time. All organisms are capable of returning carbon directly to their environment in its original form ( $CO_{2}$ ) through respiration.
+
+Key processes Photosynthesis by plants, multicellular algae (seaweeds), and phytoplankton removes substantial amounts of atmospheric $CO_{2}$ each year. This quantity is approximately equal to the $CO_{2}$ added to the atmosphere through cellular respiration by producers and consumers. The burning of fossil fuels and wood is adding significant amounts of additional $CO_{2}$ to the atmosphere. Over geologic time, volcanoes are also a substantial source of $CO_{2}$ .
+
+## The Nitrogen Cycle
+
+Biological importance Nitrogen is part of amino acids, proteins, and nucleic acids and is often a limiting plant nutrient.
+
+![](images/8db695b38858847a03d3d8590b1013bd0da127e4f9c9de9318a2cacfa299b70a.jpg)
+
+## The Phosphorus Cycle
+
+Biological importance Organisms require phosphorus as a major constituent of nucleic acids, phospholipids, and ATP and other energy-storing molecules and as a mineral constituent of bones and teeth.
+
+Forms available to life The most biologically important inorganic form of phosphorus is phosphate ( $PO_{4}^{3-}$ ), which plants absorb and use in the synthesis of organic compounds.
+
+Reservoirs The largest accumulations of phosphorus are in sedimentary rocks of marine origin. There are also large quantities of phosphorus in soil, in the oceans (in dissolved form), and in organisms. Because soil particles bind $PO_{4}^{3-}$ , the recycling of phosphorus tends to be quite localized in ecosystems.
+
+Key processes Weathering of rocks gradually adds $PO_{4}^{3-}$ to soil; some leaches into groundwater and surface water and may eventually reach the sea. Phosphate taken up by producers and incorporated into biological molecules may be eaten by consumers. Phosphate is returned to soil or water by either decomposition of biomass or excretion by consumers. Because there are no significant phosphorus-containing gases, only relatively small amounts of phosphorus move through the atmosphere, usually in the forms of dust and sea spray.
+
+Forms available to life Plants can assimilate (use) two inorganic forms of nitrogen—ammonium $\left(\mathrm{NH}_{4}^{+}\right)$ and nitrate $\left(\mathrm{NO}_{3}^{-}\right)$ —and some organic forms, such as amino acids. Various bacteria can use all of these forms as well as nitrite $\left(\mathrm{NO}_{2}^{-}\right)$ . Animals can use only organic forms of nitrogen.
+
+Reservoirs The main reservoir of nitrogen is the atmosphere, which is 80% free nitrogen gas ( $N_{2}$ ). The other reservoirs of inorganic and organic nitrogen compounds are soils and the sediments of lakes, rivers, and oceans; surface water and groundwater; and the biomass of living organisms.
+
+Key processes The major pathway for nitrogen to enter an ecosystem is via nitrogen fixation, the conversion of $N_{2}$ to forms that can be used to synthesize organic nitrogen compounds. Certain bacteria, as well as lightning and volcanic activity, fix nitrogen naturally. Nitrogen inputs from human activities now outpace natural inputs on land. Two major contributors are industrially produced fertilizers and
+
+![](images/4e3b1fe69e3038bc85ffdd2b14ea24f25088b759f59d7806ad6d3f19c38b81c9.jpg)
+
+legume crops that fix nitrogen via bacteria in their root nodules. Other bacteria in soil convert nitrogen to different forms. Examples include nitrifying bacteria, which convert ammonium to nitrate, and denitrifying bacteria, which convert nitrate to nitrogen gas. Human activities also release large quantities of reactive nitrogen gases, such as nitrogen oxides, to the atmosphere.
+
+![](images/51b16041268606c11e7cb1766e63f6a4acbc6078d5221781537a563a29b85bd0.jpg)
+
+Figure 55.15 Nutrient cycling in the Hubbard Brook Experimental Forest.  
+![](images/1d7f098d85fb9e7c3cec6216edad9c8fde9f2c28da9299a9bbe9acd2ae01178b.jpg)  
+(a) Concrete dams and weirs built across streams at the bottom of watersheds enabled researchers to monitor the outflow of water and nutrients from the ecosystem.
+
+![](images/ca0566b7678321887493381fc06b7769d0181401bfba2fe70bc19bf930fd4d5b.jpg)  
+(b) One watershed was clear-cut to study the effects of the loss of vegetation on drainage and nutrient cycling. All of the original plant material was left in place to decompose.
+
+![](images/8c76e714c171f249b5f0d1287876f4fecc9a05c3e7ae0cd198fbf591445a45f2.jpg)  
+(c) The concentration of nitrate in runoff from the deforested watershed was 60 times greater than in a control (unlogged) watershed.  
+VISUAL SKILLS If this graph were redrawn so that the y-axis had a consistent scale, what information would be emphasized compared to the above graph? What information might be lost or harder to see? Explain.  
+Instructors: A related Experimental Inquiry Tutorial can be assigned in Mastering Biology.
+
+For suggested answer, see Appendix A.
+
+Experimental deforestation of a watershed dramatically increased the flow of water and minerals leaving the watershed (Figure 55.15b). Over 3 years, water runoff from the newly deforested watershed was 30–40% greater than in a control watershed, apparently because there were no plants to absorb and transpire water from the soil. Most remarkable was the loss of nitrate, whose concentration in the creek increased 60-fold, reaching levels considered unsafe for drinking water (Figure 55.15c). The Hubbard Brook deforestation study showed that the amount of nutrients leaving an intact forest ecosystem is controlled mainly by the plants. Retaining nutrients in an
+
+ecosystem helps to maintain the productivity of the system as well as to avoid problems elsewhere, such as algal blooms caused by excess nutrient runoff that enters a downstream ecosystem.
+
+## Interview
+
+Interview with Eugene Likens: Co-founder of the Hubbard Brook Forest Study (eTextbook only)
+
+![](images/691aa3af9f1cb09cfebf2109de0a992228c75f7264942e81b7cd7bf57a94b38c.jpg)
+
+## Concept Check 55.4
+
+1. DRAW IT For each of the four biogeochemical cycles in Figure 55.14, draw a simple diagram that shows one possible path for an atom of that chemical from abiotic to biotic reservoirs and back.
+
+2. Why does deforestation of a watershed increase the concentration of nitrates in streams draining the watershed?
+
+3. WHAT IF? Why is nutrient availability in a tropical rain forest particularly vulnerable to logging?
+
+For suggested answers, see Appendix A.
+
+## Concept 55.5: Restoration ecologists return degraded ecosystems to a more natural state
+
+Ecosystems can recover naturally from many disturbances (including the experimental deforestation at Hubbard Brook) through the stages of ecological succession (see Concept 54.3). Sometimes, however, that recovery takes centuries, particularly when humans have degraded the environment. Tropical areas that are cleared for farming may quickly become unproductive because of nutrient losses. Mining activities may last for several decades, and the lands are often abandoned in a degraded state. Ecosystems can also be damaged by salts that build up in soils from irrigation and by toxic chemicals or oil spills. Biologists increasingly are called on to help restore and repair damaged ecosystems.
+
+Restoration ecologists seek to initiate or speed up the recovery of degraded ecosystems. One of the basic assumptions is that environmental damage is at least partly reversible. This optimistic view must be balanced by a second assumption—that ecosystems are not infinitely resilient. Restoration ecologists
+
+therefore work to identify and manipulate the processes that most limit recovery of ecosystems from disturbances. Where disturbance is so severe that restoring all of a habitat is impractical, ecologists try to reclaim as much of a habitat or ecological process as possible, within the limits of the time and money available to them.
+
+In extreme cases, the physical structure of an ecosystem may need to be restored before biological restoration can occur. If a stream was straightened to channel water quickly through a suburb, ecologists may reconstruct a meandering channel to slow down the flow of water eroding the stream bank. To restore an open-pit mine, engineers may grade the site with heavy equipment to reestablish a gentle slope, spreading topsoil when the slope is in place (Figure 55.16).
+
+After any physical reconstruction of the ecosystem is complete, the next step is biological restoration. The long-term objective of restoration is to return an ecosystem as closely as possible to its predisturbance state. Figure 55.17, on the next page, explores four ambitious and successful restoration projects. These and the many other such projects throughout the world often employ two key strategies: bioremediation and biological augmentation.
+
+## Bioremediation
+
+Using organisms—usually plants, fungi, or prokaryotic organisms—to detoxify polluted ecosystems is known as bioremediation. Some plants and lichens adapted to soils containing heavy metals can accumulate high concentrations of toxic metals such as lead and cadmium in their tissues. Restoration ecologists can introduce such species to sites polluted by mining and other human activities and then harvest these organisms to remove the metals from the ecosystem. For instance, researchers in the United Kingdom have discovered a lichen species that grows on soil polluted with uranium dust left over from mining. The lichen concentrates uranium in a dark pigment, making it useful as a biological monitor and potentially as a remediator.
+
+Figure 55.16 A gravel and clay mine site in New Jersey before and after restoration.  
+![](images/98099cd86422f09579abd3c1adb0f93a4eea8fc845807d229437da4782bdba30.jpg)  
+(a) In 1991, before restoration
+
+![](images/67aec265cd46eac465e92e8ce3a1e40b596e4d325e686755e4cb8f2bf81f1233.jpg)  
+(b) In 2010, several years after restoration
