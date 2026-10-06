@@ -1,37 +1,27 @@
-# MinerU 书籍解析包
+# MinerU 书籍库
 
-这里保存从 Seafile「中转站 / 图书库」导出的 13 份原始 ZIP，合计 **5.16 GiB**。原始 ZIP 没有重新压缩或修改。
+13 份书籍解析包已解压到 `书籍/`，一本书一个文件夹。
 
-**[打开全部 ZIP 下载页](https://github.com/kazewwk/test/releases/tag/mineru-books-2026-10-07)**
+可以直接在代码仓库阅读 Markdown、章节、图片和解析 JSON，`git clone` 也会取得这些文件。
 
-ZIP 附件保存在本项目的 GitHub Releases；仓库中保存书籍目录和 SHA-256 校验文件。多数 ZIP 超过 GitHub 普通文件的 100 MiB 限制，因此没有直接提交到 Git 仓库。
+| 书籍 | 全文 | 章节 | 文件数 |
+| --- | --- | --- | ---: |
+| [01_Campbell_Biology](%E4%B9%A6%E7%B1%8D/01_Campbell_Biology/) | [全文](%E4%B9%A6%E7%B1%8D/01_Campbell_Biology/merged/full.md) | [章节](%E4%B9%A6%E7%B1%8D/01_Campbell_Biology/chapters/) | 6,721 |
+| [02_生物化学原理](%E4%B9%A6%E7%B1%8D/02_%E7%94%9F%E7%89%A9%E5%8C%96%E5%AD%A6%E5%8E%9F%E7%90%86/) | [全文](%E4%B9%A6%E7%B1%8D/02_%E7%94%9F%E7%89%A9%E5%8C%96%E5%AD%A6%E5%8E%9F%E7%90%86/merged/full.md) | [章节](%E4%B9%A6%E7%B1%8D/02_%E7%94%9F%E7%89%A9%E5%8C%96%E5%AD%A6%E5%8E%9F%E7%90%86/chapters/) | 6,409 |
+| [03_基因的分子生物学_第七版](%E4%B9%A6%E7%B1%8D/03_%E5%9F%BA%E5%9B%A0%E7%9A%84%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6_%E7%AC%AC%E4%B8%83%E7%89%88/) | [全文](%E4%B9%A6%E7%B1%8D/03_%E5%9F%BA%E5%9B%A0%E7%9A%84%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6_%E7%AC%AC%E4%B8%83%E7%89%88/merged/full.md) | [章节](%E4%B9%A6%E7%B1%8D/03_%E5%9F%BA%E5%9B%A0%E7%9A%84%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6_%E7%AC%AC%E4%B8%83%E7%89%88/chapters/) | 2,052 |
+| [04_新概念英语1_课堂笔记_课后练习](%E4%B9%A6%E7%B1%8D/04_%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD1_%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0_%E8%AF%BE%E5%90%8E%E7%BB%83%E4%B9%A0/) | [全文](%E4%B9%A6%E7%B1%8D/04_%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD1_%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0_%E8%AF%BE%E5%90%8E%E7%BB%83%E4%B9%A0/%E5%85%A8%E6%96%87.md) | [章节](%E4%B9%A6%E7%B1%8D/04_%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD1_%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0_%E8%AF%BE%E5%90%8E%E7%BB%83%E4%B9%A0/%E7%AB%A0%E8%8A%82/) | 354 |
+| [05_新概念英语2_课堂笔记](%E4%B9%A6%E7%B1%8D/05_%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD2_%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0/) | [全文](%E4%B9%A6%E7%B1%8D/05_%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD2_%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0/%E5%85%A8%E6%96%87.md) | [章节](%E4%B9%A6%E7%B1%8D/05_%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD2_%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0/%E7%AB%A0%E8%8A%82/) | 459 |
+| [06_新概念英语第一册_按课拆分](%E4%B9%A6%E7%B1%8D/06_%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC%E4%B8%80%E5%86%8C_%E6%8C%89%E8%AF%BE%E6%8B%86%E5%88%86/) | [全文](%E4%B9%A6%E7%B1%8D/06_%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC%E4%B8%80%E5%86%8C_%E6%8C%89%E8%AF%BE%E6%8B%86%E5%88%86/%E5%90%88%E5%B9%B6%E7%BB%93%E6%9E%9C/full.md) | [章节](%E4%B9%A6%E7%B1%8D/06_%E6%96%B0%E6%A6%82%E5%BF%B5%E8%8B%B1%E8%AF%AD%E7%AC%AC%E4%B8%80%E5%86%8C_%E6%8C%89%E8%AF%BE%E6%8B%86%E5%88%86/%E7%AB%A0%E8%8A%82/) | 4,595 |
+| [07_植物学全彩版_第三版](%E4%B9%A6%E7%B1%8D/07_%E6%A4%8D%E7%89%A9%E5%AD%A6%E5%85%A8%E5%BD%A9%E7%89%88_%E7%AC%AC%E4%B8%89%E7%89%88/) | [全文](%E4%B9%A6%E7%B1%8D/07_%E6%A4%8D%E7%89%A9%E5%AD%A6%E5%85%A8%E5%BD%A9%E7%89%88_%E7%AC%AC%E4%B8%89%E7%89%88/merged/full.md) | [章节](%E4%B9%A6%E7%B1%8D/07_%E6%A4%8D%E7%89%A9%E5%AD%A6%E5%85%A8%E5%BD%A9%E7%89%88_%E7%AC%AC%E4%B8%89%E7%89%88/chapters/) | 1,008 |
+| [08_植物生理学_第五版](%E4%B9%A6%E7%B1%8D/08_%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6_%E7%AC%AC%E4%BA%94%E7%89%88/) | [全文](%E4%B9%A6%E7%B1%8D/08_%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6_%E7%AC%AC%E4%BA%94%E7%89%88/merged/full.md) | [章节](%E4%B9%A6%E7%B1%8D/08_%E6%A4%8D%E7%89%A9%E7%94%9F%E7%90%86%E5%AD%A6_%E7%AC%AC%E4%BA%94%E7%89%88/chapters/) | 3,500 |
+| [09_现代分子生物学](%E4%B9%A6%E7%B1%8D/09_%E7%8E%B0%E4%BB%A3%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/) | [全文](%E4%B9%A6%E7%B1%8D/09_%E7%8E%B0%E4%BB%A3%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/merged/full.md) | [章节](%E4%B9%A6%E7%B1%8D/09_%E7%8E%B0%E4%BB%A3%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6/chapters/) | 1,178 |
+| [10_生物化学_上册_朱圣庚_徐长法](%E4%B9%A6%E7%B1%8D/10_%E7%94%9F%E7%89%A9%E5%8C%96%E5%AD%A6_%E4%B8%8A%E5%86%8C_%E6%9C%B1%E5%9C%A3%E5%BA%9A_%E5%BE%90%E9%95%BF%E6%B3%95/) | [全文](%E4%B9%A6%E7%B1%8D/10_%E7%94%9F%E7%89%A9%E5%8C%96%E5%AD%A6_%E4%B8%8A%E5%86%8C_%E6%9C%B1%E5%9C%A3%E5%BA%9A_%E5%BE%90%E9%95%BF%E6%B3%95/merged/full.md) | [章节](%E4%B9%A6%E7%B1%8D/10_%E7%94%9F%E7%89%A9%E5%8C%96%E5%AD%A6_%E4%B8%8A%E5%86%8C_%E6%9C%B1%E5%9C%A3%E5%BA%9A_%E5%BE%90%E9%95%BF%E6%B3%95/chapters/) | 2,105 |
+| [11_生物化学_下册_朱圣庚_徐长法](%E4%B9%A6%E7%B1%8D/11_%E7%94%9F%E7%89%A9%E5%8C%96%E5%AD%A6_%E4%B8%8B%E5%86%8C_%E6%9C%B1%E5%9C%A3%E5%BA%9A_%E5%BE%90%E9%95%BF%E6%B3%95/) | [全文](%E4%B9%A6%E7%B1%8D/11_%E7%94%9F%E7%89%A9%E5%8C%96%E5%AD%A6_%E4%B8%8B%E5%86%8C_%E6%9C%B1%E5%9C%A3%E5%BA%9A_%E5%BE%90%E9%95%BF%E6%B3%95/merged/full.md) | [章节](%E4%B9%A6%E7%B1%8D/11_%E7%94%9F%E7%89%A9%E5%8C%96%E5%AD%A6_%E4%B8%8B%E5%86%8C_%E6%9C%B1%E5%9C%A3%E5%BA%9A_%E5%BE%90%E9%95%BF%E6%B3%95/chapters/) | 2,084 |
+| [12_细胞生物学_第5版](%E4%B9%A6%E7%B1%8D/12_%E7%BB%86%E8%83%9E%E7%94%9F%E7%89%A9%E5%AD%A6_%E7%AC%AC5%E7%89%88/) | [全文](%E4%B9%A6%E7%B1%8D/12_%E7%BB%86%E8%83%9E%E7%94%9F%E7%89%A9%E5%AD%A6_%E7%AC%AC5%E7%89%88/merged/full.md) | [章节](%E4%B9%A6%E7%B1%8D/12_%E7%BB%86%E8%83%9E%E7%94%9F%E7%89%A9%E5%AD%A6_%E7%AC%AC5%E7%89%88/chapters/) | 1,031 |
+| [13_遗传学_基因和基因组分析_第八版](%E4%B9%A6%E7%B1%8D/13_%E9%81%97%E4%BC%A0%E5%AD%A6_%E5%9F%BA%E5%9B%A0%E5%92%8C%E5%9F%BA%E5%9B%A0%E7%BB%84%E5%88%86%E6%9E%90_%E7%AC%AC%E5%85%AB%E7%89%88/) | [全文](%E4%B9%A6%E7%B1%8D/13_%E9%81%97%E4%BC%A0%E5%AD%A6_%E5%9F%BA%E5%9B%A0%E5%92%8C%E5%9F%BA%E5%9B%A0%E7%BB%84%E5%88%86%E6%9E%90_%E7%AC%AC%E5%85%AB%E7%89%88/merged/full.md) | [章节](%E4%B9%A6%E7%B1%8D/13_%E9%81%97%E4%BC%A0%E5%AD%A6_%E5%9F%BA%E5%9B%A0%E5%92%8C%E5%9F%BA%E5%9B%A0%E7%BB%84%E5%88%86%E6%9E%90_%E7%AC%AC%E5%85%AB%E7%89%88/chapters/) | 2,297 |
 
-| 序号 | 原始文件名 | 大小 | 下载 |
-| --- | --- | ---: | --- |
-| 1 | Campbell Biology - MinerU Official VLM OCR - 20260721-120337.zip | 1838.88 MiB | [ZIP](https://github.com/kazewwk/test/releases/download/mineru-books-2026-10-07/01-campbell-biology.zip) |
-| 2 | principles_biochemistry_MinerU3.4.4_分章解析.zip | 373.99 MiB | [ZIP](https://github.com/kazewwk/test/releases/download/mineru-books-2026-10-07/02-principles-biochemistry.zip) |
-| 3 | 基因的分子生物学_第七版_MinerU3.4.4_分章解析.zip | 382.33 MiB | [ZIP](https://github.com/kazewwk/test/releases/download/mineru-books-2026-10-07/03-molecular-biology-of-the-gene-7e.zip) |
-| 4 | 新概念英语1_课堂笔记_课后练习.zip | 18.34 MiB | [ZIP](https://github.com/kazewwk/test/releases/download/mineru-books-2026-10-07/04-new-concept-english-1-notes-exercises.zip) |
-| 5 | 新概念英语2_课堂笔记.zip | 20.89 MiB | [ZIP](https://github.com/kazewwk/test/releases/download/mineru-books-2026-10-07/05-new-concept-english-2-notes.zip) |
-| 6 | 新概念英语第一册_MinerU_VLM_按课拆分.zip | 133.43 MiB | [ZIP](https://github.com/kazewwk/test/releases/download/mineru-books-2026-10-07/06-new-concept-english-1-lessons.zip) |
-| 7 | 植物学全彩版_第三版_MinerU3.4.4_分章解析.zip | 229.62 MiB | [ZIP](https://github.com/kazewwk/test/releases/download/mineru-books-2026-10-07/07-botany-3e.zip) |
-| 8 | 植物生理学_第五版_MinerU3.4.4_分章解析.zip | 441.05 MiB | [ZIP](https://github.com/kazewwk/test/releases/download/mineru-books-2026-10-07/08-plant-physiology-5e.zip) |
-| 9 | 现代分子生物学_MinerU3.4.4_分章解析.zip | 254.80 MiB | [ZIP](https://github.com/kazewwk/test/releases/download/mineru-books-2026-10-07/09-modern-molecular-biology.zip) |
-| 10 | 生物化学_上册_朱圣庚_徐长法_MinerU_分章解析.zip | 312.52 MiB | [ZIP](https://github.com/kazewwk/test/releases/download/mineru-books-2026-10-07/10-biochemistry-vol1-zhu-xu.zip) |
-| 11 | 生物化学_下册_朱圣庚_徐长法_MinerU_分章解析.zip | 437.95 MiB | [ZIP](https://github.com/kazewwk/test/releases/download/mineru-books-2026-10-07/11-biochemistry-vol2-zhu-xu.zip) |
-| 12 | 细胞生物学_第5版_MinerU_分章解析.zip | 221.95 MiB | [ZIP](https://github.com/kazewwk/test/releases/download/mineru-books-2026-10-07/12-cell-biology-5e.zip) |
-| 13 | 遗传学_基因和基因组分析_第八版_MinerU3.4.4_分章解析.zip | 620.45 MiB | [ZIP](https://github.com/kazewwk/test/releases/download/mineru-books-2026-10-07/13-genetics-genes-genomes-8e.zip) |
+所有仓库文件严格小于 100,000,000 字节（100 MB）。超过限值的 9 个 PDF 已无损分片，每片不超过 95 MB。运行 `python3 scripts/restore_split_files.py`，在 `restored-pdfs/` 中还原完整 PDF，并核对 SHA-256。
 
-[机器可读清单](books/manifest.json)记录原始文件名、下载文件名、精确字节数和 SHA-256。[SHA256SUMS.txt](books/SHA256SUMS.txt)用于下载后的完整性检查。
+每本书的 `仓库文件校验.json` 记录文件大小、SHA-256 和 Git blob SHA-1。
 
-下载 ZIP 时 GitHub 使用表中链接的英文文件名，Release 附件标签和清单保留原始文件名。
-
-在所有 ZIP 的下载目录中运行：
-
-```sh
-sha256sum -c SHA256SUMS.txt
-```
-
-`git clone` 获取目录和脚本；ZIP 内容需要从上面的 Release 链接另行下载。
-
-解析包的导入流程会先检查原始文件，再核对 GitHub 保存的字节数和 SHA-256；13 份全部通过后才发布 Release。
+[13 份原始 ZIP 下载页](https://github.com/kazewwk/test/releases/tag/mineru-books-2026-10-07)仍提供完整原包，原始压缩包的[目录与校验值](books/manifest.json)也保留在仓库中。
