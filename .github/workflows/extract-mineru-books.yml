@@ -1,0 +1,43 @@
+name: Extract thirteen MinerU books into Git
+
+"on":
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/extract-mineru-books.yml
+  workflow_dispatch:
+
+concurrency:
+  group: mineru-books-extraction
+  cancel-in-progress: false
+
+jobs:
+  extract-and-publish:
+    if: github.repository == 'kazewwk/test'
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    permissions:
+      contents: write
+    steps:
+      - name: Read the exact import program
+        env:
+          COMMIT: ${{ github.sha }}
+        run: |
+          git init --quiet .
+          git remote add origin https://github.com/kazewwk/test.git
+          git fetch --quiet --depth 1 origin "$COMMIT"
+          git checkout --quiet --detach FETCH_HEAD
+      - name: Ensure room in this temporary runner
+        run: |
+          python3 - <<'PY'
+          import shutil, subprocess
+          if shutil.disk_usage('.').free < 14_000_000_000:
+              subprocess.run(['sudo', 'rm', '-rf', '/usr/local/lib/android', '/usr/share/dotnet', '/opt/ghc'], check=True)
+          if shutil.disk_usage('.').free < 14_000_000_000:
+              raise SystemExit('This temporary runner needs at least 14 GB of free disk space.')
+          print('Free runner bytes:', shutil.disk_usage('.').free)
+          PY
+      - name: Extract, split, publish, and verify all book files
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/publish_mineru_books.py
