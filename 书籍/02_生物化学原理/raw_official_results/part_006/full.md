@@ -1,0 +1,3090 @@
+![](images/ca15452ff0b429002aaf66e38d97bce4c47820158479fc52c5c26db381ed591c.jpg)
+
+# INTRODUCTION TO METABOLISM
+
+13.1 Bioenergetics and Thermodynamics 466
+
+13.2 Chemical Logic and Common Biochemical Reactions 472
+
+13.3 Phosphoryl Group Transfers and ATP 479
+
+13.4 Biological Oxidation-Reduction Reactions 488
+
+13.5 Regulation of Metabolic Pathways 496
+
+Living cells and organisms must perform work to stay alive, to grow, and to reproduce. The ability to harness energy and to channel it into biological work is a fundamental property of all living organisms; it must have been acquired very early in cellular evolution. Modern organisms carry out a remarkable variety of energy transductions, conversions of one form of energy to another. They use the chemical energy in fuels to bring about the synthesis of complex, highly ordered macromolecules from simple precursors. They also convert the chemical energy of fuels into concentration gradients and electrical gradients, into motion and heat, and, in a few organisms such as fireflies and some deep-sea fish, into light. Photosynthetic organisms transduce light energy into all these other forms of energy.
+
+The chemical mechanisms that underlie biological energy transductions have fascinated and challenged biologists for centuries. The French chemist Antoine Lavoisier recognized that animals somehow transform chemical fuels (foods) into heat and that this process of respiration is essential to life. He observed that
+
+in general, respiration is nothing but a slow combustion of carbon and hydrogen, which is entirely similar to that which occurs in a lighted lamp or candle, and that, from this point of view, animals that respire are true combustible bodies that burn and consume themselves.... One may say that this analogy between combustion and respiration has not escaped the notice of the poets, or rather the philosophers of antiquity, and which they had expounded and interpreted. This fire stolen from heaven, this torch of Prometheus, does not only represent an ingenious and poetic idea, it is a faithful picture of the operations of nature, at least for animals that breathe; one may therefore say, with the ancients, that the torch of life lights itself at the moment the infant breathes for the first time, and it does not extinguish itself except at death.\*
+
+We now understand much of the chemistry underlying that "torch of life." Biological energy transductions
+
+![](images/3fe17a076cc1902da6650ea2fd3b762f51fa872d573ca91833918d83fe342770.jpg)
+
+A portrait by Jacques Louis David of Antoine Lavoisier (1743–1794) in the laboratory with chemist Marie Anne Pierrette Paulze (1758–1836), his wife. [The Metropolitan Museum of Art, New York. Purchase, Mr. and Mrs. Charles Wrightsman Gift, in honor of Everett Fahy, 1977]
+
+obey the same chemical and physical laws that govern all other natural processes, and many of the types of chemical reactions that occur in living organisms have been long known to organic chemists. One unique feature of cellular chemistry is its exquisitely sensitive regulation by a variety of mechanisms that respond to changes in the external and internal circumstances of the cell and organism.
+
+In this chapter we lay out the foundational principles for understanding the reactions of metabolism that follow in Part II. We first review the laws of thermodynamics and the quantitative relationships among free energy, enthalpy, and entropy. We then review the common types of biochemical reactions that occur in living cells, reactions that harness, store, transfer, and release the energy taken up by organisms from their surroundings. Our focus then shifts to reactions that have special roles in biological energy exchanges, particularly those involving the cofactors ATP (for phosphoryl transfers) and NADH (for electron transfers). Finally, we look at the most common of the strategies for regulating biochemical reactions. Watch for examples of these principles as you read this chapter:
+
+## P1 The chemical changes and energy transductions in living organisms follow the laws of thermodynamics.
+
+P2 The free-energy change is the maximum energy made available to do work when a chemical reaction occurs. If two reactions can be combined to yield a third reaction, the overall free energy change is the sum of the two. Cells accomplish energy-requiring chemical work by coupling an energy-releasing (exergonic) reaction such as the cleavage of ATP to an endergonic reaction (which requires energy input).
+
+## P3 Although thousands of different chemical reactions occur in the biosphere, most of them fall within a small set of reaction types.
+
+P4 ATP is the universal energy currency in living organisms. Transfer of its phosphoryl group to a water molecule or metabolic intermediates provides the energetic push for muscle contraction, the pumping of solutes against concentration gradients, and the synthesis of complex molecules.
+
+P5 Oxidation-reduction reactions indirectly provide much of the energy needed to make ATP. Reduced substrates such as glucose are oxidized in several steps, with the energy of oxidation steps conserved in the form of a reduced cofactor, NADH. Energy stored in NADH is used to drive the synthesis of ATP.
+
+P6 To respond to changes in external circumstances, cells must regulate enzyme activities, by changing either the number of enzyme molecules or the catalytic activity of preexisting enzyme molecules.
+
+![](images/111f6fa7c1604230a26432a8669832698f42165efd97e8a2f6521f2dede512ba.jpg)
+
+## 13.1 Bioenergetics and Thermodynamics
+
+Bioenergetics is the quantitative study of energy transductions—changes of one form of energy into another—that occur in living cells, and of the nature and function of the chemical processes underlying these transductions. Although many of the principles of thermodynamics have been introduced in earlier chapters and may be familiar to you, a review of the quantitative aspects of these principles is useful here.
+
+## Biological Energy Transformations Obey the Laws of Thermodynamics
+
+Many quantitative observations made by physicists and chemists on the interconversion of different forms of energy led, in the nineteenth century, to the formulation of two fundamental laws of thermodynamics. The first law is the principle of the conservation of energy: for any physical or chemical change, the total amount of energy in the universe remains constant; energy may change form or it may be transported from one region to another, but it cannot be created or destroyed. The second law of thermodynamics, which can be stated in several forms, says that the universe always tends toward increasing disorder: in all natural processes, the entropy of the universe increases.
+
+![](images/d383bd443c432dae9f4d552946a8f67a1e519b6926b3c6e638b3be9a813645bc.jpg)  
+[ScienceCartoonsPlus.com]
+
+Living organisms consist of collections of molecules much more highly organized than the surrounding materials from which they are constructed, and organisms maintain and produce order, seemingly immune to the second law of thermodynamics. But living organisms do not violate the second law; they operate strictly within it. To discuss the application of the second law to biological systems, we must first define those systems and their surroundings.
+
+The reacting system is the collection of matter that is undergoing a particular chemical or physical process; it may be an organism, a cell, or two reacting compounds. The reacting system and its surroundings together constitute the universe. In the laboratory, some chemical or physical processes can be carried out in isolated or closed systems, in which no material or energy is exchanged with the surroundings. Living cells and organisms, however, are open systems, exchanging both material and energy with their surroundings; living systems are never at equilibrium with their surroundings, and the constant transactions between system and surroundings explain how organisms can create order within themselves while operating within the second law of thermodynamics.
+
+In Chapter 1 (p. 21) we defined three thermodynamic quantities that describe the energy changes occurring in a chemical reaction:
+
+Free energy, G (for J. Willard Gibbs), expresses the amount of energy capable of doing work during a reaction at constant temperature and pressure. When a reaction proceeds with the release of free energy (that is, when the system changes so as to possess less free energy), the free-energy change, $\Delta G$ , has a negative value and the reaction is said to be exergonic. In endergonic reactions, the system gains free energy and $\Delta G$ is positive.
+
+Enthalpy, H, is the heat content of the reacting system. It reflects the number and kinds of chemical bonds (covalent and noncovalent) in the reactants and products. When a chemical reaction releases heat, it is said to be exothermic; the heat content of the products is less than that of the reactants, and the change in enthalpy, $\Delta H$ , has, by convention, a negative value. Reacting systems that take up heat from their surroundings are endothermic and have positive values of $\Delta H$ .
+
+Entropy, S, is a quantitative expression for the randomness or disorder in a system (see Box 1-3). When the products of a reacting system are less complex and more disordered than the reactants, the reaction is said to proceed with a gain in entropy.
+
+The units of $\Delta G$ and $\Delta H$ are joules/mole or calories/mole (recall that 1 cal = 4.184 J); units of entropy are joules/mole • Kelvin (J/mol • K) (Table 13-1).
+
+Under the conditions existing in biological systems (including constant temperature and pressure), changes in free energy, enthalpy, and entropy are related to each other quantitatively by the equation
+
+## TABLE 13-1 Some Physical Constants and Units Used in Thermodynamics
+
+Boltzmann constant, $k = 1.381 \times 10^{-23}$ J/K
+Avogadro's number, $N = 6.022 \times 10^{23}$ mol $^{-1}$ Faraday constant, F = 96,480 J/V·mol
+Gas constant, R = 8.315 J/mol·K
+(= 1.987 cal/mol·K)
+
+Units of $\Delta G$ and $\Delta H$ are J/mol (or cal/mol)
+Units of $\Delta S$ are J/mol·K (or cal/mol·K)
+1 cal = 4.184 J
+
+Units of absolute temperature, T, are Kelvin, K
+25 °C = 298 K
+At 25 °C, RT = 2.478 kJ/mol
+(= 0.592 kcal/mol)
+
+$$
+\Delta G = \Delta H - T \Delta S\tag{13-1}
+$$
+
+in which $\Delta G$ is the change in Gibbs free energy of the reacting system, $\Delta H$ is the change in enthalpy of the system, T is the absolute temperature, and $\Delta S$ is the change in entropy of the system. By convention, $\Delta S$ has a positive sign when entropy increases and $\Delta H$ , as noted above, has a negative sign when heat is released by the system to its surroundings. Either of these conditions, both of which are typical of energetically favorable processes, tends to make $\Delta G$ negative. In fact, $\Delta G$ of a spontaneously reacting system is always negative.
+
+P1 The second law of thermodynamics states that the entropy of the universe increases during all chemical and physical processes, but it does not require that the entropy increase take place in the reacting system itself. The order produced within cells as they grow and divide is more than compensated for by the disorder they create in their surroundings in the course of growth and division (see Box 1-3, case 2). In short, living organisms preserve their internal order by taking from their surroundings free energy in the form of nutrients or sunlight, and returning to their surroundings an equal amount of energy as heat and entropy.
+
+Cells are isothermal systems — they function at essentially constant temperature (and also function at constant pressure). Heat flow is not a source of energy for cells, because heat can do work only as it passes to a zone or an object at a lower temperature. The energy that cells can and must use is free energy, described by the Gibbs free-energy function G, which allows prediction of the direction of chemical reactions, their exact equilibrium position, and the amount of work they can (in theory) perform at constant temperature and pressure. Heterotrophic cells acquire free energy from nutrient molecules, and photosynthetic cells acquire it from absorbed solar radiation. Both kinds of cells transform this free energy into ATP and other energy-rich compounds capable of providing energy for biological work at constant temperature.
+
+## Standard Free-Energy Change Is Directly Related to the Equilibrium Constant
+
+The composition of a reacting system (a mixture of chemical reactants and products) tends to continue changing until equilibrium is reached. (In the case of an organism, equilibrium is reached only after death and complete decay.) At the equilibrium concentration of reactants and products, the rates of the forward and reverse reactions are exactly equal and no further net change occurs in the system. The concentrations of reactants and products at equilibrium define the equilibrium constant, $K_{eq}$ (p. 23). In the general reaction
+
+$$
+a \mathrm{A} + b \mathrm{B} \rightleftharpoons c \mathrm{C} + d \mathrm{D}
+$$
+
+where a, b, c, and d are the number of molecules of A, B, C, and D participating, the equilibrium constant is given by
+
+$$
+K _ {\mathrm{eq}} = \frac {[ \mathrm{C} ] _ {\mathrm{eq}} ^ {c} [ \mathrm{D} ] _ {\mathrm{eq}} ^ {d}}{[ \mathrm{A} ] _ {\mathrm{eq}} ^ {a} [ \mathrm{B} ] _ {\mathrm{eq}} ^ {b}}\tag{13-2}
+$$
+
+where $[A]_{eq}$ , $[B]_{eq}$ , $[C]_{eq}$ , and $[D]_{eq}$ are the molar concentrations of the reaction components at the point of equilibrium.
+
+When a reacting system is not at equilibrium, the tendency to move toward equilibrium represents a driving force, the magnitude of which can be expressed as the free-energy change for the reaction, $\Delta G$ . Under standard conditions of temperature and pressure and when reactants and products are initially present at 1 M concentrations or, for gases, at partial pressures of 101.3 kilopascals (kPa), or 1 atm, the force driving the system toward equilibrium is defined as the standard free-energy change, $\Delta G^{\circ}$ . By this definition, the standard state for reactions that involve hydrogen ions is $[H^{+}] = 1$ M, or pH 0. Most biochemical reactions, however, occur in well-buffered aqueous solutions near pH 7; both the pH and the concentration of water (55.5 M) are essentially constant.
+
+KEY CONVENTION For convenience of calculations, biochemists define a different standard state from that used in chemistry and physics: in the biochemical standard state, $[H^{+}]$ is $10^{-7}$ M (pH 7) and $[H_{2}O]$ is 55.5 M. For reactions that involve $Mg^{2+}$ (which include most of those with ATP as a reactant), $[Mg^{2+}]$ in solution is commonly taken to be constant at 1 mM.
+
+Physical constants based on this biochemical standard state are called standard transformed constants and are written with a prime (such as $\Delta G^{\prime\circ}$ and $K_{eq}^{\prime}$ ) to distinguish them from the untransformed constants used by chemists and physicists. (Note that most other textbooks use the symbol $\Delta G^{\circ}$ rather than $\Delta G^{\circ}$ . Our use of $\Delta G^{\circ}$ , recommended by an international committee of chemists and biochemists, is intended to emphasize that the transformed free-energy change, $\Delta G^{\circ}$ , is the criterion for equilibrium.) For simplicity, we will hereafter refer to these transformed constants as standard free-energy changes and standard equilibrium constants.
+
+KEY CONVENTION In another simplifying convention used by biochemists, when $H_{2}O$ , $H^{+}$ , and/or $Mg^{2+}$ are reactants or products, their concentrations are not included in equations such as Equation 13-2 but are instead incorporated into the constants $K_{eq}'$ and $\Delta G^{\circ}$ .
+
+Just as $K_{\mathrm{eq}}'$ is a physical constant characteristic for each reaction, so too is $\Delta G'^{\circ}$ a constant. As we noted in Chapter 6, there is a simple relationship between $K_{\mathrm{eq}}'$ and $\Delta G'^{\circ}$ :
+
+$$
+\Delta G ^ {\prime \circ} = - R T \ln K _ {\mathrm{eq}} ^ {\prime}\tag{13-3}
+$$
+
+P1 The standard free-energy change of a chemical reaction is simply an alternative mathematical way of expressing its equilibrium constant. Table 13-2 shows the relationship between $\Delta G^{\prime \circ}$ and $K_{\mathrm{eq}}^{\prime}$ . If the equilibrium constant for a given chemical reaction is 1.0, the standard free-energy change of that reaction is 0.0 (the natural logarithm of 1.0 is zero). If $K_{\mathrm{eq}}^{\prime}$ of a reaction is greater than 1.0, its $\Delta G^{\prime \circ}$ is negative. If $K_{\mathrm{eq}}^{\prime}$ is less than 1.0, $\Delta G^{\prime \circ}$ is positive. Because the relationship between $\Delta G^{\prime \circ}$ and $K_{\mathrm{eq}}^{\prime}$ is exponential, relatively small changes in $\Delta G^{\prime \circ}$ correspond to large changes in $K_{\mathrm{eq}}^{\prime}$ .
+
+It may be helpful to think of the standard free-energy change in another way. $\Delta G^{\circ}$ is the difference between the free-energy content of the products and the free-energy content of the reactants, under standard conditions. When $\Delta G^{\circ}$ is negative, the products contain less free energy than the reactants and the reaction will proceed spontaneously under standard conditions; all chemical reactions tend to go in the direction that results in a decrease in the free energy of the system. A positive value of $\Delta G^{\circ}$ means that the products of the reaction contain more free energy than the reactants, and this reaction will tend to go in the reverse direction if we start with 1.0 M concentrations of all components (standard conditions). Table 13-3 summarizes these points.
+
+TABLE 13-2 Relationship between Equilibrium Constants and Standard Free-Energy Changes of Chemical Reactions
+
+<table><tr><td rowspan="2"> $K'_{eq}$ </td><td colspan="2"> $\Delta G''_o$ </td></tr><tr><td>(kJ/mol)</td><td>(kcal/mol) $^a$ </td></tr><tr><td> $10^3$ </td><td>-17.1</td><td>-4.1</td></tr><tr><td> $10^2$ </td><td>-11.4</td><td>-2.7</td></tr><tr><td> $10^1$ </td><td>-5.7</td><td>-1.4</td></tr><tr><td>1</td><td>0.0</td><td>0.0</td></tr><tr><td> $10^{-1}$ </td><td>5.7</td><td>1.4</td></tr><tr><td> $10^{-2}$ </td><td>11.4</td><td>2.7</td></tr><tr><td> $10^{-3}$ </td><td>17.1</td><td>4.1</td></tr><tr><td> $10^{-4}$ </td><td>22.8</td><td>5.5</td></tr><tr><td> $10^{-5}$ </td><td>28.5</td><td>6.8</td></tr><tr><td> $10^{-6}$ </td><td>34.2</td><td>8.2</td></tr></table>
+
+$^{a}$ Although joules and kilojoules are the standard units of energy and are used throughout this text, biochemists and nutritionists sometimes express $\Delta G^{\circ}$ values in kilocalories per mole. We have therefore included values in both kilojoules and kilocalories in this table and in Tables 13-4 and 13-6. To convert kilojoules to kilocalories, divide the number of kilojoules by 4.184.
+
+<table><tr><td>TABLE 13-3</td><td colspan="2">Relationships among  $K_{eq}'$ ,  $\Delta G'^{o}$ , and the Direction of Chemical Reactions</td></tr><tr><td>When  $K_{eq}'$  is...</td><td> $\Delta G'^{o}$  is...</td><td>Starting with all components at 1 M, the reaction ...</td></tr><tr><td>&gt;1.0</td><td>negative</td><td>proceeds forward</td></tr><tr><td>1.0</td><td>zero</td><td>is at equilibrium</td></tr><tr><td>&lt;1.0</td><td>positive</td><td>proceeds in reverse</td></tr></table>
+
+## WORKED EXAMPLE 13-1 Calculation of $\Delta G^{*}$
+
+Calculate the standard free-energy change of the reaction catalyzed by the enzyme phosphoglucomutase,
+
+$$
+\text {   Glucose   1 - phosphate   } \rightleftharpoons \text {   glucose   6 - phosphate   }
+$$
+
+given that, starting with 20 mm glucose 1-phosphate and no glucose 6-phosphate, the final equilibrium mixture at 25 °C and pH 7.0 contains 1.0 mm glucose 1-phosphate and 19 mm glucose 6-phosphate.
+
+SOLUTION: First we calculate the equilibrium constant:
+
+$$
+K _ {\mathrm{eq}} ^ {\prime} = \frac {[ \text { glucose   6 - phosphate } ] _ {\mathrm{eq}}}{[ \text { glucose   1 - phosphate } ] _ {\mathrm{eq}}} = \frac {1 9 \mathrm{mM}}{1 . 0 \mathrm{mM}} = 1 9
+$$
+
+We can now calculate the standard free-energy change:
+
+Does the reaction in the direction of glucose 6-phosphate formation proceed with a loss or a gain of free energy?
+
+Because the standard free-energy change is negative, the conversion of glucose 1-phosphate to glucose 6-phosphate proceeds with a loss (release) of free energy. (For the reverse reaction, $\Delta G^{\prime \circ}$ has the same magnitude but the opposite sign.)
+
+Table 13-4 gives the standard free-energy changes for some representative chemical reactions. Note that hydrolysis of simple esters, amides, peptides, and glycosides, as well as rearrangements and eliminations, proceed with relatively small standard free-energy changes, whereas hydrolysis of acid anhydrides is accompanied by relatively
+
+$$
+\begin{array}{r l} \Delta G ^ {\prime \circ} & = - R T \ln K _ {e q} ^ {\prime} \\ & = - (8. 3 1 5 \mathrm{J/mol} \cdot \mathrm{K}) (2 9 8 \mathrm{K}) (\ln 1 9) \\ & = - 7. 3 \mathrm{kJ/mol} \end{array}
+$$
+
+<table><tr><td colspan="3">TABLE 13-4 Standard Free-Energy Changes of Some Chemical Reactions</td></tr><tr><td></td><td colspan="2"> $\Delta {G}^{\prime \circ }$ </td></tr><tr><td>Reaction type</td><td>(kJ/mol)</td><td>(kcal/mol)</td></tr><tr><td colspan="3">Hydrolysis reactions</td></tr><tr><td colspan="3">Acid anhydrides</td></tr><tr><td>Acetic anhydride +  ${\mathrm{H}}_{2}\mathrm{O} \longrightarrow 2$  acetate</td><td>-91.1</td><td>-21.8</td></tr><tr><td>ATP +  ${\mathrm{H}}_{2}\mathrm{O} \longrightarrow \mathrm{{ADP}} + {\mathrm{P}}_{\mathrm{i}}$ </td><td>-30.5</td><td>-7.3</td></tr><tr><td>ATP +  ${\mathrm{H}}_{2}\mathrm{O} \longrightarrow \mathrm{{AMP}} + {\mathrm{{PP}}}_{\mathrm{i}}$ </td><td>-45.6</td><td>-10.9</td></tr><tr><td> ${\mathrm{{PP}}}_{\mathrm{i}} + {\mathrm{H}}_{2}\mathrm{O} \longrightarrow 2{\mathrm{P}}_{\mathrm{i}}$ </td><td>-19.2</td><td>-4.6</td></tr><tr><td>UDP-glucose +  ${\mathrm{H}}_{2}\mathrm{O} \longrightarrow$  UMP + glucose 1-phosphate</td><td>-43.0</td><td>-10.3</td></tr><tr><td colspan="3">Esters</td></tr><tr><td>Ethyl acetate +  ${\mathrm{H}}_{2}\mathrm{O} \longrightarrow$  ethanol + acetate</td><td>-19.6</td><td>-4.7</td></tr><tr><td>Glucose 6-phosphate +  ${\mathrm{H}}_{2}\mathrm{O} \longrightarrow$  glucose +  ${\mathrm{P}}_{\mathrm{i}}$ </td><td>-13.8</td><td>-3.3</td></tr><tr><td colspan="3">Amides and peptides</td></tr><tr><td>Glutamine +  ${\mathrm{H}}_{2}\mathrm{O} \longrightarrow$  glutamate +  ${\mathrm{{NH}}}_{4}^{ + }$ </td><td>-14.2</td><td>-3.4</td></tr><tr><td>Glycylglycine +  ${\mathrm{H}}_{2}\mathrm{O} \longrightarrow 2$  glycine</td><td>-9.2</td><td>-2.2</td></tr><tr><td colspan="3">Glycosides</td></tr><tr><td>Maltose +  ${\mathrm{H}}_{2}\mathrm{O} \longrightarrow 2$  glucose</td><td>-15.5</td><td>-3.7</td></tr><tr><td>Lactose +  ${\mathrm{H}}_{2}\mathrm{O} \longrightarrow$  glucose + galactose</td><td>-15.9</td><td>-3.8</td></tr><tr><td colspan="3">Rearrangements</td></tr><tr><td>Glucose 1-phosphate  $\longrightarrow$  glucose 6-phosphate</td><td>-7.3</td><td>-1.7</td></tr><tr><td>Fructose 6-phosphate  $\longrightarrow$  glucose 6-phosphate</td><td>-1.7</td><td>-0.4</td></tr><tr><td colspan="3">Elimination of water</td></tr><tr><td>Malate  $\longrightarrow$  fumarate +  ${\mathrm{H}}_{2}\mathrm{O}$ </td><td>3.1</td><td>0.8</td></tr><tr><td colspan="3">Oxidations with molecular oxygen</td></tr><tr><td>Glucose +  $6{\mathrm{O}}_{2} \longrightarrow 6{\mathrm{{CO}}}_{2} + 6{\mathrm{H}}_{2}\mathrm{O}$ </td><td>-2,840</td><td>-686</td></tr><tr><td>Palmitate +  $23{\mathrm{O}}_{2} \longrightarrow 16{\mathrm{{CO}}}_{2} + 16{\mathrm{H}}_{2}\mathrm{O}$ </td><td>-9,770</td><td>-2,338</td></tr></table>
+
+![](images/c2732afc2a4d49ba8b697baecfc0f06b98902df0767a73ba8463abb8852b2204.jpg)
+
+![](images/9ec383b441c07aaacf62c2bad0aad39ddf54b5b2da2605acb197aec7be50a42a.jpg)
+
+large decreases in standard free energy. The complete oxidation of organic compounds such as glucose or palmitate to $CO_{2}$ and $H_{2}O$ , which in cells requires many steps, results in very large decreases in standard free energy. However, standard free-energy changes such as those in Table 13-4 indicate how much free energy is available from a reaction under standard conditions. To describe the energy released under the conditions existing in cells, an expression for the actual free-energy change is essential.
+
+## Actual Free-Energy Changes Depend on Reactant and Product Concentrations
+
+We must be careful to distinguish between two different quantities: the actual free-energy change, $\Delta G$ , and the standard free-energy change, $\Delta G^{\prime\circ}$ . Each chemical reaction has a characteristic standard free-energy change, which may be positive, negative, or zero, depending on the equilibrium constant of the reaction. P1 The standard free-energy change tells us in which direction and how far a given reaction must go to reach equilibrium when the initial concentration of each component is 1.0 M, the pH is 7.0, the temperature is 25 °C, and the pressure is 101.3 kPa (1 atm). Thus $\Delta G^{\prime\circ}$ is a constant: it has a characteristic, unchanging value for a given reaction. But the actual free-energy change, $\Delta G$ , is a function of reactant and product concentrations and of the temperature prevailing during the reaction, none of which will necessarily match the standard conditions as defined above. Moreover, the $\Delta G$ of any reaction proceeding spontaneously toward its equilibrium is always negative, becomes less negative as the reaction proceeds, and is zero at the point of equilibrium, indicating that no more work can be done by the reaction.
+
+$\Delta G$ and $\Delta G^{\circ}$ for any reaction $aA + bB \rightleftharpoons cC + dD$ are related by the equation
+
+$$
+\Delta G = \Delta G ^ {\prime 0} + R T \ln \frac {[ C ] ^ {c} [ D ] ^ {d}}{[ A ] ^ {a} [ B ] ^ {b}}\tag{13-4}
+$$
+
+in which the terms in red are those actually prevailing in the system under observation. The concentration terms in this equation express the effects commonly called mass action, and the term $[C]^{c}[D]^{d}/[A]^{a}[B]^{b}$ is called the mass-action ratio, Q. Thus Equation 13-4 can be expressed as $\Delta G = \Delta G^{\circ} + RT \ln Q$ . As an example, let us suppose that the reaction $A + B \rightleftharpoons C + D$ is taking place under the standard conditions of temperature (25 °C) and pressure (101.3 kPa) but that the concentrations of A, B, C, and D are not equal and none of the components is present at the standard concentration of 1.0 M. To determine the actual free-energy change, $\Delta G$ , under these nonstandard conditions of concentration as the reaction proceeds from left to right, we simply enter the actual concentrations of A, B, C, and D in Equation 13-4; the values of R, T, and $\Delta G^{\circ}$ are the standard values. $\Delta G$ is negative and approaches zero as the reaction proceeds, because the actual concentrations of A and B decrease and the concentrations of C and D increase.
+
+Notice that when a reaction is at equilibrium—when there is no force driving the reaction in either direction and $\Delta G$ is zero—Equation 13-4 reduces to
+
+$$
+0 = \Delta G = \Delta G ^ {\prime \circ} + R T \ln \frac {[ C ] _ {e q} [ D ] _ {e q}}{[ A ] _ {e q} [ B ] _ {e q}}
+$$
+
+or
+
+$$
+\Delta G ^ {\prime \circ} = - R T \ln K _ {\mathrm{eq}} ^ {\prime}
+$$
+
+which is the equation relating the standard free-energy change and equilibrium constant (Eqn 13-3).
+
+The criterion for spontaneity of a reaction is the value of $\Delta G$ , not $\Delta G^{\prime o}$ . A reaction with a positive $\Delta G^{\prime o}$ can go in the forward direction if $\Delta G$ is negative. This is possible if the term $RT$ ln ([products]/[reactants]) in Equation 13-4 is negative and has a larger absolute value than $\Delta G^{\prime o}$ . For example, the immediate removal of the products of a reaction by an enzyme that degrades the product can keep the ratio [products]/[reactants] well below 1, such that the term $RT$ ln ([products]/[reactants]) has a large, negative value. This is a quantitative expression of Le Chatelier's principle. $\Delta G^{\prime o}$ and $\Delta G$ are expressions of the maximum amount of free energy that a given reaction can theoretically deliver—an amount of energy that could be realized only if a perfectly efficient device were available to trap or harness it. Given that no such device is possible (some energy is always lost to entropy during any process), the amount of work done by the reaction at constant temperature and pressure is always less than the theoretical amount.
+
+Another important point is that some thermodynamically favorable reactions (that is, reactions for which $\Delta G^{\prime\circ}$ is large and negative) do not occur at measurable rates. For example, combustion of firewood to $CO_{2}$ and $H_{2}O$ is very favorable thermodynamically, but firewood remains stable for years because the activation energy (see Figs. 6-2, 6-3) for the combustion reaction is higher than the energy available at room temperature. If the necessary activation energy is provided (with a lighted match, for example), combustion will begin, converting the wood to the more stable products $CO_{2}$ and $H_{2}O$ and releasing energy as heat and light. The heat released by this exothermic reaction provides the activation energy for combustion of neighboring regions of the firewood; the process is self-perpetuating. Thermodynamics allows us to predict which direction a process will tend to go; how fast it will go is the subject of kinetics.
+
+In living cells, reactions that would be extremely slow if uncatalyzed are caused to proceed not by supplying additional heat but by lowering the activation energy through use of an enzyme catalyst. An enzyme provides an alternative reaction pathway with a lower activation energy than the uncatalyzed reaction, so that at body temperature a large fraction of the substrate molecules have enough thermal energy to overcome the activation barrier, and the reaction rate increases dramatically. The free-energy change for a reaction is independent of the pathway by which the reaction occurs; it depends only on the nature and concentration of the initial reactants and the final products. Enzymes cannot, therefore, change equilibrium constants; but they can and do increase the rate at which a reaction proceeds in the direction dictated by thermodynamics (see Section 6.2).
+
+## Standard Free-Energy Changes Are Additive
+
+In the case of two sequential chemical reactions, A $\rightleftharpoons$ B and B $\rightleftharpoons$ C, each reaction has its own equilibrium constant and each has its characteristic standard free-energy change, $\Delta G_{1}^{\prime\circ}$ and $\Delta G_{2}^{\prime\circ}$ . As the two reactions are sequential, B cancels out to give the overall reaction A $\rightleftharpoons$ C, which has its own equilibrium constant and thus its own standard free-energy change, $\Delta G_{Sum}^{\prime\circ}$ . The $\Delta G^{\prime\circ}$ values of sequential chemical reactions are additive. For the overall reaction A $\rightleftharpoons$ C, $\Delta G_{Sum}^{\prime\circ}$ is the sum of the individual standard free-energy changes, $\Delta G_{1}^{\prime\circ}$ and $\Delta G_{2}^{\prime\circ}$ , of the two reactions: $\Delta G_{Sum}^{\prime\circ} = \Delta G_{1}^{\prime\circ} + \Delta G_{2}^{\prime\circ}$ .
+
+$$
+\begin{array}{c c c} \text {(1)} & \mathrm{A} \longrightarrow \mathrm{B} & \Delta G _ {1} ^ {\prime \circ} \\ \text {(2)} & \mathrm{B} \longrightarrow \mathrm{C} & \Delta G _ {2} ^ {\prime \circ} \\ \hline \text {Sum:} & \mathrm{A} \longrightarrow \mathrm{C} & \Delta G _ {1} ^ {\prime \circ} + \Delta G _ {2} ^ {\prime \circ} \end{array}
+$$
+
+P2 This principle of bioenergetics explains how a thermodynamically unfavorable (endergonic) reaction can be driven in the forward direction by coupling it to a highly exergonic reaction. For example, in many organisms, the synthesis of glucose 6-phosphate is the first step in the utilization of glucose. In principle, the synthesis could be accomplished by this reaction:
+
+$$
+\mathrm{Glucose} + \mathrm{P} _ {\mathrm{i}} \longrightarrow \text { glucose   6 - phosphate } + \mathrm{H} _ {2} \mathrm{O}
+$$
+
+$$
+\Delta G ^ {\prime \circ} = 1 3. 8 \mathrm{kJ/mol}
+$$
+
+But the positive value of $\Delta G^{\prime\circ}$ predicts that under standard conditions the reaction will tend not to proceed spontaneously in the direction written. Another cellular reaction, the hydrolysis of ATP to ADP and $P_{i}$ , is highly exergonic:
+
+$$
+\mathrm{ATP} + \mathrm{H} _ {2} \mathrm{O} \longrightarrow \mathrm{ADP} + \mathrm{P} _ {\mathrm{i}} \quad \Delta G ^ {\prime \circ} = - 3 0. 5 \mathrm{kJ/mol}
+$$
+
+These two reactions share the common intermediates $P_{i}$ and $H_{2}O$ and may be expressed as sequential reactions:
+
+$$
+\text {   Glucose   } + P _ {\mathrm{i}} \longrightarrow \text {   glucose   6 - phosphate   } + \mathrm{H} _ {2} \mathrm{O} \tag {1}
+$$
+
+$$
+\mathrm{ATP} + \mathrm{H} _ {2} \mathrm{O} \longrightarrow \mathrm{ADP} + P _ {\mathrm{i}} \tag {2}
+$$
+
+$$
+\text { Sum: } \quad \mathrm{ATP} + \text { glucose } \longrightarrow \mathrm{ADP} + \text { glucose   6 - phosphate }
+$$
+
+The overall standard free-energy change is obtained by adding the $\Delta G^{\prime\circ}$ values for individual reactions:
+
+$$
+\Delta G _ {\mathrm{Sum}} ^ {\prime \circ} = 1 3. 8 \mathrm{kJ/mol} + (- 3 0. 5 \mathrm{kJ/mol}) = - 1 6. 7 \mathrm{kJ/mol}
+$$
+
+P2 The overall reaction is exergonic. In this case, energy stored in ATP is used to drive the synthesis of glucose 6-phosphate, even though its formation from glucose and inorganic phosphate ( $P_{i}$ ) is endergonic. The pathway of glucose 6-phosphate formation from glucose by phosphoryl transfer from ATP is different from reactions (1) and (2), but the net result is the same as the sum of the two reactions. The standard free-energy change is a state function. In thermodynamic calculations, all that matters is the state of the system at the beginning of the process and its state at the end; the route between the initial and final states is immaterial.
+
+We have said that $\Delta G^{\prime \circ}$ is a way of expressing the equilibrium constant for a reaction. For reaction (1),
+
+$$
+K _ {\mathrm{eq} _ {1}} ^ {\prime} = \frac {[ \text { glucose   6 - phosphate } ] _ {\mathrm{eq}}}{[ \text { glucose } ] _ {\mathrm{eq}} [ \mathrm{P} _ {\mathrm{i}} ] _ {\mathrm{eq}}} = 3. 9 \times 1 0 ^ {- 3} \mathrm{M} ^ {- 1}
+$$
+
+Notice that $H_{2}O$ is not included in this expression, as its concentration (55.5 M) is assumed to remain unchanged by the reaction. The equilibrium constant for the hydrolysis of ATP is
+
+$$
+K _ {\mathrm{eq} _ {2}} ^ {\prime} = \frac {[ \mathrm{ADP} ] _ {\mathrm{eq}} [ \mathrm{P} _ {\mathrm{i}} ] _ {\mathrm{eq}}}{[ \mathrm{ATP} ] _ {\mathrm{eq}}} = 2. 0 \times 1 0 ^ {5} \mathrm{M}
+$$
+
+The equilibrium constant for the two coupled reactions is
+
+$$
+\begin{array}{r l} K _ {\mathrm{eq} _ {3}} ^ {\prime} & = \frac {[ \text {glucose 6 - phosphate} ] _ {\mathrm{eq}} [ \mathrm{ADP} ] _ {\mathrm{eq}} [ \mathrm{P} _ {\mathrm{i}} ] _ {\mathrm{eq}}}{[ \text {glucose} ] _ {\mathrm{eq}} [ \mathrm{P} _ {\mathrm{i}} ] _ {\mathrm{eq}} [ \mathrm{ATP} ] _ {\mathrm{eq}}} \\ & = (K _ {\mathrm{eq} _ {1}} ^ {\prime}) (K _ {\mathrm{eq} _ {2}} ^ {\prime}) = (3. 9 \times 1 0 ^ {- 3} \mathrm{M} ^ {- 1}) (2. 0 \times 1 0 ^ {5} \mathrm{M}) \\ & = 7. 8 \times 1 0 ^ {2} \end{array}
+$$
+
+This calculation illustrates an important point about equilibrium constants: although the $\Delta G^{\prime \circ}$ values for two reactions that sum to a third, overall reaction are additive, the $K_{\mathrm{eq}}^{\prime}$ for the overall reaction is the product of the individual $K_{\mathrm{eq}}^{\prime}$ values for the two reactions. Equilibrium constants are multiplicative. By coupling ATP hydrolysis to glucose 6-phosphate synthesis, the $K_{\mathrm{eq}}^{\prime}$ for formation of glucose 6-phosphate from glucose has been raised by a factor of about $2\times 10^{5}$ compared with the direct reaction between glucose and $\mathbf{P_i}$ .
+
+This strategy of coupling endergonic processes to exergonic reactions that drive them is employed by all living cells in the synthesis of metabolic intermediates and cellular components. Obviously, the strategy works only if compounds such as ATP are continuously available. In the following chapters we consider several of the most important cellular pathways for producing ATP. For more practice in dealing with free-energy changes and equilibrium constants for coupled reactions, see Worked Examples 1-1, 1-2, and 1-3 in Chapter 1 (pp. 24–25).
+
+## SUMMARY 13.1 Bioenergetics and Thermodynamics
+
+■ Bioenergetics is the quantitative study of energy relationships and energy conversions in biological systems. Biological energy transformations obey the laws of thermodynamics.
+
+■ Living cells constantly perform work. They require energy for maintaining their highly organized structures, synthesizing cellular components, transporting small molecules and ions across membranes, and generating electric currents.
+
+All chemical reactions are influenced by two forces: the tendency to achieve the most stable bonding state (for which enthalpy, H, is a useful expression) and the tendency to achieve the highest degree of randomness, expressed as entropy, S. The driving force in a reaction is $\Delta G$ , the free-energy change, which represents the net effect of these two factors: $\Delta G = \Delta H - T \Delta S$ .
+
+The standard transformed free-energy change, $\Delta G^{\prime \circ}$ , is a physical constant that is characteristic for a given reaction and can be calculated from the equilibrium constant for the reaction: $\Delta G^{\prime \circ} = -RT\ln K_{\mathrm{eq}}^{\prime}$ .
+
+The actual free-energy change, $\Delta G$ , is a variable that depends on $\Delta G^{\prime \circ}$ and on the concentrations of reactants and products: $\Delta G = \Delta G^{\prime \circ} + RT \ln ([products]/[reactants])$ . When $\Delta G$ is large and negative, the reaction tends to go in the forward direction; when $\Delta G$ is large and positive, the reaction tends to go in the reverse direction; and when $\Delta G = 0$ , the system is at equilibrium.
+
+The free-energy change for a reaction is independent of the pathway by which the reaction occurs. Free-energy changes are additive; the net chemical reaction that results from successive reactions sharing a common intermediate has an overall free-energy change that is the sum of the $\Delta G$ values for the individual reactions.
+
+## 13.2 Chemical Logic and Common Biochemical Reactions
+
+The biological energy transductions we are concerned with in this book are chemical reactions. Cellular chemistry does not encompass every kind of reaction learned in a typical organic chemistry course. Which reactions take place in biological systems and which do not is determined by (1) their relevance to that particular metabolic system and (2) their rates. Both considerations play major roles in shaping the metabolic pathways we consider throughout the rest of the book. A relevant reaction is one that makes use of an available substrate and converts it to a useful product. However, even a potentially relevant reaction may not occur. Some chemical transformations are too slow (have activation energies that are too high) to contribute to living systems, even with the aid of powerful enzyme catalysts. The reactions that do occur in cells represent a toolbox that evolution has used to construct metabolic pathways that circumvent the "impossible" reactions. Learning to recognize the plausible reactions can be a great aid in developing a command of biochemistry.
+
+Even so, the number of metabolic transformations taking place in a typical cell can seem overwhelming.
+
+Most cells have the capacity to carry out thousands of specific, enzyme-catalyzed reactions: for example, transformation of a simple nutrient such as glucose into amino acids, nucleotides, or lipids; extraction of energy from fuels by oxidation; and polymerization of monomeric subunits into macromolecules.
+
+## Biochemical Reactions Occur in Repeating Patterns
+
+To study these reactions, some organization is essential. P3 There are patterns within the chemistry of life; you do not need to learn every individual reaction to comprehend the molecular logic of biochemistry. Most of the reactions in living cells fall into one of five general categories: (1) reactions that make or break carbon-carbon bonds; (2) internal rearrangements, isomerizations, and eliminations; (3) free-radical reactions; (4) group transfers; and (5) oxidation-reductions. We discuss each of these in more detail below and refer to some examples of each type in later chapters. Note that the five reaction types are not mutually exclusive; for example, an isomerization reaction may involve a free-radical intermediate.
+
+Before proceeding, however, we should review two basic chemical principles. First, a covalent bond consists of a shared pair of electrons, and the bond can be broken in two general ways (Fig. 13-1). In homolytic cleavage, each atom leaves the bond as a radical, carrying one unpaired electron. In heterolytic cleavage, which is more common, one atom retains both bonding electrons. The species most often generated when C—C and C—H bonds are cleaved are illustrated in Figure 13-1. Carbanions, carbocations, and hydride ions are highly unstable; this instability shapes the chemistry of these ions, as we shall see.
+
+![](images/0855deb68620bb588267a6c61bf66da0097090195cb00c2a1b1ac91840dd1f26.jpg)  
+FIGURE 13-1 Two mechanisms for cleavage of a C—C or C—H bond. In a homolytic cleavage, each atom keeps one of the bonding electrons, resulting in the formation of carbon radicals (carbons having unpaired electrons) or uncharged hydrogen atoms. In a heterolytic cleavage, one of the atoms retains both bonding electrons. This can result in the formation of carbanions, carbocations, protons, or hydride ions.
+
+The second basic principle is that many biochemical reactions involve interactions between nucleophiles (functional groups rich in and capable of donating electrons) and electrophiles (electron-deficient functional groups that seek electrons). Nucleophiles combine with and give up electrons to electrophiles. Common biological nucleophiles and electrophiles are shown in Figure 13-2. Note that a carbon atom can act as either a nucleophile or an electrophile, depending on which bonds and functional groups surround it.
+
+Reactions That Make or Break Carbon–Carbon Bonds Heterolytic cleavage of a C—C bond yields a carbanion and a carbocation (Fig. 13-1). Conversely, the formation of a C—C bond involves the combination of a nucleophilic carbanion and an electrophilic carbocation. Carbanions and carbocations are generally so unstable that their formation as reaction intermediates can be energetically unfeasible, even with enzyme catalysts. For the purpose of cellular biochemistry, they are impossible reactions — unless chemical assistance is provided in the form of functional groups containing electronegative atoms (O and N) that can alter the electronic structure of adjacent carbon atoms so as to stabilize and facilitate the formation of carbanion and carbocation intermediates.
+
+![](images/dffbc6704f275c416d13a6ce6551ee493e02d2089b9704c8074dee50813a3972.jpg)  
+FIGURE 13-2 Common nucleophiles and electrophiles in biochemical reactions. Chemical reaction mechanisms, which trace the formation and breakage of covalent bonds, are communicated with dots and curved arrows, a convention known informally as "electron pushing." A covalent bond consists of a shared pair of electrons. Nonbonded electrons important to the reaction mechanism are designated by dots (☐). Curved arrows (○) represent the movement of electron pairs. For movement of a single electron (as in a free-radical reaction), a single-headed (fishhook-type) arrow is used (○). Most reaction steps involve an unshared electron pair.
+
+Carbonyl groups are particularly important in the chemical transformations of metabolic pathways. The carbon of a carbonyl group has a partial positive charge due to the electron-withdrawing property of the carbonyl oxygen, and so is an electrophilic carbon (Fig. 13-3a). A carbonyl group can thus facilitate the formation of a carbanion on an adjoining carbon by delocalizing the carbanion's negative charge (Fig. 13-3b). An imine group (see Fig. 1-14) can serve a similar function (Fig. 13-3c). The capacity of carbonyl and imine groups to delocalize electrons can be further enhanced by a general acid catalyst or by a metal ion $(\mathrm{Me}^{2+})$ such as $\mathrm{Mg}^{2+}$ (Fig. 13-3d).
+
+P3 The importance of a carbonyl group is evident in three major classes of reactions in which C—C bonds are formed or broken (Fig. 13-4): aldol condensations, Claisen ester condensations, and decarboxylations. In each type of reaction, a carbanion intermediate is stabilized by a carbonyl group, and in many cases another carbonyl provides the electrophile with which the nucleophilic carbanion reacts.
+
+An aldol condensation is a common route to the formation of a C—C bond; the aldolase reaction, which converts a six-carbon compound to two three-carbon compounds in glycolysis, is an aldol condensation in reverse (see Fig. 14-5). In a Claisen condensation, the carbanion is stabilized by the carbonyl of an adjacent thioester; an example is the synthesis of citrate in the citric acid cycle (see Fig. 16-9). Decarboxylation also commonly involves the formation of a carbanion stabilized by a carbonyl group; the acetoacetate decarboxylase reaction that occurs in the formation of ketone bodies during fatty acid catabolism provides an example (see Fig. 17-16). Entire metabolic pathways are organized around the introduction of a carbonyl group in a particular location so that a nearby carbon-carbon bond can be formed or cleaved. In some reactions, an imine or a specialized cofactor such as pyridoxal phosphate plays the electron-withdrawing role, instead of a carbonyl group.
+
+![](images/fbafcee79f79b7b4d13f262ec4a2cb22c5400bd3593e31bdae4c1101e499801e.jpg)  
+FIGURE 13-3 Chemical properties of carbonyl groups. (a) The carbon atom of a carbonyl group is an electrophile by virtue of the electron-withdrawing capacity of the electronegative oxygen atom, which results in a structure in which the carbon has a partial positive charge. (b) Within a molecule, delocalization of electrons into a carbonyl group stabilizes a carbanion on an adjacent carbon, facilitating its formation. (c) Imines function much like carbonyl groups in facilitating electron withdrawal. (d) Carbonyl groups do not always function alone; their capacity as electron sinks often is augmented by interaction with either a metal ion $(\mathrm{Me}^{2+}$ , such as $\mathrm{Mg}^{2+}$ ) or a general acid (HA).
+
+![](images/dd0e6def866edb7edeffde679927604fde5e752250b47e0aa269c6eb38711db6.jpg)  
+FIGURE 13-4 Some common reactions that form and break C—C bonds in biological systems. For both the aldol condensation and the Claisen condensation, a carbanion serves as nucleophile and the carbon of a carbonyl group serves as electrophile. The carbanion is stabilized in each case by another carbonyl at the adjoining carbon. In the decarboxylation reaction, a carbanion is formed on the carbon shaded blue as the $CO_{2}$ leaves. The reaction would not occur at an appreciable rate without the stabilizing effect of the carbonyl adjacent to the carbanion carbon. Wherever a carbanion is shown, a stabilizing resonance with the adjacent carbonyl, as shown in Figure 13-3b, is assumed. An imine (Fig. 13-3c) or other electron-withdrawing group (including certain enzymatic cofactors such as pyridoxal) can replace the carbonyl group in the stabilization of carbanions.
+
+The carbocation intermediate occurring in some reactions that form or cleave C—C bonds is generated by the elimination of an excellent leaving group, such as pyrophosphate (see "Group Transfer Reactions" below). An example is the prenyltransferase reaction (Fig. 13-5), an early step in the pathway of cholesterol biosynthesis.
+
+Internal Rearrangements, Isomerizations, and Eliminations
+Another common type of cellular reaction is an intra-molecular rearrangement in which redistribution of electrons results in alterations of many different types without a change in the overall oxidation state of the molecule. For example, different groups in a molecule may undergo oxidation-reduction, with no net change in oxidation state of the molecule; groups at a double bond may undergo a cis-trans rearrangement; or the positions of double bonds may be transposed. An example of an isomerization entailing internal oxidation-reduction is the formation of fructose 6-phosphate from glucose 6-phosphate in glycolysis (Fig. 13-6; this reaction is discussed in detail in Chapter 14): C-1 is reduced (aldehyde to alcohol) and C-2 is oxidized (alcohol to ketone). Figure 13-6b shows the details of the electron movements in this type of isomerization. A cis-trans rearrangement is illustrated by the prolyl cis-trans isomerase reaction in the folding of certain proteins (see p. 133). A simple transposition of a C=C bond occurs during metabolism of oleic acid, a common fatty acid (see Fig. 17-10). Some spectacular examples of double-bond repositioning occur in the biosynthesis of cholesterol (see Fig. 21-37).
+
+![](images/9c6a3aad1c09c627879afb6e02eb0dfbfbf4f676b6d5aa266065c7ef937ec3bf.jpg)  
+FIGURE 13-5 Carbocations in carbon-carbon bond formation. In one of the early steps in cholesterol biosynthesis, the enzyme prenyltransferase catalyzes condensation of isopentenyl pyrophosphate and dimethylallyl pyrophosphate to form geranyl pyrophosphate (see Fig. 21-36). The reaction is initiated by elimination of pyrophosphate from the dimethylallyl pyrophosphate to generate a carbocation, stabilized by resonance with the adjacent C=C bond.
+
+An example of an elimination reaction that does not affect overall oxidation state is the loss of water from an alcohol, resulting in the introduction of a C=C bond:
+
+![](images/b2d09def7270744dcd83c256267f1268acbf556b02b101ed2db40a9232dfaa31.jpg)
+
+Similar reactions can result from eliminations in amines.
+
+![](images/bc363320316ccd6427d91bf7c19be019e3bdd342a76c865e704e3bba301f3382.jpg)  
+FIGURE 13-6 Isomerization and elimination reactions. (a) The conversion of glucose 6-phosphate to fructose 6-phosphate, a reaction of sugar metabolism catalyzed by phosphohexose isomerase. (b) This reaction proceeds through an enediol intermediate. Light red screens follow the path  
+of oxidation from left to right. B $^{1}$ and B $^{2}$ are ionizable groups on the enzyme; they are capable of donating and accepting protons (acting as general acids or general bases) as the reaction proceeds.
+
+![](images/148ae8e37b438ffc0c26ecd39e639c60cb833486fc4e13248d408c99e53ca7e3.jpg)  
+FIGURE 13-7 A free radical-initiated decarboxylation reaction. The biosynthesis of heme in Escherichia coli includes a decarboxylation step in which propionyl side chains on the coproporphyrinogen III intermediate are converted to the vinyl side chains of protoporphyrinogen IX. When the bacteria are grown anaerobically the enzyme oxygen-independent coproporphyrinogen III oxidase, also called HemN protein, promotes decarboxylation
+
+Free-Radical Reactions Once thought to be rare, the homolytic cleavage of covalent bonds to generate free radicals has now been found in a wide range of biochemical processes. These include isomerizations that make use of adenosylcobalamin (vitamin B $_{12}$ ) or S-adenosylmethionine, which are initiated with a 5'-deoxyadenosyl radical (see the methylmalonyl-CoA mutase reaction in Box 17-2); certain radical-initiated decarboxylation reactions (Fig. 13-7); some reductase reactions, such as that catalyzed by ribonucleotide reductase (see Fig. 22-43); and some rearrangement reactions, such as that catalyzed by DNA photolyase (see Fig. 25-25).
+
+Group Transfer Reactions The transfer of acyl, glycosyl, and phosphoryl groups from one nucleophile to another is common in living cells. Acyl group transfer generally involves the addition of a nucleophile to the carbonyl carbon of an acyl group to form a tetrahedral intermediate:
+
+via the free-radical mechanism shown here. The acceptor of the released electron is not known. For simplicity, only the relevant portions of the large coproporphyrinogen III and protoporphyrinogen molecules are shown; the entire structures are given in Figure 22-26. When E. coli is grown in the presence of oxygen, this reaction is an oxidative decarboxylation and is catalyzed by a different enzyme. (Information from G. Layer et al., Curr. Opin. Chem. Biol. 8:468, 2004, Fig. 4.)
+
+![](images/1413386bf48636ea7c27fff6584e78fad5ce82c9508f0327d203d9d741f4ca18.jpg)
+
+The chymotrypsin reaction is one example of acyl group transfer (see Fig. 6-27). Glycosyl group transfers involve nucleophilic substitution at C-1 of a sugar ring, which is the central atom of an acetal. In principle, the substitution could proceed by an $S_{N}1$ or $S_{N}2$ pathway.
+
+Phosphoryl group transfers play a special role in metabolic pathways, and these transfer reactions are discussed in detail in Section 13.3. P3 A general theme in metabolism is the attachment of a good leaving group to a metabolic intermediate to "activate" the intermediate for subsequent reaction. Among the better leaving groups in nucleophilic substitution reactions are inorganic orthophosphate (the ionized form of $H_{3}PO_{4}$ at neutral pH, a mixture of $H_{2}PO_{4}^{-}$ and $HPO_{4}^{2-}$ , commonly abbreviated $P_{i}$ ) and inorganic pyrophosphate ( $P_{2}O_{7}^{4-}$ , abbreviated $PP_{i}$ ); esters and anhydrides of phosphoric acid are effectively activated for reaction. Nucleophilic substitution is made more favorable by the attachment of a phosphoryl group to an otherwise poor leaving group such as —OH. Nucleophilic substitutions in which the phosphoryl group ( $—PO_{3}^{2-}$ ) serves as a leaving group occur in hundreds of metabolic reactions.
+
+![](images/eb12b4874ad694cdcaba8069e63ab1772000f67073095a0e536208f9b5cd491e.jpg)
+
+Phosphorus can form five covalent bonds. The conventional representation of $P_{i}$ (Fig. 13-8a), with three P—O bonds and one P=O bond, is a convenient but inaccurate picture. In $P_{i}$ , four equivalent phosphorus–oxygen bonds share some double-bond character, and the anion has a tetrahedral structure (Fig. 13-8b). Because oxygen is more electronegative than phosphorus, the sharing of electrons is unequal: the central phosphorus bears a partial positive charge and can therefore act as an electrophile. In a great many metabolic reactions, a phosphoryl group ( $—PO_{3}^{2-}$ ) is transferred from ATP to an alcohol, forming a phosphate ester (Fig. 13-8c), or to a carboxylic acid, forming a mixed anhydride. When a nucleophile attacks the electrophilic phosphorus atom in ATP, a relatively stable pentacovalent structure forms as a reaction intermediate (Fig. 13-8d). With departure of the leaving group (ADP), the transfer of a phosphoryl group is complete. The large family of enzymes that catalyze phosphoryl group transfers with ATP as donor are called kinases (Greek kinein, “to move”). Hexokinase, for example, “moves” a phosphoryl group from ATP to the hexose glucose. Box 13-1 offers a primer on some of the broad classes of enzymes (including kinases) that you will encounter in your study of metabolism.
+
+Phosphoryl groups are not the only groups that activate molecules for reaction. Thioalcohols (thiols), in which the oxygen atom of an alcohol is replaced with a sulfur atom, are also good leaving groups. Thiols activate carboxylic acids by forming thioesters (thiol esters). In later chapters we discuss several reactions, including those catalyzed by the fatty acyl synthases in lipid synthesis (see Fig. 21-2), in which nucleophilic substitution at the carbonyl carbon of a thioester results in transfer of the acyl group to another moiety.
+
+Oxidation-Reduction Reactions We will encounter carbon atoms in five oxidation states, depending on the elements with which they share electrons (Fig. 13-9), and transitions between these states are of crucial importance in metabolism (oxidation-reduction reactions are the topic of Section 13.4). In many biological oxidations, a compound loses two electrons and two hydrogen ions (that is, two hydrogen atoms); these reactions are commonly called dehydrogenations, and the enzymes that catalyze them are called dehydrogenases (Fig. 13-10). In some, but not all, biological oxidations, a
+
+![](images/11adb4dac445c9743cff4138e86a91f56d9c40cb079c9ea7a36f41f97151539e.jpg)  
+FIGURE 13-8 Phosphoryl group transfers: some of the participants. (a) In one (inadequate) representation of $\mathsf{P_i}$ , three oxygens are single-bonded to phosphorus, and the fourth is double-bonded, allowing the four different resonance structures shown here. (b) The resonance structures of $\mathsf{P_i}$ can be represented more accurately by showing all four phosphorus-oxygen bonds with some double-bond character; the hybrid orbitals so represented are arranged in a tetrahedron with P at its center. (c) When a nucleophile $Z$ (in this case, the -OH on C-6 of glucose) attacks ATP, it displaces ADP (W). In this $S_{N}2$ reaction, a pentacovalent intermediate (d) forms transiently.
+
+![](images/ed854590abb629a825b67f34cff1473ae13b56a6df2536a5962d7e6f76831ef4.jpg)  
+FIGURE 13-9 The oxidation levels of carbon in biomolecules. Each compound is formed by oxidation of the carbon shown in red in the compound immediately above. Carbon dioxide is the most highly oxidized form of carbon found in living systems.
+
+## A Primer on Enzyme Names
+
+The name kinase is applied to enzymes that transfer a phosphoryl group from a nucleoside triphosphate such as ATP to an acceptor molecule—a sugar (as in hexokinase and glucokinase), a protein (as in glycogen phosphorylase kinase), another nucleotide (as in nucleoside diphosphate kinase), or a metabolic intermediate such as oxaloacetate (as in PEP carboxykinase). The reaction catalyzed by a kinase is a phosphorylation. On the other hand, phosphorolysis is a displacement reaction in which phosphate is the attacking species and becomes covalently attached at the point of bond breakage. Such reactions are catalyzed by phosphorylases. Glycogen phosphorylase, for example, catalyzes the phosphorolysis of glycogen, producing glucose 1-phosphate. Dephosphorylation, the removal of a phosphoryl group from a phosphate ester, is catalyzed by phosphatases, with water as the attacking species. Fructose bisphosphatase-1 converts fructose 1,6-bisphosphate to fructose 6-phosphate in gluconeogenesis, and phosphorylase a phosphatase removes phosphoryl groups from phosphoserine in phosphorylated glycogen phosphorylase. Whew!
+
+Citrate synthase, the first enzyme in the citric acid cycle (see Fig. 16-7), is one of many enzymes that catalyze condensation reactions, yielding a product more chemically complex than its precursors. Synthases catalyze condensation reactions in which no nucleoside triphosphate (ATP, GTP, and so forth) is required as an energy source. Synthetases catalyze condensations that do use ATP or another nucleoside triphosphate as a source of energy for the synthetic reaction. Succinyl-CoA synthetase is such an enzyme. Ligases (from the Latin ligare, "to tie together") are enzymes that catalyze condensation reactions in which two atoms are joined, using ATP or another energy source. (Thus, synthetases are ligases.) DNA ligase, for example, closes breaks in DNA molecules, using energy supplied by either ATP or $\mathrm{NAD^{+}}$ ; it is widely used in joining DNA pieces for genetic engineering. Ligases are not to be confused with lyases, enzymes that catalyze cleavages (or, in the reverse direction, additions) in which electronic rearrangements occur. The PDH complex, which oxidatively cleaves $\mathrm{CO}_{2}$ from pyruvate, is a member of the large class of lyases.
+
+![](images/4cd0ebbea920f474eac2e47818cf1b131cfff2587bd148c9e073389052248cfd.jpg)
+
+FIGURE 13-10 An oxidation-reduction reaction. Shown here is the oxidation of lactate to pyruvate. In this dehydrogenation, two electrons and two hydrogen ions (the equivalent of two hydrogen atoms) are removed from C-2 of lactate, an alcohol, to form pyruvate, a ketone. In cells the reaction is catalyzed by lactate dehydrogenase and the electrons are transferred to the cofactor nicotinamide adenine dinucleotide $(\mathrm{NAD}^{+})$ . This reaction is fully reversible; pyruvate can be reduced by electrons transferred from the cofactor.
+
+In some biological oxidation reactions, molecular oxygen is the electron acceptor. If the oxygen atoms do not appear in the oxidized product, the enzyme is an oxidase. If one or both of the oxygen atoms do appear in the oxidized product, as a new hydroxyl or carboxyl group, for example, the enzyme is an oxygenase. Both classes are further subdivided. Mixed-function oxidases oxidize two different substrates simultaneously. Monooxygenases and dioxygenases catalyze reactions in which one or two oxygen atoms, respectively, are incorporated into the organic product. These enzymes are particularly important in biosynthetic pathways of fatty acids and eicosanoids (see Box 21-1). Dehydrogenases catalyze oxidation-reductase reactions in which NAD $^{+}$ is electron acceptor, and molecular oxygen is generally not involved.
+
+Unfortunately, these descriptions of enzyme types overlap, and many enzymes have two or more common names. Succinyl-CoA synthetase, for example, is also called succinate thiokinase; the enzyme is both a synthetase in the citric acid cycle and a kinase when acting in the direction of succinyl-CoA synthesis. This raises another source of confusion in the naming of enzymes. An enzyme may have been discovered by the use of an assay in which, say, A is converted to B. The enzyme is then named for that reaction. Later work may show, however, that in the cell, the enzyme functions primarily in converting B to A. Commonly, the first name continues to be used, although the metabolic role of the enzyme would be better described by naming it for the reverse reaction. The glycolytic enzyme pyruvate kinase illustrates this situation (p. 521). To a beginner in biochemistry, this duplication in nomenclature can be bewildering. International committees have made heroic efforts to systematize the nomenclature of enzymes (see Table 6-3 for a brief summary of the system), but some systematic names have proved too long and cumbersome and are not frequently used in biochemical conversation.
+
+We have tried throughout this book to use the enzyme name most commonly employed by working biochemists and to point out cases in which an enzyme has more than one widely used name.
+
+carbon atom becomes covalently bonded to an oxygen atom. The enzymes that catalyze oxidations with oxygen as electron acceptor are generally called oxidases or, if the oxygen atom is derived directly from molecular oxygen ( $O_{2}$ ) and incorporated into the product, oxygenases.
+
+Every oxidation must be accompanied by a reduction, in which an electron acceptor acquires the electrons removed by oxidation. Oxidation reactions generally release energy (think of campfires: the compounds in wood are oxidized by oxygen molecules in the air). P5 Most living cells obtain the energy needed for cellular work by oxidizing metabolic fuels such as carbohydrates or fat (photosynthetic organisms can also trap and use the energy of sunlight). The catabolic (energy-yielding) pathways described in Chapters 14 through 19 are oxidative reaction sequences that result in the transfer of electrons from fuel molecules, through a series of electron carriers, to oxygen. The high affinity of $O_{2}$ for electrons makes the overall electron-transfer process highly exergonic, providing the energy that drives ATP synthesis—the central goal of catabolism.
+
+Many of the reactions within these five classes are facilitated by cofactors, in the form of coenzymes and metal ions (vitamin $B_{12}$ , S-adenosylmethionine, folate, nicotinamide, and $Fe^{2+}$ are some examples). Cofactors bind to enzymes—in some cases reversibly, in other cases almost irreversibly—and give them the capacity to promote a particular kind of chemistry (p. 178). Most cofactors participate in a narrow range of closely related reactions. In the following chapters, we introduce and discuss each important cofactor at the point where we first encounter its function. The cofactors provide another way to organize the study of biochemical processes, given that the reactions facilitated by a given cofactor generally are mechanistically related.
+
+## Biochemical and Chemical Equations Are Not Identical
+
+Biochemists write metabolic equations in a simplified way, and this is particularly evident for reactions involving ATP. Phosphorylated compounds can exist in several ionization states and, as we have noted, the different species can bind $Mg^{2+}$ . For example, at pH 7 and 2 mM $Mg^{2+}$ , ATP exists as an equilibrium distribution of the forms $ATP^{4-}$ , $HATP^{3-}$ , $H_{2}ATP^{2-}$ , $MgHATP^{-}$ , and $Mg_{2}ATP$ . In thinking about the biological role of ATP, however, we are not always interested in all this detail, and so we consider ATP as an entity made up of a sum of species, and we write its hydrolysis as the biochemical equation
+
+$$
+\mathrm{ATP} + \mathrm{H} _ {2} \mathrm{O} \longrightarrow \mathrm{ADP} + \mathrm{P} _ {\mathrm{i}}
+$$
+
+where ATP, ADP, and $P_{i}$ are sums of species. The corresponding standard transformed equilibrium constant, $K_{eq}^{\prime} = [ADP]_{eq}[P_{i}]_{eq}/[ATP]_{eq}$ , depends on the pH and the concentration of free $Mg^{2+}$ . Note that $H^{+}$ and $Mg^{2+}$ do not appear in the biochemical equation, because their concentrations are not significantly changed by the reaction. Thus a biochemical equation does not necessarily balance H, Mg, or charge, although it does balance all other elements involved in the reaction (C, N, O, and P in the equation above).
+
+We can write a chemical equation that does balance for all elements and for charge. For example, when ATP is hydrolyzed at a pH above 8.5 in the absence of $Mg^{2+}$ , the chemical reaction is represented by
+
+$$
+\mathrm{ATP} ^ {4 -} + \mathrm{H} _ {2} \mathrm{O} \longrightarrow \mathrm{ADP} ^ {3 -} + \mathrm{HPO} _ {4} ^ {2 -} + \mathrm{H} ^ {+}
+$$
+
+The corresponding equilibrium constant, $K_{eq} = [ADP^{3-}]_{eq}$ $[HPO_{4}^{2-}]_{eq}[H^{+}]_{eq}/[ATP^{4-}]_{eq}$ , depends only on temperature, pressure, and ionic strength.
+
+Both ways of writing a metabolic reaction have value in biochemistry. Chemical equations are needed when we want to account for all atoms and charges in a reaction, as when we are considering the mechanism of a chemical reaction. Biochemical equations are used to determine in which direction a reaction will proceed spontaneously, given a specified pH and $[Mg^{2+}]$ , or to calculate the equilibrium constant of such a reaction.
+
+Throughout this book we use biochemical equations, unless the focus is on chemical mechanism, and we use values of $\Delta G^{\prime\circ}$ and $K_{\mathrm{eq}}^{\prime}$ as determined at pH 7 and $1\mathrm{mmMg}^{2+}$ .
+
+## SUMMARY 13.2 Chemical Logic and Common Biochemical Reactions
+
+Living systems make use of a large number of chemical reactions that can be classified into five general types: reactions that make or break carbon–carbon bonds; internal rearrangements and eliminations; free-radical reactions; group transfers; and oxidation-reduction reactions. Heterolytic cleavages occur often in reactions that make or break C—C bonds.
+
+■ Carbonyl groups play a special role in reactions that form or cleave C—C bonds. Carbanion intermediates are common and are stabilized by adjacent carbonyl groups or, less often, by imines or certain cofactors.
+
+A redistribution of electrons can produce internal rearrangements, isomerizations, and eliminations. Such reactions include intramolecular oxidation-reduction, change in cis-trans arrangement at a double bond, and transposition of double bonds.
+
+■ Homolytic cleavage of covalent bonds to generate free radicals occurs in some pathways.
+
+■ Phosphoryl transfer reactions are an especially important type of group transfer in cells, required for the activation of molecules for reactions that would otherwise be highly unfavorable.
+
+\- Oxidation-reduction reactions involve the loss or gain of electrons: one reactant gains electrons and is reduced, while the other loses electrons and is oxidized. Oxidation reactions generally release energy and are important in catabolism.
+
+■ Biochemists often write reaction equations that are not balanced for $\mathbf{H}^{+}$ and don't attempt to describe the state of phosphate ionization.
+
+## 13.3 Phosphoryl Group Transfers and ATP
+
+Having developed some fundamental principles of energy changes in chemical systems and reviewed the common classes of reactions, we can now examine the energy cycle in cells and the special role of ATP as the energy currency that links catabolism and anabolism (see Fig. 1-28). Heterotrophic cells obtain free energy in a chemical form by the catabolism of nutrient molecules, and they use that energy to make ATP from ADP and $P_{i}$ . ATP then donates some of its chemical energy to endergonic processes such as the synthesis of metabolic intermediates and macromolecules from smaller precursors, the transport of substances across membranes against concentration gradients, and mechanical motion. This donation of energy from ATP generally involves the covalent participation of ATP in the reaction that is to be driven, with the eventual result that ATP is converted to ADP and $P_{i}$ or, in some reactions, to AMP and 2 $P_{i}$ . We discuss here the chemical basis for the large free-energy changes that accompany hydrolysis of ATP and other high-energy phosphate compounds, and we show that most cases of energy donation by ATP involve group transfer, not simple hydrolysis of ATP. To illustrate the range of energy transductions in which ATP provides the energy, we consider the synthesis of information-rich macromolecules, the transport of solutes across membranes, and motion produced by muscle contraction.
+
+## The Free-Energy Change for ATP Hydrolysis Is Large and Negative
+
+Figure 13-11 summarizes the chemical basis for the relatively large, negative, standard free energy of hydrolysis of ATP. The hydrolytic cleavage of the terminal phosphoric acid anhydride (phosphoanhydride) bond in ATP separates one of the three negatively charged phosphates and thus relieves some of the internal electrostatic repulsion in ATP; the $P_{i}$ released is stabilized by the formation of several resonance forms not possible in ATP.
+
+The free-energy change for ATP hydrolysis is -30.5 kJ/mol under standard conditions, but the actual free energy of hydrolysis ( $\Delta G$ ) of ATP in living cells is very different: the cellular concentrations of ATP, ADP, and $P_{i}$ are not identical and are much lower than the 1.0 M of standard conditions (Table 13-5). Furthermore, $Mg^{2+}$ in the cytosol binds to ATP and ADP (Fig. 13-12), and for most enzymatic reactions that involve ATP as phosphoryl group donor, the true substrate is $MgATP^{2-}$ . The relevant $\Delta G^{\prime\circ}$ is therefore that for $MgATP^{2-}$ hydrolysis. We can calculate $\Delta G$ for ATP hydrolysis using data such as those in Table 13-5. The actual free energy of hydrolysis of ATP under intracellular conditions is often called its phosphorylation potential, $\Delta G_{p}$ , for reasons we will explain.
+
+![](images/67bfc2f8e499d164e9ea4f2e8fcac97ec753db4e6a0f3c9d9044a63e2f82c9ea.jpg)  
+FIGURE 13-11 Chemical basis for the large free-energy change associated with ATP hydrolysis. ① The charge separation that results from hydrolysis relieves electrostatic repulsion among the four negative charges on ATP. ② The product inorganic phosphate ( $P_{i}$ ) is stabilized by formation of a resonance hybrid, in which each of the four phosphorus–oxygen bonds has the same degree of double-bond character and the hydrogen ion is not permanently associated with any one of the oxygens. (Some degree of resonance stabilization also occurs in phosphates involved in ester or anhydride linkages, but fewer resonance forms are possible than for $P_{i}$ .) A third factor (not shown) that favors ATP hydrolysis is the greater degree of solvation (hydration) of the products $P_{i}$ and ADP relative to ATP, which further stabilizes the products relative to the reactants.
+
+Because the concentrations of ATP, ADP, and $P_{i}$ differ from one cell type to another, $\Delta G_{p}$ for ATP likewise differs among cells. Moreover, in any given cell, $\Delta G_{p}$ can vary from time to time, depending on the metabolic conditions and how they influence the concentrations of ATP, ADP, $P_{i}$ , and $H^{+}$ (pH). We can calculate the actual free-energy change for any given metabolic reaction as it occurs in a cell, provided we know the concentrations of all the reactants and products and other factors (such as pH, temperature, and $[Mg^{2+}]$ ) that may affect the actual free-energy change.
+
+Total Concentrations of Adenine Nucleotides, Inorganic Phosphate, and Phosphocreatine in Some Cells  
+![](images/ab7d7c06c5cfd52f19cd0cbb11d1a15fb31ecd8bc9c9cc01f974602c4187150f.jpg)
+
+<table><tr><td></td><td colspan="5">Concentration (mM)a</td></tr><tr><td>Cell type</td><td>ATP</td><td>ADPb</td><td>AMP</td><td>Pi</td><td>PCr</td></tr><tr><td>Rat hepatocyte</td><td>3.38</td><td>1.32</td><td>0.29</td><td>4.8</td><td>0</td></tr><tr><td>Rat myocyte</td><td>8.05</td><td>0.93</td><td>0.04</td><td>8.05</td><td>27</td></tr><tr><td>Rat neuron</td><td>2.59</td><td>0.73</td><td>0.06</td><td>2.72</td><td>4.7</td></tr><tr><td>Human erythrocyte</td><td>2.25</td><td>0.25</td><td>0.02</td><td>1.65</td><td>0</td></tr><tr><td>E. coli cell</td><td>9.6</td><td>0.56</td><td>0.28</td><td>—</td><td>—</td></tr></table>
+
+$^{a}$ For erythrocytes, the concentrations are those of the cytosol (human erythrocytes lack a nucleus and mitochondria). In the other types of cells, the data are for the entire cell contents, although the cytosol and the mitochondria have very different concentrations of ADP. PCr is phosphocreatine, discussed on p. 487.  
+$^{b}$ This value reflects total concentration; the true value for free ADP may be much lower (Worked Example 13-2).  
+Mammalian data from R. L. Veech et al., J. Biol. Chem. 254:6538, 1979. E. coli data from B. D. Bennett et al., Nat. Chem. Biol. 5:593, 2009.
+
+FIGURE 13-12 $\mathsf{Mg}^{2+}$ and ATP. Formation of $\mathsf{Mg}^{2+}$ complexes partially shields the negative charges and influences the conformation of the phosphate groups in nucleotides such as ATP and ADP.
+
+## WORKED EXAMPLE 13-2 Calculation of $\Delta G_{p}$
+
+Calculate the actual free energy of hydrolysis of ATP, $\Delta G_{p}$ , in human erythrocytes. The standard free energy of hydrolysis of ATP is -30.5 kJ/mol, and the concentrations of ATP, ADP, and $P_{i}$ in erythrocytes are as shown in Table 13-5. Assume that the pH is 7.0 and the temperature is 37 °C (human body temperature). What does this reveal about the amount of energy required to synthesize ATP under the same cellular conditions?
+
+SOLUTION: The concentrations of ATP, ADP, and $P_{i}$ in human erythrocytes are 2.25, 0.25, and 1.65 mm, respectively. The actual free energy of hydrolysis of ATP under these conditions is given by the relationship (see Eqn 13-4)
+
+$$
+\Delta G _ {\mathrm{p}} = \Delta G ^ {\prime \circ} + R T \ln \frac {[ \mathrm{ADP} ] [ \mathrm{P} _ {i} ]}{[ \mathrm{ATP} ]}
+$$
+
+Substituting the appropriate values, we get
+
+$$
+\begin{array}{r l} \Delta G _ {\mathrm{p}} & = - 3 0. 5 \mathrm{kJ/mol} + \left[ (8. 3 1 5 \mathrm{J/mol} \cdot \mathrm{K}) (3 1 0 \mathrm{K}) \ln \frac {(0 . 2 5 \times 1 0 ^ {- 3}) (1 . 6 5 \times 1 0 ^ {- 3})}{(2 . 2 5 \times 1 0 ^ {- 3})} \right] \\ & = - 3 0. 5 \mathrm{kJ/mol} + (2. 5 8 \mathrm{kJ/mol}) \ln 1. 8 \times 1 0 ^ {- 4} \\ & = - 3 0. 5 \mathrm{kJ/mol} + (2. 5 8 \mathrm{kJ/mol}) (- 8. 6) \\ & = - 3 0. 5 \mathrm{kJ/mol} - 2 2 \mathrm{kJ/mol} \\ & = - 5 2 \mathrm{kJ/mol} \end{array}
+$$
+
+Thus $\Delta G_{\mathrm{p}}$ , the actual free-energy change for ATP hydrolysis in the intact erythrocyte (-52 kJ/mol), is much larger than the standard free-energy change (-30.5 kJ/mol). Similarly, the free energy required to synthesize ATP from ADP and $P_{i}$ under the conditions prevailing in the erythrocyte would be 52 kJ/mol.
+
+To further complicate the issue, the total concentrations of ATP, ADP, and $P_{i}$ (and $H^{+}$ ) in a cell—such as the values given in Table 13-5—may be substantially higher than the free concentrations, which are the thermodynamically relevant values. The difference is due to tight binding of ATP, ADP, and $P_{i}$ to cellular proteins. For example, the free [ADP] in resting muscle has been variously estimated at between 1 and 37 $\mu$ M. Using the value 25 $\mu$ M in Worked Example 13-2, we would get a $\Delta G_{p}$ of -58 kJ/mol. Calculation of the exact value of $\Delta G_{p}$ , however, is perhaps less instructive than the generalization we can make about actual free-energy changes: in vivo, the energy released by ATP hydrolysis is greater than the standard free-energy change, $\Delta G^{\circ}$ .
+
+In the following discussions we use the $\Delta G^{\prime\circ}$ value for ATP hydrolysis because this allows comparisons, on the same basis, with the energetics of other cellular reactions. Always keep in mind, however, that in living cells $\Delta G$ is the relevant quantity—for ATP hydrolysis and all other reactions—and may be quite different from $\Delta G^{\prime\circ}$ .
+
+Here we must make an important point about cellular ATP levels. We have shown (and will discuss further)
+
+how the chemical properties of ATP make it a suitable form of energy currency in cells. But it is not merely the molecule's intrinsic chemical properties that give it this ability to drive metabolic reactions and other energy-requiring processes. Even more important is that, P4 in the course of evolution, there has been a very strong selective pressure for regulatory mechanisms that hold cellular ATP concentrations far above the equilibrium concentrations for the hydrolysis reaction. When the ATP level drops, not only does the amount of fuel decrease, but the fuel itself loses its potency: $\Delta G$ for its hydrolysis (that is, its phosphorylation potential, $\Delta G_{\mathrm{p}}$ ) is diminished. As our discussions of the metabolic pathways that produce and consume ATP will show, living cells have developed elaborate mechanisms—often at what might seem to us the expense of efficiency—to maintain high concentrations of ATP.
+
+## Other Phosphorylated Compounds and Thioesters Also Have Large, Negative Free Energies of Hydrolysis
+
+ATP is not the only biological compound with a large, negative free energy of hydrolysis. Table 13-6 lists the standard free energies of hydrolysis for some biologically important phosphorylated compounds. In all of these phosphate-releasing reactions, a few of which we describe below, the several resonance forms available to $P_{i}$ (Fig. 13-11) stabilize this product relative to the reactant, contributing to an already negative free-energy change.
+
+Phosphoenolpyruvate (PEP; Fig. 13-13), a central intermediate in the energy-conserving process of glycolysis (Chapter 14), contains a phosphate ester bond that undergoes hydrolysis to yield the enol form of pyruvate, and this direct product can tautomerize to the more stable keto form. Because the reactant (PEP) has only one form (enol) and the product (pyruvate) has two possible forms, the reaction occurs with a gain in entropy, and the product is therefore stabilized relative to the reactant. This is a major contributor to the high standard free energy of hydrolysis of phosphoenolpyruvate: $\Delta G^{\prime\circ} = -61.9$ kJ/mol. A second contributor is the greater resonance stabilization in the $\mathrm{P_i}$ released by cleavage of PEP.
+
+Another intermediate in glycolysis, the three-carbon compound 1,3-bisphosphoglycerate (Fig. 13-14), contains an anhydride bond between the C-1 carboxyl group and phosphoric acid. Hydrolysis of this acyl phosphate is accompanied by a large, negative, standard free-energy change ( $\Delta G^{\prime\circ} = -49.3$ kJ/mol), which can, again, be explained in terms of the structure of reactant and products. When $H_{2}O$ is added across the anhydride bond of 1,3-bisphosphoglycerate, one of the direct products, 3-phosphoglyceric acid, can lose a proton to give the carboxylate ion, 3-phosphoglycerate, which has two equally probable resonance forms. Removal of the direct product (3-phosphoglyceric acid) by its further metabolism and formation of the resonance-stabilized ion both favor the forward reaction.
+
+![](images/7677b20825f66de57d28c124d76618db849f7f49ff34355b2b209cbae6bab4b6.jpg)
+
+TABLE 13-6 Standard Free Energies of Hydrolysis of Some Phosphorylated Compounds and Acetyl-CoA (a Thioester)
+
+<table><tr><td rowspan="2">Compounds and Acetyl-CoA</td><td colspan="2"> $\Delta G^{\prime\circ}$ </td></tr><tr><td>(kJ/mol)</td><td>(kcal/mol)</td></tr><tr><td>Phosphoenolpyruvate</td><td>-61.9</td><td>-14.8</td></tr><tr><td>1,3-Bisphosphoglycerate(→ 3-phosphoglycerate +  $P_i$ )</td><td>-49.3</td><td>-11.8</td></tr><tr><td>Phosphocreatine</td><td>-43.0</td><td>-10.3</td></tr><tr><td>ADP (→ AMP +  $P_i$ )</td><td>-32.8</td><td>-7.8</td></tr><tr><td>ATP (→ ADP +  $P_i$ )</td><td>-30.5</td><td>-7.3</td></tr><tr><td>ATP (→ AMP +  $PP_i$ )</td><td>-45.6</td><td>-10.9</td></tr><tr><td>AMP (→ adenosine +  $P_i$ )</td><td>-14.2</td><td>-3.4</td></tr><tr><td> $PP_i$ (→ 2 $P_i$ )</td><td>-19.2</td><td>-4.0</td></tr><tr><td>Glucose 3-phosphate</td><td>-20.9</td><td>-5.0</td></tr><tr><td>Fructose 6-phosphate</td><td>-15.9</td><td>-3.8</td></tr><tr><td>Glucose 6-phosphate</td><td>-13.8</td><td>-3.3</td></tr><tr><td>Glycerol 3-phosphate</td><td>-9.2</td><td>-2.2</td></tr><tr><td>Acetyl-CoA</td><td>-31.4</td><td>-7.5</td></tr></table>
+
+Data mostly from W. P. Jencks, in Handbook of Biochemistry and Molecular Biology, 3rd edn (G. D. Fasman, ed.), Physical and Chemical Data, Vol. 1, p. 296, CRC Press, 1976. Value for the free energy of hydrolysis of PP, from P. A. Frey and A. Arabshahi, Biochemistry 34:11,307, 1995.
+
+In phosphocreatine (Fig. 13-15), which is used in muscle tissue to replenish ATP after its use in contraction, the P—N bond can be hydrolyzed to generate free creatine and $P_{i}$ . The release of $P_{i}$ and the resonance stabilization of creatine favor the forward reaction. The standard free-energy change of phosphocreatine hydrolysis is therefore large: -43.0 kJ/mol.
+
+FIGURE 13-13 Hydrolysis of phosphoenolpyruvate (PEP). Catalyzed by pyruvate kinase, this reaction is followed by spontaneous tautomerization of the product, pyruvate. Tautomerization is not possible in PEP, and thus the products of hydrolysis are stabilized relative to the reactants. Resonance stabilization of $\mathsf{P_i}$ also occurs, as shown in Figure 13-11.
+
+![](images/88cc5fe3fd51724edb02b6f692d0804de331e9b3d461ac086a0b8235c0955a6c.jpg)
+
+FIGURE 13-14 Hydrolysis of 1,3-bisphosphoglycerate. The direct product of hydrolysis is 3-phosphoglyceric acid, with an undissociated carboxylic acid. Its dissociation allows resonance structures that stabilize the product relative to the reactants. Resonance stabilization of P, further contributes to the negative free-energy change.  
+![](images/13c16c32f165cf27ef7c6c34d8b2c59c01cc810c5e28d3dc62388b5f4b4ab4bd.jpg)  
+1,3-Bisphosphoglycerate $^{4-}$ + H $_{2}$ O → 3-phosphoglycerate $^{3-}$ + HPO $_{4}^{2-}$ + H $^{+}$ $\Delta G^{\circ}= -49.3\ kJ/mol$
+
+FIGURE 13-15 Hydrolysis of phospho- creatine. Breakage of the P—N bond in phospho- creatine produces creatine, which is stabilized by formation of a resonance hybrid. The other product, $P_{i}$ , is also resonance stabilized.  
+![](images/5fc75a6e7a3689219d3d7c386c963a405b85b5c1194643d81cb437ca51b2a852.jpg)
+
+Thioesters, in which a sulfur atom replaces the usual oxygen in the ester bond, also have large, negative, standard free energies of hydrolysis. Acetyl-coenzyme A, or acetyl-CoA (Fig. 13-16), is one of many thioesters important in metabolism. The acyl group in these compounds
+
+![](images/0eceefb39856168e1b837d868a310a5cdef5e768fb6bf9ff84c5242a6b29f2a3.jpg)
+
+FIGURE 13-16 Hydrolysis of acetyl-coenzyme A. Acetyl-CoA is a thioester with a large, negative, standard free energy of hydrolysis. Thioesters contain a sulfur atom in the position occupied by an oxygen atom in oxygen esters. The complete structure of coenzyme A (CoA, or CoASH) is shown in Figure 8-41.
+
+is activated for transacylation and condensation. Thioesters undergo much less resonance stabilization than do oxygen esters; consequently, the difference in free energy between the reactant and its hydrolysis products, which are resonance-stabilized, is greater for thioesters than for comparable oxygen esters (Fig. 13-17). In both cases, hydrolysis of the ester generates a carboxylic acid, which can ionize and assume several resonance forms. Together, these factors result in the large, negative $\Delta G^{\prime \circ}$ (-31.4 kJ/mol) for acetyl-CoA hydrolysis.
+
+![](images/a0ad21113afacd5c7a1ed1c2a2781fb39627925b4308df2fec63c88e36dec878.jpg)
+
+To summarize, for hydrolysis reactions with large, negative, standard free-energy changes, the products are more stable than the reactants for one or more of the following reasons: (1) the bond strain in reactants due to electrostatic repulsion is relieved by charge separation, as for ATP; (2) the products are stabilized by ionization, as for ATP, acyl phosphates, and thioesters; (3) the products are stabilized by isomerization (tautomerization), as for PEP; and/or (4) the products are stabilized by resonance, as for creatine released from phosphocreatine, carboxylate ion released from acyl phosphates and thioesters, and phosphate ( $P_{i}$ ) released from anhydride or ester linkages.
+
+## ATP Provides Energy by Group Transfers, Not by Simple Hydrolysis
+
+Throughout this book you will encounter reactions or processes for which ATP supplies energy, and the contribution of ATP to these reactions is commonly indicated as in Figure 13-18a, with a single arrow showing the conversion of ATP to ADP and $\mathrm{P_i}$ (or, in some cases, of ATP to AMP and pyrophosphate, $\mathrm{PP_i}$ ). When written this way, these reactions of ATP seem to be simple hydrolysis reactions in which water displaces $\mathrm{P_i}$ (or $\mathrm{PP_i}$ ), and one is tempted to say that an ATP-dependent reaction is "driven by the hydrolysis of ATP." This is not the case. ATP hydrolysis per se usually accomplishes nothing but the liberation of heat, which cannot drive a chemical process in an isothermal system. A single reaction arrow such as that in Figure 13-18a almost invariably represents
+
+![](images/4b1a63b1896209c92066b35bc6ca9086c212d45ac4c58b47df3fa66cc8d12f88.jpg)
+
+![](images/ea39928bbdcb0539d4e439d1651b6b26d3595bc92d6b640a4d905a867a396ae5.jpg)  
+FIGURE 13-17 Free energy of hydrolysis for thioesters and oxygen esters. The products of both types of hydrolysis reaction have about the same free-energy content (G), but the thioester has a higher free-energy content than the oxygen ester. Orbital overlap between the O and C atoms allows resonance stabilization in oxygen esters; orbital overlap between S and C atoms is poorer and provides little resonance stabilization.
+
+FIGURE 13-18 ATP hydrolysis in two steps. (a) The contribution of ATP to a reaction is often shown as a single step but is almost always a two-step process. (b) Shown here is the reaction catalyzed by ATP-dependent glutamine synthetase. ① A phosphoryl group is transferred from ATP to glutamate, then ② the phosphoryl group is displaced by $\mathrm{NH}_3$ and released as $\mathbb{P}_{\mathrm{i}}$ .
+
+a two-step process (Fig. 13-18b) in which part of the ATP molecule, a phosphoryl or pyrophosphoryl group or the adenylate moiety (AMP), is first transferred to a substrate molecule or to an amino acid residue in an enzyme, becoming covalently attached to the substrate or the enzyme and raising its free-energy content (activating it). Then, in a second step, the phosphate-containing moiety transferred in the first step is displaced, generating $\mathrm{P_i}$ , $\mathrm{PP_i}$ , or AMP as the leaving group. Thus, ATP participates covalently in the enzyme-catalyzed reaction to which it contributes free energy.
+
+Some processes do involve direct hydrolysis of ATP (or the related GTP, guanosine triphosphate), however. For example, noncovalent binding of ATP (or GTP), followed by its hydrolysis to ADP (or GDP, guanosine diphosphate) and $P_{i}$ , can provide the energy to cycle some proteins between two conformations, producing mechanical motion. This occurs in muscle contraction (see Fig. 5-29) and in the movement of enzymes along DNA (see Fig. 25-30) or of ribosomes along messenger RNA (see Fig. 27-30). The energy-dependent reactions catalyzed by helicases, RecA protein, and some topoisomerases (Chapter 25) also involve direct hydrolysis of phosphoanhydride bonds. The AAA+ ATPases involved in DNA replication and other processes described in Chapter 25 use ATP hydrolysis to cycle associated proteins between active and inactive forms. GTP-binding proteins that act in signaling pathways directly hydrolyze GTP to drive conformational changes that terminate signals triggered by hormones or by other extracellular factors (Chapter 12).
+
+The phosphate compounds found in living organisms can be divided, somewhat arbitrarily, into two groups, based on their standard free energies of hydrolysis (Fig. 13-19). P4 "High-energy" compounds have a $\Delta G^{\prime\circ}$ of hydrolysis more negative than $-25\mathrm{kJ/mol}$ ; "low-energy" compounds have a less negative $\Delta G^{\prime\circ}$ . Based on this criterion, ATP, with a $\Delta G^{\prime\circ}$ of hydrolysis of $-30.5\mathrm{kJ/mol}$ (-7.3 kcal/mol), is a high-energy compound; glucose 6-phosphate, with a $\Delta G^{\prime\circ}$ of hydrolysis of $-13.8\mathrm{kJ/mol}$ (-3.3 kcal/mol), is a low-energy compound.
+
+![](images/2a3c5dce42f873333fa796b83d746e391ed1b0b74f2ecbb81a42136db33dab98.jpg)  
+FIGURE 13-19 Ranking of biological phosphate compounds by standard free energies of hydrolysis. Phosphoryl groups, represented by Ⓟ, flow from high-energy phosphoryl group donors via ATP to acceptor molecules (such as glucose and glycerol) to form their low-energy phosphate derivatives. (The location of each compound's donor phosphoryl group along the scale is an approximate indication of the compound's $\Delta G^{70}$ of hydrolysis.) This flow of phosphoryl groups, catalyzed by kinases, proceeds with an overall loss of free energy under intracellular conditions. Hydrolysis of low-energy phosphate compounds releases $P_{i}$ , which has an even lower phosphoryl group transfer potential.
+
+The term “high-energy phosphate bond,” long used by biochemists to describe the P—O bond broken in hydrolysis reactions, is incorrect and misleading, as it wrongly suggests that the bond itself contains the energy. In fact, the breaking of all chemical bonds requires an input of energy. The free energy released by hydrolysis of phosphate compounds does not come from the specific bond that is broken; it results from the products of the reaction having a lower free-energy content than the reactants. For simplicity, we sometimes use the term “high-energy phosphate compound” when referring to ATP or other phosphate compounds with a large, negative, standard free energy of hydrolysis.
+
+P2 As is evident from the additivity of free-energy changes of sequential reactions (see Section 13.1), any phosphorylated compound can be synthesized by coupling the synthesis to the breakdown of another phosphorylated compound with a more negative free energy of hydrolysis. For example, because cleavage of $P_{i}$ from phosphoenolpyruvate releases more energy than is needed to drive the condensation of $P_{i}$ with ADP, the direct donation of a phosphoryl group from PEP to ADP is thermodynamically feasible:
+
+$$
+\Delta G ^ {\prime \circ} (\mathrm{kJ/mol})\tag{1}
+$$
+
+$$
+\mathrm{PEP} + \mathrm{H} _ {2} \mathrm{O} \longrightarrow \text {   Pyruvate   } + \mathrm{P} _ {\mathrm{i}}\tag{2}
+$$
+
+$$
+\mathrm{ADP} + \mathrm{P} _ {1} \longrightarrow \mathrm{ATP} + \mathrm{H} _ {2} \mathrm{O} \quad + 3 0. 5
+$$
+
+$$
+\text { Sum: } \quad \mathrm{PEP} + \mathrm{ADP} \longrightarrow \mathrm{Pyruvate} + \mathrm{ATP} - 3 1. 4
+$$
+
+Notice that although the actual reaction is represented as the algebraic sum of the first two reactions, the actual reaction is a third, distinct reaction that does not involve $P_{i}$ ; PEP donates a phosphoryl group directly to ADP. We can describe phosphorylated compounds as having a high or low phosphoryl group transfer potential, on the basis of their standard free energies of hydrolysis (as listed in Table 13-6). The phosphoryl group transfer potential of PEP is very high, that of ATP is high, and that of glucose 6-phosphate is low (Fig. 13-19).
+
+Much of catabolism is directed toward the synthesis of high-energy phosphate compounds, but their formation is not an end in itself; they are the means of activating a wide variety of compounds for further chemical transformation. The transfer of a phosphoryl group to a compound effectively puts free energy into that compound, so that it has more free energy to give up during subsequent metabolic transformations. We described above how the synthesis of glucose 6-phosphate is accomplished by phosphoryl group transfer from ATP. In the next chapter we see how this phosphorylation of glucose activates, or "primes," the glucose for catabolic reactions that occur in nearly every living cell. Because of its intermediate position on the scale of group transfer potential, ATP can carry energy from high-energy phosphate compounds produced by catabolism (phosphoenolpyruvate, for example) to compounds such as glucose, converting them into more reactive species with better leaving groups. ATP thus serves as the universal energy currency in all living cells.
+
+One more chemical feature of ATP is crucial to its role in metabolism: although, in aqueous solution, ATP is thermodynamically unstable and is therefore a good phosphoryl group donor, it is kinetically stable. Because of the huge activation energies (200 to 400 kJ/mol) required for uncatalyzed cleavage of its phosphoanhydride bonds, ATP does not spontaneously donate phosphoryl groups to water or to the hundreds of other potential acceptors in the cell. Only when specific enzymes are present to lower the energy of activation does phosphoryl group transfer from ATP proceed. The cell is therefore able to regulate the disposition of the energy carried by ATP by regulating the various enzymes that act on it.
+
+## ATP Donates Phosphoryl, Pyrophosphoryl, and Adenylyl Groups
+
+The reactions of ATP are generally $S_{N}2$ nucleophilic displacements (see Section 13.2) in which the nucleophile may be, for example, the oxygen of an alcohol or carboxylate, or a nitrogen of creatine or of the side chain of arginine or histidine. Each of the three phosphates of ATP is susceptible to nucleophilic attack (Fig. 13-20), and each position of attack yields a different type of product.
+
+![](images/edf1bbe783573866fd3b1f1dbe1faaf9c4d9cee30a8394630e67fd4b765f4575.jpg)
+
+Nucleophilic attack by an alcohol on the $\gamma$ phosphate (Fig. 13-20a) displaces ADP and produces a new phosphate ester. Studies with $^{18}$ O-labeled reactants have shown that the bridge oxygen in the new compound is derived from the alcohol, not from ATP; the group transferred from ATP is therefore a phosphoryl ( $-\mathrm{PO}_3^{2-}$ ), not a phosphate ( $-\mathrm{OPO}_3^{2-}$ ). Phosphoryl group transfer from ATP to glutamate (Fig. 13-18) or to glucose (p. 209) involves attack at the $\gamma$ position of the ATP molecule.
+
+Attack at the $\beta$ phosphate of ATP displaces AMP and transfers a pyrophosphoryl (not pyrophosphate) group to the attacking nucleophile (Fig. 13-20b). For example, the formation of 5-phosphoribosyl-1-pyrophosphate (Chapter 22), a key intermediate in nucleotide synthesis, results from attack of an —OH of the ribose on the $\beta$ phosphate.
+
+Nucleophilic attack at the $\alpha$ position of ATP displaces PP $_{i}$ and transfers adenylate (5'-AMP) as an adenylyl group (Fig. 13-20c); the reaction is an adenylylation (a-den'-i-li-la'-shun, one of the most ungainly words in the biochemical language). Notice that hydrolysis of the $\alpha-\beta$ phosphoanhydride bond releases considerably more energy (\~46 kJ/mol) than hydrolysis of the $\beta-\gamma$ bond (\~31 kJ/mol) (Table 13-6). Furthermore, the PP $_{i}$ formed as a byproduct of the adenylylation is hydrolyzed to two P $_{i}$ by the ubiquitous enzyme inorganic pyrophosphatase, releasing 19 kJ/mol and thereby providing a further energy "push" for the adenylylation reaction. In effect, both phosphoanhydride bonds of ATP are split in the overall reaction. Adenylylation reactions are therefore thermodynamically very favorable. P4 When the energy of ATP is used to drive a particularly unfavorable metabolic reaction, adenylylation is often the mechanism of energy coupling. Fatty acid activation is a good example of this energy-coupling strategy.
+
+The first step in the activation of a fatty acid—either for energy-yielding oxidation or for use in the synthesis
+
+FIGURE 13-20 Three positions on ATP for attack by the nucleophile R— $^{18}$ Ö. Any of the three P atoms ( $\alpha$ , $\beta$ , or $\gamma$ ) may serve as the electrophilic target for nucleophilic attack, in this case by the labeled nucleophile R— $^{18}$ Ö. The nucleophile may be an alcohol (ROH), a carboxyl group (RCOO $^{-}$ ), or a phosphoanhydride (a nucleoside mono- or diphosphate, for example). (a) When the oxygen of the nucleophile attacks the $\gamma$ position, the bridge oxygen of the product is labeled, indicating that the group transferred from ATP is a phosphoryl ( $—PO_{3}^{2-}$ ), not a phosphate ( $—OPO_{3}^{2-}$ ). (b) Attack on the $\beta$ position displaces AMP and leads to the transfer of a pyrophosphoryl (not pyrophosphate) group to the nucleophile. (c) Attack on the $\alpha$ position displaces PP $_{i}$ and transfers the adenylyl group to the nucleophile.
+
+of more complex lipids—is the formation of its thio ester (see Fig. 17-5). The direct condensation of a fatty acid with coenzyme A is endergonic, but the formation of a fatty acyl-CoA is made exergonic by stepwise removal of two phosphoryl groups from ATP. First, adenylate (AMP) is transferred from ATP to the carboxyl group of the fatty acid, forming a mixed anhydride (fatty acyl adenylate) and liberating PP $_{i}$ . The thiol group of coenzyme A then displaces the adenylyl group and forms a thioester with the fatty acid. The sum of these two reactions is energetically equivalent to the exergonic hydrolysis of ATP to AMP and PP $_{i}$ ( $\Delta G^{\prime \circ} = -45.6$ kJ/mol) and the endergonic formation of fatty acyl-CoA. The formation of fatty acyl-CoA ( $\Delta G^{\prime \circ} = -31.4$ kJ/mol) is made energetically favorable by hydrolysis of the PP $_{i}$ by inorganic pyrophosphatase. Thus, in the activation of a fatty acid, both phosphoanhydride bonds of ATP are broken. The resulting $\Delta G^{\prime \circ}$ is the sum of the $\Delta G^{\prime \circ}$ values for the breakage of these bonds, or $-45.6$ kJ/mol + $(-19.2)$ kJ/mol:
+
+$$
+\mathrm{ATP} + 2 \mathrm{H} _ {2} \mathrm{O} \longrightarrow \mathrm{AMP} + 2 \mathrm{P} _ {\mathrm{i}} \quad \Delta G ^ {\prime \circ} = - 6 4. 8 \mathrm{kJ/mol}
+$$
+
+The activation of amino acids before their polymerization into proteins (see Fig. 27-19) is accomplished by an analogous set of reactions in which a transfer RNA molecule takes the place of coenzyme A. An interesting use of the cleavage of ATP to AMP and PP $_{i}$ occurs in the firefly, which uses ATP as an energy source to produce flashes of light (Box 13-2).
+
+## Assembly of Informational Macromolecules Requires Energy
+
+When simple precursors are assembled into high molecular weight polymers with defined sequences (DNA, RNA, proteins), as described in detail in Part III, energy is required both for the condensation of monomeric units and for the creation of ordered sequences. The precursors for DNA and RNA synthesis are nucleoside triphosphates, and polymerization is accompanied by cleavage
+
+![](images/f232710717ca43843058b1ba09aac0f93c1f92cff735bb4643bbb76d63e80f78.jpg)
+
+## Firefly Flashes: Glowing Reports of ATP
+
+Bioluminescence requires considerable amounts of energy. The firefly uses ATP to convert chemical energy into light energy. Males emit a flash of light to attract females, who flash in return to signal their interest. In the 1950s, from many thousands of fireflies collected by children in and around Baltimore, William McElroy and his colleagues at Johns Hopkins University isolated the principal biochemical components: luciferin, a complex carboxylic acid, and luciferase, an enzyme. Activation of luciferin by an enzymatic reaction involving pyrophosphate cleavage of ATP to form luciferyl adenylate generates the light flash (Fig. 1). In the presence of molecular oxygen and luciferase, the luciferin undergoes a multistep oxidative decarboxylation to oxyluciferin. This process is accompanied by emission of light. The color of the light flash differs from one firefly species to another and seems to be determined by differences in the structure of the luciferase. Luciferin is regenerated from oxyluciferin in a subsequent series of reactions.
+
+![](images/b34f84be9c14804271f45c9f0d4b4b1a959c4a16ae7195f6007ba2440d1ed5fb.jpg)  
+The firefly, a beetle of the Lampyridae family. [Cathy Keifer/Fotolia]
+
+In the laboratory, pure firefly luciferin and luciferase are used to measure minute quantities of ATP by the intensity of the light flash produced. As little as a few picomoles ( $10^{-12}$ mol) of ATP can be measured in this way.
+
+![](images/6dd0d5dca6cf81eb8952cf9f9d4912fc822b9b8e30a6727ad0841c7842af069a.jpg)  
+FIGURE 1 Important components in the firefly bioluminescence cycle.
+
+of the phosphoanhydride linkage between the $\alpha$ and $\beta$ phosphates, with the release of PP $_{i}$ (Fig. 13-20). The moieties transferred to the growing polymer in these reactions are adenylate (AMP), guanylate (GMP), cytidyrate (CMP), or uridylate (UMP) for RNA synthesis, and their deoxy analogs (with TMP in place of UMP) for DNA synthesis. As noted above, the activation of amino acids for protein synthesis involves the donation of adenylyl groups from ATP, and we shall see in Chapter 27 that several steps of protein synthesis on the ribosome are also accompanied by GTP hydrolysis. In all these cases, the exergonic breakdown of a nucleoside triphosphate is coupled to the endergonic process of synthesizing a polymer of a specific sequence.
+
+ATP can supply the energy for transporting an ion or a molecule across a membrane into another aqueous compartment where its concentration is higher (see
+
+Fig. 11-39). Transport processes are major consumers of energy; in human kidney and brain, for example, as much as two-thirds of the energy consumed at rest is used to pump Na $^{+}$ and K $^{+}$ across plasma membranes via the Na $^{+}$ K $^{+}$ ATPase. The transport of Na $^{+}$ and K $^{+}$ is driven by cyclic phosphorylation and dephosphorylation of the transporter protein, with ATP as the phosphoryl group donor. Na $^{+}$ -dependent phosphorylation of the Na $^{+}$ K $^{+}$ ATPase forces a change in the protein's conformation, and K $^{+}$ -dependent dephosphorylation favors return to the original conformation. Each cycle in the transport process results in the conversion of ATP to ADP and P $_{i}$ , and it is the free-energy change of ATP hydrolysis that drives the cyclic changes in protein conformation that result in the electrogenic pumping of Na $^{+}$ and K $^{+}$ . Note that in this case, ATP interacts covalently by phosphoryl group transfer to the enzyme, not to the substrate.
+
+In the contractile system of skeletal muscle cells, myosin and actin are specialized to transduce the chemical energy of ATP into motion (see Fig. 5-29). ATP binds tightly but noncovalently to one conformation of myosin, holding the protein in that conformation. When myosin catalyzes the hydrolysis of its bound ATP, the ADP and $P_{i}$ dissociate from the protein, allowing it to relax into a second conformation until another molecule of ATP binds. The binding and subsequent hydrolysis of ATP (by myosin ATPase) provide the energy that forces cyclic changes in the conformation of the myosin head. The change in conformation of many individual myosin molecules results in the sliding of myosin fibrils along actin filaments (see Fig. 5-28), which translates into macroscopic contraction of the muscle fiber. As we noted earlier, this production of mechanical motion at the expense of ATP is one of the few cases in which ATP hydrolysis per se, rather than group transfer from ATP, is the source of the chemical energy in a coupled process.
+
+## Transphosphorylations between Nucleotides Occur in All Cell Types
+
+P4 Although we have focused on ATP as the cell's energy currency and donor of phosphoryl groups, all other nucleoside triphosphates (GTP, UTP, and CTP) and all deoxynucleoside triphosphates (dATP, dGTP, dTTP, and dCTP) are energetically equivalent to ATP. The standard free-energy changes associated with hydrolysis of their phosphoanhydride linkages are very nearly identical with those shown in Table 13-6 for ATP. In preparation for their various biological roles, these other nucleotides are generated and maintained as the nucleoside triphosphate (NTP) forms by phosphoryl group transfer to the corresponding nucleoside diphosphates (NDPs) and monophosphates (NMPs).
+
+ATP is the primary high-energy phosphate compound produced by catabolism, in the processes of glycolysis, oxidative phosphorylation, and, in photosynthetic cells, photophosphorylation. Several enzymes then carry phosphoryl groups from ATP to the other nucleotides. Nucleoside diphosphate kinase, found in all cells, catalyzes the reaction
+
+$$
+\mathrm{ATP} + \mathrm{NDP} (\text { or   dNDP }) \underset {\Delta G ^ {\prime \circ}} {\overset {\mathrm{Mg} ^ {2 +}} {\rightleftharpoons}} \mathrm{ADP} + \mathrm{NTP} (\text { or   dNTP })
+$$
+
+Although this reaction is fully reversible, the relatively high [ATP]/[ADP] ratio in cells normally drives the reaction to the right, with the net formation of NTPs and dNTPs. The enzyme actually catalyzes a two-step phosphoryl group transfer, which is a classic case of a double-displacement (Ping-Pong) mechanism (Fig. 13-21; see also Fig. 6-15b). First, phosphoryl group transfer from ATP to an active-site His residue produces a phosphoenzyme intermediate; then the phosphoryl group is transferred from the P-His residue to an NDP acceptor. Because the enzyme is nonspecific for the base in the NDP and works equally well on dNDPs and NDPs, it can synthesize all NTPs and dNTPs, given the corresponding NDPs and a supply of ATP.
+
+Phosphoryl group transfers from ATP result in an accumulation of ADP; for example, when muscle is contracting vigorously, ADP accumulates and interferes with ATP-dependent contraction. During periods of intense demand for ATP, the cell lowers the ADP concentration, and at the same time replenishes ATP, by the action of adenylate kinase:
+
+$$
+2 \mathrm{ADP} \xrightarrow {\mathrm{Mg} ^ {2 +}} \mathrm{ATP} + \mathrm{AMP} \quad \Delta G ^ {\prime \circ} \approx 0
+$$
+
+This reaction is fully reversible, so, after the intense demand for ATP ends, the enzyme can recycle AMP by converting it to ADP, which can then be phosphorylated to ATP in mitochondria. A similar enzyme, guanylate kinase, converts GMP to GDP at the expense of ATP. By pathways such as these, energy conserved in the catabolic production of ATP is used to supply the cell with all required NTPs and dNTPs.
+
+Phosphocreatine (PCr; Fig. 13-15), also called creatine phosphate, serves as a ready source of phosphoryl groups for the quick synthesis of ATP from ADP. The PCr concentration in skeletal muscle is approximately 30 mm, nearly 10 times the concentration of ATP, and in other tissues such as smooth muscle, brain, and kidney, [PCr] is 5 to 10 mm. The enzyme creatine kinase catalyzes the reversible reaction
+
+$$
+\mathrm{ADP} + \mathrm{PCr} \xrightarrow {\mathrm{Mg} ^ {2 +}} \mathrm{ATP} + \mathrm{Cr} \quad \Delta G ^ {\prime \circ} = - 1 2. 5 \mathrm{kJ/mol}
+$$
+
+When a sudden demand for energy depletes ATP, the PCr reservoir is used to replenish ATP at a rate considerably faster than ATP can be synthesized by catabolic pathways. When the demand for energy slackens, ATP produced by catabolism is used to replenish the PCr reservoir by reversal of the creatine kinase reaction (see Box 23-1). Organisms in the lower phyla employ other PCr-like molecules (collectively called phosphagens) as phosphoryl reservoirs.
+
+![](images/0ea929cd4c8922ee4cc272b70775c91c8ad41008fdf49fdc97fde3cf898b00f3.jpg)  
+FIGURE 13-21 Ping-Pong mechanism of nucleoside diphosphate kinase. The enzyme binds its first substrate (ATP in our example), and a phosphoryl group is transferred to the side chain of a His residue. ADP departs, another nucleoside (or deoxynucleoside) diphosphate replaces it, and this is converted to the corresponding triphosphate by transfer of the phosphoryl group from the phosphohistidine residue.
+
+![](images/e18c45ae10600f881b8da6f4b02959e5fd4a4ae934d33c10e84c9063342b6404.jpg)
+
+## SUMMARY 13.3 Phosphoryl Group Transfers and ATP
+
+■ ATP is the chemical link between catabolism and anabolism. It is the energy currency of the living cell. The exergonic conversion of ATP to ADP and $P_{i}$ , or to AMP and $PP_{i}$ , is coupled to many endergonic reactions and processes.
+
+■ The free-energy change for ATP hydrolysis under cellular conditions is its phosphorylation potential, $\Delta G_{p}$ .
+
+■ Direct hydrolysis of ATP is the source of energy in some processes driven by conformational changes. In general, however, it is not ATP hydrolysis but the transfer of a phosphoryl group from ATP to a substrate or an enzyme that couples the energy of ATP breakdown to endergonic transformations of substrates.
+
+■ Phosphate compounds with high free energies of hydrolysis can donate their phosphoryl group to form another phosphate compound with a smaller free energy of hydrolysis.
+
+■ ATP can also donate a pyrophosphoryl (PP $_{i}$ ) or adenylyl (AMP) group to a variety of metabolic intermediates, activating them for nucleophilic displacement reactions.
+
+■ Through these group transfer reactions, ATP provides the energy for a large number of anabolic reactions, including the synthesis of informational macromolecules, and for the transport of molecules and ions across membranes against concentration gradients and electrical potential gradients. Muscle contraction is also powered by ATP.
+
+To maintain its high group transfer potential, ATP concentration must be held far above the equilibrium concentration by energy-yielding reactions of catabolism.
+
+■ ATP can donate a phosphoryl group to nucleoside diphosphates by transphosphorylation to keep the levels of GTP, UTP, CTP, and the deoxynucleotides far above their equilibrium concentrations.
+
+## 13.4 Biological Oxidation-Reduction Reactions
+
+The transfer of phosphoryl groups is a central feature of metabolism. Equally important is another kind of transfer: electron transfer in oxidation-reduction reactions, sometimes referred to as redox reactions. These reactions involve the loss of electrons by one chemical species, which is thereby oxidized, and the gain of electrons by another, which is reduced. P5 The flow of electrons in oxidation-reduction reactions is responsible, directly or indirectly, for all work done by living organisms. In nonphotosynthetic organisms, the sources of electrons are reduced compounds (foods); in photosynthetic organisms, the initial electron donor is a chemical species excited by the absorption of light. The path of electron flow in metabolism is complex. Electrons move from various metabolic intermediates to specialized electron carriers in enzyme-catalyzed reactions. The carriers, in turn, donate electrons to acceptors with higher electron affinities, with the release of energy. Cells possess a variety of molecular energy transducers, which convert the energy of electron flow into useful work.
+
+![](images/616cdc5699a1b1e92ced23e54103ebc3b518e858502d26780a65ed937e8fa543.jpg)
+
+We begin by discussing how work can be accomplished by an electromotive force (emf), then consider the theoretical and experimental basis for measuring energy changes in oxidation reactions in terms of emf and the relationship between this force, expressed in volts, and the free-energy change, expressed in joules. We also describe the structures and oxidation-reduction chemistry of the most common of the specialized electron carriers, which you will encounter repeatedly in later chapters.
+
+## The Flow of Electrons Can Do Biological Work
+
+Every time we use a motor, an electric light or heater, or a spark to ignite gasoline in a car engine, we use the flow of electrons to accomplish work. In the circuit that powers a motor, the source of electrons can be a battery containing two chemical species that differ in affinity for electrons. Electrical wires provide a pathway for electron flow from the chemical species at one pole of the battery, through the motor, to the chemical species at the other pole of the battery. Because the two chemical species differ in their affinity for electrons, electrons flow spontaneously through the circuit, driven by a force proportional to the difference in electron affinity, the electromotive force, emf. The emf (typically a few volts) can accomplish work if an appropriate energy transducer—in this case a motor—is placed in the circuit. The motor can be coupled to a variety of mechanical devices to do useful work.
+
+![](images/48347f4fb0fc4875c9da94538eef25f1cf055ce00aa116fc5fbc30f117d61b1e.jpg)
+
+P5 Living cells have an analogous biological "circuit," with a relatively reduced compound such as glucose as the source of electrons. As glucose is enzymatically oxidized, the released electrons flow spontaneously through a series of electron-carrier intermediates to another chemical species, such as $\mathrm{O}_2$ . This electron flow is exergonic, because $\mathrm{O}_2$ has a higher affinity for electrons than do the electron-carrier intermediates. The resulting emf provides energy to a variety of molecular energy transducers (enzymes and other proteins) that do biological work. In the mitochondrion, for example, membrane-bound enzymes couple electron flow to the production of a transmembrane pH difference and a transmembrane electrical potential, accomplishing chemiosmotic and electrical work. The proton gradient thus formed has potential energy, sometimes called the proton-motive force by analogy with electromotive force. Another enzyme, ATP synthase in the inner mitochondrial membrane, uses the proton-motive force to do chemical work: synthesis of ATP from ADP and $P_{i}$ as protons flow spontaneously across the membrane. Similarly, membrane-localized enzymes in Escherichia coli convert emf to proton-motive force, which is then used to power flagellar motion. The principles of electrochemistry that govern energy changes in the macroscopic circuit with a motor and battery apply with equal validity to the molecular processes accompanying electron flow in living cells.
+
+## Oxidation-Reductions Can Be Described as Half-Reactions
+
+Although oxidation and reduction must occur together, it is convenient when describing electron transfers to consider the two halves of an oxidation-reduction reaction separately. For example, the oxidation of ferrous ion by cupric ion,
+
+$$
+\mathrm{Fe} ^ {2 +} + \mathrm{Cu} ^ {2 +} \rightleftharpoons \mathrm{Fe} ^ {3 +} + \mathrm{Cu} ^ {+}
+$$
+
+can be described in terms of two half-reactions:
+
+$$
+\begin{array}{l}\text {(1)} \mathrm{Fe} ^ {2 +} \rightleftharpoons \mathrm{Fe} ^ {3 +} + e ^ {-}\\\text {(2)} \mathrm{Cu} ^ {2 +} + e ^ {-} \rightleftharpoons \mathrm{Cu} ^ {+}\end{array}
+$$
+
+The electron-donating molecule in an oxidation-reduction reaction is called the reducing agent or reductant; the electron-accepting molecule is the oxidizing agent or oxidant. A given agent, such as an iron cation existing in the ferrous (Fe $^{2+}$ ) or ferric (Fe $^{3+}$ ) state, functions as a conjugate reductant-oxidant pair (redox pair), just as an acid and corresponding base function as a conjugate acid-base pair. Recall from Chapter 2 that in acid-base reactions we can write a general equation: proton donor $\rightleftharpoons$ H $^{+}$ + proton acceptor. In redox reactions we can write a similar general equation: electron donor (reductant) $\rightleftharpoons$ e $^{-}$ + electron acceptor (oxidant). In the reversible half-reaction (1) above, Fe $^{2+}$ is the electron donor and Fe $^{3+}$ is the electron acceptor; together, Fe $^{2+}$ and Fe $^{3+}$ constitute a conjugate redox pair. The mnemonic OIL RIG—oxidation is losing, reduction is gaining—may be helpful in remembering what happens to electrons in redox reactions.
+
+The electron transfers in the oxidation-reduction reactions of organic compounds are not fundamentally different from those of inorganic species. Consider the oxidation of a reducing sugar (an aldehyde or a ketone) by cupric ion:
+
+$$
+\mathrm{R} - \mathrm{C} \underset {\mathrm{H}} {\overset {\mathrm{O}} {\rightleftharpoons}} + 4 \mathrm{OH} ^ {-} + 2 \mathrm{Cu} ^ {2 +} \rightleftharpoons \mathrm{R} - \mathrm{C} \underset {\mathrm{OH}} {\overset {\mathrm{O}} {\rightleftharpoons}} + \mathrm{Cu} _ {2} \mathrm{O} + 2 \mathrm{H} _ {2} \mathrm{O}
+$$
+
+This overall reaction can be expressed as two half-reactions:
+
+$$
+\begin{array}{l}\text {(1) R - C(= O)} + 2 \mathrm {OH^ {-}} \rightleftharpoons \mathrm{R-C(= O)} + 2 e ^ {-} + \mathrm {H_ {2} O}\\\text {(2) 2Cu^ {2 + } +2e^ {-} +2OH^ {-} \rightleftharpoons Cu_ {2} O+ H_ {2} O}\end{array}
+$$
+
+Notice that because two electrons are removed from the aldehyde carbon, the second half-reaction (the one-electron reduction of cupric to cuprous ion) must be doubled to balance the overall equation.
+
+## Biological Oxidations Often Involve Dehydrogenation
+
+The carbon in living cells exists in a range of oxidation states (Fig. 13-22). When a carbon atom shares an electron pair with another atom (typically H, C, S, N, or O), the sharing is unequal, in favor of the more electronegative atom. The order of increasing electronegativity is H < C < S < N < O. In oversimplified but useful terms, the more electronegative atom “owns” the bonding electrons it shares with another atom. For example, in methane (CH₄), carbon is more electronegative than the four hydrogens bonded to it, and the C atom therefore owns all eight bonding electrons (Fig. 13-22). In ethane, the electrons in the C—C bond are shared equally, so each C atom owns only seven of its eight bonding electrons. In ethanol, C-1 is less electronegative than the oxygen to which it is bonded, and the O atom therefore owns both electrons of the C—O bond, leaving C-1 with only five bonding electrons. With each formal loss of “owned” electrons, the carbon atom has undergone oxidation—even when no oxygen is involved, as in the conversion of an alkane (—CH₂—CH₂—) to an alkene (—CH=CH—). In this case, oxidation (loss of electrons) is coincident with the loss of hydrogen. In biological systems, as we noted earlier in the chapter, oxidation is often synonymous with dehydrogenation, and many enzymes that catalyze oxidation reactions are dehydrogenases. Notice that the more reduced compounds in Figure 13-22 (top) are richer in hydrogen than in oxygen, whereas the more oxidized compounds (bottom) have more oxygen and less hydrogen.
+
+Not all biological oxidation-reduction reactions involve carbon. For example, in the conversion of molecular nitrogen to ammonia, $6H^{+} + 6e^{-} + N_{2} \rightarrow 2NH_{3}$ , the nitrogen atoms are reduced.
+
+Electrons are transferred from one molecule (electron donor) to another (electron acceptor) in one of four ways:
+
+1. Directly as electrons. For example, the $Fe^{2+}/Fe^{3+}$ redox pair can transfer an electron to the $Cu^{+}/Cu^{2+}$ redox pair:
+
+$$
+\mathrm{Fe} ^ {2 +} + \mathrm{Cu} ^ {2 +} \rightleftharpoons \mathrm{Fe} ^ {3 +} + \mathrm{Cu} ^ {+}
+$$
+
+2. As hydrogen atoms. Recall that a hydrogen atom consists of a proton (H $^{+}$ ) and a single electron (e $^{-}$ ). In this case we can write the general equation
+
+$$
+\mathrm{AH} _ {2} \rightleftharpoons \mathrm{A} + 2 e ^ {-} + 2 \mathrm{H} ^ {+}
+$$
+
+<table><tr><td>Methane</td><td></td><td>8</td></tr><tr><td>Ethane(alkane)</td><td></td><td>7</td></tr><tr><td>Ethene(alkene)</td><td></td><td>6</td></tr><tr><td>Ethanol(alcohol)</td><td></td><td>5</td></tr><tr><td>Acetylene(alkyne)</td><td></td><td>5</td></tr><tr><td>Formaldehyde</td><td></td><td>4</td></tr><tr><td>Acetaldehyde(aldehyde)</td><td><img src="images/481e130278d82c9175df75796ad818454c9e49e3df75d6b7f39406a862c53e01.jpg"/></td><td>3</td></tr><tr><td>Acetone(ketone)</td><td></td><td>2</td></tr><tr><td>Formic acid(carboxylicacid)</td><td></td><td>2</td></tr><tr><td>Carbonmonoxide</td><td></td><td>2</td></tr><tr><td>Acetic acid(carboxylicacid)</td><td></td><td>1</td></tr><tr><td>Carbon dioxide</td><td></td><td>0</td></tr></table>
+
+FIGURE 13-22 Different levels of oxidation of carbon compounds in the biosphere. To approximate the level of oxidation of these compounds, focus on the red carbon atom and its bonding electrons. When this carbon is bonded to the less electronegative H atom, both bonding electrons (red) are assigned to the carbon. When carbon is bonded to another carbon, bonding electrons are shared equally, so one of the two electrons is assigned to the red carbon. When the red carbon is bonded to the more electronegative O atom, the bonding electrons are assigned to the oxygen. The number to the right of each compound is the number of electrons "owned" by the red carbon, a rough expression of the degree of oxidation of that compound. As the red carbon undergoes oxidation (loses electrons), the number gets smaller.
+
+where $AH_{2}$ is the hydrogen/electron donor. (Do not mistake the above reaction for an acid dissociation, which involves a proton and no electron.) $AH_{2}$ and A together constitute a conjugate redox pair ( $A/AH_{2}$ ), which can reduce another compound B (or redox pair, $B/BH_{2}$ ) by transfer of hydrogen atoms:
+
+![](images/7b67de8cd4cefd9c18799919bf02887bead6898552f51312f2d4c7d980d9926d.jpg)
+
+$$
+\mathrm{AH} _ {2} + \mathrm{B} \rightleftharpoons \mathrm{A} + \mathrm{BH} _ {2}
+$$
+
+3. As a hydride ion ( $:H^{-}$ ), which has two electrons. This occurs in the case of NAD-linked dehydrogenases, described below.
+
+4. Through direct combination with oxygen. In this case, oxygen combines with an organic reductant and is covalently incorporated in the product, as in the oxidation of a hydrocarbon to an alcohol:
+
+$$
+\mathrm{R} - \mathrm{CH} _ {3} + \frac {1}{2} \mathrm{O} _ {2} \longrightarrow \mathrm{R} - \mathrm{CH} _ {2} - \mathrm{OH}
+$$
+
+The hydrocarbon is the electron donor, and the oxygen atom is the electron acceptor.
+
+All four types of electron transfer occur in cells. The neutral term reducing equivalent is commonly used to designate a single electron equivalent participating in an oxidation-reduction reaction, no matter whether this equivalent is an electron per se or is part of a hydrogen atom or a hydride ion, or whether the electron transfer takes place in a reaction with oxygen to yield an oxygenated product.
+
+## Reduction Potentials Measure Affinity for Electrons
+
+When two conjugate redox pairs are together in solution, electron transfer from the electron donor of one pair to the electron acceptor of the other may proceed spontaneously. The tendency for such a reaction depends on the relative affinity of the electron acceptor of each redox pair for electrons. The standard reduction potential, $E^{\circ}$ , a measure (in volts) of this affinity, can be determined in an experiment such as that described in Figure 13-23. Electrochemists have chosen as a standard of reference the half-reaction
+
+$$
+\mathrm{H} ^ {+} + e ^ {-} \longrightarrow \frac {1}{2} \mathrm{H} _ {2}
+$$
+
+The electrode at which this half-reaction occurs (called a half-cell) is arbitrarily assigned an $E^{\circ}$ of 0.00 V. When this hydrogen electrode is connected through an external circuit to another half-cell in which an oxidized species and its corresponding reduced species are present at standard concentrations (at 25 °C, each solute at 1 M, each gas at 101.3 kPa), electrons tend to flow through the external circuit from the half-cell of lower $E^{\circ}$ to the half-cell of higher $E^{\circ}$ . By convention, a half-cell that takes electrons from the standard hydrogen cell is assigned a positive value of $E^{\circ}$ , and one that donates electrons to the hydrogen cell, a negative value. When any two half-cells are connected, that with the larger (more positive) $E^{\circ}$ will be reduced; it has the greater reduction potential.
+
+![](images/569b9a6dd699a8a91af991e6a6bd1edb557cd21564a586138245c946a8a8827c.jpg)  
+Reference cell of known emf: the hydrogen electrode in which $H_{2}$ gas at 101.3 kPa is equilibrated at the electrode with 1 M $H^{+}$  
+Test cell containing 1 M concentrations of the oxidized and reduced species of the redox pair to be examined  
+FIGURE 13-23 Measurement of the standard reduction potential ( $E^{\prime\circ}$ ) of a redox pair. Electrons flow from the test electrode to the reference electrode, or vice versa. The ultimate reference half-cell is the hydrogen electrode, as shown here, at pH 0. The electromotive force (emf) of this electrode is designated 0.00 V. At pH 7 in the test cell (at 25°C), $E^{\prime\circ}$ for the hydrogen electrode is -0.414 V. The direction of electron flow depends on the relative electron "pressure" or potential of the two cells. A salt bridge containing a saturated KCl solution provides a path for counter-ion movement between the test cell and the reference cell. From the observed emf and the known emf of the reference cell, the experimenter can find the emf of the test cell containing the redox pair. The cell that gains electrons has, by convention, the more positive reduction potential.
+
+The reduction potential of a half-cell depends not only on the chemical species present but also on their activities, approximated by their concentrations. The Nernst equation relates standard reduction potential ( $E^{\circ}$ ) to the actual reduction potential (E) at any concentration of oxidized and reduced species in a living cell:
+
+$$
+E = E ^ {\circ} + \frac {R T}{n F} \ln \frac {[ \text { electron   acceptor } ]}{[ \text { electron   donor } ]}\tag{13-5}
+$$
+
+where R and T have their usual meanings, n is the number of electrons transferred per molecule, and F is the Faraday constant, a proportionality constant that converts volts to joules (Table 13-1). At 298 K (25 °C), this expression reduces to
+
+$$
+E = E ^ {\circ} + \frac {0 . 0 2 6 \mathrm{V}}{n} \ln \frac {[ \text { electron   acceptor } ]}{[ \text { electron   donor } ]}\tag{13-6}
+$$
+
+KEY CONVENTION Many half-reactions of interest to biochemists involve protons. As in the definition of $\Delta G^{\prime\circ}$ , biochemists define the standard state for oxidation-reduction reactions as pH 7 and express a standard transformed reduction potential, $E^{\circ}$ , the standard reduction potential at pH 7 and 25 °C. By convention, $\Delta E^{\prime\circ}$ for any redox reaction is given as $E^{\prime\circ}$ of the electron acceptor minus $E^{\prime\circ}$ of the electron donor.
+
+The standard reduction potentials given in Table 13-7 and used throughout this book are values for $E''$ and are therefore valid only for systems at neutral pH. Each value represents the potential difference when the conjugate redox pair, at 1 M concentrations, 25 °C, and pH 7, is connected with the standard (pH 0) hydrogen electrode. Notice in Table 13-7 that when the conjugate pair $2\mathrm{H}^{+}/\mathrm{H}_{2}$ at pH 7 is connected with the standard hydrogen electrode (pH 0), electrons tend to flow from the pH 7 cell to the standard (pH 0) cell; the measured $E^{\prime \circ}$ for the $2\mathrm{H}^{+}/\mathrm{H}_{2}$ pair is $-0.414\mathrm{V}$ .
+
+TABLE 13-7 Standard Reduction Potentials of Some Biologically Important Half-Reactions
+
+<table><tr><td>Half-reaction</td><td> $E^{\prime \circ}(V)$ </td></tr><tr><td> $\frac{1}{2}O_{2} + 2H^{+} + 2e^{-} \longrightarrow H_{2}O$ </td><td>0.816</td></tr><tr><td> $Fe^{3+} + e^{-} \longrightarrow Fe^{2+}$ </td><td>0.771</td></tr><tr><td> $NO_{3}^{-} + 2H^{+} + 2e^{-} \longrightarrow NO_{2}^{-} + H_{2}O$ </td><td>0.421</td></tr><tr><td>Cytochrome  $f(Fe^{3+}) + e^{-} \longrightarrow \text{cytochrome } f(Fe^{2+})$ </td><td>0.365</td></tr><tr><td> $Fe(CN)_{6}^{3-}(ferricyanide) + e^{-} \longrightarrow Fe(CN)_{6}^{4-}$ </td><td>0.36</td></tr><tr><td>Cytochrome  $a_{3}(Fe^{3+}) + e^{-} \longrightarrow \text{cytochrome } a_{3}(Fe^{2+})$ </td><td>0.35</td></tr><tr><td> $O_{2} + 2H^{+} + 2e^{-} \longrightarrow H_{2}O_{2}$ </td><td>0.295</td></tr><tr><td>Cytochrome  $a(Fe^{3+}) + e^{-} \longrightarrow \text{cytochrome } a(Fe^{2+})$ </td><td>0.29</td></tr><tr><td>Cytochrome  $c(Fe^{3+}) + e^{-} \longrightarrow \text{cytochrome } c(Fe^{2+})$ </td><td>0.254</td></tr><tr><td>Cytochrome  $c_{1}(Fe^{3+}) + e^{-} \longrightarrow \text{cytochrome } c_{1}(Fe^{2+})$ </td><td>0.22</td></tr><tr><td>Cytochrome  $b(Fe^{3+}) + e^{-} \longrightarrow \text{cytochrome } b(Fe^{2+})$ </td><td>0.077</td></tr><tr><td>Ubiquinone +  $2H^{+} + 2e^{-} \longrightarrow \text{ubiquinol}$ </td><td>0.045</td></tr><tr><td>Fumarate $^{2-} + 2H^{+} + 2e^{-} \longrightarrow \text{succinate}^{2-}$ </td><td>0.031</td></tr><tr><td> $2H^{+} + 2e^{-} \longrightarrow H_{2}$ (at standard conditions, pH 0)</td><td>0.000</td></tr><tr><td>Crotonyl-CoA +  $2H^{+} + 2e^{-} \longrightarrow \text{butyryl-CoA}$ </td><td>-0.015</td></tr><tr><td>Oxaloacetate $^{2-} + 2H^{+} + 2e^{-} \longrightarrow \text{malate}^{2-}$ </td><td>-0.166</td></tr><tr><td>Pyruvate $^{-} + 2H^{+} + 2e^{-} \longrightarrow \text{lactate}^{-}$ </td><td>-0.185</td></tr><tr><td>Acetaldehyde +  $2H^{+} + 2e^{-} \longrightarrow \text{ethanol}$ </td><td>-0.197</td></tr><tr><td>FAD +  $2H^{+} + 2e^{-} \longrightarrow FADH_{2}$ </td><td>-0.219a</td></tr><tr><td>Glutathione +  $2H^{+} + 2e^{-} \longrightarrow 2$ reduced glutathione</td><td>-0.23</td></tr><tr><td>S +  $2H^{+} + 2e^{-} \longrightarrow H_{2}S$ </td><td>-0.243</td></tr><tr><td>Lipoic acid +  $2H^{+} + 2e^{-} \longrightarrow \text{dihydrolipoic acid}$ </td><td>-0.29</td></tr><tr><td> $NAD^{+} + H^{+} + 2e^{-} \longrightarrow NADH$ </td><td>-0.320</td></tr><tr><td> $NADP^{+} + H^{+} + 2e^{-} \longrightarrow NADPH$ </td><td>-0.324</td></tr><tr><td>Acetoacetate +  $2H^{+} + 2e^{-} \longrightarrow \beta$ -hydroxybutyrate</td><td>-0.346</td></tr><tr><td> $\alpha$ -Ketoglutarate +  $CO_{2} + 2H^{+} + 2e^{-} \longrightarrow \text{isocitrate}$ </td><td>-0.38</td></tr><tr><td> $2H^{+} + 2e^{-} \longrightarrow H_{2}$ (at pH 7)</td><td>-0.414</td></tr><tr><td>Ferredoxin ( $Fe^{3+}$ ) +  $e^{-} \longrightarrow \text{ferredoxin (Fe}^{2+}$ )</td><td>-0.432</td></tr></table>
+
+![](images/a82b25841c98a95399adefc22b42c8aa256e75532b0477492316182b2de29864.jpg)
+
+## Standard Reduction Potentials Can Be Used to Calculate Free-Energy Change
+
+Why are reduction potentials so useful to the biochemist? When E values have been determined for any two half-cells, relative to the standard hydrogen electrode, we also know their reduction potentials relative to each other. We can then predict the direction in which electrons will tend to flow when the two half-cells are connected through an external circuit or when components of both half-cells are present in the same solution. Electrons tend to flow to the half-cell with the more positive E, and the strength of that tendency is proportional to $\Delta E$ , the difference in reduction potential. The energy made available by this spontaneous electron flow (the free-energy change, $\Delta G$ , for the oxidation-reduction reaction) is proportional to $\Delta E$ :
+
+$$
+\Delta G = - n F \Delta E \mathrm{or} \Delta G ^ {\prime \circ} = - n F \Delta E ^ {\prime \circ}\tag{13-7}
+$$
+
+where n is the number of electrons transferred in the reaction. P5 With this equation we can calculate the actual free-energy change for any oxidation-reduction reaction from the values of $\Delta E^{\prime\circ}$ in a table of reduction potentials (Table 13-7) and the concentrations of reacting species.
+
+## WORKED EXAMPLE 13-3 Calculation of $\Delta G^{\prime \prime}$ and $\Delta G$ of a Redox Reaction
+
+Calculate the standard free-energy change, $\Delta G^{\prime\circ}$ , for the reaction in which acetaldehyde is reduced by the biological electron carrier NADH:
+
+$$
+\text { Acetaldehyde } + \mathrm{NADH} + \mathrm{H} ^ {+} \longrightarrow \text { ethanol } + \mathrm{NAD} ^ {+}
+$$
+
+Then calculate the actual free-energy change, $\Delta G$ , when [acetaldehyde] and [NADH] are 1.00 M, and [ethanol] and $[\mathrm{NAD}^{+}]$ are 0.100 M. The relevant half-reactions and their $E^{\prime \circ}$ values are
+
+$$
+\begin{array}{l l} \text {(1)} & \text {Acetaldehyde + 2H^{+} + 2e^{-} \longrightarrow ethanol} \\ \text {(2)} & \text {NAD^{+} + 2H^{+} + 2e^{-} \longrightarrow NADH+ H^{+}} \end{array} \quad \begin{array}{l l} E ^ {\prime \circ} = - 0. 1 9 7 \mathrm{V} \\ E ^ {\prime \circ} = - 0. 3 2 0 \mathrm{V} \end{array}
+$$
+
+Remember that, by convention, $\Delta E^{\prime\circ}$ is $E^{\prime\circ}$ of the electron acceptor minus $E^{\prime\circ}$ of the electron donor. It represents the difference between the electron affinities of the two half-reactions in the table of reduction potentials (Table 13-7). Note that the more widely separated the two half-reactions in the table, the more energetic the electron-transfer reaction when the two half-reactions occur together. By convention, in tables of reduction potentials, all half-reactions are represented as reductions, but when two half-reactions occur together, one of them must be an oxidation. Although that half-reaction will go in the opposite direction from that shown in Table 13-7, we do not change the sign of that half-reaction before calculating $\Delta E^{\prime\circ}$ , because $\Delta E^{\prime\circ}$ is defined as a difference of reduction potentials.
+
+SOLUTION: Because acetaldehyde is accepting electrons (n=2) from NADH, $\Delta E^{\prime\circ} = -0.197 V - (-0.320 V) = 0.123 V$ . Therefore,
+
+$$
+\Delta G ^ {\prime \circ} = - n F \Delta E ^ {\prime \circ} = - 2 (9 6. 5 \mathrm{kJ/V} \cdot \mathrm{mol}) (0. 1 2 3 \mathrm{V}) = - 2 3. 7 \mathrm{kJ/mol}
+$$
+
+![](images/1f175f3d655a17961ae60b3741a93a61a3b260440e6778faeef758f0080ef1af.jpg)
+
+This is the free-energy change for the oxidation-reduction reaction at 25 °C and pH 7, when acetaldehyde, ethanol, NAD $^{+}$ , and NADH are all present at 1.00 M concentrations.
+
+To calculate $\Delta G$ when [acetaldehyde] and [NADH] are $1.00\mathrm{M}$ , and [ethanol] and $[\mathrm{NAD}^{+}]$ are $0.100\mathrm{M}$ , we can use Equation 13-4 and the standard free-energy change calculated above:
+
+$$
+\begin{array}{r l} \Delta G & = \Delta G ^ {\prime \circ} + R T \ln \frac {[ \text { ethanol } ] [ \mathrm{NAD} ^ {+} ]}{[ \text { acetaldehyde } ] [ \mathrm{NADH} ]} \\ & = - 2 3. 7 \mathrm{kJ/mol} + (8. 3 1 5 \mathrm{J/mol} \cdot \mathrm{K}) (2 9 8 \mathrm{K}) \ln \frac {(0 . 1 0 0 \mathrm{M}) (0 . 1 0 0 \mathrm{M})}{(1 . 0 0 \mathrm{M}) (1 . 0 0 \mathrm{M})} \\ & = - 2 3. 7 \mathrm{kJ/mol} + (2. 4 8 \mathrm{J/mol}) \ln 0. 0 1 \\ & = - 3 5. 1 \mathrm{kJ/mol} \end{array}
+$$
+
+This is the actual free-energy change at the specified concentrations of the redox pairs.
+
+## A Few Types of Coenzymes and Proteins Serve as Universal Electron Carriers
+
+The principles of oxidation-reduction energetics described above apply to the many metabolic reactions that involve electron transfers. For example, in many organisms, the oxidation of glucose supplies energy for the production of ATP. The complete oxidation of glucose
+
+$$
+\mathrm{C} _ {6} \mathrm{H} _ {1 2} \mathrm{O} _ {6} + 6 \mathrm{O} _ {2} \longrightarrow 6 \mathrm{CO} _ {2} + 6 \mathrm{H} _ {2} \mathrm{O}
+$$
+
+has a $\Delta G^{\prime \circ}$ of $-2,840\mathrm{kJ / mol}$ . This is a much larger release of free energy than is required for ATP synthesis in cells (50 to $60\mathrm{kJ / mol}$ ; see Worked Example 13-2). Cells convert glucose to $\mathrm{CO}_{2}$ not in a single, high-energy-releasing reaction but rather in a series of controlled reactions, some of which are oxidations. The free energy released in these oxidation steps is of the same order of magnitude as that required for ATP synthesis from ADP, with some energy to spare. Electrons removed in these oxidation steps are transferred to coenzymes specialized for carrying electrons, such as $\mathrm{NAD^{+}}$ and FAD (described below).
+
+The multitude of enzymes that catalyze cellular oxidations channel electrons from their hundreds of different substrates into just a few types of universal electron carriers. The reduction of these carriers in catabolic processes results in the conservation of free energy released by substrate oxidation. NAD, NADP, FMN, and FAD are water-soluble coenzymes that undergo reversible oxidation and reduction in many of the electron-transfer reactions of metabolism. The nucleotides NAD and NADP move readily from one enzyme to another; the flavin nucleotides FMN and FAD are usually very tightly bound to the enzymes, called flavoproteins, for which they serve as prosthetic groups. Lipid-soluble quinones such as ubiquinone and plastoquinone act as electron carriers and proton donors in the nonaqueous environment of membranes. Iron-sulfur proteins and cytochromes, which have tightly bound prosthetic groups that undergo reversible oxidation and reduction, also serve as electron carriers in many oxidation-reduction reactions. Some of these proteins are water-soluble, but others are peripheral or integral membrane proteins. The oxidation-reduction chemistry of quinones, iron-sulfur proteins, and cytochromes is discussed in Chapters 19 and 20.
+
+![](images/569c7360799e122428b86b442232a8d0023040b841efa5e661f03f93816df19e.jpg)  
+FIGURE 13-24 NAD and NADP. (a) Nicotinamide adenine dinucleotide, $\mathrm{NAD^{+}}$ , and its phosphorylated analog, $\mathrm{NADP^{+}}$ , undergo reduction to NADH and NADPH, accepting a hydride ion (two electrons and one proton) from an oxidizable substrate. The hydride ion is added to either the front or the back of the planar nicotinamide ring. (b) The UV absorption spectra of
+
+Nicotinamide adenine dinucleotide (NAD; NAD $^{+}$ in its oxidized form) and its close analog nicotinamide adenine dinucleotide phosphate (NADP; NADP $^{+}$ when oxidized) are composed of two nucleotides joined through their phosphate groups by a phosphoanhydride bond (Fig. 13-24a). Because the nicotinamide ring resembles pyridine, these compounds are sometimes called pyridine nucleotides. The vitamin niacin is the source of the nicotinamide moiety in nicotinamide nucleotides.
+
+Both coenzymes undergo reversible reduction of the nicotinamide ring (Fig. 13-24). As a substrate molecule undergoes oxidation (dehydrogenation), giving up two hydrogen atoms, the oxidized form of the nucleotide (NAD $^{+}$ or NADP $^{+}$ ) accepts a hydride ion (:H $^{-}$ , the equivalent of a proton and two electrons) and is reduced (to NADH or NADPH). The second proton removed from the substrate is released to the aqueous solvent. The half-reactions for these nucleotide cofactors are
+
+![](images/a674a249e884eb3d9ede8c96020410ccfc92898b3c8011c8185f96ba1ec01b74.jpg)  
+NAD $^{+}$ and NADH. Reduction of the nicotinamide ring produces a new, broad absorption band with a maximum at 340 nm. The production of NADH during an enzyme-catalyzed reaction can be conveniently followed by observing the appearance of the absorbance at 340 nm (molar extinction coefficient $\varepsilon_{340}=6,200\ m^{-1}\ cm^{-1}$ ).
+
+$$
+\begin{array}{r l} & \mathrm {NAD^ {+}} + 2 e ^ {-} + 2 \mathrm {H^ {+}} \longrightarrow \mathrm{NADH} + \mathrm {H^ {+}} \\ & \mathrm {NADP^ {+}} + 2 e ^ {-} + 2 \mathrm {H^ {+}} \longrightarrow \mathrm{NADPH} + \mathrm {H^ {+}} \end{array}
+$$
+
+Reduction of $NAD^{+}$ or $NADP^{+}$ converts the benzenoid ring of the nicotinamide moiety (with a fixed positive charge on the ring nitrogen) to the quinonoid form (with no charge on the nitrogen). The reduced nucleotides absorb light at 340 nm; the oxidized forms do not (Fig. 13-24b). Biochemists use this difference in absorption to assay reactions involving these coenzymes. Note that the plus sign in the abbreviations $NAD^{+}$ and $NADP^{+}$ does not indicate the net charge on these molecules (in fact, both are negatively charged); rather, it indicates that the nicotinamide ring is in its oxidized form, with a positive charge on the nitrogen atom. In the abbreviations NADH and NADPH, the “H” denotes the added hydride ion. To refer to these nucleotides without specifying their oxidation state, we use NAD and NADP.
+
+The total concentration of $NAD^{+} + NADH$ in most tissues is about $10^{-5}M$ ; that of $NADP^{+} + NADPH$ is about $10^{-6}M$ . In many cells and tissues, the ratio of $NAD^{+}$ (oxidized) to NADH (reduced) is high, favoring hydride transfer from a substrate to $NAD^{+}$ to form NADH. By contrast, NADPH is generally present at a higher concentration than $NADP^{+}$ , favoring hydride transfer from NADPH to a substrate. This reflects the specialized metabolic roles of the two coenzymes: $NAD^{+}$ generally functions in oxidations—usually as part of a catabolic reaction; NADPH is the usual coenzyme in reductions—nearly always as part of an anabolic reaction. A few enzymes can use either coenzyme, but most show a strong preference for one over the other. Also, the processes in which these two cofactors function are segregated in eukaryotic cells: for example, oxidations of fuels such as pyruvate, fatty acids, and $\alpha$ -keto acids derived from amino acids occur in the mitochondrial matrix, whereas reductive biosynthetic processes such as fatty acid synthesis take place in the cytosol. This functional and spatial specialization allows a cell to maintain two distinct pools of electron carriers, with two distinct functions.
+
+![](images/11733eefbcc0e8209b34eff3f8629037f98f0ebb464468c9bbabbf077111caca.jpg)
+
+![](images/2153d4b00232f7dfd109d656c6e75f6c2cb7ec47fd0b7fbf2361b015322a6aa4.jpg)
+
+More than 200 enzymes are known to catalyze reactions in which NAD $^{+}$ (or NADP $^{+}$ ) accepts a hydride ion from a reduced substrate, or NADPH (or NADH) donates a hydride ion to an oxidized substrate. The general reactions are
+
+$$
+\begin{array}{r l} & \mathrm {AH_ {2} + NA D ^ {+} \longrightarrow A + NADH+ H^ {+}} \\ & \mathrm {A + NADPH+ H^ {+} \longrightarrow AH_ {2} + NA DP^ {+}} \end{array}
+$$
+
+where $AH_{2}$ is the reduced substrate and A is the oxidized substrate. The general name for an enzyme of this type is oxidoreductase; they are also commonly called dehydrogenases. For example, alcohol dehydrogenase catalyzes the first step in the catabolism of ethanol, in which ethanol is oxidized to acetaldehyde:
+
+$$
+\begin{array}{c} \mathrm{CH} _ {3} \mathrm{CH} _ {2} \mathrm{OH} + \mathrm{NAD} ^ {+} \longrightarrow \mathrm{CH} _ {3} \mathrm{CHO} + \mathrm{NADH} + \mathrm{H} ^ {+} \\ \text {   Ethanol   } \end{array}
+$$
+
+Notice that one of the carbon atoms in ethanol has lost a hydrogen; the compound has been oxidized from an alcohol to an aldehyde (refer again to Fig. 13-22 for the oxidation states of carbon).
+
+The association between a dehydrogenase and NAD or NADP is relatively loose; the coenzyme readily diffuses from one enzyme to another, acting as a water-soluble carrier of electrons from one metabolite to another. For example, in the production of alcohol during fermentation of glucose by yeast cells, a hydride ion is removed from glyceraldehyde 3-phosphate by one enzyme (glyceraldehyde 3-phosphate dehydrogenase) and transferred to $\mathrm{NAD^{+}}$ . The NADH produced then leaves the enzyme surface and diffuses to another enzyme (alcohol dehydrogenase), which transfers a hydride ion to acetaldehyde, producing ethanol:
+
+(1) Glyceraldehyde 3-phosphate + NAD $^{+}$ →
+
+$$
+3 \text {-phosphoglycerate} + \mathrm{NADH} + \mathrm{H} ^ {+}
+$$
+
+$$
+\text {   (2)   } \mathrm{Acetaldehyde} + \mathrm{NADH} + \mathrm{H} ^ {+} \longrightarrow \mathrm{ethanol} + \mathrm{NAD} ^ {+}
+$$
+
+$$
+\begin{array}{c} \text { Sum:   Glyceraldehyde   3 - phosphate + acetaldehyde } \\ \text { 3 - phosphoglycerate + ethanol } \end{array}
+$$
+
+Notice that in the overall reaction there is no net production or consumption of $NAD^{+}$ or NADH; the coenzymes function catalytically and are recycled repeatedly without a net change in the total amount of $NAD^{+} + NADH$ .
+
+Both reduced and oxidized forms of NAD and NADP serve as allosteric effectors of proteins in catabolic pathways. As we describe in later chapters, the ratios
+
+NAD $^{+}$ /NADH and NADP $^{+}$ /NADPH serve as sensitive gauges of a cell's fuel supply, allowing rapid, appropriate changes in energy-yielding and energy-dependent metabolism.
+
+![](images/c1ddbced9f6f835330e91ab992f573e43b8ef5657b35e2e5b60f2776795ea194.jpg)
+
+## NAD Has Important Functions in Addition to Electron Transfer
+
+Some key cellular functions are regulated by enzymes that use $NAD^{+}$ not as a redox cofactor but as a substrate in a coupled reaction in which the availability of $NAD^{+}$ can be an indicator of the cell's energy status. In DNA replication and repair, the enzyme DNA ligase is adenylylated and then transfers the AMP to a 5' phosphate in a nicked DNA (see Fig. 25-15); in bacteria, $NAD^{+}$ serves as the source of the activating AMP group. A family of proteins called sirtuins regulate the activity of proteins in diverse cellular pathways by deacetylating the $\varepsilon$ -amino group of an acetylated Lys residue. The deacetylation is coupled to $NAD^{+}$ hydrolysis, yielding O-acetyl-ADP-ribose and nicotinamide. Among the cellular processes regulated by sirtuins are inflammation, apoptosis, aging, and DNA transcription; deacetylation by a sirtuin alters the charge on histones, influencing which genes are expressed. The availability of $NAD^{+}$ for these types of reactions may indicate that the cell is undergoing stress and that pathways designed to respond to stress should be activated.
+
+NAD $^{+}$ also plays an important role in cholera pathology (see Section 12.2). Cholera toxin has an enzymatic activity that transfers ADP-ribose from NAD $^{+}$ to a G protein involved in regulating ion fluxes in the cells lining the gut. This ADP-ribosylation blocks water retention, causing the diarrhea and dehydration characteristic of cholera.
+
+![](images/339ccd44bf8777b7c5d1399da3c8160e1be23004d43d670f4b7f2be794e1ed50.jpg)
+
+Dietary deficiency of niacin, the vitamin form of NAD and NADP, causes pellagra (Fig. 13-25). The pyridine-like rings of NAD and NADP are derived from the vitamin niacin (nicotinic acid; Fig. 13-26), which is synthesized from tryptophan. Humans generally cannot synthesize sufficient quantities of niacin, and this is especially so for individuals with diets low in tryptophan (maize, for example, has a low tryptophan content). Niacin deficiency, which affects all the NAD(P)-dependent dehydrogenases, causes the serious human disease pellagra (Italian for "rough skin") and a related disease in dogs, called black tongue. Pellagra is characterized by the "three Ds": dermatitis, diarrhea, and dementia, followed in many cases by death. A century ago, pellagra was a common human disease; in the southern United States, where maize was a dietary staple, about 100,000 people were afflicted and about 10,000 died as a result of this disease between 1912 and 1916. In 1920, Joseph Goldberger showed pellagra to be caused by a dietary insufficiency, and in 1937, Frank Strong, D. Wayne Woolley, and Conrad Elvehjem identified niacin as the curative agent for the dog version of pellagra, black tongue. Supplementation of the human diet with this inexpensive compound has nearly eradicated pellagra in the populations of the developed world, with one significant exception: people who drink excessive amounts of alcohol. In these individuals, intestinal absorption of niacin is much reduced, and caloric needs are often met with distilled spirits that are virtually devoid of vitamins, including niacin.
+
+![](images/2f6f79babffa29a980d1a6d635d4f045399264fd00a6411a18d039d6ab6ebef4.jpg)  
+FIGURE 13-25 Dermatitis associated with pellagra. Dermatitis involving the face, hands, and feet is an early sign of pellagra, a serious human disease that results from insufficient niacin in the diet. Untreated, pellagra leads to dementia and ultimately is fatal. [Double Vision/Science Source]
+
+![](images/b44222d0d7dab1d4225bb9bfaac10c92405c9fa6b12c6fe8552b0bd613b54d69.jpg)  
+FIGURE 13-26 Niacin (nicotinic acid) and its derivative nicotinamide. The biosynthetic precursor of these compounds is tryptophan. In the laboratory, nicotinic acid was first produced by oxidation of the natural product nicotine—thus the name. Both nicotinic acid and nicotinamide cure pellagra, but nicotine (from cigarettes or elsewhere) has no curative activity.
+
+## Flavin Nucleotides Are Tightly Bound in Flavoproteins
+
+Flavoproteins are enzymes that catalyze oxidation-reduction reactions using either flavin mononucleotide (FMN) or flavin adenine dinucleotide (FAD) as coenzyme (Fig. 13-27). These coenzymes, the flavin nucleotides, are derived from the vitamin riboflavin. The fused ring structure of flavin nucleotides (the isoalloxazine ring) undergoes reversible reduction, accepting either one or two electrons in the form of one or two hydrogen atoms (each atom an electron plus a proton) from a reduced substrate. The fully reduced forms are abbreviated $\mathrm{FADH}_2$ and $\mathrm{FMNH}_2$ . When a fully oxidized flavin nucleotide accepts only one electron (one hydrogen atom), the semiquinone form of the isoalloxazine ring is produced, abbreviated FADH $^{\bullet}$ and FMNH $^{\bullet}$ . Because flavin nucleotides have a chemical specialty that is slightly different from that of the nicotinamide coenzymes—the ability to participate in either one- or two-electron transfers—flavoproteins are involved in a greater diversity of reactions than the NAD(P)-linked dehydrogenases.
+
+![](images/27bc6392cdf21885aeb7a79f74a4f84355ee2c557964b423e7f7fd683ae30509.jpg)
+
+![](images/891a7c3964722dd06650ae06d027b89000d4d313af1ca1a2408f47eb070d7bb8.jpg)
+
+Like the nicotinamide coenzymes (Fig. 13-24), the flavin nucleotides undergo a shift in a major absorption band on reduction (again, useful to biochemists who want to monitor reactions involving these coenzymes). Flavoproteins that are fully reduced (two electrons accepted) generally have an absorption maximum near 360 nm. When partially reduced (one electron), they acquire another absorption maximum at about 450 nm; when fully oxidized, the flavin has maxima at 370 and 440 nm.
+
+The flavin nucleotide in most flavoproteins is bound rather tightly to the protein, and in some enzymes, such as succinate dehydrogenase, it is bound covalently. Such tightly bound coenzymes are properly called prosthetic groups. They do not transfer electrons by diffusing from one enzyme to another; rather, they provide a means by which the flavoprotein can temporarily hold electrons while it catalyzes electron transfer from a reduced substrate to an electron acceptor. One important feature of the flavoproteins is the variability in the standard reduction potential ( $E^{\prime\circ}$ ) of the bound flavin nucleotide. Tight association between the enzyme and prosthetic group confers on the flavin ring a reduction potential typical of that particular flavoprotein, sometimes quite different from the reduction potential of the free flavin nucleotide. FAD bound to succinate dehydrogenase, for example, has an $E^{\prime\circ}$ close to 0.0 V, compared with -0.219 V for free FAD; $E^{\prime\circ}$ for other flavoproteins ranges from -0.40 V to +0.06 V. Flavoproteins are often very complex; some have, in addition to a flavin nucleotide, tightly bound inorganic ions (iron or molybdenum, for example) capable of participating in electron transfers.
+
+We examine the function of flavoproteins as electron carriers in Chapters 19 and 20, when we consider their roles in oxidative phosphorylation (in mitochondria) and photophosphorylation (in chloroplasts).
+
+## SUMMARY 13.4 Biological Oxidation-Reduction Reactions
+
+In many organisms, a central energy-conserving process is the stepwise oxidation of glucose to $\mathrm{CO}_{2}$ , in which some of the energy of oxidation is conserved in ATP as electrons are passed to $\mathrm{O}_{2}$ .
+
+■ Biological oxidation-reduction reactions can be described in terms of two half-reactions, each with a characteristic standard reduction potential, $E^{\prime\circ}$ .
+
+Many biological oxidation reactions are dehydrogenations in which one or two hydrogen atoms ( $H^{+} + e^{-}$ ) are transferred from a substrate to a hydrogen acceptor. In some biological redox reactions, the substrate loses both electrons and protons, the equivalent of losing hydrogen. The many enzymes that catalyze such reactions are called dehydrogenases.
+
+![](images/ec561ca7d7e1eeee8e83560260f25cc826e5d8fa191c1eec351fd807dac8814b.jpg)
+
+\- When two electrochemical half-cells, each containing the components of a half-reaction, are connected, electrons tend to flow to the half-cell with the higher reduction potential. The strength of this tendency is proportional to the difference between the two reduction potentials ( $\Delta E$ ) and is a function of the concentrations of oxidized and reduced species.
+
+The standard free-energy change for an oxidation-reduction reaction is directly proportional to the difference in standard reduction potentials of the two half-cells: $\Delta G^{\prime\circ} = -nF\Delta E^{\prime\circ}$ .
+
+\- Oxidation-reduction reactions in living cells involve specialized electron carriers. NAD and NADP are the freely diffusible coenzymes of many dehydrogenases. Both $\mathrm{NAD^{+}}$ and $\mathrm{NADP^{+}}$ accept two electrons and one proton. In addition to its role in oxidation-reduction reactions, $\mathrm{NAD^{+}}$ is the source of AMP in the bacterial DNA ligase reaction and of ADP-ribose in the cholera toxin reaction, and it is hydrolyzed in the deacetylation of proteins by some sirtuins.
+
+\- Lack of the vitamin niacin prevents NAD synthesis and leads to pellagra.
+
+![](images/6dc0dba6b3d5d796775a3c2927999890746c7f062504d00c12b6cdebe4c2a410.jpg)
+
+■ FAD and FMN, the flavin nucleotides, serve as tightly bound prosthetic groups of flavoproteins. They can accept either one or two electrons and one or two protons. Their reduction potentials depend on the flavoprotein with which they are associated.
+
+## 13.5 Regulation of Metabolic Pathways
+
+Metabolic regulation is one of the most remarkable features of living organisms. Of the thousands of enzyme-catalyzed reactions that can take place in a cell, there is probably not one that escapes some form of regulation. This need to regulate every aspect of cellular metabolism becomes clear as one examines the complexity of metabolic reaction sequences. Although it is convenient for the student of biochemistry to divide metabolic processes into “pathways” that play discrete roles in the cell’s economy, no such separation exists in the living cell. Rather, every pathway we discuss in this book is inextricably intertwined with all the other cellular pathways in a multidimensional network of reactions (Fig. 13-28).
+
+For example, in Chapter 14 we will discuss four possible fates for glucose 6-phosphate in a hepatocyte: breakdown by glycolysis for the production of ATP, breakdown in the pentose phosphate pathway for the production of NADPH and pentose phosphates, use in
+
+![](images/4ef269b154a468575c9d2527476dbfb5739aa96b250f53e9df27f47e9dea2c93.jpg)  
+FIGURE 13-28 Metabolism as a three-dimensional meshwork. A typical eukaryotic cell has the capacity to make about 30,000 different proteins, which catalyze thousands of different reactions involving many hundreds of metabolites, most shared by more than one "pathway." In this much-simplified overview of metabolic pathways, each dot represents an intermediate compound and each connecting line represents an  
+enzymatic reaction. For a more realistic and far more complex diagram of metabolism, see the online KEGG PATHWAY database (www.genome.ad.jp/kegg/pathway/map/map01100.html); in this interactive map, you can click on each dot to obtain extensive data about the compound and the enzymes for which it is a substrate. [www.genome.ad.jp/kegg/pathway/map/map01100.html]
+
+the synthesis of complex polysaccharides of the extracellular matrix, or hydrolysis to glucose and phosphate to replenish blood glucose. In fact, glucose 6-phosphate has other possible fates in hepatocytes, too; it may, for example, be used to synthesize other sugars, such as glucosamine, galactose, galactosamine, fucose, and neuraminic acid, for use in protein glycosylation, or it may be partially degraded to provide acetyl-CoA for fatty acid and sterol synthesis. And E. coli can use glucose to produce the carbon skeleton of every one of its several thousand types of molecules. When any cell uses glucose 6-phosphate for one purpose, that “decision” affects all the other pathways for which glucose 6-phosphate is a precursor or intermediate: any change in the allocation of glucose 6-phosphate to one pathway affects, directly or indirectly, the flow of metabolites through all the others.
+
+## Cells and Organisms Maintain a Dynamic Steady State
+
+The pathways of glucose metabolism provide, in the catabolic direction, the energy essential to oppose the forces of entropy and, in the anabolic direction, biosynthetic precursors and a storage form of metabolic energy. These reactions are so important to survival that very complex regulatory mechanisms have evolved to ensure that metabolites move through each pathway in the correct direction and at the correct rate to match exactly the cell's or the organism's changing circumstances. By a variety of mechanisms operating on different time scales, adjustments are made in the rate of metabolite flow through an entire pathway when external circumstances change.
+
+Circumstances do change, sometimes dramatically. The availability of oxygen may decrease due to hypoxia (diminished delivery of oxygen to tissues) or ischemia (diminished flow of blood to tissues). Wound healing requires huge amounts of energy and biosynthetic precursors. The relative proportions of carbohydrate, fat, and protein in the diet vary from meal to meal, and the supply of fuels obtained in the diet is intermittent, requiring metabolic adjustments between meals and during periods of starvation.
+
+Fuels such as glucose enter a cell, and waste products such as $CO_{2}$ leave, but the mass and the gross composition of a typical cell, organ, or adult animal do not change appreciably over time; cells and organisms exist in a dynamic steady state. For each metabolic reaction in a pathway, the substrate is provided by the preceding reaction at the same rate at which it is converted to product. Thus, although the rate (v) of metabolite flow, or flux, through this step of the pathway may be high and variable, the concentration of substrate, S, remains constant. So, for the two-step reaction
+
+$$
+\mathrm{A} \xrightarrow {v _ {1}} \mathrm{S} \xrightarrow {v _ {2}} \mathrm{P}
+$$
+
+when $v_{1} = v_{2}$ , [S] is constant. P6 For example, changes in $v_{1}$ for the entry of glucose from various sources into the blood are balanced by changes in $v_{2}$ for the uptake of glucose from the blood into various tissues, so the concentration of glucose in the blood ([S]) is held nearly constant at 5 mM. This is homeostasis for blood glucose. The failure of homeostatic mechanisms is often at the root of human disease. In diabetes mellitus, for example, the regulation of blood glucose concentration is defective as a result of the lack of or insensitivity to insulin, with profound medical consequences.
+
+In the course of evolution, organisms have acquired a remarkable collection of regulatory mechanisms for maintaining homeostasis at the molecular, cellular, and organismal levels, as reflected in the proportion of genes that encode regulatory machinery. In humans, about 2,500 genes (\~12% of all genes) encode regulatory proteins, including a variety of receptors, regulators of gene expression, and more than 500 different protein kinases! In many cases, the regulatory mechanisms overlap: one enzyme is subject to regulation by several different mechanisms.
+
+## Both the Amount and the Catalytic Activity of an Enzyme Can Be Regulated
+
+The flux through an enzyme-catalyzed reaction can be modulated by changes in the number of enzyme molecules or by changes in the catalytic activity of each enzyme molecule already present. Such changes occur on time scales from milliseconds to many hours, in response to signals from within or outside the cell. Very rapid allosteric changes in enzyme activity are generally triggered locally, by changes in the local concentration of a small molecule—a substrate of the pathway in which that reaction is a step (say, glucose for glycolysis), a product of the pathway (ATP from glycolysis), or a key metabolite or cofactor (such as NADH) that indicates the cell's metabolic state. Second messengers (such as cyclic AMP and $Ca^{2+}$ ) generated intracellularly in response to extracellular signals (hormones, cytokines, and so forth) also mediate allosteric regulation, on a slightly slower time scale set by the rate of the signal-transduction mechanism (see Chapter 12).
+
+![](images/b59096a2a2c91df07610c970d130d5c2e0ac90bb8986da2d5d82c7856f8a8e68.jpg)
+
+Extracellular signals (Fig. 13-29, 1) may be hormonal (insulin or epinephrine, for example) or neuronal (acetylcholine), or may be growth factors or cytokines. The number of molecules of a given enzyme in a cell is a function of the relative rates of synthesis and degradation of that enzyme. The rate of synthesis can be adjusted by the activation (in response to some outside signal) of a transcription factor (Fig. 13-29, 2; described in more detail in Chapter 28). Transcription factors are nuclear proteins that, when activated, bind specific DNA regions (response elements) near a gene's promoter (its transcriptional starting point) and activate or repress the transcription of that gene, leading to increased or decreased synthesis of the encoded protein. Activation of a transcription factor is sometimes the result of its binding of a specific ligand and sometimes the result of its phosphorylation or dephosphorylation. Each gene is controlled by one or more response elements that are recognized by specific transcription factors. Genes that have several response elements are therefore controlled by several different transcription factors responding to several different signals. Groups of genes encoding proteins that act together, such as the enzymes of glycolysis, often share common response element sequences, so that a single signal, acting through a particular transcription factor, turns all of these genes on and off together.
+
+![](images/8d8bdb9ff9efedd0b97c5e75f50b3f6bbfc966d56e390cf461c62c8b0c8b9c9e.jpg)
+
+The stability of messenger RNAs—their resistance to degradation by cellular ribonucleases (Fig. 13-29, ③)—varies, and the amount of a given mRNA in the cell is a function of its rates of synthesis and degradation (Chapter 26). The rate at which an mRNA is translated into a protein by ribosomes (Fig. 13-29, ④) is also regulated, and depends on several factors described in detail in Chapter 27. Note that an n-fold increase in an mRNA does not always mean an n-fold increase in its protein product.
+
+Once synthesized, protein molecules have a finite lifetime, which may range from minutes to many days (Table 13-8). The rate of protein degradation (Fig. 13-29, 5) differs from one protein to another and depends on the conditions in the cell. Some proteins are tagged by the covalent attachment of ubiquitin for degradation in proteasomes, as discussed in Chapter 27 (see, for example, the case of cyclin, in Fig. 12-38). P6 Rapid turnover (synthesis followed by degradation) is energetically expensive, but proteins with a short half-life can reach new steady-state levels much faster than those with a long half-life, and the benefit of this quick responsiveness must balance or outweigh the cost to the cell.
+
+![](images/f6372aa48d6c637ef9869c5c114f0e555b7b13dae2f31dd1a8e20a92967ad585.jpg)  
+FIGURE 13-29 Factors affecting the activity of enzymes. The total activity of an enzyme can be changed by altering the number of its molecules in the cell, or its effective activity in a subcellular compartment
+
+<table><tr><td colspan="2">TABLE 13-8 Average Half-Life of Proteins in Mammalian Tissues</td></tr><tr><td>Tissue</td><td>Average half-life (days)</td></tr><tr><td>Liver</td><td>0.9</td></tr><tr><td>Kidney</td><td>1.7</td></tr><tr><td>Heart</td><td>4.1</td></tr><tr><td>Brain</td><td>4.6</td></tr><tr><td>Muscle</td><td>10.7</td></tr></table>
+
+(1 through 6), or by modulating the activity of existing molecules (7 through 10), as detailed in the text. An enzyme may be influenced by a combination of such factors.
+
+Yet another way to alter the effective activity of an enzyme is to sequester the enzyme and its substrate in different compartments (Fig. 13-29, 6). In muscle, for example, hexokinase cannot act on glucose until the sugar enters the myocyte from the blood, and the rate at which it enters depends on the activity of glucose transporters (see Table 11-1) in the plasma membrane. Within cells, membrane-bounded compartments segregate certain enzymes and enzyme systems, and the transport of substrate across these intracellular membranes may be the limiting factor in enzyme action.
+
+By these several mechanisms for regulating enzyme level, cells can dramatically change their complement of enzymes in response to changes in metabolic circumstances. In vertebrates, liver is the most adaptable tissue; a change from a high-carbohydrate diet to a high-lipid diet, for example, affects the transcription of hundreds of genes and thus the levels of hundreds of proteins. These global changes in gene expression can be quantified in the entire complement of mRNAs (the transcriptome) or protein (proteome) of a cell type or organ, offering great insights into metabolic regulation. The effect of changes in the proteome is often a change in the total ensemble of low molecular weight metabolites, the metabolome (Fig. 13-30). The metabolome of E. coli growing on glucose is dominated by a few classes of metabolites: glutamate (49%); nucleotides (mainly ribonucleoside triphosphates) (15%); intermediates of glycolysis, the citric acid cycle, and the pentose phosphate pathway (central pathways of carbon metabolism) (15%); and redox cofactors and glutathione (9%).
+
+![](images/342255ac6b9ec2b85b79f3b3d04108e016ee82e7bc5990df9b1ffebf0bdc892a.jpg)  
+FIGURE 13-30 The metabolome of E. coli growing on glucose. Summary of the relative molar abundance of 103 metabolites as measured by a combination of liquid chromatography and tandem mass spectrometry (LC-MS/MS). For reference, the absolute concentration of glutamate in living cells is 9.6 mM. [Data from B. D. Bennett et al., Nature Chem. Biol. 5:593, 2009, Fig. 1.]
+
+Once the regulatory mechanisms that involve protein synthesis and degradation have produced a certain number of molecules of each enzyme in a cell, the activity of those enzymes can be further regulated in several other ways: by the concentration of substrate, the presence of allosteric effectors, covalent modifications, or binding of regulatory proteins—all of which can change the activity of an individual enzyme molecule (Fig. 13-29, 7 to 10).
+
+All enzymes are sensitive to the concentration of their substrate(s) (Fig. 13-29, 7). Recall that in the simplest case (an enzyme that follows Michaelis-Menten kinetics), the initial rate of the reaction is half-maximal when the substrate is present at a concentration equal to $K_{\mathrm{m}}$ (that is, when the enzyme is half-saturated with substrate). Activity drops off at lower [S], and when [S] << $K_{\mathrm{m}}$ , the reaction rate is linearly dependent on [S].
+
+The relationship between [S] and $K_{m}$ is important because intracellular concentrations of substrate are often in the same range as, or lower than, $K_{m}$ . The activity of hexokinase, for example, changes with [glucose], and intracellular [glucose] varies with the concentration of glucose in the blood. As we will see, the different forms (isozymes) of hexokinase have different $K_{m}$ values and are therefore affected differently by changes in intracellular [glucose], in ways that make sense physiologically. For a number of phosphoryl transfers from ATP, and for redox reactions using NADPH or $NAD^{+}$ , the metabolite concentration is well above the $K_{m}$ (Fig. 13-31); these cofactors are not likely to be limiting in such reactions.
+
+![](images/05f17a0320dd55ea8efea9dc2a884f1ed6a07962b2a2ffff9180fc0730243582.jpg)  
+FIGURE 13-31 Comparison of $K_{\mathrm{m}}$ and substrate concentration for some metabolic enzymes. Measured metabolite concentrations for E. coli growing on glucose are plotted against the known $K_{\mathrm{m}}$ for enzymes that consume that metabolite. The solid line is the line of unity (where metabolite concentration $= K_{\mathrm{m}}$ ), and the dashed lines each denote a 10-fold deviation from the line of unity. [Data from B. D. Bennett et al., Nature Chem. Biol. 5:593, 2009, Fig. 2.]
+
+Enzyme activity can be either increased or decreased by an allosteric effector (Fig. 13-29, $^{8}$ ; see Fig. 6-37). Allosteric effectors typically convert hyperbolic kinetics to sigmoid kinetics, or vice versa (see Fig. 14-24b, for example). In the steepest part of the sigmoid curve, a small change in the concentration of substrate, or of allosteric effector, can have a large impact on reaction rate. Recall from Chapter 5 (p. 157) that the cooperativity of an allosteric protein can be expressed as a Hill coefficient, with higher coefficients meaning greater cooperativity. For an allosteric enzyme with a Hill coefficient of 4, activity increases from 10% $V_{max}$ to 90% $V_{max}$ with only a 3-fold increase in [S], compared with the 81-fold rise in [S] needed by an enzyme with no cooperative effects (Hill coefficient of 1; Table 13-9).
+
+TABLE 13-9 Relationship between Hill Coefficient and the Effect of Substrate Concentration on Reaction Rate for Allosteric Enzymes
+
+<table><tr><td>Hill coefficient ( $n_H$ )</td><td>Required change in [S] to increase  $V_0$  from 10% to 90%  $V_{max}$ </td></tr><tr><td>0.5</td><td> $\times 6,600$ </td></tr><tr><td>1.0</td><td> $\times 81$ </td></tr><tr><td>2.0</td><td> $\times 9$ </td></tr><tr><td>3.0</td><td> $\times 4.3$ </td></tr><tr><td>4.0</td><td> $\times 3$ </td></tr></table>
+
+![](images/7951338e6699fcf2ce5f497dde01daed3ef51b07ed6bce83df8f2525406dc101.jpg)  
+FIGURE 13-32 Protein phosphorylation and dephosphorylation. Protein kinases transfer a phosphoryl group from ATP to a Ser, Thr, or Tyr residue in an enzyme or other protein substrate. Protein phosphatases remove the phosphoryl group as $\mathbb{P}_{\mathrm{i}}$ .
+
+Covalent modifications of enzymes or other proteins (Fig. 13-29, ⑨) occur within seconds or minutes of a regulatory signal, typically an extracellular signal. By far the most common modifications are phosphorylation and dephosphorylation (Fig. 13-32); up to half the proteins in a eukaryotic cell are phosphorylated under some circumstances. Phosphorylation by a specific protein kinase may alter the electrostatic features of an enzyme's active site, cause movement of an inhibitory region of the enzyme out of the active site, alter the enzyme's interaction with other proteins, or force conformational changes that translate into changes in $V_{\text{max}}$ or $K_{\text{m}}$ . For covalent modification to be useful in regulation, the cell must be able to restore the altered enzyme to its original activity state. A family of phosphoprotein phosphatases, at least some of which are themselves under regulation, catalyzes the dephosphorylation of proteins.
+
+Finally, many enzymes are regulated by association with and dissociation from another, regulatory protein (Fig. 13-29, 10). For example, the cyclic AMP-dependent protein kinase (PKA; see Fig. 12-6) is inactive until cAMP binding separates catalytic from regulatory (inhibitory) subunits of the enzyme.
+
+These several mechanisms for altering the flux through a step in a metabolic pathway are not mutually exclusive. P6 It is very common for a single enzyme to be regulated at the level of transcription and by both allosteric and covalent mechanisms. The combination provides fast, smooth, effective regulation in response to a very wide array of perturbations and signals.
+
+In the discussions that follow, it is useful to think of changes in enzymatic activity as serving two distinct though complementary roles. We use the term metabolic regulation to refer to processes that serve to maintain homeostasis at the molecular level—to hold some cellular parameter (concentration of a metabolite, for example) at a steady level over time, even as the flow of metabolites through the pathway changes. The term metabolic control refers to a process that leads to a change in the output of a metabolic pathway over time, in response to some outside signal or change in circumstances. The distinction, although useful, is not always easy to make.
+
+![](images/f36b51139e14de885f7f845fb1dbdb18aca03c3efc6018889400806427b4afbf.jpg)  
+FIGURE 13-33 Near-equilibrium and nonequilibrium steps in a metabolic pathway. Steps ② and ③ of this pathway are near equilibrium in the cell; for each step, the rate (V) of the forward reaction is only slightly greater than the reverse rate, so the net forward rate (10) is relatively low and the free-energy change, $\Delta G$ , is close to zero. An increase in [C] or [D] can reverse the direction of these steps. Step ① is maintained in the cell far from equilibrium; its forward rate greatly exceeds its reverse rate. The net rate of step ① (10) is much larger than the reverse rate (0.01) and is identical to the net rates of steps ② and ③ when the pathway is operating in the steady state. Step ① has a large, negative $\Delta G$ .
+
+## Reactions Far from Equilibrium in Cells Are Common Points of Regulation
+
+For some steps in a metabolic pathway the reaction is close to equilibrium, with the cell in its dynamic steady state (Fig. 13-33). The net flow of metabolites through these steps is the small difference between the rates of the forward and reverse reactions, rates that are very similar when a reaction is near equilibrium. Small changes in substrate or product concentration can produce large changes in the net rate, and they can even change the direction of the net flow. We can identify these near-equilibrium reactions in a cell by comparing the mass-action ratio, Q, with the equilibrium constant for the reaction, $K_{eq}^{\prime}$ . Recall that for the reaction A + B → C + D, $Q = [C][D]/[A][B]$ . In practice, when Q and $K_{eq}^{\prime}$ are within 1 to 2 orders of magnitude of each other, the reaction is near equilibrium. This is the case for more than half of the enzymes in the glycolytic pathway, for example (Table 13-10).
+
+Other reactions are far from equilibrium in the cell. For example, $K_{eq}^{\prime}$ for the phosphofructokinase-1 (PFK-1) reaction is about 1,000, but Q ([fructose 1,6-bisphosphate][ADP]/[fructose 6-phosphate][ATP]) in a hepatocyte in the steady state is about 0.1 (Table 13-10). It is because the reaction is so far from equilibrium in the cell that the process is exergonic under cellular conditions and tends to go in the forward direction. The reaction is held far from equilibrium because, under prevailing cellular conditions of substrate, product, and effector concentrations, the rate of conversion of fructose 6-phosphate to fructose 1,6-bisphosphate is limited by the activity of PFK-1. PFK-1 activity itself is limited by the number of PFK-1 molecules present and by the actions of allosteric effectors. Thus, the net forward rate of the enzyme-catalyzed reaction is equal to the net flow of glycolytic intermediates through other steps in the pathway, and the reverse flow through PFK-1 remains near zero.
+
+<table><tr><td colspan="7">TABLE 13-10 Equilibrium Constants, Mass-Action Ratios, and Free-Energy Changes for Enzymes of Carbohydrate Metabolism</td></tr><tr><td rowspan="2">Enzyme</td><td rowspan="2"> $K'_{eq}$ </td><td colspan="2">Mass-action ratio, Q</td><td rowspan="2">Reaction near equilibrium in vivo?a</td><td rowspan="2"> $\Delta G''^o$ (kJ/mol)</td><td rowspan="2"> $\Delta G$ (kJ/mol) in heart</td></tr><tr><td>Liver</td><td>Heart</td></tr><tr><td>Hexokinase</td><td> $1 \times 10^{3}$ </td><td> $2 \times 10^{-2}$ </td><td> $8 \times 10^{-2}$ </td><td>No</td><td>-17</td><td>-27</td></tr><tr><td>PFK-1</td><td> $1.0 \times 10^{3}$ </td><td> $9 \times 10^{-2}$ </td><td> $3 \times 10^{-2}$ </td><td>No</td><td>-14</td><td>-23</td></tr><tr><td>Aldolase</td><td> $1.0 \times 10^{-4}$ </td><td> $1.2 \times 10^{-6}$ </td><td> $9 \times 10^{-6}$ </td><td>Yes</td><td>+24</td><td>-6.0</td></tr><tr><td>Triose phosphate isomerase</td><td> $4 \times 10^{-2}$ </td><td>__b</td><td> $2.4 \times 10^{-1}$ </td><td>Yes</td><td>+7.5</td><td>+3.8</td></tr><tr><td>Glyceraldehyde 3-phosphate dehydrogenase + phosphoglycerate kinase</td><td> $2 \times 10^{3}$ </td><td> $6 \times 10^{2}$ </td><td>9.0</td><td>Yes</td><td>-13</td><td>+3.5</td></tr><tr><td>Phosphoglycerate mutase</td><td> $1 \times 10^{-1}$ </td><td> $1 \times 10^{-1}$ </td><td> $1.2 \times 10^{-1}$ </td><td>Yes</td><td>+4.4</td><td>+0.6</td></tr><tr><td>Enolase</td><td>3</td><td>2.9</td><td>1.4</td><td>Yes</td><td>-3.2</td><td>-0.5</td></tr><tr><td>Pyruvate kinase</td><td> $2 \times 10^{4}$ </td><td> $7 \times 10^{-1}$ </td><td>40</td><td>No</td><td>-31</td><td>-17</td></tr><tr><td>Phosphohexose isomerase</td><td> $4 \times 10^{-1}$ </td><td> $3.1 \times 10^{-1}$ </td><td> $2.4 \times 10^{-1}$ </td><td>Yes</td><td>+2.2</td><td>-1.4</td></tr><tr><td>Pyruvate carboxylase + PEP carboxykinase</td><td>7</td><td> $1 \times 10^{-3}$ </td><td>__b</td><td>No</td><td>-5.0</td><td>-23</td></tr><tr><td>Glucose 6-phosphatase</td><td> $8.5 \times 10^{2}$ </td><td> $1.2 \times 10^{2}$ </td><td>__b</td><td>Yes</td><td>-17</td><td>-5.0</td></tr></table>
+
+The cell cannot allow reactions with large equilibrium constants to reach equilibrium. If [fructose 6-phosphate], [ATP], and [ADP] in the cell were held at typical levels (low millimolar concentrations) and the PFK-1 reaction were allowed to reach equilibrium by an increase in [fructose 1,6-bisphosphate], the concentration of fructose 1,6-bisphosphate would rise into the molar range, wreaking osmotic havoc on the cell. Consider another case: if the reaction ATP → ADP + Pi were allowed to approach equilibrium in the cell, the actual free-energy change ( $\Delta G$ ) for that reaction ( $\Delta G_{p}$ ; see Worked Example 13-2, p. 480) would approach zero, and ATP would lose the high phosphoryl group transfer potential that makes it valuable to the cell. It is therefore essential that enzymes catalyzing ATP breakdown and other highly exergonic reactions in a cell be sensitive to regulation, so that when metabolic changes are forced by external circumstances, the flow through these enzymes will be adjusted to ensure that [ATP] remains far above its equilibrium level. When such metabolic changes occur, the activities of enzymes in all interconnected pathways adjust to keep these critical steps away from equilibrium. Thus, not surprisingly, many enzymes that catalyze highly exergonic reactions are subject to a variety of subtle regulatory mechanisms. The multiplicity of these adjustments is so great that we cannot predict by examining the properties of any one enzyme in a pathway whether that enzyme has a strong influence on net flow through the entire pathway.
+
+## Adenine Nucleotides Play Special Roles in Metabolic Regulation
+
+After the protection of its DNA from damage, perhaps nothing is more important to a cell than maintaining a constant supply and concentration of ATP. Many ATP-using enzymes have $K_{m}$ values between 0.1 and 1 mm, and the ATP concentration in a typical cell is about 5 to 10 mm (Fig. 13-31). If [ATP] were to drop significantly, these enzymes would be less than fully saturated by their substrate (ATP), and the rates of hundreds of reactions that involve ATP would decrease (Fig. 13-34); the cell would probably not survive this kinetic effect on so many reactions.
+
+![](images/80ea952f4b445ac9d258f6ff63e6bb8032fcd93187932c400bdf8d69a892c8d6.jpg)  
+FIGURE 13-34 Effect of ATP concentration on the initial reaction velocity of a typical ATP-dependent enzyme. These experimental data yield a $K_{\mathrm{m}}$ for ATP of 5 mm. The concentration of ATP in animal tissues is $\sim 5\mathrm{mM}$ .
+
+There is also an important thermodynamic effect of lowered [ATP]. Because ATP is converted to ADP or AMP when "spent" to accomplish cellular work, the [ATP]/[ADP] ratio profoundly affects all reactions that employ these cofactors. The same is true for other important cofactors, such as NADH/NAD $^{+}$ and NADPH/NADP $^{+}$ . For example, consider the reaction catalyzed by hexokinase:
+
+$$
+\begin{array}{l} \mathrm{ATP+glucose} \longrightarrow \mathrm{ADP+glucose6-phosphate} \\ K _ {\mathrm{eq}} ^ {\prime} = \frac {[ \mathrm{ADP} ] _ {\mathrm{eq}} [ \text { glucose6 - phosphate } ] _ {\mathrm{eq}}}{[ \mathrm{ATP} ] _ {\mathrm{eq}} [ \text { glucose } ] _ {\mathrm{eq}}} = 2 \times 1 0 ^ {3} \end{array}
+$$
+
+Note that this expression holds true only when reactants and products are at their equilibrium concentrations, where $\Delta G = 0$ . At any other set of concentrations, $\Delta G$ is not zero. Recall (from Section 13.1) that the ratio of products to substrates (the mass-action ratio, Q) determines the magnitude and sign of $\Delta G$ and therefore the driving force, $\Delta G$ , of the reaction:
+
+$$
+\Delta G = \Delta G ^ {\circ} + R T \ln \frac {[ \mathrm{ADP} ] [ \text { glucose   6 - phosphate } ]}{[ \mathrm{ATP} ] [ \text { glucose } ]}
+$$
+
+Because an alteration of this driving force profoundly influences every reaction that involves ATP, organisms have evolved under strong pressure to develop regulatory mechanisms responsive to the [ATP]/[ADP] ratio.
+
+AMP concentration is an even more sensitive indicator of a cell's energetic state than is [ATP]. Normally, cells have a far higher concentration of ATP (5 to 10 mm) than of AMP (<0.1 mm). When some process (say, muscle contraction) consumes ATP, AMP is produced in two steps. First, hydrolysis of ATP produces ADP, then the reaction catalyzed by adenylate kinase produces AMP:
+
+## 2ADP $\longrightarrow$ AMP + ATP
+
+If ATP is consumed such that its concentration drops 10%, the relative increase in [AMP] is much greater than that of [ADP] (Table 13-11). It is not surprising, therefore, that many regulatory processes are keyed to changes in [AMP]. P6 Probably the most important mediator of regulation by AMP is AMP-activated protein kinase (AMPK), which responds to an increase in [AMP] by phosphorylating key proteins and thus regulating their activities. (AMPK is not to be confused with the cyclic AMP-dependent protein kinase PKA; see Section 12.2.) The rise in [AMP] may be caused by a reduced nutrient supply or by increased physical exercise. AMP activates AMPK allosterically, which increases glucose transport and activates glycolysis and fatty acid oxidation, while suppressing energy-requiring processes such as the synthesis of glycogen, fatty acids, cholesterol, and protein. All of the changes effected by AMPK serve to raise [ATP] and lower [AMP]. In Chapter 23, we discuss the role of AMPK in balancing anabolism and catabolism in the whole organism.
+
+TABLE 13-11 Relative Changes in [ATP] and [AMP] When ATP Is Consumed
+
+<table><tr><td>Adenine nucleotide</td><td>Concentration before ATP depletion (mm)</td><td>Concentration after ATP depletion (mm)</td><td>Relative change</td></tr><tr><td>ATP</td><td>5.0</td><td>4.5</td><td>10%</td></tr><tr><td>ADP</td><td>1.0</td><td>1.0</td><td>0</td></tr><tr><td>AMP</td><td>0.1</td><td>0.6</td><td>600%</td></tr></table>
+
+## SUMMARY 13.5 Regulation of Metabolic Pathways
+
+In a metabolically active cell in a steady state, intermediates are formed and consumed at equal rates. When a transient perturbation alters the rate of formation or consumption of a metabolite, compensating changes in enzyme activities return the system to the steady state.
+
+Cells regulate their metabolism by a variety of mechanisms over a time scale ranging from less than a millisecond to days, either by changing the activity of existing enzyme molecules or by changing the number of molecules of a specific enzyme.
+
+■ Various signals activate or inactivate transcription factors, which act in the nucleus to regulate gene expression. Changes in the transcriptome lead to changes in the proteome, and ultimately in the metabolome of a cell or tissue.
+
+In multistep processes such as glycolysis, certain reactions are essentially at equilibrium in the steady state; the rates of these reactions rise and fall with substrate concentration. Other reactions are far from equilibrium; these steps are typically the points of regulation of the overall pathway.
+
+■ Regulatory mechanisms maintain nearly constant levels of key metabolites such as ATP and NADH in cells and glucose in the blood, while matching the use or production of glucose to the organism's changing needs.
+
+The levels of ATP and AMP are a sensitive reflection of a cell's energy status, and when the [ATP]/[AMP] ratio decreases, the AMP-activated protein kinase (AMPK) triggers a variety of cellular responses to raise [ATP] and lower [AMP].
+
+## KEY TERMS
+
+Terms in bold are defined in the glossary.
+
+<table><tr><td>autotroph 461</td><td>energy transduction 466</td></tr><tr><td>heterotroph 461</td><td>free energy, G 467</td></tr><tr><td>metabolite 462</td><td>exergonic 467</td></tr><tr><td rowspan="2">intermediary metabolism 462</td><td>endergonic 467</td></tr><tr><td>enthalpy, H 467</td></tr><tr><td>catabolism 462</td><td>exothermic 467</td></tr><tr><td>anabolism 462</td><td>endothermic 467</td></tr></table>
+
+entropy, S 467
+standard transformed
+constants 468
+
+mass-action ratio, Q 470
+homolytic cleavage 472
+
+radical 472
+
+heterolytic cleavage 472
+
+nucleophile 473
+
+electrophile 473
+
+carbanion 473
+
+carbocation 473
+
+aldol condensation 473
+
+Claisen condensation 473
+
+kinases 476
+
+phosphorylation potential $(\Delta G_{\mathbf{p}})$ 479
+
+thioester 482
+
+adenylylation 485
+
+inorganic pyrophosphatase 485
+
+nucleoside diphosphate kinase 487
+
+adenylate kinase 487
+
+creatine kinase 487
+
+phosphagens 488
+
+electromotive force
+
+(emf) 488
+
+conjugate redox pair 489
+dehydrogenases 489
+reducing equivalent 490
+standard reduction
+
+potential ( $E^{\circ}$ ) 490
+pyridine nucleotide 493
+oxidoreductase 494
+
+flavoprotein 495
+
+flavin nucleotides 495
+
+glucose 6-phosphate 496
+
+homeostasis 498
+
+transcription factor 498
+
+response element 498
+
+turnover 499
+
+transcriptome 499
+
+proteome 499
+
+metabolome 499
+
+metabolic regulation 501
+
+metabolic control 501
+
+adenylate kinase 503
+
+AMP-activated protein
+
+kinase (AMPK) 503
+
+## PROBLEMS
+
+1. Entropy Changes during Egg Development Consider a system consisting of an egg in an incubator. The white and yolk of the egg contain proteins, carbohydrates, and lipids. If fertilized, the egg transforms from a single cell to a complex organism. Discuss this irreversible process in terms of the entropy changes in the system and surroundings. Be sure that you first clearly define the system and surroundings.
+
+2. Calculation of $\Delta G^{\prime\circ}$ from an Equilibrium Constant Calculate the standard free-energy change for each of the three metabolically important enzyme-catalyzed reactions, using the equilibrium constants given for the reactions at 25 °C and pH 7.0.
+
+(a) Glutamate + oxaloacetate $\xrightarrow{\text{aminotransferase}}$
+
+$$
+K _ {\mathrm{eq}} ^ {\prime} = 6. 8
+$$
+
+(b) Dihydroxyacetone phosphate $\xlongequal{\text{triose phosphate isomerase}}$
+
+glyceraldehyde 3-phosphate $K_{\mathrm{eq}}^{\prime} = 0.0475$
+
+(c) Fructose 6-phosphate + ATP $\xlongequal{\text{phosphofructokinase}}$
+
+fructose 1,6-bisphosphate + ADP $K_{eq}^{\prime}=254$
+
+3. Calculation of the Equilibrium Constant from $\Delta G^{\prime\circ}$ Calculate the equilibrium constant $K_{eq}^{\prime}$ for each of the three reactions at pH 7.0 and 25 °C, using the $\Delta G^{\prime\circ}$ values in Table 13-4.
+
+(a) Glucose 6-phosphate + H₂O ⇌ glucose + Pᵢ
+
+(b) Lactose + $H_{2}O \xlongequal{\beta-galactosidase}$ glucose + galactose
+
+(c) Malate $\xlongequal{\text{fumarase}}$ fumarate + H $_2$ O
+
+4. Experimental Determination of $K_{\text{eq}}'$ and $\Delta G'^{\circ}$ Incubating a 0.1 M solution of glucose 1-phosphate at 25 °C with a catalytic amount of phosphoglucomutase transforms some of the glucose 1-phosphate to glucose 6-phosphate. At equilibrium, the concentrations of the reaction components are
+
+![](images/7e217e3831e3d56dc0bc95fa9ca83988491c6b7316118471662e0dac303fdf3d.jpg)
+
+$$
+\text {   Glucose   1 - phosphate   } \rightleftharpoons \text {   glucose   6 - phosphate   }
+$$
+
+$$
+4. 5 \times 1 0 ^ {- 3} \mathrm{M} \quad 9. 6 \times 1 0 ^ {- 2} \mathrm{M}
+$$
+
+Calculate $K_{eq}^{\prime}$ and $\Delta G^{\circ}$ for this reaction.
+
+5. Experimental Determination of $\Delta G^{\prime\circ}$ for ATP Hydrolysis A direct measurement of the standard free-energy change associated with the hydrolysis of ATP is technically demanding because the minute amount of ATP remaining at equilibrium is difficult to measure accurately. The value of $\Delta G^{\prime\circ}$ can be calculated indirectly, however, from the equilibrium constants of two other enzymatic reactions having less favorable equilibrium constants:
+
+Glucose 6-phosphate + H₂O → glucose + Pᵢ K'ₑq = 270
+
+$$
+\mathrm{ATP} + \text { glucose } \longrightarrow \mathrm{ADP} + \text { glucose   6 - phosphate } \quad K _ {\mathrm{eq}} ^ {\prime} = 8 9 0
+$$
+
+Using this information for equilibrium constants determined at 25 °C, calculate the standard free energy of hydrolysis of ATP.
+
+6. Difference between $\Delta G^{\prime\circ}$ and $\Delta G$ Consider the interconversion shown, which occurs in glycolysis (Chapter 14):
+
+Fructose 6-phosphate $\rightleftharpoons$ glucose 6-phosphate $K_{\mathrm{eq}}^{\prime} = 1.97$
+
+(a) What is $\Delta G^{\prime \circ}$ for the reaction ( $K_{\mathrm{eq}}^{\prime}$ measured at $25^{\circ}\mathrm{C}$ )?
+
+(b) If the concentration of fructose 6-phosphate is adjusted to 1.5 M and that of glucose 6-phosphate is adjusted to 0.50 M, what is $\Delta G$ ?
+
+(c) Why are $\Delta G^{\prime \circ}$ and $\Delta G$ different?
+
+7. Free Energy of Hydrolysis of CTP Compare the structure of the nucleoside triphosphate CTP with the structure of ATP.
+
+![](images/df87058e95dcda72596600e7844365d94c4ec786c401a7151550eadcf0d3b310.jpg)  
+Cytidine triphosphate (CTP)
+
+![](images/2cf1d99ecc99146e48330ff14045341e484eac68a742518166a1d27807291a23.jpg)
+
+Now predict the $K_{\mathrm{eq}}^{\prime}$ and $\Delta G^{\prime o}$ for the reaction:
+
+$$
+\mathrm{ATP} + \mathrm{CDP} \rightarrow \mathrm{ADP} + \mathrm{CTP}
+$$
+
+8. Dependence of $\Delta G$ on pH The free energy released by the hydrolysis of ATP under standard conditions is -30.5 kJ/mol.
+
+If ATP is hydrolyzed under standard conditions except at pH 5.0, is more or less free energy released? Explain.
+
+![](images/d76aa7dbf55fdb045730769df3fb0d808fe93392ee141b93b0fbb58eaa2210a4.jpg)
+
+9. The $\Delta G^{\prime\circ}$ for Coupled Reactions Glucose 1-phosphate is converted into fructose 6-phosphate in two successive reactions:
+
+Glucose 1-phosphate $\longrightarrow$ glucose 6-phosphate
+
+Glucose 6-phosphate $\longrightarrow$ fructose 6-phosphate
+
+Using the $\Delta G^{\prime \circ}$ values in Table 13-4, calculate the equilibrium constant, $K_{\mathrm{eq}}^{\prime}$ , for the sum of the two reactions:
+
+Glucose 1-phosphate $\longrightarrow$ fructose 6-phosphate
+
+10. Effect of [ATP]/[ADP] Ratio on Free Energy of Hydrolysis of ATP Using Equation 13-4, plot $\Delta G$ against ln $Q$ (mass-action ratio) at 25 °C for the concentrations of ATP, ADP, and P $_{i}$ in the table shown. $\Delta G^{\prime\circ}$ for the reaction is -30.5 kJ/mol. Use the resulting plot to explain why metabolism is regulated to keep the ratio [ATP]/[ADP] high.
+
+<table><tr><td colspan="6">Concentration (mm)</td></tr><tr><td>ATP</td><td>5</td><td>3</td><td>1</td><td>0.2</td><td>5</td></tr><tr><td>ADP</td><td>0.2</td><td>2.2</td><td>4.2</td><td>5.0</td><td>25</td></tr><tr><td> $P_i$ </td><td>10</td><td>12.1</td><td>14.1</td><td>14.9</td><td>10</td></tr></table>
+
+11. Strategy for Overcoming an Unfavorable Reaction: ATP-Dependent Chemical Coupling The phosphorylation of glucose to glucose 6-phosphate is the initial step in the catabolism of glucose. The direct phosphorylation of glucose by $\mathbf{P}_{\mathrm{i}}$ is described by the equation
+
+$$
+\begin{array}{r l} \text { Glucose } + \mathrm{P} _ {\mathrm{i}} & \longrightarrow \text { glucose   6 - phosphate } + \mathrm{H} _ {2} \mathrm{O} \\ & \Delta G ^ {\prime \circ} = 1 3. 8 \mathrm{kJ/mol} \end{array}
+$$
+
+(a) Calculate the equilibrium constant for this reaction at 37 °C. In the rat hepatocyte, the physiological concentrations of glucose and P $_{i}$ are maintained at approximately 4.8 mm. What is the equilibrium concentration of glucose 6-phosphate obtained by the direct phosphorylation of glucose by P $_{i}$ ? Does this reaction represent a reasonable metabolic step for the catabolism of glucose? Explain.
+
+(b) In principle at least, one way to increase the concentration of glucose 6-phosphate is to drive the equilibrium reaction to the right by increasing the intracellular concentrations of glucose and $P_{i}$ . Assuming a fixed concentration of $P_{i}$ at 4.8 mm, how high would the intracellular concentration of glucose have to be to give an equilibrium concentration of glucose 6-phosphate of 250 $\mu$ M (the normal physiological concentration)? Would this route be physiologically reasonable, given that the maximum solubility of glucose is less than 1 M?
+
+(c) The phosphorylation of glucose in the cell is coupled to the hydrolysis of ATP; that is, part of the free energy of ATP hydrolysis is used to phosphorylate glucose:
+
+$$
+\begin{array}{l l} \text {(1)} & \mathrm {Glucose+ P _ {i} \longrightarrow glucose 6 - phosphate+ H_ {2} O} \\ & \Delta G ^ {\prime \circ} = 1 3. 8 \mathrm{kJ/mol} \\ \text {(2)} & \mathrm {ATP+ H_ {2} O\longrightarrow ADP+ P _ {i}} \\ & \Delta G ^ {\prime \circ} = - 3 0. 5 \mathrm{kJ/mol} \end{array}
+$$
+
+Sum: Glucose + ATP $\longrightarrow$ glucose 6-phosphate + ADP
+
+Calculate $K_{\text{eq}}'$ at 37 °C for the overall reaction. For the ATP-dependent phosphorylation of glucose, what concentration of glucose is needed to achieve a 250 μm intracellular concentration of glucose 6-phosphate when the concentrations of ATP and ADP are 3.38 mm and 1.32 mm, respectively? Does this coupling process provide a feasible route, at least in principle, for the phosphorylation of glucose in the cell? Explain.
+
+(d) Although coupling ATP hydrolysis to glucose phosphorylation makes thermodynamic sense, we have not yet specified how this coupling is to take place. Given that coupling requires a common intermediate, one conceivable route is to use ATP hydrolysis to raise the intracellular concentration of $P_{i}$ and thus drive the unfavorable phosphorylation of glucose by $P_{i}$ . Is this a reasonable route? (Think about the solubility product, $K_{sp}$ , of metabolic intermediates.)
+
+(e) The ATP-coupled phosphorylation of glucose is catalyzed in hepatocytes by the enzyme glucokinase. This enzyme binds ATP and glucose to form a glucose-ATP-enzyme complex, and the phosphoryl group is transferred directly from ATP to glucose. Explain the advantages of this route.
+
+12. Calculations of $\Delta G^{\circ}$ for ATP-Coupled Reactions From data in Table 13-6, calculate the $\Delta G^{\circ}$ value for each reaction:
+
+(a) Phosphocreatine + ADP —→ creatine + ATP
+
+(b) ATP + fructose $\longrightarrow$ ADP + fructose 6-phosphate
+
+13. Coupling ATP Cleavage to an Unfavorable Reaction To explore the consequences of coupling ATP hydrolysis under physiological conditions to a thermodynamically unfavorable biochemical reaction, consider the hypothetical transformation X → Y, for which $\Delta G^{\circ}=20.0$ kJ/mol.
+
+(a) What is the ratio [Y]/[X] at equilibrium?
+
+(b) Suppose X and Y participate in a sequence of reactions during which ATP is hydrolyzed to ADP and $P_{i}$ . The overall reaction is
+
+$$
+\mathrm{X} + \mathrm{ATP} + \mathrm{H} _ {2} \mathrm{O} \longrightarrow \mathrm{Y} + \mathrm{ADP} + \mathrm{P} _ {\mathrm{i}}
+$$
+
+Calculate $[Y]/[X]$ for this reaction at equilibrium. Assume that the temperature is 25.0 °C and the equilibrium concentrations of ATP, ADP, and $P_{i}$ are 1 M.
+
+(c) We know that [ATP], [ADP], and $[P_{i}]$ are not 1 M under physiological conditions. Calculate $[Y]/[X]$ for the ATP-coupled reaction when the values of [ATP], [ADP], and $[P_{i}]$ are those found in rat myocytes (Table 13-5).
+
+14. Calculations of $\Delta G$ at Physiological Concentrations
+Calculate the actual, physiological $\Delta G$ for the reaction
+
+$$
+\text { Phosphocreatine } + \mathrm{ADP} \longrightarrow \text { creatine } + \mathrm{ATP}
+$$
+
+at 37 °C, as it occurs in the cytosol of neurons, with phospho-creatine at 4.7 mm, creatine at 1.0 mm, ADP at 0.73 mm, and ATP at 2.6 mm.
+
+15. Free Energy Required for ATP Synthesis under Physiological Conditions In the cytosol of rat hepatocytes, the temperature is 37 °C and the mass-action ratio, Q, is
+
+$$
+\frac {[ \mathrm{ATP} ]}{[ \mathrm{ADP} ] [ \mathrm {P_ {i}} ]} = 5. 3 3 \times 1 0 ^ {2} \mathrm{M} ^ {- 1}
+$$
+
+Calculate the free energy required to synthesize ATP in a rat hepatocyte.
+
+16. Chemical Logic In the glycolytic pathway, a six-carbon sugar (fructose 1,6-bisphosphate) is cleaved to form two three-carbon sugars, which undergo further metabolism. In this pathway, an isomerization of glucose 6-phosphate to fructose 6-phosphate (as shown in the diagram) occurs two steps before the cleavage reaction. The intervening step is phosphorylation of fructose 6-phosphate to fructose 1,6-bisphosphate (p. 516).
+
+![](images/3abb7b6aa9107b78ed536d3f68a249573feeed36878098c9caea49eb9463d0a4.jpg)
+
+What does the isomerization step accomplish from a chemical perspective? (Hint: Consider what might happen if the C—C bond cleavage were to proceed without the preceding isomerization.)
+
+(a)
+
+17. Enzymatic Reaction Mechanisms I Lactate dehydrogenase is one of the many enzymes that require NADH as coenzyme. It catalyzes the conversion of pyruvate to lactate:
+
+![](images/b6cdebd251ff3ffb293f7e7a5e3214b9162c6185901986ed23cc4dfebaa6eeb0.jpg)
+
+(b)
+
+Draw the mechanism of this reaction (show electron-pushing arrows). (Hint: This is a common reaction throughout metabolism; the mechanism is similar to that catalyzed by other dehydrogenases that use NADH, such as alcohol dehydrogenase.)
+
+18. Enzymatic Reaction Mechanisms II Biochemical reactions often look more complex than they really are. In the pentose phosphate pathway (Chapter 14), sedoheptulose 7-phosphate and glyceraldehyde 3-phosphate react to form erythrose 4-phosphate and fructose 6-phosphate in a reaction catalyzed by transaldolase.
+
+(c)
+
+(d)
+
+![](images/68b39091b4b5699a5582afc9214c5044ade1a67b4e986678556e92c6d948930d.jpg)  
+(e)  
+Draw a mechanism for this reaction (show electron-pushing arrows). (Hint: Take another look at aldol condensations, then consider the name of this enzyme.)
+
+(f)
+
+(g)
+
+19. Recognizing Reaction Types For each pair of biomolecules, identify the type of reaction (oxidation-reduction, hydrolysis, isomerization, group transfer, or internal rearrangement) required to convert the first molecule to the second. In each case, indicate the general type of enzyme and cofactor(s) or reactants that would be required, and any other products that would result.
+
+![](images/d985fc4c9a324b98aa5a46e9f5949cded5d48f3bc8753b7383ea38254415719b.jpg)
+
+![](images/5acf34dadd776a25d11a74964a82ec20723d695644605b49777cf6989ac8b73d.jpg)
+
+![](images/60267d9522cac021518b8ffae88c0697b0a527996fe4defb6620919e6202a114.jpg)
+
+![](images/40f9fb56cf17320c065d979b2c554d4ab03d5c5b8caacd3593eb0887362e1da6.jpg)
+
+20. Effect of Structure on Group Transfer Potential Some invertebrates contain phosphoarginine. Is the standard free energy of hydrolysis of this molecule more similar to that of glucose 6-phosphate or of ATP? Explain your answer.
+
+![](images/caa04d511f9fa4ab7b1cfca94c34a839078e9b3025a08d0c0c9bf75672731679.jpg)
+
+21. Polyphosphate as a Possible Energy Source The standard free energy of hydrolysis of inorganic polyphosphate (polyP) is about -20 kJ/mol for each $P_{i}$ released. We calculated in Worked Example 13-2 that, in a cell, it takes about 50 kJ/mol of energy to synthesize ATP from ADP and $P_{i}$ .
+
+![](images/9cee521d61476dcf5691bef9e5bf16fc6cfbe52f5056489493041ecd0f5feb1d.jpg)
+
+Is it feasible for a cell to use polyphosphate to synthesize ATP from ADP? Explain your answer.
+
+## 22. Daily ATP Utilization by Human Adults
+
+(a) The synthesis of ATP from ADP and $P_{i}$ requires a total of 30.5 kJ/mol of free energy when the reactants and products are at 1 M concentrations and the temperature is 25 °C (standard state). However, the actual physiological concentrations of ATP, ADP, and $P_{i}$ are not 1 M, and the physiological temperature is 37 °C. Thus, the free energy required to synthesize ATP under physiological conditions is different from $\Delta G^{\circ}$ . Calculate the free energy required to synthesize ATP in the human hepatocyte when the physiological concentrations of ATP, ADP, and $P_{i}$ are 3.5, 1.50, and 5.0 mm, respectively.
+
+(b) A 68 kg (150 lb) adult requires a caloric intake of 2,000 kcal (8,360 kJ) of food per day (24 hours). The body metabolizes the food and uses the free energy to synthesize ATP, which then provides energy for the body's daily chemical and mechanical work. Assuming that the efficiency of converting food energy into ATP is 50%, calculate the weight of ATP used by a human adult in 24 hours. What percentage of the body weight does this represent? (c) Although adults synthesize large amounts of ATP daily, their body weight, structure, and composition do not change significantly during this period. Explain this apparent contradiction.
+
+23. Rates of Turnover of $\gamma$ and $\beta$ Phosphates of ATP After adding a small amount of ATP labeled with radioactive phosphorus in the terminal position, $[\gamma-^{32}P]$ ATP, to a yeast extract, a researcher finds about half of the ${}^{32}P$ activity in $P_{i}$ within a few minutes, but the concentration of ATP remains unchanged. Explain. She then carries out the same experiment using ATP labeled with ${}^{32}P$ in the central position, $[\beta-^{32}P]$ ATP, but the ${}^{32}P$ does not appear in $P_{i}$ within such a short time. Why?
+
+24. Cleavage of ATP to AMP and PP $_{i}$ during Metabolism Synthesis of the activated form of acetate (acetyl-CoA) is carried out in an ATP-dependent process:
+
+$$
+\mathrm{Acetate} + \mathrm{CoA} + \mathrm{ATP} \longrightarrow \text { acetyl   -   CoA } + \mathrm{AMP} + \mathrm{PP} _ {\mathrm{i}}
+$$
+
+(a) The $\Delta G^{\prime\circ}$ for hydrolysis of acetyl-CoA to acetate and CoA is -32.2 kJ/mol. The $\Delta G^{\prime\circ}$ for hydrolysis of ATP to AMP and PP $_{i}$ is -30.5 kJ/mol. Calculate $\Delta G^{\prime\circ}$ for the ATP-dependent synthesis of acetyl-CoA.
+
+(b) Almost all cells contain the enzyme inorganic pyrophosphatase, which catalyzes the hydrolysis of PP $_{i}$ to P $_{i}$ . What effect does the presence of this enzyme have on the synthesis of acetyl-CoA? Explain.
+
+25. Activation of a Fatty Acid by Reaction with Coenzyme A In the reaction sequence for fatty acid breakdown, coenzyme A (CoA), with its thiol (—SH) group, joins to the fatty acid as a thiol ester, as ATP is converted into AMP and PP $_{i}$ :
+
+$$
+\mathrm{R} - \mathrm{COO} ^ {-} + \mathrm{ATP} + \mathrm{CoA} - \mathrm{SH} \longrightarrow
+$$
+
+$$
+\mathrm{AMP} + \mathrm{PP} _ {\mathrm{i}} + \mathrm{R} - \mathrm{CO} - \mathrm{S} - \mathrm{CoA}
+$$
+
+The oxidation of fatty acids as fuels requires two steps. The first step transfers an activating group from ATP to the carboxyl group of the fatty acid. In the second step, CoA—SH displaces the activating group to form fatty acyl-S—CoA. Given the known products of the reaction, what is the activating group?
+
+26. Energy for $H^{+}$ Pumping The parietal cells of the stomach lining contain membrane “pumps” that transport hydrogen ions from the cytosol (pH 7.0) into the stomach, contributing to the acidity of gastric juice (pH 1.0). Calculate the free energy required to transport 1 mol of hydrogen ions through these pumps. (Hint: See Chapter 11.) Assume a temperature of 37 °C.
+
+27. Most-Reduced Carbon Compounds Arrange the four structures in order from most reduced to most oxidized.
+
+(a) $\mathrm{R}-\mathrm{CH}_{2}-\mathrm{CH}_{2}-\mathrm{OH}$
+
+(b) $\mathrm{R}-\mathrm{CH}_{2}-\mathrm{COO}^{-}$
+
+(c) $R-CH_{2}-CHO$
+
+(d) $\mathrm{R}-\mathrm{CH}_{2}-\mathrm{CH}_{3}$
+
+28. Standard Reduction Potentials The standard reduction potential, $E^{\prime\circ}$ , of any redox pair is defined for the half-cell reaction
+
+$$
+\text { Oxidizing   agent } + n \text {   electrons } \longrightarrow \text { reducing   agent }
+$$
+
+The $E^{\circ}$ values for the $NAD^{+}/NADH$ and pyruvate/lactate conjugate redox pairs are -0.32 V and -0.19 V, respectively.
+
+(a) Which redox pair has the greater tendency to lose electrons? Explain.
+
+(b) Which pair is the stronger oxidizing agent? Explain.
+
+(c) Beginning with 1 M concentrations of each reactant and product at pH 7 and 25 °C, in which direction will the following reaction proceed?
+
+$$
+\mathrm{Pyruvate} + \mathrm{NADH} + \mathrm{H} ^ {+} \rightleftharpoons \text { lactate } + \mathrm{NAD} ^ {+}
+$$
+
+(d) What is the standard free-energy change ( $\Delta G^{\circ}$ ) for the conversion of pyruvate to lactate?
+
+(e) What is the equilibrium constant ( $K_{eq}'$ ) for this reaction?
+
+29. Simple Biobattery Suppose you set up a simple battery using half-reactions as pictured in Figure 13-23. One electrode contains pyruvate and lactate at 1 mm, and the other electrode contains fumarate and succinate at 1 mm (see Table 13-7).
+
+(a) In which direction will electrons initially flow?
+
+(b) Calculate the standard reduction potential and standard free-energy change for your biological battery.
+
+(c) When a flashlight battery "runs out," net electron movement has essentially ended. What is the equivalent situation for your biobattery?
+
+Oligodendrocyte
+
+30. Energy Span of the Respiratory Chain Electron transfer in the mitochondrial respiratory chain may be represented by the net reaction equation
+
+$$
+\mathrm{NADH} + \mathrm{H} ^ {+} + \frac {1}{2} \mathrm{O} _ {2} \rightleftharpoons \mathrm{H} _ {2} \mathrm{O} + \mathrm{NAD} ^ {+}
+$$
+
+(a) Calculate $\Delta E^{\prime\circ}$ for the net reaction of mitochondrial electron transfer. Use $E^{\prime\circ}$ values in Table 13-7.
+
+(b) Calculate $\Delta G^{\prime\circ}$ for this reaction.
+
+(c) How many ATP molecules can theoretically be generated by this reaction if the free energy of ATP synthesis under cellular conditions is 52 kJ/mol?
+
+31. Dependence of Electromotive Force on Concentrations Suppose that you place an electrode into solutions of various concentrations of $NAD^{+}$ and NADH at pH 7.0 and 25 °C. Calculate the electromotive force (in volts) registered by the electrode when immersed in each solution, with reference to a half-cell of $E^{\circ}$ 0.00 V.
+
+(a) 1.0 mm NAD $^{+}$ and 10 mm NADH
+
+(b) 1.0 mm NAD $^{+}$ and 1.0 mm NADH
+
+(c) 10 mm NAD $^{+}$ and 1.0 mm NADH
+
+32. Electron Affinity of Compounds List the four compounds or reactions in order of increasing tendency to accept electrons: (a) $\alpha$ -ketoglutarate + CO $_{2}$ (yielding isocitrate) (b) oxaloacetate (c) O $_{2}$ (d) NADP $^{+}$
+
+33. Direction of Oxidation-Reduction Reactions Which of the reactions listed would you expect to proceed in the direction shown, under standard conditions, in the presence of the appropriate enzymes?
+
+(a) Malate + NAD $^{+}$ → oxaloacetate + NADH + H $^{+}$
+
+(b) Acetoacetate + NADH + H $^{+}$ →
+
+$\beta$ -hydroxybutyrate $+\mathrm{NAD}^{+}$
+
+(c) Pyruvate + NADH + H $^{+}$ → lactate + NAD $^{+}$
+
+(d) Pyruvate + β-hydroxybutyrate → lactate + acetoacetate
+
+(e) Malate + pyruvate $\longrightarrow$ oxaloacetate + lactate
+
+(f) Acetaldehyde + succinate $\longrightarrow$ ethanol + fumarate
+
+34. Measurement of Intracellular Metabolite Concentrations Measuring the concentrations of metabolic intermediates in a living cell presents great experimental difficulties—usually, a cell must be destroyed before metabolite concentrations can be measured. Yet enzymes catalyze metabolic interconversions very rapidly, so a common problem associated with these types of measurements is that the findings reflect not the physiological concentrations of metabolites but the equilibrium concentrations. To prevent changes in metabolite concentrations during sample preparation, cells were quick-frozen in liquid nitrogen, then extracted under conditions that prevented enzymatic activity.
+
+The table gives the intracellular concentrations of the substrates and products of the phosphofructokinase-1 reaction in isolated rat heart tissue.
+
+<table><tr><td>Metabolite</td><td>Concentration (μM)a</td></tr><tr><td>Fructose 6-phosphate</td><td>87.0</td></tr><tr><td>Fructose 1,6-bisphosphate</td><td>22.0</td></tr><tr><td>ATP</td><td>11,400</td></tr><tr><td>ADP</td><td>1,320</td></tr></table>
+
+Data from J. R. Williamson, J. Biol. Chem. 240:2308, 1965.  
+$^{a}$ Calculated as $\mu$ mol/mL of intracellular water.
+
+(a) Calculate Q, [fructose 1,6-bisphosphate][ADP]/[fructose 6-phosphate][ATP], for the PFK-1 reaction under physiological conditions.
+
+(b) Given a $\Delta G^{\prime \circ}$ for the PFK-1 reaction of $-14.2\mathrm{kJ / mol}$ , calculate the equilibrium constant for this reaction.
+
+![](images/1253760daf64c03e1008715db2b01a61aeb961cde3cd9e0d246085b6ac467f1a.jpg)
+
+(c) Compare the values of $Q$ and $K_{\mathrm{eq}}^{\prime}$ . Is the physiological reaction near or far from equilibrium? Explain. What does this experiment suggest about the role of PFK-1 as a regulatory enzyme?
+
+35. Are All Metabolic Reactions at Equilibrium?
+(a) Phosphoenolpyruvate (PEP) is one of the two phosphoryl group donors in the synthesis of ATP during glycolysis. In human erythrocytes, the steady-state concentration of ATP is 2.24 mm, that of ADP is 0.25 mm, and that of pyruvate is 0.051 mm. Calculate the concentration of PEP at 25 °C, assuming that the pyruvate kinase reaction (see Fig. 13-13) is at equilibrium in the cell.
+(b) The physiological concentration of PEP in human erythrocytes is 0.023 mm. Compare this with the value obtained in (a). Explain the significance of this difference.
+
+36. Michaelis Constant $K_{m}$ Compared with Substrate Concentration Malate synthase in E. coli catalyzes the reaction
+
+$$
+\mathrm{Acetyl-CoA} + \mathrm{glyoxylate} + \mathrm{H} _ {2} \mathrm{O} \longrightarrow \mathrm{malate} + \mathrm{CoA-SH} + \mathrm{H} ^ {+}
+$$
+
+The experimentally measured $K_{m}$ for acetyl-CoA is $9 \times 10^{6}$ M. In a growing culture of E. coli, the measured concentration of acetyl-CoA is $6 \times 10^{-4}$ M. Is malate synthase operating at its $V_{max}$ under these conditions?
+
+## DATA ANALYSIS PROBLEM
+
+37. Thermodynamics Can Be Tricky Thermodynamics is a challenging area of study and one with many opportunities for confusion. An interesting example is found in an article by Robinson, Hampson, Munro, and Vaney, published in Science in 1993. Robinson and colleagues studied the movement of small molecules between neighboring cells of the nervous system through cell-to-cell channels (gap junctions). They found that the dyes Lucifer yellow (a small, negatively charged molecule) and biocytin (a small zwitterionic molecule) moved in only one direction between two particular types of glia (nonneuronal cells of the nervous system). Dye injected into astrocytes would rapidly pass into adjacent astrocytes, oligodendrocytes, or Müller cells, but dye injected into oligodendrocytes or Müller cells passed slowly if at all into astrocytes. All of these cell types are connected by gap junctions.
+
+Although it was not a central point of their article, the authors presented a molecular model for how this unidirectional transport might occur, as shown in their Figure 3:
+
+(A) Astrocyte Oligodendrocyte
+
+![](images/07cfb2275182d2603ab9acb25175aacc5f1427f81508684de618cee9897e1274.jpg)  
+(B) Astrocyte
+
+![](images/e3bcd5b30e4626afb98b1e29f6e2a83f355cb16e72ed64993ff111c3980750a8.jpg)
+
+The figure legend reads: "Model of the unidirectional diffusion of dye between coupled oligodendrocytes and astrocytes, based on differences in connection pore diameter. Like a fish in a fish trap, dye molecules (black circles) can pass from an astrocyte to an oligodendrocyte (A) but not back in the other direction (B)."
+
+Although this article clearly passed review at a well-respected journal, several letters to the editor (1994) followed, showing that Robinson and coauthors' model violated the second law of thermodynamics.
+
+(a) Explain how the model violates the second law. Hint: Consider what would happen to the entropy of the system if one started with equal concentrations of dye in the astrocyte and oligodendrocyte connected by the "fish trap" type of gap junctions.
+
+(b) Explain why this model cannot work for small molecules, although it may allow one to catch fish.
+
+(c) Explain why a fish trap does work for fish.
+
+(d) Provide two plausible mechanisms for the unidirectional transport of dye molecules between the cells that do not violate the second law of thermodynamics.
+
+## References
+
+Letters to the editor. 1994. Science 265:1017-1019.
+
+Robinson, S.R., E.C.G.M. Hampson, M.N. Munro, and D.I. Vaney. 1993. Unidirectional coupling of gap junctions between neuroglia. Science 262:1072–1074.
+
+![](images/c0f9a6afb84a7366665483a311242aba423a291f18be66eb129742fdb2d4cad8.jpg)
+
+# GLYCOLYSIS, GLUCONEOGENESIS, AND THE PENTOSE PHOSPHATE PATHWAY
+
+14.1 Glycolysis 511
+
+14.2 Feeder Pathways for Glycolysis 521
+
+14.3 Fates of Pyruvate 525
+
+14.4 Gluconeogenesis 533
+
+14.5 Coordinated Regulation of Glycolysis and Gluconeogenesis 539
+
+14.6 Pentose Phosphate Pathway of Glucose Oxidation 546
+
+We begin with the major pathways of glucose metabolism: glycolysis and fermentation, gluconeogenesis, and the pentose phosphate pathway. Glucose occupies a central position in the metabolism of plants, animals, and many microorganisms. It is relatively rich in potential energy, and thus a good fuel; the complete oxidation of glucose to carbon dioxide and water proceeds with a standard free-energy change of -2,840 kJ/mol. By storing glucose as a high molecular weight polymer such as starch or glycogen, a cell can stockpile large quantities of hexose units while maintaining a relatively low cytosolic osmolarity. When energy demands increase, glucose can be released from these intracellular storage polymers and used to produce ATP either aerobically or anaerobically.
+
+Glucose is not only an excellent fuel, but also a remarkably versatile precursor, capable of supplying a huge array of metabolic intermediates for biosynthetic reactions. A bacterium such as Escherichia coli can obtain from glucose the carbon skeletons for every amino acid, nucleotide, coenzyme, fatty acid, or other metabolic intermediate it needs for growth. A comprehensive study of the metabolic fates of glucose would encompass hundreds or thousands of transformations. In animals and vascular plants, glucose has four major fates: it may be (1) used in the synthesis of complex polysaccharides destined for the extracellular space; (2) stored in cells (as a polysaccharide or as sucrose); (3) oxidized to a three-carbon compound (pyruvate) via glycolysis to provide ATP and metabolic intermediates; or (4) oxidized via the pentose phosphate (phosphogluconate) pathway to yield ribose 5-phosphate for nucleic acid synthesis and NADPH for reductive biosynthetic processes (Fig. 14-1).
+
+Organisms that do not have access to glucose from other sources must make it. Photosynthetic organisms make glucose by first reducing atmospheric $CO_{2}$ to trioses, then converting the trioses to glucose. Nonphotosynthetic cells make glucose from simpler three- and four-carbon precursors by the process of gluconeogenesis, effectively reversing glycolysis in a pathway that uses many of the glycolytic enzymes.
+
+These principles are central to understanding glucose metabolism, but many apply to all metabolic pathways:
+
+P1 Metabolites like glucose are often activated with a high-energy group before their catabolism. Glycolysis is a nearly universal 10-step metabolic pathway for producing ATP by the oxidation of glucose. In this process, two molecules of ATP are invested to activate glucose, but the products of the pathway include four ATP, as well as NADH (a form of reducing power) and the triose pyruvate, which can be metabolized further in other pathways.
+
+![](images/deebc39b624bc3fa4a76100eaa7cbb63bf27da22c310d4a1811564b5f022ccb2.jpg)  
+FIGURE 14-1 Major pathways of glucose utilization. Although not the only possible fates for glucose, these four pathways are the most significant in most cells.
+
+P2 Glucose and other hexoses and hexose phosphates obtained from stored polysaccharides or dietary carbohydrates feed into the glycolytic pathway. By using a common pathway for a number of starting materials, the cell economizes on the number of enzymes that must be synthesized and simplifies the regulation of the common pathway.
+
+P3 Pyruvate formed under anaerobic conditions is reduced to lactate with electrons from NADH, recycling NADH to $\mathrm{NAD^{+}}$ and allowing continued glycolysis in the processes of lactate or alcohol fermentation. Manipulation of the fermentable material and the microorganisms present allows the synthesis of a variety of industrial products and foods.
+
+P4 Gluconeogenesis is the synthesis of glucose from simpler precursors like pyruvate and lactate. Although it uses seven of the ten enzymes that also act in glycolysis, gluconeogenesis must bypass three of the most exergonic steps in glycolysis with energetically favorable reactions unique to gluconeogenesis.
+
+P5 Glycolysis and gluconeogenesis are reciprocally regulated so that both processes don't occur simultaneously in a futile cycle. Most regulatory mechanisms act on reactions that are unique to each pathway.
+
+The pentose phosphate pathway is an alternative pathway for glucose oxidation. It yields pentoses for nucleotide synthesis and reduced cofactors for biosynthesis of fatty acids, sterols, and many other compounds.
+
+## 14.1 Glycolysis
+
+P1 In glycolysis (from the Greek glykys, "sweet" or "sugar," and lysis, "splitting"), a molecule of glucose is degraded in a series of enzyme-catalyzed reactions to yield two molecules of the three-carbon compound pyruvate. During the sequential reactions of glycolysis, some of the free energy released from glucose is conserved in the form of ATP and NADH. Glycolysis was the first metabolic pathway to be elucidated and is probably the best understood. From Eduard Buchner's discovery in 1897 of fermentation in cell-free extracts of yeast until the elucidation of the whole pathway in yeast and in muscle in the 1930s, the reactions of glycolysis were a major focus of biochemical research. These discoveries showed that the reactions of life could be explained chemically, without reliance on a mystical life force. This philosophical shift led physiologist Jacques Loeb to observe in 1906, "The history of this problem is instructive, as it warns us against considering problems as beyond our reach because they have not yet found their solution."1
+
+The development of methods of enzyme purification, the discovery and recognition of the importance of coenzymes such as NAD, and the discovery of the pivotal metabolic role of ATP and other phosphorylated compounds all came out of studies of glycolysis. The glycolytic enzymes of many species have long since been purified and thoroughly studied.
+
+Glycolysis is an almost universal central pathway of glucose catabolism, the pathway with the largest flux of carbon in most cells. The glycolytic breakdown of glucose is the sole source of metabolic energy in some mammalian tissues and cell types (erythrocytes, renal medulla, brain, and sperm, for example). Some plant tissues that are modified to store starch (such as potato tubers) and some aquatic plants (watercress, for example) derive most of their energy from glycolysis; many anaerobic microorganisms are entirely dependent on glycolysis.
+
+In the course of evolution, the chemistry of the reactions of glycolysis has been completely conserved. Genome sequencing and structural studies have shown that the glycolytic enzymes of vertebrates are closely similar in amino acid sequence and three-dimensional structure to their homologs in yeast and spinach. Although some archaea and parasitic microorganisms lack one or more of the enzymes of glycolysis, they retain the core of the pathway. The glycolytic pathway, of central importance in itself, is governed by thermodynamic principles and regulatory mechanisms that are common to all pathways of cell metabolism. It serves as a model of principles we will revisit throughout Part II of this book.
+
+## An Overview: Glycolysis Has Two Phases
+
+Before examining each step of the pathway in some detail, we take a look at glycolysis as a whole. As all sugar derivatives in glycolysis are the D isomers, we will usually omit the D designation except when emphasizing stereochemistry. The breakdown of the six-carbon glucose into two molecules of the three-carbon pyruvate occurs in 10 steps, the first 5 of which constitute the preparatory phase (Fig. 14-2a). In these reactions, glucose is first phosphorylated at the hydroxyl group on C-6 (step ①). The glucose 6-phosphate thus formed is converted to fructose 6-phosphate (step ②), which is again phosphorylated, this time at C-1, to yield fructose 1,6-bisphosphate (step ③). For both phosphorylations, ATP is the phosphoryl group donor.
+
+![](images/d8c5b534a32c0028d85355b97095a923b8feb97f295c245c25e9baddc4a8a4da.jpg)
+
+![](images/9c8fa370edc6e6fefda60bbf8ec0fa0712245b2b5841fbef4588ea4004f90a99.jpg)  
+FIGURE 14-2 The two phases of glycolysis. For each molecule of glucose that passes through the preparatory phase (a), two molecules of glyceraldehyde 3-phosphate are formed; both pass through the payoff phase (b). Pyruvate is the end product of the second phase of glycolysis. For each glucose molecule, two ATP are consumed in the preparatory phase and  
+four ATP are produced in the payoff phase, giving a net yield of two ATP and two NADH per molecule of glucose converted to pyruvate. The numbered reaction steps correspond to the numbered headings in the text discussion. Keep in mind that each phosphoryl group, represented here as (P), has two negative charges $(-\mathrm{PO}_3^{2-})$ .
+
+Fructose 1,6-bisphosphate is split to yield two different three-carbon molecules, dihydroxyacetone phosphate and glyceraldehyde 3-phosphate (step 4); this is the "lysis" step that gives the pathway its name. The dihydroxyacetone phosphate is isomerized to form a second molecule of glyceraldehyde 3-phosphate (step 5), ending the first phase of glycolysis. Note that two molecules of ATP are invested before the cleavage of glucose into two three-carbon pieces; there will be a good return on this investment. To summarize: in the preparatory phase of glycolysis the energy of ATP is invested, raising the free-energy content of the intermediates, and the carbon chains of all the metabolized hexoses are converted to a common product, glyceraldehyde 3-phosphate.
+
+The energy gain comes in the payoff phase of glycolysis (Fig. 14-2b). Each molecule of glyceraldehyde 3-phosphate is oxidized and phosphorylated by inorganic phosphate (not by ATP) to form 1,3-bisphosphoglycerate (step 6). Energy is then released as the two molecules of 1,3-bisphosphoglycerate are converted to two molecules of pyruvate (steps 7 through 10). Much of this energy is conserved by the coupled phosphorylation of four molecules of ADP to ATP. The net yield is two molecules of ATP per molecule of glucose used, because two molecules of ATP were invested in the preparatory phase. Energy is also conserved in the payoff phase in the formation of two molecules of the electron carrier NADH per molecule of glucose.
+
+P1 In the sequential reactions of glycolysis, three types of chemical transformations are particularly noteworthy: (1) degradation of the carbon skeleton of glucose to yield pyruvate; (2) phosphorylation of ADP to ATP by compounds with high phosphoryl group transfer potential, formed during glycolysis; and (3) transfer of a hydride ion to $\mathrm{NAD^{+}}$ , forming NADH. The overall chemical logic of the pathway is described in Figure 14-3.
+
+ATP and NADH Formation Coupled to Glycolysis During glycolysis some of the energy of the glucose molecule is conserved in ATP, while much remains in the product, pyruvate. The overall equation for glycolysis is
+
+Glucose + 2NAD $^{+}$ + 2ADP + 2P $_{i}$ $\longrightarrow$
+
+2 pyruvate + 2NADH + 2H $^{+}$ + 2ATP + 2H $_{2}$ O
+
+(14-1)
+
+For each molecule of glucose degraded to pyruvate, two molecules of ATP are generated from ADP and $P_{i}$ , and two molecules of NADH are produced by the reduction
+
+FIGURE 14-3 The chemical logic of the glycolytic pathway. In this simplified version of the pathway, each molecule is shown in a linear form, with carbon and hydrogen atoms not depicted, in order to highlight chemical transformations. Remember that glucose and fructose are present mostly in their cyclized forms in solution, although they are transiently present in linear form at the active sites of some of the enzymes in this pathway.
+
+The preparatory phase, steps 1 to 5, converts the six-carbon glucose into two three-carbon units, each of them phosphorylated. Oxidation of the three-carbon units is initiated in the payoff phase, steps 6 to 10. To produce pyruvate, the chemical steps must occur in the order shown.
+
+![](images/27c2f1b4f07a322152f60cbce0221963db237b3dc59ede959370ff58968bc16e.jpg)
+
+kJ/mol
+
+![](images/502528c4f2fd0c116b72fbc958a2f462041f4b061230cc86bc6313a897f2aa71.jpg)
+
+of $\mathrm{NAD^{+}}$ . The reduction of $\mathrm{NAD^{+}}$ (see Fig. 13-24) proceeds by the enzymatic transfer of a hydride ion ( $:\mathrm{H}^{-}$ ) from the aldehyde group of glyceraldehyde 3-phosphate to the nicotinamide ring of $\mathrm{NAD^{+}}$ , yielding the reduced coenzyme NADH. The other hydrogen atom of the substrate molecule is released to the solution as $\mathrm{H^{+}}$ .
+
+We can now resolve the equation of glycolysis into two processes—the conversion of glucose to pyruvate, which is exergonic:
+
+$$
+\begin{array}{r l} \text { Glucose } + 2 \mathrm{NAD} ^ {+} & \longrightarrow 2 \text { pyruvate } + 2 \mathrm{NADH} + 2 \mathrm{H} ^ {+} \\ & \Delta G _ {1} ^ {\prime \circ} = - 1 4 6 \mathrm{kJ/mol} \end{array} \tag {14-2}
+$$
+
+and the formation of ATP from ADP and $P_{i}$ , which is endergonic:
+
+$$
+\begin{array}{r l} 2 \mathrm{ADP} + 2 \mathrm {P_ {i}} & \longrightarrow 2 \mathrm{ATP} + 2 \mathrm {H_ {2} O} \\ \Delta G _ {2} ^ {\prime \circ} & = 2 (3 0. 5 \mathrm{kJ/mol}) = 6 1. 0 \end{array}\tag{14-3}
+$$
+
+The sum of Equations 14-2 and 14-3 gives the overall standard free-energy change of glycolysis, $\Delta G_{\mathrm{Sum}}^{\prime o}$ :
+
+$$
+\begin{array}{r l} \Delta G _ {\mathrm{Sum}} ^ {\prime \circ} = \Delta G _ {1} ^ {\prime \circ} + \Delta G _ {2} ^ {\prime \circ} & = - 1 4 6 \mathrm{kJ/mol} + 6 1. 0 \mathrm{kJ/mol} \\ & = - 8 5 \mathrm{kJ/mol} \end{array}
+$$
+
+Under standard conditions, and under the (nonstandard) conditions that prevail in a cell, glycolysis is an essentially irreversible process, driven to completion by a large net decrease in free energy.
+
+Energy Remaining in Pyruvate Glycolysis releases only a small fraction of the total available energy of the glucose molecule. The two molecules of pyruvate formed by glycolysis still contain most of the chemical potential energy of glucose, energy that can be extracted by oxidative reactions in the citric acid cycle (Chapter 16) and oxidative phosphorylation (Chapter 19)—aerobic processes. Under anaerobic conditions, pyruvate can be reduced to lactate or ethanol (Section 14.3). The oxidation of pyruvate is an important catabolic process, but pyruvate has anabolic fates as well. It can, for example, provide the carbon skeleton for the synthesis of the amino acid alanine or for the synthesis of fatty acids. We return to these anabolic reactions of pyruvate in later chapters.
+
+Importance of Phosphorylated Intermediates P1 Each of the nine glycolytic intermediates between glucose and pyruvate is phosphorylated (Fig. 14-2). The phosphoryl groups have three functions.
+
+1. Because the plasma membrane lacks transporters for phosphorylated sugars, the phosphorylated glycolytic intermediates cannot leave the cell. After the initial phosphorylation, no further energy is necessary to retain phosphorylated intermediates in the cell, despite the large difference in their intracellular and extracellular concentrations.
+
+2. Phosphoryl groups are essential components in the enzymatic conservation of metabolic energy. Energy made available with the transfer of phosphoryl groups from compounds with phosphoanhydride bonds (such as those in ATP) is partially conserved in the formation of phosphate esters such as glucose 6-phosphate. Compounds with higher group transfer potential than ATP, which are formed in glycolysis (1,3-bisphosphoglycerate and phosphoenolpyruvate), donate phosphoryl groups to ADP to form ATP.
+
+3. Binding energy resulting from the binding of phosphate groups to the active sites of enzymes lowers the activation energy and increases the specificity of the enzymatic reactions (Chapter 6). The phosphate groups of ADP, ATP, and the glycolytic intermediates form complexes with $Mg^{2+}$ , and the substrate binding sites of many glycolytic enzymes are specific for these $Mg^{2+}$ complexes. Most glycolytic enzymes require $Mg^{2+}$ for activity.
+
+## The Preparatory Phase of Glycolysis Requires ATP
+
+In the preparatory phase of glycolysis, two molecules of ATP are invested and the hexose chain is cleaved into two triose phosphates. The realization that phosphorylated hexoses were intermediates in glycolysis came slowly and serendipitously. In 1906, Arthur Harden and William Young tested their hypothesis that inhibitors of proteolytic enzymes would stabilize the glucose-fermenting enzymes in yeast extract. They added blood serum (known to contain inhibitors of proteolytic enzymes) to yeast extracts and observed the predicted stimulation of glucose metabolism. However, in a control experiment intended to show that boiling the serum destroyed the stimulatory activity, they discovered that boiled serum was just as effective at stimulating glycolysis! Careful examination and testing of the contents of the boiled serum revealed that inorganic phosphate was responsible for the stimulation. Harden and Young soon discovered that glucose added to their yeast extract was converted to a hexose bisphosphate (the "Harden-Young ester," eventually identified as fructose 1,6-bisphosphate). This was the beginning of a long series of investigations on the role of organic esters and anhydrides of phosphate in biochemistry, which has led to our current understanding of the central role of phosphoryl group transfer in biology.
+
+① Phosphorylation of Glucose In the first step of glycolysis (Fig. 14-2), glucose is activated for subsequent reactions by its phosphorylation at C-6 to yield glucose 6-phosphate, with ATP as the phosphoryl donor:
+
+![](images/e342c18c5d859720470d977059054c4468e2d29344e4f5efd47d16775714c7f6.jpg)
+
+This reaction, which is irreversible under intracellular conditions, is catalyzed by hexokinase. Recall that kinases are enzymes that catalyze the transfer of the terminal phosphoryl group from ATP to an acceptor nucleophile (see Fig. 13-8c). Kinases are a subclass of transferases (see Table 6-3). The acceptor in the case of hexokinase is a hexose, normally glucose, although hexokinase also catalyzes the phosphorylation of other common hexoses, such as fructose and mannose, in some tissues.
+
+Hexokinase, like many other kinases, requires $Mg^{2+}$ for its activity, because the true substrate of the enzyme is not $ATP^{4-}$ but the $MgATP^{2-}$ complex (see Fig. 13-12). $Mg^{2+}$ shields the negative charges of the phosphoryl groups in ATP, making the terminal phosphorus atom an easier target for nucleophilic attack by an —OH of glucose. Hexokinase undergoes a profound change in shape, an induced fit, when it binds glucose; two domains of the protein move about 8 Å closer to each other when ATP binds (see Fig. 6-30). This movement brings bound ATP closer to a molecule of glucose also bound to the enzyme and blocks the access of water (from the solvent), which might otherwise enter the active site and attack (hydrolyze) the phosphoanhydride bonds of ATP. Like the other nine enzymes of glycolysis, hexokinase is a soluble, cytosolic protein.
+
+Hexokinase is present in nearly all organisms. The human genome encodes four different hexokinases (I to IV), all of which catalyze the same reaction, but differ in kinetics, regulation, and location. Two or more enzymes that catalyze the same reaction but are encoded by different genes are called isozymes (see Box 14-3). One of the isozymes present in hepatocytes, hexokinase IV (also called glucokinase), differs from other forms of hexokinase in kinetic and regulatory properties, with important physiological consequences that are described in Section 14.5.
+
+② Conversion of Glucose 6-Phosphate to Fructose 6-Phosphate The enzyme phosphohexose isomerase (phosphoglucose isomerase) catalyzes the reversible isomerization of glucose 6-phosphate, an aldose, to fructose 6-phosphate, a ketose:
+
+![](images/5d5e53629c5a9e09031176be61039ff66cd9cf054ad51da08558a6c3b01a8d40.jpg)
+
+The mechanism for this reaction involves an enediol intermediate (Fig. 14-4). The reaction proceeds readily in
+
+![](images/24d833954c69ce636023966925c14d5dd7bc2d0a913e48a6420c3919fddf1ced.jpg)
+
+MECHANISM FIGURE 14-4 The phosphohexose isomerase reaction. The ring opening and closing reactions (steps ① and ④) are catalyzed by an active-site His residue, by mechanisms omitted here for simplicity. The proton (light red) initially at C-2 is made more easily abstractable by electron withdrawal by the adjacent carbonyl and nearby hydroxyl groups. After its transfer from C-2 to the active-site Glu residue (a weak acid), the proton is freely exchanged with the surrounding solution; that is, the proton abstracted from C-2 in step ② is not necessarily the same one that is added to C-1 in step ③.
+
+![](images/ad071ed0be443bd6dd98d17eb17ec51695c39e4a1880290619e06e9c5218b539.jpg)
+
+either direction, as might be expected from the relatively small change in standard free energy.
+
+3 Phosphorylation of Fructose 6-Phosphate to Fructose 1,6-Bisphosphate In the second of the two priming reactions of glycolysis, phosphofructokinase-1 (PFK-1) catalyzes the transfer of a phosphoryl group from ATP to fructose 6-phosphate to yield fructose 1,6-bisphosphate:
+
+![](images/0e23443310889ee672f17f2a9b6d4d366aed82e8b2549f7b25c726650a576404.jpg)
+
+KEY CONVENTION Compounds that contain two phosphate or phosphoryl groups attached at different positions in the molecule are named bisphosphates (or bisphospho compounds); for example, fructose 1,6-bisphosphate and 1,3-bisphosphoglycerate. Compounds with two phosphates linked together as a pyrophosphoryl group are named diphosphates; for example, adenosine diphosphate (ADP). Similar rules apply for the naming of trisphosphates (such as inositol 1,4,5-trisphosphate; see p. 425) and triphosphates (such as adenosine triphosphate, ATP).
+
+The enzyme that forms fructose 1,6-bisphosphate is called PFK-1 to distinguish it from a second enzyme (PFK-2) that catalyzes the formation of fructose 2,6-bisphosphate from fructose 6-phosphate in a separate pathway (the roles of PFK-2 and fructose 2,6-bisphosphate are discussed in Section 14.5). The PFK-1 reaction is essentially irreversible under cellular conditions, and it is the first “committed” step in the glycolytic pathway; glucose 6-phosphate and fructose 6-phosphate have other possible fates, but fructose 1,6-bisphosphate is targeted for glycolysis.
+
+Phosphofructokinase-1 is subject to complex allosteric regulation; its activity is increased whenever the cell's ATP supply is depleted or when the ATP breakdown products, ADP and AMP (particularly the latter), accumulate. The enzyme is inhibited whenever the cell has ample ATP and is well supplied by other fuels such as fatty acids. In some organisms, fructose 2,6-bisphosphate (not to be confused with the PFK-1 reaction product, fructose 1,6-bisphosphate) is a potent allosteric activator of PFK-1. Ribulose 5-phosphate, an intermediate in the pentose phosphate pathway discussed in Section 14.6, also activates phosphofructokinase indirectly. The multiple layers of regulation of this step in glycolysis are discussed in greater detail in Section 14.5.
+
+Some bacteria and protists and perhaps all plants have a different phosphofructokinase (PP-PFK-1) that uses pyrophosphate (PP $_{i}$ ), not ATP, as the phosphoryl group donor in the synthesis of fructose 1,6-bisphosphate:
+
+$$
+\begin{array}{r l} \text { Fructose   6 - phosphate } + \mathrm{PP} _ {\mathrm{i}} & \xrightarrow {\mathrm{Mg} ^ {2 +}} \\ & \text { fructose   1,6 - bisphosphate } + \mathrm{P} _ {\mathrm{i}} \\ & \Delta \mathrm{G} ^ {\prime \circ} = - 2. 9 \mathrm{kJ/mol} \end{array}
+$$
+
+We will discuss this enzyme in Chapter 20.
+
+4 Cleavage of Fructose 1,6-Bisphosphate The enzyme fructose 1,6-bisphosphate aldolase, often called simply aldolase, catalyzes a reverse aldol condensation (Fig. 14-5; see Fig. 13-4). Fructose 1,6-bisphosphate is cleaved to yield two different triose phosphates, namely, glyceraldehyde 3-phosphate (an aldose) and dihydroxyacetone phosphate (a ketose):
+
+![](images/577392c2cbb28c61d97fe3d802bd5d4fa95896a6703214a3087d6082b0310925.jpg)
+
+There are two classes of aldolases. Class I aldolases, found in animals and plants, use the mechanism shown in Figure 14-5. Class II enzymes, in fungi and bacteria, do not form the Schiff base intermediate. Instead, a zinc ion at the active site is coordinated with the carbonyl oxygen at C-2; the $\mathrm{Zn}^{2+}$ polarizes the carbonyl group and stabilizes the enolate intermediate created in the C-C bond cleavage step (see Fig. 6-23).
+
+Although the aldolase reaction has a strongly positive standard free-energy change in the direction of fructose 1,6-bisphosphate cleavage, at the lower concentrations of reactants present in cells the actual free-energy change is small and the aldolase reaction is readily reversible. We shall see later that aldolase acts in the reverse direction during the process of gluconeogenesis.
+
+5 Interconversion of the Triose Phosphates Only one of the two triose phosphates formed by aldolase, glyceraldehyde 3-phosphate, can be directly degraded in the subsequent steps of glycolysis. The other product, dihydroxyacetone phosphate, is immediately and reversibly converted to glyceraldehyde 3-phosphate by the fifth enzyme of the glycolytic sequence, triose phosphate isomerase:
+
+![](images/02f51ea87c826fd92adf808bd7806c99b432e12f703005ae5fd72ca9c6ff5625.jpg)
+
+![](images/c6495b43ee9de5a5a1d680d9d4237436005d3ad49fe65807b1489fcb9297c9af.jpg)  
+MECHANISM FIGURE 14-5 The class I aldolase reaction. Note that cleavage between C-3 and C-4 depends on the presence of the carbonyl group at C-2, which is converted to an imine on the enzyme. A and B represent amino acid residues that serve as general acid (A) or base (B).
+
+![](images/7ab75582bb96f9bd6710f3d6e64d2c9299cefe06698f8351b5bf6d5ea0d2d3cc.jpg)
+
+The reaction mechanism is similar to the reaction promoted by phosphohexose isomerase in step 2 of glycolysis (Fig. 14-4). After the triose phosphate isomerase reaction, the carbon atoms derived from C-1, C-2, and C-3 of the starting glucose are chemically indistinguishable from C-6, C-5, and C-4, respectively (Fig. 14-6); both "halves" of glucose have yielded glyceraldehyde 3-phosphate.
+
+This reaction completes the preparatory phase of glycolysis. The hexose molecule has been phosphorylated at C-1 and C-6 and then cleaved to form two molecules of glyceraldehyde 3-phosphate.
+
+![](images/ed5bacfd4a22046bb0e8101531feaf86ed5fc689c9915522234a14890109d568.jpg)
+
+![](images/38c7855aac48b8542760aef407daa9263d57a89c8124bada1698c5fe5eb2c5a4.jpg)
+
+(a)  
+![](images/ea9d91a53c76495b1d79d1c225da9e6a872dc52f4cda1beaa2e043c523eca0cd.jpg)  
+(b)  
+FIGURE 14-6 Fate of the glucose carbons in the formation of glyceraldehyde 3-phosphate. (a) The origin of the carbons in the two three-carbon products of the aldolase and triose phosphate isomerase reactions. The end product of the two reactions is glyceraldehyde 3-phosphate (two molecules). (b) Each carbon of glyceraldehyde 3-phosphate is derived from either of two specific carbons of glucose. Note that the numbering of the carbon atoms of glyceraldehyde 3-phosphate differs from that of the glucose from which it is derived. In glyceraldehyde 3-phosphate, the most complex functional group (the carbonyl) is specified as C-1. This numbering change is important for interpreting experiments with glucose in which a single carbon is labeled with a radioisotope. (See Problems 5 and 22 at the end of this chapter.)
+
+## The Payoff Phase of Glycolysis Yields ATP and NADH
+
+The payoff phase of glycolysis (Fig. 14-2b) includes the energy-conserving phosphorylation steps in which some of the chemical energy of the glucose molecule is conserved in the form of ATP and NADH. Remember that one molecule of glucose yields two molecules of glyceraldehyde 3-phosphate, and both halves of the glucose molecule follow the same pathway in the second phase of glycolysis. The conversion of two molecules of glyceraldehyde 3-phosphate to two molecules of pyruvate is accompanied by the formation of four molecules of ATP from ADP. However, the net yield of ATP per molecule of glucose degraded is only two, because two ATP were invested in the preparatory phase of glycolysis to phosphorylate the two ends of the hexose molecule.
+
+⑥ Oxidation of Glyceraldehyde 3-Phosphate to 1,3-Bisphosphoglycerate P1 The first step in the payoff phase is the oxidation of glyceraldehyde 3-phosphate to 1,3-bisphosphoglycerate, catalyzed by glyceraldehyde 3-phosphate dehydrogenase:
+
+![](images/67103fc4192e60829260643e5a9ba5cc79f40f62d93dd648f062c90f2d8ff7d8.jpg)
+
+This is the first of the two energy-conserving reactions of glycolysis that eventually lead to the formation of ATP. The aldehyde group of glyceraldehyde 3-phosphate is oxidized, not to a free carboxyl group but to a carboxylic acid anhydride with phosphoric acid. This type of anhydride, called an acyl phosphate, has a very high standard free energy of hydrolysis ( $\Delta G^{\circ} = -49.3$ kJ/mol; see Table 13-6). Much of the free energy of oxidation of the aldehyde group of glyceraldehyde 3-phosphate is conserved by formation of the acyl phosphate group at C-1 of 1,3-bisphosphoglycerate.
+
+![](images/f6e0dd7f99bd2fb71b6f1ac3060efe4c42ede59c3d3cd1adfb692c5e21fa2ffd.jpg)
+
+Glyceraldehyde 3-phosphate is covalently bound to the dehydrogenase during the reaction (Fig. 14-7). The aldehyde group of glyceraldehyde 3-phosphate reacts with the —SH group of an essential Cys residue in the active site, in a reaction analogous to the formation of a hemiacetal (see Fig. 7-5), in this case producing a thiohemiacetal. Reaction of the essential Cys residue with a heavy metal such as Hg $^{2+}$ irreversibly inhibits the enzyme.
+
+The amount of $NAD^{+}$ in a cell ( $\leq10^{-5}$ M) is far smaller than the amount of glucose metabolized in a few minutes. Glycolysis would soon come to a halt if the NADH formed in this step of glycolysis were not continuously reoxidized and recycled. We return to a discussion of this recycling of $NAD^{+}$ later in the chapter.
+
+⑦ Phosphoryl Transfer from 1,3-Bisphosphoglycerate to ADP The enzyme phosphoglycerate kinase transfers the high-energy phosphoryl group from the carboxyl group of 1,3-bisphosphoglycerate to ADP, forming ATP and 3-phosphoglycerate:
+
+![](images/4fe8cb665c9b741a8569a4302c9a1a0d988848e6bd4480ac32ea6795990a374e.jpg)  
+MECHANISM FIGURE 14-7 The glyceraldehyde 3-phosphate dehydrogenase reaction.
+
+![](images/eca3acf788b52d4c2407fdfedda96ed3d0c06396cb8a4690b2ebaf8c03185449.jpg)
+
+Notice that phosphoglycerate kinase is named for the reverse reaction, in which it transfers a phosphoryl group from ATP to 3-phosphoglycerate. Like all enzymes, it catalyzes the reaction in both directions. This enzyme acts in the direction suggested by its name during gluconeogenesis (see Fig. 14-16) and during photosynthetic CO₂ assimilation (see Fig. 20-26). In glycolysis, the reaction it catalyzes proceeds as shown above, in the direction of ATP synthesis.
+
+Steps 6 and 7 of glycolysis together constitute an energy-coupling process in which 1,3-bisphosphoglycerate is the common intermediate; it is formed in the first reaction (which would be endergonic in isolation), and its acyl phosphate group is transferred to ADP in the second reaction (which is strongly exergonic). The sum of these two reactions is
+
+$$
+\begin{array}{r l}\text {Glyceraldehyde 3 - phosphate + ADP + P_{i} + NAD^{+}}&\rightleftharpoons\\3 - \text {phosphoglycerate + ATP + NADH + H^{+}}\\\Delta G ^ {\prime \circ} = - 1 2. 2 \mathrm{kJ/mol}\end{array}
+$$
+
+Thus the overall reaction is exergonic.
+
+Recall from Chapter 13 that the actual free-energy change, $\Delta G$ , is determined by the standard free-energy change, $\Delta G^{\prime\circ}$ , and the mass-action ratio, Q, which is the ratio [products]/[reactants] (see Eqn 13-4). For step 6,
+
+$$
+\begin{array}{r l} \Delta G & = \Delta G ^ {\prime \circ} + R T \ln Q \\ & = \Delta G ^ {\prime \circ} + R T \ln \frac {[ 1 , 3 - \text { bisphosphoglycerate } ] [ \mathrm{NADH} ]}{[ \text { glyceraldehyde   3 - phosphate } ] [ \mathrm{P} _ {1} ] [ \mathrm{NAD} ^ {+} ]} \end{array}
+$$
+
+Notice that $[H^{+}]$ is not included in Q. In biochemical calculations, $[H^{+}]$ is assumed to be a constant $(10^{-7} \text{ M})$ , and this constant is included in the definition of $\Delta G^{\prime\circ}$ (p. 468).
+
+When the mass-action ratio is less than 1.0, its natural logarithm has a negative sign. In the cytosol, where these reactions are taking place, the ratio [NADH]/[NAD $^{+}$ ] is a small fraction, contributing to a low Q. Step ⑦, by consuming the product of step ⑥ (1,3-bisphosphoglycerate), keeps [1,3-bisphosphoglycerate] relatively low in the steady state and thereby keeps Q for the overall energy-coupling process small. When Q is small, the contribution of ln Q can make ΔG strongly negative. This is simply another way of showing how the two reactions, steps ⑥ and ⑦, are coupled through a common intermediate.
+
+The outcome of these coupled reactions, both reversible under cellular conditions, is that the energy released on oxidation of an aldehyde to a carboxylate group is conserved by the coupled formation of ATP from ADP and $P_{i}$ . The formation of ATP by phosphoryl group transfer from a substrate such as 1,3-bisphosphoglycerate is referred to as a substrate-level phosphorylation, to distinguish this mechanism from respiration-linked phosphorylation. Substrate-level phosphorylations involve soluble enzymes and chemical intermediates (1,3-bisphosphoglycerate in this case). Respiration-linked phosphorylations, on the other hand, involve membrane-bound enzymes and transmembrane gradients of protons (Chapter 19).
+
+8 Conversion of 3-Phosphoglycerate to 2-Phosphoglycerate The enzyme phosphoglycerate mutase catalyzes a reversible shift of the phosphoryl group between C-2 and C-3 of glycerate; $\mathrm{Mg}^{2+}$ is essential for this reaction:
+
+![](images/28f798fb1a01966d05b2d9f3fad1057e675aab61c057c732c97a62065e3d49ad.jpg)
+
+The reaction occurs in two steps (Fig. 14-8). A phosphoryl group initially attached to a His residue of the mutase is transferred to the hydroxyl group at C-2 of 3-phosphoglycerate, forming 2,3-bisphosphoglycerate (2,3-BPG). The phosphoryl group at C-3 of 2,3-BPG is then transferred to the same His residue, producing 2-phosphoglycerate and regenerating the phosphorylated enzyme. Phosphoglycerate mutase is initially phosphorylated by phosphoryl transfer from 2,3-BPG, which is required in small quantities to initiate the catalytic cycle and is continuously regenerated by that cycle.
+
+Phosphoglycerate mutase  
+![](images/d4409f661a63ac19b6d15008aa168d52012233cef531d5a36bdece60c07df4ca.jpg)
+
+MECHANISM FIGURE 14-8 The phosphoglycerate mutase reaction.
+
+9 Dehydration of 2-Phosphoglycerate to Phosphoenolpyruvate P1 In the second glycolytic reaction that generates a compound with high phosphoryl group transfer potential (the first was step 6), enolase promotes reversible removal of a molecule of water from 2-phosphoglycerate to yield phosphoenolpyruvate (PEP):
+
+![](images/15ca10704753e5fa7565b32f262991f8fc1c223fd2c5f81c0df3b3f76cc3ee96.jpg)
+
+The mechanism of the enolase reaction involves an enolic intermediate stabilized by $Mg^{2+}$ (see Fig. 6-31). The reaction converts a compound with a relatively low phosphoryl group transfer potential ( $\Delta G^{\prime\circ}$ for hydrolysis of 2-phosphoglycerate is -17.6 kJ/mol) to one with high phosphoryl group transfer potential ( $\Delta G^{\prime\circ}$ for PEP hydrolysis is -61.9 kJ/mol) (see Fig. 13-13).
+
+10 Transfer of the Phosphoryl Group from Phosphoenolpyruvate to ADP The last step in glycolysis is the transfer of the phosphoryl group from phosphoenolpyruvate to ADP, catalyzed by pyruvate kinase, which requires $K^{+}$ and either $Mg^{2+}$ or $Mn^{2+}$ :
+
+![](images/36d8cc254afbac395e6c885eb70e0ccb4b5304ec02a25471ce9e74aca6167428.jpg)
+
+In this substrate-level phosphorylation, the product pyruvate first appears in its enol form, then tautomerizes nonenzymatically to its keto form, which predominates at pH 7:
+
+![](images/befebf73f02c31e3af81629026598cd233dd093ab7c6cf015b32c25bb1b2be08.jpg)
+
+The overall reaction has a large, negative standard free-energy change, due in large part to the spontaneous conversion of the enol form of pyruvate to the keto form (see Fig. 13-13). About half of the energy released by PEP hydrolysis ( $\Delta G^{\circ}= -61.9$ kJ/mol) is conserved in the formation of the phosphoanhydride bond of ATP ( $\Delta G^{\circ}= -30.5$ kJ/mol), and the rest (-31.4 kJ/mol) constitutes a large driving force pushing the reaction toward ATP synthesis. We discuss the regulation of pyruvate kinase in Section 14.5.
+
+## The Overall Balance Sheet Shows a Net Gain of Two ATP and Two NADH Per Glucose
+
+P1 We can now construct a balance sheet for glycolysis to account for (1) the fate of the carbon skeleton of glucose, (2) the input of $P_{i}$ and ADP and output of ATP, and (3) the pathway of electrons in the oxidation-reduction reactions. The left side of the following equation shows all the inputs of ATP, $NAD^{+}$ , ADP, and $P_{i}$ (consult Fig. 14-2), and the right side shows all the outputs (keep in mind that each molecule of glucose yields two molecules of pyruvate):
+
+$$
+\mathrm{Glucose} + 2 \mathrm{ATP} + 2 \mathrm{NAD} ^ {+} + 4 \mathrm{ADP} + 2 \mathrm{P} _ {\mathrm{i}} \longrightarrow
+$$
+
+$$
+2 \mathrm{pyruvate} + 2 \mathrm{ADP} + 2 \mathrm{NADH} + 2 \mathrm{H} ^ {+} + 4 \mathrm{ATP} + 2 \mathrm{H} _ {2} \mathrm{O}
+$$
+
+Canceling out common terms on both sides of the equation gives the overall equation for glycolysis:
+
+$$
+\begin{array}{r l} & \mathrm {Glucose + 2NA D ^ {+} + 2ADP + 2P_ {i} \longrightarrow} \\ & \quad 2 \mathrm{pyruvate+2NADH+2H} ^ {+} + 2 \mathrm{ATP+2H} _ {2} \mathrm{O} \end{array}
+$$
+
+In the overall glycolytic process, one molecule of glucose is converted to two molecules of pyruvate (the pathway of carbon). Two molecules of ADP and two of $P_{i}$ are converted to two molecules of ATP (the pathway of phosphoryl groups). Four electrons, as two hydride ions, are transferred from two molecules of glyceraldehyde 3-phosphate to two of $NAD^{+}$ (the pathway of electrons).
+
+## SUMMARY 14.1 Glycolysis
+
+Glycolysis is a near-universal pathway by which a glucose molecule is oxidized, in two phases, to two molecules of pyruvate, with energy conserved as ATP and NADH. Ten cytosolic enzymes act sequentially in glycolysis. The overall reaction converts glucose to two molecules of pyruvate, and energy is conserved in the synthesis of two molecules of ATP and two molecules of NADH.
+
+In the preparatory phase of glycolysis, two molecules of ATP are invested to activate glucose to fructose 1,6-bisphosphate. The bond between C-3 and C-4 is then broken to yield two molecules of triose phosphate.
+
+In the payoff phase, each of the two molecules of glyceraldehyde 3-phosphate derived from glucose undergoes oxidation at C-1; some of the energy of this oxidation reaction is conserved in the form of one NADH and two ATP per triose phosphate oxidized.
+
+■ Subtracting the two ATP spent in the preparatory phase, the net equation for the overall process is
+
+Glucose + 2NAD $^{+}$ + 2ADP + 2P $_{i}$ →
+
+$$
+2 \mathrm{pyruvate} + 2 \mathrm{NADH} + 2 \mathrm{H} ^ {+} + 2 \mathrm{ATP} + 2 \mathrm{H} _ {2} \mathrm{O}
+$$
+
+## 14.2 Feeder Pathways for Glycolysis
+
+Many carbohydrates besides glucose meet their catabolic fate in glycolysis, after being transformed into one of the glycolytic intermediates. The most significant are the storage polysaccharides glycogen and starch, either within cells (endogenous) or obtained in the diet; the disaccharides maltose, lactose, and sucrose; and the monosaccharides fructose, mannose, and galactose (Fig. 14-9).
+
+![](images/7dbbdc59512fab19e745fcb917f59cf98ab85a387a1409a3821191a94e544a61.jpg)  
+FIGURE 14-9 Entry of dietary glycogen, starch, disaccharides, and hexoses into the preparatory stage of glycolysis. The numbered steps are described in the text.
+
+## Endogenous Glycogen and Starch Are Degraded by Phosphorolysis
+
+P2 Glycogen stored in animal tissues (primarily liver and skeletal muscle) and in microorganisms is mobilized for use within the same cell by a phosphorolytic reaction (1 in Fig. 14-9) catalyzed by glycogen phosphorylase. The product of this reaction is not free glucose, but glucose 1-phosphate. We discuss glycogen metabolism in more detail in Chapter 15. In plant tissues, starch is mobilized by a similar phosphorolytic reaction catalyzed by starch phosphorylase.
+
+Glucose 1-phosphate produced by glycogen phosphorylase is converted to glucose 6-phosphate by phosphoglucomutase 2, which catalyzes the reversible reaction
+
+## Glucose 1-phosphate $\rightleftharpoons$ glucose 6-phosphate
+
+Phosphoglucomutase employs essentially the same mechanism as phosphoglycerate mutase (Fig. 14-8): both entail a bisphosphate intermediate, and the enzyme is transiently phosphorylated in each catalytic cycle. The general name mutase is given to enzymes that catalyze the transfer of a functional group from one position to another in the same molecule. Mutases are a subclass of isomerases, enzymes that interconvert stereoisomers or structural or positional isomers (see Table 6-3). The glucose 6-phosphate formed in the phosphoglucomutase reaction can continue through glycolysis ③ or enter another pathway such as the pentose phosphate pathway, described in Section 14.6.
+
+## WORKED EXAMPLE 14-1 Energy Savings for Glycogen Breakdown by Phosphorolysis
+
+Calculate the energy savings (in ATP molecules per glucose monomer) achieved by breaking down glycogen by phosphorolysis rather than hydrolysis to begin the process of glycolysis.
+
+SOLUTION: Phosphorolysis produces a phosphorylated glucose (glucose 1-phosphate), which is then converted to glucose 6-phosphate — without expenditure of the cellular energy (1 ATP) needed for formation of glucose 6-phosphate from free glucose. Thus only 1 ATP is consumed per glucose monomer in the preparatory phase, compared with 2 ATP when glycolysis starts with free glucose. The cell therefore gains 3 ATP per glucose monomer (4 ATP produced in the payoff phase minus 1 ATP used in the preparatory phase), rather than 2 — a savings of 1 ATP per glucose monomer.
+
+![](images/3b44b227ee181b328349878da99818c6e4dedcbdb2f21e41d5957ec68fe6cd10.jpg)
+
+## Dietary Polysaccharides and Disaccharides Undergo Hydrolysis to Monosaccharides
+
+For most humans, starch is the major source of carbohydrates in the diet (4), Fig. 14-9). Dietary starch has essentially the same structure as glycogen, and its digestion proceeds by the same pathway. Digestion begins in the mouth, where salivary $\alpha$ -amylase hydrolyzes the internal ( $\alpha$ 1→4) glycosidic linkages of starch and glycogen, producing di- and trisaccharides. These are produced by hydrolysis reactions, in which water, not $P_{i}$ , is the attacking species. In the stomach, salivary $\alpha$ -amylase is inactivated by the low pH, but a second form of $\alpha$ -amylase, secreted by the pancreas into the small intestine, continues the digestion process.
+
+Pancreatic $\alpha$ -amylase release into the small intestine yields mainly maltose and maltotriose (the di- and trisaccharides of glucose) and oligosaccharides called limit dextrins, fragments of amylopectin containing ( $\alpha1\rightarrow6$ ) branch points, which are removed by limit dextrinases. Disaccharides are hydrolyzed by a family of membrane-bound hydrolases in the intestinal brush border:
+
+$$
+\mathrm{Dextrin} + n \mathrm{H} _ {2} \mathrm{O} \xrightarrow [ \text {dextrinase} ]{} n \text {glucose}
+$$
+
+$$
+\mathrm{Maltose} + \mathrm{H} _ {2} \mathrm{O} \xrightarrow [ \text {maltase} ]{} 2 \mathrm{glucose}
+$$
+
+$$
+\mathrm{Lactose} + \mathrm{H} _ {2} \mathrm{O} \xrightarrow [ \text {lactose} ]{} \mathrm{galactose} + \mathrm{glucose}
+$$
+
+$$
+\mathrm{Sucrose} + \mathrm{H} _ {2} \mathrm{O} \xrightarrow [ \text {   sucrase   } ]{} \text {   fructose   } + \text {   glucose   }
+$$
+
+$$
+\mathrm{Trehalose} + \mathrm{H} _ {2} \mathrm{O} \xrightarrow [ \text {trehalase} ]{} 2 \mathrm{glucose}
+$$
+
+Only monosaccharides are taken up from the intestine. They are actively transported into the intestinal epithelial cells (see Fig. 11-42), then passed into the blood to be carried to various tissues, where they are catabolized via glycolysis.
+
+As we noted in Chapter 7, most animals cannot digest cellulose for lack of the enzyme cellulase, which attacks the (β1→4) glycosidic bonds of cellulose. In ruminant animals, the extended stomach includes a chamber in which symbiotic microorganisms that produce cellulase break down cellulose into glucose molecules. These microorganisms use the resulting glucose in an anaerobic fermentation that produces large quantities of propionate. This propionate, after conversion to succinate (see Fig. 17-12), serves as the starting material for gluconeogenesis, which produces much of the lactose in milk.
+
+![](images/29903c0a97f98a9754c011d5549f0d7b12f4cc412dbdfb6910bcbe34ea98782b.jpg)
+
+Lactose Digestion and Lactose Intolerance The defining feature of mammals is, of course, mammary glands, which produce the disaccharide lactose for the nourishment of infants. The enzyme lactase converts lactose to glucose and galactose (5, Fig. 14-9), both of which are taken up from the small intestine and metabolized in the tissues by glycolysis. As infants are weaned, their lactase levels diminish, and lactase is absent in most adults—except in certain populations. About one in three adults in northern Europe and in some parts of Africa shows the lactase persistence phenotype. They continue to produce lactase and thus are able to digest milk into adulthood. The other two-thirds experience lactose intolerance due to the disappearance after childhood of most or all of the lactase activity of the intestinal epithelial cells. Without intestinal lactase, lactose cannot be completely digested and absorbed in the small intestine, and it passes into the large intestine, where bacteria convert it to toxic products that cause abdominal cramps and diarrhea. The problem is further complicated because undigested lactose and its metabolites increase the osmolarity of the intestinal contents, favoring retention of water in the intestine, and causing diarrhea. In most parts of the world where lactose intolerance is prevalent, milk is not used as a food by adults, although milk products predigested with lactase are commercially available. In certain human disorders, several or all of the intestinal disaccharidases are missing. In these cases, the digestive disturbances triggered by dietary disaccharides can sometimes be minimized by a controlled diet lacking the undigestible carbohydrates.
+
+One way to determine whether lactase is present and active in the intestine is to compare the rise in blood glucose after the ingestion of a quantity of either glucose or lactose. When glucose is ingested, the blood glucose level increases rapidly and transiently. When lactose is ingested, lactase, if present in the intestine, will hydrolyze the lactose into glucose and galactose and the blood glucose level will rise. If lactase is absent or less active, ingesting lactose will lead to little or no transient increase in blood glucose.
+
+Galactose Metabolism and Disease Galactose (6, Fig. 14-9), a product of the hydrolysis of lactose and therefore an important component in the diet of infants, passes in the blood from the intestine to the liver, where it is first phosphorylated at C-1, at the expense of ATP, by the enzyme galactokinase:
+
+$$
+\mathrm{Galactose} + \mathrm{ATP} \xrightarrow {\mathrm{Mg} ^ {2 +}} \text {galactose 1 - phosphate} + \mathrm{ADP}
+$$
+
+The galactose 1-phosphate is then transferred to a uridine nucleotide by a transferase. The resulting UDP-galactose is epimerized at C-4, forming UDP-glucose by a set of reactions in which UDP functions as an activator of hexose groups (Fig. 14-10) and a "tag" that these hexoses are in a separate pool from those destined for another process such as glycolysis. The epimerization, catalyzed by UDP-glucose 4-epimerase, involves first the oxidation of the C-4 —OH group to a ketone, then reduction of the ketone to an —OH, with inversion of the configuration at C-4. NAD is the cofactor for both the oxidation and the reduction. The glucose 1-phosphate made this way is converted to glucose 6-phosphate by phosphoglucomutase.
+
+![](images/6a29cfa878bf80cc055947eb6b2eb3bb2d5edae3e87f7c1b36ac33fc3a4e191e.jpg)
+
+A defect in any of the enzymes in this pathway has serious medical consequences. In galactokinase-deficiency galactosemia, caused by a defect in the
+
+![](images/f8b9d59c00784ccbb84c868a8cdd99cafe5ff1d10f89831c3d1505e14c99820a.jpg)  
+FIGURE 14-10 Conversion of galactose to glucose 1-phosphate. The conversion proceeds through a sugar-nucleotide derivative, UDP-galactose, which is formed when galactose 1-phosphate displaces glucose 1-phosphate from UDP-glucose. UDP-galactose is then converted by UDP-glucose 4-epimerase to UDP-glucose, in a reaction that involves oxidation of C-4 (light red) by $\mathrm{NAD^{+}}$ , then reduction of C-4 by NADH; the result is inversion of the configuration at C-4. The UDP-glucose is recycled through another round of the same reaction. The net effect of this cycle is the conversion of galactose 1-phosphate to glucose 1-phosphate; there is no net production or consumption of UDP-galactose or UDP-glucose. Defects in the enzymes that catalyze each of these steps result in the various galactosemias shown.
+
+GALK gene, high galactose concentrations are found in blood and urine. Affected individuals develop cataracts in infancy, caused by deposition of the galactose metabolite galactitol in the lens.
+
+![](images/485a6adb66cd8f76e5ecc31d882895fb8aece51815a7b8f46de2b918f01a7025.jpg)
+
+The other symptoms in this disorder are relatively mild, and strict limitation of galactose in the diet greatly diminishes their severity. Transferase-deficiency galactosemia, caused by a defect in the GALT gene, is more serious; it is characterized by poor growth in childhood, speech abnormality, mental deficiency, and liver damage that may be fatal, even when galactose is withheld from the diet. Epimerase-deficiency galactosemia, caused by a defect in the GALE gene, leads to similar symptoms, but they are less severe when dietary galactose is carefully controlled.
+
+Fructose and Mannose P2 In most organisms, hexoses other than glucose can undergo glycolysis after conversion to a phosphorylated derivative. Fructose, present in free form in many fruits and formed by hydrolysis of sucrose in the small intestine of vertebrates, is phosphorylated by hexokinase:
+
+$$
+\mathrm{Fructose} + \mathrm{ATP} \xrightarrow {\mathrm{Mg} ^ {2 +}} \mathrm{fructose6-phosphate} + \mathrm{ADP}
+$$
+
+This is a major pathway of fructose entry into glycolysis in the muscles and kidney (7, Fig. 14-9). In the liver, fructose enters by a different pathway. The liver enzyme fructokinase catalyzes the phosphorylation of fructose at C-1 rather than C-6 (8, Fig. 14-9):
+
+Fructose + ATP $\xrightarrow{Mg^{2+}}$ fructose 1-phosphate + ADP
+
+The fructose 1-phosphate is then cleaved to glyceraldehyde and dihydroxyacetone phosphate by fructose 1-phosphate aldolase:
+
+![](images/b7d947a2f7e55987a69911c6c71639dd2579c502c548b3900cac46ae34d87318.jpg)
+
+Dihydroxyacetone phosphate is converted to glyceraldehyde 3-phosphate by the glycolytic enzyme triose phosphate isomerase. Glyceraldehyde is phosphorylated by ATP and triose kinase to glyceraldehyde 3-phosphate:
+
+$$
+\mathrm{Glyceraldehyde} + \mathrm{ATP} \xrightarrow {\mathrm{Mg} ^ {2 +}}
+$$
+
+glyceraldehyde 3-phosphate + ADP
+
+Thus, both products of fructose 1-phosphate hydrolysis enter the glycolytic pathway as glyceraldehyde 3-phosphate.
+
+Mannose, released in the digestion of various polysaccharides and glycoproteins of foods, is phosphorylated at C-6 by hexokinase (9, Fig. 14-9):
+
+$$
+\mathrm{Mannose} + \mathrm{ATP} \xrightarrow {\mathrm{Mg} ^ {2 +}} \mathrm{mannose6-phosphate} + \mathrm{ADP}
+$$
+
+Phosphohexose isomerase converts mannose 6-phosphate to fructose 6-phosphate, which enters glycolysis.
+
+## SUMMARY 14.2 Feeder Pathways for Glycolysis
+
+■ Endogenous glycogen and starch, polymeric storage forms of glucose, undergo sequential phosphorolysis of glucose residues, forming glucose 1-phosphate. Phosphoglucomutase converts the glucose 1-phosphate to glucose 6-phosphate, which can enter glycolysis at a point in the preparatory phase that requires the investment of only one more ATP.
+
+\- Ingested polysaccharides and disaccharides are converted to monosaccharides by hydrolytic enzymes in saliva and in the small intestine. The monosaccharides pass through intestinal cells to the bloodstream, which transports them to the liver or other tissues.
+
+Lactase is present in infants but often absent in adults, producing lactose intolerance. D-Hexoses, including galactose, fructose, and mannose, can be phosphorylated and funneled into glycolysis. Galactose is converted to glucose 1-phosphate through UDP-galactose and UDP-glucose intermediates. A genetic defect in enzymes of this pathway results in one of several galactosemias of varying severity.
+
+## 14.3 Fates of Pyruvate
+
+With the exception of some interesting variations in the bacterial realm, the pyruvate formed by glycolysis is further metabolized via one of three catabolic routes (Fig. 14-11). P3 Under aerobic conditions, glycolysis is only the first stage in the complete degradation of glucose. The pyruvate formed in the final step of glycolysis is oxidized to acetate (acetyl-CoA), which enters the citric acid cycle and is oxidized completely to $\mathrm{CO}_{2}$ and $\mathrm{H}_{2}\mathrm{O}$ (Chapter 16). The electrons from these oxidations are carried by NADH and $\mathrm{FADH}_{2}$ , which are ultimately reoxidized to $\mathrm{NAD}^{+}$ and FAD by passage of electrons to $\mathrm{O}_{2}$ through a chain of carriers in mitochondrial respiration, to form $\mathrm{H}_{2}\mathrm{O}$ . The energy from the electron-transfer reactions drives the synthesis of ATP (Chapter 19).
+
+The earliest cells lived in an atmosphere almost devoid of oxygen and evolved deriving energy from fuel molecules under anaerobic conditions. Under anaerobic or low-oxygen conditions (hypoxia), NADH cannot be reoxidized to $NAD^{+}$ by passing its electrons to $O_{2}$ . But for glycolysis to continue, $NAD^{+}$ must be regenerated. Under these conditions, glucose is degraded by fermentation (defined below), which leads to one of two different fates for the pyruvate formed by glycolysis. In lactic acid fermentation, pyruvate accepts electrons from NADH and is reduced to lactate while regenerating the $NAD^{+}$ necessary for glycolysis. In ethanol (alcohol) fermentation, pyruvate is further catabolized to ethanol (Fig. 14-11).
+
+![](images/d439d3c58307a133f75d9337e64ef01295c40db37d6d1fb14f6a58330287b838.jpg)  
+FIGURE 14-11 Three possible catabolic fates of the pyruvate formed in glycolysis and the recycling of NADH. Red arrows follow the regeneration of $\mathrm{NAD^{+}}$ from NADH. Under aerobic conditions, pyruvate is activated to acetyl-CoA and is completely oxidized to $\mathrm{CO}_{2}$ and water through the citric acid cycle and mitochondrial oxidative phosphorylation. NADH produced in this pathway is oxidized to $\mathrm{NAD^{+}}$ through mitochondrial electron transfer. Under anaerobic conditions, pyruvate reduction to lactate or to ethanol is required to produce the $\mathrm{NAD^{+}}$ needed for glycolysis to continue. Pyruvate also serves as a precursor in many anabolic reactions, not shown here.
+
+## The Pasteur and Warburg Effects Are Due to Dependence on Glycolysis Alone for ATP Production
+
+During his studies on the fermentation of glucose by yeast, Louis Pasteur discovered that both the rate and the total amount of glucose consumption under anaerobic conditions were many times greater than under aerobic conditions. Later studies of muscle showed the same large difference in the rates of glycolysis under anaerobic and aerobic conditions. The biochemical basis of this "Pasteur effect" is now clear. The ATP yield from glycolysis alone (2 ATP per molecule of glucose) is much smaller than that from the complete oxidation of glucose to $CO_{2}$ under aerobic conditions (30 or 32 ATP per glucose; see Table 19-5). About 15 times as much glucose must therefore be consumed anaerobically as aerobically to yield the same amount of ATP.
+
+The flux of glucose through the glycolytic pathway is regulated to maintain nearly constant ATP levels (as well as adequate supplies of glycolytic intermediates that serve biosynthetic roles). The required adjustment in the rate of glycolysis is achieved by a complex interplay among ATP consumption, NAD $^{+}$ regeneration from NADH formed in glycolysis, and allosteric regulation of several glycolytic enzymes—including hexokinase, PFK-1, and pyruvate kinase—and by second-to-second fluctuations in the concentration of key metabolites that reflect the cellular balance between ATP production and consumption. On a slightly longer time scale, glycolysis is regulated by the hormones glucagon, epinephrine, and insulin, and by changes in the expression of the genes for several glycolytic enzymes. An especially interesting case is glycolysis in tumors. The German biochemist Otto Warburg first observed in 1928 that tumors of nearly all types carry out glycolysis at a much higher rate than normal tissue, even when oxygen is available. This “Warburg effect” is the basis for several methods of detecting and treating cancer (Box 14-1).
+
+![](images/afc35d335aa35fbba7b69e52614cb9bcfd15e0e5150a085d2f746ca9fb3e83d3.jpg)  
+Otto Warburg, 1883–1970
+[Science Photo Library/Science Source.]
+
+Warburg is generally considered the preeminent biochemist of the first half of the twentieth century. He made seminal contributions to many other areas of biochemistry, including respiration, photosynthesis, and the enzymology of intermediary metabolism. Beginning in 1930, Warburg and his associates purified and crystallized seven of the
+
+enzymes of glycolysis. They developed an experimental tool that revolutionized biochemical studies of oxidative metabolism: the Warburg manometer, which directly measured the oxygen consumption of tissues by monitoring changes in gas volume, and thus allowed quantitative measurement of any enzyme with oxidase activity.
+
+## Pyruvate Is the Terminal Electron Acceptor in Lactic Acid Fermentation
+
+P3 When animal tissues cannot be supplied with sufficient oxygen to support aerobic oxidation of the pyruvate and NADH produced in glycolysis, $NAD^{+}$ is regenerated from NADH by the reduction of pyruvate to lactate. Some tissues and cell types (such as erythrocytes, which have no mitochondria and thus cannot oxidize pyruvate to $CO_{2}$ ) produce lactate from glucose even under aerobic conditions. The reduction of pyruvate in this pathway is catalyzed by lactate dehydrogenase, which forms the L isomer of lactate at pH 7:
+
+![](images/3aaaa798239a472a882867d622648fdb625130d575dad2d7666d61762d39799e.jpg)
+
+The overall equilibrium of the reaction strongly favors lactate formation, as shown by the large negative standard free-energy change.
+
+In glycolysis, dehydrogenation of the two molecules of glyceraldehyde 3-phosphate derived from each molecule of glucose converts two molecules of $NAD^{+}$ to two of NADH. Because the reduction of two molecules of pyruvate to two of lactate regenerates two molecules of $NAD^{+}$ , there is no net change in $NAD^{+}$ or NADH:
+
+![](images/21e919833fbed6d25a3194df2f9bea31c4f6c2c5e7712771a560812707ad4921.jpg)
+
+The lactate formed by active skeletal muscles (or by erythrocytes or retinal cells) can be recycled; it is carried in the blood to the liver, where it is converted to glucose during the recovery from strenuous muscular activity. When lactate is produced in large quantities during vigorous muscle contraction (during a sprint, for example), the acidification that results from ionization of lactic acid in muscle and blood limits the period of vigorous activity. The best-conditioned athletes can sprint at top speed for no more than a minute (Box 14-2).
+
+Although conversion of glucose to lactate includes two oxidation-reduction steps, there is no net change in the oxidation state of carbon; in glucose ( $C_{6}H_{12}O_{6}$ ) and lactic acid ( $C_{3}H_{6}O_{3}$ ), the H:C ratio is the same. Nevertheless, some of the energy of the glucose molecule has been extracted by its conversion to lactate—enough to give a net yield of two molecules of ATP for every glucose molecule consumed. Fermentation is the general term for such processes, which extract energy (as ATP) but do not consume oxygen or change the concentrations of $NAD^{+}$ or NADH.
+
+## High Rate of Glycolysis in Tumors Suggests Targets for Chemotherapy and Facilitates Diagnosis
+
+In many types of tumors found in humans and other animals, glucose uptake and glycolysis proceed about 10 times faster than in normal, noncancerous tissues. Most tumor cells grow under hypoxic conditions (i.e., with limited oxygen supply) because, at least initially, they lack the capillary network to supply sufficient oxygen. Cancer cells located more than 100 to 200 $\mu$ m from the nearest capillaries must depend on glycolysis alone (without further oxidation of pyruvate) for much of their ATP production. The energy yield (2 ATP per glucose) is far lower than can be obtained by the complete oxidation of pyruvate to CO $_{2}$ in mitochondria (about 30 ATP per glucose; Chapter 19). So, to make the same amount of ATP, tumor cells must take up much more glucose than do normal cells, converting it to pyruvate and then to lactate as they recycle NADH. It is likely that two early steps in the transformation of a normal cell into a tumor cell are (1) the change to dependence on glycolysis alone for ATP production and (2) the development of tolerance to a low pH in the extracellular fluid (caused by release of lactic acid). In general, the more aggressive the tumor, the greater its rate of glycolysis.
+
+This increase in glycolysis is achieved, at least in part, by increased synthesis of the glycolytic enzymes and of the plasma membrane transporters GLUT1 and GLUT3 (see Table 11-1) that carry glucose into cells. (GLUT1 and GLUT3 are not dependent on insulin.) The hypoxia-inducible transcription factor (HIF-1) is a protein that acts at the level of mRNA synthesis to stimulate the production of at least eight glycolytic enzymes and the glucose transporters when oxygen supply is limited (Fig. 1). With the resulting high rate of glycolysis, the tumor cell can survive anaerobic conditions until the supply of blood vessels has caught up with tumor growth. Another protein induced by HIF-1 is the peptide hormone VEGF (vascular endothelial growth factor), which stimulates the outgrowth of blood vessels (angiogenesis) toward the tumor.
+
+There is also evidence that the tumor suppressor protein p53, which is mutated in most types of cancer (see Section 12.9), controls the synthesis and assembly of mitochondrial
+
+FIGURE 1 The anaerobic metabolism of glucose in tumor cells yields far less ATP (2 per glucose) than the complete oxidation to $\mathrm{CO}_{2}$ that takes place in healthy cells under aerobic conditions (\~30 ATP per glucose), so a tumor cell must consume much more glucose to produce the same amount of ATP. Glucose transporters and most of the glycolytic enzymes are overproduced in tumors. Compounds that inhibit hexokinase, glucose 6-phosphate dehydrogenase, or transketolase block ATP production by glycolysis, thus depriving the cancer cell of energy and killing it.
+
+proteins essential to the passage of electrons to $O_{2}$ . Cells with mutant p53 are defective in mitochondrial electron transfer and are forced to rely more heavily on glycolysis for ATP production (Fig. 1).
+
+This heavier reliance of tumors than of normal tissue on glycolysis suggests a possibility for anticancer therapy: inhibitors of glycolysis might target and kill tumors by depleting their supply of ATP. Three inhibitors of hexokinase have shown promise as chemotherapeutic agents: 2-deoxyglucose, lonidamine, and 3-bromopyruvate. By preventing the formation of glucose 6-phosphate, these compounds not only deprive tumor cells of glycolytically produced ATP but also prevent the formation of pentose phosphates via the pentose phosphate
+
+![](images/35d9fb3a2abdf88b74ea1feff2b0e9d101524db7188ec1d7c22f2902dfdb3d12.jpg)  
+(Continued on next page)
+
+High Rate of Glycolysis in Tumors Suggests Targets for Chemotherapy and Facilitates Diagnosis (Continued)
+
+![](images/2e5c3031bb24af3fd049235016a3a2050236b3f3a439709e308d46eaf5dea303.jpg)  
+FIGURE 2 Phosphorylation of $^{18}$ F-labeled 2-fluoro-2-deoxyglucose by hexokinase traps the FdG in cells (as 6-phospho-FdG), where its presence can be detected by positron emission from $^{18}$ F.
+
+pathway, which also begins with glucose 6-phosphate. Without pentose phosphates, a cell cannot synthesize the nucleotides essential to DNA and RNA synthesis and thus cannot grow or divide. Another anticancer drug already approved for clinical use is imatinib (Gleevec), described in Box 12-4. It inhibits a specific tyrosine kinase, preventing the increased synthesis of hexokinase normally triggered by that kinase. The thiamine analog oxythiamine, which blocks the action of a transketolase-like enzyme that converts xylulose 5-phosphate to glyceraldehyde 3-phosphate (Fig. 1), is in preclinical trials as an antitumor drug.
+
+The high glycolytic rate in tumor cells also has diagnostic usefulness. The relative rates at which tissues take up glucose can be used in some cases to pinpoint the location of tumors. In positron emission tomography (PET), individuals are injected with a harmless, isotopically labeled glucose analog that is taken up but not metabolized by tissues. The labeled compound is 2-fluoro-2-deoxyglucose (FdG), in which the hydroxyl group at the C-2 of glucose is replaced with $^{18}$ F (Fig. 2). This compound is taken up via GLUT transporters and is a good substrate for hexokinase, but it cannot be converted to the enediol intermediate in the phosphohexose isomerase reaction (see Fig. 14-4) and therefore accumulates as 6-phospho-FdG. The extent of its accumulation depends on its rate of uptake and phosphorylation, which, as noted above, is typically 10 or more times higher in tumors than in normal tissue. Decay of $^{18}$ F yields positrons (two per $^{18}$ F atom) that can be detected by a series of sensitive detectors positioned around the body, which allows accurate localization of accumulated 6-phospho-FdG (Fig. 3).
+
+![](images/b974a823378ce7af7c64915abc61ad1e842dd6de475da3880835faefaa65ac8f.jpg)
+
+FIGURE 3 Detection of cancerous tissue by positron emission tomography (PET). The adult male patient had undergone surgical removal of a primary skin cancer (malignant melanoma). The image on the left, obtained by whole-body computed tomography (CT scan), shows the location of the soft tissues and bones. The central panel is a PET scan after the patient had ingested $^{18}$ F-labeled 2-fluoro-2-deoxyglucose (FdG). Dark spots indicate regions of high glucose utilization. As expected, the brain and bladder are heavily labeled — the brain because it uses most of the glucose consumed in the body, and the bladder because the $^{18}$ F-labeled 6-phospho-FdG is excreted in the urine. When the intensity of the label in the PET scan is translated into false color (the intensity increases from green to yellow to red) and the image is superimposed on the CT scan, the fused image (right) reveals cancer in the bones of the upper spine, in the liver, and in some regions of muscle, all the result of cancer spreading from the primary malignant melanoma. [Diomedia/ISM/Centre Jean Perrin.]
+
+## Glucose Catabolism at Limiting Concentrations of Oxygen
+
+Most vertebrates are essentially aerobic organisms; they convert glucose to pyruvate by glycolysis, then use molecular oxygen to oxidize the pyruvate completely to $CO_{2}$ and $H_{2}O$ . Anaerobic catabolism of glucose to lactate occurs during short bursts of extreme muscular activity — for example, in a sprint — during which oxygen cannot be carried to the muscles fast enough to oxidize pyruvate. Instead, the muscles use their stored glucose (glycogen) as fuel to generate ATP by fermentation, with lactate as the end product. In a sprint, lactate in the blood builds up to high concentrations. It is slowly converted back to glucose by gluconeogenesis in the liver in the subsequent rest or recovery period, during which oxygen is consumed at a gradually diminishing rate until the breathing rate returns to normal. The excess oxygen consumed in the recovery period represents a repayment of the oxygen debt. This is the amount of oxygen required to supply ATP for gluconeogenesis during recovery respiration, in order to regenerate the glycogen “borrowed” from liver and muscle to carry out intense muscular activity in the sprint. The cycle of reactions that includes glucose conversion to lactate in muscle and lactate conversion to glucose in liver is called the Cori cycle, for Carl and Gerty Cori, whose studies in the 1930s and 1940s clarified the pathway and its role (see Box 15-1).
+
+The circulatory systems of most small vertebrates can carry oxygen to their muscles fast enough to avoid having to use muscle glycogen anaerobically. For example, migrating birds often fly great distances at high speeds without rest and without incurring an oxygen debt. Many running animals of moderate size also maintain an essentially aerobic metabolism in their skeletal muscle. However, the circulatory systems of larger animals, including humans, cannot completely sustain aerobic metabolism in skeletal muscles over long periods of intense muscular activity. These animals generally are slow-moving under normal circumstances and engage in intense muscular activity only in the gravest emergencies, because such bursts of activity require long recovery periods to repay the oxygen debt.
+
+Alligators and crocodiles, for example, are normally sluggish animals. Yet, when provoked, they are capable of lightning-fast charges and dangerous lashings of their powerful tails. Such intense bursts of activity are short and must be followed by long periods of recovery. The fast emergency movements require lactic acid fermentation to generate ATP in skeletal muscles. The stores of muscle glycogen are rapidly expended in intense muscular activity, and lactate reaches very high concentrations in myocytes and extracellular fluid. Whereas a trained athlete can recover from a 100 m sprint in 30 min or less, an alligator may require many hours of rest and extra oxygen consumption to clear the excess lactate from its blood and regenerate muscle glycogen after a burst of activity.
+
+Other large animals, such as the elephant and the rhinoceros, have similar metabolic characteristics, as do diving mammals such as whales and seals. Dinosaurs and other huge, now-extinct animals probably had to depend on lactic acid fermentation to supply energy for muscular activity, followed by very long recovery periods during which they were vulnerable to attack by smaller predators that were better able to use oxygen and thus better adapted to continuous, sustained muscular activity.
+
+Deep-sea explorations have revealed many species of marine life at great ocean depths, where the oxygen concentration is near zero. For example, the primitive coelacanth, a large fish recovered from depths of 4,000 m or more off the coast of South Africa, has an essentially anaerobic metabolism in virtually all its tissues. It converts carbohydrates to lactate and other products, most of which must be excreted. Some marine vertebrates ferment glucose to ethanol and $CO_{2}$ in order to generate ATP.
+
+![](images/7c5e1c1000f9a2dbabdae1b88b5418577bd1103d999c4fab5861fe45aeccf7fc.jpg)  
+Francena McCorory, Olympic sprinter [Ezra Shaw/Getty Images.]
+
+## Ethanol Is the Reduced Product in Ethanol Fermentation
+
+P3 Yeast and other microorganisms ferment glucose to ethanol and $CO_{2}$ , rather than to lactate. Glucose is metabolized to pyruvate by glycolysis, and the pyruvate is converted to ethanol and $CO_{2}$ in a two-step process:
+
+![](images/dd723c6170056d46f46d4514a97fb665e023d70939c4e0a13a6e324bd18d75e6.jpg)
+
+In the first step, pyruvate is decarboxylated to form acetaldehyde in an irreversible reaction catalyzed by pyruvate decarboxylase. This reaction is a simple decarboxylation and does not involve the net oxidation of pyruvate. Pyruvate decarboxylase requires $Mg^{2+}$ and has a tightly bound coenzyme, thiamine pyrophosphate, which is discussed below. In the second step, acetaldehyde is reduced to ethanol through the action of alcohol dehydrogenase, with the reducing power furnished by NADH derived from the dehydrogenation of glyceraldehyde 3-phosphate. This reaction is a well-studied case of hydride transfer from NADH (Fig. 14-12). Ethanol and $CO_{2}$ are thus the end products of ethanol fermentation, and the overall equation is
+
+Glucose + 2ADP + 2P $_{i}$ →
+
+$$
+2 \mathrm{ethanol} + 2 \mathrm{CO} _ {2} + 2 \mathrm{ATP} + 2 \mathrm{H} _ {2} \mathrm{O}
+$$
+
+As in lactic acid fermentation, there is no net change in the ratio of hydrogen to carbon atoms when glucose (H:C ratio = 12/6 = 2) is fermented to two ethanol and two CO₂ (combined H:C ratio = 12/6 = 2). In all fermentations, the H:C ratio of the reactants and products remains the same.
+
+![](images/e82368f2a935fbb34b4a22aea3e1ec72a29a162455d4cf54faeb39bed403f347.jpg)  
+MECHANISM FIGURE 14-12 The alcohol dehydrogenase reaction.
+
+![](images/67987af9662c33e3a97d7cdd5d08e5b8824eb8fcb47d5de1bf2d6512230f6cf5.jpg)
+
+Pyruvate decarboxylase is present in brewer's and baker's yeast (different strains of the species Saccharomyces cerevisiae) and in all other organisms that ferment glucose to ethanol, including some plants. The $CO_{2}$ produced by pyruvate decarboxylation in brewer's yeast is responsible for the characteristic carbonation of champagne. The ancient art of brewing beer involves several enzymatic processes in addition to the reactions of ethanol fermentation. In baking, $CO_{2}$ released by pyruvate decarboxylase when yeast is mixed with a fermentable sugar causes dough to rise. The enzyme is absent in vertebrate tissues and in other organisms that carry out lactic acid fermentation.
+
+Alcohol dehydrogenase is present in many organisms that metabolize ethanol, including humans. In the liver it catalyzes the oxidation of ethanol, either ingested or produced by intestinal microorganisms, with the concomitant reduction of $NAD^{+}$ to NADH. In this case, the reaction proceeds in the direction opposite to that involved in the production of ethanol by fermentation.
+
+The pyruvate decarboxylase reaction provides our first encounter with thiamine pyrophosphate (TPP) (Fig. 14-13), a coenzyme derived from vitamin B $_{1}$ . TPP plays an important role in the cleavage of bonds adjacent to a carbonyl group, such as the decarboxylation of $\alpha$ -keto acids, and in chemical rearrangements in which an activated acetaldehyde group is transferred from one carbon atom to another (Table 14-1). The functional part of TPP, the thiazolium ring, has a relatively acidic proton at C-2. Loss of this proton produces a carbanion that is the active species in TPP-dependent reactions. The carbanion readily adds to carbonyl groups, and the thiazolium ring is thereby positioned to act as an “electron sink” that greatly facilitates reactions such as the decarboxylation catalyzed by pyruvate decarboxylase.
+
+![](images/b75a14a231c1b15ec37a6ff36fe88d87c358f45760405e88cbc0ab2012a9912b.jpg)
+
+## Fermentations Produce Some Common Foods and Industrial Chemicals
+
+Our progenitors learned millennia ago to use fermentation in the production and preservation of foods and beverages. P3 Certain microorganisms present in raw food products ferment the carbohydrates and yield metabolic products that give the foods their characteristic forms, textures, and tastes. In modern times, industrial fermentation produces organic chemicals and fuels.
+
+Fermented Foods Yogurt, already known in biblical times, is produced when the bacterium Lactobacillus bulgaricus ferments the carbohydrate in milk, producing lactic acid; the resulting drop in pH causes the milk proteins to precipitate, producing the thick texture and sour taste of unsweetened yogurt. Another bacterium, Propionibacterium freudenreichii, ferments milk to produce propionic acid and $CO_{2}$ ; the propionic acid precipitates milk proteins, and bubbles of $CO_{2}$ cause the holes characteristic of Swiss cheese. Many other food products are the result of fermentations: pickles, sauerkraut, sausage, soy sauce, kimchi, kefir, dahi, and kombucha. The drop in pH associated with fermentation also helps to preserve foods, because most of the microorganisms that cause food spoilage cannot grow at low pH. In agriculture, plant byproducts such as corn stalks are preserved for use
+
+![](images/363a4f80c1d774420fd7de438f59bd81dd0fd24d6105c48b6b6707b4a2a7ce02.jpg)
+
+![](images/3871a978c79c23bdee193066caddaf93264804a60007210e4f8cbbf9a1b5cc4f.jpg)  
+Thiamine pyrophosphate (TPP)
+
+![](images/fc1181bfe2789192f5a550d0568bdb0703c559dcd2dec232380536b4450dc222.jpg)  
+Hydroxyethyl thiamine pyrophosphate
+
+![](images/4f58bc530364f0e9e8d8a7040c39c43931b49ab294559811cec005a461eaa629.jpg)
+
+MECHANISM FIGURE 14-13 Thiamine pyrophosphate (TPP) and its role in pyruvate decarboxylation. (a) TPP is the coenzyme form of vitamin B₁ (thiamine). The reactive carbon atom in the thiazolium ring of TPP is shown in red. In the reaction catalyzed by pyruvate decarboxylase, two of the three carbons of pyruvate are carried transiently on TPP in the form of a hydroxyethyl, or "active acetaldehyde," group (b), which is subsequently released as acetaldehyde. (c) The thiazolium ring of TPP stabilizes carbanion intermediates by providing an electrophilic (electron-deficient) structure into which the carbanion electrons can be delocalized by resonance. Structures with this property, often called "electron sinks," play a role in many biochemical reactions—here, facilitating carbon-carbon bond cleavage. Dietary insufficiency of thiamine causes the serious disease beriberi and the Wernicke-Korsakoff syndrome.
+
+as animal feed by packing them into a large container (a silo) with limited access to air; microbial fermentation produces acids that lower the pH. The silage that results from this fermentation process can be kept as animal feed for long periods without spoilage.
+
+Fermented Beverages P3 Beer brewing was a science learned early in human history, and later refined for larger-scale production (Fig. 14-14). Brewers prepare beer by ethanol fermentation of the carbohydrates in cereal grains (seeds) such as barley, carried out by yeast glycolytic enzymes. The carbohydrates, largely polysaccharides, must first be degraded to disaccharides and monosaccharides. In the malting process, the barley seeds are allowed to germinate until they form the hydrolytic enzymes required to break down their polysaccharides, at which point germination is stopped by controlled heating. The product is malt, which contains enzymes that catalyze the hydrolysis of the $\beta$ linkages of cellulose and other cell wall polysaccharides of the barley husks, and enzymes such as $\alpha$ -amylase and maltase. The malt is mixed with water, mashed, and boiled with hops to add flavor. Yeast cells added to this mixture grow and reproduce rapidly, using energy obtained from available sugars. No ethanol forms during this stage, because the yeast, amply supplied with oxygen, oxidizes the pyruvate formed by glycolysis to $CO_{2}$ and $H_{2}O$ via the citric acid cycle.
+
+<table><tr><td colspan="4">TABLE 14-1 Some TPP-Dependent Reactions</td></tr><tr><td>Enzyme</td><td>Pathway(s)</td><td>Bond cleaved</td><td>Bond formed</td></tr><tr><td>Pyruvate decarboxylase</td><td>Ethanol fermentation</td><td><img src="images/827e049c9813f702543f2f4de3726cc891484ce7c18c0bb4f618e7c06f375121.jpg"/></td><td><img src="images/ce47ab694a4e73cc8ec5a5d8ceeee9a9ce33e6bec0181cde135895788419d424.jpg"/></td></tr><tr><td>Pyruvate dehydrogenaseα-Ketoglutarate dehydrogenase</td><td>Synthesis of acetyl-CoACitric acid cycle</td><td><img src="images/4e6530f494cf87ca98cbb2ef5cd4f112763e5d97c1a83c36007e543f38b845cc.jpg"/></td><td><img src="images/04e6493a03e86076d57d39836ce760db0fbc827bba2da53e4a4155c36eaa2821.jpg"/></td></tr><tr><td>Transketolase</td><td>Carbon-assimilation reactionsPentose phosphate pathway</td><td><img src="images/398772b3dbfcdc5e6ea789f91fc99dc0e0605c74d803bacfaf54c329796d5b57.jpg"/></td><td><img src="images/eca856e1dd04be98455c9cb5b9bc5380aa752ed1ce5a6a59696b514472cbbb11.jpg"/></td></tr></table>
+
+FIGURE 14-14 Beer brewing. Large breweries and microbreweries produce beers with a wide variety of flavors, the result of differences in materials and fermentation conditions. [vgajic/Getty Images.]
+
+![](images/51b5618094bc2b19591d083a13994658808a3ba90b323bbff1160827a1b00e0b.jpg)
+
+When all the dissolved oxygen in the vat has been consumed, the yeast cells switch to anaerobic metabolism and ferment the sugars into ethanol and $CO_{2}$ . The fermentation process is controlled in part by the concentration of the ethanol formed, by the pH, and by the amount of remaining sugar. After fermentation has been stopped, the cells are removed and the "raw" beer is ready for final processing.
+
+Chemical Production by Fermentation In 1910, Chaim Weizmann (later to become the first president of Israel) discovered that the bacterium Clostridium acetobutyricum ferments starch to butanol and acetone. P3 This discovery opened the field of industrial fermentations, in which some readily available material rich in carbohydrate is supplied to a pure culture of a specific microorganism, which ferments it into a product of greater commercial value. Microbial fermentations produce formic, acetic, propionic, butyric, and succinic acids, and ethanol, glycerol, methanol, isopropanol, butanol, and butanediol. Industrial fermentations are also used to produce certain antibiotics, including penicillin, streptomycin, and chloramphenicol. These fermentations are generally carried out in huge closed vats in which temperature and access to air are controlled to favor the multiplication of the desired microorganism and to exclude contaminating organisms. The beauty of industrial fermentations is that complicated, multistep chemical transformations are carried out in high yields and with few side products by chemical factories that reproduce themselves—microbial cells.
+
+Fuel Production by Fermentation Much of the technology developed for large-scale production of alcoholic beverages can be applied to the production of ethanol as a renewable fuel. The principal advantage of ethanol as a fuel is that it can be produced from relatively inexpensive and renewable resources rich in sucrose, starch, or cellulose—starch from corn or wheat; sucrose from beets or cane; and cellulose from straw, forest industry waste, or municipal solid waste. Typically, the raw material (feedstock) is converted chemically to monosaccharides, then fed to a hardy strain of yeast in an industrial-scale fermenter. The fermentation can yield not only ethanol for fuel but also side products such as proteins that can be used as animal feed.
+
+## SUMMARY 14.3 Fates of Pyruvate
+
+The NADH formed in glycolysis must be recycled to regenerate $\mathrm{NAD^{+}}$ , which is required as an electron acceptor in the first step of the payoff phase. Under aerobic conditions, electrons pass from NADH to $\mathrm{O}_2$ in mitochondrial respiration. The Warburg effect is the observation that tumor cells have high rates of glycolysis, with fermentation of glucose to lactate, even in the presence of oxygen. It is the basis of PET scanning used to diagnose tumors.
+
+■ Under anaerobic or hypoxic conditions, many organisms regenerate $NAD^{+}$ by transferring electrons from NADH to pyruvate, forming lactate. Other organisms, such as yeast, regenerate $NAD^{+}$ by reducing pyruvate to ethanol and $CO_{2}$ .
+
+A variety of microorganisms can ferment sugar in fresh foods, resulting in changes in pH, taste, and texture, and preserving food from spoilage. Fermentations are used in industry to produce many commercially valuable organic compounds from inexpensive starting materials.
+
+## 14.4 Gluconeogenesis
+
+The central role of glucose in metabolism arose early in evolution, and this sugar remains the nearly universal fuel and building block in modern organisms, from microbes to humans. In mammals, some tissues depend almost completely on glucose for their metabolic energy. For the human brain and nervous system, as well as the erythrocytes, testes, renal medulla, and embryonic tissues, glucose from the blood is the sole or major fuel source. The brain alone requires about 120 g of glucose each day—more than half of all the glucose stored as glycogen in muscle and liver. However, the supply of glucose from these stores is not always sufficient; between meals and during longer fasts, or after vigorous exercise, glycogen is depleted. For these times, organisms need a method for synthesizing glucose from noncarbohydrate precursors. This is accomplished by a pathway called gluconeogenesis (“new formation of sugar”), which converts pyruvate and related three- and four-carbon compounds to glucose.
+
+P4 Gluconeogenesis occurs in all animals, plants, fungi, and microorganisms. The reactions are essentially the same in all tissues and all species. The important precursors of glucose in animals are three-carbon compounds such as lactate, pyruvate, and glycerol, as well as certain amino acids (Fig. 14-15). In mammals, gluconeogenesis takes place mainly in the liver, and to a lesser extent in the renal cortex and in the epithelial cells that line the small intestine. The glucose produced passes into the blood to supply other tissues. After vigorous exercise, lactate produced by anaerobic glycolysis in skeletal muscle returns to the liver and is converted to glucose, which moves back to muscle and is converted to glycogen—a circuit called the Cori cycle (see Fig. 23-17). In plant seedlings, stored fats and proteins are converted, via paths that include gluconeogenesis, to the disaccharide sucrose for transport throughout the developing plant. Glucose and its derivatives are precursors for the synthesis of plant cell walls, nucleotides and coenzymes, and a variety of other essential metabolites. In many microorganisms, gluconeogenesis starts from simple organic compounds of two or three carbons, such as acetate, lactate, and propionate, in their growth medium.
+
+![](images/0d6c916a566035dfa49f26923bb95d4850273903897ea985ff35ce81e5f543d6.jpg)  
+FIGURE 14-15 Carbohydrate synthesis from simple precursors. The pathway from phosphoenolpyruvate to glucose 6-phosphate is common to the biosynthetic conversion of many different precursors of carbohydrates in animals and plants. The path from pyruvate to phosphoenolpyruvate leads through oxaloacetate, an intermediate of the citric acid cycle, which we discuss in Chapter 16. Any compound that can be converted to either pyruvate or oxaloacetate can therefore serve as starting material for gluconeogenesis. This includes alanine and aspartate, which are convertible to pyruvate and oxaloacetate, respectively, and other amino acids that can also yield three- or four-carbon fragments, the so-called glucogenic amino acids. Plants and photosynthetic bacteria are uniquely able to convert $\mathrm{CO}_{2}$ to carbohydrates, using the Calvin cycle, as we shall see in Section 20.4.
+
+Although the reactions of gluconeogenesis are the same in all organisms, the metabolic context and the regulation of the pathway differ from one species to another and from tissue to tissue. In this section we focus on gluconeogenesis as it occurs in the mammalian liver. In Chapter 20 we show how photosynthetic organisms use this pathway to convert the primary products of photosynthesis into glucose, to be stored as sucrose or starch.
+
+P4 Gluconeogenesis and glycolysis are not identical pathways running in opposite directions, although they do share several steps (Fig. 14-16); 7 of the 10 enzymatic reactions of gluconeogenesis are the reverse of glycolytic reactions. However, three reactions of glycolysis are essentially irreversible in vivo and cannot be used in gluconeogenesis: the conversion of glucose to glucose 6-phosphate by hexokinase, the phosphorylation of fructose 6-phosphate to fructose 1,6-bisphosphate by phosphofructokinase-1, and the conversion of phosphoenolpyruvate to pyruvate by pyruvate kinase. In cells, these three reactions are characterized by a large negative free-energy change, whereas other glycolytic reactions have a $\Delta G$ near 0 (Table 14-2). In gluconeogenesis, the three irreversible steps are bypassed by a separate set of enzymes, catalyzing reactions that are sufficiently exergonic to be effectively irreversible in the direction of glucose synthesis. Thus, both glycolysis and gluconeogenesis are irreversible processes in cells. In animals, both pathways occur largely in the cytosol, necessitating their reciprocal and coordinated regulation, described in Section 14.5.
+
+![](images/d81112997db45c9f69dfaa0921272b731cdd4021ff4cc0ba281cda7d20b275cc.jpg)  
+FIGURE 14-16 Opposing pathways of glycolysis and gluconeogenesis in liver. The reactions of glycolysis are on the left side, in red; the opposing pathway of gluconeogenesis is on the right, in blue. The major sites of regulation of gluconeogenesis shown here are discussed in Section 14.5.
+
+We begin by considering the three bypass reactions of gluconeogenesis. (Keep in mind that “bypass” refers throughout to the bypass of irreversible glycolytic reactions.)
+
+## The First Bypass: Conversion of Pyruvate to Phosphoenolpyruvate Requires Two Exergonic Reactions
+
+P4 The first of the bypass reactions in gluconeogenesis is the conversion of pyruvate to phosphoenolpyruvate (PEP). This reaction cannot occur by simple reversal of the pyruvate kinase reaction of glycolysis (p. 521), which has a large, negative free-energy change and is therefore irreversible under the conditions prevailing in intact cells (Table 14-2, step 10). Instead, the phosphorylation of pyruvate is achieved by a roundabout sequence of reactions that in eukaryotes requires enzymes in both the cytosol and mitochondria. As we shall see, the pathway shown in Figure 14-16 and described in detail here is one of two routes from pyruvate to PEP; it is the predominant path when pyruvate or alanine is the glucogenic precursor. A second pathway, described later, predominates when lactate is the glucogenic precursor.
+
+Pyruvate is first transported from the cytosol into mitochondria or is generated from alanine within mitochondria by transamination, in which the $\alpha$ -amino group is transferred from alanine (leaving pyruvate) to an $\alpha$ -keto carboxylic acid (transamination reactions are discussed in detail in Chapter 18). Then pyruvate carboxylase, a mitochondrial enzyme that requires the coenzyme biotin, converts the pyruvate to oxaloacetate:
+
+$$
+\begin{array}{r l} \text {Pyruvate} + \mathrm{HCO} _ {3} ^ {-} + \mathrm{ATP} & \longrightarrow \\ & \text {oxaloacetate} + \mathrm{ADP} + \mathrm{P} _ {\mathrm{i}} \end{array}\tag{14-4}
+$$
+
+The carboxylation reaction involves biotin as a carrier of activated bicarbonate, as shown in Figure 14-17; the reaction mechanism is shown in Figure 16-16. (Note that $\mathrm{HCO_3^-}$ is formed by ionization of carbonic acid formed from $\mathrm{CO}_{2} + \mathrm{H}_{2}\mathrm{O}$ .) $\mathrm{HCO_3^-}$ is phosphorylated by ATP to form a mixed anhydride (a carboxyphosphate); then biotin displaces the phosphate in the formation of carboxybiotin.
+
+<table><tr><td colspan="4">TABLE 14-2 Free-Energy Changes of Glycolytic Reactions in Erythrocytes</td></tr><tr><td colspan="2">Glycolytic reaction step</td><td>ΔG&#x27;o (kJ/mol)</td><td>ΔG (kJ/mol)</td></tr><tr><td>1</td><td>Glucose + ATP → glucose 6-phosphate + ADP</td><td>-16.7</td><td>-33.4</td></tr><tr><td>2</td><td>Glucose 6-phosphate ⇌ fructose 6-phosphate</td><td>1.7</td><td>0 to 25</td></tr><tr><td>3</td><td>Fructose 6-phosphate + ATP → fructose1,6-bisphosphate + ADP</td><td>-14.2</td><td>-22.2</td></tr><tr><td>4</td><td>Fructose1,6-bisphosphate ⇌ dihydroxyacetone phosphate + glyceraldehyde 3-phosphate</td><td>23.8</td><td>-6 to 0</td></tr><tr><td>5</td><td>Dihydroxyacetone phosphate ⇌ glyceraldehyde 3-phosphate</td><td>7.5</td><td>0 to 4</td></tr><tr><td>6</td><td>Glyceraldehyde 3-phosphate + Pi + NAD+ ⇌ 1,3-bisphosphoglycerate + NADH + H+</td><td>6.3</td><td>-2 to 2</td></tr><tr><td>7</td><td>1,3-Bisphosphoglycerate + ADP ⇌ 3-phosphoglycerate + ATP</td><td>-18.8</td><td>0 to 2</td></tr><tr><td>8</td><td>3-Phosphoglycerate ⇌ 2-phosphoglycerate</td><td>4.4</td><td>0 to 0.8</td></tr><tr><td>9</td><td>3-Phosphoglycerate ⇌ phosphoenolpyruvate + H2O</td><td>7.5</td><td>0 to 3.3</td></tr><tr><td>10</td><td>Phosphoenolpyruvate + ADP → pyruvate + ATP</td><td>-31.4</td><td>-16.7</td></tr></table>
+
+Note: $\Delta G^{\prime \prime}$ is the standard free-energy change, as defined in Chapter 13 (p. 468). $\Delta G$ is the free-energy change calculated from the actual concentrations of glycolytic intermediates present under physiological conditions in erythrocytes, at pH 7. The glycolytic reactions bypassed in gluconeogenesis are shown in red. Biochemical equations are not necessarily balanced for H or charge (p. 478).
+
+![](images/46434b9ea359ed6fd406d3e00170b0206f107ca6903354d0b9196dd8f741bcbf.jpg)  
+FIGURE 14-17 Role of biotin in the pyruvate carboxylase reaction. The cofactor biotin is covalently attached to pyruvate carboxylase through an amide linkage to the ε-amino group of a Lys residue, forming a  
+biotinyl-enzyme. The reaction takes place in two phases, which occur at two different sites in the enzyme. The long biotinyl-Lys arm carries the substrate from one site to the other.
+
+Pyruvate carboxylase is the first regulatory enzyme in the gluconeogenic pathway, requiring acetyl-CoA as a positive effector. Acetyl-CoA is produced by fatty acid oxidation (Chapter 17), and its accumulation signals the availability of fatty acids as fuel. As we shall see in Chapter 16, the pyruvate carboxylase reaction can replenish intermediates in another central metabolic pathway, the citric acid cycle.
+
+Because the mitochondrial membrane has no transporter for oxaloacetate, before export to the cytosol the oxaloacetate formed from pyruvate must be reduced to malate by mitochondrial malate dehydrogenase, at the expense of NADH:
+
+$$
+\begin{array}{r l}\text { Oxaloacetate } + \mathrm{NADH} + \mathrm{H} ^ {+}&\rightleftharpoons\\&\quad \mathrm{L-malate} + \mathrm{NAD} ^ {+}\end{array}\tag{14-5}
+$$
+
+The standard free-energy change for this reaction is quite high, but under physiological conditions (including a very low concentration of oxaloacetate) $\Delta G \approx 0$ and the reaction is readily reversible. Mitochondrial malate dehydrogenase functions in both gluconeogenesis and the citric acid cycle, but the overall flow of metabolites in the two processes is in opposite directions.
+
+Malate leaves the mitochondrion through a specific transporter in the inner mitochondrial membrane (see Fig. 19-31), and in the cytosol it is reoxidized to oxaloacetate, with the production of cytosolic NADH:
+
+$$
+\mathrm{Malate} + \mathrm{NAD} ^ {+} \longrightarrow \mathrm{oxaloacetate} + \mathrm{NADH} + \mathrm{H} ^ {+}\tag{14-6}
+$$
+
+The oxaloacetate is then converted to PEP by phosphoenolpyruvate carboxykinase (Fig. 14-18). This $\mathrm{Mg}^{2+}$ -dependent reaction requires GTP as the phosphoryl group donor:
+
+$$
+\mathrm{Oxaloacetate} + \mathrm{GTP} \rightleftharpoons \mathrm{PEP} + \mathrm{CO} _ {2} + \mathrm{GDP}\tag{14-7}
+$$
+
+The reaction is reversible under intracellular conditions; the formation of one high-energy phosphate compound (PEP) is balanced by the hydrolysis of another (GTP). The overall equation for this set of bypass reactions, the sum of Equations 14-4 through 14-7, is
+
+![](images/1b9da89bc367e935d2d2e7480138b28a5ea88ab9d116920e633ccbeb3dc206a2.jpg)  
+FIGURE 14-18 Synthesis of phosphoenolpyruvate from oxaloacetate. In the cytosol, oxaloacetate is converted to phosphoenolpyruvate by PEP carboxykinase. The $\mathrm{CO}_{2}$ incorporated in the pyruvate carboxylase reaction is lost here as $\mathrm{CO}_{2}$ . The decarboxylation leads to a rearrangement of electrons that facilitates attack of the carbonyl oxygen of the pyruvate moiety on the $\gamma$ phosphate of GTP.
+
+$$
+\begin{array}{r l} \text {Pyruvate} + \mathrm{ATP} + \mathrm{GTP} + \mathrm{HCO} _ {3} ^ {-} & \longrightarrow \\ \mathrm{PEP} + \mathrm{ADP} + \mathrm{GDP} + \mathrm{P} _ {\mathrm{i}} + \mathrm{CO} _ {2} \\ & \Delta G ^ {\prime \circ} = 0. 9 \end{array}\tag{14-8}
+$$
+
+kJ/mol
+
+Two high-energy phosphate equivalents (one from ATP and one from GTP), each yielding about 50 kJ/mol under cellular conditions, must be expended to phosphorylate one molecule of pyruvate to PEP. In contrast, when PEP is converted to pyruvate during glycolysis, only one ATP is generated from ADP. Although the standard free-energy change ( $\Delta G^{\circ}$ ) of the two-step path from pyruvate to PEP is 0.9 kJ/mol, the actual free-energy change ( $\Delta G$ ), calculated from measured cellular concentrations of intermediates, is very strongly negative (-25 kJ/mol); this results from the ready consumption of PEP in other reactions such that its concentration remains relatively low. The reaction is thus effectively irreversible in the cell.
+
+Note that the $CO_{2}$ added to pyruvate in the pyruvate carboxylase step (Fig. 14-17) is the same molecule that is lost in the PEP carboxykinase reaction (Fig. 14-18). This carboxylation-decarboxylation sequence represents a way of “activating” pyruvate, in that the decarboxylation of oxaloacetate facilitates PEP formation. In Chapter 21 we shall see how a similar carboxylation-decarboxylation sequence is used to activate acetyl-CoA for fatty acid biosynthesis (see Fig. 21-1).
+
+There is a logic to the route of these reactions through the mitochondrion. The $[NADH]/[NAD^{+}]$ ratio in the cytosol is several orders of magnitude lower than in mitochondria. Because cytosolic NADH is consumed in gluconeogenesis (in the conversion of 1,3-bisphosphoglycerate to glyceraldehyde 3-phosphate; Fig. 14-16), glucose biosynthesis cannot proceed unless NADH is available. The transport of malate from the mitochondrion to the cytosol and its reconversion there to oxaloacetate effectively moves reducing equivalents to the cytosol, where they are scarce. This path from pyruvate to PEP therefore provides an important balance between NADH produced and consumed in the cytosol during gluconeogenesis.
+
+P4 A second pyruvate → PEP bypass predominates when lactate is the glucogenic precursor (Fig. 14-19). This pathway makes use of lactate produced by glycolysis in erythrocytes or anaerobic muscle, for example, and it is particularly important in large vertebrates after vigorous exercise (Box 14-2). The conversion of lactate to pyruvate in the cytosol of hepatocytes yields NADH, and the export of reducing equivalents (as malate) from mitochondria is therefore unnecessary. After the pyruvate produced by the lactate dehydrogenase reaction is transported into the mitochondrion (by a transporter in the inner mitochondrial membrane specific for pyruvate), it is converted to oxaloacetate by pyruvate carboxylase, as described above. This oxaloacetate, however, is converted directly to PEP by a mitochondrial isozyme of PEP carboxykinase, and the PEP is transported out of the mitochondrion to continue on the gluconeogenic path. The mitochondrial and cytosolic isozymes of PEP carboxykinase are encoded by separate genes in the nuclear chromosomes, providing another example of two distinct enzymes catalyzing the same reaction but having different cellular locations or metabolic roles (recall the isozymes of hexokinase).
+
+![](images/c61d647936ebb45f0bad7ba06eee120cf96bde91c19853b0eb62b5ac8fc62572.jpg)  
+FIGURE 14-19 Alternative paths from pyruvate to phosphoenolpyruvate. The relative importance of the two pathways depends on the availability of lactate or pyruvate and the cytosolic requirements for NADH for gluconeogenesis. The path on the right predominates when lactate is the precursor, because cytosolic NADH is generated in the lactate dehydrogenase reaction and does not have to be shuttled out of the mitochondrion (see text).
+
+## The Second and Third Bypasses Are Simple Dephosphorylations by Phosphatases
+
+The second glycolytic reaction that cannot participate in gluconeogenesis is the phosphorylation of fructose 6-phosphate by PFK-1 (Table 14-2, step 3). Because this reaction is highly exergonic and therefore irreversible in intact cells, the generation of fructose 6-phosphate from fructose 1,6-bisphosphate (Fig. 14-16) is catalyzed by a different enzyme, $\mathrm{Mg}^{2+}$ -dependent fructose 1,6-bisphosphatase (FBPase-1), which promotes the essentially irreversible hydrolysis of the C-1 phosphate (not phosphoryl group transfer to ADP):
+
+$$
+\begin{array}{r l} \text { Fructose   1,6 - phosphate } + \mathrm{H} _ {2} \mathrm{O} & \longrightarrow \\ & \text { fructose   6 - phosphate } + \mathrm{P} _ {\mathrm{i}} \\ & \Delta G ^ {\prime \circ} = - 1 6. 3 \mathrm{kJ/mol} \end{array}
+$$
+
+FBPase-1 is so named to distinguish it from another, similar enzyme (FBPase-2) with a regulatory role, which we discuss in Section 14.5.
+
+The third bypass is the final reaction of gluconeogenesis, the dephosphorylation of glucose 6-phosphate to yield glucose (Fig. 14-16). Reversal of the hexokinase reaction (p. 514) would require phosphoryl group transfer from glucose 6-phosphate to ADP, forming ATP, an energetically unfavorable reaction (Table 14-2, step 1). The reaction catalyzed by glucose 6-phosphatase does not require synthesis of ATP; it is a simple hydrolysis of a phosphate ester:
+
+$$
+\begin{array}{r l} \text {   Glucose   6 - phosphate   } + \mathrm{H} _ {2} \mathrm{O} & \longrightarrow \text {   glucose   } + \mathrm{P} _ {\mathrm{i}} \\ & \Delta G ^ {\prime \circ} = - 1 3. 8 \mathrm{kJ/mol} \end{array}
+$$
+
+This $Mg^{2+}$ -activated enzyme is a membrane protein in the lumen of the endoplasmic reticulum of hepatocytes, renal cells, and epithelial cells of the small intestine (see Fig. 15-6), but not in other tissues, which are therefore unable to supply glucose to the blood. If other tissues had glucose 6-phosphatase, this enzyme's activity would hydrolyze the glucose 6-phosphate needed within those tissues for glycolysis. Glucose produced by gluconeogenesis in the liver or kidney or ingested in the diet is delivered to these other tissues, including brain and muscle, through the bloodstream.
+
+## Gluconeogenesis Is Energetically Expensive, But Essential
+
+P4 The sum of the biosynthetic reactions leading from pyruvate to free blood glucose (Table 14-3) is
+
+$$
+\begin{array}{r l} 2 \mathrm{Pyruvate} + 4 \mathrm{ATP} + 2 \mathrm{GTP} + 2 \mathrm{NADH} + 2 \mathrm{H} ^ {+} + 4 \mathrm{H} _ {2} \mathrm{O} & \longrightarrow \\ \text { glucose } + 4 \mathrm{ADP} + 2 \mathrm{GDP} + 6 \mathrm{P} _ {\mathrm{i}} + 2 \mathrm{NAD} ^ {+} & (1 4 - 9) \end{array}
+$$
+
+For each molecule of glucose formed from pyruvate, six high-energy phosphate groups are required: four from ATP and two from GTP. In addition, two molecules of NADH are required for the reduction of two molecules of 1,3-bisphosphoglycerate. Clearly, Equation 14-9 is not simply the reverse of the equation for conversion of glucose to pyruvate by glycolysis, which would require only two molecules of ATP:
+
+<table><tr><td colspan="2">TABLE 14-3 Sequential Reactions in Gluconeogenesis Starting from Pyruvate</td></tr><tr><td>Pyruvate + HCO3− + ATP → oxaloacetate + ADP + Pi</td><td>×2</td></tr><tr><td>Oxaloacetate + GTP ⇌ phosphoenolpyruvate + CO2 + GDP</td><td>×2</td></tr><tr><td>Phosphoenolpyruvate + H2O ⇌ 2-phosphoglycerate</td><td>×2</td></tr><tr><td>2-Phosphoglycerate ⇌ 3-phosphoglycerate</td><td>×2</td></tr><tr><td>3-Phosphoglycerate + ATP ⇌ 1,3-bisphosphoglycerate + ADP</td><td>×2</td></tr><tr><td>1,3-Bisphosphoglycerate + NADH + H+ ⇌ glyceraldehyde 3-phosphate + NAD+ + Pi</td><td>×2</td></tr><tr><td>Glyceraldehyde 3-phosphate ⇌ dihydroxyacetone phosphate</td><td></td></tr><tr><td>Glyceraldehyde 3-phosphate + dihydroxyacetone phosphate ⇌ fructose 1,6-bisphosphate</td><td></td></tr><tr><td>Fructose 1,6-bisphosphate → fructose 6-phosphate + Pi</td><td></td></tr><tr><td>Fructose 6-phosphate ⇌ glucose 6-phosphate</td><td></td></tr><tr><td>Glucose 6-phosphate + H2O → glucose + Pi</td><td></td></tr><tr><td>Sum: 2 Pyruvate + 4ATP + 2GTP + 2NADH + 2H+ + 4H2O → glucose + 4ADP + 2GDP + 6Pi + 2NAD+</td><td></td></tr><tr><td colspan="2">Note: The bypass reactions are in red; all other reactions are reversible steps of glycolysis. The figures at the right indicate that the reaction is to be counted twice, because two three-carbon precursors are required to make a molecule of glucose. The reactions required to replace the cytosolic NADH consumed in the glyceraldehyde 3-phosphate dehydrogenase reaction (the conversion of lactate to pyruvate in the cytosol or the transport of reducing equivalents from mitochondria to the cytosol in the form of malate) are not considered in this summary. Biochemical equations are not necessarily balanced for H and charge (p. 478).</td></tr></table>
+
+$$
+\begin{array}{r l} \mathrm{Glucose} + 2 \mathrm{ADP} + 2 \mathrm {P_ {i}} + \mathrm{NAD} ^ {+} & \longrightarrow \\ 2 \text { pyruvate } + 2 \mathrm{ATP} + 2 \mathrm{NADH} + 2 \mathrm{H} ^ {+} + 2 \mathrm{H} _ {2} \mathrm{O} \end{array}
+$$
+
+This makes the synthesis of glucose from pyruvate a relatively expensive process. Much of this high energy cost is necessary to ensure the irreversibility of gluconeogenesis. Under intracellular conditions, the overall free-energy change of glycolysis is at least -63 kJ/mol. Under the same conditions the overall $\Delta G$ of gluconeogenesis is -16 kJ/mol. Thus both glycolysis and gluconeogenesis are essentially irreversible processes in cells. A second advantage to investing energy to convert pyruvate to glucose is that if pyruvate were instead excreted, its considerable potential for ATP production by complete, aerobic oxidation would be lost (more than 10 ATP are produced per pyruvate, as we shall see in Chapter 16).
+
+The biosynthetic pathway to glucose described above allows the net synthesis of glucose not only from pyruvate but also from the four-, five-, and six-carbon intermediates of the citric acid cycle (Chapter 16). The citric acid cycle intermediates can undergo oxidation to oxaloacetate (see Fig. 16-7). Some or all of the carbon atoms of most amino acids derived from proteins are ultimately catabolized to pyruvate or to intermediates of the citric acid cycle. Such amino acids can therefore undergo net conversion to glucose and are said to be glucogenic (Table 14-4). Alanine and glutamine, the principal molecules that transport amino groups from extrahepatic tissues to the liver (see Fig. 18-9), are particularly important glucogenic amino acids in mammals. After removal of their amino groups in liver mitochondria, the carbon skeletons remaining (pyruvate and $\alpha$ -ketoglutarate, respectively) are readily funneled into gluconeogenesis.
+
+<table><tr><td>TABLE 14-4</td><td>Glucogenic Amino Acids, Grouped by Site of Entry</td></tr><tr><td>Pyruvate</td><td>Succinyl-CoA</td></tr><tr><td>Alanine</td><td> $Isoleucine^a$ </td></tr><tr><td>Cysteine</td><td>Methionine</td></tr><tr><td>Glycine</td><td>Threonine</td></tr><tr><td>Serine</td><td>Valine</td></tr><tr><td>Threonine</td><td>Fumarate</td></tr><tr><td> $Tryptophan^a$ </td><td> $Phenylalanine^a$ </td></tr><tr><td>α-Ketoglutarate</td><td> $Tyrosine^a$ </td></tr><tr><td>Arginine</td><td>Oxaloacetate</td></tr><tr><td>Glutamate</td><td>Asparagine</td></tr><tr><td>Glutamine</td><td>Aspartate</td></tr><tr><td>Histidine</td><td></td></tr><tr><td>Proline</td><td></td></tr></table>
+
+Note: All these amino acids are precursors of blood glucose or liver glycogen, because they can be converted to pyruvate or citric acid cycle intermediates. Of the 20 common amino acids, only leucine and lysine are unable to furnish carbon for net glucose synthesis. $^{a}$ These amino acids are also ketogenic (see Fig. 18–15).
+
+## Mammals Cannot Convert Fatty Acids to Glucose; Plants and Microorganisms Can
+
+![](images/d3f2de5253b1c785d345beed86c02b80e03986944ee9d8c951ad697720eaf7f6.jpg)
+
+No net conversion of fatty acids to glucose occurs in mammals. As we shall see in Chapter 17, the catabolism of most fatty acids yields only acetyl-CoA. Mammals cannot use acetyl-CoA as a precursor of glucose, because the pyruvate dehydrogenase reaction is irreversible and cells have no other pathway to convert acetyl-CoA to pyruvate. Plants, yeast, and many bacteria do have a pathway (the glyoxylate cycle; see Fig. 20-45) for converting acetyl-CoA to oxaloacetate, so these organisms can use fatty acids as the starting material for gluconeogenesis. This is important during the germination of seedlings, for example; before leaves develop and photosynthesis can provide energy and carbohydrates, the seedling relies on stored seed oils for energy production and cell wall biosynthesis.
+
+Although mammals cannot convert fatty acids to carbohydrate, they can use the small amount of glycerol produced from the breakdown of fats (triacylglycerols) for gluconeogenesis. Phosphorylation of glycerol by glycerol kinase, followed by oxidation of the central carbon, yields dihydroxyacetone phosphate, an intermediate in gluconeogenesis in liver.
+
+As we shall see in Chapter 21, glycerol phosphate is an essential intermediate in triacylglycerol synthesis in adipocytes, but these cells lack glycerol kinase and so cannot simply phosphorylate glycerol. Instead, adipocytes carry out a truncated version of gluconeogenesis, known as glyceroneogenesis: the conversion of pyruvate to dihydroxyacetone phosphate via the early reactions of gluconeogenesis, followed by reduction of the dihydroxyacetone phosphate to glycerol 3-phosphate (see Fig. 21-21).
+
+## SUMMARY 14.4 Gluconeogenesis
+
+■ Gluconeogenesis is a multistep process in which glucose is produced from lactate, pyruvate, or oxaloacetate, or any compound (including citric acid cycle intermediates) that can be converted to one of these intermediates. Seven steps are the reversal of glycolytic reactions; three differ and must be bypassed with exergonic reactions.
+
+In the first bypass, pyruvate is converted to PEP via oxaloacetate in two steps catalyzed by pyruvate carboxylase (which uses ATP) and PEP carboxykinase (which uses GTP).
+
+In the second bypass, FBPase-1 removes a phosphate group from fructose 1,6-bisphosphate, producing fructose 6-phosphate. In the third bypass, glucose 6-phosphatase converts glucose 6-phosphate to glucose.
+
+In mammals, gluconeogenesis in the liver, kidney, and small intestine provides glucose for use by the brain, muscles, and erythrocytes. Formation of one molecule of glucose from pyruvate requires four ATP, two GTP, and two NADH; it is expensive.
+
+![](images/230a3608f93473cf3870dab264faabad1d3a23eceeb4ad6cbcf9c181b8a504d4.jpg)
+
+Animals cannot convert acetyl-CoA derived from fatty acids into glucose; they lack the enzymatic machinery to convert acetyl-CoA to pyruvate. Plants and microorganisms have the glyoxylate pathway, which allows them to make glucose from fatty acids.
+
+## 14.5 Coordinated Regulation of Glycolysis and Gluconeogenesis
+
+P5 Glycolysis (the conversion of glucose to pyruvate) and gluconeogenesis (the conversion of pyruvate to glucose) generally do not both occur at the same time in the same tissues. In mammals, gluconeogenesis occurs primarily in the liver, where its role is to provide glucose for export to other tissues when glycogen stores are exhausted and when no dietary glucose is available. Glycolysis occurs in most tissues, including, brain, kidney, muscle and liver. Glycolysis provides ATP to support all of the energy-requiring activities of cells: active transport of ions; synthesis of macromolecules and of their precursors; synthesis of lipids and storage compounds like glycogen; and muscle contraction.
+
+At each of the three points where glycolytic reactions are bypassed by alternative, gluconeogenic reactions (Fig. 14-16), simultaneous operation of both pathways would consume ATP without accomplishing any chemical or biological work. For example, PFK-1 and FBPase-1 catalyze opposing reactions:
+
+ATP + fructose 6-phosphate $\xrightarrow{PFK-1}$
+
+$$
+\mathrm{ADP} + \text { fructose   1,6 - bisphosphate }
+$$
+
+Fructose 1,6-bisphosphate + $H_{2}O$ $\xrightarrow{FBPase-1}$
+
+$$
+\text { fructose   6 - phosphate } + \mathrm{P} _ {\mathrm{i}}
+$$
+
+The sum of these two reactions is
+
+$$
+\mathrm{ATP} + \mathrm{H} _ {2} \mathrm{O} \longrightarrow \mathrm{ADP} + \mathrm{P} _ {\mathrm{i}} + \mathrm{heat}
+$$
+
+that is, hydrolysis of ATP without any useful metabolic work being done. Clearly, if these two reactions were allowed to proceed simultaneously at a high rate in the same cell, a large amount of chemical energy would be dissipated as heat.
+
+We look now in some detail at the mechanisms that regulate glycolysis and gluconeogenesis at the three points where these pathways diverge.
+
+## Hexokinase Isozymes Are Affected Differently by Their Product, Glucose 6-Phosphate
+
+Hexokinase, which catalyzes the entry of glucose into the glycolytic pathway, is a regulatory enzyme. As noted in Section 14.1, humans have four isozymes of hexokinase (designated I to IV), encoded by four different genes (Box 14-3). P5 The different hexokinase isozymes of liver and muscle reflect the different roles of these organs in carbohydrate metabolism: muscle consumes glucose, using it for energy production; liver maintains blood glucose homeostasis by consuming or producing glucose, depending on the prevailing blood glucose concentration.
+
+The predominant hexokinase isozyme of myocytes (hexokinase II) has a high affinity for glucose—it is half-saturated at about 0.1 mm. Because glucose entering myocytes from the blood (where the glucose concentration is 4 to 5 mm) produces an intracellular glucose concentration high enough to saturate hexokinase II, the muscle enzyme normally acts at or near its $V_{max}$ . Muscle hexokinase I and hexokinase II are allosterically inhibited by their product, glucose 6-phosphate, so whenever the cellular concentration of glucose 6-phosphate rises above its normal level, these isozymes are temporarily and reversibly inhibited, bringing the rate of glucose 6-phosphate formation into balance with the rate of its utilization and reestablishing the steady state.
+
+The predominant hexokinase isozyme of liver is hexokinase IV (also called glucokinase), which differs in three important respects from hexokinases I, II, and III of muscle. First, the glucose concentration at which hexokinase IV is half-saturated (about 10 mm) is higher than the usual concentration of glucose in the blood. Because an efficient glucose transporter in hepatocytes (GLUT2) rapidly equilibrates the glucose concentrations in cytosol and blood, the high $K_{m}$ of hexokinase IV allows its direct regulation by the blood glucose concentration (Fig. 14-20). When blood glucose is high, as it is after a meal rich in carbohydrates, excess glucose is transported into hepatocytes, where hexokinase IV converts it to glucose 6-phosphate. Because hexokinase IV is not saturated at 10 mm glucose, its activity continues to increase as the glucose concentration rises to 10 mm or more. Under conditions of low blood glucose, the glucose concentration in a hepatocyte is low relative to the $K_{m}$ of hexokinase IV, and the glucose generated by gluconeogenesis leaves the cell before being trapped by phosphorylation.
+
+![](images/e4b438e140c2568c7d26de005b76f4aaf5a04d9855ebf90ad4b6f175d137b4e9.jpg)  
+FIGURE 14-20 Comparison of the kinetic properties of hexokinase IV (glucokinase) and hexokinase I. Note the much lower $K_{\mathrm{m}}$ for hexokinase I. When blood glucose rises above 5 mm, hexokinase IV activity increases, but hexokinase I is already operating near $V_{\mathrm{max}}$ and cannot respond to an increase in glucose concentration. Hexokinases I, II, and III have similar kinetic properties.
+
+# Isozymes: Different Proteins That Catalyze the Same Reaction
+
+The four forms of hexokinase found in mammalian tissues are but one example of a common biological situation: the same reaction catalyzed by two or more different molecular forms of an enzyme. These multiple forms, called isozymes or isoenzymes, may occur in the same species, in the same tissue, even in the same cell. The different forms (isoforms) of the enzyme generally differ in kinetic or regulatory properties, in the cofactor they use (NADH or NADPH for dehydrogenase isozymes, for example), or in their subcellular distribution (soluble or membrane-bound). Isozymes may have similar, but not identical, amino acid sequences, and in many cases they clearly share a common evolutionary origin.
+
+One of the first enzymes found to have isozymes was lactate dehydrogenase (LDH; p. 526), which in vertebrate tissues exists as at least five different isozymes separable by electrophoresis. All LDH isozymes contain four polypeptide chains (each of $M_r$ 33,500), each type containing a different ratio of two kinds of polypeptides. The M (for muscle) chain and the H (for heart) chain are encoded by two different genes.
+
+In skeletal muscle the predominant isozyme contains four M chains, and in heart the predominant isozyme contains four H chains. Other tissues have some combination of the five possible types of LDH isozymes:
+
+<table><tr><td>Type</td><td>Composition</td><td>Location</td></tr><tr><td> $LDH_1$ </td><td>HHHH</td><td>Heart and erythrocyte</td></tr><tr><td> $LDH_2$ </td><td>HHHM</td><td>Heart and erythrocyte</td></tr><tr><td> $LDH_3$ </td><td>HHMM</td><td>Brain and kidney</td></tr><tr><td> $LDH_4$ </td><td>HMMM</td><td>Skeletal muscle and liver</td></tr><tr><td> $LDH_5$ </td><td>MMMM</td><td>Skeletal muscle and liver</td></tr></table>
+
+![](images/fb29c4037798293829bff6ebb38d9fc74504c11bbcf58ecab836f02a4a735b61.jpg)
+
+Differences in the isozyme content of tissues can be used to assess the timing and extent of heart damage due to myocardial infarction (heart attack). Damage to heart tissue results in the release of heart LDH into the blood. Shortly
+
+Second, hexokinase IV is not inhibited by glucose 6-phosphate, and it can therefore continue to operate when the accumulation of glucose 6-phosphate completely inhibits hexokinases I, II, and III. Third, hexokinase IV is subject to inhibition by the reversible binding of a regulatory protein specific to liver (Fig. 14-21). The binding is much tighter in the presence of the allosteric effector fructose 6-phosphate. Glucose competes with fructose 6-phosphate for binding and causes dissociation of the regulatory protein from the hexokinase, relieving the inhibition. Immediately after a carbohydrate-rich meal, when blood glucose is high, glucose enters the hepatocyte via GLUT2 and activates hexokinase IV by this mechanism. During a fast, when blood glucose drops below $5\mathrm{mm}$ , fructose 6-phosphate triggers the inhibition of hexokinase IV by the regulatory protein, so the after a heart attack, the blood level of total LDH increases, and there is more $LDH_{2}$ than $LDH_{1}$ . After 12 hours the amounts of $LDH_{1}$ and $LDH_{2}$ are very similar, and after 24 hours there is more $LDH_{1}$ than $LDH_{2}$ . This switch in the $[LDH_{1}]/[LDH_{2}]$ ratio, combined with increased concentrations in the blood of another heart enzyme, creatine kinase, is very strong evidence of a recent myocardial infarction.
+
+![](images/56903f5ec4f74e87c7b14a84b182d7426e7c043da9fa87be997d583afb251c45.jpg)
+
+The different LDH isozymes have significantly different values of $V_{max}$ and $K_{m}$ , particularly for pyruvate. The properties of $LDH_{4}$ favor rapid reduction of very low concentrations of pyruvate to lactate in skeletal muscle, whereas those of isozyme $LDH_{1}$ favor rapid oxidation of lactate to pyruvate in the heart.
+
+In general, the distribution of different isozymes of a given enzyme reflects at least four factors:
+
+1. Different metabolic patterns in different organs. For glycogen phosphorylase, the isozymes in skeletal muscle and liver have different regulatory properties, reflecting the different roles of glycogen breakdown in these two tissues.
+
+2. Different locations and metabolic roles for isozymes in the same cell. The isocitrate dehydrogenase isozymes of the cytosol and the mitochondrion are an example (Chapter 16).
+
+3. Different stages of development in embryonic or fetal tissues and in adult tissues. For example, the fetal liver has a characteristic isozyme distribution of LDH, which changes as the organ develops into its adult form. Some enzymes of glucose catabolism in malignant (cancer) cells occur as their fetal, not adult, isozymes.
+
+![](images/fd4d82fd897d001d9c1c4bec5733ee668ed480f17acce37454e5214d461336d3.jpg)
+
+4. Different responses of isozymes to allosteric modulators. This difference is useful in fine-tuning metabolic rates. Hexokinase IV (glucokinase) of liver and the hexokinase isozymes of other tissues differ in their sensitivity to inhibition by glucose 6-phosphate.
+
+liver does not compete with other organs for the scarce glucose. The mechanism of inhibition by the regulatory protein is interesting: the protein anchors hexokinase IV inside the nucleus, where it is segregated from the other enzymes of glycolysis in the cytosol. When the glucose concentration in the cytosol rises, it equilibrates with glucose in the nucleus by transport through the nuclear pores. Glucose causes dissociation of the regulatory protein, and hexokinase IV enters the cytosol and begins to phosphorylate glucose.
+
+Hexokinase IV is also regulated at the level of protein synthesis. Circumstances that call for greater energy production (low [ATP], high [AMP], vigorous muscle contraction) or for greater glucose consumption (high blood [glucose], for example) cause increased transcription of the hexokinase IV gene. Glucose 6-phosphatase,
+
+![](images/aa0619f24b89c0a9ecbce8d90ec7ecf0bdbe7972a3e60cb555b830876ba9a227.jpg)
+
+![](images/00ac57cdc507c86772d13605ff255f52453c8e23aba59602b6107d02782bbd5f.jpg)
+
+FIGURE 14-21 Regulation of hexokinase IV (glucokinase) by sequestration in the nucleus. The protein inhibitor of hexokinase IV is a nuclear binding protein that draws hexokinase IV into the nucleus when the fructose 6-phosphate concentration in liver is high and releases it to the cytosol when the glucose concentration is high.
+
+the gluconeogenic enzyme that bypasses the hexokinase step of glycolysis, is transcriptionally regulated by factors that call for increased production of glucose (low blood glucose, glucagon signaling). The transcriptional regulation of these two enzymes (along with other enzymes of glycolysis and gluconeogenesis) is described below.
+
+## Phosphofructokinase-1 and Fructose 1,6-Bisphosphatase Are Reciprocally Regulated
+
+Glucose 6-phosphate can flow either into glycolysis or through any of several other pathways, including glycogen synthesis and the pentose phosphate pathway. The metabolically irreversible reaction catalyzed by PFK-1 is the step that commits glucose to glycolysis. In addition to its substrate-binding sites, this complex enzyme has several regulatory sites at which allosteric activators or inhibitors bind.
+
+ATP is not only a substrate for PFK-1 but also an end product of the glycolytic pathway. When high cellular [ATP] signals that ATP is being produced faster than it is being consumed, ATP inhibits PFK-1 by binding to an allosteric site and lowering the affinity of the enzyme for its substrate fructose 6-phosphate (Fig. 14-22). ADP and AMP, which increase in concentration as consumption of ATP outpaces production, act allosterically to relieve this inhibition by ATP. These effects combine to produce higher enzyme activity when ADP or AMP accumulates and lower activity when ATP accumulates.
+
+FIGURE 14-22 Phosphofructokinase-1 (PFK-1) and its regulation. (a) Surface contour image of E. coli PFK-1, showing portions of its four identical subunits. Each subunit has its own catalytic site, where the products ADP and fructose 1,6-bisphosphate (red and yellow stick structures, respectively) are almost in contact, and its own binding sites for the allosteric regulator ATP, buried in the protein in the positions indicated. (b) Allosteric regulation of muscle PFK-1 by ATP, shown by a substrate-activity curve. At low [ATP], the $K_{0.5}$ for fructose 6-phosphate is relatively low, enabling the enzyme to function at a high rate at relatively low [fructose 6-phosphate]. (Recall from Chapter 6 that $K_{0.5}$ is the $K_{m}$ term for regulatory enzymes; when $K_{0.5}$ is larger, the binding is weaker.) When [ATP] is high, $K_{0.5}$ for fructose 6-phosphate is greatly increased, as indicated by the sigmoid relationship between substrate concentration and enzyme activity. (c) Summary of the regulators affecting PFK-1 activity. [(a) Data from PDB ID 1PFK, Y. Shirakihara and P. R. Evans, J. Mol. Biol. 204:973, 1988.]
+
+![](images/7a0dfa5f1e3062ad1e290d903ded987f3e5bb2a329c8b33fd6a86b85cb936870.jpg)  
+(a)
+
+![](images/c8bd62f2e502da3e9a63bc6088161d7e1c973144f83a9192d5dae6b71bdb6773.jpg)
+
+![](images/3836d40388377361e8c76c1f3642c99ebcd8e4d554a8d019c0f60afc6298d648.jpg)  
+(c)
+
+Citrate (the ionized form of citric acid), a key intermediate in the aerobic oxidation of pyruvate, fatty acids, and amino acids, is also an allosteric regulator of PFK-1. High citrate concentration increases the inhibitory effect of ATP, further reducing the flow of glucose through glycolysis. In this case, as in several others encountered later, citrate serves as an intracellular signal that the cell is meeting its current needs for energy-yielding metabolism by the oxidation of fats and proteins.
+
+The corresponding step in gluconeogenesis is the conversion of fructose 1,6-bisphosphate to fructose 6-phosphate (Fig. 14-23). The enzyme that catalyzes this reaction, FBPase-1, is strongly inhibited (allosterically) by AMP; when the cell's supply of ATP is low (corresponding to high [AMP]), the ATP-requiring synthesis of glucose slows.
+
+Thus, these opposing steps in the glycolytic and gluconeogenic pathways—those catalyzed by PFK-1 and FBPase-1—are regulated in a coordinated and reciprocal manner. In general, when sufficient concentrations of acetyl-CoA or citrate (the product of acetyl-CoA condensation with oxaloacetate) are present, or when a high proportion of the cell's adenylate is in the form of ATP, gluconeogenesis is favored. When the concentration of AMP increases, it promotes glycolysis by stimulating PFK-1 (and, as we shall see in Section 15.3, promotes glycogen degradation by activating glycogen phosphorylase).
+
+## Fructose 2,6-Bisphosphate Is a Potent Allosteric Regulator of PFK-1 and FBPase-1
+
+The special role of the liver in maintaining a constant blood glucose level requires additional regulatory mechanisms to coordinate glucose production and consumption. When the blood glucose level decreases, the hormone glucagon signals the liver to produce and release more glucose and to stop consuming it for its own needs. One source of glucose is glycogen stored in the liver; another source is gluconeogenesis, using pyruvate, lactate, glycerol, or certain amino acids as starting material. When blood glucose is high, insulin signals the liver to use glucose as a fuel and as a precursor for the synthesis and storage of glycogen and triacylglycerol.
+
+![](images/b02145267cdaf594a14cbafaa135b05e1bb2c3fa66efba566b52ac662cb0e4fd.jpg)  
+FIGURE 14-23 Regulation of phosphofructokinase-1 (PFK-1) and fructose 1,6-bisphosphatase (FBPase-1).
+
+P5 The rapid hormonal regulation of glycolysis and gluconeogenesis is mediated by fructose 2,6-bisphosphate, an allosteric effector for the enzymes PFK-1 and FBPase-1:
+
+![](images/dd0691b4a47484680491c31d3ac27bc897166215bb13d00d5554e42b72b13b03.jpg)
+
+![](images/32e04855084b4e6a6a9475991522d3e86580344a43cc664f2b5782e92a62a6c5.jpg)  
+Fructose 2,6-bisphosphate
+
+When fructose 2,6-bisphosphate binds to its allosteric site on PFK-1, it increases the enzyme's affinity for its substrate fructose 6-phosphate (Fig. 14-24a) and reduces its affinity for the allosteric inhibitors ATP and citrate. At the physiological concentrations of its substrates, ATP and fructose 6-phosphate, and of its other positive and negative effectors (ATP, AMP, citrate), PFK-1 is virtually inactive in the absence of fructose 2,6-bisphosphate. Fructose 2,6-bisphosphate has the opposite effect on FBPase-1: it reduces its affinity for its substrate (Fig. 14-24b), thereby slowing gluconeogenesis.
+
+The cellular concentration of the allosteric regulator fructose 2,6-bisphosphate is set by the relative rates of its formation and breakdown (Fig. 14-25a). It is formed by phosphorylation of fructose 6-phosphate, catalyzed by phosphofructokinase-2 (PFK-2), and broken down by fructose 2,6-bisphosphatase (FBPase-2). (Note that these enzymes are distinct from PFK-1 and FBPase-1, which catalyze the formation and breakdown, respectively, of fructose 1,6-bisphosphate.) PFK-2 and FBPase-2 are two separate enzymatic activities of a single, bifunctional protein. The balance of these two activities in the liver, which determines the cellular level of fructose 2,6-bisphosphate, is set by glucagon and insulin (Fig. 14-25b).
+
+![](images/b5cb463597f8772cca1065ec744376e4292674425331ba0e025c4c51ab534a03.jpg)
+
+As we saw in Chapter 12, glucagon stimulates the adenylyl cyclase of liver to synthesize 3',5'-cyclic AMP (cAMP) from ATP. Cyclic AMP then activates cAMP-dependent protein kinase, which transfers a phosphoryl group from ATP to the bifunctional protein PFK-2/FBPase-2. Phosphorylation of this protein enhances its FBPase-2 activity and inhibits its PFK-2 activity. Glucagon thereby lowers the cellular level of fructose 2,6-bisphosphate, inhibiting glycolysis and stimulating gluconeogenesis. The resulting production of more glucose enables the liver to replenish blood glucose in response to glucagon. Insulin has the opposite effect, stimulating the activity of a phosphoprotein phosphatase that catalyzes removal of the phosphoryl group from the bifunctional protein PFK-2/FBPase-2, activating its PFK-2 activity, increasing the level of fructose 2,6-bisphosphate, stimulating glycolysis, and inhibiting gluconeogenesis.
+
+![](images/2a6dc6761709be3c07d209eeebf690201e66db4a81335517751b154c050e2480.jpg)
+
+![](images/ca15b8652614c5b1ac4cba7d07ad6226f2ef77e17499a32f229068ae8659be73.jpg)
+
+![](images/b6e237373ddf126bd3f49165d0dbe96245da17aaa94c72489e3954311664a332.jpg)
+
+![](images/b5207749fb221a2a76ca261d7c8d2fe3223743a45c8e01054a3a71ff01a3bd84.jpg)  
+FIGURE 14-24 Role of fructose 2,6-bisphosphate in regulation of glycolysis and gluconeogenesis. Fructose 2,6-bisphosphate (F26BP) has opposite effects on the enzymatic activities of phosphofructokinase-1 (PFK-1, a glycolytic enzyme) and fructose 1,6-bisphosphatase (FBPase-1, a gluconeogenic enzyme). (a) PFK-1 activity in the absence of F26BP (blue curve) is half-maximal when the concentration of fructose 6-phosphate is $2\mathrm{mm}$ (that is, $K_{0.5} = 2\mathrm{mm}$ ). When $0.13\mu \mathrm{M}$ F26BP is present (red curve), the $K_{0.5}$ for fructose  
+6-phosphate is only 0.08 mm. Thus F26BP activates PFK-1 by increasing its apparent affinity for fructose 6-phosphate (see Fig. 14-23b). (b) FBPase-1 activity is inhibited by as little as 1 $\mu$ M F26BP and is strongly inhibited by 25 $\mu$ M. In the absence of this inhibitor (blue curve), the $K_{0.5}$ for fructose 1,6-bisphosphate is 5 $\mu$ M, but in the presence of 25 $\mu$ M F26BP (red curve), the $K_{0.5}$ is >70 $\mu$ M. Fructose 2,6-bisphosphate also makes FBPase-1 more sensitive to inhibition by another allosteric regulator, AMP. (c) Summary of regulation by F26BP.
+
+![](images/2a4fbb7f3b091f785c82f1edf0a357f7945ba72ad8b142124605c9871660a61b.jpg)  
+FIGURE 14-25 Regulation of fructose 2,6-bisphosphate level. (a) The cellular concentration of the regulator fructose 2,6-bisphosphate (F26BP) is determined by the rates of its synthesis by phosphofructokinase-2  
+(PFK-2) and its breakdown by fructose 2,6-bisphosphatase (FBPase-2). (b) Both enzyme activities are part of the same polypeptide chain, and they are reciprocally regulated by insulin and glucagon.
+
+## Xylulose 5-Phosphate Is a Key Regulator of Carbohydrate and Fat Metabolism
+
+Another regulatory mechanism also acts by controlling the level of fructose 2,6-bisphosphate. In the mammalian liver, xylulose 5-phosphate, a product of the pentose phosphate pathway, mediates the increase in glycolysis that follows ingestion of a high-carbohydrate meal. The xylulose 5-phosphate concentration rises as glucose entering the liver is converted to glucose 6-phosphate and enters both the glycolytic and pentose phosphate pathways. Xylulose 5-phosphate activates phosphoprotein phosphatase 2A, which dephosphorylates the bifunctional PFK-2/FBPase-2 enzyme (Fig. 14-25). Dephosphorylation activates PFK-2 and inhibits FBPase-2, and the resulting rise in fructose 2,6-bisphosphate concentration stimulates glycolysis and inhibits gluconeogenesis. The increased glycolysis boosts the production of acetyl-CoA, while the increased flow of hexose through the pentose phosphate pathway generates NADPH. Acetyl-CoA and NADPH are the starting materials for fatty acid synthesis, which increases dramatically in response to intake of a high-carbohydrate meal. Xylulose 5-phosphate also increases the synthesis of all the enzymes required for fatty acid synthesis, as we shall see (Fig. 14-28).
+
+![](images/3d2b309e2a169765fd002255e3a1e1eb9c0dbed4bb24c8553b5fbc9b1b01f77a.jpg)
+
+## The Glycolytic Enzyme Pyruvate Kinase Is Allosterically Inhibited by ATP
+
+At least three isozymes of pyruvate kinase are found in vertebrates, differing in their tissue distribution and their response to modulators. High concentrations of ATP, acetyl-CoA, and long-chain fatty acids (signs of abundant energy supply) allosterically inhibit all isozymes of pyruvate kinase (Fig. 14-26). The liver isozyme (L form), but not the muscle isozyme (M form), is subject to further regulation by phosphorylation. When low blood glucose causes glucagon release, cAMP-dependent protein kinase phosphorylates the L isozyme of pyruvate kinase, inactivating it. This slows the use of glucose as a fuel in liver, sparing it for export to the brain and other organs. In muscle, the effect of increased [cAMP] is quite different. In response to epinephrine, cAMP activates glycogen breakdown and glycolysis and provides the fuel needed for the fight-or-flight response.
+
+## Conversion of Pyruvate to Phosphoenolpyruvate Is Stimulated When Fatty Acids Are Available
+
+P5 In the pathway leading from pyruvate to glucose, the first control point determines the fate of pyruvate in the mitochondrion: its conversion either to acetyl-CoA (by the pyruvate dehydrogenase complex) to fuel the citric acid cycle (Chapter 16) or to oxaloacetate (by pyruvate carboxylase) to start the process of gluconeogenesis (Fig. 14-27). When fatty acids are readily available as fuels, their breakdown in liver mitochondria yields acetyl-CoA, a signal that further oxidation of glucose for fuel is not necessary. Acetyl-CoA is a positive allosteric modulator of pyruvate carboxylase and a negative modulator of pyruvate dehydrogenase, through stimulation of a protein kinase that inactivates the dehydrogenase. When the cell's energy needs are being met, oxidative phosphorylation slows, [NADH] rises relative to $\left[\mathrm{NAD}^{+}\right]$ and inhibits the citric acid cycle, and acetyl-CoA accumulates. The increased concentration of acetyl-CoA inhibits the pyruvate dehydrogenase complex, slowing the formation of acetyl-CoA from pyruvate, and stimulates gluconeogenesis by activating pyruvate carboxylase, allowing conversion of excess pyruvate to oxaloacetate (and, eventually, glucose).
+
+Oxaloacetate formed in this way is converted to phosphoenolpyruvate (PEP) in the reaction catalyzed by PEP carboxykinase (Fig. 14-16). In mammals, the regulation of this key enzyme occurs primarily at the level of its synthesis and breakdown, in response to dietary
+
+![](images/a6ef01ecac0ec07fa99c26c105893136d4110af87ef2abfd20ca5a6489a33994.jpg)
+
+![](images/0aaa07630587db646b0c0e714ea417c83c0a6908045c986be03a219af3a0f801.jpg)  
+FIGURE 14-26 Regulation of pyruvate kinase. The enzyme is allosterically inhibited by ATP, acetyl-CoA, and long-chain fatty acids (all signs of an abundant energy supply), and the accumulation of fructose 1,6-bisphosphate triggers its activation. Accumulation of alanine, which can be synthesized from pyruvate in one step, allosterically inhibits pyruvate kinase, slowing the production of pyruvate by glycolysis. The liver isozyme (L form) is also regulated
+
+hormonally. Glucagon activates cAMP-dependent protein kinase (PKA; see Fig. 15-12), which phosphorylates the pyruvate kinase L isozyme, inactivating it. When the glucagon level drops, a protein phosphatase (PP) dephosphorylates pyruvate kinase, activating it. This mechanism prevents the liver from consuming glucose by glycolysis when blood glucose is low; instead, the liver exports glucose. The muscle isozyme (M form) is not affected by this phosphorylation mechanism.  
+![](images/32a936ac3febc7aa9fb0f0ca1af2f05fa81207bc8851ddcdb30479ceaa3ebd59.jpg)
+
+![](images/b13ed6d391ebbf0bd5172b8abe3dd7c1c4c1b5f6d7eb9a1e0faaa914066df90e.jpg)  
+FIGURE 14-27 Two alternative fates for pyruvate. Pyruvate can be converted to glucose and glycogen via gluconeogenesis or oxidized to acetyl-CoA for energy production. The first enzyme in each path is regulated allosterically; acetyl-CoA, produced either by fatty acid oxidation or by the pyruvate dehydrogenase complex, stimulates pyruvate carboxylase and inhibits pyruvate dehydrogenase.
+
+and hormonal signals. Fasting or high glucagon levels act through cAMP to increase the rate of transcription and to stabilize the mRNA. Insulin, or high blood [glucose], has the opposite effects. We discuss this transcriptional regulation in more detail below. Generally triggered by a signal from outside the cell, these changes take place on a time scale of minutes to days.
+
+## Transcriptional Regulation Changes the Number of Enzyme Molecules
+
+Most of the regulatory actions discussed thus far are mediated by fast, reversible mechanisms to change the activity of existing enzyme molecules: allosteric effects, covalent alteration (phosphorylation) of the enzyme, or binding of a regulatory protein. Another set of regulatory processes involves changes in the number of molecules of an enzyme in the cell, through changes in the balance of enzyme synthesis and breakdown. Our discussion now turns briefly to regulation of transcription through signal-activated transcription factors. Transcriptional control is discussed in more detail in Chapter 28.
+
+In Chapter 12 we encountered nuclear receptors and transcription factors in the context of insulin signaling. Insulin acts through its receptor in the plasma membrane to turn on at least two distinct signaling pathways, each involving activation of a protein kinase (MAP kinase and protein kinase B). The kinases phosphorylate transcription factors, which then act in the nucleus to stimulate the synthesis of enzymes needed for cell growth and division. More than 150 genes are transcriptionally regulated by insulin, many of which encode proteins we have described here (Table 14-5).
+
+P5 One transcription factor important to carbohydrate metabolism is ChREBP (carbohydrate response element binding protein; Fig. 14-28), which is expressed primarily in liver, adipose tissue, and kidney. It coordinates the synthesis of enzymes needed for carbohydrate and fat synthesis. ChREBP in its phosphorylated form is inactive and is located in the cytosol. When the phosphoprotein phosphatase PP2A removes a phosphoryl group from ChREBP, the transcription factor can enter the nucleus. Here, nuclear PP2A removes
+
+<table><tr><td colspan="2">TABLE 14-5 Some of the Many Genes Regulated by Insulin</td></tr><tr><td>Change in gene expression</td><td>Role in glucose metabolism</td></tr><tr><td>Increased expression</td><td></td></tr><tr><td>Hexokinase II</td><td></td></tr><tr><td>Hexokinase IV</td><td rowspan="4">Essential for glycolysis, which consumes glucose for energy</td></tr><tr><td>Phosphofructokinase-1 (PFK-1)</td></tr><tr><td>PFK-2/FBPase-2</td></tr><tr><td>Pyruvate kinase</td></tr><tr><td>Glucose 6-phosphate dehydrogenase</td><td rowspan="3">Produce NADPH, which is essential for conversion of glucose to lipids</td></tr><tr><td>6-Phosphogluconate dehydrogenase</td></tr><tr><td>Malic enzyme</td></tr><tr><td>ATP-citrate lyase</td><td rowspan="2">Produce acetyl-CoA, which is essential for conversion of glucose to lipids</td></tr><tr><td>Pyruvate dehydrogenase</td></tr><tr><td>Acetyl-CoA carboxylase</td><td></td></tr><tr><td>Fatty acid synthase complex</td><td rowspan="3">Essential for conversion of glucose to lipids</td></tr><tr><td>Stearoyl-CoA dehydrogenase</td></tr><tr><td>Acyl-CoA-glycerol transferases</td></tr><tr><td>Decreased expression</td><td></td></tr><tr><td>PEP carboxykinase</td><td rowspan="2">Essential for glucose production by gluconeogenesis</td></tr><tr><td>Glucose 6-phosphatase (catalytic subunit)</td></tr></table>
+
+![](images/33bd49f6d8055bdb258ac7b2fec092acdd3cde3f26d3938ef0d9fa4aee48e549.jpg)  
+FIGURE 14-28 Mechanism of gene regulation by the transcription factor ChREBP. When ChREBP in the cytosol of a hepatocyte is phosphorylated on a Ser residue and a Thr residue, it cannot enter the nucleus. Dephosphorylation of Ⓟ—Ser by protein phosphatase PP2A allows ChREBP to enter the nucleus, where a second dephosphorylation, of Ⓟ—Thr, activates ChREBP so that it can associate with its partner protein, Mlx. ChREBP-Mlx now binds to the carbohydrate response element (ChoRE) in the promoter and stimulates transcription. PP2A is allosterically activated by xylulose 5-phosphate, an intermediate in the pentose phosphate pathway.
+
+another phosphoryl group, and ChREBP now joins with a partner protein, Mlx, and turns on the synthesis of several enzymes: pyruvate kinase; fatty acid synthase; and acetyl-CoA carboxylase, the first enzyme in the path to fatty acid synthesis.
+
+Controlling the activity of PP2A—and thus, ultimately, the synthesis of this group of metabolic enzymes—is xylulose 5-phosphate, an intermediate of the pentose phosphate pathway (see Fig. 14-31). When blood glucose concentration is high, glucose enters the liver and is phosphorylated by hexokinase IV. The glucose 6-phosphate thus formed can enter either the glycolytic pathway or the pentose phosphate pathway. If the latter, two initial oxidations produce xylulose 5-phosphate, which serves as a signal that the glucose-utilizing pathways are well-supplied with substrate. It accomplishes this by allosterically activating PP2A, which then dephosphorylates ChREBP, allowing the transcription factor to turn on the expression of genes for enzymes of glycolysis and fat synthesis (Fig. 14-28).
+
+## SUMMARY 14.5 Coordinated Regulation of Glycolysis and Gluconeogenesis
+
+■ Glycolysis and gluconeogenesis are reciprocally regulated to prevent wasteful operation of both pathways at the same time.
+
+■ Hexokinase IV (glucokinase) has kinetic properties related to its special role in the liver: releasing glucose to the blood when blood [glucose] is low; taking up and metabolizing glucose when blood [glucose] is high. Hexokinases I, II, and III are all inhibited by their product, glucose 6-phosphate.
+
+■ PFK-1 is allosterically inhibited by high [ATP]; low [AMP] inhibits FBPase-1. High [ATP] therefore slows glycolysis and speeds gluconeogenesis.
+
+■ Reciprocal allosteric control of glycolysis and gluconeogenesis is mainly achieved by the opposing effects of fructose 2,6-bisphosphate on PFK-1 and FBPase-1. Fructose 2,6-bisphosphate formation is stimulated, indirectly, by insulin, and inhibited by epinephrine.
+
+Xylulose 5-phosphate, an intermediate of the pentose phosphate pathway, activates phosphoprotein phosphatase PP2A. Activated PP2A tips the balance toward glucose uptake, glycogen synthesis, and lipid synthesis in the liver.
+
+Pyruvate kinase is allosterically inhibited by ATP, and the liver isozyme also is inhibited by cAMP-dependent phosphorylation. When [ATP] is high, glycolysis is slowed.
+
+■ When fatty acids are readily available as fuels, their breakdown in liver mitochondria yields acetyl-CoA, a signal that further oxidation of glucose for fuel is not necessary. Acetyl-CoA activates pyruvate carboxylase, thus favoring gluconeogenesis.
+
+■ Transcription factors such as ChREBP act in the nucleus to regulate the expression of specific genes coding for enzymes of the glycolytic and gluconeogenic pathways.
+
+## 14.6 Pentose Phosphate Pathway of Glucose Oxidation
+
+P6 In most animal tissues, the major catabolic fate of glucose 6-phosphate is glycolytic breakdown to pyruvate, much of which is then oxidized via the citric acid cycle, ultimately leading to the formation of ATP. Glucose 6-phosphate does have other catabolic fates, however, which lead to specialized products needed by the cell. Of particular importance in some tissues is the oxidation of glucose 6-phosphate to pentose phosphates by the pentose phosphate pathway (also called the phosphogluconate pathway or the hexose monophosphate pathway; Fig. 14-29). In this oxidative pathway, NADP+ is the electron acceptor, yielding NADPH. Rapidly dividing cells, such as those of bone marrow, skin, and intestinal mucosa, and those of tumors, use the pentose ribose 5-phosphate to make RNA, DNA, and such coenzymes as ATP, NADH, FADH₂, and coenzyme A.
+
+![](images/f46a937ee426a6dcc4f27bb0a4b8da368fd0ba055293a619a98c82b17e1224ae.jpg)  
+FIGURE 14-29 General scheme of the pentose phosphate pathway. NADPH formed in the oxidative phase is used to reduce glutathione, GSSG (see Box 14-4), and to support reductive biosynthesis. The other product of the oxidative phase is ribose 5-phosphate, which serves as a precursor for nucleotides, coenzymes, and nucleic acids. In cells that are not using ribose 5-phosphate for biosynthesis, the nonoxidative phase recycles six molecules of the pentose into five molecules of the hexose glucose 6-phosphate, allowing continued production of NADPH and converting glucose 6-phosphate (in six cycles) to CO₂.
+
+In other tissues, the essential product of the pentose phosphate pathway is not the pentoses but the electron donor NADPH, needed for reductive biosynthesis or to counter the damaging effects of oxygen radicals. Tissues that carry out extensive fatty acid synthesis (liver, adipose, lactating mammary gland) or very active synthesis of cholesterol and steroid hormones (liver, adrenal glands, gonads) require the NADPH provided by this pathway. Erythrocytes and the cells of the lens and cornea are directly exposed to oxygen and thus to the damaging free radicals generated by oxygen. By maintaining a reducing environment (a high ratio of NADPH to $\mathrm{NADP^{+}}$ and a high ratio of reduced glutathione to oxidized glutathione), such cells can prevent or undo oxidative damage to proteins, lipids, and other sensitive molecules. In erythrocytes, the NADPH produced by the pentose phosphate pathway is so important in preventing oxidative damage that a genetic defect in glucose 6-phosphate dehydrogenase, the first enzyme of the pathway, can have serious medical consequences (Box 14-4).
+
+## The Oxidative Phase Produces NADPH and Pentose Phosphates
+
+P6 The first reaction of the pentose phosphate pathway (Fig. 14-30) is the oxidation of glucose 6-phosphate by glucose 6-phosphate dehydrogenase (G6PD) to form
+
+![](images/d591b6ef81645d5b3577875b7083511a184bb0cdc473fa53d40a914f5dc62ee2.jpg)  
+FIGURE 14-30 Oxidative reactions of the pentose phosphate pathway. The end products are ribose 5-phosphate, CO₂, and NADPH.
+
+# Why Pythagoras Wouldn't Eat Falafel: Glucose 6-Phosphate Dehydrogenase Deficiency
+
+Fava beans, an ingredient of falafel, have been an important food source in the Mediterranean and the Middle East since antiquity. The Greek philosopher and mathematician Pythagoras prohibited his followers from dining on fava beans, perhaps because they make many people sick with a condition called favism, which can be fatal. In favism, erythrocytes begin to lyse 24 to 48 hours after ingestion of the beans, releasing free hemoglobin into the blood. Jaundice and sometimes kidney failure can result. Similar symptoms can occur with ingestion of the antimalarial drug primaquine or of sulfa antibiotics, or following exposure to certain herbicides. These symptoms have a genetic basis: glucose 6-phosphate dehydrogenase (G6PD) deficiency, which affects about 400 million people worldwide. Most G6PD-deficient individuals are asymptomatic; only the combination of G6PD deficiency and certain environmental factors produces the clinical manifestations.
+
+Glucose 6-phosphate dehydrogenase catalyzes the first step in the pentose phosphate pathway (see Fig. 14-30), which produces NADPH. This reductant, essential in many biosynthetic pathways, also protects cells from oxidative damage by hydrogen peroxide ( $H_{2}O_{2}$ ) and superoxide free radicals, highly reactive oxidants generated as metabolic byproducts and through the actions of drugs such as primaquine and natural products such as divicine — the toxic ingredient of fava beans. During normal detoxification, $H_{2}O_{2}$ is converted to $H_{2}O$ by reduced glutathione and glutathione peroxidase, and the oxidized glutathione is converted back to the reduced form by glutathione reductase and NADPH (Fig. 1). $H_{2}O_{2}$ is also broken down to $H_{2}O$ and $O_{2}$ by catalase, which also requires NADPH. In G6PD-deficient individuals, the NADPH production is diminished and detoxification of $H_{2}O_{2}$ is inhibited. Cellular damage results: lipid peroxidation leading to breakdown of erythrocyte membranes and oxidation of proteins and DNA.
+
+The geographic distribution of G6PD deficiency is instructive. Frequencies as high as 25% occur in tropical Africa, parts of the Middle East, and Southeast Asia, areas where malaria is most prevalent. In addition to such epidemiological observations, in vitro studies show that growth of one malaria parasite, Plasmodium falciparum, is inhibited in G6PD-deficient erythrocytes. The parasite is very sensitive to oxidative damage and is killed by a level of oxidative stress that is tolerable to a G6PD-deficient human host. Because the advantage of
+
+6-phosphoglucono-δ-lactone, an intramolecular ester. NADP+ is the electron acceptor, and the overall equilibrium lies far in the direction of NADPH formation. The lactone is hydrolyzed to the free acid 6-phosphogluconate by a specific lactonase, then 6-phosphogluconate undergoes oxidation and decarboxylation by 6-phosphogluconate dehydrogenase to form the ketopentose ribulose 5-phosphate; the reaction also generates a second molecule of NADPH. Phosphopentose isomerase resistance to malaria balances the disadvantage of lowered resistance to oxidative damage, natural selection sustains the G6PD-deficient genotype in human populations where malaria is prevalent. Only under overwhelming oxidative stress, caused by drugs, herbicides, or divicine, does G6PD deficiency cause serious medical problems.
+
+An antimalarial drug such as primaquine is believed to act by causing oxidative stress to the parasite. It is ironic that antimalarial drugs can cause human illness through the same biochemical mechanism that provides resistance to malaria. Divicine also acts as an antimalarial drug, and ingestion of fava beans may protect against malaria. By refusing to eat falafel, many Pythagoreans with normal G6PD activity may have unwittingly increased their risk of malaria!
+
+![](images/69ad214c82227c5504cb75818c236f63f776e878566efa33e9a5b62929714a00.jpg)  
+FIGURE 1 Role of NADPH and glutathione in protecting cells against highly reactive oxygen derivatives. Reduced glutathione (GSH) protects the cell by destroying hydrogen peroxide and hydroxyl free radicals. Regeneration of GSH from its oxidized form (GSSG) requires the NADPH produced in the glucose 6-phosphate dehydrogenase reaction.
+
+converts ribulose 5-phosphate to its aldose isomer, ribose 5-phosphate. In some tissues, the pentose phosphate pathway ends at this point, and its overall equation is
+
+$$
+\mathrm{Glucose6-phosphate} + 2 \mathrm{NADP} ^ {+} + \mathrm{H} _ {2} \mathrm{O} \longrightarrow
+$$
+
+$$
+\text { ribose   5 - phosphate } + \mathrm{CO} _ {2} + 2 \mathrm{NADPH} + 2 \mathrm{H} ^ {+}
+$$
+
+The net result is the production of NADPH, a reductant for biosynthetic reactions, and ribose 5-phosphate, a precursor for nucleotide synthesis.
+
+## The Nonoxidative Phase Recycles Pentose Phosphates to Glucose 6-Phosphate
+
+P6 In tissues that require primarily NADPH, the pentose phosphates produced in the oxidative phase of the pathway are recycled into glucose 6-phosphate. In this nonoxidative phase, ribulose 5-phosphate is first epimerized to xylulose 5-phosphate:
+
+![](images/79eaaefccb91a376a849081918bfb8b486349cf03df266cb75f0b68d7a444875.jpg)
+
+Then, in a series of rearrangements of the carbon skeletons (Fig. 14-31), six five-carbon sugar phosphates are converted to five six-carbon sugar phosphates, completing the cycle and allowing continued oxidation of glucose 6-phosphate with production of NADPH. Continued recycling leads ultimately to the conversion of glucose 6-phosphate to six CO₂. Two enzymes unique to the pentose phosphate pathway act in these interconversions of sugars: transketolase and transaldolase. Transketolase catalyzes the transfer of a two-carbon fragment from a ketose donor to an aldose acceptor (Fig. 14-32a). In its first appearance in the pentose phosphate pathway, transketolase transfers C-1 and C-2 of xylulose 5-phosphate to ribose 5-phosphate, forming the seven-carbon product sedoheptulose 7-phosphate (Fig. 14-32b). The remaining three-carbon fragment from xylulose is glyceraldehyde 3-phosphate.
+
+Next, transaldolase catalyzes a reaction similar to the aldolase reaction of glycolysis: a three-carbon fragment is removed from sedoheptulose 7-phosphate and condensed with glyceraldehyde 3-phosphate, forming fructose 6-phosphate and the tetrose erythrose 4-phosphate (Fig. 14-33). Now transketolase acts again, forming fructose 6-phosphate and glyceraldehyde 3-phosphate from erythrose 4-phosphate and xylulose 5-phosphate (Fig. 14-34). Two molecules of glyceraldehyde 3-phosphate formed by two iterations of these reactions can be converted to a molecule of fructose 1,6-bisphosphate as in gluconeogenesis (Fig. 14-16), and finally FBPase-1 and phosphohexose isomerase convert fructose 1,6-bisphosphate to glucose 6-phosphate. Overall, six pentose phosphates have been converted to five hexose phosphates (Fig. 14-32b)—the cycle is now complete.
+
+Transketolase requires the cofactor thiamine pyrophosphate (TPP), which stabilizes a two-carbon carbanion in this reaction (Fig. 14-35a), just as it does in the pyruvate decarboxylase reaction (Fig. 14-13). Transaldolase uses a Lys side chain to form a Schiff base with the carbonyl group of its substrate, a ketose, thereby stabilizing a carbanion (Fig. 14-35b) that is central to the reaction mechanism.
+
+The first and third steps of the oxidative pentose phosphate pathway shown in Figure 14-30 are oxidations with large, negative standard free-energy changes and are essentially irreversible in the cell. The reactions of the nonoxidative part of the pentose phosphate pathway (Fig. 14-31) are readily reversible and thus also provide a means of converting hexose phosphates to pentose phosphates.
+
+![](images/1b17dfd48f7f49337221540647190b20e000013db236b1302d1f61513bfce3a2.jpg)  
+FIGURE 14-31 Nonoxidative reactions of the pentose phosphate pathway. (a) These reactions convert pentose phosphates to hexose phosphates, allowing the oxidative reactions to continue. Transketolase and transaldolase are specific to this pathway; the other enzymes also serve in the glycolytic or gluconeogenic pathways. (b) A schematic diagram showing the  
+pathway from six pentoses (5C) to five hexoses (6C). Note that this involves two sets of the interconversions shown in (a). Every reaction shown here is reversible; unidirectional arrows are used only to make clear the direction of the reactions during continuous oxidation of glucose 6-phosphate. In the light-independent reactions of photosynthesis, the direction of these reactions is reversed.
+
+![](images/1a50230aec54ab456616d7b6903e4da65a7ee169934396f828e584a8791e3b1c.jpg)  
+(a)
+
+![](images/365fc383a9aad797343d58015e5472d1077429ff805595ff851bb584afe8146d.jpg)  
+(b)
+
+FIGURE 14-32 The first reaction catalyzed by transketolase. (a) The general reaction catalyzed by transketolase is the transfer of a two-carbon group, carried temporarily on enzyme-bound TPP, from  
+a ketose donor to an aldose acceptor. (b) Conversion of two pentose phosphates to a triose phosphate and a seven-carbon sugar phosphate, sedoheptulose 7-phosphate.  
+![](images/27ce08a1da42e532a40a66a919f778c1961cbfb501910b51b616c38718b60fe9.jpg)
+
+FIGURE 14-33 The reaction catalyzed by transaldolase.
+
+![](images/28ab647152574f26d68d707a6e67dd783167993f7bcddbafd1da268f1d13aff5.jpg)
+
+FIGURE 14-34 The second reaction catalyzed by transketolase.
+
+As we shall see in Chapter 20, a process that converts hexose phosphates to pentose phosphates is central to the photosynthetic assimilation of $CO_{2}$ by plants. That pathway, the reductive pentose phosphate pathway, is essentially the reversal of the reactions shown in Figure 14-31 and employs many of the same enzymes.
+
+All the enzymes of the pentose phosphate pathway are located in the cytosol, like those of glycolysis and most of those of gluconeogenesis. In fact, these three pathways are connected through several shared intermediates and enzymes. The glyceraldehyde 3-phosphate formed by the action of transketolase is readily converted to dihydroxyacetone phosphate by the glycolytic enzyme triose phosphate isomerase, and these two trioses can be joined by the aldolase as in gluconeogenesis, forming fructose 1,6-bisphosphate. Alternatively, the triose phosphates can be oxidized to pyruvate by the glycolytic reactions. The fate of the trioses is determined by the cell's relative needs for pentose phosphates, NADPH, and ATP.
+
+(a) Transketolase  
+![](images/b857af49550f4ab03a7521bc2e5c9cc4d0d0454195452bf1970b201691834f66.jpg)
+
+(b) Transaldolase  
+![](images/f55eac4a09cce7e73780c3b9e08eeea79e44bd866f74d5f1737e0da34af19767.jpg)  
+FIGURE 14-35 Carbanion intermediates stabilized by covalent interactions with transketolase and transaldolase. (a) The ring of TPP stabilizes the carbanion in the dihydroxyethyl group carried by transketolase. (b) In the transaldolase reaction, the protonated Schiff base formed between the ε-amino group of a Lys side chain and the substrate stabilizes the C-3 carbanion formed after aldol cleavage.
+
+## Glucose 6-Phosphate Is Partitioned between Glycolysis and the Pentose Phosphate Pathway
+
+P6 Whether glucose 6-phosphate enters glycolysis or the pentose phosphate pathway depends on the current needs of the cell and on the concentration of NADP+ in the cytosol. Without this electron acceptor, the first reaction of the pentose phosphate pathway (catalyzed by glucose 6-phosphate dehydrogenase) cannot proceed. When a cell is rapidly converting NADPH to NADP+ in biosynthetic reductions, [NADP+] rises, allosterically stimulating glucose 6-phosphate dehydrogenase and thereby increasing the flux of glucose 6-phosphate through the pentose phosphate pathway (Fig. 14-36). When the demand for NADPH slows, the level of NADP+ drops, the pentose phosphate pathway slows, and glucose 6-phosphate is instead used to fuel glycolysis.
+
+## Thiamine Deficiency Causes Beriberi and Wernicke-Korsakoff Syndrome
+
+![](images/f58d3fdc11c8e8107ba15bf1f1536d31c96f0d8e559ad8299b1a338152dc67d8.jpg)
+
+Thiamine, precursor to the cofactor thiamine pyrophosphate (TPP), is one of the B vitamins, essential in humans. Lack of vitamin $B_{1}$ in the diet leads to a range of medical problems. The condition known as beriberi is characterized by an accumulation of body fluids (swelling), pain, paralysis, and ultimately, without treatment, death.
+
+![](images/ab0ab55b6a51183f07b86c258e531a85639330ef5b90a2bea3006dea827696cc.jpg)  
+FIGURE 14-36 Role of NADPH in regulating the partitioning of glucose 6-phosphate between glycolysis and the pentose phosphate pathway. When NADPH is forming faster than it is being used for biosynthesis and glutathione reduction, [NADPH] rises and inhibits the first enzyme in the pentose phosphate pathway. As a result, more glucose 6-phosphate is available for glycolysis.
+
+Wernicke-Korsakoff syndrome, also caused by a severe deficiency of thiamine, typically includes problems with voluntary movements, reflected in abnormal eye movements and gait, and neurological defects. The syndrome is more common among heavy drinkers than in the general population because chronic, heavy alcohol consumption interferes with the intestinal absorption of thiamine. The syndrome can be exacerbated by a mutation in the gene for transketolase that results in an enzyme with a lowered affinity for TPP—an affinity one-tenth that of the normal enzyme. This defect makes individuals much more sensitive to a thiamine deficiency: even a moderate thiamine deficiency (tolerable in individuals with an unmutated transketolase) can result in a transketolase that is not saturated with TPP at its normal concentration. The result is a slowing down of the whole pentose phosphate pathway. In people with Wernicke-Korsakoff syndrome, this mutation results in a worsening of symptoms, which can include severe memory loss, mental confusion, and partial paralysis.
+
+## SUMMARY 14.6 Pentose Phosphate Pathway of Glucose Oxidation
+
+■ The oxidative pentose phosphate pathway produces NADPH and pentose phosphates. Tissues that carry out extensive fatty acid synthesis (liver, adipose, lactating mammary gland) or very active synthesis of cholesterol and steroid hormones (liver, adrenal glands, gonads) require the NADPH provided by this pathway.
+
+■ Ribose 5-phosphate is a precursor for nucleotide and nucleic acid synthesis.
+
+■ The first, oxidative phase of the pentose phosphate pathway consists of two oxidations that convert glucose
+
+6-phosphate to ribulose 5-phosphate and reduce NADP $^{+}$ to NADPH.
+
+■ The second, nonoxidative phase of the pentose phosphate pathway comprises steps that convert pentose phosphates to glucose 6-phosphate, which begins the oxidative cycle again.
+
+■ Entry of glucose 6-phosphate either into glycolysis or into the pentose phosphate pathway is largely determined by the relative concentrations of NADP $^{+}$ and NADPH.
+
+## KEY TERMS
+
+Terms in bold are defined in the glossary.
+
+glycolysis 511
+
+hexokinase 515
+
+isozymes 515
+
+phosphofructokinase-1 (PFK-1) 516
+
+fructose 1,6-bisphosphate
+aldolase 516
+
+ethanol (alcohol)
+
+aldolase 516
+
+triose phosphate
+isomerase 517
+
+glyceraldehyde 3-phosphate dehydrogenase 518
+
+acyl phosphate 518 phosphoglycerate kinase 518
+
+fermentation 525
+lactate dehydrogenase 526
+pyruvate decarboxylase 530
+alcohol dehydrogenase 530
+
+substrate-level phosphorylation 520
+
+respiration-linked phosphorylation 520 gluconeogenesis 533
+
+enolase 520 thiamine pyrophosphate
+(TPP) 530
+
+phosphoenolpyruvate (PEP) 520
+
+biotin 534
+
+phosphoglycerate
+mutase 520
+
+pyruvate kinase 521 fructose 1,6-bisphosphatase (FBPase-1) 537
+
+glycogen phosphorylase 522 fructose 2,6-bisphosphatase (FBPase-2) 542
+
+glucogenic 538
+
+glyceroneogenesis 538
+glucagon 542
+fructose 2,6-bisphosphate 542
+phosphofructokinase-2
+(PFK-2) 542
+
+mutases 522 carbohydrate response element binding protein (ChREBP) 545
+
+pentose phosphate pathway 546
+
+isomerases 522
+
+lactose intolerance 523 phosphogluconate pathway 546
+
+hexose monophosphate pathway 546
+
+galactosemia 523
+
+hypoxia 525
+
+fermentation 525
+lactic acid fermentation 525 glucose 6-phosphate dehydrogenase (G6PD) 547
+
+6-phosphogluconate dehydrogenase 548
+
+## PROBLEMS
+
+1. Is the Hexokinase Reaction at Equilibrium in Cells? For the reaction catalyzed by the enzyme hexokinase
+
+Glucose + ATP ⇌ glucose 6-phosphate + ADP
+
+the equilibrium constant, $K_{eq}$ , is $7.8 \times 10^{2}$ . In living E. coli cells, $[ATP] = 5 \, mm$ , $[ADP] = 0.5 \, mm$ , $\{glucose\} = 2 \, mm$ , and $[glucose\ 6-phosphate] = 1 \, mm$ . Is the reaction at equilibrium in E. coli?
+
+2. Equation for the Preparatory Phase of Glycolysis
+Write balanced biochemical equations for all the reactions in the catabolism of glucose to two molecules of glyceraldehyde 3-phosphate (the preparatory phase of glycolysis), including the standard free-energy change for each reaction. Then write the overall or net equation for the preparatory phase of glycolysis, with the net standard free-energy change.
+
+![](images/6323cb1e0780bfd1aca56e8c10666a4390f14f73190069c8011aceb1705eb9ec.jpg)
+
+3. Payoff Phase of Glycolysis: Fate of Pyruvate in Active Skeletal Muscle In working skeletal muscle under anaerobic conditions, glyceraldehyde 3-phosphate is converted to pyruvate (the payoff phase of glycolysis), and the pyruvate is reduced to lactate. Write balanced biochemical equations for all the reactions in this process, with the standard free-energy change for each reaction. Then write the overall or net equation for the payoff phase of glycolysis with fermentation to lactate, including the net standard free-energy change.
+
+4. Energetics of the Aldolase Reaction Aldolase catalyzes the glycolytic reaction
+
+Fructose 1,6-bisphosphate →
+
+glyceraldehyde 3-phosphate + dihydroxyacetone phosphate
+
+The standard free-energy change for this reaction in the direction written is +23.8 kJ/mol. The concentrations of the three intermediates in the hepatocyte of a mammal are fructose 1,6-bisphosphate, $1.4 \times 10^{-5}$ M; glyceraldehyde 3-phosphate, $3 \times 10^{-6}$ M; and dihydroxyacetone phosphate, $1.6 \times 10^{-5}$ M. At body temperature (37 °C), what is the actual free-energy change for the reaction?
+
+5. Equivalence of Triose Phosphates A researcher adds ${}^{14}$ C-labeled glyceraldehyde 3-phosphate to a yeast extract. After a short time, she isolates fructose 1,6-bisphosphate labeled with ${}^{14}$ C at C-3 and C-4. What was the location of the ${}^{14}$ C label in the starting glyceraldehyde 3-phosphate? Where did the second ${}^{14}$ C label in fructose 1,6-bisphosphate come from? Explain.
+
+![](images/6a6e7b64d13c12dc3f52e1309319524a716353aa8ae35d831d5fff398d7d9042.jpg)
+
+6. Glycolysis Shortcut Suppose you discovered a mutant yeast whose glycolytic pathway was shorter because of the presence of a new enzyme catalyzing the reaction
+
+NAD $^{+}$ NADH + H $^{+}$
+
+Glyceraldehyde 3-phosphate + H₂O
+
+3-phosphoglycerate
+
+Would shortening the glycolytic pathway in this way benefit the cell? Explain.
+
+7. Role of Lactate Dehydrogenase During strenuous activity, the demand for ATP in muscle tissue vastly increases. In rabbit leg muscle or turkey flight muscle, ATP production is almost exclusively a product of lactic acid fermentation. Phosphoglycerate kinase and pyruvate kinase catalyze the two reactions that form ATP in the payoff phase of glycolysis. Suppose skeletal muscle were devoid of lactate dehydrogenase. Could it carry out strenuous physical activity; that is, could it generate ATP at a high rate by glycolysis? Explain.
+
+8. Efficiency of ATP Production in Muscle The transformation of glucose to lactate in myocytes releases only about 7% of the free energy released when glucose is completely oxidized to $CO_{2}$ and $H_{2}O$ . Does this mean that glycolysis with lactate fermentation under anaerobic conditions in muscle is a wasteful use of glucose? Explain.
+
+![](images/208e94478dafffbfbed9a76ee39982f136095ce8814b319a5f1282983f3b0bd5.jpg)
+
+![](images/5fca0b5424a3448bfd12bc3e04466d0bf620ed3926432cab66146604bdc84410.jpg)
+
+9. Free-Energy Change for Triose Phosphate Oxidation The oxidation of glyceraldehyde 3-phosphate to 1,3-bisphosphoglycerate, catalyzed by glyceraldehyde 3-phosphate dehydrogenase, proceeds with an unfavorable equilibrium constant ( $K_{eq}^{\prime}=0.08$ ; $\Delta G^{\circ}=6.3$ kJ/mol), yet the flow through this point in the glycolytic pathway proceeds smoothly. How does the cell overcome the unfavorable equilibrium?
+
+10. Arsenate Poisoning Arsenate is structurally and chemically similar to inorganic phosphate ( $P_{i}$ ), and many enzymes that require phosphate will also use arsenate. Organic compounds of arsenate are less stable than analogous phosphate compounds, however. For example, acyl arsenates decompose rapidly by hydrolysis, as shown.
+
+$$
+\mathrm{R} - \stackrel {\mathrm{O}} {\mathrm{C}} - \mathrm{O} - \stackrel {\mathrm{O}} {\mathrm{As}} - \mathrm{O} ^ {-} + \mathrm{H} _ {2} \mathrm{O} \longrightarrow
+$$
+
+$$
+\mathrm{R} - \mathrm{C} - \mathrm{O} ^ {-} + \mathrm{HO} - \underset {\mathrm{O} ^ {-}} {\overset {\mathrm{O}} {\mathrm{As}}} - \mathrm{O} ^ {-} + \mathrm{H} ^ {+}
+$$
+
+On the other hand, acyl phosphates, such as 1,3-bisphosphoglycerate, are more stable and undergo further enzyme-catalyzed transformation in cells.
+
+![](images/68be296e165efda6723da060ec1e929850e95d09b2892cde53ca0aa768c731d0.jpg)
+
+(a) Predict the effect on the net reaction catalyzed by glyceraldehyde 3-phosphate dehydrogenase if phosphate were replaced by arsenate.
+
+(b) What would be the consequence to an organism if arsenate were substituted for phosphate? Arsenate is very toxic to most organisms. Explain why.
+
+11. Requirement for Phosphate in Ethanol Fermentation In 1906 Harden and Young, in a series of classic studies on the fermentation of glucose to ethanol and $\mathrm{CO}_{2}$ by extracts of brewer's yeast, made the following observations: (1) Inorganic phosphate was essential to fermentation; when the supply of phosphate was exhausted, fermentation ceased before all the glucose was used. (2) During fermentation under these conditions (with no phosphate), ethanol, $\mathrm{CO}_{2}$ , and a hexose bisphosphate accumulated. (3) When arsenate was substituted for phosphate, no hexose bisphosphate accumulated, but the fermentation proceeded until all the glucose was converted to ethanol and $\mathrm{CO}_{2}$ .
+
+(a) Why did fermentation cease when the supply of phosphate was exhausted?
+
+(b) Why did ethanol and $CO_{2}$ accumulate? Was the conversion of pyruvate to ethanol and $CO_{2}$ essential? Why? Identify the hexose bisphosphate that accumulated. Why did it accumulate? (c) Why did the substitution of arsenate for phosphate prevent the accumulation of the hexose bisphosphate yet allow fermentation to ethanol and $CO_{2}$ to go to completion? (See Problem 10.)
+
+![](images/86f9ac15f121763f2671acb88657f9d756137600ebfcadd8072532b4045cd820.jpg)
+
+12. Role of the Vitamin Niacin Adults engaged in strenuous physical activity require an intake of about 160 g of carbohydrate daily but only about 20 mg of niacin for optimal nutrition.
+
+Given the role of niacin in glycolysis, how do you explain the observation?
+
+13. Synthesis of Glycerol Phosphate The glycerol 3-phosphate required for the synthesis of glycerophospholipids can be synthesized from a glycolytic intermediate. Propose a reaction sequence for this conversion.
+
+![](images/977ae0f8d90f296ffa17d46eca1d9c6b9d7e41ee4877c30660a90f900da80738.jpg)
+
+14. Severity of Clinical Symptoms Due to Enzyme Deficiency The clinical symptoms of two forms of galactosemia—galactokinase-deficiency galactosemia and transferase-deficiency galactosemia—show radically different severity. Although both types produce gastric discomfort after milk ingestion, deficiency of the transferase also leads to liver, kidney, spleen, and brain dysfunction and eventual death. What products accumulate in the blood and tissues with each type of enzyme deficiency? Estimate the relative toxicities of these products from the above information.
+
+![](images/7209c1300d66e8eb1750c9c0c24739403e456a3d9e61b92e737d17cf7ca0c20a.jpg)
+
+15. Ethanol Affects Blood Glucose Levels The consumption of alcohol (ethanol), especially after periods of strenuous activity or after not eating for several hours, results in a deficiency of glucose in the blood, a condition known as hypoglycemia. The first step in the metabolism of ethanol by the liver is oxidation to acetaldehyde, catalyzed by liver alcohol dehydrogenase:
+
+$$
+\mathrm{CH} _ {3} \mathrm{CH} _ {2} \mathrm{OH} + \mathrm{NAD} ^ {+} \longrightarrow \mathrm{CH} _ {3} \mathrm{CHO} + \mathrm{NADH} + \mathrm{H} ^ {+}
+$$
+
+Explain how this reaction inhibits the transformation of lactate to pyruvate. Why does this lead to hypoglycemia?
+
+16. Blood Lactate Levels during Vigorous Exercise The graph shows the concentrations of lactate in blood plasma before, during, and after a 400 m sprint.
+
+![](images/12466353d2024ea3ac7992a4a18ba0c22dba939edf7b196b0199aebe3a3baee8.jpg)
+
+(a) What causes the rapid rise in lactate concentration?
+
+(b) What causes the decline in lactate concentration after completion of the sprint? Why does the decline occur more slowly than the increase?
+
+(c) Why is the concentration of lactate not zero during the resting state?
+
+![](images/611563a7c44b97f72aa852e8f5e31982517ad8c77772b98febe74cd0d4e26f60.jpg)
+
+17. Relationship between Fructose 1,6-Bisphosphatase and Blood Lactate Levels A congenital defect in the liver enzyme fructose 1,6-bisphosphatase results in abnormally high levels of lactate in the blood plasma. Explain.
+
+![](images/da80325325032661dd785fba4a79e0e1eafc196c66cc37e1af097af8747a15ab.jpg)
+
+18. Effect of $O_{2}$ Supply on Glycolytic Rates The regulated steps of glycolysis in intact cells can be identified by studying the catabolism of glucose in whole tissues or organs. For example, the glucose consumption by heart muscle can be measured by artificially circulating blood through an isolated intact heart and measuring the concentration of glucose before and after the blood passes through the heart. If the circulating blood is deoxygenated, heart muscle consumes glucose at a steady rate. When oxygen is added to the blood, the rate of glucose consumption drops dramatically, then is maintained at the new, lower rate. Explain.
+
+19. Regulation of PFK-1 The graph shows the effect of ATP on the allosteric enzyme PFK-1. For a given concentration of fructose 6-phosphate, the PFK-1 activity increases with increasing concentrations of ATP, but there is a point beyond which increasing the concentration of ATP inhibits the enzyme.
+
+![](images/d7cd8bc845284e61d8f1f87ae926d96f1c08797fd546e03f4c83eca7b8e7c613.jpg)
+
+(a) Explain how ATP can be both a substrate and an inhibitor of PFK-1. How is the enzyme regulated by ATP?
+
+(b) How do ATP levels regulate glycolysis?
+
+(c) The inhibition of PFK-1 by ATP diminishes when the ADP concentration is high, as shown in the graph. What explains this observation?
+
+20. Cellular Glucose Concentration Homeostatic mechanisms maintain the concentration of glucose in human blood at about 5 mm. The concentration of free glucose inside a myocyte is much lower. Why is the concentration so low in the cell? What happens to glucose after entry into the cell? Physicians administer glucose intravenously as a food source in certain clinical situations. Given that the transformation of glucose to glucose 6-phosphate consumes ATP, why not administer intravenous glucose 6-phosphate instead?
+
+21. Ethanol Production in Yeast When grown anaerobically on glucose, yeast (S. cerevisiae) converts pyruvate to acetaldehyde, then reduces acetaldehyde to ethanol using electrons from NADH. Write the equation for the second reaction, and calculate its equilibrium constant at 25 °C, given the standard reduction potentials in Table 13-7.
+
+22. Pathway of Atoms in Fermentation An investigator carries out a "pulse-chase" experiment using $^{14}\mathrm{C}$ -labeled carbon sources on a yeast extract maintained under strictly anaerobic conditions to produce ethanol. The experiment consists of incubating a small amount of $^{14}\mathrm{C}$ -labeled substrate (the pulse) with the yeast extract just long enough for each intermediate in the fermentation pathway to become labeled. The addition of excess unlabeled glucose then "chases" the label through the pathway. The chase effectively prevents any further entry of labeled glucose into the pathway.
+
+(a) If the investigator uses $[1-^{14}C]$ glucose (glucose labeled at C-1 with ${}^{14}C$ ) as a substrate, what is the location of ${}^{14}C$ in the product ethanol? Explain.
+
+![](images/eb4ed722eb5de5dde886b04810f93e338fa59af18cabf511db32bd022616e992.jpg)
+
+(b) Where would ${}^{14}C$ have to be located in the starting glucose to ensure that all the ${}^{14}C$ activity is liberated as ${}^{14}CO_{2}$ during fermentation to ethanol? Explain.
+
+23. Heat from Fermentations Large-scale industrial fermenters generally require constant, vigorous cooling. Why?
+
+24. Fermentation to Produce Soy Sauce Soy sauce preparation involves fermenting a salted mixture of soybeans and wheat with several microorganisms, including yeast, over a period of 8 to 12 months. The resulting sauce (after solids are removed) is rich in lactate and ethanol. How are these two compounds produced? To prevent the soy sauce from having a strong vinegary taste (vinegar is dilute acetic acid), oxygen must be kept out of the fermentation tank. Why?
+
+25. Glucogenic Substrates A common procedure for determining the effectiveness of compounds as precursors of glucose in mammals is to starve the animal until the liver glycogen stores are depleted and then administer the compound in question. A substrate that leads to a net increase in liver glycogen is termed glucogenic, because it must first be converted to glucose 6-phosphate. Show by means of known enzymatic reactions which of these substances are glucogenic:
+
+$$
+\begin{array}{l l} \text {(a) Succinate} & ^ {-} \mathrm{OOC} - \mathrm{CH} _ {2} - \mathrm{CH} _ {2} - \mathrm{COO} ^ {-} \\ \text {(b) Glycerol} & \begin{array}{c c c c} \mathrm{OH} & \mathrm{OH} & \mathrm{OH} \\ | & | & | \\ \mathrm{CH} _ {2} - \mathrm{CH} - \mathrm{CH} _ {2} \end{array} \end{array}
+$$
+
+$$
+\begin{array}{l l} \text {(c) Acetyl - CoA} & \underset {\parallel} {O} \\ & \mathrm{CH} _ {3} - \mathrm{C} - \mathrm{S} - \mathrm{CoA} \\ \text {(d) Pyruvate} & \underset {\parallel} {O} \\ & \mathrm{CH} _ {3} - \mathrm{C} - \mathrm{COO} ^ {-} \\ \text {(e) Butyrate} & \mathrm{CH} _ {3} - \mathrm{CH} _ {2} - \mathrm{CH} _ {2} - \mathrm{COO} ^ {-} \end{array}
+$$
+
+26. Pathway of Atoms in Gluconeogenesis An investigator briefly incubates a liver extract capable of carrying out all the normal metabolic reactions of the liver in separate experiments with two different ${}^{14}$ C-labeled precursors: $[{}^{14}$ C]bicarbonate and $[{}^{14}$ C]pyruvate.
+
+$$
+\begin{array}{l} \text {(a) [ ^ {14}C]Bicarbonate HO-^ {14}C=O^ {-}} \\ \text {(b) [ 1 - ^ {14}C]Pyruvate CH_3-C=O-^ {14}COO^-} \end{array}
+$$
+
+Trace the pathway of each precursor through gluconeogenesis. Indicate the location of ${}^{14}$ C in all intermediates and in the product, glucose.
+
+27. Energy Cost of a Cycle of Glycolysis and Gluconeogenesis What is the cost (in ATP equivalents) of transforming glucose to pyruvate via glycolysis and back again to glucose via gluconeogenesis?
+
+![](images/de5db485578c9317f54ae6a073bc5aa4997a35134ac4d9097461eefff62d0d09.jpg)
+
+28. Relationship between Gluconeogenesis and Glycolysis Why is it important that gluconeogenesis is not the exact reversal of glycolysis?
+
+29. Energetics of the Pyruvate Kinase Reaction Explain in bioenergetic terms how the conversion of pyruvate to phosphoenolpyruvate in gluconeogenesis overcomes the large, negative, standard free-energy change of the pyruvate kinase reaction in glycolysis.
+
+30. Muscle Wasting in Starvation One consequence of starvation is a reduction in muscle mass. What happens to the muscle proteins?
+
+31. Effect of Phloridzin on Carbohydrate Metabolism Phloridzin, a toxic glycoside from the bark of the pear tree, blocks the normal reabsorption of glucose from the kidney tubule, thus causing blood glucose to be almost completely excreted in the urine. In an experiment, rats fed phloridzin and sodium succinate excreted about 0.5 mol of glucose (made by gluconeogenesis) for every 1 mol of sodium succinate ingested. How do rats transform the succinate to glucose? Explain the stoichiometry.
+
+32. Excess $O_{2}$ Uptake during Gluconeogenesis The conversion of lactate to glucose in the liver requires the input of 6 mol of ATP for every mol of glucose produced. Investigators can monitor the extent of this process in a rat liver preparation by administering $[^{14}C]$ lactate and measuring the amount of $[^{14}C]$ glucose produced. Because the stoichiometry of $O_{2}$ consumption and ATP production is known (about 5 ATP per $O_{2}$ ), investigators can predict the extra $O_{2}$ consumption above the normal rate after administering a given amount of lactate. However, when they actually measure extra $O_{2}$ used in the synthesis of glucose from lactate, it is always higher than what the stoichiometric relationships predict. Suggest a possible explanation for this observation.
+
+33. Role of the Pentose Phosphate Pathway If the oxidation of glucose 6-phosphate via the pentose phosphate pathway were being used primarily to generate NADPH for biosynthesis, the other product, ribose 5-phosphate, would accumulate. What problems might this cause?
+
+## DATA ANALYSIS PROBLEM
+
+34. Engineering a Fermentation System Fermentation of plant matter to produce ethanol for fuel is one potential method for reducing the use of fossil fuels and thus the $CO_{2}$ emissions that lead to global warming. Many microorganisms can break down cellulose, then ferment the glucose to ethanol. However, many potential cellulose sources, including agricultural residues and switchgrass, also contain substantial amounts of arabinose, which is not as easily fermented.
+
+![](images/2068a1155b109a1c98b980b0c07828fe4fb7b3ec621560e897b1796ad32d01ae.jpg)
+
+Escherichia coli is capable of fermenting arabinose to ethanol, but it is not naturally tolerant of high ethanol levels, thus limiting its utility for commercial ethanol production. Another bacterium, Zymomonas mobilis, is naturally tolerant of high levels of ethanol but cannot ferment arabinose. Deanda, Zhang, Eddy, and Picataggio (1996) described their efforts to combine the most useful features of these two organisms by introducing the E. coli genes for the arabinose-metabolizing enzymes into Z. mobilis
+
+(a) Why is this a simpler strategy than the reverse: engineering E. coli to be more ethanol-tolerant?
+
+Deanda and colleagues inserted five E. coli genes into the Z. mobilis genome: araA, coding for L-arabinose isomerase, which interconverts L-arabinose and L-ribulose; araB, L-ribulokinase, which uses ATP to phosphorylate L-ribulose at C-5; araD, L-ribulose 5-phosphate epimerase, which interconverts L-ribulose 5-phosphate and L-xylulose 5-phosphate; talB, transaldolase; and tktA, transketolase.
+
+(b) For each of the three ara enzymes, briefly describe the chemical transformation it catalyzes and, where possible, name an enzyme discussed in this chapter that carries out an analogous reaction.
+
+The five E. coli genes inserted in Z. mobilis allowed the entry of arabinose into the nonoxidative phase of the pentose phosphate pathway (Fig. 14-31), where it was converted to glucose 6-phosphate and fermented to ethanol.
+
+(c) The three ara enzymes eventually converted arabinose into which sugar?
+
+(d) The product from part (c) feeds into the pathway shown in Figure 14-31a. Combining the five E. coli enzymes listed above with the enzymes of this pathway, describe the overall pathway for the fermentation of six molecules of arabinose to ethanol.
+
+(e) What is the stoichiometry of the fermentation of six molecules of arabinose to ethanol and $CO_{2}$ ? How many ATP molecules would you expect this reaction to generate?
+
+(f) Z. mobilis uses a pathway for ethanol fermentation that is slightly different from the one described in this chapter. As a result, the expected ATP yield is only 1 ATP per molecule of arabinose. Although this is less beneficial for the bacterium, it is better for ethanol production. Why?
+
+Another sugar commonly found in plant matter is xylose.
+
+![](images/d5d7615524fddadf4d6676d02222374fee4ee19c1863bf193caa1179d2d8f97c.jpg)
+
+(g) What additional enzymes would you need to introduce into the modified Z. mobilis strain described above to enable it to use xylose as well as arabinose to produce ethanol? You don't need to name the enzymes (they may not even exist in the real world); just give the reactions they would need to catalyze.
+
+## Reference
+
+Deanda, K., M. Zhang, C. Eddy, and S. Picataggio. 1996. Development of an arabinose-fermenting Zymomonas mobilis strain by metabolic pathway engineering. Appl. Environ. Microbiol. 62:4465–4470.
+
+# THE METABOLISM OF GLYCOGEN IN ANIMALS
+
+15.1 The Structure and Function of Glycogen 557
+
+15.2 Breakdown and Synthesis of Glycogen 558
+15.3 Coordinated Regulation of Glycogen Breakdown and Synthesis 565
+
+In Chapter 14 we examined universal pathways by which hexoses are metabolized through glycolysis, fermentation, gluconeogenesis, and the pentose phosphate pathways to provide energy and components for the biosynthesis of amino acids, fats, and nucleotides. In this chapter, we focus more narrowly on the metabolism of glycogen, the polymeric storage form of glucose employed by animals. These are the principles that guide our discussion:
+
+P1 Glycogen provides vertebrate animals with a ready source of glucose to supply the brain and skeletal muscles with energy. Although animals store about 100 times more energy as fat than as glycogen, they cannot metabolize fat into glucose. The highly branched polymeric structure of glycogen granules allows cells in the liver and muscle to make large numbers of glucose and glucose phosphate monomers available quickly, without raising the osmolarity of the cytosol by storing them in monomeric form.
+
+P2 Monomers are released from glycogen granules by a phosphorolysis reaction that creates phosphorylated glucose molecules that can enter glycolysis to supply energy to the cell. Skeletal muscle cells especially require stores of glycogen to supply energy for bursts of activity. In the liver, the phosphate can be removed, allowing free glucose to be transported out of the cell to the blood for use in the brain and other tissues when dietary glucose is not sufficient.
+
+P3 Glycogen synthesis requires a protein primer and an activated glucose precursor. Individual glucose molecules activated as sugar nucleotides are added to the nonreducing end of the growing linear chains in the outer tiers of the glycogen $\beta$ -granules, and a branching enzyme adds branches periodically.
+
+P4 Regulation of the balance between the formation of glycogen from excess glucose and the release of glucose from glycogen polymers when it is needed in metabolism is a critical function of cellular and organismal homeostasis. This balance, ultimately controlled by the hormones epinephrine, glucagon, and insulin, is achieved through allosteric regulation and phosphorylation of the synthetic and degradative enzymes. These enzymes, and the regulatory proteins that act on them, are integral parts of the glycogen granule.
+
+Glycogen was discovered in the mid-1800s by Claude Bernard. The French physiologist also found that a liver "ferment" (enzyme) released a reducing sugar from liver tissue. He named this reducing sugar matière glycogène—sugar-forming substance. In the first half of the twentieth century, scientists in laboratories around the world followed up this early work, purifying the "ferments" that synthesize and degrade glycogen and characterizing the regulation of these enzymes by insulin and epinephrine. These studies characterized the enzymes and also uncovered multiple regulatory mechanisms that proved to be universal: second messengers responsive to extracellular signals, protein kinase cascades, and protein phosphorylation, for example. In this chapter, we begin by exploring the structure and function of glycogen particles, describe the pathways of glycogen breakdown and synthesis, and finally, dig into the complex web of regulatory controls that exquisitely deliver the necessary amount of energy from glucose that each organ system requires to function in the moment.
+
+![](images/6e1d5f5f7c4fab9b725ed30ebcb1066220ec21399083fba33638034d81937f3f.jpg)
+
+## 15.1 The Structure and Function of Glycogen
+
+Structure-function relationships are key to understanding biomolecules and biochemical systems, and glycogen is no exception. The compact structure of glycogen granules allows cells to store glucose when it is available in excess, and to make it available on short notice when needed. Subtle tissue-specific differences in the enzymes (isozymes) that act on glycogen determine the dynamics of glycogen metabolism in each tissue.
+
+## Vertebrate Animals Require a Ready Fuel Source for Brain and Muscle
+
+P1 For all vertebrate animals, maintaining a ready supply of glucose for the brain and muscles is a top metabolic priority. The challenge for cells is to be able to store glucose in a form that rapidly sequesters it when the glucose concentration in the blood is high (say, after a meal) but allows it to be accessed quickly for use particularly by the brain and skeletal muscle. Recall from our discussion in Chapter 7 (p. 242) that a typical hepatocyte in the fed state stores an amount of glucose, polymerized as glycogen, that in monomeric form would be equivalent to about 0.4 M. At this concentration, the osmolarity of the cell would be so high relative to the surrounding fluid that water would enter the cell and likely rupture it.
+
+When the diet temporarily provides more carbohydrate than is needed immediately as fuel, excess glucose is polymerized into glycogen. Small amounts of glycogen are present in all animal cells, but it is stored primarily in liver and muscle, where it is a significant portion of the wet weight of the organ (5% to 10% of liver and 1% to 2% of muscle). A 70 kg human stores about 100 g of glycogen in the liver and up to 400 g in skeletal muscle. The total amount of energy stored in the body as glycogen is far less (about 1%) than the amount stored as fat (triacylglycerol), but fats cannot be converted to glucose in vertebrates and cannot be catabolized anaerobically through glycolysis, as is often required in skeletal muscle.
+
+P1 When a sudden burst of physical activity demands a quick source of energy in muscle, the rapid breakdown of glycogen stored there provides glucose for glycolysis within seconds. Between meals or during a fast, the release of glucose from glycogen stored in the liver provides a steady supply of glucose in the blood. This is especially important for the brain, a major consumer of metabolic energy, which, unlike muscle, cannot use fatty acids as fuel; long-chain fatty acids do not cross the blood-brain barrier. The brain therefore depends on a constant supply of glucose, from the diet or from the liver.
+
+## Glycogen Granules Have Many Tiers of Branched Chains of D-Glucose
+
+Glycogen is stored as cytosolic granules, called $\beta$ -granules, that vary in size, structure, and subcellular location depending on the tissue or cell type. (In this chapter we focus on liver and muscle.) The size of $\beta$ -granules also varies with the state of activity and feeding of the animal. In muscle, $\beta$ -granules are 20–30 nm in diameter and have an $M_{\mathrm{r}}$ of $10^{6}-10^{7}$ . They consist of up to 55,000 glucose residues with about 2,000 nonreducing ends available for degradative enzymes to work on. In liver, 20 to 40 $\beta$ -granules cluster together to form protein-rich $\alpha$ -granules as large as 300 nm in diameter and of $M_{\mathrm{r}}$ greater than $10^{8}$ . They are visible with the electron microscope in tissue samples from well-fed animals (Fig. 15-1), but they are essentially absent after a 24-hour fast. The $\beta$ -granules of muscle release glucose more quickly than the $\alpha$ -granules of liver, consistent with the different needs of these tissues for glucose.
+
+![](images/a91ed47c575cb07eee04ec78c4098aa1296fba82ea99893e517b9de3a2badf1e.jpg)  
+FIGURE 15-1 Glycogen granules in a hepatocyte. Glycogen $\beta$ -granules appear as electron-dense particles. In liver they form larger clusters called $\alpha$ -granules and are often associated with tubules of the smooth endoplasmic reticulum. Four mitochondria are also evident in this micrograph. [BCC Microimaging, Reproduced with permission.]
+
+All glycogen granules have at their core a dimer of the protein glycogenin, which serves as a primer for the synthesis of polymers of D-glucose. In the tiered $\beta$ -granule model, the central glycogenin dimer is surrounded by tier upon tier of chains of about 13 glucose residues in $(\alpha1\rightarrow4)$ linkage, with $(\alpha1\rightarrow6)$ -linked branches. Inner B-chains contain two branch points, and outer A-chains are unbranched (Fig. 15-2). Granules typically have 6 or 7 tiers, with the outermost tier of unbranched A-chains making up the majority of the granule. Associated with each $\beta$ -granule are patches of electron-dense, protein-rich material, called $\gamma$ -particles. Among the associated proteins are the enzymes that synthesize and break down glycogen.
+
+The general mechanisms for storing and mobilizing glycogen are the same in muscle and liver, but the enzymes involved differ in subtle yet important ways that reflect the different roles of glycogen in the two tissues. In the next two sections we will look at the enzymatic basis for glycogen synthesis and breakdown, and at the regulation of these processes.
+
+![](images/ebe8bf00a56e275e23a2c788bc5620d1d224adad4cf1bb5142c60b80e37d38ce.jpg)
+
+![](images/5866c80529dad5d08a275fc8f277a97571e269b49d6fa273d60d20b0016c6a55.jpg)  
+FIGURE 15-2 Structure of a glycogen $\beta$ -granule. Starting at a central glycogenin homodimer, glycogen chains (12 to 14 residues) extend in tiers. Inner chains (B-chains) have two ( $\alpha 1 \rightarrow 6$ ) branches each. A-chains in the outer tier are unbranched. There are in theory a maximum of 12 tiers in a mature glycogen $\beta$ -granule (only 5 are shown here), consisting of about 55,000 glucose residues in a molecule of about $21~\mathrm{nm}$ diameter and $M_r \sim 1 \times 10^7$ .
+
+## SUMMARY 15.1 The Structure and Function of Glycogen
+
+■ All cells need ready access to glucose, either from the diet or from supplies stored in cells. Glycogen is a polymeric storage form of glucose in animals that is found primarily in muscle and liver. Glycogen breakdown in muscle delivers glucose needed for muscle contraction. Glycogen stored in the liver provides a reservoir that maintains homeostasis of blood glucose throughout the body.
+
+■ Glycogen $\beta$ -granules have tiers of glucose residues in $(\alpha1\rightarrow4)$ linkage, with $(\alpha1\rightarrow6)$ -linked branches, providing many free nonreducing ends for synthetic and degradative enzymes to access. In liver, $\beta$ -granules cluster into larger $\alpha$ -granules, which release glucose more slowly.
+
+## 15.2 Breakdown and Synthesis of Glycogen
+
+As we saw in Chapter 14 (Fig. 14-9), glycogen obtained in the diet is broken down by $\alpha$ -amylases, hydrolytic enzymes that act in the mouth and gut to convert glycogen to free glucose. (Dietary starch is hydrolyzed in a similar way.) But glycogen stored in cells (endogenous glycogen) is degraded by a different pathway. We begin with the breakdown of cellular glycogen to glucose 1-phosphate (glycogenolysis), then turn to synthesis of glycogen (glycogenesis).
+
+## Glycogen Breakdown Is Catalyzed by Glycogen Phosphorylase
+
+P2 In skeletal muscle and liver, the glucose units of the outer branches of glycogen enter the glycolytic pathway through the action of three enzymes: glycogen phosphorylase, glycogen debranching enzyme, and phosphoglucomutase. Glycogen phosphorylase catalyzes the reaction in which an (α1→4) glycosidic linkage between two glucose residues at a nonreducing end of glycogen undergoes attack by inorganic phosphate (Pi), removing the terminal glucose residue as α-D-glucose 1-phosphate (Fig. 15-3). This phosphorolysis reaction is different from the hydrolysis of glycosidic bonds by amylase during intestinal degradation of dietary glycogen and starch. In phosphorolysis, some of the energy of the glycosidic bond is conserved in the formation of the phosphate ester glucose 1-phosphate.
+
+FIGURE 15-3 Removal of a glucose residue from the nonreducing end of a glycogen chain by glycogen phosphorylase. This process is repetitive; the enzyme removes successive glucose residues, creating a new nonreducing end, until it reaches the fourth glucose unit from a branch point (see Fig. 15-4).  
+![](images/dc0877244963b4e7bfee6918d34f001d1bef39f510471269bd2447c70addf12a.jpg)
+
+Pyridoxal phosphate is an essential cofactor in the glycogen phosphorylase reaction. It is covalently attached near the enzyme active site, where its phosphate group acts as a general acid catalyst, promoting attack by $P_{i}$ on the glycosidic bond. (This is an unusual role for pyridoxal phosphate; its more typical role is as a cofactor in amino acid metabolism; see Fig. 18-6.)
+
+Glycogen phosphorylase acts repetitively on the nonreducing ends of glycogen branches until it reaches a point four glucose residues away from an (α1→6) branch point, where its action stops. Further degradation by glycogen phosphorylase can occur only after the debranching enzyme, formally known as oligo (α1→6) to (α1→4) glucantransferase, catalyzes two successive reactions that transfer branches (Fig. 15-4) to form straight chains. Once these branches are transferred and the glucosyl residue at C-6 is hydrolyzed, glycogen phosphorylase activity can continue.
+
+## Glucose 1-Phosphate Can Enter Glycolysis or, in Liver, Replenish Blood Glucose
+
+Glucose 1-phosphate, the end product of the glycogen phosphorylase reaction, is converted to glucose 6-phosphate by phosphoglucomutase, which catalyzes the reversible reaction:
+
+## Glucose 1-phosphate $\rightleftharpoons$ glucose 6-phosphate
+
+Initially phosphorylated at a Ser residue, the enzyme donates its phosphoryl group to C-6 of the substrate, then accepts a phosphoryl group from C-1 (Fig. 15-5).
+
+![](images/69945dc70f6b417ee13934f813c87e326c05714bbef97c087320efdd0523b90e.jpg)  
+FIGURE 15-4 Glycogen breakdown near an (α1→6) branch point. Following sequential removal of terminal glucose residues by glycogen phosphorylase (see Fig. 15-3), glucose residues near a branch are removed in a two-step process that requires a bifunctional debranching enzyme. First, the transferase activity of the enzyme shifts a block of three glucose residues from the branch to a nearby nonreducing end, to which the segment is reattached in (α1→4) linkage. The single glucose residue remaining at the branch point, in (α1→6) linkage, is then released as free glucose by the (α1→6) glucosidase activity of the debranching enzyme. The glucose residues are shown in shorthand form.
+
+![](images/77407ecb8daff2d176b4cd96ad15756c1ab5b20bf3d12133a24d1578ee3a8a70.jpg)  
+FIGURE 15-5 Reaction catalyzed by phosphoglucomutase. The reaction begins with the enzyme phosphorylated on a Ser residue. In step ①, the enzyme donates its phosphoryl group (blue) to glucose 1-phosphate,  
+producing glucose 1,6-bisphosphate. In step 2, the phosphoryl group at C-1 of glucose 1,6-bisphosphate (red) is transferred back to the enzyme, re-forming the phosphoenzyme and producing glucose 6-phosphate.
+
+![](images/b8f341665115b54ca671265743d9bf3580065723eb04b4bb6844090e25334dd9.jpg)
+
+![](images/87f24ffa00cff52147845a774ddc0bd8adc774cf669bac957c6f4627e6e52627.jpg)
+
+P2 The glucose 6-phosphate formed from glycogen in skeletal muscle can enter glycolysis and serve as an energy source to support muscle contraction. In liver, glycogen breakdown serves a different purpose: to release glucose into the blood when the blood glucose level drops, as it does between meals. This requires the enzyme glucose 6-phosphatase, present in liver and kidney but not in other tissues. The enzyme is an integral protein of the endoplasmic reticulum, with its active site on the lumenal side of the ER. Glucose 6-phosphate formed in the cytosol is transported into the ER lumen by a specific transporter (T1) (Fig. 15-6) and hydrolyzed at the lumenal surface by glucose 6-phosphatase. The resulting $\mathrm{P_i}$ and glucose are carried back into the cytosol by two different transporters (T2 and T3), and the glucose enters the blood via the plasma membrane transporter, GLUT2. Notice that by having the active site of glucose 6-phosphatase in the ER lumen, the cell separates this reaction from the process of glycolysis, which takes place in the cytosol and would be aborted by the action of glucose 6-phosphatase. Genetic defects in either glucose 6-phosphatase or T1 lead to serious derangement of glycogen metabolism, resulting in type Ia glycogen storage disease (Box 15-1).
+
+Because muscle and adipose tissue lack glucose 6-phosphatase, they cannot convert the glucose 6-phosphate formed by glycogen breakdown to glucose, and these tissues therefore do not contribute glucose to the blood.
+
+## The Sugar Nucleotide UDP-Glucose Donates Glucose for Glycogen Synthesis
+
+Many of the reactions in which hexoses are transformed or polymerized involve sugar nucleotides, compounds in which the anomeric carbon of a sugar is activated by attachment to a nucleotide through a phosphate ester linkage. Sugar nucleotides are the substrates for polymerization of monosaccharides into disaccharides, glycogen, starch, cellulose, and more complex extracellular polysaccharides. They are also key intermediates in the production of the aminohexoses and deoxyhexoses found in some of these polysaccharides, and in the synthesis of vitamin C (L-ascorbic acid). The role of sugar nucleotides in the biosynthesis of glycogen and many other carbohydrate derivatives was discovered in 1953 by the Argentine biochemist Luis Leloir.
+
+![](images/5ccb4659379f7eeabb7e86b25982f6ecdf6199f687ec25c18c3aa292e000b14d.jpg)
+
+![](images/1b863be653ea1e01ed451967b4d429f91056bd04aae10d2ecfbff6fc47f01308.jpg)
+
+P3 The suitability of sugar nucleotides for biosynthetic reactions stems from several properties:
+
+1. Their formation is metabolically irreversible, contributing to the irreversibility of the synthetic pathways in which they are intermediates. The condensation of a nucleoside triphosphate with a hexose 1-phosphate to form a sugar nucleotide has a small positive free-energy change, but the reaction releases PP $_{i}$ , which is immediately hydrolyzed by inorganic
+
+![](images/ec58a39dc2635593c04673bae445ab24d70cbae472391fb09c947dec027fe9cd.jpg)  
+FIGURE 15-6 Hydrolysis of glucose 6-phosphate by glucose 6-phosphatase of the liver ER. The catalytic site of glucose 6-phosphatase faces the lumen of the ER. A glucose 6-phosphate (G6P) transporter (T1) carries the  
+substrate from the cytosol to the lumen, where glucose 6-phosphatase releases P $_{i}$ . The products, glucose and P $_{i}$ , pass to the cytosol on specific transporters (T2 and T3). Glucose leaves the cell via the GLUT2 transporter in the plasma membrane.
+
+## Carl and Gerty Cori: Pioneers in Glycogen Metabolism and Disease
+
+Much of what is written in present-day biochemistry textbooks about the metabolism of glycogen was discovered between about 1925 and 1950 by the remarkable husband and wife team of Carl F. Cori and Gerty T. Cori. Both trained in medicine in Europe at the end of World War I (she completed premedical studies and medical school in one year!). They left Europe together in 1922 to establish research laboratories in the United States, first for nine years in Buffalo, New York, at what is now the Roswell Park Comprehensive Cancer Center, then from 1931 until the end of their lives at Washington University in St. Louis.
+
+![](images/e9e3724686dcc9b989190cfd9d4be231b473202cf3680e52ca63ed203014d2e2.jpg)  
+FIGURE 1 The Coris in Gerty Cori's laboratory, around 1947. [AP Images.]
+
+pyrophosphatase (Fig. 15-7), in a reaction that is strongly exergonic ( $\Delta G^{\prime\circ} = -19.2$ kJ/mol). This keeps the cellular concentration of PP $_{i}$ low, ensuring that the actual free-energy change in the cell is favorable. In effect, rapid removal of the product, driven by the large, negative free-energy change of PP $_{i}$ hydrolysis, pulls the synthetic reaction forward. This is a common strategy in biological polymerization reactions.
+
+2. Although the chemical transformations of sugar nucleotides do not involve the atoms of the nucleotide itself, the nucleotide moiety has many groups that can undergo noncovalent interactions with enzymes; the additional free energy of binding can contribute significantly to catalytic activity (Chapter 6; see also p. 294).
+
+In their early physiological studies of the origin and fate of glycogen in animal muscle, the Coris demonstrated the conversion of glycogen to lactate in tissues; movement of lactate in the blood to the liver; and, in the liver, reconversion of lactate to glycogen—a pathway that came to be known as the Cori cycle (see Fig. 23-17). Pursuing these observations at the biochemical level, they showed that glycogen was mobilized in a phosphorolysis reaction catalyzed by the enzyme they discovered, glycogen phosphorylase. They identified the product of this reaction (the "Cori ester") as glucose 1-phosphate and showed that it could be reincorporated into glycogen in the reverse reaction. Although this did not prove to be the reaction by which glycogen is synthesized in cells, it was the first in vitro demonstration of the synthesis of a macromolecule from simple monomeric subunits, and it inspired others to search for polymerizing enzymes. Arthur Kornberg, discoverer of the first DNA polymerase, said of his experience in the Coris's lab, "Glycogen phosphorylase, not base pairing, was what led me to DNA polymerase."
+
+Gerty Cori became interested in human genetic diseases in which too much glycogen is stored in the liver. She was able to identify the biochemical defect in several of these diseases and to show that the diseases could be diagnosed by assays of the enzymes of glycogen metabolism in small samples of tissue obtained by biopsy. Table 1 summarizes what we now know about 13 genetic diseases of this sort.
+
+Carl and Gerty Cori shared the Nobel Prize in Physiology or Medicine in 1947 with Bernardo Houssay of Argentina, who was cited for his studies of hormonal regulation of carbohydrate metabolism. The Cori laboratories in St. Louis became an international center of biochemical research in the 1940s and 1950s, and at least six scientists who trained with the Coris became Nobel laureates: Arthur Kornberg (for DNA synthesis, 1959), Severo Ochoa (for RNA synthesis,
+
+(Continued on next page)
+
+3. Like phosphate, the nucleotidyl group (UDP or ADP, for example) is an excellent leaving group, facilitating nucleophilic attack by activating the sugar carbon to which it is attached.
+
+4. By "tagging" some hexoses with nucleotidyl groups, cells can set them aside in a pool for a particular purpose (glycogen synthesis, for example), separate from hexose phosphates destined for another purpose (such as glycolysis).
+
+Glycogen synthesis takes place in virtually all animal tissues but is especially prominent in the liver and skeletal muscles. The starting point for synthesis of glycogen is glucose 6-phosphate. This can be derived from free glucose in a reaction catalyzed by the isozymes
+
+# Carl and Gerty Cori: Pioneers in Glycogen Metabolism and Disease (Continued)
+
+1959), Luis Leloir (for the role of sugar nucleotides in polysaccharide synthesis, 1970), Earl Sutherland (for the discovery of cAMP in the regulation of carbohydrate metabolism, 1971), Christian de Duve (for subcellular fractionation, 1974), and Edwin Krebs (for the discovery of phosphorylase kinase, 1991).
+
+<table><tr><td colspan="4">TABLE 1 Glycogen Storage Diseases of Humans</td></tr><tr><td>Type (name)</td><td>Enzyme affected</td><td>Primary organ/ cells affected</td><td>Symptoms</td></tr><tr><td>Type 0</td><td>Glycogen synthase</td><td>Liver</td><td>Low blood glucose, high ketone bodies, early death</td></tr><tr><td>Type Ia (von Gierke)</td><td>Glucose 6-phosphatase</td><td>Liver</td><td>Enlarged liver, kidney failure</td></tr><tr><td>Type Ib</td><td>Microsomal glucose 6-phosphate translocase</td><td>Liver</td><td>As in type Ia; also high susceptibility to bacterial infections</td></tr><tr><td>Type Ic</td><td>Microsomal Pi transporter</td><td>Liver</td><td>As in type Ia</td></tr><tr><td>Type II (Pompe)</td><td>Lysosomal glucosidase</td><td>Skeletal and cardiac muscle</td><td>Infantile form: death by age 2; juvenile form: muscle defects (myopathy); adult form: as in muscular dystrophy</td></tr><tr><td>Type IIIa (Cori or Forbes)</td><td>Debranching enzyme</td><td>Liver, skeletal and cardiac muscle</td><td>Enlarged liver in infants; myopathy</td></tr><tr><td>Type IIIb</td><td>Liver debranching enzyme (muscle enzyme normal)</td><td>Liver</td><td>Enlarged liver in infants</td></tr><tr><td>Type IV (Andersen)</td><td>Branching enzyme</td><td>Liver, skeletal muscle</td><td>Enlarged liver and spleen, myoglobin in urine</td></tr><tr><td>Type V (McArdle)</td><td>Muscle phosphorylase</td><td>Skeletal muscle</td><td>Exercise-induced cramps and pain; myoglobin in urine</td></tr><tr><td>Type VI (Hers)</td><td>Liver phosphorylase</td><td>Liver</td><td>Enlarged liver</td></tr><tr><td>Type VII (Tarui)</td><td>Muscle PFK-1</td><td>Muscle, erythrocytes</td><td>As in type V; also hemolytic anemia</td></tr><tr><td>Type VIb, VIII, or IX</td><td>Phosphorylase kinase</td><td>Liver, leukocytes, muscle</td><td>Enlarged liver</td></tr><tr><td>Type XI (Fanconi-Bickel)</td><td>Glucose transporter (GLUT2)</td><td>Liver</td><td>Failure to thrive, enlarged liver, rickets, kidney dysfunction</td></tr></table>
+
+hexokinase I and II in muscle and hexokinase IV (glucokinase) in liver:
+
+Glucose + ATP $\longrightarrow$ glucose 6-phosphate + ADP
+
+However, some ingested glucose takes a more roundabout path to glycogen. It is first taken up by erythrocytes and converted to lactate via glycolysis; the lactate is then taken up by the liver and converted to glucose 6-phosphate by gluconeogenesis.
+
+To start glycogen synthesis, the glucose 6-phosphate is converted to glucose 1-phosphate in the phosphoglucomutase reaction:
+
+$$
+\text {   Glucose   6 - phosphate   } \rightleftharpoons \text {   glucose   1 - phosphate   }
+$$
+
+The product is then converted to UDP-glucose by the action of UDP-glucose pyrophosphorylase, in a key step of glycogen biosynthesis:
+
+Glucose 1-phosphate + UTP $\longrightarrow$ UDP-glucose + PP $_{i}$
+
+Notice that this enzyme is named for the reverse reaction; in the cell, the reaction proceeds in the direction of UDP-glucose formation, because the pyrophosphate concentration is kept low by its immediate hydrolysis by inorganic pyrophosphatase (Fig. 15-7).
+
+P3 UDP-glucose is the immediate donor of glucose residues in the reaction catalyzed by glycogen synthase, which promotes the transfer of the glucose residue from UDP-glucose to a nonreducing end of a branched glycogen
+
+![](images/3b26acebf2c8f0759fec0d025bd2432b4c8c7ec9562f0b6d70cd90e11c078ef2.jpg)  
+Net reaction: Sugar phosphate + NTP $\longrightarrow$ NDP-sugar + 2P $_{i}$
+
+FIGURE 15-7 Formation of a sugar nucleotide. A condensation reaction occurs between a nucleoside triphosphate (NTP) and a sugar phosphate. The negatively charged oxygen on the sugar phosphate serves as a nucleophile, attacking the $\alpha$ phosphate of the nucleoside triphosphate and displacing pyrophosphate. The reaction is pulled in the forward direction by the hydrolysis of PP $_{i}$ by inorganic pyrophosphatase.
+
+molecule, forming an ( $\alpha1\rightarrow4$ ) linkage (Fig. 15-8). The overall equilibrium of the path from glucose 6-phosphate to glycogen lengthened by one glucose unit greatly favors synthesis of glycogen.
+
+Glycogen synthase cannot make the $(\alpha1\rightarrow6)$ bonds found at the branch points of glycogen; these are formed by the glycogen-branching enzyme, also called amylo (1→4) to (1→6) transglycosylase, or glycosyl (4→6) transferase. The glycogen-branching enzyme catalyzes transfer of a terminal fragment of 6 or 7 glucose residues from the nonreducing end of a glycogen branch having at least 11 residues to the C-6 hydroxyl group of a glucose residue at a more interior position of the same or another glycogen chain, thus creating a new branch (Fig. 15-9). Further glucose residues may be added to the new branch by glycogen synthase. The biological effect of branching is to increase the number of nonreducing ends. This increases the number of sites accessible to glycogen phosphorylase and glycogen synthase, both of which act only at nonreducing ends.
+
+## Glycogenin Primes the Initial Sugar Residues in Glycogen
+
+Glycogen synthase cannot initiate a new glycogen chain de novo. It requires a primer, usually a preformed ( $\alpha1\rightarrow4$ ) polyglucose chain. P3 So, how is a new glycogen molecule initiated? The intriguing protein glycogenin (Fig. 15-10) is both the primer on which new chains are
+
+![](images/f493c7f247c75ac0a63cfb01d74f2b227f66dd77ecb7cea96a99effa401caddc.jpg)  
+FIGURE 15-8 Glycogen synthesis. A glycogen chain is elongated by glycogen synthase. The enzyme transfers the glucose residue of UDP-glucose to the nonreducing end of a glycogen branch to make a new ( $\alpha1\rightarrow4$ ) linkage.
+
+![](images/539696d09f84647482b3fa04a291d88aed32304aeab2508d5169f4ddd16be655.jpg)  
+FIGURE 15-9 Branch synthesis in glycogen. The glycogen-branching enzyme forms a new branch point during glycogen synthesis.
+
+![](images/39959e883053b280f08be2511c546aa083b5da2e43f565e5aff6edc65b5205f3.jpg)
+
+FIGURE 15-10 Glycogenin. (a) The protein is a homodimer. The substrate, UDP-glucose, is bound in a region near the amino terminus and is some distance from the Tyr $^{194}$ residues—15 Å from the Tyr in the same monomer, 12 Å from the Tyr in the dimeric partner. Each UDP-glucose is bound through its phosphates to a Mn $^{2+}$ ion, which is essential to catalysis. Mn $^{2+}$ is believed to function as an electron-pair acceptor (Lewis acid) to stabilize the leaving group, UDP. (b) Glycogenin catalyzes two distinct reactions. Initial attack by the hydroxyl group of Tyr $^{194}$ on C-1 of the glucosyl moiety of UDP-glucose results in a glucosylated Tyr residue. The C-1 of another UDP-glucose molecule is now attacked by the C-4 hydroxyl group of the terminal glucose, and this sequence repeats to form a nascent glycogen molecule of eight glucose residues attached by $(\alpha1\rightarrow4)$ glycosidic linkages. [(a) Data from PDB ID 1LL2, B. J. Gibbons et al., J. Mol. Biol. 319:463, 2002.]  
+(b)  
+![](images/93361e0d8cb440464c940ae523afe9d3eec8be79e4e5519f8b48b6a9b1100620.jpg)
+
+![](images/f7a539f7fc7908c2db71fa05b4763c342628e461c0a3b7cd7f9a25e4355f17ab.jpg)

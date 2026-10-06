@@ -1,0 +1,2442 @@
+![](images/588d5fe4578b948e5e0f8516ca6d5d072f028d3f08a8906037f4295b8307c961.jpg)  
+FIGURE 19-6 Method for determining the sequence of electron carriers. This method measures the effects of inhibitors of electron transfer on the oxidation state of each carrier. In the presence of an electron donor  
+and $O_{2}$ , each inhibitor causes a characteristic pattern of oxidized/reduced carriers: those before the block become reduced (blue), and those after the block become oxidized (light red).
+
+order of carriers deduced by this method is NADH → Q → cytochrome b → cytochrome c₁ → cytochrome c → cytochrome a → cytochrome a₃ → O₂. Note, however, that the order of standard reduction potentials is not necessarily the same as the order of actual reduction potentials under cellular conditions, which depend on the concentrations of reduced and oxidized forms (see Eqn 13-5, p. 491). A second method for determining the sequence of electron carriers involves reducing the entire chain of carriers experimentally by providing an electron source but no electron acceptor (no O₂). When O₂ is suddenly introduced into the system, the rate at which each electron carrier becomes oxidized, measured spectroscopically, reveals the order in which the carriers function. The carrier nearest O₂ (at the end of the chain) gives up its electrons first, the second carrier from the end is oxidized next, and so on. Such experiments have confirmed the sequence deduced from standard reduction potentials.
+
+In a final confirmation, agents that inhibit the flow of electrons through the chain have been used in combination with measurements of the degree of oxidation of each carrier. In the presence of $O_{2}$ and an electron donor, carriers that function before the inhibited step become fully reduced, and those that function after this step are completely oxidized (Fig. 19-6). By using several inhibitors that block different steps in the chain, investigators have determined the entire sequence; it is the same as deduced in the first two approaches.
+
+## Electron Carriers Function in Multienzyme Complexes
+
+The electron carriers of the respiratory chain are organized into membrane-embedded supramolecular complexes that can be physically separated. Gentle treatment of the inner mitochondrial membrane with detergents allows the resolution of four unique electron-carrier complexes, each capable of catalyzing electron transfer through a portion of the chain (Fig. 19-7; Table 19-3). P3 Complexes I and II catalyze electron transfer to ubiquinone from two different electron donors: NADH (Complex I) and succinate (Complex II). Complex III carries electrons from reduced ubiquinone to cytochrome c, and Complex IV completes the sequence by transferring electrons from cytochrome c to O₂.
+
+We now look in more detail at the structure and function of each complex of the mitochondrial respiratory chain.
+
+Complex I: NADH to Ubiquinone In mammals, Complex I, also called NADH:ubiquinone oxidoreductase or
+
+<table><tr><td colspan="4">TABLE 19-3 The Protein Components of the Mitochondrial Respiratory Chain</td></tr><tr><td>Enzyme complex/protein</td><td>Mass (kDa)</td><td>Number of subunitsa</td><td>Prosthetic group(s)</td></tr><tr><td>I NADH dehydrogenase</td><td>850</td><td>45 (14)</td><td>FMN, Fe-S</td></tr><tr><td>II Succinate dehydrogenase</td><td>140</td><td>4</td><td>FAD, Fe-S</td></tr><tr><td>III Ubiquinone:cytochrome c oxidoreductaseb</td><td>250</td><td>11</td><td>Hemes, Fe-S</td></tr><tr><td>Cytochrome cc</td><td>13</td><td>1</td><td>Heme</td></tr><tr><td>IV Cytochrome oxidaseb</td><td>204</td><td>13 (3-4)</td><td>Hemes; CuA, CuB</td></tr></table>
+
+Reactions catalyzed by isolated fractions in vitro
+
+![](images/4685cf47a123844ce16407d4c0e9fc6600a5249fb7aeb0f5479e107bf8e8fe7c.jpg)  
+FIGURE 19-7 Separation of functional complexes of the respiratory chain. The outer mitochondrial membrane is first removed by treatment with the detergent digitonin. Fragments of inner membrane are then obtained by osmotic rupture of the membrane, and the fragments are gently dissolved in a second detergent. The resulting mixture of inner membrane proteins is resolved by ion-exchange chromatography into several complexes (I through IV) of the respiratory chain, each with its unique protein composition (see Table 19-3), and the enzyme ATP synthase (sometimes called Comp ex V). The isolated Complexes I through IV catalyze electron transfers between donors (NADH and succinate), intermediate carriers (Q and cytochrome c), and O₂, as shown. In vitro, isolated ATP synthase has only ATP-hydrolyzing (ATPase), not ATP-synthesizing, activity.
+
+NADH dehydrogenase, is a large enzyme composed of 45 different polypeptide chains, including an FMN-containing flavoprotein and at least 8 iron-sulfur centers. Complex I is L-shaped, with one arm embedded in the inner membrane and the other extending into the matrix. Comparative studies of Complex I in bacteria and other organisms show that 7 polypeptides in the membrane arm and 7 in the matrix arm are conserved and essential (Fig. 19-8).
+
+Complex I catalyzes two simultaneous and obligately coupled processes: (1) the exergonic transfer to ubiquinone of a hydride ion from NADH and a proton from the matrix, expressed by
+
+![](images/d6ea67d1c52a177ac22914dd72385a9419c944d727c78ccb3af06edf01a87a0d.jpg)  
+FIGURE 19-8 Structure of Complex I (NADH:ubiquinone oxidoreductase). Complex I catalyzes the transfer of a hydride ion from NADH to FMN. From the FMN, two electrons pass through a series of Fe-S centers to the Fe-S center N-2 in the matrix arm of the complex. Electron transfer from N-2 to ubiquinone on the membrane arm forms $\mathrm{QH}_2$ , which diffuses into the lipid bilayer. The protons travel a path dictated by subunit conformation changes triggered by the electron flow. Proton flux produces an electrochemical potential across the inner mitochondrial membrane (n side negative, p side positive). Three of the membrane subunits (subunits Nqo12, Nqo13, and Nqo14) are structurally related to a known $\mathrm{Na}^+$ - $\mathrm{H}^+$ antiporter, and the path of proton movement may be similar in both cases. The fourth putative proton pathway is through an integral subunit closest to the Q-binding site. A long helix (not visible in this view) lying along the surface of the membrane arm may coordinate the action of all four proton pumps when Q is reduced. [Data from PDB ID 4HEA, R. Baradaran et al., Nature 494:443, 2013.]
+
+$$
+\mathrm{NADH} + \mathrm{H} ^ {+} + \mathrm{Q} \longrightarrow \mathrm{NAD} ^ {+} + \mathrm{QH} _ {2}\tag{19-1}
+$$
+
+and (2) the endergonic transfer of four protons from the matrix to the intermembrane space. Protons are moved against a transmembrane proton gradient in this process. P4 Complex I is therefore a proton pump driven by the energy of electron transfer, and the reaction it catalyzes is vectorial: it moves protons in a specific direction from one location (the matrix, which becomes negatively charged with the departure of protons) to another (the intermembrane space, which becomes positively charged). To emphasize the vectorial nature of the process, the overall reaction is often written with subscripts that indicate the location of the protons: P for the positive side of the inner membrane (the intermembrane space), N for the negative side (the matrix):
+
+$$
+\mathrm{NADH} + 5 \mathrm{H} _ {\mathrm{N}} ^ {+} + \mathrm{Q} \longrightarrow \mathrm{NAD} ^ {+} + \mathrm{QH} _ {2} + 4 \mathrm{H} _ {\mathrm{P}} ^ {+}\tag{19-2}
+$$
+
+Amytal (a barbiturate drug), rotenone (a plant product commonly used as an insecticide), and piericidin A (an antibiotic) inhibit electron flow from the Fe-S centers of Complex I to ubiquinone (Table 19-4) and therefore block the overall process of oxidative phosphorylation.
+
+<table><tr><td colspan="3">TABLE 19-4 Agents That Interfere with Oxidative Phosphorylation</td></tr><tr><td>Type of interference</td><td>Compounda</td><td>Target/mode of action</td></tr><tr><td rowspan="3">Inhibition of electron transfer</td><td>CyanideCarbon monoxide</td><td>Inhibit cytochrome oxidase</td></tr><tr><td>Antimycin A</td><td>Blocks electron transfer from cytochrome b to cytochrome c1</td></tr><tr><td>MyxothiazolRotenoneAmytalPiericidin A</td><td>Prevent electron transfer from Fe-S center to ubiquinone</td></tr><tr><td rowspan="3">Inhibition of ATP synthase</td><td>Aurovertin</td><td>Inhibit F1</td></tr><tr><td>OligomycinVenturicidin</td><td>Inhibit Fo</td></tr><tr><td>DCCD</td><td>Blocks proton flow through Fo</td></tr><tr><td rowspan="3">Uncoupling of phosphorylation fromelectron transfer</td><td>FCCPDNP</td><td>Hydrophobic proton carriers</td></tr><tr><td>Valinomycin</td><td>K+ionophore</td></tr><tr><td>Uncoupling protein 1</td><td>In brown adipose tissue, forms proton-conducting pores ininner mitochondrial membrane</td></tr><tr><td>Inhibition of ATP-ADP exchange</td><td>Atractyloside</td><td>Inhibits adenine nucleotide translocase</td></tr></table>
+
+$^{a}$ DCCD, dicyclohexylcarbodiimide; FCCP, cyanide-p-trifluoromethoxyphenylhydrazone; DNP, 2,4-dinitrophenol.
+
+Three of the seven integral protein subunits of the membrane arm are related to a $Na^{+}-H^{+}$ antiporter and are believed to be responsible for pumping three protons; a fourth subunit in the membrane arm, that nearest the Q-binding site, is probably responsible for pumping the fourth proton (Fig. 19-8).
+
+How is the reduction of ubiquinone coupled to proton pumping? Reduction of Q occurs far away from the membrane arm of the protein, where proton pumping occurs, so the coupling is clearly indirect. The high-resolution view of Complex I from crystallographic and cryo-EM studies suggests that reduction of Q is coupled to a long-range conformational change conducted to all subunits along the hydrophilic core of the transmembrane arm. It seems likely that all four protons are pumped simultaneously, so that the energy from a strongly exergonic reaction (Q reduction) is broken into smaller packets, a common strategy employed by living organisms.
+
+Complex II: Succinate to Ubiquinone We encountered Complex II in Chapter 16 as succinate dehydrogenase, the only membrane-bound enzyme in the citric acid cycle (p. 586). P3 Complex II couples the oxidation of succinate at one site with the reduction of ubiquinone at another site about 40 Å away. Although smaller and simpler than Complex I, Complex II contains five prosthetic groups of two types and four different protein subunits (Fig. 19-9). Subunits C and D are integral membrane proteins, each with three transmembrane helices. They contain a heme
+
+## Intermembrane space (P side)
+
+![](images/85a814134cd78924db0fd80f2caea8da6c1512ffe24bd04a2b22f5ecb269d87a.jpg)  
+FIGURE 19-9 Structure of Complex II (succinate dehydrogenase). This complex (porcine) has two transmembrane subunits, C and D; subunits A and B extend into the matrix. Just behind the FAD in subunit A is the binding site for succinate. Subunit B has three Fe-S centers, ubiquinone is bound to subunit B, and heme b is sandwiched between subunits C and D. Two phosphatidylethanolamine molecules are so tightly bound to subunit D that they show up in the crystal structure. Electrons move (blue arrows) from succinate to FAD, then through the three Fe-S centers to ubiquinone. The heme b is not on the main path of electron transfer but protects against the formation of reactive oxygen species (ROS) by electrons that go astray. [Data from PDB ID 1ZOY, F. Sun et al., Cell 121:1043, 2005.]
+
+![](images/8dbfe2f764ab23fb1298e60f268a7b054e691406efe3e643e4b0ae69af30a7f6.jpg)
+
+group, heme b, and a binding site for Q, the final electron acceptor in the reaction catalyzed by Complex II. Subunits A and B extend into the matrix; they contain three 2Fe-2S centers, bound FAD, and a binding site for the substrate, succinate. Although the overall path of electron transfer is long (from the succinate-binding site to FAD, then through the Fe-S centers to the Q-binding site), none of the individual electron-transfer distances exceeds about 11 Å—a reasonable distance for rapid electron transfer (Fig. 19-9). Electron transfer through Complex II is not accompanied by proton pumping across the inner membrane, although the $QH_{2}$ produced by succinate oxidation will be used by Complex III to drive proton transfer. Because Complex II functions in the citric acid cycle, factors that affect its activity (such as the availability of oxidized Q) probably serve to coordinate that cycle with mitochondrial electron transfer.
+
+![](images/15039d7d592070a6e7843c2af56ae6c2f2be216f6fcf9e57917fe92dad27e84a.jpg)
+
+The heme b of Complex II is apparently not in the direct path of electron transfer; it serves instead to reduce the frequency with which electrons “leak” out of the system, moving from succinate to molecular oxygen to produce the reactive oxygen species (ROS) hydrogen peroxide ( $H_{2}O_{2}$ ) and the superoxide radical ( $^{\bullet}O_{2}^{-}$ ), as described below. Some individuals with point mutations in Complex II subunits near heme b or the ubiquinone-binding site suffer from hereditary paraganglioma, characterized by benign tumors of the head and neck, commonly in the carotid body, an organ that senses $O_{2}$ levels in the blood. These mutations result in greater production of ROS, which cause DNA damage and genome instability that can lead to cancer. Mutations that affect the succinate-binding region in Complex II may lead to degenerative changes in the central nervous system, and some mutations are associated with tumors of the adrenal medulla.
+
+Complex III: Ubiquinone to Cytochrome c Electrons from reduced ubiquinone (ubiquinol, $QH_{2}$ ) pass through two more large protein complexes in the inner mitochondrial membrane before reaching the ultimate electron acceptor, $O_{2}$ . P3 P4 Complex III (also called cytochrome $bc_{1}$ complex or ubiquinone:cytochrome c oxidoreductase) couples the transfer of electrons from ubiquinol to cytochrome c with the vectorial transport of protons from the matrix to the intermembrane space. The functional unit of Complex III (Fig. 19-10) is a dimer. Each monomer consists of three proteins central to the action of the complex: cytochrome b, cytochrome $c_{1}$ , and the Rieske iron-sulfur protein. (Several other proteins associated with Complex III in vertebrates are not conserved across the phyla and presumably play subsidiary roles.) The two cytochrome b monomers surround a cavern in the middle of the membrane, in which ubiquinone is free to move from the matrix side of the membrane (site $Q_{N}$ on one monomer) to the intermembrane space (site $Q_{P}$ on the other monomer) as it shuttles electrons and protons across the inner mitochondrial membrane.
+
+To account for the role of Q in energy conservation, Mitchell proposed the Q cycle (Fig. 19-11). As electrons move from $QH_{2}$ through Complex III, $QH_{2}$ is oxidized with the release of protons on one side of the membrane (at $Q_{P}$ ), while at the other site ( $Q_{N}$ ), Q is reduced and protons are taken up.
+
+![](images/6d8cec1c0bcf36b2af433a96f9691eb825055cbcebd71347f376ebc213f1bef0.jpg)  
+FIGURE 19-10 Structure of Complex III (cytochrome bc₁ complex). The complex (bovine) is a dimer of identical monomers, each with 11 different subunits. The functional core of each monomer consists of three subunits: cytochrome b (green), with its two hemes (bₕ and bₗ); the Rieske iron-sulfur protein (purple), with its 2Fe-2S centers; and cytochrome c₁ (blue), with its heme. Cytochrome c₁ and the Rieske iron-sulfur protein project from the P surface and can interact with cytochrome c (not part of the functional complex) in the intermembrane space. The complex has two distinct binding sites for ubiquinone, Qₙ and Qₚ, which correspond to the sites of inhibition by two drugs that block oxidative phosphorylation. Antimycin A, which blocks electron flow from cytochrome b to cytochrome c₁, specifically from heme bₕ to Q, binds at Qₙ, close to heme bₕ on the n (matrix) side of the membrane. Myxothiazol, which prevents electron flow from QH₂ to the Rieske iron-sulfur protein, binds at Qₚ, near the 2Fe-2S center and heme bₗ on the P side. The dimeric structure is essential to the function of Complex III. The interface between monomers forms two caverns, each containing a Qₚ site from one monomer and a Qₙ site from the other. The ubiquinone intermediates move within these sheltered caverns. [Data from PDB ID 1BGY, S. Iwata et al., Science 281:64, 1998.]
+
+The Q cycle is most easily understood as occurring in two stages, with two active sites where ubiquinone is either oxidized or reduced. In both stages, one $QH_{2}$ is oxidized at active site 1, shedding two $H^{+}$ and two electrons. The protons are released into the intermembrane space. The two electrons take different paths, with one reducing cytochrome c and the other reducing a molecule of Q at active site 2. Two electrons are required at active site 2 to fully reduce the Q to $QH_{2}$ , one in each stage. Reducing one Q at one site while oxidizing two $QH_{2}$ at another may seem counterproductive at first glance. However, the two processes have complementary functions. The oxidation of two $QH_{2}$ is moving four protons to the intermembrane space and two electrons to cytochrome c. At the same time, the reduction of Q at the other site (using the other two electrons from the oxidation of $QH_{2}$ at site 1) is pulling protons from the matrix, creating a net movement of protons from the matrix to the intermembrane space. The $QH_{2}$ produced at active site 2 becomes a substrate for oxidation at active site 1 in subsequent turns of the cycle, and vice versa. The net equation for the redox reactions of the Q cycle is
+
+![](images/aa45c0a428c7079c01ab7410565fbe937e6adf77efbab51529a8db534a964725.jpg)
+
+![](images/c90353cbb4026740615adbdae0d94c998e80b60fc08cd129f775a1dd3ac24b1f.jpg)  
+FIGURE 19-11 The Q cycle, shown in two stages. The path of electrons through Complex III is shown with blue arrows; the movement of various forms of ubiquinone, with black arrows. (a) In the first stage, Q on the N side is reduced to the semiquinone radical, which moves back into position (dotted line) to accept another electron. (b) In the second stage, the semiquinone radical is converted to $\mathrm{QH}_2$ . Meanwhile, on the P side of the membrane, two molecules of $\mathrm{QH}_2$ are oxidized to Q, releasing two protons per Q molecule (four protons in all) into the intermembrane space. Each $\mathrm{QH}_2$ donates  
+one electron (via the Rieske Fe-S center) to cytochrome $c_{1}$ , and one electron (via cytochrome b) to a molecule of Q near the N side, reducing it in two steps to $QH_{2}$ . This reduction also consumes two protons per Q, which are taken up from the matrix (N side). Reduced cytochrome $c_{1}$ passes electrons one at a time to cytochrome c, which dissociates and carries electrons to Complex IV. In each cycle, one reduction of Q at the $Q_{N}$ site is coupled with two oxidations of $QH_{2}$ at the $Q_{p}$ site by consuming two protons from the matrix and releasing four protons into the intermembrane space.
+
+$$
+\begin{array}{r l} \mathrm {Q H _ {2}} + 2 \text {cyt} c (\text {oxidized}) + 2 \mathrm {H_ {N} ^ {+}} & \longrightarrow \\ \mathrm{Q} + 2 \text {cyt} c (\text {reduced}) + 4 \mathrm {H_ {P} ^ {+}} \end{array}\tag{19-3}
+$$
+
+The Q cycle accommodates the switch between the two-electron carrier ubiquinol (the reduced form of ubiquinone) and the one-electron carriers—hemes $b_{L}$ and $b_{H}$ of cytochrome b, and cytochromes $c_{1}$ and c—and results in the uptake of two protons on the N side and the release of four protons on the P side, per pair of electrons passing through Complex III to cytochrome c. Two of the protons released on the P side are electrogenic; the other two are electroneutral, balanced by the two charges (electrons) passed to cytochrome c on the P side. Although the path of electrons through this segment of the respiratory chain is complicated, the net effect of the transfer is simple: $QH_{2}$ is oxidized to Q, two molecules of cytochrome c are reduced, and two protons are moved from the N side to the P side of the inner mitochondrial membrane.
+
+Cytochrome c is a soluble protein of the intermembrane space, which associates reversibly with the P side of the inner membrane. After its single heme accepts an electron from Complex III, cytochrome c moves in the intermembrane space to Complex IV to donate the electron to a binuclear copper center.
+
+Complex IV: Cytochrome c to $O_{2}$ . In the final step of the respiratory chain, Complex IV, also called cytochrome oxidase, carries electrons from cytochrome c to molecular oxygen, reducing it to $H_{2}O$ . P3 P4 Complex IV is a large, dimeric enzyme of the inner mitochondrial membrane, each monomer having 13 subunits and $M_{r}$ of 204,000. Bacteria contain a form that is much simpler, with only 3 or 4 subunits per monomer, but still capable of catalyzing both electron transfer and proton pumping. Comparison of the mitochondrial and bacterial complexes suggests that these 3 subunits have been conserved in evolution; in multicellular organisms, the other 10 subunits contribute to the assembly or stability of Complex IV (Fig. 19-12).
+
+Subunit II of Complex IV contains two Cu ions complexed with the —SH groups of two Cys residues in a binuclear center (Cu $_{A}$ ; Fig. 19-12b) that resembles the 2Fe-2S centers of iron-sulfur proteins. Subunit I contains two heme groups, designated $a$ and $a_{3}$ , and another copper ion (Cu $_{B}$ ). Heme $a_{3}$ and Cu $_{B}$ form a second binuclear center that accepts electrons from heme a and transfers them to $O_{2}$ bound to heme $a_{3}$ . The detailed role of subunit III is not clear, but its presence is essential to Complex IV function.
+
+![](images/e9a36fa1232a07dcc7dd54222bf9d2ff20da84f77a92723421597b542526b3e0.jpg)
+
+![](images/9f439a667a3fd834abb5c9b787411c3e3d25873f14b2db045e4f067358a3258f.jpg)
+
+![](images/e2b2133a6ebb6ac1b1164b7e2e27539ea399a942d7d5b5cb762926872bec33fe.jpg)  
+FIGURE 19-12 Structure of Complex IV (cytochrome oxidase). (a) This complex (bovine) has 13 subunits in each identical monomer of its dimer c structure. Subunit I has two heme groups, a and $a_{3}$ , near a single copper ion, $Cu_{B}$ (not visible here). Heme $a_{3}$ and $Cu_{B}$ form a binuclear Fe-Cu center. Subunit II contains two Cu ions complexed with the —SH groups of two Cys residues in a binuclear center, $Cu_{A}$ , that resembles the 2Fe-2S centers of iron-sulfur proteins. This binuclear center and the cytochrome c-binding site are located in a domain of subunit II that protrudes from the P side of the inner membrane (into the intermembrane space). Subunit III is essential for rapid proton movement through subunit II. The roles of the other 10 subunits in mammalian Complex IV are not fully understood, although some function in assembly or stabilization of the complex. (b) The binuclear center of $Cu_{A}$ . The Cu ions (blue spheres) share electrons equally. When the center is reduced, the ions have the formal charges $Cu^{1+}Cu^{1+}$ ; when oxidized, $Cu^{1.5+}Cu^{1.5+}$ . Six amino acid residues are ligands around the Cu ions: Glu, Met, two His, and two C/S. [Data from PDB ID 10CC, T. Tsukihara et al., Science 272:1136, 1996.]
+
+Electron transfer through Complex IV is from cytochrome c to the $Cu_{A}$ center, to heme a, to the heme $a_{3}-Cu_{B}$ center, and finally to $O_{2}$ (Fig. 19-13a). For every four electrons passing through this complex, the enzyme consumes four “substrate” $H^{+}$ from the matrix (N side) in converting $O_{2}$ to two $H_{2}O$ . It also uses the energy of this redox reaction to pump four protons outward into the intermembrane space (P side) for each four electrons that pass through, adding to the electrochemical potential produced by redox-driven proton transport through Complexes I and III. The overall reaction catalyzed by Complex IV is
+
+4 cyt c (reduced) + 8H $_{N}^{+}$ + O $_{2}$ →
+
+$$
+4 \mathrm{cyt} c (\text {oxidized}) + 4 \mathrm{H} _ {\mathrm{P}} ^ {+} + 2 \mathrm{H} _ {2} \mathrm{O}\tag{19-4}
+$$
+
+![](images/ab614a92e5eac97fa69d9d03f9d2b8176ede19ece5dae71cda411bdc8dc403d2.jpg)  
+(b)  
+FIGURE 19-13 Path of electrons through Complex IV. (a) For simplicity, only one monomer of the dimeric bovine Complex IV is shown. The three proteins critical to electron flow are subunits I, II, and III. The larger green structure includes the other 10 proteins in each monomer of the dimeric complex. Electron transfer through Complex IV begins with cytochrome c (top). Two molecules of reduced cytochrome c each donate an electron to the binuclear center CuA. From here, electrons pass through heme a to the Fe-Cu center (heme $a_{3}$ and $Cu_{\beta}$ ). Oxygen now binds to heme $a_{3}$ and is reduced to its peroxy derivative ( $O_{2}^{2-}$ ; not shown here) by two electrons from the Fe-Cu center. Delivery of two more electrons from cytochrome c (top), for a total of four electrons, converts the $O_{2}^{2-}$ to two molecules of water, with consumption of four "substrate" protons from the matrix. At the same time, four protons are pumped from the matrix for every four electrons passing through Complex IV. A simplified reaction sequence is presented in (b). Intermediate complexes O, R, A, $P_{R}$ , F, and H represent only a prominent subset of the species for which there is experimental evidence, with some steps and intermediate structures still being debated. The four electrons are introduced in separate steps, and $H_{2}O$ is released in two separate steps.
+
+Note that the $O_{2}$ in this reaction is the final acceptor for electrons originating from the many sources already described, and the stoichiometries between electron sources and $O_{2}$ molecules consumed help to define the energetics of the systems. In this chapter, stoichiometries are sometimes presented, as here, in terms of one molecule of $O_{2}$ . For calculation simplicity, the stoichiometries will be presented in terms of $\frac{1}{2}O_{2}$ in some examples to come.
+
+At Complex IV, $O_{2}$ is reduced at redox centers that carry only one electron at a time. A reaction scheme is presented in Figure 19-13b. Normally the incompletely reduced oxygen intermediates remain tightly bound to the complex until completely converted to water. However, a small fraction of oxygen intermediates escape. These intermediates are reactive oxygen species that can damage cellular components unless eliminated by defense mechanisms described below.
+
+## Mitochondrial Complexes Associate in Respirasomes
+
+Although the four electron-transferring complexes can be separated in the laboratory, in the intact mitochondrion, three of the four respiratory complexes associate with each other in the inner membrane. Combinations of Complexes I and III, III and IV, and I, III, and IV are formed in organisms ranging from yeast to plants to mammals. The supercomplex containing Complexes I, III, and IV has been called the respirasome. Unlike the other three complexes, Complex II is generally found free-floating within the membrane. Structural characterization of the various supercomplexes has been advanced by cryo-EM (Fig. 19-14). The functional significance of supercomplexes has not been determined. Researchers have suggested that they may facilitate electron transfers or limit the production of reactive oxygen species. Local pools of the electron carriers cytochrome c and ubiquinone are not constrained within supercomplexes, but instead readily diffuse between them.
+
+## Other Pathways Donate Electrons to the Respiratory Chain via Ubiquinone
+
+Several other electron-transfer reactions can reduce ubiquinone in the inner mitochondrial membrane (Fig. 19-15). In the first step of the $\beta$ oxidation of fatty acyl-CoA, catalyzed by the flavoprotein acyl-CoA dehydrogenase (see Fig. 17-8), electrons pass from the substrate to the FAD of the dehydrogenase, then to electron-transferring flavoprotein (ETF). ETF passes its electrons to ETF: ubiquinone oxidoreductase, which reduces Q in the inner mitochondrial membrane to $\mathrm{QH}_2$ . Glycerol 3-phosphate, formed either from glycerol released by triacylglycerol breakdown or from the reduction of dihydroxyacetone phosphate from glycolysis, is oxidized by glycerol 3-phosphate dehydrogenase (see Fig. 17-4), a flavoprotein located on the outer face of the inner mitochondrial membrane. The electron acceptor in this reaction is Q; the $\mathrm{QH}_2$ produced enters the pool of $\mathrm{QH}_2$ in the membrane. The important role of glycerol 3-phosphate dehydrogenase in shuttling reducing equivalents from cytosolic NADH into the mitochondrial matrix is described in Section 19.2 (see Fig. 19-32). Dihydroorotate dehydrogenase, which acts in the synthesis of pyrimidines (see Fig. 22-38), is also on the outside of the inner mitochondrial membrane and donates electrons to Q in the respiratory chain. The reduced $\mathrm{QH}_2$ passes its electrons through Complex III and ultimately to $\mathrm{O}_2$ .
+
+![](images/f4e978eeb385dbe8dd11c17abecda90a12e010483659464e0150afba0ce0ea0f.jpg)
+
+![](images/977efa15c4ac2160c4caacd2510441ce1531b7a5b4fde5091821b8b2deadc8a1.jpg)
+
+![](images/c470a1e72cf9b3cbd9d4277b41ac02c05639bb8d75270680959a0b635b369b90.jpg)  
+FIGURE 19-14 A respirasome composed of Complexes I, III, and IV. (a) Purified supercomplexes containing Complexes III and IV (from yeast), as determined by cryo-EM. (b) The structure of a respirasome composed of mammalian (porcine and bovine) Complexes I, III, and IV. Two views are shown. [Data from (a) PDB ID 6GIQ, S. Rathore et al., Nat. Struct Mol. Biol. 26:50, 2019; (b) PDB ID 5GPN, J. Gu et al., Nature 537:639, 2016.]
+
+![](images/53e55900aeddd33c0c4f85b52109c94f925228d3eccbc2a24f62c94623e3a059.jpg)  
+FIGURE 19-15 Paths of electron transfer to ubiquinone in the respiratory chain. Electrons from NADH in the matrix pass through the FMN cf a flavoprotein (NADH dehydrogenase) to a series of Fe-S centers (in Complex I) and then to Q. Electrons from succinate oxidation in the citric acid cycle pass through a flavoprotein with several Fe-S centers (Complex II) on the way to Q. Acyl-CoA dehydrogenase, the first enzyme of fatty acid $\beta$ oxidation, transfers electrons to electron-transferring flavoprotein (ETF), from which they pass to Q via ETF:ubiquinone oxidoreductase. Dihyd oorotate, an intermediate in the biosynthetic pathway to pyrimidine nucleotides, donates two electrons to Q through a flavoprotein (dihydroorotate dehydrogenase). And glycerol 3-phosphate, an intermediate of glycolysis in the cytosol, donates electrons to a flavoprotein (glycerol 3-phosphate dehydrogenase) on the outer face of the inner mitochondrial membrane, from which they pass to Q. $\mathrm{QH}_2$ freely diffuses through the membrane (black dashed arrow), and can interact with several additional complexes.
+
+## The Energy of Electron Transfer Is Efficiently Conserved in a Proton Gradient
+
+The transfer of two electrons from NADH through the respiratory chain to molecular oxygen can be summarized as
+
+![](images/4f89ab9f8a81225676dfd23fc71193edad271e7881e4ff07785d38684922d719.jpg)
+
+$$
+2 \mathrm{NADH} + 2 \mathrm{H} ^ {+} + \mathrm{O} _ {2} \longrightarrow 2 \mathrm{NAD} ^ {+} + 2 \mathrm{H} _ {2} \mathrm{O}\tag{19-5}
+$$
+
+This net reaction is highly exergonic. For the redox pair $NAD^{+}/NADH$ , $E^{\prime\circ}$ is -0.320 V, and for the pair $O_{2}/H_{2}O$ , $E^{\prime\circ}$ is 0.816 V. The $\Delta E^{\prime\circ}$ for this reaction is therefore 1.14 V, and the standard free-energy change (see Eqn 13-7, p. 492) is
+
+$$
+\begin{array}{r l} \Delta G ^ {\prime \circ} & = - n F \Delta E ^ {\prime \circ} \\ & = - 2 (9 6. 5 \mathrm{kJ/V} \bullet \mathrm{mol}) (1. 1 4 \mathrm{V}) \\ & = - 2 2 0 \mathrm{kJ/mol} (\text {of NADH}) \end{array}\tag{19-6}
+$$
+
+This standard free-energy change is based on the assumption of equal concentrations (1 M) of NADH and $NAD^{+}$ . In actively respiring mitochondria, the actions of many dehydrogenases keep the actual $[NADH]/[NAD^{+}]$ ratio well above unity, and the real free-energy change for the reaction shown in Equation 19-5 is therefore substantially greater (more negative) than -220 kJ/mol. A similar calculation for the oxidation of succinate shows that electron transfer from succinate ( $E^{\circ}$ for fumarate/succinate = 0.031 V) to $O_{2}$ has a smaller, but still negative, standard free-energy change of about -150 kJ/mol.
+
+Much of this energy is used to pump protons out of the matrix. For each pair of electrons transferred to $O_{2}$ , four protons are pumped out by Complex I, four by Complex III, and two by Complex IV (Fig. 19-16). The vectorial equation for the process is therefore
+
+$$
+2 \mathrm{NADH} + 2 2 \mathrm{H} _ {\mathrm{N}} ^ {+} + \mathrm{O} _ {2} \longrightarrow 2 \mathrm{NAD} ^ {+} + 2 0 \mathrm{H} _ {\mathrm{P}} ^ {+} + 2 \mathrm{H} _ {2} \mathrm{O}\tag{19-7}
+$$
+
+![](images/c5db7dd37ab34ddbd1aaa916c38fbd3ff52b48f5b6dcf3a26dd83d7dc5274159.jpg)  
+FIGURE 19-16 Summary of the flow of electrons and protons through the four complexes of the respiratory chain. Electrons reach Q through Complexes I and II (as well as through several other paths shown in Fig. 19-15). Reduced Q(QH₂) serves as a mobile carrier of electrons and protons. It passes electrons to Complex III, which passes them to another mobile connecting link, cytochrome c. Complex IV then transfers electrons from reduced cytochrome c to O₂. Electron flow through Complexes I, III, and IV is accompa-  
+nied by proton efflux from the matrix into the intermembrane space. In bovine heart, the approximate ratios of Complexes I:II:III:IV are 1.1:1.3:3.0:6.7. Broken lines indicate the diffusion of Q in the plane of the inner membrane, and of cytochrome c through the intermembrane space. [Data from Complex I: PDB ID 4HEA, R Baradaran et al., Nature 494:443, 2013; Complex II: PDB ID 1ZOY, F. Sun et al., Cell 121:1043, 2005; Complex III: PDB ID 1BGY, S. Iwata et al., Science 281:64, 1998; cytochrome c: PDB ID 1HRC, G. W. Bushnell et al., J. Mol. Biol. 214:585, 1990; Complex IV: PDB ID 1OCC, T. Tsukihara et al., Science 272:1136, 1996.]
+
+![](images/99863cc56a1ca73c659f66aa2f6dff132631acd93a46032c8767888caa154587.jpg)  
+FIGURE 19-17 Proton-motive force. The inner mitochondrial membrane separates two compartments of different $\left[\mathrm{H}^{+}\right]$ , resulting in differences in chemical concentration $(\Delta \mathrm{pH})$ and charge distribution $(\Delta \psi)$ across the membrane. The net effect is the proton-motive force $(\Delta G)$ , which can be calculated as shown here.
+
+P4 The electrochemical energy inherent in this difference in proton concentration and separation of charge represents a temporary conservation of much of the energy of electron transfer. The energy stored in such a gradient, termed the proton-motive force, has two components: (1) the chemical potential energy due to the difference in concentration of a chemical species (H $^{+}$ ) in the two regions separated by the membrane, and (2) the electrical potential energy that results from the separation of charge when a proton moves across the membrane without a counterion (Fig. 19-17).
+
+As we saw in Chapter 11, the free-energy change for the creation of an electrochemical gradient by an ion pump is
+
+$$
+\Delta G = R T \ln (C _ {2} / C _ {1}) + Z F \Delta \psi\tag{19-8}
+$$
+
+where $C_{2}$ and $C_{1}$ are the concentrations of an ion in two regions, and $C_{2} > C_{1}$ ; Z is the absolute value of its electrical charge (1 for a proton); and $\Delta\psi$ is the transmembrane difference in electrical potential, measured in volts.
+
+For protons,
+
+$$
+\begin{array}{r l} \ln (C _ {2} / C _ {1}) & = 2. 3 (\log [ \mathrm{H} ^ {+} ] _ {\mathrm{P}} - \log [ \mathrm{H} ^ {+} ] _ {\mathrm{N}}) \\ & = 2. 3 (\mathrm{pH} _ {\mathrm{N}} - \mathrm{pH} _ {\mathrm{P}}) = 2. 3 \Delta \mathrm{pH} \end{array}
+$$
+
+and Equation 19-8 reduces to
+
+$$
+\Delta G = 2. 3 R T \Delta \mathrm{pH} + F \Delta \psi\tag{19-9}
+$$
+
+In actively respiring mitochondria, the measured $\Delta\psi$ is 0.15 to 0.20 V, and the pH of the matrix is about 0.75 units more alkaline than that of the intermembrane space.
+
+## WORKED EXAMPLE 19-1 Energetics of Electron Transfer
+
+Calculate the amount of energy conserved in the proton gradient across the inner mitochondrial membrane per pair of electrons transferred through the respiratory chain from NADH to oxygen. Assume $\Delta\psi$ is 0.15 V and the pH difference is 0.75 unit at body temperature of 37 $^{\circ}$ C.
+
+SOLUTION: Equation 19-9 gives the free-energy change when one mole of protons moves across the inner membrane. Substituting the values of the constants R and F, 310 K for T, and the measured values for $\Delta pH$ (0.75 unit) and $\Delta \psi$ (0.15 V) in this equation gives $\Delta G = 19$ kJ/mol (of protons). Because the transfer of two electrons from NADH to $O_{2}$ is accompanied by the outward pumping of 10 protons (Eqn 19-7), roughly 190 kJ (of the 220 kJ released by oxidation of 1 mol of NADH) is conserved in the proton gradient.
+
+When protons flow spontaneously down their electrochemical gradient, energy is made available to do work. In mitochondria, chloroplasts, and aerobic bacteria, the electrochemical energy in the proton gradient drives the synthesis of ATP from ADP and $P_{i}$ . We return to the energetics and stoichiometry of ATP synthesis driven by the electrochemical potential of the proton gradient in Section 19.2.
+
+## Reactive Oxygen Species Are Generated during Oxidative Phosphorylation
+
+Several steps in the path of oxygen reduction in mitochondria have the potential to produce reactive oxygen species (superoxide, hydrogen peroxide, and hydroxyl radicals) that can damage cells. Some intermediates in the electron-transfer system, such as the partially reduced ubisemiquinone, can react directly with oxygen to form the superoxide radical ( $^{\bullet}Q^{-}$ ) as an intermediate. The $^{\bullet}Q^{-}$ radical is formed when a single electron is passed to $O_{2}$ in the reaction
+
+$$
+\mathrm{O} _ {2} + e ^ {-} \longrightarrow {} ^ {\bullet} \mathrm{O} _ {2} ^ {-}
+$$
+
+Successive reduction of the superoxide radical with additional electrons produces $H_{2}O_{2}$ , hydroxyl radicals ( $^{\bullet}OH$ ), and finally $H_{2}O$ . The very reactive hydroxyl radical can be especially damaging (Fig. 19-18).
+
+Reactive oxygen species (ROS) can wreak havoc, reacting with and damaging enzymes, membrane lipids, and nucleic acids. In actively respiring mitochondria, 0.2% to as much as 2% of the O₂ used in respiration forms $\cdot O_{2}^{-}$ —more than enough to have lethal effects unless the free radical is quickly disposed of. Factors that slow the flow of electrons through the respiratory chain increase the formation of superoxide, perhaps by prolonging the lifetime of $\cdot O_{2}^{-}$ generated in the Q cycle. The formation of ROS is favored when two conditions are met: (1) mitochondria are not making ATP (for lack of ADP or O₂) and therefore have a large proton-motive force and a high QH₂/Q ratio, and (2) there is a high NADH/NAD⁺ ratio in the matrix. In these situations, the mitochondrion is under oxidative stress—more electrons are available to enter the respiratory chain than can be immediately passed through to oxygen. When the supply of electron donors (NADH) is matched with that of electron acceptors, there is less oxidative stress, and ROS production is much reduced. Although overproduction of ROS is clearly detrimental, low levels of ROS are used by the cell as a signal reflecting the insufficient supply of oxygen (hypoxia), triggering metabolic adjustments (see Fig. 19-34).
+
+![](images/d31652c600f41fa768093385263038e109e6c4c90df55a8fd1b559212c9afdd8.jpg)  
+FIGURE 19-18 ROS formation in mitochondria and mitochondrial defenses. When the rate of electron entry into the respiratory chain and the rate of electron transfer through the chain are mismatched, superoxide radical ( $^{\bullet}O_{2}^{-}$ ) production increases at Complexes I and III as the partially reduced ubiquinone radical ( $^{\bullet}Q^{-}$ ) donates an electron to $O_{2}$ . Superoxide acts on a conitase, a 4Fe-4S protein (not shown), to release $Fe^{2+}$ . $Fe^{2+}$ in turn will react with hydrogen peroxide (in a process called the Fenton reaction) to produce the highly reactive hydroxyl free radical ( $^{\bullet}OH$ ). The reactions shown in blue defend the cell against the damaging effects of superoxide. Reduced glutathione (GSH; see Fig. 22-29) donates electrons for the reduction of $H_{2}O_{2}$ and of the oxidized Cys residues (—S—S—) of enzymes and other proteins; GSH is regenerated from the oxidized form (GSSG) by reduction with NADPH.
+
+To prevent oxidative damage by $\cdot O_{2}^{-}$ , cells have the enzyme superoxide dismutase, which catalyzes the reaction
+
+$$
+2 ^ {\bullet} \mathrm{O} _ {2} ^ {-} + 2 \mathrm{H} ^ {+} \longrightarrow \mathrm{H} _ {2} \mathrm{O} _ {2} + \mathrm{O} _ {2}
+$$
+
+The hydrogen peroxide ( $H_{2}O_{2}$ ) thus generated is rendered harmless by glutathione peroxidase (Fig. 19-18). Glutathione reductase recycles the oxidized glutathione to its reduced form, using electrons from the NADPH generated by nicotinamide nucleotide transhydrogenase (in the mitochondrion) or by the pentose phosphate pathway (in the cytosol; see Fig. 14-30). Reduced glutathione also serves to keep protein sulfhydryl groups in their reduced state, preventing some of the deleterious effects of oxidative stress.
+
+## SUMMARY 19.1 The Mitochondrial Respiratory Chain
+
+\- Chemiosmotic theory provides the intellectual framework for understanding many biological energy transductions, including oxidative phosphorylation and photophosphorylation. The energy of electron flow is conserved by the concomitant pumping of protons across the membrane, producing an electrochemical gradient, the proton-motive force.
+
+![](images/0a4adc53cd723c8bda10f1b63504cb08751e020b112bc66fcf5e689b230c7b60.jpg)
+
+In mitochondria, hydride ions removed from substrates (such as $\alpha$ -ketoglutarate and malate) by NAD-linked dehydrogenases donate electrons to the respiratory chain, which transfers the electrons to molecular $\mathrm{O}_2$ , reducing it to $\mathrm{H}_2\mathrm{O}$ .
+
+■ Reducing equivalents from NADH are passed through a series of carrier types that include ubiquinone, Fe-S centers, and cytochromes.
+
+Electron carriers are arranged in multiprotein complexes, which couple electron transfer to the generation of proton gradients. Complex I transfers electrons from NADH to ubiquinone. Complex II harvests electrons from the oxidation of succinate, also transferring them to ubiquinone. Ubiquinone diffuses through the inner mitochondrial membrane, and transfers the electrons to cytochrome b, the first carrier in Complex III. In this complex, electrons move first to an Fe-S center. The Fe-S center passes electrons, one at a time, through cytochrome c and into Complex IV, cytochrome oxidase. This copper-containing enzyme, which also contains cytochromes a and $\alpha_{3}$ , accumulates electrons, then passes them to $O_{2}$ , reducing it to $H_{2}O$ .
+
+■ Complexes I, III, and IV form supercomplexes that facilitate electron flow between them.
+
+![](images/6f6562cde5ac59d797ff0257ed420db2d06657335ea4312d9560371be8ff8946.jpg)
+
+Some electrons enter this chain of carriers through alternative paths. Electrons derived from the oxidation of fatty acids pass to ubiquinone via the electron-transferring flavoprotein. The oxidation of glycerol phosphate and of dihydroorotate also sends electrons into the respiratory chain at the level of $\mathrm{QH}_2$ .
+
+\- Much of the free energy generated by electron transfer and the reduction of oxygen to form water is recovered and stored in the form of an electrochemical proton gradient across the mitochondrial inner membrane.
+
+■ Potentially harmful reactive oxygen species produced in mitochondria are inactivated by a set of protective enzymes, including superoxide dismutase and glutathione peroxidase. Low levels of ROS serve as signals coordinating mitochondrial oxidative phosphorylation with other metabolic pathways.
+
+## 19.2 ATP Synthesis
+
+How is a concentration gradient of protons transformed into ATP? We have seen that electron transfer releases, and the proton-motive force conserves, more than enough free energy (about 190 kJ) per "mole" of electron pairs to drive the formation of a mole of ATP, which requires about 50 kJ (p. 480). Mitochondrial oxidative phosphorylation therefore poses no thermodynamic problem. But what is the chemical mechanism that couples proton flux with phosphorylation?
+
+![](images/9e7f06e1a122d98618cc944ccd660b2e2c537d6a89e41e1cb71a59f0c382d1ae.jpg)
+
+## In the Chemiosmotic Model, Oxidation and Phosphorylation Are Obligately Coupled
+
+The chemiosmotic model, proposed by Peter Mitchell, is the paradigm for energy coupling. According to the model (Fig. 19-19), the electrochemical energy inherent in the difference in proton concentration and the separation of charge across the inner mitochondrial membrane—the proton-motive force—drives the synthesis of ATP as protons flow passively back into the matrix through a proton pore in ATP synthase. To emphasize this crucial role of the proton-motive force, the equation for ATP synthesis is sometimes written
+
+$$
+\mathrm{ADP} + \mathrm {P_ {i}} + n \mathrm {H_ {P} ^ {+}} \longrightarrow \mathrm{ATP} + \mathrm {H_ {2} O} + n \mathrm {H_ {N} ^ {+}}\tag{19-10}
+$$
+
+![](images/c6332e09a84748b1467cf44482b3e0fcefeef706863a421e94fbc7cd71a775fd.jpg)
+
+Mitchell used the term "chemiosmotic" to describe enzymatic reactions that involve, simultaneously, a chemical reaction and a transport process, and the overall process is sometimes referred to as "chemiosmotic coupling." Here, "coupling" refers to the obligate connection between mitochondrial ATP synthesis and electron flow through the respiratory chain; neither of the
+
+Peter Mitchell, 1920–1992
+[AP Photos/AP Images.]
+
+two processes can proceed without the other. The operational definition of coupling is shown in Figure 19-20.
+
+P5 When isolated mitochondria are suspended in a buffer containing ADP, $P_{i}$ , and an oxidizable substrate such as succinate, three easily measured processes occur: (1) the substrate is oxidized (succinate yields fumarate), (2) $O_{2}$ is consumed, and (3) ATP is synthesized. Oxygen consumption and ATP synthesis depend on the presence of an oxidizable substrate (succinate in this case) as well as ADP and $P_{i}$ .
+
+Because substrate oxidation drives ATP synthesis, inhibitors of electron transfer block ATP synthesis (Fig. 19-20a). The converse is also true: inhibition of ATP synthesis blocks electron transfer in intact mitochondria. When isolated mitochondria are given $O_{2}$ and oxidizable substrates, but not ADP (Fig. 19-20b), no ATP synthesis can occur and electron transfer to $O_{2}$ does not proceed. Henry Lardy, who pioneered the use
+
+![](images/3aad6b703ffb444abdf1c87c51a46c18d7143e69b01aa05bfc7f72c7881acb5b.jpg)  
+Henry Lardy, 1917–2010 [© Courtesy David L. Nelson, Ph.D.]
+
+![](images/018cd66b866e40e38407be360a2aa00715706b8825bcb644a9d88535a0087dd4.jpg)
+
+FIGURE 19-19 Chemiosmotic model. In this simple representation of the chemiosmotic theory applied to mitochondria, electrons from NADH and other oxidizable substrates pass through a chain of carriers arranged asymmetrically in the inner membrane. Electron flow is accompanied by proton transfer across the membrane, producing both a chemical gradient ( $\Delta pH$ )
+
+and an electrical gradient ( $\Delta\psi$ ), which, combined, create the proton-motive force. The inner mitochondrial membrane is impermeable to protons; protons can reenter the matrix only through proton-specific channels ( $F_{o}$ ). The proton-motive force that drives protons back into the matrix provides the energy for ATP synthesis, catalyzed by the $F_{1}$ complex associated with $F_{o}$ .
+
+(a)  
+![](images/3b3ba1b16d1638c6f5e2a1f2becedfa88cdce3f3202413b184096840cb15d1f3.jpg)
+
+![](images/2fb04c837533d0d974a0b83cdf27bcbdc164a5ea84d96dc35cae1a7fa5b0f66e.jpg)  
+(b)  
+FIGURE 19-20 Coupling of electron transfer and ATP synthesis in mitochondria. In experiments to demonstrate coupling, mitochondria are suspended in a buffered medium, and an $\mathrm{O}_2$ electrode monitors $\mathrm{O}_2$ consumption. At intervals, samples are removed and assayed for the presence of ATP. (a) Addition of ADP and $\mathsf{P}_{\mathsf{i}}$ alone results in little or no increase in either respiration ( $\mathrm{O}_2$ consumption; black) or ATP synthesis (red). When succinate is added, respiration begins immediately, and ATP
+
+of antibiotics to explore mitochondrial function, showed coupling of oxidation and phosphorylation by using oligomycin and venturicidin. These toxic antibiotics bind to the ATP synthase in mitochondria, inhibiting both ATP synthesis and the transfer of electrons through the chain of carriers to $O_{2}$ (Fig. 19-20b). As oligomycin does not interact with the electron carriers, it follows that electron transfer and ATP synthesis are obligately coupled: neither reaction occurs without the other.
+
+Chemiosmotic theory readily explains the dependence of electron transfer on ATP synthesis in mitochondria. When the flow of protons into the matrix through the proton channel of ATP synthase is blocked (with oligomycin, for example), no path exists for the return of protons to the matrix, and the continued extrusion of protons driven by the activity of the respiratory chain generates a large proton gradient. The proton-motive force builds up until the cost (free energy) of pumping protons out of the matrix against this gradient equals or exceeds the energy released by the transfer of electrons from NADH to $O_{2}$ . At this point electron flow must stop; the free energy for the overall process of electron flow coupled to proton pumping becomes zero, and the system is at equilibrium.
+
+Certain conditions and reagents, however, can uncouple oxidation from phosphorylation. When intact mitochondria are disrupted by treatment with detergent or by physical shear, the resulting membrane fragments can still catalyze electron transfer from succinate or NADH to $O_{2}$ , but no ATP synthesis is coupled to this respiration. Certain chemical compounds cause uncoupling without physically disrupting mitochondrial structure. Chemical uncouplers include 2,4-dinitrophenol (DNP) and carbonylcyanide-p-trifluoromethoxyphenylhydrazone (FCCP) (Table 19-4; Fig. 19-21), weak acids with hydrophobic properties that permit them to diffuse readily across mitochondrial membranes. After entering the matrix in the protonated form, they can release a proton, thus dissipating the proton gradient. Resonance stabilization delocalizes the charge on the anionic forms, making them sufficiently hydrophobic to diffuse back across the membrane, where they can pick up a proton and repeat the process. Ionophores such as valinomycin (see Fig. 11-43) allow inorganic ions to pass easily through membranes. Ionophores uncouple electron transfer from oxidative phosphorylation by dissipating the electrical contribution to the electrochemical gradient across the mitochondrial membrane.
+
+![](images/356458050fba7b504288850fb16fb71ea53abd4e5b62607ca29572614588f096.jpg)  
+is synthesized. Addition of cyanide (CN $^{-}$ ), which blocks electron transfer between cytochrome oxidase (Complex IV) and O $_{2}$ , inhibits both respiration and ATP synthesis. (b) Mitochondria provided with succinate respire and synthesize ATP only when ADP and P $_{i}$ are added. Subsequent addition of venturicidin or oligomycin, inhibitors of ATP synthase, blocks both ATP synthesis and respiration. Dinitrophenol (DNP) is an uncoupler, allowing respiration to continue without ATP synthesis.
+
+A prediction of the chemiosmotic theory is that, because the role of electron transfer in mitochondrial ATP synthesis is simply to pump protons to create the electrochemical potential of the proton-motive force, an artificially created proton gradient should be able to replace electron transfer in driving ATP synthesis. This has been experimentally confirmed (Fig. 19-22). In the absence of an oxidizable substrate, the proton-motive force alone suffices to drive ATP synthesis.
+
+![](images/333acfb8821f98f8c93a0d0a4b1577117d07dff88e0c9bcf2997968e3b4a17ae.jpg)  
+2,4-Dinitrophenol (DNP)
+
+![](images/accf2419991da57ee39f46318637c301cd59e0ba46ebcd7079673c6026356f16.jpg)  
+Carbonylcyanide-p-trifluoromethoxyphenylhydrazone (FCCP)  
+FIGURE 19-21 Two chemical uncouplers of oxidative phosphorylation. Both DNP and FCCP have a dissociable proton (red) and are very hydrophobic. They carry protons across the inner mitochondrial membrane, dissipating the proton gradient. Both also uncouple photophosphorylation.
+
+## ATP Synthase Has Two Functional Domains, $F_{0}$ and $F_{1}$
+
+P2 Mitochondrial ATP synthase is an F-type ATPase (see Fig. 11-40b) similar in structure and mechanism to the ATP synthases of bacteria and (as we will see in Chapter 20) chloroplasts. This large enzyme complex of the inner mitochondrial membrane catalyzes the formation of ATP from ADP and $\mathbf{P}_{\mathrm{i}}$ , driven by the flow of protons from the P to the N side of the membrane (Eqn 19-10). ATP synthase, also called Complex V to relate it to the electron-transfer complexes described in the last section, has two distinct components. These are $\mathbf{F}_{\mathrm{i}}$ , a peripheral membrane protein, and $\mathbf{F}_{\mathrm{o}}$ (o denoting oligomycin-sensitive), which is integral to the membrane. $\mathbf{F}_{\mathrm{l}}$ , the first factor recognized as essential for oxidative phosphorylation, was identified and purified by Efraim Racker and his colleagues in the early 1960s.
+
+![](images/9c64133e0cedc9f2fd56750783120368f9e8a89d803e3ca770dc59935d08ec7d.jpg)  
+FIGURE 19-22 Evidence for the role of a proton gradient in ATP synthesis. An artificially imposed electrochemical gradient can drive ATP synthesis in the absence of an oxidizable substrate as electron donor. In this two-step experiment, (a) isolated mitochondria are first incubated in a pH 9 buffer containing 0.1 M KCl. Slow leakage of buffer and KCl into the mitochondria eventually brings the matrix into equilibrium with the surrounding medium. No oxidizable substrates are present. (b) Mitochondria are now removed from the pH 9 buffer and resuspended in pH 7 buffer containing valinomycin but no KCl. The change in buffer creates a difference of two pH units across the inner mitochondrial membrane. The outward flow of $K^{+}$ , carried by valinomycin down the $K^{+}$ ion concentration gradient without a counterion, creates a charge imbalance across the membrane (matrix negative). The sum of the chemical potential provided by the pH difference and the electrical potential provided by the separation of charges is a proton-motive force large enough to support ATP synthesis in the absence of an oxidizable substrate.
+
+In the laboratory, small membrane vesicles formed from inner mitochondrial membranes carry out ATP synthesis coupled to electron transfer. When $F_{1}$ is gently extracted, the “stripped” vesicles still contain intact respiratory chains and the $F_{0}$ portion of ATP synthase. P5 The vesicles can catalyze electron transfer from NADH to $O_{2}$ but cannot produce a proton gradient: $F_{0}$ has a proton pore through which protons leak as fast as they are pumped by electron transfer, and without a proton gradient the $F_{1}$ -depleted vesicles cannot make ATP. Isolated $F_{1}$ catalyzes ATP hydrolysis (the reversal of synthesis) and was therefore originally called $F_{1}$ ATPase. When purified $F_{1}$ is added back to the depleted vesicles, it reassociates with $F_{0}$ , plugging its proton pore and restoring the membrane’s capacity to couple electron transfer and ATP synthesis.
+
+## ATP Is Stabilized Relative to ADP on the Surface of $F_{1}$
+
+Isotope exchange experiments using purified $F_{1}$ reveal an extraordinary fact about the enzyme's catalytic mechanism: on the enzyme surface, the reaction $ADP + P_{i} \rightleftharpoons ATP + H_{2}O$ is readily reversible—the free-energy change for ATP synthesis is close to zero. When ATP is hydrolyzed by $F_{1}$ in the presence of ${}^{18}O$ -labeled water, the $P_{i}$ released contains an ${}^{18}O$ atom. Careful measurement of the ${}^{18}O$ content of $P_{i}$ formed in vitro by $F_{1}$ -catalyzed hydrolysis of ATP reveals that the $P_{i}$ has not one but three or four ${}^{18}O$ atoms (Fig. 19-23). This indicates that the terminal pyrophosphate bond in ATP is cleaved and re-formed repeatedly before $P_{i}$ leaves the enzyme surface. This exchange reaction occurs in unenergized $F_{0}F_{1}$ complexes (with no proton gradient) and with isolated $F_{1}$ —the exchange does not require the input of energy.
+
+Kinetic studies of the initial rates of ATP synthesis and hydrolysis confirm the conclusion that $\Delta G^{\prime\circ}$ for ATP synthesis on the enzyme is near zero. From the measured rates of hydrolysis ( $k_{1} = 10$ s $^{-1}$ ) and synthesis ( $k_{-1} = 24$ s $^{-1}$ ), the calculated equilibrium constant for the reaction
+
+$$
+\mathrm{Enz-ATP} \rightleftharpoons \mathrm{Enz-(ADP+P} _ {\mathrm{i}})
+$$
+
+is
+
+$$
+K _ {\mathrm{eq}} ^ {\prime} = \frac {k _ {- 1}}{k _ {1}} = \frac {2 4 \mathrm{s} ^ {- 1}}{1 0 \mathrm{s} ^ {- 1}} = 2. 4
+$$
+
+From this $K_{eq}^{\prime}$ , the calculated apparent $\Delta G^{\prime\circ}$ is close to zero. This is much different from the $K_{eq}^{\prime}$ of about $10^{5}$ ( $\Delta G^{\prime\circ} = -30.5$ kJ/mol) for the hydrolysis of ATP free in solution (i.e., not on the enzyme surface).
+
+What accounts for the huge difference? ATP synthase stabilizes ATP relative to ADP + P $_{i}$ by binding ATP more tightly, releasing enough energy to counterbalance the cost of making ATP. Careful measurements of the binding constants show that F $_{o}$ F $_{1}$ binds ATP with very high affinity ( $K_{d} \leq 10^{-12}$ M) and ADP with much lower
+
+![](images/a87565c91c56985c0c941827072a0e680eb93def90bd318c0396de710c2be2b9.jpg)  
+FIGURE 19-23 Catalytic mechanism of $F_{1}$ . (a) An $^{18}\mathrm{O}$ -exchange experiment. $F_{1}$ solubilized from mitochondrial membranes is incubated with ATP in the presence of $^{18}\mathrm{O}$ -labeled water. At intervals, a sample of the solution is withdrawn and analyzed for the incorporation of $^{18}\mathrm{O}$ into the $P_{i}$ produce from ATP hydrolysis. In minutes, the $P_{i}$ contains three or four $^{18}\mathrm{O}$ atoms, indicating that both ATP hydrolysis and ATP synthesis have occurred several times during the incubation. (b) The likely transition state complex for ATP hydrolysis and synthesis by ATP synthase. The $\alpha$ subunit is shown in gray, $\beta$ in purple. The positively charged residues $\beta -\mathrm{Arg}^{182}$ and $\alpha -\mathrm{Arg}^{376}$ coordinate two oxygens of the pentavalent phosphate intermediate; $\beta -\mathrm{Lys}^{155}$ interacts with a third oxygen, and the $\mathrm{Mg}^{2+}$ ion further stabilizes the intermediate. The blue sphere represents the leaving group $(\mathrm{H}_{2}\mathrm{O})$ . These interactions result in ready equilibration of ATP and ADP + $P_{i}$ in the active site. [(b) Data from PDB ID 1BMF, J.P. Abrahams et al., Nature 370:621, 1994.]
+
+FIGURE 19-24 Reaction coordinate diagrams for ATP synthase and for a more typical enzyme. In a typical enzyme-catalyzed reaction (left), reaching the transition state ( $\ddagger$ ) between substrate and product is the major energy barrier to overcome. In the reaction catalyzed by ATP synthase (right), release of ATP from the enzyme, not formation of ATP, is the major energy barrier. The free-energy change for the formation of ATP from ADP and F in aqueous solution is large and positive, but on the enzyme surface, the very tight binding of ATP provides sufficient binding energy to bring the free energy of the enzyme-bound ATP close to that of ADP + P $_{i}$ , so the reaction is readily reversible. The equilibrium constant is near 1. The free energy required for the release of ATP is provided by the proton-motive force.
+
+affinity ( $K_{d} \approx 10^{-5}$ M). The difference in $K_{d}$ corresponds to a difference of about 40 kJ/mol in binding energy, and this binding energy drives the equilibrium toward formation of the product ATP.
+
+## The Proton Gradient Drives the Release of ATP from the Enzyme Surface
+
+Although ATP synthase equilibrates ATP with ADP + P $_{i}$ , in the absence of a proton gradient the newly synthesized ATP does not leave the surface of the enzyme. Effectively, the enzyme cannot turn over and synthesize a second molecule of ATP. It is the proton gradient that causes the enzyme to release the ATP formed on its surface. The reaction coordinate diagram of the process (Fig. 19-24) illustrates the difference between the mechanism of ATP synthase and that of many other enzymes that catalyze endergonic reactions.
+
+For the continued synthesis of ATP, the enzyme must cycle between a form that binds ATP very tightly and a form that releases ATP. Chemical and crystallographic studies of the ATP synthase have revealed the structural basis for this alternation in function.
+
+## Each $\beta$ Subunit of ATP Synthase Can Assume Three Different Conformations
+
+Mitochondrial $F_{1}$ has nine subunits of five different types, with the composition $\alpha_{3}\beta_{3}\gamma\delta\varepsilon$ . Each of the three $\beta$ subunits has one catalytic site for ATP synthesis. The crystallographic determination of the $F_{1}$ structure by John E. Walker and colleagues revealed structural details that help explain the catalytic mechanism of the enzyme. The knoblike portion of $F_{1}$ is a flattened sphere, 8 nm by 10 nm, consisting of alternating $\alpha$ and $\beta$ subunits arranged like the sections of an orange (Fig. 19-25a–d). Although the amino acid sequences of the three $\beta$ subunits are identical, their conformations differ. The conformational differences extend to differences in their ATP/ADP-binding sites. When the protein is crystallized in the presence of ADP and App(NH)p, a close structural analog of ATP that cannot be hydrolyzed by the ATPase activity of $F_{1}$ , the binding site of one of the three $\beta$ subunits is filled with
+
+![](images/ec768b431cc020be9918573537ed314bc9055a59d247af83250f877126717c62.jpg)  
+Reaction coordinate
+
+FIGURE 19-25 Mitochondrial ATP synthase complex. (a) A cartoon representation of the $F_{0}F_{1}$ complex. The dimeric form is found in eukaryotic mitochondria. The monomeric form is observed in bacteria. (b) $F_{1}$ viewed from above (that is, from the n side of the membrane), showing the three $\beta$ (shades of purple) and three $\alpha$ (shades of gray) subunits and the central shaft ( $\gamma$ subunit, green). Each $\beta$ subunit, near its interface with the neighboring $\alpha$ subunit, has a nucleotide-binding site critical to the catalytic activity. The single $\gamma$ subunit associates primarily with one of the three $\alpha\beta$ pairs, forcing each of the three $\beta$ subunits into slightly different conformations, with different nucleotide-binding sites. In the crystalline enzyme, one subunit, $\beta$ -ADP, has ADP (yellow) in its binding site; the next, $\beta$ -ATP, has ATP (red); and the third, $\beta$ -empty, has no bound nucleotide. (c) The entire enzyme viewed from the side (in the plane of the membrane). The $F_{1}$ portion has three $\alpha$ subunits and three $\beta$ subunits arranged like the segments of an orange around a central shaft, the $\gamma$ subunit (green). (Two $\alpha$ subunits and one $\beta$ subunit have been omitted to reveal the $\gamma$ subunit and the binding sites for ATP and ADP on the $\beta$ subunits.) The $\delta$ subunit confers oligomycin sensitivity on the ATP synthase, and the $\varepsilon$ subunit may serve to inhibit the enzyme's ATPase activity under some circumstances. The $F_{0}$ subunit consists of one a subunit and two b subunits, which anchor the $F_{0}F_{1}$ complex in the membrane and act as a stator (the stationary part of a rotary system), holding the $\alpha$ and $\beta$ subunits in place. $F_{0}$ also includes the c ring, made up of a number (8 to 17, depending on the species) of identical c subunits, small, hydrophobic proteins. The c ring and the a subunit interact to provide a transmembrane path for protons. Each of the c subunits in $F_{0}$ has a critical Asp residue near the middle of the membrane, which undergoes protonation/deprotonation during the catalytic cycle of the ATP synthase. Shown here is the homologous $c_{11}$ ring of the Na $^{+}$ -ATPase of Ilyobacter tartaricus, for which the structure is well established. The Na $^{+}$ -binding sites, which correspond to the proton-binding sites of the $F_{0}F_{1}$ complex, are shown with their bound Na $^{+}$ ions (red spheres). (d) A view of $F_{0}$ perpendicular to the membrane. As in (c), red spheres represent the Na $^{+}$ - or proton-binding sites in Asp residues. [(a) Information from W. Kühlbrandt and K. M. Davies, Trends Biochem. Sci. 41:106, 2016. (b, c, d) Data from F $_{i}$ : PDB ID 1BMF, J. P. Abrahams et al., Nature 370:621, 1994; PDB ID J.NV, A.C. Hausrath et al., J. Biol. Chem. 276:47,227, 2001; PDB ID 2A7U, S. Wilkens et al., Biochemistry 44:11,786, 2005; PDB ID 2CLY, V. Kane Dickson et al., EMBO J. 25:2911, 2006; F $_{0}$ : PDB ID 1B9U, O. Dmitriev et al., J. Biol. Chem. 274:15,598, 1999; c ring: PDB ID 1YCE, T. Meier et al., Science 308:659, 2005.]
+
+![](images/6a4a45b0e0c45da98d28aef591d64378ce0c89cf4f9811f47eb01b551bb46adb.jpg)
+
+(b) Top view of $F_{1}$  
+![](images/1d5568d4490341e96cd3494c87858b658011f1e09308d8b90c7703c5d6bba52c.jpg)
+
+![](images/ccb5679149b90f027993639bd358dc706c41f1235bfb40fa600788e134cf9625.jpg)
+
+![](images/91d927e1df352ba0f6da8df5d1f9f6af0fb8a485c75ecfa952e5fe5647913760.jpg)
+
+App(NH)p, the second is filled with ADP, and the third is empty. The corresponding $\beta$ subunit conformations are designated $\beta$ -ATP, $\beta$ -ADP, and $\beta$ -empty (Fig. 19-25b). This difference in nucleotide binding among the three subunits is critical to the mechanism of the complex. The polypeptides that make up the stalk in the $F_{1}$ crystal structure are asymmetrically arranged. One domain of the single $\gamma$ subunit makes up a central shaft that passes through $F_{1}$ . Another globular domain of $\gamma$ helps to stabilize the $\beta$ -empty conformation in a $\beta$ subunit it is transiently associated with (Fig. 19-25c).
+
+![](images/479129509d027a21aeb69603521899ba67ad8fb26ae0f5805faf6bfe68df7c71.jpg)  
+App(NH)p (β,γ-imidoadenosine 5'-triphosphate)
+
+The $F_{0}$ complex, with its proton pore, is composed of three subunits, a, b, and c, in the proportion $ab_{2}c_{n}$ , where n ranges from 8 to 17, depending on the species. Subunit c is a small ( $M_{r}$ 8,000), very hydrophobic polypeptide, consisting almost entirely of two transmembrane helices, with a small loop extending from the matrix side of the membrane. The crystal structure of the yeast $F_{0}F_{1}$ shows 10 c subunits, each with two transmembrane helices roughly perpendicular to the plane of the membrane and arranged in two concentric circles to create the c ring. The inner circle is made up of the amino-terminal helices of each c subunit; the outer circle, about 55 Å in diameter, is made up of the carboxyl-terminal helices. The c subunits in the c ring rotate together as a unit around an axis perpendicular to the membrane. The ε and γ subunits of $F_{1}$ form a leg-and-foot that projects from the bottom (membrane) side of $F_{1}$ and stands firmly on the ring of c subunits. The a subunit consists of several hydrophobic helices that span the membrane in close association with one of the c subunits in the c ring.
+
+## Rotational Catalysis Is Key to the Binding-Change Mechanism for ATP Synthesis
+
+On the basis of detailed kinetic and binding studies of the reactions catalyzed by $F_{0}F_{1}$ , Paul Boyer proposed a rotational catalysis mechanism in which the three active sites of $F_{1}$ take turns catalyzing ATP synthesis (Fig. 19-26). A given $\beta$ subunit starts in the $\beta$ -ADP conformation, which binds ADP and $P_{i}$ from the surrounding medium. The subunit now changes conformation, assuming the $\beta$ -ATP form that tightly binds and stabilizes ATP, bringing about the ready equilibration of ADP + $P_{i}$ with ATP on the enzyme surface. Finally, the subunit changes to the $\beta$ -empty conformation, which has very low affinity for ATP, and the newly synthesized ATP leaves the enzyme surface. Another round of catalysis begins when this subunit again assumes the $\beta$ -ADP form and binds ADP and $P_{i}$ .
+
+![](images/823b34fe801a6e9f5c181822adb551ca650ab83149f1c456b99dd91f9b1348ca.jpg)  
+FIGURE 19-26 Binding-change model for ATP synthase. The $F_{i}$ complex has three nonequivalent adenine nucleotide-binding sites, one for each pair of $\alpha$ and $\beta$ subunits. At any given moment, one of these sites is in the $\beta$ -ATP conformation (which binds ATP tightly), a second is in the $\beta$ -ADP (loose-binding) conformation, and a third is in the $\beta$ -empty (very-loose-binding) conformation. In this view from the n side, the proton-motive force causes rotation of the central shaft — the $\gamma$ subunit, shown as a green arrowhead — which comes into contact with each $\alpha\beta$ subunit pair in succession. This produces a cooperative conformational change in which the $\beta$ -ATP site is converted to the $\beta$ -empty conformation, and ATP dissociates; the $\beta$ -ADP site is converted to the $\beta$ -ATP conformation, which promotes condensation of bound ADP + P $_{i}$ to form ATP; and the $\beta$ -empty site becomes a $\beta$ -ADP site, which loosely binds ADP + P $_{i}$ entering from the solvent. Note that the direction of rotation reverses when the ATP synthase is acting as an ATPase, as in the experiment depicted in Figure 19-27.
+
+P5 The conformational changes central to this mechanism are driven by the passage of protons through the $F_{0}$ portion of ATP synthase. The streaming of protons through the $F_{0}$ pore causes the c ring and the attached $\gamma$ subunit to rotate about the long axis of $\gamma$ , which is perpendicular to the plane of the membrane. The $\gamma$ subunit passes through the center of the $\alpha_{3}\beta_{3}$ spheroid, which is held stationary relative to the membrane surface by the $b_{2}$ and $\delta$ subunits (Fig. 19-25a). With each rotation of $120^{\circ}$ , $\gamma$ comes into contact with a different $\beta$ subunit, and the contact forces that $\beta$ subunit into the $\beta$ -empty conformation.
+
+The three $\beta$ subunits interact in such a way that when one assumes the $\beta$ -empty conformation, its neighbor to one side must assume the $\beta$ -ADP form, and the other neighbor the $\beta$ -ATP form. Thus, one complete rotation of the $\gamma$ subunit causes each $\beta$ subunit to cycle through all three of its possible conformations, and for each rotation, three ATP are synthesized and released from the enzyme surface.
+
+One strong prediction of this binding-change model is that the $\gamma$ subunit should rotate in one direction when $F_{0}F_{1}$ is synthesizing ATP and in the opposite direction when the enzyme is hydrolyzing ATP. This prediction of rotation with ATP hydrolysis was confirmed in elegant experiments in the laboratories of Masasuke Yoshida and Kazuhiko Kinosita, Jr. The rotation of $\gamma$ in a single $F_{1}$ molecule was observed microscopically by attaching a long, thin, fluorescent actin polymer to $\gamma$ and watching it move relative to $\alpha_{3}\beta_{3}$ immobilized on a microscope slide as ATP was hydrolyzed. (The expected reversal of the rotation when ATP is being synthesized could not be tested in this experiment; there is no proton gradient to drive ATP synthesis.) When the entire $F_{0}F_{1}$ complex (not just $F_{1}$ ) was used in a similar experiment, the entire ring of c subunits rotated with $\gamma$ (Fig. 19-27). The “shaft” rotated in the predicted direction through 360°. The rotation was not smooth but occurred in three discrete steps of 120°. As calculated from the known rate of ATP hydrolysis by one F $_{1}$ molecule and from the frictional drag on the long actin polymer, the efficiency of this mechanism in converting chemical energy into motion is close to 100%. It is, in Boyer's words, "a splendid molecular machine!"
+
+![](images/4b19d4754999259673304024db1d159fc649459a9837b7214dcfb78b4a6e38ad.jpg)
+
+(b)  
+![](images/c183638ad6523669c9a97e7a29e543ebbea1bde0584c946a6a6a36ceca83a505.jpg)  
+FIGURE 19-27 Experimental demonstration of rotation of $F_{0}$ and $\gamma$ . This fundamental property of the ATP synthase reaction was demonstrated in several creative ways. (a) In one experiment, illustrated in this cartoon, $F_{1}$ , genetically engineered to contain a run of His residues, was tightly adhered to a microscope slide coated with a Ni complex; biotin was covalently attached to a c subunit of $F_{0}$ . The protein avidin, which binds biotin very tightly, was covalently attached to long filaments of actin labeled with a fluorescent probe. Biotin-avidin binding then attached the actin filaments to the c subunit. When ATP was provided as substrate for the ATPase activity of $F_{1}$ , the labeled filament rotated in one direction, proving that the $F_{0}$ cylinder of c subunits rotates. (b) In another experiment, a fluorescent actin filament was attached directly to the $\gamma$ subunit. The series of fluorescence micrographs (read left to right) shows the position of the actin filament at intervals of 133 ms. Note that as the filament rotated, it made discrete jumps rather than smooth rotation about the circle. The cylinder and shaft move as one unit. ([a] Information from Y. Sambongi et al., Science 286:1722, 1999. (b) Courtesy Hiroyuki Noji.]
+
+P5 A model that illustrates how proton flow and rotary motion are coupled in the $F_{0}$ complex is shown in Figure 19-28. The a subunit is stationary, while the c ring rotates. Critical interactions occur between conserved amino acids in the a and c subunits. The individual subunits in the c ring are arranged in a circle with only a few ir. contact with the a subunit at any moment. Protons diffuse across the membrane through a path made up of both a and c subunits. Transient protonation of a key Glu residue in each c subunit elicits conformation changes that drive rotation and transmit protons between hydrophilic half channels positioned on each side of the membrane. The rotary movement of the c ring is made unidirectional by the large difference in proton concentration across the membrane. The number of protons that must be transferred to produce one complete rotation cf the c ring is equal to the number of c subunits in the ring. Structural studies of the c ring have shown that the number of c subunits differs in different organisms (Fig. 19-29). In bovine mitochondria the number is 8, in yeast mitochondria and in Escherichia coli it is 10, and the number of c subunits can range as high as 17, as is seen in the soil bacterium Burkholderia pseudomallei. The rate of rotation in intact mitochondria has been estimated at about 6,000 rpm—100 rotations per second.
+
+![](images/d528bfe0861e9453e92de1f7a6fc42ed5c0b8e0353e7ef76c7039a2f6c2c92e4.jpg)  
+FIGURE 19-28 A model for proton-driven rotation of the c ring. The a subunit of the $F_{o}$ complex of the ATP synthase (see Fig. 19-25a) has two hydrophilic half-channels for protons, one leading from the p side to the middle of the membrane, the other leading from the middle of the membrane to the n side (matrix). The function of the stationary a subunit is to conduct protons to and from the c ring subunits to drive c ring rotational motion. Individual c subunits in $F_{o}$ (the total number varies from 8 to 17 in different species) are arranged in a circle about a central core. Each c subunit has a critical Glu residue (an Asp in some species) about midway across the membrane, with a perturbed $pK_{a}$ allowing it to donate or accept a proton (red $H^{+}$ ) at pH near neutrality. The cycle that c subunits go through is illustrated. One c subunit is initially positioned so that a proton that enters the half-channel on the p side (where the proton concentration is relatively high) encounters and protonates a conserved His residue in the a subunit, transferring it to the c subunit Glu residue. This triggers a rotation-facilitating conformational change in the protonated c subunit as the Glu loses its negative charge. The now neutral Glu residue is sequestered in the hydrophobic membrane layer as it rotates as part of the c ring. As the c ring rotates, the c subunit we are following eventually makes contact with the channel to the n side of the membrane, where the environment is relatively alkaline, and the proton is released. As the Glu reacquires its negative charge, another rotation-facilitating conformational change occurs such that the Glu interacts transiently with a conserved Arg residue in the immobile a subunit. The interaction with the Arg is disrupted as the Glu is again protonated by the His residue, in motions that again facilitate rotation. The c subunits positioned near the half channels are providing the rotational driving force at any given moment, as they are the ones undergoing conformation changes associated with protonation and deprotonation. The orientation of the proton gradient dictates the direction of proton flow and makes rotation of the c ring essentially unidirectional. [Information from W. Kühlbrandt and K. M. Davies, Trends Biochem. Sci. 41:106, 2016.]
+
+![](images/8955c7cc5fbbaa9df02b84820b979e1c467d3b4cf089c35d92e688968b1f4add.jpg)
+
+## Chemiosmotic Coupling Allows Nonintegral Stoichiometries of $\mathrm{O}_2$ Consumption and ATP Synthesis
+
+The overall reaction equation for ATP synthesis has the following form:
+
+$$
+\begin{array}{r l} x \mathrm{ADP} + x \mathrm {P_ {i}} + \frac {1}{2} \mathrm {O_ {2}} + \mathrm {H^ {+}} + \mathrm{NADH} & \longrightarrow \\ x \mathrm{ATP} + \mathrm {H_ {2} O} + \mathrm {NA D ^ {+}} \end{array}\tag{19-11}
+$$
+
+The value of x is sometimes called the P/O ratio or the $P/2e^{-}$ ratio. When a proton gradient is coupled to ATP synthesis as described above, there is no theoretical requirement for P/O to be integral. The relevant questions about stoichiometry become these: How many protons are pumped outward by electron transfer from one NADH to $O_{2}$ ? and How many protons must flow inward through the $F_{0}F_{1}$ complex to drive the synthesis of one ATP? The measurement of proton fluxes is technically complicated; the investigator must take into account the buffering capacity of mitochondria, nonproductive leakage of protons across the inner membrane, and use of the proton gradient for functions other than ATP synthesis, such as driving the transport of substrates across the inner mitochondrial membrane (described below). When NADH or succinate (which sends electrons into the respiratory chain at the level of ubiquinone) is the oxidizable substrate, the consensus experimental values for number of protons pumped out per pair of electrons are 10 and 6, respectively. The most widely accepted experimental value for number of protons required to drive the synthesis of an ATP molecule is 4, of which 1 is used in transporting $P_{i}$ , ATP, and ADP across the mitochondrial membrane (see below). If 10 protons are pumped out per NADH and 4 must flow in to produce 1 ATP, the proton-based P/O ratio is 2.5 for NADH as the electron donor and 1.5 (6/4) for succinate. However, as we will see in Worked Example 19-2, the proton stoichiometry of ATP synthesis by ATP synthase depends upon the number of c units in $F_{0}$ , which ranges from 8 to 17, depending on the species.
+
+![](images/2a3923e0d08c382bcdf60f49292e657d50f1089a1a280ee22c7abc0c919b8eb6.jpg)  
+(d)
+
+(c)  
+![](images/9dc936303a6e722b9aa5ccbf6dc21098e43ec49a5e686b725fd2911c86479279.jpg)
+
+![](images/fc46a8acf604860712a90dacf7fc2e4a6a624cf0a63a80019f201d3fe71d2f07.jpg)  
+FIGURE 19-29 Species differences in number of c subunits in the c ring of the $F_{0}$ complex. The structures of the c rings from several species have been determined by x-ray crystallography. Each helix in the inner ring is half of a hairpin-shaped c subunit; the outer ring of helices forms the other half of the hairpin structure. The essential Glu residue (Asp in some species) is shown as a red dot. Views of the c ring perpendicular to the membrane show the number of c subunits for (a) bovine mitochondria (8 subunits) and (b) yeast mitochondria (10). Atomic force microscopy has been used to visualize the c rings of (c) a thermophilic bacterium, Bacillus species TA2.A1 (13 subunits), and (d) spinach (14). According to the model in Figure 19-28, different numbers of c subunits in the c ring should result in different ratios of ATP formed per pair of electrons passing through the respiratory chain (i.e., different P/O ratios). ([a) Data from PDB ID 10HH, E. Cabezon et al., Nat. Struct. Biol. 10:744, 2003. (c) Republished with permission of Elsevier from J. Mol. Biol, Matthies, et al., Vol. 388(3), ©2009; permission conveyed through Copyright Clearance Center, Inc. (d) H. Seelert et al. Structural biology: Proton-powered turbine of a plant motor. Nature 405, 418–419. Reprinted by permission from Macmillan Publishers Ltd.]
+
+![](images/a7b82d42686a49b46dace327fd336425337cc47431ab8b898de1e9e79cfe9bbe.jpg)
+
+## WORKED EXAMPLE 19-2 Stoichiometry of ATP Production: Effect of c Size
+
+(a) If the ATP synthase of bovine mitochondria has 8 c subunits per c ring, what is the predicted ratio of ATP formed per NADH oxidized? (b) What is the predicted value for yeast mitochondria, with 10 c subunits per ATP synthase? (c) What are the comparable values for electrons entering the respiratory chain from FADH $_{2}$ ?
+
+![](images/40f0551ed388fcfc3b61c2eff5980f9074211c96a0b30e2a39a58949255fff19.jpg)
+
+SOLUTION: (a) Here we are asked to determine how many ATP molecules are produced per NADH. This is another way of asking us to calculate the P/O ratio, or x, in Equation 19-11. If the c ring has 8 c subunits, then one full rotation will transfer 8 protons to the matrix and produce 3 ATP molecules. But this synthesis also requires the transport of 3 P $_{i}$ into the matrix, at a cost of 1 proton each, adding 3 more protons to the total number required. This brings the total cost to (11 protons)/(3 ATP) = 3.7 protons/ATP. The generally agreed value for the number of protons pumped out per pair of electrons transferred from NADH is 10 (Eqn 19-7). So, oxidizing 1 NADH produces (10 protons)/(3.7 protons/ATP) = 2.7 ATP.
+
+(b) If the c ring has 10 c subunits, then one full rotation will transfer 10 protons to the matrix and produce 3 ATP molecules. Adding in the 3 protons to transport the 3 P $_{i}$ into the matrix brings the total cost to (13 protons)/(3 ATP) = 4.3 protons/ATP. Oxidizing 1 NADH produces (10 protons)/(4.3 protons/ATP) = 2.3 ATP.
+
+(c) When electrons enter the respiratory chain from FADH $_2$ (at ubiquinone), only 6 protons are available to drive ATP synthesis. This changes the calculation for bovine mitochondria to (6 protons)/(3.7 protons/ATP)=1.6 ATP per pair of electrons from FADH $_2$ . For yeast mitochondria, the calculation is (6 protons)/(4.3 protons/ATP)=1.4 ATP per pair of electrons from FADH $_2$ .
+
+These calculated values of x, or the P/O ratio, define a range that includes the experimental values of 2.5 ATP/NADH and 1.5 ATP/FADH $_{2}$ , and we therefore use these values throughout this book.
+
+## The Proton-Motive Force Energizes Active Transport
+
+Although the primary role of the proton gradient in mitochondria is to furnish energy for the synthesis of ATP, the proton-motive force also drives several transport processes essential to oxidative phosphorylation. The inner mitochondrial membrane is generally impermeable to charged species, but two specific systems transport ADP and $P_{i}$ into the matrix and ATP out to the cytosol (Fig. 19-30).
+
+The adenine nucleotide translocase, integral to the inner membrane, binds ADP $^{3-}$ in the intermembrane space and transports it into the matrix in exchange for an ATP $^{4-}$ molecule simultaneously transported outward (see Fig. 13-11 for the ionic forms of ATP and ADP). Because this antiporter moves four negative charges out for every three moved in, its activity is favored by the transmembrane electrochemical gradient, which gives the matrix a net negative charge; the proton-motive force drives ATP-ADP exchange. Adenine nucleotide translocase is specifically inhibited by atractyloside, a toxic glycoside produced by a species of thistle. If the transport of ADP into and ATP out of mitochondria is inhibited, cytosolic ATP cannot be regenerated from ADP, explaining the toxicity of atractyloside.
+
+A second membrane transport system essential to oxidative phosphorylation is the phosphate translocase, which promotes symport of one $H_{2}PO_{4}^{-}$ and one $H^{+}$ into the matrix. This transport process, too, is favored by the transmembrane proton gradient (Fig. 19-30). Notice that the process requires movement of one proton from the P side to the N side of the inner membrane, consuming some of the energy of electron transfer. A complex of the ATP synthase and both translocases, the ATP synthasome, can be isolated from mitochondria by gentle dissection with detergents, suggesting that the functions of these three proteins are very tightly integrated.
+
+![](images/7074a9446cfdb0c22d3bb737f213c0cd7c9274f7df1174de423cc52cf1cac35c.jpg)  
+FIGURE 19-30 Adenine nucleotide and phosphate translocases. Transport systems of the inner mitochondrial membrane carry ADP and $P_{i}$ into the matrix and newly synthesized ATP into the cytosol. The adenine nucleotide translocase is an antiporter; the same protein moves ADP into the matrix and ATP out. The effect of replacing ATP $^{4-}$ with ADP $^{3-}$ in the matrix is the net efflux of one negative charge, which is favored by the charge difference across the inner membrane (outside positive). At pH 7, $P_{i}$ is present as both HPO $_{4}^{2-}$ and H $_{2}$ PO $_{4}^{-}$ ; the phosphate translocase is specific for H $_{2}$ PO $_{4}^{-}$ . There is no net flow of charge during symport of H $_{2}$ PO $_{4}^{-}$ and H $^{+}$ , but the relatively low proton concentration in the matrix favors the inward movement of H $^{+}$ . Thus the proton-motive force is responsible both for providing the energy for ATP synthesis and for transporting substrates (ADP and $P_{i}$ ) into and product (ATP) out of the mitochondrial matrix. All three of these transport systems can be isolated as a single membrane-bound complex (ATP synthasome).
+
+ATP and ADP cross the outer mitochondrial membrane via the voltage-dependent anion channel (VDAC), a 19-stranded $\beta$ barrel with an opening about $27\AA$ wide, connecting the cytosol and the intermembrane space. Each VDAC, when open, can move $10^{5}$ ATP molecules per second. The opening is gated by voltage, as its name indicates, and under some conditions VDAC is closed to ATP.
+
+## Shuttle Systems Indirectly Convey Cytosolic NADH into Mitochondria for Oxidation
+
+The NADH dehydrogenase of the inner mitochondrial membrane of animal cells can accept electrons only from NADH in the matrix. Given that the inner membrane is
+
+not permeable to NADH, how can the NADH generated by glycolysis in the cytosol be reoxidized to $NAD^{+}$ by $O_{2}$ via the respiratory chain? Special shuttle systems carry reducing equivalents from cytosolic NADH into mitochondria by an indirect route. The most active NADH shuttle, which functions in liver, kidney, and heart mitochondria, is the malate-aspartate shuttle (Fig. 19-31). The reducing equivalents of cytosolic NADH are first transferred to cytosolic oxaloacetate to yield malate, catalyzed by cytosolic malate dehydrogenase. The malate thus formed passes through the inner membrane via the malate- $\alpha$ -ketoglutarate transporter. Within the matrix, the reducing equivalents are passed to $NAD^{+}$ by the action of matrix malate dehydrogenase, forming NADH; this NADH can pass electrons directly to the respiratory chain. About 2.5 molecules of ATP are generated as this pair of electrons passes to $O_{2}$ . Cytosolic oxaloacetate must be regenerated by transamination reactions and the activity of membrane transporters to start another cycle of the shuttle.
+
+Skeletal muscle and brain use a different NADH shuttle, the glycerol 3-phosphate shuttle (Fig. 19-32). It differs from the malate-aspartate shuttle in that it delivers the reducing equivalents from NADH through FAD in glycerol 3-phosphate dehydrogenase to ubiquinone and thus into Complex III, not Complex I (Fig. 19-15), providing enough energy to synthesize only 1.5 ATP molecules per pair of electrons.
+
+The mitochondria of plants have an externally oriented NADH dehydrogenase that can transfer electrons directly from cytosolic NADH into the respiratory chain at the level of ubiquinone. Because this pathway bypasses the NADH dehydrogenase of Complex I and the associated proton movement, the yield of ATP from cytosolic NADH is less than that from NADH generated in the matrix (Box 19-1).
+
+![](images/d955e6fb587df3acf148ae16f0b5608d843c9c7f513d5fa31f5f721e45d17b24.jpg)
+
+![](images/5f742cea8d026d1fb010026aa9c2c5b8d33189e8a19a667596f12a3d1ae49e13.jpg)  
+FIGURE 19-31 Malate-aspartate shuttle. This shuttle for transporting reducing equivalents from cytosolic NADH into the mitochondrial matrix is used in liver, kidney, and heart. ① NADH in the cytosol enters the intermembrane space through openings in the outer membrane (porins), then passes two reducing equivalents to oxaloacetate, producing malate. ② Malate crosses the inner membrane via the malate-α-ketoglutarate transporter. ③ In the matrix, malate passes two reducing equivalents to  
+NAD $^{+}$ , and the resulting NADH is oxidized by the respiratory chain; the oxaloacetate formed from malate cannot pass directly into the cytosol. ④ Oxaloacetate is first transaminated to aspartate, and ⑤ aspartate can leave via the glutamate-aspartate transporter. ⑥ Oxaloacetate is regenerated in the cytosol, completing the cycle, and glutamate produced in the same reaction enters the matrix via the glutamate-aspartate transporter.
+
+## Hot, Stinking Plants and Alternative Respiratory Pathways
+
+Many flowering plants attract insect pollinators by releasing odorant molecules that mimic an insect's natural food sources or potential egg-laying sites. Plants pollinated by flies or beetles that normally feed on or lay their eggs in dung or carrion sometimes use foul-smelling compounds to attract these insects.
+
+One family of stinking plants is the Araceae, which includes philodendrons, arum lilies, and skunk cabbages. These plants have tiny flowers densely packed on an erect structure, the spadix, surrounded by a modified leaf, the spathe. The spadix releases odors of rotting flesh or dung. Before pollination the spadix also heats up, in some species to as much as 20 to 40 °C above ambient temperatures. Heat production (thermogenesis) helps evaporate odorant molecules for better dispersal, and because rotting flesh and dung are usually warm from the hyperactive metabolism of scavenging microbes, the heat itself might also attract insects. In the case of the eastern skunk cabbage (Fig. 1), which flowers in late winter or early spring when snow still covers the ground, thermogenesis allows the spadix to grow up through the snow.
+
+How does a skunk cabbage heat its spadix? The mitochondria of plants, fungi, and unicellular eukaryotes have respiratory chains that are essentially the same as those in animals, but they also have an alternative respiratory pathway. A $QH_{2}$ oxidase transfers electrons from the ubiquinone pool directly to oxygen, bypassing the two proton-translocating steps of Complexes III and IV (Fig. 2). Energy that might have been conserved as ATP is instead released as heat. Plant mitochondria also have an alternative NADH dehydrogenase, insensitive to the Complex I inhibitor rotenone (see Table 19-4), that transfers electrons from NADH in the matrix directly to ubiquinone, bypassing Complex I and its associated proton pumping. And plant mitochondria have yet another NADH dehydrogenase, on the external face of the inner membrane, that transfers electrons from NADPH or NADH in the intermembrane space to ubiquinone, again bypassing Complex I. Thus when electrons enter the alternative respiratory pathway through the rotenone-insensitive NADH dehydrogenase, the external NADH dehydrogenase, or succinate dehydrogenase (Complex II), and pass to $O_{2}$ via the cyanide-resistant alternative oxidase, energy is not conserved as ATP but is released as heat. A skunk cabbage can use the heat to melt snow, produce a foul stench, or attract beetles or flies.
+
+![](images/3faa6f579f9e7af7f3751655ce51949b01bc326f9c89c5b2e11a7ede7793ce44.jpg)  
+FIGURE 1 Eastern skunk cabbage. [Collin Purrington.]
+
+![](images/61040a382eb860f85d066fc1c1ad258eb7297b3a8afc2c4320d47a5b626eb3d0.jpg)  
+FIGURE 2 Electron carriers of the inner membrane of plant mitochondria. Electrons can flow through Complexes I, III, and IV, as in animal mitochondria, or through plant-specific alternative carriers by the paths shown with blue arrows.
+
+![](images/01c1b227c0bfcd51c209a0e791d9a34f3d61ccf77f3bf16267dc16620256a2d8.jpg)  
+FIGURE 19-32 Glycerol 3-phosphate shuttle. This alternative means of moving reducing equivalents from the cytosol to the respiratory chain operates in skeletal muscle and the brain. In the cytosol, dihydroxyacetone phosphate accepts two reducing equivalents from NADH in a reaction catalyzed by cytosolic glycerol 3-phosphate dehydrogenase. An isozyme of glycerol 3-phosphate dehydrogenase bound to the outer face of the inner membrane then transfers two reducing equivalents from glycerol 3-phosphate in the intermembrane space to ubiquinone. Note that this shuttle does not involve membrane transport systems.
+
+## SUMMARY 19.2 ATP Synthesis
+
+The chemiosmotic theory describes the coupling of ATP synthesis to an electrochemical proton gradient. The flow of electrons through Complexes I, III, and IV results in pumping of protons across the inner mitochondrial membrane, making the matrix alkaline relative to the intermembrane space. This proton gradient provides the energy, in the form of the proton-motive force, for ATP synthesis from ADP and $P_{i}$ .
+
+\- ATP synthase has two major components, called $F_{0}$ and $F_{1}$ . Both components have multiple subunits. The overall complex spans the inner mitochondrial membrane.
+
+■ ATP synthesis is reversible within the active site on the $\beta$ subunits of the $F_{1}$ complex. Very tight binding to ATP offsets the negative $\Delta G$ for ATP hydrolysis in solution.
+
+■ Release of ATP from ATP synthase is promoted by the transmembrane proton gradient.
+
+■ The subunits of the $F_{1}$ complex cycle from $(ADP + P_{i})-$ bound to ATP-bound to empty conformations.
+
+\- ATP synthase carries out "rotational catalysis," in which the flow of protons through $\mathbf{F}_0$ causes the c ring to rotate and in turn trigger the subunit conformational changes in $\mathbf{F}_1$ .
+
+The ratio of ATP synthesized per $\frac{1}{2}O_{2}$ reduced to $H_{2}O$ (the P/O ratio) is about 2.5 when electrons enter the respiratory chain at Complex I, and 1.5 when electrons enter at ubiquinone. This ratio varies among species, depending on the number of c subunits in the $F_{0}$ complex.
+
+■ Energy conserved in a proton gradient can drive solute transport uphill across a membrane.
+
+The inner mitochondrial membrane is impermeable to NADH and $\mathrm{NAD^{+}}$ , but NADH equivalents are moved from the cytosol to the matrix by either of two shuttles. NADH equivalents moved in by the malate-aspartate shuttle enter the respiratory chain at Complex I and yield a P/O ratio of 2.5; those moved in by the glycerol 3-phosphate shuttle enter at ubiquinone and give a P/O ratio of 1.5.
+
+## 19.3 Regulation of Oxidative Phosphorylation
+
+Oxidative phosphorylation produces most of the ATP made in aerobic cells. Complete oxidation of a molecule of glucose to $CO_{2}$ yields 30 or 32 ATP (Table 19-5). By comparison, glycolysis under anaerobic conditions (lactate fermentation) yields only 2 ATP per glucose. Clearly, the evolution of oxidative phosphorylation provided a tremendous increase in the energy efficiency of catabolism. Complete oxidation to $CO_{2}$ of the coenzyme A derivative of palmitate (16:0), which also occurs in the mitochondrial matrix, yields 108 ATP per palmitoyl-CoA (see Table 17-1). A similar calculation can be made for the ATP yield from oxidation of each of the amino acids (Chapter 18). Aerobic oxidative pathways that result in electron transfer to $O_{2}$ accompanied by oxidative phosphorylation therefore account for the vast majority of the ATP produced in catabolism, so the regulation of ATP production by oxidative phosphorylation to match the cell's fluctuating needs for ATP is absolutely essential.
+
+<table><tr><td colspan="3">TABLE 19-5 ATP Yield from Complete Oxidation of Glucose</td></tr><tr><td>Process</td><td>Direct product</td><td>Final ATP</td></tr><tr><td rowspan="2">Glycolysis</td><td>2 NADH (cytosolic)</td><td>3 or 5a</td></tr><tr><td>2 ATP</td><td>2</td></tr><tr><td>Pyruvate oxidation (two per glucose)</td><td>2 NADH (mitochondrial matrix)</td><td>5</td></tr><tr><td rowspan="3">Acetyl-CoA oxidation in citric acid cycle 
+(two per glucose)</td><td>6 NADH (mitochondrial matrix)</td><td>15</td></tr><tr><td>2 FADH2</td><td>3</td></tr><tr><td>2 ATP or 2 GTP</td><td>2</td></tr><tr><td>Total yield per glucose</td><td></td><td>30 or 32</td></tr></table>
+
+![](images/1554ce9754cd67906e4b79a4bd2579bf7d5deff7c699cbcba4b942d059fea09d.jpg)
+
+## Oxidative Phosphorylation Is Regulated by Cellular Energy Needs
+
+The rate of respiration (O₂ consumption) in mitochondria is generally limited by the availability of ADP as a substrate for phosphorylation. Dependence of the rate of O₂ consumption on the availability of the P₁ acceptor, ADP (Fig. 19-20b), the acceptor control of respiration, can be remarkable. In some animal tissues, the acceptor control ratio, the ratio of the maximal rate of ADP-induced O₂ consumption to the basal rate in the absence of ADP, is at least 10.
+
+The intracellular concentration of ADP is one measure of the energy status of cells. Another, related measure is the mass-action ratio of the ATP-ADP system, $[ATP]/([ADP][P_{i}])$ . Usually this ratio is very high, so the ATP-ADP system is almost fully phosphorylated. When the rate of some energy-requiring process (protein synthesis, for example) increases, the rate of breakdown of ATP to ADP and $P_{i}$ increases, lowering the mass-action ratio. With more ADP available for oxidative phosphorylation, the rate of respiration increases, causing regeneration of ATP. This continues until the mass-action ratio returns to its normal high level, at which point respiration slows again. The rate of oxidation of cellular fuels is regulated with such sensitivity and precision that the $[ATP]/([ADP][P_{i}])$ ratio fluctuates only slightly in most tissues, even during extreme variations in energy demand. In short, ATP is formed only as fast as it is used in energy-requiring cellular activities.
+
+## An Inhibitory Protein Prevents ATP Hydrolysis during Hypoxia
+
+We have already encountered ATP synthase as an ATP-driven proton pump (see Fig. 11-40), catalyzing the reverse of ATP synthesis under some experimental conditions. When a cell is hypoxic (deprived of oxygen), as in a heart attack or a stroke, electron transfer to oxygen slows, and so does the pumping of protons. The proton-motive force soon collapses. P5 Under these conditions, the ATP synthase could operate in reverse, hydrolyzing ATP made by glycolysis to pump protons outward and causing a disastrous drop in ATP levels. This is prevented by a small (84 amino acids) protein inhibitor, $\mathrm{IF}_1$ . $\mathrm{IF}_1$ simultaneously binds to two ATP synthase molecules, inhibiting the enzyme's activity in both directions (Fig. 19-33). $\mathrm{IF}_1$ is inhibitory only in its dimeric form, which is favored at pH lower than 6.5. In a cell starved for oxygen, the main source of ATP becomes glycolysis, and the pyruvic or lactic acid thus formed lowers the pH in the cytosol and the mitochondrial matrix. This favors $\mathrm{IF}_1$ dimerization, leading to inhibition of ATP synthase and thereby preventing any wasteful hydrolysis of ATP. When aerobic metabolism resumes, production of pyruvic acid slows, the pH of the cytosol rises, the $\mathrm{IF}_1$ dimer is destabilized, and the inhibition of ATP synthase is lifted. $\mathrm{IF}_1$ is an intrinsically disordered protein (p. 117); it acquires a favored conformation only on interaction with ATP synthase. In many tumors and cancer cell lines, which rely more heavily on glycolysis for ATP generation, $\mathrm{IF}_1$ is expressed at unusually high levels.
+
+## Hypoxia Leads to ROS Production and Several Adaptive Responses
+
+In hypoxic cells there is an imbalance between the input of electrons from fuel oxidation in the mitochondrial matrix and transfer of electrons to molecular oxygen, leading to increased formation of reactive oxygen species. In addition to the glutathione peroxidase system (Fig. 19-18), cells have two other lines of defense against ROS (Fig. 19-34). One is regulation of pyruvate dehydrogenase (PDH), the enzyme that delivers acetyl-CoA to the citric acid cycle (Chapter 16). Under hypoxic conditions, PDH kinase phosphorylates mitochondrial PDH, inactivating it and slowing the delivery of FADH₂ and NADH from the citric acid cycle to the respiratory chain. A second means of preventing ROS formation is the replacement of one subunit of Complex IV, known as COX4-1, with another subunit, COX4-2, that is better suited to hypoxic conditions. With COX4-1, the catalytic properties of Complex IV are optimal for respiration at normal oxygen concentrations; with COX4-2, Complex IV is optimized for operation under hypoxic conditions.
+
+![](images/5993bec7bd8f9db942df8b6b2835ad193e736837abbe9f292397c1bc5dccaace.jpg)  
+FIGURE 19-33 Structure of bovine F₁-ATPase in a complex with its regulatory protein IF₁. Two F₁ molecules are viewed here from the N side, as in Figure 19-25b. The inhibitor IF₁ (red) binds to the αβ interface of the subunits in the diphosphate (ADP) conformation (α-ADP and β-ADP), freezing the two F₁ complexes and thereby blocking ATP hydrolysis (and synthesis). (Parts of the IF₁ α-helices that link the two F₁ molecules failed to resolve in the crystals of F₁ and are modeled based on the crystal structure of isolated IF₁.) [Data from PDB ID 10HH, E. Cabezon et al., Nat. Struct. Biol. 10:744, 2003.]
+
+![](images/ab20e663dcd0a38387db5e484340e889543a8acbd6ee4a667d535a314ab624e0.jpg)
+
+The changes in PDH activity and the COX4-2 content of Complex IV are both mediated by HIF-1, the hypoxia-inducible factor. HIF-1 (another intrinsically disordered protein) accumulates in hypoxic cells and, acting as a transcription factor, triggers increased synthesis of PDH kinase, COX4-2, and a protease that degrades COX4-1. HIF-1 is a master regulator of $O_{2}$ homeostasis. Recall that it also mediates the changes in glucose transport and glycolytic enzymes that produce the Warburg effect, the dependence on glycolysis (not mitochondrial respiration) for ATP production, even in the presence of sufficient oxygen (see Box 14-1).
+
+![](images/0bf15eca87a3bd0665c5d77db917c1201b41dfdea16f2d362fc426988816c0b5.jpg)
+
+![](images/07310f44d8cb876906d7db64c75f56a141a15ead6ec61d3fc1b173aed3bba1b3.jpg)
+
+When these mechanisms for dealing with ROS are insufficient, either due to genetic mutation affecting one of the protective proteins or under conditions of very high rates of ROS production, mitochondrial function is compromised. Mitochondrial damage is thought to be involved in aging, heart failure, certain rare cases of diabetes (described below), and several maternally inherited genetic diseases that affect the nervous system.
+
+## ATP-Producing Pathways Are Coordinately Regulated
+
+The major catabolic pathways have overlapping and concerted regulatory mechanisms that allow them to function together in an economical and self-regulating manner to produce ATP and biosynthetic precursors. The relative concentrations of ATP and ADP control not only the rates of electron transfer and oxidative phosphorylation but also the rates of the citric acid cycle, pyruvate oxidation, and glycolysis (Fig. 19-35). Whenever ATP consumption increases, the rate of electron transfer and oxidative phosphorylation increases. Simultaneously, the rate of pyruvate oxidation via the citric acid cycle increases, increasing the flow of electrons into
+
+FIGURE 19-34 Regulation of gene expression by hypoxia-inducible factor (HIF-1) to reduce ROS formation. Under conditions of low oxygen (hypoxia), HIF-1 is synthesized in greater amounts and acts as a transcription factor, increasing synthesis of the glucose transporter, glycolytic enzymes, pyruvate dehydrogenase kinase (PDH kinase), lactate dehydrogenase, a protease that degrades the cytochrome oxidase subunit COX4-1, and cytochrome oxidase subunit COX4-2. These changes counter the formation of ROS by decreasing the supply of NADH and $\mathrm{FADH}_2$ and making cytochrome oxidase of Complex IV more effective. [Information from D.A.Harris, Bioenergetics at a Glance, p. 36, Blackwell Science, 1995.]
+
+![](images/c7422b0bad7b6f142e370f84853a42709dc5eebb7070721deee09e0cd5f458f7.jpg)  
+FIGURE 19-35 Regulation of ATP-producing pathways. This diagram shows the coordinated regulation of glycolysis, pyruvate oxidation, the citric acid cycle, and oxidative phosphorylation by the relative concentrations of ATP, ADP, and AMP, and by NADH. High [ATP] (or low [ADP] and [AMP]) produces low rates of glycolysis, pyruvate oxidation, acetate oxidation via the citric acid cycle, and oxidative phosphorylation. All four pathways are accelerated when the use of ATP and the formation of ADP, AMP, and $\mathsf{P_i}$ increase. The ability of citrate to inhibit both glycolysis and the citric acid cycle reinforces the action of the adenine nucleotide system. In addition, increased [NADH] and [acetyl-CoA] also inhibit the oxidation of pyruvate to acetyl-CoA, and a high [NADH]/[NAD+] ratio inhibits the dehydrogenase reactions of the citric acid cycle (see Fig. 16-18).
+
+the respiratory chain. These events, in turn, can evoke an increased rate of glycolysis, increasing the rate of pyruvate formation. When conversion of ADP to ATP lowers the ADP concentration, acceptor control slows electron transfer and thus oxidative phosphorylation. Glycolysis and the citric acid cycle are also slowed, because ATP is an allosteric inhibitor of the glycolytic enzyme phosphofructokinase-1 (see Fig. 14-23) and of pyruvate dehydrogenase (see Fig. 16-18).
+
+Phosphofructokinase-1 is also inhibited by citrate, the first intermediate of the citric acid cycle. When the cycle is "idling," citrate accumulates within mitochondria, then is transported into the cytosol. When the cytosolic concentrations of both ATP and citrate rise, they produce a concerted allosteric inhibition of phosphofructokinase-1 that is greater than the sum of their individual effects, slowing glycolysis.
+
+## SUMMARY 19.3 Regulation of Oxidative Phosphorylation
+
+\- Oxidative phosphorylation is regulated by cellular energy demands. Intracellular [ADP] and the mass-action ratio [ATP]/([ADP][ $\mathbf{P_i}$ ]) are measures of a cell's energy status.
+
+In hypoxic (oxygen-deprived) cells, a protein inhibitor blocks ATP hydrolysis by the reverse activity of ATP synthase, preventing a drastic drop in [ATP].
+
+The adaptive responses to hypoxia, mediated by HIF-1, slow electron transfer into the respiratory chain and modify Complex IV to act more efficiently under low-oxygen conditions.
+
+■ ATP and ADP concentrations set the rate of electron transfer through the respiratory chain via a series of coordinated controls on respiration, glycolysis, and the citric acid cycle.
+
+## 19.4 Mitochondria in Thermogenesis, Steroid Synthesis, and Apoptosis
+
+Although ATP production is a central role for the mitochondrion, this organelle has other functions that, in specific tissues or under specific circumstances, are also crucial. In adipose tissue, mitochondria generate heat to protect vital organs from low ambient temperature; in the adrenal glands and the gonads, mitochondria are the sites of steroid hormone synthesis; and in most or all tissues, they are key participants in apoptosis (programmed cell death).
+
+## Uncoupled Mitochondria in Brown Adipose Tissue Produce Heat
+
+We noted above that respiration slows when the cell is adequately supplied with ATP. There is a remarkable and instructive exception to this general rule. Most newborn mammals, including humans, have a type of adipose tissue called brown adipose tissue (BAT; p. 852), in which P1 fuel oxidation serves not to produce ATP but to generate heat to keep the newborn warm. This specialized adipose tissue is brown because of the presence of large numbers of mitochondria and thus high concentrations of cytochromes, with heme groups that are strong absorbers of visible light.
+
+![](images/a6e9fb044bc70c367fb0fdd5bf6bd6e0d45bd73ab6608e340eb8eafdae747514.jpg)
+
+![](images/33b404395fe70ac145b4c03f863a52f00fbd71a95f7f80cdc4bf23d98cfd2dfb.jpg)
+
+![](images/9fb37417a9073b6a56e54fcc1fdf416243ac234f5ed04208eba82623a08486a2.jpg)  
+FIGURE 19-36 Two mechanisms of thermogenesis in mitochondria. UCP1, an uncoupling protein in the mitochondria of brown adipose tissue, causes the energy conserved by proton pumping to be dissipated as heat by providing  
+an alternative route for protons to reenter the mitochondrial matrix. A futile cycle in which creatine is phosphorylated by creatine kinase (CK), using ATP and producing ADP transported by the ATP/ADP carrier (AAC), also generates heat.
+
+There are at least two mechanisms of thermogenesis. The mitochondria of brown adipocytes are much like those of other mammalian cells, except in having a unique protein in their inner membrane. Uncoupling protein 1 (UCP1), a long-chain fatty acid/H $^{+}$ symporter, provides a path for protons to return to the matrix without passing through the F $_{0}$ F $_{1}$ complex (Fig. 19-36). P5 As a result of this short-circuiting of protons, the energy of oxidation is not conserved by ATP formation but is dissipated as heat, which contributes to maintaining body temperature. However, UCP1 is only part of the story, and heat generation occurs in mammals even when it is absent. The thermogenic action of UCP1 is supplemented by a futile cycle involving creatine and phosphocreatine (Fig. 19-36). ATP synthesized in the mitochondrial matrix is exported to the irtermembrane space via the adenine nucleotide translocator, an ADP/ATP antiporter. There, the ATP is used to phosphorylate creatine to create phosphocreatine and ADP. The ADP is transported back into the matrix. Hydrolysis of phosphocreatine completes a futile cycle that liberates heat.
+
+Hibernating animals also depend on the activity of uncoupled BAT mitochondria to generate heat during their long dormancy (see Box 17-1). We will return to the role of UCP1 when we discuss the regulation of body mass in Chapter 23 (pp. 867–869).
+
+## Mitochondrial P-450 Monooxygenases Catalyze Steroid Hydroxylations
+
+P1 Mitochondria are the site of biosynthetic reactions that produce steroid hormones, including the sex hormones, glucocorticoids, mineralocorticoids, and vitamin D hormone. These compounds are synthesized from cholesterol or a related sterol in a series of hydroxylations catalyzed by enzymes of the cytochrome P-450 family (see Box 21-1), all of which have a critical heme group (its absorption at 450 nm gives this family its name). In the hydroxylation reactions, one atom of molecular oxygen is incorporated into the substrate and the second is reduced to $H_{2}O$ , making cytochrome P-450 enzymes monooxygenases:
+
+$$
+\mathrm{R} - \mathrm{H} + \mathrm{O} _ {2} + \mathrm{NADPH} + \mathrm{H} ^ {+} \longrightarrow \mathrm{R} - \mathrm{OH} + \mathrm{H} _ {2} \mathrm{O} + \mathrm{NADP} ^ {+}
+$$
+
+In this reaction, two species are oxidized: NADPH and R—H.
+
+There are dozens of P-450 enzymes, all situated in the inner mitochondrial membrane with their catalytic site exposed to the matrix. Steroidogenic cells are packed with mitochondria specialized for steroid synthesis; the mitochondria are generally larger than those in other tissues and have more extensive and highly convoluted inner membranes (Fig. 19-37).
+
+![](images/489cb96f055ab6a4376bab46b62bca7d9e3fc8646e687c40703e4f360ca35304.jpg)  
+FIGURE 19-37 Mitochondria of adrenal gland, specialized for steroid synthesis. As seen in this electron micrograph of a thin section of adrenal gland, mitochondria are profuse and have extensive cristae, providing a large surface for the P-450 enzymes of the inner membrane. [Don Fawcett/Science Source]
+
+![](images/4bb19c32f3b437c0d07025f8e04c6cde81f31ce93dbbbb852b0f73e53d039367.jpg)
+
+![](images/5c552c11878d752a1979861b061f01f12081281cb7e64e5051601a50e65244c2.jpg)
+
+![](images/25511af4a90d6b115987909565b0861372282415ae8af7ade9aace5100ce1ac3.jpg)
+
+The path of electron flow in the mitochondrial P-450 system is complex, involving a flavoprotein and an iron-sulfur protein that carry electrons from NADPH to the P-450 heme (Fig. 19-38). All P-450 enzymes have a heme that interacts with $O_{2}$ and a substrate-binding site that confers specificity.
+
+Another large family of P-450 enzymes is found in the endoplasmic reticulum of hepatocytes. These enzymes catalyze reactions similar to the mitochondrial P-450 reactions, but their substrates include a wide variety of hydrophobic compounds, many of which are xenobiotics — compounds not found in nature but synthesized industrially. The P-450 enzymes of the ER have very broad and overlapping substrate specificities. Hydroxylation of the hydrophobic compounds makes them more water-soluble, and they can then be cleared by the kidneys and excreted in urine. Among the substrates for these P-450 oxygenases are many commonly used prescription drugs. Metabolism by P-450 enzymes limits a drug's lifetime in the bloodstream and thus its therapeutic effects. Humans differ in their genetic complement of P-450 enzymes in the ER, as well as in the extent to which certain P-450 enzymes have been induced, such as by a history of ethanol ingestion. In principle, therefore, an individual's genetics and personal history should be considered in determining therapeutic drug doses. In practice, this precise tailoring of dosage is not yet economically feasible, but it may become so.
+
+## Mitochondria Are Central to the Initiation of Apoptosis
+
+Apoptosis, also called programmed cell death, is a process in which individual cells die for the good of the organism, such as in the course of normal embryonic development, and the organism conserves the cells' molecular components (amino acids, nucleotides, and so forth). Apoptosis may be triggered by an external signal, acting at a plasma membrane receptor, or by internal events such as DNA damage, viral infection, oxidative stress from the accumulation of ROS, or other stress such as a heat shock.
+
+P1 Mitochondria play a critical role in triggering apoptosis. When a stressor gives the signal for cell death, one early consequence is an increase in the permeability of the outer mitochondrial membrane, allowing cytochrome c to escape from the intermembrane space into the cytosol (Fig. 19-39). The increased permeability is due to the opening of the permeability transition pore complex (PTPC), a multisubunit protein in the outer membrane; its opening and closing are affected by several proteins that stimulate or suppress apoptosis. When released into the cytosol, cytochrome c interacts with monomers of the protein Apaf-1 (apoptosis protease activating factor-1), causing the formation of an apoptosome composed of seven Apaf-1 and seven cytochrome c molecules. The apoptosome provides the platform on which the proenzyme procaspase-9 is activated to caspase-9, a member of a family of highly specific proteases, called the caspases, involved in apoptosis. These cysteine proteases cleave proteins only on the carboxyl-terminal side of Asp residues, thus the name “caspases.” Caspase-9 initiates a cascade of proteolytic activations, with one caspase activating a second, and this in turn activating a third, and so forth (see Fig. 12-42). Note that this role of cytochrome c in apoptosis is a clear case of “moonlighting,” in that one protein plays two very different roles in the cell (see Box 16-1).
+
+## SUMMARY 19.4 Mitochondria in Thermogenesis, Steroid Synthesis, and Apoptosis
+
+In the brown adipose tissue of newborns, electron transfer is uncoupled from ATP synthesis, and the energy of fuel oxidation is dissipated as heat. Hibernating animals use this strategy to avoid freezing.
+
+■ Hydroxylation reaction steps in the synthesis of steroid hormones in steroidogenic tissues (adrenal gland, gonads, liver, and kidney) take place in specialized mitochondria. Key reactions are catalyzed by a family of P-450 monooxygenases.
+
+![](images/280d4f8dd2d1fc5d722176f8e77f90919013da3dba98ee26582652376e17774e.jpg)  
+FIGURE 19-38 Path of electron flow in mitochondrial cytochrome P-450 reactions in adrenal gland. Two electrons are transferred from NADPH to the FAD-containing flavoprotein adrenodoxin reductase, which passes the  
+electrons, one at a time, to adrenodoxin, a small, soluble 2Fe-2S protein. Adrenodoxin passes single electrons to the cytochrome P-450 hydroxylase, which interacts directly with $\mathrm{O}_2$ and the substrate (R—H) to form the products, $\mathrm{H}_2\mathrm{O}$ and R—OH.
+
+![](images/74469fef0017e65ff3de4570cd16d63a07519d7aaf407e737df88052966eee4e.jpg)  
+FIGURE 19-39 Role of cytochrome c in apoptosis. Cytochrome c is a small, soluble, mitochondrial protein, located in the intermembrane space, that carries electrons between Complex III and Complex IV during respiration. In a completely separate role, as outlined here, it acts as a trigger for apoptosis by stimulating the activation of a family of proteases called caspases. [Information from S. J. Riedl and G. S. Salvesen, Nat. Rev. Mol. Cell Biol. 8:409, 2007, Fig. 3.]  
+■ Mitochondria play a central role in apoptosis. Mitochondrial cytochrome c, released into the cytosol, participates in activation of caspase-9, one of the proteases involved in apoptosis.
+
+## 19.5 Mitochondrial Genes: Their Origin and the Effects of Mutations
+
+Mitochondria contain their own genome, a circular, double-stranded DNA (mtDNA) molecule. Each of the hundreds or thousands of mitochondria in a typical cell has about five copies of this genome. The human mitochondrial chromosome (Fig. 19-40) contains 37 genes (16,569 bp), including 13 that encode subunits of proteins of the respiratory chain (Table 19-6); the remaining genes code for rRNA and tRNA molecules essential to the protein-synthesizing machinery of mitochondria. To synthesize these 13 protein subunits, mitochondria have their own ribosomes, distinctly different from those in the cytoplasm. The great majority of mitochondrial proteins—about 1,200 different types—are encoded by nuclear genes, synthesized on cytoplasmic ribosomes, then imported into and assembled in the mitochondria (Chapter 27).
+
+## Mitochondria Evolved from Endosymbiotic Bacteria
+
+The existence of mitochondrial DNA, ribosomes, and tRNAs supports the theory of the endosymbiotic origin of mitochondria (see Fig. 1-37), which holds that the first organisms capable of aerobic metabolism, including respiration-linked ATP production, were bacteria. P2 Primitive eukaryotes that lived anaerobically (by fermentation) acquired the ability to carry out oxidative phosphorylation when they established a symbiotic relationship with bacteria living in their cytosol. After a long period of evolution and the movement of many bacterial
+
+<table><tr><td colspan="3">TABLE 19-6 Respiratory Proteins Encoded by Mitochondrial Genes in Humans</td></tr><tr><td>Complex</td><td>Number of subunits</td><td>Number of subunits encoded by mtDNA</td></tr><tr><td>I NADH dehydrogenase</td><td>45</td><td>7</td></tr><tr><td>II Succinate dehydrogenase</td><td>4</td><td>0</td></tr><tr><td>III Ubiquinone:cytochrome c oxidoreductase</td><td>11</td><td>1</td></tr><tr><td>IV Cytochrome oxidase</td><td>13</td><td>3</td></tr><tr><td>V ATP synthase</td><td>8</td><td>2</td></tr></table>
+
+![](images/b0bc557a3f8292a7238c82c1b9eb1756be0efc1ae4ca33829e20d62ff4662a98.jpg)
+
+genes into the nucleus of the "host" eukaryote, the endosymbiotic bacteria eventually became mitochondria.
+
+This hypothesis presumes that early free-living bacteria had the enzymatic machinery for oxidative phosphorylation. And it predicts that their modern bacterial descendants must have respiratory chains closely similar to those of modern eukaryotes. They do. Aerobic bacteria carry out NAD-linked electron transfer from substrates to $O_{2}$ , coupled to the phosphorylation of cytosolic ADP. The dehydrogenases are located in the bacterial cytosol, and the respiratory chain in the plasma membrane. The electron carriers translocate protons outward across the plasma membrane as electrons are transferred to $O_{2}$ . Bacteria such as E. coli have $F_{0}F_{1}$ complexes in their plasma membranes; the $F_{1}$ portion protrudes into the cytosol and catalyzes ATP synthesis from ADP and $P_{i}$ as protons flow back into the cell through the proton channel of $F_{0}$ .
+
+The respiration-linked extrusion of protons across the bacterial plasma membrane also provides the driving force for other processes. Certain bacterial transport systems bring about uptake of extracellular nutrients (lactose, for example) against a concentration gradient, in symport with protons. And the rotary motion of bacterial flagella is provided by "proton turbines," molecular rotary motors driven not by ATP but directly by the transmembrane electrochemical potential generated by respiration-linked proton pumping (Fig. 19-41). P2 It seems likely that the chemiosmotic mechanism evolved early, before the emergence of eukaryotes.
+
+FIGURE 19-40 Mitochondrial genes and mutations. A map of human mitochondrial DNA, showing the genes that encode proteins of Complex I, the NADH dehydrogenase (ND1 to ND6); the cytochrome b of Complex III (Cyt b); the subunits of cytochrome oxidase, Complex IV (COI to COIII); and two subunits of ATP synthase (ATPase6 and ATPase8). The colors of the genes correspond to those of the complexes shown in Figure 19-7. Also included here are the genes for ribosomal RNAs (rRNA) and for some mitochondrion-specific transfer RNAs; tRNA specificity is indicated by the one-letter codes for amino acids. Arrows indicate the positions of mutations that cause Leber hereditary optic neuropathy (LHON) and myoclonic epilepsy with ragged-red fibers (MERRF) syndrome. Numbers in parentheses indicate the position of the altered nucleotides (nucleotide 1 is at the top of the circle, and numbering proceeds counterclockwise). [Information from M. A. Morris, J. Clin. Neurophthalmol. 10:159, 1990.]
+
+![](images/47b245698f857000658e749ce459d2d86738c221565f93869c118c2d5f8d82c5.jpg)  
+FIGURE 19-41 Rotation of bacterial flagella by proton-motive force. The shaft and rings at the base of the flagellum make up a rotary motor that has been called a "proton turbine." Protons ejected by electron transfer flow back into the cell through the turbine, causing rotation of the shaft of the flagellum. This motion differs fundamentally from the motion of muscle and of eukaryotic flagella and cilia, for which ATP hydrolysis is the energy source.
+
+## Mutations in Mitochondrial DNA Accumulate throughout the Life of the Organism
+
+The respiratory chain is the major producer of reactive oxygen species in cells, so mitochondrial contents, including the mitochondrial genome, suffer the greatest exposure
+
+(b)
+
+to, and damage by, ROS. Moreover, the mitochondrial DNA replication system is less effective than the nuclear system at correcting mistakes made during replication and at repairing DNA damage. As a consequence, defects in mtDNA accumulate over time. One theory of aging is that this gradual accumulation of defects is the primary cause of many of the “symptoms” of aging, which include, for example, progressive weakening of skeletal and heart muscle.
+
+A unique feature of mitochondrial inheritance is the variation among individual cells, and between one individual organism and another, in the effects of a mtDNA mutation. A typical cell has hundreds or thousands of mitochondria, each with multiple copies of its own genome (Fig. 19-2b). Animals inherit essentially all of their mitochondria from the female parent. Eggs are large and contain $10^{5}$ or $10^{6}$ mitochondria; sperm are much smaller and contain far fewer mitochondria—perhaps 100 to 1,000. Furthermore, there is an active mechanism for targeting sperm-derived mitochondria for degradation in the fertilized egg. Just after fertilization, maternal phagosomes migrate to the site of sperm entry, engulf sperm mitochondria, and degrade them.
+
+Suppose that, in a female organism, damage to one mitochondrial genome occurs in a germ cell from which oocytes develop, such that the germ cell contains mainly mitochondria with wild-type genes but one mitochondrion with a mutant gene. During the course of oocyte maturation, as this germ cell and its descendants repeatedly divide, the defective mitochondrion replicates and its progeny, all defective, are randomly distributed to daughter cells. Eventually, the mature egg cells contain different proportions of the defective mitochondria. When an egg cell is fertilized and undergoes the many divisions of embryonic development, the resulting somatic cells differ in their proportion of mutant mitochondria (Fig. 19-42a). This heteroplasmy (in contrast to homoplasmy, in which every mitochondrial genome in every cell is the same) results in mutant phenotypes of varying degrees of severity. Cells (and tissues) containing mostly wild-type mitochondria have the wild-type phenotype; they are essentially normal. Other heteroplasmic cells have intermediate phenotypes, some almost normal, others (with a high proportion of mutant mitochondria) abnormal (Fig. 19-42b). If the abnormal phenotype is associated with a disease, individuals with the same mtDNA mutation may have disease symptoms of differing severity—depending on the number and distribution of affected mitochondria.
+
+![](images/1bc562bade7a46060836dee08ede3553d207fc4553dec8f37755143f41ea50b5.jpg)
+
+## Some Mutations in Mitochondrial Genomes Cause Disease
+
+![](images/16e8feb1c4bae62f4e7bfe49941eb4b3439372824d7ef1364871dd3ee3397774.jpg)
+
+About 1 in 5,000 people have a disease-causing mutation in a mitochondrial protein that reduces the cell's capacity to produce ATP. A growing number of these diseases have been attributed to mutations in mitochondrial genes. Some tissues and cell types—neurons,
+
+FIGURE 19-42 Heteroplasmy in mitochondrial genomes. (a) When a mature egg cell is fertilized, all of the mitochondria in the resulting diploid cell (zygote) are maternal; none come from the sperm. If some fraction of the maternal mitochondria have a mutant gene, the random distribution of mitochondria during subsequent cell divisions yields some daughter cells with mostly mutant mitochondria, some with mostly wild-type mitochondria, and some in between. Thus daughter cells show a varying degree of heteroplasmy. (b) Different degrees of heteroplasmy produce different cellular phenotypes. This section of human muscle tissue is from an individual with defective cytochrome oxidase. The cells were stained so that wild-type cells are blue and cells with mutant cytochrome oxidase are brown. As the micrograph shows, different cells in the same tissue are affected to different degrees by the mitochondrial mutation. [(b) Courtesy of Rob Taylor. Reprinted with permission from R. W. Taylor and D. M. Turnbull, Nat. Rev. Genet. 6:389, 2005, Fig. 2a.]
+
+![](images/23f8bdd2ef9f90d373220320fb1254b44bd9c0a5c455766279344c3436786367.jpg)
+
+![](images/7b0852080e4f4be212ad912605cbfa2baa74efff2fe0f8e735bb134afe925dbc.jpg)
+
+![](images/08fcd23c1ec2ce7c2289e7d18be1bb19b7340a4a0cce5dfe4037e9790188053c.jpg)
+
+myocytes of both skeletal and cardiac muscle, and $\beta$ cells of the pancreas—are less able than others to tolerate lowered ATP production and are therefore more affected by mutations in mitochondrial proteins.
+
+A group of genetic diseases known as the mitochondrial encephalomyopathies affect primarily the brain and skeletal muscle. These diseases are invariably inherited from the mother, because, as noted above, a developing embryo derives all its mitochondria from the egg. The rare disease Leber hereditary optic neuropathy (LHON) affects the central nervous system, including the optic nerves, causing bilateral loss of vision in early adulthood. A single base change in the mitochondrial gene ND4 (Fig. 19-40) changes an Arg residue to a His residue in a polypeptide of Complex I, and the result is mitochondria partially defective in electron transfer from NADH to ubiquinone. Although these mitochondria can produce some ATP by electron transfer from succinate, they apparently cannot supply sufficient ATP to support the very active metabolism of neurons, including the optic nerve. A single base change in the mitochondrial gene for cytochrome b, a component of Complex III, also produces LHON, demonstrating that the pathology results from a general reduction of mitochondrial function, not specifically from a defect in electron transfer through Complex I.
+
+A mutation in the mitochondrial gene ATP6 affects the proton pore in ATP synthase, leading to low rates of ATP synthesis while leaving the respiratory chain intact. Oxidative stress due to the continued supply of electrons from NADH increases the production of ROS, and the damage to mitochondria caused by ROS sets up a vicious cycle. Half of individuals with this mutant gene die within days or months of birth.
+
+Myoclonic epilepsy with ragged-red fibers (MERRF) syndrome is caused by a mutation in the mitochondrial gene that encodes a tRNA specific for lysine (tRNA $^{Lys}$ ). This disease, characterized by uncontrollable muscular jerking, results from defective production of several of the proteins that require mitochondrial tRNAs for their synthesis. Skeletal muscle fibers of individuals with MERRF syndrome have abnormally shaped mitochondria that sometimes contain paracrystalline structures (Fig. 19-43). Other mutations in mitochondrial genes are believed to be responsible for the progressive muscular weakness that characterizes mitochondrial myopathy and for enlargement and deterioration of the heart muscle in hypertrophic cardiomyopathy.
+
+If a prospective mother is known to carry a pathogenic mitochondrial gene, the technique of mitochondrial donation can circumvent the passage of that mutant gene to her offspring. A prospective mother's nuclear genes are microscopically transplanted into an enucleated ovum from a donor with healthy mitochondria, then the ovum is fertilized in vitro and the resulting embryo is transplanted into the mother's uterus. This and similar "three-parent baby" procedures, which were approved in the United Kingdom in 2015, raise ethical issues that are being vigorously debated.
+
+![](images/2418968723666714dd4498c25698da61e6af0e96a903564d32052741cbf82054.jpg)  
+FIGURE 19-43 Paracrystalline inclusions in MERRF syndrome mitochondrion. Electron micrograph of an abnormal mitochondrion from the muscle of an individual with MERRF syndrome, showing the paracrystalline protein inclusions sometimes present in the mutant mitochondria. [From Regionalized Pathology Correlates with Augmentation of mtDNA Copy Numbers in a Patient with Myoclonic Epilepsy with Ragged-Red Fibers (MERRF-Syndrome). PLOS ONE, Anja Brinckmann et al., October 20, 2010. https://doi.org/10.1371/journal.pone.0013513]
+
+Mitochondrial disease can also result from mutations in any of the \~1,200 nuclear genes that encode mitochondrial proteins. For example, a mutation in one of the nuclear-encoded proteins of Complex IV, COX6B1, results in severe defects in brain development and thickened walls of the heart muscle. Other nuclear genes encode proteins essential for the assembly of mitochondrial complexes. Mutations in these genes can also lead to serious mitochondrial disease.
+
+## A Rare Form of Diabetes Results from Defects in the Mitochondria of Pancreatic $\beta$ Cells
+
+![](images/e8b060da9dec3ab93c379c3908c013105003343959a05648a00292590920e976.jpg)
+
+The insulin so important to glucose homeostasis in all humans is produced and exported from pancreatic $\beta$ cells. Insulin export hinges on the ATP concentration in those cells. When blood glucose is high, $\beta$ cells take up glucose and oxidize it by glycolysis and the citric acid cycle, raising [ATP] above a threshold level (Fig. 19-44). When [ATP] exceeds this threshold, an ATP-gated K $^{+}$ channel in the plasma membrane closes, depolarizing the membrane and triggering insulin release (see Fig. 23-24).
+
+Normal insulin release can be compromised in several ways. Pancreatic $\beta$ cells with defects in any aspect of oxidative phosphorylation may not be able to increase [ATP] above this threshold, and the resulting failure of insulin release effectively produces diabetes. For example, defects in the gene for glucokinase, the hexokinase IV isozyme present in $\beta$ cells, lead to a rare form of diabetes called MODY2 (maturity onset diabetes of the young); low glucokinase activity prevents the generation of ATP concentrations above the threshold needed to trigger insulin secretion. Mutations in the mitochondrial tRNA $^{Lys}$ or tRNA $^{Leu}$ genes also compromise mitochondrial ATP production by limiting the expression of electron transfer components encoded in the mitochondrial DNA. Type 2 diabetes mellitus is common among individuals with these defects (although such cases make up a very small fraction of all cases of diabetes).
+
+![](images/8c1b7c5fd986492e3d8a30b479f6af0431abfc31f5d761293e18adf5f9849410.jpg)  
+FIGURE 19-44 A mitochondrial defect prevents insulin secretion. In the normal situation, as depicted here, when the blood glucose level rises, production of ATP in $\beta$ cells increases. ATP, by blocking $\mathsf{K}^+$ channels, cepolarizes the plasma membrane and thus opens voltage-gated $\mathrm{Ca^{2+}}$ channels. The resulting influx of $\mathrm{Ca^{2+}}$ triggers exocytosis of insulin-containing secretory vesicles, releasing insulin. When oxidative phosphorylation in $\beta$ cells is defective, [ATP] is never sufficient to trigger this process, and insulin is not released.
+
+When nicotinamide nucleotide transhydrogenase, which is part of the mitochondrial defense against ROS (Fig 19-18), is genetically defective, the accumulation of ROS damages mitochondria, slowing ATP production and blocking insulin release by $\beta$ cells (Fig. 19-44). Damage caused by ROS, including damage to mtDNA, may also underlie other human diseases; there is some evidence for its involvement in Alzheimer, Parkinson, and Huntington diseases and in heart failure, as well as in aging.
+
+## SUMMARY 19.5 Mitochondrial Genes: Their Origin and the Effects of Mutations
+
+A small proportion of human mitochondrial proteins, 13 in all, are encoded by the mitochondrial genome and synthesized in mitochondria. About 1,200 mitochondrial proteins are encoded by nuclear genes and imported into mitochondria after their synthesis.
+
+■ Mitochondria arose from aerobic bacteria that entered into an endosymbiotic relationship with ancestral eukaryotes.
+
+■ Mutations in the mitochondrial genome accumulate over the life of the organism. Mutations in nuclear or mitochondrial genes that encode components of the respiratory chain, ATP synthase, and the ROS-scavenging system, and even in tRNA genes, can cause a variety of human diseases, which often most severely affect muscle, heart, pancreatic $\beta$ cells, and brain.
+
+It is possible to combine the mitochondria from one woman with the nuclear genes of another to create an ovum free of a mutation that would have led to a mitochondrial disease.
+
+■ Mitochondrial defects in pancreatic $\beta$ cells that limit ATP production when glucose levels are high can compromise normal insulin release and give rise to a form of type 2 diabetes.
+
+## KEY TERMS
+
+Terms in bold are defined in the glossary.
+
+chemiosmotic theory 659  
+cristae 660  
+respiratory chain 661  
+flavoprotein 662  
+reducing equivalent 662  
+ubiquinone (coenzyme Q, Q) 662  
+cytochromes 663  
+iron-sulfur protein 664  
+Rieske iron-sulfur protein 664  
+Complex I 665  
+NADH dehydrogenase 666  
+vectorial 666  
+Complex II 667  
+succinate dehydrogenase 667  
+reactive oxygen species (ROS) 668  
+superoxide radical $(^{*}\mathrm{O}_{2}^{-})$ 668  
+Complex III 668  
+cytochrome $bc_{1}$ complex 668  
+Q cycle 668  
+Complex IV 669
+
+cytochrome oxidase 669  
+respirasome 671  
+proton-motive force 673  
+ATP synthase 675 $\mathbf{F}_1$ ATPase 677  
+c ring 680  
+rotational catalysis 680  
+binding-change model 681  
+P/O ratio 682 $\mathrm{P / 2e^{-}}$ ratio 682  
+malate-aspartate shuttle 684  
+glycerol 3-phosphate shuttle 684  
+acceptor control 687  
+mass-action ratio (Q) 687  
+brown adipose tissue (BAT) 690  
+uncoupling protein 1 (UCP1) 690  
+cytochrome P-450 690  
+xenobiotics 691  
+apoptosis 691  
+apoptosome 691  
+caspase 691  
+heteroplasmy 694  
+homoplasmy 694
+
+## PROBLEMS
+
+![](images/9dc0d931de3309f8af567649336fbb507091d187b9e79a19e7b783cb10a2e2bb.jpg)
+
+1. Oxidation-Reduction Reactions Complex I, the NADH dehydrogenase complex of the mitochondrial respiratory chain, promotes the following series of oxidation-reduction reactions, in which $Fe^{3+}$ and $Fe^{2+}$ represent the iron in iron-sulfur centers, Q is ubiquinone, $QH_{2}$ is ubiquinol, and E is the enzyme:
+
+(1) $\mathrm{NADH} + \mathrm{H}^{+} + \mathrm{E - FMN}\longrightarrow \mathrm{NAD}^{+} + \mathrm{E - FMNH}_{2}$
+
+(2) $\mathrm{E - FMNH_2 + 2Fe^{3 + } \longrightarrow E - FMN + 2Fe^{2 + } + 2H^+}$
+
+(3) $2\mathrm{Fe}^{2+} + 2\mathrm{H}^{+} + \mathrm{Q}\longrightarrow 2\mathrm{Fe}^{3+} + \mathrm{QH}_{2}$
+
+Sum: $\mathrm{NADH} + \mathrm{H}^{+} + \mathrm{Q}\longrightarrow \mathrm{NAD}^{+} + \mathrm{QH}_{2}$
+
+For each of the three reactions catalyzed by Complex I, identify (a) the electron donor, (b) the electron acceptor, (c) the conjugate redox pair, (d) the reducing agent, and (e) the oxidizing agent.
+
+2. All Parts of Ubiquinone Have a Function In electron transfer, only the quinone portion of ubiquinone undergoes oxidation-reduction; the isoprenoid side chain remains unchanged. What is the function of this chain?
+
+3. Use of FAD Rather Than $\mathrm{NAD^{+}}$ in Succinate Oxidation All the dehydrogenases of glycolysis and the citric acid cycle use $\mathrm{NAD^{+}}$ ( $E^{\prime \circ}$ for $\mathrm{NAD^{+} / NADH}$ is $-0.32\mathrm{V}$ ) as electron acceptor except succinate dehydrogenase, which uses covalently bound FAD ( $E^{\prime \circ}$ for $\mathrm{FAD^{+} / FADH_{2}}$ in this enzyme is $0.050\mathrm{V}$ ). Suggest why FAD is a more appropriate electron acceptor than $\mathrm{NAD^{+}}$ in the dehydrogenation of succinate, based on the $E^{\prime \circ}$ values of fumarate/succinate ( $E^{\prime \circ} = 0.031\mathrm{V}$ ), $\mathrm{NAD^{+} / NADH}$ , and the succinate dehydrogenase $\mathrm{FAD / FADH_{2}}$ .
+
+![](images/6cab386b155ca203bfc47f88cde4d793bb2d42ce42351d7d54b8f0ca1bbeac38.jpg)
+
+4. Degree of Reduction of Electron Carriers in the Respiratory Chain Mitochondrial conditions determine the degree of reduction of each carrier in the respiratory chain. For example, when NADH and $O_{2}$ are abundant, the steady-state degree of reduction of the carriers decreases as electrons pass from the substrate to $O_{2}$ . When electron transfer is blocked, the carriers before the block become more reduced and those beyond the block become more oxidized (see Fig. 19-6). For each of the mitochondrial conditions listed, predict the state of oxidation of ubiquinone and cytochromes b, c₁, c, and $a + a_{3}$ .
+
+(a) Abundant NADH and $O_{2}$ , but cyanide added
+
+(b) Abundant NADH, but $O_{2}$ exhausted
+
+(c) Abundant $\mathrm{O}_2$ , but NADH exhausted
+
+(d) Abundant NADH and $O_{2}$
+
+5. Effect of Rotenone and Antimycin A on Electron Transfer Rotenone, a toxic natural product from plants, strongly inhibits NADH dehydrogenase of insect and fish mitochondria. Antimycin A, a toxic antibiotic, strongly inhibits the oxidation of ubiquinol.
+
+(a) Explain why rotenone ingestion is lethal to some insect and fish species.
+
+(b) Explain why antimycin A is a poison.
+
+(c) Given that rotenone and antimycin A are equally effective in blocking their respective sites in the electron-transfer chain, which would be a more potent poison? Explain.
+
+![](images/025b741936744cc146a50daf1e049fd357aef76395d4b4695d1a12a250121fb1.jpg)
+
+![](images/8117e39cbd8731b7428bbeb5cb38df3d03cdbd9b3dfcef85cd0e10620a4f4a1d.jpg)
+
+6. Uncouplers of Oxidative Phosphorylation In normal mitochondria, the rate of electron transfer is tightly coupled to the demand for ATP. When the rate of ATP use is relatively low, the rate of electron transfer is low; when demand for ATP increases, the electron-transfer rate increases. Under these conditions of tight coupling, the number of ATP molecules produced per atom of oxygen consumed when NADH is the electron donor—the P/O ratio—is about 2.5.
+
+(a) Predict the effect of a relatively low and a relatively high concentration of uncoupling agent on the rate of electron transfer and the P/O ratio.
+
+(b) Ingestion of uncouplers causes profuse sweating and an increase in body temperature. Explain this phenomenon in molecular terms. What happens to the P/O ratio in the presence of uncouplers?
+
+(c) Physicians used to prescribe the uncoupler 2,4-dinitrophenol (DNP) as a weight-reducing drug. How could this agent, in principle, serve as a weight-reducing aid? Physicians no longer prescribe uncoupling agents, because some deaths occurred following their use. Why might the ingestion of uncouplers cause death?
+
+7. Effects of Valinomycin on Oxidative Phosphorylation When investigators add the antibiotic valinomycin (see Fig. 11-43) to actively respiring mitochondria, several things happen: the yield of ATP decreases, the rate of $\mathrm{O}_2$ consumption increases, heat is released, and the pH gradient across the inner mitochondrial membrane increases. Does valinomycin act as an uncoupler or as an inhibitor of oxidative phosphorylation? Explain the experimental observations in terms of the antibiotic's ability to transfer $\mathbf{K}^{+}$ ions across the inner mitochondrial membrane.
+
+8. Cellular ADP Concentration Controls ATP Formation Although ATP synthesis requires both ADP and $P_{i}$ , the rate of synthesis depends mainly on the concentration of ADP, not $P_{i}$ . Why?
+
+9. Reactive Oxygen Species Describe the role played by superoxide dismutase in ameliorating the effects of reactive oxygen species.
+
+10. How Many Protons in a Mitochondrion? Electron transfer translocates protons from the mitochondrial matrix to the external medium, establishing a pH gradient across the inner membrane (outside more acidic than inside). The tendency of protons to diffuse back into the matrix is the driving force for ATP synthesis by ATP synthase. During oxidative phosphorylation by a suspension of mitochondria in a medium of pH 7.4, the measured pH of the matrix is 7.7.
+
+(a) Calculate $[H^{+}]$ in the external medium and in the matrix under these conditions.
+
+(b) What is the outside-to-inside ratio of $[H^{+}]$ ? How much energy for ATP synthesis is available in this concentration difference. (Hint: See Eqn 11-4, p. 392.)
+
+(c) Calculate the number of protons in a respiring liver mitochondrion, assuming its inner matrix compartment is a sphere of diameter $1.5 \mu m$ .
+
+(d) From these data, is the pH gradient alone sufficient to generate ATP?
+
+(e) If not, suggest how the necessary energy for synthesis of ATP arises.
+
+11. Rate of ATP Turnover in Rat Heart Muscle Rat heart muscle operating aerobically fills more than 90% of its ATP needs by oxidative phosphorylation. Each gram of tissue consumes $O_{2}$ at the rate of 10.0 $\mu$ mol/min, with glucose as the fuel source.
+
+(a) Calculate the rate at which the heart muscle consumes glucose and produces ATP.
+
+(b) For a steady-state ATP concentration of 5.0 $\mu$ mol/g of heart muscle tissue, calculate the time required (in seconds) to completely turn over the cellular pool of ATP. What does this result indicate about the need for tight regulation of ATP production? (Note: Concentrations are expressed as micromoles per gram of muscle tissue because the tissue is mostly water.)
+
+12. Rate of ATP Breakdown in Insect Flight Muscle ATP production in the flight muscle of the fly Lucilia sericata results almost exclusively from oxidative phosphorylation. During flight, maintaining an ATP concentration of 7.0 $\mu$ mol/g of flight muscle requires 187 mL of $O_{2}/h\cdot g$ of body weight. Assuming that flight muscle makes up 20% of the fly's weight, calculate the rate at which the flight-muscle ATP pool turns over. How long would the reservoir of ATP last in the absence of oxidative phosphorylation? Assume that the glycerol 3-phosphate shuttle transfers the reducing equivalents and that $O_{2}$ is at 25 °C and 101.3 kPa (1 atm).
+
+$[4-^{3}H]NADH$  
+![](images/e6af930524879d0afc62a607244b79c3ce82793051960350d4deec6c25253879.jpg)
+
+13. High Blood Alanine Level Associated with Defects in Oxidative Phosphorylation Most individuals with genetic defects in oxidative phosphorylation have relatively high concentrations of alanine in their blood. Explain this in biochemical terms.
+
+14. Compartmentalization of Citric Acid Cycle Components Isocitrate dehydrogenase is found only in mitochondria, but malate dehydrogenase is found in both the cytosol and mitochondria. What is the role of cytosolic malate dehydrogenase?
+
+15. Transmembrane Movement of Reducing Equivalents Under aerobic conditions, extramitochondrial NADH must undergo oxidation by the mitochondrial respiratory chain. Consider a preparation of rat hepatocytes containing mitochondria and all the cytosolic enzymes. After the introduction of $[4-^{3}H]$ NADH, radioactivity soon appears in the mitochondrial matrix. Conversely, no radioactivity appears in the matrix after the introduction of $[7-^{14}C]$ NADH. What do these observations reveal about the oxidation of extramitochondrial NADH by the respiratory chain?
+
+![](images/bb630defcf0c0fd98cd5f3a2ca0a78e424bbbfe5f5ddef3caaa1b441c01af67f.jpg)
+
+![](images/f017d220c2cc6119fd9f5bb5c75d45d9fb4de0b2bb3db6ce547b4de4f06a1357.jpg)
+
+16. NAD Pools and Dehydrogenase Activities Although both pyruvate dehydrogenase and glyceraldehyde 3-phosphate dehydrogenase use $\mathrm{NAD^{+}}$ as their electron acceptor, the two enzymes do not compete for the same cellular NAD pool. Why?
+
+17. The Malate- $\alpha$ -Ketoglutarate Transport System n-Butylmalonate inhibits the transport system that conveys malate and $\alpha$ -ketoglutarate across the inner mitochondrial membrane (see Fig. 19-31). Suppose you add n-butylmalonate to an aerobic suspension of kidney cells using exclusively glucose as fuel. Predict the effect of this inhibitor on (a) glycolysis, (b) oxygen consumption, (c) lactate formation, and (d) ATP synthesis.
+
+18. Time Scales of Regulatory Events in Mitochondria Compare the likely time scales for the adjustments in respiratory rate caused by (a) increased [ADP] and (b) reduced $pO_{2}$ . What accounts for the difference?
+
+![](images/bf4b597e712225f776c7be16cc29f3be72c3bfcbf10e406223f336fd57b7eea3.jpg)
+
+19. The Pasteur Effect When investigators add $O_{2}$ to an anaerobic suspension of cells consuming glucose at a high rate, the rate of glucose consumption declines greatly as the cells consume the $O_{2}$ , and accumulation of lactate ceases. This effect, first observed by Louis Pasteur in the 1860s, is characteristic of most cells capable of both aerobic and anaerobic glucose catabolism.
+
+(a) Why does the accumulation of lactate cease after the addition of $O_{2}$ ?
+
+(b) Why does the presence of $O_{2}$ decrease the rate of glucose consumption?
+
+(c) How does the onset of $O_{2}$ consumption slow down the rate of glucose consumption? Explain in terms of specific enzymes.
+
+20. Respiration-Deficient Yeast Mutants and Ethanol Production Researchers can produce respiration-deficient yeast mutants (p $^{-}$ ; “petites”) from wild-type parents by treatment with mutagenic agents. The mutants lack cytochrome oxidase, a deficit that markedly affects their metabolic behavior. One striking effect is that fermentation is not suppressed by O $_{2}$ —that is, the mutants do not experience the Pasteur effect (see Problem 19). Some companies are very interested in using these mutants to ferment wood chips to ethanol for energy use. Why does the absence of cytochrome oxidase eliminate the Pasteur effect? Explain the advantages of using these mutants rather than wild-type yeast for large-scale ethanol production.
+
+![](images/2b36352593cb06bd887d469967bff8eeb7b1bbd9425b034e2212582beedb5dfb.jpg)
+
+21. Mitochondrial Disease and Cancer Mutations in the genes that encode certain mitochondrial proteins are associated with a high incidence of some types of cancer. How might defective mitochondria lead to cancer?
+
+![](images/9183e66b7d3171ce28f9aff9f794377f9b9e3d537b8e454a7f14d62215ba5ece.jpg)
+
+![](images/03f768f023694638bb02973b4f8d2ec9f878696100dcf35c51e1fa7f15772907.jpg)
+
+22. Variable Severity of a Mitochondrial Disease Different individuals with a disease caused by the same specific defect in the mitochondrial genome may have symptoms ranging from mild to severe. Explain why.
+
+![](images/50b283e43fda0887c66fc41546b4825bf4f4f844305b84f5239743e338102213.jpg)
+
+23. Diabetes as a Consequence of Mitochondrial Defects Glucokinase is essential in the metabolism of glucose in pancreatic $\beta$ cells. Humans with two defective copies of the glucokinase gene exhibit a severe, neonatal diabetes, whereas those with only one defective copy of the gene have a much milder form of the disease (maturity onset diabetes of the young, MODY2). Explain this difference in terms of the biology of the $\beta$ cell.
+
+![](images/5a7db2db6293f1587550baa435c3d08df1a2523a9d55a641f1126b1a9eddb3d3.jpg)
+
+24. Effects of Mutations in Mitochondrial Complex II Single nucleotide changes in the gene for succinate dehydrogenase (Complex II) are associated with midgut carcinoid tumors. Suggest a mechanism to explain this observation.
+
+## DATA ANALYSIS PROBLEM
+
+25. Membrane Fluidity and Respiration Rate The mitochondrial electron transfer complexes and the $F_{0}F_{1}$ ATP synthase are embedded in the inner mitochondrial membrane in eukaryotes and in the inner membrane of bacteria. Electrons are shuttled between complexes in part by coenzyme Q, or ubiquinone, a factor that migrates within the membrane. Jay Keasling and coworkers explored the effect of membrane fluidity on rates of respiration in E. coli.
+
+![](images/19c2274606fedafe88c8bc90d97ba37d575938967561fd2a7d4018499332c315.jpg)
+
+![](images/a8b42757a2e51c95e28ffe571f1ceafdad17982ccb4f75a54b7c75704a55b467.jpg)
+
+E. coli naturally adjusts its membrane lipid content to maintain membrane fluidity at different temperatures. Workers in the Keasling lab bioengineered an E. coli strain to allow them to control expression of the enzyme FabB, which catalyzes the limiting step in the synthesis of unsaturated fatty acids in E. coli.
+
+(a) How does the content of unsaturated fatty acids affect membrane fluidity?
+
+(b) The researchers were able to modulate the content of unsaturated fatty acids in the membrane lipid from 15% to 80%. They did not try to completely block synthesis of unsaturated fatty acids to extend the experimental range in the membrane to 0%. Why not?
+
+(c) When the cells were grown under aerobic conditions, the researchers found that bacterial growth rate increased as the concentration of unsaturated fatty acids in the membrane increased. However, when oxygen was very limited, the unsaturated fatty acid content of the membrane had no effect on growth rate. How might you explain this observation?
+
+(d) The researchers measured rates of respiration, finding a strong correlation between those rates and the fraction of membrane fatty acids that was unsaturated. When the unsaturated fatty acid content of the membranes was kept low, the cells accumulated pyruvate and lactate. Explain these observations.
+
+(e) Next, they measured rates of diffusion of membrane phospholipids and ubiquinone in vesicles derived from E. coli membranes. The diffusion rates increased as a function of the content of unsaturated fatty acids. These measured rates were consistent with simulations carried out to model the effects of ubiquinone diffusion on respiration. What overall conclusion can be drawn from this work?
+
+## Reference
+
+Budin, I, T. de Rond, Y. Chen, L.J.G. Chan, C.J. Petzold, and J.D. Keasling. 2018. Viscous control of cellular respiration by membrane lipid composition. Science 362:1186–1189.
+
+![](images/273c8768d60b724f0a5f719e379ab40ba8fd6cb5729f6c0f9ea0d773b0292e10.jpg)
+
+# PHOTOSYNTHESIS AND CARBOHYDRATE SYNTHESIS IN PLANTS
+
+20.1 Light Absorption 701
+
+20.2 Photochemical Reaction Centers 707
+
+20.3 Evolution of a Universal Mechanism of ATP Synthesis 716
+
+20.4 $\mathrm{CO}_{2}$ -Assimilation Reactions 719
+
+20.5 Photorespiration and the $C_{4}$ and CAM Pathways 727
+
+20.6 Biosynthesis of Starch, Sucrose, and Cellulose 733
+
+We have now reached a turning point in our study of cellular metabolism. Thus far in Part II we have described how the major metabolic fuels—carbohydrates, fatty acids, and amino acids—are degraded through converging catabolic pathways that lead to the citric acid cycle and yield their electrons to the respiratory chain, driving ATP synthesis by oxidative phosphorylation. We now turn to reductive, anabolic, divergent processes fueled by energy from the sun that take place in photosynthetic organisms, and in all other organisms, driven ultimately by the photosynthetic reduction of $CO_{2}$ .
+
+As we examine this process, these principles will emerge:
+
+P1 The capture of solar energy by photosynthetic organisms and its conversion to the chemical energy of reduced organic compounds is the ultimate source of nearly all biological energy and organic nutrients for all of the nonphotosynthetic organisms, including humans. It is arguably the most important biochemical process in the biosphere.
+
+P2 Photosynthetic organisms use tightly organized light-harvesting complexes to absorb sunlight and capture its energy in chemical form: a separation of positive and negative charge leading to electron flow. The energy from an absorbed photon moves from one antenna chlorophyll to another and another until it arrives at the reaction center where it promotes the photochemical reaction that sends electrons through a series of electron carriers.
+
+P3 The light-driven flow of electrons through specialized protein carriers is coupled to ATP synthesis. A strong reducing agent (NADPH) is also produced, and simultaneously, water is oxidized to $\mathrm{O}_2$ , which is released into the atmosphere.
+
+P4 Evolution yielded a universal mechanism for coupling ATP synthesis to the flow of electrons. A proton gradient created by electron flow is used to energize the ATP-synthesizing enzyme in microorganisms, animals, and plants.
+
+P5 The ATP and NADPH produced in the light-dependent reactions of photosynthesis provide the energy and the reducing power to convert atmospheric $\mathrm{CO}_{2}$ into simple organic compounds. High concentrations of ATP and NADPH allow the chloroplast to carry out redox reactions that are thermodynamically unfavorable.
+
+Photosynthesis encompasses two processes: the light-dependent reactions, in which sunlight provides the energy for the synthesis of ATP and NADPH, and the $CO_{2}$ -assimilation reactions, in which ATP and NADPH are used to reduce $CO_{2}$ to form triose phosphates via a set of reactions known as the Calvin cycle (Fig. 20-1). We heterotrophs are alive because the enormous energy of sunlight has been captured and tamed by autotrophs by photosynthesis and made available to us as fuel, vitamins, and building blocks. How do they do it?
+
+All vascular plants, as well as algae and cyanobacteria, carry out the same basic process of photosynthesis, but some are more amenable to study than others. Algae and cyanobacteria have been extensively studied because of the relative ease of culturing and manipulating them in the laboratory. Spinach is a vascular plant commonly used for studies of photosynthesis because of the ease of obtaining large amounts of material; and for genetic approaches, the small plant Arabidopsis thaliana is a favorite. What we say here about photosynthesis is essentially true of photosynthesis in all of these organisms.
+
+![](images/df687691677d5cd4824b2cc3b84f00b4b204a7873e463d3e9a78550c828108b7.jpg)  
+FIGURE 20-1 Assimilation of $\mathrm{CO}_{2}$ provides all of the carbon a plant needs. The light-driven synthesis of ATP and NADPH provides energy and reducing power for the fixation of $\mathrm{CO}_{2}$ into trioses in the Calvin cycle. All of the carbon-containing compounds of the plant cell are synthesized from this fixation of $\mathrm{CO}_{2}$ . [Emir Memedovski/Getty Images]
+
+After looking at photosynthesis, we will discuss the conversion of trioses produced in the Calvin cycle to sucrose (for sugar transport) and starch (for energy storage) (see Fig. 20-1). This conversion is accomplished by mechanisms analogous to those used by animal cells to make glycogen. We also describe the synthesis of the cellulose of plant cell walls. Finally, we consider how carbohydrate metabolism is integrated within a plant cell and throughout the plant.
+
+Although strikingly different on the surface, the processes of photophosphorylation in the chloroplast and oxidative phosphorylation in the mitochondrion are closely similar at the molecular level, and the mechanism for ATP synthesis is virtually identical: a proton gradient drives rotary catalysis by a remarkable ATP synthase.
+
+## 20.1 Light Absorption
+
+Photophosphorylation (ATP synthesis driven by light) resembles oxidative phosphorylation in that electron flow through a series of membrane carriers is coupled to proton pumping, producing the proton motive force that powers ATP formation. The processes are compared in Figure 20-2. In oxidative phosphorylation, the electron donor is NADH and the ultimate electron acceptor is $O_{2}$ , forming $H_{2}O$ . In photophosphorylation, electrons flow in the opposite direction: $H_{2}O$ is the electron donor and NADPH is formed. How is this endergonic process possible?
+
+Water is a poor donor of electrons; its standard reduction potential is 0.816 V, compared with -0.320 V for NADH, a good electron donor. P1 Photosynthesis requires the input of energy in the form of light to create a good electron donor and a good electron acceptor. P3 Electrons flow from the electron donor through a series of membrane-bound carriers, including cytochromes, quinones, and iron-sulfur proteins, while protons are pumped across a membrane to create an electrochemical potential. Electron transfer and proton pumping are catalyzed by a membrane complex that is homologous in structure and function to Complex III of mitochondria. The electrochemical potential so produced is the driving force for ATP synthesis from ADP and $\mathrm{P_i}$ , catalyzed by a membrane-bound ATP synthase complex closely similar to that of mitochondria and bacteria.
+
+## Chloroplasts Are the Site of Light-Driven Electron Flow and Photosynthesis in Plants
+
+In photosynthetic eukaryotic cells, both the light-dependent and the $CO_{2}$ -assimilation reactions take place in chloroplasts (Fig. 20-3), organelles that are variable in shape and generally a few micrometers in diameter. Like mitochondria, chloroplasts are surrounded by two membranes: an outer membrane that is permeable to small molecules and ions, and an impermeable inner membrane that bears specific transporters for a variety of ions and metabolites. The space enclosed by the inner membrane is called the stroma in chloroplasts and is analogous to the mitochondrial matrix; it is an aqueous phase containing most of the soluble enzymes required for the $CO_{2}$ -assimilation reactions. Throughout the stroma is a highly organized set of topologically continuous internal membranes, forming a single compartment or lumen. This complex membrane system forms flattened sacks called thylakoids. Granal thylakoids are disk-like pouches arranged in stacks;
+
+(a)  
+![](images/62dbf7f15ae5fa1cbf8e9a071bd7d6226d12fa14804ba023faef55bce770153a.jpg)  
+FIGURE 20-2 The chemiosmotic mechanism for ATP synthesis in chloroplasts and mitochondria. (a) Movement of electrons through a chain of membrane-bound carriers in the chloroplast membrane is driven by the energy of photons absorbed by the green pigment chlorophyll. Electron flow leads to the movement of protons and positive charge across the membrane, creating an electrochemical potential. This electrochemical potential drives ATP synthesis by the membrane-bound ATP synthase, which is fundamentally similar in structure and mechanism to (b) the mitochondrial machinery for oxidative phosphorylation of mitochondria. In mitochondria, the force that moves electrons through the complexes is a large difference in the reduction potentials of electron donor and acceptor. In both systems, the energy made available by electron transfer is captured as a transmembrane proton gradient, which drives ATP synthesis by an ATP synthase.
+
+![](images/ed3464dfcbba5292c3b0da71a5dbbcd6293b60962b45b458b8f85638ef144f59.jpg)  
+FIGURE 20-3 Chloroplast structure. (a) Schematic diagram. (b) Colorized electron micrograph at high magnification, showing the highly organized thylakoid membrane system. [(b) Biophoto Associates/Science Source]
+
+they are connected by stromal thylakoids, which are flatter and spiral around a stack of grana. The thylakoid membranes provide a large area for the machinery of photophosphorylation—the photosynthetic pigments and enzyme complexes that carry out the light-dependent reactions and ATP synthesis. Traffic across these membranes is also mediated by specific transporters.
+
+In 1937, Robert Hill found that when leaf extracts containing chloroplasts were illuminated, they (1) evolved $O_{2}$ and (2) reduced a nonbiological electron acceptor added to the medium, according to the Hill reaction
+
+$$
+2 \mathrm{H} _ {2} \mathrm{O} + 2 \mathrm{A} \xrightarrow {\text {   light   }} 2 \mathrm{AH} _ {2} + \mathrm{O} _ {2}
+$$
+
+where A is an artificial electron acceptor, or Hill reagent. One Hill reagent, the dye 2,6-dichlorophenolindophenol, is blue when oxidized (A) and colorless when reduced $\left(\mathrm{AH}_{2}\right)$ , making the reaction easy to follow.
+
+![](images/e8df872724d283370e2787bd3acc09639a977b42c75d812d5e5571a88e468f52.jpg)
+
+![](images/b91f39f882c7078c9c5b78105dc5a80406f7a087b0b9f0d5e3ef9686c4ddeba5.jpg)  
+2,6-Dichlorophenolindophenol
+
+When a leaf extract supplemented with the dye was illuminated, the blue dye became colorless and $O_{2}$ was evolved. In the dark, no $O_{2}$ evolution or dye reduction took place. P2 This was the first evidence that absorbed light energy causes electrons to flow from some electron donor (now known to be $H_{2}O$ ) to an electron acceptor. Moreover, Hill found that $CO_{2}$ was neither required nor reduced to a stable form under these conditions; $O_{2}$ production could be dissociated from $CO_{2}$ reduction. Several years later, Severo Ochoa showed that $NADP^{+}$ is the biological electron acceptor in chloroplasts, according to the equation
+
+$$
+2 \mathrm{H} _ {2} \mathrm{O} + 2 \mathrm{NADP} ^ {+} \xrightarrow {\text {   light   }} 2 \mathrm{NADPH} + 2 \mathrm{H} ^ {+} + \mathrm{O} _ {2}
+$$
+
+To understand this photochemical process, we must first consider the more general topic of the effects of light absorption on molecular structure.
+
+Visible light is electromagnetic radiation of wavelengths 400 to 700 nm, a small part of the electromagnetic spectrum (Fig. 20-4), ranging from violet to red. The energy of a single photon (a quantum of light) is greater at the violet end of the spectrum than at the red end; shorter wavelength (and higher frequency) corresponds to higher energy. The energy, E, in a single photon of visible light is given by the Planck equation:
+
+$$
+E = h \nu = h c / \lambda
+$$
+
+where h is Planck's constant $(6.626 \times 10^{-34} \text{ J} \cdot \text{s})$ , v is the frequency of the light in cycles/s, c is the speed of light $(3.00 \times 10^{8} \text{ m/s})$ , and $\lambda$ is the wavelength of the light in meters. The energy of a photon of visible light ranges from 150 kJ/einstein for red light to $\sim300$ kJ/einstein for violet light.
+
+## WORKED EXAMPLE 20-1 Energy of a Photon
+
+The light used by vascular plants for photosynthesis has a wavelength of about 700 nm. Calculate the energy in a "mole" of photons (an einstein) of light of this wavelength, and compare this with the energy needed to synthesize a mole of ATP.
+
+SOLUTION: The energy in a single photon is given by the Planck equation. At a wavelength of $700 \times 10^{-9}$ m, the energy of a photon is
+
+$$
+\begin{array}{r l} E & = h c / \lambda \\ & = \frac {[ (6 . 6 2 6 \times 1 0 ^ {- 3 4} \mathrm{J} \cdot \mathrm{s}) (3 . 0 0 \times 1 0 ^ {8} \mathrm{m/s}) ]}{(7 . 0 0 \times 1 0 ^ {- 7} \mathrm{m})} \\ & = 2. 8 4 \times 1 0 ^ {- 1 9} \mathrm{J} \end{array}
+$$
+
+An einstein of light is Avogadro's number of photons ( $6.022 \times 10^{23}$ ); thus the energy of one einstein of photons at 700 nm is given by
+
+$$
+\begin{array}{r l} (2. 8 4 \times 1 0 ^ {- 1 9} \mathrm{J/photon}) (6. 0 2 2 \times 1 0 ^ {2 3} \text {photons / einstein}) & = 1 7. 1 \times 1 0 ^ {4} \mathrm{J/einstein} \\ & = 1 7 1 \mathrm{kJ/einstein} \end{array}
+$$
+
+So, a "mole" of photons of red light has about five times the energy needed to produce a mole of ATP from ADP and $\mathsf{P}_{\mathrm{i}}$ (30.5 kJ/mol).
+
+When a photon is absorbed, an electron in the absorbing molecule (chromophore) is lifted to a higher energy level. This is an all-or-nothing event: to be absorbed, the photon must contain a quantity of energy, called a quantum, that exactly matches the energy of the electronic transition. A molecule that has absorbed a photon is in an excited state, which is generally unstable. An electron lifted into a
+
+![](images/84bb89f59a1b981d695cd47046a88d720438d73405a3d17d96699ef9f3726ce3.jpg)  
+FIGURE 20-4 Electromagnetic radiation. The spectrum of electromagnetic radiation, and the energy of photons in the visible range. One einstein is $6.022 \times 10^{23}$ photons.
+
+![](images/a467d81bb8be57eaf48da9f0075b1ba23cbbc1ce504510802884c0259c3ed02b.jpg)
+
+higher-energy orbital usually returns rapidly to its lower-energy orbital; that is, the excited molecule decays to the stable ground state, giving up the absorbed quantum as light or heat or using it to do chemical work. Light emission accompanying decay of excited molecules, fluorescence, is always at a longer wavelength (lower energy) than that of the absorbed light (see Box 12-1). An alternative mode of decay, central to photosynthesis, involves direct transfer of excitation energy from an excited molecule to a neighboring molecule. Just as the photon is a quantum of light energy, so the exciton is a quantum of energy passed from an excited molecule to another molecule in a process called exciton transfer.
+
+## Chlorophylls Absorb Light Energy for Photosynthesis
+
+The most important light-absorbing pigments in the thylakoid membranes are the chlorophylls, green pigments with polycyclic, planar structures resembling the protoporphyrin of hemoglobin, except that $Mg^{2+}$ , not $Fe^{2+}$ , occupies the central position (Fig. 20-5a; compare to Fig. 5-1).
+
+![](images/9e37dcde0aa1516281a22789a647ca14247f7948e3edcfa3b5fbca1f78d96ab4.jpg)  
+are accessory pigments in cyanobacteria and red algae. The conjugated bond systems in these molecules (alternating single and double bonds, shaded) have delocalized electrons that are easily excited by photons with the wavelengths of visible light.
+
+FIGURE 20-5 Primary and secondary photopigments. (a) Chlorophylls a and b and bacteriochlorophyll are the primary gatherers of light energy. (b) $\beta$ -Carotene (a carotenoid) and (c) lutein (a xanthophyll) are accessory pigments in plants. (d) Phycoerythrobilin and phycocyanobilin (phycobilins)
+
+The four inward-oriented nitrogen atoms of chlorophyll are coordinated with the $Mg^{2+}$ . All chlorophylls have a long phytol side chain, esterified to a carboxyl-group substituent in ring IV, and chlorophylls also have a fifth five-membered ring not present in heme.
+
+The heterocyclic five-ring system that surrounds the $Mg^{2+}$ has an extended polyene structure, with alternating single and double bonds. Such polyenes characteristically show strong absorption in the visible region of the spectrum (Fig. 20-6); the chlorophylls have unusually high molar extinction coefficients (see Box 3-1) and are therefore particularly well-suited for absorbing visible light during photosynthesis.
+
+Chloroplasts always contain both chlorophyll a and chlorophyll b (Fig. 20-5a). Although both are green, their absorption spectra are sufficiently different (Fig. 20-6) that they complement each other's range of light absorption in the visible region. Most plants contain about twice as much chlorophyll a as chlorophyll b. The chlorophyll in cyanobacteria differs only slightly from those of plants.
+
+In addition to chlorophylls, thylakoid membranes of plants contain secondary light-absorbing pigments, or accessory pigments, called carotenoids. Carotenoids may be yellow, red, or purple. The two most prominent in plant leaves are $\beta$ -carotene, a red-orange isoprenoid, and the yellow carotenoid lutein (Fig. 20-5b, c). Cyanobacteria and red algae use the accessory pigments phyco-cyanobilin and phycoerythrobilin (Fig. 20-5d). Accessory pigments absorb light at wavelengths not absorbed by the chlorophylls (Fig. 20-6) and thus are supplementary light receptors. They also protect downstream components from a highly reactive form of oxygen (singlet oxygen) that is formed when intense light exceeds the system's capacity to accept electrons.
+
+Experimental determination of the effectiveness of light of different colors in promoting photosynthesis yields an action spectrum (Fig. 20-7), often useful in identifying the pigment primarily responsible for a biological effect of light. By capturing light in a region of the spectrum not used by other organisms, a photosynthetic organism can claim a unique ecological niche.
+
+![](images/4cae1b33c5660a6f56e4a2b864fe55ef42d3e6a55e4735979e966d29e43a65d2.jpg)
+
+## Chlorophylls Funnel Absorbed Energy to Reaction Centers by Exciton Transfer
+
+The light-absorbing pigments of thylakoid or bacterial membranes are arranged in functional arrays called photosystems. In spinach chloroplasts, for example, each photosystem contains about 200 chlorophyll and 50 carotenoid molecules. All the pigment molecules in a photosystem can absorb photons, but P2 only one pair of chlorophyll molecules associated with the photochemical reaction center is specialized to transduce light into chemical energy. The other pigment molecules in a photosystem serve as antenna molecules. They absorb light energy and transmit it rapidly and efficiently to the reaction center (Fig. 20-8). Some chlorophylls are part of a core complex around the reaction center. Others form light-harvesting complexes (LHCs) around the periphery of the core complex. Chlorophyll and other pigments are always associated with specific binding proteins, which fix the chromophores in relation to each other, to other protein complexes, and to the membrane. For example, each monomer of the trimeric light-harvesting complex LHCII (Fig. 20-9) contains seven molecules of chlorophyll $a$ , five of chlorophyll $b$ , and two of lutein.
+
+The chlorophyll molecules in light-harvesting complexes and other chlorophyll-binding proteins have light-absorption properties that are subtly different from those of free chlorophyll. When isolated chlorophyll molecules are excited by light, the absorbed energy is quickly released as fluorescence and heat; but when chlorophyll
+
+FIGURE 20-6 Absorption of visible light by photopigments. Plants are green because their pigments absorb light from the red and blue regions of the spectrum, leaving primarily green light to be reflected. Compare the absorption spectra of the pigments with the spectrum of sunlight reaching the earth's surface; the combination of chlorophylls (a and b) and accessory pigments enables plants to harvest most of the energy available in sunlight. The relative amounts of chlorophylls and accessory pigments are characteristic of a particular plant species. Variation in the proportions of these pigments is responsible for the range of colors of photosynthetic organisms, from the deep blue-green of spruce needles, to the greener green of maple leaves, to the red, brown, or purple color of some species of multicellular algae and the leaves of some foliage plants favored by gardeners.
+
+![](images/a15a0011524389e1a233872d2a230e072d0065faffdd21403602cecf1084b129.jpg)  
+(a)
+
+![](images/4b1527d1423e8ce470d87d312ad24795f534333b4f15440d959ff572efa8a947.jpg)  
+(b)  
+FIGURE 20-7 Two ways to determine the action spectrum for photosynthesis. (a) Results of a classic experiment performed by T. W. Engelmann in 1882 to determine the wavelength of light that is most effective in supporting photosynthesis. Engelmann placed cells of a filamentous photosynthetic alga on a microscope slide and illuminated them with light from a prism, so that one part of the algal filament received mainly blue light, another part yellow, another red. To determine which cells carried out photosynthesis most actively, Engelmann also placed on the microscope slide bacteria known to migrate toward regions of high $O_{2}$ concentration. After a period of illumination, the distribution of bacteria showed highest $O_{2}$ levels (produced by photosynthesis) in the regions illuminated with violet and red light. (b) Results of a similar experiment that used modern techniques (an oxygen electrode) for the measurement of $O_{2}$ production. An action spectrum, as shown here, describes the relative rate of photosynthesis for illumination with a constant number of photons of different wavelengths. An action spectrum is useful because, by comparison with absorption spectra (such as those in Fig. 20-6), it suggests which pigments can channel energy into photosynthesis.
+
+in intact leaves is excited by visible light (Fig. 20-10, step ①), very little fluorescence is observed. Instead, the excited antenna chlorophyll transfers energy directly to a neighboring chlorophyll molecule, which becomes excited as the first molecule returns to its ground state (step ②). This transfer of energy, exciton transfer, extends to a third, fourth, or subsequent neighbor, until one of a “special pair” of chlorophyll a molecules at the photochemical reaction center is excited (step ③). The special pair of chlorophyll molecules, often designated (Chl) $_{2}$ , are held close enough
+
+![](images/dd3c057c10da7d2028657c0a0c9f688ae6afcc513271c2b6025dedc765ba2c72.jpg)  
+These molecules absorb light energy, transferring it between molecules until it reaches the reaction center.  
+Reaction center
+Photochemical reaction here converts the energy of a photon into a separation of charge, initiating electron flow.
+
+FIGURE 20-8 Organization of photosystems in the thylakoid membrane. Photosystems are tightly packed in the thylakoid membrane, with several hundred antenna chlorophylls and accessory pigments surrounding each reaction center. Absorption of a photon by any of the antenna chlorophylls leads to excitation of the reaction center by exciton transfer (red arrow).  
+![](images/06defe3d82feb63516721c168a7a647564f35ca6261818df3534e85178048231.jpg)  
+FIGURE 20-9 The light-harvesting complex LHCII of the pea. The functional unit is a trimer, with 36 chlorophyll and 6 lutein molecules. Shown here is a monomer, viewed in the plane of the membrane, with its three transmembrane $\alpha$ -helical segments, seven chlorophyll $a$ molecules (light green), five chlorophyll $b$ molecules (dark green), and two molecules of lutein (yellow), which form an internal cross-brace. [Data from PDB ID 28HW, J. Standfuss et al., EMBO J. 24:919, 2005.]
+
+Antenna molecules
+
+![](images/5ef3cfb788014b73e2215971512735cb7abc744ac93cbbc13f71038fb3b9af96.jpg)  
+Reaction-center chlorophyll special pair
+
+Light excites an antenna molecule (chlorophyll or accessory pigment), raising an electron to a higher energy level.
+
+![](images/5d91dd571e45a2889681435e68bc86feb897df280d10208c9193ae320a437f65.jpg)
+
+2 The excited antenna molecule passes energy to a neighboring chlorophyll molecule (exciton transfer), exciting it.
+
+![](images/e8701c8338d169cec45ca2de0de4713531784a74299c33702d2262f95b05c7db.jpg)
+
+3 This energy is transferred to a chlorophyll of the reaction-center special pair, exciting it.
+
+![](images/6ea9ab37bbd4062d3f1f260b80da5823dcf43765e11c5fee7d7807782853b748.jpg)
+
+Electron acceptor
+
+4 The excited reaction-center chlorophyll passes an electron to an electron acceptor.
+
+![](images/b11a46768893958b22117ef5a9493ce67d5a148c8244768907b2226b95c2b7b1.jpg)
+
+![](images/9ab52455c2396f00faf38a7d4d63e0b39a4396ac56eb568d3e352276b9e9c222.jpg)
+
+![](images/5127374ca6c43b7e8977be262f44170aa669bb39f24deb7ced41647cbe4112b6.jpg)
+
+5 The electron hole in the reaction center is filled by an electron from an electron donor.
+
+Electron donor
+
+![](images/cf1594b708712a72aa6464fc54297a9b82283ded34609d2e24458067663d7d9a.jpg)  
+The absorption of a photon has caused separation of charge in the reaction center.
+
+FIGURE 20-10 Exciton and electron transfer. This generalized scheme shows conversion of the energy of an absorbed photon into separation of charges at the reaction center. Note that step 1 may repeat between successive antenna molecules until the exciton reaches the special pair of chlorophylls in the reaction center. An asterisk (\*) denotes the excited state of a molecule.
+
+to each other to share bonding orbitals, and to react as a single compound when excited. In this excited chlorophyll pair, an electron is promoted to a higher-energy orbital. This electron then passes to a nearby electron acceptor that is part of the photosynthetic electron-transfer chain, leaving the reaction-center chlorophyll pair with a missing electron (an "electron hole," denoted by + in Fig. 20-10) (step 4). The electron acceptor acquires a negative charge in this transaction. The electron lost by the reaction-center chlorophyll pair is replaced by an electron from a neighboring electron-donor molecule (step 5), which thereby becomes positively charged. P1 P2 In this way, excitation by light causes electric charge separation and initiates an oxidation-reduction chain.
+
+## SUMMARY 20.1 Light Absorption
+
+■ Photosynthesis takes place in plant chloroplasts, structures enclosed in double membranes and filled with an elaborate system of thylakoid membranes containing the photosynthetic machinery.
+
+Chlorophyll molecules and other light-absorbing pigments are associated with proteins in light-harvesting complexes arrayed around photochemical reaction centers. The proteins are embedded in thylakoid membranes.
+
+The many chlorophyll molecules that surround the reaction center serve as antennas for light. When they absorb light, they pass its energy (exciton) to the reaction center. There the energy is used to create a charge separation that initiates electron flow through a series of oxidation-reduction reactions.
+
+## 20.2 Photochemical Reaction Centers
+
+Studies on a variety of bacteria that carry out photosynthesis have been helpful in understanding the mechanisms of photosynthesis in cyanobacteria, algae and vascular plants. Photosynthetic bacteria have relatively simple phototransduction machinery, with one of two general types of photosystems. Both systems send electrons through a cytochrome complex that pumps protons, producing the electrochemical gradient that drives ATP synthesis.
+
+## Photosynthetic Bacteria Have Two Types of Reaction Center
+
+The type II photosystem in purple bacteria consists of three basic modules (Fig. 20-11a): a single P870 reaction center; a cytochrome $bc_{1}$ electron-transfer complex similar to Complex III of the mitochondrial electron-transfer chain; and an ATP synthase, also similar to that of mitochondria. Illumination lifts an electron in the reaction center to its excited state (P870\*), from which it passes through pheophytin (chlorophyll a lacking its central $\mathrm{Mg}^{2+}$ ) and a quinone to the cytochrome $bc_{1}$ complex. After passing through the $bc_{1}$ complex, electrons flow through cytochrome $c_{2}$ back to the reaction center, restoring its preillumination state and completing one cycle. This light-driven cyclic electron transfer provides the energy for proton pumping by the cytochrome $bc_{1}$ complex. Powered by the resulting proton gradient, ATP synthase produces ATP, exactly as in mitochondria.
+
+![](images/01927babc11812f447013158116d026781adadc93ea24cdb474619fce958d8fa.jpg)  
+FIGURE 20-11 Functional Modules of Photosynthetic Machinery in Purple Bacteria and Green Sulfur Bacteria. The position on the vertical scale of each electron carrier reflects its standard reduction potential. (a) In purple bacteria, light energy excites an electron in the reaction center P870. The electron passes through pheophytin (Pheo), a quinone (Q), and the cytochrome $bc_{1}$ complex, then through cytochrome $c_{2}$ and thus back to the reaction center. Electron transfer through the cytochrome $bc_{1}$ complex causes  
+proton pumping, creating an electrochemical potential that powers ATP synthesis. (b) Green sulfur bacteria have two routes for electrons driven by excitation of P840. A cyclic electron transfer route that goes through a quinone to the cytochrome $bc_{1}$ complex and back to the reaction center via cytochrome $c_{553}$ causes proton pumping. A linear electron transfer route that goes from the reaction center through the iron-sulfur protein ferredoxin (Fd) reduces $NAD^{+}$ to NADH in a reaction catalyzed by ferredoxin: $NAD^{+}$ reductase.
+
+The type I photosystem in green sulfur bacteria involves the same three modules as in purple bacteria, but the process differs in several respects and includes additional enzymatic reactions (Fig. 20-11b). Excitation by light causes an electron to move from the excited reaction center to the cytochrome $bc_{1}$ complex via a quinone carrier. Electron transfer through this complex powers proton transport and creates the proton-motive force used for ATP synthesis, just as in purple bacteria and in mitochondria. However, in contrast to the cyclic electron transfer path in purple bacteria, some electrons follow a linear electron transfer path from the reaction center to the soluble iron-sulfur protein ferredoxin (see Fig. 19-5), which then passes electrons via ferredoxin: NAD $^{+}$ reductase to NAD $^{+}$ , producing NADH. The electrons taken from the reaction center to reduce NAD $^{+}$ are replaced by the oxidation of H $_{2}$ S to elemental S in the reaction that defines the green sulfur bacteria. This oxidation of H $_{2}$ S by bacteria is chemically analogous to the oxidation of H $_{2}$ O by oxygenic plants. Note that the path of electrons in the purple bacteria is cyclic; the path in the green sulfur bacteria can be either cyclic or linear, leading to NAD $^{+}$ and producing NADH.
+
+## In Vascular Plants, Two Reaction Centers Act in Tandem
+
+The photosynthetic apparatus of cyanobacteria, algae, and vascular plants is more complex than the one-center bacterial systems, and it most likely evolved through the combination of two simpler bacterial photosystems.
+
+![](images/bed8cca13b8074c320e80a030dc63e02795b7b244f947e767feec1b7da6fd232.jpg)  
+FIGURE 20-12 Integration of photosystems I and II in chloroplasts. This "Z scheme" shows the pathway of linear electron transfer from $\mathrm{H}_2\mathrm{O}$ (lower left) to $\mathrm{NADP^{+}}$ (far right). The position on the vertical scale of each electron carrier reflects its standard reduction potential. To raise the energy of electrons derived from $\mathrm{H}_2\mathrm{O}$ to the energy level required to reduce $\mathrm{NADP^{+}}$ to NADPH, each electron must be "lifted" twice (heavy arrows) by photons absorbed in PSII and PSI. One photon is required per electron in each photosystem. After excitation, the high-energy electrons flow  
+"downhill" through the carrier chains as shown. Protons move across the thylakoid membrane during the water-splitting reaction and during electron transfer through the cytochrome $b_{6}f$ complex, producing the proton gradient that is essential to ATP formation. An alternative path of electrons is cyclic electron transfer, in which electrons move from ferredoxin back to the plastoquinone and cytochrome $b_{6}f$ complex, instead of reducing $\mathrm{NADP^{+}}$ to NADPH. The cyclic pathway produces more ATP and less NADPH than the linear pathway.
+
+The Z scheme diagram in Figure 20-12 outlines the path of electron flow between the two photosystems and the energy relationships in the light-dependent reactions. (The Z scheme takes its name from the zigzag pattern of the pathways in the diagram.) The thylakoid membranes of chloroplasts have two different kinds of photosystems, each with its own type of photochemical reaction center and set of antenna molecules. The two systems have distinct and complementary functions. Photosystem II (PSII) is a pheophytin-quinone type of system (like the single photosystem of purple bacteria) containing roughly equal amounts of chlorophylls $a$ and $b$ . Excitation of the P680 special pair in its reaction center drives electrons through the cytochrome $b_{6}f$ complex discussed below, with concomitant pumping of protons across the thylakoid membrane and ATP synthesis. Photosystem I (PSI) is structurally and functionally related to the photosynthetic machinery of green sulfur bacteria. It has a P700 reaction center and a high ratio of chlorophyll a to chlorophyll b. The excited P700 passes electrons through a linear chain of carriers to ferredoxin, then to $NADP^{+}$ , producing NADPH. An alternative pathway for electrons is cyclic: instead of following the linear path that leads to $NADP^{+}$ reduction, electrons pass to plastoquinone (PQ) through a membrane-embedded protein complex, cytochrome $b_{6}f$ (again, with the movement of protons into the chloroplast lumen). The thylakoid membranes of a single spinach chloroplast have many hundreds of each kind of photosystem.
+
+These two photosystems in plants act in tandem to catalyze the light-driven movement of electrons from $H_{2}O$ to $NADP^{+}$ . The electron carriers include large, integral protein complexes (PSI, PSII, and the proton-pumping complex cytochrome $b_{6}f$ ); quinones that are lipid-soluble and move through the membrane between the protein complexes; and two soluble proteins, plastocyanin (analogous to cytochrome c in mitochondria) and ferredoxin.
+
+![](images/d1e6cca3e5d4ceafb4197e904a2fe6b2abdc62c901b3f67b5b7142db1a0ff5d0.jpg)
+
+To replace the electrons that move from PSII through PSI to NADP $^{+}$ , H $_{2}$ O is oxidized, producing O $_{2}$ (Fig. 20-12, bottom left). All O $_{2}$ -evolving photosynthetic cells—those of plants, algae, and cyanobacteria—contain both PSI and PSII. P3 The Z scheme thus describes the complete route by which electrons flow from H $_{2}$ O to NADP $^{+}$ , according to the equation
+
+$$
+2 \mathrm{H} _ {2} \mathrm{O} + 2 \mathrm{NADP} ^ {+} + 8 \text {   photons   } \longrightarrow \mathrm{O} _ {2} + 2 \mathrm{NADPH} + 2 \mathrm{H} ^ {+}
+$$
+
+For every two photons absorbed (one by each photosystem), one electron is transferred from $H_{2}O$ to $NADP^{+}$ . To form one molecule of $O_{2}$ , which requires transfer of four electrons from two $H_{2}O$ to two $NADP^{+}$ , a total of eight photons must be absorbed, four by each photosystem.
+
+Having seen the overall process, we'll now look at how the structure of the photosystems informs our understanding of the electrochemistry.
+
+Photosystem II PSII is dimeric (Fig. 20-13). Each monomer is a huge complex of 19 proteins, including the accessory proteins CP47 and CP43, and the core complex of P680 reaction-center proteins D1 and D2; 2 chlorophyll-binding proteins; and associated chromophores, including carotenoids, a nonheme iron, and the critically important inorganic cofactor, $\mathrm{Mn_4CaO_5}$ . Of the proteins in PSII, 16 have transmembrane segments, but 3 are peripheral proteins on the lumenal side that stabilize the $\mathrm{Mn_4CaO_5}$ cofactor. Surrounding PSII are additional chlorophyll-binding proteins and light-harvesting complexes. P2 When a photon is absorbed by any of these antenna molecules, the resulting exciton moves very rapidly from one to another of the antenna chlorophylls until it reaches the reaction center and excites P680, the special pair of chlorophyll a molecules (Chl a) $_{2}$ , to initiate the photochemistry.
+
+![](images/0f9e13ae596df7b239bf3ace0c284260f2e3b29c928166473b7d66da7be01cd3.jpg)  
+FIGURE 20-13 Structure of photosystem II of the cyanobacterium Thermosynechococcus vulcanus. The enormous complex, visualized by x-ray crystallography, is a dimer; each monomer has its own reaction center. Chlorophyll-binding proteins CP43 and CP47 form the core antenna, directly associated with the PSII reaction-center proteins D1 and D2. Each PSII monomer contains 35 chlorophylls, 2 pheophytins, 11 β-carotenes, 2 plastoquinones, and 1 each of b-type cytochrome, c-type cytochrome, and nonheme iron. Water is oxidized to form O₂ at the oxygen-evolving center (Mn₄CaO₅). [Data from PDB ID 3WU2, Y. Umena et al., Nature 473:55, 2011.]
+
+Excitation of P680 in PSII (Fig. 20-14) produces P680\*, an excellent electron donor that, within picoseconds, transfers an electron to pheophytin, giving it a negative charge ( $^{\bullet}$ Pheo $^{-}$ ). With the loss of its electron, P680\* is transformed into a radical cation, P680 $^{+}$ . $^{\bullet}$ Pheo $^{-}$ very rapidly passes its extra electron to a protein-bound plastoquinone, PQ $_{A}$ , which in turn passes its electron to another, more loosely bound plastoquinone, PQ $_{B}$ . When PQ $_{B}$ has acquired two electrons in two such transfers from PQ $_{A}$ and two protons from the solvent water, it is in its fully reduced quinol form, PQ $_{B}$ H $_{2}$ . The overall reaction initiated by light in PSII is
+
+$$
+\begin{array}{r l} 4 \mathrm{P680+4H} ^ {+} + 2 \mathrm{PQ} _ {\mathrm{B}} + & 4 \text { photons } \longrightarrow \\ & 4 \mathrm{P680} ^ {+} + 2 \mathrm{PQ} _ {\mathrm{B}} \mathrm{H} _ {2} \end{array}\tag{20-1}
+$$
+
+Eventually, the electrons in $PQ_{B}H_{2}$ pass through the cytochrome $b_{6}f$ complex (see Fig. 20-12). The electron initially removed from P680 is replaced with an electron obtained from the oxidation of water, as described below.
+
+Photosystem I PSI and its antenna molecules are part of a supramolecular complex composed of at least 16 proteins, including 4 chlorophyll-binding proteins arranged around the periphery of the reaction center (Fig. 20-15). The complex also includes 35 carotenoids of several types, three 4Fe-4S clusters, and two phylloquinones.
+
+![](images/37f417c6c9e1cb2cc87a8b29c3f1944d77987afe2bd28df83d954c0bc65b4acf.jpg)  
+FIGURE 20-14 Electron transfer through photosystem II of the cyanobacterium Synechococcus elongatus. The monomeric form of the core complex shown here has two major transmembrane proteins, D1 and D2, each with its set of electron carriers. Although the two subunits are nearly symmetrical, electron transfer occurs through only one of the two branches of electron carriers: that on the right (in D1). The arrows show the path of electron transfer from the $\mathrm{Mn_4CaO_5}$ ion cofactor of the oxygen-evolving complex to plastoquinone $\mathsf{PQ}_8$ . The photochemical events occur in the sequence indicated by the step numbers. The role of the Tyr residues and the detailed structure of the $\mathrm{Mn_4CaO_5}$ cofactor are discussed below (see Fig. 20-20b).
+
+![](images/6b57c0c4951ee02be6f3924037c8ae7c6676876809da67135b8b5c9799e5fc8b.jpg)
+
+The photochemical events that follow the excitation of PSI at the reaction-center P700 (Fig. 20-16) are formally similar to those occurring in PSII. The excited reaction-center P700\* loses an electron to an acceptor, designated A $_{0}$ (a chlorophyll a molecule, functionally homologous to the pheophytin of PSII), creating A $_{0}^{-}$ and P700+. Again, excitation results in charge separation at the photochemical reaction center. P700+ is a strong oxidizing agent, which quickly acquires an electron from plastocyanin, a soluble Cu-containing electron-transfer protein. A $_{0}^{-}$ is an exceptionally strong reducing agent that passes its electron through a chain of carriers that leads to NADP $^{+}$ (Fig. 20-12, right side). Phylloquinone (Q $_{K}$ ) accepts the electron and passes it to an iron-sulfur protein through three Fe-S centers in PSI. From here, the electron moves to ferredoxin (Fd). Recall that ferredoxin contains a 2Fe-2S center (see Fig. 19-5) that undergoes one-electron oxidation and reduction reactions.
+
+![](images/24c34668f39659f813e685c469214f9ddb2460cce81680f8beb4ab3ff4f108d0.jpg)  
+FIGURE 20-16 The path of electrons through PSI. The path of electrons (blue arrows) through PSI, viewed in the plane of the membrane. When the reaction-center P700, the special pair of chlorophylls, is excited by a photon or an exciton, its reduction potential is dramatically reduced, making it a good electron donor. P700 then passes an electron through a nearby chlorophyll (referred to as A $_{0}$ ) to phylloquinone (Q $_{K}$ ). Reduced Q $_{K}$ is reoxidized as it passes two electrons, one at a time, to an Fe-S center (F $_{X}$ ) near the n side of the membrane. From F $_{X}$ , electrons move through two more Fe-S centers (F $_{A}$ and F $_{B}$ ) to ferredoxin in the stroma. Ferredoxin then donates electrons to NADP $^{+}$ (not shown), reducing it to NADPH, one of the forms in which the energy of photons is trapped in chloroplasts.
+
+The fourth electron carrier in the chain is the flavoprotein ferredoxin:NADP $^{+}$ reductase, which transfers electrons from reduced ferredoxin (Fd $_{red}$ ) to NADP $^{+}$ :
+
+$$
+2 \mathrm{Fd} _ {\mathrm{red}} + 2 \mathrm{H} ^ {+} + \mathrm{NADP} ^ {+} \longrightarrow 2 \mathrm{Fd} _ {\mathrm{ox}} + \mathrm{NADPH} + \mathrm{H} ^ {+}
+$$
+
+## The Cytochrome $b_{6}f$ Complex Links Photosystems II and I, Conserving the Energy of Electron Transfer
+
+Electrons temporarily held in plastoquinol as a result of the excitation of P680 in PSII are carried to P700 of PSI via the cytochrome $b_{6}f$ complex and the soluble protein plastocyanin (see Fig. 20-12, center). With a structure and role analogous with that of Complex III in mitochondria, the cytochrome $b_{6}f$ complex (Fig. 20-17) contains a b-type cytochrome with two heme groups (designated $b_{H}$ and $b_{L}$ ), a Rieske iron-sulfur protein ( $M_{r}$ 20,000), and cytochrome f (named for the Latin frons, “leaf”). Electrons flow through the cytochrome $b_{6}f$ complex from $PQ_{B}H_{2}$ to cytochrome f, then to plastocyanin, and finally to $P700^{+}$ , thereby reducing it.
+
+Like Complex III of mitochondria, cytochrome $b_{\theta}f$ conveys electrons from a reduced quinone—a mobile, lipid-soluble carrier of two electrons (Q in mitochondria, PQ $_{B}$ in chloroplasts; P for plastoquinone)—to a water-soluble protein that carries one electron (cytochrome c in mitochondria, plastocyanin in chloroplasts) (Fig 20-17a). As in mitochondria, the function of this complex involves a Q cycle (Fig. 20-17b; see Fig. 19-11)
+
+![](images/1ba816e4b226b9af24b54065d62b1c4718157bc606e1f4678e00957767e8708e.jpg)  
+(a)
+
+![](images/5ef4847bdad97c375ee2d106cc344827fdf9c7aeb1e506e91676037cbad98982.jpg)  
+FIGURE 20-17 Electron and proton flow through the cytochrome $b_{6}f$ complex. (a) In addition to the hemes of cytochrome $b$ (heme $b_{H}$ and $b_{L}$ ; also called heme $b_{N}$ and $b_{P}$ , respectively, because of their proximity to the N and P sides of the bilayer) and cytochrome $f$ (heme $f$ ), there is a fourth heme (heme $x$ ) near heme $b_{H}$ ; also present is a $\beta$ -carotene of unknown function. Two sites bind plastoquinone: the PQH $_{2}$ site near the P side of the bilayer, and the PQ site near the N side. The Fe-S center of the Rieske protein lies just outside the bilayer on the P side, and the heme $f$ site is on a protein domain that extends well into the thylakoid lumen. The electron path is shown for just one of the monomers, but both sets of carriers in the dimer carry electrons to plastocyanin. (b) Plastoquinol (PQH $_{2}$ ), formed in PSII, is oxidized by the cytochrome $b_{6}f$ complex in a series of steps like those of the Q cycle in Complex III of mitochondria (see Fig. 19-11). One electron from PQH $_{2}$ passes to the Fe-S center of the Rieske protein, the other to heme $b_{L}$ of cytochrome $b_{6}$ . The net effect is passage of electrons from PQH $_{2}$ to the soluble protein plastocyanin, which carries them to PSI. [Data from PDB ID IVF5, G. Kurisu et al., Science 302:1009, 2003; PDB ID 2Q5B, Y.S. Bukhman-DeRuyter et al.]
+
+in which electrons pass, one at a time, from $PQ_{B}H_{2}$ to cytochrome $b_{6}$ . This cycle results in the pumping of protons across the membrane, from the stromal compartment to the thylakoid lumen. Up to four protons enter the lumen for each pair of electrons that passes through the cytochrome $b_{6}f$ complex. P3 The result is production of a proton gradient across the thylakoid membrane as electrons pass from PSII to PSI. Because the volume of the flattened thylakoid lumen is small, the influx of a small number of protons has a relatively large effect on lumenal pH. The measured difference in pH between the stroma (pH 8) and the thylakoid lumen (pH 5) represents a 1,000-fold difference in proton concentration—a powerful driving force for ATP synthesis.
+
+## Cyclic Electron Transfer Allows Variation in the Ratio of ATP/NADPH Synthesized
+
+Cyclic electron flow between PSI and cytochrome $b_{6}f$ increases the production of ATP relative to NADPH. The linear path of electrons from water, through PSII, cytochrome $b_{6}f$ , and PSI to $NADP^{+}$ produces both a proton gradient, which is used to drive ATP synthesis, and NADPH, which is used in reductive biosynthetic processes (see Fig. 20-12). Some fraction of electrons passing from P700\* to ferredoxin do not continue to $NADP^{+}$ , but cycle back through plastoquinone and the cytochrome $b_{6}f$ complex to plastocyanin. Plastocyanin then donates electrons to P700. In this way, electrons are repeatedly recycled through the cytochrome $b_{6}f$ complex and the reaction center of PSI, each electron propelled around the cycle by the energy of one photon. Cyclic electron flow is not accompanied by net formation of NADPH or evolution of $O_{2}$ . However, it is accompanied by proton pumping by the cytochrome $b_{6}f$ complex and by phosphorylation of ADP to ATP, referred to as cyclic photophosphorylation. The overall equation for cyclic electron flow and photophosphorylation is simply
+
+$$
+\mathrm{ADP} + \mathrm {P_ {i}} \xrightarrow {\text {   light   }} \mathrm{ATP} + \mathrm {H_ {2} O}
+$$
+
+P5 By regulating the partitioning of electrons between NADP $^{+}$ reduction and cyclic photophosphorylation, a plant adjusts the ratio of ATP to NADPH produced in the light-dependent reactions to match its needs for these products in the CO $_{2}$ -assimilation reactions and other biosynthetic processes. As we shall see in Section 20.4, the CO $_{2}$ -assimilation reactions require ATP and NADPH in the ratio 3:2. This regulation of electron-transfer pathways is part of a short-term adaptation to changes in light color (wavelength) and quantity (intensity).
+
+## State Transitions Change the Distribution of LHCII between the Two Photosystems
+
+Photosynthetic organisms are exposed to light of highly variable intensity and wavelength in the course of a day or a season, and, although they can alter their growth patterns somewhat, they cannot uproot themselves and move to optimize their light exposure. Instead, cellular mechanisms have evolved that allow plants to accommodate changing light conditions. The energy needed to excite PSI (P700) is less (light of longer wavelength, lower energy) than the energy needed to excite PSII (P680). If PSI and PSII were physically contiguous, excitons originating in the antenna system of PSII would migrate to the reaction center of PSI, leaving PSII chronically underexcited and thus interfering with the operation of the two-center system. This imbalance in the supply of excitons is prevented by physically separating the two photosystems in the thylakoid membrane (Fig. 20-18). PSII is located almost exclusively in the tightly appressed membrane stacks of granal thylakoids; its associated light-harvesting complex (LHCII) mediates the tight association of adjacent membranes in the grana. PSI and the ATP synthase complex are located almost exclusively in the nonappressed membranes of the stromal thylakoids, where they have access to the contents of the stroma, including ADP and NADP $^{+}$ . The cytochrome $b_{6}f$ complex is present primarily in the granal thylakoids.
+
+P2 The association of LHCII with PSI and PSII depends on light intensity and wavelength, which can change in the short term and lead to state transitions in the chloroplast. In state 1, LHCII, PSII, and PSI are poised to maximize the capture of light energy. A critical Thr residue in LHCII is unphosphorylated, and LHCII associates with PSII. Under conditions of intense or blue light, which favor absorption by PSII, that photosystem reduces plastoquinone to plastoquinol (PQH₂) faster than PSI can oxidize it. The resulting accumulation of PQH₂ activates a protein kinase that triggers the transition to state 2 by phosphorylating a Thr residue on LHCII (Fig. 20-19). Phosphorylation weakens the interaction of LHCII with the appressed membrane and with PSII; some LHCII dissociates and moves to the stromal thylakoids. Here it captures photons (excitons) for PSI, speeding the oxidation of PQH₂ and reversing the imbalance between electron flow in PSI and PSII. In less intense light (in the shade, with more red light), PSI oxidizes PQH₂ faster than PSII can make it, and the resulting increase in [PQ] triggers dephosphorylation of LHCII, reversing the effect of phosphorylation. The state transition in LHCII localization and the transition from cyclic to linear electron transfer are coordinately regulated: the path of electrons is primarily linear in state 1 and primarily cyclic in state 2.
+
+When light is so intense that the combined activity of PSII and PSI cannot synthesize ATP and NADPH fast enough to keep up with the supply of photons, carotenoids in LHCII absorb the excitons and very rapidly quench the excited chlorophyll before it can create damaging reactive oxygen species (ROS). The trigger for switching from an efficient light-harvesting state to an energy-dissipating state is the lowering of pH in the lumenal space, but the detailed mechanism for this transition is not yet known.
+
+(a)  
+![](images/3e56f07984a13aa9c4b58c869035128f652097961de602cf18755b2ad766e820.jpg)
+
+![](images/1c73806b83d75595daa50e70f408f969fd15cad79b802a9f1baa4c4decdfff40.jpg)  
+FIGURE 20-18 Localization of PSI and PSII in thylakoid membranes. (a) Structures of the complexes and soluble proteins of the photosynthetic apparatus of a vascular plant or alga, drawn to the same scale. The bovine ATP synthase is shown. (b) Light-harvesting complex LHCII and ATP synthase are located both in appressed regions of the thylakoid membrane (granal thylakoids, in which several membranes are in contact) and in nonappressed regions (stromal thylakoids), and have ready access to ADP and $\mathrm{NADP^{+}}$ in the stroma. PSII is present almost
+
+![](images/079a1d070c7662004723dcc42d30c0447c8db018c5259bd3ba6c102a1121455e.jpg)  
+FIGURE 20-19 Electron transfer in PSI and PSII is balanced through state transitions. In granal thylakoids, a hydrophobic domain of LHCII in one membrane inserts into the neighboring membrane and closely appresses the two (state 1). Accumulation of plastoquinol (not shown) stimulates a protein kinase that phosphorylates a Thr residue in the hydrophobic domain of LHCII, which reduces its affinity for the neighboring membrane and converts appressed granal thylakoids to nonappressed stromal thylakoids (state 2). A specific protein phosphatase reverses this regulatory phosphorylation when the $\left[\mathrm{PQ}\right] / \left[\mathrm{PQH}_2\right]$ ratio increases.  
+exclusively in the appressed granal regions, and PSI almost exclusively in nonappressed stromal regions. LHCII is the "adhesive" that holds appressed thylakoid membranes together (see Fig. 20-19). [(a) Data from PSII: PDB ID 3WU2, Y. Umena et al., Nature 473:55, 2011; cyt bef complex: PDB ID 2E74, E. Yamashita et al., J. Mol. Biol. 370:39, 2007; plastocyanin: PDB ID 1AG6, Y. Xue et al., Protein Sci. 7:2099, 1998; PSI: PDB ID 4RKU, Y. Mazor et al.; ferredoxin: PDB ID 1A70, C. Binda et al., Acta Crystallogr. D Biol. Crystallogr. 54:1353, 1998; ferredoxin:NADP reductase: PDB ID 1QG0, Z. Deng et al., Nat. Struct. Biol. 6:847, 1999; ATP synthase: PDB ID 5ARA, A. Zhou et al., eLife 4:e10180, 2015.]
+
+## Water Is Split at the Oxygen-Evolving Center
+
+The ultimate source of the electrons passed to NADPH in plant (oxygenic) photosynthesis is water. Having given up an electron to pheophytin, P680 $^{+}$ (of PSII) must acquire an electron to return to its ground state in preparation for capture of another photon. In principle, the required electron might come from any number of organic or inorganic compounds. Photosynthetic bacteria use a variety of electron donors for this purpose—acetate, succinate, malate, or sulfide—depending on what is available in a particular ecological niche. About 2.5 billion years ago, evolution of primitive photosynthetic bacteria (progenitors of the modern cyanobacteria) produced a photosystem capable of taking electrons from a donor that is always available: water. Two water molecules are oxidized, yielding four electrons, four protons, and molecular oxygen:
+
+$$
+2 \mathrm{H} _ {2} \mathrm{O} \longrightarrow 4 \mathrm{H} ^ {+} + 4 e ^ {-} + \mathrm{O} _ {2}
+$$
+
+(a)  
+![](images/9e6d3a21645ec8adaa0f80859737902423104c21decc36757e6037cbfcbe17c5.jpg)
+
+![](images/74bcfdc003b51edf310ac60fddfb5b1c304245d7d40351652c8775dfff856ace.jpg)  
+FIGURE 20-20 Water-splitting activity of the oxygen-evolving center. (a) The process that produces a four-electron oxidizing agent—a multinuclear center with four Mn ions, one Ca ion, and five oxygen atoms—in the oxygen-evolving center of PSII. The sequential absorption of four photons (excitons), each absorption causing the loss of one electron from the $Mn_{4}CaO_{5}$ cofactor, produces an oxidizing agent that can remove four electrons from two molecules of water, producing $O_{2}$ . The electrons lost from the $Mn_{4}CaO_{5}$ cofactor pass one at a time to an oxidized Tyr residue in a PSII protein, then to $P680^{+}$ . (b) The chair-shaped metallic center of the oxygen-evolving center. Tyr $^{161}$ , known to participate in the oxidation of water, is seen hydrogen-bonded to a network of water molecules, including several directly in contact with the $Mn_{4}CaO_{5}$ cofactor. This is the site of one of the most important reactions in the biosphere. [(b) Data from PDB ID 3WU2, Y. Umena et al., Nature 473:55, 2011.]
+
+A single photon of visible light does not have enough energy to break the bonds in water; four photons are required in this photolytic cleavage reaction.
+
+P3 The four electrons abstracted from water do not pass directly to P680+, which can accept only one electron at a time. Instead, a remarkable molecular device, the oxygen-evolving center, passes four electrons one at a time to P680+ (Fig. 20-20a). The immediate electron donor to P680+ is a Tyr residue (sometimes designated Z or TyrZ) in subunit D1 of the PSII reaction center. The Tyr residue loses both a proton and an electron, generating the electrically neutral Tyr free radical, \*Tyr:
+
+$$
+4 \mathrm{P} 6 8 0 ^ {+} + 4 \mathrm{Tyr} \longrightarrow 4 \mathrm{P} 6 8 0 + 4 ^ {\bullet} \mathrm{Tyr}\tag{20-2}
+$$
+
+The Tyr radical regains its missing electron and proton by oxidizing a cofactor of four manganese ions and one calcium ion in the oxygen-evolving center. With each single-electron transfer, the $Mn_{4}CaO_{5}$ cofactor becomes more oxidized; four single-electron transfers, each corresponding to the absorption of one photon, produce a charge of 4+ on the $Mn_{4}CaO_{5}$ cofactor (Fig. 20-20a):
+
+$$
+4 ^ {\bullet} \mathrm{Tyr} + [ \mathrm{Mn} _ {4} \mathrm{CaO} _ {5} ] ^ {0} \longrightarrow 4 \mathrm{Tyr} + [ \mathrm{Mn} _ {4} \mathrm{CaO} _ {5} ] ^ {4 +}\tag{20-3}
+$$
+
+In this state, the $Mn_{4}CaO_{5}$ cofactor can take four electrons from a pair of water molecules, releasing four $H^{+}$ and $O_{2}$ :
+
+$$
+[ \mathrm{Mn} _ {4} \mathrm{CaO} _ {5} ] ^ {4 +} + 2 \mathrm{H} _ {2} \mathrm{O} \longrightarrow
+$$
+
+$$
+[ \mathrm{Mn} _ {4} \mathrm{CaO} _ {5} ] ^ {0} + 4 \mathrm{H} ^ {+} + \mathrm{O} _ {2}\tag{20-4}
+$$
+
+P4 Because the four protons produced in this reaction are released into the thylakoid lumen, the oxygen-evolving center acts as a proton pump, driven by electron transfer.
+
+We saw in Equation 20-1 that the overall reaction initiated by light in PSII is
+
+$$
+\begin{array}{r l} 4 \mathrm{P680} + 4 \mathrm{H} ^ {+} + 2 \mathrm{PQ} _ {\mathrm{B}} + 4 \text {photons} & \longrightarrow \\ & 4 \mathrm{P680} ^ {+} + 2 \mathrm{PQ} _ {\mathrm{B}} \mathrm{H} _ {2} \end{array}
+$$
+
+The sum of Equations 20-1 through 20-4 is
+
+$$
+2 \mathrm{H} _ {2} \mathrm{O} + 2 \mathrm{PQ} _ {\mathrm{B}} + 4 \text { photons } \longrightarrow \mathrm{O} _ {2} + 2 \mathrm{PQ} _ {\mathrm{B}} \mathrm{H} _ {2}\tag{20-5}
+$$
+
+P3 The oxygen-evolving cofactor takes the shape of a chair (Fig. 20-20b). The seat and legs of the chair are made up of three Mn ions, one Ca ion, and four O atoms; the fourth Mn and another O form the back of the chair. Four water molecules are also seen in the crystal structure, two associated with one of the Mn ions, the other two with the Ca ion. It may be one (or more) of these water molecules that undergoes oxidation to produce $\mathrm{O}_2$ . This metal cofactor is associated with several peripheral membrane proteins on the lumenal side of the thylakoid membrane that are believed to stabilize the cofactor. The Tyr residue designated Z, through which electrons move between water and the PSII reaction center, is connected with a network of hydrogen-bonded water molecules that includes the four associated with the $\mathrm{Mn_4CaO_5}$ cofactor. The detailed mechanism of water oxidation by the $\mathrm{Mn_4CaO_5}$ cofactor is not known but is under intense investigation. The reaction is central to life on Earth and may involve novel bioinorganic chemistry. Determination of the structure of the polymetallic center has inspired several reasonable and testable hypotheses. Stay tuned.
+
+## SUMMARY 20.2 Photochemical Reaction Centers
+
+Bacteria have a single photochemical reaction center. Purple bacteria have a type II photosystem where electrons from an excited special pair of chlorophyll molecules (P870\*) flow through pheophytin, quinones, and a proton-pumping cytochrome complex, back to the special pair of chlorophylls. Green sulfur bacteria have a type I photosystem that can send electrons through a similar cyclic path or through a linear path that reduces $\mathrm{NAD^{+}}$ to NADH.
+
+In cyanobacteria, algae, and plants, two different reaction centers are arranged in tandem. In the reaction center of PSII, when the special pair of chlorophylls (P680) is excited by light, it passes electrons to plastoquinone, and the electrons lost from P680 are replaced by electrons from $\mathrm{H}_2\mathrm{O}$ . PSI passes electrons from the excited special pair $(\mathrm{P700}^*)$ in its reaction center through a series of carriers to ferredoxin, which then reduces $\mathrm{NADP}^+$ to NADPH.
+
+Electron flow from either photosystem through the cytochrome $b_{6}f$ complex drives protons across the thylakoid membrane, creating a proton-motive force that provides the energy for ATP synthesis by an ATP synthase.
+
+■ Linear electron transfer through the photosystems produces NADPH and ATP. Cyclic electron transfer produces only ATP and allows variability in the proportions of NADPH and ATP formed.
+
+The distribution of PSI and PSII between the granal and stromal thylakoids can change and is indirectly controlled by light intensity, optimizing the distribution of excitons between PSI and PSII for efficient energy capture.
+
+The oxygen-evolving center, which contains a $Mn_{4}CaO_{5}$ cofactor, uses energy from light to split water, producing $O_{2}$ . For each $O_{2}$ formed at the oxygen-evolving center, four protons are pumped into the thylakoid lumen, contributing to the proton motive force.
+
+## 20.3 Evolution of a Universal Mechanism for ATP Synthesis
+
+The combined activities of the two plant photosystems move electrons from water to $NADP^{+}$ , conserving some of the energy of absorbed light as NADPH (Fig. 20-12). Simultaneously, protons are pumped across the thylakoid membrane and energy is conserved as an electrochemical potential. We turn now to the process by which this proton gradient drives the synthesis of ATP, the other energy-conserving product of the light-dependent reactions.
+
+## A Proton Gradient Couples Electron Flow and Phosphorylation
+
+P4 Although the energy source and electron carriers in photophosphorylation in chloroplasts differ from those of oxidative phosphorylation in mitochondria, they use essentially the same mechanism to capture the energy of the proton gradient. Electron-transferring molecules in the chain of carriers connecting PSII and PSI are oriented asymmetrically in the thylakoid membrane, so photoinduced electron flow results in the net movement of protons across the membrane, from the stromal side to the thylakoid lumen (Fig. 20-21).
+
+![](images/a9ea71613e432b775ae78269324e91501ccd4cbd9de73b99d7b6ffa12919ef80.jpg)  
+FIGURE 20-21 Proton and electron circuits during photophosphorylation. In the linear electron pathway (blue arrows), electrons move from $\mathsf{H}_2\mathsf{O}$ through PSII, through the intermediate chain of carriers of the cytochrome $b_{6}f$ complex, through PSI, and finally to $\mathrm{NADP^{+}}$ . In the cyclic pathway, electrons move from PSI back to plastoquinone and cytochrome $b_{6}f$ . Protons (red arrows) are pumped into the thylakoid lumen by the flow of electrons through cytochrome $b_{6}f$ , and they reenter the stroma through proton channels formed by $\mathrm{CF_0}$ of ATP synthase. The $\mathrm{CF_1}$ subunit catalyzes synthesis of ATP.
+
+## The Approximate Stoichiometry of Photophosphorylation Has Been Established
+
+![](images/971e5477d8f75279a6eb5c4131e617b3b442d85aeeab35e5fda0187a3526ba20.jpg)
+
+As electrons move from water to NADP $^{+}$ in chloroplasts, about 12 protons move from the stroma into the thylakoid lumen per 4 electrons passed (that is, per O $_{2}$ formed). Of these protons, 4 are moved by the oxygen-evolving center, and up to 8 are moved by the cytochrome $b_{6}f$ complex. The measurable result is a 1,000-fold difference in H $^{+}$ concentration across the thylakoid membrane ( $\Delta pH = 3$ ). Recall that the energy stored in a proton gradient (the electrochemical potential) has two components: a proton concentration difference ( $\Delta pH$ ) and an electrical potential ( $\Delta \psi$ ) due to charge separation. In chloroplasts, $\Delta pH$ is the dominant component; counterion movement apparently dissipates most of the electrical potential. In illuminated chloroplasts, the energy stored in the proton gradient per mole of protons is
+
+$$
+\Delta G = 2. 3 R T \Delta \mathrm{pH} + Z F \Delta \psi = - 1 7 \mathrm{kJ/mol}
+$$
+
+so the movement of 12 mol of protons across the thylakoid membrane represents conservation of about 200 kJ of energy—enough energy to drive the synthesis of several moles of ATP ( $\Delta G^{\circ}=30.5$ kJ/mol). Experimental measurements yield values of about 3 ATP per $O_{2}$ produced.
+
+At least 8 photons must be absorbed to drive 4 electrons from 2 H $_{2}$ O to 2 NADPH (one photon per electron at each reaction center). The energy in 8 photons of visible light is more than enough for the synthesis of three molecules of ATP.
+
+ATP synthesis is not the only energy-conserving reaction of photosynthesis in plants; the NADPH formed in the final electron transfer is also energetically rich. The overall equation for this linear photophosphorylation is
+
+$$
+\begin{array}{r l} 2 \mathrm{H} _ {2} \mathrm{O} + 8 \text {   photons } + 2 \mathrm{NADP} ^ {+} + \sim 3 \mathrm{ADP} ^ {+} + \sim 3 \mathrm{P} _ {\mathrm{i}} & \longrightarrow \\ \mathrm{O} _ {2} + \sim 3 \mathrm{ATP} + 2 \mathrm{NADPH} & \end{array}\tag{20-6}
+$$
+
+## The ATP Synthase Structure and Mechanism Are Nearly Universal
+
+The enzyme responsible for ATP synthesis in chloroplasts is a large complex with two functional components, $CF_{0}$ and $CF_{1}$ (C denoting its location in chloroplasts). $CF_{0}$ is a transmembrane proton pore composed of several integral membrane proteins and is homologous to mitochondrial $F_{0}$ . $CF_{1}$ is a peripheral membrane protein complex very similar in subunit composition, structure, and function to mitochondrial $F_{1}$ .
+
+Electron microscopy of sectioned chloroplasts shows ATP synthase complexes as projections on the outside (stromal, or N) surface of thylakoid membranes; these complexes correspond to the ATP synthase complexes that project on the inside (matrix, or N) surface of the inner mitochondrial membrane. Thus, the relationship between the orientation of the ATP synthase and the direction of proton pumping is the same in chloroplasts and mitochondria. In both cases, the $F_{1}$ portion of ATP synthase is located on the more alkaline (N) side of the membrane through which protons flow down their concentration gradient; the direction of proton flow relative to $F_{1}$ is the same in both cases: P to N (Fig. 20-22).
+
+P4 The mechanism of chloroplast ATP synthase is essentially identical to that of its mitochondrial analog; ADP and $P_{i}$ readily condense to form ATP on the enzyme surface, and the release of this enzyme-bound
+
+![](images/48d4437b71c5d03f1996f58bff470fbf408ade5633246108f4b48f17a9c622f0.jpg)  
+FIGURE 20-22 Orientation of ATP synthase is fixed relative to the proton gradient. Superficially, the direction of proton pumping in chloroplasts may seem to be opposite to that in mitochondria and bacteria. In mitochondria and bacteria, protons are pumped out of the organelle or cell, and $F_{1}$ is on the inside of the membrane; in chloroplasts, protons are pumped into the thylakoid lumen, and $CF_{1}$ is on the outside of the thylakoid membrane. However, exactly the same mechanism of energy conversion (from proton gradient to ATP) occurs in all three cases. ATP is synthesized in the matrix of mitochondria, the stroma of chloroplasts, and the cytosol of bacteria.
+
+ATP requires a proton-motive force. Rotational catalysis sequentially engages each of the three $\beta$ subunits of the ATP synthase in ATP synthesis, ATP release, and ADP + P $_{i}$ binding (see Figs. 19-26 and 19-27).
+
+The appearance of oxygenic photosynthesis on Earth about 2.5 billion years ago was a crucial event in the evolution of the biosphere. Before that, Earth's atmosphere was composed of methane, $CO_{2}$ , and $N_{2}$ . The planet was essentially devoid of molecular oxygen and lacked the ozone layer that protects organisms from solar UV radiation. Oxygenic photosynthesis made available a nearly limitless supply of reducing agent ( $H_{2}O$ ) to drive the production of organic compounds by reductive biosynthetic reactions. And mechanisms evolved that allowed organisms to use $O_{2}$ as a terminal electron acceptor in highly energetic electron transfers from organic substrates, employing the energy of oxidation to support metabolism. The complex photosynthetic apparatus of a modern vascular plant is the culmination of a series of evolutionary events, the most recent of which was the acquisition by eukaryotic cells of a cyanobacterial endosymbiont.
+
+The chloroplasts of modern organisms share several properties with mitochondria and originated by the same mechanism that gave rise to mitochondria: endosymbiosis. Like mitochondria, chloroplasts contain their own DNA and protein-synthesizing machinery. Some of the polypeptides of chloroplast proteins are encoded by chloroplast genes and synthesized in the chloroplast; others are encoded by nuclear genes, synthesized outside the chloroplast, and imported (Chapter 27). When plant cells grow and divide, chloroplasts give rise to new chloroplasts by division, during which their DNA is replicated and divided between daughter chloroplasts. The machinery and mechanisms for light capture, electron flow, and ATP synthesis in modern cyanobacteria are similar in many respects to those in plant chloroplasts. These observations led to the now widely accepted hypothesis that the evolutionary progenitors of modern plant cells were primitive eukaryotes that engulfed photosynthetic cyanobacteria and established stable endosymbiotic relationships with them (see Fig. 1-37).
+
+At least half of the photosynthetic activity on Earth now occurs in microorganisms—algae, other photosynthetic eukaryotes, and photosynthetic bacteria. Cyanobacteria have PSII and PSI in tandem, and the PSII has an associated oxygen-evolving activity resembling that of plants. However, the other groups of photosynthetic bacteria have single reaction centers and do not split $H_{2}O$ or produce $O_{2}$ . Many are obligate anaerobes and cannot tolerate $O_{2}$ ; they must use some compound other than $H_{2}O$ as an electron donor. Some photosynthetic bacteria use inorganic compounds as electron (and hydrogen) donors. For example, green sulfur bacteria use hydrogen sulfide:
+
+$$
+\mathrm {2H_ {2} S + CO_ {2} \xrightarrow{light} (CH_ {2} O)+ H_ {2} O + 2S}
+$$
+
+These bacteria, instead of producing molecular $O_{2}$ , form elemental sulfur as the oxidation product of $H_{2}S$ .
+
+(They further oxidize the S to $SO_{4}^{2-}$ .) Other photosynthetic bacteria use organic compounds such as lactate as electron donors:
+
+$$
+2 \mathrm{Lactate} + \mathrm{CO} _ {2} \xrightarrow {\text {light}} (\mathrm{CH} _ {2} \mathrm{O}) + \mathrm{H} _ {2} \mathrm{O} + 2 \text {pyruvate}
+$$
+
+The fundamental similarity of photosynthesis in plants and bacteria, despite the differences in the electron donors they employ, becomes more obvious when the equation of photosynthesis is written in the more general form
+
+$$
+2 \mathrm{H} _ {2} \mathrm{D} + \mathrm{CO} _ {2} \xrightarrow {\text {light}} (\mathrm{CH} _ {2} \mathrm{O}) + \mathrm{H} _ {2} \mathrm{O} + 2 \mathrm{D}
+$$
+
+in which $H_{2}D$ is an electron (and hydrogen) donor and D is its oxidized form. $H_{2}D$ may be water, hydrogen sulfide, lactate, or some other organic compound, depending on the species. Most likely, the bacteria that first developed photosynthetic ability used $H_{2}S$ as their electron source.
+
+Modern cyanobacteria can synthesize ATP by oxidative phosphorylation or by photophosphorylation, although they have neither mitochondria nor chloroplasts. The enzymatic machinery for both processes is in a highly convoluted plasma membrane (Fig. 20-23). Three protein components function in both processes, giving evidence that the processes have a common evolutionary origin (Fig. 20-24). First, the proton-pumping cytochrome $b_{6}f$ complex carries electrons from
+
+![](images/09210a44d4da384844000e1c98b1e1bc2f9a505faaee6230d261b57cb5bf880d.jpg)  
+FIGURE 20-23 The photosynthetic membranes of a cyanobacterium. In these thin sections of a cyanobacterium, viewed with a transmission electron microscope, the multiple layers of the internal membranes are seen to fill half the total volume of the cell. The extensive membrane system serves the same role as the thylakoid membranes of vascular plants, providing a large surface area containing all of the photosynthetic machinery. (Bar = 100 nm.) [S. R. Miller et al. Discovery of a free-living chlorophyll d-producing cyanobacterium with a hybrid proteobacterial/cyanobacterial small-subunit rRNA gene. Proc. Natl. Acad. Sci. USA 102:850, 2005, Fig. 2. © 2005 National Academy of Sciences.]
+
+![](images/777b82d677d99bc56afa8d476bff5ab67fb9d031ba5454e3327001b19dd24b8c.jpg)  
+FIGURE 20-24 Dual roles of cytochrome $b_{6}f$ and cytochrome $c_{6}$ in cyanobacteria reflect evolutionary origins. Cyanobacteria use cytochrome $b_{6}f$ , cytochrome $c_{6}$ , and plastoquinone for both oxidative phosphorylation and photophosphorylation. (a) In photophosphorylation, electrons flow (blue arrows) from water to NADP+. (b) In oxidative phosphorylation, electrons flow from NADH to O₂. Both processes are accompanied by proton movement across the membrane, accomplished by a Q cycle.
+
+plastoquinone to cytochrome $c_{6}$ in photosynthesis, and also carries electrons from ubiquinone to cytochrome $c_{6}$ in oxidative phosphorylation—the role played by cytochrome $bc_{1}$ in mitochondria. Second, cytochrome $c_{6}$ , homologous to mitochondrial cytochrome c, carries electrons from Complex III to Complex IV in cyanobacteria; it can also carry electrons from the cytochrome $b_{6}f$ complex to PSI—a role performed in plants by plastocyanin. P4 We therefore see the functional homology between the cyanobacterial cytochrome $b_{6}f$ complex and the mitochondrial cytochrome $bc_{1}$ complex, and between cyanobacterial cytochrome $c_{6}$ and plant plastocyanin. The third conserved component is the ATP synthase, which functions in oxidative phosphorylation and photophosphorylation in cyanobacteria, and in the mitochondria and chloroplasts of photosynthetic eukaryotes. The structure and remarkable mechanism of this enzyme have been strongly conserved throughout evolution.
+
+## SUMMARY 20.3 Evolution of a Universal Mechanism for ATP Synthesis
+
+In plants, both the water-splitting reaction and electron flow through the cytochrome $b_{6}f$ complex are accompanied by proton pumping across the thylakoid membrane. The proton-motive force thus created drives ATP synthesis by a $\mathrm{CF_0CF_1}$ complex similar to the mitochondrial $\mathrm{F_oF_1}$ complex in both structure and catalytic mechanism.
+
+■ Direct measurements show that eight photons drive the production of one $O_{2}$ from oxidation of two $H_{2}O$ , making three ATP molecules.
+
+■ About 2.5 billion years ago, cyanobacteria appeared on Earth. They had acquired two photosystems—one of the type now found in purple bacteria, the other of the type found in green sulfur bacteria—that operated in tandem, and a water-splitting activity that released oxygen into the atmosphere.
+
+Many photosynthetic microorganisms obtain electrons for photosynthesis not from water but from donors such as $H_{2}S$ , forming an oxidized product such as elemental sulfur (not oxygen).
+
+Chloroplasts, like mitochondria, evolved from bacteria living as endosymbionts in early eukaryotic cells. The ATP synthases of bacteria, cyanobacteria, mitochondria, and chloroplasts share a common evolutionary precursor and a common enzymatic mechanism.
+
+## 20.4 $\mathrm{CO}_{2}$ -Assimilation Reactions
+
+Photosynthetic organisms use the ATP and NADPH produced in the light-dependent reactions of photosynthesis to synthesize all of the thousands of components that make up the organism. P5 Plants (and other autotrophs) can reduce atmospheric $\mathrm{CO}_{2}$ to trioses, then use the trioses as precursors for the synthesis of sucrose and starch, lipids and proteins, and the many other organic components of plant cells (Fig. 20-25). Lacking these synthetic capacities, humans and other animals are ultimately dependent on photosynthetic organisms to provide the reduced fuels and organic precursors essential to life.
+
+![](images/fb8de2a21e1ec6df221646aefb7658994bbe201fdb7e257af4f382c76763052e.jpg)  
+FIGURE 20-25 Products of photosynthesis.
+
+Green plants contain in their chloroplasts the enzymatic machinery that catalyzes the conversion of $CO_{2}$ to simple (reduced) organic compounds, a process called $CO_{2}$ assimilation. This process has also been called $CO_{2}$ fixation, but we reserve this term for the specific reaction in which $CO_{2}$ is incorporated (fixed) into a three-carbon organic compound, the triose phosphate 3-phosphoglycerate. This simple product of photosynthesis is the precursor of more-complex biomolecules, including sugars, polysaccharides, and the metabolites derived from them, all of which are synthesized by metabolic pathways similar to those of animal tissues. Carbon dioxide is assimilated via a cyclic pathway, its key intermediates constantly regenerated. The pathway was elucidated in the early 1950s by Melvin Calvin, Andrew Benson, and James A. Bassham and is often called the Calvin cycle or, more descriptively, the reductive pentose phosphate pathway. It is essentially the reversal of a central pathway of glucose oxidation, the pentose phosphate pathway, which we described in Section 14.6.
+
+Carbohydrate metabolism is more complex in plant cells than in animal cells or in nonphotosynthetic microorganisms. In addition to the universal pathways of glycolysis, gluconeogenesis, and the pentose phosphate pathway, plants have the unique reaction sequences for reduction of $CO_{2}$ to triose phosphates and the associated reductive pentose phosphate pathway—all of which must be coordinately regulated to ensure proper allocation of carbon to energy production and synthesis of starch and sucrose. Key enzymes are regulated, as we shall see, by (1) reduction of disulfide bonds by electrons flowing from photosystem I and (2) changes in pH and $Mg^{2+}$ concentration that result from illumination. When we look at other aspects of plant carbohydrate metabolism, we also find enzymes that are modulated by (3) conventional allosteric regulation by one or more metabolic intermediates and (4) covalent modification (phosphorylation).
+
+## Carbon Dioxide Assimilation Occurs in Three Stages
+
+The first stage in the assimilation of $CO_{2}$ into biomolecules (Fig. 20-26) is the $CO_{2}$ -fixation reaction: condensation of $CO_{2}$ with a five-carbon acceptor, ribulose 1,5-bisphosphate, to form two molecules of 3-phosphoglycerate. In the second stage, the 3-phosphoglycerate is reduced to triose phosphates. P5 Overall, three molecules of $CO_{2}$ are fixed to three molecules of ribulose 1,5-bisphosphate to form six molecules of glyceraldehyde 3-phosphate (18 carbons). In the third stage, five of the six molecules of triose phosphate (15 carbons) are used to regenerate three molecules of ribulose 1,5-bisphosphate (15 carbons), the starting material. The sixth molecule of triose phosphate, the net product of photosynthesis, can be used to make hexoses for fuel and building materials, sucrose for transport to nonphotosynthetic tissues, or starch for storage. Thus, the overall process is cyclical, with the continuous conversion of $CO_{2}$ to triose and hexose phosphates.
+
+![](images/a68910c7d9d30551354a2e20455d99776d3cca5f097b9393584c5a4b354220c0.jpg)
+
+![](images/b84729a2a075c9a18302231ba07d253bd53698a4a17dd60d585ef054d19eb66b.jpg)
+
+Fructose 6-phosphate is a key intermediate in stage 3 of $CO_{2}$ assimilation; it stands at a branch point, leading either to regeneration of ribulose 1,5-bisphosphate or to synthesis of starch. The pathway from hexose phosphate to pentose bisphosphate involves many of the same reactions used in animal cells for the conversion of pentose phosphates to hexose phosphates during the nonoxidative phase of the pentose phosphate pathway (see Fig. 14-31). In the photosynthetic assimilation of $CO_{2}$ , essentially the same set of reactions operates in the reverse direction, converting hexose phosphates to pentose phosphates. This reductive pentose phosphate cycle uses the same enzymes as the oxidative pathway, and several additional enzymes that make the reductive cycle irreversible. All 13 enzymes of the pathway are in the chloroplast stroma.
+
+Stage 1: Fixation of $\mathrm{CO}_{2}$ into 3-Phosphoglycerate An important clue to the nature of the $\mathrm{CO}_{2}$ -assimilation mechanisms in photosynthetic organisms came in the late 1940s. Calvin and his associates illuminated a suspension of green algae in the presence of radioactive carbon dioxide ( $^{14}\mathrm{CO}_{2}$ ) for just a few seconds, then quickly killed the cells, extracted their contents, and used chromatographic methods to search for the metabolites in which the labeled carbon first appeared. The first compound that became labeled was 3-phosphoglycerate, with the $^{14}\mathrm{C}$ predominantly located in the carboxyl carbon atom. These experiments strongly suggested that 3-phosphoglycerate is an early intermediate in photosynthesis.
+
+FIGURE 20-26 The three stages of $\mathrm{CO}_{2}$ assimilation in photosynthetic organisms. Stoichiometries of three key intermediates (numbers in parentheses) reveal the fate of carbon atoms entering and leaving the photosynthetic carbon-reduction cycle (Calvin cycle). Three $\mathrm{CO}_{2}$ are fixed for the net synthesis of one molecule of glyceraldehyde 3-phosphate.  
+![](images/c190836f1e735e5e25b357cccce2b57db94349e44aaac09b277a3386df1e219c.jpg)
+
+The many plants in which this three-carbon compound is the first intermediate are called $C_{3}$ plants, in contrast to the $C_{4}$ plants described below. Most plant species — 80% to 90% — are $C_{3}$ , including most trees, wheat, oats, rice, beans, peas, and spinach. The enzyme that catalyzes incorporation of $CO_{2}$ into an organic form is ribulose 1,5-bisphosphate carboxylase/oxygenase, a name mercifully shortened to rubisco. P5 As a carboxylase, rubisco catalyzes the covalent attachment of $CO_{2}$ to the five-carbon sugar ribulose 1,5-bisphosphate and cleavage of the unstable six-carbon intermediate to form two molecules of 3-phosphoglycerate, one of which bears the carbon introduced as $CO_{2}$ in its carboxyl group (Fig. 20-26). The enzyme's oxygenase activity is discussed in Section 20.5.
+
+There are two distinct forms of rubisco. The rubisco of vascular plants, algae, and cyanobacteria is a crucial enzyme in the production of biomass from $CO_{2}$ . It has a complex form I structure (Fig. 20-27a), with eight identical large catalytic subunits ( $M_{r}$ 53,000; encoded in the chloroplast genome), and eight identical small subunits ( $M_{r}$ 14,000; encoded in the nuclear genome) of uncertain function. The form II rubisco of photosynthetic bacteria is simpler, having two subunits that in many respects resemble the large subunits of the plant enzyme (Fig. 20-27b). The plant enzyme has an exceptionally low turnover number; only three molecules of $CO_{2}$ are fixed per second per molecule of rubisco at 25 °C. To achieve high rates of $CO_{2}$ fixation, plants therefore need large amounts of this enzyme. Rubisco is present at about 250 mg/mL in the chloroplast stroma, corresponding to an extraordinarily high concentration of active sites (\~4 mm). In fact, rubisco makes up almost 50% of soluble protein in chloroplasts and is probably one of the most abundant enzymes in the biosphere.
+
+![](images/08e8af8590c83614170e104e5fbe0b5fb9d4387ad660f1c9e42d723ed7fe5de5.jpg)  
+FIGURE 20-27 Structure of ribulose 1,5-bisphosphate carboxylase/oxygenase (rubisco). (a) A ribbon model of form I rubisco from spinach. The enzyme has eight large (blue) and eight small (gray) subunits, tightly packed into a structure of $M_{\mathrm{r}} > 500,000$ . A transition-state analog, 2-carboxyarabinitol bisphosphate (yellow), is shown bound  
+to each of the eight substrate-binding sites. Mg $^{2+}$ in the active site is shown in green. (b) Ribbon model of form II rubisco from the bacterium Rhodospirillum rubrum. The identical subunits are in gray and blue. [Data from (a) PDB ID BRUC, I. Andersson, J. Mol. Biol. 259:160, 1996; (b) PDB ID 9RUB, T. Lundqvist and G. Schneider, J. Biol. Chem. 266:12,604, 1991.]
+
+Central to the proposed mechanism for plant rubisco is a carbamoylated Lys side chain with a bound $Mg^{2+}$ ion. The $Mg^{2+}$ ion brings together and orients the reactants at the active site (Fig. 20-28), setting up for a nucleophilic attack by the five-carbon enediolate reaction intermediate formed on the enzyme (Fig. 20-29). The resulting six-carbon intermediate breaks down to yield two molecules of 3-phosphoglycerate.
+
+![](images/73c0627b40d99249daff7b5c3cf8aba6cfca9250de5855581a0a18582d2b5f23.jpg)  
+FIGURE 20-28 Central role of $\mathsf{Mg}^{2+}$ in the active site of rubisco. $\mathsf{Mg}^{2+}$ is coordinated in a roughly octahedral complex with six oxygen atoms: one oxygen in the carbamate on Lys $^{201}$ ; two in the carboxyl groups of Glu $^{204}$ and Asp $^{203}$ ; two at C-2 and C-3 of the substrate, ribulose 1,5-bisphosphate; and one in the other substrate, $\mathrm{CO}_{2}$ . A water molecule occupies the $\mathrm{CO}_{2}$ -binding site in the crystal structure. In this figure, a $\mathrm{CO}_{2}$ molecule is modeled in its place. (Residue numbers refer to the spinach enzyme.) [Data from PDB ID 1RXO, T.C. Taylor and I. Andersson, J. Mol. Biol. 265:432, 1997.]
+
+As the catalyst for the first step of photosynthetic $CO_{2}$ assimilation, rubisco is a prime target for regulation. The enzyme is inactive until carbamoylated on the $\varepsilon$ -amino group of $Lys^{201}$ (Fig. 20-30). Ribulose 1,5-bisphosphate inhibits carbamoylation by binding tightly to the active site and locking the enzyme in the “closed” conformation, in which $Lys^{201}$ is inaccessible. Rubisco activase overcomes the inhibition by promoting ATP-dependent release of the ribulose 1,5-bisphosphate, exposing the Lys amino group to nonenzymatic carbamoylation by $CO_{2}$ ; this is followed by $Mg^{2+}$ binding, which activates the rubisco.
+
+Stage 2: Conversion of 3-Phosphoglycerate to Glyceraldehyde 3-Phosphate Stage 2 begins as stromal 3-phosphoglycerate kinase catalyzes the transfer of a phosphoryl group from ATP to 3-phosphoglycerate, yielding 1,3-bisphosphoglycerate. Next, NADPH donates electrons in a reduction catalyzed by the chloroplast-specific isozyme of glyceraldehyde 3-phosphate dehydrogenase, producing glyceraldehyde 3-phosphate and $\mathbf{P}_{\mathrm{i}}$ . The high concentrations of NADPH and ATP in the chloroplast stroma allow this thermodynamically unfavorable pair of reactions to proceed in the direction of glyceraldehyde 3-phosphate formation. Triose phosphate isomerase then interconverts glyceraldehyde 3-phosphate and dihydroxyacetone phosphate, producing the two substrates for aldolase, which condenses them into fructose 1,6-bisphosphate. Thus far, the process has employed the same enzymes we saw in glycolysis, but operating in the reverse direction.
+
+Most of the triose phosphate and fructose 1,6-bisphosphate produced by photosynthesis is used to regenerate ribulose 1,5-bisphosphate, the essential starting material for photosynthesis. Any excess triose phosphate is either converted to starch in the chloroplast and stored for later use or immediately exported to the cytosol and converted to sucrose for transport to growing regions of the plant.
+
+![](images/698c5a93bfba6422494303ff8789ad5ea4d1ae62e1984883ced2cdeffd91ea59.jpg)
+
+![](images/0224892492aa328576c1c33fbb1c40e09cda9de33bc83dc52ab7b579e3070b70.jpg)  
+MECHANISM FIGURE 20-29 First stage of $\mathrm{CO}_{2}$ assimilation: rubisco's carboxylase activity. The $\mathrm{CO}_{2}$ -fixation reaction is catalyzed by ribulose 1,5-bisphosphate carboxylase/oxygenase. The overall reaction accomplishes the combination of one $\mathrm{CO}_{2}$ and one ribulose  
+1,5-bisphosphate to form two molecules of 3-phosphoglycerate, one of which contains the carbon atom from $\mathrm{CO}_{2}$ (red). Additional proton transfers (not shown), involving Lys $^{201}$ , Lys $^{175}$ , and His $^{294}$ , occur in several of these steps.
+
+Stage 3: Regeneration of Ribulose 1,5-Bisphosphate from Triose Phosphates For the continuous flow of $\mathrm{CO}_{2}$ into carbohydrate, ribulose 1,5-bisphosphate must be constantly regenerated. This is accomplished in a series of mostly reversible reactions (Fig. 20-31) that, together with stages 1 and 2, constitute the reductive pentose phosphate pathway summarized in Figure 20-26. Three exergonic reactions, shown with blue arrows in Figure 20-31, make the whole process irreversible. These are the reactions catalyzed by ② fructose 1,6-bisphosphatase, ⑤ sedoheptulose 1,7-bisphosphatase, and ⑨ ribulose 5-phosphate kinase.
+
+## Synthesis of Each Triose Phosphate from $\mathrm{CO}_{2}$ Requires Six NADPH and Nine ATP
+
+P5 The net result of three turns of the Calvin cycle is the conversion of three molecules of $CO_{2}$ and one molecule of phosphate to a molecule of triose phosphate. The stoichiometry of the overall path from $CO_{2}$ to triose
+
+![](images/fc6d6c99130ca1b9cd474338ea2ead0f56101558510e5f0178a7ad89d43eea51.jpg)  
+FIGURE 20-30 Role of rubisco activase in carbamoylation of Lys $^{201}$ of rubisco.
+
+![](images/282088420a20276e65ea412473dae30ef8383b1de691733aed4a4cbb93a4c380.jpg)
+
+FIGURE 20-31 Third stage of $\mathrm{CO}_{2}$ assimilation. This schematic diagram shows the interconversions of triose phosphates and pentose phosphates. Red dots represent the number of carbons in each compound. Compounds that appear more than once are highlighted. The starting materials are glyceraldehyde 3-phosphate and dihydroxyacetone phosphate. Reactions catalyzed by aldolase (1 and 4) and transketolase (3 and 6) produce pentose phosphates that are converted to ribulose 1,5-bisphosphate — ribose 5-phosphate by ⑦ ribose 5-phosphate isomerase and xylulose 5-phosphate by ⑧ ribulose 5-phosphate epimerase. Ribulose 5-phosphate is phosphorylated ⑨, regenerating ribulose 1,5-bisphosphate. The reactions with blue arrows are exergonic and make the whole process irreversible: ② fructose 1,6-bisphosphatase, ⑤ sedoheptulose 1,7-bisphosphatase, and ⑨ ribulose 5-phosphate kinase.
+
+![](images/d1d5c5c53ae97e5ce42249459fb207603e8deee7aa1017e841e70aca32dd45ff.jpg)
+
+phosphate, with regeneration of ribulose 1,5-bisphosphate, is shown in Figure 20-32.
+
+One molecule of glyceraldehyde 3-phosphate is the net product of the $\mathrm{CO}_{2}$ -assimilation pathway. The other five triose phosphate molecules (15 carbons) are rearranged in steps 1 to 9 of Figure 20-31 to form three molecules of ribulose 1,5-bisphosphate (15 carbons). The last step in this conversion requires one ATP per ribulose 1,5-bisphosphate, or a total of three ATP. Thus, in summary, for every molecule of triose phosphate produced by photosynthetic $\mathrm{CO}_{2}$ assimilation, six NADPH and nine ATP are required.
+
+P5 NADPH and ATP are produced in the light-dependent reactions of photosynthesis in about the same ratio (2:3) as they are consumed in the Calvin cycle. Nine ATP molecules are converted to ADP and phosphate in the generation of a molecule of triose phosphate; eight of the phosphates are released as $P_{i}$ and combined with eight ADP to regenerate ATP. The ninth phosphate is incorporated into the triose phosphate itself. To convert the ninth ADP to ATP, a molecule of $P_{i}$ must be imported from the cytosol, as we shall see.
+
+In the dark, the production of ATP and NADPH by photophosphorylation and the incorporation of $CO_{2}$ into triose phosphate (once referred to as the dark reactions) cease. The “dark reactions” of photosynthesis were so named to distinguish them from the primary light-driven reactions of electron transfer to $NADP^{+}$ and synthesis of ATP. They do not, in fact, occur at significant rates in the dark and are thus more appropriately called the $CO_{2}$ -assimilation reactions. Later in this
+
+FIGURE 20-32 Stoichiometry of $\mathrm{CO}_{2}$ assimilation in the Calvin cycle. For every three $\mathrm{CO}_{2}$ molecules fixed, one molecule of triose phosphate (glyceraldehyde 3-phosphate) is produced and nine ATP and six NADPH are consumed.
+
+section we describe the regulatory mechanisms that turn $CO_{2}$ assimilation on in the light and turn it off in the dark.
+
+The chloroplast stroma contains all the enzymes necessary to convert the triose phosphates produced by $CO_{2}$ assimilation (glyceraldehyde 3-phosphate and dihydroxyacetone phosphate) to starch, which is temporarily stored in the chloroplast as insoluble granules. Aldolase condenses the triose phosphates to fructose 1,6-bisphosphate; fructose 1,6-bisphosphatase produces fructose 6-phosphate; phosphohexose isomerase yields glucose 6-phosphate; and phosphoglucomutase produces glucose 1-phosphate, the starting material for starch synthesis (see Section 20.6).
+
+All the reactions of the Calvin cycle except those catalyzed by rubisco, sedoheptulose 1,7-bisphosphatase, and ribulose 5-phosphate kinase also take place in animal tissues. Lacking these three enzymes, animals cannot carry out significant conversion of $CO_{2}$ to glucose.
+
+## A Transport System Exports Triose Phosphates from the Chloroplast and Imports Phosphate
+
+The inner chloroplast membrane is impermeable to most phosphorylated compounds, including fructose 6-phosphate, glucose 6-phosphate, and fructose 1,6-bisphosphate. It does, however, have a specific antiporter that catalyzes the one-for-one exchange of $\mathrm{P_i}$ with a triose phosphate, either dihydroxyacetone phosphate or 3-phosphoglycerate (Fig. 20-33). This antiporter simultaneously moves $\mathrm{P_i}$ into the chloroplast, where it is used in photophosphorylation, and moves triose phosphate into the cytosol, where it can be used to synthesize sucrose, the form in which the fixed carbon is transported to distant plant tissues.
+
+![](images/504bfc7fe61ce8940b517502a9b9f432b80f0779fea026b84460cb76e126f081.jpg)  
+FIGURE 20-33 The $\mathsf{P_i}$ -triose phosphate antiport system of the chloroplast inner membrane. This transporter facilitates the exchange of cytosolic $\mathsf{P_i}$ for stromal dihydroxyacetone phosphate. The products of photosynthetic $\mathrm{CO}_{2}$ assimilation are thus moved into the cytosol, where they  
+serve as a starting point for sucrose biosynthesis, and $P_{i}$ required for photophosphorylation is moved into the stroma. This same antiporter can transport 3-phosphoglycerate, and it acts indirectly in the export of ATP and reducing equivalents (see Fig. 20-34).
+
+Sucrose synthesis in the cytosol and starch synthesis in the chloroplast are the major pathways by which the excess triose phosphate from photosynthesis is harvested. Sucrose synthesis (described later) releases four $P_{i}$ molecules from the four triose phosphates required to make sucrose. For every molecule of triose phosphate removed from the chloroplast, one $P_{i}$ is transported into the chloroplast, providing the ninth $P_{i}$ mentioned above, to be used in regenerating ATP. If this exchange were blocked, triose phosphate synthesis would quickly deplete the available $P_{i}$ in the chloroplast, slowing ATP synthesis and suppressing assimilation of $CO_{2}$ into starch.
+
+The $P_{i}$ -triose phosphate antiport system serves one additional function. ATP and reducing power are needed in the cytosol for a variety of synthetic and energy-requiring reactions. These requirements are met to an as-yet-undetermined degree by mitochondria, but a second potential source of energy is the ATP and NADPH generated in the chloroplast stroma during the light-dependent reactions. However, neither ATP nor NADPH can cross the chloroplast membrane. The $P_{i}$ -triose phosphate antiport system has the indirect effect of moving ATP equivalents and reducing equivalents from the chloroplast to the cytosol (Fig. 20-34). Dihydroxyacetone phosphate formed in the stroma is transported to the cytosol, where it is converted by glycolytic enzymes to 3-phosphoglycerate, generating ATP and NADH. 3-Phosphoglycerate reenters the chloroplast, completing the cycle.
+
+## Four Enzymes of the Calvin Cycle Are Indirectly Activated by Light
+
+The reductive assimilation of $CO_{2}$ requires a lot of ATP and NADPH, and their stromal concentrations increase when chloroplasts are illuminated (Fig. 20-35). The light-induced transport of protons across the thylakoid membrane also increases the stromal pH from about 7 to about 8, and it is accompanied by a flow of $\mathrm{Mg}^{2+}$ from the thylakoid compartment into the stroma, raising the $[\mathrm{Mg}^{2+}]$ from 1 to $3\mathrm{mm}$ to 3 to $6\mathrm{mm}$ . P5 Several stromal enzymes have evolved to take advantage of these light-induced conditions, which signal the availability of ATP and NADPH: the enzymes are more active in an alkaline environment and at high $[\mathrm{Mg}^{2+}]$ . For example, activation of rubisco by formation of carbamoyllysine is faster at alkaline pH, and high stromal $[\mathrm{Mg}^{2+}]$ favors formation of the enzyme's active $\mathrm{Mg}^{2+}$ complex. Fructose 1,6-bisphosphatase requires $\mathrm{Mg}^{2+}$ and is very dependent on pH (Fig. 20-36); its activity increases more than 100-fold when pH and $[\mathrm{Mg}^{2+}]$ rise during chloroplast illumination.
+
+P5 Four Calvin cycle enzymes are subject to a special type of regulation by light. Ribulose 5-phosphate kinase, fructose 1,6-bisphosphatase, sedoheptulose 1,7-bisphosphatase, and glyceraldehyde 3-phosphate dehydrogenase are activated by light-driven reduction of disulfide bonds between two Cys residues critical to their catalytic activities. When these Cys residues are disulfide-bonded (oxidized), the enzymes are inactive; this is the normal situation in the dark. With illumination, electrons flow from photosystem I to ferredoxin (Fig. 20-12), which passes electrons to a small, soluble, disulfide-containing protein called thioredoxin (Fig. 20-37), in a reaction catalyzed by ferredoxin: thioredoxin reductase. Reduced thioredoxin donates electrons for the reduction of the disulfide bonds of the light-activated enzymes, and these reductive cleavage reactions are accompanied by conformational changes that increase enzyme activities. At nightfall, the Cys residues in the four enzymes are reoxidized to their disulfide forms, the enzymes are inactivated, and ATP is not expended in $\mathrm{CO}_{2}$ assimilation. Instead, starch synthesized and stored during the daytime is degraded to fuel glycolysis and oxidative phosphorylation at night.
+
+![](images/161472a25ed7812c91aeef7588bcd7f6a69af93075af4ea6a8e8485d7c9ccf1a.jpg)
+
+![](images/04142e729399b082960f989315c1b27e8658f6f4a365946bcd6eaec5dd7756ee.jpg)  
+FIGURE 20-35 Source of ATP and NADPH. ATP and NADPH produced by the light-dependent reactions are essential substrates for the reduction of $CO_{2}$ . The photosynthetic reactions that produce ATP and NADPH are accompanied by movement of protons (red) from the stroma into the thylakoid, creating alkaline conditions in the stroma. Magnesium ions pass from the thylakoid into the stroma, increasing the stromal $[Mg^{2+}]$ .
+
+FIGURE 20-34 Role of the $\mathsf{P_i}$ -triose phosphate antiporter in the transport of ATP and reducing equivalents. Dihydroxyacetone phosphate leaves the chloroplast and is converted to glyceraldehyde 3-phosphate in the cytosol. The cytosolic glyceraldehyde 3-phosphate dehydrogenase and phosphoglycerate kinase reactions then produce NADH, ATP, and 3-phosphoglycerate. The latter reenters the chloroplast and is reduced to dihydroxyacetone phosphate, completing a cycle that effectively moves ATP and reducing equivalents (NAD(P)H) from chloroplast to cytosol.  
+![](images/68d5215b23a3b6555e14cb2d76e86b63cbf6b462569269e02f5fb546cc8f8734.jpg)  
+FIGURE 20-36 Activation of chloroplast fructose 1,6-bisphosphatase. Reduced fructose 1,6-bisphosphatase (FBPase-1) is activated by light and by the combination of high pH and high $\left[\mathrm{Mg}^{2+}\right]$ in the stroma, both of which are results of illumination. [Information from B. Halliwell, Chloroplast Metabolism: The Structure and Function of Chloroplasts in Green Leaf Cells, p. 97, Clarendon Press, 1984.]
+
+Glucose 6-phosphate dehydrogenase, the first enzyme in the oxidative pentose phosphate pathway, is also regulated by this light-driven reduction mechanism, but in the opposite sense. During the day, when photosynthesis produces plenty of NADPH, this enzyme is not needed for NADPH production. Reduction of a critical disulfide bond by electrons from ferredoxin inactivates the enzyme.
+
+![](images/823731084328058845bda8b23d112740d28efd408e9df1ee70adc961757da740.jpg)
+
+![](images/4f2fada4d3f83f8264ba64c482d1dcd7b267969e156758d480d08ef9deb62a92.jpg)
+
+![](images/46619ab36336f93061f32171fb16a3ce924aafb082f51a6040bd9c119bba52bb.jpg)  
+FIGURE 20-37 Light activation of several enzymes of the Calvin cycle. The light activation is mediated by thioredoxin, a small, disulfide-containing protein. In the light, thioredoxin is reduced by electrons moving from photosystem I through ferredoxin (Fd) (blue arrows), then thioredoxin reduces critical  
+disulfide bonds in each of the enzymes sedoheptulose 1,7-bisphosphatase, fructose 1,6-bisphosphatase, ribulose 5-phosphate kinase, and glyceraldehyde 3-phosphate dehydrogenase, activating these enzymes. In the dark, the —SH groups undergo reoxidation to disulfides, inactivating the four enzymes.
+
+## SUMMARY 20.4 Carbon-Assimilation Reactions
+
+■ Photosynthesis in eukaryotes takes place in chloroplasts. In the $CO_{2}$ -assimilating reactions (the Calvin cycle), ATP and NADPH are used to reduce $CO_{2}$ to triose phosphates. These reactions occur in three stages: the fixation reaction itself, catalyzed by rubisco; reduction of the resulting 3-phosphoglycerate to glyceraldehyde 3-phosphate; and regeneration of ribulose 1,5-bisphosphate from triose phosphates.
+
+■ Stromal enzymes rearrange the carbon skeletons of triose phosphates to generate intermediates of three, four, five, six, and seven carbons, eventually yielding pentose phosphates. The pentose phosphates are converted to ribulose 5-phosphate, which is phosphorylated to ribulose 1,5-bisphosphate to complete the Calvin cycle.
+
+■ The cost of fixing three $CO_{2}$ into one triose phosphate is nine ATP and six NADPH, which are provided by the light-dependent reactions of photosynthesis.
+
+An antiporter in the inner chloroplast membrane exchanges $\mathrm{P_i}$ in the cytosol for 3-phosphoglycerate or dihydroxyacetone phosphate molecules produced by $\mathrm{CO}_{2}$ assimilation in the stroma. Oxidation of dihydroxyacetone phosphate in the cytosol generates ATP and NADH, thus moving ATP and reducing equivalents from the chloroplast to the cytosol.
+
+■ Four enzymes of the Calvin cycle are activated indirectly by light and are inactive in the dark, so that hexose synthesis does not compete with glycolysis — which is required to provide energy in the dark.
+
+## 20.5 Photorespiration and the $C_{4}$ and CAM Pathways
+
+As we have seen, photosynthetic cells produce $O_{2}$ (by the splitting of $H_{2}O$ ) during the light-driven reactions and use $CO_{2}$ during the light-independent processes, so the net gaseous change during photosynthesis is the uptake of $CO_{2}$ and release of $O_{2}$ :
+
+$$
+\mathrm{CO} _ {2} + \mathrm{H} _ {2} \mathrm{O} \longrightarrow \mathrm{O} _ {2} + (\mathrm{CH} _ {2} \mathrm{O})
+$$
+
+In the dark, plants also carry out mitochondrial respiration, the oxidation of substrates to $CO_{2}$ and the conversion of $O_{2}$ to $H_{2}O$ . And there is another process in plants that, like mitochondrial respiration, consumes $O_{2}$ and produces $CO_{2}$ and, like photosynthesis, is driven by light. This process, photorespiration, is a costly side reaction of photosynthesis, a result of the lack of specificity of the enzyme rubisco. In this section we describe this side reaction and the strategies plants use to minimize its metabolic consequences.
+
+## Photorespiration Results from Rubisco's Oxygenase Activity
+
+P5 Rubisco is not absolutely specific for $CO_{2}$ as a substrate. Molecular oxygen ( $O_{2}$ ) competes with $CO_{2}$ at the active site, and about once in every three or four turnovers, rubisco catalyzes the condensation of $O_{2}$ with ribulose 1,5-bisphosphate to form 3-phosphoglycerate and 2-phosphoglycolate (Fig. 20-38), a metabolically unneeded product. This is the oxygenase activity referred to in the full name of rubisco: ribulose 1,5-bisphosphate carboxylase/oxygenase. The reaction with $O_{2}$ results in no fixation of $CO_{2}$ and is presumably a net liability to the cell; salvaging the carbons from 2-phosphoglycolate (by the pathway outlined below) consumes significant amounts of cellular energy and releases some previously fixed $CO_{2}$ .
+
+## Phosphoglycolate Is Salvaged in a Costly Set of Reactions in $C_{3}$ Plants
+
+The glycolate pathway converts two molecules of 2-phosphoglycolate to a molecule of serine (three carbons) and a molecule of $\mathrm{CO}_{2}$ (Fig. 20-39). In the chloroplast, a phosphatase converts 2-phosphoglycolate to glycolate, which is exported to the peroxisome. There, glycolate is oxidized by molecular oxygen, and the resulting aldehyde (glyoxylate) undergoes transamination to glycine. The hydrogen peroxide formed as a side product of glycolate oxidation is rendered harmless by peroxidases in the peroxisome. Glycine passes from the peroxisome to the mitochondrial matrix, where it undergoes oxidative decarboxylation by the glycine decarboxylase complex, an enzyme similar in structure and mechanism to two mitochondrial complexes we have already encountered: the pyruvate dehydrogenase complex and the $\alpha$ -ketoglutarate dehydrogenase complex (Chapter 16). The glycine decarboxylase complex oxidizes glycine to $\mathrm{CO}_{2}$ and $\mathrm{NH}_{3}$ , with the concomitant reduction of $\mathrm{NAD}^{+}$ to NADH and transfer of the remaining carbon from glycine to the cofactor tetrahydrofolate. The one-carbon unit carried on tetrahydrofolate is then transferred to a second glycine by serine hydroxymethyltransferase, producing serine. The net reaction catalyzed by the glycine decarboxylase complex and serine hydroxymethyltransferase is
+
+![](images/6f25b668199595d83bb8c0a15ee7ffe37c733b1bf393fc65b5c3cff5a0ced581.jpg)  
+FIGURE 20-38 Oxygenase activity of rubisco. Rubisco can incorporate $\mathrm{O}_2$ rather than $\mathrm{CO}_{2}$ into ribulose 1,5-bisphosphate. The unstable intermediate thus formed splits into 2-phosphoglycolate (recycled as described in Fig. 20-39) and 3-phosphoglycerate, which can reenter the Calvin cycle.
+
+$$
+\begin{array}{r l} 2 \mathrm{Glycine} + \mathrm{NAD} ^ {+} + \mathrm{H} _ {2} \mathrm{O} & \longrightarrow \\ & \text {serine} + \mathrm{CO} _ {2} + \mathrm{NH} _ {3} + \mathrm{NADH} + \mathrm{H} ^ {+} \end{array}
+$$
+
+![](images/5753383273213523def3f573d950d57639f71477c1c84511b93ac57df8113bad.jpg)  
+FIGURE 20-39 Glycolate pathway. This pathway, which salvages 2-phosphoglycolate (shaded light red) by converting it to serine and, eventually, to 3-phosphoglycerate, involves three cellular compartments. Glycolate formed by dephosphorylation of 2-phosphoglycolate in chloroplasts is oxidized to glyoxylate and transaminated to glycine in peroxisomes. In mitochondria, two glycine molecules condense to form serine and $\mathrm{CO}_{2}$ , released in photorespiration. This reaction is catalyzed by glycine decarboxylase, an enzyme present at very high levels in the mitochondria of $C_3$ plants. The serine is converted to hydroxypyruvate and then to glycerate in peroxisomes; glycerate reenters the chloroplasts to be phosphorylated, rejoining the Calvin cycle. Oxygen is consumed at two steps during photorespiration.
+
+The serine is converted to hydroxypyruvate, then to glycerate, and finally to 3-phosphoglycerate, which is used to regenerate ribulose 1,5-bisphosphate, completing the long, expensive cycle (Fig. 20-39).
+
+In bright sunlight, the carbon flux through the glycolate salvage pathway can be very high, producing about five times more $CO_{2}$ than is typically produced by all the oxidations of the citric acid cycle. To generate this large flux, mitochondria contain prodigious amounts of the glycine decarboxylase complex: the four proteins of the complex make up half of all the protein in the mitochondrial matrix in the leaves of pea and spinach plants. In nonphotosynthetic parts of a plant, such as potato tubers, mitochondria have very low concentrations of the glycine decarboxylase complex.
+
+The practical effects of this inefficiency are large and costly. The average yield of soybeans and wheat in the United States is reduced by an estimated 36% and 20%, respectively, by the necessity of recycling glycolate from photorespiration.
+
+P5 The combined activity of the rubisco oxygenase and the glycolate salvage pathway consumes $O_{2}$ and produces $CO_{2}$ —hence the name photorespiration. Unlike mitochondrial respiration, photorespiration does not conserve energy and actually inhibits net biomass formation. This inefficiency has led to evolutionary adaptations in the $CO_{2}$ -assimilation processes, particularly in plants that have evolved in warm climates. The apparent inefficiency of rubisco, and its effect in limiting biomass production, has inspired efforts to genetically engineer a “better” rubisco, but this goal is not, as yet, within reach (Box 20-1).
+
+![](images/087ccd0a96acb566b9f3b893736250610f7a74f1fe042c51be532af1da473caa.jpg)
+
+## In $C_{4}$ Plants, $CO_{2}$ Fixation and Rubisco Activity Are Spatially Separated
+
+In many plants that grow in the tropics (and in temperate-zone crop plants native to the tropics, such as maize, sugarcane, and sorghum) a mechanism has evolved to circumvent the problem of wasteful photorespiration. The step in which $CO_{2}$ is fixed into a three-carbon product, 3-phosphoglycerate, is preceded by several steps, one of which is temporary fixation of $CO_{2}$ into oxaloacetate, a four-carbon compound. Plants that use this process are referred to as $C_{4}$ plants, and the assimilation process is known as the $C_{4}$ pathway, by comparison to the $C_{3}$ pathway in which $CO_{2}$ is first fixed in the three-carbon compound 3-phosphoglycerate.
+
+P5 The $C_{4}$ plants, which typically grow at high light intensity and high temperatures, have several important characteristics: high photosynthetic rates, high growth rates, low photorespiration rates, low rates of water loss, and a specialized leaf structure. Photosynthesis in the leaves of $C_{4}$ plants involves two cell types: mesophyll and bundle-sheath cells (Fig. 20-40a).
+
+FIGURE 20-40 CO₂ assimilation in C₄ plants. The C₄ pathway, involving mesophyll cells and bundle-sheath cells, predominates in plants of tropical origin. (a) Electron micrograph showing chloroplasts of adjacent mesophyll and bundle-sheath cells. The bundle-sheath cell contains starch granules. Plasmodesmata connecting the two cells are visible. (b) The C₄ pathway of CO₂ assimilation, which occurs through a four-carbon intermediate. [(a) Dr. Ray Evert, University of Wisconsin–Madison, Department of Botany.]
+
+![](images/b32cf29496831c99ef554823f1c8a6ccff26c8612c49406b04bc9b07a7ea6239.jpg)
+
+![](images/2cdd63b4f85001e952bd5f1940a7ccd4ee1e418ca9ef1ac7299d0880551dbc72.jpg)
+
+![](images/f0f5ff9e8f3bb3f267dc7ae05ce417b72481b1aa8be459aaf47b3310a0114e69.jpg)
+
+## Will Genetic Engineering of Photosynthetic Organisms Increase Their Efficiency?
+
+Three pressing world problems have prompted serious attention to the possibility of engineering plants to be more efficient in converting sunlight into biomass: the greenhouse effect of increasing levels of atmospheric $CO_{2}$ on climate change, the finite supply of oil for generating energy, and the need for more and better food for the world's growing population.
+
+The concentration of $\mathrm{CO}_{2}$ in the earth's atmosphere has risen steadily over the past 50 years (Fig. 1), a combined effect of the use of fossil fuels for energy and the clearing and burning of tropical forests to allow use of the land for agriculture. As atmospheric $\mathrm{CO}_{2}$ increases, the atmosphere absorbs more heat radiated from the earth's surface and reradiates
+
+![](images/bd4978beca56fd1ff44e155bd731030de78851d11e1f76563b736d22371cf7ab.jpg)  
+FIGURE 1 The concentration of $\mathrm{CO}_{2}$ in the atmosphere measured at the Mauna Loa Observatory in Hawaii. [Data from the National Oceanic and Atmospheric Administration and the Scripps Institution of Oceanography $\mathrm{CO}_{2}$ Program.]
+
+The fixation of $CO_{2}$ into the four-carbon oxaloacetate occurs in the cytosol of leaf mesophyll cells. The reaction is catalyzed by phosphoenolpyruvate (PEP) carboxylase, for which the substrate is $HCO_{3}^{-}$ , not $CO_{2}$ . The oxaloacetate thus formed is either reduced to malate at the expense of NADPH (as shown in Fig. 20-40b) or converted to aspartate by transamination:
+
+Oxaloacetate + α-amino acid →
+
+$$
+\mathrm{L-aspartate} + \alpha \mathrm{-ketoacid}
+$$
+
+The malate or aspartate formed in the mesophyll cells then passes into neighboring bundle-sheath cells through plasmodesmata, protein-lined channels that connect two plant cells and provide a path for movement of metabolites and even small proteins between cells. In the bundle-sheath cells, malate is oxidized more heat toward the surface of the planet (and in all other directions). Retention of heat raises the temperature at the surface of the earth; this is the greenhouse effect. One way to limit the increase in atmospheric $CO_{2}$ would be to engineer plants or microorganisms with a greater capacity for sequestering $CO_{2}$ .
+
+![](images/0d5cad94f0d97786a7931b5b0f2b2b39e5cdddba3be2ce551af420ffd30f8b4e.jpg)
+
+The estimated amount of total carbon in all terrestrial systems (atmosphere, soil, biomass) is about 3,200 gigatons (GT), or 3,200 billion metric tons. The atmosphere contains another 760 GT of CO $_{2}$ .
+
+The flux of carbon through these terrestrial reservoirs (Fig. 2) is largely due to the photosynthetic activities of plants and the degradative activities of microorganisms. Plants fix some 123 GT of carbon annually, then immediately release about half of that to the atmosphere as they respire. Much of the remainder is gradually released to the atmosphere by microbial action on dead plant materials, but biomass is sequestered in woody plants and trees for decades or centuries. Anthropogenic carbon flux, the amount of $CO_{2}$ released into the atmosphere by human activities, is 9 GT per year—small compared with total biomass, but enough to tip the balance toward increased $CO_{2}$ in the atmosphere. Estimates indicate that the forests of North America sequester 0.7 GT of carbon annually, which represents about a tenth of the annual global production of $CO_{2}$ from fossil fuels. Clearly, preservation of forests and reforestation are effective ways to limit the flow of $CO_{2}$ back into the atmosphere.
+
+A second approach to limiting the increase of atmospheric $CO_{2}$ , while also addressing the need to replace dwindling fossil fuels, is to use renewable biomass as a source of ethanol to replace fossil fuels in internal combustion engines. This reduces the unidirectional movement of carbon from fossil fuels into the atmospheric pool of $CO_{2}$ , replacing it with the cyclic flow of $CO_{2}$ from ethanol to $CO_{2}$ and back to biomass.
+
+and decarboxylated to yield pyruvate and $CO_{2}$ by the action of malic enzyme, reducing $NADP^{+}$ . In plants that use aspartate as the $CO_{2}$ carrier, aspartate arriving in bundle-sheath cells is transaminated to form oxaloacetate and reduced to malate, then the $CO_{2}$ is released by malic enzyme or PEP carboxykinase. Labeling experiments show that the free $CO_{2}$ released in the bundle-sheath cells is the same $CO_{2}$ molecule originally fixed into oxaloacetate in the mesophyll cells. This $CO_{2}$ is now fixed again, this time by rubisco, in exactly the same reaction that occurs in $C_{3}$ plants: incorporation of $CO_{2}$ into C-1 of 3-phosphoglycerate.
+
+The pyruvate formed by decarboxylation of malate in bundle-sheath cells is transferred back to the mesophyll cells, where it is converted to PEP by an unusual enzymatic reaction catalyzed by pyruvate phosphate
+
+![](images/a77d833473d20d484359fd5aa2612765132efc02cd73caac49374c58e029e5ab.jpg)  
+FIGURE 2 The terrestrial carbon cycle. Carbon stocks (boxed text) are shown as gigatons (GT), and fluxes (arrows) are shown in GT per year. Animal biomass is negligible here — less than 0.5 GT. [Information from C. Jansson et al., BioScience 60:683, 2010, Fig. 1.]
+
+When maize, wheat, or switchgrass is fermented to ethanol for fuel, every increase in biomass production brought about by more efficient photosynthesis should result in a corresponding decrease in the use of fossil fuels.
+
+Finally, engineering of food crops to yield more food per acre of land, or per hour of work, could improve human nutrition worldwide.
+
+In principle, these goals might be accomplished by developing a rubisco that didn't also catalyze the wasteful reaction with $\mathrm{O}_2$ , or by increasing the turnover number for rubisco, or by increasing the level of rubisco or other enzymes in the pathway for $\mathrm{CO}_2$ fixation. Rubisco, as we have
+
+dikinase (Fig. 20-40b). This enzyme is called a dikinase because two different molecules are simultaneously phosphorylated by one molecule of ATP: pyruvate to PEP, and phosphate to pyrophosphate. The pyrophosphate is subsequently hydrolyzed to phosphate, so two high-energy phosphate groups of ATP are used in regenerating PEP. The PEP is now ready to receive another molecule of CO₂ in the mesophyll cell.
+
+The PEP carboxylase of mesophyll cells has a high affinity for $HCO_{3}^{-}$ (which is favored relative to $CO_{2}$ in aqueous solution) and can fix $CO_{2}$ more efficiently than can rubisco. Unlike rubisco, it does not use $O_{2}$ as an alternative substrate, so there is no competition between $CO_{2}$ and $O_{2}$ . The PEP carboxylase reaction, then, serves to fix and concentrate $CO_{2}$ in the form of malate. P5 Release of $CO_{2}$ from malate in the bundle-sheath cells yields a noted, is an unusually inefficient enzyme, with a turnover number of $3 \, s^{-1}$ at $25 \, ^{\circ}C$ ; most enzymes have turnover numbers orders of magnitude larger. It also catalyzes the wasteful reaction with oxygen, which further reduces its efficiency in fixing $CO_{2}$ and producing biomass. If rubisco could be genetically engineered to turn over faster or to be more selective for $CO_{2}$ relative to $O_{2}$ , would the effect be greater photosynthetic production of biomass and thus greater sequestration of $CO_{2}$ , greater production of nonfossil fuel, and improved nutrition?
+
+The traditional view of metabolic pathways held that one step in any pathway was the slowest and therefore the limiting factor in material flow through the pathway. However, efforts to engineer cells or organisms to produce more of the "limiting" enzyme in a pathway have often given discouraging results; the organisms often show little or no change in the flux through that pathway. The Calvin cycle is an instructive case in point. Increasing the amount of rubisco in plant cells through genetic engineering has little or no effect on the rate of $\mathrm{CO}_{2}$ conversion into carbohydrate. Similarly, changes in the levels of enzymes known to be regulated by light and therefore suspected of playing key roles in the regulation of the $\mathrm{CO}_{2}$ -assimilation pathway (fructose 1,6-bisphosphatase, 3-phosphoglycerate kinase, and glyceraldehyde 3-phosphate dehydrogenase) also produce little or no significant improvement in photosynthetic rate. This should probably not be surprising; in the living organism, pathways can be limited by more than one enzymatic step, because every change in one step results in compensating changes in other steps. Metabolic control analysis is the science of measuring, understanding, and eventually altering the factors that govern the overall flux through a pathway. Its application will be essential to the success of engineering plants for higher efficiency or greater yield.
+
+sufficiently high local concentration of $CO_{2}$ for rubisco to function near its maximal rate, and for suppression of the enzyme's oxygenase activity.
+
+Once $CO_{2}$ is fixed into 3-phosphoglycerate in the bundle-sheath cells, the other reactions of the Calvin cycle take place exactly as described earlier. Thus in $C_{4}$ plants, mesophyll cells carry out $CO_{2}$ assimilation by the $C_{4}$ pathway and bundle-sheath cells synthesize starch and sucrose by the $C_{3}$ pathway.
+
+Three enzymes of the $C_{4}$ pathway are regulated by light, becoming more active in daylight. Malate dehydrogenase is activated by the thioredoxin-dependent reduction mechanism shown in Figure 20-37; PEP carboxylase is activated by phosphorylation of a Ser residue; and pyruvate phosphate dikinase is activated by dephosphorylation.
+
+![](images/5e57b20d094ecc328a3491203c7e87de1e39793e1b763dda8d79ad703e1ed827.jpg)
+
+![](images/13a7d17ce006fdf04d19120acfdbdc71d5895defd38511896688d4a38b006b8f.jpg)
+
+<table><tr><td colspan="4">TABLE 20-1 Comparison of  $C_3$ ,  $C_4$ , and CAM Plants</td></tr><tr><td></td><td> $C_3$  Plants</td><td> $C_4$  Plants</td><td>CAM Plants</td></tr><tr><td>Examples</td><td>Spinach, pea, rice, wheat, beans, most trees</td><td>Maize (corn), sugarcane, crabgrass</td><td>Cactus, prickly pear, orchid, pineapple</td></tr><tr><td>Most efficient environment</td><td>15 to 25 °C</td><td>Hot and dry; 30 to 47 °C</td><td>Extremely dry; 35 °C</td></tr><tr><td>Path of  $CO_2$  fixation</td><td> $C_3$  photosynthesis only</td><td>Sequential  $C_4$  and  $C_3$  cycles spatially separated:  $C_4$  in mesophyll cells followed by  $C_3$  in bundle-sheath cells</td><td> $C_3$  and  $C_4$  cycles, separated spatially and temporally</td></tr><tr><td>Cell type involved</td><td>Mesophyll cells</td><td> $C_4$  in mesophyll cells,  $C_3$  in bundle-sheath cells</td><td> $C_3$  and  $C_4$  in the same mesophyll cells</td></tr><tr><td>Light conditions</td><td>Light</td><td>Light</td><td> $C_3$  in light;  $C_4$  in dark</td></tr><tr><td>Initial  $CO_2$  acceptor</td><td>Ribulose 1,5-bisphosphate</td><td>Phosphoenolpyruvate</td><td>Ribulose 1,5-bisphosphate in light; phosphoenolpyruvate in dark</td></tr><tr><td> $CO_2$ -fixing enzyme</td><td>Rubisco</td><td>PEP carboxylase, then rubisco</td><td>Rubisco in light; PEP carboxylase at night</td></tr><tr><td>First stable product of  $CO_2$  fixation</td><td>3-Phosphoglycerate</td><td>Oxaloacetate in  $C_4$  cycle</td><td>3-Phosphoglycerate in light; oxaloacetate in dark</td></tr><tr><td>Energy needed for complete reduction of one molecule of  $CO_2$ </td><td>3 ATP, 2 NADPH</td><td>5 ATP, 2 NADPH</td><td>6.5 ATP, 2 NADPH</td></tr><tr><td>Photorespiration</td><td>Present</td><td>Absent or suppressed</td><td>Absent or suppressed</td></tr></table>
+
+The pathway of $CO_{2}$ assimilation has a greater energy cost in $C_{4}$ plants than in $C_{3}$ plants. For each molecule of $CO_{2}$ assimilated in the $C_{4}$ pathway, a molecule of PEP must be regenerated at the expense of two phosphoanhydride bonds in ATP. P5 Thus $C_{4}$ plants need five ATP molecules to assimilate one molecule of $CO_{2}$ , whereas $C_{3}$ plants need only three (nine per triose phosphate). As the temperature increases (and the affinity of rubisco for $CO_{2}$ decreases, as noted above), a point is reached, at about 28 to 30 °C, at which the gain in efficiency from the elimination of photorespiration more than compensates for this energetic cost. $C_{4}$ plants (crabgrass, for example) outgrow most $C_{3}$ plants during the summer, as any experienced gardener can attest.
+
+## In CAM Plants, CO₂ Capture and Rubisco Action Are Temporally Separated
+
+Succulent plants such as cactus and pineapple, which are native to very hot, very dry environments, have another variation on photosynthetic $CO_{2}$ fixation, which reduces loss of water vapor through the pores (stomata) by which $CO_{2}$ and $O_{2}$ must enter leaf tissue. Instead of separating the initial trapping of $CO_{2}$ and its fixation by rubisco across space (as do the $C_{4}$ plants), they separate these two events over time. At night, when the air is cooler and moister, the stomata open to allow entry of $CO_{2}$ , which is then fixed into oxaloacetate by PEP carboxylase. The oxaloacetate is reduced to malate and stored in the vacuoles, to protect cytosolic and plastid enzymes from the low pH produced by malic acid dissociation. During the day the stomata close, preventing the water loss that would result from high daytime temperatures, and the
+
+CO₂ trapped overnight in malate is released as CO₂ by the NADP-linked malic enzyme. This CO₂ is now assimilated by the action of rubisco and the Calvin cycle enzymes. Because this method of CO₂ fixation was first discovered in stonecrops, perennial flowering plants of the family Crassulaceae, it is called crassulacean acid metabolism, and the plants are called CAM plants. Table 20-1 compares characteristics of C₃, C₄, and CAM plants.
+
+## SUMMARY 20.5 Photorespiration and the C₄ and CAM Pathways
+
+■ Rubisco is not completely specific for $CO_{2}$ as its substrate; it can also use $O_{2}$ , producing 2-phosphoglycolate, which must be disposed of in an oxygen-dependent pathway. The result is increased consumption of $O_{2}$ —photorespiration.
+
+■ The 2-phosphoglycolate is converted to glyoxylate, to glycine, and then to serine in a pathway that involves enzymes in the chloroplast stroma, peroxisomes, and mitochondria.
+
+In $\mathrm{C_4}$ plants, the $\mathrm{CO}_{2}$ -assimilation pathway minimizes photorespiration: $\mathrm{CO}_{2}$ is first fixed in mesophyll cells into a four-carbon compound, which passes into bundle-sheath cells and releases $\mathrm{CO}_{2}$ in high concentrations. The released $\mathrm{CO}_{2}$ is fixed by rubisco, and the remaining reactions of the Calvin cycle occur as in $\mathrm{C_3}$ plants.
+
+In CAM plants, $\mathrm{CO}_{2}$ is fixed into malate in the dark and stored in vacuoles until daylight, when the stomata are closed (minimizing water loss), and the stored malate serves as a source of $\mathrm{CO}_{2}$ for rubisco.
+
+## 20.6 Biosynthesis of Starch, Sucrose, and Cellulose
+
+During active photosynthesis in bright light, a plant leaf produces more carbohydrate (as triose phosphates) than it needs for generating energy or synthesizing precursors. P5 The excess is converted to sucrose and transported to other parts of the plant, to be used as fuel or stored. In most plants, starch is the main storage form of carbohydrate, but in a few plants, such as sugar beet and sugarcane, sucrose is the primary storage form. The synthesis of sucrose and starch occurs in different cellular compartments (cytosol and plastids, respectively), and these processes are coordinated by a variety of regulatory mechanisms that respond to changes in light level and photosynthetic rate. The synthesis of sucrose and starch is important to the plant but also to humans: starch provides more than 80% of human dietary calories worldwide.
+
+## ADP-Glucose Is the Substrate for Starch Synthesis in Plant Plastids and for Glycogen Synthesis in Bacteria
+
+Starch, like glycogen, is a high molecular weight polymer of D-glucose in (α1→4) linkage. It is synthesized in chloroplasts for temporary storage as one of the stable end products of photosynthesis, and for long-term storage it is synthesized in amyloplasts of the nonphotosynthetic parts of plants: seeds, roots, and tubers (underground stems).
+
+The mechanism of glucose activation in starch synthesis is similar to that in glycogen synthesis, described in Chapter 15. An activated sugar nucleotide, in this case ADP-glucose, is formed by condensation of glucose 1-phosphate with ATP in a reaction made essentially irreversible by the presence in plastids of inorganic pyrophosphatase. Starch synthase then transfers glucose residues from ADP-glucose to preexisting starch molecules. The monomeric units are almost certainly added to the nonreducing end of the growing polymer, as they are in glycogen synthesis.
+
+The amylose of starch is unbranched, but amylopectin has numerous (α1→6)-linked branches (see Fig. 7-13). Chloroplasts contain a branching enzyme, similar to the glycogen-branching enzyme that introduces the (α1→6) branches of amylopectin. Taking into account the hydrolysis by inorganic pyrophosphatase of the PP $_{i}$ produced during ADP-glucose synthesis, the overall reaction for starch formation from glucose 1-phosphate is
+
+Starch $_{n}$ + glucose 1-phosphate + ATP $\longrightarrow$
+
+$$
+\begin{array}{r} \mathrm{starch} _ {n + 1} + \mathrm{ADP} + 2 \mathrm{P} _ {\mathrm{i}} \\ \Delta G ^ {\prime \circ} = - 5 0 \mathrm{kJ/mol} \end{array}
+$$
+
+Starch synthesis is regulated at the level of ADP-glucose formation, as discussed below.
+
+## UDP-Glucose Is the Substrate for Sucrose Synthesis in the Cytosol of Leaf Cells
+
+Most of the triose phosphate generated by $CO_{2}$ fixation in plants is converted to sucrose (Fig. 20-41) or starch.
+
+![](images/f0621caf3b780637f4e08c9ee663bf3d0be36e09639173b3f63eb4fad1c9c4ce.jpg)  
+FIGURE 20-41 Sucrose synthesis. Sucrose is synthesized from UDP-glucose and fructose 6-phosphate, which are synthesized from triose phosphates in the plant cell cytosol. The sucrose 6-phosphate synthase of most plant species is allosterically regulated by glucose 6-phosphate and P $_{i}$ .
+
+In the course of evolution, sucrose may have been selected as the transport form of carbon because of its unusual linkage between the anomeric C-1 of glucose and the anomeric C-2 of fructose. This bond is not hydrolyzed by amylases or other common carbohydrate-cleaving enzymes, and the unavailability of the sucrose molecule's anomeric carbons prevents it from reacting nonenzymatically (as does glucose) with amino acids and proteins.
+
+Sucrose is synthesized in the cytosol, beginning with dihydroxyacetone phosphate and glyceraldehyde 3-phosphate exported from the chloroplast. After condensation of two triose phosphates to form fructose 1,6-bisphosphate (catalyzed by aldolase), hydrolysis by fructose 1,6-bisphosphatase yields fructose 6-phosphate. Sucrose 6-phosphate synthase then catalyzes the reaction of fructose 6-phosphate with UDP-glucose to form sucrose 6-phosphate (Fig. 20-41). Finally, sucrose 6-phosphate phosphatase removes the phosphate group, making sucrose available for export to other tissues. The reaction catalyzed by sucrose 6-phosphate synthase is a low-energy process ( $\Delta G^{\circ} = -5.7$ kJ/mol), but the hydrolysis of sucrose 6-phosphate to sucrose is sufficiently exergonic ( $\Delta G^{\prime\circ} = -16.5$ kJ/mol) to make the overall synthesis of sucrose thermodynamically favorable. Sucrose synthesis is regulated and closely coordinated with starch synthesis, as we shall see.
+
+One remarkable difference between the cells of plants and animals is the absence in the plant cell cytosol of the enzyme inorganic pyrophosphatase, which catalyzes the reaction
+
+$$
+\mathrm{PP} _ {\mathrm{i}} + \mathrm{H} _ {2} \mathrm{O} \longrightarrow 2 \mathrm{P} _ {\mathrm{i}} \quad \Delta G ^ {\prime \circ} = - 1 9. 2 \mathrm{kJ/mol}
+$$
+
+For many biosynthetic reactions that liberate PP $_{i}$ , pyrophosphatase activity makes the process more favorable energetically, tending to make these reactions irreversible. In plants, this enzyme is present in plastids but absent from the cytosol. As a result, the cytosol of leaf cells contains a substantial concentration of PP $_{i}$ —enough (\~0.3 mm) to make reactions such as that catalyzed by UDP-glucose pyrophosphorylase (see Fig. 15-7) readily reversible.
+
+## Conversion of Triose Phosphates to Sucrose and Starch Is Tightly Regulated
+
+Triose phosphates produced by the Calvin cycle in bright sunlight, as we have noted, may be stored temporarily in the chloroplast as starch, or converted to sucrose and exported to nonphotosynthetic parts of the plant, or both. P5 The balance between the two processes is tightly regulated, and both must be coordinated with the rate of $CO_{2}$ fixation. Five-sixths of the triose phosphate formed in the Calvin cycle must be recycled to ribulose 1,5-bisphosphate (Fig. 20-32); if more than one-sixth of the triose phosphate is drawn out of the cycle to make sucrose and starch, the cycle will slow or stop. However, insufficient conversion of triose phosphate to starch or sucrose would tie up phosphate, leaving a chloroplast deficient in $P_{i}$ , which is also essential for operation of the Calvin cycle.
+
+The flow of triose phosphates into sucrose is regulated by the activity of fructose 1,6-bisphosphatase (FBPase-1) and the enzyme that effectively reverses its action, PP $_{i}$ -dependent phosphofructokinase (PP-PFK-1). These enzymes are therefore critical points for determining the fate of triose phosphates produced by photosynthesis. Both enzymes are regulated by fructose 2,6-bisphosphate (F26BP), which inhibits FBPase-1 and stimulates PP-PFK-1. In vascular plants, the concentration of F26BP varies inversely with the rate of photosynthesis (Fig. 20-42). Phosphofructokinase-2, responsible for F26BP synthesis, is inhibited by dihydroxyacetone phosphate or 3-phosphoglycerate and is stimulated by fructose 6-phosphate and P $_{i}$ . During active photosynthesis, dihydroxyacetone phosphate is produced and P $_{i}$ is consumed, resulting in inhibition of PFK-2 and lowered concentrations of F26BP. This favors greater flux of triose phosphate into fructose 6-phosphate formation and sucrose synthesis. With this regulatory system, sucrose synthesis occurs when the level of triose phosphate produced by the Calvin cycle exceeds that needed to maintain operation of the cycle.
+
+![](images/6e9477179a0562afab001162cf4cad348b6893a483dfa7be5254350fb8a78127.jpg)  
+FIGURE 20-42 Fructose 2,6-bisphosphate as regulator of sucrose synthesis. The concentration of the allosteric regulator fructose 2,6-bisphosphate in plant cells is regulated by the products of photosynthetic CO₂ assimilation and by P₁. Dihydroxyacetone phosphate and 3-phosphoglycerate produced by CO₂ assimilation inhibit phosphofructokinase-2 (PFK-2), the enzyme that synthesizes the regulator; P₁ stimulates PFK-2. The concentration of the regulator is therefore inversely proportional to the rate of photosynthesis. In the dark, the concentration of fructose 2,6-bisphosphate increases and stimulates the glycolytic enzyme PP₁-dependent phosphofructokinase-1 (PP-PFK-1), while inhibiting the gluconeogenic enzyme fructose 1,6-bisphosphatase (FBPase-1). When photosynthesis is active (in the light), the concentration of the regulator drops and the synthesis of fructose 6-phosphate and sucrose is favored.
+
+Sucrose synthesis is also regulated at the level of sucrose 6-phosphate synthase, which is allosterically activated by glucose 6-phosphate and inhibited by $\mathbf{P}_{\mathrm{i}}$ . This enzyme is further regulated by phosphorylation and dephosphorylation; a protein kinase phosphorylates the enzyme on a specific Ser residue, making it less active, and a phosphatase reverses this inactivation by removing the phosphate (Fig. 20-43). Inhibition of the kinase by glucose 6-phosphate, and of the phosphatase by $P_{i}$ , enhances the effects of these two compounds on sucrose synthesis. When hexose phosphates are abundant, sucrose 6-phosphate synthase is activated by glucose 6-phosphate; when $P_{i}$ is elevated (as when photosynthesis is slow), sucrose synthesis is slowed. During active photosynthesis, triose phosphates are converted to fructose 6-phosphate, which is rapidly equilibrated with glucose 6-phosphate by phosphohexose isomerase. Because the equilibrium lies far toward glucose 6-phosphate, as soon as fructose 6-phosphate accumulates, the level of glucose 6-phosphate rises and sucrose synthesis is stimulated.
+
+![](images/1acb8c000efabd3711ecc3c2add93380561f679a5d06e5d251e9a376c86afc19.jpg)  
+FIGURE 20-43 Regulation of sucrose phosphate synthase by phosphorylation. A protein kinase (SPS kinase) specific for sucrose phosphate synthase (SPS) phosphorylates a Ser residue in SPS, inactivating it; a specific phosphatase (SPS phosphatase) reverses this inhibition. The kinase is inhibited allosterically by glucose 6-phosphate, which also activates SPS allosterically. The phosphatase is inhibited by $\mathsf{P_i}$ , which also inhibits SPS directly. Thus, when the concentration of glucose 6-phosphate is high as a result of active photosynthesis, SPS is activated and produces sucrose phosphate. A high $\mathsf{P_i}$ concentration, which occurs when photosynthetic conversion of ADP to ATP is slow, inhibits sucrose phosphate synthesis.
+
+The key regulatory enzyme in starch synthesis is ADP-glucose pyrophosphorylase (Fig. 20-44); it is activated by 3-phosphoglycerate, which accumulates during active photosynthesis, and inhibited by $\mathrm{P_i}$ , which accumulates when light-driven condensation of ADP and $\mathrm{P_i}$ slows. When sucrose synthesis slows, 3-phosphoglycerate formed by $\mathrm{CO_2}$ fixation accumulates, activating this enzyme and stimulating the synthesis of starch.
+
+## The Glyoxylate Cycle and Gluconeogenesis Produce Glucose in Germinating Seeds
+
+Many plants store lipids (oils) and proteins in their seeds, to be used as sources of energy and as biosynthetic precursors during germination, before photosynthetic capacity has developed. These stored components are converted to carbohydrates by the combined action of several pathways. Glucogenic amino acids (see Table 14-4) derived from the breakdown of stored seed proteins are transaminated and oxidized to succinyl-CoA, pyruvate, oxaloacetate, fumarate, and $\alpha$ -ketoglutarate (Chapter 18)—all good starting materials for gluconeogenesis. Active gluconeogenesis in germinating seeds provides glucose for the synthesis of sucrose, polysaccharides, and many metabolites derived from hexoses. In plant seedlings, sucrose provides much of the chemical energy needed for initial growth.
+
+![](images/18873a0469e428b78b04f642dc9d02e177eea5af37687e82c20c7b88be3fa4ed.jpg)  
+FIGURE 20-44 Regulation of ADP-glucose pyrophosphorylase by 3-phosphoglycerate and $P_{i}$ . This enzyme, which produces the precursor for starch synthesis, is rate-limiting in starch production. The enzyme is stimulated allosterically by 3-phosphoglycerate (3-PGA) and inhibited by $P_{i}$ ; in effect, the ratio [3-PGA]/[P], which rises with increasing rates of photosynthesis, controls starch synthesis at this step.
+
+Triacylglycerols stored in seeds also provide fuel for the germinating plants. They are hydrolyzed to free fatty acids, which undergo $\beta$ oxidation to acetyl-CoA in specialized peroxisomes called glyoxysomes that develop during seed germination (see Fig. 17-14). The acetyl-CoA formed from seed oils enters the glyoxylate cycle (Fig. 20-45), which brings about the net conversion of acetate to succinate or other four-carbon intermediate of the citric acid cycle:
+
+$$
+\begin{array}{r l} 2 \mathrm {Acetyl - CoA + NA D ^ {+} +2H_ {2} O\longrightarrow} \\ & \text { succinate } + 2 \mathrm{CoA} + \mathrm{NADH} + \mathrm{H} ^ {+} \end{array}
+$$
+
+In the glyoxylate cycle, acetyl-CoA condenses with oxaloacetate to form citrate, and citrate is converted to isocitrate, exactly as in the citric acid cycle. The next step, however, is not the breakdown of isocitrate by isocitrate dehydrogenase but the cleavage of isocitrate by isocitrate lyase, forming succinate and glyoxylate. The glyoxylate then condenses with a second molecule of acetyl-CoA to yield malate, in a reaction catalyzed by malate synthase. The malate is subsequently oxidized to oxaloacetate, which can condense with another molecule of acetyl-CoA to start another turn of the cycle. The succinate passes into the mitochondrial matrix, where it is converted by citric acid cycle enzymes to oxaloacetate. The oxaloacetate moves into the cytosol (glyoxysomes, mitochondria, and cytosol) are integrated for the production of fructose 6-phosphate or sucrose from stored lipids.
+
+![](images/242fb58991a3460c48fb8f2fdffe2ecf1c29535c0c033f4988bf556781eceb86.jpg)  
+and can be converted to phosphoenolpyruvate by PEP carboxykinase, then to fructose 6-phosphate, the precursor of sucrose, by gluconeogenesis. Thus, reaction sequences carried out in three subcellular compartments
+
+FIGURE 20-45 Conversion of stored fatty acids to sucrose in germinating seeds through the glyoxylate cycle. This pathway begins in specialized peroxisomes called glyoxysomes. The citrate synthase, aconitase, and malate dehydrogenase of the glyoxylate cycle are isozymes of the citric acid cycle enzymes; isocitrate lyase and malate synthase are unique to the glyoxylate cycle. Notice that two acetyl groups enter the cycle and four carbons leave as succinate. Succinate is exported to mitochondria, where it is converted to oxaloacetate by enzymes of the citric acid cycle. Oxaloacetate enters the cytosol and serves as the starting material for gluconeogenesis and for synthesis of sucrose, the transport form of carbon in plants.  
+![](images/bd047a541ab234d2901ba002883d9a1bee257e1fe21d1f94054fcd577c1b7cd7.jpg)
+
+Enzymes common to the citric acid and glyoxylate cycles have two isozymes, one specific to mitochondria, the other to glyoxysomes. Physical separation of the glyoxylate cycle and $\beta$ -oxidation enzymes from the mitochondrial citric acid cycle enzymes prevents further oxidation of acetyl-CoA to $CO_{2}$ . Each turn of the glyoxylate cycle consumes two molecules of acetyl-CoA and produces one molecule of succinate, which is then available for biosynthetic purposes. Hydrolysis of stored triacylglycerols also produces glycerol 3-phosphate, which can enter the gluconeogenic pathway, after its oxidation to dihydroxyacetone phosphate (see Fig. 14-16).
+
+We noted in Chapter 14 that animal cells can carry out gluconeogenesis from three- and four-carbon precursors, but not from the two acetyl carbons of acetyl-CoA. Because the pyruvate dehydrogenase reaction is effectively irreversible (see Section 16.1) and animals do not have the enzymes specific to the glyoxylate cycle (isocitrate lyase and malate synthase), they have no way to convert acetyl-CoA to pyruvate or oxaloacetate. So, unlike vascular plants, animals cannot bring about the net synthesis of glucose from fatty acids.
+
+![](images/33ea476386a092376bc4240770a2b6babd487388ca7d217214e300509d8a9a09.jpg)
+
+## Cellulose Is Synthesized by Supramolecular Structures in the Plasma Membrane
+
+Cellulose is a major constituent of plant cell walls, providing strength and rigidity and preventing the swelling of the cell and rupture of the plasma membrane that might result when osmotic conditions favor water entry into the cell. Each year, worldwide, plants synthesize more than $10^{11}$ metric tons of cellulose, making this simple polymer one of the most abundant compounds in the biosphere. The structure of cellulose in the plant cell wall is simple: linear polymers of thousands of $(\beta1\rightarrow4)$ -linked D-glucose units, assembled into bundles of at least 18 chains, which co-crystallize to form microfibrils, which may in turn be assembled into larger macrofibrils. (Fig. 20-46).
+
+P5 As a major component of the plant cell wall, cellulose must be synthesized from intracellular precursors but deposited and assembled outside the plasma membrane. The enzymatic machinery for initiation, elongation, and export of cellulose chains is therefore more complicated than that used to synthesize starch or glycogen (which are not exported).
+
+![](images/392f9c1999a43116f7a66143b4374e0399167c1c0ede3741ce895ed9f9f16d8d.jpg)
+
+![](images/663c55037ce4478514729e8743643259b36e899729425882cf932a27e4ba9897.jpg)  
+FIGURE 20-46 Cellulose structure. The plant cell wall is made up in part of cellulose molecules arranged side by side to form crystalline arrays — cellulose microfibrils. Several microfibrils may combine to form larger cellulose macrofibrils. The scanning electron microscope shows macrofibrils, 5 to 12 nm in diameter, laid down on the cell surface in several layers distinguishable by the different orientations of the fibrils. [Electron micrograph from Biophoto Associates/Science Source.]
+
+The complex enzymatic machinery that assembles cellulose chains spans the plasma membrane, with one part on the cytoplasmic side positioned to bind the substrate, UDP-glucose, and elongate the chains, and another part extending to the outside, responsible for exporting the cellulose molecules to the extracellular space. Freeze-fracture electron microscopy shows a cellulose synthesis complex, or rosette, composed of six large particles arranged in a regular hexagon with a diameter of about 30 nm (Fig. 20-47a). Several proteins, including the catalytic subunit of cellulose synthase, make up this structure. The structure of the plant cellulose synthase is similar to that of the bacterium Rhodobacter sphaeroides, which has been determined by x-ray crystallography (Fig. 20-47b).
+
+![](images/f0f5aacee3124d1c10a54fc01ea69b07020b5b40fab32ca6e8d62f63edfe6b8c.jpg)  
+FIGURE 20-47 A model for the synthesis of cellulose. (a) Schematic derived from a combination of genetic, electron microscopic, and biochemical studies of Arabidopsis thaliana and other vascular plants. (b) The structure of cellulose synthase from the bacterium Rhodobacter sphaeroides. The transmembrane part of the protein provides a channel through which the lengthening cellulose polymer (red) is pushed into the periplasm as the chain grows by addition of glucose units on the inside surface of the plasma membrane. Two structures of the enzyme move during the catalytic cycle.  
+The gating loop moves into the substrate-binding site when UDP-glucose binds, then moves out to allow UDP to leave. The finger helix touches the glucose residue at the growing polymer end, then, after a new residue is added, moves so as to touch this new terminal glucose. The glycosyl transferase domain extends into the cytoplasm, where it binds its substrate UDP-glucose. (a) Electron micrograph @courtesy Dr. Candace H. Haigler, North Carolina State University, and Dr. Mark Grimson, Texas Tech University. (b) Data from PDB ID 5EJZ, J. L. W. Morgan et al., Nature 531:329, 2016. An extension of the cellulose chain was modeled in.]
+
+![](images/4e75e85ef2dc52282872b577dc7c02bb26c18b22ecbae8393fe5384890861f9d.jpg)
+
+In one working model of cellulose synthesis, cellulose chains are initiated by the transfer of a glucose residue from UDP-glucose to a "primer" glucose already bound to cellulose synthase on the cytoplasmic side of the plasma membrane, to form a disaccharide. As addition of further glucose residues lengthens the chain, it is extruded through a channel formed by the transmembrane helices of cellulose synthase and, on the outer surface of the plasma membrane, joins growing chains from neighboring cellulose synthase molecules to form a cellulose microfibril. Polymers of more than 6 to 8 glucose units are insoluble in water, promoting microfibril crystallization. There is no definite length for a cellulose polymer; synthesis is highly processive, and some polymers are as long as 15,000 glucose units.
+
+The UDP-glucose used for cellulose synthesis (step 1 in Fig. 20-47) is generated from sucrose produced during photosynthesis, in a reaction catalyzed by sucrose synthase (named for the reverse reaction):
+
+$$
+\mathrm{Sucrose} + \mathrm{UDP} \longrightarrow \mathrm{UDP-glucose} + \mathrm{fructose}
+$$
+
+A membrane-bound form of sucrose synthase may produce a high local concentration of UDP-glucose for cellulose synthesis.
+
+Each of the six particles of the rosette most likely contains three cellulose synthase molecules, each synthesizing a single cellulose chain (step 2). The large enzyme complex that catalyzes this process moves along the plasma membrane with directionality often related to the course of microtubules in the cell cortex, the cytoplasmic layer just below the membrane (step 3). When these microtubules lie perpendicular to the axis of the plant's growth, the cellulose microfibrils are laid down similarly to promote elongation. The motion of the cellulose synthase complexes is believed to be driven by energy released in the polymerization reaction, not by a molecular motor such as kinesin.
+
+The fundamental cellulose microfibril made by one rosette-type cellulose synthesis complex is thought to be composed of 18 chains lying side by side with the same (parallel) orientation of nonreducing and reducing ends. The 18 separate polymers coalesce on the outer surface of the cell and crystallize soon after they are polymerized (step 4), just prior to integrating into the cell wall.
+
+![](images/843f7f006657d0a9e95298f190f75e97a33ed3bed11b54de17a3e20e8b0054f4.jpg)
+
+In UDP-glucose, the glucose is $\alpha$ -linked to the nucleotide, but in cellulose, the glucose residues are $(\beta1\rightarrow4)$ -linked, so there is an inversion of configuration at the anomeric carbon (C-1) as the glycosidic bond forms. Glycosyltransferases that invert configuration are generally assumed to use a single-displacement mechanism, with nucleophilic attack by the acceptor species at the anomeric carbon of the donor sugar (in this case, UDP-glucose).
+
+## Pools of Common Intermediates Link Pathways in Different Organelles
+
+Although we have described metabolic transformations in plant cells in terms of individual pathways, these pathways interconnect so completely that we should instead consider pools of metabolic intermediates shared among these pathways and connected by readily reversible reactions (Fig. 20-48). One such metabolite pool includes the hexose phosphates glucose 1-phosphate, glucose 6-phosphate, and fructose 6-phosphate; a second includes the 5-phosphates of the pentoses ribose, ribulose, and xylulose; a third includes the triose phosphates dihydroxyacetone phosphate and glyceraldehyde 3-phosphate. Metabolite fluxes through these pools change in magnitude and direction in response to changes in the circumstances of the plant, and they vary with tissue type. Transporters in the membranes of each organelle move specific compounds in and out, and the regulation of these transporters presumably influences the degree to which the pools mix.
+
+![](images/affcf07de68b034292ec73ecc8d3de5cda1c3c5eb782e38473777a65fe2c0945.jpg)
+
+![](images/43f1b9ed3f04451c2d6dbe82c19b7882fb2cca9116a37fbd4c6b60c764864c9e.jpg)  
+FIGURE 20-49 Movement of sucrose between source and sink tissues. (a) In daylight, photosynthetic leaves (source tissue) fix $\mathrm{CO}_{2}$ into triose phosphates via the Calvin cycle in chloroplasts. Some of the triose phosphate is used in the chloroplasts to synthesize starch; the rest is exported to the cytosol, where it can be converted via gluconeogenesis to fructose 6-phosphate and glucose 1-phosphate. Sucrose, synthesized from UDP-glucose and fructose, is exported from leaf mesophyll cells to the plant phloem; the resulting high sucrose content draws water into the phloem by osmosis.  
+The resulting increased turgor pressure (p. 52) pushes the solution in the phloem toward sink tissues. (b) Sucrose moves from the phloem into the sink tissues, where it is converted to starch or cell wall cellulose, or is used as fuel for glycolysis, the citric acid cycle, and oxidative phosphorylation to provide ATP for these nonphotosynthetic tissues. Sugar transport across the plasma membrane and between intracellular compartments is catalyzed by several symporters and antiporters coupled to a proton gradient. [Information from Dr. Gerald Edwards, School of Biological Sciences, Washington State University.]
+
+During daylight hours, triose phosphates produced in photosynthetic leaf tissue (“source” tissues, in which there is a net fixation of $CO_{2}$ ) move out of the chloroplast and into the cytosolic hexose phosphate pool, where they are converted to sucrose for transport via the plant phloem (sap) to nonphotosynthetic “sink” tissues (Fig. 20-49). In sink tissues such as roots, tubers, and bulbs, sucrose is converted to starch for storage or is used as an energy source via glycolysis. In growing plants, hexose phosphates are also withdrawn from the pool for the synthesis of cell walls. At night, starch is metabolized by glycolysis and oxidative phosphorylation to provide energy for both source and sink tissues.
+
+## SUMMARY 20.6 Biosynthesis of Starch, Sucrose, and Cellulose
+
+■ Starch synthase in chloroplasts and amyloplasts catalyzes the addition of single glucose residues, donated by ADP-glucose, to the growing polymer chain.
+
+■ Sucrose is synthesized in the cytosol from UDP-glucose and fructose 1-phosphate, in two steps.
+
+■ The partitioning of triose phosphates between sucrose synthesis and starch synthesis is regulated by fructose 2,6-bisphosphate (F26BP). [F26BP] varies inversely with the rate of photosynthesis, and F26BP inhibits the synthesis of fructose 6-phosphate, the precursor of sucrose.
+
+■ The glyoxylate cycle, taking place in the glyoxysomes of germinating seeds of some plants, uses several citric acid cycle enzymes and two additional enzymes: isocitrate lyase and malate synthase. The two decarboxylation steps of the citric acid cycle are bypassed, making possible the net formation of succinate, oxaloacetate, and other cycle intermediates from acetyl-CoA.
+
+■ Cellulose synthase has a glycosyl transferase activity in its cytoplasmic domain and forms a transmembrane channel through which the growing cellulose chain is extruded. Glucose units are transferred from UDP-glucose to the nonreducing end of the growing chain.
+
+The plant cell shares pools of common intermediates, including hexose-, pentose-, and triose-phosphates. Transporters in the membranes of chloroplasts, mitochondria, and amyloplasts mediate the movement of sugar phosphates between organelles. The direction of metabolite flow through the pools within a leaf changes from day to night.
+
+■ Sucrose produced in a photosynthetic (source) tissue is exported to nonphotosynthetic (sink) tissue such as roots and tubers via the plant phloem.
+
+## KEY TERMS
+
+Terms in bold are defined in the glossary.
+
+photosynthesis 700  
+light-dependent reactions 700  
+photophosphorylation 701  
+chloroplast 701  
+stroma 701  
+thylakoid 701  
+photon 703  
+excited state 703  
+ground state 704  
+exciton 704  
+exciton transfer 704  
+chlorophylls 704  
+accessory pigments 705  
+carotenoids 705 $\beta$ -carotene 705  
+action spectrum 705  
+photosystem 705  
+photochemical reaction center 705  
+light-harvesting complexes (LHCs) 705
+
+cyclic electron
+transfer 708
+linear electron
+transfer 708
+ferredoxin 708
+Z scheme 709
+photosystem II (PSII) 709
+photosystem I (PSI) 709
+cytochrome $b_{6}f$ 709
+plastoquinone $(\mathrm{PQ}_{\mathrm{A}})$ 710
+plastocyanin 711
+phylloquinone $(\mathrm{PQ}_{\mathrm{K}})$ 711
+cyclic photophosphorylation 713
+state transition 713
+oxygen-evolving center 715 $\mathrm{CO}_{2}$ assimilation 719 $\mathrm{CO}_{2}$ fixation 719
+Calvin cycle 719
+reductive pentose phosphate pathway 719
+
+ribulose
+
+1,5-bisphosphate 719
+3-phosphoglycerate 719
+C₃ plants 720
+ribulose 1,5-bisphosphate carboxylase/oxygenase (rubisco) 720
+rubisco activase 721
+thioredoxin 725
+ferredoxin:thioredoxin reductase 725
+photorespiration 727
+2-phosphoglycolate 727
+glycolate pathway 727
+C₄ plants 729
+
+C4 pathway 729
+phosphoenolpyruvate carboxylase 730
+malic enzyme 730
+pyruvate phosphate dikinase 730
+CAM plants 732
+sugar nucleotide 733
+starch synthase 733
+glyoxysome 735
+glyoxylate cycle 735
+isocitrate lyase 735
+glyoxylate 735
+malate synthase 735
+cellulose synthase 737
+
+## PROBLEMS
+
+1. Photochemical Efficiency of Light at Different Wavelengths The rate of photosynthesis in a green plant, measured by $O_{2}$ production, is higher when illuminated with light of wavelength 680 nm than with light of wavelength 700 nm. However, illumination by a combination of light of 680 nm and 700 nm gives a higher rate of photosynthesis than light of either wavelength alone. Explain.
+
+2. Balance Sheet for Photosynthesis In 1804, Nicolas-Théodore de Saussure observed that the total weight of oxygen and dry organic matter produced by plants is greater than the weight of carbon dioxide consumed during photosynthesis. Where does the extra weight come from?
+
+3. Role of $H_{2}S$ in Some Photosynthetic Bacteria Illuminated purple sulfur bacteria carry out photosynthesis in the presence of $H_{2}O$ and ${}^{14}CO_{2}$ , but only if $H_{2}S$ is added and $O_{2}$ is absent. During photosynthesis, measured by formation of $[{}^{14}C]$ carbohydrate, the bacteria convert $H_{2}S$ to elemental sulfur but do not produce $O_{2}$ . What is the role of the conversion of $H_{2}S$ to sulfur? Why doesn't photosynthesis produce $O_{2}$ in these bacteria?
+
+4. Electron Transfer through Photosystems I and II
+Predict how an inhibitor of electron passage through pheophytin would affect electron transfer through (a) photosystem II and (b) photosystem I. Explain your reasoning.
+
+5. Limited ATP Synthesis in the Dark In a laboratory experiment, a researcher illuminates spinach chloroplasts in the absence of ADP and $P_{i}$ . Then, the researcher turns the light off and adds ADP and $P_{i}$ . ATP synthesis occurs for a short time in the dark. Explain this finding.
+
+6. Mode of Action of the Herbicide DCMU Treating chloroplasts with 3-(3,4-dichlorophenyl)-1,1-dimethylurea (DCMU, or diuron), a potent herbicide, causes oxygen evolution and photophosphorylation to cease. Adding a Hill reagent (an external electron acceptor) restores oxygen evolution, but not photophosphorylation. How does DCMU act as a weed killer? Suggest a location for the inhibitory action of this herbicide in the scheme shown in Figure 20-12. Explain.
+
+![](images/6573ba6b5de0e3e57cab7602916e191b0712f33a8641274c684abe98d3376905.jpg)
+
+7. Effect of Venturicidin on Oxygen Evolution Venturicidin is a powerful inhibitor of the chloroplast ATP synthase, interacting with $\mathrm{CF_0}$ and blocking proton passage through the $\mathrm{CF_0CF_1}$ complex. How would venturicidin affect oxygen evolution in a suspension of well-illuminated chloroplasts? Would your answer change if the experiment were done in the presence of an uncoupling reagent such as 2,4-dinitrophenol (DNP)? Explain.
+
+8. Light Energy for a Redox Reaction Suppose you have isolated a new photosynthetic microorganism that oxidizes $H_{2}S$ and passes the electrons to $NAD^{+}$ . What wavelength of light would provide enough energy for $H_{2}S$ to reduce $NAD^{+}$ under standard conditions? Assume 100% efficiency in the photochemical event, and use an $E^{\circ}$ of -243 mV for $H_{2}S$ and -320 mV for $NAD^{+}$ . See Figure 20-4 for the energy equivalents of wavelengths of light.
+
+9. Equilibrium Constant for Water-Splitting Reactions The coenzyme NADP+ is the terminal electron acceptor in chloroplasts, according to the reaction
+
+$$
+2 \mathrm{H} _ {2} \mathrm{O} + 2 \mathrm{NADP} ^ {+} \longrightarrow 2 \mathrm{NADPH} + 2 \mathrm{H} ^ {+} + \mathrm{O} _ {2}
+$$
+
+Use information in Chapter 19 (Table 19-2) to calculate the equilibrium constant for this reaction at 25 °C. (The relationship between $K_{\text{eq}}'$ and $\Delta G'' \circ$ is discussed on p. 468.) How can the chloroplast overcome this unfavorable equilibrium?
+
+![](images/12dbc00092dd35fd33505e716bf6a82a175f10c078b5e5d59159e24c5d568ac2.jpg)
+
+10. Energetics of Phototransduction During photosynthesis, pigment molecules in chloroplasts must absorb eight photons (four by each photosystem) for every $O_{2}$ molecule they produce, according to the equation
+
+$$
+2 \mathrm{H} _ {2} \mathrm{O} + 2 \mathrm{NADP} ^ {+} + 8 \text {   photons   } \longrightarrow 2 \mathrm{NADPH} + 2 \mathrm{H} ^ {+} + \mathrm{O} _ {2}
+$$
+
+The $\Delta G^{\prime \circ}$ for the light-independent production of $\mathrm{O}_2$ is $400\mathrm{kJ / mol}$ . Assuming that these photons have a wavelength of $700~\mathrm{nm}$ (red) and that the light absorption and use of light energy are $100\%$ efficient, calculate the free-energy change for the process.
+
+11. Electron Transfer to a Hill Reagent Isolated spinach chloroplasts evolve $O_{2}$ when illuminated in the presence of potassium ferricyanide (a Hill reagent), according to the equation
+
+$$
+2 \mathrm{H} _ {2} \mathrm{O} + 4 \mathrm{Fe} ^ {3 +} \longrightarrow \mathrm{O} _ {2} + 4 \mathrm{H} ^ {+} + 4 \mathrm{Fe} ^ {2 +}
+$$
+
+where $Fe^{3+}$ represents ferricyanide and $Fe^{2+}$ represents ferrocyanide. Does this process produce NADPH? Explain.
+
+12. How Often Does a Chlorophyll Molecule Absorb a Photon? The amount of chlorophyll $a$ ( $M_{\mathrm{r}}$ 892) in a spinach leaf is about $20~\mu \mathrm{g} / \mathrm{cm}^2$ of leaf surface. In noonday sunlight (average energy reaching the leaf is $5.4~\mathrm{J} / \mathrm{cm}^2 \cdot \mathrm{min}$ ), the leaf absorbs about $50\%$ of the radiation. How often does a single chlorophyll molecule absorb a photon? Given that the average lifetime of an excited chlorophyll molecule in vivo is 1 ns, what fraction of the chlorophyll molecules are excited at any one time?
+
+13. Effect of Monochromatic Light on Electron Flow Using a spectrophotometer, researchers can sometimes directly observe the extent of oxidation or reduction of an electron carrier during photosynthetic electron transfer. Illuminating chloroplasts with 700 nm light oxidizes cytochrome f, plastocyanin, and plastoquinone. Illuminating chloroplasts with 680 nm light, however, reduces these electron carriers. Explain.
+
+14. Function of Cyclic Photophosphorylation When the [NADPH]/[NADP+] ratio in chloroplasts is high, photophosphorylation is predominantly cyclic (see Fig. 20-12). Does cyclic electron transfer evolve O₂? Does cyclic electron transfer produce NADPH? Explain. What is the main function of cyclic electron transfer?
+
+15. Phases of Photosynthesis A researcher illuminates a suspension of green algae in the absence of $CO_{2}$ . He then incubates the algae with ${}^{14}CO_{2}$ in the dark and observes the conversion of ${}^{14}CO_{2}$ to $[{}^{14}C]$ glucose for a brief time. What is the significance of this observation with regard to the $CO_{2}$ -assimilation process, and how is it related to the light-dependent reactions of photosynthesis? Why does the conversion of ${}^{14}CO_{2}$ to $[{}^{14}C]$ glucose stop after a brief time?
+
+16. Identification of Key Intermediates in $CO_{2}$ Assimilation Calvin and his colleagues used the unicellular green alga Chlorella to study the $CO_{2}$ -assimilation reactions of photosynthesis. They incubated ${}^{14}CO_{2}$ with illuminated suspensions of algae and followed the time course of appearance of ${}^{14}C$ in two compounds, X and Y, under two sets of conditions. Suggest the identities of X and Y, based on your understanding of the Calvin cycle.
+
+(a) They grew illuminated Chlorella with unlabeled $CO_{2}$ , then turned off the light and added ${}^{14}CO_{2}$ (vertical dashed line in the graph below). Under these conditions, X was the first compound to become labeled with ${}^{14}C$ ; Y was unlabeled.
+
+![](images/7e1aab295440dde1cfd3f7206759942a1e356a73c841a4b929935526755d9384.jpg)
+
+(b) They grew illuminated Chlorella cells with ${}^{14}CO_{2}$ . Illumination was continued until all the ${}^{14}CO_{2}$ had been taken up (vertical dashed line in the graph below). Under these conditions, X became labeled quickly but lost its radioactivity with time, whereas Y became more radioactive with time.
+
+![](images/bf5d97975b1ca4335a93d67ebafc8ea47fae3b6ca7209d9e57467e108934db19.jpg)
+
+17. Regulation of the Calvin Cycle Iodoacetate reacts irreversibly with the free —SH groups of Cys residues in proteins. Predict which Calvin cycle enzyme(s) would be inhibited by iodoacetate, and explain why.
+
+![](images/cdd649e44a0a3d7b12a276574a8e3d13e1c32f8c25d153f52caf703c61b2eb3d.jpg)
+
+18. Comparison of the Reductive and Oxidative Pentose Phosphate Pathways The reductive pentose phosphate pathway generates several intermediates identical to those of the oxidative pentose phosphate pathway (Chapter 14). What role does each pathway play in cells where it is active?
+
+19. Photorespiration and Mitochondrial Respiration Compare the oxidative photosynthetic carbon cycle, also called photorespiration, with the mitochondrial respiration that drives ATP synthesis. Why are both processes referred to as respiration? Where in the cell do they occur, and under what circumstances? What is the path of electron flow in each?
+
+20. Pathway of $CO_{2}$ Assimilation in Maize Researchers illuminate a maize (corn) plant in the presence of ${}^{14}CO_{2}$ . After about 1 second of illumination, they find more than 90% of all the radioactivity incorporated in the leaves at C-4 of malate, aspartate, and oxaloacetate. Only after 60 seconds does ${}^{14}C$ appear at C-1 of 3-phosphoglycerate. Explain.
+
+21. Identifying CAM Plants Given some ${}^{14}CO_{2}$ and all the tools typically present in a biochemistry research lab, how would you design a simple experiment to determine whether a plant is a typical $C_{4}$ plant or a CAM plant?
+
+22. Chemistry of Malic Enzyme: Variation on a Theme Malic enzyme, found in the bundle-sheath cells of $C_{4}$ plants, carries out a reaction that has a counterpart in the citric acid cycle. What is the analogous reaction? Explain your choice.
+
+23. Differences between $C_{3}$ and $C_{4}$ Plants The plant genus Atriplex includes some $C_{3}$ and some $C_{4}$ species. In the plots, the black curve represents species 1; the red curve represents species 2. From the data in the plots, identify which is a $C_{3}$ plant and which is a $C_{4}$ plant. Justify your answer in molecular terms that account for the data in all three plots.
+
+![](images/ad4b95f0c264e8b6b5b256554b0a6bb1b60bd9401e019e64465690597e855052.jpg)
+
+![](images/55f912f9adcfce76bb0e907fd4d6c25286f8b8ae9464409e3eba893bfbb2c12e.jpg)
+
+![](images/9cc021f558d5b03d8728807efedd72198f490c8f2b84ff0bd2874fc253d4ffe4.jpg)
+
+24. Inorganic Pyrophosphatase The enzyme inorganic pyrophosphatase contributes to making many biosynthetic reactions that generate inorganic pyrophosphate essentially irreversible in cells. By keeping the concentration of PP $_{i}$ very low, the enzyme “pulls” these reactions in the direction of PP $_{i}$ formation. The synthesis of ADP-glucose in chloroplasts is one such reaction. However, the synthesis of UDP-glucose in the plant cytosol, which also produces PP $_{i}$ , is readily reversible in vivo. How do you reconcile these two facts?
+
+![](images/72444dc1969ac550becc9111aa1fbced5028facbfd0345edbf5ed4cf244d74ab.jpg)
+
+25. Regulation of Starch and Sucrose Synthesis Sucrose synthesis occurs in the cytosol and starch synthesis occurs in the chloroplast stroma, yet the two processes are intricately balanced. What factors shift the reactions in favor of (a) starch synthesis and (b) sucrose synthesis?
+
+26. Regulation of Sucrose Synthesis In the regulation of sucrose synthesis from the triose phosphates produced during photosynthesis, 3-phosphoglycerate and $P_{i}$ play critical roles (see Fig. 20-42). Explain why the concentrations of these two regulators reflect the rate of photosynthesis.
+
+27. Sucrose and Dental Caries The most prevalent infection in humans worldwide is dental caries, which stems from the colonization and destruction of tooth enamel by a variety of acidifying microorganisms. These organisms synthesize and live within a water-insoluble network of dextrans, called dental plaque, composed of $(\alpha1\rightarrow6)$ -linked polymers of glucose with many $(\alpha1\rightarrow3)$ branch points. Polymerization of dextran requires dietary sucrose, and the bacterial enzyme dextran-sucrose glucosyltransferase catalyzes the reaction.
+
+(a) Write the overall reaction for dextran polymerization.
+
+(b) In addition to providing a substrate for the formation of dental plaque, how does dietary sucrose also provide oral bacteria with an abundant source of metabolic energy?
+
+28. Partitioning between the Citric Acid and Glyoxylate Cycles In an organism (such as Escherichia coli) that has both the citric acid cycle and the glyoxylate cycle, what determines which of these pathways isocitrate will enter?
+
+## DATA ANALYSIS PROBLEM
+
+29. Photophosphorylation: Discovery, Rejection, and Rediscovery In the 1930s and 1940s, researchers were beginning to make progress toward understanding the mechanism of photosynthesis. At the time, the role of “energy-rich phosphate bonds” (today, “ATP”) in glycolysis and cellular respiration was just becoming known. There were many theories about the mechanism of photosynthesis, especially about the role of light. This problem focuses on what was then called the “primary photochemical process”—that is, on what, exactly, the energy from captured light produces in the photosynthetic cell. Interestingly, one important part of the modern model of photosynthesis was proposed early on, only to be rejected, ignored for several years, then finally revived and accepted.
+
+In 1944, Emerson, Stauffer, and Umbreit proposed that "the function of light energy in photosynthesis is the formation of 'energy-rich' phosphate bonds" (p. 107). In their model (hereafter, the "Emerson model"), the free energy necessary to drive both $\mathrm{CO}_{2}$ fixation and reduction came from these "energy-rich phosphate bonds" (i.e., ATP), produced as a result of light absorption by a chlorophyll-containing protein.
+
+This model was explicitly rejected by Rabinowitch (1945). After summarizing Emerson and coauthors' findings, Rabinowitch stated: "Until more positive evidence is provided, we are inclined to consider as more convincing a general argument against this hypothesis, which can be derived from energy considerations. Photosynthesis is eminently a problem of energy accumulation. What good can be served, then, by converting light quanta (even those of red light, which amount to about 43 kcal per Einstein) into 'phosphate quanta' of only 10 kcal per mole? This appears to be a start in the wrong direction—toward dissipation rather than toward accumulation of energy" (p. 228). This argument, along with other evidence, led to abandonment of the Emerson model until the 1950s, when it was found to be correct—albeit in a modified form.
+
+For each piece of information from Emerson and coauthors' article presented in (a) through (d), answer the following three questions:
+
+1. How does this information support the Emerson model, in which light energy is used directly by chlorophyll to make ATP, and the ATP then provides the energy to drive $CO_{2}$ fixation and reduction?
+
+2. How would Rabinowitch explain this information, based on his model (and most other models of the day), in which light energy is used directly by chlorophyll to make reducing compounds? Rabinowitch wrote: "Theoretically, there is no reason why all electronic energy contained in molecules excited by the absorption of light should not be available for oxidation-reduction" (p. 152). In this model, the reducing compounds are then used to fix and reduce $\mathrm{CO}_{2}$ , and the energy for these reactions comes from the large amounts of free energy released by the reduction reactions.
+
+3. How is this information explained by our modern understanding of photosynthesis?
+
+(a) Chlorophyll contains a $Mg^{2+}$ ion, which is known to be an essential cofactor for many enzymes that catalyze phosphorylation and dephosphorylation reactions.
+
+(b) A crude "chlorophyll protein" isolated from photosynthetic cells showed phosphorylating activity.
+
+(c) The phosphorylating activity of the "chlorophyll protein" was inhibited by light.
+
+(d) The levels of several different phosphorylated compounds in photosynthetic cells changed dramatically in response to light exposure. (Emerson and coworkers were not able to identify the specific compounds involved.)
+
+As it turned out, the Emerson and Rabinowitch models were both partly correct and partly incorrect.
+
+(e) Explain how the two models relate to our current model of photosynthesis.
+
+In his rejection of the Emerson model, Rabinowitch went on to say: "The difficulty of the phosphate storage theory appears most clearly when one considers the fact that, in weak light, eight or ten quanta of light are sufficient to reduce one molecule of carbon dioxide. If each quantum should produce one molecule of high-energy phosphate, the accumulated energy would be only 80–100 kcal per Einstein—while photosynthesis requires at least 112 kcal per mole, and probably more, because of losses in irreversible partial reactions" (p. 228).
+
+(f) How does Rabinowitch's value of 8 to 10 photons per molecule of $\mathrm{CO}_{2}$ reduced compare with the value accepted today?
+
+(g) How would you rebut Rabinowitch's argument, based on our current knowledge about photosynthesis?
+
+## References
+
+Emerson, R.L., J.F. Stauffer, and W.W. Umbreit. 1944. Relationships between phosphorylation and photosynthesis in Chlorella. Am. J. Botany 31:107–120.
+
+Rabinowitch, E.I. 1945. Photosynthesis and Related Processes, Vol. I. New York: Interscience Publishers.
+
+![](images/2a16be56c693cdc67ff0b0dc8babf45bba24ebbf0079d357749e7e3cc9eba3ca.jpg)
+
+![](images/becdc87456c51a10ac449394f04187b389e5f456629860ea79f4732b0ddc6f2f.jpg)
+
+# LIPID BIOSYNTHESIS
+
+21.1 Biosynthesis of Fatty Acids and Eicosanoids 744
+
+21.2 Biosynthesis of Triacylglycerols 760
+
+21.3 Biosynthesis of Membrane Phospholipids 764
+
+21.4 Cholesterol, Steroids, and Isoprenoids: Biosynthesis, Regulation, and Transport 771
+
+Lipids play a variety of cellular roles, some recognized only recently. This chapter describes the biosynthetic pathways for some of the most common cellular lipids, illustrating the strategies employed in assembling these water-insoluble products from water-soluble precursors such as acetate. We first describe the biosynthesis of fatty acids, the primary components of both triacylglycerols and phospholipids, then examine the assembly of fatty acids into triacylglycerols and the simpler membrane phospholipids. Finally, we consider the synthesis of cholesterol, a component of some membranes and the precursor of steroids such as bile acids, sex hormones, and adrenocortical hormones.
+
+Our coverage of lipid biosynthesis is organized around the following principles:
+
+P1 Lipids are the principal form of stored energy in most higher organisms, as well as the major constituents of membranes.
+
+P2 Anabolism is not simply the reverse of catabolism. Biosynthetic pathways typically diverge from breakdown pathways to overcome irreversible steps in catabolism.
+
+P3 Like other anabolic pathways, the reaction sequences in lipid biosynthesis are endergonic and reductive. They use ATP as a source of metabolic energy and a reduced electron carrier (usually NADPH) as a reductant.
+
+P4 Lipid biosynthesis, like other anabolic pathways, is subject to regulation to respond to cellular and organismal requirements. The places where catabolic and anabolic pathways diverge (Principle 2) provide opportunities to
+
+impose metabolic regulation to conserve resources and avoid futile cycles.
+
+P5 Like other major classes of biological molecules, lipids have a plethora of cellular functions. Specialized lipids serve as pigments (retinal, carotene), cofactors (vitamin K), detergents (bile salts), transporters (dolichols), hormones (vitamin D derivatives, sex hormones), extracellular and intracellular messengers (eicosanoids, phosphatidylinositol derivatives), and anchors for membrane proteins (covalently attached fatty acids, prenyl groups, phosphatidylinositol). The ability to synthesize a variety of lipids is essential to all organisms.
+
+We will focus on eukaryotes, with occasional digressions to highlight important distinctions in bacteria and plants.
+
+## 21.1 Biosynthesis of Fatty Acids and Eicosanoids
+
+P2 Even when compared to other major classes of metabolites, the division between fatty acid biosynthesis and breakdown is particularly striking. The two processes occur by different pathways, catalyzed by different sets of enzymes, and, in eukaryotes, occur in different cellular compartments. Fatty acid breakdown occurs in the mitochondria, whereas biosynthesis occurs in the cytosol. Moreover, biosynthesis requires the participation of a three-carbon intermediate, malonyl-CoA, that does not appear in the path of fatty acid breakdown.
+
+![](images/9b795cce146a307d9029ed0aed8936c458a98466ad3099575c8e565ee053ad2b.jpg)
+
+The general pathway of fatty acid synthesis and its regulation now take center stage. We consider the biosynthesis of longer-chain fatty acids, unsaturated fatty acids, and their eicosanoid derivatives at the end of this section.
+
+## Malonyl-CoA Is Formed from Acetyl-CoA and Bicarbonate
+
+The formation of malonyl-CoA from acetyl-CoA is an irreversible three-step process, catalyzed by acetyl-CoA carboxylase. In animal cells, all three steps are catalyzed in the cytoplasm by a single multifunctional polypeptide (Fig. 21-1). The enzyme contains a biotin prosthetic group covalently bound in amide linkage to the ε-amino group of a Lys residue in one of the domains of the enzyme molecule.
+
+![](images/3ee80cb5554b9fe27061fed2924260b1d8e724b5e80261a5622724ccf9e1af7b.jpg)
+
+The reaction catalyzed by this enzyme is very similar to other biotin-dependent carboxylation reactions, such as those catalyzed by pyruvate carboxylase (see Fig. 16-16) and propionyl-CoA carboxylase (see Fig. 17-12). A carboxyl group, derived from bicarbonate $(\mathrm{HCO}_3^-)$ , is first transferred to biotin in an ATP-dependent reaction. In a second step, the carboxyl group is carried by the biotin to a different active site, where the $\mathrm{CO}_{2}$ is transferred to acetyl-CoA in the third and final step to yield malonyl-CoA. As we will see, this carboxylation has the same function as the carboxylation of pyruvate by pyruvate carboxylase—it renders the next step in the reaction sequence much more favorable thermodynamically.
+
+The bacterial version of acetyl-CoA carboxylase is similar but has three separate polypeptide subunits (including a separate biotin carrier protein) that catalyze the three steps. Plant cells contain both types of acetyl-CoA carboxylase.
+
+## Fatty Acid Synthesis Proceeds in a Repeating Reaction Sequence
+
+The long carbon chains of fatty acids are assembled in the cytosol in a repeating four-step sequence (Fig. 21-2), catalyzed by a system collectively referred to as fatty acid synthase. A saturated acyl group produced by each four-step series of reactions becomes the substrate for subsequent condensation with an activated malonyl group. With each passage through the cycle, the fatty acyl chain is extended by two carbons.
+
+In the four-step pathway, a condensation reaction is followed by a reduction-dehydration-reduction sequence to convert the C-3 carbonyl to a methylene. The latter three steps are the chemical reverse of the oxidation-hydration-oxidation sequence in the $\beta$ oxidation of fatty acids (Fig. 17-8a). P2 However, both the electron-carrying cofactor and the activating groups in the reductive anabolic sequence differ from those in the oxidative catabolic process. Recall that in $\beta$ oxidation, $\mathrm{NAD^{+}}$ and FAD serve as electron acceptors and the activating group is the thiol (-SH) group of coenzyme A. By contrast, the reducing agent in the synthetic sequence is NADPH and the activating groups are two different enzyme-bound -SH groups, as described below.
+
+In mammals, this synthetic system is called fatty acid synthase I (FAS I). There are seven active sites to catalyze the four-step cycle plus the charging steps described below. The active sites for different reactions lie in separate domains
+
+FIGURE 21-1 The acetyl-CoA carboxylase reaction. The mammalian acetyl-CoA carboxylase of the cytoplasm has three functional domains with distinct functions: biotin carrier protein; biotin carboxylase, which activates $\mathrm{CO}_{2}$ by attaching it to a nitrogen in the biotin ring in an ATP-dependent reaction; and transcarboxylase, which transfers activated $\mathrm{CO}_{2}$ (shaded green) from biotin to acetyl-CoA, producing malonyl-CoA. Part of the biotin carrier protein domain and the long, flexible biotin arm rotate to carry the activated $\mathrm{CO}_{2}$ from the biotin carboxylase active site to the transcarboxylase active site. The active domain in each step is shaded in blue.
+
+![](images/88f059f0abd3315c405b61fbc3ea6674f86d3830b76515b2a804bed1e51b9ffb.jpg)
+
+![](images/794aec16716b26697dcd55053498917d55be1a3081b1a6a4a16d81a74a5c955b.jpg)  
+FIGURE 21-2 Addition of two carbons to a growing fatty acyl chain: a four-step sequence. Each malonyl group and acetyl (or longer acyl) group is activated by a thioester that links it to fatty acid synthase, a multienzyme system. ① Condensation of an activated acyl group (an acetyl group from acetyl-CoA is the first acyl group) and two carbons derived from malonyl-CoA, with elimination of $\mathrm{CO}_{2}$ from the malonyl group, extends the acyl chain by two carbons. The mechanism of the first step of this reaction is given to illustrate the role of decarboxylation in facilitating condensation. The $\beta$ -keto product of the condensation is then reduced in three more steps nearly identical to the reactions of $\beta$ oxidation, but in the reverse sequence: ② the $\beta$ -keto group is reduced to an alcohol, ③ elimination of $\mathrm{H}_{2} \mathrm{O}$ creates a double bond, and ④ the double bond is reduced to form the corresponding saturated fatty acyl group.
+
+(Fig. 21-3a), all within a single multifunctional polypeptide chain ( $M_{r}$ 240,000). Two of these multifunctional polypeptides function as a homodimer ( $M_{r}$ 480,000; Fig. 21-3b). The two subunits seem to function independently. When all the active sites in one subunit are inactivated by mutation, fatty acid synthesis is only moderately reduced.
+
+![](images/3b6abd5fe94d35761bc42a886381a5ccf443f83dcae568b625b55b474ddfa573.jpg)
+
+![](images/b51d3bc5d61201a7f1d757c0b69f019078b9a5420e7b67f369023a5f72c3799e.jpg)  
+FIGURE 21-3 The structure of a fatty acid synthase type I system. Shown here is the structure of a single (monomeric) polypeptide chain of the mammalian (porcine) enzyme system. (a) All of the active sites in the mammalian system are located in different domains within a single large polypeptide chain. The different enzymatic activities are $\beta$ -ketoacyl-ACP synthase (KS), malonyl/acetyl-CoA-ACP transferase (MAT), $\beta$ -hydroxyacyl-ACP dehydratase (DH), enoyl-ACP reductase (ER), and $\beta$ -ketoacyl-ACP reductase (KR). ACP is the acyl carrier protein. The seventh domain is a thioesterase (TE) that releases the palmitate product from ACP when synthesis is completed. The ACP and TE domains are disordered in the crystal and are therefore not shown in the structure. (b) The native dimeric structure is shown, with one polypeptide transparent to show how the two independently operating subunits come together. The linear arrangement of the domains in the polypeptide is shown below the structure. [Data from PDB ID 2CF2, T. Maier et al., Science 311:1258, 2006.]
+
+![](images/c3e5a5896fd49dd2004e34be04b87bf7f515cf2e36a0218754a5dd4cd68d97ae.jpg)
+
+With FAS I systems, fatty acid synthesis leads to a single product. As it goes through the cycle, the acyl group is covalently linked to acyl carrier protein (ACP), which shuttles it from one active site to another in sequence. Acyl carrier protein is yet another contiguous part of the single FAS I polypeptide. No intermediates are released. When the chain length reaches 16 carbons, that product (palmitate, 16:0; see Table 10-1) leaves the cycle. Carbons C-16 and C-15 of the palmitate are derived from the methyl and carboxyl carbon atoms, respectively, of an acetyl-CoA used directly to prime the system at the outset (Fig. 21-4); the rest of the carbon atoms in the chain are derived from acetyl-CoA via malonyl-CoA.
+
+A somewhat different FAS I is found in yeast and other fungi, and is made up of two multifunctional polypeptides that form a complex with an architecture distinct from that of the vertebrate systems. Three of the seven required active sites are found on the $\alpha$ subunit and four on the $\beta$ subunit. A different system, called FAS II, is found in plants and most bacteria. FAS II is a dissociated system; each step in the synthesis is catalyzed by a separate enzyme. Unlike FAS I, FAS II generates a variety of products, including saturated fatty acids of several lengths, as well as unsaturated, branched, and hydroxy fatty acids. An FAS II system is also found in vertebrate mitochondria, yet another indication of the bacterial origins of mitochondria in evolution.
+
+## The Mammalian Fatty Acid Synthase Has Multiple Active Sites
+
+The multiple domains of mammalian FAS I function as distinct but linked enzymes. The active site for each enzyme is found in a separate domain within the larger polypeptide. Throughout the process of fatty acid synthesis, the intermediates remain covalently attached as thioesters to one of two thiol groups. One point of attachment is the —SH group of a Cys residue in one of the synthase domains ( $\beta$ -ketoacyl-ACP synthase; KS); the other is the —SH group of acyl carrier protein, a separate domain of the same polypeptide. Hydrolysis of thioesters is highly exergonic, and the energy released helps to make two steps (1 and 5 in Fig. 21-6) in fatty acid synthesis thermodynamically favorable.
+
+Acyl carrier protein is the shuttle that holds the system together, containing the prosthetic group 4'-phosphopantetheine, also found in coenzyme A (Fig. 21-5). The 4'-phosphopantetheine serves as a flexible arm, tethering the growing fatty acyl chain to the surface of the fatty acid synthase complex while carrying the reaction intermediates from one enzyme active site to the next. The same prosthetic group is used in FAS II systems.
+
+## Fatty Acid Synthase Receives the Acetyl and Malonyl Groups
+
+Before the condensation reactions that build up the fatty acid chain can begin, the two thiol groups on the enzyme complex must be charged with the correct acyl groups (Fig. 21-6a). First, the acetyl group of acetyl-CoA is transferred to ACP in a reaction catalyzed by the malonyl/acetyl-CoA-ACP transferase (MAT) domain of the multifunctional polypeptide. The acetyl group is then transferred to the Cys—SH group of the $\beta$ -ketoacyl-ACP synthase (KS). The second reaction, transfer of the malonyl group from malonyl-CoA to the —SH group of ACP, is also catalyzed by malonyl/acetyl-CoA-ACP transferase. In the charged synthase complex, the acetyl and malonyl groups are activated for the chain-lengthening process. We now consider the first four steps of this process in some detail; all step numbers refer to Figure 21-6.
+
+![](images/4dea7aaea7b408fef89abe0035934c490cb5b78940e6214717e7bb9c4318bddb.jpg)
+
+![](images/ee0a400d6a64377eef6666fc2722f90125eb39fe40bddf411088e647f6d28619.jpg)  
+FIGURE 21-5 Acyl carrier protein (ACP). The prosthetic group is 4'-phosphopantetheine, which is covalently attached to the hydroxyl group of a Ser residue in ACP. Phosphopantetheine, also found in the coenzyme A molecule, contains the B vitamin pantothenic acid. Its —SH group is the site of entry of malonyl groups during fatty acid synthesis. Coenzyme A, shown here for comparison, serves a similar chemical purpose in general metabolism.
+
+Step 1 Condensation The first reaction in the formation of a fatty acid chain is a formal Claisen condensation (see reaction class in Fig. 13-4) of the activated acetyl and malonyl groups to form acetoacetyl-ACP, an acetoacetyl group bound to ACP through the phosphopantetheine —SH group; simultaneously, a molecule of CO₂ is produced. In this reaction, catalyzed by β-ketoacyl-ACP synthase, the acetyl group is transferred from the Cys —SH group of the enzyme to the malonyl group on the —SH of ACP, becoming the methyl-terminal two-carbon unit of the new acetoacetyl group.
+
+The carbon atom of the $CO_{2}$ formed in this reaction is the same carbon originally introduced into malonyl-CoA from $HCO_{3}^{-}$ in the acetyl-CoA carboxylase reaction (Fig. 21-1). Thus, $CO_{2}$ is only transiently in covalent linkage during fatty acid biosynthesis; it is removed as each two-carbon unit is added.
+
+Why do cells go to the trouble of adding $CO_{2}$ to make a malonyl group from an acetyl group, only to lose the $\mathrm{CO}_{2}$ during the formation of acetoacetate? P3 The use of activated malonyl groups rather than acetyl groups makes the condensation reactions thermodynamically favorable. The methylene carbon (C-2) of the malonyl group, sandwiched between carbonyl and carboxyl carbons, forms a good nucleophile. In the condensation step, decarboxylation of the malonyl group facilitates nucleophilic attack of the methylene carbon on the thioester linking the acetyl group to $\beta$ -ketoacyl-ACP synthase, displacing the enzyme's -SH group. Coupling the condensation to the decarboxylation of the malonyl group renders the overall process highly exergonic. A similar carboxylation-decarboxylation sequence facilitates the formation of phosphoenolpyruvate from pyruvate in gluconeogenesis (see Figs. 14-17 and 14-18).
+
+![](images/2ba7c1ec7e0b30af8c176502e0a4ce47777012b144c468706234d8aed1713b93.jpg)
+
+P2 P3 By using activated malonyl groups in the synthesis of fatty acids and activated acetate in their degradation, the cell makes both processes energetically favorable, although one is effectively the reversal of the other. The extra energy required to make fatty acid synthesis favorable is provided by the ATP used to synthesize malonyl-CoA from acetyl-CoA and $HCO_{3}^{-}$ (Fig. 21-1).
+
+Step 2 Reduction of the Carbonyl Group The acetoacetyl-ACP formed in the condensation step now undergoes reduction of the carbonyl group at C-3 to form D-β-hydroxybutyryl-ACP. This reaction is catalyzed by β-ketoacyl-ACP reductase (KR), and the electron donor is NADPH. Notice that the D-β-hydroxybutyryl group does not have the same stereoisomeric form as the L-β-hydroxyacyl intermediate in fatty acid oxidation (see Fig. 17-8).
+
+Step 3 Dehydration The elements of water are now removed from C-2 and C-3 of D-β-hydroxybutyryl-ACP to yield a double bond in the product, trans-Δ²-butenoyl-ACP. The enzyme that catalyzes this dehydration is β-hydroxyacyl-ACP dehydratase (DH).
+
+Step 4 Reduction of the Double Bond Finally, the double bond of trans- $\Delta^{2}$ -butenoyl-ACP is reduced (saturated) to form butyryl-ACP by the action of enoyl-ACP reductase (ER); again, NADPH is the electron donor.
+
+## The Fatty Acid Synthase Reactions Are Repeated to Form Palmitate
+
+Production of the four-carbon, saturated fatty acyl-ACP marks completion of one pass through the fatty acid synthase complex. In step 5, the butyryl group is transferred from the phosphopantetheine —SH group of ACP to the Cys —SH group of $\beta$ -ketoacyl-ACP synthase, which initially bore the acetyl group (Fig. 21-6). To start the next cycle of four reactions that lengthens the chain by two more carbons (step 6), another malonyl group is linked to the now unoccupied phosphopantetheine
+
+![](images/7448bd5536637c4d789a4957fb5c48b9f6f1848624f074ba6d2bf37f4b74bd07.jpg)
+
+FIGURE 21-6 Sequence of events during synthesis of a fatty acid. (a) The mammalian FAS I complex is shown schematically, with catalytic domains colored as in Figure 21-3. Each domain of the larger polypeptide represents one of the six enzymatic activities of the complex, arranged in a large, tight S shape. The acyl carrier protein (ACP) is not resolved in the crystal structure shown in Figure 21-3, but it is attached to the KR domain. The phosphopantetheine arm of ACP ends in an —SH. (b) The enzyme shown in color is the one that will act in the next step. As in Figure 21-4, the initial acetyl group is shaded yellow; C-1 and C-2 of malonate, light red; and the carbon released as CO₂, green. Steps ① to ⑥ are described in the text.
+
+![](images/f80177951aaf997ab5d116b86225a741e2669c5268a61f8da2989e856d164eec.jpg)
+
+—SH group of ACP (Fig. 21-7). Condensation occurs as the butyryl group, acting like the acetyl group in the first cycle, is linked to two carbons of the malonyl-ACP group with concurrent loss of CO₂. The product of this condensation is a six-carbon acyl group, covalently bound to the phosphopantetheine —SH group. Its β-keto group is reduced in the next three steps of the synthase cycle to yield the saturated acyl group, exactly as in the first round of reactions—in this case forming the six-carbon product.
+
+Seven cycles of condensation and reduction produce the 16-carbon saturated palmitoyl group, still bound to ACP. For reasons not well understood, chain elongation by the synthase complex generally stops at this point, and free palmitate is released from the ACP by a hydrolytic activity (thioesterase; TE) in the multifunctional protein.
+
+![](images/e8f1cb71c538afd271bf7b353f68657504e6f8a709bc69619ce188876bd7dde5.jpg)  
+FIGURE 21-7 Beginning of the second round of the fatty acid synthesis cycle. The butyryl group is on the Cys—SH group. The incoming malonyl group is first attached to the phosphopantetheine—SH group. Then, in the condensation step, the entire butyryl group on the Cys—SH is exchanged for the carboxyl group of the malonyl residue, which is lost as CO₂ (green). This step is analogous to step ① in Figure 21-6. The product, a six-carbon β-ketoacyl group, now contains four carbons derived from malonyl-CoA and two derived from the acetyl-CoA that started the reaction. The β-ketoacyl group then undergoes steps ② through ④ in Figure 21-6.
+
+We can consider the overall reaction for the synthesis of palmitate from acetyl-CoA in two parts. First, the formation of seven malonyl-CoA molecules:
+
+$$
+7 \mathrm{Acetyl-CoA} + 7 \mathrm{CO} _ {2} + 7 \mathrm{ATP} \longrightarrow
+$$
+
+$$
+7 \mathrm{malonyl-CoA} + 7 \mathrm{ADP} + 7 \mathrm{P} _ {\mathrm{i}}\tag{21-1}
+$$
+
+then seven cycles of condensation and reduction:
+
+$$
+\begin{array}{r l} \text { Acetyl - CoA } + 7 & \text { malonyl - CoA } + 1 4 \mathrm{NADPH} + 1 4 \mathrm{H} ^ {+} \longrightarrow \\ & \text { palmitate } + 7 \mathrm{CO} _ {2} + 8 \mathrm{CoA} + 1 4 \mathrm{NADP} ^ {+} + 6 \mathrm{H} _ {2} \mathrm{O} \end{array} \tag {21-2}
+$$
+
+Notice that only six net water molecules are produced, because one is used to hydrolyze the thioester linking the palmitate product to the enzyme. The overall process (the sum of Eqns 21-1 and 21-2) is
+
+$$
+\begin{array}{r l} 8 \mathrm {Acetyl - CoA + 7ATP + 14NADPH + 14H^ {+}} & \longrightarrow \\ \text { palmitate } + 8 \mathrm{CoA} + 7 \mathrm{ADP} + 7 \mathrm{P} _ {\mathrm{i}} + 1 4 \mathrm{NADP} ^ {+} + 6 \mathrm{H} _ {2} \mathrm{O} \end{array}\tag{21-3}
+$$
+
+P3 The biosynthesis of fatty acids such as palmitate thus requires acetyl-CoA and the input of chemical energy in two forms: the group transfer potential of ATP and the reducing power of NADPH. The ATP is required to attach $CO_{2}$ to acetyl-CoA to make malonyl-CoA; the NADPH molecules are required to reduce the $\beta$ -keto group and the double bond.
+
+In nonphotosynthetic eukaryotes there is an additional cost to fatty acid synthesis, because acetyl-CoA is generated in the mitochondria and must be transported to the cytosol. As we will see, this extra step consumes two ATP per molecule of acetyl-CoA transported, increasing the energetic cost of fatty acid synthesis to three ATP per two-carbon unit.
+
+## Fatty Acid Synthesis Is a Cytosolic Process in Most Eukaryotes but Takes Place in the Chloroplasts in Plants
+
+In most eukaryotes, the fatty acid synthase complex (FAS I) is found in the cytosol, as are the biosynthetic enzymes for nucleotides, amino acids, and glucose. This location segregates synthetic processes from degradative reactions, many of which take place in the mitochondrial matrix. P3 There is a corresponding segregation of the electron-carrying cofactors used in anabolism (generally a reductive process) and those used in catabolism (generally oxidative).
+
+Usually, NADPH is the electron carrier for anabolic reactions, and $NAD^{+}$ serves in catabolic reactions. The liver, the largest mammalian internal organ and a key metabolic center responding to large changes during feasting and fasting, provides a useful focus for this discussion. In hepatocytes, the $[NADPH]/[NADP^{+}]$ ratio is very high ( $\sim75$ ) in the cytosol, furnishing a strongly reducing environment for the reductive synthesis of fatty acids and other biomolecules. The cytosolic $[NADH]/[NAD^{+}]$ ratio is much lower ( $\sim8\times10^{-4}$ ), so the $NAD^{+}$ -dependent oxidative catabolism of glucose can take place in the same compartment, and at the same time, as fatty acid synthesis. The $[NADH]/[NAD^{+}]$ ratio in the mitochondrion is much higher than that in the cytosol, because of the flow of electrons to $NAD^{+}$ from the oxidation of fatty acids, amino acids, pyruvate, and acetyl-CoA. This high mitochondrial $[NADH]/[NAD^{+}]$ ratio favors the reduction of oxygen via the respiratory chain.
+
+![](images/c5aa87ddba30c26693adf6ff26ebc2898c17078a95394c63791f1a385928f2f3.jpg)  
+FIGURE 21-8 Production of NADPH. Two routes to NADPH, catalyzed by (a) the pentose phosphate pathway and (b) malic enzyme.
+
+In hepatocytes and adipocytes, cytosolic NADPH is largely generated by the pentose phosphate pathway (Fig. 21-8a; also see Fig. 14-30) and by malic enzyme (Fig. 21-8b). The pyruvate produced by the action of malic enzyme reenters the mitochondrion.
+
+In the photosynthetic cells of plants, fatty acid synthesis occurs not in the cytosol but in the chloroplast stroma (Fig. 21-9). This makes sense, given that NADPH is produced in chloroplasts by the light-dependent reactions of photosynthesis:
+
+$$
+\mathrm{H} _ {2} \mathrm{O} + \mathrm{NADP} ^ {+} \xrightarrow {\text {   light   }} \frac {1}{2} \mathrm{O} _ {2} + \mathrm{NADPH} + \mathrm{H} ^ {+}
+$$
+
+## Acetate Is Shuttled out of Mitochondria as Citrate
+
+In nonphotosynthetic eukaryotes, nearly all the acetyl-CoA used in fatty acid synthesis is formed in mitochondria from pyruvate oxidation and from catabolism of the carbon skeletons of amino acids. Acetyl-CoA arising from the oxidation of fatty acids is not a significant source of acetyl-CoA for fatty acid biosynthesis in animals, because the two pathways are reciprocally regulated, as described below.
+
+The inner mitochondrial membrane is impermeable to acetyl-CoA, so an indirect shuttle transfers acetyl group equivalents across the membrane (Fig. 21-10). Intramitochondrial acetyl-CoA first reacts with oxaloacetate to form citrate, in the citric acid cycle reaction catalyzed by citrate synthase (see Fig. 16-7). Citrate then passes through the inner membrane on the citrate transporter. In the cytosol, citrate cleavage by citrate lyase regenerates acetyl-CoA and oxaloacetate in an ATP-dependent reaction. Oxaloacetate cannot return to the mitochondrial matrix directly, as there is no oxaloacetate transporter. Instead, cytosolic malate dehydrogenase reduces the oxaloacetate to malate, which can return to the mitochondrial matrix on the malate- $\alpha$ -ketoglutarate transporter, in exchange for
+
+![](images/0610c4ab2156a32b0e4eedd4cb27391d47475a56d1b235c58363c5cfb9fc87c8.jpg)  
+FIGURE 21-9 Subcellular localization of lipid metabolism. Yeast and animal cells differ from higher plant cells in the compartmentation of lipid metabolism. Fatty acid synthesis takes place in the compartment in which  
+NADPH is available for reductive synthesis (i.e., where the [NADPH]/[NADP+] ratio is high); this is the cytosol in animals and yeast, and the chloroplast in plants. Processes in red type are addressed in this chapter.
+
+![](images/99312ff9dac6af1ed2ef4a95802927334f5933315935b6094d240b0a06d9f525.jpg)  
+FIGURE 21-10 Shuttle for transfer of acetyl groups from mitochondria to the cytosol. The outer mitochondrial membrane is freely permeable to all these compounds. Pyruvate derived from amino acid catabolism in the mitochondrial matrix, or from glucose by glycolysis in the cytosol, is converted to acetyl-CoA in the matrix. Acetyl groups pass out of the mitochondrion as citrate; in the cytosol they are delivered as acetyl-CoA for fatty  
+acid synthesis. Oxaloacetate is reduced to malate, which can be returned to the mitochondrial matrix. The steps converting malate to oxaloacetate and oxaloacetate plus acetyl-CoA to citrate (indicated by blue arrows) are part of the citric acid cycle. The major fate of cytosolic malate, however, is oxidation by malic enzyme to generate cytosolic NADPH; the pyruvate produced returns to the mitochondrial matrix.
+
+citrate. In the matrix, malate is reoxidized to oxaloacetate to complete the shuttle. However, most of the malate produced in the cytosol is used to generate cytosolic NADPH through the activity of malic enzyme (Fig. 21-8b). The pyruvate produced is transported into the mitochondria by the pyruvate transporter (Fig. 21-10), then converted back into oxaloacetate by pyruvate carboxylase in the matrix. In the resulting cycle, two ATP molecules are consumed (by citrate lyase and pyruvate carboxylase) for every molecule of acetyl-CoA delivered to fatty acid synthesis.
+
+Malate thus has two fates in metabolism. In the mitochondrial matrix, malate is part of the citric acid cycle. In the cytosol, malate degradation becomes a significant source of NADPH. After citrate cleavage to generate acetyl-CoA, conversion of the four remaining carbons to pyruvate and $CO_{2}$ by malic enzyme generates about half the NADPH required for fatty acid synthesis. The pentose phosphate pathway contributes the rest of the needed NADPH.
+
+## Fatty Acid Biosynthesis Is Tightly Regulated
+
+P1 When a cell or an organism has more than enough metabolic fuel to meet its energy needs, the excess is generally converted to fatty acids and stored as lipids such as triacylglycerols. P4 The reaction catalyzed by acetyl-CoA carboxylase is the rate-limiting step in the biosynthesis of fatty acids, and this enzyme is an important site of regulation. In vertebrates, palmitoyl-CoA, the principal product of fatty acid synthesis, is a feedback inhibitor of the enzyme; citrate is an allosteric activator (Fig. 21-11a), increasing $V_{\text{max}}$ . Citrate plays a central role in diverting cellular metabolism from the consumption (oxidation) of metabolic fuel to the storage of fuel as fatty acids. When the concentrations of mitochondrial acetyl-CoA and ATP increase, citrate is transported out of mitochondria; it then becomes both the precursor of cytosolic acetyl-CoA and an allosteric signal for the activation of acetyl-CoA carboxylase. At the same time, citrate inhibits the activity of phosphofructokinase-1 (see Fig. 14-23), reducing the flow of carbon through glycolysis.
+
+![](images/4d57bb9a2e25c85255ae20d0260aabecf3ea264306abaaf44b2dae35686a9334.jpg)  
+FIGURE 21-11 Regulation of fatty acid synthesis. (a) In the cells of vertebrates, both allosteric regulation and hormone-dependent covalent modification influence the flow of precursors into malonyl-CoA. In plants, acetyl-CoA carboxylase is activated by the changes in $[Mg^{2+}]$ and pH that accompany illumination (not shown here). (b) Filaments of acetyl-CoA carboxylase from chicken hepatocytes (the active, dephosphorylated form), as seen with the electron microscope. [(b) Courtesy James M. Ntambi, PhD, Professor of Biochemistry, Steenbock Professor of Nutritional Sciences, University of Wisconsin–Madison.]
+
+P4 Acetyl-CoA carboxylase is also regulated by covalent modification. Phosphorylation, triggered by the hormones glucagon and epinephrine or by high [AMP], inactivates the enzyme and reduces its sensitivity to activation by citrate, thereby slowing fatty acid synthesis. Phosphorylation occurs on at least three Ser residues and is catalyzed primarily by the AMP-activated protein kinase (AMPK). In its active (dephosphorylated) form, acetyl-CoA carboxylase polymerizes into long filaments (Fig. 21-11b); phosphorylation is accompanied by dissociation into monomeric subunits and loss of activity.
+
+The acetyl-CoA carboxylase of plants and bacteria is not regulated by citrate or by a phosphorylation-dephosphorylation cycle. Instead, P4 the plant enzyme is activated by an increase in stromal pH and $[Mg^{2+}]$ , which occurs on illumination of the plant (see Fig. 20-35). Bacteria do not use triacylglycerols as energy stores. In Escherichia coli, the primary role of fatty acid synthesis is to provide precursors for membrane lipids; the regulation of this process is complex, employing guanine nucleotides (such as ppGpp; see Fig. 8-42) that coordinate cell growth with membrane formation.
+
+P4 In addition to the moment-by-moment regulation of enzymatic activity, these pathways are regulated at the level of gene expression. For example, when animals ingest an excess of certain polyunsaturated fatty acids, the expression of genes encoding many lipogenic enzymes in the liver is suppressed. This gene regulation is mediated by a family of nuclear receptor proteins called PPARs, which we encountered in Section 17.2.
+
+P4 If fatty acid synthesis and $\beta$ oxidation were to proceed simultaneously, the two processes would constitute a futile cycle, wasting energy. We noted earlier (see Fig. 17-13) that $\beta$ oxidation is blocked by malonyl-CoA, which inhibits carnitine acyltransferase I. Thus, during fatty acid synthesis, production of the first intermediate, malonyl-CoA, shuts down $\beta$ oxidation at the level of a transport system in the inner mitochondrial membrane. This control mechanism illustrates another advantage of segregating synthetic and degradative pathways in different cellular compartments.
+
+## Long-Chain Saturated Fatty Acids Are Synthesized from Palmitate
+
+Palmitate, the principal product of the fatty acid synthase system in animal cells, is the precursor of other long-chain fatty acids (Fig. 21-12). It may be lengthened to form stearate (18:0) or even longer saturated fatty acids by further additions of acetyl groups, through the action of fatty acid elongation systems present in the smooth endoplasmic reticulum (smooth ER) and in mitochondria. The more active elongation system of the ER extends the 16-carbon chain of palmitoyl-CoA by two carbons, forming stearoyl-CoA. Although different enzyme systems are used, and coenzyme A rather than ACP is the acyl carrier in the reaction, the mechanism of elongation in the ER is otherwise identical to that in palmitate synthesis: donation of two carbons by malonyl-CoA, followed by reduction, dehydration, and reduction to the saturated 18-carbon product, stearoyl-CoA.
+
+Two key products of elongation pathways are linoleate, an omega-6 fatty acid (see Chapter 10 for the alternative nomenclature), and $\alpha$ -linolenate, an omega-3 fatty acid. These are precursors for two extensive families of derivative unsaturated fatty acids, the omega-6 and omega-3 families. Humans cannot synthesize linoleate and $\alpha$ -linolenate and must obtain them in the diet. The ratio of omega-6 to omega-3 fatty acids in the diet, if too high, can lead to cardiovascular disease. The importance of this ratio may reflect the multitude of signaling molecules in the omega-6 and omega-3 families (Fig. 21-12), with their equally complex physiological effects. Several of these derivative unsaturated fatty acids are considered below.
+
+![](images/8fa682fde1a3721c61d6f82939316dd0be9464823e7f233050578f92f1f3c38c.jpg)
+
+![](images/7016c7f3c47fa4ecc04f3f02547d7b0fe93fb767d924ea54b12a2cf912458da5.jpg)  
+FIGURE 21-12 Routes of synthesis of unsaturated fatty acids and their derivatives. Palmitate is the precursor of stearate and longer-chain saturated fatty acids, as well as the monounsaturated acids palmitoleate and oleate. Mammals cannot convert oleate to linoleate or $\alpha$ -linolenate (shaded), which are therefore required in the diet as essential fatty acids. Conversion of linoleate to other polyunsaturated fatty acids and eicosanoids is outlined. Unsaturated fatty acids are symbolized by indicating the number of carbons and the number and position of double bonds, as in Table 10-1. Linoleate and $\alpha$ -linolenate are important omega-6 and omega-3 fatty acids, respectively; they are also precursors for a wide range of unsaturated fatty acids that act as signaling molecules. Two-letter abbreviations specify the eicosanoid prostaglandins (PG), thromboxanes (TX), and leukotrienes (LT). Particular classes of unsaturated fatty acids are further delineated by the number of double bonds, which defines subclasses referred to as series. For example, series 2 TX are thromboxanes with two double bonds in the hydrocarbon chain.
+
+## Desaturation of Fatty Acids Requires a Mixed-Function Oxidase
+
+Palmitate and stearate serve as precursors of the two most common monounsaturated fatty acids of animal tissues: palmitoleate, 16:1( $\Delta^{9}$ ), and oleate, 18:1( $\Delta^{9}$ ); both of these fatty acids have a single cis double bond between C-9 and C-10 (see Table 10-1). The double bond is introduced into the fatty acid chain by an oxidative reaction catalyzed by fatty acyl-CoA desaturase (Fig. 21-13), a mixed-function oxidase (Box 21-1). Two different substrates, the fatty acid and NADPH, simultaneously undergo two-electron oxidations. The path of electron flow includes a cytochrome (cytochrome $b_{5}$ ) and a flavoprotein (cytochrome $b_{5}$ reductase), both of which, like fatty acyl-CoA desaturase, are in the smooth ER. In plants, oleate is produced by a stearoyl-ACP desaturase (SCD) that uses reduced ferredoxin as the electron donor in the chloroplast stroma.
+
+![](images/8f81be840c13d9aa1f49067651a8487752fc4f9b72ceeb74ab586c0700cf6d91.jpg)
+
+The SCD of animals (as studied in mice) has an important role in the development of obesity and the insulin resistance that often accompanies obesity and precedes development of type 2 diabetes mellitus. Mice have four isozymes, SCD1 through SCD4, of which SCD1 is the best understood. Its synthesis is induced by dietary saturated fatty acids, and also by the action of SREBP and LXR, two protein regulators of lipid metabolism that activate transcription of lipid-synthesizing enzymes (described in Section 21.4). Mice with mutant forms of SCD1 are resistant to diet-induced obesity and do not develop diabetes under conditions that cause both obesity and diabetes in mice with normal SCD1.
+
+![](images/64534a87189cdbc3bd6d2430a562526075e254e94b0bbe0360f8bd4fa14d628d.jpg)
+
+Mammalian hepatocytes can readily introduce double bonds at the $\Delta^{9}$ position of fatty acids but cannot introduce additional double bonds between C-10 and the methyl-terminal end. Thus, as noted above, mammals cannot synthesize the omega-6 family precursor linoleate, 18:2( $\Delta^{9,12}$ ), or the omega-3 family precursor $\alpha$ -linolenate, 18:3( $\Delta^{9,12,15}$ ). Plants, however, can synthesize both; the desaturases that introduce double bonds at the $\Delta^{12}$ and $\Delta^{15}$ positions are located in the ER and in chloroplasts. The ER enzymes act not on free fatty acids but on a phospholipid, phosphatidylcholine, that contains at least one oleate linked to the glycerol (Fig. 21-14). Both plants and bacteria must synthesize polyunsaturated fatty acids to ensure membrane fluidity at reduced temperatures.
+
+Because they are necessary precursors for the synthesis of other products, linoleate and $\alpha$ -linolenate are essential fatty acids for mammals; they must be obtained from dietary plant material. Once ingested, linoleate may be converted to certain other polyunsaturated acids, particularly $\gamma$ -linolenate, eicosatrienoate, and arachidonate (eicosatetraenoate), all of which can be made only from linoleate (Fig. 21-12). Similarly, $\alpha$ -linolenate is converted to two important derivatives, eicosapentaenoic acid (EPA) and docosahexaenoic acid (DHA). Arachidonate, 20:4( $\Delta^{5,8,11,14}$ ), EPA, 20:5( $\Delta^{5,8,11,14,17}$ ), and DHA, 22:6( $\Delta^{4,7,10,13,16,19}$ ), are essential precursors of distinct classes of eicosanoids, lipids with important regulatory functions. The 20- and 22-carbon fatty acids are synthesized from linoleate and $\alpha$ -linolenate by fatty acid elongation reactions analogous to those described on page 753.
+
+![](images/87df05aa962cad6bfebfce064f005640cc01b01b5eed6c0f45d390843d733c52.jpg)  
+FIGURE 21-13 Electron transfer in the desaturation of fatty acids in vertebrates. Blue arrows show the path of electrons as two substrates — a fatty acyl-CoA and NADPH — undergo oxidation by
+
+![](images/b7fabce02a32357ef4dac8fe9f05d8084ebbfd8a134ce511fb43420896d78a99.jpg)  
+FIGURE 21-14 Action of plant desaturases. Desaturases in plants oxidize phosphatidylcholine-bound oleate to polyunsaturated fatty acids. Some of the products are released from the phosphatidylcholine by hydrolysis.  
+molecular oxygen. These reactions take place on the lumenal face of the smooth ER. A similar pathway, but with different electron carriers, occurs in plants.
+
+## Eicosanoids Are Formed from 20- and 22-Carbon Polyunsaturated Fatty Acids
+
+P5 Eicosanoids are a family of very potent biological signaling molecules that act as short-range messengers, affecting tissues near the cells that produce them.
+
+In response to hormonal or other stimuli, phospholipase A₂, present in most types of mammalian cells, attacks membrane phospholipids, releasing arachidonate from the middle carbon of glycerol. Enzymes of the smooth ER then convert arachidonate to prostaglandins, beginning with the formation of prostaglandin H₂ (PGH₂), the immediate precursor of many other prostaglandins and thromboxanes (Fig. 21-15a). The two reactions that lead to PGH₂ are catalyzed by a bifunctional enzyme, cyclooxygenase (COX), also called prostaglandin H₂ synthase. In the first step, the cyclooxygenase activity introduces molecular oxygen to convert arachidonate to PGG₂. The second step, catalyzed by the peroxidase activity of COX, converts PGG₂ to PGH₂.
+
+KEY CONVENTION Prostaglandins with different functional groups on the ring are given different letter designations: A, B, C, D, E, F, G, H, and R. The subscript number following the letter, as in $PGH_{2}$ and $PGG_{2}$ , indicates the number of double bonds. Prostaglandins with two double bonds, all of which are derived from arachidonate, are referred to as series 2 prostaglandins; those with three double bonds, derived from EPA, as series 3 (Fig. 21-12). Similar naming patterns are used for other classes of eicosanoids described below.
+
+Series 2 prostaglandins have important roles in the immediate response to stress or injury, including inflammation, pain, swelling, and dilation of blood vessels. Series 3 prostaglandins, in general, act more slowly and usually moderate the responses associated with series 2 prostaglandins.
+
+Mammals have two isozymes of prostaglandin $H_{2}$ synthase, COX-1 and COX-2. These have different functions but closely similar amino acid sequences (60% to 65% sequence identity) and similar reaction mechanisms
+
+![](images/e2f7398e76d882fe71fba5d8a77fc66ec0f7cdb25f93bb13032d932ddc8aff25.jpg)
+
+## Oxidases, Oxygenases, Cytochrome P-450 Enzymes, and Drug Overdoses
+
+In this chapter we encounter several enzymes that carry out oxidation-reduction reactions in which molecular oxygen is a participant. The stearoyl-CoA desaturase (SCD) that introduces a double bond into a fatty acyl chain (see Fig. 21-13) is one such enzyme.
+
+The nomenclature for enzymes that catalyze reactions of this general type can be confusing. Oxidase is the general name for enzymes that catalyze oxidations in which molecular oxygen is the electron acceptor but oxygen atoms do not appear in the oxidized product. The enzyme that creates a double bond in fatty acyl-CoA during the oxidation of fatty acids in peroxisomes (see Fig. 17-14) is an oxidase of this type; a second example is the cytochrome oxidase of the mitochondrial respiratory chain (see Fig. 19-13). In the first case, the transfer of two electrons to $\mathrm{H}_2\mathrm{O}$ produces hydrogen peroxide, $\mathrm{H}_2\mathrm{O}_2$ ; in the second, two electrons reduce $\frac{1}{2}\mathrm{O}_2$ to $\mathrm{H}_2\mathrm{O}$ . Many, but not all, oxidases are flavoproteins. Mixed-function oxidases oxidize two different substrates simultaneously; again, the molecular oxygen atoms do not appear in the oxidized products. Mixed-function oxidases act in fatty acid desaturation (fatty acyl-CoA desaturase; see Fig. 21-13) and in the last step of plasmalogen synthesis (see Fig. 21-30).
+
+Oxygenases catalyze oxidative reactions in which oxygen atoms are directly incorporated into the product molecule, forming a new hydroxyl or carboxyl group, for example. Dioxygenases catalyze reactions in which both oxygen atoms of $O_{2}$ are incorporated into the organic product. An example of a dioxygenase is tryptophan 2,3-dioxygenase, which catalyzes the opening of the five-membered ring of tryptophan in the catabolism of this amino acid. When the reaction takes place in the presence of ${}^{18}O_{2}$ , the isotopic oxygen atoms are found in the two carbonyl groups of the product (shown in red):
+
+![](images/d4d2998efa5e0c3a671381c932b930a363cef2108c9519d528afb12e988cf008.jpg)
+
+![](images/7f520aa82b276124a4f2e97f2623d985831ccf7a15e70d57295b9b369e6f38bb.jpg)
+
+Monooxygenases, more common and more complex in their action, catalyze reactions in which only one of the two oxygen atoms of $O_{2}$ is incorporated into the organic product, the other being reduced to $H_{2}O$ ; an example is squalene monooxygenase (see Fig. 21-37). Monooxygenases require two substrates to serve as reductants of the two oxygen atoms of $O_{2}$ . The main substrate accepts one of the two oxygen atoms, and a cosubstrate furnishes hydrogen atoms to reduce the other oxygen atom to $H_{2}O$ . The general reaction equation for monooxygenases is
+
+$$
+\mathrm{AH} + \mathrm{BH} _ {2} + \mathrm{O} - \mathrm{O} \longrightarrow \mathrm{A} - \mathrm{OH} + \mathrm{B} + \mathrm{H} _ {2} \mathrm{O}
+$$
+
+where AH is the main substrate and $BH_{2}$ is the cosubstrate. Because most monooxygenases catalyze reactions in which the main substrate becomes hydroxylated, they are also called hydroxylases. They are also sometimes called mixed-function oxygenases to indicate that they oxidize two different substrates simultaneously.
+
+Monooxygenases are divided into several classes, depending on the nature of the cosubstrate. Some use reduced flavin nucleotides (FMNH $_2$ or FADH $_2$ ), others use NADH or NADPH, and still others use $\alpha$ -ketoglutarate as cosubstrate. The enzyme that hydroxylates the phenyl ring of phenylalanine to form tyrosine is a monooxygenase that uses tetrahydrobiopterin as cosubstrate (see Fig. 18-23). (This is the enzyme that is defective in the human genetic disease phenylketonuria.)
+
+The most numerous and most complex monooxygenation reactions are those employing a type of heme protein called cytochrome P-450. Like mitochondrial cytochrome oxidase, enzymes containing a cytochrome P-450 domain can react with $O_{2}$ and bind carbon monoxide, but they can be differentiated from cytochrome oxidase because the carbon monoxide complex of their reduced form absorbs light strongly at 450 nm — thus the name P-450.
+
+Cytochrome P-450 enzymes catalyze hydroxylation reactions in which an organic substrate, RH, is hydroxylated to R—OH, incorporating one oxygen atom of $O_{2}$ ; the other oxygen atom is reduced to $H_{2}O$ by reducing equivalents that are furnished by NADH or NADPH but are usually passed to cytochrome P-450 by an iron-sulfur protein. Figure 1 shows a simplified outline of the action of cytochrome P-450.
+
+One large family of P-450-containing proteins consists of two general types: those highly specific for a single substrate (like typical enzymes) and those with more promiscuous binding sites that accept a variety of substrates, generally similar in being hydrophobic. In the adrenal cortex, for example, a specific cytochrome P-450 participates in the hydroxylation of steroids to yield the adrenocortical hormones (see Fig. 21-49). There are dozens of P-450 enzymes that act on specific substrates in the biosynthetic pathways to steroid hormones and
+
+![](images/feda23a1cea1a1a633d8a747880e75d94b3021b10d1412cf41cf35db1de62ec7.jpg)
+
+eicosanoids (Fig. 2). Cytochrome P-450 enzymes with broader specificity are important in the hydroxylation of many different drugs, such as barbiturates and other xenobiotics (substances foreign to the organism), particularly if they are hydrophobic and relatively insoluble. The environmental carcinogen benzo[a] pyrene, found in cigarette smoke, undergoes cytochrome P-450-dependent hydroxylation during detoxification. Hydroxylation of xenobiotics, sometimes combined with the attachment of a polar compound such as glucuronic acid to the hydroxyl group, makes them more soluble in water and allows their excretion in urine. Hydroxylation (and glucuronidation) inactivates most drugs, and the rate at which it occurs can determine how long a given dose of a medication remains in the blood at therapeutic levels.
+
+Humans differ in their levels of drug-metabolizing enzymes, both because of their genetics and because past exposure to substrates can induce the synthesis of higher levels of P-450 enzymes. Ethanol and barbiturate drugs share a P-450 enzyme. Long-term heavy drinking induces synthesis of this enzyme. Then, because the barbiturate is inactivated and cleared faster, larger doses are required to get the same therapeutic effect. If an individual takes this larger-than-usual dose of barbiturate and then also drinks alcohol, competition between the alcohol and the barbiturate for the limited amount of enzyme means that both alcohol and barbiturate are cleared more slowly. The resulting high levels of these two central nervous system depressants can be lethal. Similar complications arise when an individual takes two drugs that happen to be inactivated by the same P-450 enzyme; each drug increases the effective dose of the other by slowing its inactivation. It is therefore essential for physicians and pharmacists to know about all of a patient's prescribed and over-the-counter drugs and supplements, as well as a history of heavy drinking, or smoking, or exposure to environmental toxins.
+
+![](images/ea52ff8e9766b23cad4ab4caaba566c5d67db35eccaa848b738924c35cd98f53.jpg)
+
+![](images/b4e50a81ce19b44e4254cbb3ff32b753d76440c90f8e001e851f0fd513373328.jpg)
+
+![](images/84595c091b5bba33d32cb854cc1dde12175b50108f4bab241b6104049f0977ee.jpg)  
+FIGURE 21-15 The "cyclic" pathway from arachidonate to prostaglandins and thromboxanes. (a) After arachidonate is released from phospholipids by the action of phospholipase $\mathsf{A}_2$ , the cyclooxygenase and peroxidase activities of COX (also called prostaglandin $\mathsf{H}_2$ synthase) catalyze the
+
+at both of their catalytic centers. COX-1 is responsible for synthesis of the prostaglandins that regulate the secretion of gastric mucin, and COX-2 is responsible for synthesis of the prostaglandins that mediate inflammation, pain, and fever.
+
+Pain can be relieved by inhibiting COX-2. The first drug widely marketed for this purpose was aspirin (acetylsalicylate; Fig. 21-15b). The name "aspirin" (from a for acetyl and spir for Spirsäure, the German word for the salicylates prepared from the plant Spiraea ulmaria) appeared in 1899 when the drug was introduced by the Bayer company. Aspirin irreversibly inactivates the cyclooxygenase activity of both COX isozymes, by acetylating a Ser residue and blocking each enzyme's active site. The synthesis of prostaglandins and thromboxanes is thereby inhibited. Additional widely used nonsteroidal anti-inflammatory drugs (NSAIDs; Fig. 21-15b), ibuprofen and naproxen, inhibit the same pair of enzymes. However, the inhibition of COX-1 can result in undesired side effects, including stomach irritation and more serious conditions. In the 1990s, NSAID compounds that had a greater specificity for COX-2 were developed as advanced therapies for severe pain. Three of these drugs were approved for use worldwide: rofecoxib (Vioxx), valdecoxib (Bextra), and celecoxib (Celebrex). Though initially considered a success, Vioxx and Bextra were withdrawn as field reports and clinical studies connected the drugs with an increased risk of heart attack and stroke. Celebrex is still on the market but is being used with increased caution. The detailed reasons for the problems with these drugs are still not clear but serve as a cautionary note. We are increasingly aware of the complexity of the web of these signaling interactions, and predicting the consequences of targeting specific components with pharmaceutical agents remains an imperfect process.
+
+![](images/a982086543861db63432ec080d266194aecf39e46efbdb9e8cab2f3fad9d4113.jpg)  
+production of PGH $_2$ , the precursor of other prostaglandins and of thromboxanes. (b) Aspirin inhibits the first reaction by acetylating an essential Ser residue on the enzyme. Ibuprofen and naproxen inhibit the same step, probably by mimicking the structure of the substrate or an intermediate in the reaction.
+
+Thromboxane synthase, present in blood platelets (thrombocytes), converts PGH $_{2}$ to thromboxane A $_{2}$ , from which other series 2 thromboxanes are derived (Fig. 21-15a). The series 2 thromboxanes induce constriction of blood vessels and platelet aggregation, early steps in blood clotting. Low doses of aspirin, taken regularly, reduce the probability of heart attacks and strokes by reducing thromboxane production.
+
+![](images/4c3fff687aa751c2ba084565f65f9d3454e294c69997af622e50b7edf307f25f.jpg)  
+FIGURE 21-16 The "linear" pathway from arachidonate to leukotrienes.
+
+Thromboxanes, like prostaglandins, contain a ring of five or six atoms; the pathway from arachidonate to the series 2 prostaglandins and thromboxanes is sometimes called the "cyclic" pathway, to distinguish it from the "linear" pathway that leads from arachidonate to the leukotrienes, which are linear compounds (Fig. 21-16). Leukotriene synthesis begins with the action of several lipoxygenases that catalyze the incorporation of molecular oxygen into arachidonate. These enzymes, found in leukocytes and in heart, brain, lung, and spleen, are mixed-function oxidases of the cytochrome P-450 family (see Box 21-1). The various leukotrienes differ in the position of the peroxide group introduced by the lipoxygenases. The linear pathway from arachidonate, unlike the cyclic pathway, is not inhibited by aspirin or other NSAIDs.
+
+![](images/6fd37cf2babb93e1aa964d602ae6e51200817bdcfc05409269002b503d7c7273.jpg)
+
+Pathogenic organisms, as well as irritants such as air pollution and tobacco smoke, trigger an inflammatory response in the affected tissue, which consists of two phases: initiation and resolution. Eicosanoids of the omega-6 family are critical to initiation—playing key roles in recruiting leukocytes, making blood vessels more permeable, and stimulating chemotaxis and migration of immune system cells. As the source of tissue damage is brought under control, the inflammation must be resolved and the tissue brought back to its normal state. Resolution of inflammation is called catabasis, and it is promoted by several classes of signaling molecules; prominent among these are several leukotrienes and prostaglandins. Many eicosanoids of the omega-3 family (including series 3 prostaglandins and thromboxanes) are anti-inflammatory, although the classification is not absolute; individual eicosanoids can be inflammatory in one tissue and anti-inflammatory in another.
+
+Catabasis is also promoted by a set of eicosanoids termed specialized pro-resolving mediators (SPMs). The first family of SPMs to be discovered was the lipoxins, followed more recently by resolvins, protectins, and maresins. All SPMs are derived from essential fatty acids (Fig. 21-12). They affect different target cells and tissues in different ways. The sum of their action is to promote removal of debris, microbes, and dead cells, to restore blood vessel integrity, and to regenerate tissue. Particular SPMs also reduce pain and fever, and play roles in resolving the tissue inflammation leading to diabetes, obesity, and asthma. Further research on SPMs thus has potential for the development of new pharmaceutical targets.
+
+Plants also derive important signaling molecules from fatty acids. As in animals, a key step in the initiation of signaling is activation of a specific phospholipase. In plants, the fatty acid substrate released by phospholipase action is $\alpha$ -linolenate. A lipoxygenase then catalyzes the first step in a pathway that converts $\alpha$ -linolenate to jasmonate, a substance known to have signaling roles in defense against insects, resistance to fungal pathogens, and maturation of pollen. Jasmonate also affects seed germination, root growth, and fruit and seed development.
+
+## SUMMARY 21.1 Biosynthesis of Fatty Acids and Eicosanoids
+
+■ Malonyl-CoA, a key precursor of fatty acids, is synthesized by the action of acetyl-CoA carboxylase.
+
+■ Beginning with malonyl-CoA and acetyl-CoA, fatty acids are synthesized in a repeating cycle of four steps.
+
+Long-chain saturated fatty acids are synthesized from acetyl-CoA by a cytosolic system of six enzymatic activities plus acyl carrier protein (ACP). There are two types of fatty acid synthase. FAS I, found in vertebrates and fungi, consists of multifunctional polypeptides. FAS II is a dissociated system found in bacteria and plants. Both contain two types of —SH groups (one furnished by the phosphopantetheine of ACP, the other by a Cys residue of $\beta$ -ketoacyl-ACP synthase) that function as carriers of the fatty acyl intermediates.
+
+\- Malonyl-ACP, formed from acetyl-CoA (shuttled out of mitochondria) and $\mathrm{CO}_{2}$ , condenses with an acetyl bound to the Cys —SH to yield acetoacetyl-ACP, with release of $\mathrm{CO}_{2}$ . This is followed by reduction to the $\mathfrak{p}-\beta$ -hydroxy derivative, dehydration to the trans- $\Delta^{2}$ -unsaturated acyl-ACP, and reduction to butyryl-ACP. NADPH is the electron donor for both reductions. Fatty acid synthesis is regulated at the level of malonyl-CoA formation.
+
+![](images/0fce7a260fe8807631aa49bcd364c776ceed6c961bbeff4128fd13438e9ae49b.jpg)
+
+Six more molecules of malonyl-ACP react successively at the carboxyl end of the growing fatty acid chain to form palmitoyl-ACP—the end product of the fatty acid synthase reaction. Free palmitate is released by hydrolysis.
+
+■ Fatty acid synthesis occurs in the cytosol of animal cells, and in chloroplasts in plants.
+
+■ Acetate is exported from the mitochondria as citrate.
+
+■ Fatty acid synthesis is tightly regulated, principally by regulation of acetyl-CoA carboxylase.
+
+■ Palmitate may be elongated to the 18-carbon stearate.
+
+■ Palmitate and stearate can be desaturated to yield palmitoleate and oleate, respectively, by the action of mixed-function oxidases.
+
+Mammals cannot make linoleate and must obtain it from plant sources; they convert exogenous linoleate to arachidonate, the parent compound of eicosanoids (prostaglandins, thromboxanes, leukotrienes, and specialized pro-resolving mediators), a family of very potent signaling molecules. The synthesis of prostaglandins and thromboxanes is inhibited by NSAIDs that act on the cyclooxygenase activity of prostaglandin $\mathrm{H}_{2}$ synthase.
+
+## 21.2 Biosynthesis of Triacylglycerols
+
+P1 Most of the fatty acids synthesized or ingested by an organism have one of two fates, depending on the organism's needs: incorporation into triacylglycerols for the storage of metabolic energy or incorporation into the phospholipid components of membranes. During rapid growth, synthesis of new membranes requires the production of membrane phospholipids; when an organism has a plentiful food supply but is not actively growing, it shunts most of its fatty acids into storage fats. Both pathways begin at the same point: the formation of fatty acyl esters of glycerol. In this section we examine the route to triacylglycerols and its regulation, and the production of glycerol 3-phosphate in the process of glyceroneogenesis.
+
+## Triacylglycerols and Glycerophospholipids Are Synthesized from the Same Precursors
+
+Animals can synthesize and store large quantities of triacylglycerols, to be used later as fuel (see Box 17-1). Humans can store only a few hundred grams of glycogen in liver and muscle, barely enough to supply the body's energy needs for 12 hours. However, a 70 kg human stores about 15 kg of triacylglycerol in its tissues, enough to support basal energy needs for as long as 12 weeks (see Table 23-5). Triacylglycerols have the highest energy content of all stored nutrients—more than 38 kJ/g. Whenever carbohydrate is ingested in excess of the organism's capacity to store glycogen, the excess is converted to triacylglycerols and stored in adipose tissue. Plants also manufacture triacylglycerols as an energy-rich fuel, mainly stored in fruits, nuts, and seeds.
+
+![](images/d76967ed5a03fc4d48e2a755f1817e8eef9765e6faf3a2608829f1b2578f0f10.jpg)
+
+In animal tissues, triacylglycerols and glycerophospholipids such as phosphatidylethanolamine share two precursors, fatty acyl-CoA and L-glycerol 3-phosphate, and several biosynthetic steps. The vast majority of the glycerol 3-phosphate is derived from the glycolytic intermediate dihydroxyacetone phosphate (DHAP) by the action of the cytosolic NAD-linked glycerol 3-phosphate dehydrogenase; in liver and kidney, a small amount of glycerol 3-phosphate is also formed from glycerol by the action of glycerol kinase (Fig. 21-17). The other precursors of triacylglycerols are fatty acyl-CoAs, formed from fatty acids by acyl-CoA synthetases, the same enzymes responsible for the activation of fatty acids for $\beta$ oxidation (see Fig. 17-5).
+
+The first stage in the biosynthesis of triacylglycerols is acylation of the two free hydroxyl groups of L-glycerol 3-phosphate by two molecules of fatty acyl-CoA to yield diacylglycerol 3-phosphate, more commonly called phosphatidic acid, or phosphatidate (Fig. 21-17). Phosphatidic acid is present in only trace amounts in cells but is a central intermediate in lipid biosynthesis; it can be converted either to a triacylglycerol or to a glycerophospholipid. In the pathway to triacylglycerols, phosphatidic acid is hydrolyzed by phosphatidic acid phosphatase (also called lipin) to form a 1,2-diacylglycerol (Fig. 21-18). Diacylglycerols are then converted to triacylglycerols by transesterification with a third fatty acyl-CoA.
+
+## Triacylglycerol Biosynthesis in Animals Is Regulated by Hormones
+
+![](images/155652b2a0978bb205c1676af1e88917af977cecc7662045812470832f2178c4.jpg)
+
+In humans, the amount of body fat stays relatively constant over long periods, although there may be minor short-term changes as caloric intake fluctuates. Biosynthesis and degradation of triacylglycerols are regulated to meet the metabolic requirements of the moment. The rate of triacylglycerol biosynthesis is profoundly altered by the action of several hormones. Insulin, for example, promotes the conversion of carbohydrate to triacylglycerols (Fig. 21-19). People with severe diabetes mellitus, due to failure of insulin secretion or action, not only are unable to use glucose properly but also fail to synthesize fatty acids from carbohydrates or amino acids. If the diabetes is untreated, these individuals have increased rates of fat oxidation and ketone body formation (Chapter 17) and therefore lose weight.
+
+Approximately 75% of all fatty acids released by triacylglycerol breakdown (lipolysis) are reesterified to form triacylglycerols rather than used for fuel. This ratio persists even under starvation conditions, when energy metabolism is shunted from the use of carbohydrate to the oxidation of fatty acids. Some of this fatty acid recycling takes place in adipose tissue, with the reesterification occurring before release into the bloodstream; some takes place via a systemic cycle in which free fatty acids are transported to the liver, recycled to triacylglycerol, exported again into the blood (transport of lipids in the blood is discussed in Section 21.4), and taken up again by adipose tissue, after release from triacylglycerol by extracellular lipoprotein lipase (Fig. 21-20; see also Fig. 17-1). Flux through this triacylglycerol cycle between adipose tissue and liver may be low when other fuels are available and the release of fatty acids from adipose tissue is limited, but, as noted above, the proportion of released fatty acids that are reesterified remains roughly constant at 75% under all metabolic conditions. The level of free fatty acids in the blood thus reflects both the rate of release of fatty acids and the balance between the synthesis and breakdown of triacylglycerols in adipose tissue and liver.
+
+![](images/397b31404e17330c43ad2114fc6c4b25d7d6dcf9e76e741087e0bc160301867a.jpg)
+
+![](images/a93b46a5c29c659b90a523225c6c02ee82cb920cc641df28d3caf847b1ae428a.jpg)  
+FIGURE 21-17 Biosynthesis of phosphatidic acid. A fatty acyl group is activated by formation of the fatty acyl-CoA, then transferred to ester linkage with L-glycerol 3-phosphate, formed in either of the two ways shown. Phosphatidic acid is shown here with the correct stereochemistry (L) at C-2 of the glycerol molecule. (The intermediate product with only one esterified fatty acyl group is lysophosphatidic acid.) To conserve space in subsequent figures (and in Fig. 21-14), both fatty acyl groups of glycerophospholipids, and all three acyl groups of triacylglycerols, are shown projecting to the right.
+
+![](images/4947146ed8aabd1e191af9fa0683b269537f93995ac7b7907e8c64d739960617.jpg)  
+FIGURE 21-18 Phosphatidic acid in lipid biosynthesis. Phosphatidic acid is the precursor of both triacylglycerols and glycerophospholipids. The mechanisms for head-group attachment in phospholipid synthesis are described later in this section.
+
+![](images/220ace106d5c7165d908cf152ed4df1c8251cd965bb583329c33c6125da42b9d.jpg)  
+FIGURE 21-19 Regulation of triacylglycerol synthesis by insulin. Insulin stimulates conversion of dietary carbohydrates and proteins to fat. Individuals with diabetes mellitus either lack insulin or are insensitive to it. This results in diminished fatty acid synthesis, and the acetyl-CoA arising from catabolism of carbohydrates and proteins is shunted instead to ketone body production. People in severe ketosis smell of acetone, so the condition is sometimes mistaken for drunkenness.
+
+When the mobilization of fatty acids is required to meet energy needs, release from adipose tissue is stimulated by the hormones glucagon and epinephrine (see Figs. 17-2, 17-13). Simultaneously, these hormonal signals decrease the rate of glycolysis and increase the rate of gluconeogenesis in the liver (providing glucose for the brain, as further elaborated in Chapter 23). The released fatty acid is taken up by several tissues, including muscle, where it is oxidized to provide energy. Much of the fatty acid taken up by liver is not oxidized but is recycled to triacylglycerol and returned to adipose tissue.
+
+The function of the apparently futile triacylglycerol cycle is not well understood, but as we learn more about how the cycle is sustained via metabolism in two separate organs and is coordinately regulated, some possibilities emerge. For example, the excess capacity in the triacylglycerol cycle—the fatty acid that is eventually reconverted to triacylglycerol rather than oxidized as fuel — could represent an energy reserve in the bloodstream during fasting, one that could be more rapidly mobilized in a "fight or flight" emergency than stored triacylglycerol could be.
+
+![](images/020df3930c0e1f046bb1130ff11c38caaaee6ef8dfd88967228c22eeb7ef1a01.jpg)  
+FIGURE 21-20 The triacylglycerol cycle. In mammals, triacylglycerol molecules are broken down and resynthesized in a triacylglycerol cycle during starvation. Some of the fatty acids released by lipolysis of triacylglycerol in adipose tissue pass into the bloodstream, and the remainder are used for resynthesis of triacylglycerol. Some of the fatty acids released into the blood are used for energy (in muscle, for example), and some are taken up by the liver and used in triacylglycerol synthesis. The triacylglycerol formed in the liver is transported in the blood back to adipose tissue, where the fatty acid is released by extracellular lipoprotein lipase, taken up by adipocytes, and reesterified into triacylglycerol.
+
+![](images/793e59d495ccf68066e51c97bfb579451ade60ce099c4d148e68f3a26e52b14b.jpg)
+
+The constant recycling of triacylglycerols in adipose tissue even during starvation raises a second question: what is the source of the glycerol 3-phosphate required for this process? As noted above, glycolysis is suppressed under these conditions by the action of glucagon and epinephrine, so little DHAP is available. And glycerol released during lipolysis cannot be converted directly to glycerol 3-phosphate in adipose tissue, which lacks glycerol kinase (Fig. 21-17). So, how is sufficient glycerol 3-phosphate produced? The answer lies in the pathway of glyceroneogenesis, discovered in the 1960s by Lea Reshef, Richard Hanson, and John Ballard, and simultaneously by Eleazar Shafrir and his coworkers. The investigators were intrigued by the presence of two gluconeogenic enzymes, pyruvate carboxylase and phosphoenolpyruvate (PEP) carboxykinase, in adipose tissue, where glucose is not synthesized. Yet, the importance of this pathway was not appreciated until decades later. Glyceroneogenesis is intimately linked to the triacylglycerol cycle and, in a larger sense, to the balance between fatty acid and carbohydrate metabolism.
+
+## Adipose Tissue Generates Glycerol 3-Phosphate by Glyceroneogenesis
+
+Glyceroneogenesis is a shortened version of gluconeogenesis, from pyruvate to DHAP (see Fig. 14-16), followed by conversion of the DHAP to glycerol 3-phosphate by cytosolic NAD-linked glycerol 3-phosphate dehydrogenase (Fig. 21-21). Glycerol 3-phosphate is subsequently used in triacylglycerol synthesis. There is a link between glyceroneogenesis and type 2 diabetes, as we shall see.
+
+![](images/0f1617f53d463c49e6ce6738fa4b38641af59955e31f6f6f29b7e8a29945818a.jpg)
+
+![](images/c6f249b476e4b5854d86ae24a60a3cc441ae728e389436c23d470e0664f4cd4a.jpg)  
+FIGURE 21-21 Glyceroneogenesis. The pathway is essentially an abbreviated version of gluconeogenesis, from pyruvate to dihydroxyacetone phosphate (DHAP), followed by conversion of DHAP to glycerol 3-phosphate, which is used for the synthesis of triacylglycerol.
+
+Glyceroneogenesis has multiple roles. In adipose tissue, glyceroneogenesis coupled with reesterification of free fatty acids controls the rate of fatty acid release to the blood. In brown adipose tissue, the same pathway may control the rate at which free fatty acids are delivered to mitochondria for use in thermogenesis. And in fasting humans, glyceroneogenesis in the liver alone supports the synthesis of enough glycerol 3-phosphate to account for up to 65% of fatty acids reesterified to triacylglycerol.
+
+Flux through the triacylglycerol cycle between liver and adipose tissue is controlled to a large degree by the activity of PEP carboxykinase, which limits the rate of both gluconeogenesis and glyceroneogenesis. Glucocorticoid hormones such as cortisol (a biological steroid derived from cholesterol; see Fig. 21-48) and dexamethasone (a synthetic glucocorticoid) regulate the levels of PEP carboxykinase reciprocally in the liver and adipose tissue. Acting through the glucocorticoid receptor, these steroid hormones increase the expression of the gene encoding PEP carboxykinase in the liver, thus increasing gluconeogenesis and glyceroneogenesis (Fig. 21-22).
+
+![](images/2d69952bd8498fa0e0c37ebcb79f9a757a93c337b8f589a278c4d03cc182bb3b.jpg)
+
+Stimulation of glyceroneogenesis leads to an increase in the synthesis of triacylglycerol molecules in the liver and their release into the blood. At the same time, glucocorticoids suppress expression of the gene encoding PEP carboxykinase in adipose tissue. This results in a decrease in glyceroneogenesis in adipose tissue; recycling of fatty acids declines as a result, and more free fatty acids are released into the blood. Thus, regulation of glyceroneogenesis in the liver and adipose tissue affects lipid metabolism in opposite ways: a lower rate of glyceroneogenesis in adipose tissue leads to more fatty acid release (rather than recycling), whereas a higher rate in the liver leads to more synthesis and export of triacylglycerols. The net result is an increase in flux through the triacylglycerol cycle. When the glucocorticoids are no longer present, flux through the cycle declines as the expression of PEP carboxykinase increases in adipose tissue and decreases in the liver.
+
+## Thiazolidinediones Treat Type 2 Diabetes by Increasing Glyceroneogenesis
+
+![](images/dc1b5b103b75e6edf9efbf5ab8e2ce23d4c46dab6966ce132afa3007c9461093.jpg)
+
+The connection between glyceroneogenesis and diabetes has stimulated new interest. High levels of free fatty acids in the blood interfere with glucose utilization in muscle and promote the insulin resistance that leads to type 2 diabetes. A class of drugs called thiazolidinediones reduces the levels of fatty acids circulating in the blood and increases sensitivity to insulin. Thiazolidinediones promote the increased expression of PEP carboxykinase in adipose tissue (Fig. 21-22), leading to increased synthesis of the precursors of glyceroneogenesis. The therapeutic effect of thiazolidinediones is thus due, at least in part, to the increase in glyceroneogenesis, which in turn increases the resynthesis of triacylglycerol in adipose tissue and reduces the release of free fatty acid from adipose tissue into the blood. Two thiazolidinediones have been available for treatment of type 2 diabetes: rosiglitazone (Avandia) and pioglitazone (Actos). Large-scale trials of rosiglitazone have indicated an increased risk of heart attack, so rosigliatazone has been withdrawn in the United Kingdom, India, South Africa, and many European countries. It remains available in the United States with limitations.
+
+![](images/cb897ba1f4190364baff0e12bfac2bc5aa11491282ba9707422d81dc7ef0ecd9.jpg)
+
+![](images/f8fc9831ad3673d267e5a77f60e45e29790e90638e91db6ef837652905ecb1d0.jpg)  
+FIGURE 21-22 Regulation of glyceroneogenesis. (a) Glucocorticoid hormones stimulate glyceroneogenesis and gluconeogenesis in the liver, while suppressing glyceroneogenesis in adipose tissue (by reciprocal regulation of the gene expressing PEP carboxykinase (PEPCK) in the two tissues); this increases the flux through the triacylglycerol cycle. The glycerol freed by the breakdown of triacylglycerol in adipose tissue is released to the blood and transported to the liver, where it is primarily converted to glucose, although some is converted to glycerol 3-phosphate by glycerol kinase. (b) A class of drugs called thiazolidinediones is used to treat type 2 diabetes. In this disease, high levels of free fatty acids in the blood interfere with glucose utilization in muscle and promote insulin resistance. Thiazolidinediones activate a nuclear receptor called peroxisome proliferator-activated receptor $\gamma$ (PPAR $\gamma$ ), which induces the activity of PEP carboxykinase. Therapeutically, thiazolidinediones increase the rate of glyceroneogenesis, thus increasing the resynthesis of triacylglycerol in adipose tissue and reducing the amount of free fatty acid in the blood. In both panels, dashed lines identify pathways in which flux declines under the conditions indicated.
+
+![](images/080209495e4ecfb30e1b6811b940834b44345c1cd6dd82fd3cc61ee11f79525f.jpg)
+
+## SUMMARY 21.2 Biosynthesis of Triacylglycerols
+
+Triacylglycerols are formed by reaction of two molecules of fatty acyl-CoA with glycerol 3-phosphate to form phosphatidic acid; this product is dephosphorylated to a diacylglycerol, then acylated by a third molecule of fatty acyl-CoA to yield a triacylglycerol.
+
+■ The synthesis and degradation of triacylglycerols are hormonally regulated.
+
+\- Mobilization and recycling of triacylglycerol molecules result in a triacylglycerol cycle. Triacylglycerols are resynthesized from free fatty acids and glycerol 3-phosphate even during starvation. The dihydroxyacetone phosphate precursor of glycerol 3-phosphate is derived from pyruvate via glyceroneogenesis.
+
+■ Thiazolidinediones stimulate glyceroneogenesis and can be used to treat type 2 diabetes.
+
+## 21.3 Biosynthesis of Membrane Phospholipids
+
+In Chapter 10 we introduced two major classes of membrane phospholipids: glycerophospholipids and sphingolipids. Many different phospholipid species can be constructed by combining various fatty acids and polar head groups with the glycerol or sphingosine backbone (see Figs. 10-8, 10-11). All the biosynthetic pathways follow a few basic patterns. In general, the assembly of phospholipids from simple precursors requires (1) synthesis of the backbone molecule (glycerol or sphingosine); (2) attachment of fatty acid(s) to the backbone through an ester or amide linkage; (3) addition of a hydrophilic head group to the backbone through a phosphodiester linkage; and, in some cases, (4) alteration or exchange of the head group or the fatty acids to yield the final phospholipid product.
+
+In eukaryotic cells, phospholipid synthesis occurs primarily on the surfaces of the smooth ER and the inner mitochondrial membrane. Some newly formed phospholipids remain at the site of synthesis, but most are destined for other cellular membranes. Once they arrive, phospholipids can be remodeled within membranes to alter the fatty acid constituents. The process by which water-insoluble phospholipids move from the site of synthesis to the point of their eventual function is not fully understood, but we discuss some mechanisms that have emerged in recent years.
+
+## Cells Have Two Strategies for Attaching Phospholipid Head Groups
+
+Stage 1 of glycerophospholipid synthesis is shared with the pathway to triacylglycerols, the formation of glycerol 3-phosphate by one of the two paths shown in Fig. 21-17. In stage 2, fatty acyl groups are esterified to C-1 and C-2 of L-glycerol 3-phosphate to form phosphatidic acid. Usually, the fatty acid at C-1 is saturated and the one at C-2 is unsaturated. A second route to phosphatidic acid is the phosphorylation of a diacylglycerol by a specific kinase.
+
+In stages 3 and 4, the polar head group of glycerophospholipids is attached through a phosphodiester bond, in which each of two alcohol hydroxyls (one on the polar head group and one on C-3 of glycerol) forms an ester with phosphoric acid (Fig. 21-23). In the biosynthetic process, one of the hydroxyls is first activated by attachment of a nucleotide, cytidine diphosphate
+
+![](images/335ffe136de10cbe247c022001b39e5bef28807f795f801119cd9235db909e76.jpg)  
+FIGURE 21-23 Final stages of glycerophospholipid biosynthesis: head-group attachment. The phospholipid head group is attached to a diacylglycerol by a phosphodiester bond (shaded light red), formed when phosphoric acid condenses with two alcohols, eliminating two molecules of $\mathsf{H}_2\mathsf{O}$ .
