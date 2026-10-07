@@ -305,10 +305,13 @@ def main():
     for ch, title, path in zh_chapters():
         seen.append(ch)
         lines = read_lines(path)
-        if ch == 11:  # 书末索引混在最后一章文件里
+        if ch == 11:  # 书末名词解释和索引混在最后一章文件里
             idx = next(i for i, l in enumerate(lines) if re.match(r"^##\s*A\s*$", l) and i > 400)
+            dk = next(i for i, l in enumerate(lines) if re.match(r"^##\s*数字课程学习", l))
+            gl = next(i for i in range(dk + 1, idx) if re.match(r"^[^#\s].{1,80}[:：]\s", lines[i]))
+            w_appendix["现代分子生物学_名词解释"] = ["# 名词解释（《现代分子生物学》书末）", ""] + lines[gl:idx]
             w_appendix["现代分子生物学_索引"] = lines[idx:]
-            lines = lines[:idx]
+            lines = lines[:gl]
         bounds, intro_end = zh_bounds(lines, ch)
         heading_of = {k: heading_text(lines[i]) for k, (i, _) in bounds.items()}
         at: dict[int, list[str]] = {}
