@@ -1,0 +1,273 @@
+MICROTUBULES
+
+997
+
+![](images/page_48_image_2.jpg)
+
+Figure 16–47 Microtubule branching by augmin. (A) Augmin binds along the side of an existing microtubule and recruits a γ-tubulin ring complex that nucleates a new microtubule with a low branching angle. (B) Fluorescence micrographs showing augmin (orange) nucleating a microtubule branch in the cortex of an epidermal cell in the plant Arabidopsis thaliana. (C) Depletion of augmin severely stunts plant growth. (B, from W. Liu et al., J. Integr. Plant Biol. 61:388–393, 2019; C, from T. Liu et al., Curr. Biol. 24:2708–2713, 2014. With permission from Elsevier.)
+
+(the frequency of rescues). For example, members of a family of kinesin proteins known as catastrophe factors (or kinesin-13s) bind to microtubule ends and appear to pry protofilaments apart, lowering the normal activation-energy barrier that prevents a microtubule from springing apart into the curved protofilaments that are characteristic of the shrinking state (**Figure 16–48**). Other plus end–associated proteins act to promote rapid microtubule growth. A particularly ubiquitous example is XMAP215, which has close homologs in organisms that range from yeast to humans. Like formin proteins that concentrate actin subunits at the plus end of a growing actin filament, XMAP215 binds free tubulin subunits and delivers them to the plus end of a microtubule, dramatically accelerating polymerization (see Figure 16–48).
+
+A large subset of MAPs is enriched at microtubule plus ends. Called plus-end tracking proteins (1TIPs), these MAPs bind an actively growing plus end and dissociate when the microtubule begins to shrink (**Figure 16–49**). The kinesin-13 catastrophe factors and XMAP215 mentioned above behave as +TIPs and act to modulate the growth and shrinkage of the microtubule end to which they are
+
+![](images/page_48_image_6.jpg)
+
+Figure 16–48 The effects of proteins that bind to microtubule ends. The transition between microtubule growth and shrinkage is controlled in cells by a variety of proteins. Catastrophe factors such as kinesin-13, a member of the kinesin motor protein superfamily, bind to microtubule ends and pry them apart, thereby promoting depolymerization. On the other hand, a MAP such as XMAP215 promotes rapid microtubule polymerization (XMAP stands for Xenopus microtubuleassociated protein, and the number refers to its molecular mass in kilodaltons). XMAP215 binds tubulin dimers and delivers them to the microtubule plus end, thereby increasing the microtubule growth rate.
+
+---
+
+998
+
+Chapter 16: The Cytoskeleton
+
+5 μm
+
+![](images/page_49_image_3.jpg)
+
+(A)
+
+![](images/page_49_image_5.jpg)
+
+(B)
+
+attached. Other +TIPs control microtubule positioning by helping to capture and stabilize the growing microtubule end at specific cellular targets, such as the cell cortex or the kinetochore of a mitotic chromosome. EB1 and its relatives, small dimeric proteins that are highly conserved in animals, plants, and fungi, are key players in this process. EB1 proteins do not actively move toward plus ends, but rather recognize a structural feature of the growing plus end (see Figure 16–49). Several +TIPs depend on EB1 proteins for their plus-end accumulation and also interact with each other and with the microtubule lattice. By attaching to the plus end, these factors control microtubule dynamics and also allow the cell to harness the energy of microtubule polymerization to generate pushing forces that can be used for positioning the spindle, chromosomes, or organelles.
+
+## Tubulin-sequestering and Microtubule-severing Proteins ModulateMBoC7 m16.53/16.49 Microtubule Dynamics
+
+As it does with actin monomers, the cell sequesters unpolymerized tubulin subunits to maintain a pool of active subunits at a level near the critical concentration. One molecule of the small protein stathmin (also called Op18) binds two tubulin heterodimers and prevents their addition to the ends of microtubules (**Figure 16–50**). Stathmin thus decreases the effective concentration of tubulin subunits that are available for polymerization (an action analogous to that of the drug colchicine) and enhances the likelihood that a growing microtubule will switch to the shrinking state. Phosphorylation of stathmin inhibits its binding to tubulin, and signals that cause stathmin phosphorylation can increase the rate of microtubule elongation and suppress dynamic instability. Stathmin has been implicated in the regulation of both cell proliferation and cell death. Notably, mice lacking stathmin develop normally but are less fearful than wild-type mice, reflecting a role for stathmin in neurons of the amygdala, where it is normally expressed at high levels.
+
+Severing is another mechanism employed by the cell to destabilize microtubules. To sever a microtubule, 13 longitudinal bonds must be broken, one for each protofilament. The protein katanin, named after the Japanese word for “sword,” accomplishes this demanding task (**Figure 16–51A and B**). Katanin belongs to a large family of proteins that use the energy of ATP hydrolysis to disassemble or remodel protein complexes. By extracting tubulin subunits from the wall of the microtubule, katanin weakens the structure and thereby promotes breakage. Katanin also releases microtubules from microtubule-organizing centers and is thought to contribute to the rapid microtubule depolymerization observed at the poles of spindles during mitosis.
+
+Paradoxically, the loss of microtubule-severing protein activity in many cell types leads to a decrease rather than an increase in microtubules. Thus, microtubule-severing proteins play an unexpected role in stabilizing microtubules. How is this possible? During the intermediate steps of a microtubule-severing event, GDP-bound tubulin subunits are lost from the wall of the microtubule and are replaced with GTP-tubulin subunits from
+
+Figure 16–49 1TIP proteins found at the growing plus ends of microtubules. (A) Frames from a fluorescence time-lapse movie of the edge of a cell expressing fluorescently labeled tubulin that incorporates into microtubules (green) as well as the +TIP protein EB1 tagged with a different color (red). The same microtubule is marked (asterisk) in successive movie frames. When the microtubule is growing (frames 1, 2), EB1 is associated with the tip. When the microtubule undergoes a catastrophe and begins shrinking, EB1 is lost (frames 3, 4). The labeled EB1 is regained when growth of the microtubule is rescued (frame 5). See Movie 16.11. (B) In the fission yeast Schizosaccharomyces pombe, microtubules (green) are bound at their plus ends by the homolog of EB1 (red) as they grow toward the two poles of the rod-shaped cells. (A, courtesy of Anna Akhmanova and Ilya Grigoriev; B, courtesy of Takeshi Toda.)
+
+![](images/page_49_image_13.jpg)
+
+Figure 16–50 Sequestration of tubulin by stathmin. Structural studies with electron microscopy and crystallography suggest that the elongated stathmin protein binds along the side of two tubulin heterodimers. (Adapted from M.O. Steinmetz et al., EMBO J. 19:572–580, 2000.)
+
+---
+
+MICROTUBULES
+
+999
+
+![](images/page_50_image_2.jpg)
+
+Figure 16–51 Microtubule severing by katanin can destabilize or amplify microtubules. (A) Taxol-stabilized, fluorescently labeled microtubules were adsorbed on the surface of a glass slide, to which purified katanin was added along with ATP. There are a few breaks in the microtubules 30 seconds after the addition of katanin. (B) Three minutes after the addition of katanin, the filaments have been severed in many places, leaving a series of small fragments at the previous locations of the long microtubules. (C) Incorporation of GTP-tubulin subunits from the soluble pool into sites of katanin-induced damage in the microtubule lattice stabilizes the severed end or generates an island of GTP-tubulin that promotes rescue. (A and B, from J.J. Hartman et al., Cell 93:277–287, 1998. With permission from Elsevier. C, adapted from A. Vemu et al., Science 361: eaau1504, 2018. With permission from AAAS.)
+
+the soluble pool. If a sufficient number of GTP-tubulin subunits are incorporated before the severing is complete, the new plus end of the cut microtubule will possess a stabilizing GTP-tubulin cap and will therefore polymerize. Thus microtubule severing can generate plus ends that promote growth of more polymer. Alternatively, incomplete severing could lead to an island of GTP-tubulin in the microtubule lattice that could promote a future rescue event when this site is exposed after catastrophe (Figure 16–51C). Although insertion of GTP-tubulin into the lattice has been observed in vitro with pure microtubules, the importance of this activity in cells has not yet been fully established.
+
+## Two Types of Motor Proteins Move Along MicrotubulesMBoC7 m16.55/16.51
+
+Like actin filaments, microtubules also work together with motor proteins in a variety of cellular processes. There are two major classes of microtubule-based motors, **kinesins** and **dyneins**, which perform three major functions. First, they move cargo such as organelles and macromolecules within the cell. Unlike actinbased transport, however, microtubule-based motors are used to transport
+
+---
+
+1000
+
+Chapter 16: The Cytoskeleton
+
+![](images/page_51_image_2.jpg)
+
+Figure 16–52 Kinesins. Structures of four kinesin superfamily members. As in the myosin superfamily, only the motor domains are conserved. Kinesin-1 has the motor domain at the N-terminus of the heavy chain and moves toward the microtubule plus end. The middle domain forms a long coiled-coil, mediating dimerization. The C-terminal domain forms a tail that attaches to cargo, such as a membrane-enclosed organelle. Kinesin-5 forms tetramers in which two dimers associate by their tails. The bipolar kinesin-5 tetramer is able to slide two microtubules past each other, analogous to the activity of the bipolar thick filaments formed by myosin II. Kinesin-13 has its motor domain located in the middle of the heavy chain. It is a member of a family of kinesins that have lost typical motor activity and instead bind to microtubule ends to promote depolymerization (see Figure 16–48). Kinesin-14 is a C-terminal kinesin. Unlike most kinesins, members of the kinesin-14 family travel toward the microtubule minus end.
+
+cargo over long distances. Second, motors can slide microtubules relative to one another, thereby generating specific arrangements of microtubules, as in neurons and epithelial cells (see Figure 16–44), and in the mitotic spindle (see Chapter 17). Third, a subset of microtubule-based motors regulates microtubule dynamics, as illustrated by kinesin-13 (see Figure 16–48).
+
+Like myosins, kinesins are a large protein superfamily in which the motor domain of the heavy chain is the common element (**Figure 16–52**). The yeast Saccharomyces cerevisiae has six distinct kinesins. The nematode C. elegans has 20 kinesins, and humans have 45. **Kinesin-1** is similar to myosin II in having two heavy chains per active motor; these form two globular head motor domains that are held together by an elongated coiled-coil tail that mediates heavy-chain dimerization. Most kinesins have their motor domain at the N-terminus and walk toward the plus end of the microtubule. Kinesins with the motor domain at the C-terminus walk in the opposite direction, toward the minus end of the microtubule, while kinesin-13 has a central motor domain and does not walk at all, but uses the energy of ATP hydrolysis to depolymerize microtubule ends (see Figure 16–48). Some kinesins are monomers, and others are homodimers, heterodimers, or tetramers. The motor may be linked to a membrane-enclosed organelle via a light chain or an adaptor protein. Some kinesins possess a second microtubule-binding domain that increases its affinity for the microtubule or mediates cross-linking and sliding of two microtubules.
+
+In kinesin-1, small movements at the ATP-binding site regulate the docking and undocking of the motor head domain to a long linker region. This acts to throw the second head forward along the protofilament to a binding site 8 nm closer to the microtubule plus end, which is the distance between tubulin dimers of a protofilament. The ATP-hydrolysis cycles in the two heads are closely coordinated, so that this cycle of linker docking and undocking allows the two-headed motor to move in a hand-over-hand (or head-over-head) stepwise manner (**Figure 16–53**).
+
+The dyneins are a family of minus end–directed microtubule motors unrelated to the kinesins. They are composed of one, two, or three heavy chains (that include the motor domain) and a large and variable number of associated intermediate, light-intermediate, and light chains. The dynein family has two major branches. The first contains the cytoplasmic dyneins, which are homodimers of two heavy chains (**Figure 16–54**). Cytoplasmic dynein 1 is encoded by a single gene in almost all eukaryotic cells but is missing from flowering plants and some algae. It is used for organelle and mRNA trafficking, for positioning the centrosome and nucleus during cell migration, and for construction of the microtubule spindle in mitosis and meiosis. Cytoplasmic dynein 2 is found only in eukaryotic
+
+---
+
+MICROTUBULES
+
+1001
+
+Figure 16–53 The mechanochemical cycle of kinesin. Kinesin-1 is a dimer of two ATP-binding motor domains (heads) that are connected through a long coiled-coil tail (see Figure 16–52). The two kinesin motor domains work in a coordinated manner; during a kinesin “step,” the rear head detaches from its tubulin binding site on the microtubule, passes the partner motor domain, and then rebinds to the next available binding site. Using this “hand-over-hand” motion, the kinesin dimer can move for long distances on the microtubule without completely letting go of its track.
+
+![](images/page_52_image_3.jpg)
+
+At the start of each step, one of the two kinesin motor domain heads, the rear or lagging head (dark red), is tightly bound to the microtubule and to ATP, while the front or leading head is loosely bound to the microtubule with ADP in its binding site. The forward displacement of the rear motor domain is driven by the dissociation of ADP and binding of ATP in the leading head (between panels 2 and 3 in this drawing). The binding of ATP to this motor domain causes a small peptide called the neck linker to shift from a rearward-pointing to a forward-pointing conformation (the neck linker is drawn here as a purple connecting line between the leading motor domain and the intertwined coiled-coil). This shift pulls the rear head forward, once it has detached from the microtubule with ADP bound [detachment requires ATP hydrolysis and phosphate (P) release]. The kinesin molecule is now poised for the next step, which proceeds by an exact repeat of the process shown (Movie 16.12).
+
+organisms that have cilia and is used to transport material from the tip to the base of the cilia—a process called intraflagellar transport (IFT). Axonemal dyneins comprise the second branch and include monomers, heterodimers, and heterotrimers, with one, two, or three motor-containing heavy chains, respectively. They are highly specialized for the rapid and efficient microtubule sliding movements that drive the beating of cilia and flagella (discussed later).
+
+![](images/page_52_image_6.jpg)
+
+Dyneins are the largest of the known molecular motors. Although structurally unrelated to myosins and kinesins, dyneins follow the general rule of coupling ATP hydrolysis to microtubule binding and unbinding as well as to a force-generating conformational change (**Figure 16–55**).
+
+![](images/page_52_image_8.jpg)
+
+![](images/page_52_image_9.jpg)
+
+![](images/page_52_image_10.jpg)
+
+Figure 16–54 Cytoplasmic dynein. (A) Cryo-electron microscopy (cryoEM) reconstruction of a molecule of cytoplasmic dynein. Like myosin II and kinesin-1, cytoplasmic dynein is a two-headed molecule. The dynein head is very large compared with the head of either myosin or kinesin. (B) Schematic depiction of cytoplasmic dynein showing the two heavy chains that contain a motor head with domains for microtubule binding and ATP hydrolysis, connected by a long stalk. The tail domain consists of a linker that connects the motor heads to a dimerization domain. Bound to the linker domain are multiple intermediate chains and light chains (blue) that help to mediate many of dynein’s functions. (C) The organization of domains in a dynein heavy chain. This is a huge polypeptide, containing more than 4000 amino acids. The conserved dynein motor head domain contains six AAA domains, four of which retain ATP-binding sequences, but only one of which has the major ATPase activity (brown). The tail domain is not as highly conserved as the head domain and varies among different dynein subtypes. $( \mathsf { A } ,$ courtesy of Andrew Carter.)
+
+---
+
+1002
+
+Chapter 16: The Cytoskeleton
+
+![](images/page_53_image_2.jpg)
+
+## Microtubules and Motors Move Organelles and Vesicles
+
+A major function of cytoskeletal motors in interphase cells is the transport and positioning of membrane-enclosed organelles (**Movie 16.13**). Kinesin was originally identified as the protein responsible for fast anterograde axonal transport, the rapid movement of mitochondria, secretory vesicle precursors, and various synapse components down the microtubule highways of the axon to the distant nerve terminals. Cytoplasmic dynein 1 was identified as the motor responsible for transport in the opposite direction, retrograde axonal transport. Although organelles in most cells need not cover such long distances, their polarized transport is equally necessary. A typical microtubule array in an interphase cell is oriented with the minus ends near the center of the cell at the centrosome and the plus ends extending to the cell periphery. Thus, centripetal movements of organelles or vesicles toward the cell center require the action of minus end–directed cytoplasmic dynein motors, whereas centrifugal movements toward the periphery require plus end–directed kinesin motors. Notably, in animal cells, nearly all minus end–directed transport is driven by the single cytoplasmic dynein 1 motor, whereas at least 15 different kinesins are used for plus end–directed transport.
+
+A clear example of the effect of microtubules and microtubule motors on the behavior of intracellular membranes is their role in organizing the endoplasmic reticulum (ER) and the Golgi apparatus. The network of ER membrane tubules aligns with microtubules and extends almost to the edge of the cell (**Movie 16.14**), whereas the Golgi apparatus is located near the centrosome. When cells are treated with a drug that depolymerizes microtubules, such as colchicine or nocodazole, the ER collapses to the center of the cell, while the Golgi apparatus fragments and disperses throughout the cytoplasm. In vitro, kinesins can tether ER-derived membranes to preformed microtubule tracks and walk toward the microtubule plus ends, dragging the ER membranes out into tubular protrusions and forming a membranous web that looks very much like the ER in cells. Conversely, dyneins are required for positioning the Golgi apparatus near the cell center of animal cells; they do this by moving Golgi vesicles along microtubule tracks toward the microtubules’ minus ends at the centrosome.
+
+The different tails and their associated light chains on specific motor proteins allow the motors to attach to their appropriate organelle cargo. Membraneassociated motor receptors that are sorted to specific membrane-enclosed compartments interact directly or indirectly with the tails of the appropriate kinesin family members. Many viruses take advantage of microtubule motor–based transport during infection and use kinesin to move from their site of replication and assembly to the plasma membrane, from which they are poised to infect neighboring cells.
+
+For dynein, a large macromolecular assembly mediates attachment to cargoes. To translocate organelles effectively, cytoplasmic dynein, itself a huge protein complex, requires association with a second large protein complex called dynactin as well as with an adaptor protein that mediates their interaction and
+
+Figure 16–55 The power stroke of dynein. Illustration of the movement of a monomeric axonemal dynein found in the flagellum of the unicellular green alga Chlamydomonas reinhardtii. As in cytoplasmic dynein, the motor-containing head domain of axonemal dynein connects to a long, coiled-coil stalk with the microtubule-binding site at the tip. The tail attaches to an adjacent microtubule in the axoneme. Movement is thought to occur through a “linker-swing, dyneinwinch” mechanism. ATP binding and hydrolysis cause the linker to throw the head domain toward the microtubule minus end like a fishing hook. The microtubule-binding domain reattaches 8 nm along the microtubule. Release of ATP and phosphate then leads to a large conformational power stroke in the linker domain, pulling the tail and its attached microtubule toward the minus end. Each cycle generates a step of about 8 nm, thereby contributing to flagellar beating (see Figure 16–60). In the case of cytoplasmic dynein, the tail is attached to a cargo such as a vesicle, and a single power stroke transports the cargo about 8 nm along the microtubule toward its minus end (see Figure 16–56).
+
+---
+
+MICROTUBULES
+
+1003
+
+links to a cargo such as a vesicle. The dynactin complex includes a short, actinlike filament that forms from the actin-related protein Arp1 (distinct from Arp2 and Arp3, the components of the Arp2/3 complex involved in the nucleation of conventional actin filaments) (**Figure 16–56**). A number of other proteins also contribute to dynein cargo binding and motor regulation, and their function is especially important in neurons, where defects in microtubule-based transport have been linked to neurological diseases. A striking example is smooth brain, or lissencephaly, a human disorder in which cells fail to migrate to the cerebral cortex of the developing brain. One type of lissencephaly is caused by defects in Lis1, a dynein-binding protein required for nuclear migration in several species. In the normal brain, migration of the nucleus directs the developing neural cell body toward its correct position in the cortex. In the absence of Lis1, however, this process fails, and affected children suffer from developmental delays as well as a variety of neurological defects. Dynein is required continually for neuronal function, as mutations in a dynactin subunit or in the tail region of cytoplasmic dynein lead to neuronal degeneration in humans and mice. These effects are associated with decreased retrograde axonal transport and provide strong evidence for the importance of robust axonal transport in neuronal viability.
+
+The cell can regulate the activity of motor proteins and thereby cause either a change in the positioning of its membrane-enclosed organelles or whole-cell movements. Fish melanophores provide one of the most dramatic examples. These giant cells, which are responsible for rapid changes in skin coloration in several species of fish, contain large pigment granules that can alter their location in response to neuronal or hormonal stimulation (**Figure 16–57**). The pigment granules aggregate or disperse by moving along an extensive network of microtubules that are anchored at the centrosome by their minus ends. The tracking of individual pigment granules reveals that the inward movement is rapid and smooth, while the outward movement is jerky, with frequent backward steps. Both dynein and kinesin microtubule motors are associated with the pigment granules. The jerky outward movements may result from a tug-of-war between the two opposing
+
+DISPERSED
+
+![](images/page_54_image_5.jpg)
+
+(A)
+
+AGGREGATED
+
+![](images/page_54_image_8.jpg)
+
+50 µm
+
+![](images/page_54_image_10.jpg)
+
+![](images/page_54_image_11.jpg)
+
+Figure 16–56 Dynactin and an adaptor protein mediate the attachment of dynein to a membrane-enclosed organelle. Dynein requires the presence of a large number of accessory proteins to associate with membrane-enclosed organelles. Dynactin is a large complex that includes components that bind weakly to microtubules, components that bind to dynein itself, and components that form a small, actin-like filament made of the actinrelated protein Arp1. Dynactin associates with two molecules of cytoplasmic dynein as well as with an adaptor protein that mediates the connection to a cargo.
+
+Figure 16–57 Regulated melanosome movements in fish pigment cells.
+
+These giant cells, which are responsible for changes in skin coloration in several species of fish, contain large pigment granules called melanosomes. The melanosomes can change their location in the cell in response to a hormonal or neuronal stimulus. (A) Schematic view of a pigment cell, showing the dispersal and aggregation of melanosomes (brown) in response to an increase or decrease in intracellular cyclic AMP (cAMP), respectively. Both redistributions of melanosomes occur along microtubules. (B) Bright-field images of a single cell in a scale of an African cichlid fish, showing its melanosomes either dispersed throughout the cytoplasm (left) or aggregated in the center of the cell (right). (B, courtesy of Leah Haimo.)
+
+---
+
+1004
+
+Chapter 16: The Cytoskeleton
+
+microtubule motor proteins, with the stronger kinesin winning out overall. When intracellular cyclic AMP levels decrease, kinesin is inactivated, leaving dynein free to drag the pigment granules rapidly toward the cell center, changing the fish’s color. In a similar way, the movement of other membrane organelles coated with particular motor proteins is controlled by a complex balance of competing signals that regulate both motor protein attachment and activity.
+
+## Motile Cilia and Flagella Are Built from Microtubules and Dyneins
+
+Just as myofibrils are highly specialized and efficient motility machines built from actin and myosin filaments, cilia and flagella are highly specialized and efficient motility structures built from microtubules and dynein. Both cilia and flagella are hairlike cell appendages that have a bundle of microtubules at their core. **Flagella** are found on sperm and many protozoa. By their undulating motion, they enable the cells from which they emerge to swim through liquid media. **Cilia** are organized in a similar fashion, but they beat with a whiplike motion that resembles the breaststroke in swimming. Ciliary beating can either propel single cells through a fluid (as in the swimming of the protozoan Paramecium) or can move fluid over the surface of a group of cells in a tissue. In the human body, huge numbers of cilia $( 1 0 ^ { 9 } / \mathrm { c m } ^ { 2 }$ or more) line our respiratory tract, sweeping layers of mucus, trapped particles of dust, and bacteria up to the mouth where they are swallowed and ultimately eliminated. Likewise, cilia along the oviduct help to sweep eggs toward the uterus.
+
+The movement of a cilium or a flagellum is produced by the bending of its core, which is called the **axoneme**. The axoneme is composed of microtubules and their associated proteins, arranged in a distinctive and regular pattern. Nine special microtubule doublets (comprising one complete and one partial microtubule fused together so that they share a common tubule wall) are arranged in a ring around a pair of single microtubules (**Figure 16–58**). Almost all forms of motile eukaryotic flagella and cilia (from protozoans to humans) have this characteristic arrangement. The microtubules extend continuously for the length of the axoneme, which can be 10–200 μm. At regular positions along the length of the microtubules, accessory proteins cross-link the microtubules together.
+
+Molecules of axonemal dynein form bridges between adjacent microtubule doublets around the circumference of the axoneme (**Figure 16–59**). When the motor domain of this dynein is activated, the dynein molecules attached to one microtubule doublet (see Figure 16–60) attempt to walk along the adjacent
+
+(A)
+
+(B)
+
+(C)microtubule inner proteins (MIPs)
+
+![](images/page_55_image_10.jpg)
+
+Figure 16–58 The arrangement of microtubules in a flagellum or cilium. (A) Electron micrograph of the flagellum of a green-alga cell (Chlamydomonas) shown in cross section, illustrating the distinctive $\text{" }9+2 "$ arrangement of microtubules. (B) Diagram of the parts of a flagellum or cilium. The various projections from the microtubules link the microtubules together and occur at regular intervals along the length of the axoneme. (C) High-resolution electron tomography image of an outer microtubule doublet showing structural details and features inside the microtubules called microtubule inner proteins (MIPs). $( \mathsf { A } ,$ courtesy of Lewis Tilney; C, courtesy of Daniela Nicastro.)
+
+---
+
+MICROTUBULES
+
+1005
+
+A microtubule
+
+![](images/page_56_image_3.jpg)
+
+Figure 16–59 Axonemal dynein. CryoEM reconstruction of a sea urchin sperm flagellum showing dynein arms connecting the A microtubule of one doublet with the B microtubule of an adjacent doublet at regular intervals. Sperm axonemal dynein is dimeric. The tail of the molecule binds tightly to an A microtubule, while the two globular heads each have a stalk that connects to an ATP-dependent binding site on a B microtubule (see Figure 16–58). When the heads hydrolyze their bound ATP, they move toward the minus end of the B microtubule, thereby producing a sliding force between the adjacent microtubule doublets in a cilium or flagellum (see Figure 16–60). (Courtesy of Daniela Nicastro.)
+
+microtubule doublet, tending to force the adjacent doublets to slide relative to one another, much as actin thin filaments slide during muscle contraction. However, the presence of other links between the microtubule doublets prevents this sliding, and the dynein force is instead converted into a bending motion (**Figure 16–60**). Not all dyneins in the axoneme are active at the same time, which results in the characteristic wave-like motion of the cilium or flagellum (**Movie 16.15**).
+
+In humans, hereditary defects in axonemal dynein cause a condition called primary ciliary dyskinesia, or Kartagener’s syndrome. This syndrome is characterized by inversion of the normal asymmetry of internal organs (situs inversus) due to disruption of fluid flow in the developing embryo, male sterility due to immotile sperm, and a high susceptibility to lung infections due to paralyzed cilia being unable to clear the respiratory tract of debris and bacteria.
+
+Bacteria also swim using cell-surface structures called flagella, but these do not contain microtubules or dynein and do not wave or beat. Instead, bacterial flagella are long, rigid helical filaments, made up of repeating subunits of the protein flagellin. The flagella rotate like propellers, driven by a special rotary motor embedded in the bacterial cell wall. The use of the same name to denote these two very different types of swimming apparatus is an unfortunate historical accident.
+
+## Primary Cilia Perform Important Signaling Functions in Animal Cells
+
+Many cells possess a shorter, nonmotile counterpart of cilia and flagella called the primary cilium. Primary cilia can be viewed as specialized compartments or organelles that perform a wide range of cellular functions but share many
+
+![](images/page_56_image_10.jpg)
+
+(A)
+
+![](images/page_56_image_12.jpg)
+
+(B)
+
+Figure 16–60 The bending of an axoneme. (A) When axonemes are exposed to the proteolytic enzyme trypsin, the flexible protein links holding adjacent microtubule doublets together are broken. In this case, the addition of ATP allows the motor action of the dynein heads to slide one microtubule doublet against the adjacent doublet. (B) In an intact axoneme (such as in a spermatozoon), the flexible protein links prevent the sliding of the doublet. The motor action therefore causes a bending motion, creating waves or beating motions.
+
+---
+
+1006
+
+Chapter 16: The Cytoskeleton
+
+![](images/page_57_image_2.jpg)
+
+structural features with motile cilia. Both motile and nonmotile cilia are generated during interphase at plasma membrane–associated structures called basal bodies, which anchor them at the cell surface. At the core of each basal body is a single centriole, the same structure found in pairs embedded at the center of animal centrosomes, with nine groups of fused microtubule triplets arranged in a cartwheel (see Figure 16–43). Centrioles are multifunctional, contributing to assembly of the mitotic spindle in dividing cells but migrating to the plasma membrane of interphase cells to template the nucleation of the axoneme (**Figure 16–61**). Because no protein translation occurs in cilia, construction of the. / . axoneme requires intraflagellar transport (IFT), a transport system discovered in the green algae Chlamydomonas. Analogous to the axon, motors move cargoes in both anterograde and retrograde directions, in this case driven by kinesin-2 and cytoplasmic dynein 2, respectively.
+
+Primary cilia are found on the surface of almost all cell types, where they sense and respond to the exterior environment, functions best understood in the context of smell and sight. In the nasal epithelium, cilia protruding from dendrites of olfactory neurons are the site of both odorant reception and signal amplification. Similarly, the rod and cone cells of the vertebrate retina possess a specialized primary cilium called the outer segment, which is specialized for converting light into a neural signal (see Figure 15–40). Maintenance of the outer segment requires continual IFT-mediated transport of large quantities of lipids and proteins into the cilium, at rates of up to 1000 molecules per second. The links between cilia function and the senses of sight and smell are underscored by the ciliopathies, a set of disorders associated with defects in IFT, the cilium, or the basal body. In the ciliopathy Bardet–Biedl syndrome, patients cannot smell and suffer from retinal degeneration. Other characteristics of this multifaceted disorder include hearing loss, polycystic kidney disease, diabetes, obesity, and polydactyly, suggesting that primary cilia have functions in many aspects of human physiology.
+
+Figure 16–61 Primary cilia. (A) Electron micrograph and diagram of the basal body of a mouse neuron primary cilium. The axoneme of the primary cilium (black arrow) is nucleated by the mother centriole at the basal body, which localizes at the plasma membrane near the cell surface. (B) Centrioles function alternately as basal bodies and as the core of centrosomes. Before a cell enters the cell-division cycle, the primary cilium is shed or resorbed. The centrioles recruit pericentriolar material and duplicate during S phase, generating two centrosomes, each of which contains a pair of centrioles. The centrosomes nucleate microtubules and localize to the poles of the mitotic spindle. Upon exit from mitosis, a primary cilium again grows from the mother centriole. (A, courtesy of Josef Spacek.)
+
+## Summary
+
+Microtubules are stiff polymers of tubulin molecules. They assemble by addition of GTP-containing tubulin subunits to the free end of a microtubule, with one end (the plus end) growing faster than the other. Hydrolysis of the bound GTP takes place after assembly and weakens the bonds that hold the microtubule together. Microtubules are dynamically unstable and liable to catastrophic disassembly, but they can be stabilized in cells by association with other structures. Microtubule-organizing centers such as centrosomes protect the minus ends of microtubules and continu ally nucleate the formation of new microtubules. Microtubule-associated proteins (MAPs) stabilize microtubules, and those that localize to the plus end (1TIPs) can alter the dynamic properties of the microtubule or mediate their interaction with
+
+---
+
+INTERMEDIATE FILAMENTS AND OTHER CYTOSKELETAL POLYMERS
+
+1007
+
+other structures. Counteracting the stabilizing activity of MAPs are catastrophe factors, such as kinesin-13 proteins, that act to peel apart microtubule ends. Other kinesin family members as well as dynein use the energy of ATP hydrolysis to move unidirectionally along a microtubule. The motor dynein moves toward the minus end of microtubules, and its sliding of axonemal microtubules underlies the beating of cilia and flagella. Primary cilia are nonmotile sensory organelles found on many cell types.
+
+## INTERMEDIATE FILAMENTS AND OTHER CYTOSKELETAL POLYMERS
+
+All eukaryotic cells contain actin and tubulin. But the third major type of cytoskeletal protein, the intermediate filament, forms a cytoplasmic filament only in some metazoans—including vertebrates, nematodes, and mollusks. Intermediate filaments are particularly prominent in the cytoplasm of cells that are subject to mechanical stress and are generally not found in animals that have rigid exoskeletons, such as arthropods and echinoderms. It seems that intermediate filaments impart mechanical strength to tissues for the squishier animals.
+
+Cytoplasmic intermediate filaments are closely related to their ancestors, the much more prevalent nuclear lamins, which are found in many eukaryotes but missing from unicellular organisms. The nuclear lamins form a meshwork lining the inner membrane of the nuclear envelope, where they provide anchorage sites for chromosomes and nuclear pores. Several times during metazoan evolution, lamin genes have apparently duplicated, and the duplicates have evolved to produce rope-like, cytoplasmic intermediate filaments. In contrast to the highly conserved actins and tubulin isoforms that are encoded by a handful of genes, different families of intermediate filaments are much more diverse and are encoded by 70 different human genes with distinct, cell type–specific functions (**Table 16–2**).
+
+## Intermediate Filament Structure Depends on the Lateral Bundling and Twisting of Coiled-Coils
+
+Although their amino- and carboxyl-terminal domains differ, all intermediate filament family members are elongated proteins with a conserved central α-helical domain containing 40 or so heptad repeat motifs that form an extended
+
+TABLE 16–2 Major Types of Intermediate Filament Proteins in Vertebrate Cells
+
+<table><tr><td>Types of intermediate filament</td><td>Component polypeptides</td><td>Location</td></tr><tr><td>Nuclear</td><td>Lamins A, B, and C</td><td>Nuclear lamina (inner lining of nuclear envelope)</td></tr><tr><td rowspan="4">Vimentin-like</td><td>Vimentin</td><td>Many cells of mesenchymal origin</td></tr><tr><td>Desmin</td><td>Muscle</td></tr><tr><td>Glial fibrillary acidic protein</td><td>Glial cells (astrocytes and some Schwann cells)</td></tr><tr><td>Peripherin</td><td>Some neurons</td></tr><tr><td>Epithelial</td><td>Type I keratins (acidic)</td><td rowspan="2">Epithelial cells and their derivatives (e.g., hair and nails)</td></tr><tr><td>Epithelial</td><td>Type II keratins (neutral/basic)</td></tr><tr><td>Axonal</td><td>Neurofilament proteins (NF-L, NF-M, and NF-H)</td><td>Neurons</td></tr></table>
+
+---
+
+1008
+
+Chapter 16: The Cytoskeleton
+
+![](images/page_59_chart_2.jpg)
+
+![](images/page_59_image_3.jpg)
+
+Figure 16–62 A model of intermediate filament construction. An electron micrograph of intermediate filaments is shown in (A). The monomer shown in (B) pairs with another monomer to form a dimer, in which the conserved central rod domains are aligned in parallel and wound together into a coiled-coil. (C) Two dimers then line up side by side to form an antiparallel tetramer of four polypeptide chains. Dimers and tetramers are the soluble subunits of intermediate filaments. (D) Within each tetramer, the two dimers are offset with respect to one another, thereby allowing it to associate with another tetramer. (E) In the final 10-nm-diameter filament, tetramers are packed together in a rope-like array, which has 16 dimers (32 coiled-coils) in cross section. Half of these dimers are pointing in each direction. An electron micrograph of intermediate filaments is shown on the upper left (Movie 16.16). (A, from L. Norlén et al., Exp. Cell Res. 313:2217–2227, 2007. With permission from Elsevier.)
+
+coiled-coil structure with another monomer (see Figure 3–8). A pair of parallel dimers then associates in an antiparallel fashion to form a staggered tetramer (**Figure 16–62**). Unlike actin or tubulin subunits, intermediate filament subunits do not contain a binding site for ATP or GTP. Furthermore, because the tetrameric subunit is made up of two dimers pointing in opposite directions, its two ends are the same. The assembled intermediate filament therefore lacks theMBoC7 m16.67/16.67 overall structural polarity that is critical for actin filaments and microtubules. The tetramers pack together laterally to form the filament, which includes eight parallel protofilaments made up of tetramers. Each individual intermediate filament therefore has a cross section of 32 individual α-helical coils. This large number of polypeptides all lined up together, with the strong lateral hydrophobic interactions typical of coiled-coil proteins, gives intermediate filaments a ropelike character. They can be easily bent, with a persistence length of less than 1 μm (compared to several millimeters for microtubules and about 10 μm for actin), but they are extremely difficult to break and can be stretched to more than three times their length (see Figure 16–6).
+
+Less is understood about the mechanisms of assembly and disassembly of intermediate filaments than of actin filaments and microtubules. In pure protein

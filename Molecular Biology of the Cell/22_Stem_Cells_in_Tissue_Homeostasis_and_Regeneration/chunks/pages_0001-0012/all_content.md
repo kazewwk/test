@@ -1,0 +1,287 @@
+1279
+
+# Stem Cells in Tissue Homeostasis and Regeneration
+
+Cells evolved originally as free-living individuals, and such cells still dominate Earth and its oceans. But the cells that matter most to us, as humans, are specialized members of a multicellular community. These cells have lost features needed for independent survival and acquired peculiarities that serve the needs of the body as a whole. Although they share the same genome, they are spectacularly diverse in structure, chemistry, and behavior. There are more than 200 different named cell types in the human body that collaborate with one another to form many different tissues, which are arranged into organs performing widely varied functions. To understand them, it is not enough to analyze cells in a culture dish: we need also to know how they live, work, and die in their natural habitat, the intact body.
+
+In Chapters 7 and 21, we saw how the various cell types become different in the embryo and how cell memory and signals from their neighbors enable them to remain different thereafter. In Chapter 19, we discussed the mechanisms that cells use to self-assemble into multicellular tissues, including the use of molecular devices that bind cells together and the extracellular materials that give tissues and organs support. But the adult body is not static: it is a structure in dynamic equilibrium, where new cells are continually being born, differentiating, and dying. Homeostatic mechanisms maintain a proper balance, so that tissue architecture is preserved despite the constant replacement of old cells by new.
+
+In this chapter, we focus on these homeostatic processes that continue throughout life. In doing so, we illustrate some of the diversity of differentiated cell types, examining in particular the part played in many adult tissues by **stem cells**—undifferentiated cells that are specialized to provide a fresh supply of differentiated cells where these need to be continually replaced or when they are required in large number for tissue repair and regeneration. We will see that many adult tissues constantly renew and repair themselves, but others do not, in which case, lost cells are lost forever, causing deafness, blindness, dementia, and other disorders. We discuss how stem cells are maintained within a self-renewing tissue and how the fate of their daughter cells is determined. We then describe the remarkable ability of some animal species to regenerate entire limbs or organs, in one extreme example, reproducing all of the tissues of the organism from a single stem cell. In the final section of the chapter, we discuss how stem cells can be generated and manipulated artificially, raising the practical question that underlies a current storm of interest in stem-cell technology: How can we use our understanding of the processes of cell differentiation and tissue renewal to improve upon nature and make good those injuries and degenerations associated with disease and aging of the human body that have hitherto seemed beyond repair?
+
+## STEM CELLS AND TISSUE HOMEOSTASIS
+
+In self-renewing adult tissues, cells are continually being born, differentiating, and dying. This “flow” of cells can be compared with the flow of water in a river: the river may look the same from day to day, but, as it flows downstream, the water
+
+C HAP T E R
+
+22
+
+IN THIS CHAPTER
+
+Stem Cells and Tissue Homeostasis
+
+Control of Stem-cell Fate and Self-Renewal
+
+Regeneration and Repair
+
+Cell Reprogramming and Pluripotent Stem Cells
+
+---
+
+1280
+
+Chapter 22: Stem Cells in Tissue Homeostasis and Regeneration
+
+![](images/page_1_image_2.jpg)
+
+Figure 22–1 Tissue homeostasis compared to a river. In a self-renewing adult tissue, a constant flow of new cells produced by cell division “upstream” and a constant loss of differentiated cells “downstream” maintain the tissue in a dynamic equilibrium.
+
+in the river is never the same (**Figure 22–1**). Similarly, the characteristic architecture of a self-renewing tissue is maintained even though the cell population is always changing, with differentiated cells lost “downstream” and stem cells producing new cells “upstream.” Thus, the stem cells in such tissues must be able to both replicate themselves and produce differentiated cells for the life span of the organism. Without stem cells, these tissues and organs would fail rapidly, being unable to keep up with the natural turnover of cells. Indeed, defects in stem-cell functions can contribute to disease and aging for this reason.
+
+In this first section, we define the essential characteristics of stem cells, using two epithelial tissues as examples, the lining of the gut and the outer surface of the skin. We then consider how we can identify stem cells in tissues—by cell lineage tracing or, in the case of blood cells, by cell transplantation studies. We finally discuss tissues that can maintain themselves in the absence of stem cells.
+
+## Stem Cells Are Defined by Their Ability to Self-renew and Produce Differentiated Cells
+
+Many adult tissues, especially those with high cell turnover rates, contain **tissuespecific stem cells** (also called **adult stem cells**). Each of these tissues contains its own unique stem-cell population, capable of producing the differentiated cells characteristic of that tissue and not those of other tissues. The stem cells of each tissue possess their own distinct developmental history, without necessarily sharing molecular characteristics with the stem cells of other tissues.
+
+All stem cells, however, share two fundamental properties that define them: (1) they are able to replenish themselves as stem cells, generally throughout the lifetime of the organism—a process called self-renewal; and (2) they can also produce differentiated cells. Thus, when a stem cell divides, each daughter has a choice: it can either remain a stem cell or it can embark on a course that commits it to differentiation (**Figure 22–2**).
+
+Stem cells usually do not produce differentiated cells directly; instead, they make an intermediate cell type that is committed to a differentiation pathway but continues to proliferate, thereby generating greater numbers of differentiated cells. These cells are called progenitor cells; they are also called transit-amplifying cells because their divisions serve to amplify the number of differentiated cells that
+
+![](images/page_1_image_10.jpg)
+
+Figure 22–2 The defining characteristics of a stem cell. Each daughter cell produced when a stem cell divides can either remain a stem cell, in the process of self-renewal, or commit to differentiation, usually after a number of cell divisions. The self-renewal process maintains the pool of stem cells in the tissue.
+
+---
+
+STEM CELLS AND TISSUE HOMEOSTASIS
+
+1281
+
+![](images/page_2_image_2.jpg)
+
+Figure 22–3 A hierarchy of stem cells, progenitor cells, and differentiated cells. In addition to self-renewal, tissue-specific stem cells generally produce progenitor (transit-amplifying) cells that divide a limited number of times before they terminally differentiate. Stem cells and progenitor cells can be unipotent or multipotent, depending on whether they produce only one type or multiple types of differentiated cells.
+
+ultimately result from each stem-cell division (**Figure 22–3**). Unlike stem cells, these intermediate cells only go through a limited number of divisions before they differentiate. When a cell reaches the end of its differentiation pathway and does not divide again, it is terminally differentiated. When an adult stem cell or progenitor cell generates multiple differentiated cell types, it is multipotent; when it generates only one differentiated cell type, it is unipotent (see Figure 22–3).MBoC7 n22.101/22.03
+
+We now consider two epithelial tissues to illustrate how these different categories of cells are organized in a self-renewing adult tissue—the lining of the gut and the outer layer of the skin. In both cases, the stem cells continually produce transit-amplifying progenitor cells at one surface of the tissue, while terminally differentiated cells are lost from the opposite surface—upstream and downstream, respectively, in our river analogy.
+
+## The Epithelial Lining of the Small Intestine Is Continually Renewed Through Cell Proliferation in Crypts
+
+The lining of the small intestine (and of most other regions of the gut) is a single-layered epithelium, only one cell thick. The **intestinal epithelium** covers the surfaces of the villi that project into the gut lumen, and it lines the crypts that descend into the underlying connective tissue (**Figure 22–4**). Dividing cells, including the stem cells and progenitor cells, are restricted to the crypts, and terminally differentiated cells pour out of the crypts in a steady stream onto the villi. There are four main types of differentiated cells—one absorptive and three secretory (**Figure 22–5**):
+
+1. Absorptive cells (also called brush-border cells or enterocytes) are the majority cell type in the epithelium and have densely packed microvilli on their exposed surfaces. Their job is to take up nutrients from the gut lumen. To this end, they also produce hydrolytic enzymes that perform some of the final steps of extracellular digestion of food.
+
+2. Goblet cells secrete mucus into the gut lumen; this mucus covers the epithelium with a protective coat.
+
+3. Paneth cells form part of the innate immune defense system (discussed in Chapter 24) and secrete proteins that kill bacteria; they also secrete Wnt signal proteins (discussed in Chapter 15) required to maintain the stem-cell population.
+
+4. Enteroendocrine cells, of more than 15 different subtypes, secrete serotonin and peptide hormones that act on neurons and other cell types in the gut wall and regulate the growth, proliferation, and digestive activities of cells of the gut and other tissues.
+
+---
+
+1282
+
+Chapter 22: Stem Cells in Tissue Homeostasis and Regeneration
+
+![](images/page_3_image_2.jpg)
+
+Figure 22–4 Renewal of the gut epithelial lining. (A) The pattern of cell turnover and proliferation in the epithelium that forms the lining of the small intestine. Stem cells (red) lie at the crypt base, interspersed among nondividing differentiated cells (Paneth cells). Progeny of the stem cells move mainly upward from the crypts onto the villi; after a few quick divisions, they cease dividing and differentiate—some of them while still in the crypt, most of them as they emerge from the crypt. The Paneth cells, like the other nondividing differentiated cells, are continually replaced by the progeny of the stem cells, but they migrate downward to the crypt base and survive there for many weeks. (B) Micrograph of a section of part of the lining of the small intestine, showing the crypts and villi. Note the mixture of differentiated cell types, all generated from the stem cells; these are primarily absorptive cells, with mucus-secreting goblet cells (stained red) interspersed among them.
+
+As if on a conveyor belt, the absorptive, goblet, and enteroendocrine cells travel upward from their site of birth in the crypt, by a sliding movement in the plane of the epithelial sheet, to cover the surfaces of the villi. Within 3–4 days (in the mouse) after emerging from the crypts, the differentiated cells reach the tips of the villi, where they are discarded into the gut lumen (see Movie 20.7). The Paneth cells in the crypts are produced in much smaller numbers and have a different migration pattern. They live at the bottom of the crypts, where they too are continually replaced, although not so rapidly, persisting for several weeks before undergoing apoptosis and being phagocytosed by their neighbors.
+
+The stem cells that give rise to the intestinal epithelium are located just above the base of the crypt, interspersed among the Paneth cells. The stem cells can be identified because only they express a particular G-protein-coupled receptor called $L g r 5 ,$ which serves as a specific marker for the stem cellMBoC7 m22.01/22.04 population. When the stem cells divide, which they do every 24 hours or so in the mouse intestine, some of the progeny commit to differentiation, becoming transit-amplifying progenitor cells that migrate upward, while others remain stem cells in the process of self-renewal. The stem cells are multipotent, producing all the differentiated cell types in the epithelium.
+
+## Epidermal Stem Cells Maintain a Self-renewing, Waterproof, Epithelial Barrier on the Body Surface
+
+Stem-cell systems are organized in a variety of different ways depending on the tissue. For example, the outer epithelial covering of the body, the **epidermis**, undergoes continual renewal, but, unlike the intestinal epithelium, it is multi-layered, or stratified. Stem cells are located in the basal layer, as are the dividing transit-amplifying progenitor cells. Once the progenitor cells stop dividing, they leave the basal layer and move outward toward the exposed surface, undergoing
+
+---
+
+STEM CELLS AND TISSUE HOMEOSTASIS
+
+1283
+
+![](images/page_4_image_2.jpg)
+
+terminal differentiation as they go. They end up as lifeless scales, or squames, which are eventually shed from the surface of the skin (**Figure 22–6**).
+
+Even though the architecture of the epidermis is very different from that of the intestinal epithelium, many of the same basic principles apply. The stem cells are maintained by signals within a specific region of the tissue, which in the epidermis is the basal lamina and underlying connective tissue. The daughters of stem cells thatMBoC7 m22.02/22.05 are committed to differentiation undergo several divisions as transit-amplifying
+
+![](images/page_4_image_5.jpg)
+
+Figure 22–6 The multilayered structure of the epidermis. The epidermis forms the outer covering of the skin, creating a waterproof barrier that is self-repairing and continually renewed. Beneath this lies a relatively thick layer of connective tissue, which includes the tough, collagen-rich dermis (from which leather is made). The cells of the epidermis are called keratinocytes, because their characteristic differentiated activity is the synthesis of keratin intermediate filament proteins, which give the epidermis its toughness. These cells change their appearance and properties from one layer to the next, progressing through a regular program of terminal differentiation. Those in the innermost layer, attached to an underlying basal lamina, are termed basal cells, and it is normally only these that divide: the basal-cell population includes relatively small numbers of stem cells MB C7 m22.10/22.06along with larger numbers of transit-amplifying progenitor cells derived from them. Above the basal cells are several layers of larger prickle cells. Beyond the prickle cells lies the thin, darkly staining granular-cell layer, where the cells are sealed together to form a waterproof barrier; this marks the boundary between the inner, metabolically active strata and the outermost layer of the epidermis, consisting of dead cells whose intracellular organelles have disappeared. These outermost cells are reduced to flattened scales, or squames, filled with densely packed keratin, which are eventually shed from the surface of the skin. The time from exit of a cell from the basal layer to its loss by shedding at the surface is a week or two, depending on body region and species.
+
+Figure 22–5 The four main differentiated cell types found in the epithelial lining of the small intestine. All cells are oriented with the gut lumen at top. Broad orange arrows indicate direction of secretion or uptake of materials for each type of cell. All of these cells are generated from undifferentiated multipotent stem cells living near the bottoms of the crypts (see Figure 22–4). Absorptive (brush-border) cells outnumber the other cell types in the epithelium by about 10:1 or more. The microvilli on their apical surface provide a 30-fold increase in surface area, not only for the import of nutrients but also for the anchorage of enzymes that perform the final stages of extracellular digestion, breaking down small peptides and disaccharides into monomers that can be transported across the cell membrane. Goblet cells secrete mucus; these are the most common of the secretory cell types. Paneth cells secrete (along with some growth factors) cryptdins—proteins of the defensin family that kill bacteria. Different subtypes of enteroendocrine cells secrete serotonin and peptide hormones into the gut wall (and thence the blood). Cholecystokinin is a hormone released from enteroendocrine cells in response to the presence of nutrients in the gut. It binds to receptors on nearby sensory nerve endings and causes the release of digestive enzymes from the pancreas and bile from the gall bladder; it also signals to the brain to stop the feeling of hunger once one has eaten enough. (Absorptive and goblet cells, Don W. Fawcett/Science Source; Paneth and enteroendocrine cells, from R.V. Krstić, Illustrated Encyclopedia of Human Histology. Berlin: Springer-Verlag, 1964. With permission from Springer Nature.)
+
+---
+
+1284
+
+Chapter 22: Stem Cells in Tissue Homeostasis and Regeneration
+
+cells in the basal layer before differentiating. Moreover, most of the signaling pathways that organize the intestinal stem-cell system are also involved in regulating the epidermal stem-cell system, although with different individual roles.
+
+## Cell Lineage Tracing Reveals the Location of Stem Cells and Their Progeny
+
+Stem cells in adult tissues are usually rare and difficult to identify in conventional tissue sections, unless a stem cell–specific marker like Lgr5 is available. Recombinant DNA technology provides a general and powerful way to identify stem cells and their progeny in any renewing tissues using a technique called cell lineage tracing. The method uses transgenic animals to create a visible genetic mark in just a few cells, which, over time, give rise to widely separated and easily distinguished clones of progeny cells, as explained in **Figure 22–7** and **Figure 22–8**. This approach does not require prior knowledge as to whether a tissue contains stem cells or not. If they exist, the stem cells will be marked randomly and will lead to a persistent clonal lineage that contains stem cells as well as differentiated cells (see Figure 22–7B); dividing progenitor cells will also be randomly marked and produce labeled clones, but all of these will eventually disappear (see Figure 22–7C). The analysis of the clones not only indicates whether stem cells are
+
+![](images/page_5_image_5.jpg)
+
+Figure 22–7 Clonal analysis using a genetic marker. (A) Transgenic animals containing two transgenes can be used to drive expression of a readily detected and heritable marker in a small set of cells. The first transgene encodes a marker gene, such as one that encodes green fluorescent protein (GFP). However, the expression of the GFP transgene, shown here in green, is prevented by a blocking sequence (red) that is flanked by $\mathsf { L O X P }$ sites (pink; see Figure 5–66). The second transgene, CreERT2 (brown), encodes a chimeric form of the Cre recombinase called CreERT, which consists of the Cre recombinase linked to the estrogen receptor protein; this enzyme becomes active as a recombinase only when it binds the artificial estrogen analog tamoxifen (red spheres). Addition of tamoxifen leads to a recombination event that removes the blocking DNA sequence. As a result, the GFP marker is expressed. Because the blocking DNA has been permanently removed from the genome, the marker continues to be expressed in all the descendants of a cell in which the recombination event has MBoC7 n22.102/22.07occurred. With a low dose of the inducer molecule tamoxifen, it is possible to activate the marker at random in just a few widely spaced cells, giving rise to distinguishable clones. (B) If the recombination event occurs in a stem cell, a clonal lineage will be marked, and the labeling will persist over time as the marked stem cell self-renews and produces differentiated cells. (C) If the recombination event occurs in a cell that is not a stem cell, the label will disappear over time as the marked cell differentiates and is eventually lost.
+
+---
+
+STEM CELLS AND TISSUE HOMEOSTASIS
+
+1285
+
+1 day
+
+![](images/page_6_image_3.jpg)
+
+5 days
+
+![](images/page_6_image_5.jpg)
+
+60 days
+
+![](images/page_6_image_7.jpg)
+
+present, but also where the stem cells are located and whether they are unipotent or multipotent.
+
+A more directed approach can be used for cell lineage tracing if a gene that is expressed specifically in the stem cells in a tissue is known, as is the case for the Lgr5 gene in the mouse intestine. In this case, one can use the gene’s promoter to express the genetic marker specifically in the stem cells. It was this type of exper-MBoC7 m22.06/22.08 iment that initially established that Lgr5-expressing cells in the mouse intestinal epithelium are stem cells and that they are multipotent (see Figure 22–8).
+
+## Quiescent Stem Cells Are Difficult to Identify by Lineage Tracing
+
+The lineage tracing method just described assumes that the stem cells in a tissue are actively dividing to generate daughter cells that self-renew or differentiate. Some adult stem cells, however, reside in a quiescent state, serving as a “reservoir” for when they are needed: they divide only rarely or not at all, unless they are induced to do so by a stimulus, such as tissue injury. In these cases, it can require extra time or stimulation to reveal the stem cells by lineage tracing.
+
+Human **skeletal muscle** provides an example. It consists of multinucleated muscle cells (muscle fibers) that form during development by the fusion of terminally differentiated myoblasts. Humans do not normally generate new skeletal muscle in adult life, but they still have the capacity to do so when there is a need for muscle growth or repair. Cells capable of serving as myoblasts are retained as small, flattened, and nondividing cells lying in close contact with the mature muscle fiber and contained within its sheath of basal lamina (**Figure 22–9**). If the muscle is damaged or stimulated to grow, these satellite cells are activated to proliferate, and their progeny can fuse with the existing muscle fiber to repair
+
+Figure 22–8 Lgr5-expressing stem cells and their progeny in the small intestine. The basic method shown in Figure 22–7 was modified here to mark single intestinal stem cells and trace the fates of their progeny. The Lgr5 gene encodes a member of the family of G-protein-linked transmembrane receptors, and it is expressed specifically in stem cells near the crypt base. In this case, the Lgr5 promoter was used to drive expression of CreERT2, and treatment with a low dose of tamoxifen resulted in occasional stem cells expressing the marker protein LacZ (rather than GFP). These cells and all of their progeny could subsequently be detected with a blue histochemical stain. All of the blue cells in these images derive from a single Lgr5-expressing stem cell. After 60 days, the blue progeny of this cell are seen to extend almost all the way up a villus. These progeny can be shown to include all types of differentiated cells, as well as persistent Lgr5-expressing cells at the crypt base. This proves that Lgr5- expressing cells are multipotent stem cells. (From N. Barker et al., Nature 449:1003–1007, published 2007 by Nature Publishing Group. Reproduced with permission of SNCSC.)
+
+Figure 22–9 The repair of skeletal muscle fibers by satellite cells. (A) The specimen is stained with an antibody (red) against a muscle cadherin, M-cadherin, which is present on both the satellite cell and the muscle fiber and is concentrated at the site where their membranes are in contact. The nuclei of the muscle fiber are stained green, and the nucleus of the satellite cell is stained blue. (B) Schematic drawing of the repair of a damaged muscle fiber by the proliferation and fusion of satellite cells. (A, courtesy of Terence Partridge.)
+
+![](images/page_6_image_15.jpg)
+
+---
+
+1286
+
+Chapter 22: Stem Cells in Tissue Homeostasis and Regeneration
+
+the damaged muscle or to allow muscle growth. Satellite cells or some subset of them are thus the stem cells of adult skeletal muscle, normally held in reserve in a quiescent state but available when needed as a self-renewing source of terminally differentiated myoblasts.
+
+The process of muscle repair by means of satellite cells is limited in what it can achieve. In one form of muscular dystrophy, for example, a genetic defect in the cytoskeletal protein dystrophin slowly but progressively damages differentiated skeletal muscle cells. As a result, satellite cells proliferate to repair the damaged muscle fibers. But this regenerative response is unable to keep pace with the damage, and connective tissue eventually replaces the muscle fibers, blocking any further possibility of repair. A similar decline in the capacity for repair contributes to the progressive muscle weakening that occurs in the elderly.
+
+## Hematopoietic Stem Cells Can Be Identified by Transplantation
+
+A different method to identify stem cells in adult tissues is by cell transplantation. The method was first used to identify the stem cells of the hematopoietic (blood-making) system, the most complex stem-cell system in the adult mammalian body. The **hematopoietic stem cells** that give rise to both the red blood cells (**erythrocytes**) and white blood cells (**leukocytes**) are located in the adult bone marrow, where they also produce blood platelets. There are many different white blood cell types, including monocytes that can exit the bloodstream and develop into macrophages, which are found in most organs. When an animal is exposed to a large dose of x-rays, most of the hematopoietic cells in the bone marrow are destroyed, and, as a result, the animal dies within days because of its inability to produce new blood cells. The animal can be saved, however, by a transfusion of cells taken from the bone marrow of a healthy donor mouse of the same inbred
+
+<table><tbody><tr><td colspan="3">TABLE 22-1 Blood Cells</td></tr><tr><td>Type of cell</td><td>Main functions</td><td>Typical concentration in human blood (cells/liter)</td></tr><tr><td>Red blood cells (erythrocytes)</td><td>Transport O<sub>2</sub> to and CO<sub>2</sub> from tissues</td><td>5 × 1012</td></tr><tr><td colspan="3">White blood cells (leukocytes)</td></tr><tr><td colspan="3">Granulocytes</td></tr><tr><td>Neutrophils (polymorphonuclear leukocytes)</td><td>Phagocytose and kill invading bacteria</td><td>5 × 10<sup>9</sup></td></tr><tr><td>Eosinophils</td><td>Destroy larger parasites and modulate allergic inflammatory responses</td><td>2 × 10<sup>8</sup></td></tr><tr><td>Basophils</td><td>Release histamine (and in some species serotonin) in certain immune reactions</td><td>4 × 10<sup>7</sup></td></tr><tr><td>Monocytes</td><td>Become tissue macrophages, which phagocytose and digest invading microorganisms and foreign bodies as well as damaged senescent cells; some also differentiate into dendritic cells</td><td>4 × 10<sup>8</sup></td></tr><tr><td colspan="3">Lymphocytes</td></tr><tr><td>B cells</td><td>Make and secrete antibodies</td><td>∼0.3 × 10<sup>9</sup></td></tr><tr><td>T cells</td><td>Kill virus-infected cells and regulate activities of other leukocytes</td><td>∼2 × 10<sup>9</sup></td></tr><tr><td>Natural killer (NK) cells</td><td>Kill virus-infected cells and some tumor cells</td><td>1 × 10<sup>8</sup></td></tr><tr><td>Platelets (cell fragments arising from megakaryocytes in bone marrow)</td><td>Initiate blood clotting</td><td>3 × 1011</td></tr><tr><td colspan="3">Humans contain about 5 liters of blood, accounting for 7% of body weight. Red blood cells constitute about 45% of this volume and white blood cells about 1%, the rest being the liquid blood plasma.</td></tr></tbody></table>
+
+---
+
+STEM CELLS AND TISSUE HOMEOSTASIS
+
+1287
+
+Figure 22–10 Rescue of an irradiated mouse by a transfusion of bone marrow cells. An essentially similar procedure is used in the treatment of leukemia in humans by bone marrow transplantation after irradiation or chemotherapy.
+
+x-irradiation halts blood cell production; mouse would die if no further treatment were given
+
+strain. Among these cells there are some that can colonize the irradiated host and permanently re-equip it with hematopoietic tissue (**Figure 22–10**). Such experiments prove that the bone marrow contains an entire hematopoietic stem-cell system, and they have allowed scientists to isolate the relevant stem cells and discover the molecular features that distinguish them.
+
+![](images/page_8_image_7.jpg)
+
+For this purpose, cells taken from mouse bone marrow are sorted (using a fluorescence-activated cell sorter) according to their cell-surface antigens, and the different fractions are transfused into irradiated mice. If a fraction rescues the irradiated mice, it must contain hematopoietic stem cells. In this way, it was shown that the hematopoietic stem cells display a specific combination of cell-surface proteins and that, by appropriate cell sorting, one can obtain virtually pure stemcell preparations. The stem cells turn out to be a tiny fraction of the mouse bone marrow population—about 1 cell in 50,000–100,000; but this is enough. Remarkably, a single such cell injected into a host mouse with defective hematopoiesis is sufficient to reconstitute its entire hematopoietic system, generating a complete set of blood-cell types, as well as fresh stem cells. This and lineage tracing experiments have established that an individual hematopoietic stem cell is multipotent and can self-renew and give rise to the complete range of blood-cell types.
+
+INJECT BONE MARROW CELLS FROM HEALTHY DONOR
+
+![](images/page_8_image_10.jpg)
+
+mouse survives; the injected stem cells colonize its hematopoietic tissues and generate a steady supply of new blood cells
+
+(C)
+
+(B)
+
+![](images/page_8_image_12.jpg)
+
+Blood contains large numbers of many types of differentiated cells (**Table 22–1**), many of which can be seen in a standard, stained smear of human blood (**Figure 22–11**). Erythrocytes are homogeneous and remain in the blood vessels, where they transport $\mathrm { O } _ { 2 }$ and $\mathrm { C O _ { 2 } }$ bound to hemoglobin. By contrast, leukocytes are heterogeneous in morphology and function and must crawl across the walls of small blood vessels into tissues to function. Terminally differentiated
+
+![](images/page_8_image_14.jpg)
+
+![](images/page_8_image_15.jpg)
+
+![](images/page_8_image_16.jpg)
+
+Figure 22–11 Human blood cells. (A) A light micrograph of a blood smear stained with the Romanowsky stain, which faintly colors the red blood cells red and strongly colors the white blood cells blue. (B–E) Electron micrographs of (B) a neutrophil, (C) a basophil, (D) an eosinophil, and (E) a monocyte. (Electron micrographs of lymphocytes are shown in Figure 24–14.) Each of the cell types shown here has a different function (see Table 22–1), which is reflected in the distinctive types of secretory granules and lysosomes each cell type contains. There is only one nucleus per cell, but it has an irregular lobed shape, and in panels B, C, and D the connections between the lobes are out of the plane of section. (A–D, courtesy of Dorothy Bainton; E, courtesy of David Mason.)
+
+(D)
+
+![](images/page_8_image_19.jpg)
+
+(E)
+
+![](images/page_8_image_21.jpg)
+
+---
+
+1288
+
+Chapter 22: Stem Cells in Tissue Homeostasis and Regeneration
+
+blood cells have relatively short life spans and are produced throughout the life of the animal, so hematopoietic stem cells must generate enormous numbers of these differentiated cells each day. But they do not produce them directly. Instead, the stem cells continually produce large numbers of transit-amplifying progenitor cells in the bone marrow, which are committed to differentiation but go through multiple divisions before they terminally differentiate.
+
+The stem cells, however, do not jump directly from a multipotent stem-cell state into a committed and specific pathway of differentiation; instead, they go through a number of cell divisions, in which they progressively restrict their developmental options in a series of steps (**Figure 22–12**). The first step is usually to become committed to either a myeloid or a lymphoid fate, by way of two kinds of multipotent transit-amplifying progenitor cells. One is capable of generating large numbers of all the different types of **myeloid cells**, including blood **granulocytes** (neutrophils, eosinophils, and basophils), **monocytes** (the precursors of macrophages and dendritic cells), erythrocytes, and **megakaryocytes** (which remain in the bone marrow and produce blood platelets by pinching off cell fragments) (**Movie 22.1**). The other type of multipotent progenitor cell gives rise to large numbers of different types of **lymphoid cells**, including the B and T lymphocytes of the adaptive immune system and the lymphocyte-like natural killer (NK) cells of the innate immune system (discussed in Chapter 24). Further commitment steps ultimately give rise to progenitor cells committed to the production of just one cell type, although this final commitment step occurs well before the cells cease proliferating and terminally differentiate. Many different signal molecules, produced inside and outside the bone marrow, control the survival, proliferation, and pathway commitment of hematopoietic cells and their committed progeny in the bone marrow and thereby regulate how many of each type of differentiated blood cell is eventually produced.
+
+Figure 22–12 A simplified scheme of mouse and human hematopoiesis. A multipotent hematopoietic stem cell normally divides infrequently to generate either more multipotent stem cells, which are self-renewing, or multipotent progenitor cells, which give rise to all the cells of the blood and immune system. The progenitor cells divide a limited number of times and go through multiple stepwise intermediates before they develop into fully differentiated cells. As they go through their divisions, the progenitors become progressively more specialized in the range of cell types that they can give rise to, as indicated by the branching of this cell lineage diagram. In adult mammals, all of the cells shown develop mainly in the bone marrow—except for T lymphocytes, which as indicated develop in the thymus, and macrophages and some dendritic cells, which develop from monocytes that are circulating in the blood. Note that not all stem cells generate the identical patterns of progeny via precisely the same sequence.
+
+![](images/page_9_image_5.jpg)
+
+---
+
+STEM CELLS AND TISSUE HOMEOSTASIS
+
+1289
+
+In this hierarchical hematopoietic system, only the stem cells can self-renew for the life of the individual, and a single stem-cell division can lead to the production of thousands to millions of differentiated progeny. This explains why the number of stem cells is such a tiny fraction of the total population of hematopoietic cells in the bone marrow. Keeping the number of stem-cell divisions low has important advantages. If these divisions on their own had to keep up with the high demand for terminally differentiated blood cells, they would result in rapid replicative cell senescence and exhaustion of the stem-cell pool, with dire consequences. Moreover, the lower the number of stem-cell divisions, the lower the risk of the cells accumulating dangerous mutations, which would persist in mutant clones; as discussed in Chapter 20, such clones are a particular danger in the hematopoietic system, where a relatively small number of mutations can be sufficient to cause blood-cell cancers.
+
+## Some Tissues Do Not Require Stem Cells for Their Maintenance
+
+Some types of cells can divide even though fully differentiated, allowing for renewal and regeneration without the use of stem cells. The insulin-secreting **pancreatic b cells** are one example. Their mode of renewal has a special importance, because it is their loss through autoimmune attack that is responsible for type 1 (juvenile-onset) diabetes, and their functional decline with age and obesity is also a significant factor in type 2 (adult-onset) diabetes. The β cells are normally sequestered in cell clusters called islets of Langerhans. The islets seem not to contain stem cells, yet new β cells are continually generated within the islets. Lineage tracing studies, similar to those described earlier, show that the renewal of this population normally occurs by the simple division of differentiated insulin-producing β cells.
+
+Another tissue that can renew by simple division of fully differentiated cells is the liver. The main cell type in the liver is the **hepatocyte**, a large cell that performs the liver’s many metabolic functions. Hepatocytes normally live for a year or more and divide at a very slow rate. Powerful homeostatic mechanisms operate to adjust both their rate of cell proliferation and their rate of cell death, to keep the liver at its normal size and to restore that size in the case of damage. A dramatic effect is seen if large numbers of hepatocytes are removed surgically or killed by poisoning with carbon tetrachloride. Within a day or so after either sort of damage, a surge of cell division occurs among the surviving hepatocytes, quickly replacing the lost tissue. If two-thirds of a rat’s liver is removed, for example, a liver of nearly normal size can regenerate by hepatocyte proliferation within about 2 weeks.
+
+Both the pancreas and the liver also contain small populations of stem cells that can be called into play as a backup mechanism to produce the differentiated cell types in more extreme circumstances.
+
+## In Response to Injury, Some Differentiated Cells Can Revert to Progenitor Cells and Some Progenitor Cells Can Revert to Stem Cells
+
+Although the pathways from stem cell to progenitor cell to differentiated cell are normally unidirectional, there are some cases where injury can reverse the direction. One striking example occurs when a myelinated mammalian nerve is cut: the axon distal to the cut degenerates, and the differentiated myelinating Schwann cells (see Figure 11–35) dedifferentiate to form proliferating Schwanncell progenitor cells. These progenitor cells help guide the regenerating axons back to their original targets and then remyelinate the axons to complete the regeneration process.
+
+Similarly, in some tissues, when stem cells are lost, progenitor cells that have committed to differentiation can reprogram to revert to stem cells. In both the mouse and Drosophila testis, for example, spermatogonial cells typically follow a unidirectional development pathway from stem cell to proliferating progenitor cells, which undergo meiosis and finally differentiate into sperm. If stem cells are lost, either naturally or experimentally, the mitotically proliferating progenitor
+
+---
+
+1290
+
+Chapter 22: Stem Cells in Tissue Homeostasis and Regeneration
+
+cells can reprogram and revert to stem cells. More generally, this process might contribute to the long-term maintenance of stem-cell populations, allowing the lifetime of individual stem cells to be shorter than the lifetime of the organism. Unfortunately, cancer cells often also acquire stem cell–like properties, allowing them to self-renew indefinitely (discussed in Chapter 20).
+
+## Some Tissues Lack Stem Cells and Are Not Renewable
+
+Some adult tissues that lack stem cells are not able to regenerate. The remarkable variation in the ability of different tissues to regenerate is illustrated by comparing the olfactory epithelium in the nose, the auditory epithelium of the inner ear, and the photoreceptive epithelium of the retina, which exhibit striking differences in their renewal capacity. The olfactory epithelium contains a population of stem cells that give rise to differentiated cells that have a limited life span and are continually replaced. But unlike the epidermis discussed earlier, these differentiated olfactory cells are neurons; they have their cell bodies in the olfactory epithelium and extend their axons back to the olfactory bulbs in the brain. The renewal of this epithelium therefore involves the continual production of new axons that have to navigate back to specific sites in the brain, where they form new synapses.
+
+In contrast, in mammals at least, the auditory epithelium and retinal photoreceptive epithelium lack stem cells, and their sensory receptor cells—the sensory hair cells in the ear and the photoreceptors in the retina—are irreplaceable. If they are destroyed—whether by too much exposure to loud noise, by looking into the beam of a laser, or through degenerative processes occurring in disease or in old age—the loss is permanent.
+
+We will return to tissue regeneration later in the chapter.
+
+## Summary
+
+Many adult tissues, particularly those with a high cell turnover rate such as the intestinal lining, skin epidermis, and blood, are continually renewed by stem cells to maintain tissue homeostasis throughout the lifetime of the organism. Stem cells are defined by their ability to both self-renew and to generate terminally differentiated cells, usually by way of rapidly dividing, transit-amplifying progenitor cells. These properties can be revealed experimentally through lineage-tracing or transplantation experiments. Tissue-specific, or adult, stem cells are restricted in their differentiation potential, only generating one or more of the specific cell types of a particular tissue.
+
+In the single-layer lining of the small intestine, multipotent stem cells are located near the base of each crypt, where they self-renew and produce dividing committed progenitor cells, most of which flow upward and terminally differentiate into one of three main types of gut cells when they reach the villus; other progenitor cells move in the opposite direction and become Paneth cells, which remain at the base of the crypt and help maintain the stem cells. Other self-renewing epithelia, such as the epidermis, have a multilayered (stratified) architecture, with stem cells and their differentiating progeny arranged in different ways, but are governed by similar basic principles.
+
+The hematopoietic system is the most complex mammalian stem-cell system; all the red blood cells and the many types of white blood cells derive from a common, multipotent, hematopoietic stem cell in the adult bone marrow, where it divides slowly and produces multipotent and unipotent progenitor (transit-amplifying) cells, which divide rapidly and differentiate into a large number and variety of terminally differentiated cell types every day. In other tissues, such as skeletal muscle, stem cells are quiescent and only divide and differentiate when tissue growth or repair is required. Adult tissue renewal and repair do not always depend on stem cells; in the pancreas and liver, for example, differentiated cells can divide throughout life to replace lost cells and maintain tissue homeostasis. In some cases, progenitor cells can be generated from differentiated cells, and stem cells can be

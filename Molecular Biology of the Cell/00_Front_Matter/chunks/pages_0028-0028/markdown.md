@@ -1,0 +1,88 @@
+- Attractions Between Nucleosomes Compact the Chromatin Fiber 202
+- Summary 203
+- THE EFFECT OF CHROMATIN STRUCTURE ON DNA FUNCTION 203
+- Different Regions of the Human Genome Are Packaged Very Differently in Chromatin 204
+- Heterochromatin Is Highly Condensed and Restricts Gene Expression 204
+- The Heterochromatic State Can Spread Along a Chromosome and Be Inherited from One Cell Generation to the Next 205
+- The Core Histones Are Covalently Modified at Many Different Sites 206
+- Chromatin Acquires Additional Variety Through the Site-specific Insertion of a Small Set of Histone Variants 208
+- Covalent Modifications and Histone Variants Can Act in Concert to Control Chromosome Functions 208
+- A Complex of Reader and Writer Proteins Can Spread Specific Chromatin Modifications Along a Chromosome 210
+- Barrier DNA-Protein Complexes Block the Spread of Reader-Writer Complexes and Thereby Separate Neighboring Chromatin Domains 212
+- Centromeres Have a Special, Inherited Chromatin Structure 213
+- Some Forms of Chromatin Can Be Directly Inherited 215
+- The Abnormal Perturbations of Heterochromatin That Arise During Tumor Progression Contribute to Many Cancers 215
+- Summary 217
+- THE GLOBAL STRUCTURE OF CHROMOSOMES 217
+- Chromosomes Are Folded into Large Loops of Chromatin 217
+- Polytene Chromosomes Are Uniquely Useful for Visualizing Chromatin Structures 218
+- Chromosome Loops Decondense When the Genes Within Them Are Expressed 220
+- Mammalian Interphase Chromosomes Occupy Discrete Territories in the Nucleus, with Their Heterochromatin and Euchromatin Distributed Differently 220
+- A Biochemical Technique Called Hi-C Reveals Details of Chromosome Organization 221
+- Chromosomal DNA Is Organized into Loops by Large Protein Rings 223
+- Euchromatin and Heterochromatin Separate Spatially in the Nucleus 225
+- Mitotic Chromosomes Are Highly Condensed 227
+- Summary 228
+- HOW GENOMES EVOLVE 229
+- Genome Comparisons Reveal Functional DNA Sequences by Their Conservation Throughout Evolution 230
+- Genome Alterations Are Caused by Failures of the Normal Mechanisms for Copying and Maintaining DNA, as Well as by Transposable DNA Elements 231
+- The Genome Sequences of Two Species Differ in Proportion to the Length of Time Since They Have Separately Evolved 232
+- Phylogenetic Trees Constructed from a Comparison of DNA Sequences Trace the Relationships of All Organisms 233
+- A Comparison of Human and Mouse Chromosomes Shows How the Structures of Genomes Diverge 234
+- The Size of a Vertebrate Genome Reflects the Relative Rates of DNA Addition and DNA Loss in a Lineage 236
+- Multispecies Sequence Comparisons Identify Many Conserved DNA Sequences of Unknown Function 237
+- Changes in Previously Conserved Sequences Can Help Decipher Critical Steps in Evolution 238
+- Mutations in the DNA Sequences That Control Gene Expression Have Driven Many of the Evolutionary Changes in Vertebrates 239
+- Gene Duplication Also Provides an Important Source of Genetic Novelty During Evolution 240
+- Duplicated Genes Diverge 240
+- The Evolution of the Globin Gene Family Shows How DNA Duplications Contribute to the Evolution of Organisms 241
+- Genes Encoding New Proteins Can Be Created by the Recombination of Exons 242
+- Neutral Mutations Often Spread to Become Fixed in a Population, with a Probability That Depends on Population Size 243
+
+- We Can Trace Human History by Analyzing Genomes 244
+- The Sequencing of Hundreds of Thousands of Human Genomes Reveals Much Variation 245
+- Most of the Variants Observed in the Human Population Are Common Alleles, with at Most a Weak Effect on Phenotype 246
+- Forensic Analyses Exploit Special DNA Sequences with Unusually High Mutation Rates 247
+- An Understanding of Human Variation Is Critical for Improving Medicine 248
+- Summary 248
+- Problems 249
+- References 251
+
+## Chapter 5 DNA Replication, Repair, and Recombination
+
+- THE MAINTENANCE OF DNA SEQUENCES 253
+- Mutation Rates Are Extremely Low 253
+- Low Mutation Rates Are Necessary for Life as We Know It 254
+- Summary 255
+- DNA REPLICATION MECHANISMS 255
+- Base-pairing Underlies DNA Replication and DNA Repair 255
+- The DNA Replication Fork Is Asymmetrical 256
+- The High Fidelity of DNA Replication Requires Several Proofreading Mechanisms 258
+- DNA Replication in the 5'-to-3' Direction Allows Efficient Error Correction 260
+- A Special Nucleotide-polymerizing Enzyme Synthesizes Short RNA Primer Molecules 260
+- Special Proteins Help to Open Up the DNA Double Helix in Front of the Replication Fork 261
+- A Sliding Ring Holds a Moving DNA Polymerase onto the DNA 262
+- The Proteins at a Replication Fork Cooperate to Form a Replication Machine 263
+- DNA Replication Is Fundamentally Similar in Eukaryotes and Bacteria 265
+- A Strand-directed Mismatch Repair System Removes Replication Errors That Remain in the Wake of the Replication Machine 267
+- The Accidental Incorporation of Ribonucleotides During DNA Replication Is Corrected 269
+- DNA Topoisomerases Prevent DNA Tangling During Replication 269
+- Summary 272
+- THE INITIATION AND COMPLETION OF DNA REPLICATION IN CHROMOSOMES 272
+- DNA Synthesis Begins at Replication Origins 272
+- Bacterial Chromosomes Typically Have a Single Origin of DNA Replication 273
+- Eukaryotic Chromosomes Contain Multiple Origins of Replication 273
+- In Eukaryotes, DNA Replication Takes Place During Only One Part of the Cell Cycle 276
+- Eukaryotic Origins of Replication Are "Licensed" for Replication by the Assembly of an Origin Recognition Complex 276
+- Features of the Human Genome That Specify Origins of Replication Remain to Be Fully Understood 277
+- Properties of the ORC Ensure That Each Region of the DNA Is Replicated Once and Only Once in Each S Phase 277
+- New Nucleosomes Are Assembled Behind the Replication Fork 279
+- Termination of DNA Replication Occurs Through the Ordered Disassembly of the Replication Fork 280
+- Telomerase Replicates the Ends of Chromosomes 281
+- Telomeres Are Packaged into Specialized Structures That Protect the Ends of Chromosomes 282
+- Telomere Length Is Regulated by Cells and Organisms 282
+- Summary 284
+- DNA REPAIR 284
+- Without DNA Repair, Spontaneous DNA Damage Would Rapidly Change DNA Sequences 286
+- The DNA Double Helix Is Readily Repaired 288
+- DNA Damage Can Be Removed by More Than One Pathway 288

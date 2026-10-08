@@ -1,0 +1,98 @@
+- Immunoprecipitation Is a Rapid Affinity Purification Method 486
+- Genetically Engineered Tags Provide an Easy Way to Purify Proteins 486
+- Purified Cell-free Systems Are Required for the Precise Dissection of Molecular Functions 486
+- Summary 487
+- ANALYZING PROTEINS 487
+- Proteins Can Be Separated by SDS Polyacrylamide-Gel Electrophoresis 487
+- Two-dimensional Gel Electrophoresis Provides Greater Protein Separation 489
+- Specific Proteins Can Be Detected by Blotting with Antibodies 490
+- Hydrodynamic Measurements Reveal the Size and Shape of a Protein Complex 490
+- Mass Spectrometry Provides a Highly Sensitive Method for Identifying Unknown Proteins 491
+- Sets of Interacting Proteins Can Be Identified by Biochemical Methods 493
+- Optical Methods Can Monitor Protein Interactions 493
+- Protein Structure Can Be Determined Using X-ray Diffraction 494
+- NMR Can Be Used to Determine Protein Structure in Solution 496
+- Protein Sequence and Structure Provide Clues About Protein Function 497
+- Summary 498
+- ANALYZING AND MANIPULATING DNA 498
+- Restriction Nucleases Cut Large DNA Molecules into Specific Fragments 498
+- Gel Electrophoresis Separates DNA Molecules of Different Sizes 499
+- Purified DNA Molecules Can Be Specifically Labeled with Radioisotopes or Chemical Markers in Vitro 501
+- Genes Can Be Cloned Using Bacteria 501
+- An Entire Genome Can Be Represented in a DNA Library 503
+- Hybridization Provides a Powerful but Simple Way to Detect Specific Nucleotide Sequences 505
+- Genes Can Be Cloned in Vitro Using PCR 506
+- PCR Is Also Used for Diagnostic and Forensic Applications 507
+- PCR and Synthetic DNA Are Ideal Sources of Specific Gene Sequences for Cloning 510
+- DNA Cloning Allows Any Protein to Be Produced in Large Amounts 511
+- DNA Can Be Sequenced Rapidly by Dideoxy Sequencing 512
+- Next-Generation Sequencing Methods Have Revolutionized DNA and RNA Analysis 514
+- To Be Useful, Genome Sequences Must Be Annotated 516
+- Summary 518
+- STUDYING GENE FUNCTION AND EXPRESSION 518
+- Classical Genetic Screens Identify Random Mutants with Specific Abnormalities 519
+- Mutations Can Cause Loss or Gain of Protein Function 522
+- Complementation Tests Reveal Whether Two Mutations Are in the Same Gene or Different Genes 523
+- Gene Products Can Be Ordered in Pathways by Epistasis Analysis 523
+- Mutations Responsible for a Phenotype Can Be Identified Through DNA Analysis 524
+- Rapid and Cheap DNA Sequencing Has Revolutionized Human Genetic Studies 524
+- Linked Blocks of Polymorphisms Have Been Passed Down from Our Ancestors 525
+- Sequence Variants Can Aid the Search for Mutations Associated with Disease 526
+- Genomics Is Accelerating the Discovery of Rare Mutations That Predispose Us to Serious Disease 527
+- The Cellular Functions of a Known Gene Can Be Studied with Genome Engineering 527
+- Animals and Plants Can Be Genetically Altered 528
+- The Bacterial CRISPR System Has Been Adapted to Edit Genomes in a Wide Variety of Species 530
+- Large Collections of Engineered Mutations Provide a Tool for Examining the Function of Every Gene in an Organism 531
+- RNA Interference Is a Simple and Rapid Way to Test Gene Function 533
+- Reporter Genes Reveal When and Where a Gene Is Expressed 534
+- In Situ Hybridization Can Reveal the Location of mRNAs and Noncoding RNAs 535
+
+- Expression of Individual Genes Can Be Measured Using Quantitative RT-PCR 536
+- Global Analysis of mRNAs by RNA-seq Provides a Snapshot of Gene Expression 536
+- Genome-wide Chromatin Immunoprecipitation Identifies Sites on the Genome Occupied by Transcription Regulators 538
+- Ribosome Profiling Reveals Which mRNAs Are Being Translated in the Cell 538
+- Recombinant DNA Methods Have Revolutionized Human Health 539
+- Transgenic Plants Are Important for Agriculture 540
+- Summary 542
+- MATHEMATICAL ANALYSIS OF CELL FUNCTION 542
+- Regulatory Networks Depend on Molecular Interactions 543
+- Differential Equations Help Us Predict Transient Behavior 545
+- Promoter Activity and Protein Degradation Affect the Rate of Change of Protein Concentration 546
+- The Time Required to Reach Steady State Depends on Protein Lifetime 547
+- Quantitative Methods Are Similar for Transcription Repressors and Activators 548
+- Negative Feedback Is a Powerful Strategy in Cell Regulation 549
+- Delayed Negative Feedback Can Induce Oscillations 549
+- DNA Binding by a Repressor or an Activator Can Be Cooperative 551
+- Positive Feedback Is Important for Switchlike Responses and Bistability 551
+- Robustness Is an Important Characteristic of Biological Networks 553
+- Two Transcription Regulators That Bind to the Same Gene Promoter Can Exert Combinatorial Control 554
+- An Incoherent Feed-forward Interaction Generates Pulses 555
+- A Coherent Feed-forward Interaction Detects Persistent Inputs 556
+- The Same Network Can Behave Differently in Different Cells Because of Stochastic Effects 557
+- Several Computational Approaches Can Be Used to Model the Reactions in Cells 557
+- Statistical Methods Are Critical for the Analysis of Biological Data 558
+- Summary 558
+- Problems 559
+- References 561
+
+## Chapter 9 Visualizing Cells and Their Molecules 563
+
+- LOOKING AT CELLS AND MOLECULES IN THE LIGHT MICROSCOPE 563
+- The Conventional Light Microscope Can Resolve Details $0.2\mu \mathrm{m}$ Apart 564
+- Photon Noise Creates Additional Limits to Resolution When Light Levels Are Low 567
+- Living Cells Are Seen Clearly in a Phase-Contrast or a Differential-Interference-Contrast Microscope 567
+- Images Can Be Enhanced and Analyzed by Digital Techniques 568
+- Intact Tissues Are Usually Fixed and Sectioned Before Microscopy 569
+- Specific Molecules Can Be Located in Cells by Fluorescence Microscopy 570
+- Antibodies Can Be Used to Detect Specific Proteins 572
+- Individual Proteins Can Be Fluorescently Tagged in Living Cells and Organisms 573
+- Protein Dynamics Can Be Followed in Living Cells 575
+- Fluorescent Biosensors Can Monitor Cell Signaling 576
+- Imaging of Complex Three-dimensional Objects Is Possible with the Optical Microscope 577
+- The Confocal Microscope Produces Optical Sections by Excluding Out-of-Focus Light 578
+- Superresolution Fluorescence Techniques Can Overcome Diffraction-limited Resolution 580
+- Single-Molecule Localization Microscopy Also Delivers Superresolution 583
+- Expanding the Specimen Can Offer Higher Resolution, but with a Conventional Microscope 585
+- Large Multicellular Structures Can Be Imaged Over Time 586
+- Single Molecules Can Be Visualized by Total Internal Reflection Fluorescence Microscopy 587
+- Summary 588

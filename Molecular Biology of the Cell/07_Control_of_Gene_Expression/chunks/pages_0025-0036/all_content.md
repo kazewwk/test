@@ -1,0 +1,267 @@
+TRANSCRIPTION REGULATORS SWITCH GENES ON AND OFF
+
+421
+
+![](images/page_24_image_2.jpg)
+
+Figure 7–27 Six of the ways in which eukaryotic repressor proteins can operate. (A) A repressor protein outcompetes activator proteins for binding to the same regulatory DNA sequence. (B) Both activator and repressor proteins bind close to each other on DNA, and the repressor “quenches” the activator, preventing it from functioning (for example, by blocking the recruitment of its coactivators). (C) The repressor “poisons” assembly of the general transcription factors by binding to and stabilizing an intermediate. (D) The repressor recruits a chromatin remodeling complex that restores the nucleosomal state of the promoter region to its pre-transcriptional, default form. (E) The repressor attracts a histone deacetylase to the promoter, removing the histone acetylation needed for transcription initiation (see Figure 7–23). (F) Heterochromatin formation is triggered when a repressor attracts a specific histone methyl transferase that trimethylates either lysine 9 or lysine 27 on histone H3, thereby creating either H3K9me3- or H3K27me3-marked nucleosomes. “Read–write” mechanisms then spread each type of methylated nucleosome for thousands of nucleotide pairs along the DNA; they also help the methylation pattern to be inherited across cell divisions (see Figures 4–40 and 4–44). The final step in heterochromatin formation occurs when each type of modified nucleosome attracts additional proteins that condense the DNA and maintain it in a transcriptionally silent form.
+
+example, by simply inactivating the repressor. But, the last mechanism—a directed methylation of specific histone amino acids that creates an unusually highly condensed form of chromatin, known as heterochromatin—is self-reinforcing and can propagate even when the initiating signal is no longer present (see Figure 4–44). As discussed in Chapter 4, chromatin that is marked by H3K9me3 (trimethylation of the lysine at position 9 of histone H3) appears to be the most difficult to transcribe. Typically located around centromeres and repeated DNA sequences such as inactive transposons, this type of heterochromatin strongly suppresses both genetic recombination and transcription. A different histone H3 modification (H3K27me3) is associated with a second form of heterochromatin that is also resistant to transcription. Although apparently easier to activate than the H3K9me3 form, this form of chromatin is also self-propagating and can persist across cell divisions, after the initiating signal has disappeared.
+
+These two types of heterochromatin are used to tightly repress genes active in early development, presumably to make sure that these genes are not expressed in the mature organism. Tight, heritable gene repression is especially important to animals and plants whose growth depends on elaborate and complex developmental programs. Misexpression of a single gene at a critical time can have
+
+---
+
+422
+
+Chapter 7: Control of Gene Expression
+
+![](images/page_25_image_2.jpg)
+
+disastrous consequences for the individual. For this reason, many of the genes encoding the most important developmental regulatory proteins are kept tightly repressed, often by multiple mechanisms.
+
+Figure 7–28 Schematic diagram summarizing the properties of insulators and barrier sequences. (A) Insulators directionally block the action of enhancers, whereas barrier sequences prevent the spread of heterochromatin. How barrier sequences likely function is depicted in Figure 4–41. (B) Insulator-binding proteins (purple) hold chromatin in loops that favor “correct” enhancer–promoter associations. Thus, gene B is properly regulated, and gene B’s cis-regulatory sequences can be prevented from influencing the transcription of gene A. The major insulator-binding protein in mammals is denoted CTCF.
+
+## Insulator DNA Sequences Prevent Eukaryotic Transcription Regulators from Influencing Distant Genes
+
+We have seen that all genes have control regions, which dictate at which times, under what conditions, and in what tissues the gene will be expressed. We have also seen that eukaryotic transcription regulators can act across very long stretches of DNA, with the intervening DNA looped out. How, then, are control regions of different genes kept from interfering with one another? For example, what keeps. / . a transcription regulator bound on the control region of one gene from looping in the wrong direction and inappropriately influencing the transcription of an adjacent gene? And, if complex regulatory regions form biomolecular condensates, what keeps all of the control regions from forming a giant condensate where the regulatory information would become scrambled?
+
+To avoid such cross-talk between control regions, several types of DNA elements compartmentalize the genome into discrete regulatory domains. In Chapter 4, we discussed barrier sequences that prevent the spread of heterochromatin into genes that need to be expressed (see Figure 4–41). A second type of DNA element, called an insulator, prevents cis-regulatory sequences from running amok and activating inappropriate genes (**Figure 7–28**). As we saw in Chapter 4, insulator sequences function by forming loops of chromatin, an effect mediated by specialized proteins that recognize them (see Figures 4–57 and 7–28B). The loops are thought to keep a gene and its control region in rough proximity and help to prevent the control region from “spilling over” to adjacent genes. More generally, the distribution of insulators and barrier sequences in a genome helps to divide it into independent domains of gene regulation and chromatin structure (see pp. 223–225).
+
+The distribution of the more than 10,000 loops on the collection of mammalian chromosomes can change as cells differentiate or as they respond to changes in their environment. In addition, these loops formed by insulators are not static; rather, they undergo a continual process of loop extrusion and release that is driven by cohesion protein rings (see Figure 4–57). It has been proposed that the extrusion process itself helps to juxtapose enhancers with their matching promoters by sliding them past one another, while helping to break up inappropriate enhancer–promoter connections by physically separating them.
+
+Although chromosomes are dynamically organized into domains that discourage control regions from acting indiscriminately, there are special circumstances where a control region located on one chromosome has been found to deliberately activate a gene located on a different chromosome. Although there is much we do not understand about this mechanism, it reflects the extreme versatility of transcription regulation strategies.
+
+## Summary
+
+Transcription regulators switch the transcription of individual genes on and off in cells. In prokaryotes, these proteins typically bind to specific DNA sequences close to the RNA polymerase start site and, depending on the nature of the
+
+---
+
+MOLECULAR GENETIC MECHANISMS THAT CREATE AND MAINTAIN SPECIALIZED CELL TYPES
+
+423
+
+regulatory protein and the precise location of its binding site relative to the start site, either activate or repress transcription of the gene. The flexibility of the DNA helix, however, also allows transcription regulators bound at distant sites to affect the RNA polymerase at the promoter by the looping out of the intervening DNA. The regulation of higher eukaryotic genes is much more complex, commensurate with a larger genome size and the large variety of cell types that are formed. A single eukaryotic gene is typically controlled by many transcription regulators bound to sequences that can be tens or even hundreds of thousands of nucleotide pairs from the promoter that directs transcription of the gene. Eukaryotic activators and repressors act by a wide variety of mechanisms—generally both altering chromatin structure and controlling the assembly of the general transcription factors and RNA polymerase at the promoter. They do this by attracting coactivators and co-repressors, protein complexes that perform the necessary biochemical reactions. The time and place that each gene is transcribed, as well as its rates of transcription under different conditions, are determined by the particular spectrum of transcription regulators present in the cell that bind to the control region of the gene.
+
+## MOLECULAR GENETIC MECHANISMS THAT CREATE AND MAINTAIN SPECIALIZED CELL TYPES
+
+Although all cells must be able to switch genes on and off in response to changes in their environments, the cells of multicellular organisms have evolved this capacity to an extreme degree. In particular, once a cell in a multicellular organism becomes committed to differentiate into a specific cell type, the cell maintains this choice through many subsequent cell generations, which means that it remembers the changes in gene expression involved in the choice. This phenomenon of cell memory is a prerequisite for the creation of organized tissues and for the maintenance of stably differentiated cell types. In contrast, other changes in gene expression in eukaryotes, as well as most such changes in bacteria, are only transient. The tryptophan repressor, for example, switches off the tryptophan genes in bacteria only in the presence of tryptophan; as soon as tryptophan is removed from the medium, the genes are switched back on, and the descendants of the cell will have no memory that their ancestors had been exposed to tryptophan.
+
+In this section, we shall examine some specific examples that illustrate how cell types are specified and maintained and how simple gene regulatory devices can be combined to create the “logic circuits” through which cells integrate signals and remember events in their past. We begin by considering one such complex gene control region that has been studied in great detail.
+
+## Complex Genetic Switches That Regulate Drosophila Development Are Built Up from Smaller Modules
+
+We have seen that transcription regulators can be positioned at multiple sites along long stretches of DNA and that these proteins can bring into play coactivators and co-repressors that ultimately position and activate RNA polymerase to begin transcription. Here, we discuss how the numerous transcription regulators that bind to the control region of a gene can integrate external information, so as to cause the gene to be transcribed at the proper place and time.
+
+The expression of the Drosophila Even-skipped (Eve) gene plays an important part in the development of the Drosophila embryo. If this gene is inactivated by mutation, many parts of the embryo fail to form, and the embryo dies early in development. At the stage of development when Eve begins to be expressed, the embryo is a single giant cell containing multiple nuclei in a common cytoplasm. This cytoplasm contains a mixture of transcription regulators that are distributed unevenly along the length of the embryo, thus providing positional information that distinguishes one part of the embryo from another
+
+---
+
+424
+
+Chapter 7: Control of Gene Expression
+
+![](images/page_27_image_2.jpg)
+
+Figure 7–29 The nonuniform distribution of transcription regulators in an early Drosophila embryo. At this stage, the embryo is a syncytium; that is, multiple nuclei are contained in a common cytoplasm. Although the nuclei are shown in only a slice of the embryo, in reality, they are arranged in three dimensions around the inner surface of the giant cell.
+
+(**Figure 7–29**). Although the nuclei are initially identical, they rapidly begin to express different genes because they are exposed to different transcription regulators: the nuclei near the anterior end of the developing embryo are exposed to a set of transcription regulators that is different from the set present at the middle and that present at the posterior end of the embryo.
+
+The regulatory DNA sequences that control the Eve gene have evolved to “read” the concentrations of transcription regulators at each position along the. / . length of the embryo, so as to cause the Eve gene to be expressed in seven precisely positioned stripes, each initially five to six nuclei wide. How is this remarkable feat of information processing carried out? Although there is still much to learn, several general principles have emerged from studies of Eve and other genes that are similarly regulated.
+
+The control region of the Eve gene is very large (approximately 20,000 nucleotide pairs). It is formed from a series of relatively simple regulatory modules, each of which contains multiple cis-regulatory sequences and is responsible for specifying a particular stripe of Eve expression along the embryo. This modular organization of the Eve gene control region was revealed by experiments in which a particular regulatory module (say, that specifying stripe 2) is removed from its normal setting upstream of the Eve gene, placed in front of a reporter gene, and reintroduced into the Drosophila genome. When developing embryos derived from flies carrying this genetic construct are examined, the reporter gene is found to be expressed in precisely the position of stripe 2 but not in the other normal stripe positions (**Figure 7–30**). Similar experiments reveal the existence of other regulatory modules, which specify other stripes.
+
+## The Drosophila Eve Gene Is Regulated by Combinatorial Controls
+
+A detailed study of the stripe 2 regulatory module has provided insights into how it reads and interprets positional information. The module contains recognition sequences for two transcription regulators that activate Eve transcription (Bicoid and Hunchback) and for two that repress it (Krüppel and Giant) (**Figure 7–31**).
+
+Figure 7–30 Experiment demonstrating the modular construction of the Eve gene regulatory region. (A) A 480- nucleotide-pair section of the Eve regulatory region was removed and (B) inserted upstream of a test promoter that directs the synthesis of the enzyme β-galactosidase (the product of the E. coli LacZ gene—see Figure 7–18). (C, D) When this artificial construct was reintroduced into the genome of Drosophila embryos, the embryos (D) expressed β-galactosidase (detectable by histochemical staining) precisely in the position of the second of the seven Eve stripes. (C) The complete set of Eve stripes was detected using antibodies directed against the Eve protein. β-Galactosidase is simple to detect and thus provides a convenient way to monitor the expression specified by a gene control region. As used here, β-galactosidase is said to serve as a reporter, because it “reports” the activity of a gene control region. (C and D, courtesy of Stephen Small and Michael Levine.)
+
+![](images/page_27_image_10.jpg)
+
+---
+
+MOLECULAR GENETIC MECHANISMS THAT CREATE AND MAINTAIN SPECIALIZED CELL TYPES
+
+425
+
+![](images/page_28_image_2.jpg)
+
+The relative concentrations of these four proteins determine whether the protein complexes that form at the stripe 2 module activate transcription of the Eve gene. **Figure 7–32** shows the distributions of the four transcription regulators across the region of a Drosophila embryo where stripe 2 forms. It is thought that either of the two repressor proteins, when bound to the DNA, will turn off the stripe 2 module, whereas both Bicoid and Hunchback must bind for this module’s maximal activation. This simple regulatory scheme suffices to turn on the stripe 2 module (andMBoC7 m7.29/7.31 therefore the expression of the Eve gene) only in those nuclei located where the levels of both Bicoid and Hunchback are high and both Krüppel and Giant are absent—a combination that occurs in only one region of the early embryo. It is not known exactly how these four transcription regulators interact with coactivators and co-repressors to specify the final level of transcription across the stripe, but the outcome very likely relies on competition between activators and repressors that act by the mechanisms outlined in Figures 7–21, 7–22, and 7–27.
+
+Figure 7–31 The Eve stripe 2 unit. The segment of the Eve gene control region identified in Figure 7–30 contains cisregulatory sequences for four transcription regulators. It is known from genetic experiments that these four regulatory proteins are responsible for the proper expression of Eve in stripe 2. Flies that are deficient in the two gene activators Bicoid and Hunchback, for example, fail to efficiently express Eve in stripe 2. In flies deficient in either of the two gene repressors, Giant and Krüppel, stripe 2 expands and covers an abnormally broad region of the embryo. As indicated, in some cases the binding sites for the transcription regulators overlap, and the proteins can compete for binding to the DNA. For example, binding of Krüppel and binding of Bicoid to the site at the far right is mutually exclusive.
+
+The stripe 2 element is autonomous, inasmuch as it specifies stripe 2 when isolated from its normal context (see Figure 7–30). The other stripe regulatory modules are thought to be constructed similarly, reading positional information provided by other combinations of transcription regulators. The entire Eve gene control region binds more than 20 different transcription regulators. Seven combinations of regulators—one combination for each stripe—specify Eve expression, while many other combinations (all those found in the interstripe regions of the embryo) keep all the stripe elements silent. A large and complex control region is thereby built from a series of smaller modules, each of which consists of a unique arrangement of short cis-regulatory sequences recognized by specific transcription regulators.
+
+The Eve gene itself encodes a transcription regulator, which, after its pattern of expression is set up in seven stripes, controls the expression of other Drosophila genes. As development proceeds, the embryo is thus subdivided into finer and finer regions that eventually give rise to the different body parts of the adult fly, as discussed in Chapter 21.
+
+Eve exemplifies the complexity of transcription control regions in plants and ani mals. As this example shows, control regions can respond to many different inputs, integrate this information, and produce a complex spatial and temporal output as
+
+![](images/page_28_chart_8.jpg)
+
+Figure 7–32 Distribution of the transcription regulators responsible for ensuring that Eve is expressed in stripe 2. The distributions of these proteins were visualized by staining a developing Drosophila embryo with antibodies directed against each of the four proteins, and a graph of the staining intensities is shown. The expression of Eve in stripe 2 occurs only at the position where the two activators (Bicoid and Hunchback) are present and the two repressors (Giant and Krüppel) are absent. In fly embryos that lack Krüppel, for example, stripe 2 expands posteriorly. Likewise, stripe 2 expands posteriorly if the DNA-binding sites for Krüppel in the stripe 2 module are inactivated by mutation (see also Figure 7–31).
+
+---
+
+426
+
+Chapter 7: Control of Gene Expression
+
+![](images/page_29_image_2.jpg)
+
+development proceeds. However, exactly how all these mechanisms work together to produce the final output is understood only in broad outline (Figure 7–33).
+
+Figure 7–33 The integration of multiple inputs at a promoter. Multiple sets of transcription regulators, coactivators, and co-repressors can work together to influence transcription initiation at a promoter, as they do in the Eve stripe 2 module illustrated in Figure 7–31. It is not yet understood in detail how the cell achieves integration of multiple inputs, but it is likely that the final transcriptional activity of the gene results from competitions between activators and repressors that act by the mechanisms summarized in Figures 7–21, 7–22, and 7–27. As we saw earlier, for especially complex gene control regions, it has been proposed that these competitions take place and are “summed up” in localized biomolecular condensates formed by networks of weak interactions.
+
+## Transcription Regulators Are Brought into Play by Extracellular Signals
+
+The above example from Drosophila clearly illustrates the power of combinatorial control, but this case is unusual in that the nuclei are exposed directly to positional cues in the form of concentrations of transcription regulators. In embryos of most other organisms and in all adults, individual nuclei are in separate cells, and extracellular information (including positional cues) must be passed across the plasma membrane so as to generate signals in the cytosol that cause different transcription regulators to become active in different cell types. Some of the different mechanisms that are known to be used to activate transcription regulators are diagrammed in **Figure 7–34**; in Chapter 15, we discuss how extracellular signals trigger these changes.
+
+Like the fly example discussed earlier, mammalian enhancers are also modular. An example is the control region responsible for regulating the α-globin gene, which codes for one of the subunits of hemoglobin (see Figure 3–20). Here, five
+
+![](images/page_29_image_8.jpg)
+
+Figure 7–34 Some ways in which the activity of transcription regulators is controlled inside eukaryotic cells. (A) The protein is synthesized only when needed. (B) Activation by ligand binding. (C) Activation by covalent modification; phosphorylation is shown here, but many other modifications are possible (see Table 3–4, p. 175). (D) Formation of a complex between a DNA-binding protein and a separate protein with a transcriptionactivating domain. (E) Unmasking of an activation domain by the phosphorylation of an inhibitor protein. (F) Stimulation of nuclear entry by removal of an inhibitory protein that otherwise keeps the regulatory protein from entering the nucleus. (G) Release of a transcription regulator from a membrane bilayer by regulated proteolysis.
+
+---
+
+MOLECULAR GENETIC MECHANISMS THAT CREATE AND MAINTAIN SPECIALIZED CELL TYPES
+
+427
+
+![](images/page_30_image_2.jpg)
+
+different modules are spread out over about 25,000 nucleotide pairs (Figure 7–35). Each of the five modules, when experimentally separated from the other four, can act as an independent enhancer to specify production of α-globin; but they do so only in erythroid cells, the precursors to red blood cells, because only erythroid cells express the appropriate transcription regulators. Red blood cells, which con-. / . tain high concentrations of hemoglobin, are unusual in that they lack DNA and rely on their precursor cells to synthesize this protein.
+
+## Combinatorial Gene Control Creates Many Different Cell Types
+
+We have seen that transcription regulators usually act in combination to control the expression of an individual gene. It is also generally true that each transcription regulator in an organism contributes to the control of many genes. This point is illustrated schematically in **Figure 7–36**, which shows how combinatorial gene
+
+![](images/page_30_image_6.jpg)
+
+Figure 7–35 Modular structure of the control region for the mouse a-globin gene. Each of the five modules (R1–R5) can independently act as an enhancer, that is, they can each activate transcription of a reporter construct (see Figure 7–30B). However, the patterns of expression in a developing embryo are somewhat different for different modules. As indicated by the percentage designations, each module differs in the quantitative contributions it makes to the overall transcription rate in erythroid cells, with the total amount of mRNA being roughly equal to that of the sum of that produced by the individual modules. The additive properties of this control region suggest that the modules all affect the same step in transcription.
+
+The combination of transcription regulators that recognize the R2 module, the most active of the five, is shown in the expanded view. These three transcription regulators are made in erythroid cells and are absent in most other cell types, explaining why expression of the globin gene occurs only in erythroid cells. Most of these same proteins also bind to the other α-globin regulatory modules, consistent with the modules working additively. As shown, insulator sequences flank the gene (including its control region), allowing the α-globin gene to be regulated independently of other genes on the same chromosome (see Figure 7–28). It is thought that modules R3 and R4 make no significant contribution to the overall transcription of the α-globin gene, but are once-functional modules that are in the slow evolutionary process of disappearing due to a gradual accumulation of mutations. (Courtesy of Helena Francis and Douglas Higgs.)
+
+## Figure 7–36 The importance of combinatorial gene control for
+
+development. Combinations of a few transcription regulators can generate many cell types during development. In this simple, idealized scheme, a “decision” to make one of a pair of different transcription regulators (shown as numbered circles) is made after each cell division. Sensing its relative position in the embryo, the daughter cell toward the left side of the embryo is always induced to synthesize the even-numbered protein of each pair, while the daughter cell toward the right side of the embryo is induced to synthesize the odd-numbered protein. The production of each transcription regulator is assumed to be self-perpetuating once it has become initiated (see Figure 7–42). In this way, through cell memory, the final combinatorial specification is built up step by step. In this purely hypothetical example, five different transcription regulators have created eight final cell types (G–N).
+
+---
+
+428
+
+Chapter 7: Control of Gene Expression
+
+![](images/page_31_image_2.jpg)
+
+(A)
+
+50 µm
+
+![](images/page_31_image_5.jpg)
+
+(B)
+
+50 µm
+
+Figure 7–37 A small set of transcription regulators can convert one differentiated cell type into another. In this experiment, liver cells grown in culture (A) were converted into neuronal cells (B) by the artificial expression of three neuron-specific transcription regulators. (Both types of cells express a red fluorescent protein, which helps to visualize them.) This conversion involves the activation of many neuronspecific genes as well as the repression of many liver-specific genes. (From S. Marro et al., Cell Stem Cell 9:374–382, 2011. With permission from Elsevier.)
+
+control makes it possible to generate a great deal of biological complexity even with relatively few transcription regulators.
+
+Because of such combinatorial control, a given transcription regulator needMBoC7 m7.34/7.37 not have a single, simply definable function as commander of a particular battery of genes or specifier of a particular cell type. Rather, transcription regulators can be likened to the words of a language: they are used with different meanings in a variety of contexts and rarely alone; it is the well-chosen combination that conveys the information that specifies a gene regulatory event.
+
+Because of combinatorial gene control, the effect of adding a new transcription regulator to a cell will depend on that cell’s past history, inasmuch as this history determines the transcription regulators already present. Thus, during embryonic development, a cell can accumulate a series of transcription regulators that may not initially alter gene expression. Only the addition of the final members of a requisite combination of transcription regulators will complete the regulatory message, leading to large changes in gene expression.
+
+The importance of a combination of transcription regulators for the specification of cell types is most easily demonstrated by their ability—when expressed artificially in a specific combination—to convert one type of cell to another. For example, the artificial expression of three neuron-specific transcription regulators in liver cells can convert the liver cells into functional nerve cells (**Figure 7–37**). In some cases, expression of even a single transcription regulator is sufficient to convert one cell type to another: when the gene encoding the transcription regulator MyoD is artificially introduced into fibroblasts cultured from skin connective tissue, the fibroblasts form muscle-like cells. As discussed in Chapter 22, fibroblasts, which are derived from the same broad class of embryonic cells as muscle cells, have already accumulated many of the other necessary transcription regulators required for the combinatorial control of the muscle-specific genes, and the addition of MyoD completes the unique combination required to direct the cells to become muscle.
+
+An even more striking example is seen by artificially expressing, early in development, a single Drosophila transcription regulator (Eyeless) in groups of cells that would normally go on to form leg parts. Here, this abnormal gene expression change causes eye-like structures to develop in the legs (**Figure 7–38**).
+
+## Specialized Cell Types Can Be Experimentally Reprogrammed to Become Pluripotent Stem Cells
+
+Artificial manipulation of transcription regulators can also coax various differentiated cells to de-differentiate into pluripotent stem cells that are capable of giving rise to the different cell types in the body, as discussed in Chapter 22. Thus, when three specific transcription regulators are artificially expressed in cultured mouse fibroblasts, a number of cells become **induced pluripotent stem cells (iPS cells)**—cells that look and behave like the pluripotent embryonic stem
+
+---
+
+MOLECULAR GENETIC MECHANISMS THAT CREATE AND MAINTAIN SPECIALIZED CELL TYPES
+
+429
+
+![](images/page_32_image_2.jpg)
+
+![](images/page_32_image_3.jpg)
+
+(ES) cells that are derived from embryos (**Figure 7–39**). This approach has been adapted to produce iPS cells from a variety of specialized cell types, including cells taken from humans. Such human iPS cells can then be directed to generate a population of differentiated cells for use in the study or treatment of disease, a topic discussed in detail in Chapter 22.
+
+Although it was once thought that cell differentiation was irreversible, it is nowMBoC7 m7.35/7.38 clear that by manipulating combinations of transcription regulators, cell types and differentiation pathways can be readily reversed and otherwise altered.
+
+## Combinations of Master Transcription Regulators Specify Cell Types by Controlling the Expression of Many Genes
+
+As we saw in the introduction to this chapter, different cell types of multicellular organisms differ enormously in the proteins and RNAs they express. For example, only muscle cells express special types of actin and myosin that form the contractile apparatus, while nerve cells must make and assemble all the proteins needed to form dendrites and synapses. We have seen that these patterns of cell-type-specific expression are orchestrated by a combination of so-called **master transcription regulators**. In many cases, these proteins bind directly to cis-regulatory sequences of the genes particular to that cell type. Thus, MyoD binds directly to cis-regulatory sequences located in the control regions of the muscle-specific genes. In other cases, the master regulators control the
+
+![](images/page_32_image_8.jpg)
+
+Figure 7–38 Expression of the Drosophila Eyeless gene in precursor cells of the fly leg triggers the development of an eye on the leg. (A) Simplified diagrams showing the result when a fruit fly larva contains either the normally expressed Eyeless gene (left) or an Eyeless gene that is additionally expressed artificially in cells that normally give rise to leg tissue (right). (B) Photograph of an abnormal leg that contains a misplaced eye (see also Figure 21–2). The transcription regulator was named Eyeless because its inactivation in otherwise normal flies causes the loss of eyes (see Figure 21–32). (B, courtesy of Walter Gehring.)
+
+Figure 7–39 A combination of transcription regulators can induce a differentiated cell to de-differentiate into a pluripotent cell. The artificially induced expression of a set of three genes, each of which encodes a transcription regulator, can reprogram a fibroblast into a pluripotent cell with embryonic stem (ES) cell–like properties. Like ES cells, such induced pluripotent stem (iPS) cells can proliferate indefinitely in culture and can be stimulated by appropriate extracellular signal molecules to differentiate into almost any cell type found in the body. Transcription regulators such as Oct4, Sox2, and Klf4 are often called master transcription regulators because their expression is sufficient to trigger a change in cell identity. How two of these transcription regulators interact with DNA in a nucleosome is shown in Figure 7–13.
+
+---
+
+430
+
+Chapter 7: Control of Gene Expression
+
+![](images/page_33_image_2.jpg)
+
+Figure 7–40 A portion of the transcription network specifying embryonic stem cells. (A) The three master transcription regulators in Figure 7–39 are shown as large circles. Genes whose cis-regulatory sequences are bound by each regulator in embryonic stem cells are indicated by a small green dot (representing the gene) connected by a thin line (representing the binding interaction). Note that many of the target genes are bound by more than one of the regulators. (B) The master regulators control their own expression. As shown here, the three transcription regulators bind to their own control regions (indicated by feedback loops), as well as those of the other master regulators (indicated by straight arrows). (Courtesy of Trevor Sorrells, based on data from J. Kim et al., Cell 132:1049–1061, 2008.)
+
+expression of “downstream” transcription regulators that, in turn, bind to the control regions of other cell-type-specific genes and control their synthesis.
+
+The specification of a particular cell type typically involves changes inMBoC7 m7.37/7.40 the expression of several thousand genes. Genes whose protein products are required in the cell type are expressed at high levels, while those not needed are typically down-regulated. As might be imagined, the pattern of binding between the master regulators and all of the regulated genes can be extremely elaborate (**Figure 7–40**). When we consider that many of these regulated genes have control regions that span tens of thousands of nucleotide pairs, commensurate with the Eve example discussed earlier, we can begin to appreciate the enormous complexity of cell-type specification.
+
+An outstanding question in biology is how the information in a genome is used to specify a multicellular organism. Although we have the general outline of the answer, we are far from understanding how a single cell type is completely specified, let alone a whole organism.
+
+## Specialized Cells Must Rapidly Turn Some Genes On and Off
+
+Although they generally maintain their identities, specialized cells must constantly respond to changes in their environment. Among the most important changes are signals from other cells that coordinate the behavior of the whole organism. Many of these signals induce transient changes in gene transcription, and we discuss the nature of these signals in detail in Chapter 15. Here, we consider how specialized cell types rapidly and decisively switch groups of genes on and off in response to their environment. Even though control of gene expression is combinatorial, the effect of a single transcription regulator can still be decisive in switching any particular gene on or off, simply by completing the combination needed to maximally activate or repress that gene. This situation is analogous to dialing in the final number of a combination lock: the lock will spring open with only this simple addition if all of the other numbers have been previously entered. And just as the same number can complete the combination for many different locks, the addition of a particular protein can turn on many different genes.
+
+An example is the rapid control of gene expression by the human glucocorticoid receptor protein. To bind to its cis-regulatory sequences in the genome, this transcription regulator must first form a complex with a molecule of a glucocorticoid steroid hormone, such as cortisol (see Figures 15–65 and 15–66). The body releases this hormone during times of starvation and intense physical activity,
+
+---
+
+MOLECULAR GENETIC MECHANISMS THAT CREATE AND MAINTAIN SPECIALIZED CELL TYPES
+
+431
+
+![](images/page_34_image_2.jpg)
+
+Figure 7–41 A single transcription regulator can coordinate the expression of many different genes. The action of the glucocorticoid receptor is illustrated schematically. On the left is a series of genes, each of which has various transcription regulators bound to its regulatory region. However, these bound proteins are not sufficient on their own to fully activate transcription. On the right is shown the effect of adding an additional transcription regulator—the glucocorticoid receptor in a complex with glucocorticoid hormone—that has a cisregulatory sequence in the control region of each gene. The glucocorticoid receptor completes the combination of transcription regulators required for maximal initiation of transcription, and the genes are now maximally switched on as a set. When the hormone is no longer present, the glucocorticoid receptor dissociates from DNA, and the genes return to their prestimulated levels.
+
+and among its other activities, it stimulates liver cells to increase the production of glucose from amino acids and other small molecules. To respond in this way, liver cells increase the expression of many different genes that code for metabolic enzymes, such as tyrosine aminotransferase, as we discussed earlier in this chapter (see Figure 7–3). Although these genes all have different and complex control regions, their maximal expression depends on the binding of the hormone–glucocorticoid receptor complex to its cis-regulatory sequence, which is present in the control region of each gene. When the body has recovered and the hormone is no longer present, the expression of each of these genes drops to its normal level in the liver. In this way, a single transcription regulator can rapidly control the expression of many different genes (**Figure 7–41**).
+
+The effects of the glucocorticoid receptor are not confined to cells of the liver. In other cell types, activation of this transcription regulator by hormone also causes changes in the expression levels of many genes; the genes affected, however, are usually different from those affected in liver cells. As we have seen, each cell type has an individualized set of transcription regulators, and because of combinatorial control, these critically influence the action of the glucocorticoid receptor. Because the receptor is able to assemble with different sets of cell-type-specific transcription regulators, switching it on with hormone produces a different spectrum of effects in each cell type.
+
+## Differentiated Cells Maintain Their Identity
+
+Once a cell has become differentiated into a particular cell type, it will generally remain differentiated, and all its progeny cells will remain that same cell type. Some highly specialized cells, including skeletal muscle cells and neurons, never divide again once they have differentiated; that is, they are terminally differentiated (as discussed in Chapter 17). But many other differentiated cells—such as fibroblasts, smooth muscle cells, and liver cells—will divide many times in the life of an individual. When they do, these specialized cell types give rise only to cells like themselves: smooth muscle cells do not give rise to liver cells, nor liver cells to fibroblasts.
+
+For a proliferating cell to maintain its identity—a property called **cell memory**—the patterns of gene expression responsible for that identity must be remembered and passed on to its daughter cells through subsequent cell divisions. Thus, in the model we discussed in Figure 7–36, the production of each
+
+---
+
+432
+
+Chapter 7: Control of Gene Expression
+
+![](images/page_35_image_2.jpg)
+
+Figure 7–42 A positive feedback loop can create cell memory. Protein A is a master transcription regulator that activates the transcription of its own gene—as well as other cell-typespecific genes (not shown). All of the descendants of the original cell will therefore “remember” that the progenitor cell had experienced a transient signal that initiated the production of protein A.
+
+transcription regulator, once begun, has to be continued in the daughter cells of each cell division. How is such perpetuation accomplished?
+
+Cells have several ways of ensuring that their daughters “remember” what kind of cells they are. One of the simplest and most important is through a positive feedback loop, where a master cell-type transcription regulator activates transcription of its own gene, in addition to that of the other cell-type-specific genes needed to maintain the cell type. Each time a cell divides, the regulator is distributed to both daughter cells, where it continues to stimulate the positive feedback loop, making more of itself and the cell-type proteins it controls each division. Positive feedback is crucial for establishing “self-sustaining” circuits of gene expression that allow a cell to commit to a particular fate—and then to transmit that information to its progeny (**Figure 7–42**).
+
+As was previously indicated in Figure 7–40B, the master regulators needed to maintain the pluripotency of iPS cells bind to cis-regulatory sequences in their own control regions, providing examples of this type of positive feedback loop. In addition, most of these pluripotent stem cell regulators also activate transcription of other master regulators, resulting in a complex series of indirect feedback loops. For example, if A activates B, and B activates A, this forms a positive feedback loop where A activates its own expression, albeit indirectly. The series of direct and indirect feedback loops observed in the iPS circuit is typical of other specialized cell circuits. Such a network structure strengthens cell memory, increasing the probability that a particular pattern of gene expression is transmitted through successive generations. For example, if the level of A drops below the critical threshold to stimulate its own synthesis, regulator B can rescue it. By successive application of this mechanism, a complex series of positive feedback loops among multiple transcription regulators can stably maintain a differentiated state through many cell divisions.
+
+Positive feedback loops formed by transcription regulators are probably the most prevalent way of ensuring that daughter cells remember what kind of cells they are meant to be, and they are found in all species on Earth. For example, many bacteria and single-cell eukaryotes form different types of cells, and positive feedback loops lie at the heart of mechanisms that maintain their cell types through many rounds of cell division. Plants and animals also make extensive use of transcription feedback loops; but as we saw in Chapter 4 and shall discuss again later in the chapter, they have additional, more specialized mechanisms for making cell memory even stronger (see, for example, Figure 4–44). We will return

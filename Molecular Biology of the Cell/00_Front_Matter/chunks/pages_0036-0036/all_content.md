@@ -1,0 +1,113 @@
+Contents   xxxv
+
+- Septins Form Filaments That Contribute to Subcellular Organization 1012
+- Bacterial Cell Shape and Division Depend on Homologs of Eukaryotic Cytoskeletal Proteins 1013
+- Summary 1016
+- CELL POLARITY AND COORDINATION OF THE CYTOSKELETON 1016
+- Cell Polarity Is Governed by Small GTPases in Budding Yeast 1016
+- PAR Proteins Generate Anterior–Posterior Polarity in Embryos 1018
+- Conserved Complexes Polarize Epithelial Cells and Control Their Growth 1019
+- Cell Migration Requires Dynamic Cell Polarity 1020
+- External Signals Can Dictate the Direction of Cell Migration 1022
+- Communication Among Cytoskeletal Elements Supports Whole-Cell Polarity and Locomotion 1023
+- Summary 1023
+- Problems 1024
+- References 1025
+
+## Chapter 17 The Cell Cycle
+
+- OVERVIEW OF THE CELL CYCLE 1027
+- The Eukaryotic Cell Cycle Usually Consists of Four Phases 1028
+- Cell-Cycle Control Is Similar in All Eukaryotes 1030
+- Cell-Cycle Progression Can Be Studied in Various Ways 1030
+- Summary 1031
+- THE CELL-CYCLE CONTROL SYSTEM 1031
+- The Cell-Cycle Control System Triggers the Major Events of the Cell Cycle 1032
+- The Cell-Cycle Control System Depends on Cyclically Activated Cyclin-dependent Protein Kinases 1033
+- Protein Phosphatases Reverse the Effects of Cdks 1035
+- Hundreds of Cdk Substrates Are Phosphorylated in a Defined Order 1035
+- Positive Feedback Generates the Switchlike Behavior of Cell-Cycle Transitions 1036
+- The Anaphase-promoting Complex/Cyclosome (APC/C) Triggers the Metaphase-to-Anaphase Transition 1038
+- The G<sub>1</sub> Phase Is a Stable State of Cdk Inactivity 1040
+- The Cell-Cycle Control System Functions as a Linked Series of Biochemical Switches 1041
+- Summary 1042
+- S PHASE 1042
+- S-Cdk Initiates DNA Replication Once Per Cell Cycle 1043
+- Chromosome Duplication Requires Duplication of Chromatin Structure 1045
+- Cohesins Hold Sister Chromatids Together 1045
+- Summary 1046
+- MITOSIS 1046
+- M-Cdk and Other Protein Kinases Drive Entry into Mitosis 1047
+- Condensin Helps Configure Duplicated Chromosomes for Separation 1047
+- The Mitotic Spindle Is a Dynamic Microtubule-based Machine 1050
+- Microtubules Are Nucleated in Multiple Regions of the Spindle 1051
+- Microtubule Instability Increases Greatly in Mitosis 1052
+- Microtubule-based Motor Proteins Govern Spindle Assembly and Function 1052
+- Bipolar Spindle Assembly in Most Animal Cells Begins with Centrosome Duplication 1053
+- Spindle Assembly in Animal Cells Requires Nuclear-Envelope Breakdown 1054
+- Mitotic Chromosomes Promote Bipolar Spindle Assembly 1055
+- Kinetochores Attach Sister Chromatids to the Spindle 1056
+- Bi-orientation Is Achieved by Trial and Error 1057
+- Multiple Forces Act on Chromosomes in the Spindle 1059
+- The APC/C Triggers Sister-Chromatid Separation and the Completion of Mitosis 1060
+- Unattached Chromosomes Block Sister-Chromatid Separation: The Spindle Assembly Checkpoint 1062
+- Chromosomes Segregate in Anaphase A and B 1062
+- Segregated Chromosomes Are Packaged in Daughter Nuclei at Telophase 1063
+- Summary 1064
+- CYTOKINESIS 1064
+
+- Actin and Myosin II in the Contractile Ring Guide the Process of Cytokinesis 1065
+- Local Activation of RhoA Triggers Assembly and Contraction of the Contractile Ring 1065
+- The Microtubules of the Mitotic Spindle Determine the Plane of Animal Cell Division 1066
+- The Phragmoplast Guides Cytokinesis in Higher Plants 1068
+- Membrane-enclosed Organelles Must Be Distributed to Daughter Cells During Cytokinesis 1069
+- Some Cells Reposition Their Spindle to Divide Asymmetrically 1069
+- Mitosis Can Occur Without Cytokinesis 1070
+- Summary 1070
+- MEIOSIS 1071
+- Meiosis Includes Two Rounds of Chromosome Segregation 1071
+- Duplicated Homologs Pair During Meiotic Prophase 1073
+- Homolog Pairing Culminates in the Formation of a Synaptonemal Complex 1073
+- Homolog Segregation Depends on Several Unique Features of Meiosis I 1075
+- Crossing-Over Is Highly Regulated 1076
+- Meiosis Frequently Goes Wrong 1077
+- Summary 1077
+- CONTROL OF CELL DIVISION AND CELL GROWTH 1077
+- Mitogens Stimulate Cell Division 1078
+- Cells Can Enter a Specialized Nondividing State 1078
+- Mitogens Stimulate $\mathrm{G}_1$-Cdk and $\mathrm{G}_1/\mathrm{S}$-Cdk Activities 1079
+- DNA Damage Blocks Cell Division 1080
+- Many Human Cells Have a Built-In Limitation on the Number of Times They Can Divide 1082
+- Cell Proliferation Is Accompanied by Cell Growth 1083
+- Proliferating Cells Usually Coordinate Their Growth and Division 1084
+- Summary 1084
+- Problems 1085
+- References 1087
+
+## Chapter 18 Cell Death
+
+- Apoptosis Eliminates Unwanted Cells 1090
+- Apoptosis Depends on an Intracellular Proteolytic Cascade Mediated by Caspases 1091
+- Activation of Cell-Surface Death Receptors Initiates the Extrinsic Pathway of Apoptosis 1093
+- The Intrinsic Pathway of Apoptosis Depends on Proteins Released from Mitochondria 1094
+- Bcl2 Proteins Are the Critical Controllers of the Intrinsic Pathway of Apoptosis 1095
+- An Inhibitor of Apoptosis (an IAP) and Two Anti-IAP Proteins Help Control Caspase Activation in the Cytosol of Some Mammalian Cells 1098
+- Extracellular Survival Factors Inhibit Apoptosis in Various Ways 1098
+- Healthy Neighbors Phagocytose and Digest Apoptotic Cells 1100
+- Either Excessive or Insufficient Apoptosis Can Contribute to Disease 1100
+- Summary 1102
+- Problems 1103
+- References 1104
+
+## Chapter 19 Cell Junctions and the Extracellular Matrix
+
+- CELL-CELL JUNCTIONS 1108
+- Cadherins Form a Diverse Family of Adhesion Molecules 1108
+- Cadherins Mediate Homophilic Adhesion 1108
+- Cadherin-dependent Cell-Cell Adhesion Guides the Organization of Developing Tissues 1110
+- Assembly of Strong Cell-Cell Adhesions Requires Changes in the Actin Cytoskeleton 1112
+- Catenins Link Classical Cadherins to the Actin Cytoskeleton 1113
+- Adherens Junctions Respond to Tension from Inside and Outside the Tissue 1113
+- Tissue Remodeling Depends on the Coordination of Actin-mediated Contraction with Cell-Cell Adhesion 1114
+- Desmosomes Give Epithelia Mechanical Strength 1116
+- Tight Junctions Form a Seal Between Cells and a Fence Between Plasma Membrane Domains 1116

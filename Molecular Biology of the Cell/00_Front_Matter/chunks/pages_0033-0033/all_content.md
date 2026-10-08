@@ -1,0 +1,94 @@
+xxxii Contents
+
+- THE ENDOPLASMIC RETICULUM 698
+- The ER Is Structurally and Functionally Diverse 698
+- Signal Sequences Were First Discovered in Proteins Imported into the Rough ER 701
+- A Signal-Recognition Particle (SRP) Directs the ER Signal Sequence to a Specific Receptor at the ER 702
+- The Polypeptide Chain Passes Through a Signal Sequence-gated Aqueous Channel in the Translocator 705
+- Translocation Across the ER Membrane Does Not Always Require Ongoing Polypeptide Chain Elongation 707
+- Transmembrane Proteins Contain Hydrophobic Segments That Are Recognized Like Signal Sequences 709
+- Hydrophobic Segments of Multipass Transmembrane Proteins Are Interpreted Contextually to Determine Their Orientation 710
+- Some Proteins Are Integrated into the ER Membrane by a Post-translational Mechanism 711
+- Some Membrane Proteins Acquire a Covalently Attached Glycosylphosphatidylinositol (GPI) Anchor 712
+- Translocated Polypeptide Chains Fold and Assemble in the Lumen of the Rough ER 712
+- Most Proteins Synthesized in the Rough ER Are Glycosylated by the Addition of a Common N-Linked Oligosaccharide 714
+- Oligosaccharides Are Used as Tags to Mark the State of Protein Folding 715
+- Improperly Folded Proteins Are Exported from the ER and Degraded in the Cytosol 716
+- Misfolded Proteins in the ER Activate an Unfolded Protein Response 717
+- The ER Assembles Most Lipid Bilayers 720
+- Membrane Contact Sites Between the ER and Other Organelles Facilitate Selective Lipid Transfer 722
+- Summary 723
+- PEROXISOMES 723
+- Peroxisomes Use Molecular Oxygen and Hydrogen Peroxide to Perform Oxidation Reactions 724
+- Short Signal Sequences Direct the Import of Proteins into Peroxisomes 724
+- Summary 726
+- THE TRANSPORT OF PROTEINS INTO MITOCHONDRIA AND CHLOROPLASTS 726
+- Translocation into Mitochondria Depends on Signal Sequences and Protein Translocators 727
+- Mitochondrial Proteins Are Imported Post-translationally as Unfolded Polypeptide Chains 728
+- Protein Import Is Powered by ATP Hydrolysis, a Membrane Potential, and Redox Potential 730
+- Transport into the Inner Mitochondrial Membrane Occurs Via Several Routes 731
+- Bacteria and Mitochondria Use Similar Mechanisms to Insert $\beta$ Barrels into Their Outer Membrane 733
+- Two Signal Sequences Direct Proteins to the Thylakoid Membrane in Chloroplasts 733
+- Summary 735
+- THE TRANSPORT OF MOLECULES BETWEEN THE NUCLEUS AND THE CYTOSOL 735
+- Nuclear Pore Complexes Perforate the Nuclear Envelope 736
+- Nuclear Localization Signals Direct Proteins to the Nucleus 738
+- Nuclear Import Receptors Bind to Both Nuclear Localization Signals and NPC Proteins 739
+- The Ran GTPase Imposes Directionality on Nuclear Import Through NPCs 740
+- Nuclear Export Works Like Nuclear Import, but in Reverse 741
+- Transport Through NPCs Can Be Regulated by Controlling Access to the Transport Machinery 742
+- The Nuclear Envelope Disassembles and Reassemblies During Mitosis 743
+- Summary 745
+- Problems 746
+- References 748
+- Chapter 13 Intracellular Membrane Traffic 749
+- MECHANISMS OF MEMBRANE TRANSPORT AND COMPARTMENT IDENTITY 751
+- There Are Various Types of Coated Vesicles 751
+
+- The Assembly of a Clathrin Coat Drives Vesicle Formation 752
+- Adaptor Proteins Select Cargo into Clathrin-coated Vesicles 753
+- Phosphoinositides Mark Organelles and Membrane Domains 754
+- Membrane-bending Proteins Help Deform the Membrane During Vesicle Formation 755
+- Cytoplasmic Proteins Regulate the Pinching off and Uncoating of Coated Vesicles 756
+- Monomeric GTPases Control Coat Assembly 756
+- Coat-recruitment GTPases Participate in Coat Disassembly 758
+- The Shape and Size of Transport Vesicles Are Diverse 759
+- Rab Proteins Guide Transport Vesicles to Their Target Membrane 760
+- Rab Proteins Create and Change the Identity of an Organelle 761
+- SNAREs Mediate Membrane Fusion 762
+- Interacting SNAREs Need to Be Pried Apart Before They Can Function Again 763
+- Viruses Encode Specialized Membrane Fusion Proteins Needed for Cell Entry 764
+- Summary 764
+- TRANSPORT FROM THE ENDOPLASMIC RETICULUM THROUGH THE GOLGI APPARATUS 765
+- Proteins Leave the ER in COPII-coated Transport Vesicles 765
+- Only Proteins That Are Properly Folded and Assembled Can Leave the ER 766
+- Vesicular Tubular Clusters Mediate Transport from the ER to the Golgi Apparatus 766
+- The Retrieval Pathway to the ER Uses Sorting Signals 768
+- Many Proteins Are Selectively Retained in the Compartments in Which They Function 768
+- The Golgi Apparatus Consists of an Ordered Series of Compartments 769
+- Oligosaccharide Chains Are Processed in the Golgi Apparatus 771
+- Proteoglycans Are Assembled in the Golgi Apparatus 772
+- What Is the Purpose of Glycosylation? 773
+- Transport Through the Golgi Apparatus Occurs by Multiple Mechanisms 774
+- Golgi Matrix Proteins Help Organize the Stack 775
+- Summary 776
+- TRANSPORT FROM THE TRANS GOLGI NETWORK TO THE CELL EXTERIOR AND ENDOSOMES 776
+- Many Proteins and Lipids Are Carried Automatically from the Trans Golgi Network to the Cell Surface 777
+- A Mannose 6-Phosphate Receptor Sorts Lysosomal Hydrolases in the Trans Golgi Network 777
+- Defects in the GlcNAc Phosphotransferase Cause a Lysosomal Storage Disease in Humans 779
+- Secretory Vesicles Bud from the Trans Golgi Network 780
+- Precursors of Secretory Proteins Are Proteolytically Processed During the Formation of Secretory Vesicles 781
+- Secretory Vesicles Wait Near the Plasma Membrane Until Signaled to Release Their Contents 782
+- For Rapid Exocytosis, Synaptic Vesicles Are Primed at the Presynaptic Plasma Membrane 782
+- Synaptic Vesicles Can Be Recycled Locally After Exocytosis 783
+- Secretory Vesicle Membrane Components Are Quickly Removed from the Plasma Membrane 784
+- Some Regulated Exocytosis Events Serve to Enlarge the Plasma Membrane 785
+- Polarized Cells Direct Proteins from the Trans Golgi Network to the Appropriate Domain of the Plasma Membrane 786
+- Summary 787
+- TRANSPORT INTO THE CELL FROM THE PLASMA MEMBRANE: ENDOCYTOSIS 788
+- Pinocytic Vesicles Form from Coated Pits in the Plasma Membrane 789
+- Not All Membrane Invaginations and Pinocytic Vesicles Are Clathrin Coated 789
+- Cells Use Receptor-mediated Endocytosis to Import Selected Extracellular Macromolecules 791
+- Specific Proteins Are Retrieved from Early Endosomes and Returned to the Plasma Membrane 792
+- Recycling Endosomes Regulate Plasma Membrane Composition 793
+- Plasma Membrane Signaling Receptors Are Down-regulated by Degradation in Lysosomes 794

@@ -1,0 +1,369 @@
+MODEL ORGANISMS
+
+37
+
+![](images/page_36_image_2.jpg)
+
+Figure 1–39 The yeast Saccharomyces cerevisiae. (A) A scanning electron micrograph of a cluster of yeast cells. This species is also known as budding yeast, because it proliferates by forming a protrusion, or bud, that enlarges and then separates from the mother cell. Many cells with buds are visible in this micrograph. (B) An electron micrograph of a cross section of a yeast cell, showing its plasma membrane and thick cell wall, as well as some of its intracellular organelles. (A, courtesy of Ira Herskowitz and Eric Schabtach; B, courtesy of Andrew Staehelin.)
+
+haploid (**Figure 1–40**). In contrast to most animals, this yeast can therefore proliferate either sexually or asexually, a choice that an experimenter can make simply1. , . /1 by changing the growth conditions.
+
+In addition to these features, the yeast has a further property that makes it a convenient organism for genetic studies: its genome, by eukaryotic standards, is exceptionally small (see Table 1–2), yet it suffices for all the basic tasks that every eukaryotic cell must perform. Mutants are available for every gene, and thus the consequence of missing each gene—one by one—can be observed under any environmental condition using the high-throughput procedures described in Chapter 8. Over the past 50 years, extensive studies of yeast cells carried out by many laboratories have provided keys to crucial “eukaryotic-only” processes. These include the cell-division cycle (the critical chain of events by which the nucleus and all the other components of a cell are duplicated and parceled out to create two daughter cells from one) and meiosis (the process through which an organism’s reproductive cells are formed). In addition, important insights into eukaryotic chromosome structure, the organization of the nucleus, the mechanisms of gene expression, the formation of organelles, and the ways that proteins are secreted from cells have come out of the work on yeasts. Many of these fundamental processes are so similar between yeasts and humans that a human homolog of a yeast protein will often faithfully carry out its functions when artificially expressed in yeast cells.
+
+## The Expression Levels of All the Genes of an Organism Can Be Determined
+
+The complete genome sequence of S. cerevisiae consists of approximately 12,500,000 nucleotide pairs, including the small contribution (about 78,500 nucleotide pairs) of the mitochondrial DNA. This total is only about 2.7 times as much DNA as there is in E. coli, and it codes for only about 1.5 times as many distinct proteins (see Table 1–2). The way of life of S. cerevisiae is similar in many ways to that of a bacterium, and it seems that this yeast has likewise been subject to selection pressures (for rapid proliferation, for example) that have kept its genome compact.
+
+Knowledge of the complete genome sequence of any organism—be it a yeast or a human—opens up new perspectives on the workings of the cell: many things that once seemed impossibly complex now seem to be within our grasp. Using techniques described in Chapter 8, it is possible, for example, to monitor simultaneously, the amount of mRNA produced from every gene in the yeast genome under any environmental condition. It is also possible to determine in real time
+
+![](images/page_36_image_9.jpg)
+
+Figure 1–40 The reproductive cycles of the yeast S. cerevisiae. Depending on environmental conditions and on details of the genotype, cells of this species can exist in either a diploid (2n) state, with a double chromosome set, or a haploid (n) state, with a single chromosome set. The diploid form can either proliferate by ordinary celldivision cycles (mitosis) or undergo meiosis to produce haploid cells. The haploid MBoC7 m1.37/1.40form can either proliferate by ordinary cell-division cycles or undergo sexual fusion with another haploid cell to become diploid. Meiosis is triggered by starvation, and it gives rise to spores—haploid cells in a dormant state, resistant to harsh environmental conditions.
+
+---
+
+38
+
+Chapter 1: Cells, Genomes, and the Diversity of Life
+
+how the pattern of gene activity changes when conditions change. This type of analysis can be repeated with mRNA prepared from mutant cells lacking any gene we care to test, and, in this way, the influence of that gene on the expression of all other genes can be observed. Although pioneered in yeast, this approach now provides a way to reveal the entire system of controls that govern gene expression in any organism, as long as its genome sequence is known and it can be manipulated genetically.
+
+## Arabidopsis Has Been Chosen as a Model Plant
+
+The large multicellular organisms that we see around us—the plants and animals—seem fantastically varied, but, as we have seen, they are much closer to one another in their evolutionary origins, and more similar in their basic cell biology, than the great host of microscopic single-celled organisms we have been discussing. Thus, while bacteria and archaea are separated by perhaps 3.5 billion years of evolution, vertebrates and insects are separated by about 700 million years, fish and mammals by about 450 million years, and the different species of flowering plants by only about 150 million years (see Figure 1–35).
+
+Because of the close evolutionary relationship between all flowering plants (see Figure 1–35), we can, once again, gain insight into the cell and molecular biology of this whole class of organisms by focusing on just one or a few species for detailed analysis. Out of the nearly 400,000 known species of flowering plants, molecular biologists have chosen to concentrate their efforts on a small weed in the cabbage family, the common wall cress Arabidopsis thaliana (**Figure 1–41**), which can be grown indoors in large numbers and produces thousands of offspring per plant after 8–10 weeks. Arabidopsis has a total genome size of approximately 135 million nucleotide pairs, about 10 times the size of the yeast genome (see Table 1–2).
+
+Work on Arabidopsis has provided a deep understanding of numerous key features of plants, including the mechanisms that cause flower development and its coordination with the seasons, the ability to grow toward sunlight, cell-to-cell signaling by hormones, and the special type of innate immune system that plants use to ward off pathogens. Comparison of the developmental programs between plants and animals has also highlighted some common principles, thereby allowing a glimpse into the basic logic through which large, highly differentiated, multicellular organisms evolved from single-cell ancestors.
+
+## The World of Animal Cells Is Mainly Represented by a Worm, a Fly, a Fish, a Mouse, and a Human
+
+Although plants make up 80% of the biomass on Earth and animals make up less than 0.4% (see Figure 1–14), animals account for the majority of all named species of living organisms, and they are by far the most intensely studied. Five species have emerged as the foremost model organisms for molecular, cell, and developmental biological studies. In order of increasing body size, they are the nematode worm Caenorhabditis elegans, the fly Drosophila melanogaster, the zebrafish Danio rerio, the mouse Mus musculus, and the human, Homo sapiens. Genome sequences from many different individuals within each species have been determined.
+
+Caenorhabditis elegans (**Figure 1–42**) is a small, harmless relative of the eelworm that attacks crops. With a life cycle of only a few days, an ability to survive in a freezer indefinitely in a state of suspended animation, a simple body
+
+![](images/page_37_image_10.jpg)
+
+![](images/page_37_image_11.jpg)
+
+Figure 1–41 Arabidopsis thaliana, the plant chosen as the primary model for studying plant molecular genetics. (Courtesy of Toni Hayden, FLS; and the John Innes Foundation.)
+
+Figure 1–42 Caenorhabditis elegans, the first multicellular organism to have its complete genome sequence determined. This nematode is only about 1 mm long and normally lives in the soil. Most individuals are hermaphrodites, producing both eggs and sperm. (Courtesy of Maria Gallegos, University of Wisconsin, Madison.)
+
+---
+
+1 mm
+
+MODEL ORGANISMS
+
+39
+
+20 µm
+
+![](images/page_38_image_4.jpg)
+
+plan, and an unusual life cycle that is well suited for genetic studies, it is an attractive model animal. C. elegans develops with clockwork precision from a fertilized egg cell into an adult worm with exactly 959 body cells (plus a variable number of egg and sperm cells)—an unusual degree of regularity for animal development. We now have a minutely detailed description of the sequence of events by which this development occurs, as the cells divide, move, and change their character according to strict and predictable rules (see Figure 21–42). The genome of about 100 million nucleotide pairs codes for about 20,000 proteins, and many mutants and other tools are available for testing gene functions. Although the worm has a body plan very different from our own, the conservation of biological mechanisms has been sufficient for the worm to be a model for many of the developmental and cell-biological processes that occur in the human body. Thus, for example, studies of the worm have been critical for understanding the molecular mechanisms that mediate and regulate the many cell deaths that help control animal-cell numbers, both in normal development and during human cancer growth. This crucialMBoC7 e9.13/1.43 process, called programmed cell death or apoptosis, is the subject of Chapter 18. In addition, studies in C. elegans first revealed many fascinating features of RNA interference (discussed in Chapters 7 and 8). They have also provided key insights into the ways neurons make their proper connections (discussed in Chapter 21) and informed many additional areas of cell biology.
+
+Figure 1–43 Drosophila melanogaster. (A) A normal adult Drosophila fruit fly. Molecular genetic studies of this fly have provided the main key to understanding how all animals develop from a fertilized egg into an adult. (B) A mutant adult fly, in which a mutation in a regulatory DNA sequence has caused genes for leg formation to be abnormally activated in positions normally reserved for antennae; as a result, legs have developed where antennae should be. (A, Edward B. Lewis, Courtesy of the Archives, California Institute of Technology; B, courtesy of Matthew Scott.)
+
+## Studies in the Fruit Fly Drosophila Provide a Key to Vertebrate Development
+
+The fruit fly Drosophila melanogaster (**Figure 1–43**) has been used as a model for animal genetic studies for longer than any other organism; in fact, the foundations of classical genetics were built to a large extent on studies of this insect. Nearly 100 years ago, for example, the fly provided definitive proof that genes—the abstract units of hereditary information at the time—are carried on chromosomes, whose behavior had been closely followed with the light microscope during eukaryotic cell division but whose function was at first unknown. The proof depended on one of the many features that make Drosophila especially convenient for molecular genetic studies—the giant chromosomes, which have a characteristic banded appearance that is visible in some of its cells (**Figure 1–44**). Specific changes in the hereditary information, manifest in families of mutant flies, were found to correlate exactly with the loss or alteration of specific bands in the giant chromosomes.
+
+In more recent times, Drosophila, more than any other organism, has shown us how to trace the chain of cause and effect from the genetic instructions encoded in the chromosomal DNA to the structure of the adult multicellular body. Drosophila mutants with body parts strangely misplaced (Figure 1–43) or mispatterned provided the key to the identification and characterization of the genes required to make a properly structured body, with gut, limbs, eyes, and all the other parts in their correct places. Once these Drosophila genes were identified, scientists could identify homologous genes in vertebrates, and then test their functions
+
+![](images/page_38_image_10.jpg)
+
+Figure 1–44 Giant chromosomes from salivary gland cells of Drosophila. Because many rounds of DNA replication have occurred without an intervening cell division, each of the chromosomes in these unusual cells contains more than 1000 identical double-strand MBoC7 m1.41/1.4DNA molecules, all aligned in register. This makes them easy to see in the light microscope, where they display a characteristic and reproducible pattern of bands. Specific bands can be identified as the locations of specific genes: a mutant fly with a region of the banding pattern missing or altered shows a phenotype reflecting loss of the genes in that region (not shown). Genes that are being transcribed at a high rate correspond to bands with a “puffed” appearance (black arrow). The bands stained dark brown in the micrograph are sites where a particular regulatory protein is bound to the DNA; the regulatory protein is identified by the binding of a specific antibody. (From R. Paro, Trends Genet. 6:416–421, 1990. With permission from Elsevier.)
+
+---
+
+40
+
+Chapter 1: Cells, Genomes, and the Diversity of Life
+
+![](images/page_39_image_2.jpg)
+
+Figure 1–45 The early stages of normal frog development. These drawings show the development of a Rana pipiens tadpole from a fertilized egg. The entire process takes place outside the mother, making the mechanisms involved readily accessible for experimental studies. (From W. Shumway, Anat. Rec. 78:139–147, 1940. With permission from John Wiley & Sons.)
+
+there by analyzing mice in which the genes had been mutated. The results have revealed an astonishing degree of similarity in the molecular mechanisms that govern insect and vertebrate development (discussed in Chapter 21).
+
+The majority of all named species of living organisms are insects. Even if Drosophila had nothing in common with vertebrates, but only with insects, it would still be an important model organism. But, if understanding the molecular genetics of vertebrates is the goal, why not simply tackle the problem head-on in vertebrates, instead of sidling up to it obliquely through studies in Drosophila?
+
+There are many reasons. Drosophila requires only 9 days to progress from a fertilized egg to an adult; it is vastly easier and cheaper to breed than any vertebrate, and its genome is much smaller—about 180 million nucleotide pairs, compared with about 3.1 billion for a human (see Table 1–2). Its genome codes for about 14,000 proteins, and mutants are now available for essentially any gene. In addition to its foundational contributions to animal development, research on Drosophila continues to uncover many other insights into biology, ranging from deeply conserved mechanisms that neutralize pathogens to ways that external stimuli from the environment are processed in the brain.
+
+## The Frog and the Zebrafish Provide Highly Accessible Vertebrate Models
+
+![](images/page_39_image_8.jpg)
+
+Frogs have long been used to study the early steps of embryonic development in vertebrates. Because their eggs are big, easy to manipulate, and fertilized outside of the animal, the subsequent development of the early embryo can be easily followed (**Figure 1–45**). Xenopus laevis, the African clawed frog, continues to be an important model organism (**Movie 1.6** and see Movie 21.1). Although the species is poorly suited for genetic analysis, cytoplasm isolated from unfertilized Xenopus eggs has the remarkable ability to recapitulate the formation of cellular structures and organelles in a test tube. These egg extracts allow powerful biochemical approaches to study such fundamental processes as the cell division cycle, described in Chapter 17.
+
+The zebrafish Danio rerio, in contrast, is well suited for genetic analysis. Its genome is compact—only half as big as that of a mouse or a human (see Table 1–2)—and it has a generation time of only about 3 months, which is much
+
+![](images/page_39_image_11.jpg)
+
+![](images/page_39_image_12.jpg)
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">Figure 1–46 Zebrafish as a model for studies of vertebrate development. (A) These small, hardy tropical fish are found in many home aquaria and are convenient for laboratory genetic studies. They are ideal for developmental studies as their embryos develop outside of the mother and are transparent, so one can observe cells and internal structures in the living organism throughout its development from an egg to an adult. (B) In this fluorescence image of a 2-day-old embryo, a red fluorescent protein marks the developing blood vessels, and a green fluorescent protein marks the developing lymphatic vessels; regions where the two markers coincide appear yellow. (A, courtesy of Steve Baskauf; B, from H.M. Jung et al., Development 144:2070–2081, 2017. With permission from The Company of Biologists.)</span></small>
+
+---
+
+MODEL ORGANISMS
+
+41
+
+shorter than that of Xenopus laevis. Many mutants are available, and genetic manipulation is relatively simple. The zebrafish has the added virtue that it is transparent for the first 2 weeks of its life, so behavior of specific tissues and individual cells can easily be followed in the living organism as it develops (**Figure 1–46**; see Movie 21.2). All this has made it an increasingly important model vertebrate, one that has been especially crucial for understanding the development of the heart and the circulatory system, as discussed in Chapter 22.
+
+## The Mouse Is the Predominant Mammalian Model Organism
+
+In terms of genome size and function, cell biology, and molecular mechanisms, mammals are a highly uniform group of organisms. Even anatomically, the differences among mammals are chiefly a matter of size and proportions; it is hard to think of a human body part that does not have a counterpart in elephants and mice, and vice versa. Evolution plays freely with quantitative features, but it does not readily change the logic of the basic structure.
+
+Mammals have typically about 1.5 times as many protein-coding genes as Drosophila, a genome that is about 16 times larger, and an adult body made up of millions or billions of times as many cells. For an exact measure of how closely mammalian species resemble one another genetically, we can compare the nucleotide sequences of corresponding (orthologous) genes or the amino acid sequences of the proteins that these genes encode. The results for individual genes and proteins vary widely. But typically, if we line up the amino acid sequence of a human protein with that of the orthologous protein from, say, an elephant, more than 80% of the amino acids are identical. A similar comparison between human and bird shows an amino acid identity of about 70%—because the bird and mammalian lineages have had longer to diverge than those of the elephant and the human, they have accumulated more differences (**Figure 1–47**).
+
+![](images/page_40_chart_6.jpg)
+
+Figure 1–47 Times of divergence of different vertebrates. The scale on the left shows the estimated date and geological era of the last common ancestor of each specified pair of animals. Each time estimate is based on comparisons of the amino acid sequences of orthologous proteins; the longer the animals of a pair have had to evolve independently, the smaller the percentage of amino acids that remain identical. The time scale has been calibrated to match the fossil evidence showing that the last common ancestor of mammals and birds lived about 320 million years ago.
+
+The figures on the right show the amino acid sequence divergence for one particular protein—the α chain of hemoglobin. Note that although there is a clear general trend of increasing divergence with increasing time for this protein, there are irregularities that are thought to reflect the action of natural selection causing especially rapid changes in hemoglobin sequence when the organisms experienced special physiological demands. Some proteins that are subject to stricter functional constraints evolve much more slowly than hemoglobin, whereas others evolve as much as five times faster. (Adapted from S. Kumar and S.B. Hedges, Nature 392:917–920, 1998.)
+
+---
+
+42
+
+Chapter 1: Cells, Genomes, and the Diversity of Life
+
+![](images/page_41_image_2.jpg)
+
+![](images/page_41_image_3.jpg)
+
+Figure 1–48 Similar mutations produce the same effect in human and mouse. The human baby and the mouse shown here have remarkably similar abnormal white patches on their foreheads as a result of a mutation in the same gene (called Kit), which is required for the normal development, migration, and survival of some skin pigment cells. (Courtesy of R.A. Fleischman, from R.A. Fleischman et al., Proc. Natl. Acad. Sci. USA 88:10885–10889, 1991.)
+
+The mouse, being small, hardy, and a rapid breeder, has become the foremost model organism for experimental studies of mammalian molecular cell biology. Many naturally occurring mutations are known, often mimicking the effects of corresponding mutations in humans to a remarkable extent (**Figure 1–48**). Moreover, methods have been developed to test the function of any chosen mouse gene or of any noncoding portion of the mouse genome by artificially creating mutations in the relevant part of the gene or genome, as we explain in Chapter 8.
+
+Just one made-to-order mutant mouse can provide a wealth of information for the cell biologist. It reveals the effects of the chosen mutation in various contexts, simultaneously testing the action of the gene in the many different types of cells in the body that could in principle be affected. Studies of the mouse are so fundamental to understanding mammalian biology that we will encounter them in nearly every chapter of this book.
+
+## The COVID-19 Pandemic Has Focused Scientists on the SARS-CoV-2 Coronavirus
+
+Having discussed several of the most prominent and well-studied model organisms—which are based on the cell as their fundamental unit—we now turn to an intensively studied virus. Viruses, which in essence feed on cells, are prevalent in all three domains of life: bacteria, archaea, and eukaryotes. We introduced them earlier in this chapter when we discussed several E. coli viruses that served as critical experimental systems for the initial development of molecular biology. Here, we focus on one prominent virus, SARS-CoV-2, that infects our own cells and has, due to the widespread attention it has received from scientists, become a model system for understanding eukaryotic viruses. But before discussing this virus in detail, we consider how viruses—genomes packaged in protective shells—first came to be, and how they have evolved over time.
+
+As described in Chapter 6, cells are believed to have first evolved in an “RNA world,” before there were proteins or DNA molecules. Scientists suspect that even at that time, parasitic genetic elements were present, in the form of small RNA molecules that took advantage of more advanced replicating entities to proliferate. These are believed to have been the ancestors of today’s smallest viruses, which contain single-strand RNA genomes composed of as few as 3000 nucleotides. Thus, virus-like entities have probably been a ubiquitous feature of life on Earth for more than 3 billion years.
+
+At a minimum, a virus requires a genome that encodes two core functions: first, a nucleic acid replication process that produces multiple copies of its genome once inside its host cell, and second, a genome-packaging process that surrounds these new genomes with a protective protein coat, while allowing the viruses to exit the host cell and subsequently enter others. But the viruses present today have evolved through billions of infectious cycles, during which there has been a constant war between host organisms and the viruses—with host cells evolving
+
+---
+
+MODEL ORGANISMS
+
+43
+
+![](images/page_42_image_2.jpg)
+
+Figure 1–49 The coronavirus. (A) Electron micrograph of SARS-CoV-2 virus particles attached to the surface of a cultured monkey cell. (B) A cut-away drawing of the virus that highlights its protruding spike protein molecules plus a few other major proteins. The spike protein is the major target for vaccines that are designed to block infections, because it attaches the virus to the outside of host cells and then catalyzes transfer of the viral genome into the cell interior. As indicated, the RNA genome is packaged unevenly inside the enveloped virus particle. (C) The 29 proteins produced by SARS-CoV-2, grouped into three 7 1.200/1.49different categories. The locations of the structural proteins S, M, E, and N in the virus are indicated in panel B. Each of the proteins listed in the “accessory” category has a role in protecting the virus from host antiviral responses. The functions of the nonstructural proteins include binding to ribosomes to block host protein synthesis (Nsp1), forming a double-membrane “replication organelle” from host-cell membranes (Nsp 3, 4, and 6), and forming the RNA-dependent RNA polymerase (Nsp 7, 8, and 12). The way in which the virus reproduces itself, once inside a host cell, is shown in Figure 5–62. (A, from M. Laue et al. Sci. Rep. 11:3515, 2021. With permission from Cold Spring Harbor Press.)
+
+multiple antivirus defenses and viruses evolving various ways to overcome these defenses. As a result, through cycles of random mutation followed by natural selection over long evolutionary times, most virus genomes have grown much larger than needed for their two core functions, with many of the additional genes encoding proteins that help the viruses to circumvent their host-cells’ defenses.
+
+Coronavirus genomes are large, single-strand RNA molecules, about 30,000 nucleotides long. This RNA is packaged in a protein coat that is covered with a lipid bilayer envelope, from which protein spikes protrude (**Figure 1–49A and B**). Many coronavirus strains circulate in animal species, including pigs, birds, and bats. Some strains also circulate among humans; these so-called “endemic” strains cause only mild symptoms and are responsible for about one in four common colds. But on rare occasions, a bat coronavirus mutates in a way that allows it to infect humans, where it can cause very severe, even fatal, disease. It is thought that the COVID-19 pandemic of 2020 originated in this way.
+
+The virus that causes COVID-19, SARS-CoV-2, produces 29 proteins (**Figure 1–49C**). Some are structural proteins that package the virus’s RNA genome into the virus particle. The nonstructural proteins are critical for replicating the viral genome inside of the host cell, as well as for ensuring that the viral genes are appropriately translated into proteins, including the viral RNA polymerase complex. And, as one would expect, other proteins help the virus to avoid the host’s immune defenses, which are described in Chapter 24.
+
+The SARS-CoV-2 virus is closely related to the coronaviruses that cause colds, as well as to the SARS-CoV virus that emerged from bats in 2002 and killed nearly 1 in 10 of the humans it infected. We still do not understand what makes SARS-CoV and SARS-CoV-2 infections so much more dangerous to humans than the infections caused by their close relatives that cause only a mild cold. But, given the thousands of research laboratories currently focused on understanding the cell biology of SARS-CoV-2 with the aim of ameliorating the COVID-19 pandemic, we should know the answers to these questions in the near future. These studies are certain to make us much better prepared to deal with the next virus that emerges to threaten us.
+
+---
+
+44
+
+Chapter 1: Cells, Genomes, and the Diversity of Life
+
+## Humans Are Unique in Reporting on Their Own Peculiarities
+
+As humans, we have a special interest in the human genome. We want to know how our genes and their products work. But, even if you were a mouse, pre-occupied with how mouse genes and their products work, humans would be attractive as model genetic organisms because of one special property: through medical examinations and self-reporting, we catalog our own genetic (and other) disorders. The human population is enormous, consisting today of some 8 billion individuals, and this self-documenting property means that a huge database exists of human mutations and their effects. And the human genome sequence of more than 3 billion nucleotide pairs has been determined for hundreds of thousands of people, making it easier than ever before to identify at a molecular level the precise genetic change responsible for any given human mutant phenotype.
+
+But what precisely do we mean when we speak of the human genome? Whose genome? On average, any two people taken at random will differ at roughly 4 million different sites in their DNA sequence (see Table 4–3, p. 247). Thus, the human genome is very complex, embracing the entire pool of variant genes found in the human population. As described in Chapter 4, knowledge of this variation is helping us to understand human biology; for example, why some people are prone to one disease, others to another, and why some respond well to a drug, but others badly. It is also providing clues to our history, including population movements, interbreeding among our ancestors, the infections they suffered, and the diets they ate. All these things have left traces in the variant forms of genes that survive today in the human communities that populate our planet, and by exploiting this fact, scientists have been discovering fascinating aspects of our past.
+
+By drawing together the insights from humans, mice, fish, flies, worms, yeasts, plants, and bacteria—using DNA sequence similarities to map out the correspondences between one model organism and another—we are greatly enriching our understanding of them all.
+
+## To Understand Cells and Organisms Will Require Mathematics, Computers, and Quantitative Information
+
+Empowered by knowledge of complete genome sequences, we can list the genes, proteins, and RNA molecules in a cell, and we have powerful methods to analyze the complex web of interactions between them. But how are we to use all this information to understand how cells work? Even for a single cell type belonging to a single species of organism, the current deluge of data seems overwhelming. The informal reasoning that biologists usually rely on seems increasingly inadequate in the face of such complexity.
+
+The difficulty is more than just a matter of information overload. Biological systems are, for example, full of feedback loops, and the behavior of even the simplest of systems with feedback is remarkably difficult to predict by intuition alone (**Figure 1–50**); small changes in parameters can cause radical changes in outcome. To go from a circuit diagram to a prediction of the behavior of the
+
+![](images/page_43_image_9.jpg)
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">Figure 1–50 A very simple gene regulatory circuit. A single gene regulates its own expression because its protein product is a transcription regulator that binds to the regulatory DNA of its own gene. Simple schematic diagrams such as this are found throughout this book. They are often used to summarize what we know, but they leave many questions unanswered. When the protein binds, does it inhibit or stimulate transcription from the gene? How steeply does the transcription rate depend on the protein concentration? How long, on average, does a molecule of the protein remain bound to the DNA? How long does it take to make each molecule of mRNA or protein, and how quickly does each type of molecule get degraded? As explained in Chapter 8, mathematical modeling shows that we need quantitative answers to all these and other questions—obtained by direct observations and experiments—before we can predict the behavior of even this simple circuit. For different parameter values, the system may settle to a unique steady state; or it may behave as a switch, capable of existing in one or another of a set of alternative states; or it may oscillate; or it may even show large random fluctuations.</span></small>
+
+---
+
+MODEL ORGANISMS
+
+45
+
+system, we need detailed quantitative information, and to draw deductions from that information we need mathematics and computers.
+
+Such tools for quantitative reasoning are essential, but they are not allpowerful. You might think that, knowing how each protein in a cell influences each other protein, and how the expression of each gene is regulated by the products of other genes, we should soon be able to calculate how the cell as a whole will behave, just as an astronomer can calculate the orbits of the planets or a chemical engineer can calculate the flows through a chemical plant. But any attempt to perform this feat for anything close to an entire living cell rapidly reveals the limits of our present knowledge. The information we have, plentiful as it is, is full of gaps and uncertainties, and it is largely qualitative rather than quantitative. Most often, cell biologists studying a cell’s control systems sum up their knowledge in simple schematic diagrams—this book is full of them—rather than in numbers, graphs, and differential equations.
+
+To progress from qualitative descriptions and intuitive reasoning to quantitative descriptions and mathematical deduction is one of the biggest challenges for contemporary cell biology. So far, the challenge has been met for only a few very simple fragments of the machinery of living cells—subsystems involving a handful of different proteins, or two or three genes that regulate one another, where theory and experiment go closely hand in hand. We discuss some of these examples later in the book and devote much of Chapter 8 to some new approaches designed to answer the increasingly complex questions that arise in biology.
+
+Knowledge and understanding bring the power to intervene—with humans, to prevent and treat disease; with plants, to create better crops; with bacteria, archaea, and fungi, to control them for our own benefit. All these biological enterprises are linked, because the genetic information of all living organisms is written in the same language. The recent ability of molecular biologists to read and decipher this language has already begun to transform our relationship to the living world. The account of cell biology in the subsequent chapters will, we hope, equip the reader to understand, and possibly to contribute to, the great biosciences adventure that we can anticipate through the rest of this century.
+
+## Summary
+
+Powerful new technologies, including rapid and cheap genome sequencing, are enabling rapid advances in our knowledge of human biology, with implications for understanding and treating human disease. But living systems are incredibly complex, and simpler model organisms have played a critical part in revealing universal genetic and molecular cell biological mechanisms. Thus, for example, early research on the bacterium E. coli and its viruses provided the foundations needed to decipher the fundamental genetic mechanisms in all cells. And research on the unicellular yeast Saccharomyces cerevisiae, which continues to serve as a simple model organism for eukaryotic cell biology, has revealed the molecular basis for many critical processes that have been strikingly conserved during more than a billion years of eukaryotic evolution. Biologists have also chosen a small number of multicellular organisms for intensive study: a worm, a fly, a fish, the mouse, and humans serve as model organisms for animals, and a small member of the cabbage family serves as a model for plant biology. Even today, research that focuses on these and other model organisms remains crucial for understanding ourselves, as well as for driving scientific and medical advances.
+
+---
+
+46
+
+Chapter 1: Cells, Genomes, and the Diversity of Life
+
+## PROBLEMS
+
+Which statements are true? Explain why or why not.
+
+1–1 DNA and RNA use the same four-letter alphabet.
+
+1–2 Each member of the human hemoglobin gene family, which consists of seven genes arranged in two clusters on different chromosomes, is an ortholog to all of the other members.
+
+1–3 Most of the DNA sequences in a bacterial genome code for proteins, whereas most of the DNA sequences in the human genome do not.
+
+1–4 Without additional information, no amount of gazing at genome sequences will reveal the functions of genes.
+
+Discuss the following problems.
+
+1–5 “Life” is easy to recognize but difficult to define. Dictionaries commonly define life as “The state or quality that distinguishes living beings or organisms from dead ones and from inorganic matter, characterized chiefly by metabolism, growth, the ability to reproduce, and the ability to respond to stimuli.” Score a car, a cactus, and yourself with respect to these characteristics.
+
+1–6 Since it was deciphered more than five decades ago, some have claimed that the genetic code must be a frozen accident, while others have argued that it was shaped by natural selection. A striking feature of the genetic code is its inherent resistance to the effects of mutation. For example, a change in the third position of a codon often specifies the same amino acid or one with similar chemical properties. The natural code resists mutation more effectively (is less susceptible to error) than most other possible versions, as illustrated in **Figure Q1–1**. Only one in a million computer-generated “random” codes is more error-resistant than the natural genetic code. Does the extraordinary mutation resistance of the genetic code argue in favor of its origin as a frozen accident or as a result of natural selection? Explain your reasoning.
+
+![](images/page_45_chart_11.jpg)
+
+Figure Q1–1 Susceptibility to mutation of the natural code shown relative to that of millions of computer-generated alternative genetic codes (Problem 1–6). Susceptibility measures the average change in amino acid properties caused by random mutations in a genetic code. A small value indicates that mutations tend to cause minor changes. (Data courtesy of Steve Freeland.)
+
+1–7 You have begun to characterize a sample obtained from the depths of the oceans on Europa, one of Jupiter’s moons. Much to your surprise, the sample contains a lifeform that grows well in a rich broth. Your preliminary analysis shows that it is cellular and contains DNA, RNA, and protein. When you show your results to a colleague, she suggests that your sample was contaminated with an organism from Earth. What approaches might you try to distinguish between contamination and a novel cellular life-form that is based on DNA, RNA, and protein?
+
+1–8 It is not so difficult to imagine what it means to feed on the organic molecules that living things produce. That is, after all, what we do. But what does it mean to “feed” on sunlight, as phototrophs do? Or, even stranger, to “feed” on rocks, as lithotrophs do? Where is the “food,” for example, in the mixture of chemicals (H<sub>2</sub>S, H<sub>2</sub>, CO, Mn+, Fe<sup>2+</sup>, Ni2+, CH4, and $\mathrm { N H _ { 4 } } ^ { + } )$ that spews from a hydrothermal vent?
+
+1–9 How many possible different trees (branching patterns) can be drawn to display the evolution of bacteria, archaea, and eukaryotes, assuming that they all arose from a common ancestor?
+
+1–10 The genes for ribosomal RNA are highly conserved (relatively few sequence changes) in all organisms on Earth; thus, they have evolved very slowly over time. Were ribosomal RNA genes “born” perfect?
+
+1–11 Rates of evolution appear to vary in different lineages. For example, the rate of evolution in the rat lineage is significantly higher than in the human lineage. These rate differences are apparent whether one looks at changes in nucleotide sequences that encode proteins and are subject to selective pressure or at changes in noncoding nucleotide sequences, which are not under obvious selection pressure. Can you offer one or more possible explanations for the slower rate of evolutionary change in the human lineage versus the rat lineage?
+
+1–12 Genes participating in informational processes such as replication, transcription, and translation undergo horizontal gene transfer between species much less often than do genes involved in metabolism. The basis for this inequality is unclear at present, but one suggestion is that it relates to the underlying complexity of the two types of processes. Informational processes tend to involve large aggregates of different gene products, whereas metabolic reactions are usually catalyzed by enzymes composed of a single protein. Why would the complexity of the underlying process—informational or metabolic—have any effect on the rate of horizontal gene transfer?
+
+1–13 Animal cells have neither cell walls nor chloroplasts, whereas plant cells have both. Fungal cells are somewhere in between; they have cell walls but lack chloroplasts. Are fungal cells more likely to be animal cells that
+
+---
+
+REFERENCES
+
+47
+
+gained the ability to make cell walls or to be plant cells that lost their chloroplasts? This question represented a difficult issue for early investigators who sought to assign evolutionary relationships solely on the basis of cell characteristics and morphology. How do you suppose that this question was eventually decided?
+
+1–14 Giardia lamblia is a fascinating eukaryotic parasite; it contains a nucleus but no mitochondria and no discernible endoplasmic reticulum or Golgi apparatus— one of the very rare examples of such a cellular organization among eukaryotes. This cell organization might have arisen because Giardia is an ancient lineage that separated from the rest of the eukaryotes before mitochondria were acquired and internal membranes were developed. Or it might be a stripped-down version of a more standard eukaryote that has lost these structures because they are not necessary for its parasitic lifestyle. How might you use nucleotide sequence comparisons to distinguish between these alternatives?
+
+1–15 When plant hemoglobin genes were first discovered in legumes, it was so surprising to find a gene typical of animal blood that it was hypothesized that the plant gene arose by horizontal transfer from an animal. Many more hemoglobin genes have now been sequenced, and a phylogenetic tree based on some of these sequences is shown in **Figure Q1–2**.
+
+A. Does this tree support or refute the hypothesis that the plant hemoglobins arose by horizontal gene transfer?
+
+B. Supposing that the plant hemoglobin genes were originally derived from a parasitic nematode, for example, what would you expect the phylogenetic tree to look like?
+
+![](images/page_46_chart_7.jpg)
+
+Figure Q1–2 Phylogenetic tree for hemoglobin genes from a variety of species (Problem 1–15). The legumes are highlighted in green. The lengths of lines that connect the present-day species represent the evolutionary distances that separate them.
+
+## REFERENCES
+
+## General
+
+Alberts B, Hopkin K, Johnson A, et al. (2019) Essential Cell Biology, 5th ed. New York: Norton.
+
+Barton NH, Briggs DEG, Eisen JA, et al. (2007) Evolution. Cold Spring Harbor, NY: Cold Spring Harbor Laboratory Press.
+
+Darwin C (1859) On the Origin of Species. London: Murray.
+
+Hall BK & Hallgrímsson B (2014) Strickberger’s Evolution, 5th ed. Burlington, MA: Jones & Bartlett.
+
+Lynch M (2007) The Origins of Genome Architecture. Oxford: Oxford University Press.
+
+Madigan MT, Bender KS, Buckley DH et al. (2018) Brock Biology of Microorganisms, 15th ed. London: Pearson.
+
+Margulis L & Chapman MJ (2009) Kingdoms and Domains: An Illustrated Guide to the Phyla of Life on Earth. San Diego: Academic Press.
+
+Moore JA (1993) Science as a Way of Knowing. Cambridge, MA: Harvard University Press.
+
+## The Universal Features of Life on Earth
+
+Blain JC & Szostak JW (2014) Progress toward synthetic cells. Annu. Rev. Biochem. 83, 615–640.
+
+Brenner S, Jacob F & Meselson M (1961) An unstable intermediate carrying information from genes to ribosomes for protein synthesis. Nature 190, 576–581.
+
+Gibson DG, Benders GA, Andrews-Pfannkoch C . . . Smith HO (2008) Complete chemical synthesis, assembly, and cloning of a Mycoplasma genitalium genome. Science 319, 1215–1220.
+
+Koonin EV (2005) Orthologs, paralogs, and evolutionary genomics. Annu. Rev. Genet. 39, 309–338.
+
+Noller H (2005) RNA structure: reading the ribosome. Science 309, 1508–1514.
+
+Watson JD & Crick FHC (1953) Molecular structure of nucleic acids: a structure for deoxyribose nucleic acid. Nature 171, 737–738.
+
+## Genome Diversification and the Tree of Life
+
+Baker BJ, De Anda V, Seitz KW . . . Lloyd KG (2020) Diversity, ecology and evolution of Archaea. Nat. Microbiol. 5, 887–900.
+
+Doolittle WF & Brunet TDP (2016) What is the tree of life. PLoS Genet. 12(4), e1005912.
+
+Eme L, Spang A, Lombard J . . . Thijs JG (2017) Archaea and the origin of eukaryotes. Nat. Rev. Microbiol. 15(12), 711–723.
+
+Hug LA, Baker BJ, Anantharaman K . . . Banfield JF (2016) A new view of the tree of life. Nat. Microbiol. 1, 16048.
+
+Kerr RA (1997) Life goes to extremes in the deep earth—and elsewhere? Science 276, 703–704.
+
+---
+
+48
+
+Chapter 1: Cells, Genomes, and the Diversity of Life
+
+Woese C (1998) The universal ancestor. Proc. Natl. Acad. Sci. USA 95, 6854–6859.
+
+## Eukaryotes and the Origin of the Eukaryotic Cell
+
+Andersson SG, Zomorodipour A, Andersson JO . . . Kurland CG (1998) The genome sequence of Rickettsia prowazekii and the origin of mitochondria. Nature 396, 133–140.
+
+Burki F, Roger AJ, Brown MW & Simpson AGB (2020) The new tree of eukaryotes. Trends Ecol. Evol. 35(1), 43–55.
+
+Carroll SB, Grenier JK & Weatherbee SD (2005) From DNA to Diversity: Molecular Genetics and the Evolution of Animal Design, 2nd ed. Maldon, MA: Blackwell Science.
+
+Imachi H, Nobu MK, Nakahara N . . . Takai K (2020) Isolation of an archaeon at the prokaryote–eukaryote interface. Nature 577, 519–525.
+
+Spang A, Caceres EF & Ettema TJG (2017) Genomic exploration of the diversity, ecology, and evolution of the archaeal domain of life. Science 357(6351), eaaf3883.
+
+## Model Organisms
+
+Adams MD, Celniker SE, Holt RA . . . Venter JC (2000) The genome sequence of Drosophila melanogaster. Science 287, 2185–2195.
+
+Blattner FR, Plunkett G, Bloch CA . . . Shao Y (1997) The complete genome sequence of Escherichia coli K-12. Science 277, 1453–1474.
+
+Goffeau A, Barrell BG, Bussey H . . . Oliver SG (1996) Life with 6000 genes. Science 274, 546–567.
+
+International Human Genome Sequencing Consortium (2001) Initial sequencing and analysis of the human genome. Nature 409, 860–921.
+
+Krupovic M, Dolja VV & Koonin EV (2019) Origin of viruses: primordial replicators recruiting capsids from hosts. Nat. Rev. Microbiol. 17(7), 449–458.
+
+Lander ES (2011) Initial impact of the sequencing of the human genome. Nature 470, 187–197.
+
+Lynch M & Conery JS (2000) The evolutionary fate and consequences of duplicate genes. Science 290, 1151–1155.
+
+Masters PS (2006) The molecular biology of coronaviruses. Adv. Virus Res. 66, 193–292.
+
+Prangishvili D, Bamford DH, Forterre P, . . . Krupovic M (2017) The enigmatic archaeal virosphere. Nat. Rev. Microbiol. 15(12), 724–739.
+
+Reed FA & Tishkoff SA (2006) African human diversity, origins and migrations. Curr. Opin. Genet. Dev. 16, 597–605.
+
+The Arabidopsis Initiative (2000) Analysis of the genome sequence of the flowering plant Arabidopsis thaliana. Nature 408, 796–815.
+
+The C. elegans Sequencing Consortium (1998) Genome sequence of the nematode C. elegans: a platform for investigating biology. Science 282, 2012–2018.
+
+Tinsley RC & Kobel HR (eds.) (1996) The Biology of Xenopus. Oxford: Clarendon Press.
+
+Weiss SR (2020) Forty years with coronaviruses. J. Exp. Med. 217(5), e20200537.

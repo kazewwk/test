@@ -1,0 +1,105 @@
+- Summary 1296
+- REGENERATION AND REPAIR 1296
+- Planarian Flatworms Contain Stem Cells That Can Regenerate a Whole New Body 1297
+- Some Vertebrates Can Regenerate Entire Limbs and Organs 1298
+- Stem Cells Can Be Used Clinically to Replace Lost Hematopoietic or Skin Cells 1299
+- Neural Stem Cells Can Be Manipulated in Culture and Used to Repopulate a Diseased Central Nervous System 1299
+- Summary 1300
+- CELL REPROGRAMMING AND PLURIPOTENT STEM CELLS 1300
+- Nuclei Can Be Reprogrammed by Transplantation into Foreign Cytoplasm 1301
+- Reprogramming of a Transplanted Nucleus Involves Drastic Changes in Chromatin 1301
+- Embryonic Stem (ES) Cells Can Generate Any Part of the Body 1302
+- A Core Set of Transcription Regulators Defines and Maintains the ES-Cell State 1303
+- Fibroblasts Can Be Reprogrammed to Create Induced Pluripotent Stem (iPS) Cells 1303
+- Reprogramming Involves a Massive Upheaval of the Gene Control System 1304
+- An Experimental Manipulation of Factors That Modify Chromatin Can Increase Reprogramming Efficiencies 1305
+- ES and iPS Cells Can Be Guided to Generate Specific Adult Cell Types and Even Organoids 1306
+- Cells of One Specialized Type Can Be Forced to Transdifferentiate Directly into Another 1306
+- ES and iPS Cells Are Also Useful for Drug Discovery and Analysis of Disease 1308
+- Summary 1309
+- Problems 1310
+- References 1312
+
+## Chapter 23 Pathogens and Infection
+
+- INTRODUCTION TO PATHOGENS 1313
+- Pathogens Can Be Viruses, Bacteria, or Eukaryotes 1314
+- Pathogens Interact with Their Hosts in Different Ways 1314
+- Bacteria Are Diverse and Occupy a Remarkable Variety of Ecological Niches 1315
+- Bacterial Pathogens Carry Specialized Virulence Genes 1317
+- Bacterial Virulence Genes Encode Toxins and Secretion Systems That Deliver Effector Proteins to Host Cells 1319
+- Fungal and Protozoan Parasites Have Complex Life Cycles Involving Multiple Forms 1321
+- All Aspects of Viral Propagation Depend on Host-Cell Machinery 1322
+- Summary 1325
+- CELL BIOLOGY OF PATHOGEN INFECTION 1325
+- Pathogens Breach Epithelial Barriers to Infect the Host 1326
+- Pathogens That Colonize an Epithelium Must Overcome Its Protective Mechanisms 1326
+- Extracellular Pathogens Use Toxins and Contact-dependent Secretion Systems to Disturb Host Cells Without Entering Them 1328
+- Intracellular Pathogens Have Mechanisms for Both Entering and Leaving Host Cells 1329
+- Viruses Bind to Virus Receptors at the Host-Cell Surface 1329
+- Viruses Enter Host Cells by Membrane Fusion, Pore Formation, or Membrane Disruption 1330
+- Bacteria Enter Host Cells by Phagocytosis 1331
+- Intracellular Eukaryotic Parasites Actively Invade Host Cells 1333
+- Some Intracellular Pathogens Escape from the Phagosome into the Cytosol 1334
+- Many Pathogens Alter Membrane Traffic in the Host Cell to Survive and Replicate 1335
+- Bacteria and Viruses Use the Host-Cell Cytoskeleton for Intracellular Movement 1338
+- Many Microbes Manipulate Autophagy 1340
+- Viruses Can Take Over the Metabolism of the Host Cell 1340
+- Pathogens Can Evolve Rapidly by Antigenic Variation 1341
+- Error-prone Replication Dominates Viral Evolution 1343
+- Drug-resistant Pathogens Are a Growing Problem 1344
+- Summary 1346
+
+- THE HUMAN MICROBIOTA 1347
+- The Human Microbiota Is a Complex Ecological System 1347
+- The Microbiota Influences Our Development and Health 1348
+- Summary 1349
+- Problems 1350
+- References 1351
+
+## Chapter 24 The Innate and Adaptive Immune Systems
+
+- Chapter 24 - The Innate and Adaptive Immune Systems 1353
+- THE INNATE IMMUNE SYSTEM 1354
+- Epithelial Surfaces Serve as Barriers to Infection 1354
+- Pattern Recognition Receptors (PRRs) Recognize Conserved Features of Pathogens 1354
+- There Are Multiple Families of PRRs 1355
+- Activated PRRs Trigger an Inflammatory Response at Sites of Infection 1356
+- Phagocytic Cells Seek, Engulf, and Destroy Pathogens 1358
+- Complement Activation Targets Pathogens for Phagocytosis or Lysis 1358
+- Virus-infected Cells Take Drastic Measures to Prevent Viral Replication 1360
+- Natural Killer Cells Induce Virus-infected Cells to Kill Themselves 1361
+- Dendritic Cells Provide the Link Between the Innate and Adaptive Immune Systems 1362
+- Summary 1362
+- OVERVIEW OF THE ADAPTIVE IMMUNE SYSTEM 1364
+- B Cells Develop in the Bone Marrow, T Cells in the Thymus 1365
+- Immunological Memory Depends on Both Clonal Expansion and Lymphocyte Differentiation 1366
+- Most B and T Cells Continually Recirculate Through Peripheral Lymphoid Organs 1368
+- Immunological Self-tolerance Ensures That B and T Cells Do Not Attack Normal Host Cells and Molecules 1370
+- Summary 1372
+- B CELLS AND IMMUNOGLOBULINS 1372
+- B Cells Make Immunoglobulins (Igs) as Both Cell-Surface Antigen Receptors and Secreted Antibodies 1373
+- Mammals Make Five Classes of Igs 1373
+- Ig Light and Heavy Chains of Antibodies Consist of Constant and Variable Regions 1375
+- Ig Genes Are Assembled from Separate Gene Segments During B Cell Development 1377
+- Antigen-driven Somatic Hypermutation Fine-Tunes Antibody Responses 1379
+- B Cells Can Switch the Class of Ig They Make 1379
+- Summary 1381
+- T CELLS AND MHC PROTEINS 1382
+- T Cell Receptors (TCRs) Are Ig-like Heterodimers 1382
+- Activated Dendritic Cells Activate Naive T Cells 1383
+- T Cells Recognize Foreign Peptides Bound to MHC Proteins 1384
+- MHC Proteins Are the Most Polymorphic Human Proteins Known 1388
+- CD4 and CD8 Co-receptors on T Cells Bind to Invariant Parts of MHC Proteins 1389
+- Developing Thymocytes Undergo Positive and Negative Selection 1389
+- Cytotoxic T Cells Induce Infected Target Cells to Undergo Apoptosis 1391
+- Effector Helper T Cells Help Activate Other Cells of the Innate and Adaptive Immune Systems 1392
+- Naive Helper T Cells Can Differentiate into Different Types of Effector T Cells 1393
+- Both T and B Cells Require Multiple Extracellular Signals for Activation 1394
+- Many Cell-Surface Proteins Belong to the Ig Superfamily 1396
+- Vaccination Against Pathogens Has Been Immunology's Greatest Contribution to Human Health 1396
+- Summary 1400
+- Problems 1402
+- References 1404
+- Glossary G:1
+- Index I:1

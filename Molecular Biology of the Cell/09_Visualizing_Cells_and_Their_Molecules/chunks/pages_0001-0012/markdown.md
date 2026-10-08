@@ -1,0 +1,273 @@
+# Visualizing Cells and Their Molecules
+
+Understanding the structural organization of cells, and the macromolecules that build and animate them, is essential for learning how they function. In this chapter, we briefly describe some of the principal light and electron microscopy methods used to study cells and molecules. In the past decade or so, there have been major technical developments in both methods that allow us to see biological structures with increasing resolution and clarity. Optical microscopy will be our starting point because cell biology began with the light microscope, and it is still an indispensable tool. The development of methods for the specific labeling and imaging of individual cellular constituents and the reconstruction of their three-dimensional architecture has meant that, far from falling into disuse, optical microscopy continues to increase in importance. One advantage of optical microscopy is that light is relatively nondestructive. By tagging specific cell components with fluorescent probes, such as intrinsically fluorescent proteins, we can watch their movement, dynamics, and interactions in living cells.
+
+Although conventional optical microscopy is limited in resolution by the wavelength of visible light, new methods cleverly bypass this limitation and allow the exact position of even single molecules to be mapped. By using a beam of electrons instead of visible light, electron microscopy can image the interior of cells, and their macromolecular components, at almost atomic resolution and in three dimensions. But all imaging methods involve trade-offs; in this case, the higher resolution means only small objects are imaged and only in fixed, dead cells. There is now a bewildering variety of imaging technologies for the cell biologist to choose from, and when some of these are described later in the chapter, it is worth considering why you might use one rather than another. Trade-offs will always have to be made between thin and thick specimens, living and fixed cells, high and low resolution, fast and slow imaging, signal and noise, or cells and molecules.
+
+This chapter is intended as a companion, rather than an introduction, to the chapters that follow; readers may wish to refer back to it as applications of microscopy to basic biological problems are encountered in other chapters of the book.
+
+## LOOKING AT CELLS AND MOLECULES IN THE LIGHT MICROSCOPE
+
+A typical animal cell is 10–20 μm in diameter, which is just less than a tenth the size of the smallest object that we can normally see with the naked eye. Only after good light microscopes became available in the early part of the nineteenth century did Matthias Schleiden and Theodor Schwann propose that all plant and animal tissues were aggregates of individual cells. Their proposal in 1838, known as the **cell doctrine**, marks the formal birth of cell biology.
+
+C HAP T E R
+
+![](images/page_0_image_8.jpg)
+
+Animal cells are not only tiny, but they are also colorless and translucent. The discovery of their main internal features, therefore, depended on the development, in the late nineteenth century, of a variety of stains that provided sufficient color and contrast to make those features visible. Similarly, the far
+
+IN THIS CHAPTER
+
+Looking at Cells and Molecules in the Light Microscope
+
+Looking at Cells and Molecules in the Electron Microscope
+
+(A)
+
+(B)
+
+![](images/page_1_image_4.jpg)
+
+more powerful electron microscope introduced in the early 1940s required the development of new techniques for preserving and staining cells before the full complexities of their internal fine structure could begin to emerge. To this day, microscopy often relies as much on techniques for preparing the specimen as on the performance of the microscope itself. In the following discussions, we therefore consider both instruments and specimen preparation, beginning with the light microscope.
+
+The images in **Figure 9–1A** illustrate a stepwise progression from a thumb to a cluster of atoms. Each successive image represents a tenfold increase in magnification. The naked eye can see features in the first two panels, the light microscope allows us to see details corresponding to about the fifth panel, and the electron microscope takes us to about the eighth or ninth panel. **Figure 9–1B** shows the sizes of various cellular and subcellular structures and the ranges of size that different types of microscopes can visualize.
+
+## The Conventional Light Microscope Can Resolve Details 0.2 μm Apart
+
+For well over 100 years, all microscopes were constrained by a fundamental limitation: that a given type of radiation cannot be used to probe structural details much smaller than its own wavelength. A limit to the resolution of a light microscope was therefore set by the wavelength of visible light, which ranges from about 0.4 μm (for violet) to 0.7 μm (for deep red). In practical terms, bacteria and mitochondria, which are about 500 nm (0.5 μm) wide, are generally the smallest objects whose shape we can clearly discern in a standard **light microscope**;
+
+Figure 9–1 A sense of scale between living cells and atoms. (A) Each diagram shows an image magnified by a factor of 10 in an imaginary progression from a thumb, through skin cells, to a ribosome, to a cluster of atoms forming part of one of the many protein molecules in the ribosome. Atomic details of biological macromolecules, as shown in the last two panels, are just within the power of the electron microscope. While color has been used here in all the panels, it is not a feature of objects much smaller than the wavelength of light, so the last five panels should really be in black and white. (B) Sizes of cells and their components are shown on a logarithmic scale, indicating the range of objects that can readily be resolved by the naked eye and in the light and electron microscopes. Note that new superresolution microscopy techniques, discussed in detail later, allow an improvement in resolution by an order of magnitude compared with conventional light microscopy.
+
+(A)
+
+image on retina
+
+![](images/page_2_image_4.jpg)
+
+(B)
+
+details smaller than this are obscured by effects resulting from the wave-like nature of light. Let us follow the behavior of a beam of light as it passes through the lenses of a microscope (**Figure 9–2**).
+
+Because of its wave nature, light does not follow the idealized straight ray paths that geometrical optics predicts. Instead, light waves travel through an optical system by many slightly different routes, like ripples in water, so that they interfere with one another and cause optical diffraction effects. If two trains of waves reaching the same point by different paths are precisely in phase, with crest matching crest and trough matching trough, they will reinforce each other so as to increase brightness. In contrast, if the trains of waves are out of phase, they will interfere with each other in such a way as to cancel each other partly or entirely (**Figure 9–3**). The interaction of light with an object changes the phase relationships of the light waves in a way that produces complex interference effects. At high magnification, for example, the shadow of an edge that is evenly illuminated with light of uniform wavelength appears as a set of parallel lines (**Figure 9–4A**),
+
+TWO WAVES IN PHASE
+
+![](images/page_2_image_9.jpg)
+
+TWO WAVES OUT OF PHASE
+
+![](images/page_2_image_11.jpg)
+
+Figure 9–2 A light microscope. (A) Diagram showing the light path in an upright compound microscope. Light is focused on the specimen by lenses in the condenser. A combination of objective lenses, tube lenses, and eyepiece lenses is arranged to focus an image of the illuminated specimen in the eye. (B) A modern upright research light microscope. (C) A modern inverted microscope, particularly useful for looking at cells in culture. Both microscopes are equipped for fluorescence imaging (B and C, courtesy of Carl Zeiss Microscopy, GmbH.)
+
+The following units of length are commonly employed in microscopy: μm (micrometer) = $1 0 ^ { - 6 }$ m nm (nanometer) = $1 0 ^ { - 9 }   \mathsf { m }$ Å (angstrom) = 10–10 m
+
+Figure 9–3 Interference between light waves. When two light waves combine in phase, the amplitude of the resultant wave is larger, and the brightness is increased. Two light waves that are out of phase cancel each other partly and produce a wave whose amplitude, and therefore brightness, is decreased.
+
+whereas the smallest focused image of a bright circular aperture appears as a set of concentric rings (**Figure 9–4B**). For the same reason, a single point seen through a microscope appears as a blurred disc, and two point objects close together give overlapping images and may merge into one. Although no amount of refinement of the lenses can overcome the diffraction limit imposed by the wave-like nature of light, other ways of cleverly bypassing this limit have emerged, creating so-called superresolution imaging techniques that can even detect the position of single molecules. These are discussed later in the chapter.
+
+The limiting separation at which two objects appear distinct—the so-called **limit of resolution**—depends on both the wavelength of the light and the numerical aperture of the lens system used. The numerical aperture affects the light-gathering ability of the lens and is related both to the angle of the cone of light that can enter it and to the refractive index of the medium the lens is operating in; the wider the microscope opens its eye, so to speak, the more sharply it can see (**Figure 9–5**). The refractive index is the ratio of the speed of light in a vacuum to the speed of light in a particular transparent medium. For example, for water this is 1.33, meaning that light travels 1.33 times slower in water than in a vacuum. Under the best conditions, with violet light (wavelength = 0.4 μm) and a numerical aperture of 1.4, the basic light microscope can theoretically achieve a limit of resolution of about 0.2 μm, or 200 nm. Some microscope makers at the end of the nineteenth century achieved this resolution, but it is routinely matched in contemporary, factory-produced microscopes. Although it is possible to enlarge an image as much as we want—for example, by projecting it onto a screen—it is not possible, in a conventional light microscope, to resolve two objects in the light microscope that are separated by less than about 0.2 μm; they will always appear as a single object. It is important, however, to distinguish between resolution and detection. If a small object, below the resolution limit, itself emits light, then we may still be able to see or detect it. Thus, we can see a single fluorescently labeled microtubule even though it is about 10 times thinner than the resolution limit of the light microscope. Diffraction effects, however, will cause it to appear blurred and at least 0.2 μm thick (see Figure 9–14). In a similar way, we can see the stars in the night sky, even though their diameters are far below the angular resolution of our unaided eyes: they all appear as similar, slightly blurred points of light, differing only in their color and brightness.
+
+LENSES
+
+![](images/page_3_image_5.jpg)
+
+RESOLUTION: the resolving power of the microscope depends on the width of the cone of illumination and therefore on both the condenser and the objective lens. It is calculated using the formula
+
+$$
+\text {resolution} = \frac {0 . 6 1 \lambda}{n \sin \theta}
+$$
+
+where:
+
+half the angular width of the cone ofθ = rays collected by the objective lens from a typical point in the central region of the specimen (because the maximum width is 180<sup>o</sup>, sin θ has a maximum value of 1)
+
+the refractive index of the mediumn = (usually air or oil) separating the specimen from the objective and condenser lenses
+
+the wavelength of light used (for whiteλ = light a figure of 0.53 µm is commonly assumed)
+
+aperture, the greater the resolution and the brighter the image (brightness is important in fluorescence microscopy). However, this advantage does necessitate very short working distances and a very small depth of field, just as in a conventional camera.
+
+NUMERICAL APERTURE: n sin θ in the equation above is called the numerical aperture of the lens and is a function of its lightcollecting ability. For dry lenses this cannot be more than 1, but for oil-immersion lenses it can be as high as 1.4. The higher the numerical
+
+![](images/page_3_image_14.jpg)
+
+Figure 9–4 Images of an edge and of a point of light. (A) The interference effects, or fringes, seen at high magnification when light of a specific wavelength passes the edge of a solid object placed between the light source and the observer. (B) The image of a point source of light. Diffraction spreads this out into a complex, circular pattern, whose width depends on the numerical aperture of the optical system: MBoC7 m9.05/9.04the smaller the aperture, the bigger (more blurred) the diffracted image. Two point sources can be just resolved when the center of the image of one lies within the first dark ring in the image of the other: this is used to define the limit of resolution.
+
+Figure 9–5 Basic principles of light microscopy. The path of light rays passing through a transparent specimen in a microscope illustrates the concept of numerical aperture and its relation to the limit of resolution. The higher the numerical aperture of a lens, the brighter the image it forms and the higher its resolution.
+
+## Photon Noise Creates Additional Limits to Resolution When Light Levels Are Low
+
+Any image, whether produced by an electron microscope or by an optical microscope, is made by particles—electrons or photons—striking a detector of some sort. But these particles are governed by quantum mechanics, so the numbers reaching the detector are predictable only in a statistical sense. Finite samples, collected by imaging for a limited period of time (that is, by taking a snapshot), will show random variation: successive snapshots of the same scene will not be exactly identical. Moreover, every detection method has some level of background signal or noise, adding to the statistical uncertainty. With bright illumination, corresponding to very large numbers of photons or electrons, the features of the imaged specimen are accurately determined on the basis of the distribution of these particles at the detector. However, with smaller numbers of particles, the structural details of the specimen are obscured by the statistical fluctuations in the numbers of particles detected in each region, which give the image a speckled appearance and limit its precision. The term noise describes this random variability. Because noise in the image is proportional to the square root of the number of photons that are detected (or electrons in electron microscopy), then as the number of photons or electrons recorded increases, the absolute noise also increases, but because of the square root relationship, the percentage of noise decreases, in other words the signal-to-noise ratio improves. A poor signal-to-noise ratio is an important consideration when weak fluorescent light signals are recorded or low, but less damaging, electron doses are required.
+
+## Living Cells Are Seen Clearly in a Phase-Contrast or a Differential-Interference-Contrast Microscope
+
+There are many ways in which contrast in a specimen can be generated (**Figure 9–6**). While fixing and staining a specimen can generate contrast through color (Figure 9–6A), microscopists have always been challenged by the possibility that some components of the cell may be lost or distorted during specimen preparation. The only certain way to avoid the problem is to examine cells while they are alive, without fixing or freezing. For this purpose, light microscopes with special optical systems are especially useful.
+
+In the normal **bright-field microscope**, light passing through a cell in culture forms the image directly. Another system, **dark-field microscopy**, exploits the fact that light rays can be scattered in all directions by small objects in their path.
+
+Figure 9–6 Contrast in light microscopy. (A) The stained portion of the cell will absorb light of some wavelengths, which depends on the stain, but will allow other wavelengths to pass through it. A colored image of the cell is thereby obtained that is visible in the normal bright-field light microscope. (B) In the dark-field microscope, oblique rays of light focused on the specimen do not enter the objective lens, but light that is scattered by components in the living cell can be collected to produce a bright image on a dark background. (C) Light passing through the unstained living cell experiences very little change in amplitude, and the structural details cannot be seen even if the image is highly magnified. The phase of the light, however, is altered by its passage through either thicker or denser parts of the cell, and small phase differences can be made visible by exploiting interference effects using a phase-contrast or a differentialinterference-contrast microscope.
+
+![](images/page_4_image_8.jpg)
+
+![](images/page_5_image_2.jpg)
+
+(A)
+
+![](images/page_5_image_4.jpg)
+
+(B)
+
+![](images/page_5_image_6.jpg)
+
+(C)
+
+![](images/page_5_image_8.jpg)
+
+(D)
+
+50 µm
+
+If oblique lighting from the condenser is used, which does not directly enter the objective, unstained objects in a living cell can scatter the rays, some of which then enter the objective to create a bright image against a black background (Figure 9–6B).
+
+When light passes through a living cell, the phase of the light wave is changed according to the cell’s refractive index: a relatively thick or dense part of the cell, such as a nucleus, slows the light passing through it. The phase of the light, consequently, is shifted relative to light that has passed through an adjacent thinner region of the cytoplasm (Figure 9–6C). The **phase-contrast microscope** and, in a more complex way, the **differential-interference-contrast microscope** increase these phase differences to produce amplitude differences, or contrast, when the sets of waves recombine, thereby creating an image of the cell’s structure. Both types of light microscopy are widely used to look at living cells (see Movie 17.2). **Figure 9–7** compares images of the same cell obtained by four kinds of light microscopy.
+
+Phase-contrast, differential-interference-contrast, and dark-field microscopy make it possible to watch the movements involved in such processes as mitosis and cell migration. Because many cellular motions are too slow to be seen in real time, it is often helpful to make time-lapse videos in which the camera records successive frames separated by a short time delay, so that when the resulting picture series is played at normal speed, events appear greatly speeded up.
+
+## Images Can Be Enhanced and Analyzed by Digital Techniques
+
+Digital imaging systems, and the associated technology of **image processing**, have had a major impact on light microscopy. Certain practical limitations of microscopes relating to imperfections in their optical components have been largely overcome. Digital imaging systems have also circumvented two fundamental limitations of the human eye: the eye cannot see well in extremely dim light, and it cannot perceive small differences in light intensity against a bright background. To increase our ability to observe cells in these difficult conditions, we can attach a sensitive digital camera to a microscope. These cameras detect light by means of high-sensitivity complementary metal-oxide semiconductor (CMOS) sensors, similar to those now found in digital cameras and smartphones. Such image sensors can count individual photons and are many times more sensitive than the human eye and can detect 100 times more intensity levels. It is therefore possible to observe cells for long periods at very low light levels, thereby avoiding the damaging effects of prolonged bright light (and heat). Such sensitive detectors are especially important for viewing fluorescent molecules in living cells, as explained later.
+
+Because images produced by digital cameras are in electronic form, they can be processed in various ways to extract latent information. Such image processing
+
+## Figure 9–7 Four types of light
+
+microscopy. Four images are shown of the same fibroblast cell in culture. All images can be obtained with most modern microscopes by interchanging optical components. (A) Bright-field microscopy, in which light is transmitted straight through the specimen. (B) Phase-contrast microscopy, in which phase alterations of light transmitted through the specimen are translated into brightness changes. (C) Differential-interference-contrast microscopy, which highlights edges where there is a steep change of refractive index. (D) Dark-field microscopy, in which the specimen is lit from the side and only the scattered light is seen.
+
+makes it possible to compensate for several aberrations in the lenses of microscopes. Moreover, by digital image processing, contrast can be greatly enhanced to overcome the eye’s limitations in detecting small differences in light intensity, and background irregularities in the optical system can be digitally subtracted. This procedure reveals small transparent objects that were previously impossible to distinguish from the background.
+
+## Intact Tissues Are Usually Fixed and Sectioned Before Microscopy
+
+![](images/page_6_image_4.jpg)
+
+Looking at individual living cells in culture is relatively easy, but most cells are found in complex tissues and organs, and this forces another trade-off when we want to look at them. Because most tissue samples are too thick for their individual cells to be examined directly at high resolution, they are often cut into very thin transparent slices, or sections. To preserve the cells within the tissue they must first be treated with a fixative. A common fixative is glutaraldehyde, which forms covalent bonds with the free amino groups of proteins, cross-linking them so they are stabilized and locked into position.
+
+ribbon of sections on glass slide, stained and mounted under a glass cover slip
+
+Because tissues are generally soft and fragile, even after fixation, they need to be either frozen or embedded in a supporting medium before they can be sectioned. The usual embedding media are waxes or resins. In liquid form, these media both permeate and surround the fixed tissue before being hardened (by cooling or by polymerization) to form a solid block, which is readily sectioned with a microtome. This is a machine with a sharp blade, usually of steel or glass, which operates like a meat slicer (**Figure 9–8**). The sections (typically 0.5–10 μm thick) are then laid flat on the surface of a glass microscope slide.
+
+Figure 9–8 Making tissue sections. This illustration shows how an embedded tissue is sectioned with a microtome in preparation for examination in the light microscope. Very rapidly frozen samples can also be sectioned, and these better preserve the structure of cells in their native state.
+
+There is little in the contents of most cells (which are 70% water by weight) to impede the passage of light rays. Thus, most cells in their natural state, particularly if fixed and sectioned, are almost invisible in an ordinary light microscope. We have seen that cellular components can be made visible by techniques such as phase-contrast and differential-interference-contrast microscopy, but these methods tell us almost nothing about the underlying chemistry. There are three main approaches to working with thin tissue sections that reveal differences in the types of molecules that are present.
+
+First, and traditionally, sections can be stained with organic dyes that have some specific affinity for particular subcellular components. The dye hematoxylin, for example, has an affinity for negatively charged molecules and therefore reveals the general distribution of DNA, RNA, and acidic proteins in a cell (**Figure 9–9**). The chemical basis for the specificity of many dyes, however, is not known, although they are used widely in hospital laboratories.
+
+![](images/page_6_image_11.jpg)
+
+50 µm
+
+![](images/page_6_image_13.jpg)
+
+100 µm
+
+Figure 9–9 Staining of cell components. (A) This section of cells in a salivary gland was stained with hematoxylin and eosin, two dyes commonly used in histology. The central duct is made of closely packed cells with nuclei stained purple and cytoplasm stained red. The duct is surrounded by groups of saliva-secreting cells. (B) This section of a young plant root is stained with two dyes, safranin and fast green. Fast green stains the cellulosic cell walls, while the safranin stains the lignified xylem cell walls red. (A, from R.L. Sorenson and T.C. Brelje, Atlas of Human Histology: A Guide to Microscopic Structure of Cells, Tissues and Organs, 3rd ed., 2014. With permission from the authors; B, courtesy of University of Wisconsin Plant Teaching Collection.)
+
+Second, sectioned tissues can be used to visualize specific patterns of differential gene expression. A third and very sensitive approach, generally and widely applicable for localizing proteins of interest, depends on the use of fluorescent probes and markers, as we explain next.
+
+## Specific Molecules Can Be Located in Cells by Fluorescence Microscopy
+
+Fluorescent molecules absorb light at one wavelength and emit it at another, longer wavelength (**Figure 9–10A and B**). If we illuminate such a molecule at its absorbing wavelength and then view it through a filter that allows only light of the emitted wavelength to pass, it will glow against a dark background. Because the background is dark, even a minute amount of the glowing fluorescent dye can be detected. In contrast, the same number of molecules of a nonfluorescent stain, viewed conventionally, would be practically indiscernible because the absorption of light by molecules in the stain would result in only the faintest tinge of color in the light transmitted through that part of the specimen.
+
+The fluorescent dyes used for staining cells are visualized with a **fluorescence microscope**. This microscope is similar to an ordinary upright or inverted light microscope except that the illuminating light, from a very powerful source, is passed through two sets of filters—one to filter the light before it reaches the specimen, and one to filter the light obtained from the specimen. The first filter passes only the wavelengths that excite the particular fluorescent dye, while the second filter blocks out this light and passes only those wavelengths emitted when the dye fluoresces (**Figure 9–10C**).
+
+Fluorescence microscopy is most often used to detect specific proteins or other molecules in cells and tissues. For example, when using fluorescent nucleotide probes, in situ hybridization, discussed earlier (see Figure 8–63), can reveal the cellular distribution and abundance of specific expressed RNA molecules in sectioned material or in whole mounts of small organisms, organs, or cells (**Figure 9–11**).
+
+![](images/page_7_chart_7.jpg)
+
+(A)
+
+![](images/page_7_image_9.jpg)
+
+(B)
+
+![](images/page_7_chart_11.jpg)
+
+Figure 9–10 Fluorescence and the fluorescence microscope. (A) An orbital electron of a fluorochrome molecule can be raised to an excited state after the absorption of a photon. Fluorescence occurs when the electron returns to its ground state and emits a photon of light at a longer wavelength. Too much exposure to light or too bright a light can destroy the fluorochrome molecule in a process called photobleaching. (B) The excitation and emission spectra for the common fluorescent dye fluorescein isothiocyanate (FITC). (C) In the fluorescence microscope, a filter set consists of two barrier filters (1 and 3) and a dichroic (beam-splitting) mirror (2). This example shows the filter set for detection of the fluorescent molecule fluorescein. High-numerical-aperture objective lenses are especially important in this type of microscopy because, for a given magnification, the brightness of the fluorescent image is proportional to the fourth power of the numerical aperture (see also Figure 9–5).
+
+![](images/page_8_image_2.jpg)
+
+Figure 9–11 RNA in situ hybridization. (A) As described in Chapter 8 (see Figure 8–63), it is possible to visualize the distribution of different RNAs in tissues using in situ hybridization. Here, the transcription pattern of five different genes involved in patterning the early fruit fly embryo is revealed in a single embryo. Each RNA probe has been fluorescently labeled, and the resulting images are displayed each in a different color (“false-colored”) and then combined to give an image where different color combinations represent different sets of genes expressed. The genes whose expression pattern is revealed here are wingless (yellow), engrailed (blue), short gastrulation (red), intermediate neuroblasts defective (green), and muscle specific homeobox (purple). (B) Individual RNA transcripts can be detected in a single cell. Each of these six yeast cells is expressing less than 20 transcripts of a particular gene. Using multiple DNA oligonucleotide probes to that particular gene, each labeled with many fluorescent Cy5 molecules, each individual RNA transcript can be detected as a red spot. [A, from D. Kosman et al., Science 305:846, 2004. With permission from AAAS; B, from G.M. Wadsworth, R.Y. Parikh, and H.D. Kim, Single-probe RNA FISH in yeast. Bio Protoc. 8(11):e2868, 2018, doi 10.21769/BioProtoc.2868.]
+
+A versatile and widely used technique is to couple fluorescent dyes to antibody molecules, which then serve as highly specific and versatile staining reagents that bind selectively to the particular macromolecules they recognize in cells or in the extracellular matrix. Two fluorescent dyes that have been commonly used for this purpose are fluorescein, which emits an intense green fluorescence when excited with blue light, and rhodamine, which emits a deep red fluorescence when excited with green-yellow light (**Figure 9–12**). By coupling one antibody to fluorescein and another to rhodamine, the distributions of different molecules can be compared in the same cell; the two molecules are visualized separately in the microscope by switching back and forth between two sets of filters, each specific for one dye. As shown in **Figure 9–13**, multiple fluorescent dyes can be used in the same way to clearly distinguish several different types of molecules in the same cell. Many fluorescent dyes, such as Cy3, Cy5, and the Alexa dyes, have been specifically developed for fluorescence microscopy, but, like many organic fluorochromes, they fade fairly rapidly when continually illuminated. Later in the chapter, additional fluorescence microscopy methods will be discussed that can be used to monitor changes in the concentration and location of specific molecules inside
+
+![](images/page_8_image_6.jpg)
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">Figure 9–12 Fluorescent probes. The maximum excitation and emission wavelengths of several commonly used fluorescent probes are shown in relation to the corresponding colors of the spectrum. The photon emitted by a fluorescent molecule is necessarily of lower energy (longer wavelength) than the absorbed photon, and this accounts for the difference between the excitation and emission peaks. CFP, GFP, YFP, and RFP are cyan, green, yellow, and red fluorescent proteins, respectively. DAPI is widely used as a general fluorescent DNA probe, which absorbs ultraviolet light and fluoresces bright blue. FITC is an abbreviation for fluorescein isothiocyanate—a widely used derivative of fluorescein—which fluoresces bright green. The other probes are all commonly used to fluorescently label antibodies and other proteins. Note that although the true fluorescence emission colors are shown here, the actual color seen in the microscope will depend on the second barrier filter used (see Figure 9–10), and these are usually optimized so as to allow as many different non-overlapping colored probes to be seen in the same specimen. Thus although YFP emits in the green spectrum, it actually appears as a yellow-green in the microscope because of the filter used. The use of fluorescent proteins will be discussed later in the chapter.</span></small>
+
+![](images/page_9_image_2.jpg)
+
+Figure 9–13 Different fluorescent probes can be visualized in the same cell. In this composite micrograph of an epithelial cell in culture, three different fluorescent probes have been used to label three different cellular components. The actin filaments of the cytoskeleton are revealed with a green fluorescent probe, the numerous mitochondria with a red fluorescent dye that accumulates inside the organelles, and the nucleus with a blue fluorescent dye that binds to DNA. (Courtesy of Carl Zeiss Microscopy, GmbH.)
+
+living cells. As with all microscopy methods there are trade-offs to consider. In all fluorescence microscopes, the only molecules that can be imaged are those that are fluorescently labeled; all the other molecules in the cell remain hidden.
+
+## Antibodies Can Be Used to Detect Specific Proteins
+
+Antibodies are proteins produced by the vertebrate immune system as a defense against infection (discussed in Chapter 24). They are unique among proteins in that they are made in billions of different forms, each with a different binding site that recognizes a specific target molecule (or antigen). The precise antigen specificity of antibodies makes them powerful tools for the cell biologist. When chemically coupled to fluorescent dyes, antibodies are invaluable for locating specific molecules in cells by fluorescence microscopy (**Figure 9–14**). When labeled with electron-dense particles such as colloidal gold spheres, they are used for similar purposes in the electron microscope (discussed later). The antibodies employed in microscopy are commonly either purified from antiserum so as to remove all nonspecific antibodies or they are specific monoclonal antibodies that only recognize the target molecule.
+
+When we use antibodies as probes to detect and assay specific molecules in cells, we frequently use methods to amplify the fluorescent signal they produce. For example, although a marker molecule such as a fluorescent dye can be linked directly to an antibody—the primary antibody—a stronger signal is achieved by using an unlabeled primary antibody and then detecting it with a group of labeled secondary antibodies that bind to it (**Figure 9–15**). This process is called indirect immunocytochemistry.
+
+(A)
+
+![](images/page_9_image_9.jpg)
+
+![](images/page_9_image_10.jpg)
+
+Figure 9–14 Immunofluorescence. (A) A transmission electron micrograph of the periphery of a cultured epithelial cell showing the distribution of microtubules and other filaments. (B) The same area stained with fluorescent antibodies against tubulin, the protein that assembles to form microtubules, using the technique of indirect immunocytochemistry (see Figure 9–15). Red arrows indicate individual microtubules that are readily recognizable in both images. Note that, because of diffraction effects, the microtubules in the light microscope appear 0.2 μm wide rather than their true width of 0.025 μm. (© 1978 M. Osborn et al. Originally published in J. Cell Biol. doi 10.1083/jcb.77.3.R27. With permission from Rockefeller University Press.)
+
+![](images/page_10_image_2.jpg)
+
+Figure 9–15 Indirect immunocytochemistry. This detection method is very sensitive because many molecules of the secondary antibody recognize each primary antibody. The secondary antibody is covalently coupled to a marker molecule that makes it readily detectable. Commonly used marker molecules include fluorescent dyes (for fluorescence microscopy) and colloidal gold spheres (for electron microscopy).
+
+## Individual Proteins Can Be Fluorescently Tagged in Living Cells and Organisms
+
+Even the most stable cell structures must be assembled, disassembled, and reorganized during the cell’s life cycle. Other structures, often enormous on the molecular scale, rapidly change, move, and reorganize themselves as the cell conducts its internal affairs and responds to its environment. Complex, highly organized pieces of molecular machinery move components around the cell, controlling traffic into and out of the nucleus, from one organelle to another, and into and out of the cell itself.
+
+Various techniques have been developed to visualize the specific components involved in such dynamic phenomena, and many of these methods use fluorescent proteins. All of the fluorescent molecules discussed so far are made outside the cell and then artificially introduced into it. But the use of genes encoding protein molecules that are themselves inherently fluorescent also enables the creation of organisms and cell lines that make their own visible tags and labels, without the introduction of foreign molecules. These cellular exhibitionists display their inner workings in glowing fluorescent color.
+
+Foremost among the fluorescent proteins used for these purposes by cell biologists is the **green fluorescent protein (GFP)**, isolated from the jellyfish Aequorea victoria. This protein is encoded by a single gene, which can be cloned and introduced into cells of other species. The freshly translated protein is not fluorescent, but within an hour or so (less for some alleles of the gene, more for others) some of the amino acids undergo a self-catalyzed post-translational modification to generate an efficient fluorochrome, shielded within the interior of a barrel-like protein, which will now fluoresce green when illuminated appropriately with blue light (**Figure 9–16**). Extensive site-directed mutagenesis performed on the
+
+Figure 9–16 Green fluorescent protein (GFP). (A) The structure of GFP, shown here schematically, highlights the eleven β strands that form the staves of a barrel, buried within which is the active chromophore (dark green). (B) The chromophore is formed post-translationally from the protruding side chains of two amino acid residues in a series of autocatalytic steps. (A, PDB code: 1EMA, from M. Ormö et al., Science 273:1392–1395, 1996. With permission from AAAS.)
+
+(A)
+
+![](images/page_10_image_11.jpg)
+
+(B)
+
+![](images/page_10_image_13.jpg)
+
+![](images/page_11_image_2.jpg)
+
+500 µm
+
+![](images/page_11_image_4.jpg)
+
+(A)
+
+(B)
+
+500 µm
+
+Figure 9–17 Fluorescent proteins as reporter molecules. (A) For this experiment, carried out in the fruit fly, the GFP gene was joined (using recombinant DNA techniques) to a fly promoter that is active only in a specialized set of neurons. This image of a live fly embryo was captured by a fluorescence microscope and shows approximately 20 neurons, each with long projections (axons and dendrites) that communicate with other (nonfluorescent) cells. These neurons are located just under the surface of the animal and allow it to sense its immediate environment. (B) In a variation of this method, three different fluorescent proteins, red, yellow, and cyan, can be expressed at random in neurons of the live fly embryo. The genetic constructs have been arranged such that a strong pulse of blue light will activate the expression of one or other of the three fluorescent proteins at random in neuronal cells, where they are then targeted to the plasma membrane. This noninvasive control of the timing of cell labeling allows the behavior of individual. / . cells to be followed subsequently over time. The fine detail of all the dendrites of individual sensory neurons can be clearly seen. The lines of pale dots arise from the autofluorescence of the bands of denticles in the cuticle that define the segments of the embryo (see Figure 21–24). (A, from W.B. Grueber et al., Curr. Biol. 13:618–626, 2003. With permission from Elsevier; B, from M. Boulina et al., Development 140:1605–1613, 2013, doi 10.1242/dev.088930. © 2013. Published by the Company of Biologists Ltd.)
+
+original gene sequence has resulted in multiple variants that can be used effectively in organisms ranging from animals and plants to fungi and microbes. The fluorescence efficiency has also been improved, and variants have been generated with altered absorption and emission spectra from the blue-green, like blue fluorescent protein (BFP), to the far visible red. Other, related fluorescent proteins have since been discovered (for example, in corals) that also extend the range into the red region of the spectrum, like red fluorescent protein (RFP).
+
+One of the simplest uses of GFP is as a reporter molecule, a fluorescent probe to monitor gene expression. A transgenic organism can be made with the GFP-coding sequence placed under the transcriptional control of the promoter belonging to a gene of interest, giving a directly visible readout of the gene’s expression pattern in the living organism (**Figure 9–17**). In another application, a peptide location signal can be added to the GFP to direct it to a particular cell compartment, such as the endoplasmic reticulum or a mitochondrion (see Figure 9–25B), lighting up these organelles so they can be observed in the living state.
+
+The GFP DNA-coding sequence can also be inserted at the beginning or end of the coding sequence for another protein, yielding a chimeric product consisting of that protein with a new GFP domain attached. In many cases, this GFP fusion protein behaves in the same way as the original protein, directly revealing its location and activities by means of its genetically encoded fluorescence (**Figure 9–18**). It is often possible to prove that the GFP fusion protein is functionally equivalent
+
+![](images/page_11_image_12.jpg)
+
+2 µm
+
+Figure 9–18 GFP-tagged proteins. This cultured mammalian cell is expressing EB3, a plus-end tracking protein that is fused to a GFP-derived blue fluorescent protein (BFP). These proteins associate with the plus ends of growing microtubules (see Figure 16–49), and their dynamics can be followed as they appear to zoom brightly around the cell. (Courtesy of Carl Zeiss Microscopy, GmbH.)

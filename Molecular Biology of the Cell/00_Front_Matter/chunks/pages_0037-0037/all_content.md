@@ -1,0 +1,98 @@
+xxxvi   Contents
+
+- Tight Junctions Contain Strands of Transmembrane Adhesion Proteins 1119
+- Scaffold Proteins Organize Junctional Protein Complexes 1120
+- Gap Junctions Couple Cells Both Electrically and Metabolically 1121
+- A Gap-Junction Connexon Is Made of Six Transmembrane Connexin Subunits 1122
+- In Plants, Plasmodesmata Perform Many of the Same Functions as Gap Junctions 1123
+- Selectins Mediate Transient Cell-Cell Adhesions in the Bloodstream 1125
+- Members of the Immunoglobulin Superfamily Mediate $\mathrm{Ca^{2+}}$-independent Cell-Cell Adhesion 1126
+- Summary 1127
+- THE EXTRACELLULAR MATRIX OF ANIMALS 1127
+- The Extracellular Matrix Is Made and Oriented by the Cells Within It 1128
+- Glycosaminoglycan (GAG) Chains Occupy Large Amounts of Space and Form Hydrated Gels 1129
+- Hyaluronan Acts as a Space Filler During Tissue Morphogenesis and Repair 1129
+- Proteoglycans Are Composed of GAG Chains Covalently Linked to a Core Protein 1130
+- Collagens Are the Major Proteins of the Extracellular Matrix 1132
+- Collagen Chains Undergo a Series of Post-translational Modifications 1133
+- Secreted Fibril-associated Collagens Help Organize the Fibrils 1135
+- Elastin Gives Tissues Their Elasticity 1136
+- Cells Govern and Respond to the Mechanical Properties of the Matrix 1137
+- Fibronectin and Other Multidomain Glycoproteins Help Organize the Matrix 1138
+- Fibronectin Binds to Integrins 1139
+- Tension Exerted by Cells Regulates the Assembly of Fibronectin Fibrils 1140
+- The Basal Lamina Is a Specialized Form of Extracellular Matrix 1141
+- Laminin and Type IV Collagen Are Major Components of the Basal Lamina 1141
+- Basal Laminae Have Diverse Functions 1143
+- Cells Have to Be Able to Degrade Matrix, as Well as Make It 1144
+- Matrix Proteoglycans and Glycoproteins Regulate the Activities of Secreted Proteins 1145
+- Summary 1146
+- CELL-MATRIX JUNCTIONS 1147
+- Integrins Are Transmembrane Heterodimers That Link the Extracellular Matrix to the Cytoskeleton 1147
+- Integrin Defects Are Responsible for Many Genetic Diseases 1148
+- Integrins Can Switch Between an Active and an Inactive Conformation 1149
+- Integrins Cluster to Form Strong Adhesions 1151
+- Extracellular Matrix Attachments Act Through Integrins to Control Cell Proliferation and Survival 1151
+- Integrins Recruit Intracellular Signaling Proteins at Sites of Cell-Matrix Adhesion 1152
+- Cell-Matrix Adhesions Respond to Mechanical Forces 1153
+- Summary 1154
+- THE PLANT CELL WALL 1154
+- The Composition of the Cell Wall Depends on the Cell Type 1155
+- The Tensile Strength of the Cell Wall Allows Plant Cells to Develop Turgor Pressure 1155
+- The Primary Cell Wall Is Built from Cellulose Microfibrils Interwoven with a Network of Pectic Polysaccharides 1156
+- Oriented Cell Wall Deposition Controls Plant Cell Growth 1157
+- Microtubules Orient Cell Wall Deposition 1158
+- Summary 1159
+- Problems 1160
+- References 1162
+
+- Chapter 20 Cancer 1163
+- CANCER AS A MICROEVOLUTIONARY PROCESS 1163
+- Cancer Cells Bypass Normal Proliferation Controls and Colonize Other Tissues 1164
+- Most Cancers Derive from a Single Abnormal Cell 1165
+
+- Cancer Cells Contain Somatic Mutations 1166
+- A Single Mutation Is Not Enough to Change a Normal Cell into a Cancer Cell 1166
+- Many Cancers Develop Gradually Through Successive Rounds of Random Inherited Change Followed by Natural Selection 1167
+- Cancers Can Evolve Abruptly Due to Genetic Instability 1168
+- Some Cancers May Harbor a Small Population of Stem Cells 1170
+- A Common Set of Hallmarks Typically Characterizes Cancerous Growth 1171
+- Cancer Cells Display an Altered Control of Growth and Homeostasis 1172
+- Human Cancer Cells Escape a Built-in Limit to Cell Proliferation 1173
+- Cancer Cells Have an Abnormal Ability to Bypass Death Signals 1174
+- Cancer Cells Have Altered Sugar Metabolism 1175
+- The Tumor Microenvironment Influences Cancer Development 1175
+- Cancer Cells Must Survive and Proliferate in a Foreign Environment 1176
+- Summary 1178
+- CANCER-CRITICAL GENES: HOW THEY ARE FOUND AND WHAT THEY DO 1178
+- The Identification of Gain-of-Function and Loss-of-Function Cancer Mutations Has Traditionally Required Different Methods 1179
+- Retroviruses Led to the Identification of Oncogenes 1180
+- Genes Mutated in Cancer Can Be Made Overactive in Many Ways 1181
+- Studies of Rare Hereditary Cancer Syndromes First Identified Tumor Suppressor Genes 1182
+- Both Genetic and Epigenetic Mechanisms Can Inactivate Tumor Suppressor Genes 1183
+- Systematic Sequencing of Cancer Cell Genomes Has Transformed Our Understanding of the Disease 1184
+- Many Cancers Have an Extraordinarily Disrupted Genome 1185
+- Epigenetic and Chromatin Changes Contribute to Most Cancers 1185
+- Hundreds of Human Genes Contribute to Cancer 1186
+- Disruptions in a Handful of Key Pathways Are Common to Many Cancers 1187
+- Mutations in the PI 3-kinase/Akt/mTOR Pathway Drive Cancer Cells to Grow 1188
+- Mutations in the p53 Pathway Enable Cancer Cells to Survive and Proliferate Despite Stress and DNA Damage 1189
+- Studies Using Mice Help to Define the Functions of Cancer-critical Genes 1190
+- Cancers Become More and More Heterogeneous as They Progress 1192
+- Colorectal Cancers Evolve Slowly Via a Succession of Visible Changes 1192
+- A Few Key Genetic Lesions Are Common to a Large Fraction of Colorectal Cancers 1194
+- Some Colorectal Cancers Have Defects in DNA Mismatch Repair 1195
+- The Steps of Tumor Progression Can Often Be Correlated with Specific Mutations 1196
+- The Changes in Tumor Cells That Lead to Metastasis Are Still Largely a Mystery 1197
+- Summary 1197
+- CANCER PREVENTION AND TREATMENT: PRESENT AND FUTURE 1198
+- Epidemiology Reveals That Many Cases of Cancer Are Preventable 1198
+- Sensitive Assays Can Detect Those Cancer-causing Agents That Damage DNA 1199
+- Fifty Percent of Cancers Could Be Prevented by Changes in Lifestyle 1200
+- Viruses and Other Infections Contribute to a Significant Proportion of Human Cancers 1201
+- Cancers of the Uterine Cervix Can Be Prevented by Vaccination Against Human Papillomavirus 1202
+- Infectious Agents Can Cause Cancer in a Variety of Ways 1203
+- The Search for Cancer Cures Is Difficult but Not Hopeless 1204
+- Traditional Therapies Exploit the Genetic Instability and Loss of Cell-Cycle Checkpoint Responses in Cancer Cells 1204
+- New Drugs Can Kill Cancer Cells Selectively by Targeting Specific Mutations 1204
+- PARP Inhibitors Kill Cancer Cells That Have Defects in Brca1 or Brca2 Genes 1205

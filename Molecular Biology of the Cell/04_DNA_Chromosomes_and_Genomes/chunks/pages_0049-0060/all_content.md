@@ -1,0 +1,287 @@
+HOW GENOMES EVOLVE
+
+231
+
+As previously stated, there is a strong scientific consensus that most of the human genome consists of DNA whose nucleotide sequence is not relevant to biological function—being the so-called junk. This conclusion rests on the finding that natural selection fails to preserve these sequences in the face of the inevitable random changes to genomes that occur over time, as can be seen both when different species are compared and from detailed analyses of human variation. The fact that these DNA sequences nevertheless produce an occasional RNA molecule can be explained by the occurrence of background “noise” in gene expression. Although gene expression is very accurate, it is not perfect, and biochemical errors occasionally occur. Such errors are to be expected, and so long as they are kept at a low level, they are thought to have little or no consequence for the cell.
+
+## Genome Alterations Are Caused by Failures of the Normal Mechanisms for Copying and Maintaining DNA, as Well as by Transposable DNA Elements
+
+Evolution depends on accidents and mistakes followed by nonrandom survival. Most of the genetic changes that occur result simply from failures in the normal mechanisms by which genomes are copied or repaired when damaged, although the movement of transposable DNA elements (discussed shortly) also plays an important part. As we will explain in Chapter 5, the mechanisms that maintain DNA sequences are remarkably precise—but errors will occur. DNA sequences are inherited with such extraordinary fidelity that typically, along a given line of descent, only about one nucleotide pair in a thousand is randomly changed in the human germ line every million years. Even so, in a population of 10,000 diploid individuals, every possible nucleotide substitution will have been “tried out” on about 20 occasions in the course of a million years—a short span of time in relation to the evolution of species.
+
+Errors in DNA replication, DNA recombination, or DNA repair can lead either to simple local changes in DNA sequence—so-called point mutations such as the substitution of one base pair for another—or to large-scale genome rearrangements such as deletions, duplications, inversions, and translocations of DNA from one chromosome to another. In addition to these rare failures of the genetic machinery, genomes contain mobile DNA elements that are an important source of genomic change (see Table 5–3, p. 286). These transposable DNA elements (transposons) are parasitic DNA sequences that can spread within the genomes they colonize. In the process, they often disrupt the function or alter the regulation of existing genes. On occasion, they have created altogether novel genes through fusions between transposon sequences and segments of existing genes. Over long periods of evolutionary time, DNA transposition events have profoundly affected genomes, so much so that nearly half of the DNA in the human genome consists of recognizable relics of past transposition events (**Figure 4–63**). Even more of our genome is thought to have been derived from transpositions occurring so long ago (>10<sup>8</sup> years) that, due to the accumulation of mutations, the sequences can no longer be traced to transposons.
+
+![](images/page_48_image_6.jpg)
+
+Figure 4–63 A representation of the nucleotide sequence content of the sequenced human genome. The LINEs (long interspersed nuclear elements), SINEs (short interspersed nuclear elements), retroviral-like elements, and DNA-only transposons are mobile genetic elements that have multiplied in our genome by replicating themselves and inserting the new copies in different positions. These mobile genetic elements are discussed in Chapter 5 (see Table 5–3, p. 286). Simple sequence repeats are short nucleotide sequences (fewer than 14 nucleotide pairs) that are repeated again and again for long stretches. Segmental duplications are large blocks of DNA sequence (1000–200,000 nucleotide pairs) that are present at two or more locations in the genome. Most of the highly repeated blocks of DNA in heterochromatin have not yet been completely sequenced; therefore, about 10% of human DNA sequences are not represented in this diagram. (Data courtesy of E. Margulies.)
+
+---
+
+232
+
+Chapter 4: DNA, Chromosomes, and Genomes
+
+![](images/page_49_chart_2.jpg)
+
+Figure 4–64 A phylogenetic tree showing the relationship between humans and the great apes based on nucleotide sequence data. As indicated, the sequences of homologous portions of the genomes of all four species are estimated to differ from the sequence of the genome of their last common ancestor by a little over 1.5%. Because changes occur independently on both diverging lineages, pairwise comparisons will reveal twice the sequence divergence from the last common ancestor. For example, human–chimpanzee comparisons show divergences of approximately 1.2%. (Modified from F.C. Chen and W.H. Li, Am. J. Hum. Genet. 68:444–456, 2001.)
+
+## The Genome Sequences of Two Species Differ in Proportion to the Length of Time Since They Have Separately Evolved
+
+The differences between the genomes of all species alive today have accumulatedMBoC7 m4.63/4.64 over more than 3 billion years. Although we lack a direct record of changes over time, scientists can reconstruct the process of genome evolution from detailed comparisons of the genomes of contemporary organisms.
+
+The basic organizing framework for comparative genomics is the phylogenetic tree. A simple example is the tree describing the divergence of humans from the great apes (**Figure 4–64**). The primary support for this tree comes from comparisons of genome sequences. For example, comparisons between the sequences of human genes or proteins and those of the great apes typically reveal the fewest differences between human and chimpanzee and the most between human and orangutan.
+
+For closely related organisms such as humans and chimpanzees, it is relatively easy to reconstruct the gene sequences of the extinct, last common ancestor of the two species (**Figure 4–65**). The close similarity between human and chimpanzee
+
+![](images/page_49_chart_8.jpg)
+
+Figure 4–65 Tracing the ancestral sequence from a sequence comparison of the coding regions of human and chimpanzee leptin genes. Reading left to right and top to bottom, a continuous 300-nucleotide segment of a leptin-coding gene is illustrated. Leptin is a hormone that regulates food intake and energy utilization in response to the adequacy of fat reserves. As indicated by the codons boxed in green, only 5 nucleotides (of 441 total) differ between the two species. Moreover, in only one of the five positions does the difference in nucleotide lead to a difference in the encoded amino acid. For each of the five variant nucleotide positions, the corresponding sequence in the gorilla is also indicated. In two cases, the gorilla sequence agrees with the human sequence, while in three cases it agrees with the chimpanzee sequence.
+
+What was the sequence of the leptin gene in the last common ancestor? The most economical assumption is that evolution has followed a pathway requiring the minimum number of mutations consistent with the data. Thus, it seems likely that the leptin sequence of the last common ancestor was the same as the human and chimpanzee sequences when they agree. When they disagree, the gorilla sequence can be used as a tiebreaker, a conclusion that should be tested by including the sequences from other great apes. For convenience, only the first 300 nucleotides of the leptincoding sequences are given. The remaining 141 are identical between humans and chimpanzees.
+
+---
+
+HOW GENOMES EVOLVE
+
+233
+
+genes is mainly due to the short time that has been available for the accumulation of mutations in the two diverging lineages, rather than to functional constraints that have kept the sequences the same. Evidence for this view comes from the observation that the human and chimpanzee genomes are nearly identical even where there is no functional constraint on the nucleotide sequence—such as in the third position of “synonymous” codons (codons specifying the same amino acid but differing in their third nucleotide).
+
+For much less closely related organisms, such as humans and chickens (which have evolved separately for about 300 million years), the sequence conservation found in genes is almost entirely due to **purifying selection** (that is, selection that eliminates individuals carrying mutations that interfere with important genetic functions), rather than to an inadequate time for mutations to occur.
+
+## Phylogenetic Trees Constructed from a Comparison of DNA Sequences Trace the Relationships of All Organisms
+
+Phylogenetic trees based on molecular sequence data can be compared with the fossil record, and we get our best view of evolution by integrating the two approaches. The fossil record remains essential as a source of absolute dates, which are based on radioisotope decay in the rock formations in which each fossil is found. Because the fossil record has many gaps, however, precise divergence times between species are difficult to establish, even for species that leave good fossils with a distinctive morphology.
+
+Phylogenetic trees whose timing has been calibrated according to the fossil record suggest that changes in the sequences of particular genes or proteins tend to occur at a nearly constant rate, although rates that differ from the norm by as much as twofold are observed in particular lineages. This provides us with a molecular clock for evolution—or rather a set of molecular clocks corresponding to different categories of DNA sequence. As in the example in **Figure 4–66**, the clock runs most rapidly and regularly in sequences that are not subject to purifying selection. These include portions of introns that lack splicing or regulatory signals, the third position in synonymous codons, and genes that have been irreversibly inactivated by mutation (the so-called pseudogenes). The clock runs most slowly for sequences that are subject to strong functional constraints; for example, the amino acid sequences of proteins such as histones that engage in specific interactions with large numbers of other proteins and whose structure is therefore highly constrained, or the nucleotide sequences that encode the RNA subunits of the ribosome, on which all protein synthesis depends.
+
+Occasionally, rapid change is seen in a previously highly conserved sequence. As discussed later in this chapter, such episodes are especially interesting because they are thought to reflect periods of strong positive selection for mutations that have conferred a selective advantage in the particular lineage where the rapid change occurred.
+
+The pace at which molecular clocks run during evolution is determined not only by the degree of purifying selection but also by the mutation rate. Notably, in animals, although not in plants, clocks based on functionally unconstrained mitochondrial DNA sequences run much faster than clocks based on functionally unconstrained nuclear sequences, because the mutation rate in animal mitochondria is exceptionally high.
+
+Figure 4–66 The very different rates of evolution of exons and introns, as illustrated by comparing a portion of the mouse and human leptin genes. Starting at top left and ending at bottom right, the DNA sequences of one exon and its adjacent intron are compared for human and mouse leptin genes. Positions where the sequences differ by a single nucleotide substitution are boxed in green, and positions that differ by the addition or deletion of nucleotides are boxed in yellow. Note that, thanks to purifying selection, the coding sequence of the exon is much more conserved than is the adjacent intron sequence.
+
+## mouse
+
+exon intron
+
+GTGCCTATCCAGAAAGTCCAGGATGACACCAAAACCCTCATCAAGACCATTGTCACCAGGATCAATGACATTTCACACACGGTA-GGAGTCTCATGGGGGGACAAAGATGTAGGACTAGA GTGCCCATCCAAAAAGTCCAAGATGACACCAAAACCCTCATCAAGACAATTGTCACCAGGATCAATGACATTTCACACACGGTAAGGAGAGT-ATGCGGGGACAAA---GTAGAACTGCA human
+
+## mouse
+
+ACCAGAGTCTGAGAAACATGTCATGCACCTCCTAGAAGCTGAGAGTTTAT-AAGCCTCGAGTGTACAT-TATTTCTGGTCATGGCTCTTGTCACTGCTGCCTGCTGAAATACAGGGCTGA GCCAG--CCC-AGCACTGGCTCCTAGTGGCACTGGACCCAGATAGTCCAAGAAACATTTATTGAACGCCTCCTGAATGCCAGGCACCTACTGGAAGCTGA--GAAGGATTTGAAAGCACA human
+
+---
+
+234
+
+Chapter 4: DNA, Chromosomes, and Genomes
+
+![](images/page_51_image_2.jpg)
+
+Figure 4–67 A phylogenetic tree showing the evolutionary relationships of some present-day mammals. The length of each line is proportional to the number of neutral substitutions; that is, nucleotide changes at sites where there is assumed to be no purifying selection. (Adapted from G.M. Cooper et al., Genome Res. 15:901–913, 2005. With permission from Cold Spring Harbor Laboratory Press.)
+
+Categories of DNA for which the clock runs fast are most informative for recent evolutionary events; the mitochondrial DNA clock has been used, for example, to chronicle the divergence of the Neanderthal lineage from that of modern Homo sapiens. To study ancient evolutionary events, one must examine DNA for which the clock runs unusually slowly; thus, the divergence of the major branches of theMBoC7 m4.66/4.67 tree of life—bacteria, archaea, and eukaryotes—has been deduced from study of the sequences specifying ribosomal RNA.
+
+In general, molecular clocks, appropriately chosen, have a finer time resolution than that of the fossil record, and they are a more reliable guide to the detailed structure of phylogenetic trees than are classical methods of tree construction, which are based on family resemblances in anatomy and embryonic development. For example, the precise family tree of great apes and humans was not settled until sufficient molecular sequence data accumulated in the 1980s to produce the pedigree shown previously in Figure 4–64. And with huge amounts of DNA sequence now determined from a wide variety of mammals, much better estimates of our relationship to them are being obtained (**Figure 4–67**).
+
+## A Comparison of Human and Mouse Chromosomes Shows How the Structures of Genomes Diverge
+
+As would be expected, the human and chimpanzee genomes are much more alike than are the human and mouse genomes, even though all three genomes are roughly the same size and contain nearly identical sets of genes. Mouse and human lineages have had approximately 90 million years to diverge through accumulated mutations, versus 6 million years for humans and chimpanzees. In addition, rodent lineages (represented by the rat and the mouse in Figure 4–67) have unusually fast molecular clocks and have diverged from the human lineage more rapidly than otherwise expected.
+
+While the way that the genome is organized into chromosomes is almost identical between humans and chimpanzees, this organization has diverged greatly between humans and mice. According to rough estimates, a total of about 180 chromosome breakage-and-rejoining events have moved large blocks of DNA sequence in the human and mouse lineages since they last shared a common ancestor. As a result, although the number of chromosomes is similar in the two species (23 per haploid genome in the human versus 20 in the mouse), their overall structures differ greatly. Even so, there are many large blocks of DNA in which the gene order is the same in the human and the mouse. These stretches of conserved gene order in chromosomes are referred to as regions of synteny. **Figure 4–68** illustrates the extent of this synteny by showing how segments of
+
+---
+
+200,000 bases
+
+HOW GENOMES EVOLVE
+
+235
+
+![](images/page_52_chart_3.jpg)
+
+Figure 4–68 Synteny between human and mouse chromosomes. In this diagram, the human chromosome set is shown, with each part of each chromosome colored according to the mouse chromosome with which it is syntenic. The color coding used for each mouse chromosome is shown at the bottom of the figure.
+
+Heterochromatic highly repetitive regions (such as centromeres) that are difficult to sequence cannot be mapped in this way; these are colored black. (Adapted from E.E. Eichler and D. Sankoff, Science 301:793–797, 2003. With permission from AAAS.)
+
+mouse chromosomes map onto the human chromosome set. For much more distantly related vertebrates, such as chicken and human, the number of breakage-and-rejoining events has been much greater, and the regions of synteny are much shorter; in addition, these regions are often hard to discern because of theMB C7 m4.67/4.68 divergence of the DNA sequences they contain.
+
+An unexpected conclusion from a detailed comparison of the complete mouse and human genome sequences, confirmed by subsequent comparisons between the genomes of other vertebrates, is that small blocks of DNA sequence are being deleted from and added to genomes at a surprisingly rapid rate. Thus, if we assume that our common ancestor had a genome of human size (about 3.1 billion nucleotide pairs), mice would have lost a total of about 45% of that genome from accumulated deletions during the past 90 million years, while humans would have lost about 25%. However, substantial sequence gains from many small chromosome duplications and from the multiplication of transposons have compensated for these deletions. As a result of this series of gains and losses, the size of our genome is thought to be practically unchanged from that of the last common ancestor of humans and mice, while the mouse genome is smaller by only about 0.4 billion nucleotides.
+
+Good evidence for the loss of DNA sequences in small blocks during evolution can be obtained from a detailed comparison of regions of synteny in the human and mouse genomes. The comparative shrinkage of the mouse genome can be clearly seen from such comparisons, with the net loss of sequences scattered throughout the long stretches of DNA that are otherwise homologous (**Figure 4–69**).
+
+![](images/page_52_image_9.jpg)
+
+mouse chromosome 12
+
+Figure 4–69 Comparison of a syntenic portion of mouse and human genomes. About 90% of the two genomes can be aligned in this way. Note that while there is an identical order of the matched index sequences (red marks), there has been a net loss of DNA in the mouse lineage that is interspersed throughout the entire region. This type of net loss is typical for all such regions, and it accounts for the fact that the mouse genome contains 14% less DNA than does the human genome. (Adapted from Mouse Genome Sequencing Consortium, Nature 420:520–562, published 2002 by Nature Publishing Group. Reproduced with permission of SNCSC.)
+
+---
+
+236
+
+Chapter 4: DNA, Chromosomes, and Genomes
+
+![](images/page_53_image_2.jpg)
+
+Figure 4–70 A comparison of the b-globin gene cluster in the human and mouse genomes, showing the locations of transposable elements. This stretch of the human genome contains five functional β-globin–like genes (orange); the comparable region from the mouse genome has only four. The positions of the human Alu sequences are indicated by green circles, and the positions of the human L1 sequences are indicated by red circles.
+
+The mouse genome contains different but related transposable elements: the positions of B1 elements (which are related to the human Alu sequences) are indicated by blue triangles, and the positions of the mouse L1 elements (which are related to the human L1 sequences) are indicated by orange triangles. The absence of transposable elements from the globin structural genes can be attributed to purifying selection, which would have eliminated any insertion that compromised gene function. (Courtesy of Ross Hardison and Webb Miller.)
+
+DNA is added to genomes both by the spontaneous duplication of chromosomal segments that are typically tens of thousands of nucleotide pairs long (as will be discussed shortly) and by insertion of new copies of active transposons. Most transposition events are duplicative, because the original copy of the transposon stays where it was when a copy inserts at the new site; see, for example, Figure 5–59. Comparison of the DNA sequences derived from transposons in the human and the mouse readily reveals some of the sequence additions (**Figure 4–70**). In contrast, the nucleotide sequences and positions of the transposons in human and chimpanzee are very similar, indicating that their movement occurred before the two species diverged.
+
+It remains a mystery why all mammals have maintained genome sizes of roughly 3 billion nucleotide pairs that contain nearly identical sets of genes, even though 90% of this DNA appears not to be under sequence-specific functional constraints.
+
+## The Size of a Vertebrate Genome Reflects the Relative Rates of DNA Addition and DNA Loss in a Lineage
+
+In more distantly related vertebrates, genome size can vary considerably, apparently without a drastic effect on the organism or its number of genes. Thus, the chicken genome, at 1 billion nucleotide pairs, is only about one-third the size of the mammalian genome, even though it contains nearly the same number of genes. An extreme example is the puffer fish, Fugu rubripes (**Figure 4–71A**), which has a tiny genome for a vertebrate (0.4 billion nucleotide pairs compared to 1 billion or more for most other fish). The small size of the Fugu genome is largely due to the small size of its introns and intergenic regions. Specifically, Fugu introns, as well as other noncoding segments of the Fugu genome, lack the repetitive DNA that makes up a large portion of the genomes of most well-studied vertebrates. Nevertheless, the positions of the Fugu introns between the exons of each gene are almost the same as in mammalian genomes (**Figure 4–72**).
+
+While initially a mystery, we now have a simple explanation for such large differences in genome size between similar organisms: because all vertebrates experience a continual process of DNA loss and DNA addition, the size of a genome merely depends on the balance between these opposing processes
+
+![](images/page_53_image_10.jpg)
+
+![](images/page_53_image_11.jpg)
+
+Figure 4–71 Two fish with very different genome sizes. The puffer fish, Fugu rubripes (A), has a genome size that is 300 times smaller than that of the West African lungfish, Protopterus annectens (B). (A, Courtesy of Byrappa Venkatesh; B, History and Art Collection/Alamy Stock Photo.)
+
+---
+
+HOW GENOMES EVOLVE
+
+237
+
+![](images/page_54_image_2.jpg)
+
+Figure 4–72 Comparison of the genomic sequences of the human and Fugu genes encoding the protein huntingtin. Both genes (indicated in red) contain 67 short exons that align in 1:1 correspondence to one another; these exons are connected by curved lines. The human gene is 7.5 times larger than the Fugu gene (180,000 versus 24,000 nucleotide pairs). The size difference is entirely due to larger introns in the human gene. The larger size of the human introns is due in part to the presence of retrotransposons (discussed in Chapter 5), whose positions are represented by MBoC7 m4.71/4.72green vertical lines; the Fugu introns lack retrotransposons. In humans, mutation of the huntingtin gene causes Huntington’s disease, an inherited neurodegenerative disorder. (Adapted from S. Baxendale et al., Nat. Genet. 10:67–76, published 1995 by Nature Publishing Group. Reproduced with permission of SNCSC.)
+
+acting over millions of years. Suppose, for example, that in the lineage leading to Fugu, the rate of DNA addition happened to slow greatly. Over long periods of time, this would result in a major “cleansing” from this fish genome of those DNA sequences whose loss could be tolerated. The result is an unusually compact genome, relatively free of junk and clutter, but retaining through purifying selection the vertebrate DNA sequences that are functionally important. This makes Fugu, with its 400 million nucleotide pairs of DNA, a valuable resource for genome research aimed at understanding humans.
+
+At the other end of the scale, some fish—such as the primitive-looking lungfish—have enormous genomes, more than 300 times the size of that of Fugu and 30 times the size of that of humans (**Figure 4–71B**). Most of the extra DNA consists of transposons and other repeated DNA sequences, suggesting that genome additions have greatly exceeded losses in this lineage.
+
+## Multispecies Sequence Comparisons Identify Many Conserved DNA Sequences of Unknown Function
+
+The mass of DNA sequence now in freely accessible databases (hundreds of billions of nucleotide pairs) provides a rich resource that scientists can mine for many purposes. This information can be used not only to unscramble the evolutionary pathways that have led to modern organisms, but also to provide insights into how cells and organisms function. Perhaps the most remarkable discovery in this realm comes from the observation that a striking amount of DNA sequence that does not code for protein has been conserved during mammalian evolution (see Table 4–1, p. 194). This is most clearly revealed when we align and compare DNA synteny blocks from many different species, thereby identifying large numbers of so-called multispecies conserved sequences: some of these code for protein, but most of them do not.
+
+Many of the conserved sequences that do not code for protein are now known to produce untranslated RNA molecules, such as the thousands of long noncoding RNAs (lncRNAs) that are thought to have important functions in regulating gene transcription. As we shall also see in Chapter 7, many others are regions of DNA scattered throughout the genome that directly bind proteins
+
+---
+
+238
+
+Chapter 4: DNA, Chromosomes, and Genomes
+
+involved in gene regulation. But the function of much of the conserved noncoding DNA remains a mystery. This enigma highlights how much more we need to learn about the fundamental biological mechanisms that operate in animals and other complex organisms, and its solution is certain to have profound consequences for medicine.
+
+How can cell biologists tackle the mystery of noncoding conserved DNA? Traditionally, attempts to determine the function of a puzzling DNA sequence begin by looking at the consequences of its experimental disruption. But many DNA sequences that are crucial for an organism in the wild can be expected to have no noticeable effect on its phenotype under laboratory conditions: what is required for a mouse to survive in a laboratory cage is very much less than what is required for it to succeed in nature. Moreover, calculations based on population genetics reveal that just a tiny selective advantage—less than a 0.1% difference in survival—can be enough to strongly favor retaining a particular DNA sequence over evolutionary time spans. One should therefore not be surprised to find that many conserved DNA sequences can be deleted from the mouse genome without any noticeable effect on that mouse in a laboratory.
+
+## Changes in Previously Conserved Sequences Can Help Decipher Critical Steps in Evolution
+
+Given genome sequence information, we can tackle another intriguing question: What alterations in our DNA have made humans so different from other animals— or for that matter, what makes any individual species so different from its relatives? For example, as soon as both the human and the chimpanzee genome sequences became available, scientists began searching for DNA sequence changes that might account for the striking differences between us and chimpanzees. With 3.1 billion nucleotide pairs to compare in the two species, this might seem an impossible task. But the job was made much easier by confining the search to 35,000 clearly defined multispecies conserved sequences (a total of about 5 million nucleotide pairs), representing parts of the genome that are most likely to be functionally important. Though these sequences are conserved strongly, they are not conserved perfectly, and when the version in one species is compared with that in another they are generally found to have drifted apart by a small amount corresponding simply to the time elapsed since the last common ancestor. In a small proportion of cases, however, one sees signs of a sudden evolutionary spurt. For example, some DNA sequences that have been highly conserved in other mammalian species are found to have accumulated nucleotide changes exceptionally rapidly during the 6 million years of human evolution since we diverged from the chimpanzees. These human accelerated regions (HARs) are thought to reflect functions that have been especially important in making us different in some useful way.
+
+About 50 such sites were identified in one study, one-fourth of which were located near genes associated with neural development. The sequence exhibiting the most rapid change (18 changes between human and chimpanzee, compared to only two changes between chimpanzee and chicken) was examined further and found to encode a 118-nucleotide noncoding RNA molecule, HAR1F (human accelerated region 1F), that is produced in the human cerebral cortex at a critical time during brain development. The function of this HAR1F RNA is not yet known, but findings of this type are stimulating research studies that may shed light on crucial features of the human brain.
+
+A related approach in the search for the important mutations that contributed to human evolution likewise begins with DNA sequences that have been conserved during mammalian evolution, but rather than screening for accelerated changes in individual nucleotides, it focuses instead on chromosome sites that have experienced deletions in the 6 million years since our lineage diverged from that of chimpanzees. More than 500 such sequences—conserved among other species but deleted in humans—have been discovered. Each deletion removes an average of 95 nucleotides of DNA sequence. Only one of these deletions
+
+---
+
+HOW GENOMES EVOLVE
+
+239
+
+affects a protein-coding region: the rest are thought to alter regions that affect how nearby genes are expressed, an expectation that has been experimentally confirmed in a few cases. A large proportion of the presumed regulatory regions identified in this way lie near genes that affect neural function and/or near genes involved in steroid signaling, suggesting that changes in the nervous system and in immune or reproductive functions have played an especially important role in human evolution.
+
+## Mutations in the DNA Sequences That Control Gene Expression Have Driven Many of the Evolutionary Changes in Vertebrates
+
+The vast hoard of genomic sequence data now being accumulated can be explored in many other ways to reveal events that happened even hundreds of millions of years ago. For example, one can attempt to trace the origins of the regulatory elements in DNA that have played critical parts in vertebrate evolution. One such study began with the identification of nearly 3 million noncoding sequences, averaging 28 base pairs in length, that have been conserved in recent vertebrate evolution while being absent in more ancient ancestors. Each of these special noncoding sequences is likely to represent a functional innovation peculiar to a particular branch of the vertebrate family tree, and most of them are thought to consist of regulatory DNA that governs the expression of a neighboring gene. Given full genome sequences, one can identify the genes that appear most likely to have fallen under the sway of these novel regulatory elements. By comparing many different species, with known divergence times, one can also estimate when each such regulatory element came into existence as a conserved feature.
+
+The findings suggest remarkable evolutionary differences between the various functional classes of genes (**Figure 4–73**). Conserved regulatory elements that originated early in vertebrate evolution—that is, more than about 300 million years ago, which is when the mammalian lineage split from the lineage leading to birds and reptiles—seem to be mostly associated with genes that code for transcription regulatory proteins and for proteins with roles in organizing embryonic development. Then came an era when the regulatory DNA innovations arose next to genes coding for receptors for extracellular signals. Finally, over the course of the past 100 million years, the regulatory innovations seem to have been concentrated in the neighborhood of genes coding for proteins (such as protein kinases) that function to modify other proteins post-translationally.
+
+Many questions remain to be answered about these phenomena and what they mean. One possible interpretation is that the logic—the circuit diagram—of the gene regulatory network in vertebrates was established early, and that more recent evolutionary change has mainly occurred through the tuning of quantitative parameters. This could help to explain why, among the mammals, for
+
+![](images/page_56_chart_7.jpg)
+
+Figure 4–73 The types of changes in gene regulation inferred to have predominated during the evolution of our vertebrate ancestors. To produce the information summarized in this plot, wherever possible the type of gene regulated by each conserved noncoding sequence was inferred from the identity of its closest protein-coding gene. The time when each conserved sequence became fixed in the vertebrate lineage was then used to derive the conclusions shown. (Based on C.B. Lowe et al., Science 333:1019–1024, 2011.)
+
+---
+
+240
+
+Chapter 4: DNA, Chromosomes, and Genomes
+
+example, the basic body plan—the topology of the tissues and organs—has been largely conserved.
+
+## Gene Duplication Also Provides an Important Source of Genetic Novelty During Evolution
+
+Evolution depends on the creation of new genes, as well as on the modification of those that already exist. How does this occur? When we compare organisms that seem very different—a primate with a rodent, for example, or a mouse with a fish—we rarely encounter genes in the one species that have no homolog in the other. Genes without homologous counterparts are relatively scarce even when we compare such divergent organisms as a mammal and a worm. On the other hand, we frequently find gene families that have different numbers of members in different species. To create such families, genes have been repeatedly duplicated, and the copies have then diverged to take on new functions that often vary from one species to another.
+
+Gene duplication occurs at high rates in all evolutionary lineages, contributing to the vigorous process of DNA addition discussed previously. In a detailed study of spontaneous duplications in yeast, duplications of 50,000–250,000 nucleotide pairs were commonly observed, most of which were tandemly repeated. These appeared to result from DNA replication errors that led to the inexact repair of double-strand chromosome breaks. A comparison of the human and chimpanzee genomes reveals that, since the time that these two organisms diverged, such segmental duplications have added about 5 million nucleotide pairs to each genome every million years, with an average duplication size being about 50,000 nucleotide pairs (although there are some duplications five times larger). In fact, if one counts nucleotides, duplication events have created more differences between our two species than have single-nucleotide substitutions.
+
+## Duplicated Genes Diverge
+
+What is the fate of newly duplicated genes? In most cases, there is presumed to be little or no selection—at least initially—to maintain the duplicated state because either copy can provide an equivalent function. Hence, many duplication events are likely to be followed by loss-of-function mutations in one or the other gene. This cycle would functionally restore the one-gene state that preceded the duplication. Indeed, there are many examples in contemporary genomes where one copy of a duplicated gene can be seen to have become irreversibly inactivated by multiple mutations. Over time, the sequence similarity between such a **pseudogene** and the functional gene whose duplication produced it would be expected to be eroded by the accumulation of many mutations in the pseudogene—the homologous relationship eventually becoming undetectable.
+
+An alternative fate for gene duplications is for both copies to remain functional, while diverging in their sequence and pattern of expression, thus taking on different roles. This process of duplication and divergence almost certainly explains the presence of large families of genes with related functions in biologically complex organisms, and it is thought to play a critical role in the evolution of increased biological complexity. An examination of many different eukaryotic genomes suggests that the probability that any particular gene will undergo a duplication event that spreads to most or all individuals in a species is approximately 1% every million years.
+
+Whole-genome duplications offer particularly dramatic examples of the duplication–divergence cycle. A whole-genome duplication can occur quite simply: all that is required is one round of genome replication in a germ-line cell lineage without a corresponding cell division. Initially, the chromosome number simply doubles. Such abrupt increases in the ploidy of an organism are common, particularly in fungi and plants. After a whole-genome duplication, all genes exist as duplicate copies. However, unless the duplication event occurred so recently that there has been little time for subsequent alterations in genome structure,
+
+---
+
+HOW GENOMES EVOLVE
+
+241
+
+the results of a series of segmental duplications—occurring at different times— are hard to distinguish from the end product of a whole-genome duplication. In mammals, for example, the role of whole-genome duplications versus a series of piecemeal duplications of DNA segments is quite uncertain. Nevertheless, it is clear that a great deal of gene duplication has occurred in the distant past.
+
+Analysis of the genome of the zebrafish, in which at least one whole-genome duplication is thought to have occurred hundreds of millions of years ago, has cast some light on the process of gene duplication and divergence. Although many duplicates of zebrafish genes appear to have been lost by mutation, a significant fraction—perhaps as many as 30–50%—have diverged functionally while both copies have remained active. In many cases, the most obvious functional difference between the duplicated genes is that they are expressed in different tissues or at different stages of development. One attractive theory to explain such an end result imagines that different, mildly deleterious mutations occur quickly in both copies of a duplicated gene set. For example, one copy might lose expression in a particular tissue as a result of a regulatory mutation, while the other copy loses expression in a second tissue. After such an occurrence, both gene copies would be required to provide the full range of functions that were once supplied by a single gene; hence, both copies would now be protected from loss through inactivating mutations. Over a longer period, each copy could then undergo further changes through which it could acquire new, specialized features.
+
+## The Evolution of the Globin Gene Family Shows How DNA Duplications Contribute to the Evolution of Organisms
+
+The globin gene family provides an especially good example of how DNA duplication generates new proteins, and its evolutionary history has been worked out particularly well. The unmistakable similarities in amino acid sequence and structure among the present-day globins indicate that they all must derive from a common ancestral gene, even though some are now encoded by widely separated genes in the mammalian genome.
+
+We can reconstruct some of the past events that produced the various types of oxygen-carrying hemoglobin molecules by considering the different forms of the protein in organisms at different positions on the tree of life. A molecule like hemoglobin was necessary to allow multicellular animals to grow to a large size, because large animals cannot simply rely on the diffusion of oxygen through the body surface to oxygenate their tissues adequately. But oxygen plays a vital part in the life of nearly all living organisms, and oxygen-binding proteins homologous to hemoglobin can be recognized even in plants, fungi, and bacteria. In animals, the simplest oxygen-carrying molecule is a globin polypeptide chain of about 150 amino acids that is found in many marine worms, insects, and primitive fish. The hemoglobin molecule in more complex vertebrates, however, is composed of two kinds of globin chains. It appears that about 500 million years ago, just before fish and mammals diverged from their common ancestor, a series of gene mutations and duplications occurred. These events established two slightly different globin genes in the genome of each individual, coding for α-globin and β-globin chains that associate to form a hemoglobin molecule consisting of two α chains and two β chains (**Figure 4–74**). The four oxygen-binding sites in the α<sub>2</sub>β<sub>2</sub> molecule interact, allowing a cooperative allosteric change in the molecule as it binds and releases oxygen, which enables hemoglobin to take up and release oxygen more efficiently than can the single-chain version.
+
+Still later, during the evolution of mammals, the β-chain gene apparently underwent duplication and mutation to give rise to a second β-like chain that
+
+single-chain globin binds one oxygen molecule
+
+![](images/page_58_image_9.jpg)
+
+oxygenbinding site on heme
+
+EVOLUTION OF A SECOND GLOBIN CHAIN BY GENE DUPLICATION FOLLOWED BY MUTATION
+
+![](images/page_58_image_12.jpg)
+
+four-chain globin binds four oxygen molecules in a cooperative manner
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">Figure 4–74 A comparison of the structure of one-chain and four-chain globins. The four-chain globin shown is hemoglobin, which is a complex of two α-globin and two β-globin chains. The onechain globin present in some primitive vertebrates represents an intermediate in the evolution of the four-chain globin. With oxygen bound it exists as a monomer; without oxygen it dimerizes. (PDB code: 2DHB.)</span></small>
+
+---
+
+242
+
+Chapter 4: DNA, Chromosomes, and Genomes
+
+is synthesized specifically in the fetus. The resulting hemoglobin molecule has a higher affinity for oxygen than that of adult hemoglobin and thus helps in the transfer of oxygen from the mother to the fetus. The gene for the new β-like chain subsequently duplicated and mutated again to produce two new genes, ε and $\gamma ,$ the ε chain being produced earlier in development (to form $\alpha _ { 2 } \varepsilon _ { 2 } )$ than the fetal γ chain, which forms α<sub>2</sub>γ<sub>2</sub>. A duplication of the adult β-chain gene occurred still later, during primate evolution, to give rise to a δ-globin gene and thus to a minor form of hemoglobin $\left( \alpha _ { 2 } \delta _ { 2 } \right)$ that is found only in adult primates (**Figure 4–75**).
+
+Each of these duplicated genes has been modified by point mutations that affect the properties of the final hemoglobin molecule, as well as by changes in regulatory regions that determine the timing and level of expression of the gene. As a result, each globin is made in different amounts at different times of human development.
+
+The history of these gene duplications is reflected in the arrangement of hemoglobin genes in the genome. In the human genome, the genes that arose from the original β gene are arranged as a series of homologous DNA sequences located within 50,000 nucleotide pairs of one another on a single chromosome. A similar cluster of human α-globin genes is located on a separate chromosome. Not only other mammals, but birds too have their α-globin and β-globin gene clusters on separate chromosomes. In the frog Xenopus, however, they are together, suggesting that a chromosome translocation event in the lineage of birds and mammals separated the two gene clusters about 300 million years ago, soon after our ancestors and those of amphibians diverged (see Figure 4–75).
+
+There are several duplicated globin DNA sequences in the α-globin and β-globin gene clusters that are not functional genes but pseudogenes. These have a close sequence similarity to the functional genes but have been disabled by mutations that prevent their expression as functional proteins. The existence of such pseudogenes makes it clear that, as expected, not every DNA duplication leads to a new functional gene. Indeed, the human genome is thought to contain more pseudogenes than genes.
+
+## Genes Encoding New Proteins Can Be Created by the Recombination of Exons
+
+The role of DNA duplication in evolution is not confined to the expansion of gene families. It can also act on a smaller scale to create single genes by stringing together short duplicated segments of DNA. The proteins encoded by genes generated in this way can be recognized by the presence of repeating similar protein domains, which are covalently linked to one another in series. The immunoglobulins (**Figure 4–76**), for example, as well as most fibrous proteins (such as collagens) are encoded by genes that have evolved by repeated duplications of a primordial DNA sequence.
+
+In genes that have evolved in this way, as well as in many other genes, each separate exon often encodes an individual protein folding unit, or domain. It is believed that the organization of DNA coding sequences as a series of such exons separated by long introns has greatly facilitated the evolution of new proteins. The duplications necessary to form a single gene coding for a protein with repeating domains, for example, can easily occur by breaking and rejoining the DNA anywhere in the long introns on either side of an exon. Without introns there would be only a few sites in the original gene at which a recombinational exchange between DNA molecules could duplicate the domain and not disrupt it. Moreover, introns often contain sequences that are repeated many times in a genome, facilitating recombination between different introns. By enabling recombination at many potential sites rather than just a few, introns increase the probability that a duplication event will produce a new protein.
+
+More generally, we know from genome sequences that the various parts of genes—both their individual exons and their regulatory elements—have served as modular elements that have been duplicated and moved about the genome to create the great diversity of living things. Thus, for example, many present-day
+
+![](images/page_59_chart_10.jpg)
+
+Figure 4–75 An evolutionary scheme for the globin chains that carry oxygen in the blood of animals. The scheme emphasizes the β-like globin gene family. A relatively recent gene duplication of the γ-chain gene produced γ<sup>G</sup> and γ<sup>A</sup>, which are fetal β-like chains of identical function. The location of the globin genes in the human genome is shown at the top of the figure.
+
+![](images/page_59_image_12.jpg)
+
+Figure 4–76 Schematic view of an antibody (immunoglobulin) molecule. This molecule is a complex of two identical heavy chains (orange) and two identical light chains (blue). Each heavy chain contains four similar, covalently linked domains, while each light chain contains two such domains. Each of these domains is encoded by a separate exon, and all of MBoC7 m4.77/4.76the exons are thought to have evolved by the serial duplication of a single ancestral exon.

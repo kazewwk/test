@@ -1,0 +1,100 @@
+Contents   xxxvii
+
+- Small Molecules Can Be Designed to Inhibit Specific Oncogenic Proteins 1207
+- Many Cancers May Be Treatable by Enhancing Immune Responses 1209
+- Immunosuppression Is a Major Hurdle for Cancer Immunotherapy 1210
+- Cancers Evolve Resistance to Therapies 1212
+- We Now Have the Tools to Devise Combination Therapies Tailored to the Individual 1212
+- Summary 1213
+- Problems 1214
+- References 1216
+- Chapter 21 Development of Multicellular Organisms 1217
+- OVERVIEW OF DEVELOPMENT 1218
+- Conserved Mechanisms Establish the Core Tissues of Animals 1218
+- The Developmental Potential of Cells Becomes Progressively Restricted 1219
+- Cell Memory Underlies Cell Decision-Making 1220
+- Several Model Organisms Have Been Crucial for Understanding Development 1220
+- Regulatory DNA Seems Largely Responsible for the Differences Between Animal Species 1220
+- Small Numbers of Conserved Cell-Cell Signaling Pathways Coordinate Spatial Patterning 1221
+- Through Combinatorial Control and Cell Memory, Simple Signals Can Generate Complex Patterns 1221
+- Morphogens Are Diffusible Inductive Signals That Exert Graded Effects 1222
+- Lateral Inhibition Can Generate Patterns of Different Cell Types 1223
+- Asymmetric Cell Division Can Also Generate Diversity 1224
+- Initial Patterns Are Established in Small Fields of Cells and Refined by Sequential Induction as the Embryo Grows 1225
+- Developmental Biology Provides Insights into Disease and Tissue Maintenance 1225
+- Summary 1226
+- MECHANISMS OF PATTERN FORMATION 1226
+- Different Animals Use Different Mechanisms to Establish Their Primary Axes of Polarization 1226
+- Studies in Drosophila Have Revealed Many Genetic Control Mechanisms Underlying Development 1228
+- Gene Products Deposited in the Egg Organize the Axes of the Early Drosophila Embryo 1228
+- Three Groups of Genes Control Drosophila Segmentation Along the A-P Axis 1230
+- A Hierarchy of Gene Regulatory Interactions Subdivides the Drosophila Embryo 1231
+- Egg-Polarity, Gap, and Pair-Rule Genes Create a Transient Pattern That Is Remembered by Segment-Polarity and Hox Genes 1233
+- Hox Genes Permanently Pattern the A-P Axis 1233
+- Hox Proteins Give Each Segment Its Individuality 1234
+- Hox Genes Are Expressed According to Their Order in the Hox Complex 1234
+- Trithorax and Polycomb Group Proteins Regulate Hox Expression to Maintain a Permanent Record of Positional Information 1235
+- The D-V Signaling Genes Create a Gradient of the Transcription Regulator Dorsal 1236
+- A Hierarchy of Inductive Interactions Subdivides the Vertebrate Embryo 1238
+- A Competition Between Secreted Signaling Proteins Patterns the Vertebrate Embryonic Axes 1239
+- Hox Genes Control the Vertebrate A-P Axis 1240
+- Some Transcription Regulators Can Activate a Program That Defines a Cell Type or Creates an Entire Organ 1241
+- Notch-mediated Lateral Inhibition Refines Cellular Spacing Patterns 1242
+- Cell-fate Determinants Can Be Asymmetrically Inherited Evolution of Regulatory DNA Explains Many Morphological Differences 1245
+- Summary 1247
+- DEVELOPMENTAL TIMING 1248
+- Molecular Lifetimes Play a Critical Part in Developmental Timing 1248
+
+- A Gene Expression Oscillator Acts as a Clock to Control Vertebrate Segmentation 1249
+- Cell-intrinsic Timing Mechanisms Can Lead to Different Cell Fates 1251
+- Cells Rarely Count Cell Divisions to Time Their Development 1252
+- MicroRNAs Can Regulate Developmental Transitions 1252
+- Cell and Nuclear Size Relationships Schedule the Onset of Zygotic Gene Expression 1254
+- Hormonal Signals Coordinate the Timing of Developmental Transitions 1255
+- Environmental Cues Determine the Time of Flowering 1256
+- Summary 1257
+- MORPHOGENESIS 1257
+- Imbalance in Physical Forces Acting on Cells Drives Morphogenesis 1258
+- Tension and Adhesion Determine Cell Packing Within Epithelial Sheets 1258
+- Changing Patterns of Cell Adhesion Molecules Force Cells into New Arrangements 1259
+- Repulsive Interactions Help Maintain Tissue Boundaries 1259
+- Groups of Similar Cells Can Perform Dramatic Collective Rearrangements 1261
+- Planar Cell Polarity Orients Cell Behaviors Within an Embryo 1261
+- An Epithelium Can Bend During Development to Form a Tube 1263
+- Interactions Between an Epithelium and Mesenchyme Generate Branching Tubular Structures 1264
+- The Extracellular Matrix Also Influences Tissue Shape 1265
+- Cell Migration Is Guided by Environmental Signals 1266
+- The Distribution of Migrant Cells Depends on Survival Factors 1267
+- Cells Migrate in Groups to Achieve Large-Scale Morphogenetic Movements 1268
+- Summary 1269
+- GROWTH 1269
+- The Proliferation, Death, and Size of Cells Determine Organ and Organism Size 1270
+- Changes in Cell Size Usually Result from Modified Cell Cycles 1271
+- Animals and Organs Can Assess and Regulate Total Cell Mass 1272
+- Various Extracellular Signals Stimulate or Inhibit Growth 1273
+- The Hippo Pathway Relays Mechanical Signals Regulating Growth 1273
+- Hormones Coordinate Growth Throughout the Body 1274
+- The Duration of Growth Influences Organism Size 1275
+- Summary 1275
+- Problems 1276
+- References 1278
+
+## Chapter 22 Stem Cells in Tissue Homeostasis
+
+- STEM CELLS AND TISSUE HOMEOSTASIS 1279
+- Stem Cells Are Defined by Their Ability to Self-renew and Produce Differentiated Cells 1280
+- The Epithelial Lining of the Small Intestine Is Continually Renewed Through Cell Proliferation in Crypts 1281
+- Epidermal Stem Cells Maintain a Self-renewing, Waterproof, Epithelial Barrier on the Body Surface 1282
+- Cell Lineage Tracing Reveals the Location of Stem Cells and Their Progeny 1284
+- Quiescent Stem Cells Are Difficult to Identify by Lineage Tracing 1285
+- Hematopoietic Stem Cells Can Be Identified by Transplantation 1286
+- Some Tissues Do Not Require Stem Cells for Their Maintenance 1289
+- In Response to Injury, Some Differentiated Cells Can Revert to Progenitor Cells and Some Progenitor Cells Can Revert to Stem Cells 1289
+- Some Tissues Lack Stem Cells and Are Not Renewable 1290
+- Summary 1290
+- CONTROL OF STEM-CELL FATE AND SELF-RENEWAL 1291
+- The Stem-Cell Niche Maintains Stem-Cell Self-Renewal 1291
+- The Size of the Niche Can Determine the Number of Stem Cells 1292
+- Asymmetric Stem-Cell Division Can Maintain Stem-Cell Number 1293
+- In Many Symmetric Stem-Cell Divisions, Daughter Cells Choose Their Fates Independently and Stochastically 1294
+- A Decline in Stem-Cell Function Contributes to Tissue Aging 1294

@@ -1,0 +1,99 @@
+- NADH and NADPH Are Important Electron Carriers 73
+- There Are Many Other Activated Carrier Molecules in Cells 75
+- The Synthesis of Biological Polymers Is Driven by ATP Hydrolysis 76
+- Summary 78
+- HOW CELLS OBTAIN ENERGY FROM FOOD 80
+- Glycolysis Is a Central ATP-producing Pathway 80
+- Glycolysis Illustrates How Enzymes Couple Oxidation to Energy Storage 83
+- Fermentations Produce ATP in the Absence of Oxygen 84
+- Organisms Store Food Molecules in Special Reservoirs 85
+- Between Meals, Most Animal Cells Derive Their Energy from Fatty Acids Obtained from Fat 86
+- Sugars and Fats Are Both Degraded to Acetyl CoA in Mitochondria 87
+- The Citric Acid Cycle Generates NADH by Oxidizing Acetyl Groups to $\mathrm{CO}_{2}$ 88
+- Electron Transport Drives the Synthesis of the Majority of the ATP in Most Cells 90
+- Many Biosynthetic Pathways Begin with Glycolysis or the Citric Acid Cycle 90
+- Animals Must Obtain All the Nitrogen and Sulfur They Need from Food 91
+- Metabolism Is Highly Organized and Regulated 92
+- Summary 93
+- Problems 112
+- References 114
+
+## Chapter 3 Proteins
+
+- THE ATOMIC STRUCTURE OF PROTEINS 115
+- The Structure of a Protein Is Specified by Its Amino Acid Sequence 115
+- Proteins Fold into a Conformation of Lowest Energy 121
+- The $\alpha$ Helix and the $\beta$ Sheet Are Common Folding Motifs 121
+- Four Levels of Organization Are Considered to Contribute to Protein Structure 123
+- Protein Domains Are the Modular Units from Which Larger Proteins Are Built 124
+- Proteins Also Contain Unstructured Regions 126
+- All Protein Structures Are Dynamic, Interconverting Rapidly Between an Ensemble of Closely Related Conformations Because of Thermal Energy 126
+- Function Has Selected for a Tiny Fraction of the Many Possible Polypeptide Chains 126
+- Proteins Can Be Classified into Many Families 127
+- Some Protein Domains Are Found in Many Different Proteins 129
+- The Human Genome Encodes a Complex Set of Proteins, Revealing That Much Remains Unknown 130
+- Protein Molecules Often Contain More Than One Polypeptide Chain 130
+- Some Globular Proteins Form Long Helical Filaments 131
+- Protein Molecules Can Have Elongated, Fibrous Shapes 132
+- Covalent Cross-Linkages Stabilize Extracellular Proteins 133
+- Protein Molecules Often Serve as Subunits for the Assembly of Large Structures 134
+- Many Structures in Cells Are Capable of Self-Assembly 136
+- Assembly Factors Often Aid the Formation of Complex Biological Structures 136
+- When Assembly Processes Go Wrong: The Case of Amyloid Fibrils 137
+- Amyloid Structures Can Also Perform Useful Functions in Cells 139
+- Summary 140
+- PROTEIN FUNCTION 140
+- All Proteins Bind to Other Molecules 140
+- The Surface Conformation of a Protein Determines Its Chemistry 142
+- Sequence Comparisons Between Protein Family Members Highlight Crucial Ligand-binding Sites 142
+- Proteins Bind to Other Proteins Through Several Types of Interfaces 143
+- Antibody Binding Sites Are Especially Versatile 144
+- The Equilibrium Constant Measures Binding Strength 145
+- Enzymes Are Powerful and Highly Specific Catalysts 146
+- Substrate Binding Is the First Step in Enzyme Catalysis 146
+
+- Enzymes Speed Reactions by Selectively Stabilizing Transition States 148
+- Enzymes Can Use Simultaneous Acid and Base Catalysis 148
+- Lysozyme Illustrates How an Enzyme Works 149
+- Tightly Bound Small Molecules Add Extra Functions to Proteins 152
+- The Cell Regulates the Catalytic Activities of Its Enzymes 155
+- Allosteric Enzymes Have Two or More Binding Sites That Interact 155
+- Two Ligands Whose Binding Sites Are Coupled Must Reciprocally Affect Each Other's Binding 157
+- Symmetrical Protein Assemblies Produce Cooperative Allosteric Transitions 158
+- Many Changes in Proteins Are Driven by Protein Phosphorylation 159
+- A Eukaryotic Cell Contains a Large Collection of Protein Kinases and Protein Phosphatases 159
+- The Regulation of the Src Protein Kinase Reveals How a Protein Can Function as a Microprocessor 161
+- Regulatory GTP-binding Proteins Are Switched On and Off by the Gain and Loss of a Phosphate Group 162
+- Proteins Can Be Regulated by the Covalent Addition of Other Proteins 162
+- An Elaborate Ubiquitin-conjugating System Is Used to Mark Proteins 163
+- Protein Complexes with Interchangeable Parts Make Efficient Use of Genetic Information 164
+- A GTP-binding Protein Shows How Large Protein Movements Can Be Generated from Small Ones 166
+- Motor Proteins Produce Directional Movement in Cells 167
+- Proteins Often Form Large Complexes That Function as Protein Machines 167
+- The Disordered Regions in Proteins Are Critical for a Set of Different Functions 168
+- Scaffolds Bring Sets of Interacting Macromolecules Together and Concentrate Them in Selected Regions of a Cell 170
+- Macromolecules Can Self-assemble to Form Biomolecular Condensates 171
+- Classical Studies of Phase Separation Have Relevance for Biomolecular Condensates 173
+- A Comparison of Three Important Types of Large Biological Assemblies 174
+- Many Proteins Are Controlled by Covalent Modifications That Direct Them to Specific Sites Inside the Cell 175
+- A Complex Network of Protein Interactions Underlies Cell Function 176
+- Protein Structures Can Be Predicted and New Proteins Designed 178
+- Summary 179
+- Problems 179
+- References 181
+
+- Chapter 4 DNA, Chromosomes, and Genomes 183
+- THE STRUCTURE AND FUNCTION OF DNA 185
+- A DNA Molecule Consists of Two Complementary Chains of Nucleotides 185
+- The Structure of DNA Provides a Mechanism for Heredity 187
+- In Eukaryotes, DNA Is Enclosed in a Cell Nucleus 189
+- Summary 189
+- CHROMOSOMAL DNA AND ITS PACKAGING IN THE CHROMATIN FIBER 189
+- Eukaryotic DNA Is Packaged into a Set of Chromosomes 190
+- Chromosomes Contain Long Strings of Genes 191
+- The Nucleotide Sequence of the Human Genome Shows How Our Genes Are Arranged 193
+- Each DNA Molecule That Forms a Linear Chromosome Must Contain a Centromere, Two Telomeres, and Replication Origins 195
+- DNA Molecules Are Highly Condensed in Chromosomes 197
+- Nucleosomes Are a Basic Unit of Eukaryotic Chromosome Structure 197
+- The Structure of the Nucleosome Core Particle Reveals How DNA Is Packaged 198
+- Nucleosomes Have a Dynamic Structure and Are Frequently Subjected to Changes Catalyzed by ATP-dependent Chromatin-remodeling Complexes 200

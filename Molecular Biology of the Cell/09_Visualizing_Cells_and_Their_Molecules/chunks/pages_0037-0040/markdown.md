@@ -1,0 +1,209 @@
+![](images/page_36_image_2.jpg)
+
+![](images/page_36_image_3.jpg)
+
+![](images/page_36_image_4.jpg)
+
+![](images/page_36_image_5.jpg)
+
+Figure 9–54 Focused ion beam–scanning electron microscopy (FIB–SEM). Superresolution light microscopy is combined here with three-dimensional electron microscopy of rapidly frozen cells to enable the high-resolution localization of target molecules throughout the entire volume of a cell. Sequential slices through the frozen cell are obtained by steadily milling the surface of the frozen block face with a focused ion beam, while images of the surface are collected at each step in an SEM. This particular cell has been labeled with fluorescent markers for the lumen of the endoplasmic reticulum (green) and for the outer membrane of mitochondria (magenta). (A) Three orthogonal slices through the cell show the combined electron microscope and fluorescence light microscope images. (B) A small region of the same cell imaged with a structured illumination microscope (SIM) is used to define mitochondrion and ER. (C) The corresponding block face image in the SEM. (D) The correlated electron microscope and light microscope images identify the position of the fluorescent labels in the electron micrograph. (E, F, and G) Because the three-dimensional SEM data set is of the entire cell, different views of the same area can be readily obtained. Here, the three corresponding vertical sections along the yellow dotted lines on the images above are shown. (From D.P. Hoffman et al., Science 367:265–277, 2020. With permission from AAAS.)
+
+(B)
+
+(E)
+
+![](images/page_36_image_9.jpg)
+
+(C)
+
+(F)
+
+![](images/page_36_image_12.jpg)
+
+(D)
+
+![](images/page_36_image_14.jpg)
+
+200 nm
+
+context is sacrificed. Imaging itself involves several trade-offs to be considered. An improvement in any one parameter—image contrast, resolution, signal-to-noise ratio, specimen damage by photons or electrons, the depth of specimen that can be imaged, or the speed of image recording—will inevitably require a sacrifice in one or more of the others, and understanding these trade-offs will help determine which approach is best for the cell biology problem being tackled.
+
+## Summary
+
+Discovering the detailed structure of cells and their molecules requires the higher resolution attainable in a transmission electron microscope. Three-dimensional views of the surfaces of cells and tissues are obtained by scanning electron microscopy. Specific macromolecules can be localized by combining electron microscopy with fluorescence light microscopy. EM tomography enables three-dimensional information about cellular architecture to be obtained. The shapes of isolated molecules can be roughly determined by electron microscopy techniques involving negative staining or heavy-metal shadowing, but detailed molecular structures require cryoEM and single-particle reconstruction using computational manipulations of data obtained from multiple images and multiple viewing angles to produce detailed reconstructions of macromolecules and molecular complexes. The resolution obtained with these methods means that atomic structures of individual macromolecules can be “fitted” to the images derived by electron microscopy. CryoEM can often determine the structures of molecules that are inaccessible to x-ray crystallography.
+
+## PROBLEMS
+
+Which statements are true? Explain why or why not.
+
+9–1 A fluorescent molecule, having absorbed a single photon of light at one wavelength, always emits it at a longer wavelength.
+
+9–2 Transmission electron microscopy and scanning electron microscopy can both be used to examine a structure in the interior of a thin section: transmission electron microscopy provides a projection view, while scanning electron microscopy captures electrons scattered from the structure and gives a more three-dimensional view.
+
+## Discuss the following problems.
+
+9–3 The diagrams in **Figure Q9–1** show the paths of light rays passing through a specimen into a dry lens or into an oil-immersion lens. Offer an explanation for why oil-immersion lenses should give better resolution. Air, glass, and oil have refractive indices of 1.00, 1.51, and 1.51, respectively.
+
+![](images/page_37_image_8.jpg)
+
+Figure Q9–1 Paths of light rays through dry and oil-immersion lenses (Problem 9–3). The red circle at the origin of the light rays is the specimen.
+
+9–4 **Figure Q9–2** shows a diagram of the human eye. The refractive indices of the components in the light
+
+9–5 Why do humans see so poorly under water? And why do goggles help?
+
+9–6 Explain the difference between resolution and magnification.
+
+9–7 **Figure Q9–3** shows a series of modified fluorescent proteins that emit light in a range of colors. Several of these fluorescent proteins contain the same chromophore, yet they fluoresce at different wavelengths. How do you suppose the exact same chromophore can fluoresce at several different wavelengths?
+
+![](images/page_37_image_14.jpg)
+
+Figure Q9–3 A rainbow of colors produced by modified fluorescent proteins (Problem 9–7). (Courtesy of Nathan Shaner, Paul Steinbach, and Roger Tsien.)
+
+path are air, 1.00; cornea, 1.38; aqueous humor, 1.33; crystalline lens, 1.41; andMBoC7 Problems Q9.01/ vitreous humor, 1.38. Where does the main refraction—the main focusing— occur? What role do you suppose the lens plays?
+
+9–8 A fluorescent biosensor was designed to report the cellular location of active Abl protein tyrosine kinase.MBoC7 Problems Q9.03/Q9.03 A blue (cyan) fluorescent protein (CFP) and a yellow fluorescent protein (YFP) were fused to either end of a hybrid protein, which consisted of a substrate peptide recognized by the Abl protein tyrosine kinase and a phosphotyrosine-binding domain (**Figure Q9–4A**). Stimulation of the CFP domain does not cause emission by the YFP domain when the domains are separated. When the CFP and YFP domains are brought close together, however, fluorescence resonance energy transfer (FRET)
+
+![](images/page_37_image_18.jpg)
+
+Figure Q9–2 Diagram of the human eye (Problem 9–4).
+
+![](images/page_37_image_20.jpg)
+
+![](images/page_37_chart_21.jpg)
+
+Figure Q9–4 Fluorescent biosensor designed to detect tyrosine phosphorylation (Problem 9–8). (A) Domain structure of the biosensor. Four domains are indicated: CFP, YFP, tyrosine kinase substrate peptide, and a phosphotyrosine-binding domain. (B) FRET assay. YFP/CFP is normalized to 1.0 at time zero. The biosensor was incubated in the presence (or absence) of Abl and ATP for the indicated times. Arrow indicates time of addition of a tyrosine phosphatase. (From A.Y. Ting et al., Proc. Natl. Acad. Sci. USA 98:15003–15008, 2001. With permission from National Academy of Sciences.)
+
+allows excitation of CFP to stimulate emission by YFP. FRET shows up experimentally as an increase in the ratio of emission at 526 nm (from YFP) versus 476 nm (from CFP) when CFP is excited by 434-nm light.
+
+Incubation of the biosensor protein with Abl protein tyrosine kinase in the presence of ATP gave an increase in the ratio of YFP/CFP emission (**Figure Q9–4B**). In the absence of ATP or the Abl protein, no FRET occurred. FRET was also eliminated by addition of a tyrosine phosphatase (Figure Q9–4B). Describe as best you can how this biosensor detects active Abl protein tyrosine kinase.
+
+9–9 Under ideal conditions, with the simplest of specimens (a monolayer of carbon atoms, for example) and careful image processing, the practical resolving power of modern electron microscopes is about 0.05 nm, some 25-fold above the theoretical limit of 0.002 nm. This is because only the very center of the electron lens can be used, and the effective numerical aperture (n sin θ) is limited by θ (half the angular width of rays collected at the objective lens). Assuming that the wavelength (λ) of the electrons is 0.004 nm and that the refractive index (n) is 1.0, calculate the value for θ, where resolution (0.05 nm) = 0.61 λ/n sin θ. How does this value of θ compare with that for a conventional light microscope (60°)?
+
+9–10 Aquaporin water channels in the plasma membrane play a major role in water metabolism and osmoregulation in many cells. To determine their structural organization in the membrane, you use immunogold electron microscopy. You prepare a membrane sample, incubate it with primary antibodies against aquaporin then with gold-tagged secondary antibodies that bind to the primary antibodies. You then examine it by electron microscopy (**Figure Q9–5**). Are the gold particles (black dots) consistently associated with any particular structure?
+
+![](images/page_38_image_7.jpg)
+
+Figure Q9–5 An astrocyte membrane labeled with primary antibodies against aquaporin and then with secondary antibodies to which colloidal gold particles have been attached (Problem 9-10). (From J.E. Rash et al., Proc. Natl. Acad. Sci. USA 95:11981–11986, 1998. With permission from National Academy of Sciences.)
+
+9–11 The technique of negative staining uses heavy metals such as uranium to provide contrast. If these heavy metals do not actually bind to defined biological structures (which they do not), how is it that they can help to make such structures visible?
+
+## REFERENCES
+
+## General
+
+Vale R, Stuurman N & Thorn K (2006–2021) Microscopy Series (https://www.ibiology.org/online-biology-courses/microscopy-series/) A major online video series starts with the basics of optical microscopy and concludes with some of the latest techniques, such as superresolution microscopy.
+
+## Looking at Cells and Molecules in the Light Microscope
+
+Agard DA, Hiraoka Y, Shaw P & Sedat JW (1989) Fluorescence microscopy in three dimensions. In Fluorescence Microscopy of Living Cells in Culture, part B (Taylor DL & Wang Y-L, eds.). Methods in Cell Biology, Vol. 30. San Diego: Academic Press.
+
+Boulina M, Samarajeewa H, Baker JD . . . Chiba A (2013) Live imaging of multicolor-labeled cells in Drosophila. Development 140, 1605–1613.
+
+Burnette DT, Sengupta P, Dai Y . . . Kachar B (2011) Bleaching/blinking assisted localization microscopy for superresolution imaging using standard fluorescent molecules. Proc. Natl. Acad. Sci. USA 108, 21081–21086.
+
+Chalfie M, Tu Y, Euskirchen G . . . Prasher DC (1994) Green fluorescent protein as a marker for gene expression. Science 263, 802–805.
+
+Chen F, Tillberg PW & Boyden ES (2015) Expansion microscopy. Science 347, 543–548.
+
+Giepmans BN, Adams SR, Ellisman MH & Tsien RY (2006) The fluorescent toolbox for assessing protein location and function. Science 312, 217–224.
+
+Greenfield EA (ed.) (2014) Antibodies: A Laboratory Manual, 2nd ed. Cold Spring Harbor, NY: Cold Spring Harbor Laboratory Press.
+
+Greenwald EC, Mehta S & Zhang J (2018) Genetically encoded fluorescent biosensors illuminate the spatiotemporal regulation of signaling networks. Chem. Rev. 118, 11707–11794.
+
+Hell S (2009) Microscopy and its focal switch. Nat. Methods 6, 24–32.
+
+Huang B, Babcock H & Zhuang X (2010) Breaking the diffraction barrier: super-resolution imaging of cells. Cell 143, 1047–1058.
+
+Jacquemet G, Carisey AF, Hamidi H . . . Leterrier C (2020) The cell biologist’s guide to super-resolution microscopy. J. Cell Sci. 133, jcs240713.
+
+Jonkman J, Brown CM, Wright GD . . . North AJ (2020) Tutorial: guidance for quantitative confocal microscopy. Nat. Protoc. 15, 1585–1611.
+
+Klar TA, Jakobs S, Dyba M . . . Hell SW (2000) Fluorescence microscopy with diffraction resolution barrier broken by stimulated emission. Proc. Natl. Acad. Sci. USA 97, 8206–8210.
+
+Lippincott-Schwartz J & Patterson GH (2003) Development and use of fluorescent protein markers in living cells. Science 300, 87–91.
+
+Lippincott-Schwartz J, Altan-Bonnet N & Patterson G (2003) Photobleaching and photoactivation: following protein dynamics in living cells. Nat. Cell Biol. 5(suppl.), S7–S14.
+
+Liu T-L, Upadhyayula S, Milkie DE . . . Betzig E (2018) Observing the cell in its native state: imaging subcellular dynamics in multicellular organisms. Science 360, eaaq1392.
+
+Lu C-H, Tang W-C, Liu Y-T . . . Chen B-C (2019) Lightsheet localization microscopy enables fast, large-scale, and three-dimensional superresolution imaging. Commun. Biol. 2, 177.
+
+Minsky M (1988) Memoir on inventing the confocal scanning microscope. Scanning 10, 128–138.
+
+Parton RM & Read ND (1999) Calcium and pH imaging in living cells. In Light Microscopy in Biology: A Practical Approach, 2nd ed. (Lacey AJ, ed.). Oxford: Oxford University Press.
+
+Patterson G, Davidson M, Manley S & Lippincott-Schwartz J (2010) Superresolution imaging using single-molecule localization. Annu. Rev. Phys. Chem. 61, 345–367.
+
+Pawley BP (ed.) (2006) Handbook of Biological Confocal Microscopy, 3rd ed. New York: Springer Science.
+
+Rust MJ, Bates M & Zhuang X (2006) Sub-diffraction-limit imaging by stochastic optical reconstruction microscopy (STORM). Nat. Methods 3, 793–795.
+
+Sako Y & Yanagida T (2003) Single-molecule visualization in cell biology. Nat. Rev. Mol. Cell Biol. 4(suppl.), SS1–SS5.
+
+Schermelleh L, Heintzmann R & Leonhardt H (2010) A guide to superresolution fluorescence microscopy. J. Cell Biol. 190, 165–175.
+
+Shaner NC, Steinbach PA & Tsien RY (2005) A guide to choosing fluorescent proteins. Nat. Methods 2, 905–909.
+
+Sigal YM, Zhou R & Zhuang X (2018) Visualizing and discovering cellular structures with super-resolution microscopy. Science 361, 880–887.
+
+Sluder G & Wolf DE (2007) Digital Microscopy, 3rd ed. Methods in Cell Biology, Vol. 81. San Diego, CA: Academic Press.
+
+Tsien RY (2008) Constructing and exploiting the fluorescent protein paintbox (Nobel Lecture). Angew. Chem. Int. Ed. Engl. 48, 5612–5626.
+
+Wayne R (2014) Light and Video Microscopy. San Diego, CA: Academic Press.
+
+White JG, Amos WB & Fordham M (1987) An evaluation of confocal versus conventional imaging of biological structures by fluorescence light microscopy. J. Cell Biol. 105, 41–48.
+
+Zernike F (1955) How I discovered phase contrast. Science 121, 345–349.
+
+## Looking at Cells and Molecules in the Electron Microscope
+
+Allen TD & Goldberg MW (1993) High-resolution SEM in cell biology. Trends Cell Biol. 3, 205–208.
+
+Baumeister W (2002) Electron tomography: towards visualizing the molecular organization of the cytoplasm. Curr. Opin. Struct. Biol. 12, 679–684.
+
+Beck M & Baumeister W (2016) Cryo-electron tomography: can it reveal the molecular sociology of cells in atomic detail? Trends Cell Biol. 26, 825–837.
+
+Böttcher B, Wynne SA & Crowther RA (1997) Determination of the fold of the core protein of hepatitis B virus by electron cryomicroscopy. Nature 386, 88–91.
+
+Cheng Y, Grigorieff N, Penczek PA & Walz T (2015) A primer to singleparticle cryo-electron microscopy. Cell 161, 438–449.
+
+Dubochet J, Adrian M, Chang J-J . . . Schultz P (1988) Cryo-electron microscopy of vitrified specimens. Q. Rev. Biophys. 21, 129–228.
+
+Frank J (2003) Electron microscopy of functional ribosome complexes. Biopolymers 68, 223–233.
+
+Frank J (2018) Single-particle reconstruction of biological molecules— story in a sample (Nobel Lecture). Angew. Chem. Int. Ed. Engl. 57, 10826–10841.
+
+Hayat MA (2000) Principles and Techniques of Electron Microscopy, 4th ed. Cambridge: Cambridge University Press.
+
+Henderson R (2015) Overview and future of single particle electron cryomicroscopy. Arch. Biochem. Biophys. 581, 19–24.
+
+Henderson R (2018) From electron crystallography to single particle cryo-EM (Nobel Lecture). Angew. Chem. Int. Ed. Engl. 57, 10804–10825.
+
+Heuser J (1981) Quick-freeze, deep-etch preparation of samples for 3-D electron microscopy. Trends Biochem. Sci. 6, 64–68.
+
+Hoffman DP, Shtengel G, Shan Xu C . . . Hess HF (2020) Correlative three-dimensional super-resolution and block face electron microscopy of whole vitreously frozen cells. Science 367, eaaz5357.
+
+Kukulski W, Schorb M, Kaksonen M & Briggs JAG (2012) Plasma membrane reshaping during endocytosis is revealed by timeresolved electron tomography. Cell 150, 508–520.
+
+Lin DH, Stuwe T, Stillbach S, . . . Hoelz A (2016) Architecture of the symmetric core of the nuclear pore. Science 352, aaf1015.
+
+McDonald KL & Auer M (2006) High-pressure freezing, cellular tomography, and structural cell biology. Biotechniques 41, 137–139.
+
+McIntosh JR (2007) Cellular Electron Microscopy, 3rd ed. Methods in Cell Biology, Vol. 79. San Diego, CA: Academic Press.
+
+McIntosh R, Nicastro D & Mastronarde D (2005) New views of cells in 3D: an introduction to electron tomography. Trends Cell Biol. 15, 43–51.
+
+Nakane T, Kotecha A, Sente A . . . Scheres SHW (2020) Single-particle cryo-EM at atomic resolution. Nature 587, 152–156.
+
+Orlova EWV & Saibil HR (2011) Structural analysis of macromolecular assemblies by electron microscopy. Chem. Rev. 111, 7710–7748.
+
+Pease DC & Porter KR (1981) Electron microscopy and ultramicrotomy. J. Cell Biol. 91, 287s–292s.
+
+Unwin PNT & Henderson R (1975) Molecular structure determination by electron microscopy of unstained crystalline specimens. J. Mol. Biol. 94, 425–440.
+
+Yip KM, Fischer N, Paknia E . . . Stark H (2020) Atomic-resolution protein structure determination by cryo-EM. Nature 587, 157–164.
+
+Zhou ZH (2008) Towards atomic resolution structural determination by single particle cryo-electron microscopy. Curr. Opin. Struct. Biol. 18, 218–228.

@@ -1,0 +1,280 @@
+GENOME DIVERSIFICATION AND THE TREE OF LIFE
+
+13
+
+## Eukaryotes Make Up the Domain of Life That Is Most Familiar to Us
+
+The great variety of living creatures that we see around us are eukaryotes. The name is from the Greek, meaning “truly nucleated” (from the words eu, “well” or “truly,” and karyon, “kernel” or “nucleus”), reflecting the fact that the cells of these organisms have their DNA enclosed in a membrane-bound organelle called the nucleus. Visible by simple light microscopy, this feature was used in the early twentieth century to classify living organisms as either **eukaryotes** (those with a nucleus) or **prokaryotes** (those without a nucleus). We now know that prokaryotes comprise two of the three major domains of life, the bacteria and archaea. Eukaryotic cells are typically much larger than those of bacteria and archaea; in addition to a nucleus, they typically contain a variety of membrane-bound organelles that are also lacking in the prokaryotes. The genomes of eukaryotes also tend to run much larger—containing more than 20,000 genes for humans and corals, for example, compared with 4000–6000 genes for the typical bacteria or archaea.
+
+In addition to plants and animals, the eukaryotes include fungi (such as mushrooms or the yeasts used in beer- and bread-making), as well as an astonishing variety of single-celled, microscopic forms of life. Most of this book is focused on the cell biology of eukaryotic organisms (especially animals); in the final sections of this chapter, we shall return to eukaryotes and focus on the variety within this group.
+
+## On the Basis of Genome Analysis, Bacteria Are the Most Diverse Group of Organisms on the Planet
+
+When modern trees of life were constructed using genome information, one of the big surprises was how much more evolutionarily diverse the bacterial world is compared with the eukaryotes; we now know that this great diversity reflects the much earlier appearance of bacteria in the evolutionary history of the planet. Bacteria are usually very small (and invisible to the unaided eye), and they generally live as independent individuals or in loosely organized communities, rather than as multicellular organisms. They are typically spherical or rod-shaped and measure a few micrometers (μm) in linear dimension (**Figure 1–10**). They often have a tough protective coat, called a cell wall, beneath which a plasma membrane encloses a single cytoplasmic compartment—the cytoplasm—containing DNA, RNA, proteins, and the many small molecules needed for life (**Figure 1–11**). Although difficult to discern in the light microscope, the interior of a bacterium is nevertheless highly organized, a topic we discuss in Chapter 16.
+
+Commensurate with the diversity of their genomes, bacteria live in an enormous variety of ecological niches, and they are astonishingly varied in their
+
+![](images/page_12_image_8.jpg)
+
+spherical cells, e.g., Streptococcus
+
+rod-shaped cells, e.g., Escherichia coli, Salmonella
+
+the smallest cells, e.g., Mycoplasma, Spiroplasma
+
+spiral cells, e.g., Treponema pallidum
+
+Figure 1–10 Shapes and sizes of some bacteria. Although most are small, as shown, measuring a few micrometers in linear dimension, there are also some giant species. An extreme example is the cigar-shaped bacterium Epulopiscium fishelsoni, which lives in the gut of a surgeonfish and can be up to 600 μm long (not shown).
+
+---
+
+14
+
+Chapter 1: Cells, Genomes, and the Diversity of Life
+
+(A)
+
+![](images/page_13_image_3.jpg)
+
+Figure 1–11 Bacterial structure. (A) A drawing of the bacterium Vibrio cholerae, showing its simple internal organization. This species can infect the human small intestine to cause cholera; the severe diarrhea that accompanies this disease kills more than 100,000 people a year worldwide. Like many other bacteria, Vibrio has a helical appendage at one end—a flagellum—that rotates as a propeller to drive the cell forward. (B) An electron micrograph of a longitudinal section through the widely studied bacterium Escherichia coli (E. coli). E. coli is part of our normal intestinal microbiota, the complete collection of microbes in our gut. It has many flagella distributed over its surface, but they are not visible in this section. Both of the bacteria shown here are Gram negative, having both an outer and an inner (plasma) membrane. However, many bacterial species lack the outer membrane; these are classified as Gram positive. (B, courtesy of E. Kellenberger.)
+
+biochemical capabilities. There exist species that can utilize virtually any type of organic molecule as food, ranging from sugars and amino acids to hydrocarbons, including the simplest hydrocarbon, methane gas (CH<sub>4</sub>). Other species (**Figure 1–12**) harvest light energy in a variety of ways; some, like plants, carry out photosynthesis and generate oxygen as a by-product. Still others can feed on a plain diet of inorganic nutrients, getting their carbon fromMBoC7 m1.14a,e1.11/1.11 $\mathrm { C O _ { 2 } } ,$ and relying on a host of other chemicals that occur in the environment to fuel their energy needs— including $\mathrm { H _ { 2 } , F e ^ { 2 + } , H _ { 2 } S , }$ and elemental sulfur (**Figure 1–13**).
+
+A wide range of bacteria directly affect human health. The bubonic plague of the Middle Ages (estimated to have killed half the population of Europe) and the current tuberculosis pandemic (more than a million deaths a year) are each due to a specific species of bacteria. And thousands of different bacterial species reside in our gut and on our skin, where they are often beneficial to us. We shall discuss bacteria throughout the book, as it is the study of these relatively simple cells that led to much of our understanding of basic biological processes—including DNA replication, transcription, and translation. We focus again on bacteria in Chapter 24 when we examine the cell biology of infectious disease. Finally, genetic
+
+![](images/page_13_image_7.jpg)
+
+Figure 1–12 Photosynthetic bacteria. (A) A light micrograph of the bacterium Anabaena cylindrica. Its cells form long chains, in which most of the cells (labeled V) perform photosynthesis (and thereby capture CO<sub>2</sub> and incorporate C into organic compounds); others (labeled H) become specialized for fixing N from N<sub>2</sub>; and still others (labeled S) develop into spores, which can resist unfavorable conditions. (B) An electron micrograph of a related photosynthetic bacterium, Phormidium laminosum, which shows the intracellular membranes where photosynthesis occurs. As shown in these micrographs, some prokaryotes have intracellular membranes and form colonies that resemble simple multicellular organisms. (A, courtesy of David Adams; B, courtesy of D.P. Hill and C.J. Howe.)
+
+---
+
+GENOME DIVERSIFICATION AND THE TREE OF LIFE
+
+15
+
+engineering techniques allow bacteria to be put to use as small “factories” to produce human pharmaceuticals, biofuels, and other high-value chemical products, as we discuss in Chapter 8.
+
+## Archaea: The Most Mysterious Domain of Life
+
+Of the three domains of life, archaea remains the most poorly understood. Most of its members have been identified only by DNA sequencing of samples from the environment, and relatively few have been cultured and studied up close in the laboratory. Like bacteria, the archaea we know most about are small and lack the internal, membrane-bound organelles that distinguish the eukaryotes. But they differ from bacteria in many ways, including the chemistry of their cell walls, the kinds of lipids that make up their membrane, and the range of biochemical reactions that they can carry out. Another surprising conclusion came from genome comparisons: although archaea resemble bacteria in their outward appearances, their genomes are much more closely related to eukaryotes than to bacteria (see Figure 1–9). It has even been proposed that the tree of life should be considered to have only two principal domains, with the archaea and eukaryotes making up one domain and bacteria constituting the other. The close relationship of archaea and eukaryotes has also changed our views on how the earliest eukaryotic cell evolved, a topic addressed later in this chapter.
+
+![](images/page_14_image_5.jpg)
+
+Figure 1–13 The bacterium Beggiatoa. It lives in sulfurous environments (for example, see Figure 1–15) and gets its energy by oxidizing H<sub>2</sub>S; it can fix carbon even in the dark. Note the yellow deposits of sulfur inside the cells. (Courtesy of Ralph S. Wolfe.)
+
+At first it was thought that archaea occupied only extreme environments such as volcanoes, salt lakes, acid hot springs, and the stomachs of cattle, but they are now recognized to be present also in more congenial surroundings such as soils, seawater, and our skin. Commensurate with the wide variety of ecological niches in which they have been found, different species of archaea have highly diverse chemistries. They are believed to be the predominant life-form in soil and seawater, and they play major roles in recycling nitrogen and carbon, two of the most important elements for all cells.
+
+## Organisms Occupy Most of Our Planet
+
+To understand life on Earth, we need to understand more than its diversity; we also need to know where life is found on our planet and how various living species are distributed. Organisms inhabit nearly all of the planet, and we continue to discover new habitats. Amazingly, some bacteria and archaea even live miles down in Earth’s deep crust and in the deepest and most hostile parts of the oceans.
+
+How are the main groups of organisms distributed among different environments? DNA sequencing and other advanced technologies have been used recently to address this question. The total biomass on Earth is estimated to contain ∼550 gigatons (10<sup>15</sup> grams) of carbon, of which 450 gigatons of carbon (Gt C) is plants, 70 Gt C is bacteria, 7 Gt C is archaea, and 2 Gt C is animals (**Figure 1–14**). The plants are mainly terrestrial; the bacteria and archaea are mainly in the soil and Earth’s crust. Total terrestrial biomass is 100 times greater than that in the oceans, although most of the animal mass is found in the oceans. The human biomass is 10 times greater than that of all measurable wild animals together, and—while human biomass continues to increase—that of wild animals is falling, largely as a result of human activities.
+
+Although humans and other animals make up a small fraction of Earth’s biomass, their existence depends completely on other forms of life. In the next section, we shall see some of the ways that these different life-forms work together to capture and recycle energy from Earth’s inanimate features.
+
+## Cells Can Be Powered by a Wide Variety of Free-Energy Sources
+
+Organisms obtain the free energy needed for life in different ways. Some—such as animals, fungi, and the many different bacteria that live in the human gut— get it by feeding on other living things or the organic chemicals they produce; such organisms are called organotrophic (from the Greek word trophe, meaning
+
+![](images/page_14_chart_14.jpg)
+
+Figure 1–14 The distribution of living biomass on Earth. The total biomass on Earth expressed as gigatons of carbon (Gt C) is estimated to be ∼550 Gt C. In the graph shown, the area of each taxon represented is proportional to the taxon’s MBoC7 n1.103/1.14global biomass, so plants account for about 80% (450/550) of the total biomass, whereas animals account for 0.4% (2/550). These recent estimates are based on various advanced techniques, including DNA sequencing and remote sensing. (Adapted from Y.M. Bar-On et al., Proc. Natl. Acad. Sci. USA 115:6506–6511, 2018. With permission from the authors.)
+
+---
+
+16
+
+Chapter 1: Cells, Genomes, and the Diversity of Life
+
+“food”). Others derive their free energy directly from the nonliving world. These primary energy converters fall into two classes: those that harvest the energy of sunlight, and those that capture their energy from energy-rich systems of inorganic chemicals in the environment (chemical systems that are far from chemical equilibrium). Organisms of the former class are called phototrophic (feeding on sunlight); those of the latter are called lithotrophic (feeding on rock). The organotrophic organisms like ourselves could not exist without these primary energy converters, which are the most plentiful form of life.
+
+The phototrophic organisms include many types of bacteria, as well as algae and plants, on which we—and virtually all the living things that we ordinarily see around us—depend. Phototrophic organisms have changed the whole chemistry of our environment: as a prime example, the oxygen in Earth’s atmosphere is a by-product of their biosynthetic activities.
+
+Lithotrophic organisms are not such an obvious feature of our world, because they are microscopic and mostly live in habitats that humans do not frequent—deep in the ocean, buried in Earth’s crust, or in various other seemingly inhospitable environments. But they are a major part of the living world, and they are especially important in any consideration of the history of life on Earth.
+
+Some lithotrophs get energy from aerobic reactions, which use molecular oxygen from the environment; because atmospheric $\mathrm { O } _ { 2 }$ is ultimately the product of living phototrophic organisms, these aerobic lithotrophs are, in a sense, feeding on the products of past life. There are, however, many other lithotrophs that live anaerobically, in places where little or no molecular oxygen is present; these are circumstances similar to those that existed in the early days of life on Earth, before oxygen had accumulated.
+
+The most dramatic of the anaerobic sites are the hot hydrothermal vents on the floor of the Pacific and Atlantic Oceans. They are located where the ocean floor is spreading as new portions of Earth’s crust form by a gradual upwelling of material from Earth’s interior (**Figure 1–15**). Downward-percolating seawater is heated and driven back upward as a submarine geyser, carrying with it a current of chemicals from the hot rocks below. A typical cocktail might include $\begin{array} { r } { \mathrm { H } _ { 2 } S , } \end{array}$ $\mathrm { H _ { 2 } ,   C O ,   M n ^ { 2 + } ,   F e ^ { 2 + } ,   N i ^ { 2 + } ,   C H _ { 4 } ,   N H _ { 4 } ^ { + } }$ , and phosphorus-containing compounds.
+
+![](images/page_15_image_7.jpg)
+
+Figure 1–15 The geology of a hot hydrothermal vent in the ocean floor. As indicated, seawater percolates down toward the hot, molten, volcanic rock upwelling (basalt) from Earth’s interior and is heated and driven back upward, carrying a mixture of minerals leached from the hot rock. A temperature gradient is set up, from more than 350°C near the core of the vent, down to 2–3°C in the surrounding ocean. Minerals precipitate from the water as it cools, forming a chimney. Different classes of organisms, thriving at different temperatures, live in different neighborhoods of the chimney. A typical chimney might be a few meters tall, spewing out hot, mineral-rich water. The locations of lithotrophic bacteria and the invertebrate marine animals that depend on them are also shown (see Figure 1–16).
+
+---
+
+GENOME DIVERSIFICATION AND THE TREE OF LIFE
+
+17
+
+1 m
+
+![](images/page_16_image_3.jpg)
+
+multicellular animals, e.g., tube worms
+
+![](images/page_16_image_5.jpg)
+
+Figure 1–16 Organisms living at a depth of 2500 meters near a vent in the ocean floor. Close to the vent, at temperatures up to about 120°C, various lithotrophic species of bacteria and archaea live, directly fueled by geochemical energy. A little further away, where the temperature is lower, various invertebrate animals live by feeding on these microorganisms. Most remarkable are the giant (2-meter-long) tube worms, Riftia pachyptila, which are shown in the photograph. Rather than feed on the lithotrophic microbes, these worms live in symbiosis with them: specialized organs in the worms harbor huge numbers of symbiotic sulfur-oxidizing bacteria, which harness geochemical energy and supply nourishment to their hosts, which have no mouth, gut, or anus. The tube worms are thought to have evolved from more conventional animals and to have become secondarily adapted to life at hydrothermal vents. (Science History Images/Alamy Stock Photo.)
+
+A dense population of microorganisms lives in the neighborhood of the vent, thriving on this austere diet and harvesting free energy from reactions between the available chemicals. Various invertebrate marine animals—clams, mussels, and giant marine worms—in turn, live off the microbes at the vent, forming an entire ecosystem analogous to the world of plants and animals that we belong to,MBoC7 m1.12/1.16 but one powered by geochemical energy instead of light (**Figure 1–16**).
+
+## Some Cells Fix Nitrogen and Carbon Dioxide for Other Cells
+
+To make a living cell requires matter, as well as free energy. DNA, RNA, and protein are composed of just six elements: hydrogen, carbon, nitrogen, oxygen, sulfur, and phosphorus. These are all plentiful in the nonliving environment, in Earth’s rocks, water, and atmosphere. But they are not present in chemical forms that allow easy incorporation into biological molecules. Atmospheric $\mathrm{N}_{2}$ and $\mathrm { C O _ { 2 } } ,$ particular, are extremely unreactive. A large amount of free energy is required to drive the reactions that use these inorganic molecules to make the organic compounds needed for further biosynthesis; that is, $\operatorname { t o } \hbar x$ nitrogen and carbon dioxide, so as to make N and C available to living organisms. Many types of cells lack the biochemical machinery to achieve this fixation; they instead rely on other classes of cells to do the job for them. We animals depend on plants, directly or indirectly, for our supplies of carbon- and nitrogen-containing organic compounds. Plants in turn, although they can fix carbon dioxide from the atmosphere, lack the ability to fix atmospheric nitrogen; they depend in part on nitrogen-fixing bacteria to supply their need for nitrogen-containing organic compounds. Plants of the pea family, for example, harbor symbiotic nitrogen-fixing bacteria in nodules in their roots.
+
+Because living cells can differ widely in some of the most basic aspects of their biochemistry, cells with complementary needs and capabilities have frequently developed close associations. Some of these symbiotic associations, as we will see later, have evolved to the point where the partners have lost their separate identities altogether: they have joined forces to form a single composite cell—an endosymbiotic association, as opposed to an ectosymbiotic one between separate organisms.
+
+---
+
+18
+
+Chapter 1: Cells, Genomes, and the Diversity of Life
+
+Genomes Diversify Over Evolutionary Time, Producing New Types of Organisms
+
+Having discussed our current views on the diversity of life-forms, how they are distributed across Earth, and how they depend on one another, we now turn to the question of how this great diversity was generated. All life depends on the storage of genetic information in the form of each organism’s DNA genome, so our focus is on how genomes change over evolutionary time.
+
+In storing and copying genetic information, random accidents and errors occur, altering the nucleotide sequence; that is, creating **mutations**. Therefore, when a cell divides, the genomes of its two daughters are often not quite identical to each other or to that of the parent cell. On rare occasions, the error may represent a change for the better; more probably, it will cause no significant difference in the cell’s prospects. But in some cases, the error will cause serious damage; for example, by disrupting the coding sequence for a key protein or RNA molecule. Changes due to mistakes of the first type will tend to be perpetuated, because the altered cell has an increased likelihood of surviving and reproducing itself. Changes due to mistakes of the second type—neutral changes—may be perpetuated or not: in the competition for limited resources, it is a matter of chance whether the altered cell or its cousins will succeed. But changes that cause serious damage lead nowhere: the cell that suffers them dies, leaving no progeny. Through endless repetition of this cycle of error and trial—of mutation and natural selection—organisms evolve: their genetic specifications change, sometimes giving organisms new ways to exploit the environment more effectively, to survive in competition with others, and to reproduce successfully.
+
+Some parts of the genome will change more readily than others in the course of evolution. A segment of DNA that does not code for protein or RNA and has no significant regulatory role is free to change at a rate limited only by the frequency of random errors. In contrast, a gene that codes for a highly optimized, essential protein or RNA molecule cannot alter so easily: when mistakes occur, the faulty cells are almost always disabled and eliminated. Genes of this latter sort are therefore highly conserved. Through 3.5 billion years or more of evolutionary history, many DNA sequences have changed beyond all recognition, but the most highly conserved genes remain perfectly recognizable in all living species.
+
+These latter genes are the ones we must examine if we wish to trace family relationships between the most distantly related organisms in the tree of life. We discussed an example of one such gene—that for ribosomal RNA—when we introduced the classification of the living world into the three domains of eukaryotes, bacteria, and archaea. Because the production of proteins is fundamental to all living cells, this component of the ribosome has been highly conserved since early in the history of life on Earth (**Figure 1–17**).
+
+The ribosomal RNA genes are exceptional in being so well conserved, whereas most parts of genomes have diversified much more dramatically over evolutionary time. A complete DNA sequence for an organism—its genome sequence—reveals all the genes that an organism possesses, as well as those it lacks. When we
+
+GTTCCGGGGGGAGTATGGTTGCAAAGCTGAAACTTAAAGGAATTGACGGAAGGGCACCACCAGGAGTGGAGCCTGCGGCTTAATTTGACTCAACACGGGAAACCTCACCC 11 GCCGCCTGGGGAGTACGGTCGCAAGACTGAAACTTAAAGGAATTGGCGGGGGAGCACTACAACGGGTGGAGCCTGCGGTTTAATTGGATTCAACGCCGGGCATCTTACCA 11 1 ACCGCCTGGGGAGTACGGCCGCAAGGTTAAAACTCAAATGAATTGACGGGGGCCCGC ACAAGCGGTGGAGCATGTGGTTTAATTCGATGCAACGCGAAGAACCTTACCT Illlll Illl Illll GTTCCGGGGGGAGTATGGTTGCAAAGCTGAAACTTAAAGGAATTGACGGAAGGGCACCACCAGGAGTGGAGCCTGCGGCTTAATTTGACTCAACACGGGAAACCTCACCC
+
+Figure 1–17 Genetic information conserved since the days of the last universal common ancestor of all living things. A part of the gene that codes for the smaller of the two main ribosomal RNA (rRNA) molecules in the ribosome is shown. (The complete molecule is about 1500–1900 nucleotides long, depending on the species.) Corresponding segments of nucleotide sequences from an archaeon (Methanococcus jannaschii), a bacterium (Escherichia coli), and a eukaryote (Homo sapiens) are aligned. The red vertical lines indicate sites where the nucleotides are identical between the species; the human sequence is repeated at the bottom of the alignment so that all three two-way comparisons can be seen. The black dot halfway along the E. coli sequence denotes a site where a nucleotide has been either deleted from the bacterial lineage in the course of evolution or inserted in the other two lineages. Note that the sequences from these three organisms, representative of the three domains of the living world, still retain unmistakable similarities.
+
+human
+Methanococcus
+E. coli
+human
+
+---
+
+GENOME DIVERSIFICATION AND THE TREE OF LIFE
+
+19
+
+compare the three domains of the living world, we can begin to see which genes are common to all of them—and must therefore have been present in the last universal common ancestral cell that was the founder of all present-day living things. We can also identify those genes that are peculiar to a single branch in the tree of life. To explain such findings, we need to consider how new genes arise and, more generally, how genomes evolve.
+
+## New Genes Are Generated from Preexisting Genes
+
+The raw material of evolution is the DNA sequence that already exists: there is no natural mechanism for making long stretches of new, random, DNA sequence. In this sense, no gene is ever entirely new. Innovation can, however, occur in several ways (**Figure 1–18**):
+
+1. Intragenic mutation: an existing gene can be randomly modified by changes in its DNA sequence, through various types of errors that occur in the process of DNA replication and DNA repair.
+
+2. Gene duplication: an existing gene can be accidentally duplicated, creating a pair of initially identical genes within a single cell; these two genes may then diverge in the course of evolution.
+
+3. DNA segment shuffling: two or more existing genes can break and rejoin to make a hybrid gene consisting of DNA segments that originally belonged to separate genes.
+
+4. Horizontal (intercellular) DNA transfer: a piece of DNA can be transferred from the genome of one cell to that of another—including between species. This process contrasts with the usual vertical transfer of genetic information from parent to progeny.
+
+![](images/page_18_image_9.jpg)
+
+Figure 1–18 Four modes of genetic innovation and their effects on the DNA sequence of an organism. A special form of horizontal transfer occurs when cells of two different species enter into a permanent symbiotic association; genes from one of the cells may subsequently be transferred to the genome of the other, as we will see later when we discuss the likely evolutionary origins of mitochondria and chloroplasts.
+
+---
+
+20
+
+Chapter 1: Cells, Genomes, and the Diversity of Life
+
+![](images/page_19_chart_2.jpg)
+
+Figure 1–19 Families of evolutionarily related genes in the genome of Bacillus subtilis. The largest gene family in this bacterium consists of 77 genes coding for varieties of a class of membrane transport proteins called ABC transporters, which are found in all three domains of the living world. (Adapted from F. Kunst et al., Nature 390:249–256, 1997.)
+
+Each of these types of change leaves a characteristic trace in the DNA sequence of the organism, and there is clear evidence that all four processes have occurred frequently during evolution. In Chapters 4 and 5, we discuss the mechanisms underlying these changes, but for the present we focus on the consequences.
+
+## Gene Duplications Give Rise to Families of Related Genes Within a Single Genome
+
+A cell duplicates its entire genome each time it divides into two daughter cells. However, accidents occasionally result in the inappropriate duplication of just part of the genome, with retention of both the original and duplicate segments in a single cell. Once a gene has been duplicated in this way (see mode 2 in Figure 1–18), the two gene copies can acquire mutations and become specialized to perform different functions within the same cell and its descendants. Repeated rounds of this process of gene duplication and divergence, over many millions of years, have enabled one gene to give rise to a family of related genes within a single genome. Analysis of the DNA sequence of prokaryotic genomes reveals many examples of such **gene families**: in the bacterium Bacillus subtilis, for example, 47% of the genes have one or more obvious relatives (**Figure 1–19**).
+
+The above evolutionary process must be distinguished from the genetic divergence that occurs when one species of organism splits into two separate lines of descent at a branch point in the family tree—when the human line separated from that of chimpanzees, for example. In the latter case, the genes gradually become different in the course of evolution, but they are likely to continue to have corresponding functions in the two sister species. Genes that are related by descent in this way—that is, genes in two separate species that derive from the same ancestral gene in the last common ancestor of those two species—are called **orthologs**. Related genes that have resulted from a gene duplication event within a single genome—and are likely to have diverged in their function—are called **paralogs**. Genes that are related by descent in either way are called **homologs**, a general term used to cover both types of relationship (**Figure 1–20**).
+
+## The Function of a Gene Can Often Be Deduced from Its Nucleotide Sequence
+
+Family relationships among genes are important not just for their evolutionary interest, but also because they simplify the task of deciphering gene functions. Once the nucleotide sequence of a newly discovered gene has been determined, a scientist can tap a few keys on a computer to search large databases of known gene sequences for gene relatives. In many cases, the function of one or more of these homologs will have been already determined experimentally— generally in one of the model organisms described later in this chapter. Because gene sequence determines gene function, one can frequently make a good guess at the new gene’s function, as it is likely to be similar to that of the already
+
+---
+
+GENOME DIVERSIFICATION AND THE TREE OF LIFE
+
+21
+
+![](images/page_20_image_2.jpg)
+
+Figure 1–20 Two types of gene homology based on different evolutionary pathways. (A) Orthologs. (B) Paralogs. Genes related by either mechanism are called homologs.
+
+known homologs. In this way, it is possible to decipher a great deal about the biology of an organism simply by analyzing the DNA sequence of its genome.
+
+## More Than 200 Gene Families Are Common to All Three Domains of Life
+
+Given the complete genome sequences of representative organisms from all three domains of life—eukaryotes, bacteria, and archaea—we can search systematically for homologies that span this enormous evolutionary divide. In this way, we can begin to take stock of the common inheritance of all living things. There are considerable difficulties in this enterprise. For example, individual species have often lost some of the ancestral genes, and other genes have almost certainly been acquired by horizontal transfer from another species and therefore are not truly ancestral. In fact, genome comparisons strongly suggest that both lineage-specific gene loss and horizontal gene transfer, in some cases between evolutionarily distant species, have been major factors in evolution, at least among bacteria and archaea. As an additional difficulty, in the course of 2 or 3 billion years, some genes that were initially shared will have changed beyond recognition through mutation.
+
+Because of all these vagaries of the evolutionary process, it is difficult, if not impossible, to determine the ancestral gene set that diversified into the present-day variety of life. A crude approximation can be obtained by tallying the gene families that have representatives in multiple—but not necessarily all— species from the three major domains of life. One such analysis revealed 264 ancient conserved families, each of which could be assigned a function on the basis of the best-characterized family member. As shown in **Table 1–1**, the largest number of shared gene families were involved in translation and in amino acid metabolism and transport. However, it must be emphasized that this set of highly conserved gene families represents only a very rough sketch of the common inheritance of all modern life.
+
+## Summary
+
+For most of human history, the living world around us was classified by what we could see. Genome sequencing has radically changed our view of life on the planet, and we now realize that living things fall into three broad domains: bacteria, archaea, and eukaryotes. The organisms in the first two domains are largely invisible to our naked eye, and many of them cannot yet be grown in a laboratory— being known only by their DNA sequences. But they make up the vast majority of life’s evolutionary diversity, including species that can obtain all their energy and nutrients from inorganic chemical sources—such as the reactive mixtures of minerals released at hydrothermal vents on the ocean floor—the sort of diet that may
+
+---
+
+22
+
+Chapter 1: Cells, Genomes, and the Diversity of Life
+
+<table><tbody><tr><td colspan="4">TABLE 1-1 The Number of Gene Families, Classified by Function, Common to All Three Domains of the Living World</td></tr><tr><td colspan="2">Information processing</td><td colspan="2">Metabolism</td></tr><tr><td>Translation</td><td>63</td><td>Energy production and conversion</td><td>19</td></tr><tr><td>Transcription</td><td>7</td><td>Carbohydrate transport and metabolism</td><td>16</td></tr><tr><td>DNA replication, recombination, and repair</td><td>13</td><td>Amino acid transport and metabolism</td><td>43</td></tr><tr><td colspan="2">Cellular processes and signaling</td><td>Nucleotide transport and metabolism</td><td>15</td></tr><tr><td>Cell-cycle control, mitosis, and meiosis</td><td>2</td><td>Coenzyme transport and metabolism</td><td>22</td></tr><tr><td>Defense mechanisms</td><td>3</td><td>Lipid transport and metabolism</td><td>9</td></tr><tr><td>Signal-transduction mechanisms</td><td>1</td><td>Inorganic ion transport and metabolism</td><td>8</td></tr><tr><td>Cell wall/membrane biogenesis</td><td>2</td><td>Secondary metabolite biosynthesis, transport, and catabolism</td><td>5</td></tr><tr><td>Intracellular trafficking and secretion</td><td>4</td><td colspan="2">Poorly characterized</td></tr><tr><td>Post-translational modification, protein turnover, chaperones</td><td>8</td><td>General biochemical function predicted; specific biological role unknown</td><td>24</td></tr><tr><td colspan="4">For the purpose of this analysis, gene families are defined as "universal" if they are represented in the genomes of at least two diverse archaea (Archaeoglobus fulgidus and Aeropyrum pernix), two evolutionarily distant bacteria (Escherichia coli and Bacillus subtilis), and one eukaryote (yeast, Saccharomyces cerevisiae). (Data from R.L. Tatusov et al., Science 278:631-637, 1997; R.L. Tatusov et al., BMC Bioinformatics 4:41, 2003; and the COGs database at the US National Library of Medicine.)</td></tr></tbody></table>
+
+have nourished the first living cells more than 3.5 billion years ago. The eukaryotes (whose cells are larger and contain a variety of membrane-bound organelles) evolved later in evolutionary history and are consequently less diverse as a group than either the bacteria or archaea. Eukaryotes, which include all plants and animals, are the organisms most familiar to us, and they are the main focus of this textbook.
+
+Many of the genes within a single organism or species show strong family resemblances in their DNA sequences, implying that they originated from the same ancestral gene through gene duplication and divergence. Family resemblances (homologies) are also clear when gene sequences are compared between different species, and more than 200 gene families have been so highly conserved that they can be recognized as common to most species from all three domains of the living world, suggesting they were present in the ancestral cell from which all life evolved. Given the DNA sequence of a newly discovered gene in any organism, it is therefore often possible to deduce the gene’s function from the known function of a homologous gene in a better-studied organism.
+
+## EUKARYOTES AND THE ORIGIN OF THE EUKARYOTIC CELL
+
+Eukaryotic cells, in general, are bigger and more elaborate than bacterial and archaeal cells, and their genomes are bigger and more elaborate, too. The greater cell size is accompanied by radical differences in cell structure and function: in particular, eukaryotes contain a diverse set of intracellular **organelles**—discrete membrane-enclosed subcompartments and large membraneless macromolecular assemblies—each with a distinct composition and function. Some eukaryotic cells live independent lives as single-cell organisms. Others live in multicellular assemblies—indeed, all of the more complex multicellular organisms on Earth, including plants, animals, and fungi, are formed from eukaryotic cells.
+
+We begin by discussing how eukaryotic cells are organized and how they might have evolved from more ancient prokaryotes. We then briefly consider how eukaryotic genomes differ from those of prokaryotes, as well as how the cells in
+
+---
+
+EUKARYOTES AND THE ORIGIN OF THE EUKARYOTIC CELL
+
+23
+
+multicellular organisms become differently specialized as an embryo develops, so as to contribute to the welfare of the organism as a whole.
+
+## Eukaryotic Cells Contain a Variety of Organelles
+
+By definition, eukaryotic cells keep almost all their DNA in a membrane-enclosed internal compartment—the nucleus, which is usually the most conspicuous organelle (**Figure 1–21**). The long DNA polymers in the nucleus are packaged with proteins to form chromosomes, which only become visible in a light microscope when they condense in preparation for cell division. The nuclear envelope, a double layer of membrane, surrounds the nucleus and separates the nuclear DNA from the cytoplasm, which, in a eukaryotic cell, includes everything between the plasma membrane and the nucleus. As shown in the figure, the nuclear envelope is perforated by nuclear pores, which are channels formed by protein complexes that mediate the two-way traffic of large molecules between the nucleus and the cytoplasm.
+
+Eukaryotic cells have many other features that set them apart from bacterial and archaeal cells. They are typically 10–30 times bigger in linear dimension and 1000–10,000 times larger in volume than a typical prokaryotic cell. They have an elaborate cytoskeleton in the cytoplasm, consisting of several types of protein filaments (see Figure 1–21) that, together with the many proteins that attach to them, form a network of girders, ropes, and motors that gives the cell mechanical strength and performs various other functions: when the cell divides, for example, the cytoskeleton reorganizes and pulls the replicated chromosomes apart and distributes them equally to the two daughter cells. In the case of animal cells and some free-living, single-cell eukaryotes, the cytoskeleton controls cell shape
+
+![](images/page_22_image_6.jpg)
+
+Figure 1–21 The major features of eukaryotic cells. The drawing depicts the major contents of a typical animal cell seen in cross section, but almost all the same components are found in plant cells and fungi, as well as in single-cell eukaryotes. The cytoskeleton (discussed in Chapter 16) consists of three types of protein filaments: actin filaments (red), microtubules (green), and intermediate filaments (blue). Plant cells (not shown) contain chloroplasts in addition to the components shown here; they also have a rigid external cell wall that contains cellulose surrounding their plasma membrane, which means they are largely MBoC7 m1.25/1.21immobile. The interior of cells is, in reality, much more crowded than depicted in this simplified diagram.
+
+---
+
+24
+
+Chapter 1: Cells, Genomes, and the Diversity of Life
+
+![](images/page_23_image_2.jpg)
+
+Figure 1–22 Phagocytosis. An electron micrograph of a mammalian phagocytic white blood cell (a neutrophil) ingesting a bacterium that is in the process of dividing. Only the part of the cell that is extending surface protrusions to engulf the bacterium is shown. (Courtesy of Dorothy Bainton.)
+
+and drives and guides cell movements (**Movie 1.1**). Lacking the kind of tough cell wall characteristic of bacteria and archaea, these eukaryotic cells can change their shape rapidly, in some cases enabling them to move and engulf other cells and small objects by a process called phagocytosis (**Figure 1–22**).
+
+There are many other membrane-enclosed organelles in eukaryotic cells. Unlike the nucleus, most of them are enclosed by single membranes. The mostMBoC7 e15.32/1.22 extensive organelle is the endoplasmic reticulum (ER), which is where most cell membrane components are made, along with materials destined for secretion to the outside of the cell. The Golgi apparatus receives these molecules from the ER and modifies and packages them for secretion or transport to another cell compartment. Lysosomes are small irregularly shaped organelles in which intracellular digestion occurs. Peroxisomes are small vesicles where hydrogen peroxide is used to inactivate toxic molecules.
+
+A continual exchange of materials occurs between these single-membraneenclosed organelles, mediated mainly by small transport vesicles that pinch off from the membrane of one organelle and fuse with that of another. To connect the eukaryotic cell with its surroundings, a similar vesicle-mediated exchange goes on continually at the cell surface. Here, portions of the plasma membrane pinch in to form intracellular vesicles that carry material captured from the external medium into the cell—a process called endocytosis; and in the reverse process, called exocytosis, vesicles from inside the cell fuse with the plasma membrane and release their contents to the exterior (**Figure 1–23**).
+
+Besides the nucleus, there are two other eukaryotic cell organelles that are enclosed in double membranes—mitochondria and, in plant cells and algae, chloroplasts. Mitochondria take up oxygen and harness energy from the oxidation of food molecules, such as sugars and fats, to produce most of the ATP (adenosine triphosphate) that powers the cell’s activities. Chloroplasts perform photosynthesis in plant cells and algae, using the energy of sunlight to synthesize carbohydrates from atmospheric $\mathrm { C O _ { 2 } }$ and water, delivering these energy-rich products to the host cell as food. In many eukaryotic cells, roughly half of the cytoplasm is occupied by membrane-enclosed organelles. The surrounding fluid is called the cytosol. It contains ribosomes, which translate RNAs into proteins, and it is also where most of the cell’s other metabolic reactions take place.
+
+In addition to the membrane-enclosed organelles just described, eukaryotic cells contain a variety of smaller organelles that lack membranes. Instead,
+
+![](images/page_23_image_9.jpg)
+
+Figure 1–23 Endocytosis and exocytosis across the plasma membrane. Eukaryotic cells import extracellular materials by endocytosis and secrete intracellular. / . materials by exocytosis. The endocytosed material is first delivered to singlemembrane-enclosed organelles called endosomes, discussed in Chapter 12.

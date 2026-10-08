@@ -1,0 +1,15 @@
+W. W. Norton & Company has been independent since its founding in 1923, when William Warder Norton and Mary D. Herter Norton first published lectures delivered at the People’s Institute, the adult education division of New York City’s Cooper Union. The firm soon expanded its program beyond the Institute, publishing books by celebrated academics from America and abroad. By midcentury, the two major pillars of Norton’s publishing program—trade books and college texts—were firmly established. In the 1950s, the Norton family transferred control of the company to its employees, and today—with a staff of five hundred and hundreds of trade, college, and professional titles published each year—W. W. Norton & Company stands as the largest and oldest publishing house owned wholly by its employees.
+
+Copyright © 2022 by Bruce Alberts, Rebecca Heald, Alexander Johnson, David Morgan, Martin Raff, Keith Roberts, Peter Walter, the Estate of Julian Lewis, John Wilson, and Tim Hunt
+
+All rights reserved Printed in Canada
+
+Editor: Betsy Twitchell Editorial Advisor: Denise Schanck Senior Associate Managing Editor, College: Carla L. Talmadge Assistant Editor: Danny Vargo Director of College Production: Jane Searle Copyeditor: Christopher Curioli Proofreaders: Julie Henderson, Susan McColl Managing Editor, College: Marian Johnson Media Editor: Todd Pearson Smartwork Editor: Christopher Rapp Media Project Editor: Jesse Newkirk Associate Media Editor: Jasmine N. Ribeaux Media Assistant Editor: Lindsey Heale Ebook Production Manager: Kate Barnes Managing Editor, College Digital Media: Kim Yi Marketing Manager, Biology: Ruth Bolster Director of College Permissions: Megan Schindel Photo Editor: Thomas Persano Permissions Associate: Patricia Wong Design: Juan Paolo Francisco Illustrator: Nigel Orme Composition: Graphic World, Inc. Manufacturing: Transcontinental—Beauceville
+
+Permission to use copyrighted material is included alongside the appropriate content.
+
+## Library of Congress Cataloging-in-Publication Data
+
+Names: Alberts, Bruce, author. Title: Molecular biology of the cell / Bruce Alberts, Rebecca Heald, Alexander Johnson, David Morgan, Martin Raff, Keith Roberts, Peter Walter. Description: Seventh edition. | New York : W. W. Norton & Company, [2022] | Includes bibliographical references and index. Identifiers: LCCN 2021049376 | **ISBN 9780393884821 (hardcover)** | ISBN 9780393884630 (epub) Subjects: MESH: Cells | Molecular Biology Classification: LCC QH581.2 | NLM QU 300 | DDC 572.8—dc23/eng/20211015 LC record available at https://lccn.loc.gov/2021049376
+
+W. W. Norton & Company, Inc., 500 Fifth Avenue, New York, NY 10110 wwnorton.com W. W. Norton & Company Ltd., 15 Carlisle Street, London W1D 3BS

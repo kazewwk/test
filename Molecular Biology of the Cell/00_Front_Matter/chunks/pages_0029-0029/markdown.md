@@ -1,0 +1,97 @@
+- Coupling Nucleotide Excision Repair to Transcription Ensures That the Cell's Most Important DNA Is Efficiently Repaired 290
+- The Chemistry of the DNA Bases Facilitates Damage Detection 290
+- Special Translesion DNA Polymerases Are Used in Emergencies 292
+- Double-Strand Breaks Are Efficiently Repaired 292
+- DNA Damage Delays Progression of the Cell Cycle 295
+- Summary 295
+- HOMOLOGOUS RECOMBINATION 296
+- Homologous Recombination Has Common Features in All Cells 296
+- DNA Base-pairing Guides Homologous Recombination 296
+- Homologous Recombination Can Flawlessly Repair Double-Strand Breaks in DNA 297
+- Specialized Processing of Double-Strand Breaks Commits Repair to Homologous Recombination 298
+- Strand Exchange Is Directed by the RecA/Rad51 Protein 298
+- Homologous Recombination Can Rescue Broken and Stalled DNA Replication Forks 299
+- DNA Repair by Homologous Recombination Entails Risks to the Cell 300
+- Homologous Recombination Is Crucial for Meiosis 301
+- Meiotic Recombination Begins with a Programmed Double-Strand Break 302
+- Holliday Junctions Are Recognized by Enzymes That Drive Branch Migration 302
+- Homologous Recombination Produces Crossovers Between Maternal and Paternal Chromosomes During Meiosis 304
+- Homologous Recombination Often Results in Gene Conversion 305
+- Summary 306
+- TRANSPOSITION AND CONSERVATIVE SITE-SPECIFIC RECOMBINATION 306
+- Through Transposition, Mobile Genetic Elements Can Insert into Any DNA Sequence 307
+- DNA-only Transposons Can Move by a Cut-and-Paste Mechanism 307
+- Some DNA-only Transposons Move by Replicating Themselves 309
+- Some Viruses Use a Transposition Mechanism to Move Themselves into Host-Cell Chromosomes 309
+- Some RNA Viruses Replicate and Express Their Genomes Without Using DNA as an Intermediate 311
+- Retroviral-like Retrotransposons Resemble Retroviruses, but Cannot Move from Cell to Cell 313
+- A Large Fraction of the Human Genome Is Composed of Nonretroviral Retrotransposons 313
+- Different Transposable Elements Predominate in Different Organisms 314
+- Genome Sequences Reveal the Approximate Times at Which Transposable Elements Have Moved 314
+- Conservative Site-specific Recombination Can Reversibly Rearrange DNA 315
+- Conservative Site-specific Recombination Can Be Used to Turn Genes On or Off 316
+- Bacterial Conservative Site-specific Recombinases Have Become Powerful Tools for Cell and Developmental Biologists 317
+- Summary 317
+- Problems 318
+- References 320
+
+## Chapter 6 How Cells Read the Genome: From DNA to Protein 321
+
+- FROM DNA TO RNA 323
+- RNA Molecules Are Single-Stranded 324
+- Transcription Produces RNA Complementary to One Strand of DNA 325
+- RNA Polymerases Carry Out DNA Transcription 325
+- Cells Produce Different Categories of RNA Molecules 327
+- Signals Encoded in DNA Tell RNA Polymerase Where to Start and Stop 328
+- Bacterial Transcription Start and Stop Signals Are Heterogeneous in Nucleotide Sequence 329
+- Transcription Initiation in Eukaryotes Requires Many Proteins 331
+- To Initiate Transcription, RNA Polymerase II Requires a Set of General Transcription Factors 332
+
+- In Eukaryotes, Transcription Initiation Also Requires Activator, Mediator, and Chromatin-modifying Proteins 334
+- Transcription Elongation in Eukaryotes Requires Accessory Proteins 335
+- Transcription Creates Superhelical Tension 335
+- Transcription Elongation in Eukaryotes Is Tightly Coupled to RNA Processing 337
+- RNA Capping Is the First Modification of Eukaryotic Pre-mRNAs 338
+- RNA Splicing Removes Intron Sequences from Newly Transcribed Pre-mRNAs 339
+- Nucleotide Sequences Signal Where Splicing Occurs 341
+- RNA Splicing Is Performed by the Spliceosome 341
+- The Spliceosome Uses ATP Hydrolysis to Produce a Complex Series of RNA-RNA Rearrangements 343
+- Other Properties of Pre-mRNA and Its Synthesis Help to Explain the Choice of Proper Splice Sites 345
+- RNA Splicing Has Remarkable Plasticity 346
+- Spliceosome-catalyzed RNA Splicing Evolved from RNA Self-splicing Mechanisms 347
+- RNA-processing Enzymes Generate the 3' End of Eukaryotic mRNAs 348
+- Mature Eukaryotic mRNAs Are Selectively Exported from the Nucleus 349
+- Noncoding RNAs Are Also Synthesized and Processed in the Nucleus 351
+- The Nucleolus Is a Ribosome-producing Factory 353
+- The Nucleus Contains a Variety of Subnuclear Biomolecular Condensates 355
+- Summary 357
+- FROM RNA TO PROTEIN 358
+- An mRNA Sequence Is Decoded in Sets of Three Nucleotides 358
+- tRNA Molecules Match Amino Acids to Codons in mRNA 359
+- tRNAs Are Covalently Modified Before They Exit from the Nucleus 361
+- Specific Enzymes Couple Each Amino Acid to Its Appropriate tRNA Molecule 361
+- Editing by tRNA Synthetases Ensures Accuracy 363
+- Amino Acids Are Added to the C-terminal End of a Growing Polypeptide Chain 364
+- The RNA Message Is Decoded in Ribosomes 365
+- Elongation Factors Drive Translation Forward and Improve Its Accuracy 368
+- Induced Fit and Kinetic Proofreading Help Biological Processes Overcome the Inherent Limitations of Complementary Base-Pairing 369
+- Accuracy in Translation Requires a Large Expenditure of Free Energy 370
+- The Ribosome Is a Ribozyme 371
+- Nucleotide Sequences in mRNA Signal Where to Start Protein Synthesis 373
+- Stop Codons Mark the End of Translation 374
+- Proteins Are Made on Polyribosomes 375
+- There Are Minor Variations in the Standard Genetic Code 375
+- Inhibitors of Prokaryotic Protein Synthesis Are Useful as Antibiotics 376
+- Quality-Control Mechanisms Act to Prevent Translation of Damaged mRNAs 378
+- Stalled Ribosomes Can Be Rescued 379
+- The Ribosome Coordinates the Folding, Enzymatic Modification, and Assembly of Newly Synthesized Proteins 380
+- Molecular Chaperones Help Guide the Folding of Most Proteins 380
+- Proper Folding of Newly Synthesized Proteins Is Also Aided by Translation Speed and Subunit Assembly 383
+- Proteins That Ultimately Fail to Fold Correctly Are Marked for Destruction by Polyubiquitin 384
+- The Proteasome Is a Compartmentalized Protease with Sequestered Active Sites 384
+- Many Proteins Are Controlled by Regulated Destruction 386
+- There Are Many Steps from DNA to Protein 387
+- Summary 388
+- THE RNA WORLD AND THE ORIGINS OF LIFE 389
+- Single-Strand RNA Molecules Can Fold into Highly Elaborate Structures 390
+- Ribozymes Can Be Produced in the Laboratory 390

@@ -1,0 +1,279 @@
+phosphotyrosine-docking site for members of the Src family of cytoplasmic tyrosine kinases. In addition to phosphorylating other proteins at the adhesion sites, these kinases then phosphorylate FAK on additional tyrosines, creating docking sites for a variety of additional intracellular signaling proteins. In this way, outside-in signaling from integrins, via FAK and Src family kinases, is relayed into the cell in much the same way as receptor tyrosine kinases generate signals (as discussed in Chapter 15).
+
+## Cell–Matrix Adhesions Respond to Mechanical Forces
+
+Like the cell–cell junctions we described earlier, cell–matrix junctions can sense and respond to the mechanical forces that act on them. Most cell–matrix junctions, for example, are connected to a contractile actin network that tends to pull the junctions inward. When cells are attached to a rigid matrix that strongly resists such pulling forces, the cell–matrix junction is able to sense the resulting high tension and trigger a response in which it recruits additional integrins and other proteins to increase the junction’s ability to withstand that tension. Cell attachment to a relatively soft matrix generates less tension and therefore a less robust response. These mechanisms allow cells to sense and respond to differences in the rigidity of extracellular matrices in different tissues.
+
+We saw earlier that mechanotransduction at cadherin-based cell–cell junctions likely depends on junctional proteins that change their structure when the junction is stretched by tension (see Figure 19–12). The same is true for cell– matrix junctions. Talin, for example, includes a large number of binding sites for the actin-regulatory protein vinculin. Many of these sites are hidden inside folded protein domains but are exposed when those domains are unfolded by stretching the protein (**Figure 19–61**). The N-terminal end of talin binds integrin and the C-terminal end binds actin (see Figure 19–56); thus, when actin filaments are pulled by myosin motors inside the cell, the resulting tension stretches the talin rod, thereby exposing vinculin-binding sites. The vinculin molecules then recruit
+
+![](images/page_48_image_6.jpg)
+
+Figure 19–61 Talin is a tension sensor at cell–matrix junctions. Tension across cell–matrix junctions stimulates the local recruitment of vinculin and other actin-regulatory proteins, thereby strengthening the junction’s attachment to the cytoskeleton. The experiment presented here tested the hypothesis that tension is sensed by the talin adaptor protein that links integrins to actin filaments (see Figure 19–56). (A) The long, flexible talin protein is divided into a series of folded domains, some of which contain vinculin-binding sites (dark green lines) that are thought to be hidden and therefore inaccessible. One domain near the N-terminus, for example, comprises a folded bundle of 12 α helices containing five vinculin-binding sites. (B) This experiment tested the hypothesis that tension stretches the 12-helix domain, thereby exposing vinculin-binding sites. A fragment of talin containing this domain was attached to an apparatus in which the domain could be stretched, as shown here. The fragment was labeled at its N-terminus with a tag that sticks to the surface of a glass slide on a microscope stage. The C-terminal end of the fragment was bound to a tiny magnetic bead, so the talin fragment could be stretched using a small magnetic electrode. The solution around the protein contained fluorescently tagged vinculin proteins. After the talin protein was stretched, excess vinculin solution was washed away, and the microscope was used to determine if any fluorescent vinculin proteins were bound to the talin protein. In the absence of stretching (top), most talin molecules did not bind vinculin. When the protein was stretched (bottom), two or three vinculin molecules were bound (only one is shown here for clarity). (Adapted from A. del Rio et al., Science 323:638–641, 2009.)
+
+and organize additional actin filaments. Tension thereby increases the strength of the junction.
+
+## Summary
+
+Integrins are the principal cell-surface receptors used by animal cells to bind to the extracellular matrix: they function as transmembrane linkers between the extracellular matrix and the cytoskeleton. Most integrins connect to actin filaments, while those at hemidesmosomes bind to intermediate filaments. Integrin molecules are heterodimers, and the binding of extracellular matrix ligands or intracellular activator proteins such as talin results in a dramatic conformational switch from an inactive to an active state. This creates an allosteric coupling between binding to matrix outside the cell and binding to the cytoskeleton inside it, allowing the integrin to convey signals in both directions across the plasma membrane. Complex assemblies of proteins become organized around the intracellular tails of activated integrins, producing intracellular signals that can influence almost any aspect of cell behavior, from proliferation and survival, as in the phenomenon of anchorage dependence, to cell polarity and guidance of migration. Integrin-based cell–matrix junctions are also capable of mechanotransduction: they can sense and respond to mechanical forces acting across the junction.
+
+## THE PLANT CELL WALL
+
+Each cell in a plant deposits, and is in turn completely enclosed by, an elaborate extracellular matrix called the plant cell wall. It was the thick cell walls of cork, visible in a primitive microscope, that in 1665 enabled Robert Hooke to observe and name cells for the first time. The walls of neighboring plant cells, cemented together to form the intact plant (**Figure 19–62**), are generally thicker, stronger,
+
+![](images/page_49_image_7.jpg)
+
+10 µm
+
+(B)
+
+![](images/page_49_image_10.jpg)
+
+200 nm
+
+Figure 19–62 Plant cell walls. (A) Electron micrograph of the root tip of a rush, showing the organized pattern of cells that results from an ordered sequence of cell divisions in cells with relatively rigid cell walls. In this growing tissue, the cell walls are still relatively thin, appearing as fine black lines between the cells in the micrograph. (B) Section of a typical cell wall separating two adjacent plant cells. The two dark transverse bands correspond to plasmodesmata that span the wall (see Figure 19–27). (A, courtesy of C. Busby and B. Gunning, Eur. J. Cell Biol. 21: 214–223, 1980. With permission from Elsevier. B, courtesy of Jeremy Burgess.)
+
+and, most important of all, more rigid than the extracellular matrix produced by animal cells. In evolving relatively rigid walls, which can be up to many micrometers thick, early plant cells forfeited the ability to crawl about and adopted a sedentary lifestyle that has persisted in all present-day plants.
+
+## The Composition of the Cell Wall Depends on the Cell Type
+
+All cell walls in plants have their origin in dividing cells, as the cell plate forms during cytokinesis to create a new partition wall between the daughter cells (discussed in Chapter 17). The new cells are usually produced in special regions called meristems, and they are generally small in comparison with their final size. To accommodate subsequent cell growth, the walls of the newborn cells, called **primary cell walls**, are thin and extensible, although tough. Once cell growth stops, the primary wall is sometimes retained without major modification, but, more commonly, a rigid **secondary cell wall** is produced by depositing new layers of matrix inside the old ones. These new layers generally have a composition that is significantly different from that of the primary wall. The most common additional polymer in secondary walls is **lignin**, a complex network of covalently linked phenolic compounds found in the walls of the xylem vessels and fiber cells of woody tissues.
+
+Although the cell walls of higher plants vary in both composition and organization, they are all constructed, like animal extracellular matrices, using a structural principle common to all fiber-composites, including fiberglass and reinforced concrete. One component provides tensile strength, while another, in which the first is embedded, provides resistance to compression. While the principle is the same in plants and animals, the chemistry is different. Unlike the animal extracellular matrix, which is rich in protein and other nitrogen-containing polymers, the plant cell wall is made almost entirely of polymers that contain no nitrogen, including cellulose and lignin. For a sedentary organism that depends on $\mathrm { C O _ { 2 } , H _ { 2 } O } ,$ and sunlight, these two abundant biopolymers represent “cheap,” carbon-based structural materials, helping to conserve the scarce fixed nitrogen available in the soil that generally limits plant growth. Thus trees, for example, make a huge investment in the cellulose and lignin that compose the bulk of their biomass.
+
+In the cell walls of higher plants, the tensile fibers are made from the polysaccharide cellulose, the most abundant organic macromolecule on Earth, tightly linked into a network by cross-linking glycans. In primary cell walls, the matrix in which the cross-linked cellulose network is embedded is composed of pectin, a highly hydrated network of polysaccharides rich in galacturonic acid. Secondary cell walls contain additional molecules to make them rigid and permanent; lignin, in particular, forms a hard, waterproof filler in the interstices between the other components. All of these molecules are held together by a combination of covalent and noncovalent bonds to form a highly complex structure, whose composition, thickness, and architecture depend on the cell type.
+
+The plant cell wall thus has a “skeletal” role in supporting the structure of the plant as a whole, a protective role as an enclosure for each cell individually, and a transport role, helping to form channels for the movement of fluid in the plant. When plant cells become specialized, they generally adopt a specific shape and produce specially adapted types of walls, according to which the different types of cells in a plant can be recognized and classified. We focus here, however, on the primary cell wall and the molecular architecture that underlies its remarkable combination of strength, resilience, and plasticity, as seen in the growing parts of a plant.
+
+## The Tensile Strength of the Cell Wall Allows Plant Cells to Develop Turgor Pressure
+
+The aqueous extracellular environment of a plant cell consists of the fluid contained in the walls that surround the cell. Although the fluid in the plant cell wall contains more solutes than does the water in the plant’s external milieu (for example, soil), it is still hypotonic in comparison with the cell interior. This osmotic imbalance causes the cell to develop a large internal hydrostatic pressure, or **turgor pressure**, which pushes outward on the cell wall, just as an inner tube pushes outward on a bicycle tire. The turgor pressure increases just to the point where the cell is in osmotic equilibrium, with no net influx of water despite the salt imbalance. The turgor pressure generated in this way may reach 10 or more atmospheres, about five times that in the average car tire. This pressure is vital to plants because it is the main driving force for cell expansion during growth, and it provides much of the mechanical rigidity of living plant tissues. Compare the wilted leaf of a dehydrated plant, for example, with the turgid leaf of a wellwatered one. It is the mechanical strength of the cell wall that allows plant cells toMBoC7 m19.62/19.63 sustain this internal pressure.
+
+![](images/page_51_image_2.jpg)
+
+Figure 19–63 Cellulose. Cellulose molecules are long, unbranched chains of β1,4-linked glucose units. Each glucose residue is inverted with respect to its neighbors, and the resulting disaccharide repeat occurs hundreds of times in a single cellulose molecule. In most higher plant cells, about 18 individual cellulose molecules assemble in parallel to form a strong, hydrogen-bonded cellulose microfibril.
+
+## The Primary Cell Wall Is Built from Cellulose Microfibrils Interwoven with a Network of Pectic Polysaccharides
+
+**Cellulose** gives the primary cell wall tensile strength. Each cellulose molecule consists of a linear chain of at least 500 glucose residues that are covalently linked to one another to form a ribbonlike structure, which is stabilized by hydrogen bonds within the chain (**Figure 19–63**). In addition, hydrogen bonds between adjacent cellulose molecules cause them to stick together in overlapping parallel arrays, forming bundles of about 18 cellulose chains, all of which have the same polarity. These highly ordered crystalline aggregates, many micrometers long, are called **cellulose microfibrils**, and they have a tensile strength comparable to that of steel. Sets of microfibrils are arranged in layers, or lamellae, with each microfibril about 20–40 nm from its neighbors and connected to them by long cross-linking glycan molecules, which are attached by hydrogen bonds to the surface of the microfibrils. The primary cell wall consists of several such lamellae arranged in a plywoodlike network (**Figure 19–64**).
+
+![](images/page_51_image_7.jpg)
+
+Figure 19–64 Scale model of a portion of a primary plant cell wall showing the two major polysaccharide networks. The orthogonally arranged layers of cellulose microfibrils (blue) are tied into a network by the cross-linking glycans (red) that form hydrogen bonds with the microfibrils. This network is accompanied by a network of pectin polysaccharides (green). The network of cellulose and cross-linking glycans provides tensile strength, while the pectin network resists compression. Cellulose, cross-linking glycans, and pectin are typically present in roughly equal amounts in a primary cell wall. The middle lamella is especially rich in pectin, and it cements adjacent cells together.
+
+The **cross-linking glycans** are a heterogeneous group of branched polysaccharides that bind tightly to the surface of each cellulose microfibril and thereby help to cross-link the microfibrils into a complex network. There are many classes of cross-linking glycans, but they all have a long linear backbone composed of one type of sugar (glucose, xylose, or mannose) from which short side chains of other sugars protrude. The backbone sugar molecules form hydrogen bonds with the surface of cellulose microfibrils, cross-linking them in the process. Both the backbone and the side-chain sugars vary according to the plant species and its stage of development.
+
+The network of cellulose microfibrils and cross-linking glycans includes another cross-linked polysaccharide network that is based on **pectins** (see Figure 19–64). Pectins are a heterogeneous group of branched polysaccharides that contain many negatively charged galacturonic acid units. Because of their negative charge, pectins are highly hydrated and associated with a cloud of cations, resembling the glycosaminoglycans of animal cells in the large amount of space they occupy (see Figure 19–33). When $\mathrm { C a ^ { 2 + } }$ is added to a solution of pectin molecules, it cross-links them to produce a semirigid gel (it is pectin that is added to fruit juice to make jam or jelly). Certain pectins are particularly abundant in the middle lamella, the specialized region that cements together the walls of adjacent cells (see Figure 19–64); here, $\overset { \circ } { \mathrm { C a ^ { 2 + } } }$ cross-links are thought to help hold cell wall components together. Although covalent bonds also play a part in linking the components, very little is known about their nature. Regulated separation of cells at the middle lamella underlies such processes as the ripening of tomatoes and the abscission (detachment) of leaves in the fall.
+
+In addition to the two polysaccharide-based networks that form the bulk of all plant primary cell walls, proteins are present, contributing up to about 5% of the wall’s dry mass. Many of these proteins are enzymes, responsible for wall turnover and remodeling, particularly during growth. Another class of wall proteins, like collagen, contains high levels of hydroxyproline. These proteins are thought to strengthen the wall, and they are produced in greatly increased amounts as a local response to attack by pathogens. From the genome sequence of Arabidopsis, it has been estimated that more than 700 genes are required to synthesize, assemble, and remodel the plant cell wall.
+
+## Oriented Cell Wall Deposition Controls Plant Cell Growth
+
+Once a plant cell has left the meristem where it is generated, it can grow dramatically, commonly by more than a thousand times in volume. The manner of this expansion determines the final shape of each cell, and hence the final form of the plant as a whole. Turgor pressure inside the cell drives the expansion, but it is the behavior of the cell wall that governs its direction and extent. Complex wallremodeling activities are required, as well as the deposition of new wall materials. Because of their crystalline structure, the individual cellulose microfibrils in the wall are unable to stretch, and this gives them a crucial role in the process. For the cell wall to stretch or deform, the microfibrils must either slide past one another or become more widely separated, or both. The orientation of the microfibrils in the innermost layers of the wall governs the direction in which the cell expands. Cells in plants therefore anticipate their future morphology by controlling the orientation of the cellulose microfibrils that they deposit in the wall (**Figure 19–65**).
+
+Unlike most other matrix macromolecules, which are made in the endoplasmic reticulum and Golgi apparatus and are secreted, cellulose is spun out from the surface of the cell by a plasma membrane–bound enzyme complex (cellulose synthase), which uses as its substrate the sugar nucleotide UDP-glucose supplied from the cytosol. Each enzyme complex, or rosette, is a radial array of six trimers, each containing the protein products of three separate cellulose synthase (CESA) genes (see Figure 19–66). Three CESA genes are required for primary cell wall synthesis and a different three for secondary cell wall synthesis.
+
+As they are being synthesized, the nascent cellulose chains assemble into microfibrils. These are spun out on the extracellular surface of the plasma membrane, forming a layer, or lamella, in which all the microfibrils have more or less the same alignment (see Figure 19–64). Each new lamella is deposited internally to the previous one, so that the wall consists of concentrically arranged lamellae, with the oldest on the outside. The most recently deposited microfibrils in elongating cells commonly lie perpendicular to the axis of cell elongation, although the orientation of the microfibrils in the outer lamellae that were laid down earlier may be different (see Figure 19–65B and C).
+
+![](images/page_53_image_0.jpg)
+
+![](images/page_53_image_3.jpg)
+
+200 nm
+
+## Microtubules Orient Cell Wall Deposition
+
+An important clue to the mechanism that dictates microfibril orientation came from observations of the microtubules in plant cells. These are frequently arrangedMBoC7 m19.64/19.65 in the cortical cytoplasm with the same orientation as the cellulose microfibrils that are currently being deposited in the cell wall in that region. These cortical microtubules form a cortical array close to the cytosolic face of the plasma membrane, held there by poorly characterized proteins. The congruent orientation of the cortical array of microtubules (lying just inside the plasma membrane) and cellulose microfibrils (lying just outside) is seen in many types and shapes of plant cells and is present during both primary and secondary cell wall deposition, suggesting a causal relationship.
+
+This suggestion can be tested by treating a plant tissue with a microtubule-depolymerizing drug so as to disassemble the entire system of cortical microtubules. The consequences for subsequent cellulose deposition, however, are not as straightforward as might be expected. The drug treatment does not disrupt the production of new cellulose microfibrils, and in some cases cells can continue to deposit new microfibrils in the preexisting orientation. Any developmental switch in the orientation of the microfibril pattern that would normally occur between successive lamellae, however, is invariably blocked. It seems that a preexisting orientation of microfibrils can be propagated even in the absence of microtubules, but any change in the deposition of cellulose microfibrils requires that intact microtubules be present to determine the new orientation.
+
+These observations are consistent with the following model. The cellulosesynthesizing rosettes embedded in the plasma membrane spin out long cellulose
+
+Figure 19–65 Cellulose microfibrils influence the direction of cell elongation. (A) The orientation of cellulose microfibrils in the primary cell wall of an elongating carrot cell is shown in this electron micrograph of a shadowed replica from a rapidly frozen and deep-etched cell wall. The cellulose microfibrils are aligned parallel to one another and perpendicular to the axis of cell elongation. The microfibrils are cross-linked by, and interwoven with, a complex web of matrix molecules (compare with Figure 19–64). (B, C) The cells in B and C start off with identical shapes (shown here as cubes) but with different net orientations of cellulose microfibrils in their walls. Although turgor pressure is uniform in all directions, cell wall loosening allows each cell to elongate only in a direction perpendicular to the orientation of the innermost layer of microfibrils, which have great tensile strength. Cell expansion occurs in concert with the insertion of new wall material. The final shape of an organ, such as a shoot, is determined in part by the direction in which its component cells can expand. (A, courtesy of Brian Wells and Keith Roberts.)
+
+![](images/page_54_image_2.jpg)
+
+![](images/page_54_image_3.jpg)
+
+molecules. As the synthesis of cellulose molecules and their self-assembly into microfibrils proceeds, the distal end of each microfibril presumably forms indirect cross-links to the previous layer of wall material, orienting the new microfibril in parallel with the old ones as it becomes integrated into the texture of the wall. Because the microfibril is stiff, the rosette at its growing, proximal end has to move as it deposits the new material. Traveling in the plane of the membrane, the rosette moves in the direction defined by the way in which the far end of theMBoC7 m19.65/19.66 microfibril is anchored in the existing wall. In this way, each layer of microfibrils would tend to be spun out from the membrane in the same orientation as the layer laid down previously, with the rosettes following the direction of the preexisting oriented microfibrils outside the cell. Oriented microtubules inside the cell, however, can force a change in the direction in which the rosettes move: they can create boundaries in the plasma membrane that act like the banks of a canal to constrain rosette movement (**Figure 19–66**). In this view, cellulose synthesis can occur independently of microtubules; but it is constrained spatially when cortical microtubules are present to define membrane microdomains within which the enzyme complex can move.
+
+In this way, plant cells can change their direction of expansion by a sudden change in the orientation of their cortical array of microtubules. Because plant cells cannot move (being constrained by their walls), the entire morphology of a multicellular plant presumably depends on a coordinated, highly patterned deployment of cortical microtubule orientations during plant development. It is not known how these orientations are controlled, although it has been shown that the microtubules can reorient rapidly in response to extracellular stimuli, including plant growth regulators such as ethylene and auxins (discussed in Chapter 15).
+
+Microtubules are not, however, the only cytoskeletal elements that influence wall deposition. Local foci of cortical actin filaments can also direct the deposition of new wall material at specific sites on the cell surface, contributing to the elaborate final shaping of many differentiated plant cells.
+
+Figure 19–66 One model of how the orientation of newly deposited cellulose microfibrils might be determined by the orientation of cortical microtubules. (A) The large cellulose synthase complexes, or rosettes, are integral membrane proteins that synthesize cellulose microfibrils on the outer face of the plasma membrane. Each rosette contains six enzyme trimers, resulting in the synthesis of the 18 cellulose chains that make up a cellulose microfibril in many plant cells (see Figure 19–63). The distal ends of the stiff microfibrils become integrated into the texture of the wall, and their elongation at the proximal end pushes the synthase complex along in the plane of the membrane. Because the cortical array of microtubules is attached to the plasma membrane in a way that confines this complex to defined membrane channels, the orientation of these microtubules—when they are present—determines the axis along which the new microfibrils are laid down. (B, C) Two electron micrographs show the tight association of the cortical microtubules with the plasma membrane. One shows the microtubules in cross section while the other shows a microtubule in longitudinal section. Both emphasize the constant gap of about 20 nm between membrane and microtubule. (B and C, courtesy of Andrew Staehelin.)
+
+## Summary
+
+Plant cells are surrounded by a tough extracellular matrix, or cell wall, which is responsible for many of the unique features of a plant’s lifestyle. The wall is composed of a network of cellulose microfibrils and cross-linking glycans, embedded in a highly cross-linked matrix of pectin polysaccharides. In secondary cell walls, lignin may be deposited to make them waterproof, hard, and woody. A cortical array of microtubules can control the orientation of newly deposited cellulose microfibrils, which in turn determine the direction of cell expansion and therefore the final shape of the cell and, ultimately, of the plant as a whole.
+
+## PROBLEMS
+
+Which statements are true? Explain why or why not.
+
+19–1 Given the numerous processes inside cells that are regulated by changes in $\mathrm { C \hat { a } ^ { 2 + } }$ concentration, it seems likely that $\mathrm { C a ^ { 2 + } }$ -dependent cell–cell adhesions are also regulated by changes in $\mathrm { C a ^ { 2 + } }$ concentration.
+
+19–2 Tight junctions perform two distinct functions: they seal the space between cells to restrict paracellular flow, and they fence off plasma membrane domains to prevent the mixing of apical and basolateral membrane proteins.
+
+19–3 The elasticity of elastin derives from its high content of α helices, which act as molecular springs.
+
+19–4 Integrins can convert mechanical signals into intracellular molecular signals.
+
+19–5 If the entire cortical array of microtubules were disassembled by drug treatment, new cellulose microfibrils would be laid down in random orientations.
+
+Discuss the following problems.
+
+19–6 Comment on the following (1922) quote from Warren Lewis, who was one of the pioneers of cell biology. “Were the various types of cells to lose their stickiness for one another and for the supporting extracellular matrix, our bodies would at once disintegrate and flow off into the ground in a mixed stream of cells.”
+
+19–7 Cell adhesion molecules were originally identified using antibodies raised against cell-surface components to block cell aggregation. In the adhesionblocking assays, the researchers found it necessary to use antibody fragments, each with a single binding site (so-called Fab fragments), rather than intact IgG antibodies, which are Y-shaped molecules with two identical binding sites. The Fab fragments were generated by digesting the IgG antibodies with papain, a protease, to separate the two binding sites (**Figure Q19–1**). Why do you suppose it was necessary to use Fab fragments to block cell aggregation?
+
+![](images/page_55_image_12.jpg)
+
+Figure Q19–1 Production of Fab fragments from IgG antibodies by digestion with papain (Problem 19–7).
+
+19–8 The food-poisoning bacterium Clostridium perfringens makes a toxin that binds to members of the claudin family of proteins, which are the main constituents of tight junctions. When the C-terminus of the toxin is bound to a claudin, the N-terminus can insert into the adjacent cell membrane, forming holes that kill the cell. The portion of the toxin that binds to the claudins has proven to be a valuable reagent for investigating the properties of tight junctions. MDCK cells are a common choice for studies of tight junctions because they can form an intact epithelial sheet with high transepithelial electrical resistance (low ion permeability). MDCK cells express two claudins: claudin-1, which is not bound by the toxin, and claudin-4, which is.
+
+When an intact MDCK epithelial sheet is incubated with the C-terminal toxin fragment, claudin-4 disappears, becoming undetectable within 24 hours. In the absence of claudin-4, the cells remain healthy and the epithelial sheet appears intact. The mean number of strands in the tight junctions that link the cells also decreases over 24 hours from about four to about two, and they are less highly branched. A functional assay for the integrity of the tight junctions shows that transepithelial resistance decreases dramatically in the presence of the toxin fragment, but the resistance can be restored by washing out the toxin fragment (**Figure Q19–2A**). Curiously, the toxin fragment produces these effects only when it is added to the basolateral side of the sheet; it has no effect when added to the apical surface (**Figure Q19–2B**).
+
+![](images/page_55_chart_17.jpg)
+
+Figure Q19–2 Effects of Clostridium toxin fragment on the barrier function of MDCK cells (Problem 19–8). (A) Addition of toxin fragment from the basolateral side of the epithelial sheet. (B) Addition of toxin fragment from the apical side of the epithelial sheet. For a given voltage, a higher resistance (ohms cm<sup>2</sup>) gives less paracellular current.
+
+A. How can it be that two tight-junction strandsMBoC7 Q19.02 remain, even though all of the claudin-4 has disappeared?
+
+B. Why do you suppose the toxin fragment works when it is added to the basolateral side of the epithelial sheet but not when added to the apical side?
+
+19–9 The glycosaminoglycan polysaccharide chains that are linked to specific core proteins to form the proteoglycan components of the extracellular space are highly negatively charged. How do you suppose these negatively charged polysaccharide chains help to establish a hydrated gel-like environment around the cell? How would the properties of these molecules differ if the polysaccharide chains were uncharged?
+
+19–10 At body temperature, l-aspartate in proteins is converted to its optimal isomer d-aspartate at an appreciable rate. Most proteins in the body have a very low level of d-aspartate, if it can be detected at all. Elastin, however, has a fairly high level of d-aspartate. Moreover, the amount of d-aspartate increases in direct proportion to the age of the person from whom the sample was taken. Why do you suppose that most proteins have little if any d-aspartate, while elastin has levels of d-aspartate that increase steadily with age?
+
+19–11 It is not an easy matter to assign particular functions to specific components of the basal lamina, because the overall structure is a complicated composite material with both mechanical and signaling properties. Nidogen, for example, cross-links two central components of the basal lamina by binding to the laminin γ chain and to type IV collagen. Given such a key role, it was surprising that mice with a homozygous knockout of the gene for nidogen-1 were entirely healthy, with no abnormal phenotype. Similarly, mice homozygous for a knockout of the gene for nidogen-2 also appeared completely normal. By contrast, mice that were homozygous for a defined mutation in the gene for the laminin γ chain, which eliminated just the binding site for nidogen, died at birth with severe defects in lung and kidney formation. The mutant portion of the laminin γ chain is thought to have no other function than to bind nidogen and does not affect laminin structure or its ability to assemble into the basal lamina. How would you explain these genetic observations, which are summarized in **Table Q19–1**? What would you predict would be the phenotype of a mouse that was homozygous for knockouts of both nidogen genes?
+
+TABLE Q19–1 Phenotypes of mice with genetic defects in components of the basal lamina (Problem 19–11)
+
+<table><tr><td>Protein</td><td>Genetic defect</td><td>Phenotype</td></tr><tr><td>Nidogen-1</td><td>Gene knockout (-/-)</td><td>None</td></tr><tr><td>Nidogen-2</td><td>Gene knockout (-/-)</td><td>None</td></tr><tr><td>Laminin γ chain</td><td>Nidogen binding-site deletion (+/-)</td><td>None</td></tr><tr><td>Laminin γ chain</td><td>Nidogen binding-site deletion (-/-)</td><td>Dead at birth</td></tr><tr><td colspan="3">+/- stands for heterozygous, -/- stands for homozygous.</td></tr></table>
+
+19–12 Discuss the following statement: “The basal lamina of muscle fibers serves as a molecular bulletin board, in which adjoining cells can post messages that direct the differentiation and function of the underlying cells.”
+
+19–13 Platelets are flat, disc-like cells with a surface area of about 20 $\mu \mathrm { m } ^ { 2 } .$ They have about 80,000 integrin molecules on their surface. If the transmembrane portion of an integrin approximates a cylinder with a 10-nm diameter, how tightly packed are integrins on the surface of a platelet? Imagine that the surface area of the platelet is represented as a grid containing 80,000 squares, each containing one integrin. What is the average distance from one integrin to its neighbor? (Assume each integrin is at the center of its square.)
+
+19–14 The affinity of integrins for matrix components can be modulated by changes to their cytoplasmic domains: a process known as inside-out signaling. You have identified a key region in the cytoplasmic domains of α<sub>IIb</sub>β<sub>3</sub> integrin that seems to be required for inside-out signaling (**Figure Q19–3**). Substitution of alanine for either D723 in the β chain or R995 in the α chain leads to a high level of spontaneous activation, under conditions where the wildtype chains are inactive. Your advisor suggests that you convert the aspartate in the β chain to an arginine (D723R) and the arginine in the α chain to an aspartate (R995D). You compare all three α chains (R995, R995A, and R995D) against all three β chains (D723, D723A, and D723R). You find that all pairs have a high level of spontaneous activation, except D723 versus R995 (the wild type) and D723R versus R995D, which have low levels. On the basis of these results, how do you think the α<sub>IIb</sub>β<sub>3</sub> integrin is held in its inactive state?
+
+![](images/page_56_image_10.jpg)
+
+Figure Q19–3 Schematic representation of $\alpha _ { \parallel \parallel } \beta _ { 3 }$ integrin (Problem 19–14). (From P.E. Hughes et $\mathfrak { a l } . , J .$ Biol. Chem. 271:6571–6574, 1996. With permission from American Society for Biochemistry and Molecular Biology.)
+
+19–15 Your boss is coming to dinner! All you have for a MBoC7 Q19.03salad is some wilted, day-old lettuce. You vaguely recall that there is a trick to rejuvenating wilted lettuce, but you cannot remember what it is. Should you soak the lettuce in saltwater, soak it in tap water, or soak it in sugar water, or maybe just shine a bright light on it and hope that photosynthesis will perk it up?
+
+19–16 A plant must be able to respond to changes in the water status of its surroundings. It does so by the flow of water molecules through water channels called aquaporins. The hydraulic conductivity of a single aquaporin is $4 . 4 \times 1 0 ^ { - 2 2 }   \mathrm { { \bar { m } } ^ { 3 } }$ per second per MPa (megapascal) of pressure. What does this correspond to in terms of water molecules per second at atmospheric pressure? [Atmospheric pressure is 0.1 MPa (1 bar) and the concentration of water is 55.5 M.]
+
+## REFERENCES
+
+## General
+
+Beckerle M (ed.) (2002) Cell Adhesion. Oxford: Oxford University Press. Hynes RO & Yamada KM (eds.) (2011) Extracellular Matrix Biology (Cold Spring Harbor Perspectives in Biology). Cold Spring Harbor, NY: Cold Spring Harbor Laboratory Press.
+
+## Cell–Cell Junctions
+
+Brasch J, Harrison OJ, Honig B & Shapiro L (2012) Thinking outside the cell: how cadherins drive adhesion. Trends Cell Biol. 22, 299–310.
+
+Bruser L & Bogdan S (2017) Adherens junctions on the move— membrane trafficking of E-cadherin. Cold Spring Harb. Perspect. Biol. 9, a0219140.
+
+Garcia MA, Nelson WJ & Chavez N (2018) Cell-cell junctions organize structural and signaling networks. Cold Spring Harb. Perspect. Biol. 10, a029181.
+
+Goodenough DA & Paul DL (2009) Gap junctions. Cold Spring Harb. Perspect. Biol. 1, a002576.
+
+Harris TJ & Tepass U (2010) Adherens junctions: from molecules to morphogenesis. Nat. Rev. Mol. Cell Biol. 11, 502–514.
+
+Honig B & Shapiro L (2020) Adhesion protein structure, molecular affinities, and principles of cell-cell recognition. Cell 181, 520–535.
+
+Lecuit T, Lenne PF & Munro E (2011) Force generation, transmission, and integration during cell and tissue morphogenesis. Annu. Rev. Cell Dev. Biol. 27, 157–184.
+
+Lu KJ, Danila FR, Cho Y & Faulkner C (2018) Peeking at a plant through the holes in the wall—exploring the roles of plasmodesmata. New Phytol. 218, 1310–1314.
+
+Maule AJ, Benitez-Alfonso Y & Faulkner C (2011) Plasmodesmata— membrane tunnels with attitude. Curr. Opin. Plant Biol. 14, 683–690.
+
+McEver RP & Zhu C (2010) Rolling cell adhesion. Annu. Rev. Cell Dev. Biol. 26, 363–396.
+
+Najor NA (2018) Desmosomes in human disease. Annu. Rev. Pathol. 13, 51–70.
+
+Nakagawa S, Maeda S & Tsukihara T (2010) Structural and functional studies of gap junction channels. Curr. Opin. Struct. Biol. 20, 423–430.
+
+Pinheiro D & Bellaïche Y (2018) Mechanical force-driven adherens junction remodeling and epithelial dynamics. Dev. Cell 47, 3–19.
+
+Takeichi M (2014) Dynamic contacts: rearranging adherens junctions to drive epithelial remodelling. Nat. Rev. Mol. Cell Biol. 15, 397–410.
+
+Yap AS, Duszyc K & Viasnoff V (2018) Mechanosensing and mechanotransduction at cell-cell junctions. Cold Spring Harb. Perspect. Biol. 10, a028761.
+
+## The Extracellular Matrix of Animals
+
+Couchman JR (2010) Transmembrane signaling proteoglycans. Annu. Rev. Cell Dev. Biol. 26, 89–114.
+
+Domogatskaya A, Rodin S & Tryggvason K (2012) Functional diversity of laminins. Annu. Rev. Cell Dev. Biol. 28, 523–553.
+
+Fidler AL, Boudko SP, Rokas A & Hudson BG (2018) The triple helix of collagens—an ancient protein structure that enabled animal multicellularity and tissue evolution. J. Cell Sci. 131, jcs203950.
+
+Fidler AL, Darris CE, Chetyrkin SV . . . Hudson BG (2017) Collagen IV and basement membrane at the evolutionary dawn of metazoan tissues. eLife 6, e24176.
+
+Hynes RO & Naba A (2012) Overview of the matrisome—an inventory of extracellular matrix constituents and functions. Cold Spring Harb. Perspect. Biol. 4, a004903.
+
+Jayadev R & Sherwood DR (2017) Basement membranes. Curr. Biol. 27, R207–R211.
+
+Karamanos NK, Theocharis AD, Piperigkou Z . . . Onisto M (2021) A guide to the composition and functions of the extracellular matrix. FEBS J. (in press). Available at https://febs.onlinelibrary.wiley.com/doi/epdf/10.1111/febs.15776
+
+Lu P, Takai K, Weaver VM & Werb Z (2011) Extracellular matrix degradation and remodeling in development and disease. Cold Spring Harb. Perspect. Biol. 3, a005058.
+
+Mouw JK, Ou G & Weaver VM (2014) Extracellular matrix assembly: a multiscale deconstruction. Nat. Rev. Mol. Cell Biol. 15, 771–785.
+
+Muncie JM & Weaver VM (2018) The physical and biochemical properties of the extracellular matrix regulate cell fate. Curr. Top. Dev. Biol. 130, 1–37.
+
+Pozzi A, Yurchenco PD & Iozzo RV (2017) The nature and biology of basement membranes. Matrix Biol. 57–58, 1–11.
+
+Ricard-Blum S (2011) The collagen family. Cold Spring Harb. Perspect. Biol. 3, a004978.
+
+Schmelzer CEH & Duca L (2021) Elastic fibers: formation, function and fate during aging and disease. FEBS J. (in press). Available at https://febs.onlinelibrary.wiley.com/doi/epdf/10.1111/febs.15899
+
+Townley RA & Bülow HE (2018) Deciphering functional glycosaminoglycan motifs in development. Curr. Opin. Struct. Biol. 50, 144–154.
+
+## Cell–Matrix Junctions
+
+Bachmann M, Kukkurainen S, Hytonen VP & Wehrle-Haller B (2019) Cell adhesion by integrins. Physiol. Rev. 99, 1655–1699.
+
+Calderwood DA, Campbell ID & Critchley DR (2013) Talins and kindlins: partners in integrin-mediated adhesion. Nat. Rev. Mol. Cell Biol. 14, 503–517.
+
+Goult BT, Yan J & Schwartz MA (2018) Talin as a mechanosensitive signaling hub. J. Cell Biol. 217, 3776–3784.
+
+Hogg N, Patzak I & Willenbrock F (2011) The insider’s guide to leukocyte integrin signalling and function. Nat. Rev. Immunol. 11, 416–426.
+
+Humphrey JD, Dufresne ER & Schwartz MA (2014) Mechanotransduction and extracellular matrix homeostasis. Nat. Rev. Mol. Cell Biol. 15, 802–812.
+
+Jansen KA, Atherton P & Ballestrem C (2017) Mechanotransduction at the cell-matrix interface. Semin. Cell Dev. Biol. 71, 75–83.
+
+Matellan C & Del Rio Hernandez AE (2019) Engineering the cellular mechanical microenvironment—from bulk mechanics to the nanoscale. J. Cell Sci. 132, jcs229013.
+
+Ross TD, Coon BG, Yun S, . . . Schwartz MA (2013) Integrins in mechanotransduction. Curr. Opin. Cell Biol. 25, 613–618.
+
+Shattil SJ, Kim C & Ginsberg MH (2010) The final steps of integrin activation: the end game. Nat. Rev. Mol. Cell Biol. 11, 288–300.
+
+Sun Z, Costell M & Fässler R (2019) Integrin activation by talin, kindlin and mechanical forces. Nat. Cell Biol. 21, 25–31.
+
+## The Plant Cell Wall
+
+Albersheim P, Darvill A, Roberts K et al. (2011) Plant Cell Walls: From Chemistry to Biology. New York: Garland Science.
+
+Braidwood L, Breuer C & Sugimoto K (2014) My body is a cage: mechanisms and modulation of plant cell growth. New Phytol. 201, 388–402.
+
+Keegstra K (2010) Plant cell walls. Plant Physiol. 154, 483–486.
+
+Lampugnani ER, Khan GA, Somssich M & Persson S (2018) Building a plant cell wall at a glance. J. Cell Sci. 131, jcs207373.
+
+Lloyd C (2011) Dynamic microtubules and the texture of plant cell walls. Int. Rev. Cell Mol. Biol. 287, 287–329.
+
+McFarlane HE, Doring A & Persson S (2014) The cell biology of cellulose synthesis. Annu. Rev. Plant Biol. 65, 69–94.
+
+Meents MJ, Watanabe Y & Samuels AL (2018) The cell biology of secondary cell wall biosynthesis. Ann. Bot. 121, 1107–1125.
+
+Polko JK & Kieber JJ (2019) The regulation of cellulose biosynthesis in plants. Plant Cell 31, 282–296.
+
+Szymanski DB & Cosgrove DJ (2009) Dynamic coordination of cytoskeletal and cell wall systems during plant cell morphogenesis. Curr. Biol. 19, R800–R811.
+
+Wolf S, Hematy K & Hofte H (2012) Growth control and cell wall signaling in plants. Annu. Rev. Plant Biol. 63, 381–407.

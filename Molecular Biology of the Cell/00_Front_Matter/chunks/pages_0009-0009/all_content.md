@@ -1,0 +1,13 @@
+viii
+
+# Nomenclature for Genes and Proteins
+
+Each species has its own conventions for naming genes; the only common feature is that they are always set in italics. In some species (such as humans), gene names are spelled out all in capital letters; in other species (such as zebrafish), all in lowercase; in yet others (most mouse genes), with the first letter in uppercase and the rest in lowercase; or (as in Drosophila) with different combinations of uppercase and lowercase, according to whether the first mutant allele to be discovered produced a dominant or recessive phenotype. Conventions for naming protein products are equally varied.
+
+This typographical chaos drives everyone crazy. Moreover, there are many occasions, especially in a book such as this, where we need to refer to a gene generically—without specifying the mouse version, the human version, the chick version, or the hippopotamus version—because the gene variants across species are all equivalent for the purposes of our discussion. What convention then should we use?
+
+We have decided in this book to follow a uniform rule. We write all gene names with the first letter in uppercase and the rest in lowercase, and all in italics, thus: Bazooka, Cdc2, Dishevelled, Egl1. The corresponding protein, where it is named after the gene, will be written in the same way, but in roman rather than italic letters: Bazooka, Cdc2, Dishevelled, Egl1. When it is necessary to specify the organism, this can be done with a prefix to the gene name.
+
+For completeness, we list a few further details of naming rules that we shall follow. In some instances, an added letter in the gene name is traditionally used to distinguish between genes that are related by function or evolution; for those genes, we put that letter in uppercase if it is usual to do so (LacZ, RecA, HoxA4). Proteins are more of a problem. Many of them have names in their own right, assigned to them before the gene was named. Such protein names take many forms, although most of them traditionally begin with a lowercase letter (actin, hemoglobin, catalase); others are acronyms (such as GFP, for green fluorescent protein, or BMP4, for bone morphogenetic protein 4). To force all such protein names into a uniform style would do too much violence to established usages, and we shall simply write them in the traditional way. For the corresponding gene names in all these cases, we shall nevertheless follow our standard rule: Actin, Hemoglobin, Catalase, Bmp4, Gfp.
+
+For those who wish to know them, the table shows some of the official conventions for individual species—conventions that we shall mostly violate in this book, in the manner shown.

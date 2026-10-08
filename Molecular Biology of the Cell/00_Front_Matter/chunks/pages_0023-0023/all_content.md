@@ -1,0 +1,7 @@
+xxii
+
+Acknowledgments
+
+invaluable resource for students and instructors. Megan Schindel, Patricia Wong, and Tommy Persano handled the permissions for this edition, and Kim Yi’s media project editorial group, specifically Jesse Newkirk, skillfully shepherded the content through its many stages of development.
+
+Marketing manager Ruth Bolster’s expertise in direct marketing has helped ensure that this book makes it into the hands of as many instructors and students as possible. We thank her and everyone involved in Norton’s sales, marketing, and management teams for their unflagging support of our book, including Erik Fahlgren, Michael Wright, Ann Shin, and Julia Reidhead.

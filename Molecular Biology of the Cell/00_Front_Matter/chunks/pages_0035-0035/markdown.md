@@ -1,0 +1,104 @@
+- Cells Can Respond Abruptly to a Gradually Increasing Signal 887
+- Positive Feedback Can Generate an All-or-None Response 888
+- Negative Feedback Is a Common Feature of Intracellular Signaling Systems 890
+- Cells Can Adjust Their Sensitivity to a Signal 890
+- Summary 892
+- SIGNALING THROUGH G-PROTEIN-COUPLED RECEPTORS 892
+- Heterotrimeric G Proteins Relay Signals from GPCRs 893
+- Some G Proteins Regulate the Production of Cyclic AMP 895
+- Cyclic-AMP-dependent Protein Kinase (PKA) Mediates Most of the Effects of Cyclic AMP 896
+- Some G Proteins Signal Via Phospholipids 898
+- $\mathrm{Ca^{2+}}$ Functions as a Ubiquitous Intracellular Mediator 899
+- Feedback Generates $\mathrm{Ca^{2+}}$ Waves and Oscillations 900
+- $\mathrm{Ca^{2+}}/$Calmodulin-dependent Protein Kinases Mediate Many Responses to $\mathrm{Ca^{2+}}$ Signals 902
+- Some G Proteins Directly Regulate Ion Channels 904
+- Smell and Vision Depend on GPCRs That Regulate Ion Channels 905
+- Nitric Oxide Gas Can Mediate Signaling Between Cells 908
+- Second Messengers and Enzymatic Cascades Amplify Signals 909
+- GPCR Desensitization Depends on Receptor Phosphorylation 909
+- Summary 910
+- SIGNALING THROUGH ENZYME-COUPLED RECEPTORS 911
+- Activated Receptor Tyrosine Kinases (RTKs) Phosphorylate Themselves 911
+- Phosphorylated Tyrosines on RTKs Serve as Docking Sites for Intracellular Signaling Proteins 913
+- Proteins with SH2 Domains Bind to Phosphorylated Tyrosines 913
+- The Monomeric GTPase Ras Mediates Signaling by Most RTKs 915
+- Ras Activates a MAP Kinase Signaling Module 916
+- Scaffold Proteins Reduce Cross-Talk Between Different MAP Kinase Modules 918
+- Rho Family GTPases Functionally Couple Cell-Surface Receptors to the Cytoskeleton 919
+- PI 3-Kinase Produces Lipid Docking Sites in the Plasma Membrane 920
+- The PI-3-Kinase-Akt Signaling Pathway Stimulates Animal Cells to Survive and Grow 921
+- RTKs and GPCRs Activate Overlapping Signaling Pathways 923
+- Some Enzyme-coupled Receptors Associate with Cytoplasmic Tyrosine Kinases 923
+- Cytokine Receptors Activate the JAK-STAT Signaling Pathway 924
+- Extracellular Signal Proteins of the TGFβ Superfamily Act Through Receptor Serine/Threonine Kinases and Smads 926
+- Summary 927
+- ALTERNATIVE SIGNALING ROUTES IN GENE REGULATION 928
+- The Receptor Notch Is a Latent Transcription Regulator 928
+- Wnt Proteins Activate Frizzled and Thereby Inhibit β-Catenin Degradation 930
+- Hedgehog Proteins Initiate a Complex Signaling Pathway in the Primary Cilium 932
+- Many Inflammatory and Stress Signals Act Through an NFκB-dependent Signaling Pathway 934
+- Nuclear Receptors Are Ligand-modulated Transcription Regulators 935
+- Circadian Clocks Use Negative Feedback Loops to Control Gene Expression 937
+- Three Purified Proteins Can Reconstitute a Cyanobacterial Circadian Clock in a Test Tube 938
+- Summary 939
+- SIGNALING IN PLANTS 940
+- Multicellularity and Cell Communication Evolved Independently in Plants and Animals 940
+- Receptor Serine/Threonine Kinases Are the Largest Class of Cell-Surface Receptors in Plants 941
+- Ethylene Blocks the Degradation of Specific Transcription Regulatory Proteins in the Nucleus 941
+- Regulated Positioning of Auxin Transporters Patterns Plant Growth 943
+- Phytochromes Detect Red Light, and Cryptochromes Detect Blue Light 944
+- Summary 945
+- Problems 946
+- References 948
+
+- Chapter 16 The Cytoskeleton 949
+- FUNCTION AND DYNAMICS OF THE CYTOSKELETON 949
+- Cytoskeletal Filaments Are Dynamic, but Can Nevertheless Form Stable Structures 951
+- The Cytoskeleton Determines Cellular Organization and Polarity 952
+- Filaments Assemble from Protein Subunits That Impart Specific Physical and Dynamic Properties 953
+- Accessory Proteins and Motors Act on Cytoskeletal Filaments 955
+- Molecular Motors Operate in a Cellular Environment Dominated by Brownian Motion 956
+- Summary 957
+- ACTIN 957
+- Actin Subunits Assemble Head-to-Tail to Create Flexible, Polar Filaments 958
+- Nucleation Is the Rate-limiting Step in the Formation of Actin Filaments 958
+- Actin Filaments Have Two Distinct Ends That Grow at Different Rates 962
+- ATP Hydrolysis Within Actin Filaments Leads to Treadmilling at Steady State 962
+- The Functions of Actin Filaments Are Inhibited by Both Polymer-stabilizing and Polymer-destabilizing Chemicals 963
+- Actin-binding Proteins Influence Filament Dynamics and Organization 964
+- Actin Nucleation Is Tightly Regulated and Generates Branched or Straight Filaments 964
+- Actin Filament Elongation Is Regulated by Monomer-binding Proteins 967
+- Actin Filament-binding Proteins Alter Filament Dynamics and Organization 968
+- Severing Proteins Regulate Actin Filament Depolymerization 970
+- Bacteria Can Hijack the Host Actin Cytoskeleton 971
+- Actin at the Cell Cortex Determines Cell Shape 971
+- Distinct Modes of Cell Migration Rely on the Actin Cytoskeleton 972
+- Cells Migrating in Three Dimensions Can Navigate Around Barriers 974
+- Summary 975
+- MYOSIN AND ACTIN 976
+- Actin-based Motor Proteins Are Members of the Myosin Superfamily 976
+- Myosin Generates Force by Coupling ATP Hydrolysis to Conformational Changes 977
+- Sliding of Myosin II Along Actin Filaments Causes Muscles to Contract 977
+- A Sudden Rise in Cytosolic $\mathrm{Ca^{2+}}$ Concentration Initiates Muscle Contraction 981
+- Heart Muscle Is a Precisely Engineered Machine 984
+- Actin and Myosin Perform a Variety of Functions in Non-Muscle Cells 984
+- Summary 986
+- MICROTUBULES 987
+- Microtubules Are Hollow Tubes Made of Protofilaments 988
+- Microtubules Undergo a Process Called Dynamic Instability 988
+- Microtubule Functions Are Inhibited by Both Polymer-stabilizing and Polymer-destabilizing Drugs 991
+- A Protein Complex Containing $\gamma$-Tubulin Nucleates Microtubules 991
+- The Centrosome Is a Prominent Microtubule Nucleation Site 991
+- Microtubule Organization Varies Widely Among Cell Types 993
+- Microtubule-binding Proteins Modulate Filament Dynamics and Organization 995
+- Microtubule Plus End-binding Proteins Modulate Microtubule Dynamics and Attachments 996
+- Tubulin-sequestering and Microtubule-severing Proteins Modulate Microtubule Dynamics 998
+- Two Types of Motor Proteins Move Along Microtubules 999
+- Microtubules and Motors Move Organelles and Vesicles 1002
+- Motile Cilia and Flagella Are Built from Microtubules and Dyneins 1004
+- Primary Cilia Perform Important Signaling Functions in Animal Cells 1005
+- Summary 1006
+- INTERMEDIATE FILAMENTS AND OTHER CYTOSKELETAL POLYMERS 1007
+- Intermediate Filament Structure Depends on the Lateral Bundling and Twisting of Coiled-Coils 1007
+- Intermediate Filaments Impart Mechanical Stability to Animal Cells 1009
+- Linker Proteins Connect Cytoskeletal Filaments and Bridge the Nuclear Envelope 1011

@@ -1,0 +1,53 @@
+xxiv
+
+## Special Features
+
+- TABLE 1-2 Some Model Organisms and Their Genomes 29
+- TABLE 2-1 Covalent and Noncovalent Chemical Bonds 51
+- TABLE 2-2 Relationship Between the Standard Free-Energy Change, $\Delta G^{\circ}$, and the Equilibrium Constant 69
+- PANEL 2-1 Chemical Bonds and Groups Commonly Encountered in Biological Molecules 94
+- PANEL 2-2 Water and Its Influence on the Behavior of Biological Molecules 96
+- PANEL 2-3 The Principal Types of Weak Noncovalent Bonds That Hold Macromolecules Together 98
+- PANEL 2-4 An Outline of Some of the Types of Sugars Commonly Found in Cells 100
+- PANEL 2-5 Fatty Acids and Other Lipids 102
+- PANEL 2-6 A Survey of the Nucleotides 104
+- PANEL 2-7 Free Energy and Biological Reactions 106
+- PANEL 2-8 Details of the 10 Steps of Glycolysis 108
+- PANEL 2-9 The Complete Citric Acid Cycle 110
+- PANEL 3-1 The 20 Amino Acids Found in Proteins 118
+- TABLE 3-3 Macromolecular Machines Compared to Biomolecular Condensates and Membrane-enclosed Compartments 175
+- TABLE 3-4 Some Molecules Covalently Attached to Proteins That Regulate Protein Function 175
+- TABLE 4-1 Some Vital Statistics for the Human Genome 194
+- TABLE 5-4 Three Major Classes of Transposable Elements 308
+- TABLE 6-1 Principal Types of RNAs Produced in Cells 327
+- PANEL 7-1 Common Structural Motifs in Transcription Regulators 404
+- PANEL 8-1 Review of Classical Genetics 520
+- PANEL 9-1 Protein Structure Determination Using CryoEM 594
+- TABLE 11-1 A Comparison of Inorganic Ion Concentrations Inside and Outside a Typical Mammalian Cell 638
+- PANEL 11-1 The Derivation of the Nernst Equation 656
+- TABLE 12-1 Relative Volumes Occupied by the Major Intracellular Compartments in a Liver Cell (Hepatocyte) 684
+- TABLE 14-1 Quantity of Organelles and Organelle DNA in Some Cells and Tissues 815
+- TABLE 14-2 Mitochondrial Functions 819
+- PANEL 14-1 Redox Potentials 825
+- TABLE 14-3 Product Yields from the Oxidation of Sugars and Fats 836
+- TABLE 15-3 Four Major Families of Heterotrimeric G Proteins 907
+- TABLE 15-4 Some Extracellular Signal Proteins That Act Via RTKs 911
+- TABLE 15-5 The Ras Superfamily of Monomeric GTPases 915
+- TABLE 15-6 Some Extracellular Signal Proteins That Act Through Cytokine Receptors and the JAK-STAT Signaling Pathway 925
+- PANEL 16-2 The Polymerization of Actin and Tubulin 960
+- TABLE 16-1 Chemical Inhibitors of Actin and Microtubules 964
+- PANEL 16-3 Actin Filaments 965
+- PANEL 16-4 Microtubules 994
+- TABLE 16-2 Major Types of Intermediate Filament Proteins in Vertebrate Cells 1007
+- TABLE 17-1 The Major Cyclins and Cdks of Vertebrates and Budding Yeast 1034
+- TABLE 17-2 Summary of the Major Cell-Cycle Regulatory Proteins 1041
+- PANEL 17-1 The Principal Stages of M Phase (Mitosis and Cytokinesis) in an Animal Cell 1048
+- TABLE 19-1 Anchoring Junctions 1107
+- TABLE 19-2 Some Types of Collagen and Their Properties 1134
+- TABLE 19-3 Some Types of Integrins 1149
+- TABLE 20-2 Viruses Associated with Human Cancers 1202
+- TABLE 22-1 Blood Cells 1286
+- TABLE 23-1 Viruses That Cause Human Disease 1323
+- TABLE 24-2 Properties of the Major Classes of Antibodies in Humans 1375
+- TABLE 24-3 Properties of Human Class I and Class II MHC Proteins 1388
+- TABLE 24-4 Some Vaccines Approved for Human Use 1398

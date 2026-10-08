@@ -1,0 +1,104 @@
+Contents   xxix
+
+- RNA Can Both Store Information and Catalyze Chemical Reactions 391
+- How Did Protein Synthesis Evolve? 392
+- All Present-Day Cells Use DNA as Their Hereditary Material 393
+- Summary 393
+- Problems 394
+- References 395
+
+## Chapter 7 Control of Gene Expression
+
+- AN OVERVIEW OF GENE CONTROL 397
+- The Different Cell Types of a Multicellular Organism Contain the Same DNA 397
+- Different Cell Types Synthesize Different Sets of RNAs and Proteins 398
+- The Spectrum of mRNAs Present in a Cell Can Be Used to Accurately Identify the Cell Type 400
+- External Signals Can Cause a Cell to Change the Expression of Its Genes 400
+- Gene Expression Can Be Regulated at Many of the Steps in the Pathway from DNA to RNA to Protein 401
+- Summary 402
+- CONTROL OF TRANSCRIPTION BY SEQUENCE-SPECIFIC DNA-BINDING PROTEINS 402
+- The Sequence of Nucleotides in the DNA Double Helix Can Be Read by Proteins 402
+- Transcription Regulators Contain Structural Motifs That Can Read DNA Sequences 403
+- Dimerization of Transcription Regulators Increases Their Affinity and Specificity for DNA 406
+- Many Transcription Regulators Bind Cooperatively to DNA 407
+- Nucleosome Structure Promotes Cooperative Binding of Transcription Regulators 408
+- DNA-Binding by Transcription Regulators Is Dynamic 409
+- Summary 410
+- TRANSCRIPTION REGULATORS SWITCH GENES ON AND OFF 410
+- The Tryptophan Repressor Switches Genes Off 410
+- Repressors Turn Genes Off and Activators Turn Them On 411
+- Both an Activator and a Repressor Control the Lac Operon 412
+- DNA Looping Can Occur During Bacterial Gene Regulation 412
+- Complex Switches Control Gene Transcription in Eukaryotes 414
+- A Eukaryotic Gene Control Region Includes Many cis-Regulatory Sequences 414
+- Eukaryotic Transcription Regulators Work in Groups 415
+- Activator Proteins Promote the Assembly of RNA Polymerase at the Start Point of Transcription 416
+- Eukaryotic Transcription Activators Direct the Modification of Local Chromatin Structure 417
+- Some Transcription Activators Work by Releasing Paused RNA Polymerase 418
+- Transcription Activators Work Synergistically 419
+- Condensate Formation Likely Increases the Efficiency of Transcription Initiation 420
+- Eukaryotic Transcription Repressors Can Inhibit Transcription in Several Ways 420
+- Insulator DNA Sequences Prevent Eukaryotic Transcription Regulators from Influencing Distant Genes 422
+- Summary 422
+- MOLECULAR GENETIC MECHANISMS THAT CREATE AND MAINTAIN SPECIALIZED CELL TYPES 423
+- Complex Genetic Switches That Regulate Drosophila Development Are Built Up from Smaller Modules 423
+- The Drosophila Eve Gene Is Regulated by Combinatorial Controls 424
+- Transcription Regulators Are Brought into Play by Extracellular Signals 426
+- Combinatorial Gene Control Creates Many Different Cell Types 427
+- Specialized Cell Types Can Be Experimentally Reprogrammed to Become Pluripotent Stem Cells 428
+- Combinations of Master Transcription Regulators Specify Cell Types by Controlling the Expression of Many Genes 429
+- Specialized Cells Must Rapidly Turn Some Genes On and Off 430
+- Differentiated Cells Maintain Their Identity 431
+
+- Transcription Circuits Allow the Cell to Carry Out Logic Operations 433
+- Summary 434
+- MECHANISMS THAT REINFORCE CELL MEMORY IN PLANTS AND ANIMALS 435
+- Patterns of DNA Methylation Can Be Inherited When Vertebrate Cells Divide 435
+- CG-Rich Islands Are Associated with Many Genes in Mammals 436
+- Genomic Imprinting Is Based on DNA Methylation 438
+- A Chromosome-wide Alteration in Chromatin Structure Can Be Inherited 440
+- The Mammalian X-Inactivation in Females Is Triggered by the Synthesis of a Long Noncoding RNA 442
+- Stable Patterns of Gene Expression Can Be Transmitted to Daughter Cells 443
+- Summary 445
+- POST-TRANSCRIPTIONAL CONTROLS 445
+- Transcription Attenuation Causes the Premature Termination of Some RNA Molecules 445
+- Riboswitches Probably Represent Ancient Forms of Gene Control 446
+- Alternative RNA Splicing Can Produce Different Forms of a Protein from the Same Gene 446
+- The Definition of a Gene Has Been Modified Since the Discovery of Alternative RNA Splicing 448
+- Back Splicing Can Produce Circular RNA Molecules 449
+- A Change in the Site of RNA Transcript Cleavage and Poly-A Addition Can Change the C-terminus of a Protein 449
+- Nucleotides in mRNA Can Be Covalently Modified 450
+- RNA Editing Can Change the Meaning of the RNA Message 451
+- The Human AIDS Virus Illustrates How RNA Transport from the Nucleus Can Be Regulated 452
+- mRNAs Can Be Localized to Specific Regions of the Cytosol 453
+- Untranslated Regions of mRNAs Control Their Translation 456
+- The Phosphorylation of an Initiation Factor Regulates Protein Synthesis Globally 457
+- Initiation at AUG Codons Upstream of the Translation Start Can Regulate Eukaryotic Translation Initiation 458
+- Internal Ribosome Entry Sites Also Provide Opportunities for Translational Control 458
+- Changes in mRNA Stability Can Control Gene Expression 459
+- Regulation of mRNA Stability Involves P-bodies and Stress Granules 461
+- Summary 462
+- REGULATION OF GENE EXPRESSION BY NONCODING RNAs 462
+- Small Noncoding RNA Transcripts Regulate Many Animal and Plant Genes Through RNA Interference 462
+- miRNAs Regulate mRNA Translation and Stability 463
+- RNA Interference Also Serves as a Cell Defense Mechanism 464
+- RNA Interference Can Direct Heterochromatin Formation 465
+- piRNAs Protect the Germ Line from Transposable Elements 466
+- RNA Interference Has Become a Powerful Experimental Tool 467
+- Cells Have Additional Mechanisms to Hold Transposons and Integrated Viral Genomes in Check 467
+- Bacteria Use Small Noncoding RNAs to Protect Themselves from Viruses 468
+- Long Noncoding RNAs Have Diverse Functions in the Cell 469
+- Summary 471
+- Problems 472
+- References 474
+
+- Chapter 8 Analyzing Cells, Molecules, and Systems 475
+- ISOLATING CELLS AND GROWING THEM IN CULTURE 476
+- Cells Can Be Isolated from Tissues and Grown in Culture 476
+- Eukaryotic Cell Lines Are a Widely Used Source of Homogeneous Cells 478
+- Hybridoma Cell Lines Are Factories That Produce Monoclonal Antibodies 478
+- Summary 480
+- PURIFYING PROTEINS 480
+- Cells Can Be Separated into Their Component Fractions 480
+- Cell Extracts Provide Accessible Systems to Study Cell Functions 482
+- Proteins Can Be Separated by Chromatography 483

@@ -1,0 +1,85 @@
+- The Expression Levels of All the Genes of an Organism Can Be Determined 37
+- Arabidopsis Has Been Chosen as a Model Plant 38
+- The World of Animal Cells Is Mainly Represented by a Worm, a Fly, a Fish, a Mouse, and a Human 38
+- Studies in the Fruit Fly Drosophila Provide a Key to Vertebrate Development 39
+- The Frog and the Zebrafish Provide Highly Accessible Vertebrate Models 40
+- The Mouse Is the Predominant Mammalian Model Organism 41
+- The COVID-19 Pandemic Has Focused Scientists on the SARS-CoV-2 Coronavirus 42
+- Humans Are Unique in Reporting on Their Own Peculiarities 44
+- To Understand Cells and Organisms Will Require Mathematics, Computers, and Quantitative Information 44
+- Summary 45
+- Problems 46
+- References 47
+- Chapter 2 Cell Chemistry and Bioenergetics 49
+- THE CHEMICAL COMPONENTS OF A CELL 49
+- Water Is Held Together by Hydrogen Bonds 50
+- Four Types of Noncovalent Attractions Help Bring Molecules Together in Cells 51
+- Some Polar Molecules Form Acids and Bases in Water 52
+- A Cell Is Formed from Carbon Compounds 53
+- Cells Contain Four Major Families of Small Organic Molecules 53
+- The Chemistry of Cells Is Dominated by Macromolecules with Remarkable Properties 54
+- Noncovalent Bonds Specify Both the Precise Shape of a Macromolecule and Its Binding to Other Molecules 55
+- Summary 56
+- CATALYSIS AND THE USE OF ENERGY BY CELLS 57
+- Cell Metabolism Is Organized by Enzymes 57
+- Biological Order Is Made Possible by the Release of Heat Energy from Cells 58
+- Cells Obtain Energy by the Oxidation of Organic Molecules 61
+- Oxidation and Reduction Involve Electron Transfers 62
+- Enzymes Lower the Activation-Energy Barriers That Block Chemical Reactions 63
+- Enzymes Can Drive Substrate Molecules Along Specific Reaction Pathways 64
+- How Enzymes Find Their Substrates: The Enormous Rapidity of Molecular Motions 65
+- The Free-Energy Change for a Reaction, $\Delta G$, Determines Whether It Can Occur Spontaneously 66
+- The Concentration of Reactants Influences the Free-Energy Change and a Reaction's Direction 67
+- The Standard Free-Energy Change, $\Delta G^{\circ}$, Makes It Possible to Compare the Energetics of Different Reactions 67
+- The Equilibrium Constant and $\Delta G^{\circ}$ Are Readily Derived from Each Other 68
+- The Free-Energy Changes of Coupled Reactions Are Additive 69
+- Activated Carrier Molecules Are Essential for Biosynthesis 69
+- The Formation of an Activated Carrier Is Coupled to an Energetically Favorable Reaction 70
+- ATP Is the Most Widely Used Activated Carrier Molecule 71
+- Energy Stored in ATP Is Often Harnessed to Join Two Molecules Together 72
+
+## Contents
+
+- Chapter 1 Cells, Genomes, and the Diversity of Life 1
+- THE UNIVERSAL FEATURES OF LIFE ON EARTH 2
+- All Cells Store Their Hereditary Information in the Form of Double-Strand DNA Molecules 2
+- All Cells Replicate Their Hereditary Information by Templated Polymerization 3
+- All Cells Transcribe Portions of Their DNA into RNA Molecules 5
+- All Cells Use Proteins as Catalysts 6
+- All Cells Translate RNA into Protein in the Same Way 6
+- Each Protein Is Encoded by a Specific Gene 7
+- Life Requires a Continual Input of Free Energy 7
+- All Cells Function as Biochemical Factories 8
+- All Cells Are Enclosed in a Plasma Membrane Across Which Nutrients and Waste Materials Must Pass 8
+- Cells Operate at a Microscopic Scale Dominated by Random Thermal Motion 9
+- A Living Cell Can Exist with 500 Genes 10
+- Summary 10
+- GENOME DIVERSIFICATION AND THE TREE OF LIFE 10
+- The Tree of Life Has Three Major Domains: Eukaryotes, Bacteria, and Archaea 11
+- Eukaryotes Make Up the Domain of Life That Is Most Familiar to Us 13
+- On the Basis of Genome Analysis, Bacteria Are the Most Diverse Group of Organisms on the Planet 13
+- Archaea: The Most Mysterious Domain of Life 15
+- Organisms Occupy Most of Our Planet 15
+- Cells Can Be Powered by a Wide Variety of Free-Energy Sources 15
+- Some Cells Fix Nitrogen and Carbon Dioxide for Other Cells 17
+- Genomes Diversify Over Evolutionary Time, Producing New Types of Organisms 18
+- New Genes Are Generated from Preexisting Genes 19
+- Gene Duplications Give Rise to Families of Related Genes Within a Single Genome 20
+- The Function of a Gene Can Often Be Deduced from Its Nucleotide Sequence 20
+- More Than 200 Gene Families Are Common to All Three Domains of Life 21
+- Summary 21
+- EUKARYOTES AND THE ORIGIN OF THE EUKARYOTIC CELL 22
+- Eukaryotic Cells Contain a Variety of Organelles 23
+- Mitochondria Evolved from a Symbiotic Bacterium Captured by an Ancient Archaeon 25
+- Chloroplasts Evolved from a Symbiotic Photosynthetic Bacterium Engulfed by an Ancient Eukaryotic Cell 26
+- Eukaryotes Have Hybrid Genomes 27
+- Eukaryotic Genomes Are Big 28
+- Eukaryotic Genomes Are Rich in Regulatory DNA 28
+- Eukaryotic Genomes Define the Program of Multicellular Development 29
+- Many Eukaryotes Live as Solitary Cells 30
+- Summary 31
+- MODEL ORGANISMS 31
+- Mutations Reveal the Functions of Genes 32
+- Molecular Biology Began with a Spotlight on One Bacterium and Its Viruses 33
+- The Focus on E. coli as a Model Organism Has Accelerated Many Subsequent Discoveries 35
+- A Yeast Serves as a Minimal Model Eukaryote 36
