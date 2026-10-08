@@ -51,39 +51,44 @@ jobs:
           "$MOLECULAR_CELL_WORKDIR/venv/bin/python" "$MOLECULAR_CELL_WORKDIR/tools/process_molecular_cell.py" prepare
       - name: Parse the verified blank third page with explicit text mode
         run: |
-          "$MOLECULAR_CELL_WORKDIR/venv/bin/python" - <<'PYCODE'
-          import json, os, sys
-          from pathlib import Path
-          import pymupdf
-          import mineru.parser as parser_module
-          root = Path(os.environ['MOLECULAR_CELL_WORKDIR'])
-          doc = pymupdf.open(root / 'source/molecular-biology-of-the-cell-7e.pdf')
-          page = doc[2]
-          assert page.get_text().strip() == ''
-          assert page.get_images() == []
-          assert min(page.get_pixmap(alpha=False).samples) == 255
-          original_parser = parser_module.MinerUParser
-          class BlankTextParser(original_parser):
-              def __init__(self, *args, **kwargs):
-                  kwargs['parse_mode'] = 'txt'
-                  super().__init__(*args, **kwargs)
-          parser_module.MinerUParser = BlankTextParser
-          sys.path.insert(0, str(root / 'tools'))
-          import process_molecular_cell
-          process_molecular_cell.parse_all(only={0}, selected_pages={3})
-          chapter = root / 'Molecular Biology of the Cell/00_Front_Matter'
-          checkpoint = chapter / 'chunks/pages_0003-0003/parse_complete.json'
-          data = json.loads(checkpoint.read_text())
-          data['ocr_mode'] = 'txt'
-          data['reason'] = 'Verified blank original PDF page: no native text or images, all rendered pixels white. Avoid auto-OCR hallucinations.'
-          checkpoint.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
-          override = {'original_pdf_page': 3, 'ocr_mode': 'txt', 'reason': data['reason']}
-          for manifest_path in [root / 'chapter-plan.json', root / 'Molecular Biology of the Cell/manifest.json']:
-              manifest = json.loads(manifest_path.read_text())
-              manifest['ocr_mode_overrides'] = [override]
-              manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
-          print('Blank page 3 parsed with the same standard/high Hybrid engine and explicit txt mode.')
+          cat > "$MOLECULAR_CELL_WORKDIR/tools/parse_blank_page.py" <<'PYCODE'
+          def main():
+              import json, os, sys
+              from pathlib import Path
+              import pymupdf
+              import mineru.parser as parser_module
+              root = Path(os.environ['MOLECULAR_CELL_WORKDIR'])
+              doc = pymupdf.open(root / 'source/molecular-biology-of-the-cell-7e.pdf')
+              page = doc[2]
+              assert page.get_text().strip() == ''
+              assert page.get_images() == []
+              assert min(page.get_pixmap(alpha=False).samples) == 255
+              original_parser = parser_module.MinerUParser
+              class BlankTextParser(original_parser):
+                  def __init__(self, *args, **kwargs):
+                      kwargs['parse_mode'] = 'txt'
+                      super().__init__(*args, **kwargs)
+              parser_module.MinerUParser = BlankTextParser
+              sys.path.insert(0, str(root / 'tools'))
+              import process_molecular_cell
+              process_molecular_cell.parse_all(only={0}, selected_pages={3})
+              chapter = root / 'Molecular Biology of the Cell/00_Front_Matter'
+              checkpoint = chapter / 'chunks/pages_0003-0003/parse_complete.json'
+              data = json.loads(checkpoint.read_text())
+              data['ocr_mode'] = 'txt'
+              data['reason'] = 'Verified blank original PDF page: no native text or images, all rendered pixels white. Avoid auto-OCR hallucinations.'
+              checkpoint.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
+              override = {'original_pdf_page': 3, 'ocr_mode': 'txt', 'reason': data['reason']}
+              for manifest_path in [root / 'chapter-plan.json', root / 'Molecular Biology of the Cell/manifest.json']:
+                  manifest = json.loads(manifest_path.read_text())
+                  manifest['ocr_mode_overrides'] = [override]
+                  manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
+              print('Blank page 3 parsed with the same standard/high Hybrid engine and explicit txt mode.')
+          
+          if __name__ == "__main__":
+              main()
           PYCODE
+          "$MOLECULAR_CELL_WORKDIR/venv/bin/python" "$MOLECULAR_CELL_WORKDIR/tools/parse_blank_page.py"
       - uses: actions/download-artifact@v4
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
