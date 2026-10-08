@@ -1,0 +1,185 @@
+name: Parse Molecular Biology of the Cell with MinerU Hybrid
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/parse-molecular-cell-hybrid.yml
+      - scripts/process_molecular_cell.py
+      - scripts/restore_original_pdf.py
+  workflow_dispatch:
+
+concurrency:
+  group: molecular-cell-hybrid
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+env:
+  MOLECULAR_CELL_WORKDIR: ${{ runner.temp }}/molecular-cell
+  BOOK_RELEASE_TAG: molecular-biology-of-the-cell-7e-2026-10-09
+  PYTHONUNBUFFERED: "1"
+
+jobs:
+  parse:
+    if: github.repository == 'kazewwk/test'
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    strategy:
+      fail-fast: false
+      max-parallel: 16
+      matrix:
+        section: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: scripts
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: latest
+          enable-cache: false
+      - name: Install CPU MinerU Hybrid runtime
+        run: |
+          uv venv "$MOLECULAR_CELL_WORKDIR/venv" --python 3.12
+          uv pip install --python "$MOLECULAR_CELL_WORKDIR/venv/bin/python" mineru==4.0.10 pymupdf==1.28.2
+          mkdir -p "$MOLECULAR_CELL_WORKDIR/source" "$MOLECULAR_CELL_WORKDIR/tools"
+          cp scripts/process_molecular_cell.py scripts/restore_original_pdf.py "$MOLECULAR_CELL_WORKDIR/tools/"
+      - name: Download and verify original release PDF
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release download "$BOOK_RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --pattern molecular-biology-of-the-cell-7e.pdf --dir "$MOLECULAR_CELL_WORKDIR/source"
+          python3 - <<'PY'
+          import hashlib, os
+          from pathlib import Path
+          p = Path(os.environ['MOLECULAR_CELL_WORKDIR']) / 'source/molecular-biology-of-the-cell-7e.pdf'
+          with p.open('rb') as f:
+              assert hashlib.file_digest(f, 'sha256').hexdigest() == 'eac9f2bd1902e2b87f915901110e68a1de71c31d62d858a74883250ac58599ae'
+          assert p.stat().st_size == 301307739
+          PY
+      - name: Prepare exact chapter pages
+        run: '"$MOLECULAR_CELL_WORKDIR/venv/bin/python" "$MOLECULAR_CELL_WORKDIR/tools/process_molecular_cell.py" prepare --only ${{ matrix.section }}'
+      - name: Parse every chapter page with local CPU Hybrid
+        run: '"$MOLECULAR_CELL_WORKDIR/venv/bin/python" "$MOLECULAR_CELL_WORKDIR/tools/process_molecular_cell.py" parse --only ${{ matrix.section }}'
+      - name: Resolve chapter output path
+        id: chapter
+        env:
+          SECTION: ${{ matrix.section }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          root = Path(os.environ['MOLECULAR_CELL_WORKDIR'])
+          section = next(s for s in json.loads((root / 'chapter-plan.json').read_text())['sections'] if s['number'] == int(os.environ['SECTION']))
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as out:
+              out.write('path=' + str(root / 'Molecular Biology of the Cell' / section['folder']) + '\n')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: section-${{ matrix.section }}
+          path: ${{ steps.chapter.outputs.path }}
+          compression-level: 0
+          retention-days: 1
+          if-no-files-found: error
+
+  assemble-and-publish:
+    needs: parse
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: scripts
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: latest
+          enable-cache: false
+      - name: Prepare verified source and book structure
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          uv venv "$MOLECULAR_CELL_WORKDIR/venv" --python 3.12
+          uv pip install --python "$MOLECULAR_CELL_WORKDIR/venv/bin/python" mineru==4.0.10 pymupdf==1.28.2
+          mkdir -p "$MOLECULAR_CELL_WORKDIR/source" "$MOLECULAR_CELL_WORKDIR/tools"
+          cp scripts/process_molecular_cell.py scripts/restore_original_pdf.py "$MOLECULAR_CELL_WORKDIR/tools/"
+          gh release download "$BOOK_RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --pattern molecular-biology-of-the-cell-7e.pdf --dir "$MOLECULAR_CELL_WORKDIR/source"
+          "$MOLECULAR_CELL_WORKDIR/venv/bin/python" "$MOLECULAR_CELL_WORKDIR/tools/process_molecular_cell.py" prepare
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: section-*
+          path: ${{ env.MOLECULAR_CELL_WORKDIR }}/downloaded-sections
+      - name: Assemble all sections and verify every original PDF page
+        run: |
+          "$MOLECULAR_CELL_WORKDIR/venv/bin/python" - <<'PY'
+          import json, os, shutil
+          from pathlib import Path
+          import pymupdf
+          root = Path(os.environ['MOLECULAR_CELL_WORKDIR'])
+          manifest = json.loads((root / 'chapter-plan.json').read_text())
+          assert manifest['source_sha256'] == 'eac9f2bd1902e2b87f915901110e68a1de71c31d62d858a74883250ac58599ae'
+          source = pymupdf.open(root / 'source/molecular-biology-of-the-cell-7e.pdf')
+          for section in manifest['sections']:
+              artifact = root / 'downloaded-sections' / f'section-{section["number"]}'
+              assert artifact.is_dir(), artifact
+              target = root / 'Molecular Biology of the Cell' / section['folder']
+              shutil.copytree(artifact, target, dirs_exist_ok=True)
+              with pymupdf.open(target / 'source.pdf') as chapter:
+                  assert len(chapter) == section['page_count']
+                  for i, page in enumerate(chapter):
+                      assert page.get_text() == source[section['pdf_first_page'] - 1 + i].get_text()
+          print('All 1555 original PDF pages verified across 28 sections.')
+          PY
+          "$MOLECULAR_CELL_WORKDIR/venv/bin/python" "$MOLECULAR_CELL_WORKDIR/tools/process_molecular_cell.py" finalize
+      - name: Upload final ZIP and verification files to original release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          root = Path(os.environ['MOLECULAR_CELL_WORKDIR'])
+          a = json.loads((root / 'archive.json').read_text())
+          (root / 'Molecular-Biology-of-the-Cell-7e-MinerU-Hybrid-SHA256SUMS.txt').write_text(a['sha256'] + '  ' + a['file'] + '\n')
+          (root / 'Molecular-Biology-of-the-Cell-7e-MinerU-Hybrid-manifest.json').write_text((root / 'Molecular Biology of the Cell/manifest.json').read_text())
+          (root / 'Molecular-Biology-of-the-Cell-7e-MinerU-Hybrid-validation.json').write_text((root / 'Molecular Biology of the Cell/validation_report.json').read_text())
+          PY
+          gh release upload "$BOOK_RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --clobber "$MOLECULAR_CELL_WORKDIR/Molecular-Biology-of-the-Cell-7e-MinerU-Hybrid.zip" "$MOLECULAR_CELL_WORKDIR/Molecular-Biology-of-the-Cell-7e-MinerU-Hybrid-SHA256SUMS.txt" "$MOLECULAR_CELL_WORKDIR/Molecular-Biology-of-the-Cell-7e-MinerU-Hybrid-manifest.json" "$MOLECULAR_CELL_WORKDIR/Molecular-Biology-of-the-Cell-7e-MinerU-Hybrid-validation.json"
+          python3 - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+          root = Path(os.environ['MOLECULAR_CELL_WORKDIR'])
+          local = json.loads((root / 'archive.json').read_text())
+          remote = json.loads(subprocess.check_output(['gh', 'api', f'repos/{os.environ["GITHUB_REPOSITORY"]}/releases/tags/{os.environ["BOOK_RELEASE_TAG"]}']))
+          asset = next(a for a in remote['assets'] if a['name'] == local['file'])
+          assert asset['size'] == local['size']
+          assert asset['digest'] == 'sha256:' + local['sha256']
+          print('Release ZIP verified:', asset['browser_download_url'])
+          PY
+      - name: Commit complete parsed book directory to main
+        run: |
+          cp -a "$MOLECULAR_CELL_WORKDIR/Molecular Biology of the Cell" "$GITHUB_WORKSPACE/"
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add --sparse 'Molecular Biology of the Cell'
+          git commit -m 'Add complete Molecular Biology of the Cell 7e MinerU Hybrid parsing'
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - name: Verify published repository tree
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess
+          expected = subprocess.check_output(['git', 'rev-parse', 'HEAD:Molecular Biology of the Cell'], text=True).strip()
+          remote = json.loads(subprocess.check_output(['gh', 'api', f'repos/{os.environ["GITHUB_REPOSITORY"]}/git/trees/main']))
+          actual = next(v['sha'] for v in remote['tree'] if v['path'] == 'Molecular Biology of the Cell')
+          assert actual == expected, (actual, expected)
+          print('Verified complete repository folder tree:', actual)
+          PY
+          echo "Completed 1555 pages, 24 chapters, all front/back matter, verified ZIP and repository tree." >> "$GITHUB_STEP_SUMMARY"
