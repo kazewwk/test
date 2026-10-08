@@ -1,0 +1,31 @@
+
+
+---
+
+
+
+---
+
+# About the Covers
+
+**Front cover:** The determination of molecular structures by cryo-electron microscopy is a major new advance, highlighted in this Seventh Edition, and it has been chosen as the basis for our cover design. One of the main benefits of the technique has been the ability to determine the structure of integral membrane protein complexes that are either hard or impossible to crystallize. Richard Henderson at the MRC Laboratory of Molecular Biology in Cambridge, England (who shared the Nobel Prize in Chemistry in 2017 for cryoEM), suggested six recent atomic structures, all determined by cryoEM, all integral membrane proteins, and all resolved to better than 0.4 nm. Simple images of each of these molecules, which contain multiple subunits, have been drawn to scale and inserted as graphic elements in their “silver” membranes. The six molecular structures (together with their corresponding PDB codes) are as follows, starting clockwise from top left:
+
+1. The voltage-gated sodium channel (see Figure 11–30) from the desert bush spider, a target for many neurotoxins including puffer fish toxin. (PDB code: 6A95.)
+
+2. The human calcitonin-gene-related peptide (CGRP) receptor in complex with its G-protein-coupled receptor (GPCR). (PDB code: 6E3Y.)
+
+3. The light-harvesting reaction center complex (LH1-RC) from the purple bacterium Blastochloris viridis. Unusually, it absorbs infrared light. In addition to the reaction center and multiple cofactors, the light-harvesting ring contains 17 alpha, 17 beta, and 16 gamma polypeptides. (PDB code: 6ET5.)
+
+4. The six connexins in the hemichannel of a human connexin assembly; see Figure 19–25. (PDB code: 6L3T.)
+
+5. The fungal class D GPCR from Saccharomyces cerevisiae in complex with the dimeric pheromone receptor, Ste2. (PDB code: 7AD3.)
+
+6. The ubiquinol oxidase complex from Escherichia coli. (PDB code: 6WTI.)
+
+**Back cover:** Instead of the more conventional pictures of the book’s authors that appeared on the back covers in the past, we have chosen for the Seventh Edition to play with the idea of a “genetic portrait of each author.” Issues around the public disclosure of personal health information mean that we cannot use our own individual DNA sequences, so instead we have chosen a short 1000-base-pair region of the human genome that contains common, naturally occurring, combinatorial variants and have presented them as if each might have come from one of the authors. The sequence chosen comes from an enhancer for a gene that codes for one of the subunits of the exocyst complex. This complex mediates the tethering of secretory vesicles to the plasma membrane prior to fusion (see Figure 13–21). Each of the four nucleotides in the DNA sequence has been color coded as shown in Figure 4–5, and each author’s 1-kb sequence (100 lines of 10 bases per line) can be read from top left. The seven variants shown include a five-nucleotide deletion (white box) and several singlenucleotide exchanges nearer the end of the sequence (outlined in black). We thank Sai Zhang and Michael Snyder for kindly providing the seven sequences.
+
+---
+
+<table><tr><td colspan="6">The genetic code</td></tr><tr><td>1st position(5&#x27; end)</td><td colspan="4">2nd position</td><td>3rd position(3&#x27; end)</td></tr><tr><td>↓</td><td>U</td><td>C</td><td>A</td><td>G</td><td>↓</td></tr><tr><td rowspan="4">U</td><td>Phe</td><td>Ser</td><td>Tyr</td><td>Cys</td><td>U</td></tr><tr><td>Phe</td><td>Ser</td><td>Tyr</td><td>Cys</td><td>C</td></tr><tr><td>Leu</td><td>Ser</td><td>STOP</td><td>STOP</td><td>A</td></tr><tr><td>Leu</td><td>Ser</td><td>STOP</td><td>Trp</td><td>G</td></tr><tr><td rowspan="4">C</td><td>Leu</td><td>Pro</td><td>His</td><td>Arg</td><td>U</td></tr><tr><td>Leu</td><td>Pro</td><td>His</td><td>Arg</td><td>C</td></tr><tr><td>Leu</td><td>Pro</td><td>Gln</td><td>Arg</td><td>A</td></tr><tr><td>Leu</td><td>Pro</td><td>Gln</td><td>Arg</td><td>G</td></tr><tr><td rowspan="4">A</td><td>Ile</td><td>Thr</td><td>Asn</td><td>Ser</td><td>U</td></tr><tr><td>Ile</td><td>Thr</td><td>Asn</td><td>Ser</td><td>C</td></tr><tr><td>Ile</td><td>Thr</td><td>Lys</td><td>Arg</td><td>A</td></tr><tr><td>Met</td><td>Thr</td><td>Lys</td><td>Arg</td><td>G</td></tr><tr><td rowspan="4">G</td><td>Val</td><td>Ala</td><td>Asp</td><td>Gly</td><td>U</td></tr><tr><td>Val</td><td>Ala</td><td>Asp</td><td>Gly</td><td>C</td></tr><tr><td>Val</td><td>Ala</td><td>Glu</td><td>Gly</td><td>A</td></tr><tr><td>Val</td><td>Ala</td><td>Glu</td><td>Gly</td><td>G</td></tr></table>
+
+<table><tbody><tr><td colspan="3">Amino acids and their symbols</td><td>Codons</td></tr><tr><td>A</td><td>Ala</td><td>Alanine</td><td>GCA GCC GCG GCU</td></tr><tr><td>C</td><td>Cys</td><td>Cysteine</td><td>UGC UGU</td></tr><tr><td>D</td><td>Asp</td><td>Aspartic acid</td><td>GAC GAU</td></tr><tr><td>E</td><td>Glu</td><td>Glutamic acid</td><td>GAA GAG</td></tr><tr><td>F</td><td>Phe</td><td>Phenylalanine</td><td>UUC UUU</td></tr><tr><td>G</td><td>Gly</td><td>Glycine</td><td>GGA GGC GGG GGU</td></tr><tr><td>H</td><td>His</td><td>Histidine</td><td>CAC CAU</td></tr><tr><td>I</td><td>Ile</td><td>Isoleucine</td><td>AUA AUC AUU</td></tr><tr><td>K</td><td>Lys</td><td>Lysine</td><td>AAA AAG</td></tr><tr><td>L</td><td>Leu</td><td>Leucine</td><td>UUA UUG CUA CUC CUG CUU</td></tr><tr><td>M</td><td>Met</td><td>Methionine</td><td>AUG</td></tr><tr><td>N</td><td>Asn</td><td>Asparagine</td><td>AAC AAU</td></tr><tr><td>P</td><td>Pro</td><td>Proline</td><td>CCA CCC CCG CCU</td></tr><tr><td>Q</td><td>Gln</td><td>Glutamine</td><td>CAA CAG</td></tr><tr><td>R</td><td>Arg</td><td>Arginine</td><td>AGA AGG CGA CGC CGG CGU</td></tr><tr><td>S</td><td>Ser</td><td>Serine</td><td>AGC AGU UCA UCC UCG UCU</td></tr><tr><td>T</td><td>Thr</td><td>Threonine</td><td>ACA ACC ACG ACU</td></tr><tr><td>V</td><td>Val</td><td>Valine</td><td>GUA GUC GUG GUU</td></tr><tr><td>W</td><td>Trp</td><td>Tryptophan</td><td>UGG</td></tr><tr><td>Y</td><td>Tyr</td><td>Tyrosine</td><td>UAC UAU</td></tr></tbody></table>

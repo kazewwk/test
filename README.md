@@ -25,3 +25,7 @@
 每本书的 `仓库文件校验.json` 记录文件大小、SHA-256 和 Git blob SHA-1。
 
 [13 份原始 ZIP 下载页](https://github.com/kazewwk/test/releases/tag/mineru-books-2026-10-07)仍提供完整原包，原始压缩包的[目录与校验值](books/manifest.json)也保留在仓库中。
+
+## 细胞生物学制卡
+
+[细胞生物学制卡](细胞生物学制卡/README.md)以《细胞生物学》第5版的16章、45节为骨架，将 Molecular Biology of the Cell 第7版的对应英文原文、图表及习题整理进各章。各章提供整合教材、小节材料、制卡素材索引及跨章入口，并附完整来源与校验报告。
