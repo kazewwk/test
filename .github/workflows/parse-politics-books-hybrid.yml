@@ -9,6 +9,12 @@ on:
       - scripts/politics_books_plan.json
       - scripts/restore_politics_original_pdf.py
   workflow_dispatch:
+    inputs:
+      source_run_id:
+        description: Reuse all completed parsing artifacts from this run and only assemble/publish
+        required: false
+        default: ""
+        type: string
 
 concurrency:
   group: politics-books-hybrid
@@ -25,6 +31,7 @@ env:
 
 jobs:
   parse:
+    if: ${{ inputs.source_run_id == '' }}
     runs-on: ubuntu-latest
     timeout-minutes: 360
     strategy:
@@ -307,6 +314,7 @@ jobs:
 
   assemble-and-publish:
     needs: parse
+    if: ${{ always() && (needs.parse.result == 'success' || inputs.source_run_id != '') }}
     runs-on: ubuntu-latest
     timeout-minutes: 120
     permissions:
@@ -334,6 +342,8 @@ jobs:
           pattern: politics-book-*
           path: ${{ env.POLITICS_WORKDIR }}/parsed
           merge-multiple: true
+          run-id: ${{ inputs.source_run_id || github.run_id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Assemble chapters, preserve every original page and validate outputs
         run: |
           for book in 1 2 3 4 5; do

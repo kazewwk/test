@@ -169,7 +169,7 @@ def finalize(number):
             # FULL view includes auxiliary blocks, page headers, footers, footnotes and tables.
             view=ParseResult.from_dict({**combined,'pages':[page]}).markdown(mode=RenderMode.FULL)
             coverage.append({'pdf_page':physical,'section':section['folder'],'chapter_page':page['page_idx']+1,
-                'mineru_blocks':len(page['blocks']),'mineru_markdown_characters':len(view.strip()),
+                'mineru_blocks':len(page.get('blocks',[])),'mineru_markdown_characters':len(view.strip()),
                 'source_native_text_characters':len(text.strip()),'source_pdf_retained':True,'has_parsed_page':True})
         combined['is_full_document']=True
         write_json(folder/'middle_json.json',combined)
