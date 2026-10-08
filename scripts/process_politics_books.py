@@ -191,12 +191,14 @@ def finalize(number):
         toc.append(f'| [{section["title"]}]({section["folder"]}/chapter.md) | {section["pdf_first_page"]}–{section["pdf_last_page"]} | {section["page_count"]} |')
     assert [p['pdf_page'] for p in coverage]==list(range(1,book['pages']+1))
     weak=[p for p in coverage if p['source_native_text_characters']>100 and p['mineru_markdown_characters']<100]
+    unrecognized=[p for p in coverage if p['mineru_blocks']==0 and p['pdf_page'] not in book.get('blank_pages',[])]
     write_json(directory/'page_coverage.json',coverage)
     write_json(directory/'manifest.json',{**book,'mineru_version':'4.0.10','mode':'Hybrid','tier':'standard','effort':'high',
         'image_analysis':True,'small_model_backend':'onnx','vlm_engine':'llama-cpp','chunks':chunk_metadata})
     report={'title':book['title'],'source_page_count':book['pages'],'parsed_page_count':len(coverage),
       'chapter_count':sum(s['kind']=='chapter' for s in book['sections']),'section_count':len(book['sections']),
-      'missing_pages':[],'duplicate_pages':[],'pages_needing_review':weak,'source_sha256':book['sha256'],
+      'missing_pages':[],'duplicate_pages':[],'pages_needing_review':weak,
+      'unrecognized_nonblank_pages':unrecognized,'verified_blank_pages':book.get('blank_pages',[]),'source_sha256':book['sha256'],
       'character_accuracy_guaranteed':False,'original_content_preserved':'Exact original PDF bytes, section PDFs, native text and all MinerU Hybrid outputs.'}
     write_json(directory/'validation_report.json',report);write_json(directory/'source_pdf_warnings.json',warnings)
     (directory/'full.md').write_text('\n'.join(full))
@@ -226,6 +228,7 @@ def finalize(number):
     write_json(directory/'validation_report.json',report)
     # Review weak pages before considering publication complete.
     assert not weak,('Pages need manual review',book['id'],weak)
+    assert not unrecognized,('Nonblank pages need recognition review',book['id'],unrecognized)
     split_large_files(directory)
     records=[{'path':str(f.relative_to(directory)),'size':f.stat().st_size,'sha256':checksum(f)}
              for f in sorted(directory.rglob('*')) if f.is_file() and f.name!='SHA256_manifest.json']
