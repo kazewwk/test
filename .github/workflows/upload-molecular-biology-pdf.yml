@@ -1,0 +1,132 @@
+name: Upload Molecular Biology of the Cell PDF
+
+"on":
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/upload-molecular-biology-pdf.yml
+
+concurrency:
+  group: molecular-biology-pdf-release
+  cancel-in-progress: false
+
+jobs:
+  upload:
+    if: github.repository == 'kazewwk/test'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: write
+    steps:
+      - name: Download the original PDF and verify SHA-256
+        env:
+          SOURCE_URL: "https://cam-owned-reported-scales.trycloudflare.com/T807ilrD9jg1B2GrwBH7idAwwdRCEnCqojelBovLeWM/book.pdf"
+        run: |
+          curl --fail --location --retry 4 --retry-all-errors --connect-timeout 30 --max-time 900 \
+            --output molecular-biology-of-the-cell-7e.pdf "$SOURCE_URL"
+          python3 - <<'PY'
+          import hashlib
+          from pathlib import Path
+          p = Path('molecular-biology-of-the-cell-7e.pdf')
+          assert p.stat().st_size == 301307739, 'PDF size mismatch'
+          h = hashlib.sha256()
+          with p.open('rb') as f:
+              assert f.read(8).startswith(b'%PDF-'), 'Invalid PDF header'
+              f.seek(0)
+              for chunk in iter(lambda: f.read(1024 * 1024), b''):
+                  h.update(chunk)
+          assert h.hexdigest() == 'eac9f2bd1902e2b87f915901110e68a1de71c31d62d858a74883250ac58599ae', 'PDF SHA-256 mismatch'
+          print('Verified original PDF:', p.stat().st_size, 'bytes;', h.hexdigest())
+          PY
+      - name: Upload, verify and publish the Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import http.client
+          import json
+          import os
+          from pathlib import Path
+          import urllib.error
+          import urllib.parse
+          import urllib.request
+
+          repo = 'kazewwk/test'
+          tag = 'molecular-biology-of-the-cell-7e-2026-10-09'
+          filename = 'molecular-biology-of-the-cell-7e.pdf'
+          original = 'Molecular Biology of the Ce_ (z-library.sk, 1lib.sk, z-lib.sk)-1.pdf'
+          expected_digest = 'sha256:eac9f2bd1902e2b87f915901110e68a1de71c31d62d858a74883250ac58599ae'
+          expected_size = 301307739
+          headers = {
+              'Accept': 'application/vnd.github+json',
+              'Authorization': 'Bearer ' + os.environ['GH_TOKEN'],
+              'User-Agent': 'book-pdf-release-upload',
+              'X-GitHub-Api-Version': '2022-11-28',
+          }
+
+          def api(method, endpoint, data=None):
+              request = urllib.request.Request(
+                  'https://api.github.com/repos/' + repo + endpoint,
+                  data=json.dumps(data).encode() if data is not None else None,
+                  headers={**headers, 'Content-Type': 'application/json'}, method=method)
+              with urllib.request.urlopen(request, timeout=120) as response:
+                  return json.load(response)
+
+          try:
+              release = api('GET', '/releases/tags/' + tag)
+          except urllib.error.HTTPError as error:
+              if error.code != 404:
+                  raise
+              release = api('POST', '/releases', {
+                  'tag_name': tag,
+                  'target_commitish': os.environ['GITHUB_SHA'],
+                  'name': 'Molecular Biology of the Cell（第七版 PDF）',
+                  'draft': True,
+                  'prerelease': False,
+                  'make_latest': 'false',
+                  'body': '\n'.join([
+                      '《Molecular Biology of the Cell》第七版原始 PDF，共 1555 页。',
+                      '',
+                      '原始文件名：`' + original + '`',
+                      '文件大小：301,307,739 字节（287.35 MiB）。',
+                      'SHA-256：`' + expected_digest.split(':')[1] + '`',
+                      '',
+                      'PDF 原文件未经修改，上传后已核对 GitHub 保存的文件大小和 SHA-256。',
+                  ]),
+              })
+
+          asset = next((a for a in release['assets'] if a['name'] == filename), None)
+          if asset is None:
+              url = urllib.parse.urlsplit(release['upload_url'].split('{')[0])
+              assert url.scheme == 'https' and url.hostname == 'uploads.github.com'
+              path = url.path + '?' + urllib.parse.urlencode({'name': filename, 'label': original})
+              connection = http.client.HTTPSConnection(url.hostname, timeout=600, blocksize=1024 * 1024)
+              try:
+                  with Path(filename).open('rb') as pdf:
+                      connection.request('POST', path, body=pdf, headers={
+                          **headers, 'Content-Type': 'application/pdf',
+                          'Content-Length': str(expected_size),
+                      })
+                  response = connection.getresponse()
+                  payload = response.read()
+                  if response.status != 201:
+                      raise RuntimeError('GitHub asset upload failed: HTTP ' + str(response.status) + '; ' + payload.decode()[:1000])
+                  asset = json.loads(payload)
+              finally:
+                  connection.close()
+
+          asset = api('GET', '/releases/assets/' + str(asset['id']))
+          assert asset['name'] == filename
+          assert asset['state'] == 'uploaded', 'Asset upload is incomplete'
+          assert asset['size'] == expected_size, 'GitHub asset size mismatch'
+          assert asset['digest'] == expected_digest, 'GitHub asset SHA-256 mismatch'
+          assert asset['label'] == original, 'GitHub asset label mismatch'
+          if release['draft']:
+              release = api('PATCH', '/releases/' + str(release['id']), {'draft': False, 'make_latest': 'false'})
+          assert not release['draft'], 'Release was not published'
+          print('Published:', release['html_url'])
+          print('Download:', asset['browser_download_url'])
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              summary.write('Uploaded and verified the original PDF (301,307,739 bytes).\n\n')
+              summary.write('[Release](' + release['html_url'] + ') · [PDF download](' + asset['browser_download_url'] + ')\n')
+          PY
