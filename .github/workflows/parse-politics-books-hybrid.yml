@@ -1,0 +1,392 @@
+name: Parse five politics textbooks with MinerU Hybrid CPU
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/parse-politics-books-hybrid.yml
+      - scripts/process_politics_books.py
+      - scripts/politics_books_plan.json
+      - scripts/restore_politics_original_pdf.py
+  workflow_dispatch:
+
+concurrency:
+  group: politics-books-hybrid
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+env:
+  POLITICS_WORKDIR: /tmp/politics-books
+  POLITICS_PLAN: ${{ github.workspace }}/scripts/politics_books_plan.json
+  BOOK_RELEASE_TAG: kaoyan-politics-books-2026-10-09
+  PYTHONUNBUFFERED: "1"
+
+jobs:
+  parse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        include:
+          - book: 1
+            first: 1
+            last: 30
+            asset: 01-outline-modern-chinese-history-2023.pdf
+          - book: 2
+            first: 1
+            last: 30
+            asset: 02-xi-jinping-thought-introduction.pdf
+          - book: 3
+            first: 1
+            last: 30
+            asset: 03-ideology-morality-rule-of-law-2023.pdf
+          - book: 4
+            first: 1
+            last: 30
+            asset: 04-mao-zedong-thought-theoretical-system.pdf
+          - book: 5
+            first: 1
+            last: 30
+            asset: 05-basic-principles-marxism-2023.pdf
+          - book: 1
+            first: 31
+            last: 60
+            asset: 01-outline-modern-chinese-history-2023.pdf
+          - book: 2
+            first: 31
+            last: 60
+            asset: 02-xi-jinping-thought-introduction.pdf
+          - book: 3
+            first: 31
+            last: 60
+            asset: 03-ideology-morality-rule-of-law-2023.pdf
+          - book: 4
+            first: 31
+            last: 60
+            asset: 04-mao-zedong-thought-theoretical-system.pdf
+          - book: 5
+            first: 31
+            last: 60
+            asset: 05-basic-principles-marxism-2023.pdf
+          - book: 1
+            first: 61
+            last: 90
+            asset: 01-outline-modern-chinese-history-2023.pdf
+          - book: 2
+            first: 61
+            last: 90
+            asset: 02-xi-jinping-thought-introduction.pdf
+          - book: 3
+            first: 61
+            last: 90
+            asset: 03-ideology-morality-rule-of-law-2023.pdf
+          - book: 4
+            first: 61
+            last: 90
+            asset: 04-mao-zedong-thought-theoretical-system.pdf
+          - book: 5
+            first: 61
+            last: 90
+            asset: 05-basic-principles-marxism-2023.pdf
+          - book: 1
+            first: 91
+            last: 120
+            asset: 01-outline-modern-chinese-history-2023.pdf
+          - book: 2
+            first: 91
+            last: 120
+            asset: 02-xi-jinping-thought-introduction.pdf
+          - book: 3
+            first: 91
+            last: 120
+            asset: 03-ideology-morality-rule-of-law-2023.pdf
+          - book: 4
+            first: 91
+            last: 120
+            asset: 04-mao-zedong-thought-theoretical-system.pdf
+          - book: 5
+            first: 91
+            last: 120
+            asset: 05-basic-principles-marxism-2023.pdf
+          - book: 1
+            first: 121
+            last: 150
+            asset: 01-outline-modern-chinese-history-2023.pdf
+          - book: 2
+            first: 121
+            last: 150
+            asset: 02-xi-jinping-thought-introduction.pdf
+          - book: 3
+            first: 121
+            last: 150
+            asset: 03-ideology-morality-rule-of-law-2023.pdf
+          - book: 4
+            first: 121
+            last: 150
+            asset: 04-mao-zedong-thought-theoretical-system.pdf
+          - book: 5
+            first: 121
+            last: 150
+            asset: 05-basic-principles-marxism-2023.pdf
+          - book: 1
+            first: 151
+            last: 180
+            asset: 01-outline-modern-chinese-history-2023.pdf
+          - book: 2
+            first: 151
+            last: 180
+            asset: 02-xi-jinping-thought-introduction.pdf
+          - book: 3
+            first: 151
+            last: 180
+            asset: 03-ideology-morality-rule-of-law-2023.pdf
+          - book: 4
+            first: 151
+            last: 180
+            asset: 04-mao-zedong-thought-theoretical-system.pdf
+          - book: 5
+            first: 151
+            last: 180
+            asset: 05-basic-principles-marxism-2023.pdf
+          - book: 1
+            first: 181
+            last: 210
+            asset: 01-outline-modern-chinese-history-2023.pdf
+          - book: 2
+            first: 181
+            last: 210
+            asset: 02-xi-jinping-thought-introduction.pdf
+          - book: 3
+            first: 181
+            last: 210
+            asset: 03-ideology-morality-rule-of-law-2023.pdf
+          - book: 4
+            first: 181
+            last: 210
+            asset: 04-mao-zedong-thought-theoretical-system.pdf
+          - book: 5
+            first: 181
+            last: 210
+            asset: 05-basic-principles-marxism-2023.pdf
+          - book: 1
+            first: 211
+            last: 240
+            asset: 01-outline-modern-chinese-history-2023.pdf
+          - book: 2
+            first: 211
+            last: 240
+            asset: 02-xi-jinping-thought-introduction.pdf
+          - book: 3
+            first: 211
+            last: 240
+            asset: 03-ideology-morality-rule-of-law-2023.pdf
+          - book: 4
+            first: 211
+            last: 240
+            asset: 04-mao-zedong-thought-theoretical-system.pdf
+          - book: 5
+            first: 211
+            last: 240
+            asset: 05-basic-principles-marxism-2023.pdf
+          - book: 1
+            first: 241
+            last: 270
+            asset: 01-outline-modern-chinese-history-2023.pdf
+          - book: 2
+            first: 241
+            last: 270
+            asset: 02-xi-jinping-thought-introduction.pdf
+          - book: 3
+            first: 241
+            last: 264
+            asset: 03-ideology-morality-rule-of-law-2023.pdf
+          - book: 4
+            first: 241
+            last: 270
+            asset: 04-mao-zedong-thought-theoretical-system.pdf
+          - book: 5
+            first: 241
+            last: 270
+            asset: 05-basic-principles-marxism-2023.pdf
+          - book: 1
+            first: 271
+            last: 300
+            asset: 01-outline-modern-chinese-history-2023.pdf
+          - book: 2
+            first: 271
+            last: 300
+            asset: 02-xi-jinping-thought-introduction.pdf
+          - book: 4
+            first: 271
+            last: 284
+            asset: 04-mao-zedong-thought-theoretical-system.pdf
+          - book: 5
+            first: 271
+            last: 300
+            asset: 05-basic-principles-marxism-2023.pdf
+          - book: 1
+            first: 301
+            last: 330
+            asset: 01-outline-modern-chinese-history-2023.pdf
+          - book: 2
+            first: 301
+            last: 330
+            asset: 02-xi-jinping-thought-introduction.pdf
+          - book: 5
+            first: 301
+            last: 330
+            asset: 05-basic-principles-marxism-2023.pdf
+          - book: 1
+            first: 331
+            last: 360
+            asset: 01-outline-modern-chinese-history-2023.pdf
+          - book: 2
+            first: 331
+            last: 360
+            asset: 02-xi-jinping-thought-introduction.pdf
+          - book: 5
+            first: 331
+            last: 360
+            asset: 05-basic-principles-marxism-2023.pdf
+          - book: 1
+            first: 361
+            last: 390
+            asset: 01-outline-modern-chinese-history-2023.pdf
+          - book: 2
+            first: 361
+            last: 384
+            asset: 02-xi-jinping-thought-introduction.pdf
+          - book: 5
+            first: 361
+            last: 363
+            asset: 05-basic-principles-marxism-2023.pdf
+          - book: 1
+            first: 391
+            last: 420
+            asset: 01-outline-modern-chinese-history-2023.pdf
+          - book: 1
+            first: 421
+            last: 429
+            asset: 01-outline-modern-chinese-history-2023.pdf
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: scripts
+      - uses: actions/cache@v4
+        with:
+          path: ~/.mineru/models
+          key: mineru-4.0.10-onnx-llama-q8-cpu-v1
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: latest
+          enable-cache: false
+      - name: Install CPU MinerU Hybrid runtime
+        run: |
+          uv venv "$POLITICS_WORKDIR/venv" --python 3.12
+          uv pip install --python "$POLITICS_WORKDIR/venv/bin/python" mineru==4.0.10 pymupdf==1.28.2
+          mkdir -p "$POLITICS_WORKDIR/source"
+      - name: Download and verify release PDF, then parse selected original pages
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release download "$BOOK_RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --pattern '${{ matrix.asset }}' --dir "$POLITICS_WORKDIR/source"
+          "$POLITICS_WORKDIR/venv/bin/python" scripts/process_politics_books.py parse --book ${{ matrix.book }} --first ${{ matrix.first }} --last ${{ matrix.last }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: politics-book-${{ matrix.book }}-pages-${{ matrix.first }}-${{ matrix.last }}
+          path: ${{ env.POLITICS_WORKDIR }}/parsed
+          compression-level: 0
+          retention-days: 7
+          if-no-files-found: error
+
+  assemble-and-publish:
+    needs: parse
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: scripts
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: latest
+          enable-cache: false
+      - name: Download five original books and install assembly runtime
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          uv venv "$POLITICS_WORKDIR/venv" --python 3.12
+          uv pip install --python "$POLITICS_WORKDIR/venv/bin/python" mineru==4.0.10 pymupdf==1.28.2
+          mkdir -p "$POLITICS_WORKDIR/source"
+          gh release download "$BOOK_RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --pattern '*.pdf' --dir "$POLITICS_WORKDIR/source"
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: politics-book-*
+          path: ${{ env.POLITICS_WORKDIR }}/parsed
+          merge-multiple: true
+      - name: Assemble chapters, preserve every original page and validate outputs
+        run: |
+          for book in 1 2 3 4 5; do
+            "$POLITICS_WORKDIR/venv/bin/python" scripts/process_politics_books.py finalize --book "$book"
+          done
+      - name: Upload five completed ZIPs and verification files to original release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release upload "$BOOK_RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --clobber "$POLITICS_WORKDIR/"*-MinerU-Hybrid.zip "$POLITICS_WORKDIR/"*-MinerU-Hybrid-SHA256SUMS.txt "$POLITICS_WORKDIR/"*-MinerU-Hybrid-manifest.json "$POLITICS_WORKDIR/"*-MinerU-Hybrid-validation.json
+          python3 - <<'PYCODE'
+          import os,json,subprocess
+          from pathlib import Path
+          root=Path(os.environ['POLITICS_WORKDIR'])
+          release=json.loads(subprocess.check_output(['gh','api',f'repos/{os.environ["GITHUB_REPOSITORY"]}/releases/tags/{os.environ["BOOK_RELEASE_TAG"]}']))
+          for i in range(1,6):
+              info=json.loads((root/f'archive-{i}.json').read_text())
+              asset=next(a for a in release['assets'] if a['name']==info['file'])
+              assert asset['size']==info['size'] and asset['digest']=='sha256:'+info['sha256']
+              print('Verified release ZIP:',asset['browser_download_url'])
+          PYCODE
+      - name: Commit complete book folders to main
+        run: |
+          python3 - <<'PYCODE'
+          import os,json,shutil,subprocess
+          from pathlib import Path
+          root=Path(os.environ['POLITICS_WORKDIR']);workspace=Path(os.environ['GITHUB_WORKSPACE'])
+          infos=[json.loads((root/f'archive-{i}.json').read_text()) for i in range(1,6)]
+          for info in infos:
+              target=workspace/info['folder']
+              assert not target.exists(),str(target)
+              shutil.copytree(root/'parsed'/info['folder'],target)
+          subprocess.run(['git','config','user.name','github-actions[bot]'],check=True)
+          subprocess.run(['git','config','user.email','41898282+github-actions[bot]@users.noreply.github.com'],check=True)
+          subprocess.run(['git','add','--sparse','--',*[i['folder'] for i in infos]],check=True)
+          subprocess.run(['git','commit','--quiet','-m','Add five complete politics textbooks parsed with MinerU Hybrid'],check=True)
+          subprocess.run(['git','pull','--rebase','--quiet','origin','main'],check=True)
+          subprocess.run(['git','push','origin','HEAD:main'],check=True)
+          PYCODE
+      - name: Verify published book folder trees
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PYCODE'
+          import os,json,subprocess
+          from pathlib import Path
+          root=Path(os.environ['POLITICS_WORKDIR'])
+          tree=json.loads(subprocess.check_output(['gh','api',f'repos/{os.environ["GITHUB_REPOSITORY"]}/git/trees/main']))
+          for i in range(1,6):
+              folder=json.loads((root/f'archive-{i}.json').read_text())['folder']
+              expected=subprocess.check_output(['git','rev-parse',f'HEAD:{folder}'],text=True).strip()
+              actual=next(t['sha'] for t in tree['tree'] if t['path']==folder)
+              assert actual==expected
+              print('Verified repository folder:',folder,actual)
+          PYCODE
+          echo 'Completed five books, 1724 original pages and 48 main chapters; ZIPs and repository trees verified.' >> "$GITHUB_STEP_SUMMARY"
