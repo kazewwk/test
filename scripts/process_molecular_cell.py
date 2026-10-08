@@ -59,7 +59,8 @@ def prepare(only=None):
         last = starts[pos + 1][2] - 1 if pos + 1 < len(starts) else len(doc)
         name = f'{number:02d}_' + re.sub(r'[^\w -]+', '', title).replace(' ', '_')
         section = {'number': number, 'title': title, 'folder': name, 'pdf_first_page': first,
-                   'pdf_last_page': last, 'page_count': last - first + 1}
+                   'pdf_last_page': last, 'page_count': last - first + 1,
+                   'chunk_pages': 1 if number == 0 else CHUNK_PAGES}
         sections.append(section)
         if only is not None and number not in only:
             continue
@@ -113,7 +114,7 @@ def prepare(only=None):
     print(f'PREPARED {len(doc)} pages in {len(sections)} sections', flush=True)
 
 
-def parse_all(only=None):
+def parse_all(only=None, selected_pages=None):
     from mineru.parser import MinerUParser
     from mineru.parser.writer import FileBasedDataWriter
     from mineru.config import config
@@ -146,8 +147,11 @@ def parse_all(only=None):
         if only is not None and section['number'] not in only:
             continue
         directory = BOOK / section['folder']
-        for first in range(1, section['page_count'] + 1, CHUNK_PAGES):
-            last = min(first + CHUNK_PAGES - 1, section['page_count'])
+        chunk_pages = section.get('chunk_pages', CHUNK_PAGES)
+        for first in range(1, section['page_count'] + 1, chunk_pages):
+            last = min(first + chunk_pages - 1, section['page_count'])
+            if selected_pages is not None and first not in selected_pages:
+                continue
             chunk_name = f'pages_{first:04d}-{last:04d}'
             target = directory / 'chunks' / chunk_name
             checkpoint = target / 'parse_complete.json'
@@ -202,8 +206,9 @@ def finalize():
         directory = BOOK / section['folder']
         combined = None
         parsed_pages = []
-        for first in range(1, section['page_count'] + 1, CHUNK_PAGES):
-            last = min(first + CHUNK_PAGES - 1, section['page_count'])
+        chunk_pages = section.get('chunk_pages', CHUNK_PAGES)
+        for first in range(1, section['page_count'] + 1, chunk_pages):
+            last = min(first + chunk_pages - 1, section['page_count'])
             chunk_name = f'pages_{first:04d}-{last:04d}'
             target = directory / 'chunks' / chunk_name
             assert (target / 'parse_complete.json').is_file(), f'Incomplete: {target}'
@@ -315,10 +320,12 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('action', choices=['prepare', 'parse', 'finalize'])
     parser.add_argument('--only', help='Comma-separated section numbers for parsing')
+    parser.add_argument('--pages', default='all', help='Selected chapter page starts, comma-separated, or all')
     args = parser.parse_args()
     if args.action == 'prepare':
         prepare({int(value) for value in args.only.split(',')} if args.only else None)
     elif args.action == 'parse':
-        parse_all({int(value) for value in args.only.split(',')} if args.only else None)
+        parse_all({int(value) for value in args.only.split(',')} if args.only else None,
+                  {int(value) for value in args.pages.split(',')} if args.pages != 'all' else None)
     else:
         finalize()

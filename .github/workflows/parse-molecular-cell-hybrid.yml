@@ -30,12 +30,148 @@ jobs:
       fail-fast: false
       max-parallel: 16
       matrix:
-        section: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27]
+        include:
+          - section: 1
+            pages: "all"
+          - section: 0
+            pages: "24"
+          - section: 2
+            pages: "all"
+          - section: 0
+            pages: "25"
+          - section: 3
+            pages: "all"
+          - section: 0
+            pages: "26"
+          - section: 4
+            pages: "all"
+          - section: 0
+            pages: "27"
+          - section: 5
+            pages: "all"
+          - section: 0
+            pages: "28"
+          - section: 6
+            pages: "all"
+          - section: 0
+            pages: "29"
+          - section: 7
+            pages: "all"
+          - section: 0
+            pages: "30"
+          - section: 8
+            pages: "all"
+          - section: 0
+            pages: "31"
+          - section: 9
+            pages: "all"
+          - section: 0
+            pages: "32"
+          - section: 10
+            pages: "all"
+          - section: 0
+            pages: "33"
+          - section: 11
+            pages: "all"
+          - section: 0
+            pages: "34"
+          - section: 12
+            pages: "all"
+          - section: 0
+            pages: "35"
+          - section: 13
+            pages: "all"
+          - section: 0
+            pages: "36"
+          - section: 14
+            pages: "all"
+          - section: 0
+            pages: "37"
+          - section: 15
+            pages: "all"
+          - section: 0
+            pages: "38"
+          - section: 16
+            pages: "all"
+          - section: 0
+            pages: "39"
+          - section: 17
+            pages: "all"
+          - section: 18
+            pages: "all"
+          - section: 19
+            pages: "all"
+          - section: 20
+            pages: "all"
+          - section: 21
+            pages: "all"
+          - section: 22
+            pages: "all"
+          - section: 23
+            pages: "all"
+          - section: 24
+            pages: "all"
+          - section: 25
+            pages: "all"
+          - section: 26
+            pages: "all"
+          - section: 27
+            pages: "all"
+          - section: 0
+            pages: "1"
+          - section: 0
+            pages: "2"
+          - section: 0
+            pages: "3"
+          - section: 0
+            pages: "4"
+          - section: 0
+            pages: "5"
+          - section: 0
+            pages: "6"
+          - section: 0
+            pages: "7"
+          - section: 0
+            pages: "8"
+          - section: 0
+            pages: "9"
+          - section: 0
+            pages: "10"
+          - section: 0
+            pages: "11"
+          - section: 0
+            pages: "12"
+          - section: 0
+            pages: "13"
+          - section: 0
+            pages: "14"
+          - section: 0
+            pages: "15"
+          - section: 0
+            pages: "16"
+          - section: 0
+            pages: "17"
+          - section: 0
+            pages: "18"
+          - section: 0
+            pages: "19"
+          - section: 0
+            pages: "20"
+          - section: 0
+            pages: "21"
+          - section: 0
+            pages: "22"
+          - section: 0
+            pages: "23"
     steps:
       - uses: actions/checkout@v4
         with:
           filter: blob:none
           sparse-checkout: scripts
+      - uses: actions/cache@v4
+        with:
+          path: ~/.mineru/models
+          key: mineru-4.0.10-onnx-llama-q8-cpu-v1
       - uses: astral-sh/setup-uv@v6
         with:
           version: latest
@@ -62,7 +198,7 @@ jobs:
       - name: Prepare exact chapter pages
         run: '"$MOLECULAR_CELL_WORKDIR/venv/bin/python" "$MOLECULAR_CELL_WORKDIR/tools/process_molecular_cell.py" prepare --only ${{ matrix.section }}'
       - name: Parse every chapter page with local CPU Hybrid
-        run: '"$MOLECULAR_CELL_WORKDIR/venv/bin/python" "$MOLECULAR_CELL_WORKDIR/tools/process_molecular_cell.py" parse --only ${{ matrix.section }}'
+        run: '"$MOLECULAR_CELL_WORKDIR/venv/bin/python" "$MOLECULAR_CELL_WORKDIR/tools/process_molecular_cell.py" parse --only ${{ matrix.section }} --pages ${{ matrix.pages }}'
       - name: Resolve chapter output path
         id: chapter
         env:
@@ -78,7 +214,7 @@ jobs:
           PY
       - uses: actions/upload-artifact@v4
         with:
-          name: section-${{ matrix.section }}
+          name: section-${{ matrix.section }}-pages-${{ matrix.pages }}
           path: ${{ steps.chapter.outputs.path }}
           compression-level: 0
           retention-days: 1
@@ -125,10 +261,11 @@ jobs:
           assert manifest['source_sha256'] == 'eac9f2bd1902e2b87f915901110e68a1de71c31d62d858a74883250ac58599ae'
           source = pymupdf.open(root / 'source/molecular-biology-of-the-cell-7e.pdf')
           for section in manifest['sections']:
-              artifact = root / 'downloaded-sections' / f'section-{section["number"]}'
-              assert artifact.is_dir(), artifact
+              artifacts = sorted((root / 'downloaded-sections').glob(f'section-{section["number"]}-pages-*'))
+              assert len(artifacts) == (39 if section['number'] == 0 else 1), section
               target = root / 'Molecular Biology of the Cell' / section['folder']
-              shutil.copytree(artifact, target, dirs_exist_ok=True)
+              for artifact in artifacts:
+                  shutil.copytree(artifact, target, dirs_exist_ok=True)
               with pymupdf.open(target / 'source.pdf') as chapter:
                   assert len(chapter) == section['page_count']
                   for i, page in enumerate(chapter):
