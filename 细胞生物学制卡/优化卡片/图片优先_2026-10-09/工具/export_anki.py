@@ -17,6 +17,9 @@ def export(cards, destination, mode='optimized'):
             if mode=='new' and old is not None: continue
             front=c['front_html']
             back=c['back_html']
+            if c.get('image_ids'):
+                if '<details' in back or not back.endswith('<b>需看图</b>'):
+                    raise ValueError('Image cards must show back images directly and end with 需看图: '+c['id'])
             if mode=='update':
                 front=old
                 if c['front']!=unescape(re.sub('<[^>]+>', '', old)).strip():
@@ -33,6 +36,6 @@ def main():
     if any(c['note_type']!='Basic' for c in cards): raise ValueError('Only the reviewed Basic format is supported')
     for name,mode in [('SHU_Cell_Biology_Optimized_Basic.txt','optimized'),('SHU_Cell_Biology_2440_KeepFront_Update.txt','update'),('SHU_Cell_Biology_New_Image_Basic.txt','new')]:
         export(cards,out/name,mode)
-    print(json.dumps({'Basic':len(cards),'Cloze':0,'new':sum(c.get('original_front') is None for c in cards)}))
+    print(json.dumps({'Basic':len(cards),'Cloze':0,'new':sum(c.get('original_front') is None for c in cards),'inline_image_cards':sum(bool(c.get('image_ids')) for c in cards)},ensure_ascii=False))
 
 if __name__=='__main__': main()

@@ -6,11 +6,13 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 class FieldParser(HTMLParser):
-    def __init__(self):super().__init__(convert_charrefs=True);self.images=[];self.urls=[];self.text=[];self.stack=[]
+    def __init__(self):super().__init__(convert_charrefs=True);self.images=[];self.urls=[];self.text=[];self.stack=[];self.hidden_images=[]
     def handle_data(self,d):self.text.append(d)
     def handle_starttag(self,tag,attrs):
         d=dict(attrs)
-        if tag=='img':self.images.append(d.get('src',''))
+        if tag=='img':
+            self.images.append(d.get('src',''))
+            if 'details' in self.stack:self.hidden_images.append(d.get('src',''))
         if tag=='a':self.urls.append(d.get('href',''))
         if tag not in {'br','img','hr','input','meta','link'}:self.stack.append(tag)
     def handle_endtag(self,tag):
@@ -47,6 +49,11 @@ def validate(root,source_root=None):
             if 'KeepFront' in name:assert front==c['original_front'],f'Changed identity field: {c["id"]}'
             else:assert front==c['front_html'] and back==c['back_html']
             assert not any(s in back for s in ['未逐图核对','520512d02afe82472','待补图','TODO'])
+            bp=FieldParser();bp.feed(back);bp.close()
+            assert bp.images==[f'CB5_{i}.jpg' for i in c['image_ids']],f'Wrong back images: {c["id"]}'
+            assert not bp.hidden_images,f'Collapsed back image: {c["id"]}'
+            assert back.count('需看图')==int(bool(c['image_ids'])),f'Wrong image marker: {c["id"]}'
+            if c['image_ids']:assert back.endswith('<b>需看图</b>')
             for field in [front,back]:
                 p=FieldParser();p.feed(field);p.close();assert not p.stack
                 for src in p.images:
@@ -71,6 +78,7 @@ def validate(root,source_root=None):
             source_checks+=1
     for c in cards:
         assert set(c['front_image_ids'])<=set(c['image_ids'])
+        assert c['image_display']==('inline' if c['image_ids'] else 'none')
         assert c['sources'] and c['scoring']
         if source_root:
             for s in c['sources']:
@@ -79,9 +87,14 @@ def validate(root,source_root=None):
                 source_checks+=1
     depth=dict(Counter(re.search(r'深度::(L\d)',c['tags']).group(1) for c in cards))
     assert depth==stats['depth']
+    inline_count=sum(bool(c['image_ids']) for c in cards)
+    assert inline_count==stats['inline_image_cards']==stats['image_marker_cards']==356
+    assert sum(bool(c['front_image_ids']) for c in cards)==stats['image_task_cards']==20
+    assert stats['original_media_files']==453 and stats['generated_media_files']==0
     hashes={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in (root/'collection.media').iterdir()}
     (root/'媒体校验.json').write_text(json.dumps(hashes,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     report={'status':'passed','Basic':len(cards),'Cloze':0,'cloze_ratio':0,'update_first_fields_preserved':len(old),'new_cards':len(new),'media_files':len(media),'missing_media':0,'CN_images_reviewed':463,'EN_images_reviewed':12,'EN_images_unreviewed':2640,'source_and_original_media_checks':source_checks,'depth':depth,'anki_application_import_executed':False,'skill_bundled_exporter_executed':False,'exporter':'本包可回读验证的export_anki.py；skill附件脚本不可读取'}
+    report.update(inline_image_cards=inline_count,image_marker_cards=inline_count,image_task_cards=20,collapsed_back_images=0,original_media_files=453,generated_media_files=0,installed_cloud_skill_updated=False,updated_skill_file='制卡规则/make-biology-anki/SKILL.md')
     (root/'校验报告.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(report,ensure_ascii=False,indent=2))
 
