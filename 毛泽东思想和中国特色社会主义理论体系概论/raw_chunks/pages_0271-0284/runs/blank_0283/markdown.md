@@ -1,0 +1,1 @@
+![](images/page_282_chart_0.jpg)
