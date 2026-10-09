@@ -105,6 +105,25 @@ def rewrite_images(value,prefix):
     if isinstance(value,list):return [rewrite_images(v,prefix) for v in value]
     return value
 
+def place_chapter_images(value,chunk,folder):
+    """Keep chapter sidecars local, as required by the document schema."""
+    if isinstance(value,dict):
+        result={}
+        for key,item in value.items():
+            if key=='image_path' and isinstance(item,str) and item:
+                relative=Path(item)
+                assert not relative.is_absolute() and '..' not in relative.parts
+                source=chunk/relative;assert source.is_file(),source
+                path=Path('images')/chunk.name/relative;target=folder/path
+                target.parent.mkdir(parents=True,exist_ok=True)
+                if target.exists():assert checksum(target)==checksum(source)
+                else:shutil.copy2(source,target)
+                result[key]=path.as_posix()
+            else:result[key]=place_chapter_images(item,chunk,folder)
+        return result
+    if isinstance(value,list):return [place_chapter_images(v,chunk,folder) for v in value]
+    return value
+
 def split_large_files(directory):
     split=[]
     for file in list(directory.rglob('*')):
@@ -154,12 +173,13 @@ def finalize(number):
             if combined is None:
                 combined=copy.deepcopy(raw);combined['pages']=[]
                 if 'docvortex_layout' in combined.get('extensions',{}):combined['extensions']['docvortex_layout']['pages']=[]
-            page=rewrite_images(copy.deepcopy(raw_page),f'../raw_chunks/{chunk.name}/')
+                combined=place_chapter_images(combined,chunk,folder)
+            page=place_chapter_images(raw_page,chunk,folder)
             page['page_idx']=physical-section['pdf_first_page'];combined['pages'].append(page)
             layouts=raw.get('extensions',{}).get('docvortex_layout',{}).get('pages',[])
             for layout in layouts:
                 if layout.get('page_idx')==physical-1:
-                    layout=copy.deepcopy(layout);layout['page_idx']=physical-section['pdf_first_page']
+                    layout=place_chapter_images(layout,chunk,folder);layout['page_idx']=physical-section['pdf_first_page']
                     combined['extensions']['docvortex_layout']['pages'].append(layout)
             pymupdf.TOOLS.mupdf_warnings(reset=True)
             text=doc[physical-1].get_text(sort=True)
@@ -171,6 +191,7 @@ def finalize(number):
             coverage.append({'pdf_page':physical,'section':section['folder'],'chapter_page':page['page_idx']+1,
                 'mineru_blocks':len(page.get('blocks',[])),'mineru_markdown_characters':len(view.strip()),
                 'source_native_text_characters':len(text.strip()),'source_pdf_retained':True,'has_parsed_page':True})
+            coverage[-1]['source_native_non_whitespace_characters']=len(re.sub(r'\s+','',text))
         combined['is_full_document']=True
         write_json(folder/'middle_json.json',combined)
         result=ParseResult.from_dict(combined)
@@ -187,10 +208,10 @@ def finalize(number):
         full.append(f'\n<!-- Original PDF pages {section["pdf_first_page"]}-{section["pdf_last_page"]} -->\n'+result.markdown(asset_base_url=section['folder']+'/'))
         (folder/'README.md').write_text(f'# {section["title"]}\n\n原始PDF第{section["pdf_first_page"]}–{section["pdf_last_page"]}页。\n\n'
             '[章节阅读](chapter.md) · [包含页眉页脚等的全部内容](all_content.md) · [原页PDF](source.pdf) · [原生文字](source_text.txt) · [页码映射](page_map.json)\n\n'
-            '原始分批解析JSON、图片、Markdown和模型输出保存在全书的 `raw_chunks/`。\n')
+            '本章所需图片完整复制到本章 `images/`，可独立阅读。原始分批解析JSON、图片、Markdown和模型输出保存在全书的 `raw_chunks/`。\n')
         toc.append(f'| [{section["title"]}]({section["folder"]}/chapter.md) | {section["pdf_first_page"]}–{section["pdf_last_page"]} | {section["page_count"]} |')
     assert [p['pdf_page'] for p in coverage]==list(range(1,book['pages']+1))
-    weak=[p for p in coverage if p['source_native_text_characters']>100 and p['mineru_markdown_characters']<100]
+    weak=[p for p in coverage if p['source_native_non_whitespace_characters']>100 and p['mineru_markdown_characters']<100]
     unrecognized=[p for p in coverage if p['mineru_blocks']==0 and p['pdf_page'] not in book.get('blank_pages',[])]
     write_json(directory/'page_coverage.json',coverage)
     write_json(directory/'manifest.json',{**book,'mineru_version':'4.0.10','mode':'Hybrid','tier':'standard','effort':'high',
