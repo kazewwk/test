@@ -47,3 +47,7 @@
 ![](images/pages_0271-0284/runs/blank_0283/images/page_282_chart_0.jpg)
 
 本教材2018年版曾获首届全国教材建设奖全国优秀教材特等奖
+
+![](images/ocr_review/page_0284_block_1.png)
+
+【核对注】二维码及教材标识原图。

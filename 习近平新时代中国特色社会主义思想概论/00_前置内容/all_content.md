@@ -1,5 +1,3 @@
-The quick brown fox jumps over the lazy dog.
-
 \- 马克思主义理论研究和建设工程重点教材 ·
 
 # 习近平新时代 中国特色社会主义思想概论
@@ -66,8 +64,6 @@ The quick brown fox jumps over the lazy dog.
 
 黄文艺 蒋永穆 韩振峰 韩喜平 蔡文成
 
-The following is the following:
-
 ---
 
 ## 目录
@@ -121,8 +117,6 @@ The following is the following:
 - 三、维护党中央权威和集中统一领导 / 66
 - 第三节 健全和完善党的领导制度体系 / 69
 - 一、党的领导制度是我国的根本领导制度 / 69
-
-(1) $\left\{  {\begin{array}{l} {x}_{1} = {2}^{n - 1}\left( {{2}^{n} + 1}\right)  + {2}^{n - 1}\left( {{2}^{n} + 1}\right)  + {2}^{n - 1}\left( {{2}^{n} + 1}\right) }\right. }\end{array}\right.$
 
 ---
 

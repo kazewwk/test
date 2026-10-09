@@ -30,8 +30,6 @@
 
 中国共产党历来高度重视教育、科技、人才事业。革命战争年代，党在革命根据地开展文化教育，强调没有知识分子参加的革命是不可能胜利的，提出中国应当建立自己的民族的、科学的、人民大众的新文化和新教育。新中国成立后，党发出了“向科学进军”的号召，先后提出科学文化现代化、科学技术现代化等奋斗目标，“两弹一星”等国防尖端科技不断取得突破，我国教育、科学、文化事业取得很大发展。改革开放以后，党坚持教育为本，提出“科学技术是第一生产力”的论断，把教育、科技和人才摆在经济社会发展的重要位置，出台关于教育体制改
 
-Theorem 1.2. Theorem of theorem 1.3. Let $\mathcal{F}(x)$ be a finite set of all elements $x \in \mathbb{Z}$. Then $\mathcal{F}(x)$ is a finite set of all elements $x$ in such order, and
-
 ---
 
 第一节 全面建设社会主义现代化国家的基础性、战略性支撑
@@ -64,8 +62,6 @@ Theorem 1.2. Theorem of theorem 1.3. Let $\mathcal{F}(x)$ be a finite set of all
 
 <small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">② 《习近平关于科技创新论述摘编》，中央文献出版社2016年版，第26页。</span></small>
 
-Theorem 1.2. Theorem of the first set of equations
-
 ---
 
 第一节 全面建设社会主义现代化国家的基础性、战略性支撑
@@ -97,8 +93,6 @@ Theorem 1.2. Theorem of the first set of equations
 ## 第二节 加快建设教育强国
 
 建设教育强国是全面建成社会主义现代化强国的战略先导，是实现高水平科技自立自强的重要支撑，是促进全体人民共同富裕的有效途径，是以中国式现代化全面推进中华民族伟大复兴的基础工程。必须把教育事业放在优先发展的战略位置，把立德树人作为教育的根本任务，全面
-
-(1) $\frac{1}{2}$ 为 $x =  - \frac{1}{2}$ ,求出 $y =  - \frac{1}{2}$ . 可以求出 $z =  - \frac{1}{2}$ ,求出 $y =  - \frac{1}{2}$ .
 
 ---
 
@@ -138,8 +132,6 @@ Theorem 1.2. Theorem of the first set of equations
 
 育人的根本在于立德。落实立德树人根本任务，必须着力解决好培养什么人、怎样培养人、为谁培养人的问题，这是教育的根本问题，也是建设教育强国的核心课题。建设教育强国的目的，就是要培养一代又一代德智体美劳全面发展的社会主义建设者和接班人，培养一代又一代在社会主义现代化建设中可堪大用、能担重任的栋梁之才，确保党的事业和社会主义现代化强国建设后继有人。要坚持不懈抓好马克思主义理论教育，用习近平新时代中国特色社会主义思想铸魂育人，加强共产主义远大理想和中国特色社会主义共同理想教育，加强社会主义核心价值
 
-Theorem 1.2. Theorem of the first set $f(x)$ is a linear algebraic structure of $f(x)$ and is a commutative diagram of $f(x)$. Then $f(x)$ is a finite set of $f(x)$ for all $x \in \mathbb{Z}$.
-
 ---
 
 第二节 加快建设教育强国
@@ -170,11 +162,7 @@ Theorem 1.2. Theorem of the first set $f(x)$ is a linear algebraic structure of 
 
 大力促进教育公平。教育公平是社会公平的重要基础，只有不断促进教育发展成果更多更公平惠及全体人民，才能使每个人的成长成才道路更加宽广。要坚持教育公益性原则，把教育公平作为国家基本教育政
 
-(1) \( \mathrm{H}\_{2} \mathrm{O} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H}\_{2} \cdot  \mathrm{H
-
 ---
-
-[1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22] [23] [24] [25] [26] [27] [28] [29] [30] [31] [32] [33] [34] [35] [36] [37] [38] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48] [49] [50] [51] [52] [53] [54] [55] [56] [57] [58] [59] [60] [61] [62] [63] [64] [65] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78] [79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89] [90] [91] [92] [93] [94] [95] [96] [97] [98] [99] [100]
 
 第二节 加快建设教育强国
 
@@ -206,11 +194,7 @@ Theorem 1.2. Theorem of the first set $f(x)$ is a linear algebraic structure of 
 
 科技兴则民族兴，科技强则国家强。科学技术从来没有像今天这样深刻影响着国家前途命运，从来没有像今天这样深刻影响着人民生活福
 
-The following table lists the items of which they belong to each of them, and the corresponding values are not included in the image.
-
 ---
-
-The provided image is completely blank and contains no text or visible content. Therefore, there is no OCR result to output.
 
 第三节 加快建设科技强国
 
@@ -225,8 +209,6 @@ The provided image is completely blank and contains no text or visible content. 
 实现高水平科技自立自强是构建新发展格局、推动高质量发展、满足人民美好生活需要的内在要求。新时代新征程，我们比过去任何时候都更需要科学技术解决方案，都更需要增强创新这个第一动力。构建新发展格局，畅通国内大循环和国内国际双循环，要求以强大科技作支撑，提高供给体系质量和水平，保障产业链供应链安全稳定。推动高质量发展，以质量变革、效率变革、动力变革推动现代化经济体系建设，要求以强大科技作支撑，提供新的发展空间、关键着力点和主要支撑体系。实现人民高品质生活，提高社会发展水平，要求以强大科技作支撑，把惠民、利民、富民、改善民生作为科技创新的重要方向，推出更多涉及
 
 ---
-
-Theorem 1.2. The following is the proof that $\mathcal{P}(x) = \mathcal{P}(y)$, and the proof that $\mathcal{P}(x) \in \mathcal{P}(y)$.
 
 148
 
@@ -247,8 +229,6 @@ Theorem 1.2. The following is the proof that $\mathcal{P}(x) = \mathcal{P}(y)$, 
 
 ---
 
-1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. 18. 19. 20. 21. 22. 23. 24. 25. 26. 27. 28. 29. 30. 31. 32. 33. 34. 35. 36. 37. 38. 39. 40. 41. 42. 43. 44. 45. 46. 47. 48. 49. 50. 51. 52. 53. 54. 55. 56. 57. 58. 59. 60. 61. 62. 63. 64. 65. 66. 67. 68. 69. 70. 71. 72. 73. 74. 75. 76. 77. 78. 79. 80. 81. 82. 83. 84. 85. 86. 87. 88. 89. 90. 91. 92. 93. 94. 95. 96. 97. 98. 99. 100.
-
 第三节 加快建设科技强国
 
 149
@@ -263,8 +243,6 @@ Theorem 1.2. The following is the proof that $\mathcal{P}(x) = \mathcal{P}(y)$, 
 
 ---
 
-(1) $\frac{1}{2}$ (a) $\frac{1}{2}$ (b) $\frac{1}{2}$ (c) $\frac{1}{2}$ (d) $\frac{1}{2}$ (e) $\frac{1}{2}$ (f) $\frac{1}{2}$ (g) $\frac{1}{2}$ (h) $\frac{1}{2}$ (i) $\frac{1}{2}$ (j) $\frac{1}{2}$ (k) $\frac{1}{2}$ (l) $\frac{1}{2}$ (m) $\frac{1}{2}$ (n) $\frac{1}{2}$ (o) $\frac{1}{2}$ (p) $\frac{1}{2}$ (q) $\frac{1}{2}$ (r) $\frac{1}{2}$ (s) $\frac{1}{2}$ (t) $\frac{1}{2}$ (u) $\frac{1}{2}$ (v) $\frac{1}{2}$ (w) $\frac{1}{2}$ (x) $\frac{1}{2}$ (y) $\frac{1}{2}$ (z) $\frac{1}{2}$ (x) $\frac{1}{2}$ (y) $\frac{1}{2}$ (z) $\frac{1}{2}$ (y) $\frac{1}{2}$ (z) $\frac{1}{2}$
-
 150
 
 第七章 社会主义现代化建设的教育、科技、人才战略
@@ -278,8 +256,6 @@ Theorem 1.2. The following is the proof that $\mathcal{P}(x) = \mathcal{P}(y)$, 
 国家战略科技力量是世界科技强国竞争的着力点。国家实验室、国家科研机构、高水平研究型大学、科技领军企业都是国家战略科技力量的重要组成部分。要优化国家战略科技力量定位和布局，建立国家战略科技
 
 ---
-
-1. 用 $\mathrm{H}_{2}$ 表示的量纲式为 $\mathrm{H}_{2}$ 的量纲式, 由图中所列的曲线表示。
 
 第四节 加快建设人才强国
 
@@ -311,11 +287,7 @@ Theorem 1.2. The following is the proof that $\mathcal{P}(x) = \mathcal{P}(y)$, 
 
 功以才成，业由才广。实现中华民族伟大复兴，人才越多越好，本事越大越好。必须充分认识人才对党和国家事业发展的极端重要性，加快人才队伍建设，完善人才战略布局，提高人才自主培养能力，抓好国家战略人才力量储备，建设世界重要人才中心和创新高地。
 
-Theorem 1.2. The following is the proof that $\mathcal{P}(x)$ is a finite set of $x$-squares, and the condition $x$ is a linear algebraic structure of $x$. Then $x$ is a square root of $x$.
-
 ---
-
-1. 用 $\mathrm{H}_{2}$ 表示的物质，其原子结构式为: $\mathrm{H}_{2}$ 表示的物质，其原子结构式为: $\mathrm{H}_{2}$ 表示的物质。
 
 第四节 加快建设人才强国
 
@@ -351,11 +323,7 @@ Theorem 1.2. The following is the proof that $\mathcal{P}(x)$ is a finite set of
 
 <small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">① 习近平:《深入实施新时代人才强国战略 加快建设世界重要人才中心和创新高地》，《求是》2021年第24期。</span></small>
 
-Theorem 1.2. The following is the proof that theorem 1.2 is a linear algebraic structure of $\mathcal{P}(x)$ and is a set of elements of $\mathcal{P}(x)$. Then
-
 ---
-
-(1) $\frac{1}{2}$ 为 $x =  - \frac{1}{2}$ ,即 $x > 0$ ,求得 $y =  - \frac{1}{2}$ .
 
 第四节 加快建设人才强国
 
@@ -394,5 +362,3 @@ Theorem 1.2. The following is the proof that theorem 1.2 is a linear algebraic s
 3. 如何理解实现高水平科技自立自强的重大意义？
 
 4. 怎样建设人才强国？
-
-Theorem 1.2. Theorem of the first set of all $\mathbf{R}$ is a subset of $\mathbf{R}$ and that $\mathbf{R}$ has a suboperator $\mathbf{R}$ which is not necessarily equivalent to $\mathbf{R}$.

@@ -1,5 +1,3 @@
-(1)  $\frac{1}{2}$  (a)  $\frac{1}{2}$  (b)  $\frac{1}{2}$  (c)  $\frac{1}{2}$  (d)  $\frac{1}{2}$  (e)  $\frac{1}{2}$  (f)  $\frac{1}{2}$  (g)  $\frac{1}{2}$  (h)  $\frac{1}{2}$  (i)  $\frac{1}{2}$  (j)  $\frac{1}{2}$  (k)  $\frac{1}{2}$  (l)  $\frac{1}{2}$  (m)  $\frac{1}{2}$  (n)  $\frac{1}{2}$  (o)  $\frac{1}{2}$  (p)  $\frac{1}{2}$  (q)  $\frac{1}{2}$  (r)  $\frac{1}{2}$  (s)  $\frac{1}{2}$  (t)  $\frac{1}{2}$  (u)  $\frac{1}{2}$  (v)  $\frac{1}{2}$  (w)  $\frac{1}{2}$  (x)  $\frac{1}{2}$  (y)  $\frac{1}{2}$  (z)  $\frac{1}{2}$  (u)  $\frac{1}{2}$  (v)  $\frac{1}{2}$  (w)  $\frac{1}{2}$  (x)  $\frac{1}{2}$  (y)  $\frac{1}{2}$  (z)  $\frac{1}{2}$
-
 ## 后记
 
 为进一步推动习近平新时代中国特色社会主义思想进高校、进教材、进课堂、进学生头脑，中宣部会同教育部组织编写了《习近平新时代中国特色社会主义思想概论》。本教材在高校思想政治理论课编写领导小组领导下组织编写。在编写过程中，得到了马克思主义理论研究和建设工程咨询委员会的指导，得到了中央有关部门和有关专家学者的帮助和支持。同时，广泛听取了高校思想政治理论课教师和大学生的意见和建议。
@@ -7,8 +5,6 @@
 本教材编写工作由马克思主义理论研究和建设工程办公室统筹，由首席专家顾海良、张磊、颜晓峰主持，主要成员秦宣、辛向阳、肖贵清、郑传芳、孙蚌珠、孙来斌、韩喜平、凌胜银、丁俊萍、陶文昭、韩振峰、陈培永、陈大文、蒋永穆、蔡文成、黄文艺、孟宪生、李玉峰、陈金龙、段妍、陈文博、张明、李国泉、孙贺、郭绍均参加编写。全国37家重点马克思主义学院承担了各章初稿起草任务。参与全书统稿和部分章节文稿撰写工作的有:刘建军、孙代尧、季明、杨仁忠、徐艳玲、张晓磊、沈夏珠、聂大富、刘水静、邱仁富、陈慧女、王贵贤、刘博、任鹏、陈科、朱大鹏、贾鹏飞、李建华、陈向阳、王海威、张学昌、张凯、盖逸馨、秦龙、张浩、徐碧君、黄刚、陈文旭、李兵，以及刘先春、李冉、胡大平、刘凤义、高正礼、肖明江、王生升、姚宏志、方玉梅、郑丽平、亓光、程明欣、刘娜、宋友文、马瑞映、刘洪森。教材编写中提出修改意见建议的有:王炳林、艾四林、朱安东、赵朝峰、王跃、张晖、吴怀友、龙兵、何畏、常宝红、周苏娅、齐义军、陈一收、李后东、邢乐勤、郭明飞、
 
 ---
-
-1. 用 $\mathrm{{NaOH}}$ 在 $\mathrm{{NaCl}}$ 中吸收的气体，用于处理 $\mathrm{{NaOH}}$ 的气体。
 
 后记
 
@@ -23,8 +19,6 @@
 
 
 ---
-
-The image contains no discernible text or characters. It is a horizontal line with no textual content to extract. Therefore, the correct OCR output is an empty string.
 
 ## 郑重声明
 
@@ -116,12 +110,9 @@ http://www.hep.com.cn
 
 物料号 61053-00
 
-The following is the following:
+---
+
+
 
 ---
 
-Theorem 1.2. The proof of the definition of the $\mathcal{P}(x)$-concomitant structure is that $\mathcal{P}(x)$ is a finite set of elements in the $\mathcal{P}(x)$-concomitant space, and
-
----
-
-The following is the following:

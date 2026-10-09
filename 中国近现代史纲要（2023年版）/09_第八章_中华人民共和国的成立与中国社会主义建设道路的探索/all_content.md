@@ -310,8 +310,6 @@
 
 211
 
-The quick brown fox jumps over the lazy dog.
-
 命运。许多原工商业者提高了觉悟，拥护共产党的领导和社会主义制度，为国家建设事业作出了贡献。
 
 历史证明，过渡时期总路线是完全正确的。在社会主义改造过程中，中国共产党创造了一系列适合中国特点的由初级到高级逐步过渡的形式，使个体农民、手工业者和私营工商业者能够循序渐进地改变旧的生产方式。但在改造的后期存在要求过急、工作过粗、改变过快，以及在生产资料所有制形式和经济成分上过于简单划一等缺点。尽管如此，社会主义改造作为一场前所未有的深刻的社会变革，是在保证经济发展、社会稳定和得到人民群众拥护的情况下完成的，其成就是伟大的，影响是深远的。
@@ -409,8 +407,6 @@ The quick brown fox jumps over the lazy dog.
 ## 一、探索适合中国国情的社会主义建设道路
 
 提出马克思主义同中国实际“第二次结合”1956年生产资料所有制改造完成，标志着社会主义基本制度在中国确立，中国开始进入全面建设社会主义的历史阶段。在中国这样一个人口众多、经济文化落后、发展极
-
-Theorem 1.2. The following is a linear algebraic structure of $\mathcal{P}(x)$ and is a commutative set of $\mathcal{P}(y)$. Then $\mathcal{P}(x)$ is a finite set of $\mathcal{P}(y)$ and is a linear algebraic structure of $\mathcal{P}(x)$.
 
 ---
 
@@ -530,8 +526,6 @@ Theorem 1.2. The following is a linear algebraic structure of $\mathcal{P}(x)$ a
 
 ---
 
-The quick brown fox jumps over the lazy dog.
-
 第四节 全面建设社会主义的良好开端
 
 223
@@ -643,8 +637,6 @@ The quick brown fox jumps over the lazy dog.
 <small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">③ 中共中央文献研究室编:《毛泽东年谱（一九四九——一九七六）》第五卷，中央文献出版社2013年版，第610页。</span></small>
 
 ---
-
-(1) $\frac{1}{2}$ 为 $x = 0$ ,即 $x = 0$ ,求得 $y = 0$ .
 
 第五节 社会主义道路的艰辛探索和曲折发展
 
@@ -774,8 +766,6 @@ The quick brown fox jumps over the lazy dog.
 
 2.37
 
-The quick brown fox jumps over the lazy dog.
-
 长达1500公里的“人工天河”红旗渠，创造了一代中国农民改天换地的传奇。人民解放军战士雷锋，在平凡工作岗位上甘当螺丝钉，勇于奉献，乐于助人，表现出崇高的共产主义情操，成为那个年代最响亮的名字。1962年8月，他因公殉职时，年仅22岁。毛泽东题词:“向雷锋同志学习”。雷锋精神，成了新中国社会风尚的一个标志。在新中国的发展历程中，“两弹一星”研制成功，是中华民族为之自豪的伟大成就。钱学森、钱三强、邓稼先等一大批科学家，带着“干惊天动地事，做隐姓埋名人”的决心，把热血洒在戈壁滩，把青春和生命奉献给新中国国防建设事业，将热爱祖国、无私奉献、自力更生、艰苦奋斗、大力协同、勇于登攀的“两弹一星”精神，永久镌刻在中国大地上，成为全国各族人民宝贵的精神财富和不竭的动力源泉。
 
 像这样让后人景仰的英模和精神还有许多。为了建设繁荣富强的新中国，翻身做了主人的中国人民与时间赛跑，用生命和鲜血描绘了一幅幅最新最美的图画，用实际行动证明:同困难作斗争，是物质的角力，也是精神的对垒。精神是一个民族赖以长久生存的灵魂，唯有精神上达到一定的高度，这个民族才能在历史的洪流中屹立不倒、奋勇前进。
@@ -811,8 +801,6 @@ The quick brown fox jumps over the lazy dog.
 在社会主义革命和建设时期，中国共产党领导人民在确
 
 立社会主义基本制度基础上，对适合中国国情的社会主义建设道路进行了艰辛探索，经历了曲折发展，所取得的独创性理论成果和伟大成就，为新的历史时期开创中国特色社会主义提供了宝贵经验、理论准备、物质基础。历史证明，中国人民不但善于破坏一个旧世界，也善于建设一个新世界，只有社会主义才能救中国，只有社会主义才能发展中国。
-
-Theorem 1.2. The following is a linear algebraic structure of $\mathcal{P}(x)$ and is a linear algebraic structure of $\mathcal{P}(y)$, which is a square root of $x$. Then $\mathcal{P}(y)$ is a square root of $x$.
 
 ---
 

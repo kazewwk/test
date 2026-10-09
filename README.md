@@ -43,3 +43,5 @@
 | [马克思主义基本原理（2023年版，数字版）](%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%EF%BC%882023%E5%B9%B4%E7%89%88%EF%BC%8C%E6%95%B0%E5%AD%97%E7%89%88%EF%BC%89/README.md) | 363 | 7 | [下载](https://github.com/kazewwk/test/releases/download/kaoyan-politics-books-2026-10-09/05-basic-principles-marxism-2023-MinerU-Hybrid.zip) |
 
 [Release 下载页](https://github.com/kazewwk/test/releases/tag/kaoyan-politics-books-2026-10-09)附有每本书的 ZIP 校验值、解析清单和完整性报告。原始 PDF 按不超过 95 MB 无损分片保存在各书 `original_pdf/`，可运行各书的 `tools/restore_original_pdf.py` 精确恢复。仓库中的单个文件均小于 100 MB。
+
+[OCR原页核对与修订记录](校对记录/考研政治/README.md)：全部1,724页已完成独立中文OCR交叉对照，并按原图确认307项区块修订。每本书附逐页证据、修正前后记录及离线双栏核对器。尚未裁定的差异和模糊图像仍明确标记，本次核对没有宣称全书逐字人工校对完成。

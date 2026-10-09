@@ -701,8 +701,6 @@
 
 ---
 
-1. 2023年1月1日，公司发布《关于使用部分闲置募集资金进行现金管理的公告》（公告编号:2023-046）。
-
 第二节 把新时代中国特色社会主义不断推向前进
 
 353
@@ -832,8 +830,6 @@
 统筹国内国际两个大局，统筹发展和安全两件大事 2017年12月，习近平在接见回国参加2017年度驻外使节工作会议的全体使节时明确指
 
 ---
-
-Theorem 1.2. (A) Let $\mathcal{F}(x)$ be a finite set of all elements of $x$ such that $x \in \mathbb{Z}$. Then $\mathcal{F}(x)$ is a finite set of all elements of $x$ and $\mathcal{F}(y)$ is a finite set of all elements of $y$.
 
 第二节 把新时代中国特色社会主义不断推向前进
 

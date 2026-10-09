@@ -64,15 +64,9 @@
 
 # 本教材2018年版曾获首届全国教材建设奖全国优秀教材特等奖
 
-![](images/pages_0361-0363/images/page_362_image_1.jpg)
+![](images/ocr_review/page_0363_block_1.png)
 
-<details>
-<summary>seal</summary>
-
-G
-品惠
-心电
-</details>
+【核对注】原页二维码与扫码说明图，未作逐字誊写；原图完整保留。
 
 ![](images/pages_0361-0363/images/page_362_image_2.jpg)
 

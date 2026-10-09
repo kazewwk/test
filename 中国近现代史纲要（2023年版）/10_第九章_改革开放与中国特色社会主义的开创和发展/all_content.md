@@ -408,8 +408,6 @@
 
 ---
 
-The quick brown fox jumps over the lazy dog.
-
 第二节 改革开放和社会主义现代化建设新局面
 
 267

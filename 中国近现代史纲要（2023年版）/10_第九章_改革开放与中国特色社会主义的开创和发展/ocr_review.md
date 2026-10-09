@@ -1,0 +1,76 @@
+# 逐页OCR核对
+
+差异候选不等于识别错误。原页与独立OCR均保留；不确定文字没有按推测替换。
+
+| 原PDF页 | 原页PDF | 状态 | 已修正区块 |
+|---:|---|---|---|
+| 256 | [原页](source.pdf#page=1) | 存在待复核差异 |  |
+| 257 | [原页](source.pdf#page=2) | 存在待复核差异 |  |
+| 258 | [原页](source.pdf#page=3) | 存在待复核差异 |  |
+| 259 | [原页](source.pdf#page=4) | 存在待复核差异 |  |
+| 260 | [原页](source.pdf#page=5) | 存在待复核差异 |  |
+| 261 | [原页](source.pdf#page=6) | 存在待复核差异 |  |
+| 262 | [原页](source.pdf#page=7) | 存在待复核差异 |  |
+| 263 | [原页](source.pdf#page=8) | 存在待复核差异 |  |
+| 264 | [原页](source.pdf#page=9) | 存在待复核差异 |  |
+| 265 | [原页](source.pdf#page=10) | 存在待复核差异 |  |
+| 266 | [原页](source.pdf#page=11) | 存在待复核差异 |  |
+| 267 | [原页](source.pdf#page=12) | 已完成自动核对；未宣称逐字人工校对 |  |
+| 268 | [原页](source.pdf#page=13) | 存在待复核差异 |  |
+| 269 | [原页](source.pdf#page=14) | 存在待复核差异 |  |
+| 270 | [原页](source.pdf#page=15) | 存在待复核差异 |  |
+| 271 | [原页](source.pdf#page=16) | 存在待复核差异 |  |
+| 272 | [原页](source.pdf#page=17) | 存在待复核差异 |  |
+| 273 | [原页](source.pdf#page=18) | 存在待复核差异 |  |
+| 274 | [原页](source.pdf#page=19) | 存在待复核差异 |  |
+| 275 | [原页](source.pdf#page=20) | 存在待复核差异 |  |
+| 276 | [原页](source.pdf#page=21) | 存在待复核差异 |  |
+| 277 | [原页](source.pdf#page=22) | 存在待复核差异 |  |
+| 278 | [原页](source.pdf#page=23) | 存在待复核差异 |  |
+| 279 | [原页](source.pdf#page=24) | 存在待复核差异 |  |
+| 280 | [原页](source.pdf#page=25) | 已完成自动核对；未宣称逐字人工校对 |  |
+| 281 | [原页](source.pdf#page=26) | 存在待复核差异 | 0 |
+| 282 | [原页](source.pdf#page=27) | 存在待复核差异 |  |
+| 283 | [原页](source.pdf#page=28) | 存在待复核差异 |  |
+| 284 | [原页](source.pdf#page=29) | 存在待复核差异 |  |
+| 285 | [原页](source.pdf#page=30) | 存在待复核差异 |  |
+| 286 | [原页](source.pdf#page=31) | 存在待复核差异 |  |
+| 287 | [原页](source.pdf#page=32) | 存在待复核差异 |  |
+| 288 | [原页](source.pdf#page=33) | 存在待复核差异 |  |
+| 289 | [原页](source.pdf#page=34) | 存在待复核差异 |  |
+| 290 | [原页](source.pdf#page=35) | 存在待复核差异 |  |
+| 291 | [原页](source.pdf#page=36) | 存在待复核差异 |  |
+| 292 | [原页](source.pdf#page=37) | 存在待复核差异 |  |
+| 293 | [原页](source.pdf#page=38) | 存在待复核差异 |  |
+| 294 | [原页](source.pdf#page=39) | 存在待复核差异 |  |
+| 295 | [原页](source.pdf#page=40) | 存在待复核差异 |  |
+| 296 | [原页](source.pdf#page=41) | 存在待复核差异 |  |
+| 297 | [原页](source.pdf#page=42) | 存在待复核差异 |  |
+| 298 | [原页](source.pdf#page=43) | 存在待复核差异 |  |
+| 299 | [原页](source.pdf#page=44) | 存在待复核差异 |  |
+| 300 | [原页](source.pdf#page=45) | 存在待复核差异 |  |
+| 301 | [原页](source.pdf#page=46) | 存在待复核差异 |  |
+| 302 | [原页](source.pdf#page=47) | 存在待复核差异 |  |
+| 303 | [原页](source.pdf#page=48) | 存在待复核差异 |  |
+| 304 | [原页](source.pdf#page=49) | 存在待复核差异 |  |
+| 305 | [原页](source.pdf#page=50) | 存在待复核差异 |  |
+| 306 | [原页](source.pdf#page=51) | 存在待复核差异 |  |
+| 307 | [原页](source.pdf#page=52) | 存在待复核差异 |  |
+| 308 | [原页](source.pdf#page=53) | 存在待复核差异 |  |
+| 309 | [原页](source.pdf#page=54) | 存在待复核差异 |  |
+| 310 | [原页](source.pdf#page=55) | 存在待复核差异 |  |
+| 311 | [原页](source.pdf#page=56) | 存在待复核差异 |  |
+| 312 | [原页](source.pdf#page=57) | 存在待复核差异 |  |
+| 313 | [原页](source.pdf#page=58) | 存在待复核差异 |  |
+| 314 | [原页](source.pdf#page=59) | 存在待复核差异 |  |
+| 315 | [原页](source.pdf#page=60) | 存在待复核差异 |  |
+| 316 | [原页](source.pdf#page=61) | 存在待复核差异 |  |
+| 317 | [原页](source.pdf#page=62) | 存在待复核差异 |  |
+| 318 | [原页](source.pdf#page=63) | 存在待复核差异 |  |
+| 319 | [原页](source.pdf#page=64) | 存在待复核差异 |  |
+| 320 | [原页](source.pdf#page=65) | 存在待复核差异 |  |
+| 321 | [原页](source.pdf#page=66) | 存在待复核差异 |  |
+| 322 | [原页](source.pdf#page=67) | 存在待复核差异 |  |
+| 323 | [原页](source.pdf#page=68) | 存在待复核差异 |  |
+| 324 | [原页](source.pdf#page=69) | 存在待复核差异 |  |
+| 325 | [原页](source.pdf#page=70) | 存在待复核差异 |  |

@@ -1,0 +1,50 @@
+# 逐页OCR核对
+
+差异候选不等于识别错误。原页与独立OCR均保留；不确定文字没有按推测替换。
+
+| 原PDF页 | 原页PDF | 状态 | 已修正区块 |
+|---:|---|---|---|
+| 33 | [原页](source.pdf#page=1) | 已完成自动核对；未宣称逐字人工校对 |  |
+| 34 | [原页](source.pdf#page=2) | 存在待复核差异 |  |
+| 35 | [原页](source.pdf#page=3) | 存在待复核差异 |  |
+| 36 | [原页](source.pdf#page=4) | 存在待复核差异 |  |
+| 37 | [原页](source.pdf#page=5) | 已完成自动核对；未宣称逐字人工校对 |  |
+| 38 | [原页](source.pdf#page=6) | 存在待复核差异 |  |
+| 39 | [原页](source.pdf#page=7) | 存在待复核差异 |  |
+| 40 | [原页](source.pdf#page=8) | 存在待复核差异 |  |
+| 41 | [原页](source.pdf#page=9) | 存在待复核差异 |  |
+| 42 | [原页](source.pdf#page=10) | 存在待复核差异 |  |
+| 43 | [原页](source.pdf#page=11) | 已完成自动核对；未宣称逐字人工校对 |  |
+| 44 | [原页](source.pdf#page=12) | 存在待复核差异 |  |
+| 45 | [原页](source.pdf#page=13) | 已完成自动核对；未宣称逐字人工校对 |  |
+| 46 | [原页](source.pdf#page=14) | 存在待复核差异 |  |
+| 47 | [原页](source.pdf#page=15) | 已完成自动核对；未宣称逐字人工校对 |  |
+| 48 | [原页](source.pdf#page=16) | 已完成自动核对；未宣称逐字人工校对 |  |
+| 49 | [原页](source.pdf#page=17) | 存在待复核差异 |  |
+| 50 | [原页](source.pdf#page=18) | 存在待复核差异 |  |
+| 51 | [原页](source.pdf#page=19) | 存在待复核差异 |  |
+| 52 | [原页](source.pdf#page=20) | 存在待复核差异 |  |
+| 53 | [原页](source.pdf#page=21) | 已完成自动核对；未宣称逐字人工校对 |  |
+| 54 | [原页](source.pdf#page=22) | 存在待复核差异 |  |
+| 55 | [原页](source.pdf#page=23) | 已完成自动核对；未宣称逐字人工校对 |  |
+| 56 | [原页](source.pdf#page=24) | 已完成自动核对；未宣称逐字人工校对 |  |
+| 57 | [原页](source.pdf#page=25) | 存在待复核差异 |  |
+| 58 | [原页](source.pdf#page=26) | 存在待复核差异 |  |
+| 59 | [原页](source.pdf#page=27) | 存在待复核差异 |  |
+| 60 | [原页](source.pdf#page=28) | 存在待复核差异 |  |
+| 61 | [原页](source.pdf#page=29) | 存在待复核差异 |  |
+| 62 | [原页](source.pdf#page=30) | 已完成自动核对；未宣称逐字人工校对 |  |
+| 63 | [原页](source.pdf#page=31) | 存在待复核差异 |  |
+| 64 | [原页](source.pdf#page=32) | 存在待复核差异 |  |
+| 65 | [原页](source.pdf#page=33) | 存在待复核差异 |  |
+| 66 | [原页](source.pdf#page=34) | 存在待复核差异 |  |
+| 67 | [原页](source.pdf#page=35) | 已完成自动核对；未宣称逐字人工校对 |  |
+| 68 | [原页](source.pdf#page=36) | 存在待复核差异 |  |
+| 69 | [原页](source.pdf#page=37) | 存在待复核差异 |  |
+| 70 | [原页](source.pdf#page=38) | 存在待复核差异 |  |
+| 71 | [原页](source.pdf#page=39) | 存在待复核差异 |  |
+| 72 | [原页](source.pdf#page=40) | 存在待复核差异 |  |
+| 73 | [原页](source.pdf#page=41) | 存在待复核差异 |  |
+| 74 | [原页](source.pdf#page=42) | 存在待复核差异 |  |
+| 75 | [原页](source.pdf#page=43) | 存在待复核差异 |  |
+| 76 | [原页](source.pdf#page=44) | 存在待复核差异 |  |

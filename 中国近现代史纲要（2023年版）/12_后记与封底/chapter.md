@@ -43,7 +43,3 @@
 用户购书后刮开封底防伪涂层，使用手机微信等软件扫描二维码，会跳转至防伪查询网页，获得所购图书详细信息。
 
 防伪客服电话 (010)58582300
-
-| $\therefore {S}_{\Delta } = \frac{1}{2}\left( {\overrightarrow{A} + \overrightarrow{B}}\right)$ | $\therefore {S}_{\Delta } = \frac{1}{2}\left( {\overrightarrow{A} + \overrightarrow{B}}\right)$ |
-| --- | --- |
-| $\therefore {S}_{\Delta } = \frac{1}{2}\left( {\overrightarrow{A} + \overrightarrow{B}}\right)$ | $\therefore {S}_{\Delta } = \frac{1}{2}\left( {\overrightarrow{A} + \overrightarrow{B}}\right)$ |
