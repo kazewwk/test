@@ -20,7 +20,9 @@
 
 139
 
-The image provided is a QR code. It does not contain any text, mathematical formulas, tables, or figures that can be processed according to the given instructions. Therefore, no OCR output can be generated.
+![](images/ocr_review/page_0153_block_2.png)
+
+【核对注】原页二维码图形，按原图保留。
 
 炮轰东北军驻地北大营，接着向沈阳城等地发动进攻。这就是九一八事变。日本变中国为其独占殖民地的侵略战争由此开始。至1932年2月，中国东北全境沦陷。
 
@@ -94,7 +96,7 @@ The image provided is a QR code. It does not contain any text, mathematical form
 
 ![](images/pages_0151-0180/images/page_155_image_2.jpg)
 
-马占山举部  
+马占山率部  
 鏖战江桥
 
 收复失地。民族资产阶级及其政治代表也要求国民党当局变更“剿共”政策，“全国一致对外”。

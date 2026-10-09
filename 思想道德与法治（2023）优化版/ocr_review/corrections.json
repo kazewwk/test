@@ -257,5 +257,548 @@
     },
     "source_sha256": "25c86db01cdc01b6712cabacdbd56a6ef00e164ae16d5c1710e9e5095a789487",
     "text": "劳动精神\n崇尚劳动  \n热爱劳动  \n辛勤劳动  \n诚实劳动"
+  },
+  {
+    "book_id": 3,
+    "pdf_page": 47,
+    "block_index": 4,
+    "action": "replace_substring",
+    "reason": "原页图片下方长行漏识别习近平亲自五字。",
+    "expected_block_sha256": "75a456c1c1e7f0e14ed9e3f6747801b05be96bd39830f0349bef3a59f919f763",
+    "original_bbox": [
+      0.11,
+      0.28,
+      0.748,
+      0.464
+    ],
+    "before": {
+      "type": "text",
+      "index": 4,
+      "bbox": [
+        0.11,
+        0.28,
+        0.748,
+        0.464
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "人物”“时代楷模”等称号。2022年7月27日，中央军委主席向他颁授“八一勋章”。杜富国受邀担任重庆市特殊教育中心校外辅导员，面对一群失明的孩子，他说:“虽然我们看不见太阳，但心里要升起一个太阳，充满阳光，去鼓励那些失去光明的人。”眼睛失去光明，心中升起太阳。无论是在扫雷战场，还是在人生的战场，杜富国都是当之无愧的英雄！"
+        }
+      ]
+    },
+    "source_sha256": "25c86db01cdc01b6712cabacdbd56a6ef00e164ae16d5c1710e9e5095a789487",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      2328
+    ],
+    "old": "中央军委主席向他",
+    "new": "中央军委主席习近平亲自向他",
+    "expanded_bbox": [
+      0.11,
+      0.28,
+      0.97,
+      0.464
+    ],
+    "after": {
+      "type": "text",
+      "index": 4,
+      "bbox": [
+        0.11,
+        0.28,
+        0.97,
+        0.464
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "人物”“时代楷模”等称号。2022年7月27日，中央军委主席习近平亲自向他颁授“八一勋章”。杜富国受邀担任重庆市特殊教育中心校外辅导员，面对一群失明的孩子，他说:“虽然我们看不见太阳，但心里要升起一个太阳，充满阳光，去鼓励那些失去光明的人。”眼睛失去光明，心中升起太阳。无论是在扫雷战场，还是在人生的战场，杜富国都是当之无愧的英雄！"
+        }
+      ]
+    },
+    "after_block_sha256": "26d6d95a1f9a7c9867ea9b21d423ed3f0c9e58493f8186aea2e6546d6bb607a4"
+  },
+  {
+    "book_id": 3,
+    "pdf_page": 147,
+    "block_index": 7,
+    "action": "source_image",
+    "reason": "模型将原页图形误判成文字或空页眉，恢复原图。",
+    "expected_block_sha256": "fec7c6da5522d6373284f3fc5372db9502b06b68678ed3b681788aff481ee72a",
+    "original_bbox": [
+      0.255,
+      0.348,
+      0.768,
+      0.428
+    ],
+    "before": {
+      "type": "doc_title",
+      "index": 7,
+      "bbox": [
+        0.255,
+        0.348,
+        0.768,
+        0.428
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "仙德福德"
+        }
+      ],
+      "level": 1
+    },
+    "source_sha256": "25c86db01cdc01b6712cabacdbd56a6ef00e164ae16d5c1710e9e5095a789487",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      2495
+    ],
+    "image_note": "德字的字形演变图，按原图保留。",
+    "after": {
+      "type": "image",
+      "index": 7,
+      "bbox": [
+        0.255,
+        0.348,
+        0.768,
+        0.428
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 7,
+          "bbox": [
+            0.255,
+            0.348,
+            0.768,
+            0.428
+          ],
+          "image_path": "images/ocr_review/page_0147_block_7.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "【核对注】德字的字形演变图，按原图保留。"
+            }
+          ]
+        }
+      ]
+    },
+    "after_block_sha256": "3a1153bcee95db9021cd2f362dd3e9c77887defc0f59b4ab6933b144eef83879"
+  },
+  {
+    "book_id": 3,
+    "pdf_page": 155,
+    "block_index": 5,
+    "action": "mark_source_unclear",
+    "reason": "原扫描要求的之后字迹褪色，当前之字不能可靠核实；保留缺字标记和原始裁剪，不按语境猜字。",
+    "expected_block_sha256": "3e803fad0add80fe1569c266a94a79a68761aae8d1fb136c70f98bc5e6e47fae",
+    "original_bbox": [
+      0.079,
+      0.575,
+      0.905,
+      0.886
+    ],
+    "before": {
+      "type": "text",
+      "index": 5,
+      "bbox": [
+        0.079,
+        0.575,
+        0.905,
+        0.886
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "为人民服务是先进性要求和广泛性要求的之一。为人民服务，既伟大又平凡，既高尚又普通，它并非高不可攀、遥不可及，而是可以通过不同层次、不同形式表现出来。“每个人的力量是有限的，但只要我们万众一心、众志成城，就没有克服不了的困难；每个人的工作时间是有限的，但全心全意为人民服务是无限的。” "
+        },
+        {
+          "type": "equation_inline",
+          "content": "^{①}"
+        },
+        {
+          "type": "text",
+          "content": " 在今天，毫不利己、专门利人、无私奉献是为人民服务，顾全大局、先公后私、爱岗敬业、办事公道是为人民服务，同志间、师生间、同学间互相关心、互相爱护、互相帮助是为人民服务，热心公益、助人为乐、见义勇为、扶贫帮困、扶残助残是为人民服务，遵纪守法、诚实劳动并获取正当的个人利益同样也是为人民服务。那种认为为人民服务只适于党员干部而不能推广到全体人民的看法是一种误"
+        }
+      ]
+    },
+    "source_sha256": "25c86db01cdc01b6712cabacdbd56a6ef00e164ae16d5c1710e9e5095a789487",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      2511
+    ],
+    "old": "要求的之一。",
+    "new": "要求的〔原扫描此字褪色，无法可靠辨认〕一。",
+    "image_note": "此段首行“要求的”之后一个字在原扫描中褪色，保留原图；缺字未作推测补写。",
+    "source_crop": "06_第五章_遵守道德规范_锤炼道德品格/images/ocr_review/page_0155_block_5_unclear.png",
+    "after": {
+      "type": "text",
+      "index": 5,
+      "bbox": [
+        0.079,
+        0.575,
+        0.905,
+        0.886
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "为人民服务是先进性要求和广泛性要求的〔原扫描此字褪色，无法可靠辨认〕一。为人民服务，既伟大又平凡，既高尚又普通，它并非高不可攀、遥不可及，而是可以通过不同层次、不同形式表现出来。“每个人的力量是有限的，但只要我们万众一心、众志成城，就没有克服不了的困难；每个人的工作时间是有限的，但全心全意为人民服务是无限的。” "
+        },
+        {
+          "type": "equation_inline",
+          "content": "^{①}"
+        },
+        {
+          "type": "text",
+          "content": " 在今天，毫不利己、专门利人、无私奉献是为人民服务，顾全大局、先公后私、爱岗敬业、办事公道是为人民服务，同志间、师生间、同学间互相关心、互相爱护、互相帮助是为人民服务，热心公益、助人为乐、见义勇为、扶贫帮困、扶残助残是为人民服务，遵纪守法、诚实劳动并获取正当的个人利益同样也是为人民服务。那种认为为人民服务只适于党员干部而不能推广到全体人民的看法是一种误"
+        }
+      ]
+    },
+    "after_block_sha256": "3026101b453d5b04a6666472c1205d5487b2c456c41b60503c6a7d73969cd15b"
+  },
+  {
+    "book_id": 3,
+    "pdf_page": 137,
+    "block_index": 6,
+    "action": "replace_text",
+    "reason": "原手写署名放大核对为尹典，吴兵为误识别。",
+    "image_note": "原手写署名放大核对为尹典，吴兵为误识别。",
+    "verification": "visual comparison with original PDF; enlarged source image",
+    "review_round": 2,
+    "expected_block_sha256": "774e01517da21f5cca66ffe03572d0837527d3356304975a0ec222e1c66fadf5",
+    "before": {
+      "type": "text",
+      "index": 6,
+      "bbox": [
+        0.38,
+        0.627,
+        0.461,
+        0.655
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "申请人:吴兵  \n2020年1月31日"
+        }
+      ]
+    },
+    "original_bbox": [
+      0.38,
+      0.627,
+      0.461,
+      0.655
+    ],
+    "source_sha256": "25c86db01cdc01b6712cabacdbd56a6ef00e164ae16d5c1710e9e5095a789487",
+    "candidate_ids": [
+      2475
+    ],
+    "text": "申请人：尹典  \n2020年1月31日",
+    "after": {
+      "type": "text",
+      "index": 6,
+      "bbox": [
+        0.38,
+        0.627,
+        0.461,
+        0.655
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "申请人：尹典  \n2020年1月31日"
+        }
+      ]
+    },
+    "after_block_sha256": "c3e92771982eb00de5c618c59d684b468e64e6e2f3f07afd05ae2726e0dca0b5"
+  },
+  {
+    "book_id": 3,
+    "pdf_page": 137,
+    "block_index": 5,
+    "action": "image_text",
+    "reason": "手写入党申请书原图。开头可辨认文字已誊写，其余模糊小字未可靠誊写；不按语境补写。",
+    "image_note": "手写入党申请书原图。开头可辨认文字已誊写，其余模糊小字未可靠誊写；不按语境补写。",
+    "verification": "visual comparison with original PDF; enlarged source image",
+    "review_round": 2,
+    "expected_block_sha256": "dec00645a7d7f96bebbe00833aa5b589dceef38034c47a29bfa44823dbe98ec0",
+    "before": {
+      "type": "image",
+      "index": 5,
+      "bbox": [
+        0.141,
+        0.324,
+        0.488,
+        0.623
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 5,
+          "bbox": [
+            0.141,
+            0.324,
+            0.488,
+            0.623
+          ],
+          "image_path": "images/ocr_review/page_0137_block_5.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "【核对注】手写申请书原图；未完成可靠文字誊写。"
+            }
+          ]
+        }
+      ]
+    },
+    "original_bbox": [
+      0.141,
+      0.324,
+      0.488,
+      0.623
+    ],
+    "source_sha256": "25c86db01cdc01b6712cabacdbd56a6ef00e164ae16d5c1710e9e5095a789487",
+    "candidate_ids": [],
+    "text": "敬爱的党组织：\n此时我正在火神山医院建设现场，〔后续小字不能可靠辨认，完整内容见原图〕",
+    "after": {
+      "type": "image",
+      "index": 5,
+      "bbox": [
+        0.141,
+        0.324,
+        0.488,
+        0.623
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 5,
+          "bbox": [
+            0.141,
+            0.324,
+            0.488,
+            0.623
+          ],
+          "image_path": "images/ocr_review/page_0137_block_5.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "敬爱的党组织：\n此时我正在火神山医院建设现场，〔后续小字不能可靠辨认，完整内容见原图〕\n\n【核对注】手写入党申请书原图。开头可辨认文字已誊写，其余模糊小字未可靠誊写；不按语境补写。"
+            }
+          ]
+        }
+      ]
+    },
+    "after_block_sha256": "5ac09d0f15a218c2d4d8607ee80216edde524ccecf464b84f95757f01f32b976"
+  },
+  {
+    "book_id": 3,
+    "pdf_page": 170,
+    "block_index": 5,
+    "action": "full_manuscript",
+    "reason": "原图为周恩来《我的修养要则》手稿。七条正文按简体字誊写；笔迹、标点和异体字保留原图。末尾题记部分模糊，未作可靠誊写。",
+    "image_note": "原图为周恩来《我的修养要则》手稿。七条正文按简体字誊写；笔迹、标点和异体字保留原图。末尾题记部分模糊，未作可靠誊写。",
+    "verification": "visual comparison with original PDF; enlarged source image",
+    "review_round": 2,
+    "expected_block_sha256": "df5f1d32c4764886516392c641e0209d5744c927db50721779faa67ed4179b72",
+    "before": {
+      "type": "image",
+      "index": 5,
+      "bbox": [
+        0.591,
+        0.183,
+        0.865,
+        0.274
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 5,
+          "bbox": [
+            0.591,
+            0.183,
+            0.865,
+            0.274
+          ],
+          "image_path": "images/ocr_review/page_0170_block_5.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "【核对注】手写信原图；未完成可靠文字誊写。"
+            }
+          ]
+        }
+      ]
+    },
+    "original_bbox": [
+      0.591,
+      0.183,
+      0.865,
+      0.274
+    ],
+    "source_sha256": "25c86db01cdc01b6712cabacdbd56a6ef00e164ae16d5c1710e9e5095a789487",
+    "candidate_ids": [],
+    "text": "我的修养要则\n一、加紧学习，抓住中心，宁精勿杂，宁专勿多。\n二、努力工作，要有计划，有重点，有条理。\n三、习作合一，要注意时间空间和条件，使之配合适当，要注意检讨和整理，要有发现和创造。\n四、要与自己的他人的一切不正确的思想意识作原则上坚决的斗争。\n五、适当地发扬自己的长处，具体地纠正自己的短处。\n六、永远不与群众隔离，向群众学习，并帮助他们。过集体生活，注意调研，遵守纪律。\n七、健全自己身体，保持合理的规律生活，这是自我修养的物质基础。",
+    "after": {
+      "type": "image",
+      "index": 5,
+      "bbox": [
+        0.565,
+        0.155,
+        0.875,
+        0.441
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 5,
+          "bbox": [
+            0.565,
+            0.155,
+            0.875,
+            0.441
+          ],
+          "image_path": "images/ocr_review/page_0170_complete_manuscript.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "我的修养要则\n一、加紧学习，抓住中心，宁精勿杂，宁专勿多。\n二、努力工作，要有计划，有重点，有条理。\n三、习作合一，要注意时间空间和条件，使之配合适当，要注意检讨和整理，要有发现和创造。\n四、要与自己的他人的一切不正确的思想意识作原则上坚决的斗争。\n五、适当地发扬自己的长处，具体地纠正自己的短处。\n六、永远不与群众隔离，向群众学习，并帮助他们。过集体生活，注意调研，遵守纪律。\n七、健全自己身体，保持合理的规律生活，这是自我修养的物质基础。\n\n【核对注】原图为周恩来《我的修养要则》手稿。七条正文按简体字誊写；笔迹、标点和异体字保留原图。末尾题记部分模糊，未作可靠誊写。"
+            }
+          ]
+        }
+      ]
+    },
+    "after_block_sha256": "2911fb4a3f4b066f3341b317add42bb789e481060be0546a80c093f45993114e"
+  },
+  {
+    "book_id": 3,
+    "pdf_page": 170,
+    "block_index": 6,
+    "action": "remove",
+    "reason": "原手稿已作为完整原图和七条正文保存在区块5，删除重复的分块展示，原始图片文件仍保留。",
+    "image_note": "原手稿已作为完整原图和七条正文保存在区块5，删除重复的分块展示，原始图片文件仍保留。",
+    "verification": "visual comparison with original PDF; enlarged source image",
+    "review_round": 2,
+    "expected_block_sha256": "28c517dd902172cc364bb43836eff25876004ace3284149df1e54249bd8a4f4e",
+    "before": {
+      "type": "image",
+      "index": 6,
+      "bbox": [
+        0.594,
+        0.272,
+        0.865,
+        0.338
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 6,
+          "bbox": [
+            0.594,
+            0.272,
+            0.865,
+            0.338
+          ],
+          "image_path": "images/ocr_review/page_0170_block_6.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "【核对注】手写信原图；未完成可靠文字誊写。"
+            }
+          ]
+        }
+      ]
+    },
+    "original_bbox": [
+      0.594,
+      0.272,
+      0.865,
+      0.338
+    ],
+    "source_sha256": "25c86db01cdc01b6712cabacdbd56a6ef00e164ae16d5c1710e9e5095a789487",
+    "candidate_ids": [],
+    "after": null,
+    "after_block_sha256": null
+  },
+  {
+    "book_id": 3,
+    "pdf_page": 170,
+    "block_index": 7,
+    "action": "remove",
+    "reason": "原手稿已作为完整原图和七条正文保存在区块5，删除重复的分块展示，原始图片文件仍保留。",
+    "image_note": "原手稿已作为完整原图和七条正文保存在区块5，删除重复的分块展示，原始图片文件仍保留。",
+    "verification": "visual comparison with original PDF; enlarged source image",
+    "review_round": 2,
+    "expected_block_sha256": "a462e26bf305d2f76f7718fb133756e7d9152dd851de1a3dcef8d5bd0afb3d02",
+    "before": {
+      "type": "image",
+      "index": 7,
+      "bbox": [
+        0.597,
+        0.335,
+        0.866,
+        0.421
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 7,
+          "bbox": [
+            0.597,
+            0.335,
+            0.866,
+            0.421
+          ],
+          "image_path": "images/ocr_review/page_0170_block_7.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "【核对注】手写信原图；未完成可靠文字誊写。"
+            }
+          ]
+        }
+      ]
+    },
+    "original_bbox": [
+      0.597,
+      0.335,
+      0.866,
+      0.421
+    ],
+    "source_sha256": "25c86db01cdc01b6712cabacdbd56a6ef00e164ae16d5c1710e9e5095a789487",
+    "candidate_ids": [],
+    "after": null,
+    "after_block_sha256": null
   }
 ]

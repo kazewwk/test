@@ -56,7 +56,8 @@ Zhongguo Jinxiandaishi Gangyao
 
 咨询电话 400-810-0598
 
-网 址 http://www.hep.edu.cn
+网 址 http://www.hep.edu.cn  
+http://www.hep.com.cn
 
 版式设计 王凌波 王琰
 

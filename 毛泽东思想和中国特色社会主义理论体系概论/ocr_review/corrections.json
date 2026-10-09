@@ -65,5 +65,77 @@
     },
     "source_sha256": "73d55bf73813715bd3f4a299c69cabb2923e3d5038fea24dfc5774b67e813747",
     "image_note": "二维码及教材标识原图。"
+  },
+  {
+    "book_id": 4,
+    "pdf_page": 214,
+    "block_index": 5,
+    "action": "replace_substring",
+    "reason": "原页为离开发展，两字顺序被错误交换。",
+    "expected_block_sha256": "07e608125023865d2a0ebf3f7793cb22a876499910d7f9b2bbbf1b87c16ff588",
+    "original_bbox": [
+      0.053,
+      0.367,
+      0.911,
+      0.546
+    ],
+    "before": {
+      "type": "text",
+      "index": 5,
+      "bbox": [
+        0.053,
+        0.367,
+        0.911,
+        0.546
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "中国特色社会主义是靠发展来不断巩固和推进的。社会主义要强大，体现优越性，关键在发展。江泽民反复强调:“发展是硬道理，这是我们必须始终坚持的一个战略思想。” "
+        },
+        {
+          "type": "equation_inline",
+          "content": "^{①}"
+        },
+        {
+          "type": "text",
+          "content": "  特别是我国这样一个发展中大国，能不能解决好发展问题，直接关系人心向背、事业兴衰。离开展发，坚持党的先进性、发挥社会主义制度的优越性和实现民富国强都无从谈起。"
+        }
+      ]
+    },
+    "source_sha256": "73d55bf73813715bd3f4a299c69cabb2923e3d5038fea24dfc5774b67e813747",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      3154,
+      3155
+    ],
+    "old": "离开展发",
+    "new": "离开发展",
+    "after": {
+      "type": "text",
+      "index": 5,
+      "bbox": [
+        0.053,
+        0.367,
+        0.911,
+        0.546
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "中国特色社会主义是靠发展来不断巩固和推进的。社会主义要强大，体现优越性，关键在发展。江泽民反复强调:“发展是硬道理，这是我们必须始终坚持的一个战略思想。” "
+        },
+        {
+          "type": "equation_inline",
+          "content": "^{①}"
+        },
+        {
+          "type": "text",
+          "content": "  特别是我国这样一个发展中大国，能不能解决好发展问题，直接关系人心向背、事业兴衰。离开发展，坚持党的先进性、发挥社会主义制度的优越性和实现民富国强都无从谈起。"
+        }
+      ]
+    },
+    "after_block_sha256": "81f2ac6c3831552a8fc55825a48490bd895ab7923f4fa3ee78a33c3e6716ea63"
   }
 ]

@@ -12,7 +12,9 @@
 
 本书编写组
 
-[No text]
+![](images/ocr_review/page_0001_block_7.png)
+
+【核对注】封面出版社标志，按原图保留。
 
 高等教育出版社
 

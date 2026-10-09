@@ -67059,5 +67059,3229 @@
     },
     "source_sha256": "bedda28367489ec5abdf3dfa107d3c1e58874ce6051cd200cb843a778f0b47e6",
     "image_note": "原页二维码与扫码说明图，未作逐字誊写；原图完整保留。"
+  },
+  {
+    "book_id": 1,
+    "pdf_page": 4,
+    "block_index": 14,
+    "action": "replace_text",
+    "reason": "版权页两行网址中的第二行漏识别，按原页补入。",
+    "expected_block_sha256": "6216180877ec619df9d7d1b21d72ce660baf98fd490b453ac1452dcffc31bb0a",
+    "original_bbox": [
+      0.443,
+      0.54,
+      0.717,
+      0.558
+    ],
+    "before": {
+      "type": "text",
+      "index": 14,
+      "bbox": [
+        0.443,
+        0.54,
+        0.717,
+        0.558
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "网 址 http://www.hep.edu.cn"
+        }
+      ]
+    },
+    "source_sha256": "a864821148e3dc62d78f9e58091c8729471510b54c683b35fbc87447b8e98b38",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      5
+    ],
+    "text": "网 址 http://www.hep.edu.cn  \nhttp://www.hep.com.cn",
+    "expanded_bbox": [
+      0.443,
+      0.54,
+      0.74,
+      0.578
+    ],
+    "after": {
+      "type": "text",
+      "index": 14,
+      "bbox": [
+        0.443,
+        0.54,
+        0.74,
+        0.578
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "网 址 http://www.hep.edu.cn  \nhttp://www.hep.com.cn"
+        }
+      ]
+    },
+    "after_block_sha256": "9df92b88c10dd94e54794e5bf96b37e512af4e37b548d6e84be3161615bb3c90"
+  },
+  {
+    "book_id": 1,
+    "pdf_page": 18,
+    "block_index": 1,
+    "action": "replace_text",
+    "reason": "原页页眉为导言，删除虚构的数学表达式/数字。",
+    "expected_block_sha256": "0c61925d7a8cfc62f249503522917efa095a94db6939121567a805010a070018",
+    "original_bbox": [
+      0.263,
+      0.026,
+      0.316,
+      0.043
+    ],
+    "before": {
+      "type": "header",
+      "index": 1,
+      "bbox": [
+        0.263,
+        0.026,
+        0.316,
+        0.043
+      ],
+      "content": [
+        {
+          "type": "equation_inline",
+          "content": "\\frac{1}{2} = \\frac{1}{2}"
+        }
+      ]
+    },
+    "source_sha256": "a864821148e3dc62d78f9e58091c8729471510b54c683b35fbc87447b8e98b38",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      40,
+      41
+    ],
+    "text": "导言",
+    "after": {
+      "type": "header",
+      "index": 1,
+      "bbox": [
+        0.263,
+        0.026,
+        0.316,
+        0.043
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "导言"
+        }
+      ]
+    },
+    "after_block_sha256": "33ad6055dddda97d494301af76ac2be1c3969aeddda31c45e38242e0d809d398"
+  },
+  {
+    "book_id": 1,
+    "pdf_page": 20,
+    "block_index": 1,
+    "action": "replace_text",
+    "reason": "原页页眉为导言，删除虚构的数学表达式/数字。",
+    "expected_block_sha256": "7d6d3d8d12d05be198a82aed4991395361ca867cc43c936011f249cab6428cc4",
+    "original_bbox": [
+      0.246,
+      0.029,
+      0.297,
+      0.046
+    ],
+    "before": {
+      "type": "header",
+      "index": 1,
+      "bbox": [
+        0.246,
+        0.029,
+        0.297,
+        0.046
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "导 1"
+        }
+      ]
+    },
+    "source_sha256": "a864821148e3dc62d78f9e58091c8729471510b54c683b35fbc87447b8e98b38",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      45
+    ],
+    "text": "导言",
+    "after": {
+      "type": "header",
+      "index": 1,
+      "bbox": [
+        0.246,
+        0.029,
+        0.297,
+        0.046
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "导言"
+        }
+      ]
+    },
+    "after_block_sha256": "451656616f72a51cad1c5216173347ac79d83cfc6293ebf24114db62b09744e8"
+  },
+  {
+    "book_id": 1,
+    "pdf_page": 23,
+    "block_index": 0,
+    "action": "replace_text",
+    "reason": "原页页眉为导言，删除虚构的数学表达式/数字。",
+    "expected_block_sha256": "f257d09d9a173acdf18fa3ee1deddafb86429d038f74384c65d2d71d57fc4b95",
+    "original_bbox": [
+      0.71,
+      0.022,
+      0.762,
+      0.039
+    ],
+    "before": {
+      "type": "header",
+      "index": 0,
+      "bbox": [
+        0.71,
+        0.022,
+        0.762,
+        0.039
+      ],
+      "content": [
+        {
+          "type": "equation_inline",
+          "content": "\\frac{1}{2}"
+        }
+      ]
+    },
+    "source_sha256": "a864821148e3dc62d78f9e58091c8729471510b54c683b35fbc87447b8e98b38",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      50
+    ],
+    "text": "导言",
+    "after": {
+      "type": "header",
+      "index": 0,
+      "bbox": [
+        0.71,
+        0.022,
+        0.762,
+        0.039
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "导言"
+        }
+      ]
+    },
+    "after_block_sha256": "80f67767f49502829bb3d400b0d688052daa364226935c0404c41e40c3368853"
+  },
+  {
+    "book_id": 1,
+    "pdf_page": 61,
+    "block_index": 2,
+    "action": "source_image",
+    "reason": "模型将原页图形误判成文字或空页眉，恢复原图。",
+    "expected_block_sha256": "449617b508b0a9195fc698915914cda67662c5edc1f59aab3ff99236c711184f",
+    "original_bbox": [
+      0.133,
+      0.063,
+      0.178,
+      0.097
+    ],
+    "before": {
+      "type": "header",
+      "index": 2,
+      "bbox": [
+        0.133,
+        0.063,
+        0.178,
+        0.097
+      ],
+      "content": []
+    },
+    "source_sha256": "a864821148e3dc62d78f9e58091c8729471510b54c683b35fbc87447b8e98b38",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      189
+    ],
+    "image_note": "必读文献栏目图标，按原图保留。",
+    "after": {
+      "type": "image",
+      "index": 2,
+      "bbox": [
+        0.133,
+        0.063,
+        0.178,
+        0.097
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 2,
+          "bbox": [
+            0.133,
+            0.063,
+            0.178,
+            0.097
+          ],
+          "image_path": "images/ocr_review/page_0061_block_2.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "【核对注】必读文献栏目图标，按原图保留。"
+            }
+          ]
+        }
+      ]
+    },
+    "after_block_sha256": "d1a34e32b3af76cb9cc02d0320ae001485bbe8ab0e14f004d3c15d9ff6ebf7a0"
+  },
+  {
+    "book_id": 1,
+    "pdf_page": 61,
+    "block_index": 3,
+    "action": "change_type",
+    "reason": "原页此区域是正文栏目标题；改正页眉分类，使章节阅读版保留该标题。",
+    "expected_block_sha256": "b34d085f4f023d1fd2365dafcab5d407e169848f42bcc976d0b64add415938bc",
+    "original_bbox": [
+      0.195,
+      0.068,
+      0.297,
+      0.089
+    ],
+    "before": {
+      "type": "header",
+      "index": 3,
+      "bbox": [
+        0.195,
+        0.068,
+        0.297,
+        0.089
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "必读文献"
+        }
+      ]
+    },
+    "source_sha256": "a864821148e3dc62d78f9e58091c8729471510b54c683b35fbc87447b8e98b38",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [],
+    "new_type": "paragraph_title",
+    "level": 2,
+    "after": {
+      "type": "paragraph_title",
+      "index": 3,
+      "bbox": [
+        0.195,
+        0.068,
+        0.297,
+        0.089
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "必读文献"
+        }
+      ],
+      "level": 2
+    },
+    "after_block_sha256": "252cf7c7fcc0fe06b42e586d16532fc4d058466ab028594b7e458611542b3e1f"
+  },
+  {
+    "book_id": 1,
+    "pdf_page": 66,
+    "block_index": 2,
+    "action": "source_image",
+    "reason": "模型将原页图形误判成文字或空页眉，恢复原图。",
+    "expected_block_sha256": "c247dbd39a735c487c168e9afdab10428189bca1411021f31673c2761d2bd903",
+    "original_bbox": [
+      0.146,
+      0.073,
+      0.348,
+      0.092
+    ],
+    "before": {
+      "type": "text",
+      "index": 2,
+      "bbox": [
+        0.146,
+        0.073,
+        0.348,
+        0.092
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "照新年九木己国天平太"
+        }
+      ]
+    },
+    "source_sha256": "a864821148e3dc62d78f9e58091c8729471510b54c683b35fbc87447b8e98b38",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      210,
+      211,
+      212
+    ],
+    "image_note": "碑刻文字，按原图保留书写方向和字形。",
+    "after": {
+      "type": "image",
+      "index": 2,
+      "bbox": [
+        0.146,
+        0.073,
+        0.348,
+        0.092
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 2,
+          "bbox": [
+            0.146,
+            0.073,
+            0.348,
+            0.092
+          ],
+          "image_path": "images/ocr_review/page_0066_block_2.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "【核对注】碑刻文字，按原图保留书写方向和字形。"
+            }
+          ]
+        }
+      ]
+    },
+    "after_block_sha256": "b9d301585632f6bb12ee38cddf8e1ad8fed98263fd9260d7735066fbd449d2e9"
+  },
+  {
+    "book_id": 1,
+    "pdf_page": 81,
+    "block_index": 2,
+    "action": "source_image",
+    "reason": "模型将原页图形误判成文字或空页眉，恢复原图。",
+    "expected_block_sha256": "857ac35211f72f85d6b6f142e4c57a8190c5de44337e165e5f73f942405222f0",
+    "original_bbox": [
+      0.128,
+      0.062,
+      0.171,
+      0.095
+    ],
+    "before": {
+      "type": "header",
+      "index": 2,
+      "bbox": [
+        0.128,
+        0.062,
+        0.171,
+        0.095
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "图"
+        }
+      ]
+    },
+    "source_sha256": "a864821148e3dc62d78f9e58091c8729471510b54c683b35fbc87447b8e98b38",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      269
+    ],
+    "image_note": "延伸阅读栏目图标，按原图保留。",
+    "after": {
+      "type": "image",
+      "index": 2,
+      "bbox": [
+        0.128,
+        0.062,
+        0.171,
+        0.095
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 2,
+          "bbox": [
+            0.128,
+            0.062,
+            0.171,
+            0.095
+          ],
+          "image_path": "images/ocr_review/page_0081_block_2.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "【核对注】延伸阅读栏目图标，按原图保留。"
+            }
+          ]
+        }
+      ]
+    },
+    "after_block_sha256": "dd938e2d087d0a75885af0b4e8381383fee6919ffb113d532ac06eba0ccd7471"
+  },
+  {
+    "book_id": 1,
+    "pdf_page": 81,
+    "block_index": 3,
+    "action": "change_type",
+    "reason": "原页此区域是正文栏目标题；改正页眉分类，使章节阅读版保留该标题。",
+    "expected_block_sha256": "88650824ae2a0f5d8cff6b3fbec22c25f76c42df821e313fe07ba276a5711ee7",
+    "original_bbox": [
+      0.188,
+      0.068,
+      0.337,
+      0.089
+    ],
+    "before": {
+      "type": "header",
+      "index": 3,
+      "bbox": [
+        0.188,
+        0.068,
+        0.337,
+        0.089
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "延伸阅读文献"
+        }
+      ]
+    },
+    "source_sha256": "a864821148e3dc62d78f9e58091c8729471510b54c683b35fbc87447b8e98b38",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [],
+    "new_type": "paragraph_title",
+    "level": 2,
+    "after": {
+      "type": "paragraph_title",
+      "index": 3,
+      "bbox": [
+        0.188,
+        0.068,
+        0.337,
+        0.089
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "延伸阅读文献"
+        }
+      ],
+      "level": 2
+    },
+    "after_block_sha256": "8ffe0f2ecb8d4a61c4e58a18d598615dfa276bc490300db41fe997239785dd37"
+  },
+  {
+    "book_id": 1,
+    "pdf_page": 83,
+    "block_index": 0,
+    "action": "remove",
+    "reason": "原页扫描边缘无此文字，删除模型生成的英文说明或测试句。",
+    "expected_block_sha256": "e18438417d05feefe4417e1c3691b5b078d9b86f47f9902e7406fc8a904fa960",
+    "original_bbox": [
+      0.075,
+      0.0,
+      0.092,
+      0.011
+    ],
+    "before": {
+      "type": "page_number",
+      "index": 0,
+      "bbox": [
+        0.075,
+        0.0,
+        0.092,
+        0.011
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "The source image contains no discernible text or characters. Therefore, the correct OCR output is an empty string."
+        }
+      ]
+    },
+    "source_sha256": "a864821148e3dc62d78f9e58091c8729471510b54c683b35fbc87447b8e98b38",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      274
+    ],
+    "after": null,
+    "after_block_sha256": null
+  },
+  {
+    "book_id": 1,
+    "pdf_page": 87,
+    "block_index": 2,
+    "action": "source_image",
+    "reason": "模型将原页图形误判成文字或空页眉，恢复原图。",
+    "expected_block_sha256": "e58d25f8b3e127b57f0e4d408c0219e29e8423227e86d6a0e32e55c8ba92b771",
+    "original_bbox": [
+      0.787,
+      0.075,
+      0.883,
+      0.145
+    ],
+    "before": {
+      "type": "header",
+      "index": 2,
+      "bbox": [
+        0.787,
+        0.075,
+        0.883,
+        0.145
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "The image provided is a QR code. It does not contain any text, mathematical formulas, tables, or figures that can be processed according to the given instructions. Therefore, no OCR output can be generated."
+        }
+      ]
+    },
+    "source_sha256": "a864821148e3dc62d78f9e58091c8729471510b54c683b35fbc87447b8e98b38",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      293
+    ],
+    "image_note": "原页二维码图形，按原图保留。",
+    "after": {
+      "type": "image",
+      "index": 2,
+      "bbox": [
+        0.787,
+        0.075,
+        0.883,
+        0.145
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 2,
+          "bbox": [
+            0.787,
+            0.075,
+            0.883,
+            0.145
+          ],
+          "image_path": "images/ocr_review/page_0087_block_2.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "【核对注】原页二维码图形，按原图保留。"
+            }
+          ]
+        }
+      ]
+    },
+    "after_block_sha256": "777b86423b7fbc292444234098cb46a24938ba16450e2e5d19287f0934ad7de1"
+  },
+  {
+    "book_id": 1,
+    "pdf_page": 87,
+    "block_index": 3,
+    "action": "change_type",
+    "reason": "此段为正文续段；改正页眉分类，使章节阅读版保留正文。",
+    "expected_block_sha256": "954c09e9421ea0a044a1542a277c6e638e4ce2c3a005866cd08b114a94ef639d",
+    "original_bbox": [
+      0.128,
+      0.068,
+      0.76,
+      0.125
+    ],
+    "before": {
+      "type": "header",
+      "index": 3,
+      "bbox": [
+        0.128,
+        0.068,
+        0.76,
+        0.125
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "科学补习所、光复会、岳王会等。这些革命团体的成立为革命思想的传播和革命运动的发展提供了不可缺少的组织力量。"
+        }
+      ]
+    },
+    "source_sha256": "a864821148e3dc62d78f9e58091c8729471510b54c683b35fbc87447b8e98b38",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [],
+    "new_type": "text",
+    "after": {
+      "type": "text",
+      "index": 3,
+      "bbox": [
+        0.128,
+        0.068,
+        0.76,
+        0.125
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "科学补习所、光复会、岳王会等。这些革命团体的成立为革命思想的传播和革命运动的发展提供了不可缺少的组织力量。"
+        }
+      ]
+    },
+    "after_block_sha256": "d244cb9e3166ee03252011ae695582062f96eb9587adea0c1a46780758383303"
+  },
+  {
+    "book_id": 1,
+    "pdf_page": 113,
+    "block_index": 0,
+    "action": "remove",
+    "reason": "原页扫描边缘无此文字，删除模型生成的英文说明或测试句。",
+    "expected_block_sha256": "80e73c213335bf789b23b08ef63af163aed9b327eb4bee59afeb5cfb296fa9c2",
+    "original_bbox": [
+      0.075,
+      0.0,
+      0.114,
+      0.042
+    ],
+    "before": {
+      "type": "header",
+      "index": 0,
+      "bbox": [
+        0.075,
+        0.0,
+        0.114,
+        0.042
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "The quick brown fox jumps over the lazy dog."
+        }
+      ]
+    },
+    "source_sha256": "a864821148e3dc62d78f9e58091c8729471510b54c683b35fbc87447b8e98b38",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      401
+    ],
+    "after": null,
+    "after_block_sha256": null
+  },
+  {
+    "book_id": 1,
+    "pdf_page": 119,
+    "block_index": 0,
+    "action": "remove",
+    "reason": "原页扫描边缘无此文字，删除模型生成的英文说明或测试句。",
+    "expected_block_sha256": "5e52613cbca7d553d91c8f2439f2f61c518a711a215db475b3e46950805ed731",
+    "original_bbox": [
+      0.076,
+      0.0,
+      0.123,
+      0.069
+    ],
+    "before": {
+      "type": "header",
+      "index": 0,
+      "bbox": [
+        0.076,
+        0.0,
+        0.123,
+        0.069
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "The quick brown fox jumps over the lazy dog."
+        }
+      ]
+    },
+    "source_sha256": "a864821148e3dc62d78f9e58091c8729471510b54c683b35fbc87447b8e98b38",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      433
+    ],
+    "after": null,
+    "after_block_sha256": null
+  },
+  {
+    "book_id": 1,
+    "pdf_page": 153,
+    "block_index": 2,
+    "action": "source_image",
+    "reason": "模型将原页图形误判成文字或空页眉，恢复原图。",
+    "expected_block_sha256": "8d1a71a65780635a5fcb6187a48a1be0251b2294c21dd870c89838b9eeca7272",
+    "original_bbox": [
+      0.78,
+      0.073,
+      0.875,
+      0.142
+    ],
+    "before": {
+      "type": "header",
+      "index": 2,
+      "bbox": [
+        0.78,
+        0.073,
+        0.875,
+        0.142
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "The image provided is a QR code. It does not contain any text, mathematical formulas, tables, or figures that can be processed according to the given instructions. Therefore, no OCR output can be generated."
+        }
+      ]
+    },
+    "source_sha256": "a864821148e3dc62d78f9e58091c8729471510b54c683b35fbc87447b8e98b38",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      531,
+      532
+    ],
+    "image_note": "原页二维码图形，按原图保留。",
+    "after": {
+      "type": "image",
+      "index": 2,
+      "bbox": [
+        0.78,
+        0.073,
+        0.875,
+        0.142
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 2,
+          "bbox": [
+            0.78,
+            0.073,
+            0.875,
+            0.142
+          ],
+          "image_path": "images/ocr_review/page_0153_block_2.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "【核对注】原页二维码图形，按原图保留。"
+            }
+          ]
+        }
+      ]
+    },
+    "after_block_sha256": "7f06b929fdacd123b81c7b8bddc6fd5c5944f1dad9b2801cfa24178a82496591"
+  },
+  {
+    "book_id": 1,
+    "pdf_page": 156,
+    "block_index": 2,
+    "action": "replace_substring",
+    "reason": "原图图注为马占山率部鏖战江桥。",
+    "expected_block_sha256": "646a5af12ac734973d67e4195521cf8322c778f15745fcd8737b91b01bfd18c7",
+    "original_bbox": [
+      0.117,
+      0.071,
+      0.213,
+      0.14
+    ],
+    "before": {
+      "type": "image",
+      "index": 2,
+      "bbox": [
+        0.117,
+        0.071,
+        0.213,
+        0.14
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 2,
+          "bbox": [
+            0.117,
+            0.071,
+            0.213,
+            0.14
+          ],
+          "image_path": "images/pages_0151-0180/images/page_155_image_2.jpg",
+          "content": ""
+        },
+        {
+          "type": "image_footnote",
+          "index": 4,
+          "bbox": [
+            0.117,
+            0.147,
+            0.211,
+            0.185
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "马占山举部  \n鏖战江桥"
+            }
+          ]
+        }
+      ]
+    },
+    "source_sha256": "a864821148e3dc62d78f9e58091c8729471510b54c683b35fbc87447b8e98b38",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      554
+    ],
+    "old": "举部",
+    "new": "率部",
+    "after": {
+      "type": "image",
+      "index": 2,
+      "bbox": [
+        0.117,
+        0.071,
+        0.213,
+        0.14
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 2,
+          "bbox": [
+            0.117,
+            0.071,
+            0.213,
+            0.14
+          ],
+          "image_path": "images/pages_0151-0180/images/page_155_image_2.jpg",
+          "content": ""
+        },
+        {
+          "type": "image_footnote",
+          "index": 4,
+          "bbox": [
+            0.117,
+            0.147,
+            0.211,
+            0.185
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "马占山率部  \n鏖战江桥"
+            }
+          ]
+        }
+      ]
+    },
+    "after_block_sha256": "edefd6681fe0ab08e0f4cb67e6e8be12cc501ee40ac43dbb1c708ca95b8d98bd"
+  },
+  {
+    "book_id": 1,
+    "pdf_page": 207,
+    "block_index": 0,
+    "action": "source_image",
+    "reason": "模型将原页图形误判成文字或空页眉，恢复原图。",
+    "expected_block_sha256": "b4e624df922f0c1b57d7af407bc6c67e386c1210b4971976e5f0279b336eba60",
+    "original_bbox": [
+      0.152,
+      0.062,
+      0.197,
+      0.097
+    ],
+    "before": {
+      "type": "header",
+      "index": 0,
+      "bbox": [
+        0.152,
+        0.062,
+        0.197,
+        0.097
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "[NO TEXT]"
+        }
+      ]
+    },
+    "source_sha256": "a864821148e3dc62d78f9e58091c8729471510b54c683b35fbc87447b8e98b38",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      775
+    ],
+    "image_note": "延伸阅读栏目图标，按原图保留。",
+    "after": {
+      "type": "image",
+      "index": 0,
+      "bbox": [
+        0.152,
+        0.062,
+        0.197,
+        0.097
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 0,
+          "bbox": [
+            0.152,
+            0.062,
+            0.197,
+            0.097
+          ],
+          "image_path": "images/ocr_review/page_0207_block_0.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "【核对注】延伸阅读栏目图标，按原图保留。"
+            }
+          ]
+        }
+      ]
+    },
+    "after_block_sha256": "6235d7d213ce07c013f886b485ca211a5721af778f8ce1fc5c9d625a70d234b9"
+  },
+  {
+    "book_id": 1,
+    "pdf_page": 207,
+    "block_index": 3,
+    "action": "change_type",
+    "reason": "原页此区域是正文栏目标题；改正页眉分类，使章节阅读版保留该标题。",
+    "expected_block_sha256": "873f14aaff9e89f52ceab14caaed6889d816ef31dc1ceb1703f4e00828c5a24b",
+    "original_bbox": [
+      0.213,
+      0.07,
+      0.364,
+      0.095
+    ],
+    "before": {
+      "type": "header",
+      "index": 3,
+      "bbox": [
+        0.213,
+        0.07,
+        0.364,
+        0.095
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "延伸阅读文献"
+        }
+      ]
+    },
+    "source_sha256": "a864821148e3dc62d78f9e58091c8729471510b54c683b35fbc87447b8e98b38",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [],
+    "new_type": "paragraph_title",
+    "level": 2,
+    "after": {
+      "type": "paragraph_title",
+      "index": 3,
+      "bbox": [
+        0.213,
+        0.07,
+        0.364,
+        0.095
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "延伸阅读文献"
+        }
+      ],
+      "level": 2
+    },
+    "after_block_sha256": "f608f5c983a2f61a7ee6c385a1e885b50cca175079f6460ad5c0785ce3ffeffc"
+  },
+  {
+    "book_id": 1,
+    "pdf_page": 253,
+    "block_index": 3,
+    "action": "change_type",
+    "reason": "原页此区域是正文栏目标题；改正页眉分类，使章节阅读版保留该标题。",
+    "expected_block_sha256": "b2e2e942a57bffe48f7246024423d2bdc1ce0055744220532064da4776ac517b",
+    "original_bbox": [
+      0.184,
+      0.06,
+      0.285,
+      0.081
+    ],
+    "before": {
+      "type": "header",
+      "index": 3,
+      "bbox": [
+        0.184,
+        0.06,
+        0.285,
+        0.081
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "学习思考"
+        }
+      ]
+    },
+    "source_sha256": "a864821148e3dc62d78f9e58091c8729471510b54c683b35fbc87447b8e98b38",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [],
+    "new_type": "paragraph_title",
+    "level": 2,
+    "after": {
+      "type": "paragraph_title",
+      "index": 3,
+      "bbox": [
+        0.184,
+        0.06,
+        0.285,
+        0.081
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "学习思考"
+        }
+      ],
+      "level": 2
+    },
+    "after_block_sha256": "dd00ec13faa5ad9aa2536f7bd725c60430941c7c91f0987f834b45a65081722c"
+  },
+  {
+    "book_id": 1,
+    "pdf_page": 286,
+    "block_index": 5,
+    "action": "replace_substring",
+    "reason": "原页此处有的字，当前漏字。",
+    "expected_block_sha256": "121826030a4059a2daf05ed19e1cca8a526617a66a381fdc88e7d5fa4c4e0abe",
+    "original_bbox": [
+      0.113,
+      0.614,
+      0.873,
+      0.734
+    ],
+    "before": {
+      "type": "text",
+      "index": 5,
+      "bbox": [
+        0.113,
+        0.614,
+        0.873,
+        0.734
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "党中央还加强对人民群众尤其是青年学生的思想政治工作。1990年至1991年，在广大党员干部中开展了马克思主义党建学说和中共党史学习教育，在人民群众中开展了社会主义思想教育。中国近现代史及国情教育也越来越受到各方面重视。"
+        }
+      ]
+    },
+    "source_sha256": "a864821148e3dc62d78f9e58091c8729471510b54c683b35fbc87447b8e98b38",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      1072
+    ],
+    "old": "中共党史学习教育",
+    "new": "中共党史的学习教育",
+    "after": {
+      "type": "text",
+      "index": 5,
+      "bbox": [
+        0.113,
+        0.614,
+        0.873,
+        0.734
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "党中央还加强对人民群众尤其是青年学生的思想政治工作。1990年至1991年，在广大党员干部中开展了马克思主义党建学说和中共党史的学习教育，在人民群众中开展了社会主义思想教育。中国近现代史及国情教育也越来越受到各方面重视。"
+        }
+      ]
+    },
+    "after_block_sha256": "737165ff929b84c22bbb12189673fd63b2be49d82586695e0e07480e775ea27a"
+  },
+  {
+    "book_id": 1,
+    "pdf_page": 299,
+    "block_index": 0,
+    "action": "replace_substring",
+    "reason": "原页页眉为把中国特色社会主义推向21世纪。",
+    "expected_block_sha256": "9da5a8181e3dbd192219c5ac511e61d48805f3595f25ba19be19b81283b534a2",
+    "original_bbox": [
+      0.473,
+      0.026,
+      0.758,
+      0.048
+    ],
+    "before": {
+      "type": "header",
+      "index": 0,
+      "bbox": [
+        0.473,
+        0.026,
+        0.758,
+        0.048
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "第三节 把中国特色社会主义推向24世纪"
+        }
+      ]
+    },
+    "source_sha256": "a864821148e3dc62d78f9e58091c8729471510b54c683b35fbc87447b8e98b38",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      1128
+    ],
+    "old": "24世纪",
+    "new": "21世纪",
+    "after": {
+      "type": "header",
+      "index": 0,
+      "bbox": [
+        0.473,
+        0.026,
+        0.758,
+        0.048
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "第三节 把中国特色社会主义推向21世纪"
+        }
+      ]
+    },
+    "after_block_sha256": "ca3ce66ac256e9383e6e3d2492dd59f2da6069be33469bd64e7be1f01f2e3003"
+  },
+  {
+    "book_id": 1,
+    "pdf_page": 305,
+    "block_index": 0,
+    "action": "replace_substring",
+    "reason": "原页页眉为把中国特色社会主义推向21世纪。",
+    "expected_block_sha256": "ce208d1b1af6143e3d5e7b4362d470638b6fec677b45cfb0d988667ac2a07cc1",
+    "original_bbox": [
+      0.47,
+      0.021,
+      0.755,
+      0.042
+    ],
+    "before": {
+      "type": "header",
+      "index": 0,
+      "bbox": [
+        0.47,
+        0.021,
+        0.755,
+        0.042
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "第三节 把中国特色社会主义推向24世纪"
+        }
+      ]
+    },
+    "source_sha256": "a864821148e3dc62d78f9e58091c8729471510b54c683b35fbc87447b8e98b38",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      1153
+    ],
+    "old": "24世纪",
+    "new": "21世纪",
+    "after": {
+      "type": "header",
+      "index": 0,
+      "bbox": [
+        0.47,
+        0.021,
+        0.755,
+        0.042
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "第三节 把中国特色社会主义推向21世纪"
+        }
+      ]
+    },
+    "after_block_sha256": "695a741864988ee70ece378a16b6d0b9b14074e3d05adbc97efe6f0d87342dc4"
+  },
+  {
+    "book_id": 1,
+    "pdf_page": 401,
+    "block_index": 0,
+    "action": "replace_substring",
+    "reason": "原页此处是第三节的页眉，章字误识别。",
+    "expected_block_sha256": "d277a91f7d6d87da9d4a2f28f9a574a41f170389b6225c5a70d3c42e40e614e6",
+    "original_bbox": [
+      0.424,
+      0.019,
+      0.758,
+      0.037
+    ],
+    "before": {
+      "type": "header",
+      "index": 0,
+      "bbox": [
+        0.424,
+        0.019,
+        0.758,
+        0.037
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "第三章 开启全面建设社会主义现代化国家新征程"
+        }
+      ]
+    },
+    "source_sha256": "a864821148e3dc62d78f9e58091c8729471510b54c683b35fbc87447b8e98b38",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [],
+    "old": "第三章",
+    "new": "第三节",
+    "after": {
+      "type": "header",
+      "index": 0,
+      "bbox": [
+        0.424,
+        0.019,
+        0.758,
+        0.037
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "第三节 开启全面建设社会主义现代化国家新征程"
+        }
+      ]
+    },
+    "after_block_sha256": "198b6e38500108ba10bf0f76d346ecece71d43104095a2fc84bab89086f2f04e"
+  },
+  {
+    "book_id": 1,
+    "pdf_page": 425,
+    "block_index": 2,
+    "action": "source_image",
+    "reason": "模型将原页图形误判成文字或空页眉，恢复原图。",
+    "expected_block_sha256": "bc144d61a6ca84820d70bbb63f36a3f3cdacb3cc58ac8cc019f697741a44eb10",
+    "original_bbox": [
+      0.128,
+      0.059,
+      0.173,
+      0.092
+    ],
+    "before": {
+      "type": "header",
+      "index": 2,
+      "bbox": [
+        0.128,
+        0.059,
+        0.173,
+        0.092
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "[NO TEXT]"
+        }
+      ]
+    },
+    "source_sha256": "a864821148e3dc62d78f9e58091c8729471510b54c683b35fbc87447b8e98b38",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      1610
+    ],
+    "image_note": "延伸阅读栏目图标，按原图保留。",
+    "after": {
+      "type": "image",
+      "index": 2,
+      "bbox": [
+        0.128,
+        0.059,
+        0.173,
+        0.092
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 2,
+          "bbox": [
+            0.128,
+            0.059,
+            0.173,
+            0.092
+          ],
+          "image_path": "images/ocr_review/page_0425_block_2.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "【核对注】延伸阅读栏目图标，按原图保留。"
+            }
+          ]
+        }
+      ]
+    },
+    "after_block_sha256": "65099bfb0067954f65e33e98aa7be1b79994f627b4a78a8565bffc273677689b"
+  },
+  {
+    "book_id": 1,
+    "pdf_page": 425,
+    "block_index": 3,
+    "action": "change_type",
+    "reason": "原页此区域是正文栏目标题；改正页眉分类，使章节阅读版保留该标题。",
+    "expected_block_sha256": "600da9e8cdc33931e2fb3456174f4313919d99cbf0ad01fa2fa8ea28b087e2c3",
+    "original_bbox": [
+      0.191,
+      0.065,
+      0.341,
+      0.087
+    ],
+    "before": {
+      "type": "header",
+      "index": 3,
+      "bbox": [
+        0.191,
+        0.065,
+        0.341,
+        0.087
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "延伸阅读文献"
+        }
+      ]
+    },
+    "source_sha256": "a864821148e3dc62d78f9e58091c8729471510b54c683b35fbc87447b8e98b38",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [],
+    "new_type": "paragraph_title",
+    "level": 2,
+    "after": {
+      "type": "paragraph_title",
+      "index": 3,
+      "bbox": [
+        0.191,
+        0.065,
+        0.341,
+        0.087
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "延伸阅读文献"
+        }
+      ],
+      "level": 2
+    },
+    "after_block_sha256": "79c1f286ae9db114a9e23d8bb60d3f1bc8dfae5e50ed933e365f3a8d753d04ce"
+  },
+  {
+    "book_id": 2,
+    "pdf_page": 18,
+    "block_index": 5,
+    "action": "replace_substring",
+    "reason": "原物理页18末字为体，系是下一页首字且已保留，删除跨页重复字。",
+    "expected_block_sha256": "4a0e54c446c4e7cd445f5a863192dc5e3ca6cf14e619e4b5e0fb89696d964117",
+    "original_bbox": [
+      0.155,
+      0.494,
+      0.877,
+      0.923
+    ],
+    "before": {
+      "type": "text",
+      "index": 5,
+      "bbox": [
+        0.155,
+        0.494,
+        0.877,
+        0.923
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "“十个明确”，就是明确中国特色社会主义最本质的特征是中国共产党领导，中国特色社会主义制度的最大优势是中国共产党领导，中国共产党是最高政治领导力量，全党必须增强“四个意识”、坚定“四个自信”、做到“两个维护”；明确坚持和发展中国特色社会主义，总任务是实现社会主义现代化和中华民族伟大复兴，在全面建成小康社会的基础上，分两步走在本世纪中叶建成富强民主文明和谐美丽的社会主义现代化强国，以中国式现代化推进中华民族伟大复兴；明确新时代我国社会主要矛盾是人民日益增长的美好生活需要和不平衡不充分的发展之间的矛盾，必须坚持以人民为中心的发展思想，发展全过程人民民主，推动人的全面发展、全体人民共同富裕取得更为明显的实质性进展；明确中国特色社会主义事业总体布局是经济建设、政治建设、文化建设、社会建设、生态文明建设五位一体，战略布局是全面建设社会主义现代化国家、全面深化改革、全面依法治国、全面从严治党四个全面；明确全面深化改革总目标是完善和发展中国特色社会主义制度、推进国家治理体系"
+        }
+      ]
+    },
+    "source_sha256": "a56e83f1d97068d98ea008362c6dd77e967d5b0641305f3d8eb43d32b7029687",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      1644
+    ],
+    "old": "推进国家治理体系",
+    "new": "推进国家治理体",
+    "after": {
+      "type": "text",
+      "index": 5,
+      "bbox": [
+        0.155,
+        0.494,
+        0.877,
+        0.923
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "“十个明确”，就是明确中国特色社会主义最本质的特征是中国共产党领导，中国特色社会主义制度的最大优势是中国共产党领导，中国共产党是最高政治领导力量，全党必须增强“四个意识”、坚定“四个自信”、做到“两个维护”；明确坚持和发展中国特色社会主义，总任务是实现社会主义现代化和中华民族伟大复兴，在全面建成小康社会的基础上，分两步走在本世纪中叶建成富强民主文明和谐美丽的社会主义现代化强国，以中国式现代化推进中华民族伟大复兴；明确新时代我国社会主要矛盾是人民日益增长的美好生活需要和不平衡不充分的发展之间的矛盾，必须坚持以人民为中心的发展思想，发展全过程人民民主，推动人的全面发展、全体人民共同富裕取得更为明显的实质性进展；明确中国特色社会主义事业总体布局是经济建设、政治建设、文化建设、社会建设、生态文明建设五位一体，战略布局是全面建设社会主义现代化国家、全面深化改革、全面依法治国、全面从严治党四个全面；明确全面深化改革总目标是完善和发展中国特色社会主义制度、推进国家治理体"
+        }
+      ]
+    },
+    "after_block_sha256": "3fbbe73062187d54cb0ac90be6c2fb3f5c2c840d0832a642f22b3a1c82c9a6b6"
+  },
+  {
+    "book_id": 2,
+    "pdf_page": 67,
+    "block_index": 2,
+    "action": "change_type",
+    "reason": "原页此区域是正文栏目标题；改正页眉分类，使章节阅读版保留该标题。",
+    "expected_block_sha256": "826a3c1cfd3c10bb3dc26f574cf45f3ec4c68795f01abd17511bc59bde95af7e",
+    "original_bbox": [
+      0.129,
+      0.104,
+      0.279,
+      0.13
+    ],
+    "before": {
+      "type": "header",
+      "index": 2,
+      "bbox": [
+        0.129,
+        0.104,
+        0.279,
+        0.13
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "课后思考"
+        }
+      ]
+    },
+    "source_sha256": "a56e83f1d97068d98ea008362c6dd77e967d5b0641305f3d8eb43d32b7029687",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [],
+    "new_type": "paragraph_title",
+    "level": 2,
+    "after": {
+      "type": "paragraph_title",
+      "index": 2,
+      "bbox": [
+        0.129,
+        0.104,
+        0.279,
+        0.13
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "课后思考"
+        }
+      ],
+      "level": 2
+    },
+    "after_block_sha256": "edf95b6268530a480de29031b8719d87b07a269c388863cc41c094e17204131c"
+  },
+  {
+    "book_id": 2,
+    "pdf_page": 85,
+    "block_index": 0,
+    "action": "source_image",
+    "reason": "模型将原页图形误判成文字或空页眉，恢复原图。",
+    "expected_block_sha256": "3843f09d57d757c6aeaf7c788c6b68c558f648e5a28bade227a94999cdb6112c",
+    "original_bbox": [
+      0.129,
+      0.105,
+      0.155,
+      0.137
+    ],
+    "before": {
+      "type": "header",
+      "index": 0,
+      "bbox": [
+        0.129,
+        0.105,
+        0.155,
+        0.137
+      ],
+      "content": []
+    },
+    "source_sha256": "a56e83f1d97068d98ea008362c6dd77e967d5b0641305f3d8eb43d32b7029687",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [],
+    "image_note": "本章小结装饰印章，按原图保留。",
+    "after": {
+      "type": "image",
+      "index": 0,
+      "bbox": [
+        0.129,
+        0.105,
+        0.155,
+        0.137
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 0,
+          "bbox": [
+            0.129,
+            0.105,
+            0.155,
+            0.137
+          ],
+          "image_path": "images/ocr_review/page_0085_block_0.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "【核对注】本章小结装饰印章，按原图保留。"
+            }
+          ]
+        }
+      ]
+    },
+    "after_block_sha256": "7e838e77b83b2a78bbc9f6051637d255c3f3fce8e99b6e3c00a71e140151f7f9"
+  },
+  {
+    "book_id": 2,
+    "pdf_page": 85,
+    "block_index": 4,
+    "action": "change_type",
+    "reason": "原页此区域是正文栏目标题；改正页眉分类，使章节阅读版保留该标题。",
+    "expected_block_sha256": "dedd6a656a5e1177b83a0ce354c25333dfc426a7d0274e60750b5936bd2e1aff",
+    "original_bbox": [
+      0.171,
+      0.11,
+      0.281,
+      0.134
+    ],
+    "before": {
+      "type": "header",
+      "index": 4,
+      "bbox": [
+        0.171,
+        0.11,
+        0.281,
+        0.134
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "本章小结"
+        }
+      ]
+    },
+    "source_sha256": "a56e83f1d97068d98ea008362c6dd77e967d5b0641305f3d8eb43d32b7029687",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [],
+    "new_type": "paragraph_title",
+    "level": 2,
+    "after": {
+      "type": "paragraph_title",
+      "index": 4,
+      "bbox": [
+        0.171,
+        0.11,
+        0.281,
+        0.134
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "本章小结"
+        }
+      ],
+      "level": 2
+    },
+    "after_block_sha256": "ee54ca3e7e071da84a7f0bf4929ce64edbd3a4dfdd6085c67a37582a3d019f9c"
+  },
+  {
+    "book_id": 2,
+    "pdf_page": 134,
+    "block_index": 2,
+    "action": "replace_substring",
+    "reason": "原页为做大做优做强，删除重复插入的做强。",
+    "expected_block_sha256": "096322cdfda4b5fba88a8c17a8f17a9cf35f1070cd6645867f6cc3182a5fcc80",
+    "original_bbox": [
+      0.154,
+      0.09,
+      0.876,
+      0.52
+    ],
+    "before": {
+      "type": "text",
+      "index": 2,
+      "bbox": [
+        0.154,
+        0.09,
+        0.876,
+        0.52
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "收的重要来源，是就业创业的重要领域，是技术创新的重要主体，是金融发展的重要依托，是经济持续健康发展的重要力量。习近平明确指出:“非公有制经济在我国经济社会发展中的地位和作用没有变，我们毫不动摇鼓励、支持、引导非公有制经济发展的方针政策没有变，我们致力于为非公有制经济发展营造良好环境和提供更多机会的方针政策没有变。”①民营经济是非公有制经济的主要经济组织形式，是推进中国式现代化的生力军，是高质量发展的重要基础，是推动我国全面建成社会主义现代化强国、实现第二个百年奋斗目标的重要力量。迈上新征程，我国民营经济只能壮大，不能弱化，而且要走向更加广阔的舞台。要加快营造市场化、法治化、国际化一流营商环境，优化民营经济发展环境，依法保护民营企业产权和企业家权益，全面构建亲清政商关系，使各种所有制经济依法平等使用生产要素、公平参与市场竞争、同等受到法律保护，引导民营企业通过自身改革发展、合规经营、转型升级不断提升发展质量，促进民营经济做大做强做优做强。"
+        }
+      ],
+      "continues_prev": true
+    },
+    "source_sha256": "a56e83f1d97068d98ea008362c6dd77e967d5b0641305f3d8eb43d32b7029687",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      1860
+    ],
+    "old": "做大做强做优做强",
+    "new": "做大做优做强",
+    "after": {
+      "type": "text",
+      "index": 2,
+      "bbox": [
+        0.154,
+        0.09,
+        0.876,
+        0.52
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "收的重要来源，是就业创业的重要领域，是技术创新的重要主体，是金融发展的重要依托，是经济持续健康发展的重要力量。习近平明确指出:“非公有制经济在我国经济社会发展中的地位和作用没有变，我们毫不动摇鼓励、支持、引导非公有制经济发展的方针政策没有变，我们致力于为非公有制经济发展营造良好环境和提供更多机会的方针政策没有变。”①民营经济是非公有制经济的主要经济组织形式，是推进中国式现代化的生力军，是高质量发展的重要基础，是推动我国全面建成社会主义现代化强国、实现第二个百年奋斗目标的重要力量。迈上新征程，我国民营经济只能壮大，不能弱化，而且要走向更加广阔的舞台。要加快营造市场化、法治化、国际化一流营商环境，优化民营经济发展环境，依法保护民营企业产权和企业家权益，全面构建亲清政商关系，使各种所有制经济依法平等使用生产要素、公平参与市场竞争、同等受到法律保护，引导民营企业通过自身改革发展、合规经营、转型升级不断提升发展质量，促进民营经济做大做优做强。"
+        }
+      ],
+      "continues_prev": true
+    },
+    "after_block_sha256": "71b56b327f5bfcc5dda9b31e0f181673f45d42d9e0767f55b91d2813970647eb"
+  },
+  {
+    "book_id": 2,
+    "pdf_page": 193,
+    "block_index": 5,
+    "action": "replace_substring",
+    "reason": "原页引文标题为飞来峰。",
+    "expected_block_sha256": "9e868e3c5d2b4152a3f423f3cd1ca3e4463eed8e9a9703bd3c0ae8825afef95b",
+    "original_bbox": [
+      0.173,
+      0.352,
+      0.725,
+      0.373
+    ],
+    "before": {
+      "type": "text",
+      "index": 5,
+      "bbox": [
+        0.173,
+        0.352,
+        0.725,
+        0.373
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "1. 为什么我国不能搬来一座政治制度上的“飞夹峰”？"
+        }
+      ]
+    },
+    "source_sha256": "a56e83f1d97068d98ea008362c6dd77e967d5b0641305f3d8eb43d32b7029687",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      1937
+    ],
+    "old": "飞夹峰",
+    "new": "飞来峰",
+    "after": {
+      "type": "text",
+      "index": 5,
+      "bbox": [
+        0.173,
+        0.352,
+        0.725,
+        0.373
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "1. 为什么我国不能搬来一座政治制度上的“飞来峰”？"
+        }
+      ]
+    },
+    "after_block_sha256": "db67d788c436f036803a33240b176b4e9d611522c240a7e6a84725aba4196e6f"
+  },
+  {
+    "book_id": 2,
+    "pdf_page": 211,
+    "block_index": 3,
+    "action": "source_image",
+    "reason": "模型将原页图形误判成文字或空页眉，恢复原图。",
+    "expected_block_sha256": "f7e5244d7373353361c2e0cded7b0545cd3ff901d73bf57523353600015602ec",
+    "original_bbox": [
+      0.129,
+      0.103,
+      0.155,
+      0.136
+    ],
+    "before": {
+      "type": "header",
+      "index": 3,
+      "bbox": [
+        0.129,
+        0.103,
+        0.155,
+        0.136
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "[No text detected]"
+        }
+      ]
+    },
+    "source_sha256": "a56e83f1d97068d98ea008362c6dd77e967d5b0641305f3d8eb43d32b7029687",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      1962
+    ],
+    "image_note": "本章小结装饰印章，按原图保留。",
+    "after": {
+      "type": "image",
+      "index": 3,
+      "bbox": [
+        0.129,
+        0.103,
+        0.155,
+        0.136
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 3,
+          "bbox": [
+            0.129,
+            0.103,
+            0.155,
+            0.136
+          ],
+          "image_path": "images/ocr_review/page_0211_block_3.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "【核对注】本章小结装饰印章，按原图保留。"
+            }
+          ]
+        }
+      ]
+    },
+    "after_block_sha256": "23e766f904f5677cccbc2d19bba8f32b4890be9b870b172872db469fdb608a3a"
+  },
+  {
+    "book_id": 2,
+    "pdf_page": 211,
+    "block_index": 4,
+    "action": "change_type",
+    "reason": "原页此区域是正文栏目标题；改正页眉分类，使章节阅读版保留该标题。",
+    "expected_block_sha256": "d25853a6098298be7aab76b80fea60db86bd3fa646928a8ff0a73fe8e0a226f2",
+    "original_bbox": [
+      0.172,
+      0.109,
+      0.281,
+      0.132
+    ],
+    "before": {
+      "type": "header",
+      "index": 4,
+      "bbox": [
+        0.172,
+        0.109,
+        0.281,
+        0.132
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "本章小结"
+        }
+      ]
+    },
+    "source_sha256": "a56e83f1d97068d98ea008362c6dd77e967d5b0641305f3d8eb43d32b7029687",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [],
+    "new_type": "paragraph_title",
+    "level": 2,
+    "after": {
+      "type": "paragraph_title",
+      "index": 4,
+      "bbox": [
+        0.172,
+        0.109,
+        0.281,
+        0.132
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "本章小结"
+        }
+      ],
+      "level": 2
+    },
+    "after_block_sha256": "bed210fdbae9ea22c1117a9eb86f55649cb60114f06b36b175d7d7dad22374be"
+  },
+  {
+    "book_id": 2,
+    "pdf_page": 235,
+    "block_index": 3,
+    "action": "source_image",
+    "reason": "模型将原页图形误判成文字或空页眉，恢复原图。",
+    "expected_block_sha256": "4c5e83fa4c8034e3d6d92663c8b2f66b1c7f51b1343fab4e85fed17019098e52",
+    "original_bbox": [
+      0.132,
+      0.106,
+      0.159,
+      0.139
+    ],
+    "before": {
+      "type": "header",
+      "index": 3,
+      "bbox": [
+        0.132,
+        0.106,
+        0.159,
+        0.139
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "The quick brown fox jumps over the lazy dog."
+        }
+      ]
+    },
+    "source_sha256": "a56e83f1d97068d98ea008362c6dd77e967d5b0641305f3d8eb43d32b7029687",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      1989
+    ],
+    "image_note": "本章小结装饰印章，按原图保留。",
+    "after": {
+      "type": "image",
+      "index": 3,
+      "bbox": [
+        0.132,
+        0.106,
+        0.159,
+        0.139
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 3,
+          "bbox": [
+            0.132,
+            0.106,
+            0.159,
+            0.139
+          ],
+          "image_path": "images/ocr_review/page_0235_block_3.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "【核对注】本章小结装饰印章，按原图保留。"
+            }
+          ]
+        }
+      ]
+    },
+    "after_block_sha256": "816d19ac91759b25f34e64dd9e1b0731a7856f3b12571249ec9010ae849045f1"
+  },
+  {
+    "book_id": 2,
+    "pdf_page": 235,
+    "block_index": 4,
+    "action": "change_type",
+    "reason": "原页此区域是正文栏目标题；改正页眉分类，使章节阅读版保留该标题。",
+    "expected_block_sha256": "bc657979937808d888dce0a83540edb58b1140f0d1914962ca32777566c4e999",
+    "original_bbox": [
+      0.176,
+      0.111,
+      0.286,
+      0.135
+    ],
+    "before": {
+      "type": "header",
+      "index": 4,
+      "bbox": [
+        0.176,
+        0.111,
+        0.286,
+        0.135
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "本章小结"
+        }
+      ]
+    },
+    "source_sha256": "a56e83f1d97068d98ea008362c6dd77e967d5b0641305f3d8eb43d32b7029687",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [],
+    "new_type": "paragraph_title",
+    "level": 2,
+    "after": {
+      "type": "paragraph_title",
+      "index": 4,
+      "bbox": [
+        0.176,
+        0.111,
+        0.286,
+        0.135
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "本章小结"
+        }
+      ],
+      "level": 2
+    },
+    "after_block_sha256": "a10c4fe2265be2c0409dc2b0730d480e9102eb396478ae273518f0862636a5bc"
+  },
+  {
+    "book_id": 2,
+    "pdf_page": 240,
+    "block_index": 12,
+    "action": "replace_substring",
+    "reason": "原页为离开发展谈改善民生，补入漏识别的发字。",
+    "expected_block_sha256": "6811fc48cdf22d2384764664597f811e6b58c9d345f1784c270c2834381be7df",
+    "original_bbox": [
+      0.152,
+      0.647,
+      0.871,
+      0.889
+    ],
+    "before": {
+      "type": "text",
+      "index": 12,
+      "bbox": [
+        0.152,
+        0.647,
+        0.871,
+        0.889
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "正确把握民生和发展的关系，是保障和改善民生的重要前提。发展是改善民生的物质基础，离开展谈改善民生是无源之水、无本之木。如果发展不能回应人民的期待，不能让群众得到实际利益，这样的发展就失去意义，也不可能持续。民生连着内需、连着发展。抓民生也是抓发展，持续不断改善民生，能够有效解决群众后顾之忧，调动人们发展生产的积极性，增进社会消费预期，利于扩大内需，催生新的增长点。要全面把握民生和发展相互牵动、互为条件的关系，使民生改善和经济发展有效对接、相得益彰，形成改善民生与促进发展有机统一的长效机制。"
+        }
+      ]
+    },
+    "source_sha256": "a56e83f1d97068d98ea008362c6dd77e967d5b0641305f3d8eb43d32b7029687",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      2000
+    ],
+    "old": "离开展谈改善民生",
+    "new": "离开发展谈改善民生",
+    "after": {
+      "type": "text",
+      "index": 12,
+      "bbox": [
+        0.152,
+        0.647,
+        0.871,
+        0.889
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "正确把握民生和发展的关系，是保障和改善民生的重要前提。发展是改善民生的物质基础，离开发展谈改善民生是无源之水、无本之木。如果发展不能回应人民的期待，不能让群众得到实际利益，这样的发展就失去意义，也不可能持续。民生连着内需、连着发展。抓民生也是抓发展，持续不断改善民生，能够有效解决群众后顾之忧，调动人们发展生产的积极性，增进社会消费预期，利于扩大内需，催生新的增长点。要全面把握民生和发展相互牵动、互为条件的关系，使民生改善和经济发展有效对接、相得益彰，形成改善民生与促进发展有机统一的长效机制。"
+        }
+      ]
+    },
+    "after_block_sha256": "56ccc450c67e6d5db25f5267ebe166f67b6145d0953cf2d8796f5464c93ff4aa"
+  },
+  {
+    "book_id": 3,
+    "pdf_page": 47,
+    "block_index": 4,
+    "action": "replace_substring",
+    "reason": "原页图片下方长行漏识别习近平亲自五字。",
+    "expected_block_sha256": "75a456c1c1e7f0e14ed9e3f6747801b05be96bd39830f0349bef3a59f919f763",
+    "original_bbox": [
+      0.11,
+      0.28,
+      0.748,
+      0.464
+    ],
+    "before": {
+      "type": "text",
+      "index": 4,
+      "bbox": [
+        0.11,
+        0.28,
+        0.748,
+        0.464
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "人物”“时代楷模”等称号。2022年7月27日，中央军委主席向他颁授“八一勋章”。杜富国受邀担任重庆市特殊教育中心校外辅导员，面对一群失明的孩子，他说:“虽然我们看不见太阳，但心里要升起一个太阳，充满阳光，去鼓励那些失去光明的人。”眼睛失去光明，心中升起太阳。无论是在扫雷战场，还是在人生的战场，杜富国都是当之无愧的英雄！"
+        }
+      ]
+    },
+    "source_sha256": "25c86db01cdc01b6712cabacdbd56a6ef00e164ae16d5c1710e9e5095a789487",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      2328
+    ],
+    "old": "中央军委主席向他",
+    "new": "中央军委主席习近平亲自向他",
+    "expanded_bbox": [
+      0.11,
+      0.28,
+      0.97,
+      0.464
+    ],
+    "after": {
+      "type": "text",
+      "index": 4,
+      "bbox": [
+        0.11,
+        0.28,
+        0.97,
+        0.464
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "人物”“时代楷模”等称号。2022年7月27日，中央军委主席习近平亲自向他颁授“八一勋章”。杜富国受邀担任重庆市特殊教育中心校外辅导员，面对一群失明的孩子，他说:“虽然我们看不见太阳，但心里要升起一个太阳，充满阳光，去鼓励那些失去光明的人。”眼睛失去光明，心中升起太阳。无论是在扫雷战场，还是在人生的战场，杜富国都是当之无愧的英雄！"
+        }
+      ]
+    },
+    "after_block_sha256": "26d6d95a1f9a7c9867ea9b21d423ed3f0c9e58493f8186aea2e6546d6bb607a4"
+  },
+  {
+    "book_id": 3,
+    "pdf_page": 147,
+    "block_index": 7,
+    "action": "source_image",
+    "reason": "模型将原页图形误判成文字或空页眉，恢复原图。",
+    "expected_block_sha256": "fec7c6da5522d6373284f3fc5372db9502b06b68678ed3b681788aff481ee72a",
+    "original_bbox": [
+      0.255,
+      0.348,
+      0.768,
+      0.428
+    ],
+    "before": {
+      "type": "doc_title",
+      "index": 7,
+      "bbox": [
+        0.255,
+        0.348,
+        0.768,
+        0.428
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "仙德福德"
+        }
+      ],
+      "level": 1
+    },
+    "source_sha256": "25c86db01cdc01b6712cabacdbd56a6ef00e164ae16d5c1710e9e5095a789487",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      2495
+    ],
+    "image_note": "德字的字形演变图，按原图保留。",
+    "after": {
+      "type": "image",
+      "index": 7,
+      "bbox": [
+        0.255,
+        0.348,
+        0.768,
+        0.428
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 7,
+          "bbox": [
+            0.255,
+            0.348,
+            0.768,
+            0.428
+          ],
+          "image_path": "images/ocr_review/page_0147_block_7.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "【核对注】德字的字形演变图，按原图保留。"
+            }
+          ]
+        }
+      ]
+    },
+    "after_block_sha256": "3a1153bcee95db9021cd2f362dd3e9c77887defc0f59b4ab6933b144eef83879"
+  },
+  {
+    "book_id": 3,
+    "pdf_page": 155,
+    "block_index": 5,
+    "action": "mark_source_unclear",
+    "reason": "原扫描要求的之后字迹褪色，当前之字不能可靠核实；保留缺字标记和原始裁剪，不按语境猜字。",
+    "expected_block_sha256": "3e803fad0add80fe1569c266a94a79a68761aae8d1fb136c70f98bc5e6e47fae",
+    "original_bbox": [
+      0.079,
+      0.575,
+      0.905,
+      0.886
+    ],
+    "before": {
+      "type": "text",
+      "index": 5,
+      "bbox": [
+        0.079,
+        0.575,
+        0.905,
+        0.886
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "为人民服务是先进性要求和广泛性要求的之一。为人民服务，既伟大又平凡，既高尚又普通，它并非高不可攀、遥不可及，而是可以通过不同层次、不同形式表现出来。“每个人的力量是有限的，但只要我们万众一心、众志成城，就没有克服不了的困难；每个人的工作时间是有限的，但全心全意为人民服务是无限的。” "
+        },
+        {
+          "type": "equation_inline",
+          "content": "^{①}"
+        },
+        {
+          "type": "text",
+          "content": " 在今天，毫不利己、专门利人、无私奉献是为人民服务，顾全大局、先公后私、爱岗敬业、办事公道是为人民服务，同志间、师生间、同学间互相关心、互相爱护、互相帮助是为人民服务，热心公益、助人为乐、见义勇为、扶贫帮困、扶残助残是为人民服务，遵纪守法、诚实劳动并获取正当的个人利益同样也是为人民服务。那种认为为人民服务只适于党员干部而不能推广到全体人民的看法是一种误"
+        }
+      ]
+    },
+    "source_sha256": "25c86db01cdc01b6712cabacdbd56a6ef00e164ae16d5c1710e9e5095a789487",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      2511
+    ],
+    "old": "要求的之一。",
+    "new": "要求的〔原扫描此字褪色，无法可靠辨认〕一。",
+    "image_note": "此段首行“要求的”之后一个字在原扫描中褪色，保留原图；缺字未作推测补写。",
+    "source_crop": "06_第五章_遵守道德规范_锤炼道德品格/images/ocr_review/page_0155_block_5_unclear.png",
+    "after": {
+      "type": "text",
+      "index": 5,
+      "bbox": [
+        0.079,
+        0.575,
+        0.905,
+        0.886
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "为人民服务是先进性要求和广泛性要求的〔原扫描此字褪色，无法可靠辨认〕一。为人民服务，既伟大又平凡，既高尚又普通，它并非高不可攀、遥不可及，而是可以通过不同层次、不同形式表现出来。“每个人的力量是有限的，但只要我们万众一心、众志成城，就没有克服不了的困难；每个人的工作时间是有限的，但全心全意为人民服务是无限的。” "
+        },
+        {
+          "type": "equation_inline",
+          "content": "^{①}"
+        },
+        {
+          "type": "text",
+          "content": " 在今天，毫不利己、专门利人、无私奉献是为人民服务，顾全大局、先公后私、爱岗敬业、办事公道是为人民服务，同志间、师生间、同学间互相关心、互相爱护、互相帮助是为人民服务，热心公益、助人为乐、见义勇为、扶贫帮困、扶残助残是为人民服务，遵纪守法、诚实劳动并获取正当的个人利益同样也是为人民服务。那种认为为人民服务只适于党员干部而不能推广到全体人民的看法是一种误"
+        }
+      ]
+    },
+    "after_block_sha256": "3026101b453d5b04a6666472c1205d5487b2c456c41b60503c6a7d73969cd15b"
+  },
+  {
+    "book_id": 4,
+    "pdf_page": 214,
+    "block_index": 5,
+    "action": "replace_substring",
+    "reason": "原页为离开发展，两字顺序被错误交换。",
+    "expected_block_sha256": "07e608125023865d2a0ebf3f7793cb22a876499910d7f9b2bbbf1b87c16ff588",
+    "original_bbox": [
+      0.053,
+      0.367,
+      0.911,
+      0.546
+    ],
+    "before": {
+      "type": "text",
+      "index": 5,
+      "bbox": [
+        0.053,
+        0.367,
+        0.911,
+        0.546
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "中国特色社会主义是靠发展来不断巩固和推进的。社会主义要强大，体现优越性，关键在发展。江泽民反复强调:“发展是硬道理，这是我们必须始终坚持的一个战略思想。” "
+        },
+        {
+          "type": "equation_inline",
+          "content": "^{①}"
+        },
+        {
+          "type": "text",
+          "content": "  特别是我国这样一个发展中大国，能不能解决好发展问题，直接关系人心向背、事业兴衰。离开展发，坚持党的先进性、发挥社会主义制度的优越性和实现民富国强都无从谈起。"
+        }
+      ]
+    },
+    "source_sha256": "73d55bf73813715bd3f4a299c69cabb2923e3d5038fea24dfc5774b67e813747",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      3154,
+      3155
+    ],
+    "old": "离开展发",
+    "new": "离开发展",
+    "after": {
+      "type": "text",
+      "index": 5,
+      "bbox": [
+        0.053,
+        0.367,
+        0.911,
+        0.546
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "中国特色社会主义是靠发展来不断巩固和推进的。社会主义要强大，体现优越性，关键在发展。江泽民反复强调:“发展是硬道理，这是我们必须始终坚持的一个战略思想。” "
+        },
+        {
+          "type": "equation_inline",
+          "content": "^{①}"
+        },
+        {
+          "type": "text",
+          "content": "  特别是我国这样一个发展中大国，能不能解决好发展问题，直接关系人心向背、事业兴衰。离开发展，坚持党的先进性、发挥社会主义制度的优越性和实现民富国强都无从谈起。"
+        }
+      ]
+    },
+    "after_block_sha256": "81f2ac6c3831552a8fc55825a48490bd895ab7923f4fa3ee78a33c3e6716ea63"
+  },
+  {
+    "book_id": 5,
+    "pdf_page": 1,
+    "block_index": 7,
+    "action": "source_image",
+    "reason": "模型将原页图形误判成文字或空页眉，恢复原图。",
+    "expected_block_sha256": "fa7c1be09b64d4bba1d1ce2c83963b2bac1d6fa7e21c05bc5d8172688bf358d2",
+    "original_bbox": [
+      0.018,
+      0.928,
+      0.061,
+      0.966
+    ],
+    "before": {
+      "type": "footer",
+      "index": 7,
+      "bbox": [
+        0.018,
+        0.928,
+        0.061,
+        0.966
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "[No text]"
+        }
+      ]
+    },
+    "source_sha256": "bedda28367489ec5abdf3dfa107d3c1e58874ce6051cd200cb843a778f0b47e6",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      3287
+    ],
+    "image_note": "封面出版社标志，按原图保留。",
+    "after": {
+      "type": "image",
+      "index": 7,
+      "bbox": [
+        0.018,
+        0.928,
+        0.061,
+        0.966
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 7,
+          "bbox": [
+            0.018,
+            0.928,
+            0.061,
+            0.966
+          ],
+          "image_path": "images/ocr_review/page_0001_block_7.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "【核对注】封面出版社标志，按原图保留。"
+            }
+          ]
+        }
+      ]
+    },
+    "after_block_sha256": "9bcdbd73ac14dc0fd334af262de48dcd141024a02c890a8a3fe6269fed351591"
+  },
+  {
+    "book_id": 5,
+    "pdf_page": 67,
+    "block_index": 2,
+    "action": "source_image",
+    "reason": "模型将原页图形误判成文字或空页眉，恢复原图。",
+    "expected_block_sha256": "c5e477b4286b771bb542cffb105881d686b1f72fa85f9ccfd7c56a57fb44cfc6",
+    "original_bbox": [
+      0.127,
+      0.095,
+      0.182,
+      0.129
+    ],
+    "before": {
+      "type": "header",
+      "index": 2,
+      "bbox": [
+        0.127,
+        0.095,
+        0.182,
+        0.129
+      ],
+      "content": []
+    },
+    "source_sha256": "bedda28367489ec5abdf3dfa107d3c1e58874ce6051cd200cb843a778f0b47e6",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [],
+    "image_note": "原页知识拓展栏目书本图标，按原图保留。",
+    "after": {
+      "type": "image",
+      "index": 2,
+      "bbox": [
+        0.127,
+        0.095,
+        0.182,
+        0.129
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 2,
+          "bbox": [
+            0.127,
+            0.095,
+            0.182,
+            0.129
+          ],
+          "image_path": "images/ocr_review/page_0067_block_2.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "【核对注】原页知识拓展栏目书本图标，按原图保留。"
+            }
+          ]
+        }
+      ]
+    },
+    "after_block_sha256": "149884f634207b5b0911e6ccbd1ce58584811881f477472decf4b25838fbee82"
+  },
+  {
+    "book_id": 5,
+    "pdf_page": 125,
+    "block_index": 0,
+    "action": "replace_substring",
+    "reason": "原PDF可见页眉及原生文字均为第三节。",
+    "expected_block_sha256": "51eea247df19ea9ee0426dcca3f99d19dcbb5697403dcae52480facfb901e8c7",
+    "original_bbox": [
+      0.54,
+      0.046,
+      0.743,
+      0.063
+    ],
+    "before": {
+      "type": "header",
+      "index": 0,
+      "bbox": [
+        0.54,
+        0.046,
+        0.743,
+        0.063
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "第二节 认识世界和改造世界"
+        }
+      ]
+    },
+    "source_sha256": "bedda28367489ec5abdf3dfa107d3c1e58874ce6051cd200cb843a778f0b47e6",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      3494
+    ],
+    "old": "第二节",
+    "new": "第三节",
+    "after": {
+      "type": "header",
+      "index": 0,
+      "bbox": [
+        0.54,
+        0.046,
+        0.743,
+        0.063
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "第三节 认识世界和改造世界"
+        }
+      ]
+    },
+    "after_block_sha256": "c21cf1bdf1eb05a8a7d7e5068c1fa99d58af22a557e700e31c2fa725738ac0fa"
+  },
+  {
+    "book_id": 5,
+    "pdf_page": 170,
+    "block_index": 6,
+    "action": "replace_substring",
+    "reason": "该页正文末尾为重要力，量在下一物理页开头；按原页恢复分界。",
+    "expected_block_sha256": "0a7c5d770906c057b2bb9bfbe27085ffa227690df65319a03e588f545f512d96",
+    "original_bbox": [
+      0.19,
+      0.897,
+      0.91,
+      0.919
+    ],
+    "before": {
+      "type": "text",
+      "index": 6,
+      "bbox": [
+        0.19,
+        0.897,
+        0.91,
+        0.919
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "科学技术作为先进生产力的重要标志，是推动社会文明进步的重要性"
+        }
+      ]
+    },
+    "source_sha256": "bedda28367489ec5abdf3dfa107d3c1e58874ce6051cd200cb843a778f0b47e6",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [
+      3561
+    ],
+    "old": "重要性",
+    "new": "重要力",
+    "after": {
+      "type": "text",
+      "index": 6,
+      "bbox": [
+        0.19,
+        0.897,
+        0.91,
+        0.919
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "科学技术作为先进生产力的重要标志，是推动社会文明进步的重要力"
+        }
+      ]
+    },
+    "after_block_sha256": "44bf474bc208c38ace37f93d527fa0db85342fb1c109c17efd613259a89e6bee"
+  },
+  {
+    "book_id": 5,
+    "pdf_page": 205,
+    "block_index": 2,
+    "action": "source_image",
+    "reason": "模型将原页图形误判成文字或空页眉，恢复原图。",
+    "expected_block_sha256": "c395cb3fc80627107a4c88857648787930308b97bb8611c3b26e5e9e19e0d78a",
+    "original_bbox": [
+      0.114,
+      0.098,
+      0.172,
+      0.131
+    ],
+    "before": {
+      "type": "header",
+      "index": 2,
+      "bbox": [
+        0.114,
+        0.098,
+        0.172,
+        0.131
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "#"
+        }
+      ]
+    },
+    "source_sha256": "bedda28367489ec5abdf3dfa107d3c1e58874ce6051cd200cb843a778f0b47e6",
+    "verification": "visual comparison with original PDF region",
+    "review_round": 2,
+    "candidate_ids": [],
+    "image_note": "原页知识拓展栏目书本图标，按原图保留。",
+    "after": {
+      "type": "image",
+      "index": 2,
+      "bbox": [
+        0.114,
+        0.098,
+        0.172,
+        0.131
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 2,
+          "bbox": [
+            0.114,
+            0.098,
+            0.172,
+            0.131
+          ],
+          "image_path": "images/ocr_review/page_0205_block_2.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "【核对注】原页知识拓展栏目书本图标，按原图保留。"
+            }
+          ]
+        }
+      ]
+    },
+    "after_block_sha256": "6c131ff027ebcf2b10918325991360c72475a091b502603a617c33f02ee7e4e7"
+  },
+  {
+    "book_id": 2,
+    "pdf_page": 369,
+    "block_index": 0,
+    "action": "image_text",
+    "reason": "侧栏标记旋转后逐字读取；按原图保留。",
+    "image_note": "侧栏标记旋转后逐字读取；按原图保留。",
+    "verification": "visual comparison with original PDF; enlarged source image",
+    "review_round": 2,
+    "expected_block_sha256": "79d98459624fded82dfd451217c5aa100cbca830ed42516d8b700ceeaa756f9f",
+    "before": {
+      "type": "image",
+      "index": 0,
+      "bbox": [
+        0.013,
+        0.71,
+        0.038,
+        0.799
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 0,
+          "bbox": [
+            0.013,
+            0.71,
+            0.038,
+            0.799
+          ],
+          "image_path": "images/ocr_review/page_0369_block_0.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "【核对注】扫描边栏标记原图；部分小字未完成可靠文字誊写。"
+            }
+          ]
+        }
+      ]
+    },
+    "original_bbox": [
+      0.013,
+      0.71,
+      0.038,
+      0.799
+    ],
+    "source_sha256": "a56e83f1d97068d98ea008362c6dd77e967d5b0641305f3d8eb43d32b7029687",
+    "candidate_ids": [],
+    "text": "Ⅲ 中国美凯",
+    "after": {
+      "type": "image",
+      "index": 0,
+      "bbox": [
+        0.013,
+        0.71,
+        0.038,
+        0.799
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 0,
+          "bbox": [
+            0.013,
+            0.71,
+            0.038,
+            0.799
+          ],
+          "image_path": "images/ocr_review/page_0369_block_0.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "Ⅲ 中国美凯\n\n【核对注】侧栏标记旋转后逐字读取；按原图保留。"
+            }
+          ]
+        }
+      ]
+    },
+    "after_block_sha256": "edad2ab4c9a5c70015a8c4b86284414a187cee67592c871eb2c124ee8d81d4ce"
+  },
+  {
+    "book_id": 3,
+    "pdf_page": 137,
+    "block_index": 6,
+    "action": "replace_text",
+    "reason": "原手写署名放大核对为尹典，吴兵为误识别。",
+    "image_note": "原手写署名放大核对为尹典，吴兵为误识别。",
+    "verification": "visual comparison with original PDF; enlarged source image",
+    "review_round": 2,
+    "expected_block_sha256": "774e01517da21f5cca66ffe03572d0837527d3356304975a0ec222e1c66fadf5",
+    "before": {
+      "type": "text",
+      "index": 6,
+      "bbox": [
+        0.38,
+        0.627,
+        0.461,
+        0.655
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "申请人:吴兵  \n2020年1月31日"
+        }
+      ]
+    },
+    "original_bbox": [
+      0.38,
+      0.627,
+      0.461,
+      0.655
+    ],
+    "source_sha256": "25c86db01cdc01b6712cabacdbd56a6ef00e164ae16d5c1710e9e5095a789487",
+    "candidate_ids": [
+      2475
+    ],
+    "text": "申请人：尹典  \n2020年1月31日",
+    "after": {
+      "type": "text",
+      "index": 6,
+      "bbox": [
+        0.38,
+        0.627,
+        0.461,
+        0.655
+      ],
+      "content": [
+        {
+          "type": "text",
+          "content": "申请人：尹典  \n2020年1月31日"
+        }
+      ]
+    },
+    "after_block_sha256": "c3e92771982eb00de5c618c59d684b468e64e6e2f3f07afd05ae2726e0dca0b5"
+  },
+  {
+    "book_id": 3,
+    "pdf_page": 137,
+    "block_index": 5,
+    "action": "image_text",
+    "reason": "手写入党申请书原图。开头可辨认文字已誊写，其余模糊小字未可靠誊写；不按语境补写。",
+    "image_note": "手写入党申请书原图。开头可辨认文字已誊写，其余模糊小字未可靠誊写；不按语境补写。",
+    "verification": "visual comparison with original PDF; enlarged source image",
+    "review_round": 2,
+    "expected_block_sha256": "dec00645a7d7f96bebbe00833aa5b589dceef38034c47a29bfa44823dbe98ec0",
+    "before": {
+      "type": "image",
+      "index": 5,
+      "bbox": [
+        0.141,
+        0.324,
+        0.488,
+        0.623
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 5,
+          "bbox": [
+            0.141,
+            0.324,
+            0.488,
+            0.623
+          ],
+          "image_path": "images/ocr_review/page_0137_block_5.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "【核对注】手写申请书原图；未完成可靠文字誊写。"
+            }
+          ]
+        }
+      ]
+    },
+    "original_bbox": [
+      0.141,
+      0.324,
+      0.488,
+      0.623
+    ],
+    "source_sha256": "25c86db01cdc01b6712cabacdbd56a6ef00e164ae16d5c1710e9e5095a789487",
+    "candidate_ids": [],
+    "text": "敬爱的党组织：\n此时我正在火神山医院建设现场，〔后续小字不能可靠辨认，完整内容见原图〕",
+    "after": {
+      "type": "image",
+      "index": 5,
+      "bbox": [
+        0.141,
+        0.324,
+        0.488,
+        0.623
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 5,
+          "bbox": [
+            0.141,
+            0.324,
+            0.488,
+            0.623
+          ],
+          "image_path": "images/ocr_review/page_0137_block_5.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "敬爱的党组织：\n此时我正在火神山医院建设现场，〔后续小字不能可靠辨认，完整内容见原图〕\n\n【核对注】手写入党申请书原图。开头可辨认文字已誊写，其余模糊小字未可靠誊写；不按语境补写。"
+            }
+          ]
+        }
+      ]
+    },
+    "after_block_sha256": "5ac09d0f15a218c2d4d8607ee80216edde524ccecf464b84f95757f01f32b976"
+  },
+  {
+    "book_id": 3,
+    "pdf_page": 170,
+    "block_index": 5,
+    "action": "full_manuscript",
+    "reason": "原图为周恩来《我的修养要则》手稿。七条正文按简体字誊写；笔迹、标点和异体字保留原图。末尾题记部分模糊，未作可靠誊写。",
+    "image_note": "原图为周恩来《我的修养要则》手稿。七条正文按简体字誊写；笔迹、标点和异体字保留原图。末尾题记部分模糊，未作可靠誊写。",
+    "verification": "visual comparison with original PDF; enlarged source image",
+    "review_round": 2,
+    "expected_block_sha256": "df5f1d32c4764886516392c641e0209d5744c927db50721779faa67ed4179b72",
+    "before": {
+      "type": "image",
+      "index": 5,
+      "bbox": [
+        0.591,
+        0.183,
+        0.865,
+        0.274
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 5,
+          "bbox": [
+            0.591,
+            0.183,
+            0.865,
+            0.274
+          ],
+          "image_path": "images/ocr_review/page_0170_block_5.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "【核对注】手写信原图；未完成可靠文字誊写。"
+            }
+          ]
+        }
+      ]
+    },
+    "original_bbox": [
+      0.591,
+      0.183,
+      0.865,
+      0.274
+    ],
+    "source_sha256": "25c86db01cdc01b6712cabacdbd56a6ef00e164ae16d5c1710e9e5095a789487",
+    "candidate_ids": [],
+    "text": "我的修养要则\n一、加紧学习，抓住中心，宁精勿杂，宁专勿多。\n二、努力工作，要有计划，有重点，有条理。\n三、习作合一，要注意时间空间和条件，使之配合适当，要注意检讨和整理，要有发现和创造。\n四、要与自己的他人的一切不正确的思想意识作原则上坚决的斗争。\n五、适当地发扬自己的长处，具体地纠正自己的短处。\n六、永远不与群众隔离，向群众学习，并帮助他们。过集体生活，注意调研，遵守纪律。\n七、健全自己身体，保持合理的规律生活，这是自我修养的物质基础。",
+    "after": {
+      "type": "image",
+      "index": 5,
+      "bbox": [
+        0.565,
+        0.155,
+        0.875,
+        0.441
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 5,
+          "bbox": [
+            0.565,
+            0.155,
+            0.875,
+            0.441
+          ],
+          "image_path": "images/ocr_review/page_0170_complete_manuscript.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "我的修养要则\n一、加紧学习，抓住中心，宁精勿杂，宁专勿多。\n二、努力工作，要有计划，有重点，有条理。\n三、习作合一，要注意时间空间和条件，使之配合适当，要注意检讨和整理，要有发现和创造。\n四、要与自己的他人的一切不正确的思想意识作原则上坚决的斗争。\n五、适当地发扬自己的长处，具体地纠正自己的短处。\n六、永远不与群众隔离，向群众学习，并帮助他们。过集体生活，注意调研，遵守纪律。\n七、健全自己身体，保持合理的规律生活，这是自我修养的物质基础。\n\n【核对注】原图为周恩来《我的修养要则》手稿。七条正文按简体字誊写；笔迹、标点和异体字保留原图。末尾题记部分模糊，未作可靠誊写。"
+            }
+          ]
+        }
+      ]
+    },
+    "after_block_sha256": "2911fb4a3f4b066f3341b317add42bb789e481060be0546a80c093f45993114e"
+  },
+  {
+    "book_id": 3,
+    "pdf_page": 170,
+    "block_index": 6,
+    "action": "remove",
+    "reason": "原手稿已作为完整原图和七条正文保存在区块5，删除重复的分块展示，原始图片文件仍保留。",
+    "image_note": "原手稿已作为完整原图和七条正文保存在区块5，删除重复的分块展示，原始图片文件仍保留。",
+    "verification": "visual comparison with original PDF; enlarged source image",
+    "review_round": 2,
+    "expected_block_sha256": "28c517dd902172cc364bb43836eff25876004ace3284149df1e54249bd8a4f4e",
+    "before": {
+      "type": "image",
+      "index": 6,
+      "bbox": [
+        0.594,
+        0.272,
+        0.865,
+        0.338
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 6,
+          "bbox": [
+            0.594,
+            0.272,
+            0.865,
+            0.338
+          ],
+          "image_path": "images/ocr_review/page_0170_block_6.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "【核对注】手写信原图；未完成可靠文字誊写。"
+            }
+          ]
+        }
+      ]
+    },
+    "original_bbox": [
+      0.594,
+      0.272,
+      0.865,
+      0.338
+    ],
+    "source_sha256": "25c86db01cdc01b6712cabacdbd56a6ef00e164ae16d5c1710e9e5095a789487",
+    "candidate_ids": [],
+    "after": null,
+    "after_block_sha256": null
+  },
+  {
+    "book_id": 3,
+    "pdf_page": 170,
+    "block_index": 7,
+    "action": "remove",
+    "reason": "原手稿已作为完整原图和七条正文保存在区块5，删除重复的分块展示，原始图片文件仍保留。",
+    "image_note": "原手稿已作为完整原图和七条正文保存在区块5，删除重复的分块展示，原始图片文件仍保留。",
+    "verification": "visual comparison with original PDF; enlarged source image",
+    "review_round": 2,
+    "expected_block_sha256": "a462e26bf305d2f76f7718fb133756e7d9152dd851de1a3dcef8d5bd0afb3d02",
+    "before": {
+      "type": "image",
+      "index": 7,
+      "bbox": [
+        0.597,
+        0.335,
+        0.866,
+        0.421
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 7,
+          "bbox": [
+            0.597,
+            0.335,
+            0.866,
+            0.421
+          ],
+          "image_path": "images/ocr_review/page_0170_block_7.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "【核对注】手写信原图；未完成可靠文字誊写。"
+            }
+          ]
+        }
+      ]
+    },
+    "original_bbox": [
+      0.597,
+      0.335,
+      0.866,
+      0.421
+    ],
+    "source_sha256": "25c86db01cdc01b6712cabacdbd56a6ef00e164ae16d5c1710e9e5095a789487",
+    "candidate_ids": [],
+    "after": null,
+    "after_block_sha256": null
+  },
+  {
+    "book_id": 5,
+    "pdf_page": 363,
+    "block_index": 1,
+    "action": "image_text",
+    "reason": "封底扫码说明逐字核对；二维码原图保留。",
+    "image_note": "封底扫码说明逐字核对；二维码原图保留。",
+    "verification": "visual comparison with original PDF; enlarged source image",
+    "review_round": 2,
+    "expected_block_sha256": "8cc3ca327aade7867c8674317a1d71f8fd3672f144052250cf9b2e5b6f7bfb0b",
+    "before": {
+      "type": "image",
+      "index": 1,
+      "bbox": [
+        0.474,
+        0.778,
+        0.621,
+        0.889
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 1,
+          "bbox": [
+            0.474,
+            0.778,
+            0.621,
+            0.889
+          ],
+          "image_path": "images/ocr_review/page_0363_block_1.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "【核对注】原页二维码与扫码说明图，未作逐字誊写；原图完整保留。"
+            }
+          ]
+        }
+      ],
+      "sub_type": "seal"
+    },
+    "original_bbox": [
+      0.474,
+      0.778,
+      0.621,
+      0.889
+    ],
+    "source_sha256": "bedda28367489ec5abdf3dfa107d3c1e58874ce6051cd200cb843a778f0b47e6",
+    "candidate_ids": [],
+    "text": "扫一扫 辨真伪\n获取增值服务",
+    "after": {
+      "type": "image",
+      "index": 1,
+      "bbox": [
+        0.474,
+        0.778,
+        0.621,
+        0.889
+      ],
+      "content": [
+        {
+          "type": "image_body",
+          "index": 1,
+          "bbox": [
+            0.474,
+            0.778,
+            0.621,
+            0.889
+          ],
+          "image_path": "images/ocr_review/page_0363_block_1.png",
+          "content": ""
+        },
+        {
+          "type": "image_caption",
+          "content": [
+            {
+              "type": "text",
+              "content": "扫一扫 辨真伪\n获取增值服务\n\n【核对注】封底扫码说明逐字核对；二维码原图保留。"
+            }
+          ]
+        }
+      ],
+      "sub_type": "seal"
+    },
+    "after_block_sha256": "c5ade1cc41a70c9aa43e8349f964ff94733c6578816a02a1504af3e0f9c3124f"
   }
 ]

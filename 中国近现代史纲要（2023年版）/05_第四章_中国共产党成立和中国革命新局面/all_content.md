@@ -188,8 +188,6 @@
 
 ---
 
-The quick brown fox jumps over the lazy dog.
-
 第二节 马克思主义广泛传播与中国共产党诞生
 
 99
@@ -354,8 +352,6 @@ The quick brown fox jumps over the lazy dog.
 上海、北京的共产党早期组织还积极进行马克思主义著作的译介工作。1920年8月，陈望道翻译的《共产党宣言》中文全译本公开出版。这是马克思主义在中国传播史上的一件大事，在建党的思想理论准备中，
 
 ---
-
-The quick brown fox jumps over the lazy dog.
 
 第二节 马克思主义广泛传播与列国共产党诞生
 

@@ -76,9 +76,14 @@ def main():
                               ('OCR-review', directory / 'ocr_review/summary.json')]:
             shutil.copyfile(source, output / (target.stem + '-' + label + '.json'))
         package = next(p for p in packages if p['book_id'] == book['id'])
-        package.update(zip_sha256=fingerprint, zip_bytes=target.stat().st_size)
+        package.update(**info)
+        package.update(zip_sha256=fingerprint, zip_bytes=target.stat().st_size, files=len(records)+1)
         print(book['title'], 'pages', len(pages), 'corrections', info['source_confirmed_corrections'], flush=True)
-    assert total_pages == 1724 and total_corrections == 307
+    assert total_pages == sum(b['pages'] for b in plan['books'])
+    assert total_corrections == len(read(central / 'ocr-corrections.json'))
+    completion = read(central / 'round2/completion.json')
+    assert completion['all_remaining_candidates_adjudicated']
+    assert completion['total_revision_records'] == total_corrections
     write(central / 'book-packages.json', packages)
     target = output / 'politics-OCR-review-evidence.zip'
     archive(central, target, '考研政治', evidence=True)

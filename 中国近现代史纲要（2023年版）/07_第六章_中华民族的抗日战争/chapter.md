@@ -14,6 +14,10 @@
 
 <small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">①《中国抗日战争史》编写组:《中国抗日战争史》，人民出版社2011年版，第31页。</span></small>
 
+![](images/ocr_review/page_0153_block_2.png)
+
+【核对注】原页二维码图形，按原图保留。
+
 国民党政府对日本的侵略采取妥协退让方针。1931年7月，蒋介石即已提出“攘外必先安内”的方针。九一八事变
 
 鲁迅对“攘外必先安内”的揭露
@@ -64,7 +68,7 @@
 
 ![](images/pages_0151-0180/images/page_155_image_2.jpg)
 
-马占山举部  
+马占山率部  
 鏖战江桥
 
 国民党军队中的部分爱国官兵自发进行了抗战，中国共产党人开始同他们合作抗日。

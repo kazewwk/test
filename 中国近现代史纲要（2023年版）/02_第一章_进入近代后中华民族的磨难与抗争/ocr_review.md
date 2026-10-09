@@ -1,42 +1,42 @@
-# 逐页OCR核对
+# 原页OCR核对
 
-差异候选不等于识别错误。原页与独立OCR均保留；不确定文字没有按推测替换。
+差异候选已逐项裁定。原扫描中不能可靠辨认的字保留原图并明确标注。
 
-| 原PDF页 | 原页PDF | 状态 | 已修正区块 |
+| 原PDF页 | 原页PDF | 状态 | 修订区块 |
 |---:|---|---|---|
-| 27 | [原页](source.pdf#page=1) | 存在待复核差异 |  |
-| 28 | [原页](source.pdf#page=2) | 存在待复核差异 |  |
-| 29 | [原页](source.pdf#page=3) | 存在待复核差异 |  |
-| 30 | [原页](source.pdf#page=4) | 存在待复核差异 |  |
-| 31 | [原页](source.pdf#page=5) | 存在待复核差异 |  |
-| 32 | [原页](source.pdf#page=6) | 存在待复核差异 |  |
-| 33 | [原页](source.pdf#page=7) | 存在待复核差异 |  |
-| 34 | [原页](source.pdf#page=8) | 存在待复核差异 |  |
-| 35 | [原页](source.pdf#page=9) | 存在待复核差异 |  |
-| 36 | [原页](source.pdf#page=10) | 存在待复核差异 |  |
-| 37 | [原页](source.pdf#page=11) | 存在待复核差异 |  |
-| 38 | [原页](source.pdf#page=12) | 存在待复核差异 |  |
-| 39 | [原页](source.pdf#page=13) | 存在待复核差异 |  |
-| 40 | [原页](source.pdf#page=14) | 存在待复核差异 |  |
-| 41 | [原页](source.pdf#page=15) | 存在待复核差异 |  |
-| 42 | [原页](source.pdf#page=16) | 存在待复核差异 |  |
-| 43 | [原页](source.pdf#page=17) | 存在待复核差异 |  |
-| 44 | [原页](source.pdf#page=18) | 存在待复核差异 |  |
-| 45 | [原页](source.pdf#page=19) | 存在待复核差异 |  |
-| 46 | [原页](source.pdf#page=20) | 存在待复核差异 |  |
-| 47 | [原页](source.pdf#page=21) | 存在待复核差异 |  |
-| 48 | [原页](source.pdf#page=22) | 存在待复核差异 |  |
-| 49 | [原页](source.pdf#page=23) | 存在待复核差异 |  |
-| 50 | [原页](source.pdf#page=24) | 存在待复核差异 |  |
-| 51 | [原页](source.pdf#page=25) | 存在待复核差异 |  |
-| 52 | [原页](source.pdf#page=26) | 存在待复核差异 |  |
-| 53 | [原页](source.pdf#page=27) | 存在待复核差异 |  |
-| 54 | [原页](source.pdf#page=28) | 存在待复核差异 |  |
-| 55 | [原页](source.pdf#page=29) | 存在待复核差异 |  |
-| 56 | [原页](source.pdf#page=30) | 存在待复核差异 |  |
-| 57 | [原页](source.pdf#page=31) | 存在待复核差异 |  |
-| 58 | [原页](source.pdf#page=32) | 存在待复核差异 |  |
-| 59 | [原页](source.pdf#page=33) | 存在待复核差异 |  |
-| 60 | [原页](source.pdf#page=34) | 存在待复核差异 |  |
-| 61 | [原页](source.pdf#page=35) | 存在待复核差异 |  |
-| 62 | [原页](source.pdf#page=36) | 存在待复核差异 |  |
+| 27 | [原页](source.pdf#page=1) | 差异候选已裁定；原页保留 |  |
+| 28 | [原页](source.pdf#page=2) | 差异候选已裁定；原页保留 |  |
+| 29 | [原页](source.pdf#page=3) | 差异候选已裁定；原页保留 |  |
+| 30 | [原页](source.pdf#page=4) | 差异候选已裁定；原页保留 |  |
+| 31 | [原页](source.pdf#page=5) | 差异候选已裁定；原页保留 |  |
+| 32 | [原页](source.pdf#page=6) | 差异候选已裁定；原页保留 |  |
+| 33 | [原页](source.pdf#page=7) | 差异候选已裁定；原页保留 |  |
+| 34 | [原页](source.pdf#page=8) | 差异候选已裁定；原页保留 |  |
+| 35 | [原页](source.pdf#page=9) | 差异候选已裁定；原页保留 |  |
+| 36 | [原页](source.pdf#page=10) | 差异候选已裁定；原页保留 |  |
+| 37 | [原页](source.pdf#page=11) | 差异候选已裁定；原页保留 |  |
+| 38 | [原页](source.pdf#page=12) | 差异候选已裁定；原页保留 |  |
+| 39 | [原页](source.pdf#page=13) | 差异候选已裁定；原页保留 |  |
+| 40 | [原页](source.pdf#page=14) | 差异候选已裁定；原页保留 |  |
+| 41 | [原页](source.pdf#page=15) | 差异候选已裁定；原页保留 |  |
+| 42 | [原页](source.pdf#page=16) | 差异候选已裁定；原页保留 |  |
+| 43 | [原页](source.pdf#page=17) | 差异候选已裁定；原页保留 |  |
+| 44 | [原页](source.pdf#page=18) | 差异候选已裁定；原页保留 |  |
+| 45 | [原页](source.pdf#page=19) | 差异候选已裁定；原页保留 |  |
+| 46 | [原页](source.pdf#page=20) | 差异候选已裁定；原页保留 |  |
+| 47 | [原页](source.pdf#page=21) | 差异候选已裁定；原页保留 |  |
+| 48 | [原页](source.pdf#page=22) | 差异候选已裁定；原页保留 |  |
+| 49 | [原页](source.pdf#page=23) | 差异候选已裁定；原页保留 |  |
+| 50 | [原页](source.pdf#page=24) | 差异候选已裁定；原页保留 |  |
+| 51 | [原页](source.pdf#page=25) | 差异候选已裁定；原页保留 |  |
+| 52 | [原页](source.pdf#page=26) | 差异候选已裁定；原页保留 |  |
+| 53 | [原页](source.pdf#page=27) | 差异候选已裁定；原页保留 |  |
+| 54 | [原页](source.pdf#page=28) | 差异候选已裁定；原页保留 |  |
+| 55 | [原页](source.pdf#page=29) | 差异候选已裁定；原页保留 |  |
+| 56 | [原页](source.pdf#page=30) | 差异候选已裁定；原页保留 |  |
+| 57 | [原页](source.pdf#page=31) | 差异候选已裁定；原页保留 |  |
+| 58 | [原页](source.pdf#page=32) | 差异候选已裁定；原页保留 |  |
+| 59 | [原页](source.pdf#page=33) | 差异候选已裁定；原页保留 |  |
+| 60 | [原页](source.pdf#page=34) | 差异候选已裁定；原页保留 |  |
+| 61 | [原页](source.pdf#page=35) | 差异候选已裁定；原页保留 | 2, 3 |
+| 62 | [原页](source.pdf#page=36) | 差异候选已裁定；原页保留 |  |

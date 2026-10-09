@@ -12,8 +12,6 @@
 
 ---
 
-The source image contains no discernible text or characters. Therefore, the correct OCR output is an empty string.
-
 第一节 举起近代民族民主革命的旗帜
 
 69
@@ -100,7 +98,9 @@ The source image contains no discernible text or characters. Therefore, the corr
 
 73
 
-The image provided is a QR code. It does not contain any text, mathematical formulas, tables, or figures that can be processed according to the given instructions. Therefore, no OCR output can be generated.
+![](images/ocr_review/page_0087_block_2.png)
+
+【核对注】原页二维码图形，按原图保留。
 
 科学补习所、光复会、岳王会等。这些革命团体的成立为革命思想的传播和革命运动的发展提供了不可缺少的组织力量。
 
