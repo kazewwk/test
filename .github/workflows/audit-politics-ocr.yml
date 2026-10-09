@@ -1,0 +1,155 @@
+name: Compare politics OCR against original pages
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  independent-ocr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        include:
+          - book: 1
+            first: 1
+            last: 90
+            asset: 01-outline-modern-chinese-history-2023.pdf
+          - book: 1
+            first: 91
+            last: 180
+            asset: 01-outline-modern-chinese-history-2023.pdf
+          - book: 1
+            first: 181
+            last: 270
+            asset: 01-outline-modern-chinese-history-2023.pdf
+          - book: 1
+            first: 271
+            last: 360
+            asset: 01-outline-modern-chinese-history-2023.pdf
+          - book: 1
+            first: 361
+            last: 429
+            asset: 01-outline-modern-chinese-history-2023.pdf
+          - book: 2
+            first: 1
+            last: 90
+            asset: 02-xi-jinping-thought-introduction.pdf
+          - book: 2
+            first: 91
+            last: 180
+            asset: 02-xi-jinping-thought-introduction.pdf
+          - book: 2
+            first: 181
+            last: 270
+            asset: 02-xi-jinping-thought-introduction.pdf
+          - book: 2
+            first: 271
+            last: 360
+            asset: 02-xi-jinping-thought-introduction.pdf
+          - book: 2
+            first: 361
+            last: 384
+            asset: 02-xi-jinping-thought-introduction.pdf
+          - book: 3
+            first: 1
+            last: 90
+            asset: 03-ideology-morality-rule-of-law-2023.pdf
+          - book: 3
+            first: 91
+            last: 180
+            asset: 03-ideology-morality-rule-of-law-2023.pdf
+          - book: 3
+            first: 181
+            last: 264
+            asset: 03-ideology-morality-rule-of-law-2023.pdf
+          - book: 4
+            first: 1
+            last: 90
+            asset: 04-mao-zedong-thought-theoretical-system.pdf
+          - book: 4
+            first: 91
+            last: 180
+            asset: 04-mao-zedong-thought-theoretical-system.pdf
+          - book: 4
+            first: 181
+            last: 270
+            asset: 04-mao-zedong-thought-theoretical-system.pdf
+          - book: 4
+            first: 271
+            last: 284
+            asset: 04-mao-zedong-thought-theoretical-system.pdf
+          - book: 5
+            first: 1
+            last: 90
+            asset: 05-basic-principles-marxism-2023.pdf
+          - book: 5
+            first: 91
+            last: 180
+            asset: 05-basic-principles-marxism-2023.pdf
+          - book: 5
+            first: 181
+            last: 270
+            asset: 05-basic-principles-marxism-2023.pdf
+          - book: 5
+            first: 271
+            last: 360
+            asset: 05-basic-principles-marxism-2023.pdf
+          - book: 5
+            first: 361
+            last: 363
+            asset: 05-basic-principles-marxism-2023.pdf
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: scripts
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: false
+      - name: Install independent Chinese OCR CPU runtime
+        run: |
+          uv venv /tmp/ocr-venv --python 3.12
+          uv pip install --python /tmp/ocr-venv/bin/python rapidocr-onnxruntime==1.4.4 pymupdf==1.28.2
+          mkdir -p /tmp/source /tmp/audit
+      - name: Read original release PDF and independently recognize each page
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release download kaoyan-politics-books-2026-10-09 --repo "$GITHUB_REPOSITORY" --pattern '${{ matrix.asset }}' --dir /tmp/source
+          /tmp/ocr-venv/bin/python scripts/audit_politics_ocr.py --source /tmp/source --output /tmp/audit --book ${{ matrix.book }} --first ${{ matrix.first }} --last ${{ matrix.last }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: original-ocr-${{ matrix.book }}-${{ matrix.first }}-${{ matrix.last }}
+          path: /tmp/audit
+          retention-days: 7
+          if-no-files-found: error
+  collect:
+    needs: independent-ocr
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: original-ocr-*
+          path: /tmp/audit
+          merge-multiple: true
+      - name: Confirm all 1724 original pages were independently recognized
+        run: |
+          python3 - <<'PYCODE'
+          import json
+          from pathlib import Path
+          files=list(Path('/tmp/audit').glob('book-*-page-*.json'))
+          assert len(files)==1724,len(files)
+          for book,pages in [(1,429),(2,384),(3,264),(4,284),(5,363)]:
+              data=[json.loads(p.read_text()) for p in files if p.name.startswith(f'book-{book}-')]
+              assert sorted(d['pdf_page'] for d in data)==list(range(1,pages+1))
+              assert all(d['book_id']==book for d in data)
+          print('All 1724 physical pages present. Independent OCR is comparison evidence, not ground truth.')
+          PYCODE
+      - uses: actions/upload-artifact@v4
+        with:
+          name: politics-original-pages-independent-ocr
+          path: /tmp/audit
+          retention-days: 7
