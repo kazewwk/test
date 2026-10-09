@@ -29,3 +29,17 @@
 ## 细胞生物学制卡
 
 [细胞生物学制卡](细胞生物学制卡/README.md)以《细胞生物学》第5版的16章、45节为骨架，将 Molecular Biology of the Cell 第7版的对应英文原文、图表及习题整理进各章。各章提供整合教材、小节材料、制卡素材索引及跨章入口，并附完整来源与校验报告。
+
+## 考研政治教材
+
+五本教材使用 MinerU 4.0.10 Hybrid 混合模式在 CPU 上解析，共 1,724 页、48 个正文章节。导论、目录、前置页、结语、后记和封底也连续保留。各章包含 Markdown、完整内容视图、结构化 JSON、原页 PDF 与原生文字，分批原始输出和图片保存在各书的 `raw_chunks/`。
+
+| 书名 | 原始页数 | 正文章数 | 完整 ZIP |
+|---|---:|---:|---|
+| [中国近现代史纲要（2023年版）](%E4%B8%AD%E5%9B%BD%E8%BF%91%E7%8E%B0%E4%BB%A3%E5%8F%B2%E7%BA%B2%E8%A6%81%EF%BC%882023%E5%B9%B4%E7%89%88%EF%BC%89/README.md) | 429 | 10 | [下载](https://github.com/kazewwk/test/releases/download/kaoyan-politics-books-2026-10-09/01-outline-modern-chinese-history-2023-MinerU-Hybrid.zip) |
+| [习近平新时代中国特色社会主义思想概论](%E4%B9%A0%E8%BF%91%E5%B9%B3%E6%96%B0%E6%97%B6%E4%BB%A3%E4%B8%AD%E5%9B%BD%E7%89%B9%E8%89%B2%E7%A4%BE%E4%BC%9A%E4%B8%BB%E4%B9%89%E6%80%9D%E6%83%B3%E6%A6%82%E8%AE%BA/README.md) | 384 | 17 | [下载](https://github.com/kazewwk/test/releases/download/kaoyan-politics-books-2026-10-09/02-xi-jinping-thought-introduction-MinerU-Hybrid.zip) |
+| [思想道德与法治（2023）优化版](%E6%80%9D%E6%83%B3%E9%81%93%E5%BE%B7%E4%B8%8E%E6%B3%95%E6%B2%BB%EF%BC%882023%EF%BC%89%E4%BC%98%E5%8C%96%E7%89%88/README.md) | 264 | 6 | [下载](https://github.com/kazewwk/test/releases/download/kaoyan-politics-books-2026-10-09/03-ideology-morality-rule-of-law-2023-MinerU-Hybrid.zip) |
+| [毛泽东思想和中国特色社会主义理论体系概论](%E6%AF%9B%E6%B3%BD%E4%B8%9C%E6%80%9D%E6%83%B3%E5%92%8C%E4%B8%AD%E5%9B%BD%E7%89%B9%E8%89%B2%E7%A4%BE%E4%BC%9A%E4%B8%BB%E4%B9%89%E7%90%86%E8%AE%BA%E4%BD%93%E7%B3%BB%E6%A6%82%E8%AE%BA/README.md) | 284 | 8 | [下载](https://github.com/kazewwk/test/releases/download/kaoyan-politics-books-2026-10-09/04-mao-zedong-thought-theoretical-system-MinerU-Hybrid.zip) |
+| [马克思主义基本原理（2023年版，数字版）](%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%EF%BC%882023%E5%B9%B4%E7%89%88%EF%BC%8C%E6%95%B0%E5%AD%97%E7%89%88%EF%BC%89/README.md) | 363 | 7 | [下载](https://github.com/kazewwk/test/releases/download/kaoyan-politics-books-2026-10-09/05-basic-principles-marxism-2023-MinerU-Hybrid.zip) |
+
+[Release 下载页](https://github.com/kazewwk/test/releases/tag/kaoyan-politics-books-2026-10-09)附有每本书的 ZIP 校验值、解析清单和完整性报告。原始 PDF 按不超过 95 MB 无损分片保存在各书 `original_pdf/`，可运行各书的 `tools/restore_original_pdf.py` 精确恢复。仓库中的单个文件均小于 100 MB。
