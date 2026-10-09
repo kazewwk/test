@@ -1,0 +1,4287 @@
+{
+  "chapter": "M04",
+  "review": {
+    "core_text": "complete",
+    "supplement_text": "figure_context_reviewed",
+    "original_cards": "complete",
+    "viewed_sheets": [
+      "M04-S01",
+      "M04-S02",
+      "M04-S03",
+      "M04-S04",
+      "M04-S05",
+      "M04-S06",
+      "M04-S07",
+      "M04-S08",
+      "M04-S09",
+      "M04-S10",
+      "M04-S11",
+      "M04-S12",
+      "M04-S13",
+      "M04-S14",
+      "M04-S15",
+      "M04-S16",
+      "M04-S17"
+    ],
+    "note": "9块中文主干完整阅读、146原卡完整审读；17张联系表中的242项均实际原尺寸视觉核对。18块图邻上下文全读，并补读长图注、数据题及附录答案。136张缺评分合并根代理原评分数组，另10张复核并保留原标准。必要图采用教材原图实际嵌入，新增仅两道中文数据识图，前图为I145与I236/I237；英文只支持读图。胰岛素错误图改用已实际核实的生化B14-I010，Ran/20S改用本章正确平行原图；源图错误明确记录，不生成图。",
+    "grading": {
+      "missing_supplied": 136,
+      "existing_reviewed": 10,
+      "root_arrays_preserved": true,
+      "criteria_type": "list[str]"
+    }
+  },
+  "updates": [
+    {
+      "id": "M04-001",
+      "replace_criteria": [
+        "二联体4²=16不足20",
+        "三联体4³=64满足容量"
+      ]
+    },
+    {
+      "id": "M04-002",
+      "append_explanation": "非重叠是同一常规读码框内的规则；不能因此排除不同起始位点形成重叠基因。",
+      "image_ids": [
+        "M04-I018"
+      ],
+      "replace_criteria": [
+        "5′→3′连续非重叠三联阅读",
+        "起始位点决定读码框"
+      ]
+    },
+    {
+      "id": "M04-003",
+      "append_explanation": "“简并”是多对一；密码子频率与氨基酸频率的相关图不能单独确定每个密码子的含义。",
+      "image_refs": [
+        "M04-I007"
+      ],
+      "replace_criteria": [
+        "简并是多个同义密码子对应同种氨基酸",
+        "给定密码表下单个有义密码子含义确定"
+      ]
+    },
+    {
+      "id": "M04-004",
+      "replace_criteria": [
+        "多数氨基酸有多个同义密码子",
+        "氨基酸序列仅约束而不唯一确定编码序列"
+      ]
+    },
+    {
+      "id": "M04-005",
+      "append_explanation": "6×1×2=12；这是题给内部肽段的同义编码组合数，不是整条mRNA的唯一性或表达效率。",
+      "replace_criteria": [
+        "独立位点选择数相乘6×1×2",
+        "得12且不计起止/调控序列"
+      ]
+    },
+    {
+      "id": "M04-006",
+      "append_explanation": "第三位并非一律可互换；UGG→UGA在标准密码表中把Trp变为终止。",
+      "replace_criteria": [
+        "UGG为Trp而UGA为终止",
+        "第三位变异不保证同义"
+      ]
+    },
+    {
+      "id": "M04-007",
+      "append_explanation": "3的倍数通常保持下游读码框，但局部氨基酸、终止位置和功能仍可能改变。",
+      "image_ids": [
+        "M04-I005"
+      ],
+      "image_refs": [
+        "M04-I014"
+      ],
+      "replace_criteria": [
+        "1nt插入改变下游读码框",
+        "3nt插入后下游框恢复但局部/功能可改变"
+      ]
+    },
+    {
+      "id": "M04-008",
+      "append_explanation": "图中一缺失一插入恢复的是后段阅读框；两处之间的氨基酸序列仍改变。",
+      "image_ids": [
+        "M04-I015"
+      ],
+      "replace_criteria": [
+        "两变异净碱基数恢复原框",
+        "两点之间仍错译，功能恢复不等于序列完全恢复"
+      ]
+    },
+    {
+      "id": "M04-009",
+      "append_explanation": "净插入数为3可恢复下游读码框；能恢复多少活性还取决于局部改变及是否出现提前终止。",
+      "image_ids": [
+        "M04-I005"
+      ],
+      "image_refs": [
+        "M04-I019"
+      ],
+      "replace_criteria": [
+        "3个插入净增3nt恢复下游框",
+        "功能恢复依赖局部改变可被耐受"
+      ]
+    },
+    {
+      "id": "M04-010",
+      "append_explanation": "poly(U)确定UUU对应Phe；无模板及其他氨基酸标记对照排除模板非特异性和背景掺入。",
+      "image_ids": [
+        "M04-I006"
+      ],
+      "replace_criteria": [
+        "poly(U)支持UUU编码Phe",
+        "无模板背景及其他标记氨基酸对照"
+      ]
+    },
+    {
+      "id": "M04-011",
+      "append_explanation": "高Mg²⁺等非生理条件可降低起始选择要求；不能把该体系等同于细胞内正常起始。",
+      "image_ids": [
+        "M04-I006"
+      ],
+      "replace_criteria": [
+        "高Mg²⁺人工体系可绕过正常起始要求",
+        "不能外推生理条件"
+      ]
+    },
+    {
+      "id": "M04-012",
+      "append_explanation": "图为已知重复序列模板的制备；随机共聚物给统计关系，三核苷酸结合则直接检验特定三联子的tRNA结合，二者终点不同。",
+      "image_ids": [
+        "M04-I013"
+      ],
+      "image_refs": [
+        "M04-I012"
+      ],
+      "replace_criteria": [
+        "随机共聚物给组成/频率而非唯一顺序",
+        "确定三核苷酸和tRNA结合辨别具体顺序"
+      ]
+    },
+    {
+      "id": "M04-013",
+      "append_explanation": "教材表4-3是结合实验读数；关键比较同一标记氨酰-tRNA的有模板与无模板保留量，不把游离tRNA信号当阳性。",
+      "replace_criteria": [
+        "区分结合态与游离态tRNA",
+        "模板使相应氨酰-tRNA特异结合"
+      ]
+    },
+    {
+      "id": "M04-014",
+      "append_explanation": "图I020另用(GUAA)n四核苷酸重复演示读框与终止；它不是本题(UG)n或(UUC)n，不能直接套用其肽链序列。",
+      "image_refs": [
+        "M04-I020"
+      ],
+      "replace_criteria": [
+        "UGU/GUG交替为Cys/Val",
+        "三个相位分别重复UUC/UCU/CUU即Phe/Ser/Leu"
+      ]
+    },
+    {
+      "id": "M04-015",
+      "append_explanation": "题设各位点独立，UUU/UUC=(3/4)³÷[(3/4)²(1/4)]=3；这是指定有序三联子，不乘排列数。",
+      "replace_criteria": [
+        "独立位点概率相乘得27/64和9/64",
+        "比例3∶1"
+      ]
+    },
+    {
+      "id": "M04-016",
+      "append_explanation": "RNA编辑图展示转录本序列被改变；密码重分配则是同一密码子在特定体系中含义改变，应分别判断。线粒体密码差异也须指定物种。",
+      "image_refs": [
+        "M04-I025",
+        "M04-I026",
+        "M04-I027",
+        "M04-I030"
+      ],
+      "replace_criteria": [
+        "遗传密码近乎通用仍有物种/区室重分配",
+        "核对供体及表达宿主的实际密码表"
+      ]
+    },
+    {
+      "id": "M04-017",
+      "append_explanation": "只在需要保留Ser的CUG位点改用宿主能正确识别的Ser密码子；不能默认保留供体CUG仍编码Ser。",
+      "replace_criteria": [
+        "CUG在给定念珠菌编码Ser而大肠杆菌读Leu",
+        "改为细菌Ser同义密码子，如编码链TCT"
+      ]
+    },
+    {
+      "id": "M04-018",
+      "append_explanation": "图仅示一般反平行配对。本题3′-CCG-5′反写为5′-GCC-3′；先标方向再写序列。",
+      "image_ids": [
+        "M04-I008"
+      ],
+      "image_refs": [
+        "M04-I024"
+      ],
+      "replace_criteria": [
+        "反向平行配对为3′-CCG-5′",
+        "按5′→3′写为GCC"
+      ]
+    },
+    {
+      "id": "M04-019",
+      "append_explanation": "摆动位为反密码子5′端与密码子3′端；同一tRNA的可识别集合受具体修饰和配对规则限制。",
+      "image_ids": [
+        "M04-I010"
+      ],
+      "replace_criteria": [
+        "密码子第三位配反密码子5′第一位",
+        "受限非标准配对使一个tRNA读取多个同义密码子"
+      ]
+    },
+    {
+      "id": "M04-020",
+      "append_explanation": "5′-ICG-3′须反平行写成3′-GCI-5′，对应5′-CGA/CGU/CGC-3′；不能把I配对到密码子第一位。",
+      "image_ids": [
+        "M04-I010"
+      ],
+      "replace_criteria": [
+        "先按反向平行确定密码子前两位CG",
+        "I配A/U/C，得到CGA/CGU/CGC而非CGG"
+      ]
+    },
+    {
+      "id": "M04-021",
+      "append_explanation": "经典规则中U可对A/G，G可对C/U；不要把表中摆动关系解释为三个位点都允许任意错配。",
+      "image_ids": [
+        "M04-I010"
+      ],
+      "replace_criteria": [
+        "反密码子U配密码子A/G",
+        "反密码子G配密码子C/U，另两位仍须匹配"
+      ]
+    },
+    {
+      "id": "M04-022",
+      "append_explanation": "UCU与AGU的前两位不同；经典第三位摆动不足以跨越这两组Ser密码子。",
+      "replace_criteria": [
+        "UCU与AGU前两位不同",
+        "摆动只放宽第三位，不能仅凭同为Ser共用该tRNA"
+      ]
+    },
+    {
+      "id": "M04-023",
+      "append_explanation": "模板链与mRNA反平行；mRNA为5′-AUG CCU UUU UAA-3′，终止不计作氨基酸。",
+      "replace_criteria": [
+        "mRNA为5′-AUG CCU UUU UAA-3′",
+        "肽链Met–Pro–Phe，终止不加残基"
+      ]
+    },
+    {
+      "id": "M04-024",
+      "append_explanation": "接合体的反密码子读码、3′末端携带氨基酸；正确装载由合成酶识别保证，核糖体不能只凭氨基酸侧链决定密码子。",
+      "image_ids": [
+        "M04-I004"
+      ],
+      "image_refs": [
+        "M04-I003"
+      ],
+      "replace_criteria": [
+        "反密码子读取密码子",
+        "正确装载的3′端携氨基酸完成信息–底物映射"
+      ]
+    },
+    {
+      "id": "M04-025",
+      "append_explanation": "二级结构示意不是平面的真实分子；L形两端分别是反密码子环与3′CCA受体端。",
+      "image_ids": [
+        "M04-I031",
+        "M04-I032"
+      ],
+      "image_refs": [
+        "M04-I011",
+        "M04-I033",
+        "M04-I036",
+        "M04-I037",
+        "M04-I136",
+        "M04-I137",
+        "M04-I159",
+        "M04-I160"
+      ],
+      "replace_criteria": [
+        "L形两端为反密码子环和3′CCA受体端",
+        "分别连接小亚基解码和大亚基肽转移中心"
+      ]
+    },
+    {
+      "id": "M04-026",
+      "append_explanation": "D为二氢尿苷，Ψ为假尿苷；这是核苷修饰名称，不应把所有tRNA的修饰数或可变臂长度固定为图中数值。",
+      "image_ids": [
+        "M04-I031",
+        "M04-I035"
+      ],
+      "replace_criteria": [
+        "D为二氢尿苷",
+        "TΨC对应核糖胸苷/假尿苷/胞苷",
+        "可变臂长度因tRNA不同"
+      ]
+    },
+    {
+      "id": "M04-027",
+      "append_explanation": "图示成熟CCA末端；当基因未编码CCA时，由CCA添加酶在转录后补加，无需DNA模板。",
+      "image_ids": [
+        "M04-I031"
+      ],
+      "replace_criteria": [
+        "CCA添加酶无模板添加CCA",
+        "末端A的核糖羟基为装载位置"
+      ]
+    },
+    {
+      "id": "M04-028",
+      "append_explanation": "氨基酸羧基与末端A的核糖羟基形成酯键。图示3′OH；部分合成酶先连2′OH，随后可转至3′OH，不能称磷酸二酯键。I164的Ⅰ/Ⅱ类规律是一般情况，PheRS等有例外。",
+      "image_ids": [
+        "M04-I165"
+      ],
+      "image_refs": [
+        "M04-I164"
+      ],
+      "replace_criteria": [
+        "氨基酸羧基连末端A的2′或3′OH",
+        "形成酯键而非磷酸二酯键"
+      ]
+    },
+    {
+      "id": "M04-029",
+      "append_explanation": "先氨基酸活化，再转移到tRNA。图I138把PPi后续水解合并画出；2Pi不是合成酶第一步直接释放的产物。",
+      "image_ids": [
+        "M04-I038"
+      ],
+      "image_refs": [
+        "M04-I138"
+      ],
+      "replace_criteria": [
+        "形成氨基酰-AMP与PPi",
+        "氨基酰基转移至tRNA，释放AMP"
+      ]
+    },
+    {
+      "id": "M04-030",
+      "append_explanation": "ATP→AMP+PPi，再由PPi水解驱动；消耗1个ATP分子相当于2个高能磷酸键当量。",
+      "image_ids": [
+        "M04-I038"
+      ],
+      "replace_criteria": [
+        "1ATP裂解为AMP和PPi",
+        "PPi水解且AMP→ATP需两级再磷酸化，计2当量"
+      ]
+    },
+    {
+      "id": "M04-031",
+      "append_explanation": "身份信息常涉及受体茎/鉴别碱基及反密码子等部位；Ala-tRNA的G3–U70也能在小螺旋中指导装载，装载能力不等于可完成核糖体读码。",
+      "image_ids": [
+        "M04-I039",
+        "M04-I167"
+      ],
+      "image_refs": [
+        "M04-I034",
+        "M04-I168",
+        "M04-I169",
+        "M04-I171"
+      ],
+      "replace_criteria": [
+        "同时识别正确氨基酸和tRNA",
+        "身份信息可在受体臂/鉴别碱基/反密码子，贡献依tRNA"
+      ]
+    },
+    {
+      "id": "M04-032",
+      "append_explanation": "同工tRNA（isoacceptor）可由同一氨基酸对应的装载体系识别；不要求反密码子或全部一级序列相同。",
+      "image_refs": [
+        "M04-I039"
+      ],
+      "replace_criteria": [
+        "同工tRNA接受同种氨基酸",
+        "不同反密码子仍共享合成酶可识别的身份特征"
+      ]
+    },
+    {
+      "id": "M04-033",
+      "append_explanation": "第二遗传密码指合成酶对tRNA身份信息的识别，将正确氨基酸与tRNA对应；它不是另一本mRNA密码子表。",
+      "image_ids": [
+        "M04-I039"
+      ],
+      "replace_criteria": [
+        "合成酶建立氨基酸–tRNA身份对应",
+        "单凭密码子配对不能检验装载身份"
+      ]
+    },
+    {
+      "id": "M04-034",
+      "append_explanation": "图中保留tRNA身份与反密码子，只改所携氨基酸；因此Ala被放到原Cys密码子位置。",
+      "image_ids": [
+        "M04-I041"
+      ],
+      "image_refs": [
+        "M04-I009"
+      ],
+      "replace_criteria": [
+        "未变tRNA仍读Cys密码子",
+        "实际插入所载Ala，核糖体通常不校验氨基酸身份"
+      ]
+    },
+    {
+      "id": "M04-035",
+      "append_explanation": "本题装载身份改变而反密码子不变；读码靶点仍由原反密码子决定，插入残基却改为B所装载的氨基酸。",
+      "image_ids": [
+        "M04-I039"
+      ],
+      "replace_criteria": [
+        "反密码子不变则主要读码靶点不变",
+        "改由B装载可改变插入氨基酸并错译"
+      ]
+    },
+    {
+      "id": "M04-036",
+      "append_explanation": "Ile与Val只差一个亚甲基；合成位点可误收较小Val，编辑位点优先清除错产物并排斥较大Ile。图为侧链比较，不是完整编辑反应图。",
+      "image_ids": [
+        "M04-I040"
+      ],
+      "replace_criteria": [
+        "Val较小可误入Ile催化口袋",
+        "编辑口袋水解错误Val产物而排除较大Ile"
+      ]
+    },
+    {
+      "id": "M04-037",
+      "append_explanation": "转移前清除错活化的氨基酰-AMP，转移后清除错氨酰-tRNA；具体合成酶两类编辑的相对贡献可不同。",
+      "image_refs": [
+        "M04-I236",
+        "M04-I237"
+      ],
+      "replace_criteria": [
+        "转移前水解错误氨基酰AMP",
+        "转移后水解错误氨基酰tRNA酯键"
+      ]
+    },
+    {
+      "id": "M04-038",
+      "append_explanation": "正确读法是编辑受损使错误Thr-tRNAᵛᵃˡ积累、反复误装—水解循环减少；ATP少不表示保真度更高。两图时间范围不同，不据端点直接算同一时刻速率。",
+      "image_ids": [
+        "M04-I236",
+        "M04-I237"
+      ],
+      "replace_criteria": [
+        "野生型反复误装载–编辑增加ATP消耗",
+        "编辑缺失保留Thr-tRNA减少循环但提高错误产物"
+      ]
+    },
+    {
+      "id": "M04-039",
+      "append_explanation": "典型细菌起始tRNA进P位；真核胞质为Met-tRNAᵢ。古菌和细胞器须另判，不能把所有原核起始都写成fMet。",
+      "image_ids": [
+        "M04-I061"
+      ],
+      "image_refs": [
+        "M04-I173"
+      ],
+      "replace_criteria": [
+        "细菌起始携fMet、真核胞质携Met",
+        "起始tRNA经起始因子直接入P，内部Met延伸tRNA入A"
+      ]
+    },
+    {
+      "id": "M04-040",
+      "append_explanation": "Met先装到起始tRNA，再由甲酰转移酶甲酰化其α-氨基；不是把游离fMet直接当通常装载底物。",
+      "image_ids": [
+        "M04-I109"
+      ],
+      "replace_criteria": [
+        "先装载Met到起始tRNA",
+        "再由N¹⁰-甲酰THF供甲酰基至已装载Met氨基"
+      ]
+    },
+    {
+      "id": "M04-041",
+      "append_explanation": "图为Tyr抑制tRNA：反密码子3′-AUG-5′改为3′-AUC-5′，使其读mRNA UAG；同时可能通读正常终止位点。这里AUG是反密码子，不能误作终止密码子。",
+      "image_ids": [
+        "M04-I016"
+      ],
+      "replace_criteria": [
+        "抑制tRNA竞争终止并插氨基酸",
+        "可救提前终止，也可通读正常终止损伤细胞"
+      ]
+    },
+    {
+      "id": "M04-042",
+      "append_explanation": "可装载的抑制tRNA与RF1竞争UAG；通读比例由浓度、读码环境等共同决定，没有普遍固定的50%上限。",
+      "image_ids": [
+        "M04-I016"
+      ],
+      "replace_criteria": [
+        "增加有效抑制tRNA通常提高通读",
+        "增加RF1通常降低通读，竞争同一A位UAG"
+      ]
+    },
+    {
+      "id": "M04-043",
+      "append_explanation": "图只比较Cys与Sec结构；专用tRNA及SECIS等信号使特定UGA重编码。Sec途径通常从装在tRNAˢᵉᶜ上的Ser开始，不能照错误正文写成Cys-tRNA转化。",
+      "image_ids": [
+        "M04-I042"
+      ],
+      "image_refs": [
+        "M04-I174"
+      ],
+      "replace_criteria": [
+        "Ser先装载后在专用tRNA上转Sec",
+        "特定UGA依上下文及专门递送，在翻译中插入"
+      ]
+    },
+    {
+      "id": "M04-044",
+      "append_explanation": "70S=50S+30S、80S=60S+40S为典型胞质体系；不要用哺乳动物线粒体或其他细胞器数值替代。",
+      "image_ids": [
+        "M04-I046"
+      ],
+      "image_refs": [
+        "M04-I043",
+        "M04-I044",
+        "M04-I045",
+        "M04-I054",
+        "M04-I139",
+        "M04-I154",
+        "M04-I155"
+      ],
+      "replace_criteria": [
+        "细菌70S=50S+30S",
+        "真核胞质80S=60S+40S"
+      ]
+    },
+    {
+      "id": "M04-045",
+      "append_explanation": "S是沉降系数，受质量、形状和水合等影响；不是可相加的分子量单位。",
+      "image_ids": [
+        "M04-I049"
+      ],
+      "replace_criteria": [
+        "S值由质量/形状/摩擦阻力共同决定",
+        "不是可直接相加的质量"
+      ]
+    },
+    {
+      "id": "M04-046",
+      "append_explanation": "按细菌16S/23S+5S、哺乳动物胞质18S/28S+5.8S+5S回答；23S长度依物种，如大肠杆菌约2904nt，不能套用图I157旧3200nt为普适值。",
+      "image_ids": [
+        "M04-I050"
+      ],
+      "image_refs": [
+        "M04-I156",
+        "M04-I157",
+        "M04-I158"
+      ],
+      "replace_criteria": [
+        "细菌30S含16S，50S含23S/5S",
+        "哺乳胞质40S含18S，60S含28S/5.8S/5S"
+      ]
+    },
+    {
+      "id": "M04-047",
+      "append_explanation": "小亚基解码，大亚基肽基转移；tRNA反密码子端在小亚基、CCA端在大亚基。A/P/E是跨两亚基的功能位点。",
+      "image_ids": [
+        "M04-I056"
+      ],
+      "image_refs": [
+        "M04-I057",
+        "M04-I058",
+        "M04-I059"
+      ],
+      "replace_criteria": [
+        "小亚基解码、大亚基肽基转移",
+        "tRNA两端分别接触两个功能中心"
+      ]
+    },
+    {
+      "id": "M04-048",
+      "append_explanation": "按mRNA5′→3′方向区分E/P/A；A收氨酰-tRNA，P持肽基-tRNA，E释放去氨酰tRNA，起始tRNA直接进P。",
+      "image_ids": [
+        "M04-I047"
+      ],
+      "image_refs": [
+        "M04-I055",
+        "M04-I140",
+        "M04-I141",
+        "M04-I142"
+      ],
+      "replace_criteria": [
+        "A接后续氨酰tRNA、P持肽基tRNA、E释放去氨酰tRNA",
+        "起始tRNA直接入P是例外"
+      ]
+    },
+    {
+      "id": "M04-049",
+      "append_explanation": "结构图定位的是rRNA催化核心；结合功能扰动及去蛋白实验才能形成互补证据，不能只凭彩色结构图证明全部机制。",
+      "image_ids": [
+        "M04-I122"
+      ],
+      "replace_criteria": [
+        "去蛋白后残余催化活性",
+        "结构定位于rRNA核心",
+        "功能扰动支持RNA重要性"
+      ]
+    },
+    {
+      "id": "M04-050",
+      "append_explanation": "缺蛋白可能影响装配、定位和构象；直接化学催化需进一步定位和功能证据。",
+      "image_ids": [
+        "M04-I122"
+      ],
+      "replace_criteria": [
+        "速率下降也可由组装/定位等间接效应造成",
+        "直接化学催化需结构及特异功能证据"
+      ]
+    },
+    {
+      "id": "M04-051",
+      "append_explanation": "P位末端A的2′OH来自底物tRNA；图为促进质子转移的机制模型，不把模型箭头当作所有微观步骤已唯一确定。",
+      "image_ids": [
+        "M04-I123"
+      ],
+      "replace_criteria": [
+        "2′OH属于底物tRNA本身",
+        "其参与催化效率/质子网络，不能仅归蛋白催化"
+      ]
+    },
+    {
+      "id": "M04-052",
+      "append_explanation": "多个核糖体共享一条mRNA，各自合成一条链；通常在延伸速率相近时，更靠3′端的核糖体所带链较长。",
+      "image_ids": [
+        "M04-I052"
+      ],
+      "image_refs": [
+        "M04-I069",
+        "M04-I070",
+        "M04-I150",
+        "M04-I151"
+      ],
+      "replace_criteria": [
+        "多个核糖体同时读同一mRNA，各自合独立链",
+        "前链未完成即可再起始，提高产量"
+      ]
+    },
+    {
+      "id": "M04-053",
+      "append_explanation": "只收集刚完成的全长链，短脉冲标记主要落在最后合成的C端；不能把总细胞所有未完成肽链的标记分布混作同一实验。",
+      "replace_criteria": [
+        "刚完成链的N端已在脉冲前合成",
+        "末合成C端偏标记，支持N→C延伸"
+      ]
+    },
+    {
+      "id": "M04-054",
+      "append_explanation": "图为细菌转录与翻译耦联的电镜示例；真核常规核基因的核转录、RNA加工和核输出使胞质翻译不能直接跟随核内聚合酶。",
+      "image_ids": [
+        "M04-I152"
+      ],
+      "image_refs": [
+        "M04-I048",
+        "M04-I190"
+      ],
+      "replace_criteria": [
+        "细菌同一空间可翻译刚露出的5′RNA",
+        "真核核内转录/胞质翻译分隔且需加工输出"
+      ]
+    },
+    {
+      "id": "M04-055",
+      "append_explanation": "三任务为募集正确起始tRNA、定位起始密码子/读框、装配完整核糖体；完成时起始tRNA在P位而A位可接延伸tRNA。I146简图只标Met，典型细菌起始实际携带fMet。",
+      "image_ids": [
+        "M04-I061"
+      ],
+      "image_refs": [
+        "M04-I107",
+        "M04-I110",
+        "M04-I146",
+        "M04-I177"
+      ],
+      "replace_criteria": [
+        "募集核糖体并放起始tRNA到P",
+        "选择起始密码子/框架",
+        "结合大亚基后A位可用于延伸"
+      ]
+    },
+    {
+      "id": "M04-056",
+      "append_explanation": "mRNA的SD与16S rRNA3′端互补并通过间距定位起始位；不是所有细菌mRNA都必须含典型SD。",
+      "image_ids": [
+        "M04-I062"
+      ],
+      "image_refs": [
+        "M04-I178"
+      ],
+      "replace_criteria": [
+        "SD配16S rRNA的3′端",
+        "正确间距把起始密码子放P，内部AUG通常缺起始上下文"
+      ]
+    },
+    {
+      "id": "M04-057",
+      "append_explanation": "图给配对模型，本题的补偿突变提供相互作用证据；还应控制rRNA装配和总体翻译，不能把降低翻译单独等同于直接配对。",
+      "image_ids": [
+        "M04-I062"
+      ],
+      "replace_criteria": [
+        "补偿16S突变恢复与SD的互补",
+        "mRNA量受控下支持直接配对参与起始"
+      ]
+    },
+    {
+      "id": "M04-058",
+      "append_explanation": "SD配对位置与P位的空间距离共同限制起始密码子放置；合适间距是条件范围，不是所有基因固定同一个碱基数。",
+      "image_ids": [
+        "M04-I108"
+      ],
+      "replace_criteria": [
+        "结合SD不等于AUG正确对P",
+        "距离改变可影响tRNA配对及复合物装配"
+      ]
+    },
+    {
+      "id": "M04-059",
+      "append_explanation": "IF1占A位、帮助正确装配；IF3抑制亚基过早结合并参与起始选择，不把IF1作用仅写成“释放IF2”。",
+      "image_ids": [
+        "M04-I061"
+      ],
+      "replace_criteria": [
+        "IF1占A位相关区阻过早tRNA进入",
+        "IF3抑50S过早结合并提高起始选择性"
+      ]
+    },
+    {
+      "id": "M04-060",
+      "append_explanation": "GTP结合促进起始tRNA募集，大亚基结合触发水解和起始因子转换；按步骤区分结合、定位与因子释放。",
+      "image_ids": [
+        "M04-I061"
+      ],
+      "replace_criteria": [
+        "IF2-GTP募集起始tRNA",
+        "大亚基结合后GTP水解",
+        "因子释放使延伸可开始"
+      ]
+    },
+    {
+      "id": "M04-061",
+      "append_explanation": "该突变主要卡在大亚基结合后的因子释放/向延伸转换，不等于不能结合起始tRNA或不能形成任何复合物。",
+      "image_ids": [
+        "M04-I061"
+      ],
+      "replace_criteria": [
+        "GTP水解障碍妨碍因子正常释放",
+        "阻起始转延伸，不必意味着亚基完全不能结合"
+      ]
+    },
+    {
+      "id": "M04-062",
+      "append_explanation": "图列出含GUG起始的细菌基因示例；起始位置由起始tRNA引入fMet，内部GUG按标准密码由延伸tRNA引入Val。",
+      "image_ids": [
+        "M04-I062"
+      ],
+      "replace_criteria": [
+        "起始GUG由起始tRNA引fMet",
+        "内部GUG由延伸tRNA引Val，取决于上下文/因子"
+      ]
+    },
+    {
+      "id": "M04-063",
+      "append_explanation": "43S预装配→募集mRNA形成48S并扫描→识别AUG和因子转换→60S结合；eIF2/eIF5B分别承担不同阶段。",
+      "image_ids": [
+        "M04-I113",
+        "M04-I115"
+      ],
+      "image_refs": [
+        "M04-I179"
+      ],
+      "replace_criteria": [
+        "起始tRNA先与40S形成复合物",
+        "帽募集后5′→3′扫描",
+        "识别AUG与因子转换",
+        "60S结合，P位起始tRNA、A位空"
+      ]
+    },
+    {
+      "id": "M04-064",
+      "append_explanation": "eIF4E认帽、eIF4G作支架连接因子/PABP、eIF4A解RNA结构；帽不需依赖与18S rRNA的固定序列互补。",
+      "image_ids": [
+        "M04-I063"
+      ],
+      "image_refs": [
+        "M04-I114",
+        "M04-I180"
+      ],
+      "replace_criteria": [
+        "eIF4E结合帽",
+        "eIF4G支架联系帽/PABP/小亚基因子",
+        "eIF4A为ATP依赖RNA解旋酶"
+      ]
+    },
+    {
+      "id": "M04-065",
+      "append_explanation": "扫描需要克服RNA结构；发夹是否抑制及抑制程度还受位置、稳定性和解旋因子影响，不能只看总mRNA量。",
+      "image_refs": [
+        "M04-I064"
+      ],
+      "replace_criteria": [
+        "稳定5′UTR发夹阻募集或扫描",
+        "需要解旋和ATP，不必伴mRNA量下降"
+      ]
+    },
+    {
+      "id": "M04-066",
+      "append_explanation": "以AUG的A为+1，关键常为−3嘌呤及+4G；弱环境可漏扫。原中文正文写−3/+5有误，应以正确图及编号为准。",
+      "image_ids": [
+        "M04-I064"
+      ],
+      "replace_criteria": [
+        "关键−3嘌呤/+4G",
+        "弱上下文可漏扫首AUG，不保证始于第一个"
+      ]
+    },
+    {
+      "id": "M04-067",
+      "append_explanation": "43S未结合mRNA；48S已结合mRNA。S值不是40S加各因子名称数字的算术和。",
+      "image_ids": [
+        "M04-I113"
+      ],
+      "image_refs": [
+        "M04-I115"
+      ],
+      "replace_criteria": [
+        "43S未结合mRNA",
+        "募集mRNA形成48S并选择起始位点"
+      ]
+    },
+    {
+      "id": "M04-068",
+      "append_explanation": "eIF2送Met-tRNAᵢ；eIF5B促进后期亚基结合。eIF5促进eIF2水解而不是自行作为这一GTP酶。",
+      "image_ids": [
+        "M04-I115"
+      ],
+      "replace_criteria": [
+        "eIF2-GTP递送起始Met-tRNA",
+        "eIF5B-GTP主要促进60S结合和最后因子离开"
+      ]
+    },
+    {
+      "id": "M04-069",
+      "append_explanation": "eIF4G连接帽结合体系和PABP形成蛋白桥接的功能闭环；mRNA本身仍是线性的，不产生首尾共价RNA连接。",
+      "image_ids": [
+        "M04-I063"
+      ],
+      "image_refs": [
+        "M04-I069",
+        "M04-I070",
+        "M04-I114",
+        "M04-I180"
+      ],
+      "replace_criteria": [
+        "eIF4E–帽、PABP–poly(A)",
+        "eIF4G联系两端及小亚基因子促进起始/利用"
+      ]
+    },
+    {
+      "id": "M04-070",
+      "append_explanation": "图中的脊髓灰质炎病毒IRES仍用部分起始因子；CrPV型可更直接募集核糖体。不同IRES对因子/起始tRNA的要求不同。I111为uORF后的再起始：保留小亚基后重新获得起始tRNA，与IRES不同，正文“新rRNA”为误字。",
+      "image_ids": [
+        "M04-I112"
+      ],
+      "image_refs": [
+        "M04-I111"
+      ],
+      "replace_criteria": [
+        "IRES内部结构可募集翻译机器绕帽/部分扫描要求",
+        "不同IRES依赖的起始因子不同"
+      ]
+    },
+    {
+      "id": "M04-071",
+      "append_explanation": "肽基转移后先在A位形成延长肽链，再移位到P；终止密码子不是下一轮氨酰-tRNA底物。",
+      "image_ids": [
+        "M04-I116"
+      ],
+      "image_refs": [
+        "M04-I051",
+        "M04-I135",
+        "M04-I141",
+        "M04-I147",
+        "M04-I153",
+        "M04-I181",
+        "M04-I182"
+      ],
+      "replace_criteria": [
+        "A位递送及选择",
+        "P位肽基转至A位",
+        "移位与下个A位形成"
+      ]
+    },
+    {
+      "id": "M04-072",
+      "append_explanation": "EF-Tu先把tRNA保持在尚未完全容纳的状态；正确配对激活水解、因子释放及容纳，不能直接把递送等同于肽键形成。",
+      "image_ids": [
+        "M04-I118"
+      ],
+      "image_refs": [
+        "M04-I117"
+      ],
+      "replace_criteria": [
+        "EF-Tu遮蔽所载氨基酰端",
+        "正确识别后GTP水解/释放允许充分入位和肽转移"
+      ]
+    },
+    {
+      "id": "M04-073",
+      "append_explanation": "先进行GTP水解前选择，再在水解后的容纳阶段校对；16S A1492/A1493偏向检查密码子前两对的几何结构。",
+      "image_ids": [
+        "M04-I119",
+        "M04-I121"
+      ],
+      "image_refs": [
+        "M04-I120"
+      ],
+      "replace_criteria": [
+        "解码几何与GTP水解耦联选择",
+        "错配可在初始选择或后续入位阶段脱离"
+      ]
+    },
+    {
+      "id": "M04-074",
+      "append_explanation": "不能水解主要妨碍EF-Tu释放及tRNA完整容纳；最先受阻不是EF-G移位。",
+      "image_ids": [
+        "M04-I118"
+      ],
+      "replace_criteria": [
+        "不能正常释放EF-Tu",
+        "氨基酰端不能充分入位而阻肽转移"
+      ]
+    },
+    {
+      "id": "M04-075",
+      "append_explanation": "EF-Ts是鸟嘌呤核苷酸交换因子：促GDP脱离后换入细胞已有GTP，不催化GDP磷酸化，也不是GTP酶。",
+      "image_ids": [
+        "M04-I126"
+      ],
+      "image_refs": [
+        "M04-I066",
+        "M04-I127"
+      ],
+      "replace_criteria": [
+        "EF-Ts促GDP释放后由新GTP结合",
+        "是交换因子，不原位将GDP磷酸化"
+      ]
+    },
+    {
+      "id": "M04-076",
+      "append_explanation": "图中箭头是P位肽基转给A位α-氨基；原正文反向写法及“先转到P位”有误，需与随后移位分开。",
+      "image_ids": [
+        "M04-I067"
+      ],
+      "image_refs": [
+        "M04-I053"
+      ],
+      "replace_criteria": [
+        "A位α-氨基为攻击者",
+        "P位肽基-tRNA羰基为被攻击者",
+        "产物肽基-tRNA位于A位"
+      ]
+    },
+    {
+      "id": "M04-077",
+      "append_explanation": "化学反应利用氨酰/肽酰-tRNA酯键的预存能量；游离氨基酸脱水缩合图不代表核糖体的真实底物与能量机制。",
+      "image_ids": [
+        "M04-I053"
+      ],
+      "image_refs": [
+        "M04-I065",
+        "M04-I083"
+      ],
+      "replace_criteria": [
+        "肽转移不直接水解ATP/GTP",
+        "由肽基tRNA酯键转移驱动，能量先储于装载步骤"
+      ]
+    },
+    {
+      "id": "M04-078",
+      "append_explanation": "新残基的氨基接原链末端羰基，新残基羧基成为新的C端；肽链沿N→C延长。",
+      "image_ids": [
+        "M04-I053"
+      ],
+      "replace_criteria": [
+        "原肽C端羰基与新残基α氨基成键",
+        "新残基羧基继续连tRNA成为新C端，N端保留"
+      ]
+    },
+    {
+      "id": "M04-079",
+      "append_explanation": "A/P和P/E分别标反密码子端仍在小亚基A/P而CCA端已到大亚基P/E；不是两条tRNA共用同一个完整位点。",
+      "image_ids": [
+        "M04-I124"
+      ],
+      "replace_criteria": [
+        "斜线前为小亚基反密码子端，后为大亚基受体端",
+        "肽转移后受体端先移动、反密码子端暂留"
+      ]
+    },
+    {
+      "id": "M04-080",
+      "append_explanation": "完成移位净移动一个密码子：肽基-tRNA A→P、去氨酰tRNA P→E；mRNA沿阅读方向前进3nt。",
+      "image_ids": [
+        "M04-I068"
+      ],
+      "image_refs": [
+        "M04-I125",
+        "M04-I185",
+        "M04-I186"
+      ],
+      "replace_criteria": [
+        "沿mRNA向3′净前进3nt",
+        "肽基A→P、去氨酰P→E，下一密码子进A"
+      ]
+    },
+    {
+      "id": "M04-081",
+      "append_explanation": "首个肽键形成后肽基-tRNA仍占A位；移位受阻就不能正常形成供下一tRNA进入的空A位。",
+      "image_ids": [
+        "M04-I068"
+      ],
+      "replace_criteria": [
+        "移位未完成导致肽基tRNA未正常A→P",
+        "A位不能腾出及呈现下一密码子"
+      ]
+    },
+    {
+      "id": "M04-082",
+      "append_explanation": "eEF1A递送、eEF1B促进交换、eEF2移位；不要把交换因子与两类GTP酶混写。",
+      "replace_criteria": [
+        "eEF1A对应EF-Tu递送",
+        "eEF1B对应EF-Ts交换",
+        "eEF2对应EF-G移位"
+      ]
+    },
+    {
+      "id": "M04-083",
+      "append_explanation": "图把释放和后续回收分开；直接释放靠P位酯键水解，不靠切断新生肽中的肽键。I148的“2GTP”示意不作所有终止体系固定计量。",
+      "image_ids": [
+        "M04-I189"
+      ],
+      "image_refs": [
+        "M04-I148"
+      ],
+      "replace_criteria": [
+        "终止密码子在A位",
+        "Ⅰ类因子以蛋白–RNA识别",
+        "P位酯键被水解、肽链释放"
+      ]
+    },
+    {
+      "id": "M04-084",
+      "append_explanation": "RF1认UAA/UAG，RF2认UAA/UGA，eRF1认三者；条件为常规终止，不包括Sec等特定重编码。",
+      "replace_criteria": [
+        "RF1识UAA/UAG，RF2识UAA/UGA",
+        "eRF1识三种常规终止"
+      ]
+    },
+    {
+      "id": "M04-085",
+      "append_explanation": "Ⅰ类负责终止密码子识别及肽释放；Ⅱ类为辅助GTP酶。细菌RF1/RF2本身不能按GTP酶计。",
+      "image_refs": [
+        "M04-I128",
+        "M04-I129",
+        "M04-I130",
+        "M04-I131",
+        "M04-I132"
+      ],
+      "replace_criteria": [
+        "Ⅰ类直接识终止并促释放",
+        "Ⅱ类为GTP相关辅助，不能代替直接解码"
+      ]
+    },
+    {
+      "id": "M04-086",
+      "append_explanation": "RF3主要促细菌Ⅰ类因子周转；真核eRF3与eRF1配合参与释放过程，二者时序与作用不能仅按名称对应。",
+      "image_ids": [
+        "M04-I132"
+      ],
+      "replace_criteria": [
+        "RF3主要促细菌Ⅰ类RF离开",
+        "eRF3与eRF1协同参与递送/终止，不能简单等同"
+      ]
+    },
+    {
+      "id": "M04-087",
+      "append_explanation": "密码子识别区靠近小亚基解码中心，GGQ靠近大亚基肽基转移中心；空间分工由伸展的释放因子连接。",
+      "image_ids": [
+        "M04-I129",
+        "M04-I130"
+      ],
+      "image_refs": [
+        "M04-I131"
+      ],
+      "replace_criteria": [
+        "识别区接A位终止密码子",
+        "GGQ到肽转移中心/P位tRNA端促酯键水解"
+      ]
+    },
+    {
+      "id": "M04-088",
+      "append_explanation": "肽释放后仍需拆解mRNA/tRNA/亚基复合物；RRF、EF-G及IF3参与回收，不能用RF3替代整个回收体系。",
+      "image_ids": [
+        "M04-I133"
+      ],
+      "replace_criteria": [
+        "释放后仍可能残留mRNA和去氨酰tRNA",
+        "RRF/EF-G促分亚基，IF3助清组分防过早再结合"
+      ]
+    },
+    {
+      "id": "M04-089",
+      "append_explanation": "无终止末端不能给Ⅰ类因子正常识别；tmRNA–SmpB救援，先把肽转给所带Ala，再读取tmRNA短ORF加降解标签并正常终止。SmpB需结合正文理解。",
+      "image_ids": [
+        "M04-I183"
+      ],
+      "replace_criteria": [
+        "无终止导致RF无对应A位信号",
+        "tmRNA–SmpB转入短读框、正常终止并给异常肽加降解标签"
+      ]
+    },
+    {
+      "id": "M04-090",
+      "append_explanation": "I188使用慢水解GTPγS延长筛选，是特定体外条件的结果；完全不可水解类似物可能直接阻断，不能推广为任何类似物都提高保真度。",
+      "image_refs": [
+        "M04-I188"
+      ],
+      "replace_criteria": [
+        "较长筛选时间增加错配脱离机会",
+        "选择/转换耗时提高，保真度与速度可权衡"
+      ]
+    },
+    {
+      "id": "M04-091",
+      "append_explanation": "1ATP→AMP按2当量，2GTP→GDP各1当量，总4当量；这是3个NTP分子，不是4个NTP都变成NDP。",
+      "replace_criteria": [
+        "1ATP→AMP计2当量，递送/移位各1GTP",
+        "共1ATP+2GTP即4当量，限定题中排除项"
+      ]
+    },
+    {
+      "id": "M04-092",
+      "append_explanation": "nATP、2(n−1)GTP，总2n+2(n−1)=4n−2当量；排除项须与题设保持一致。",
+      "replace_criteria": [
+        "nATP和2(n−1)GTP",
+        "总当量2n+2(n−1)=4n−2"
+      ]
+    },
+    {
+      "id": "M04-093",
+      "append_explanation": "200+198+1=399当量；未计终止、回收和校对，不能套用每个残基统一4当量后再任意加减。",
+      "replace_criteria": [
+        "2×100+2×99+1=399当量",
+        "NTP分子为100ATP+199GTP，勿混概念"
+      ]
+    },
+    {
+      "id": "M04-094",
+      "append_explanation": "氨酰-tRNA已预装酯键能量；可省体系内重复装载步骤，递送和移位仍用GTP，不能据此说细胞合成无装载成本。",
+      "image_ids": [
+        "M04-I053"
+      ],
+      "replace_criteria": [
+        "预装载底物已有高能酯键，无需现场装载ATP",
+        "常规递送/移位仍需GTP，不能外推细胞无需ATP"
+      ]
+    },
+    {
+      "id": "M04-095",
+      "append_explanation": "三次额外ATP→AMP共增加6当量；正确装载的一次消耗另计，别与额外消耗混合。",
+      "replace_criteria": [
+        "额外3ATP→AMP",
+        "额外6当量，正确装载另外计"
+      ]
+    },
+    {
+      "id": "M04-096",
+      "append_explanation": "303/3=101个密码子，其中末端1个终止，得到100残基与99肽键。",
+      "replace_criteria": [
+        "101密码子含1终止得100残基",
+        "肽键99个"
+      ]
+    },
+    {
+      "id": "M04-097",
+      "append_explanation": "嘌呤霉素模拟氨酰-tRNA受体端并受肽基转移，但形成的肽酰嘌呤霉素不能作为正常tRNA继续延伸。",
+      "image_ids": [
+        "M04-I080",
+        "M04-I197"
+      ],
+      "image_refs": [
+        "M04-I134"
+      ],
+      "replace_criteria": [
+        "模拟氨酰tRNA端在A相关位接受P位肽基",
+        "肽基嘌呤霉素解离，无法像完整tRNA继续延伸"
+      ]
+    },
+    {
+      "id": "M04-098",
+      "append_explanation": "四环素主要阻碍30S A位氨酰-tRNA进入；氯霉素作用于50S肽基转移中心。分子结构图本身不能给出靶点，须结合正文纠错。",
+      "image_refs": [
+        "M04-I079",
+        "M04-I198"
+      ],
+      "replace_criteria": [
+        "四环素阻30S A位氨酰tRNA进入",
+        "氯霉素阻50S肽基转移"
+      ]
+    },
+    {
+      "id": "M04-099",
+      "append_explanation": "亚基交换实验把敏感性随30S转移定位至小亚基；支持靶点所在亚基，不单凭该实验确定具体核苷酸/蛋白位点。",
+      "image_refs": [
+        "M04-I199"
+      ],
+      "replace_criteria": [
+        "敏感/抗性随30S来源改变",
+        "支持30S定位，不单独锁定具体核苷酸/蛋白"
+      ]
+    },
+    {
+      "id": "M04-100",
+      "append_explanation": "误掺入反映小亚基解码/保真度受损；不是把mRNA碱基编辑成新的密码子。",
+      "image_refs": [
+        "M04-I119"
+      ],
+      "replace_criteria": [
+        "30S解码/氨酰tRNA选择精度下降",
+        "mRNA序列未被改写"
+      ]
+    },
+    {
+      "id": "M04-101",
+      "replace_criteria": [
+        "ADP核糖基化eEF2的diphthamide修饰His",
+        "eEF2失活使移位受阻"
+      ]
+    },
+    {
+      "id": "M04-102",
+      "replace_criteria": [
+        "28S rRNA特定A脱嘌呤",
+        "破坏大亚基因子作用相关区域阻延伸"
+      ]
+    },
+    {
+      "id": "M04-103",
+      "append_explanation": "环己亚胺主要结合真核60S E位附近并阻碍延伸/移位；教材旧表写成直接肽基转移酶抑制不够准确。",
+      "image_refs": [
+        "M04-I198"
+      ],
+      "replace_criteria": [
+        "真核胞质60S E位相关口袋",
+        "干扰去氨酰tRNA动态/移位"
+      ]
+    },
+    {
+      "id": "M04-104",
+      "append_explanation": "青霉素抑制细胞壁肽聚糖合成的PBP转肽过程；靶点中“转肽”不能与核糖体肽基转移混为一谈。",
+      "replace_criteria": [
+        "主要靶点为肽聚糖交联的PBP/转肽酶",
+        "细胞壁转肽不等于核糖体肽基转移"
+      ]
+    },
+    {
+      "id": "M04-105",
+      "append_explanation": "成熟可涉及折叠、亚基组装、切割及修饰；有些折叠共翻译发生，不能把所有新生链都称完全无结构/无功能。",
+      "image_ids": [
+        "M04-I071"
+      ],
+      "image_refs": [
+        "M04-I088"
+      ],
+      "replace_criteria": [
+        "全长合成不保证折叠/装配/切割/修饰/定位正确",
+        "成熟步骤失败仍可无功能"
+      ]
+    },
+    {
+      "id": "M04-106",
+      "append_explanation": "伴侣帮助避免聚集、保持可折叠或可转运状态；不直接指定天然结构。作用和折叠速率效应依底物/条件而变。",
+      "image_ids": [
+        "M04-I078"
+      ],
+      "replace_criteria": [
+        "结合未折叠/易聚集肽段，减非生产性聚集",
+        "帮助折叠而非提供逐残基结构模板"
+      ]
+    },
+    {
+      "id": "M04-107",
+      "append_explanation": "GroEL/GroES以ATP驱动隔离/释放折叠底物。I192结构实际为T4 GroEL–gp31包封gp23，不能当通用GroEL–GroES实证图。",
+      "image_ids": [
+        "M04-I191"
+      ],
+      "image_refs": [
+        "M04-I192"
+      ],
+      "replace_criteria": [
+        "GroEL/GroES腔室隔离未折叠底物",
+        "ATP驱动结合/释放循环减聚集并允许折叠"
+      ]
+    },
+    {
+      "id": "M04-108",
+      "append_explanation": "去除变性剂后在合适氧化条件下可回到天然二硫键与活性；在尿素中先氧化可形成错配二硫键。实验结论有环境条件，不能推广为细胞内所有底物无需伴侣。",
+      "image_ids": [
+        "M04-I094"
+      ],
+      "replace_criteria": [
+        "支持RNase A序列在适合条件下含折叠信息",
+        "不能外推所有蛋白或拥挤细胞都无需伴侣"
+      ]
+    },
+    {
+      "id": "M04-109",
+      "append_explanation": "二硫键由两个已编码的Cys残基氧化形成；胱氨酸不是在常规翻译时由独立密码子插入的残基。",
+      "image_ids": [
+        "M04-I086"
+      ],
+      "replace_criteria": [
+        "先翻译Cys残基",
+        "随后巯基氧化为二硫键，无需胱氨酸专属密码子"
+      ]
+    },
+    {
+      "id": "M04-110",
+      "append_explanation": "正确原图的N→C顺序是信号肽–B链–C肽–A链；去信号肽后保留并形成二硫键，再切C肽留A/B。M04-I077链序和切除标注错误，仅留勘误引用；主图使用生化B14-I010。",
+      "image_refs": [
+        "M04-I077"
+      ],
+      "replace_criteria": [
+        "去信号肽得到胰岛素原，形成正确二硫键",
+        "去C肽后保A/B链"
+      ],
+      "image_ids": [
+        "B14-I010"
+      ]
+    },
+    {
+      "id": "M04-111",
+      "append_explanation": "典型N连接为Asn酰胺N，常见O连接为Ser/Thr羟基；不能把Asp/Glu当常见连接位点。ER的N糖基化可共翻译发生，Asn-X-Ser/Thr中的X通常不能为Pro。",
+      "image_ids": [
+        "M04-I221"
+      ],
+      "replace_criteria": [
+        "N通常连Asn侧链酰胺N",
+        "常见O连Ser/Thr侧链羟基O"
+      ]
+    },
+    {
+      "id": "M04-112",
+      "append_explanation": "修饰改变活性、结合、定位或稳定性，不要求先改变mRNA量；图示磷酸化/甲基化，乙酰化与泛素化的作用需按题干另判。",
+      "image_ids": [
+        "M04-I072",
+        "M04-I073"
+      ],
+      "image_refs": [
+        "M04-I074",
+        "M04-I075",
+        "M04-I076",
+        "M04-I193",
+        "M04-I194",
+        "M04-I195",
+        "M04-I196"
+      ],
+      "replace_criteria": [
+        "修饰已有蛋白改变电荷/构象/互作/定位/稳定性",
+        "无需先改变mRNA量"
+      ]
+    },
+    {
+      "id": "M04-113",
+      "append_explanation": "以跨膜/定位运输与翻译延伸的时序区分，而不是以是否会切信号肽区分；SRP入ER是典型共翻译，多数线粒体基质前体是翻译后导入。",
+      "image_ids": [
+        "M04-I201"
+      ],
+      "replace_criteria": [
+        "按转运时是否仍在合成判断",
+        "ER典型共翻译，核编码线粒体多数翻译后"
+      ]
+    },
+    {
+      "id": "M04-114",
+      "append_explanation": "分泌蛋白从游离核糖体起始，信号露出后SRP使其对接ER；同类胞质核糖体可在游离和膜结合状态间转换。",
+      "image_ids": [
+        "M04-I149"
+      ],
+      "replace_criteria": [
+        "同类胞质核糖体可游离或结合ER",
+        "信号序列在合成中促对接，不需两种本质不同核糖体"
+      ]
+    },
+    {
+      "id": "M04-115",
+      "append_explanation": "典型ER可切除信号肽有疏水核心及适宜切割区，序列不必完全相同；须与线粒体两亲性前导肽区分。",
+      "image_ids": [
+        "M04-I202"
+      ],
+      "image_refs": [
+        "M04-I219"
+      ],
+      "replace_criteria": [
+        "典型N端信号含疏水核心，前部可正电",
+        "切割附近常较极性且小侧链"
+      ]
+    },
+    {
+      "id": "M04-116",
+      "append_explanation": "SRP是核糖核蛋白颗粒，识别信号并交给ER受体/Sec61通道；通道不是SRP受体临时生成。图的5′帽在右，mRNA按右→左5′→3′阅读；不能把左→右字样误读为GUA起始。",
+      "image_ids": [
+        "M04-I204"
+      ],
+      "image_refs": [
+        "M04-I203",
+        "M04-I220"
+      ],
+      "replace_criteria": [
+        "信号露出、SRP识别",
+        "对接SRP受体与转位通道",
+        "SRP释放后恢复延伸与入ER"
+      ]
+    },
+    {
+      "id": "M04-117",
+      "append_explanation": "对接受阻主要影响ER定位和进入腔内；已正常起始及mRNA量并不能补偿定位步骤失败。",
+      "image_ids": [
+        "M04-I203"
+      ],
+      "replace_criteria": [
+        "SRP对接受阻使新生肽难交付ER转位通道",
+        "直接影响共翻译入ER，不能仅推转录降低"
+      ]
+    },
+    {
+      "id": "M04-118",
+      "append_explanation": "信号肽切除与膜转运是两个可分离步骤；未切除须进一步查膜保护/拓扑，不能仅凭较大分子量判为胞质蛋白。",
+      "image_ids": [
+        "M04-I203"
+      ],
+      "replace_criteria": [
+        "切除与跨膜转运可分离",
+        "需独立定位/蛋白酶保护等证据，未切不等于未入膜"
+      ]
+    },
+    {
+      "id": "M04-119",
+      "append_explanation": "删除用于必要性，融合用于可转移定位能力；同时检测表达、膜完整性及定位，避免把信号删除导致蛋白不稳定误作定位效应。",
+      "image_ids": [
+        "M04-I203"
+      ],
+      "replace_criteria": [
+        "删除检必要性，融合报告蛋白检可转移定位能力",
+        "控制表达量/完整性并限该体系"
+      ]
+    },
+    {
+      "id": "M04-120",
+      "append_explanation": "完整膜的蛋白酶保护支持腔内或被膜屏蔽；去污剂使膜破坏后的降解可排除蛋白自身耐蛋白酶。仍需按检测片段区分全链入腔与跨膜拓扑。",
+      "replace_criteria": [
+        "完整膜保护、破膜后降解支持腔内隔离",
+        "去污剂对照排蛋白固有蛋白酶耐受"
+      ]
+    },
+    {
+      "id": "M04-121",
+      "append_explanation": "共有ER入口之后，Golgi加工、分选信号和受体决定后续路线；已切除的ER信号肽不能单独给出终点。",
+      "image_ids": [
+        "M04-I223"
+      ],
+      "replace_criteria": [
+        "ER信号只提供共同入ER步骤",
+        "终点分选还依其他定位特征/标记"
+      ]
+    },
+    {
+      "id": "M04-122",
+      "append_explanation": "图示M6P形成在N糖链的甘露糖上；Golgi中M6P受体识别并分选是后续步骤。它不是给蛋白氨基酸侧链加磷酸。",
+      "image_ids": [
+        "M04-I224"
+      ],
+      "replace_criteria": [
+        "高尔基体给N糖链M6P标记",
+        "M6P受体识别并送向内体/溶酶体"
+      ]
+    },
+    {
+      "id": "M04-123",
+      "append_explanation": "典型基质前导肽富正电、可成两亲性α螺旋；I240只示一般两亲性螺旋，不能据该图断言所有这种螺旋都是线粒体信号。",
+      "image_ids": [
+        "M04-I205"
+      ],
+      "image_refs": [
+        "M04-I240"
+      ],
+      "replace_criteria": [
+        "线粒体前导肽正电少酸、常两亲α螺旋",
+        "ER信号通常连续疏水核心，识别系统不同"
+      ]
+    },
+    {
+      "id": "M04-124",
+      "append_explanation": "前体通常保持展开/松散，TOM/TIM23过双膜，内膜电位与Hsp70/ATP协助导入，之后可切前导肽。图示基质路线不是所有线粒体蛋白共同路径。",
+      "image_ids": [
+        "M04-I205"
+      ],
+      "image_refs": [
+        "M04-I206"
+      ],
+      "replace_criteria": [
+        "伴侣维持适宜状态，经TOM与TIM协同穿两膜",
+        "内膜电位及Hsp70相关ATP驱动，前导肽常切除"
+      ]
+    },
+    {
+      "id": "M04-125",
+      "append_explanation": "内膜内侧负电势有利于正电前导肽向基质移动；耗散Δψ不等于前体mRNA或胞质翻译首先下降。",
+      "image_ids": [
+        "M04-I205"
+      ],
+      "replace_criteria": [
+        "电位参与正电前导肽跨内膜",
+        "失电位降低导入并可使胞质前体积累"
+      ]
+    },
+    {
+      "id": "M04-126",
+      "append_explanation": "先由叶绿体包膜定位段经TOC/TIC进入基质，再由类囊体信号选择第二段运输。包膜导入多需展开/松散；类囊体Tat可接收已折叠底物，不能统一写成所有通道只运展开链。",
+      "image_ids": [
+        "M04-I207"
+      ],
+      "replace_criteria": [
+        "第一信号进入叶绿体基质",
+        "第二信号再跨类囊体膜，分别指定两阶段"
+      ]
+    },
+    {
+      "id": "M04-127",
+      "append_explanation": "放置可使前体折叠/聚集而丧失转运适态；伴侣延长可转运时间，但不是延长信号序列，也不是证明所有伴侣都越多越促进运输。",
+      "replace_criteria": [
+        "放置后折叠/聚集降低转运能力",
+        "trigger factor维持可转运构象，信号存在并不充分"
+      ]
+    },
+    {
+      "id": "M04-128",
+      "append_explanation": "经典NLS常富Lys/Arg，可在内部且通常保留；核孔可让不少已折叠货物通过。扩散边界不是所有蛋白统一40kDa绝对阈值。",
+      "image_ids": [
+        "M04-I225"
+      ],
+      "replace_criteria": [
+        "NLS可内部且通常保留以再使用",
+        "典型线粒体前导在N端，导入后常切除"
+      ]
+    },
+    {
+      "id": "M04-129",
+      "append_explanation": "核内高Ran-GTP促进口复合物解离；Ran-GAP促水解主要在胞质，核内Ran-GEF再生Ran-GTP。I208把核内水解当释放原因有误；正确图中CAS参与importinα回收，非正文误写的β。",
+      "image_ids": [
+        "M04-I225"
+      ],
+      "image_refs": [
+        "M04-I208"
+      ],
+      "replace_criteria": [
+        "核内Ran-GTP促输入复合物解离",
+        "胞质水解/核内交换维持方向性，不是简单推货物"
+      ]
+    },
+    {
+      "id": "M04-130",
+      "append_explanation": "N端信号先暴露并被SRP截获，ER定位时机早于第150位NLS露出；货物进入ER腔后也不能直接被胞质importin读取。",
+      "image_ids": [
+        "M04-I149"
+      ],
+      "image_refs": [
+        "M04-I225"
+      ],
+      "replace_criteria": [
+        "N端ER信号先露出并共翻译入ER",
+        "晚露出NLS在腔侧不能接触胞质importin"
+      ]
+    },
+    {
+      "id": "M04-131",
+      "append_explanation": "SecB保持转运适态，SecA利用ATP协助，经SecYEG跨膜；“每次固定推动20个残基”是旧模型简化，不作为普适步长。",
+      "image_ids": [
+        "M04-I209"
+      ],
+      "image_refs": [
+        "M04-I228"
+      ],
+      "replace_criteria": [
+        "SecB维持前体并递送",
+        "SecA为ATP动力酶",
+        "SecYEG为膜转位通道"
+      ]
+    },
+    {
+      "id": "M04-132",
+      "append_explanation": "稳态由合成、降解及折叠/运输共同决定；合成加快而降解也加快时，稳态蛋白量未必增加。",
+      "replace_criteria": [
+        "稳态受合成及折叠/定位/修饰/降解共同决定",
+        "合成不变而降解加快也可降低丰度"
+      ]
+    },
+    {
+      "id": "M04-133",
+      "append_explanation": "泛素C端Gly76羧基与底物Lys ε-氨基形成异肽键；活化阶段是E1的Cys接Ub Gly76，泛素本身没有Cys。",
+      "image_ids": [
+        "M04-I232"
+      ],
+      "replace_criteria": [
+        "泛素C端Gly羧基连底物Lys ε氨基",
+        "形成异肽酰胺键"
+      ]
+    },
+    {
+      "id": "M04-134",
+      "append_explanation": "图主要画RING型E3促E2直接向底物转移；HECT/RBR型可先形成E3–Ub硫酯，不能把此图当所有E3唯一中间体。",
+      "image_ids": [
+        "M04-I232"
+      ],
+      "replace_criteria": [
+        "E1耗ATP活化、酶硫酯",
+        "泛素转给E2",
+        "E3底物选择及底物异肽键"
+      ]
+    },
+    {
+      "id": "M04-135",
+      "append_explanation": "E3提供底物选择/组织；E1/E2正常只证明上游活化和携带可行，不能替代特定底物识别。I212仅示另一Cullin E3结构例子，不直接展示本题识别位点突变。",
+      "image_ids": [
+        "M04-I210"
+      ],
+      "image_refs": [
+        "M04-I212"
+      ],
+      "replace_criteria": [
+        "E3识别障碍使该底物降解标记降低",
+        "E1/E2正常不保证目标有效泛素化，降解可下降"
+      ]
+    },
+    {
+      "id": "M04-136",
+      "append_explanation": "看Ub之间是否相连：多泛素链与多个底物Lys各单泛素化结构不同；“多泛素”不能只按底物上Ub总数判。",
+      "image_ids": [
+        "M04-I210"
+      ],
+      "replace_criteria": [
+        "多泛素化是泛素互连成链",
+        "多个位点各单个泛素为多位点单泛素化"
+      ]
+    },
+    {
+      "id": "M04-137",
+      "append_explanation": "链连接方式、位置和细胞环境影响结局；单泛素及若干链型还参与分选/信号。I218的功能归类是示例，尤其K29等不能记成无条件单一去向。",
+      "image_ids": [
+        "M04-I210"
+      ],
+      "image_refs": [
+        "M04-I218"
+      ],
+      "replace_criteria": [
+        "链型/标记形式决定功能",
+        "K48等常导降解，单泛素/其他链可调信号和定位"
+      ]
+    },
+    {
+      "id": "M04-138",
+      "append_explanation": "19S调节颗粒认链、去泛素、展开和送入；20S核心的β亚基催化水解。I213把20S标成RP有误，20S应为CP；核心可带一个或两个19S帽。",
+      "image_ids": [
+        "M04-I233"
+      ],
+      "image_refs": [
+        "M04-I213"
+      ],
+      "replace_criteria": [
+        "19S识别/去泛素/ATP相关展开送入",
+        "20S核心切底物为短肽"
+      ]
+    },
+    {
+      "id": "M04-139",
+      "append_explanation": "ATP用于识别相关构象转换、展开和转位等机械过程；肽键水解本身不需按每键固定消耗2ATP。",
+      "image_ids": [
+        "M04-I233"
+      ],
+      "replace_criteria": [
+        "ATP主要用于展开及转运底物",
+        "肽键水解不逐键固定耗ATP，不套每肽键2ATP"
+      ]
+    },
+    {
+      "id": "M04-140",
+      "append_explanation": "DUB切除/修整泛素连接并回收泛素；“同功肽酶”是错误名称，不能把DUB与20S肽水解核心混淆。",
+      "image_ids": [
+        "M04-I210"
+      ],
+      "replace_criteria": [
+        "DUB拆除/编辑泛素标记",
+        "可回收泛素再利用，底物送核心降解"
+      ]
+    },
+    {
+      "id": "M04-141",
+      "append_explanation": "6h=3个半衰期，剩(1/2)³=1/8；题设已阻断合成，不加入新的稳态合成项。",
+      "replace_criteria": [
+        "6h为3个半衰期",
+        "剩1/8=12.5%，限定恒定一阶过程"
+      ]
+    },
+    {
+      "id": "M04-142",
+      "append_explanation": "教材表值出自特定酵母报告蛋白/条件；N端可及性、加工、定位和识别体系不同，不能给任意Arg蛋白强定2min。",
+      "replace_criteria": [
+        "2min表值限特定酵母报告蛋白",
+        "实际半衰期还依蛋白结构/修饰/受体/物种"
+      ]
+    },
+    {
+      "id": "M04-143",
+      "append_explanation": "选择性降解正常调控蛋白可改变周期/信号状态；“错误蛋白清理”只是泛素体系的一类用途。",
+      "image_ids": [
+        "M04-I210"
+      ],
+      "replace_criteria": [
+        "选择性及时清除仍有功能的调控蛋白",
+        "举周期蛋白降解使过程终止/转换"
+      ]
+    },
+    {
+      "id": "M04-144",
+      "append_explanation": "两者均经历活化、结合酶和连接酶级联并可逆去修饰；SUMO常改变相互作用、定位、活性或稳定性，不能只写成阻止降解。",
+      "image_ids": [
+        "M04-I214"
+      ],
+      "replace_criteria": [
+        "同为活化–结合–连接级联共价加小蛋白并可去修饰",
+        "SUMO常调互作/定位/活性，稳定性效应依情境"
+      ]
+    },
+    {
+      "id": "M04-145",
+      "append_explanation": "I215只表示特定底物上SUMO与Ub竞争的保护情境；其他情境如SUMO靶向泛素连接酶可促进降解，稳定性结果须依底物和环境判断。",
+      "image_refs": [
+        "M04-I215"
+      ],
+      "replace_criteria": [
+        "SUMO可竞争泛素化亦可招SUMO靶向E3",
+        "可促进泛素化降解，依底物/链型/通路"
+      ]
+    },
+    {
+      "id": "M04-146",
+      "append_explanation": "NEDD8通常由81残基前体加工成76残基成熟体；修饰Cullin可提高Cullin-RING泛素连接酶活性，间接促进其底物泛素化。I211原标约50nm应为约50Å（5nm），该模型间距不作固定精确考点。",
+      "image_ids": [
+        "M04-I216",
+        "M04-I217"
+      ],
+      "image_refs": [
+        "M04-I211"
+      ],
+      "replace_criteria": [
+        "NEDD8修饰Cullin提升Cullin–RING E3活性",
+        "间接促底物泛素化，不是通用替代降解标签"
+      ]
+    }
+  ],
+  "new_cards": [
+    {
+      "id": "M04-147",
+      "front": "【读图】图为149个大肠杆菌基因的DNA编码链序列logo。0–2位与上游−12至−8位主要保守什么序列？后者怎样帮助翻译起始？",
+      "core": "0–2位主要为ATG，对应mRNA起始AUG；−12至−8位主要为AGGAG，转录后为SD序列，与16S rRNA3′端互补，以合适间距把起始密码子定位到P位。",
+      "criteria": [
+        "指出0–2位ATG及其RNA对应AUG",
+        "从上游logo读出主要AGGAG共识",
+        "说明SD与16S rRNA3′端配对及起始位定位"
+      ],
+      "image_ids": [
+        "M04-I145"
+      ],
+      "source": "本章Campbell Biology Concept 17.4 Scientific Skills Exercise，149基因sequence logo（图M04-I145，正文行2255附近）。",
+      "extra": "图的0–2编号与Kozak中AUG的A=+1不同。字母高度反映相对频率，整体高度反映信息/保守程度；共识不等于每个基因均完全相同。图是DNA编码链，须把T换为U再讨论RNA配对；不能据logo本身证明所有细菌基因必含SD。",
+      "depth": "L2",
+      "ability": "实验分析",
+      "front_image_ids": [
+        "M04-I145"
+      ],
+      "image_refs": [
+        "M04-I143",
+        "M04-I144"
+      ]
+    },
+    {
+      "id": "M04-148",
+      "front": "【读图】ValRS两图中WT为◆、D279A为●、K270A为▲。在活化和转移能力保留的前提下，哪些突变编辑受损最明显？为何它们Thr-tRNAᵛᵃˡ积累多而ATP消耗少？",
+      "core": "D279A与K270A。WT反复误装Thr后清除错误产物并重新装载，持续耗ATP；突变体编辑减弱，错装Thr-tRNAᵛᵃˡ被保留，无效循环减少，故错误产物增多而ATP消耗更少。",
+      "criteria": [
+        "根据●与▲曲线指出D279A和K270A",
+        "以Thr-tRNAᵛᵃˡ积累说明编辑受损",
+        "解释WT误装—清除—再装载循环消耗ATP",
+        "说明突变少耗ATP不代表更高保真度"
+      ],
+      "image_ids": [
+        "M04-I236",
+        "M04-I237"
+      ],
+      "source": "本章Watson第15章习题14及附录答案（图M04-I236/I237，行3504–3538）；数据来源Fukunaga与Yokoyama，J Biol Chem 2005，280:29937–29945，图5B/C。",
+      "extra": "两图横轴时间范围不同，不把不同端点直接相除当作同一时刻效率。其他突变接近WT不能仅据本图断言所有生化性质完全正常；题设保留活化/转移能力是区分编辑缺失与总酶失活的条件。",
+      "depth": "L2",
+      "ability": "实验分析",
+      "front_image_ids": [
+        "M04-I236",
+        "M04-I237"
+      ],
+      "image_refs": [
+        "M04-I238"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "M04-I001",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "细胞组分比例图为导言背景；数值依细胞类型/状态，不增比例死记卡。"
+    },
+    {
+      "id": "M04-I002",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "遗传密码破译历史人物、时间线和结构背景已逐项看过，不另增日期或人物英文卡。"
+    },
+    {
+      "id": "M04-I003",
+      "disposition": "covered",
+      "cards": [
+        "M04-024"
+      ],
+      "reason": "Crick接合体英中平行图：反密码子读码与3′端携氨基酸分工；选中文I004作主图。"
+    },
+    {
+      "id": "M04-I004",
+      "disposition": "covered",
+      "cards": [
+        "M04-024"
+      ],
+      "reason": "Crick接合体英中平行图：反密码子读码与3′端携氨基酸分工；选中文I004作主图。"
+    },
+    {
+      "id": "M04-I005",
+      "disposition": "covered",
+      "cards": [
+        "M04-007",
+        "M04-009"
+      ],
+      "reason": "单碱基移框、净3碱基恢复下游读框，局部序列/活性仍可改变。"
+    },
+    {
+      "id": "M04-I006",
+      "disposition": "covered",
+      "cards": [
+        "M04-010",
+        "M04-011"
+      ],
+      "reason": "poly(U)体外翻译/Phe掺入及特殊起始条件；只支持UUU含义，不否定正常起始信号。"
+    },
+    {
+      "id": "M04-I007",
+      "disposition": "covered",
+      "cards": [
+        "M04-003"
+      ],
+      "reason": "理论密码子频率与实验残基频率相关散点含Arg偏离；相关本身不足以逐个破译密码子。"
+    },
+    {
+      "id": "M04-I008",
+      "disposition": "covered",
+      "cards": [
+        "M04-018"
+      ],
+      "reason": "反平行密码子—反密码子配对的两种实例；与题给GGC序列不同，须按方向重新计算。"
+    },
+    {
+      "id": "M04-I009",
+      "disposition": "covered",
+      "cards": [
+        "M04-034"
+      ],
+      "reason": "Cys-tRNA化学改为Ala-tRNA而不改反密码子，Ala仍插入原Cys密码子位置。"
+    },
+    {
+      "id": "M04-I010",
+      "disposition": "covered",
+      "cards": [
+        "M04-019",
+        "M04-020",
+        "M04-021"
+      ],
+      "reason": "摆动配对表逐格核对，I-A/C/U、U-A/G、G-C/U位于反密码子5′端—密码子第三位。"
+    },
+    {
+      "id": "M04-I011",
+      "disposition": "covered",
+      "cards": [
+        "M04-025",
+        "M04-026",
+        "M04-027"
+      ],
+      "reason": "tRNA三叶草、L形骨架/空间填充/符号图及CCA与反密码子两端；二级图不是真实平面构象。"
+    },
+    {
+      "id": "M04-I012",
+      "disposition": "covered",
+      "cards": [
+        "M04-012"
+      ],
+      "reason": "多核苷酸磷酸化酶无DNA模板聚合/磷酸解；另图以已知重复DNA及RNA聚合酶获得特定重复RNA，两方法须区分。"
+    },
+    {
+      "id": "M04-I013",
+      "disposition": "covered",
+      "cards": [
+        "M04-012"
+      ],
+      "reason": "多核苷酸磷酸化酶无DNA模板聚合/磷酸解；另图以已知重复DNA及RNA聚合酶获得特定重复RNA，两方法须区分。"
+    },
+    {
+      "id": "M04-I014",
+      "disposition": "covered",
+      "cards": [
+        "M04-007",
+        "M04-008"
+      ],
+      "reason": "一缺失致提前终止，一插入补偿可恢复后段读框但中间序列改变。"
+    },
+    {
+      "id": "M04-I015",
+      "disposition": "covered",
+      "cards": [
+        "M04-007",
+        "M04-008"
+      ],
+      "reason": "一缺失致提前终止，一插入补偿可恢复后段读框但中间序列改变。"
+    },
+    {
+      "id": "M04-I016",
+      "disposition": "covered",
+      "cards": [
+        "M04-041",
+        "M04-042"
+      ],
+      "reason": "Tyr抑制tRNA的3′AUG5′反密码子变3′AUC5′读取mRNA UAG；与释放因子竞争且可通读正常终止。"
+    },
+    {
+      "id": "M04-I017",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "工程插入的非天然氨基酸结构合集已看；本轮不逐个新增名称、用途或工程操作英文卡。"
+    },
+    {
+      "id": "M04-I018",
+      "disposition": "covered",
+      "cards": [
+        "M04-002"
+      ],
+      "reason": "非重叠与重叠三联读取比较，用于说明同一常规读码框读取规则。"
+    },
+    {
+      "id": "M04-I019",
+      "disposition": "covered",
+      "cards": [
+        "M04-009"
+      ],
+      "reason": "英文平行移框图，单插入与净三插入的局部/下游效果分别判断。"
+    },
+    {
+      "id": "M04-I020",
+      "disposition": "covered",
+      "cards": [
+        "M04-014"
+      ],
+      "reason": "图实为(GUAA)n四碱基重复及遇UAA终止，不是(GUA)n，也不是题干(UG)n/(UUC)n；仅比较读框原理。"
+    },
+    {
+      "id": "M04-I021",
+      "disposition": "decorative",
+      "cards": [],
+      "reason": "网页/章末练习/医学与曲线装饰图标，实际逐项辨认后确认无独立教学数据。"
+    },
+    {
+      "id": "M04-I022",
+      "disposition": "decorative",
+      "cards": [],
+      "reason": "网页/章末练习/医学与曲线装饰图标，实际逐项辨认后确认无独立教学数据。"
+    },
+    {
+      "id": "M04-I023",
+      "disposition": "decorative",
+      "cards": [],
+      "reason": "网页/章末练习/医学与曲线装饰图标，实际逐项辨认后确认无独立教学数据。"
+    },
+    {
+      "id": "M04-I024",
+      "disposition": "covered",
+      "cards": [
+        "M04-018"
+      ],
+      "reason": "反平行密码子—反密码子配对的两种实例；与题给GGC序列不同，须按方向重新计算。"
+    },
+    {
+      "id": "M04-I025",
+      "disposition": "covered",
+      "cards": [
+        "M04-016"
+      ],
+      "reason": "分别为锥虫U插入/向导RNA、A→I及ApoB C→U RNA编辑；改RNA序列与改变密码表含义分开。"
+    },
+    {
+      "id": "M04-I026",
+      "disposition": "covered",
+      "cards": [
+        "M04-016"
+      ],
+      "reason": "分别为锥虫U插入/向导RNA、A→I及ApoB C→U RNA编辑；改RNA序列与改变密码表含义分开。"
+    },
+    {
+      "id": "M04-I027",
+      "disposition": "covered",
+      "cards": [
+        "M04-016"
+      ],
+      "reason": "分别为锥虫U插入/向导RNA、A→I及ApoB C→U RNA编辑；改RNA序列与改变密码表含义分开。"
+    },
+    {
+      "id": "M04-I028",
+      "disposition": "decorative",
+      "cards": [],
+      "reason": "网页/章末练习/医学与曲线装饰图标，实际逐项辨认后确认无独立教学数据。"
+    },
+    {
+      "id": "M04-I029",
+      "disposition": "decorative",
+      "cards": [],
+      "reason": "网页/章末练习/医学与曲线装饰图标，实际逐项辨认后确认无独立教学数据。"
+    },
+    {
+      "id": "M04-I030",
+      "disposition": "covered",
+      "cards": [
+        "M04-016"
+      ],
+      "reason": "分别为锥虫U插入/向导RNA、A→I及ApoB C→U RNA编辑；改RNA序列与改变密码表含义分开。"
+    },
+    {
+      "id": "M04-I031",
+      "disposition": "covered",
+      "cards": [
+        "M04-025",
+        "M04-026",
+        "M04-027"
+      ],
+      "reason": "tRNA三叶草、L形骨架/空间填充/符号图及CCA与反密码子两端；二级图不是真实平面构象。"
+    },
+    {
+      "id": "M04-I032",
+      "disposition": "covered",
+      "cards": [
+        "M04-025",
+        "M04-026",
+        "M04-027"
+      ],
+      "reason": "tRNA三叶草、L形骨架/空间填充/符号图及CCA与反密码子两端；二级图不是真实平面构象。"
+    },
+    {
+      "id": "M04-I033",
+      "disposition": "covered",
+      "cards": [
+        "M04-025",
+        "M04-026",
+        "M04-027"
+      ],
+      "reason": "tRNA三叶草、L形骨架/空间填充/符号图及CCA与反密码子两端；二级图不是真实平面构象。"
+    },
+    {
+      "id": "M04-I034",
+      "disposition": "covered",
+      "cards": [
+        "M04-031",
+        "M04-032",
+        "M04-033",
+        "M04-035"
+      ],
+      "reason": "GlnRS/tRNA身份、不同合成酶接触面及Ala-tRNA G3–U70小螺旋装载；身份不只由反密码子决定。"
+    },
+    {
+      "id": "M04-I035",
+      "disposition": "covered",
+      "cards": [
+        "M04-026"
+      ],
+      "reason": "U/Ψ/D核苷化学差异支持tRNA臂命名；不把修饰核苷误记成游离碱基。"
+    },
+    {
+      "id": "M04-I036",
+      "disposition": "covered",
+      "cards": [
+        "M04-025",
+        "M04-026",
+        "M04-027"
+      ],
+      "reason": "tRNA三叶草、L形骨架/空间填充/符号图及CCA与反密码子两端；二级图不是真实平面构象。"
+    },
+    {
+      "id": "M04-I037",
+      "disposition": "covered",
+      "cards": [
+        "M04-025",
+        "M04-026",
+        "M04-027"
+      ],
+      "reason": "tRNA三叶草、L形骨架/空间填充/符号图及CCA与反密码子两端；二级图不是真实平面构象。"
+    },
+    {
+      "id": "M04-I038",
+      "disposition": "covered",
+      "cards": [
+        "M04-029",
+        "M04-030"
+      ],
+      "reason": "ATP→氨基酰-AMP+PPi再转给tRNA；英文合并图含PPi后续水解，不能把2Pi当第一步直接产物。"
+    },
+    {
+      "id": "M04-I039",
+      "disposition": "covered",
+      "cards": [
+        "M04-031",
+        "M04-032",
+        "M04-033",
+        "M04-035"
+      ],
+      "reason": "GlnRS/tRNA身份、不同合成酶接触面及Ala-tRNA G3–U70小螺旋装载；身份不只由反密码子决定。"
+    },
+    {
+      "id": "M04-I040",
+      "disposition": "covered",
+      "cards": [
+        "M04-036"
+      ],
+      "reason": "Tyr/Phe和Ile/Val侧链比较支持识别/编辑必要性；Ile比Val多一个亚甲基。"
+    },
+    {
+      "id": "M04-I041",
+      "disposition": "covered",
+      "cards": [
+        "M04-034"
+      ],
+      "reason": "Cys-tRNA化学改为Ala-tRNA而不改反密码子，Ala仍插入原Cys密码子位置。"
+    },
+    {
+      "id": "M04-I042",
+      "disposition": "covered",
+      "cards": [
+        "M04-043"
+      ],
+      "reason": "Sec/Pyl天然特殊残基结构；特定重编码信号不可推广到所有UGA/UAG，Sec从Ser-tRNA前体转化。"
+    },
+    {
+      "id": "M04-I043",
+      "disposition": "covered",
+      "cards": [
+        "M04-044"
+      ],
+      "reason": "70S/80S及大小亚基多角度结构/英中比较；使用I046中文表，细胞器另判。"
+    },
+    {
+      "id": "M04-I044",
+      "disposition": "covered",
+      "cards": [
+        "M04-044"
+      ],
+      "reason": "70S/80S及大小亚基多角度结构/英中比较；使用I046中文表，细胞器另判。"
+    },
+    {
+      "id": "M04-I045",
+      "disposition": "covered",
+      "cards": [
+        "M04-044"
+      ],
+      "reason": "70S/80S及大小亚基多角度结构/英中比较；使用I046中文表，细胞器另判。"
+    },
+    {
+      "id": "M04-I046",
+      "disposition": "covered",
+      "cards": [
+        "M04-044"
+      ],
+      "reason": "70S/80S及大小亚基多角度结构/英中比较；使用I046中文表，细胞器另判。"
+    },
+    {
+      "id": "M04-I047",
+      "disposition": "covered",
+      "cards": [
+        "M04-048",
+        "M04-071"
+      ],
+      "reason": "A/P/E跨大小亚基的功能位置及反密码子/CCA端；I142是有信息的小核糖体示意而非装饰图。"
+    },
+    {
+      "id": "M04-I048",
+      "disposition": "covered",
+      "cards": [
+        "M04-054"
+      ],
+      "reason": "耦联转录翻译示意、真实电镜与expressome结构；图152链长度推最早位置须假设速率可比较。"
+    },
+    {
+      "id": "M04-I049",
+      "disposition": "covered",
+      "cards": [
+        "M04-045"
+      ],
+      "reason": "差速/区带沉降分离示意；S值受形状等因素影响而不可加和。"
+    },
+    {
+      "id": "M04-I050",
+      "disposition": "covered",
+      "cards": [
+        "M04-046"
+      ],
+      "reason": "正确的细菌/真核胞质rRNA组成中文图，避免抄正文2004nt及20–29S误字。"
+    },
+    {
+      "id": "M04-I051",
+      "disposition": "covered",
+      "cards": [
+        "M04-071"
+      ],
+      "reason": "完整翻译、Campbell/Lehninger分阶段及Tu/Ts—肽转移平行图；肽基P→A后才移位A→P。"
+    },
+    {
+      "id": "M04-I052",
+      "disposition": "covered",
+      "cards": [
+        "M04-052",
+        "M04-069"
+      ],
+      "reason": "多核糖体示意/电镜与闭环蛋白桥接；每核糖体一链，闭环不等于RNA共价环化。"
+    },
+    {
+      "id": "M04-I053",
+      "disposition": "covered",
+      "cards": [
+        "M04-076",
+        "M04-077",
+        "M04-078",
+        "M04-094"
+      ],
+      "reason": "A位氨基攻击P位肽酰-tRNA酯羰基，预存能量驱动并在C端延长；对照非核糖体游离氨基酸缩合图。"
+    },
+    {
+      "id": "M04-I054",
+      "disposition": "covered",
+      "cards": [
+        "M04-044"
+      ],
+      "reason": "70S/80S及大小亚基多角度结构/英中比较；使用I046中文表，细胞器另判。"
+    },
+    {
+      "id": "M04-I055",
+      "disposition": "covered",
+      "cards": [
+        "M04-048",
+        "M04-071"
+      ],
+      "reason": "A/P/E跨大小亚基的功能位置及反密码子/CCA端；I142是有信息的小核糖体示意而非装饰图。"
+    },
+    {
+      "id": "M04-I056",
+      "disposition": "covered",
+      "cards": [
+        "M04-047"
+      ],
+      "reason": "rRNA核心、双tRNA与折弯mRNA的密码子空间分隔，以及大亚基出口隧道；不是“单tRNA结构图”。"
+    },
+    {
+      "id": "M04-I057",
+      "disposition": "covered",
+      "cards": [
+        "M04-047"
+      ],
+      "reason": "rRNA核心、双tRNA与折弯mRNA的密码子空间分隔，以及大亚基出口隧道；不是“单tRNA结构图”。"
+    },
+    {
+      "id": "M04-I058",
+      "disposition": "covered",
+      "cards": [
+        "M04-047"
+      ],
+      "reason": "rRNA核心、双tRNA与折弯mRNA的密码子空间分隔，以及大亚基出口隧道；不是“单tRNA结构图”。"
+    },
+    {
+      "id": "M04-I059",
+      "disposition": "covered",
+      "cards": [
+        "M04-047"
+      ],
+      "reason": "rRNA核心、双tRNA与折弯mRNA的密码子空间分隔，以及大亚基出口隧道；不是“单tRNA结构图”。"
+    },
+    {
+      "id": "M04-I060",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "20种氨基酸化学结构逐项辨认，属已有生化基础，M04不重复大量新增结构记忆卡。"
+    },
+    {
+      "id": "M04-I061",
+      "disposition": "covered",
+      "cards": [
+        "M04-039",
+        "M04-055",
+        "M04-059",
+        "M04-060",
+        "M04-061"
+      ],
+      "reason": "细菌起始IF1/IF2/IF3及起始tRNA P位，装配前后GTP状态；中文I061为主。"
+    },
+    {
+      "id": "M04-I062",
+      "disposition": "covered",
+      "cards": [
+        "M04-056",
+        "M04-057",
+        "M04-062"
+      ],
+      "reason": "SD与16S3′端互补及多个基因起始对齐，包括lacI GUG；定位与起始tRNA身份共同决定含义。"
+    },
+    {
+      "id": "M04-I063",
+      "disposition": "covered",
+      "cards": [
+        "M04-064",
+        "M04-069"
+      ],
+      "reason": "eIF4F/PABP帽尾蛋白桥接与真核起始的英中平行图；无固定18S—帽序列互补步骤。"
+    },
+    {
+      "id": "M04-I064",
+      "disposition": "covered",
+      "cards": [
+        "M04-065",
+        "M04-066"
+      ],
+      "reason": "扫描与Kozak图按A=+1核对−3/+4关键位，纠正文−3/+5；首个弱AUG可漏扫。"
+    },
+    {
+      "id": "M04-I065",
+      "disposition": "covered",
+      "cards": [
+        "M04-077"
+      ],
+      "reason": "游离氨基酸脱水缩合是一般肽键化学背景，不作为核糖体底物/供能机制图。"
+    },
+    {
+      "id": "M04-I066",
+      "disposition": "covered",
+      "cards": [
+        "M04-075"
+      ],
+      "reason": "EF-Ts促GDP脱离、细胞已有GTP换入及Tu构象变化；Ts不是磷酸化GDP或水解GTP的酶。"
+    },
+    {
+      "id": "M04-I067",
+      "disposition": "covered",
+      "cards": [
+        "M04-076"
+      ],
+      "reason": "正确中文肽转移图P→A，与错误正文反向叙述做明确勘误。"
+    },
+    {
+      "id": "M04-I068",
+      "disposition": "covered",
+      "cards": [
+        "M04-080",
+        "M04-081"
+      ],
+      "reason": "EF-G驱动净移位一个密码子并形成下一空A位；不能与肽基转移混成同一步。"
+    },
+    {
+      "id": "M04-I069",
+      "disposition": "covered",
+      "cards": [
+        "M04-052",
+        "M04-069"
+      ],
+      "reason": "多核糖体示意/电镜与闭环蛋白桥接；每核糖体一链，闭环不等于RNA共价环化。"
+    },
+    {
+      "id": "M04-I070",
+      "disposition": "covered",
+      "cards": [
+        "M04-052",
+        "M04-069"
+      ],
+      "reason": "多核糖体示意/电镜与闭环蛋白桥接；每核糖体一链，闭环不等于RNA共价环化。"
+    },
+    {
+      "id": "M04-I071",
+      "disposition": "covered",
+      "cards": [
+        "M04-105"
+      ],
+      "reason": "N端加工和多蛋白切割示意；正确全长翻译后还需按底物判断成熟/功能。"
+    },
+    {
+      "id": "M04-I072",
+      "disposition": "covered",
+      "cards": [
+        "M04-112"
+      ],
+      "reason": "Ser/Thr/Tyr磷酸化、Lys甲基化、Glu甲基化/γ羧化及Cys法尼基化逐项看过；只围绕功能调节，不扩增冷僻修饰名称卡。"
+    },
+    {
+      "id": "M04-I073",
+      "disposition": "covered",
+      "cards": [
+        "M04-112"
+      ],
+      "reason": "Ser/Thr/Tyr磷酸化、Lys甲基化、Glu甲基化/γ羧化及Cys法尼基化逐项看过；只围绕功能调节，不扩增冷僻修饰名称卡。"
+    },
+    {
+      "id": "M04-I074",
+      "disposition": "covered",
+      "cards": [
+        "M04-112"
+      ],
+      "reason": "Ser/Thr/Tyr磷酸化、Lys甲基化、Glu甲基化/γ羧化及Cys法尼基化逐项看过；只围绕功能调节，不扩增冷僻修饰名称卡。"
+    },
+    {
+      "id": "M04-I075",
+      "disposition": "covered",
+      "cards": [
+        "M04-112"
+      ],
+      "reason": "Ser/Thr/Tyr磷酸化、Lys甲基化、Glu甲基化/γ羧化及Cys法尼基化逐项看过；只围绕功能调节，不扩增冷僻修饰名称卡。"
+    },
+    {
+      "id": "M04-I076",
+      "disposition": "covered",
+      "cards": [
+        "M04-112"
+      ],
+      "reason": "Ser/Thr/Tyr磷酸化、Lys甲基化、Glu甲基化/γ羧化及Cys法尼基化逐项看过；只围绕功能调节，不扩增冷僻修饰名称卡。"
+    },
+    {
+      "id": "M04-I077",
+      "disposition": "supplement",
+      "cards": [
+        "M04-110"
+      ],
+      "reason": "图中信号–A–B–C链序和切B标签均错误，仅作为勘误引用；M04-110直接用已核实B14-I010信号–B–C–A正确原图。"
+    },
+    {
+      "id": "M04-I078",
+      "disposition": "covered",
+      "cards": [
+        "M04-106"
+      ],
+      "reason": "GroEL隔离腔示意支持减少聚集、提供折叠环境，而非指定结构模板。"
+    },
+    {
+      "id": "M04-I079",
+      "disposition": "covered",
+      "cards": [
+        "M04-098",
+        "M04-103"
+      ],
+      "reason": "四环素/氯霉素/环己亚胺等化学结构已逐项核对；结构本身不证明靶点，按正确正文/已有核心解释。"
+    },
+    {
+      "id": "M04-I080",
+      "disposition": "covered",
+      "cards": [
+        "M04-097"
+      ],
+      "reason": "嘌呤霉素模拟氨酰-tRNA受体端并形成不能延伸的肽酰产物，CN及完整彩色原图嵌入。"
+    },
+    {
+      "id": "M04-I081",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "20种氨基酸化学结构逐项辨认，属已有生化基础，M04不重复大量新增结构记忆卡。"
+    },
+    {
+      "id": "M04-I082",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "20种氨基酸化学结构逐项辨认，属已有生化基础，M04不重复大量新增结构记忆卡。"
+    },
+    {
+      "id": "M04-I083",
+      "disposition": "covered",
+      "cards": [
+        "M04-077"
+      ],
+      "reason": "游离氨基酸脱水缩合是一般肽键化学背景，不作为核糖体底物/供能机制图。"
+    },
+    {
+      "id": "M04-I084",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "φ/ψ旋转角和Ramachandran允许区是折叠结构基础；残基类型/环境不同，不给所有残基固定同一允许区。"
+    },
+    {
+      "id": "M04-I085",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "φ/ψ旋转角和Ramachandran允许区是折叠结构基础；残基类型/环境不同，不给所有残基固定同一允许区。"
+    },
+    {
+      "id": "M04-I086",
+      "disposition": "covered",
+      "cards": [
+        "M04-109"
+      ],
+      "reason": "Cys氧化成胱氨酸/二硫键，支持无需独立胱氨酸密码子。"
+    },
+    {
+      "id": "M04-I087",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "冰/水氢键网络背景图已读，不另加与本章翻译重点无直接关系的卡。"
+    },
+    {
+      "id": "M04-I088",
+      "disposition": "covered",
+      "cards": [
+        "M04-105"
+      ],
+      "reason": "以血红蛋白展示各级结构/亚基组装，全长一级序列不等于已成功形成全部功能结构。"
+    },
+    {
+      "id": "M04-I089",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "α螺旋i→i+4氢键及平行/反平行β折叠图已核对，保留结构背景而不重复生化基础卡。"
+    },
+    {
+      "id": "M04-I090",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "GCN4 coiled-coil/bZIP结合DNA：亮氨酸拉链主要二聚，碱性区接触DNA；不误称拉链本身识别DNA。"
+    },
+    {
+      "id": "M04-I091",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "CD4 Ig样β夹层、TIM/PK结构域，myoglobin/Ig/Ras折叠类别及IgG两H两L结构逐项看过；作为结构背景，不扩增英文图卡。"
+    },
+    {
+      "id": "M04-I092",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "CD4 Ig样β夹层、TIM/PK结构域，myoglobin/Ig/Ras折叠类别及IgG两H两L结构逐项看过；作为结构背景，不扩增英文图卡。"
+    },
+    {
+      "id": "M04-I093",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "CD4 Ig样β夹层、TIM/PK结构域，myoglobin/Ig/Ras折叠类别及IgG两H两L结构逐项看过；作为结构背景，不扩增英文图卡。"
+    },
+    {
+      "id": "M04-I094",
+      "disposition": "covered",
+      "cards": [
+        "M04-108"
+      ],
+      "reason": "RNase A变性/还原后按正确次序和条件复性；尿素中先氧化可错配，支持条件化的序列—结构关系。"
+    },
+    {
+      "id": "M04-I095",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "己糖激酶结合葡萄糖的诱导契合结构，不能仅以此图笼统判作变构调节或伴侣折叠。"
+    },
+    {
+      "id": "M04-I096",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "λ抑制蛋白HTH、主/次沟化学识别、Cys2His2锌指和Zif268三锌指逐项核对；DNA结合主题不另增M04跨章卡。"
+    },
+    {
+      "id": "M04-I097",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "λ抑制蛋白HTH、主/次沟化学识别、Cys2His2锌指和Zif268三锌指逐项核对；DNA结合主题不另增M04跨章卡。"
+    },
+    {
+      "id": "M04-I098",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "λ抑制蛋白HTH、主/次沟化学识别、Cys2His2锌指和Zif268三锌指逐项核对；DNA结合主题不另增M04跨章卡。"
+    },
+    {
+      "id": "M04-I099",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "λ抑制蛋白HTH、主/次沟化学识别、Cys2His2锌指和Zif268三锌指逐项核对；DNA结合主题不另增M04跨章卡。"
+    },
+    {
+      "id": "M04-I100",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "λ抑制蛋白HTH、主/次沟化学识别、Cys2His2锌指和Zif268三锌指逐项核对；DNA结合主题不另增M04跨章卡。"
+    },
+    {
+      "id": "M04-I101",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "LEF1以次沟接触并弯曲DNA，不是bZIP主沟识别；结构背景已审读。"
+    },
+    {
+      "id": "M04-I102",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "PDZ识别蛋白C端肽段，非TBP/DNA图；保留蛋白识别背景。"
+    },
+    {
+      "id": "M04-I103",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "U1A与U1 snRNA特异识别结构，非核小体；不另增英文RNA结合结构卡。"
+    },
+    {
+      "id": "M04-I104",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "LacI结合DNA、结合诱导物及两态叠合显示变构差异；不是RNA聚合酶，调控内容不重复加M04卡。"
+    },
+    {
+      "id": "M04-I105",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "LacI结合DNA、结合诱导物及两态叠合显示变构差异；不是RNA聚合酶，调控内容不重复加M04卡。"
+    },
+    {
+      "id": "M04-I106",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "LacI结合DNA、结合诱导物及两态叠合显示变构差异；不是RNA聚合酶，调控内容不重复加M04卡。"
+    },
+    {
+      "id": "M04-I107",
+      "disposition": "covered",
+      "cards": [
+        "M04-039",
+        "M04-055",
+        "M04-059",
+        "M04-060",
+        "M04-061"
+      ],
+      "reason": "细菌起始IF1/IF2/IF3及起始tRNA P位，装配前后GTP状态；中文I061为主。"
+    },
+    {
+      "id": "M04-I108",
+      "disposition": "covered",
+      "cards": [
+        "M04-058"
+      ],
+      "reason": "16S末端和RBS/起始间距的空间关系，序列正确仍可因间距变化而失效。"
+    },
+    {
+      "id": "M04-I109",
+      "disposition": "covered",
+      "cards": [
+        "M04-039",
+        "M04-040"
+      ],
+      "reason": "Met与fMet化学结构，甲酰化发生在已装载起始tRNA的Met氨基上。"
+    },
+    {
+      "id": "M04-I110",
+      "disposition": "covered",
+      "cards": [
+        "M04-039",
+        "M04-055",
+        "M04-059",
+        "M04-060",
+        "M04-061"
+      ],
+      "reason": "细菌起始IF1/IF2/IF3及起始tRNA P位，装配前后GTP状态；中文I061为主。"
+    },
+    {
+      "id": "M04-I111",
+      "disposition": "covered",
+      "cards": [
+        "M04-070"
+      ],
+      "reason": "uORF翻译后再起始需要保留小亚基并重获起始tRNA；与IRES区分，图邻文“新rRNA”误字已纠正。"
+    },
+    {
+      "id": "M04-I112",
+      "disposition": "covered",
+      "cards": [
+        "M04-070"
+      ],
+      "reason": "两个IRES类型所需因子不同，不能从CrPV型推广全部IRES均不需因子/起始tRNA。"
+    },
+    {
+      "id": "M04-I113",
+      "disposition": "covered",
+      "cards": [
+        "M04-063",
+        "M04-067",
+        "M04-068"
+      ],
+      "reason": "43S预装配、48S扫描、AUG识别与亚基结合的完整图及Lehninger平行图，eIF2/eIF5B分工核对。"
+    },
+    {
+      "id": "M04-I114",
+      "disposition": "covered",
+      "cards": [
+        "M04-064",
+        "M04-069"
+      ],
+      "reason": "eIF4F/PABP帽尾蛋白桥接与真核起始的英中平行图；无固定18S—帽序列互补步骤。"
+    },
+    {
+      "id": "M04-I115",
+      "disposition": "covered",
+      "cards": [
+        "M04-063",
+        "M04-067",
+        "M04-068"
+      ],
+      "reason": "43S预装配、48S扫描、AUG识别与亚基结合的完整图及Lehninger平行图，eIF2/eIF5B分工核对。"
+    },
+    {
+      "id": "M04-I116",
+      "disposition": "covered",
+      "cards": [
+        "M04-071"
+      ],
+      "reason": "完整翻译、Campbell/Lehninger分阶段及Tu/Ts—肽转移平行图；肽基P→A后才移位A→P。"
+    },
+    {
+      "id": "M04-I117",
+      "disposition": "covered",
+      "cards": [
+        "M04-072",
+        "M04-074"
+      ],
+      "reason": "核糖体因子结合位点及Tu-GTP递送时tRNA未完全容纳；水解后释放/容纳不同于肽键形成。"
+    },
+    {
+      "id": "M04-I118",
+      "disposition": "covered",
+      "cards": [
+        "M04-072",
+        "M04-074"
+      ],
+      "reason": "核糖体因子结合位点及Tu-GTP递送时tRNA未完全容纳；水解后释放/容纳不同于肽键形成。"
+    },
+    {
+      "id": "M04-I119",
+      "disposition": "covered",
+      "cards": [
+        "M04-073",
+        "M04-100"
+      ],
+      "reason": "A1492/A1493几何监视、GTP前选择与GTP后校对三图；链霉素误读影响解码而非RNA编辑。"
+    },
+    {
+      "id": "M04-I120",
+      "disposition": "covered",
+      "cards": [
+        "M04-073",
+        "M04-100"
+      ],
+      "reason": "A1492/A1493几何监视、GTP前选择与GTP后校对三图；链霉素误读影响解码而非RNA编辑。"
+    },
+    {
+      "id": "M04-I121",
+      "disposition": "covered",
+      "cards": [
+        "M04-073",
+        "M04-100"
+      ],
+      "reason": "A1492/A1493几何监视、GTP前选择与GTP后校对三图；链霉素误读影响解码而非RNA编辑。"
+    },
+    {
+      "id": "M04-I122",
+      "disposition": "covered",
+      "cards": [
+        "M04-049",
+        "M04-050"
+      ],
+      "reason": "RNA位于肽基转移核心、蛋白较外围的结构证据；结合功能实验，蛋白缺失效应不直接证明蛋白化学催化。"
+    },
+    {
+      "id": "M04-I123",
+      "disposition": "covered",
+      "cards": [
+        "M04-051"
+      ],
+      "reason": "P位tRNA末端2′OH辅助质子转移的机制模型；与已知RNA核心证据及模型不确定性分开。"
+    },
+    {
+      "id": "M04-I124",
+      "disposition": "covered",
+      "cards": [
+        "M04-079"
+      ],
+      "reason": "小亚基与大亚基位置分离的A/P、P/E杂合态及旋转/移位，非两个完整位点重合。"
+    },
+    {
+      "id": "M04-I125",
+      "disposition": "covered",
+      "cards": [
+        "M04-080"
+      ],
+      "reason": "EF-G与Tu–tRNA的功能/形状模拟结构，解释转位因子作用而非把蛋白称tRNA。"
+    },
+    {
+      "id": "M04-I126",
+      "disposition": "covered",
+      "cards": [
+        "M04-075"
+      ],
+      "reason": "EF-Ts促GDP脱离、细胞已有GTP换入及Tu构象变化；Ts不是磷酸化GDP或水解GTP的酶。"
+    },
+    {
+      "id": "M04-I127",
+      "disposition": "covered",
+      "cards": [
+        "M04-075"
+      ],
+      "reason": "EF-Ts促GDP脱离、细胞已有GTP换入及Tu构象变化；Ts不是磷酸化GDP或水解GTP的酶。"
+    },
+    {
+      "id": "M04-I128",
+      "disposition": "covered",
+      "cards": [
+        "M04-085"
+      ],
+      "reason": "RF1在终止核糖体的结构，Ⅰ类识别因子不是GTP酶。"
+    },
+    {
+      "id": "M04-I129",
+      "disposition": "covered",
+      "cards": [
+        "M04-085",
+        "M04-087"
+      ],
+      "reason": "RF1识别区和GGQ空间分工及tRNA功能模拟；I131为RF1非RRF。"
+    },
+    {
+      "id": "M04-I130",
+      "disposition": "covered",
+      "cards": [
+        "M04-085",
+        "M04-087"
+      ],
+      "reason": "RF1识别区和GGQ空间分工及tRNA功能模拟；I131为RF1非RRF。"
+    },
+    {
+      "id": "M04-I131",
+      "disposition": "covered",
+      "cards": [
+        "M04-085",
+        "M04-087"
+      ],
+      "reason": "RF1识别区和GGQ空间分工及tRNA功能模拟；I131为RF1非RRF。"
+    },
+    {
+      "id": "M04-I132",
+      "disposition": "covered",
+      "cards": [
+        "M04-085",
+        "M04-086"
+      ],
+      "reason": "细菌RF1/RF3示意，Ⅰ/Ⅱ类及细菌RF3与真核eRF3不可简单等同。"
+    },
+    {
+      "id": "M04-I133",
+      "disposition": "covered",
+      "cards": [
+        "M04-088"
+      ],
+      "reason": "RRF、EF-G及IF3回收亚基，与肽链已经释放是两个阶段。"
+    },
+    {
+      "id": "M04-I134",
+      "disposition": "covered",
+      "cards": [
+        "M04-097"
+      ],
+      "reason": "嘌呤霉素模拟氨酰-tRNA受体端并形成不能延伸的肽酰产物，CN及完整彩色原图嵌入。"
+    },
+    {
+      "id": "M04-I135",
+      "disposition": "covered",
+      "cards": [
+        "M04-071"
+      ],
+      "reason": "完整翻译、Campbell/Lehninger分阶段及Tu/Ts—肽转移平行图；肽基P→A后才移位A→P。"
+    },
+    {
+      "id": "M04-I136",
+      "disposition": "covered",
+      "cards": [
+        "M04-025",
+        "M04-026",
+        "M04-027"
+      ],
+      "reason": "tRNA三叶草、L形骨架/空间填充/符号图及CCA与反密码子两端；二级图不是真实平面构象。"
+    },
+    {
+      "id": "M04-I137",
+      "disposition": "covered",
+      "cards": [
+        "M04-025",
+        "M04-026",
+        "M04-027"
+      ],
+      "reason": "tRNA三叶草、L形骨架/空间填充/符号图及CCA与反密码子两端；二级图不是真实平面构象。"
+    },
+    {
+      "id": "M04-I138",
+      "disposition": "covered",
+      "cards": [
+        "M04-029",
+        "M04-030"
+      ],
+      "reason": "ATP→氨基酰-AMP+PPi再转给tRNA；英文合并图含PPi后续水解，不能把2Pi当第一步直接产物。"
+    },
+    {
+      "id": "M04-I139",
+      "disposition": "covered",
+      "cards": [
+        "M04-044"
+      ],
+      "reason": "70S/80S及大小亚基多角度结构/英中比较；使用I046中文表，细胞器另判。"
+    },
+    {
+      "id": "M04-I140",
+      "disposition": "covered",
+      "cards": [
+        "M04-048",
+        "M04-071"
+      ],
+      "reason": "A/P/E跨大小亚基的功能位置及反密码子/CCA端；I142是有信息的小核糖体示意而非装饰图。"
+    },
+    {
+      "id": "M04-I141",
+      "disposition": "covered",
+      "cards": [
+        "M04-048",
+        "M04-071"
+      ],
+      "reason": "A/P/E跨大小亚基的功能位置及反密码子/CCA端；I142是有信息的小核糖体示意而非装饰图。"
+    },
+    {
+      "id": "M04-I142",
+      "disposition": "covered",
+      "cards": [
+        "M04-048",
+        "M04-071"
+      ],
+      "reason": "A/P/E跨大小亚基的功能位置及反密码子/CCA端；I142是有信息的小核糖体示意而非装饰图。"
+    },
+    {
+      "id": "M04-I143",
+      "disposition": "covered",
+      "cards": [
+        "M04-147"
+      ],
+      "reason": "10基因对齐→10基因logo→149基因logo全部原尺寸核对；I145作为中文读图新卡前图，DNA编码链ATG/上游AGGAG及信息量解读。"
+    },
+    {
+      "id": "M04-I144",
+      "disposition": "covered",
+      "cards": [
+        "M04-147"
+      ],
+      "reason": "10基因对齐→10基因logo→149基因logo全部原尺寸核对；I145作为中文读图新卡前图，DNA编码链ATG/上游AGGAG及信息量解读。"
+    },
+    {
+      "id": "M04-I145",
+      "disposition": "covered",
+      "cards": [
+        "M04-147"
+      ],
+      "reason": "10基因对齐→10基因logo→149基因logo全部原尺寸核对；I145作为中文读图新卡前图，DNA编码链ATG/上游AGGAG及信息量解读。"
+    },
+    {
+      "id": "M04-I146",
+      "disposition": "covered",
+      "cards": [
+        "M04-055"
+      ],
+      "reason": "Campbell细菌起始图只标Met是简化；真实典型细菌起始tRNA携fMet，原卡解释已补。"
+    },
+    {
+      "id": "M04-I147",
+      "disposition": "covered",
+      "cards": [
+        "M04-071"
+      ],
+      "reason": "完整翻译、Campbell/Lehninger分阶段及Tu/Ts—肽转移平行图；肽基P→A后才移位A→P。"
+    },
+    {
+      "id": "M04-I148",
+      "disposition": "supplement",
+      "cards": [
+        "M04-083"
+      ],
+      "reason": "Campbell终止图“2GTP”把释放/回收简化合并，不能作为所有生物终止固定耗能；主图改用I189。"
+    },
+    {
+      "id": "M04-I149",
+      "disposition": "covered",
+      "cards": [
+        "M04-114",
+        "M04-130"
+      ],
+      "reason": "SRP共翻译入ER六步原图；游离/结合核糖体为状态差别，ER信号先露出优先定位。"
+    },
+    {
+      "id": "M04-I150",
+      "disposition": "covered",
+      "cards": [
+        "M04-052",
+        "M04-069"
+      ],
+      "reason": "多核糖体示意/电镜与闭环蛋白桥接；每核糖体一链，闭环不等于RNA共价环化。"
+    },
+    {
+      "id": "M04-I151",
+      "disposition": "covered",
+      "cards": [
+        "M04-052",
+        "M04-069"
+      ],
+      "reason": "多核糖体示意/电镜与闭环蛋白桥接；每核糖体一链，闭环不等于RNA共价环化。"
+    },
+    {
+      "id": "M04-I152",
+      "disposition": "covered",
+      "cards": [
+        "M04-054"
+      ],
+      "reason": "耦联转录翻译示意、真实电镜与expressome结构；图152链长度推最早位置须假设速率可比较。"
+    },
+    {
+      "id": "M04-I153",
+      "disposition": "covered",
+      "cards": [
+        "M04-071"
+      ],
+      "reason": "完整翻译、Campbell/Lehninger分阶段及Tu/Ts—肽转移平行图；肽基P→A后才移位A→P。"
+    },
+    {
+      "id": "M04-I154",
+      "disposition": "covered",
+      "cards": [
+        "M04-044"
+      ],
+      "reason": "70S/80S及大小亚基多角度结构/英中比较；使用I046中文表，细胞器另判。"
+    },
+    {
+      "id": "M04-I155",
+      "disposition": "covered",
+      "cards": [
+        "M04-044"
+      ],
+      "reason": "70S/80S及大小亚基多角度结构/英中比较；使用I046中文表，细胞器另判。"
+    },
+    {
+      "id": "M04-I156",
+      "disposition": "covered",
+      "cards": [
+        "M04-046"
+      ],
+      "reason": "三域rRNA、亚基组分和酵母35S前体成熟；I157的23S3200nt是特定旧表，不能替换E.coli2904nt；酵母35S非哺乳45S。"
+    },
+    {
+      "id": "M04-I157",
+      "disposition": "covered",
+      "cards": [
+        "M04-046"
+      ],
+      "reason": "三域rRNA、亚基组分和酵母35S前体成熟；I157的23S3200nt是特定旧表，不能替换E.coli2904nt；酵母35S非哺乳45S。"
+    },
+    {
+      "id": "M04-I158",
+      "disposition": "covered",
+      "cards": [
+        "M04-046"
+      ],
+      "reason": "三域rRNA、亚基组分和酵母35S前体成熟；I157的23S3200nt是特定旧表，不能替换E.coli2904nt；酵母35S非哺乳45S。"
+    },
+    {
+      "id": "M04-I159",
+      "disposition": "covered",
+      "cards": [
+        "M04-025",
+        "M04-026",
+        "M04-027"
+      ],
+      "reason": "tRNA三叶草、L形骨架/空间填充/符号图及CCA与反密码子两端；二级图不是真实平面构象。"
+    },
+    {
+      "id": "M04-I160",
+      "disposition": "covered",
+      "cards": [
+        "M04-025",
+        "M04-026",
+        "M04-027"
+      ],
+      "reason": "tRNA三叶草、L形骨架/空间填充/符号图及CCA与反密码子两端；二级图不是真实平面构象。"
+    },
+    {
+      "id": "M04-I161",
+      "disposition": "decorative",
+      "cards": [],
+      "reason": "网页/章末练习/医学与曲线装饰图标，实际逐项辨认后确认无独立教学数据。"
+    },
+    {
+      "id": "M04-I162",
+      "disposition": "decorative",
+      "cards": [],
+      "reason": "网页/章末练习/医学与曲线装饰图标，实际逐项辨认后确认无独立教学数据。"
+    },
+    {
+      "id": "M04-I163",
+      "disposition": "decorative",
+      "cards": [],
+      "reason": "网页/章末练习/医学与曲线装饰图标，实际逐项辨认后确认无独立教学数据。"
+    },
+    {
+      "id": "M04-I164",
+      "disposition": "covered",
+      "cards": [
+        "M04-028"
+      ],
+      "reason": "Ⅰ/Ⅱ类初次2′OH/3′OH转移的一般规则及3′末端酯键化学；有PheRS等例外，不称磷酸二酯键。"
+    },
+    {
+      "id": "M04-I165",
+      "disposition": "covered",
+      "cards": [
+        "M04-028"
+      ],
+      "reason": "Ⅰ/Ⅱ类初次2′OH/3′OH转移的一般规则及3′末端酯键化学；有PheRS等例外，不称磷酸二酯键。"
+    },
+    {
+      "id": "M04-I166",
+      "disposition": "decorative",
+      "cards": [],
+      "reason": "网页/章末练习/医学与曲线装饰图标，实际逐项辨认后确认无独立教学数据。"
+    },
+    {
+      "id": "M04-I167",
+      "disposition": "covered",
+      "cards": [
+        "M04-031",
+        "M04-032",
+        "M04-033",
+        "M04-035"
+      ],
+      "reason": "GlnRS/tRNA身份、不同合成酶接触面及Ala-tRNA G3–U70小螺旋装载；身份不只由反密码子决定。"
+    },
+    {
+      "id": "M04-I168",
+      "disposition": "covered",
+      "cards": [
+        "M04-031",
+        "M04-032",
+        "M04-033",
+        "M04-035"
+      ],
+      "reason": "GlnRS/tRNA身份、不同合成酶接触面及Ala-tRNA G3–U70小螺旋装载；身份不只由反密码子决定。"
+    },
+    {
+      "id": "M04-I169",
+      "disposition": "covered",
+      "cards": [
+        "M04-031",
+        "M04-032",
+        "M04-033",
+        "M04-035"
+      ],
+      "reason": "GlnRS/tRNA身份、不同合成酶接触面及Ala-tRNA G3–U70小螺旋装载；身份不只由反密码子决定。"
+    },
+    {
+      "id": "M04-I170",
+      "disposition": "decorative",
+      "cards": [],
+      "reason": "网页/章末练习/医学与曲线装饰图标，实际逐项辨认后确认无独立教学数据。"
+    },
+    {
+      "id": "M04-I171",
+      "disposition": "covered",
+      "cards": [
+        "M04-031",
+        "M04-032",
+        "M04-033",
+        "M04-035"
+      ],
+      "reason": "GlnRS/tRNA身份、不同合成酶接触面及Ala-tRNA G3–U70小螺旋装载；身份不只由反密码子决定。"
+    },
+    {
+      "id": "M04-I172",
+      "disposition": "decorative",
+      "cards": [],
+      "reason": "网页/章末练习/医学与曲线装饰图标，实际逐项辨认后确认无独立教学数据。"
+    },
+    {
+      "id": "M04-I173",
+      "disposition": "covered",
+      "cards": [
+        "M04-039",
+        "M04-040"
+      ],
+      "reason": "Met与fMet化学结构，甲酰化发生在已装载起始tRNA的Met氨基上。"
+    },
+    {
+      "id": "M04-I174",
+      "disposition": "covered",
+      "cards": [
+        "M04-043"
+      ],
+      "reason": "Sec/Pyl天然特殊残基结构；特定重编码信号不可推广到所有UGA/UAG，Sec从Ser-tRNA前体转化。"
+    },
+    {
+      "id": "M04-I175",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "正交tRNA/合成酶筛选及非天然残基结构已逐项看过；正文orthologous应为orthogonal，本轮不增英文工程步骤卡。"
+    },
+    {
+      "id": "M04-I176",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "正交tRNA/合成酶筛选及非天然残基结构已逐项看过；正文orthologous应为orthogonal，本轮不增英文工程步骤卡。"
+    },
+    {
+      "id": "M04-I177",
+      "disposition": "covered",
+      "cards": [
+        "M04-039",
+        "M04-055",
+        "M04-059",
+        "M04-060",
+        "M04-061"
+      ],
+      "reason": "细菌起始IF1/IF2/IF3及起始tRNA P位，装配前后GTP状态；中文I061为主。"
+    },
+    {
+      "id": "M04-I178",
+      "disposition": "covered",
+      "cards": [
+        "M04-056",
+        "M04-057",
+        "M04-062"
+      ],
+      "reason": "SD与16S3′端互补及多个基因起始对齐，包括lacI GUG；定位与起始tRNA身份共同决定含义。"
+    },
+    {
+      "id": "M04-I179",
+      "disposition": "covered",
+      "cards": [
+        "M04-063",
+        "M04-067",
+        "M04-068"
+      ],
+      "reason": "43S预装配、48S扫描、AUG识别与亚基结合的完整图及Lehninger平行图，eIF2/eIF5B分工核对。"
+    },
+    {
+      "id": "M04-I180",
+      "disposition": "covered",
+      "cards": [
+        "M04-064",
+        "M04-069"
+      ],
+      "reason": "eIF4F/PABP帽尾蛋白桥接与真核起始的英中平行图；无固定18S—帽序列互补步骤。"
+    },
+    {
+      "id": "M04-I181",
+      "disposition": "covered",
+      "cards": [
+        "M04-071"
+      ],
+      "reason": "完整翻译、Campbell/Lehninger分阶段及Tu/Ts—肽转移平行图；肽基P→A后才移位A→P。"
+    },
+    {
+      "id": "M04-I182",
+      "disposition": "covered",
+      "cards": [
+        "M04-071"
+      ],
+      "reason": "完整翻译、Campbell/Lehninger分阶段及Tu/Ts—肽转移平行图；肽基P→A后才移位A→P。"
+    },
+    {
+      "id": "M04-I183",
+      "disposition": "covered",
+      "cards": [
+        "M04-089"
+      ],
+      "reason": "tmRNA无终止翻译救援及加入Ala/标签短ORF；结合邻文SmpB，标签不是简单由残存mRNA继续读出。"
+    },
+    {
+      "id": "M04-I184",
+      "disposition": "decorative",
+      "cards": [],
+      "reason": "网页/章末练习/医学与曲线装饰图标，实际逐项辨认后确认无独立教学数据。"
+    },
+    {
+      "id": "M04-I185",
+      "disposition": "covered",
+      "cards": [
+        "M04-080"
+      ],
+      "reason": "EF-G与Tu–tRNA的功能/形状模拟结构，解释转位因子作用而非把蛋白称tRNA。"
+    },
+    {
+      "id": "M04-I186",
+      "disposition": "covered",
+      "cards": [
+        "M04-080",
+        "M04-081"
+      ],
+      "reason": "EF-G驱动净移位一个密码子并形成下一空A位；不能与肽基转移混成同一步。"
+    },
+    {
+      "id": "M04-I187",
+      "disposition": "decorative",
+      "cards": [],
+      "reason": "网页/章末练习/医学与曲线装饰图标，实际逐项辨认后确认无独立教学数据。"
+    },
+    {
+      "id": "M04-I188",
+      "disposition": "covered",
+      "cards": [
+        "M04-090"
+      ],
+      "reason": "慢水解GTPγS条件下准确率/速度权衡；完全非水解类似物不能无条件套用。"
+    },
+    {
+      "id": "M04-I189",
+      "disposition": "covered",
+      "cards": [
+        "M04-083",
+        "M04-088"
+      ],
+      "reason": "正确彩色释放与RRF/EF-G/IF3回收图，终止酯键水解和回收分开。"
+    },
+    {
+      "id": "M04-I190",
+      "disposition": "covered",
+      "cards": [
+        "M04-054"
+      ],
+      "reason": "耦联转录翻译示意、真实电镜与expressome结构；图152链长度推最早位置须假设速率可比较。"
+    },
+    {
+      "id": "M04-I191",
+      "disposition": "covered",
+      "cards": [
+        "M04-107"
+      ],
+      "reason": "标准GroEL/GroES ATP驱动环与折叠腔循环主图；底物成功率与循环次数不由单图固定。"
+    },
+    {
+      "id": "M04-I192",
+      "disposition": "supplement",
+      "cards": [
+        "M04-107"
+      ],
+      "reason": "图邻文误称GroEL/GroES，原始EMDB1548/Nature2009实为T4 GroEL–gp31/gp23复合物，仅勘误引用不作通用主图。"
+    },
+    {
+      "id": "M04-I193",
+      "disposition": "covered",
+      "cards": [
+        "M04-112"
+      ],
+      "reason": "Ser/Thr/Tyr磷酸化、Lys甲基化、Glu甲基化/γ羧化及Cys法尼基化逐项看过；只围绕功能调节，不扩增冷僻修饰名称卡。"
+    },
+    {
+      "id": "M04-I194",
+      "disposition": "covered",
+      "cards": [
+        "M04-112"
+      ],
+      "reason": "Ser/Thr/Tyr磷酸化、Lys甲基化、Glu甲基化/γ羧化及Cys法尼基化逐项看过；只围绕功能调节，不扩增冷僻修饰名称卡。"
+    },
+    {
+      "id": "M04-I195",
+      "disposition": "covered",
+      "cards": [
+        "M04-112"
+      ],
+      "reason": "Ser/Thr/Tyr磷酸化、Lys甲基化、Glu甲基化/γ羧化及Cys法尼基化逐项看过；只围绕功能调节，不扩增冷僻修饰名称卡。"
+    },
+    {
+      "id": "M04-I196",
+      "disposition": "covered",
+      "cards": [
+        "M04-112"
+      ],
+      "reason": "Ser/Thr/Tyr磷酸化、Lys甲基化、Glu甲基化/γ羧化及Cys法尼基化逐项看过；只围绕功能调节，不扩增冷僻修饰名称卡。"
+    },
+    {
+      "id": "M04-I197",
+      "disposition": "covered",
+      "cards": [
+        "M04-097"
+      ],
+      "reason": "嘌呤霉素模拟氨酰-tRNA受体端并形成不能延伸的肽酰产物，CN及完整彩色原图嵌入。"
+    },
+    {
+      "id": "M04-I198",
+      "disposition": "covered",
+      "cards": [
+        "M04-098",
+        "M04-103"
+      ],
+      "reason": "四环素/氯霉素/环己亚胺等化学结构已逐项核对；结构本身不证明靶点，按正确正文/已有核心解释。"
+    },
+    {
+      "id": "M04-I199",
+      "disposition": "covered",
+      "cards": [
+        "M04-099"
+      ],
+      "reason": "链霉素化学结构，30S靶点定位依据为题给亚基交换实验而非单看分子结构。"
+    },
+    {
+      "id": "M04-I200",
+      "disposition": "decorative",
+      "cards": [],
+      "reason": "网页/章末练习/医学与曲线装饰图标，实际逐项辨认后确认无独立教学数据。"
+    },
+    {
+      "id": "M04-I201",
+      "disposition": "covered",
+      "cards": [
+        "M04-113"
+      ],
+      "reason": "蛋白胞质/核/线粒体与共同ER入口后分泌路径概览，按翻译与运输时序分类。"
+    },
+    {
+      "id": "M04-I202",
+      "disposition": "covered",
+      "cards": [
+        "M04-115"
+      ],
+      "reason": "中文及英文信号肽序列比较，疏水核心/切割区重于逐字同序列。"
+    },
+    {
+      "id": "M04-I203",
+      "disposition": "covered",
+      "cards": [
+        "M04-116",
+        "M04-117",
+        "M04-118",
+        "M04-119"
+      ],
+      "reason": "SRP识别—对接受体—Sec61—信号切除的完整平行图；I204帽在右，须右→左读5′→3′，不能错判画成GUA。"
+    },
+    {
+      "id": "M04-I204",
+      "disposition": "covered",
+      "cards": [
+        "M04-116",
+        "M04-117",
+        "M04-118",
+        "M04-119"
+      ],
+      "reason": "SRP识别—对接受体—Sec61—信号切除的完整平行图；I204帽在右，须右→左读5′→3′，不能错判画成GUA。"
+    },
+    {
+      "id": "M04-I205",
+      "disposition": "covered",
+      "cards": [
+        "M04-123",
+        "M04-124",
+        "M04-125"
+      ],
+      "reason": "线粒体TOM/TIM23、前导肽跨两膜及ATP/Hsp70和内负Δψ；只代表典型基质路线，不覆盖所有线粒体蛋白路径。"
+    },
+    {
+      "id": "M04-I206",
+      "disposition": "covered",
+      "cards": [
+        "M04-123",
+        "M04-124",
+        "M04-125"
+      ],
+      "reason": "线粒体TOM/TIM23、前导肽跨两膜及ATP/Hsp70和内负Δψ；只代表典型基质路线，不覆盖所有线粒体蛋白路径。"
+    },
+    {
+      "id": "M04-I207",
+      "disposition": "covered",
+      "cards": [
+        "M04-126"
+      ],
+      "reason": "叶绿体包膜定位与类囊体第二信号；TOC/TIC通常接展开/松散前体，类囊体Tat可接已折叠底物。"
+    },
+    {
+      "id": "M04-I208",
+      "disposition": "supplement",
+      "cards": [
+        "M04-129"
+      ],
+      "reason": "错误图把核内Ran-GTP水解当货物释放步骤；改用I225核RanGTP/胞质GAP正确原图。"
+    },
+    {
+      "id": "M04-I209",
+      "disposition": "covered",
+      "cards": [
+        "M04-131"
+      ],
+      "reason": "SecB保持转运适态、SecA ATP驱动、SecYEG通道；20残基/步为旧模型示意非普适精确值。"
+    },
+    {
+      "id": "M04-I210",
+      "disposition": "covered",
+      "cards": [
+        "M04-135",
+        "M04-136",
+        "M04-137",
+        "M04-140",
+        "M04-143"
+      ],
+      "reason": "E1/E2/E3及DUB、多链/多单泛素化、调控用途图；链型和去向需条件，不把所有泛素化等同降解。"
+    },
+    {
+      "id": "M04-I211",
+      "disposition": "supplement",
+      "cards": [
+        "M04-146"
+      ],
+      "reason": "SCFSkp2–E2结构图约50nm单位误，应约50Å（5nm）；学术原文复核，仅引作构象背景和勘误，不死记间距。"
+    },
+    {
+      "id": "M04-I212",
+      "disposition": "covered",
+      "cards": [
+        "M04-135"
+      ],
+      "reason": "DDB1–CUL4A–ROC1–SV5V招募底物结构是另一Cullin E3例子，不直接表示本题特定识别位点突变。"
+    },
+    {
+      "id": "M04-I213",
+      "disposition": "supplement",
+      "cards": [
+        "M04-138"
+      ],
+      "reason": "20S被误标RP，应为CP；帽数不固定两，选择正确I233作为原卡主图。"
+    },
+    {
+      "id": "M04-I214",
+      "disposition": "covered",
+      "cards": [
+        "M04-144"
+      ],
+      "reason": "Ub/SUMO两套可逆级联结构比较；同反应逻辑不等于所有生物效应相同。"
+    },
+    {
+      "id": "M04-I215",
+      "disposition": "supplement",
+      "cards": [
+        "M04-145"
+      ],
+      "reason": "SUMO阻止Ub的保护示意只限具体底物/竞争情境；SUMO靶向Ub连接酶等可反而促降解，不作普适主图。"
+    },
+    {
+      "id": "M04-I216",
+      "disposition": "covered",
+      "cards": [
+        "M04-146"
+      ],
+      "reason": "NEDD8前体加工、E1/E2/E3与Cullin底物途径；81前体→76成熟，不是直接通用蛋白降解标签。"
+    },
+    {
+      "id": "M04-I217",
+      "disposition": "covered",
+      "cards": [
+        "M04-146"
+      ],
+      "reason": "NEDD8前体加工、E1/E2/E3与Cullin底物途径；81前体→76成熟，不是直接通用蛋白降解标签。"
+    },
+    {
+      "id": "M04-I218",
+      "disposition": "covered",
+      "cards": [
+        "M04-137"
+      ],
+      "reason": "Ub不同连接链的历史功能归类是举例，K29等去向依背景，不能做绝对一对一映射。"
+    },
+    {
+      "id": "M04-I219",
+      "disposition": "covered",
+      "cards": [
+        "M04-115"
+      ],
+      "reason": "中文及英文信号肽序列比较，疏水核心/切割区重于逐字同序列。"
+    },
+    {
+      "id": "M04-I220",
+      "disposition": "covered",
+      "cards": [
+        "M04-116",
+        "M04-117",
+        "M04-118",
+        "M04-119"
+      ],
+      "reason": "SRP识别—对接受体—Sec61—信号切除的完整平行图；I204帽在右，须右→左读5′→3′，不能错判画成GUA。"
+    },
+    {
+      "id": "M04-I221",
+      "disposition": "covered",
+      "cards": [
+        "M04-111"
+      ],
+      "reason": "ER多萜醇载体预装Glc3Man9GlcNAc2并转给Asn的N糖基化原图；可共翻译，非Asp/Glu。"
+    },
+    {
+      "id": "M04-I222",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "衣霉素结构属于N糖基化抑制背景，已辨认；无对应重点原题，不增结构/药名卡。"
+    },
+    {
+      "id": "M04-I223",
+      "disposition": "covered",
+      "cards": [
+        "M04-121"
+      ],
+      "reason": "ER→cis Golgi→trans Golgi后分泌/膜/溶酶体分选，需要后续信号而非已切ER信号。"
+    },
+    {
+      "id": "M04-I224",
+      "disposition": "covered",
+      "cards": [
+        "M04-122"
+      ],
+      "reason": "糖链甘露糖生成M6P的化学图；受体分选见正文，不能误写成蛋白残基磷酸化。"
+    },
+    {
+      "id": "M04-I225",
+      "disposition": "covered",
+      "cards": [
+        "M04-128",
+        "M04-129",
+        "M04-130"
+      ],
+      "reason": "正确核输入/输出循环及核孔电镜；核RanGTP解离、胞质GAP水解、核GEF再生，CAS回收importinα。"
+    },
+    {
+      "id": "M04-I226",
+      "disposition": "decorative",
+      "cards": [],
+      "reason": "网页/章末练习/医学与曲线装饰图标，实际逐项辨认后确认无独立教学数据。"
+    },
+    {
+      "id": "M04-I227",
+      "disposition": "decorative",
+      "cards": [],
+      "reason": "网页/章末练习/医学与曲线装饰图标，实际逐项辨认后确认无独立教学数据。"
+    },
+    {
+      "id": "M04-I228",
+      "disposition": "covered",
+      "cards": [
+        "M04-131"
+      ],
+      "reason": "SecB保持转运适态、SecA ATP驱动、SecYEG通道；20残基/步为旧模型示意非普适精确值。"
+    },
+    {
+      "id": "M04-I229",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "内吞路径旧图中的独立caveosome概念已由后续研究修正；保留勘误，无新卡和主图，不能当现代固定细胞器。"
+    },
+    {
+      "id": "M04-I230",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "clathrin三重脚与有被小窝电镜支持被膜内吞背景；示例尺寸非普适固定值，静态EM不能直接证明某货物去向。"
+    },
+    {
+      "id": "M04-I231",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "clathrin三重脚与有被小窝电镜支持被膜内吞背景；示例尺寸非普适固定值，静态EM不能直接证明某货物去向。"
+    },
+    {
+      "id": "M04-I232",
+      "disposition": "covered",
+      "cards": [
+        "M04-133",
+        "M04-134"
+      ],
+      "reason": "Ub Gly76–E1/E2 Cys硫酯及底物Lys异肽键正确原图，RING画法与HECT/RBR中间体分别解释。"
+    },
+    {
+      "id": "M04-I233",
+      "disposition": "covered",
+      "cards": [
+        "M04-138",
+        "M04-139"
+      ],
+      "reason": "正确20S核心CP α7β7β7α7和19S调节帽；ATP展开/转位与肽键水解分工明确。"
+    },
+    {
+      "id": "M04-I234",
+      "disposition": "decorative",
+      "cards": [],
+      "reason": "网页/章末练习/医学与曲线装饰图标，实际逐项辨认后确认无独立教学数据。"
+    },
+    {
+      "id": "M04-I235",
+      "disposition": "decorative",
+      "cards": [],
+      "reason": "网页/章末练习/医学与曲线装饰图标，实际逐项辨认后确认无独立教学数据。"
+    },
+    {
+      "id": "M04-I236",
+      "disposition": "covered",
+      "cards": [
+        "M04-037",
+        "M04-038",
+        "M04-148"
+      ],
+      "reason": "ValRS两图和完整邻文/附录解答核对：WT◆，D279A●及K270A▲编辑差，错误产物多而ATP循环少；前图用于新卡判曲线。"
+    },
+    {
+      "id": "M04-I237",
+      "disposition": "covered",
+      "cards": [
+        "M04-037",
+        "M04-038",
+        "M04-148"
+      ],
+      "reason": "ValRS两图和完整邻文/附录解答核对：WT◆，D279A●及K270A▲编辑差，错误产物多而ATP循环少；前图用于新卡判曲线。"
+    },
+    {
+      "id": "M04-I238",
+      "disposition": "covered",
+      "cards": [
+        "M04-148"
+      ],
+      "reason": "Thr/Val侧链OH与CH3差异支持容易误识别的编辑题背景，不单凭结构推全部动力学。"
+    },
+    {
+      "id": "M04-I239",
+      "disposition": "decorative",
+      "cards": [],
+      "reason": "网页/章末练习/医学与曲线装饰图标，实际逐项辨认后确认无独立教学数据。"
+    },
+    {
+      "id": "M04-I240",
+      "disposition": "covered",
+      "cards": [
+        "M04-123"
+      ],
+      "reason": "一般两亲性α螺旋的亲/疏水两面，不是coiled-coil，也不是所有线粒体信号的专属结构。"
+    },
+    {
+      "id": "M04-I241",
+      "disposition": "supplement",
+      "cards": [],
+      "reason": "水中四螺旋束以疏水面内向/亲水面外向稳定，已结合章末题阅读，保留折叠背景而不增重复卡。"
+    },
+    {
+      "id": "M04-I242",
+      "disposition": "decorative",
+      "cards": [],
+      "reason": "网页/章末练习/医学与曲线装饰图标，实际逐项辨认后确认无独立教学数据。"
+    }
+  ],
+  "uncertain": [],
+  "practice": [
+    {
+      "front": "密码破译综合题：poly(U)、随机共聚RNA、已知重复序列RNA、三核苷酸结合实验分别能支持什么，不能推出什么？",
+      "answer": "poly(U)支持UUU→Phe；随机共聚物结合碱基比例和掺入量给出统计约束，不能独立确定次序；已知重复模板利用可形成的读框识别序列，如(UG)n交替Cys/Val而(UUC)n不同起读给三种均聚肽；三联子使特定氨酰-tRNA在核糖体上被滤膜保留，可直接检验三联子配对。poly(U)等特殊体外条件不能否定生理起始要求，密码子/残基频率相关也不是每个密码子的直接鉴定。",
+      "image_ids": [
+        "M04-I006",
+        "M04-I013"
+      ]
+    },
+    {
+      "front": "综合比较细菌SD起始和真核帽依赖起始：分别怎样定位起始位、募集起始tRNA和形成完整核糖体？哪些“所有”表述应避免？",
+      "answer": "典型细菌由SD–16S3′端互补及间距把起始位定到P位，IF1/IF3帮助选择和装配，IF2-GTP募集fMet-tRNA，50S结合后因子转换进入延伸。常规真核以eIF4F认帽，eIF2-GTP–Met-tRNAᵢ预组43S，募集mRNA形成48S并扫描，合适AUG后eIF2/eIF5B等协调60S结合。不要说所有细菌mRNA均有SD、所有原核均用fMet、所有真核均从第一AUG起读，或所有IRES均无需因子/起始tRNA。",
+      "image_ids": [
+        "M04-I061",
+        "M04-I113",
+        "M04-I115"
+      ]
+    },
+    {
+      "front": "读耦联转录翻译电镜图I152：为什么mRNA链长度和其上的多核糖体支持细菌边转录边翻译？能否直接把最长肽链的核糖体判为最早起始者？",
+      "answer": "不同长度的新生mRNA仍与DNA/聚合酶位置相连，其上已有多个核糖体，支持翻译可在转录完成前起始。若延伸速率相近、无显著停顿/中途脱落，较早起始的核糖体常更靠该mRNA的3′端、所带肽链更长；不能仅凭一个静态电镜快照排除速率差异或停顿，也不能把各RNA的方向混为一条mRNA。",
+      "image_ids": [
+        "M04-I152"
+      ]
+    },
+    {
+      "front": "ER定位实验题：删除信号段后胞质积累；把该段融合到另一蛋白可获得ER定位；完整微粒体中受蛋白酶保护，加去污剂后被降解。三类结果各支持什么，还需注意什么？",
+      "answer": "删除支持信号段在该背景下的必要性，融合支持可转移定位能力；膜完整时保护、破膜后降解支持检测片段被膜屏蔽。需控制表达/降解、膜完整性及检测片段位置，区分全部入腔与跨膜拓扑；信号肽未切除不等于未转运。SRP识别/对接和通道转运与切割、后续Golgi分选是可分开的步骤。",
+      "image_ids": [
+        "M04-I203",
+        "M04-I204"
+      ]
+    },
+    {
+      "front": "泛素调控综合题：检测到Ub、SUMO或NEDD8修饰，为什么都不能直接写成“该蛋白必被26S降解”？怎样按级联、链结构和底物性质解释？",
+      "answer": "Ub可多单泛素化或成不同链，除蛋白酶体外还参与分选/信号，需看链型、位点和细胞背景；SUMO改变结合/定位等，既可保护某些底物，也可经SUMO靶向Ub连接酶促进降解；NEDD8常激活Cullin E3并间接改变其底物泛素化，不是自身的普适直接降解标签。E1/E2可正常而特定E3识别失效，底物仍积累；19S认链/展开与20S肽水解分工，ATP不按每个肽键固定计量。",
+      "image_ids": [
+        "M04-I210",
+        "M04-I214",
+        "M04-I216",
+        "M04-I233"
+      ]
+    }
+  ],
+  "source_errata": [
+    {
+      "line": 37,
+      "source": "中文主干",
+      "correction": "基因产物还包括功能RNA，不能统一定义为蛋白质；300种/90%能量等导言估计也不是各细胞普适值。"
+    },
+    {
+      "line": 116,
+      "source": "中文主干",
+      "correction": "补偿移框恢复下游读码框，不保证两突变之间的氨基酸序列或全部功能恢复。"
+    },
+    {
+      "line": 136,
+      "source": "中文主干",
+      "correction": "(UG)n在连续三联读取时产生Cys/Val交替链，不能写成两种均聚肽；(UUC)n的三读框才可产生不同均聚链。"
+    },
+    {
+      "line": 219,
+      "source": "中文主干",
+      "correction": "线粒体密码重分配须指定物种，不能说所有线粒体UGA均编码Trp；如高等植物线粒体可保留UGA终止。"
+    },
+    {
+      "line": 232,
+      "source": "中文主干",
+      "correction": "摆动例子需按方向写反密码子3′-GCI-5′与5′-CG(A/U/C)-3′密码子；乱码/错误字母不作为序列依据。"
+    },
+    {
+      "line": 758,
+      "source": "中文主干",
+      "correction": "第二遗传密码主要指氨酰-tRNA合成酶对tRNA身份信息的识别，不另给mRNA密码子任意新含义。"
+    },
+    {
+      "line": 764,
+      "source": "中文主干",
+      "correction": "氨基酸羧基与tRNA末端A核糖2′/3′OH形成酯键，而非磷酸二酯键。"
+    },
+    {
+      "line": 781,
+      "source": "中文主干",
+      "correction": "IF2/eIF2、EF-Tu/eEF1A依体系区分；Sec等特殊插入不能直接套所有延伸tRNA递送规则。"
+    },
+    {
+      "line": 785,
+      "source": "中文主干",
+      "correction": "真核胞质起始tRNA携Met；涉及酵母fMet时应指定线粒体，不能泛称酵母胞质fMet。"
+    },
+    {
+      "line": 799,
+      "source": "中文主干",
+      "correction": "反密码子主要决定读取哪些密码子；tRNA装载身份还由受体茎等信息决定，改变受体身份不必改变读码靶点。"
+    },
+    {
+      "line": 813,
+      "source": "中文主干",
+      "correction": "典型细菌起始为fMet，不宜扩大到所有原核；古菌常以未甲酰化Met起始，甲酰化依体系/条件也不能作绝对必需。"
+    },
+    {
+      "line": 817,
+      "source": "中文主干",
+      "correction": "同工tRNA为isoacceptor；反密码子不同不妨碍通过其他身份信息接受同种氨基酸，历史“无法解释”不是现代结论。"
+    },
+    {
+      "line": 825,
+      "source": "中文主干",
+      "correction": "抑制tRNA的通读效率取决于竞争和序列环境，≤50%不作为无条件通用上限。"
+    },
+    {
+      "line": 849,
+      "source": "中文主干",
+      "correction": "鉴别碱基/受体茎改变可使tRNA改受另一合成酶装载；tRNA不会变成合成酶，反密码子不变时读码靶点不随装载残基改变。"
+    },
+    {
+      "line": 853,
+      "source": "中文主干",
+      "correction": "GlnRS识别的是谷氨酰胺tRNA，不能混作谷氨酸/GluRS。"
+    },
+    {
+      "line": 857,
+      "source": "中文主干",
+      "correction": "Ile比Val多一个亚甲基；双筛选结合合成/编辑口袋，转移前及转移后编辑依合成酶而异，错误率不为全部条件固定值。"
+    },
+    {
+      "line": 990,
+      "source": "中文主干",
+      "correction": "Sec生物合成通常先由SerRS把Ser装到tRNAˢᵉᶜ再转化，不是CysRS装载Cys后变Sec；本章Lehninger行2585提供正确平行来源。"
+    },
+    {
+      "line": 1006,
+      "source": "中文主干",
+      "correction": "占细胞总RNA较大比例的是rRNA而非核糖体蛋白；具体比例依生理状态。"
+    },
+    {
+      "line": 1022,
+      "source": "中文主干",
+      "correction": "大肠杆菌23S rRNA约2904nt，2004nt为错误；单链RNA长度用nt，不以bp泛称。"
+    },
+    {
+      "line": 1032,
+      "source": "中文主干",
+      "correction": "核糖体肽基转移核心主要由rRNA执行，不能把活性中心都归到核糖体蛋白。"
+    },
+    {
+      "line": 1036,
+      "source": "中文主干",
+      "correction": "哺乳动物胞质大亚基主要是28S而非20–29S；25S/28S及细胞器亚基需按物种，哺乳线粒体典型55S由28S/39S亚基组成。"
+    },
+    {
+      "line": 1059,
+      "source": "中文主干",
+      "correction": "A/P/E可容纳不同阶段tRNA，“同时两个”只可指某快照而非总容量；mRNA长度应记nt。"
+    },
+    {
+      "line": 1065,
+      "source": "中文主干",
+      "correction": "5S rRNA–TΨC固定直接序列配对是旧解释，不宜作所有tRNA/核糖体的通用身份机制。"
+    },
+    {
+      "line": 1069,
+      "source": "中文主干",
+      "correction": "23S称rRNA而不是“该蛋白质”；28S大亚基rRNA已知参与肽基转移等，不能记作功能仍不清楚。"
+    },
+    {
+      "line": 1083,
+      "source": "中文主干",
+      "correction": "E位释放去氨酰tRNA，肽基转移发生在P/A端相邻的大亚基中心；起始tRNA直接进入P位是常规例外。"
+    },
+    {
+      "line": 1098,
+      "source": "中文主干",
+      "correction": "核糖体异质性与特定mRNA翻译的关联须按研究条件，不能断言只少数蛋白便严格决定唯一转录本。"
+    },
+    {
+      "line": 1225,
+      "source": "中文主干",
+      "correction": "末端连接是酯键，Ⅰ/Ⅱ类初始2′/3′OH规律有例外；合成酶数量/替代装载途径依物种。"
+    },
+    {
+      "line": 1287,
+      "source": "中文主干",
+      "correction": "不是所有细菌mRNA都有SD；存在无SD和无前导序列等起始方式。"
+    },
+    {
+      "line": 1295,
+      "source": "中文主干",
+      "correction": "IF1主要占A位辅助正确装配，IF3抑制过早结合并参与选择，不能把IF1主要功能仅定义为释放IF2。"
+    },
+    {
+      "line": 1304,
+      "source": "中文主干",
+      "correction": "常规真核帽募集依eIF4F及蛋白桥接，不要求帽区与18S rRNA固定序列互补。"
+    },
+    {
+      "line": 1310,
+      "source": "中文主干",
+      "correction": "AUG的A=+1时常用Kozak关键位为−3/+4，不是−3/+5；弱AUG可漏扫，不能说必从第一个AUG起始。"
+    },
+    {
+      "line": 1331,
+      "source": "中文主干",
+      "correction": "EF-Ts促GDP释放后换入已有GTP，不把GDP重新磷酸化“再生GTP”。"
+    },
+    {
+      "line": 1342,
+      "source": "中文主干",
+      "correction": "肽基从P位转给A位α-氨基，产物先位于A位；之后移位才到P，原文反向叙述错误。"
+    },
+    {
+      "line": 1357,
+      "source": "中文主干",
+      "correction": "EF-Ts是交换因子，非GTP酶；EF-Tu与EF-G则是GTP酶。"
+    },
+    {
+      "line": 1361,
+      "source": "中文主干",
+      "correction": "释放水解P位肽基-tRNA酯键；Ⅰ类RF1/RF2/eRF1不是GTP酶，Ⅱ类RF3/eRF3才是，RF3不能独自替代核糖体回收。"
+    },
+    {
+      "line": 1378,
+      "source": "中文主干",
+      "correction": "细菌RNA也可加工；转录翻译能耦联不等于任何条件下细菌翻译都比真核更高效。"
+    },
+    {
+      "line": 1382,
+      "source": "中文主干",
+      "correction": "新生链可共翻译折叠，部分无序蛋白以动态状态发挥功能；不能说所有初级链必然完全无结构且无活性。"
+    },
+    {
+      "line": 1400,
+      "source": "中文主干",
+      "correction": "典型N连接糖基化连Asn，常见O连接连Ser/Thr，不是Asp/Glu；催化加糖为糖基转移酶，不是糖基化酶/糖基化水解酶。"
+    },
+    {
+      "line": 1422,
+      "source": "中文主干",
+      "correction": "并非所有分泌/膜蛋白都必须糖基化；N糖链可共翻译添加，常见糖基化位点不能照Asp/Glu误字记忆。"
+    },
+    {
+      "line": 1424,
+      "source": "中文主干",
+      "correction": "常见蛋白甲基化还包括Lys/Arg，不能因原文列举不全而排除Lys。"
+    },
+    {
+      "line": 1432,
+      "source": "中文主干",
+      "correction": "成熟胰岛素切除C肽而保留A/B链，原文“切B肽”错误。"
+    },
+    {
+      "line": 1434,
+      "source": "中文主干",
+      "correction": "图M04-I077前原链的N→C顺序和切除标签错误；正确为信号–B–C–A，主图改用B14-I010。"
+    },
+    {
+      "line": 1449,
+      "source": "中文主干",
+      "correction": "伴侣主要避免聚集、改善折叠条件；“绝不加快折叠”等绝对句不适用于全部底物与条件。"
+    },
+    {
+      "line": 1461,
+      "source": "中文主干",
+      "correction": "氯霉素主要作用50S肽基转移中心，不是主要阻止mRNA与核糖体结合。"
+    },
+    {
+      "line": 1469,
+      "source": "中文主干",
+      "correction": "青霉素作用细胞壁PBP/肽聚糖而非核糖体；抗生素也可能影响细胞器，不能把选择性写成任何真核组分绝不受影响。"
+    },
+    {
+      "line": 1488,
+      "source": "中文主干",
+      "correction": "环己亚胺主要结合真核60S E位附近并阻碍延伸/移位，旧PTC归类过简；蓖麻毒素损伤真核28S rRNA，不照混杂亚基表格推广。"
+    },
+    {
+      "line": 1667,
+      "source": "补充结构/折叠材料",
+      "correction": "N连接受体为Asn非Asp；Asn-X-Ser/Thr的X通常不能为Pro。"
+    },
+    {
+      "line": 1681,
+      "source": "补充结构/折叠材料",
+      "correction": "RNase A复性要区分尿素中先氧化的错配和合适条件下恢复天然二硫键，不能说凡同时去变性/还原条件都只恢复<1%。"
+    },
+    {
+      "line": 1903,
+      "source": "Watson15",
+      "correction": "uORF后再起始的小亚基重新获得的是起始tRNA，而非“新rRNA”。"
+    },
+    {
+      "line": 1908,
+      "source": "Watson15",
+      "correction": "IRES对因子和起始tRNA需求依类型，CrPV型的强例外不可推广到脊髓灰质炎等所有IRES。"
+    },
+    {
+      "line": 2306,
+      "source": "Campbell17",
+      "correction": "I148终止图的2GTP为简化合并画法，不作所有终止/回收系统统一固定计量。"
+    },
+    {
+      "line": 2440,
+      "source": "Lehninger27",
+      "correction": "沉降系数不定义为质量的2/3次方；图I157旧亚基组成值不作普适值，图I158为酵母35S前体非哺乳45S。"
+    },
+    {
+      "line": 2504,
+      "source": "Lehninger27",
+      "correction": "Ⅰ/Ⅱ类合成酶初次2′/3′OH选择为一般规律，PheRS等例外；不能写所有Ⅱ类无例外只选3′OH。"
+    },
+    {
+      "line": 2546,
+      "source": "Lehninger27",
+      "correction": "MetRS可装载起始与延伸Met-tRNA，两种tRNA类型不能都写成同一个fMet型。"
+    },
+    {
+      "line": 2585,
+      "source": "Lehninger27",
+      "correction": "Sec特定重编码可依SECIS等信号；“决定UGA何时读Sec仍未识别”是历史表述，不作为现代结论。"
+    },
+    {
+      "line": 2601,
+      "source": "Lehninger27",
+      "correction": "用于避免与宿主交叉识别的工程pair应称orthogonal（正交）而非orthologous（直系同源）。"
+    },
+    {
+      "line": 2716,
+      "source": "Lehninger27",
+      "correction": "一轮常规后续残基添加的最低量为1ATP→AMP及2GTP→GDP，3个NTP分子、4个高能磷酸键当量；不是4个NTP均变NDP。"
+    },
+    {
+      "line": 2744,
+      "source": "Lehninger27",
+      "correction": "图I192的T4 gp23折叠腔为GroEL–gp31，不是通用GroEL–GroES；已对Nature2009图注/摘要核实。"
+    },
+    {
+      "line": 2783,
+      "source": "Lehninger27",
+      "correction": "旧环己亚胺PTC描述过简，结合真核60S E位附近并阻碍延伸/移位更准确。"
+    },
+    {
+      "line": 2838,
+      "source": "中文主干",
+      "correction": "分泌蛋白也由游离核糖体起始，后被SRP引到ER；不能说从一开始由本质不同的专用膜核糖体合成。"
+    },
+    {
+      "line": 2859,
+      "source": "中文主干",
+      "correction": "SRP为核糖核蛋白颗粒而非单一信号识别蛋白，典型哺乳动物完整颗粒约11S并含7SL RNA；受体对接既有Sec61转位通道，不是临时造出后消失的孔。"
+    },
+    {
+      "line": 2891,
+      "source": "中文主干",
+      "correction": "叶绿体包膜导入通常需展开/松散前体，不能统一说以已折叠天然三级结构进入；类囊体Tat途径可运折叠底物是另一阶段。"
+    },
+    {
+      "line": 2908,
+      "source": "中文主干",
+      "correction": "核孔被动扩散随大小/形状等渐变，40kDa不是所有蛋白绝对不可跨越的硬阈值；经典NLS富碱性不等于全部NLS只有一种规则。"
+    },
+    {
+      "line": 2916,
+      "source": "中文主干",
+      "correction": "Ran-GTP在核内结合进口受体促货物释放，Ran-GAP水解主要在胞质；I208把核内水解作释放原因错误，改用I225。"
+    },
+    {
+      "line": 2926,
+      "source": "中文主干",
+      "correction": "SecA每ATP固定推20个残基为旧模型简化，不作普适步长。"
+    },
+    {
+      "line": 2930,
+      "source": "中文主干",
+      "correction": "Lon/蛋白酶体ATP用于展开/转运，不能按每水解一肽键固定2ATP计；红细胞寿命例也非所有蛋白统一半衰期。"
+    },
+    {
+      "line": 2938,
+      "source": "中文主干",
+      "correction": "Ub链型的非降解/溶酶体/蛋白酶体去向依底物和环境，K29等不能从互相矛盾的旧表做绝对归类。"
+    },
+    {
+      "line": 2940,
+      "source": "中文主干",
+      "correction": "活化为E1 Cys与Ub C端Gly76硫酯，泛素本身无Cys；组织底物/E2的clamp指E3复合体，不是E2自身。"
+    },
+    {
+      "line": 2942,
+      "source": "中文主干",
+      "correction": "20S是核心CP，19S是调节RP；I213标记错误，改用I233。可有一个或两个调节帽，不是每个复合体都必须两帽。"
+    },
+    {
+      "line": 2945,
+      "source": "中文主干",
+      "correction": "I211的SCFSkp2/E2模型间距原标约50nm有单位错误，应约50Å=5nm，已对学术原文复核。"
+    },
+    {
+      "line": 2950,
+      "source": "中文主干",
+      "correction": "泛素回收相关酶为去泛素化酶DUB，不是“同功肽酶”；底物肽键水解与去Ub分工不同。"
+    },
+    {
+      "line": 2962,
+      "source": "中文主干",
+      "correction": "至少4Ub可作经典特定实验结果，不是全部底物/链型进入蛋白酶体的绝对普适阈值。"
+    },
+    {
+      "line": 2967,
+      "source": "中文主干",
+      "correction": "SUMO长度依同工型和加工状态，98残基不能作所有SUMO通值；SUMO化并不总提高底物稳定性。"
+    },
+    {
+      "line": 2973,
+      "source": "中文主干",
+      "correction": "I215的SUMO保护只限特定竞争情境；SUMO靶向Ub连接酶等机制也可促进降解，不能推广为普遍保护。"
+    },
+    {
+      "line": 2979,
+      "source": "中文主干",
+      "correction": "NEDD8常见81残基前体经加工为76残基成熟体；激活Cullin E3可间接影响泛素降解，不宜称NEDD8永不影响降解或本身通用直接降解标签。"
+    },
+    {
+      "line": 2994,
+      "source": "中文主干",
+      "correction": "NEDD8末端Gly76连底物Lys，不能把底物接受位点误写为NEDD8自身关键Lys；旧底物清单不作为现代唯一全集。"
+    },
+    {
+      "line": 2998,
+      "source": "中文主干",
+      "correction": "N端规则的2min等数值来自特定酵母报告蛋白和实验条件，不可直接推广任意细胞/任意Arg N端蛋白。"
+    },
+    {
+      "line": 3066,
+      "source": "Lehninger27",
+      "correction": "核输出受体CAS参与importinα回收，文字写importinβ为误；I225图示正确。"
+    },
+    {
+      "line": 3098,
+      "source": "Lehninger27",
+      "correction": "I229所用独立caveosome细胞器模型已被后续研究修正，相关积累可为受过表达影响的晚期内体；不制成现代绝对事实卡。"
+    },
+    {
+      "line": 3512,
+      "source": "Watson15习题14",
+      "correction": "“相较于K270A的野生型”等混杂说法应按WT与K270A分别比较；图例WT◆、D279A●、K270A▲及附录答案共同核对。"
+    }
+  ],
+  "external_checks": [
+    {
+      "topic": "SRP的核糖核蛋白性质与11S身份",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6413076/",
+      "evidence": "Walter与Blobel，Cell 1983，Disassembly and reconstitution of signal recognition particle；已核实索引摘要，六种多肽与7SL RNA重构完全活性的11S SRP。1981研究PMID7309795亦记11S。",
+      "decision": "明确SRP为RNP，不把它写成单一蛋白或28S；无新增S值记忆卡。"
+    },
+    {
+      "topic": "M04-I192折叠腔原始图身份",
+      "url": "https://www.nature.com/articles/nature07479",
+      "evidence": "Clare等，Nature 2009，457:107–110；已读摘要/图注，GroEL–gp31包封T4 gp23，与EMDB1548登记身份一致。",
+      "decision": "通用GroEL/GroES主图采用I191；I192只保留校正图身份的勘误引用。"
+    },
+    {
+      "topic": "M04-I211 SCFSkp2–E2间距单位",
+      "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000527",
+      "evidence": "Liu与Nussinov，PLoS Comput Biol 2009；引言明确回引Zheng模型，E2活性Cys至Skp2端约50Å。",
+      "decision": "约50nm纠正为约50Å=5nm，仅作结构/勘误参考，不新增距离记忆卡。"
+    },
+    {
+      "topic": "M04-I229 caveosome旧模型",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21041450/",
+      "evidence": "Hayer等，J Cell Biol 2010；已核实索引摘要，旧caveosome可为CAV1积累修改的晚期内体，不能当独立固定细胞器。",
+      "decision": "仅审计背景图并记录历史限制，不做新卡或主图。"
+    }
+  ]
+}
