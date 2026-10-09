@@ -1,0 +1,68 @@
+name: Publish reviewed politics books
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+      REVIEW_OUTPUT: /tmp/politics-reviewed-release
+      REVIEW_TAG: kaoyan-politics-books-2026-10-09
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            scripts
+            校对记录
+            中国近现代史纲要（2023年版）
+            习近平新时代中国特色社会主义思想概论
+            思想道德与法治（2023）优化版
+            毛泽东思想和中国特色社会主义理论体系概论
+            马克思主义基本原理（2023年版，数字版）
+      - name: Verify and package the reviewed book snapshot
+        run: python3 scripts/publish_reviewed_politics.py --repository "$GITHUB_WORKSPACE" --output "$REVIEW_OUTPUT"
+      - name: Upload derived assets and verify remote fingerprints
+        run: |
+          gh api "repos/$GITHUB_REPOSITORY/releases/tags/$REVIEW_TAG" > /tmp/original-release.json
+          gh release upload "$REVIEW_TAG" --repo "$GITHUB_REPOSITORY" --clobber "$REVIEW_OUTPUT/"*
+          gh api "repos/$GITHUB_REPOSITORY/releases/tags/$REVIEW_TAG" > /tmp/published-release.json
+          python3 - <<'PY'
+          import json, pathlib
+          before=json.loads(pathlib.Path('/tmp/original-release.json').read_text())
+          after=json.loads(pathlib.Path('/tmp/published-release.json').read_text())
+          expected=json.loads(pathlib.Path('/tmp/publication-results.json').read_text())
+          assets={a['name']:a for a in after['assets']}
+          for item in expected['assets']:
+              actual=assets[item['name']]
+              assert actual['size']==item['size'],item['name']
+              assert actual['digest']=='sha256:'+item['sha256'],item['name']
+          plan=json.loads(pathlib.Path('校对记录/考研政治/politics_books_plan.json').read_text())
+          original={a['name']:a for a in before['assets']}
+          for book in plan['books']:
+              a=assets[book['asset_name']];b=original[book['asset_name']]
+              assert a['id']==b['id'] and a['size']==b['size']==book['size']
+              assert a['digest']==b['digest']=='sha256:'+book['sha256']
+          print('All 27 derived assets verified; five original PDF assets unchanged')
+          PY
+          gh release edit "$REVIEW_TAG" --repo "$GITHUB_REPOSITORY" --notes-file '校对记录/考研政治/release-notes.md'
+      - name: Store the published ZIP fingerprints
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add --sparse -- '校对记录/考研政治/book-packages.json' '校对记录/考研政治/evidence-package.json'
+          if ! git diff --cached --quiet; then
+            git commit -q -m 'Record verified reviewed-book release fingerprints [skip actions]'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: politics-reviewed-publication-results
+          path: /tmp/publication-results.json
+          retention-days: 7

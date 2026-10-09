@@ -25,3 +25,5 @@
 `ocr-corrections.json` 保存全部307项确认修订，`visual-review-decisions.json` 保存局部查阅范围和未裁定说明。比对数据保留修订前快照；最新文字和待复核状态以各书 `ocr_review/page_audit.json` 为准。
 
 工具：[逐页独立OCR](../../scripts/audit_politics_ocr.py) · [应用修订及打包](../../scripts/review_politics_ocr.py)。应用修订脚本只接受对应的原始解析快照，并对每个修改区块核验SHA-256；已修订的目录不可直接重复应用。原页截图和比较脚本使用工作目录 `/workspace/politics-books`，运行时需保留原PDF、解析基线及独立OCR输入。
+
+[从已修订仓库快照打包上传Release](../../.github/workflows/publish-reviewed-politics.yml)：只打包当前内容并核验校验值，不重新运行OCR。
