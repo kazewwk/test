@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parent
 NAME='SHU_Cell_Biology_Optimized_20261009.txt'
 def esc(s):return html.escape(s,quote=True).replace('\n','<br>')
 def images(ms):
- return ''.join('<div style="margin:12px 0"><img src="'+m['filename']+'" alt="教材原图 '+m['id']+'" style="max-width:100%;height:auto"><br><small>教材原图 · '+m['id']+'</small></div>' for m in ms)
+ return ''.join('<div style="margin:12px 0">'+('<b>读图提示</b><br>'+esc(m['annotation'])+'<br>' if m.get('annotation') else '')+'<img src="'+m['filename']+'" alt="教材原图 '+m['id']+'" style="max-width:100%;height:auto"><br><small>教材原图 · '+m['id']+'</small></div>' for m in ms)
 def render(c):
  front=(c['front'] if c['origin']=='original' else esc(c['front']))+images([m for m in c['images'] if m['side']=='front'])
  back='<b>核心答案</b><br>'+esc(c['answer'])

@@ -1,33 +1,35 @@
-# 细胞生物学 Anki 优化版（2026-10-09）
+# 细胞生物学 Anki 含图版（2026-10-10）
 
-2637 张 Basic 问答卡，223 幅教材原图；52 张综合卡附评分要点（36 张原卡完善、16 张新增），另有 6 张免疫选修卡。完整 ZIP 包含离线图片；单独 TXT 不包含图片字节。
+[安卓完整包：下载后用 AnkiDroid 打开](https://github.com/kazewwk/test/releases/download/shu-cell-anki-20261010/SHU_Cell_Biology_Android_All_Images_20261010.apkg)
 
-[下载完整导入包（TXT + 图片）](SHU_Cell_Biology_Optimized_20261009_with_media.zip)
+2637 张 Basic 问答学习卡，596 个教材原图文件已嵌在对应卡片中；另有默认暂停的491页教材图册，收录仓库全部3115个原图文件。52张综合卡附参考评分要点，免疫补充专题6张标为选修。
 
-## 桌面 Anki 导入
+## 手机导入
 
-1. 解压完整 ZIP。把 `collection.media` 内的 **223 个 JPG 文件**复制到当前 Anki 用户资料的 `collection.media` 中。复制图片文件，避免再嵌套一层文件夹。
-2. 导入 `SHU_Cell_Biology_Optimized_20261009.txt`：UTF-8、Tab 分隔、允许 HTML、Basic（基础）笔记类型；第 1 列 Front，第 2 列 Back，第 3 列 Tags。
-3. 已导入原 2440 张时，选择**原来同一个笔记类型**，重复处理选“更新”，匹配范围选“笔记类型”。原卡正面保持一致。已自行改写正面或更换笔记类型的笔记，不能仅凭本 TXT 自动匹配。
-4. 导入后运行 Anki 的“工具 → 检查媒体”，再同步到手机。浏览器打开 `preview.html` 可离线检查示例卡和图片。
+下载上面的 `.apkg`（约224MB），在手机“下载”里点开，选择 AnkiDroid 并确认导入。无需解压或寻找媒体目录。也可在 AnkiDroid 牌组列表的菜单中选择“导入”，打开该文件。
 
-首次导入应得到 2637 条笔记、2637 张卡；从原版更新应保留 2440 条并新增 197 条。请使用单向 Basic，反向类型会生成更多卡。
+学习牌组叫“SHU 细胞生物学（含图）”；图册叫“教材图册（查阅，已暂停）”。图册不进入日常复习，可在“浏览卡片”中搜索 `教材图册` 阅读。3115是原文件数，包含大图裁片、表格及前言图片，不等于3115道独立试题。
 
-媒体目录常见位置：Windows 为 `%APPDATA%\Anki2\你的资料名\collection.media`；macOS 为 `~/Library/Application Support/Anki2/你的资料名/collection.media`；Linux 为 `~/.local/share/Anki2/你的资料名/collection.media`。
+[较小的学习包（约29MB）](SHU_Cell_Biology_Android_20261010.apkg)含同一套2637张学习卡和596个学习配图。完整包已包含其全部内容。详细步骤见 [ANDROID_IMPORT.md](ANDROID_IMPORT.md)。桌面 Anki 也可直接导入这两个 APKG。
 
-实际使用 Anki 26.9.3 后端测试通过：原 2440 条笔记 ID、GUID、复习状态均保留；重复导入未产生重复卡；223 幅图片没有缺失或闲置引用。测试在临时资料中完成，未访问用户的 Anki 数据。
+## 更新和验证
 
-## 内容与索引
+原生 Anki 26.9.3 后端已测试：首次导入、重复导入无重复、上一版APKG更新保留2637张卡片身份和已有复习状态；完整包491页图册导入后保持暂停。学习图片596/596、完整原图3115/3115与教材仓库字节哈希一致，缺失引用为0。测试没有访问用户资料，没有在实体安卓设备运行。
 
-- `review_report.md`：逐章数量、21 项事实/条件修订、6 项解释补充、36 项评分补充及实际审阅范围。
-- `english_coverage.tsv`：153 个英文主题组与卡片的对应关系。
-- `figure_audit.tsv`：3115 幅图片的原路径、哈希、复核层级、采用情况与来源。
-- `card_changes.tsv`：逐卡变更；`source_inventory.tsv`：3361 个来源文件的清单与校验。
-- `cards.json`：明文制卡记录；运行 `python regenerate_txt.py` 可重新导出。
-- `CHECK_REPORT.json`、`anki_import_test.json`：格式/图片检查与真实 Anki 后端导入测试。
+中文正文447个原图文件已逐组对照卡片核验；596个学习配图均经过主题和图题对应复核。其他英文图片目前属于初筛及图册查阅，尚未逐标签深度核验。英文153个主题组均有卡片来源入口，来源偏移哈希已检查；主题覆盖不等同英文全文逐句审校。
 
-全部图片来自教材原文件，没有重绘或使用图像生成模型。全量缩略图初筛与入卡图放大复核采用不同审阅层级；主题覆盖不代表全书 OCR 已逐字校勘。
+发现的原教材错误或旧模型（如减数分裂混用倍性和DNA量、固定30nm纤维层级、p16靶标、旧核孔中央栓模型）在图前附读图提示。全部使用教材原图，没有生成插图。
 
-原卡 `CELL03-105`、`CELL06-039` 的旧题干含不准确预设，背面已明确纠正，标签为 `题干::先辨析预设`。保留第一字段是为了支持原卡更新；应记忆背面的正确结论。
+## 内容记录
 
-免疫选修卡可搜索 `范围::选修` 后暂停；综合练习可搜索 `深度::L4`。习题经过改编，评分要点为复习参考，不是上海大学官方真题或官方评分。
+- [review_report.md](review_report.md)：逐章数量、事实修订和实际审阅范围。
+- `additional_image_bindings.tsv`：中文447个正文原图文件的逐项配题或图册处置；`additional_image_bindings.py`：手动判定及读图提示。
+- `figure_audit.tsv`：3115个原图文件的出处、哈希、审阅层级和学习卡引用。
+- `gallery_manifest.json`：491页图册及所有原图的对应关系；`english_coverage.tsv`：153个英文主题组与卡片来源对应。
+- `card_changes.tsv`、`source_inventory.tsv`：逐卡变更和3361个来源文件校验。
+- `cards.json`、`new_card_specs.py`：明文制卡记录；`regenerate_txt.py`可重新导出备用TXT。
+- `CHECK_REPORT.json`、`apkg_import_test.json`、`full_apkg_import_test.json`、`apkg_update_test.json`：包结构、原图哈希、导入和复习状态测试。
+
+备用TXT与ZIP留作编辑和桌面兼容用途；手机直接使用APKG。TXT采用UTF-8、Tab、HTML、Basic，原2440题第一字段保持一致，支持同笔记类型下按第一字段更新；已自行改题干或换类型的笔记需自行匹配。单独TXT不含图片字节。
+
+原卡CELL03-105、CELL06-039的旧题干含不准确预设，答案已明确纠正并标注“题干::先辨析预设”。综合练习为改编复习题，参考评分不是上海大学官方评分。
