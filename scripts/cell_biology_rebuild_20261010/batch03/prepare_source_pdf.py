@@ -8,8 +8,19 @@ if report.exists() and json.loads(report.read_text()).get('status')=='downloaded
     print('Previously rendered original PDF pages retained')
 else:
     try:
-        response=requests.get(url,timeout=(20,90))
-        response.raise_for_status()
+        last_error=None
+        urls=[url,url.replace('www.cancertelsys.org','cancertelsys.org'),url.replace('https://','http://')]
+        for candidate in urls:
+            try:
+                response=requests.get(candidate,timeout=(15,45))
+                response.raise_for_status()
+                assert response.content.startswith(b'%PDF')
+                url=candidate
+                break
+            except Exception as error:
+                last_error=error
+        else:
+            raise last_error
         raw=response.content
         assert raw.startswith(b'%PDF'), 'Unexpected content type'
         doc=fitz.open(stream=raw,filetype='pdf')
