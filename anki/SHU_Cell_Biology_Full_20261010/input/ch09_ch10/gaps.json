@@ -290,8 +290,12 @@
     ],
     "original_text": "肿瘤组织DNA序列一样，表型差异由表观遗传修饰造成。",
     "reason": "原PDFseq217字面同序列范围过广，肿瘤可有遗传突变；卡明确同序列比较的前提，保留抑癌基因DNA甲基化失活机制，不断言所有肿瘤组织DNA均相同。",
-    "status": "unresolved",
-    "native_verified": true
+    "status": "resolved_scope_distinction",
+    "native_verified": true,
+    "resolved_source_units": [
+      "EN04-H019-H033-P098"
+    ],
+    "resolution": "英文完整段明确癌症可由重要调控蛋白及染色质调节蛋白DNA突变推进，已将中文同序列限制到特定比较前提。"
   },
   {
     "gap_id": "GAP-CN09-0029",
@@ -302,5 +306,35 @@
     "reason": "此语可能指编码该结构域的基因片段，而常用HMG box也用于蛋白DNA结合结构域名称。原PDF同样表述，未将其误解释为HMG识别的靶DNA序列；HMG结构域及两簇特性已覆盖。",
     "status": "unresolved",
     "native_verified": true
+  },
+  {
+    "gap_id": "GAP-EN04-0030",
+    "source_units": [
+      "EN04-H019-H033-P052",
+      "EN04-H019-H033-P053"
+    ],
+    "original_text": "表4-2首行H4K4me3、开放ON、1%；命名例H4K4。",
+    "reason": "H4第4位在实际图4-35为G而非K，图4-37直接识H3K4me3，疑H3误OCR成H4；表首行对象需要原PDFseq25/26核，未导出错误H4位点。",
+    "status": "unresolved"
+  },
+  {
+    "gap_id": "GAP-EN04-0031",
+    "source_units": [
+      "EN04-H019-H033-P095"
+    ],
+    "original_text": "both H3K9me3 and H3K29me3",
+    "reason": "同一段后文明确K27me3且图4-40/4-44一致，H3K29非本段机制；按同教材明确信息可校正为K27，原页尚待核排字/OCR。",
+    "status": "resolved_internal_source",
+    "resolution": "已用本段后半与图4-40 H3K27me3自洽限定，答案导出K27非K29；原文字保留。"
+  },
+  {
+    "gap_id": "GAP-EN04-0032",
+    "source_units": [
+      "EN04-H019-H033-P101"
+    ],
+    "original_text": "PCR2 protein complex",
+    "reason": "原段指图4-40，本块PRC2图/图注明确同一Polycomb抑制读写复合物，按实际图解释；原页待核错序字。",
+    "status": "resolved_internal_source",
+    "resolution": "已实际图4-40A/B和图注确认PRC2，保留原MD PCR2，不造另一个酶。"
   }
 ]
