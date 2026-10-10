@@ -1,0 +1,51 @@
+name: Build cell biology Anki packages
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/cell-biology-build.yml'
+      - 'scripts/cell_biology_rebuild_20261010/batch03/**'
+      - 'anki/SHU_Cell_Biology_Rebuild_20261010/Batch03/input/**'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: cell-biology-batch03
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /scripts/cell_biology_rebuild_20261010/batch03/
+            /anki/SHU_Cell_Biology_Rebuild_20261010/Batch02/
+            /anki/SHU_Cell_Biology_Rebuild_20261010/Batch03/
+            /细胞生物学制卡/01_绪论/整合教材.md
+            /细胞生物学制卡/来源/英文教材/02_Cell_Chemistry_and_Bioenergetics/
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install original PDF extraction tools
+        run: python -m pip install requests PyMuPDF
+      - name: Recover original chapter pages for visual review
+        run: python scripts/cell_biology_rebuild_20261010/batch03/prepare_source_pdf.py
+      - name: Build and validate cumulative APKG if authoring input is ready
+        run: |
+          if [ -f anki/SHU_Cell_Biology_Rebuild_20261010/Batch03/input/cards.json ]; then
+            python -m pip install anki==26.9.3 playwright
+            python scripts/cell_biology_rebuild_20261010/batch03/build_and_validate.py
+          fi
+      - name: Publish source review pages and validated outputs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add --sparse -- anki/SHU_Cell_Biology_Rebuild_20261010/Batch03
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish cell biology Batch03 review assets and completed checks [skip ci]'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
