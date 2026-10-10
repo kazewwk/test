@@ -14,7 +14,7 @@ else:
             try:
                 response=requests.get(candidate,timeout=(15,45))
                 response.raise_for_status()
-                assert response.content.startswith(b'%PDF')
+                assert response.content.startswith(b'%PDF'), f"PDF response type={response.headers.get('content-type')} bytes={len(response.content)} prefix={response.content[:6]!r}"
                 url=candidate
                 break
             except Exception as error:
