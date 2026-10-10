@@ -36,7 +36,7 @@ for req in REQ['books']:
     (OUT/(key+'_page_text.json')).write_text(json.dumps([{'pdf_sequence':i+1,'text':t} for i,t in enumerate(texts)],ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     matched = []
     for term in req.get('search_terms',[]):
-        hits = [i+1 for i,t in enumerate(texts) if term.lower() in t.lower()]
+        hits = [i+1 for i,t in enumerate(texts) if re.sub(r'\s+',' ',term.lower()) in re.sub(r'\s+',' ',t.lower())]
         matched.append({'term':term,'pdf_sequences':hits})
     pages = set(req.get('pages',[]))
     for match in matched:
@@ -52,6 +52,23 @@ for req in REQ['books']:
         data = pix.tobytes('jpeg',jpg_quality=87)
         (OUT/filename).write_bytes(data)
         entries.append({'pdf_sequence':n,'file':filename,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest(),'page_label':page.get_label(),'actual_viewed':False,'embedded_raster_dimensions':[[im[2],im[3]] for im in page.get_images(full=True)]})
-    report['books'].append({'key':key,'original_path':original,'original_pdf_sha256':digest,'page_count':len(doc),'page_labels':doc.get_page_labels(),'search_matches':matched,'rendered_pages':entries})
+    clip_entries = []
+    for spec in req.get('clips',[]):
+        n = int(spec['pdf_sequence'])
+        assert 1 <= n <= len(doc)
+        page = doc[n-1]
+        fractions = spec['rect_fraction']
+        assert len(fractions)==4 and all(0 <= float(v) <= 1 for v in fractions)
+        rect = fitz.Rect(float(fractions[0])*page.rect.width,float(fractions[1])*page.rect.height,float(fractions[2])*page.rect.width,float(fractions[3])*page.rect.height)
+        assert rect.width>0 and rect.height>0
+        label = spec['label']
+        assert re.fullmatch(r'[A-Za-z0-9_-]+',label)
+        scale = 2000/max(rect.width,rect.height)
+        pix = page.get_pixmap(matrix=fitz.Matrix(scale,scale),clip=rect,alpha=False)
+        filename = f'{key}_PDFseq_{n:04d}_clip_{label}.jpg'
+        data = pix.tobytes('jpeg',jpg_quality=90)
+        (OUT/filename).write_bytes(data)
+        clip_entries.append({'pdf_sequence':n,'file':filename,'clip_fraction':fractions,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest(),'page_label':page.get_label(),'actual_viewed':False,'method':'Rasterized unchanged original PDF rectangle; no AI redrawing or lettering'})
+    report['books'].append({'key':key,'original_path':original,'original_pdf_sha256':digest,'page_count':len(doc),'page_labels':doc.get_page_labels(),'search_matches':matched,'rendered_pages':entries,'rendered_clips':clip_entries})
     print(key,'pages',len(doc),'text_chars',sum(map(len,texts)),'renders',len(entries))
 (OUT/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
