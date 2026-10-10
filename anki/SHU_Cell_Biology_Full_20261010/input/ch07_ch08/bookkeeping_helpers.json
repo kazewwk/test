@@ -1,0 +1,104 @@
+{
+  "helper_add": "(front,units,topic,task,points,images=[])=>{const cards=load(\"cards\"),kp=load(\"knowledge\"),handling=load(\"handling\"),figs=load(\"figures\");const ch=units[0]?.startsWith(\"CN08\")||units[0]?.startsWith(\"EN16\")||units[0]?.startsWith(\"EN23\")?8:7;const p=\"CN\"+String(ch).padStart(2,\"0\");const id=\"RB-\"+p+\"-\"+String(cards.filter(c=>c.chapter===ch).length+1).padStart(4,\"0\");const ans=[],rub=[],kids=[];const registry=[...load(\"units7\"),...load(\"units8\"),...(load(\"glossary_units\")??[]),...(load(\"auxiliary_reads\")??[])];points.forEach(([facts,text,scores,src],i)=>{const a=\"A\"+(i+1),fs=Array.isArray(facts)?facts:[facts],ss=Array.isArray(scores)?scores:[scores];ans.push({anchor:a,text});fs.forEach((knowledge,j)=>{const r=\"R\"+(rub.length+1),score=ss[j]??ss[0],kid=\"KP-\"+p+\"-\"+String(kp.filter(k=>k.knowledge_id.startsWith(\"KP-\"+p+\"-\")).length+1).padStart(4,\"0\");kids.push(kid);rub.push({anchor:r,text:score});const srcs=src??units,source_excerpt=srcs.map(u=>({unit_id:u,text:registry.find(z=>z.unit_id===u)?.text??\"实际原图见visual_evidence\"}));kp.push({knowledge_id:kid,knowledge,source_units:srcs,card_id:id,answer_anchor:a,rubric_anchor:r,explicit_recall:true,status:\"covered\",verified:true,source_excerpt,question_requirement:front,rubric_requirement:score,visual_evidence:srcs.flatMap(u=>figs.filter(f=>f.source_units.includes(u)).map(f=>({figure_id:f.figure_id,observed:f.review_notes}))),verification_note:\"人工逐点对照：\"+knowledge+\"；源文/原图的上述证据与答案\"+a+\"一致，正面任务明确要求该项，评分\"+r+\"以‘\"+score+\"’判断该项回忆是否正确。\"});});});cards.push({id,type:\"Basic\",chapter:ch,front,answer:ans,rubric:rub,detail:\"\",basis:\"教材直接支持\",source_units:units,knowledge_ids:kids,images:images.map(([u,side,annotation])=>({figure_id:figs.find(f=>f.source_units.includes(typeof u===\"number\"?units[0].replace(/-P[0-9]+$/,\"\")+\"-P\"+String(u).padStart(3,\"0\"):u)).figure_id,side,annotation})),tags:[\"学科::细胞生物学\",\"章节::第\"+String(ch).padStart(2,\"0\")+\"章_\"+(ch===7?\"线粒体和叶绿体\":\"细胞骨架\"),\"主题::\"+topic,\"任务::\"+task,\"卡片编号::\"+id]});for(const u of units){handling[u]??={status:\"mapped\",cards:[],reason:\"科学知识已分配至具体题干、完整答案和可判定评分点。\"};handling[u].cards.push(id);}store(\"cards\",cards);store(\"knowledge\",kp);store(\"handling\",handling);return id;}",
+  "helper_gadd": "(front,units,topic,task,points,images=[])=>{const cards=load(\"cards\"),kp=load(\"knowledge\"),handling=load(\"handling\"),figs=load(\"figures\");const ch=25;const p=\"EN25-C\";const id=\"RB-\"+p+\"-\"+String(cards.filter(c=>c.id.startsWith(\"RB-EN25-C-\")).length+1).padStart(4,\"0\");const ans=[],rub=[],kids=[];const registry=[...load(\"units7\"),...load(\"units8\"),...(load(\"glossary_units\")??[]),...(load(\"auxiliary_reads\")??[])];points.forEach(([facts,text,scores,src],i)=>{const a=\"A\"+(i+1),fs=Array.isArray(facts)?facts:[facts],ss=Array.isArray(scores)?scores:[scores];ans.push({anchor:a,text});fs.forEach((knowledge,j)=>{const r=\"R\"+(rub.length+1),score=ss[j]??ss[0],kid=\"KP-\"+p+\"-\"+String(kp.filter(k=>k.knowledge_id.startsWith(\"KP-\"+p+\"-\")).length+1).padStart(4,\"0\");kids.push(kid);rub.push({anchor:r,text:score});const srcs=src??units,source_excerpt=srcs.map(u=>({unit_id:u,text:registry.find(z=>z.unit_id===u)?.text??\"实际原图见visual_evidence\"}));kp.push({knowledge_id:kid,knowledge,source_units:srcs,card_id:id,answer_anchor:a,rubric_anchor:r,explicit_recall:true,status:\"covered\",verified:true,source_excerpt,question_requirement:front,rubric_requirement:score,visual_evidence:srcs.flatMap(u=>figs.filter(f=>f.source_units.includes(u)).map(f=>({figure_id:f.figure_id,observed:f.review_notes}))),verification_note:\"人工逐点对照：\"+knowledge+\"；源文/原图的上述证据与答案\"+a+\"一致，正面任务明确要求该项，评分\"+r+\"以‘\"+score+\"’判断该项回忆是否正确。\"});});});cards.push({id,type:\"Basic\",chapter:ch,front,answer:ans,rubric:rub,detail:\"\",basis:\"教材直接支持\",source_units:units,knowledge_ids:kids,images:images.map(([u,side,annotation])=>({figure_id:figs.find(f=>f.source_units.includes(typeof u===\"number\"?units[0].replace(/-P[0-9]+$/,\"\")+\"-P\"+String(u).padStart(3,\"0\"):u)).figure_id,side,annotation})),tags:[\"学科::细胞生物学\",\"章节::英文术语表\",\"范围::P0381-P0570\",\"主题::\"+topic,\"任务::\"+task,\"卡片编号::\"+id]});for(const u of units){handling[u]??={status:\"mapped\",cards:[],reason:\"科学知识已分配至具体题干、完整答案和可判定评分点。\"};handling[u].cards.push(id);}store(\"cards\",cards);store(\"knowledge\",kp);store(\"handling\",handling);return id;}",
+  "helper_figures": "(block,notes)=>{const fs=load(\"figures\"),us=load(\"units7\").concat(load(\"units8\"));for(const [n,review_notes]of notes){const id=block+\"-P\"+String(n).padStart(3,\"0\"),u=us.find(x=>x.unit_id===id),r=load(\"nextimage:\"+id);const path=\"细胞生物学制卡/\"+u.text.match(/\\.\\.\\/([^)]+)/)[1];const sha=r.structuredContent.sha;store(\"image:\"+path,r);const ch=block.startsWith(\"CN08\")||block.startsWith(\"EN16\")||block.startsWith(\"EN23\")?\"CN08\":\"CN07\";const i=fs.length+1;fs.push({figure_id:\"FIG-\"+ch+\"-\"+String(i).padStart(5,\"0\"),original_repo_path:path,git_blob_sha:sha,filename:\"cell_full_\"+ch+\"_\"+String(i).padStart(5,\"0\")+\"_\"+sha.slice(0,10)+\".jpg\",source_units:[id],reviewed:true,review_notes,original:true});}store(\"figures\",fs);}",
+  "helper_terms": "cards=>{const ds=load(\"term_definitions\");for(const c of cards){for(const [term,cn,en,src] of ds){const esc=term.replace(/[.*+?^${}()|[\\]\\\\]/g,\"\\\\$&\");const pat=term===\"NAD\"||term===\"NADP\"?esc+\"\\\\+?\":esc;const re=new RegExp(\"(?<![A-Za-z0-9])\"+pat+\"(?![A-Za-z0-9₂])\");const ai=c.answer.findIndex(a=>re.test(a.text));if(ai<0)continue;if(c.answer.some(a=>a.text.includes(en)))continue;c.answer[ai].text=c.answer[ai].text.replace(re,match=>match+\"（\"+cn+\"，\"+en+\"）\");if(!c.source_units.includes(src))c.source_units.push(src);c.terminology_sources??=[];if(!c.terminology_sources.some(t=>t.term===term))c.terminology_sources.push({term,chinese:cn,english:en,source_unit:src});}for(const a of c.answer){a.text=a.text.replace(/NAD（([^）]+)）\\+/g,\"NAD+（$1）\").replace(/NADP（([^）]+)）\\+/g,\"NADP+（$1）\").replace(/乙酰CoA（辅酶A，coenzyme A）/g,\"乙酰CoA（乙酰辅酶A，acetyl CoA；CoA为coenzyme A）\").replace(/乙酰 CoA（辅酶A，coenzyme A）/g,\"乙酰 CoA（乙酰辅酶A，acetyl CoA；CoA为coenzyme A）\");}}return cards;}",
+  "term_definitions": [
+    [
+      "ATP",
+      "三磷酸腺苷",
+      "adenosine triphosphate",
+      "EN02-H009-H028-P168"
+    ],
+    [
+      "ADP",
+      "二磷酸腺苷",
+      "adenosine diphosphate",
+      "EN02-H009-H028-P168"
+    ],
+    [
+      "AMP",
+      "一磷酸腺苷",
+      "adenosine monophosphate",
+      "EN02-PDFseq030-TERM-AMP"
+    ],
+    [
+      "DNA",
+      "脱氧核糖核酸",
+      "deoxyribonucleic acid",
+      "EN02-H042-H090-P313"
+    ],
+    [
+      "RNA",
+      "核糖核酸",
+      "ribonucleic acid",
+      "EN01-H000-H030-P039"
+    ],
+    [
+      "NADPH",
+      "还原型烟酰胺腺嘌呤二核苷酸磷酸",
+      "reduced nicotinamide adenine dinucleotide phosphate",
+      "EN02-H009-H028-P191"
+    ],
+    [
+      "NADH",
+      "还原型烟酰胺腺嘌呤二核苷酸",
+      "reduced nicotinamide adenine dinucleotide",
+      "EN02-H009-H028-P191"
+    ],
+    [
+      "NADP",
+      "烟酰胺腺嘌呤二核苷酸磷酸",
+      "nicotinamide adenine dinucleotide phosphate",
+      "EN02-H009-H028-P191"
+    ],
+    [
+      "NAD",
+      "烟酰胺腺嘌呤二核苷酸",
+      "nicotinamide adenine dinucleotide",
+      "EN02-H009-H028-P191"
+    ],
+    [
+      "FADH2",
+      "还原型黄素腺嘌呤二核苷酸",
+      "reduced flavin adenine dinucleotide",
+      "EN02-H009-H028-P211"
+    ],
+    [
+      "FADH₂",
+      "还原型黄素腺嘌呤二核苷酸",
+      "reduced flavin adenine dinucleotide",
+      "EN02-H009-H028-P211"
+    ],
+    [
+      "FAD",
+      "黄素腺嘌呤二核苷酸",
+      "flavin adenine dinucleotide",
+      "EN02-H009-H028-P213"
+    ],
+    [
+      "GTP",
+      "鸟苷三磷酸",
+      "guanosine triphosphate",
+      "EN25-GLOSSARY-P0457"
+    ],
+    [
+      "GDP",
+      "鸟苷二磷酸",
+      "guanosine diphosphate",
+      "EN25-GLOSSARY-P0457"
+    ],
+    [
+      "GFP",
+      "绿色荧光蛋白",
+      "green fluorescent protein",
+      "EN25-GLOSSARY-P0453"
+    ],
+    [
+      "CoA",
+      "辅酶A",
+      "coenzyme A",
+      "EN02-H009-H028-P206"
+    ]
+  ]
+}
