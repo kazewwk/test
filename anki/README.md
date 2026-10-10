@@ -2,6 +2,20 @@
 
 生化 **2554 张／36章**，分子 **1366 张／11章**，共 **3920 张单向问答卡**。沿用原有3832张题面与章节牌组，新增88张必要识图／实验卡；2544张卡含直接显示的原图，其中36张新卡在正面提供读图材料。
 
+## 安卓 AnkiDroid 直接导入
+
+**[下载安卓直接导入文件：生化＋分子 APKG](SHU_Biology_AnkiDroid.apkg)**。一个文件包含两科全部卡片和图片，无需解压、复制图片或寻找媒体目录。
+
+1. 将 `.apkg` 文件下载到手机。
+2. 在 AnkiDroid 右上角点 **⋮ → 导入**，选择这个文件；如果手机支持直接打开，也可点下载文件并选择 AnkiDroid。
+3. 等待导入完成，即可在“生物化学”和“现代分子生物学”下按章节学习。
+
+此 APKG 为完整的新卡集，不含预先学习进度。相同 APKG 重复导入已验证不会增加重复卡，并保留已学习样本的进度。**它不会自动覆盖以前从 TXT 导入的旧卡**，因为旧 TXT 没有笔记 GUID；若已有旧卡进度，请先保留旧卡，不要删除或重置。已有 TXT 卡的更新方式见下文。
+
+[APKG 实际导入与图片核验](audit/ankidroid-apkg-check.json)。
+
+## 桌面 TXT 文件
+
 - [生化 TXT](SHU_2027_Biochemistry_2514_Basic.txt)
 - [分子 TXT](SHU_Molecular_Anki.txt)
 - [媒体 ZIP（必须与 TXT 一起使用）](biology_anki_media.zip)
@@ -10,7 +24,7 @@
 
 文件名里的2514保留自旧版，当前实际卡量以上面的数字为准。
 
-## 导入图片与卡片
+## 桌面 TXT 导入图片与卡片
 
 1. 解压媒体 ZIP，将其中全部图片直接复制到当前 Anki 用户的 `collection.media` 文件夹；图片不应再套一层子文件夹，也不要改名。常见位置：Windows 为 `%APPDATA%\Anki2\用户名称\collection.media`；macOS 为 `~/Library/Application Support/Anki2/用户名称/collection.media`；Linux 为 `~/.local/share/Anki2/用户名称/collection.media`。使用自定义配置目录时，以实际配置为准。
 2. 在桌面 Anki 选择“文件 → 导入”，分别导入两份 TXT。选择 **Basic／基础（单向）**，分隔符 **Tab／制表符**，启用 **HTML**；预览应为四列：**正面、背面、标签、牌组**。第4列映射为牌组，不是普通字段。支持文件头的 Anki 2.1.54+ 可读取这些设置。

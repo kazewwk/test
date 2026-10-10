@@ -53,7 +53,10 @@ GitHub: https://github.com/kazewwk/test/tree/codex/anki-image-optimization-20261
         for entry in manifest:
             assert hashlib.sha256(z.read('collection.media/'+entry['file'])).hexdigest()==entry['sha256']
     artifacts=[]
-    for name in FILES+['biology_anki_media.zip','biology_anki_import.zip']:
+    artifact_files = FILES+['biology_anki_media.zip','biology_anki_import.zip']
+    if (ROOT/'SHU_Biology_AnkiDroid.apkg').is_file():
+        artifact_files.append('SHU_Biology_AnkiDroid.apkg')
+    for name in artifact_files:
         p=ROOT/name
         artifacts.append({'file':name,'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
     (ROOT/'audit/artifact-manifest.json').write_text(json.dumps(artifacts,ensure_ascii=False,indent=2)+'\n')

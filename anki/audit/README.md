@@ -19,9 +19,10 @@
 | [external-images.json](external-images.json) | 外部原图出处、署名、许可、视觉复核与学术复核 |
 | [aux-doc-review.json](aux-doc-review.json) | 辅助文字、技能/支持文件及旧JSONL/TSV/APKG核验，含明确排除项 |
 | [anki-import-check.json](anki-import-check.json) | 临时 Anki 集合中的实际导入和媒体核验 |
+| [ankidroid-apkg-check.json](ankidroid-apkg-check.json) | 安卓单文件 APKG 的原生 Anki 导入、全图校验和重复导入核验 |
 | [card-rendering-check.json](card-rendering-check.json) | 7张代表性含图卡的浏览器字段渲染与截图人工抽查 |
 | [grading-independent-qa.json](grading-independent-qa.json) | 410条补评分独立文字复核；发现的4项证据边界／方向问题均已修复 |
-| [artifact-manifest.json](artifact-manifest.json) | 两份TXT、媒体ZIP和完整导入包的字节数与SHA-256 |
+| [artifact-manifest.json](artifact-manifest.json) | 安卓APKG、两份TXT、媒体ZIP和完整导入包的字节数与SHA-256 |
 
 “已审读”指实际看过对应图版并结合图注／必要正文判断，不代表每图都进入卡片。图片总数按物理文件计，同图在不同源目录的副本分别留证；导入媒体按哈希去重。English 阅读范围以每章 review 为准，主要支持图片，无批量独立英文背景卡。
 
@@ -36,3 +37,12 @@ python scripts/optimize_biology_anki.py --source-root /path/to/source-worktree
 ```bash
 python scripts/check_anki_import.py
 ```
+
+安卓交付为 [`SHU_Biology_AnkiDroid.apkg`](../SHU_Biology_AnkiDroid.apkg)，包括全部3920张卡和2146个原图媒体，采用兼容的传统APKG结构。生成及实际往返导入核验脚本：[`package_biology_ankidroid.py`](../../scripts/package_biology_ankidroid.py)，使用 Python `anki` 与 `genanki` 库：
+
+```bash
+python -m pip install anki==26.9.3 genanki==0.13.1
+python scripts/package_biology_ankidroid.py
+```
+
+笔记GUID与模板ID在本APKG系列内固定，重复导入无需新增卡片；它们不能凭相同题面识别以前从TXT导入的随机GUID笔记。报告区分本APKG的重复导入与旧TXT卡更新核验。APKG已使用Anki原生后端实际导入，未宣称在实体安卓设备上测试。
