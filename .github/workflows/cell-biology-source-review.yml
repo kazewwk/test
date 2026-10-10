@@ -1,0 +1,43 @@
+name: Review original cell biology textbook pages
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/cell-biology-source-review.yml'
+      - 'scripts/cell_biology_full_20261010/recover_source_pages.py'
+      - 'anki/SHU_Cell_Biology_Full_20261010/source_review_requests.json'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: cell-biology-source-review
+  cancel-in-progress: false
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /scripts/cell_biology_full_20261010/
+            /anki/SHU_Cell_Biology_Full_20261010/
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install PDF renderer
+        run: python -m pip install PyMuPDF
+      - name: Restore originals and render requested pages
+        run: python scripts/cell_biology_full_20261010/recover_source_pages.py
+      - name: Save original review pages
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add --sparse -- anki/SHU_Cell_Biology_Full_20261010/source_review
+          if ! git diff --cached --quiet; then
+            git commit -m 'Save original cell biology PDF review pages [skip ci]'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
