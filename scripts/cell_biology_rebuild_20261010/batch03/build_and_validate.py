@@ -155,12 +155,14 @@ def check_collection(col,count):
     assert not check.missing and not check.unused,(check.missing,check.unused)
 with tempfile.TemporaryDirectory(prefix='cell_anki_batch03_') as tmp:
     root=Path(tmp)
+    prior_batch03=root/'prior_batch03.apkg'
+    if (B3/name).exists():shutil.copyfile(B3/name,prior_batch03)
     build=root/'build';build.mkdir()
     col=Collection(str(build/'collection.anki2'))
     try:
-        col.import_anki_package(package_request(oldpkg))
+        col.import_anki_package(package_request(prior_batch03 if prior_batch03.exists() else oldpkg))
         initial=identities(col)
-        assert len(initial)==218
+        assert len(initial)==(289 if prior_batch03.exists() else 218)
         model=col.models.by_name('细胞生物学完整问答·20261010')
         assert model and model['type']==0
         model['css']=css
@@ -170,9 +172,15 @@ with tempfile.TemporaryDirectory(prefix='cell_anki_batch03_') as tmp:
             nid=initial[c['id']][0]
             assert col.db.scalar('select flds from notes where id=?',nid)==c['front_html']+'\x1f'+c['back_html']
         for c in new:
-            note=col.new_note(model)
-            note['Front']=c['front_html'];note['Back']=c['back_html'];note.tags=c['tags']
-            col.add_note(note,did)
+            if c['id'] in initial:
+                note=col.get_note(initial[c['id']][0])
+                if note['Front']!=c['front_html'] or note['Back']!=c['back_html'] or note.tags!=c['tags']:
+                    note['Front']=c['front_html'];note['Back']=c['back_html'];note.tags=c['tags']
+                    col.update_note(note)
+            else:
+                note=col.new_note(model)
+                note['Front']=c['front_html'];note['Back']=c['back_html'];note.tags=c['tags']
+                col.add_note(note,did)
         for p in all_media.values():shutil.copyfile(p,Path(col.media.dir())/p.name)
         check_collection(col,289)
         assert all(identities(col)[key]==value for key,value in initial.items())
@@ -218,8 +226,27 @@ with tempfile.TemporaryDirectory(prefix='cell_anki_batch03_') as tmp:
         for cid,values in schedules.items():
             assert col.db.first('select id,type,queue,due,ivl,reps,lapses from cards where id=?',cid)==values
     finally:col.close()
+    prior_batch03_count=0
+    if prior_batch03.exists():
+        revision=root/'revision';revision.mkdir();col=Collection(str(revision/'collection.anki2'))
+        try:
+            col.import_anki_package(package_request(prior_batch03))
+            prior_ids=identities(col)
+            assert len(prior_ids)==289
+            schedules=col.db.all('select id,type,queue,due,ivl,reps,lapses from cards order by id')
+            sentinel=col.db.scalar('select id from cards where nid=?',prior_ids['RB-CN01-0286'][0])
+            col.db.execute('update cards set type=2,queue=2,due=3456,ivl=18,reps=30,lapses=3 where id=?',sentinel)
+            schedules=col.db.all('select id,type,queue,due,ivl,reps,lapses from cards order by id')
+            col.import_anki_package(package_request(B3/name))
+            check_collection(col,289)
+            assert identities(col)==prior_ids
+            assert col.db.all('select id,type,queue,due,ivl,reps,lapses from cards order by id')==schedules
+            for c in cards:
+                assert col.db.scalar('select flds from notes where id=?',prior_ids[c['id']][0])==c['front_html']+'\x1f'+c['back_html']
+            prior_batch03_count=289
+        finally:col.close()
 report={'status':'PASS','package':name,'notes':289,'cards':289,'basic':289,'cloze':0,'new_notes':71,'embedded_media':219,
-    'fresh_native_import':'PASS','repeat_native_import':'PASS','incremental_218_to_289':'PASS','existing_note_ids_and_guids_preserved':218,
+    'fresh_native_import':'PASS','repeat_native_import':'PASS','incremental_218_to_289':'PASS','existing_note_ids_and_guids_preserved':218,'existing_batch03_identities_preserved':prior_batch03_count,'revision_289_to_289':'PASS' if prior_batch03_count else 'not applicable',
     'existing_review_states_preserved':218,'review_sentinels':2,'stored_fields_equal_export':'PASS','missing_media':0,'unused_media':0,
     'zip_media_original_hashes':'PASS','format':'legacy APKG / collection.anki2 / native Anki 26.9.3','physical_android_device':'not tested',
     'sha256':hashlib.sha256((B3/name).read_bytes()).hexdigest(),'bytes':(B3/name).stat().st_size}
