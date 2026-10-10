@@ -1,6 +1,6 @@
 # 细胞生物学 Anki 含图版（2026-10-10）
 
-[安卓完整包：下载后用 AnkiDroid 打开](https://github.com/kazewwk/test/releases/download/shu-cell-anki-20261010/SHU_Cell_Biology_Android_All_Images_20261010.apkg)
+[安卓完整包：下载后用 AnkiDroid 打开](https://media.githubusercontent.com/media/kazewwk/test/main/anki/SHU_Cell_Biology_Optimized/SHU_Cell_Biology_Android_All_Images_20261010.apkg)
 
 2637 张 Basic 问答学习卡，596 个教材原图文件已嵌在对应卡片中；另有默认暂停的491页教材图册，收录仓库全部3115个原图文件。52张综合卡附参考评分要点，免疫补充专题6张标为选修。
 

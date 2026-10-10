@@ -1,6 +1,6 @@
 # 安卓直接导入（2026-10-10）
 
-[下载含全部原图的安卓 Anki 包](https://github.com/kazewwk/test/releases/download/shu-cell-anki-20261010/SHU_Cell_Biology_Android_All_Images_20261010.apkg)（约 224 MB）
+[下载含全部原图的安卓 Anki 包](https://media.githubusercontent.com/media/kazewwk/test/main/anki/SHU_Cell_Biology_Optimized/SHU_Cell_Biology_Android_All_Images_20261010.apkg)（约 224 MB）
 
 下载后，在手机“下载”中点开 `.apkg`，选择 **AnkiDroid**，确认导入即可。图片已内置，无须解压、复制图片或设置媒体目录。
 
