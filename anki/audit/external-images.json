@@ -39,5 +39,35 @@
     ],
     "visually_reviewed": true,
     "academic_review": "根代理实际查看原PDF96页，原始三链对齐、位置1–150/末尾、gap、实线/虚线/阴影及图注均可读。图注38/64/27保留；逐行语义回忆交章节作者复核。"
+  },
+  {
+    "id": "RECOVERED-B19-FIG13-22",
+    "chapter": "B19",
+    "path": "anki/source-images/B19_fig13-22_original_pdf_p26.png",
+    "sha256": "8cd8dc3b791a1793e926a6598433187c877fc19feed4b9c4a2cabcbfc4432726",
+    "external_original": true,
+    "source": "Lehninger原始PDF直接提取完整图13-22；PDF第26页，实见印刷490页。按图原有颜色、结构、电子点和12行数据实看，未修改学术内容。",
+    "url": "https://github.com/kazewwk/test/blob/d443ed18fd7b95569ebcbfc3b0d54666a6607687/书籍/02_生物化学原理/raw_official_results/part_006/54f1187c-fb92-4d2c-b82e-f805935e8905_origin.pdf",
+    "original_pdf_path": "书籍/02_生物化学原理/raw_official_results/part_006/54f1187c-fb92-4d2c-b82e-f805935e8905_origin.pdf",
+    "original_pdf_sha256": "be71c162a70d953727f30d1217cb0f8761c2f972d4c6200ba5138a4fa923889c",
+    "original_pdf_page": 26,
+    "printed_page": "490",
+    "extraction": "原始PDF页面区域直接3倍渲染；图像及图注完整，未重绘、未改结构和标签。",
+    "review_status": "actual_visual_review"
+  },
+  {
+    "id": "DERIVED-B10-Q6J8I9-KD7-15",
+    "chapter": "B10",
+    "path": "anki/source-images/B10_Q6J8I9_hydropathy_KD7_15.png",
+    "sha256": "5855099030f5d3384ab90a024cb7d6bf7fe63f3f1867d29d24b215a143047c10",
+    "external_original": true,
+    "derived": true,
+    "source": "基于教材在线习题指定UniProt Q6J8I9羊AQP0完整263残基序列的Kyte–Doolittle滑动均值计算图；7/15残基完整窗口，无边界补零，横轴为1-based窗口中心；不表示实验确定膜边界。",
+    "url": "https://rest.uniprot.org/uniprotkb/Q6J8I9.fasta",
+    "retrieved_at": "2026-10-10T10:59:29.426280+00:00",
+    "sequence_sha256": "1c010ddd9ffcb3758408c2bf53af5e1f53aed910b9f2d4853297e2d57e57be22",
+    "provenance_file": "anki/audit/derived-images/B10-Q6J8I9-hydropathy.json",
+    "review_status": "actual_visual_review_and_numeric_check",
+    "method": "Kyte-Doolittle uniform arithmetic sliding-window mean; centered 7 and 15; complete windows only, no edge padding"
   }
 ]

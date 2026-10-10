@@ -32,7 +32,11 @@ def main():
     parser.add_argument('--checkpoint', action='store_true', help='Output only explicitly ready chapters; label as incomplete')
     args=parser.parse_args()
     expected=load(args.work/'fulltext-index.json')
-    chapters={p.stem:load(p) for p in (args.work/'chapters').glob('*.json')}
+    restrictions_path=args.repo/'anki/deep/restrictions.json'
+    restrictions=load(restrictions_path) if restrictions_path.exists() else []
+    restricted={item['chapter'] for item in restrictions if item['status']=='access_restricted'}
+    # Do not reopen, re-fetch, reinterpret, or export a restricted source/draft.
+    chapters={p.stem:load(p) for p in (args.work/'chapters').glob('*.json') if p.stem not in restricted}
     assert set(chapters).issubset(expected), 'Unexpected chapter'
     ready={ch:d for ch,d in chapters.items() if all(d.get(f) is True for f in ('reading_complete','authoring_complete','export_ready'))}
     pending=sorted(set(expected)-set(ready))
@@ -146,7 +150,7 @@ def main():
                 writer.writerow([k['source_document']+' 行 '+','.join(map(str,k['source_lines'])),k['point'],k['id'],cid,','.join(map(str,k.get('answer_parts',{}).get(cid,[]))),','.join(map(str,k.get('criteria_parts',{}).get(cid,[]))),str(k.get('recall_required',False)),k['status']])
     dump(args.output/'gaps.json',{ch:d['gaps'] for ch,d in sorted(ready.items())})
     dump(args.output/'media-manifest.json',{'media':list(media_hashes.values()),'image_usage':image_usage})
-    report={'final_scope_complete':not pending,'ready_chapters':sorted(ready),'pending_chapters':pending,'chapters_total':len(expected),'notes':len(canonical),'knowledge_units':len(units),'unready_canonical_dependencies':blockers,'media_files':len(media_hashes),'unresolved_source_units':sum(k.get('status')!='covered' for k in units),'original_media_hashes_verified':True,'semantic_claim':'Chapter author records govern content review; structural script does not certify zero omissions.'}
+    report={'final_scope_complete':not pending,'ready_chapters':sorted(ready),'pending_chapters':pending,'restricted_chapters':sorted(restricted),'chapters_total':len(expected),'notes':len(canonical),'knowledge_units':len(units),'unready_canonical_dependencies':blockers,'media_files':len(media_hashes),'unresolved_source_units':sum(k.get('status')!='covered' for k in units),'original_media_hashes_verified':True,'semantic_claim':'Chapter author records govern content review; structural script does not certify zero omissions.'}
     dump(args.output/'assembly-check.json',report)
     print(json.dumps(report,ensure_ascii=False))
 
