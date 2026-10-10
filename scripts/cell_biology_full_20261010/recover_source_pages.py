@@ -46,12 +46,12 @@ for req in REQ['books']:
     for n in sorted(pages):
         assert 1<=n<=len(doc),(key,n,len(doc))
         page = doc[n-1]
-        scale = min(2.0, 1600/max(page.rect.width,page.rect.height))
+        scale = (2600 if key=='CN' else 2000)/max(page.rect.width,page.rect.height)
         pix = page.get_pixmap(matrix=fitz.Matrix(scale,scale),alpha=False)
         filename = f'{key}_PDFseq_{n:04d}.jpg'
         data = pix.tobytes('jpeg',jpg_quality=87)
         (OUT/filename).write_bytes(data)
-        entries.append({'pdf_sequence':n,'file':filename,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest(),'page_label':page.get_label(),'actual_viewed':False})
+        entries.append({'pdf_sequence':n,'file':filename,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest(),'page_label':page.get_label(),'actual_viewed':False,'embedded_raster_dimensions':[[im[2],im[3]] for im in page.get_images(full=True)]})
     report['books'].append({'key':key,'original_path':original,'original_pdf_sha256':digest,'page_count':len(doc),'page_labels':doc.get_page_labels(),'search_matches':matched,'rendered_pages':entries})
     print(key,'pages',len(doc),'text_chars',sum(map(len,texts)),'renders',len(entries))
 (OUT/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
