@@ -36,7 +36,15 @@
     ],
     "original": "表2-2首行固定剂名称为“银酸”，五列效果+、++、+++、+、+++。",
     "reason": "固定剂名称疑似OCR误识别，缺可靠原表图核对；五个对应因名称不清一起列未解决，不凭印象改成锇酸。",
-    "status": "unresolved"
+    "status": "resolved_from_original_pdf",
+    "resolution": "原PDFseq41实际查看页脚26，表2-2清楚为锇酸，五列+/++/+++/+/+++已分别覆盖RB-CN02-0026。",
+    "original_page_review": {
+      "original_repo_path": "anki/SHU_Cell_Biology_Full_20261010/source_review/CN_PDFseq_0041.jpg",
+      "git_blob_sha": "0cf476ef4e1e8aa5056be4e30a3d47cc0d45855a",
+      "pdf_sequence": 41,
+      "printed_page": 26,
+      "actually_viewed": true
+    }
   },
   {
     "gap_id": "GAP-CN02-0005",
@@ -46,7 +54,7 @@
       "CN02-S01-P089"
     ],
     "original": "乙酸双氧铀/醋酸双氧铀",
-    "reason": "核酸染色/负染重金属盐名称疑似OCR问题，未查到原图/一手依据，因此该专名待核实；可信染色原理及其他试剂正常覆盖。",
+    "reason": "原PDFseq41页脚26实际印乙酸双氧铀，seq42页脚27实际印醋酸双氧铀；不是OCR错误。专名与英文通行对应尚未在分配教材实际读到，暂保持术语待核，染色原理已覆盖。",
     "status": "unresolved"
   },
   {
@@ -57,7 +65,15 @@
     ],
     "original": "在液氮或液氨中将样品迅速冷冻。",
     "reason": "第二冷冻剂名称液氨疑似OCR问题或教材特殊条件，未作为确定试剂导出；液氮及快速低温原理可覆盖。",
-    "status": "unresolved"
+    "status": "resolved_from_original_pdf",
+    "resolution": "原PDFseq42实际查看页脚27，正文为液氮或液氦；两介质分别覆盖RB-CN02-0030。",
+    "original_page_review": {
+      "original_repo_path": "anki/SHU_Cell_Biology_Full_20261010/source_review/CN_PDFseq_0042.jpg",
+      "git_blob_sha": "6b01b09aaad18b45c1829d243ed327da81c90505",
+      "pdf_sequence": 42,
+      "printed_page": 27,
+      "actually_viewed": true
+    }
   },
   {
     "gap_id": "GAP-CN02-0007",
@@ -80,14 +96,21 @@
     "status": "unresolved"
   },
   {
-    "gap_id": "OCR-CN02-0001",
+    "gap_id": "ERRATA-CN02-0001",
     "source_units": [
       "CN02-S01-P077",
       "CN02-S01-P082"
     ],
     "original": "载网一般直径3 nm",
-    "reason": "实际原图P077载网明确标3 mm，已按原图3 mm覆盖；保留OCR冲突审计。",
-    "status": "resolved_from_original_figure"
+    "reason": "已实际查看原PDFseq41页脚26，正文确印3 nm、同页图2-15标3 mm，为原书内部单位误植，并非OCR造成；按知识原图3 mm覆盖，保留原文冲突。",
+    "status": "resolved_from_original_figure",
+    "original_page_review": {
+      "original_repo_path": "anki/SHU_Cell_Biology_Full_20261010/source_review/CN_PDFseq_0041.jpg",
+      "git_blob_sha": "0cf476ef4e1e8aa5056be4e30a3d47cc0d45855a",
+      "pdf_sequence": 41,
+      "printed_page": 26,
+      "actually_viewed": true
+    }
   },
   {
     "gap_id": "GAP-CN02-0010",
@@ -97,5 +120,36 @@
     "original": "Two point sources can be just resolved when the center of the image of one lies within the first dark ring in the image of the other",
     "reason": "正文将 just resolved 条件写为 within first dark ring，Rayleigh边界措辞可能不严谨。已覆盖衍射像、NA及常规分辨概念，但不把该具体边界作为确定结论；需原PDF/学术核查。",
     "status": "unresolved"
+  },
+  {
+    "gap_id": "GAP-CN02-0011",
+    "source_units": [
+      "EN09-H013-H034-P066"
+    ],
+    "original": "FC repeat proteins that form fibrils in the center of the pore",
+    "reason": "核孔中央重复蛋白OCR为FC，疑为FG。红膜环/绿中央纤维、八重/20nm已覆盖；重复序列具体字母待实际原PDF核对，未导出FC名称。",
+    "status": "unresolved",
+    "knowledge_id": "KP-CN02-0740"
+  },
+  {
+    "gap_id": "GAP-CN02-0012",
+    "source_units": [
+      "EN09-H013-H034-P110",
+      "EN09-H013-H034-P112"
+    ],
+    "original": "(C) The pit ringed in B is shown at 1-second intervals",
+    "reason": "段中两张原图只含图9-38A和B，实际查看B文件没有C时间序列；文字1秒/约10秒已覆盖，但C原图未见，等待原PDF恢复，不伪造。",
+    "status": "unresolved",
+    "knowledge_id": "KP-CN02-0741"
+  },
+  {
+    "gap_id": "GAP-CN02-0013",
+    "source_units": [
+      "EN09-H013-H034-P052"
+    ],
+    "original": "500 nm",
+    "reason": "此为图9-29附近独立尺度文字，已看点像原图但文件中标尺被分离；需原PDF确认它对应的具体分面后才能正确指定。",
+    "status": "unresolved",
+    "knowledge_id": "KP-CN02-0742"
   }
 ]

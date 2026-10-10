@@ -5,7 +5,7 @@ function add(ch,front,sources,parts,theme,task,imgs=[]){
  const answer=[],rubric=[],kids=[];
  for(let i=0;i<parts.length;i++){
   const p=parts[i];if(!p.v)throw Error("Explicit semantic verification required");
-  const kid="KP-CN"+String(ch).padStart(2,"0")+"-"+String(ks.length+1).padStart(4,"0");
+  const kid="KP-CN"+String(ch).padStart(2,"0")+"-"+String(Math.max(0,...ks.map(k=>Number(k.knowledge_id.split("-").at(-1))))+1).padStart(4,"0");
   answer.push({anchor:"A"+(i+1),text:p.a});rubric.push({anchor:"R"+(i+1),text:p.r});kids.push(kid);
   ks.push({knowledge_id:kid,knowledge:p.k,source_units:p.s||sources,card_id:id,answer_anchor:"A"+(i+1),rubric_anchor:"R"+(i+1),explicit_recall:true,status:"covered",verified:true,verification_note:p.v});
  }
