@@ -17,6 +17,8 @@ REPO = os.environ.get('GITHUB_REPOSITORY', 'kazewwk/test')
 BRANCH = 'mineru-local-wang-jinfa-20261010'
 PREFIX = '.local-mineru-checkpoints-20261011'
 STATE = None
+PENDING = []
+PENDING_PAGES = 0
 
 def api(path, data=None, method=None, missing=False):
     url = 'https://api.github.com/repos/' + REPO + '/' + path
@@ -106,11 +108,21 @@ def save(entries, phase='parsing'):
     entries.append(entry(own_path(), json.dumps(own, ensure_ascii=False, indent=2).encode()))
     return commit(entries, 'Save MinerU runner chapter checkpoint: ' + wanted)
 
+def flush_pending(phase='parsing'):
+    global PENDING_PAGES
+    made = save(list(PENDING), phase)
+    PENDING.clear()
+    PENDING_PAGES = 0
+    return made
+
 def sync_batch(batch):
+    global PENDING_PAGES
     batch = Path(batch)
     key = batch.relative_to(ROOT / 'output').as_posix()
     obj = state()
     if key in obj['checkpoints']:
+        if PENDING_PAGES >= 16:
+            flush_pending()
         return
     marker = json.loads((batch / 'complete.json').read_text())
     books = json.loads((ROOT / 'work/chapters.json').read_text())
@@ -133,15 +145,15 @@ def sync_batch(batch):
     obj['checkpoints'][key] = {'book_id': bid, 'pages': marker['chapter_pages'][1] - marker['chapter_pages'][0] + 1,
         'source_pdf_pages': marker['source_pdf_pages'], 'size': len(data),
         'sha256': hashlib.sha256(data).hexdigest(), 'parts': parts}
-    try:
-        saved = save(entries)
-    except Exception:
-        obj['checkpoints'].pop(key, None)
-        raise
-    print('DURABLE RUNNER CHECKPOINT', key, saved, flush=True)
+    PENDING.extend(entries)
+    PENDING_PAGES += obj['checkpoints'][key]['pages']
+    print('SAVED BATCH BLOBS', key, flush=True)
+    if PENDING_PAGES >= 16:
+        saved = flush_pending()
+        print('DURABLE RUNNER CHECKPOINT', key, saved, flush=True)
 
 def update_status(phase='parsing', **extra):
-    return save([], 'chapter_complete' if (ROOT / 'work/states' / (os.environ['WORK_CHAPTER'] + '.done.json')).exists() else phase)
+    return flush_pending('chapter_complete' if (ROOT / 'work/states' / (os.environ['WORK_CHAPTER'] + '.done.json')).exists() else phase)
 
 def restore_item(key, item):
     batch = ROOT / 'output' / key

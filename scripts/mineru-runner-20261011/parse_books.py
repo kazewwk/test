@@ -117,6 +117,7 @@ def main():
             update_status()
             print(f'CHAPTER DONE {key} {info["elapsed_seconds"]}s', flush=True)
         except Exception:
+            update_status(phase='retry_after_failure')
             (states / f'{key}.failed.txt').write_text(traceback.format_exc())
             raise
         finally:
