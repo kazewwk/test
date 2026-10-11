@@ -96,15 +96,16 @@ def state():
     global STATE
     if STATE is not None:
         return STATE
-    url = f'https://raw.githubusercontent.com/{REPO}/{BRANCH}/{STATUS_REMOTE}?t={int(time.time())}'
     try:
-        with urllib.request.urlopen(url, timeout=45) as response:
-            STATE = json.load(response)
-    except urllib.error.HTTPError as exc:
-        if exc.code != 404:
-            raise
-        STATE = {'phase': 'parsing', 'checkpoint_format': 1, 'batch_size': 4,
-                 'source_pages': [528, 265], 'checkpoints': {}, 'completed_pages': [0, 0]}
+        found = fetch(f'https://api.github.com/repos/{REPO}/contents/{STATUS_REMOTE}?ref={BRANCH}')
+        if 'checkpoints' in found:
+            STATE = found
+        elif 'content' in found:
+            STATE = json.loads(base64.b64decode(found['content']))
+        else:
+            raise RuntimeError('Unknown checkpoint response')
+    except Exception:
+        raise
     return STATE
 
 def status_bytes():
