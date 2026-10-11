@@ -36,7 +36,7 @@ for spec in json.loads((root/'大文件分卷.json').read_text()):
  temp.replace(target);print(target)
 ''')
  (root/'SHA256SUMS.txt').write_text('\n'.join(sha(p)+'  '+p.relative_to(root).as_posix() for p in sorted(root.rglob('*')) if p.is_file() and p.name!='SHA256SUMS.txt')+'\n')
-archives=['Cell-Biology-Wang-Jinfa-MinerU-Local-Hybrid.zip','Cell-Biology-Laboratory-2e-MinerU-Local-Hybrid.zip'];notes=['两本书使用 MinerU 本地混合模式解析（ONNX + llama.cpp，standard 档）。','59 页沿用 MinerU 4.0.11 本地断点，其余页使用 4.0.12；保留 103 页本地断点，其余由 GitHub Actions 运行器本地推理，未调用远程解析 API。','按章节保留正文、完整分页 Markdown、图片、公式、结构化 JSON、模型输出和原始 PDF。原始整书按 95 MB 无损分片保留。','自动检查页码连续覆盖、图片引用、文件 SHA-256 和 ZIP CRC；按要求没有逐页校验。OCR/公式识别仍可能有误差，原始整书字节完整保留。',''];attachments=[]
+archives=['Cell-Biology-Wang-Jinfa-MinerU-Local-Hybrid.zip','Cell-Biology-Laboratory-2e-MinerU-Local-Hybrid.zip'];notes=['两本书使用 MinerU 本地混合模式解析（standard 档）；具体引擎、版本、运行环境及对应页数记录在各书 manifest.json。','保留并复用已完成的本地断点，后续在 GitHub Actions 或 Google Colab 上本地推理，未调用远程解析 API。','按章节保留正文、完整分页 Markdown、图片、公式、结构化 JSON、模型输出和原始 PDF。原始整书按 95 MB 无损分片保留。','自动检查页码连续覆盖、图片引用、文件 SHA-256 和 ZIP CRC；按要求没有逐页校验。OCR/公式识别仍可能有误差，原始整书字节完整保留。',''];attachments=[]
 for book,name in zip(books,archives):
  root=ROOT/'output'/book['title'];report=json.loads((root/'manifest.json').read_text())
  assert report['parsed_pages']==report['source_pages']==book['page_count'] and report['page_coverage_passed'] and report['missing_image_references']==0
@@ -49,7 +49,7 @@ for book,name in zip(books,archives):
  if target.exists():shutil.rmtree(target)
  shutil.copytree(root,target);split_large(target)
  assert all(p.stat().st_size<100_000_000 for p in target.rglob('*') if p.is_file())
- attachments.extend([str(archive),str(archive)+'.sha256']);notes.append(f"- {book['title']}：{book['page_count']} 页；{report['images']} 个图片文件；{report['formula_nodes']} 个公式节点；ZIP SHA-256 `{sha(archive)}`")
+ attachments.extend([str(archive),str(archive)+'.sha256']);notes.append(f"- {book['title']}：{book['page_count']} 页；{report['images']} 个图片文件；{report['formula_nodes']} 个公式节点；运行环境及页数 `{report['execution_page_counts']}`；ZIP SHA-256 `{sha(archive)}`")
 # Read-tree carries the unchanged repository tree without downloading all its blobs.
 for attempt in range(5):
  run(['git','fetch','--filter=blob:none','--depth=1','origin','main'],CHECKOUT)
