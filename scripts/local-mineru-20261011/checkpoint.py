@@ -96,7 +96,7 @@ def state():
     global STATE
     if STATE is not None:
         return STATE
-    url = f'https://raw.githubusercontent.com/{REPO}/{BRANCH}/{STATUS_REMOTE}'
+    url = f'https://raw.githubusercontent.com/{REPO}/{BRANCH}/{STATUS_REMOTE}?t={int(time.time())}'
     try:
         with urllib.request.urlopen(url, timeout=45) as response:
             STATE = json.load(response)

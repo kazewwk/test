@@ -23,12 +23,19 @@ def main():
     if chosen:
         os.sched_setaffinity(0, chosen)
 
+    try:
+        Path('/proc/self/oom_score_adj').write_text('1000')
+    except OSError:
+        pass
+    slots_file = ROOT / 'work/engine-slots.json'
+    slots = json.loads(slots_file.read_text()).get('n_parallel', 2) if slots_file.exists() else 2
+
     import mineru_llama_cpp
     OriginalEngine = mineru_llama_cpp.Engine
     class LimitedEngine(OriginalEngine):
         def __init__(self, *a, **kw):
             kw.setdefault('n_threads', 8)
-            kw.setdefault('n_parallel', 2)
+            kw.setdefault('n_parallel', slots)
             super().__init__(*a, **kw)
     mineru_llama_cpp.Engine = LimitedEngine
 
