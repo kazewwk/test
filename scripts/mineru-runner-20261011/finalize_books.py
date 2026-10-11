@@ -139,7 +139,8 @@ for book in books:
               'formula_nodes': sum(r['formula_node_count'] for r in rows),
               'sparse_pages': [p for r in rows for p in r['sparse_pages']],
               'validation': 'automated only; no page-by-page manual review',
-              'execution_environment': os.environ.get('MINERU_EXECUTION_ENVIRONMENT', 'local'),
+              'execution_environment': '; '.join(sorted(environments)),
+              'assembly_environment': os.environ.get('MINERU_EXECUTION_ENVIRONMENT', 'local'),
               'limitation': 'Page coverage and image references are checked. OCR/formula semantic accuracy is not guaranteed. Original chapter PDF pages are retained.',
               'chapters': rows}
     dump(bookroot / 'manifest.json', report)
