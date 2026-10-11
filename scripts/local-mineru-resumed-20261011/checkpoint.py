@@ -1,7 +1,8 @@
 import base64,hashlib,io,json,os,pathlib,subprocess,time,zipfile
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 REPO='kazewwk/test';BRANCH='mineru-local-wang-jinfa-20261010';PREFIX='.local-mineru-checkpoints-20261011';STATUS_REMOTE=PREFIX+'/status.json'
-STATE=json.loads((ROOT/'work/restored-status.json').read_text())
+_state_file=ROOT/'work/durable-status.json'
+STATE=json.loads((_state_file if _state_file.exists() else ROOT/'work/restored-status.json').read_text())
 def api(path,data=None,method=None):
  args=['gh','api','repos/'+REPO+'/'+path]
  if method:args+=['--method',method]
