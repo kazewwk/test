@@ -48,22 +48,38 @@ for book,name in zip(books,archives):
 for attempt in range(5):
  run(['git','fetch','--filter=blob:none','--depth=1','origin','main'],CHECKOUT)
  base=run(['git','rev-parse','origin/main'],CHECKOUT)
- for book in books:
-  found=run(['git','ls-tree','origin/main','--',book['title']],CHECKOUT)
-  if found:raise RuntimeError('Target book folder appeared on main; avoid overwriting: '+book['title'])
+ existing={b['title']:run(['git','ls-tree','origin/main','--',b['title']],CHECKOUT) for b in books}
  run(['git','update-ref','refs/heads/main',base],CHECKOUT);run(['git','symbolic-ref','HEAD','refs/heads/main'],CHECKOUT);run(['git','read-tree','origin/main'],CHECKOUT)
  run(['git','add','--',*[b['title'] for b in books]],CHECKOUT)
+ staged_tree=run(['git','write-tree'],CHECKOUT)
+ for book in books:
+  if existing[book['title']] and existing[book['title']]!=run(['git','ls-tree',staged_tree,'--',book['title']],CHECKOUT):raise RuntimeError('Target book folder differs on main; avoid overwriting: '+book['title'])
+ if subprocess.run(['git','diff','--cached','--quiet'],cwd=CHECKOUT).returncode==0:break
  run(['git','commit','-m','Add complete MinerU hybrid parsing of Wang Jinfa cell biology textbooks'],CHECKOUT)
  pushed=subprocess.run(['git','push','origin','HEAD:main'],cwd=CHECKOUT,capture_output=True,text=True)
  if pushed.returncode==0:break
  if attempt==4:raise RuntimeError(pushed.stderr)
-commit=run(['git','rev-parse','HEAD'],CHECKOUT);print('REPOSITORY PUBLISHED',commit,flush=True)
+commit=run(['git','rev-parse','HEAD'],CHECKOUT)
+remote_commit=json.loads(run(['gh','api',f'repos/{REPO}/git/commits/{commit}']))
+assert remote_commit['tree']['sha']==run(['git','rev-parse','HEAD^{tree}'],CHECKOUT)
+print('REPOSITORY PUBLISHED',commit,flush=True)
 notesfile=ROOT/'output/release-notes.md';notesfile.write_text('\n'.join(notes)+'\n')
 found=subprocess.run(['gh','release','view',TAG,'--repo',REPO],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL).returncode==0
 if not found:run(['gh','release','create',TAG,'--repo',REPO,'--target',commit,'--title','王金发细胞生物学两本教材 · MinerU 本地混合模式','--notes-file',str(notesfile),*attachments])
-else:run(['gh','release','upload',TAG,'--repo',REPO,*attachments])
+else:
+ old=json.loads(run(['gh','release','view',TAG,'--repo',REPO,'--json','assets']))
+ published={a['name']:a for a in old['assets']};pending=[]
+ for path in attachments:
+  p=pathlib.Path(path)
+  if p.name not in published:pending.append(path)
+  elif published[p.name]['size']!=p.stat().st_size:raise RuntimeError('Existing Release asset size differs: '+p.name)
+ if pending:run(['gh','release','upload',TAG,'--repo',REPO,*pending])
 release=json.loads(run(['gh','release','view',TAG,'--repo',REPO,'--json','url,assets']))
 assets={a['name']:a for a in release['assets']}
 for name in archives:assert name in assets and assets[name]['size']==(ROOT/'output'/name).stat().st_size
+server_release=json.loads(run(['gh','api',f'repos/{REPO}/releases/tags/{TAG}']))
+for asset in server_release['assets']:
+ if asset['name'] in archives and asset.get('digest'):
+  assert asset['digest']=='sha256:'+sha(ROOT/'output'/asset['name']), asset['name']
 result={'phase':'complete','commit':commit,'release_url':release['url'],'books':[{**b,'archive':name,'archive_size':(ROOT/'output'/name).stat().st_size,'archive_sha256':sha(ROOT/'output'/name)} for b,name in zip(books,archives)]}
 (ROOT/'work/final-result.json').write_text(json.dumps(result,ensure_ascii=False,indent=2));print('COMPLETE',release['url'],flush=True)

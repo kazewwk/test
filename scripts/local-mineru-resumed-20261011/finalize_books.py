@@ -27,6 +27,7 @@ def walk(obj):
             yield from walk(value)
 
 books = json.loads((ROOT / 'work/chapters.json').read_text())
+source_specs = json.loads((ROOT / 'work/source-manifest.json').read_text())['books']
 all_ready = True
 for book in books:
     bookroot = ROOT / 'output' / book['title']
@@ -112,6 +113,10 @@ for book in books:
               'backend': 'local hybrid: ONNX + llama.cpp', 'tier': 'standard',
               'ocr_mode': 'ocr', 'image_analysis': False,
               'source_sha256': source_hash,
+              'source_repository': 'kazewwk/test', 'source_folder': '王金发细胞',
+              'source_original_name': source_specs[book['id']]['original_name'],
+              'source_size': source_specs[book['id']]['size'],
+              'original_source_bytes_preserved': True,
               'source_pages': book['page_count'], 'parsed_pages': len(coverage),
               'page_coverage_passed': True,
               'chapter_count': 15 if book['id'] == 0 else 12,
@@ -131,7 +136,7 @@ for book in books:
              f'源书 {book["page_count"]} 页，解析页数 {len(coverage)} 页。已自动检查章节连续覆盖、解析页数和图片引用。未逐页人工核对，OCR 与公式仍可能存在识别误差。', '',
              '每章包含：`正文.md`、`完整分页.md`、`images/`、`middle_json.json`、`structured_content.json`、`原始页面.pdf`、`章节信息.json`、`自动核验.json`。`解析批次/` 保留分批原始解析输出，包括模型输出。', '',
              '`完整分页.md` 保留逐页标记；所有原始页面均另存为各章 PDF，用于查漏和核对。封面、版权、前言、目录、参考文献、索引和附录也已保留。', '',
-             '| 文件夹 | 原 PDF 页码 | 页数 |', '| --- | ---: | ---: |']
+             '`原始整书/` 保存与仓库来源 SHA-256 完全一致的原 PDF 分片；执行该目录中的 `python 还原PDF.py` 可还原原始整书。', '', '| 文件夹 | 原 PDF 页码 | 页数 |', '| --- | ---: | ---: |']
     lines.extend(f'| [{r["name"]}]({r["name"]}/正文.md) | {r["start"]}–{r["end"]} | {r["page_count"]} |' for r in rows)
     (bookroot / 'README.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
     hashes = []
