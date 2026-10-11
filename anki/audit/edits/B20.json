@@ -1,0 +1,57 @@
+{
+  "chapter": "B20",
+  "review": {
+    "core_text": "complete",
+    "supplement_text": "complete",
+    "original_cards": "complete",
+    "viewed_sheets": ["B20-S01", "B20-S02"],
+    "note": "已读主干、Lehninger §14.6、35张原卡；逐项查看28张图。英文只新增图中明确出现而原卡漏掉的TPP辅酶机制，不增加病例和历史细节。"
+  },
+  "updates": [
+    {"id":"B20-003","image_ids":["B20-I014"],"image_analysis":"总览图把两次NADP⁺还原分别放在第①和第③步，水解位于第②步；CO₂只在第③步释放。图中氧化阶段为单向箭头，非氧化阶段的异构及碳重排可逆。"},
+    {"id":"B20-007","append_explanation":"图20-1可见NADPH相对NADH多出的磷酸位于腺苷部分核糖的2′位；该磷酸帮助酶区分辅酶，不是接受氢负离子的位点。氧化还原发生在烟酰胺环。","image_refs":["B20-I001"]},
+    {"id":"B20-009","image_ids":["B20-I018"],"image_analysis":"结构图中Ru5P与Xu5P仍在C2保留酮基，仅C3的H/OH左右位置改变；Ru5P到R5P则把羰基由C2转到C1，属于酮醛异构。","image_refs":["B20-I005","B20-I007","B20-I008"]},
+    {"id":"B20-011","append_explanation":"反应图给转酮酶标出TPP；转醛酶的机制图则显示底物与酶的Lys侧链形成Schiff碱。二者通过不同方式稳定碳负离子，不能把TPP统一写成两种酶的辅酶。","image_refs":["B20-I020","B20-I024","B20-I025"]},
+    {"id":"B20-012","image_ids":["B20-I021"],"image_analysis":"图的红色两碳片段来自Xu5P的C1和C2，移到R5P的羰基端形成S7P的C1和C2；Xu5P剩余C3—C5成为GAP。","image_refs":["B20-I010"]},
+    {"id":"B20-013","append_explanation":"结构图中的转移片段是S7P的C1—C3；S7P的C4—C7成为E4P，原GAP成为F6P的C4—C6。碳数守恒之外还应能说明供体和受体各自碳的去向。","image_refs":["B20-I012","B20-I022"]},
+    {"id":"B20-014","image_refs":["B20-I013","B20-I023"],"image_analysis":"第二次转酮反应仍从Xu5P取C1—C2；E4P接受两碳变成F6P，Xu5P剩余三碳变成GAP。"},
+    {"id":"B20-025","image_ids":["B20-I019"],"image_analysis":"图右侧碳数框图是两组非氧化重排：6×5C先变成4×6C加2×3C，再把两份三碳合为一份六碳。形成G6P回收环还需三碳互变、醛缩酶及果糖-1,6-二磷酸酶等，不能把6个戊糖直接写成5个G6P的单步反应。"},
+    {"id":"B20-029","replace_core":"PPP供NADPH，使谷胱甘肽还原酶把GSSG还原为2GSH；谷胱甘肽过氧化物酶再用GSH将H₂O₂还原为水。该循环保护血红蛋白和膜，降低氧化损伤及溶血风险。","replace_criteria":["NADPH经谷胱甘肽还原酶再生GSH","GSH经谷胱甘肽过氧化物酶清除过氧化物","联系蛋白和膜保护"],"image_ids":["B20-I017"],"image_analysis":"图中两个相接的循环分别消耗NADPH和GSH：还原酶负责GSSG→GSH，过氧化物酶负责H₂O₂→H₂O。应区分这两种酶，且图的线粒体产ROS分支不适用于没有线粒体的成熟红细胞。"},
+    {"id":"B20-019","image_refs":["B20-I027"],"image_analysis":"分流图用从NADPH回到G6PD处的反馈抑制线表示还原力积累会减少PPP入口，使更多G6P可供糖酵解；不是NADPH直接生成ATP。"}
+  ],
+  "new_cards": [
+    {"id":"B20-G001","front":"戊糖磷酸途径的转酮酶需要哪种辅酶？该辅酶在两碳转移中起什么作用？","core":"需要硫胺素焦磷酸TPP（维生素B₁的辅酶形式）。TPP暂时携带来自酮糖的两碳片段，并以共振稳定碳负离子中间体，使片段能转移给醛糖受体。","criteria":["TPP及维生素B₁来源","暂时携带两碳片段并稳定碳负离子"],"extra":"中文反应图已标出“转酮酶-TPP”，原卡漏掉这一图内信息；Lehninger机制图补充了稳定中间体的原因。","image_ids":["B20-I024"],"source":"朱圣庚《生物化学》第4版第20章转酮反应图；Lehninger §14.6 Figure14-35a。","depth":"L2","ability":"机制"}
+  ],
+  "images": [
+    {"id":"B20-I001","disposition":"covered","cards":["B20-007"],"reason":"NADPH完整结构，补腺苷核糖2′磷酸与烟酰胺氧化还原位点的区别。"},
+    {"id":"B20-I002","disposition":"covered","cards":["B20-003","B20-005"],"reason":"第一步G6PD与NADP⁺，内酯形成不释放CO₂。"},
+    {"id":"B20-I003","disposition":"covered","cards":["B20-008"],"reason":"第二步内酯开环水解，H₂O参与，无NADPH和CO₂。"},
+    {"id":"B20-I004","disposition":"covered","cards":["B20-005","B20-006"],"reason":"第三步氧化脱羧，框出的原C1羧基进入CO₂，产Ru5P。"},
+    {"id":"B20-I005","disposition":"covered","cards":["B20-009"],"reason":"烯二醇中间体连接C2酮基与C1醛基异构。"},
+    {"id":"B20-I006","disposition":"fragment","cards":["B20-009"],"reason":"Ru5P差向异构酶箭头裁片，与两侧结构共同读。"},
+    {"id":"B20-I007","disposition":"covered","cards":["B20-009","B20-010"],"reason":"Ru5P Fischer结构，C3羟基位于右侧。"},
+    {"id":"B20-I008","disposition":"covered","cards":["B20-009","B20-010"],"reason":"Xu5P Fischer结构，C3羟基变为左侧。"},
+    {"id":"B20-I009","disposition":"fragment","cards":["B20-010"],"reason":"标出转酮供体C1—C2两碳结构片段。"},
+    {"id":"B20-I010","disposition":"covered","cards":["B20-012","B20-G001"],"reason":"第一转酮完整反应，图内直接注明TPP。"},
+    {"id":"B20-I011","disposition":"fragment","cards":["B20-013"],"reason":"转醛酶所转移的C1—C3片段，不能误记为两碳。"},
+    {"id":"B20-I012","disposition":"covered","cards":["B20-013"],"reason":"S7P+GAP→E4P+F6P，框出三碳供体和去向。"},
+    {"id":"B20-I013","disposition":"covered","cards":["B20-014"],"reason":"第二转酮反应Xu5P+E4P→GAP+F6P，TPP标注与第一反应一致。"},
+    {"id":"B20-I014","disposition":"covered","cards":["B20-003","B20-018","B20-035"],"reason":"中文总览图含三分子箭头数、氧化与非氧化步骤以及6NADPH计量。"},
+    {"id":"B20-I015","disposition":"covered","cards":["B20-001","B20-028","B20-033"],"reason":"英文功能总览与中文核心平行，不另新增英文卡。"},
+    {"id":"B20-I016","disposition":"parallel","cards":["B20-003","B20-004","B20-009"],"reason":"英文氧化步骤结构总图，与I002—I005同一目标，保留作交叉核对。"},
+    {"id":"B20-I017","disposition":"covered","cards":["B20-029","B20-030","B20-031"],"reason":"G6PD/NADPH—谷胱甘肽还原酶—谷胱甘肽过氧化物酶两个循环，补酶职能区别并限定红细胞。"},
+    {"id":"B20-I018","disposition":"parallel","cards":["B20-009"],"reason":"英文Ru5P/Xu5P差向异构图，与中文C3左右构型一致。"},
+    {"id":"B20-I019","disposition":"covered","cards":["B20-023","B20-025"],"reason":"6个五碳→4个六碳+2个三碳→5个六碳，确认回收G6P所需酶条件。"},
+    {"id":"B20-I020","disposition":"covered","cards":["B20-011","B20-G001"],"reason":"转酮酶的一般供受体反应，临时两碳载体是TPP。"},
+    {"id":"B20-I021","disposition":"covered","cards":["B20-012"],"reason":"用颜色直接显示Xu5P的C1—C2移到S7P，补原子映射。"},
+    {"id":"B20-I022","disposition":"covered","cards":["B20-013"],"reason":"用颜色显示S7P三碳转移给GAP，余四碳为E4P。"},
+    {"id":"B20-I023","disposition":"covered","cards":["B20-014"],"reason":"第二转酮彩色原子对应，与中文结构图互相核对。"},
+    {"id":"B20-I024","disposition":"covered","cards":["B20-G001"],"reason":"TPP噻唑环共振稳定两碳碳负离子中间体。"},
+    {"id":"B20-I025","disposition":"covered","cards":["B20-011"],"reason":"转醛酶Lys侧链Schiff碱稳定三碳中间体，作为辅酶辨析的边界。"},
+    {"id":"B20-I026","disposition":"decorative","cards":[],"reason":"医用主题栏目标志，无独立生化结构或机制信息。"},
+    {"id":"B20-I027","disposition":"covered","cards":["B20-019","B20-026"],"reason":"NADPH反馈抑制PPP入口及G6P在PPP/糖酵解的分流。"},
+    {"id":"B20-I028","disposition":"decorative","cards":[],"reason":"网上资源小图标，不含可检索的生化知识。"}
+  ],
+  "uncertain": [],
+  "practice": [{"front":"【自编整题】给出PPP氧化与非氧化阶段的碳平衡，并解释只需NADPH、不需R5P时如何回收碳骨架；指出成熟红细胞抗氧化依赖的两种谷胱甘肽酶及各自底物。","answer":"氧化阶段每G6P产1CO₂、1Ru5P和2NADPH；非氧化净反应2Xu5P+R5P⇌2F6P+GAP。6个戊糖可经两轮重排成为4F6P+2GAP，具必要糖异生酶的细胞再将2GAP组成1F6P，合计回收5G6P。该回收模式有细胞酶条件限制。谷胱甘肽还原酶用NADPH把GSSG还原成2GSH，谷胱甘肽过氧化物酶用GSH还原过氧化物；两种酶的功能不能交换。"}]
+}
