@@ -61,7 +61,7 @@ def prepare():
                 if not dest.exists():
                     with pymupdf.open() as split:
                         split.insert_pdf(original, from_page=chapter['start'] - 1, to_page=chapter['end'] - 1)
-                        split.save(dest, garbage=4, deflate=True)
+                        split.save(dest, garbage=4, deflate=True, no_new_id=True)
             assert coverage == list(range(1, book['page_count'] + 1))
 
 def parse_chapter():

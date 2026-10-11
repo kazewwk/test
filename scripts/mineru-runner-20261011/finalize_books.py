@@ -112,14 +112,14 @@ for book in books:
     source_hash = hashlib.sha256(source.read_bytes()).hexdigest()
     versions = Counter()
     environments = Counter()
-    for marker_path in bookroot.glob('*/解析批次/*/complete.json'):
+    for marker_path in sorted(bookroot.glob('*/解析批次/*/complete.json')):
         marker = json.loads(marker_path.read_text())
         count = marker['chapter_pages'][1] - marker['chapter_pages'][0] + 1
         versions[marker.get('mineru_version', '4.0.11')] += count
         environments[marker.get('execution_environment', 'local')] += count
     assert sum(versions.values()) == book['page_count']
-    report = {'book': book['title'], 'mineru_versions': dict(versions),
-              'execution_page_counts': dict(environments),
+    report = {'book': book['title'], 'mineru_versions': dict(sorted(versions.items())),
+              'execution_page_counts': dict(sorted(environments.items())),
               'backend': 'local hybrid: ONNX + llama.cpp', 'tier': 'standard',
               'ocr_mode': 'ocr', 'image_analysis': False,
               'source_sha256': source_hash,
@@ -142,7 +142,7 @@ for book in books:
     dump(bookroot / 'manifest.json', report)
     dump(bookroot / '自动核验报告.json', report)
     lines = [f'# {book["title"]}', '',
-             f'MinerU 本地混合模式（ONNX + llama.cpp），standard 档，扫描 OCR，保留图片和公式识别。版本及页数：{dict(versions)}。', '',
+             f'MinerU 本地混合模式（ONNX + llama.cpp），standard 档，扫描 OCR，保留图片和公式识别。版本及页数：{dict(sorted(versions.items()))}。', '',
              f'源书 {book["page_count"]} 页，解析页数 {len(coverage)} 页。已自动检查章节连续覆盖、解析页数和图片引用。未逐页人工核对，OCR 与公式仍可能存在识别误差。', '',
              '每章包含：`正文.md`、`完整分页.md`、`images/`、`middle_json.json`、`structured_content.json`、`原始页面.pdf`、`章节信息.json`、`自动核验.json`。`解析批次/` 保留分批原始解析输出，包括模型输出。', '',
              '`完整分页.md` 保留逐页标记；所有原始页面均另存为各章 PDF，用于查漏和核对。封面、版权、前言、目录、参考文献、索引和附录也已保留。', '',
@@ -159,7 +159,11 @@ for book in books:
     with zipfile.ZipFile(target, 'w', zipfile.ZIP_DEFLATED, compresslevel=6) as archive:
         for path in sorted(bookroot.rglob('*')):
             if path.is_file():
-                archive.write(path, arcname=path.relative_to(bookroot.parent).as_posix())
+                info = zipfile.ZipInfo(path.relative_to(bookroot.parent).as_posix(), date_time=(2000, 1, 1, 0, 0, 0))
+                info.compress_type = zipfile.ZIP_DEFLATED
+                info.external_attr = 0o100644 << 16
+                with path.open('rb') as source_stream, archive.open(info, 'w', force_zip64=True) as target_stream:
+                    shutil.copyfileobj(source_stream, target_stream, 1024 * 1024)
     with zipfile.ZipFile(target) as archive:
         assert archive.testzip() is None
     ziphash = hashlib.sha256(target.read_bytes()).hexdigest()
