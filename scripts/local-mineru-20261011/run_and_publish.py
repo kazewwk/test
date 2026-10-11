@@ -130,6 +130,12 @@ def verify(commit, plan):
     return release
 
 def save_downloads():
+    update(phase='saving_downloads')
+    announcement = ROOT / 'work/saving-announced.json'
+    for _ in range(120):
+        if announcement.exists():
+            break
+        time.sleep(1)
     request = {'uploads': [{'local_path': str(ROOT / 'output' / b['zip']),
                             'purpose': 'create_library_file', 'library_artifact_type': 'other'}
                            for b in BOOKS]}
