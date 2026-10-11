@@ -1,0 +1,111 @@
+name: MinerU cell biology hybrid parsing
+'on':
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/mineru-cell-books.yml'
+permissions:
+  contents: write
+concurrency:
+  group: mineru-two-cell-biology-books
+  cancel-in-progress: false
+env:
+  GH_TOKEN: ${{ github.token }}
+  MINERU_MODEL_BASE_DIR: ${{ github.workspace }}/.mineru-models
+  MINERU_MODEL_SMALL_BACKEND: onnx
+  MINERU_MODEL_VLM_ENGINE: llama-cpp
+  MINERU_EXECUTION_ENVIRONMENT: GitHub Actions runner local inference plus preserved earlier local checkpoints
+  PYTHONFAULTHANDLER: '1'
+jobs:
+  prepare:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: scripts/mineru-runner-20261011
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: scripts/mineru-runner-20261011/requirements-local.txt
+      - run: |
+          mkdir -p work
+          cp scripts/mineru-runner-20261011/* work/
+          python -m venv .mineru
+          .mineru/bin/pip install -r work/requirements-local.txt
+      - uses: actions/cache@v4
+        with:
+          path: |
+            .mineru-models
+            sources
+          key: mineru-cellbooks-standard-4.0.11-onnx1.31.0-llamacpp0.1.2-v1
+      - run: |
+          .mineru/bin/python work/runner.py prepare
+          .mineru/bin/mineru-kit models download --tier standard --small-backend onnx --vlm-engine llama-cpp --source huggingface
+  parse:
+    needs: prepare
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        chapter: ["book0-00","book0-01","book0-02","book0-03","book0-04","book0-05","book0-06","book0-07","book0-08","book0-09","book0-10","book0-11","book0-12","book0-13","book0-14","book0-15","book0-16","book0-17","book1-00","book1-01","book1-02","book1-03","book1-04","book1-05","book1-06","book1-07","book1-08","book1-09","book1-10","book1-11","book1-12","book1-13","book1-14"]
+    env:
+      WORK_CHAPTER: ${{ matrix.chapter }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: scripts/mineru-runner-20261011
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: scripts/mineru-runner-20261011/requirements-local.txt
+      - uses: actions/cache/restore@v4
+        with:
+          path: |
+            .mineru-models
+            sources
+          key: mineru-cellbooks-standard-4.0.11-onnx1.31.0-llamacpp0.1.2-v1
+          fail-on-cache-miss: true
+      - run: |
+          mkdir -p work
+          cp scripts/mineru-runner-20261011/* work/
+          python -m venv .mineru
+          .mineru/bin/pip install -r work/requirements-local.txt
+          .mineru/bin/python -u work/runner.py parse
+  publish:
+    needs: [prepare, parse]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+          sparse-checkout: |
+            scripts/mineru-runner-20261011
+            细胞生物学（王金发）
+            细胞生物学实验教程_第2版
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: scripts/mineru-runner-20261011/requirements-local.txt
+      - uses: actions/cache/restore@v4
+        with:
+          path: |
+            .mineru-models
+            sources
+          key: mineru-cellbooks-standard-4.0.11-onnx1.31.0-llamacpp0.1.2-v1
+          fail-on-cache-miss: true
+      - run: |
+          mkdir -p work
+          cp scripts/mineru-runner-20261011/* work/
+          python -m venv .mineru
+          .mineru/bin/pip install -r work/requirements-local.txt
+          .mineru/bin/python -u work/runner.py finish
