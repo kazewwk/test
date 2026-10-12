@@ -1,12 +1,12 @@
 name: Publish reviewed Anki package
 on:
   push:
-    branches: ["anki-v6-delivery-20261012"]
+    branches: ["anki-v6-delivery-20261012-slim"]
 permissions:
   contents: write
 concurrency:
-  group: anki-publish-${{ github.ref }}
-  cancel-in-progress: false
+  group: anki-publish-refs/heads/anki-v6-delivery-20261012
+  cancel-in-progress: true
 jobs:
   publish:
     runs-on: ubuntu-24.04
