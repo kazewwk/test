@@ -1,3 +1,0 @@
-| $\therefore {S}_{\Delta } = \frac{1}{2}\left( {\overrightarrow{A} + \overrightarrow{B}}\right)$ | $\therefore {S}_{\Delta } = \frac{1}{2}\left( {\overrightarrow{A} + \overrightarrow{B}}\right)$ |
-| --- | --- |
-| $\therefore {S}_{\Delta } = \frac{1}{2}\left( {\overrightarrow{A} + \overrightarrow{B}}\right)$ | $\therefore {S}_{\Delta } = \frac{1}{2}\left( {\overrightarrow{A} + \overrightarrow{B}}\right)$ |

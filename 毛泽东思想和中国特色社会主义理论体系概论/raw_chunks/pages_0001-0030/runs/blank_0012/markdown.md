@@ -1,1 +1,0 @@
-![](images/page_11_chart_0.jpg)

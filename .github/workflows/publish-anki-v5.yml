@@ -1,0 +1,25 @@
+name: Publish reviewed Anki package
+on:
+  push:
+    branches: ["anki-delivery-v5-20261012"]
+permissions:
+  contents: write
+concurrency:
+  group: anki-publish-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reconstruct and verify exact package bytes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 publish/reconstruct.py --manifest publish/manifest-index.json --parts-dir publish --output rebuilt
+      - name: Create a new release with verified assets
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          GITHUB_SHA: ${{ github.sha }}
+        run: python3 publish/reconstruct.py --manifest publish/manifest-index.json --output rebuilt --publish-verified
