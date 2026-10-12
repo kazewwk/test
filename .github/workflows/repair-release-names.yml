@@ -1,0 +1,16 @@
+name: Finalize Anki v5 release download names
+on:
+  push:
+    branches: [anki-delivery-v5-release-names-20261012]
+permissions:
+  contents: write
+jobs:
+  finalize:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rename verified new assets and publish matching checksums
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 publish/repair_release_names.py
