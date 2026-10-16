@@ -1,0 +1,3184 @@
+{
+  "pages": [
+    {
+      "page_idx": 496,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.06,
+            0.056,
+            0.088,
+            0.067
+          ],
+          "content": "192"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.055,
+            0.237,
+            0.068
+          ],
+          "content": "第十三章 幂级数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.111,
+            0.448,
+            0.13
+          ],
+          "content": "其中 $\\theta \\in (0,1)$ 因此有(13.4.1)式成立"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.135,
+            0.85,
+            0.178
+          ],
+          "content": "同理, 由 $\\cos^{(n)}(0) = \\cos \\frac{n\\pi}{2}$, 对任意的 $x \\in \\mathbb{R}$, 其 Taylor 公式中的 Lagrange 余项为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.286,
+            0.185,
+            0.673,
+            0.223
+          ],
+          "content": "\\left| \\frac {\\cos (\\theta x + n \\pi)}{(2 n) !} x ^ {2 n} \\right| \\leqslant \\frac {| x | ^ {2 n}}{(2 n) !} \\rightarrow 0 \\quad (n \\rightarrow + \\infty),",
+          "image_source": "images/page_496_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.241,
+            0.448,
+            0.26
+          ],
+          "content": "其中 $\\theta \\in (0,1)$ 因此有(13.4.2)式成立"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.268,
+            0.85,
+            0.309
+          ],
+          "content": "对数函数的幂级数展开:用同样的方法，也可以得到前面已经给出的对数函数的Maclaurin展式:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.295,
+            0.32,
+            0.657,
+            0.364
+          ],
+          "content": "\\ln (1 + x) = \\sum_ {n = 1} ^ {+ \\infty} \\frac {(- 1) ^ {n + 1}}{n} x ^ {n}, \\quad x \\in (- 1, 1).",
+          "image_source": "images/page_496_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.386,
+            0.85,
+            0.453
+          ],
+          "content": "上述函数的 Taylor 展式的收敛域可以通过单独考虑幂级数在收敛区间端点的敛散性得到, 在此不再赘述. 比如可以证明 $\\ln (1 + x)$ 的收敛域为 $(-1,1]$, $\\arctan x$ 的收敛域为 $[-1,1]$, $\\arcsin x$ 的收敛域为 $[-1,1]$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.46,
+            0.85,
+            0.526
+          ],
+          "content": "更一般函数的 Taylor 展式, 可以通过下一节幂级数之间的代数运算、已知幂级数展开的逐项求导或逐项积分, 再结合幂级数的唯一性的灵活运用得到. 前面提到的等式 (13.2.4), (13.2.5), (13.3.10) 和 (13.3.12) 等, 都是这些方法的灵活应用."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.105,
+            0.581,
+            0.414,
+            0.604
+          ],
+          "level": 2,
+          "content": "13.5 幂级数的代数运算"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.654,
+            0.85,
+            0.672
+          ],
+          "content": "我们简要讨论一下幂级数间的代数运算. 首先, 关于幂级数的加减, 有下面的结论:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.675,
+            0.848,
+            0.764
+          ],
+          "content": "定理 13.5.1 如果幂级数  $\\sum_{n=1}^{+\\infty}a_{n}x^{n}$  和  $\\sum_{n=1}^{+\\infty}b_{n}x^{n}$  的收敛半径分别为  $R_{1}$  和  $R_{2}$ ，则幂级数  $\\sum_{n=1}^{+\\infty}(a_{n}\\pm b_{n})x^{n}$  的收敛半径 R 为"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.14,
+            0.769,
+            0.47,
+            0.811
+          ],
+          "sub_type": "text",
+          "content": "(1) 若  $R_{1} \\neq R_{2}$ ，则  $R = \\min\\{R_{1}, R_{2}\\}$ .\n(2) 若  $R_{1}=R_{2}=R_{0}$ ，则  $R\\geqslant R_{0}$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.819,
+            0.848,
+            0.867
+          ],
+          "content": "不难看出, 在情形 (2), 对于任意的 $\\lambda > R_0$, 都可以找到这样的幂级数, 使得两幂级数和形成的幂级数收敛半径为 $\\lambda$. 事实上, 只要取 $a_n = -b_n + \\frac{1}{\\lambda^n}$ 即可."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.873,
+            0.848,
+            0.937
+          ],
+          "content": "关于两个幂级数的乘积, 首先, 我们知道, 对于两个给定的幂级数 $\\sum_{n=0}^{+\\infty} a_n x^n$ 和 $\\sum_{n=0}^{+\\infty} b_n x^n$, 如果它们的收敛半径均为 $R > 0$, 则当 $|x| < R$ 时, 这两个幂级数都绝对收敛, 因此它们"
+        }
+      ]
+    },
+    {
+      "page_idx": 497,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.718,
+            0.054,
+            0.893,
+            0.068
+          ],
+          "content": "13.5 幂级数的代数运算"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.914,
+            0.055,
+            0.941,
+            0.067
+          ],
+          "content": "193"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.11,
+            0.481,
+            0.128
+          ],
+          "content": "的乘积都等于它们的 Cauchy 乘积, 即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.363,
+            0.144,
+            0.686,
+            0.191
+          ],
+          "content": "\\left(\\sum_ {n = 0} ^ {+ \\infty} a _ {n} x ^ {n}\\right) \\left(\\sum_ {n = 0} ^ {+ \\infty} b _ {n} x ^ {n}\\right) = \\sum_ {n = 0} ^ {+ \\infty} c _ {n} x ^ {n},",
+          "image_source": "images/page_497_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.209,
+            0.636,
+            0.251
+          ],
+          "content": "其中  $c_{n}=\\sum_{i=0}^{n}a_{i}b_{n-i}\\ (n=0,1,2,\\cdots)$ . 即有下面的结论:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.254,
+            0.897,
+            0.316
+          ],
+          "content": "定理 13.5.2 设幂级数  $\\sum_{n=0}^{+\\infty}a_{n}x^{n}$  和  $\\sum_{n=0}^{+\\infty}b_{n}x^{n}$  的收敛半径都是 R, 那么当  $x \\in (-R, R)$  时, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.364,
+            0.32,
+            0.686,
+            0.368
+          ],
+          "content": "\\left(\\sum_ {n = 0} ^ {+ \\infty} a _ {n} x ^ {n}\\right) \\left(\\sum_ {n = 0} ^ {+ \\infty} b _ {n} x ^ {n}\\right) = \\sum_ {n = 0} ^ {+ \\infty} c _ {n} x ^ {n},",
+          "image_source": "images/page_497_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.152,
+            0.38,
+            0.479,
+            0.422
+          ],
+          "content": "其中  $c_{n}=\\sum_{i=0}^{n}a_{i}b_{n-i}\\ (n=0,1,2,\\cdots)$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.425,
+            0.68,
+            0.443
+          ],
+          "content": "我们再从幂级数的角度重新考虑一下 Abel 定理 11.4.11."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.446,
+            0.898,
+            0.554
+          ],
+          "content": "定理 13.5.3 (Abel 定理) 设  $\\sum_{n=0}^{+\\infty}a_{n}=A$  和  $\\sum_{n=0}^{+\\infty}b_{n}=B$  均为收敛级数, 如果它们的 Cauchy 乘积级数  $\\sum_{n=0}^{+\\infty}c_{n}=C$  也收敛, 其中  $c_{n}=a_{0}b_{n}+a_{1}b_{n-1}+\\cdots+a_{n}b_{0}$ , 则成立"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.482,
+            0.563,
+            0.566,
+            0.579
+          ],
+          "content": "C = A B.",
+          "image_source": "images/page_497_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.598,
+            0.389,
+            0.616
+          ],
+          "content": "证明 根据假设, 级数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.382,
+            0.634,
+            0.667,
+            0.678
+          ],
+          "content": "\\sum_ {n = 0} ^ {+ \\infty} a _ {n} x ^ {n}, \\quad \\sum_ {n = 0} ^ {+ \\infty} b _ {n} x ^ {n}, \\quad \\sum_ {n = 0} ^ {+ \\infty} c _ {n} x ^ {n}",
+          "image_source": "images/page_497_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.695,
+            0.568,
+            0.714
+          ],
+          "content": "的收敛半径都不小于1, 因此当  $|x| < 1$  时, 成立"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.366,
+            0.73,
+            0.687,
+            0.776
+          ],
+          "content": "\\left(\\sum_ {n = 0} ^ {+ \\infty} a _ {n} x ^ {n}\\right) \\left(\\sum_ {n = 0} ^ {+ \\infty} b _ {n} x ^ {n}\\right) = \\sum_ {n = 0} ^ {+ \\infty} c _ {n} x ^ {n}.",
+          "image_source": "images/page_497_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.792,
+            0.704,
+            0.81
+          ],
+          "content": "在上式两端取 $x \\to 1^{-}$ 的极限, 根据Abel第二定理知定理成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.814,
+            0.9,
+            0.877
+          ],
+          "content": "例 13.5.1 假设幂级数  $\\sum_{n=0}^{+\\infty}a_{n}x^{n}$  的收敛半径为 1, 考虑它与幂级数  $\\sum_{n=0}^{+\\infty}x^{n}$  的乘积. 因为两者有相同的收敛半径, 根据上述定理, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.373,
+            0.893,
+            0.682,
+            0.939
+          ],
+          "content": "\\left(\\sum_ {n = 0} ^ {+ \\infty} x ^ {n}\\right) \\left(\\sum_ {n = 0} ^ {+ \\infty} a _ {n} x ^ {n}\\right) = \\sum_ {n = 0} ^ {+ \\infty} S _ {n} x ^ {n},",
+          "image_source": "images/page_497_equation_17.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 498,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.059,
+            0.054,
+            0.088,
+            0.065
+          ],
+          "content": "194"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.052,
+            0.238,
+            0.066
+          ],
+          "content": "第十三章 幂级数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.11,
+            0.529,
+            0.127
+          ],
+          "content": "其中  $S_{n}=a_{0}+a_{1}+\\cdots+a_{n}(n=0,1,2,\\cdots)$ . 即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.337,
+            0.139,
+            0.62,
+            0.185
+          ],
+          "content": "\\frac {1}{1 - x} \\cdot \\left(\\sum_ {n = 0} ^ {+ \\infty} a _ {n} x ^ {n}\\right) = \\sum_ {n = 0} ^ {+ \\infty} S _ {n} x ^ {n}.",
+          "image_source": "images/page_498_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.195,
+            0.462,
+            0.212
+          ],
+          "content": "如果再进行一次上式操作过程, 可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.325,
+            0.224,
+            0.632,
+            0.27
+          ],
+          "content": "\\frac {1}{(1 - x) ^ {2}} \\cdot \\left(\\sum_ {n = 0} ^ {+ \\infty} a _ {n} x ^ {n}\\right) = \\sum_ {n = 0} ^ {+ \\infty} T _ {n} x ^ {n},",
+          "image_source": "images/page_498_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.28,
+            0.506,
+            0.298
+          ],
+          "content": "其中  $T_{n}=S_{0}+S_{1}+\\cdots+S_{n}(n=0,1,2,\\cdots)$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.304,
+            0.596,
+            0.321
+          ],
+          "content": "例 13.5.2 设  $r \\in (-1,1)$ ,  $x \\in R$ , 求下面级数的和:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.4,
+            0.334,
+            0.554,
+            0.378
+          ],
+          "content": "1 + \\sum_ {n = 1} ^ {+ \\infty} r ^ {n} \\cos n x.",
+          "image_source": "images/page_498_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.389,
+            0.374,
+            0.406
+          ],
+          "content": "解 我们计算级数的乘积:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.155,
+            0.416,
+            0.804,
+            0.645
+          ],
+          "content": "\\begin{array}{l} \\left(1 - 2 r \\cos x + r ^ {2}\\right) \\left(1 + \\sum_ {n = 1} ^ {+ \\infty} r ^ {n} \\cos n x\\right) \\\\ = 1 - 2 r \\cos x + r ^ {2} + \\sum_ {n = 1} ^ {+ \\infty} r ^ {n} \\cos n x - 2 r \\sum_ {n = 1} ^ {+ \\infty} r ^ {n} \\cos x \\cos n x + \\sum_ {n = 1} ^ {+ \\infty} r ^ {n + 2} \\cos n x \\\\ = 1 - 2 r \\cos x + r ^ {2} + \\sum_ {n = 1} ^ {+ \\infty} r ^ {n} \\cos n x - r \\sum_ {n = 1} ^ {+ \\infty} r ^ {n} (\\cos (n - 1) x + \\cos (n + 1) x) + \\\\ \\sum_ {n = 1} ^ {+ \\infty} r ^ {n + 2} \\cos n x \\\\ = 1 - r \\cos x. \\\\ \\end{array}",
+          "image_source": "images/page_498_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.659,
+            0.229,
+            0.675
+          ],
+          "content": "由此可得等式"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.26,
+            0.688,
+            0.85,
+            0.731
+          ],
+          "content": "\\frac {1 - r \\cos x}{1 - 2 r \\cos x + r ^ {2}} = 1 + \\sum_ {n = 1} ^ {+ \\infty} r ^ {n} \\cos n x, \\quad r \\in (- 1, 1). \\tag {13.5.1}",
+          "image_source": "images/page_498_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.742,
+            0.664,
+            0.76
+          ],
+          "content": "将上式中右端的 1 移到左端, 两边除以 $r$, 再关于 $r$ 逐项积分, 得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.244,
+            0.772,
+            0.85,
+            0.815
+          ],
+          "content": "\\ln (1 - 2 r \\cos x + r ^ {2}) = - 2 \\sum_ {n = 1} ^ {+ \\infty} \\frac {r ^ {n}}{n} \\cos n x, r \\in (- 1, 1). \\tag {13.5.2}",
+          "image_source": "images/page_498_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.827,
+            0.479,
+            0.844
+          ],
+          "content": "上式两端关于 x 积分, 则得如下 Dini 积分:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.3,
+            0.852,
+            0.849,
+            0.888
+          ],
+          "content": "\\int_ {0} ^ {\\pi} \\ln (1 - 2 r \\cos x + r ^ {2}) \\mathrm{d} x = 0, | r | <   1. \\tag {13.5.3}",
+          "image_source": "images/page_498_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.831,
+            0.894,
+            0.85,
+            0.907
+          ],
+          "content": "□"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.917,
+            0.725,
+            0.934
+          ],
+          "content": "下面我们考虑幂级数的除法运算, 它可以看成是乘法运算的逆运算."
+        }
+      ]
+    },
+    {
+      "page_idx": 499,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.72,
+            0.054,
+            0.896,
+            0.068
+          ],
+          "content": "13.5 幂级数的代数运算"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.916,
+            0.055,
+            0.944,
+            0.067
+          ],
+          "content": "195"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.11,
+            0.896,
+            0.199
+          ],
+          "content": "定理 13.5.4 设幂级数  $\\sum_{n=0}^{+\\infty}a_{n}x^{n}$  在区间  $(-R,R)$  中收敛,  $a_{0}\\neq0$ . 则存在 r>0,\n使得幂级数  $\\sum_{n=0}^{+\\infty}b_{n}x^{n}$  在  $(-r,r)$  中收敛, 且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.214,
+            0.719,
+            0.26
+          ],
+          "content": "\\left(\\sum_ {n = 0} ^ {+ \\infty} a _ {n} x ^ {n}\\right) \\left(\\sum_ {n = 0} ^ {+ \\infty} b _ {n} x ^ {n}\\right) \\equiv 1, \\forall x \\in (- r, r).",
+          "image_source": "images/page_499_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.273,
+            0.64,
+            0.292
+          ],
+          "content": "证明 不妨设  $a_{0}=1$ . 递归定义  $b_{n}$  如下: 令  $b_{0}=1$ ,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.408,
+            0.306,
+            0.64,
+            0.351
+          ],
+          "content": "b _ {n} = - \\sum_ {i = 0} ^ {n - 1} a _ {n - i} b _ {i}, n \\geqslant 1.",
+          "image_source": "images/page_499_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.367,
+            0.899,
+            0.45
+          ],
+          "content": "我们先证明幂级数 $\\sum_{n=0}^{+\\infty} b_n x^n$ 具有正的收敛半径. 事实上, 因为 $\\sum_{n=0}^{+\\infty} a_n x^n$ 在 $(-R, R)$ 中收敛, 故存在 $M > 0$, 使得 $\\left|a_n \\left(\\frac{R}{2}\\right)^n \\right| \\leqslant M$. 因此有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.246,
+            0.463,
+            0.806,
+            0.51
+          ],
+          "content": "\\left| b _ {n} \\left(\\frac {R}{2}\\right) ^ {n} \\right| \\leqslant \\sum_ {i = 0} ^ {n - 1} \\left| a _ {n - i} \\left(\\frac {R}{2}\\right) ^ {n - i} \\right| \\left| b _ {i} \\left(\\frac {R}{2}\\right) ^ {i} \\right| \\leqslant M \\sum_ {i = 0} ^ {n - 1} \\left| b _ {i} \\left(\\frac {R}{2}\\right) ^ {i} \\right|.",
+          "image_source": "images/page_499_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.523,
+            0.357,
+            0.541
+          ],
+          "content": "由数学归纳法不难得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.377,
+            0.55,
+            0.675,
+            0.589
+          ],
+          "content": "\\left| b _ {n} \\left(\\frac {R}{2}\\right) ^ {n} \\right| \\leqslant (1 + M) ^ {n}, \\forall n \\geqslant 0.",
+          "image_source": "images/page_499_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.604,
+            0.845,
+            0.647
+          ],
+          "content": "故幂级数 $\\sum_{n=0}^{+\\infty} b_n x^n$ 的收敛半径至少为 $r = \\frac{R}{2(1 + M)}$. 根据 $\\{b_n\\}$ 的构造, 显然有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.297,
+            0.662,
+            0.756,
+            0.715
+          ],
+          "content": "\\left(\\sum_ {n = 0} ^ {+ \\infty} a _ {n} x ^ {n}\\right) \\left(\\sum_ {n = 0} ^ {+ \\infty} b _ {n} x ^ {n}\\right) = \\sum_ {n = 0} ^ {+ \\infty} \\left(\\sum_ {i + j = n} a _ {i} b _ {j}\\right) x ^ {n} = 1.",
+          "image_source": "images/page_499_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.728,
+            0.899,
+            0.775
+          ],
+          "content": "例 13.5.3 试研究函数  $\\frac{1}{1+x+x^{2}+\\cdots+x^{m-1}}\\quad(m>1)$  的 Maclaurin 级数展开.\n解 直接计算可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.167,
+            0.79,
+            0.901,
+            0.835
+          ],
+          "content": "\\frac {1}{1 + x + x ^ {2} + \\cdots + x ^ {m - 1}} = (1 - x) \\sum_ {n = 0} ^ {+ \\infty} x ^ {m n} = \\sum_ {n = 0} ^ {+ \\infty} x ^ {m n} - \\sum_ {n = 0} ^ {+ \\infty} x ^ {m n + 1}, \\quad x \\in (- 1, 1).",
+          "image_source": "images/page_499_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.848,
+            0.701,
+            0.876
+          ],
+          "content": "例 13.5.4 试研究函数  $\\frac{x}{e^{x}-1}$  在 x=0 处的幂级数展开."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.192,
+            0.876,
+            0.258,
+            0.892
+          ],
+          "content": "解记"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.437,
+            0.895,
+            0.897,
+            0.938
+          ],
+          "content": "\\frac {x}{\\mathrm{e} ^ {x} - 1} = \\sum_ {n = 0} ^ {+ \\infty} \\frac {B _ {n}}{n !} x ^ {n}, \\tag {13.5.4}",
+          "image_source": "images/page_499_equation_16.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 500,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.058,
+            0.056,
+            0.086,
+            0.067
+          ],
+          "content": "196"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.105,
+            0.054,
+            0.237,
+            0.068
+          ],
+          "content": "第十三章 幂级数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.111,
+            0.495,
+            0.129
+          ],
+          "content": "其系数 $B_{n}$ 称为第 $n$ 个Bernoulli数. 我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.243,
+            0.142,
+            0.712,
+            0.228
+          ],
+          "content": "\\begin{array}{l} \\frac {x}{\\mathrm{e} ^ {x} - 1} = \\left(\\frac {\\mathrm{e} ^ {x} - 1}{x}\\right) ^ {- 1} = \\left(\\sum_ {n = 0} ^ {+ \\infty} \\frac {x ^ {n}}{(n + 1) !}\\right) ^ {- 1} \\\\ = 1 - \\frac {x}{2} + \\frac {x ^ {2}}{1 2} - \\frac {x ^ {4}}{7 2 0} + \\frac {x ^ {6}}{3 0 2 4 0} - \\frac {x ^ {8}}{1 2 0 9 6 0 0} + \\dots . \\\\ \\end{array}",
+          "image_source": "images/page_500_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.239,
+            0.611,
+            0.271
+          ],
+          "content": "注意到上式中 $B_{1} = -\\frac{1}{2}$, 当 $n \\geqslant 1$ 时 $B_{2n+1} = 0$, 这是因为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.327,
+            0.283,
+            0.848,
+            0.314
+          ],
+          "content": "\\frac {x}{\\mathrm{e} ^ {x} - 1} + \\frac {x}{2} = \\frac {x}{2} \\frac {\\mathrm{e} ^ {x} + 1}{\\mathrm{e} ^ {x} - 1} = \\frac {x}{2} \\coth \\frac {x}{2}, \\tag {13.5.5}",
+          "image_source": "images/page_500_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.325,
+            0.381,
+            0.354
+          ],
+          "content": "即  $\\frac{x}{\\mathrm{e}^{x}-1}+\\frac{x}{2}$  为偶函数的缘故."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.357,
+            0.664,
+            0.375
+          ],
+          "content": "根据幂级数的除法公式, 我们容易得到  $B_{n}$  的如下递推公式:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.322,
+            0.388,
+            0.629,
+            0.433
+          ],
+          "content": "B _ {0} = 1, B _ {n} = - \\frac {1}{n + 1} \\sum_ {k = 0} ^ {n - 1} \\mathrm{C} _ {n + 1} ^ {k} B _ {k}.",
+          "image_source": "images/page_500_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.446,
+            0.407,
+            0.463
+          ],
+          "content": "例如, 开头的几个 Bernoulli 数 $^{①}$ 为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.137,
+            0.473,
+            0.85,
+            0.505
+          ],
+          "content": "B _ {0} = 1, \\quad B _ {1} = - \\frac {1}{2}, \\quad B _ {2} = \\frac {1}{6}, \\quad B _ {3, 5, 7} = 0, \\quad B _ {4} = - \\frac {1}{3 0}, \\quad B _ {6} = \\frac {1}{4 2}, \\quad B _ {8} = - \\frac {1}{3 0}. \\quad \\square",
+          "image_source": "images/page_500_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.514,
+            0.279,
+            0.53
+          ],
+          "content": "例13.5.5 设"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.239,
+            0.539,
+            0.848,
+            0.574
+          ],
+          "content": "f (x) = \\frac {x}{1} + \\frac {x ^ {3}}{1 \\times 3} + \\frac {x ^ {5}}{1 \\times 3 \\times 5} + \\dots + \\frac {x ^ {2 n + 1}}{(2 n + 1) ! !} + \\dots , \\tag {13.5.6}",
+          "image_source": "images/page_500_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.587,
+            0.148,
+            0.603
+          ],
+          "content": "以及"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.289,
+            0.602,
+            0.848,
+            0.637
+          ],
+          "content": "g (x) = 1 + \\frac {x ^ {2}}{2} + \\frac {x ^ {4}}{2 \\times 4} + \\dots + \\frac {x ^ {2 n}}{(2 n) ! !} + \\dots . \\tag {13.5.7}",
+          "image_source": "images/page_500_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.646,
+            0.401,
+            0.662
+          ],
+          "content": "证明: 上述两个幂级数的比值满足"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.339,
+            0.676,
+            0.848,
+            0.717
+          ],
+          "content": "\\frac {f (x)}{g (x)} = \\sum_ {n = 0} ^ {+ \\infty} (- 1) ^ {n} \\frac {x ^ {2 n + 1}}{(2 n) ! ! (2 n + 1)}. \\tag {13.5.8}",
+          "image_source": "images/page_500_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.731,
+            0.692,
+            0.751
+          ],
+          "content": "证明 容易看出, $g(x) = \\mathrm{e}^{x^2 / 2}$, 同时还有 (13.5.8) 式右边的级数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.195,
+            0.764,
+            0.754,
+            0.808
+          ],
+          "content": "\\sum_ {n = 0} ^ {+ \\infty} (- 1) ^ {n} \\frac {x ^ {2 n + 1}}{(2 n) ! ! (2 n + 1)} = \\sum_ {n = 0} ^ {+ \\infty} \\int_ {0} ^ {x} \\frac {1}{n !} \\left(\\frac {- t ^ {2}}{2}\\right) ^ {n} \\mathrm{d} t = \\int_ {0} ^ {x} \\mathrm{e} ^ {- t ^ {2} / 2} \\mathrm{d} t.",
+          "image_source": "images/page_500_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.82,
+            0.287,
+            0.837
+          ],
+          "content": "因此，只需证明"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.281,
+            0.845,
+            0.672,
+            0.882
+          ],
+          "content": "f (x) = g (x) \\int_ {0} ^ {x} \\mathrm{e} ^ {- t ^ {2} / 2} \\mathrm{d} t = \\mathrm{e} ^ {x ^ {2} / 2} \\int_ {0} ^ {x} \\mathrm{e} ^ {- t ^ {2} / 2} \\mathrm{d} t",
+          "image_source": "images/page_500_equation_20.jpg"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.1,
+            0.888,
+            0.85,
+            0.94
+          ],
+          "content": "① 这样定义的 Bernoulli 数称为第一 Bernoulli 数, 此时  $B_{1} = -\\frac{1}{2}$ . 当定义  $B_{1} = \\frac{1}{2}$ , 其他  $B_{k}$  不变时, 称为第二 Bernoulli 数, 第二 Bernoulli 数可通过考虑函数  $\\frac{x e^{x}}{e^{x} - 1}$  的幂级数展开得到."
+        }
+      ]
+    },
+    {
+      "page_idx": 501,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.714,
+            0.053,
+            0.891,
+            0.068
+          ],
+          "content": "13.5 幂级数的代数运算"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.91,
+            0.054,
+            0.939,
+            0.067
+          ],
+          "content": "197"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.109,
+            0.884,
+            0.144
+          ],
+          "content": "即可. 记 $h(x) = \\mathrm{e}^{x^2 / 2}\\int_0^x\\mathrm{e}^{-t^2 / 2}\\mathrm{d}t.$ 事实上，一方面由(13.5.6)式逐项求导，容易看出"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.437,
+            0.155,
+            0.601,
+            0.174
+          ],
+          "content": "f ^ {\\prime} (x) = 1 + x f (x).",
+          "image_source": "images/page_501_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.191,
+            0.237,
+            0.207
+          ],
+          "content": "另一方面，"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.214,
+            0.215,
+            0.825,
+            0.252
+          ],
+          "content": "h ^ {\\prime} (x) = \\frac {\\mathrm{d}}{\\mathrm{d} x} \\Big (\\mathrm{e} ^ {x ^ {2} / 2} \\int_ {0} ^ {x} \\mathrm{e} ^ {- t ^ {2} / 2} \\mathrm{d} t \\Big) = 1 + x \\mathrm{e} ^ {x ^ {2} / 2} \\int_ {0} ^ {x} \\mathrm{e} ^ {- t ^ {2} / 2} \\mathrm{d} t = 1 + x h (x).",
+          "image_source": "images/page_501_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.263,
+            0.894,
+            0.306
+          ],
+          "content": "所以，我们看到 $f(x)$ 和 $h(x)$ 满足相同的微分方程关系式 $y' = 1 + xy$ ，并且两者还都满足 $f(0) = 0$ 和 $h(0) = 0$ 因此 $f(x) \\equiv h(x)^{\\text{①}}$ □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.311,
+            0.894,
+            0.352
+          ],
+          "content": "幂级数之间还可以做代入运算, 或者称之为幂级数的复合运算, 即把一个幂级数代入到另一个幂级数. 限于篇幅, 我们在此不再铺开讨论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.358,
+            0.789,
+            0.376
+          ],
+          "content": "下面的例子说明: 光滑函数的 Taylor 展开的系数可以为任意实数列."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.382,
+            0.893,
+            0.423
+          ],
+          "content": "例 13.5.6 对于任意给定的数列  $\\{a_{n}\\}$ ，都可以构造一个光滑函数  $f(x)$ ，使得该函数在 x=0 处的 Maclaurin 级数的系数恰好满足  $f^{(n)}(0)=a_{n}, n=0,1,2,\\cdots$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.429,
+            0.402,
+            0.447
+          ],
+          "content": "解 设 $\\varphi \\in C^{\\infty}(\\mathbb{R})$ 满足"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.414,
+            0.459,
+            0.617,
+            0.529
+          ],
+          "content": "\\varphi (x) = \\left\\{ \\begin{array}{l l} 1, & | x | \\leqslant \\frac {1}{4}, \\\\ 0, & | x | \\geqslant \\frac {1}{2}. \\end{array} \\right.",
+          "image_source": "images/page_501_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.542,
+            0.421,
+            0.559
+          ],
+          "content": "对于实数列  $a_{0}, a_{1}, a_{2}, \\cdots$ ，定义"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.367,
+            0.573,
+            0.676,
+            0.616
+          ],
+          "content": "f (x) = \\sum_ {n = 0} ^ {+ \\infty} \\frac {a _ {n}}{n !} \\varphi (a _ {n} x) x ^ {n}, \\quad \\forall   x \\in \\mathbb {R}.",
+          "image_source": "images/page_501_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.63,
+            0.56,
+            0.648
+          ],
+          "content": "可以证明 $f \\in C^{\\infty}(\\mathbb{R})$，且 $f^{(n)}(0) = a_n, \\forall n \\geqslant 0$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.653,
+            0.894,
+            0.694
+          ],
+          "content": "事实上, 因为 $x^{k+1}\\varphi^{(k)}(x) \\in C^{\\infty}(\\mathbb{R})$ 且仅在有界集上非零. 因此, 它们在 $\\mathbb{R}$ 上都是有界的. 设"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.341,
+            0.699,
+            0.701,
+            0.728
+          ],
+          "content": "\\sup _ {x \\in \\mathbb {R}} | x ^ {k + 1} \\varphi^ {(k)} (x) | \\leqslant M _ {k}, \\quad k = 0, 1, 2, \\dots .",
+          "image_source": "images/page_501_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.736,
+            0.176,
+            0.753
+          ],
+          "content": "则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.327,
+            0.751,
+            0.718,
+            0.785
+          ],
+          "content": "\\left| \\frac {a _ {n}}{n !} \\varphi (a _ {n} x) x ^ {n} \\right| \\leqslant \\frac {M _ {0} | x | ^ {n - 1}}{n !}, \\quad \\forall n \\geqslant 1, x \\in \\mathbb {R}.",
+          "image_source": "images/page_501_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.794,
+            0.823,
+            0.836
+          ],
+          "content": "因此, 级数 $\\sum_{n=0}^{+\\infty} \\frac{a_n}{n!} \\varphi(a_n x) x^n$ 在 $\\mathbb{R}$ 上内闭一致收敛. 进而可得 $f(x)$ 连续. 从而"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.375,
+            0.845,
+            0.67,
+            0.888
+          ],
+          "content": "f (0) = \\sum_ {n = 0} ^ {+ \\infty} \\frac {a _ {n}}{n !} \\varphi (a _ {n} x) x ^ {n} \\Big | _ {x = 0} = a _ {0}.",
+          "image_source": "images/page_501_equation_20.jpg"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.15,
+            0.899,
+            0.897,
+            0.933
+          ],
+          "content": "① 这里我们利用了常微分方程的一个基本结论:一阶线性微分方程初值问题的解是存在唯一的。读者也可以直接证明两者相等。"
+        }
+      ]
+    },
+    {
+      "page_idx": 502,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.064,
+            0.055,
+            0.091,
+            0.066
+          ],
+          "content": "198"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.11,
+            0.053,
+            0.24,
+            0.068
+          ],
+          "content": "第十三章 幂级数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.11,
+            0.568,
+            0.153
+          ],
+          "content": "现考虑级数 $\\sum_{n=0}^{+\\infty} \\frac{a_n}{n!} \\varphi(a_n x) x^n$ 形式求导后的级数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.25,
+            0.16,
+            0.712,
+            0.203
+          ],
+          "content": "a _ {0} ^ {2} \\varphi^ {\\prime} (a _ {0} x) + \\sum_ {n = 1} ^ {+ \\infty} \\frac {1}{n !} \\Big (a _ {n} ^ {2} \\varphi^ {\\prime} (a _ {n} x) x ^ {n} + n a _ {n} \\varphi (a _ {n} x) x ^ {n - 1} \\Big).",
+          "image_source": "images/page_502_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.109,
+            0.209,
+            0.153,
+            0.224
+          ],
+          "content": "由于"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.164,
+            0.227,
+            0.799,
+            0.264
+          ],
+          "content": "\\left| \\frac {1}{n !} \\Big (a _ {n} ^ {2} \\varphi^ {\\prime} (a _ {n} x) x ^ {n} + n a _ {n} \\varphi (a _ {n} x) x ^ {n - 1} \\Big) \\right| \\leqslant \\frac {1}{n !} \\big (M _ {1} + n M _ {0} \\big) | x | ^ {n - 2}, \\quad \\forall   n \\geqslant 2,",
+          "image_source": "images/page_502_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.109,
+            0.269,
+            0.153,
+            0.284
+          ],
+          "content": "可知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.251,
+            0.283,
+            0.707,
+            0.325
+          ],
+          "content": "a _ {0} ^ {2} \\varphi^ {\\prime} (a _ {0} x) + \\sum_ {n = 1} ^ {+ \\infty} \\frac {1}{n !} \\Big (a _ {n} ^ {2} \\varphi^ {\\prime} (a _ {n} x) x ^ {n} + n a _ {n} \\varphi (a _ {n} x) x ^ {n - 1} \\Big)",
+          "image_source": "images/page_502_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.33,
+            0.854,
+            0.438
+          ],
+          "content": "在 $\\mathbb{R}$ 上内闭一致收敛. 从而 $f(x)$ 连续可导且导数可以通过对 $\\sum_{n=0}^{+\\infty} \\frac{a_n}{n!} \\varphi(a_n x) x^n$ 逐项求导得到. 一般地, 可以证明 $f(x)$ 任意次可导, 且各阶导数可以通过对 $\\sum_{n=0}^{+\\infty} \\frac{a_n}{n!} \\varphi(a_n x) x^n$ 逐项求导得到. 因此,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.209,
+            0.443,
+            0.855,
+            0.669
+          ],
+          "content": "\\begin{array}{l} f ^ {(n)} (0) = \\sum_ {k = 0} ^ {+ \\infty} \\left(\\frac {a _ {k}}{k !} \\varphi (a _ {k} x) x ^ {k}\\right) ^ {(n)} \\bigg | _ {x = 0} = \\sum_ {k = 0} ^ {n} \\left(\\frac {a _ {k}}{k !} \\varphi (a _ {k} x) x ^ {k}\\right) ^ {(n)} \\bigg | _ {x = 0} \\\\ = \\sum_ {k = 0} ^ {n} \\frac {a _ {k}}{k !} \\sum_ {i = 1} ^ {n} \\mathrm{C} _ {n} ^ {i} (\\varphi (a _ {k} x)) ^ {(i)} (x ^ {k}) ^ {(n - i)} \\Bigg | _ {x = 0} \\\\ = \\sum_ {k = 0} ^ {n} \\frac {a _ {k}}{k !} \\mathrm{C} _ {n} ^ {n - k} k! a _ {k} ^ {n - k} \\varphi^ {(n - k)} (0) \\\\ = \\sum_ {k = 0} ^ {n} C _ {n} ^ {n - k} a _ {k} ^ {n + 1 - k} \\varphi^ {(n - k)} (0) \\\\ = \\mathrm{C} _ {n} ^ {0} a _ {n} \\varphi^ {(0)} (0) = a _ {n}, \\quad \\forall n \\in \\mathbb {N}. \\\\ \\end{array}",
+          "image_source": "images/page_502_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.681,
+            0.853,
+            0.722
+          ],
+          "content": "我们上面看到, 的确存在无穷光滑的函数, 其 Taylor 级数的收敛半径为零, 但可以证明, 这些函数不应该是初等函数."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.145,
+            0.728,
+            0.53,
+            0.745
+          ],
+          "level": 2,
+          "content": "Tauber 型求和: Cesàro 求和, Abel 求和."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.751,
+            0.853,
+            0.886
+          ],
+          "content": "下面我们简要介绍一下另外两种模式下的级数求和: Cesàro 求和与 Abel 求和. 我们知道, 对于给定的数列  $\\{a_{n}\\}$ , 可以通过引入部分和数列  $\\{S_{n}\\}$ ,  $S_{n}=a_{1}+a_{2}+\\cdots+a_{n}$  ( $n=1,2,\\cdots$ ), 以及  $\\{S_{n}\\}$  的极限存在与否来定义级数的收敛与发散. 因此, 可以看到, 这仅仅是对给定数列  $\\{a_{n}\\}$  的一种人为的 (经典) 求和模式而已. 既然如此, 我们也可以用其他的方式来定义级数的求和. Cesàro 求和以及 Abel 求和即为另外两种常见求和方式."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.893,
+            0.853,
+            0.934
+          ],
+          "content": "Cesàro 求和: 这是由意大利数学家 E. Cesàro 引入的一种计算级数和的方法, 此定义推广了经典的级数求和, 使得不仅适用于收敛的级数, 也适用于某些通常意义下发"
+        }
+      ]
+    },
+    {
+      "page_idx": 503,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.717,
+            0.055,
+            0.893,
+            0.068
+          ],
+          "content": "13.5 幂级数的代数运算"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.913,
+            0.056,
+            0.941,
+            0.068
+          ],
+          "content": "199"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.11,
+            0.895,
+            0.152
+          ],
+          "continues_prev": true,
+          "content": "散的级数. 如果级数在经典意义下收敛到 $S$, 则其 Cesàro 求和也收敛且其值也为 $S$. 对于某些经典模式下发散的级数, 通过 Cesàro 求和方式, 也有可能给出一个和."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.156,
+            0.896,
+            0.224
+          ],
+          "content": "定义 13.5.1 级数  $\\sum_{n=1}^{+\\infty} c_{n}$  称为可 Cesàro 求和 (或 Cesàro 可知), 是指当  $n \\to +\\infty$  时数列  $\\{\\sigma_{n}\\}$  极限  $\\lim_{n \\to +\\infty} \\sigma_{n}$  存在且为有限, 其中"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.336,
+            0.235,
+            0.705,
+            0.281
+          ],
+          "content": "\\sigma_ {n} = \\frac {S _ {1} + S _ {2} + \\cdots + S _ {n}}{n}, \\qquad S _ {k} = \\sum_ {n = 1} ^ {k} c _ {n},",
+          "image_source": "images/page_503_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.29,
+            0.722,
+            0.307
+          ],
+          "content": "并且把极限值定义为级数的 Cesàro 意义下的和, 简称 Cesàro 和."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.313,
+            0.673,
+            0.331
+          ],
+          "content": "下面的结论可以由 Stolz 公式 (Stolz-Cesàro 定理) 得到."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.336,
+            0.895,
+            0.395
+          ],
+          "content": "定理 13.5.5 如果级数  $\\sum_{n=1}^{+\\infty} c_{n}$  收敛, 则该级数一定可 Cesàro 求和, 且级数和与 Cesàro 和相等."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.402,
+            0.431,
+            0.419
+          ],
+          "content": "注意, 定理的逆命题不成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.424,
+            0.832,
+            0.466
+          ],
+          "content": "例 13.5.7 发散级数  $\\sum_{n=1}^{+\\infty}(-1)^{n+1}$  是可 Cesàro 求和的, 且 Cesàro 和为  $\\frac{1}{2}$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.468,
+            0.896,
+            0.51
+          ],
+          "content": "如果我们把上述 Cesàro 求和称为一阶 Cesàro 求和, 并称为 Cesàro  $(C,1)$  求和的话, 那么进一步, 我们还可以定义二阶甚至 p 阶的 Cesàro 求和  $(C,p)$  如下:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.516,
+            0.515,
+            0.533
+          ],
+          "content": "首先, 考虑通项为  $b_{n} \\equiv 1$  的特殊级数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.412,
+            0.539,
+            0.632,
+            0.581
+          ],
+          "content": "\\sum_ {n = 1} ^ {+ \\infty} b _ {n} = 1 + 1 + 1 + \\dots .",
+          "image_source": "images/page_503_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.586,
+            0.195,
+            0.602
+          ],
+          "content": "定义"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.304,
+            0.599,
+            0.741,
+            0.641
+          ],
+          "content": "B _ {n} ^ {(- 1)} = b _ {n} = 1 = \\mathrm{C} _ {n} ^ {0}, \\qquad B _ {n} ^ {(0)} = \\sum_ {k = 1} ^ {n} b _ {k} = n = \\mathrm{C} _ {n} ^ {1},",
+          "image_source": "images/page_503_equation_14.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.192,
+            0.648,
+            0.851,
+            0.691
+          ],
+          "content": "B _ {n} ^ {(1)} = \\sum_ {k = 1} ^ {n} B _ {k} ^ {(0)} = \\frac {n (n + 1)}{2} = \\mathrm{C} _ {n + 1} ^ {2}, \\quad \\dots , \\quad B _ {n} ^ {(p)} = \\sum_ {k = 1} ^ {n} B _ {k} ^ {(p - 1)} = \\mathrm{C} _ {n + p} ^ {p + 1}, \\dots .",
+          "image_source": "images/page_503_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.695,
+            0.896,
+            0.756
+          ],
+          "content": "其次, 对任一给定级数 $\\sum_{n=1}^{+\\infty} a_n$, 记 $A_n^{(0)} = \\sum_{k=1}^{n} a_k$. 把前面定义中的级数 $\\sum_{n=1}^{+\\infty} a_n$ 的一阶 Cesàro (C, 1) 求和改记为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.283,
+            0.761,
+            0.763,
+            0.816
+          ],
+          "content": "A _ {n} ^ {(1)} = \\lim _ {n \\to + \\infty} \\frac {\\sum_ {k = 1} ^ {n} B _ {k} ^ {(- 1)} A _ {k} ^ {(0)}}{B _ {n} ^ {(0)}} = \\frac {A _ {1} ^ {(0)} + A _ {2} ^ {(0)} + \\cdots + A _ {n} ^ {(0)}}{\\mathrm{C} _ {n} ^ {1}}.",
+          "image_source": "images/page_503_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.82,
+            0.547,
+            0.863
+          ],
+          "content": "定义级数 $\\sum_{n=1}^{+\\infty} a_n$ 的二阶 Cesàro $(C,2)$ 求和为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.252,
+            0.868,
+            0.794,
+            0.939
+          ],
+          "content": "A _ {n} ^ {(2)} = \\lim _ {n \\to + \\infty} \\frac {\\sum_ {k = 1} ^ {n} B _ {k} ^ {(0)} A _ {k} ^ {(1)}}{\\sum_ {k = 1} ^ {n} B _ {k} ^ {(0)}} = \\frac {n A _ {1} ^ {(0)} + (n - 1) A _ {2} ^ {(0)} + \\cdots + A _ {n} ^ {(0)}}{\\mathrm{C} _ {n + 1} ^ {2}}.",
+          "image_source": "images/page_503_equation_19.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 504,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.06,
+            0.054,
+            0.088,
+            0.065
+          ],
+          "content": "200"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.053,
+            0.239,
+            0.067
+          ],
+          "content": "第十三章 幂级数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.109,
+            0.66,
+            0.152
+          ],
+          "content": "更一般地, 定义级数  $\\sum_{n=1}^{+\\infty}a_{n}$  的 p 阶  $(p \\geqslant 2)$  Cesàro  $(C, p)$  求和为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.138,
+            0.162,
+            0.819,
+            0.234
+          ],
+          "content": "A _ {n} ^ {(p)} = \\lim _ {n \\to + \\infty} \\frac {\\sum_ {k = 1} ^ {n} B _ {k} ^ {(p - 2)} A _ {k} ^ {(p - 1)}}{\\sum_ {k = 1} ^ {n} B _ {k} ^ {(p - 2)}} = \\frac {\\mathrm{C} _ {n + p - 2} ^ {p - 1} A _ {1} ^ {(0)} + \\mathrm{C} _ {n + p - 3} ^ {p - 1} A _ {2} ^ {(0)} + \\cdots + \\mathrm{C} _ {p - 1} ^ {p - 1} A _ {n} ^ {(0)}}{\\mathrm{C} _ {n + p - 1} ^ {p}}.",
+          "image_source": "images/page_504_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.244,
+            0.435,
+            0.261
+          ],
+          "content": "以上求和方法统称为 Cesàro 求和法."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.268,
+            0.696,
+            0.285
+          ],
+          "content": "Abel 求和: 我们再来看另一种常见的级数求和——Abel 求和."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.288,
+            0.772,
+            0.331
+          ],
+          "content": "定义 13.5.2 级数  $\\sum_{n=1}^{+\\infty}a_{n}$  称为可 Abel 求和 (或 Abel 可知), 是指极限"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.393,
+            0.348,
+            0.85,
+            0.391
+          ],
+          "content": "\\lim _ {x \\to 1 ^ {-}} \\sum_ {n = 0} ^ {+ \\infty} a _ {n} x ^ {n} = S \\tag {13.5.9}",
+          "image_source": "images/page_504_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.408,
+            0.738,
+            0.424
+          ],
+          "content": "存在且为有限. 极限值 S 定义为级数在 Abel 意义下的和, 简称 Abel 和."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.428,
+            0.851,
+            0.537
+          ],
+          "content": "容易看出, 若 $\\sum_{n=0}^{+\\infty} a_n$ 收敛到 $S$, 则根据 Abel 定理, 关系式 (13.5.9) 必然成立. 另一方面, 易见级数 $\\sum_{n=0}^{+\\infty} (-1)^n$ 是 Abel 可和的, 但非经典可和. 因此, Abel 可和的确是经典级数可和的推广."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.543,
+            0.782,
+            0.561
+          ],
+          "content": "如果我们对级数通项加适当条件, 可以得到 Abel 可和与经典可和的关系:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.565,
+            0.85,
+            0.653
+          ],
+          "content": "定理 13.5.6 (小 o Tauber 定理) 设  $\\lim_{x\\to1^{-}}\\sum_{n=1}^{+\\infty}a_{n}x^{n}=A$  且  $a_{n}=o\\left(\\frac{1}{n}\\right)$ ，则\n $\\sum_{n=1}^{+\\infty}a_{n}=A.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.655,
+            0.551,
+            0.687
+          ],
+          "content": "证明 $\\forall \\varepsilon > 0$, 考虑 $\\forall N > 0$, 令 $x = 1 - \\frac{1}{N}$. 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.135,
+            0.701,
+            0.818,
+            0.748
+          ],
+          "content": "\\left| \\sum_ {n = 1} ^ {N} a _ {n} - \\sum_ {n = 1} ^ {N} a _ {n} x ^ {n} \\right| \\leqslant \\sum_ {n = 1} ^ {N} | a _ {n} | \\left(1 - \\left(1 - \\frac {1}{N}\\right) ^ {n}\\right) \\leqslant \\sum_ {n = 1} ^ {N} | a _ {n} | \\frac {n}{N} \\rightarrow 0 \\quad (N \\rightarrow + \\infty).",
+          "image_source": "images/page_504_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.762,
+            0.129,
+            0.778
+          ],
+          "content": "又"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.102,
+            0.793,
+            0.864,
+            0.88
+          ],
+          "content": "\\begin{array}{l} \\left| \\sum_ {n = 1} ^ {+ \\infty} a _ {n} x ^ {n} - \\sum_ {n = 1} ^ {N} a _ {n} x ^ {n} \\right| \\leqslant \\sum_ {n > N} | a _ {n} | \\left(1 - \\frac {1}{N}\\right) ^ {n} \\leqslant \\sum_ {n > N} \\frac {n a _ {n}}{N} \\left(1 - \\frac {1}{N}\\right) ^ {n} \\leqslant \\sum_ {n > N} \\frac {\\varepsilon}{N} \\left(1 - \\frac {1}{N}\\right) ^ {n} \\\\ = \\varepsilon \\left(1 - \\frac {1}{N}\\right) ^ {N + 1} \\rightarrow \\frac {\\varepsilon}{\\mathrm{e}} \\quad (N \\rightarrow + \\infty). \\\\ \\end{array}",
+          "image_source": "images/page_504_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.893,
+            0.273,
+            0.91
+          ],
+          "content": "综合二者结论得证."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.917,
+            0.517,
+            0.934
+          ],
+          "content": "Cesàro 可和与 Abel 可和的关系: 我们有"
+        }
+      ]
+    },
+    {
+      "page_idx": 505,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.715,
+            0.055,
+            0.891,
+            0.069
+          ],
+          "content": "13.5 幂级数的代数运算"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.91,
+            0.057,
+            0.937,
+            0.068
+          ],
+          "content": "201"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.111,
+            0.893,
+            0.173
+          ],
+          "content": "定理 13.5.7 若级数  $\\sum_{n=0}^{+\\infty} a_{n}$  Cesàro 可和, 则  $\\sum_{n=0}^{+\\infty} a_{n}$  也 Abel 可和, 且 Abel 和等于 Cesàro 和."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.177,
+            0.846,
+            0.219
+          ],
+          "content": "证明 不妨设 $\\sum_{n=0}^{+\\infty} a_n$ 的 Cesàro 和为零. 任取 $m \\geqslant 1$, 对于 $x \\in (0,1)$, 我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.202,
+            0.233,
+            0.84,
+            0.384
+          ],
+          "content": "\\begin{array}{l} \\left| \\sum_ {n = 0} ^ {+ \\infty} a _ {n} x ^ {n} \\right| = \\left| (1 - x) \\sum_ {n = 0} ^ {+ \\infty} S _ {n} x ^ {n} \\right| = \\left| (1 - x) ^ {2} \\sum_ {n = 0} ^ {+ \\infty} (n + 1) \\sigma_ {n} x ^ {n} \\right| \\\\ \\leqslant (1 - x) ^ {2} \\sum_ {n = 0} ^ {m} (n + 1) \\left| \\sigma_ {n} \\right| x ^ {n} + (1 - x) ^ {2} \\sup _ {k \\geqslant m} \\left| \\sigma_ {k} \\right| \\sum_ {n = m + 1} ^ {+ \\infty} (n + 1) x ^ {n} \\\\ \\leqslant (1 - x) ^ {2} \\sum_ {n = 0} ^ {m} (n + 1) | \\sigma_ {n} | x ^ {n} + \\sup _ {k \\geqslant m} | \\sigma_ {k} |. \\\\ \\end{array}",
+          "image_source": "images/page_505_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.399,
+            0.785,
+            0.444
+          ],
+          "content": "因此 $\\lim_{x\\to 1^{-}}\\left|\\sum_{n = 0}^{+\\infty}a_nx^n\\right|\\leqslant \\sup_{k\\geqslant m}|\\sigma_k|$. 再令 $m\\to +\\infty$ 即得 $\\lim_{x\\to 1^{-}}\\sum_{n = 0}^{+\\infty}a_nx^n = 0.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.446,
+            0.485,
+            0.464
+          ],
+          "content": "注意, 上面推导过程中用到关系式"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.407,
+            0.482,
+            0.637,
+            0.526
+          ],
+          "content": "1 = (1 - x) ^ {2} \\sum_ {n = 0} ^ {+ \\infty} (n + 1) x ^ {n},",
+          "image_source": "images/page_505_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.543,
+            0.374,
+            0.56
+          ],
+          "content": "以及两次用到 Abel 变换:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.28,
+            0.576,
+            0.763,
+            0.621
+          ],
+          "content": "\\sum_ {n = 0} ^ {+ \\infty} a _ {n} x ^ {n} = (1 - x) \\sum_ {n = 0} ^ {+ \\infty} S _ {n} x ^ {n} = (1 - x) ^ {2} \\sum_ {n = 0} ^ {+ \\infty} (n + 1) \\sigma_ {n} x ^ {n}.",
+          "image_source": "images/page_505_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.638,
+            0.234,
+            0.654
+          ],
+          "content": "这是因为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.149,
+            0.669,
+            0.9,
+            0.816
+          ],
+          "content": "\\begin{array}{l} \\left(1 - 2 x + x ^ {2}\\right) \\sum_ {n = 0} ^ {+ \\infty} (n + 1) \\sigma_ {n} x ^ {n} = \\sum_ {n = 0} ^ {+ \\infty} \\left((n + 1) \\sigma_ {n} - 2 n \\sigma_ {n - 1} + (n - 1) \\sigma_ {n - 2}\\right) x ^ {n} \\\\ = \\sum_ {n = 0} ^ {+ \\infty} (((n + 1) \\sigma_ {n} - n \\sigma_ {n - 1}) - (n \\sigma_ {n - 1} - (n - 1) \\sigma_ {n - 2})) x ^ {n} \\\\ = \\sum_ {n = 0} ^ {+ \\infty} \\left(S _ {n} - S _ {n - 1}\\right) x ^ {n} = \\sum_ {n = 0} ^ {+ \\infty} a _ {n} x ^ {n}. \\\\ \\end{array}",
+          "image_source": "images/page_505_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.833,
+            0.896,
+            0.873
+          ],
+          "content": "下面的例子告诉我们, Abel 可和不一定蕴涵着 Cesàro 可和. 因此 Abel 可和是一种比 Cesàro 可和更广的求和方式."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.88,
+            0.607,
+            0.898
+          ],
+          "content": "例 13.5.8 考虑通项为  $a_{n}=(-1)^{n+1}n$  的级数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.402,
+            0.92,
+            0.643,
+            0.936
+          ],
+          "content": "1 - 2 + 3 - 4 + 5 - 6 + \\dots .",
+          "image_source": "images/page_505_equation_14.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 506,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.062,
+            0.058,
+            0.09,
+            0.069
+          ],
+          "content": "202"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.109,
+            0.056,
+            0.24,
+            0.07
+          ],
+          "content": "第十三章 幂级数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.113,
+            0.855,
+            0.153
+          ],
+          "content": "显然, 此级数发散. 进一步, 直接计算可以看出该级数的 Cesàro $(C,1)$ 求和也发散. 事实上, 这是因为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.143,
+            0.175,
+            0.818,
+            0.194
+          ],
+          "content": "S _ {1} = 1, \\quad S _ {2} = - 1, \\quad S _ {3} = 2, \\quad S _ {4} = - 2, \\quad \\dots , S _ {2 n - 1} = n, \\quad S _ {2 n} = - n, \\quad \\dots ,",
+          "image_source": "images/page_506_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.213,
+            0.153,
+            0.228
+          ],
+          "content": "所以"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.132,
+            0.244,
+            0.828,
+            0.276
+          ],
+          "content": "\\sigma_ {1} = 1, \\quad \\sigma_ {2} = 0, \\quad \\sigma_ {3} = \\frac {2}{3}, \\quad \\sigma_ {4} = 0, \\quad \\dots , \\quad \\sigma_ {2 n - 1} = \\frac {n}{2 n - 1}, \\quad \\sigma_ {2 n} = 0, \\quad \\dots ,",
+          "image_source": "images/page_506_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.289,
+            0.311,
+            0.306
+          ],
+          "content": "故  $\\{\\sigma_{n}\\}$  的极限不存在."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.313,
+            0.623,
+            0.33
+          ],
+          "content": "但可以证明, 此级数是 Abel 可和的. 为此, 考虑幂级数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.307,
+            0.349,
+            0.652,
+            0.369
+          ],
+          "content": "x - 2 x ^ {2} + 3 x ^ {3} - 4 x ^ {4} + 5 x ^ {5} - 6 x ^ {6} + \\dots ,",
+          "image_source": "images/page_506_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.382,
+            0.855,
+            0.435
+          ],
+          "content": "该幂级数在区间 $(0,1)$ 上有和函数 $f(x) = \\frac{x}{(1 + x)^2}$，当 $x\\to 1^{-}$ 时趋近于极限 $\\frac{1}{4}$，因此该级数在Abel意义下是可和的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.442,
+            0.855,
+            0.483
+          ],
+          "content": "在讨论常数项级数乘积时, 我们在例 11.4.3 中断言, 存在两个条件收敛的级数, 它们的 Cauchy 乘积级数绝对收敛. 下面我们首先证明这个结论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.489,
+            0.848,
+            0.506
+          ],
+          "content": "例 13.5.9 证明: 存在两个条件收敛的级数, 它们的 Cauchy 乘积级数绝对收敛."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.513,
+            0.855,
+            0.577
+          ],
+          "content": "证明 注意到当 $|x| < 1$ 时, 对任意实数 $m$, 函数 $(1 + x)^{m}$ 的 Taylor 级数总是绝对收敛的. 若 $-1 < m < 0$, 则当 $x = 1$ 时, 相应的级数是条件收敛的, 当 $x = -1$ 时, 级数发散. 所以, 级数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.356,
+            0.582,
+            0.602,
+            0.625
+          ],
+          "content": "f (x) = \\frac {1 + x}{\\sqrt {1 + x ^ {3}}} = \\sum_ {n = 0} ^ {+ \\infty} a _ {n} x ^ {n}",
+          "image_source": "images/page_506_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.108,
+            0.637,
+            0.173,
+            0.653
+          ],
+          "content": "与级数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.349,
+            0.657,
+            0.61,
+            0.7
+          ],
+          "content": "g (x) = \\frac {1 - x + x ^ {2}}{\\sqrt {1 + x ^ {3}}} = \\sum_ {n = 0} ^ {+ \\infty} b _ {n} x ^ {n}",
+          "image_source": "images/page_506_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.712,
+            0.848,
+            0.755
+          ],
+          "content": "当 $|x| < 1$ 时绝对收敛, $x = 1$ 时条件收敛. 因此, 级数 $\\sum_{n=0}^{+\\infty} a_n$, $\\sum_{n=0}^{+\\infty} b_n$ 都是条件收敛的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.758,
+            0.855,
+            0.823
+          ],
+          "content": "由于对任意的 x，都有  $f(x) \\cdot g(x) \\equiv 1$ ，故  $c_{0} = 1, c_{n} = 0 (n = 1, 2, \\cdots)$ ，其中  $c_{n} = a_{0} b_{n} + a_{1} b_{n-1} + \\cdots + a_{n} b_{0}$ 。因此，级数  $\\sum_{n=0}^{+\\infty} c_{n}$  绝对收敛。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.825,
+            0.855,
+            0.938
+          ],
+          "content": "另一方面, 在讨论常数项级数乘积时, 定理 11.4.11 告诉我们, 如果两个收敛级数的 Cauchy 乘积级数收敛, 那么 Cauchy 乘积级数的和等于两个收敛级数和的乘积. 但是, 例 11.4.4 告诉我们, 两个条件收敛级数其 Cauchy 乘积级数有可能不收敛. 下面的定理告诉我们, 两个收敛级数的 Cauchy 乘积级数, 在 Cesàro 意义下总是可求和的. 即, 下面的 Cesàro 定理成立."
+        }
+      ]
+    },
+    {
+      "page_idx": 507,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.718,
+            0.057,
+            0.896,
+            0.072
+          ],
+          "content": "13.5 幂级数的代数运算"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.913,
+            0.059,
+            0.942,
+            0.07
+          ],
+          "content": "203"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.194,
+            0.113,
+            0.894,
+            0.154
+          ],
+          "content": "定理 13.5.8 (Cesàro 定理) 设级数  $\\sum_{n=0}^{+\\infty}a_{n}$  和  $\\sum_{n=0}^{+\\infty}b_{n}$  分别收敛到 A 和 B, 则它"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.159,
+            0.597,
+            0.202
+          ],
+          "content": "们的 Cauchy 乘积  $\\sum_{n=0}^{+\\infty}c_{n}$  Cesàro 可和, 且和为 AB."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.205,
+            0.275,
+            0.222
+          ],
+          "content": "证明 记"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.232,
+            0.238,
+            0.815,
+            0.282
+          ],
+          "content": "A _ {n} = \\sum_ {k = 0} ^ {n} a _ {k}, \\quad B _ {n} = \\sum_ {k = 0} ^ {n} b _ {k}, \\quad C _ {n} = \\sum_ {k = 0} ^ {n} c _ {k}, \\quad H _ {n} = \\sum_ {k = 0} ^ {n} C _ {k}, \\quad n \\geqslant 0.",
+          "image_source": "images/page_507_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.299,
+            0.697,
+            0.323
+          ],
+          "content": "由定理假设， $\\lim_{n\\to+\\infty}A_{n}=A,\\quad\\lim_{n\\to+\\infty}B_{n}=B.$  而  $\\forall x\\in(-1,1)$ ,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.265,
+            0.343,
+            0.78,
+            0.51
+          ],
+          "content": "\\begin{array}{l} (1 - x) ^ {2} \\sum_ {n = 0} ^ {+ \\infty} H _ {n} x ^ {n} = \\sum_ {n = 0} ^ {+ \\infty} c _ {n} x ^ {n} = \\left(\\sum_ {n = 0} ^ {+ \\infty} a _ {n} x ^ {n}\\right) \\left(\\sum_ {n = 0} ^ {+ \\infty} b _ {n} x ^ {n}\\right) \\\\ = \\left((1 - x) \\sum_ {n = 0} ^ {+ \\infty} A _ {n} x ^ {n}\\right) \\left((1 - x) \\sum_ {n = 0} ^ {+ \\infty} B _ {n} x ^ {n}\\right) \\\\ = (1 - x) ^ {2} \\sum_ {n = 0} ^ {+ \\infty} \\sum_ {k = 0} ^ {n} A _ {k} B _ {n - k} x ^ {n}. \\\\ \\end{array}",
+          "image_source": "images/page_507_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.525,
+            0.195,
+            0.541
+          ],
+          "content": "所以"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.318,
+            0.547,
+            0.728,
+            0.589
+          ],
+          "content": "\\lim _ {n \\to + \\infty} \\frac {H _ {n}}{n + 1} = \\lim _ {n \\to + \\infty} \\frac {1}{n + 1} \\sum_ {k = 0} ^ {n} A _ {k} B _ {n - k} = A B.",
+          "image_source": "images/page_507_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.602,
+            0.241,
+            0.618
+          ],
+          "content": "定理得证."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.626,
+            0.488,
+            0.643
+          ],
+          "content": "关于 Abel 求和, 下面的定理成立:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.647,
+            0.896,
+            0.736
+          ],
+          "content": "定理 13.5.9 设  $\\sum_{n=0}^{+\\infty}a_{n}$  和  $\\sum_{n=0}^{+\\infty}b_{n}$  均 Abel 可和, 且它们的 Abel 和为 A 和 B, 则\n $\\sum_{n=0}^{+\\infty}a_{n}$  和  $\\sum_{n=0}^{+\\infty}b_{n}$  的 Cauchy 乘积也 Abel 可和, 且 Abel 和为 AB."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.191,
+            0.757,
+            0.299,
+            0.776
+          ],
+          "level": 2,
+          "content": "习题 13.5"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.801,
+            0.595,
+            0.821
+          ],
+          "content": "1. 考虑函数 $f(x) = \\ln (1 + x + x^2 + x^3 + x^4)$."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.189,
+            0.825,
+            0.625,
+            0.933
+          ],
+          "sub_type": "text",
+          "content": "(1) 求 $f(x)$ 在 $x_0 = 0$ 处的幂级数展开 $\\sum_{n=1}^{+\\infty} a_n x^n$.\n(2) 确定幂级数的收敛域.\n(3) 计算  $\\sum_{n=1}^{+\\infty}a_{n}$ ."
+        }
+      ]
+    },
+    {
+      "page_idx": 508,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.06,
+            0.058,
+            0.088,
+            0.069
+          ],
+          "content": "204"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.056,
+            0.239,
+            0.07
+          ],
+          "content": "第十三章 幂级数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.113,
+            0.853,
+            0.154
+          ],
+          "content": "2. 如果在定理 13.5.2 中, 两个幂级数的收敛半径分别为  $R_{1}, R_{2}$ , 问它们乘积级数的收敛半径是多少?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.157,
+            0.853,
+            0.247
+          ],
+          "content": "3. 试用形式幂级数的思路, 用待定系数的方法, 即 $y = \\sum_{n=0}^{+\\infty} a_n x^n$ 以及形式求导和形式二阶导, 验证微分方程 $x^2 y' = (1 - x)y - 1$, $y(0) = 1$ 具有形式幂级数解 $y = \\sum_{n=0}^{+\\infty} n! x^n$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.249,
+            0.651,
+            0.267
+          ],
+          "content": "4. 试问初等函数的 Taylor 级数有没有可能收敛半径为 0?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.272,
+            0.757,
+            0.291
+          ],
+          "content": "5. 设 $P_{m}(x)$ 是给定的 $m$ 次多项式. 考虑由下面级数定义的函数 $f(x)$:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.395,
+            0.314,
+            0.561,
+            0.357
+          ],
+          "content": "f (x) = \\sum_ {n = 0} ^ {+ \\infty} \\frac {P _ {m} ^ {n} (x)}{n !}.",
+          "image_source": "images/page_508_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.379,
+            0.634,
+            0.397
+          ],
+          "content": "证明: $f(x)$ 的幂级数展开式中，不可能连着出现 $m$ 个零系数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.402,
+            0.581,
+            0.443
+          ],
+          "content": "6. 证明: 当 $\\sum_{n=0}^{+\\infty} a_n$ Cesàro 可和时, $\\left\\{\\frac{a_n}{n+1}\\right\\}$ 有界."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.448,
+            0.475,
+            0.489
+          ],
+          "content": "7. 求幂级数  $\\sum_{n=1}^{+\\infty}\\frac{2}{4n-1}x^{2n}$  的和函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.494,
+            0.851,
+            0.556
+          ],
+          "content": "8. 设级数 $\\sum_{n=0}^{+\\infty} a_n$ 和 $\\sum_{n=0}^{+\\infty} b_n$ 均 Cesàro 可和, 试讨论它们的 Cauchy 乘积 $\\sum_{n=0}^{+\\infty} c_n$ 是否 Cesàro 可和?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.563,
+            0.318,
+            0.579
+          ],
+          "content": "9. 证明定理 13.5.9."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.583,
+            0.66,
+            0.626
+          ],
+          "content": "10. 设 $\\sum_{n=0}^{+\\infty} a_n$ 的 Abel 和为 $A$. 证明: $\\sum_{n=0}^{+\\infty} a_n$ 收敛当且仅当"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.347,
+            0.647,
+            0.609,
+            0.679
+          ],
+          "content": "\\lim _ {n \\to + \\infty} \\frac {a _ {1} + 2 a _ {2} + \\cdots + n a _ {n}}{n} = 0.",
+          "image_source": "images/page_508_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.697,
+            0.853,
+            0.761
+          ],
+          "content": "11. 试讨论例 13.5.8 中级数是否可二阶 Cesàro 求和？是否可三阶 Cesàro 求和？进一步思考，是否一个发散的但 Abel 可和的级数，一定存在自然数 k，使得该级数是 k 阶 Cesàro 可和的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.769,
+            0.268,
+            0.785
+          ],
+          "content": "12. 设幂级数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.405,
+            0.798,
+            0.55,
+            0.841
+          ],
+          "content": "\\sum_ {n = 0} ^ {+ \\infty} a _ {n} x ^ {n} = f (x)",
+          "image_source": "images/page_508_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.861,
+            0.853,
+            0.935
+          ],
+          "content": "中的所有系数 $a_{n} \\in \\{0,1,\\dots ,9\\}$. 试证明:如果 $f\\left(\\frac{1}{10}\\right) \\in \\mathbb{Q}$, 那么 $f(x)$ 是一个有理函数, 即 $f(x) = \\frac{P(x)}{Q(x)}$, 其中 $P(x), Q(x)$ 是多项式."
+        }
+      ]
+    },
+    {
+      "page_idx": 509,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.686,
+            0.056,
+            0.896,
+            0.07
+          ],
+          "content": "13.6 连续函数的多项式逼近"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.913,
+            0.057,
+            0.942,
+            0.069
+          ],
+          "content": "205"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.15,
+            0.11,
+            0.519,
+            0.133
+          ],
+          "level": 2,
+          "content": "13.6 连续函数的多项式逼近"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.18,
+            0.897,
+            0.269
+          ],
+          "content": "函数的逼近是分析学和有关应用学科中极其重要的一部分内容. 它的基本出发点是由简单的、熟悉的、光滑性好的函数, 按照某种度量标准, 逼近一个给定的通常是相对复杂的、陌生的、性质一般的函数. 比如前面章节中看到的用逐段常值函数、折线函数、连续函数来逼近可积函数, 用 Taylor 多项式来逼近一个光滑的函数, 等等."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.275,
+            0.897,
+            0.341
+          ],
+          "content": "我们知道, 如果函数  $f(x)$  在  $(-R, R)$  中能展开成幂级数, 那么对任意  $[a, b] \\subset (-R, R)$ ,  $f(x)$  在  $[a, b]$  上能用多项式一致逼近, 即  $\\forall \\varepsilon > 0, \\exists N > 0$ , 只要 n > N, 取 n 阶 Taylor 多项式  $T_{n}(x)$  即可做到  $|f(x) - T_{n}(x)| < \\varepsilon$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.346,
+            0.897,
+            0.458
+          ],
+          "content": "但是能展开成幂级数的函数少之又少, 因为它对函数的要求太高了: 要有足够高阶的导数. 所以, 用幂级数来逼近一个函数具有太大的局限性. 另一方面, 一个非常自然的问题是: 对一些光滑性并不那么好的函数是否存在多项式逼近? 特别地, 比如连续函数可否由多项式逼近? 这是因为从函数的复杂性来看, 多项式是一类光滑性好、形式简单、便于分析的函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.464,
+            0.897,
+            0.576
+          ],
+          "content": "本节重点讨论连续函数的多项式逼近问题. 当然, 我们也有足够的理由用其他类型的“简单的、基本的、熟悉的”函数去逼近, 比如正弦函数、余弦函数等三角函数也具有上述好的特点, 因为毕竟“简单的、基本的”等字眼是主观的标准. 的确, 比如如何用三角函数逼近一般的函数同样是个重要的话题. 与此相关的内容, 我们将放到 Fourier 级数去讨论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.191,
+            0.583,
+            0.518,
+            0.6
+          ],
+          "content": "为了陈述方便, 我们先给出以下定义:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.607,
+            0.897,
+            0.647
+          ],
+          "content": "定义 13.6.1 设  $f(x)$  是定义在区间  $I \\subseteq R$  上的函数, 如果对任意  $\\varepsilon > 0$ , 总能找到多项式  $P(x)$ , 使得对 I 中所有的 x 均有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.41,
+            0.668,
+            0.64,
+            0.687
+          ],
+          "content": "| f (x) - P (x) | <   \\varepsilon , \\quad x \\in I",
+          "image_source": "images/page_509_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.152,
+            0.706,
+            0.56,
+            0.723
+          ],
+          "content": "成立, 则称  $f(x)$  在 I 上能被多项式一致逼近."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.729,
+            0.897,
+            0.793
+          ],
+          "content": "显然, $f(x)$ 在 $I$ 上可被多项式一致逼近的充要条件是存在多项式序列 $\\{P_n(x)\\}$, 使得 $P_n(x) \\Rightarrow f(x) (x \\in I)$. 另一方面, 我们知道, 如果 $f(x)$ 在 $I$ 上可被多项式一致逼近, 则显然 $f(x)$ 在 $I$ 上连续."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.799,
+            0.897,
+            0.911
+          ],
+          "content": "如果 $f(x)$ 在有限开区间 $(a, b)$ 上可被多项式一致逼近, 则由一致性, 可以证明 $f(x)$ 必可以连续延拓到闭区间 $[a, b]$ 上. 若 $I$ 是无穷区间, 当 $f(x)$ 不是多项式时, 则 $f(x)$ 在 $I$ 上一定不能被多项式逼近. 所以, 很自然提出下面的问题: 对于有限闭区间上的连续函数 $f(x)$, 是否一定可被多项式逼近? 下面著名的 Weierstrass 定理对此问题给出了一个充分性的答案:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.191,
+            0.918,
+            0.569,
+            0.935
+          ],
+          "content": "如下定理称为 Weierstrass 第一逼近定理."
+        }
+      ]
+    },
+    {
+      "page_idx": 510,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.057,
+            0.057,
+            0.085,
+            0.068
+          ],
+          "content": "206"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.103,
+            0.055,
+            0.235,
+            0.069
+          ],
+          "content": "第十三章 幂级数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.114,
+            0.85,
+            0.156
+          ],
+          "content": "定理 13.6.1. 有界闭区间上的连续函数可用多项式一致逼近. 即对闭区间 $[a, b]$ 上的任意连续函数 $f(x)$, 存在多项式序列 $\\{P_n(x)\\}$, 使得在 $[a, b]$ 上 $P_n(x) \\Rightarrow f(x)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.161,
+            0.851,
+            0.226
+          ],
+          "content": "Weierstrass 逼近定理有许多经典的证明方法, 这些方法各有鲜明的特点, 其背后通常还蕴含着不同的逼近思想和相关的学科背景. 下面我们给出的证明是基于 Bernstein 多项式的方法."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.232,
+            0.85,
+            0.274
+          ],
+          "content": "证法 1 不妨假设  $[a, b] = [0, 1]$ ，因为必要的话，作一个线性变换  $x = a + (b - a)t$ ，即可把问题转化为关于变量  $t \\in [0, 1]$  上的连续函数的逼近."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.28,
+            0.169,
+            0.296
+          ],
+          "content": "记"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.356,
+            0.301,
+            0.594,
+            0.322
+          ],
+          "content": "p _ {n, k} (x) = \\mathrm{C} _ {n} ^ {k} x ^ {k} (1 - x) ^ {n - k},",
+          "image_source": "images/page_510_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.334,
+            0.148,
+            0.35
+          ],
+          "content": "则有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.405,
+            0.352,
+            0.848,
+            0.395
+          ],
+          "content": "\\sum_ {k = 0} ^ {n} p _ {n, k} (x) = 1. \\tag {13.6.1}",
+          "image_source": "images/page_510_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.404,
+            0.797,
+            0.423
+          ],
+          "content": "设 $f(x)$ 是 $[0,1]$ 上的连续函数, $n \\geqslant 0$, 定义 $f$ 的 $n$ 阶 Bernstein 多项式为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.182,
+            0.436,
+            0.848,
+            0.479
+          ],
+          "content": "B _ {n} (f, x) = \\sum_ {k = 0} ^ {n} f \\left(\\frac {k}{n}\\right) p _ {n, k} (x) = \\sum_ {k = 0} ^ {n} f \\left(\\frac {k}{n}\\right) \\mathrm{C} _ {n} ^ {k} x ^ {k} (1 - x) ^ {n - k}. \\tag {13.6.2}",
+          "image_source": "images/page_510_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.493,
+            0.711,
+            0.512
+          ],
+          "content": "我们将证明: $\\{B_{n}(f,x)\\}$ 是[0,1]上的一致收敛到 $f(x)$ 的多项式序列."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.517,
+            0.591,
+            0.534
+          ],
+          "content": "首先, 对方程 (13.6.1) 两端求导再乘 $x(1 - x)$, 可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.27,
+            0.549,
+            0.848,
+            0.592
+          ],
+          "content": "\\sum_ {k = 0} ^ {n} \\mathrm{C} _ {n} ^ {k} (k - n x) x ^ {k} (1 - x) ^ {n - k} = 0, \\quad \\forall   x \\in [ 0, 1 ]. \\tag {13.6.3}",
+          "image_source": "images/page_510_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.607,
+            0.434,
+            0.625
+          ],
+          "content": "对上式继续求导后再乘 $x(1 - x)$ 可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.23,
+            0.639,
+            0.849,
+            0.681
+          ],
+          "content": "\\sum_ {k = 0} ^ {n} \\mathrm{C} _ {n} ^ {k} (k - n x) ^ {2} x ^ {k} (1 - x) ^ {n - k} = n x (1 - x), \\quad \\forall   x \\in [ 0, 1 ]. \\tag {13.6.4}",
+          "image_source": "images/page_510_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.695,
+            0.301,
+            0.712
+          ],
+          "content": "整理上面的计算, 可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.378,
+            0.724,
+            0.655,
+            0.868
+          ],
+          "content": "\\begin{array}{l} \\sum_ {k = 0} ^ {n} k p _ {n, k} (x) = n x, \\\\ \\sum_ {k = 0} ^ {n} k ^ {2} p _ {n, k} (x) = n (n - 1) x ^ {2} + n x \\\\ \\end{array}",
+          "image_source": "images/page_510_equation_17.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.299,
+            0.822,
+            0.596,
+            0.867
+          ],
+          "content": "\\sum_ {k = 0} ^ {n} \\left(x - \\frac {k}{n}\\right) ^ {2} p _ {n, k} (x) = \\frac {x (1 - x)}{n}.",
+          "image_source": "images/page_510_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.88,
+            0.843,
+            0.899
+          ],
+          "content": "由于 $f(x)$ 在 $[0,1]$ 上一致连续，故对任意 $\\varepsilon > 0$ ，存在 $\\delta > 0$ ，当 $|x - y| < \\delta$ 时，有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.395,
+            0.911,
+            0.558,
+            0.941
+          ],
+          "content": "| f (x) - f (y) | <   \\frac {\\varepsilon}{2}.",
+          "image_source": "images/page_510_equation_20.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 511,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.686,
+            0.054,
+            0.893,
+            0.068
+          ],
+          "content": "13.6 连续函数的多项式逼近"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.913,
+            0.055,
+            0.94,
+            0.067
+          ],
+          "content": "207"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.11,
+            0.743,
+            0.13
+          ],
+          "content": "再由 $f(x)$ 的有界性, 知 $\\exists M > 0$, 使得 $|f(x)| \\leqslant M$, 当 $|x - y| \\geqslant \\delta$ 时,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.409,
+            0.145,
+            0.637,
+            0.18
+          ],
+          "content": "| f (x) | \\leqslant M \\leqslant \\frac {M (x - y) ^ {2}}{\\delta^ {2}}.",
+          "image_source": "images/page_511_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.195,
+            0.343,
+            0.213
+          ],
+          "content": "因此, $\\forall x\\in [0,1]$ ，都有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.354,
+            0.228,
+            0.692,
+            0.269
+          ],
+          "content": "\\left| f (x) - f \\left(\\frac {k}{n}\\right) \\right| <   \\frac {\\varepsilon}{2} + \\frac {2 M}{\\delta^ {2}} \\left(x - \\frac {k}{n}\\right) ^ {2}.",
+          "image_source": "images/page_511_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.287,
+            0.197,
+            0.303
+          ],
+          "content": "从而"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.298,
+            0.306,
+            0.75,
+            0.421
+          ],
+          "content": "\\begin{array}{l} \\left| f (x) - B _ {n} (x) \\right| = \\left| \\sum_ {k = 0} ^ {n} \\left(f (x) - f \\left(\\frac {k}{n}\\right)\\right) p _ {n, k} (x) \\right| \\\\ \\leqslant \\sum_ {k = 0} ^ {n} \\left| f (x) - f \\left(\\frac {k}{n}\\right) \\right| p _ {n, k} (x) \\\\ \\leqslant \\frac {\\varepsilon}{2} + \\frac {2 M}{\\delta^ {2}} \\frac {x (1 - x)}{n} \\leqslant \\frac {\\varepsilon}{2} + \\frac {M}{2 \\delta^ {2}} \\frac {1}{n}. \\\\ \\end{array}",
+          "image_source": "images/page_511_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.152,
+            0.433,
+            0.327,
+            0.451
+          ],
+          "content": "即  $B_{n}(f,x)\\Rightarrow f(x)$ ."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.878,
+            0.433,
+            0.897,
+            0.447
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_511_image_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.457,
+            0.899,
+            0.498
+          ],
+          "content": "下面给出基于 Lebesgue 做法的另一种直观性很强的证明. 我们仅给出基本步骤和思路, 读者可以补充细节."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.191,
+            0.505,
+            0.412,
+            0.524
+          ],
+          "content": "证法 2  $\\forall x \\in [-1,1]$ ，令"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.214,
+            0.537,
+            0.897,
+            0.568
+          ],
+          "content": "u _ {0} (x) = 0, \\quad u _ {n + 1} (x) = u _ {n} (x) + \\frac {1}{2} (x ^ {2} - u _ {n} ^ {2} (x)), \\quad n = 0, 1, 2, \\dots . \\tag {13.6.5}",
+          "image_source": "images/page_511_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.192,
+            0.584,
+            0.367,
+            0.601
+          ],
+          "content": "不难证明以下结论:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.152,
+            0.608,
+            0.9,
+            0.697
+          ],
+          "sub_type": "text",
+          "content": "(1) 对每个  $n \\in N$ ,  $u_{n}(x)$  是一个多项式.\n(2) 可以归纳证明, 对每个  $x \\in [-1,1]$ ,  $0 \\leqslant u_{n}(x) \\leqslant u_{n+1}(x) \\leqslant |x|$ .\n(3) $\\{u_{n}(x)\\}$ 关于 $n$ 单调, 逐点收敛到极限函数 $|x|$, 由于 $|x|$ 在 $[-1,1]$ 上连续, 根据 Dini 定理, 知上述逐点收敛实则为一致收敛 (注: 也可通过估计"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.358,
+            0.714,
+            0.696,
+            0.751
+          ],
+          "content": "\\left| | x | - u _ {n} (x) \\right| \\leqslant | x | \\left(1 - \\frac {| x |}{2}\\right) ^ {n} <   \\frac {2}{n + 1}",
+          "image_source": "images/page_511_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.768,
+            0.352,
+            0.785
+          ],
+          "content": "直接证明一致收敛性)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.202,
+            0.792,
+            0.5,
+            0.81
+          ],
+          "content": "(4) 将 (13.6.5) 式中的迭代列换成"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.22,
+            0.823,
+            0.834,
+            0.855
+          ],
+          "content": "u _ {0} (x) = 0, \\quad u _ {n + 1} (x) = u _ {n} (x) + \\frac {1}{2} \\Big ((x - c) ^ {2} - u _ {n} ^ {2} (x) \\Big), \\quad n = 0, 1, 2, \\dots ,",
+          "image_source": "images/page_511_equation_21.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.869,
+            0.582,
+            0.888
+          ],
+          "content": "重复上述过程, 可得  $\\{u_{n}(x)\\}$  一致收敛到  $|x-c|$ ."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.201,
+            0.893,
+            0.847,
+            0.936
+          ],
+          "sub_type": "text",
+          "content": "(5) $\\forall \\lambda \\in \\mathbb{R}$, 多项式序列 $\\{\\lambda u_n(x)\\}$ 一致收敛到 $\\lambda |x - c|$.\n(6) 闭区间 $[a, b]$ 上的连续函数能被逐段折线 (即分段线性函数) 一致逼近."
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "created_at": "2025-11-20T03:44:46+08:00",
+      "modified_at": "2025-11-20T03:47:17+08:00",
+      "page_count": 856,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 496,
+          "width_pt": 513.0,
+          "height_pt": 739.0
+        },
+        {
+          "page_idx": 497,
+          "width_pt": 514.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 498,
+          "width_pt": 513.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 499,
+          "width_pt": 514.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 500,
+          "width_pt": 513.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 501,
+          "width_pt": 514.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 502,
+          "width_pt": 513.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 503,
+          "width_pt": 514.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 504,
+          "width_pt": 513.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 505,
+          "width_pt": 514.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 506,
+          "width_pt": 513.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 507,
+          "width_pt": 514.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 508,
+          "width_pt": 513.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 509,
+          "width_pt": 514.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 510,
+          "width_pt": 513.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 511,
+          "width_pt": 514.0,
+          "height_pt": 740.0
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

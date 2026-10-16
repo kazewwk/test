@@ -1,0 +1,3576 @@
+{
+  "pages": [
+    {
+      "page_idx": 160,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.055,
+            0.054,
+            0.083,
+            0.065
+          ],
+          "content": "148"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.102,
+            0.052,
+            0.25,
+            0.067
+          ],
+          "content": "第六章 导数与微分"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.109,
+            0.245,
+            0.126
+          ],
+          "content": "解 注意到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.311,
+            0.137,
+            0.849,
+            0.153
+          ],
+          "content": "x ^ {n} - 1 = (x - x _ {1}) (x - x _ {2}) \\dots (x - x _ {n}), \\tag {6.3.4}",
+          "image_source": "images/page_160_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.168,
+            0.144,
+            0.184
+          ],
+          "content": "故有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.375,
+            0.193,
+            0.574,
+            0.213
+          ],
+          "content": "x _ {1} x _ {2} \\dots x _ {n} = (- 1) ^ {n - 1}.",
+          "image_source": "images/page_160_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.226,
+            0.684,
+            0.245
+          ],
+          "content": "在关系式 (6.3.4) 两端关于 $x$ 求导, 利用求导的四则运算法则, 可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.225,
+            0.262,
+            0.724,
+            0.296
+          ],
+          "content": "n x ^ {n - 1} = \\sum_ {i} (x - x _ {1}) \\dots (x - x _ {i - 1}) (x - x _ {i + 1}) \\dots (x - x _ {n}).",
+          "image_source": "images/page_160_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.313,
+            0.787,
+            0.332
+          ],
+          "content": "在此等式中, 分别取  $x = x_{1}, x_{2}, \\cdots, x_{n}$ , 然后将所得到的 n 个关系式相乘, 可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.263,
+            0.349,
+            0.684,
+            0.385
+          ],
+          "content": "n ^ {n} (x _ {1} x _ {2} \\dots x _ {n}) ^ {n - 1} = (- 1) ^ {n (n - 1) / 2} \\prod_ {i <   j} (x _ {i} - x _ {j}) ^ {2}.",
+          "image_source": "images/page_160_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.402,
+            0.452,
+            0.421
+          ],
+          "content": "结合等式 $x_{1}x_{2}\\dots x_{n} = (-1)^{n - 1}$ ，从而有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.316,
+            0.438,
+            0.629,
+            0.474
+          ],
+          "content": "\\prod_ {i <   j} (x _ {i} - x _ {j}) ^ {2} = (- 1) ^ {(n - 1) (n - 2) / 2} n ^ {n}.",
+          "image_source": "images/page_160_equation_11.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.492,
+            0.434,
+            0.51
+          ],
+          "level": 2,
+          "content": "2. 复合函数求导的“链式法则”"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.524,
+            0.543,
+            0.542
+          ],
+          "content": "对于复合函数求导, 成立下面所谓的链式法则:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.547,
+            0.848,
+            0.59
+          ],
+          "content": "定理 6.3.3 设函数  $\\varphi(t)$  在  $t = t_{0}$  处可导, 函数  $f(x)$  在  $x_{0} = \\varphi(t_{0})$  处可导, 则复合函数  $f \\circ \\varphi$  在  $t_{0}$  处可导, 且成立关系式"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.359,
+            0.611,
+            0.846,
+            0.628
+          ],
+          "content": "(f \\circ \\varphi) ^ {\\prime} (t _ {0}) = f ^ {\\prime} (x _ {0}) \\varphi^ {\\prime} (t _ {0}). \\tag {6.3.5}",
+          "image_source": "images/page_160_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.647,
+            0.56,
+            0.666
+          ],
+          "content": "证明 我们先来分析一下复合函数 $f \\circ \\varphi$ 的差商"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.356,
+            0.676,
+            0.591,
+            0.711
+          ],
+          "content": "\\frac {f \\circ \\varphi (t _ {0} + \\Delta t) - f \\circ \\varphi (t _ {0})}{\\Delta t}.",
+          "image_source": "images/page_160_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.723,
+            0.517,
+            0.742
+          ],
+          "content": "如果 $\\varphi (t_0 + \\Delta t) - \\varphi (t_0)\\neq 0$ ，则可将上式改写为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.117,
+            0.759,
+            0.846,
+            0.793
+          ],
+          "content": "\\frac {f \\circ \\varphi (t _ {0} + \\Delta t) - f \\circ \\varphi (t _ {0})}{\\Delta t} = \\frac {f \\circ \\varphi (t _ {0} + \\Delta t) - f \\circ \\varphi (t _ {0})}{\\varphi (t _ {0} + \\Delta t) - \\varphi (t _ {0})} \\cdot \\frac {\\varphi (t _ {0} + \\Delta t) - \\varphi (t _ {0})}{\\Delta t}. \\tag {6.3.6}",
+          "image_source": "images/page_160_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.096,
+            0.81,
+            0.848,
+            0.853
+          ],
+          "content": "等式两边取 $\\Delta t\\to 0$ 的极限，即完成了定理的证明.事实上，这是因为左边的极限就是$(f\\circ \\varphi)^{\\prime}(t_{0})$ 的定义，而右边的两个因子，其极限刚好分别为 $f^{\\prime}(x_0)$ 和 $\\varphi '(t_0)$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.857,
+            0.849,
+            0.936
+          ],
+          "content": "因此剩下的问题则是考虑 $\\varphi(t_0 + \\Delta t) - \\varphi(t_0) = 0$ 的情况, 而这的确可以发生, 即使在 $t_0$ 的任意小邻域内也难以避免. 比如取 $\\varphi$ 为例6.1.8中的函数. 则在0点的任意小邻域内, 只要 $n$ 足够大, 都有形如 $\\frac{1}{n\\pi}$ 的点, 使得 $\\varphi\\left(\\frac{1}{n\\pi}\\right) - \\varphi(0) = 0$."
+        }
+      ]
+    },
+    {
+      "page_idx": 161,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.705,
+            0.059,
+            0.901,
+            0.072
+          ],
+          "content": "6.3 导数的计算 求导法则"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.922,
+            0.06,
+            0.949,
+            0.071
+          ],
+          "content": "149"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.114,
+            0.903,
+            0.179
+          ],
+          "content": "为了克服这个问题, 注意到当 $\\varphi(t_0 + \\Delta t) - \\varphi(t_0) = 0$ 时, (6.3.6) 式的左边显然也为 0 , 再看其右边, 第二个因子由于分子为 0 故整个因子也为 0 , 所以右边的问题出在第一个因子的分母上. 鉴于此, 我们对右边第一个因子处理如下:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.191,
+            0.185,
+            0.277,
+            0.202
+          ],
+          "content": "引入函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.349,
+            0.204,
+            0.9,
+            0.265
+          ],
+          "content": "\\psi (x) = \\left\\{ \\begin{array}{l l} \\frac {f (x) - f (\\varphi (t _ {0}))}{x - \\varphi (t _ {0})}, & x \\neq \\varphi (t _ {0}), \\\\ f ^ {\\prime} (\\varphi (t _ {0})), & x = \\varphi (t _ {0}). \\end{array} \\right. \\tag {6.3.7}",
+          "image_source": "images/page_161_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.276,
+            0.756,
+            0.295
+          ],
+          "content": "根据 $\\psi (x)$ 的定义，注意到 $x_0 = \\varphi (t_0)$，显然该函数在点 $x_0$ 处连续，即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.404,
+            0.31,
+            0.651,
+            0.335
+          ],
+          "content": "\\lim _ {x \\to x _ {0}} \\psi (x) = f ^ {\\prime} (x _ {0}) = \\psi (x _ {0}).",
+          "image_source": "images/page_161_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.191,
+            0.344,
+            0.899,
+            0.363
+          ],
+          "content": "通过引入上述函数 $\\psi (x)$ ，无论 $\\varphi (t_0 + \\Delta t) - \\varphi (t_0)$ 是否为0,(6.3.6)式总可以写为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.277,
+            0.374,
+            0.779,
+            0.409
+          ],
+          "content": "\\frac {f \\circ \\varphi (t _ {0} + \\Delta t) - f \\circ \\varphi (t _ {0})}{\\Delta t} = \\psi (\\varphi (t)) \\cdot \\frac {\\varphi (t _ {0} + \\Delta t) - \\varphi (t _ {0})}{\\Delta t}.",
+          "image_source": "images/page_161_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.417,
+            0.477,
+            0.436
+          ],
+          "content": "上式两边令 $t \\to t_0$，即得等式 (6.3.5)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.154,
+            0.44,
+            0.905,
+            0.529
+          ],
+          "content": "复合函数的求导法则常常被称为“链式法则”，但从表达式(6.3.5)中也许并没有体会到它的形象之处。事实上，当我们求任意有限多个函数的复合时，下面推论给出的求导公式就像链条似的，一环套一环，非常形象。另外，在多元函数求导运算时，我们也有相应的链式法则，那里我们越发能体会到这一称呼的直观性。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.194,
+            0.535,
+            0.518,
+            0.553
+          ],
+          "content": "作为练习, 读者可以证明下面的结论:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.154,
+            0.558,
+            0.906,
+            0.625
+          ],
+          "content": "推论 6.3.4 设有 n 个函数  $\\varphi_{k}(t_{k})\\ (k=1,2,\\cdots,n)$  满足: $\\varphi_{1}(t_{1})$  在  $t_{1}=t_{1,0}$  处可导， $\\varphi_{k}(t_{k})$  在  $t_{k,0}=\\varphi_{k-1}(t_{k-1,0})\\ (k=2,3,\\cdots,n)$  处可导。则复合函数  $f=\\varphi_{n}\\circ\\varphi_{n-1}\\circ\\cdots\\circ\\varphi_{1}$  在  $t_{1,0}$  处可导，且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.221,
+            0.639,
+            0.837,
+            0.66
+          ],
+          "content": "f ^ {\\prime} (t _ {1, 0}) = (\\varphi_ {n} \\circ \\varphi_ {n - 1} \\circ \\dots \\circ \\varphi_ {1}) ^ {\\prime} | _ {t _ {1, 0}} = \\varphi_ {n} ^ {\\prime} (t _ {n, 0}) \\varphi_ {n - 1} ^ {\\prime} (t _ {n - 1, 0}) \\dots \\varphi_ {1} ^ {\\prime} (t _ {1, 0}).",
+          "image_source": "images/page_161_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.194,
+            0.673,
+            0.831,
+            0.692
+          ],
+          "content": "如果采用 Leibniz 引入的导数符号的话, 上述求导法则可以更形象地写成"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.308,
+            0.702,
+            0.753,
+            0.743
+          ],
+          "content": "\\left. \\frac {\\mathrm{d} f}{\\mathrm{d} t _ {1}} \\right| _ {t _ {1} = t _ {1, 0}} = \\frac {\\mathrm{d} \\varphi_ {n}}{\\mathrm{d} \\varphi_ {n - 1}} \\cdot \\frac {\\mathrm{d} \\varphi_ {n - 1}}{\\mathrm{d} \\varphi_ {n - 2}} \\dots \\frac {\\mathrm{d} \\varphi_ {2}}{\\mathrm{d} \\varphi_ {1}} \\cdot \\left. \\frac {\\mathrm{d} \\varphi_ {1}}{\\mathrm{d} t _ {1}} \\right| _ {t _ {1} = t _ {1, 0}}",
+          "image_source": "images/page_161_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.753,
+            0.906,
+            0.819
+          ],
+          "content": "对于等式右边的表达式, 也许对分子分母产生跃跃欲试 “约分” 的想法了. 这的确是 Leibniz 符号的好处之一, 我们在后面讨论函数微分时还将返回这个话题, 并且把这种想法合理化、严谨化."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.824,
+            0.906,
+            0.937
+          ],
+          "content": "在实际情况中, 复合函数链式法则可能是所有求导问题中应用频率最高的法则之一. 利用这个法则, 可以极大简便复杂函数的求导. 在具体计算时, 只要分清把哪些变量打包成中间变量, 则不必每次都引入新的中间变量符号了. 在情况复杂时, 可能要层层打包, 操作时把这些包像剥洋葱似的层层解开. 熟练掌握这一方法可以极大缩短计算过程提高求导速度."
+        }
+      ]
+    },
+    {
+      "page_idx": 162,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.054,
+            0.058,
+            0.082,
+            0.069
+          ],
+          "content": "150"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.1,
+            0.056,
+            0.248,
+            0.07
+          ],
+          "content": "第六章 导数与微分"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.113,
+            0.411,
+            0.13
+          ],
+          "content": "例 6.3.5 求下列函数的导数:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.17,
+            0.145,
+            0.778,
+            0.167
+          ],
+          "content": "a ^ {x} (a > 0), \\quad \\sin^ {2} x, \\quad \\tan (2 x + 1), \\quad \\mathrm{e} ^ {- x ^ {2}}, \\quad \\ln (x + \\sqrt {1 + x ^ {2}}).",
+          "image_source": "images/page_162_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.182,
+            0.538,
+            0.2
+          ],
+          "content": "解 直接应用复合函数求导的链式法则, 可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.282,
+            0.216,
+            0.669,
+            0.236
+          ],
+          "content": "(a ^ {x}) ^ {\\prime} = (\\mathrm{e} ^ {x \\ln a}) ^ {\\prime} = (\\mathrm{e} ^ {x \\ln a}) \\cdot (x \\ln a) ^ {\\prime} = a ^ {x} \\ln a.",
+          "image_source": "images/page_162_equation_5.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.325,
+            0.256,
+            0.625,
+            0.274
+          ],
+          "content": "(\\sin^ {2} x) ^ {\\prime} = 2 \\sin x \\cdot (\\sin x) ^ {\\prime} = \\sin 2 x.",
+          "image_source": "images/page_162_equation_6.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.23,
+            0.284,
+            0.718,
+            0.32
+          ],
+          "content": "(\\tan (2 x + 1)) ^ {\\prime} = \\frac {1}{\\cos^ {2} (2 x + 1)} \\cdot (2 x + 1) ^ {\\prime} = \\frac {2}{\\cos^ {2} (2 x + 1)}.",
+          "image_source": "images/page_162_equation_7.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.324,
+            0.331,
+            0.625,
+            0.353
+          ],
+          "content": "(\\mathrm{e} ^ {- x ^ {2}}) ^ {\\prime} = \\mathrm{e} ^ {- x ^ {2}} \\cdot (- x ^ {2}) ^ {\\prime} = - 2 x \\mathrm{e} ^ {- x ^ {2}}.",
+          "image_source": "images/page_162_equation_8.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.246,
+            0.366,
+            0.701,
+            0.475
+          ],
+          "content": "\\begin{array}{l} \\left(\\ln (x + \\sqrt {1 + x ^ {2}})\\right) ^ {\\prime} = \\frac {1}{x + \\sqrt {1 + x ^ {2}}} \\cdot (x + \\sqrt {1 + x ^ {2}}) ^ {\\prime} \\\\ = \\frac {1}{x + \\sqrt {1 + x ^ {2}}} \\cdot \\left(1 + \\frac {x}{\\sqrt {1 + x ^ {2}}}\\right) \\\\ = \\frac {1}{\\sqrt {1 + x ^ {2}}}. \\\\ \\end{array}",
+          "image_source": "images/page_162_equation_9.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.482,
+            0.339,
+            0.5
+          ],
+          "level": 2,
+          "content": "3. 反函数的求导法则"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.515,
+            0.849,
+            0.578
+          ],
+          "content": "定理 6.3.5 设函数  $y = f(x)$  在包含点  $x_{0}$  的开区间 I 上严格单调并且连续. 如果  $f(x)$  在点  $x_{0}$  处可导, 且导数  $f'(x_{0}) \\neq 0$ , 那么它的反函数  $x = f^{-1}(y)$  在点  $y_{0} = f(x_{0})$  处可导, 并且有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.382,
+            0.58,
+            0.564,
+            0.615
+          ],
+          "content": "(f ^ {- 1}) ^ {\\prime} (y _ {0}) = \\frac {1}{f ^ {\\prime} (x _ {0})}.",
+          "image_source": "images/page_162_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.627,
+            0.848,
+            0.668
+          ],
+          "content": "证明 由条件假设知函数 $x = f^{-1}(y)$ 也严格单调并且连续. 于是, 条件“$y \\neq y_0$ 且 $y \\to y_0$”等价于条件“$x \\neq x_0$ 且 $x \\to x_0$”, 因此下式成立:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.14,
+            0.683,
+            0.85,
+            0.737
+          ],
+          "content": "\\lim _ {y \\to y _ {0}} \\frac {f ^ {- 1} (y) - f ^ {- 1} (y _ {0})}{y - y _ {0}} = \\lim _ {x \\to x _ {0}} \\frac {x - x _ {0}}{f (x) - f (x _ {0})} = \\lim _ {x \\to x _ {0}} \\frac {1}{\\frac {f (x) - f (x _ {0})}{x - x _ {0}}} = \\frac {1}{f ^ {\\prime} (x _ {0})}. \\quad \\square",
+          "image_source": "images/page_162_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.746,
+            0.85,
+            0.861
+          ],
+          "content": "注 6.3.1 对比一下连续函数章节的内容, 由定理 5.2.4 我们知道: 严格单调的连续函数存在反函数, 且反函数也连续. 现在定理 6.3.5 告诉我们, 一个严格单调的连续函数, 如果它可导, 并且如果它的导数非零, 那么其反函数存在、连续, 并且也可导. 进一步不难证明, 如果原来的函数导函数连续, 那么其反函数的导函数也连续."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.867,
+            0.85,
+            0.934
+          ],
+          "content": "我们特意指出这两种情况 (可以形象地描述为一种是  $C^{0}$  情况, 一种是  $C^{1}$  情况), 目的是提醒读者关注以下几点: 一是对高阶导数存在时的相应结论的成立性; 一是在后面多元函数章节, 一些结构上非常相似的结论的成立性."
+        }
+      ]
+    },
+    {
+      "page_idx": 163,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.703,
+            0.056,
+            0.902,
+            0.07
+          ],
+          "content": "6.3 导数的计算 求导法则"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.922,
+            0.057,
+            0.948,
+            0.069
+          ],
+          "content": "151"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.11,
+            0.903,
+            0.176
+          ],
+          "content": "需要注意的是, 定理中的条件 $f'(x_0) \\neq 0$ 不可缺少, 即使 $y = f(x)$ 在包含点 $x_0$ 的开区间 $I$ 上严格单调、连续、可导也不够. 函数 $y = x^3$ 在 0 点就是一个反例: 其反函数在 0 点附近存在、连续, 但反函数在此点不可导."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.181,
+            0.902,
+            0.223
+          ],
+          "content": "显然, 如果上面的条件不但在点 $x_0$ 成立, 而且在区间 $(a, b)$ 内都成立的话, 结论自然对整个区间上的每一个点都成立. 即"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.229,
+            0.903,
+            0.271
+          ],
+          "content": "推论 6.3.6 如果函数  $y = f(x)$  在区间  $(a, b)$  内严格单调、可导且有非零的导数, 那么它的反函数  $x = f^{-1}(y)$  将在区间  $(\\alpha, \\beta)$  内可导, 其中"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.285,
+            0.288,
+            0.766,
+            0.31
+          ],
+          "content": "\\alpha = \\min \\left\\{x (a ^ {+}), x (b ^ {-}) \\right\\}, \\qquad \\beta = \\max \\left\\{x (a ^ {+}), x (b ^ {-}) \\right\\}.",
+          "image_source": "images/page_163_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.328,
+            0.194,
+            0.344
+          ],
+          "content": "且有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.446,
+            0.345,
+            0.609,
+            0.383
+          ],
+          "content": "\\frac {\\mathrm{d} f ^ {- 1} (y)}{\\mathrm{d} y} = \\frac {1}{f ^ {\\prime} (x)}.",
+          "image_source": "images/page_163_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.391,
+            0.906,
+            0.535
+          ],
+          "content": "反函数的导数有明确的几何意义. 由于在同一个坐标系里 $y = f(x)$ 和 $x = f^{-1}(y)$ 对应同一条曲线 $C$, 因此在给定点其切线对应同一条直线 $\\ell$, 而导数描述的是切线的斜率, 后者是因变量与自变量的比值. 因此当考虑反函数的导数时, 无非就是在计算斜率时把自变量和因变量的角色交换了一下, 而这刚好产生倒数关系. 换句话说, 假设曲线 $C$ 在点 $(x_0, y_0)$ 处的切线 $\\ell$ 与 $x$ 轴正向和 $y$ 轴正向的夹角分别为 $\\alpha$ 和 $\\beta$ 的话, 显然有 $\\alpha + \\beta = \\frac{\\pi}{2}$ (见图6.4). 因此有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.548,
+            0.721,
+            0.586
+          ],
+          "content": "\\tan \\alpha = {\\frac {1}{\\tan \\beta}}, \\qquad {\\text {即}} \\quad f ^ {\\prime} (x _ {0}) = {\\frac {1}{(f ^ {- 1}) ^ {\\prime} (y _ {0})}}.",
+          "image_source": "images/page_163_equation_9.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.387,
+            0.615,
+            0.672,
+            0.781
+          ],
+          "sub_type": "text_image",
+          "content": "y\nx=f⁻¹(y)\ny=f(x)\nl\nO\nα\n(x₀, y₀)\nβ\nx",
+          "captions": [
+            {
+              "bbox": [
+                0.435,
+                0.788,
+                0.62,
+                0.804
+              ],
+              "content": "图6.4 反函数的导数"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_163_image_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.826,
+            0.484,
+            0.843
+          ],
+          "content": "例 6.3.6 计算下列函数的导数:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.276,
+            0.861,
+            0.777,
+            0.877
+          ],
+          "content": "\\ln x, \\quad \\arcsin x, \\quad \\arccos x, \\quad \\arctan x, \\quad \\operatorname{arccot} x.",
+          "image_source": "images/page_163_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.892,
+            0.906,
+            0.933
+          ],
+          "content": "解 我们知道 $f(x) = \\mathrm{e}^x$ 与 $g(y) = \\ln y$ 互为反函数, 因此从 $f'(x) = \\mathrm{e}^x$, 由反函数求导法则, 可得"
+        }
+      ]
+    },
+    {
+      "page_idx": 164,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.055,
+            0.056,
+            0.083,
+            0.067
+          ],
+          "content": "152"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.1,
+            0.054,
+            0.248,
+            0.068
+          ],
+          "content": "第六章 导数与微分"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.349,
+            0.109,
+            0.603,
+            0.143
+          ],
+          "content": "g ^ {\\prime} (y) = \\frac {1}{f ^ {\\prime} (g (y))} = \\frac {1}{\\mathrm{e} ^ {\\ln y}} = \\frac {1}{y}.",
+          "image_source": "images/page_164_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.148,
+            0.534,
+            0.166
+          ],
+          "content": "把 $x, y$ 的符号对换一下, 写成更熟悉的表述, 即得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.426,
+            0.173,
+            0.527,
+            0.204
+          ],
+          "content": "(\\ln x) ^ {\\prime} = \\frac {1}{x}.",
+          "image_source": "images/page_164_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.211,
+            0.743,
+            0.23
+          ],
+          "content": "道理同上, 注意到 $f(x) = \\arcsin x$ 和 $g(y) = \\sin y$ 互为反函数, 因此有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.281,
+            0.236,
+            0.671,
+            0.271
+          ],
+          "content": "f ^ {\\prime} (x) = \\frac {1}{g ^ {\\prime} (f (x))} = \\frac {1}{\\cos (\\arcsin x)} = \\frac {1}{\\sqrt {1 - x ^ {2}}}.",
+          "image_source": "images/page_164_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.279,
+            0.123,
+            0.295
+          ],
+          "content": "即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.382,
+            0.293,
+            0.57,
+            0.327
+          ],
+          "content": "(\\arcsin x) ^ {\\prime} = \\frac {1}{\\sqrt {1 - x ^ {2}}}",
+          "image_source": "images/page_164_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.331,
+            0.29,
+            0.348
+          ],
+          "content": "同理有如下结论:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.371,
+            0.346,
+            0.58,
+            0.378
+          ],
+          "content": "(\\arccos x) ^ {\\prime} = - \\frac {1}{\\sqrt {1 - x ^ {2}}}.",
+          "image_source": "images/page_164_equation_10.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.386,
+            0.392,
+            0.565,
+            0.423
+          ],
+          "content": "(\\arctan x) ^ {\\prime} = \\frac {1}{1 + x ^ {2}}.",
+          "image_source": "images/page_164_equation_11.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.381,
+            0.439,
+            0.57,
+            0.469
+          ],
+          "content": "(\\operatorname{arccot} x) ^ {\\prime} = - \\frac {1}{1 + x ^ {2}}.",
+          "image_source": "images/page_164_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.471,
+            0.851,
+            0.536
+          ],
+          "content": "行文至此, 我们觉得很有必要把前面讨论过的基本初等函数导数给出个列表. 这些函数的导数在数学各个分支中高频出现, 其地位和作用类似于小学里的九九乘法表, 因此有必要熟练记住它们, 这是数学分析课程中为数不多的既要理解、又要熟记的内容."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.099,
+            0.571,
+            0.851,
+            0.768
+          ],
+          "content": "| f | $f'$ | f | $f'$ | f | $f'$ |\n| --- | --- | --- | --- | --- | --- |\n| c | 0 | $x^{\\mu}$ | $\\mu x^{\\mu-1}$ | $e^{x}$ | $e^{x}$ |\n| $a^{x}$ | $a^{x} \\ln a$ | $\\ln x$ | $\\frac{1}{x}$ | $\\log_{a} x$ | $\\frac{1}{x \\ln a}$ |\n| $\\sin x$ | $\\cos x$ | $\\cos x$ | $-\\sin x$ | $\\tan x$ | $\\frac{1}{\\cos^{2} x}$ |\n| $\\cot x$ | $-\\frac{1}{\\sin^{2} x}$ | $\\arcsin x$ | $\\frac{1}{\\sqrt{1-x^{2}}}$ | $\\arccos x$ | $-\\frac{1}{\\sqrt{1-x^{2}}}$ |\n| $\\arctan x$ | $\\frac{1}{1+x^{2}}$ | $\\operatorname{arccot} x$ | $-\\frac{1}{1+x^{2}}$ |  |  |",
+          "captions": [
+            {
+              "bbox": [
+                0.409,
+                0.553,
+                0.54,
+                0.568
+              ],
+              "content": "初等函数导数表"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_164_table_15.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.139,
+            0.791,
+            0.297,
+            0.81
+          ],
+          "level": 2,
+          "content": "4. 隐函数的求导"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.823,
+            0.851,
+            0.937
+          ],
+          "content": "隐函数这个概念是相对显函数而言的. 所谓的显函数, 通常是指因变量 $y$ 可以用自变量 $x$ 的形如 $y = f(x)$ 的表达式给出, 其中 $f$ 是 $x, y$ 间的对应关系. 因此, 顾名思义, 隐函数就是指变量 $x, y$ 之间虽然也存在某种函数关系, 但这个对应关系只能通过形如 $F(x, y) = 0$ 的方程给出, 而不能或不便用显式表出. 比如平面上单位圆周上的点 $(x, y)$ 满足 $x^2 + y^2 = 1$, 比如 $\\sin x + \\sin xy = \\ln y$, 等等."
+        }
+      ]
+    },
+    {
+      "page_idx": 165,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.703,
+            0.055,
+            0.9,
+            0.069
+          ],
+          "content": "6.3 导数的计算 求导法则"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.921,
+            0.056,
+            0.948,
+            0.068
+          ],
+          "content": "153"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.109,
+            0.903,
+            0.223
+          ],
+          "content": "这里自然涉及一个基本问题: 既然 $x, y$ 只是通过方程 $F(x, y) = 0$ 给出, 同时又由于我们不能用显式表述出 $y = f(x)$ 的形式, 那么如何得知这个约束条件蕴涵着函数关系? 目前, 我们从理论上还不能给这个问题一个满意回答, 需要把这个基本问题推迟到多元微积分章节去讨论, 在那里我们将给出确定函数关系的条件, 以及函数关系成立的范围."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.227,
+            0.903,
+            0.293
+          ],
+          "content": "在本节, 我们的重点是假定通过其他方式已经得知隐式 $F(x, y) = 0$ 确定了一个函数关系 $y = f(x) (x \\in I)$, 并且还知道这个函数在点 $x_0$ 处可导, 我们仅仅试图求出这个函数的导数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.298,
+            0.904,
+            0.388
+          ],
+          "content": "这是一个听起来有点天方夜谭的问题: 我们甚至连函数关系都不能显式确定, 又如何谈起计算它的导数. 为此, 我们先考虑一道 “假的隐函数” 题目, 就是说本来可以把 y 用显式表示, 但我们先 “掩耳盗铃” 一番. 这样做的目的是希望从中获取一些感觉, 为后期的一般性讨论提供一些素材."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.392,
+            0.904,
+            0.496
+          ],
+          "content": "考虑隐函数 $x^{2} + y^{2} = 1$ ，其中 $x\\in (-1,1),y > 0.$ 由于限定了 $y > 0,$ 那么可知这个约束关系的确给出了一个函数关系 $y = f(x)$ .我们欲求 $y = f(x)$ 在点 $x_0$ 的导数$f^{\\prime}(x_0)$ .为此，记 $y_{0} = f(x_{0})$ ，即使不知道 $f(x)$ 的表达式， $y_{0}$ 的信息可以从 $F(x_0,y_0) = 0$ 中提取.比如，我们知道 $\\left(\\frac{3}{5},\\frac{4}{5}\\right)$ 满足隐函数关系，并不需要知道 $f(x)$ 的表达式"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.498,
+            0.774,
+            0.518
+          ],
+          "content": "一方面, 我们将 $y = f(x)$ 代入到 $x^{2} + f^{2}(x) = 1$, 两端对其求导, 得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.435,
+            0.532,
+            0.617,
+            0.552
+          ],
+          "content": "2 x + 2 f (x) f ^ {\\prime} (x) = 0.",
+          "image_source": "images/page_165_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.566,
+            0.174,
+            0.583
+          ],
+          "content": "故"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.416,
+            0.584,
+            0.637,
+            0.617
+          ],
+          "content": "f ^ {\\prime} (x _ {0}) = - \\frac {x _ {0}}{f (x _ {0})} = - \\frac {x _ {0}}{y _ {0}}.",
+          "image_source": "images/page_165_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.623,
+            0.904,
+            0.681
+          ],
+          "content": "我们强调的是: 在这样一个求导过程中, 并没有用到 $f$ 的具体表示, 却最终得到了一个并没有写出来的函数的导数值. 比如, 在点 $\\left(\\frac{3}{5}, \\frac{4}{5}\\right)$ 处, 我们就有 $y'\\left(\\frac{3}{5}\\right) = -\\frac{3}{4}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.684,
+            0.889,
+            0.704
+          ],
+          "content": "现在我们作一个验算: 从原来的“假隐函数”中, 解得 $y = f(x) = \\sqrt{1 - x^2}$, 因此"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.427,
+            0.712,
+            0.626,
+            0.746
+          ],
+          "content": "y ^ {\\prime} = - \\frac {x}{\\sqrt {1 - x ^ {2}}} = - \\frac {x}{y}.",
+          "image_source": "images/page_165_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.755,
+            0.556,
+            0.775
+          ],
+          "content": "的确与我们不具体给出 $f(x)$ 的计算结果吻合."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.779,
+            0.904,
+            0.821
+          ],
+          "content": "采用上面的思路, 我们再考虑一个由隐函数确定的关系式的求导问题, 此时 $y$ 的确不易用 $x$ 的初等函数表示."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.826,
+            0.447,
+            0.845
+          ],
+          "content": "例6.3.7 考虑Kepler方程"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.379,
+            0.861,
+            0.675,
+            0.88
+          ],
+          "content": "y - x - \\varepsilon \\sin y = 0, \\quad 0 <   \\varepsilon <   1.",
+          "image_source": "images/page_165_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.892,
+            0.904,
+            0.936
+          ],
+          "content": "我们用到后面章节的一个断言: 该方程可以确定一个函数关系 $y = y(x)$, 而且 $y(x)$ 可导. 我们的问题是: 试求出 $y'(x)$."
+        }
+      ]
+    },
+    {
+      "page_idx": 166,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.054,
+            0.055,
+            0.082,
+            0.066
+          ],
+          "content": "154"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.1,
+            0.053,
+            0.248,
+            0.067
+          ],
+          "content": "第六章 导数与微分"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.11,
+            0.265,
+            0.127
+          ],
+          "content": "解 由假设知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.365,
+            0.135,
+            0.586,
+            0.153
+          ],
+          "content": "y (x) - x - \\varepsilon \\sin y (x) = 0,",
+          "image_source": "images/page_166_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.166,
+            0.26,
+            0.183
+          ],
+          "content": "两端对 x 求导, 得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.34,
+            0.19,
+            0.61,
+            0.209
+          ],
+          "content": "y ^ {\\prime} (x) - 1 - \\varepsilon y ^ {\\prime} (x) \\cos y (x) = 0,",
+          "image_source": "images/page_166_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.222,
+            0.165,
+            0.239
+          ],
+          "content": "因此有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.375,
+            0.238,
+            0.574,
+            0.274
+          ],
+          "content": "y ^ {\\prime} (x) = \\frac {1}{1 - \\varepsilon \\cos y (x)}.",
+          "image_source": "images/page_166_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.284,
+            0.809,
+            0.315
+          ],
+          "content": "比如在 $x_0 = 0$ 处, 该隐函数所对应的 $y_0 = 0$, 因此 0 点处的导数为 $y'(0) = \\frac{1}{1 - \\varepsilon}$."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.322,
+            0.32,
+            0.34
+          ],
+          "level": 2,
+          "content": "5. 更多的求导法则"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.354,
+            0.851,
+            0.395
+          ],
+          "content": "利用上面介绍的复合函数和反函数求导法则, 我们给出这些法则的几个具体应用, 主要包括所谓的对数求导法则、参数方程求导法则以及极坐标形式下的求导法则."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.14,
+            0.402,
+            0.297,
+            0.419
+          ],
+          "level": 2,
+          "content": "(1) 对数求导法则"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.424,
+            0.853,
+            0.538
+          ],
+          "content": "对数求导法作为求导的一种具体手法, 主要针对某些特定形式的函数求导. 比如形如 $u(x)^{v(x)}$ 的函数、若干因子相乘或相除的函数或含指数或幂次的函数, 当然还有这些函数的复合或组合. 这一手法最基本的出发点是利用了对数函数的性质: 将乘、除转化为加、减, 幂函数、指数函数转化为乘法, 而后者的计算量通常要小很多. 当然, 也不排除这些函数与前面的隐函数求导等结合起来, 甚至有可能多次取对数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.543,
+            0.472,
+            0.56
+          ],
+          "content": "我们仅举几个例子领略一下这一方法."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.567,
+            0.412,
+            0.584
+          ],
+          "content": "例 6.3.8 求下列函数的导数:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.269,
+            0.603,
+            0.68,
+            0.623
+          ],
+          "content": "f (x) = x ^ {x} (x > 0), \\quad g (x) = (\\ln x) ^ {\\ln x} (x > 1).",
+          "image_source": "images/page_166_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.641,
+            0.304,
+            0.658
+          ],
+          "content": "解 两端取对数得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.404,
+            0.665,
+            0.545,
+            0.683
+          ],
+          "content": "\\ln f (x) = x \\ln x,",
+          "image_source": "images/page_166_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.696,
+            0.301,
+            0.713
+          ],
+          "content": "两端再关于 $x$ 求导, 得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.401,
+            0.711,
+            0.55,
+            0.748
+          ],
+          "content": "\\frac {f ^ {\\prime} (x)}{f (x)} = 1 + \\ln x,",
+          "image_source": "images/page_166_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.758,
+            0.145,
+            0.774
+          ],
+          "content": "从而"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.385,
+            0.781,
+            0.564,
+            0.8
+          ],
+          "content": "(x ^ {x}) ^ {\\prime} = x ^ {x} (1 + \\ln x).",
+          "image_source": "images/page_166_equation_21.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.813,
+            0.484,
+            0.831
+          ],
+          "content": "在等式 $g(x) = (\\ln x)^{\\ln x}$ 两端取对数，有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.365,
+            0.85,
+            0.584,
+            0.869
+          ],
+          "content": "\\ln g (x) = (\\ln x) \\cdot \\ln (\\ln x),",
+          "image_source": "images/page_166_equation_23.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.888,
+            0.204,
+            0.904
+          ],
+          "content": "两端求导得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.24,
+            0.903,
+            0.712,
+            0.94
+          ],
+          "content": "\\frac {g ^ {\\prime} (x)}{g (x)} = \\frac {1}{x} \\cdot \\ln (\\ln x) + \\ln x \\cdot \\frac {1}{\\ln x} \\cdot \\frac {1}{x} = \\frac {1}{x} \\left(1 + \\ln (\\ln x)\\right),",
+          "image_source": "images/page_166_equation_25.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 167,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.698,
+            0.055,
+            0.896,
+            0.068
+          ],
+          "content": "6.3 导数的计算 求导法则"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.917,
+            0.056,
+            0.944,
+            0.067
+          ],
+          "content": "155"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.112,
+            0.207,
+            0.128
+          ],
+          "content": "所以有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.377,
+            0.127,
+            0.662,
+            0.159
+          ],
+          "content": "g ^ {\\prime} (x) = \\frac {1}{x} (\\ln x) ^ {\\ln x} \\left(1 + \\ln (\\ln x)\\right).",
+          "image_source": "images/page_167_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.182,
+            0.165,
+            0.834,
+            0.184
+          ],
+          "content": "作为练习,读者可以通过计算下面函数的导数体会对数求导法的使用场合."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.183,
+            0.19,
+            0.351,
+            0.207
+          ],
+          "content": "例6.3.9 求函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.254,
+            0.217,
+            0.789,
+            0.255
+          ],
+          "content": "y = \\frac {(x + a _ {1}) ^ {\\alpha_ {1}} (x + a _ {2}) ^ {\\alpha_ {2}} \\cdots (x + a _ {n}) ^ {\\alpha_ {n}}}{(x ^ {2} + b _ {1} x + c _ {1}) ^ {\\beta_ {1}} (x ^ {2} + b _ {2} x + c _ {2}) ^ {\\beta_ {2}} \\cdots (x ^ {2} + b _ {m} x + c _ {m}) ^ {\\beta_ {m}}}",
+          "image_source": "images/page_167_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.269,
+            0.216,
+            0.286
+          ],
+          "content": "的导数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.293,
+            0.6,
+            0.31
+          ],
+          "content": "下面的问题是隐函数与对数求导相结合的例子."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.316,
+            0.573,
+            0.334
+          ],
+          "content": "例6.3.10 假设函数 $y = f(x)$ 是由隐函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.451,
+            0.354,
+            0.594,
+            0.371
+          ],
+          "content": "x ^ {y} - y ^ {x} + 1 = 0",
+          "image_source": "images/page_167_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.39,
+            0.441,
+            0.408
+          ],
+          "content": "确定的一个可导函数. 试求 $f'(2)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.414,
+            0.429,
+            0.431
+          ],
+          "content": "解 方程两端对 $x$ 求导, 得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.426,
+            0.451,
+            0.622,
+            0.467
+          ],
+          "content": "(\\mathrm{e} ^ {y \\ln x}) ^ {\\prime} - (\\mathrm{e} ^ {x \\ln y}) ^ {\\prime} = 0,",
+          "image_source": "images/page_167_equation_13.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.353,
+            0.485,
+            0.694,
+            0.519
+          ],
+          "content": "x ^ {y} \\left(y ^ {\\prime} \\ln x + \\frac {y}{x}\\right) - y ^ {x} \\left(\\ln y + \\frac {x}{y} y ^ {\\prime}\\right) = 0,",
+          "image_source": "images/page_167_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.53,
+            0.172,
+            0.546
+          ],
+          "content": "故"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.429,
+            0.544,
+            0.617,
+            0.58
+          ],
+          "content": "y ^ {\\prime} = \\frac {y ^ {x} \\ln y - x ^ {y - 1} y}{x ^ {y} \\ln x - y ^ {x - 1} x}.",
+          "image_source": "images/page_167_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.589,
+            0.901,
+            0.631
+          ],
+          "content": "由于隐函数能够确定一个函数关系 $y = f(x)$，而当 $x = 2$ 时，显然 $y = 3$ 满足隐式关系，因此只能有唯一的 $y = 3$. 所以我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.439,
+            0.642,
+            0.61,
+            0.676
+          ],
+          "content": "f ^ {\\prime} (2) = \\frac {9 \\ln 3 - 1 2}{8 \\ln 2 - 6}.",
+          "image_source": "images/page_167_equation_18.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.187,
+            0.688,
+            0.386,
+            0.705
+          ],
+          "level": 2,
+          "content": "(2) 参数方程求导法则"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.71,
+            0.489,
+            0.728
+          ],
+          "content": "我们知道在一定条件下, 参数方程"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.4,
+            0.742,
+            0.65,
+            0.795
+          ],
+          "content": "\\left\\{ \\begin{array}{l l} x = x (t), \\\\ y = y (t), \\end{array} \\right. \\quad t \\in (\\alpha , \\beta),",
+          "image_source": "images/page_167_equation_21.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.81,
+            0.902,
+            0.851
+          ],
+          "content": "可以通过参数 $t$ 来确定 $x, y$ 之间的函数关系 $y = f(x)$. 下面我们对参数方程求导问题作一简要讨论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.856,
+            0.902,
+            0.905
+          ],
+          "content": "首先, 在前面讨论反函数导数时曾经讨论过, 如果 $x(t), y(t)$ 在 $t \\in (\\alpha, \\beta)$ 内严格单调、可导, 且 $\\frac{\\mathrm{d}}{\\mathrm{d}t} x(t) \\neq 0$, 则 $x = x(t)$ 在区间 $x \\in (a, b)$ 内存在反函数 $t = t(x)$, 其中"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.281,
+            0.917,
+            0.767,
+            0.938
+          ],
+          "content": "a = \\min \\left\\{x (\\alpha^ {+}), x (\\beta^ {-}) \\right\\}, \\quad b = \\max \\left\\{x (\\alpha^ {+}), x (\\beta^ {-}) \\right\\}.",
+          "image_source": "images/page_167_equation_24.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 168,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.058,
+            0.056,
+            0.085,
+            0.068
+          ],
+          "content": "156"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.105,
+            0.055,
+            0.251,
+            0.068
+          ],
+          "content": "第六章 导数与微分"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.111,
+            0.411,
+            0.129
+          ],
+          "content": "将 $t = t(x)$ 代入 $y = y(t)$ 可得函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.345,
+            0.148,
+            0.614,
+            0.167
+          ],
+          "content": "y = y (t) = y (t (x)), \\quad x \\in (a, b).",
+          "image_source": "images/page_168_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.183,
+            0.361,
+            0.202
+          ],
+          "content": "由复合函数求导法则, 我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.377,
+            0.211,
+            0.584,
+            0.248
+          ],
+          "content": "\\frac {\\mathrm{d} y}{\\mathrm{d} x} = \\frac {\\mathrm{d} y}{\\mathrm{d} t} \\cdot \\frac {\\mathrm{d} t}{\\mathrm{d} x} = \\frac {y ^ {\\prime} (t)}{x ^ {\\prime} (t)}.",
+          "image_source": "images/page_168_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.264,
+            0.819,
+            0.294
+          ],
+          "content": "例6.3.11 求由参数方程 $x = t, y = t^2$ 所确定的函数在 $t = 1$ 处的导数 $\\frac{\\mathrm{dy}}{\\mathrm{dx}}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.294,
+            0.854,
+            0.335
+          ],
+          "content": "解 考虑到 $x'(t) = 1 \\neq 0, y'(t) = 2t$，所以该参数方程确定 $x, y$ 之间的一个函数 $y = y(t(x))$，且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.375,
+            0.336,
+            0.586,
+            0.375
+          ],
+          "content": "\\frac {\\mathrm{d} y}{\\mathrm{d} x} \\bigg | _ {t = 1} = \\left. \\frac {y ^ {\\prime} (t)}{x ^ {\\prime} (t)} \\right| _ {t = 1} = 2.",
+          "image_source": "images/page_168_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.383,
+            0.848,
+            0.402
+          ],
+          "content": "当然, 本例中的参数方程非常简单, 故直接得到函数的显式表示 $y = x^2$ 并作验证."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.402,
+            0.842,
+            0.431
+          ],
+          "content": "例6.3.12 求由参数方程 $x = \\sin t, y = \\mathrm{e}^t$ 所确定的函数在 $t = 0$ 处的导数 $\\frac{\\mathrm{dy}}{\\mathrm{dx}}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.432,
+            0.853,
+            0.472
+          ],
+          "content": "解 考虑到在 $t = 0$ 附近, $x'(t) = \\cos t \\neq 0$, $y'(0) = 1$, 所以该参数方程确定 $x, y$ 之间的一个函数 $y = y(t(x))$, 且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.375,
+            0.485,
+            0.586,
+            0.525
+          ],
+          "content": "\\left. \\frac {\\mathrm{d} y}{\\mathrm{d} x} \\right| _ {t = 0} = \\left. \\frac {y ^ {\\prime} (t)}{x ^ {\\prime} (t)} \\right| _ {t = 0} = 1.",
+          "image_source": "images/page_168_equation_12.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.144,
+            0.537,
+            0.378,
+            0.555
+          ],
+          "level": 2,
+          "content": "(3) 极坐标形式下求导法则"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.56,
+            0.853,
+            0.601
+          ],
+          "content": "考虑一类特殊的参数方程的求导问题: 设 $r = r(\\theta), \\theta \\in (\\alpha, \\beta)$ 是一给定的函数, 由此函数可以诱导出参数方程"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.343,
+            0.614,
+            0.615,
+            0.667
+          ],
+          "content": "\\left\\{ \\begin{array}{l l} x = r (\\theta) \\cos \\theta , & \\theta \\in (\\alpha , \\beta). \\\\ y = r (\\theta) \\sin \\theta , \\end{array} \\right.",
+          "image_source": "images/page_168_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.68,
+            0.573,
+            0.699
+          ],
+          "content": "假设 $r(\\theta)$ 作为 $\\theta$ 的函数其导数 $r'(\\theta)$ 存在, 在 $\\theta_0$ 附近"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.31,
+            0.716,
+            0.645,
+            0.736
+          ],
+          "content": "x ^ {\\prime} (\\theta_ {0}) = r ^ {\\prime} (\\theta_ {0}) \\cos \\theta_ {0} - r (\\theta_ {0}) \\sin \\theta_ {0} \\neq 0.",
+          "image_source": "images/page_168_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.752,
+            0.853,
+            0.793
+          ],
+          "content": "由前面的讨论, 知此时有反函数关系 $\\theta = \\theta(x)$, 代入 $y = y(\\theta) = y(\\theta(x))$, 可以进一步计算 $y$ 关于 $x$ 的导数了."
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.356,
+            0.792,
+            0.603,
+            0.828
+          ],
+          "content": "\\frac {\\mathrm{d} y}{\\mathrm{d} x} = \\frac {r ^ {\\prime} (\\theta) \\sin \\theta + r (\\theta) \\cos \\theta}{r ^ {\\prime} (\\theta) \\cos \\theta - r (\\theta) \\sin \\theta},",
+          "image_source": "images/page_168_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.836,
+            0.691,
+            0.854
+          ],
+          "content": "这就是极坐标形式下函数的求导公式. 我们对等式作一些形式处理:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.384,
+            0.866,
+            0.572,
+            0.939
+          ],
+          "content": "\\frac {\\mathrm{d} y}{\\mathrm{d} x} = \\frac {\\tan \\theta + \\frac {r (\\theta)}{r ^ {\\prime} (\\theta)}}{1 - \\tan \\theta \\frac {r (\\theta)}{r ^ {\\prime} (\\theta)}}.",
+          "image_source": "images/page_168_equation_21.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 169,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.697,
+            0.054,
+            0.896,
+            0.068
+          ],
+          "content": "6.3 导数的计算 求导法则"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.915,
+            0.055,
+            0.944,
+            0.067
+          ],
+          "content": "157"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.109,
+            0.823,
+            0.139
+          ],
+          "content": "注意到导数的几何意义 (见图 6.5) $\\frac{dy}{dx}$ 是切线与 x 轴正向的夹角 $\\alpha$ 的正切, 即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.392,
+            0.149,
+            0.652,
+            0.221
+          ],
+          "content": "\\frac {\\mathrm{d} y}{\\mathrm{d} x} = \\tan \\alpha = \\frac {\\tan \\theta + \\frac {r (\\theta)}{r ^ {\\prime} (\\theta)}}{1 - \\tan \\theta \\frac {r (\\theta)}{r ^ {\\prime} (\\theta)}}.",
+          "image_source": "images/page_169_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.233,
+            0.302,
+            0.249
+          ],
+          "content": "因此, 由此可解出"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.359,
+            0.247,
+            0.682,
+            0.283
+          ],
+          "content": "\\frac {r (\\theta)}{r ^ {\\prime} (\\theta)} = \\frac {\\tan \\alpha - \\tan \\theta}{1 + \\tan \\alpha \\tan \\theta} = \\tan (\\alpha - \\theta).",
+          "image_source": "images/page_169_equation_5.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.387,
+            0.304,
+            0.658,
+            0.468
+          ],
+          "sub_type": "text_image",
+          "content": "y\nr=r(θ)\nβ\nθ\nO\nx\nα",
+          "captions": [
+            {
+              "bbox": [
+                0.43,
+                0.477,
+                0.614,
+                0.493
+              ],
+              "content": "图6.5 极坐标的导数"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_169_image_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.514,
+            0.657,
+            0.531
+          ],
+          "content": "例 6.3.13 考虑 Archimedes 螺线在极坐标下的表示"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.48,
+            0.539,
+            0.564,
+            0.571
+          ],
+          "content": "r = \\frac {1}{2 \\pi} \\theta .",
+          "image_source": "images/page_169_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.583,
+            0.899,
+            0.654
+          ],
+          "content": "容易求得 $\\frac{\\mathrm{d}r}{\\mathrm{d}\\theta} = \\frac{1}{2\\pi}$ 是个常数. 考虑到极坐标的内涵, 这说明在极坐标下 $r$ 关于 $\\theta$ 的导数为常数的几何意义就是, 每当 $\\theta$ 改变 $\\Delta \\theta$ 时, $r$ 的改变量都是 $k\\Delta \\theta$. 特别地, 每当 $\\theta$ 逆时针旋转一周增加 $2\\pi$ 时, $r$ 便增加 1. 这深刻刻画了 Archimedes 螺线的特点."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.66,
+            0.334,
+            0.676
+          ],
+          "content": "如果用直角坐标"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.427,
+            0.681,
+            0.618,
+            0.702
+          ],
+          "content": "\\sqrt {x ^ {2} + y ^ {2}} = k \\mathrm{e} ^ {\\arctan {\\frac {y}{x}}}",
+          "image_source": "images/page_169_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.712,
+            0.799,
+            0.729
+          ],
+          "content": "表述 Archimedes 螺线的话, 形式上要复杂得多. 而此时 $y$ 关于 $x$ 的导数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.465,
+            0.736,
+            0.582,
+            0.771
+          ],
+          "content": "\\frac {\\mathrm{d} y}{\\mathrm{d} x} = \\frac {x + y}{x - y}.",
+          "image_source": "images/page_169_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.782,
+            0.899,
+            0.826
+          ],
+          "content": "例6.3.14 考虑双纽线 $r^2 = a^2\\cos 2\\theta \\left(0 < \\theta < \\frac{\\pi}{4}\\right)$. 证明: 双纽线的向径与切线的夹角与极角两倍的差是常数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.833,
+            0.507,
+            0.85
+          ],
+          "content": "证明 设向径与切线的夹角为 $\\beta$. 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.286,
+            0.86,
+            0.757,
+            0.898
+          ],
+          "content": "\\tan \\beta = \\frac {r (\\theta)}{r ^ {\\prime} (\\theta)} = \\frac {r ^ {2} (\\theta)}{r (\\theta) r ^ {\\prime} (\\theta)} = - \\frac {\\cos 2 \\theta}{\\sin 2 \\theta} = \\tan \\left(2 \\theta + \\frac {\\pi}{2}\\right).",
+          "image_source": "images/page_169_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.907,
+            0.469,
+            0.937
+          ],
+          "content": "注意到 $0 < \\theta < \\frac{\\pi}{4}$, 故有 $\\beta - 2\\theta = \\frac{\\pi}{2}$."
+        }
+      ]
+    },
+    {
+      "page_idx": 170,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.064,
+            0.056,
+            0.09,
+            0.067
+          ],
+          "content": "158"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.11,
+            0.054,
+            0.257,
+            0.068
+          ],
+          "content": "第六章 导数与微分"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.152,
+            0.109,
+            0.243,
+            0.128
+          ],
+          "level": 2,
+          "content": "习题6.3"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.156,
+            0.347,
+            0.173
+          ],
+          "content": "1. 求下列函数的导数:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.148,
+            0.18,
+            0.452,
+            0.245
+          ],
+          "sub_type": "text",
+          "content": "(1) $f(x) = (x + 1)(x + 2)^{2}(x + 3)^{3}$;\n(2) $f(x) = (1 + nx^{m})(1 + mx^{n})$;\n(3) $f(x) = (ax^{m} + b)^{n}(cx^{n} + d)^{m}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.251,
+            0.346,
+            0.267
+          ],
+          "content": "2. 求下列函数的导数:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.27,
+            0.321,
+            0.295
+          ],
+          "content": "(1) $f(x)=\\sqrt{\\sin^{2}x};$"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.516,
+            0.268,
+            0.753,
+            0.334
+          ],
+          "sub_type": "text",
+          "content": "(2) $f(x) = \\frac{x}{(1 - x)^2(1 + x)}$;\n(4) $f(x) = \\frac{x \\sin x + \\cos x}{x \\sin x - \\cos x}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.302,
+            0.346,
+            0.334
+          ],
+          "content": "(3) $f(x) = \\frac{x^p(1 - x)^q}{1 + x}$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.337,
+            0.346,
+            0.353
+          ],
+          "content": "3. 求下列函数的导数:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.354,
+            0.338,
+            0.385
+          ],
+          "content": "(1) $f(x)=\\frac{x}{\\sqrt{a^{2}+x^{2}}}$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.517,
+            0.36,
+            0.733,
+            0.38
+          ],
+          "content": "(2) $f(x) = \\arcsin (\\cos^2 x)$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.395,
+            0.391,
+            0.416
+          ],
+          "content": "(3) $f(x) = \\arcsin x\\sqrt{1 - x^2};$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.516,
+            0.388,
+            0.756,
+            0.423
+          ],
+          "content": "(4) $f(x)=\\sqrt{x+\\sqrt{x+\\sqrt{x}}};$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.425,
+            0.329,
+            0.442
+          ],
+          "content": "(5) $f(x) = \\mathrm{e}^{ax}\\sin bx.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.448,
+            0.346,
+            0.465
+          ],
+          "content": "4. 求下列函数的导数:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.468,
+            0.331,
+            0.49
+          ],
+          "content": "(1) $f(x) = (x \\sin x)^x$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.516,
+            0.464,
+            0.699,
+            0.499
+          ],
+          "content": "(2) $f(x) = x\\sqrt{\\frac{1 - x}{1 + x}};$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.501,
+            0.297,
+            0.521
+          ],
+          "content": "(3) $f(x) = (x)^{a^x}$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.516,
+            0.501,
+            0.648,
+            0.521
+          ],
+          "content": "(4) $f(x) = a^{x^n}$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.526,
+            0.451,
+            0.544
+          ],
+          "content": "(5) $f(x) = (\\cos x)^{\\sin x} + (\\sin x)^{\\cos x};$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.516,
+            0.525,
+            0.752,
+            0.546
+          ],
+          "content": "(6) $f(x) = (x + \\sqrt{1 + x^2})^n$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.549,
+            0.199,
+            0.565
+          ],
+          "content": "5. 设"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.275,
+            0.573,
+            0.691,
+            0.618
+          ],
+          "content": "f (x) = \\cos \\left(2 \\arctan \\left(\\sin \\left(\\operatorname{arccot} \\sqrt {\\frac {1 - x}{x}}\\right)\\right)\\right),",
+          "image_source": "images/page_170_equation_28.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.109,
+            0.634,
+            0.419,
+            0.65
+          ],
+          "content": "证明下面四个关系式中有一个成立:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.148,
+            0.656,
+            0.432,
+            0.745
+          ],
+          "sub_type": "text",
+          "content": "(1) $(1 - x)^{2}f^{\\prime}(x) - 2(f(x))^{2} = 0;$\n(2) $(1 - x)^{2}f^{\\prime}(x) + 2(f(x))^{2} = 0;$\n(3) $(1 + x)^{2}f^{\\prime}(x) - 2(f(x))^{2} = 0;$\n(4) $(1 + x)^{2}f^{\\prime}(x) + 2(f(x))^{2} = 0.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.751,
+            0.198,
+            0.767
+          ],
+          "content": "6. 设"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.277,
+            0.775,
+            0.688,
+            0.813
+          ],
+          "content": "y = \\frac {1}{4 \\sqrt {2}} \\ln \\frac {x ^ {2} + \\sqrt {2} x + 1}{x ^ {2} - \\sqrt {2} x + 1} - \\frac {1}{2 \\sqrt {2}} \\arctan \\frac {\\sqrt {2} x}{x ^ {2} - 1},",
+          "image_source": "images/page_170_equation_36.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.829,
+            0.183,
+            0.846
+          ],
+          "content": "求  $y'(x)$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.846,
+            0.559,
+            0.877
+          ],
+          "content": "7. 求下列由参数方程所确定的函数的导数  $\\frac{dy}{dx}$ :"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.88,
+            0.401,
+            0.938
+          ],
+          "content": "(1) $\\left\\{\\begin{aligned}x&=\\cos^{4}t,\\\\ y&=\\sin^{4}t\\end{aligned}\\right.$ 在 $t=\\frac{\\pi}{3}$ 处;"
+        }
+      ]
+    },
+    {
+      "page_idx": 171,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.701,
+            0.056,
+            0.899,
+            0.071
+          ],
+          "content": "6.3 导数的计算 求导法则"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.918,
+            0.058,
+            0.946,
+            0.069
+          ],
+          "content": "159"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.111,
+            0.612,
+            0.169
+          ],
+          "content": "(2) 设  $\\left\\{\\begin{aligned} x &= a(t - \\sin t), \\\\ y &= a(1 - \\cos t), \\end{aligned}\\right.$  求  $\\left.\\frac{dy}{dx}\\right|_{t=\\frac{\\pi}{2}}, \\left.\\frac{dy}{dx}\\right|_{t=\\pi}.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.172,
+            0.401,
+            0.19
+          ],
+          "content": "8. 设 $f(x)$ 可导，求 $y'$:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.196,
+            0.346,
+            0.214
+          ],
+          "content": "(1) $y = f(x \\sin x)$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.556,
+            0.196,
+            0.717,
+            0.215
+          ],
+          "content": "(2) $y = f(\\mathrm{e}^x)\\mathrm{e}^{f(x)}$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.22,
+            0.375,
+            0.238
+          ],
+          "content": "(3) $y = f(\\cos x) \\sin x;$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.556,
+            0.22,
+            0.723,
+            0.238
+          ],
+          "content": "(4) $y = f(f(f(x)))$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.244,
+            0.336,
+            0.261
+          ],
+          "content": "(5)  $y = f(\\tan x)$ ;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.556,
+            0.244,
+            0.71,
+            0.261
+          ],
+          "content": "(6) $y = [f(\\ln x)]^n$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.266,
+            0.436,
+            0.284
+          ],
+          "content": "9. 设  $u(x)$ ,  $v(x)$  可导, 求  $y'$ :"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.29,
+            0.401,
+            0.31
+          ],
+          "content": "(1) $y = \\sqrt{u^2(x) + v^2(x)}$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.556,
+            0.291,
+            0.662,
+            0.309
+          ],
+          "content": "(2) $y = \\sqrt[u]$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.313,
+            0.366,
+            0.346
+          ],
+          "content": "(3) $y = \\arctan \\frac{u(x)}{v(x)}$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.556,
+            0.315,
+            0.656,
+            0.343
+          ],
+          "content": "(4) $y = \\frac{u}{v^2}$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.349,
+            0.351,
+            0.382
+          ],
+          "content": "(5) $y = \\frac{1}{\\sqrt{u^2 + v^2}}$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.556,
+            0.356,
+            0.661,
+            0.376
+          ],
+          "content": "(6) $y = u^{\\mathrm{e}^{v}}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.385,
+            0.759,
+            0.403
+          ],
+          "content": "10. 设 $a_{ij}(x)$ 均为可导函数, 试求行列式 $\\det(a_{ij}(x))_{n \\times n}$ 的导数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.409,
+            0.902,
+            0.473
+          ],
+          "content": "11. 将区间  $(0,1)$  内的实数 x 用十进制无限小数表示为  $x = 0.x_{1}x_{2}x_{3}\\cdots, x_{i} \\in \\{0,1,\\cdots,9\\}$ . 比如 x = 0.5, 则记为  $x = 0.4999\\cdots$ . 定义  $f(x) = 0.x_{1}0x_{2}00x_{3}\\cdots$ , 试讨论  $f(x)$  是否有可导的点."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.479,
+            0.838,
+            0.497
+          ],
+          "content": "12. 前面曾经引入过 [0,1] 上的 Riemann 函数 (参见习题 5.1 中的题目 2):"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.311,
+            0.522,
+            0.902,
+            0.616
+          ],
+          "content": "R (x) := \\left\\{ \\begin{array}{l l} {1,} & {x = 0,} \\\\ {\\frac {1}{q},} & {x = \\frac {p}{q}, \\quad \\text {其中} p, q \\text {为既约整数},} \\\\ {0,} & {x \\text {为无理数}.} \\end{array} \\right. \\tag {6.3.8}",
+          "image_source": "images/page_171_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.639,
+            0.678,
+            0.657
+          ],
+          "content": "证明 Riemann 函数 $R(x)$ 虽然在无理点连续, 但处处不可导."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.663,
+            0.903,
+            0.704
+          ],
+          "content": "13. 设 $R(x)$ 是由 (6.3.8) 式定义的 Riemann 函数. 记 $R_{2}(x) = R^{2}(x), R_{3}(x) = R^{3}(x)$. 证明:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.71,
+            0.522,
+            0.726
+          ],
+          "content": "(1)  $R_{2}(x)$  在 [0,1] 上仍然处处不可导;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.733,
+            0.51,
+            0.75
+          ],
+          "content": "\\*(2) $R_{3}(x)$ 在[0,1]上存在可导的点."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.756,
+            0.902,
+            0.796
+          ],
+          "content": "14. 设  $x_{1}, x_{2}, \\cdots, x_{n}$  是 n 个两两互异的实数， $y(x) = (x - x_{1})(x - x_{2}) \\cdots (x - x_{n})$ ，计算并化简"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.475,
+            0.807,
+            0.577,
+            0.85
+          ],
+          "content": "\\sum_ {k = 1} ^ {n} \\frac {1}{y ^ {\\prime} (x _ {k})}.",
+          "image_source": "images/page_171_equation_26.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.87,
+            0.902,
+            0.911
+          ],
+          "content": "进一步, 当  $x_{1}, x_{2}, \\cdots, x_{n}$  有相等的情况时, 有可能  $y'(x_{k}) = 0$ , 试给出一个与上面求和式类似的求和表达式."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.917,
+            0.834,
+            0.935
+          ],
+          "content": "15. 设  $x_{1}, x_{2}, \\cdots, x_{n}$  是 n 个两两互异的实数, 考虑 Vandermonde 行列式"
+        }
+      ]
+    },
+    {
+      "page_idx": 172,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.059,
+            0.054,
+            0.087,
+            0.065
+          ],
+          "content": "160"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.105,
+            0.052,
+            0.254,
+            0.067
+          ],
+          "content": "第六章 导数与微分"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.329,
+            0.107,
+            0.627,
+            0.251
+          ],
+          "content": "y (x) = \\left| \\begin{array}{c c c c c} 1 & 1 & \\dots & 1 & 1 \\\\ x _ {1} & x _ {2} & \\dots & x _ {n} & x \\\\ x _ {1} ^ {2} & x _ {2} ^ {2} & \\dots & x _ {n} ^ {2} & x ^ {2} \\\\ \\vdots & \\vdots & & \\vdots & \\vdots \\\\ x _ {1} ^ {n} & x _ {2} ^ {n} & \\dots & x _ {n} ^ {n} & x ^ {n} \\end{array} \\right|.",
+          "image_source": "images/page_172_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.276,
+            0.169,
+            0.294
+          ],
+          "content": "试计算"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.427,
+            0.314,
+            0.527,
+            0.357
+          ],
+          "content": "\\sum_ {k = 1} ^ {n} \\frac {1}{y ^ {\\prime} (x _ {k})}.",
+          "image_source": "images/page_172_equation_4.jpg"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.1,
+            0.384,
+            0.856,
+            0.585
+          ],
+          "sub_type": "text",
+          "content": "16. 证明: 椭圆 $x^{2} + 2y^{2} = C^{2}$ 与抛物线 $y = px^{2}$ 在任一交点处的切线都相互垂直.\n17. 证明: 对任意的实数 $a, b, 0 < |a| < 1, |b| > 1$, 椭圆 $\\frac{x^2}{a^2} + \\frac{y^2}{1 - a^2} = 1$ 与双曲线 $\\frac{x^2}{b^2} + \\frac{y^2}{1 - b^2} = 1$ 在交点处的切线相互垂直.\n18. 证明: 对于任意实数 $c_{1}, c_{2}$, 曲线 $xy = c_{1}$ 与 $x^{2} - y^{2} + 2xy = c_{2}$ 在交点处两曲线切线的夹角是定值 $\\frac{\\pi}{4}$.\n19. 设 $f(x_0) = g(x_0)$, $f(x), g(x)$ 在点 $x_0$ 处均可导, 且有相同的导数 $k$, 证明对于满足条件"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.29,
+            0.609,
+            0.662,
+            0.629
+          ],
+          "content": "\\min \\{f (x), g (x) \\} \\leqslant h (x) \\leqslant \\max \\{f (x), g (x) \\}",
+          "image_source": "images/page_172_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.658,
+            0.801,
+            0.675
+          ],
+          "content": "的任一函数  $h(x)$  在  $x_{0}$  处也是可导的, 且导数值等于 k. 试给出其几何直观理解."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.678,
+            0.797,
+            0.711
+          ],
+          "content": "20. 设 $f(x)$ 在 $x = 0$ 处可导. 问极限 $\\lim_{x \\to 0} \\frac{f(x) - f(x - x^3)}{x^3}$ 是否一定存在?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.713,
+            0.851,
+            0.763
+          ],
+          "content": "21. 设 $f(x)$ 在 $x = 0$ 处连续. 问两极限 $\\lim_{x \\to 0} \\frac{f(x) - f(0)}{x}$ 和 $\\lim_{x \\to 0} \\frac{f(x^3) - f(x^3 - x^5)}{x^5}$ 之间的存在性有没有逻辑关系？"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.77,
+            0.497,
+            0.787
+          ],
+          "content": "22. 证明在 $\\mathbb{R}$ 上不存在可微函数 $f$ 满足"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.367,
+            0.817,
+            0.586,
+            0.837
+          ],
+          "content": "f \\circ f (x) = - x ^ {3} + x ^ {2} + 1.",
+          "image_source": "images/page_172_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.868,
+            0.497,
+            0.885
+          ],
+          "content": "23. 证明在 $\\mathbb{R}$ 上不存在可微函数 $f$ 满足"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.373,
+            0.916,
+            0.579,
+            0.935
+          ],
+          "content": "f \\circ f (x) = x ^ {2} - 3 x + 3.",
+          "image_source": "images/page_172_equation_17.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 173,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.777,
+            0.055,
+            0.899,
+            0.068
+          ],
+          "content": "6.4 函数的微分"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.92,
+            0.056,
+            0.947,
+            0.067
+          ],
+          "content": "161"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.146,
+            0.107,
+            0.36,
+            0.129
+          ],
+          "level": 2,
+          "content": "6.4 函数的微分"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.185,
+            0.18,
+            0.603,
+            0.201
+          ],
+          "level": 2,
+          "content": "6.4.1 微分的定义 可导与可微的关系"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.225,
+            0.903,
+            0.29
+          ],
+          "content": "前面我们引入了函数的导数这一基本概念. 函数 $f(x)$ 在点 $x_0$ 处可导是指当自变量作微小改变 $\\Delta x = x - x_0$ 时, 函数值的改变量 $\\Delta y = f(x) - f(x_0)$ 与自变量改变量 $\\Delta x$ 差商 $\\Delta y / \\Delta x$ 的极限存在且有限. 因此函数可导是指这一差商的极限有一个明确趋势."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.296,
+            0.903,
+            0.432
+          ],
+          "content": "微分是与导数紧密相关的另一个概念, 在上述符号和语境下, 微分更侧重于考察当 x 改变  $\\Delta x$  时引起的 y 的改变量  $\\Delta y$  的大小, 以及特别关注  $\\Delta y$  的大小是否与  $\\Delta x$  的大小大致稳定在一个比例关系上. 具体来说就是, 对于不同的  $\\Delta x$ ,  $\\Delta y$  自然可以不同, 但是当  $\\Delta x$  比较小时,  $\\Delta y$  能否总能 “粗线条” 近似等于  $A\\Delta x$ , 其中 A 是常数, “粗线条” 是指两者的误差  $\\Delta y - A\\Delta x$  相对于基本无穷小量  $\\Delta x$  而言, 是可以 “忽略不计” 的高阶无穷小量. 若如此, 则称  $y = f(x)$  在  $x_{0}$  处可微. 我们给出如下严格的定义:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.438,
+            0.802,
+            0.456
+          ],
+          "content": "定义 6.4.1 设  $y = f(x)$  在点  $x_{0}$  附近有定义, 如果存在常数 A, 使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.274,
+            0.472,
+            0.776,
+            0.492
+          ],
+          "content": "\\Delta y = f (x _ {0} + \\Delta x) - f (x _ {0}) = A \\Delta x + o (\\Delta x) \\quad (\\Delta x \\rightarrow 0),",
+          "image_source": "images/page_173_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.507,
+            0.903,
+            0.548
+          ],
+          "content": "则称 $f(x)$ 在点 $x_0$ 处可微. $A\\Delta x$ 构成了 $\\Delta y$ 主要部分, 简称 $\\Delta y$ 的主部, 常称之为 $y$ 的微分, 记为 $\\mathrm{dy}$ 或 $\\mathrm{df}(x_0)$. 即当函数 $y = f(x)$ 在点 $x_0$ 处可微时, 有 $\\mathrm{dy} = A\\Delta x$."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.152,
+            0.554,
+            0.23,
+            0.694
+          ],
+          "sub_type": "natural_image",
+          "content": "Blank white image with a thin blue horizontal line at the top (no text or symbols)",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_173_image_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.243,
+            0.555,
+            0.903,
+            0.622
+          ],
+          "content": "注 6.4.1 (1) 定义中所说的 A 是常数, 是指它相对于  $\\Delta x$  而言是常数, 不依赖于  $\\Delta x$  的改变而改变. 显然, A 的值是依赖于  $x_{0}$  点的, 即  $A = A(x_{0})$ , 当不刻意强调  $x_{0}$  时, 常写为  $A = A(x)$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.243,
+            0.629,
+            0.903,
+            0.695
+          ],
+          "content": "(2) 考虑到取特殊函数 $y = f(x) = x$ 时, 显然有 $\\Delta y = \\Delta x$, 所以又有 $\\mathrm{dx} = \\Delta x$. 因此在微分记号中, 常约定把 $\\Delta x$ 记成 $\\mathrm{dx}$, 而把一个可微函数的微分记为 $\\mathrm{dy} = A\\mathrm{dx}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.707,
+            0.646,
+            0.723
+          ],
+          "content": "我们通过下面具体例子来体会一下微分的几何直观."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.73,
+            0.903,
+            0.77
+          ],
+          "content": "例 6.4.1 考虑边长为  $x_{0}$  的正方形的面积  $S = x_{0}^{2}$ ，当边长  $x_{0}$  作一微小改变  $\\Delta x$  时，则正方形的面积改变量为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.342,
+            0.786,
+            0.903,
+            0.807
+          ],
+          "content": "\\Delta S = (x _ {0} + \\Delta x) ^ {2} - x _ {0} ^ {2} = 2 x _ {0} \\Delta x + (\\Delta x) ^ {2}. \\tag {6.4.1}",
+          "image_source": "images/page_173_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.822,
+            0.905,
+            0.887
+          ],
+          "content": "从解析式(6.4.1)可以看出, $\\Delta S$ 包含两部分, $2x_0\\Delta x$ 和 $(\\Delta x)^2$. 当 $\\Delta x \\to 0$ 时, $\\Delta S$ 的主部 $\\mathrm{d}S = 2x_0\\Delta x$, 而误差 $\\Delta S - \\mathrm{d}S$ 为 $(\\Delta x)^2$, 是 $\\Delta x$ 的高阶无穷小量. 根据定义, 这说明正方形的面积 $S = x^2$ 是边长 $x$ 的可微函数, 且 $\\mathrm{d}S = 2x\\mathrm{d}x$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.892,
+            0.905,
+            0.935
+          ],
+          "content": "解析式 (6.4.1) 有明确的几何直观, 从图 6.6 中可以看出 $\\Delta S$ 两部分的几何意义: $2x_{0}\\Delta x$ 对应的是两个长为 $x_{0}$, 宽为 $\\Delta x$ 的浅蓝色长方形的面积, $(\\Delta x)^{2}$ 对应的是一个边"
+        }
+      ]
+    },
+    {
+      "page_idx": 174,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.057,
+            0.056,
+            0.084,
+            0.067
+          ],
+          "content": "162"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.103,
+            0.055,
+            0.25,
+            0.068
+          ],
+          "content": "第六章 导数与微分"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.111,
+            0.768,
+            0.129
+          ],
+          "continues_prev": true,
+          "content": "长为  $\\Delta x$  的深蓝色正方形的面积, 它是自变量的改变量  $\\Delta x$  的高阶无穷小量."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.349,
+            0.147,
+            0.607,
+            0.332
+          ],
+          "sub_type": "text_image",
+          "content": "y\nΔx\nx₀\n(Δx)²\nS\nΔx\nO\nx₀\nx",
+          "captions": [
+            {
+              "bbox": [
+                0.448,
+                0.341,
+                0.506,
+                0.355
+              ],
+              "content": "图6.6"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_174_image_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.379,
+            0.586,
+            0.396
+          ],
+          "content": "关于可微与可导之间的关系, 成立下面的重要定理:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.402,
+            0.804,
+            0.421
+          ],
+          "content": "定理 6.4.1 函数 $y = f\\left( x\\right)$ 在点 ${x}_{0}$ 处可微的充要条件是它在该点处可导."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.426,
+            0.651,
+            0.444
+          ],
+          "content": "证明 (必要性) 若 $f(x)$ 在 $x_0$ 处可微, 即存在常数 $A$ 使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.229,
+            0.464,
+            0.851,
+            0.482
+          ],
+          "content": "\\Delta y = f (x _ {0} + \\Delta x) - f (x _ {0}) = A \\Delta x + o (\\Delta x) \\quad (\\Delta x \\rightarrow 0) \\tag {6.4.2}",
+          "image_source": "images/page_174_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.501,
+            0.201,
+            0.517
+          ],
+          "content": "成立. 从而"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.345,
+            0.517,
+            0.609,
+            0.549
+          ],
+          "content": "\\frac {\\Delta y}{\\Delta x} = A + o (1) \\qquad (\\Delta x \\to 0),",
+          "image_source": "images/page_174_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.557,
+            0.127,
+            0.572
+          ],
+          "content": "即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.347,
+            0.573,
+            0.606,
+            0.605
+          ],
+          "content": "\\lim _ {\\Delta x \\to 0} f ^ {\\prime} (x _ {0}) = \\lim _ {\\Delta x \\to 0} \\frac {\\Delta y}{\\Delta x} = A.",
+          "image_source": "images/page_174_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.612,
+            0.647,
+            0.63
+          ],
+          "content": "这表明 $f(x)$ 不但在点 $x_0$ 处可导, 而且其导数值为 $f'(x_0) = A$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.636,
+            0.464,
+            0.653
+          ],
+          "content": "(充分性) 如果  $f(x)$  在  $x_{0}$  处可导, 即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.32,
+            0.668,
+            0.632,
+            0.702
+          ],
+          "content": "\\lim _ {\\Delta x \\to 0} \\frac {f (x _ {0} + \\Delta x) - f (x _ {0})}{\\Delta x} = f ^ {\\prime} (x _ {0}).",
+          "image_source": "images/page_174_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.714,
+            0.36,
+            0.731
+          ],
+          "content": "用无穷小等价的语言表示, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.255,
+            0.743,
+            0.698,
+            0.776
+          ],
+          "content": "\\frac {f (x _ {0} + \\Delta x) - f (x _ {0})}{\\Delta x} = f ^ {\\prime} (x _ {0}) + o (1) \\quad (\\Delta x \\to 0),",
+          "image_source": "images/page_174_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.788,
+            0.519,
+            0.806
+          ],
+          "content": "从而有关系式 (6.4.2) 成立, 其中 $A = f'(x_0)$, 即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.208,
+            0.826,
+            0.745,
+            0.844
+          ],
+          "content": "\\Delta y = f (x _ {0} + \\Delta x) - f (x _ {0}) = f ^ {\\prime} (x _ {0}) \\Delta x + o (\\Delta x) \\quad (\\Delta x \\rightarrow 0).",
+          "image_source": "images/page_174_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.863,
+            0.148,
+            0.879
+          ],
+          "content": "从而"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.414,
+            0.887,
+            0.851,
+            0.905
+          ],
+          "content": "\\mathrm{d} y = f ^ {\\prime} (x) \\mathrm{d} x. \\tag {6.4.3}",
+          "image_source": "images/page_174_equation_21.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.833,
+            0.92,
+            0.851,
+            0.933
+          ],
+          "content": "□"
+        }
+      ]
+    },
+    {
+      "page_idx": 175,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.778,
+            0.055,
+            0.9,
+            0.068
+          ],
+          "content": "6.4 函数的微分"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.921,
+            0.056,
+            0.947,
+            0.067
+          ],
+          "content": "163"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.11,
+            0.905,
+            0.2
+          ],
+          "content": "类似于导数值刻画的是切线的斜率, 微分也有相应的几何意义: 给定函数 $y = f(x)$ 以及它对应的曲线 $C$, 设曲线 $C$ 在 $P_0(x_0, f(x_0))$ 处存在切线 $\\ell, P(x_0 + \\Delta x, f(x_0 + \\Delta x))$ 是曲线 $C$ 上 $P_0$ 附近的另一点, 点 $Q(x_0 + \\Delta x, f(x_0))$ 和点 $T(x_0 + \\Delta x, f(x_0) + f'(x_0)\\Delta x)$ 如图 6.7 所示. 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.243,
+            0.219,
+            0.809,
+            0.239
+          ],
+          "content": "Q T = \\mathrm{d} y = f ^ {\\prime} (x _ {0})) \\Delta x, \\qquad T P = \\Delta y - \\mathrm{d} y = o (\\Delta x) \\quad (\\Delta x \\to 0).",
+          "image_source": "images/page_175_equation_3.jpg"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.342,
+            0.27,
+            0.717,
+            0.477
+          ],
+          "sub_type": "line",
+          "content": "| Point | x-coordinate | y-coordinate |\n| --- | --- | --- |\n| P0 | \\(x_0\\) | \\(y_0\\) |\n| Q | \\(x_0+\\Delta x\\) | \\(y_0+\\Delta y\\) |\n| T | N/A | N/A |",
+          "captions": [
+            {
+              "bbox": [
+                0.501,
+                0.485,
+                0.559,
+                0.501
+              ],
+              "content": "图6.7"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_175_chart_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.194,
+            0.525,
+            0.407,
+            0.542
+          ],
+          "content": "所以我们看到如下事实:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.154,
+            0.549,
+            0.906,
+            0.661
+          ],
+          "sub_type": "text",
+          "content": "(1)  $dx = \\Delta x = P_{0}Q$  是自变量的增量;\n(2)  $\\Delta y = QP$  是函数的增量;\n(3)  $\\mathrm{d}y = f'(x_{0})\\mathrm{d}x = QT$  几何上是切线的增量, 代数上是函数增量的线性主部, 即微分;\n(4)  $\\Delta y - \\mathrm{d}y = o(\\Delta x) = TP$  是函数增量与其切线增量的差."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.154,
+            0.663,
+            0.907,
+            0.738
+          ],
+          "content": "我们知道, Leibniz 引入的导数符号  $\\frac{dy}{dx}$  是一个整体记号, 引入微分概念后, 我们可以给导数符号赋予新的内涵: 即可以把它看成分子 dy 与分母 dx 的商从而可以单独参与运算, 类似于  $\\frac{3}{5}$  中的 3 和 5. 这一形式上的解脱为我们提供了极大的方便:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.384,
+            0.753,
+            0.68,
+            0.787
+          ],
+          "content": "\\frac {\\mathrm{d} y}{\\mathrm{d} x} = A \\quad \\Longleftrightarrow \\quad \\mathrm{d} y = A \\mathrm{d} x.",
+          "image_source": "images/page_175_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.155,
+            0.798,
+            0.909,
+            0.864
+          ],
+          "content": "当然, 如果从形式上来理解微分仅仅是把导数两端乘 dx 得来就过于表象化了. 在后期众多的课程中, 我们将渐渐意识到微分适用的场景将远远超过导数, 具有更强大的威力和更广泛的应用."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.155,
+            0.87,
+            0.91,
+            0.935
+          ],
+          "content": "微分强调的是在某点附近, 函数的改变量能否剥离出自变量改变量的一个线性主部, 而导数强调的是两个改变量的比值. 可微和可导似乎是看待同一事情 $\\Delta y$ 的两个不同角度, 差别不大. 对于一元函数而言的确如此, 即可微等价于可导. 这一等价性对于多元函"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "created_at": "2025-11-20T03:44:46+08:00",
+      "modified_at": "2025-11-20T03:47:17+08:00",
+      "page_count": 856,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 160,
+          "width_pt": 510.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 161,
+          "width_pt": 510.0,
+          "height_pt": 743.0
+        },
+        {
+          "page_idx": 162,
+          "width_pt": 510.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 163,
+          "width_pt": 509.0,
+          "height_pt": 743.0
+        },
+        {
+          "page_idx": 164,
+          "width_pt": 510.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 165,
+          "width_pt": 509.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 166,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 167,
+          "width_pt": 509.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 168,
+          "width_pt": 510.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 169,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 170,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 171,
+          "width_pt": 510.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 172,
+          "width_pt": 511.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 173,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 174,
+          "width_pt": 511.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 175,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

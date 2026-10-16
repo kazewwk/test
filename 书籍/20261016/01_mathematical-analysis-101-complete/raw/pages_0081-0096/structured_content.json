@@ -1,0 +1,3656 @@
+{
+  "pages": [
+    {
+      "page_idx": 80,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.742,
+            0.056,
+            0.896,
+            0.07
+          ],
+          "content": "3.3 实数系基本定理"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.915,
+            0.058,
+            0.935,
+            0.069
+          ],
+          "content": "67"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.184,
+            0.112,
+            0.704,
+            0.13
+          ],
+          "content": "根据定义, $\\mathbb{R}$ 被分成两两不交的三部分: 内部、外部和边界."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.137,
+            0.364,
+            0.155
+          ],
+          "content": "另一方面, 我们定义"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.161,
+            0.398,
+            0.179
+          ],
+          "content": "定义 3.3.2 设  $E \\subseteq R$ ."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.145,
+            0.186,
+            0.896,
+            0.253
+          ],
+          "sub_type": "text",
+          "content": "(1) 若对任何 $\\delta > 0$, $(x_0 - \\delta, x_0 + \\delta) \\cap E$ 为无限集, 则称 $x_0$ 为 $E$ 的聚点, 又称为极限点. $E$ 的极限点全体称为 $E$ 的导集, 记作 $E'$.\n(2) 若存在 $\\delta > 0$ 使得 $(x_0 - \\delta, x_0 + \\delta) \\cap E = \\{x_0\\}$, 则称 $x_0$ 为 $E$ 的孤立点."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.258,
+            0.896,
+            0.299
+          ],
+          "content": "定理 3.3.5 若对任何  $\\delta > 0, (x_{0} - \\delta, x_{0} + \\delta)$  内包含 E 中异于  $x_{0}$  的点，则  $x_{0}$  为 E 的聚点."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.306,
+            0.896,
+            0.348
+          ],
+          "content": "证明 任取 $\\delta > 0$. 由假设, 存在 $x_{1} \\in (x_{0} - \\delta, x_{0} + \\delta) \\cap E$, 且 $x_{1} \\neq x_{0}$. 从而 $\\delta_{1} := |x_{1} - x_{0}| > 0$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.355,
+            0.896,
+            0.419
+          ],
+          "content": "于是, 又有 $x_{2} \\in (x_{0} - \\delta_{1}, x_{0} + \\delta_{1}) \\cap E$, 满足 $x_{2} \\neq x_{0}$. 依次可以找到 $E$ 中点列 $\\{x_{n}\\}$ 满足 $0 < |x_{n+1} - x_{0}| < |x_{n} - x_{0}| < \\delta$. 所以 $(x_{0} - \\delta, x_{0} + \\delta)$ 内包含了 $E$ 中无限多个点. 即 $x_{0}$ 是 $E$ 的聚点. □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.426,
+            0.896,
+            0.468
+          ],
+          "content": "在以上定义的基础上, 我们可以给出 $\\mathbb{R}$ 的另一种分类: $\\mathbb{R}$ 按 $E$ 的导集、孤立点全体以及外部, 分成两两不交的三部分."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.475,
+            0.439,
+            0.493
+          ],
+          "content": "接下来我们引入开集和闭集."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.499,
+            0.77,
+            0.517
+          ],
+          "content": "定义 3.3.3 若 E 中的点都是其内点, 即  $E = E^{\\circ}$ , 则称 E 为开集."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.524,
+            0.628,
+            0.542
+          ],
+          "content": "若 E 包含其所有聚点, 即  $E' \\subseteq E$ , 则称 E 为闭集."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.548,
+            0.896,
+            0.589
+          ],
+          "content": "根据定义, $\\varnothing$ 与 $\\mathbb{R}$ 既是开集又是闭集. 今后我们将证明这也是 $\\mathbb{R}$ 中仅有的两个既是开集又是闭集的集合."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.597,
+            0.686,
+            0.615
+          ],
+          "content": "由定义易见集合的内部是开集. 自然, 它的外部也是开集."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.621,
+            0.896,
+            0.662
+          ],
+          "content": "以下定理所列条件是集合为闭集的充要条件, 均可作为闭集的等价定义. 也是判断集合是否为闭集的最常用条件."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.669,
+            0.776,
+            0.687
+          ],
+          "content": "定理 3.3.6 设  $E \\subseteq R$ . 则 E 为闭集当且仅当以下任一条件成立:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.188,
+            0.695,
+            0.536,
+            0.76
+          ],
+          "sub_type": "text",
+          "content": "(1)  $\\partial E \\subseteq E;$\n(2) CE 为开集;\n(3) E 中任何收敛点列的极限均属于 E."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.767,
+            0.896,
+            0.808
+          ],
+          "content": "证明 由边界点与聚点的定义易见, 若 $x_0 \\notin F$, 则 $x_0$ 是 $F$ 的边界点当且仅当它是 $F$ 的聚点. 即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.427,
+            0.83,
+            0.896,
+            0.848
+          ],
+          "content": "\\mathscr {C} F \\cap \\partial F = \\mathscr {C} F \\cap F ^ {\\prime}. \\tag {3.3.9}",
+          "image_source": "images/page_80_equation_24.jpg"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.148,
+            0.869,
+            0.9,
+            0.939
+          ],
+          "sub_type": "text",
+          "content": "(1) 由 (3.3.9) 式即得 E 为闭集, 即  $E' \\subseteq E$  当且仅当  $\\partial E \\subseteq E$ .\n(2) 由于 $\\partial E = \\partial (\\mathscr{C}E)$, 由 (1), $E$ 为闭集当且仅当 $\\mathscr{C}E \\cap \\partial (\\mathscr{C}E) = \\varnothing$. 注意到总有 $(\\mathscr{C}E)^{\\circ} \\subseteq \\mathscr{C}E \\subseteq (\\mathscr{C}E)^{\\circ} \\cup \\partial (\\mathscr{C}E)$, 可见 $E$ 为闭集等价于 $\\mathscr{C}E = (\\mathscr{C}E)^{\\circ}$, 即 $\\mathscr{C}E$ 为开集."
+        }
+      ]
+    },
+    {
+      "page_idx": 81,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.068,
+            0.056,
+            0.088,
+            0.067
+          ],
+          "content": "68"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.055,
+            0.239,
+            0.068
+          ],
+          "content": "第三章 序列极限"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.111,
+            0.859,
+            0.153
+          ],
+          "content": "(3) 若 $E$ 是闭集, 设 $E$ 中点列 $\\{x_k\\}$ 收敛到 $x_0$, 则当集合 $F := \\{x_k | k \\geqslant 1\\}$ 为有限集时, 必有 $x_0 \\in F$, 从而 $x_0 \\in E$; 当 $F$ 为无限集时, 必有 $x_0 \\in E'$, 从而也有 $x_0 \\in E$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.158,
+            0.859,
+            0.223
+          ],
+          "content": "另一方面, 若 $E$ 中收敛点列 $\\{x_k\\}$ 的极限总是属于 $E$, 则对任何 $x_0 \\in E'$ 以及 $k \\geqslant 1$, 存在 $x_k \\in \\left(x_0 - \\frac{1}{k}, x_0 + \\frac{1}{k}\\right) \\cap E$. 由此 $\\{x_k\\}$ 是 $E$ 中收敛到 $x_0$ 的点列, 所以 $x_0 \\in E$, 从而 $E$ 为闭集."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.229,
+            0.389,
+            0.246
+          ],
+          "content": "对于开集, 有如下重要性质."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.253,
+            0.521,
+            0.272
+          ],
+          "content": "定理 3.3.7 (1) 任意个开集的并是开集;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.277,
+            0.43,
+            0.294
+          ],
+          "content": "(2) 任意有限个开集的交是开集."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.298,
+            0.732,
+            0.332
+          ],
+          "content": "证明 (1) 设 $\\{V_{\\alpha} | \\alpha \\in I\\}$ 是开集族①, 我们要证 $V := \\bigcup_{\\alpha \\in I} V_{\\alpha}$ 是开集."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.335,
+            0.857,
+            0.377
+          ],
+          "content": "任取 $x \\in V$, 我们有 $\\alpha \\in I$ 使得 $x \\in V_{\\alpha}$. 由于 $V_{\\alpha}$ 为开集, 存在 $\\delta > 0$ 使得 $(x - \\delta, x + \\delta) \\subset V_{\\alpha} \\subseteq V$. 因此, $V$ 为开集."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.381,
+            0.759,
+            0.416
+          ],
+          "content": "(2) 设  $m \\geqslant 1, V_{1}, V_{2}, \\cdots, V_{m}$  为开集, 我们要证  $V := \\bigcap_{1 \\leqslant k \\leqslant m} V_{k}$  是开集."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.419,
+            0.857,
+            0.467
+          ],
+          "content": "任取 $x \\in V$, 则对于 $1 \\leqslant k \\leqslant m$, 都有 $x \\in V_k$. 从而有 $\\delta_k > 0$ 使得 $(x - \\delta_k, x + \\delta_k) \\subset V_k$. 取 $\\delta = \\min_{1 \\leqslant k \\leqslant m} \\delta_k$, 则 $\\delta > 0$, 且 $(x - \\delta, x + \\delta) \\subset V$. 因此, $V$ 为开集."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.471,
+            0.61,
+            0.488
+          ],
+          "content": "结合定理 3.3.6 (2) 和 De Morgan 定律可得如下定理."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.494,
+            0.52,
+            0.513
+          ],
+          "content": "定理 3.3.8 (1) 任意个闭集的交是闭集;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.519,
+            0.429,
+            0.536
+          ],
+          "content": "(2) 任意有限个闭集的并是闭集."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.541,
+            0.857,
+            0.583
+          ],
+          "content": "由定理3.3.8中的(1)以及 $\\mathbb{R}$ 本身为闭集, 可见对于任何 $E \\subseteq \\mathbb{R}$, 集合 $\\cap \\{F | E \\subseteq F \\subseteq \\mathbb{R}, F$ 为闭集} 是包含 $E$ 的最小闭集. 我们定义如下."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.589,
+            0.646,
+            0.607
+          ],
+          "content": "定义 3.3.4 称包含 E 的最小闭集为 E 的闭包, 记作  $\\overline{E}$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.613,
+            0.229,
+            0.629
+          ],
+          "content": "不难证明"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.636,
+            0.853,
+            0.654
+          ],
+          "content": "\\overline {{E}} = E \\cup E ^ {\\prime} = E \\cup \\partial E = \\mathscr {C} (\\mathscr {C} E) ^ {\\circ}. \\tag {3.3.10}",
+          "image_source": "images/page_81_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.667,
+            0.295,
+            0.684
+          ],
+          "content": "我们把证明留给读者."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.69,
+            0.406,
+            0.707
+          ],
+          "content": "最后, 我们引入稠密性的概念."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.714,
+            0.62,
+            0.732
+          ],
+          "content": "定义3.3.5 (1) 若 $E \\subseteq F \\subseteq \\overline{E}$, 则称 $E$ 在 $F$ 中稠密;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.737,
+            0.708,
+            0.755
+          ],
+          "content": "(2) 如果 $E$ 的闭包没有内点, 则称 $E$ 为无处稠密集, 又称疏朗集."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.145,
+            0.783,
+            0.468,
+            0.803
+          ],
+          "level": 2,
+          "content": "3.3.5 致密性定理与聚点原则"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.827,
+            0.81,
+            0.846
+          ],
+          "content": "致密性定理是一个非常常用的定理, 而聚点原则与它之间的等价性非常直接."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.852,
+            0.548,
+            0.869
+          ],
+          "content": "定理 3.3.9 R 中任何有界无限集均有聚点."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.874,
+            0.81,
+            0.894
+          ],
+          "content": "证明 设 $E \\subseteq \\mathbb{R}$ 是有界无限集. 则有有界区间 $[a_1, b_1] \\subseteq \\mathbb{R}$ 使得 $E \\subseteq [a_1, b_1]$."
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.139,
+            0.92,
+            0.479,
+            0.936
+          ],
+          "content": "① 不能按以下方式设: 设 $\\{V_{n} | n \\geqslant 1\\}$ 为开集族."
+        }
+      ]
+    },
+    {
+      "page_idx": 82,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.743,
+            0.057,
+            0.896,
+            0.07
+          ],
+          "content": "3.3 实数系基本定理"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.915,
+            0.058,
+            0.936,
+            0.069
+          ],
+          "content": "69"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.109,
+            0.896,
+            0.221
+          ],
+          "content": "由于 $E$ 是无限集, 因此 $\\left[a_1, \\frac{a_1 + b_1}{2}\\right] \\cap E$ 与 $\\left[\\frac{a_1 + b_1}{2}, b_1\\right] \\cap E$ 至少有一个为无限集. 若 $\\left[a_1, \\frac{a_1 + b_1}{2}\\right] \\cap E$ 为无限集, 则令 $[a_2, b_2]$ 为 $\\left[a_1, \\frac{a_1 + b_1}{2}\\right]$. 否则令 $[a_2, b_2]$ 为 $\\left[\\frac{a_1 + b_1}{2}, b_1\\right]$. 这样 $[a_2, b_2] \\subseteq [a_1, b_1], [a_2, b_2] \\cap E$ 为无限集, 且 $b_2 - a_2 = \\frac{b_1 - a_1}{2}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.223,
+            0.896,
+            0.27
+          ],
+          "content": "一般地, 若对于 $n \\geqslant 2$, 已经取定 $[a_n, b_n]$ 使得 $[a_n, b_n] \\cap E$ 为无限集. 则类似地可以取到 $[a_{n+1}, b_{n+1}] \\subseteq [a_n, b_n]$, 使得 $[a_{n+1}, b_{n+1}] \\cap E$ 为无限集, $b_{n+1} - a_{n+1} = \\frac{b_n - a_n}{2}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.271,
+            0.896,
+            0.289
+          ],
+          "content": "这样，$\\{[a_n, b_n]\\}$ 是满足闭区间套定理所列条件的闭区间套，从而有唯一的公共点 $\\xi$。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.294,
+            0.896,
+            0.359
+          ],
+          "content": "任取 $\\delta > 0$, 由 $\\lim_{n \\to +\\infty} a_n = \\lim_{n \\to +\\infty} b_n = \\xi$, 存在 $N \\geqslant 1$ 使得 $\\xi - \\delta < a_N < b_N < \\xi + \\delta$. 从而 $[a_N, b_N] \\subset (\\xi - \\delta, \\xi + \\delta)$. 由于 $[a_N, b_N] \\cap E$ 是无限集, 因此 $(\\xi - \\delta, \\xi + \\delta) \\cap E$ 是无限集, 即 $\\xi$ 是 $E$ 的聚点."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.364,
+            0.896,
+            0.407
+          ],
+          "content": "接下来, 我们介绍致密性定理. 首先, 引入子列概念. 对于点列 $\\{a_{n}\\}_{n=1}^{\\infty}$, 任取严格单增的正整数列 $\\{n_{k}\\}$, 称 $\\{a_{n_{k}}\\}$ 为 $\\{a_{n}\\}$ 的子列."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.412,
+            0.896,
+            0.43
+          ],
+          "content": "之前我们用到的  $\\{a_{2n}\\}$  与  $\\{a_{2n+1}\\}$  都是  $\\{a_{n}\\}$  的子列.  $\\{a_{n}\\}$  本身也是它自己的子列."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.435,
+            0.896,
+            0.501
+          ],
+          "content": "容易看到, 若 $\\{a_{n}\\}$ 的极限为 $L$, 则它的任何子列的极限也为 $L$. 这样, 若数列有两个收敛到不同值的子列, 则该数列发散. 例如, 数列 $\\{(-1)^{n}\\}$ 的子列 $\\{(-1)^{2n}\\}$ 收敛到 1, 而另一个子列 $\\{(-1)^{2n+1}\\}$ 收敛到 -1, 因此 $\\{(-1)^{n}\\}$ 发散."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.506,
+            0.896,
+            0.547
+          ],
+          "content": "接下来的 Bolzano $^{①}$ -Weierstrass 定理 3.3.10, 常常被称为致密性定理, 是我们今后最常用到的定理之一. 它与聚点原则非常类似."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.191,
+            0.552,
+            0.623,
+            0.571
+          ],
+          "content": "定理 3.3.10 R 中任何有界数列都有收敛子列."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.576,
+            0.857,
+            0.595
+          ],
+          "content": "证明 设 $\\{a_{n}\\}$ 是 $\\mathbb{R}$ 中有界数列. 考虑集合 $E := \\{a_{n} | n \\geqslant 1\\}$, 则 $E$ 是有界集."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.6,
+            0.896,
+            0.641
+          ],
+          "content": "若 E 是有限集, 则必有某个元 a 在  $\\{a_{n}\\}$  中出现无限多次, 把相应的项取出来就形成  $\\{a_{n}\\}$  的一个取常值 a 的子列, 自然, 该子列收敛到 a."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.647,
+            0.896,
+            0.763
+          ],
+          "content": "若 $E$ 是无限集, 则 $E$ 有聚点, 设为 $\\xi$. 由聚点定义, 在 $(\\xi - 1, \\xi + 1)$ 内有 $E$ 中无限多个点. 因此, 可以取到 $n_1 \\geqslant 1$ 使得 $a_{n_1} \\in (\\xi - 1, \\xi + 1)$. 进一步, 可取到 $n_2 > n_1$ 使得 $a_{n_2} \\in \\left(\\xi - \\frac{1}{2}, \\xi + \\frac{1}{2}\\right)$. 依次可以取到严格单增的正整数列 $\\{n_k\\}$ 使得 $a_{n_{k+1}} \\in \\left(\\xi - \\frac{1}{k+1}, \\xi + \\frac{1}{k+1}\\right)$. 易见, $\\{a_{n_k}\\}$ 是 $\\{a_n\\}$ 的收敛于 $\\xi$ 的一个子列."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.766,
+            0.508,
+            0.784
+          ],
+          "content": "例3.3.5 设实数列 $\\{x_{n}\\}$ 满足等式"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.16,
+            0.797,
+            0.896,
+            0.831
+          ],
+          "content": "x _ {n} ^ {5} - 5 x _ {n} ^ {4} + \\frac {1 0 n ^ {2} + 1}{n ^ {2}} x _ {n} ^ {3} - (4 + 6 \\sqrt [ n ]{n}) x _ {n} ^ {2} + \\left(6 - \\mathrm{e} ^ {\\frac {1}{n}}\\right) x _ {n} - 1 = 0, \\quad \\forall n \\geqslant 1. \\tag {3.3.11}",
+          "image_source": "images/page_82_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.843,
+            0.3,
+            0.862
+          ],
+          "content": "证明: $\\{x_{n}\\}$ 收敛."
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.148,
+            0.901,
+            0.896,
+            0.934
+          ],
+          "content": "① Bolzano, Bernhard Placidus Johann Nepomuk, 1781 年 10 月 5 日—1848 年 12 月 18 日, 波希米亚数学家、神学家、哲学家、逻辑学家."
+        }
+      ]
+    },
+    {
+      "page_idx": 83,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.065,
+            0.057,
+            0.084,
+            0.068
+          ],
+          "content": "70"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.103,
+            0.055,
+            0.236,
+            0.069
+          ],
+          "content": "第三章 序列极限"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.111,
+            0.856,
+            0.154
+          ],
+          "content": "证明 我们断言 $\\lim_{n\\to +\\infty}x_n = 1$。否则，由极限定义，存在 $\\varepsilon_0 > 0$，使得对任何 $N\\geqslant 1$ 都有 $n\\geqslant N$ 满足 $|x_{n} - 1|\\geqslant \\varepsilon_{0}$。特别地，可取到 $\\{x_{n}\\}$ 的子列 $\\{x_{k_n}\\}$ 使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.359,
+            0.176,
+            0.851,
+            0.195
+          ],
+          "content": "\\left| x _ {k _ {n}} - 1 \\right| \\geqslant \\varepsilon_ {0}, \\quad \\forall n \\geqslant 1. \\tag {3.3.12}",
+          "image_source": "images/page_83_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.216,
+            0.759,
+            0.236
+          ],
+          "content": "另一方面，由 $2^{n} = (1 + 1)^{n}\\geqslant n$ 可得 $n^{\\frac{1}{n}}\\leqslant 2(\\forall n\\geqslant 1)$ .于是当 $|x| > 39$ 时，"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.194,
+            0.255,
+            0.761,
+            0.35
+          ],
+          "content": "\\begin{array}{l} \\left| x ^ {5} - 5 x ^ {4} + \\frac {1 0 n ^ {2} + 1}{n ^ {2}} x ^ {3} - (4 + 6 \\sqrt [ n ]{n}) x ^ {2} + (6 - \\mathrm{e} ^ {\\frac {1}{n}}) x - 1 \\right| \\\\ \\geqslant | x | ^ {5} - 5 | x | ^ {4} - 1 1 | x | ^ {3} - 1 6 | x | ^ {2} - 6 | x | - 1 \\\\ \\geqslant | x | ^ {4} (| x | - 5 - 1 1 - 1 6 - 6 - 1) = | x | ^ {4} (| x | - 3 9) > 0, \\quad \\forall n \\geqslant 1. \\\\ \\end{array}",
+          "image_source": "images/page_83_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.372,
+            0.81,
+            0.392
+          ],
+          "content": "因此， $|x_{n}|\\leqslant 39(\\forall n\\geqslant 1)$ ，即 $\\{x_{n}\\}$ 是有界数列.进而其子列 $\\{x_{k_n}\\}$ 也是有界数列"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.398,
+            0.786,
+            0.418
+          ],
+          "content": "由致密性定理, $\\{x_{k_n}\\}$ 有子列 $\\{x_{m_n}\\}$ 收敛, 设极限为 $\\xi$. 由 (3.3.11) 式得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.318,
+            0.437,
+            0.637,
+            0.458
+          ],
+          "content": "\\xi^ {5} - 5 \\xi^ {4} + 1 0 \\xi^ {3} - 1 0 \\xi^ {2} + 5 \\xi - 1 = 0.",
+          "image_source": "images/page_83_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.481,
+            0.204,
+            0.498
+          ],
+          "content": "解得 $\\xi = 1$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.506,
+            0.602,
+            0.525
+          ],
+          "content": "另一方面, 由 (3.3.12) 式可得 $|\\xi - 1| \\geqslant \\varepsilon_0$. 得到矛盾."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.533,
+            0.364,
+            0.555
+          ],
+          "content": "因此, 必有  $\\lim_{n\\to+\\infty}x_{n}=1$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.558,
+            0.853,
+            0.61
+          ],
+          "content": "利用致密性定理, 容易将闭区间套定理 3.3.4 以及注 3.3.1 中的结论作如下推广. 对于非空集 E, 定义其直径为  $\\mathrm{diam}E := \\sup_{x, y \\in E} |x - y|$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.616,
+            0.848,
+            0.636
+          ],
+          "content": "定理3.3.11 设 $\\{E_n\\}$ 为 $\\mathbb{R}$ 中的有界非空闭集列，满足 $E_{n + 1}\\subseteq E_n(n\\geqslant 1)$ .则"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.141,
+            0.642,
+            0.752,
+            0.73
+          ],
+          "sub_type": "text",
+          "content": "(1) $\\bigcap_{n=1}^{\\infty} E_n \\neq \\varnothing$;\n(2) (闭集套定理) 进一步, 若  $\\lim_{n\\to+\\infty}\\operatorname{diam}E_n=0$ , 则  $\\bigcap_{n=1}^{\\infty}E_n$  是单点集."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.734,
+            0.853,
+            0.777
+          ],
+          "content": "证明 由定理假设, 对每个 $n \\geqslant 1$, 可取到 $x_{n} \\in E_{n}$. 进一步, $\\{x_{n}\\}$ 有界, 从而有收敛子列 $\\{x_{k_n}\\}$, 设极限为 $\\xi$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.783,
+            0.853,
+            0.847
+          ],
+          "content": "对任何 $m \\geqslant 1$, 当 $n \\geqslant m$ 时有 $k_n \\geqslant m$. 从而 $x_{k_n} \\in E_{k_n} \\subseteq E_m$. 由于 $E_m$ 是闭集, 因此 $\\xi \\in E_m$. 这就是说 $\\xi \\in \\bigcap_{n=1}^{\\infty} E_n$, 即 $\\bigcap_{n=1}^{\\infty} E_n \\neq \\varnothing$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.853,
+            0.853,
+            0.939
+          ],
+          "content": "进一步, 对于 $\\eta \\in \\bigcap_{n=1}^{\\infty} E_n$, 有 $|\\eta - \\xi| \\leqslant \\mathrm{diam} E_n (\\forall n \\geqslant 1)$. 这样, 如果 $\\lim_{n \\to +\\infty} \\mathrm{diam} E_n = 0$, 则可得 $|\\eta - \\xi| \\leqslant 0$, 即 $\\eta = \\xi$. 这表明此时 $\\bigcap_{n=1}^{\\infty} E_n$ 是单点集. $\\square$"
+        }
+      ]
+    },
+    {
+      "page_idx": 84,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.747,
+            0.054,
+            0.902,
+            0.068
+          ],
+          "content": "3.3 实数系基本定理"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.921,
+            0.055,
+            0.942,
+            0.067
+          ],
+          "content": "71"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.189,
+            0.107,
+            0.465,
+            0.128
+          ],
+          "level": 2,
+          "content": "3.3.6 Cauchy 收敛准则"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.152,
+            0.903,
+            0.193
+          ],
+          "content": "数列收敛的 Cauchy 收敛准则时常被看作数列收敛的等价定义, 其优点是不需要事先知道数列的极限. 首先, 定义基本列如下:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.2,
+            0.903,
+            0.24
+          ],
+          "content": "定义 3.3.6 称数列  $\\{x_{n}\\}$  为基本列或 Cauchy 列, 是指  $\\forall \\varepsilon > 0$ , 存在  $N \\geqslant 1$ , 使得当  $m, n \\geqslant N$  时, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.467,
+            0.249,
+            0.899,
+            0.264
+          ],
+          "content": "\\left| x _ {m} - x _ {n} \\right| <   \\varepsilon . \\tag {3.3.13}",
+          "image_source": "images/page_84_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.276,
+            0.549,
+            0.294
+          ],
+          "content": "从定义可见 $\\{x_{n}\\}$ 是Cauchy列当且仅当"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.407,
+            0.312,
+            0.9,
+            0.336
+          ],
+          "content": "\\lim _ {N \\rightarrow + \\infty} \\sup _ {m, n \\geqslant N} \\left| x _ {m} - x _ {n} \\right| = 0. \\tag {3.3.14}",
+          "image_source": "images/page_84_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.351,
+            0.236,
+            0.368
+          ],
+          "content": "也等价于"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.417,
+            0.377,
+            0.9,
+            0.401
+          ],
+          "content": "\\lim _ {n \\rightarrow + \\infty} \\sup _ {m \\geqslant n} \\left| x _ {m} - x _ {n} \\right| = 0. \\tag {3.3.15}",
+          "image_source": "images/page_84_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.412,
+            0.49,
+            0.429
+          ],
+          "content": "我们有如下的 Cauchy 收敛准则."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.194,
+            0.435,
+            0.646,
+            0.453
+          ],
+          "content": "定理 3.3.12 数列收敛的充要条件是它是基本列."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.459,
+            0.886,
+            0.482
+          ],
+          "content": "证明 (必要性) 若 $\\lim_{n\\to +\\infty}a_n = A,$ 则 $\\forall \\varepsilon >0,$ 存在 $N\\geqslant 1$ ，使得当 $n\\geqslant N$ 时，有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.466,
+            0.496,
+            0.589,
+            0.525
+          ],
+          "content": "| a _ {n} - A | <   \\frac {\\varepsilon}{2}.",
+          "image_source": "images/page_84_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.534,
+            0.361,
+            0.551
+          ],
+          "content": "从而当 $n, m \\geqslant N$ 时, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.365,
+            0.568,
+            0.689,
+            0.586
+          ],
+          "content": "| a _ {n} - a _ {m} | \\leqslant | a _ {n} - A | + | a _ {m} - A | <   \\varepsilon ,",
+          "image_source": "images/page_84_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.601,
+            0.351,
+            0.618
+          ],
+          "content": "即  $\\{a_{n}\\}$  是 Cauchy 列."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.625,
+            0.766,
+            0.643
+          ],
+          "content": "(充分性) 若  $\\{a_{n}\\}$  是 Cauchy 列, 则有  $N_{1} \\geqslant 1$  使得当  $n \\geqslant 1$  时, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.46,
+            0.659,
+            0.594,
+            0.677
+          ],
+          "content": "\\left| a _ {n} - a _ {N _ {1}} \\right| \\leqslant 1.",
+          "image_source": "images/page_84_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.692,
+            0.864,
+            0.711
+          ],
+          "content": "因此, $\\{a_{n}\\}$ 是有界数列. 于是由致密性定理, $\\{a_{n}\\}$ 有子列 $\\{a_{n_k}\\}$ 收敛, 设极限为 $\\xi$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.716,
+            0.903,
+            0.754
+          ],
+          "content": "另一方面, $\\forall \\varepsilon > 0$, 再次利用 $\\{a_n\\}$ 是 Cauchy 列, 知存在 $N \\geqslant 1$, 使得当 $n, m \\geqslant N$ 时, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.463,
+            0.763,
+            0.591,
+            0.78
+          ],
+          "content": "\\left| a _ {n} - a _ {m} \\right| <   \\varepsilon .",
+          "image_source": "images/page_84_equation_21.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.791,
+            0.462,
+            0.808
+          ],
+          "content": "特别地, 注意到 $n_m \\geqslant m \\geqslant N$, 可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.459,
+            0.826,
+            0.596,
+            0.844
+          ],
+          "content": "\\left| a _ {n} - a _ {n _ {m}} \\right| <   \\varepsilon .",
+          "image_source": "images/page_84_equation_23.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.858,
+            0.372,
+            0.875
+          ],
+          "content": "上式中令 $m\\to +\\infty$ 即得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.472,
+            0.883,
+            0.582,
+            0.901
+          ],
+          "content": "| a _ {n} - \\xi | \\leqslant \\varepsilon .",
+          "image_source": "images/page_84_equation_25.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.911,
+            0.474,
+            0.935
+          ],
+          "content": "于是, 由极限定义得到 $\\lim_{n\\to +\\infty}a_n = \\xi$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.884,
+            0.914,
+            0.903,
+            0.928
+          ],
+          "content": "□"
+        }
+      ]
+    },
+    {
+      "page_idx": 85,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.064,
+            0.055,
+            0.084,
+            0.066
+          ],
+          "content": "72"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.102,
+            0.053,
+            0.235,
+            0.068
+          ],
+          "content": "第三章 序列极限"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.11,
+            0.711,
+            0.152
+          ],
+          "content": "例 3.3.6 设 p > 1, 证明: (1)  $\\sum_{n=1}^{\\infty} \\frac{1}{n^{p}}$  收敛; (2)  $\\sum_{n=1}^{\\infty} \\frac{\\sin n}{n^{p}}$  收敛."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.153,
+            0.738,
+            0.172
+          ],
+          "content": "证明 (1) 记 $\\alpha = p - 1$. 由定理2.4.4的(2.4.9)式, 对任何 $n \\geqslant 2$, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.28,
+            0.182,
+            0.851,
+            0.285
+          ],
+          "content": "\\begin{array}{l} \\frac {1}{n ^ {\\alpha}} - \\frac {1}{(n + 1) ^ {\\alpha}} = \\frac {1}{(n + 1) ^ {\\alpha}} \\left(\\left(1 + \\frac {1}{n}\\right) ^ {\\alpha} - 1\\right) \\\\ > \\frac {1}{(n + 1) ^ {\\alpha}} \\frac {\\frac {\\alpha}{n}}{1 + \\frac {1}{n}} = \\frac {\\alpha}{(n + 1) ^ {p}}. \\tag {3.3.16} \\\\ \\end{array}",
+          "image_source": "images/page_85_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.296,
+            0.151,
+            0.314
+          ],
+          "content": "于是，"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.304,
+            0.316,
+            0.646,
+            0.36
+          ],
+          "content": "\\sum_ {k = 2} ^ {n} \\frac {1}{k ^ {p}} \\leqslant \\frac {1}{\\alpha} \\sum_ {k = 2} ^ {n} \\left(\\frac {1}{(k - 1) ^ {\\alpha}} - \\frac {1}{k ^ {\\alpha}}\\right) \\leqslant \\frac {1}{\\alpha}.",
+          "image_source": "images/page_85_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.368,
+            0.623,
+            0.412
+          ],
+          "content": "因此, $\\left\\{\\sum_{k=1}^{n} \\frac{1}{k^p}\\right\\}$ 是单调增加的有界数列. 所以 $\\sum_{n=1}^{\\infty} \\frac{1}{n^p}$ 收敛."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.415,
+            0.827,
+            0.434
+          ],
+          "content": "(2) $\\forall \\varepsilon > 0$, 由 (1) 及 Cauchy 收敛准则, 存在 $N \\geqslant 1$ 使得当 $m > n \\geqslant N$ 时, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.321,
+            0.445,
+            0.627,
+            0.489
+          ],
+          "content": "\\sum_ {k = n + 1} ^ {m} \\frac {1}{k ^ {p}} = \\left| \\sum_ {k = 1} ^ {m} \\frac {1}{k ^ {p}} - \\sum_ {k = 1} ^ {n} \\frac {1}{k ^ {p}} \\right| <   \\varepsilon .",
+          "image_source": "images/page_85_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.502,
+            0.145,
+            0.519
+          ],
+          "content": "从而"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.235,
+            0.52,
+            0.715,
+            0.565
+          ],
+          "content": "\\left| \\sum_ {k = 1} ^ {m} \\frac {\\sin k}{k ^ {p}} - \\sum_ {k = 1} ^ {n} \\frac {\\sin k}{k ^ {p}} \\right| = \\left| \\sum_ {k = n + 1} ^ {m} \\frac {\\sin k}{k ^ {p}} \\right| \\leqslant \\sum_ {k = n + 1} ^ {m} \\frac {1}{k ^ {p}} <   \\varepsilon .",
+          "image_source": "images/page_85_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.575,
+            0.507,
+            0.616
+          ],
+          "content": "于是, 由 Cauchy 收敛准则得到  $\\sum_{n=1}^{\\infty}\\frac{\\sin n}{n^{p}}$  收敛."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.62,
+            0.485,
+            0.66
+          ],
+          "content": "例 3.3.7 证明: 调和级数  $\\sum_{n=1}^{\\infty}\\frac{1}{n}$  发散."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.663,
+            0.747,
+            0.693
+          ],
+          "content": "证明 证法1 取 $\\varepsilon_0 = \\frac{1}{2}$, 则对任何 $N \\geqslant 1$, 取 $m = 2n = 2N$, 我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.288,
+            0.705,
+            0.658,
+            0.75
+          ],
+          "content": "\\Big | \\sum_ {k = 1} ^ {m} \\frac {1}{k} - \\sum_ {k = 1} ^ {n} \\frac {1}{k} \\Big | = \\sum_ {k = n + 1} ^ {m} \\frac {1}{k} \\geqslant \\frac {m - n}{m} = \\varepsilon_ {0}.",
+          "image_source": "images/page_85_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.764,
+            0.392,
+            0.806
+          ],
+          "content": "由 Cauchy 收敛准则,  $\\sum_{n=1}^{\\infty}\\frac{1}{n}$  发散."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.808,
+            0.337,
+            0.826
+          ],
+          "content": "证法 2 由 (3.3.6) 式,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.312,
+            0.839,
+            0.632,
+            0.883
+          ],
+          "content": "\\sum_ {k = 1} ^ {n} \\frac {1}{k} \\geqslant \\sum_ {k = 1} ^ {n} \\ln \\left(1 + \\frac {1}{k}\\right) = \\ln (n + 1).",
+          "image_source": "images/page_85_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.096,
+            0.895,
+            0.402,
+            0.937
+          ],
+          "content": "因此, $\\sum_{n=1}^{\\infty}\\frac{1}{n}=+\\infty$ ,从而级数发散."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.83,
+            0.907,
+            0.85,
+            0.921
+          ],
+          "content": "□"
+        }
+      ]
+    },
+    {
+      "page_idx": 86,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.742,
+            0.055,
+            0.896,
+            0.068
+          ],
+          "content": "3.3 实数系基本定理"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.915,
+            0.056,
+            0.935,
+            0.068
+          ],
+          "content": "73"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.184,
+            0.108,
+            0.412,
+            0.129
+          ],
+          "level": 2,
+          "content": "3.3.7 有限覆盖定理"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.151,
+            0.896,
+            0.232
+          ],
+          "content": "最后一个基本定理是 Heine-Borel $^{①}$  有限覆盖定理, 该定理在后继的分析学科中非常重要. 在数学分析课程中, 时常可帮助我们在观察问题时看到问题的本质. 对于  $E \\subseteq R$ , 称集族 F 是 E 的一个开覆盖, 是指 F 中的元均为 R 中的开集, 且  $E \\subseteq \\bigcup_{V \\in F} V$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.238,
+            0.722,
+            0.257
+          ],
+          "content": "定理 3.3.13 R 中有界闭集的任何开覆盖均有有限子覆盖."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.262,
+            0.896,
+            0.305
+          ],
+          "content": "证明 证法1 我们用闭集套定理和反证法来证明. 由于 $E$ 有界, 存在有界区间 $[a_1, b_1]$ 使得 $E \\subseteq [a_1, b_1]$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.309,
+            0.897,
+            0.441
+          ],
+          "content": "若定理结论不真，则 $E = E \\cap [a_1, b_1]$ 不能被 $\\mathcal{F}$ 中有限个元素覆盖，简称 $E \\cap [a_1, b_1]$ 不能被有限覆盖。将区间 $[a_1, b_1]$ 平分。若 $\\left[a_1, \\frac{a_1 + b_1}{2}\\right] \\cap E$ 不能被有限覆盖，令 $[a_2, b_2] = \\left[a_1, \\frac{a_1 + b_1}{2}\\right]$。否则，$\\left[\\frac{a_1 + b_1}{2}, b_1\\right] \\cap E$ 必然不能被有限覆盖，此时，令 $[a_2, b_2] = \\left[\\frac{a_1 + b_1}{2}, b_1\\right]$。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.443,
+            0.897,
+            0.49
+          ],
+          "content": "以此类推, 可以找到一列闭区间  $\\{[a_{n}, b_{n}]\\}$  满足如下性质: 对任何  $n \\geqslant 1, [a_{n+1}, b_{n+1}] \\subseteq [a_{n}, b_{n}], b_{n} - a_{n} = \\frac{b_{1} - a_{1}}{2^{n-1}}$ , 且  $[a_{n}, b_{n}] \\cap E$  不能被有限覆盖."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.491,
+            0.611,
+            0.509
+          ],
+          "content": "由闭集套定理, $\\{[a_n, b_n] \\cap E\\}$ 有唯一的公共点 $\\xi$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.514,
+            0.897,
+            0.556
+          ],
+          "content": "由于 $\\mathcal{F}$ 覆盖 $E$, 因此, 有 $V \\in \\mathcal{F}$ 使得 $\\xi \\in V$. 而由 $V$ 为开集可得存在 $\\delta > 0$, 使得 $(\\xi - \\delta, \\xi + \\delta) \\subseteq V$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.561,
+            0.897,
+            0.625
+          ],
+          "content": "另一方面, 存在 $m \\geqslant 1$ 使得 $b_{m} - a_{m} < \\delta$. 因此, $\\xi - \\delta \\leqslant b_{m} - \\delta < a_{m}$. 同理 $b_{m} < \\xi + \\delta$. 于是, $[a_{m}, b_{m}] \\cap E \\subseteq [a_{m}, b_{m}] \\subset (\\xi - \\delta, \\xi + \\delta) \\subseteq V$, 即 $[a_{m}, b_{m}] \\cap E$ 可以被 $\\mathcal{F}$ 中一个元素 $V$ 覆盖. 得到矛盾."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.631,
+            0.566,
+            0.648
+          ],
+          "content": "因此, 一定可以找到 $\\mathcal{F}$ 中有限个元覆盖 $E$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.655,
+            0.807,
+            0.673
+          ],
+          "content": "证法2 以下用致密性定理证明. 由定理条件可得, 对于任何 $x \\in E$, 令"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.271,
+            0.69,
+            0.776,
+            0.712
+          ],
+          "content": "r (x) := \\sup \\left\\{r \\in (0, 1)   \\big |   \\exists V \\in {\\mathcal {F}},   \\text {使得}   (x - r, x + r) \\subseteq V \\right\\}.",
+          "image_source": "images/page_86_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.725,
+            0.897,
+            0.759
+          ],
+          "content": "则 $\\forall x\\in E,$ 有 $r(x) > 0.$ 任取 $x_{1}\\in E,$ 有 $V_{1}\\in \\mathcal{F}$ 使得 $\\left(x_1 - \\frac{r(x_1)}{2},x_1 + \\frac{r(x_1)}{2}\\right)\\subseteq V_1.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.762,
+            0.897,
+            0.863
+          ],
+          "content": "现设对于某个 $n \\geqslant 1$, 已经取到 $x_1, x_2, \\dots, x_n \\in E$ 以及 $V_1, V_2, \\dots, V_n \\in \\mathcal{F}$. 若 $E \\subset \\bigcup_{k=1}^{n} V_k$, 则定理得证. 否则, 可取到 $x_{n+1} \\in E \\setminus \\bigcup_{k=1}^{n} V_k$, 以及 $V_{n+1} \\in \\mathcal{F}$ 使得 $\\left(x_{n+1} - \\frac{r(x_{n+1})}{2}, x_{n+1} + \\frac{r(x_{n+1})}{2}\\right) \\subset V_{n+1}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.865,
+            0.897,
+            0.907
+          ],
+          "content": "我们断言以上过程必在有限步内结束. 否则, 因 $E$ 有界, $E$ 中的数列 $\\{x_{n}\\}$ 有界. 从而它有子列 $\\{x_{k_n}\\}$ 收敛到某个 $\\xi$."
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.182,
+            0.917,
+            0.892,
+            0.933
+          ],
+          "content": "① Borel, Félix Édouard Justin Émile, 1871 年 1 月 7 日—1956 年 2 月 3 日, 法国数学家、政治家."
+        }
+      ]
+    },
+    {
+      "page_idx": 87,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.067,
+            0.054,
+            0.087,
+            0.065
+          ],
+          "content": "74"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.052,
+            0.239,
+            0.066
+          ],
+          "content": "第三章 序列极限"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.109,
+            0.856,
+            0.156
+          ],
+          "content": "由 $\\{x_{n}\\}$ 的构造方法, 对任何 $n \\geqslant 1$, 有 $x_{k_{n+1}} \\notin V_{k_{n}+1}$. 特别地, $r(x_{k_n}) \\leqslant 2|x_{k_{n+1}} - x_{k_n}|$. 因此, $\\lim_{n \\to +\\infty} r(x_{k_n}) = 0$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.161,
+            0.854,
+            0.23
+          ],
+          "content": "另一方面, 由于 $E$ 为闭集, 因此 $\\xi \\in E$. 从而存在 $U \\in \\mathcal{F}$ 使得 $\\left(\\xi - \\frac{r(\\xi)}{2}, \\xi + \\frac{r(\\xi)}{2}\\right) \\subset U$. 对于充分大的 $n$, 有 $|x_{k_n} - \\xi| < \\frac{r(\\xi)}{2}$, 进而由"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.121,
+            0.241,
+            0.839,
+            0.275
+          ],
+          "content": "\\left(x _ {k _ {n}} - \\left(\\frac {r (\\xi)}{2} - | x _ {k _ {n}} - \\xi |\\right), x _ {k _ {n}} + \\left(\\frac {r (\\xi)}{2} - | x _ {k _ {n}} - \\xi |\\right)\\right) \\subset \\left(\\xi - \\frac {r (\\xi)}{2}, \\xi + \\frac {r (\\xi)}{2}\\right) \\subset U,",
+          "image_source": "images/page_87_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.285,
+            0.798,
+            0.316
+          ],
+          "content": "可得 $r(x_{k_n}) \\geqslant \\frac{r(\\xi)}{2} - |x_{k_n} - \\xi|$. 这样, 又有 $\\lim_{n \\to +\\infty} r(x_{k_n}) \\geqslant \\frac{r(\\xi)}{2} > 0$. 得到矛盾."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.316,
+            0.482,
+            0.334
+          ],
+          "content": "总之， $E$ 可以被 $\\mathcal{F}$ 的有限子集族覆盖."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.34,
+            0.856,
+            0.404
+          ],
+          "content": "由有限覆盖定理易得如下的Lebesgue覆盖引理. 我们称 $\\delta > 0$ 为 $E$ 的覆盖 $\\mathcal{F}$ 的Lebesgue数, 是指它满足如下条件: 对 $E$ 的任何直径小于 $\\delta$ 的子集 $A$, 总有 $\\mathcal{F}$ 中的元素 $F$ 使得 $A \\subseteq F$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.41,
+            0.801,
+            0.429
+          ],
+          "content": "定理 3.3.14 设 F 是 R 中有界闭集 E 的开覆盖, 则 F 有 Lebesgue 数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.434,
+            0.289,
+            0.451
+          ],
+          "content": "证明 考虑集族"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.219,
+            0.466,
+            0.738,
+            0.487
+          ],
+          "content": "\\mathcal {F} _ {0} := \\left\\{(x - r, x + r)   \\big |   \\exists V \\in \\mathcal {F}, \\text {使得} (x - 2 r, x + 2 r) \\subseteq V \\right\\},",
+          "image_source": "images/page_87_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.499,
+            0.856,
+            0.607
+          ],
+          "content": "则 $\\mathcal{F}_0$ 是 $E$ 的开覆盖. 从而由有限覆盖定理, 有 $(x_k - r_k, x_k + r_k) \\in \\mathcal{F}_0 (1 \\leqslant k \\leqslant n)$, 使得 $E \\subset \\bigcup_{k=1}^{n} (x_k - r_k, x_k + r_k)$. 令 $\\delta = \\min_{1 \\leqslant k \\leqslant n} r_k$. 则对于 $E$ 的直径小于 $\\delta$ 的非空子集 $A$, 任取一元素 $x_0 \\in A$, 必有某个 $k$ 满足 $1 \\leqslant k \\leqslant n$, 使得 $x_0 \\in (x_k - r_k, x_k + r_k)$. 另一方面, 有 $V_k \\in \\mathcal{F}$ 使得 $(x_k - 2r_k, x_k + 2r_k) \\subseteq V_k$. 从而"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.146,
+            0.622,
+            0.809,
+            0.641
+          ],
+          "content": "A \\subseteq [ x _ {0} - \\delta , x _ {0} + \\delta ] \\subseteq (x _ {k} - r _ {k} - \\delta , x _ {k} + r _ {k} + \\delta) \\subseteq (x _ {k} - 2 r _ {k}, x _ {k} + 2 r _ {k}) \\subseteq V _ {k}.",
+          "image_source": "images/page_87_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.653,
+            0.378,
+            0.671
+          ],
+          "content": "即  $\\delta$  为 F 的一个 Lebesgue 数."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.143,
+            0.699,
+            0.416,
+            0.719
+          ],
+          "level": 2,
+          "content": "3.3.8 基本定理的新舞台"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.743,
+            0.854,
+            0.78
+          ],
+          "content": "在 $\\mathbb{R}$ 中, 各基本定理是等价的. 承认其中任一个定理, 可推出其他任一个定理. 读者可以尝试证明它们的等价性. 比如可以按下述次序证明这种等价性:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.781,
+            0.854,
+            0.845
+          ],
+          "content": "下确界存在定理 $\\xleftrightarrow{\\text{显然}}$ 上确界存在定理 $\\xrightarrow{\\text{已证}}$ 单调收敛定理 $\\xrightarrow{\\text{已证}}$ 闭区间套定理 $\\xrightarrow{\\text{已证}}$ 有限覆盖定理 $\\Rightarrow$ 聚点原则 $\\xrightarrow{\\text{已证}}$ 致密性定理 $\\xrightarrow{\\text{已证}}$ Cauchy收敛准则 $\\Rightarrow$ 闭区间套定理 $\\Rightarrow$ 上确界存在定理."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.851,
+            0.854,
+            0.888
+          ],
+          "content": "除了确界存在定理与单调收敛定理, 余下五个基本定理都可以推广到 $\\mathbb{R}^n$ 中. 进一步, 它们还可以推广到更一般的空间中去."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.894,
+            0.854,
+            0.931
+          ],
+          "content": "通常, 我们把具有一定结构的非空集合 $X$ 称为空间. 各种各样的空间为基本定理提供了广阔的舞台."
+        }
+      ]
+    },
+    {
+      "page_idx": 88,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.743,
+            0.054,
+            0.898,
+            0.068
+          ],
+          "content": "3.3 实数系基本定理"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.917,
+            0.055,
+            0.937,
+            0.067
+          ],
+          "content": "75"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.182,
+            0.11,
+            0.383,
+            0.128
+          ],
+          "level": 2,
+          "content": "1. 度量空间与完备性"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.14,
+            0.5,
+            0.157
+          ],
+          "content": "若  $\\rho:X\\times X\\to[0,+\\infty)$  满足如下条件:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.18,
+            0.162,
+            0.601,
+            0.221
+          ],
+          "sub_type": "text",
+          "content": "(1) 非负性  $\\rho(x,y)\\geqslant0,$  且等号成立当且仅当 x=y;\n(2) 对称性  $\\rho(x,y)=\\rho(y,x);$\n(3) 三角不等式 $\\rho(x, z) \\leqslant \\rho(x, y) + \\rho(y, z)$,"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.227,
+            0.735,
+            0.243
+          ],
+          "content": "则称  $(X,\\rho)$  (或 X) 为度量空间或距离空间, 称  $\\rho(x,y)$  为 x 与 y 间的距离."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.248,
+            0.899,
+            0.269
+          ],
+          "content": "在度量空间中, 可以引入收敛性. 称 $X$ 中的点列 $\\{x_{n}\\}$ 收敛于 $\\xi \\in X$, 是指 $\\lim_{n\\to +\\infty} \\rho(x_{n}, \\xi) = 0$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.27,
+            0.898,
+            0.317
+          ],
+          "content": "类似地, 可以在度量空间中引入 Cauchy 列. 称 X 中的  $\\{x_{n}\\}$  为 Cauchy 列 (基本列), 是指  $\\lim_{N\\to+\\infty}\\sup_{m,n\\geqslant N}\\rho(x_{m},x_{n})=0$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.32,
+            0.899,
+            0.359
+          ],
+          "content": "称 $(X, \\rho)$ 是完备的度量空间, 是指 $X$ 中的 Cauchy 列都收敛. 即若 $\\{x_{n}\\}$ 是 Cauchy 列, 则必有 $\\xi \\in X$ 使得 $\\{x_{n}\\}$ 收敛到 $\\xi$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.182,
+            0.363,
+            0.647,
+            0.38
+          ],
+          "content": "易见, $\\mathbb{R}$ 及其闭子集 (在通常的度量之下) 是完备度量空间."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.182,
+            0.395,
+            0.365,
+            0.412
+          ],
+          "level": 2,
+          "content": "2. 拓扑空间与紧性"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.182,
+            0.424,
+            0.416,
+            0.441
+          ],
+          "content": "如果  $T \\subseteq 2^{X}$  满足如下条件:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.184,
+            0.447,
+            0.697,
+            0.497
+          ],
+          "sub_type": "text",
+          "content": "(1)  $\\varnothing, X \\in T;$\n(2) $\\mathcal{T}$ 的任何子集的并集属于 $\\mathcal{T}$, 即若 $\\mathcal{F} \\subseteq \\mathcal{T}$, 则 $\\bigcup_{F \\in \\mathcal{F}} F \\in \\mathcal{T}$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.183,
+            0.502,
+            0.835,
+            0.538
+          ],
+          "content": "(3) T 的任何有限个元素的交集属于 T, 即若  $V_{1}, V_{2}, \\cdots, V_{n} \\in T$ , 则  $\\bigcap_{k=1}^{n} V_{k} \\in T$ ,"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.541,
+            0.9,
+            0.58
+          ],
+          "content": "则称 $(X, \\mathcal{T})$ (简记为 $X$) 为一个拓扑空间, $\\mathcal{T}$ 中的元素称为 $X$ 的开集. 在拓扑空间中, 如果 $X \\setminus F$ 是开集, 则称 $F$ 为闭集. 同样, 对于任何 $E \\subseteq X$, 可以定义它的闭包 $\\overline{E}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.585,
+            0.9,
+            0.623
+          ],
+          "content": "若 X 的任何开覆盖都有有限子覆盖, 则称 X 为紧空间. 若  $A \\subseteq X$  的任何开覆盖都有有限子覆盖, 则称 A 为紧集, 又称紧致集. 若  $\\overline{F} \\subseteq E$  且  $\\overline{F}$  为紧集, 则称 F 紧包含于 E, 记作  $F \\subset \\subset E$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.628,
+            0.65,
+            0.645
+          ],
+          "content": "定理3.3.15 $E$ 是 $\\mathbb{R}$ 中的紧集当且仅当 $E$ 是有界闭集."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.65,
+            0.9,
+            0.687
+          ],
+          "content": "证明 有限覆盖定理表明, $\\mathbb{R}$ 中有界闭集是紧集. 我们只要证明, 若 $E$ 是紧集, 则它一定是有界闭集. 下设 $E$ 为紧集."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.693,
+            0.9,
+            0.749
+          ],
+          "content": "为此, 注意到  $\\{(-n,n)\\}$  是 E 的开覆盖. 因此, 它有有限子覆盖. 即有  $n_{1}, n_{2}, \\cdots, n_{m} \\in N_{+}$  使得  $E \\subseteq \\bigcup_{k=1}^{m} (-n_{k}, n_{k}) = (-N, N)$ , 其中  $N = \\max_{1 \\leqslant k \\leqslant m} n_{k}$ . 因此, E 有界."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.752,
+            0.9,
+            0.857
+          ],
+          "content": "现设  $\\xi\\not\\in E,$  则  $\\left\\{\\left(-\\infty,\\xi-\\frac{1}{n}\\right)\\cup\\left(\\xi+\\frac{1}{n},+\\infty\\right)\\right\\}$  是 E 的开覆盖. 于是, 它有有限子覆盖, 即有  $n_{1},n_{2},\\cdots,n_{m}\\in N_{+}$  使得  $E\\subseteq\\bigcup_{k=1}^{m}\\left(\\left(-\\infty,\\xi-\\frac{1}{n_{k}}\\right)\\cup\\left(\\xi+\\frac{1}{n_{k}},+\\infty\\right)\\right)=\\mathbb{R}\\setminus[\\xi-\\delta,\\xi+\\delta]$ , 其中  $\\delta=\\min_{1\\leqslant k\\leqslant m}\\frac{1}{n_{k}}>0.$  因此,  $\\xi\\not\\in E'$ , 这就是说 E 是闭集. □"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.183,
+            0.864,
+            0.281,
+            0.881
+          ],
+          "level": 2,
+          "content": "3. 列紧性"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.895,
+            0.9,
+            0.933
+          ],
+          "content": "在拓扑空间 $X$ 中可以定义收敛性. 称 $X$ 中的点列 $\\{x_{n}\\}$ 收敛于 $\\xi \\in X$, 是指对 $\\xi$ 的任何开集 $V$, 有 $N \\geqslant 1$ 使得当 $n \\geqslant N$ 时, 有 $x_{n} \\in V$."
+        }
+      ]
+    },
+    {
+      "page_idx": 89,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.065,
+            0.057,
+            0.084,
+            0.067
+          ],
+          "content": "76"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.103,
+            0.055,
+            0.235,
+            0.068
+          ],
+          "content": "第三章 序列极限"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.112,
+            0.856,
+            0.15
+          ],
+          "content": "若 $(X,\\rho)$ 是度量空间, 定义相应的 $\\mathcal{T}$ (称为由度量 $\\rho$ 诱导的拓扑) 如下: $V\\in \\mathcal{T}$ 当且仅当对任何 $x_0\\in V$, 存在 $\\delta >0$ 使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.372,
+            0.171,
+            0.586,
+            0.192
+          ],
+          "content": "\\{x \\in X | \\rho (x, x _ {0}) <   \\delta \\} \\subseteq V.",
+          "image_source": "images/page_89_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.211,
+            0.856,
+            0.25
+          ],
+          "content": "易见在距离空间中的收敛性与诱导的拓扑空间中的收敛性是一致的. 度量空间中收敛点列的极限是唯一的, 而在一般的拓扑空间中不一定."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.255,
+            0.856,
+            0.293
+          ],
+          "content": "若 $X$ 中的点列均有收敛子列, 则称 $X$ 为列紧空间. 若 $X$ 的子集 $A$ 中的点列, 均有收敛于 $A$ 中点的子列, 则称 $A$ 为列紧集."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.301,
+            0.63,
+            0.318
+          ],
+          "content": "在 $\\mathbb{R}$ 中，一个集合为紧集或列紧集，均当且仅当它为有界闭集."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.145,
+            0.346,
+            0.237,
+            0.366
+          ],
+          "level": 2,
+          "content": "习题3.3"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.391,
+            0.856,
+            0.456
+          ],
+          "content": "1. 设 $E \\subseteq \\mathbb{R}$, 称某性质 $P$ 在 $E$ 上局部成立, 是指对任何 $x \\in E$, 存在 $x$ 的一个邻域 $V$, 使得 $P$ 在 $E \\cap V$ 上成立. 换言之, 对任何 $x \\in E$, 存在 $\\delta > 0$ 使得 $P$ 在 $(x - \\delta, x + \\delta) \\cap E$ 上成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.462,
+            0.853,
+            0.503
+          ],
+          "content": "(1) 设 $-\\infty \\leqslant a < b \\leqslant +\\infty$. 证明 $f$ 在 $(a, b)$ 内局部有界当且仅当对任何有界闭集 $E \\subseteq (a, b)$, $f$ 在 $E$ 上有界."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.509,
+            0.853,
+            0.55
+          ],
+          "content": "(2) 设 $-\\infty < a < b \\leqslant +\\infty$. 证明 $f$ 在 $[a, b)$ 上局部有界当且仅当对任何 $c \\in (a, b)$, $f$ 在 $[a, c]$ 上有界."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.556,
+            0.853,
+            0.574
+          ],
+          "content": "2. 设 $E \\subset \\mathbb{R}$ 为非空的有界闭集. 证明: $E$ 有最大、最小值, 即 $\\sup E \\in E$, $\\inf E \\in E$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.58,
+            0.531,
+            0.596
+          ],
+          "content": "3. 设 E 为 R 中的无理点全体. 证明  $\\overline{E} = R$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.604,
+            0.717,
+            0.626
+          ],
+          "content": "4. 设 $x_0 \\in (0,2)$, $x_{n+1} = x_n(2 - x_n) (n \\geqslant 0)$. 证明: $\\lim_{n \\to +\\infty} x_n = 1$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.627,
+            0.853,
+            0.674
+          ],
+          "content": "由此, 对于 $c > 0$, 任取 $y_0 > 0$ 满足 $cy_0 < 1$. 令 $y_{n+1} = y_n(2 - cy_n) (n \\geqslant 0)$, 则 $\\lim_{n \\to \\infty} y_n = \\frac{1}{c}$. 这一事实让我们有可能利用乘法来计算倒数的近似值."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.676,
+            0.853,
+            0.728
+          ],
+          "content": "5. 设 $a_0, b_0 > 0$, $a_{n+1} = \\frac{a_n + b_n}{2}$, $b_{n+1} = \\frac{2a_nb_n}{a_nb_n}$. 证明: $\\{a_n\\}$ 和 $\\{b_n\\}$ 均收敛且极限相同."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.735,
+            0.265,
+            0.752
+          ],
+          "content": "6. 设  $c \\geqslant -3$ ,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.265,
+            0.771,
+            0.689,
+            0.807
+          ],
+          "content": "x _ {1} = \\frac {c}{2}, \\qquad x _ {n + 1} = \\frac {c}{2} + \\frac {x _ {n} ^ {2}}{2}, \\qquad n = 1, 2, 3, \\dots .",
+          "image_source": "images/page_89_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.823,
+            0.359,
+            0.841
+          ],
+          "content": "问  $\\{x_{n}\\}$  何时收敛, 并求极限."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.847,
+            0.696,
+            0.864
+          ],
+          "content": "7. 梳理或证明以下结果, 并尝试对这些结论有一个直观的理解:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.14,
+            0.87,
+            0.72,
+            0.935
+          ],
+          "sub_type": "text",
+          "content": "(1) 收敛数列的子列收敛到同一极限;\n(2) 如果一个数列有两个子列收敛到不同极限, 则该数列发散;\n(3) 如果有界数列的收敛子列均收敛到同一个极限, 则该数列收敛;"
+        }
+      ]
+    },
+    {
+      "page_idx": 90,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.742,
+            0.055,
+            0.896,
+            0.068
+          ],
+          "content": "3.3 实数系基本定理"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.915,
+            0.056,
+            0.935,
+            0.067
+          ],
+          "content": "77"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.185,
+            0.11,
+            0.826,
+            0.175
+          ],
+          "sub_type": "text",
+          "content": "(4) 有界数列 $\\{a_{n}\\}$ 不收敛到 $A$ 当且仅当存在一个收敛到 $B \\neq A$ 的子列;\n(5)  $\\bar{x}$  为 E 的聚点当且仅当存在 E 中两两不同的点列  $\\{x_{n}\\}$  使得  $x_{n} \\rightarrow \\bar{x}$ ;\n(6)  $\\bar{x}$  为 E 的聚点当且仅当存在  $\\{x_{n}\\} \\subseteq E \\setminus \\{\\bar{x}\\}$  使得  $x_{n} \\to \\bar{x}$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.181,
+            0.745,
+            0.198
+          ],
+          "content": "8. 设 $E \\subseteq \\mathbb{R}$. 证明存在至多可列集 $F \\subseteq E$ 使得 $F$ 在 $E$ 中稠密."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.204,
+            0.73,
+            0.222
+          ],
+          "content": "9. 证明: 闭区间 $[a, b]$ 不能表示为两个不相交的非空闭集的并."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.228,
+            0.571,
+            0.245
+          ],
+          "content": "10. 证明: $\\mathbb{R}$ 中既开又闭的集只有空集和 $\\mathbb{R}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.251,
+            0.895,
+            0.293
+          ],
+          "content": "11. 设 $\\{a_{k_n}\\}$ 与 $\\{a_{m_n}\\}$ 是 $\\{a_n\\}$ 的两个有相同极限的收敛子列, $\\{k_n | n \\geqslant 1\\} \\cup \\{m_n | n \\geqslant 1\\} = \\mathbb{N}_+$. 证明: $\\{a_n\\}$ 收敛."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.299,
+            0.72,
+            0.316
+          ],
+          "content": "12. 设 E 为 R 中闭集, 证明存在集合 F 使得 F 的导集为 E."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.322,
+            0.897,
+            0.387
+          ],
+          "content": "13. 下表穷举了集合的内部、导集、边界和闭包的内部、导集、边界和闭包. 请证明每一格中的结果, 对于非等式的情形, 举出等式成立以及不成立的例子. 进一步, 思考能否得出其他的关系式."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.149,
+            0.404,
+            0.898,
+            0.521
+          ],
+          "content": "| 集合 | 内部 | 导集 | 边界 | 闭包 |\n| --- | --- | --- | --- | --- |\n| $E^{\\circ}$ | $(E^{\\circ})^{\\circ}=E^{\\circ}$ | $(E^{\\circ})'=\\overline{E^{\\circ}}$ | $\\partial(E^{\\circ})\\subseteq\\partial E\\cap E'$ | $\\overline{E^{\\circ}}\\subseteq E'$ |\n| $E'$ | $(E')^{\\circ}=\\overline{E}^{\\circ}\\supseteq E^{\\circ}$ | $(E')'\\subseteq E'$ | $\\partial(E')\\subseteq\\partial E\\cap E'$ | $\\overline{E'}=E'$ |\n| $\\partial E$ | $(\\partial E)^{\\circ}=\\left(\\overline{E}\\cap\\overline{\\mathscr{C}E}\\right)^{\\circ}$ | $(\\partial E)'\\subseteq\\partial E\\cap E'$ | $\\partial(\\partial E)\\subseteq\\partial E$ | $\\overline{\\partial E}=\\partial E$ |\n| $\\overline{E}$ | $(\\overline{E})^{\\circ}\\supseteq E^{\\circ}$ | $(\\overline{E})'=E'$ | $\\partial(\\overline{E})\\subseteq\\partial E$ | $(\\overline{E})=\\overline{E}$ |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_90_table_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.546,
+            0.756,
+            0.564
+          ],
+          "content": "14. 试构造 $\\mathbb{R}$ 中一列非空集 $\\{E_k\\}$ 使得 $E_{k + 1} = E_k' \\subset E_k (k \\geqslant 1)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.569,
+            0.838,
+            0.587
+          ],
+          "content": "15. 设 $E \\subseteq \\mathbb{R}$, 用 $S_{E}$ 表示 $E$ 的孤立点全体, $\\mathcal{O}_{E}$ 为 $E$ 的外点全体①. 证明:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.187,
+            0.593,
+            0.761,
+            0.705
+          ],
+          "sub_type": "text",
+          "content": "(1) 内点为不是边界点的聚点, 即  $E^{\\circ} = E' \\setminus \\partial E;$\n(2) 外点为既非聚点又非孤立点的点, 即  $\\mathcal{O}_{E} = \\mathscr{C}(E' \\cup \\mathcal{S}_{E})$ ;\n(3) 边界点为孤立点, 或不是内点的聚点, 即  $\\partial E = S_{E} \\cup (E' \\setminus E^{\\circ})$ ;\n(4) 聚点为内点, 或不是孤立点的边界点, 即  $E' = E^{\\circ} \\cup (\\partial E \\setminus S_{E})$ ;\n(5) 孤立点为不是聚点的边界点, 即  $S_{E} = \\partial E \\setminus E'$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.71,
+            0.899,
+            0.728
+          ],
+          "content": "16. 设 $x_0 \\in (0,1)$, $x_{n+1} = x_n(1 - x_n) (n \\geqslant 0)$. 不使用 Stolz 公式, 按以下过程证明:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.189,
+            0.734,
+            0.522,
+            0.826
+          ],
+          "sub_type": "text",
+          "content": "(1) $\\lim_{n\\to +\\infty}x_n = 0;$\n(2) 对任何  $n \\geqslant 1$ ，成立  $(n + 1)x_{n} < 1$ ;\n(3) 从某一项开始,  $\\{nx_{n}\\}$  单调有界;\n(4) $\\lim_{n\\to +\\infty}nx_n = 1.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.828,
+            0.509,
+            0.845
+          ],
+          "content": "17. 在习题 6 中, 若 c < -3 会如何?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.851,
+            0.744,
+            0.869
+          ],
+          "content": "18. 设 $[a, b]$ 上函数列 $\\{f_n\\}$ 一致有界, 即存在常数 $M > 0$, 使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.37,
+            0.884,
+            0.679,
+            0.903
+          ],
+          "content": "| f _ {n} (x) | \\leqslant M, \\quad \\forall n \\geqslant 1, x \\in [ a, b ].",
+          "image_source": "images/page_90_equation_29.jpg"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.184,
+            0.918,
+            0.358,
+            0.932
+          ],
+          "content": "① 这两个不是通用记号."
+        }
+      ]
+    },
+    {
+      "page_idx": 91,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.069,
+            0.056,
+            0.088,
+            0.067
+          ],
+          "content": "78"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.055,
+            0.239,
+            0.068
+          ],
+          "content": "第三章 序列极限"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.111,
+            0.611,
+            0.13
+          ],
+          "content": "证明存在子函数列 $\\{f_{n_k}\\}$ 使得在 $[a,b]$ 的所有有理点收敛."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.138,
+            0.857,
+            0.206
+          ],
+          "content": "19. 设整数  $m \\geqslant 1$ ，证明: $\\lim_{n \\to +\\infty} \\sqrt{m + \\sqrt{m + 1 + \\sqrt{m + 2 + \\cdots + \\sqrt{m + n}}}}$  存在，并记该极限为  $a_{m}$ 。进一步，计算  $\\lim_{m \\to +\\infty} (a_{m} - \\sqrt{m})$ 。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.214,
+            0.756,
+            0.265
+          ],
+          "content": "20. 证明: $\\lim_{n\\to +\\infty}\\sqrt{1 + 2\\sqrt{1 + 3\\sqrt{1 + 4\\sqrt{1 + \\cdots + n\\sqrt{1 + (n + 1)}}}}} = 3.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.272,
+            0.3,
+            0.288
+          ],
+          "content": "21. 推广习题 20."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.296,
+            0.856,
+            0.336
+          ],
+          "content": "22. 设 $x_0 \\geqslant 0, x_{n+1} = \\sqrt{2 + x_n} (n \\geqslant 0)$. 问: $\\lim_{n \\to +\\infty} 4^n(2 - x_n)$ 是否存在? 该极限存在时, 能否得到极限的值?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.343,
+            0.856,
+            0.407
+          ],
+          "content": "23. 一般地, 对于所求过的极限可考虑进一步的结果, 例如, 若已经得到 $\\lim_{n\\to +\\infty}x_n = A$, 试试能否找到一个与初值 $x_0$ 无关的无穷大量 $\\{y_n\\}$ 使得 $\\lim_{n\\to +\\infty}y_n(x_n - A)$ 为一个非零实数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.414,
+            0.856,
+            0.456
+          ],
+          "content": "24. 固定 $r \\in (0,4)$. 任取 $x_0 \\in (0,1)$. 令 $x_{n+1} = rx_n(1 - x_n) (n \\geqslant 0)$. 问: 当 $r$ 取什么值时, 你可以证明对于任何 $x_0 \\in (0,1)$, 按上述方式定义的数列 $\\{x_n\\}$ 一定收敛."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.461,
+            0.775,
+            0.478
+          ],
+          "content": "试编写一计算机程序, 感受对于不同的 r, 当 n 足够大时  $x_{n}$  的收敛情况."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.482,
+            0.856,
+            0.554
+          ],
+          "content": "25. 设 $\\{x_{n}\\}$ 是在 $[0,1]$ 中稠密的点列, 任取 $\\alpha \\in \\left(0, \\frac{1}{2}\\right)$, $E := [0,1] \\setminus \\bigcup_{n=1}^{\\infty} \\left(x_{n} - \\frac{\\alpha}{2^{n}}, x_{n} + \\frac{\\alpha}{2^{n}}\\right)$. 证明 $E$ 为非空的疏朗集."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.558,
+            0.228,
+            0.573
+          ],
+          "content": "26. 考虑"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.321,
+            0.579,
+            0.637,
+            0.625
+          ],
+          "content": "X := \\left\\{\\{x _ {n} \\} _ {n = 1} ^ {\\infty} \\Big | \\sum_ {n = 1} ^ {\\infty} | x _ {n} | ^ {2} <   + \\infty \\right\\},",
+          "image_source": "images/page_91_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.639,
+            0.208,
+            0.655
+          ],
+          "content": "在其上定义"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.212,
+            0.673,
+            0.745,
+            0.716
+          ],
+          "content": "\\| \\{x _ {n} \\} \\| := \\Big (\\sum_ {n = 1} ^ {\\infty} | x _ {n} | ^ {2} \\Big) ^ {\\frac {1}{2}}, \\qquad d (\\{x _ {n} \\}, \\{y _ {n} \\}) := \\| \\{x _ {n} - y _ {n} \\} \\|.",
+          "image_source": "images/page_91_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.734,
+            0.717,
+            0.752
+          ],
+          "content": "证明 $d$ 是 $X$ 上的距离. 并以此距离定义收敛性、开集、闭集等. 证明:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.1,
+            0.758,
+            0.856,
+            0.939
+          ],
+          "sub_type": "text",
+          "content": "(1) 在 X 上, Cauchy 收敛准则成立.\n(2) 在 X 上, 致密性定理不成立, 即有界点列不一定有收敛子列.\n(3) 设 $\\{\\pmb{x}_k\\}$ 是 $X$ 中点列, 它的每一个分量都有界, 即记 $\\pmb{x}_k = \\{x_{k,n}\\}_{n=1}^{\\infty}$ 时, 对任何 $n \\geqslant 1$, $\\{x_{k,n}\\}_{k=1}^{\\infty}$ 是有界集. 证明: 存在 $\\{\\pmb{x}_k\\}$ 的子列使得其每一个分量都收敛.\n(4) 在 X 上, 有限覆盖定理不成立.\n(5) 在 $X$ 上, 闭集套定理成立. 即如果 $\\{E_n\\}$ 是 $X$ 中的一列单调下降且直径趋于零的闭集列, 则 $\\bigcap_{n=1}^{\\infty} E_n$ 为单点集."
+        }
+      ]
+    },
+    {
+      "page_idx": 92,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.776,
+            0.056,
+            0.896,
+            0.069
+          ],
+          "content": "3.4 上、下极限"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.917,
+            0.057,
+            0.937,
+            0.068
+          ],
+          "content": "79"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.11,
+            0.83,
+            0.15
+          ],
+          "content": "(6) X 中存在一列有界非空闭集  $E_{1} \\supseteq E_{2} \\supseteq E_{3} \\supseteq \\cdots$  使得  $\\bigcap_{n=1}^{\\infty} E_{n}$  为空集."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.154,
+            0.896,
+            0.197
+          ],
+          "content": "27. (1) 在 $[- \\infty, +\\infty]$ 中①, 若 $\\lim_{n \\to +\\infty} a_n = +\\infty$ 或 $\\lim_{n \\to +\\infty} a_n = -\\infty$, 我们就分别称 $\\{a_n\\}$ 收敛到 $+\\infty$ 或 $-\\infty$. 试重新考察习题 7."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.202,
+            0.896,
+            0.29
+          ],
+          "content": "(2) 对于 $E \\subseteq [-\\infty, +\\infty]$, 若存在 $a \\in \\mathbb{R}$ 使得 $(a, +\\infty] \\subseteq E ([-\\infty, a) \\subseteq E)$, 则称 $+\\infty (-\\infty)$ 为 $E$ 的内点. 若 $U \\subseteq [-\\infty, +\\infty]$ 的所有点都是其内点, 则称 $U$ 为 $[- \\infty, +\\infty]$ 的开集. 考虑在 $[- \\infty, +\\infty]$ 中, 哪些集合是紧集, 即 $[- \\infty, +\\infty]$ 中满足任何开覆盖都有有限子覆盖的集合."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.296,
+            0.896,
+            0.337
+          ],
+          "content": "28. 设 $E \\subseteq \\mathbb{R}$. 则 $E$ 满足什么条件时, 成立: 对于 $E$ 的任何闭覆盖, 均有有限子覆盖."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.344,
+            0.446,
+            0.36
+          ],
+          "content": "29. 设 $U$ 为 $\\mathbb{R}$ 中开集. 证明:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.367,
+            0.896,
+            0.407
+          ],
+          "content": "(1) 若  $x_{0} \\in U$ ，则存在唯一的开区间  $(\\alpha, \\beta)$  ——这样的区间称为 U 的构成区间，满足:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.414,
+            0.714,
+            0.433
+          ],
+          "content": "(i) $x_0 \\in (\\alpha, \\beta) \\subseteq U$; (ii) 若 $x_0 \\in (a, b) \\subseteq U$, 则 $(a, b) \\subseteq (\\alpha, \\beta)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.438,
+            0.675,
+            0.455
+          ],
+          "content": "(2) U 可以表示为至多可列个两两不交的构成区间的并."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.461,
+            0.87,
+            0.479
+          ],
+          "content": "30. 闭区间 $[a, b]$ 不能表示为至少两个但至多可列个两两不交的非空闭集的并."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.485,
+            0.54,
+            0.502
+          ],
+          "content": "31. $\\mathbb{R}$ 不能表示成一列无处稠密集的并."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.507,
+            0.762,
+            0.539
+          ],
+          "content": "32. 设 $\\{V_k\\}$ 是一列在 $\\mathbb{R}$ 中稠密的开集, 证明: $\\bigcap_{k} V_k$ 在 $\\mathbb{R}$ 中稠密."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.543,
+            0.604,
+            0.56
+          ],
+          "content": "33. 在度量空间的定义中, 由 (2)\\~(3) 可以得到"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.566,
+            0.665,
+            0.585
+          ],
+          "content": "(3') 对任何 $x, y, z \\in X$, 成立 $\\rho(x, z) \\leqslant \\rho(y, x) + \\rho(y, z)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.59,
+            0.464,
+            0.607
+          ],
+          "content": "证明: (1)\\~(3) 与 (1), (3') 等价."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.149,
+            0.661,
+            0.361,
+            0.683
+          ],
+          "level": 2,
+          "content": "3.4 上、下极限"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.73,
+            0.9,
+            0.794
+          ],
+          "content": "在讨论问题之初不能确定某些极限是否存在, 时常带来很大的麻烦. 引入上、下极限在技术上可以减少这种麻烦. 而通过研究弱意义下的极限来研究极限, 则提供了一种重要的数学思想."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.8,
+            0.522,
+            0.818
+          ],
+          "content": "设  $\\{a_{n}\\}$  是广义实数系中的点列, 考虑"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.384,
+            0.839,
+            0.664,
+            0.865
+          ],
+          "content": "A _ {n} := \\sup _ {k \\geqslant n} a _ {k}, \\quad B _ {n} := \\inf _ {k \\geqslant n} a _ {k}.",
+          "image_source": "images/page_92_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.882,
+            0.9,
+            0.901
+          ],
+          "content": "则 $\\{A_{n}\\}$ 单调减少, $\\{B_n\\}$ 单调增加. 因此, 它们在广义实数系中有极限. 我们给出如下"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.184,
+            0.919,
+            0.38,
+            0.933
+          ],
+          "content": "① 以下说法在 R 中不适用."
+        }
+      ]
+    },
+    {
+      "page_idx": 93,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.065,
+            0.054,
+            0.085,
+            0.065
+          ],
+          "content": "80"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.105,
+            0.052,
+            0.237,
+            0.066
+          ],
+          "content": "第三章 序列极限"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.109,
+            0.154,
+            0.125
+          ],
+          "content": "定义."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.133,
+            0.571,
+            0.152
+          ],
+          "content": "定义 3.4.1 对于广义实数系中的点列  $\\{a_{n}\\}$ ，称"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.225,
+            0.168,
+            0.734,
+            0.197
+          ],
+          "content": "\\varlimsup_ {n \\to + \\infty} a _ {n} := \\lim _ {n \\to + \\infty} \\sup _ {k \\geqslant n} a _ {k} \\quad \\text {和} \\quad \\varliminf_ {n \\to + \\infty} a _ {n} := \\lim _ {n \\to + \\infty} \\inf _ {k \\geqslant n} a _ {k}",
+          "image_source": "images/page_93_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.213,
+            0.348,
+            0.231
+          ],
+          "content": "为  $\\{a_{n}\\}$  的上极限和下极限."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.237,
+            0.812,
+            0.254
+          ],
+          "content": "由夹逼准则立即可得如下定理, 它使得通过上、下极限来研究极限成为可能."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.26,
+            0.679,
+            0.284
+          ],
+          "content": "定理3.4.1 对于广义实数列 $\\{a_{n}\\}$ ， $\\lim_{n\\to +\\infty}a_n = \\ell$ 当且仅当"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.365,
+            0.301,
+            0.855,
+            0.328
+          ],
+          "content": "\\varlimsup_ {n \\to + \\infty} a _ {n} = \\varliminf_ {n \\to + \\infty} a _ {n} = \\ell , \\tag {3.4.1}",
+          "image_source": "images/page_93_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.344,
+            0.281,
+            0.361
+          ],
+          "content": "其中  $\\ell\\in[-\\infty,+\\infty]$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.367,
+            0.49,
+            0.385
+          ],
+          "content": "证明 (充分性) 若 (3.4.1) 式成立, 则由"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.384,
+            0.404,
+            0.572,
+            0.431
+          ],
+          "content": "\\inf _ {k \\geqslant n} a _ {k} \\leqslant a _ {n} \\leqslant \\sup _ {k \\geqslant n} a _ {k}",
+          "image_source": "images/page_93_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.447,
+            0.373,
+            0.47
+          ],
+          "content": "和夹逼准则即得  $\\lim_{n\\to+\\infty}a_{n}=\\ell.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.471,
+            0.812,
+            0.495
+          ],
+          "content": "(必要性) 若 $\\lim_{n\\to +\\infty}a_n = \\ell$ ，则当 $\\ell \\in (-\\infty , + \\infty)$ 时， $\\forall \\varepsilon >0,$ 存在 $N > 0$ 使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.334,
+            0.508,
+            0.622,
+            0.525
+          ],
+          "content": "\\ell - \\varepsilon \\leqslant a _ {n} \\leqslant \\ell + \\varepsilon , \\quad \\forall n \\geqslant N.",
+          "image_source": "images/page_93_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.544,
+            0.15,
+            0.56
+          ],
+          "content": "于是"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.255,
+            0.568,
+            0.704,
+            0.595
+          ],
+          "content": "\\ell - \\varepsilon \\leqslant \\inf _ {k \\geqslant n} a _ {k} \\leqslant a _ {n} \\leqslant \\sup _ {k \\geqslant n} a _ {k} \\leqslant \\ell + \\varepsilon , \\quad \\forall n \\geqslant N.",
+          "image_source": "images/page_93_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.607,
+            0.578,
+            0.634
+          ],
+          "content": "这就表明 $\\lim_{n\\to +\\infty}a_n = \\varlimsup_{n\\to +\\infty}a_n = \\ell.$ 即(3.4.1)式成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.637,
+            0.597,
+            0.655
+          ],
+          "content": "当  $\\ell = +\\infty$  或  $\\ell = -\\infty$  时, 类似可证 (3.4.1) 式成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.66,
+            0.575,
+            0.677
+          ],
+          "content": "除了定理 3.4.1, 上、下极限具有如下自然的性质."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.683,
+            0.5,
+            0.702
+          ],
+          "content": "定理 3.4.2 对于广义实数列 $\\{a_{n}\\}$, 有"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.145,
+            0.707,
+            0.591,
+            0.765
+          ],
+          "sub_type": "text",
+          "content": "(1) $\\varlimsup_{n\\to +\\infty}a_n\\geqslant \\varliminf_{n\\to +\\infty}a_n;$\n(2) $\\lim_{n\\to +\\infty}a_n = \\inf_n\\sup_{k\\geqslant n}a_k,\\quad \\varliminf_{n\\to +\\infty}a_n = \\sup_n\\inf_{k\\geqslant n}a_k;$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.769,
+            0.467,
+            0.787
+          ],
+          "content": "(3) 设  $\\{a_{n_{k}}\\}$  为  $\\{a_{n}\\}$  的一个子列, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.26,
+            0.804,
+            0.698,
+            0.833
+          ],
+          "content": "\\varlimsup_ {k \\to + \\infty} a _ {n _ {k}} \\leqslant \\varlimsup_ {n \\to + \\infty} a _ {n}, \\quad \\varliminf_ {k \\to + \\infty} a _ {n _ {k}} \\geqslant \\varliminf_ {n \\to + \\infty} a _ {n};",
+          "image_source": "images/page_93_equation_25.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.849,
+            0.575,
+            0.869
+          ],
+          "content": "(4) 存在  $\\{a_{n}\\}$  的子列  $\\{a_{n_{k}}\\}$  和子列  $\\{a_{m_{k}}\\}$  使得 $^{①}$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.259,
+            0.885,
+            0.699,
+            0.913
+          ],
+          "content": "\\varlimsup_ {n \\to + \\infty} a _ {n} = \\lim _ {k \\to + \\infty} a _ {n _ {k}}, \\quad \\varliminf_ {n \\to + \\infty} a _ {n} = \\lim _ {k \\to + \\infty} a _ {m _ {k}}.",
+          "image_source": "images/page_93_equation_27.jpg"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.137,
+            0.919,
+            0.329,
+            0.933
+          ],
+          "content": "① 本结果蕴涵致密性定理."
+        }
+      ]
+    },
+    {
+      "page_idx": 94,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.773,
+            0.055,
+            0.896,
+            0.068
+          ],
+          "content": "3.4 上、下极限"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.914,
+            0.056,
+            0.932,
+            0.068
+          ],
+          "content": "81"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.112,
+            0.612,
+            0.131
+          ],
+          "content": "定理 3.4.3 对于广义实数列 $\\{a_{n}\\}$ 和 $\\{b_{n}\\}$, 有"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.137,
+            0.47,
+            0.154
+          ],
+          "content": "(1) 若  $a_{n} \\leqslant b_{n}$  ( $n = 1, 2, \\cdots$ ), 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.311,
+            0.169,
+            0.728,
+            0.199
+          ],
+          "content": "\\varliminf_ {n \\to + \\infty} a _ {n} \\leqslant \\varliminf_ {n \\to + \\infty} b _ {n}, \\quad \\varlimsup_ {n \\to + \\infty} a _ {n} \\leqslant \\varlimsup_ {n \\to + \\infty} b _ {n}.",
+          "image_source": "images/page_94_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.214,
+            0.453,
+            0.241
+          ],
+          "content": "(2) $\\lim_{n\\to +\\infty}(-a_n) = -\\lim_{n\\to +\\infty}a_n.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.244,
+            0.834,
+            0.262
+          ],
+          "content": "(3) 以下每一个不等式, 只要其两端在广义实数系中都有意义, 就一定成立:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.251,
+            0.279,
+            0.79,
+            0.382
+          ],
+          "content": "\\begin{array}{l} \\varliminf_ {n \\to + \\infty} a _ {n} + \\varliminf_ {n \\to + \\infty} b _ {n} \\leqslant \\varliminf_ {n \\to + \\infty} (a _ {n} + b _ {n}) \\\\ \\leqslant \\varliminf_ {n \\to + \\infty} a _ {n} + \\varlimsup_ {n \\to + \\infty} b _ {n} \\leqslant \\varlimsup_ {n \\to + \\infty} (a _ {n} + b _ {n}) \\\\ \\leqslant \\varlimsup_ {n \\to + \\infty} a _ {n} + \\varlimsup_ {n \\to + \\infty} b _ {n}. \\\\ \\end{array}",
+          "image_source": "images/page_94_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.395,
+            0.405,
+            0.418
+          ],
+          "content": "(4) 若 $\\lim_{n\\to +\\infty}a_n$ 存在, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.35,
+            0.437,
+            0.697,
+            0.502
+          ],
+          "content": "\\begin{array}{l} \\varliminf_ {n \\to + \\infty} (a _ {n} + b _ {n}) = \\lim _ {n \\to + \\infty} a _ {n} + \\varliminf_ {n \\to + \\infty} b _ {n}, \\\\ \\varlimsup_ {n \\to + \\infty} (a _ {n} + b _ {n}) = \\lim _ {n \\to + \\infty} a _ {n} + \\varlimsup_ {n \\to + \\infty} b _ {n}. \\\\ \\end{array}",
+          "image_source": "images/page_94_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.517,
+            0.655,
+            0.548
+          ],
+          "content": "(5) 若  $a_{n} > 0 (n = 1, 2, \\cdots)$ ，规定  $\\frac{1}{0} = +\\infty$ ，则我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.421,
+            0.56,
+            0.622,
+            0.605
+          ],
+          "content": "\\varlimsup_ {n \\to + \\infty} \\frac {1}{a _ {n}} = \\frac {1}{\\varliminf_ {n \\to + \\infty} a _ {n}}.",
+          "image_source": "images/page_94_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.62,
+            0.898,
+            0.66
+          ],
+          "content": "(6) 设  $a_{n} > 0, b_{n} > 0 (n = 1, 2, \\cdots)$ ，则以下每一个不等式，只要其两端在广义实数系中都有意义，就一定成立:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.281,
+            0.677,
+            0.761,
+            0.741
+          ],
+          "content": "\\begin{array}{l} \\varliminf_ {n \\to + \\infty} a _ {n} \\varliminf_ {n \\to + \\infty} b _ {n} \\leqslant \\varliminf_ {n \\to + \\infty} (a _ {n} b _ {n}) \\leqslant \\varliminf_ {n \\to + \\infty} a _ {n} \\varlimsup_ {n \\to + \\infty} b _ {n} \\\\ \\leqslant \\varlimsup_ {n \\to + \\infty} (a _ {n} b _ {n}) \\leqslant \\varlimsup_ {n \\to + \\infty} a _ {n} \\varliminf_ {n \\to + \\infty} b _ {n}. \\\\ \\end{array}",
+          "image_source": "images/page_94_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.753,
+            0.586,
+            0.775
+          ],
+          "content": "(7) 设  $a_{n} > 0 (n = 1, 2, \\cdots)$ ，且  $\\lim_{n \\to +\\infty} a_{n} = 0$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.776,
+            0.569,
+            0.803
+          ],
+          "content": "若  $\\varliminf_{n\\to+\\infty}b_{n}$  不为  $\\pm\\infty$ ，则  $\\varliminf_{n\\to+\\infty}(a_{n}b_{n})=0$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.807,
+            0.569,
+            0.83
+          ],
+          "content": "若 $\\lim_{n\\to +\\infty}b_n$ 不为 $\\pm \\infty$ ，则 $\\lim_{n\\to +\\infty}(a_nb_n) = 0.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.832,
+            0.492,
+            0.854
+          ],
+          "content": "(8) 设 $\\lim_{n\\to +\\infty}a_n = A\\in (0, + \\infty)$, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.265,
+            0.873,
+            0.779,
+            0.902
+          ],
+          "content": "\\varliminf_ {n \\to + \\infty} (a _ {n} b _ {n}) = A \\varliminf_ {n \\to + \\infty} b _ {n}, \\quad \\varlimsup_ {n \\to + \\infty} (a _ {n} b _ {n}) = A \\varlimsup_ {n \\to + \\infty} b _ {n}.",
+          "image_source": "images/page_94_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.917,
+            0.56,
+            0.934
+          ],
+          "content": "利用上、下极限, Stolz 公式可作如下推广."
+        }
+      ]
+    },
+    {
+      "page_idx": 95,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.068,
+            0.056,
+            0.087,
+            0.067
+          ],
+          "content": "82"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.054,
+            0.239,
+            0.068
+          ],
+          "content": "第三章 序列极限"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.112,
+            0.856,
+            0.152
+          ],
+          "content": "定理 3.4.4 设  $\\{x_{n}\\}$  和  $\\{y_{n}\\}$  是两个实数列,  $\\{y_{n}\\}$  严格单增, 且  $\\lim_{n\\to+\\infty}y_{n}=+\\infty$ . 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.176,
+            0.155,
+            0.855,
+            0.187
+          ],
+          "content": "\\varliminf_ {n \\to + \\infty} \\frac {x _ {n + 1} - x _ {n}}{y _ {n + 1} - y _ {n}} \\leqslant \\varliminf_ {n \\to + \\infty} \\frac {x _ {n}}{y _ {n}} \\leqslant \\varlimsup_ {n \\to + \\infty} \\frac {x _ {n}}{y _ {n}} \\leqslant \\varlimsup_ {n \\to + \\infty} \\frac {x _ {n + 1} - x _ {n}}{y _ {n + 1} - y _ {n}}. \\tag {3.4.2}",
+          "image_source": "images/page_95_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.198,
+            0.439,
+            0.215
+          ],
+          "content": "证明 对任何 $n > m \\geqslant 1$, 我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.251,
+            0.23,
+            0.709,
+            0.324
+          ],
+          "content": "\\inf _ {k \\geqslant m} \\frac {x _ {k + 1} - x _ {k}}{y _ {k + 1} - y _ {k}} \\leqslant \\frac {\\sum_ {j = m} ^ {n - 1} (x _ {j + 1} - x _ {j})}{\\sum_ {j = m} ^ {n - 1} (y _ {j + 1} - y _ {j})} \\leqslant \\sup _ {k \\geqslant m} \\frac {x _ {k + 1} - x _ {k}}{y _ {k + 1} - y _ {k}}.",
+          "image_source": "images/page_95_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.338,
+            0.13,
+            0.354
+          ],
+          "content": "即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.281,
+            0.368,
+            0.855,
+            0.401
+          ],
+          "content": "\\inf _ {k \\geqslant m} \\frac {x _ {k + 1} - x _ {k}}{y _ {k + 1} - y _ {k}} \\leqslant \\frac {x _ {n} - x _ {m}}{y _ {n} - y _ {m}} \\leqslant \\sup _ {k \\geqslant m} \\frac {x _ {k + 1} - x _ {k}}{y _ {k + 1} - y _ {k}}. \\tag {3.4.3}",
+          "image_source": "images/page_95_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.417,
+            0.462,
+            0.434
+          ],
+          "content": "在上式中固定 $m$ ，令 $n\\to +\\infty$ ，并注意到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.273,
+            0.448,
+            0.685,
+            0.53
+          ],
+          "content": "\\begin{array}{l} \\varliminf_ {n \\to + \\infty} \\frac {x _ {n} - x _ {m}}{y _ {n} - y _ {m}} = \\varliminf_ {n \\to + \\infty} \\frac {x _ {n} - x _ {m}}{y _ {n}} = \\varliminf_ {n \\to + \\infty} \\frac {x _ {n}}{y _ {n}}, \\\\ \\varlimsup_ {n \\to + \\infty} \\frac {x _ {n} - x _ {m}}{y _ {n} - y _ {m}} = \\varlimsup_ {n \\to + \\infty} \\frac {x _ {n} - x _ {m}}{y _ {n}} = \\varliminf_ {n \\to + \\infty} \\frac {x _ {n}}{y _ {n}}, \\\\ \\end{array}",
+          "image_source": "images/page_95_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.539,
+            0.15,
+            0.555
+          ],
+          "content": "得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.223,
+            0.556,
+            0.735,
+            0.59
+          ],
+          "content": "\\inf _ {k \\geqslant m} \\frac {x _ {k + 1} - x _ {k}}{y _ {k + 1} - y _ {k}} \\leqslant \\varliminf_ {n \\to + \\infty} \\frac {x _ {n}}{y _ {n}} \\leqslant \\varlimsup_ {n \\to + \\infty} \\frac {x _ {n}}{y _ {n}} \\leqslant \\sup _ {k \\geqslant m} \\frac {x _ {k + 1} - x _ {k}}{y _ {k + 1} - y _ {k}}.",
+          "image_source": "images/page_95_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.601,
+            0.367,
+            0.618
+          ],
+          "content": "再在上式中令 $m\\to +\\infty$ 得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.203,
+            0.632,
+            0.755,
+            0.664
+          ],
+          "content": "\\varliminf_ {n \\to + \\infty} \\frac {x _ {n + 1} - x _ {n}}{y _ {n + 1} - y _ {n}} \\leqslant \\varliminf_ {n \\to + \\infty} \\frac {x _ {n}}{y _ {n}} \\leqslant \\varlimsup_ {n \\to + \\infty} \\frac {x _ {n}}{y _ {n}} \\leqslant \\varlimsup_ {n \\to + \\infty} \\frac {x _ {n + 1} - x _ {n}}{y _ {n + 1} - y _ {n}}.",
+          "image_source": "images/page_95_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.679,
+            0.235,
+            0.696
+          ],
+          "content": "从而定理成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.701,
+            0.697,
+            0.726
+          ],
+          "content": "定理 3.4.5 设  $\\lim_{n\\to+\\infty}x_{n}=\\lim_{n\\to+\\infty}y_{n}=0,\\{y_{n}\\}$  严格单减. 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.176,
+            0.742,
+            0.855,
+            0.776
+          ],
+          "content": "\\varliminf_ {n \\to + \\infty} \\frac {x _ {n + 1} - x _ {n}}{y _ {n + 1} - y _ {n}} \\leqslant \\varliminf_ {n \\to + \\infty} \\frac {x _ {n}}{y _ {n}} \\leqslant \\varlimsup_ {n \\to + \\infty} \\frac {x _ {n}}{y _ {n}} \\leqslant \\varlimsup_ {n \\to + \\infty} \\frac {x _ {n + 1} - x _ {n}}{y _ {n + 1} - y _ {n}}. \\tag {3.4.4}",
+          "image_source": "images/page_95_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.791,
+            0.439,
+            0.809
+          ],
+          "content": "证明 对任何 $m > n \\geqslant 1$, 同样有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.286,
+            0.822,
+            0.675,
+            0.856
+          ],
+          "content": "\\inf _ {k \\geqslant n} \\frac {x _ {k} - x _ {k + 1}}{y _ {k} - y _ {k + 1}} \\leqslant \\frac {x _ {n} - x _ {m}}{y _ {n} - y _ {m}} \\leqslant \\sup _ {k \\geqslant n} \\frac {x _ {k} - x _ {k + 1}}{y _ {k} - y _ {k + 1}}.",
+          "image_source": "images/page_95_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.871,
+            0.457,
+            0.889
+          ],
+          "content": "在上式中固定 $n$, 令 $m \\to +\\infty$ 得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.31,
+            0.902,
+            0.649,
+            0.936
+          ],
+          "content": "\\inf _ {k \\geqslant n} \\frac {x _ {k} - x _ {k + 1}}{y _ {k} - y _ {k + 1}} \\leqslant \\frac {x _ {n}}{y _ {n}} \\leqslant \\sup _ {k \\geqslant n} \\frac {x _ {k} - x _ {k + 1}}{y _ {k} - y _ {k + 1}}.",
+          "image_source": "images/page_95_equation_20.jpg"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "created_at": "2025-11-20T03:44:46+08:00",
+      "modified_at": "2025-11-20T03:47:17+08:00",
+      "page_count": 856,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 80,
+          "width_pt": 511.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 81,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 82,
+          "width_pt": 511.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 83,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 84,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 85,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 86,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 87,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 88,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 89,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 90,
+          "width_pt": 511.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 91,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 92,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 93,
+          "width_pt": 510.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 94,
+          "width_pt": 511.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 95,
+          "width_pt": 510.0,
+          "height_pt": 742.0
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

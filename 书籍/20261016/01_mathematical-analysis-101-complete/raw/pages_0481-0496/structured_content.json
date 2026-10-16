@@ -1,0 +1,3391 @@
+{
+  "pages": [
+    {
+      "page_idx": 480,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.057,
+            0.055,
+            0.084,
+            0.066
+          ],
+          "content": "176"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.103,
+            0.053,
+            0.234,
+            0.067
+          ],
+          "content": "第十三章 幂级数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.295,
+            0.106,
+            0.775,
+            0.209
+          ],
+          "content": "\\begin{array}{l} \\leqslant \\left| \\sum_ {k = 0} ^ {n} a _ {k} - \\sum_ {k = 0} ^ {n} a _ {k} x ^ {k} \\right| + \\left| \\sum_ {k = n + 1} ^ {+ \\infty} a _ {k} x ^ {k} \\right| + \\left| \\sum_ {k = 0} ^ {+ \\infty} a _ {k} x ^ {k} - S \\right| \\\\ = \\left| \\sum_ {k = 0} ^ {n} a _ {k} (1 - x ^ {k}) \\right| + \\left| \\sum_ {k = n + 1} ^ {+ \\infty} a _ {k} x ^ {k} \\right| + \\left| \\sum_ {k = 0} ^ {+ \\infty} a _ {k} x ^ {k} - S \\right|. \\\\ \\end{array}",
+          "image_source": "images/page_480_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.218,
+            0.371,
+            0.235
+          ],
+          "content": "我们分别给出右端三项的估计."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.238,
+            0.825,
+            0.268
+          ],
+          "content": "首先, 由 $\\lim_{n\\to +\\infty}na_n = 0$ 知, $\\forall \\varepsilon > 0, \\exists N_1$, 使得 $\\forall n > N_1$ 成立 $|na_n| < \\frac{\\varepsilon}{3}$. 又由于"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.313,
+            0.279,
+            0.635,
+            0.322
+          ],
+          "content": "\\lim _ {n \\to + \\infty} \\frac {1}{n} \\sum_ {k = 0} ^ {n} k | a _ {k} | = \\lim _ {n \\to + \\infty} n | a _ {n} | = 0,",
+          "image_source": "images/page_480_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.334,
+            0.311,
+            0.375
+          ],
+          "content": "从而有 $\\frac{1}{n}\\sum_{k = 0}^{n}k|a_k| <   \\frac{\\varepsilon}{3}.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.378,
+            0.578,
+            0.403
+          ],
+          "content": "其次, 由于 $\\lim_{x\\to 1^{-}}f(x) = S$, 故 $\\exists N_2$, 使得 $\\forall n > N_2$,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.381,
+            0.415,
+            0.567,
+            0.452
+          ],
+          "content": "\\left| f \\Big (1 - \\frac {1}{n} \\Big) - S \\right| <   \\frac {\\varepsilon}{3}.",
+          "image_source": "images/page_480_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.462,
+            0.538,
+            0.493
+          ],
+          "content": "取 $x = 1 - \\frac{1}{n}, N = N_{1} + N_{2}$, 当 $n > N$ 时, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.243,
+            0.509,
+            0.705,
+            0.556
+          ],
+          "content": "\\left| \\sum_ {k = 0} ^ {n} a _ {k} (1 - x ^ {k}) \\right| \\leqslant \\sum_ {k = 0} ^ {n} k | a _ {k} | (1 - x) = \\frac {1}{n} \\sum_ {k = 0} ^ {n} k | a _ {k} | <   \\frac {\\varepsilon}{3}.",
+          "image_source": "images/page_480_equation_10.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.158,
+            0.571,
+            0.789,
+            0.617
+          ],
+          "content": "\\left| \\sum_ {k = n + 1} ^ {+ \\infty} a _ {k} x ^ {k} \\right| \\leqslant \\frac {1}{n} \\sum_ {k = n + 1} ^ {+ \\infty} k | a _ {k} | \\cdot | x | ^ {k} \\leqslant \\frac {\\varepsilon}{3} \\cdot \\frac {1}{n} \\sum_ {k = n + 1} ^ {+ \\infty} | x | ^ {k} \\leqslant \\frac {\\varepsilon}{3 n} \\cdot \\frac {1}{1 - | x |} = \\frac {\\varepsilon}{3}.",
+          "image_source": "images/page_480_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.632,
+            0.756,
+            0.675
+          ],
+          "content": "最后, 注意到  $\\left|\\sum_{k=0}^{+\\infty}a_{k}x^{k}-S\\right|=\\left|f\\left(1-\\frac{1}{n}\\right)-S\\right|<\\frac{\\varepsilon}{3}$ . 这样我们就得到了"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.4,
+            0.686,
+            0.547,
+            0.732
+          ],
+          "content": "\\left| \\sum_ {k = 0} ^ {n} a _ {k} - S \\right| <   \\varepsilon .",
+          "image_source": "images/page_480_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.744,
+            0.427,
+            0.788
+          ],
+          "content": "因此 $\\sum_{n=0}^{+\\infty} a_n$ 收敛, 且 $\\sum_{n=0}^{+\\infty} a_n = S$."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.139,
+            0.808,
+            0.405,
+            0.828
+          ],
+          "level": 2,
+          "content": "13.2.2 和函数的可微性"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.849,
+            0.849,
+            0.941
+          ],
+          "content": "给定级数 $\\sum_{n=0}^{+\\infty} a_n x^n$, 我们称 $\\sum_{n=1}^{+\\infty} n a_n x^{n-1}$ 和 $\\sum_{n=0}^{+\\infty} \\frac{a_n}{n+1} x^{n+1}$ 分别为其逐项求导后的幂级数与逐项积分后的幂级数. 显然, 三个级数 $\\sum_{n=0}^{+\\infty} a_n x^n, \\sum_{n=0}^{+\\infty} \\frac{a_n}{n+1} x^{n+1}$ 和 $\\sum_{n=1}^{+\\infty} n a_n x^{n-1}$"
+        }
+      ]
+    },
+    {
+      "page_idx": 481,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.662,
+            0.056,
+            0.891,
+            0.069
+          ],
+          "content": "13.2 幂级数在收敛域内的性质"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.912,
+            0.057,
+            0.939,
+            0.068
+          ],
+          "content": "177"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.113,
+            0.496,
+            0.13
+          ],
+          "content": "具有完全相同的收敛半径. 事实上, 成立"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.239,
+            0.151,
+            0.89,
+            0.185
+          ],
+          "content": "\\varlimsup_ {n \\to + \\infty} \\sqrt [ n ]{\\left| \\frac {a _ {n - 1}}{n} \\right|} = \\varliminf_ {n \\to + \\infty} \\sqrt [ n ]{| (n + 1) a _ {n + 1} |} = \\varliminf_ {n \\to + \\infty} \\sqrt [ n ]{| a _ {n} |}. \\tag {13.2.2}",
+          "image_source": "images/page_481_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.206,
+            0.554,
+            0.224
+          ],
+          "content": "关于幂级数的逐项求导, 下面的定理成立:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.226,
+            0.894,
+            0.29
+          ],
+          "content": "定理 13.2.3 设幂级数  $\\sum_{n=0}^{+\\infty}a_{n}x^{n}$  的收敛半径为 R，则  $S(x)=\\sum_{n=0}^{+\\infty}a_{n}x^{n}$  在  $(-R, R)$  中任意次可导，且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.325,
+            0.31,
+            0.719,
+            0.354
+          ],
+          "content": "S ^ {(k)} (x) = \\sum_ {n = k} ^ {+ \\infty} n (n - 1) \\dots (n - k + 1) a _ {n} x ^ {n - k}.",
+          "image_source": "images/page_481_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.375,
+            0.897,
+            0.485
+          ],
+          "content": "证明 考虑 $k = 1$ 的情况:首先，幂级数 $\\sum_{n=0}^{+\\infty}(a_n x^n)' = \\sum_{n=1}^{+\\infty} na_n x^{n-1}$ 的收敛半径仍为 $R$, 故对闭区间 $I \\subset (-R, R)$, 级数在 $I$ 上一致收敛. 所以, $\\sum_{n=0}^{+\\infty} a_n x^n$ 在 $I$ 中可导, 且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.3,
+            0.493,
+            0.745,
+            0.54
+          ],
+          "content": "S ^ {\\prime} (x) = \\left(\\sum_ {n = 0} ^ {+ \\infty} a _ {n} x ^ {n}\\right) ^ {\\prime} = \\sum_ {n = 0} ^ {+ \\infty} (a _ {n} x ^ {n}) ^ {\\prime} = \\sum_ {n = 1} ^ {+ \\infty} n a _ {n} x ^ {n - 1}.",
+          "image_source": "images/page_481_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.555,
+            0.897,
+            0.598
+          ],
+          "content": "对一般的 $k > 1$ ，可以完全类似证明 $S(x)$ 的 $k$ 阶可导性.由于 $S^{(n)}(0) = n!a_n$ ，这说明函数 $S(x)$ 在 $x = 0$ 处的Taylor展开就是该幂级数本身. □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.604,
+            0.367,
+            0.62
+          ],
+          "content": "例13.2.2 幂级数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.438,
+            0.628,
+            0.606,
+            0.671
+          ],
+          "content": "\\sum_ {n = 1} ^ {+ \\infty} \\frac {(- 1) ^ {n - 1}}{(2 n - 1) !} x ^ {2 n - 1}",
+          "image_source": "images/page_481_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.687,
+            0.897,
+            0.726
+          ],
+          "content": "的收敛半径 $R = +\\infty$ ，即幂级数在 $\\mathbb{R}$ 上收敛，记其和函数为 $S(x)$ .则该幂级数可以逐项求导，从而得到幂级数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.42,
+            0.736,
+            0.626,
+            0.779
+          ],
+          "content": "\\sum_ {n = 0} ^ {+ \\infty} \\frac {(- 1) ^ {n}}{(2 n) !} x ^ {2 n}, \\quad x \\in \\mathbb {R},",
+          "image_source": "images/page_481_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.794,
+            0.494,
+            0.812
+          ],
+          "content": "而且, 如果记其和函数为  $C(x)$  的话, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.462,
+            0.835,
+            0.585,
+            0.854
+          ],
+          "content": "S ^ {\\prime} (x) = C (x).",
+          "image_source": "images/page_481_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.877,
+            0.689,
+            0.895
+          ],
+          "content": "不难看出, $C(x)$ 对应的幂级数仍然可以继续求导, 且成立"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.454,
+            0.918,
+            0.594,
+            0.937
+          ],
+          "content": "C ^ {\\prime} (x) = - S (x).",
+          "image_source": "images/page_481_equation_17.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 482,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.064,
+            0.054,
+            0.091,
+            0.065
+          ],
+          "content": "178"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.11,
+            0.052,
+            0.24,
+            0.067
+          ],
+          "content": "第十三章 幂级数"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.148,
+            0.108,
+            0.412,
+            0.128
+          ],
+          "level": 2,
+          "content": "13.2.3 和函数的可积性"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.153,
+            0.512,
+            0.171
+          ],
+          "content": "关于幂级数的逐项积分, 下面的定理成立:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.175,
+            0.846,
+            0.217
+          ],
+          "content": "定理 13.2.4 设幂级数  $\\sum_{n=0}^{+\\infty}a_{n}x^{n}$  的收敛半径为 R>0，则当  $x\\in(-R,R)$  时，有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.173,
+            0.229,
+            0.785,
+            0.275
+          ],
+          "content": "\\int_ {0} ^ {x} \\left(\\sum_ {n = 0} ^ {+ \\infty} a _ {n} t ^ {n}\\right) \\mathrm{d} t = \\sum_ {n = 0} ^ {+ \\infty} \\int_ {0} ^ {x} a _ {n} t ^ {n} \\mathrm{d} t = \\sum_ {n = 0} ^ {+ \\infty} \\frac {a _ {n}}{n + 1} x ^ {n + 1}, \\quad \\forall x \\in (- R, R).",
+          "image_source": "images/page_482_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.289,
+            0.853,
+            0.35
+          ],
+          "content": "证明 不妨设 $x > 0$, 根据前面的讨论, 级数 $\\sum_{n=0}^{+\\infty} a_n t^n$ 在 $[0, x]$ 中一致收敛, 因此可以逐项积分. $\\square$"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.107,
+            0.355,
+            0.185,
+            0.414
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_482_image_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.2,
+            0.358,
+            0.851,
+            0.416
+          ],
+          "content": "注13.2.1 如果 $\\sum_{n=0}^{+\\infty} a_n R^n$ 收敛, 则上面的等式对 $x = R$ 也成立. 对 $-R$ 有类似结果."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.435,
+            0.321,
+            0.452
+          ],
+          "content": "例13.2.3 幂级数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.332,
+            0.464,
+            0.619,
+            0.508
+          ],
+          "content": "\\sum_ {n = 0} ^ {+ \\infty} (- 1) ^ {n} x ^ {2 n} = 1 - x ^ {2} + x ^ {4} - \\dots",
+          "image_source": "images/page_482_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.522,
+            0.851,
+            0.566
+          ],
+          "content": "的收敛半径为 R=1 。在  $(-1,1)$  内幂级数有和函数  $\\frac{1}{1+x^{2}}$  。因此，对于任意的  $|x|<1$  ，成立"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.251,
+            0.57,
+            0.704,
+            0.613
+          ],
+          "content": "\\arctan x = \\int_ {0} ^ {x} \\sum_ {n = 0} ^ {+ \\infty} (- 1) ^ {n} t ^ {2 n} \\mathrm{d} t = x - \\frac {x ^ {3}}{3} + \\frac {x ^ {5}}{5} - \\dots .",
+          "image_source": "images/page_482_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.621,
+            0.851,
+            0.661
+          ],
+          "content": "注意到上式左端的函数在 $x = 1$ 处连续, 右端的级数收敛, 因此根据Abel第二定理知上式对 $-1 < x \\leqslant 1$ 均成立, 特别地, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.337,
+            0.669,
+            0.617,
+            0.703
+          ],
+          "content": "1 - \\frac {1}{3} + \\frac {1}{5} - \\dots = \\arctan 1 = \\frac {\\pi}{4}.",
+          "image_source": "images/page_482_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.71,
+            0.721,
+            0.728
+          ],
+          "content": "且上式对  $-1 \\leqslant x \\leqslant 1$  均成立, 在 x = -1 处也连续, 右端的级数也收敛."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.734,
+            0.853,
+            0.799
+          ],
+          "content": "上述讨论表明, 逐项积分和逐项求导后的幂级数, 其收敛半径保持不变, 但对收敛域可能产生细微的影响: 逐项积分后的幂级数收敛域不会减小, 逐项求导后的幂级数收敛域不会增大. 区别只可能表现在收敛区间的端点处."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.802,
+            0.853,
+            0.911
+          ],
+          "content": "比如, 考虑级数 $\\sum_{n=1}^{+\\infty} \\frac{x^n}{n}$ 以及 $\\sum_{n=1}^{+\\infty} \\frac{x^{n+1}}{n(n+1)}$ 在 $x = 1$ 处的敛散性, 第一个级数在收敛域的边界点 $x = 1$ 处发散, 但它逐项积分后得到的第二个级数在该点收敛. 等价地, 第二个级数在收敛域的边界点 $x = 1$ 处收敛, 而它逐项求导后得到的第一个级数在该点发散."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.917,
+            0.766,
+            0.936
+          ],
+          "content": "关于幂级数的上述性质, 在论证一些等式或讨论幂级数展开时非常有用."
+        }
+      ]
+    },
+    {
+      "page_idx": 483,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.664,
+            0.055,
+            0.896,
+            0.069
+          ],
+          "content": "13.2 幂级数在收敛域内的性质"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.914,
+            0.056,
+            0.942,
+            0.068
+          ],
+          "content": "179"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.112,
+            0.443,
+            0.129
+          ],
+          "content": "例 13.2.4 对于显然的等式"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.386,
+            0.145,
+            0.659,
+            0.189
+          ],
+          "content": "\\frac {1}{1 + x} = \\sum_ {n = 0} ^ {+ \\infty} (- 1) ^ {n} x ^ {n}, \\quad | x | <   1,",
+          "image_source": "images/page_483_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.205,
+            0.606,
+            0.223
+          ],
+          "content": "当  $x \\in (-1,1)$  时, 逐项积分可得  $\\ln(1+x)$  的表达式:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.283,
+            0.242,
+            0.894,
+            0.283
+          ],
+          "content": "\\ln (1 + x) = \\sum_ {n = 0} ^ {+ \\infty} (- 1) ^ {n} \\frac {x ^ {n + 1}}{n + 1} = \\sum_ {n = 1} ^ {+ \\infty} (- 1) ^ {n - 1} \\frac {x ^ {n}}{n}, \\quad | x | <   1. \\tag {13.2.3}",
+          "image_source": "images/page_483_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.3,
+            0.896,
+            0.341
+          ],
+          "content": "注意到等式两端在 x = 1 处可能的延拓:左端函数有意义，右端级数收敛。因此 (13.2.3) 式可以延拓到  $-1 < x \\leqslant 1$ 。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.348,
+            0.295,
+            0.365
+          ],
+          "content": "类似地可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.371,
+            0.393,
+            0.894,
+            0.433
+          ],
+          "content": "\\sum_ {n = 0} ^ {+ \\infty} (n + 1) x ^ {n} = \\frac {1}{(1 - x) ^ {2}}, \\quad | x | <   1. \\tag {13.2.4}",
+          "image_source": "images/page_483_equation_8.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.338,
+            0.456,
+            0.895,
+            0.497
+          ],
+          "content": "\\sum_ {n = 0} ^ {+ \\infty} \\frac {(n + 1) (n + 2)}{2} x ^ {n} = \\frac {1}{(1 - x) ^ {3}}, \\quad | x | <   1. \\tag {13.2.5}",
+          "image_source": "images/page_483_equation_9.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.36,
+            0.521,
+            0.895,
+            0.561
+          ],
+          "content": "\\sum_ {n = 0} ^ {+ \\infty} (- 1) ^ {n} \\frac {x ^ {2 n + 1}}{2 n + 1} = \\arctan x, \\quad | x | \\leqslant 1. \\tag {13.2.6}",
+          "image_source": "images/page_483_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.574,
+            0.896,
+            0.614
+          ],
+          "content": "逐项求导或逐项积分在许多相关学科有广泛的应用, 比如读者可以直接验证下面的结论:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.621,
+            0.463,
+            0.638
+          ],
+          "content": "例 13.2.5 证明:Bessel 函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.413,
+            0.655,
+            0.637,
+            0.698
+          ],
+          "content": "B (x) = \\sum_ {n = 1} ^ {+ \\infty} \\frac {(- 1) ^ {n}}{(n !) ^ {2}} \\left(\\frac {x}{2}\\right) ^ {2 n}",
+          "image_source": "images/page_483_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.714,
+            0.336,
+            0.731
+          ],
+          "content": "满足二阶常微分方程"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.355,
+            0.751,
+            0.692,
+            0.77
+          ],
+          "content": "x B (x) ^ {\\prime \\prime} + B ^ {\\prime} (x) + x B (x) = 0, \\quad x \\in \\mathbb {R}.",
+          "image_source": "images/page_483_equation_15.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.191,
+            0.797,
+            0.301,
+            0.816
+          ],
+          "level": 2,
+          "content": "习题 13.2"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.191,
+            0.842,
+            0.304,
+            0.859
+          ],
+          "content": "1. 证明函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.431,
+            0.863,
+            0.618,
+            0.906
+          ],
+          "content": "f (x) = \\sum_ {n = 0} ^ {+ \\infty} \\mathrm{e} ^ {- n} \\cos^ {2} x",
+          "image_source": "images/page_483_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.918,
+            0.616,
+            0.935
+          ],
+          "content": "是  $C^{\\infty}$  的, 试求其 Maclaurin 级数以及它的收敛半径."
+        }
+      ]
+    },
+    {
+      "page_idx": 484,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.061,
+            0.057,
+            0.088,
+            0.068
+          ],
+          "content": "180"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.055,
+            0.239,
+            0.069
+          ],
+          "content": "第十三章 幂级数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.112,
+            0.278,
+            0.129
+          ],
+          "content": "2. 证明:函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.382,
+            0.143,
+            0.579,
+            0.187
+          ],
+          "content": "f (x) = \\sum_ {n = 0} ^ {+ \\infty} \\mathrm{e} ^ {- n} \\cos n ^ {2} x",
+          "image_source": "images/page_484_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.207,
+            0.785,
+            0.226
+          ],
+          "content": "是无穷次可微的, 其 Maclaurin 级数只有偶数次幂, 并且 $2k$ 次幂项的绝对值为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.339,
+            0.248,
+            0.617,
+            0.293
+          ],
+          "content": "\\sum_ {n = 0} ^ {+ \\infty} \\frac {x ^ {2 k} \\mathrm{e} ^ {- n} n ^ {4 k}}{(2 k) !} > \\left(\\frac {n ^ {2} x}{2 k}\\right) ^ {2 k} \\mathrm{e} ^ {- n}.",
+          "image_source": "images/page_484_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.315,
+            0.465,
+            0.333
+          ],
+          "content": "进一步证明, 此幂级数仅在 $x = 0$ 处收敛."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.337,
+            0.584,
+            0.379
+          ],
+          "content": "3. 设 $S(x) = \\sum_{n=0}^{+\\infty} a_n x^n$ 的收敛半径为 $R > 0$, 证明:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.144,
+            0.384,
+            0.699,
+            0.473
+          ],
+          "sub_type": "text",
+          "content": "(1) 当  $\\sum_{n=0}^{+\\infty}\\frac{a_{n}}{n+1}R^{n+1}$  收敛时, 有  $\\int_{0}^{R}S(x)\\mathrm{d}x=\\sum_{n=0}^{+\\infty}\\frac{a_{n}}{n+1}R^{n+1}.$\n(2) 当  $\\sum_{n=1}^{+\\infty} na_{n} R^{n-1}$  收敛时, 有  $S'(R) = \\sum_{n=1}^{+\\infty} na_{n} R^{n-1}$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.478,
+            0.85,
+            0.539
+          ],
+          "content": "4. 设幂级数 $\\sum_{n=0}^{+\\infty} a_n x^n$ 在开区间 $(-R, R)$ 中一致收敛, 证明: 它在闭区间 $[-R, R]$ 中也是一致收敛的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.546,
+            0.489,
+            0.564
+          ],
+          "content": "5. 设 $f(x)$ 是 $[0,1]$ 上的连续函数, 满足"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.318,
+            0.586,
+            0.638,
+            0.625
+          ],
+          "content": "\\int_ {0} ^ {1} f (x) x ^ {n} \\mathrm{d} x = 0, \\quad \\forall n = 0, 1, 2, \\dots .",
+          "image_source": "images/page_484_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.646,
+            0.338,
+            0.664
+          ],
+          "content": "证明: 在  $[0,1]$  上  $f(x) \\equiv 0$ ."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.102,
+            0.669,
+            0.849,
+            0.782
+          ],
+          "sub_type": "text",
+          "content": "6. 设非常数函数 $f(x)$ 在 $(a, b)$ 内每一点都可以展开成幂级数. 试证明 $f(x)$ 的零点集在 $(a, b)$ 内没有聚点.\n7. 设函数 $f(x)$ 在 $x = 0$ 的某个邻域内可以展开成幂级数, 并且序列 $\\left\\{f^{(n)}(0)\\right\\}$ 是有界的. 证明: $f(x)$ 必是 $(-\\infty, +\\infty)$ 内的一个 $C^\\infty$ 函数的限制.\n8. 设 $f(x)$ 在 $[0,1]$ 连续. 对每个正整数 $n$, 定义"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.311,
+            0.806,
+            0.848,
+            0.846
+          ],
+          "content": "B _ {n} (f, x) = \\sum_ {k = 0} ^ {n} \\mathrm{C} _ {n} ^ {k} f \\left(\\frac {k}{n}\\right) x ^ {k} (1 - x) ^ {n - k}, \\tag {13.2.7}",
+          "image_source": "images/page_484_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.87,
+            0.85,
+            0.935
+          ],
+          "content": "$B_{n}(f,x)$ 称为函数 $f$ 的 Bernstein 多项式. 证明: $B_{n}(f,x) \\Rightarrow f(x), x \\in [0,1]$. 进一步对比讨论 $f(x)$ 不连续 (比如取 $f(x)$ 为 Dirichlet 函数) 的情况以及 $f(x)$ 的光滑性更好时的收敛情况."
+        }
+      ]
+    },
+    {
+      "page_idx": 485,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.744,
+            0.055,
+            0.893,
+            0.068
+          ],
+          "content": "13.3 Taylor 展开式"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.913,
+            0.056,
+            0.939,
+            0.067
+          ],
+          "content": "181"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.147,
+            0.109,
+            0.414,
+            0.133
+          ],
+          "level": 2,
+          "content": "13.3 Taylor 展开式"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.179,
+            0.519,
+            0.196
+          ],
+          "content": "我们先给出函数的幂级数展开的定义:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.202,
+            0.773,
+            0.22
+          ],
+          "content": "定义13.3.1 如果存在 $\\delta > 0$，使得在 $(x_0 - \\delta, x_0 + \\delta)$ 内下式成立:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.311,
+            0.235,
+            0.893,
+            0.279
+          ],
+          "content": "f (x) = \\sum_ {n = 0} ^ {+ \\infty} a _ {n} (x - x _ {0}) ^ {n}, \\quad \\forall x \\in (x _ {0} - \\delta , x _ {0} + \\delta), \\tag {13.3.1}",
+          "image_source": "images/page_485_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.291,
+            0.896,
+            0.357
+          ],
+          "content": "则称函数 $f(x)$ 在 $x_0$ 点附近可以展开成幂级数. 如果函数 $f(x)$ 在区间 $I$ 上每点附近都能展开成幂级数, 则称 $f(x)$ 是 $I$ 上的实解析函数, 集合 $I$ 上实解析函数的全体通常记为 $C^{\\omega}(I)$."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.15,
+            0.363,
+            0.23,
+            0.407
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_485_image_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.242,
+            0.363,
+            0.896,
+            0.406
+          ],
+          "content": "注13.3.1 显然 $C^\\omega (I)\\subseteq C^\\infty (I)$ ，后面的例13.3.2进一步表明 $C^\\omega (I)\\subsetneqq$ $C^\\infty (I)$"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.151,
+            0.424,
+            0.23,
+            0.49
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_485_image_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.242,
+            0.424,
+            0.896,
+            0.491
+          ],
+          "content": "注 13.3.2 很容易被忽略的一点是, $f(x)$ 在 $x_0$ 点附近可以展开成幂级数是指等式 (13.3.1) 不但在 $x_0$ 点成立, 而且要存在 $x_0$ 的一个邻域, 使得在整个邻域内等式都成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.509,
+            0.895,
+            0.552
+          ],
+          "content": "由幂级数在收敛区间 $(x_0 - R, x_0 + R)$ 内的性质立即可得, 若 $f(x)$ 在 $x_0$ 点附近可以展开成幂级数, 则 $f(x)$ 在收敛区间内必须无限次可导, 而且有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.412,
+            0.566,
+            0.635,
+            0.587
+          ],
+          "content": "f ^ {(n)} (x _ {0}) = n! a _ {n}, \\quad n \\geqslant 0,",
+          "image_source": "images/page_485_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.599,
+            0.534,
+            0.634
+          ],
+          "content": "即, $a_{n} = \\frac{f^{(n)}(x_0)}{n!}$. 从而 $f(x)$ 又可以表示成"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.324,
+            0.647,
+            0.896,
+            0.69
+          ],
+          "content": "f (x) = \\sum_ {n = 0} ^ {+ \\infty} \\frac {f ^ {(n)} (x _ {0})}{n !} (x - x _ {0}) ^ {n}, \\quad | x - x _ {0} | <   R. \\tag {13.3.2}",
+          "image_source": "images/page_485_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.703,
+            0.897,
+            0.767
+          ],
+          "content": "上述讨论告诉我们, 如果 $f(x)$ 在 $(x_0 - R, x_0 + R)$ 内满足 (13.3.1) 式, 则必然满足 (13.3.2) 式. 下面我们讨论反过来的问题: 给定一个无穷次可导的光滑函数, 我们来构造它的形式幂级数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.773,
+            0.834,
+            0.791
+          ],
+          "content": "定义 13.3.2 (Taylor 级数) 设  $f(x)$  在  $x_{0}$  处具有任意阶导数, 则称幂级数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.426,
+            0.805,
+            0.621,
+            0.849
+          ],
+          "content": "\\sum_ {n = 0} ^ {+ \\infty} \\frac {f ^ {(n)} (x _ {0})}{n !} (x - x _ {0}) ^ {n}",
+          "image_source": "images/page_485_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.152,
+            0.862,
+            0.487,
+            0.88
+          ],
+          "content": "为 $f(x)$ 在 $x_0$ 处的Taylor级数，记为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.389,
+            0.894,
+            0.897,
+            0.937
+          ],
+          "content": "f (x) \\sim \\sum_ {n = 0} ^ {+ \\infty} \\frac {f ^ {(n)} (x _ {0})}{n !} (x - x _ {0}) ^ {n}. \\tag {13.3.3}",
+          "image_source": "images/page_485_equation_19.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 486,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.065,
+            0.056,
+            0.092,
+            0.067
+          ],
+          "content": "182"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.111,
+            0.054,
+            0.242,
+            0.068
+          ],
+          "content": "第十三章 幂级数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.113,
+            0.385,
+            0.129
+          ],
+          "content": "特别地，当 $x_0 = 0$ 时，级数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.384,
+            0.147,
+            0.579,
+            0.191
+          ],
+          "content": "f (x) \\sim \\sum_ {n = 0} ^ {+ \\infty} \\frac {f ^ {(n)} (0)}{n !} x ^ {n}",
+          "image_source": "images/page_486_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.108,
+            0.207,
+            0.383,
+            0.224
+          ],
+          "content": "称为  $f(x)$  的 Maclaurin 级数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.231,
+            0.857,
+            0.339
+          ],
+          "content": "定义 13.3.3 (Taylor 展开式) 设 $f(x)$ 在 $x_0$ 处具有任意阶导数, 如果存在 $x_0$ 的某个邻域 $(x_0 - \\delta, x_0 + \\delta) (\\delta > 0)$, 使得 $f(x)$ 在 $x_0$ 处的 Taylor 级数不但在该邻域内收敛而且收敛于 $f(x)$, 则称 $f(x)$ 在 $x_0$ 附近可 Taylor 展开, 而此时级数 $\\sum_{n=0}^{+\\infty} \\frac{f^{(n)}(x_0)}{n!} (x - x_0)^n$ 称为 $f(x)$ 在该邻域内的 Taylor 展开式, 简称展式."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.345,
+            0.664,
+            0.363
+          ],
+          "content": "特别地, 当 $x_0 = 0$ 时, Taylor 展式也称为 Maclaurin 展式."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.2,
+            0.371,
+            0.855,
+            0.51
+          ],
+          "content": "注13.3.3 值得提醒的是, 任给一个在 $x_0$ 处无穷次可导的函数 $f(x)$, 总可以“诱导”出一个形式幂级数 (13.3.3). 这个“诱导”关系通过 (13.3.3) 式中的 “$\\sim$” 而非 “=” 表现得淋漓尽致: 右端的幂级数系数来自 $f(x)$, 但这个幂级数是否仅在一点 $x_0$ 处收敛还是在某个区间内收敛, 收敛时是否收敛于 $f(x)$ 等, 都是两码事. 即, (13.3.3) 式右端的幂级数统称为 $f(x)$ 的 Taylor 级数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.2,
+            0.518,
+            0.854,
+            0.559
+          ],
+          "content": "换句话说, 当我们谈论函数  $f(x)$  和它在  $x_{0}$  处的 Taylor 级数 (13.3.3) 时, 我们面对四个不同层次:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.199,
+            0.566,
+            0.855,
+            0.705
+          ],
+          "sub_type": "text",
+          "content": "(1) $f(x)$ 在 $x_0$ 处的光滑度不够 (不是无穷次可导), 此时谈不上 $f(x)$ 的 Taylor 级数 (对比第一册微分中值定理章节中 $f(x)$ 有限阶光滑时的 Taylor 公式).\n(2) 收敛半径为零, 即幂级数除 $x_0$ 外都发散.\n(3) 收敛半径大于零但和函数并不等于  $f(x)$ .\n(4) 收敛半径大于零且和函数等于  $f(x)$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.199,
+            0.712,
+            0.853,
+            0.754
+          ],
+          "content": "只有情况 (4), 我们才称 $f(x)$ 可Taylor展开. 因此, 函数的Taylor级数与函数的Taylor展式在内涵上有本质的区别."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.774,
+            0.853,
+            0.814
+          ],
+          "content": "例 13.3.1 存在无穷光滑函数, 其 Maclaurin 级数的收敛半径为 0. 为此, 考察函数项级数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.42,
+            0.82,
+            0.534,
+            0.862
+          ],
+          "content": "\\sum_ {n = 0} ^ {+ \\infty} \\frac {\\sin (2 ^ {n} x)}{n !}",
+          "image_source": "images/page_486_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.874,
+            0.191,
+            0.891
+          ],
+          "content": "与幂级数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.378,
+            0.896,
+            0.577,
+            0.939
+          ],
+          "content": "\\sum_ {n = 0} ^ {+ \\infty} \\left(\\frac {1}{n !} \\mathrm{e} ^ {2 ^ {n}} \\sin \\frac {n \\pi}{2}\\right) x ^ {n}",
+          "image_source": "images/page_486_equation_18.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 487,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.743,
+            0.055,
+            0.893,
+            0.069
+          ],
+          "content": "13.3 Taylor 展开式"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.912,
+            0.056,
+            0.939,
+            0.068
+          ],
+          "content": "183"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.113,
+            0.256,
+            0.13
+          ],
+          "content": "之间的关系."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.132,
+            0.893,
+            0.195
+          ],
+          "content": "解 记 $u_{n}(x) = \\frac{\\sin(2^{n}x)}{n!}$. 则有 $|u_{n}(x)| \\leqslant \\frac{1}{n!}$, 因此级数 $\\sum_{n=0}^{+\\infty} u_{n}(x)$ 在 $\\mathbb{R}$ 上一致收敛, 故该函数项级数定义了一个连续函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.431,
+            0.211,
+            0.611,
+            0.255
+          ],
+          "content": "f (x) = \\sum_ {n = 0} ^ {+ \\infty} \\frac {\\sin (2 ^ {n} x)}{n !}.",
+          "image_source": "images/page_487_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.272,
+            0.212,
+            0.289
+          ],
+          "content": "又因为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.393,
+            0.286,
+            0.651,
+            0.323
+          ],
+          "content": "| u _ {n} ^ {\\prime} (x) | = \\left| \\frac {2 ^ {n} \\cos (2 ^ {n} x)}{n !} \\right| \\leqslant \\frac {2 ^ {n}}{n !},",
+          "image_source": "images/page_487_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.336,
+            0.605,
+            0.379
+          ],
+          "content": "所以函数项级数 $\\sum_{n=0}^{+\\infty} u_n'(x)$ 在 $\\mathbb{R}$ 上也一致收敛, 从而"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.443,
+            0.396,
+            0.602,
+            0.44
+          ],
+          "content": "f ^ {\\prime} (x) = \\sum_ {n = 0} ^ {+ \\infty} u _ {n} ^ {\\prime} (x).",
+          "image_source": "images/page_487_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.457,
+            0.432,
+            0.474
+          ],
+          "content": "同理对于  $k=1,2,\\cdots$ ，可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.315,
+            0.491,
+            0.731,
+            0.535
+          ],
+          "content": "f ^ {(k)} (x) = \\sum_ {n = 0} ^ {+ \\infty} u _ {n} ^ {(k)} (x) = \\sum_ {n = 0} ^ {+ \\infty} \\frac {2 ^ {k n} \\sin (2 ^ {n} x + k \\pi / 2)}{n !}.",
+          "image_source": "images/page_487_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.551,
+            0.525,
+            0.569
+          ],
+          "content": "因此, $f(x)$ 是一个无穷光滑的函数. 注意到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.348,
+            0.586,
+            0.701,
+            0.63
+          ],
+          "content": "f ^ {(k)} (0) = \\sum_ {n = 0} ^ {+ \\infty} \\frac {2 ^ {k n} \\sin (k \\pi / 2)}{n !} = \\mathrm{e} ^ {2 ^ {k}} \\sin \\frac {k \\pi}{2},",
+          "image_source": "images/page_487_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.646,
+            0.863,
+            0.664
+          ],
+          "content": "故根据前面的讨论, $f(x)$ 可以“诱导”出Maclaurin级数, 即 $f(x)$ 的Taylor级数:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.391,
+            0.682,
+            0.658,
+            0.724
+          ],
+          "content": "f (x) \\sim \\sum_ {n = 0} ^ {+ \\infty} \\left(\\frac {1}{n !} \\mathrm{e} ^ {2 ^ {n}} \\sin \\frac {n \\pi}{2}\\right) x ^ {n}.",
+          "image_source": "images/page_487_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.74,
+            0.898,
+            0.803
+          ],
+          "content": "但是, 不难算出该幂级数的收敛半径为零. 因此这个幂级数仅在 $x = 0$ 处收敛. 换句话说, 由级数 $\\sum_{n=0}^{+\\infty} u_n(x)$ 给出的无穷光滑函数 $f(x)$ 并不能展开成 Maclaurin 级数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.806,
+            0.898,
+            0.847
+          ],
+          "content": "例 13.3.2(平坦函数的存在性) 一个函数称为在 $x_0$ 点是平坦的, 是指它在包含 $x_0$ 的某邻域内是无穷光滑的, 且在 $x_0$ 点的各阶导数均为零."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.191,
+            0.853,
+            0.752,
+            0.871
+          ],
+          "content": "我们在第七章例 7.2.10 曾经讨论过的函数在  $x_{0}=0$  处是平坦的."
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.412,
+            0.886,
+            0.627,
+            0.939
+          ],
+          "content": "f (x) = \\left\\{ \\begin{array}{l l} \\mathrm{e} ^ {- \\frac {1}{x ^ {2}}}, & x \\neq 0, \\\\ 0, & x = 0. \\end{array} \\right.",
+          "image_source": "images/page_487_equation_18.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 488,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.062,
+            0.056,
+            0.089,
+            0.067
+          ],
+          "content": "184"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.054,
+            0.239,
+            0.068
+          ],
+          "content": "第十三章 幂级数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.109,
+            0.856,
+            0.199
+          ],
+          "content": "该函数在 x=0 处具有无穷阶导数，且  $f^{(k)}(0)=0\\quad(k=0,1,2,\\cdots)$ . 因此， $f(x)$  “诱导”出的 Taylor 级数恒为零，其收敛半径为  $+\\infty$ ，由于在任何非零点处  $f(x)\\neq0$ ，故  $f(x)$  的 Taylor 级数虽然收敛但并不收敛于  $f(x)(x\\neq0)$ . 即， $f(x)$  在  $x_{0}=0$  附近不能展开成幂级数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.204,
+            0.854,
+            0.27
+          ],
+          "content": "由于这类平坦函数的存在性, 可以看到, 任何一个无穷光滑函数 $g(x)$ 都和无穷多个函数 $g(x) + f(x)$ 在 $x_0$ 点 “诱导” 出形式上相同的 Taylor 级数, 其中 $f(x)$ 是任意一个在 $x_0$ 处平坦的函数. 因此, 研究一个函数的 Taylor 级数是否收敛到自身是很有必要的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.275,
+            0.853,
+            0.294
+          ],
+          "content": "下面的定理给出了实解析函数在其收敛区间内的每一点都可展开成幂级数的结论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.299,
+            0.375,
+            0.318
+          ],
+          "content": "定理 13.3.1 设 R > 0,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.355,
+            0.336,
+            0.851,
+            0.377
+          ],
+          "content": "f (x) = \\sum_ {n = 0} ^ {+ \\infty} c _ {n} x ^ {n}, \\quad \\forall | x | <   R, \\tag {13.3.4}",
+          "image_source": "images/page_488_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.391,
+            0.548,
+            0.409
+          ],
+          "content": "则 $\\forall x_0, |x_0| < R$，当 $|x - x_0| < R - |x_0|$ 时，总成立"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.379,
+            0.425,
+            0.851,
+            0.466
+          ],
+          "content": "f (x) = \\sum_ {n = 0} ^ {+ \\infty} b _ {n} (x - x _ {0}) ^ {n}, \\tag {13.3.5}",
+          "image_source": "images/page_488_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.109,
+            0.482,
+            0.15,
+            0.498
+          ],
+          "content": "其中"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.356,
+            0.502,
+            0.851,
+            0.544
+          ],
+          "content": "b _ {n} = \\sum_ {k = n} ^ {+ \\infty} \\mathrm{C} _ {k} ^ {n} c _ {k} x _ {0} ^ {k - n}, \\quad n \\geqslant 0. \\tag {13.3.6}",
+          "image_source": "images/page_488_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.554,
+            0.431,
+            0.573
+          ],
+          "content": "证明 当 $|x - x_0| < R - |x_0|$ 时，"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.209,
+            0.587,
+            0.75,
+            0.682
+          ],
+          "content": "\\begin{array}{l} \\sum_ {k = 0} ^ {+ \\infty} \\sum_ {n = 0} ^ {k} \\left| \\mathrm{C} _ {k} ^ {n} c _ {k} x _ {0} ^ {k - n} (x - x _ {0}) ^ {n} \\right| \\leqslant \\sum_ {k = 0} ^ {+ \\infty} \\sum_ {n = 0} ^ {k} \\mathrm{C} _ {k} ^ {n} | c _ {k} | | x _ {0} | ^ {k - n} | x - x _ {0} | ^ {n} \\\\ = \\sum_ {k = 0} ^ {+ \\infty} | c _ {k} | \\left(| x _ {0} | + | x - x _ {0} |\\right) ^ {k} <   + \\infty . \\\\ \\end{array}",
+          "image_source": "images/page_488_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.697,
+            0.547,
+            0.743
+          ],
+          "content": "即级数 $\\sum_{k=0}^{+\\infty}\\sum_{n=0}^{k}\\mathrm{C}_{k}^{n}c_{k}x_{0}^{k-n}(x-x_{0})^{n}$ 绝对收敛，从而"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.286,
+            0.757,
+            0.673,
+            0.902
+          ],
+          "content": "\\begin{array}{l} \\sum_ {n = 0} ^ {+ \\infty} b _ {n} (x - x _ {0}) ^ {n} = \\sum_ {n = 0} ^ {+ \\infty} \\sum_ {k = n} ^ {+ \\infty} \\mathrm{C} _ {k} ^ {n} c _ {k} x _ {0} ^ {k - n} (x - x _ {0}) ^ {n} \\\\ = \\sum_ {k = 0} ^ {+ \\infty} \\sum_ {n = 0} ^ {k} C _ {k} ^ {n} c _ {k} x _ {0} ^ {k - n} (x - x _ {0}) ^ {n} \\\\ = \\sum_ {k = 0} ^ {+ \\infty} c _ {k} x ^ {k} = f (x). \\\\ \\end{array}",
+          "image_source": "images/page_488_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.918,
+            0.237,
+            0.935
+          ],
+          "content": "定理得证."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.836,
+            0.918,
+            0.854,
+            0.931
+          ],
+          "content": "□"
+        }
+      ]
+    },
+    {
+      "page_idx": 489,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.742,
+            0.056,
+            0.891,
+            0.07
+          ],
+          "content": "13.3 Taylor 展开式"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.91,
+            0.057,
+            0.937,
+            0.069
+          ],
+          "content": "185"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.112,
+            0.893,
+            0.153
+          ],
+          "content": "通过级数的余项来判断一个函数能否展开成 Taylor 级数是一种非常方便和实用的方法. 下面的结论显然:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.159,
+            0.892,
+            0.2
+          ],
+          "content": "定理 13.3.2 设区间 I 包含 0 点,  $f(x)$  是定义在 I 上的函数, 在 0 点有任意阶的导数,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.343,
+            0.198,
+            0.89,
+            0.239
+          ],
+          "content": "r _ {n} (x) := f (x) - \\sum_ {k = 0} ^ {n} \\frac {f ^ {(k)} (0)}{k !} x ^ {k}, \\quad \\forall x \\in I. \\tag {13.3.7}",
+          "image_source": "images/page_489_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.244,
+            0.17,
+            0.26
+          ],
+          "content": "则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.391,
+            0.258,
+            0.89,
+            0.299
+          ],
+          "content": "f (x) = \\sum_ {n = 0} ^ {+ \\infty} \\frac {f ^ {(n)} (0)}{n !} x ^ {n}, \\quad x \\in I \\tag {13.3.8}",
+          "image_source": "images/page_489_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.305,
+            0.232,
+            0.32
+          ],
+          "content": "当且仅当"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.403,
+            0.322,
+            0.89,
+            0.344
+          ],
+          "content": "\\lim _ {n \\to + \\infty} r _ {n} (x) = 0, \\quad \\forall x \\in I. \\tag {13.3.9}",
+          "image_source": "images/page_489_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.346,
+            0.843,
+            0.364
+          ],
+          "content": "我们给出两种特殊情况的幂级数展开. 为此, 我们首先证明一个技术性引理."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.191,
+            0.369,
+            0.892,
+            0.388
+          ],
+          "content": "引理 13.3.3 设  $a > 0, f \\in C^{\\infty}[0, a]$ ,  $f^{(n)}(x) \\geqslant 0, f^{(n)}(0) = 0 (n \\geqslant 0)$ ，则  $f \\equiv 0$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.39,
+            0.892,
+            0.435
+          ],
+          "content": "证明 若结论不真, 不失一般性, 不妨设  $\\inf\\left\\{x>0\\mid f(x)>0\\right\\}=0$ . 任取  $\\alpha\\in\\left(0,\\frac{a}{3}\\right]$ . 我们有  $\\xi_{n}\\in(\\alpha,a)$  使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.295,
+            0.441,
+            0.744,
+            0.533
+          ],
+          "content": "\\begin{array}{l} f (a) = \\sum_ {k = 0} ^ {n} \\frac {f ^ {(k)} (\\alpha)}{k !} (a - \\alpha) ^ {k} + \\frac {f ^ {(n + 1)} (\\xi_ {n})}{(n + 1) !} (a - \\alpha) ^ {n + 1} \\\\ \\geqslant \\frac {f ^ {(n + 1)} (\\alpha)}{(n + 1) !} (a - \\alpha) ^ {n + 1}. \\\\ \\end{array}",
+          "image_source": "images/page_489_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.545,
+            0.401,
+            0.58
+          ],
+          "content": "即 $f^{(n + 1)}(\\alpha)\\leqslant \\frac{(n + 1)!f(a)}{(a - \\alpha)^{n + 1}}.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.583,
+            0.448,
+            0.601
+          ],
+          "content": "另一方面, 有 $\\eta_{n} \\in (0, \\alpha)$ 使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.21,
+            0.609,
+            0.835,
+            0.647
+          ],
+          "content": "f (\\alpha) = \\frac {f ^ {(n + 1)} (\\eta_ {n})}{(n + 1) !} \\alpha^ {n + 1} \\leqslant \\frac {f ^ {(n + 1)} (\\alpha)}{(n + 1) !} \\alpha^ {n + 1} \\leqslant f (a) \\Big (\\frac {\\alpha}{a - \\alpha} \\Big) ^ {n + 1}, \\quad \\forall n \\geqslant 0.",
+          "image_source": "images/page_489_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.662,
+            0.714,
+            0.681
+          ],
+          "content": "令 $n\\to +\\infty$ 得到 $f(\\alpha) = 0.$ 即 $f|_{[0,\\frac{a}{3}]} = 0.$ 矛盾.因此，结论成立"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.685,
+            0.894,
+            0.727
+          ],
+          "content": "定理 13.3.4 (Bernstein 定理) 设 f 在  $[a, b]$  中无穷次可导，且各阶导数非负， $f^{(n)}(x) \\geqslant 0$ . 则对任意的  $x_{0}, x \\in [a, b]$ ，只要  $|x - x_{0}| \\leqslant b - x_{0}$ ，就有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.39,
+            0.737,
+            0.652,
+            0.78
+          ],
+          "content": "f (x) = \\sum_ {n = 0} ^ {+ \\infty} \\frac {f ^ {(n)} (x _ {0})}{n !} (x - x _ {0}) ^ {n}.",
+          "image_source": "images/page_489_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.791,
+            0.895,
+            0.833
+          ],
+          "content": "证明 $^{①}$ 显然可以不妨取 $x_{0}=0$ ，此时有 $a\\leqslant0<b$ ，而条件 $|x-x_{0}|\\leqslant b-x_{0}$ 即为 $|x|\\leqslant b$ 。因此，所证结论只需对如下的x成立即可:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.198,
+            0.839,
+            0.529,
+            0.88
+          ],
+          "sub_type": "text",
+          "content": "(1) 如果  $-a \\geqslant b$ ，只需考虑  $x \\in [-b, b]$ .\n(2) 如果  $-a \\leqslant b,$  只需考虑  $x \\in [a, b]$ ."
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.148,
+            0.901,
+            0.894,
+            0.935
+          ],
+          "content": "① 利用积分余项的证明可参见 R. Redheffer. From center of gravity to Bernstein's theorem. Amer. Math. Monthly, 1983, 90(2): 130-131."
+        }
+      ]
+    },
+    {
+      "page_idx": 490,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.062,
+            0.058,
+            0.09,
+            0.069
+          ],
+          "content": "186"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.109,
+            0.056,
+            0.24,
+            0.07
+          ],
+          "content": "第十三章 幂级数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.113,
+            0.356,
+            0.132
+          ],
+          "content": "记  $\\alpha=\\min\\{-a,b\\}\\geqslant0,$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.32,
+            0.142,
+            0.642,
+            0.185
+          ],
+          "content": "P _ {n} (x) = \\sum_ {k = 0} ^ {n} \\frac {f ^ {(k)} (0)}{k !} x ^ {k}, \\quad x \\in [ - \\alpha , b ].",
+          "image_source": "images/page_490_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.196,
+            0.854,
+            0.237
+          ],
+          "content": "首先我们证明定理对于任意的 $x \\in [0, b]$ 成立. 为此, 设 $x \\in [0, b], n \\geqslant 0$, 有 $\\xi_n \\in (0, x)$ 使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.3,
+            0.237,
+            0.66,
+            0.273
+          ],
+          "content": "f (x) = P _ {n} (x) + \\frac {f ^ {(n + 1)} (\\xi_ {n})}{(n + 1) !} x ^ {n + 1} \\geqslant P _ {n} (x).",
+          "image_source": "images/page_490_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.279,
+            0.715,
+            0.322
+          ],
+          "content": "因此, 正项级数  $\\sum_{k=0}^{+\\infty}\\frac{f^{(k)}(0)}{k!}x^{k}$  在  $[0,b]$  上收敛. 记其和函数为  $S(x)$ . 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.367,
+            0.333,
+            0.594,
+            0.352
+          ],
+          "content": "S (x) \\leqslant f (x), \\quad \\forall x \\in [ 0, b ].",
+          "image_source": "images/page_490_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.363,
+            0.617,
+            0.382
+          ],
+          "content": "注意到 $S^{(n)}$ 即为 $f^{(n)}$ 的Maclaurin级数的和函数，同样有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.343,
+            0.395,
+            0.615,
+            0.416
+          ],
+          "content": "S ^ {(n)} (x) \\leqslant f ^ {(n)} (x), \\quad \\forall x \\in [ 0, b ].",
+          "image_source": "images/page_490_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.428,
+            0.854,
+            0.47
+          ],
+          "content": "令 $F = f - S$. 则 $F \\in C^{\\infty}[0, b]$, 且 $F$ 的各阶导数在 $[0, b]$ 上非负, 而 $F^{(n)}(0) = 0 (\\forall n \\geqslant 0)$. 由引理13.3.3, 可得 $F$ 在 $[0, b]$ 上恒为零. 即, 定理对于 $a = 0$ 时成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.476,
+            0.714,
+            0.494
+          ],
+          "content": "其次我们证明, 若  $\\alpha > 0$ , 定理结论在  $[-\\alpha, 0]$  上也成立. 为此考虑"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.509,
+            0.625,
+            0.528
+          ],
+          "content": "g (x) = f (x) + f (- x), \\quad x \\in [ 0, \\alpha ].",
+          "image_source": "images/page_490_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.54,
+            0.623,
+            0.559
+          ],
+          "content": "由定理条件 $\\forall x\\in [-\\alpha ,\\alpha ],f(x)\\geqslant 0,$ 故 $\\forall x\\in [0,\\alpha ],g(x)\\geqslant 0.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.564,
+            0.854,
+            0.631
+          ],
+          "content": "注意到 $\\forall x\\in [-\\alpha ,\\alpha ],g^{\\prime}(x) = f^{\\prime}(x) - f^{\\prime}(-x)$ 以及 $f^{\\prime \\prime}(x)\\geqslant 0$ ，故 $f^{\\prime}(x)$ 单调不减，从而 $\\forall x\\in [0,\\alpha ],f'(x)\\geqslant f'(-x)$ ，因此 $g^{\\prime}(x)\\geqslant 0,\\forall x\\in [0,\\alpha ]$ .同理，对任意自然数 $n$ $\\forall x\\in [0,\\alpha ]$ ，成立 $g^{(n)}(x) = f^{(n)}(x) + (-1)^{n}f^{(n)}(-x)\\geqslant 0,x\\in [0,\\alpha ]$ .由前面的结果，可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.641,
+            0.625,
+            0.684
+          ],
+          "content": "g (x) = \\sum_ {k = 0} ^ {+ \\infty} \\frac {g ^ {(n)} (0)}{k !} x ^ {k}, \\quad x \\in [ 0, \\alpha ].",
+          "image_source": "images/page_490_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.695,
+            0.424,
+            0.712
+          ],
+          "content": "采取完全类似的论证, 考虑函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.727,
+            0.625,
+            0.746
+          ],
+          "content": "h (x) = f (x) - f (- x), \\quad x \\in [ 0, \\alpha ].",
+          "image_source": "images/page_490_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.759,
+            0.15,
+            0.775
+          ],
+          "content": "可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.774,
+            0.625,
+            0.817
+          ],
+          "content": "h (x) = \\sum_ {k = 0} ^ {+ \\infty} \\frac {h ^ {(n)} (0)}{k !} x ^ {k}, \\quad x \\in [ 0, \\alpha ].",
+          "image_source": "images/page_490_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.823,
+            0.352,
+            0.854
+          ],
+          "content": "最后, 由 $f = \\frac{1}{2} (g + h)$, 可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.323,
+            0.865,
+            0.634,
+            0.909
+          ],
+          "content": "f (x) = \\sum_ {k = 0} ^ {+ \\infty} \\frac {f ^ {(n)} (0)}{k !} x ^ {k}, \\quad x \\in [ - \\alpha , 0 ].",
+          "image_source": "images/page_490_equation_21.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.92,
+            0.195,
+            0.937
+          ],
+          "content": "定理得证."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.834,
+            0.921,
+            0.853,
+            0.934
+          ],
+          "content": "□"
+        }
+      ]
+    },
+    {
+      "page_idx": 491,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.746,
+            0.056,
+            0.896,
+            0.07
+          ],
+          "content": "13.3 Taylor 展开式"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.914,
+            0.057,
+            0.942,
+            0.069
+          ],
+          "content": "187"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.111,
+            0.896,
+            0.152
+          ],
+          "content": "例 13.3.3 指数函数  $f(x)=\\mathrm{e}^{x}$  在  $(-∞,+∞)$  中的各阶导数均大于零, 根据 Bernstein 定理, 可知其 Taylor 展开式收敛于自身. 即  $\\forall x∈R,$  成立"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.373,
+            0.164,
+            0.672,
+            0.207
+          ],
+          "content": "\\mathrm{e} ^ {x} = 1 + x + \\frac {x ^ {2}}{2} + \\dots = \\sum_ {n = 0} ^ {+ \\infty} \\frac {1}{n !} x ^ {n}.",
+          "image_source": "images/page_491_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.217,
+            0.896,
+            0.266
+          ],
+          "content": "例 13.3.4 考虑前面章节中的关系式 (12.3.9). 当  $x \\in [0, \\pi)$  时, 根据逐项求导易见, 函数  $\\frac{1}{\\sin^{2}x} - \\frac{1}{x^{2}}$  的各阶导数非负, 因此有 (注意偶函数的展开不含奇次幂项)"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.335,
+            0.277,
+            0.712,
+            0.32
+          ],
+          "content": "\\frac {1}{\\sin^ {2} x} - \\frac {1}{x ^ {2}} = \\sum_ {m = 0} ^ {+ \\infty} \\frac {a _ {2 m}}{(2 m) !} x ^ {2 m}, \\forall x \\in [ 0, \\pi),",
+          "image_source": "images/page_491_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.331,
+            0.195,
+            0.347
+          ],
+          "content": "其中"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.215,
+            0.358,
+            0.832,
+            0.401
+          ],
+          "content": "a _ {2 m} = \\left(\\frac {1}{\\sin^ {2} x} - \\frac {1}{x ^ {2}}\\right) ^ {(2 m)} (0) = 2 \\sum_ {n = 1} ^ {+ \\infty} \\frac {(2 m + 1) !}{(n \\pi) ^ {2 m + 2}} = 2 (2 m + 1)! \\frac {\\zeta (2 m + 2)}{\\pi^ {2 m + 2}},",
+          "image_source": "images/page_491_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.411,
+            0.216,
+            0.428
+          ],
+          "content": "因此有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.242,
+            0.438,
+            0.897,
+            0.481
+          ],
+          "content": "\\frac {1}{\\sin^ {2} x} - \\frac {1}{x ^ {2}} = \\sum_ {m = 0} ^ {+ \\infty} \\frac {\\zeta (2 m + 2)}{\\pi^ {2 m + 2}} (4 m + 2) x ^ {2 m}, \\forall x \\in [ 0, \\pi). \\tag {13.3.10}",
+          "image_source": "images/page_491_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.495,
+            0.899,
+            0.536
+          ],
+          "content": "定理 13.3.5 设 R > 0, f 在  $(x_{0} - R, x_{0} + R)$  中无穷次可导. 如果存在 M > 0 使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.306,
+            0.537,
+            0.741,
+            0.556
+          ],
+          "content": "| f ^ {(n)} (x) | \\leqslant M, \\forall x \\in (x _ {0} - R, x _ {0} + R), \\forall n \\geqslant 1.",
+          "image_source": "images/page_491_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.565,
+            0.176,
+            0.58
+          ],
+          "content": "则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.282,
+            0.578,
+            0.765,
+            0.621
+          ],
+          "content": "f (x) = \\sum_ {n = 0} ^ {+ \\infty} \\frac {f ^ {(n)} (x _ {0})}{n !} (x - x _ {0}) ^ {n}, \\forall x \\in (x _ {0} - R, x _ {0} + R).",
+          "image_source": "images/page_491_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.626,
+            0.862,
+            0.645
+          ],
+          "content": "证明 当 $x \\in (x_0 - R, x_0 + R)$ 时, 由带 Lagrange 余项的 Taylor 公式, 我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.269,
+            0.653,
+            0.78,
+            0.741
+          ],
+          "content": "\\begin{array}{l} \\left| f (x) - \\sum_ {k = 0} ^ {n} \\frac {f ^ {(k)} (x _ {0})}{k !} (x - x _ {0}) ^ {k} \\right| = \\left| \\frac {f ^ {(n + 1)} (\\xi)}{(n + 1) !} (x - x _ {0}) ^ {n + 1} \\right| \\\\ \\leqslant \\frac {M R ^ {n + 1}}{(n + 1) !} \\rightarrow 0 (n \\rightarrow + \\infty). \\\\ \\end{array}",
+          "image_source": "images/page_491_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.755,
+            0.609,
+            0.773
+          ],
+          "content": "这说明 f 在  $x_{0}$  处的 Taylor 展开的确收敛到 f 自身."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.777,
+            0.638,
+            0.819
+          ],
+          "content": "例 13.3.5 研究幂级数  $\\sum_{n=0}^{+\\infty} C_{\\alpha}^{n} x^{n}$ ，其中  $\\alpha \\in R \\setminus Z$ ,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.29,
+            0.829,
+            0.756,
+            0.861
+          ],
+          "content": "a _ {n} = \\mathrm{C} _ {\\alpha} ^ {n} = \\frac {1}{n !} \\alpha (\\alpha - 1) \\dots (\\alpha - n + 1) \\quad (\\text {广义组合数}).",
+          "image_source": "images/page_491_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.191,
+            0.867,
+            0.295,
+            0.884
+          ],
+          "content": "解 注意到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.372,
+            0.88,
+            0.677,
+            0.913
+          ],
+          "content": "\\left| \\frac {a _ {n + 1}}{a _ {n}} \\right| = \\left| \\frac {\\alpha - n}{n + 1} \\right|\\rightarrow 1 (n \\rightarrow + \\infty),",
+          "image_source": "images/page_491_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.917,
+            0.834,
+            0.936
+          ],
+          "content": "由此可知幂级数的收敛半径为 1. 在 $(-1,1)$ 中记和函数为 $f(x)$, 逐项求导可得"
+        }
+      ]
+    },
+    {
+      "page_idx": 492,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.06,
+            0.055,
+            0.088,
+            0.067
+          ],
+          "content": "188"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.054,
+            0.238,
+            0.068
+          ],
+          "content": "第十三章 幂级数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.196,
+            0.109,
+            0.762,
+            0.257
+          ],
+          "content": "\\begin{array}{l} (1 + x) f ^ {\\prime} (x) = (1 + x) \\sum_ {n = 1} ^ {+ \\infty} \\mathrm{C} _ {\\alpha} ^ {n} n x ^ {n - 1} = \\sum_ {n = 1} ^ {+ \\infty} n \\mathrm{C} _ {\\alpha} ^ {n} x ^ {n - 1} + \\sum_ {n = 1} ^ {+ \\infty} n \\mathrm{C} _ {\\alpha} ^ {n} x ^ {n} \\\\ = \\mathrm{C} _ {\\alpha} ^ {1} + \\sum_ {n = 1} ^ {+ \\infty} \\left((n + 1) \\mathrm{C} _ {\\alpha} ^ {n + 1} + n \\mathrm{C} _ {\\alpha} ^ {n}\\right) x ^ {n} \\\\ = \\alpha + \\sum_ {n = 1} ^ {+ \\infty} \\alpha C _ {\\alpha} ^ {n} x ^ {n} = \\alpha f (x), \\\\ \\end{array}",
+          "image_source": "images/page_492_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.264,
+            0.169,
+            0.28
+          ],
+          "content": "这说明"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.211,
+            0.282,
+            0.744,
+            0.3
+          ],
+          "content": "((1 + x) ^ {- \\alpha} f (x)) ^ {\\prime} = - \\alpha (1 + x) ^ {- \\alpha - 1} f (x) + (1 + x) ^ {- \\alpha} f ^ {\\prime} (x) = 0,",
+          "image_source": "images/page_492_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.307,
+            0.676,
+            0.325
+          ],
+          "content": "从而 $(1 + x)^{-\\alpha}f(x)$ 为常数.由 $f(0) = 1$ 可知 $f(x) = (1 + x)^{\\alpha}$ .即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.318,
+            0.335,
+            0.849,
+            0.378
+          ],
+          "content": "(1 + x) ^ {\\alpha} = \\sum_ {n = 0} ^ {+ \\infty} \\mathrm{C} _ {\\alpha} ^ {n} x ^ {n}, \\forall x \\in (- 1, 1). \\tag {13.3.11}",
+          "image_source": "images/page_492_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.387,
+            0.474,
+            0.405
+          ],
+          "content": "特别地, 取 $\\alpha = -1 / 2$, 并以 $-x^{2}$ 代替 $x$ 得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.266,
+            0.416,
+            0.85,
+            0.458
+          ],
+          "content": "\\frac {1}{\\sqrt {1 - x ^ {2}}} = 1 + \\sum_ {n = 1} ^ {+ \\infty} \\frac {(2 n - 1) ! !}{(2 n) ! !} x ^ {2 n}, \\forall x \\in (- 1, 1). \\tag {13.3.12}",
+          "image_source": "images/page_492_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.467,
+            0.543,
+            0.485
+          ],
+          "content": "对此幂级数逐项积分, 得 (约定  $(-1)!! = 1, 0!! = 1$ )"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.27,
+            0.495,
+            0.85,
+            0.539
+          ],
+          "content": "\\arcsin x = \\sum_ {n = 0} ^ {+ \\infty} \\frac {(2 n - 1) ! !}{(2 n) ! !} \\frac {x ^ {2 n + 1}}{2 n + 1}, \\forall x \\in (- 1, 1). \\tag {13.3.13}",
+          "image_source": "images/page_492_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.547,
+            0.85,
+            0.589
+          ],
+          "content": "在 $x = \\pm 1$ 处右式的收敛性可以通过Raabe判别法得到, 故上式在 $[-1,1]$ 中均成立, 并且在 $[-1,1]$ 中一致收敛. 代入 $x = \\sin t$, 得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.272,
+            0.599,
+            0.68,
+            0.643
+          ],
+          "content": "t = \\sum_ {n = 0} ^ {+ \\infty} \\frac {(2 n - 1) ! !}{(2 n) ! !} \\frac {\\sin^ {2 n + 1} t}{2 n + 1}, \\forall t \\in [ - \\pi / 2, \\pi / 2 ],",
+          "image_source": "images/page_492_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.65,
+            0.474,
+            0.668
+          ],
+          "content": "并且上式是一致收敛的. 再次逐项积分, 得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.242,
+            0.674,
+            0.713,
+            0.774
+          ],
+          "content": "\\begin{array}{l} \\frac {\\pi^ {2}}{8} = \\sum_ {n = 0} ^ {+ \\infty} \\frac {(2 n - 1) ! !}{(2 n) ! !} \\frac {1}{2 n + 1} \\int_ {0} ^ {\\frac {\\pi}{2}} \\sin^ {2 n + 1} t \\mathrm{d} t \\\\ = \\sum_ {n = 0} ^ {+ \\infty} \\frac {(2 n - 1) ! !}{(2 n) ! !} \\frac {1}{2 n + 1} \\frac {(2 n) ! !}{(2 n + 1) ! !} = \\sum_ {n = 0} ^ {+ \\infty} \\frac {1}{(2 n + 1) ^ {2}}. \\\\ \\end{array}",
+          "image_source": "images/page_492_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.782,
+            0.411,
+            0.825
+          ],
+          "content": "由此容易得到 $\\frac{\\pi^2}{6} = \\sum_{n=1}^{+\\infty} \\frac{1}{n^2} = \\zeta(2)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.828,
+            0.524,
+            0.864
+          ],
+          "content": "例 13.3.6 计算积分  $I=\\int_{0}^{1}\\frac{\\ln(1+x)}{x}\\mathrm{d}x.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.866,
+            0.491,
+            0.884
+          ],
+          "content": "解 根据 $\\ln (1 + x)$ 的Taylor展开可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.286,
+            0.894,
+            0.667,
+            0.937
+          ],
+          "content": "\\frac {\\ln (1 + x)}{x} = \\sum_ {n = 1} ^ {+ \\infty} \\frac {(- 1) ^ {n - 1} x ^ {n - 1}}{n}, x \\in (- 1, 1 ].",
+          "image_source": "images/page_492_equation_18.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 493,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.743,
+            0.059,
+            0.891,
+            0.072
+          ],
+          "content": "13.3 Taylor 展开式"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.911,
+            0.06,
+            0.939,
+            0.071
+          ],
+          "content": "189"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.115,
+            0.519,
+            0.133
+          ],
+          "content": "上式在  $[0,1]$  中一致收敛, 因此可逐项积分:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.297,
+            0.145,
+            0.741,
+            0.189
+          ],
+          "content": "I = \\sum_ {n = 1} ^ {+ \\infty} \\frac {(- 1) ^ {n - 1}}{n} \\int_ {0} ^ {1} x ^ {n - 1}   \\mathrm{d} x = \\sum_ {n = 1} ^ {+ \\infty} \\frac {(- 1) ^ {n - 1}}{n ^ {2}} = \\frac {\\pi^ {2}}{1 2}.",
+          "image_source": "images/page_493_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.184,
+            0.202,
+            0.556,
+            0.219
+          ],
+          "content": "我们以总结和对比几个名词结束本节内容."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.184,
+            0.226,
+            0.825,
+            0.244
+          ],
+          "content": "Taylor 级数: 是指当函数 $f(x)$ 在 $x_0$ 的某邻域内无穷光滑时下面的级数:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.153,
+            0.261,
+            0.892,
+            0.314
+          ],
+          "content": "f (x) \\sim f \\left(x _ {0}\\right) + f ^ {\\prime} \\left(x _ {0}\\right) \\left(x - x _ {0}\\right) + \\frac {f ^ {\\prime \\prime} \\left(x _ {0}\\right)}{2 !} \\left(x - x _ {0}\\right) ^ {2} + \\dots + \\frac {f ^ {(n)} \\left(x _ {0}\\right)}{n !} \\left(x - x _ {0}\\right) ^ {n} + \\dots . \\tag {13.3.14}",
+          "image_source": "images/page_493_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.32,
+            0.893,
+            0.361
+          ],
+          "content": "Taylor 展开式: 当  $f(x)$  在包含  $x_{0}$  的某邻域内无穷光滑时, 其 Taylor 级数 (13.3.14) 中的右端有大于零的收敛半径, 并且在收敛域 I 内 “～” 成立等号 “=”, 即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.156,
+            0.377,
+            0.884,
+            0.411
+          ],
+          "content": "f (x) = f (x _ {0}) + f ^ {\\prime} (x _ {0}) (x - x _ {0}) + \\frac {f ^ {\\prime \\prime} (x _ {0})}{2 !} (x - x _ {0}) ^ {2} + \\dots + \\frac {f ^ {(n)} (x _ {0})}{n !} (x - x _ {0}) ^ {n} + \\dots ,",
+          "image_source": "images/page_493_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.423,
+            0.893,
+            0.464
+          ],
+          "content": "那么我们就称  $f(x)$  可 Taylor 展开或者称  $f(x)$  在区域 I 上可展成 Taylor 级数. 一个函数可展成 Taylor 级数表明不但它的 Taylor 级数收敛, 而且收敛到它自身."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.471,
+            0.894,
+            0.536
+          ],
+          "content": "Taylor 公式: Taylor 公式是第一册讨论函数导数应用时出现的内容: 如果函数 $f(x)$ 在包含 $x_0$ 的某个闭区间 $[a, b]$ 上具有 $n$ 阶导数, 且在开区间 $(a, b)$ 上具有 $n + 1$ 阶导数, 则对闭区间 $[a, b]$ 上任意一点 $x$, 成立下式:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.227,
+            0.552,
+            0.814,
+            0.587
+          ],
+          "content": "f (x) = f (x _ {0}) + \\frac {f ^ {\\prime} (x _ {0})}{1 !} (x - x _ {0}) + \\dots + \\frac {f ^ {(n)} (x _ {0})}{n !} (x - x _ {0}) ^ {n} + R _ {n} (x),",
+          "image_source": "images/page_493_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.599,
+            0.66,
+            0.616
+          ],
+          "content": "其中  $R_{n}(x)$  是 Taylor 公式的余项, 余项具有多种表现形式."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.623,
+            0.894,
+            0.687
+          ],
+          "content": "注意, Taylor 公式可以对有限阶光滑函数成立, 而且在其满足定理条件的区域都成立 (对于初等函数, 在其定义域内即可), 而 Taylor 展开则要求函数必须无穷光滑, 而且只能在收敛域内才有意义."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.695,
+            0.697,
+            0.713
+          ],
+          "content": "例如, 在  $\\ln(1+x)$  的定义域内, 都成立下面的 Taylor 公式:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.318,
+            0.723,
+            0.724,
+            0.761
+          ],
+          "content": "\\ln (1 + x) = x - \\frac {x ^ {2}}{2} + \\frac {1}{3} \\frac {x ^ {3}}{(1 + \\theta x) ^ {3}}, \\quad 0 <   \\theta <   1,",
+          "image_source": "images/page_493_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.772,
+            0.894,
+            0.811
+          ],
+          "content": "但  $\\ln(1+x)$  的 Taylor 展开式只在  $(-1,1]$  内成立, 即  $\\ln(1+x)$  在  $(-1,1]$  内可 Taylor 展开为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.299,
+            0.807,
+            0.742,
+            0.842
+          ],
+          "content": "\\ln (1 + x) = x - \\frac {x ^ {2}}{2} + \\frac {x ^ {3}}{3} + \\dots + (- 1) ^ {n - 1} \\frac {x ^ {n}}{n} + \\dots .",
+          "image_source": "images/page_493_equation_17.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.189,
+            0.857,
+            0.297,
+            0.876
+          ],
+          "level": 2,
+          "content": "习题 13.3"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.898,
+            0.478,
+            0.941
+          ],
+          "content": "1. 求级数  $\\sum_{n=0}^{+\\infty}(-1)^{n}\\frac{x^{4n+1}}{4n+1}$  的和."
+        }
+      ]
+    },
+    {
+      "page_idx": 494,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.062,
+            0.058,
+            0.091,
+            0.07
+          ],
+          "content": "190"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.057,
+            0.24,
+            0.071
+          ],
+          "content": "第十三章 幂级数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.114,
+            0.327,
+            0.131
+          ],
+          "content": "2. 求下列级数之和:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.223,
+            0.148,
+            0.737,
+            0.193
+          ],
+          "content": "\\sum_ {n = 1} ^ {+ \\infty} \\frac {n ^ {2} + 1}{n} x ^ {n}, \\quad \\sum_ {n = 1} ^ {+ \\infty} n ^ {3} x ^ {n}, \\quad \\sum_ {n = 0} ^ {+ \\infty} \\frac {1}{3 !} (n + 1) (n + 2) (n + 3) x ^ {n}.",
+          "image_source": "images/page_494_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.207,
+            0.2,
+            0.223
+          ],
+          "content": "3. 设"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.278,
+            0.226,
+            0.671,
+            0.281
+          ],
+          "content": "f (x) = \\left\\{ \\begin{array}{l l} \\frac {1}{x} - \\frac {1}{\\tan x}, & x \\in (0, \\pi), \\quad x \\neq \\pi / 2, \\\\ 2 / \\pi , & x = \\pi / 2. \\end{array} \\right.",
+          "image_source": "images/page_494_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.291,
+            0.853,
+            0.332
+          ],
+          "content": "证明: $f(x)$  的 k 阶导数  $(k=0,1,2,\\cdots)$  在  $(0,\\pi)$  内均恒正，从而在  $(0,\\pi)$  的任何内闭区间上满足 Bernstein 定理 13.3.4 的条件."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.334,
+            0.536,
+            0.363
+          ],
+          "content": "4. 设 $x \\in \\left(-\\frac{\\pi}{2}, 0\\right) \\cup \\left(0, \\frac{\\pi}{2}\\right)$, 推导下列等式:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.292,
+            0.374,
+            0.664,
+            0.46
+          ],
+          "content": "\\begin{array}{l} \\frac {1}{x} - \\frac {1}{\\tan x} = 2 \\sum_ {k = 1} ^ {+ \\infty} \\frac {\\zeta (2 k)}{\\pi^ {2 k}} x ^ {2 k - 1}, \\\\ \\frac {1}{\\sin x} - \\frac {1}{x} = 2 \\sum_ {k = 1} ^ {+ \\infty} \\frac {\\zeta (2 k)}{\\pi^ {2 k}} \\left(1 - 2 ^ {1 - 2 k}\\right) x ^ {2 k - 1}. \\\\ \\end{array}",
+          "image_source": "images/page_494_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.47,
+            0.259,
+            0.487
+          ],
+          "content": "5. 证明等式"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.217,
+            0.498,
+            0.738,
+            0.542
+          ],
+          "content": "\\ln (x + \\sqrt {1 + x ^ {2}}) = \\sum_ {n = 0} ^ {+ \\infty} (- 1) ^ {n} \\frac {(2 n - 1) ! !}{(2 n) ! !} \\frac {x ^ {2 n + 1}}{2 n + 1}, \\quad x \\in [ - 1, 1 ].",
+          "image_source": "images/page_494_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.55,
+            0.483,
+            0.583
+          ],
+          "content": "6. 求级数  $\\frac{1}{2}-\\frac{1}{5}+\\frac{1}{8}-\\frac{1}{11}+\\cdots$  的和."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.583,
+            0.224,
+            0.598
+          ],
+          "content": "7. 证明:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.267,
+            0.598,
+            0.687,
+            0.635
+          ],
+          "content": "1 - \\frac {1}{5} + \\frac {1}{9} - \\frac {1}{1 3} + \\dots = \\frac {1}{4 \\sqrt {2}} \\Big (\\pi + 2 \\ln (\\sqrt {2} + 1) \\Big).",
+          "image_source": "images/page_494_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.644,
+            0.224,
+            0.66
+          ],
+          "content": "8. 证明:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.272,
+            0.66,
+            0.682,
+            0.694
+          ],
+          "content": "1 + \\frac {1}{2} - \\frac {1}{3} + \\frac {1}{4} - \\frac {1}{5} + \\frac {1}{6} - \\frac {1}{7} + \\dots = \\frac {\\pi}{4} + \\frac {1}{2} \\ln 2.",
+          "image_source": "images/page_494_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.7,
+            0.224,
+            0.716
+          ],
+          "content": "9. 证明:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.315,
+            0.72,
+            0.637,
+            0.764
+          ],
+          "content": "1 + \\sum_ {n = 1} ^ {+ \\infty} \\frac {(2 n + 1) ! !}{(2 n) ! !} \\frac {1}{(2 n + 1) ^ {2}} = \\frac {\\pi}{2} \\ln 2.",
+          "image_source": "images/page_494_equation_17.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.103,
+            0.803,
+            0.472,
+            0.826
+          ],
+          "level": 2,
+          "content": "13.4 初等函数的幂级数展开"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.874,
+            0.853,
+            0.941
+          ],
+          "content": "函数的 Taylor 展开在分析学中有极其重要的意义和应用, 上面我们已经给出了一些初等函数的 Taylor 展开, 本节我们再给出几个常见的初等函数的 Taylor (Maclaurin) 展开. 由前面的定理可知, 一个定义在某区间 $I$ 上的无穷光滑函数 $f(x)$ 能否展开成幂"
+        }
+      ]
+    },
+    {
+      "page_idx": 495,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.688,
+            0.056,
+            0.896,
+            0.07
+          ],
+          "content": "13.4 初等函数的幂级数展开"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.916,
+            0.058,
+            0.942,
+            0.069
+          ],
+          "content": "191"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.111,
+            0.897,
+            0.2
+          ],
+          "continues_prev": true,
+          "content": "级数, 通常的做法是首先写出它的 Taylor 级数或 Maclaurin 级数 (下面我们主要讨论后者), 然后研究该幂级数的收敛半径 $R$. 如果 $R > 0$, 那么我们再进一步验证该幂级数在收敛区间 $(-R, R)$ 内是否收敛到该函数. 而后者又可依据定理 13.3.2 或 Bernstein 定理 13.3.4 等来判别."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.205,
+            0.689,
+            0.223
+          ],
+          "content": "我们先回顾一下曾经得到的几个初等函数的 Taylor 展开."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.229,
+            0.897,
+            0.269
+          ],
+          "content": "指数函数的幂级数展开:在(5.2.18)式和例13.3.3中,我们均讨论了 $\\mathrm{e}^x$ 的Maclaurin级数展式:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.427,
+            0.273,
+            0.619,
+            0.315
+          ],
+          "content": "\\mathrm{e} ^ {x} = \\sum_ {n = 0} ^ {+ \\infty} \\frac {x ^ {n}}{n !}, \\quad x \\in \\mathbb {R}.",
+          "image_source": "images/page_495_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.322,
+            0.897,
+            0.363
+          ],
+          "content": "幂函数的幂级数展开:然后我们在例13.3.5中得到了 $(1 + x)^{\\alpha},\\alpha \\in \\mathbb{R}\\backslash \\mathbb{Z}$ 的Maclaurin展式(13.3.11):"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.36,
+            0.367,
+            0.686,
+            0.41
+          ],
+          "content": "(1 + x) ^ {\\alpha} = \\sum_ {n = 0} ^ {+ \\infty} C _ {\\alpha} ^ {n} x ^ {n}, \\quad \\forall x \\in (- 1, 1),",
+          "image_source": "images/page_495_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.416,
+            0.526,
+            0.447
+          ],
+          "content": "其中 $a_{n} = \\mathrm{C}_{\\alpha}^{n} = \\frac{1}{n!}\\alpha (\\alpha -1)\\dots (\\alpha -n + 1).$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.447,
+            0.897,
+            0.488
+          ],
+          "content": "反三角函数的幂级数展开:我们还得到了 $\\arcsin x$ 在 $x \\in (-1, 1)$ 上的 Maclaurin 展式 (13.3.13):"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.314,
+            0.492,
+            0.731,
+            0.535
+          ],
+          "content": "\\arcsin x = \\sum_ {n = 0} ^ {+ \\infty} \\frac {(2 n - 1) ! !}{(2 n) ! !} \\frac {x ^ {2 n + 1}}{2 n + 1}, \\quad \\forall x \\in (- 1, 1).",
+          "image_source": "images/page_495_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.541,
+            0.658,
+            0.56
+          ],
+          "content": "以及 $\\arctan x$ 在 $x\\in (-1,1)$ 上的Maclaurin展式(13.2.6):"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.402,
+            0.57,
+            0.644,
+            0.615
+          ],
+          "content": "\\arctan x = \\sum_ {n = 0} ^ {+ \\infty} \\frac {(- 1) ^ {n} x ^ {2 n + 1}}{2 n + 1}.",
+          "image_source": "images/page_495_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.623,
+            0.639,
+            0.642
+          ],
+          "content": "下面我们给出另外几个初等函数的 Maclaurin 展式."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.19,
+            0.647,
+            0.402,
+            0.665
+          ],
+          "level": 2,
+          "content": "三角函数的幂级数展开:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.671,
+            0.896,
+            0.713
+          ],
+          "content": "例13.4.1 在第五章讨论三角函数时, 我们通过关系式 (5.5.5) 和 (5.5.6) 引入了正弦函数和余弦函数. 下面我们证明: 对于 $x \\in (-\\infty, +\\infty)$ 成立"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.417,
+            0.725,
+            0.894,
+            0.765
+          ],
+          "content": "\\sin x = \\sum_ {n = 0} ^ {+ \\infty} \\frac {(- 1) ^ {n} x ^ {2 n + 1}}{(2 n + 1) !}, \\tag {13.4.1}",
+          "image_source": "images/page_495_equation_16.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.427,
+            0.779,
+            0.894,
+            0.82
+          ],
+          "content": "\\cos x = \\sum_ {n = 0} ^ {+ \\infty} \\frac {(- 1) ^ {n} x ^ {2 n}}{(2 n) !}. \\tag {13.4.2}",
+          "image_source": "images/page_495_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.829,
+            0.897,
+            0.873
+          ],
+          "content": "证明 对任意的正整数 $n$, 有 $\\sin^{(n)}(0) = \\sin \\frac{n\\pi}{2}$. 对任意的 $x \\in \\mathbb{R}$, 其 Taylor 公式中的 Lagrange 余项为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.266,
+            0.882,
+            0.781,
+            0.937
+          ],
+          "content": "\\left| \\frac {\\sin \\left(\\theta x + (2 n + 1) \\frac {\\pi}{2}\\right)}{(2 n + 1) !} x ^ {2 n + 1} \\right| \\leqslant \\frac {| x | ^ {2 n + 1}}{(2 n + 1) !} \\rightarrow 0 \\quad (n \\rightarrow + \\infty),",
+          "image_source": "images/page_495_equation_19.jpg"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "created_at": "2025-11-20T03:44:46+08:00",
+      "modified_at": "2025-11-20T03:47:17+08:00",
+      "page_count": 856,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 480,
+          "width_pt": 513.0,
+          "height_pt": 739.0
+        },
+        {
+          "page_idx": 481,
+          "width_pt": 513.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 482,
+          "width_pt": 513.0,
+          "height_pt": 739.0
+        },
+        {
+          "page_idx": 483,
+          "width_pt": 513.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 484,
+          "width_pt": 513.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 485,
+          "width_pt": 513.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 486,
+          "width_pt": 513.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 487,
+          "width_pt": 513.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 488,
+          "width_pt": 513.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 489,
+          "width_pt": 514.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 490,
+          "width_pt": 513.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 491,
+          "width_pt": 514.0,
+          "height_pt": 739.0
+        },
+        {
+          "page_idx": 492,
+          "width_pt": 513.0,
+          "height_pt": 739.0
+        },
+        {
+          "page_idx": 493,
+          "width_pt": 513.0,
+          "height_pt": 739.0
+        },
+        {
+          "page_idx": 494,
+          "width_pt": 513.0,
+          "height_pt": 739.0
+        },
+        {
+          "page_idx": 495,
+          "width_pt": 513.0,
+          "height_pt": 741.0
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

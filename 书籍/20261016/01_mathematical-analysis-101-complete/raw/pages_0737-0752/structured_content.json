@@ -1,0 +1,2969 @@
+{
+  "pages": [
+    {
+      "page_idx": 736,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.064,
+            0.058,
+            0.084,
+            0.069
+          ],
+          "content": "96"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.103,
+            0.056,
+            0.281,
+            0.07
+          ],
+          "content": "第十八章 微分形式简介"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.113,
+            0.551,
+            0.13
+          ],
+          "content": "10. 设 $\\rho: \\mathbb{R}^{n} \\to \\mathbb{R}^{n}$ 连续, 且存在常数 $C$, 使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.351,
+            0.15,
+            0.598,
+            0.169
+          ],
+          "content": "\\| \\boldsymbol {\\rho} (\\boldsymbol {x}) - \\boldsymbol {x} \\| \\leqslant C, \\forall \\boldsymbol {x} \\in \\mathbb {R} ^ {n},",
+          "image_source": "images/page_736_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.187,
+            0.245,
+            0.205
+          ],
+          "content": "证明:  $\\rho$  为满射."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.211,
+            0.456,
+            0.229
+          ],
+          "content": "11. 设  $\\varphi: R^{n} \\rightarrow R^{n}$  为  $C^{1}$  映射, 且"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.141,
+            0.235,
+            0.399,
+            0.276
+          ],
+          "sub_type": "text",
+          "content": "(1)  $\\det J\\varphi(\\boldsymbol{x}) \\neq 0, \\forall \\boldsymbol{x} \\in \\mathbb{R}^{n};$\n(2) 当  $x \\to \\infty$  时  $\\varphi(x) \\to \\infty,$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.281,
+            0.534,
+            0.3
+          ],
+          "content": "证明: $\\varphi$ 为可逆映射, 且其逆映射为 $C^1$ 映射."
+        }
+      ]
+    },
+    {
+      "page_idx": 737,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.391,
+            0.094,
+            0.538,
+            0.124
+          ],
+          "level": 2,
+          "content": "第十九章"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.549,
+            0.162,
+            0.74,
+            0.2
+          ],
+          "level": 2,
+          "content": "场论初步"
+        }
+      ]
+    },
+    {
+      "page_idx": 738,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.069,
+            0.057,
+            0.088,
+            0.068
+          ],
+          "content": "98"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.055,
+            0.253,
+            0.069
+          ],
+          "content": "第十九章 场论初步"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.111,
+            0.853,
+            0.201
+          ],
+          "content": "我们知道, 物理量大都可以表示为标量 (数量) 或矢量 (向量). 空间中分布的某种物理量在数学上可以表示为标量场 (函数) 或矢量场 (向量场). 例如, 物质的密度函数是标量场, 电场、磁场、重力场都是向量场. 在这一章里, 我们用数学方法讨论场的一些基本性质."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.108,
+            0.254,
+            0.389,
+            0.276
+          ],
+          "level": 2,
+          "content": "19.1 梯度场和保守场"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.323,
+            0.851,
+            0.413
+          ],
+          "content": "物理中的向量场在数学中就是向量值函数. 为了直观地表示向量场的分布情况, 我们引进向量线的概念. 如果一条曲线 $\\sigma$ 在每一点处的切线方向正好与向量场 $X$ 在该点的向量的方向重合, 则称 $\\sigma$ 为向量场 $X$ 的向量线. 例如, 静电场的电力线和磁场的磁力线都是向量线."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.418,
+            0.848,
+            0.459
+          ],
+          "content": "设 $U$ 为 $\\mathbb{R}^n$ 中的开集, $f$ 为定义在 $U$ 上的函数. 如果 $f$ 在 $U$ 上处处可微, 则可以得到 $U$ 上的向量场"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.312,
+            0.465,
+            0.642,
+            0.485
+          ],
+          "content": "\\nabla f: U \\to \\mathbb {R} ^ {n}, \\boldsymbol {p} \\mapsto \\nabla f (\\boldsymbol {p}), \\forall \\boldsymbol {p} \\in U.",
+          "image_source": "images/page_738_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.494,
+            0.42,
+            0.513
+          ],
+          "content": "$\\nabla f$  称为 f 的梯度场, 也记为 gradf."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.518,
+            0.54,
+            0.536
+          ],
+          "content": "设 $c$ 为一个任意给定的常数, 考虑 $\\mathbb{R}^n$ 的子集"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.34,
+            0.55,
+            0.615,
+            0.572
+          ],
+          "content": "\\{f = c \\} = \\{\\boldsymbol {x} \\in \\mathbb {R} ^ {n} \\mid f (\\boldsymbol {x}) = c \\},",
+          "image_source": "images/page_738_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.583,
+            0.85,
+            0.649
+          ],
+          "content": "称为 $f$ 的一个等值面 $(n = 2$ 时常称为等值线). 若 $f$ 为 $C^1$ 函数且 $\\nabla f$ 在等值面上的某一点 $\\pmb{p}$ 处不等于零, 则由隐函数定理可知等值面在这一点附近可以表示为参数曲面, 且 $\\nabla f(\\pmb{p})$ 是该曲面在 $\\pmb{p}$ 处的一个法向量. 一般来说梯度场的向量线垂直地穿越等值面."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.653,
+            0.848,
+            0.694
+          ],
+          "content": "设 $X$ 为向量场, 如果 $X$ 等于某个函数的梯度场, 则称 $X$ 为有势场, 该函数称为 $X$ 的一个势函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.7,
+            0.848,
+            0.742
+          ],
+          "content": "命题 19.1.1 设 X 为连续的有势场,  $\\sigma$  为分段  $C^{1}$  的连续曲线, 则 X 沿  $\\sigma$  的第二型曲线积分只与  $\\sigma$  的起始位置和终点位置有关."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.748,
+            0.829,
+            0.768
+          ],
+          "content": "证明 取 $\\sigma$ 的参数表示 $\\sigma = \\sigma(t)$, 其中 $t \\in [\\alpha, \\beta]$. 设 $f$ 为 $\\pmb{X}$ 的一个势函数, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.261,
+            0.778,
+            0.692,
+            0.86
+          ],
+          "content": "\\begin{array}{l} \\int_ {\\sigma} \\boldsymbol {X} \\cdot \\mathrm{d} \\vec {s} = \\int_ {\\alpha} ^ {\\beta} \\nabla f (\\sigma (t)) \\cdot \\sigma^ {\\prime} (t) \\mathrm{d} t \\\\ = \\int_ {\\alpha} ^ {\\beta} (f \\circ \\sigma) ^ {\\prime} (t) \\mathrm{d} t = f (\\sigma (\\beta)) - f (\\sigma (a)), \\\\ \\end{array}",
+          "image_source": "images/page_738_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.869,
+            0.54,
+            0.887
+          ],
+          "content": "其中我们用到了链式法则和 Newton-Leibniz 公式."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.894,
+            0.848,
+            0.936
+          ],
+          "content": "一般地, 若向量场沿曲线的第二型曲线积分只与曲线的两个端点有关, 而与曲线的具体形状无关, 则称这种向量场为保守场."
+        }
+      ]
+    },
+    {
+      "page_idx": 739,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.745,
+            0.055,
+            0.904,
+            0.068
+          ],
+          "content": "19.1 梯度场和保守场"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.924,
+            0.056,
+            0.943,
+            0.067
+          ],
+          "content": "99"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.155,
+            0.112,
+            0.895,
+            0.153
+          ],
+          "content": "命题 19.1.2 设 X 是定义在区域 D 上的连续向量场, 则 X 为保守场当且仅当它是有势场."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.161,
+            0.898,
+            0.226
+          ],
+          "content": "证明 命题19.1.1已经证明了充分性. 下面我们来看必要性, 以 $D \\subseteq \\mathbb{R}^2$ 为例, 固定一点 $\\pmb{p}_0 \\in D$. 由例14.5.5可知, 当 $(x, y) \\in D$ 时, 在 $D$ 中存在连接 $\\pmb{p}_0$ 和 $(x, y)$ 的分段 $C^1$ 的道路 $\\sigma$. 定义"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.44,
+            0.227,
+            0.611,
+            0.261
+          ],
+          "content": "\\phi (x, y) = \\int_ {\\sigma} \\boldsymbol {X} \\cdot \\mathrm{d} \\vec {s}.",
+          "image_source": "images/page_739_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.27,
+            0.899,
+            0.337
+          ],
+          "content": "由 $X$ 为保守场可知 $\\phi$ 的定义与 $\\sigma$ 的选取无关. 我们要说明 $X = \\nabla \\phi$. 记 $X = (P, Q)$. 设 $(x_0, y_0) \\in D$, $\\sigma$ 是连接 $p_0$ 和 $(x_0, y_0)$ 的道路. 当 $(x, y_0)$ 在 $(x_0, y_0)$ 附近时, 以直线段 $\\tau$ 连接 $(x_0, y_0)$ 和 $(x, y_0)$, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.166,
+            0.353,
+            0.888,
+            0.392
+          ],
+          "content": "\\phi (x, y _ {0}) = \\int_ {\\sigma \\cup \\tau} \\boldsymbol {X} \\cdot \\mathrm{d} \\vec {s} = \\phi (x _ {0}, y _ {0}) + \\int_ {(x _ {0}, y _ {0})} ^ {(x, y _ {0})} P \\mathrm{d} x + Q \\mathrm{d} y = \\phi (x _ {0}, y _ {0}) + \\int_ {x _ {0}} ^ {x} P (t, y _ {0}) \\mathrm{d} t.",
+          "image_source": "images/page_739_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.407,
+            0.9,
+            0.442
+          ],
+          "content": "由微积分基本定理可得 $\\frac{\\partial\\phi}{\\partial x} (x_0,y_0) = P(x_0,y_0)$ .同理可证 $\\frac{\\partial\\phi}{\\partial y} = Q,$ 因此 $\\nabla \\phi = \\pmb {X}$ □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.446,
+            0.9,
+            0.488
+          ],
+          "content": "设 $X = (P, Q)$ 是平面区域 $D$ 上的 $C^1$ 向量场. 若 $X$ 为保守场, 则存在势函数 $\\phi$, 此时"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.431,
+            0.496,
+            0.623,
+            0.515
+          ],
+          "content": "Q _ {x} = \\phi_ {y x} = \\phi_ {x y} = P _ {y}.",
+          "image_source": "images/page_739_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.526,
+            0.9,
+            0.583
+          ],
+          "content": "反之, 若 $Q_{x} = P_{y}$, 则 $\\pmb{X}$ 未必是保守场. 事实上, 在 $\\mathbb{R}^2 \\setminus \\{\\mathbf{0}\\}$ 上定义的向量场 $\\pmb{X}(x, y) = \\left(\\frac{-y}{x^2 + y^2}, \\frac{x}{x^2 + y^2}\\right)$ 就是如此. 为了得到正面的结果, 我们引进单连通区域的概念."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.585,
+            0.901,
+            0.674
+          ],
+          "content": "设 $D$ 为 $\\mathbb{R}^n$ 上的区域, 如果 $D$ 中任何连续闭曲线都可以在 $D$ 中连续地缩成一点, 则称 $D$ 为单连通区域. 换句话说, 如果从单位圆周 $S^1$ 到 $D$ 的连续映射均可以连续地延拓到单位圆盘上, 则称 $D$ 为单连通区域. 等价地说, 如果从矩形的边界到 $D$ 的连续映射均可以连续地延拓到整个矩形上, 则称 $D$ 为单连通区域."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.679,
+            0.9,
+            0.722
+          ],
+          "content": "定理 19.1.3 设 D 为  $R^{2}$  上的单连通区域,  $\\boldsymbol{X} = (P, Q)$  为 D 上的  $C^{1}$  向量场. 如果  $Q_{x} = P_{y}$ ，则 X 为保守场."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.729,
+            0.901,
+            0.772
+          ],
+          "content": "证明 我们模仿上述命题的证明. 固定一点 $p_0 \\in D$. 由例14.5.5可知, 当 $(x, y) \\in D$ 时, 在 $D$ 中存在连接 $p_0$ 和 $(x, y)$ 的折线段 $\\sigma$. 定义"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.443,
+            0.782,
+            0.614,
+            0.818
+          ],
+          "content": "\\phi (x, y) = \\int_ {\\sigma} \\boldsymbol {X} \\cdot \\mathrm{d} \\vec {s}.",
+          "image_source": "images/page_739_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.832,
+            0.9,
+            0.851
+          ],
+          "content": "我们要说明 $\\phi (x,y)$ 与道路 $\\sigma$ 的选取无关，这样的话由上述命题的证明就可知 $\\nabla \\phi = X$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.856,
+            0.901,
+            0.898
+          ],
+          "content": "设 $\\tau$ 是 $D$ 中连接 $\\pmb{p}_0$ 和 $(x,y)$ 的另一折线段.由题设可知，存在连续映射 $\\psi :[0,1]^2\\to D,$ 使得 $\\psi (0,\\cdot) = \\sigma ,\\psi (1,\\cdot) = \\tau$ 且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.4,
+            0.918,
+            0.657,
+            0.937
+          ],
+          "content": "\\psi (\\cdot , 0) \\equiv p _ {0}, \\quad \\psi (\\cdot , 1) \\equiv (x, y).",
+          "image_source": "images/page_739_equation_17.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 740,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.058,
+            0.055,
+            0.085,
+            0.067
+          ],
+          "content": "100"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.105,
+            0.054,
+            0.251,
+            0.068
+          ],
+          "content": "第十九章 场论初步"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.11,
+            0.695,
+            0.129
+          ],
+          "content": "我们要将 $\\psi$ 改造成分片光滑的连续映射，从而便于应用Green公式."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.133,
+            0.623,
+            0.153
+          ],
+          "content": "由 $\\psi ([0,1]^2)$ 为 $D$ 中的有界闭集可知，存在 $\\delta >0$ ，使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.323,
+            0.17,
+            0.843,
+            0.188
+          ],
+          "content": "\\left\\{\\boldsymbol {u} \\in \\mathbb {R} ^ {2} \\mid d (\\boldsymbol {u}, \\psi ([ 0, 1 ] ^ {2})) \\leqslant \\delta \\right\\} \\subset D. \\tag {19.1.1}",
+          "image_source": "images/page_740_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.204,
+            0.846,
+            0.244
+          ],
+          "content": "由 $\\psi$ 的一致连续性还可以知道, 当 $m$ 为充分大的正整数时, 每一个 $\\psi(I_{ij})$ 的直径均小于 $\\delta$, 其中"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.191,
+            0.256,
+            0.759,
+            0.288
+          ],
+          "content": "I _ {i j} = [ s _ {i}, s _ {i + 1} ] \\times [ t _ {j}, t _ {j + 1} ], s _ {i} = \\frac {i}{m}, t _ {j} = \\frac {j}{m}, i, j = 0, 1, \\dots , m - 1.",
+          "image_source": "images/page_740_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.297,
+            0.846,
+            0.339
+          ],
+          "content": "不妨设 $\\sigma$ 和 $\\tau$ 在每一个小区间 $[t_j, t_{j+1}]$ 上均为直线段. 记 $\\pmb{v}_{i,j} = \\psi(s_i, t_j)$, 当 $(s, t) \\in I_{ij}$ ($0 \\leqslant i, j \\leqslant m-1$) 时, 令"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.196,
+            0.355,
+            0.753,
+            0.406
+          ],
+          "content": "\\begin{array}{l} \\varphi (s, t) = m ^ {2} \\left(s _ {i + 1} - s\\right) \\left(t _ {j + 1} - t\\right) \\boldsymbol {v} _ {i, j} + m ^ {2} \\left(s _ {i + 1} - s\\right) \\left(t - t _ {j}\\right) \\boldsymbol {v} _ {i, j + 1} + \\\\ m ^ {2} (s - s _ {i}) \\left(t _ {j + 1} - t\\right) \\boldsymbol {v} _ {i + 1, j} + m ^ {2} (s - s _ {i}) \\left(t - t _ {j}\\right) \\boldsymbol {v} _ {i + 1, j + 1}, \\\\ \\end{array}",
+          "image_source": "images/page_740_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.421,
+            0.846,
+            0.464
+          ],
+          "content": "这样可以得到一个连续映射 $\\varphi :[0,1]^2\\to \\mathbb{R}^2$ .利用(19.1.1)式容易验证 $\\varphi ([0,1]^2)\\subset D.$ 注意到 $\\varphi (\\cdot ,0)\\equiv p_0,\\varphi (\\cdot ,1) = (x,y)$ 且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.29,
+            0.481,
+            0.655,
+            0.5
+          ],
+          "content": "\\varphi (s _ {i}, t _ {j}) = \\boldsymbol {v} _ {i, j} = \\psi (s _ {i}, t _ {j}), \\forall 0 \\leqslant i, j \\leqslant m.",
+          "image_source": "images/page_740_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.515,
+            0.375,
+            0.534
+          ],
+          "content": "特别地, $\\varphi(0,\\cdot)=\\sigma,\\varphi(1,\\cdot)=\\tau$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.539,
+            0.846,
+            0.58
+          ],
+          "content": "记 $\\omega = P\\mathrm{d}x + Q\\mathrm{d}y$ ，由题设可知 $\\mathrm{d}\\omega = 0$ .在每一个小矩形 $I_{ij}$ 上 $\\varphi$ 均为光滑映射，且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.377,
+            0.586,
+            0.571,
+            0.606
+          ],
+          "content": "\\mathrm{d} (\\varphi^ {*} \\omega) = \\varphi^ {*} (\\mathrm{d} \\omega) = 0.",
+          "image_source": "images/page_740_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.616,
+            0.268,
+            0.633
+          ],
+          "content": "由Green公式可知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.324,
+            0.633,
+            0.623,
+            0.669
+          ],
+          "content": "\\int_ {\\partial I _ {i j}} \\varphi^ {*} \\omega = 0, \\forall 0 \\leqslant i, j \\leqslant m - 1,",
+          "image_source": "images/page_740_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.676,
+            0.845,
+            0.717
+          ],
+          "content": "其中 $\\partial I_{ij}$ 均取逆时针方向. 在两个相邻小矩形的公共边上, 两个第二型积分相互抵消了, 于是有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.307,
+            0.717,
+            0.64,
+            0.758
+          ],
+          "content": "\\int_ {\\partial [ 0, 1 ] ^ {2}} \\varphi^ {*} \\omega = \\sum_ {0 \\leqslant i, j \\leqslant m - 1} \\int_ {\\partial I _ {i j}} \\varphi^ {*} \\omega = 0.",
+          "image_source": "images/page_740_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.766,
+            0.807,
+            0.786
+          ],
+          "content": "由 $\\varphi^{*}\\omega$ 在 $[0,1]\\times \\{0\\}$ 和 $[0,1]\\times \\{1\\}$ 上为零以及 $\\varphi (0,\\cdot) = \\sigma ,\\varphi (1,\\cdot) = \\tau$ 即可得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.341,
+            0.793,
+            0.606,
+            0.832
+          ],
+          "content": "\\int_ {\\tau} \\omega - \\int_ {\\sigma} \\omega = \\int_ {\\partial [ 0, 1 ] ^ {2}} \\varphi^ {*} \\omega = 0,",
+          "image_source": "images/page_740_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.843,
+            0.289,
+            0.861
+          ],
+          "content": "这就得到了欲证结论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.869,
+            0.846,
+            0.936
+          ],
+          "content": "一个自然的问题就是: 已知 $Q_{x} = P_{y}$, 如何求出势函数 $\\phi$? 根据上述定理的证明, 我们可以使用积分法, 即沿适当的路径对 $\\pmb{X}$ 进行积分从而求出一个势函数. 我们也可以通过解方程组 $\\phi_{x} = P, \\phi_{y} = Q$ 去求出 $\\phi$."
+        }
+      ]
+    },
+    {
+      "page_idx": 741,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.733,
+            0.056,
+            0.893,
+            0.069
+          ],
+          "content": "19.1 梯度场和保守场"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.913,
+            0.057,
+            0.939,
+            0.068
+          ],
+          "content": "101"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.109,
+            0.884,
+            0.129
+          ],
+          "content": "例 19.1.1 验证  $\\boldsymbol{X}=(3x^{2}-6xy,3y^{2}-3x^{2})$  是  $R^{2}$  上的有势场，并求其势函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.133,
+            0.894,
+            0.175
+          ],
+          "content": "解 任给 $(x,y)\\in \\mathbb{R}^2$ ，考虑 $X$ 沿折线 $(0,0) - - -(x,0) - - -(x,y)$ 的积分.注意在第一段上 $y = 0$ ，在第二段上 $x$ 不变，因此"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.22,
+            0.187,
+            0.825,
+            0.23
+          ],
+          "content": "\\phi (x, y) = \\int_ {(0, 0)} ^ {(x, 0)} (3 x ^ {2} - 0) \\mathrm{d} x + \\int_ {(x, 0)} ^ {(x, y)} (3 y ^ {2} - 3 x ^ {2}) \\mathrm{d} y = x ^ {3} + y ^ {3} - 3 x ^ {2} y.",
+          "image_source": "images/page_741_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.242,
+            0.642,
+            0.26
+          ],
+          "content": "容易验证这是 $X$ 的一个势函数. 一般的势函数可以写成"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.393,
+            0.276,
+            0.651,
+            0.297
+          ],
+          "content": "u (x, y) = x ^ {3} + y ^ {3} - 3 x ^ {2} y + C,",
+          "image_source": "images/page_741_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.313,
+            0.328,
+            0.331
+          ],
+          "content": "其中 C 是任意常数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.336,
+            0.846,
+            0.355
+          ],
+          "content": "我们还可以使用凑全微分法去寻找势函数. 注意到 $\\nabla \\phi = (P, Q)$ 可以改写为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.44,
+            0.372,
+            0.604,
+            0.391
+          ],
+          "content": "\\mathrm{d} \\phi = P \\mathrm{d} x + Q \\mathrm{d} y.",
+          "image_source": "images/page_741_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.407,
+            0.75,
+            0.425
+          ],
+          "content": "即若能将上式右边的微分形式凑成全微分, 也就可以得到一个势函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.431,
+            0.692,
+            0.449
+          ],
+          "content": "一般地, 设 $D$ 为 $\\mathbb{R}^n$ 上的区域, $\\pmb{X}$ 是 $D$ 上的向量场, 记为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.385,
+            0.462,
+            0.66,
+            0.505
+          ],
+          "content": "\\boldsymbol {X} = (f _ {1}, f _ {2}, \\dots , f _ {n}) = \\sum_ {i = 1} ^ {n} f _ {i} \\boldsymbol {e} _ {i},",
+          "image_source": "images/page_741_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.518,
+            0.502,
+            0.538
+          ],
+          "content": "其中 $\\{e_i\\}_{i=1}^n$ 为 $\\mathbb{R}^n$ 的标准正交基. 定义"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.453,
+            0.55,
+            0.593,
+            0.594
+          ],
+          "content": "X ^ {\\flat} = \\sum_ {i = 1} ^ {n} f _ {i} \\mathrm{d} x _ {i},",
+          "image_source": "images/page_741_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.608,
+            0.895,
+            0.649
+          ],
+          "content": "称为 $X$ 的对偶1-形式. 例如, 若 $X = \\nabla \\phi$, 则 $X^{\\flat} = \\mathrm{d}\\phi$. 如果 $X = \\nabla \\phi$ 为 $C^1$ 的保守场, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.452,
+            0.655,
+            0.595,
+            0.675
+          ],
+          "content": "\\mathrm{d} \\boldsymbol {X} ^ {\\flat} = \\mathrm{d} ^ {2} \\phi = 0,",
+          "image_source": "images/page_741_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.686,
+            0.897,
+            0.75
+          ],
+          "content": "即 $X^{\\flat}$ 是闭形式. 若 $D$ 为单连通区域, 则用上述定理的证明方法可以证明 $H_{dR}^{1}(D) = \\{0\\}$, 即闭的 1-形式一定是恰当形式. 这说明在单连通区域上的向量场 $X$ 为保守场当且仅当 $X^{\\flat}$ 为闭形式."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.192,
+            0.778,
+            0.298,
+            0.798
+          ],
+          "level": 2,
+          "content": "习题 19.1"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.823,
+            0.549,
+            0.841
+          ],
+          "content": "1. 在  $R^{n}$  上记  $r = \\|x\\|$ ，计算  $\\nabla r$  和  $\\nabla r^{2}$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.847,
+            0.551,
+            0.865
+          ],
+          "content": "2. 设 f, g 为可微函数,  $\\lambda, \\mu$  为常数, 证明:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.305,
+            0.882,
+            0.741,
+            0.902
+          ],
+          "content": "\\nabla (\\lambda f + \\mu g) = \\lambda \\nabla f + \\mu \\nabla g, \\nabla (f g) = f \\nabla g + g \\nabla f.",
+          "image_source": "images/page_741_equation_21.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.917,
+            0.778,
+            0.937
+          ],
+          "content": "3. 设 $f$ 为可微函数, $\\phi$ 为一元可微函数, 证明: $\\nabla (\\phi (f)) = \\phi'(f)\\nabla f$."
+        }
+      ]
+    },
+    {
+      "page_idx": 742,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.062,
+            0.054,
+            0.091,
+            0.066
+          ],
+          "content": "102"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.053,
+            0.257,
+            0.068
+          ],
+          "content": "第十九章 场论初步"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.109,
+            0.703,
+            0.143
+          ],
+          "content": "4. 设 $f, g$ 为可微函数, $g \\neq 0$, 证明: $\\nabla \\left(\\frac{f}{g}\\right) = g^{-2}(g\\nabla f - f\\nabla g)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.146,
+            0.853,
+            0.186
+          ],
+          "content": "5. 验证 $X = (2x\\cos y - y^2\\sin x, 2y\\cos x - x^2\\sin y)$ 为 $\\mathbb{R}^2$ 上的有势场, 并求其势函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.193,
+            0.743,
+            0.213
+          ],
+          "content": "6. 求函数 $\\phi$, 使得 $\\mathrm{d}\\phi = (4x^3y^3 - 3y^2 + 5)\\mathrm{d}x + (3x^4y^2 - 6xy - 4)\\mathrm{d}y$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.217,
+            0.853,
+            0.257
+          ],
+          "content": "7. 设 $X = (yz(2x + y + z), xz(x + 2y + z), xy(x + y + 2z))$，验证 $X$ 是 $\\mathbb{R}^3$ 上的有势场，并求其势函数。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.264,
+            0.516,
+            0.281
+          ],
+          "content": "8. 验证下列积分与路径无关, 并计算其值:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.282,
+            0.851,
+            0.332
+          ],
+          "content": "(1) $\\int_{\\sigma}(x^2 - 2yz)\\mathrm{d}x + (y^2 - 2zx)\\mathrm{d}y + (z^2 - 2xy)\\mathrm{d}z,$ 其中 $\\sigma$ 是从 $(0,0,0)$ 到 $(a,b,c)$ 的曲线；"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.334,
+            0.851,
+            0.39
+          ],
+          "content": "(2) $\\int_{\\sigma} \\frac{x \\, \\mathrm{d}x + y \\, \\mathrm{d}y + z \\, \\mathrm{d}z}{\\sqrt{x^2 + y^2 + z^2}}$, 其中 $\\sigma$ 是 $\\mathbb{R}^3 \\setminus \\{(0,0,0)\\}$ 中从球面 $x^2 + y^2 + z^2 = 1$ 上一点到球面 $x^2 + y^2 + z^2 = 2$ 上一点的曲线."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.396,
+            0.687,
+            0.415
+          ],
+          "content": "9. 设 $\\Omega$ 为 $\\mathbb{R}^n$ 上的区域, $p_0 \\in \\Omega$, $f$ 为 $\\Omega$ 上的 $C^1$ 函数, 证明:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.304,
+            0.426,
+            0.655,
+            0.464
+          ],
+          "content": "\\nabla f (\\boldsymbol {p} _ {0}) = \\lim _ {r \\to 0 ^ {+}} \\frac {1}{\\nu (B _ {r} (\\boldsymbol {p} _ {0}))} \\int_ {\\partial B _ {r} (\\boldsymbol {p} _ {0})} f   \\mathrm{d} \\vec {\\sigma},",
+          "image_source": "images/page_742_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.479,
+            0.423,
+            0.496
+          ],
+          "content": "其中  $d\\vec{\\sigma}=n\\,d\\sigma,\\quad n$  为单位外法向量."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.503,
+            0.853,
+            0.545
+          ],
+          "content": "10. 设  $\\{x_{i}\\}_{i=1}^{n}$  为  $R^{n}$  上的直角坐标系, 考虑坐标变换  $\\boldsymbol{x} = \\varphi(\\boldsymbol{u})$ , 其中  $\\boldsymbol{u} = (u_{1}, u_{2}, \\cdots, u_{n})$ . 设 f 为可微函数, 证明: 在坐标系  $\\{u_{i}\\}_{i=1}^{n}$  中梯度场  $\\nabla f$  可以表示为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.396,
+            0.56,
+            0.56,
+            0.602
+          ],
+          "content": "\\nabla f = \\sum_ {i = 1} ^ {n} \\frac {\\partial f}{\\partial u _ {i}} \\nabla u _ {i}.",
+          "image_source": "images/page_742_equation_13.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.106,
+            0.647,
+            0.455,
+            0.67
+          ],
+          "level": 2,
+          "content": "19.2 散度和 Laplace 算子"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.717,
+            0.853,
+            0.759
+          ],
+          "content": "我们首先回顾散度的定义. 设 U 为  $R^{n}$  中的开集,  $\\boldsymbol{X} = (f_{1}, f_{2}, \\cdots, f_{n})$  是 U 上的  $C^{1}$  向量场, 其散度  $\\mathrm{div}(\\boldsymbol{X})$  是 U 上的标量场, 在标准直角坐标系中的计算公式为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.396,
+            0.775,
+            0.56,
+            0.817
+          ],
+          "content": "\\operatorname{div} (\\boldsymbol {X}) = \\sum_ {i = 1} ^ {n} \\frac {\\partial f _ {i}}{\\partial x _ {i}}.",
+          "image_source": "images/page_742_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.833,
+            0.66,
+            0.85
+          ],
+          "content": "在物理中, 散度也称为通量密度, 它是不依赖于直角坐标系的量."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.856,
+            0.853,
+            0.875
+          ],
+          "content": "将梯度和散度结合起来可以得到重要的 Laplace $^{①}$ 算子. 设 U 为 $R^{n}$ 中的开集, f"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.104,
+            0.901,
+            0.853,
+            0.935
+          ],
+          "content": "① Laplace, Pierre-Simon, marquis de, 1749 年 3 月 23 日—1827 年 3 月 5 日, 法国数学家、天文学家."
+        }
+      ]
+    },
+    {
+      "page_idx": 743,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.695,
+            0.058,
+            0.889,
+            0.072
+          ],
+          "content": "19.2 散度和 Laplace 算子"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.909,
+            0.059,
+            0.937,
+            0.071
+          ],
+          "content": "103"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.113,
+            0.581,
+            0.131
+          ],
+          "content": "是 U 上的  $C^{2}$  函数 (标量场), f 的 Laplace 定义为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.45,
+            0.148,
+            0.584,
+            0.167
+          ],
+          "content": "\\Delta f = \\mathrm{div} (\\nabla f).",
+          "image_source": "images/page_743_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.182,
+            0.789,
+            0.202
+          ],
+          "content": "$\\Delta$ 称为作用在标量场上的Laplace算子.在直角坐标系 $\\{x_{i}\\}_{i = 1}^{n}$ 中，显然有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.451,
+            0.214,
+            0.584,
+            0.256
+          ],
+          "content": "\\Delta f = \\sum_ {i = 1} ^ {n} \\frac {\\partial^ {2} f}{\\partial x _ {i} ^ {2}}.",
+          "image_source": "images/page_743_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.269,
+            0.509,
+            0.288
+          ],
+          "content": "如果  $\\Delta f = 0$ ，则称 f 为 U 上的调和函数。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.292,
+            0.892,
+            0.357
+          ],
+          "content": "例如, 记 $r = \\| \\boldsymbol{x} \\|$, 则当 $n = 2$ 时 $\\ln r$ 是 $\\mathbb{R}^2 \\setminus \\{\\mathbf{0}\\}$ 上的调和函数; $n \\geqslant 3$ 时 $r^{2-n}$ 是 $\\mathbb{R}^n \\setminus \\{\\mathbf{0}\\}$ 上的调和函数. 调和函数具有很多特别的性质, 我们用散度定理来给出所谓的平均值公式."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.363,
+            0.862,
+            0.382
+          ],
+          "content": "定理 19.2.1 (平均值公式) 设 f 为 U 上的调和函数, 如果  $\\overline{B_{R}(x^{0})} \\subset U$ , 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.36,
+            0.397,
+            0.677,
+            0.435
+          ],
+          "content": "f (\\pmb {x} ^ {0}) = \\frac {1}{\\nu (B _ {R} (\\pmb {x} ^ {0}))} \\int_ {B _ {R} (\\pmb {x} ^ {0})} f (\\pmb {x}) \\mathrm{d} \\pmb {x}.",
+          "image_source": "images/page_743_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.447,
+            0.867,
+            0.466
+          ],
+          "content": "证明 不妨设 $x^0 = 0$. 当 $x \\in B_R = B_R(0)$ 时, 利用 Newton-Leibniz 公式可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.305,
+            0.478,
+            0.734,
+            0.517
+          ],
+          "content": "f (\\boldsymbol {x}) - f (\\boldsymbol {0}) = \\int_ {0} ^ {1} \\frac {\\mathrm{d}}{\\mathrm{d} t} f (t \\boldsymbol {x}) \\mathrm{d} t = \\int_ {0} ^ {1} \\nabla f (t \\boldsymbol {x}) \\cdot \\boldsymbol {x} \\mathrm{d} t.",
+          "image_source": "images/page_743_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.528,
+            0.364,
+            0.546
+          ],
+          "content": "积分, 利用散度定理可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.246,
+            0.553,
+            0.801,
+            0.769
+          ],
+          "content": "\\begin{array}{l} \\int_ {B _ {R}} f (\\boldsymbol {x}) \\mathrm{d} \\boldsymbol {x} - \\nu (B _ {R}) f (\\boldsymbol {0}) \\\\ = \\int_ {0} ^ {1} \\mathrm{d} t \\int_ {B _ {R}} \\nabla f (t \\boldsymbol {x}) \\cdot \\boldsymbol {x} \\mathrm{d} \\boldsymbol {x} \\\\ = \\int_ {0} ^ {1} \\mathrm{d} t \\int_ {B _ {R}} \\operatorname{div} \\left[ \\frac {\\| \\boldsymbol {x} \\| ^ {2}}{2} \\nabla f (t \\boldsymbol {x}) \\right] \\mathrm{d} \\boldsymbol {x} - \\int_ {0} ^ {1} \\mathrm{d} t \\int_ {B _ {R}} \\frac {\\| \\boldsymbol {x} \\| ^ {2}}{2} t \\Delta f (t \\boldsymbol {x}) \\mathrm{d} \\boldsymbol {x} \\\\ = \\int_ {0} ^ {1} \\mathrm{d} t \\frac {R ^ {2}}{2} \\int_ {\\partial B _ {R}} \\nabla f (t \\boldsymbol {x}) \\cdot \\boldsymbol {n} \\mathrm{d} \\sigma \\\\ = \\int_ {0} ^ {1} \\mathrm{d} t \\frac {R ^ {2}}{2} \\int_ {B _ {R}} t \\Delta f (t \\boldsymbol {x}) \\mathrm{d} \\boldsymbol {x} = 0, \\\\ \\end{array}",
+          "image_source": "images/page_743_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.779,
+            0.237,
+            0.795
+          ],
+          "content": "定理证毕."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.805,
+            0.892,
+            0.846
+          ],
+          "content": "推论 19.2.2 (Liouville 定理) 设 f 为  $R^{n}$  上的调和函数. 如果  $f \\geqslant 0$ , 则 f 必为常值函数. 特别地,  $R^{n}$  上的有界调和函数必为常值函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.854,
+            0.892,
+            0.895
+          ],
+          "content": "证明 任取 $\\pmb{p},\\pmb{q}\\in \\mathbb{R}^n$ ，记 $d = \\| \\pmb {-}\\pmb {q}\\|$ .当 $R > 0$ 时，由三角不等式可知 $B_{R}(\\pmb {p})\\subseteq$ $B_{R + d}(\\pmb {q})$ .由平均值不等式以及 $f\\geqslant 0$ 可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.246,
+            0.903,
+            0.794,
+            0.942
+          ],
+          "content": "f (\\boldsymbol {p}) = \\frac {1}{\\nu (B _ {R} (\\boldsymbol {p}))} \\int_ {B _ {R} (\\boldsymbol {p})} f (\\boldsymbol {x}) \\mathrm{d} \\boldsymbol {x} \\leqslant \\frac {1}{\\nu (B _ {R} (\\boldsymbol {p}))} \\int_ {B _ {R + d} (\\boldsymbol {q})} f (\\boldsymbol {x}) \\mathrm{d} \\boldsymbol {x}",
+          "image_source": "images/page_743_equation_17.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 744,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.067,
+            0.056,
+            0.095,
+            0.068
+          ],
+          "content": "104"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.112,
+            0.054,
+            0.259,
+            0.068
+          ],
+          "content": "第十九章 场论初步"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.258,
+            0.11,
+            0.585,
+            0.146
+          ],
+          "content": "= \\frac {\\nu (B _ {R + d} (\\boldsymbol {q}))}{\\nu (B _ {R} (\\boldsymbol {p}))} f (\\boldsymbol {q}) = \\left(1 + \\frac {d}{R}\\right) ^ {n} f (\\boldsymbol {q}).",
+          "image_source": "images/page_744_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.156,
+            0.856,
+            0.197
+          ],
+          "content": "令 $R \\to +\\infty$ 可得 $f(\\pmb{p}) \\leqslant f(\\pmb{q})$. 交换 $\\pmb{p}, \\pmb{q}$ 的位置可知 $f(\\pmb{q}) \\leqslant f(\\pmb{p})$, 这说明 $f(\\pmb{p}) = f(\\pmb{q})$, 因此 $f$ 为常值函数. □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.205,
+            0.856,
+            0.247
+          ],
+          "content": "在实际应用中, 我们经常根据需要在空间中选取曲线坐标系. 下面我们来推导曲线坐标系中散度的计算公式. 我们首先利用微分形式重新表述散度: 设 X 如上, 记"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.29,
+            0.257,
+            0.677,
+            0.299
+          ],
+          "content": "\\omega = \\sum_ {i = 1} ^ {n} (- 1) ^ {i - 1} f _ {i}   \\mathrm{d} x _ {1} \\wedge \\dots \\wedge \\widehat {\\mathrm{d} x _ {i}} \\wedge \\dots \\wedge \\mathrm{d} x _ {n},",
+          "image_source": "images/page_744_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.309,
+            0.473,
+            0.328
+          ],
+          "content": "它是 $U$ 上的 $(n - 1)$-形式, 求外微分可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.23,
+            0.334,
+            0.736,
+            0.531
+          ],
+          "content": "\\begin{array}{l} \\mathrm{d} \\omega = \\sum_ {i = 1} ^ {n} (- 1) ^ {i - 1} \\mathrm{d} f _ {i} \\wedge \\mathrm{d} x _ {1} \\wedge \\dots \\wedge \\widehat {\\mathrm{d} x _ {i}} \\wedge \\dots \\wedge \\mathrm{d} x _ {n} \\\\ = \\sum_ {i = 1} ^ {n} (- 1) ^ {i - 1} \\sum_ {j = 1} ^ {n} \\frac {\\partial f _ {i}}{\\partial x _ {j}} \\mathrm{d} x _ {j} \\wedge \\mathrm{d} x _ {1} \\wedge \\dots \\wedge \\widehat {\\mathrm{d} x _ {i}} \\wedge \\dots \\wedge \\mathrm{d} x _ {n} \\\\ = \\sum_ {i = 1} ^ {n} (- 1) ^ {i - 1} \\frac {\\partial f _ {i}}{\\partial x _ {i}} \\mathrm{d} x _ {i} \\wedge \\mathrm{d} x _ {1} \\wedge \\dots \\wedge \\widehat {\\mathrm{d} x _ {i}} \\wedge \\dots \\wedge \\mathrm{d} x _ {n} \\\\ = \\sum_ {i = 1} ^ {n} \\frac {\\partial f _ {i}}{\\partial x _ {i}} \\mathrm{d} x _ {1} \\wedge \\dots \\wedge \\mathrm{d} x _ {n} = \\operatorname{div} (\\boldsymbol {X}) \\mathrm{d} \\boldsymbol {x}. \\\\ \\end{array}",
+          "image_source": "images/page_744_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.109,
+            0.54,
+            0.853,
+            0.582
+          ],
+          "content": "考虑坐标变换 $x = \\varphi(u)$, 其中 $\\varphi: D \\to U$ 为 $C^2$ 映射, $D$ 为 $\\mathbb{R}^n$ 中的开集. 我们要求 $\\det J\\varphi$ 在 $D$ 上处处非零. 记"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.26,
+            0.596,
+            0.704,
+            0.615
+          ],
+          "content": "\\varphi (\\boldsymbol {u}) = (\\varphi_ {1} (\\boldsymbol {u}), \\dots , \\varphi_ {n} (\\boldsymbol {u})), \\quad \\boldsymbol {u} = (u _ {1}, \\dots , u _ {n}) \\in D.",
+          "image_source": "images/page_744_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.627,
+            0.274,
+            0.645
+          ],
+          "content": "利用拉回映射可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.189,
+            0.65,
+            0.773,
+            0.799
+          ],
+          "content": "\\begin{array}{l} \\varphi^ {*} \\omega = \\sum_ {i = 1} ^ {n} (- 1) ^ {i - 1} f _ {i} (\\varphi) \\mathrm{d} \\varphi_ {1} \\wedge \\dots \\wedge \\widehat {\\mathrm{d} \\varphi_ {i}} \\wedge \\dots \\wedge \\mathrm{d} \\varphi_ {n} \\\\ = \\sum_ {i, j = 1} ^ {n} (- 1) ^ {i - 1} f _ {i} (\\varphi) \\frac {\\partial \\left(\\varphi_ {1} \\cdots \\widehat {\\varphi_ {i}} \\cdots \\varphi_ {n}\\right)}{\\partial \\left(u _ {1} \\cdots \\widehat {u _ {j}} \\cdots u _ {n}\\right)} \\mathrm{d} u _ {1} \\wedge \\dots \\widehat {\\mathrm{d} u _ {j}} \\wedge \\dots \\wedge \\mathrm{d} u _ {n} \\\\ = \\sum_ {i, j = 1} ^ {n} (- 1) ^ {j - 1} f _ {i} (\\varphi) \\varphi_ {i j} \\mathrm{d} u _ {1} \\wedge \\dots \\widehat {\\mathrm{d} u _ {j}} \\wedge \\dots \\wedge \\mathrm{d} u _ {n}, \\\\ \\end{array}",
+          "image_source": "images/page_744_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.807,
+            0.153,
+            0.824
+          ],
+          "content": "其中"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.342,
+            0.822,
+            0.622,
+            0.859
+          ],
+          "content": "\\varphi_ {i j} = (- 1) ^ {i + j} \\frac {\\partial (\\varphi_ {1} \\cdots \\widehat {\\varphi_ {i}} \\cdots \\varphi_ {n})}{\\partial (u _ {1} \\cdots \\widehat {u _ {j}} \\cdots u _ {n})},",
+          "image_source": "images/page_744_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.865,
+            0.664,
+            0.884
+          ],
+          "content": "它是 Jacobi 矩阵 $J\\varphi$ 在 $(i,j)$ 位置的代数余子式. 求外微分可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.285,
+            0.895,
+            0.677,
+            0.938
+          ],
+          "content": "\\mathrm{d} (\\varphi^ {*} \\omega) = \\sum_ {i, j = 1} ^ {n} \\frac {\\partial}{\\partial u _ {j}} \\left[ f _ {i} (\\varphi) \\varphi_ {i j} \\right] \\mathrm{d} u _ {1} \\wedge \\dots \\wedge \\mathrm{d} u _ {n}.",
+          "image_source": "images/page_744_equation_15.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 745,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.701,
+            0.056,
+            0.896,
+            0.072
+          ],
+          "content": "19.2 散度和Laplace算子"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.915,
+            0.058,
+            0.944,
+            0.07
+          ],
+          "content": "105"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.111,
+            0.647,
+            0.129
+          ],
+          "content": "另一方面, 根据拉回映射与外微分运算可以交换次序可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.328,
+            0.146,
+            0.716,
+            0.234
+          ],
+          "content": "\\begin{array}{l} \\mathrm{d} \\left(\\varphi^ {*} \\omega\\right) = \\varphi^ {*} (\\mathrm{d} \\omega) = \\varphi^ {*} (\\operatorname{div} (\\boldsymbol {X}) \\mathrm{d} \\boldsymbol {x}) \\\\ = \\operatorname{div} (\\boldsymbol {X}) (\\varphi) \\mathrm{d} \\varphi_ {1} \\wedge \\dots \\wedge \\mathrm{d} \\varphi_ {n} \\\\ = \\operatorname{div} (\\boldsymbol {X}) (\\varphi) \\det J \\varphi \\mathrm{d} u _ {1} \\wedge \\dots \\wedge \\mathrm{d} u _ {n}, \\\\ \\end{array}",
+          "image_source": "images/page_745_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.25,
+            0.216,
+            0.267
+          ],
+          "content": "这说明"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.346,
+            0.27,
+            0.893,
+            0.312
+          ],
+          "content": "\\operatorname{div} (\\boldsymbol {X}) (\\varphi) = \\frac {1}{\\det J \\varphi} \\sum_ {i, j = 1} ^ {n} \\frac {\\partial}{\\partial u _ {j}} \\left[ f _ {i} (\\varphi) \\varphi_ {i j} \\right]. \\tag {19.2.1}",
+          "image_source": "images/page_745_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.323,
+            0.897,
+            0.366
+          ],
+          "content": "下面我们考虑一种常用的曲线坐标系. 若 $(J\\varphi)^{\\mathrm{T}}$ 的行向量 $\\{\\varphi_{u_j}\\}_{j=1}^n$ 互相垂直, 则称 $\\{u_i\\}_{i=1}^n$ 为正交曲线坐标系. 此时"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.398,
+            0.385,
+            0.893,
+            0.403
+          ],
+          "content": "(J \\varphi) ^ {\\mathrm{T}} J \\varphi = \\operatorname{diag} \\left(h _ {1} ^ {2}, \\dots , h _ {n} ^ {2}\\right), \\tag {19.2.2}",
+          "image_source": "images/page_745_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.421,
+            0.196,
+            0.438
+          ],
+          "content": "其中"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.397,
+            0.446,
+            0.649,
+            0.466
+          ],
+          "content": "h _ {j} = \\| \\varphi_ {u _ {j}} \\|, j = 1, 2, \\dots , n,",
+          "image_source": "images/page_745_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.476,
+            0.632,
+            0.496
+          ],
+          "content": "$\\{h_j\\}_{j=1}^n$ 称为坐标系的 $\\mathrm{Lamé}^{\\text{①}}$ 系数. 由 (19.2.2) 式可知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.365,
+            0.512,
+            0.682,
+            0.534
+          ],
+          "content": "(J \\varphi) ^ {- 1} = \\mathrm{diag} \\big (h _ {1} ^ {- 2}, \\dots , h _ {n} ^ {- 2} \\big) (J \\varphi) ^ {\\mathrm{T}}.",
+          "image_source": "images/page_745_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.55,
+            0.897,
+            0.592
+          ],
+          "content": "另一方面, 在线性代数中我们知道 $(J\\varphi)^{-1} = (\\det J\\varphi)^{-1}(J\\varphi)^*$, 其中 $(J\\varphi)^*$ 在 $(i,j)$ 位置的元素等于 $\\varphi_{ji}$, 这说明"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.44,
+            0.594,
+            0.606,
+            0.632
+          ],
+          "content": "\\varphi_ {i j} = \\frac {\\det J \\varphi}{h _ {j} ^ {2}} \\frac {\\partial \\varphi_ {i}}{\\partial u _ {j}}.",
+          "image_source": "images/page_745_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.641,
+            0.334,
+            0.659
+          ],
+          "content": "代入 (19.2.1) 式可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.34,
+            0.676,
+            0.706,
+            0.72
+          ],
+          "content": "\\mathrm{div} (\\boldsymbol {X}) (\\varphi) = \\frac {1}{\\det J \\varphi} \\sum_ {j = 1} ^ {n} \\frac {\\partial}{\\partial u _ {j}} \\big [ X _ {j} \\det J \\varphi \\big ],",
+          "image_source": "images/page_745_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.734,
+            0.196,
+            0.751
+          ],
+          "content": "其中"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.423,
+            0.753,
+            0.624,
+            0.796
+          ],
+          "content": "X _ {j} = \\frac {1}{h _ {j} ^ {2}} \\sum_ {i = 1} ^ {n} f _ {i} (\\varphi) \\frac {\\partial \\varphi_ {i}}{\\partial u _ {j}}.",
+          "image_source": "images/page_745_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.805,
+            0.487,
+            0.824
+          ],
+          "content": "注意到  $\\det J\\varphi = \\pm h_{1} \\cdots h_{n}$ ，因此也有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.334,
+            0.841,
+            0.894,
+            0.882
+          ],
+          "content": "\\operatorname{div} (\\boldsymbol {X}) (\\varphi) = \\frac {1}{h _ {1} \\cdots h _ {n}} \\sum_ {j = 1} ^ {n} \\frac {\\partial}{\\partial u _ {j}} \\left[ X _ {j} h _ {1} \\dots h _ {n} \\right]. \\tag {19.2.3}",
+          "image_source": "images/page_745_equation_19.jpg"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.183,
+            0.918,
+            0.691,
+            0.934
+          ],
+          "content": "① Lamé, Gabriel, 1795 年 7 月 22 日—1870 年 5 月 1 日, 法国数学家."
+        }
+      ]
+    },
+    {
+      "page_idx": 746,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.062,
+            0.057,
+            0.089,
+            0.068
+          ],
+          "content": "106"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.055,
+            0.255,
+            0.069
+          ],
+          "content": "第十九章 场论初步"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.111,
+            0.519,
+            0.129
+          ],
+          "content": "我们断言: 在正交曲线坐标系中 $X$ 可以表示为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.397,
+            0.143,
+            0.848,
+            0.184
+          ],
+          "content": "\\boldsymbol {X} (\\varphi) = \\sum_ {j = 1} ^ {n} X _ {j} \\varphi_ {u _ {j}}. \\tag {19.2.4}",
+          "image_source": "images/page_746_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.198,
+            0.204,
+            0.216
+          ],
+          "content": "事实上，记"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.36,
+            0.215,
+            0.597,
+            0.251
+          ],
+          "content": "\\hat {e} _ {j} = \\frac {1}{h _ {j}} \\varphi_ {u _ {j}}, j = 1, \\dots , n,",
+          "image_source": "images/page_746_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.257,
+            0.484,
+            0.278
+          ],
+          "content": "则 $\\{\\hat{e}_j\\}_{j = 1}^n$ 为标准正交基.由链式法则可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.219,
+            0.291,
+            0.741,
+            0.334
+          ],
+          "content": "\\boldsymbol {X} (\\varphi) \\cdot \\hat {\\boldsymbol {e}} _ {j} = \\frac {1}{h _ {j}} \\sum_ {i = 1} ^ {n} f _ {i} (\\varphi) \\boldsymbol {e} _ {i} \\cdot \\varphi_ {u _ {j}} = \\frac {1}{h _ {j}} \\sum_ {i = 1} ^ {n} f _ {i} (\\varphi) \\frac {\\partial \\varphi_ {i}}{\\partial u _ {j}} = h _ {j} X _ {j},",
+          "image_source": "images/page_746_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.346,
+            0.152,
+            0.363
+          ],
+          "content": "于是"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.306,
+            0.365,
+            0.651,
+            0.409
+          ],
+          "content": "\\boldsymbol {X} (\\varphi) = \\sum_ {j = 1} ^ {n} \\big [ \\boldsymbol {X} (\\varphi) \\cdot \\hat {\\boldsymbol {e}} _ {j} \\big ] \\hat {\\boldsymbol {e}} _ {j} = \\sum_ {j = 1} ^ {n} X _ {j} \\varphi_ {u _ {j}}.",
+          "image_source": "images/page_746_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.418,
+            0.402,
+            0.435
+          ],
+          "content": "在正交曲线坐标系中, 我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.247,
+            0.448,
+            0.709,
+            0.541
+          ],
+          "content": "\\begin{array}{l} \\nabla f (\\varphi) = \\sum_ {j = 1} ^ {n} \\left[ \\nabla f (\\varphi) \\cdot \\hat {\\boldsymbol {e}} _ {j} \\right] \\hat {\\boldsymbol {e}} _ {j} = \\sum_ {j = 1} ^ {n} \\frac {1}{h _ {j} ^ {2}} [ \\nabla f (\\varphi) \\cdot \\varphi_ {u _ {j}} ] \\varphi_ {u _ {j}} \\\\ = \\sum_ {j = 1} ^ {n} \\frac {1}{h _ {j} ^ {2}} \\frac {\\partial f (\\varphi)}{\\partial u _ {j}} \\varphi_ {u _ {j}}. \\\\ \\end{array}",
+          "image_source": "images/page_746_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.555,
+            0.269,
+            0.573
+          ],
+          "content": "由(19.2.3)式可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.282,
+            0.586,
+            0.848,
+            0.631
+          ],
+          "content": "\\Delta f (\\varphi) = \\frac {1}{h _ {1} \\cdots h _ {n}} \\sum_ {j = 1} ^ {n} \\frac {\\partial}{\\partial u _ {j}} \\left[ \\frac {h _ {1} \\cdots h _ {n}}{h _ {j} ^ {2}} \\frac {\\partial f (\\varphi)}{\\partial u _ {j}} \\right]. \\tag {19.2.5}",
+          "image_source": "images/page_746_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.644,
+            0.573,
+            0.661
+          ],
+          "content": "这就得到了 Laplace 算子在正交曲线坐标下的表达式."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.667,
+            0.682,
+            0.685
+          ],
+          "content": "例 19.2.1 求梯度和 Laplace 算子在平面极坐标下的表达式."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.69,
+            0.662,
+            0.709
+          ],
+          "content": "解 平面直角坐标 $(x,y)$ 和极坐标 $(r,\\theta)$ 之间的变换关系为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.726,
+            0.625,
+            0.745
+          ],
+          "content": "(x, y) = \\varphi (r, \\theta) = (r \\cos \\theta , r \\sin \\theta).",
+          "image_source": "images/page_746_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.76,
+            0.192,
+            0.777
+          ],
+          "content": "求导可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.286,
+            0.783,
+            0.672,
+            0.803
+          ],
+          "content": "\\varphi_ {r} = (\\cos \\theta , \\sin \\theta), \\varphi_ {\\theta} = (- r \\sin \\theta , r \\cos \\theta).",
+          "image_source": "images/page_746_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.813,
+            0.545,
+            0.83
+          ],
+          "content": "由此可见极坐标是正交曲线坐标. 其 Lamé 系数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.339,
+            0.847,
+            0.619,
+            0.866
+          ],
+          "content": "h _ {1} = \\| \\varphi_ {r} \\| = 1, h _ {2} = \\| \\varphi_ {\\theta} \\| = r,",
+          "image_source": "images/page_746_equation_21.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.88,
+            0.724,
+            0.899
+          ],
+          "content": "其中设 $f = f(x,y)$ 为平面上的 $C^2$ 函数，其梯度在极坐标中可以表示为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.371,
+            0.907,
+            0.586,
+            0.941
+          ],
+          "content": "\\nabla f = \\frac {\\partial f}{\\partial r} \\varphi_ {r} + \\frac {1}{r ^ {2}} \\frac {\\partial f}{\\partial \\theta} \\varphi_ {\\theta}.",
+          "image_source": "images/page_746_equation_23.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 747,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.697,
+            0.057,
+            0.891,
+            0.072
+          ],
+          "content": "19.2 散度和 Laplace 算子"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.91,
+            0.059,
+            0.938,
+            0.07
+          ],
+          "content": "107"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.113,
+            0.308,
+            0.13
+          ],
+          "content": "由(19.2.5)式可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.393,
+            0.136,
+            0.646,
+            0.173
+          ],
+          "content": "\\Delta f = \\frac {1}{r} \\frac {\\partial}{\\partial r} \\left(r \\frac {\\partial f}{\\partial f}\\right) + \\frac {1}{r ^ {2}} \\frac {\\partial^ {2} f}{\\partial \\theta^ {2}}.",
+          "image_source": "images/page_747_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.187,
+            0.534,
+            0.204
+          ],
+          "content": "这是平面 Laplace 算子在极坐标下的表达式."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.189,
+            0.234,
+            0.295,
+            0.253
+          ],
+          "level": 2,
+          "content": "习题 19.2"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.278,
+            0.891,
+            0.317
+          ],
+          "content": "1. 求向量场 $X = (y, zx, xy)$ 通过方体 $[-1, 1]^3$ 的表面的通量, 其中方体表面的方向为外侧."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.325,
+            0.891,
+            0.365
+          ],
+          "content": "2. 求向量场 $X = (x^{2}, y^{2}, z^{2})$ 通过球面 $x^{2} + y^{2} + z^{2} = 1, x > 0, y > 0, z > 0$ 的部分的通量, 其中球面的方向为外侧."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.372,
+            0.888,
+            0.39
+          ],
+          "content": "3. 求引力场  $F = \\kappa r^{-3} r$  的散度, 其中  $\\kappa$  为常数,  $\\boldsymbol{r} = (x, y, z)$ ,  $r = \\sqrt{x^{2} + y^{2} + z^{2}}$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.396,
+            0.891,
+            0.435
+          ],
+          "content": "4. 求电场  $E = \\kappa r^{-3} r$  穿过围绕  $R^{3}$  的坐标原点的任一光滑封闭曲面的电通量, 其中  $\\kappa$  为常数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.443,
+            0.702,
+            0.461
+          ],
+          "content": "5. 在  $R^{n}$  上记  $\\boldsymbol{r} = (x_{1}, x_{2}, \\cdots, x_{n})$ ，求  $\\mathrm{div}(\\boldsymbol{r})$  和  $\\mathrm{div}(r^{-1}\\boldsymbol{r})$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.467,
+            0.57,
+            0.484
+          ],
+          "content": "6. 设 f 为  $C^{1}$  函数, X 为  $C^{1}$  向量场, 证明:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.388,
+            0.507,
+            0.654,
+            0.525
+          ],
+          "content": "\\mathrm{div} (f \\boldsymbol {X}) = f \\mathrm{div} (\\boldsymbol {X}) + \\nabla f \\cdot \\boldsymbol {X}.",
+          "image_source": "images/page_747_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.546,
+            0.891,
+            0.586
+          ],
+          "content": "7. 验证: 当 $n = 2$ 时, $\\ln r$ 是 $\\mathbb{R}^2 \\setminus \\{\\mathbf{0}\\}$ 上的调和函数; 当 $n \\geqslant 3$ 时, $r^{2-n}$ 是 $\\mathbb{R}^n \\setminus \\{\\mathbf{0}\\}$ 上的调和函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.593,
+            0.434,
+            0.611
+          ],
+          "content": "8. 设 $f, g$ 为 $C^2$ 函数, 证明:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.248,
+            0.634,
+            0.794,
+            0.653
+          ],
+          "content": "\\operatorname{div} (f \\nabla g) = \\nabla f \\cdot \\nabla g + f \\Delta g, \\Delta (f g) = f \\Delta g + g \\Delta f + 2 \\nabla f \\cdot \\nabla g.",
+          "image_source": "images/page_747_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.673,
+            0.893,
+            0.714
+          ],
+          "content": "9. 设 $D \\subset \\mathbb{R}^n$ 为具有 $C^1$ 边界的有界开集, $\\pmb{n}$ 是边界上的单位外法向量. 若 $f, g \\in C^2(\\bar{D})$, 证明:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.318,
+            0.72,
+            0.724,
+            0.756
+          ],
+          "content": "\\int_ {D} (f \\Delta g - g \\Delta f) \\mathrm{d} x = \\int_ {\\partial D} \\left(f \\frac {\\partial g}{\\partial \\boldsymbol {n}} - g \\frac {\\partial f}{\\partial \\boldsymbol {n}}\\right) \\mathrm{d} \\sigma .",
+          "image_source": "images/page_747_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.769,
+            0.893,
+            0.811
+          ],
+          "content": "10. 设 $D \\subset \\mathbb{R}^n$ 为具有 $C^1$ 边界的有界开集, $f, g \\in C^2(\\bar{D})$ 且均为调和函数. 若在 $\\partial D$ 上 $f = g$, 证明: $f \\equiv g$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.816,
+            0.893,
+            0.857
+          ],
+          "content": "11. 设 $D \\subset \\mathbb{R}^n$ 为具有 $C^1$ 边界的有界区域, $f \\in C^2(\\bar{D})$ 且为调和函数. 证明: $f$ 在 $D$ 的内部达不到最大值或最小值, 除非 $f$ 恒为常数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.859,
+            0.893,
+            0.91
+          ],
+          "content": "12. 设 $p(z)$ 是复平面上的多项式. 如果 $p(z)$ 没有零点, 则 $\\frac{1}{p(z)}$ 的实部和虚部均为有界调和函数, 从而必为常数. 由此推出代数基本定理."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.916,
+            0.672,
+            0.934
+          ],
+          "content": "13. 在  $R^{3}$  的球坐标系和柱坐标系中求散度的计算公式."
+        }
+      ]
+    },
+    {
+      "page_idx": 748,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.064,
+            0.058,
+            0.091,
+            0.068
+          ],
+          "content": "108"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.11,
+            0.056,
+            0.257,
+            0.07
+          ],
+          "content": "第十九章 场论初步"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.11,
+            0.11,
+            0.281,
+            0.133
+          ],
+          "level": 2,
+          "content": "19.3 旋度场"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.18,
+            0.692,
+            0.2
+          ],
+          "content": "设 $U$ 是 $\\mathbb{R}^3$ 中的开集, $\\pmb{X} = (P, Q, R)$ 为 $U$ 上的 $C^1$ 向量场, 记"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.302,
+            0.219,
+            0.659,
+            0.239
+          ],
+          "content": "\\mathrm{rot} (\\boldsymbol {X}) = (R _ {y} - Q _ {z}, P _ {z} - R _ {x}, Q _ {x} - P _ {y}),",
+          "image_source": "images/page_748_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.256,
+            0.716,
+            0.274
+          ],
+          "content": "称为 $X$ 的旋度, 也记为 $\\operatorname{curl}(X)$. 为了便于记忆, 上式形式上可以写为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.292,
+            0.629,
+            0.362
+          ],
+          "content": "\\mathrm{rot} (\\boldsymbol {X}) = \\nabla \\times \\boldsymbol {X} = \\left| \\begin{array}{c c c} \\mathbf {i} & \\mathbf {j} & \\mathbf {k} \\\\ \\partial_ {x} & \\partial_ {y} & \\partial_ {z} \\\\ P & Q & R \\end{array} \\right|,",
+          "image_source": "images/page_748_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.38,
+            0.853,
+            0.421
+          ],
+          "content": "其中 $\\{\\mathbf{i},\\mathbf{j},\\mathbf{k}\\} = \\{\\pmb{e}_1,\\pmb{e}_2,\\pmb{e}_3\\}$ 是 $\\mathbb{R}^3$ 的标准正交基， $\\nabla = \\mathrm{i}\\partial_x + \\mathrm{j}\\partial_y + \\mathrm{k}\\partial_z$ 称为Hamilton算子，又称Nabla算子."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.427,
+            0.853,
+            0.467
+          ],
+          "content": "在物理中, 旋度与环流量的面密度密切相关. 设 $\\sigma$ 是 $U$ 中的一条给定方向的闭曲线, 我们称第二型曲线积分"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.439,
+            0.468,
+            0.524,
+            0.502
+          ],
+          "content": "\\oint_ {\\sigma} \\boldsymbol {X} \\cdot \\mathrm{d} \\vec {s}",
+          "image_source": "images/page_748_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.511,
+            0.853,
+            0.576
+          ],
+          "content": "为向量场 $X$ 沿 $\\sigma$ 的环流量. 设 $p_0 \\in U, n$ 为单位向量, 以 $p_0$ 为中心, $r$ 为半径作一个垂直于 $n$ 的小圆盘 $D_r$. $D_r$ 的方向由法向量 $n$ 决定, $\\partial D_r$ 的方向为诱导定向. 此时, $X$ 沿 $\\partial D_r$ 的环流量与 $D_r$ 的面积的比值"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.398,
+            0.588,
+            0.564,
+            0.626
+          ],
+          "content": "\\frac {1}{\\nu (D _ {r})} \\oint_ {\\partial D _ {r}} \\boldsymbol {X} \\cdot \\mathrm{d} \\vec {s}",
+          "image_source": "images/page_748_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.64,
+            0.853,
+            0.704
+          ],
+          "content": "表示向量场 $X$ 绕 $\\pmb{n}$ 轴旋转的环流量对面积的平均变换率. 当 $r \\to 0^{+}$ 时, 此比值的极限反映了向量场 $X$ 绕 $\\pmb{n}$ 轴的旋转状况. 为了计算这一极限, 利用Stokes公式和积分中值公式可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.202,
+            0.715,
+            0.756,
+            0.753
+          ],
+          "content": "\\frac {1}{\\nu (D _ {r})} \\oint_ {\\partial D _ {r}} \\boldsymbol {X} \\cdot \\mathrm{d} \\vec {s} = \\frac {1}{\\nu (D _ {r})} \\iint_ {D _ {r}} \\mathrm{rot} (\\boldsymbol {X}) \\cdot \\boldsymbol {n} \\mathrm{d} \\sigma = \\mathrm{rot} (\\boldsymbol {X}) (\\boldsymbol {p}) \\cdot \\boldsymbol {n},",
+          "image_source": "images/page_748_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.768,
+            0.473,
+            0.788
+          ],
+          "content": "其中 $\\pmb{p} \\in \\overline{D_r}$. 当 $r \\to 0^+$ 时, $\\pmb{p} \\to \\pmb{p}_0$, 于是"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.297,
+            0.798,
+            0.66,
+            0.835
+          ],
+          "content": "\\lim _ {r \\to 0 ^ {+}} \\frac {1}{\\nu (D _ {r})} \\oint_ {\\partial D _ {r}} \\boldsymbol {X} \\cdot \\mathrm{d} \\vec {s} = \\mathrm{rot} (\\boldsymbol {X}) (\\boldsymbol {p} _ {0}) \\cdot \\boldsymbol {n},",
+          "image_source": "images/page_748_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.849,
+            0.395,
+            0.868
+          ],
+          "content": "这是旋度  $\\mathrm{rot}(X)$  在 n 上的投影."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.873,
+            0.853,
+            0.939
+          ],
+          "content": "从上述讨论可以看出, 将小圆盘换成一列收缩到  $p_{0}$  的平面小区域时类似的结论也成立. 同时也可以看出, 旋度的定义其实不依赖于直角坐标系 (但依赖于空间的定向). 下面我们在曲线正交坐标系中计算旋度场的表达式."
+        }
+      ]
+    },
+    {
+      "page_idx": 749,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.8,
+            0.058,
+            0.896,
+            0.072
+          ],
+          "content": "19.3 旋度场"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.916,
+            0.059,
+            0.944,
+            0.071
+          ],
+          "content": "109"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.196,
+            0.114,
+            0.663,
+            0.132
+          ],
+          "content": "引理 19.3.1 设 f 为  $C^{1}$  函数, X 为  $C^{1}$  向量场, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.384,
+            0.155,
+            0.663,
+            0.173
+          ],
+          "content": "\\mathrm{rot} (f \\boldsymbol {X}) = \\nabla f \\times \\boldsymbol {X} + f \\mathrm{rot} (\\boldsymbol {X}).",
+          "image_source": "images/page_749_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.197,
+            0.578,
+            0.214
+          ],
+          "content": "证明 这可以通过直接计算得到, 留作练习."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.227,
+            0.897,
+            0.268
+          ],
+          "content": "设  $\\{u_{i}\\}_{i=1}^{n}$  为曲线正交坐标系, 相应的坐标变换为  $\\varphi = \\varphi(u)$ , 我们要求  $\\det J\\varphi > 0$ . 在此曲线坐标系中, 设向量场 X 可以表示为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.454,
+            0.287,
+            0.595,
+            0.332
+          ],
+          "content": "X = \\sum_ {i = 1} ^ {3} X _ {i} \\varphi_ {u _ {i}}.",
+          "image_source": "images/page_749_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.351,
+            0.657,
+            0.371
+          ],
+          "content": "由前一节关于梯度的计算公式可知  $\\nabla u_{i}=h_{i}^{-2}\\varphi_{u_{i}}$ ，因此有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.443,
+            0.391,
+            0.607,
+            0.435
+          ],
+          "content": "X = \\sum_ {i = 1} ^ {3} X _ {i} h _ {i} ^ {2} \\nabla u _ {i},",
+          "image_source": "images/page_749_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.152,
+            0.455,
+            0.734,
+            0.474
+          ],
+          "content": "其中 $\\{h_i\\}_{i=1}^3$ 为 Lamé 系数. 注意到 $\\mathrm{rot}(\\nabla u_i) = 0$, 由上述引理可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.276,
+            0.493,
+            0.772,
+            0.539
+          ],
+          "content": "\\mathrm{rot} (\\boldsymbol {X}) = \\sum_ {i = 1} ^ {3} \\nabla (X _ {i} h _ {i} ^ {2}) \\times \\nabla u _ {i} = \\sum_ {i, j = 1} ^ {3} \\frac {\\partial (X _ {i} h _ {i} ^ {2})}{\\partial u _ {j}} \\nabla u _ {j} \\times \\nabla u _ {i}.",
+          "image_source": "images/page_749_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.152,
+            0.558,
+            0.598,
+            0.577
+          ],
+          "content": "利用 $\\{\\nabla u_i\\}_{i=1}^3$ 互相正交以及 $\\det J\\varphi > 0$ 不难得出"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.25,
+            0.6,
+            0.799,
+            0.62
+          ],
+          "content": "\\nabla u _ {1} \\times \\nabla u _ {2} = \\lambda \\varphi_ {u _ {3}}, \\nabla u _ {2} \\times \\nabla u _ {3} = \\lambda \\varphi_ {u _ {1}}, \\nabla u _ {3} \\times \\nabla u _ {1} = \\lambda \\varphi_ {u _ {2}},",
+          "image_source": "images/page_749_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.64,
+            0.198,
+            0.656
+          ],
+          "content": "其中"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.361,
+            0.668,
+            0.687,
+            0.689
+          ],
+          "content": "\\lambda = h _ {1} ^ {- 2} h _ {2} ^ {- 2} h _ {3} ^ {- 2} \\det J \\varphi = (h _ {1} h _ {2} h _ {3}) ^ {- 1}.",
+          "image_source": "images/page_749_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.706,
+            0.217,
+            0.722
+          ],
+          "content": "这说明"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.219,
+            0.735,
+            0.829,
+            0.813
+          ],
+          "content": "\\begin{array}{l} \\mathrm{rot} (\\boldsymbol {X}) = \\frac {\\partial_ {u _ {2}} (X _ {3} h _ {3} ^ {2}) - \\partial_ {u _ {3}} (X _ {2} h _ {2} ^ {2})}{h _ {1} h _ {2} h _ {3}} \\varphi_ {u _ {1}} + \\frac {\\partial_ {u _ {3}} (X _ {1} h _ {1} ^ {2}) - \\partial_ {u _ {1}} (X _ {3} h _ {3} ^ {2})}{h _ {1} h _ {2} h _ {3}} \\varphi_ {u _ {2}} + \\\\ \\frac {\\partial_ {u _ {1}} (X _ {2} h _ {2} ^ {2}) - \\partial_ {u _ {2}} (X _ {1} h _ {1} ^ {2})}{h _ {1} h _ {2} h _ {3}} \\varphi_ {u _ {3}}. \\\\ \\end{array}",
+          "image_source": "images/page_749_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.83,
+            0.338,
+            0.847
+          ],
+          "content": "上式形式上可以写成"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.347,
+            0.868,
+            0.699,
+            0.938
+          ],
+          "content": "\\mathrm{rot} (\\boldsymbol {X}) = \\frac {1}{h _ {1} h _ {2} h _ {3}} \\left| \\begin{array}{c c c} \\varphi_ {u _ {1}} & \\varphi_ {u _ {2}} & \\varphi_ {u _ {3}} \\\\ \\partial_ {u _ {1}} & \\partial_ {u _ {2}} & \\partial_ {u _ {3}} \\\\ X _ {1} h _ {1} ^ {2} & X _ {2} h _ {2} ^ {2} & X _ {3} h _ {3} ^ {2} \\end{array} \\right|.",
+          "image_source": "images/page_749_equation_18.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 750,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.058,
+            0.056,
+            0.087,
+            0.068
+          ],
+          "content": "110"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.105,
+            0.055,
+            0.251,
+            0.069
+          ],
+          "content": "第十九章 场论初步"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.145,
+            0.109,
+            0.251,
+            0.128
+          ],
+          "level": 2,
+          "content": "习题 19.3"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.155,
+            0.361,
+            0.171
+          ],
+          "content": "1. 求下列向量场的旋度:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.177,
+            0.463,
+            0.197
+          ],
+          "content": "(1) $X=(y^{2}+z^{2},z^{2}+x^{2},x^{2}+y^{2});$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.511,
+            0.177,
+            0.835,
+            0.197
+          ],
+          "content": "(2) $X = (2xy, \\mathrm{e}^z \\sin y, x^2 + y^2 + z^2)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.202,
+            0.423,
+            0.218
+          ],
+          "content": "2. 给出引理 19.3.1 的详细证明."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.225,
+            0.49,
+            0.243
+          ],
+          "content": "3. 设 f 为  $C^{2}$  函数, 证明:  $\\mathrm{rot}(\\nabla f)=0$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.248,
+            0.551,
+            0.266
+          ],
+          "content": "4. 设 X 为  $C^{2}$  向量场, 证明:  $\\text{div}(\\text{rot}(X)) = 0$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.272,
+            0.777,
+            0.29
+          ],
+          "content": "5. 设 $X, Y$ 为 $C^1$ 向量场, 证明: $\\operatorname{div}(\\boldsymbol{X} \\times \\boldsymbol{Y}) = \\boldsymbol{Y} \\cdot \\operatorname{rot}(\\boldsymbol{X}) - \\boldsymbol{X} \\cdot \\operatorname{rot}(\\boldsymbol{Y})$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.296,
+            0.502,
+            0.313
+          ],
+          "content": "6. 设  $\\boldsymbol{X} = (P, Q, R)$  为  $C^{2}$  向量场, 证明:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.327,
+            0.332,
+            0.623,
+            0.352
+          ],
+          "content": "\\mathrm{rot} \\big (\\mathrm{rot} (\\boldsymbol {X}) \\big) = \\nabla \\big (\\mathrm{div} (\\boldsymbol {X}) \\big) - \\Delta \\boldsymbol {X},",
+          "image_source": "images/page_750_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.37,
+            0.359,
+            0.388
+          ],
+          "content": "其中  $\\Delta X = (\\Delta P, \\Delta Q, \\Delta R)$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.394,
+            0.62,
+            0.41
+          ],
+          "content": "7. 写出柱面坐标系和球面坐标系中旋度场的计算公式."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.416,
+            0.771,
+            0.435
+          ],
+          "content": "8. 设 $\\Omega$ 为 $\\mathbb{R}^3$ 上的区域, $p_0 \\in \\Omega$, $X$ 是定义在 $\\Omega$ 上的 $C^1$ 向量场. 证明:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.261,
+            0.446,
+            0.688,
+            0.484
+          ],
+          "content": "\\mathrm{rot} (\\boldsymbol {X}) (\\boldsymbol {p} _ {0}) = \\lim _ {r \\to 0 ^ {+}} \\frac {1}{\\nu (B _ {r} (\\boldsymbol {p} _ {0}))} \\int_ {\\partial B _ {r} (\\boldsymbol {p} _ {0})} \\boldsymbol {n} \\times \\boldsymbol {X}   \\mathrm{d} \\sigma ,",
+          "image_source": "images/page_750_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.5,
+            0.359,
+            0.516
+          ],
+          "content": "其中 n 表示单位外法向量场."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.522,
+            0.747,
+            0.539
+          ],
+          "content": "9. 散度为零的场称为无源场. 证明: 矩形区域中的无源场必为旋度场."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.546,
+            0.789,
+            0.563
+          ],
+          "content": "10. 旋度为零的场称为无旋场. 证明: 在单连通区域上, 无旋场必为保守场."
+        }
+      ]
+    },
+    {
+      "page_idx": 751,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.394,
+            0.094,
+            0.543,
+            0.123
+          ],
+          "level": 2,
+          "content": "第二十章"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.552,
+            0.162,
+            0.837,
+            0.2
+          ],
+          "level": 2,
+          "content": "含参变量积分"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "created_at": "2025-11-20T03:44:46+08:00",
+      "modified_at": "2025-11-20T03:47:17+08:00",
+      "page_count": 856,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 736,
+          "width_pt": 514.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 737,
+          "width_pt": 514.0,
+          "height_pt": 739.0
+        },
+        {
+          "page_idx": 738,
+          "width_pt": 515.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 739,
+          "width_pt": 515.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 740,
+          "width_pt": 515.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 741,
+          "width_pt": 515.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 742,
+          "width_pt": 514.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 743,
+          "width_pt": 515.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 744,
+          "width_pt": 515.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 745,
+          "width_pt": 514.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 746,
+          "width_pt": 515.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 747,
+          "width_pt": 515.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 748,
+          "width_pt": 515.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 749,
+          "width_pt": 515.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 750,
+          "width_pt": 514.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 751,
+          "width_pt": 514.0,
+          "height_pt": 739.0
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

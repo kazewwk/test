@@ -1,0 +1,1899 @@
+{
+  "pages": [
+    {
+      "page_idx": 99,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.39,
+            0.096,
+            0.502,
+            0.124
+          ],
+          "level": 2,
+          "content": "第四章"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.552,
+            0.162,
+            0.744,
+            0.199
+          ],
+          "level": 2,
+          "content": "函数极限"
+        }
+      ]
+    },
+    {
+      "page_idx": 100,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.064,
+            0.055,
+            0.084,
+            0.065
+          ],
+          "content": "88"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.103,
+            0.053,
+            0.236,
+            0.067
+          ],
+          "content": "第四章 函数极限"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.102,
+            0.107,
+            0.287,
+            0.129
+          ],
+          "level": 2,
+          "content": "4.1 函数极限"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.178,
+            0.853,
+            0.218
+          ],
+          "content": "首先, 引入函数极限的定义. 若 $V$ 是 $x_0$ 的一个邻域, 则称 $V \\setminus \\{x_0\\}$ 为 $x_0$ 的去心邻域."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.226,
+            0.853,
+            0.267
+          ],
+          "content": "定义 4.1.1 设函数 f 在  $x_{0}$  的一个去心邻域内有定义, A 为给定常数. 如果对任何  $\\varepsilon > 0$ , 存在  $\\delta > 0$ , 使得当  $0 < |x - x_{0}| < \\delta$  时, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.409,
+            0.285,
+            0.545,
+            0.304
+          ],
+          "content": "| f (x) - A | <   \\varepsilon ,",
+          "image_source": "../../raw/pages_0097-0112/images/page_100_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.321,
+            0.851,
+            0.345
+          ],
+          "content": "则称 $f(x)$ 当 $x$ 趋于 $x_0$ 时的极限为 $A$, 记作 $\\lim_{x\\to x_0}f(x) = A$, 或 $f(x)\\rightarrow A(x\\to x_0)$, 或"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.373,
+            0.358,
+            0.579,
+            0.376
+          ],
+          "content": "f (x) \\rightarrow A, \\quad x \\rightarrow x _ {0}.",
+          "image_source": "../../raw/pages_0097-0112/images/page_100_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.389,
+            0.637,
+            0.424
+          ],
+          "content": "例4.1.1 从定义出发证明 $\\lim_{x\\to 1}\\frac{x^3 - 3x^2 + x + 1}{2x^2 - x - 1} = -\\frac{2}{3}.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.426,
+            0.411,
+            0.456
+          ],
+          "content": "证明 对于 $x \\neq 1, -\\frac{1}{2}$, 我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.209,
+            0.465,
+            0.744,
+            0.592
+          ],
+          "content": "\\begin{array}{l} \\left| \\frac {x ^ {3} - 3 x ^ {2} + x + 1}{2 x ^ {2} - x - 1} + \\frac {2}{3} \\right| = \\left| \\frac {(x - 1) (x ^ {2} - 2 x - 1)}{(x - 1) (2 x + 1)} + \\frac {2}{3} \\right| \\\\ = \\left| \\frac {x ^ {2} - 2 x - 1}{2 x + 1} + \\frac {2}{3} \\right| = \\left| \\frac {3 x ^ {2} - 2 x - 1}{3 (2 x + 1)} \\right| \\\\ = \\left| \\frac {(x - 1) (3 x + 1)}{3 (2 x + 1)} \\right|. \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0097-0112/images/page_100_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.605,
+            0.851,
+            0.633
+          ],
+          "content": "于是, $\\forall \\varepsilon > 0$, 取 $\\delta = \\min \\left\\{1, \\frac{\\varepsilon}{3}\\right\\}$, 则 $\\delta > 0$, 而当 $0 < |x - 1| < \\delta$ 时, 有 $0 < x < 2$. 从而"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.22,
+            0.644,
+            0.729,
+            0.681
+          ],
+          "content": "\\left| \\frac {x ^ {3} - 3 x ^ {2} + x + 1}{2 x ^ {2} - x - 1} + \\frac {2}{3} \\right| = \\frac {3 x + 1}{3 (2 x + 1)} | x - 1 | <   \\frac {7}{3} | x - 1 | <   \\varepsilon .",
+          "image_source": "../../raw/pages_0097-0112/images/page_100_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.695,
+            0.56,
+            0.729
+          ],
+          "content": "因此, 由极限定义, 得到 $\\lim_{x\\to 1}\\frac{x^3 - 3x^2 + x + 1}{2x^2 - x - 1} = -\\frac{2}{3}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.729,
+            0.573,
+            0.751
+          ],
+          "content": "例 4.1.2 利用极限定义证明:  $\\lim_{x\\to0}\\ln(1+x)=0$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.096,
+            0.752,
+            0.853,
+            0.816
+          ],
+          "content": "证明 对任何 $\\varepsilon \\in (0,1)$, $|\\ln(1 + x)| < \\varepsilon$ 等价于 $\\mathrm{e}^{-\\varepsilon} - 1 < x < \\mathrm{e}^{\\varepsilon} - 1$. 取 $\\delta = \\min \\left\\{\\mathrm{e}^{\\varepsilon} - 1, 1 - \\mathrm{e}^{-\\varepsilon}\\right\\}$. 则 $\\delta > 0$, 而当 $|x| < \\delta$ 时, 就有 $|\\ln(1 + x)| < \\varepsilon$. 因此, $\\lim_{x \\to 0} \\ln(1 + x) = 0$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.822,
+            0.785,
+            0.839
+          ],
+          "content": "将函数极限与数列极限作对比, 可以帮助我们更好地掌握函数极限的性质."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.845,
+            0.414,
+            0.863
+          ],
+          "content": "首先, 类似于定理 3.1.1, 我们有"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.868,
+            0.774,
+            0.892
+          ],
+          "content": "定理 4.1.1 设函数 f 在  $x_{0}$  的一个去心邻域内有定义， $\\lim_{x\\to x_{0}}f(x)=A$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.893,
+            0.816,
+            0.911
+          ],
+          "content": "(1) (保号性) 若 A > 0, 则存在  $\\delta > 0$ , 使得当  $0 < |x - x_{0}| < \\delta$  时, 有  $f(x) > 0$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.917,
+            0.787,
+            0.934
+          ],
+          "content": "一般地, 若 A > B, 则存在  $\\delta > 0$ , 使得当  $0 < |x - x_{0}| < \\delta$  时, 有  $f(x) > B$ ."
+        }
+      ]
+    },
+    {
+      "page_idx": 101,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.795,
+            0.055,
+            0.901,
+            0.068
+          ],
+          "content": "4.1 函数极限"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.92,
+            0.056,
+            0.94,
+            0.068
+          ],
+          "content": "89"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.109,
+            0.834,
+            0.138
+          ],
+          "content": "特别地, 若 $A > 0$, 则存在 $\\delta > 0$, 使得当 $0 < |x - x_0| < \\delta$ 时, 有 $f(x) > \\frac{A}{2}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.14,
+            0.9,
+            0.186
+          ],
+          "content": "(2) (保序性) 设函数 $g$ 在 $x_0$ 的一个去心邻域内有定义, 且存在 $\\delta > 0$ 使得对任何满足 $0 < |x - x_0| < \\delta$ 的 $x$, 有 $f(x) \\geqslant g(x)$. 若 $\\lim_{x \\to x_0} g(x) = B$, 则 $A \\geqslant B$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.187,
+            0.558,
+            0.209
+          ],
+          "content": "(3) (唯一性) 若  $\\lim_{x\\to x_{0}}f(x)=B,$  则 A=B."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.21,
+            0.823,
+            0.228
+          ],
+          "content": "(4) (局部有界性) 存在 $\\delta > 0$ 使得 $f$ 在 $(x_0 - \\delta, x_0) \\cup (x_0, x_0 + \\delta)$ 内有界."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.233,
+            0.903,
+            0.369
+          ],
+          "content": "定理的证明与定理 3.1.1 的证明完全类似, 我们把它留给读者. 在收敛数列有界性的证明中, 我们首先从  $\\lim_{n\\to+\\infty}a_n=A$  得到存在  $N\\geqslant1$ , 使得当  $n\\geqslant N$  时有  $|a_n-A|\\leqslant1$ , 这同我们从  $\\lim_{x\\to x_0}f(x)=A$  得到存在  $\\delta>0$ , 使得当  $0<|x-x_0|<\\delta$  时有  $|f(x)-A|\\leqslant1$  一样. 但区别之处在于  $a_N$  前面的项  $a_1,a_2,\\cdots,a_{N-1}$  是有限项, 从而必有界. 而 f 在  $(x_0-\\delta,x_0+\\delta)$  之外有无限多项, 因此, 只能得到 f 在  $x_0$  附近的局部有界性, 而不能简单地得到 f 在定义域内的整体有界性."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.374,
+            0.902,
+            0.417
+          ],
+          "content": "而与数列极限存在与否以及极限值与数列的前几项无关一样，函数极限 $\\lim_{x\\to x_0}f(x)$ 存在与否以及极限值为多少也只与 $f$ 在 $(x_0 - \\delta ,x_0)\\cup (x_0,x_0 + \\delta)$ 内的值有关."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.422,
+            0.902,
+            0.439
+          ],
+          "content": "同样地, 如同定理 3.1.3, 可建立函数极限的四则运算的性质. 我们把证明留给读者."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.445,
+            0.903,
+            0.492
+          ],
+          "content": "定理 4.1.2 设函数 f, g 在  $x_{0}$  的一个去心邻域内有定义， $\\lim_{x\\to x_{0}}f(x)=A,\\quad\\lim_{x\\to x_{0}}g(x)=B.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.494,
+            0.384,
+            0.51
+          ],
+          "content": "(1) 设  $\\alpha, \\beta$  为常数, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.375,
+            0.529,
+            0.677,
+            0.555
+          ],
+          "content": "\\lim _ {x \\to x _ {0}} \\left(\\alpha f (x) + \\beta g (x)\\right) = \\alpha A + \\beta B;",
+          "image_source": "../../raw/pages_0097-0112/images/page_101_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.191,
+            0.571,
+            0.427,
+            0.594
+          ],
+          "content": "(2) $\\lim_{x\\to x_0}\\left(f(x)g(x)\\right) = AB;$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.599,
+            0.482,
+            0.633
+          ],
+          "content": "(3) 若  $B \\neq 0$ ，则  $\\lim_{x \\to x_{0}} \\frac{f(x)}{g(x)} = \\frac{A}{B}$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.636,
+            0.903,
+            0.676
+          ],
+          "content": "函数极限与数列极限有着紧密的联系. 利用如下的 Heine 定理, 可以通过研究数列极限来得到函数极限的性质."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.682,
+            0.902,
+            0.734
+          ],
+          "content": "定理 4.1.3 设函数 f 在  $x_{0}$  的一个去心邻域 V 内有定义. 则  $\\lim_{x\\to x_{0}}f(x)=A$  当且仅当对 V 中任何趋于  $x_{0}$  的点列 $^{①}\\{x_{n}\\}$ ，有  $\\lim_{n\\to+\\infty}f(x_{n})=A$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.735,
+            0.709,
+            0.752
+          ],
+          "content": "证明 我们有 $\\delta_0 > 0$ 使得 $(x_0 - \\delta_0, x_0) \\cup (x_0, x_0 + \\delta_0) \\subseteq V$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.757,
+            0.905,
+            0.851
+          ],
+          "content": "(必要性) 设 $\\lim_{x\\to x_0}f(x) = A$，且 $\\{x_n\\}$ 是 $V$ 中趋于 $x_0$ 的一个点列。则 $\\forall \\varepsilon > 0$，存在 $\\delta \\in (0, \\delta_0)$，使得当 $0 < |x - x_0| < \\delta$ 时，有 $|f(x) - A| < \\varepsilon$。而对于上述 $\\delta > 0$，存在 $N \\geqslant 1$，使得当 $n \\geqslant N$ 时，有 $|x_n - x_0| < \\delta$。注意到 $x_n \\neq x_0$，可得此时有 $|f(x_n) - A| < \\varepsilon$。因此，$\\lim_{n\\to +\\infty}f(x_n) = A$。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.852,
+            0.905,
+            0.895
+          ],
+          "content": "(充分性) 若 $\\lim_{x\\to x_0}f(x)\\neq A$ (这里包括 $\\lim_{x\\to x_0}f(x)$ 不存在的情形), 则存在 $\\varepsilon_0 > 0$, 使得对任何 $\\delta \\in (0,\\delta_0)$, 都有 $x\\in (x_0 - \\delta ,x_0)\\cup (x_0,x_0 + \\delta)$ 使得 $|f(x) - A|\\geqslant \\varepsilon_0$. 特别地,"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.183,
+            0.918,
+            0.743,
+            0.935
+          ],
+          "content": "① 注意 V 不含  $x_{0}$ ，若 V 是  $x_{0}$  的邻域而不是去心邻域，则  $\\{x_{n}\\}$  需要不取  $x_{0}$ ."
+        }
+      ]
+    },
+    {
+      "page_idx": 102,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.063,
+            0.055,
+            0.084,
+            0.065
+          ],
+          "content": "90"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.102,
+            0.053,
+            0.235,
+            0.067
+          ],
+          "content": "第四章 函数极限"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.108,
+            0.857,
+            0.164
+          ],
+          "continues_prev": true,
+          "content": "对任何 $n \\geqslant 1$, 存在 $x_{n} \\in \\left(x_{0} - \\frac{1}{n}, x_{0}\\right) \\cup \\left(x_{0}, x_{0} + \\frac{1}{n}\\right)$ 满足 $|f(x_{n}) - A| \\geqslant \\varepsilon_{0}$. 这表明 $\\{x_{n}\\}$ 是 $V$ 中趋于 $x_{0}$ 的点列, 而 $\\{f(x_{n})\\}$ 不收敛于 $A$. 得到矛盾."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.194,
+            0.175,
+            0.854,
+            0.247
+          ],
+          "content": "注 4.1.1 若对  $(x_{0}-\\delta_{0},x_{0})\\cup(x_{0},x_{0}+\\delta_{0})$  中任意趋于  $x_{0}$  的点列  $\\{x_{n}\\}$ ， $\\lim_{n\\to+\\infty}f(x_{n})$  都存在，则易见极限值必然与点列  $\\{x_{n}\\}$  的选取无关，从而得到  $\\lim_{x\\to x_{0}}f(x)$  存在."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.194,
+            0.249,
+            0.854,
+            0.298
+          ],
+          "content": "换言之, Heine 定理可以描述为: $\\lim_{x\\to x_0}f(x)$ 存在当且仅当对任何趋于 $x_0$ 而不取 $x_0$ 的点列 $\\{x_n\\}$, 极限 $\\lim_{n\\to +\\infty}f(x_n)$ 都存在."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.315,
+            0.857,
+            0.356
+          ],
+          "content": "类似于数列极限, 我们可以给出  $\\lim_{x\\to x_{0}}f(x)=+\\infty,\\quad\\lim_{x\\to x_{0}}f(x)=-\\infty$  以及  $\\lim_{x\\to x_{0}}f(x)=\\infty$  的定义."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.364,
+            0.714,
+            0.382
+          ],
+          "content": "这样, 在定理 4.1.3 中, 把 A 换成  $+\\infty, -\\infty$  或  $\\infty$  时, 结论也成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.39,
+            0.853,
+            0.466
+          ],
+          "content": "如果在考察 $x \\to x_0$ 时, 只需要考察 $x > x_0$ 的情况, 就需要引入单侧极限. 具体地, 设 $\\delta_0 > 0$, $f$ 在 $(x_0, x_0 + \\delta_0)$ 内有定义, $A$ 为给定实数, 则 $f$ 在 $x_0$ 处的右 (侧) 极限 $\\lim_{x \\to x_0^+} f(x) = A$ 定义为"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.471,
+            0.743,
+            0.49
+          ],
+          "content": "$\\forall\\varepsilon>0,$  存在  $\\delta\\in(0,\\delta_{0})$  使得当  $0<x-x_{0}<\\delta$  时, 有  $|f(x)-A|<\\varepsilon.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.496,
+            0.346,
+            0.526
+          ],
+          "content": "时常记  $\\lim_{x\\to x_{0}^{+}}f(x)$  为  $f(x_{0}^{+})$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.531,
+            0.651,
+            0.56
+          ],
+          "content": "类似地定义 f 在  $x_{0}$  处的左 (侧) 极限  $f(x_{0}^{-}) \\equiv \\lim_{x \\to x_{0}^{-}} f(x)$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.565,
+            0.66,
+            0.595
+          ],
+          "content": "易见， $\\lim_{x\\to x_0}f(x) = A$ 当且仅当 $\\lim_{x\\to x_0^+}f(x) = \\lim_{x\\to x_0^-}f(x) = A.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.599,
+            0.851,
+            0.64
+          ],
+          "content": "我们也可以考虑自变量趋于无穷的函数极限，请读者自行给出相关定义（参见习题4)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.646,
+            0.419,
+            0.662
+          ],
+          "content": "可以对一般集合上的函数引入极限."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.668,
+            0.755,
+            0.695
+          ],
+          "content": "定义4.1.2 设 $E \\subseteq \\mathbb{R}, x_0 \\in E'$, $f$ 在 $E$ 上有定义. 则 $\\lim_{\\substack{x \\to x_0 \\\\ x \\in E}} f(x) = A$ 定义为"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.7,
+            0.751,
+            0.717
+          ],
+          "content": "$\\forall \\varepsilon > 0$ ，存在 $\\delta > 0$ ，使得当 $0 < |x - x_0| < \\delta$ ，且 $x \\in E$ 时，有 $|f(x) - A| < \\varepsilon$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.722,
+            0.853,
+            0.816
+          ],
+          "content": "这样, 当 $f$ 在 $x_0$ 的一个 (去心) 邻域 $V$ 内有定义, 则 $f$ 在点 $x_0$ 处的右极限 $\\lim_{x \\to x_0^+} f(x)$ 是 $\\lim_{x \\to x_0 \\atop x \\in (x_0, +\\infty) \\cap V} f(x)$. 而 $f$ 在点 $x_0$ 处的左极限 $\\lim_{x \\to x_0^-} f(x)$ 是 $\\lim_{x \\to x_0 \\atop x \\in (-\\infty, x_0) \\cap V} f(x)$. 数列极限 $\\lim_{n \\to +\\infty} a_n$ 其实就是 $\\lim_{\\substack{x \\to +\\infty \\\\ x \\in \\mathbb{N}_+}} a_x$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.822,
+            0.853,
+            0.862
+          ],
+          "content": "对于一般集合 E 上的函数以及  $x_{0} \\in E'$ ，对应于极限四则运算以及 Heine 定理，只要把定理条件中  $x_{0}$  的去心邻域换成 E，定理 4.1.2 和定理 4.1.3 仍成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.87,
+            0.506,
+            0.887
+          ],
+          "content": "对于函数极限, 同样可以引入上、下极限."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.894,
+            0.853,
+            0.935
+          ],
+          "content": "定义 4.1.3 设 f 在  $x_{0}$  的一个去心邻域 V 内有定义, 则 f 在点  $x_{0}$  处的上、下极限依次定义为"
+        }
+      ]
+    },
+    {
+      "page_idx": 103,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.789,
+            0.056,
+            0.893,
+            0.069
+          ],
+          "content": "4.1 函数极限"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.913,
+            0.057,
+            0.931,
+            0.068
+          ],
+          "content": "91"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.202,
+            0.113,
+            0.834,
+            0.143
+          ],
+          "content": "\\varlimsup_ {x \\to x _ {0}} f (x) := \\lim _ {\\delta \\to 0 ^ {+}} \\sup _ {0 <   | x - x _ {0} | <   \\delta} f (x), \\quad \\varliminf_ {x \\to x _ {0}} f (x) := \\lim _ {\\delta \\to 0 ^ {+}} \\inf _ {0 <   | x - x _ {0} | <   \\delta} f (x).",
+          "image_source": "../../raw/pages_0097-0112/images/page_103_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.156,
+            0.893,
+            0.198
+          ],
+          "content": "自然可以对单侧极限引入上、下极限. 请读者仿照数列上、下极限的性质, 建立函数上、下极限的性质."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.203,
+            0.893,
+            0.244
+          ],
+          "content": "另一方面, 对于函数, 类似地定义无穷小量、无穷大量, 并引入 $o, O, \\sim$ 等记号, 在此不再赘述."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.185,
+            0.273,
+            0.277,
+            0.293
+          ],
+          "level": 2,
+          "content": "习题4.1"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.141,
+            0.318,
+            0.894,
+            0.472
+          ],
+          "sub_type": "text",
+          "content": "1. 设 a > 0, 利用函数极限定义证明  $\\lim_{x \\to a} \\sqrt{x} = \\sqrt{a}$ .\n2. 计算极限  $\\lim_{x\\to2}\\left(\\frac{7x^{3}-2x^{2}-17x-19}{2x^{3}+3xx^{2}-11x-6}-\\frac{1}{2x^{2}-3x-2}\\right)$ .\n3. 设 $\\psi, \\varphi$ 为定义在 $(0, +\\infty)$ 上的周期函数, 满足 $\\lim_{x \\to +\\infty} \\left( \\psi(x) - \\varphi(x) \\right) = 0$. 证明: $\\psi \\equiv \\varphi$.\n4. 抽取下表中的几个极限类型, 写出相关的定义 (其中 $a, A$ 为实数)、Cauchy 收敛准则和 Heine 定理."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.143,
+            0.489,
+            0.896,
+            0.817
+          ],
+          "content": "| 自变量变化 | 极限值 | 自变量变化 | 极限值 |\n| --- | --- | --- | --- |\n| $x \\rightarrow a$ | $A$ | $x \\rightarrow a^{+}$ | $A$ |\n| $x \\rightarrow a^{-}$ | $A$ | $x \\rightarrow a$ | $+\\infty$ |\n| $x \\rightarrow a^{+}$ | $+\\infty$ | $x \\rightarrow a^{-}$ | $+\\infty$ |\n| $x \\rightarrow a$ | $-\\infty$ | $x \\rightarrow a^{+}$ | $-\\infty$ |\n| $x \\rightarrow a^{-}$ | $-\\infty$ | $x \\rightarrow a$ | $\\infty$ |\n| $x \\rightarrow a^{+}$ | $\\infty$ | $x \\rightarrow a^{-}$ | $\\infty$ |\n| $x \\rightarrow \\infty$ | $A$ | $x \\rightarrow +\\infty$ | $A$ |\n| $x \\rightarrow -\\infty$ | $A$ | $x \\rightarrow \\infty$ | $+\\infty$ |\n| $x \\rightarrow +\\infty$ | $+\\infty$ | $x \\rightarrow -\\infty$ | $+\\infty$ |\n| $x \\rightarrow \\infty$ | $-\\infty$ | $x \\rightarrow +\\infty$ | $-\\infty$ |\n| $x \\rightarrow -\\infty$ | $-\\infty$ | $x \\rightarrow \\infty$ | $\\infty$ |\n| $x \\rightarrow +\\infty$ | $\\infty$ | $x \\rightarrow -\\infty$ | $\\infty$ |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0097-0112/images/page_103_table_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.184,
+            0.832,
+            0.804,
+            0.868
+          ],
+          "content": "5. 设 $a_0, a_1, \\ell, \\alpha$ 为正数, $a_1 \\neq a_0$, $a_{n+1} = \\frac{(\\ell + n^\\alpha)a_n^2}{\\ell a_n + n^\\alpha a_{n-1}} (n \\geqslant 1)$. 证明:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.182,
+            0.87,
+            0.542,
+            0.935
+          ],
+          "sub_type": "text",
+          "content": "(1) 若  $\\alpha < 1$ ，则  $\\{a_{n}\\}$  有正的极限；\n(2) 若  $\\alpha = 1, \\ell > 1$ ，则  $\\{a_{n}\\}$  有正的极限；\n(3) 若  $\\alpha > 1$ ，则  $\\{a_{n}\\}$  发散或极限为零；"
+        }
+      ]
+    },
+    {
+      "page_idx": 104,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.069,
+            0.055,
+            0.091,
+            0.066
+          ],
+          "content": "92"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.053,
+            0.24,
+            0.068
+          ],
+          "content": "第四章 函数极限"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.11,
+            0.526,
+            0.129
+          ],
+          "content": "(4) 若  $\\alpha = \\ell = 1$ ，则  $\\{a_{n}\\}$  发散或极限为零."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.107,
+            0.181,
+            0.436,
+            0.205
+          ],
+          "level": 2,
+          "content": "4.2 基本定理与函数极限"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.252,
+            0.816,
+            0.27
+          ],
+          "content": "我们将之前与极限相关的基本定理与其他一些定理, 与函数极限作一个联结."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.276,
+            0.538,
+            0.293
+          ],
+          "content": "函数极限的 Cauchy 收敛准则可以表述如下."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.299,
+            0.862,
+            0.371
+          ],
+          "content": "定理 4.2.1 设函数 f 在  $x_{0}$  的一个去心邻域 V 内有定义. 则  $\\lim_{x\\to x_{0}}f(x)$  存在当且仅当:  $\\forall\\varepsilon>0,$  存在  $\\delta>0,$  使得当  $x,y\\in(x_{0}-\\delta,x_{0})\\cup(x_{0},x_{0}+\\delta)$  时, 有  $|f(x)-f(y)|<\\varepsilon.$ \n同数列极限一样, Cauchy 收敛准则相当于说  $\\lim_{x\\to x_{0}}f(x)$  存在当且仅当"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.314,
+            0.384,
+            0.86,
+            0.419
+          ],
+          "content": "\\lim_{\\delta \\to 0^{+}}\\sup_{\\substack{|x - x_{0}| <   \\delta ,|y - x_{0}| <   \\delta \\\\ x,y\\in V}}|f(x) - f(y)| = 0. \\tag{4.2.1}",
+          "image_source": "../../raw/pages_0097-0112/images/page_104_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.435,
+            0.71,
+            0.453
+          ],
+          "content": "证明 由极限定义容易得到必要性. 细节留给读者. 下证充分性."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.458,
+            0.861,
+            0.506
+          ],
+          "content": "设 (4.2.1) 式成立. 任取 $V$ 中趋于 $x_0$ 的点列 $\\{x_n\\}$. 则由 (4.2.1) 式, $\\{f(x_n)\\}$ 是 Cauchy 列, 从而它收敛. 由 Heine 定理 (以及注 4.1.1), $\\lim_{x \\to x_0} f(x)$ 存在. $\\square$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.506,
+            0.432,
+            0.523
+          ],
+          "content": "对于函数极限, 同样有夹逼准则."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.529,
+            0.86,
+            0.577
+          ],
+          "content": "定理 4.2.2 设  $\\delta > 0$ ，在  $(x_{0} - \\delta, x_{0}) \\cup (x_{0}, x_{0} + \\delta)$  内有  $\\psi \\leqslant f \\leqslant \\psi$ 。若  $\\lim_{x \\to x_{0}} \\psi(x) = \\lim_{x \\to x_{0}} \\varphi(x) = A$ ，则  $\\lim_{x \\to x_{0}} f(x) = A$ 。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.577,
+            0.781,
+            0.594
+          ],
+          "content": "对应于单调收敛定理, 结合数列极限的单调收敛定理与 Heine 定理, 可得"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.599,
+            0.735,
+            0.629
+          ],
+          "content": "定理 4.2.3 设 f 在  $(x_{0}, x_{0} + \\delta)$  内单调有界，则  $\\lim_{x \\to x_{0}^{+}} f(x)$  存在."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.632,
+            0.86,
+            0.692
+          ],
+          "content": "这里要注意的是 $f$ 在 $(x_0 - \\delta, x_0) \\cup (x_0, x_0 + \\delta)$ 内单调有界只能推出 $\\lim_{x \\to x_0^+} f(x)$ 和 $\\lim_{x \\to x_0^-} f(x)$ 都存在，但不能推出 $\\lim_{x \\to x_0} f(x)$ 存在."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.696,
+            0.492,
+            0.713
+          ],
+          "content": "对应于致密性定理, 以下结果是平凡的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.719,
+            0.859,
+            0.761
+          ],
+          "content": "定理 4.2.4 设  $\\delta > 0, f$  在  $(x_{0}, x_{0} + \\delta)$  内有界，则存在  $(x_{0}, x_{0} + \\delta)$  内趋于  $x_{0}$  的点列  $\\{x_{n}\\}$  使得  $\\{f(x_{n})\\}$  收敛."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.766,
+            0.859,
+            0.807
+          ],
+          "content": "在致密性定理的运用方面, 如下结果体现了唯一性对于存在性的重要意义, 其思想广泛运用于数学的许多学科."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.813,
+            0.86,
+            0.866
+          ],
+          "content": "定理4.2.5 设 $\\delta > 0, f$ 在 $(x_0, x_0 + \\delta)$ 内有界, $A$ 给定. 对于 $(x_0, x_0 + \\delta)$ 内趋于 $x_0$ 的点列 $\\{x_n\\}$, 只要 $\\{f(x_n)\\}$ 收敛, 就有 $\\lim_{n \\to +\\infty} f(x_n) = A$. 则 $\\lim_{x \\to x_0^+} f(x) = A$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.868,
+            0.86,
+            0.938
+          ],
+          "content": "证明 若 $\\lim_{x\\to x_0^+}f(x)\\neq A$ (这里包括 $\\lim_{x\\to x_0^+}f(x)$ 不存在的情形), 则存在 $\\varepsilon_0 > 0$, 使得对任何 $n\\geqslant \\frac{1}{\\delta}$, 存在 $x_{n}\\in \\left(x_{0},x_{0} + \\frac{1}{n}\\right)$ 使得 $|f(x_n) - A|\\geqslant \\varepsilon_0$. 因 $f$ 在 $(x_0,x_0 + \\delta)$ 内有"
+        }
+      ]
+    },
+    {
+      "page_idx": 105,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.69,
+            0.055,
+            0.893,
+            0.069
+          ],
+          "content": "4.3 几个基础性的函数极限"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.912,
+            0.057,
+            0.933,
+            0.068
+          ],
+          "content": "93"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.111,
+            0.894,
+            0.187
+          ],
+          "continues_prev": true,
+          "content": "界, 因此, $\\{f(x_n)\\}$ 有界, 从而有收敛子列. 不妨设 $\\{f(x_n)\\}$ 本身收敛. 注意到 $\\{x_n\\}$ 是各项异于 $x_0$ 而收敛于 $x_0$ 的点列, 根据定理假设, 有 $\\lim_{n\\to +\\infty}f(x_n) = A$. 这与 $|f(x_n) - A| \\geqslant \\varepsilon_0$ 矛盾. 因此, 必有 $\\lim_{x\\to x_0^+}f(x) = A$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.191,
+            0.785,
+            0.209
+          ],
+          "content": "事实上, 在例 3.3.5 中, 我们正是利用定理 4.2.5 的思想来解决问题的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.216,
+            0.521,
+            0.233
+          ],
+          "content": "对应于 Stolz 公式, 我们给出如下结果."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.239,
+            0.62,
+            0.258
+          ],
+          "content": "定理 4.2.6 设 f, g 在  $(a, +\\infty)$  内局部有界, 且"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.182,
+            0.264,
+            0.531,
+            0.311
+          ],
+          "sub_type": "text",
+          "content": "(1) 对于任何 x > a, 有  $g(x + 1) > g(x)$ ;\n(2) $\\lim_{x\\to +\\infty}g(x) = +\\infty,$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.314,
+            0.167,
+            0.329
+          ],
+          "content": "则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.154,
+            0.34,
+            0.894,
+            0.378
+          ],
+          "content": "\\varliminf_ {x \\to + \\infty} \\frac {f (x + 1) - f (x)}{g (x + 1) - g (x)} \\leqslant \\varliminf_ {x \\to + \\infty} \\frac {f (x)}{g (x)} \\leqslant \\varlimsup_ {x \\to + \\infty} \\frac {f (x)}{g (x)} \\leqslant \\varlimsup_ {x \\to + \\infty} \\frac {f (x + 1) - f (x)}{g (x + 1) - g (x)}. \\tag {4.2.2}",
+          "image_source": "../../raw/pages_0097-0112/images/page_105_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.182,
+            0.396,
+            0.374,
+            0.413
+          ],
+          "content": "我们把证明留给读者."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.185,
+            0.443,
+            0.28,
+            0.461
+          ],
+          "level": 2,
+          "content": "习题4.2"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.184,
+            0.482,
+            0.896,
+            0.546
+          ],
+          "sub_type": "text",
+          "content": "1. 证明 $\\lim_{n\\to +\\infty}n\\sum_{k = 1}^{n}\\left|\\sqrt{1 + \\frac{2k}{n^3}} -1 - \\frac{k}{n^3}\\right| = 0$ 并由此计算 $\\lim_{n\\to +\\infty}n\\sum_{k = 1}^{n}\\left(\\sqrt{1 + \\frac{2k}{n^3}} -1\\right)$.\n2. 设数列 $\\{x_{n}\\}, \\{y_{n}\\}$ 满足"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.372,
+            0.561,
+            0.659,
+            0.634
+          ],
+          "content": "\\left\\{ \\begin{array}{l} x _ {n} ^ {2} + y _ {n} ^ {2} + 2 y _ {n} = 1 + \\ln \\frac {n + 1}{n}, \\\\ x _ {n} + \\Big (1 + \\frac {1}{3 n} \\Big) y _ {n} = \\frac {1}{\\sqrt [ n ]{n}}. \\end{array} \\right.",
+          "image_source": "../../raw/pages_0097-0112/images/page_105_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.649,
+            0.421,
+            0.667
+          ],
+          "content": "证明  $\\{x_{n}\\},\\{y_{n}\\}$  收敛并求极限."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.184,
+            0.67,
+            0.502,
+            0.74
+          ],
+          "sub_type": "text",
+          "content": "3. 设  $\\alpha \\in R$ , 计算  $\\lim_{x \\to 0} \\frac{(1 + x)^{\\alpha} - 1}{x}$ .\n4. 仿照习题 1 编写一个习题.\n5. 证明定理 4.2.6."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.144,
+            0.795,
+            0.502,
+            0.817
+          ],
+          "level": 2,
+          "content": "4.3 几个基础性的函数极限"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.182,
+            0.86,
+            0.894,
+            0.907
+          ],
+          "content": "本节中, 我们将给出数列极限中一些重要极限的相应结果, 并简单介绍极限 $\\lim_{x\\to 0}\\frac{\\sin x}{x}$. 首先, 由例3.1.2导出相关的结果."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.183,
+            0.912,
+            0.642,
+            0.937
+          ],
+          "content": "例 4.3.1 设 a > 0, 证明:  $\\lim_{x \\to 0} a^{x} = 1$ ,  $\\lim_{x \\to \\infty} a^{\\frac{1}{x}} = 1$ ."
+        }
+      ]
+    },
+    {
+      "page_idx": 106,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.07,
+            0.055,
+            0.091,
+            0.066
+          ],
+          "content": "94"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.109,
+            0.053,
+            0.242,
+            0.068
+          ],
+          "content": "第四章 函数极限"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.11,
+            0.443,
+            0.128
+          ],
+          "content": "证明 先设  $a \\geqslant 1$ ，则当 x > 1 时，"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.42,
+            0.145,
+            0.548,
+            0.166
+          ],
+          "content": "1 \\leqslant a ^ {\\frac {1}{x}} \\leqslant a ^ {\\frac {1}{[ x ]}}.",
+          "image_source": "../../raw/pages_0097-0112/images/page_106_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.184,
+            0.803,
+            0.211
+          ],
+          "content": "于是, 由 $\\lim_{x\\to +\\infty}a^{\\frac{1}{[x]}} = \\lim_{n\\to +\\infty}a^{\\frac{1}{n}} = 1$ 以及夹逼准则, 得到 $\\lim_{x\\to +\\infty}a^{\\frac{1}{x}} = 1$. 进一步,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.365,
+            0.228,
+            0.603,
+            0.262
+          ],
+          "content": "\\lim _ {x \\to - \\infty} a ^ {\\frac {1}{x}} = \\lim _ {x \\to + \\infty} \\frac {1}{a ^ {\\frac {1}{x}}} = 1.",
+          "image_source": "../../raw/pages_0097-0112/images/page_106_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.277,
+            0.273,
+            0.302
+          ],
+          "content": "因此， $\\lim_{x\\to\\infty}a^{\\frac{1}{x}}=1.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.304,
+            0.293,
+            0.32
+          ],
+          "content": "当 0 < a < 1 时,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.36,
+            0.321,
+            0.608,
+            0.358
+          ],
+          "content": "\\lim _ {x \\to \\infty} a ^ {\\frac {1}{x}} = \\lim _ {x \\to \\infty} \\frac {1}{(1 / a) ^ {\\frac {1}{x}}} = 1.",
+          "image_source": "../../raw/pages_0097-0112/images/page_106_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.37,
+            0.641,
+            0.395
+          ],
+          "content": "这表明对任何 $a > 0$ 成立 $\\lim_{x\\to \\infty}a^{\\frac{1}{x}} = 1.$ 这等价于 $\\lim_{x\\to 0}a^x = 1.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.396,
+            0.413,
+            0.412
+          ],
+          "content": "接下来是例 3.1.3 对应的极限."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.418,
+            0.561,
+            0.445
+          ],
+          "content": "例4.3.2 证明: $\\lim_{x\\to +\\infty}x^{\\frac{1}{x}} = 1,\\quad \\lim_{x\\to 0^{+}}x^{x} = 1.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.447,
+            0.86,
+            0.508
+          ],
+          "content": "证明 对于 $x > 2$, 我们有 $1 \\leqslant x^{\\frac{1}{x}} \\leqslant ([x]^2)^{\\frac{1}{[x]}} = ([x])^{\\frac{2}{[x]}}$. 由此结合 $\\lim_{n \\to +\\infty} n^{\\frac{1}{n}} = 1$ 即得 $\\lim_{x \\to +\\infty} x^{\\frac{1}{x}} = 1$. 这又相当于 $\\lim_{x \\to 0^+} \\frac{1}{x^x} = 1$, 亦即 $\\lim_{x \\to 0^+} x^x = 1$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.508,
+            0.831,
+            0.526
+          ],
+          "content": "自然, 例 4.3.1 的结果可以由例 4.3.2 和夹逼准则得到. 类似地, 由例 3.1.4 可得"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.532,
+            0.513,
+            0.555
+          ],
+          "content": "例 4.3.3 设 0 < q < 1, 则  $\\lim_{x \\to +\\infty} q^{x} = 0$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.556,
+            0.399,
+            0.572
+          ],
+          "content": "我们把本例的证明留给读者."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.572,
+            0.86,
+            0.627
+          ],
+          "content": "在定理 3.3.3 中, 我们给出了重要极限  $e = \\lim_{n \\to +\\infty} \\left(1 + \\frac{1}{n}\\right)^n$  的存在性. 现在, 我们将它推广到连续变量情形."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.633,
+            0.298,
+            0.649
+          ],
+          "content": "例 4.3.4 证明:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.33,
+            0.662,
+            0.86,
+            0.695
+          ],
+          "content": "\\lim _ {x \\to \\infty} \\left(1 + \\frac {1}{x}\\right) ^ {x} = \\lim _ {x \\to 0} (1 + x) ^ {\\frac {1}{x}} = \\mathrm{e}. \\tag {4.3.1}",
+          "image_source": "../../raw/pages_0097-0112/images/page_106_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.708,
+            0.377,
+            0.725
+          ],
+          "content": "证明 对于 $x > 1$ ，我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.281,
+            0.736,
+            0.686,
+            0.775
+          ],
+          "content": "\\left(1 + \\frac {1}{[ x ] + 1}\\right) ^ {[ x ]} <   \\left(1 + \\frac {1}{x}\\right) ^ {x} <   \\left(1 + \\frac {1}{[ x ]}\\right) ^ {[ x ] + 1}.",
+          "image_source": "../../raw/pages_0097-0112/images/page_106_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.79,
+            0.267,
+            0.807
+          ],
+          "content": "由 e 的定义, 可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.129,
+            0.822,
+            0.838,
+            0.864
+          ],
+          "content": "\\lim _ {x \\to + \\infty} \\left(1 + \\frac {1}{[ x ] + 1}\\right) ^ {[ x ]} = \\lim _ {x \\to + \\infty} \\left(1 + \\frac {1}{[ x ] + 1}\\right) ^ {[ x ] + 1} = \\lim _ {n \\to + \\infty} \\left(1 + \\frac {1}{n + 1}\\right) ^ {n + 1} = \\mathrm{e}",
+          "image_source": "../../raw/pages_0097-0112/images/page_106_equation_22.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.879,
+            0.152,
+            0.894
+          ],
+          "content": "以及"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.185,
+            0.897,
+            0.779,
+            0.939
+          ],
+          "content": "\\lim _ {x \\to + \\infty} \\left(1 + \\frac {1}{[ x ]}\\right) ^ {[ x ] + 1} = \\lim _ {x \\to + \\infty} \\left(1 + \\frac {1}{[ x ]}\\right) ^ {[ x ]} = \\lim _ {n \\to + \\infty} \\left(1 + \\frac {1}{n}\\right) ^ {n} = \\mathrm{e}.",
+          "image_source": "../../raw/pages_0097-0112/images/page_106_equation_24.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 107,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.693,
+            0.053,
+            0.896,
+            0.067
+          ],
+          "content": "4.3 几个基础性的函数极限"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.914,
+            0.054,
+            0.935,
+            0.066
+          ],
+          "content": "95"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.111,
+            0.332,
+            0.127
+          ],
+          "content": "从而由夹逼准则得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.429,
+            0.124,
+            0.893,
+            0.159
+          ],
+          "content": "\\lim _ {x \\to + \\infty} \\left(1 + \\frac {1}{x}\\right) ^ {x} = \\mathrm{e}. \\tag {4.3.2}",
+          "image_source": "../../raw/pages_0097-0112/images/page_107_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.171,
+            0.192,
+            0.187
+          ],
+          "content": "进而"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.149,
+            0.197,
+            0.896,
+            0.23
+          ],
+          "content": "\\lim _ {x \\to - \\infty} \\left(1 + \\frac {1}{x}\\right) ^ {x} = \\lim _ {x \\to + \\infty} \\left(1 - \\frac {1}{x}\\right) ^ {- x} = \\lim _ {x \\to + \\infty} \\left(1 + \\frac {1}{x - 1}\\right) ^ {x} = \\lim _ {x \\to + \\infty} \\left(1 + \\frac {1}{x - 1}\\right) ^ {x - 1} = \\mathrm{e}.",
+          "image_source": "../../raw/pages_0097-0112/images/page_107_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.242,
+            0.361,
+            0.259
+          ],
+          "content": "上式结合 (4.3.2) 式即得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.437,
+            0.258,
+            0.608,
+            0.289
+          ],
+          "content": "\\lim _ {x \\to \\infty} \\left(1 + \\frac {1}{x}\\right) ^ {x} = \\mathrm{e}.",
+          "image_source": "../../raw/pages_0097-0112/images/page_107_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.297,
+            0.245,
+            0.314
+          ],
+          "content": "等价地, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.451,
+            0.329,
+            0.897,
+            0.354
+          ],
+          "content": "\\lim _ {x \\to 0} (1 + x) ^ {\\frac {1}{x}} = \\mathrm{e}. \\tag * {\\square}",
+          "image_source": "../../raw/pages_0097-0112/images/page_107_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.367,
+            0.543,
+            0.385
+          ],
+          "content": "类似地, 利用 (3.3.7) 式或 (3.3.6) 式可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.445,
+            0.398,
+            0.896,
+            0.429
+          ],
+          "content": "\\lim _ {x \\to 0} \\frac {\\ln (1 + x)}{x} = 1. \\tag {4.3.3}",
+          "image_source": "../../raw/pages_0097-0112/images/page_107_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.442,
+            0.528,
+            0.46
+          ],
+          "content": "而利用定理2.4.4, 可以得到 $\\forall \\alpha \\in (0,1]$, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.361,
+            0.472,
+            0.689,
+            0.506
+          ],
+          "content": "\\frac {\\alpha}{1 + x} \\leqslant \\frac {(1 + x) ^ {\\alpha} - 1}{x} \\leqslant \\alpha , \\quad x > 0.",
+          "image_source": "../../raw/pages_0097-0112/images/page_107_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.517,
+            0.337,
+            0.534
+          ],
+          "content": "于是由夹逼准则得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.422,
+            0.542,
+            0.627,
+            0.576
+          ],
+          "content": "\\lim _ {x \\to 0 ^ {+}} \\frac {(1 + x) ^ {\\alpha} - 1}{x} = \\alpha .",
+          "image_source": "../../raw/pages_0097-0112/images/page_107_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.587,
+            0.457,
+            0.605
+          ],
+          "content": "容易把上述结果推广为 $\\forall \\alpha \\in \\mathbb{R}$ ，有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.431,
+            0.614,
+            0.897,
+            0.645
+          ],
+          "content": "\\lim _ {x \\to 0} \\frac {(1 + x) ^ {\\alpha} - 1}{x} = \\alpha . \\tag {4.3.4}",
+          "image_source": "../../raw/pages_0097-0112/images/page_107_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.657,
+            0.892,
+            0.675
+          ],
+          "content": "之后,我们将利用连续性,结合其他极限得到它们. 目前,把它们的详细证明留给读者."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.681,
+            0.901,
+            0.726
+          ],
+          "content": "前面的例子中, 涉及的函数是幂函数、指数函数与对数函数. 要考察三角函数与反三角函数, 尤其是今后考察这些函数的导数时, 就自然地会涉及极限  $\\lim_{x\\to0}\\frac{\\sin x}{x}$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.727,
+            0.902,
+            0.815
+          ],
+          "content": "在分析上要严格地定义三角函数, 通常有三种方式. 其一与弧度相关, 是利用单位圆周上圆弧的弧长来引入弧度, 这需要用到定积分; 其二是利用微分方程来定义; 其三则是利用极限或级数来定义 (有兴趣的读者可以参见文献 [43,44]). 总的说来, 在介绍这些知识之前, 三角函数是没有严格定义过的, 其相关性质自然也还没有严格地建立起来."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.821,
+            0.902,
+            0.886
+          ],
+          "content": "由于三角函数和反三角函数可以在接下来的讨论中提供丰富的例子, 因此我们将在承认相关知识的情况下使用它们. 而在第五章第 5 节, 我们将介绍如何利用极限或级数来严格地定义三角函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.891,
+            0.902,
+            0.933
+          ],
+          "content": "在中学, $\\sin x$ 中的 $x$ 是弧度. 当单位圆周的一段弧的弧长为 $x$ 时, 对应的圆心角的弧度就是 $x$. 曲线的弧长通过折线长度的极限来定义. 特别地, 单位圆周的长度是内"
+        }
+      ]
+    },
+    {
+      "page_idx": 108,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.067,
+            0.055,
+            0.086,
+            0.066
+          ],
+          "content": "96"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.105,
+            0.053,
+            0.238,
+            0.068
+          ],
+          "content": "第四章 函数极限"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.109,
+            0.857,
+            0.194
+          ],
+          "continues_prev": true,
+          "content": "接多边形周长的极限. 换言之, 如图 4.1 所示, 记 $P_{0}P_{1}$ 的弧长为 $x$, 直线段 $P_{0}P_{1}$ 的长为 $|P_{0}P_{1}|$, 则弧长的定义相当于说, $\\lim_{x \\to 0^{+}} \\frac{|P_{0}P_{1}|}{x} = 1$. 注意到 $|P_{0}P_{1}| = 2\\sin \\frac{x}{2}$. 因此, $\\lim_{x \\to 0^{+}} \\frac{2\\sin \\frac{x}{2}}{x} = 1$. 即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.41,
+            0.209,
+            0.855,
+            0.242
+          ],
+          "content": "\\lim _ {x \\to 0 ^ {+}} \\frac {\\sin x}{x} = 1. \\tag {4.3.5}",
+          "image_source": "../../raw/pages_0097-0112/images/page_108_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.253,
+            0.855,
+            0.293
+          ],
+          "content": "也就是说, 在把 $x$ 理解为弧度时, (4.3.5) 式本质上是一种定义. 由于 $\\sin$ 是奇函数, 由 (4.3.5) 式又可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.415,
+            0.305,
+            0.855,
+            0.337
+          ],
+          "content": "\\lim _ {x \\to 0} \\frac {\\sin x}{x} = 1. \\tag {4.3.6}",
+          "image_source": "../../raw/pages_0097-0112/images/page_108_equation_5.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.364,
+            0.368,
+            0.596,
+            0.515
+          ],
+          "sub_type": "text_image",
+          "content": "P₁\nx\nP₀",
+          "captions": [
+            {
+              "bbox": [
+                0.451,
+                0.522,
+                0.506,
+                0.537
+              ],
+              "content": "图4.1"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0097-0112/images/page_108_image_6.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.144,
+            0.566,
+            0.239,
+            0.585
+          ],
+          "level": 2,
+          "content": "习题4.3"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.143,
+            0.611,
+            0.855,
+            0.759
+          ],
+          "sub_type": "text",
+          "content": "1. 给出例 4.3.3 的证明.\n2. 详细证明 (4.3.3) 式.\n3. 设 $E \\subseteq \\mathbb{R}, f: E \\to \\mathbb{R}, x_0 \\in E'$. 证明: $\\lim_{\\substack{x \\to x_0 \\\\ x \\in E}} f(x)$ 存在当且仅当对 $E \\setminus \\{x_0\\}$ 中任何趋于 $x_0$ 的点列 $\\{x_n\\}$, 极限 $\\lim_{n \\to +\\infty} f(x_n)$ 存在.\n4. 证明对于 $x \\neq 0$, 有 $\\prod_{n=1}^{\\infty} \\cos \\frac{x}{2^n} = \\frac{\\sin x}{x}$. 特别地, 有 Viète 公式: $\\prod_{n=2}^{\\infty} \\cos \\frac{\\pi}{2^n} = \\frac{2}{\\pi}$."
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "created_at": "2025-11-20T03:44:46+08:00",
+      "modified_at": "2025-11-20T03:47:17+08:00",
+      "page_count": 856,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 0,
+          "width_pt": 793.3150024414062,
+          "height_pt": 733.9668619632721
+        },
+        {
+          "page_idx": 1,
+          "width_pt": 793.3150024414062,
+          "height_pt": 733.9668619632721
+        },
+        {
+          "page_idx": 2,
+          "width_pt": 512.0,
+          "height_pt": 732.0
+        },
+        {
+          "page_idx": 3,
+          "width_pt": 511.0,
+          "height_pt": 743.0
+        },
+        {
+          "page_idx": 4,
+          "width_pt": 511.0,
+          "height_pt": 743.0
+        },
+        {
+          "page_idx": 5,
+          "width_pt": 511.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 6,
+          "width_pt": 510.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 7,
+          "width_pt": 511.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 8,
+          "width_pt": 511.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 9,
+          "width_pt": 512.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 10,
+          "width_pt": 511.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 11,
+          "width_pt": 511.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 12,
+          "width_pt": 510.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 13,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 14,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 15,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

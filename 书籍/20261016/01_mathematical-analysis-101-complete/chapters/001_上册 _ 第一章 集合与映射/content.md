@@ -1,0 +1,842 @@
+# 上册 / 第一章 集合与映射
+
+原始 PDF 第 17–33 页。
+
+## 第一章
+
+## 集合与映射
+
+---
+
+2
+
+第一章 集合与映射
+
+## 1.1 集合
+
+新概念的定义, 总是基于比它更基本的概念. 这样, 总有一个概念是最基本的. 集合正是这样一个概念. 我们只能描述它, 而不能定义它.
+
+## 1.1.1 集合论简介
+
+集合 (简称集) 是指一些具有特定性质的对象的总体, 这些对象称为集合的元素. 集合论创始人 Cantor $^{①}$  对集合的刻画为 $^{②}$ “吾人直观或思维之对象, 如为相异而确定之物, 其总括之全体即为集合, 其组成集合之物谓之集合之元素”.
+
+通常用大写字母 $A, B, C$ 等表示集合，而用小写字母 $a, b, c$ 等表示元素.
+
+一个元素 $a$ 是否是集合 $A$ 的元素必须是确定的. 同样, 集合是由它所有元素确定的. 若两个集合的元素完全相同, 则它们相等.
+
+这种确定性与我们是否有能力判断具体一个 $a$ 是否是 $A$ 的元素无关. 例如, 若 $a$ 为圆周率 $\pi$ 与自然对数的底 $\mathrm{e}$ 的和 $\pi + \mathrm{e}$, 而 $A$ 为所有无理数组成的集合. 到目前为止, 我们还无法判断这个 $a$ 是否是 $A$ 的元素. 但 “$a$ 是 $A$ 的元素” 和 “$a$ 不是 $A$ 的元素” 中, 有且只有一个成立. 而且, 究竟是哪一个成立, 是确定的, 并不依赖于我们的认识能力.
+
+以上要求抽象为如下的外延原则与概括原则.
+
+外延原则 一集合是由它的元素唯一确定的.
+
+概括原则 对于描述或刻画人们直观或思维的对象 $x$ 的任一性质或条件 $P(x)$, 都存在一集合 $S$, 它的元素恰好是具有性质 $P$ 的那些对象.
+
+表示一个集合的方式通常有两种: 枚举法和描述法. 例如由数字 1,2,3 组成的集合可以用枚举法表示为
+
+$$
+A = \{1, 2, 3 \}.
+$$
+
+自然数集 $^{③}$ 可以表示为
+
+$$
+\mathbb {N} = \{0, 1, 2, \dots , n, \dots \}.
+$$
+
+上面的表示事实上并没有列出集合的所有元素, 但是给出了元素的变化规律, 我们也把这种表示方法归为枚举法.
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">① Cantor, Georg Ferdinand Ludwig Philipp, 1845 年 3 月 3 日—1918 年 1 月 6 日, 德国数学家.</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">② 参见文献 [66]: 肖文灿《集合论初步》.</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">③ 历史上, 零并不是一开始就出现的数字, 所以, 曾经只把正整数才看作自然数. 目前对于零是否是自然数也有不同的取舍. 在我国, 1993 年发布的《中华人民共和国国家标准: 量和单位》(GB 3100\~3102—93), 将零纳入自然数.</span></small>
+
+---
+
+1.1 集合
+
+3
+
+如果 $m, n, k$ 是三个整数, 则 $\{m, n, k\}$ 就表示元素为 $m, n, k$ 的集合. 这样当 $m = n \neq k$ 时, $\{m, n, k\}$ 事实上是含有两个元素的集合. 易见, 为了今后讨论的方便, 在用枚举法表示集合时, 允许所列的元素出现重复是合适的. 当然, 对于集合 $\{1, 2, 3\}$, 我们自然不会把它写成 $\{1, 2, 3, 3\}$. 但从规则上, 我们不妨允许 $\{1, 2, 3, 3\}$ 也作为集合, 只是这个集合就等于集合 $\{1, 2, 3\}$.
+
+仅用枚举法难以应对更复杂的情形, 我们用描述法来表示具有某种性质  $P(x)$  的元素 x 的全体组成的集合 $^{①}$ :
+
+$$
+\{x \mid P (x) \text {成立} \}.
+$$
+
+例如, 有理数集可表示为
+
+$$
+\mathbb {Q} = \left\{\frac {q}{p} \Big | p \text {为正整数,} q \text {为整数} \right\}.
+$$
+
+为简便起见, 我们可采用
+
+$$
+\{x \in \mathbb {Q} _ {+} | x ^ {2} <   2 \}
+$$
+
+表示集合
+
+$$
+\{x | x ^ {2} <   2 \text {且} x \in \mathbb {Q} _ {+} \},
+$$
+
+这里 $\mathbb{Q}_{+}$ 表示正有理数集. 今后还用 $\mathbb{Z},\mathbb{Z}_{+},\mathbb{R},\mathbb{R}_{+}$ 和 $\mathbb{C}$ 依次表示整数集、正整数集、实数集、正实数集和复数集.
+
+若 $a$ 是集合 $A$ 的元素, 我们称 $a$ 属于 $A$ 或 $A$ 包含 $a$, 记作 $a \in A$ 或 $A \ni a$. 若 $a$ 不是集合 $A$ 的元素, 则记作 $a \notin A$ 或 $A \not\ni a$.
+
+若集合 $B$ 的所有元素都是集合 $A$ 的元素, 我们称 $B$ 是 $A$ 的子集, 记作 ${}^{2} B \subseteq A$ (读作 $B$ 包含于 $A$) 或 $A \supseteq B$ (读作 $A$ 包含 $B$). 若 $B \subseteq A$ 但 $B \neq A$, 则称 $B$ 为 $A$ 的真子集, 记作 $B \subset A$ (读作 $B$ 真包含于 $A$) 或 $A \supset B$ (读作 $A$ 真包含 $B$).
+
+## 1.1.2 第三次数学危机 集合论公理体系简介
+
+在 19 世纪末, Cantor 创立了 (古典) 集合论, 很快渗透到了大部分数学分支中, 得到了大多数数学家的肯定. 在此基础上, 人们可以建立起严格的实数理论和极限理论等. 当时的数学家为找到数学大厦的基础而充满乐观. 在 1900 年举办的国际数学家大会上, 著名数学家 Poincaré $^{③}$ 宣称: “借助集合论概念, 我们可以建造整个数学大厦……我们可以说绝对的严格性已经达到了!”
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">① 也常表示为  $\{x: x$  具有性质  $P\}$ .</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">② 也有人用 $\subset$ 与 $\subsetneq$ 依次表示包含于和真包含于.</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">③ Poincaré, Jules Henri, 1854 年 4 月 29 日—1912 年 7 月 17 日, 法国数学家、天体力学家、数学物理学家、科学哲学家.</span></small>
+
+---
+
+4
+
+第一章 集合与映射
+
+然而, 1902 年, Russell $^{①}$ 就发现了现在称为 Russell 悖论的集合论悖论. 所谓悖论, 是指这样一个命题 T, 从 T 出发可以找到一个命题 S. 若假定 S 成立, 可推出 S 不成立; 而假设 S 不成立, 则又可以推出 S 成立.
+
+现考虑把所有集合作为元素来构成一个集合 $X$。则 $X$ 作为一个集合也是它自身的元素，于是就形成了 $X \in X$ 这样的关系式。进一步，考虑集合
+
+$$
+A := \left\{B \middle | B \not \in B \right\}.
+$$
+
+那么是否成立 $A \in A$？如果 $A \in A$，则按照 $A$ 的定义，$A \notin A$。如果 $A \notin A$，则可得 $A \in A$。因此，无论如何都会得到矛盾。这就是 Russell 悖论。
+
+Russell 悖论的出现引发了数学史上所谓的第三次数学危机. 集合论需要通过建立其他的一系列原则来替代概括原则. 而把外延原则和概括原则作为比集合更为广泛的概念——类的一种直观描述.
+
+如今, 集合论采用的公理系统是 Zermelo $^{②}$ -Fraenkel $^{③}$  公理系统 (ZF 公理系统). ZF 公理系统加上选择公理 (AC) 称为 ZFC 公理系统.
+
+为区别起见, Cantor 最初建立的集合论称为古典集合论或朴素集合论.
+
+在新的公理体系中, 替代朴素集合论概括原则的是六条新原则 (参见文献 [72]), 这些原则用于确定哪些类可以接受为集合. 欲对此有更详细的了解, 可以参见文献 [72] 或其他集合论的书籍.
+
+以下我们罗列 ZFC 公理系统的公理. 从这些公理中可以看到, 在集合论中, 集合以及集合中的元素都是集合. 而这些公理规定了什么可以作为集合. 用大白话来讲, 公理中说什么样的集合存在, 相当于说我们把公理提到的那些东西视为集合.
+
+公理1——外延公理 如果集合 $X$ 与集合 $Y$ 有相同的元素, 则它们相等.
+
+就是说, 集合是由它的元素确定的.
+
+公理 2——空集存在公理 存在一个空集, 即存在不含任何元素的集合, 记作 ∅.
+
+公理3——无序对集合存在公理 对任意的集合 $x, y$，存在一个集合 $S$，它恰有元素 $x$ 和 $y$，并记作 $\{x, y\}$，当 $x$ 与 $y$ 相等时，就记作 $\{x\}$.
+
+在使用公理 3 时, x, y 不能选用真类——不是集合的类. 而利用公理 2 和公理 3, 我们可以得到  $\{\varnothing\}$ ,  $\{\varnothing, \{\varnothing\}\}$  等新的集合.
+
+公理 4——幂集存在公理 对任意的集合  $E, 2^{E} := \{A | A \subseteq E\}$  是一个集合.
+
+我们称集合 $2^{E}$ 为 $E$ 的幂集.
+
+公理5——并集存在公理 对任意的集合 $S$，存在一个集合 $\cup S$，由 $S$ 的所有元素的元素组成，称为 $S$ 的并集.
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">① Russell, Bertrand Arthur William, 3rd Earl Russell, 1872年5月18日—1970年2月2日，英国哲学家、逻辑学家、数学家、历史学家、社会活动家、政治活动家.</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">② Zermelo, Ernst Friedrich Ferdinand, 1871 年 7 月 27 日—1953 年 5 月 21 日, 德国逻辑学家、数学家.</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">③ Fraenkel, Abraham Halevi (Adolf), 1891 年 2 月 17 日—1965 年 10 月 15 日德国裔以色列逻辑学家、数学家.</span></small>
+
+---
+
+1.1 集合
+
+5
+
+对于两个集合 $E$ 和 $F$, 习惯上用 $E \cup F$ 表示由 $E$ 中所有的元素和 $F$ 中所有的元素合在一起的集合. 按照公理5中的记号, $E \cup F$ 就是 $\cup \{E, F\}$.
+
+利用无序对集合存在公理以及并集存在公理，对于集合 $x, y$，可以得到它们的有序对集合 $\{\{x\}, \{x, y\}\}$，记作 $(x, y)$.
+
+公理 6——分离公理模式 给定性质  $P(x)$  和集合 S,  $E := \{x \mid P(x) \text{ 成立}, \text{且} x \in S\}$  是一个集合.
+
+可以看到 E 是集合 S 中由满足性质 P 的元素组成的子集.
+
+这里的性质  $P(x)$  是用形式语言按一定规则形成的所谓公式.
+
+与前五条公理不同, 这是无穷多条公理, 因为它是一种模式, 对每一个公式都适用. 由于每个公式是有限长的, 因此公式的总数是可数 $^{①}$ 多个 (即 $R_{0}$ 个), 从而公理 6 相当于可数多个公理.
+
+公理 7——替换公理模式 如果 F 是类函数, 且 S 是集合, 则  $\{y \mid 存在 x \in S, 使得 y = F(x)\}$  是一个集合.
+
+公理 8——无穷公理（无穷集存在公理） 存在一个集合 X 使得  $\varnothing \in X$ ，而且当  $A \in X$  时， $A \cup \{A\} \in X$ .
+
+设 $X$ 为无穷公理中的 $X$, 则 $\varnothing \in X$, 而且 $\{\varnothing\} = \varnothing \cup \{\varnothing\} \in X$. 进而 $\{\varnothing, \{\varnothing\}\} = \{\varnothing\} \cup \{\{\varnothing\}\} \in X$. 一般地, 可以得到 $X$ 包含以下元素:
+
+$$
+\varnothing , \quad \{\varnothing \}, \quad \{\varnothing , \{\varnothing \} \}, \quad \{\varnothing , \{\varnothing \}, \{\varnothing , \{\varnothing \} \} \}, \quad \{\varnothing , \{\varnothing \}, \{\varnothing , \{\varnothing \} \}, \{\varnothing , \{\varnothing \}, \{\varnothing , \{\varnothing \} \} \} \}, \quad \dots .
+$$
+
+这也就是说 X 包含 von Neumann $^{②}$ 构造的自然数集 N (参见第 20 页).
+
+无穷公理中的 X 可能比这个 N 更大. 但是我们可以通过分离公理来得到 N 是一个集合.
+
+而之所以需要无穷公理, 是因为之前的公理无法保证无穷集的存在性.
+
+公理 9——正则公理 对于非空集 X, 存在  $x \in X$  使得  $x \cap X$  为空集.
+
+例如, 对于非空集 $X = \{\varnothing\}$, $\varnothing \in X$ 而 $\varnothing \cap X = \varnothing$.
+
+公理 10——选择公理 对于任何集合 X，存在一个函数 F，使得对任何非空集  $x \in X$ ，有  $F(x) \in x$ .
+
+关于函数的概念, 参见第 7 页.
+
+直白地说, 选择公理是说, 对于集族 $X$, 可以从 $X$ 的每一个不等于空集的元 $E$ 中选取一个元素 $e_{E} \in E$.
+
+在无穷公理中, 规定了无穷集的存在性. 那么什么叫无穷集. 有两个常见的定义. 一是定义无穷集为不是有限集的集合. 另一个定义是把它定义为 Dedekind $^{③}$ 无穷集: 与自身的一个真子集一一对应的集合.
+
+如果 X 不是有限集, 我们 “容易” 证明它与它的一个真子集一一对应. 首先, 我们 “证明” 它包含一个可列子集. 所谓可列集是与 N ——对应的集合. 具体地, 由于 X 不是有限集, 因此, 可以取出  $x_{0} \in X$ . 进而由于 X 不只包含一个元素 (否则为有限集), 我们可以取到  $x_{1} \neq x_{0}$ , 使得  $x_{1} \in X$ . 以此类推, 可以取出 X 中两两不同的一列元素  $x_{0}, x_{1}, x_{2}, \cdots, x_{n}, \cdots$ . 此时  $k \mapsto x_{k}$
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">① 参见集合的基数.</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">② von Neumann, John, 1903 年 12 月 28 日—1957 年 2 月 8 日, 匈牙利裔美国数学家.</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">③ Dedekind, Julius Wilhelm Richard, 1831 年 10 月 6 日—1916 年 2 月 12 日, 德国数学家.</span></small>
+
+---
+
+6
+
+第一章 集合与映射
+
+就是一个 $\mathbb{N}$ 到 $X$ 的子集 $X_0 := \left\{x_k \mid k \in \mathbb{N}\right\}$ 的一一对应。进而可以得到 $X$ 到其自身真子集 $X \setminus \{x_0\}$ 的一个一一对应:
+
+$$
+F (x) := \left\{ \begin{array}{l l} x, & x \notin X _ {0}, \\ x _ {k + 1}, & x = x _ {k} \in X _ {0}, k \in \mathbb {N}. \end{array} \right.
+$$
+
+然而上述证明过程, 如果没有选择公理 (确切地讲, 如果没有一个较弱的选择公理——可数选择公理), 而只有其他几个公理, 则是不合法的. Cohen $^{①}$  证明了这个可数选择公理在 ZF 集合论中是不可证明的.
+
+## 1.2 集合的运算
+
+我们回顾熟知的集合运算. 为方便叙述, 用符号 “∀” 表示 “对于任意”, 用符号 “∃” 表示 “存在”, 用 “s.t.” 表示 “满足” 或 “使得”.
+
+若对于集合 $I$ 中的元 $\alpha$, 均对应一个集合 $A_{\alpha}$, 我们记 $\bigcup_{\alpha \in I} A_{\alpha}$ 为它们的并集, 即
+
+$$
+\bigcup_ {\alpha \in I} A _ {\alpha} := \{x | \exists \alpha \in I, \text {s.t.} x \in A _ {\alpha} \},
+$$
+
+记 $\bigcap_{\alpha \in I}A_{\alpha}$ 为它们的交集，即
+
+$$
+\bigcap_ {\alpha \in I} A _ {\alpha} := \left\{x |   \forall   \alpha \in I, \text {均有}   x \in A _ {\alpha} \right\}.
+$$
+
+两个集合 A, B 的并集和交集可以记为  $A \cup B$  和  $A \cap B$ . 集合  $A_{1}, A_{2}, \cdots, A_{n}$  的并集和交集也可以记为  $\bigcup_{k=1}^{n} A_{k}$  和  $\bigcap_{k=1}^{n} A_{k}$ .
+
+对于两个集合 $A, B$, 它们的差集定义为
+
+$$
+A \setminus B := \{x | x \in A, \text {且} x \not \in B \}.
+$$
+
+当 $A$ 是全集时, 即 $A$ 是我们所研究的问题中所有元素的集合时, 称 $A \setminus B$ 为 $B$ 的补集, 又称为余集, 记作 $\mathscr{C}B$.
+
+集合 $(A \setminus B) \cup (B \setminus A)$ 称为集合 A, B 的对称差.
+
+我们有如下的 De Morgan $^{②}$ 定律.
+
+定理 1.2.1 设有集合 X，以及集族  $\{A_{\alpha} \mid \alpha \in I\}$ ，则成立
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">① Cohen, Paul Joseph, 1934 年 4 月 2 日—2007 年 3 月 23 日, 美国数学家.</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">② De Morgan, Augustus, 1806 年 6 月 27 日—1871 年 3 月 18 日, 英国数学家、逻辑学家.</span></small>
+
+---
+
+1.3 关系与映射
+
+7
+
+(1) $X \setminus \bigcup_{\alpha \in I} A_{\alpha} = \bigcap_{\alpha \in I} (X \setminus A_{\alpha})$;
+(2) $X \setminus \bigcap_{\alpha \in I} A_{\alpha} = \bigcup_{\alpha \in I} (X \setminus A_{\alpha}).$
+
+定义 1.2.1 对于集合 E 和 F, 称集合  $E \times F := \{(x, y) | x \in E, y \in F\}$  为它们的 Descartes $^{①}$  乘积集合, 简称 Descartes 乘积.
+
+更一般地, 若有 $n \geqslant 2$ 个集合 $E_{1}, E_{2}, \cdots, E_{n}$, 它们的 Descartes 乘积定义为集合
+
+$$
+E _ {1} \times E _ {2} \times \dots \times E _ {n} := \{(x _ {1}, x _ {2}, \dots , x _ {n}) | x _ {k} \in E _ {k}, k = 1, 2, \dots , n \}.
+$$
+
+当  $E_{1}=E_{2}=\cdots=E_{n}=E$  时， $E_{1}\times E_{2}\times\cdots\times E_{n}$  记为  $E^{n}$ . 若 n=1, 则  $E^{n}$  理解为 E.
+
+## 1.3 关系与映射
+
+定义 1.3.1 对于集合 E 和 F,  $E \times F$  的子集 R 称为集合 E 和 F 间的关系, 有时候也称为对应. 若  $(x, y) \in R$ , 则称 x 与 y R-相关, 记作 xRy.
+
+称 $\operatorname{dom} R := \{x \mid \exists y \in F, \text{s.t. } xRy\}$ 为 $R$ 的定义域, 称 $\operatorname{ran} R := \{y \mid \exists x \in E, \text{s.t. } xRy\}$ 为 $R$ 的值域.
+
+在具体的情形, 究竟称为关系还是称为对应, 根据习惯而定, 且通常并不能互相替换.
+
+定义 1.3.2 设 R 是 E 和其自身间的关系. 称 R 是 E 上的一个等价关系, 是指如下性质成立:
+
+(1) 自反性:  $\forall x \in E,$  有 xRx;
+(2) 对称性: 若 xRy, 则 yRx;
+(3) 传递性: 若 $xRy, yRz$, 则 $xRz$.
+
+时常用记号～表示等价关系.
+
+定义1.3.3 称 $E$ 和 $F$ 间的关系 $R$ 为映射或函数，是指对于 $E$ 中任何一个元素 $x$，均有 $F$ 中唯一的元素 $y$ 与之 $R$-相关，此时 $y$ 可以记作 $R(x)$，称为 $x$（在映射 $R$ 之下）的像，称 $x$ 为 $y$（在映射 $R$ 之下）的逆像或原像。通常我们用“$R: E \to F$”来表示映射。也可以用 $R: x \mapsto R(x)$ 给出映射的对应关系。映射通常用 $f, F$ 等符号表示。
+
+通常 $E$ 中的元素称为自变量, $F$ 中的元素称为因变量.
+
+若 $E$ 中不同的元素对应 $F$ 中不同的元, 即当 $x_{1}, x_{2} \in E$ 且 $x_{1} \neq x_{2}$ 时, $R(x_{1}) \neq R(x_{2})$, 则称 $R$ 是单射.
+
+若 ran R = F, 则称 R 为满射或到上的.
+
+既是单射又是满射的映射称为双射,也称为一一映射或一一对应.
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">① Descartes, René, 1596 年 3 月 31 日—1650 年 2 月 11 日, 法国哲学家、数学家.</span></small>
+
+---
+
+8
+
+第一章 集合与映射
+
+按照定义, 映射与函数是一个含义. 在不同情形下, 对于映射 $f: E \to F$, 人们对 $f$ 有一些习惯性的称呼. 以下是一个常见称呼的列表. 具体场合, 请注意根据上下文判断. 例如, 很多时候复变函数指的是复变复值的函数.
+
+函数 往往指 $E, F$ 均为 $\mathbb{R}^n$ 或 $\mathbb{C}^n (n \geqslant 1)$ 的子集.
+
+实变 指 $E$ 为 $\mathbb{R}^n (n\geqslant 1)$ 的子集, 其中当 $n = 1$ 时称为一元, 当 $n\geqslant 2$ 时称为多元.
+
+复变 指 $E$ 为 $\mathbb{C}^n (n\geqslant 1)$ 的子集, 其中当 $n = 1$ 时称为单复变, 当 $n\geqslant 2$ 时称为多复变.
+
+实值 指 $F = \mathbb{R}$
+
+复值 指 $F = \mathbb{C}$
+
+向量值 指 $m \geqslant 2$, 且 $F = \mathbb{R}^m$ (或 $\mathbb{C}^m$).
+
+算子 指 E, F 均为函数空间.
+
+泛函 指 $E$ 为一般的集合, 通常是函数空间, $F$ 为 $\mathbb{R}$.
+
+如果对于 $x > 0$ ，我们定义 $f(x)$ 为 $y^{2} = x$ 的解.则 $f(x)$ 有两个取值，它不是唯一的.因此，按照定义1.3.3，它不是函数.但我们经常把这一类对应关系称为多值函数.如果我们把 $f(x)$ 的两个取值看成一个集合 $\{y\in \mathbb{R}|y^2 = x\}$ ，则 $f$ 可以看成是 $(0, + \infty)$ 到 $2^{\mathbb{R}}$ 的一个映射，称为集值函数.在这种意义上，它按照定义1.3.3，确实是一个函数.
+
+人们经常用 $f(x)$ 来表示函数 $f$, 尤其是在数学分析中. 严格说来, $f(x)$ 表示的是函数值而不应是函数. 为避免误解, 我们可采用 $f(\cdot)$ 表示函数 $f$. 对于 $f: E \times F \to \mathbb{R}$, 我们可以用 $f(x, \cdot)$ 表示 $x$ 值固定时的函数 $y \mapsto f(x, y)$, 而 $f(\cdot, y)$ 表示 $y$ 值固定时的函数 $x \mapsto f(x, y)$.
+
+如果 $f$ 是定义在 $E$ 上的函数, $W \subseteq E$, 在 $W$ 上定义
+
+$$
+g (x) := f (x), \quad \forall x \in W.
+$$
+
+则称 $g$ 为 $f$ 在 $W$ 上的限制, 记作① $f|_{W}$. 而 $f$ 称为 $g$ 在 $E$ 上的延拓.
+
+定义1.3.4 若 $f: E \to F$ 是单射, 则对任何 $y \in \operatorname{ran} f$, 存在唯一的 $x$ 满足 $y = f(x)$, 我们记 $x = f^{-1}(y)$. 这样我们就给出了一个映射 $f^{-1}: \operatorname{ran} f \to E$, 称为 $f$ 的逆映射.
+
+定义 1.3.5 对于映射 $f: E \to F$ 以及 $g: F \to G$, 将 $x \in E$ 映为 $g(f(x)) \in G$ 的映射 $x \mapsto g(f(x))$ 称为 $g$ 和 $f$ 的复合映射, 记为 $g \circ f$.
+
+如果函数 $f$ 由一个表达式给出, 通常将这个表达式有意义的范围称为 $f$ 的自然定义域. 例如 $\ln x$ 的自然定义域是正数集, $\frac{1}{x^2 - 1}$ 的自然定义域是 $\mathbb{R} \setminus \{-1, 1\}$.
+
+对于映射 $f: E \to W$ 以及 $g: F \to G$, 当 $f(E) \not\subseteq F$ 而 $f(E) \cap F \neq \varnothing$ 时, 习惯上, 仍然可以考虑 $g$ 和 $f$ 的复合映射 $g \circ f$, 此时, 复合映射的定义域就调整为 $f^{-1}(F) :=$
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">① 类似地, 可用 $f(x) \big|_{x=x_0}$ (简记为 $f(x) \big|_{x_0}$) 表示 $f(x_0)$, 用 $f(x,y) \big|_{x=x_0}$ 表示 $f(x_0,y)$.</span></small>
+
+---
+
+1.4 集合的势
+
+9
+
+$$
+\{x \in E | f (x) \in F \}.
+$$
+
+## 1.4 集合的势
+
+要理解数学分析中一些较为深刻的问题, 避不开 “可数” 和 “不可数” 的概念. 本节我们介绍 Cantor 研究无限集 “元素个数” 的思想. 我们将称一个集合的 “元素个数” 为基数或势. 集合 A 的势记为  $\overline{A}$ .
+
+严格说来, 自然数乃至实数的性质, 有待于下一章建立. 为方便起见, 在本节的讨论中, 我们将提前使用关于实数的那些熟知 (中学阶段默认) 的性质.
+
+定义 1.4.1 设 E, F 是两个集合.
+
+(1) 若存在 E 和 F 之间的双射, 则称 E 和 F 有相同的基数 (或势), 记作  $\overline{E} = \overline{F}$ .
+(2) 若  $E = \varnothing$  或者存在  $n \geqslant 1$  使得  $\overline{E} = \overline{\{1, 2, \cdots, n\}}$ ，则称 E 为有限集，并将  $\overline{E}$  相应地记为 0 或 n.
+
+(3) 若  $\overline{E} = \overline{\overline{N}}$ ，则称 E 为可数集或可列集，其基数记为  $N_{0}$ ，读作阿列夫零.
+
+(4) 若  $\overline{E} = \overline{R}$ ，则称 E 具有连续统、连续势，其基数记为 N.
+
+(5) 若存在 $E$ 到 $F$ 的单射, 则称 $E$ 的基数小于或等于 $F$ 的基数, 记作 $\overline{E} \leqslant \overline{F}$ 或 $\overline{F} \geqslant \overline{E}$. 进一步, 若 $\overline{E} \leqslant \overline{F}$ 且 $\overline{E} \neq \overline{F}$, 则称 $\overline{E} < \overline{F}$ 或 $\overline{F} > \overline{E}$.
+
+(6) 若  $\overline{E} \leqslant N_{0}$ ，则称 E 为至多可数集或至多可列集.
+
+易见, 等势是一种等价关系. 以下定理则表明基数没有上界.
+
+定理 1.4.1 对任何集合 E, 成立  $\overline{2^{E}} > \overline{\overline{E}}$ .
+
+证明 若结论不真, 则 $\overline{2^E} = \overline{\overline{E}}$, 即存在 $E$ 到 $2^E$ 的双射 $T$. 定义
+
+$$
+A := \{x \in E | x \not \in T (x) \}.
+$$
+
+令 $y = T^{-1}(A)$, 则无论 $y \in A$ 是否成立, 都会得出矛盾: 若 $y \in A$, 则根据定义, $y \notin T(y) = A$; 若 $y \notin A$, 则根据定义, $y \in T(y) = A$.
+
+容易看到对于基数为 $n$ 的集合 $E$, 它的元素个数为 $k (0 \leqslant k \leqslant n)$ 的子集数是 $\mathrm{C}_n^k$. 从而 $E$ 的幂集 (定义参见第4页) $2^{E}$ 的基数为 $2^n$. 这也是为什么记 $E$ 的幂集为 $2^{E}$ 的原因. 今后我们记 $2^{E}$ 的基数为 $2^{\overline{E}}$.
+
+通过将 $A \subseteq E$ 对应于映射
+
+$$
+\chi_ {A} (x) := \left\{ \begin{array}{l l} 1, & x \in A, \\ 0, & x \not \in A, \end{array} \right.
+$$
+
+可见 $2^{E}$ 与从 $E$ 映到 $\{0,1\}$ 所有映射组成的集合等势.
+
+---
+
+10
+
+第一章 集合与映射
+
+类似地, $E^n$ 与从 $\{1,2,\dots ,n\}$ 映到 $E$ 的所有映射组成的集合等势. 鉴于此, 我们可以将从 $E$ 映到 $F$ 的所有映射组成的集合的势记作 $\overline{\overline{F}}$.
+
+由定理 1.4.1, 立即得到如下推论.
+
+推论 1.4.2 ${2}^{{\aleph }_{0}} > {\aleph }_{0}$ .
+
+我们将证明  $\aleph = 2^{\aleph_{0}}$  以及有理数集、代数数集都是可数集, 从而得到无理数 (超越数) 要比有理数 (代数数) 多得多的结论.
+
+首先, 有以下有趣的定理.
+
+定理 1.4.3 可列个可列集的并是可列集.
+
+证明 设对每个 $k \geqslant 1, E_k$ 是一可列集:
+
+$$
+E _ {k} = \left\{a _ {k 1}, a _ {k 2}, a _ {k 3}, \dots \right\}, \quad k = 1, 2, 3, \dots ,
+$$
+
+则按照如下形式列出 $\bigcup_{k = 1}^{\infty}E_k$ 中所有元(期间去除重复的元):
+
+![](../../raw/pages_0017-0032/images/page_25_image_11.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  a11["a_{11}"] --> a12["a_{12}"]
+  a12 --> a_{13}["a_{13}"]
+  a13 --> a_{14}["a_{14}"]
+  a_{15} --> a_{16}["a_{15}"]
+  a_{16} --> a_{17}["a_{17}"]
+  a_{17} --> a_{18}["a_{18}"]
+  a_{18} --> ...["..."]
+```
+</details>
+
+即得 $\bigcup_{k=1}^{\infty} E_k$ 是可列集.
+
+![](../../raw/pages_0017-0032/images/page_25_image_13.jpg)
+
+---
+
+1.4 集合的势
+
+11
+
+上述证明还表明可列个至多可列集的并是至多可列集. 我们可以把定理 1.4.3 的结果写成
+
+$$
+\aleph_ {0} ^ {2} = \aleph_ {0} \times \aleph_ {0} = \aleph_ {0}. \tag {1.4.1}
+$$
+
+反复运用该定理, 可以得到
+
+$$
+\aleph_ {0} ^ {n} = \aleph_ {0}, \quad \forall n \geqslant 1. \tag {1.4.2}
+$$
+
+作为上述结论的推论, 注意到
+
+$$
+\mathbb {Q} := \bigcup_ {n \in \mathbb {N} _ {+}} \left\{\frac {m}{n} \Big | m \in \mathbb {N} \right\} \cup \bigcup_ {n \in \mathbb {N} _ {+}} \left\{- \frac {m}{n} \Big | m \in \mathbb {N} \right\},
+$$
+
+立即得到
+
+推论 1.4.4 有理数集是可列集.
+
+接下来, 我们证明如下定理:
+
+定理 1.4.5  $N > N_{0}$ .
+
+证明 易证  $\overline{(0,1)} = \aleph$ ，我们只要证明  $\overline{(0,1)} > \aleph_{0}$ 。否则，由于  $\overline{(0,1)} \geqslant \aleph_{0}$ ，可得  $\overline{(0,1)} = \aleph_{0}$ 。于是存在把  $(0,1)$  映到正整数集  $\{1,2,\cdots\}$  的双射，或者说  $(0,1)$  中的所有数字可以排列成一列:
+
+$$
+x _ {1}, x _ {2}, x _ {3}, \dots
+$$
+
+用十进制小数
+
+$$
+x _ {k} = 0. a _ {k 1} a _ {k 2} a _ {k 3} \dots , \quad k = 1, 2, \dots
+$$
+
+表示这些数 (规定不以 9 为循环节). 定义 $y = 0.y_{1}y_{2}y_{3}\cdots$ 如下:
+
+$$
+y _ {k} = \left\{ \begin{array}{l l} 1, & a _ {k k} \neq 1, \\ 2, & a _ {k k} = 1, \end{array} \right.
+$$
+
+则易见 $y \in (0,1)$, 而 $y$ 和任何一个 $x_{k}$ 不同, 得到矛盾. 所以 $\aleph > \aleph_{0}$.
+
+在研究集合的势的过程中, 自然产生了以下问题.
+
+问题1(反对称性) 若 $\overline{\overline{E}}\leqslant \overline{\overline{F}}$ 与 $\overline{\overline{F}}\leqslant \overline{\overline{E}}$ 同时成立，是否有 $\overline{\overline{E}} = \overline{\overline{F}}?$
+
+问题 2 (三歧性) 对于任何集合 E, F,
+
+$$
+\overline {{\overline {{E}}}} <   \overline {{\overline {{F}}}}, \quad \overline {{\overline {{E}}}} = \overline {{\overline {{F}}}}, \quad \overline {{\overline {{E}}}} > \overline {{\overline {{F}}}}
+$$
+
+是否必有一个成立？
+
+问题 3 (连续统问题) 是否存在严格介于  $\aleph_{0}$  与  $\aleph$  之间的基数, 即是否存在集合 E 使得  $\aleph_{0} < \overline{E} < \aleph?$
+
+对于问题 1, 我们有如下的 Cantor-Bernstein $^{①}$ -Schröder $^{②}$ 定理 (简称 Bernstein 定理), 得到肯定的回答.
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">① Bernstein, Felix, 1878 年 2 月 24 日—1956 年 12 月 3 日, 德国数学家.</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">② Schröder, Friedrich Wilhelm Karl Ernst, 1841 年 11 月 25 日—1902 年 6 月 16 日, 德国数学家.</span></small>
+
+---
+
+12
+
+第一章 集合与映射
+
+定理 1.4.6 设  $\overline{\overline{A}} \leqslant \overline{\overline{B}}, \overline{\overline{B}} \leqslant \overline{\overline{A}}$ ，则  $\overline{\overline{A}} = \overline{\overline{B}}$ .
+
+证明 由假设, 存在 $A$ 到 $B$ 的一个子集 $B_{1}$ 的双射 $\varphi$, 以及 $B$ 到 $A$ 的一个子集 $A_{1}$ 的双射 $\psi$. 令 $A_{0} = A$, 并对 $n \geqslant 0$ 定义 $A_{n+2} = \psi(\varphi(A_{n}))$. 则 $\psi \circ \varphi: A_{n} \to A_{n+2}$ 为双射.
+
+注意到 $\varphi(A) \subseteq B$, 我们得到 $A_2 = \psi(\varphi(A)) \subseteq \psi(B) = A_1$. 而由 $A_1 \subseteq A$ 得到 $A_3 \subseteq A_2$. 依次可得 $A_{n+1} \subseteq A_n$ 对任何 $n \geqslant 0$ 成立.
+
+由于 $\psi \circ \varphi$ 是 $A_{n}$ 到 $A_{n + 2}$ 的双射, 同时又是 $A_{n}$ 的子集 $A_{n + 1}$ 到 $A_{n + 2}$ 的子集 $A_{n + 3}$ 的双射, 因此, $\psi \circ \varphi$ 也是 $A_{n} \setminus A_{n + 1}$ 到 $A_{n + 2} \setminus A_{n + 3}$ 的双射.
+
+注意到
+
+$$
+A = \left(\bigcap_ {k = 1} ^ {\infty} A _ {k}\right) \bigcup \left(A \setminus A _ {1}\right) \bigcup \left(A _ {1} \setminus A _ {2}\right) \bigcup \left(A _ {2} \setminus A _ {3}\right) \bigcup \left(A _ {3} \setminus A _ {4}\right) \bigcup \dots
+$$
+
+$$
+A _ {1} = \left(\bigcap_ {k = 1} ^ {\infty} A _ {k}\right) \bigcup \left(A _ {2} \setminus A _ {3}\right) \bigcup \left(A _ {1} \setminus A _ {2}\right) \bigcup \left(A _ {4} \setminus A _ {5}\right) \bigcup \left(A _ {3} \setminus A _ {4}\right) \bigcup \dots
+$$
+
+我们可以给出 $A$ 到 $A_{1}$ 的双射
+
+$$
+f (x) := \left\{ \begin{array}{l l} x, & x \in \Big (\bigcap_ {k = 1} ^ {\infty} A _ {k} \Big) \bigcup \Big (\bigcup_ {n = 0} ^ {\infty} \big (A _ {2 n + 1} \setminus A _ {2 n + 2} \big) \Big), \\ \psi \big (\varphi (x) \big), & x \in \bigcup_ {n = 0} ^ {\infty} \big (A _ {2 n} \setminus A _ {2 n + 1} \big). \end{array} \right.
+$$
+
+所以  $\overline{\overline{A}}=\overline{\overline{A_{1}}}=\overline{\overline{B}}.$
+
+Bernstein 定理是证明集合有相同基数的主要方法. 有了这个定理, 要证明 $\overline{A} = \overline{B}$, 只要找到 $A$ 到 $B$ 的单射以及 $B$ 到 $A$ 的单射. 这比直接寻找两者之间的双射方便多了.
+
+以下运用 Bernstein 定理来证明一些结果.
+
+对于  $n \geqslant 0$ ，当  $a_{n} \neq 0$  时，多项式  $a_{n}x^{n} + a_{n-1}x^{n-1} + \cdots + a_{1}x + a_{0}$  称为 n 次多项式。零多项式（即 n = 0 且  $a_{0} = 0$ ）的次数定义为  $-\infty$ 。
+
+我们称非零整系数多项式的 (复) 零点为代数数 $^{①}$ . 其余的复数称为超越数. 可以证明全体代数数构成一个域 (参见习题 11). 特别地, 一个复数为代数数当且仅当其实部和虚部都为代数数. 我们有
+
+定理 1.4.7 代数数集是可列集.
+
+证明 首先, 零次的整系数多项式, 即恒等于非零整数的函数没有零点.
+
+一次整系数多项式形为 $a + bx$，它的基数小于或等于 $\aleph_0^2 = \aleph_0$。每一个这样的多项式有一个零点。因此，这样的零点总数不大于 $1 \times \aleph_0 = \aleph_0$。
+
+二次整系数多项式形为 $a + bx + cx^2$，它的基数小于或等于 $\aleph_0^3 = \aleph_0$. 每一个这样的多项式至多有两个零点. 因此, 这样的零点总数不大于 $2 \times \aleph_0 = \aleph_0$.
+
+一般地, 对于任何 $n \geqslant 1$, 可以证明 $n$ 次非零整系数多项式的零点数不大于 $\aleph_0$. 而易见任何整数都是某个 $n$ 次非零整系数多项式的零点. 因此, 所有 $n$ 次非零整系数多项式的零点数是 $\aleph_0$.
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">① 等价于非零有理系数多项式的零点.</span></small>
+
+---
+
+1.4 集合的势
+
+13
+
+最后, 由可列个可列集的并为可列集得到代数数全体是可列集.
+
+接下来, 有
+
+定理1.4.8 $\aleph = 2^{\aleph_0}$
+
+证明 对于 $[0,1)$ 中的点, 用二进制小数表示, 并规定不以 1 为循环节. 对于 $x = 0.a_{1}a_{2}a_{3}\cdots \in [0,1)$, 令
+
+$$
+F (x) = \left\{n \in \mathbb {N} _ {+} \Big | a _ {n} = 1 \right\}.
+$$
+
+则  $F:(0,1)\to2^{\mathbb{N}_{+}}$  是单射, 从而  $N\leqslant2^{\aleph_{0}}$ .
+
+另一方面, 对于 $E \subseteq \mathbb{N}_{+}$, 定义
+
+$$
+a _ {n} = \left\{ \begin{array}{l l} {1,} & {n = 2 m, m \in E,} \\ {0,} & {\text {其他},} \end{array} \right.
+$$
+
+并令
+
+$$
+G (E) := 0. a _ {1} a _ {2} a _ {3} \dots
+$$
+
+为一个二进制小数. 则  $G:2^{N_{+}} \rightarrow [0,1)$  是单射, 从而  $N \geqslant 2^{N_{0}}$ .
+
+于是由 Bernstein 定理, 得到  $N = 2^{N_{0}}$ .
+
+以上定理说明了无理数和超越数的基数都是 N. 即无理数和超越数都是不可数的. 这样, Cantor 通过对集合基数的研究, 轻松地证明了超越数不仅存在, 而且比代数数还多得多——而在这个过程中, Cantor 没有给出哪怕是一个具体的超越数.
+
+历史上, Liouville $^{①}$  研究了一类现在被称为 Liouville 数的无理数. 若实数 x 满足如下条件: 对任何  $n \in N_{+}$ , 存在整数 p > 1 和整数 q 使得
+
+$$
+0 <   \left| x - \frac {q}{p} \right| <   \frac {1}{p ^ {n}}, \tag {1.4.3}
+$$
+
+则称 x 为 Liouville 数.
+
+易见对于 Liouville 数, 对每个 $n \in \mathbb{N}_{+}$, 满足 (1.4.3) 式的整数对 $(p, q)$ 必然有无限多对.
+
+一般地, 对于实数 x 以及  $\alpha > 0$ , 考虑使得以下不等式成立的正整数 p 和整数 q:
+
+$$
+0 <   \left| x - \frac {q}{p} \right| <   \frac {1}{p ^ {\alpha}}. \tag {1.4.4}
+$$
+
+Dirichlet $^{②}$ 逼近定理表明, 当  $\alpha = 2, x$  为无理数时, 有无穷多对  $(p, q)$  满足 (1.4.4) 式. 一般地, 定义实数 x 的无理测度为
+
+$$
+\sup \left\{\alpha \middle | \text {存在无限多对整数} (p, q) \text {满足} (1. 4. 4) \text {式} \right\},
+$$
+
+其中 sup 表示上确界, 即最小上界, 确切的含义参见第二章第 3 节. 目前可以粗略地把它理解为数集的最大值.
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">① Liouville, Joseph, 1809 年 3 月 24 日—1882 年 9 月 8 日, 法国数学家.</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">② Dirichlet, Peter Gustav Lejeune, 1805 年 2 月 13 日—1859 年 5 月 5 日, 德国数学家.</span></small>
+
+---
+
+14
+
+第一章 集合与映射
+
+这样, 通俗地讲, Liouville 数就是无理测度为无穷的无理数. 易见有理数的无理测度为 1, Dirichlet 逼近定理表明无理数的无理测度都大于或等于 2.
+
+1844 年, Liouville 证明了如下定理:
+
+## 定理 1.4.9 (关于 Diophantus $^{①}$ 逼近的 Liouville 定理)
+
+设 $n \geqslant 2$, 无理数 $x$ 是某个 $n$
+
+次整系数多项式的零点，则存在常数 $A > 0$ 使得对于任何整数 $q$ 和正整数 $p$ ，成立
+
+$$
+\left| x - \frac {q}{p} \right| > \frac {A}{p ^ {n}}.
+$$
+
+因此, 所有代数数的无理测度都是有限的, 都不是 Liouville 数. Liouville 还构造出一个 Liouville 数:
+
+$$
+a = 0. 1 ^ {1!} + 0. 1 ^ {2!} + 0. 1 ^ {3!} + 0. 1 ^ {4!} + \dots .
+$$
+
+这样 Liouville 就第一次证明了超越数的存在性, 并给出了一个具体的超越数.
+
+定理1.4.9的证明并不困难. 可以仿照如下特例的证明来证明: 对任何正整数对 $(p, q)$ 有
+
+$$
+\left| \sqrt [ 3 ]{5} - \frac {q}{p} \right| > \frac {1}{1 9 p ^ {3}}. \tag {1.4.5}
+$$
+
+首先, 只需对满足  $\left|\sqrt[3]{5}-\frac{q}{p}\right|<1$  的正整数对  $(p,q)$  来证明 (1.4.5) 式. 此时
+
+$$
+\frac {q}{p} \leqslant \left| \frac {q}{p} - \sqrt [ 3 ]{5} \right| + \sqrt [ 3 ]{5} \leqslant 3.
+$$
+
+从而
+
+$$
+\begin{array}{l} \left| \frac {q ^ {3}}{p ^ {3}} - 5 \right| = \left| \left(\frac {q}{p} - \sqrt [ 3 ]{5}\right) \left(\frac {q ^ {2}}{p ^ {2}} + \frac {q}{p} \sqrt [ 3 ]{5} + \sqrt [ 3 ]{5 ^ {2}}\right) \right| \\ \leqslant \left(3 ^ {2} + 3 \times 2 + 2 ^ {2}\right) \left| \frac {q}{p} - \sqrt [ 3 ]{5} \right| = 1 9 \left| \frac {q}{p} - \sqrt [ 3 ]{5} \right|. \\ \end{array}
+$$
+
+另一方面, 易证  $\sqrt[3]{5}$  是无理数. 因此,
+
+$$
+\left| \frac {q ^ {3}}{p ^ {3}} - 5 \right| = \frac {1}{p ^ {3}} \left| q ^ {3} - 5 p ^ {3} \right| \geqslant \frac {1}{p ^ {3}}.
+$$
+
+进而得到 (1.4.5) 式.
+
+后人进一步证明了当无理数是代数数时, 其无理测度是 2. 对于两个常数 $\pi$ 和 e, 目前已经得到 e 的无理测度是 2. 而 $\pi$ 的无理测度不超过 7.6063. Stuart$^{[56]}$ 利用 $\pi$ 的无理测度证明了以下非常有趣的结果: 当且仅当 $\alpha > \frac{1}{\sqrt[3]{\sin 3}} \approx 1.92$ 时, 不等式 $|\sin n| > \alpha^{-n}$ 对于任何正整数 $n$ 成立. 特别地, 对于任何正整数 $n$, 我们有 $|\sin n| > 2^{-n}$.
+
+不难证明 Liouville 数全体的基数是  $\aleph$ (参见习题 9)，但是从一种角度看，Liouville 数全体是零测度集，即它的“总长度”——Lebesgue $^{②}$ 测度为零。也可以这样说，从测度这个角度来看，Liouville 数在超越数中是极少数——虽然从基数的角度来看，它们是一样多的。
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">① Diophantus of Alexandria, 很可能生于 201 年到 215 年, 卒于 285 年到 299 年, 古希腊数学家.</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">② Lebesgue, Henri Léon, 1875 年 6 月 28 日—1941 年 7 月 26 日, 法国数学家.</span></small>
+
+---
+
+1.4 集合的势
+
+15
+
+利用前面引入的记号, 至少在形式上, 我们有
+
+$$
+\aleph^ {\aleph_ {0}} = \left(2 ^ {\aleph_ {0}}\right) ^ {\aleph_ {0}} = 2 ^ {\aleph_ {0} \times \aleph_ {0}} = 2 ^ {\aleph_ {0}} = \aleph .
+$$
+
+读者不难从上式得到启发, 证明如下结果.
+
+定理 1.4.10 集合  $R^{\infty} := \left\{ \left\{ x_{k} \mid k \geqslant 1 \right\} \mid x_{k} \in R, k \in N \right\}$  的势为 N.
+
+定理的证明也可以仿照定理 1.4.8 的证明给出.
+
+进一步, 通过关系式
+
+$$
+\aleph = 2 ^ {\aleph_ {0}} \leqslant \aleph_ {0} ^ {\aleph_ {0}} \leqslant \aleph^ {\aleph_ {0}} = \aleph
+$$
+
+可见 $\aleph_0^{\aleph_0} = \aleph$.
+
+类似地，
+
+$$
+\overline {{\{f \mid f \text {是} \mathbb {R} \text {上的实值函数} \}}} = \aleph^ {\aleph} = 2 ^ {\aleph_ {0} \times \aleph} = 2 ^ {\aleph} > \aleph .
+$$
+
+相比于问题 1, 后两个问题就要困难许多, 1915 年, Hartogs $^{①}$  证明了基数的三歧性与选择公理等价.
+
+对于问题 3, Cantor 给出了定理 1.4.8, 即证明了连续统的势是 $2^{\aleph_0}$, 并提出了连续统假设: $\aleph_1 = 2^{\aleph_0}$, 其中 $\aleph_1$ 表示 $\aleph_0$ 的下一个势.
+
+1938 年, Gödel $^{②}$  证明了连续统假设和 ZFC 公理系统不矛盾. 1963 年, Cohen $^{③}$  证明了连续统假设对于 ZFC 公理系统是独立的. 也就是说, 在 ZFC 公理系统中, 不可能判定连续统假设的真假.
+
+Cantor 还提出了广义连续统假设:  $\aleph_{k+1}=2^{\aleph_{k}}\quad(k=0,1,2,\cdots)$ . 自然, 在 ZFC 公理系统下, 不能证明广义连续统假设, 但在 ZF 公理系统下, 广义连续统假设可以导出选择公理.
+
+选择公理看起来显然, 以至很难想象选择公理不成立会怎样. 但当选择公理成立时, 有一些 “不好的” 结果. 其中著名的有 Lebesgue 不可测集的存在性, 更出人意料的是有 Banach $^{④}$ -Tarski $^{⑤}$ 定理.
+
+定理 1.4.11 如果选择公理成立, 则可以把一个单位球体分成 $A, B, C, D, E$ 五份, 其中 $A, B, C$ 通过一些刚体运动, 即平移和旋转, 可以拼合成一个新的单位球体, 而 $D, E$ 也可以通过刚体运动拼合成另一个新的单位球体.
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">① Hartogs, Friedrich Moritz, 1874 年 5 月 20 日—1943 年 8 月 18 日, 比利时数学家.</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">② Gödel, Kurt Friedrich, 1906 年 4 月 28 日—1978 年 1 月 14 日, 奥地利裔美国逻辑学家、数学家和哲学家.</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">③ Cohen, Paul Joseph, 1934 年 4 月 2 日—2007 年 3 月 23 日, 美国数学家.</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">④ Banach, Stefan, 1892 年 3 月 30 日—1945 年 8 月 31 日, 波兰数学家.</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">⑤ Tarski, Alfred, 1901 年 1 月 14 日—1983 年 10 月 26 日, 波兰裔美国逻辑学家、数学家、哲学家.</span></small>
+
+---
+
+16
+
+第一章 集合与映射
+
+## 习题1
+
+1. 设  $a_{0}, a_{1}, \cdots, a_{n}$  为复常数，且对任何  $x \in R$  成立  $a_{n}x^{n} + a_{n-1}x^{n-1} + \cdots + a_{1}x + a_{0} = 0$ . 证明: $a_{0} = a_{1} = \cdots = a_{n} = 0$ .
+
+2. 设 $P$ 为首项系数不为零的 $n$ 次复系数多项式, $x_{1}$ 是它的一个零点. 证明: 存在首项系数不为零的 $n - 1$ 次多项式 $Q$ 使得
+
+$$
+P (x) = (x - x _ {1}) Q (x).
+$$
+
+3. 设  $a_{0}, a_{1}, \cdots, a_{n}$  为复常数,  $a_{n} \neq 0$ . 证明: 多项式
+
+$$
+P (x) = a _ {n} x ^ {n} + a _ {n - 1} x ^ {n - 1} + \dots + a _ {1} x + a _ {0}
+$$
+
+至多有 n 个复零点 (含重数).
+
+4. 证明: Viète $^{①}$ 定理: 设  $a_{n} \neq 0, x_{1}, x_{2}, \cdots, x_{n}$  为
+
+$$
+P (x) = a _ {n} x ^ {n} + a _ {n - 1} x ^ {n - 1} + \dots + a _ {1} x + a _ {0}
+$$
+
+的 $n$ 个复零点 (含重根), 则对于 $1 \leqslant k \leqslant n$, 成立
+
+$$
+\sum_ {1 \leqslant m _ {1} <   m _ {2} <   \dots <   m _ {k} \leqslant n} \prod_ {j = 1} ^ {k} x _ {m _ {j}} = (- 1) ^ {k} \frac {a _ {n - k}}{a _ {n}}.
+$$
+
+5. 试构造区间 $\left( {0,1}\right)$ 映到 $\lbrack 0,1\rbrack$ 的一个双射.
+
+6. 说明映射  $T: Q \rightarrow Z,$
+
+$$
+T (q) = \left\{ \begin{array}{l l} {(m + n) ^ {2} + n,} & {q = \frac {n}{m}, \quad m, n \text {为既约正整数},} \\ {0,} & {q = 0,} \\ {- (m + n) ^ {2} - n,} & {q = - \frac {n}{m}, \quad m, n \text {为既约正整数}} \end{array} \right.
+$$
+
+为有理数集到整数集的单射.
+
+7. 证明: 代数数集是可列集.
+
+8. 证明: 存在常数 $A > 0$ 使得对于任何整数 $q$ 和正整数 $p$, 成立
+
+$$
+\left| \sqrt {3} + \sqrt {2} - \frac {q}{p} \right| > \frac {A}{p ^ {4}}.
+$$
+
+9. 证明 $\left\{\sum_{k=1}^{\infty} \frac{n_k}{10^{k!}} \bigg| n_k = 1,2,\cdots,9 \right\}$ 的势是 $\aleph$, 其元均为 Liouville 数.
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">① Viète, François, Seigneur de la Bigotiere, 1540 年—1603 年 12 月 13 日, 法国数学家.</span></small>
+
+---
+
+习题1
+
+17
+
+10. 称关于  $x_{1}, x_{2}, \cdots, x_{n}$  的 m 次 n 元多项式  $R(x_{1}, x_{2}, \cdots, x_{n})$  是可轮换的，是指对任何  $1 \leqslant k < j \leqslant n$ ，将  $R(x_{1}, x_{2}, \cdots, x_{n})$  中的  $x_{k}, x_{j}$  分别替换成  $x_{j}, x_{k}$  后多项式保持不变。证明:
+
+(1) 若  $R(x_{1}, x_{2}, \cdots, x_{n})$  是可轮换的一次齐次多项式, 则它是  $x_{1} + x_{2} + \cdots + x_{n}$  的常数倍;
+
+(2) 若  $R(x_{1}, x_{2}, \cdots, x_{n})$  是可轮换的二次齐次多项式, 则有常数  $C_{1}, C_{2}$ , 使得
+
+$$
+R (x _ {1}, x _ {2}, \dots , x _ {n}) \equiv C _ {1} (x _ {1} ^ {2} + x _ {2} ^ {2} + \dots + x _ {n} ^ {2}) + C _ {2} \sum_ {1 \leqslant i <   j \leqslant n} x _ {i} x _ {j};
+$$
+
+(3) 归纳证明, 若  $R(x_{1}, x_{2}, \cdots, x_{n})$  是可轮换的 k 次多项式, 而  $x_{1}, x_{2}, \cdots, x_{n}$  是某首项系数不为零的 n 次有理系数多项式的零点, 则  $R(x_{1}, x_{2}, \cdots, x_{n})$  为有理数.
+
+11. 设 P, Q 分别是 m, n 阶首项系数为 1 的有理系数多项式:
+
+$$
+P (x) = \prod_ {k = 1} ^ {m} (x - x _ {k}), \quad Q (x) = \prod_ {k = 1} ^ {n} (x - y _ {k}).
+$$
+
+证明:
+
+(1) 多项式  $R(x) := \prod_{k=1}^{m} \prod_{j=1}^{n} (x - x_k - y_j)$  是有理系数多项式;
+
+(2) 多项式 $S(x) := \prod_{k=1}^{m} \prod_{j=1}^{n} (x - x_k y_j)$ 是有理系数多项式.
+
+12. 证明 Liouville 定理 1.4.9.
+
+13. 证明: 一个复数是代数数当且仅当它的实部和虚部都是代数数.

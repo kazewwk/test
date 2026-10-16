@@ -1,0 +1,3694 @@
+{
+  "pages": [
+    {
+      "page_idx": 357,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.388,
+            0.094,
+            0.498,
+            0.124
+          ],
+          "level": 2,
+          "content": "第十章"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.547,
+            0.16,
+            0.739,
+            0.2
+          ],
+          "level": 2,
+          "content": "广义积分"
+        }
+      ]
+    },
+    {
+      "page_idx": 358,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.069,
+            0.055,
+            0.089,
+            0.067
+          ],
+          "content": "52"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.054,
+            0.239,
+            0.068
+          ],
+          "content": "第十章 广义积分"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.11,
+            0.559,
+            0.128
+          ],
+          "content": "在前一章中, 我们用极限定义了 Riemann 积分:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.337,
+            0.146,
+            0.624,
+            0.189
+          ],
+          "content": "\\int_ {a} ^ {b} f (x) \\mathrm{d} x = \\lim _ {\\| \\mathrm{P} \\| \\to 0} \\sum_ {i = 1} ^ {n} f (\\xi_ {i}) \\Delta x _ {i},",
+          "image_source": "../../raw/pages_0353-0368/images/page_358_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.207,
+            0.853,
+            0.249
+          ],
+          "content": "其中 $[a, b]$ 为有界闭区间, 被积函数 $f$ 必须是有界函数. 在实际应用中, 这样的要求往往太强了. 下面我们在一定的条件下适当降低关于积分区间和被积函数的要求."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.109,
+            0.303,
+            0.332,
+            0.326
+          ],
+          "level": 2,
+          "content": "10.1 积分的推广"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.371,
+            0.853,
+            0.44
+          ],
+          "content": "考虑平面曲线 $y = \\frac{1}{x}, x \\in [1, +\\infty)$. 将该曲线绕 $x$ 轴旋转一周, 所得旋转体是无界的, 我们来说明它具有有限的体积. 当 $B > 1$ 时, 该旋转体介于 $x = 1$ 和 $x = B$ 的部分的体积为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.348,
+            0.448,
+            0.612,
+            0.487
+          ],
+          "content": "V _ {B} = \\int_ {1} ^ {B} \\pi \\Big (\\frac {1}{x} \\Big) ^ {2} \\mathrm{d} x = \\pi - \\frac {\\pi}{B},",
+          "image_source": "../../raw/pages_0353-0368/images/page_358_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.504,
+            0.351,
+            0.522
+          ],
+          "content": "这说明整个旋转体的体积为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.393,
+            0.536,
+            0.566,
+            0.562
+          ],
+          "content": "V = \\lim _ {B \\to + \\infty} V _ {B} = \\pi .",
+          "image_source": "../../raw/pages_0353-0368/images/page_358_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.58,
+            0.6,
+            0.598
+          ],
+          "content": "一般地, 为了考虑无穷区间上的积分, 我们引入如下定义:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.604,
+            0.853,
+            0.646
+          ],
+          "content": "定义 10.1.1 (无穷限积分) 设 f 是定义在  $[a, +\\infty)$  上的函数. 如果 f 在任何有界区间  $[a, B]$  上都是 Riemann 可积的, 且极限"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.399,
+            0.662,
+            0.562,
+            0.702
+          ],
+          "content": "\\lim _ {B \\to + \\infty} \\int_ {a} ^ {B} f (x)   \\mathrm{d} x",
+          "image_source": "../../raw/pages_0353-0368/images/page_358_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.719,
+            0.66,
+            0.756
+          ],
+          "content": "存在 (且有限), 则称无穷限积分  $\\int_{a}^{+\\infty} f(x) \\, dx$  存在或收敛, 记为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.325,
+            0.772,
+            0.634,
+            0.813
+          ],
+          "content": "\\int_ {a} ^ {+ \\infty} f (x)   \\mathrm{d} x = \\lim _ {B \\to + \\infty} \\int_ {a} ^ {B} f (x)   \\mathrm{d} x,",
+          "image_source": "../../raw/pages_0353-0368/images/page_358_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.829,
+            0.543,
+            0.866
+          ],
+          "content": "否则就称无穷限积分 $\\int_{a}^{+\\infty}f(x)\\mathrm{d}x$ 不存在或发散."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.869,
+            0.464,
+            0.887
+          ],
+          "content": "类似地, 我们也可以定义无穷限积分"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.9,
+            0.627,
+            0.938
+          ],
+          "content": "\\int_ {- \\infty} ^ {a} f (x)   \\mathrm{d} x = \\lim _ {A \\to - \\infty} \\int_ {A} ^ {a} f (x)   \\mathrm{d} x.",
+          "image_source": "../../raw/pages_0353-0368/images/page_358_equation_17.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 359,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.764,
+            0.057,
+            0.893,
+            0.072
+          ],
+          "content": "10.1 积分的推广"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.911,
+            0.059,
+            0.931,
+            0.07
+          ],
+          "content": "53"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.112,
+            0.893,
+            0.189
+          ],
+          "content": "设 $f$ 定义在 $\\mathbb{R}$ 上, 如果存在 $a \\in \\mathbb{R}$, 使得 $\\int_{-\\infty}^{a} f(x) \\mathrm{d}x$ 和 $\\int_{a}^{+\\infty} f(x) \\mathrm{d}x$ 均收敛, 则称 $\\int_{-\\infty}^{+\\infty} f(x) \\mathrm{d}x$ 收敛, 并定义"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.321,
+            0.201,
+            0.719,
+            0.24
+          ],
+          "content": "\\int_ {- \\infty} ^ {+ \\infty} f (x) \\mathrm{d} x = \\int_ {- \\infty} ^ {a} f (x) \\mathrm{d} x + \\int_ {a} ^ {+ \\infty} f (x) \\mathrm{d} x.",
+          "image_source": "../../raw/pages_0353-0368/images/page_359_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.252,
+            0.896,
+            0.269
+          ],
+          "content": "利用积分关于区间的可加性质容易验证此定义与 $a$ 的选取无关. 需要注意的是, 利用极限"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.437,
+            0.282,
+            0.605,
+            0.32
+          ],
+          "content": "\\lim _ {A \\to + \\infty} \\int_ {- A} ^ {A} f (x)   \\mathrm{d} x",
+          "image_source": "../../raw/pages_0353-0368/images/page_359_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.333,
+            0.781,
+            0.352
+          ],
+          "content": "也可以定义 $f$ 在 $(-\\infty, +\\infty)$ 上的一种积分, 称为 Cauchy 主值积分, 记为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.333,
+            0.364,
+            0.707,
+            0.403
+          ],
+          "content": "(V. P.) \\int_ {- \\infty} ^ {+ \\infty} f (x) \\mathrm{d} x = \\lim _ {A \\to + \\infty} \\int_ {- A} ^ {A} f (x) \\mathrm{d} x.",
+          "image_source": "../../raw/pages_0353-0368/images/page_359_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.415,
+            0.893,
+            0.456
+          ],
+          "content": "它和前一种定义不是等价的. 例如 $f(x) = x$ 的 Cauchy 主值积分为零, 但它在 $\\mathbb{R}$ 上的无穷限积分是发散的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.462,
+            0.62,
+            0.48
+          ],
+          "content": "从无穷限积分的定义立即得到如下的基本判别法:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.486,
+            0.893,
+            0.527
+          ],
+          "content": "(无穷限积分的 Cauchy 准则) f 在  $[a, +\\infty)$  上的无穷限积分收敛当且仅当任给  $\\varepsilon > 0$ ，存在  $M = M(\\varepsilon)$ ，使得当 B > A > M 时，"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.441,
+            0.54,
+            0.602,
+            0.579
+          ],
+          "content": "\\left| \\int_ {A} ^ {B} f (x) \\mathrm{d} x \\right| <   \\varepsilon .",
+          "image_source": "../../raw/pages_0353-0368/images/page_359_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.591,
+            0.823,
+            0.609
+          ],
+          "content": "对于 $(-∞,a]$ 和 $(-∞,+∞)$ 上的无穷限积分也有完全类似的基本判别法."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.612,
+            0.711,
+            0.648
+          ],
+          "content": "例 10.1.1 讨论无穷限积分  $\\int_{1}^{+\\infty}\\frac{1}{x^{p}}\\mathrm{d}x\\left(p\\in\\mathbb{R}\\right)$  的敛散性."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.65,
+            0.341,
+            0.667
+          ],
+          "content": "解 当 A > 1 时,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.344,
+            0.682,
+            0.698,
+            0.743
+          ],
+          "content": "\\int_ {1} ^ {A} \\frac {1}{x ^ {p}}   \\mathrm{d} x = \\left\\{ \\begin{array}{l l} \\ln A, & p = 1, \\\\ \\frac {1}{1 - p} (A ^ {1 - p} - 1), & p \\neq 1. \\end{array} \\right.",
+          "image_source": "../../raw/pages_0353-0368/images/page_359_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.754,
+            0.564,
+            0.773
+          ],
+          "content": "因此只有 $p > 1$ 时无穷限积分才是收敛的, 此时"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.315,
+            0.785,
+            0.726,
+            0.823
+          ],
+          "content": "\\int_ {1} ^ {+ \\infty} \\frac {1}{x ^ {p}} \\mathrm{d} x = \\lim _ {A \\to + \\infty} \\frac {1}{1 - p} (A ^ {1 - p} - 1) = \\frac {1}{p - 1}.",
+          "image_source": "../../raw/pages_0353-0368/images/page_359_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.834,
+            0.881,
+            0.852
+          ],
+          "content": "一般地, 如果连续函数 $f$ 在 $[a, +\\infty)$ 上存在原函数 $F$, 则由微积分基本定理可知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.34,
+            0.865,
+            0.702,
+            0.903
+          ],
+          "content": "\\lim _ {A \\to + \\infty} \\int_ {a} ^ {A} f (x)   \\mathrm{d} x = \\lim _ {A \\to + \\infty} F (A) - F (a),",
+          "image_source": "../../raw/pages_0353-0368/images/page_359_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.914,
+            0.734,
+            0.939
+          ],
+          "content": "即此时无穷限积分是否收敛与极限  $\\lim_{A\\to+\\infty}F(A)$  是否存在是一致的."
+        }
+      ]
+    },
+    {
+      "page_idx": 360,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.07,
+            0.056,
+            0.089,
+            0.067
+          ],
+          "content": "54"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.055,
+            0.239,
+            0.068
+          ],
+          "content": "第十章 广义积分"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.111,
+            0.549,
+            0.147
+          ],
+          "content": "例10.1.2 计算无穷限积分 $\\int_{-\\infty}^{+\\infty}\\frac{1}{1 + x^2}\\mathrm{d}x.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.15,
+            0.482,
+            0.182
+          ],
+          "content": "解 $\\frac{1}{1 + x^2}$ 的原函数为 $\\arctan x$ ，因此"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.252,
+            0.195,
+            0.856,
+            0.307
+          ],
+          "content": "\\begin{array}{l} \\int_ {- \\infty} ^ {+ \\infty} \\frac {1}{1 + x ^ {2}} \\mathrm{d} x = \\int_ {- \\infty} ^ {0} \\frac {1}{1 + x ^ {2}} \\mathrm{d} x + \\int_ {0} ^ {+ \\infty} \\frac {1}{1 + x ^ {2}} \\mathrm{d} x \\\\ = \\arctan x \\big | _ {- \\infty} ^ {0} + \\arctan x \\big | _ {0} ^ {+ \\infty} \\\\ = \\frac {\\pi}{2} + \\frac {\\pi}{2} = \\pi . \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0353-0368/images/page_360_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.319,
+            0.708,
+            0.337
+          ],
+          "content": "和无穷限积分类似, 我们也可以利用极限来处理无界函数的积分."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.108,
+            0.343,
+            0.853,
+            0.384
+          ],
+          "content": "定义 10.1.2 (瑕积分) 设函数 f 在  $(a, b]$  上有定义, 且任给  $a' \\in (a, b)$ , 均有  $f \\in R[a', b]$ . 如果极限"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.405,
+            0.389,
+            0.556,
+            0.427
+          ],
+          "content": "\\lim _ {a ^ {\\prime} \\to a ^ {+}} \\int_ {a ^ {\\prime}} ^ {b} f (x)   \\mathrm{d} x",
+          "image_source": "../../raw/pages_0353-0368/images/page_360_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.108,
+            0.438,
+            0.6,
+            0.476
+          ],
+          "content": "存在 (且有限), 则称瑕积分 $\\int_{a}^{b} f(x) \\, \\mathrm{d}x$ 存在或收敛, 记为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.342,
+            0.492,
+            0.617,
+            0.532
+          ],
+          "content": "\\int_ {a} ^ {b} f (x) \\mathrm{d} x = \\lim _ {a ^ {\\prime} \\to a ^ {+}} \\int_ {a ^ {\\prime}} ^ {b} f (x) \\mathrm{d} x,",
+          "image_source": "../../raw/pages_0353-0368/images/page_360_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.109,
+            0.547,
+            0.481,
+            0.585
+          ],
+          "content": "否则就称瑕积分 $\\int_{a}^{b}f(x)\\mathrm{d}x$ 不存在或发散."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.587,
+            0.851,
+            0.629
+          ],
+          "content": "不难看出, 若 $f \\in R[a, b]$, 则 $f$ 的瑕积分等于其 Riemann 积分. 如果 $f$ 在某一点附近无界, 则称该点为 $f$ 的瑕点. 当 $b$ 为 $f$ 的瑕点时, 可以在 $[a, b)$ 上定义瑕积分如下:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.34,
+            0.645,
+            0.617,
+            0.685
+          ],
+          "content": "\\int_ {a} ^ {b} f (x) \\mathrm{d} x = \\lim _ {b ^ {\\prime} \\to b ^ {-}} \\int_ {a} ^ {b ^ {\\prime}} f (x) \\mathrm{d} x.",
+          "image_source": "../../raw/pages_0353-0368/images/page_360_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.7,
+            0.524,
+            0.719
+          ],
+          "content": "设 $c \\in (a, b)$ 为 $f$ 在 $[a, b]$ 上的唯一瑕点, 则定义"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.308,
+            0.735,
+            0.649,
+            0.775
+          ],
+          "content": "\\int_ {a} ^ {b} f (x) \\mathrm{d} x = \\int_ {a} ^ {c} f (x) \\mathrm{d} x + \\int_ {c} ^ {b} f (x) \\mathrm{d} x,",
+          "image_source": "../../raw/pages_0353-0368/images/page_360_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.789,
+            0.851,
+            0.83
+          ],
+          "content": "前提是上式右边的两个瑕积分均收敛. 当瑕点不止一个时也可类似地定义瑕积分, 瑕积分的收敛性仍有和无穷限积分类似的基本判别法."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.837,
+            0.851,
+            0.902
+          ],
+          "content": "如果一个函数既是无界的, 定义域又是无限区间, 则通过适当地分割区间, 可以把上面两种积分, 即无穷限积分和瑕积分结合起来, 得到的积分统称广义积分, 又称反常积分."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.903,
+            0.588,
+            0.941
+          ],
+          "content": "例10.1.3 讨论积分 $\\int_0^1\\frac{1}{x^p}\\mathrm{d}x(p\\in \\mathbb{R})$ 的敛散性."
+        }
+      ]
+    },
+    {
+      "page_idx": 361,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.76,
+            0.054,
+            0.889,
+            0.068
+          ],
+          "content": "10.1 积分的推广"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.908,
+            0.055,
+            0.929,
+            0.067
+          ],
+          "content": "55"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.182,
+            0.111,
+            0.374,
+            0.129
+          ],
+          "content": "解 当 $0 < a < 1$ 时,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.346,
+            0.14,
+            0.686,
+            0.202
+          ],
+          "content": "\\int_ {a} ^ {1} \\frac {1}{x ^ {p}} \\mathrm{d} x = \\left\\{ \\begin{array}{l l} - \\ln a, & p = 1, \\\\ \\frac {1}{1 - p} (1 - a ^ {1 - p}), & p \\neq 1. \\end{array} \\right.",
+          "image_source": "../../raw/pages_0353-0368/images/page_361_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.213,
+            0.499,
+            0.23
+          ],
+          "content": "因此只有 $p < 1$ 时积分才是收敛的, 此时"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.329,
+            0.241,
+            0.705,
+            0.279
+          ],
+          "content": "\\int_ {0} ^ {1} \\frac {1}{x ^ {p}} \\mathrm{d} x = \\lim _ {a \\to 0 ^ {+}} \\frac {1}{1 - p} (1 - a ^ {1 - p}) = \\frac {1}{1 - p}.",
+          "image_source": "../../raw/pages_0353-0368/images/page_361_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.184,
+            0.288,
+            0.525,
+            0.326
+          ],
+          "content": "例 10.1.4 计算积分  $\\int_{-1}^{1}\\frac{1}{\\sqrt{1-x^{2}}}\\mathrm{d}x.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.184,
+            0.328,
+            0.513,
+            0.345
+          ],
+          "content": "解 被积函数有两个瑕点 ±1. 我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.289,
+            0.351,
+            0.893,
+            0.462
+          ],
+          "content": "\\begin{array}{l} \\int_ {- 1} ^ {1} \\frac {1}{\\sqrt {1 - x ^ {2}}} \\mathrm{d} x = \\int_ {- 1} ^ {0} \\frac {1}{\\sqrt {1 - x ^ {2}}} \\mathrm{d} x + \\int_ {0} ^ {1} \\frac {1}{\\sqrt {1 - x ^ {2}}} \\mathrm{d} x \\\\ = \\arcsin x \\big | _ {- 1} ^ {0} + \\arcsin x \\big | _ {0} ^ {1} \\\\ = \\frac {\\pi}{2} + \\frac {\\pi}{2} = \\pi . \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0353-0368/images/page_361_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.468,
+            0.892,
+            0.509
+          ],
+          "content": "广义积分具有和 Riemann 积分类似的性质, 一些运算法则, 例如分部积分、换元法等也可以直接推广过来. 例如, 我们有"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.515,
+            0.892,
+            0.556
+          ],
+          "content": "定理 10.1.1 设 u, v 在  $[a, +\\infty)$  上可导且  $u', v'$  在每一个有界的闭子区间  $[a, B]$  上均可积，则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.305,
+            0.559,
+            0.734,
+            0.596
+          ],
+          "content": "\\int_ {a} ^ {+ \\infty} u (x) v ^ {\\prime} (x) \\mathrm{d} x = u v \\Big | _ {a} ^ {+ \\infty} - \\int_ {a} ^ {+ \\infty} u ^ {\\prime} (x) v (x) \\mathrm{d} x,",
+          "image_source": "../../raw/pages_0353-0368/images/page_361_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.602,
+            0.628,
+            0.619
+          ],
+          "content": "即上式右端有意义时, 其左端也有意义且等于右端的值."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.625,
+            0.608,
+            0.642
+          ],
+          "content": "证明 当 $B > a$ 时,由通常的分部积分公式可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.328,
+            0.652,
+            0.712,
+            0.691
+          ],
+          "content": "\\int_ {a} ^ {B} u (x) v ^ {\\prime} (x) \\mathrm{d} x = u v \\Big | _ {a} ^ {B} - \\int_ {a} ^ {B} u ^ {\\prime} (x) v (x) \\mathrm{d} x,",
+          "image_source": "../../raw/pages_0353-0368/images/page_361_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.7,
+            0.389,
+            0.717
+          ],
+          "content": "令  $B \\rightarrow +\\infty$  即得欲证结论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.723,
+            0.894,
+            0.765
+          ],
+          "content": "定理 10.1.2 设  $f \\in C(a, b)$ ,  $\\varphi$  是  $(\\alpha, \\beta)$  上严格单调的可导函数, 且  $\\varphi'$  在  $(\\alpha, \\beta)$  的任何闭子区间上均可积. 若  $\\varphi((\\alpha, \\beta)) \\subseteq (a, b)$ , 且  $\\varphi(\\alpha^{+}) = a$ ,  $\\varphi(\\beta^{-}) = b$ , 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.375,
+            0.775,
+            0.664,
+            0.814
+          ],
+          "content": "\\int_ {a} ^ {b} f (x) \\mathrm{d} x = \\int_ {\\alpha} ^ {\\beta} f (\\varphi (t)) \\varphi^ {\\prime} (t) \\mathrm{d} t,",
+          "image_source": "../../raw/pages_0353-0368/images/page_361_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.823,
+            0.609,
+            0.84
+          ],
+          "content": "即上式右端有意义时, 左端也有意义且等于右端的值."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.845,
+            0.894,
+            0.887
+          ],
+          "content": "证明 任取 $[a', b'] \\subseteq (a, b)$，利用介值定理，我们可以选取 $\\alpha', \\beta' \\in (\\alpha, \\beta)$，使得 $\\varphi(\\alpha') = a', \\varphi(\\beta') = b'$。由通常的换元法可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.358,
+            0.897,
+            0.682,
+            0.939
+          ],
+          "content": "\\int_ {\\varphi (\\alpha^ {\\prime})} ^ {\\varphi (\\beta^ {\\prime})} f (x) \\mathrm{d} x = \\int_ {\\alpha^ {\\prime}} ^ {\\beta^ {\\prime}} f (\\varphi (t)) \\varphi^ {\\prime} (t) \\mathrm{d} t.",
+          "image_source": "../../raw/pages_0353-0368/images/page_361_equation_20.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 362,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.072,
+            0.056,
+            0.092,
+            0.068
+          ],
+          "content": "56"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.11,
+            0.055,
+            0.24,
+            0.069
+          ],
+          "content": "第十章 广义积分"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.111,
+            0.857,
+            0.129
+          ],
+          "content": "令 $a^{\\prime}\\rightarrow a^{+},b^{\\prime}\\rightarrow b^{-}$ ，由 $\\varphi$ 严格单调可知 $\\alpha^{\\prime}\\to \\alpha^{+},\\beta^{\\prime}\\to \\beta^{-}$ ，由此即得欲证结论. □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.132,
+            0.449,
+            0.169
+          ],
+          "content": "例 10.1.5 计算积分  $\\int_{0}^{1}\\ln x dx$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.17,
+            0.392,
+            0.195
+          ],
+          "content": "解 利用 $\\lim_{x\\to 0^{+}}x\\ln x = 0$ 得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.303,
+            0.207,
+            0.66,
+            0.246
+          ],
+          "content": "\\int_ {0} ^ {1} \\ln x \\mathrm{d} x = x \\ln x \\Big | _ {0} ^ {1} - \\int_ {0} ^ {1} x \\cdot \\frac {1}{x} \\mathrm{d} x = - 1.",
+          "image_source": "../../raw/pages_0353-0368/images/page_362_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.257,
+            0.567,
+            0.294
+          ],
+          "content": "例 10.1.6 讨论积分  $\\int_{0}^{+\\infty}\\cos x^{2}dx$  的敛散性."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.297,
+            0.797,
+            0.315
+          ],
+          "content": "解 只要讨论被积函数在 $[1, +\\infty)$ 上的积分就可以了. 作变换 $x = \\sqrt{t}$ 可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.333,
+            0.327,
+            0.629,
+            0.365
+          ],
+          "content": "\\int_ {1} ^ {+ \\infty} \\cos x ^ {2} \\mathrm{d} x = \\frac {1}{2} \\int_ {1} ^ {+ \\infty} \\frac {\\cos t}{\\sqrt {t}} \\mathrm{d} t.",
+          "image_source": "../../raw/pages_0353-0368/images/page_362_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.377,
+            0.596,
+            0.394
+          ],
+          "content": "我们利用分部积分和 Cauchy 准则来判断积分的收敛性:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.168,
+            0.405,
+            0.793,
+            0.489
+          ],
+          "content": "\\begin{array}{l} \\left| \\int_ {A} ^ {B} \\frac {\\cos t}{\\sqrt {t}} \\mathrm{d} t \\right| = \\left| \\frac {\\sin t}{\\sqrt {t}} \\right| _ {A} ^ {B} + \\frac {1}{2} \\int_ {A} ^ {B} \\frac {\\sin t}{t ^ {\\frac {3}{2}}} \\mathrm{d} t \\\\ \\leqslant \\frac {1}{\\sqrt {A}} + \\frac {1}{\\sqrt {B}} + \\frac {1}{2} \\int_ {A} ^ {B} t ^ {- \\frac {3}{2}} \\mathrm{d} t = \\frac {2}{\\sqrt {A}} \\rightarrow 0 (B > A \\rightarrow + \\infty). \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0353-0368/images/page_362_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.5,
+            0.298,
+            0.517
+          ],
+          "content": "这说明积分是收敛的."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.108,
+            0.522,
+            0.188,
+            0.565
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0353-0368/images/page_362_image_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.201,
+            0.523,
+            0.855,
+            0.566
+          ],
+          "content": "注 10.1.1 这个例子也告诉我们，f 在  $[a, +\\infty)$  上的积分存在并不意味着  $f(x) \\to 0 (x \\to +\\infty)$ ."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.149,
+            0.608,
+            0.254,
+            0.627
+          ],
+          "level": 2,
+          "content": "习题 10.1"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.651,
+            0.855,
+            0.692
+          ],
+          "content": "1. 设 $f$ 为 $[a, b]$ 上的有界函数. 如果任给 $a' \\in (a, b)$, 均有 $f \\in R[a', b]$, 证明: $f \\in R[a, b]$, 且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.341,
+            0.695,
+            0.619,
+            0.734
+          ],
+          "content": "\\lim _ {a ^ {\\prime} \\to a ^ {+}} \\int_ {a ^ {\\prime}} ^ {b} f (x)   \\mathrm{d} x = \\int_ {a} ^ {b} f (x)   \\mathrm{d} x.",
+          "image_source": "../../raw/pages_0353-0368/images/page_362_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.741,
+            0.226,
+            0.757
+          ],
+          "content": "2. 证明:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.369,
+            0.758,
+            0.594,
+            0.797
+          ],
+          "content": "\\frac {\\pi}{2 \\sqrt {2}} <   \\int_ {0} ^ {1} \\frac {\\mathrm{d} x}{\\sqrt {1 - x ^ {4}}} <   \\frac {\\pi}{2}.",
+          "image_source": "../../raw/pages_0353-0368/images/page_362_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.804,
+            0.367,
+            0.82
+          ],
+          "content": "3. 计算下列无穷限积分:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.822,
+            0.314,
+            0.86
+          ],
+          "content": "(1) $\\int_{2}^{+\\infty}\\frac{\\mathrm{d}x}{x(\\ln x)^{2}};$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.516,
+            0.821,
+            0.677,
+            0.858
+          ],
+          "content": "(2) $\\int_{1}^{+\\infty}\\frac{\\ln x}{x^2}\\mathrm{d}x;$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.862,
+            0.367,
+            0.9
+          ],
+          "content": "(3) $\\int_{\\mathrm{e}^2}^{+\\infty}\\frac{\\mathrm{d}x}{x\\ln x\\ln^2(\\ln x)};$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.516,
+            0.861,
+            0.692,
+            0.898
+          ],
+          "content": "(4) $\\int_{1}^{+\\infty}\\frac{\\mathrm{d}x}{x(1 + x)};$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.903,
+            0.374,
+            0.941
+          ],
+          "content": "(5) $\\int_0^{+\\infty}\\frac{\\mathrm{d}x}{(x + 2)(x + 3)};$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.516,
+            0.902,
+            0.717,
+            0.938
+          ],
+          "content": "(6) $\\int_{0}^{+\\infty}\\frac{\\mathrm{d}x}{x^2 + 2x + 2}.$"
+        }
+      ]
+    },
+    {
+      "page_idx": 363,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.678,
+            0.057,
+            0.886,
+            0.071
+          ],
+          "content": "10.2 广义积分的收敛判别法"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.906,
+            0.059,
+            0.925,
+            0.069
+          ],
+          "content": "57"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.182,
+            0.115,
+            0.359,
+            0.131
+          ],
+          "content": "4. 计算下列瑕积分:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.184,
+            0.133,
+            0.34,
+            0.171
+          ],
+          "content": "(1) $\\int_0^1\\frac{x^3\\mathrm{d}x}{\\sqrt{1 - x^2}};$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.549,
+            0.131,
+            0.708,
+            0.169
+          ],
+          "content": "(2) $\\int_{-1}^{1}\\frac{x\\mathrm{d}x}{\\sqrt{1 - x^2}};$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.174,
+            0.367,
+            0.211
+          ],
+          "content": "(3) $\\int_{-1}^{1} \\frac{\\arcsin x}{\\sqrt{1 - x^2}} \\, \\mathrm{d}x;$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.55,
+            0.172,
+            0.754,
+            0.209
+          ],
+          "content": "(4) $\\int_0^1\\frac{\\mathrm{d}x}{(2 - x)\\sqrt{1 - x}};$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.214,
+            0.415,
+            0.253
+          ],
+          "content": "(5) $\\int_{\\alpha}^{\\beta}\\frac{x\\mathrm{d}x}{\\sqrt{(x - \\alpha)(\\beta - x)}};$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.551,
+            0.213,
+            0.749,
+            0.252
+          ],
+          "content": "(6) $\\int_0^1\\frac{\\arcsin\\sqrt{x}}{\\sqrt{x(1 - x)}}\\mathrm{d}x.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.184,
+            0.256,
+            0.46,
+            0.272
+          ],
+          "content": "5. 讨论下列广义积分的敛散性:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.276,
+            0.373,
+            0.311
+          ],
+          "content": "(1) $\\int_{0}^{+\\infty}|\\cos x^2 |\\mathrm{d}x;$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.551,
+            0.273,
+            0.7,
+            0.31
+          ],
+          "content": "(2) $\\int_0^{+\\infty}\\frac{\\mathrm{d}x}{\\mathrm{e}^x\\sqrt{x}}.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.184,
+            0.314,
+            0.44,
+            0.33
+          ],
+          "content": "6. 讨论下列瑕积分的敛散性:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.333,
+            0.298,
+            0.37
+          ],
+          "content": "(1) $\\int_0^1\\frac{\\mathrm{d}x}{\\sqrt{x}};$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.545,
+            0.331,
+            0.699,
+            0.368
+          ],
+          "content": "(2) $\\int_0^1\\frac{\\ln x}{1 - x}\\mathrm{d}x;$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.372,
+            0.338,
+            0.409
+          ],
+          "content": "(3) $\\int_0^2\\frac{\\mathrm{d}x}{(x - 1)^2}.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.411,
+            0.889,
+            0.451
+          ],
+          "content": "7. 设 $g \\leqslant f \\leqslant h$ 且 $g, h$ 在 $[a, +\\infty)$ 上的无穷限积分都收敛, 证明: $f$ 在 $[a, +\\infty)$ 上的无穷限积分也收敛."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.183,
+            0.457,
+            0.889,
+            0.479
+          ],
+          "content": "8. 设 $f$ 为单调递减函数且它在 $[a, +\\infty)$ 上的无穷限积分收敛, 证明: $\\lim_{x \\to +\\infty} x f(x) = 0$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.183,
+            0.481,
+            0.871,
+            0.503
+          ],
+          "content": "9. 设 $f$ 在 $[a, +\\infty)$ 上的无穷限积分收敛, 且 $f$ 一致连续, 证明: $\\lim_{x \\to +\\infty} f(x) = 0$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.505,
+            0.89,
+            0.551
+          ],
+          "content": "10. 举例说明, 当 $f$ 为正连续函数且它在 $[a, +\\infty)$ 上的无穷限积分收敛时, 未必有 $\\lim_{x \\to +\\infty} f(x) = 0$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.553,
+            0.562,
+            0.569
+          ],
+          "content": "11. 设 f 为  $(0,1]$  上的单调递减函数, 证明:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.374,
+            0.581,
+            0.662,
+            0.623
+          ],
+          "content": "\\int_ {0} ^ {1} f (x) \\mathrm{d} x = \\lim _ {n \\to + \\infty} \\frac {1}{n} \\sum_ {k = 1} ^ {n} f \\left(\\frac {k}{n}\\right).",
+          "image_source": "../../raw/pages_0353-0368/images/page_363_equation_21.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.635,
+            0.525,
+            0.67
+          ],
+          "content": "12. 利用上一题证明: $\\lim_{n\\to +\\infty}\\frac{\\sqrt[n]{n!}}{n} = \\frac{1}{\\mathrm{e}}.$"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.148,
+            0.716,
+            0.514,
+            0.738
+          ],
+          "level": 2,
+          "content": "10.2 广义积分的收敛判别法"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.785,
+            0.894,
+            0.884
+          ],
+          "content": "我们知道 Cauchy 准则可以用来判断广义积分的敛散性. 下面我们进一步介绍其他的几个判别法. 首先研究非负函数, 注意到如果 $f$ 非负且在有界区间上均可积, 则积分 $\\int_{a}^{B} f(x) \\mathrm{d}x$ 关于 $B$ 单调递增, 因此其极限存在当且仅当它有上界, 这就得到了非负函数无穷限积分的如下判别法:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.887,
+            0.903,
+            0.937
+          ],
+          "content": "定理 10.2.1 设  $f \\geqslant 0$  且在有界区间  $[a, B]$  上均可积，则无穷限积分  $\\int_{a}^{+\\infty} f(x) \\, dx$ \n收敛当且仅当"
+        }
+      ]
+    },
+    {
+      "page_idx": 364,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.074,
+            0.058,
+            0.095,
+            0.069
+          ],
+          "content": "58"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.112,
+            0.056,
+            0.242,
+            0.071
+          ],
+          "content": "第十章 广义积分"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.395,
+            0.111,
+            0.574,
+            0.149
+          ],
+          "content": "F (B) = \\int_ {a} ^ {B} f (x)   \\mathrm{d} x",
+          "image_source": "../../raw/pages_0353-0368/images/page_364_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.154,
+            0.571,
+            0.172
+          ],
+          "content": "关于  $B \\in [a, +\\infty)$  有界；对瑕积分有完全类似的结果."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.177,
+            0.421,
+            0.195
+          ],
+          "content": "由此又得到如下的比较判别法:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.2,
+            0.857,
+            0.312
+          ],
+          "content": "定理 10.2.2 设 $0 \\leqslant f \\leqslant M g$, 其中 $M > 0$ 为常数. 如果 $f, g$ 在有界区间 $[a, B]$ 上均可积, 则当无穷限积分 $\\int_{a}^{+\\infty} g(x) \\mathrm{d}x$ 收敛时, 无穷限积分 $\\int_{a}^{+\\infty} f(x) \\mathrm{d}x$ 也收敛; 当无穷限积分 $\\int_{a}^{+\\infty} f(x) \\mathrm{d}x$ 发散时, 无穷限积分 $\\int_{a}^{+\\infty} g(x) \\mathrm{d}x$ 也发散; 瑕积分有完全类似的结果."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.318,
+            0.235,
+            0.335
+          ],
+          "content": "证明 令"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.295,
+            0.336,
+            0.671,
+            0.375
+          ],
+          "content": "F (B) = \\int_ {a} ^ {B} f (x)   \\mathrm{d} x, G (B) = \\int_ {a} ^ {B} g (x)   \\mathrm{d} x,",
+          "image_source": "../../raw/pages_0353-0368/images/page_364_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.108,
+            0.379,
+            0.856,
+            0.422
+          ],
+          "content": "则 $0 \\leqslant F(B) \\leqslant M \\cdot G(B), \\forall B \\in [a, +\\infty)$. 因此, 当 $G(B)$ 有界时 $F(B)$ 也有界, 当 $F(B)$ 无界时 $G(B)$ 也无界. □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.203,
+            0.428,
+            0.857,
+            0.568
+          ],
+          "content": "注 10.2.1 (1) 通常利用极限去找 M. 如果极限  $l = \\lim_{x \\to +\\infty} \\frac{f(x)}{g(x)}$  存在，则当  $0 < l < +\\infty$  时，无穷限积分  $\\int_{a}^{+\\infty} f(x) \\, dx$  和  $\\int_{a}^{+\\infty} g(x) \\, dx$  同时收敛或发散；当 l = 0 时，如果  $\\int_{a}^{+\\infty} g(x) \\, dx$  收敛，则  $\\int_{a}^{+\\infty} f(x) \\, dx$  也收敛；当  $l = +\\infty$  时，如果  $\\int_{a}^{+\\infty} g(x) \\, dx$  发散，则  $\\int_{a}^{+\\infty} f(x) \\, dx$  也发散."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.241,
+            0.569,
+            0.818,
+            0.586
+          ],
+          "content": "(2) 我们可以将函数 f 与  $x^{-p}$  比较, 则得到如下的 Cauchy 判别法:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.241,
+            0.593,
+            0.586,
+            0.61
+          ],
+          "content": "(i) 如果 p > 1，且存在常数 C > 0，使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.409,
+            0.621,
+            0.648,
+            0.653
+          ],
+          "content": "0 \\leqslant f (x) \\leqslant \\frac {C}{x ^ {p}} (\\forall x \\geqslant x _ {0}),",
+          "image_source": "../../raw/pages_0353-0368/images/page_364_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.205,
+            0.662,
+            0.401,
+            0.698
+          ],
+          "content": "则 $\\int_{a}^{+\\infty}f(x)\\mathrm{d}x$ 收敛；"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.242,
+            0.696,
+            0.591,
+            0.714
+          ],
+          "content": "(ii) 如果 $p \\leqslant 1$, 且存在常数 $C > 0$, 使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.427,
+            0.724,
+            0.63,
+            0.757
+          ],
+          "content": "f (x) \\geqslant \\frac {C}{x ^ {p}} (\\forall x \\geqslant x _ {0}),",
+          "image_source": "../../raw/pages_0353-0368/images/page_364_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.205,
+            0.766,
+            0.401,
+            0.803
+          ],
+          "content": "则 $\\int_{a}^{+\\infty}f(x)\\mathrm{d}x$ 发散；"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.242,
+            0.804,
+            0.751,
+            0.828
+          ],
+          "content": "通常利用极限取寻找 C. 设极限  $\\lim_{x\\to+\\infty}x^{p}f(x)=l$  存在, 则"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.242,
+            0.828,
+            0.695,
+            0.864
+          ],
+          "content": "(iii) 如果 $p > 1, 0 \\leqslant l < +\\infty$，则 $\\int_{a}^{+\\infty} f(x) \\, \\mathrm{d}x$ 收敛；"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.242,
+            0.862,
+            0.694,
+            0.898
+          ],
+          "content": "(iv) 如果 $p \\leqslant 1, 0 < l \\leqslant +\\infty$，则 $\\int_{a}^{+\\infty} f(x) \\, \\mathrm{d}x$ 发散."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.242,
+            0.897,
+            0.702,
+            0.934
+          ],
+          "content": "(3) 类似地, 考虑以 $a$ 为瑕点的瑕积分 $\\int_{a}^{b} f(x) \\mathrm{d}x$, 有"
+        }
+      ]
+    },
+    {
+      "page_idx": 365,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.684,
+            0.054,
+            0.891,
+            0.068
+          ],
+          "content": "10.2 广义积分的收敛判别法"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.911,
+            0.055,
+            0.931,
+            0.067
+          ],
+          "content": "59"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.241,
+            0.129,
+            0.891,
+            0.184
+          ],
+          "content": "(i) 如果 $p < 1$, 且存在常数 $C > 0$, 使得 $0 \\leqslant f(x) \\leqslant C(x - a)^{-p}$, 则瑕积分 $\\int_{a}^{b} f(x) \\, \\mathrm{d}x$ 收敛;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.241,
+            0.184,
+            0.891,
+            0.242
+          ],
+          "content": "(ii) 如果 $p \\geqslant 1$, 且存在常数 $C > 0$, 使得 $f(x) \\geqslant C(x - a)^{-p}$, 则瑕积分 $\\int_{a}^{b} f(x) \\, \\mathrm{d}x$ 发散;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.28,
+            0.242,
+            0.846,
+            0.268
+          ],
+          "content": "我们往往通过求极限去寻找 $C$ 设 $\\lim_{x\\to a^{+}}(x - a)^{p}f(x) = l$ 存在, 则"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.281,
+            0.268,
+            0.771,
+            0.303
+          ],
+          "content": "(iii) 如果 $p < 1, 0 \\leqslant l < +\\infty$，则瑕积分 $\\int_{a}^{b} f(x) \\, \\mathrm{d}x$ 收敛；"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.281,
+            0.306,
+            0.771,
+            0.343
+          ],
+          "content": "(iv) 如果 $p \\geqslant 1, 0 < l \\leqslant +\\infty$，则瑕积分 $\\int_{a}^{b} f(x) \\, \\mathrm{d}x$ 发散."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.354,
+            0.676,
+            0.392
+          ],
+          "content": "例 10.2.1 判别积分  $\\int_{1}^{+\\infty}\\frac{1}{x\\sqrt{x^{2}+x+1}}\\mathrm{d}x$  的敛散性."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.394,
+            0.272,
+            0.41
+          ],
+          "content": "解 因为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.365,
+            0.41,
+            0.676,
+            0.445
+          ],
+          "content": "0 \\leqslant \\frac {1}{x \\sqrt {x ^ {2} + x + 1}} \\leqslant x ^ {- 2}, \\forall x \\geqslant 1,",
+          "image_source": "../../raw/pages_0353-0368/images/page_365_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.454,
+            0.318,
+            0.47
+          ],
+          "content": "所以积分是收敛的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.472,
+            0.677,
+            0.509
+          ],
+          "content": "例 10.2.2 判别积分  $\\int_{1}^{+\\infty} x^{a} e^{-x} dx (a \\in R)$  的敛散性."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.51,
+            0.273,
+            0.527
+          ],
+          "content": "解 因为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.373,
+            0.524,
+            0.672,
+            0.559
+          ],
+          "content": "\\lim _ {x \\to + \\infty} x ^ {2} x ^ {a} \\mathrm{e} ^ {- x} = \\lim _ {x \\to + \\infty} \\frac {x ^ {2 + a}}{\\mathrm{e} ^ {x}} = 0,",
+          "image_source": "../../raw/pages_0353-0368/images/page_365_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.565,
+            0.319,
+            0.582
+          ],
+          "content": "所以积分是收敛的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.584,
+            0.653,
+            0.621
+          ],
+          "content": "例 10.2.3 判别积分  $\\int_{1}^{+\\infty}\\frac{1}{x(1+\\ln x)}\\mathrm{d}x$  的敛散性."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.622,
+            0.896,
+            0.663
+          ],
+          "content": "解 被积函数有原函数 $F(x) = \\ln (1 + \\ln x)$，由 Newton-Leibniz 公式易见积分是发散的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.669,
+            0.896,
+            0.711
+          ],
+          "content": "这里要提醒读者注意, 比较判别法只适用于不变号的函数. 对于变号函数的广义积分, 有时可以化为非负函数的积分来判断它是否收敛."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.716,
+            0.331,
+            0.733
+          ],
+          "content": "设 $f$ 为函数, 记"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.306,
+            0.751,
+            0.739,
+            0.771
+          ],
+          "content": "f ^ {+} (x) = \\max \\{0, f (x) \\}, \\quad f ^ {-} (x) = \\max \\{0, - f (x) \\},",
+          "image_source": "../../raw/pages_0353-0368/images/page_365_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.786,
+            0.897,
+            0.876
+          ],
+          "content": "则 $f^{+}$ 和 $f^{-}$ 均为非负函数, 且 $f = f^{+} - f^{-}$. 因此, 当 $f^{+}$ 和 $f^{-}$ 的广义积分均收敛时, $f$ 的广义积分也收敛, 此时称 $f$ 的广义积分绝对收敛, 采用这个称呼的部分原因是 $|f| = f^{+} + f^{-}$ 的广义积分的确是收敛的. 如果 $f$ 的广义积分收敛, 但 $|f|$ 的广义积分发散, 则称 $f$ 的广义积分条件收敛."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.881,
+            0.528,
+            0.899
+          ],
+          "content": "设 f, g 在有界区间  $[a, B]$  上均可积, 且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.415,
+            0.918,
+            0.634,
+            0.937
+          ],
+          "content": "| f (x) | \\leqslant g (x), \\forall x \\geqslant x _ {0},",
+          "image_source": "../../raw/pages_0353-0368/images/page_365_equation_22.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 366,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.069,
+            0.055,
+            0.088,
+            0.066
+          ],
+          "content": "60"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.053,
+            0.238,
+            0.068
+          ],
+          "content": "第十章 广义积分"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.108,
+            0.851,
+            0.164
+          ],
+          "content": "则当积分 $\\int_{a}^{+\\infty}g(x)\\mathrm{d}x$ 收敛时，积分 $\\int_{a}^{+\\infty}f(x)\\mathrm{d}x$ 绝对收敛.这只要注意到 $f^{+}\\leqslant g,$ $f^{-}\\leqslant g$ 并利用比较判别法即可."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.167,
+            0.667,
+            0.203
+          ],
+          "content": "例10.2.4 判别积分 $\\int_{1}^{+\\infty}\\frac{\\cos x}{x^p}\\mathrm{d}x$ $(p > 1)$ 是否绝对收敛."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.205,
+            0.23,
+            0.222
+          ],
+          "content": "解 因为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.377,
+            0.223,
+            0.586,
+            0.253
+          ],
+          "content": "\\left| \\frac {\\cos x}{x ^ {p}} \\right| \\leqslant x ^ {- p}, \\forall x \\geqslant 1,",
+          "image_source": "../../raw/pages_0353-0368/images/page_366_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.108,
+            0.257,
+            0.571,
+            0.275
+          ],
+          "content": "而 $p > 1$ 时 $x^{-p}$ 积分收敛, 所以原积分是绝对收敛的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.278,
+            0.851,
+            0.332
+          ],
+          "content": "例 10.2.5 判别积分  $\\int_{1}^{+\\infty}\\cos(x^{p})\\mathrm{d}x\\ (p>1)$  的敛散性, 若收敛则判断它是否绝对收敛."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.337,
+            0.851,
+            0.379
+          ],
+          "content": "解 利用变量代换 $x = t^{\\frac{1}{p}}$ 以及前节最后例子中的办法不难看出积分是收敛的. 另一方面, 注意到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.309,
+            0.38,
+            0.651,
+            0.41
+          ],
+          "content": "\\left| \\cos (x ^ {p}) \\right| \\geqslant \\cos^ {2} (x ^ {p}) = \\frac {1}{2} \\big (1 + \\cos (2 x ^ {p}) \\big),",
+          "image_source": "../../raw/pages_0353-0368/images/page_366_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.414,
+            0.851,
+            0.455
+          ],
+          "content": "函数 $\\cos (2x^{p})$ 的无穷限积分是收敛的, 因此 $|\\cos (x^p)|$ 在 $[1, +\\infty)$ 上的无穷限积分是发散的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.461,
+            0.851,
+            0.502
+          ],
+          "content": "对于两个函数乘积的广义积分, 在某些情形下利用积分第二中值公式可以判断积分是否条件收敛."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.507,
+            0.851,
+            0.607
+          ],
+          "content": "定理 10.2.3 (Dirichlet) 设当 B > a 时函数 f, g 在有界区间  $[a, B]$  上均可积，如果积分  $F(B) = \\int_{a}^{B} f(x) \\, dx$  关于  $B \\in [a, +\\infty)$  有界，函数 g 在  $[a, +\\infty)$  上单调，且  $\\lim_{x \\to +\\infty} g(x) = 0$ ，则无穷限积分  $\\int_{a}^{+\\infty} f(x) g(x) \\, dx$  收敛."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.609,
+            0.625,
+            0.628
+          ],
+          "content": "证明 设 $|F(B)| \\leqslant C, \\forall B \\geqslant a$. 则当 $B \\geqslant A \\geqslant a$ 时, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.266,
+            0.637,
+            0.696,
+            0.676
+          ],
+          "content": "\\left| \\int_ {A} ^ {B} f (x) \\mathrm{d} x \\right| = \\left| \\int_ {a} ^ {B} f (x) \\mathrm{d} x - \\int_ {a} ^ {A} f (x) \\mathrm{d} x \\right| \\leqslant 2 C,",
+          "image_source": "../../raw/pages_0353-0368/images/page_366_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.108,
+            0.685,
+            0.729,
+            0.71
+          ],
+          "content": "又因为 $\\lim_{x\\to +\\infty}g(x) = 0$ ，所以任给 $\\varepsilon >0$ ，存在 $M > a$ ，使得当 $x > M$ 时"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.425,
+            0.72,
+            0.534,
+            0.751
+          ],
+          "content": "| g (x) | \\leqslant \\frac {\\varepsilon}{4 C}.",
+          "image_source": "../../raw/pages_0353-0368/images/page_366_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.108,
+            0.757,
+            0.489,
+            0.775
+          ],
+          "content": "由积分第二中值定理, 当 B > A > M 时, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.23,
+            0.783,
+            0.73,
+            0.909
+          ],
+          "content": "\\begin{array}{l} \\left| \\int_ {A} ^ {B} f (x) g (x) \\mathrm{d} x \\right| = \\left| g (A) \\int_ {A} ^ {\\xi} f (x) \\mathrm{d} x + g (B) \\int_ {\\xi} ^ {B} f (x) \\mathrm{d} x \\right| \\\\ \\leqslant \\frac {\\varepsilon}{4 C} \\left| \\int_ {A} ^ {\\xi} f (x) \\mathrm{d} x \\right| + \\frac {\\varepsilon}{4 C} \\left| \\int_ {\\xi} ^ {B} f (x) \\mathrm{d} x \\right| \\\\ \\leqslant \\frac {\\varepsilon}{4 C} 2 C + \\frac {\\varepsilon}{4 C} 2 C = \\varepsilon . \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0353-0368/images/page_366_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.108,
+            0.916,
+            0.371,
+            0.934
+          ],
+          "content": "由 Cauchy 准则即得欲证结论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.833,
+            0.917,
+            0.851,
+            0.93
+          ],
+          "content": "□"
+        }
+      ]
+    },
+    {
+      "page_idx": 367,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.682,
+            0.059,
+            0.891,
+            0.074
+          ],
+          "content": "10.2 广义积分的收敛判别法"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.91,
+            0.06,
+            0.928,
+            0.072
+          ],
+          "content": "61"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.183,
+            0.114,
+            0.699,
+            0.15
+          ],
+          "content": "例10.2.6 判断积分 $\\int_0^{+\\infty}\\frac{\\sin x}{x^p}\\mathrm{d}x$ （ $0 <   p <   2$ )的敛散性."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.152,
+            0.269,
+            0.169
+          ],
+          "content": "解 因为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.43,
+            0.168,
+            0.605,
+            0.201
+          ],
+          "content": "\\lim _ {x \\to 0 ^ {+}} x ^ {p - 1} \\frac {\\sin x}{x ^ {p}} = 1,",
+          "image_source": "../../raw/pages_0353-0368/images/page_367_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.211,
+            0.894,
+            0.331
+          ],
+          "content": "所以在 $(0,1]$ 上 $\\frac{\\sin x}{x^p}$ 的瑕积分的敛散性和 $x^{1 - p}$ 的瑕积分的敛散性一致，而当 $p < 2$ 时 $x^{1 - p}$ 在 $(0,1]$ 上的瑕积分收敛. 下面只要判断 $\\frac{\\sin x}{x^p}$ 在 $[1, +\\infty)$ 上的无穷限积分的敛散性即可. 由于积分 $\\int_{1}^{A}\\sin x\\mathrm{d}x$ 显然有界，而 $\\frac{1}{x^p} (p > 0)$ 在 $[1, +\\infty)$ 上单调地趋于零，故由Dirichlet判别法知原积分是收敛的. □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.336,
+            0.893,
+            0.41
+          ],
+          "content": "定理 10.2.4 (Abel) 设当 B > a 时函数 f, g 在有界区间  $[a, B]$  上均可积，如果积分  $\\int_{a}^{+\\infty} f(x) \\, dx$  收敛，且 g 在  $[a, +\\infty)$  上单调有界，则积分  $\\int_{a}^{+\\infty} f(x) g(x) \\, dx$  也收敛."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.412,
+            0.892,
+            0.474
+          ],
+          "content": "证明 由题设可知 $F(B) = \\int_{a}^{B} f(x) \\, \\mathrm{d}x$ 关于 $B \\in [a, +\\infty)$ 有界. 由 $g$ 单调有界可知极限 $\\lim_{x \\to +\\infty} g(x)$ 存在, 记为 $\\alpha$. 此时, $fg$ 可以写成"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.41,
+            0.485,
+            0.629,
+            0.503
+          ],
+          "content": "f g = f \\cdot (g - \\alpha) + \\alpha f (x).",
+          "image_source": "../../raw/pages_0353-0368/images/page_367_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.517,
+            0.768,
+            0.536
+          ],
+          "content": "由 Dirichlet 判别法可知  $f \\cdot (g - \\alpha)$  的积分收敛, 从而 fg 的积分也收敛."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.541,
+            0.749,
+            0.559
+          ],
+          "content": "这些判别法对于瑕积分也有完全类似的表达形式, 我们不再赘述."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.562,
+            0.721,
+            0.598
+          ],
+          "content": "例 10.2.7 设  $a \\geqslant 0$ ，研究积分  $\\int_{0}^{+\\infty} e^{-ax} \\frac{\\sin x}{x} dx$  的敛散性."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.602,
+            0.894,
+            0.647
+          ],
+          "content": "解 函数 $\\mathrm{e}^{-ax}$ 在 $[0, +\\infty)$ 上单调递减且有界，函数 $\\frac{\\sin x}{x}$ 在 $[0, +\\infty)$ 上的积分收敛，因此由Abel判别法知原积分收敛. □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.65,
+            0.738,
+            0.686
+          ],
+          "content": "例 10.2.8 判断积分  $\\int_{1}^{+\\infty}\\frac{\\sin x}{x^{p}}\\arctan x\\,dx\\ (p>0)$  的敛散性."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.689,
+            0.894,
+            0.735
+          ],
+          "content": "解 令 $f(x) = \\frac{\\sin x}{x^p}$, $g(x) = \\arctan x$, 则 $f$ 在 $[1, +\\infty)$ 上的积分收敛, 而 $g$ 在 $[1, +\\infty)$ 上单调有界, 故由 Abel 判别法知原积分收敛. □"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.189,
+            0.763,
+            0.296,
+            0.782
+          ],
+          "level": 2,
+          "content": "习题 10.2"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.807,
+            0.486,
+            0.824
+          ],
+          "content": "1. 研究下列无穷限积分的敛散性:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.827,
+            0.36,
+            0.864
+          ],
+          "content": "(1) $\\int_{1}^{+\\infty}\\frac{\\mathrm{d}x}{\\sqrt[3]{x^4 + 1}};$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.556,
+            0.826,
+            0.715,
+            0.864
+          ],
+          "content": "(2) $\\int_0^{+\\infty}\\frac{\\mathrm{d}x}{1 + \\sqrt{x}};$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.866,
+            0.359,
+            0.904
+          ],
+          "content": "(3) $\\int_0^{+\\infty}\\frac{x^3\\mathrm{d}x}{\\sqrt{1 + x^7}};$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.556,
+            0.866,
+            0.726,
+            0.904
+          ],
+          "content": "(4) $\\int_0^{+\\infty}\\frac{\\sin^2x}{\\sqrt{x}}\\mathrm{d}x;$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.906,
+            0.397,
+            0.943
+          ],
+          "content": "(5) $\\int_{1}^{+\\infty}\\frac{x\\arctan x}{1 + x^3}\\mathrm{d}x;$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.556,
+            0.906,
+            0.724,
+            0.943
+          ],
+          "content": "(6) $\\int_{1}^{+\\infty}\\frac{x^2\\mathrm{d}x}{\\sqrt{1 + x^6}};$"
+        }
+      ]
+    },
+    {
+      "page_idx": 368,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.073,
+            0.06,
+            0.093,
+            0.07
+          ],
+          "content": "62"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.111,
+            0.058,
+            0.241,
+            0.072
+          ],
+          "content": "第十章 广义积分"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.151,
+            0.114,
+            0.717,
+            0.19
+          ],
+          "sub_type": "text",
+          "content": "(7) $\\int_0^{+\\infty}\\frac{\\cos x}{1 + x^2}\\mathrm{d}x;$\n(8) $\\int_{1}^{+\\infty}\\frac{\\ln(1 + x)}{x^n}\\mathrm{d}x;$\n(9) $\\int_{1}^{+\\infty}\\frac{\\pi / 2 - \\arctan x}{x}\\mathrm{d}x.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.196,
+            0.406,
+            0.213
+          ],
+          "content": "2. 研究下列瑕积分的敛散性:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.151,
+            0.219,
+            0.672,
+            0.415
+          ],
+          "sub_type": "text",
+          "content": "(1) $\\int_0^1\\frac{\\mathrm{d}x}{\\sqrt[3]{1 - x^3}};$\n(2) $\\int_0^1\\frac{\\mathrm{d}x}{\\sqrt{x}\\ln x};$\n(3) $\\int_0^1\\frac{\\mathrm{d}x}{\\sqrt{1 - x^4}};$\n(4) $\\int_0^\\pi \\frac{\\mathrm{d}x}{\\sqrt{\\sin x}};$\n(5) $\\int_0^1\\frac{1 - \\cos x}{x^p}\\mathrm{d}x;$\n(6) $\\int_0^1\\frac{1}{\\ln x}\\mathrm{d}x;$\n(7) $\\int_0^1\\frac{1}{x^p}\\sin \\frac{1}{x}\\mathrm{d}x;$\n(8) $\\int_0^1\\frac{\\ln x}{1 - x^2}\\mathrm{d}x;$\n(9) $\\int_0^1\\frac{x^{p - 1} - x^{q - 1}}{\\ln x}\\mathrm{d}x.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.418,
+            0.545,
+            0.434
+          ],
+          "content": "3. 研究下列积分的绝对收敛性和条件收敛性:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.151,
+            0.436,
+            0.727,
+            0.563
+          ],
+          "sub_type": "text",
+          "content": "(1) $\\int_{1}^{+\\infty}\\frac{\\sin\\sqrt{x}}{x}\\mathrm{d}x;$\n(2) $\\int_{1}^{+\\infty}\\frac{\\cos x}{x}\\mathrm{d}x;$\n(3) $\\int_{\\mathrm{e}}^{+\\infty}\\frac{\\ln(\\ln x)}{\\ln x}\\sin x\\mathrm{d}x;$\n(4) $\\int_{0}^{+\\infty}\\frac{\\sqrt{x}\\sin x}{1 + x}\\mathrm{d}x;$\n(5) $\\int_{1}^{+\\infty}\\frac{\\sin\\frac{1}{x}}{x}\\mathrm{d}x;$\n(6) $\\int_{1}^{+\\infty} (\\ln x)^{p} \\frac{\\sin x}{x} \\, \\mathrm{d}x.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.57,
+            0.385,
+            0.586
+          ],
+          "content": "4. 判别下列积分的敛散性:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.151,
+            0.593,
+            0.724,
+            0.726
+          ],
+          "sub_type": "text",
+          "content": "(1) $\\int_0^{+\\infty}\\sin (x^p)\\mathrm{d}x;$\n(2) $\\int_{0}^{+\\infty}\\frac{\\cos x}{x^p}\\mathrm{d}x;$\n(3) $\\int_{0}^{+\\infty}\\frac{1 - \\cos x}{x}\\mathrm{e}^{-x}\\mathrm{d}x;$\n(4) $\\int_{1}^{+\\infty}\\frac{\\mathrm{d}x}{x^p\\ln^q x};$\n(5) $\\int_{0}^{+\\infty}\\frac{\\sin x\\cos\\frac{1}{x}}{x^p}\\mathrm{d}x;$\n(6) $\\int_{0}^{+\\infty}\\frac{\\cos x\\sin\\frac{1}{x}}{x^p}\\mathrm{d}x.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.733,
+            0.827,
+            0.77
+          ],
+          "content": "5. 设 $f \\in C[1, +\\infty)$, 如果 $\\int_{1}^{+\\infty} f^{2}(x) \\mathrm{d}x$ 收敛, 证明: $\\int_{1}^{+\\infty} \\frac{f(x)}{x} \\mathrm{d}x$ 绝对收敛."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.775,
+            0.824,
+            0.799
+          ],
+          "content": "6. 设 $b > 0$ 时 $f$ 在有界区间 $(0, b)$ 上的积分均收敛, 且 $\\lim_{x \\to +\\infty} f(x) = 0$. 证明:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.378,
+            0.811,
+            0.584,
+            0.849
+          ],
+          "content": "\\lim _ {b \\to + \\infty} \\frac {1}{b} \\int_ {0} ^ {b} f (x)   \\mathrm{d} x = 0.",
+          "image_source": "../../raw/pages_0369-0384/images/page_368_equation_35.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.859,
+            0.706,
+            0.895
+          ],
+          "content": "7. 设 $f \\in C[0, +\\infty)$，如果 $f$ 处处为正且 $\\int_{0}^{+\\infty} \\frac{\\mathrm{d}x}{f(x)}$ 收敛，证明:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.361,
+            0.906,
+            0.601,
+            0.943
+          ],
+          "content": "\\lim _ {b \\to + \\infty} \\frac {1}{b ^ {2}} \\int_ {0} ^ {b} f (x)   \\mathrm{d} x = + \\infty .",
+          "image_source": "../../raw/pages_0369-0384/images/page_368_equation_37.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 369,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.701,
+            0.055,
+            0.893,
+            0.068
+          ],
+          "content": "10.3 广义积分的几个例子"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.913,
+            0.056,
+            0.933,
+            0.068
+          ],
+          "content": "63"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.111,
+            0.648,
+            0.129
+          ],
+          "content": "8. 设 $f$ 在 $[0, +\\infty)$ 上单调递减地趋于零, 证明: 积分"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.35,
+            0.142,
+            0.692,
+            0.181
+          ],
+          "content": "\\int_ {0} ^ {+ \\infty} f (x)   \\mathrm{d} x \\quad \\text {与} \\quad \\int_ {0} ^ {+ \\infty} f (x)   \\sin^ {2} x   \\mathrm{d} x",
+          "image_source": "../../raw/pages_0369-0384/images/page_369_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.193,
+            0.298,
+            0.21
+          ],
+          "content": "同时收敛或发散."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.216,
+            0.439,
+            0.234
+          ],
+          "content": "9. 设  $\\gamma$  为 Euler 常数, 证明:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.416,
+            0.247,
+            0.627,
+            0.285
+          ],
+          "content": "\\int_ {1} ^ {+ \\infty} \\left(\\frac {1}{[ x ]} - \\frac {1}{x}\\right) \\mathrm{d} x = \\gamma .",
+          "image_source": "../../raw/pages_0369-0384/images/page_369_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.298,
+            0.611,
+            0.333
+          ],
+          "content": "10. 研究广义积分  $\\int_{0}^{+\\infty}\\frac{dx}{1+x^{4}\\sin^{2}x}$  的敛散性."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.337,
+            0.701,
+            0.372
+          ],
+          "content": "11. 设 p > 0, 研究广义积分  $\\int_{1}^{+\\infty}\\frac{\\sin x}{x^{p} + \\sin x}dx$  的敛散性."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.375,
+            0.729,
+            0.429
+          ],
+          "content": "12. 设 $p \\in \\mathbb{R}$, 研究广义积分 $\\int_{0}^{+\\infty} \\frac{\\sin\\left(x + \\frac{1}{x}\\right)}{x^p} \\, \\mathrm{d}x$ 的敛散性."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.151,
+            0.472,
+            0.49,
+            0.494
+          ],
+          "level": 2,
+          "content": "10.3 广义积分的几个例子"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.542,
+            0.48,
+            0.559
+          ],
+          "content": "我们来计算几个常见的广义积分."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.562,
+            0.664,
+            0.597
+          ],
+          "content": "例 10.3.1 计算积分  $I=\\int_{0}^{+\\infty}\\mathrm{e}^{-ax}\\sin bx\\,\\mathrm{d}x$  (a>0)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.599,
+            0.655,
+            0.616
+          ],
+          "content": "解 利用分部积分可以计算出被积函数的一个原函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.382,
+            0.626,
+            0.664,
+            0.659
+          ],
+          "content": "F (x) = - \\frac {a \\sin b x + b \\cos b x}{a ^ {2} + b ^ {2}} \\mathrm{e} ^ {- a x},",
+          "image_source": "../../raw/pages_0369-0384/images/page_369_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.669,
+            0.444,
+            0.686
+          ],
+          "content": "因此, 由 Newton-Leibniz 公式, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.35,
+            0.697,
+            0.697,
+            0.728
+          ],
+          "content": "I = F (+ \\infty) - F (0) = - F (0) = \\frac {b}{a ^ {2} + b ^ {2}}.",
+          "image_source": "../../raw/pages_0369-0384/images/page_369_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.742,
+            0.567,
+            0.778
+          ],
+          "content": "例 10.3.2 计算积分  $I=\\int_{0}^{+\\infty}\\frac{1}{1+x^{4}}\\mathrm{d}x.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.78,
+            0.359,
+            0.811
+          ],
+          "content": "解 令 $x = \\frac{1}{t}$ 可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.375,
+            0.823,
+            0.672,
+            0.861
+          ],
+          "content": "I = \\int_ {0} ^ {+ \\infty} \\frac {t ^ {- 2} \\mathrm{d} t}{1 + t ^ {- 4}} = \\int_ {0} ^ {+ \\infty} \\frac {t ^ {2} \\mathrm{d} t}{1 + t ^ {4}},",
+          "image_source": "../../raw/pages_0369-0384/images/page_369_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.873,
+            0.216,
+            0.89
+          ],
+          "content": "这说明"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.339,
+            0.901,
+            0.71,
+            0.94
+          ],
+          "content": "2 I = \\int_ {0} ^ {+ \\infty} \\frac {1 + x ^ {2}}{1 + x ^ {4}} \\mathrm{d} x = \\int_ {0} ^ {+ \\infty} \\frac {1 + x ^ {- 2}}{x ^ {2} + x ^ {- 2}} \\mathrm{d} x",
+          "image_source": "../../raw/pages_0369-0384/images/page_369_equation_21.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 370,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.07,
+            0.054,
+            0.091,
+            0.066
+          ],
+          "content": "64"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.053,
+            0.24,
+            0.068
+          ],
+          "content": "第十章 广义积分"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.325,
+            0.11,
+            0.66,
+            0.187
+          ],
+          "content": "\\begin{array}{l} = \\int_ {0} ^ {+ \\infty} \\frac {(x - 1 / x) ^ {\\prime} \\mathrm{d} x}{(x - 1 / x) ^ {2} + 2} = \\int_ {- \\infty} ^ {+ \\infty} \\frac {\\mathrm{d} u}{u ^ {2} + 2} \\\\ = \\frac {1}{\\sqrt {2}} \\arctan \\left. \\frac {u}{\\sqrt {2}} \\right| _ {- \\infty} ^ {+ \\infty} = \\frac {\\pi}{\\sqrt {2}}. \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0369-0384/images/page_370_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.201,
+            0.259,
+            0.233
+          ],
+          "content": "这说明  $I=\\frac{\\pi}{2\\sqrt{2}}$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.237,
+            0.682,
+            0.273
+          ],
+          "content": "例 10.3.3 设 n 为非负整数, 计算积分  $I_{n}=\\int_{0}^{+\\infty}x^{n}e^{-x}dx$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.275,
+            0.725,
+            0.297
+          ],
+          "content": "解 当 $n = 0$ 时, $I_0 = -\\mathrm{e}^{-x}|_0^{+\\infty} = 1$. 当 $n \\geqslant 1$ 时, 由分部积分可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.236,
+            0.314,
+            0.725,
+            0.392
+          ],
+          "content": "\\begin{array}{l} I _ {n} = \\int_ {0} ^ {+ \\infty} x ^ {n} \\mathrm{e} ^ {- x} \\mathrm{d} x = - \\mathrm{e} ^ {- x} x ^ {n} \\Big | _ {0} ^ {+ \\infty} + n \\int_ {0} ^ {+ \\infty} x ^ {n - 1} \\mathrm{e} ^ {- x} \\mathrm{d} x \\\\ = n \\int_ {0} ^ {+ \\infty} x ^ {n - 1} \\mathrm{e} ^ {- x} \\mathrm{d} x = n I _ {n - 1}, \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0369-0384/images/page_370_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.407,
+            0.243,
+            0.424
+          ],
+          "content": "这说明  $I_{n}=n!$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.427,
+            0.692,
+            0.464
+          ],
+          "content": "例 10.3.4 设 n 为正整数, 计算积分  $I_{n}=\\int_{0}^{+\\infty}\\frac{1}{(1+x^{2})^{n}}\\mathrm{d}x.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.466,
+            0.607,
+            0.495
+          ],
+          "content": "解 当 $n = 1$ 时, $I_{1} = \\arctan x\\big|_{0}^{+\\infty} = \\frac{\\pi}{2}$. 当 $n \\geqslant 2$ 时,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.177,
+            0.509,
+            0.781,
+            0.669
+          ],
+          "content": "\\begin{array}{l} I _ {n} = \\int_ {0} ^ {+ \\infty} \\frac {1}{(1 + x ^ {2}) ^ {n}} \\mathrm{d} x = \\int_ {0} ^ {+ \\infty} \\frac {1 + x ^ {2} - x ^ {2}}{(1 + x ^ {2}) ^ {n}} \\mathrm{d} x \\\\ = I _ {n - 1} - \\int_ {0} ^ {+ \\infty} \\frac {x ^ {2} \\mathrm{d} x}{(1 + x ^ {2}) ^ {n}} \\\\ = I _ {n - 1} + \\frac {1}{2 (n - 1)} \\frac {x}{(1 + x ^ {2}) ^ {n - 1}} \\Big | _ {0} ^ {+ \\infty} - \\frac {1}{2 (n - 1)} \\int_ {0} ^ {+ \\infty} \\frac {1}{(1 + x ^ {2}) ^ {n - 1}} \\mathrm{d} x \\\\ = \\frac {2 n - 3}{2 n - 2} I _ {n - 1}. \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0369-0384/images/page_370_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.684,
+            0.326,
+            0.721
+          ],
+          "content": "这说明 $I_{n} = \\frac{\\pi}{2}\\frac{(2n - 3)!!}{(2n - 2)!!}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.198,
+            0.734,
+            0.652,
+            0.751
+          ],
+          "content": "注 10.3.1 也可以利用变换  $x = \\tan t$  化为例 9.4.6."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.767,
+            0.611,
+            0.803
+          ],
+          "content": "例 10.3.5 计算 Euler-Poisson $^{①}$ 积分  $\\int_{0}^{+\\infty} e^{-x^{2}} dx$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.806,
+            0.804,
+            0.827
+          ],
+          "content": "解 从不等式 $\\mathrm{e}^t\\geqslant 1 + t$ 可得 $1 - x^{2}\\leqslant \\mathrm{e}^{-x^{2}}\\leqslant (1 + x^{2})^{-1}$ 当 $n\\geqslant 1$ 时，就有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.183,
+            0.841,
+            0.769,
+            0.881
+          ],
+          "content": "\\int_ {0} ^ {1} (1 - x ^ {2}) ^ {n} \\mathrm{d} x \\leqslant \\int_ {0} ^ {1} \\mathrm{e} ^ {- n x ^ {2}} \\mathrm{d} x \\leqslant \\int_ {0} ^ {+ \\infty} \\mathrm{e} ^ {- n x ^ {2}} \\mathrm{d} x \\leqslant \\int_ {0} ^ {+ \\infty} \\frac {\\mathrm{d} x}{(1 + x ^ {2}) ^ {n}},",
+          "image_source": "../../raw/pages_0369-0384/images/page_370_equation_15.jpg"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.136,
+            0.919,
+            0.789,
+            0.934
+          ],
+          "content": "① Poisson, Siméon Denis, 1781 年 6 月 21 日—1840 年 4 月 25 日, 法国数学家、物理学家."
+        }
+      ]
+    },
+    {
+      "page_idx": 371,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.7,
+            0.055,
+            0.891,
+            0.069
+          ],
+          "content": "10.3 广义积分的几个例子"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.911,
+            0.057,
+            0.931,
+            0.068
+          ],
+          "content": "65"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.11,
+            0.893,
+            0.16
+          ],
+          "content": "上式左边利用变量代换 $x = \\cos t$ 以及例9.4.6, 中间利用 $x = \\frac{t}{\\sqrt{n}}$, 右边利用前一例, 最后得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.323,
+            0.163,
+            0.719,
+            0.201
+          ],
+          "content": "\\frac {(2 n) ! !}{(2 n + 1) ! !} \\leqslant \\frac {1}{\\sqrt {n}} \\int_ {0} ^ {+ \\infty} \\mathrm{e} ^ {- t ^ {2}} \\mathrm{d} t \\leqslant \\frac {\\pi}{2} \\frac {(2 n - 3) ! !}{(2 n - 2) ! !},",
+          "image_source": "../../raw/pages_0369-0384/images/page_371_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.207,
+            0.871,
+            0.241
+          ],
+          "content": "两边乘 $\\sqrt{n}$, 再利用 Wallis 公式不难看出, 当 $n \\to \\infty$ 时, 左右极限均为 $\\frac{\\sqrt{\\pi}}{2}$, 这说明"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.435,
+            0.252,
+            0.892,
+            0.287
+          ],
+          "content": "\\int_ {0} ^ {+ \\infty} \\mathrm{e} ^ {- t ^ {2}} \\mathrm{d} t = \\frac {\\sqrt {\\pi}}{2}. \\tag {10.3.1}",
+          "image_source": "../../raw/pages_0369-0384/images/page_371_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.298,
+            0.522,
+            0.335
+          ],
+          "content": "例 10.3.6 计算积分  $\\int_{0}^{+\\infty}\\frac{\\sin^{2}x}{x^{2}}\\mathrm{d}x.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.337,
+            0.851,
+            0.355
+          ],
+          "content": "解 当 $n \\geqslant 0$ 时, 利用等式 $\\sin (2n + 1)x - \\sin (2n - 1)x = 2\\sin x\\cos 2nx$ 易得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.413,
+            0.367,
+            0.892,
+            0.403
+          ],
+          "content": "\\int_ {0} ^ {\\frac {\\pi}{2}} \\frac {\\sin (2 n + 1) x}{\\sin x} \\mathrm{d} x = \\frac {\\pi}{2}. \\tag {10.3.2}",
+          "image_source": "../../raw/pages_0369-0384/images/page_371_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.414,
+            0.665,
+            0.432
+          ],
+          "content": "再利用等式 $\\sin^2 nx - \\sin^2 (n - 1)x = \\sin (2n - 1)x\\sin x$ 可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.318,
+            0.444,
+            0.892,
+            0.486
+          ],
+          "content": "\\int_ {0} ^ {\\frac {\\pi}{2}} \\frac {\\sin^ {2} n x}{\\sin^ {2} x} \\mathrm{d} x = \\sum_ {k = 1} ^ {n} \\int_ {0} ^ {\\frac {\\pi}{2}} \\frac {\\sin (2 k - 1) x}{\\sin x} \\mathrm{d} x = \\frac {\\pi}{2} n. \\tag {10.3.3}",
+          "image_source": "../../raw/pages_0369-0384/images/page_371_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.497,
+            0.372,
+            0.526
+          ],
+          "content": "当 $x \\in \\left(0, \\frac{\\pi}{2}\\right)$ 时, 注意到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.351,
+            0.536,
+            0.892,
+            0.568
+          ],
+          "content": "0 <   \\frac {1}{\\sin^ {2} x} - \\frac {1}{x ^ {2}} = 1 + \\frac {1}{\\tan^ {2} x} - \\frac {1}{x ^ {2}} <   1, \\tag {10.3.4}",
+          "image_source": "../../raw/pages_0369-0384/images/page_371_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.575,
+            0.214,
+            0.592
+          ],
+          "content": "这说明"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.175,
+            0.601,
+            0.895,
+            0.717
+          ],
+          "content": "\\begin{array}{l} \\int_ {0} ^ {+ \\infty} \\frac {\\sin^ {2} x}{x ^ {2}} \\mathrm{d} x = \\lim _ {n \\to + \\infty} \\int_ {0} ^ {\\frac {\\pi}{2} n} \\frac {\\sin^ {2} x}{x ^ {2}} \\mathrm{d} x = \\lim _ {n \\to + \\infty} \\frac {1}{n} \\int_ {0} ^ {\\frac {\\pi}{2}} \\frac {\\sin^ {2} n x}{x ^ {2}} \\mathrm{d} x \\\\ = \\lim _ {n \\to + \\infty} \\frac {1}{n} \\int_ {0} ^ {\\frac {\\pi}{2}} \\sin^ {2} n x \\left(\\frac {1}{x ^ {2}} - \\frac {1}{\\sin^ {2} x}\\right) \\mathrm{d} x + \\lim _ {n \\to + \\infty} \\frac {1}{n} \\int_ {0} ^ {\\frac {\\pi}{2}} \\frac {\\sin^ {2} n x}{\\sin^ {2} x} \\mathrm{d} x \\\\ = 0 + \\frac {\\pi}{2} = \\frac {\\pi}{2}. \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0369-0384/images/page_371_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.727,
+            0.614,
+            0.765
+          ],
+          "content": "例10.3.7 计算Euler积分 $I = \\int_0^{\\frac{\\pi}{2}}\\ln \\sin x\\mathrm{d}x.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.766,
+            0.389,
+            0.795
+          ],
+          "content": "解 令 $x = \\frac{\\pi}{2} - t$ 可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.445,
+            0.797,
+            0.602,
+            0.835
+          ],
+          "content": "I = \\int_ {0} ^ {\\frac {\\pi}{2}} \\ln \\cos t   \\mathrm{d} t,",
+          "image_source": "../../raw/pages_0369-0384/images/page_371_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.841,
+            0.214,
+            0.858
+          ],
+          "content": "这说明"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.309,
+            0.861,
+            0.735,
+            0.938
+          ],
+          "content": "\\begin{array}{l} 2 I = \\int_ {0} ^ {\\frac {\\pi}{2}} \\ln (\\sin t \\cos t) \\mathrm{d} t = \\int_ {0} ^ {\\frac {\\pi}{2}} \\ln \\sin 2 t \\mathrm{d} t - \\frac {\\pi}{2} \\ln 2 \\\\ = \\frac {1}{2} \\int_ {0} ^ {\\pi} \\ln \\sin x \\mathrm{d} x - \\frac {\\pi}{2} \\ln 2. \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0369-0384/images/page_371_equation_19.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 372,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.069,
+            0.056,
+            0.089,
+            0.067
+          ],
+          "content": "66"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.054,
+            0.239,
+            0.068
+          ],
+          "content": "第十章 广义积分"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.109,
+            0.369,
+            0.138
+          ],
+          "content": "在 $\\left[\\frac{\\pi}{2},\\pi \\right]$ 中令 $x = \\pi -t$ 可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.4,
+            0.149,
+            0.562,
+            0.189
+          ],
+          "content": "\\int_ {\\frac {\\pi}{2}} ^ {\\pi} \\ln \\sin x   \\mathrm{d} x = I,",
+          "image_source": "../../raw/pages_0369-0384/images/page_372_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.199,
+            0.45,
+            0.229
+          ],
+          "content": "这说明 $2I = I - \\frac{\\pi}{2}\\ln 2$ ，即 $I = -\\frac{\\pi}{2}\\ln 2.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.232,
+            0.856,
+            0.286
+          ],
+          "content": "例10.3.8 设 $f$ 是定义在 $(0, +\\infty)$ 上的函数, 如果任给 $b > a > 0$, 积分 $\\int_{a}^{b} \\frac{f(x)}{x} \\mathrm{d}x$ 均存在, 且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.293,
+            0.629,
+            0.318
+          ],
+          "content": "\\lim _ {x \\to 0 ^ {+}} f (x) = L, \\quad \\lim _ {x \\to + \\infty} f (x) = M,",
+          "image_source": "../../raw/pages_0369-0384/images/page_372_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.326,
+            0.63,
+            0.363
+          ],
+          "content": "求Frullani积分 $I = \\int_0^{+\\infty}\\frac{f(\\alpha x) - f(\\beta x)}{x}\\mathrm{d}x$ ，其中 $\\alpha ,\\beta >0$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.365,
+            0.801,
+            0.382
+          ],
+          "content": "解 不妨设 $\\alpha >\\beta$ .任给 $b > a > 0$ ，利用换元法以及积分第一中值定理可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.246,
+            0.39,
+            0.714,
+            0.609
+          ],
+          "content": "\\begin{array}{l} \\int_ {a} ^ {b} \\frac {f (\\alpha x) - f (\\beta x)}{x} \\mathrm{d} x = \\int_ {a} ^ {b} \\frac {f (\\alpha x)}{x} \\mathrm{d} x - \\int_ {a} ^ {b} \\frac {f (\\beta x)}{x} \\mathrm{d} x \\\\ = \\int_ {a \\alpha} ^ {b \\alpha} \\frac {f (y)}{y} \\mathrm{d} y - \\int_ {a \\beta} ^ {b \\beta} \\frac {f (y)}{y} \\mathrm{d} y \\\\ = \\int_ {b \\beta} ^ {b \\alpha} \\frac {f (y)}{y} \\mathrm{d} y - \\int_ {a \\beta} ^ {a \\alpha} \\frac {f (y)}{y} \\mathrm{d} y \\\\ = \\lambda \\int_ {b \\beta} ^ {b \\alpha} \\frac {1}{y} \\mathrm{d} y - \\mu \\int_ {a \\beta} ^ {a \\alpha} \\frac {1}{y} \\mathrm{d} y \\\\ = \\lambda \\ln \\frac {\\alpha}{\\beta} - \\mu \\ln \\frac {\\alpha}{\\beta}, \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0369-0384/images/page_372_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.617,
+            0.151,
+            0.633
+          ],
+          "content": "其中"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.273,
+            0.64,
+            0.687,
+            0.669
+          ],
+          "content": "\\inf _ {[ b \\beta , b \\alpha ]} f \\leqslant \\lambda \\leqslant \\sup _ {[ b \\beta , b \\alpha ]} f, \\quad \\inf _ {[ a \\beta , a \\alpha ]} f \\leqslant \\mu \\leqslant \\sup _ {[ a \\beta , a \\alpha ]} f.",
+          "image_source": "../../raw/pages_0369-0384/images/page_372_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.677,
+            0.5,
+            0.708
+          ],
+          "content": "令 $a \\to 0^{+}, b \\to +\\infty$ 即得 $I = (M - L) \\ln \\frac{\\alpha}{\\beta}$."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.146,
+            0.727,
+            0.254,
+            0.746
+          ],
+          "level": 2,
+          "content": "习题 10.3"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.767,
+            0.52,
+            0.803
+          ],
+          "content": "1. 设 a > 0, 计算积分  $\\int_{0}^{+\\infty} e^{-ax} \\cos bx \\, dx$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.805,
+            0.498,
+            0.822
+          ],
+          "content": "2. 设 n 为正整数, a > 0, 计算下列积分:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.826,
+            0.357,
+            0.863
+          ],
+          "content": "(1) $\\int_0^{+\\infty}x^{2n - 1}\\mathrm{e}^{-x^2}\\mathrm{d}x;$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.516,
+            0.825,
+            0.702,
+            0.862
+          ],
+          "content": "(2) $\\int_0^{+\\infty}\\frac{\\mathrm{d}x}{(x^2 + a^2)^n};$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.865,
+            0.358,
+            0.901
+          ],
+          "content": "(3) $\\int_{0}^{+\\infty}\\mathrm{e}^{-ax}\\sin^{n}x\\mathrm{d}x.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.904,
+            0.441,
+            0.94
+          ],
+          "content": "3. 计算积分 $I = \\int_{0}^{+\\infty} \\frac{1}{1 + x^6} \\, \\mathrm{d}x$."
+        }
+      ]
+    },
+    {
+      "page_idx": 373,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.702,
+            0.057,
+            0.896,
+            0.072
+          ],
+          "content": "10.3 广义积分的几个例子"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.914,
+            0.059,
+            0.934,
+            0.07
+          ],
+          "content": "67"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.112,
+            0.564,
+            0.147
+          ],
+          "content": "4. 利用例 10.3.6 证明:  $\\int_{0}^{+\\infty}\\frac{\\sin x}{x}dx=\\frac{\\pi}{2}.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.149,
+            0.347,
+            0.166
+          ],
+          "content": "5. 计算下列积分:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.168,
+            0.365,
+            0.206
+          ],
+          "content": "(1) $\\int_0^\\pi x\\ln \\sin x\\mathrm{d}x;$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.556,
+            0.167,
+            0.714,
+            0.206
+          ],
+          "content": "(2) $\\int_{0}^{\\frac{\\pi}{2}} x \\cot x \\, \\mathrm{d}x$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.207,
+            0.361,
+            0.244
+          ],
+          "content": "(3) $\\int_0^1\\frac{\\arcsin x}{x}\\mathrm{d}x;$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.556,
+            0.208,
+            0.734,
+            0.244
+          ],
+          "content": "(4) $\\int_{0}^{\\pi}\\frac{x\\sin x}{1 - \\cos x}\\mathrm{d}x;$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.246,
+            0.346,
+            0.284
+          ],
+          "content": "(5) $\\int_{0}^{\\frac{\\pi}{2}}\\frac{x^2}{\\sin^2x}\\mathrm{d}x;$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.556,
+            0.246,
+            0.734,
+            0.284
+          ],
+          "content": "(6) $\\int_0^\\pi \\frac{x^2}{1 - \\cos x} \\, \\mathrm{d}x.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.286,
+            0.435,
+            0.303
+          ],
+          "content": "6. 设 $\\alpha \\in \\mathbb{R}$, 计算下列积分:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.306,
+            0.43,
+            0.344
+          ],
+          "content": "(1) $\\int_0^{+\\infty}\\frac{\\mathrm{d}x}{(1 + x^2)(1 + x^\\alpha)};$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.556,
+            0.305,
+            0.734,
+            0.343
+          ],
+          "content": "(2) $\\int_0^{+\\infty}\\frac{\\ln x}{1 + x^2}\\mathrm{d}x.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.345,
+            0.536,
+            0.383
+          ],
+          "content": "7. 计算积分  $\\int_{0}^{\\frac{\\pi}{2}}\\left(\\sqrt{\\tan x}+\\sqrt{\\cot x}\\right)\\mathrm{d}x.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.385,
+            0.628,
+            0.422
+          ],
+          "content": "8. 设广义积分  $\\int_{0}^{+\\infty} f(x^{2}) \\, dx$  收敛, a, b > 0, 证明:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.329,
+            0.436,
+            0.715,
+            0.475
+          ],
+          "content": "\\int_ {0} ^ {+ \\infty} f \\left((a x - b / x) ^ {2}\\right) \\mathrm{d} x = \\frac {1}{a} \\int_ {0} ^ {+ \\infty} f (y ^ {2}) \\mathrm{d} y.",
+          "image_source": "../../raw/pages_0369-0384/images/page_373_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.489,
+            0.424,
+            0.507
+          ],
+          "content": "9. 设 $f \\in C(-\\infty, +\\infty)$, 且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.368,
+            0.526,
+            0.675,
+            0.55
+          ],
+          "content": "\\lim _ {x \\to - \\infty} f (x) = L, \\quad \\lim _ {x \\to + \\infty} f (x) = M.",
+          "image_source": "../../raw/pages_0369-0384/images/page_373_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.563,
+            0.36,
+            0.58
+          ],
+          "content": "当  $\\alpha > 0$  时, 证明: 积分"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.407,
+            0.582,
+            0.638,
+            0.62
+          ],
+          "content": "\\int_ {- \\infty} ^ {+ \\infty} (f (x + \\alpha) - f (x)) \\mathrm{d} x",
+          "image_source": "../../raw/pages_0369-0384/images/page_373_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.63,
+            0.331,
+            0.647
+          ],
+          "content": "收敛, 并计算它的值."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.65,
+            0.816,
+            0.687
+          ],
+          "content": "10. 设 $f \\in C[0, +\\infty)$, 且积分 $\\int_{1}^{+\\infty} \\frac{f(x)}{x} \\mathrm{~d} x$ 收敛. 当 $\\alpha, \\beta > 0$ 时, 证明:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.363,
+            0.701,
+            0.681,
+            0.738
+          ],
+          "content": "\\int_ {0} ^ {+ \\infty} \\frac {f (\\alpha x) - f (\\beta x)}{x} \\mathrm{d} x = f (0) \\ln \\frac {\\beta}{\\alpha}.",
+          "image_source": "../../raw/pages_0369-0384/images/page_373_equation_22.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.754,
+            0.896,
+            0.808
+          ],
+          "content": "11. 设 $f \\in C(0, +\\infty)$, $\\lim_{x \\to +\\infty} f(x) = M$ 存在, 且积分 $\\int_{0}^{1} \\frac{f(x)}{x} \\, \\mathrm{d}x$ 收敛. 当 $\\alpha, \\beta > 0$ 时, 证明:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.37,
+            0.811,
+            0.673,
+            0.849
+          ],
+          "content": "\\int_ {0} ^ {+ \\infty} \\frac {f (\\alpha x) - f (\\beta x)}{x} \\mathrm{d} x = M \\ln \\frac {\\beta}{\\alpha}.",
+          "image_source": "../../raw/pages_0369-0384/images/page_373_equation_24.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.858,
+            0.465,
+            0.875
+          ],
+          "content": "12. 设  $\\alpha, \\beta > 0$ , 计算下列积分:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.877,
+            0.418,
+            0.915
+          ],
+          "content": "(1) $\\int_0^{+\\infty}\\frac{\\mathrm{e}^{-\\alpha x} - \\mathrm{e}^{-\\beta x}}{x}\\mathrm{d}x;$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.556,
+            0.877,
+            0.83,
+            0.915
+          ],
+          "content": "(2) $\\int_0^{+\\infty}\\frac{\\cos(\\alpha x) - \\cos(\\beta x)}{x}\\mathrm{d}x.$"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "created_at": "2025-11-20T03:44:46+08:00",
+      "modified_at": "2025-11-20T03:47:17+08:00",
+      "page_count": 856,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 0,
+          "width_pt": 793.3150024414062,
+          "height_pt": 733.9668619632721
+        },
+        {
+          "page_idx": 1,
+          "width_pt": 793.3150024414062,
+          "height_pt": 733.9668619632721
+        },
+        {
+          "page_idx": 2,
+          "width_pt": 512.0,
+          "height_pt": 732.0
+        },
+        {
+          "page_idx": 3,
+          "width_pt": 511.0,
+          "height_pt": 743.0
+        },
+        {
+          "page_idx": 4,
+          "width_pt": 511.0,
+          "height_pt": 743.0
+        },
+        {
+          "page_idx": 5,
+          "width_pt": 511.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 6,
+          "width_pt": 510.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 7,
+          "width_pt": 511.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 8,
+          "width_pt": 511.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 9,
+          "width_pt": 512.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 10,
+          "width_pt": 511.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 11,
+          "width_pt": 511.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 12,
+          "width_pt": 510.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 13,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 14,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 15,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

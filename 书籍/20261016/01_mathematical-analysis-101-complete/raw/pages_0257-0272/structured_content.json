@@ -1,0 +1,3415 @@
+{
+  "pages": [
+    {
+      "page_idx": 256,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.729,
+            0.056,
+            0.899,
+            0.07
+          ],
+          "content": "8.1 原函数与不定积分"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.919,
+            0.058,
+            0.947,
+            0.069
+          ],
+          "content": "245"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.113,
+            0.172,
+            0.128
+          ],
+          "content": "即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.446,
+            0.136,
+            0.601,
+            0.154
+          ],
+          "content": "G (x) = F (x) + c.",
+          "image_source": "images/page_256_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.173,
+            0.902,
+            0.214
+          ],
+          "content": "由定理可知, 如果能求出  $f(x)$  的一个原函数, 则可以得到它所有的原函数, 任意两个原函数之间仅相差一个常数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.219,
+            0.903,
+            0.332
+          ],
+          "content": "该定理有明确的几何直观: 设 $F$ 是给定函数 $f$ 的原函数, $\\Gamma: y = F(x)$ 是这样一条曲线, 它在 $x = x_0$ 处有斜率为 $k = f(x_0)$ 的切线 $\\ell$. 将 $\\Gamma$ 沿着 $y$ 轴向上平移 $c$ 得到曲线 $\\Gamma_c: y = F(x) + c$. 则 $\\Gamma_c$ 在 $x = x_0$ 处的切线 $\\ell_c$ 也对应着 $\\ell$ 的平移, 即它们有完全相同的斜率 $k$, 所以 $y = F(x) + c$ 也是 $f(x)$ 的一个原函数. $\\Gamma$ 和 $\\Gamma_c$ 的切线方程分别为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.201,
+            0.349,
+            0.849,
+            0.368
+          ],
+          "content": "\\ell : \\quad y = f (x _ {0}) (x - x _ {0}) + F (x _ {0}), \\qquad \\ell_ {c}: \\quad y = f (x _ {0}) (x - x _ {0}) + F (x _ {0}) + c.",
+          "image_source": "images/page_256_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.382,
+            0.902,
+            0.424
+          ],
+          "content": "容易看出, 在这一族相互平行的曲线中, 如果要研究某一条过指定点 $(x_0, y_0)$ 的曲线 $\\Gamma^*$, 则只需确定出相应的常数 $c = y_0 - F(x_0)$ 即可."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.429,
+            0.903,
+            0.517
+          ],
+          "content": "定理8.1.1的一个等价说法是, 如果函数 $f(x)$ 有一个原函数 $F(x)$, 则通过平移得到一族原函数; 反过来, 任何一个原函数都必须在此函数族中, 即 $\\{F(x) + c : c \\in \\mathbb{R}\\}$ 的集合恰好由 $f(x)$ 的所有原函数组成. 这样, 我们很自然地可以把这族由 $f(x)$ 生成的函数集合赋予它一个记号"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.477,
+            0.518,
+            0.574,
+            0.551
+          ],
+          "content": "\\int f (x) \\mathrm{d} x,",
+          "image_source": "images/page_256_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.558,
+            0.589,
+            0.576
+          ],
+          "content": "并称之为  $f(x)$  的不定积分,  $f(x)$  常称为被积函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.582,
+            0.903,
+            0.704
+          ],
+          "content": "这里我们需要注意两点: 一是原函数和不定积分是两个概念, 它们之间的关系是元素与集合的从属关系. 不定积分 $\\int f(x) \\mathrm{d}x$ 代表的不是一个函数, 而是一个由所有具有相同导函数的元素组成的集合, 这个集合中的每一个函数都称为 $f(x)$ 的一个原函数. 二是 $f(x)$ 的不定积分这个称呼以及记号 $\\int f(x) \\mathrm{d}x$ 现阶段看起来有点突兀, 它们的意义在学到定积分后将会看得更清楚和更深刻, 目前暂时当成一个术语理解即可."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.709,
+            0.441,
+            0.726
+          ],
+          "content": "例 8.1.1 求下列不定积分:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.34,
+            0.735,
+            0.71,
+            0.77
+          ],
+          "content": "\\int \\sin x \\mathrm{d} x, \\quad \\int x ^ {2} \\mathrm{d} x, \\quad \\int \\mathrm{e} ^ {a x} \\mathrm{d} x (a \\neq 0).",
+          "image_source": "images/page_256_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.781,
+            0.663,
+            0.799
+          ],
+          "content": "解 下面所有表达式中的 c 均为常数, 不再一一赘述."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.805,
+            0.438,
+            0.822
+          ],
+          "content": "由于 $(\\cos x)' = -\\sin x,$ 所以"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.416,
+            0.832,
+            0.634,
+            0.866
+          ],
+          "content": "\\int \\sin x   \\mathrm{d} x = - \\cos x + c.",
+          "image_source": "images/page_256_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.877,
+            0.495,
+            0.895
+          ],
+          "content": "同理, 我们可以写出另外两个不定积分:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.326,
+            0.904,
+            0.724,
+            0.94
+          ],
+          "content": "\\int x ^ {2} \\mathrm{d} x = \\frac {1}{3} x ^ {3} + c, \\quad \\int \\mathrm{e} ^ {a x} \\mathrm{d} x = \\frac {1}{a} \\mathrm{e} ^ {a x} + c.",
+          "image_source": "images/page_256_equation_18.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 257,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.055,
+            0.058,
+            0.084,
+            0.07
+          ],
+          "content": "246"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.103,
+            0.056,
+            0.235,
+            0.071
+          ],
+          "content": "第八章 不定积分"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.113,
+            0.389,
+            0.13
+          ],
+          "content": "例8.1.2 试讨论符号函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.361,
+            0.148,
+            0.586,
+            0.217
+          ],
+          "content": "\\operatorname{sgn} (x) = \\left\\{ \\begin{array}{l l} - 1, & x <   0, \\\\ 0, & x = 0, \\\\ 1, & x > 0 \\end{array} \\right.",
+          "image_source": "images/page_257_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.234,
+            0.299,
+            0.251
+          ],
+          "content": "在 R 上是否有原函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.258,
+            0.502,
+            0.276
+          ],
+          "content": "解 我们假设 $\\operatorname{sgn}(x)$ 有原函数 $F(x)$, 则"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.282,
+            0.565,
+            0.3
+          ],
+          "content": "当 $x < 0$ 时, $F'(x) = -1$, 因此 $F(x) = -x + c_1$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.305,
+            0.527,
+            0.323
+          ],
+          "content": "当 $x > 0$ 时, $F'(x) = 1$, 因此 $F(x) = x + c_2$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.329,
+            0.853,
+            0.368
+          ],
+          "content": "由于  $F(x)$  是原函数, 故必须可导, 从而在 x = 0 处连续. 因而必须有  $c_{1} = c_{2} = c$ , 即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.351,
+            0.373,
+            0.592,
+            0.442
+          ],
+          "content": "F (x) = \\left\\{ \\begin{array}{l l} - x + c, & x <   0, \\\\ c, & x = 0, \\\\ x + c, & x > 0. \\end{array} \\right.",
+          "image_source": "images/page_257_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.454,
+            0.853,
+            0.496
+          ],
+          "content": "然而这样的  $F(x)$  在 x=0 处不可能可导, 从而  $\\mathrm{sgn}(x)$  在 R 上没有原函数. 但请注意,  $\\mathrm{sgn}(x)$  在任一不包含原点在内的区间上是有原函数的."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.141,
+            0.524,
+            0.235,
+            0.542
+          ],
+          "level": 2,
+          "content": "习题 8.1"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.562,
+            0.484,
+            0.595
+          ],
+          "content": "1. 证明: 若 $\\int f(x) \\, \\mathrm{d}x = F(x) + C$, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.281,
+            0.61,
+            0.671,
+            0.644
+          ],
+          "content": "\\int f (a x + b) \\mathrm{d} x = \\frac {1}{a} F (a x + b) + C \\quad (a \\neq 0).",
+          "image_source": "images/page_257_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.658,
+            0.32,
+            0.674
+          ],
+          "content": "2. 求下列不定积分:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.675,
+            0.311,
+            0.707
+          ],
+          "content": "(1) $\\int (2^x + 3^x) \\, \\mathrm{d}x$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.509,
+            0.675,
+            0.653,
+            0.707
+          ],
+          "content": "(2) $\\int \\tan^2 x \\, \\mathrm{d}x$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.71,
+            0.294,
+            0.745
+          ],
+          "content": "(3) $\\int \\frac{2x^2}{1 + x^2} \\, \\mathrm{d}x$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.509,
+            0.71,
+            0.65,
+            0.744
+          ],
+          "content": "(4) $\\int \\cos^2 x \\, \\mathrm{d}x$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.748,
+            0.329,
+            0.781
+          ],
+          "content": "(5) $\\int \\cos x\\cos 2x\\mathrm{d}x;$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.509,
+            0.747,
+            0.705,
+            0.781
+          ],
+          "content": "(6) $\\int \\frac{\\cos 2x}{\\cos^2 x \\sin^2 x} \\, \\mathrm{d}x;$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.783,
+            0.301,
+            0.818
+          ],
+          "content": "(7) $\\int \\frac{\\mathrm{e}^{3x} + 1}{\\mathrm{e}^x + 1} \\, \\mathrm{d}x;$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.509,
+            0.783,
+            0.709,
+            0.817
+          ],
+          "content": "(8) $\\int \\frac{\\cos 2x}{\\cos x - \\sin x} \\, \\mathrm{d}x;$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.82,
+            0.331,
+            0.853
+          ],
+          "content": "(9) $\\int \\sqrt{1 - \\sin 2x} \\, \\mathrm{d}x$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.856,
+            0.319,
+            0.872
+          ],
+          "content": "3. 求下列不定积分:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.873,
+            0.275,
+            0.905
+          ],
+          "content": "(1) $\\int \\mathrm{e}^{-|x|}\\mathrm{d}x;$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.509,
+            0.871,
+            0.623,
+            0.905
+          ],
+          "content": "(2) $\\int |x|\\mathrm{d}x;$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.907,
+            0.329,
+            0.941
+          ],
+          "content": "(3) $\\int \\max \\{1, x^2\\} \\, \\mathrm{d}x$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.509,
+            0.907,
+            0.653,
+            0.941
+          ],
+          "content": "(4) $\\int |\\sin x| \\, \\mathrm{d}x$."
+        }
+      ]
+    },
+    {
+      "page_idx": 258,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.743,
+            0.058,
+            0.896,
+            0.071
+          ],
+          "content": "8.2 原函数的存在性"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.916,
+            0.059,
+            0.944,
+            0.07
+          ],
+          "content": "247"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.144,
+            0.113,
+            0.896,
+            0.272
+          ],
+          "sub_type": "text",
+          "content": "4. 设 $f$ 在 $(a, b)$ 内可导, 且 $|f'(x)| \\leqslant M, \\forall x \\in (a, b)$. 证明: 极限 $\\lim_{x \\to a^+} f(x)$ 和 $\\lim_{x \\to b^-} f(x)$ 都存在且有限.\n5. 设 $f$ 在 $[a, b]$ 上连续, 在 $(a, b)$ 内的左导数存在且恒为零, 证明: $f$ 为常值函数. 对于右导数有类似的结论.\n6. 设 f 周期为 T. 则其原函数 F 以 T 为周期当且仅当  $F(T) = F(0)$ .\n7. 设 $f$ 为奇函数. 则其原函数为偶函数; 设 $f$ 为偶函数. 则其原函数 $F$ 为奇函数当且仅当 $F(0) = 0$."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.145,
+            0.326,
+            0.416,
+            0.348
+          ],
+          "level": 2,
+          "content": "8.2 原函数的存在性"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.396,
+            0.899,
+            0.46
+          ],
+          "content": "上节我们给出了原函数的概念和不定积分的定义, 本节我们将讨论不定积分的一个基本问题——原函数的存在性问题. 这个问题包含两个方面, 一是什么样的函数一定有原函数, 二是什么样的函数一定没有原函数. 对于问题的第一个方面, 我们有如下结论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.191,
+            0.466,
+            0.801,
+            0.484
+          ],
+          "content": "定理 8.2.1（原函数存在定理） 闭区间 I 上的连续函数必有原函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.49,
+            0.899,
+            0.554
+          ],
+          "content": "在给出定理证明之前, 我们简单分析一下. 首先, 连续函数原函数的存在性大都放到定积分引入之后, 通过变上限积分直接给出原函数 (见定理 9.3.6). 下面我们给出一个直接的证明."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.561,
+            0.899,
+            0.625
+          ],
+          "content": "回顾一下第六章例 6.1.7 中的函数  $g(x)$  和  $G(x)$ . 用原函数的语言重述该例的结论就是, 如果区间 I 上的逐段线性函数  $g(x)$  连续, 则  $g(x)$  有连续的逐段为抛物线的原函数  $G(x)$ . 本定理的证明将主要基于该结论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.632,
+            0.524,
+            0.649
+          ],
+          "content": "给定区间 $I = [a,b]$ 和 $I$ 上的一组分点"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.342,
+            0.668,
+            0.702,
+            0.684
+          ],
+          "content": "a = x _ {0} <   x _ {1} <   x _ {2} <   \\dots <   x _ {n} <   x _ {n + 1} = b.",
+          "image_source": "images/page_258_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.701,
+            0.573,
+            0.718
+          ],
+          "content": "设  $g(x)$  是区间 I 上的形如下式的逐段线性函数:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.278,
+            0.735,
+            0.766,
+            0.753
+          ],
+          "content": "g (x) = a _ {i} + k _ {i} (x - x _ {i}), \\quad x \\in [ x _ {i}, x _ {i + 1} ], \\quad i = 0, 1, \\dots , n.",
+          "image_source": "images/page_258_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.769,
+            0.394,
+            0.786
+          ],
+          "content": "为了保证 $g(x)$ 的连续性, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.328,
+            0.805,
+            0.715,
+            0.821
+          ],
+          "content": "a _ {i} = a _ {i - 1} + k _ {i - 1} (x _ {i} - x _ {i - 1}) \\quad i = 1, 2, \\dots , n.",
+          "image_source": "images/page_258_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.838,
+            0.628,
+            0.856
+          ],
+          "content": "例6.1.7直接给出了函数 $g(x)$ 满足 $G(a) = 0$ 的原函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.212,
+            0.865,
+            0.834,
+            0.897
+          ],
+          "content": "G (x) = A _ {i} + a _ {i} (x - x _ {i}) + \\frac {k _ {i}}{2} (x - x _ {i}) ^ {2}, \\quad x \\in [ x _ {i}, x _ {i + 1} ], \\quad i = 0, 1, \\dots , n,",
+          "image_source": "images/page_258_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.91,
+            0.836,
+            0.941
+          ],
+          "content": "其中  $A_{0}=0,\\quad A_{i}=A_{i-1}+a_{i-1}(x_{i}-x_{i-1})+\\frac{k_{i-1}}{2}(x_{i}-x_{i-1})^{2},\\quad i=1,2,\\cdots,n.$"
+        }
+      ]
+    },
+    {
+      "page_idx": 259,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.058,
+            0.057,
+            0.085,
+            0.068
+          ],
+          "content": "248"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.105,
+            0.055,
+            0.237,
+            0.069
+          ],
+          "content": "第八章 不定积分"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.112,
+            0.856,
+            0.177
+          ],
+          "content": "证明 不失一般性, 不妨假设 $I = [0,1]$. 设函数 $f(x)$ 是 $I$ 上的连续函数, 我们证明一定存在 $I$ 上的函数 $F(x)$ 使得 $F'(x) = f(x)$ (这里在区间端点处自然理解为单侧导数)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.184,
+            0.169,
+            0.2
+          ],
+          "content": "记"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.299,
+            0.211,
+            0.66,
+            0.243
+          ],
+          "content": "\\omega (r) = \\max_{\\substack{x,x^{\\prime}\\in [0,1]\\\\ |x - x^{\\prime}|\\leqslant r}}|f(x) - f(x^{\\prime})|,\\quad \\forall r\\geqslant 0.",
+          "image_source": "images/page_259_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.255,
+            0.641,
+            0.279
+          ],
+          "content": "由于 $f(x)$ 在 $I$ 上连续, 故一致连续, 即 $\\lim_{r\\to 0^{+}}\\omega (r) = \\omega (0) = 0.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.28,
+            0.294,
+            0.297
+          ],
+          "content": "任取 $n \\geqslant 2$, 定义"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.146,
+            0.314,
+            0.801,
+            0.454
+          ],
+          "content": "f _ {n} (x) = \\left\\{ \\begin{array}{l l} f (0) + n \\Big (f \\Big (\\frac {1}{n} \\Big) - f (0) \\Big) x, & x \\in \\left[ 0, \\frac {1}{n}\\right), \\\\ f \\Big (\\frac {1}{n} \\Big) + n \\Big (f \\Big (\\frac {2}{n} \\Big) - f \\Big (\\frac {1}{n} \\Big) \\Big) \\Big (x - \\frac {1}{n} \\Big), & x \\in \\left[ \\frac {1}{n}, \\frac {2}{n}\\right), \\\\ \\dots , \\\\ f \\Big (\\frac {n - 1}{n} \\Big) + n \\Big (f (1) - f \\Big (\\frac {n - 1}{n} \\Big) \\Big) \\Big (x - \\frac {n - 1}{n} \\Big), & x \\in \\left[ \\frac {n - 1}{n}, 1 \\right]. \\end{array} \\right.",
+          "image_source": "images/page_259_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.468,
+            0.855,
+            0.51
+          ],
+          "content": "则 $f_{n}(x)$ 是[0,1]上的连续的逐段线性函数.根据第六章例6.1.7的结论，知 $f_{n}(x)$ 在 $I$ 上有原函数 $F_{n}(x)$ 且 $F_{n}(0) = 0,F_{n}(x)$ 是一个连续的逐段抛物线函数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.516,
+            0.287,
+            0.534
+          ],
+          "content": "显然, $\\forall x\\in I$ ，有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.377,
+            0.535,
+            0.582,
+            0.567
+          ],
+          "content": "| f _ {n} (x) - f (x) | \\leqslant \\omega \\Big (\\frac {1}{n} \\Big).",
+          "image_source": "images/page_259_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.574,
+            0.854,
+            0.616
+          ],
+          "content": "由Lagrange中值定理, 知存在点 $\\xi = \\xi(m, n, x) \\in (0, 1)$ 使得对任意的自然数 $m, n \\geqslant 2$, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.233,
+            0.637,
+            0.723,
+            0.764
+          ],
+          "content": "\\begin{array}{l} \\left| F _ {m} (x) - F _ {n} (x) \\right| = \\left| \\left(F _ {m} (x) - F _ {n} (x)\\right) - \\left(\\left| F _ {m} (0) - F _ {n} (0) \\right|\\right) \\right| \\\\ = \\left| f _ {m} (\\xi) - f _ {n} (\\xi) \\right| \\cdot | x | \\leqslant \\left| f _ {m} (\\xi) - f _ {n} (\\xi) \\right| \\\\ \\leqslant \\left| f _ {m} (\\xi) - f (\\xi) \\right| + \\left| f _ {n} (\\xi) - f (\\xi) \\right| \\\\ \\leqslant \\omega \\left(\\frac {1}{m}\\right) + \\omega \\left(\\frac {1}{n}\\right). \\\\ \\end{array}",
+          "image_source": "images/page_259_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.781,
+            0.701,
+            0.799
+          ],
+          "content": "由 Cauchy 收敛准则知当 $n \\to +\\infty$ 时, 有 $F_{n}(x)$ 收敛到某函数 $F(x)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.805,
+            0.559,
+            0.823
+          ],
+          "content": "对于 $n \\geqslant 2$, 利用Lagrange中值定理, 考虑差商"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.189,
+            0.836,
+            0.769,
+            0.939
+          ],
+          "content": "\\begin{array}{l} \\left| \\frac {F _ {n} (x) - F _ {n} (x ^ {\\prime})}{x - x ^ {\\prime}} - f (x) \\right| = | f _ {n} (x + \\theta (x - x ^ {\\prime})) - f (x) | \\\\ \\leqslant \\left| f _ {n} (x + \\theta (x - x ^ {\\prime})) - f (x + \\theta (x - x ^ {\\prime})) \\right| + \\\\ \\left| f \\left(x + \\theta \\left(x - x ^ {\\prime}\\right)\\right) - f (x) \\right| \\\\ \\end{array}",
+          "image_source": "images/page_259_equation_15.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 260,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.745,
+            0.054,
+            0.901,
+            0.068
+          ],
+          "content": "8.2 原函数的存在性"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.919,
+            0.055,
+            0.948,
+            0.067
+          ],
+          "content": "249"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.447,
+            0.107,
+            0.657,
+            0.144
+          ],
+          "content": "\\leqslant \\omega \\left(\\frac {1}{n}\\right) + \\omega (| x - x ^ {\\prime} |),",
+          "image_source": "images/page_260_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.157,
+            0.232,
+            0.174
+          ],
+          "content": "这意味着"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.365,
+            0.17,
+            0.686,
+            0.208
+          ],
+          "content": "\\left| \\frac {F (x) - F (x ^ {\\prime})}{x - x ^ {\\prime}} - f (x) \\right| \\leqslant \\omega (| x - x ^ {\\prime} |).",
+          "image_source": "images/page_260_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.216,
+            0.364,
+            0.234
+          ],
+          "content": "即  $\\forall x \\in I, F'(x) = f(x).$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.239,
+            0.903,
+            0.28
+          ],
+          "content": "对于本节开头时问题的第二个方面, 即什么样的函数一定没有原函数, 从例题 8.1.2 我们看到符号函数不可能有原函数. 事实上, 我们有下面更一般的结论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.191,
+            0.286,
+            0.757,
+            0.305
+          ],
+          "content": "定理 8.2.2 区间 I 上不具有介值性的函数一定不存在原函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.31,
+            0.903,
+            0.351
+          ],
+          "content": "证明 定理本质上是 Darboux 介值定理的应用: 任何一个可微函数的导函数必具有介值性, 因此不具有介值性的函数是不可能成为一个函数的导函数的. □"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.149,
+            0.357,
+            0.229,
+            0.448
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_260_image_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.243,
+            0.358,
+            0.903,
+            0.449
+          ],
+          "content": "注 8.2.1 上面两个定理合起来并没有给出连续函数是有原函数的充要条件。换句话说，我们并没有排除掉不连续函数一定没有原函数这种情况。事实上，下面的例子告诉我们，即使 $f(x)$ 在 $x = 0$ 处不连续，但它仍然可以有原函数。当然，此时的间断点一定不是第一类间断点。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.461,
+            0.376,
+            0.478
+          ],
+          "content": "例8.2.1 证明函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.344,
+            0.489,
+            0.695,
+            0.543
+          ],
+          "content": "f (x) = \\left\\{ \\begin{array}{l l} 2 x \\sin \\frac {1}{x ^ {2}} - \\frac {2}{x} \\cos \\frac {1}{x ^ {2}}, & x \\neq 0, \\\\ 0, & x = 0 \\end{array} \\right.",
+          "image_source": "images/page_260_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.557,
+            0.235,
+            0.574
+          ],
+          "content": "有原函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.392,
+            0.575,
+            0.648,
+            0.629
+          ],
+          "content": "F (x) = \\left\\{ \\begin{array}{l l} x ^ {2} \\sin \\frac {1}{x ^ {2}}, & x \\neq 0, \\\\ 0, & x = 0. \\end{array} \\right.",
+          "image_source": "images/page_260_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.638,
+            0.381,
+            0.655
+          ],
+          "content": "证明 直接验证即可."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.662,
+            0.903,
+            0.703
+          ],
+          "content": "事实上, 我们可以利用连续函数必有原函数这一结论, 来给出构造不连续函数仍有原函数的稍微一般的方法. 参见本节习题题目 5."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.19,
+            0.73,
+            0.286,
+            0.749
+          ],
+          "level": 2,
+          "content": "习题8.2"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.146,
+            0.775,
+            0.906,
+            0.934
+          ],
+          "sub_type": "text",
+          "content": "1. 试讨论符号函数 $\\operatorname{sgn}(x)$ 和 Dirichlet 函数有没有原函数？\n2. 设 $a < c < b, f$ 在 $(a, b)$ 内连续, $F$ 在 $(a, c)$ 与 $(c, b)$ 内均为 $f$ 的原函数, 且 $F$ 在 $(a, b)$ 内连续. 证明: $F$ 是 $f$ 在 $(a, b)$ 内的原函数.\n3. 设 $f$ 是区间 $[a, b]$ 上的实连续函数, $F$ 是 $f$ 在区间 $(a, b)$ 内的一个原函数. 证明: $F(a^{+})$ 与 $F(b^{-})$ 存在.\n4. 设 $f(x)$ 在 $[a, b]$ 上有界且存在原函数, $g(x)$ 是 $[a, b]$ 上的连续函数. 求证: $f(x)g(x)$ 在 $[a, b]$ 上存在原函数."
+        }
+      ]
+    },
+    {
+      "page_idx": 261,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.055,
+            0.055,
+            0.084,
+            0.067
+          ],
+          "content": "250"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.103,
+            0.054,
+            0.235,
+            0.068
+          ],
+          "content": "第八章 不定积分"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.11,
+            0.668,
+            0.143
+          ],
+          "content": "5. 设函数 $f(x)$ 在 $(- \\infty, + \\infty)$ 上可导，$\\lim_{x \\to \\infty} \\frac{f(x)}{x} = 0$。求证:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.35,
+            0.155,
+            0.594,
+            0.217
+          ],
+          "content": "g (x) = \\left\\{ \\begin{array}{l l} f ^ {\\prime} \\left(\\frac {1}{x}\\right), & x \\neq 0, \\\\ 0, & x = 0 \\end{array} \\right.",
+          "image_source": "images/page_261_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.23,
+            0.339,
+            0.248
+          ],
+          "content": "在 $(-\\infty, +\\infty)$ 上有原函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.253,
+            0.851,
+            0.3
+          ],
+          "content": "6. 在上面的题目 5 中, 特别地, 取 $f_{1}(x) = -\\cos x$, $f_{2}(x) = \\sin x$, 则满足 $\\lim_{x \\to \\infty} \\frac{f_{i}(x)}{x} = 0, i = 1, 2$. 因此, 下面结论成立: 函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.22,
+            0.313,
+            0.72,
+            0.368
+          ],
+          "content": "g _ {1} (x) = \\left\\{ \\begin{array}{l l} \\sin \\frac {1}{x}, & x \\neq 0, \\\\ 0, & x = 0, \\end{array} \\right. \\quad g _ {2} (x) = \\left\\{ \\begin{array}{l l} \\cos \\frac {1}{x}, & x \\neq 0, \\\\ 0, & x = 0 \\end{array} \\right.",
+          "image_source": "images/page_261_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.383,
+            0.764,
+            0.402
+          ],
+          "content": "在 $\\mathbb{R}$ 上有原函数. 试证明这个结论. 进一步, 证明 $g_2^2(x)$ 在 $\\mathbb{R}$ 上没有原函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.407,
+            0.254,
+            0.423
+          ],
+          "content": "7. 试问函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.353,
+            0.424,
+            0.59,
+            0.479
+          ],
+          "content": "f (x) = \\left\\{ \\begin{array}{l l} \\frac {1}{x} \\sin \\frac {1}{x}, & x > 0, \\\\ 0, & x = 0 \\end{array} \\right.",
+          "image_source": "images/page_261_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.488,
+            0.354,
+            0.506
+          ],
+          "content": "在 $[0, +\\infty)$ 上是否有原函数？"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.097,
+            0.512,
+            0.848,
+            0.574
+          ],
+          "sub_type": "text",
+          "content": "8. 设 $F(x)$ 是 $f(x)$ 在 $\\mathbb{R}$ 上的一个有下界的原函数. 证明: $\\inf_{x \\in \\mathbb{R}} |f(x)| = 0$.\n9. 设函数 $f(x)$ 和 $g(x)$ 在区间 $I$ 上都有原函数. 问 $f(x)g(x)$ 是否在区间 $I$ 上也必有原函数?"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.101,
+            0.63,
+            0.453,
+            0.652
+          ],
+          "level": 2,
+          "content": "8.3 不定积分的性质与计算"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.14,
+            0.702,
+            0.423,
+            0.722
+          ],
+          "level": 2,
+          "content": "8.3.1 积出来和积不出来"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.747,
+            0.851,
+            0.859
+          ],
+          "content": "定理 8.2.1告诉我们, 区间 I 上的连续函数一定有原函数, 那么随之而来的问题是: 如何计算一个给定的连续函数的原函数? 事实上, 一个前置的问题是: 一个函数如果有原函数, 原函数总能算出来吗? 这个问题逻辑上非常类同于一个奇数次多项式在实数域上至少有一个实数根和这个根总能算出来吗? 的确, 原函数的存在性和能否表示出来是两个层面的问题."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.865,
+            0.851,
+            0.94
+          ],
+          "content": "要回答连续函数的原函数能否表达出来, 首先要明确什么是表达出来. 一个通俗的说法是: 用什么方式表达出来的函数才能称之为被积函数算出来了? 比如, 当我们稍后理解到变上限的定积分也可以表示函数时, 那么 $\\int_{a}^{x} \\mathrm{e}^{-t^2} \\mathrm{d}t$ 就是 $\\mathrm{e}^{-t^2}$ 的一个原函数. 我"
+        }
+      ]
+    },
+    {
+      "page_idx": 262,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.694,
+            0.056,
+            0.896,
+            0.07
+          ],
+          "content": "8.3 不定积分的性质与计算"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.916,
+            0.057,
+            0.944,
+            0.069
+          ],
+          "content": "251"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.109,
+            0.896,
+            0.187
+          ],
+          "continues_prev": true,
+          "content": "们能说它的不定积分能表达出来并且就是 $\\int_{a}^{x}\\mathrm{e}^{-t^2}\\mathrm{d}t + c$ 吗？再比如，如果原函数是由极限，或者由无穷多个函数之和(函数项级数)或之积表示，我们能称这个不定积分的原函数表示出来了吗？基于此，我们对一个函数的原函数能表示出来给一些基本的限定."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.197,
+            0.899,
+            0.262
+          ],
+          "content": "被积函数的原函数如果能用基本初等函数, 或者基本初等函数的有限次代数运算 (四则运算、复合运算、反函数运算等), 那么就称为该被积函数能积出来, 即上面所说的表示出来. 否则, 即使原函数存在, 我们通常也称该被积函数积不出来."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.272,
+            0.899,
+            0.337
+          ],
+          "content": "要判断一个具体的函数能否积出来不是一件容易的事, 17、18 世纪诸多数学家曾经一度发展了诸多方法和技巧, 直到发现即使是一些表达式非常简捷的初等函数, 也很难求出原函数的表示, 人们才渐渐意识到可能有些函数就是积不出来的!"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.347,
+            0.899,
+            0.435
+          ],
+          "content": "从理论上考虑一个函数能否积出来的开创性工作是19世纪上半叶由Liouville提出并研究的，后被诸多数学家给以推广。系统的研究需要用到微分代数方面的知识，已经远超本课的范围。有兴趣的读者可以作进一步的延伸阅读，参见文献[60]或追溯一下教学研究方面的论文。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.188,
+            0.454,
+            0.408,
+            0.472
+          ],
+          "level": 2,
+          "content": "1. 几个能积出来的函数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.49,
+            0.899,
+            0.531
+          ],
+          "content": "下面我们先给出几个后面学习中经常遇到的能积出来的初等函数以及它们的不定积分, 其正确性可以直接从前面的导数运算中得以验证."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.186,
+            0.534,
+            0.901,
+            0.768
+          ],
+          "sub_type": "text",
+          "content": "(1) $\\int 0\\mathrm{d}x = c;$\n(2) $\\int x^{\\mu} \\, \\mathrm{d}x = \\frac{1}{\\mu + 1} x^{\\mu + 1} + c (\\mu \\neq -1)$;\n(3) $\\int \\mathrm{e}^{x} \\, \\mathrm{d}x = \\mathrm{e}^{x} + c;$\n(4) $\\int \\frac{1}{x} \\, \\mathrm{d}x = \\ln |x| + c;$\n(5) $\\int\\cos x\\,\\mathrm{d}x=\\sin x+c;$\n(6) $\\int \\sin x\\mathrm{d}x = -\\cos x + c;$\n(7) $\\int \\sec^2 x \\, \\mathrm{d}x = \\tan x + c;$\n(8) $\\int \\csc^2 x \\, \\mathrm{d}x = -\\cot x + c;$\n(9) $\\int \\frac{1}{\\sqrt{1 + x^2}}\\mathrm{d}x = \\ln (x + \\sqrt{1 + x^2}) + c;$\n(10) $\\int \\frac{1}{\\sqrt{1 - x^2}}\\mathrm{d}x = \\arcsin x + c;$\n(11) $\\int \\frac{1}{1 + x^2} \\, \\mathrm{d}x = \\arctan x + c;$\n(12) $\\int \\sinh x \\, \\mathrm{d}x = \\cosh x + c.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.772,
+            0.9,
+            0.878
+          ],
+          "content": "注意, 原函数的表达形式可能不是唯一的, 这种形式上的差别本质上是由于原函数之间可以相差一个常数造成的. 比如上面列表中的不定积分 $\\int \\frac{1}{\\sqrt{1 - x^2}} \\mathrm{d}x$ 有原函数 $\\arcsin x$, 也可以取 $-\\arccos x$ 为原函数. 而 $\\int \\frac{1}{1 + x^2} \\mathrm{d}x$ 可以有原函数 $\\arctan x$, 也可以取 $-\\operatorname{arccot} x$ 为原函数. 又比如不定积分"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.24,
+            0.901,
+            0.803,
+            0.939
+          ],
+          "content": "I = \\int \\frac {1}{1 + x ^ {4}} \\mathrm{d} x = \\frac {\\sqrt {2}}{8} \\ln \\frac {x ^ {2} + \\sqrt {2} x + 1}{x ^ {2} - \\sqrt {2} x + 1} - \\frac {\\sqrt {2}}{4} \\arctan \\frac {\\sqrt {2} x}{x ^ {2} - 1} + c,",
+          "image_source": "images/page_262_equation_22.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 263,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.058,
+            0.055,
+            0.087,
+            0.066
+          ],
+          "content": "252"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.053,
+            0.238,
+            0.068
+          ],
+          "content": "第八章 不定积分"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.11,
+            0.232,
+            0.127
+          ],
+          "content": "也可以表示为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.16,
+            0.138,
+            0.802,
+            0.177
+          ],
+          "content": "I = \\frac {\\sqrt {2}}{4} \\ln \\frac {x ^ {2} + \\sqrt {2} x + 1}{\\sqrt {1 + x ^ {4}}} + \\frac {\\sqrt {2}}{4} \\left(\\arctan (\\sqrt {2} x + 1) + \\arctan (\\sqrt {2} x - 1)\\right) + c.",
+          "image_source": "images/page_263_equation_3.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.143,
+            0.189,
+            0.369,
+            0.208
+          ],
+          "level": 2,
+          "content": "2. 几个积不出来的函数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.221,
+            0.859,
+            0.309
+          ],
+          "content": "我们下面给出几个著名的积不出来的初等函数, 供读者了解. 这些被积函数很多源于有关学科中的具体背景, 有着广泛的应用和影响, 而且大多数积分还曾被冠以数学家的名字. 也有一些被积函数是根据 Liouville 积不出来的结论刻意构造出来的, 意在营造一种效果: 这些形式上看似很简单的初等函数是根本就积不出来的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.31,
+            0.5,
+            0.342
+          ],
+          "content": "Gauss 积分类型: $\\int x^{2n} \\mathrm{e}^{-x^2} \\, \\mathrm{d}x (n \\in \\mathbb{N})$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.344,
+            0.534,
+            0.378
+          ],
+          "content": "Fresnel $^{①}$  积分:  $\\int\\sin(x^{2})\\mathrm{d}x,\\quad\\int\\cos(x^{2})\\mathrm{d}x.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.38,
+            0.597,
+            0.414
+          ],
+          "content": "正弦、余弦积分: $\\int \\frac{\\sin x}{x^n} \\, \\mathrm{d}x$, $\\int \\frac{\\cos x}{x^n} \\, \\mathrm{d}x$ ($n \\in \\mathbb{N}$)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.415,
+            0.235,
+            0.432
+          ],
+          "content": "对数积分:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.242,
+            0.44,
+            0.717,
+            0.477
+          ],
+          "content": "\\int \\frac {\\mathrm{d} t}{\\ln t}, \\quad \\int \\frac {\\ln t}{1 + x} \\mathrm{d} t, \\quad \\int \\frac {\\ln x}{x (1 + x)} \\mathrm{d} x, \\quad \\int \\frac {\\ln x}{1 + x ^ {2}} \\mathrm{d} x,",
+          "image_source": "images/page_263_equation_10.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.174,
+            0.489,
+            0.783,
+            0.524
+          ],
+          "content": "\\int \\ln (\\sin t) \\mathrm{d} t, \\quad \\int \\ln (\\cos t) \\mathrm{d} t, \\quad \\int \\ln (1 + \\sin t) \\mathrm{d} t, \\quad \\int \\ln (1 + \\cos t) \\mathrm{d} t.",
+          "image_source": "images/page_263_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.531,
+            0.735,
+            0.566
+          ],
+          "content": "指数积分: $\\int \\frac{\\mathrm{e}^x}{x}\\mathrm{d}x,\\quad \\int \\frac{\\mathrm{e}^x}{1 + x}\\mathrm{d}x,\\quad \\int \\frac{\\mathrm{e}^x}{1 + x^2}\\mathrm{d}x,\\quad \\int \\frac{\\mathrm{e}^x}{x(1 + x)}\\mathrm{d}x.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.568,
+            0.807,
+            0.607
+          ],
+          "content": "椭圆积分: $\\int \\frac{\\mathrm{d}x}{\\sqrt{(1 - x^2)(1 - k^2x^2)}}, \\quad \\int \\frac{x^2\\mathrm{d}x}{\\sqrt{(1 - x^2)(1 - k^2x^2)}} (0 < k^2 < 1).$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.609,
+            0.857,
+            0.671
+          ],
+          "content": "事实上, 可以根据一般性结论构造出很多形式简捷但积不出来的函数, 只不过要介绍这些一般性结论需要大量篇幅, 超出课程范围. 比如, Chebyshev 在 19 世纪中叶证明了下面的结论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.673,
+            0.857,
+            0.737
+          ],
+          "content": "定理 8.3.1 形如  $\\int x^{m}(a+bx^{n})^{p}\\mathrm{d}x$  (m,n,p 均为有理数) 的不定积分能积出来的充要条件是 p,  $\\frac{m+1}{n}$ ,  $p+\\frac{m+1}{n}$  三者至少有一个是整数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.738,
+            0.833,
+            0.755
+          ],
+          "content": "那么根据这个结论, 我们可以构造下面形式简捷但积不出来的函数 (椭圆积分):"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.327,
+            0.764,
+            0.632,
+            0.801
+          ],
+          "content": "\\int \\frac {1}{\\sqrt {1 - x ^ {3}}} \\mathrm{d} x, \\quad \\int \\frac {1}{\\sqrt {1 - x ^ {4}}} \\mathrm{d} x.",
+          "image_source": "images/page_263_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.812,
+            0.538,
+            0.83
+          ],
+          "content": "另一方面, 通过调整 $m, n, p$, 又可以断定不定积分"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.416,
+            0.842,
+            0.545,
+            0.879
+          ],
+          "content": "\\int \\frac {\\sqrt {x}}{\\sqrt {1 - x ^ {3}}} \\mathrm{d} x",
+          "image_source": "images/page_263_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.891,
+            0.509,
+            0.909
+          ],
+          "content": "是能积出来的, 剩下的就看如何把它积出来了."
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.136,
+            0.918,
+            0.746,
+            0.934
+          ],
+          "content": "① Fresnel, Augustin-Jean, 1788 年 5 月 10 日 — 1827 年 7 月 14 日, 法国物理学家."
+        }
+      ]
+    },
+    {
+      "page_idx": 264,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.69,
+            0.056,
+            0.893,
+            0.07
+          ],
+          "content": "8.3 不定积分的性质与计算"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.913,
+            0.057,
+            0.942,
+            0.069
+          ],
+          "content": "253"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.18,
+            0.11,
+            0.491,
+            0.13
+          ],
+          "level": 2,
+          "content": "8.3.2 不定积分的基本性质"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.154,
+            0.897,
+            0.29
+          ],
+          "content": "虽然求原函数的初等表示渐渐被直接定性分析原函数所取代, 并且把积不出来的函数当作一种全新的函数来接受并加以研究, 但是, 即使今天我们仍然把寻求原函数的显式表示当作数学分析学习中的基本方法和重要内容, 因为如果被积函数能用初等函数表示出来的话, 在进一步的研究中毕竟还是有其方便之处的. 这一点在学到定积分 Newton-Leibniz 公式时愈发能感悟到不定积分的重要性. 因此, 在本章我们还要详细讨论不定积分的性质以及计算不定积分的常用方法."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.182,
+            0.296,
+            0.812,
+            0.314
+          ],
+          "content": "首先从微分的性质和不定积分的定义,可以直接推导和验证下面的结论:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.182,
+            0.32,
+            0.571,
+            0.338
+          ],
+          "content": "(1) 函数 $f(x)$ 的原函数的导数还是 $f(x)$，即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.408,
+            0.35,
+            0.632,
+            0.388
+          ],
+          "content": "\\frac {\\mathrm{d}}{\\mathrm{d} x} \\left(\\int f (x) \\mathrm{d} x\\right) = f (x).",
+          "image_source": "images/page_264_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.401,
+            0.896,
+            0.451
+          ],
+          "content": "这条性质说明对一个函数先实施积分  $\\int$  运算, 再实施微分 d 运算, 其效果刚好抵消, 相当于恒等运算:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.47,
+            0.452,
+            0.572,
+            0.486
+          ],
+          "content": "\\mathrm{d} \\circ \\int = \\mathrm{id}.",
+          "image_source": "images/page_264_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.183,
+            0.494,
+            0.548,
+            0.512
+          ],
+          "content": "(2) 设  $F(x)$  是  $F'(x)$  的一个原函数, 则有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.302,
+            0.52,
+            0.738,
+            0.556
+          ],
+          "content": "\\int F ^ {\\prime} (x) \\mathrm{d} x = F (x) + c, \\quad \\int \\mathrm{d} F (x) = F (x) + c.",
+          "image_source": "images/page_264_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.569,
+            0.896,
+            0.619
+          ],
+          "content": "这条性质说明对一个函数先实施微分 d 运算, 再实施积分  $\\int$  运算, 其效果是得到了这个函数所在的函数类:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.439,
+            0.62,
+            0.602,
+            0.653
+          ],
+          "content": "\\int \\circ \\mathrm{d}: f \\mapsto f + c.",
+          "image_source": "images/page_264_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.182,
+            0.661,
+            0.843,
+            0.679
+          ],
+          "content": "结合上一条, 我们看到, 微分和积分在抹掉一个常数的意义下是一对逆运算."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.183,
+            0.685,
+            0.441,
+            0.703
+          ],
+          "content": "(3) 设 k 是常数 ( $k \\neq 0$ ), 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.402,
+            0.712,
+            0.638,
+            0.746
+          ],
+          "content": "\\int k f (x) \\mathrm{d} x = k \\int f (x) \\mathrm{d} x.",
+          "image_source": "images/page_264_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.183,
+            0.757,
+            0.897,
+            0.776
+          ],
+          "content": "(4) 设 $f(x)$ 和 $g(x)$ 在区间 $I$ 上均有原函数, 则 $f(x) + g(x)$ 在 $I$ 上也有原函数, 且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.324,
+            0.784,
+            0.717,
+            0.82
+          ],
+          "content": "\\int (f (x) \\pm g (x)) \\mathrm{d} x = \\int f (x) \\mathrm{d} x \\pm \\int g (x) \\mathrm{d} x.",
+          "image_source": "images/page_264_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.183,
+            0.831,
+            0.595,
+            0.85
+          ],
+          "content": "性质 (3) 和 (4) 表明了不定积分运算的线性性."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.146,
+            0.855,
+            0.226,
+            0.932
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_264_image_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.239,
+            0.857,
+            0.899,
+            0.925
+          ],
+          "content": "注8.3.1 在上面式子中, 应该注意以下一点: 当等式两端都含不定积分时,由于每个不定积分都包含一个任意常数项, 所以这类等式应理解为等式左右两端相差一个常数. 也可以理解为其中有一个积分不再是任意原函数, 而是"
+        }
+      ]
+    },
+    {
+      "page_idx": 265,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.064,
+            0.055,
+            0.091,
+            0.066
+          ],
+          "content": "254"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.111,
+            0.053,
+            0.241,
+            0.068
+          ],
+          "content": "第八章 不定积分"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.205,
+            0.129,
+            0.516,
+            0.146
+          ],
+          "content": "在其他积分常数选定之后被确定了."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.147,
+            0.182,
+            0.639,
+            0.203
+          ],
+          "level": 2,
+          "content": "8.3.3 不定积分的运算法则之一: 分部积分法"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.229,
+            0.86,
+            0.269
+          ],
+          "content": "下面我们介绍计算不定积分时常用的几个法则. 首先求不定积分的一个重要法则是分部积分法, 它的成立本质上是基于两个函数乘积的导数法则."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.277,
+            0.576,
+            0.294
+          ],
+          "content": "回顾一下两个函数 $u(x)$ 和 $v(x)$ 乘积的求导法则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.314,
+            0.316,
+            0.655,
+            0.335
+          ],
+          "content": "\\mathrm{d} (u (x) v (x)) = v (x) \\mathrm{d} u (x) + u (x) \\mathrm{d} v (x),",
+          "image_source": "images/page_265_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.108,
+            0.354,
+            0.134,
+            0.37
+          ],
+          "content": "即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.311,
+            0.382,
+            0.655,
+            0.401
+          ],
+          "content": "u (x) \\mathrm{d} v (x) = \\mathrm{d} (u (x) v (x)) - v (x) \\mathrm{d} u (x),",
+          "image_source": "images/page_265_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.416,
+            0.153,
+            0.433
+          ],
+          "content": "从而"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.304,
+            0.435,
+            0.662,
+            0.47
+          ],
+          "content": "\\int u (x) \\mathrm{d} v (x) = u (x) v (x) - \\int v (x) \\mathrm{d} u (x).",
+          "image_source": "images/page_265_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.482,
+            0.474,
+            0.499
+          ],
+          "content": "这就是分部积分法. 我们给出严格的描述."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.505,
+            0.616,
+            0.524
+          ],
+          "content": "定理 8.3.2 设 $u\\left( x\\right)$ 和 $v\\left( x\\right)$ 均有连续的导函数, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.286,
+            0.542,
+            0.857,
+            0.577
+          ],
+          "content": "\\int u (x) v ^ {\\prime} (x) \\mathrm{d} x = u (x) v (x) - \\int u ^ {\\prime} (x) v (x) \\mathrm{d} x. \\tag {8.3.1}",
+          "image_source": "images/page_265_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.595,
+            0.576,
+            0.613
+          ],
+          "content": "公式 (8.3.1) 在自变量不产生歧义时, 也常简记为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.365,
+            0.626,
+            0.599,
+            0.661
+          ],
+          "content": "\\int u v ^ {\\prime} \\mathrm{d} x = u v - \\int u ^ {\\prime} v \\mathrm{d} x.",
+          "image_source": "images/page_265_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.678,
+            0.859,
+            0.795
+          ],
+          "content": "分部积分法是求不定积分时使用频率最高的法则之一, 它特别适合于由两个不同类型函数乘积构成的被积函数的不定积分. 通常情况下, 可以试着先求其中一部分 $v'(x)$ 的积分 $v(x)$, 然后将 $\\int u(x)v'(x) \\mathrm{d}x$ 转化为求解 $\\int v(x)u'(x) \\mathrm{d}x$. 通过把 $u$ 和 $v$ 的角色对换, 使得原来不易处理的函数的不定积分对换成相对容易讨论的函数的不定积分. 选择合适的 $u$ 和 $v$ 直接影响计算的效果, 这一点可以通过适量的练习积累一些感觉."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.802,
+            0.858,
+            0.843
+          ],
+          "content": "当我们熟练掌握了这个法则后, 可以不必每次都标出函数 u 和 v, 只要心中记住相应函数的变动规则即可. 另外, 分部积分法则可以重复多次使用, 即有如下推广."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.849,
+            0.858,
+            0.891
+          ],
+          "content": "定理 8.3.3 设函数  $u(x)$  和  $v(x)$  在区间 I 上均有 n 阶连续的导函数  $u'(x)$ ， $u''(x)$ ， $\\cdots$ ， $u^{(n)}(x)$  和  $v'(x)$ ， $v''(x)$ ， $\\cdots$ ， $v^{(n)}(x)$ ，则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.15,
+            0.904,
+            0.857,
+            0.939
+          ],
+          "content": "\\int u v ^ {(n)} \\mathrm{d} x = u v ^ {(n - 1)} - u ^ {\\prime} v ^ {(n - 2)} + u ^ {\\prime \\prime} v ^ {(n - 3)} + \\dots + (- 1) ^ {n} \\int u ^ {(n)} v \\mathrm{d} x. \\tag {8.3.2}",
+          "image_source": "images/page_265_equation_19.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 266,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.692,
+            0.053,
+            0.896,
+            0.068
+          ],
+          "content": "8.3 不定积分的性质与计算"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.915,
+            0.055,
+            0.944,
+            0.067
+          ],
+          "content": "255"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.182,
+            0.109,
+            0.6,
+            0.127
+          ],
+          "content": "证明 根据定理 8.3.3, 通过一次分部积分, 可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.18,
+            0.139,
+            0.861,
+            0.175
+          ],
+          "content": "\\int u v ^ {(n)} \\mathrm{d} x = \\int u \\mathrm{d} v ^ {(n - 1)} = u v ^ {(n - 1)} - \\int v ^ {(n - 1)} \\mathrm{d} u = u v ^ {(n - 1)} - \\int u ^ {\\prime} v ^ {(n - 1)} \\mathrm{d} x.",
+          "image_source": "images/page_266_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.191,
+            0.241,
+            0.208
+          ],
+          "content": "类似地, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.319,
+            0.21,
+            0.727,
+            0.354
+          ],
+          "content": "\\begin{array}{l} \\int u ^ {\\prime} v ^ {(n - 1)} \\mathrm{d} x = u ^ {\\prime} v ^ {(n - 2)} - \\int u ^ {\\prime \\prime} v ^ {(n - 2)} \\mathrm{d} x, \\\\ \\int u ^ {\\prime \\prime} v ^ {(n - 2)} \\mathrm{d} x = u ^ {\\prime \\prime} v ^ {(n - 3)} - \\int u ^ {\\prime \\prime \\prime} v ^ {(n - 3)} \\mathrm{d} x, \\\\ \\int u ^ {(n - 1)} v ^ {\\prime} \\mathrm{d} x = u ^ {(n - 1)} v - \\int u ^ {(n)} v \\mathrm{d} x. \\\\ \\end{array}",
+          "image_source": "images/page_266_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.449,
+            0.306,
+            0.486,
+            0.317
+          ],
+          "content": "...，"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.363,
+            0.436,
+            0.381
+          ],
+          "content": "整理这些关系式, 即得 (8.3.2) 式."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.878,
+            0.365,
+            0.898,
+            0.378
+          ],
+          "content": "□"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.184,
+            0.387,
+            0.391,
+            0.403
+          ],
+          "content": "例 8.3.1 求不定积分"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.338,
+            0.416,
+            0.704,
+            0.451
+          ],
+          "content": "I _ {1} = \\int x \\sin x \\mathrm{d} x, \\quad I _ {2} = \\int \\arctan x \\mathrm{d} x.",
+          "image_source": "images/page_266_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.184,
+            0.468,
+            0.427,
+            0.485
+          ],
+          "content": "解 设 $v = \\cos x, u = x,$ 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.329,
+            0.496,
+            0.714,
+            0.56
+          ],
+          "content": "\\begin{array}{l} I _ {1} = - \\int x \\mathrm{d} (\\cos x) = - x \\cos x + \\int \\cos x \\mathrm{d} x \\\\ = - x \\cos x + \\sin x + c. \\\\ \\end{array}",
+          "image_source": "images/page_266_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.58,
+            0.589,
+            0.598
+          ],
+          "content": "为了计算 $I_{2}$, 可以设 $v = x, u = \\arctan x$, 则有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.375,
+            0.609,
+            0.667,
+            0.72
+          ],
+          "content": "\\begin{array}{l} I _ {2} = x \\arctan x - \\int x \\mathrm{d} (\\arctan x) \\\\ = x \\arctan x - \\int \\frac {x}{1 + x ^ {2}} \\mathrm{d} x \\\\ = x \\arctan x - \\frac {1}{2} \\ln (1 + x ^ {2}) + c. \\\\ \\end{array}",
+          "image_source": "images/page_266_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.733,
+            0.412,
+            0.749
+          ],
+          "content": "例8.3.2 计算不定积分"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.464,
+            0.75,
+            0.579,
+            0.784
+          ],
+          "content": "\\int x ^ {n} \\ln x \\mathrm{d} x.",
+          "image_source": "images/page_266_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.184,
+            0.796,
+            0.531,
+            0.813
+          ],
+          "content": "解 可以取 $u = \\ln x, \\mathrm{d}v = x^n\\mathrm{d}x.$ 于是"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.39,
+            0.826,
+            0.656,
+            0.86
+          ],
+          "content": "\\mathrm{d} u = \\frac {\\mathrm{d} x}{x}, \\quad v = \\frac {1}{n + 1} x ^ {n + 1}.",
+          "image_source": "images/page_266_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.871,
+            0.192,
+            0.888
+          ],
+          "content": "因此"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.168,
+            0.901,
+            0.876,
+            0.937
+          ],
+          "content": "\\int x ^ {n} \\ln x \\mathrm{d} x = \\frac {1}{n + 1} x ^ {n + 1} \\ln x - \\frac {1}{n + 1} \\int x ^ {n} \\mathrm{d} x = \\frac {1}{n + 1} x ^ {n + 1} \\ln x - \\frac {1}{(n + 1) ^ {2}} x ^ {n + 1}.",
+          "image_source": "images/page_266_equation_20.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 267,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.06,
+            0.056,
+            0.089,
+            0.067
+          ],
+          "content": "256"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.054,
+            0.239,
+            0.068
+          ],
+          "content": "第八章 不定积分"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.111,
+            0.859,
+            0.151
+          ],
+          "content": "例 8.3.3 (反函数的原函数) 设  $f(x)$  有可微的反函数  $f^{-1}(x)$ ,  $F(x)$  为  $f(x)$  的一个原函数, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.304,
+            0.153,
+            0.664,
+            0.185
+          ],
+          "content": "\\int f ^ {- 1} (x) \\mathrm{d} x = x f ^ {- 1} (x) - F (f ^ {- 1} (x)) + c.",
+          "image_source": "images/page_267_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.195,
+            0.859,
+            0.236
+          ],
+          "content": "证明 等式右端事实上是通过分部积分得到的, 下面我们给以验证. 为此, 在等式右端关于 $x$ 求导, 得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.271,
+            0.247,
+            0.692,
+            0.356
+          ],
+          "content": "\\begin{array}{l} \\frac {\\mathrm{d}}{\\mathrm{d} x} \\left(x f ^ {- 1} (x) - F (f ^ {- 1} (x)) + c\\right) \\\\ = f ^ {- 1} (x) + x \\frac {\\mathrm{d}}{\\mathrm{d} x} f ^ {- 1} (x) - f (f ^ {- 1} (x)) \\frac {\\mathrm{d}}{\\mathrm{d} x} f ^ {- 1} (x) \\\\ = f ^ {- 1} (x) + x \\frac {\\mathrm{d}}{\\mathrm{d} x} f ^ {- 1} (x) - x \\frac {\\mathrm{d}}{\\mathrm{d} x} f ^ {- 1} (x) = f ^ {- 1} (x). \\\\ \\end{array}",
+          "image_source": "images/page_267_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.372,
+            0.853,
+            0.39
+          ],
+          "content": "有很多重要的被积函数的不定积分需要多次使用分部积分求得,比如下面的例子."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.396,
+            0.371,
+            0.413
+          ],
+          "content": "例 8.3.4 计算不定积分"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.387,
+            0.426,
+            0.576,
+            0.461
+          ],
+          "content": "I _ {n} = \\int \\frac {1}{(x ^ {2} + 1) ^ {n}} \\mathrm{d} x.",
+          "image_source": "images/page_267_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.477,
+            0.209,
+            0.493
+          ],
+          "content": "解 由"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.314,
+            0.496,
+            0.649,
+            0.571
+          ],
+          "content": "\\begin{array}{l} I _ {n} = \\frac {x}{(x ^ {2} + 1) ^ {n}} + 2 n \\int \\frac {x ^ {2}}{(x ^ {2} + 1) ^ {n + 1}} \\mathrm{d} x \\\\ = \\frac {x}{(x ^ {2} + 1) ^ {n}} + 2 n I _ {n} - 2 n I _ {n + 1}, \\\\ \\end{array}",
+          "image_source": "images/page_267_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.583,
+            0.13,
+            0.599
+          ],
+          "content": "得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.339,
+            0.599,
+            0.622,
+            0.634
+          ],
+          "content": "I _ {n + 1} = \\frac {x}{2 n (x ^ {2} + 1) ^ {n}} + \\frac {2 n - 1}{2 n} I _ {n}.",
+          "image_source": "images/page_267_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.644,
+            0.509,
+            0.661
+          ],
+          "content": "然后递推可得到 $I_{n}$ 的一般表达式. 特别地, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.273,
+            0.673,
+            0.688,
+            0.71
+          ],
+          "content": "I _ {2} = \\int \\frac {\\mathrm{d} x}{\\left(x ^ {2} + 1\\right) ^ {2}} = \\frac {x}{2 \\left(x ^ {2} + 1\\right)} + \\frac {1}{2} \\arctan x + c.",
+          "image_source": "images/page_267_equation_14.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.145,
+            0.731,
+            0.636,
+            0.751
+          ],
+          "level": 2,
+          "content": "8.3.4 不定积分的运算法则之二:换元积分法"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.776,
+            0.857,
+            0.818
+          ],
+          "content": "换元积分法是计算不定积分时另一种常用的手法, 它本质上对应于复合函数的求导法则, 是基于一阶微分的形式不变性这一条性质的应用. 具体来说, 我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.363,
+            0.837,
+            0.599,
+            0.857
+          ],
+          "content": "f (u (x)) u ^ {\\prime} (x) \\mathrm{d} x = f (u) \\mathrm{d} u,",
+          "image_source": "images/page_267_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.875,
+            0.357,
+            0.893
+          ],
+          "content": "其中 $u = u(x)$ .因此，我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.343,
+            0.906,
+            0.853,
+            0.937
+          ],
+          "content": "\\int f (u (x)) u ^ {\\prime} (x) \\mathrm{d} x = \\int f (u) \\mathrm{d} u. \\tag {8.3.3}",
+          "image_source": "images/page_267_equation_19.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 268,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.69,
+            0.057,
+            0.893,
+            0.071
+          ],
+          "content": "8.3 不定积分的性质与计算"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.913,
+            0.058,
+            0.941,
+            0.07
+          ],
+          "content": "257"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.112,
+            0.896,
+            0.226
+          ],
+          "content": "我们通过下面两个例子, 分别说明常见的两种换元积分方法. 它们分别对应关系式 (8.3.3) 中左端和右端之一的不定积分容易计算时的典型做法. 具体来说, 一种情况是左端的不定积分不是一下子能够看出来的, 而右端的不定积分相对容易求得. 此时, 我们需要做的是甄别出哪个因子是 $u'(x)$, 需要确定 $f(u(x))$. 由于我们看到的是乘积 $f(u(x))u'(x)$, 因此, 这种甄别并不平凡, 需要把若干因子 “打包” 成 $u(x)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.23,
+            0.895,
+            0.271
+          ],
+          "content": "另一种情况则是左端的不定积分容易计算, 而右端的不定积分难以计算. 此时, 我们需要寻找合适的  $u = u(x)$ , 使得右端关于 u 的积分转化为左端关于 x 的积分."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.272,
+            0.845,
+            0.304
+          ],
+          "content": "例8.3.5 若 $\\int f(u)\\mathrm{d}u = F(u) + c.$ 试求不定积分 $\\int f(ax + b)\\mathrm{d}x$ $(a\\neq 0)$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.306,
+            0.895,
+            0.348
+          ],
+          "content": "解 初步观察可以发现, 如果把  $ax + b$  打包成复合函数求导中的  $u(x)$ , 那么  $f(ax + b)$  的问题形式上就得到了处理  $f(u(x))$ . 即令  $u = u(x) = ax + b$ , 则  $u'(x) \\, dx = a \\, dx$ . 由"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.375,
+            0.358,
+            0.66,
+            0.393
+          ],
+          "content": "\\int f (u (x)) u ^ {\\prime} (x) \\mathrm{d} x = \\int f (u) \\mathrm{d} u,",
+          "image_source": "images/page_268_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.407,
+            0.167,
+            0.423
+          ],
+          "content": "得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.257,
+            0.423,
+            0.779,
+            0.457
+          ],
+          "content": "\\int f (a x + b) \\cdot a \\mathrm{d} x = \\int f (u) \\mathrm{d} u = F (u) + c = F (a x + b) + c.",
+          "image_source": "images/page_268_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.466,
+            0.187,
+            0.483
+          ],
+          "content": "所以"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.368,
+            0.482,
+            0.667,
+            0.517
+          ],
+          "content": "\\int f (a x + b) \\mathrm{d} x = \\frac {1}{a} F (a x + b) + \\tilde {c}.",
+          "image_source": "images/page_268_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.526,
+            0.69,
+            0.544
+          ],
+          "content": "特别地, 当  $a, b (a \\neq 0)$  为某些特定值时, 如下关系式成立:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.241,
+            0.554,
+            0.794,
+            0.59
+          ],
+          "content": "\\int f (a x) \\mathrm{d} x = \\frac {1}{a} F (a x) + c _ {1}, \\quad \\int f (x + b) \\mathrm{d} x = F (x + b) + c _ {2}.",
+          "image_source": "images/page_268_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.181,
+            0.604,
+            0.612,
+            0.638
+          ],
+          "content": "例 8.3.6 求不定积分  $\\int\\frac{dx}{\\sqrt{a^{2}+x^{2}}}$ ，其中 a>0."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.64,
+            0.897,
+            0.727
+          ],
+          "content": "解 这里从被积函数中不易看出哪些因子可以凑在一起打包成 $u(x)$。我们采取另一种尝试, 即能否造出一个 $u(x)$ 来, 同时考虑到 $\\mathrm{d}u(x)$ 产生的效果, 使得被积函数变成我们熟悉的函数. 比如, 我们试着用 $x = a \\tan t \\left( |t| < \\frac{\\pi}{2} \\right)$ 去替换被积函数中的 $x$, 这样一来, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.372,
+            0.727,
+            0.666,
+            0.762
+          ],
+          "content": "\\frac {\\mathrm{d} x}{\\sqrt {a ^ {2} + x ^ {2}}} = \\frac {\\cos t}{a} \\cdot \\frac {a \\mathrm{d} t}{\\cos^ {2} t} = \\frac {\\mathrm{d} t}{\\cos t}.",
+          "image_source": "images/page_268_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.77,
+            0.259,
+            0.788
+          ],
+          "content": "因此, 我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.292,
+            0.786,
+            0.745,
+            0.823
+          ],
+          "content": "\\int \\frac {\\mathrm{d} x}{\\sqrt {a ^ {2} + x ^ {2}}} = \\int \\frac {\\mathrm{d} t}{\\cos t} = \\int \\frac {\\cos t   \\mathrm{d} t}{\\cos^ {2} t} = \\int \\frac {\\mathrm{d} \\sin t}{1 - \\sin^ {2} t}.",
+          "image_source": "images/page_268_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.831,
+            0.711,
+            0.85
+          ],
+          "content": "最后这个式子的积分可以通过下面的方式计算出来: 令 $v = \\sin t$,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.289,
+            0.861,
+            0.747,
+            0.942
+          ],
+          "content": "\\begin{array}{l} \\int \\frac {\\mathrm{d} \\sin t}{1 - \\sin^ {2} t} = \\int \\frac {\\mathrm{d} v}{1 - v ^ {2}} = \\frac {1}{2} \\left(\\int \\frac {\\mathrm{d} v}{1 - v} + \\int \\frac {\\mathrm{d} v}{1 + v}\\right) \\\\ = \\frac {1}{2} \\ln \\left| \\frac {1 + v}{1 - v} \\right| + c. \\\\ \\end{array}",
+          "image_source": "images/page_268_equation_19.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 269,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.062,
+            0.059,
+            0.091,
+            0.07
+          ],
+          "content": "258"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.11,
+            0.057,
+            0.241,
+            0.071
+          ],
+          "content": "第八章 不定积分"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.108,
+            0.112,
+            0.432,
+            0.143
+          ],
+          "content": "注意到  $v = \\sin t = \\frac{x}{\\sqrt{a^{2} + x^{2}}}$ ，所以有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.237,
+            0.157,
+            0.734,
+            0.195
+          ],
+          "content": "\\frac {1 + v}{1 - v} = \\frac {1 + \\sin t}{1 - \\sin t} = \\frac {\\sqrt {a ^ {2} + x ^ {2}} + x}{\\sqrt {a ^ {2} + x ^ {2}} - x} = \\frac {1}{a ^ {2}} (x + \\sqrt {a ^ {2} + x ^ {2}}) ^ {2}.",
+          "image_source": "images/page_269_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.108,
+            0.208,
+            0.195,
+            0.224
+          ],
+          "content": "最后得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.32,
+            0.224,
+            0.649,
+            0.26
+          ],
+          "content": "\\int \\frac {\\mathrm{d} x}{\\sqrt {a ^ {2} + x ^ {2}}} = \\ln (x + \\sqrt {a ^ {2} + x ^ {2}}) + \\tilde {c},",
+          "image_source": "images/page_269_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.268,
+            0.728,
+            0.286
+          ],
+          "content": "其中  $\\tilde{c}$  是把原来不定积分中的任意常数 c 和 a 考虑进去后的一个常数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.203,
+            0.292,
+            0.819,
+            0.31
+          ],
+          "content": "注8.3.2 形式上与上例中的被积函数相近的还有如下几个不定积分:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.245,
+            0.321,
+            0.818,
+            0.358
+          ],
+          "content": "\\int \\frac {\\mathrm{d} x}{\\sqrt {a ^ {2} - x ^ {2}}}, \\quad \\int \\frac {\\mathrm{d} x}{\\sqrt {x ^ {2} - a ^ {2}}}, \\quad \\int \\sqrt {a ^ {2} \\pm x ^ {2}} \\mathrm{d} x, \\quad \\int \\sqrt {x ^ {2} - a ^ {2}} \\mathrm{d} x.",
+          "image_source": "images/page_269_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.204,
+            0.368,
+            0.668,
+            0.385
+          ],
+          "content": "它们都是重要的被积函数, 建议读者试试相应的计算."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.149,
+            0.42,
+            0.245,
+            0.439
+          ],
+          "level": 2,
+          "content": "习题8.3"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.465,
+            0.327,
+            0.481
+          ],
+          "content": "1. 求下列不定积分:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.149,
+            0.482,
+            0.349,
+            0.585
+          ],
+          "sub_type": "text",
+          "content": "(1) $\\int \\frac{\\mathrm{d}x}{1 + \\cos x}$;\n(3) $\\int \\frac{\\mathrm{d}x}{\\cos^3 x}$.\n(5) $\\int \\sin mx\\cos nx\\mathrm{d}x;$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.588,
+            0.327,
+            0.604
+          ],
+          "content": "2. 求下列不定积分:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.15,
+            0.605,
+            0.35,
+            0.783
+          ],
+          "sub_type": "text",
+          "content": "(1) $\\int \\frac{\\mathrm{d}x}{\\sqrt{x}(1 - x)};$\n(3) $\\int \\sin^3 x\\cos x\\mathrm{d}x;$\n(5) $\\int \\frac{\\mathrm{d}x}{\\sqrt{(x - a)(b - x)}};$\n(7) $\\int (a^2 - x^2)^{-\\frac{3}{2}} \\mathrm{~d}x;$\n(9) $\\int x^{5}(1 + x)^{-1}\\mathrm{d}x;$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.786,
+            0.327,
+            0.802
+          ],
+          "content": "3. 求下列不定积分:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.15,
+            0.804,
+            0.337,
+            0.941
+          ],
+          "sub_type": "text",
+          "content": "(1) $\\int x^{2} \\mathrm{e}^{-3x} \\, \\mathrm{d}x$;\n(3) $\\int x\\sin^{-2}x\\mathrm{d}x;$\n(5) $\\int \\sqrt{x(1 - x^3)}\\mathrm{d}x;$\n(7) $\\int x^{2}\\arctan x\\mathrm{d}x;$"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.518,
+            0.481,
+            0.741,
+            0.941
+          ],
+          "sub_type": "text",
+          "content": "(2) $\\int \\frac{\\mathrm{d}x}{1 + \\sin x}$;\n(4) $\\int \\frac{\\mathrm{d}x}{\\cos^4 x}$.\n(6) $\\int \\sin mx\\sin nx\\mathrm{d}x.$\n(2) $\\int x^{-\\frac{1}{2}} (1 + x)^{-1} \\, \\mathrm{d}x$;\n(4) $\\int \\frac{\\mathrm{d}x}{a^2\\sin^2 x + b^2\\cos^2 x}$;\n(6) $\\int (x^{2} + a^{2})^{-\\frac{3}{2}}\\mathrm{d}x;$\n(8) $\\int (\\arctan x)^2\\mathrm{d}x;$\n(10) $\\int \\frac{\\mathrm{d}x}{a\\sin x + b\\cos x}.$\n(2) $\\int \\cos (\\ln x)\\mathrm{d}x;$\n(4) $\\int x^{2}\\sin 2x\\mathrm{d}x;$\n(6) $\\int x^{2}\\arccos x\\mathrm{d}x;$\n(8) $\\int x^{2}(1 + x^{2})^{-2}\\mathrm{d}x;$"
+        }
+      ]
+    },
+    {
+      "page_idx": 270,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.597,
+            0.057,
+            0.896,
+            0.07
+          ],
+          "content": "8.4 几类能积出来的初等函数的不定积分"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.917,
+            0.058,
+            0.944,
+            0.069
+          ],
+          "content": "259"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.187,
+            0.11,
+            0.785,
+            0.253
+          ],
+          "sub_type": "text",
+          "content": "(9) $\\int x^{2}\\sqrt{a^{2} + x^{2}}\\mathrm{d}x;$\n(10) $\\int \\sin x\\ln (\\tan x)\\mathrm{d}x;$\n(11) $\\int \\arctan \\sqrt{x} \\, \\mathrm{d}x$;\n(12) $\\int \\sin^{-2} x \\ln (\\sin x) \\, \\mathrm{d}x$;\n(13) $\\int x^{-2}\\arcsin x\\mathrm{d}x;$\n(14) $\\int x\\ln \\left(\\frac{1 + x}{1 - x}\\right)\\mathrm{d}x;$\n(15) $\\int \\ln (x + \\sqrt{1 + x^2})\\mathrm{d}x.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.255,
+            0.636,
+            0.272
+          ],
+          "content": "4. 求下列不定积分的递推公式 (m, n 为非负整数):"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.272,
+            0.327,
+            0.304
+          ],
+          "content": "(1) $\\int \\sin^n x \\, \\mathrm{d}x$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.556,
+            0.272,
+            0.695,
+            0.304
+          ],
+          "content": "(2) $\\int \\cos^n x\\mathrm{d}x;$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.307,
+            0.338,
+            0.34
+          ],
+          "content": "(3) $\\int \\sin^{-n} x \\, \\mathrm{d}x$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.556,
+            0.307,
+            0.707,
+            0.34
+          ],
+          "content": "(4) $\\int \\cos^{-n} x \\, \\mathrm{d}x$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.343,
+            0.364,
+            0.376
+          ],
+          "content": "(5) $\\int (\\arcsin x)^n\\mathrm{d}x;$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.556,
+            0.343,
+            0.698,
+            0.376
+          ],
+          "content": "(6) $\\int (\\ln x)^n\\mathrm{d}x;$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.378,
+            0.317,
+            0.411
+          ],
+          "content": "(7) $\\int x^{n} \\mathrm{e}^{x} \\, \\mathrm{d}x$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.556,
+            0.378,
+            0.752,
+            0.411
+          ],
+          "content": "(8) $\\int \\sin^m x\\cos^n x\\mathrm{d}x;$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.413,
+            0.38,
+            0.447
+          ],
+          "content": "(9) $\\int x^{n}(1 + x)^{-1}\\mathrm{d}x.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.449,
+            0.378,
+            0.482
+          ],
+          "content": "5. 计算  $\\int xf''(x) \\, dx$ ."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.146,
+            0.527,
+            0.673,
+            0.549
+          ],
+          "level": 2,
+          "content": "8.4 几类能积出来的初等函数的不定积分"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.186,
+            0.6,
+            0.489,
+            0.619
+          ],
+          "level": 2,
+          "content": "8.4.1 有理函数的不定积分"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.645,
+            0.901,
+            0.684
+          ],
+          "content": "有理函数是为数不多的能确保积出来的函数类, 我们下面详细介绍一下有理函数类不定积分的求法."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.685,
+            0.901,
+            0.738
+          ],
+          "content": "首先, 所谓的有理函数是指形如 $f(x) = \\frac{P(x)}{Q(x)}$ 的函数, 其中 $P(x)$ 和 $Q(x)$ 均为实系数多项式. 利用多项式的带余除法, 我们总可以把它写成如下形式:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.388,
+            0.749,
+            0.66,
+            0.785
+          ],
+          "content": "f (x) = \\frac {P (x)}{Q (x)} = P _ {0} (x) + \\frac {P _ {1} (x)}{Q (x)},",
+          "image_source": "images/page_270_equation_25.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.8,
+            0.902,
+            0.912
+          ],
+          "content": "其中 $P_{0}(x)$ 和 $P_{1}(x)$ 为实系数多项式, 且 $P_{1}(x)$ 的次数低于 $Q(x)$ 的次数. 由于多项式 $P_{0}(x)$ 的不定积分很容易求得, 因此我们仅需考虑 $\\frac{P_{1}(x)}{Q(x)}$ 的不定积分. 所以下面我们不妨假设 $f(x) = \\frac{P(x)}{Q(x)}$ 已经是既约真分式的有理函数, 即 $P(x)$ 的次数严格低于 $Q(x)$ 的次数, 且两者互素."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.919,
+            0.902,
+            0.936
+          ],
+          "content": "下面的定理是代数学中的一个结论, 其证明不难在高等代数教科书中找到, 在此不"
+        }
+      ]
+    },
+    {
+      "page_idx": 271,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.058,
+            0.057,
+            0.087,
+            0.068
+          ],
+          "content": "260"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.105,
+            0.055,
+            0.238,
+            0.069
+          ],
+          "content": "第八章 不定积分"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.112,
+            0.573,
+            0.129
+          ],
+          "content": "再证明. 需要注意的是以下所有结论都是在实数域内."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.13,
+            0.658,
+            0.163
+          ],
+          "content": "定理 8.4.1 设  $f(x)=\\frac{P(x)}{Q(x)}$  是一个真分式有理函数, 则"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.165,
+            0.391,
+            0.182
+          ],
+          "content": "(1) $Q(x)$ 有不可约因子分解"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.178,
+            0.197,
+            0.781,
+            0.218
+          ],
+          "content": "Q (x) = (x - a _ {1}) ^ {k _ {1}} \\dots (x - a _ {r}) ^ {k _ {r}} (x ^ {2} + p _ {1} x + q _ {1}) ^ {\\ell_ {1}} \\dots (x ^ {2} + p _ {s} x + q _ {s}) ^ {\\ell_ {s}},",
+          "image_source": "images/page_271_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.234,
+            0.816,
+            0.254
+          ],
+          "content": "其中  $a_{i}, p_{j}, q_{j}$  为实数,  $k_{i}, \\ell_{j}$  为正整数,  $p_{j}^{2} - 4q_{j} < 0, i = 1, 2, \\cdots, r, j = 1, 2, \\cdots, s.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.258,
+            0.307,
+            0.276
+          ],
+          "content": "(2) $f(x)$ 有分解式"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.16,
+            0.283,
+            0.801,
+            0.443
+          ],
+          "content": "\\begin{array}{l} f (x) = \\frac {A _ {1 1}}{x - a _ {1}} + \\frac {A _ {1 2}}{(x - a _ {1}) ^ {2}} + \\dots + \\frac {A _ {1 k _ {1}}}{(x - a _ {1}) ^ {k _ {1}}} + \\dots + \\\\ \\frac {A _ {r 1}}{x - a _ {r}} + \\frac {A _ {r 2}}{(x - a _ {r}) ^ {2}} + \\dots + \\frac {A _ {r k _ {r}}}{(x - a _ {r}) ^ {k _ {r}}} + \\\\ \\frac {B _ {1 1} x + C _ {1 1}}{x ^ {2} + p _ {1} x + q _ {1}} + \\frac {B _ {1 2} x + C _ {1 2}}{(x ^ {2} + p _ {1} x + q _ {1}) ^ {2}} + \\dots + \\frac {B _ {1 \\ell_ {1}} x + C _ {1 \\ell_ {1}}}{(x ^ {2} + p _ {1} x + q _ {1}) ^ {\\ell_ {1}}} + \\dots + \\\\ \\frac {B _ {s 1} x + C _ {s 1}}{x ^ {2} + p _ {s} x + q _ {s}} + \\frac {B _ {s 2} x + C _ {s 2}}{(x ^ {2} + p _ {s} x + q _ {s}) ^ {2}} + \\dots + \\frac {B _ {s \\ell_ {s}} x + C _ {s \\ell_ {s}}}{(x ^ {2} + p _ {s} x + q _ {s}) ^ {\\ell_ {s}}}, \\\\ \\end{array}",
+          "image_source": "images/page_271_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.454,
+            0.531,
+            0.472
+          ],
+          "content": "其中所有参数  $A_{ij}, B_{ij}, C_{ij}$  均为唯一确定的实数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.476,
+            0.857,
+            0.517
+          ],
+          "content": "根据这个定理容易看出, 所求函数  $f(x)$  的不定积分本质上就是两类函数的不定积分的线性组合:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.265,
+            0.526,
+            0.695,
+            0.564
+          ],
+          "content": "\\frac {A}{(x - a) ^ {k}}, \\qquad \\frac {B x + C}{(x ^ {2} + p x + q) ^ {\\ell}}, \\quad \\text {其中} p ^ {2} - 4 q <   0.",
+          "image_source": "images/page_271_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.576,
+            0.427,
+            0.592
+          ],
+          "content": "所以, 我们只需处理这两类积分即可."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.593,
+            0.68,
+            0.627
+          ],
+          "content": "首先, 对于不定积分  $\\int\\frac{A}{(x-a)^{k}}\\mathrm{d}x\\ (k\\in\\mathbb{N})$ , 易见有如下结果:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.63,
+            0.284,
+            0.646
+          ],
+          "content": "(1) 当 k = 1 时,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.344,
+            0.644,
+            0.614,
+            0.679
+          ],
+          "content": "\\int \\frac {A}{(x - a) ^ {k}} \\mathrm{d} x = \\ln | x - a | + c.",
+          "image_source": "images/page_271_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.688,
+            0.284,
+            0.705
+          ],
+          "content": "(2) 当 k > 1 时,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.312,
+            0.714,
+            0.646,
+            0.751
+          ],
+          "content": "\\int \\frac {A}{(x - a) ^ {k}} \\mathrm{d} x = \\frac {1}{1 - k} (x - a) ^ {1 - k} + c.",
+          "image_source": "images/page_271_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.762,
+            0.729,
+            0.799
+          ],
+          "content": "其次, 对于不定积分  $\\int\\frac{Bx+C}{(x^{2}+px+q)^{\\ell}}\\mathrm{d}x\\ (\\ell\\in\\mathbb{N})$ , 我们作如下处理:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.283,
+            0.81,
+            0.675,
+            0.845
+          ],
+          "content": "x ^ {2} + p x + q = \\left(x + \\frac {p}{2}\\right) ^ {2} + q - \\frac {p ^ {2}}{4} = u ^ {2} + \\mu^ {2},",
+          "image_source": "images/page_271_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.858,
+            0.455,
+            0.891
+          ],
+          "content": "其中 $u = x + \\frac{p}{2},\\mu^2 = q - \\frac{p^2}{4}$ .这样一来，"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.159,
+            0.903,
+            0.798,
+            0.941
+          ],
+          "content": "\\int \\frac {B x + C}{(x ^ {2} + p x + q) ^ {\\ell}} \\mathrm{d} x = B \\int \\frac {u}{(u ^ {2} + \\mu^ {2}) ^ {\\ell}} \\mathrm{d} u + \\left(C - \\frac {B p}{2}\\right) \\int \\frac {1}{(u ^ {2} + \\mu^ {2}) ^ {\\ell}} \\mathrm{d} u.",
+          "image_source": "images/page_271_equation_21.jpg"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "created_at": "2025-11-20T03:44:46+08:00",
+      "modified_at": "2025-11-20T03:47:17+08:00",
+      "page_count": 856,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 256,
+          "width_pt": 509.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 257,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 258,
+          "width_pt": 509.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 259,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 260,
+          "width_pt": 509.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 261,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 262,
+          "width_pt": 509.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 263,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 264,
+          "width_pt": 509.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 265,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 266,
+          "width_pt": 509.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 267,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 268,
+          "width_pt": 509.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 269,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 270,
+          "width_pt": 509.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 271,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

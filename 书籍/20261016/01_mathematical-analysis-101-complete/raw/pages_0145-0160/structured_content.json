@@ -1,0 +1,3371 @@
+{
+  "pages": [
+    {
+      "page_idx": 144,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.055,
+            0.054,
+            0.084,
+            0.065
+          ],
+          "content": "132"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.102,
+            0.052,
+            0.25,
+            0.067
+          ],
+          "content": "第六章 导数与微分"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.194,
+            0.109,
+            0.853,
+            0.201
+          ],
+          "content": "注6.1.1 可以看出, 一个函数在给定点的导数本质上是由此函数在该点诱导出的差商的极限来定义的. 因此, 我们这里再次看到了极限的工具地位, 故可以用极限的 $\\varepsilon - \\delta$ 语言来描述函数的可导性: 如果存在实数 $A \\in \\mathbb{R}$, 使得 $\\forall \\varepsilon > 0$, 都存在 $\\delta > 0$, 当 $0 < |x - x_0| < \\delta$ 时, 成立"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.42,
+            0.211,
+            0.85,
+            0.248
+          ],
+          "content": "\\left| \\frac {f (x) - f (x _ {0})}{x - x _ {0}} - A \\right| <   \\varepsilon , \\tag {6.1.3}",
+          "image_source": "images/page_144_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.195,
+            0.258,
+            0.604,
+            0.276
+          ],
+          "content": "则称  $f(x)$  在点  $x_{0}$  处可导, 且导数值定义为 A."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.194,
+            0.283,
+            0.851,
+            0.324
+          ],
+          "content": "这样, 函数在某点的可导性问题就等价于上述极限的存在性问题, 而计算导数则变成了寻求 $A$ 的问题."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.335,
+            0.582,
+            0.353
+          ],
+          "content": "例 6.1.1 试求 R 上的常值函数  $f(x) \\equiv c$  的导数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.359,
+            0.304,
+            0.376
+          ],
+          "content": "解 $\\forall x_0\\in \\mathbb{R}$ ，由于"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.306,
+            0.384,
+            0.849,
+            0.42
+          ],
+          "content": "\\lim _ {x \\to x _ {0}} \\frac {f (x) - f (x _ {0})}{x - x _ {0}} = \\lim _ {x \\to x _ {0}} \\frac {c - c}{x - x _ {0}} \\equiv 0, \\tag {6.1.4}",
+          "image_source": "images/page_144_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.426,
+            0.143,
+            0.442
+          ],
+          "content": "所以"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.443,
+            0.45,
+            0.848,
+            0.468
+          ],
+          "content": "c ^ {\\prime} = 0. \\tag {6.1.5}",
+          "image_source": "images/page_144_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.096,
+            0.479,
+            0.851,
+            0.521
+          ],
+          "content": "这一结论显然符合我们当初引入导数时的预期: 一个取值不变的函数其变化率应该恒为零. 后面我们还能证明, 如果一个函数, 其变化率处处为零, 那么它就是个常值函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.526,
+            0.714,
+            0.544
+          ],
+          "content": "例 6.1.2 设 n > 0 为正整数, 试求  $f(x) = x^{n}$  在点  $x_{0}$  处的导数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.55,
+            0.324,
+            0.567
+          ],
+          "content": "解 $\\forall x_0\\in \\mathbb{R}$ ，我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.319,
+            0.578,
+            0.629,
+            0.658
+          ],
+          "content": "\\begin{array}{l} \\frac {\\Delta y}{\\Delta x} = \\frac {x ^ {n} - x _ {0} ^ {n}}{x - x _ {0}} \\\\ = x ^ {n - 1} + x ^ {n - 2} x _ {0} + \\dots + x _ {0} ^ {n - 1}. \\\\ \\end{array}",
+          "image_source": "images/page_144_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.671,
+            0.143,
+            0.687
+          ],
+          "content": "因此"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.35,
+            0.687,
+            0.848,
+            0.719
+          ],
+          "content": "f ^ {\\prime} (x _ {0}) = \\lim _ {x \\to x _ {0}} \\frac {\\Delta y}{\\Delta x} = n x _ {0} ^ {n - 1}. \\tag {6.1.6}",
+          "image_source": "images/page_144_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.096,
+            0.724,
+            0.614,
+            0.741
+          ],
+          "content": "由于  $x_{0}$  的一般性, 在不强调  $x_{0}$  时, 我们也常常把上式写成"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.406,
+            0.757,
+            0.848,
+            0.776
+          ],
+          "content": "(x ^ {n}) ^ {\\prime} = n x ^ {n - 1}. \\tag {6.1.7}",
+          "image_source": "images/page_144_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.791,
+            0.616,
+            0.808
+          ],
+          "content": "完全类似地不难得到, 对于负整数 n, 当 x > 0 时, 也有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.406,
+            0.824,
+            0.848,
+            0.843
+          ],
+          "content": "(x ^ {n}) ^ {\\prime} = n x ^ {n - 1}. \\tag {6.1.8}",
+          "image_source": "images/page_144_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.858,
+            0.85,
+            0.9
+          ],
+          "content": "如果把例 6.1.1 中的常值函数看成是例 6.1.2 中 n = 0 的情况, 并将 (6.1.7) 式右端理解成 0 的话, 那么我们可以把关系式 (6.1.5), (6.1.7), (6.1.8) 合并为统一的表达式."
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.405,
+            0.915,
+            0.539,
+            0.934
+          ],
+          "content": "(x ^ {n}) ^ {\\prime} = n x ^ {n - 1}.",
+          "image_source": "images/page_144_equation_22.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 145,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.728,
+            0.056,
+            0.899,
+            0.07
+          ],
+          "content": "6.1 导数的引入与定义"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.919,
+            0.057,
+            0.947,
+            0.069
+          ],
+          "content": "133"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.112,
+            0.654,
+            0.13
+          ],
+          "content": "这里我们默认当 $n < 0$ 时, 仅讨论当 $x > 0$ 时函数的情况."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.136,
+            0.685,
+            0.154
+          ],
+          "content": "例 6.1.3 设  $f(x)=|x|$ . 证明  $f(x)$  在  $x_{0}=0$  处不可导."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.16,
+            0.447,
+            0.177
+          ],
+          "content": "证明 注意到当 $x > 0$ 时, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.384,
+            0.188,
+            0.666,
+            0.222
+          ],
+          "content": "\\lim _ {x \\to 0 ^ {+}} \\frac {f (x) - f (0)}{x - 0} = \\lim _ {x \\to 0 ^ {+}} \\frac {x}{x} = 1",
+          "image_source": "images/page_145_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.234,
+            0.307,
+            0.251
+          ],
+          "content": "而当 $x < 0$ 时, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.366,
+            0.248,
+            0.684,
+            0.283
+          ],
+          "content": "\\lim _ {x \\to 0 ^ {-}} \\frac {f (x) - f (0)}{x - 0} = \\lim _ {x \\to 0 ^ {-}} \\frac {- x}{x} = - 1,",
+          "image_source": "images/page_145_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.293,
+            0.764,
+            0.326
+          ],
+          "content": "所以极限  $\\lim_{x\\to0}\\frac{f(x)-f(0)}{x-0}$  不存在, 因此函数  $f(x)$  在  $x_{0}=0$  处不可导."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.325,
+            0.565,
+            0.342
+          ],
+          "content": "完全类似地可以证明如下稍微一般的结论:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.348,
+            0.531,
+            0.365
+          ],
+          "content": "例6.1.4 设 $k_{1} \\neq k_{2}$, 则“折线”函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.382,
+            0.381,
+            0.658,
+            0.433
+          ],
+          "content": "f (x) = \\left\\{ \\begin{array}{l l} k _ {1} (x - x _ {0}), & x \\leqslant x _ {0}, \\\\ k _ {2} (x - x _ {0}), & x \\geqslant x _ {0} \\end{array} \\right.",
+          "image_source": "images/page_145_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.152,
+            0.448,
+            0.414,
+            0.466
+          ],
+          "content": "在折点 $x = x_0$ 处是不可导的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.471,
+            0.905,
+            0.584
+          ],
+          "content": "这一结论符合我们对上述函数在点 $x_0$ 处没切线的直觉:函数在点 $x_0$ 处因为“急转弯”而产生一个“尖点”，哪怕它在“尖点处”连续，也不意味着可导。需要注意的是，这仅仅是几何直觉而非逻辑证明。另一方面，下面的例子告诉我们，一个看似很糟糕的函数，仅在一个点连续，在此点它竟然是可导的（换个角度说，一个函数即使在一点可导，也不能保证存在一个哪怕是充分小的邻域，使得函数在此邻域内连续）。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.191,
+            0.59,
+            0.399,
+            0.607
+          ],
+          "content": "例6.1.5 试讨论函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.281,
+            0.619,
+            0.903,
+            0.673
+          ],
+          "content": "f _ {1} (x) = \\left\\{ \\begin{array}{l l} x, & x \\in \\mathbb {Q}, \\\\ - x, & x \\notin \\mathbb {Q}, \\end{array} \\right. \\quad f _ {2} (x) = \\left\\{ \\begin{array}{l l} x ^ {2}, & x \\in \\mathbb {Q}, \\\\ - x ^ {2}, & x \\notin \\mathbb {Q} \\end{array} \\right. \\tag {6.1.9}",
+          "image_source": "images/page_145_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.688,
+            0.528,
+            0.706
+          ],
+          "content": "在 x = 0 处的可导性, 如果可导, 求其导数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.191,
+            0.711,
+            0.672,
+            0.73
+          ],
+          "content": "解 根据导数的定义, 考虑 ${f}_{1}\\left( x\\right)$ 在 0 点处差商的极限"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.364,
+            0.744,
+            0.683,
+            0.798
+          ],
+          "content": "\\lim _ {x \\to 0} \\frac {f _ {1} (x) - f _ {1} (0)}{x - 0} = \\left\\{ \\begin{array}{l l} 1, & x \\in \\mathbb {Q}, \\\\ - 1, & x \\notin \\mathbb {Q}, \\end{array} \\right.",
+          "image_source": "images/page_145_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.812,
+            0.72,
+            0.844
+          ],
+          "content": "所以极限 $\\lim_{x\\to 0}\\frac{f_1(x) - f_1(0)}{x - 0}$ 不存在.即 $f_{1}(x)$ 在 $x = 0$ 处不可导"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.193,
+            0.844,
+            0.493,
+            0.861
+          ],
+          "content": "另一方面, 根据定义直接计算可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.428,
+            0.872,
+            0.629,
+            0.907
+          ],
+          "content": "\\lim _ {x \\to 0} \\frac {f _ {2} (x) - f _ {2} (0)}{x - 0} = 0.",
+          "image_source": "images/page_145_equation_21.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.918,
+            0.885,
+            0.937
+          ],
+          "content": "所以  $f_{2}(x)$  在 x=0 处可导, 且  $f_{2}^{\\prime}(0)=0$ . 即由函数给出的“曲线”在原点处有切线."
+        }
+      ]
+    },
+    {
+      "page_idx": 146,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.055,
+            0.057,
+            0.083,
+            0.068
+          ],
+          "content": "134"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.102,
+            0.055,
+            0.248,
+            0.069
+          ],
+          "content": "第六章 导数与微分"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.113,
+            0.853,
+            0.249
+          ],
+          "content": "这里曲线二字上的引号是在暗示这些函数的图形实在不像通俗意义下的曲线, 因为看起来它的连续性实在太糟糕了. 然而即使如此, $f_{2}(x)$ 在 $x = 0$ 处竟然有“切线”. 与之对应的是 $f_{1}(x)$, 它的定义方式看起来和 $f_{2}(x)$ “同宗同族”, 但是它在 $x = 0$ 处却无法定义出切线. 完全类似地不难证明下面的函数在 $x = 0$ 处都是可导的. 因此, 我们建议读者从 Leibniz 当初引入切线的原始思想和做法出发, 充分体会这些函数可导与不可导的本质, 这对我们理解导数和构造更多的例子或反例颇有益处, 对导数的推广也很有启发."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.254,
+            0.329,
+            0.272
+          ],
+          "content": "对于 $k_{1}, k_{2} \\in \\mathbb{R}$, 函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.188,
+            0.281,
+            0.849,
+            0.333
+          ],
+          "content": "g _ {1} (x) = \\left\\{ \\begin{array}{l l} k _ {1} x ^ {2}, & x \\in \\mathbb {Q}, \\\\ k _ {2} x ^ {2}, & x \\notin \\mathbb {Q}, \\end{array} \\right. \\quad g _ {2} (x) = \\left\\{ \\begin{array}{l l} k _ {1} x ^ {2}, & x \\leqslant 0, \\\\ k _ {2} x ^ {2}, & x \\geqslant 0 \\end{array} \\right. \\tag {6.1.10}",
+          "image_source": "images/page_146_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.343,
+            0.31,
+            0.359
+          ],
+          "content": "在 $x = 0$ 处都是可导的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.366,
+            0.412,
+            0.383
+          ],
+          "content": "我们给出个稍微一般些的例子."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.39,
+            0.406,
+            0.406
+          ],
+          "content": "例 6.1.6 考察逐段二次函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.295,
+            0.415,
+            0.85,
+            0.512
+          ],
+          "content": "G (x) = \\left\\{ \\begin{array}{l l} \\frac {1}{2} x ^ {2}, & x \\leqslant 0, \\\\ x ^ {2}, & x \\in (0, 1), \\\\ - \\frac {1}{2} x ^ {2} + 3 x - \\frac {3}{2}, & x \\geqslant 1 \\end{array} \\right. \\tag {6.1.11}",
+          "image_source": "images/page_146_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.52,
+            0.269,
+            0.536
+          ],
+          "content": "的导函数的存在性."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.543,
+            0.807,
+            0.56
+          ],
+          "content": "解 根据导数的定义, 通过直接计算可以得到函数 $G(x)$ 的导函数 (见图6.2)"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.297,
+            0.573,
+            0.85,
+            0.643
+          ],
+          "content": "g (x) = G ^ {\\prime} (x) = \\left\\{ \\begin{array}{l l} x, & x \\leqslant 0, \\\\ 2 x, & x \\in (0, 1), \\\\ - x + 3, & x \\geqslant 1, \\end{array} \\right. \\tag {6.1.12}",
+          "image_source": "images/page_146_equation_11.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.161,
+            0.667,
+            0.788,
+            0.826
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.361,
+                0.833,
+                0.585,
+                0.849
+              ],
+              "content": "图6.2 例6.1.6中的函数"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_146_image_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.096,
+            0.87,
+            0.853,
+            0.937
+          ],
+          "content": "可以看出, $G(x)$ 在视觉上给出的曲线还算得上是一条光滑曲线, 其导函数 $g(x)$ 所表示的曲线已经是条“折线”了. 如果反过来看这个问题的话, 可以概括为: 一条由逐段线性函数给出的折线, 可以由一条逐段为二次函数的导函数生成. 我们特别指出, $G(x)$ 与"
+        }
+      ]
+    },
+    {
+      "page_idx": 147,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.73,
+            0.054,
+            0.901,
+            0.068
+          ],
+          "content": "6.1 导数的引入与定义"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.921,
+            0.055,
+            0.949,
+            0.067
+          ],
+          "content": "135"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.109,
+            0.905,
+            0.175
+          ],
+          "continues_prev": true,
+          "content": "$g(x)$  之间的关系在后续章节中将多次应用: 比如函数逼近、连续函数原函数的存在性, 等等. 鉴于此, 我们不厌其烦地再把此例一般化如下, 证明方法完全等同于上例, 不再赘述."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.18,
+            0.906,
+            0.247
+          ],
+          "content": "例 6.1.7 设  $G(x)$  是在  $[a, b]$  上由逐段抛物线给出的函数, 如果在两段抛物线的衔接处是可导的, 那么  $g(x) = G'(x)$  是  $[a, b]$  上的逐段线性函数. 即设  $a = x_{0} < x_{1} < x_{2} < \\cdots < x_{n} < x_{n+1} = b$ ,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.255,
+            0.252,
+            0.79,
+            0.382
+          ],
+          "content": "G (x) = \\left\\{ \\begin{array}{l l} A _ {0} + a _ {0} (x - x _ {0}) + \\frac {1}{2} b _ {0} (x - x _ {0}) ^ {2}, & x \\in [ x _ {0}, x _ {1}), \\\\ A _ {1} + a _ {1} (x - x _ {1}) + \\frac {1}{2} b _ {1} (x - x _ {1}) ^ {2}, & x \\in [ x _ {1}, x _ {2}), \\\\ \\dots , \\\\ A _ {n} + a _ {n} (x - x _ {n}) + \\frac {1}{2} b _ {n} (x - x _ {n}) ^ {2}, & x \\in [ x _ {n}, x _ {n + 1} ], \\end{array} \\right.",
+          "image_source": "images/page_147_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.152,
+            0.393,
+            0.302,
+            0.411
+          ],
+          "content": "其中  $A_{0}=G(a)$ ,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.196,
+            0.43,
+            0.903,
+            0.46
+          ],
+          "content": "a _ {k} = a _ {k - 1} + b _ {k - 1} (x _ {k} - x _ {k - 1}), \\quad k = 1, 2, \\dots , n, \\tag {6.1.13}",
+          "image_source": "images/page_147_equation_6.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.193,
+            0.452,
+            0.802,
+            0.484
+          ],
+          "content": "A _ {k} = A _ {k - 1} + a _ {k - 1} (x _ {k} - x _ {k - 1}) + \\frac {1}{2} b _ {k - 1} (x _ {k} - x _ {k - 1}) ^ {2}, \\quad k = 1, 2, \\dots , n.",
+          "image_source": "images/page_147_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.152,
+            0.496,
+            0.538,
+            0.515
+          ],
+          "content": "则  $G'(x)$  是  $[a, b]$  上的连续的逐段线性函数:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.305,
+            0.527,
+            0.741,
+            0.622
+          ],
+          "content": "g (x) = G ^ {\\prime} (x) = \\left\\{ \\begin{array}{l l} a _ {0} + b _ {0} (x - x _ {0}), & x \\in [ a, x _ {1}), \\\\ a _ {1} + b _ {1} (x - x _ {1}), & x \\in [ x _ {1}, x _ {2}), \\\\ \\dots , \\\\ a _ {n} + b _ {n} (x - x _ {n}), & x \\in [ x _ {n}, b ], \\end{array} \\right.",
+          "image_source": "images/page_147_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.634,
+            0.907,
+            0.676
+          ],
+          "content": "上面我们提到过圆的切线可描述为一条与圆周有且仅有一个交点的直线, 下面的例子告诉我们, 一条曲线在某点处的切线与曲线本身可能有非常复杂的交点."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.193,
+            0.682,
+            0.402,
+            0.699
+          ],
+          "content": "例6.1.8 试计算函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.403,
+            0.71,
+            0.907,
+            0.763
+          ],
+          "content": "f (x) = \\left\\{ \\begin{array}{l l} x ^ {2} \\sin \\frac {1}{x}, & x \\neq 0, \\\\ 0, & x = 0 \\end{array} \\right. \\tag {6.1.14}",
+          "image_source": "images/page_147_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.154,
+            0.775,
+            0.327,
+            0.792
+          ],
+          "content": "在 x = 0 处的导数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.798,
+            0.909,
+            0.864
+          ],
+          "content": "解 由定义直接计算可得 $f'(0) = 0$. 因此函数对应的曲线在 $(0,0)$ 处的切线与 $x$ 轴重合. 注意该切线在 $x = 0$ 的任意小邻域内都与曲线有无穷多个交点, 这在直观上与初等数学中圆的切线与圆周有且仅有一个交点有很大区别."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.193,
+            0.869,
+            0.731,
+            0.887
+          ],
+          "content": "我们以可导与连续之间的关系这一极其基本的性质结束本节."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.893,
+            0.909,
+            0.935
+          ],
+          "content": "定理 6.1.1 若  $f(x)$  在点  $x_{0}$  处可导, 则必有  $f(x)$  在点  $x_{0}$  处连续, 从而在点  $x_{0}$  附近有界, 即存在  $\\delta_{0} > 0$ , 使得  $f(x)$  在  $(x_{0} - \\delta_{0}, x_{0} + \\delta_{0})$  内有界."
+        }
+      ]
+    },
+    {
+      "page_idx": 148,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.053,
+            0.055,
+            0.081,
+            0.067
+          ],
+          "content": "136"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.099,
+            0.054,
+            0.248,
+            0.068
+          ],
+          "content": "第六章 导数与微分"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.11,
+            0.439,
+            0.129
+          ],
+          "content": "证明 设 $f(x)$ 在点 $x_0$ 处可导, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.195,
+            0.144,
+            0.752,
+            0.18
+          ],
+          "content": "\\lim _ {x \\to x _ {0}} f (x) - f (x _ {0}) = \\lim _ {x \\to x _ {0}} \\frac {f (x) - f (x _ {0})}{x - x _ {0}} (x - x _ {0}) = f ^ {\\prime} (x _ {0}) \\cdot 0 = 0.",
+          "image_source": "images/page_148_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.194,
+            0.312,
+            0.212
+          ],
+          "content": "即  $f(x)$  在点  $x_{0}$  处连续."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.217,
+            0.851,
+            0.424
+          ],
+          "content": "关于函数的连续与可导之间的关系, 在微积分发展历史上, 经历了较为漫长的时间才得以厘清. 人们很早就认识到可导蕴涵着连续, 也知道有 $y = |x|$ 这样的连续函数, “偶尔”会有一些不可导的点. 直到19世纪上半叶, 人们曾一度认为连续函数可导的点应该占主流, 包括Cauchy, Gauss①这些大数学家都持有这种观点, 因为很难想象一个有“很多”不可导点的连续函数会是什么样. Picard②曾这样评论道: 如果Newton和Leibniz知道了连续函数不一定可导, 微分学将无以产生. 这个错觉或误解被德国数学家Weierstrass在1872年所打破, 他构造性地证明了震惊数学界的结论: 存在处处连续处处不可导的函数. 目前我们暂时了解可导与连续的逻辑关系, 在后面章节再系统讨论这方面的内容."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.139,
+            0.451,
+            0.23,
+            0.471
+          ],
+          "level": 2,
+          "content": "习题6.1"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.097,
+            0.496,
+            0.848,
+            0.633
+          ],
+          "sub_type": "text",
+          "content": "1. 变速直线运动可以看作是匀速直线运动的一般化, 进而我们引入了质点作变速直线运动的瞬时速度. 思考一下, 我们为何不直接引入更一般情况的变速曲线运动的瞬时速度?\n2. 考虑如下意义下的“尺规作图”:假设给出了一个没有刻度的直角坐标系，给出了坐标系下函数的图像，并被告知是 $y = f(x)$ 的图像。试用尺规作出曲线上的点 $P_0(x_0, f(x_0))$ 处的切线，其中 $f(x)$ 分别为"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.135,
+            0.638,
+            0.567,
+            0.778
+          ],
+          "sub_type": "text",
+          "content": "(1) $f(x)=x^{k}$ ，其中 k 是整数，特别地 k=-1;\n(2) 尺规作出椭圆  $\\frac{x^{2}}{a^{2}} + \\frac{y^{2}}{b^{2}} = 1$  上一点处的切线;\n(3)  $f(x) = \\sin x;$\n(4) $f(x) = \\tan x;$\n(5) $f(x)=\\mathrm{e}^{x};$\n(6) $f(x)=\\ln x.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.784,
+            0.444,
+            0.802
+          ],
+          "content": "3. 设 $f(x)$ 在点 $x_0$ 处可导, 求极限"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.35,
+            0.816,
+            0.591,
+            0.851
+          ],
+          "content": "\\lim _ {h \\to 0} \\frac {f (x _ {0} + h) - f (x _ {0} - h)}{h}.",
+          "image_source": "images/page_148_equation_18.jpg"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.094,
+            0.884,
+            0.848,
+            0.917
+          ],
+          "content": "① Gauss, Johann Carl Friedrich, 1777 年 4 月 30 日 — 1855 年 2 月 23 日, 德国数学家、物理学家、天文学家、几何学家、大地测量学家."
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.126,
+            0.92,
+            0.717,
+            0.934
+          ],
+          "content": "② Picard, Charles Emile, 1856 年 7 月 24 日 — 1941 年 12 月 11 日, 法国数学家."
+        }
+      ]
+    },
+    {
+      "page_idx": 149,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.622,
+            0.055,
+            0.899,
+            0.069
+          ],
+          "content": "6.2 单侧导数 Dini 导数 更多的导数"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.92,
+            0.056,
+            0.947,
+            0.068
+          ],
+          "content": "137"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.111,
+            0.463,
+            0.129
+          ],
+          "content": "4. 设 $f(x)$ 在 $x = 0$ 处连续, 且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.423,
+            0.147,
+            0.623,
+            0.181
+          ],
+          "content": "\\lim _ {x \\to 0} \\frac {f (2 x) - f (x)}{x} = k.",
+          "image_source": "images/page_149_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.197,
+            0.291,
+            0.214
+          ],
+          "content": "证明:  $f'(0) = k.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.219,
+            0.9,
+            0.261
+          ],
+          "content": "5. 证明: 可导偶函数的导数为奇函数, 可导奇函数的导数为偶函数, 可导周期函数的导数仍为周期函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.267,
+            0.902,
+            0.332
+          ],
+          "content": "6. 如果曲线 $\\Gamma: y = F(x)$ 在 $x = x_0$ 处有斜率为 $k$ 的切线 $\\ell$, 那么将 $\\Gamma$ 沿着 $x$ 轴平移 $c$ 得到曲线 $\\Gamma_c: y = F(x + c)$. 证明: $\\Gamma_c$ 在 $x = x_0 + c$ 处也有斜率为 $k$ 的切线 $\\ell_c$, 并写出 $\\ell_c$ 的方程."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.338,
+            0.392,
+            0.357
+          ],
+          "content": "7. 设  $g(0)=g'(0)=0,$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.4,
+            0.371,
+            0.65,
+            0.432
+          ],
+          "content": "f (x) = \\left\\{ \\begin{array}{l l} g (x) \\sin \\frac {1}{x}, & x \\neq 0, \\\\ 0, & x = 0. \\end{array} \\right.",
+          "image_source": "images/page_149_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.447,
+            0.228,
+            0.464
+          ],
+          "content": "求  $f'(0)$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.47,
+            0.692,
+            0.488
+          ],
+          "content": "8. 设 $f$ 是定义在 $\\mathbb{R}$ 上的函数, 且对任何 $x_{1}, x_{2} \\in \\mathbb{R}$, 都有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.407,
+            0.507,
+            0.644,
+            0.526
+          ],
+          "content": "f (x _ {1} + x _ {2}) = f (x _ {1}) \\cdot f (x _ {2}).",
+          "image_source": "images/page_149_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.543,
+            0.481,
+            0.561
+          ],
+          "content": "若 $f'(0) = 1$ ，证明对任何 $x \\in \\mathbb{R}$，都有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.466,
+            0.58,
+            0.586,
+            0.599
+          ],
+          "content": "f ^ {\\prime} (x) = f (x).",
+          "image_source": "images/page_149_equation_13.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.149,
+            0.648,
+            0.643,
+            0.671
+          ],
+          "level": 2,
+          "content": "6.2 单侧导数 Dini 导数 更多的导数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.719,
+            0.905,
+            0.761
+          ],
+          "content": "本节我们讨论一下导数的推广. 这些概念的推广大多数都是极其自然的, 是基于在引入经典导数时对涉及的最基本要素的本质挖掘."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.189,
+            0.79,
+            0.371,
+            0.81
+          ],
+          "level": 2,
+          "content": "6.2.1 单侧导数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.836,
+            0.719,
+            0.854
+          ],
+          "content": "类似于单侧极限, 我们也可以讨论函数在一点处的单侧导数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.861,
+            0.905,
+            0.901
+          ],
+          "content": "定义 6.2.1 (左侧可导) 设函数  $y = f(x)$  在  $(x_{0} - \\delta, x_{0}] (\\delta > 0)$  上有定义, 如果单侧极限"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.406,
+            0.904,
+            0.903,
+            0.937
+          ],
+          "content": "\\lim _ {\\Delta x \\to 0 ^ {-}} \\frac {f (x _ {0} + \\Delta x) - f (x _ {0})}{\\Delta x} \\tag {6.2.1}",
+          "image_source": "images/page_149_equation_19.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 150,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.055,
+            0.055,
+            0.083,
+            0.065
+          ],
+          "content": "138"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.102,
+            0.053,
+            0.25,
+            0.067
+          ],
+          "content": "第六章 导数与微分"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.11,
+            0.853,
+            0.152
+          ],
+          "content": "存在且有限, 则称 $f(x)$ 在点 $x_0$ 处左侧可导, 或简称左可导, 并称其极限值为 $f(x)$ 在点 $x_0$ 处的左导数, 记为 $f_{-}^{\\prime}(x_0)$ 或 $y_{-}^{\\prime}(x_0)$, 即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.315,
+            0.172,
+            0.849,
+            0.203
+          ],
+          "content": "f _ {-} ^ {\\prime} (x _ {0}) = \\lim _ {\\Delta x \\to 0 ^ {-}} \\frac {f (x _ {0} + \\Delta x) - f (x _ {0})}{\\Delta x}. \\tag {6.2.2}",
+          "image_source": "images/page_150_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.218,
+            0.747,
+            0.236
+          ],
+          "content": "类似地我们可以定义函数 $f(x)$ 在点 $x_0$ 处的右侧可导以及右导数，即"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.242,
+            0.851,
+            0.281
+          ],
+          "content": "定义 6.2.2 (右侧可导) 设函数  $y = f(x)$  在  $[x_{0}, x_{0} + \\delta) (\\delta > 0)$  上有定义, 如果单侧极限"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.36,
+            0.285,
+            0.849,
+            0.316
+          ],
+          "content": "\\lim _ {\\Delta x \\to 0 ^ {+}} \\frac {f (x _ {0} + \\Delta x) - f (x _ {0})}{\\Delta x} \\tag {6.2.3}",
+          "image_source": "images/page_150_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.326,
+            0.851,
+            0.368
+          ],
+          "content": "存在且有限, 则称 $f(x)$ 在点 $x_0$ 处右侧可导, 或简称右可导, 并称其极限值为 $f(x)$ 在点 $x_0$ 处的右导数, 记为 $f_{+}^{\\prime}(x_0)$ 或 $y_{+}^{\\prime}(x_0)$, 即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.315,
+            0.387,
+            0.849,
+            0.419
+          ],
+          "content": "f _ {+} ^ {\\prime} (x _ {0}) = \\lim _ {\\Delta x \\to 0 ^ {+}} \\frac {f (x _ {0} + \\Delta x) - f (x _ {0})}{\\Delta x}. \\tag {6.2.4}",
+          "image_source": "images/page_150_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.434,
+            0.431,
+            0.451
+          ],
+          "content": "左导数、右导数统称为单侧导数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.458,
+            0.851,
+            0.476
+          ],
+          "content": "有了单侧导数的概念后, 当我们说函数 $f(x)$ 在闭区间 $[a, b]$ 上可导时, 则是指函数"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.14,
+            0.484,
+            0.547,
+            0.525
+          ],
+          "sub_type": "text",
+          "content": "(1) 在区间内部的点处均可导;\n(2) 在区间端点 $a$ 和 $b$ 处分别右可导和左可导."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.532,
+            0.606,
+            0.549
+          ],
+          "content": "由上面两点结合下面的例子, 我们有如下观察和结论:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.139,
+            0.556,
+            0.767,
+            0.599
+          ],
+          "sub_type": "text",
+          "content": "(1) 如果 $f$ 在区间 $[a, b]$ 上可导, 那么 $f$ 在 $[a, b]$ 的任何子区间上也可导;\n(2) 即使 $f$ 在区间 $[a, b]$ 和 $[b, c]$ 上均可导, $f$ 在 $[a, c]$ 上也不一定可导."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.604,
+            0.851,
+            0.645
+          ],
+          "content": "例 6.2.1 考虑例 6.1.3 中的函数  $f(x)=|x|$ . 我们知它在 0 点处不可导. 但可以看出在 x=0 处, 函数是左可导和右可导的, 且  $f(x)$  在 0 点的左、右导数分别为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.357,
+            0.666,
+            0.595,
+            0.685
+          ],
+          "content": "f _ {-} ^ {\\prime} (0) = - 1, \\quad f _ {+} ^ {\\prime} (0) = 1.",
+          "image_source": "images/page_150_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.705,
+            0.851,
+            0.746
+          ],
+          "content": "回顾和对比极限 (6.1.2) 存在的充要条件是两个单侧极限 (6.2.1) 和 (6.2.3) 存在且相等. 对于单侧导数, 我们有以下类似的结论:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.752,
+            0.851,
+            0.794
+          ],
+          "content": "定理 6.2.1 设函数  $f(x)$  在点  $x_{0}$  附近有定义. 则  $f(x)$  在该点可导的充要条件是其两个单侧导数都存在且相等, 即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.401,
+            0.815,
+            0.55,
+            0.835
+          ],
+          "content": "f _ {-} ^ {\\prime} (x _ {0}) = f _ {+} ^ {\\prime} (x _ {0}).",
+          "image_source": "images/page_150_equation_22.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.855,
+            0.163,
+            0.871
+          ],
+          "content": "此时有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.362,
+            0.88,
+            0.59,
+            0.9
+          ],
+          "content": "f ^ {\\prime} (x _ {0}) = f _ {-} ^ {\\prime} (x _ {0}) = f _ {+} ^ {\\prime} (x _ {0}).",
+          "image_source": "images/page_150_equation_24.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.915,
+            0.806,
+            0.933
+          ],
+          "content": "单侧导数作为导数的一种推广, 在讨论函数在某点处的单侧性质时非常有用."
+        }
+      ]
+    },
+    {
+      "page_idx": 151,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.622,
+            0.055,
+            0.901,
+            0.07
+          ],
+          "content": "6.2 单侧导数 Dini 导数 更多的导数"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.92,
+            0.057,
+            0.947,
+            0.069
+          ],
+          "content": "139"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.111,
+            0.314,
+            0.128
+          ],
+          "content": "例6.2.2 设"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.4,
+            0.128,
+            0.637,
+            0.183
+          ],
+          "content": "f (x) = \\left\\{ \\begin{array}{l l} x \\sin \\frac {1}{x}, & x <   0, \\\\ x, & x \\geqslant 0. \\end{array} \\right.",
+          "image_source": "images/page_151_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.193,
+            0.454,
+            0.21
+          ],
+          "content": "试讨论  $f(x)$  在 0 点处的单侧导数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.216,
+            0.381,
+            0.234
+          ],
+          "content": "解 当 $x \\to 0^{+}$ 时, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.424,
+            0.227,
+            0.622,
+            0.262
+          ],
+          "content": "\\lim _ {x \\to 0 ^ {+}} \\frac {f (x) - f (0)}{x} = 1.",
+          "image_source": "images/page_151_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.264,
+            0.289,
+            0.282
+          ],
+          "content": "因此 $f_{+}^{\\prime}(0) = 1$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.288,
+            0.343,
+            0.305
+          ],
+          "content": "当 $x \\to 0^{-}$ 时, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.384,
+            0.298,
+            0.664,
+            0.333
+          ],
+          "content": "\\lim _ {x \\to 0 ^ {-}} \\frac {f (x) - f (0)}{x} = \\lim _ {x \\to 0 ^ {-}} \\sin \\frac {1}{x}.",
+          "image_source": "images/page_151_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.335,
+            0.546,
+            0.353
+          ],
+          "content": "极限不存在, 因此  $f(x)$  在 0 点左导数不存在."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.354,
+            0.905,
+            0.47
+          ],
+          "content": "注意到经典导数的本质是通过考虑函数变化率 $\\frac{\\Delta y}{\\Delta x}$ 的极限来研究函数, 自然我们也可以重新审视函数变化率的其他引入方式, 比如上面讨论的单侧导数就是只关注一点处函数左侧或右侧的变化率的极限. 类似地, 我们也可只关注函数变化率的上下极限、左右极限, 或者它们的组合, 从而可以引入各种各样特定的导数. 下面的 Dini① 导数就是其中的一种."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.186,
+            0.498,
+            0.379,
+            0.518
+          ],
+          "level": 2,
+          "content": "6.2.2 Dini 导数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.543,
+            0.385,
+            0.56
+          ],
+          "content": "Dini 导数的定义如下:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.567,
+            0.592,
+            0.586
+          ],
+          "content": "定义 6.2.3 设  $f(x)$  在点  $x_{0}$  附近有定义, 令"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.192,
+            0.596,
+            0.901,
+            0.676
+          ],
+          "content": "\\begin{array}{l} D ^ {+} f (x _ {0}) = \\varlimsup_ {\\Delta x \\to x _ {0} ^ {+}} \\frac {f (x) - f (x _ {0})}{x - x _ {0}}, \\quad D _ {+} f (x _ {0}) = \\varliminf_ {\\Delta x \\to x _ {0} ^ {+}} \\frac {f (x) - f (x _ {0})}{x - x _ {0}}, \\\\ D ^ {-} f (x _ {0}) = \\varlimsup_ {\\Delta x \\to x _ {0} ^ {-}} \\frac {f (x) - f (x _ {0})}{x - x _ {0}}, \\quad D _ {-} f (x _ {0}) = \\varliminf_ {\\Delta x \\to x _ {0} ^ {-}} \\frac {f (x) - f (x _ {0})}{x - x _ {0}}, \\tag {6.2.5} \\\\ \\end{array}",
+          "image_source": "images/page_151_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.688,
+            0.901,
+            0.727
+          ],
+          "content": "分别称它们为 $f(x)$ 在点 $x_0$ 处的右上导数、右下导数、左上导数、左下导数，统称为Dini导数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.733,
+            0.564,
+            0.751
+          ],
+          "content": "从上下极限的性质可以得到下面的关系式:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.234,
+            0.77,
+            0.901,
+            0.814
+          ],
+          "content": "\\begin{array}{l} D ^ {+} f (x _ {0}) \\geqslant D _ {+} f (x _ {0}), \\quad D ^ {-} f (x _ {0}) \\geqslant D _ {-} f (x _ {0}) \\\\ D ^ {+} (- f (x _ {0})) = - D _ {+} f (x _ {0}), \\quad D ^ {-} (- f (x _ {0})) = - D _ {-} f (x _ {0}). \\tag {6.2.6} \\\\ \\end{array}",
+          "image_source": "images/page_151_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.831,
+            0.68,
+            0.849
+          ],
+          "content": "关于 Dini 导数, 下面与定理 6.2.1 平行的结论成立, 证略."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.191,
+            0.854,
+            0.81,
+            0.873
+          ],
+          "content": "定理 6.2.2 设函数  $f(x)$  在点  $x_{0}$  的某邻域内有定义, 下列结论成立:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.878,
+            0.824,
+            0.897
+          ],
+          "content": "(1) $f(x)$ 在点 $x_0$ 处右可导当且仅当 $D^{+}f(x_{0}) = D_{+}f(x_{0})$ 且均为有限值；"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.182,
+            0.918,
+            0.725,
+            0.934
+          ],
+          "content": "① Dini, Ulisse, 1845 年 11 月 14 日 — 1918 年 10 月 28 日, 意大利数学家."
+        }
+      ]
+    },
+    {
+      "page_idx": 152,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.057,
+            0.057,
+            0.084,
+            0.068
+          ],
+          "content": "140"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.103,
+            0.055,
+            0.251,
+            0.069
+          ],
+          "content": "第六章 导数与微分"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.14,
+            0.113,
+            0.813,
+            0.154
+          ],
+          "sub_type": "text",
+          "content": "(2) $f(x)$ 在点 $x_0$ 处左可导当且仅当 $D^{-}f(x_0) = D_{-}f(x_0)$ 且均为有限值;\n(3) $f(x)$ 在点 $x_0$ 处可导当且仅当四个Dini导数都存在且均为同一个有限值."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.159,
+            0.329,
+            0.176
+          ],
+          "content": "例6.2.3 试求函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.368,
+            0.178,
+            0.853,
+            0.23
+          ],
+          "content": "f (x) = \\left\\{ \\begin{array}{l l} x, & x \\in \\mathbb {Q}, \\\\ - x, & x \\notin \\mathbb {Q} \\end{array} \\right. \\tag {6.2.7}",
+          "image_source": "images/page_152_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.238,
+            0.321,
+            0.254
+          ],
+          "content": "在 x = 0 处的 Dini 导数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.261,
+            0.389,
+            0.278
+          ],
+          "content": "解 根据定义直接计算可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.209,
+            0.295,
+            0.745,
+            0.314
+          ],
+          "content": "D ^ {+} f (0) = 1, \\quad D _ {+} f (0) = - 1, \\quad D ^ {-} f (0) = 1, \\quad D _ {-} f (0) = - 1.",
+          "image_source": "images/page_152_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.329,
+            0.328,
+            0.346
+          ],
+          "content": "例6.2.4 试求函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.342,
+            0.358,
+            0.853,
+            0.44
+          ],
+          "content": "f (x) = \\left\\{ \\begin{array}{l l} x \\sin^ {2} \\frac {1}{x}, & x > 0, \\\\ 0, & x = 0, \\\\ 2 x \\cos^ {2} \\frac {1}{x}, & x <   0 \\end{array} \\right. \\tag {6.2.8}",
+          "image_source": "images/page_152_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.451,
+            0.32,
+            0.467
+          ],
+          "content": "在 x = 0 处的 Dini 导数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.468,
+            0.853,
+            0.522
+          ],
+          "content": "解 考虑区间 $I_{n} = \\left[\\frac{1}{(2n + 2)\\pi},\\frac{1}{2n\\pi}\\right]$, 当 $x\\in I_n$ 时, 由于 $\\sin \\frac{1}{x}$ 和 $\\cos \\frac{1}{x}$ 可以取遍 $[-1,1]$ 中的所有值, 所以有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.222,
+            0.538,
+            0.729,
+            0.557
+          ],
+          "content": "D _ {+} f (0) = 0, \\quad D ^ {+} f (0) = 1, \\quad D _ {-} f (0) = 0, \\quad D ^ {-} f (0) = 2.",
+          "image_source": "images/page_152_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.572,
+            0.854,
+            0.683
+          ],
+          "content": "作为练习读者也可以把 $D^{+}f(x_{0})$ 和 $D^{-}f(x_{0})$ 组合起来得到上导数 $\\overline{D} f(x_0)$，把 $D_{+}f(x_{0})$ 和 $D_{-}f(x_{0})$ 组合起来得到下导数 $\\underline{D} f(x_0)$。可以证明，满足Lipschitz连续的函数其上下导数分别满足 $\\overline{D} f(x) \\leqslant L, \\underline{D} f(x) \\geqslant -L$，其中 $L$ 是关系式 $|f(x_1) - f(x_2)| \\leqslant L|x_1 - x_2|$ 中的Lipschitz常数。不难证明，函数 $f(x)$ 在点 $x_0$ 处可导的充要条件是相应点处的上、下导数相等且为有限值。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.711,
+            0.512,
+            0.731
+          ],
+          "level": 2,
+          "content": "6.2.3 对称导数 Schwarz 型导数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.756,
+            0.658,
+            0.773
+          ],
+          "content": "我们再次回到当初 Leibniz 考虑曲线的切线问题. 给定曲线"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.339,
+            0.79,
+            0.61,
+            0.809
+          ],
+          "content": "C := \\{(x, y): y = f (x), x \\in I \\},",
+          "image_source": "images/page_152_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.823,
+            0.853,
+            0.911
+          ],
+          "content": "曲线上的点 $P_{0}(x_{0},f(x_{0}))\\in C$ 处的切线定义如下:任找 $C$ 上的一点 $P(x,y)$ ，考虑由 $P_{0}$ 和 $P$ 决定的割线 $L_{P_0P}$ 以及它的斜率 $k_{P_0P}$ ，如果当 $x\\to x_0$ 时， $k_{P_0P}$ 存在有限的极限$k\\in \\mathbb{R}$ ，我们就称曲线 $C$ 在 $P_{0}$ 点切线存在，它是一条过 $P_{0}$ 点，斜率为 $k$ 的直线 $\\ell$ .显然$\\ell$ 的方程可以由解析式"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.343,
+            0.919,
+            0.605,
+            0.937
+          ],
+          "content": "\\ell : \\quad y = k (x - x _ {0}) + f (x _ {0})",
+          "image_source": "images/page_152_equation_20.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 153,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.62,
+            0.055,
+            0.896,
+            0.068
+          ],
+          "content": "6.2 单侧导数 Dini 导数 更多的导数"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.917,
+            0.056,
+            0.944,
+            0.068
+          ],
+          "content": "141"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.11,
+            0.779,
+            0.128
+          ],
+          "content": "表出. 所以切线 $\\ell$ 也可以看成是割线 $L_{P_0P}$ 当 $P$ 趋于 $P_0$ 时的极限状态."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.133,
+            0.899,
+            0.246
+          ],
+          "content": "我们现在考察引入切线的其他可能. 在上述假设下, 为了讨论点 $P_{0}$ 的切线, 在 $C$ 上任找两个异于 $P_{0}$ 的点 $P_{1}(x_{1}, f(x_{1}))$ 和 $P_{2}(x_{2}, f(x_{2}))$, 考虑由 $P_{1}$ 和 $P_{2}$ 决定的割线 $L_{P_{1}P_{2}}$ 及其斜率 $k_{P_{1}P_{2}}$. 如果当 $x_{1,2} \\to x_{0}$ 时, $k_{P_{1}P_{2}}$ 存在有限的极限 $\\tilde{k} \\in \\mathbb{R}$, 那么对应的割线 $L_{P_{1}P_{2}}$ 的极限位置是否可以定义为 $P_{0}$ 点的切线? 这种定义出来的“切线”和经典的切线有何关系? 换句话说, $\\tilde{k}$ 和 $k$ 可否相等?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.251,
+            0.899,
+            0.293
+          ],
+          "content": "可以看出, 无论是逻辑上还是直观上我们都有理由来这样定义, 因此我们首先把这个想法抽象出来, 给出数学上的统一处理, 然后我们再讨论它们之间的关系."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.298,
+            0.899,
+            0.364
+          ],
+          "content": "有两种比较自然的选取割线 $P_{1}P_{2}$ 的方法(见图6.3): 一种是 $P_{1}$ 和 $P_{2}$ 从 $P_{0}$ 的异侧趋于 $P_{0}$, 另一种是 $P_{1}$ 和 $P_{2}$ 从 $P_{0}$ 的同侧趋于 $P_{0}$. 经典的切线恰好是 $P_{1}$ 或 $P_{2}$ 之一固定为 $P_{0}$ 的特殊情况."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.191,
+            0.379,
+            0.486,
+            0.508
+          ],
+          "sub_type": "text_image",
+          "content": "f(x)\nP\nP₀\nℓ\nO\nx",
+          "captions": [
+            {
+              "bbox": [
+                0.257,
+                0.509,
+                0.424,
+                0.524
+              ],
+              "content": "(a) 经典导数: $P$ 趋于 $P_{0}$"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_153_image_6.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.564,
+            0.379,
+            0.854,
+            0.508
+          ],
+          "sub_type": "text_image",
+          "content": "f(x)\nP₁\nP₂\nℓ\nP₀\nO\nx",
+          "captions": [
+            {
+              "bbox": [
+                0.629,
+                0.509,
+                0.796,
+                0.524
+              ],
+              "content": "(b) $P_{1}, P_{2}$ 从异侧趋于 $P_{0}$"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_153_image_8.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.191,
+            0.53,
+            0.485,
+            0.66
+          ],
+          "sub_type": "text_image",
+          "content": "f(x)\nP₁\nP₂\nP₀\nℓ\nO\nx",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_153_image_10.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.565,
+            0.53,
+            0.854,
+            0.66
+          ],
+          "sub_type": "text_image",
+          "content": "f(x)\nP₀\nP₁\nℓ\nP₂\nO\nx",
+          "captions": [
+            {
+              "bbox": [
+                0.445,
+                0.669,
+                0.61,
+                0.685
+              ],
+              "content": "(c) $P_{1}, P_{2}$ 从同侧趋于 $P_{0}$"
+            },
+            {
+              "bbox": [
+                0.423,
+                0.692,
+                0.625,
+                0.708
+              ],
+              "content": "图 6.3 经典导数与推广"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_153_image_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.73,
+            0.823,
+            0.748
+          ],
+          "content": "定义 6.2.4 设  $\\delta > 0, f(x)$  在点  $x_{0}$  的某邻域  $(x_{0} - \\delta, x_{0} + \\delta)$  内有定义."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.754,
+            0.814,
+            0.772
+          ],
+          "content": "(1) 对任意的 $x_{1}, x_{2} \\in (x_{0} - \\delta, x_{0} + \\delta), (x_{1} - x_{0})(x_{2} - x_{0}) < 0$, 如果极限"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.435,
+            0.786,
+            0.9,
+            0.824
+          ],
+          "content": "\\lim_{\\substack{x_{1}\\to x_{0}\\\\ x_{2}\\to x_{0}}}\\frac{f(x_{2}) - f(x_{1})}{x_{2} - x_{1}} \\tag{6.2.9}",
+          "image_source": "images/page_153_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.842,
+            0.9,
+            0.884
+          ],
+          "content": "存在且有限, 则称 $f(x)$ 在点 $x_0$ 处 Schwarz$^{\\text{①}}$ 型弱可导, 简称 $S$-型弱可导, 并称其极限值为 $f(x)$ 在点 $x_0$ 处的 $S$-弱导数, 记为 $f_w^{[1]}(x_0)$;"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.182,
+            0.917,
+            0.853,
+            0.932
+          ],
+          "content": "① Schwarz, Karl Hermann Amandus, 1843 年 1 月 25 日—1921 年 11 月 30 日, 德国数学家."
+        }
+      ]
+    },
+    {
+      "page_idx": 154,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.061,
+            0.055,
+            0.089,
+            0.066
+          ],
+          "content": "142"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.053,
+            0.255,
+            0.068
+          ],
+          "content": "第六章 导数与微分"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.111,
+            0.773,
+            0.13
+          ],
+          "content": "(2) 对任意的 $x_{1}, x_{2} \\in (x_{0} - \\delta, x_{0} + \\delta), (x_{1} - x_{0})(x_{2} - x_{0}) > 0$, 如果极限"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.397,
+            0.144,
+            0.855,
+            0.18
+          ],
+          "content": "\\lim_{\\substack{x_{1}\\to x_{0}\\\\ x_{2}\\to x_{0}}}\\frac{f(x_{2}) - f(x_{1})}{x_{2} - x_{1}} \\tag{6.2.10}",
+          "image_source": "images/page_154_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.195,
+            0.858,
+            0.237
+          ],
+          "content": "存在且有限, 则称 $f(x)$ 在点 $x_0$ 处 Schwarz 型强可导, 简称 $S$-型强可导, 并称其极限值为 $f(x)$ 在点 $x_0$ 处的 $S$-强导数, 记为 $f_s^{[1]}(x_0)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.242,
+            0.858,
+            0.283
+          ],
+          "content": "注意, 上述定义中的 S-型强、弱可导是非标准用语, 从后面的逻辑关系中, 可以看出, 这些称呼仅仅提供了一种逻辑上的形象理解."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.289,
+            0.858,
+            0.308
+          ],
+          "content": "定义中的 $S$ -型弱导数的一种特殊情况就是所谓的 Schwarz 对称导数, 其定义如下."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.313,
+            0.858,
+            0.332
+          ],
+          "content": "定义 6.2.5 设  $\\delta > 0, f(x)$  在点  $x_{0}$  的某邻域  $(x_{0} - \\delta, x_{0} + \\delta)$  内有定义, 如果极限"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.345,
+            0.346,
+            0.854,
+            0.377
+          ],
+          "content": "\\lim _ {\\Delta x \\to 0} \\frac {f (x _ {0} + \\Delta x) - f (x _ {0} - \\Delta x)}{2 \\Delta x} \\tag {6.2.11}",
+          "image_source": "images/page_154_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.389,
+            0.858,
+            0.431
+          ],
+          "content": "存在且有限, 则称 $f(x)$ 在点 $x_0$ 处 Schwarz 对称可导, 简称 $S$-可导或对称可导, 并将其极限值记为 $f^{[1]}(x_0)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.435,
+            0.297,
+            0.453
+          ],
+          "content": "易证下面的结论:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.458,
+            0.856,
+            0.478
+          ],
+          "content": "例 6.2.5 函数  $f(x)=|x|$  在 x=0 处 Schwarz 对称可导, 且导数为  $f^{[1]}(x_{0})\\equiv0$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.199,
+            0.484,
+            0.856,
+            0.552
+          ],
+          "content": "注6.2.1 从上面这个例子可以看出, 一个函数在点 $x_0$ 处 $S$-可导, 它甚至可以是不连续的, 因为我们可以任意改变 $f(x)$ 在 0 点的值而不影响其对称导数值. 因此, 在讨论 $S$-型导数时, 常常加上函数在该点连续的条件."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.563,
+            0.858,
+            0.628
+          ],
+          "content": "上面我们仅从切线的几何直观和概念的推广角度引入了 S-型导数, 由于形式上涉及一些二元函数极限的内容, 在此我们不打算作进一步的铺开讨论. 下面给出一个相关结论, 有兴趣的读者可以完善证明并作进一步的思考和讨论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.634,
+            0.856,
+            0.652
+          ],
+          "content": "定理 6.2.3 设函数  $f(x)$  在点  $x_{0}$  附近有定义, 在点  $x_{0}$  处连续, 则下面结论成立:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.102,
+            0.657,
+            0.856,
+            0.745
+          ],
+          "sub_type": "text",
+          "content": "(1) 如果 $f(x)$ 在点 $x_0$ 处 $S$-型强可导, 则 $f(x)$ 在点 $x_0$ 处可导.\n(2) $f(x)$ 在点 $x_0$ 处可导当且仅当 $f(x)$ 在点 $x_0$ 处 $S$-型弱可导. 特别地, $f(x)$ 在点 $x_0$ 处可导蕴涵 $f(x)$ 在点 $x_0$ 处对称可导.\n(3) 当  $f(x)$  在点  $x_{0}$  处 S-型强可导时, 三种导数值相等."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.751,
+            0.591,
+            0.769
+          ],
+          "content": "下面的例子说明,上述结论反向一般来说均不成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.774,
+            0.807,
+            0.793
+          ],
+          "content": "例 6.2.6 (1) 考虑函数  $f(x)=|x|$ ，则 f 在 x=0 处对称可导，但并不可导."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.798,
+            0.202,
+            0.816
+          ],
+          "content": "(2) 设"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.354,
+            0.818,
+            0.595,
+            0.871
+          ],
+          "content": "f (x) = \\left\\{ \\begin{array}{l l} x ^ {2} \\sin \\frac {1}{x}, & x \\neq 0, \\\\ 0, & x = 0. \\end{array} \\right.",
+          "image_source": "images/page_154_equation_22.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.881,
+            0.856,
+            0.934
+          ],
+          "content": "则 $f(x)$ 在 $x = 0$ 处可导, $f'(0) = 0$, 但并不 $S$-型强可导. 事实上, 取 $x_{n} = \\frac{2}{(2n + 1)\\pi}$, 则极限"
+        }
+      ]
+    },
+    {
+      "page_idx": 155,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.622,
+            0.056,
+            0.899,
+            0.07
+          ],
+          "content": "6.2 单侧导数 Dini 导数 更多的导数"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.919,
+            0.057,
+            0.947,
+            0.069
+          ],
+          "content": "143"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.42,
+            0.109,
+            0.627,
+            0.144
+          ],
+          "content": "\\lim _ {n \\to + \\infty} \\frac {f (x _ {n + 1}) - f (x _ {n})}{x _ {n + 1} - x _ {n}}",
+          "image_source": "images/page_155_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.15,
+            0.218,
+            0.167
+          ],
+          "content": "不存在."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.173,
+            0.902,
+            0.239
+          ],
+          "content": "除了上面的左右导数、上下导数、强弱导数外, 还可以视具体情况而引入更有针对性的导数. 注意, 这些新概念的引入并不是纯无聊的推广, 而是建立在处理具体问题时, 角度不同但理念相通的基础上的, 都是用微观的思想去看待问题的."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.19,
+            0.267,
+            0.285,
+            0.286
+          ],
+          "level": 2,
+          "content": "习题6.2"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.311,
+            0.663,
+            0.329
+          ],
+          "content": "1. 判断下列函数在给定点是否存在单侧导数, 并计算:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.189,
+            0.335,
+            0.722,
+            0.5
+          ],
+          "sub_type": "text",
+          "content": "(1) $f(x)=\\sqrt[3]{x}$ 在 x=0 处的右导数;\n(2) $f(x)=|x-2|^{3}$ 在 x=2 处的左导数;\n(3) $f(x)=\\begin{cases}x^{2},&x\\geqslant1,\\\\3-\\frac{1}{x},&x<1\\end{cases}$ 在 x=1 处的左导数和右导数;\n(4) $f(x) = \\left\\{ \\begin{array}{ll}\\sqrt{x + 1}, & x\\geqslant 0,\\\\ x^{2} - 1, & x <   0 \\end{array} \\right.$ 在 $x = 0$ 处的左导数和右导数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.504,
+            0.478,
+            0.52
+          ],
+          "content": "2. 确定常数 $a, b$ 的值, 使得函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.414,
+            0.531,
+            0.637,
+            0.592
+          ],
+          "content": "f (x) = \\left\\{ \\begin{array}{l l} x ^ {2}, & x \\geqslant 1, \\\\ a x + b, & x <   1 \\end{array} \\right.",
+          "image_source": "images/page_155_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.603,
+            0.301,
+            0.619
+          ],
+          "content": "在 $x = 1$ 处可导."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.618,
+            0.903,
+            0.684
+          ],
+          "content": "3. 设 $f(x)$ 在 $x = 0$ 处连续. 证明: 当且仅当极限 $\\lim_{x \\to 0} \\frac{f(x) - f(x - x^3)}{x^3}$ 存在时, 极限 $\\lim_{x \\to 0} \\frac{f(x) - f(0)}{x}$ 存在."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.685,
+            0.561,
+            0.7
+          ],
+          "content": "4. 计算下列函数在 x = 0 处的 Dini 导数:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.191,
+            0.701,
+            0.365,
+            0.73
+          ],
+          "content": "(1) $f(x)=x^{2}\\sin\\frac{1}{x};$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.439,
+            0.705,
+            0.591,
+            0.726
+          ],
+          "content": "(2) $f(x) = |x|^{3 / 2}$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.665,
+            0.705,
+            0.816,
+            0.726
+          ],
+          "content": "(3) $f(x) = \\mathrm{e}^{-|x|^2}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.731,
+            0.673,
+            0.747
+          ],
+          "content": "5. 判断下列函数在给定点是否存在 Dini 导数, 并计算:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.191,
+            0.75,
+            0.537,
+            0.852
+          ],
+          "sub_type": "text",
+          "content": "(1) $f(x) = \\left\\{ \\begin{array}{ll}x^{3}, & x\\geqslant 0,\\\\ -x^{3}, & x <   0 \\end{array} \\right.$ 在 $x = 0$ 处；\n(2) $f(x)=\\sin x\\cos x$ 在 $x=\\pi$ 处;\n(3) $f(x)=x^{2}\\ln|x|$ 在 x=0 处."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.858,
+            0.664,
+            0.875
+          ],
+          "content": "6. 判断下列函数在给定点是否存在对称导数, 并计算:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.191,
+            0.878,
+            0.537,
+            0.937
+          ],
+          "content": "(1) $f(x) = \\left\\{ \\begin{array}{ll}x^{3}, & x\\geqslant 0,\\\\ -x^{3}, & x <   0 \\end{array} \\right.$ 在 $x = 0$ 处；"
+        }
+      ]
+    },
+    {
+      "page_idx": 156,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.059,
+            0.054,
+            0.087,
+            0.065
+          ],
+          "content": "144"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.052,
+            0.254,
+            0.066
+          ],
+          "content": "第六章 导数与微分"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.144,
+            0.109,
+            0.44,
+            0.171
+          ],
+          "sub_type": "text",
+          "content": "(2) $f(x)=\\sin(x^{2})$ 在 $x=\\pi$ 处;\n(3) $f(x)=\\ln|x^{2}-1|$ 在x=1处;\n(4) $f(x) = x^{2}\\mathrm{e}^{-|x|}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.18,
+            0.679,
+            0.197
+          ],
+          "content": "7. 判断下列函数在给定点是否存在 Schwarz 型导数, 并计算:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.143,
+            0.2,
+            0.488,
+            0.334
+          ],
+          "sub_type": "text",
+          "content": "(1) $f(x)=\\begin{cases}x^{3},&x\\geqslant0,\\\\-x^{3},&x<0\\end{cases}$ 在 x=0 处;\n(2) $f(x) = \\cos x^2$ 在 $x = \\frac{\\pi}{2}$ 处;\n(3) $f(x)=\\mathrm{e}^{-|x|^3}$ 在 x=0 处;\n(4) $f(x)=\\arctan x^{3}$ 在x=0处."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.342,
+            0.855,
+            0.382
+          ],
+          "content": "8. 证明: 若 $f(x), g(x)$ 在点 $x_0$ 处 Schwarz 型导数存在, 则 $f(x) \\pm g(x)$ 在点 $x_0$ 处 Schwarz 型导数也存在, 且有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.327,
+            0.398,
+            0.629,
+            0.419
+          ],
+          "content": "(f \\pm g) ^ {[ 1 ]} (x _ {0}) = f ^ {[ 1 ]} (x _ {0}) \\pm g ^ {[ 1 ]} (x _ {0}).",
+          "image_source": "images/page_156_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.434,
+            0.855,
+            0.489
+          ],
+          "content": "9. 证明:若 $f(x), g(x)$ 在点 $x_0$ 处连续，且 Schwarz 型导数存在，则 $f(x)g(x)$ 和 $\\frac{f(x)}{g(x)} (g(x_0) \\neq 0)$ 在点 $x_0$ 处 Schwarz 型导数也存在，且有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.257,
+            0.505,
+            0.692,
+            0.571
+          ],
+          "content": "\\begin{array}{l} (f (x) g (x)) ^ {[ 1 ]} \\big | _ {x = x _ {0}} = f ^ {[ 1 ]} (x _ {0}) g (x _ {0}) + f (x _ {0}) g ^ {[ 1 ]} (x _ {0}), \\\\ \\left(\\frac {f (x)}{g (x)}\\right) ^ {[ 1 ]} \\Big | _ {x = x _ {0}} = \\frac {f ^ {[ 1 ]} (x _ {0}) g (x _ {0}) - f (x _ {0}) g ^ {[ 1 ]} (x _ {0})}{g ^ {2} (x _ {0})}. \\\\ \\end{array}",
+          "image_source": "images/page_156_equation_15.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.101,
+            0.612,
+            0.449,
+            0.635
+          ],
+          "level": 2,
+          "content": "6.3 导数的计算 求导法则"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.682,
+            0.855,
+            0.771
+          ],
+          "content": "上节我们给出了导数的定义和几种推广, 并且从定义出发讨论了一些简单函数的求导. 对于比较复杂的函数, 如果每次都从定义出发求其导数, 可能是比较烦琐甚至是棘手的. 因此我们有必要试图建立一些求导的基本法则, 利用这些法则可以将所求函数的导数转化为已知函数或已知函数导数之间的代数运算."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.139,
+            0.799,
+            0.491,
+            0.819
+          ],
+          "level": 2,
+          "content": "6.3.1 一些基本初等函数的导数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.844,
+            0.855,
+            0.933
+          ],
+          "content": "我们首先给出以下几类最基本初等函数的导数, 至于为何选取这几类函数作为出发点是基于以下原因: 首先通过这些函数导数的计算, 进一步熟悉用定义求导数的基本方法. 然后介绍几种常见的求导法则, 应用这些法则我们即可展示如何用这些最基本的初等函数来求得更多复杂函数的导数."
+        }
+      ]
+    },
+    {
+      "page_idx": 157,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.699,
+            0.055,
+            0.896,
+            0.068
+          ],
+          "content": "6.3 导数的计算 求导法则"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.917,
+            0.056,
+            0.944,
+            0.068
+          ],
+          "content": "145"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.111,
+            0.459,
+            0.129
+          ],
+          "content": "例 6.3.1 求下列函数的导数:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.283,
+            0.15,
+            0.894,
+            0.165
+          ],
+          "content": "y = x ^ {\\mu} (x > 0), \\quad y = \\sin x, \\quad y = \\cos x, \\quad y = \\mathrm{e} ^ {x}. \\tag {6.3.1}",
+          "image_source": "images/page_157_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.185,
+            0.899,
+            0.251
+          ],
+          "content": "解 由导数的定义知, 计算一个函数的导数本质上就是计算一个相应的差商的极限, 而这些极限的计算, 要么前面已经提及, 要么计算可以直接给出, 下面我们直接给出结果, 推导细节不再一一赘述."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.257,
+            0.462,
+            0.275
+          ],
+          "content": "(1) 考虑 $y = x^{\\mu} (x > 0)$ 的导数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.354,
+            0.292,
+            0.896,
+            0.322
+          ],
+          "content": "(x ^ {\\mu}) ^ {\\prime} = \\lim _ {\\Delta x \\to 0} \\frac {(x + \\Delta x) ^ {\\mu} - x ^ {\\mu}}{\\Delta x} = \\mu x ^ {\\mu - 1}. \\tag {6.3.2}",
+          "image_source": "images/page_157_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.339,
+            0.455,
+            0.373
+          ],
+          "content": "特例: 取  $\\mu = \\frac{1}{2}$ ，有  $(\\sqrt{x})' = \\frac{1}{2\\sqrt{x}}$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.376,
+            0.414,
+            0.393
+          ],
+          "content": "(2) 考虑 $y = \\sin x$ 的导数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.333,
+            0.409,
+            0.713,
+            0.442
+          ],
+          "content": "(\\sin x) ^ {\\prime} = \\lim _ {\\Delta x \\to 0} \\frac {\\sin (x + \\Delta x) - \\sin x}{\\Delta x} = \\cos x.",
+          "image_source": "images/page_157_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.455,
+            0.614,
+            0.473
+          ],
+          "content": "(3) 完全类似地, 我们可以得到 $y = \\cos x$ 的导数."
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.452,
+            0.494,
+            0.897,
+            0.509
+          ],
+          "content": "(\\cos x) ^ {\\prime} = - \\sin x. \\tag {6.3.3}",
+          "image_source": "images/page_157_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.53,
+            0.447,
+            0.548
+          ],
+          "content": "(4) 类似地, 有 $y = \\mathrm{e}^{x}$ 的导数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.39,
+            0.563,
+            0.66,
+            0.598
+          ],
+          "content": "(\\mathrm{e} ^ {x}) ^ {\\prime} = \\lim _ {\\Delta x \\to 0} \\frac {\\mathrm{e} ^ {x + \\Delta x} - \\mathrm{e} ^ {x}}{\\Delta x} = \\mathrm{e} ^ {x}.",
+          "image_source": "images/page_157_equation_13.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.187,
+            0.618,
+            0.557,
+            0.638
+          ],
+          "level": 2,
+          "content": "6.3.2 求导法则 更多函数的导数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.663,
+            0.902,
+            0.75
+          ],
+          "content": "当若干个函数通过某些代数运算得到形式更一般的函数时, 对这些函数的求导通常可以利用导数的代数运算法则来计算. 这些代数运算法则主要包含: 两个函数在四则运算和复合运算下的求导法则, 反函数的求导法则, 以及隐函数、参数方程、极坐标等形式下的求导法则."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.19,
+            0.765,
+            0.457,
+            0.783
+          ],
+          "level": 2,
+          "content": "1. 函数的四则运算求导法则"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.796,
+            0.902,
+            0.854
+          ],
+          "content": "定理 6.3.1 设函数  $f(x)$ ,  $g(x)$  在点  $x_{0}$  处可导,  $\\alpha, \\beta \\in R$ , 则函数  $\\alpha f(x) + \\beta g(x)$  以及  $f(x)g(x)$  和  $\\frac{f(x)}{g(x)} (g(x) \\neq 0)$  均在点  $x_{0}$  处可导, 且在点  $x_{0}$  处成立如下关系:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.191,
+            0.856,
+            0.546,
+            0.937
+          ],
+          "sub_type": "text",
+          "content": "(1) $(\\alpha f(x) + \\beta g(x))' = \\alpha f'(x) + \\beta g'(x)$;\n(2) $(f(x)g(x))' = f'(x)g(x) + f(x)g'(x)$;\n(3) $\\left(\\frac{f(x)}{g(x)}\\right)' = \\frac{f'(x)g(x) - f(x)g'(x)}{g^2(x)}.$"
+        }
+      ]
+    },
+    {
+      "page_idx": 158,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.059,
+            0.056,
+            0.088,
+            0.067
+          ],
+          "content": "146"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.054,
+            0.254,
+            0.068
+          ],
+          "content": "第六章 导数与微分"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.111,
+            0.857,
+            0.152
+          ],
+          "content": "证明 (1) 从导数的定义和极限的线性性立得. 注意, 如果取 $\\alpha = 1, \\beta = \\pm 1$, 我们就得到了两个函数和与差的导数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.158,
+            0.441,
+            0.177
+          ],
+          "content": "(2) 考虑  $f(x)g(x)$  差商的极限, 由"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.192,
+            0.195,
+            0.768,
+            0.216
+          ],
+          "content": "f (x) g (x) - f (x _ {0}) g (x _ {0}) = (f (x) - f (x _ {0})) g (x) + f (x _ {0}) (g (x) - g (x _ {0}))",
+          "image_source": "images/page_158_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.233,
+            0.13,
+            0.248
+          ],
+          "content": "知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.219,
+            0.251,
+            0.74,
+            0.344
+          ],
+          "content": "\\begin{array}{l} (fg)' \\bigg |_{x_0} = \\lim_{x \\to x_0} \\frac{f(x)g(x) - f(x_0)g(x_0)}{x - x_0} \\\\ = \\lim _ {x \\to x _ {0}} \\frac {f (x) - f (x _ {0})}{x - x _ {0}} g (x) + \\lim _ {x \\to x _ {0}} f (x _ {0}) \\frac {g (x) - g (x _ {0})}{x - x _ {0}} \\\\ = f ^ {\\prime} (x _ {0}) g (x _ {0}) + f (x _ {0}) g ^ {\\prime} (x _ {0}). \\\\ \\end{array}",
+          "image_source": "images/page_158_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.356,
+            0.687,
+            0.375
+          ],
+          "content": "这里根据定理 6.1.1, 我们用到了  $f(x)$  和  $g(x)$  在点  $x_{0}$  处的连续性."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.38,
+            0.303,
+            0.397
+          ],
+          "content": "(3) 注意到关系式"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.124,
+            0.412,
+            0.836,
+            0.451
+          ],
+          "content": "\\frac {1}{x - x _ {0}} \\left(\\frac {f (x)}{g (x)} - \\frac {f (x _ {0})}{g (x _ {0})}\\right) = \\frac {1}{g (x) g (x _ {0})} \\left(\\frac {f (x) - f (x _ {0})}{x - x _ {0}} g (x _ {0}) - f (x _ {0}) \\frac {g (x) - g (x _ {0})}{x - x _ {0}}\\right),",
+          "image_source": "images/page_158_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.464,
+            0.856,
+            0.505
+          ],
+          "content": "根据假设 $f(x), g(x)$ 在点 $x_0$ 处可导, 故 $g(x)$ 在点 $x_0$ 处连续, 在上式中令 $x \\to x_0$, 可得结论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.511,
+            0.856,
+            0.553
+          ],
+          "content": "用代数的语言来解释定理第一条的话, 则是说在 $x_0$ 可导的所有函数的全体形成一个线性空间."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.558,
+            0.856,
+            0.623
+          ],
+          "content": "显然, 如果多次使用四则运算, 可以求得任意有限个函数加、减、乘、除后得到的函数的导数. 只不过对于除法而言, 一般并没有特别简捷的表述. 具体来说, 对于加减和乘法, 有下面的结论:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.626,
+            0.867,
+            0.687
+          ],
+          "content": "推论 6.3.2 设函数  $f_{k}(x)$  在点  $x_{0}$  处可导,  $\\alpha_{k} \\in \\mathbb{R}(k = 1, 2, \\cdots, n)$ , 则  $\\sum_{k=1}^{n} \\alpha_{k} f_{k}(x)$  和  $f_{1}(x) f_{2}(x) \\cdots f_{n}(x)$  均在点  $x_{0}$  处可导, 且在点  $x_{0}$  处成立如下关系:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.142,
+            0.69,
+            0.755,
+            0.776
+          ],
+          "sub_type": "text",
+          "content": "(1) $\\left(\\sum_{k=1}^{n}\\alpha_k f_k(x)\\right)' = \\sum_{k=1}^{n}\\alpha_k f_k'(x);$\n(2) $(f_{1}(x)f_{2}(x)\\dots f_{n}(x))^{\\prime} = \\sum_{k = 1}^{n}f_{1}(x)\\dots f_{k - 1}(x)f_{k}^{\\prime}(x)f_{k + 1}(x)\\dots f_{n}(x).$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.779,
+            0.32,
+            0.797
+          ],
+          "content": "例如当 $n = 3$ 时, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.155,
+            0.815,
+            0.801,
+            0.836
+          ],
+          "content": "(f _ {1} (x) f _ {2} (x) f _ {3} (x)) ^ {\\prime} = f _ {1} ^ {\\prime} (x) f _ {2} (x) f _ {3} (x) + f _ {1} (x) f _ {2} ^ {\\prime} (x) f _ {3} (x) + f _ {1} (x) f _ {2} (x) f _ {3} ^ {\\prime} (x).",
+          "image_source": "images/page_158_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.853,
+            0.855,
+            0.894
+          ],
+          "content": "在理解推论 6.3.2 时, 如果联想到能否把有限个函数之和的求导运算推广到无穷多个函数之和, 即是否成立"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.366,
+            0.896,
+            0.591,
+            0.939
+          ],
+          "content": "\\Big (\\sum_ {k = 1} ^ {\\infty} f _ {k} (x) \\Big) ^ {\\prime} = \\sum_ {k = 1} ^ {\\infty} f _ {k} ^ {\\prime} (x),",
+          "image_source": "images/page_158_equation_20.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 159,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.707,
+            0.055,
+            0.904,
+            0.068
+          ],
+          "content": "6.3 导数的计算 求导法则"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.925,
+            0.056,
+            0.951,
+            0.067
+          ],
+          "content": "147"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.109,
+            0.905,
+            0.15
+          ],
+          "content": "那么这触及数学分析中一个极好的问题. 对此问题, 我们将在函数项级数章节给出系统的分析和讨论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.194,
+            0.156,
+            0.749,
+            0.174
+          ],
+          "content": "下面我们利用求导的四则运算法则来计算一些常见函数的导数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.194,
+            0.18,
+            0.465,
+            0.198
+          ],
+          "content": "例 6.3.2 求下列函数的导数:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.459,
+            0.218,
+            0.599,
+            0.233
+          ],
+          "content": "\\tan x, \\quad \\cot x.",
+          "image_source": "images/page_159_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.25,
+            0.905,
+            0.29
+          ],
+          "content": "解 代之以从定义出发计算它们的导数, 我们可以利用两个函数除法的求导法则来求之."
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.311,
+            0.293,
+            0.749,
+            0.369
+          ],
+          "content": "\\begin{array}{l} (\\tan x) ^ {\\prime} = \\left(\\frac {\\sin x}{\\cos x}\\right) ^ {\\prime} = \\frac {(\\sin x) ^ {\\prime} \\cos x - \\sin x (\\cos x) ^ {\\prime}}{\\cos^ {2} x} \\\\ = \\frac {1}{\\cos^ {2} x} = \\sec^ {2} x = 1 + \\tan^ {2} x. \\\\ \\end{array}",
+          "image_source": "images/page_159_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.376,
+            0.23,
+            0.393
+          ],
+          "content": "同理, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.392,
+            0.728,
+            0.425
+          ],
+          "content": "(\\cot x) ^ {\\prime} = - \\frac {1}{\\sin^ {2} x} = - \\csc^ {2} x = - (1 + \\cot^ {2} x).",
+          "image_source": "images/page_159_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.154,
+            0.429,
+            0.908,
+            0.566
+          ],
+          "content": "注意到我们这里刻意给出了 $\\tan x$ 和 $\\cot x$ 导数的多种表述形式, 这在后面计算不定积分时常常带来一定的方便. 具体来说, 比如形如 $(\\tan x)' = 1 + \\tan^2 x$ 的表达式通常蕴涵着看待导数的一个新的角度, 即 $\\tan x$ 所在的函数类关于求导封闭, 即 $y'$ 仍然可以用以 $y$ 为变量的某函数表出. 从这个角度来说, $\\tan x$ 就属于满足关系式 $y' = 1 + y^2$ 的函数类. 前面讨论过的例子 $y = \\mathrm{e}^x$ 就应该属于由关系式 $y' = y$ 确定的函数类中. 这为我们对函数分类提供了一个新的角度."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.195,
+            0.571,
+            0.467,
+            0.588
+          ],
+          "content": "例6.3.3 求下列函数的导数:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.31,
+            0.597,
+            0.752,
+            0.632
+          ],
+          "content": "\\mathrm{e} ^ {- x}, \\qquad \\cosh x = \\frac {\\mathrm{e} ^ {x} + \\mathrm{e} ^ {- x}}{2}, \\qquad \\sinh x = \\frac {\\mathrm{e} ^ {x} - \\mathrm{e} ^ {- x}}{2},",
+          "image_source": "images/page_159_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.641,
+            0.607,
+            0.658
+          ],
+          "content": "其中 $\\cosh x$ 和 $\\sinh x$ 分别称为双曲余弦和双曲正弦."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.195,
+            0.664,
+            0.299,
+            0.681
+          ],
+          "content": "解 我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.378,
+            0.682,
+            0.684,
+            0.721
+          ],
+          "content": "(\\mathrm{e} ^ {- x}) ^ {\\prime} = \\left(\\frac {1}{\\mathrm{e} ^ {x}}\\right) ^ {\\prime} = - \\frac {\\mathrm{e} ^ {x}}{(\\mathrm{e} ^ {x}) ^ {2}} = - \\mathrm{e} ^ {- x}.",
+          "image_source": "images/page_159_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.728,
+            0.66,
+            0.746
+          ],
+          "content": "另外两个函数的导数可由 $\\mathrm{e}^x$ 和 $\\mathrm{e}^{-x}$ 的线性叠加直接求得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.36,
+            0.763,
+            0.702,
+            0.782
+          ],
+          "content": "(\\cosh x) ^ {\\prime} = \\sinh x, \\qquad (\\sinh x) ^ {\\prime} = \\cosh x.",
+          "image_source": "images/page_159_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.797,
+            0.908,
+            0.862
+          ],
+          "content": "下面的例子是为了熟悉函数乘积的求导法则, 题目稍微涉及一点点复数的内容, 对于不熟悉这部分内容的读者, 可以把所有的计算理解为形式计算, 并不影响对求导法则的理解."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.194,
+            0.868,
+            0.839,
+            0.887
+          ],
+          "content": "例 6.3.4 设  $x_{1}, x_{2}, \\cdots, x_{n}$  是方程  $x^{n}-1=0$  的 n 个 n 次单位根. 计算"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.47,
+            0.901,
+            0.591,
+            0.937
+          ],
+          "content": "\\prod_ {i <   j} (x _ {i} - x _ {j}) ^ {2}.",
+          "image_source": "images/page_159_equation_20.jpg"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "created_at": "2025-11-20T03:44:46+08:00",
+      "modified_at": "2025-11-20T03:47:17+08:00",
+      "page_count": 856,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 144,
+          "width_pt": 510.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 145,
+          "width_pt": 511.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 146,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 147,
+          "width_pt": 510.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 148,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 149,
+          "width_pt": 510.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 150,
+          "width_pt": 510.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 151,
+          "width_pt": 510.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 152,
+          "width_pt": 510.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 153,
+          "width_pt": 510.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 154,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 155,
+          "width_pt": 510.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 156,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 157,
+          "width_pt": 510.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 158,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 159,
+          "width_pt": 510.0,
+          "height_pt": 742.0
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

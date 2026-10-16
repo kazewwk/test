@@ -1,0 +1,1808 @@
+# 中册 / 第十二章 函数序列与函数项级数
+
+原始 PDF 第 436–473 页。
+
+## 第十二章
+
+## 函数序列与函数项级数
+
+---
+
+132
+
+第十二章 函数序列与函数项级数
+
+上一章我们讨论了数项级数的敛散性及其在收敛时级数的基本性质, 本章我们将重点研究函数项级数, 即通项均为函数的无穷求和问题. 显然, 在函数项级数通项中, 如果固定自变量, 那么函数项级数即为常数项级数. 此时判别常数项级数敛散性的所有方法都可以用于函数项级数的敛散判别. 这种固定一点然后考虑函数项级数收敛的情形称之为函数项级数的 “点态” 收敛. 在上一章学习了数项级数敛散性之后, 函数项级数的重点将不再是点态收敛问题, 而更侧重于每一项作为一个函数来看它们的 “整体” 收敛问题. 换句话说, 点态收敛是进一步研究函数项级数性质的入门级假设: 只有在点态收敛假设下, 函数项级数才能定义出一个和函数, 而我们更感兴趣的则是和函数能否继承通项中逐个函数的性质.
+
+作为本章的主要内容之一, 我们将系统回答函数项级数求和时的 “三观问题”: 我们知道在有限个函数求和时, 逐个函数的连续性、可微性和可积性都能传承到和函数上. 一个自然的问题是对无穷多个函数求和时, 这三个基本性质是否还能得以传承? 我们给出了一个高度概括的充分条件: 粗略说来就是, 对于一致收敛的级数, 初等数学中有限个函数求和时的三观传承性可以推广到无穷多个函数求和时的情形 $^{①}$ .
+
+本章的研究对象主要有两种表现形式:函数序列（简称函数列）和函数项级数，因为它们之间存在众多的结构相似和内容平行之特点，所以在技术细节处理上，一般来说，我们只详细讨论一种情况，另一种情况“同理可证”了.
+
+## 12.1 函数列与函数项级数的基本问题
+
+## 12.1.1 逐点收敛与一致收敛
+
+本章的重点研究对象是函数列的极限函数和函数项级数的和函数. 前者是说各项都是 $x$ 的函数组成的函数列
+
+$$
+f _ {1} (x), f _ {2} (x), \dots , f _ {n} (x), \dots \tag {12.1.1}
+$$
+
+后者是说以 $x$ 的函数为通项构成的函数项级数
+
+$$
+\sum_ {n = 1} ^ {+ \infty} u _ {n} (x). \tag {12.1.2}
+$$
+
+这里, 我们默认式中涉及的所有函数具有共同的定义域. 为此, 我们假设函数列中的所有函数 $f_{n}(x)$, 或者函数项级数中的所有函数 $u_{n}(x)$, 均在集合 $I$ 上有定义. 称使得函
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">① 可微性的继承需要把“一致收敛”的充分性条件加在导函数为通项的函数项级数上.</span></small>
+
+---
+
+12.1 函数列与函数项级数的基本问题
+
+133
+
+数列 (12.1.1) 或函数项级数 (12.1.2) 收敛的 $x$ 的全体为函数列 (12.1.1) 或函数项级数 (12.1.2) 的收敛域. 在收敛域内, 函数列收敛于极限函数, 函数项级数收敛于和函数.
+
+从前面数项级数章节我们知道, 对级数  $\sum_{n=1}^{+\infty}a_{n}$  的研究和对数列  $\{S_{n}\}$  的研究本质上是相同的. 因为两者可以相互转换: 由级数可诱导出相应的部分和数列  $\{S_{n}\}$ , 而由后者  $\{S_{n}\}$  可以构造相应的数项级数  $\sum_{n=1}^{+\infty}(S_{n}-S_{n-1})$ . 完全类似, 函数列与函数项级数之间也存在着上述转换关系. 基于此, 我们在本章的讨论中, 将以函数列为重点, 阐明基本思想、介绍典型手法、陈述主要结论, 然后将其主体结构复述到相应的函数项级数中, 而省略了某些细节证明. $^{①}$
+
+定义 12.1.1 定义在集合 I 上的函数列  $f_{1}(x), f_{2}(x), \cdots, f_{n}(x), \cdots$ ，如果  $x_{0} \in I$ ，数列  $\{f_{n}(x_{0})\}$  极限存在（且为有限），则称  $x_{0}$  为该函数列的收敛点.
+
+使得函数列收敛的点的全体  $E \subseteq I$  称为该函数列的收敛域.
+
+可以完全平行地给出函数项级数的收敛点和收敛域.
+
+例 12.1.1 不难验证下列结论:
+
+级数  $\sum_{n=1}^{+\infty}\frac{x^{n}}{n!}$  的收敛域为 R.
+
+级数  $\sum_{n=1}^{+\infty}e^{nx}$  的收敛域为  $(-\infty,0)$ .
+
+函数列  $\{x^{n}\}$  的收敛域为  $(-1,1]$ .
+
+级数  $\sum_{n=1}^{+\infty} n! x^{n}$  的收敛域为  $\{0\}$ .
+
+级数  $\sum_{n=1}^{+\infty}e^{nx^{2}}$  的收敛域为空集  $\varnothing$ .
+
+当然, 并非每个函数列或函数项级数的收敛域都能给出, 比如函数列 $\{n\sin (n!\pi x)\}$ 的收敛域就很难给出一个完整的刻画. 读者可以尝试一下, 该函数列的收敛域既包含 $\mathbb{R}$ 中的稠密子集 $\mathbb{Q}$, 也包含形如 $r + 2ke(r \in \mathbb{Q}, k \in \mathbb{Z})$ 的点, 但却不包含形如 $r + (2k + 1)e$ 或形如 $\frac{e}{2}$ 的点, 至于是否包含诸如 $\sqrt{2}, \sqrt{3}, \pi, \cdots$ 的点, 则需要进一步单独讨论.
+
+显然, 对收敛域 $E$ 中的每一点 $x_0$, 函数列 (函数项级数) 的收敛性和数列 (常数项级数) 的收敛性没有区别. 记此数列在点 $x_0$ 处的极限为 $f(x_0)$, 以示与 $x_0$ 的关系. 那么可以看出, 在收敛域 $E$ 上, 存在函数 $f(x)$ 使得 $\forall x \in E, f_n(x) \to f(x)(n \to +\infty)$. 函数 $f(x)$ 称为给定函数列的极限函数.
+
+上述对收敛域 $E$ 上每一指定点收敛的方式通常称为函数列的逐点收敛（又称点点收敛或点态收敛). 逐点收敛是得以讨论极限函数的基本假设.
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">① 偶尔我们也会倒过来讨论:详细研究函数项级数，“同理可证”函数列.</span></small>
+
+---
+
+134
+
+第十二章 函数序列与函数项级数
+
+例 12.1.2 函数列  $\{f_{n}(x)\}$ ,  $f_{n}(x)=x^{n}$ ，在其收敛域的子集区间 [0,1] 上逐点收敛到极限函数
+
+$$
+f (x) = \left\{ \begin{array}{l l} 0, & 0 \leqslant x <   1, \\ 1, & x = 1. \end{array} \right.
+$$
+
+注意, 函数列中的每一项均为连续函数, 但极限函数有间断点, 即
+
+$$
+\lim _ {x \to x _ {0}} \lim _ {n \to + \infty} f _ {n} (x) \neq \lim _ {n \to + \infty} \lim _ {x \to x _ {0}} f _ {n} (x). \tag {12.1.3}
+$$
+
+例 12.1.3 函数列  $\{f_{n}(x)\}$ ,  $f_{n}(x)=\frac{x^{n+1}}{n+1}\ (n=1,2,\cdots)$ ，在 [0,1] 上逐点收敛到极限函数  $f(x)\equiv0$ 。可以看出，其相应的导函数列  $\{f_{n}^{\prime}(x)\}$ ,  $f_{n}^{\prime}(x)=x^{n}$ ，虽然逐点收敛到极限函数
+
+$$
+g (x) = \left\{ \begin{array}{l l} 0, & 0 \leqslant x <   1, \\ 1, & x = 1, \end{array} \right.
+$$
+
+但此极限函数在 $x = 1$ 处并不可导 (单侧导数), 当然也谈不上等于极限函数 $f(x)$ 的导函数 $f'(x)$ 了, 即
+
+$$
+\lim _ {n \to + \infty} \frac {\mathrm{d}}{\mathrm{d} x} f _ {n} (x) \neq \frac {\mathrm{d}}{\mathrm{d} x} \Big (\lim _ {n \to + \infty} f _ {n} (x) \Big) = 0, \tag {12.1.4}
+$$
+
+这里左端项在 x = 1 处没有定义.
+
+例12.1.4 函数列 $\{f_n(x)\}$, $f_n(x) = nx(1 - x^2)^n$, 在 $[0,1]$ 上逐点收敛到极限函数 $f(x) \equiv 0$. 考察 $f_n(x)$ 的积分
+
+$$
+\int_ {0} ^ {1} f _ {n} (x) \mathrm{d} x = \frac {n}{2 (n + 1)} \rightarrow \frac {1}{2} \quad (n \rightarrow + \infty).
+$$
+
+注意到极限函数 $f(x)$ 的积分 $\int_0^1 f(x)\mathrm{d}x = 0,$ 即
+
+$$
+\int_ {0} ^ {1} \lim _ {n \to + \infty} f _ {n} (x) \mathrm{d} x \neq \lim _ {n \to + \infty} \int_ {0} ^ {1} f _ {n} (x) \mathrm{d} x. \tag {12.1.5}
+$$
+
+从这些例子可以看出, 虽然给定的函数列都逐点收敛, 但函数列中每个函数具有的若干重要的分析性质并不能传递给极限函数. 而到底能否把每个函数的性质传递给极限函数, 我们是通过把极限函数计算出来再加以验证的. 这种做法虽然具有其本质性, 但显然也给我们带来极大的不便, 因为一般来说求出极限函数可能并不比证明其存在性容易.
+
+如何不必求出极限函数的具体表达而又能保证重要的分析性质得以传承到极限函数, 是分析中的一个基本问题. 进一步的分析发现, 函数列的点态收敛有点太弱, 不足以保证性质的传承. 这是因为对于不同的收敛点, 由于收敛速度可能有快有慢, 收敛的步调不一致, 从而导致某些点 “掉队” 了. 为了克服这个问题, 我们引入下面的一致收敛概念.
+
+---
+
+12.1 函数列与函数项级数的基本问题
+
+135
+
+定义12.1.2 设 $E \subseteq \mathbb{R}$. 称函数列 $\{f_n\}$ 在 $E$ 上一致收敛到 $f$, 是指对任何 $\varepsilon > 0$, 存在 $N \geqslant 1$, 使得当 $n \geqslant N$ 时, 对任何 $x \in E$ 成立 $\left|f_n(x) - f(x)\right| < \varepsilon$. 记为 $f_n(x) \Rightarrow f(x) (n \to +\infty)(x \in E)$. 也简称为 $\{f_n(x)\}$ 关于 $x \in E$ 一致收敛.
+
+完全类似, 我们称函数项级数 $\sum_{n=1}^{+\infty} u_n(x)$ 在 $E$ 上一致收敛到函数 $S(x)$, 是指它的部分和组成的函数列 $\{S_n(x)\}$ 在 $E$ 上一致收敛到 $S(x)$, 记为 $\sum_{n=1}^{+\infty} u_n(x) \Rightarrow S(x) (x \in E)$.
+
+显然, 一致收敛蕴涵着逐点收敛, 并且一致收敛的极限函数等同于点态收敛的极限函数. 一致性强调的是定义中的 $N$ 仅与 $\varepsilon$ 有关, 与 $x$ 在 $E$ 中的位置无关.
+
+我们只对集合 $E$ 为无限集的情形感兴趣, 因为有限集的情形是平凡的.
+
+容易看出, 函数列 $\{f_n\}$ 在 $E$ 上一致收敛到 $f$ 当且仅当
+
+$$
+\lim _ {n \to + \infty} \sup _ {x \in E} \left| f _ {n} (x) - f (x) \right| = 0,
+$$
+
+即
+
+$$
+\varlimsup_ {n \to + \infty} \sup _ {x \in E} \left| f _ {n} (x) - f (x) \right| = 0.
+$$
+
+所以下面的 Cauchy 准则成立.
+
+定理 12.1.1 (Cauchy 准则) 函数列  $\{f_{n}\}$  在 E 上一致收敛当且仅当对任何  $\varepsilon > 0$ ，存在  $N \geqslant 1$ ，使得当  $m, n \geqslant N$  时，对任何  $x \in E$  成立  $\left|f_{m}(x) - f_{n}(x)\right| < \varepsilon$ 。即
+
+$$
+\lim _ {m, n \to + \infty} \sup _ {x \in E} \left| f _ {m} (x) - f _ {n} (x) \right| = 0,
+$$
+
+即
+
+$$
+\varlimsup_ {m, n \to + \infty} \sup _ {x \in E} \left| f _ {m} (x) - f _ {n} (x) \right| = 0.
+$$
+
+函数项级数一致收敛的 Cauchy 准则, 只需将定理中的函数列  $\{f_{n}\}$  改为函数项级数的部分和序列  $\{S_{n}(x)\}$  即可.
+
+Cauchy 准则的最大特点之一是无须知道极限函数的具体表述, 它的优点在于保证了极限函数的存在性. 当然, 也可以理解为该准则的一个缺憾: 不能给出极限函数的描述.
+
+例12.1.5 证明:函数列 $\{f_n(x)\}$, $f_n(x) = \frac{D(x)}{n}$, $D(x)$ 是Dirichlet函数, 在 $\mathbb{R}$ 上一致收敛到极限函数 $f(x) = 0$.
+
+证明 事实上, 我们可以利用下面的不等式证明函数列的一致收敛性而不必考虑极限函数 $f$ 的具体形式. 对于任意的 $n > m \geqslant 1$,
+
+$$
+| f _ {n} (x) - f _ {m} (x) | \leqslant \frac {1}{m}.
+$$
+
+例 12.1.6 试研究例 12.1.2 中的函数列  $\{x^{n}\}$  在 [0,1] 上的一致收敛性.
+
+---
+
+136
+
+第十二章 函数序列与函数项级数
+
+解 我们知道该函数列的极限函数为
+
+$$
+f (x) = \left\{ \begin{array}{l l} 0, & x \in [ 0, 1), \\ 1, & x = 1. \end{array} \right.
+$$
+
+而当 $n\to +\infty$ 时，
+
+$$
+\sup _ {x \in [ 0, 1 ]} \left| x ^ {n} - f (x) \right| = \sup _ {x \in [ 0, 1)} | x ^ {n} | = 1 \not \to 0.
+$$
+
+因此, 函数列非一致收敛.
+
+例 12.1.7 试讨论例 12.1.4 中的函数列  $\{nx(1-x^{2})^{n}\}$  的一致收敛性.
+
+解 注意到
+
+$$
+\sup _ {x \in [ 0, 1 ]} \left| n x (1 - x ^ {2}) ^ {n} \right| \geqslant \frac {n}{\sqrt {2 n + 1}} \frac {(2 n) ^ {n}}{(2 n + 1) ^ {n}} \rightarrow + \infty \neq 0 \quad (n \rightarrow + \infty),
+$$
+
+故所给函数列在 $[0,1]$ 上非一致收敛.
+
+我们对上面例子中的函数列 $\{x^n\}$ 做一些更细致的分析. 可以看出, $\forall \varepsilon > 0$, 对于每个固定的点 $x_0 \in E$, 都可以找到一个 $N = N(x_0)$, 使得当 $n > N$ 时, 有 $|f_n(x_0) - f(x_0)| = x_0^n < \varepsilon$. 但是, 对于不同的 $x_0$, 使得 $x_0^n < \varepsilon$ 成立的最小的 $N$ 可能有很大的区别. 比如, 令 $\varepsilon = \frac{1}{10^{100}}$, 则在 $x_0 = \frac{1}{10^{10}}$ 处, 只要取 $N_0 = 10$ 即可; 在 $x_1 = \frac{1}{10^5}$ 处, 可以取 $N_1 = 20$; 而在 $x_2 = \frac{1}{10}$ 处, 则需要取 $N_2 = 100$. 换句话说, 对任意的 $\varepsilon, 0 < \varepsilon < 1$, 以及对任意给定的 $N$, 都可以找到 $\tilde{x} \in [0,1)$, 使得 $\tilde{x}^N > \varepsilon$, 比如, 这只要取 $\tilde{x} = ^2\sqrt[N]{\varepsilon}$ 即可. 又如, 在函数列 $\{x^n\}$ 中, 对于函数 $x^n$, 对应取点列 $\left\{1 - \frac{1}{n}\right\}$, 则 $f_n\left(1 - \frac{1}{n}\right) \to \frac{1}{\mathrm{e}} (n \to +\infty)$; 如果取点列 $\left\{1 - \frac{1}{n^2}\right\}$, 则 $f_n\left(1 - \frac{1}{n^2}\right) \to 1 (n \to +\infty)$. 在函数列 $\{nx(1 - x^2)^n\}$ 中取点列 $\left\{\frac{1}{\sqrt{2n+1}}\right\}$, 则 $f_n(x_n) \to +\infty (n \to +\infty)$.
+
+这种在不同点, 虽然收敛, 但收敛的速度呈现参差不齐以至于最终导致极限函数的性质呈现 “断崖式” 改变的现象, 恰好是由于不一致收敛造成的. 换言之, 如果不一致收敛, 则难以保证关系式 (12.1.3), (12.1.4) 和 (12.1.5) 中的等号成立.
+
+下面我们再讨论几个关于一致收敛的例子. 注意, 为了考察其一致收敛性, 代之以计算定理 12.1.1 的上确界, 往往给出上确界的估计会更方便些, 但这通常需要对是否一致收敛有个预判, 从而来确定不等式估计是放大还是缩小.
+
+例12.1.8 考察函数列 $\{x(1 - x)^n\}$, $\{nx(1 - x)^n\}$, $\left\{nx(1 - x)^{n^2}\right\}$ 在[0,1]区间上的一致收敛性.
+
+解 容易证明, 这三个函数列的极限函数均为零函数. 注意到当 $n \to +\infty$ 时, 有
+
+$$
+\sup _ {x \in [ 0, 1 ]} \left| x (1 - x) ^ {n} \right| \leqslant \frac {1}{n + 1} \Big (1 - \frac {1}{n + 1} \Big) ^ {n} \to 0,
+$$
+
+---
+
+12.1 函数列与函数项级数的基本问题
+
+137
+
+$$
+\sup _ {x \in [ 0, 1 ]} \left| n x (1 - x) ^ {n} \right| \geqslant \left(1 - \frac {1}{n}\right) ^ {n} \rightarrow \mathrm{e} ^ {- 1} \neq 0,
+$$
+
+$$
+\sup _ {x \in [ 0, 1 ]} \left| n x (1 - x) ^ {n ^ {2}} \right| \leqslant \frac {n}{1 + n ^ {2}} \rightarrow 0.
+$$
+
+因此, $\{x(1 - x)^n\}$ 和 $\left\{nx(1 - x)^{n^2}\right\}$ 在[0,1]上一致收敛, 而 $\{nx(1 - x)^n\}$ 在[0,1]上非一致收敛. □
+
+例 12.1.9 分别考察函数项级数  $\sum_{n=1}^{+\infty} n(1-x)x^{n^{2}}$  和  $\sum_{n=1}^{+\infty} n(1-x)x^{n^{3}}$  在 [0,1) 上的一致收敛性.
+
+解 记 $u_{n}(x) = n(1 - x)x^{n^{2}}$，则易知当 $x = \frac{n^2}{1 + n^2}$ 时 $u_{n}(x)$ 在 $[0,1)$ 上取最大值.
+
+$$
+\sup _ {x \in [ 0, 1)} \left| u _ {n} (x) \right| \geqslant \frac {n}{n ^ {2} + 1} \left(\frac {n ^ {2}}{n ^ {2} + 1}\right) ^ {n ^ {2}} = \frac {1}{n} \cdot \left(1 - \frac {1}{n ^ {2} + 1}\right) ^ {n ^ {2} + 1} \sim \frac {1}{n \mathrm{e}} \quad (n \rightarrow + \infty).
+$$
+
+因此, $\sum_{n=1}^{+\infty}n(1-x)x^{n^{2}}$  在 [0,1) 上非一致收敛.
+
+完全类似, 记  $v_{n}(x)=n(1-x)x^{n^{3}}$ , 有相应的估计
+
+$$
+\sup _ {x \in [ 0, 1)} | v _ {n} (x) | \leqslant \frac {n}{n ^ {3} + 1} \left(\frac {n ^ {3}}{n ^ {3} + 1}\right) ^ {n ^ {3}} = \frac {1}{n ^ {2}} \cdot \left(1 - \frac {1}{n ^ {3} + 1}\right) ^ {n ^ {3} + 1} = O \left(\frac {1}{n ^ {2}}\right) \quad (n \rightarrow + \infty).
+$$
+
+因此, $\sum_{n=1}^{+\infty}n(1-x)x^{n^{3}}$ 在[0,1)上一致收敛.
+
+例 12.1.10 设  $\{f_{n}\}$  在 [0,1] 上点态收敛,  $f_{n}$  可微, 且  $|f_{n}^{\prime}| \leqslant M < +\infty$ . 试证:  $\{f_{n}\}$  在 [0,1] 上一致收敛.
+
+证明 对于 $m, n \geqslant 1$, 任取 $k \geqslant 2$, 令 $x_{j} = \frac{j}{k}$, 则对任何 $j$,
+
+$$
+\begin{array}{l} \left| f _ {m} (x) - f _ {n} (x) \right| \leqslant \left| f _ {m} (x) - f _ {m} \left(x _ {j}\right) \right| + \left| f _ {n} \left(x _ {j}\right) - f _ {n} (x) \right| + \left| f _ {m} \left(x _ {j}\right) - f _ {n} \left(x _ {j}\right) \right| \\ \leqslant 2 M \left| x - x _ {j} \right| + \sum_ {i = 0} ^ {k} \left| f _ {m} (x _ {i}) - f _ {n} (x _ {i}) \right|. \\ \end{array}
+$$
+
+从而, 取 j 使得  $\left|x-x_{j}\right|\leqslant\frac{1}{k}$  可得
+
+$$
+\sup _ {x \in [ 0, 1 ]} | f _ {m} (x) - f _ {n} (x) | \leqslant \frac {2 M}{k} + \sum_ {i = 0} ^ {k} \left| f _ {m} (x _ {i}) - f _ {n} (x _ {i}) \right|.
+$$
+
+因此，
+
+$$
+\varlimsup_{\substack{m\to +\infty \\ n\to +\infty}}\sup_{x\in [0,1]}|f_{m}(x) - f_{n}(x)|\leqslant \frac{2M}{k}.
+$$
+
+---
+
+138
+
+第十二章 函数序列与函数项级数
+
+令 $k\to +\infty$ 得到
+
+$$
+\varlimsup_{\substack{m\to +\infty \\ n\to +\infty}}\sup_{x\in [0,1]}|f_{m}(x) - f_{n}(x)|\leqslant 0.
+$$
+
+即得  $\{f_{n}\}$  在  $[0,1]$  上一致收敛.
+
+从上述例子的证明过程不难看出下面的结论成立:设  $\{f_{n}\}$  在闭区间  $[a,b]$  上逐点收敛， $f_{n}(n=1,2,\cdots)$  均 Lipschitz 连续，且有一致的 Lipschitz 常数，则  $\{f_{n}\}$  在  $[a,b]$  上一致收敛.
+
+由于函数的很多基本性质比如连续可微等都是局部性的, 我们再通过一个例子来引出一个基本概念.
+
+例12.1.11 试研究函数列 $\left\{\frac{1}{nx}\right\}$ 在 $(0, +\infty)$ 内的一致收敛性.
+
+解 $\forall x_0 \in (0, +\infty)$，该函数列的极限均为零，所以极限函数为零函数。但因为当 $n \to +\infty$ 时，
+
+$$
+\sup _ {x \in (0, + \infty)} \left| \frac {1}{n x} \right| = + \infty \not \to 0,
+$$
+
+所以函数列在 $(0, +\infty)$ 内不是一致收敛的.
+
+另一方面, 对任何 $[a, b] \subseteq (0, +\infty)$, 显然当 $n \to +\infty$ 时,
+
+$$
+\sup _ {x \in E} \left| \frac {1}{n x} \right| \leqslant \sup _ {x \in [ a, b ]} \left| \frac {1}{n x} \right| = \frac {1}{n a} \rightarrow 0.
+$$
+
+因此, 函数列 $\left\{\frac{1}{nx}\right\}$ 在任何 $[a, b] \subseteq (0, +\infty)$ 上一致收敛. 一般来说, 当函数列在所考虑集合的紧子集上一致收敛时, 我们称之为内闭一致收敛. 本例是说 $\left\{\frac{1}{nx}\right\}$ 在 $(0, +\infty)$ 中内闭一致收敛.
+
+定义 12.1.3 设函数列  $\{f_{n}(x)\}$  或函数项级数  $\sum_{n=1}^{+\infty} u_{n}(x)$  在区间 I 上有定义, 若对任何闭区间  $[a, b] \subseteq I$ ,  $\{f_{n}(x)\}$  或  $\sum_{n=1}^{+\infty} u_{n}(x)$  在  $[a, b]$  上一致收敛, 则称该函数列或函数项级数在 I 上内闭一致收敛.
+
+如果函数列 $\{f_n(x)\}$ 或函数项级数 $\sum_{n=1}^{+\infty} u_n(x)$ 在 $x_0$ 的一个邻域内一致收敛, 则称其为局部一致收敛.
+
+定义 12.1.3 中的区间 I 通常是开区间或半开半闭区间, 因为对闭区间而言, 内闭的定义是平凡的.
+
+“内闭”是分析中处理开集上定义的研究对象时常用的手法, 通过此区间上的 “内闭” 子集上的性质来分析整个集合上的性质. 比如内闭有界、内闭一致收敛, 等等.
+
+---
+
+12.1 函数列与函数项级数的基本问题
+
+139
+
+不难证明, 对于开区间 $I$ 而言, 内闭一致收敛等价于局部一致收敛. 但内闭一致收敛并不等价于开区间上的一致收敛, 比如 $\{x^n\}$ 在 $(0,1)$ 上是内闭一致收敛的, 但并非一致收敛; 又如函数 $f(x) = \frac{1}{x}$ 在 $(0,1)$ 上内闭有界, 但它并非有界.
+
+朴素说来, 函数列 $\{f_n(x)\}$ 内闭一致收敛到 $f(x)$, 是对任意给定的闭区间, $\forall \varepsilon > 0$, 存在 $N$, 当 $n > N$ 时, $|f_n(x) - f(x)| \leqslant \varepsilon$, 这里的 $N$ 与 $x$ 在闭区间里的位置无关, 但通常与所选的闭区间有关. 比如考察 $\{x^n\}$ 在 $(0,1)$ 上的收敛情况, 一旦 $\delta_1, \delta_2$ 选定, 则在 $[\delta_1, 1 - \delta_2] \subseteq (0,1)$ 内函数列一致收敛, 但比如当 $\delta_1, \delta_2$ 越来越小时, 对应的 $N$ 可能就越来越大, 以至于在 $(0,1)$ 上时, 对于给定的 $\varepsilon > 0$, 无论 $N$ 选得多么大, 都不可能适合所有的闭区间.
+
+## 12.1.2 极限函数的基本问题
+
+本章我们关心的中心问题是:如果函数列中每个函数都具有性质 $P$，且函数列收敛，那么它们的极限函数是否也具有性质 $P$？其中性质 $P$ 主要包括:连续性、可微性以及可积性。如果极限函数仍然具有性质 $P$，我们称该函数列对性质 $P$ 具有传承性，简称性质 $P$ 具有传承性。具体说来，本章我们主要讨论下面三个方面的问题:
+
+(1) 连续性: 如果函数列 $\{f_n\}$ 中的每个函数 $f_n(x)$ 均在 $x_0$ 处连续, 其极限函数 $f$ 是否也在 $x_0$ 也连续? 即是否有 $\lim_{x \to x_0} f(x) = f(x_0)$. 这相当于是否成立
+
+$$
+\lim _ {x \to x _ {0}} \lim _ {n \to + \infty} f _ {n} (x) = \lim _ {n \to + \infty} \lim _ {x \to x _ {0}} f _ {n} (x)?
+$$
+
+(2) 可微性: 如果函数列 $\{f_n\}$ 中的每个函数均可导, 其极限函数 $f$ 是否也可导, 且
+
+$$
+\frac {\mathrm{d}}{\mathrm{d} x} \Big (\lim _ {n \to + \infty} f _ {n} (x) \Big) = \lim _ {n \to + \infty} \frac {\mathrm{d}}{\mathrm{d} x} f _ {n} (x)?
+$$
+
+(3) 可积性: 如果函数列  $\{f_{n}\}$  中的每个函数均在  $[a, b]$  上可积, 其极限函数 f 是否也可积, 且成立
+
+$$
+\int_ {a} ^ {b} \lim _ {n \to + \infty} f _ {n} (x) \mathrm{d} x = \lim _ {n \to + \infty} \int_ {a} ^ {b} f _ {n} (x) \mathrm{d} x?
+$$
+
+## 习题12.1
+
+1. 考虑下列级数,试找出尽可能多的使级数收敛的点:
+
+(1) $\sum_{n=1}^{+\infty}\sin(n!x)$;
+
+(2) $\sum_{n=1}^{+\infty} (\sin(n!x) - \sin((n-1)!x))$.
+
+2. 求下列函数项级数的收敛点集:
+
+---
+
+140
+
+第十二章 函数序列与函数项级数
+
+(1) $\sum_{n=1}^{+\infty} \frac{n-1}{n+1} \left( \frac{x}{3x+1} \right)^n$;
+
+(2) $\sum_{n=1}^{+\infty} n\mathrm{e}^{-nx}$;
+
+(3) $\sum_{n=1}^{+\infty}\left(\frac{x(x+n)}{n}\right)^n$;
+
+(4) $\sum_{n=1}^{+\infty} \frac{x^n}{1 + x^{2n}}$;
+
+(5) $\sum_{n=1}^{+\infty} \frac{n + x}{n^{n + x}}$;
+
+(6) $\sum_{n=1}^{+\infty} \frac{a^n x^n}{a^n + x^n}, a > 0;$
+
+(7) $\sum_{n=1}^{+\infty} \frac{\ln(1 + x^n)}{n^n}, x > 0;$
+
+(8) $\sum_{n=1}^{+\infty} (\sqrt[n]{n}-1)^{x}, x > 0.$
+
+3. 设函数项级数  $\sum_{n=1}^{+\infty} u_{n}(x)$  在有界区间  $[a, b]$  上收敛于  $S(x)$ ，如果  $u_{n}(x)$  ( $n = 1, 2, \cdots$ ) 都是  $[a, b]$  上的非负连续函数，证明: $S(x)$  必在  $[a, b]$  上取到最小值。进一步问: $S(x)$  是否一定能取到最大值？
+
+4. 把上题中的有界闭区间  $[a, b]$  换成开区间  $(a, b)$  或无穷区间, 结论是否成立?
+
+5. 在区间 $[0,1]$ 上递归地定义函数列 $\{f_n\}$ 如下:
+
+$$
+f _ {1} (x) \equiv 1, \quad f _ {n + 1} (x) = \sqrt {x f _ {n} (x)}, \quad n \geqslant 1.
+$$
+
+证明: $\{f_{n}\}$  一致收敛到 [0,1] 上的一个连续函数.
+
+6. 设 $a > 0, f_{1}(x)$ 为 $[0, a]$ 上的可积函数, 递归地定义函数列 $\{f_{n}\}$ 如下:
+
+$$
+f _ {n + 1} (x) = \int_ {0} ^ {x} f _ {n} (t)   \mathrm{d} t, \quad n \geqslant 1.
+$$
+
+证明: $\{f_n\}$ 一致收敛到0.
+
+7. 设  $\{f_{n}(x)\}$  在 I 中一致收敛到  $f(x)$ . 如果对  $n=1,2,\cdots,f_{n}(x)$  均在 I 中一致连续, 证明:  $f(x)$  也在 I 中一致连续.
+
+8. (1) 设 $\{f_n(x)\}$ 在 $I$ 中一致收敛到 $f(x)$. 如果 $g(x)$ 是 $I$ 中的有界函数, 证明: $\{f_n(x)g(x)\}$ 在 $I$ 中一致收敛到 $f(x)g(x)$.
+
+(2) 问是否存在满足如下条件的例子: $\{f_{n}(x)\}$  在某区间 I 中收敛但不一致收敛， $g(x)$  是 I 中非零的有界函数， $\{f_{n}(x)g(x)\}$  在 I 中一致收敛到  $f(x)g(x)$ ?
+
+9. 设 $f_{n}(x)$ 为 $[a, b]$ 中的连续函数列. 如果 $\{f_{n}(x)\}$ 一致收敛到正函数 $f(x)$, 证明: 存在 $N$, 当 $n > N$ 时 $f_{n}(x)$ 也是正函数, 且 $\left\{\frac{1}{f_{n}(x)}\right\}$ 一致收敛到 $\frac{1}{f(x)}$. 如果把闭区间 $[a, b]$ 换成开区间 $(a, b)$, 结论还成立吗?
+
+10. 设  $\{f_{n}(x)\},\{g_{n}(x)\}$  和  $\{h_{n}(x)\}$  是定义在 I 中的函数, 且
+
+$$
+f _ {n} (x) \leqslant g _ {n} (x) \leqslant h _ {n} (x), \quad x \in I.
+$$
+
+如果 $\{f_n(x)\}$ 和 $\{h_n(x)\}$ 一致收敛到 $f(x)$, 证明: $\{g_n(x)\}$ 也一致收敛到 $f(x)$.
+
+---
+
+12.2 一致收敛的判别法则
+
+141
+
+## 12.2 一致收敛的判别法则
+
+本节我们给出函数序列一致收敛的几个常用的判别法则. 除了前面讨论过的可以利用定义以及 Cauchy 准则定理 12.1.1 外, 下面几个定理也是非常基本和重要的. 这些法则与上一章数项级数中的法则, 在表述上有高度的相似性, 比如 Weierstrass 判别法可以与正项级数的比较定理类比, Abel 判别法和 Dirichlet 判别法与数项级数的情形也完全类似.
+
+利用 Cauchy 准则易得如下的 Weierstrass 判别法, 又称 M-判别法或优势级数判别法, 证明省略.
+
+## 定理 12.2.1 (Weierstrass 判别法, M-判别法)
+
+设 $E \subseteq \mathbb{R}, \forall x \in E, |u_n(x)| \leqslant$
+
+$M_{n}$, 而数项级数 $\sum_{n=1}^{+\infty} M_{n}$ 收敛, 则 $\sum_{n=1}^{+\infty} u_{n}(x)$ 关于 $x \in E$ 一致收敛.
+
+上述定理可以推广到如下情形.
+
+## 定理12.2.2
+
+设 $E \subseteq \mathbb{R}, \forall x \in E, |u_n(x)| \leqslant M_n(x)$, 而函数项级数 $\sum_{n=1}M_n(x)$ 关
+
+于 $x \in E$ 一致收敛, 则 $\sum_{n=1}^{+\infty} u_n(x)$ 亦然.
+
+例 12.2.1 设级数  $\sum_{n=1}^{+\infty}a_{n}$  绝对收敛, 则函数项级数  $\sum_{n=1}^{+\infty}a_{n}\sin nx$  和  $\sum_{n=1}^{+\infty}a_{n}\cos nx$  在任何集合  $E \subseteq R$  上均一致收敛.
+
+注 12.2.1 Weierstrass 判别法给出的结论是函数项级数的绝对一致收敛, 绝对一致收敛的内涵可以字面理解, 它是一个比一致收敛还要强的收敛. 因此, 如果讨论条件收敛级数的一致收敛性, 则通常需要下面更精细的判别法.
+
+利用 Abel 变换, 采用完全类似于 (11.3.2) 的不等式估计模式, 容易得到下面的关于一致收敛性的 Abel 判别法和 Dirichlet 判别法, 证略.
+
+## 定理 12.2.3 (Abel 判别法)
+
+设函数项级数  $\sum_{n=1}^{+\infty}u_{n}(x)$  在  $E\subseteq R$  上一致收敛,
+
+函数列 $\{v_{n}(x)\}$ 对于每个取定的 $x\in E$ 关于 $n$ 单调且在 $E$ 上一致有界，则函数项级数 $\sum_{n = 1}^{+\infty}u_n(x)v_n(x)$ 在 $E$ 上一致收敛.
+
+## 定理 12.2.4 (Dirichlet 判别法)
+
+设函数项级数 $\sum_{n=1}^{+\infty} u_n(x)$ 的部分和
+
+$$
+U _ {n} (x) = \sum_ {k = 1} ^ {n} u _ {k} (x)
+$$
+
+---
+
+142
+
+第十二章 函数序列与函数项级数
+
+组成的函数列 $\{U_n(x)\}$ 在 $E \subseteq \mathbb{R}$ 上一致有界, 函数列 $\{v_n(x)\}$ 对于每个取定的 $x \in E$ 关于 $n$ 单调且在 $E$ 上一致收敛到 0 , 则函数项级数 $\sum_{n=1}^{+\infty} u_n(x) v_n(x)$ 在 $E$ 上一致收敛.
+
+例 12.2.2 证明: 级数 $\sum_{n=1}^{+\infty} \frac{\cos nx}{n}$ 和 $\sum_{n=1}^{+\infty} \frac{\sin nx}{n}$ 在 $(0, 2\pi)$ 内闭一致收敛, 即 $\forall \delta, 0 < \delta < \pi$, 级数在 $[\delta, 2\pi - \delta]$ 上一致收敛, 但级数在 $(0, 2\pi)$ 内并非一致收敛.
+
+证明 令 $a_{n}(x) = \cos nx, b_{n}(x) = \frac{1}{n}$, 则 $b_{n}(x)$ 单调递减趋于0，而且
+
+$$
+\left| \sum_ {k = 1} ^ {n} \cos k x \right| \leqslant \frac {1}{\sin \frac {x}{2}}.
+$$
+
+因为 $x \in [\delta, 2\pi - \delta]$, 所以 $\sin \frac{x}{2} \geqslant \sin \frac{\delta}{2}$, 因而有
+
+$$
+\left| \sum_ {k = 1} ^ {n} \cos k x \right| \leqslant \frac {1}{\sin \frac {\delta}{2}}.
+$$
+
+即 $\sum_{k=1}^{n} \cos kx$ 在 $[\delta, 2\pi - \delta]$ 上一致有界. 根据 Dirichlet 判别法知原级数在 $[\delta, 2\pi - \delta]$ 上一致收敛. 同理, 级数 $\sum_{n=1}^{+\infty} \frac{\sin nx}{n}$ 在 $[\delta, 2\pi - \delta]$ 上也一致收敛.
+
+为了证明  $\sum_{n=1}^{+\infty}\frac{\sin nx}{n}$  在  $(0,2\pi)$  内不一致收敛, 取  $x_{m}=\frac{\pi}{4m}$ , 则
+
+$$
+| S _ {2 m} - S _ {m} | = \left| \frac {\sin \frac {(m + 1) \pi}{4 m}}{m + 1} + \dots + \frac {\sin \frac {\pi}{2}}{2 m} \right| \geqslant m \cdot \frac {\sin \frac {\pi}{4}}{2 m} = \frac {1}{2 \sqrt {2}}.
+$$
+
+由 Cauchy 准则知此收敛是逐点收敛但不是一致收敛. 级数 $\sum_{n=1}^{+\infty} \frac{\cos nx}{n}$ 的情形可类似证明.
+
+另外, 不难证明, 这两个级数在 $(0, \pi)$ 上都不是绝对收敛的, 这说明一致收敛的级数未必绝对收敛. 当然, 从例12.1.9可知绝对收敛也不等同于一致收敛. □
+
+类似于定理 11.3.6, 我们也可以将 Abel 判别法与 Dirichlet 判别法推广为如下定理.
+
+定理 12.2.5 设函数项级数  $\sum_{n=1}^{+\infty} u_{n}(x)$  在  $E \subseteq R$  上一致收敛,  $\sum_{n=1}^{+\infty} |v_{n}(x) - v_{n+1}(x)|$  的部分和在 E 上一致有界. 则  $\sum_{n=1}^{+\infty} u_{n}(x) v_{n}(x)$  在 E 上一致收敛.
+
+定理 12.2.6 设函数项级数  $\sum_{n=1}^{+\infty} u_{n}(x)$  和  $\sum_{n=1}^{+\infty} |v_{n}(x) - v_{n+1}(x)|$  的部分和均在
+
+---
+
+12.2 一致收敛的判别法则
+
+143
+
+$E \subseteq \mathbb{R}$ 上一致有界, $\{v_n(x)\}$ 在 $E$ 上一致收敛到 0 , 则 $\sum_{n=1}^{+\infty} u_n(x) v_n(x)$ 在 $E$ 上一致收敛. 对于函数列的一致收敛性, 也有相应的 Abel 判别法和 Dirichlet 判别法, 不再赘述.
+
+## 习题 12.2
+
+1. 判断下列函数项级数的一致收敛性:
+
+(1) $\sum_{n=1}^{+\infty} n\mathrm{e}^{-nx}, \quad x > 0;$
+
+(2) $\sum_{n=1}^{+\infty} \frac{\sin x \sin nx}{\sqrt{n+x}}, \quad x \geqslant 0;$
+
+(3) $\sum_{n=1}^{+\infty} \frac{1}{(1 + nx)^2}, \quad x \in \mathbb{R}$;
+
+(4) $\sum_{n=1}^{+\infty} \frac{nx}{1 + n^5 x^2}, \quad x \in \mathbb{R}$.
+
+2. 研究下面函数列在指定区间上的一致收敛性:
+
+(1) $f_{n}(x) = \frac{1}{1 + nx}$:
+
+(i) x > 0;
+
+(ii)
+
+$0 < x_{0} < x < +\infty.$
+
+(2) $f_{n}(x) = \frac{x^{n}}{1 + x^{n}}:$
+
+(i) $0 < x \leqslant x_0 < 1$;
+
+(ii) $0.9 \leqslant x \leqslant 1.1$.
+
+3. 若 $f_{n}(x)$ 在 $[a, b]$ 上连续, 且 $\{f_{n}(x)\}$ 在 $(a, b)$ 上一致收敛, 证明其在 $[a, b]$ 上一致收敛.
+
+4. 设  $\{x_{n}\}$  是 R 中给定的无穷数列, 证明: 存在 R 上的单调函数  $y = f(x)$ , 使得  $f(x)$  恰在  $x_{n} (n = 1, 2, \cdots)$  处有第一类间断, 且跳跃值  $f(x_{n}^{+}) - f(x_{n}^{-})$  等于给定的实数  $a_{n}$ , 其中  $\sum_{n=1}^{+\infty}|a_{n}| < +\infty$ .
+
+5. 设 $\sum_{n=1}^{+\infty} u_n(x)$ 在 $[a, b]$ 上收敛, $u_n(x)$ 可导且 $\sum_{n=1}^{+\infty} u_n'(x)$ 的部分和 $\{S_n'(x)\}$ 在 $[a, b]$ 上一致有界, 证明: $\sum_{n=1}^{+\infty} u_n(x)$ 在 $[a, b]$ 上一致收敛.
+
+6. 若级数 $\sum_{n=1}^{+\infty} a_n$ 收敛, 证明: 级数 $\sum_{n=1}^{+\infty} a_n e^{-nx}$ 在 $0 \leqslant x < +\infty$ 上一致收敛.
+
+7. 设 $\{f_n(x)\}$ 是定义在 $[a, b] \setminus \{x_0\}$ 的函数列，其中 $x_0 \in [a, b]$. 如果 $f_n(x) \Rightarrow f(x) (x \in [a, b] \setminus \{x_0\})$，并且对每个 $n \geqslant 1$ 有 $\lim_{x \to x_0} f_n(x) = c_n$. 证明:$\lim_{n \to +\infty} c_n$ 存在并且有 $\lim_{x \to x_0} f(x) = \lim_{n \to +\infty} c_n$.
+
+8. 证明: 级数 $\sum_{n=1}^{+\infty}(-1)^{n}\frac{1}{n+x}$ 在 $(0,+\infty)$ 上一致收敛但并不绝对逐点收敛.
+
+9. 研究下面级数在指定区间上的一致收敛性:
+
+(1) $\sum_{n=1}^{+\infty} \frac{1}{(x+n)(x+n+1)}, \quad 0 < x < +\infty;$
+
+(2) $\sum_{n=1}^{+\infty} \frac{\sin\left(n + \frac{1}{2}\right)x}{n^4 + x^4}, -\infty < x < +\infty;$
+
+---
+
+144
+
+第十二章 函数序列与函数项级数
+
+(3) $\sum_{n=2}^{+\infty}\ln\left(1+\frac{x^2}{n\ln n}\right),\quad -L < x < L,\; L > 0;$
+(4) $\sum_{n=1}^{+\infty} \frac{(-1)^n}{n + \sin x}, 0 < x < 2\pi;$
+(5) $\sum_{n=1}^{+\infty} 2^n \sin \left(\frac{1}{3^n x}\right), \quad 0 < x < +\infty.$
+
+10. 证明: 函数项级数 $\sum_{n=2}^{+\infty} \frac{\cos nx}{n \ln n}$ 在 $(0, \pi]$ 上不一致收敛.
+
+11. 设 $f(x)$ 是定义在 $[a, b]$ 上的函数. 对 $n \geqslant 1$, 令
+
+$$
+f _ {n} (x) = \frac {[ n f (x) ]}{n}, \quad x \in [ a, b ],
+$$
+
+其中  $[\cdot]$  是取整函数. 证明:  $\{f_{n}(x)\}$  一致收敛到  $f(x)$ .
+
+12. 设  $u_{n}(x)$  ( $n=1,2,\cdots$ ) 是  $[a,b]$  上的单调函数, 如果级数
+
+$$
+\sum_ {n = 1} ^ {+ \infty} u _ {n} (a) \text {和} \sum_ {n = 1} ^ {+ \infty} u _ {n} (b)
+$$
+
+绝对收敛, 证明: 级数  $\sum_{n=1}^{+\infty} u_{n}(x)$  在  $[a, b]$  上绝对并一致收敛.
+
+13. 证明: 级数
+
+$$
+\sum_ {n = 0} ^ {+ \infty} (- 1) ^ {n} x ^ {n} (1 - x)
+$$
+
+在  $[0,1]$  上绝对并一致收敛, 但并不绝对一致收敛.
+
+14. 设在区间 $[0,1]$ 上定义
+
+$$
+u _ {n} (x) = \left\{ \begin{array}{l l} 1 / n, & x = 1 / n, \\ 0, & x \neq 1 / n. \end{array} \right.
+$$
+
+证明: $\sum_{n=1}^{+\infty} u_n(x)$ 在 $[0,1]$ 上一致收敛.
+
+15. 设 $\{u_n(x)\}$ 是 $[a, b]$ 中的连续函数列, 如果 $\sum_{n=1}^{+\infty} u_n(x)$ 在 $[a, b)$ 中每点收敛, 但 $\sum_{n=1}^{+\infty} u_n(b)$ 发散, 证明: $\sum_{n=1}^{+\infty} u_n(x)$ 在 $[a, b)$ 中不一致收敛.
+
+16. 讨论级数
+
+$$
+\sum_ {n = 1} ^ {+ \infty} \frac {n x}{(1 + x) (1 + 2 x) \cdots (1 + n x)}
+$$
+
+---
+
+12.2 一致收敛的判别法则
+
+145
+
+在区间 $[0, \lambda]$ 和 $[a, +\infty)$ 上的一致收敛性, 其中 $\lambda > 0$.
+
+17. 证明: 函数列
+
+$$
+f _ {n} (x) = x n ^ {- \alpha} (\ln n) ^ {\alpha}
+$$
+
+在 $[0, +\infty)$ 上一致收敛的充要条件是 $\alpha < 1$.
+
+18. 设 $f_{1}$ 在 $[a, b]$ 上 Riemann 可积, 定义
+
+$$
+f _ {n + 1} (x) = \int_ {a} ^ {x} f _ {n} (t)   \mathrm{d} t, \quad n = 1, 2, \dots ,
+$$
+
+证明: 函数列  $\{f_{n}\}$  在  $[a,b]$  上一致收敛于 0.
+
+19. 设 $f_{n}(x), g_{n}(x)$ 在区间 $I$ 中分别一致收敛到 $f(x), g(x)$. 如果对每一个 $n, f_{n}(x)$ 和 $g_{n}(x)$ 均有界 (不要求一致有界), 证明: $f(x)$ 和 $g(x)$ 也均有界, 且 $f_{n}(x)g_{n}(x)$ 在 $I$ 中一致收敛到 $f(x)g(x)$.
+
+20. 如果上题中去掉 $f_{n}$ 和 $g_{n}$ 有界的假设, 问结论是否还成立? 请证明或举反例说明之.
+
+21. 设 $u_{i}(x) (i = 1,2,\dots)$ 在 $[a,b]$ 上可导, 级数 $\sum_{i=1}^{+\infty} u_{i}(x)$ 在 $[a,b]$ 上收敛, 如果有正常数 $M$, 使得对任意 $x \in [a,b]$ 及一切正整数 $n$ 都有
+
+$$
+\left| \sum_ {i = 1} ^ {n} u _ {i} ^ {\prime} (x) \right| \leqslant M,
+$$
+
+证明: $\sum_{i=1}^{+\infty} u_i(x)$ 在 $[a, b]$ 上一致收敛.
+
+22. 设 $\{P_n(x)\}$ 为一多项式列. 证明: 如果 $\{P_n(x)\}$ 在 $\mathbb{R}$ 中一致收敛到函数 $f(x)$, 则 $f(x)$ 也必为多项式.
+
+23. 证明: 级数
+
+$$
+\sum_ {n = 1} ^ {+ \infty} \frac {x ^ {n}}{1 + x + x ^ {2} + \cdots + x ^ {2 n - 1}} \cos n x
+$$
+
+在 $(0,1]$ 中一致收敛.
+
+24. 考虑 R 上的函数列  $f_{n}(x)=\frac{1}{n}\mathrm{e}^{-n^{2}x^{2}}(n=1,2,\cdots)$ . 证明: 在 R 上
+
+(1)  $f_{n}(x)(n=1,2,\cdots)$  一致收敛到 0.
+(2)  $f_{n}^{\prime}(x)(n=1,2,\cdots)$  收敛到 0, 但并非一致收敛.
+
+25. 试举出一个函数列 $\{f_n(x)\}$, 使得它同时满足以下性质:
+
+(1) $\{f_n(x)\}$ 在 $(-\infty, +\infty)$ 点态收敛.
+(2) $\{f_n(x)\}$ 在 $(-\infty, +\infty)$ 不一致收敛.
+(3) $\{f_n'(x)\}$ 在 $(-\infty, +\infty)$ 一致收敛.
+
+---
+
+146
+
+第十二章 函数序列与函数项级数
+
+26. 设 $\{b_n\}$ 为单调下降的正数列. 证明: $\sum_{n=1}^{+\infty} b_n \sin nx$ 在 $[- \pi, \pi]$ 上一致收敛的充要条件是 $\lim_{n \to +\infty} nb_n = 0$.
+
+## 12.3 极限函数的分析性质
+
+本节我们重点讨论在一致收敛条件下, 函数列的极限函数 (函数项级数的和函数) 几个基本性质的传承. 我们将给出几个重要的定理, 这些定理可以简要概括为: 如果函数列满足一致收敛的条件 (可微时要求导函数列一致收敛), 那么极限函数将继承原来函数列的连续性、可微性和可积性. 由此可以看出一致收敛的重要性. 当然, 一般来说, 一致收敛是保证这些性质得以传承的充分而非必要条件.
+
+## 12.3.1 极限函数的连续性
+
+定理 12.3.1 设函数列  $\{f_{n}(x)\}$  在  $E \subseteq R$  上一致收敛到  $f(x)$ . 若  $f_{n}(x)$  在  $x_{0} \in E$  处连续, 则  $f(x)$  也在  $x_{0}$  处连续.
+
+证明 任取 $x \in E$. 则 $\forall n \geqslant 1$,
+
+$$
+\begin{array}{l} | f (x) - f (x _ {0}) | \leqslant | f (x) - f _ {n} (x) | + | f _ {n} (x) - f _ {n} (x _ {0}) | + | f _ {n} (x _ {0}) - f (x _ {0}) | \\ \leqslant 2 \sup _ {y \in E} | f _ {n} (y) - f (y) | + | f _ {n} (x) - f _ {n} (x _ {0}) |. \tag {12.3.1} \\ \end{array}
+$$
+
+令 $x \to x_0$ 并利用 $f_n$ 在 $x_0$ 的连续性得到
+
+$$
+\varlimsup_ {\substack {x \to x _ {0} \\ x \in E}} | f (x) - f (x _ {0}) | \leqslant 2 \sup_ {\xi \in E} | f _ {n} (\xi) - f (\xi) |.
+$$
+
+再令 $n\to +\infty$ 得 $\varlimsup_{\substack{x\to x_0\\ x\in E}}|f(x) - f(x_0)|\leqslant 0.$ 定理得证.
+
+注 12.3.1 用极限的语言来表述定理 12.3.1, 则可以写成
+
+$$
+\lim_{\substack{x\to x_{0}\\ x\in E}}\lim_{n\to +\infty}f_{n}(x) = \lim_{n\to +\infty}\lim_{\substack{x\to x_{0}\\ x\in E}}f_{n}(x).\tag{12.3.2}
+$$
+
+即在定理条件下, 两个极限过程  $x \rightarrow x_{0}$  和  $n \rightarrow +\infty$  可交换次序.
+
+注意, 定理是说, 只要函数列中的每一个函数在收敛域 $E$ 中的一点 $x_0$ 处连续, 则一致收敛就能保证极限函数在该点处连续. 这是一个很重要的局部性质, 有着广泛的应用.
+
+---
+
+12.3 极限函数的分析性质
+
+147
+
+根据上述定理, 不难得到下面推论.
+
+推论 12.3.2 设  $f_{n}(x) \in C[a, b] \quad (n = 1, 2, \cdots)$ ,  $f_{n}(x) \Rightarrow f(x) \quad (n \to +\infty)$ ,  $x \in [a, b]$ ，则  $f(x) \in C[a, b]$ .
+
+推论 12.3.3 设  $f_{n}(x) \in C(a, b) \quad (n = 1, 2, \cdots)$ ，且  $\{f_{n}(x)\}$  在  $(a, b)$  内闭一致收敛于  $f(x)$ ，则  $f(x) \in C(a, b)$ .
+
+仿照定理 12.3.1 的证明, 可以证明如下结论:
+
+定理 12.3.4 设  $\{f_{n}(x)\}$  是定义在  $[a,b]\setminus\{x_{0}\}$  的函数列, 其中  $x_{0}\in[a,b]$ . 如果  $f_{n}(x)\Rightarrow f(x)\quad(n=1,2,\cdots), x\in[a,b]\setminus\{x_{0}\}$ , 并且对每个  $n\geqslant1$  有  $\lim_{x\to x_{0}}f_{n}(x)=c_{n}$ . 则  $\lim_{n\to+\infty}c_{n}$  存在并且有  $\lim_{x\to x_{0}}f(x)=\lim_{n\to+\infty}c_{n}$ , 即
+
+$$
+\lim _ {x \to x _ {0}} \lim _ {n \to + \infty} f _ {n} (x) = \lim _ {n \to + \infty} \lim _ {x \to x _ {0}} f _ {n} (x).
+$$
+
+证明 补充定义 $f_{n}(x_{0}) = c_{n}$. 由于
+
+$$
+| f _ {m} (x) - f _ {n} (x) | \leqslant \sup _ {\xi \in [ a, b ] \setminus \{x _ {0} \}} | f _ {m} (\xi) - f _ {n} (\xi) |, \quad \forall   m, n \geqslant 1, x \in [ a, b ] \setminus \{x _ {0} \},
+$$
+
+令 $x \to x_0 (x \in [a, b])$ 即得
+
+$$
+| f _ {m} (x _ {0}) - f _ {n} (x _ {0}) | \leqslant \sup _ {\xi \in [ a, b ] \setminus \{x _ {0} \}} | f _ {m} (\xi) - f _ {n} (\xi) |, \quad \forall   m, n \geqslant 1.
+$$
+
+从而由 $\{f_n\}$ 的一致收敛性得到 $\{f_n(x_0)\}$ 收敛. 设极限为 $f(x_0)$, 即 $\lim_{n\to +\infty}c_n$.
+
+易见补充定义后, $\{f_n\}$ 在 $x_0$ 点连续, 在 $[a, b]$ 上一致收敛到 $f$. 于是, 由定理12.3.1即得结论. □
+
+定理中的两个常见的特殊情况是 $x_0$ 为区间端点 $a$ 或 $b$. 读者可试着给出相应结论的描述.
+
+上面关于函数列的所有讨论均可以以适当的形式对应到函数项级数中去, 我们仅复述一个结论, 证明不再赘述.
+
+定理 12.3.5 设 $u_{n}(x) \in C[a, b]$ ($n = 1, 2, \cdots$), 函数项级数 $\sum_{n=1}^{+\infty} u_{n}(x)$ 在 $[a, b]$ 上一致收敛, 则和函数 $\sum_{n=1}^{+\infty} u_{n}(x) \in C[a, b]$.
+
+若 $\sum_{n=1}^{+\infty} u_n(x)$ 在 $[a, b] \setminus \{x_0\}$ 上一致收敛, 其中 $x_0 \in [a, b]$, 如果
+
+$$
+\lim _ {x \to x _ {0}} u _ {n} (x) = a _ {n}, \quad n = 1, 2, \dots ,
+$$
+
+则 $\sum_{n=1}^{+\infty} a_n$ 收敛, 且
+
+$$
+\lim _ {x \to x _ {0}} \sum_ {n = 1} ^ {+ \infty} u _ {n} (x) = \sum_ {n = 1} ^ {+ \infty} \left(\lim _ {x \to x _ {0}} u _ {n} (x)\right) = \sum_ {n = 1} ^ {+ \infty} a _ {n}.
+$$
+
+---
+
+148
+
+第十二章 函数序列与函数项级数
+
+![](../../raw/pages_0449-0464/images/page_452_image_2.jpg)
+
+注12.3.2 定理12.3.4中的闭区间 $[a, b]$ 是非实质性的. 事实上, 定理结论对于任何一个以 $x_0$ 为其聚点的集合 $E$ 均成立. 证明完全类似.
+
+例 12.3.1 根据一致收敛对连续性的传承, 容易求得下面的极限:
+
+$$
+\lim _ {x \to 1} \sum_ {n = 1} ^ {+ \infty} \frac {x ^ {n}}{2 ^ {n}} \sin \frac {n \pi x}{2} = \sum_ {n = 1} ^ {+ \infty} \frac {1}{2 ^ {n}} \sin \frac {n \pi}{2} = \sum_ {n = 1} ^ {+ \infty} \frac {(- 1) ^ {n - 1}}{2 ^ {2 n - 1}} = \frac {2}{5}.
+$$
+
+例 12.3.2 由 M-判别法容易得到, 级数  $\sum_{n=1}^{+\infty}\frac{1}{2^{n}}\sin(n!\pi x)$  在 R 上一致收敛, 因此其和函数在 R 上连续.
+
+例12.3.3 连续函数列 $\{n^2 x\mathrm{e}^{-n^2 x^2}\}$ 在[0,1]上逐点收敛到极限函数 $f(x)\equiv 0$ 极限函数是连续的，但因为
+
+$$
+f _ {n} \left(\frac {1}{n}\right) - f \left(\frac {1}{n}\right) = n \mathrm{e} ^ {- 1} \not \to 0,
+$$
+
+所以并非一致收敛.
+
+例12.3.4 考虑上一章无穷乘积一节中的例11.5.3, Riemann-ζ函数 $\zeta(s) = \sum_{n=1}^{+\infty} \frac{1}{n^s}$. 容易证明, 当 $s > 1$ 时, 该级数收敛, 其和函数 $\zeta(s)$ 可以看成 $(1, +\infty)$ 上 $s$ 的函数. 该函数项级数在 $(1, +\infty)$ 上并不是一致收敛的 (可以验证: $\sum_{n=2}^{+\infty} \frac{1}{n^{1+1/\ln \ln n}}$ 发散), 但在任何闭区间 $I \subset (1, +\infty)$ 上都是一致收敛的, 因此 $\zeta(s)$ 在 $I$ 上连续, 从而是整个定义域 $(1, +\infty)$ 上的连续函数.
+
+例 12.3.5 设  $\{x_{n}\}$  是给定的  $[a,b]$  中的无穷数列, 证明: 存在  $[a,b]$  上的单调函数  $y=f(x)$ , 使得  $f(x)$  恰在  $x_{n}(n=1,2,\cdots)$  处间断.
+
+证明 构造函数
+
+$$
+f _ {n} (x) = \left\{ \begin{array}{l l} - 1 / n ^ {2}, & x <   x _ {n}, \\ 0, & x = x _ {n}, \\ 1 / n ^ {2}, & x > x _ {n}. \end{array} \right.
+$$
+
+则易见级数 $\sum_{n=1}^{+\infty} f_n(x)$ 在 $[a, b]$ 上一致收敛到某函数 $f(x)$, 且 $f(x)$ 在该区间上单调增加.
+
+当 $x \neq x_{n}$ 时, 由一致收敛知 $f(x)$ 显然连续; 而当 $x = x_{n_0}$ 时,
+
+$$
+f (x) = f _ {n _ {0}} (x) + \sum_ {n \neq n _ {0}} f _ {n} (x) = f _ {n _ {0}} (x) + \tilde {f} (x).
+$$
+
+其中  $\tilde{f}(x)$  在  $x_{n_{0}}$  处连续，而  $f_{n_{0}}(x)$  在  $x_{n_{0}}$  处不连续，得证.
+
+![](../../raw/pages_0449-0464/images/page_452_image_18.jpg)
+
+---
+
+12.3 极限函数的分析性质
+
+149
+
+在本例中, 特别地, 如果取 $\{x_{n}\}$ 为某闭区间上的有理点的全体, 可以得到在有理点间断的单调函数.
+
+通过这些例子可以看出, 函数列中每个函数的连续性的好坏以及收敛性的强弱 (逐点收敛、一致收敛、条件一致收敛、绝对一致收敛等) 对极限函数的连续性都有影响. 具体来说, 一方面, 如果函数列中的每个函数都具有连续性, 同时又具有较强的收敛性 (比如一致收敛性), 那么极限函数必定连续; 另一方面, 不严谨地说, 如果函数列中的函数连续性太差, 同时收敛性又很弱, 那么我们对极限函数的连续性自然也没有太高的期望. 一个有趣的问题是: 如果函数列中的每个函数均连续, 同时又具有点态收敛, 那么极限函数的连续性会不会太差? 或者说, 极限函数的连续点会不会还是 “比较多” 的? 下面我们对这个问题做一些进一步的讨论. 为此, 我们先引入如下定义.
+
+定义 12.3.1 若  $E \subseteq R$  是可数个闭集的并集, 则称 E 为  $F_{\sigma}$  集; 若  $E \subseteq R$  是可数个开集的交集, 则称 E 为  $G_{\delta}$  集.
+
+不难验证, $F_{\sigma}$ 集与 $G_{\delta}$ 集具有下面的性质:
+
+$$
+(F _ {\sigma}) ^ {c} = G _ {\delta}, \qquad (G _ {\delta}) ^ {c} = F _ {\sigma},
+$$
+
+其中 $S^c$ 表示集合 $S$ 的余集.
+
+$\mathbb{R}$ 上的开集是 $G_{\delta}$ 集, 闭集是 $F_{\sigma}$ 集.
+
+$\mathbb{R}$ 上的可数点集是 $F_{\sigma}$ 集, 无理点全体是 $G_{\delta}$ 集.
+
+例 12.3.6 证明: 开区间  $I = (a, b)$  上的连续函数  $f(x)$  的连续点集是  $G_{\delta}$  集.
+
+证明 令 $\omega_{f}(x)$ 为 $f(x)$ 在 $x$ 点处的振幅, 则 $f(x)$ 在 $x_0$ 处连续等价于 $\omega_{f}(x_0) = 0$, 从而 $f(x)$ 的连续点的全体为
+
+$$
+\bigcap_ {n = 1} ^ {+ \infty} \left\{x \in I   \Bigg |   \omega_ {f} (x) <   \frac {1}{n} \right\}.
+$$
+
+由于 $\left\{x\in I\mid \omega_f(x) <   \frac{1}{n}\right\}$ 是开集，故 $f(x)$ 的连续点集为 $G_{\delta}$ 集.
+
+回想一下关于函数连续的几个具体例子: Dirichlet 函数处处不连续, Riemann 函数在无理点连续、有理点间断. 结合本例, 我们可以得到下面有趣的结论: 不存在只在有理点连续、无理点间断的函数.
+
+定理 12.3.6 (Baire $^{①}$ 定理) 设 $I \subseteq R$ 是 $F_{\sigma}$ 集, 即 $I = \bigcup_{n=1}^{+\infty} F_{n}$, $F_{n}$ 是闭集 $(n = 1, 2, \cdots)$, 若每个 $F_{n}$ 都没有内点, 则 I 也没有内点.
+
+证明 假设 $I$ 有内点 $x_0$, 则存在 $\delta_0 > 0$, 使 $\bar{B}_{\delta_0}(x_0) \subset I$. 因为 $F_1$ 无内点, 所以必存在 $x_1 \in B_{\delta_0}(x_0)$, 且有 $x_1 \notin F_1$. 又因为 $F_1$ 是闭集, 所以可以取到 $\delta_1 (0 < \delta_1 < 1)$,
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">① Baire, René-Louis, 1874 年 1 月 21 日 — 1932 年 7 月 5 日, 法国数学家.</span></small>
+
+---
+
+150
+
+第十二章 函数序列与函数项级数
+
+使得
+
+$$
+\overline {{B}} _ {\delta_ {1}} (x _ {1}) \cap F _ {1} = \varnothing , \quad \text {且} \quad \overline {{B}} _ {\delta_ {1}} (x _ {1}) \subset B _ {\delta_ {0}} (x _ {0}).
+$$
+
+重复上述过程, 考虑  $\overline{B}_{\delta_{1}}(x_{1})$  和集合  $F_{2}$ , 可取  $\delta_{2}(0 < \delta_{2} < \frac{1}{2})$  使得
+
+$$
+\overline {{B}} _ {\delta_ {2}} (x _ {2}) \cap F _ {2} = \varnothing , \quad \text {且} \quad \overline {{B}} _ {\delta_ {2}} (x _ {2}) \subset B _ {\delta_ {1}} (x _ {1}).
+$$
+
+继续此过程, 可得到点列  $\{x_{n}\}$  与数列  $\{\delta_{n}\}(0 < \delta_{n} < \frac{1}{n})$ , 使得对每个正整数 n, 有
+
+$$
+\overline {{B}} _ {\delta_ {n}} (x _ {n}) \subset B _ {\delta_ {n - 1}} (x _ {n - 1}), \quad \overline {{B}} _ {\delta_ {n}} (x _ {n}) \cap F _ {n} = \varnothing .
+$$
+
+由于当 $m > n$ 时, 有 $x_{m} \in B_{\delta_{n}}(x_{n})$, 故
+
+$$
+| x _ {m} - x _ {n} | <   \delta_ {n} <   \frac {1}{n}.
+$$
+
+即 $\{x_{n}\}$ 是 $\mathbb{R}$ 中的基本列, 从而收敛, 即 $\exists x\in \mathbb{R}$, 使得 $\lim_{n\to +\infty}x_n = x$. 注意到 $m > n$ 时,
+
+$$
+| x - x _ {n} | \leqslant | x - x _ {m} | + | x _ {m} - x _ {n} | <   | x - x _ {m} | + \delta_ {n},
+$$
+
+令 $m \to +\infty$ 有 $|x - x_n| \leqslant \delta_n$. 这说明 $x \in \overline{B}_{\delta_n}(x_n)$, 即对一切 $n, x \notin I$. 这与 $x \in I$ 矛盾, 从而假设不成立. $\square$
+
+定理 12.3.7 设 $f_n \in C(\mathbb{R}) (n=1,2,\cdots), \{f_n(x)\}$ 逐点收敛于 $f(x)$，即
+
+$$
+\lim _ {n \to + \infty} f _ {n} (x) = f (x), \quad \forall x \in \mathbb {R}.
+$$
+
+则 $f(x)$ 的连续点集
+
+$$
+\bigcap_ {m = 1} ^ {+ \infty} \bigcup_ {n = 1} ^ {+ \infty} E _ {n} ^ {\circ} \left(\frac {1}{m}\right)
+$$
+
+是 $\mathbb{R}$ 中稠密的 $G_{\delta}$ 集, 其中 $E_{n}(\varepsilon) = \{x \in \mathbb{R} | |f_{n}(x) - f(x)| \leqslant \varepsilon\}$, $E^{\circ}$ 表示集合 $E$ 的内点全体.
+
+证明 我们将证明分成三步:
+
+(1) 首先, $\mathbb{R}$ 上任一开集上的实值函数 $h(x)$ 的连续点集都是 $G_{\delta}$ 集. 特别地, 定理中的函数 $f$ 的连续点集是如下的 $G_{\delta}$ 集:
+
+$$
+\bigcap_ {m = 1} ^ {+ \infty} \bigcup_ {n = 1} ^ {+ \infty} E _ {n} ^ {\circ} \left(\frac {1}{m}\right),
+$$
+
+其中 $E_{n}(\varepsilon) = \{x\in \mathbb{R}\mid |f_{n}(x) - f(x)|\leqslant \varepsilon \}$ ， $E^{\circ}$ 表示集合 $E$ 的内点全体.
+
+---
+
+12.3 极限函数的分析性质
+
+151
+
+事实上, 如果 $x_0$ 是 $f$ 的连续点, 由题设知, 对 $\varepsilon > 0$, 存在 $k_0$, 使得
+
+$$
+| f _ {k _ {0}} (x _ {0}) - f (x _ {0}) | <   \frac {\varepsilon}{3},
+$$
+
+且存在 $\delta > 0$, 使得
+
+$$
+| f (x) - f (x _ {0}) | <   \frac {\varepsilon}{3}, \qquad | f _ {k _ {0}} (x) - f _ {k _ {0}} (x _ {0}) | <   \frac {\varepsilon}{3}, \quad | x - x _ {0} | <   \delta .
+$$
+
+从而可知
+
+$$
+| f _ {k _ {0}} (x) - f (x) | <   \varepsilon , \quad x \in E _ {k _ {0}} ^ {\circ} (\varepsilon).
+$$
+
+故 $x_0 \in \bigcup_{k=1}^{+\infty} E_k^\circ(\varepsilon)$. 又由 $\varepsilon$ 的任意性, 知
+
+$$
+x _ {0} \in \bigcap_ {m = 1} ^ {+ \infty} \bigcup_ {k = 1} ^ {+ \infty} E _ {k} ^ {\circ} \left(\frac {1}{m}\right).
+$$
+
+反过来, 假设 $x_0 \in \bigcap_{m=1}^{+\infty} \bigcup_{k=1}^{+\infty} E_k^\circ\left(\frac{1}{m}\right)$, 则对 $\varepsilon > 0$, 取 $m > \frac{3}{\varepsilon}$. 由于 $x_0 \in \bigcup_{k=1}^{+\infty} E_k^\circ\left(\frac{1}{m}\right)$, 故存在 $k_0$, 使得 $x_0 \in E_{k_0}^\circ\left(\frac{1}{m}\right)$, 从而可得 $B_{\delta_0}(x_0) \subset E_{k_0}\left(\frac{1}{m}\right)$ 即
+
+$$
+| f _ {k _ {0}} (x) - f (x) | \leqslant \frac {1}{m} <   \frac {\varepsilon}{3}, \quad | x - x _ {0} | <   \delta_ {0}.
+$$
+
+注意到 $f_{k_0}(x)$ 在 $x = x_0$ 处连续，故有 $\delta_1 > 0$ ，使得
+
+$$
+| f _ {k _ {0}} (x) - f _ {k _ {0}} (x _ {0}) | <   \frac {\varepsilon}{3}, \quad x \in B _ {\delta_ {1}} (x _ {0}).
+$$
+
+记 $\delta = \min \{\delta_0,\delta_1\}$ ，则当 $x\in B_{\delta}(x_0)$ 时，有
+
+$$
+| f (x) - f (x _ {0}) | <   \varepsilon ,
+$$
+
+这说明  $f(x)$  在  $x = x_{0}$  处连续.
+
+(2) 下面证明:如果 $G$ 是 $\mathbb{R}$ 中的开集，则 $f^{-1}(G)$ 是 $F_{\sigma}$ 集. 由于 $\mathbb{R}$ 中的开集 $G$ 总可以写成可数个开区间的并, 故只需证明对于开区间 $(a, b)$. 则 $f^{-1}((a, b))$ 是 $F_{\sigma}$ 集即可.
+
+事实上, 我们知道对每个连续函数 $f_{n}$, 集合
+
+$$
+\{x \mid f _ {n} (x) \geqslant a + \varepsilon \}
+$$
+
+---
+
+152
+
+第十二章 函数序列与函数项级数
+
+是闭集, 由 $f_{n}(x)$ 的连续性, 可得
+
+$$
+\{x | f (x) > a \} = \bigcup_ {n = 1} ^ {+ \infty} \bigcup_ {m = 1} ^ {+ \infty} \bigcap_ {k = m} ^ {+ \infty} \left\{x \Bigg | f _ {k} (x) \geqslant a + \frac {1}{n} \right\}
+$$
+
+是 $F_{\sigma}$ 集. 同理 $\{x|f(x) < b\}$ 也是 $F_{\sigma}$ 集合. 从而交集
+
+$$
+f ^ {- 1} ((a, b)) = \{x \mid f (x) > a \} \bigcap \{x \mid f (x) <   b \}
+$$
+
+是 $F_{\sigma}$ 集.
+
+因此, 我们证明了开集 $G \subseteq \mathbb{R}$ 对应的集合 $f^{-1}(G)$ 为 $F_{\sigma}$ 集. 类似可得闭集 $F \subseteq \mathbb{R}$ 对应的集合 $f^{-1}(F)$ 为 $G_{\delta}$ 集.
+
+(3) 为了证明 $f(x)$ 的连续点是稠密的 $G_{\delta}$ 集, 只需证其不连续点是无内点的 $F_{\sigma}$ 集即可. 为此, 记 $D(f)$ 为 $f(x)$ 的不连续点集合. $\forall a \in D(f)$, 存在 $p, q \in \mathbb{Q} (p < q)$, 使得
+
+$$
+p <   f (a) <   q \iff a \in f ^ {- 1} \big ((p, q) \big) \iff a \notin f ^ {- 1} \big (\mathbb {R} \setminus (p, q) \big).
+$$
+
+另一方面, 对应满足 $\lim_{n\to +\infty}a_n = a$ 的点列 $\{a_n\}$, 成立
+
+$$
+f (a _ {n}) \notin (p, q) \Longleftrightarrow a _ {n} \notin f ^ {- 1} \big ((p, q) \big) \Longleftrightarrow a _ {n} \in f ^ {- 1} \big (\mathbb {R} \setminus (p, q) \big).
+$$
+
+于是
+
+$$
+a \in \overline {{f ^ {- 1} \big (\mathbb {R} \setminus (p , q) \big)}} \setminus f ^ {- 1} \big (\mathbb {R} \setminus (p, q) \big).
+$$
+
+所以
+
+$$
+D(f) = \bigcup_{\substack{p <   q\\ p,q\in \mathbb{Q}}}\Big(\overline{f^{-1}(\mathbb{R}\setminus(p,q))}\setminus f^{-1}(\mathbb{R}\setminus (p,q))\Big)
+$$
+
+由于集合 $f^{-1}(\mathbb{R}\setminus (p,q))$ 为 $G_{\delta}$ 集, 故 $\overline{f^{-1}(\mathbb{R}\setminus(p,q))}\setminus f^{-1}(\mathbb{R}\setminus (p,q))$ 为 $F_{\sigma}$ 集, 且显然无内点. 从而 $D(f)$ 也是可数个无内点的闭集的并. 根据定理12.3.6, 当 $D(f)$ 是无内点的 $F_{\sigma}$ 集时, $\mathbb{R}\setminus D(f)$ 是稠密集. □
+
+要给出极限函数连续的充要条件是比较复杂的, 比如需要引入准 (拟) 一致收敛等, 参见本节习题 4. 不过, 对某些具有特定性质的函数列, 有可能成立较强的结论. 下面我们给出几种特殊情形的讨论.
+
+定理 12.3.8 (Dini 定理) 设  $\{f_{n}(x)\}$  是 [a, b] 上的单调、连续函数列，即  $f_{n}(x) \in C[a, b]$ ， $f_{n}(x) \leqslant f_{n+1}(x)x \in [a, b] (n = 1, 2, \cdots)$ 。假设  $f_{n}(x)$  在 [a, b] 上逐点收敛到  $f(x)$ 。则  $f(x)$  在 [a, b] 上连续的充要条件是  $\{f_{n}(x)\}$  在 [a, b] 上一致收敛到  $f(x)$ 。
+
+证明 充分性是显然的. 下证必要性.
+
+---
+
+12.3 极限函数的分析性质
+
+153
+
+假若不然, 即 $\{f_n(x)\}$ 在 $[a, b]$ 上不一致收敛到 $f(x)$, 则 $\exists \varepsilon_0 > 0$, 对任意的 $N > 0$, 总存在 $\tilde{n} > N$, $\tilde{x} \in [a, b]$, 使得 $|f_{\tilde{n}}(\tilde{x}) - f(\tilde{x})| \geqslant \varepsilon_0$. 因此可选取一列 $n_k \to +\infty$ 以及 $x_{n_k} \in [a, b]$, 使得
+
+$$
+| f _ {n _ {k}} (x _ {n _ {k}}) - f (x _ {n _ {k}}) | \geqslant \varepsilon_ {0}.
+$$
+
+由于  $\{x_{n_{k}}\}$  为有界点集, 故不妨假设自身收敛, 即  $x_{n_{k}} \rightarrow \xi \in [a, b]$ . 由逐点收敛的假设, 对于  $\xi$  点, 成立  $f_{n}(\xi) \rightarrow f(\xi) \quad (n \rightarrow +\infty)$ , 取  $\varepsilon = \frac{\varepsilon_{0}}{4}$ , 则存在 N, 当 n > N 时, 有
+
+$$
+| f _ {n} (\xi) - f (\xi) | <   \varepsilon .
+$$
+
+令 $n_0 = N + 1$ ，再由 $f_{n_0}(x)$ 和 $f(x)$ 的连续性， $\exists \delta >0$ ，当 $|x - \xi | <   \delta$ 时，有
+
+$$
+| f _ {n _ {0}} (x) - f _ {n _ {0}} (\xi) | <   \varepsilon , \quad \text {以及} \quad | f (x) - f (\xi) | <   \varepsilon .
+$$
+
+任取 $n_k > n_0$ ，使得 $|x_{n_k} - \xi| < \delta$ ，则有
+
+$$
+f _ {n _ {0}} (x _ {n _ {k}}) \leqslant f _ {n _ {k}} (x _ {n _ {k}}) \leqslant f (x _ {n _ {k}}).
+$$
+
+因此
+
+$$
+\begin{array}{l} \varepsilon_ {0} \leqslant | f _ {n _ {k}} (x _ {n _ {k}}) - f (x _ {n _ {k}}) | \leqslant | f _ {n _ {0}} (x _ {n _ {k}}) - f (x _ {n _ {k}}) | \\ \leqslant | f _ {n _ {0}} (x _ {n _ {k}}) - f _ {n _ {0}} (\xi) | + | f _ {n _ {0}} (\xi) - f (\xi) | + | f (\xi) - f (x _ {n _ {k}}) | \\ \leqslant \frac {3}{4} \varepsilon_ {0}, \\ \end{array}
+$$
+
+矛盾. 因此, $\{f_n(x)\}$ 必在 $[a, b]$ 上一致收敛于 $f(x)$.
+
+注 12.3.3 (1) 这里的单调增加是对任意指定的  $x \in [a, b]$  关于 n 单调:  $f_{n}(x) \leqslant f_{n+1}(x)$ .
+
+(2) 显然, 如果把定理中的单调上升列改为单调递减列, 结论仍然成立. 因此, 定理蕴涵着对于不同的 $x \in [a, b]$, $f_n$ 关于 $n$ 的单调性可以不同.
+
+(3) 定理的两个常见等价形式是:
+
+(i) 设 $g_{n}(x)$ 为 $[a, b]$ 上的非负连续函数, 且对每个 $x \in [a, b], g_{n}(x)$ 关于 $n$ 单调 (递减) 趋于零, 则
+
+$$
+g _ {n} (x) \rightrightarrows 0, \quad x \in [ a, b ];
+$$
+
+(ii) 设  $f_{n}(n=1,2,\cdots)$  和 f 均为  $[a,b]$  上的连续函数,  $\varphi_{n}(x)=|f_{n}(x)-f(x)|$ , 如果对每个  $x\in[a,b]$ ,  $\varphi_{n}(x)$  关于 n 单调递减趋于零, 则
+
+$$
+\varphi_ {n} (x) \Rightarrow 0, \quad x \in [ a, b ].
+$$
+
+---
+
+154
+
+第十二章 函数序列与函数项级数
+
+函数项级数形式的 Dini 定理可以陈述如下, 其中通项函数的非负性应用时非常方便. 证明显然.
+
+推论 12.3.9 设 $u_{n}(x)$ ($n = 1,2,\dots$) 在 $[a,b]$ 上非负连续, 级数 $\sum_{n=1}^{+\infty} u_{n}(x)$ 在 $[a,b]$ 上收敛且和函数连续, 则该级数在 $[a,b]$ 上一致收敛.
+
+注 12.3.4 Dini 定理中的闭区间不能改为开区间或无穷区间.
+
+下面定理的结论形式上非常类似于Dini定理:Dini定理要求 $E$ 上的函数列 $\{f_n(x)\}$ 的单调性是对每个指定的 $x\in E$ ， $f_{n}(x)$ 关于下标 $n$ 单调；而下面的定理要求对每个指定的 $n,f_n(x)$ 关于自变量 $x$ 单调.另外注意，定理甚至不要求 $f_{n}(x)$ 连续.我们把定理的证明留作习题.
+
+定理 12.3.10 设 $\{f_n(x)\}$ 是 $[a, b]$ 上定义的函数列, 对每个指定的 $n$, $f_n(x)$ 都是 $x$ 的单调函数. 又设 $\{f_n(x)\}$ 在 $[a, b]$ 上逐点收敛到 $f(x)$, 如果 $f(x) \in C[a, b]$, 则 $f_n(x) \Rightarrow f(x) (n \to +\infty)$, $x \in [a, b]$.
+
+定义12.3.2 设函数列 $\{f_n(x)\}$ 在 $[a, b]$ 上有定义, 若 $\forall \varepsilon > 0, \exists \delta > 0$, 当 $x_1, x_2 \in [a, b]$, 且 $|x_1 - x_2| < \delta$ 时, 对一切 $n \in \mathbb{N}$, 有
+
+$$
+| f _ {n} (x _ {1}) - f _ {n} (x _ {2}) | <   \varepsilon ,
+$$
+
+则称  $\{f_{n}(x)\}$  在  $[a,b]$  上等度连续.
+
+若存在 $M > 0$ ，使得对一切 $n$ 和所有的 $x\in [a,b]$ ，都有 $|f_n(x)|\leqslant M$ ，则称 $\{f_n(x)\}$ 在 $[a,b]$ 上一致有界.
+
+下面的定理说明, 等度连续的函数列只要逐点收敛就足以保证极限函数的连续性.
+
+定理 12.3.11 设函数列  $\{f_{n}(x)\}$  在  $[a,b]$  上等度连续、逐点收敛到  $f(x)$ ，则  $f(x)$  在  $[a,b]$  上连续.
+
+证明 因为 $\{f_n(x)\}$ 在 $[a, b]$ 上等度连续, 所以 $\forall \varepsilon > 0, \exists \delta > 0$, 当 $x_1, x_2 \in [a, b]$, 且 $|x_1 - x_2| < \delta$ 时, 对一切 $n \in \mathbb{N}$, 有
+
+$$
+| f _ {n} (x _ {1}) - f _ {n} (x _ {2}) | <   \frac {\varepsilon}{2}.
+$$
+
+令 $n\to +\infty$ ，则有
+
+$$
+| f (x _ {1}) - f (x _ {2}) | \leqslant \frac {\varepsilon}{2} <   \varepsilon .
+$$
+
+故得到  $f(x)$  在  $[a, b]$  上一致连续.
+
+□
+
+---
+
+12.3 极限函数的分析性质
+
+155
+
+## 12.3.2 极限函数的可积性
+
+对于给定的逐点收敛的函数列或函数项级数, 前面的例子告诉我们, 一般情况下通项函数的可积性并不能保证极限函数或和函数的可积性, 但在一致收敛的假设下, 可以保证可积性的传承, 即下面的定理成立:
+
+定理 12.3.12 设  $\{f_{n}(x)\}$  在  $[a,b]$  上一致收敛到  $f(x)$ ，如果  $f_{n}(x)(n=1,2,\cdots)$  在  $[a,b]$  上均 Riemann 可积，则  $f(x)$  也在  $[a,b]$  上 Riemann 可积，且
+
+$$
+\lim _ {n \to + \infty} \int_ {a} ^ {b} f _ {n} (x) \mathrm{d} x = \int_ {a} ^ {b} \lim _ {n \to + \infty} f _ {n} (x) \mathrm{d} x = \int_ {a} ^ {b} f (x) \mathrm{d} x. \tag {12.3.3}
+$$
+
+证明 我们先来证明 $f(x)$ 的可积性. 为此, $\forall \varepsilon > 0$, 由 $f_n(x) \Rightarrow f(x) (x \in [a, b])$, 知 $\exists N > 0$, 当 $n \geqslant N$ 时, $\forall x \in [a, b]$, 有
+
+$$
+| f _ {n} (x) - f (x) | \leqslant \frac {\varepsilon}{3 (b - a)}.
+$$
+
+特别地, 上式对 $f_{N}(x)$ 也成立. 根据 $f_{N}(x)$ 的可积性, 知存在 $[a, b]$ 的分划 $P$, 使得
+
+$$
+\sum_ {P} \omega_ {i} (f _ {N} (x)) \Delta x _ {i} <   \frac {\varepsilon}{3}.
+$$
+
+在区间  $[x_{i-1}, x_{i}]$  上，
+
+$$
+\omega_ {i} (f (x)) \leqslant \omega_ {i} (f _ {N} (x)) + \frac {2 \varepsilon}{3 (b - a)},
+$$
+
+因此
+
+$$
+\sum_ {P} \omega_ {i} (f (x)) \Delta x _ {i} \leqslant \sum_ {P} \omega_ {i} (f _ {N} (x)) \Delta x _ {i} + \frac {2 \varepsilon}{3 (b - a)} (b - a) <   \varepsilon .
+$$
+
+故  $f(x)$  在  $[a,b]$  上可积.
+
+注意到当 $n \geqslant N$ 时, 有
+
+$$
+\left| \int_ {a} ^ {b} f _ {n} (x) \mathrm{d} x - \int_ {a} ^ {b} f (x) \mathrm{d} x \right| \leqslant \int_ {a} ^ {b} | f _ {n} (x) - f (x) | \mathrm{d} x \leqslant \frac {\varepsilon}{3 (b - a)} (b - a) <   \varepsilon .
+$$
+
+因此关系式 (12.3.3) 成立. 证毕.
+
+完全类似, 我们可以给出函数项级数的逐项积分定理, 证略.
+
+定理 12.3.13 设  $\sum_{n=1}^{+\infty} u_{n}(x)$  在  $[a, b]$  上一致收敛到  $U(x)$ ，如果  $u_{n}(x) (n = 1, 2, \cdots)$  在  $[a, b]$  上均 Riemann 可积，则  $U(x)$  也在  $[a, b]$  上 Riemann 可积，且
+
+$$
+\sum_ {n = 1} ^ {+ \infty} \int_ {a} ^ {b} u _ {n} (x) \mathrm{d} x = \int_ {a} ^ {b} \sum_ {n = 1} ^ {+ \infty} u _ {n} (x) \mathrm{d} x = \int_ {a} ^ {b} U (x) \mathrm{d} x.
+$$
+
+---
+
+156
+
+第十二章 函数序列与函数项级数
+
+上述定理中的极限函数或和函数与积分算子的次序在一致收敛条件下具有可交换性. 虽然定理中一致收敛的假设一般来说是不可去掉的, 但下面的例子表明, 一致收敛的假设的确是充分而非必要的.
+
+例12.3.7 考虑函数列 $\{f_n(x)\}$, $f_n(x) = x^n$ ($0 \leqslant x \leqslant 1$). 则 $\{f_n(x)\}$ 逐点收敛而非一致收敛于函数
+
+$$
+f (x) = \left\{ \begin{array}{l l} 0, & 0 \leqslant x <   1, \\ 1, & x = 1. \end{array} \right.
+$$
+
+不难验证此时仍然有
+
+$$
+\lim _ {n \to + \infty} \int_ {0} ^ {1} f _ {n} (x)   \mathrm{d} x = \int_ {0} ^ {1} f (x)   \mathrm{d} x = \int_ {0} ^ {1} \lim _ {n \to + \infty} f _ {n} (x)   \mathrm{d} x.
+$$
+
+注意到例 12.3.7 中的函数列虽然不一致收敛, 但如果已知逐点收敛的极限函数可积, 则一致收敛的条件可以减弱到函数列一致有界. 即, 对于一致有界的函数列, 可以证明, 下面的 Arzelà $^{①}$ 控制收敛定理成立, 我们在后面的章节还会对此定理进行更一般的讨论, 此处证明省略.
+
+定理 12.3.14 (Arzelà 控制收敛定理) 设 $f_n(x)$ 在 $[a, b]$ 上逐点收敛到 $f(x)$, 且 $f_n(x) (n = 1, 2, \cdots)$ 和 $f(x)$ 均为 $[a, b]$ 上的可积函数. 如果 $f_n(x)$ 在 $[a, b]$ 上一致有界, 即存在常数 $M$ 使得 $|f_n(x)| \leqslant M (\forall x \in [a, b], n \geqslant 1)$, 则
+
+$$
+\lim _ {n \to + \infty} \int_ {a} ^ {b} f _ {n} (x)   \mathrm{d} x = \int_ {a} ^ {b} f (x)   \mathrm{d} x.
+$$
+
+Arzelà 控制收敛定理比经典的逐项积分定理的结论要强得多。这里仅仅要求函数列逐点收敛而不需要一致收敛, 但需要假设极限函数的可积性。而一致收敛时则逻辑上蕴涵着能把函数列的可积性传承到极限函数。从定理还可以看出, 如果逐项积分不成立, 则函数列一定不是一致有界的。
+
+另外, 如果 $\{f_n(x)\}$ 满足可积、一致有界、逐点收敛到 $f(x), x \in [a, b]$, 但是极限函数 $f(x)$ 并不一定可积, 那么, 仍然可以证明, 数列 $\left\{\int_{a}^{b} f_n(x) \mathrm{d}x\right\}$ 是 Cauchy 基本列. 因此在 $\mathbb{R}$ 中, 此数列必收敛到某实数 $A$. 即下面的推论成立:
+
+推论 12.3.15 (1) 设  $f_{n}(x)$  ( $n=1,2,\cdots$ ) 是 [a,b] 上的可积函数, 一致有界且逐点收敛 (到函数  $f(x)$ ). 则极限  $\lim_{n\to+\infty}\int_{a}^{b}f_{n}(x)\mathrm{d}x=A$  存在.
+
+(2) 设  $f_{n}(x), g_{n}(x) (n=1,2,\cdots)$  均为  $[a,b]$  上的可积函数, 均一致有界, 都逐点收敛到同一个函数  $f(x)$ , 即
+
+$$
+\lim _ {n \to + \infty} f _ {n} (x) = \lim _ {n \to + \infty} g _ {n} (x) = f (x), \quad x \in [ a, b ].
+$$
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">① Arzelà, Cesare, 1847 年 3 月 6 日 — 1912 年 3 月 15 日, 意大利数学家.</span></small>
+
+---
+
+12.3 极限函数的分析性质
+
+157
+
+则有
+
+$$
+\lim _ {n \to + \infty} \int_ {a} ^ {b} f _ {n} (x)   \mathrm{d} x = \lim _ {n \to + \infty} \int_ {a} ^ {b} g _ {n} (x)   \mathrm{d} x.
+$$
+
+推论中的(2)说明了对于任意两个不同的一致有界的可积函数列 $\{f_n\}$ 和 $\{g_n\}$, 只要它们有相同的极限函数 $f(x)$, 则它们的定积分构成的数列就有相同的极限 $A$. 换句话说, 通过极限函数相等可以定义出函数列 $\{f_n\}$ 的等价类 $\{[f_n]\}$, 而每个等价类都对应唯一的极限函数 $f(x)$ 和积分值数列的唯一极限值 $A$. 另一方面, 一个自然的问题是: 如果我们并没有假设函数列 $\{f_n\}$ 的极限函数 $f(x)$ 是 Riemann 可积的, 那么 $f(x)$ 与 $A$ 有什么关系? 这个问题, 恰好能给我们这样一种启发: 一旦能引入一种更宽泛的积分, 使得 $f(x)$ 在新的积分定义下是可积的话, 那么我们完全有理由规定 $f(x)$ 在新的积分定义下, 其积分值就是极限值 $A$. 我们通过下面的例子从侧面体会这一点.
+
+例 12.3.8 设  $r_{1}, r_{2}, \cdots$  是 [0,1] 上的有理数全体, 考虑函数列
+
+$$
+f _ {n} (x) = \left\{ \begin{array}{l l} {1,} & {x = r _ {1}, r _ {2}, \dots , r _ {n},} \\ {0,} & {\text {其他点}.} \end{array} \right.
+$$
+
+则  $\{f_{n}(x)\}, n=1,2,\cdots$  可积，积分为 0，一致有界且逐点收敛: $f_{n}(x)\rightarrow D(x)\ (n\rightarrow+\infty)$ ，其中  $D(x)$  是 Dirichlet 函数.
+
+可以看出, 该函数列恰好与推论 12.3.15 中的情形吻合: $f_{n}(x)$ 可积, 逐点收敛到并不可积的极限函数 $D(x)$, 函数列逐项积分的极限 $\lim_{n\to +\infty}\int_{0}^{1}f_{n}(x)\mathrm{d}x$ 收敛于 0. 这是 Riemann 积分的局限性之一, 也说明了如果能引入更一般的积分, 使得 Dirichlet 函数在新的积分定义下可积, 则能保证逐项积分的极限与积分的极限相等.
+
+在定理 12.3.13 的条件下, 下面的推论在应用时非常方便:
+
+推论 12.3.16 设  $\sum_{n=1}^{+\infty} u_{n}(x)$  在  $[a, b]$  上一致收敛到  $U(x)$ ，如果  $u_{n}(x) (n=1,2,\cdots)$  在  $[a, b]$  上均 Riemann 可积，则  $U(x)$  也在  $[a, b]$  上 Riemann 可积，且  $\forall x \in [a, b]$ ，成立
+
+$$
+\sum_ {n = 1} ^ {+ \infty} \int_ {a} ^ {x} u _ {n} (t) \mathrm{d} t = \int_ {a} ^ {x} \sum_ {n = 1} ^ {+ \infty} u _ {n} (t) \mathrm{d} t = \int_ {a} ^ {x} U (t) \mathrm{d} t.
+$$
+
+例 12.3.9 证明: 在  $(-1,1)$  内成立等式
+
+$$
+\sum_ {n = 0} ^ {+ \infty} \frac {x ^ {2 n + 1}}{2 n + 1} = \frac {1}{2} \ln \frac {1 + x}{1 - x}.
+$$
+
+证明 设 $f(x) = \frac{1}{1 - x^2}$，则当 $x \in (-1, 1)$ 时，有
+
+$$
+f (x) = \sum_ {n = 0} ^ {+ \infty} x ^ {2 n}.
+$$
+
+---
+
+158
+
+第十二章 函数序列与函数项级数
+
+考察其部分和序列
+
+$$
+S _ {n} (x) = \sum_ {k = 0} ^ {n} x ^ {2 k} = \frac {1 - x ^ {2 n + 2}}{1 - x ^ {2}}.
+$$
+
+容易看出, $\{S_n(x)\}$ 在 $(-1,1)$ 内闭一致收敛到 $\frac{1}{1 - x^2}$. 因此对于任何指定的 $x \in (-1,1)$, 该函数项级数可以在 $[0,x]$ (或 $[x,0]$, 若 $x < 0$) 上逐项积分. 故有
+
+$$
+\frac {1}{2} \ln \frac {1 + x}{1 - x} = \int_ {0} ^ {x} \frac {\mathrm{d} t}{1 - t ^ {2}} = \sum_ {n = 0} ^ {+ \infty} \int_ {0} ^ {x} t ^ {2 n} \mathrm{d} t = \sum_ {n = 0} ^ {+ \infty} \frac {x ^ {2 n + 1}}{2 n + 1}.
+$$
+
+例12.3.10 求 $I = \int_0^1\left(\sum_{n = 1}^{+\infty}\frac{x}{n(n + x)}\right)\mathrm{d}x.$
+
+解 注意到  $\forall x \in [0,1], n = 1, 2, \cdots$ ，均有
+
+$$
+0 \leqslant \frac {x}{n (n + x)} \leqslant \frac {1}{n ^ {2}}.
+$$
+
+因此,题目中的级数在[0,1]上一致收敛.故该级数可以逐项积分:
+
+$$
+I = \sum_ {n = 1} ^ {+ \infty} \int_ {0} ^ {1} \frac {x}{n (n + x)} \mathrm{d} x = \sum_ {n = 1} ^ {+ \infty} \int_ {0} ^ {1} \left(\frac {1}{n} - \frac {1}{n + x}\right) \mathrm{d} x = \sum_ {n = 1} ^ {+ \infty} \left(\frac {1}{n} - \ln (n + 1) + \ln n\right) = \gamma ,
+$$
+
+其中  $\gamma$  为 Euler 常数.
+
+## 12.3.3 极限函数的可微性
+
+对于函数列和极限函数的可微性之间的关系, 下面的定理成立:
+
+定理 12.3.17 设  $\{f_{n}(x)\}$  是 [a, b] 上的可微函数列, 如果  $\{f_{n}^{\prime}(x)\}$  在 [a, b] 上一致收敛于某函数  $g(x)$ , 且函数列在某点  $c \in [a, b]$  处构成的数列  $\{f_{n}(c)\}$  收敛, 则  $f_{n}(x)$  在 [a, b] 上必一致收敛于某可微函数  $f(x)$ , 且
+
+$$
+f ^ {\prime} (x) = g (x) = \lim _ {n \to + \infty} f _ {n} ^ {\prime} (x), \quad \forall x \in [ a, b ]. \tag {12.3.4}
+$$
+
+证明 对任何 $x \in [a, b]$, 对函数 $f_{m}(x) - f_{n}(x)$ 应用微分中值定理, 则有 $\xi \in (c, x)$ (或 $\xi \in (x, c)$) 使得
+
+$$
+\begin{array}{l} \left| f _ {m} (x) - f _ {n} (x) \right| \leqslant \left| \left(f _ {m} (x) - f _ {n} (x)\right) - \left(f _ {m} (c) - f _ {n} (c)\right) \right| + \left| f _ {m} (c) - f _ {n} (c) \right| \\ = \left| \left(f _ {m} ^ {\prime} (\xi) - f _ {n} ^ {\prime} (\xi)\right) (x - c) \right| + | f _ {m} (c) - f _ {n} (c) | \\ \leqslant (b - a) \sup _ {t \in [ a, b ]} | f _ {m} ^ {\prime} (t) - f _ {n} ^ {\prime} (t) | + | f _ {m} (c) - f _ {n} (c) |. \\ \end{array}
+$$
+
+---
+
+12.3 极限函数的分析性质
+
+159
+
+因此, 由 $\{f_n'(x)\}$ 的一致收敛性与 $\{f_n(c)\}$ 的收敛性得到
+
+$$
+\lim_{\substack{m\to +\infty \\ n\to +\infty}}\sup_{x\in [a,b]}|f_{m}(x) - f_{n}(x)| = 0.
+$$
+
+即  $\{f_{n}(x)\}$  在  $[a,b]$  上一致收敛到某函数  $f(x)$ .
+
+任取 $x_0 \in [a, b]$, 令
+
+$$
+F _ {n} (x) := \left\{ \begin{array}{c l} \frac {f _ {n} (x) - f _ {n} (x _ {0})}{x - x _ {0}}, & x \neq x _ {0}, \\ f _ {n} ^ {\prime} (x _ {0}), & x = x _ {0}. \end{array} \right.
+$$
+
+则 $F_{n}(x)$ 是 $[a,b]$ 上的连续函数.下证 $\{F_n(x)\}$ 一致收敛.为此， $\forall x\in [a,b]\setminus \{x_0\}$ ，考虑
+
+$$
+\begin{array}{l} \left| F _ {m} (x) - F _ {n} (x) \right| = \frac {1}{\left| x - x _ {0} \right|} \cdot \left| \left(f _ {m} (x) - f _ {n} (x)\right) - \left(f _ {m} (x _ {0}) - f _ {n} (x _ {0})\right) \right| \\ = \left| f _ {m} ^ {\prime} (\eta) - f _ {n} ^ {\prime} (\eta) \right| \leqslant \sup _ {x \in [ a, b ]} | f _ {m} ^ {\prime} (x) - f _ {n} ^ {\prime} (x) |. \\ \end{array}
+$$
+
+其中  $\eta$  介于 x 和  $x_{0}$  之间, 于是  $\{F_{n}(x)\}$  在  $x \in [a, b] \setminus \{x_{0}\}$  一致收敛到连续函数  $\tilde{g}(x)$ :
+
+$$
+\tilde {g} (x) := \left\{ \begin{array}{c l} \frac {f (x) - f (x _ {0})}{x - x _ {0}}, & x \neq x _ {0}, \\ g (x _ {0}), & x = x _ {0}. \end{array} \right.
+$$
+
+特别地, 由 $\tilde{g}(x)$ 在 $x_0$ 处的连续性, 知 $f(x)$ 在 $x_0$ 处可导, 且导数 $f'(x_0) = g(x_0)$. □
+
+定理中的假设“函数列 $\{f_n(x)\}$ 可微且其导函数列一致收敛”已经是比较强的条件了, 但仍然要求该函数列在某点 $x = c$ 处收敛, 这一假设的目的性很明确: 因为函数 $f_n(x)$ 的任何平移 $f_n(x) + a_n$ 既不改变它的可微性, 也不改变 $\{(f_n(x) + a_n)'\}$ 的一致收敛性, 但 $a_n$ 的改变可以破坏函数列 $\{f_n(x) + a_n\}$ 的敛散性. 因此, 在某点 $c \in [a, b]$ 处数列 $\{f_n(c)\}$ 的收敛性假设相当于把这种可能的“平移”给固定住了.
+
+作为特例, 在函数列连续可微的条件下, 我们有下面的推论, 定理的证明因为可以应用微积分基本公式而大幅简化.
+
+定理 12.3.18 若  $[a, b]$  上连续可微的函数列  $\{f_{n}\}$  点点收敛到 f，而  $\{f_{n}^{\prime}\}$  一致收敛。则 f 可导，且 (12.3.4) 式成立。
+
+事实上, 此时定理的证明可以通过关系式
+
+$$
+f _ {n} (x) = f _ {n} (c) + \int_ {c} ^ {x} f _ {n} ^ {\prime} (t) \mathrm{d} t
+$$
+
+得到
+
+$$
+| f _ {m} (x) - f _ {n} (x) | \leqslant | f _ {m} (c) - f _ {n} (c) | + (b - a) \sup _ {\xi \in [ a, b ]} | f _ {m} ^ {\prime} (\xi) - f _ {n} ^ {\prime} (\xi) |, \forall x \in [ a, b ], m, n \in \mathbb {N}. (*)
+$$
+
+---
+
+160
+
+第十二章 函数序列与函数项级数
+
+根据假设, 易知函数列 $\{f_n(x)\}$ 在区间 $[a, b]$ 上一致收敛到某函数 $f(x)$. 在 (\*) 式中令 $n \to +\infty$, 利用逐项积分的定理 12.3.12, 我们可得
+
+$$
+f (x) = f (a) + \int_ {a} ^ {x} \varphi (t) \mathrm{d} t,
+$$
+
+其中 $\varphi (x)$ 是导函数列 $\{f_n'(x)\}$ 一致收敛的极限函数.这表明函数 $f(x)$ 是连续可微的，并且
+
+$$
+f ^ {\prime} (x) = \varphi (x), \quad \forall x \in [ a, b ].
+$$
+
+得证.
+
+对于函数项级数, 我们复述一下相应的结论.
+
+定理 12.3.19 设  $\{u_{n}(x)\}$  是 [a, b] 上的可微函数列,  $\sum_{k=1}^{+\infty} u_{k}(c) (c \in [a, b])$  收敛,  $\sum_{k=1}^{+\infty} u_{k}'(x)$  在 [a, b] 上一致收敛, 则  $\sum_{k=1}^{+\infty} u_{k}(x)$  在 [a, b] 上一致收敛到一个处处可微的函数  $S(x)$ , 满足
+
+$$
+S ^ {\prime} (x) = \left(\sum_ {k = 1} ^ {+ \infty} u _ {k} (x)\right) ^ {\prime} = \sum_ {k = 1} ^ {+ \infty} u _ {k} ^ {\prime} (x), \quad \forall x \in [ a, b ]. \tag {12.3.5}
+$$
+
+例 12.3.11 证明: Riemann- $\zeta$ 函数 $\zeta(s)=\sum_{n=1}^{+\infty}\frac{1}{n^{s}}$ 在 $(1,+\infty)$ 上无穷次可微.
+
+证明 任取 $\delta_0 > 0$ ，由于 $\sum_{n=1}^{+\infty} \frac{1}{n^s}$ 在 $[1 + \delta_0, +\infty)$ 一致收敛，并且有
+
+$$
+\left(\frac {1}{n ^ {s}}\right) ^ {\prime} = - \frac {\ln n}{n ^ {s}} \in C (1, + \infty),
+$$
+
+且  $\forall x\in[1+\delta_{0},+\infty)$ ，有
+
+$$
+\left| - \frac {\ln n}{n ^ {s}} \right| <   \frac {\ln n}{n ^ {(1 + \delta_ {0}) / 2}}.
+$$
+
+显然级数 $\sum_{n=1}^{+\infty} \frac{\ln n}{n^{(1 + \delta_0)/2}} \in c$, 因此 $\sum_{n=1}^{+\infty} \frac{-\ln n}{n^s}$ 在 $[1 + \delta_0, +\infty)$ 一致收敛. 根据定理 12.3.19 知 $\sum_{n=1}^{+\infty} \frac{1}{n^s}$ 在 $[1 + \delta_0, +\infty)$ 有连续的导数, 且
+
+$$
+\left(\sum_ {n = 1} ^ {+ \infty} \frac {1}{n ^ {s}}\right) ^ {\prime} = \sum_ {n = 1} ^ {+ \infty} \frac {- \ln n}{n ^ {s}}.
+$$
+
+完全类似, 可以考虑 $\sum_{n=1}^{+\infty} \frac{-\ln n}{n^s}$ 逐项求导后的级数, 它在 $[1 + \delta_0, +\infty)$ 仍然一致收敛. 故原级数在 $[1 + \delta_0, +\infty)$ 上有连续的二阶导数, 以此类推可得 $\zeta(s) \in C^\infty(1, +\infty)$ 且
+
+---
+
+12.3 极限函数的分析性质
+
+161
+
+$$
+\zeta^ {(k)} (s) = (- 1) ^ {k} \sum_ {n = 1} ^ {+ \infty} \frac {\ln^ {k} n}{n ^ {s}}.
+$$
+
+至此, 我们完成了函数列和函数项级数的连续性、可微性、可积性等基本性质对极限函数的传承性讨论. 可以看出, 可微性的传承要求的条件相对来说较强一些, 对函数列和导函数列都有一定的要求.
+
+下面给出了函数列一致收敛到极限函数  $g(x)$ ，导函数列逐点收敛甚至内闭一致收敛，但  $g(x)$  在某些点不可导的例子.
+
+例 12.3.12 考察函数项级数  $\sum_{n=1}^{+\infty}\frac{\sin nx}{n^{2}}$  的连续性和可微性.
+
+解 由 Weierstrass M-判别法知, 级数 $\sum_{n=1}^{+\infty} \frac{\sin nx}{n^2}$ 在 $\mathbb{R}$ 上一致收敛, 因此其和函数 $S(x)$ 在 $\mathbb{R}$ 上连续. 现在考察 $\sum_{n=1}^{+\infty} \frac{\sin nx}{n^2}$ 逐项形式求导后的级数 $\sum_{n=1}^{+\infty} \frac{\cos nx}{n}$. 对于 $x \in (0, 2\pi)$, 我们有
+
+$$
+\sum_ {k = 1} ^ {n} \cos k x = \frac {\sin \frac {(2 n + 1) x}{2} - \sin \frac {x}{2}}{2 \sin \frac {x}{2}}.
+$$
+
+由此, 由 Dirichlet 判别法易见 $\sum_{n=1}^{+\infty} \frac{\cos nx}{n}$ 关于 $x \in (0,2\pi)$ 内闭一致收敛, 从而 $\sum_{n=1}^{+\infty} \frac{\sin nx}{n^2}$ 在 $(0,2\pi)$ 内连续可导.
+
+为了考察和函数  $S(x)$  在 0 点的可微性, 我们采用两种方法.
+
+证法 1 对于  $x \in (0, \pi)$ ，以及  $m \geqslant 1$ ，我们有
+
+$$
+\begin{array}{l} \left| \sum_ {n = m + 1} ^ {+ \infty} \frac {\sin n x}{n ^ {2}} \right| = \left| \sum_ {n = m + 1} ^ {+ \infty} \frac {\cos \left(n - \frac {1}{2}\right) x - \cos \left(n + \frac {1}{2}\right) x}{2 n ^ {2} \sin \frac {x}{2}} \right| \\ = \left| \sum_ {n = m} ^ {+ \infty} \frac {\cos \left(n + \frac {1}{2}\right) x}{2 (n + 1) ^ {2} \sin \frac {x}{2}} - \sum_ {n = m + 1} ^ {+ \infty} \frac {\cos \left(n + \frac {1}{2}\right) x}{2 n ^ {2} \sin \frac {x}{2}} \right| \\ \leqslant \frac {1}{2 (m + 1) ^ {2} \sin \frac {x}{2}} + \frac {1}{\sin \frac {x}{2}} \sum_ {n = m + 1} ^ {+ \infty} \left(\frac {1}{2 n ^ {2}} - \frac {1}{2 (n + 1) ^ {2}}\right) \\ = \frac {1}{(m + 1) ^ {2} \sin \frac {x}{2}}. \\ \end{array}
+$$
+
+因此，
+
+$$
+m \left(S \left(\frac {1}{m}\right) - S (0)\right) = m S \left(\frac {1}{m}\right) = m \left(S _ {m} \left(\frac {1}{m}\right) + R _ {m} \left(\frac {1}{m}\right)\right)
+$$
+
+---
+
+162
+
+第十二章 函数序列与函数项级数
+
+$$
+\begin{array}{l} \geqslant m \sum_ {n = 1} ^ {m} \frac {\sin \frac {n}{m}}{n ^ {2}} - \frac {m}{(m + 1) ^ {2} \sin \frac {1}{2 m}} \\ \geqslant \frac {2}{\pi} \sum_ {n = 1} ^ {m} \frac {1}{n} - \frac {1}{(m + 1) \sin \frac {1}{2 m}}, \\ \end{array}
+$$
+
+其中  $S_{m}$  和  $R_{m}$  分别为级数的第 m 个部分和以及余项. 由此得知,
+
+$$
+\lim _ {m \to + \infty} m \Big (S \Big (\frac {1}{m} \Big) - S (0) \Big) = + \infty .
+$$
+
+故  $S(x)$  在 x = 0 处不可导.
+
+证法 2 如果  $S(x)$  在 x = 0 处可导, 则
+
+$$
+\lim _ {x \to 0 ^ {+}} \frac {1}{x ^ {2}} \int_ {0} ^ {x} S (t)   \mathrm{d} t = \lim _ {x \to 0 ^ {+}} \frac {1}{2 x} S (x) = \frac {1}{2} S ^ {\prime} (0).
+$$
+
+另一方面, 对于  $x \in (0, \pi)$  以及  $m \geqslant 1$ ,
+
+$$
+\frac {1}{x ^ {2}} \int_ {0} ^ {x} S (t) \mathrm{d} t = \sum_ {n = 1} ^ {+ \infty} \frac {1 - \cos n x}{n ^ {3} x ^ {2}} \geqslant \sum_ {n = 1} ^ {m} \frac {1 - \cos n x}{n ^ {3} x ^ {2}}.
+$$
+
+因此， $\lim_{x\to 0^{+}}\frac{1}{x^{2}}\int_{0}^{x}S(t)\mathrm{d}t\geqslant \sum_{n = 1}^{m}\frac{1}{2n}$ .从而 $\lim_{x\to 0^{+}}\frac{1}{x^{2}}\int_{0}^{x}S(t)\mathrm{d}t = +\infty$ 矛盾
+
+总之, $\sum_{n=1}^{+\infty} \frac{\sin nx}{n^2}$ 在 $\mathbb{R}$ 上连续, 在 $x = 2k\pi$ 不可导, 在其他点可导.
+
+例 12.3.13 下面我们来讨论函数项级数的一些应用. 证明:
+
+$$
+\begin{array}{l} \frac {\sin x}{x} = \prod_ {n = 1} ^ {+ \infty} \left(1 - \left(\frac {x}{n \pi}\right) ^ {2}\right), \forall x \in [ - \pi , \pi ]. \\ \frac {\sin x}{\cos x} = \sum_ {n = 1} ^ {+ \infty} \left(\frac {1}{(2 n - 1) \pi / 2 - x} - \frac {1}{(2 n - 1) \pi / 2 + x}\right). \tag {12.3.6} \\ \frac {1}{\sin x} = \frac {1}{x} + \sum_ {n = 1} ^ {+ \infty} (- 1) ^ {n} \left(\frac {1}{x + n \pi} + \frac {1}{x - n \pi}\right). \\ \end{array}
+$$
+
+证明 注意
+
+$$
+\frac {1}{\sin^ {2} x} = \frac {\cos^ {2} \frac {x}{2} + \sin^ {2} \frac {x}{2}}{4 \sin^ {2} \frac {x}{2} \cos^ {2} \frac {x}{2}} = \frac {1}{4} \left(\frac {1}{\sin^ {2} \frac {x}{2}} + \frac {1}{\sin^ {2} \frac {\pi + x}{2}}\right).
+$$
+
+---
+
+12.3 极限函数的分析性质
+
+163
+
+反复利用此等式, 可得
+
+$$
+\begin{array}{l} \frac {1}{\sin^ {2} x} = \frac {1}{4} \left(\frac {1}{\sin^ {2} \frac {x}{2}} + \frac {1}{\sin^ {2} \frac {\pi + x}{2}}\right) \\ = \frac {1}{4 ^ {2}} \left(\frac {1}{\sin^ {2} \frac {x}{4}} + \frac {1}{\sin^ {2} \frac {2 \pi + x}{4}} + \frac {1}{\sin^ {2} \frac {\pi + x}{4}} + \frac {1}{\sin^ {2} \frac {3 \pi + x}{4}}\right) \\ = \frac {1}{2 ^ {2 n}} \sum_ {k = 0} ^ {2 ^ {n} - 1} \sin^ {- 2} \frac {k \pi + x}{2 ^ {n}}. \\ \end{array}
+$$
+
+当 $2^{n - 1}\leqslant k\leqslant 2^n -1$ 时，再利用
+
+$$
+\sin^ {2} \frac {k \pi + x}{2 ^ {n}} = \sin^ {2} \left(\frac {k \pi + x - 2 ^ {n} \pi}{2 ^ {n}} + \pi\right) = \sin^ {2} \frac {(k - 2 ^ {n}) \pi + x}{2 ^ {n}},
+$$
+
+可以将前式改写为
+
+$$
+\begin{array}{l} \frac {1}{\sin^ {2} x} = \frac {1}{2 ^ {2 n}} \sum_ {k = - 2 ^ {n - 1}} ^ {2 ^ {n - 1} - 1} \sin^ {- 2} \frac {x + k \pi}{2 ^ {n}} \\ = E _ {n} + \sum_ {k = - 2 ^ {n - 1}} ^ {2 ^ {n - 1} - 1} \frac {1}{(x + k \pi) ^ {2}}, \\ \end{array}
+$$
+
+其中
+
+$$
+E _ {n} = \frac {1}{2 ^ {2 n}} \sum_ {k = - 2 ^ {n - 1}} ^ {2 ^ {n - 1} - 1} \left(\sin^ {- 2} \frac {x + k \pi}{2 ^ {n}} - \left(\frac {x + k \pi}{2 ^ {n}}\right) ^ {- 2}\right). \tag {12.3.7}
+$$
+
+注意到不等式
+
+$$
+0 <   \frac {1}{\sin^ {2} x} - \frac {1}{x ^ {2}} = 1 + \frac {1}{\tan^ {2} x} - \frac {1}{x ^ {2}} <   1,
+$$
+
+有
+
+$$
+0 <   E _ {n} <   \frac {1}{2 ^ {2 n}} 2 ^ {n} = \frac {1}{2 ^ {n}}, \forall x \in [ 0, \pi / 2 ],
+$$
+
+令 $n\to +\infty$ 可得
+
+$$
+\frac {1}{\sin^ {2} x} = \sum_ {k \in \mathbb {Z}} \frac {1}{(x + k \pi) ^ {2}}, \forall x \neq k \pi . \tag {12.3.8}
+$$
+
+上式在不包含 $\{k\pi \}$ 的任何闭区间中都是一致收敛的，将其改写为
+
+$$
+\frac {1}{\sin^ {2} x} = \frac {1}{x ^ {2}} + \sum_ {n = 1} ^ {+ \infty} \left(\frac {1}{(x + n \pi) ^ {2}} + \frac {1}{(x - n \pi) ^ {2}}\right), x \neq k \pi . \tag {12.3.9}
+$$
+
+特别地, 有
+
+$$
+\frac {1}{3} = \lim _ {x \to 0} \left(\frac {1}{\sin^ {2} x} - \frac {1}{x ^ {2}}\right) = 2 \sum_ {n = 1} ^ {+ \infty} \frac {1}{(n \pi) ^ {2}},
+$$
+
+---
+
+164
+
+第十二章 函数序列与函数项级数
+
+因此有
+
+$$
+\zeta (2) = \sum_ {n = 1} ^ {+ \infty} \frac {1}{n ^ {2}} = \frac {\pi^ {2}}{6}. \tag {12.3.10}
+$$
+
+当  $x \in (-\pi, \pi)$  时, 对 (12.3.9) 式两边积分, 利用
+
+$$
+\int_ {0} ^ {x} \left(\frac {1}{\sin^ {2} t} - \frac {1}{t ^ {2}}\right) \mathrm{d} t = \left(\frac {1}{t} - \frac {\cos t}{\sin t}\right) \Big | _ {0} ^ {x} = \frac {1}{x} - \frac {\cos x}{\sin x},
+$$
+
+可得
+
+$$
+\frac {\cos x}{\sin x} - \frac {1}{x} = \sum_ {n = 1} ^ {+ \infty} \left(\frac {1}{x + n \pi} + \frac {1}{x - n \pi}\right), \forall x \in (- \pi , \pi). \tag {12.3.11}
+$$
+
+如果再对上式两边积分就可以得到
+
+$$
+\frac {\sin x}{x} = \prod_ {n = 1} ^ {+ \infty} \left(1 - \left(\frac {x}{n \pi}\right) ^ {2}\right), \forall x \in [ - \pi , \pi ]. \tag {12.3.12}
+$$
+
+这就重新得到了正弦函数的无穷乘积表示.
+
+从等式 (12.3.11) 出发, 利用
+
+$$
+\tan x = \cot \left(\frac {\pi}{2} - x\right), \frac {1}{\sin x} = \cot \frac {x}{2} - \cot x,
+$$
+
+可得到展开式
+
+$$
+\frac {\sin x}{\cos x} = \sum_ {n = 1} ^ {+ \infty} \left(\frac {1}{(2 n - 1) \pi / 2 - x} - \frac {1}{(2 n - 1) \pi / 2 + x}\right), \tag {12.3.13}
+$$
+
+以及
+
+$$
+\frac {1}{\sin x} = \frac {1}{x} + \sum_ {n = 1} ^ {+ \infty} (- 1) ^ {n} \left(\frac {1}{x + n \pi} + \frac {1}{x - n \pi}\right). \tag {12.3.14}
+$$
+
+例 12.3.14 设 p > 1, 计算  $I_{p} = \int_{0}^{+\infty} \frac{dx}{1 + x^{p}}$ .
+
+解 令 $x = t^{1 / p}$ 可得
+
+$$
+I _ {p} = \frac {1}{p} \int_ {0} ^ {+ \infty} \frac {t ^ {1 / p - 1}}{1 + t} \mathrm{d} t = \frac {1}{p} \int_ {0} ^ {1} \frac {t ^ {1 / p - 1}}{1 + t} \mathrm{d} t + \frac {1}{p} \int_ {1} ^ {+ \infty} \frac {t ^ {1 / p - 1}}{1 + t} \mathrm{d} t,
+$$
+
+对于上式右边第二个积分, 将变量 t 换成 1/t, 整理以后可得
+
+$$
+I _ {p} = \frac {1}{p} \int_ {0} ^ {1} \frac {t ^ {1 / p - 1}}{1 + t} \mathrm{d} t + \frac {1}{p} \int_ {0} ^ {1} \frac {t ^ {- 1 / p}}{1 + t} \mathrm{d} t.
+$$
+
+---
+
+12.3 极限函数的分析性质
+
+165
+
+利用 $(1 + t)^{-1} = \sum_{k=0}^{n}(-t)^{k} + (-t)^{n+1}(1 + t)^{-1}$ 代入上式可得
+
+$$
+I _ {p} = \frac {1}{p} \left(\sum_ {k = 0} ^ {n} \frac {(- 1) ^ {k}}{1 / p + k} + \sum_ {k = 0} ^ {n} \frac {(- 1) ^ {k}}{k - 1 / p + 1}\right) + E _ {n},
+$$
+
+其中
+
+$$
+E _ {n} = \frac {(- 1) ^ {n + 1}}{p} \left(\int_ {0} ^ {1} \frac {t ^ {n + 1 / p}}{1 + t} \mathrm{d} t + \int_ {0} ^ {1} \frac {t ^ {n + 1 - 1 / p}}{1 + t} \mathrm{d} t\right).
+$$
+
+注意到当  $\alpha \rightarrow +\infty$  时，
+
+$$
+0 <   \int_ {0} ^ {1} \frac {t ^ {\alpha}}{1 + t} \mathrm{d} t <   \int_ {0} ^ {1} t ^ {\alpha} \mathrm{d} t = \frac {1}{\alpha + 1} \rightarrow 0,
+$$
+
+于是
+
+$$
+\begin{array}{l} I _ {p} = \frac {1}{p} \lim _ {n \to + \infty} \left(\sum_ {k = 0} ^ {n} \frac {(- 1) ^ {k}}{1 / p + k} + \sum_ {k = 0} ^ {n} \frac {(- 1) ^ {k}}{k - 1 / p + 1}\right) \\ = \frac {1}{p} \left(\frac {1}{1 / p} + \sum_ {k = 1} ^ {+ \infty} (- 1) ^ {k} \left(\frac {1}{1 / p + k} + \frac {1}{1 / p - k}\right)\right) \\ = \frac {\pi}{p} \frac {1}{\sin (\pi / p)}. \\ \end{array}
+$$
+
+函数项级数的重要应用之一是通过性质较好的函数的无穷次“叠加”构造出许多具有特殊性质的函数.下面我们举个这方面的例子.
+
+例12.3.15 设 $\{x_{n}\}$ 是[0,1]中的所有有理点构成的序列，证明:级数
+
+$$
+\sum_ {n = 1} ^ {+ \infty} \frac {1}{2 ^ {n}} \mathrm{sgn} (x - x _ {n})
+$$
+
+定义的和函数  $S(x)$  在且仅在 [0,1] 中的有理点不连续.
+
+证明 首先注意到, 对任意的 $n, \forall x \in [0,1]$, 有
+
+$$
+\left| \frac {1}{2 ^ {n}} \mathrm{sgn} (x - x _ {n}) \right| \leqslant \frac {1}{2 ^ {n}}.
+$$
+
+因为 $\sum_{n=1}^{+\infty} \frac{1}{2^n}$ 收敛, 所以所考虑的级数在 $[0,1]$ 上一致收敛. 任取 $x_k \in \mathbb{Q} \cap [0,1]$, 则该级数中仅有一项 $\frac{1}{2^k} \operatorname{sgn}(x - x_k)$ 在 $x = x_k$ 处不连续, 其余项均在 $x = x_k$ 处连续, 因此原级数在 $x = x_k$ 处不连续.
+
+当 $\xi \notin \{x_{n}\}$ 时, 由于该级数每一项都在 $x = \xi$ 处连续, 从而所考虑的级数在 $x = \xi$ 处连续. □
+
+---
+
+166
+
+第十二章 函数序列与函数项级数
+
+例12.3.16 令
+
+$$
+f (x) = \left\{ \begin{array}{l l} x ^ {2} \sin \frac {1}{x}, & 0 <   x \leqslant 1, \\ 0, & x = 0, \end{array} \right.
+$$
+
+以及
+
+$$
+g (x) = \sum_ {n = 1} ^ {+ \infty} \frac {f (x - x _ {n})}{2 ^ {n}},
+$$
+
+其中 $\{x_{n}\} = \mathbb{Q}\cap [0,1]$ .则 $g(x)$ 是一个在[0,1]上可导，且导函数在[0,1]上所有的无理点处连续、所有的有理点处不连续的函数.
+
+## 习题 12.3
+
+1. 设 $f_{n}(x) = \frac{1}{n\sqrt{\cos(x / n) - \cos(1 / n)}}$. 求 $\lim_{n\to +\infty}\int_0^1 f_n(x)\mathrm{d}x$.
+
+2. 记 $f(x) = \sum_{n=1}^{+\infty} \frac{x^2}{1 + n^2 x^2}, x \in (-\infty, +\infty)$. 求极限 $\lim_{x \to \infty} f(x)$.
+
+3. 证明定理 12.3.10.
+
+4. 设  $\sum_{n=1}^{+\infty} u_{n}(\cdot)$  在  $[a, b]$  上收敛. 若对任何  $\varepsilon > 0$  及  $N \geqslant 1$ , 存在区间  $(a_{1}, b_{1})$ ,  $(a_{2}, b_{2}), \cdots, (a_{k}, b_{k})$  以及  $n_{1}, n_{2}, \cdots, n_{k} \geqslant N$  使得  $\bigcup_{j=1}^{k} (a_{j}, b_{j}) \supset [a, b]$ , 且
+
+$$
+\left| \sum_ {l = n _ {j}} ^ {+ \infty} u _ {l} (x) \right| \leqslant \varepsilon , \quad \forall x \in (a _ {j}, b _ {j}) \cap [ a, b ], \quad j = 1, 2, \dots , k.
+$$
+
+则称  $\sum_{n=1}^{+\infty}u_{n}(\cdot)$  在  $[a,b]$  上拟一致收敛. 证明: 若  $u_{n}(n\geqslant1)$  都在  $[a,b]$  上连续, 则
+ $\sum_{n=1}^{+\infty}u_{n}$  在  $[a,b]$  上连续当且仅当它在  $[a,b]$  上拟一致收敛.
+
+5. 设 $\{a_{n}\}$ 是一个单调趋于零的序列, 证明: $\sum_{n=1}^{+\infty} a_{n} \cos nx$ 和 $\sum_{n=1}^{+\infty} a_{n} \sin nx$ 给出两个在 $(0,2\pi)$ 上连续的函数.
+
+进一步, 如果 $\{a_{n}\}$ 单调趋于零, 那么当 $\sum_{n=1}^{+\infty} a_{n}$ 收敛时, 则两级数在 $\mathbb{R}$ 上一致收敛; 而当 $\sum_{n=1}^{+\infty} a_{n}$ 发散时, 则级数 $\sum_{n=1}^{+\infty} a_{n} \cos nx$ 在 $(0, 2\pi)$ 上必然不一致收敛.
+
+---
+
+12.3 极限函数的分析性质
+
+167
+
+6. 证明 Dirichlet 函数具有下面的表示:
+
+$$
+D (x) = \lim _ {m \to + \infty} \left(\lim _ {n \to + \infty} \cos^ {m} (2 \pi n! x)\right), \quad \forall x \in [ 0, 1 ].
+$$
+
+7. 证明: Dirichlet 函数 $D(x)$ 不可能是连续函数列的逐点收敛的极限函数.
+
+8. 证明:函数
+
+$$
+f (x) = \sum_ {n = 2} ^ {+ \infty} \left(\frac {x \sin x}{\ln n}\right) ^ {n}
+$$
+
+是 $(-∞,+∞)$ 上的连续函数.
+
+9. (1) 证明: $I = \int_{0}^{1} \frac{1}{x^x} \, \mathrm{d}x = \sum_{n=1}^{+\infty} \frac{1}{n^n}$.
+
+(2) 模仿上式, 给出积分  $I_{1}=\int_{0}^{1}x^{x}dx$  的一个级数表示.
+
+10. 设  $u_{n}(x)$  ( $n = 1, 2, \cdots$ ) 在 [a, b] 连续，且  $\sum_{n=1}^{+\infty} u_{n}(x)$  在 (a, b) 一致收敛，证明: $\sum_{n=1}^{+\infty} u_{n}(x)$  在 [a, b] 一致收敛.
+
+11. 设 $\sum_{n=1}^{+\infty} u_n(x)$ 在 $[a, b]$ 上收敛, 如果
+
+$$
+| S _ {n} (x) | = \left| \sum_ {k = 1} ^ {n} u _ {k} (x) \right| \leqslant M, \quad a \leqslant x \leqslant b, \quad n = 1, 2, \dots ,
+$$
+
+则称  $\sum_{n=1}^{+\infty}u_{n}(x)$  在  $[a,b]$  上有界收敛. 现假设  $\sum_{n=1}^{+\infty}u_{n}(x)$  在  $[a,b]$  上有界收敛, 且对任意  $\delta > 0$  及  $c \in (a,b)$ ,  $\sum_{n=1}^{+\infty}u_{n}(x)$  在  $[a,c-\delta]$  和  $[c+\delta,b]$  上一致收敛, 如果  $u_{n}(x)$   $(n=1,2,\cdots)$  在  $[a,b]$  上 Riemann 可积, 证明:  $\sum_{n=1}^{+\infty}u_{n}(x)$  也在  $[a,b]$  上 Riemann 可积, 而且
+
+$$
+\int_ {a} ^ {b} \Big (\sum_ {n = 1} ^ {+ \infty} u _ {n} (x) \Big) \mathrm{d} x = \sum_ {n = 1} ^ {+ \infty} \int_ {a} ^ {b} u _ {n} (x) \mathrm{d} x.
+$$
+
+12. 计算下列积分:
+
+(1) $\int_{\ln 2}^{\ln 5}\sum_{n = 1}^{+\infty}n\mathrm{e}^{-nx}\mathrm{d}x;$
+
+(2) $\int_{0}^{2\pi}\sum_{n = 1}^{+\infty}\frac{\cos^2nx}{n(n + 1)}\mathrm{d}x.$
+
+13. 研究函数 $f(x) = \sum_{n=1}^{+\infty} \frac{|x|}{n^2 + x^2}$ 的可微性质.
+
+---
+
+168
+
+第十二章 函数序列与函数项级数
+
+14. 在 (0,1) 中任一数列 $\{a_{n}\}$, 其中两两不同. 证明: 函数
+
+$$
+f (x) = \sum_ {n = 1} ^ {+ \infty} \frac {| x - a _ {n} |}{2 ^ {n}}
+$$
+
+在 $(0,1)$ 中连续,且除了点 $x=a_{n}(n=1,2,\cdots)$ 处可微.
+
+15. 设 $f(x) = \sum_{n=1}^{+\infty} \frac{1}{x + 2^n}, x \in (0, +\infty)$. 证明:
+
+(1)  $f(x)$  在  $(0, +\infty)$  上连续.
+(2) $\forall x > 0$, 有 $0 < f(x) - \frac{\ln(1 + x)}{x \ln 2} < \frac{1}{1 + x}$.
+
+16. 设 $f(x) = \sum_{n=1}^{+\infty} \frac{\cos nx}{\sqrt{n}}$.
+
+(1) 证明: $\int_{0}^{\pi}|f(x)|\mathrm{d}x$ 收敛.
+
+(2) 求极限  $\lim_{x\to0}f(x)$ .
+
+17. 构造一个可导函数, 使它在有理点处取有理数值, 它的导数在有理点处取无理数值.
+
+18. 设 $f(x)$ 在 $\mathbb{R}$ 上有任意阶导数 $f^{(n)}(x)$，且任意区间 $[a, b]$ 上 $f^{(n)}(x) \to \varphi(x) (n \to +\infty)$. 求证:$\varphi(x) = ce^x$ (其中 $c$ 为常数).
+
+19. 设 $f(x) = \sum_{n=0}^{+\infty} 2^{-n} \cos 2^n x$, 求 $\lim_{x \to 0^+} x^{-1}(f(x) - f(0))$.
+
+20. 设 $f(x) = \sum_{n=1}^{+\infty} \frac{1}{10^n} \{10^n x\}$, 其中 $\{t\}$ 表示 $t$ 到它最近的整数的距离. 证明: $f(x)$ 是一个处处连续、处处不可微的函数.
+
+21. 设 $\{f_n(x)\}$ 是定义在区间 $I$ 上的函数列, 收敛于连续函数 $f(x)$. 又设 $\forall n, f_n(x)$ 在 $I$ 上处处可导, 且导函数列 $\{f_n'(x)\}$ 收敛于连续函数 $g(x)$. 问: 在 $I$ 上是否有 $f'(x) = g(x)$?
+
+22. 设 $b_{n} \geqslant 0, \sum_{n=1}^{+\infty} b_{n} \sin nx$ 在 $\mathbb{R}$ 上一致收敛到 $\varphi(x)$. 证明: $\varphi(x) \in C^{1}(\mathbb{R})$ 的充要条件是 $\sum_{n=1}^{+\infty} nb_{n}$ 收敛.

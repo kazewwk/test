@@ -1,0 +1,3547 @@
+{
+  "pages": [
+    {
+      "page_idx": 48,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.07,
+            0.054,
+            0.092,
+            0.065
+          ],
+          "content": "34"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.11,
+            0.052,
+            0.21,
+            0.067
+          ],
+          "content": "第二章 实数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.109,
+            0.859,
+            0.149
+          ],
+          "content": "因此, $0^{*}$ 就是 $\\widetilde{\\mathbb{R}}$ 的零元. 特别地, $1^{*}$ 不是 $\\widetilde{\\mathbb{R}}$ 的零元, 从而它在 $\\widetilde{\\mathbb{R}}$ 中有逆元 $\\tilde{\\beta}$. 类似地, 我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.26,
+            0.155,
+            0.705,
+            0.176
+          ],
+          "content": "\\tilde {I} = \\tilde {\\beta} \\cdot 1 ^ {*} = \\tilde {\\beta} \\cdot (1 ^ {*} \\cdot 1 ^ {*}) = (\\tilde {\\beta} \\cdot 1 ^ {*}) \\cdot 1 ^ {*} = \\tilde {I} \\cdot 1 ^ {*} = 1 ^ {*}.",
+          "image_source": "images/page_48_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.108,
+            0.185,
+            0.297,
+            0.204
+          ],
+          "content": "即  $1^{*}$  是  $\\widetilde{R}$  的单位元."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.21,
+            0.842,
+            0.229
+          ],
+          "content": "任取 $\\tilde{\\sigma} \\in \\widetilde{\\mathbb{R}}$. 由 (C1), 存在正整数 $n$ 使得 $n^{*} > \\tilde{\\sigma}$ 以及 $n^{*} > -\\tilde{\\sigma}$. 因此, $\\tilde{\\sigma} > -n^{*}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.234,
+            0.857,
+            0.285
+          ],
+          "content": "现在令 $E := \\{\\alpha \\in \\mathbb{R} | \\alpha \\leqslant \\tilde{\\sigma}\\}$. 则 $E$ 是 $\\mathbb{R}$ 中的非空上有界集. 因此, 它在 $\\mathbb{R}$ 中有上确界 $\\beta = \\sup_{\\mathbb{R}} E$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.289,
+            0.857,
+            0.367
+          ],
+          "content": "如果 $\\tilde{\\sigma} >\\beta$ ，则 $\\tilde{\\sigma} -\\beta >0^{*}$ .由(C1)，存在正整数 $m$ 使得 $m(\\tilde{\\sigma} -\\beta) > 1^{*} = m\\cdot \\left(\\frac{1}{m}\\right)^{*}$ 于是，由(MO)易得 $\\tilde{\\sigma} -\\beta \\geqslant \\left(\\frac{1}{m}\\right)^{*}$ .即 $\\tilde{\\sigma}\\geqslant \\left(\\frac{1}{m}\\right)^{*} + \\beta .$ 所以 $\\left(\\frac{1}{m}\\right)^{*} + \\beta \\in E.$ 这与 $\\beta$ 为 $E$ 在 $\\mathbb{R}$ 中的上确界矛盾."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.373,
+            0.856,
+            0.422
+          ],
+          "content": "类似地, 如果 $\\tilde{\\sigma} < \\beta$, 则 $\\beta - \\tilde{\\sigma} > 0^{*}$. 由 (C1), 存在正整数 $m$ 使得 $m(\\beta - \\tilde{\\sigma}) > 1^{*}$. 这蕴涵了对任何 $\\gamma \\in E$, 成立 $\\beta - \\left(\\frac{1}{m}\\right)^{*} \\geqslant \\tilde{\\sigma} \\geqslant \\gamma$. 同样与 $\\beta$ 的定义矛盾."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.421,
+            0.558,
+            0.438
+          ],
+          "content": "因此, $\\tilde{\\sigma} = \\beta$. 这就证明了 $\\tilde{\\mathbb{R}} = \\mathbb{R}$, 即 (C2) 成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.444,
+            0.856,
+            0.485
+          ],
+          "content": "至此, 我们完成了实数系的构造. 接下来, 有理数的称呼将用于称呼有理分割, 而将无理分割称为无理数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.491,
+            0.571,
+            0.509
+          ],
+          "content": "等价于上确界存在定理, 我们有下确界存在定理:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.515,
+            0.591,
+            0.534
+          ],
+          "content": "定理 2.3.5 R 中任何非空下有界集均有下确界."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.539,
+            0.856,
+            0.58
+          ],
+          "content": "若非空集 $E$ 无上界, 则记 $\\sup E = +\\infty$, 若 $E$ 无下界, 则记 $\\inf E = -\\infty$. 易见, 对于非空集 $E, F$, 我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.416,
+            0.587,
+            0.855,
+            0.605
+          ],
+          "content": "\\inf E \\leqslant \\sup E, \\tag {2.3.10}",
+          "image_source": "images/page_48_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.615,
+            0.151,
+            0.632
+          ],
+          "content": "以及"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.297,
+            0.64,
+            0.855,
+            0.657
+          ],
+          "content": "E \\subseteq F \\Longrightarrow \\inf F \\leqslant \\inf E, \\quad \\sup E \\leqslant \\sup F. \\tag {2.3.11}",
+          "image_source": "images/page_48_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.668,
+            0.853,
+            0.709
+          ],
+          "content": "另一方面, 通常规定 $\\sup \\varnothing = -\\infty, \\inf \\varnothing = +\\infty$. 我们看到对于空集, (2.3.10) 式不成立. 构造实数系的其他典型方法"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.714,
+            0.857,
+            0.796
+          ],
+          "content": "Weierstrass $^{①}$ 很早就认识到, 要使分析具备牢靠的基础, 必须建立严格的实数理论. 他于 1857 年开始讲授解析函数论等课程, 总要在第一阶段花很多时间阐明他关于实数的理论. 稍后, Méray $^{②}$, Cantor, Dedekind 以及 Heine $^{③}$ 分别于 1869, 1871, 1872, 1872 年各自独立地给出了无理数的定义, 建立了严格的实数理论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.8,
+            0.856,
+            0.84
+          ],
+          "content": "历史上, Wallis $^{④}$ 于 1696 年将有理数与无限循环小数等同, 而 Stolz $^{⑤}$ 则于 1886 年提出将十进制无限非循环小数作为无理数的定义, 但未建立起一个满意的实数理论. 如今, 人们知道在小"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.136,
+            0.849,
+            0.816,
+            0.863
+          ],
+          "content": "① Weierstrass, Karl Theodor Wilhelm, 1815 年 10 月 31 日—1897 年 2 月 19 日, 德国数学家."
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.136,
+            0.866,
+            0.773,
+            0.88
+          ],
+          "content": "② Méray, Hugues Charles Robert, 1835 年 11 月 12 日—1911 年 2 月 2 日, 法国数学家."
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.136,
+            0.884,
+            0.729,
+            0.898
+          ],
+          "content": "③ Heine, Heinrich Eduard, 1821 年 3 月 16 日—1881 年 10 月 21 日, 德国数学家."
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.136,
+            0.901,
+            0.656,
+            0.915
+          ],
+          "content": "④ Wallis, John, 1616 年 11 月 23 日—1703 年 10 月 28 日, 英国数学家."
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.136,
+            0.918,
+            0.645,
+            0.932
+          ],
+          "content": "⑤ Stolz, Otto, 1842 年 7 月 3 日—1905 年 11 月 23 日, 奥地利数学家."
+        }
+      ]
+    },
+    {
+      "page_idx": 49,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.701,
+            0.056,
+            0.902,
+            0.069
+          ],
+          "content": "2.4 实数系一些概念的回顾"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.923,
+            0.057,
+            0.942,
+            0.068
+          ],
+          "content": "35"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.111,
+            0.903,
+            0.171
+          ],
+          "continues_prev": true,
+          "content": "数中先引入序, 在此基础上建立上确界定理, 再来定义加法和乘法, 同样不难用小数来构造实数. 只是这一构造过程不如人们所期望的那么简捷. 有兴趣的读者也可以对本节用 Dedekind 分割构造实数的过程略加改写, 就可以得到用小数构造实数的过程."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.176,
+            0.903,
+            0.215
+          ],
+          "content": "从有理数扩充到实数, 以 Weierstrass, Dedekind 和 Cantor 的工作最具代表性. 关于它们的简单介绍, 读者可以参见文献 [41, 43]."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.154,
+            0.221,
+            0.298,
+            0.238
+          ],
+          "level": 2,
+          "content": "实数系的唯一性"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.243,
+            0.905,
+            0.324
+          ],
+          "content": "人们用多种方法建立了实数系, 那么不同的方法会不会构造出本质上不同的实数系来呢? 很幸运, 回答是否定的. 事实上, 若用其他方法建立了一个实数系 $(\\mathbb{R}^{*}, \\oplus, \\otimes, \\preceq)$, 即它满足实数系公理 (F), (O) 和 (C), 则 $(\\mathbb{R}^{*}, \\oplus, \\otimes, \\preceq)$ 必然与之前构造的实数系 $(\\mathbb{R}, +, \\cdot, \\leqslant)$ 序同构. 即存在一个双射 $T: \\mathbb{R} \\to \\mathbb{R}^{*}$ 使得"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.185,
+            0.328,
+            0.667,
+            0.39
+          ],
+          "sub_type": "text",
+          "content": "(1)  $\\forall x, y \\in R, T(x + y) = T(x) \\oplus T(y)$  成立;\n(2)  $\\forall x, y \\in R, T(x \\cdot y) = T(x) \\otimes T(y)$  成立;\n(3) 若 $x \\in \\mathbb{R}, x \\geqslant 0$, 则 $T(x) \\geqslant \\theta$, 这里 $\\theta$ 表示 $\\mathbb{R}^*$ 中的零元."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.394,
+            0.905,
+            0.454
+          ],
+          "content": "由上述性质, 可以看到 $\\mathbb{R}$ 中元素之间的四则运算、序关系与对应的元素在 $\\mathbb{R}^*$ 中的四则运算、序关系完全一样. 而实数的其他即将引入的运算都是在序和四则运算的基础上引入的. 所以可以把 $\\mathbb{R}$ 和 $\\mathbb{R}^*$ 看作是一样的. 这样的 $T$ 称为“序同构”."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.461,
+            0.459,
+            0.478
+          ],
+          "content": "有兴趣的读者可参见文献[41,43]."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.156,
+            0.531,
+            0.508,
+            0.553
+          ],
+          "level": 2,
+          "content": "2.4 实数系一些概念的回顾"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.601,
+            0.905,
+            0.642
+          ],
+          "content": "基于已经建立的实数理论, 我们对实数的 $p$ 进制表示、算术几何不等式、基本初等函数的定义等作一个回顾."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.156,
+            0.649,
+            0.32,
+            0.666
+          ],
+          "level": 2,
+          "content": "实数的十进制表示"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.672,
+            0.906,
+            0.713
+          ],
+          "content": "对于实数 $x$, 称 $[x] := \\max \\{n \\in \\mathbb{Z} | n \\leqslant x\\}$ 为 $x$ 的整数部分, 称 $\\{x\\} := x - [x]$ 为 $x$ 的小数部分. 请读者说明它们定义的合理性."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.195,
+            0.718,
+            0.478,
+            0.736
+          ],
+          "content": "接下来, 我们来引入十进制小数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.195,
+            0.742,
+            0.714,
+            0.76
+          ],
+          "content": "首先, 对于实数 $x \\geqslant 0$, 令 $m := [x]$, 以及对于整数 $k \\geqslant 1$, 称"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.412,
+            0.777,
+            0.649,
+            0.797
+          ],
+          "content": "a _ {k} := [ 1 0 ^ {k} x ] - 1 0 \\cdot [ 1 0 ^ {k - 1} x ]",
+          "image_source": "images/page_49_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.814,
+            0.782,
+            0.832
+          ],
+          "content": "为 x 的十进制小数的第 k 位小数. 此时,  $a_{k}$  取值于  $0,1,2,\\cdots,9$ , 且成立"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.367,
+            0.845,
+            0.903,
+            0.876
+          ],
+          "content": "x = \\sup _ {k \\geqslant 1} \\left(m + \\frac {a _ {1}}{1 0} + \\frac {a _ {2}}{1 0 ^ {2}} + \\dots + \\frac {a _ {k}}{1 0 ^ {k}}\\right). \\tag {2.4.1}",
+          "image_source": "images/page_49_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.893,
+            0.906,
+            0.934
+          ],
+          "content": "我们记 $x = m.a_{1}a_{2}\\dots a_{k}\\dots$ ，并称之为 $x$ 的十进制表示.而称 $-m.a_1a_2\\dots a_k\\dots$ 为 $-x$ 的十进制表示."
+        }
+      ]
+    },
+    {
+      "page_idx": 50,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.061,
+            0.056,
+            0.082,
+            0.068
+          ],
+          "content": "36"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.1,
+            0.055,
+            0.199,
+            0.068
+          ],
+          "content": "第二章 实数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.112,
+            0.848,
+            0.153
+          ],
+          "content": "一般地, 若对某个 $k \\geqslant 1$, 当 $j \\geqslant k$ 时, 总有 $a_{j} = 0$, 则简记 $m.a_{1}a_{2} \\cdots a_{k} \\cdots$ 为 $m.a_{1}a_{2} \\cdots a_{k-1}$. 相应实数称为有限小数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.159,
+            0.848,
+            0.201
+          ],
+          "content": "若存在正整数 $n$, 以及某个 $k \\geqslant 1$, 使得当 $j \\geqslant k$ 时成立 $a_{j+n} = a_j$, 则记 $m.a_1a_2 \\cdots a_k \\cdots = m.a_1 \\cdots a_{k-1}\\dot{a}_k\\dot{a}_{k+1} \\cdots\\dot{a}_{k+n-1}$ 并称 $a_k a_{k+1} \\cdots a_{k+n-1}$ 为 (长为 $n$ 的) 循环节."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.206,
+            0.848,
+            0.271
+          ],
+          "content": "另一方面, 对于非负实数 $m$ 以及取值于 $0,1,2,\\cdots,9$ 的 $a_1,a_2,\\cdots,m.a_1a_2\\cdots a_k\\cdots$ 是否给出了一个实数? 按上确界存在定理, 不难看到, 可由 (2.4.1) 式给出一个实数. 问题是这一实数的小数表示是否就是 $m.a_1a_2\\cdots a_k\\cdots$?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.276,
+            0.767,
+            0.295
+          ],
+          "content": "容易证明, 当且仅当 9 不是 $m.a_{1}a_{2}\\cdots a_{k}\\cdots$ 的循环节时, 回答是肯定的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.3,
+            0.848,
+            0.365
+          ],
+          "content": "但时常, 当 $m.a_{1}a_{2}\\cdots a_{k}\\cdots$ 以9为循环节时, 我们认为它就是按(2.4.1)式得到的实数. 这样, $0.\\dot{9}=1$. 而有限小数都会有两个不同的表示, 一个是有限小数的形式, 另一个是以9为循环节的形式. 这在讨论中需要引起注意."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.099,
+            0.371,
+            0.268,
+            0.389
+          ],
+          "level": 2,
+          "content": "实数的 $p$ 进制表示"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.395,
+            0.586,
+            0.413
+          ],
+          "content": "同样, 对于整数 $p \\geqslant 2$, 可以定义实数的 $p$ 进制表示."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.418,
+            0.848,
+            0.484
+          ],
+          "content": "考虑 $x \\geqslant 0$. 若 $x \\leqslant 1$, 令 $N \\equiv N_x := 0$. 若 $x > 1$, 由二项展开式, 对于 $n = [x] + 1$, 可得 $p^n \\geqslant (p - 1 + 1)^n \\geqslant n > x$. 因此, 注意到 $p^0 = 1 < x$, 此时可定义 $N \\equiv N_x$ 为使得 $p^n \\geqslant x$ 的最小整数 $n$. 即 $N$ 满足 $p^{N-1} < x \\leqslant p^N$. 对于整数 $k \\leqslant N$, 定义①"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.354,
+            0.501,
+            0.59,
+            0.522
+          ],
+          "content": "a _ {k} := [ p ^ {- k} x ] - p \\cdot [ p ^ {- k - 1} x ].",
+          "image_source": "images/page_50_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.54,
+            0.122,
+            0.556
+          ],
+          "content": "则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.244,
+            0.56,
+            0.844,
+            0.604
+          ],
+          "content": "x = \\sup _ {- \\infty <   m \\leqslant N} \\sum_ {k = m} ^ {N} a _ {k} p ^ {k} = \\sup _ {m \\geqslant 1} \\Big (\\sum_ {k = 0} ^ {N} a _ {k} p ^ {k} + \\sum_ {j = 1} ^ {m} \\frac {a _ {- j}}{p ^ {j}} \\Big). \\tag {2.4.2}",
+          "image_source": "images/page_50_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.615,
+            0.848,
+            0.657
+          ],
+          "content": "我们记 $x = a_{N}a_{N - 1}\\dots a_{0}.a_{-1}a_{-2}\\dots a_{-k}\\dots_{p}$ ，并称之为 $x$ 的 $p$ 进制表示.而称 $x = -a_{N}a_{N - 1}\\dots a_{0}.a_{-1}a_{-2}\\dots a_{-k}\\dots_{p}$ 为 $-x$ 的 $p$ 进制表示."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.661,
+            0.848,
+            0.725
+          ],
+          "content": "由于我们熟悉十进制表示. 当 p > 10 时, 采用上述表述方法, 就需要引入新的字符表示  $10, 11, \\cdots, p - 1$ . 自然很不方便. 今后, 我们可以把 (2.4.2) 式中的 x 表示成无穷级数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.311,
+            0.729,
+            0.844,
+            0.773
+          ],
+          "content": "x = \\sum_ {k = - \\infty} ^ {N} a _ {k} p ^ {k} = \\sum_ {k = 0} ^ {N} a _ {k} p ^ {k} + \\sum_ {j = 1} ^ {\\infty} \\frac {a _ {- j}}{p ^ {j}}. \\tag {2.4.3}",
+          "image_source": "images/page_50_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.784,
+            0.846,
+            0.825
+          ],
+          "content": "对于 $p$ 进制数, 同样可以定义循环节. 时常, 若循环节为 $p - 1$, 则按 (2.4.2) 式来定义该数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.831,
+            0.848,
+            0.898
+          ],
+          "content": "不难看到, $p$ 进制下的有限小数不见得是十进制下的有限小数. 反之亦然. 但 $p$ 进制下的有限小数或无限循环小数一定也是十进制下的有限小数或无限小数, 反之亦然. 事实上, 对任何整数 $p \\geqslant 2$, $p$ 进制下的有限小数和无限循环小数的全体就是所有有理数."
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.131,
+            0.921,
+            0.54,
+            0.936
+          ],
+          "content": "① 上面定义实数的十进制表示, 也应该如此处理整数部分."
+        }
+      ]
+    },
+    {
+      "page_idx": 51,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.701,
+            0.055,
+            0.905,
+            0.07
+          ],
+          "content": "2.4 实数系一些概念的回顾"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.923,
+            0.057,
+            0.943,
+            0.068
+          ],
+          "content": "37"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.153,
+            0.113,
+            0.237,
+            0.129
+          ],
+          "level": 2,
+          "content": "$n$ 次方根"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.191,
+            0.135,
+            0.603,
+            0.152
+          ],
+          "content": "有了上确界存在定理, 我们可以定义 n 次方根."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.194,
+            0.158,
+            0.807,
+            0.176
+          ],
+          "content": "定理 2.4.1 设 a > 0 ，而 n 为正整数，则方程  $x^{n} = a$  有唯一的正解."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.191,
+            0.182,
+            0.892,
+            0.2
+          ],
+          "content": "证明 由于 $t > s > 0$ 蕴涵 $t^n > s^n$, 因此, 方程 $x^n = a$ 的正解若存在, 必然唯一."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.191,
+            0.206,
+            0.518,
+            0.224
+          ],
+          "content": "现考虑集合  $E_{a} := \\{y | y > 0, y^{n} \\leqslant a\\}$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.227,
+            0.906,
+            0.302
+          ],
+          "content": "取 $s = \\frac{a}{1 + a}$, 则 $0 < s < 1$, 从而 $s^n < s < a$, 即 $s \\in E_a$, 因此 $E_a$ 非空. 另一方面, $(1 + a)^n \\geqslant 1 + a > a$, 因此 $1 + a$ 是 $E_a$ 的一个上界. 这样, $x := \\sup E_a$ 存在且 $\\frac{a}{1 + a} \\leqslant x \\leqslant 1 + a$. 下证 $x^n = a$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.192,
+            0.304,
+            0.601,
+            0.338
+          ],
+          "content": "若 $x^n < a$ ，取 $\\varepsilon = \\frac{a - x^n}{(2 + a)^n}$ ，则 $\\varepsilon \\in (0,1)$ ，从而"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.243,
+            0.354,
+            0.818,
+            0.398
+          ],
+          "content": "(x + \\varepsilon) ^ {n} = \\sum_ {k = 0} ^ {n} \\mathrm{C} _ {n} ^ {k} \\varepsilon^ {k} x ^ {n - k} \\leqslant x ^ {n} + \\varepsilon \\sum_ {k = 1} ^ {n} \\mathrm{C} _ {n} ^ {k} x ^ {k} <   x ^ {n} + \\varepsilon (2 + a) ^ {n} = a.",
+          "image_source": "images/page_51_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.154,
+            0.413,
+            0.538,
+            0.43
+          ],
+          "content": "所以 $x + \\varepsilon \\in E_a$ ，与 $x$ 为 $E_{a}$ 的上确界矛盾."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.192,
+            0.431,
+            0.747,
+            0.463
+          ],
+          "content": "若 $x^n > a$. 取 $\\varepsilon = \\frac{x^n - a}{(2 + a)^n}$, 则 $0 < \\varepsilon < 1$ 且 $x - \\varepsilon > 0$. 进一步,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.228,
+            0.48,
+            0.836,
+            0.523
+          ],
+          "content": "(x - \\varepsilon) ^ {n} = \\sum_ {k = 0} ^ {n} \\mathrm{C} _ {n} ^ {k} (- \\varepsilon) ^ {k} x ^ {n - k} \\geqslant x ^ {n} - \\varepsilon \\sum_ {k = 1} ^ {n} \\mathrm{C} _ {n} ^ {k} x ^ {k} > x ^ {n} - \\varepsilon (2 + a) ^ {n} = a.",
+          "image_source": "images/page_51_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.155,
+            0.539,
+            0.66,
+            0.556
+          ],
+          "content": "因此, $x - \\varepsilon$ 是 $E_{a}$ 的一个上界, 与 $x$ 为 $E_{a}$ 的上确界矛盾."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.194,
+            0.563,
+            0.373,
+            0.58
+          ],
+          "content": "这就证明了 $x^n = a$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.155,
+            0.587,
+            0.909,
+            0.628
+          ],
+          "content": "定义 2.4.1 设  $a \\geqslant 0$ ，对于正整数  $n \\geqslant 2$ ，称方程  $x^{n} = a$  的唯一非负实根为 a 的 n 次方根，记作  $a^{\\frac{1}{n}}$  或  $\\sqrt[n]{a}$ 。 $\\sqrt[2]{a}$  简记为  $\\sqrt{a}$ 。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.157,
+            0.634,
+            0.264,
+            0.65
+          ],
+          "level": 2,
+          "content": "实数指数幂"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.155,
+            0.657,
+            0.909,
+            0.698
+          ],
+          "content": "在 $n$ 次方根的基础上, 对于正数 $a$ 以及有理数 $q$, 我们可以定义 $a^q$ 并建立相应的性质. 另外, 也可以对某些特殊的 $q$, 当 $a = 0$ 或 $a < 0$ 时, 定义 $a^q$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.194,
+            0.704,
+            0.909,
+            0.721
+          ],
+          "content": "进一步, 可以定义实数指数幂与对数并建立相关性质. 具体细节参见本节习题 9\\~15."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.727,
+            0.909,
+            0.769
+          ],
+          "content": "以上过程较为烦琐. 今后, 我们还将利用极限来定义实数指数幂与对数 (参见第五章第 5 节)."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.157,
+            0.775,
+            0.364,
+            0.792
+          ],
+          "level": 2,
+          "content": "三角函数与反三角函数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.798,
+            0.911,
+            0.887
+          ],
+          "content": "我们称幂函数、指数函数、对数函数、三角函数与反三角函数为基本初等函数. 要从分析上严格地定义三角函数及反三角函数, 一般有三个途径: 利用定积分、利用微分方程以及利用极限或级数. 有兴趣的读者可参见文献 [43]. 在第五章第 5 节, 我们介绍如何用极限或级数来定义三角函数."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.157,
+            0.892,
+            0.345,
+            0.909
+          ],
+          "level": 2,
+          "content": "算术几何平均不等式"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.196,
+            0.916,
+            0.564,
+            0.934
+          ],
+          "content": "接下来, 建立如下的算术几何平均不等式."
+        }
+      ]
+    },
+    {
+      "page_idx": 52,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.06,
+            0.057,
+            0.081,
+            0.068
+          ],
+          "content": "38"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.099,
+            0.055,
+            0.2,
+            0.069
+          ],
+          "content": "第二章 实数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.113,
+            0.543,
+            0.132
+          ],
+          "content": "命题 2.4.2 设  $n \\geqslant 2, a_{1}, a_{2}, \\cdots, a_{n} \\geqslant 0$ ，则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.388,
+            0.153,
+            0.845,
+            0.202
+          ],
+          "content": "\\sqrt [ n ]{\\prod_ {k = 1} ^ {n} a _ {k}} \\leqslant \\frac {1}{n} \\sum_ {k = 1} ^ {n} a _ {k}. \\tag {2.4.4}",
+          "image_source": "images/page_52_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.218,
+            0.454,
+            0.235
+          ],
+          "content": "且等号成立当且仅当  $a_{1}=a_{2}=\\cdots=a_{n}$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.242,
+            0.835,
+            0.259
+          ],
+          "content": "不等式左端称为  $a_{1}, a_{2}, \\cdots, a_{n}$  的几何平均，右端称为  $a_{1}, a_{2}, \\cdots, a_{n}$  的算术平均."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.265,
+            0.388,
+            0.282
+          ],
+          "content": "证明 我们分三步加以证明."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.289,
+            0.44,
+            0.307
+          ],
+          "content": "(i) $n = 2$ 的情形. 设 $a_1, a_2 \\geqslant 0$, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.304,
+            0.326,
+            0.642,
+            0.346
+          ],
+          "content": "a _ {1} - 2 \\sqrt {a _ {1} a _ {2}} + a _ {2} = (\\sqrt {a _ {1}} - \\sqrt {a _ {2}}) ^ {2} \\geqslant 0.",
+          "image_source": "images/page_52_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.364,
+            0.539,
+            0.382
+          ],
+          "content": "从而 (2.4.4) 式成立, 且等号成立当且仅当 $a_1 = a_2$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.388,
+            0.848,
+            0.43
+          ],
+          "content": "(ii)  $n = 2^{k} \\quad (k \\geqslant 1)$  的情形. 设对某个  $k \\geqslant 1$ , 当  $n = 2^{k}$  时命题 2.4.2 成立. 记  $m = 2^{k}$ . 则对于  $a_{1}, a_{2}, \\cdots, a_{2m} \\geqslant 0$ , 我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.268,
+            0.445,
+            0.68,
+            0.499
+          ],
+          "content": "\\sqrt [ 2 m ]{\\prod_ {j = 1} ^ {2 m} a _ {j}} = \\sqrt [ m ]{\\prod_ {j = 1} ^ {m} \\sqrt {a _ {j} a _ {m + j}}} \\leqslant \\frac {1}{m} \\sum_ {j = 1} ^ {m} \\sqrt {a _ {j} a _ {m + j}},",
+          "image_source": "images/page_52_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.515,
+            0.641,
+            0.534
+          ],
+          "content": "且等号成立当且仅当  $a_{1}a_{m+1}=a_{2}a_{m+2}=\\cdots=a_{m}a_{2m}$ . 由 (i),"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.345,
+            0.549,
+            0.601,
+            0.596
+          ],
+          "content": "\\frac {1}{m} \\sum_ {j = 1} ^ {m} \\sqrt {a _ {j} a _ {m + j}} \\leqslant \\frac {1}{2 m} \\sum_ {j = 1} ^ {2 m} a _ {j},",
+          "image_source": "images/page_52_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.612,
+            0.734,
+            0.631
+          ],
+          "content": "且等号成立当且仅当 $a_1 = a_{m + 1},a_2 = a_{m + 2},\\dots ,a_m = a_{2m}$ 都成立.总之，"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.375,
+            0.645,
+            0.573,
+            0.699
+          ],
+          "content": "\\sqrt [ 2 m ]{\\prod_ {j = 1} ^ {2 m} a _ {j}} \\leqslant \\frac {1}{2 m} \\sum_ {j = 1} ^ {2 m} a _ {j},",
+          "image_source": "images/page_52_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.714,
+            0.781,
+            0.733
+          ],
+          "content": "且等号成立当且仅当  $a_{1}=a_{2}=\\cdots=a_{2m}$ . 即命题 2.4.2 当  $n=2^{k+1}$  时也成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.738,
+            0.714,
+            0.757
+          ],
+          "content": "结合 (i), 由数学归纳法得到对任何 $k \\geqslant 1$, 命题2.4.2当 $n = 2^k$ 时成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.096,
+            0.762,
+            0.848,
+            0.871
+          ],
+          "content": "(iii)  $n \\geqslant 2$  的一般情形. 一般地, 对于  $n \\geqslant 2$ , 有  $k \\geqslant 1$  使得  $2^{k} \\leqslant n < 2^{k+1}$ . 记  $m = 2^{k}$ , 由 (ii), 不妨设 m < n < 2m. 对于  $a_{1}, a_{2}, \\cdots, a_{n} \\geqslant 0$ , 令  $A = \\frac{1}{n} \\sum_{j=1}^{n} a_{j}$ . 当 A = 0 时,  $a_{1} = a_{2} = \\cdots = a_{n} = 0$ , 命题自然成立. 下设 A > 0. 令  $a_{n+1} = a_{n+2} = \\cdots = a_{2m} = A$ , 我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.187,
+            0.886,
+            0.759,
+            0.939
+          ],
+          "content": "\\sqrt [ n ]{\\prod_ {j = 1} ^ {n} a _ {j}} = \\frac {1}{A ^ {\\frac {2 m - n}{n}}} \\left[ \\left(\\prod_ {j = 1} ^ {2 m} a _ {j}\\right) ^ {\\frac {1}{2 m}} \\right] ^ {\\frac {2 m}{n}} \\leqslant \\frac {1}{A ^ {\\frac {2 m - n}{n}}} \\left(\\frac {1}{2 m} \\sum_ {j = 1} ^ {2 m} a _ {j}\\right) ^ {\\frac {2 m}{n}} = A,",
+          "image_source": "images/page_52_equation_19.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 53,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.846,
+            0.056,
+            0.896,
+            0.069
+          ],
+          "content": "习题2"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.915,
+            0.057,
+            0.935,
+            0.069
+          ],
+          "content": "39"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.112,
+            0.699,
+            0.13
+          ],
+          "content": "且等号成立当且仅当  $a_{1}=a_{2}=\\cdots=a_{n}=A$ . 这就证明了命题."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.146,
+            0.136,
+            0.281,
+            0.154
+          ],
+          "level": 2,
+          "content": "Young 不等式"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.159,
+            0.895,
+            0.21
+          ],
+          "content": "我们来把算术几何平均不等式推广为 Young $^{①}$ 不等式. 若 $1 \\leqslant p, q \\leqslant +\\infty$ 满足 $\\frac{1}{p} + \\frac{1}{q} = 1$, 则称 p, q 为对偶数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.214,
+            0.763,
+            0.234
+          ],
+          "content": "定理 2.4.3 设 $p,q \\in  \\left( {1, + \\infty }\\right)$ 为对偶数. 则对任何 $a,b > 0$ ,有 ${}^{\\text{②}}$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.448,
+            0.25,
+            0.895,
+            0.285
+          ],
+          "content": "a b \\leqslant \\frac {1}{p} a ^ {p} + \\frac {1}{q} b ^ {q}. \\tag {2.4.5}",
+          "image_source": "images/page_53_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.3,
+            0.71,
+            0.338
+          ],
+          "content": "证明 令 $A = \\frac{a}{(ab)^{\\frac{1}{p}}}$. 则 $\\frac{b}{(ab)^{\\frac{1}{q}}} = \\frac{1}{A}$. 因此, (2.4.5) 式等价于"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.446,
+            0.352,
+            0.896,
+            0.387
+          ],
+          "content": "1 \\leqslant \\frac {1}{p} A ^ {p} + \\frac {1}{q} \\frac {1}{A ^ {q}}. \\tag {2.4.6}",
+          "image_source": "images/page_53_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.402,
+            0.898,
+            0.456
+          ],
+          "content": "不妨设 $A \\geqslant 1$. 任取 $m > p$. 令 $k = \\left[\\frac{m}{p}\\right] + 1$. 则 $\\frac{1}{p} \\leqslant \\frac{k}{m} \\leqslant \\frac{1}{p} + \\frac{1}{m}, \\frac{1}{q} \\geqslant \\frac{m - k}{m}$. 从而利用算术几何平均不等式, 可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.288,
+            0.463,
+            0.758,
+            0.543
+          ],
+          "content": "\\begin{array}{l} \\frac {1}{m} A ^ {p} + \\frac {1}{p} A ^ {p} + \\frac {1}{q} \\frac {1}{A ^ {q}} \\geqslant \\frac {k}{m} A ^ {\\frac {m}{k}} + \\frac {m - k}{m} \\frac {1}{A ^ {\\frac {m}{m - k}}} \\\\ \\geqslant \\left(\\left(A ^ {\\frac {m}{k}}\\right) ^ {k} \\left(\\frac {1}{A ^ {\\frac {m}{m - k}}}\\right) ^ {m - k}\\right) ^ {\\frac {1}{m}} = 1. \\\\ \\end{array}",
+          "image_source": "images/page_53_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.553,
+            0.547,
+            0.571
+          ],
+          "content": "由 m > p 的任意性即得 (2.4.6) 式. 定理得证."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.576,
+            0.487,
+            0.594
+          ],
+          "content": "利用 Young 不等式易得如下定理."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.191,
+            0.6,
+            0.43,
+            0.618
+          ],
+          "content": "定理 2.4.4 设  $x \\geqslant 0$ ，则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.27,
+            0.636,
+            0.901,
+            0.655
+          ],
+          "content": "(1 + x) ^ {\\alpha} - 1 \\leqslant \\alpha x, \\quad \\forall \\alpha \\in (0, 1 ], x \\geqslant 0. \\tag {2.4.7}",
+          "image_source": "images/page_53_equation_14.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.271,
+            0.669,
+            0.901,
+            0.687
+          ],
+          "content": "(1 + x) ^ {\\alpha} - 1 \\geqslant \\alpha x, \\quad \\forall \\alpha \\geqslant 1, x \\geqslant 0. \\tag {2.4.8}",
+          "image_source": "images/page_53_equation_15.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.271,
+            0.697,
+            0.901,
+            0.726
+          ],
+          "content": "(1 + x) ^ {\\alpha} - 1 \\geqslant \\frac {\\alpha x}{1 + x}, \\quad \\forall \\alpha \\geqslant 0, x \\geqslant 0. \\tag {2.4.9}",
+          "image_source": "images/page_53_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.739,
+            0.452,
+            0.755
+          ],
+          "content": "进一步，以上三个不等式是等价的."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.47,
+            0.784,
+            0.582,
+            0.803
+          ],
+          "level": 2,
+          "content": "习题2"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.829,
+            0.9,
+            0.87
+          ],
+          "content": "1. 证明: 对任何整数 $p \\geqslant 2, p$ 进制下的有限小数和无限循环小数的全体就是所有有理数."
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.148,
+            0.884,
+            0.901,
+            0.918
+          ],
+          "content": "① Young, William Henry, 1863 年 10 月 20 日—1942 年 7 月 7 日, 英国数学家. Young, Grace Chisholm, 1868 年 3 月 15 日—1944 年 3 月 29 日, 英国数学家. 两者为夫妻, 合作进行数学研究."
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.182,
+            0.92,
+            0.609,
+            0.935
+          ],
+          "content": "② 今后可以证明 (2.4.5) 式中, 等号成立当且仅当 $a = b^{q - 1}$."
+        }
+      ]
+    },
+    {
+      "page_idx": 54,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.069,
+            0.056,
+            0.088,
+            0.067
+          ],
+          "content": "40"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.054,
+            0.207,
+            0.068
+          ],
+          "content": "第二章 实数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.111,
+            0.856,
+            0.163
+          ],
+          "content": "2. Rudin 在其《数学分析原理》 $^{[52]}$  一书中使用了变换  $q = p + \\frac{2 - p^{2}}{p + 2} = \\frac{2 + 2p}{p + 2}$ . 验证:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.144,
+            0.17,
+            0.556,
+            0.209
+          ],
+          "sub_type": "text",
+          "content": "(1) 若 p > 0, 且  $p^{2} < 2$ , 则 q > p 且  $q^{2} < 2$ ;\n(2) 若 p > 0, 且  $p^{2} > 2$ , 则 0 < q < p 且  $q^{2} > 2$ ."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.102,
+            0.215,
+            0.853,
+            0.442
+          ],
+          "sub_type": "text",
+          "content": "3. 试求使变换 $q = p + \\frac{2 - p^2}{ap + b}$ 具有习题 2 中性质 (1)\\~(2) 的所有有理数对 $(a, b)$.\n4. 证明无理数在实数集中的稠密性: 对任何 $x \\in \\mathbb{R}$, 以及 $\\varepsilon > 0$, 存在无理数 $y$ 使得 $|y - x| < \\varepsilon$.\n5. 设 $a > 0$, 而 $n$ 为正整数. 证明: $\\min \\{a, 1\\} \\leqslant a^{\\frac{1}{n}} \\leqslant \\max \\{a, 1\\}$.\n6. 设  $n \\geqslant 2, \\alpha_{1}, \\alpha_{2}, \\cdots, \\alpha_{n} \\geqslant 0$ ，满足  $\\alpha_{1} + \\alpha_{2} + \\cdots + \\alpha_{n} = 1$ 。证明:对于  $x_{1}, x_{2}, \\cdots, x_{n} > 0$ ，有  $x_{1}^{\\alpha_{1}} x_{2}^{\\alpha_{2}} \\cdots x_{n}^{\\alpha_{n}} \\leqslant \\alpha_{1} x_{1} + \\alpha_{2} x_{2} + \\cdots + \\alpha_{n} x_{n}$ 。\n7. 证明定理 2.4.4.\n8. 设 $I$ 是一个非空指标集, 对 $I$ 中每一个元 $\\alpha$, 都对应两个实数 $x_{\\alpha}$ 以及 $y_{\\alpha}$. 我们习惯将 $\\sup \\{x_{\\alpha} | \\alpha \\in I\\}$ 和 $\\inf \\{x_{\\alpha} | \\alpha \\in I\\}$ 写成 $\\sup_{\\alpha \\in I} x_{\\alpha}$ 和 $\\inf_{\\alpha \\in I} x_{\\alpha}$. 证明: 在广义实数系中,"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.446,
+            0.367,
+            0.47
+          ],
+          "content": "(1) $\\inf_{\\alpha \\in I}(-x_{\\alpha}) = -\\sup_{\\alpha \\in I}x_{\\alpha};$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.476,
+            0.426,
+            0.491
+          ],
+          "content": "(2) 对以下所列的每一个不等式:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.26,
+            0.505,
+            0.697,
+            0.572
+          ],
+          "content": "\\begin{array}{l} \\inf _ {\\alpha \\in I} x _ {\\alpha} + \\inf _ {\\alpha \\in I} y _ {\\alpha} \\leqslant \\inf _ {\\alpha \\in I} (x _ {\\alpha} + y _ {\\alpha}) \\leqslant \\sup _ {\\alpha \\in I} x _ {\\alpha} + \\inf _ {\\alpha \\in I} y _ {\\alpha} \\\\ \\leqslant \\sup _ {\\alpha \\in I} (x _ {\\alpha} + y _ {\\alpha}) \\leqslant \\sup _ {\\alpha \\in I} x _ {\\alpha} + \\sup _ {\\alpha \\in I} y _ {\\alpha}, \\\\ \\end{array}",
+          "image_source": "images/page_54_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.582,
+            0.568,
+            0.598
+          ],
+          "content": "若其两端在广义实数系中都有意义, 则该不等式成立;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.6,
+            0.671,
+            0.629
+          ],
+          "content": "(3) 若 $x_{\\alpha} > 0 (\\forall \\alpha \\in I)$, 并在此种情形规定 $\\frac{1}{0} = +\\infty$, 我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.398,
+            0.638,
+            0.556,
+            0.677
+          ],
+          "content": "\\sup _ {\\alpha \\in I} \\frac {1}{x _ {\\alpha}} = \\frac {1}{\\inf _ {\\alpha \\in I} x _ {\\alpha}};",
+          "image_source": "images/page_54_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.688,
+            0.67,
+            0.706
+          ],
+          "content": "(4) 设  $x_{\\alpha} > 0, y_{\\alpha} > 0 (\\forall \\alpha \\in I)$ . 对以下所列的每一个不等式:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.29,
+            0.717,
+            0.663,
+            0.784
+          ],
+          "content": "\\begin{array}{l} \\inf _ {\\alpha \\in I} x _ {\\alpha} \\inf _ {\\alpha \\in I} y _ {\\alpha} \\leqslant \\inf _ {\\alpha \\in I} (x _ {\\alpha} y _ {\\alpha}) \\leqslant \\sup _ {\\alpha \\in I} x _ {\\alpha} \\inf _ {\\alpha \\in I} y _ {\\alpha}, \\\\ \\leqslant \\sup _ {\\alpha \\in I} (x _ {\\alpha} y _ {\\alpha}) \\leqslant \\sup _ {\\alpha \\in I} x _ {\\alpha} \\sup _ {\\alpha \\in I} y _ {\\alpha}, \\\\ \\end{array}",
+          "image_source": "images/page_54_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.794,
+            0.566,
+            0.811
+          ],
+          "content": "若其两端在广义实数系中都有意义, 则该不等式成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.814,
+            0.834,
+            0.841
+          ],
+          "content": "9. 对于 $a > 0$ 以及有理数 $\\frac{m}{n}$, 其中 $m, n$ 为既约整数, $n > 0$. 当 $m \\neq 1$ 时, 定义"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.413,
+            0.85,
+            0.541,
+            0.875
+          ],
+          "content": "a ^ {\\frac {m}{n}} := \\left(a ^ {m}\\right) ^ {\\frac {1}{n}}.",
+          "image_source": "images/page_54_equation_23.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.886,
+            0.717,
+            0.904
+          ],
+          "content": "自然, 当 $m = 1$ 时, 上式也成立. 进一步, 当 $n = 2k + 1$ 为奇数时, 定义"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.367,
+            0.915,
+            0.588,
+            0.936
+          ],
+          "content": "\\left(- a\\right) ^ {\\frac {m}{2 k + 1}} := \\left(- 1\\right) ^ {m} a ^ {\\frac {m}{2 k + 1}}.",
+          "image_source": "images/page_54_equation_25.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 55,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.853,
+            0.055,
+            0.902,
+            0.068
+          ],
+          "content": "习题2"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.922,
+            0.057,
+            0.94,
+            0.067
+          ],
+          "content": "41"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.154,
+            0.111,
+            0.476,
+            0.129
+          ],
+          "content": "下设 $a, b > 0$，且 $p, q$ 为有理数，证明:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.191,
+            0.135,
+            0.331,
+            0.152
+          ],
+          "content": "(1) $(a^p)^q = a^{pq}$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.192,
+            0.159,
+            0.337,
+            0.175
+          ],
+          "content": "(2) $a^p a^q = a^{p + q}$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.192,
+            0.183,
+            0.34,
+            0.2
+          ],
+          "content": "(3) $a^p b^p = (ab)^p$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.192,
+            0.206,
+            0.455,
+            0.223
+          ],
+          "content": "(4) 若 a > 1, p > 0, 则  $a^{p} > 1$ ;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.192,
+            0.229,
+            0.553,
+            0.246
+          ],
+          "content": "(5) 若 a > 1, 则  $a^{p}$  关于  $p \\in Q$  严格单增;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.192,
+            0.253,
+            0.77,
+            0.271
+          ],
+          "content": "(6) 设 $a > 1$, 对于任何 $b \\in \\mathbb{R}$, $\\sup \\{a^p | p < b\\} = \\inf \\{a^p | p > b\\}$ 成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.192,
+            0.277,
+            0.493,
+            0.293
+          ],
+          "content": "10. 设  $a \\geqslant 1$ ，且 b 为无理数，定义"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.435,
+            0.312,
+            0.62,
+            0.332
+          ],
+          "content": "a ^ {b} := \\sup \\left\\{a ^ {p} | p \\leqslant b \\right\\}.",
+          "image_source": "images/page_55_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.154,
+            0.35,
+            0.46,
+            0.368
+          ],
+          "content": "证明: 当 b 为有理数时上式也成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.192,
+            0.371,
+            0.582,
+            0.393
+          ],
+          "content": "进一步, 当 0 < a < 1 时, 定义  $a^{b} = (a^{-1})^{-b}$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.194,
+            0.398,
+            0.49,
+            0.415
+          ],
+          "content": "11. 设 $a, b > 0$, 且 $x, y \\in \\mathbb{R}$, 证明:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.194,
+            0.421,
+            0.345,
+            0.486
+          ],
+          "sub_type": "text",
+          "content": "(1) $(a^x)^y = a^{xy}$;\n(2) $a^{x}a^{y}=a^{x+y};$\n(3) $a^x b^x = (ab)^x$;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.194,
+            0.492,
+            0.46,
+            0.509
+          ],
+          "content": "(4) 若 a > 1, x > 0, 则  $a^{x} > 1$ ;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.194,
+            0.515,
+            0.556,
+            0.533
+          ],
+          "content": "(5) 若 a > 1, 则  $a^{x}$  关于  $x \\in R$  严格单增;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.194,
+            0.539,
+            0.591,
+            0.556
+          ],
+          "content": "(6) 若 0 < a < 1, 则  $a^{x}$  关于  $x \\in R$  严格单减."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.562,
+            0.906,
+            0.627
+          ],
+          "content": "12. 设 $a > 0, a \\neq 1, b > 0$, 证明有唯一的实数 $x$ 满足 $a^x = b$. 该实数称为以 $a$ 为底以 $b$ 为真数的对数. 记作 $\\log_a b$. 在底 $a$ 明确的情况下, 可以简写为 $\\log b$. $\\log_{10} b$ 记作 $\\lg b$, 称为常用对数, $\\log_e b$ 记作 $\\ln b$, 称为自然对数, 其中常数 $e$ 在3.3.2小节定义."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.194,
+            0.628,
+            0.66,
+            0.661
+          ],
+          "content": "13. 设 $a, b, x > 0, a \\neq 1, b \\neq 1$. 证明: $\\log_a x = \\frac{\\log_b x}{\\log_b a}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.663,
+            0.905,
+            0.703
+          ],
+          "content": "14. 证明: 当 $a > 1$ 时, $\\log_a x$ 关于 $x > 0$ 严格单增; 当 $0 < a < 1$ 时, $\\log_a x$ 关于 $x > 0$ 严格单减."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.194,
+            0.71,
+            0.694,
+            0.728
+          ],
+          "content": "15. 设 $a, x, y > 0, a \\neq 1$, 证明: $\\log_a(xy) = \\log_a x + \\log_a y$."
+        }
+      ]
+    },
+    {
+      "page_idx": 56,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.385,
+            0.094,
+            0.497,
+            0.122
+          ],
+          "level": 2,
+          "content": "第三章"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.546,
+            0.16,
+            0.74,
+            0.199
+          ],
+          "level": 2,
+          "content": "序列极限"
+        }
+      ]
+    },
+    {
+      "page_idx": 57,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.066,
+            0.055,
+            0.086,
+            0.066
+          ],
+          "content": "44"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.105,
+            0.053,
+            0.237,
+            0.068
+          ],
+          "content": "第三章 序列极限"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.109,
+            0.858,
+            0.151
+          ],
+          "content": "极限贯穿整个数学分析课程, 学习数学分析是一个从理解简单的极限到理解复杂的极限的不断深入的过程."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.204,
+            0.289,
+            0.228
+          ],
+          "level": 2,
+          "content": "3.1 数列极限"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.274,
+            0.859,
+            0.339
+          ],
+          "content": "所谓实数列, 是指一个从正整数集映到实数集的函数 $a: \\mathbb{N}_+ \\to \\mathbb{R}$. 若记 $a(n)$ 为 $a_n$, 则我们用 $\\{a_n\\}$ 表示该数列, $a_n$ 称为数列的一般项或通项. 通常, 我们也把数列 $\\{a_n\\}$ 写成"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.377,
+            0.345,
+            0.853,
+            0.359
+          ],
+          "content": "a _ {1}, a _ {2}, \\dots , a _ {n}, a _ {n + 1}, \\dots . \\tag {3.1.1}",
+          "image_source": "images/page_57_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.368,
+            0.51,
+            0.389
+          ],
+          "content": "必要时, 对于整数 $m$, 我们用 $\\{a_{n}\\}_{m}^{\\infty}$ 表示数列"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.333,
+            0.403,
+            0.853,
+            0.417
+          ],
+          "content": "a _ {m}, a _ {m + 1}, a _ {m + 2}, \\dots , a _ {n}, a _ {n + 1}, \\dots . \\tag {3.1.2}",
+          "image_source": "images/page_57_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.431,
+            0.357,
+            0.449
+          ],
+          "content": "我们定义数列极限如下:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.455,
+            0.859,
+            0.496
+          ],
+          "content": "定义 3.1.1 设有数列  $\\{a_{n}\\}$  与给定常数 A, 如果对任意  $\\varepsilon > 0$ , 都存在  $N \\geqslant 1$ , 使得当  $n \\geqslant N$  时, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.426,
+            0.501,
+            0.853,
+            0.515
+          ],
+          "content": "\\left| a _ {n} - A \\right| <   \\varepsilon , \\tag {3.1.3}",
+          "image_source": "images/page_57_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.524,
+            0.694,
+            0.544
+          ],
+          "content": "则称数列 $\\{a_{n}\\}$ 收敛于① $A$ 或极限存在, $A$ 称为 $\\{a_{n}\\}$ 的极限, 记作②"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.422,
+            0.558,
+            0.853,
+            0.579
+          ],
+          "content": "\\lim _ {n \\rightarrow + \\infty} a _ {n} = A \\tag {3.1.4}",
+          "image_source": "images/page_57_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.589,
+            0.13,
+            0.604
+          ],
+          "content": "或"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.362,
+            0.613,
+            0.853,
+            0.628
+          ],
+          "content": "a _ {n} \\rightarrow A, \\quad \\text {当} n \\rightarrow + \\infty \\text {时}. \\tag {3.1.5}",
+          "image_source": "images/page_57_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.642,
+            0.461,
+            0.659
+          ],
+          "content": "当  $\\{a_{n}\\}$  不收敛时, 我们就称它是发散的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.663,
+            0.859,
+            0.753
+          ],
+          "content": "通俗地讲, $\\{a_{n}\\}$ 的极限为 $A$, 就是只要 $n$ 足够大, $a_{n}$ 与 $A$ 要多接近就有多接近. 体现在直角坐标系中, 就是当 $n$ 足够大时, $(n, a_{n})$ 都落在带形 $(- \\infty, +\\infty) \\times (A - \\varepsilon, A + \\varepsilon)$ 上, 如图3.1所示. 也可以这样理解 $\\{a_{n}\\}$ 的极限为 $A$: 无论 $\\varepsilon > 0$ 有多小, 数列 $\\{a_{n}\\}$ 中都只有有限项落在区间 $(A - \\varepsilon, A + \\varepsilon)$ 之外, 如图3.2所示."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.756,
+            0.859,
+            0.891
+          ],
+          "content": "对于数列 $\\{a_{n}\\}$, 可形成一个新的数列 $\\left\\{\\sum_{k=1}^{n} a_{k}\\right\\}$, 我们用 $\\sum_{n=1}^{\\infty} a_{n}$ 表示, 称为无穷级数或级数. 若 $\\left\\{\\sum_{k=1}^{n} a_{k}\\right\\}$ 收敛到 $A$, 则称级数 $\\sum_{n=1}^{\\infty} a_{n}$ 收敛到 $A$, 又称级数的和为 $A$. $\\sum_{k=1}^{n} a_{k}$ 称为级数的部分和. 易见, $\\lim_{n \\to +\\infty} a_{n} = 0$ 是级数 $\\sum_{n=1}^{\\infty} a_{n}$ 收敛的必要条件."
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.138,
+            0.902,
+            0.407,
+            0.916
+          ],
+          "content": "① “收敛于 A” 也时常说成 “趋于 A”."
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.138,
+            0.919,
+            0.684,
+            0.934
+          ],
+          "content": "② 鉴于数列极限中的 n 通常为自然数或正整数,  $n \\rightarrow +\\infty$  时常写为  $n \\rightarrow \\infty$ ."
+        }
+      ]
+    },
+    {
+      "page_idx": 58,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.79,
+            0.056,
+            0.896,
+            0.069
+          ],
+          "content": "3.1 数列极限"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.915,
+            0.058,
+            0.935,
+            0.069
+          ],
+          "content": "45"
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.298,
+            0.109,
+            0.745,
+            0.252
+          ],
+          "sub_type": "scatter",
+          "content": "| Point | x (approx) | y (approx) |\n| --- | --- | --- |\n| a1 | ~0.5 | ~-2.5 |\n| a2 | ~1.5 | ~7.5 |\n| a3 | ~2.5 | ~4.5 |\n| a4 | ~3.5 | ~-1.5 |\n| a5 | ~4.5 | ~6.0 |\n| a6 | ~5.5 | ~-0.5 |\n| an | ~6.5 | ~-0.5 |\n| an+1 | ~7.5 | ~-1.0 |\n| Unlabeled 1 | ~8.5 | ~-0.5 |\n| Unlabeled 2 | ~9.5 | ~-0.5 |\n| Unlabeled 3 | ~10.5 | ~-0.5 |\n| Unlabeled 4 | ~11.5 | ~-0.5 |\n| Unlabeled 5 | ~12.5 | ~-0.5 |\n| Unlabeled 6 | ~13.5 | ~-0.5 |\n| Unlabeled 7 | ~14.5 | ~-0.5 |\n| Unlabeled 8 | ~15.5 | ~-0.5 |\n| Unlabeled 9 | ~16.5 | ~-0.5 |\n| Unlabeled 10 | ~17.5 | ~-0.5 |\n| Unlabeled 11 | ~18.5 | ~-0.5 |\n| Unlabeled 12 | ~19.5 | ~-0.5 |\n| Unlabeled 13 | ~20.5 | ~-0.5 |\n| Unlabeled 14 | ~21.5 | ~-0.5 |\n| Unlabeled 15 | ~22.5 | ~-0.5 |\n| Unlabeled 16 | ~23.5 | ~-0.5 |\n| Unlabeled 17 | ~24.5 | ~-0.5 |\n| Unlabeled 18 | ~25.5 | ~-0.5 |\n| Unlabeled 19 | ~26.5 | ~-0.5 |\n| Unlabeled 20 | ~27.5 | ~-0.5 |\n| Unlabeled 21 | ~28.5 | ~-0.5 |\n| Unlabeled 22 | ~29.5 | ~-0.5 |\n| Unlabeled 23 | ~30.5 | ~-0.5 |\n| Unlabeled 24 | ~31.5 | ~-0.5 |\n| Unlabeled 25 | ~32.5 | ~-0.5 |\n| Unlabeled 26 | ~33.5 | ~-0.5 |\n| Unlabeled 27 | ~34.5 | ~-0.5 |\n| Unlabeled 28 | ~35.5 | ~-0.5 |\n| Unlabeled 29 | ~36.5 | ~-0.5 |\n| Unlabeled 30 | ~37.5 | ~-0.5 |\n| Unlabeled 31 | ~38.5 | ~-0.5 |\n| Unlabeled 32 | ~39.5 | ~-0.5 |\n| Unlabeled 33 | ~40.5 | ~-0.5 |\n| Unlabeled 34 | ~41.5 | ~-0.5 |\n| Unlabeled 35 | ~42.5 | ~-0.5 |\n| Unlabeled 36 | ~43.5 | ~-0.5 |\n| Unlabeled 37 | ~44.5 | ~-0.5 |\n| Unlabeled 38 | ~45.5 | ~-0.5 |\n| Unlabeled 39 | ~46.5 | ~-0.5 |\n| Unlabeled 40 | ~47.5 | ~-0.5 |\n| Unlabeled 41 | ~48.5 | ~-0.5 |\n| Unlabeled 42 | ~49.5 | ~-0.5 |\n| Unlabeled 43 | ~50.5 | ~-0.5 |\n| Unlabeled 44 | ~51.5 | ~-0.5 |\n| Unlabeled 45 | ~52.5 | ~-0.5 |\n| Unlabeled 46 | ~53.5 | ~-0.5 |\n| Unlabeled 47 | ~54.5 | ~-0.5 |\n| Unlabeled 48 | ~55.5 | ~-0.5 |\n| Unlabeled 49 | ~56.5 | ~-0.5 |\n| Unlabeled 50 | ~57.5 | ~-0.5 |\n| Unlabeled 51 | ~58.5 | ~-0.5 |\n| Unlabeled 52 | ~59.5 | ~-0.5 |\n| Unlabeled 53 | ~60.5 | ~-0.5 |\n| Unlabeled 54 | ~61.5 | ~-0.5 |\n| Unlabeled 55 | ~62.5 | ~-0.5 |\n| Unlabeled 56 | ~63.5 | ~-0.5 |\n| Unlabeled 57 | ~64.5 | ~-0.5 |\n| Unlabeled 58 | ~65.5 | ~-0.5 |\n| Unlabeled 59 | ~66.5 | ~-0.5 |\n| Unlabeled 60 | ~67.5 | ~-0.5 |\n| Unlabeled 61 | ~68.5 | ~-0.5 |\n| Unlabeled 62 | ~69.5 | ~-0.5 |\n| Unlabeled 63 | ~70.5 | ~-0.5 |\n| Unlabeled 64 | ~71.5 | ~-0.5 |\n| Unlabeled 65 | ~72.5 | ~-0.5 |\n| Unlabeled 66 | ~73.5 | ~-0.5 |\n| Unlabeled 67 | ~74.5 | ~-0.5 |\n| Unlabeled 68 | ~75.5 | ~-0.5 |\n| Unlabeled 69 | ~76.5 | ~-0.5 |\n| Unlabeled 70 | ~77.5 | ~-0.5 |\n| Unlabeled 71 | ~78.5 | ~-0.5 |\n| Unlabeled 72 | ~79.5 | ~-0.5 |\n| Unlabeled 73 | ~80.5 | ~-0.5 |\n| Unlabeled 74 | ~81.5 | ~-0.5 |\n| Unlabeled 75 | ~82.5 | ~-0.5 |\n| Unlabeled 76 | ~83.5 | ~-0.5 |\n| Unlabeled 77 | ~84.5 | ~-0.5 |\n| Unlabeled 78 | ~85.5 | ~-0.5 |\n| Unlabeled 79 | ~86.5 | ~-0.5 |\n| Unlabeled 80 | ~87.5 | ~-0.5 |\n| Unlabeled 81 | ~88.5 | ~-0.5 |\n| Unlabeled 82 | ~89.5 | ~-0.5 |\n| Unlabeled 83 | ~90.5 | ~-0.5 |\n| Unlabeled 84 | ~91.5 | ~-0.5 |\n| Unlabeled 85 | ~92.5 | ~-0.5 |\n| Unlabeled 86 | ~93.5 | ~-0.5 |\n| Unlabeled 87 | ~94.5 | ~-0.5 |\n| Unlabeled 88 | ~95.5 | ~-0.5 |\n| Unlabeled 89 | ~96.5 | ~-0.5 |\n| Unlabeled 90 | ~97.5 | ~-0.5 |\n| Unlabeled 91 | ~98.5 | ~-0.5 |\n| Unlabeled 92 | ~99.5 | ~-0.5 |",
+          "captions": [
+            {
+              "bbox": [
+                0.493,
+                0.261,
+                0.549,
+                0.276
+              ],
+              "content": "图3.1"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_58_chart_2.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.32,
+            0.304,
+            0.721,
+            0.341
+          ],
+          "sub_type": "text_image",
+          "content": "a₄ a₁\nA−ε aₙ A Aₙ₊₁ A+ε a₃ a₂",
+          "captions": [
+            {
+              "bbox": [
+                0.493,
+                0.349,
+                0.55,
+                0.363
+              ],
+              "content": "图3.2"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_58_image_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.382,
+            0.898,
+            0.519
+          ],
+          "content": "类似地, 由数列 $\\{a_{n}\\}$ 形成的另一个数列 $\\left\\{\\prod_{k=1}^{n} a_{k}\\right\\}$ 称为无穷乘积, 用 $\\prod_{n=1}^{\\infty} a_{n}$ 表示. 若 $\\left\\{\\prod_{k=1}^{n} a_{k}\\right\\}$ 收敛到实数 $A \\neq 0$, 则称无穷乘积 $\\prod_{n=1}^{\\infty} a_{n}$ 收敛到 $A$, 又称作乘积为 $A$. $\\prod_{k=1}^{n} a_{k}$ 称为无穷乘积的部分积. 易见, $\\lim_{n \\to +\\infty} a_{n} = 1$ 是无穷乘积 $\\prod_{n=1}^{\\infty} a_{n}$ 收敛的必要条件."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.522,
+            0.898,
+            0.587
+          ],
+          "content": "用定义说明极限存在关键是找到合适的 N. 满足要求的 N 并不唯一. 许多初学者习惯于寻找使不等式 (3.1.3) 成立的那个最小的 N. 但这是没有必要的. 正确的思路是用尽量简单的方法找一个正确的简单的 N."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.591,
+            0.5,
+            0.623
+          ],
+          "content": "例3.1.1 证明 $\\lim_{n\\to +\\infty}\\frac{n}{2n + 1} = \\frac{1}{2}$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.626,
+            0.386,
+            0.642
+          ],
+          "content": "证明 $\\forall \\varepsilon > 0$, 要使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.443,
+            0.645,
+            0.601,
+            0.678
+          ],
+          "content": "\\left| \\frac {n}{2 n + 1} - \\frac {1}{2} \\right| <   \\varepsilon ,",
+          "image_source": "images/page_58_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.687,
+            0.172,
+            0.702
+          ],
+          "content": "即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.455,
+            0.706,
+            0.588,
+            0.737
+          ],
+          "content": "2 (2 n + 1) > \\frac {1}{\\varepsilon},",
+          "image_source": "images/page_58_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.747,
+            0.192,
+            0.763
+          ],
+          "content": "只要"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.48,
+            0.766,
+            0.562,
+            0.798
+          ],
+          "content": "n \\geqslant \\left[ \\frac {1}{\\varepsilon} \\right].",
+          "image_source": "images/page_58_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.81,
+            0.426,
+            0.841
+          ],
+          "content": "取 $N = \\left[\\frac{1}{\\varepsilon}\\right]$, 则当 $n \\geqslant N$ 时, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.443,
+            0.858,
+            0.601,
+            0.89
+          ],
+          "content": "\\left| \\frac {n}{2 n + 1} - \\frac {1}{2} \\right| <   \\varepsilon .",
+          "image_source": "images/page_58_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.907,
+            0.564,
+            0.94
+          ],
+          "content": "于是, 根据极限的定义, 得到  $\\lim_{n\\to+\\infty}\\frac{n}{2n+1}=\\frac{1}{2}$ ."
+        }
+      ]
+    },
+    {
+      "page_idx": 59,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.068,
+            0.055,
+            0.088,
+            0.066
+          ],
+          "content": "46"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.053,
+            0.239,
+            0.068
+          ],
+          "content": "第三章 序列极限"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.109,
+            0.857,
+            0.166
+          ],
+          "content": "当 $\\varepsilon > 1$ 时, 上面所取的 $N = 0$, 不符合极限定义中 $N \\geqslant 1$ 的条件. 为此, 我们可以用取 $N = \\left[\\frac{1}{\\varepsilon}\\right] + 1$ 来代替原先的取法."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.167,
+            0.857,
+            0.232
+          ],
+          "content": "另一方面, 极限定义中之所以要求 $N \\geqslant 1$, 是因为数列定义中的起始项对应于 $n = 1$. 但这不是本质的. 在 (3.1.2) 式中, 数列的起始项对应于整数 $n = m$, 此时极限定义中的 “$N \\geqslant 1$” 自然应修改为 “$N \\geqslant m$”."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.233,
+            0.857,
+            0.28
+          ],
+          "content": "在例 3.1.1 中, 我们不妨认为数列的起始项对应于 n = 0 的项  $\\frac{0}{0 + 1} = 0$ . 这样, 就不必刻意去要求  $N \\geqslant 1$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.285,
+            0.857,
+            0.366
+          ],
+          "content": "当情况更为复杂时, 较大的 $\\varepsilon$ 反而造成一些麻烦. 为此, 可限制 $\\varepsilon$ 取值于 $(0, \\delta_0)$, 其中 $\\delta_0$ 是一个预先给定的正数. 换言之, 极限定义中的 “$\\forall \\varepsilon > 0$”, 可以替换为 “$\\forall \\varepsilon \\in (0,1)$” 或 “$\\forall \\varepsilon \\in \\left(0, \\frac{1}{2}\\right)$” 等."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.367,
+            0.508,
+            0.391
+          ],
+          "content": "例 3.1.2 设 a > 1, 证明  $\\lim_{n \\to +\\infty} \\sqrt[n]{a} = 1$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.391,
+            0.344,
+            0.408
+          ],
+          "content": "证明 $\\forall \\varepsilon > 0,$ 要使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.424,
+            0.414,
+            0.542,
+            0.435
+          ],
+          "content": "\\left| \\sqrt [ n ]{a} - 1 \\right| <   \\varepsilon ,",
+          "image_source": "images/page_59_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.108,
+            0.443,
+            0.13,
+            0.459
+          ],
+          "content": "即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.293,
+            0.466,
+            0.671,
+            0.487
+          ],
+          "content": "a <   (1 + \\varepsilon) ^ {n} = 1 + n \\varepsilon + \\mathrm{C} _ {n} ^ {2} \\varepsilon^ {2} + \\dots + \\mathrm{C} _ {n} ^ {n} \\varepsilon^ {n},",
+          "image_source": "images/page_59_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.108,
+            0.496,
+            0.15,
+            0.512
+          ],
+          "content": "只要"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.449,
+            0.522,
+            0.515,
+            0.536
+          ],
+          "content": "a <   n \\varepsilon .",
+          "image_source": "images/page_59_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.543,
+            0.419,
+            0.573
+          ],
+          "content": "取 $N = \\left[\\frac{a}{\\varepsilon}\\right] + 1$ ，则当 $n \\geqslant N$ 时，有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.423,
+            0.579,
+            0.542,
+            0.6
+          ],
+          "content": "\\left| \\sqrt [ n ]{a} - 1 \\right| <   \\varepsilon .",
+          "image_source": "images/page_59_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.612,
+            0.489,
+            0.636
+          ],
+          "content": "于是, 根据极限的定义, 得到  $\\lim_{n\\to+\\infty}\\sqrt[n]{a}=1$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.636,
+            0.424,
+            0.658
+          ],
+          "content": "例 3.1.3 证明  $\\lim_{n\\to+\\infty}\\sqrt[n]{n}=1$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.659,
+            0.344,
+            0.676
+          ],
+          "content": "证明 $\\forall \\varepsilon > 0,$ 要使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.423,
+            0.681,
+            0.543,
+            0.702
+          ],
+          "content": "\\left| \\sqrt [ n ]{n} - 1 \\right| <   \\varepsilon ,",
+          "image_source": "images/page_59_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.108,
+            0.711,
+            0.13,
+            0.727
+          ],
+          "content": "即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.293,
+            0.733,
+            0.671,
+            0.753
+          ],
+          "content": "n <   (1 + \\varepsilon) ^ {n} = 1 + n \\varepsilon + \\mathrm{C} _ {n} ^ {2} \\varepsilon^ {2} + \\dots + \\mathrm{C} _ {n} ^ {n} \\varepsilon^ {n},",
+          "image_source": "images/page_59_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.108,
+            0.763,
+            0.235,
+            0.781
+          ],
+          "content": "只要 $n \\geqslant 2$ ，且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.413,
+            0.779,
+            0.855,
+            0.811
+          ],
+          "content": "n <   \\frac {n (n - 1)}{2} \\varepsilon^ {2}. \\tag {3.1.6}",
+          "image_source": "images/page_59_equation_22.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.816,
+            0.256,
+            0.833
+          ],
+          "content": "这只要 $n \\geqslant 2$ ，且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.431,
+            0.831,
+            0.534,
+            0.863
+          ],
+          "content": "n > \\frac {2}{\\varepsilon^ {2}} + 1.",
+          "image_source": "images/page_59_equation_24.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.869,
+            0.429,
+            0.906
+          ],
+          "content": "取 $N = \\left[\\frac{2}{\\varepsilon^2}\\right] + 2,$ 则当 $n\\geqslant N$ 时，有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.424,
+            0.916,
+            0.543,
+            0.937
+          ],
+          "content": "\\left| \\sqrt [ n ]{n} - 1 \\right| <   \\varepsilon .",
+          "image_source": "images/page_59_equation_26.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 60,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.798,
+            0.054,
+            0.904,
+            0.068
+          ],
+          "content": "3.1 数列极限"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.924,
+            0.055,
+            0.943,
+            0.066
+          ],
+          "content": "47"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.108,
+            0.536,
+            0.133
+          ],
+          "content": "于是, 根据极限的定义, 得到 $\\lim_{n\\to +\\infty}\\sqrt[n]{n} = 1$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.137,
+            0.905,
+            0.254
+          ],
+          "content": "在上面的讨论中, 为了 $(1 + \\varepsilon)^n$ 的展开式出现 (3.1.6) 式中的 $\\frac{n(n - 1)}{2}\\varepsilon^2$, 我们附加了 $n \\geqslant 2$ 的要求. 事实上, 即使 $n < 2$, 认为 $(1 + \\varepsilon)^n$ 的展开式中含有 $\\frac{n(n - 1)}{2}\\varepsilon^2$ 也并无不妥. 而在默认 $n \\geqslant 0$ 时, $(1 + \\varepsilon)^n \\geqslant \\frac{n(n - 1)}{2}\\varepsilon^2$ 也总是成立. 因此, $n \\geqslant 2$ 这个要求可以不用专门提."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.191,
+            0.259,
+            0.594,
+            0.284
+          ],
+          "content": "例3.1.4 设 $q \\in (-1, 1)$. 证明 $\\lim_{n \\to +\\infty} q^n = 0$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.191,
+            0.284,
+            0.391,
+            0.301
+          ],
+          "content": "证明 $\\forall \\varepsilon > 0,$ 要使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.49,
+            0.307,
+            0.567,
+            0.329
+          ],
+          "content": "\\left| q ^ {n} \\right| <   \\varepsilon ,",
+          "image_source": "images/page_60_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.34,
+            0.177,
+            0.357
+          ],
+          "content": "即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.469,
+            0.365,
+            0.587,
+            0.384
+          ],
+          "content": "n \\lg | q | <   \\lg \\varepsilon ,",
+          "image_source": "images/page_60_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.397,
+            0.197,
+            0.414
+          ],
+          "content": "亦即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.482,
+            0.414,
+            0.575,
+            0.45
+          ],
+          "content": "n > \\frac {\\lg \\varepsilon}{\\lg | q |},",
+          "image_source": "images/page_60_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.46,
+            0.515,
+            0.495
+          ],
+          "content": "可取 $N = \\left[\\frac{\\lg\\varepsilon}{\\lg|q|}\\right] + 1,$ 则当 $n\\geqslant N$ 时，有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.49,
+            0.51,
+            0.567,
+            0.532
+          ],
+          "content": "\\left| q ^ {n} \\right| <   \\varepsilon .",
+          "image_source": "images/page_60_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.548,
+            0.526,
+            0.573
+          ],
+          "content": "于是, 根据极限的定义, 得到  $\\lim_{n\\to+\\infty}q^{n}=0$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.191,
+            0.576,
+            0.667,
+            0.609
+          ],
+          "content": "例 3.1.5 证明  $\\lim_{n\\to+\\infty}\\frac{10n^{3}-456n^{2}+123n-89}{2n^{3}-99n^{2}+7n-8}=5.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.191,
+            0.609,
+            0.451,
+            0.626
+          ],
+          "content": "证明 任取 $\\varepsilon \\in (0,1)$, 要使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.37,
+            0.642,
+            0.688,
+            0.678
+          ],
+          "content": "\\left| \\frac {1 0 n ^ {3} - 4 5 6 n ^ {2} + 1 2 3 n - 8 9}{2 n ^ {3} - 9 9 n ^ {2} + 7 n - 8} - 5 \\right| <   \\varepsilon ,",
+          "image_source": "images/page_60_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.689,
+            0.177,
+            0.705
+          ],
+          "content": "即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.411,
+            0.705,
+            0.648,
+            0.739
+          ],
+          "content": "\\left| \\frac {3 9 n ^ {2} + 8 8 n - 4 9}{2 n ^ {3} - 9 9 n ^ {2} + 7 n - 8} \\right| <   \\varepsilon ,",
+          "image_source": "images/page_60_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.745,
+            0.304,
+            0.763
+          ],
+          "content": "只要 $n \\geqslant 100$ ，且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.484,
+            0.765,
+            0.573,
+            0.8
+          ],
+          "content": "\\frac {4 0 n ^ {2}}{n ^ {3}} <   \\varepsilon .",
+          "image_source": "images/page_60_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.808,
+            0.451,
+            0.84
+          ],
+          "content": "取 $N = \\left[\\frac{100}{\\varepsilon}\\right]$, 则当 $n \\geqslant N$ 时, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.37,
+            0.855,
+            0.688,
+            0.891
+          ],
+          "content": "\\left| \\frac {1 0 n ^ {3} - 4 5 6 n ^ {2} + 1 2 3 n - 8 9}{2 n ^ {3} - 9 9 n ^ {2} + 7 n - 8} - 5 \\right| <   \\varepsilon .",
+          "image_source": "images/page_60_equation_22.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.906,
+            0.731,
+            0.941
+          ],
+          "content": "于是, 根据极限的定义, 得到  $\\lim_{n\\to+\\infty}\\frac{10n^{3}-456n^{2}+123n-89}{2n^{3}-99n^{2}+7n-8}=5.$"
+        }
+      ]
+    },
+    {
+      "page_idx": 61,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.061,
+            0.056,
+            0.082,
+            0.067
+          ],
+          "content": "48"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.1,
+            0.054,
+            0.233,
+            0.068
+          ],
+          "content": "第三章 序列极限"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.193,
+            0.11,
+            0.851,
+            0.176
+          ],
+          "content": "注3.1.1 在很多场合, 严格地按照极限定义的形式进行讨论会显得很不方便. 因此, 我们需要熟悉与定义3.1.1等价的陈述. 例如, $\\lim_{n\\to +\\infty}a_n = A$ 等价于:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.234,
+            0.184,
+            0.646,
+            0.202
+          ],
+          "content": "$\\forall \\varepsilon \\in (0,1),\\exists N\\geqslant 10,$ 使得当 $n\\geqslant 100N$ 时，有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.445,
+            0.222,
+            0.851,
+            0.24
+          ],
+          "content": "| a _ {n} - A | \\leqslant 1 0 0 0 \\varepsilon . \\tag {3.1.7}",
+          "image_source": "images/page_61_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.192,
+            0.259,
+            0.853,
+            0.327
+          ],
+          "content": "一般地, 对于固定的  $\\varepsilon_{0}>0, N_{0}\\geqslant1$ , 以及 M>0,  $\\lim_{n\\to+\\infty}a_{n}=A$  等价于:\n $\\forall\\varepsilon\\in(0,\\varepsilon_{0})$  (亦可改为  $(0,\\varepsilon_{0}]$ ),  $\\exists N\\geqslant N_{0}$  (亦可改为  $N>N_{0}$ ), 使得当  $n\\geqslant N$  (亦可改为 n>N) 时, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.311,
+            0.346,
+            0.851,
+            0.365
+          ],
+          "content": "| a _ {n} - A | <   M \\varepsilon \\qquad (\\text {亦可改为} \\quad | a _ {n} - A | \\leqslant M \\varepsilon). \\tag {3.1.8}",
+          "image_source": "images/page_61_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.377,
+            0.851,
+            0.418
+          ],
+          "content": "现在我们来考察收敛数列的基本性质. 首先, 我们来给出唯一性、有界性、保序性和保号性."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.424,
+            0.476,
+            0.443
+          ],
+          "content": "定理 3.1.1 设数列  $\\{a_{n}\\}$  收敛到 A."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.448,
+            0.727,
+            0.465
+          ],
+          "content": "(1) (保号性) 若 A > 0, 则存在  $N \\geqslant 1$ , 使得当  $n \\geqslant N$  时, 有  $a_{n} > 0$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.472,
+            0.698,
+            0.488
+          ],
+          "content": "一般地, 若 A > B, 则存在  $N \\geqslant 1$ , 使得当  $n \\geqslant N$  时, 有  $a_{n} > B$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.489,
+            0.695,
+            0.518
+          ],
+          "content": "特别地, 若 A > 0, 则存在  $N \\geqslant 1$ , 使得当  $n \\geqslant N$  时, 有  $a_{n} > \\frac{A}{2}$ ."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.138,
+            0.519,
+            0.807,
+            0.583
+          ],
+          "sub_type": "text",
+          "content": "(2) (保序性) 若数列 $\\{b_n\\}$ 收敛到 $B$, 而从某一项开始, 有 $a_n \\geqslant b_n$, 则 $A \\geqslant B$.\n(3) (唯一性) 若  $\\{a_{n}\\}$  同时收敛到 B, 则 A = B.\n(4) (有界性)  $\\{a_{n}\\}$  有界."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.589,
+            0.511,
+            0.606
+          ],
+          "content": "证明 (1) 只要证明 A > B 时的一般结论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.613,
+            0.85,
+            0.654
+          ],
+          "content": "取 $\\varepsilon_0 = A - B$ ，则 $\\varepsilon_0 > 0$ 根据极限定义，存在 $N\\geqslant 1$ ，使得当 $n\\geqslant N$ 时，有$|a_n - A| <   \\varepsilon_0.$ 此时， $a_{n} > A - \\varepsilon_{0} = B.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.659,
+            0.717,
+            0.682
+          ],
+          "content": "(2) 若结论不真, 则 $A < B$. 易见 $\\lim_{n \\to +\\infty} (-a_n) = -A$. 由 (1) 以及"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.37,
+            0.697,
+            0.579,
+            0.73
+          ],
+          "content": "\\lim _ {n \\to + \\infty} b _ {n} = B > \\frac {A + B}{2}",
+          "image_source": "images/page_61_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.744,
+            0.572,
+            0.775
+          ],
+          "content": "可得, 存在  $N_{1} \\geqslant 1$  使得当  $n \\geqslant N_{1}$  时, 有  $b_{n} > \\frac{A + B}{2}$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.775,
+            0.314,
+            0.792
+          ],
+          "content": "同样地, 由 (1) 以及"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.334,
+            0.802,
+            0.615,
+            0.835
+          ],
+          "content": "\\lim _ {n \\to + \\infty} \\left(- a _ {n}\\right) = - A > - \\frac {A + B}{2}",
+          "image_source": "images/page_61_equation_22.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.848,
+            0.61,
+            0.879
+          ],
+          "content": "可得, 存在  $N_{2} \\geqslant 1$ , 使得当  $n \\geqslant N_{2}$  时, 有  $-a_{n} > -\\frac{A + B}{2}$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.88,
+            0.459,
+            0.897
+          ],
+          "content": "取  $N = N_{1} + N_{2}$ ，则当  $n \\geqslant N$  时，有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.333,
+            0.906,
+            0.615,
+            0.94
+          ],
+          "content": "b _ {n} - a _ {n} > \\frac {A + B}{2} - \\frac {A + B}{2} = 0.",
+          "image_source": "images/page_61_equation_25.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 62,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.788,
+            0.056,
+            0.896,
+            0.07
+          ],
+          "content": "3.1 数列极限"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.914,
+            0.058,
+            0.934,
+            0.069
+          ],
+          "content": "49"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.113,
+            0.37,
+            0.129
+          ],
+          "content": "与假设矛盾. 因此  $A \\geqslant B$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.18,
+            0.135,
+            0.88,
+            0.153
+          ],
+          "content": "(3) 取 $\\{b_n\\}$ 为 $\\{a_n\\}$, 由 (2), 立即得到 $A \\geqslant B$ 与 $B \\geqslant A$ 同时成立. 因此, $A = B$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.159,
+            0.894,
+            0.24
+          ],
+          "content": "(4) 由极限定义, 存在 $N \\geqslant 1$, 使得当 $n \\geqslant N$ 时, 有 $|a_n - A| < \\varepsilon_0 = 1$. 此时 $|a_n| < |A| + 1$. 取 $M = \\sum_{k=1}^{n} |a_k| + |A| + 1$, 则对于任何 $n \\geqslant 1$, 有 $|a_n| \\leqslant M$. 即证 $\\{a_n\\}$ 有界."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.242,
+            0.896,
+            0.313
+          ],
+          "content": "这里需要注意 (4) 的结果还基于数列的每一项都是实数. 例如, 不能由 $\\lim_{n\\to +\\infty}\\frac{n + 1}{n - 100} = 1$ 得出存在 $M > 0$ 使得对任何 $n \\geqslant 1$ 有 $\\left|\\frac{n + 1}{n - 100}\\right| \\leqslant M$, 进而 $|n - 100| \\geqslant \\frac{n + 1}{M}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.181,
+            0.317,
+            0.69,
+            0.334
+          ],
+          "content": "在今后的讨论中, 夹逼准则是一个简单而非常有用的定理."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.34,
+            0.686,
+            0.359
+          ],
+          "content": "定理 3.1.2 设数列  $\\{x_{n}\\},\\{y_{n}\\}$  和  $\\{z_{n}\\}$  满足如下条件:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.398,
+            0.382,
+            0.638,
+            0.399
+          ],
+          "content": "y _ {n} \\leqslant x _ {n} \\leqslant z _ {n}, \\quad \\forall n \\geqslant 1.",
+          "image_source": "images/page_62_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.423,
+            0.169,
+            0.438
+          ],
+          "content": "若"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.404,
+            0.45,
+            0.635,
+            0.474
+          ],
+          "content": "\\lim _ {n \\to + \\infty} y _ {n} = \\lim _ {n \\to + \\infty} z _ {n} = A.",
+          "image_source": "images/page_62_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.487,
+            0.169,
+            0.502
+          ],
+          "content": "则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.455,
+            0.515,
+            0.895,
+            0.537
+          ],
+          "content": "\\lim _ {n \\to + \\infty} x _ {n} = A. \\tag {3.1.9}",
+          "image_source": "images/page_62_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.183,
+            0.549,
+            0.818,
+            0.573
+          ],
+          "content": "证明 $\\forall \\varepsilon > 0,$ 由 $\\lim_{n\\to +\\infty}y_n = A$ 可得, 存在 $N \\geqslant 1$, 使得当 $n \\geqslant N$ 时, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.43,
+            0.591,
+            0.61,
+            0.608
+          ],
+          "content": "A - \\varepsilon <   y _ {n} <   A + \\varepsilon .",
+          "image_source": "images/page_62_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.628,
+            0.774,
+            0.653
+          ],
+          "content": "对于上述 $^{①}$   $\\varepsilon$ , 由  $\\lim_{n\\to+\\infty}z_n=A$  可得, 存在 $^{②}\\widetilde{N}\\geqslant1$ , 使得当  $n\\geqslant\\widetilde{N}$  时, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.431,
+            0.666,
+            0.609,
+            0.683
+          ],
+          "content": "A - \\varepsilon <   z _ {n} <   A + \\varepsilon .",
+          "image_source": "images/page_62_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.696,
+            0.508,
+            0.723
+          ],
+          "content": "取 $M = \\max \\left\\{N, \\widetilde{N}\\right\\}$, 则当 $n \\geqslant M$ 时, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.384,
+            0.736,
+            0.658,
+            0.753
+          ],
+          "content": "A - \\varepsilon <   y _ {n} \\leqslant x _ {n} \\leqslant z _ {n} <   A + \\varepsilon .",
+          "image_source": "images/page_62_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.77,
+            0.474,
+            0.793
+          ],
+          "content": "因此, 由极限定义可见  $\\lim_{n\\to+\\infty}x_{n}=A.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.24,
+            0.804,
+            0.898,
+            0.871
+          ],
+          "content": "注3.1.2 如果像定理3.1.1(2)的证明中那样, 把在上面证明中的 $N, \\widetilde{N}, M$ 依次用 $N_{1}, N_{2}, N$ 代替, 则证明的可读性会更好. 如何选择符号, 是我们在叙述中需要留意的. 尤其遵循符号使用上一些通行的习惯是值得鼓励的."
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.177,
+            0.884,
+            0.792,
+            0.898
+          ],
+          "content": "① “ $\\forall\\varepsilon>0$ ” 在前面已经出现过，意味着此时  $\\varepsilon$  已经确定，因此，不能再使用 “ $\\forall\\varepsilon>0$ ”."
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.144,
+            0.901,
+            0.898,
+            0.934
+          ],
+          "content": "② 同样地，“存在 $N \\geqslant 1$”在前面已经出现过，意味着此时 $N$ 也已经确定，因此，不能再使用“存在 $N \\geqslant 1$”，而应该另换一个字符表示另一个可能不同的值."
+        }
+      ]
+    },
+    {
+      "page_idx": 63,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.069,
+            0.06,
+            0.089,
+            0.07
+          ],
+          "content": "50"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.058,
+            0.24,
+            0.071
+          ],
+          "content": "第三章 序列极限"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.201,
+            0.133,
+            0.862,
+            0.2
+          ],
+          "content": "另一方面，在有一定的熟练度以后，可以跳过 $N_{1}, N_{2}$ 而直接给出 $N$。例如，在定理3.1.2的证明中，可以这样写:$\\forall \\varepsilon > 0$，由 $\\lim_{n \\to +\\infty} y_n = \\lim_{n \\to +\\infty} z_n = A$，可得存在 $N \\geqslant 1$，使得当 $n \\geqslant N$ 时，有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.394,
+            0.219,
+            0.668,
+            0.24
+          ],
+          "content": "\\left| y _ {n} - A \\right| <   \\varepsilon , \\quad \\left| z _ {n} - A \\right| <   \\varepsilon .",
+          "image_source": "images/page_63_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.241,
+            0.257,
+            0.667,
+            0.275
+          ],
+          "content": "在今后的证明中, 我们将逐步略过一些证明细节."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.201,
+            0.286,
+            0.862,
+            0.378
+          ],
+          "content": "注 3.1.3 根据数列极限的定义, 数列极限是否存在以及值为多少, 与数列的前有限项无关. 因此, 我们在考虑数列极限的时候, 只需要关心 n 充分大时的项. 我们用记号 “≫”, 表示 “大大大于”. 通常使用的是 “n ≫ 1”, 其含义是 n 充分大, 即对于某个给定的 (通常是在证明之初待定的) N ≥ 1, 有 n ≥ N."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.202,
+            0.384,
+            0.861,
+            0.426
+          ],
+          "content": "类似地, 对于 “大大小于” 符号, “ $0 < \\varepsilon \\ll 1$ ” 表示正数  $\\varepsilon$  足够小, 即 “对于某个给定的 (通常是在证明之初待定的)  $\\delta > 0$ , 有  $0 < \\varepsilon < \\delta$ ”."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.44,
+            0.512,
+            0.457
+          ],
+          "content": "最后, 我们给出关于极限四则运算的性质."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.463,
+            0.563,
+            0.487
+          ],
+          "content": "定理3.1.3 设 $\\lim_{n\\to +\\infty}a_n = A,\\lim_{n\\to +\\infty}b_n = B.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.488,
+            0.381,
+            0.505
+          ],
+          "content": "(1) 设 $\\alpha, \\beta \\in \\mathbb{R}$ 为常数, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.346,
+            0.524,
+            0.621,
+            0.548
+          ],
+          "content": "\\lim _ {n \\to + \\infty} (\\alpha a _ {n} + \\beta b _ {n}) = \\alpha A + \\beta B;",
+          "image_source": "images/page_63_equation_10.jpg"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.148,
+            0.562,
+            0.434,
+            0.621
+          ],
+          "sub_type": "text",
+          "content": "(2) $\\lim_{n\\to +\\infty}(a_nb_n) = AB;$\n(3) 若 $B \\neq 0$, 则 $\\lim_{n \\to +\\infty} \\frac{a_n}{b_n} = \\frac{A}{B}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.623,
+            0.859,
+            0.668
+          ],
+          "content": "证明 (1) 对于任何 $\\varepsilon > 0$, 由 $\\lim_{n \\to +\\infty} a_n = A$ 可得, 存在 $N_1 \\geqslant 1$, 使得当 $n \\geqslant N_1$ 时, 有①"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.375,
+            0.669,
+            0.86,
+            0.701
+          ],
+          "content": "| a _ {n} - A | <   \\frac {\\varepsilon}{1 + | \\alpha | + | \\beta |}. \\tag {3.1.10}",
+          "image_source": "images/page_63_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.711,
+            0.803,
+            0.736
+          ],
+          "content": "另一方面, 由 $\\lim_{n\\to +\\infty}b_n = B$ 可得, 对上述 $\\varepsilon$, 存在 $N_2 \\geqslant 1$, 使得当 $n \\geqslant N_2$ 时, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.375,
+            0.751,
+            0.86,
+            0.783
+          ],
+          "content": "| b _ {n} - B | <   \\frac {\\varepsilon}{1 + | \\alpha | + | \\beta |}. \\tag {3.1.11}",
+          "image_source": "images/page_63_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.799,
+            0.76,
+            0.817
+          ],
+          "content": "取 $N = N_{1} + N_{2}$, 则当 $n \\geqslant N$ 时, (3.1.10) 式与 (3.1.11) 式同时成立. 此时,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.197,
+            0.836,
+            0.86,
+            0.854
+          ],
+          "content": "\\left| \\alpha a _ {n} + \\beta b _ {n} - (\\alpha A + \\beta B) \\right| \\leqslant | \\alpha | \\left| a _ {n} - A \\right| + | \\beta | \\left| b _ {n} - B \\right| <   \\varepsilon . \\tag {3.1.12}",
+          "image_source": "images/page_63_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.108,
+            0.873,
+            0.582,
+            0.897
+          ],
+          "content": "因此, 由极限定义得到 $\\lim_{n\\to +\\infty}(\\alpha a_n + \\beta b_n) = \\alpha A + \\beta B.$"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.141,
+            0.922,
+            0.618,
+            0.937
+          ],
+          "content": "① 采用含有1的 $1 + |\\alpha| + |\\beta|$ 是考虑到 $\\alpha = \\beta = 0$ 这种特殊情形."
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "created_at": "2025-11-20T03:44:46+08:00",
+      "modified_at": "2025-11-20T03:47:17+08:00",
+      "page_count": 856,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 48,
+          "width_pt": 511.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 49,
+          "width_pt": 510.0,
+          "height_pt": 739.0
+        },
+        {
+          "page_idx": 50,
+          "width_pt": 511.0,
+          "height_pt": 739.0
+        },
+        {
+          "page_idx": 51,
+          "width_pt": 510.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 52,
+          "width_pt": 511.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 53,
+          "width_pt": 511.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 54,
+          "width_pt": 511.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 55,
+          "width_pt": 511.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 56,
+          "width_pt": 509.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 57,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 58,
+          "width_pt": 511.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 59,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 60,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 61,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 62,
+          "width_pt": 510.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 63,
+          "width_pt": 510.0,
+          "height_pt": 742.0
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

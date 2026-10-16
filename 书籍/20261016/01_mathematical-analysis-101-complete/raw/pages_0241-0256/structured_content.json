@@ -1,0 +1,3277 @@
+{
+  "pages": [
+    {
+      "page_idx": 240,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.73,
+            0.057,
+            0.901,
+            0.072
+          ],
+          "content": "7.5 利用导数研究函数"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.92,
+            0.059,
+            0.948,
+            0.07
+          ],
+          "content": "229"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.113,
+            0.52,
+            0.131
+          ],
+          "content": "与 $(7.5.7)\\sim(7.5.9)$ 式中每一个不等式等价."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.242,
+            0.142,
+            0.738,
+            0.16
+          ],
+          "content": "注 7.5.4 (1) 定理 7.5.10 中的三个不等式联立起来即为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.323,
+            0.171,
+            0.9,
+            0.207
+          ],
+          "content": "\\frac {f (x _ {2}) - f (x _ {1})}{x _ {2} - x _ {1}} \\leqslant \\frac {f (x _ {3}) - f (x _ {1})}{x _ {3} - x _ {1}} \\leqslant \\frac {f (x _ {3}) - f (x _ {2})}{x _ {3} - x _ {2}}. \\tag {7.5.10}",
+          "image_source": "images/page_240_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.243,
+            0.218,
+            0.651,
+            0.236
+          ],
+          "content": "即三条弦 $AB, AC, BC$ 的斜率 (图7.6) 有关系"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.485,
+            0.257,
+            0.901,
+            0.275
+          ],
+          "content": "k _ {A B} \\leqslant k _ {A C} \\leqslant k _ {B C}. \\tag {7.5.11}",
+          "image_source": "images/page_240_equation_6.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.437,
+            0.302,
+            0.709,
+            0.427
+          ],
+          "sub_type": "text_image",
+          "content": "f(x)\nA\nC\nO\nx₁\nx₂\nB\nx₃\nx",
+          "captions": [
+            {
+              "bbox": [
+                0.463,
+                0.435,
+                0.684,
+                0.451
+              ],
+              "content": "图7.6 凸函数与割线斜率"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_240_image_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.243,
+            0.474,
+            0.905,
+            0.589
+          ],
+          "content": "(2) 定理 7.5.10 中的三个不等式本质上是在说同一个几何现象:在由函数  $y = f(x)$  给出的曲线图像  $\\{(x, f(x))\\}$  上，任取一点  $P(x_{P}, f(x_{P}))$ ，由 P 点任意画出两条射线，交图像于另外两点  $M(x_{M}, f(x_{M}))$  和  $N(x_{N}, f(x_{N}))$ 。那么凸函数的等价说法是，只要 M 点在 N 点的左侧，那么弦 MP 的斜率就不大于弦 PN 的斜率，即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.44,
+            0.611,
+            0.901,
+            0.628
+          ],
+          "content": "x _ {M} <   x _ {N} \\iff k _ {M P} \\leqslant k _ {N P}. \\tag {7.5.12}",
+          "image_source": "images/page_240_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.243,
+            0.647,
+            0.854,
+            0.666
+          ],
+          "content": "如图 7.6 所示. 这说明了割线斜率的单调性是凸函数的一个基本特征."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.68,
+            0.903,
+            0.722
+          ],
+          "content": "可以看出在定理 7.5.10 中, 参照图 7.6, 如果取 P = A, M = B, N = C, 那么 B 点在 C 点的左侧, f 凸等价于  $k_{AB} \\leqslant k_{AC}$ , 这就是关系式 (7.5.8)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.728,
+            0.903,
+            0.769
+          ],
+          "content": "如果取 P = B, M = A, N = C, 那么 A 点在 C 点的左侧, f 凸等价于  $k_{AB} \\leqslant k_{BC}$ , 这就是关系式 (7.5.7)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.776,
+            0.902,
+            0.819
+          ],
+          "content": "类似地, 如果取 P = C, M = A, N = B, 那么 A 点在 B 点的左侧, f 凸等价于  $k_{AC} \\leqslant k_{BC}$ , 这就是关系式 (7.5.9)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.825,
+            0.902,
+            0.866
+          ],
+          "content": "根据上述关系式 (7.5.12), 对于多点 (如图 7.7 是四个点) 的情况, 可以建立多条割线斜率之间的关系式."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.873,
+            0.893,
+            0.892
+          ],
+          "content": "例7.5.14 设 $f$ 为区间 $I$ 上的凸函数. 若 $x, y, s, t \\in I$ 满足 $x < s < t < y$, 则有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.182,
+            0.904,
+            0.901,
+            0.941
+          ],
+          "content": "\\frac {f (s) - f (x)}{s - x} \\leqslant \\frac {f (t) - f (x)}{t - x} \\leqslant \\frac {f (y) - f (x)}{y - x} \\leqslant \\frac {f (y) - f (s)}{y - s} \\leqslant \\frac {f (y) - f (t)}{y - t} \\tag {7.5.13}",
+          "image_source": "images/page_240_equation_17.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 241,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.055,
+            0.057,
+            0.084,
+            0.068
+          ],
+          "content": "230"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.103,
+            0.055,
+            0.268,
+            0.069
+          ],
+          "content": "第七章 微分中值定理"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.113,
+            0.127,
+            0.127
+          ],
+          "content": "和"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.136,
+            0.137,
+            0.855,
+            0.174
+          ],
+          "content": "\\frac {f (s) - f (x)}{s - x} \\leqslant \\frac {f (t) - f (x)}{t - x} \\leqslant \\frac {f (t) - f (s)}{t - s} \\leqslant \\frac {f (y) - f (s)}{y - s} \\leqslant \\frac {f (y) - f (t)}{y - t}. \\tag {7.5.14}",
+          "image_source": "images/page_241_equation_3.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.168,
+            0.199,
+            0.788,
+            0.35
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.367,
+                0.358,
+                0.589,
+                0.374
+              ],
+              "content": "图 7.7 凸函数与割线斜率"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_241_image_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.395,
+            0.855,
+            0.436
+          ],
+          "content": "证明 只要注意到图 7.7 中点的位置关系, 反复应用关系式(7.5.12), 即可得到割线的斜率之间的关系式:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.373,
+            0.444,
+            0.581,
+            0.461
+          ],
+          "content": "k _ {1} \\leqslant k _ {2} \\leqslant k _ {3} \\leqslant k _ {4} \\leqslant k _ {5}",
+          "image_source": "images/page_241_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.473,
+            0.127,
+            0.488
+          ],
+          "content": "和"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.372,
+            0.497,
+            0.582,
+            0.514
+          ],
+          "content": "k _ {1} \\leqslant k _ {2} \\leqslant \\ell_ {3} \\leqslant k _ {4} \\leqslant k _ {5},",
+          "image_source": "images/page_241_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.526,
+            0.55,
+            0.544
+          ],
+          "content": "其中  $k_{i}(i=1,2,3,4,5)$  和  $\\ell_{3}$  都是相应割线的斜率."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.549,
+            0.695,
+            0.567
+          ],
+          "content": "需要注意的是,一般来说, $k_{3}$ 和 $\\ell_{3}$ 之间不存在必然的大小关系."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.834,
+            0.551,
+            0.854,
+            0.565
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_241_image_12.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.14,
+            0.581,
+            0.367,
+            0.599
+          ],
+          "level": 2,
+          "content": "1. 凸性与连续性的关系"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.613,
+            0.855,
+            0.677
+          ],
+          "content": "由定理 7.5.10 和关系式(7.5.12)，可以证明凸函数在区间内点是连续的，特别地，开区间上的凸函数是连续的。换句话说，凸函数的间断点充其量发生在区间的端点。这是因为，在端点增加一个凸函数的函数值不会改变其凸性但改变了其连续性。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.683,
+            0.855,
+            0.725
+          ],
+          "content": "定理 7.5.11 (凸函数的连续性定理) 设 f 是区间  $(a, b)$  内的凸函数. 则 f 在  $(a, b)$  内连续."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.73,
+            0.855,
+            0.772
+          ],
+          "content": "证明 任取 $x_0 \\in (a, b)$, 则有 $\\delta > 0$ 使得 $[x_0 - 2\\delta, x_0 + 2\\delta] \\subset (a, b)$. 由定理7.5.10, 对任何 $x \\in (x_0 - \\delta, x_0 + \\delta)$, $x \\neq x_0$, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.19,
+            0.783,
+            0.767,
+            0.82
+          ],
+          "content": "\\frac {f (x _ {0} - \\delta) - f (x _ {0} - 2 \\delta)}{\\delta} \\leqslant \\frac {f (x) - f (x _ {0})}{x - x _ {0}} \\leqslant \\frac {f (x _ {0} + 2 \\delta) - f (x _ {0} + \\delta)}{\\delta}.",
+          "image_source": "images/page_241_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.831,
+            0.575,
+            0.856
+          ],
+          "content": "由此即得  $\\lim_{x\\to x_{0}}f(x)=f(x_{0})$ . 因此, f 在  $(a,b)$  内连续."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.834,
+            0.832,
+            0.854,
+            0.846
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_241_image_19.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.14,
+            0.863,
+            0.387,
+            0.881
+          ],
+          "level": 2,
+          "content": "2. 凸性与一阶导数的关系"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.894,
+            0.856,
+            0.937
+          ],
+          "content": "前面我们讨论了割线斜率之间的不等式关系, 容易看出, 在凸函数的图像上任取一点 P, 那么它的左、右侧割线的斜率有一个单调关系和大小关系, 当左侧割线的割点逼"
+        }
+      ]
+    },
+    {
+      "page_idx": 242,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.73,
+            0.054,
+            0.9,
+            0.068
+          ],
+          "content": "7.5 利用导数研究函数"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.919,
+            0.055,
+            0.947,
+            0.067
+          ],
+          "content": "231"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.109,
+            0.9,
+            0.151
+          ],
+          "continues_prev": true,
+          "content": "近 P 点时, 则一方面斜率是单调上升的, 另一方面又是有上界的, 因为它总不能超过任何一个右侧割线的斜率. 这一观察给出了下面的定理."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.191,
+            0.157,
+            0.653,
+            0.175
+          ],
+          "level": 2,
+          "content": "定理 7.5.12（凸函数单侧导数存在且单侧连续定理）"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.187,
+            0.182,
+            0.745,
+            0.222
+          ],
+          "sub_type": "text",
+          "content": "(1) 开区间上的凸函数在每一点处左右导数均存在;\n(2) 开区间上的凸函数在每一点处左导数左连续, 右导数右连续."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.228,
+            0.902,
+            0.27
+          ],
+          "content": "具体来说，设 $f$ 是区间 $(a,b)$ 内的凸函数，则 $\\forall x\\in (a,b)$，$f$ 在点 $x$ 处的左导数 $f_{-}^{\\prime}(x)$ 与右导数 $f_{+}^{\\prime}(x)$ 均存在，且成立:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.276,
+            0.763,
+            0.293
+          ],
+          "content": "(i) 同一点 $x$ 处的左 (右) 导数与左 (右) 割线斜率之间有大小关系"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.336,
+            0.306,
+            0.901,
+            0.34
+          ],
+          "content": "f _ {-} ^ {\\prime} (x) \\geqslant \\frac {f (x) - f (z)}{x - z}, \\quad \\forall a <   z <   x <   b, \\tag {7.5.15}",
+          "image_source": "images/page_242_equation_9.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.337,
+            0.353,
+            0.901,
+            0.387
+          ],
+          "content": "f _ {+} ^ {\\prime} (x) \\leqslant \\frac {f (y) - f (x)}{y - x}, \\quad \\forall a <   x <   y <   b; \\tag {7.5.16}",
+          "image_source": "images/page_242_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.188,
+            0.393,
+            0.837,
+            0.41
+          ],
+          "content": "(ii) 同一点 $x$ 处左、右导数以及不同点 $x,y$ 处左、右导数之间有大小关系"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.29,
+            0.427,
+            0.901,
+            0.446
+          ],
+          "content": "f _ {-} ^ {\\prime} (x) \\leqslant f _ {+} ^ {\\prime} (x) \\leqslant f _ {-} ^ {\\prime} (y) \\leqslant f _ {+} ^ {\\prime} (y), \\quad \\forall a <   x <   y <   b; \\tag {7.5.17}",
+          "image_source": "images/page_242_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.463,
+            0.52,
+            0.48
+          ],
+          "content": "(iii) 左导数左连续, 右导数右连续, 且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.183,
+            0.497,
+            0.903,
+            0.517
+          ],
+          "content": "f _ {+} ^ {\\prime} (x ^ {-}) = f _ {-} ^ {\\prime} (x ^ {-}) = f _ {-} ^ {\\prime} (x), \\quad f _ {+} ^ {\\prime} (x ^ {+}) = f _ {-} ^ {\\prime} (x ^ {+}) = f _ {+} ^ {\\prime} (x), \\quad \\forall a <   x <   b, \\tag {7.5.18}",
+          "image_source": "images/page_242_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.535,
+            0.175,
+            0.55
+          ],
+          "content": "即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.329,
+            0.556,
+            0.902,
+            0.581
+          ],
+          "content": "\\lim _ {s \\to x ^ {-}} f _ {-} ^ {\\prime} (s) = f _ {-} ^ {\\prime} (x), \\quad \\lim _ {t \\to x ^ {+}} f _ {+} ^ {\\prime} (t) = f _ {+} ^ {\\prime} (x). \\tag {7.5.19}",
+          "image_source": "images/page_242_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.587,
+            0.443,
+            0.604
+          ],
+          "content": "证明 我们分以下几步证明."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.61,
+            0.905,
+            0.652
+          ],
+          "content": "(i) $\\forall x\\in (a,b)$ ，我们来证明 $f_{-}^{\\prime}(x)$ 与 $f_{+}^{\\prime}(x)$ 的存在性.取 $a <   x_0 <   x,$ 并考虑$x <   s <   y <   b.$ 则由定理7.5.10，"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.335,
+            0.66,
+            0.719,
+            0.697
+          ],
+          "content": "\\frac {f (x) - f (x _ {0})}{x - x _ {0}} \\leqslant \\frac {f (s) - f (x)}{s - x} \\leqslant \\frac {f (y) - f (x)}{y - x}.",
+          "image_source": "images/page_242_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.709,
+            0.905,
+            0.759
+          ],
+          "content": "这表明 $\\frac{f(s) - f(x)}{s - x}$ 关于 $s\\in (x,b)$ 单调增加且有下界.因此 $f_{+}^{\\prime}(x) = \\lim_{s\\to x^{+}}\\frac{f(s) - f(x)}{s - x}$ 存在，且(7.5.16)式成立.同理可证 $f_{-}^{\\prime}(x)$ 存在，且(7.5.15)式成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.763,
+            0.831,
+            0.782
+          ],
+          "content": "(ii) 我们来证明 $f_{-}^{\\prime}(x) \\leqslant f_{+}^{\\prime}(x)$. 考虑 $a < s < x < t < b$. 则由定理 7.5.10,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.408,
+            0.795,
+            0.649,
+            0.83
+          ],
+          "content": "\\frac {f (s) - f (x)}{s - x} \\leqslant \\frac {f (t) - f (x)}{t - x}.",
+          "image_source": "images/page_242_equation_22.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.839,
+            0.454,
+            0.856
+          ],
+          "content": "令 $s \\to x^{-}$ 以及 $t \\to x^{+}$ 即得结论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.863,
+            0.905,
+            0.903
+          ],
+          "content": "现在证明对于 $a < x < y < b$ 有 $f_{+}^{\\prime}(x) \\leqslant f_{-}^{\\prime}(y)$. 为此, 考虑 $x < s < t < y$, 则由定理7.5.10,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.409,
+            0.901,
+            0.649,
+            0.937
+          ],
+          "content": "\\frac {f (s) - f (x)}{s - x} \\leqslant \\frac {f (y) - f (t)}{y - t}.",
+          "image_source": "images/page_242_equation_25.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 243,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.055,
+            0.056,
+            0.083,
+            0.067
+          ],
+          "content": "232"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.102,
+            0.054,
+            0.267,
+            0.068
+          ],
+          "content": "第七章 微分中值定理"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.11,
+            0.402,
+            0.128
+          ],
+          "content": "令 $s \\to x^{+}$ 以及 $t \\to y^{-}$ 即得结论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.135,
+            0.457,
+            0.153
+          ],
+          "content": "至此，(7.5.17)式中所有不等式得证."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.159,
+            0.677,
+            0.179
+          ],
+          "content": "(iii) 最后, 我们来证明 $f_{+}^{\\prime}$ 右连续, $f_{-}^{\\prime}$ 左连续以及 (7.5.18) 式."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.183,
+            0.851,
+            0.232
+          ],
+          "content": "固定 $x \\in (a, b)$. 由 (7.5.17) 式, $f_{+}^{\\prime}(x^{+}) = \\lim_{y \\to x^{+}} f_{+}^{\\prime}(y)$ 存在, 且 $f_{+}^{\\prime}(x^{+}) \\geqslant f_{+}^{\\prime}(x)$. 另一方面, 考虑 $x < y < s$, 由 (7.5.16) 式,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.384,
+            0.248,
+            0.57,
+            0.284
+          ],
+          "content": "f _ {+} ^ {\\prime} (y) \\leqslant \\frac {f (s) - f (y)}{s - y}.",
+          "image_source": "images/page_243_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.301,
+            0.295,
+            0.319
+          ],
+          "content": "因此, 令 $y \\to x^{+}$ 得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.377,
+            0.319,
+            0.577,
+            0.353
+          ],
+          "content": "f _ {+} ^ {\\prime} (x ^ {+}) \\leqslant \\frac {f (s) - f (x)}{s - x}.",
+          "image_source": "images/page_243_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.361,
+            0.851,
+            0.403
+          ],
+          "content": "最后, 令 $s \\to x^{+}$, 即得 $f_{+}^{\\prime}(x^{+}) \\leqslant f_{+}^{\\prime}(x)$. 总之, 我们得到 $f_{+}^{\\prime}(x^{+}) = f_{+}^{\\prime}(x)$, 即 $f_{+}^{\\prime}$ 右连续. 同理可证 $f_{-}^{\\prime}$ 左连续."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.41,
+            0.569,
+            0.428
+          ],
+          "content": "最后利用 (7.5.17) 式和夹逼准则即得 (7.5.18) 式."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.434,
+            0.851,
+            0.498
+          ],
+          "content": "由上面的定理, 结合单调函数的间断点至多可数, 我们可以得到一个有趣的结论: 凸函数的不可导点至多可数个. 这是继凸函数在开区间上连续后的又一个非常重要的性质和特点."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.504,
+            0.822,
+            0.523
+          ],
+          "content": "定理 7.5.13（凸函数可导点的稠密性） 凸函数至多只有可列个不可导的点."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.529,
+            0.851,
+            0.57
+          ],
+          "content": "证明 由定理7.5.12知 $f_{+}^{\\prime}$ 单调, 因此根据单调函数的间断点至多只有可数个这一基本性质, 可知"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.578,
+            0.368,
+            0.595
+          ],
+          "content": "(i)  $f_{+}^{\\prime}$  的间断点至多可列;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.602,
+            0.831,
+            0.62
+          ],
+          "content": "(ii) 当 $x$ 是 $f_{+}^{\\prime}$ 的连续点时, 有 $f_{+}^{\\prime}(x^{+}) = f_{+}^{\\prime}(x) = f_{+}^{\\prime}(x^{-})$. 结合 (7.5.18) 式得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.366,
+            0.64,
+            0.587,
+            0.66
+          ],
+          "content": "f _ {-} ^ {\\prime} (x) = f _ {+} ^ {\\prime} (x ^ {-}) = f _ {+} ^ {\\prime} (x).",
+          "image_source": "images/page_243_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.679,
+            0.259,
+            0.696
+          ],
+          "content": "即 $f$ 在 $x$ 点可导."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.703,
+            0.489,
+            0.721
+          ],
+          "content": "综上所述, 可得 $f$ 的不可导点至多可列."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.141,
+            0.736,
+            0.321,
+            0.754
+          ],
+          "level": 2,
+          "content": "3. 凸函数的支撑线"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.769,
+            0.595,
+            0.786
+          ],
+          "content": "下面我们从几何直观方面来探讨一下凸函数的性质."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.792,
+            0.851,
+            0.834
+          ],
+          "content": "定理7.5.14 设 $f$ 为定义在区间 $(a, b)$ 内的函数. 则 $f$ 是凸函数当且仅当对任何 $x_0 \\in (a, b)$, 存在 $k = k(x_0) \\in \\mathbb{R}$ 使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.293,
+            0.856,
+            0.849,
+            0.872
+          ],
+          "content": "f (x) \\geqslant f (x _ {0}) + k (x - x _ {0}), \\quad \\forall x \\in (a, b). \\tag {7.5.20}",
+          "image_source": "images/page_243_equation_22.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.894,
+            0.851,
+            0.934
+          ],
+          "content": "而 $f$ 是严格凸函数当且仅当对任何 $x_0 \\in (a, b)$ 以及 $x \\neq x_0$, (7.5.20) 式中严格不等式成立."
+        }
+      ]
+    },
+    {
+      "page_idx": 244,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.726,
+            0.054,
+            0.896,
+            0.068
+          ],
+          "content": "7.5 利用导数研究函数"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.916,
+            0.055,
+            0.944,
+            0.067
+          ],
+          "content": "233"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.183,
+            0.11,
+            0.773,
+            0.129
+          ],
+          "content": "证明 以下只讨论有关凸的情形, 关于严格凸部分的证明留给读者."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.134,
+            0.899,
+            0.176
+          ],
+          "content": "(充分性) 任取 $x_{1}, x_{2} \\in (a, b), t \\in (0, 1)$, 记 $x_{t} = tx_{1} + (1 - t)x_{2}$. 由假设, 存在 $k \\in \\mathbb{R}$ 使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.346,
+            0.182,
+            0.697,
+            0.201
+          ],
+          "content": "f (x) \\geqslant f (x _ {t}) + k (x - x _ {t}), \\quad x \\in (a, b),",
+          "image_source": "images/page_244_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.214,
+            0.172,
+            0.23
+          ],
+          "content": "即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.346,
+            0.237,
+            0.697,
+            0.256
+          ],
+          "content": "f (x _ {t}) \\leqslant f (x) - k (x - x _ {t}), \\quad x \\in (a, b).",
+          "image_source": "images/page_244_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.269,
+            0.217,
+            0.286
+          ],
+          "content": "特别地，"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.346,
+            0.293,
+            0.699,
+            0.312
+          ],
+          "content": "f (x _ {t}) \\leqslant f (x _ {j}) - k (x _ {j} - x _ {t}), \\quad j = 1, 2.",
+          "image_source": "images/page_244_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.324,
+            0.192,
+            0.341
+          ],
+          "content": "从而"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.241,
+            0.346,
+            0.804,
+            0.39
+          ],
+          "content": "\\begin{array}{l} f (x _ {t}) \\leqslant t \\big ((f (x _ {1}) - k (x _ {1} - x _ {t})) + (1 - t) \\big ((f (x _ {2}) - k (x _ {2} - x _ {t})) \\\\ = t f (x _ {1}) + (1 - t) f (x _ {2}). \\\\ \\end{array}",
+          "image_source": "images/page_244_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.402,
+            0.309,
+            0.42
+          ],
+          "content": "因此, $f$ 为凸函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.425,
+            0.902,
+            0.489
+          ],
+          "content": "(必要性) 如果 $f$ 为凸函数, 则对任意的 $x_0 \\in (a, b)$, $\\forall x_1, x_2 \\in (a, b)$, $x_1 < x_0 < x_2$. 由凸性假设, $f_{-}'(x_0)$ 和 $f_{+}'(x_0)$ 均存在, 且 $f_{-}'(x_0) \\leqslant f_{+}'(x_0)$. 任取 $k \\in [f_{-}'(x_0), f_{+}'(x_0)]$ 则有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.281,
+            0.488,
+            0.769,
+            0.524
+          ],
+          "content": "\\frac {f (x _ {1}) - f (x _ {0})}{x _ {1} - x _ {0}} \\leqslant f _ {-} ^ {\\prime} (x _ {0}) \\leqslant k \\leqslant f _ {+} ^ {\\prime} (x _ {0}) \\leqslant \\frac {f (x _ {2}) - f (x _ {0})}{x _ {2} - x _ {0}}.",
+          "image_source": "images/page_244_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.533,
+            0.438,
+            0.55
+          ],
+          "content": "无论 $x_{1} < x_{0}$ 还是 $x_{2} > x_{0}$, 均有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.359,
+            0.569,
+            0.691,
+            0.588
+          ],
+          "content": "f (x _ {i}) \\geqslant f (x _ {0}) + k (x _ {i} - x _ {0}), \\quad i = 1, 2.",
+          "image_source": "images/page_244_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.243,
+            0.617,
+            0.628,
+            0.634
+          ],
+          "content": "注 7.5.5 如果记 (7.5.20) 式右端的式子为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.46,
+            0.655,
+            0.685,
+            0.674
+          ],
+          "content": "\\ell (x) = f (x _ {0}) + k (x - x _ {0}),",
+          "image_source": "images/page_244_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.243,
+            0.692,
+            0.905,
+            0.783
+          ],
+          "content": "那么，这是一条过凸函数图像上点 $P(x_0, f(x_0))$ 的直线 $\\ell$。关系式 (7.5.20) 是说 $f(x) \\geqslant \\ell(x)$，它表明凸函数的图像在直线的上方并且有一个接触点 $P(x_0, f(x_0))$。由于凸函数 $f$ 在每个点 $x_0$ 处的左、右导数均存在，且 $f_{-}^{\\prime}(x_0) \\leqslant f_{+}^{\\prime}(x_0)$。存在两种情况:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.243,
+            0.788,
+            0.905,
+            0.881
+          ],
+          "sub_type": "text",
+          "content": "(1) 如果 $f_{-}^{\\prime}(x_0) < f_{+}^{\\prime}(x_0)$，即 $f$ 在点 $x_0$ 处不可导，此时，$k$ 可选取为区间 $[f_{-}^{\\prime}(x_0), f_{+}^{\\prime}(x_0)]$ 上的任一实数。参见图7.8(a).\n(2) 如果 $f_{-}^{\\prime}(x_0) = f_{+}^{\\prime}(x_0)$，即 $f$ 在点 $x_0$ 处可导，此时，取 $k = f'(x_0), \\ell$ 刚好是函数在 $(x_0, f(x_0))$ 处的切线。参见图7.8(b)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.893,
+            0.556,
+            0.91
+          ],
+          "content": "直线  $\\ell$  常称为凸函数在点  $x_{0}$  处的支撑线."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.189,
+            0.917,
+            0.55,
+            0.934
+          ],
+          "content": "凸函数和 (左、右) 导数之间有如下关系."
+        }
+      ]
+    },
+    {
+      "page_idx": 245,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.059,
+            0.053,
+            0.088,
+            0.065
+          ],
+          "content": "234"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.052,
+            0.272,
+            0.067
+          ],
+          "content": "第七章 微分中值定理"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.169,
+            0.106,
+            0.792,
+            0.257
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.387,
+                0.263,
+                0.573,
+                0.28
+              ],
+              "content": "图7.8 导数与支撑线"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_245_image_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.301,
+            0.793,
+            0.32
+          ],
+          "content": "定理 7.5.15 设 f 为定义在区间  $(a, b)$  内的连续函数. 则下列结论成立:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.142,
+            0.326,
+            0.77,
+            0.365
+          ],
+          "sub_type": "text",
+          "content": "(1) f 是 (严格) 凸函数当且仅当  $f_{+}^{\\prime}$  在  $(a, b)$  内存在，且  $f_{+}^{\\prime}$  (严格) 单增.\n(2) f 是凸函数当且仅当  $f_{+}^{\\prime}$  在  $(a,b)$  内存在, 且对任何  $x_{0}\\in(a,b)$ , 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.268,
+            0.386,
+            0.853,
+            0.406
+          ],
+          "content": "f (x) \\geqslant f (x _ {0}) + f _ {+} ^ {\\prime} (x _ {0}) (x - x _ {0}), \\quad \\forall   x \\in (a, b). \\tag {7.5.21}",
+          "image_source": "images/page_245_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.423,
+            0.855,
+            0.463
+          ],
+          "content": "而 $f$ 是严格凸函数当且仅当 $f_{+}^{\\prime}$ 在 $(a,b)$ 内存在，且对任何 $x_0\\in (a,b)$ 以及 $x\\neq x_0$ (7.5.21)式中严格不等式成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.47,
+            0.701,
+            0.487
+          ],
+          "content": "同理, 如果考虑左导数的情况, 有平行于定理 7.5.15 的如下结论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.493,
+            0.793,
+            0.512
+          ],
+          "content": "定理 7.5.15 设 f 为定义在区间  $(a, b)$  内的连续函数. 则下列结论成立:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.141,
+            0.517,
+            0.783,
+            0.557
+          ],
+          "sub_type": "text",
+          "content": "(1) f 是 (严格) 凸函数当且仅当  $f'_{-}$  在  $(a, b)$  内存在，且  $f'_{-}$  (严格) 单增.\n(2) f 是凸函数当且仅当  $f'$  在  $(a, b)$  内存在, 且对任何  $x_{0} \\in (a, b)$ , 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.267,
+            0.578,
+            0.853,
+            0.597
+          ],
+          "content": "f (x) \\geqslant f (x _ {0}) + f _ {-} ^ {\\prime} (x _ {0}) (x - x _ {0}), \\quad \\forall x \\in (a, b). \\tag {7.5.22}",
+          "image_source": "images/page_245_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.615,
+            0.853,
+            0.655
+          ],
+          "content": "而 $f$ 是严格凸函数当且仅当 $f_{-}^{\\prime}$ 在 $(a,b)$ 内存在，且对任何 $x_0\\in (a,b)$ 以及 $x\\neq x_0$ (7.5.22)式中严格不等式成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.661,
+            0.559,
+            0.678
+          ],
+          "content": "特别地, 当一个凸函数可导时, 下面的结论成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.684,
+            0.797,
+            0.702
+          ],
+          "content": "定理 7.5.15 设 f 为定义在区间  $(a, b)$  内的连续函数. 则下列结论成立:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.14,
+            0.708,
+            0.834,
+            0.747
+          ],
+          "sub_type": "text",
+          "content": "(1) 若 f 可导, 则 f 是 (严格) 凸函数当且仅当  $f'$  (严格) 单增.\n(2) 若 $f$ 可导, 则 $f$ 是凸函数当且仅当曲线在切线之上, 即对任何 $x_0 \\in (a, b)$, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.269,
+            0.769,
+            0.851,
+            0.788
+          ],
+          "content": "f (x) \\geqslant f (x _ {0}) + f ^ {\\prime} (x _ {0}) (x - x _ {0}), \\quad \\forall x \\in (a, b). \\tag {7.5.23}",
+          "image_source": "images/page_245_equation_22.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.806,
+            0.853,
+            0.845
+          ],
+          "content": "而 $f$ 是严格凸函数当且仅当对任何 $x_0 \\in (a, b)$ 以及 $x \\neq x_0$, (7.5.23) 式中严格不等式成立."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.86,
+            0.385,
+            0.879
+          ],
+          "level": 2,
+          "content": "4. 凸性与二阶导数的关系"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.892,
+            0.853,
+            0.933
+          ],
+          "content": "当函数有较高的光滑度, 比如二阶可导时, 那么根据定理 7.5.15\", 有如下方便的判断函数凸性的方法."
+        }
+      ]
+    },
+    {
+      "page_idx": 246,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.727,
+            0.054,
+            0.898,
+            0.068
+          ],
+          "content": "7.5 利用导数研究函数"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.917,
+            0.055,
+            0.946,
+            0.067
+          ],
+          "content": "235"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.112,
+            0.899,
+            0.153
+          ],
+          "content": "推论7.5.16 设函数 $f$ 在 $(a, b)$ 内二阶可导. 则 $f$ 是凸函数当且仅当 $f''(x) \\geqslant 0$. 如果 $f'' > 0$, 则 $f$ 是严格凸函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.183,
+            0.159,
+            0.757,
+            0.177
+          ],
+          "content": "例 7.5.15 函数  $y = x^{2}$  是 R 上的凸函数, 这是因为  $y'' = 2 > 0$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.182,
+            0.899,
+            0.224
+          ],
+          "content": "推论中的假设 $f''(x) \\geqslant 0$ 也有可能是严格凸. 比如 $y = x^4$, 有 $y'' = 12x^2 \\geqslant 0$, 故 $y = x^4$ 是 $\\mathbb{R}$ 上的凸函数, 事实上, 它也是 $\\mathbb{R}$ 上的严格凸函数, 虽然 $y''(0) = 0$."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.185,
+            0.238,
+            0.41,
+            0.257
+          ],
+          "level": 2,
+          "content": "5. 凸函数的极值与最值"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.269,
+            0.9,
+            0.311
+          ],
+          "content": "凸函数中有一类平凡凸函数. 如果函数 $f$ 在区间 $I$ 上为线性函数, 则称其为平凡凸函数. 特别地, 常值函数是一类平凡凸函数. 容易看出, 严格凸函数是不可能平凡凸的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.317,
+            0.439,
+            0.335
+          ],
+          "content": "凸函数具有下面的基本性质."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.341,
+            0.9,
+            0.382
+          ],
+          "content": "命题 7.5.17 设 f 为区间 I 上的严格凸函数. 则 f 在 I 的内部不可能取得极大值, 也不可能取到最大值."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.388,
+            0.9,
+            0.428
+          ],
+          "content": "证明 设 $f$ 在点 $x_0$ 处取得最大值 $M$. 任取 $a, b \\in I$, 使得 $a < x_0 < b$. 此时 $x_0$ 可以表示为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.327,
+            0.429,
+            0.719,
+            0.46
+          ],
+          "content": "x _ {0} = t a + (1 - t) b, \\text {其中} t = \\frac {b - x _ {0}}{b - a} \\in (0, 1).",
+          "image_source": "images/page_246_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.467,
+            0.374,
+            0.484
+          ],
+          "content": "由严格凸函数的定义可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.195,
+            0.504,
+            0.851,
+            0.523
+          ],
+          "content": "M = f (x _ {0}) = f \\big (t a + (1 - t) b \\big) <   t f (a) + (1 - t) f (b) <   t M + (1 - t) M = M,",
+          "image_source": "images/page_246_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.541,
+            0.546,
+            0.558
+          ],
+          "content": "矛盾, 故结论成立. 类似地可得极大值的结论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.564,
+            0.664,
+            0.582
+          ],
+          "content": "凸函数的另一个重要的整体性质是极值点必为最值点."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.588,
+            0.9,
+            0.629
+          ],
+          "content": "命题 7.5.18 设 f 为区间 I 上的凸函数. 如果 f 在 I 的内部取得极值, 则该点必为最小值点."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.635,
+            0.9,
+            0.677
+          ],
+          "content": "证明 设 $f$ 在 $I$ 的内部点 $x_0$ 取得极值. 如果 $x_0$ 为 $f$ 的极大值点, 则由命题7.5.17知 $f$ 为常值函数, 所以 $x_0$ 也是最小值点. 结论成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.682,
+            0.783,
+            0.702
+          ],
+          "content": "如果 $x_0$ 是 $f$ 的极小值点, 任取 $x > x_0$, 我们断言必有 $f(x) \\geqslant f(x_0)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.706,
+            0.565,
+            0.724
+          ],
+          "content": "事实上, 考虑 f 在  $[x_{0}, x]$  上的最大值点  $x_{1}$ ."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.146,
+            0.729,
+            0.902,
+            0.864
+          ],
+          "sub_type": "text",
+          "content": "(i) 如果  $x_{1}=x$ ，则证明已完成.\n(ii) 如果 $x_{1} \\in (x_{0}, x)$, 这意味着 $(x_{0}, x)$ 上的最大值点在内部点 $x_{1}$ 处达到, 由命题7.5.17知 $f$ 在 $[x_{0}, x]$ 上是常值函数. 特别地, $f(x) = f(x_{0})$.\n(iii) 如果 $x_{1} = x_{0}$, 则 $x_{0}$ 在 $[x_{0}, x]$ 上既是极小值点又是极大值点, 从而存在 $\\delta > 0$, 使得 $f$ 在 $[x_{0}, x_{0} + \\delta]$ 上取常值. 特别地, $f$ 的极大值在区间内部取到, 仍由命题7.5.17知 $f$ 为常值函数, 从而也有 $f(x) = f(x_{0})$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.87,
+            0.834,
+            0.888
+          ],
+          "content": "同理, 任取 $x < x_0$, 完全类似地可以证明 $f(x) \\geqslant f(x_0)$. 故 $x_0$ 是最小值点."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.894,
+            0.902,
+            0.912
+          ],
+          "content": "命题 7.5.19 (1) 定义在整个数轴 R 上的凸函数不可能有上界, 除非是常值函数;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.918,
+            0.774,
+            0.935
+          ],
+          "content": "(2) 定义在整个数轴 $\\mathbb{R}$ 上的凹函数不可能有下界, 除非是常值函数."
+        }
+      ]
+    },
+    {
+      "page_idx": 247,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.058,
+            0.056,
+            0.087,
+            0.068
+          ],
+          "content": "236"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.055,
+            0.271,
+            0.069
+          ],
+          "content": "第七章 微分中值定理"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.111,
+            0.857,
+            0.153
+          ],
+          "content": "证明 我们只证 (1), 凹函数情况的证明完全类似. 假如 $f(x) \\leqslant c (\\forall x \\in \\mathbb{R})$, 任取 $a < b$, 设 $x_1 < a, b < x_2$, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.186,
+            0.162,
+            0.778,
+            0.2
+          ],
+          "content": "\\frac {f (a) - c}{a - x _ {1}} \\leqslant \\frac {f (a) - f (x _ {1})}{a - x _ {1}} \\leqslant \\frac {f (b) - f (a)}{b - a} \\leqslant \\frac {f (x _ {2}) - f (b)}{x _ {2} - b} \\leqslant \\frac {c - f (b)}{x _ {2} - b},",
+          "image_source": "images/page_247_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.212,
+            0.453,
+            0.23
+          ],
+          "content": "在上式中令 $x_{1}\\rightarrow -\\infty ,x_{2}\\rightarrow +\\infty$ ，可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.388,
+            0.24,
+            0.573,
+            0.274
+          ],
+          "content": "0 \\leqslant \\frac {f (b) - f (a)}{b - a} \\leqslant 0,",
+          "image_source": "images/page_247_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.284,
+            0.54,
+            0.303
+          ],
+          "content": "即 $f(a) = f(b)$. 由 $a, b$ 的任意性知 $f$ 为常值函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.307,
+            0.607,
+            0.326
+          ],
+          "content": "根据命题 7.5.19, 可以立得下面一个非常实用的推论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.332,
+            0.868,
+            0.35
+          ],
+          "content": "推论 7.5.20 定义在 R 上的二阶可导的有界函数必至少有一个二阶导数为零的点."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.354,
+            0.687,
+            0.385
+          ],
+          "content": "例7.5.16 设 $y = \\frac{1}{1 + x^2}$，证明:存在 $\\xi \\in \\mathbb{R}$，使得 $f''(\\xi) = 0$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.385,
+            0.856,
+            0.426
+          ],
+          "content": "本题结论的证明可以通过直接计算即可完成. 但对于形式稍微复杂一些的题目, 通过计算的方法来验证二阶导数零点的存在性可能就不是那么容易了. 比如下面的例子."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.431,
+            0.856,
+            0.473
+          ],
+          "content": "例7.5.17 设 $P_{n}(x)$ 和 $Q_{m}(x)$ 分别为 $n$ 次和 $m$ 次多项式, $n > m$, $P_{n}(x) = 0$ 无实根. 证明: 至少存在一点 $\\xi \\in \\mathbb{R}$, 使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.256,
+            0.489,
+            0.704,
+            0.512
+          ],
+          "content": "(P _ {n} ^ {2} Q _ {m} ^ {\\prime \\prime} + 2 Q _ {m} (P _ {n} ^ {\\prime}) ^ {2}) | _ {\\xi} = (P _ {n} Q _ {m} P _ {n} ^ {\\prime \\prime} + 2 P _ {n} P _ {n} ^ {\\prime} Q _ {m} ^ {\\prime}) | _ {\\xi}.",
+          "image_source": "images/page_247_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.525,
+            0.856,
+            0.58
+          ],
+          "content": "事实上, 注意到函数 $f(x) = \\frac{Q_m(x)}{P_n(x)}$ 是 $\\mathbb{R}$ 上的二阶连续可微的有界函数, 因此必至少存在一点 $\\xi \\in \\mathbb{R}$ 使得 $f''(\\xi) = 0$, 后者等价于待证的等式."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.143,
+            0.607,
+            0.443,
+            0.627
+          ],
+          "level": 2,
+          "content": "7.5.4 函数的拐点与渐近线"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.144,
+            0.652,
+            0.28,
+            0.67
+          ],
+          "level": 2,
+          "content": "1. 函数的拐点"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.683,
+            0.854,
+            0.724
+          ],
+          "content": "如果函数 $f$ 的凹凸性在某一点 $(x_0, f(x_0))$ 处发生改变, 我们就称这一点为拐点①. 具体地, 有如下定义."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.73,
+            0.856,
+            0.797
+          ],
+          "content": "定义7.5.4 设 $f$ 在点 $x_0$ 附近连续, 若存在 $\\delta_0 > 0$ 使得 $f$ 在 $[x_0 - \\delta_0, x_0]$ 和 $[x_0, x_0 + \\delta_0]$ 上的凹凸性刚好改变, 即 $f$ 在 $[x_0 - \\delta_0, x_0]$ 上为凸函数 (凹函数), 在 $[x_0, x_0 + \\delta_0]$ 上为凹函数 (凸函数), 则称 $(x_0, f(x_0))$ 为 $f$ 的拐点."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.801,
+            0.822,
+            0.82
+          ],
+          "content": "命题7.5.21 若 $(x_0, f(x_0))$ 是 $f(x)$ 的拐点，且 $f''(x_0)$ 存在，则 $f''(x_0) = 0$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.824,
+            0.856,
+            0.891
+          ],
+          "content": "证明 因为 $f''(x_0)$ 存在, 所以 $f'(x)$ 在点 $x_0$ 某邻域存在. 由于 $f(x)$ 在点 $x_0$ 的左、右凹凸性改变, 这说明 $f'(x)$ 在点 $x_0$ 的左、右单调性刚好相反, 即 $x_0$ 是 $f'(x)$ 一个极值点. 由Fermat引理知, $f''(x_0) = 0$. $\\square$"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.103,
+            0.9,
+            0.854,
+            0.935
+          ],
+          "content": "① 有两种常见的拐点定义, 一种是把拐点定义为函数图像上的点 $(x_0, f(x_0))$, 另一种是把拐点定义为自变量坐标 $x_0$. 我们这里采用前者."
+        }
+      ]
+    },
+    {
+      "page_idx": 248,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.724,
+            0.054,
+            0.896,
+            0.068
+          ],
+          "content": "7.5 利用导数研究函数"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.914,
+            0.055,
+            0.942,
+            0.067
+          ],
+          "content": "237"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.109,
+            0.896,
+            0.152
+          ],
+          "content": "类似于利用 Taylor 公式讨论极值问题, 当函数有一定光滑性时, 我们也可以应用 Taylor 公式讨论函数的拐点."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.157,
+            0.896,
+            0.2
+          ],
+          "content": "命题 7.5.22 如果  $f(x)$  在点  $x_{0}$  的某邻域内二阶可导,  $f''(x_{0}) = 0$ ,  $f'''(x_{0})$  存在且非零, 则  $(x_{0}, f(x_{0}))$  是  $f(x)$  的拐点."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.184,
+            0.204,
+            0.481,
+            0.222
+          ],
+          "content": "证明 考虑 $f''(x)$ 的Taylor公式"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.201,
+            0.236,
+            0.839,
+            0.257
+          ],
+          "content": "f ^ {\\prime \\prime} (x) = f ^ {\\prime \\prime} (x _ {0}) + f ^ {\\prime \\prime \\prime} (x _ {0}) (x - x _ {0}) + o (x - x _ {0}) = \\big (f ^ {\\prime \\prime \\prime} (x _ {0}) + o (1) \\big) (x - x _ {0}).",
+          "image_source": "images/page_248_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.269,
+            0.899,
+            0.312
+          ],
+          "content": "所以当 $|x - x_0| \\ll 1$ 时, $f'''(x_0) + o(1)$ 与 $f'''(x_0)$ 有相同符号, 从而 $f''(x)$ 在点 $x_0$ 左、右符号相反, 即 $f(x)$ 在点 $x_0$ 左、右凹凸性相反, 故 $(x_0, f(x_0))$ 是 $f$ 的拐点. □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.318,
+            0.402,
+            0.334
+          ],
+          "content": "例7.5.18 试讨论函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.449,
+            0.331,
+            0.594,
+            0.368
+          ],
+          "content": "f (x) = \\frac {(x - 1) ^ {3}}{(x + 1) ^ {2}}",
+          "image_source": "images/page_248_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.376,
+            0.215,
+            0.393
+          ],
+          "content": "的拐点."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.399,
+            0.351,
+            0.416
+          ],
+          "content": "解 直接计算可知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.31,
+            0.422,
+            0.731,
+            0.459
+          ],
+          "content": "f ^ {\\prime} (x) = \\frac {(x - 1) ^ {2} (x + 5)}{(x + 1) ^ {3}}, \\quad f ^ {\\prime \\prime} (x) = \\frac {2 4 (x - 1)}{(x + 1) ^ {4}}.",
+          "image_source": "images/page_248_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.469,
+            0.777,
+            0.488
+          ],
+          "content": "由于 $f''(x)$ 在 $x_0 = 1$ 的左、右符号刚好相反, 所以 (1,0) 是函数的拐点."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.185,
+            0.502,
+            0.347,
+            0.52
+          ],
+          "level": 2,
+          "content": "2. 函数的渐近线"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.533,
+            0.902,
+            0.686
+          ],
+          "content": "函数有无渐近线是函数的一个重要的直观特征.渐近线的存在性和寻求可以通过极限来定义和给出.具体来说，如果 $\\lim_{x\\to \\pm \\infty}f(x) = A$ ，则 $y = A$ 是函数的水平渐近线；如果 $\\lim_{x\\to x_0^+}f(x) = \\infty$ 或者 $\\lim_{x\\to x_0^-}f(x) = \\infty$ ，则 $x = x_0$ 是函数的垂直渐近线；如果 $\\lim_{x\\to +\\infty}\\frac{f(x)}{x} = k$ 存在有限，且同时有 $\\lim_{x\\to +\\infty}(f(x) - kx) = b$ 存在有限，则称 $y = kx + b$ 是函数 $f$ 当 $x\\to +\\infty$ 时的斜渐近线.完全类似可以定义函数 $f$ 当 $x\\to -\\infty$ 时的斜渐近线."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.691,
+            0.901,
+            0.732
+          ],
+          "content": "可以看出, 如果斜渐近线存在, 那么 $k$ 就是渐近线的斜率, $b$ 就是渐近线在 $y$ 轴上的截距."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.737,
+            0.901,
+            0.779
+          ],
+          "content": "在讨论渐近线时，应该明确 $x$ 和 $y$ 的渐近方式。比如，应该把 $\\infty$ 区分为 $+\\infty$ 和 $-\\infty$。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.785,
+            0.531,
+            0.802
+          ],
+          "content": "例7.5.19 试讨论例7.5.18中的函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.452,
+            0.808,
+            0.597,
+            0.845
+          ],
+          "content": "f (x) = \\frac {(x - 1) ^ {3}}{(x + 1) ^ {2}}",
+          "image_source": "images/page_248_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.856,
+            0.238,
+            0.873
+          ],
+          "content": "的渐近线."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.879,
+            0.683,
+            0.897
+          ],
+          "content": "解 首先容易看出 $x = -1$ 是函数的一条垂直渐近线, 又"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.34,
+            0.904,
+            0.709,
+            0.937
+          ],
+          "content": "\\lim _ {x \\to \\pm \\infty} \\frac {f (x)}{x} = 1, \\quad \\lim _ {x \\to \\pm \\infty} (f (x) - x) = - 5,",
+          "image_source": "images/page_248_equation_21.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 249,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.058,
+            0.056,
+            0.087,
+            0.068
+          ],
+          "content": "238"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.105,
+            0.055,
+            0.27,
+            0.069
+          ],
+          "content": "第七章 微分中值定理"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.111,
+            0.734,
+            0.13
+          ],
+          "content": "因此 y = x - 5 是函数 f 当  $x \\to +\\infty$  和  $x \\to -\\infty$  时的共同的斜渐近线."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.145,
+            0.157,
+            0.324,
+            0.178
+          ],
+          "level": 2,
+          "content": "7.5.5 函数作图"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.203,
+            0.859,
+            0.339
+          ],
+          "content": "说起函数作图, 大家自然想到强大的绘图软件能用极快的速度把众多函数图形准确地画出来. 然而, 用绘图软件画图不是数学分析的核心内容. 我们这里介绍的 “函数作图”, 旨在综合利用我们学过的极限和导数的基本内容, “手工” 绘出函数大致的性态. 也许我们画的图形在尺寸上与真实数据不是那么精准对等, 但如果能把握好几个要素, 我们就能抓住函数的 “灵魂”, 甚至能凸显出我们感兴趣的角度. 这个犹如相机代替不了漫画一样."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.345,
+            0.859,
+            0.411
+          ],
+          "content": "那么画好一个函数的图形,需要注意哪些重要因素?我们可以简单罗列如下:函数的定义域、有界性、奇偶性、周期性、单调区间、极值点、凹凸性、拐点、渐近线、一些特殊的点(是否过原点、与坐标轴的交点)等."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.417,
+            0.538,
+            0.434
+          ],
+          "content": "下面我们通过具体例子来熟悉一下上述环节."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.435,
+            0.54,
+            0.464
+          ],
+          "content": "例 7.5.20 作出函数  $f(x)=\\frac{2x}{1+x^{2}}$  的图像."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.465,
+            0.469,
+            0.482
+          ],
+          "content": "解 显然 $f$ 是一个奇函数. 求导可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.288,
+            0.497,
+            0.671,
+            0.536
+          ],
+          "content": "f ^ {\\prime} (x) = \\frac {2 (1 - x ^ {2})}{(1 + x ^ {2}) ^ {2}}, \\qquad f ^ {\\prime \\prime} (x) = \\frac {4 x (x ^ {2} - 3)}{(1 + x ^ {2}) ^ {3}}.",
+          "image_source": "images/page_249_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.551,
+            0.857,
+            0.593
+          ],
+          "content": "故得 $x = \\pm 1$ 为 $f$ 的驻点, $f$ 在 $(- \\infty, -1)$ 上单调递减, 在 $(-1, 1)$ 内单调递增, 在 $(1, +\\infty)$ 上单调递减. $f(-1) = -1$ 为 $f$ 的极小值, $f(1) = 1$ 为 $f$ 的极大值."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.598,
+            0.857,
+            0.674
+          ],
+          "content": "从 $f''(x) = 0$ 又可以判断出 $(\\sqrt{3}, \\frac{\\sqrt{3}}{2}), (-\\sqrt{3}, \\frac{-\\sqrt{3}}{2})$ 和 $(0,0)$ 均为 $f$ 的拐点. 即 $f$ 在 $(- \\infty, -\\sqrt{3})$ 上是凹函数, 在 $(- \\sqrt{3}, 0)$ 内是凸函数的, 在 $(0, \\sqrt{3})$ 内是凹函数, 在 $(\\sqrt{3}, +\\infty)$ 上又是凸函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.68,
+            0.607,
+            0.702
+          ],
+          "content": "再者, 由于 $\\lim_{x\\to \\infty}f(x) = 0$, 因此 $y = 0$ 为 $f$ 的渐近线."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.704,
+            0.857,
+            0.745
+          ],
+          "content": "其他要素: $f$ 除了过原点外与坐标轴没有其他交点, 函数显然有界 $|f| \\leqslant 1$. 综上, 我们可以大致画出函数的图形, 见图 7.9."
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.319,
+            0.764,
+            0.642,
+            0.861
+          ],
+          "sub_type": "line",
+          "content": "| X | f(x) |\n| --- | --- |\n| \\(-\\sqrt{3}\\) | ~-0.8 |\n| 0 | 0 |\n| \\(\\sqrt{3}\\) | ~0.9 |",
+          "captions": [
+            {
+              "bbox": [
+                0.332,
+                0.864,
+                0.626,
+                0.893
+              ],
+              "content": "图7.9 函数 $f(x) = \\frac{2x}{1 + x^2}$ 的图像"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_249_chart_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.904,
+            0.603,
+            0.941
+          ],
+          "content": "例7.5.21 作出函数 $y = f(x) = \\frac{x^3}{2(1 - x^2)}$ 的图像."
+        }
+      ]
+    },
+    {
+      "page_idx": 250,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.728,
+            0.056,
+            0.899,
+            0.07
+          ],
+          "content": "7.5 利用导数研究函数"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.918,
+            0.057,
+            0.946,
+            0.069
+          ],
+          "content": "239"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.111,
+            0.519,
+            0.129
+          ],
+          "content": "解 通过直接计算不难得到如下结论:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.144,
+            0.137,
+            0.896,
+            0.38
+          ],
+          "sub_type": "text",
+          "content": "(1) 函数的定义域为  $x \\neq \\pm 1$ .\n(2) 函数是奇函数.\n(3) 通过求解 $f'(x) = 0$ 可得函数的驻点 $x = 0, \\pm \\sqrt{3}$. 进一步可判断出 $x = \\sqrt{3}$ 是极大值点, 极大值为 $f(\\sqrt{3}) = -\\frac{3\\sqrt{3}}{4}$. $x = -\\sqrt{3}$ 是极小值点, 极小值为 $f(-\\sqrt{3}) = \\frac{3\\sqrt{3}}{4}$.\n(4) 通过求解 $f'(x) > 0$ 和 $f'(x) < 0$, 可知 $x$ 分别在区间 $(-\\infty, -\\sqrt{3}), (-\\sqrt{3}, -1), (-1, 0), (0, 1), (1, \\sqrt{3}), (\\sqrt{3}, +\\infty)$ 内时, 函数分别单调递减、单调递增、单调递增、单调递增、单调递增、单调递增、单调递减.\n(5) 通过考察 $f''(x)$ 可以得到函数的凹凸性以及拐点: 函数在 (0,1) 内是凸函数, 在 $(1, +\\infty)$ 上是凹函数, 在 $(-1,0)$ 内是凹函数, 在 $(- \\infty, -1)$ 上是凸函数. (0,0) 是函数的拐点."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.388,
+            0.9,
+            0.454
+          ],
+          "content": "由 (4), (5) 可得, 当 $x$ 分别在区间 $(- \\infty, -\\sqrt{3}), (-\\sqrt{3}, -1), (-1, 0), (0, 1), (1, \\sqrt{3}), (\\sqrt{3}, +\\infty)$ 内时, 函数分别单调递减 (凸函数)、单调递增 (凸函数)、单调递增 (凹函数)、单调递增 (凸函数)、单调递增 (凹函数)、单调递减 (凹函数)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.457,
+            0.689,
+            0.485
+          ],
+          "content": "(6) 有两条垂直渐近线  $y = \\pm1$  和一条斜渐近线  $y = -\\frac{1}{2}x$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.487,
+            0.645,
+            0.504
+          ],
+          "content": "综合上述性质, 可以大致作出函数的图像, 见图 7.10."
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.295,
+            0.524,
+            0.758,
+            0.751
+          ],
+          "sub_type": "contour",
+          "content": "| Feature | Coordinates |\n| --- | --- |\n| Local Maximum | \\((-3\\sqrt{3}/4)\\) |\n| Local Minimum | \\((-3\\sqrt{3}/4)\\) |",
+          "captions": [
+            {
+              "bbox": [
+                0.373,
+                0.755,
+                0.675,
+                0.788
+              ],
+              "content": "图7.10 函数 $y = \\frac{x^3}{2(1 - x^2)}$ 的图像"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_250_chart_12.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.189,
+            0.813,
+            0.283,
+            0.832
+          ],
+          "level": 2,
+          "content": "习题 7.5"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.187,
+            0.858,
+            0.347,
+            0.874
+          ],
+          "content": "1. 证明下列等式:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.187,
+            0.877,
+            0.556,
+            0.937
+          ],
+          "sub_type": "text",
+          "content": "(1) $\\arcsin x + \\arccos x = \\frac{\\pi}{2}, \\forall x \\in [-1, 1]$;\n(2) $2\\arctan x + \\arcsin \\frac{2x}{1 + x^2} = \\pi, \\forall x \\geqslant 1.$"
+        }
+      ]
+    },
+    {
+      "page_idx": 251,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.059,
+            0.054,
+            0.088,
+            0.065
+          ],
+          "content": "240"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.053,
+            0.271,
+            0.067
+          ],
+          "content": "第七章 微分中值定理"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.109,
+            0.324,
+            0.126
+          ],
+          "content": "2. 证明下列不等式:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.144,
+            0.13,
+            0.71,
+            0.351
+          ],
+          "sub_type": "text",
+          "content": "(1) $\\tan x > x + \\frac{x^3}{3}, \\forall x \\in \\left(0, \\frac{\\pi}{2}\\right)$;\n(2) $\\frac{2x}{\\pi} < \\sin x < x, \\forall x \\in \\left(0, \\frac{\\pi}{2}\\right)$;\n(3) $x - \\frac{x^2}{2} < \\ln (1 + x) < x - \\frac{x^2}{2(1 + x)},\\forall x > 0;$\n(4) $ny^{n - 1}(x - y) < x^n -y^n < nx^{n - 1}(x - y)$ $(n > 1)$ ， $\\forall x > y > 0$\n(5) $\\mathrm{e}^x > 1 + x + \\frac{x^2}{2!} + \\dots + \\frac{x^n}{n!}, \\forall x > 0;$\n(6) $\\frac{\\tan x}{x} > \\frac{x}{\\sin x}, \\forall x \\in \\left(0, \\frac{\\pi}{2}\\right)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.359,
+            0.549,
+            0.378
+          ],
+          "content": "3. 数列  $1, \\sqrt{2}, \\sqrt[3]{3}, \\cdots, \\sqrt[n]{n}, \\cdots$  中哪一项最大？"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.38,
+            0.46,
+            0.416
+          ],
+          "content": "4. 证明: 当 $x \\in \\left[\\frac{\\pi}{4}, \\frac{3\\pi}{4}\\right]$ 时, 不等式"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.389,
+            0.436,
+            0.569,
+            0.472
+          ],
+          "content": "\\frac {2 \\sqrt {2}}{3 \\pi} \\leqslant \\frac {\\sin x}{x} \\leqslant \\frac {2 \\sqrt {2}}{\\pi}",
+          "image_source": "images/page_251_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.489,
+            0.151,
+            0.505
+          ],
+          "content": "成立."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.103,
+            0.506,
+            0.851,
+            0.798
+          ],
+          "sub_type": "text",
+          "content": "5. 研究函数 $\\frac{1}{\\sin x} - \\frac{1}{x}$ 的单调性, 其中 $x \\in (0, \\pi)$.\n6. 设 $f(x) \\in C[0, +\\infty)$. 若 $\\forall x \\geqslant 0, \\forall \\delta > 0$, 都存在 $y \\in (x, x + \\delta)$ 满足 $f(y) \\geqslant f(x)$. 证明: $f(x)$ 单调不减.\n7. 证明: (严格) 凸函数的极值点就是 (严格) 最值点.\n8. 设 $f$ 是 $\\mathbb{R}$ 上的连续函数, 且 $|f|$ 是凸函数. 证明: $f$ 至多只有一个拐点.\n9. 证明: 有界闭区间上的凸函数必有界.\n10. 设 $f$ 在 $[0, +\\infty)$ 上连续, 在 $(0, +\\infty)$ 上可导. 若 $f(0) = 0$, $f'(x)$ 严格单调递增. 证明: $\\frac{f(x)}{x}$ 在 $(0, +\\infty)$ 上也严格单调递增.\n11. 证明: 任意一个定义在整个 $\\mathbb{R}$ 上的严格凸函数都不可能被夹在两条平行直线之间.\n12. 设 $\\varepsilon_0 > 0, \\delta_0 > 0$. 试问: 能否存在一个定义在整个 $\\mathbb{R}$ 上的光滑的 $(C^\\infty)$ 严格凸函数, 使之位于带形区域"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.254,
+            0.819,
+            0.698,
+            0.872
+          ],
+          "content": "\\Omega = \\left\\{(x, y): \\begin{array}{c c} - \\varepsilon_ {0} x \\leqslant y \\leqslant - \\varepsilon_ {0} x + \\delta_ {0}, & x \\leqslant 0 \\\\ \\varepsilon_ {0} x \\leqslant y \\leqslant \\varepsilon_ {0} x + \\delta_ {0}, & x \\geqslant 0 \\end{array} \\right\\}",
+          "image_source": "images/page_251_equation_23.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.892,
+            0.62,
+            0.91
+          ],
+          "content": "内. 如果不可以, 请证明; 如果可以, 请构造一个这样的函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.916,
+            0.851,
+            0.935
+          ],
+          "content": "13. 证明命题7.5.7: 设函数 $f(x)$ 在区间 $I$ 上有定义. 则 $f(x)$ 是区间 $I$ 上的中点"
+        }
+      ]
+    },
+    {
+      "page_idx": 252,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.727,
+            0.054,
+            0.896,
+            0.068
+          ],
+          "content": "7.5 利用导数研究函数"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.916,
+            0.056,
+            0.944,
+            0.067
+          ],
+          "content": "241"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.11,
+            0.532,
+            0.128
+          ],
+          "content": "凸函数的充要条件是  $\\forall x_{1}, x_{2}, \\cdots, x_{n} \\in I$ ，有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.268,
+            0.139,
+            0.775,
+            0.171
+          ],
+          "content": "f \\Big (\\frac {x _ {1} + x _ {2} + \\cdots + x _ {n}}{n} \\Big) \\leqslant \\frac {1}{n} \\big (f (x _ {1}) + f (x _ {2}) + \\dots + f (x _ {n}) \\big).",
+          "image_source": "images/page_252_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.181,
+            0.898,
+            0.223
+          ],
+          "content": "14. 证明命题7.5.8: 设 $f(x)$ 是区间 $I$ 上的连续函数. 则它是 (严格) 凸函数当且仅当它是 (严格) 中点凸函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.229,
+            0.741,
+            0.246
+          ],
+          "content": "15. 试讨论函数 $f(x) = -\\ln x$ ($x > 0$) 的凹凸性, 并证明不等式"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.36,
+            0.257,
+            0.688,
+            0.289
+          ],
+          "content": "\\sqrt [ n ]{a _ {1} a _ {2} \\cdots a _ {n}} \\leqslant \\frac {1}{n} (a _ {1} + a _ {2} + \\dots + a _ {n}),",
+          "image_source": "images/page_252_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.301,
+            0.387,
+            0.318
+          ],
+          "content": "其中  $a_{i}>0, i=1,2,\\cdots,n.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.324,
+            0.559,
+            0.342
+          ],
+          "content": "16. 设  $a_{i} > 0, i = 1, 2, \\cdots, n$ . 证明不等式"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.365,
+            0.355,
+            0.682,
+            0.404
+          ],
+          "content": "\\frac {n}{\\frac {1}{a _ {1}} + \\frac {1}{a _ {2}} + \\cdots + \\frac {1}{a _ {n}}} \\leqslant \\sqrt [ n ]{a _ {1} a _ {2} \\cdots a _ {n}}.",
+          "image_source": "images/page_252_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.417,
+            0.68,
+            0.459
+          ],
+          "content": "17. 设  $a_{i}>0, i=1,2,\\cdots,n$ ，且  $\\sum_{i=1}^{n}a_{i}=1$ 。证明不等式"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.365,
+            0.475,
+            0.68,
+            0.517
+          ],
+          "content": "x _ {1} ^ {a _ {1}} x _ {2} ^ {a _ {2}} \\dots x _ {n} ^ {a _ {n}} \\leqslant \\sum_ {i = 1} ^ {n} a _ {i} x _ {i}, \\quad \\forall x _ {i} \\geqslant 0,",
+          "image_source": "images/page_252_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.531,
+            0.339,
+            0.548
+          ],
+          "content": "并求等号成立的条件."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.555,
+            0.807,
+            0.572
+          ],
+          "content": "18. 证明: $\\mathbb{R}$ 上的严格凸函数不可能有上界, 严格凹函数不可能有下界."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.578,
+            0.9,
+            0.62
+          ],
+          "content": "进一步, 任何一条非垂直直线都不可能控制住一个定义在整个 $\\mathbb{R}$ 上的严格凸函数. 从而, 如果一个定义在整个 $\\mathbb{R}$ 上的二阶光滑函数有界, 必然有一个二阶导数为0的点."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.626,
+            0.9,
+            0.666
+          ],
+          "content": "19. 证明: $y'' + a(x)y = 0$, $a(x) \\geqslant c > 0$ 在 $\\mathbb{R}$ 上的任一非零全局解必有无限多个拐点."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.673,
+            0.9,
+            0.69
+          ],
+          "content": "20. 证明或证否: 区间 $(a, b)$ 内的严格凸函数的极值点最多只有一个, 且为最值点."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.697,
+            0.9,
+            0.735
+          ],
+          "content": "21. 证明或证否: 凸函数不可能存在两条平行的渐近线. 特别地, $\\mathbb{R}$ 上的非平凡凸函数不可能有界."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.185,
+            0.743,
+            0.9,
+            0.76
+          ],
+          "content": "22. 设 $P_{0}(a, b)$ 为平面上的一定点. 证明: 点 $(x, 0)$ 到 $P_{0}$ 的距离函数是一个凸函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.766,
+            0.724,
+            0.784
+          ],
+          "content": "23. 设 $f$ 为 $\\left( {-\\infty , + \\infty }\\right)$ 上的连续函数. 若对任意 $x \\in  \\mathbb{R}$ ,均有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.358,
+            0.797,
+            0.689,
+            0.831
+          ],
+          "content": "\\lim _ {h \\to 0} \\frac {f (x + h) + f (x - h) - 2 f (x)}{h ^ {2}} = 0.",
+          "image_source": "images/page_252_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.841,
+            0.357,
+            0.859
+          ],
+          "content": "证明:  $f(x)$  为线性函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.865,
+            0.512,
+            0.883
+          ],
+          "content": "24. 求曲线 $x^{3} + y^{3} = 3xy$ 的渐近线."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.889,
+            0.421,
+            0.906
+          ],
+          "content": "25. 作出下列函数的图像:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.186,
+            0.912,
+            0.481,
+            0.931
+          ],
+          "content": "(1) $f(x)=\\sin^{3}x+\\cos^{3}x,\\ x\\in\\mathbb{R};$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.556,
+            0.906,
+            0.818,
+            0.938
+          ],
+          "content": "(2) $f(x) = \\frac{1 - 2x}{x^2} + 1, x > 0;$"
+        }
+      ]
+    },
+    {
+      "page_idx": 253,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.06,
+            0.054,
+            0.089,
+            0.065
+          ],
+          "content": "242"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.052,
+            0.272,
+            0.067
+          ],
+          "content": "第七章 微分中值定理"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.148,
+            0.109,
+            0.765,
+            0.203
+          ],
+          "sub_type": "text",
+          "content": "(3) $f(x) = x^{3} - x^{2} - x + 1, x \\in \\mathbb{R}$;\n(4) $y = x^4 - 2x + 10;$\n(5) $f(x) = \\mathrm{e}^{-x^2}, x \\in \\mathbb{R}$;\n(6) $f(x) = (2 + x)\\mathrm{e}^{\\frac{1}{x}}, x \\neq 0;$\n(7) $f(x) = x^{2} \\mathrm{e}^{-x}, x \\in \\mathbb{R}.$\n(8) $y = \\ln (1 + x^2)$;\n(9) $y = x - \\ln (1 + x)$;\n(10) $y = \\frac{-x}{1 - x^7}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.204,
+            0.611,
+            0.222
+          ],
+          "content": "26. (1) 是否存在 $\\mathbb{R}$ 上的凸函数 $f$, 使得 $f(0) < 0$, 且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.375,
+            0.241,
+            0.589,
+            0.268
+          ],
+          "content": "\\lim _ {| x | \\to + \\infty} (f (x) - | x |) = 0;",
+          "image_source": "images/page_253_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.284,
+            0.573,
+            0.302
+          ],
+          "content": "(2) 是否存在 $\\mathbb{R}$ 上的凸函数 $f$, 使得 $f(0) > 0$, 且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.375,
+            0.321,
+            0.589,
+            0.348
+          ],
+          "content": "\\lim _ {| x | \\to + \\infty} (f (x) - | x |) = 0.",
+          "image_source": "images/page_253_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.364,
+            0.857,
+            0.405
+          ],
+          "content": "27. 设 $f$ 和 $g$ 分别是定义在整个 $\\mathbb{R}$ 上的严格凹函数和严格凸函数, 两者图形没有交点. 试讨论下面的结论是否成立:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.144,
+            0.412,
+            0.805,
+            0.481
+          ],
+          "sub_type": "text",
+          "content": "(1)  $\\forall x \\in R,$  是否一定成立  $g(x) > f(x).$\n(2) 有没有可能成立 $\\lim_{x\\to +\\infty}\\left(g(x) - f(x)\\right) = 0$ 或者 $\\lim_{x\\to -\\infty}\\left(g(x) - f(x)\\right) = 0;$\n有没有可能成立  $\\lim_{x\\to+\\infty}\\left(g(x)-f(x)\\right)=0$  且  $\\lim_{x\\to-\\infty}\\left(g(x)-f(x)\\right)=0$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.482,
+            0.75,
+            0.505
+          ],
+          "content": "(3) 如果  $\\lim_{x\\to+\\infty}g(x)-f(x)=0$ ，是否必有  $\\lim_{x\\to-\\infty}|g(x)-f(x)|=+\\infty;$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.506,
+            0.717,
+            0.529
+          ],
+          "content": "如果 $\\lim_{x\\to -\\infty}g(x) - f(x) = 0$ ，是否必有 $\\lim_{x\\to +\\infty}|g(x) - f(x)| = +\\infty .$"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.103,
+            0.53,
+            0.857,
+            0.618
+          ],
+          "sub_type": "text",
+          "content": "(4) 如果 $\\lim_{x\\to +\\infty}\\left(g(x) - f(x)\\right) = 0, g(x) - f(x)$ 是否单调趋于 $0; f$ 与 $g$ 是否一定有相同的渐近线.\n(5) 如果 $\\lim_{x\\to +\\infty}g(x) - f(x) = 0$，是否一定存在一条直线 $L$ 把这两个函数的图形分到直线的两侧，且此直线与它们都不相交."
+        }
+      ]
+    },
+    {
+      "page_idx": 254,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.391,
+            0.094,
+            0.504,
+            0.123
+          ],
+          "level": 2,
+          "content": "第八章"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.551,
+            0.161,
+            0.745,
+            0.199
+          ],
+          "level": 2,
+          "content": "不定积分"
+        }
+      ]
+    },
+    {
+      "page_idx": 255,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.056,
+            0.058,
+            0.085,
+            0.069
+          ],
+          "content": "244"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.105,
+            0.056,
+            0.235,
+            0.07
+          ],
+          "content": "第八章 不定积分"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.104,
+            0.11,
+            0.4,
+            0.133
+          ],
+          "level": 2,
+          "content": "8.1 原函数与不定积分"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.18,
+            0.856,
+            0.388
+          ],
+          "content": "在前面章节, 我们引入了导数的定义, 介绍了求导数的一些方法, 并且给出了一些基本初等函数的导数. 从运算的角度来看, 就是说给定一个函数 $F(x)$, 如果它是可导的, 那么它就对应一个所谓的导函数 $F'(x) = f(x)$. 在那里函数 $F(x)$ 是已知的, 我们讨论的重点主要放在寻求和研究导函数 $f(x)$ 上. 本章我们将着重考虑上述求导运算的逆运算, 即函数 $f(x)$ 是已知的, 我们关注的是如何寻求 $F(x)$. 与此紧密相关的问题包括 $F(x)$ 的存在性; 如果存在的话, 有多少这样的函数; 以及能否求出这些函数, 如何求出这些函数, 等等. 类似于求导运算, 如果存在这样的 $F(x)$ 使得 $F'(x) = f(x)$, 那么我们通常称 $f(x)$ 是可积的 (这里的可积与后面定积分章节中的可积有所不同), 而把 $F(x)$ 称为 $f(x)$ 的一个原函数. 严格定义如下."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.393,
+            0.853,
+            0.434
+          ],
+          "content": "定义 8.1.1 设函数  $f(x)$  在区间 I 上有定义. 如果函数  $F(x)$  在 I 上可导, 且满足"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.265,
+            0.44,
+            0.689,
+            0.46
+          ],
+          "content": "F ^ {\\prime} (x) = f (x), \\qquad \\text {或者} \\quad \\mathrm{d} F = f (x)   \\mathrm{d} x, \\quad x \\in I,",
+          "image_source": "images/page_255_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.47,
+            0.853,
+            0.512
+          ],
+          "content": "那么就称 $F$ 为 $f$ 在区间 $I$ 上的一个原函数. 在不强调区间 $I$ 时, 又简称为 $F$ 为 $f$ 的一个原函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.517,
+            0.586,
+            0.535
+          ],
+          "content": "根据导数的基本性质, 显然原函数具有下面的性质."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.541,
+            0.559,
+            0.559
+          ],
+          "content": "定理 8.1.1 设函数  $f(x)$  在区间 I 上有定义."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.565,
+            0.853,
+            0.606
+          ],
+          "content": "(1) 如果 $F(x)$ 是 $f(x)$ 在区间 $I$ 上的一个原函数, 那么对于任意的常数 $c \\in \\mathbb{R}$, 函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.402,
+            0.612,
+            0.553,
+            0.631
+          ],
+          "content": "G (x) = F (x) + c",
+          "image_source": "images/page_255_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.643,
+            0.324,
+            0.659
+          ],
+          "content": "也是 $f(x)$ 的一个原函数；"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.665,
+            0.685,
+            0.683
+          ],
+          "content": "(2) 如果 $G(x)$ 也是 $f(x)$ 的一个原函数, 那么必有常数 $c$, 使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.399,
+            0.699,
+            0.553,
+            0.718
+          ],
+          "content": "G (x) = F (x) + c.",
+          "image_source": "images/page_255_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.733,
+            0.607,
+            0.752
+          ],
+          "content": "证明 (1) 首先, 对于任意常数 $c$, 由 $F'(x) = f(x)$, 知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.265,
+            0.768,
+            0.688,
+            0.788
+          ],
+          "content": "G ^ {\\prime} (x) = (F (x) + c) ^ {\\prime} = F ^ {\\prime} (x) = f (x), \\quad \\forall x \\in I.",
+          "image_source": "images/page_255_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.802,
+            0.623,
+            0.821
+          ],
+          "content": "因此根据原函数的定义, 得  $F(x)+c$  是  $f(x)$  的一个原函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.826,
+            0.841,
+            0.845
+          ],
+          "content": "(2) 反过来, 如果 $G(x)$ 是 $f(x)$ 的另一个原函数, 则根据导数运算的代数法则, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.265,
+            0.86,
+            0.688,
+            0.88
+          ],
+          "content": "(G (x) - F (x)) ^ {\\prime} = G ^ {\\prime} (x) - F ^ {\\prime} (x) \\equiv 0, \\quad \\forall x \\in I.",
+          "image_source": "images/page_255_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.896,
+            0.165,
+            0.913
+          ],
+          "content": "因而有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.347,
+            0.919,
+            0.607,
+            0.938
+          ],
+          "content": "G (x) - F (x) = c, \\quad \\forall x \\in I,",
+          "image_source": "images/page_255_equation_20.jpg"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "created_at": "2025-11-20T03:44:46+08:00",
+      "modified_at": "2025-11-20T03:47:17+08:00",
+      "page_count": 856,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 240,
+          "width_pt": 509.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 241,
+          "width_pt": 509.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 242,
+          "width_pt": 509.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 243,
+          "width_pt": 510.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 244,
+          "width_pt": 509.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 245,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 246,
+          "width_pt": 509.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 247,
+          "width_pt": 510.0,
+          "height_pt": 742.0
+        },
+        {
+          "page_idx": 248,
+          "width_pt": 509.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 249,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 250,
+          "width_pt": 509.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 251,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 252,
+          "width_pt": 509.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 253,
+          "width_pt": 509.0,
+          "height_pt": 741.0
+        },
+        {
+          "page_idx": 254,
+          "width_pt": 509.0,
+          "height_pt": 740.0
+        },
+        {
+          "page_idx": 255,
+          "width_pt": 510.0,
+          "height_pt": 741.0
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}
