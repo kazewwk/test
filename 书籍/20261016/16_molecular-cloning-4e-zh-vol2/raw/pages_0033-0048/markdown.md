@@ -1,0 +1,599 @@
+使用在线的免费软件，如 Primer3Plus（http://www.bioinformatics.nl/cgi-bin/primer3-plus/primer3plus.cgi）往往能得到很好的结果。
+
+## 引物
+
+使用同一标准的引物设计算法设计得到的实时荧光PCR引物对，也可用于传统PCR中（详细的信息请参阅第7章）。
+
+- 长度。为了最大限度地提高结合特性，引物的长度应为 18～30 个核苷酸。
+- 熔解温度($T_m$)。引物的 $T_m$ 应为 55\~60°C，引物对中的两条引物 $T_m$ 之差应在 2\~3°C。
+- 序列。每条引物的 3'端最后 5 个碱基中应该有一个（但是最多 2～3 个）G 或者 C。3'端单个的 G 或者 C 可以减少 PCR 过程中的非特异扩增。但是，3'端过多的 G 或 C 可能会导致引物与目标位点的非特异结合，最终导致错误延伸（称为“滑动效应”）。此外，每条探针都不应该有连续的（例如，多于 3 或 4 个核苷酸）的同一核苷酸（尤其是 G 和 C），因为聚合物延伸同样会引起“滑动效应”。最后，引物对的 3'端不应有任何可能导致引物二聚体形成的互补序列。因为引物二聚体有负的自由能 $\Delta G$，所以应选择自由能 $\Delta G$ 不少于 -10kcal/mol 的引物。
+
+\- GC 含量。引物 GC 含量应为 50% 左右（理想的是 40%～60%）。如果引物要结合到富含 AT 的模板上（富含 70% 的 AT 序列），一种非常有用的方法是用锁核酸（LNA）类似物代替引物中的一个或多个碱基，这样可以在保持 $T_m$ 值不变的前提下，减少引物的总长度（见下文“LNA 类似物”的讨论）。
+
+\- 二级结构。引物中应避免出现任何反向重复序列，因为反向重复序列可形成稳定的发夹结构，使得引物不能有效结合（或使引物完全失去结合能力）。
+
+\- 避免基因组 DNA。在实时荧光 RT-PCR 实验中，因为基因组 DNA 的扩增而产生假阳性。因此，引物应该设计在长内含子侧翼或是多个短内含子上，抑或跨越外显子-外显子交界区（图 9-5）。
+
+![](images/page_32_image_12.jpg)
+
+<details>
+<summary>text_image</summary>
+
+A
+基因组 DNA
+mRNA
+B
+基因组 DNA
+mRNA
+</details>
+
+图 9-5 RT-PCR 试验引物设计原理图。（A）内含子侧翼引物。设计的引物在长内含子的侧翼（头部）或多个短内含子（尾部）。（B）跨外显子-外显子交界区的引物。引物仅有部分与基因组 DNA 互补，除非复性温度极低，否则将不与 PCR 产物杂交或扩增出 PCR 产物。方块表示外显子；灰色线表示内含子；箭头表示引物。
+
+\- 引物需进行脱盐纯化。
+
+应该注意的是，尽管为优化反应条件做了所有的尝试，但仍有许多引物组合不能扩增出想要的模板，因此，必须重新设计新的引物进行试验。
+
+## TaqMan 探针
+
+精心设计的 TaqMan 探针几乎不需要优化。TaqMan 探针的设计应考虑以下因素。
+
+\- 长度。TaqMan 探针最佳长度为 20 个核苷酸（不超过 30 个核苷酸），可实现最大猝灭。长度大于 30 个核苷酸也是可行的，但在这种情况下，内部猝灭基团应在距离 5' 端 18～25 个碱基处。
+
+\- 熔解温度。TaqMan 探针的 $T_{\mathrm{m}}$ 要求比引物的 $T_{\mathrm{m}}$ 高约 $10^{\circ} \mathrm{C}$, 通常在 $65 \sim 70^{\circ} \mathrm{C}$ 之间。$T_{\mathrm{m}}$ 差异对于确保探针先于引物杂交结合到模板上是必要的。如果探针 $T_{\mathrm{m}}$ 值较引物高出 $8 \sim 10^{\circ} \mathrm{C}$, 当邻近引物延伸时, 探针将先于引物与靶序列复性结合以确保检测的进行。
+
+\- 序列。应该避免连续的单碱基重复序列，尤其是 G，因为这可能会影响探针的二级结构，并降低杂交效率。在没有其他序列可选择的情况下，用肌苷替代以中断连续的 G 可显著改善探针性能。此外，探针 5'端不应该含有太多的 G，因为它能够猝灭荧光。一般情况下，应该避免探针和靶序列之间的错配（除非用探针进行 SNP 基因分型检测）（见信息栏 “SNP 基因分型”），并且探针不应该与任一引物互补。
+
+\- GC 含量。设计的 TaqMan 探针的 G / C 含量约为 50%（理想情况下 30%～80%）。如果靶序列是富含 AT 的序列，可掺入锁核酸（LNA）（LNA；Roche 公司）或小沟结合剂（MGB；Applied Biosystems 公司）等核酸类似物（LNA 和 MGB 详见下一节）。
+
+\- 探针 5'端应该尽可能接近引物 3'端，但不能重叠，以确保 Taq DNA 聚合酶快速切割降解。
+
+\- TaqMan 探针应采用 HPLC 纯化。
+
+## 锁核酸（LNA）碱基和小沟结合剂（MGB）
+
+新型 TaqMan 探针采用 LNA 碱基或共轭 MGB 基团，大大提高了探针与靶序列结合的热稳定性（Letertre et al. 2003）。LNA 碱基是一种核苷酸类似物，其化学结构限制了呋喃核糖环的灵活性，使其构象刚性地锁定为理想的 Watson-Crick 双螺旋结构。根据序列信息，插入一个 LNA 碱基可以使 $T_{\mathrm{m}}$ 值增加 $3 \sim 6^{\circ} \mathrm{C}$ 。MGB 基团由一个能结合到 DNA 小沟上的三肽分子组成（例如，双氢环吡咯并吲哚三肽 DPI3），其能与互补的单链 DNA 高特异和高强度结合。探针-靶序列二聚体间的稳定性增加具有两个好处。首先，增强了探针的杂交特异性（Kutyavin et al. 2000），同时减少非特异性的背景荧光，提高了信噪比，从而提高整个实验的灵敏度。其次，它允许使用更短的探针序列，可以克服许多与探针设计有关的限制。例如，为满足设计需求，AT 序列丰富的探针的长度通常是 $30 \sim 40$ 个核苷酸，而单个 LNA 碱基或 MGB 基团的取代使高特异、更短探针的优化设计变得非常容易，即使长度为 $13 \sim 20$ 个核苷酸也能很好的工作。
+
+TaqMan探针中加入一个LNA碱基或MGB基团的情况最常用于SNP基因分型(Johnson et al. 2004)。单碱基错配的存在对LNA/MGB探针和靶核酸间二聚物形成的破坏性影响远远大于其对传统DNA探针的影响（见信息栏“SNP基因分型”）。掺入LNA碱基和MGB基团也使调整引物和探针的 $T_{\mathrm{m}}$ 值成为可能，这对于要求所有引物、所有探针的复性温度必须一致的多重PCR试验来说是十分重要的（见信息栏“多重PCR”）。需要注意的是，所谓的TaqMan MGB探针除了MGB基团外，还包含一个无荧光的猝灭剂，它可实现报告染料的荧光的更准确测定。
+
+## 引物和探针的保存
+
+引物和探针储备溶液应使用无 DNA 酶/RNA 酶的水进行制备和分装，以避免反复冻融和整批次污染。引物需储存在-20℃，工作浓度为 10～100μmol/L。无论探针是干粉，还是
+
+2～10μmol/L 的溶液，都需要避光保存在-70℃。储备溶液长期保存时间是可变的，从 6 个月到数年不等。
+
+## 引物和探针浓度的优化
+
+实时荧光PCR试验最佳引物浓度需要凭借经验确定。由扩增图谱分析发现，能够得到最佳灵敏度和重复性的引物组合是那些能产生最低 $C_{\mathrm{T}}$ 值（荧光信号超过阈值时的循环数）（见“实时荧光PCR实验数据的处理”部分）和最高 $\Delta R_{n}$ （PCR产生的荧光信号强度的指标，是敏感度的度量指标）的引物组合。为了便于筛选出符合这个标准的引物浓度，需要设计引物优化矩阵，在该矩阵中正向和反向引物的浓度都是独立变量且需组合进行试验(方案1）。
+
+对于使用 TaqMan 探针的试验，制备引物优化矩阵时需保持探针浓度不变。由于 TaqMan 探针在反应过程中被破坏，保持足量的探针是十分重要的。由于这个原因，一个标准的探针浓度即 250nmol/L（反应体系中的终浓度）被推荐用于多数实时荧光 PCR 引物优化试验，这个浓度可避免探针不足并确保最高的灵敏度。但如果不需要高灵敏度（如靶序列足量时），少量探针就足够了，这样的好处是能减少检测成本。探针优化试验可以使用一个恒定的最佳引物浓度来测试几种探针浓度，通常在 50～250nmol/L 范围内对探针进行优化。同样，分析得到的扩增图谱可确定能产生最低  $C_{T}$  值和最高  $\Delta R_{n}$  的探针浓度。实际上，需要注意的是，即使设计的实时荧光 PCR 采用的是 TaqMan 探针法，也可用 SYBR Green I 法对引物浓度进行优化，这样可检测到那些会降低扩增效率和特异性的引物二聚体，以及其他非特异性扩增产物。
+
+虽然我们推荐进行引物浓度优化试验，以确保获得最大的特异性，但试验建立和分析有些繁琐且耗时。相反，在实践中，大多数研究者仅仅从一个标准的引物浓度开始优化——一般 TaqMan 探针法为 500nmol/L（探针浓度为 250nmol/L），SYBR Green I 法为 200～400nmol/L（反应体系中的终浓度）。引物浓度根据标准曲线实验进行测定和评估（方案 2）。如果测试的标准品范围是线性的，且效率大于 85%，就不需要进行进一步的引物探针浓度优化了。
+
+进行优化实验时，模板序列可以使用人工合成的扩增子（最适用于可靠的定量）、线性质粒、PCR产物，或包含有目标PCR片段的cDNA。引物/探针优化实验不需要知道模板自身的浓度，但应该选择 $C_{\mathrm{T}}$ 值在 $20\sim 30$ 之间的模板浓度。这个模板浓度是凭经验确定的。
+
+尽管大多数厂家建议使用 $50\mu \mathrm{L}$ 反应体系，本章方案中使用的PCR体积为 $20\mu \mathrm{L}$ 。但是，如果PCR靶标模板的量不是很充足（如每个样本中只有 $1\sim 10$ 拷贝），采用大体积则可以得到更好的重复性。
+
+![](images/page_34_image_9.jpg)
+
+## 标准曲线的构建
+
+制定标准曲线是每个实时荧光 PCR 实验的重要组成部分。当设计试验和优化引物浓度时，标准曲线被用来测定实验的扩增效率、灵敏度、重复性和工作范围。随后，在数据分析时，标准曲线被用于进行绝对定量，或用于相对定量的标准曲线法中。在使用比较  $C_{T}$  值法时，为了表示靶序列和内参基因扩增效率是等效的，也需要使用标准曲线。
+
+构建标准曲线（方案2），需要制备一系列梯度稀释的参照模板，并用与待检样品相同的条件进行扩增。标准曲线最少需要3次重复（理想情况是5次或更多次），并且需要至少5个对数级的模板浓度。这种严谨度对于准确定量和扩增效率计算来说是需要的。此外，标准曲线的动力学范围上限和下限应该能超出待检样品预期最高和最低的 $C_{\mathrm{T}}$ 值范围。在绝对定量中，只有当未知拷贝数的样品落在这个稀释浓度范围内，才可进行定量。为了进行优化，重要的是确定实验在测试浓度范围内是有效的、灵敏的和可重复的。
+
+当构建定量标准曲线时，以 $C_{\mathrm{T}}$ 值对已知浓度的对数值作图得到的标准曲线是一条直线。如果建立的标准曲线仅用于测定实验的效率、灵敏度和重复性，就没有必要知道模板的浓度，可用 $C_{\mathrm{T}}$ 值对稀释倍数（可以是任意单位）的对数值进行作图获得标准曲线。观察图中不同浓度对应的 $C_{\mathrm{T}}$ 值可获取扩增效率、灵敏度和重复样品间的一致性（如重复性）等重要信息。
+
+## 斜率
+
+在以浓度的对数或稀释倍数的对数（$x$ 轴）对 $C_{\mathrm{T}}$ 值（$y$ 轴）作图获得的标准曲线中，扩增效率可以通过这条直线的斜率进行计算。大多数实时荧光PCR系统的自带软件都能够作出标准曲线，并计算扩增效率。如果没有这个功能，可用 $C_{\mathrm{T}}$ 值对核酸起始量的对数（或稀释倍数的对数）作图，并进行线性回归。运用下列公式计算这条线的斜率:
+
+$$
+E = 1 0 ^ {(- 1 / \text {slope})}
+$$
+
+如果效率为 $100\%$ ，每轮循环的产物量恰好翻倍，图中直线的斜率为-3.32（需要注意的是，一些仪器将 $C_{\mathrm{T}}$ 值作为 $x$ 轴，将浓度或稀释倍数的对数作为 $y$ 轴；在这种情况下，如果效率为 $100\%$ ，则直线的斜率为-0.301）。
+
+$$
+\begin{array}{l} \text {效率} = 1 0 ^ {(- 1 / \text {slope})} \\ = 1 0 ^ {(- 1 / - 3. 3 2)} \\ = 1 0 ^ {(0. 3 0 1 2)} \\ = 2. 0 0 \\ \end{array}
+$$
+
+将 $E$ 值转换成百分比，使用下面的公式:
+
+$$
+\mathrm{效率}
+$$
+
+## $R^2$ 值
+
+另一个计算 PCR 效率的关键参数是决定系数（或相关系数）—— $R^{2}$ ，这是一个衡量实验数据与回归线拟合度的方法（或换句话说，标准曲线的线性衡量标准）。如果所有数据点都完全落在这条线上， $R^{2}$  值等于 1。实际上， $R^{2}$  值大于 0.98 就被认为实验结果可信。
+
+请注意，虽然标准曲线法是计算扩增效率最常用的方法，但现在又开发了几种计算效率的方法，这些方法基于单个反应的动力学来计算扩增效率（见 Tichopad et al. 2003; Zhao and Fernald 2005）。这些替代方法无需建立标准曲线，节省了时间和金钱。
+
+## 灵敏度
+
+任何能够有效地扩增和检测一个拷贝的起始模板的测定实验已经达到了灵敏度的极限水平，不论其 $C_{\mathrm{T}}$ 的绝对值是多少。效率 $< 100\%$ 的实时荧光PCR的灵敏度较低。
+
+## 重复性
+
+一般情况下，实时荧光 PCR 检测的每个样品都应该进行一式三份的重复测试和分析。同一样本的副本产生相似定量值的程度被称为“重复性”。最常见的重复性检测法是标准偏差法（即方差的平方根）。
+
+![](images/page_35_image_18.jpg)
+
+## 实时荧光 PCR 反应运行
+
+在实时热循环仪（方案3）和标准PCR（见第7章）中，DNA模板扩增的必需步骤有所不同。如上所述，在实时荧光PCR中，引物探针浓度的优化及标准曲线的建立是必需的，考虑将采用的数据分析方法也是很重要的（见上文）。
+
+![](images/page_36_image_3.jpg)
+
+## 反转录实时荧光 PCR 反应运行
+
+实时荧光 RT-PCR[通常也被称为定量 RT-PCR（简称 qRT-PCR、为 RT-qPCR）]是目前可采用的最敏感的 RNA 检测和定量技术。事实上，实时荧光 RT-PCR 的灵敏度足以对单个细胞中的 RNA 进行定量检测（Ståhlberg and Bengtsson 2010）。近年来，实时荧光 RT-PCR 法已成为 mRNA 水平检测分析的最常用方法，如验证微阵列分析结果和分析药物处理前后基因表达变化。与 Northern 印迹、RNase 酶保护测定、原位杂交等其他 mRNA 分析技术相比，实时荧光 RT-PCR 技术的速度更快，且不需要使用有毒化学物质或放射性探针。实时荧光 RT-PCR 技术同样可用于细胞中 mRNA 绝对拷贝数的定量（Bustin 2000），以及病毒载量的检测和定量（例如，Le Guillou-Guillemette and Lunel-Fabiani 2009）。
+
+与常规 RT-PCR（参见第 7 章，方案 8）一样，实时定量 RT-PCR 包括两个步骤。第一步，RNA 利用依赖 RNA 的 DNA 聚合酶（反转录酶）反转录成与之互补的 DNA（cDNA）；第二步，cDNA 利用耐热 DNA 聚合酶进行扩增。实时 RT-PCR 法定量结果差异大，且重复性差，因此，评价实时荧光 RT-PCR 试验每一步的质量是十分关键的。样本采集和 RNA 纯化是每个实时荧光 RT-PCR 试验的起始步骤，模板的质量对实时荧光 RT-PCR 试验的可重复性起着极其重要的决定性作用。对于基因表达研究，反转录步骤必须使用高纯度的试剂，并且需要多孔重复试验，因为这一步可能引起模板复制的差异。尽管反转录步骤是高度可变的，但在最佳条件下运行时，试验的 PCR 扩增部分还是有高度重复性的。
+
+## 制备高质量 RNA
+
+## 纯度
+
+选择 RNA 提取方法时，一个重要的考虑因素是 RNA 模板制备中可能残留有抑制剂。培养基的存在、RNA 提取试剂的组分（如苯酚），或生物样本中共纯化出的组分都会导致实时荧光 PCR 的动力学范围及灵敏度的显著降低（Guy et al. 2003; Perch-Nielsen et al. 2003; Lefevre et al. 2004; Rådström et al. 2004; Suñén et al. 2004; Jiang et al. 2005）。最好的情况下，抑制剂也会导致不准确的定量结果；最坏的情况下，高度抑制甚至会造成假阴性结果。
+
+使用单相裂解试剂提取的 RNA 是实时荧光 PCR 的最佳模板（使用单相裂解试剂提取总 RNA 的步骤在第 6 章，方案 1～4），尽管单相裂解试剂提取的产量较高，但能抑制后期 PCR 的酚类化合物极有可能被同时纯化，因此有必要小心去除 RNA 样本中的所有痕量酚类物质。
+
+另外一个麻烦的污染物是混在 RNA 中的基因组 DNA，它可能会与靶 mRNA 共扩增，从而干扰准确定量。如果靶 mRNA 相对富余（每个细胞含有成百上千个拷贝），则基因组 DNA 的含量相对于靶 mRNA 就显得微不足道。相反，若 mRNA 的相对含量较低（每个细胞低于 100 个拷贝），则基因组 DNA 的扩增会导致 mRNA 水平的错误高估。为避免 RT-PCR 过程中的基因组 DNA 扩增，应选择一段包含一个或更多内含子的扩增子，设计引物时应跨过内含子，从而避免基因组 DNA 的共扩增（见图 9-5）。如果靶基因不含任何内含子或 RT-PCR 中的引物只在单一外显子区域或短内含子区域，则需用无 RNA 酶的扩增级的 DNA 酶进行处理以去除里面所混的基因组 DNA（见第 6 章，方案 8）。通过运行无反转录酶的对照试验（通常称为 “no-RT” 对照），很容易就能检测到基因组 DNA 的扩增；若发生基因组 DNA 扩增，在 no-RT 对照中可观察到信号。
+
+## 完整性
+
+只要靶 mRNA 的表达量用内参进行归一化且扩增子较短(<250bp)，则中度降解的 RNA 样本也可进行可靠的分析和定量（Fleige and Pfaffl 2006），为评价总 RNA 的完整性，可取一份提纯 RNA 样品在 EB 染色的变性琼脂糖凝胶上进行电泳（见第 6 章的末尾，方案 10，检测所制备 RNA 的质量）。另外，RNA 样本也可用安捷伦 2100 生物分析仪（Agilent Technologies 公司）进行分析，它能同时分析一个样本中 RNA 的浓度、完整性及纯度。如果没有对 mRNA 的完整性进行测定的可靠方法，可分析指定样本中的特定 mRNA 序列来反映总 mRNA 的完整性（Nolan et al. 2006）。在这类分析方法中，一般测定一些广泛表达的 mRNA（如 GAPDH）的完整性。可通过设计多重 PCR 实验来测定，定量检测 GAPDH 序列上三个不同的目标扩增子的水平。这三种扩增子的比例可反映 RT-PCR 是否可在全长的转录物上成功运行。但因为不同的 mRNA 降解速率不同，所以有必要用相同的方法检测多个目的片段。
+
+## 选择反转录反应的引发方法
+
+在荧光定量 RT-PCR 实验中，RNA 转换成 cDNA 模板的过程对检测结果的可变性和缺乏重复性具有重要的潜在贡献。如果 mRNA 丰度低，则由模板丰度决定的 RNA-cDNA 的转化效率也会很低（Karrer et al. 1995）。而且，每种不同的合成 cDNA 的引发方法——基因特异引物法、oligo（dT）引物法、随机引物法，或者 oligo（dT）和随机引物的组合法，在特异性和 cDNA 产量方面也存在显著差异（见第 7 章，方案 8）。因此，只有在相同引发策略和反应条件下，实时定量 PCR 的结果才具有可比性（Ståhlberg et al. 2004）。
+
+目前最常用的实时荧光 RT-PCR 的引发方法是 oligo（dT）引物法，它比随机引物法的特异性更好，此方法是从有限的 RNA 样本中同时扩增几个目标 mRNA 的最佳方法。首先用 oligo（dT）引物反转录产生一个 cDNA 池，然后将 cDNA 池分成几份，以便对每个靶基因各自进行 PCR 扩增。由于扩增长度的限制，当所有目标扩增子均位于 mRNA 的 3'poly(A)末端附近时，oligo（dT）是个很好的选择。但是，如果存在二级结构，或者靶 mRNA 中包含一个很长的 3'端非翻译区，反转录酶可能无法达到上游引物结合位点（Sanderson et al. 2004）。另外，因为 oligo（dT）引物法需要 oligo（dT）与 3'poly(A)尾复性，所以它不适用于对可能已降解的 RNA 进行有效的反转录。
+
+下一个要介绍的最常用的实时荧光 RT-PCR 实验引发方法是随机引物法（Bustin et al. 2005）。由于随机引物（六聚体、八聚体、10 聚体、11 聚体或 12 聚体）包括所有可能的碱基组合，因此，针对每一个原始 mRNA 模板，它们会产生不止一种 cDNA 靶标。此外，从总 RNA 反转录得到的 cDNA 大多数来自核糖体 RNA（rRNA）。因此，如果感兴趣的目的 mRNA 的水平较低，可能不能成比例地被引发，则后续的扩增不能进行定量。事实上，现已证明，与特异性引物相比，使用随机六聚体可能导致 mRNA 拷贝数被高估 19 倍之多（Zhang and Byrne 1999）。随机引物法的另一个缺点是，与特异性引物引发的反应相比，随机引物引发的反应线性范围更窄（Bustin and Nolan 2004）。然而，如果 PCR 产物距离 3'端几千个碱基或 RNA 不是聚腺苷化的，随机引物将比 oligo（dT）给出更好的检测结果。如果 PCR 产物的位置或 RNA 的 polyA 水平发生变化，把 oligo（dT）和随机引物混合将会得到更好的结果。
+
+使用最少的实时荧光PCR引发方法为基因特异性引物法。虽然它可能为定量实验带来最大的灵敏度（Lekanne Deprez et al. 2002），但这种方法需要为每个待分析的靶RNA设计单独的引物，而在后来需要的时候，不可能回过头来再对其他靶基因进行相同的制备和扩增。虽然这种方法能在单一的反应管里扩增一个以上的靶基因（多重RT-PCR）（Wittwer et al. 2001)，但需要仔细的实验设计和优化，以获得准确的定量数据。基因特异性引物的一个优点是，所有的反转录产物将编码感兴趣的基因，这可能会实现极低丰度的 mRNA 的定量，而这是非特异性反转录引物无法实现的。
+
+## 酶的选择
+
+进行 RT-PCR 实验，可使用既有反转录活性又有 DNA 聚合酶活性的单一酶种，也可分别使用反转录酶和 DNA 聚合酶两种酶。
+
+## 反转录和 PCR 使用单一酶种
+
+Tth 聚合酶同时具有 DNA 聚合酶活性和反转录酶活性，可用于实时荧光 PCR。该方法中，所有的试剂在反应开始时就被加入到一个管中（Cusi et al. 1994；Juhasz et al. 1996），从而减少操作时间和潜在的污染。但是它不可能将两个反应分开来优化，并且，Tth 聚合酶的反转录活性较低，所以此法灵敏度不高（Easton et al. 1994）。此外，这种方法只能使用基因特异性引物，而且经常会产生大量引物二聚体，这可能会掩盖定量的真实结果（Vandesompele et al. 2002）。由于这些原因，单一酶种的方法很少使用。
+
+## 反转录和 PCR 使用不同的酶
+
+两酶法具有更大的灵活性、敏感性和优化潜力，与单酶法相比，通常会得到优先选择。在两酶法中，反应可在单管或两管中进行。
+
+在一步法反应（单管）中，反转录和 PCR 反应在同一体系内进行。在高浓度 dNTP 和特异下游引物存在时，反转录酶合成 cDNA，随后在同一管里加入耐热 DNA 聚合酶、PCR 缓冲液（不含  $Mg^{2+}$ ）和基因特异引物，并进行 PCR 反应。一步法 RT-PCR 简化了高通量应用，并有助于减少交叉污染，因为在 cDNA 合成及扩增过程中反应管始终保持封闭状态。这种方法有两个主要的缺点:首先，病毒反转录酶的模板开关活性能在反转录过程中形成副产物（Mader et al. 2001）；其次，反转录酶失活后也能抑制 PCR 扩增，导致扩增效率和靶基因的定量值被高估。
+
+在两步法 PCR 反应中（方案 4），反转录和 PCR 在两个反应管内进行，在第一管中反转录酶与 oligo（dT）、随机引物或特异下游引物一起以最佳条件合成 cDNA。然后部分反转录产物转到装有 DNA 聚合酶、缓冲液和 PCR 引物的第二管中，并在最佳反应条件下进行 PCR 反应。这种方法适应性最强，使得 cDNA 合成引物的选择更为灵活，并能实现从单个 RNA 样品中检测多种基因，因此也最常用。
+
+## 选择内参基因
+
+使用内参基因来归一化实时 RT-PCR 实验是一个简单而常用的方法，是目前首选的方法（Huggett et al. 2005）。作为一个合适的归一化因子，所有待检样品中的内参基因的表达量必须是恒定不变的，它的表达不能因研究过程中的各种处理而发生改变。从历史上看，最常用的内参基因是那些在所有细胞类型中表达量都较高的基因，如β-肌动蛋白（β-actin）、3-磷酸甘油醛脱氢酶（GAPDH）、次黄嘌呤-鸟嘌呤磷酸核糖转移酶（HPRT）和 18S 核糖体 RNA。但是，有实验表明在某些细胞类型或某种条件下，这些经典的内参基因的表达水平也会发生变化。例如，巨细胞病毒感染后 18S rRNA 的水平增加（Tanaka et al. 1975）。许多人类组织中的 HPRT 基因表达始终处于较低水平，但在中枢神经系统的某些部分的表达水平很高（Stout et al. 1985）；β-肌动蛋白 mRNA 在不同白血病肿瘤样本中存在差异表达（Blomberg et al. 1987）；GAPDH 在某些侵入性癌症里表达明显升高（Goidin et al. 2001）。因此，在任何实验中，验证待分析样品中的内参基因的表达是否恒定都是非常重要的，这可以通过实时 RT-PCR 实验进行验证，在该实验中，内参基因的表达量用样品中总 RNA 的量来进行归一化。如果样品间  $C_{T}$  值的差异较小，且待测样本的差异远大于内参基因的差异，则内参基因仍然可以使用（Huggett et al. 2005）。
+
+在某些情况，可能有必要使用多个内参基因，而不是一个基因，以获得准确的定量和归一化（Vandesompele et al. 2002）。使用多基因的归一化是一个能得到准确结果的强大方法，也是精密测量的更可取方法。但是，这种方法需要大量的样品，增加了试验的成本，因此，这种方法不推荐使用。现有多种方案可进行多内参基因的评价，但必须在实验条件下认真分析内参基因的表达，并测定和报告其差异性。
+
+- 免费软件 geNorm 通过计算候选 cDNA 的几何平均数来鉴定最合适的内参基因（Vandesompele et al. 2002）。
+- BestKeeper 与 geNorm 类似，选择几何平均数变异最小的基因。与 geNorm 不同的是，BestKeeper 使用原始数据（Pfaffl et al. 2004）。
+- NormFinder 不仅测量差异, 而且根据试验条件下对表达的影响大小来对潜在的内参基因进行分组 (Andersen 2004)。
+
+在设计实时荧光 RT-PCR 实验时，重要的是要考虑采用的定量方法（数据分析）类型（见本章导言），因为这个选择将影响实验设计。首先，当使用绝对定量或相对定量的标准曲线法时，系列稀释的标准品必须与测试样品平行运行（见方案 1）。当为多个反应板制备标准曲线时，必须使用同一储存模板，使不同反应板间的相对量具有可比性。最后，需要牢记的是，通常不能使用 DNA 作为 RNA 绝对定量的标准品，因为它不能监控反转录过程的效率。
+
+![](images/page_39_image_9.jpg)
+
+## MIQE 指南
+
+虽然实时荧光 PCR 的概念和实践的简单性使其成为最常见的核酸定量方法，但是在如何能最好地实施荧光 PCR、解释其实验结果等方面还未达成共识。因此，实时荧光 PCR 的数据质量是可变的，导致难以对结果进行评价，甚至实验结果难以重现。与此问题共存的是发表的文献中没有提供足够的实验细节，这就进一步妨碍了对数据的关键评价。为了应对这些问题，Bustin 开发了一套名为 MIQE（The Minimum Information for Publication of Quantitative Real Time PCR Experiments，定量 PCR 实验数据发表所需最低限度信息）的指南，作为发表论文中全面描述实时荧光 PCR 实验的标准（Bustin et al. 2009）。这项指南的目的是为了“给作者、读者及编辑提供关于 qPCR 实验中必须提供的最低信息的详细说明，以确保实验的相关性、精确性、正确的解释及重复性。”这些指南的目的是帮助提高实验室之间的一致性和实验透明度。当前需努力使各期刊采纳 MIQE 标准，这将强制要求发表文章时附一份完整的清单，如同发表微阵列数据的 MIAME 标准（Minimum Information about a Microarray Experiment，关于微阵列实验的最低限度信息）。
+
+![](images/page_39_image_12.jpg)
+
+## 实时荧光 PCR 实验方案
+
+本章的余下部分将介绍两种最常用化学法（SYBR Green I 和 TaqMan 探针）的实时荧光 PCR 和 RT-PCR 实验方案。至于其他化学法，请参照上文关于引物/探针设计和试验部分提及的文献。通常，实时荧光 PCR 的基本做法与传统 PCR 类似（见第 7 章），同样需要制备纯化的模板、设计引物和优化反应体系。实验流程图如图 9-6 所示:首先优化实时荧光 PCR 的引物和探针浓度（方案 1）；然后建立标准曲线（方案 2）；再进行实时荧光 PCR（方案3）或实时RT-PCR（方案4）实验；最后分析实时荧光PCR或RT-PCR实验的原始数据（方案5）。
+
+![](images/page_40_image_3.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  subgraph Design ["实验设计"]
+  A["选择实时荧光RT-PCR的化学选择数据分析方法"] --> B["方案1"]
+  C["选择感兴趣基因的靶序列设计引物和探针"] --> D["优化引物和探针浓度"]
+  E["测定实验效率、灵敏度和重复性构建标准曲线"] --> F["方案2"]
+  end
+
+  subgraph Optimization ["优化"]
+  D --> G["方案1"]
+  F --> H["实时荧光PCR实验 方案3"]
+  H --> I["实时荧光PCR实验—选择采用的引物、酶和反应类型（一步法或两步法）"]
+  I --> J["方案4"]
+  end
+
+  subgraph Experiment ["实验运行"]
+    K["数据分析方法的选择：—绝对定量：制备已知浓度的标准品；与测试样品进行平行试验。—基于标准曲线的相对定量：制备靶基因和参考基因的标准曲线；待测样品和校准样品进行平行试验。"] -.-> L["统计确认每个实验组的样品数"]
+  end
+
+  subgraph Analysis ["数据分析和归一化"]
+  M["观察扩增图谱：设定基线和阈值判定试验的效率和灵敏性"] --> N["方案5"]
+    O["采用一种定量方法，数据归一化"] -.-> M
+  end
+```
+</details>
+
+图 9-6 实时荧光 PCR 和 RT-PCR 实验流程图。
+
+## 内部被动参考品染料
+
+对于某些实时 PCR 仪器，被动参考染料（因其不参与 PCR 反应而得名）被加入到所有样品中，用以归一化可能存在于样品之间的非 PCR 相关荧光信号的差异，这些差异的产生可由移液误差、样品挥发或仪器的局限性带来。常见的被动参考染料是 ROX（5-羧基-X-碱性蕊香红），它应用于 ABI 公司和 Stratagene 公司的实时 PCR 仪上。
+
+当使用被动参考染料时,仪器将会以荧光值对  $\Delta R_{n}$  值进行绘图,它表示在给定的 PCR 条件下产生的荧光信号的强度:
+
+$$
+\Delta R _ {n} = (R _ {n} ^ {+}) - (R _ {n} ^ {-})
+$$
+
+式中， $R_{n}$  表示报告染料发射的荧光强度与被动参考染料发射荧光强度的比值； $R_{n}^{+}$ 表示含有所有组分（包括模板）的反应的  $R_{n}$  值。 $R_{n}^{-}$ 表示未反应样品的  $R_{n}$  值，此值可来自无模板对照，更为常见的是来自 PCR 实验中的早期循环，此时尚不能检测到显著的荧光增强。
+
+## 参考文献
+
+- Ahmad AI, Ghasemi JB. 2007. New unsymmetrical cyanine dyes for real-time thermal cycling. Anal Bioanal Chem 389: 983–988.
+- Andersen CL, Jensen JL, Orntoft TF. 2004. Normalization of real-time quantitative reverse transcription-PCR data: A model-based variance estimation approach to identify genes suited for normalization, applied to bladder and colon cancer data sets. Cancer Res 64: 5245–5250.
+- Benes V, Castoldi M. 2010. Expression profiling of microRNA using real-time quantitative PCR, how to use it and what is available. Methods 50:244–249.
+- Bengtsson M, Karlsson HJ, Westman G, Kubista M. 2003. A new minor groove binding asymmetric cyanine reporter dye for real-time PCR. Nucleic Acids Res 31: e45. doi: 10.1093/nar/gng045.
+- Blomberg J, Andersson M, Fäldt R. 1987. Differential pattern of oncogene and β-actin expression in leukaemic cells from AML patients. Br J Haematol 65: 83–86.
+- Bustin SA. 2000. Absolute quantification of mRNA using real-time reverse transcription polymerase chain reaction assays. J Mol Endocrinol 25:169–193.
+- Bustin SA, Nolan T. 2004. Pitfalls of quantitative real-time reverse-transcription polymerase chain reaction. J Biomol Tech 15: 155–166.
+- Bustin SA, Benes V, Nolan T, Pfaffl MW. 2005. Quantitative real-time RT-PCR—A perspective. J Mol Endocrinol 34: 597–601.
+- Bustin SA, Benes V, Garson JA, Hellemans J, Huggett J, Kubista M, Mueller R, Nolan T, Pfaffl MW, Shipley GL, et al. 2009. The MIQE guidelines: Minimum information for publication of quantitative real-time PCR experiments. Clin Chem 55: 611–622.
+- Cradic KW, Wells JE, Allen L, Kruckeberg KE, Singh RJ, Grebe SK. 2004. Substitution of 3'-phosphate cap with a carbon-based blocker reduces the possibility of fluorescence resonance energy transfer probe failure in real-time PCR assays. Clin Chem 50: 1080–1082.
+- Crockett AO, Wittwer CT. 2001. Fluorescein-labeled oligonucleotides for real-time PCR: Using the inherent quenching of deoxyguanosine nucleotides. Anal Biochem 290: 89–97.
+- Cusi MG, Valassina M, Valensin PE. 1994. Comparison of M-MLV reverse transcriptase and Tth polymerase activity in RT-PCR of samples with low virus burden. BioTechniques 17: 1034–1036.
+- D'Haene B, Vandesompele J, Hellemans J. 2010. Accurate and objective copy number profiling using real-time quantitative PCR. Methods 50: 262–270.
+- Easton LA, Vilcek S, Nettleton PF. 1994. Evaluation of a 'one tube' reverse transcription-polymerase chain reaction for the detection of ruminant pestiviruses. J Virol Methods 50: 343–348.
+- Eriksson M, Westerlund F, Mehmedovic M, Lincoln P, Westman G, Larsson A, Akerman B. 2006. Comparing mono- and divalent DNA groove binding cyanine dyes—Binding geometries, dissociation rates, and fluorescence properties. Biophys Chem 122: 195–205.
+- Fleige S, Pfaffl MW. 2006. RNA integrity and the effect on the real-time qRT-PCR performance. Mol Aspects Med 27: 126–139.
+- Goidin D, Mamessier A, Staquet MJ, Schmitt D, Berthier-Vergnes O. 2001. Ribosomal 18S RNA prevails over glyceraldehyde-3-phosphate dehydrogenase and $\beta$-actin genes as internal standard for quantitative comparison of mRNA levels in invasive and noninvasive human melanoma cell subpopulations. Anal Biochem 295: 17–21.
+- Gupta V, Cobb RR, Brown L, Fleming L, Mukherjee N. 2008. A quantitative polymerase chain reaction assay for detecting and identifying fungal contamination in human allograft tissue. Cell Tissue Bank 9: 75–82.
+- Guy RA, Payment P, Krull UJ, Horgen PA. 2003. Real-time PCR for quantification of Giardia and Cryptosporidium in environmental water samples and sewage. Appl Environ Microbiol 69: 5178–5185.
+- Heid CA, Stevens J, Livak KJ, Williams PM. 1996. Real time quantitative PCR. Genome Res 6: 986–994.
+- Huggett J, Dheda K, Bustin S, Zumla A. 2005. Real-time RT-PCR normalisation; strategies and considerations. Genes Immun 6: 279–284.
+- Jiang J, Alderisio KA, Singh A, Xiao L. 2005. Development of procedures for direct extraction of Cryptosporidium DNA from water concentrates and for relief of PCR inhibitors. Appl Environ Microbiol 71: 1135–1141.
+- Johnson MP, Haupt LM, Griffiths LR. 2004. Locked nucleic acid (LNA) single nucleotide polymorphism (SNP) genotype analysis and
+- validation using real-time PCR. Nucleic Acids Res 32: e55. doi:10.1093/nar/gnh046.
+- Juhasz A, Ravi S, O'Connell CD. 1996. Sensitivity of tyrosinase mRNA detection by RT-PCR: rTth DNA polymerase vs. MMLV-RT and AmpliTaq polymerase. BioTechniques 20: 592–600.
+- Karlsson HJ, Eriksson M, Perzon E, Akerman B, Lincoln P, Westman G. 2003a. Groove-binding unsymmetrical cyanine dyes for staining of DNA: Syntheses and characterization of the DNA-binding. Nucleic Acids Res 31: 6227–6234.
+- Karlsson HJ, Lincoln P, Westman G. 2003b. Synthesis and DNA binding studies of a new asymmetric cyanine dye binding in the minor groove of [poly(dA-dT)] $_{2}$ . Bioorg Med Chem 11: 1035–1040.
+- Karrer EK, Lincoln JE, Hogenhout S, Bennett AB, Bostock RM, Martineau B, Lucas WJ, Gilchrist DG, Alexander D. 1995. In situ isolation of mRNA from individual plant cells: Creation of cell-specific cDNA libraries. Proc Natl Acad Sci 92: 3814–3818.
+- Klein D. 2002. Quantification using real-time PCR technology: Applications and limitations. Trends Mol Med 8: 257–260.
+- Kutyavin IV, Afonina IA, Mills A, Gorn VV, Lukhtanov EA, Belousov ES, Singer MJ, Walburger DK, Lokhov SG, Gall AA, et al. 2000. 3'-Minor groove binder-DNA probes increase sequence specificity at PCR extension temperatures. Nucleic Acids Res 28: 655–661.
+- Lefever S, Vandesompele J, Speleman F, Pattyn F. 2009. RTPrimerDB: The portal for real-time PCR primers and probes. Nucleic Acids Res 37:D942–D945.
+- Lefevre J, Hankins C, Pourreaux K, Voyer H, Coutlée F, Canadian Women's HIV Study Group. 2004. Prevalence of selective inhibition of HPV-16 DNA amplification in cervicovaginal lavages. J Med Virol 72: 132–137.
+- Le Guillou-Guillemette H, Lunel-Fabiani F. 2009. Detection and quantification of serum or plasma HCV RNA: Mini review of commercially available assays. Methods Mol Biol 510: 3–14.
+- Lekanne Deprez RH, Fijnvandraat AC, Ruijter JM, Moorman AF. 2002. Sensitivity and accuracy of quantitative real-time polymerase chain reaction using SYBR green I depends on cDNA synthesis conditions. Anal Biochem 307: 63–69.
+- Letertre C, Perelle S, Dilasser F, Arar K, Fach P. 2003. Evaluation of the performance of LNA and MGB probes in 5'-nuclease PCR assays. Mol Cell Probes 17: 307–311.
+- Mackay J, Landt O. 2007. Real-time PCR fluorescent chemistries. Methods Mol Biol 353: 237–261.
+- Mader RM, Schmidt WM, Sedivy R, Rizovski B, Braun J, Kalipciyan M, Exner M, Steger GG, Mueller MW. 2001. Reverse transcriptase template switching during reverse transcriptase-polymerase chain reaction: Artificial generation of deletions in ribonucleotide reductase mRNA. J Lab Clin Med 137: 422–428.
+- Marras SA, Kramer FR, Tyagi S. 2002. Efficiencies of fluorescence resonance energy transfer and contact-mediated quenching in oligonucleotide probes. Nucleic Acids Res 30: e122. doi: 10.1093/nar/gnf121.
+- Martinelli G, Iacobucci I, Soverini S, Cilloni D, Saglio G, Pane F, Baccarani M. 2006. Monitoring minimal residual disease and controlling drug resistance in chronic myeloid leukaemia patients in treatment with imatinib as a guide to clinical management. Hematol Oncol 24: 196–204.
+- Monis PT, Giglio S, Saint CP. 2005. Comparison of SYTO9 and SYBR Green I for real-time polymerase chain reaction and investigation of the effect of dye concentration on amplification and DNA melting curve analysis. Anal Biochem 340: 24–34.
+- Newby DT, Hadfield TL, Roberto FF. 2003. Real-time PCR detection of Brucella abortus: A comparative study of SYBR green I, 5'-exonuclease, and hybridization probe assays. Appl Environ Microbiol 69: 4753–4759.
+- Niesters HG. 2001. Quantitation of viral load using real-time amplification techniques. Methods 25: 419–429.
+- Nolan T, Hands RE, Bustin SA. 2006. Quantification of mRNA using real-time RT-PCR. Nat Protoc 1: 1559–1582.
+- Pattyn F, Speleman F, De Paepe A, Vandesompele J. 2003. RTPrimerDB: The real-time PCR primer and probe database. Nucleic Acids Res 31:122–123.
+- Pattyn F, Robbrecht P, De Paepe A, Speleman F, Vandesompele J. 2006. RTPrimerDB: The real-time PCR primer and probe database, major update 2006. Nucleic Acids Res 34: D684–D688.
+- Perch-Nielsen IR, Bang DD, Poulsen CR, El-Ali J, Wolff A. 2003. Removal of PCR inhibitors using dielectrophoresis as a selective filter in a microsystem. Lab Chip 3: 212–216.
+- Pfaffl MW, Tichopad A, Prgomet C, Neuvians TP. 2004. Determination of stable housekeeping genes, differentially regulated target genes and sample integrity: BestKeeper—Excel-based tool using pair-wise correlations. Biotechnol Lett 26: 509–515.
+- Piqueur MA, Verstrepen WA, Bruynseels P, Mertens AH. 2009. Improvement of a real-time RT-PCR assay for the detection of enterovirus RNA. Virol J 6: 95. doi: 10.1186/1743-422X-6-95.
+- Rådström P, Knutsson R, Wolffs P, Lövenklev M, Löfström C. 2004. Pre-PCR processing: Strategies to generate PCR-compatible samples. Mol Biotechnol 26: 133–146.
+- Sanderson IR, Bustin SA, Dziennis S, Paraszczuk J, Stamm DS. 2004. Age and diet act through distinct isoforms of the class II transactivator gene in mouse intestinal epithelium. Gastroenterology 127:203–212.
+- Schmittgen TD, Zakrajsek BA, Mills AG, Gorn V, Singer MJ, Reed MW. 2000. Quantitative reverse transcription-polymerase chain reaction to study mRNA decay: Comparison of endpoint and real-time methods. Anal Biochem 285: 194–204.
+- Spandidos A, Wang X, Wang H, Dragnev S, Thurber T, Seed B. 2008. A comprehensive collection of experimentally validated primers for polymerase chain reaction quantitation of murine transcript abundance. BMC Genomics 9: p633. doi: 10.1186/1471-2164-9-633.
+- Stahlberg A, Bengtsson M. 2010. Single-cell gene expression profiling using reverse transcription quantitative real-time PCR. Methods 50: 282–288.
+- Ståhlberg A, Håkansson J, Xian X, Semb H, Kubista M. 2004. Properties of the reverse transcription reaction in mRNA quantification. Clin Chem 50: 509–515.
+- Stout JT, Chen HY, Brennand J, Caskey CT, Brinster RL. 1985. Expression of human HPRT in the central nervous system of transgenic mice. Nature 317: 250–252.
+- Suñén E, Casas N, Moreno B, Zigorraga C. 2004. Comparison of two methods for the detection of hepatitis A virus in clam samples (Tapes
+- spp.) by reverse transcription-nested PCR. Int J Food Microbiol 91:147–154.
+- Suslov O, Steindler DA. 2005. PCR inhibition by reverse transcriptase leads to an overestimation of amplification efficiency. Nucleic Acids Res 33:e181. doi: 10.1093/nar/gni176.
+- Tanaka S, Furukawa T, Plotkin SA. 1975. Human cytomegalovirus stimulates host cell RNA synthesis. J Virol 15: 297–304.
+- Taneyhill LA, Adams MS. 2008. Investigating regulatory factors and their DNA binding affinities through real time quantitative PCR (RT-QPCR) and chromatin immunoprecipitation (ChIP) assays. Methods Cell Biol 87: 367–389.
+- Tichopad A, Dilger M, Schwarz G, Pfaffl MW. 2003. Standardized determination of real-time PCR efficiency from a single reaction set-up. Nucleic Acids Res 31: pe122. doi: 10.1093/nar/gng122.
+- Tyagi S, Kramer FR. 1996. Molecular beacons: Probes that fluoresce upon hybridization. Nat Biotechnol 14: 303–308.
+- Vandesompele J, De Preter K, Pattyn F, Poppe B, Van Roy N, De Paepe A, Speleman F. 2002. Accurate normalization of real-time quantitative RT-PCR data by geometric averaging of multiple internal control genes. Genome Biol 3: presearch0034–research0034.11.
+- Wang X, Seed B. 2003. A PCR primer bank for quantitative gene expression analysis. Nucleic Acids Res 31: e154. doi: 10.1093/nar/gng154.
+- Whitcombe D, Theaker J, Guy SP, Brown T, Little S. 1999. Detection of PCR products using self-probing amplicons and fluorescence. Nat Biotechnol 17: 804–807.
+- Wittwer CT, Herrmann MG, Moss AA, Rasmussen RP. 1997. Continuous fluorescence monitoring of rapid cycle DNA amplification. BioTechniques 22: 130–131, 134–138.
+- Wittwer CT, Herrmann MG, Gundry CN, Elenitoba-Johnson KS. 2001. Real-time multiplex PCR assays. Methods 25: 430–442.
+- Wittwer CT, Reed GH, Gundry CN, Vandersteen JG, Pryor RJ. 2003. High-resolution genotyping by amplicon melting analysis using LCGreen. Clin Chem 49: 853–860.
+- Zhang J, Byrne CD. 1999. Differential priming of RNA templates during cDNA synthesis markedly affects both accuracy and reproducibility of quantitative competitive reverse-transcriptase PCR. Biochem J 337:231–241.
+- Zhao S, Fernald RD. 2005. Comprehensive algorithm for quantitative real-time polymerase chain reaction. J Comput Biol 12: 1047–1064.
+
+## 网络资源
+
+Biosearch Technologies http://www.biosearchtech.com/products/probe\_design.asp
+
+BLASTn searching http://blast.ncbi.nlm.nih.gov/Blast.cgi
+
+Premier Biosoft International http://www.premierbiosoft.com
+
+PrimerBank http://pga.mgh.harvard.edu/primerbank/index.html
+
+Primer3Plus http://www.bioinformatics.nl/cgi-bin/primer3plus/primer3plus.cgi
+
+Real Time PCR Primer Sets http://www.realtimeprimers.org/
+
+RTPrimerDB http://medgen.ugent.be/rtprimerdb/
+
+## 方案 1 实时 PCR 反应用引物和探针浓度的优化
+
+设计和选定引物、探针后（见导言部分），有必要优化 PCR 体系中引物和探针的使用浓度。设计一组 PCR 实验，在这些实验中，上、下游引物浓度可以单独改变。通过扩增曲线进行比较分析。通过制作标准曲线（见方案 2）可以确定实验的扩增效率、灵敏度和重复性。若用 SYBR Green I 代替探针，还需要分析熔解曲线。
+
+![](images/page_42_image_40.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案专用试剂的配方以&lt;R&gt;表示，在本方案末尾提供。附录1给出了常用储备溶液、缓冲液和试剂的配方，标记为&lt;A&gt;。使用时稀释储备溶液到合适浓度。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+上游和下游引物（10μmol/L）
+
+无 RNA 酶的水
+
+探针（假设用 TaqMan 探针）(10μmol/L)
+
+用于 SYBR Green I 或 TaqMan 的实时荧光 PCR 预混液 &lt;R&gt;
+
+预制的实时荧光 PCR 预混液包含除模板和引物以外的所有 PCR 所需试剂，可从公司（如 Applied Biosystems、QIAGEN、Life Technologies、Bio-Rad）购买。这种预混液可以简化实验过程，降低污染概率，提供最佳性能。另外，可以参考本章节附录自己配制预混液。
+
+模板 DNA
+
+如本章导言部分所述， $C_{T}$  在 20～30 范围的模板 DNA 浓度需要凭经验测定，而 10～50ng 的基因组 DNA 或 0.1～1ng 的质粒 DNA 是一个较好的起点。
+
+## 设备
+
+适用于自动微量移液器的滤芯吸头
+
+微量离心管（0.4～1.5mL，无菌）
+
+PCR 塑料制品（PCR 管，单排或 96/384 孔板）
+
+PCR 塑料制品要根据 PCR 制造商的说明要求来选择。所使用的反应板必须与 PCR 仪的加热模块完全匹配才能保证高效的传热性能和孔间均一性。假如系统通过管盖收集信号，那么必须使用光学等级的管盖。为避免样品蒸发，必须确保反应管或板有良好的密封性。有些系统（但不是所有的），能很好地与热封覆盖膜兼容。
+
+实时荧光 PCR 热循环仪
+
+![](images/page_43_image_16.jpg)
+
+## 方法
+
+## 配制和运行 PCR
+
+1. 在无菌微量离心管中, 用无 RNA 酶水制备 $20 \mu \mathrm{L}$ 浓度分别为 $1 \mu \mathrm{mol} / \mathrm{L} 、 2 \mu \mathrm{mol} / \mathrm{L} 、 3 \mu \mathrm{mol} / \mathrm{L}$ 和 $6 \mu \mathrm{mol} / \mathrm{L}$ 的上、下游引物溶液。
+
+2. 参照下面的引物浓度优化矩阵，每管各加入 $1\mu \mathrm{L}$ 上、下游引物，这样每管的体积为 $2\mu \mathrm{L}$，每个反应重复3管。另外再配制3管或3孔含最低和最高引物浓度的反应液（如$1\mu \mathrm{mol} / \mathrm{L}$ 上游 $+1\mu \mathrm{mol} / \mathrm{L}$ 下游、$6\mu \mathrm{mol} / \mathrm{L}$ 上游 $+6\mu \mathrm{mol} / \mathrm{L}$ 下游）。这些样品不加模板作为实验的阴性对照（通常称之为无模板对照NTC）。
+
+<table><tr><td>上游引物</td><td>1μmol/L</td><td>2μmol/L</td><td>3μmol/L</td><td>6μmol/L</td></tr><tr><td>下游引物</td><td colspan="4">终浓度/(nmol/L)</td></tr><tr><td>1μmol/L</td><td>50/50</td><td>50/100</td><td>50/150</td><td>50/300</td></tr><tr><td>2μmol/L</td><td>100/50</td><td>100/100</td><td>100/150</td><td>100/300</td></tr><tr><td>3μmol/L</td><td>150/50</td><td>150/100</td><td>150/150</td><td>150/300</td></tr><tr><td>6μmol/L</td><td>300/50</td><td>300/100</td><td>300/150</td><td>300/300</td></tr></table>
+
+3. 在无菌微量离心管中配制含样品模板的 PCR 反应混合液。下表列出了单个反系的体积，你所需配制的反应体积为反应份数乘以单个反应体积。
+
+在本例子中，总反应体积为  $16 \times 3 = 48$ 。配制 PCR 反应混合物时，可能会出现移液不准，建议要为所有样品和对照多配制出 1 或 2 个反应的体积量。
+
+如果使用热启动酶，如 ABI 公司的 AmpliTaq Gold DNA 聚合酶，需要 9～12min 的热启动（92～95℃）来激活酶的活性，因为 AmpliTaq Gold DNA 聚合酶在室温条件下无活性，所以无需在冰上配制反应液。
+
+SYBR Green I 法
+
+| 组分 | 单个反应加入量/μL |
+| --- | --- |
+| 水 | 3 |
+| 模板 | 5 |
+| SYBR Green I 预混液 | 10 |
+
+TaqMan 探针法
+
+| 组分 | 单个反应加入量/μL |
+| --- | --- |
+| 水 | 2.5 |
+| 探针/(10μmol/L) | 0.5 |
+| 模板 | 5 |
+| TaqMan 预混液 | 10 |
+
+## 4. 在另一个无菌微量离心管中配制无模板对照的反应体系。
+
+在本例子中，需要6个无模板对照反应，因此需要配制7次分量反应体系。
+
+SYBR Green I
+
+| 组分 | 单个反应加入量/μL |
+| --- | --- |
+| 水 | 8 |
+| SYBR Green I 预混液 | 10 |
+
+TaqMan
+
+| 组分 | 单个反应加入量/μL |
+| --- | --- |
+| 水 | 7.5 |
+| 探针/(10μmol/L) | 0.5 |
+| TaqMan 预混液 | 10 |
+
+5. 在含有上、下游引物溶液的 PCR 管/孔里加入  $18 \mu L$  PCR 混合液，用吸头上下反复轻柔吹打，并避免产生气泡。小心盖上盖子。短暂离心，将溶液收集到管底。
+
+为了避免潜在的交叉污染，在所有试剂分装完后，需要设置不加模板的空白对照。
+
+6. 把 PCR 板或管放到实时热循环仪上。使用以下热循环参数设置程序并运行仪器。下面的反应程序是专为使用 AmpliTaq Gold 热启动 DNA 聚合酶的实时荧光 PCR 实验设置的。
+
+SYBR Green I
+
+<table><tr><td></td><td>温度</td><td>时间</td></tr><tr><td colspan="3">起始步骤</td></tr><tr><td>1. AmpErase UNG 酶激活 $^a$ </td><td>50°C</td><td>2min</td></tr><tr><td>2. AmpliTaq Gold 热启动酶激活PCR(40个循环)</td><td>95°C</td><td>10min</td></tr><tr><td>3. 变性</td><td>95°C</td><td>15s</td></tr><tr><td>4. 复性/延伸</td><td>60°C</td><td>1min</td></tr><tr><td colspan="3">熔解曲线</td></tr><tr><td>5. 变性</td><td>55~95°C</td><td></td></tr></table>
+
+a. 该步骤仅适用于含有 AmpErase UNG（尿嘧啶-N-糖基化酶）酶的体系。
+
+TaqMan
+
+<table><tr><td></td><td>温度</td><td>时间</td></tr><tr><td colspan="3">起始步骤</td></tr><tr><td>1. AmpErase UNG 酶激活 $^a$ </td><td>50°C</td><td>2min</td></tr><tr><td>2. AmpliTaq Gold 热启动酶激活PCR(40个循环)</td><td>95°C</td><td>10min</td></tr><tr><td>3. 变性</td><td>95°C</td><td>15s</td></tr><tr><td>4. 复性/延伸</td><td>60°C</td><td>1min</td></tr></table>
+
+a. 该步骤仅适用于含有 AmpErase UNG 酶的体系。
+
+配制好反应液后应尽快进行 PCR 反应。一些市售的混合液含有甘油和 DMSO，可以在  $-20^{\circ}C$  储存 12h 以上。但其他的体系不宜长时间放置。请参阅生产商的说明。
+
+## 分析扩增曲线
+
+## 7. 观察扩增曲线（$\Delta R_{n}$ 对循环数）（图9-7）
+
+首先检查所有样品的扩增曲线（线图），找出扩增异常曲线（详见方案5）。大多数实时荧光PCR仪器都可以自动设置基线和阈值，在这一点上，通常可以让机器设置这些参数。其次，确认无模板对照组没有扩增信号，如果有检测信号，应该排查原因。最后，确定实验的最佳引物浓度。能同时给出最低 $C_{\mathrm{T}}$ （20～30）和最高 $\Delta R_{n}$ 的引物组合的灵敏度最高，重复性最好。如果 $C_{T}$ 在此范围以外，模板的浓度需要进行调整。根据经验，一般10倍的浓度差相当于3.3个循环，按照此算法可相应减少/增加引物浓度。
+
+![](images/page_45_chart_9.jpg)
+
+<details>
+<summary>line</summary>
+
+| 循环数 | \(\Delta\)Rn (Curve 1) | \(\Delta\)Rn (Curve 2) | \(\Delta\)Rn (Curve 3) | \(\Delta\)Rn (Curve 4) | \(\Delta\)Rn (Curve 5) |
+| --- | --- | --- | --- | --- | --- |
+| 1 | ~0.0 | ~0.0 | ~0.0 | ~0.0 | ~0.0 |
+| 10 | ~0.0 | ~0.0 | ~0.0 | ~0.0 | ~0.0 |
+| 20 | ~0.2 | ~0.1 | ~0.0 | ~0.0 | ~0.0 |
+| 30 | ~3.2 | ~3.1 | ~2.8 | ~2.5 | ~1.8 |
+| 40 | ~4.5 | ~4.4 | ~4.3 | ~4.2 | ~3.7 |
+</details>
+
+图 9-7 扩增曲线（线图）示例。每组重叠的曲线表示三份不同引物浓度组合的反应。 $C_{T}$ 值在20～30之间的引物组合得到的实验结果最佳。
+
+8. 分析扩增曲线后，根据标准曲线，确定实验的检测效率、灵敏度和重复性（见方案2）。
+
+## 分析熔解曲线
+
+9. 若使用的是 SYBR Green 染料，还需要分析熔解曲线（图 9-8）。
+
+在熔解曲线分析过程中，随着扩增后反应混合物的温度逐渐升高，会引起双链DNA分离，导致结合的荧光染料释放，荧光信号也相应减少。DNA解链温度（又称 $T_{\mathrm{m}}$ ）和荧光强度降低依赖于扩增产物的大小和序列。因此，可以根据他们的 $T_{\mathrm{m}}$ 值来鉴定扩增产物。最佳的引物浓度就是含模板组可以产生单一的尖锐峰，而无模板组没有信号时的浓度（见“疑难解答”），该单一峰表明靶序列的特异扩增（图9-8A）。如果形成引物二聚体，其产物较短，$T_{\mathrm{m}}$ 也比长靶扩增子的 $T_{\mathrm{m}}$ 低，从而产生两种不同的熔解曲线峰（图9-8B）。当加入的RNA浓度较低时，引物二聚体的量会增加。
+
+![](images/page_46_chart_2.jpg)
+
+<details>
+<summary>line</summary>
+
+| Temperature \(({}^{\circ}C)\) | Number of Cycles |
+| --- | --- |
+| ~63 | ~0.05 |
+| ~65 | ~0.06 |
+| ~70 | ~0.05 |
+| ~75 | ~0.04 |
+| ~79 | ~0.08 |
+| ~81 | ~0.28 |
+| ~82 | ~0.30 |
+| ~83 | ~0.12 |
+| ~84 | ~0.01 |
+| ~85 | 0.00 |
+</details>
+
+![](images/page_46_chart_3.jpg)
+
+<details>
+<summary>line</summary>
+
+| Temperature \(({}^{\circ}C)\) | Number of Cycles |
+| --- | --- |
+| ~62 | ~0.05 |
+| ~75 | ~0.15 |
+| ~80 | ~0.55 |
+| ~85 | ~0.05 |
+</details>
+
+![](images/page_46_chart_4.jpg)
+
+<details>
+<summary>line</summary>
+
+| Temperature \(({}^{\circ}C)\) | Value (Series 1) | Value (Series 2) | Value (Series 3) |
+| --- | --- | --- | --- |
+| 63 | ~-0.005 | ~-0.005 | ~-0.005 |
+| 65 | ~0.022 | ~0.021 | ~0.020 |
+| 70 | ~0.021 | ~0.020 | ~0.019 |
+| 75 | ~0.070 | ~0.065 | ~0.060 |
+| 77 | ~0.015 | ~0.012 | ~0.008 |
+| 80 | ~0.045 | ~0.030 | ~0.025 |
+| 85 | ~0.001 | ~0.001 | ~0.001 |
+| 90 | 0.000 | 0.000 | 0.000 |
+</details>
+
+图 9-8 熔融曲线示例。(A) 单峰, 来自特异性扩增。(B) 双峰, 其中较低的峰值表明形成引物二聚体。(C) 双峰, 其中较高的峰值表示基因组 DNA 的扩增
+
+![](images/page_46_image_6.jpg)
+
+## 疑难解答
+
+问题（步骤 7 和步骤 9）:无模板对照组的引物组合产生信号。
+
+解决方案:如果无模板组的熔解温度比有模板组的熔解温度低，选择在无模板对照组中产生最小低熔解温度峰的引物组合，其可能是引物二聚体。在每个循环的复性/延伸步骤后，加入一个测量荧光的步骤，该步骤的温度比预期PCR产物的溶解温度低 $3^{\circ}\mathrm{C}$，时长15s，即可避免检测到非特异信号，或至少可以最小化。
+
+![](images/page_46_image_10.jpg)
+
+## 配方
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+## SYBR Green I 或 TaqMan 实验所用的实时荧光 PCR 混合物
+
+该配方可替代预制的实时荧光 PCR master mix。各组分的最佳浓度如下:
+
+终浓度  $200 \mu mol/L$  的 dNTP
+
+若用 dUTP 代替 dTTP（见 UNG 介绍），dUTP 终浓度应为  $400 \mu mol/L$ 。
+
+## 0.1μL (0.5U) Taq 聚合酶
+
+使用热启动 Taq 聚合酶可以提高实时荧光 PCR 的特异性，如 JumpStart Taq（Sigma-Aldrich 公司）、HotStarTaq（（QIAGEN 公司）或 AmpliTaq Gold（Applied Biosystems 公司）。一般每 20μL 体系加入 0.1μL（0.5U）Taq DNA 聚合酶（5.0U/μL）。必要时可以按 0.1U 浓度梯度增加来优化反应酶用量。在 TaqMan 实验中，所使用 Taq 酶需具有 5'→3' 外切酶活性，如 AmpliTaq 或 AmpliTaq Gold（Applied Biosystems 公司）。
+
+$4\sim 7\mathrm{mmol / L MgCl_2}$
+
+UNG
+
+先前通过 PCR 得到的扩增产物可能是实时荧光 PCR 实验的潜在污染源。为防止潜在 PCR 产物的污染，可以在反应体系中加入尿嘧啶-N-糖基化酶（UNG 酶，如 Applied Biosystems 公司的 AmpErase UNG），它能酶切破坏污染物，防止外来产物的再次扩增。含 UNG 的预混液，需用 dUTP 部分或全部替换 dTTP。UNG 酶可将反应体系中含 U 的 DNA 污染物中的尿嘧啶碱基降解，从而造成污染 DNA 链的断裂。因此在后续的 PCR 循环中，只有靶基因 DNA 能进行扩增，由前期实验中带来的污染物不会被扩增。
+
+被动参考染料
+
+在用 Applied Biosystems 仪器进行实时荧光 PCR 实验时, ROX 染料可作为内部参考; 但在 LightCycler 或 iCycler 仪器上, ROX 不适用。ROX 使用终浓度为 0.45nmol/L。
+
+## 方案 2 制作标准曲线
+
+每次实时荧光 PCR 实验都必须制作标准曲线（见本章导言）。本方案用于制作浓度未知的模板的标准曲线，这种标准曲线适用于优化实验和用标准曲线法进行相对定量。此处所述的制作原则同样适用于制作绝对定量标准曲线，但是标准品的浓度必须用一个独立的方法来测定，通常为  $A_{260}$  吸光度法或基于染料的 DNA 测定法，详情参见第 1 章中的“DNA 定量的介绍”和“分光光度法”信息栏；至于 RNA，可参见第 6 章的方案 6。质粒 DNA 和体外转录 RNA 常用来制备绝对定量标准品。采用  $A_{260}$  吸光度法，要确保 DNA 或 RNA 标准品是单一的、纯净的。例如，从大肠杆菌提取的质粒 DNA 经常污染 RNA，致使  $A_{260}$  升高，影响质粒拷贝数的计算。为了精确测定  $A_{260}$  值，质粒 DNA 或体外转录 RNA 需要浓缩，然后浓缩的 DNA 或 RNA 要稀释 100 或 1000 倍，使其与生物样品中靶基因的浓度相似。另外，一般不能用 DNA 作为标准品来定量 RNA，因为其无法监控 RNA 的反转录效率。
+
+![](images/page_47_image_7.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+## 试剂
+
+上游和下游引物（最佳浓度，见方案1）
+
+无 RNA 酶的水
+
+探针（如果采用 TaqMan 探针）（最佳浓度，见方案 1）
+
+用于 SYBR Green I 或 TaqMan 的实时荧光 PCR 预混液
+
+预制的实时荧光 PCR 预混液包含除模板和引物以外的所有 PCR 所需试剂，可从公司（如 Applied Biosystems、QIAGEN、Life Technologies、Bio-Rad）购买。这种预混液可以简化实验过程，降低污染概率，提供最佳性能。另外，可以参考本章节附录自己配制预混液。
+
+DNA 模板
+
+## 设备
+
+适用于自动微量移液器的滤芯吸头
+
+微量离心管（0.4～1.5mL，无菌）
+
+PCR 塑料制品（PCR 管，单排或 96/384 孔板）
+
+PCR塑料制品要根据PCR制造商的说明要求来选择。所使用的反应板必须与PCR仪的加热模块完全匹配才能保证高效的传热性能和孔间均一性。若系统通过管盖收集信号，那么必须使用光学等级的管盖。为避免样品蒸发，必须确保反应管或板有良好的密封性。有些系统（但不是所有的）能很好地与热封覆盖膜兼容。
+
+实时荧光 PCR 热循环仪

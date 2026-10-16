@@ -1,0 +1,796 @@
+结合活性的蛋白质分子。现已利用这些蛋白质（或抗体）对 5mC 的识别特性建立了多种能够富集含有甲基化的 5mC 的 DNA 或能够富集 5mC 识别蛋白的亲和纯化方案。本研究方法利用特异性的识别 5mC 的抗体来免疫沉淀甲基化 DNA。其他还有一些 5mC 免疫沉淀法是通过甲基结合蛋白来分析 DNA 的甲基化模式（Rauch and Pfeifer 2005, 2009）。2010 年，Huang 等（2010）发现，靶向 5mC 的抗体可以区分 5-甲基胞嘧啶（5mC）和 5-羟甲基胞嘧啶（5hmC），并由此推测将来还有可能研发出特异性识别 5hmC 的抗体。除此之外，本方案中描述的方法也可以扩大应用于全基因组 DNA 甲基化的研究分析，主要步骤流程如图 12-5 所示。免疫沉淀操作过程相对简单，且不需要事先对基因组 DNA 进行任何修饰。表 12-4 中列举的是一些已经商品化的基于免疫沉淀技术的 DNA 甲基化检测试剂盒。
+
+![](images/page_256_image_3.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  INPUT["INPUT"] --> DIP["IP"]
+  IP["IP"] --> A["加入抗甲基化胞嘧啶抗体"]
+  A --> DNAFragment["富集甲基化DNA片段"]
+  DNAFragment --> Analysis{"基因特异性的甲基化分析\n(方案3)"}
+  Analysis --> Result["基因芯片"]
+  Analysis --> DeepSeq["深度测序"]
+```
+</details>
+
+图 12-5 甲基化胞嘧啶免疫沉淀（meDIP）方案流程图。meDIP 是基于免疫沉淀技术的研究方法，不需要事先对基因组 DNA 进行任何修饰。
+
+表 12-4 商业化的基于免疫沉淀技术的 DNA 甲基化检测试剂盒
+
+| 供应商 | 特点 |
+| --- | --- |
+| Epigentek (EpiQuik) | 直接免疫沉淀裂解液中的甲基化 DNA富集>95%的甲基化 DNA手动或高通量的孔板条带操作兼容所有 DNA 扩增为基础的研究方法 |
+| Diagenode (MeDIP) | 提供自动化试剂盒,9h 完成操作手动检测 3 天完成检测含提取、剪切、IP 和 qPCR 的所有试剂IP 材料和甲基化状态直接关联所有操作在同一个检测管中进行含作为内参的甲基化和非甲基化的 BAC 克隆 |
+| Zymo Research (Methylated DNA IP Kit) | 含过操作过程监控所需的对照 DNA 和引物甲基化 DNA 相对于非 DNA 甲基化的 DNA 的富集系数大于 100 倍能在几个小时内完成甲基化 DNA 的分离 |
+| Active Motif (MethylCollector Ultra) | 基于磁珠的方法3h内完成操作能够检测1ng~1μg的DNA片段的CpG甲基化含对照DNA和PCR引物使用MBD2b/MBD3L1复合物,比单用MBD2b对甲基化DNA的亲和力更高使用GST-MBD融合蛋白和谷胱甘肽磁珠捕获甲基化的DNA |
+| RiboMed (MethylMagnet) | 可以用来分离1ng~1μg的mCpG DNA兼容所有DNA片段化方法和限制性内切核酸酶法获得的DNA碎片灵敏度比抗体为基础的方法大4倍 |
+| Life Technologies (MethylMiner) | 用MBD2蛋白捕获双链DNA,并促进双链衔接子的连接盐洗脱,无需蛋白酶K处理或酚:氯仿抽提整个操作过程不到4h |
+
+![](images/page_257_image_4.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+琼脂糖凝胶（2%）
+
+DNA 分子质量标记物（1kb DNA ladder）
+
+乙醇（100%）
+
+蛋白酶 K 处理的基因组 DNA（由细胞系、组织或临床样品制备获得）
+
+IP 缓冲液（10×，1.4mol/L NaCl 和 0.5% 的 Triton X-100）
+
+M-280 羊抗鼠 IgG Dynal 磁珠（Life Technologies 公司）
+
+甲基化胞嘧啶抗体（Methyl-C 抗体）
+
+NaCl (500mmol/L)
+
+PBS（1×），含0.1%牛血清白蛋白&lt;A&gt;
+
+酚:氯仿:异戊醇溶液&lt;A&gt;
+
+位点特异性的实时定量 PCR 引物
+
+蛋白酶 K（储备溶液，20mg/mL）
+
+蛋白酶 K 消化缓冲液&lt;R&gt;
+
+## 仪器
+
+收集 Dynal 磁珠的磁架
+
+微量离心管，预装 Phase-Lock（5 PRIME 公司）
+
+实时定量PCR仪
+
+超声
+
+水浴锅（可煮沸）
+
+## 试验对照
+
+将源自 5Aza2dC 处理细胞（见方案 1）和未处理细胞的基因组 DNA 以不同比例混合（例如，将 1 份甲基化 DNA 与 1/1000 的未甲基化 DNA 混合），超声处理后用作甲基胞嘧啶抗体免疫沉淀操作的阳性对照。当研究某个位点的甲基化修饰情况时，一定要确保该位点在未经 5Aza2dC 处理的细胞中是高甲基化状态。
+
+![](images/page_258_image_4.jpg)
+
+## 方法
+
+## 富集高甲基化的 DNA
+
+1. 超声 $100\mu \mathrm{g}$ 蛋白酶K处理过的基因组DNA（DNA总体积为 $200\mu \mathrm{L}$，$1\times$ TE缓冲液pH8.0），获得大小为 $300\sim 500\mathrm{bp}$ 的DNA片段。
+
+对照设置见“试验对照”栏。
+
+2. 取 200ng 超声处理后的 DNA 进行 2% 琼脂糖凝胶电泳以确定超声后的 DNA 片段大小。以 1kb DNA ladder 作为分子质量标记物。
+
+3. 每组样品取 $2 \mu \mathrm{g}$ 的超声处理后的 DNA, 用 $\mathrm{H}_{2} \mathrm{O}$ 稀释至终体积为 $450 \mu \mathrm{L}$, 煮沸 $10 \mathrm{~min}$ 。
+
+4. 迅速冰上冷却。加入  $50 \mu L$   $10 \times IP$  缓冲液和  $10 \mu g$  的甲基化胞嘧啶（methyl-C）抗体。保留少量超声处理的 DNA 供后续分析。
+
+5. 将含有 DNA 和 methyl-C 抗体的样品在  $4^{\circ}$ C 孵育过夜。
+
+6. 对于每份样品，取  $50 \mu L$  的 M-280 羊抗小鼠 IgG（Dynal 公司）磁珠，用含 0.1% BSA 的 PBS 洗 3 次，用 IP 缓冲液洗 1 次，吸净上清液（用磁架收集 Dynal 磁珠效果优于离心收集）。
+
+7. 将洗好的Dynal磁珠加入含有DNA-抗体复合物的反应管（步骤5中获得）中，室温下翻转混匀 $2\mathrm{h}$。
+
+8. 用磁架收集固定的 Dynal 磁珠。吸出上清液（作为未结合样本，已经去除甲基化修饰的 DNA 分子）。
+
+9. 用  $500 \mu L$  的 IP 缓冲液洗磁珠 3 次。
+
+10. 将磁珠重悬于 $500\mu \mathrm{L}$ 的蛋白酶K消化缓冲液中，缓冲液内按 $5\mu \mathrm{L} / \mathrm{mL}$ 的比例加入蛋白酶K储备溶液（储备溶液浓度为 $20\mathrm{mg / mL}$）。$50^{\circ}\mathrm{C}$ 孵育 $2\mathrm{h}$。
+
+11. 酚:氯仿提取 DNA（用 Phase-Lock 微离心管）。
+
+12. 用 500mmol/L 的 NaCl 和 2 倍体积的 100% 乙醇沉淀 DNA。
+
+13. 用位点特异性 PCR 引物进行定量 PCR 检测，分析样品的 DNA 甲基化模式。
+
+参见“疑难解答”。
+
+![](images/page_258_image_22.jpg)
+
+## 疑难解答
+
+问题（步骤 13）:背景高。
+
+解决方案:请尝试下列一个或多个方法。
+
+- 将抗体孵育时间从过夜减少至室温反应 2h。
+- 减少 Dynal 磁珠的量。
+- 增加 Dynal 公司磁珠-二抗复合体与 DNA 抗体复合物结合后的洗涤次数。
+- 用源自 5Aza2dC 处理细胞的基因组 DNA 对免疫沉淀条件进行优化。
+
+问题（步骤 13）:定量 PCR 没有信号和/或 DNA 免疫沉淀产量低。
+
+解决方案:请尝试下列一个或多个方法。
+
+- 增加用于免疫沉淀的 DNA 量。
+- 增加 PCR 循环数。
+- 以基因组 DNA 为模板进行标准 PCR，而后琼脂糖电泳观察扩增产物，以确保 PCR 引物的扩增能力。
+
+![](images/page_259_image_7.jpg)
+
+## 配方
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。蛋白酶 K 消化缓冲液
+
+| Tris (pH 8.0) | 50mmol/L |
+| --- | --- |
+| EDTA | 10mmol/L |
+| SDS | 0.5% |
+
+## 方案 4 高通量深度测序法绘制哺乳动物细胞 DNA 甲基化图谱
+
+在哺乳动物细胞 DNA 甲基化全基因组研究中，首要的问题是如何平衡降低成本与尽可能覆盖所有相关 CpG 二核苷酸序列之间的关系。另一个问题是如何获得哺乳动物细胞基因组中大量存在的重复 DNA 元件的甲基化信息。哺乳动物细胞中，重复 DNA 元件的甲基化状态不仅影响细胞表型，也与衰老、基因组不稳定性及细胞老化等疾病状态相关联（综述，Belancio et al. 2009）。本方案所讲述的“配对末端测序甲基化作图分析法（methylation mapping analysis by paired-end sequencing, methyl-MAPA）”能够解决上述问题（Edwards et al. 2010）。这里的“配对末端（paired-end）”不仅指建库方法，也表示测序时采用了“配对末端测序”技术（参见第 11 章）。除序列信息外，配对末端测序还能提供所读取的两端序列之间的物理距离信息。通常情况下，methyl-MAPA 能检测到基因组中 80% 的 CpG 二核苷酸序列，以及含有重复元件的基因位点的甲基化状态。通过酶切将基因组区分为发生甲基化修饰的和未发生甲基化修饰的组分。由于本方案中没有用到亚硫酸氢盐转化法，因此能检测到各 DNA 片段的实际大小，进而获得插入 DNA 片段大小分别为 0.8～1.5kb、1.5～3kb 及 3～6kb 的配对末端库（配对末端库）。通常情况下，配对末端所读取的序列将覆盖大多数含重复元件的序列，而后通过配对末端构型（paired-end configuration）特异性地将其对应至基因组特定位点。
+
+methyl-MAPA 方案能够鉴别所检测区域整体主要处于甲基化状态还是非甲基化状态，但无法确定某个碱基的 DNA 甲基化模式。Irizarry 等在验证此研究方案的可行性时将该方法的检测结果与亚硫酸氢盐结合 Illumina Infinium HumanMethylation27 BeadChip 芯片的检测结果相比较，结果发现 methyl-MAPA 法和 Infinium 亚硫酸氢盐分析法的 Pearson 相关系数范围为 0.84～0.87，显著优于芯片检测技术之间的相关系数（Irizarry et al. 2008）。下面描述的 methyl-MAPA 研究方案主要从 2010 年 Edwards 等的方案改进而来（Edwards et al. 2010），其主要步骤的流程见图 12-6。
+
+![](images/page_260_image_3.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["甲基化敏感的限制性内切核酸酶"] --> B["分离基因组DNA"]
+  C["甲基化依赖的McrBC复合物"] --> B
+  B --> D["基因组DNA"]
+  D --> E{"限制性内切核酸酶"}
+  E --> F["通过甲基化状态将基因组DNA分组"]
+  F --> G["末端标签测序"]
+  G --> H["将末端标签映射定位至基因组"]
+  H --> I["甲基化状态分配"]
+  I --> J["未甲基化的"]
+  I --> K["未甲基化的"]
+```
+</details>
+
+图12-6 methyl-MAPA方案流程图。通过限制性内切核酸酶构建CpG富含区的配对末端库，而后用ABI大规模配对测序平台进行测序（授权改编自Edwards et al. 2010）。
+
+![](images/page_260_image_5.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+琼脂糖（常规琼脂糖和低熔点琼脂糖）
+
+含聚蔗糖（Ficoll）的琼脂糖凝胶混合物（GenScript公司，目录号D0084）
+
+ATP (10mmol/L)
+
+BBW 缓冲 (1×) &lt;R&gt;
+
+生物素化的内部衔接子 T30B 和 T30（Applied Biosystems 公司）:
+
+T30B 序列:5'-phos-CGTACA/iBiodT/CCGCCTTGGCCGT
+
+T30 序列:5'-phos-GGCCAAGGCGGATGTACGGT
+
+牛血清白蛋白（BSA，1mg/mL）
+
+McrBC BSA 缓冲液（100×）（New England Biolabs 公司）
+
+BW 缓冲液 (1 ×) &lt;R&gt;
+
+含 EcoP15I 位点的 CAP 衔接子（CAP adaptor）（Applied Biosystems 公司）
+
+CAP 序列:5'-phos-ACAGCAG-3'和 5'-phos-CTGCTGTAC-3'（等摩尔量，以生成双链DNA）
+
+dATP (1mmol/L)
+
+dATP、dGTP 和 dTTP 混合物（10mmol/L）
+
+DNA ladder (25bp) (Life Technologies 公司, 目录号 10597-011)
+
+DNA 聚合酶 I
+
+DNA 阻滞 PAGE 凝胶（6%）
+
+使用置于  $0.5 \times TBE$  缓冲液中的 NOVEX 6% 聚丙烯酰胺预制胶（Life Technologies 公司）。
+
+dNTP 混合液（2.5nmol/L 的 dATP、dGTP、dTTP 和 dCTP）
+
+限制性内切核酸酶 EcoP15I
+
+限制性内切核酸酶 McrBC
+
+限制性内切核酸酶 HpaII、HpyCH4IV、AciI、HhaI 和 BstUI
+
+乙醇（70%和100%）
+
+溴化乙锭
+
+基因组 DNA（按方案 1 所述方法分离）
+
+GLASSMILK spin column kit (GENECLEAN 公司)
+
+糖原（1mg/mL）
+
+用于 McrBC 反应的 GTP（100×）（100mmol/L GTP）
+
+Klenow DNA 聚合酶
+
+LPCR-P1 和 LPCR-P2 引物（Applied Biosystems 公司）:
+
+LPCR P1: 5'-CCACTACGCCTCCGCTTTCCTCTCTATG-3'
+
+LPCR P2: 5'-CTGCCCCGGGTTCCTCATTCT-3'
+
+Microcon 100 超滤柱（Amicon 公司）
+
+MinElute Reaction Cleanup Kit (QIAGEN 公司)
+
+NEBuffers 1、2、3（10×）（New England Biolabs 公司）
+
+SOLiD DNA chemistry 寡核苷酸
+
+PAGE 洗脱缓冲液（按 1:5 混合 7.5mol/L 的乙酸铵和 1×TE）
+
+P1ds 和 P2ds 接头（Applied Biosystems 公司）
+
+酚:氯仿:异戊醇 &lt;A&gt;
+
+Plasmid-safe DNase (62.5μmol/L ATP, 0.0625U/mL ATP 依赖的 DNA 酶) (Epicentre 公司)
+
+Platinum PCR Supermix (Life Technologies 公司)
+
+PNK 缓冲液（10×）（New England Biolabs 公司）
+
+QIAquick 胶纯化试剂盒（QIAGEN 公司）
+
+快速连接酶试剂盒（New England Biolabs 公司，目录号 M2200S）
+
+S-腺苷甲硫氨酸（SAM）（32mmol/L）（New England Biolabs 公司，目录号 B9003）
+
+葡聚糖 G50 柱
+
+西奈芬净（Enzo Life Sciences 公司，目录号 ALX-380-070-M001）
+
+乙酸钠（3mol/L，pH5.3）
+
+链抗生物素珠，M280（Life Technologies 公司）
+
+SYBR Gold 或 SYBR Green solution (Life Technologies 公司)
+
+T4 DNA 聚合酶
+
+T4 多核苷酸激酶
+
+TAE 缓冲液（50×）&lt;A&gt;
+
+TBE 缓冲液 (5 ×) &lt;A&gt;
+
+TE (pH 8.0) &lt;A&gt;
+
+含少量乙二胺四乙酸（EDTA）的 TE（10mmol/L Tris 和 0.01mmol/L 的 EDTA，pH 8.0）
+
+未甲基化的 cl857 Sam7 λDNA（Promega 公司）
+
+## 仪器
+
+DNA 1000 芯片生物分析仪（Bioanalyzer DNA 1000 LabChip，Agilent 公司）
+
+高通量测序系统（如美国 Applied Biosystems 公司的 SOLiD3 或 SOLiD4 测序系统）
+
+序列分析软件
+
+分光光度计（如 NanoDrop 1000 或 NanoDrop 2000，Thermo Scientific 公司）
+
+水浴（或加热块，分别设定在  $37^{\circ}C$ 、 $60^{\circ}C$ 、 $65^{\circ}C$  和  $70^{\circ}C$ ）
+
+![](images/page_262_image_13.jpg)
+
+## 方法
+
+## 酶切法将不同甲基化状态的基因组 DNA 片段化
+
+取 10～15μg 的 DNA，用限制性内切核酸酶 McrBC 进行酶切，得到未甲基化 DNA 组分。同等量的 DNA 经 5 个 “四核苷酸甲基化敏感的限制性内切核酸酶”（HpaII、HpyCH4IV、AciI、HhaI、BstUI，下面简称为 “RE”）处理得到甲基化 DNA 组分。
+
+## 制备非甲基化 DNA
+
+1. 准备 $300 \mu \mathrm{L}$ 的非甲基化 DNA 酶切反应体系, 具体如下:
+
+| 基因组 DNA(0.5μg/μL) | 30μL(共计15μg) |
+| --- | --- |
+| NEBuffer 2(10×) | 30μL |
+| GTP(100×) | 3μL |
+| BSA(100×) | 3μL |
+| 水 | 219μL |
+| McrBC 酶(10 000 U/mL) | 15μL |
+
+$37^{\circ}\mathrm{C}$ 酶切 $4\sim 6\mathrm{h}$ 。
+
+2. 酚:氯仿:异戊醇（25:24:1）（pH 8）抽提 DNA。
+
+3. 在 DNA 溶液中加入 0.01 倍体积的 1mg/mL 糖原、0.1 倍体积的 3mol/L 乙酸钠（pH5.3）和 2 倍体积的乙醇。-20℃ 孵育 15min 沉淀 DNA。
+
+4. 20 800g, 4℃离心15min沉淀DNA。
+
+5. 弃上清液, $600 \mu \mathrm{L}$ 的 $70 \%$ 预冷乙醇洗涤沉淀, $20800 \mathrm{~g}, 4 ^ {\circ} \mathrm{C}$ 离心 $15 \mathrm{~min}$ 沉淀 DNA。
+
+6. 弃清洗上清液。空气中干燥后用  $1 \times \text{TE} (\text{pH8.0})$  重悬 DNA。
+
+7. 按操作说明用 Sephadex G50 柱纯化去除过量 GTP。NanoDrop 分光光度计测量 DNA 浓度，适当分组，每组含  $10 \mu g$  的 DNA。加入 0.1 倍体积的 3 mol/L 乙酸钠（pH5.3）和 2 倍体积的乙醇。-20℃ 孵育 15 min 沉淀 DNA。保存一部分干燥的 DNA 用于后续的配对末端文库制备。
+
+## 制备甲基化 DNA
+
+8. 在 $15\mu \mathrm{g}$ 的基因组DNA中按每微克DNA加入10U HpaII和HpyCH4IV限制性内切核酸酶的比例加入限制性内切核酸酶，同时加入的还有 $1\times$ NEBuffer 1。$37^{\circ}\mathrm{C}$ 孵育 $4\sim 6\mathrm{h}$。
+
+9. 用酚:氯仿:异戊醇（25:24:1）（pH 8）抽提 DNA。重复步骤 3～6，但将 DNA 重悬于 30μL 的含少量 EDTA 的 TE 缓冲液中。37℃ 孵育 4～6h。
+10. 按每微克 DNA 加入 10U ACiI 和 HhaI 的比例加入限制性内切核酸酶，同时加入  $1 \times NEBuffer 3$  和  $1 \times BSA$ 。
+11. 用酚:氯仿:异戊醇（pH 8）抽提 DNA。重复步骤 3～6，将 DNA 重悬于 30μL 的含少量 EDTA 的 TE 缓冲液中。
+12. 每微克 DNA 中加入 10U 的 BstUI 限制性内切核酸酶，同时加入 $1 \times$ NEBuffer 2。$60^{\circ}\mathrm{C}$ 孵育 $2 \sim 3\mathrm{h}$。
+13. 酚:氯仿:异戊醇（25:24:1）（pH 8）抽提 DNA。重复步骤 3～6，但将 DNA 重悬于 30μL 的含少量 EDTA 的 TE 缓冲液中。依据操作说明用 Sephadex G50 柱纯化 DNA。用 NanoDrop 分光光度计测量 DNA 浓度。加入 0.1 倍体积的 3mol/L 乙酸钠（pH 为 5.3）和 2 倍体积的乙醇，-20℃ 孵育 15min 沉淀 DNA。保存部分干燥的 DNA 用于后续的配对末端文库制备。
+
+## 配对末端文库制备
+
+下面的操作过程，是对 Applied Biosystems 公司的配对末端文库构建指南 “SOLiD System Mate-Paired Library Preparation Guide（Part Number 4407413B）” 改进之后的版本。欲了解更多有关配对末端测序的信息，请参见第 11 章。
+
+## 内源 EcoP15I 位点的甲基化
+
+14. 每份DNA样品进行独立但操作相同的反应。用T4 DNA聚合酶和T4多核苷酸激酶对酶切后的DNA片段末端进行修复。 $100\mu \mathrm{L}$ 反应体系中各组分最终浓度如下:
+
+| DNA | 12μg |
+| --- | --- |
+| PNK缓冲液(1×) | 10μL 10×PNK缓冲液 |
+| BSA(0.1mg/mL) | 10μL 1 mg/mL BSA |
+| ATP(0.4mmol/L) | 4μL 10 mmol/L ATP |
+| dNTP(0.4mmol/L) | 4μL 10 mmol/L dNTP |
+| 酶 | 50U |
+| 双蒸水 | 至终体积为100μL |
+
+反应管在  $12^{\circ}$ C 孵育 15min，而后在  $25^{\circ}$ C 孵育 15min。
+
+15. 葡聚糖 G50 柱去除多余的未掺入 dNTP，而后酚:氯仿:异戊醇抽提。
+16. 内源 EcoP15I 位点的甲基化。每组反应体积为 $125 \mu \mathrm{L}$, 加入 $12 \mu \mathrm{g}$ 的末端修复后的 DNA (步骤 14 获得), 具体组分构成如下:
+
+| 10 U EcoP15I 每微克 DNA | 12μL 10U/μL 的 EcoP15I 酶 |
+| --- | --- |
+| NEBuffer 3 (1×) | 12.5μL 10 × NEBuffer 3 |
+| BSA (0.1mg/mL) | 12.5μL 1mg/mL BSA |
+| SAM (360μmol/L) | 1.25μL 36mmol/L SAM |
+| 双蒸水 | 至终体积为 125μL |
+
+甲基化反应在  $37^{\circ}$ C 孵育 2h 或反应过夜，同时设置对照反应组（见步骤 18）。
+
+17. 依照操作说明，用 QIAquick 凝胶提取试剂盒纯化 DNA。也可如下操作:
+
+i. 在甲基化的 DNA 样品中加入 3 倍体积的 QG 缓冲液和 1 倍体积的异丙醇。该混合物的正确颜色是黄色。如果混合物的颜色为橙色或紫色，加入  $10 \mu L$  的 3 mol/L 乙酸钠（pH 为 5.5），混匀。
+
+DNA 能够被膜高效吸附的 pH≤7.5。
+
+ii. 将溶解在  $750 \mu L$  的 QG 缓冲液中的甲基化 DNA 过柱。每个 QIAquick 柱可加入的最高 DNA 量是  $10 \mu g$ 。如必要，可使用多个提取柱。
+
+iii. 室温下静置 2 min。≥10 000g（13 000r/min）离心 1min，弃流出液。
+
+iv. 重复步骤 17.ii 和步骤 17.iii，直到加完所有样品。
+
+v. 将 QIAquick 柱放回收集管，加入  $750 \mu L$  的 PE 缓冲液洗柱。 $\geqslant 10\ 000g$ （13 000 r/min）离心 2 min，弃流出液。重复离心去除残留的洗涤缓冲液。
+
+vi. QIAquick 柱风干 2min 以蒸发残留乙醇。
+
+vii. 将 QIAquick 柱转移到干净的 1.5mL LoBind 管中。加 30μL 的 EB 缓冲液洗脱 DNA，放置 2min 后，≥10 000g（13 000r/min）离心 1min。
+
+viii. 重复 EB 缓冲液洗脱步骤，混合两次洗脱 DNA 样品获得共  $60 \mu L$  样品。
+
+ix. 取  $2 \mu L$  纯化的 DNA 用 NanoDrop 1000 分光光度计进行定量。
+
+18. 通过测量 EcoP15I 位点甲基化的对照组样品与建库样品对 EcoP15I 的酶切抗性来确认 EcoP15I 位点甲基化是否成功。
+
+## 引入衔接分子并将 DNA 按分子质量大小分离
+
+19. 将 100 倍摩尔比过量的双链 CAP 衔接子（CAP adaptor，含 EcoP15I 位点）连接到进行过末端加工且 EcoP15I 位点被甲基化修饰的 DNA 片段上。一个 300μL 的反应体系配制如下:
+
+| 洗脱获得的DNA(从前述QIAquick纯化获得,溶解于EB缓冲液) | 58μL |
+| --- | --- |
+| EcoP15I adaptors(双链,50pg/μL) | 20μL |
+| Quick ligase buffer (2×) | 150μL |
+| Quick ligase | 7.5μL |
+| 双蒸水 | 64.5μL |
+
+室温（20～25℃）孵育10min。
+
+20. 等体积的酚:氯仿:异戊醇抽提 DNA。
+21. 样品在 1% TAE 低熔点琼脂糖凝胶中电泳，45V 电泳 2.5h。
+22. 去除小于 800bp 的降解 DNA 和未连接上的 GAP 衔接子，按分子质量大小分别收集不同分子质量的 DNA 片段（McrBC 组:0.8～2kb，2～5kb，>5kb；RE 组:0.8～1.5kb，1.5～3kb，3～6kb，>6kb）。
+23. 用 GLASSMILK spin column kit 提取不同大小的 DNA。取 $1\mu \mathrm{L}$ 纯化的 DNA 用 NanoDrop 1000 分光光度计进行定量。
+
+## 制备环状 DNA 分子
+
+24. DNA 样品按分子质量大小分组分离后，每组取  $2 \sim 3 \mu g$  的 DNA，与 3 mol/L 过量的双链 T30B 生物素化的内部衔接子（internal adaptor）共孵育，使 DNA 环化。总体积为  $730 \mu L$  的反应系统中包含以下成分:
+
+| DNA (2 μg) | 60μL |
+| --- | --- |
+| Quick ligase buffer (2 ×)(含 2mmol/L ATP) | 365μL |
+| Internal adaptor(双链,50pg/μL)(2mmol/L 复性的 T30B 和 T30 寡核苷酸储备溶液,各 2mmol/L) | 3μL |
+| Quick ligase | 18μL |
+| 双蒸水 | 284μL |
+
+在  $20^{\circ}$ C 连接 12min 能够使各长度范围内的 DNA 分子的环化效率达到 95%。
+
+欲了解更多详细信息，请参阅 ABI（美国应用生物系统公司）文件 No. 4407413B 第 92 页。
+
+25. 用 Plasmid-Safe DNase 降解未环化的 DNA 分子。取 $1 \mu \mathrm{g}$ 的环化 DNA 在 $100 \mu \mathrm{L}$ 的反应体系中进行反应:
+
+| DNA (1μg) | 60μL |
+| --- | --- |
+| ATP (10mmol/L) | 6.25μL |
+| Plasmid-Safe buffer (10×) | 10μL |
+| Plasmid-Safe DNase (10U/μL) | 3μL |
+| 双蒸水 | 20.8μL |
+
+反应混合物在  $37^{\circ}$ C 下孵育 40 min。
+
+26.  $70^{\circ}$ C 下 20min 热灭活 DNA 酶。
+
+27. 酚:氯仿:异戊醇抽提 DNA 以去除杂质。
+
+28. 按 $< 2\mathrm{kb}$ 和 $>2\mathrm{kb}$ 两组混合4种限制性内切核酸酶酶切后组分。用G50葡聚糖凝胶柱去除过量的核苷酸。
+
+## 加入 PCR 引物
+
+29. 用 EcoP15I 酶切环化后的 DNA。反应体系为 $60 \mu \mathrm{L}$:
+
+| EcoP15I | 10U/100ng 环化的 DNA |
+| --- | --- |
+| NEBuffer 3 | $1 \times$ |
+| BSA | $1 \times$ |
+| ATP | 2mmol/L |
+| 西奈芬净(Sinefungin) | 0.1mmol/L |
+
+37℃孵育过夜。
+
+30. 次日早上，于终止反应前 $1\mathrm{h}$ 在反应体系中添加新配制的ATP、BSA和西奈芬净。西奈芬净能抑制DNA和RNA中碱基（如5-甲基胞嘧啶或 $\mathbf{N}^6$ -甲基腺嘌呤）的甲基化。
+
+31. 加入 5U 的 Klenow DNA 聚合酶和 25μmol/L dNTP 室温孵育 30min 以补平酶切后的 DNA 末端。
+
+32.  $65^{\circ}$ C加热20min使酶失活。
+
+33. 将 $60\mathrm{mol}$ 过量的带PCR引物序列的P1ds和P2ds接头（linker）连接到DNA分子末端，$200\mu \mathrm{L}$ 反应体系:
+
+| 1μg 环化 DNA(平均大小 1.5kb) | 70μL |
+| --- | --- |
+| ds P1 linker (10μmol/L) | 6μL |
+| ds P2 linker (10μmol/L) | 6μL |
+| Quick ligase buffer (2×)(含 2mmol/L ATP) | 100μL |
+| Quick ligase | 5μL |
+| 双蒸水 | 13μL |
+
+室温（20～25℃）孵育10min。
+
+## M280 链抗生物素蛋白磁珠结合 DNA
+
+34. 依次用  $1 \times$  BBW 缓冲液、 $1 \times$  BSA 和  $1 \times$  BW 缓冲液冲洗 M280 链抗生物素蛋白磁珠。
+35. 将步骤 33 中得到的 DNA 与 15μL 预洗好的 M280 链抗生物素蛋白磁珠混合，在 1×BW 缓冲液中室温孵育 15min。DNA 分子将通过内部衔接子上的生物素标记结合到 M280 链抗生物素蛋白磁珠上。
+36. 用 $500\mu \mathrm{L}$ 的 $1\times$ BBW缓冲液冲洗磁珠1次，而后用 $1\times$ BW缓冲液冲洗2次，最后以 $1\times$ NEBuffer2冲洗磁珠1次。每次冲洗时先涡旋15s，而后将反应管放置在Dynal磁珠收集磁架上 $1.5\mathrm{min}$，待磁珠被磁架吸附后吸弃上清液。
+
+37. 将磁珠重悬在 $100\mu \mathrm{L}$ 含有 $500\mu \mathrm{mol} / \mathrm{L}$ dNTP和15U DNA聚合酶I的 $1\times$ NEBuffer2中，$16^{\circ}\mathrm{C}$ 孵育 $30\mathrm{min}$。
+
+## PCR 扩增 DNA
+
+38. 检测 PCR 反应: 取 $1 \mu \mathrm{L}$ 的 DNA（或取 $1 \%$ 的磁珠悬浮液中的 DNA），PCR 检测是否获得了预计大小的（$154 \sim 156 \mathrm{bp}$）DNA 产物。此 PCR 产物序列特征为:“配对” DNA 序列覆盖约 100 个碱基大小的基因组 DNA 序列，而其两侧是 P1（或 P2）接头序列和 CAP 接头序列。$154 \sim 156 \mathrm{bp}$ 的 PCR 产物是 100bp 的基因组 DNA 和 PCR 引物序列相加的结果。调节 PCR 循环次数直至获得的产物能够在 $4 \%$ 琼脂糖凝胶电泳时出现清晰的染色带。
+
+39. 建立 $50 \mu \mathrm{L}$ PCR 反应体系, 扩增所有结合到磁珠上的 DNA 序列:
+
+| 磁珠模板 | 1μL |
+| --- | --- |
+| LPCR-P1 引物(50μmol/L) | 1μL |
+| LPCR-P2 引物(50μmol/L) | 1μL |
+| Platinum PCR Supermix | 47μL |
+
+PCR 反应参数如下:
+
+| 循环次数 | 变性 | 复性 | 聚合 |
+| --- | --- | --- | --- |
+| 1个循环 | 95°C, 15min |  |  |
+| 18~22个循环 | 95°C, 15s | 62°C, 15s | 70°C, 1min |
+| 末循环 |  |  | 70°C, 5min |
+
+40. 合并所有相同的反应管, 乙醇沉淀 DNA。此外, PCR 反应液也可以常期 $4^{\circ} \mathrm{C}$ 保存。DNA 的分离纯化
+
+41. 准备 $6\%$ 非变性聚丙烯酰胺 DNA 阻滞凝胶。115V 预电泳 $5 \mathrm{~min}$ 。
+
+42. 将聚蔗糖上样染液加入待检测样品和 25bp 梯度分子质量标准物（每 $50\mu \mathrm{L}$ PCR 反应产物中加 $6\mu \mathrm{L}$ 的上样缓冲液）。$1\times$ TBE 缓冲液，115V 电泳 45min。当使用的是 1.0mm 厚的凝胶时，五孔梳每孔最多可容纳 $60\mu \mathrm{L}$ 的样品。
+
+为避免 DNA 变性，样品在加样前不能煮沸。
+
+43. 观察电泳条带。按 $1:6000$ 将 $10\mathrm{mg / mL}$ 的溴化乙锭稀释到 $1\times \mathrm{TBE}$ 缓冲液中，凝胶染色 $5\mathrm{min}$，而后水中脱色2次。
+
+44. 从凝胶中切出 $156\mathrm{bp}$ 的DNA库条带，切碎后，置于微量离心管中，以 $13000\mathrm{r / min}$ 的转速离心 $3\mathrm{min}$ 。
+
+45. 将切碎的凝胶放入 $200\mu \mathrm{L}$ 的PAGE洗脱缓冲液，室温孵育 $20\mathrm{min}$ 提取DNA。$13000\mathrm{r / min}$ 离心 $1\mathrm{min}$，留取上清液。而后，再加入 $200\mu \mathrm{L}$ 的PAGE洗脱缓冲液进行第二次洗脱，$37^{\circ}C$ 孵育 $40\mathrm{min}$，再次 $13000\mathrm{r / min}$ 离心 $1\mathrm{min}$，留取上清液。混合两次离心获得的上清液，共获得 $400\mu \mathrm{L}$ 的洗脱液。
+
+46. 去除残留的凝胶微粒:将洗脱液离心通过 $0.45\mu \mathrm{m}$ 的过滤离心柱。加入0.1倍体积的 $3\mathrm{mol} / \mathrm{L}$ 乙酸钠（$\mathrm{pH}$ 为5.3）和2倍体积的乙醇，$-20^{\circ}\mathrm{C}$ 孵育，离心回收DNA沉淀。$150\mu \mathrm{L}$ 的TE（$\mathrm{pH8.0}$）重悬DNA。
+
+47. 用 MinElute Reaction Cleanup Kit 纯化重悬的 DNA 样品，操作依照说明书进行。用 $20 \mu \mathrm{L}$ 的 $10 \mathrm{mmol} / \mathrm{L}$ Tris 缓冲液（$\mathrm{pH} 8.0$）洗脱 DNA。用 $20 \mu \mathrm{L}$ 的 $10 \mathrm{mmol} / \mathrm{L}$ Tris 缓冲液（$\mathrm{pH} 8.0$）重复洗脱 DNA。混合 2 次洗脱液，最终获得 $40 \mu \mathrm{L}$ 洗脱 DNA。
+
+48. NanoDrop 2000 型分光光度计测定 DNA 浓度，并通过 Bioanalyzer DNA 1000 LabChip 或者常规的 $0.5 \times$ TBE 缓冲液进行非变性 $6\%$ 聚丙烯酰胺凝胶电泳法来检测所获 DNA 的数量和质量。
+
+## DNA 测序
+
+49. 依据 SOLiD 乳液 PCR（emulsion PCR）标准操作方案，通过乳液 PCR 对  $1 \mu m$  微珠上的 DNA 文库进行扩增。
+
+50. 用 SOLiD 3、SOLiD 4 或者 SOLiD 5500 DNA 测序进行配对末端测序。
+
+从配对末端文库中获得的基因组序列是读取 25 个碱基还是读取 50 个碱基，取决于测序所使用的仪器和化学试剂。
+
+## 数据分析:标签映射定位、数据过滤和 CpG 分析
+
+用 SOLiD 数据分析软件包进行数据的标签映射定位。通过颜色编码对配对标签分别进行映射定位，每 25 个碱基的标签最多允许与 “参照基因组（reference genome）” 数据之间有两个错配。参照基因组数据源自 UCSC Genome Browser （http://genome.ucsc.edu）。如果一对标签能够特异性地与 “参照” 序列在顺序、方向和距离（0～15kb）上一一对应，则完成映射定位。
+
+华盛顿大学John Edwards 博士研发的客户 Perl 脚本(custom Perl scripts)，能够分析 SOLiD 系统的输出数据，过滤掉那些末端没有 McrBC 和/或 RE 限制性内切核酸酶位点的序列（Dr. John Edwards, Washington University, St. Louis, MO 63130; jedwards@dom.wustl.edu）。CpG 岛、RepeatMasker、RefSeq gene data，以及其他的基因组注释信息可直接从网上下载（UCSC Genome Browser website）。其他的相关数据分析细节可参考 2010 年 Edwards 等的文章（Edwards et al. 2010）。Perl 脚本假定数据首先映射定位到参考基因组，从 Applied Biosystems 公司的 mate-pair mapping 工具生成的 F3\_R3.mates 文件开始。最新版本的 Perl 脚本见 http://epigenomics.wustl.edu。更多有关 SOLiD 系统颜色映射定位工具（Color Space Mapping Tool）的信息可查阅 http://solidsoft waretools.com（cms\_058717.pdf 文件）。F3\_R3.mates 文件中包含 SOLiD 配对标签的数据信息和类别信息，每个配对标签数据包括如下内容（单行显示）:
+
+```txt
+TAG_ID F3_SEQUENCE R3_SEQUENCE F3_MISMATCHES
+R3_MISMATCHES TOTAL_MISMATCHES F3_CHROMOSOME
+R3_CHROMOSOMEF3_POSITION R3_POSITION CATEGORY
+```
+
+.mates file 输出数据的示例如下:
+
+| 1279_39_68 | T0022313110133320100000110 | G2212303021113232121302011 | 0 | 0 | 0 | 20 | 20 | 30495426 | 30494696 | AAA |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1279_39_443 | T0202111310221123002222231 | G0022032122031213220301320 | 0 | 0 | 0 | 11 | 11 | -119924797 | -119925140 | AAA |
+| 1279_39_491 | T0103221133021130320012311 | G3112001002203010233300330 | 2 | 1 | 3 | 24 | 24 | 57590725 | 57579600 | AAA |
+| 1279_39_524 | T2123021000202200202022100 | G2100121130200121111031220 | 0 | 1 | 1 | 1 | 1 | -76034016 | -76034838 | AAA |
+
+其他 Perl scripts 运行的要求包括:
+
+1. 安装 nibFrag 工具作为 BLAT suite 的一部分（Jim Kent at UCSC）。
+
+2. 每个染色体的.nib 格式文件。
+
+3. 用于 AB 绘图软件的 CMAP 文件。
+
+4. CpG 位置文件。用 Tab-分隔文件，其中第一列是染色体（chr1 等），第二列是每个 CpG 位点在染色体上的坐标。
+
+数据过滤和 CpG 叠加步骤（步骤 3～5）可以在整个基因组水平进行，但建议对每个染色体的数据单独处理，全部工作也可以分割由多个 CPU 或计算集群完成。
+
+\- 步骤 1:解析 mates 文件（同时运行 McrBC 和 RE 两个.mates 文件）。
+
+使用:parseMates.pl&lt;cmapFile&gt;&lt;inFile&gt;&lt;outDir&gt;&lt;libDescriptor[M, R]&gt;
+
+这一操作能够用 AB mate-pair mapping software 软件转化.mates 文件，并创建 BED 文件（按每个染色体进行）。
+
+```txt
+<cmapFile> = cmap file used for tag mapping
+<inFile> = .mates file from tag mapping
+<outDir> = location for bedFiles
+```
+
+```txt
+<libDescriptor> = M for McrBC, R for RE
+```
+
+下面是一个完整的用 BED ((Browser Extensible Data) 文件（http://genome.ucsc.edu/goldenPath/help/customTrack.html #BED）进行注释追踪的例子。步骤 1 的输出结果为:
+
+```txt
+track name = "chr20 M" description = "paired data M" RGB color = 0,0,255,
+```
+
+| Chr 20 | 30494696 | 30495451 | 1279_39_68 | 1 | + | 30494696 | 30495451 | 0,0,255 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Chr 20 | 46956060 | 46957272 | 1279_39_1695 | 1 | + | 46956060 | 46957272 | 0,0,255 |
+| Chr 20 | 47756101 | 47756710 | 1279_40_77 | 1 | - | 47756101 | 47756710 | 0,0,255 |
+| Chr 20 | 61157032 | 61157498 | 1279_40_592 | 1 | - | 61157032 | 61157498 | 0,0,255 |
+| Chr 20 | 45670721 | 45672414 | 1279_41_341 | 1 | - | 45670721 | 45672414 | 0,0,255 |
+
+\- 步骤2:筛选McrBC片段，选择那些至少有一个McrBC识别位点的序列。
+
+使用:filterMcrBC.pl &lt;bedFile&gt;&lt;outFile&gt;
+
+BED 文件来自步骤 1 中的 McrBC 数据。可以整合，也可以对每个染色体文件数据单独处理。
+
+```txt
+<bedFile> = bedFile or concatenated bedFile from Step 1
+<outFile> = filtered output file
+```
+
+\- 步骤 3:筛选 RE 片段，选择那些至少有一个 RE 识别位点的序列。
+
+使用:filterMcrBC.pl &lt;bedFile&gt;&lt;outFile&gt;
+
+BED 文件来自步骤 1 中的 RE 数据。可以整合，也可以对每个染色体文件数据单独处理。
+
+```txt
+<bedFile> = bedFile or concatenated bedFile from Step 1
+<outFile> = filtered output file
+```
+
+\- 步骤 4:对 McrBC 和 RE 片段进行规范化。此步骤不能完全自动化完成。为找到 McrBC 和 RE 片段之间的正确比率，某些染色体需要选用不同的比例。此外，还需要用步骤 5 和步骤 6 中的 scripts 来计算整体覆盖值。
+
+\- 步骤 5: CpG 位点的片段重叠。
+
+使用:overlapCpGsites.pl &lt;CpGfile&gt;&lt;McrBCfile&gt;&lt;REfile&gt;&lt;outFile&gt;
+
+这一步将 McrBC 和 RE 片段与基因组的 CpG 位点重叠。输出的是一个描述与各 CpG 位点重叠的 McrBC 和 RE 片段的数量的文本文件。
+
+```txt
+<CpGfile> = CpG position file. First column is chromosome, second is coordinate
+<McrBCfile> = Filtered McrBC fragment bed file from step 2.
+<REfile> = Filtered RE fragment bed file from step 3.
+<outfile> = output file
+```
+
+输出文件格式:
+
+第 1 栏:染色体
+
+第 2 栏: CpG 位置
+
+第 3 栏:CpG 位于内部（受到保护不发生甲基化）的 McrBC 片段数
+
+第 4 栏:CpG 恰好位于片段内（可能的 McrBC 识别位点）的 McrBC 片段重叠数。其与边缘的距离被设为参数，默认是 50bp。
+
+第 5 栏:与第 4 栏类似，但 CpG 刚好位于 McrBC 片段末端的外部。
+
+第 6 栏:CpG 位于内部（受到保护不发生甲基化）的 RE 片段数。
+
+第 7 栏:CpG 位于 RE 片段末端且部分位于 RE 切割位点（非甲基化）的 RE 片段数量。
+
+步骤 5 的输出文件示例如下:
+
+| Chr20 | 8179 | 0 | 0 | 0 | 0 | 39 |
+| --- | --- | --- | --- | --- | --- | --- |
+| Chr20 | 8551 | 0 | 0 | 0 | 41 | 0 |
+| Chr20 | 8578 | 0 | 0 | 0 | 41 | 0 |
+| Chr20 | 8807 | 0 | 0 | 0 | 28 | 26 |
+| Chr20 | 8963 | 0 | 0 | 0 | 40 | 1 |
+| Chr20 | 9070 | 0 | 0 | 1 | 40 | 0 |
+| Chr20 | 9182 | 1 | 1 | 0 | 36 | 4 |
+| Chr20 | 9237 | 2 | 0 | 0 | 35 | 0 |
+
+\- 步骤 6: 计算甲基化分数。使用步骤 5 中的数据计算每一个 CpG 位点的甲基化分数。非 McrBC/非 RE 位点的分数是有效统计分数。建议该分数仅用于 McrBC 和 RE 位点，而对其他位点的评分要格外小心。
+
+使用:calculateMethylationScores.pl &lt;cpgFile&gt;&lt;outFile&gt;
+
+&lt;cpgFile&gt;= output file from step 5
+
+&lt;outFile&gt; = output file
+
+outFile 格式
+
+第 1 栏: 染色体
+
+第 2 栏: CpG 位置
+
+第 3 栏:甲基化得分。0 = 完全非甲基化，1 = 完全甲基化
+
+第 4 栏:非甲基化得分。1 = 完全非甲基化，0 = 完全甲基化
+
+第 5 栏:覆盖性，覆盖任何给定的 CpG 位点的 McrBC 和 RE 片段数目
+
+在 http://solidsoftwaretools.com/gf/可以找到用于协助分析 Applied Biosystems 公司 SOLiD 4 系统所产生的原始数据的开放工具软件。最常用的包括以下几种:
+
+- SOLiD Accuracy Enhancement Tool (SAET) (http://solidsoftwaretools.com/gf/project/saet/): 此工具能够读取 SOLiD 系统产生的原始数据，在映射定位前或重叠群组装时纠正错读。
+- SOLiD BaseQV Tool (http://solidsoftwaretools.com/gf/project/sam/): 此工具能够将 SOLiD 输出文件转换为碱基序列数据和相关的质量值。
+- SOLiD System Alignment Browser (SAB) (http://solidsoftwaretools.com/gf/project/sab/): 此工具是一个基于 Apollo 基因组注释策展工具的基因组注释查看器和编辑器，能够在 Windows、Linux 和 Mac OS 运行。
+- SOLiD System Color Space Mapping Tool (mapreads) (http://solidsoftwaretools.com/gf/project/mapreads/): 此工具能够将 SOLiD 颜色数据映射定位到整个人类基因组的序列数据。
+- SOLiD System Analysis Pipeline Tool (Corona Lite) http://solidsoftwaretools.com/gf/project/corona/:此工具可以用来读取 SOLiD 颜色数据，将其映射定位至或大或小的基因组序列数据，并对读取的配对数据进行注释，分析单核苷酸多态性。
+
+Methyl-Analyzer (Xin et al. 2011) 是一个能分析 methyl-MAPS 配对测序得到的全基因组 DNA 甲基化数据的 Python 包，需要输入已经与参考基因组映射定位的配对末端读取数据。它是本章前面提到的由 John Edwards 博士开发的 Perl scripts 的一种替代方法。
+
+Methyl-Analyzer 能够从 https://github.com/epigenomics/methylmaps 下载。
+
+![](images/page_270_image_3.jpg)
+
+## 配方
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+BBW 缓冲液（1×）
+
+| 试剂 | 终浓度 |
+| --- | --- |
+| Tween 20 | 2% |
+| Triton X-100 | 2% |
+| EDTA | 10mmol/L |
+
+BW缓冲液（1×）
+
+| 试剂 | 终浓度 |
+| --- | --- |
+| Tris-HCl (pH7.8) | 10mmol/L |
+| 氯化钠 | 1mol/L |
+| EDTA | 1mmol/L |
+
+## 参考文献
+
+Belancio VP, Deininger PL, Roy-Engel AM. 2009. LINE dancing in the human genome: Transposable elements and disease. Genome Med 1:97. doi: 10.1186/gm97.
+
+Edwards JR, O'Donnell AH, Rollins RA, Peckham HE, Lee C, Milekic MH, Chanrion B, Fu Y, Su T, Hibshoosh H, et al. 2010. Chromatin and sequence features that define the fine and gross structure of genomic
+
+methylation patterns. Genome Res 20: 972–980.
+Irizarry RA, Ladd-Acosta C, Carvalho B, Wu H, Brandenburg SA, Jeddeloh JA, Wen B, Feinberg AP. 2008. Comprehensive high-throughput arrays for relative methylation (CHARM). Genome Res 18: 780–790.
+Xin Y, Ge Y, Haghighi FG. 2011. Methyl-Analyzer—Whole genome DNA methylation profiling. Bioinformatics 27: 2296–2297.
+
+## 网络资源
+
+Methyl-Analyzer https://github.com/epigenomics/methylmaps
+
+Open source tools for analyzing SOLiD 4 data http://solidsoftwaretools.com/gf/
+
+Perl scripts to parse the output files from the SOLiD system http://epigenomics.wustl.edu
+
+SOLiD-Related Information concerning the SOLiD System Color Space Mapping Tool http://solidsoftwaretools.com
+
+UCSC Genome Browser http://genome.ucsc.edu
+
+## 方案 5 亚硫酸氢盐转化的 DNA 文库的 Roche 454 克隆测序
+
+Roche 公司的 454 测序技术先通过乳化 PCR（emulsion PCR）对克隆化的结合在 28μm 微珠上的单个 DNA 分子进行扩增，而后将其置入微微升（picoliter）数量级的孔内进行焦磷酸测序（详细内容参见第 11 章，方案 15～17）。测序循环过程中，每个与模板链互补的核苷酸的掺入都能激活一个化学发光反应，光信号能够被 FLX 基因组测序仪的 CCD 捕获，由此一一对应，快速、准确地读取待测模板的碱基序列。该测序平台的优点是读取的长度长，通常能达到 300～800bp。然而相较于其他测序平台，此平台测序结果在同聚体区（homopolymer region）的错误率较高，且测序成本较高。Roche 454 平台的 DNA 测序结果可用于检测 CpG 岛全长的 DNA 甲基化状态，通常能检测到较长区域内含有等位基因特异性信息的甲基化变化模式。为实现几乎全基因组的覆盖率，可通过对已完全测序的哺乳动物基因组的生物信息学分析来选择最合适的限制性内切核酸酶构建简并文库（reduce representation library）。
+
+在下面的操作中，对 Zeschnigk 等（2009）的方法进行了改进，用 Roche 454 平台进行 CpG 岛全基因组测序。Zeschnigk 等对不同组合的限制性内切核酸酶进行评估后发现，当采用组合酶消化人类基因组时，能够产生富含 CpG 岛的一系列 DNA 片段。用亚硫酸氢盐处理按不同大小分组的酶切后的 DNA 片段，而后通过 Roche 454 GS FLX 平台建库。获得的 DNA 甲基化信息包含多个读取序列并有较长的读长。本方案的关键步骤如图 12-7 所示。
+
+![](images/page_271_image_4.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["Cell Division"] --> B["分离基因组DNA"]
+  B --> C["通过Mse I、Tsp509 I、Nla III和HpyCH4 V限制性内切核酸酶富集富含CpG的区域"]
+  C --> D["片段大小选择 (346~800 bp)"]
+  D --> E["在5-methyl-dCTP出现时进行酶“抛光”反应"]
+  E --> F["连接含有5-methyl-dCTP的衔接子"]
+  F --> G["进行缺口修复"]
+  G --> H["进行文库的亚硫酸氢盐转化"]
+  H --> I["用454平台进行大规模平行焦磷酸测序"]
+```
+</details>
+
+图 12-7 亚硫酸氢盐转化 DNA 文库的 Roche 454 克隆测序流程图。此方法先用限制性内切核酸酶富集 CpG 富含区域，继而进行文库的亚硫酸氢盐转化。最后对转化好的文库进行大规模并行焦磷酸测序。
+
+![](images/page_271_image_6.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+琼脂糖
+
+Agarose loading gel mixture with Ficoll (GenScript 公司)
+
+ATP (10mmol/L)
+
+亚硫酸氢盐转化试剂（见方案1）

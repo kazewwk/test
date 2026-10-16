@@ -1,0 +1,4511 @@
+# 第13章 标记的DNA探针、RNA探针和寡核苷酸探针的制备
+
+原始 PDF 第 286–381 页。
+
+## 第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+导言 | 核酸的放射性和非放射性标记 777 设计寡核苷酸用作探针 783
+非放射性检测系统的类型 778
+
+方案 | 1 随机引物法:用随机寡核苷酸延伸法 11 去磷酸化的平端或5'凹端 DNA 分子的标记纯化的 DNA 片段 792 磷酸化 836
+2 随机引物法:在融化琼脂糖存在下用 12 用 T4 多核苷酸激酶进行寡核苷酸随机寡核苷酸延伸法标记 DNA 798 5'端的磷酸化 839
+3 用切口平移法标记 DNA 探针 800 13 用末端脱氧核苷酸转移酶标记
+4 用聚合酶链反应标记 DNA 探针 804 寡核苷酸 3'端 841
+- 附加方案 不对称探针 808 - 替代方案 用 TdT 合成非放射性
+5 体外转录合成单链 RNA 探针 809 标记的探针 843
+- 附加方案 用 PCR 法将噬菌体编码的 RNA 聚合酶启动子加至 DNA 片段上 816
+- 附加方案 加尾反应 843
+- 附加方案 合成非放射性标记探针的修饰 844
+6 用随机寡核苷酸引物法从 mRNA 合成 cDNA 探针 818 14 用大肠杆菌 DNA 聚合酶 I 的 Klenow 片段标记合成的寡核苷酸 845
+7 用随机寡核苷酸延伸法制备放射性标记的消减 cDNA 探针 15 用乙醇沉淀法纯化标记的寡核苷酸 849
+820 16 用空间排阻层析法纯化标记的
+8 用大肠杆菌 DNA 聚合酶 I 的 Klenow 募核苷酸 850
+片段标记双链 DNA 的 3'端 825 17 用 Sep-Pak C$_{18}$ 柱色谱法纯化标记的
+9 用碱性磷酸酶进行 DNA 片段的 募核苷酸 852
+去磷酸化 831 18 寡核苷酸探针在水溶液中杂交:在
+10 含 5'突出羟基端的 DNA 分子磷酸化 833 含季铵盐缓冲液中洗涤 854
+11 去磷酸化的平端或 5'凹端 DNA 分子的磷酸化 836
+12 用 T4 多核苷酸激酶进行寡核苷酸
+5'端的磷酸化 839
+13 用末端脱氧核苷酸转移酶标记寡核苷酸3'端 841
+- 替代方案 用 TdT 合成非放射性标记的探针 843
+● 附加方案 加尾反应 843
+● 附加方案 合成非放射性标记探针的修饰 844
+14 用大肠杆菌 DNA 聚合酶 I 的 Klenow
+片段标记合成的寡核苷酸 845
+15 用乙醇沉淀法纯化标记的寡核苷酸 849
+16 用空间排阻层析法纯化标记的寡核苷酸 850
+17 用 Sep-Pak C$_{18}$ 柱色谱法纯化标记的寡核苷酸 852
+18 寡核苷酸探针在水溶液中杂交:在含季铵盐缓冲液中洗涤 854
+
+信息栏 dNTP 储备溶液的制备 857 碱性磷酸酶 866
+
+大肠杆菌 DNA 聚合酶 I 和 Klenow
+解链温度 867
+片段 857
+
+体外转录系统 863
+
+碱性磷酸酶 866
+
+解链温度 867
+
+---
+
+## 导言
+
+标记的核酸和寡核苷酸作为试剂或探针在分子克隆中的应用。
+
+- 标记的克隆化 DNA 片段和特定长度的寡核苷酸片段可作为试剂用于分析 RNA，包括用 S1 核酸酶消化、RNA 酶保护和引物延伸。在这些实验中，标记试剂可形成不同分子质量的产物，能利用多种方法进行检测，其中凝胶电泳结合放射自显影法或光成像为最常见的方法。标记的 DNA 和 RNA 也可用作凝胶电泳的分子质量标志物。
+- 标记的 DNA、RNA、LNA 和寡核苷酸探针可用于各种杂交技术以定位和结合 DNA 及 RNA 的互补序列。这些技术包括 Southern、Northern 分析和原位杂交。
+
+上述应用的成功与否完全取决于通过各种酶法，如末端标记法、随机引物法、切口平移法、体外转录法和各种聚合酶链反应（PCR），将标记物顺利地引入核酸或寡核苷酸。一些方法可将标记物引入核酸分子中的特定位置（如5'端或3'端），或在核酸分子内多个位点标记；可获得标记的单链分子，亦可标记双链核酸分子；可合成固定长度的探针，亦可合成不同分子质量的标记分子群体。表13-1列出了标记核酸方法的种类，以指导研究者选择适合自己当前工作的方法。
+
+表 13-1 体外标记核酸的方法
+
+<table><tr><td>材料</td><td>方法</td><td>酶</td><td>探针类型</td><td>标记的位置</td><td>探针的长度</td><td>用途</td><td>放射性标记的比活性</td><td>可否非放射性标记</td><td>方案编号</td></tr><tr><td rowspan="6">DNA</td><td>随机引物法</td><td>Klenow</td><td>双链DNA</td><td>内部</td><td>400~600核苷酸</td><td>Southern和Northern杂交</td><td> $5 \times 10^{8} \sim 5 \times 10^{9}$ dpm/μg</td><td>是</td><td>1,2</td></tr><tr><td>切口平移</td><td>DNA 酶I+DNA聚合酶I</td><td>双链DNA</td><td>内部</td><td>约400核苷酸</td><td>Southern和Northern杂交、原位杂交</td><td> $5 \times 10^{8} \sim 5 \times 10^{9}$ dpm/μg</td><td>是</td><td>3</td></tr><tr><td>PCR</td><td>热稳定的DNA聚合酶(如Taq)</td><td>单链或双链DNA</td><td>内部</td><td>取决于引物的位置;产生固定长度的探针</td><td>S1核酸酶作图Southern和Northern杂交</td><td>约 $1 \times 10^{9} \sim 2 \times 10^{9}$ dpm/μg</td><td>是</td><td>4</td></tr><tr><td>引物延伸</td><td>T4多聚核苷酸激酶</td><td>单链DNA</td><td>内部</td><td>限制性酶消化后产生固定长度的探针</td><td>S1核酸酶作图Southern和Northern杂交</td><td>约 $1 \times 10^{9}$ dpm/μg</td><td>否</td><td>第6章,方案16</td></tr><tr><td>体外转录</td><td>DNA依赖的RNA聚合酶(如T3、T7或SP6)</td><td>单链RNA</td><td>内部</td><td>产生与模板等量的、固定长度的探针</td><td>RNA酶保护Southern和Northern杂交、原位杂交</td><td>约 $1 \times 10^{9}$ dpm/μg</td><td>是</td><td>5(也见第6章方案17)</td></tr><tr><td>加核苷酸至3&#x27;凹端</td><td>Klenow</td><td>双链DNA</td><td>3&#x27;端</td><td>产生与模板近似等量的、固定长度的探针</td><td>S1核酸酶作图RNA酶保护引物延伸分子质量标志物</td><td>约 $1 \times 10^{8} \sim -2 \times 10^{8}$ dpm/μg</td><td>是</td><td>8</td></tr><tr><td rowspan="2">RNA</td><td>5&#x27;端磷酸化</td><td>T4多核苷酸激酶</td><td>双链DNA</td><td>5&#x27;端</td><td>产生与模板等量的、固定长度的探针</td><td>S1核酸酶作图RNA酶保护引物延伸分子质量标志物</td><td>约 $1 \times 10^{8} \sim 2 \times 10^{8}$ dpm/μg</td><td>否</td><td>9,10,11</td></tr><tr><td>随机引物</td><td>反转录酶Klenow</td><td>单链DNA或DNA-RNA杂交体</td><td>内部</td><td>约400~600核苷酸</td><td>差异筛选</td><td>约 $1 \times 10^{9}$ dpm/μg</td><td>否</td><td>6,7</td></tr><tr><td rowspan="3">寡核苷酸或LNA</td><td>5&#x27;端磷酸化</td><td>T4多聚核苷酸激酶</td><td>单链DNA</td><td>5&#x27;端</td><td>与寡核苷酸等量的、固定长度的探针</td><td>Southern和Northern杂交</td><td>约 $1 \times 10^{8} \sim 4 \times 10^{8}$ dpm/μg</td><td>否</td><td>12</td></tr><tr><td>加核苷酸至3&#x27;端</td><td>末端脱氧核苷酸转移酶</td><td>单链DNA</td><td>3&#x27;端</td><td>产生与模板近似等量的、固定长度的探针</td><td>Southern和Northern杂交</td><td> $3 \times 10^{10}$ dpm/μg</td><td>是</td><td>13</td></tr><tr><td>引物延伸</td><td>Klenow</td><td>双链DNA双链随后必须分离</td><td>内部</td><td>产生与模板近似等价的、固定长度的探针</td><td>Southern和Northern杂交</td><td> $2 \times 10^{10}$ dpm/μg</td><td>否</td><td>14(也见第6章,方案18)</td></tr></table>
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+777
+
+![](../../raw/pages_0273-0288/images/page_287_image_2.jpg)
+
+## 核酸的放射性和非放射性标记
+
+在常规的体外放射性标记中，放射性同位素——通常为  ${}^{32}P$ ，通过取代非放射性同系物而掺入探针的天然结构中。在 DNA 和寡核苷酸的 5' 端标记反应中， $[\gamma-{}^{32}P]$  ATP 用于提供  ${}^{32}P$  的来源，利用大肠杆菌 T4 多核苷酸激酶将  ${}^{32}P$  转移至 5' 脱氧核苷三磷酸（dNTP）。这种磷酸化反应导致一个核酸分子中掺入一个  ${}^{32}P$  原子。 $[\alpha-{}^{32}P]$  dNTP 的放射性衍生物在内标记法中用于替代反应中的非放射性标记物，这类反应在 1 个  ${}^{32}P$  dNTP 和 3 个未标记的 dNTP 的存在下进行，使一个核酸分子中掺入多个  ${}^{32}P$  原子。应用其中一种内标记酶法，如随机引物或引物延伸[用大肠杆菌 DNA 聚合酶 I 的 Klenow 片段（Pol I）]、切口平移（用 DNA 酶 I 和 DNA 聚合酶 I）、PCR（用热稳定的 DNA 聚合酶如 Taq）和体外转录（用噬菌体 DNA 依赖的 RNA 聚合酶），可将放射性核苷酸掺入核酸分子。这样，应用大肠杆菌 DNA 聚合酶的 Klenow 片段，将一个或多个放射性标记的  $[\alpha-{}^{32}P]$  dNTP 加至 DNA 3' 凹端而使之被标记，而应用末端脱氧核苷酸转移酶（TdT）催化非模板指导的核苷酸掺入单链 DNA（ssDNA）的 3' 羟基端，可使寡核苷酸的 3' 端被标记。
+
+与放射性标记法不同的是，非放射性标记法将核酸分子中非正常存在的化学基团或化合物作为掺入物。非放射性标记物可通过光化学法或合成反应（见综述，Kricka 1992; Mansfield et al. 1995）掺入探针，用于放射性标记的酶反应（如随机引物法、切口平移法、体外转录法）是将标记的核苷酸掺入探针的更常用的方法。然而，以下详细描述的方法不同于放射性标记，5'端的非放射性标记不能通过酶反应完成。与目标核酸杂交后，探针中修饰的基团可通过适当的指示系统检测。
+
+## 选择标记物:放射性或非放射性？
+
+放射性探针的主要优点是其高敏感性，主要的缺陷是使用有害的放射性同位素。 $^{32}$ P衰变释放的高能量β粒子对于操作者的辐射可能很显著。近年来涉及同位素的文字工作，以及检测放射性物质的使用和处理所需的仪器设备量剧增。毫不奇怪，同位素现已成为一个负担。此外，储存和处理低水平的放射性废物所面临的实际及政治问题日益严峻，而且还在进一步加剧。在实际操作中亦存在不便，例如，实验必须根据放射性标记物到达的时间安排。
+
+非放射性方法的优点在于可更快地获得结果、探针更稳定、成本更低。然而，选择非放射性检测方法不是一件轻松的事——市场上可供选择的非放射性检测试剂盒数量过多，尚有更多的产品随时出现。对于厂商声称的产品的敏感性和信噪比应当持谨慎态度。许多结果是根据理想条件下的实验获得的，这些条件对于缺乏经验的研究者在杂乱无序的实验室中则很难迅速或容易地得到重复，因此信噪比常常高于广告的宣传，初学者可能很难获得与传统放射性标记物敏感性相近的结果。许多试剂盒价格昂贵，只有对自己当前工作条件进行优化后，应用非放射性检测方法才划算。
+
+在选择放射性或非放射性标记物时，或许需要考虑的主要因素是拟进行的实验类型。对于某些技术来说，放射性标记物的应用仍是主要的标记方法。例如，差异显示、消减杂交和应用 S1 核酸酶的 RNA 分析、RNA 酶保护或引物延伸几乎专一性地依赖放射性标记的探针（见第 6 章）。在这些方法中，放射性标记产物首先通过凝胶电泳分离，然后通过放射性自显影或光成像检测。然而，值得注意的是，相应的非放射性改良方法已有报道（如 Turnbow and Garner 1993; Chan et al. 1996）。
+
+对于各种 Southern 和 Northern 杂交技术（分别见第 2 章和第 6 章），研究者可选择应
+
+---
+
+778
+
+分子克隆实验指南（原书第四版）
+
+用放射性标记物还是非放射性标记物。 $^{32}$ P 标记的探针敏感性高，能检测微量的、固相化的目标 DNA（<1pg），但也存在半衰期短（14.3 天）和不能用于高分辨率成像的缺点。非放射性探针有几个优点:比放射化学技术危害小、成本低，而且半衰期和储存期更长，杂交检测时比放射性探针更快。
+
+目前，仅原位杂交技术专一性依赖非放射性标记的探针。传统检测组织中信使 RNA（mRNA）的原位杂交是用  ${}^{3}H$  或  ${}^{35}S$  标记的探针与切片材料进行杂交，这些探针需要用胶片感光乳剂覆盖于切片以检测信号。除产生放射性探针相关的固有问题，如安全和有限的储存期外，放射性衰减产生的散射极大地限制了该技术的空间分辨率。高敏感性非放射性标记探针的发展已使原位杂交可直接在完整胚胎、组织和荧光原位杂交（FISH）中应用，在单一细胞中显示难以置信的高分辨率。
+
+本章中的方案提供了放射性标记探针的详细制备方法。若可应用非放射性方法，非放射性探针合成的材料和步骤也在该方案中描述。
+
+![](../../raw/pages_0289-0304/images/page_288_image_5.jpg)
+
+## 非放射性检测系统的类型
+
+## 间接检测系统
+
+20 世纪 80 年代发展起来的第一个非放射性同位素检测方法是在用二硝基苯酚（Keller et al. 1988）、溴脱氧尿苷（Traincard et al. 1983）或生物素（Langer et al. 1981; Chu and Orgel 1985; Reisfeld et al. 1987）标记核酸探针的基础上建立的。而正是生物素为这些原型系统提供了最耐用及最敏感的复合物，迄今仍是最常用的非放射性标记技术之一。杂交后，生物素化的探针通过与报告酶（通常为碱性磷酸酶）标记的链霉抗生物素蛋白相互作用而加以检测。然后，膜暴露于一种能水解呈色、发射荧光或化学发光底物的酶。该系统的敏感性是由于酶能迅速地将底物转换为呈色或在特定波长下发射可见光或 UV 光的产物。产物的分布和强度对应于靶序列在膜上的空间分布和浓度。
+
+由于报告酶并非直接结合于探针，而是通过桥联反应结合（在此例中为链霉抗生物素蛋白-生物素），因而这类非放射性检测系统被称为间接系统。目前许多商品化试剂盒仍依赖于间接检测系统，它们是最初的生物素:链霉抗生物素蛋白:报告酶方法精心改进后的产物。现在多数商品化的试剂盒采用生物素化的核酸（如生物素-11-dUTP、生物素-12-dUTP或生物素-16-dUTP）（UTP为三磷酸尿苷）作为标记试剂，生物素部分通过一条11～16碳原子的间隔基与核酸结合，这样就减少了生物素化核酸探针在合成及检测中形成空间位阻的可能性。大多数情况下，生物素化的探针作用良好，不会发生问题。然而，由于生物素（维生素H）普遍存在于哺乳动物组织，生物素化的探针倾向于牢固地附着于某些类型的尼龙膜，进行原位杂交、Northern杂交和Southern杂交时本底较高。为避免这些问题，探针的标记可改用具有如下特征的化合物:①对于各种类型的膜均具有低亲和性；②在自然情况下，不存在于哺乳动物组织。洋地黄类植物专一合成的复合物（Hegnauer 1971）——强心苷DIG（DIG）（Pataki et al. 1953）恰好满足了以上两个标准（图13-1）。
+
+与生物素类似，DIG 也能通过化学方法偶联于接头和核苷酸，亦可通过标准的酶学方法将 DIG 标记的核苷酸掺入核酸探针。一般来说，这些探针比生物素标记探针的本底低得多。DIG 标记的杂交体可采用与报告酶[通常为碱性磷酸酶，较少的情况下采用辣根过氧化物酶（HRP），而β-半乳糖苷酶、黄嘌呤氧化酶或葡萄糖氧化酶则更不常用]偶联的抗 DIG Fab 片段检测（Höltke et al. 1990,1995; Seibl et al. 1990; Kessler 1991）。
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+779
+
+![](../../raw/pages_0289-0304/images/page_289_image_2.jpg)
+
+<details>
+<summary>natural_image</summary>
+
+Botanical illustration of a plant with leaves, flowers, and seed pods (no text or labels)
+</details>
+
+图 13-1 紫花洋地黄。(根据 1927 年 Culbreth 图重新绘制)
+
+第三种非放射性标记的探针为荧光素标记的探针（fluorescein-12-UTP 或-dUTP），可通过与碱性磷酸酶偶联的抗荧光素抗体检测。用荧光素、生物素或 DIG 进行核酸的标记均很容易，而且基于荧光素标记的间接系统的敏感性至少与生物素和 DIG 系统相同。三种标记系统均能检测在 Southern 和 Northern 杂交中亚皮克级水平的靶核酸。尽管如此，由于某些不清楚的原因，荧光素标记的间接系统迄今尚未达到与生物素和 DIG 系统相同的接受程度。
+
+## 用生物素、DIG 或荧光素标记探针的方法
+
+## 酶学方法
+
+利用生物素化、DIG 化或荧光素化的核苷酸标记 DNA，可借助下述任意一种标准的酶学技术，如随机引物法、切口平移法和 PCR 法（见表 13-1）。通过 SP6、T3 或 T7 RNA 聚合酶催化的体外转录反应可合成标记的 RNA。DNA 探针的 3' 端标记可通过 3' 端填充反应完成，或通过 TdT 制备寡核苷酸探针。必须注意，与放射性标记不同的是，不能应用酶学法进行 5' 端的非放射性标记。寡核苷酸 5' 端的非放射性标记是在寡核苷酸合成过程中通过化学法将生物素或 DIG 琥珀酰亚胺酯直接加至 5' 端的。大多数寡核苷酸合成公司可提供生物素或 DIG 标记寡核苷酸的服务。
+
+在这些反应中的标记物为修饰的尿嘧啶核苷或脱氧核苷三磷酸，在标记反应中用它们来取代 UTP 或脱氧胸苷三磷酸（dTTP）。常用的修饰核苷酸包括生物素-11-dUTP、生物素-16-dUTP、DIG-11-dUTP 和荧光素-12-dUTP。这些核苷酸名称中，dUTP 前的数字为 dUTP 和标记物之间接头的骨架中碳原子的数目；多数应用中，接头长度 11 为最佳。
+
+生物素、DIG 或荧光素偶联的核苷酸（探针或含有合成探针所需的所有试剂的标记试剂盒）均可从商品化渠道购买。这样的试剂盒由许多厂商提供（如 Ambion 公司、Enzo Life Sciences 公司、PerkinElmer 公司、Roche Applied Science 公司、Thermo Scientific 公司）。值得注意的是，偶联的核苷酸亦可自行合成。例如，可通过化学偶联烯丙胺-dUTP 和生物素或 DIG 的琥珀酰亚胺酯衍生物来合成标记的核苷酸（Henegariu et al. 2000）。
+
+在标记过程中，同掺入效率可被监测以及合成探针最终的比活性容易计算的 $[^{32}P]NTP$
+
+---
+
+780
+
+分子克隆实验指南（原书第四版）
+
+或$\left[{ }^{32} \mathrm{P}\right] \mathrm{dNTP}$相比, 尚无简单或快捷的方法来监测非同位素标记反应的进程或计算其标记效率。对于生物素和 DIG 标记的探针, 据厂家介绍, 探针中不超过 $30 \% \sim 35 \%$ 的胸苷残基被标记的尿苷残基取代 (见文献, Gebeyehu et al. 1987; Lanzillo 1990)。较高水平的置换可引起靶序列检测的敏感性降低, 这可能是由于杂交步骤中紧密排列的加合物之间的空间位阻所致。然而, 由于缺乏有效的监测系统, 非放射性探针的合成仍然是一个特殊问题。因此, 最好设立预反应, 在标记反应的过程中, 以一定时间间隔取样, 在斑点印记或狭线印记中用不同稀释度的靶 DNA 检测标记产物。在掌握标记产物已具有所需的敏感度后, 再设计及进行大规模标记反应。
+
+## 光学标记
+
+生物素和 DIG 可在光化学反应中附着于核酸。这两种标记物均结合于硝基苯叠氮基团，后者经 UV 或强可见光照射可转变为具高度反应性的氮宾（nitrene），能与 DNA 和 RNA 形成稳定的共价键（Forster et al. 1985; Habili et al. 1987）。光化学标记效率远远低于酶学标记:最好的情况下，150 个碱基中仅有 1 个碱基被修饰，产生的探针在哺乳动物 DNA 的 Southern 分析中不足以检测单拷贝序列。然而，新一代的生物素化探针将生物素与一种核苷酸的插入物——补骨脂素（psoralen）结合（如由 Applied Biosystems 公司提供的 BrightStar 补骨脂素-生物素标记的探针）。补骨脂素-生物素部分插入 RNA 内部，通过 UV 照射后可共价偶联。据说这种探针的敏感性比酶学标记的核苷酸高 2～4 倍。
+
+## 杂交后非放射性标记探针的检测
+
+## Southern 和 Northern 杂交
+
+Southern 和 Northern 杂交后，检测用生物素、荧光素或 DIG 标记的探针需要两个步骤。首先将膜暴露于合成的缀合物，该缀合物由报告酶和一个能高度特异性地紧密结合于标记部分的配基组成。对于生物素，大多数检测方法是利用生物素和与酶缀合的链霉抗生物素蛋白之间的高亲和反应。另一种可供选择的程序依赖于特异性单克隆或多克隆的抗生物素抗体。荧光素化的探针或 DIG 探针一般通过与特异性的酶偶联抗体的相互反应而被检测，然后再用显色、荧光或化学发光的底物来分析报告酶。
+
+在比色实验中（见文献，Leary et al. 1983; Urdea et al. 1988; Rihn et al. 1995），两种染料组合用于检测已由标记的杂交体捕获的碱性磷酸酶。该酶催化自 BCIP（5-溴-4-氯-3-吲哚磷酸）除去磷酸基团（Horwitz et al. 1966），产生的产物能氧化及二聚化形成二溴二氯靛青。在二聚化反应中产生的还原等价物可将 NBT（四氮唑蓝）（McGadey 1970）还原为不溶性的紫色染料二甲膦（diformazan），从而使标记探针与其靶序列杂交的位点可见（Leary et al. 1983; Chan et al. 1985）。观察结果可通过肉眼分析并记录在常规摄影胶片上。比色检测使用硝酸纤维膜和 PVDF 膜效果良好，但在尼龙膜和荷电的尼龙膜上则略显逊色。遗憾的是，即使是在最佳情况下，比色法仍比其他非同位素检测系统（如化学发光法）的敏感性低两个数量级或更差（Bronstein et al. 1989a; Beck and Köster 1990; Kerkhof 1992; Kricka 1992）。因此，检测哺乳动物基因组单拷贝序列远非比色法能力所及（Düring 1993）。此外，有色沉淀物难以从膜上除去，因而很难甚至不可能进行重新检测。某些情况下，用于剥离沉淀物的程序（50～60℃时用 100%甲酰胺）可溶解膜或大大增加膜的脆性。
+
+碱性磷酸酶的荧光测定可利用HNPP（2-羟基-3-奈甲酸-2'-苯基-N-酰苯胺磷酸盐）进行(Kagiyama et al. 1992)。去磷酸化后，HNPP在膜上产生荧光沉淀，可被透射仪发出的 $290\mathrm{nm}$ 辐射波长激发。利用与常规溴化乙锭染色凝胶相同的照相设定（滤片等），在 $509~\mathrm{nm}$ 波长处发射的光可被电荷耦合器件（CCD）相机或宝丽来（Palaroid）胶片捕获。利用HNPP的荧光分析较比色分析更敏感，将膜与底物温育 $2\sim 10\mathrm{h}$ 后，能检测哺乳动物基因组DNA
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+781
+
+Southern 杂交中的单拷贝序列（Diamandis et al. 1993; Höltke et al. 1995）。荧光素沉淀可通过乙醇洗涤很容易地去除，滤膜在信噪比升高到不可接受的水平之前，还可再进行几轮杂交。
+
+化学发光法利用含 HRP 或碱性磷酸酶（Beck et al. 1989; Bronstein et al. 1989b,c; Schaap et al. 1989）的缀合物检测生物素、荧光素或 DIG 标记的 DNA，是目前最迅速、最灵敏的检测方法。HRP-鲁米诺检测系统（Thorpe and Kricka 1986）现由几家公司提供（如 BioRad 公司、Life Technologies 公司、Sigma-Aldrich 公司）。HRP 在过氧化氢存在下能催化鲁米诺的氧化，产生高反应性的内过氧化物，在分解至基态时发射 425nm 波长的光。范围广泛的化合物包括苯并噻唑、酚、萘酚和芳香胺，能显著增强反应中的发光量（Thorpe and Kricka 1986; Pollard-Knight et al. 1990; Kricka and Ji 1995），这种高达 1000 倍的信号放大增强了 HRP-鲁米诺系统的灵敏度（Whitehead et al. 1983; Hodgson and Jones 1989），达到能检测哺乳类动物 DNA Southern 杂交中单拷贝基因的程度。反应的最初几分钟即能迅速地产生光信号，其后逐渐减弱，1～2h 后即不再能检测到。在理想的情况下，用灰色蓝光敏感的 X 射线胶片曝光 1h 或用预冷的 CCD 照相机可在 Southern 杂交中检测出约  $1\mathrm{pg}(5\times10^{-17}\mathrm{~mol/L})$  靶 DNA（Beck and Köster 1990; Durrant et al. 1990; Kessler 1992）。于 80℃ 加热可从滤膜上除去探针（Dubitsky et al. 1992）。
+
+许多厂商（如 Applied Biosytems 公司、Life Technologies 公司、Roche Applied Science 公司、Sigma-Aldrich 公司）销售采用基于二氧环乙烷的化学发光底物（如 AMPPD 和 Lumigen-PPD 以及最新的衍生物 CSPD 和 CDP-Star）的碱性磷酸酶检测系统。CDP-Star 是迄今为止最灵敏的化学发光底物之一（Edwards et al. 1994; Höltke et al. 1994），其与 AMPPD 不同之处在于其金刚烷基和苯环中第 5 位携带卤素取代基，这就会抑制 1,2-二氧环乙烷的聚集倾向，并降低热降解引起的本底（Bronstein et al. 1991）。碱性磷酸酶切割 CDP-Star 的磷酸酯，使二氧环乙烷环的热稳定性显著降低，随后因 465nm 的光辐射而分解。尼龙膜（两性或正电荷）通过提供疏水域使信号明显增强（Tizard et al. 1990），化学发光反应中产生的去磷酸化中间体在这些疏水表位整合至前述疏水域，这使中间体得以稳定，并降低其非发光性分解。结果激发的二氧环乙烷阴离子发射光的强度作为辉光开始，强度在几分钟内增加，以后可持续几小时（Martin and Bronstein 1994）。尼龙膜和阴离子之间的疏水相互作用可引起发射光从 477nm 至 466nm 范围内约 10nm 的“蓝移”(blue shift)(Beck and Köster 1990; Bronstein 1990)。
+
+在多数实验情况下，化学发光物在尼龙膜上的延长动力学是有益的，可为多次曝光的影像捕获赢得时间。然而，当碱性磷酸酶激发的化学发光用于检测极低浓度的DNA、RNA或蛋白质时，如滤膜上的靶带仅含 $10^{-18}\mathrm{mol}$，慢动力学可能是不利的。在这种情况下，AMPPD的卤代衍生物如CSPD可能是更好的选择。将氯原子加到金刚烷基团第5位，可限制其与尼龙膜的相互作用。应用此复合物，达到最大光发射的时间明显减少，因此极小量靶分子亦可被迅速测出（Martin et al. 1991）。
+
+在理想的条件下，可检测到低达 1zmol（$10^{-21}$mol/L）的碱性磷酸酶或 $1 \times 10^{-19}$mol 的 DNA 分子（Schapp et al. 1989; Beck and Köster 1990; Bronstein 1990; Kricka 1992）。这意味着当尼龙膜在浅灰色蓝光敏感的 X 射线胶片上曝光约 5min 或用冷 CCD 相机（Höltke et al. 1995）即可检测到哺乳类动物基因组 DNA Southern 杂交中单拷贝基因。在 65℃用 50%甲酰胺处理可除去探针（Dubitsky et al. 1992），尼龙膜则可再用于几轮杂交。
+
+## 原位杂交
+
+原位杂交的检测方法与用于 Southern 和 Northern 杂交中的方法相似，一般依赖于链霉抗生物素蛋白或特异性抗体检测生物素或 DIG 的比色分析。杂交后，将标本与碱性磷酸酶
+
+---
+
+782
+
+分子克隆实验指南（原书第四版）
+
+呈色试剂 NBT 和 BCIP 孵育，然后在明视场显微镜下观察。
+
+在FISH分析中，则用荧光染料偶联的检测试剂如链霉抗生物素蛋白或异硫氰酸荧光素（FITC）、罗丹明或得克萨斯红标记的抗生物素或抗DIG抗体检测生物素或DIG部分，在荧光显微镜下观察。
+
+## 直接检测系统
+
+这类检测系统中，核酸探针可直接用荧光染料标记，诸如荧光素、得克萨斯红、罗丹明、Cy3或Cy5（Agrawal et al. 1986）、镧系元素螯合剂（铕）（Templeton et al. 1991; Dahlén et al. 1994）、吖啶酯（Nelson et al. 1992）或酶[如碱性磷酸酶（Jablonski et al. 1986）或HRP（Renz and Kurz 1984）]。检测这类共价连接的加合物的存在，可采用包括比色法、化学发光法、生物发光法、时间分辨荧光测定术或能量转移/荧光猝灭等多种技术的任意一种进行。如用加合物特异性的酶-抗体缀合物，可将直接检测法转变成间接检测法。
+
+由于荧光化合物直接标记核酸为自动化 DNA 测序奠定了基础（Smith et al. 1986; Ansorge et al. 1987; Prober et al. 1987），因而使分子生物学发生了革命性的变化（更多的讨论请见第 11 章导言）。当 DNA 在凝胶中时，每个 DNA 分子上的单个荧光加合物即足以被自动 DNA 测序仪测出。ABI 型自动测序仪具有精确区别不同荧光的能力，这意味着所有 4 个测序反应均可在凝胶的单一泳道中分析。然而，直接标记在自动测序中令人瞩目的成功经验仍未能扩展到分子克隆的其他领域。在这些领域中，直接非放射性标记检测方法很少应用的原因包括以下两点。
+
+\- 用于酶（如碱性磷酸酶）直接偶联的传统方法需广泛采用柱色谱法、聚丙烯酰胺凝胶电泳和/或高效液相层析法（HPLC），以获得纯化产物（Jablonski et al. 1986; Urdea et al. 1988; Farmar and Castaneda 1991）。虽有商品化试剂盒，但价格昂贵，且产物不纯。更新一些的偶联技术较为简单，但效率略低（Reyes and Cockerell 1993）。
+
+无论应用何种方法，每一种不同探针都需进行各自的偶联步骤。大分子的酶如碱性磷酸酶一经偶联，则可使探针复性的速率降低，在通常用于核酸复性的条件下可能不稳定。因此，杂交和洗涤需在低温下（通常小于 $50^{\circ}\mathrm{C}$ ）及水溶液中进行。在如此非严谨条件下，高本底是不可避免的问题。由于大量带电荷加合物的存在，酶直接标记的探针可非特异性且紧密地结合于某种类型的膜。例如，直接偶联于碱性磷酸酶的寡核苷酸探针在带电荷的尼龙膜上比在中性膜上的本底信号要强得多（Benzinger et al. 1995）。
+
+\- 哺乳类动物 DNA Southern 杂交中单拷贝序列的检测与许多直接检测方法的灵敏限度密切相关，除非有专用设备可供使用（Urdea et al. 1988）。例如，荧光加合物的检测需要用一种波长光照射，并在另一种波长下获得数据。因此，信号必须通过电子增强并以数字化储存。
+
+毫不奇怪，正是由于存在这些问题，直接检测技术已经失宠，而间接检测技术已经成为 Southern 和 Northern 杂交中靶核酸定位的主导非放射性检测方法。然而，尽管存在这些问题，用碱性磷酸酶直接标记的探针现仍有商品生产，用于法医学和病理学分析。这些探针的敏感性接近同位素标记的探针（Dimo-Simonin et al. 1992; Klevan et al. 1993; Benzinger et al. 1995）。预计这种标准化的非同位素标记探针在构建大量 DNA 图型（profile）或感染性疾病诊断实验室中的应用将大为增加。
+
+直接检测技术在 FISH 中的应用是一个更普及的领域，这可使杂交反应后探针-靶核酸杂交体在荧光显微镜下能够直接观察。直接荧光标记可通过以下两种方法中的任一种进行:可将荧光染料加至核酸的 5'端或 3'端（Bauman et al. 1980），或在酶标记反应中应用荧光染料缀合的 dNTP（Renz and Kurz 1984）。荧光标记的探针具有优于生物素或 DIG 标记探针
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+783
+
+的几个优点，包括特异性增强（由于使用的探针更短）和本底信号降低。然而，这些探针产生的信号强度较低，合成的成本较高，这使其在 FISH 中的广泛应用受到影响。
+
+![](../../raw/pages_0289-0304/images/page_293_image_3.jpg)
+
+## 设计寡核苷酸用作探针
+
+寡核苷酸探针的成功与否始于寡核苷酸的设计:①寡核苷酸能与靶核酸特异性杂交；②其物理特性（如长度和 GC 含量）不会对实验方案产生不必要的限制。在几种情况下，研究者对于寡核苷酸的设计无选择的余地。例如，当寡核苷酸作为等位基因特异性探针用于检测特定突变的存在与否时，寡核苷酸的显著特性在很大程度上受到其中突变的特殊序列的限制。然而，在多数其他情况下，研究者经过对参数（如长度、序列及寡核苷酸碱基的组成）进行精心调整，可提高成功的概率。以下概括的原则可用于寡核苷酸杂交探针设计的优化。
+
+## 解链温度和杂交温度
+
+理想的寡核苷酸探针应只与其靶序列互补。这种互补的双链应十分稳定，能够耐受杂交后为去除非特异性结合于非靶序列的洗涤步骤。对于长度为200个核苷酸或小于200个核苷酸的寡核苷酸来说，理想的杂交体解链温度的倒数（ $T_{m}^{-1}$ ，用凯氏温度表示）大致与寡核苷酸碱基数n的倒数（ $n^{-1}$ ）呈正比，其中n为寡核苷酸的碱基数（见Gait 1984）。
+
+有几个公式可以计算寡核苷酸引物与互补靶序列形成的杂交体的解链温度。由于这些公式均不够完善，因此选择何种公式主要依个人所好（有关计算解链温度的其他信息，请参阅信息栏“解链温度”）。引物与靶二聚体的解链温度应当用同一公式计算。
+
+可以采用所谓“Wallace规则”的经验性简便公式（Suggs et al. 1981b; Thein and Wallace 1986）计算在高离子强度的溶液中（如 $1\mathrm{mol} / \mathrm{LNaCl}$ 或 $6\times \mathrm{SSC}$ ）长度为 $15\sim 20$ 个核苷酸的理想二聚体的 $T_{\mathrm{m}}$ :
+
+$$
+T _ {\mathrm{m}} / ^ {\circ} \mathrm{C} = 2 (A + T) + 4 (G + C)
+$$
+
+式中， $(A + T)$ 是寡核苷酸中 A 残基与 T 残基的数目之和； $(G + C)$ 则是寡核苷酸中 G 残基与 C 残基的数目之和。
+
+由 Bolton 和 McCarthy（1962）提出、经 Baldino 等（1989）修正的公式较合理地预测了长度在 100 个核苷酸以下、阳离子浓度在 0.5mol/L 以下、 $(G + C)$ 含量为 30%～70% 时的寡核苷酸 $T_{m}$ 。该公式亦可补偿寡核苷酸与靶序列碱基的错配。
+
+$$
+T _ {\mathrm{m}} / ^ {\circ} \mathrm{C} = 8 1. 5 ^ {\circ} \mathrm{C} + 1 6. 6 (\log_ {1 0} [ \mathrm{Na} ^ {+} ]) + 0. 4 1 (\% [ G + C ]) - 6 7 5 / n - 1. 0 m
+$$
+
+式中，n 为寡核苷酸的碱基数目；m 为错配碱基所占的百分率。该公式亦可用于计算已知序列和长度的扩增寡核苷酸产物的解链温度。对于在标准条件下进行的 PCR 扩增，计算扩增产物的  $T_{m}$  理论值应当不超过  $85^{\circ}C$ ，从而确保了在变性步骤中双链分子彻底解链分离。请注意，在 PCR 实验中的变性温度被更精确地定义为同源分子群发生不可逆解链时的温度，而不可逆解链时的温度要高于  $T_{m}$ （例如， $G + C$  的含量为 50% 的 DNA 的变性温度为  $92^{\circ}C$ ）（Wetmur 1991）。
+
+以上两公式均未考虑碱基序列（相对于碱基组成而言）对寡核苷酸 $T_{m}$ 的影响。如果将邻近碱基的热力学参数计算在内，则可以获得更为准确的 $T_{m}$ 估算（Breslauer et al. 1986; Freier et al. 1986; Kierzek et al. 1986; Rychlik et al. 1990; Wetmur 1991; Rychlik 1994）。Wetmur（1991）提出的一个相对直接的公式如下:
+
+$$
+T _ {\mathrm{m}} / ^ {\circ} \mathrm{C} = (T ^ {0} \Delta H ^ {0}) / (\Delta H ^ {0} - \Delta G ^ {0} + R T ^ {0} \ln [ c ]) + 1 6. 6 \log_ {1 0} ([ \mathrm{Na} ^ {+} ] / \{1. 0 + 0. 7 [ \mathrm{Na} ^ {+} ] \}) - 2 6 9. 3
+$$
+
+其中
+
+$$
+\Delta H ^ {0} = \Sigma_ {\mathrm{nn}} (N _ {\mathrm{nn}} \Delta H _ {\mathrm{nn}} ^ {0}) + \Delta H _ {p} ^ {0} + \Delta H _ {e} ^ {0}
+$$
+
+---
+
+784
+
+分子克隆实验指南（原书第四版）
+
+$$
+\Delta G ^ {0} = \sum_ {\mathrm{nn}} (N _ {\mathrm{nn}} \Delta G _ {\mathrm{nn}} ^ {0}) + \Delta G _ {i} ^ {0} + \Delta G _ {e} ^ {0}
+$$
+
+式中， $N_{mn}$  为最近邻数目（如十四聚体的第 13 位）；R = 1.99cal/mol（凯氏温度）； $T^{0} = 298.2^{\circ}K$ ；c 为总摩尔链浓度； $[Na^{+}] \leqslant 1mol/L$ 。
+
+几个热力学项的近似值如下:
+
+平均最近邻焓
+
+$$
+\Delta H _ {\mathrm{nn}} ^ {0} = - 8. 0 \mathrm{kcal/mol}
+$$
+
+平均最近邻自由能
+
+$$
+\Delta G _ {\mathrm{nn}} ^ {0} = - 1. 6 \mathrm{kcal/mol}
+$$
+
+初始项
+
+$$
+\Delta G _ {i} ^ {0} = + 2. 2 \mathrm{kcal/mol}
+$$
+
+平均突出端焓
+
+$$
+\Delta H _ {e} ^ {0} = - 8. 0 \mathrm{kcal/mol/末端}
+$$
+
+平均突出端自由能
+
+$$
+\Delta G _ {e} ^ {0} = - 1 \mathrm{kcal/mol/末端}
+$$
+
+平均错配/循环焓
+
+$$
+\Delta H _ {p} ^ {0} = - 8. 0 \mathrm{kcal/mol/错配}
+$$
+
+注意对每一个错配或循环的  $N_{nn}$  应减去 2。
+
+用寡核苷酸作为探针时，通常在低于理论  $T_{m}$  5～12℃ 的条件下进行杂交，杂交后严格的洗涤是在低于  $T_{m}$  约 5℃ 下进行的。在如此接近理论  $T_{m}$  的条件下进行反应会得到两个结果:①减少了错配杂交体的数量；②降低了特异杂交体形成的速率（这一结果并不需要）。
+
+实际操作中，如果复性是在低于理论 $T_{\mathrm{m}}$ 值 $10^{\circ}\mathrm{C}$ 左右进行，那么长度大于200个核苷酸的互补DNA分子间的杂交反应是不可逆的。因为这样长的特异结合的双螺旋体在常规的杂交反应条件下（$68^{\circ}\mathrm{C}$，约 $1\mathrm{mol/L}\left[\mathrm{Na}^{+}\right]$）解旋的概率很小。但是，短寡核苷酸与其靶序列形成的杂合体（即使是特异结合的杂交体）在低于 $T_{\mathrm{m}}$ 值 $5\sim 10^{\circ}\mathrm{C}$ 条件下很容易发生解旋。因此，这类杂交反应被认为是可逆的。这一特点具有重要的实际意义。在杂交反应中，寡核苷酸的浓度要足够高（$0.1\sim 1.0\mathrm{pmol/mL}$），以使复性反应在 $3\sim 8\mathrm{h}$ 内快速达到平衡。而杂交后洗涤应短暂（$1\sim 2\mathrm{min}$），最初在低强度下进行，然后在与杂交条件近似的严格条件下完成（Miyada and Wallace 1987）。
+
+## 寡核苷酸探针的长度
+
+寡核苷酸越长，对靶序列的特异性则越高。下面的公式常用于计算一条特定序列的核苷酸在基因中出现的可能性（Nei and Li 1979）:
+
+$$
+K = \frac {[ g / 2 ] ^ {G + C} \times [ (1 - g) / 2 ] ^ {A + T}}{N}
+$$
+
+式中，K 为特定核苷酸在基因组中出现频率的预期值；g 为序列内 G+C 的相对含量，G、C、A、T 为寡核苷酸中各种核苷酸的数目。在一个长度为 N（以核苷酸表示）的双链基因组 DNA 中，与寡核苷酸互补的碱基位点数（n）应为 n = 2NK。
+
+用这个公式预测，14～15个核苷酸组成的寡核苷酸在N约为 $3.0\times10^{9}$ 的哺乳动物基因组中仅出现一次；而对于一个16个碱基的寡核苷酸，在典型的哺乳类互补DNA（cDNA）文库（约 $10^{7}$ 复杂度）中含有完全互补于该寡核苷酸的概率仅为1/10。当然，这是以哺乳动物基因组中核苷酸完全随机分布的假设而推测的。然而，事实并非如此。因为在基因中存在密码子偏性（Lathe 1985），而且大部分基因组中存在重复序列和基因家族。正是因为这些因素的影响，即使用长度为20个核苷酸的探针和引物，能够在哺乳动物基因组精确定位的概率也不会超过85%（Bains 1994）。
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+785
+
+为尽可能地减少非特异性杂交，建议使用长于统计学计算的最小要求的寡核苷酸。任何与探针杂交的克隆均有可能由目的基因衍生。切记，利用寡核苷酸探针筛选 cDNA 文库时，所观察到的阳性克隆数与统计学预测的出现频率并无相关性。例如，寡核苷酸匹配的序列恰好是丰度很高的 mRNA，此时探针检出的杂交体就会比理论预计值高出许多。因此建议在合成寡核苷酸探针或引物之前，应先仔细浏览 DNA 数据库，确保拟合成的序列仅存在于所需基因，而不存在于载体、其他基因或重复序列中（见 Mitsuhashi et al. 1994）。
+
+很难量化不完全匹配序列杂交的效应，因为不同类型的错配（单个碱基错配、一条链成环、邻近或远距离多点错配）均对双链 DNA（dsDNA）的稳定性产生不同的影响。例如，短寡核苷酸（约 16 个核苷酸）中心部位单碱基错配，仅约 7℃ 的变化就会使杂交体不稳定（Wetmur 1991），随之将在很大程度上减弱杂交信号。另一方面，探针 3' 端的错配则对杂交信号几乎无影响（Ikuta et al. 1987），但可能严重影响寡核苷酸引导 DNA 合成的作用。
+
+## 锁核酸
+
+锁核酸（locked nucleic acid，LNA）是一类核酸衍生物，分子中的核糖的2'氧原子和4'碳原子通过亚甲基桥联而形成环状的特殊构型（参阅综述，Vester and Wengel 2004）。这种锁合结构有利于Watson-Crick最佳结合。当LNA掺入DNA寡核苷酸时，LNA可增加双链产物的稳定性，因而优化了寡核苷酸杂交的特性（如解链温度）。每掺入一个LNA，可使寡核苷酸的 $T_{m}$ 值提高2～8℃。由于LNA提高了寡核苷酸的结合亲和力，因此可使用更短的探针。
+
+LNA 增强型寡核苷酸于 1998 年由 Wengel 及其同事首次合成（Koshkin et al. 1998），现在这种寡核苷酸已用于各种对特异性和敏感性要求过高的杂交分析实验，在原位杂交分析中作为探针亦颇受青睐（Thomsen et al. 2005; Kubota et al. 2006）。相对于 DNA 寡核苷酸来说，LNA 的唯一劣势是成本较高。因此，DNA 寡核苷酸仍为大多数研究者广泛接受。
+
+LNA 由许多厂商提供（如 Exiqon 公司、Integrated DNA Technologies 公司、Bio-Synthesis Inc 公司）。应用标准的 DNA 合成化学法可合成和掺入 LNA 碱基，LNA 增强型寡核苷酸可通过用于 DNA 的相同标准方法来纯化和分析。由于 LNA:DNA 双链的高亲和力和热稳定性，在一条寡核苷酸中掺入的 LNA 碱基应不超过 15 个，因为其可诱导自身杂交；对于各类杂交实验，一般推荐寡核苷酸中用 LNA 取代 4～6 个碱基。在寡核苷酸中 LNA 类似物的定位非常重要。为方便研究者，有几种软件程序可用于 LNA 的设计。其中应用最广泛的程序是 OligoDesign（Tolstrup et al. 2003），可随时进入 http://www.exiqon.com/oligo-tools 网站使用该程序。OligoDesign 软件以通过全基因组 BLAST 分析识别及过滤靶序列为特征，从而最大限度地减少与非靶序列的交叉杂交。而且该程序还可为预测解链温度、自身复性及 LNA 取代的寡核苷酸的二级结构，以及靶核苷酸序列的二级结构进行计算。
+
+与DNA寡核苷酸相似的是，LNA寡核苷酸探针可通过酶学法标记5'端或3'端:5'端标记反应用T4多核苷酸激酶在 $[\gamma -^{32}\mathrm{P}]\mathrm{ATP}$ 的存在下进行，而3'端标记则应用末端转移酶和放射性标记物、生物素、DIG或荧光素标记的核苷酸进行。
+
+## 寡核苷酸简并库
+
+在分子克隆中，常常会遇到这样的情况:对纯化蛋白质测序可得到一段短氨基酸序列。由于遗传密码的简并性，许多寡核苷酸可能编码这一段氨基酸。例如，可编码精氨酸-苯丙氨酸-酪氨酸-丙氨酸-色氨酸-赖氨酸的18个核苷酸就有64种之多。然而，在这些寡核苷酸中，只有一种与目的基因编码序列完全匹配。因为无法预知究竟哪一种寡核苷酸是该基因的真正配对物，只能合成含所有编码可能的寡核苷酸组合库来作为探针。根据氨基酸序列
+
+---
+
+786
+
+分子克隆实验指南（原书第四版）
+
+的长度及每一位置的简并核苷酸数，组合库可能含多达数百个寡核苷酸。如果能建立一种杂交条件，使仅有完全匹配的寡核苷酸与目的基因能形成稳定的杂交体，那么目的基因的克隆就能很容易地从基因组或 cDNA 文库中分离出来（见 Goeddel et al. 1980; Agarwal et al. 1981; Sood et al. 1981; Suggs et al. 1981b; Wallace et al. 1981; Toole et al. 1984; Jacobs et al. 1985; Lin et al. 1985）。
+
+简并性寡核苷酸库通常用于筛选一系列候选克隆，然后再从这些克隆中进一步鉴定出真正的靶基因。通常应选用能检测到寡核苷酸库中富含A/T序列与其可能的靶序列之间形成完全匹配的杂交体的筛选条件。在此条件下形成的其他稳定杂交体，无论是否完全配对，都将其作为其他候选克隆。
+
+精确计算单一寡核苷酸与其靶序列形成完全互补杂交体的 $T_{\mathrm{m}}$ 值较容易。然而，如果采用寡核苷酸库，其中各自的 $\mathrm{G + C}$ 含量又相差甚远，就不可能估算出完全一致的 $T_{\mathrm{m}}$ 值。由于无法得知成套寡核苷酸中究竟哪一个序列将与靶序列完全配对，所以必须采用能使 $\mathrm{G + C}$ 含量最低的寡核苷酸可实现有效杂交的条件。通常采用比成套寡核苷酸中 $\mathrm{A + T}$ 最丰富的成员的 $T_{\mathrm{m}}$ 计算值低 $2^{\circ}\mathrm{C}$ 的杂交条件（Suggs et al. 1981a）。不过，这种“最小公分母”式的条件会导致假阳性结果的出现，因为由 $\mathrm{G + C}$ 含量更高的寡核苷酸所形成的错配杂交体可能会比由正确的寡核苷酸所形成的完全配对的杂交体更为稳定。鉴于用成套寡核苷酸筛选cDNA文库所获阳性克隆的数目往往可大可小，所以在多数情况下这一问题并不严重。因此，就有可能通过其他试验（如DNA序列测定，或用对应于另一段氨基酸序列的第二套寡核苷酸进行杂交）区分假阳性克隆。
+
+## 烷基季铵盐
+
+当阳性克隆明显过多时，应考虑使用含季铵盐如氯化四乙铵（TEACl）或氯化四甲铵（TMACl）的杂交液（Melchior and von Hippel 1973; Jacobs et al. 1985, 1988; Wood et al. 1985; Gitschier et al. 1986; DiLella and Woo 1987）。季铵盐与富含A/T的聚合体结合（Shapiro et al. 1969），能减少A/T与G/C碱基对解链的差异（Melchior and von Hippel 1973; Riccelli and Benight 1993）。在有TEACl或TMACl存在的情况下，寡核苷酸与DNA杂交体的 $T_{m}$ 值取决于其长度，而与其碱基组成的关系较小。依据寡核苷酸组合库中核苷酸长度选择适当的杂交温度，可最大限度地降低错配的可能性。
+
+在应用寡核苷酸组合库筛选 cDNA 或基因组文库之前，精确估计含 TEAC1 或 TMAC1 时的 $T_m$ 值十分重要。Jacobs 等（1988）测定了在含钠离子或烷基季铵盐离子溶液中，几种不同 G+C 含量的寡核苷酸探针长度与靶序列形成杂交体的 $T_i$ 值（不可逆解链温度）之间的关系。长度为 16 个和 19 个核苷酸的杂交体在 TMAC1 中比在含钠盐的溶液中解链的温度范围小。例如，16 个核苷酸的寡核苷酸在含 TMAC1 的溶液中解链的温度范围为 3°C，而在 SSC 中为 17°C。
+
+对于一定长度的寡核苷酸链，理想的杂交温度一般选择比该链的 $T_{\mathrm{i}}$ 值低 $5^{\circ}\mathrm{C}$ 为宜。17个核苷酸在 $3\mathrm{mol / L}$ TMAC1中的推荐温度为 $48\sim 50^{\circ}\mathrm{C}$，19个核苷酸为 $55\sim 57^{\circ}\mathrm{C}$，20个核苷酸为 $58\sim 66^{\circ}\mathrm{C}$ 。有两点需要强调:第一，在含TMAC1溶液中杂交体的 $T_{\mathrm{i}}$ 值一般高于在含TEAC1的溶液中 $15\sim 20^{\circ}\mathrm{C}$，而在含TMAC1的溶液中较高的 $T_{\mathrm{i}}$ 值有助于杂交时抑制固相载体（如尼龙膜）对探针的非特异性吸收；第二，寡核苷酸长度小于16个核苷酸时，使用含TAMC1的杂交液与含钠离子的杂交液相比无明显优势。
+
+## 猜测体
+
+猜测体是较长的合成寡核苷酸(通常为30～75个核苷酸)，其对应的氨基酸序列为15～25个氨基酸残基。由于遗传密码子的简并性，编码这段氨基酸的核苷酸序列可达数千种。
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+787
+
+除非设计者有极好的运气，在每一个位置上都恰好选对了密码子，否则猜测体不可能与靶基因完全匹配。但因绝大多数氨基酸密码子仅在第三位有所区别，因此在密码子的三个核苷酸中至少有两个是完全匹配的。此外，可以通过选择特殊物种、细胞器或细胞类型的偏性密码子，将第三位的错配概率降至最低。因此，设计较长序列的猜测体，通过完全匹配碱基延伸片段的稳定性，有可能克服错配带来的不利影响。更详细的内容见信息栏“设计猜测体”。
+
+## 设计猜测体
+
+- 避免选择在密码子之间产生 CpG 序列的密码子。这种二核苷酸结构在哺乳动物 DNA 中显然不具代表性（Bird 1980），而密码子之间 CpG 的出现频率大约只有预期值的一半（Lathe 1985）。
+- 选择在所研究的种属中编码特定氨基酸的常见密码子。基因中密码子相对使用频率比较表已由 Wada 等（1992）发表，或可从网址 http://www.kazusa.or.jp/codon 中检索。
+- 切记，偶尔有某些基因家族明显表现出喜用或厌用某些密码子的倾向。例如，组蛋白基因喜用富含A和T的密码子，酵母中高表达的蛋白质则高度倾向于一组密码子（Bennetzen and Hall 1982），而很少用UCG和UAU来编码丝氨酸和异亮氨酸（Ogden et al. 1984）。
+- 不同的哺乳类动物组织显示不同的密码子使用谱（见 Newgard et al. 1986）。因此，对于任何已克隆的并在同一组织中表达的目的基因，有必要确定其密码子的使用。
+- 需要在 C 与 T 作出选择的位置上，如果没有较强的密码子偏性，应选用 T。对于这一规则仍有争议。但有证据显示，rG:rU 碱基对比 rA:rC 碱基对更稳定（Uhlenbeck et al. 1971）。但是，将此推广到 dG:dT 碱基对时（Wu 1972），则既有争议（Smith 1983）又有赞同（Martin et al. 1985）。
+- 检查由选定的核苷酸所组成的序列中是否存在会降低杂交效率的内部互补区。尽可能避免选在杂交条件下可能形成稳定双螺旋体的序列。
+- 确保寡核苷酸 5'端的位置不含胞嘧啶。由于尚不清楚的原因，寡核苷酸放射性标记的效率取决于其序列（van Houten et al. 1998）。5'端为胞嘧啶的寡核苷酸的标记效率仅为起始部位为 A 或 T 寡核苷酸的 1/4，是以 G 开始的寡核苷酸的标记效率低 1/6 倍。
+
+能保证在模糊位置上选择出正确密码子的规则是不存在的，同样也不可能预计正确地选择多少个密码子才能取得成功。根据数学计算（Lathe 1985），即使在随机的基础上选用所有可能的密码子来设计探针，其与真实基因的同源性至少可望达到 $76\%$；如果根据由统计学得出的目的种属的偏性密码子使用频率来选择可替换的密码子，预期同源性可增至 $82\%$；如果选择缺少亮氨酸、精氨酸和丝氨酸（这三种氨基酸各由6个密码子编码）的区域，同源性还可以进一步提高（至 $86\%$）。很明显，随着同源程度的提高，猜测体作为目的基因探针的特异性也更高，所形成的杂交体也能在更广泛的杂交条件下保持稳定。如果用猜测体作为探针，成功地将一个选定的基因分离出来，那么这段基因与相应猜测体序列之间的同源性可能在低至 $71\%$ 与高达 $97\%$ 的范围之间。除非密码子的选择十分不走运，否则猜测体与其靶基因的同源性可以设计在这个范围的上限。除总体同源性外，猜测体相邻位置上几个核苷酸完全匹配对于成功同样是十分重要的，已成功的猜测体几乎都含有这样与靶基因完全匹配的区域。尽管无法保证猜测体一定会含有完全匹配序列，但总体同源性的增加能够显著提高其出现的概率。
+
+有时合成由 2～8 个猜测体组成的、囊括在某一氨基酸区域所有可能密码子的一小套寡
+
+---
+
+788
+
+分子克隆实验指南（原书第四版）
+
+核苷酸是可行的。当一个密码子简并性很高的氨基酸将肽段分为两段，而每段内可能仅有少数碱基错配时，采用这种有限替代法是非常有用的。通过这种方法，就有可能使猜测体内含有一段能与靶基因连续性完全配对的序列。然而，在使用猜测体的混合物作为探针时，由“正确的”猜测体探针所产生的杂交信号强度会减弱。对于由磷酸化或由凹端补平法标记的猜测体，即使杂交信号减弱至原来的1/8，亦无碍于对目的克隆的识别。
+
+使用猜测体最关键的步骤或许就是选择杂交条件。所选用的温度必须足够高，以抑制探针与错误序列的杂交，但又不可过高，从而不利于正确序列（即使可能为错配）的杂交。因此，在使用寡核苷酸筛选文库之前，可先做一系列实验，在不同严谨程度的条件下进行 Northern 或基因组 Southern 杂交（Anderson and Kingston 1983; Wood et al. 1985）。Lathe（1985）提出了一组表示洗涤液温度与探针长度及同源性关系的理论曲线。以这些曲线为指导，可通过在不同温度下用寡核苷酸对一系列硝酸纤维素膜或尼龙膜进行杂交，来确定用于检测探针的互补序列的最适条件。可先在室温下用 $6 \times$ SSC 洗涤，然后在杂交所用的温度下用 $6 \times$ SSC 短暂洗涤 $5 \sim 10\mathrm{min}$ 。此法中杂交和洗涤均在相同的温度及离子强度下进行，结果要比在严谨性较低的条件下杂交和在严谨性较高的条件下洗涤的分辨力更强。如不能做预实验，可按以下方法估算解链温度（$T_{\mathrm{m}}$）:
+
+1. 假定在所有简并位置上都含 A 或 T，计算寡核苷酸的最低 G+C 含量。
+
+2. 根据所得 G+C 含量，按以下公式计算双链 DNA 的  $T_{m}$  值:
+
+$$
+T _ {\mathrm{m}} = 8 1. 5 ^ {\circ} \mathrm{C} + 1 6. 6 (\log_ {1 0} [ \mathrm{Na} ^ {+} ]) + 0. 4 1 (\% [ G + C ]) - 5 0 0 / n
+$$
+
+式中，n 为核苷酸数目，500/n 是由数家实验室测定的双链长度对解链温度影响的结果推导而来的（Hall et al. 1980），此公式仅适用于钠离子浓度等于或小于 1.0mol/L 时。
+
+3. 假设所选的简并密码子无一正确，计算可能出现的最大错配数。每出现 $1\%$ 的错配率，则从计算所得的 $T_{\mathrm{m}}$ 值中减去 $1^{\circ}\mathrm{C}$，得出的值即为探针与其靶序列形成的错配最多的杂交体的 $T_{\mathrm{m}}$ 值。
+
+几乎可以肯定，实际  $T_{m}$  值要高于按这种最坏条件计算的  $T_{m}$  值。假设简并性位点上使用的碱基是随机的，那么 4 个中应有 1 个是正确的，其中近一半预测为 G 或 C。因此，所观察到的  $T_{m}$  值应大大高于预测值。但是，为了最大限度地减少目的克隆的丢失，最好在低于上述  $T_{m}$  预测值 5～10℃ 的条件下杂交和洗涤。如果在此条件下出现非特异性杂交，则应在更高温度下重新杂交，或在更严格的条件下洗涤。
+
+猜测体在 20 世纪 80 年代中期最为流行，此时正是新创建的重组 DNA 公司想方设法地尝试克隆有商业价值基因的时期，其间获得了许多有价值基因的 cDNA 及基因组克隆。然而，近年来猜测体已被使用一组过量引物的 PCR 法所制备的探针取代。这主要是由于基于 PCR 技术的方法只需要短得多的已知氨基酸序列。而如有足够长的氨基酸序列时，猜测体仍然为首选探针。应用猜测体有相当多成功的经验，且不会出现假象。而应用 PCR 法时，即使是最好的研究者，也可能获得假阳性结果。
+
+## 通用碱基
+
+通用碱基可降低氢键的特异性，因而能与模糊位置上的天然碱基配对，而不中断 DNA 双链。近几年来，首选的通用碱基是嘌呤核苷肌苷，它的中性碱基次黄嘌呤可与胞嘧啶、胸腺嘧啶及腺嘌呤稳定地配对。由于其缺少 2 位氨基基团，肌苷与胞苷间的碱基配对只有 2 个氢键（类似 A:T 碱基对），而不是 C:G 间的 3 个氢键（Corfield et al. 1987; Xuan and Weber 1992）。在大多数其他特性上，肌苷类似鸟苷。
+
+\- 肌苷天然出现于某些转移 RNA（tRNA）的第一位（摇摆位）上，除与胞苷和尿苷配对外，还与腺苷配对。而正常情况下，这些核苷酸是与这一位置上的鸟苷配对的（Crick 1966）。
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+789
+
+- 肌苷能够占据反密码子的中间位，并在此与腺苷配对（Davis et al. 1973）。在 B 型 DNA 双螺旋中，肌苷与腺苷间的配对，肌苷采取与呋喃糖部分成反式位，而腺苷则为顺式构象（Corfield et al. 1987）。这种排列形式与鸟苷和腺苷之间形成的错配十分相似（Brown et al. 1986）。
+- 聚（rI）及聚（dI）与聚（rC）及聚（dC）之间形成的螺旋结构很稳定，足以用作各种 RNA 和 DNA 聚合酶的模板。酶可以把胞嘧啶掺入到聚合产物中（见综述，Felsenfeld and Miles 1967; Hall et al. 1985）。
+
+含有肌苷的合成寡核苷酸和猜测体组合库已广泛用作杂交探针，以筛选 cDNA 或基因组文库，基于已知的部分氨基酸序列，获得蛋白质的编码基因。尽管肌苷能与其他三种核苷酸形成氢键，但其碱基对的稳定性不如等价含鸟苷的碱基对（Martin et al. 1985）。含肌苷双螺旋体的解链温度依与其配对的同类碱基及周围序列的不同而存在较大差异。与含其他碱基的双螺旋体相反，在最坏的情况下，含肌苷的合成寡核苷酸双螺旋体的解链温度可能会降低  $15^{\circ}$ C，相当于 2～3kcal/mol 的碱基对稳定性的差别（Martin et al. 1985; Kawase et al. 1986）。虽然这种情况不够理想，但尚有惊人的实验结果:用含肌苷的寡核苷酸已成功地从高度复杂的 cDNA 和基因组文库中克隆到许多基因（Jaye et al. 1983; Ohtsuka et al. 1985; Takahashi et al. 1985; Bray et al. 1986; Nagata et al. 1986）。
+
+当设计用于筛选灵长类或哺乳类 cDNA 文库的寡核苷酸，且该寡核苷酸在不确定位含肌苷时，根据人类基因天然使用的密码子以及 CpG 序列在人 DNA 中不具备代表性，推荐使用表 13-2 列出的密码子。
+
+表 13-2 推荐用于寡核苷酸探针的含肌苷的密码子
+
+| 氨基酸 | 密码子 | 氨基酸 | 密码子 |
+| --- | --- | --- | --- |
+| A (Ala) | GCI | M (Met) | ATG |
+| C (Cys) | TGC$^{a}$ | N (Asn) | AAC$^{a}$ |
+| D (Asp) | GAT | P (Pro) | CCI |
+| E (Glu) | GAI | Q (Gln) | CAI |
+| F (Phe) | TTC$^{a}$ | R (Arg) | CGI$^{c}$ |
+| G (Gly) | GGI | S (Ser) | TCC$^{b,c}$ |
+| H (his) | CAC$^{a}$ | T (Thr) | ACI |
+| I (Ile) | ATI | V (Val) | GTI |
+| K (Lys) | AAI | W (Trp) | TGG |
+| L (Leu) | CTI$^{c}$ | Y (Tyr) | TAC$^{a}$ |
+
+注:a. 如果下一个密码子的第一位核苷酸是 G，该密码子第三位则用 T；
+
+b. 如果下一个密码子的第一位核苷酸是 G，该密码子第三位则用 I;
+
+c. 尽可能避开具有 6 个密码子的氨基酸。
+
+## 在简并位置上含肌苷的寡核苷酸的杂交
+
+虽然含中性碱基肌苷的寡核苷酸探针的杂交条件尚未进行广泛的研究，但仍可根据以下提示对  $T_{m}$  作出保守的估计:
+
+- 从探针的核苷酸总数中减去肌苷的数量，得出 S。
+- 计算 $S$ 中的 $\mathrm{G} + \mathrm{C}$ 含量。
+- 用 Wallace 规则、Baldino 算法或 Wetmur 公式计算含 $S$ 的完全匹配杂交体的 $T_{\mathrm{m}}$。
+- 杂交条件控制在比 $T_{\mathrm{m}}$ 预期值低 $15 \sim 20^{\circ} \mathrm{C}$ 。
+
+含中性碱基的寡核苷酸杂交体的  $T_{m}$  也可以用方案 8 介绍的实验方法测算。含肌苷的寡核苷酸可使用含 TMAC1 或 TEAC1 的洗涤缓冲液（见 Andersson et al. 1989）。
+
+---
+
+790
+
+分子克隆实验指南（原书第四版）
+
+## 参考文献
+
+- Agarwal KL, Brunstedt J, Noyes BE. 1981. A general method for detection and characterization of an mRNA using an oligonucleotide probe. J Biol Chem 256: 1023–1028.
+- Agrawal S, Christodoulou C, Gait MJ. 1986. Efficient methods for attaching non-radioactive labels to the 5' ends of synthetic oligodeoxyribonucleotides. Nucleic Acids Res 14: 6227–6245.
+- Anderson S, Kingston IB. 1983. Isolation of a genomic clone for bovine pancreatic trypsin inhibitor by using a unique-sequence synthetic DNA probe. Proc Natl Acad Sci 80: 6838–6842.
+- Andersson S, Davis DL, Dahlbäck H, Jörnvall H, Russell DW. 1989. Cloning, structure, and expression of the mitochondrial cytochrome P-450 sterol 26-hydroxylase, a bile acid synthetic enzyme. J Biol Chem 264:8222–8229.
+- Ansorge W, Sproat B, Stegemann J, Schwager C, Zenke M. 1987. Automated DNA sequencing: Ultrasensitive detection of fluorescent bands during electrophoresis. Nucleic Acids Res 15: 4593–4602.
+- Bains W. 1994. Selection of oligonucleotide probes and experimental conditions for multiplex hybridization experiments. Genet Anal Tech Appl 11: 49–62.
+- Baldino FJ, Chesselet MF, Lewis ME. 1989. High resolution in situ hybridization. Methods Enzymol 168: 761–777.
+- Bauman JG, Wiegant J, Borst P, van Duijn P. 1980. A new method for fluorescence microscopical localization of specific DNA sequences by in situ hybridization of fluorochromelabelled RNA. Exp Cell Res 128:485–490.
+- Beck S, Köster H. 1990. Applications of dioxetane chemiluminescent probes to molecular biology. Anal Chem 62: 2258–2270. (Erratum Anal Chem [1991] 63: 848.)
+- Beck S, O'Keeffe T, Coull JM, Koster H. 1989. Chemiluminescent detection of DNA: Application for DNA sequencing and hybridization. Nucleic Acids Res 17: 5115–5123.
+- Bennetzen JL, Hall BD. 1982. The primary structure of the Saccharomyces cerevisiae gene for alcohol dehydrogenase. J Biol Chem 257: 3018–3025.
+- Benzinger EA, Riech AK, Shirley RE, Kucharik KR. 1995. Evaluation of the specificity of alkaline phosphatase-conjugated oligonucleotide probes for forensic DNA analysis. Appl Theor Electrophor 4: 161–165.
+- Bird AP. 1980. DNA methylation and the frequency of CpG in animal DNA. Nucleic Acids Res 8: 1499–1504.
+- Bolton ET, McCarthy BJ. 1962. A general method for the isolation of RNA complementary to DNA. Proc Natl Acad Sci 48: 1390.
+- Bray P, Carter A, Simons C, Guo V, Puckett C, Kamholz J, Spiegel A, Nirenberg M. 1986. Human cDNA clones for four species of Gα signal transduction protein. Proc Natl Acad Sci 83: 8893–8897.
+- Breslauer KJ, Frank R, Blöcker H, Marky LA. 1986. Predicting DNA duplex stability from the base sequence. Proc Natl Acad Sci 83: 8893–8897.
+- Bronstein I. 1990. Chemiluminescent 1,2-dioxetane-based enzyme substrates and their applications. In Luminescence immunoassays and molecular applications (ed Van Dyke K, Van Dyke R), pp. 255–274. CRC, Boca Raton, FL.
+- Bronstein I, Edwards B, Voyta JC. 1989a. 1,2-dioxetanes: Novel chemiluminescent enzyme substrates. Applications to immunoassays. J Biolumin Chemilumin 4: 99–111.
+- Bronstein I, Voyta JC, Edwards B. 1989b. A comparison of chemiluminescent and colorimetric substrates in a hepatitis B virus DNA hybridization assay. Anal Biochem 180: 95–98.
+- Bronstein I, Cate RL, Lazzarri K, Ramachandran KL, Voyta JC. 1989c. Chemiluminescent 1,2-dioxetane based enzyme substrates and their application in the detection of DNA. Photochem Photobiol 49:S9–S10.
+- Bronstein I, Joa RR, Voyta JC, Edwards B. 1991. Novel chemiluminescent adamantyl 1,2-dioxetane enzyme substrates. In Proceedings of the 6th international symposium on bioluminescence and chemiluminescence: Current status (ed Stanley PE, Kricka LJ), pp. 73–82. Wiley, Chichester, UK.
+- Brown T, Hunter WN, Kneale G, Kennard O. 1986. Molecular structure of the G·A base pair in DNA and its implications for the mechanism of transversion mutations. Proc Natl Acad Sci 83: 2402–2406.
+- Chan SD, Dill K, Blomdahl J, Wada HG. 1996. Nonisotopic quantitation of mRNA using a novel RNase protection assay: Measurement of erbB-2 mRNA in tumor cell lines. Anal Biochem 242: 214–220.
+- Chan VT, Fleming KA, McGee JO. 1985. Detection of sub-picogram quantities of specific DNA sequences on blot hybridization with biotinylated probes. Nucleic Acids Res 13: 8083–8091.
+- Chu BC, Orgel LE. 1985. Detection of specific DNA sequences with short biotin-labeled probes. DNA 4: 327–331.
+- Corfield PW, Hunter WN, Brown T, Robinson P, Kennard O. 1987. Inosine-adenine base pairs in a B-DNA duplex. Nucleic Acids Res 15:7935–7949.
+- Crick FH. 1966. Codon-anticodon pairing: The wobble hypothesis. J Mol Biol 19: 548–555.
+- Dahlén P, Liukkonen L, Kwiatkowski M, Hurskainen P, Iitia A, Siitari H, Ylikoski J, Mukkala VM, Lovgren T. 1994. Europium-labeled oligonucleotide hybridization probes: Preparation and properties. Bioconjug Chem 5: 268–272.
+- Davis BD, Anderson P, Sparling PF. 1973. Pairing of inosine with adenosine in codon position two in the translation of polyinosinic acid. J Mol Biol 76: 223–232.
+- Diamandis EP, Hassapoglidou S, Bean CC. 1993. Evaluation of nonisotopic labeling and detection techniques for nucleic acid hybridization. J Clin Lab Anal 7: 174–179.
+- DiLella AG, Woo SL. 1987. Hybridization of genomic DNA to oligonucleotide probes in the presence of tetramethylammonium chloride. Methods Enzymol 152: 447–451.
+- Dimo-Simonin N, Brandt-Casadevall C, Gujer HR. 1992. Chemiluminescent DNA probes; evaluation and usefulness in forensic cases. Forensic Sci Int 57: 119–127.
+- Dubitsky A, Brown J, Brandwein H. 1992. Chemiluminescent detection of DNA on nylon membranes. BioTechniques 13: 392–400.
+- Düring K. 1993. Non-radioactive detection methods for nucleic acids separated by electrophoresis. J Chromatogr 618: 105–131.
+- Durrant I, Benge LC, Sturrock C, Devenish AT, Howe R, Roe S, Moore M, Scozzafava G, Proudfoot LM, Richardson TC, et al. 1990. The application of enhanced chemiluminescence to membrane-based nucleic acid detection. BioTechniques 8: 564–570.
+- Edwards B, Sparks A, Voyta JC, Bronstein I. 1994. New chemiluminescent dioxetane enzyme substrates. In Proceedings of the 8th international symposium on bioluminescence and chemiluminescence: Fundamentals and applied aspects (ed Campbell AK, et al.), pp. 56–59. Wiley, Chichester, UK.
+- Farmar JG, Castaneda M. 1991. An improved preparation and purification of oligonucleotide-alkaline phosphatase conjugates. BioTechniques 11:588–589.
+- Felsenfeld G, Miles HT. 1967. The physical and chemical properties of nucleic acids. Annu Rev Biochem 31: 407–448.
+- Forster AC, McInnes JL, Skingle DC, Symons RH. 1985. Non-radioactive hybridization probes prepared by the chemical labelling of DNA and RNA with a novel reagent, photobiotin. Nucleic Acids Res 13:745–761.
+- Freier SM, Kierzek R, Jaeger JA, Sugimoto N, Caruthers MH, Neilson T, Turner DH. 1986. Improved free-energy parameters for predictions of RNA duplex stability. Proc Natl Acad Sci 83: 9373–9377.
+- Gait MJ, ed. 1984. An introduction to modern methods of DNA synthesis. In Oligonucleotide synthesis: A practical approach, pp. 1–22. IRL, Oxford, UK.
+- Gebeyehu G, Rao PY, SooChan P, Simms DA, Klevan L. 1987. Novel biotinylated nucleotide: Analogs for labeling and colorimetric detection of DNA. Nucleic Acids Res 15: 4513–4534.
+- Gitschier J, Wood WI, Shuman MA, Lawn RM. 1986. Identification of a missense mutation in the factor VIII gene of a mild hemophiliac. Science 232: 1415–1416.
+- Goeddel DV, Yelverton E, Ullrich A, Heyneker HL, Miozzari G, Holmes W, Seeburg PH, Dull T, May L, Stebbing N, et al. 1980. Human leukocyte interferon produced by E. coli is biologically active. Nature 287: 411–416.
+- Habili N, McInnes JL, Symons RH. 1987. Nonradioactive, photobiotin-labelled DNA probes for the routine diagnosis of barley yellow dwarf virus. J Virol Methods 16: 225–237.
+- Hall K, Cruz P, Chamberlin MJ. 1985. Extensive synthesis of poly[r(G-C)] using Escherichia coli RNA polymerase. Arch Biochem Biophys 236: 47–51.
+- Hall TJ, Grula JW, Davidson EH, Britten RJ. 1980. Evolution of sea urchin non-repetitive DNA. J Mol Evol 16: 95–110.
+- Hegnauer R. 1971. Pflanzenstoffe und Pflanzensystematik (plant constituents and plant taxonomy). Naturwissenschaften 58: 585–598.
+- Henegariu O, Bray-Ward P, Ward DC. 2000. Custom fluorescent-nucleotide synthesis as an alternative method for nucleic acid labeling. Nat Biotechnol 18: 345–348.
+- Hodgson M, Jones P. 1989. Enhanced chemiluminescence in the peroxidase-luminol- $H_{2}O_{2}$ system: Anomalous reactivity of enhancer phenols with enzyme intermediates. J Biolumin Chemilumin 3: 21–25.
+- Höltke H-J, Seibl R, Burg J, Mühlegger K, Kessler C. 1990. Non-radioactive labeling and detection of nucleic acids. II. Optimization of the digoxygenin system. Biol Chem Hoppe-Seyler 371: 929–938.
+- Höltke H-J, Schneider S, Ettl J, Binsack R, Obermaier I, Seller M, Sagner G. 1994. Rapid and highly sensitive detection of dioxigenin-labelled nucleic acids by improved chemiluminescent substrates. In Proceedings of the 8th symposium on bioluminscence and chemiluminscence: Fundamentals and applied aspects (ed Campbell AK, et al.), pp. 273–276. Wiley, Chichester, UK.
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+791
+
+- Höltke H-J, Ankenbauer W, Mühlegger K, Rein R, Sagner G, Seibl R, Walter T. 1995. The digoxigenin (DIG) system for non-radioactive labelling and detection of nucleic acids: An overview. Cell Mol Biol 41:883–905.
+- Horwitz JP, Chua J, Noel M, Donatti JT, Freisler J. 1966. Substrates for cytochemical demonstration of enzyme activity. II. Some dihalo-3-indolyl phosphates and sulfates. J Med Chem 9: 447.
+- Ikuta S, Takagi K, Wallace RB, Itakura K. 1987. Dissociation kinetics of 19 base paired oligonucleotide-DNA duplexes containing different single mismatched base pairs. Nucleic Acids Res 15: 797–811.
+- Jablonski E, Moomaw EW, Tullis RH, Ruth JL. 1986. Preparation of oligodeoxynucleotide-alkaline phosphatase conjugates and their use as hybridization probes. Nucleic Acids Res 14: 6115–6128.
+- Jacobs K, Shoemaker C, Rudersdorf R, Neill SD, Kaufman RJ, Mufson A, Seehra J, Jones SS, Hewick R, Fritsch EF, et al. 1985. Isolation and characterization of genomic and cDNA clones of human erythropoietin. Nature 313: 806–810.
+- Jacobs KA, Rudersdorf R, Neill SD, Dougherty JP, Brown EL, Fritsch EF. 1988. The thermal stability of oligonucleotide duplexes is sequence independent in tetraalkylammonium salt solutions: Application to identifying recombinant DNA clones. Nucleic Acids Res 16: 4637–4650.
+- Jaye M, de la Salle H, Schamber F, Balland A, Kohli V, Findeli A, Tolstoshev P, Lecocq JP. 1983. Isolation of a human anti-haemophilic factor IX cDNA clone using a unique 52-base synthetic oligonucleotide probe deduced from the amino acid sequence of bovine factor IX. Nucleic Acids Res 11: 2325–2335.
+- Kagiyama N, Fujita S, Momiyama M, Saito H, Shirahama H, Hori SH. 1992. A fluorescent detection method for DNA hybridization using 2-hydroxy-3-naphthoic acid-2-phenylanilide phosphate as a substrate for alkaline phosphatase. Acta Histochem Cytochem 25: 467–471.
+- Kawase Y, Iwai S, Inoue H, Miura K, Ohtsuka E. 1986. Studies on nucleic acid interactions. I. Stabilities of mini-duplexes (dG2A4XA4G2-dC2T4YT4C2) and self-complementary d(GGGAAXYTTCCC) containing deoxyinosine and other mismatched bases. Nucleic Acids Res 14: 7727–7736.
+- Keller GH, Cumming CU, Huang DP, Manak MM, Ting R. 1988. A chemical method for introducing haptens onto DNA probes. Anal Biochem 170: 441–450.
+- Kerkhof L. 1992. A comparison of substrates for quantifying the signal from a nonradiolabeled DNA probe. Anal Biochem 205: 359–364.
+- Kessler C. 1991. The digoxigenin:anti-digoxigenin (DIG) technology: A survey on the concept and realization of a novel bioanalytical indicator system. Mol Cell Probes 5: 161–205.
+- Kessler C. 1992. Nonradioactive labeling for nucleic acids. In Nonisotopic DNA probe techniques (ed Kricka LJ), pp. 28–92. Academic, New York.
+- Kierzek R, Caruthers MH, Longfellow CE, Swinton D, Turner DH, Freier SM. 1986. Polymer-supported RNA synthesis and its application to test the nearest-neighbor model for duplex stability. Biochemistry 25:7840–7846.
+- Klevan L, Horton E, Carlson DP, Eisenberg AJ. 1993. Chemiluminescent detection of DNA probes in forensic analysis. The 2nd international symposium on the forensic aspects of DNA analysis. FBI Academy, Quantico, VA (http://www.fbi.gov).
+- Koshkin A, Singh SK, Nielsen PS, Rajwanshi VK, Kumar R, Meldgaard M, Olsen CE, Wengel J. 1998. LNA (locked nucleic acids): Synthesis of the adenine, cytosine, guanine, 5-methylcytosine, thymine and uracil bicyclonucleoside monomers, oligomerisation, and unprecedented nucleic acid recognition. Tetrahedron 54: 3607–3630.
+- Kricka LJ ed. 1992. Nucleic acid hybridization test formats: Strategies and applications. In Nonisotopic DNA probe techniques, pp. 3–27. Academic, New York.
+- Kricka LJ, Ji X. 1995. 4-Phenylboronic acid: A new type of enhancer for the horseradish peroxidase catalysed chemiluminescent oxidation of luminol. J Biolumin Chemilumin 10: 49–54.
+- Kubota K, Ohashi A, Imachi H, Harada H. 2006. Improved in situ hybridization efficiency with locked-nucleic-acid-incorporated DNA probes. Appl Environ Microbiol 72: 5311–5317.
+- Langer PR, Waldrop AA, Ward DC. 1981. Enzymatic synthesis of biotin-labeled polynucleotides: Novel nucleic acid affinity probes. Proc Natl Acad Sci 78: 6633–6637.
+- Lanzillo JJ. 1990. Preparation of digoxigenin-labeled probes by the polymerase chain reaction. BioTechniques 8: 620–622.
+- Lathe R. 1985. Synthetic oligonucleotide probes deduced from amino acid sequence data. Theoretical and practical considerations. J Mol Biol 183: 1–12.
+- Leary JJ, Brigati DJ, Ward DC. 1983. Rapid and sensitive colorimetric method for visualizing biotin-labeled DNA probes hybridized to DNA or RNA immobilized on nitrocellulose: Bio-blots. Proc Natl Acad Sci 80: 4045–4049.
+- Lin FK, Suggs S, Lin CH, Browne JK, Smalling R, Egrie JC, Chen KK, Fox GM, Martin F, Stabinsky Z, et al. 1985. Cloning and expression of the human erythropoietin gene. Proc Natl Acad Sci 82: 7580–7584.
+- Mansfield ES, Worley JM, McKenzie SE, Surrey S, Rappaport E, Fortina P. 1995. Nucleic acid detection using non-radioactive labelling methods. Mol Cell Probes 9: 145–156.
+- Martin CS, Bronstein I. 1994. Imaging of chemiluminescent signals with cooled CCD camera systems. J Biolumin Chemilumin 9: 145–153.
+- Martin FH, Castro MM, Aboul-ela F, Tinoco I Jr. 1985. Base pairing involving deoxyinosine: Implications for probe design. Nucleic Acids Res 13: 8927–8938.
+- Martin CS, Bresnick L, Juo RR, Voyta JC, Bronstein I. 1991. Improved chemiluminescent DNA sequencing. BioTechniques 11: 110–113.
+- McGadey J. 1970. A tetrazolium method for non-specific alkaline phosphatase. Histochemie 23: 180–184.
+- Melchior WB Jr, von Hippel PH. 1973. Alteration of the relative stability of dA-dT and dG-dC base pairs in DNA. Proc Natl Acad Sci 70: 298–302.
+- Mitsuhashi M, Cooper A, Ogura M, Shinagawa T, Yano K, Hosokawa T. 1994. Oligonucleotide probe design: A new approach. Nature 367: 759–761.
+- Miyada CG, Wallace RB. 1987. Oligonucleotide hybridization techniques. Methods Enzymol 154: 94–107.
+- Nagata S, Tsuchiya M, Asano S, Kaziro Y, Yamazaki T, Yamamoto O, Hirata Y, Kubota N, Oheda M, Nomura H, et al. 1986. Molecular cloning and expression of cDNA for human granulocyte colony-stimulating factor. Nature 319: 415–418.
+- Nei M, Li WH. 1979. Mathematical model for studying genetic variation in terms of restriction endonucleases. Proc Natl Acad Sci 76: 5269–5273.
+- Nelson NC, Reynolds MA, Arnold LJ Jr. 1992. Detection of acridinium esters by chemiluminescence. In Nonisotopic DNA probe techniques (ed Kricka LJ), pp. 276–311. Academic, New York.
+- Newgard CB, Nakano K, Hwang PK, Fletterick RJ. 1986. Sequence analysis of the cDNA encoding human liver glycogen phosphorylase reveals tissue-specific codon usage. Proc Natl Acad Sci 83: 8132–8136.
+- Ogden RC, Lee MC, Knapp G. 1984. Transfer RNA splicing in Saccharomyces cerevisiae: Defining the substrates. Nucleic Acids Res 12: 9367–9382.
+- Ohtsuka E, Matsuki S, Ikehara M, Takahashi Y, Matsubara K. 1985. An alternative approach to deoxyoligonucleotides as hybridization probes by insertion of deoxyinosine at ambiguous codon positions. J Biol Chem 260: 2605–2608.
+- Pataki S, Meyer K, Reichstein T. 1953. Die Konfiguration des Digoxygenins Glykoside und Algycone 116, Mitteling. Helv Chim Acta 36: 1295–1308.
+- Pollard-Knight D, Read CA, Downes MJ, Howard LA, Leadbetter MR, Pheby SA, McNaughton E, Syms A, Brady MA. 1990. Nonradioactive nucleic acid detection by enhanced chemiluminescence using probes directly labeled with horseradish peroxidase. Anal Biochem 185: 84–89.
+- Prober JM, Trainor GL, Dam RJ, Hobbs FW, Robertson CW, Zagursky RJ, Cocuzza AJ, Jensen MA, Baumeister K. 1987. A system for rapid DNA sequencing with fluorescent chain-terminating dideoxynucleotides. Science 238: 336–341.
+- Reisfeld A, Rothenberg JM, Bayer EA, Wilchek M. 1987. Nonradioactive hybridization probes prepared by the reaction of biotin hydrazide with DNA. Biochem Biophys Res Commun 142: 519–526.
+- Renz M, Kurz C. 1984. A colorimetric method for DNA hybridization. Nucleic Acids Res 12: 3435–3444.
+- Reyes RA, Cockerell GL. 1993. Preparation of pure oligonucleotide-alkaline phosphatase conjugates. Nucleic Acids Res 21: 5532–5533.
+- Riccelli PV, Benight AS. 1993. Tetramethylammonium does not universally neutralize sequence dependent DNA stability. Nucleic Acids Res 21:3785–3788.
+
+---
+
+792
+
+分子克隆实验指南（原书第四版）
+
+- Rihn B, Bottin MC, Coulais C, Martinet N. 1995. Evaluation of non-radioactive labelling and detection of deoxyribonucleic acids. II. Colorigenic methods and comparison with chemiluminescent methods. J Biochem Biophys Methods 30: 103–112.
+- Rychlik R. 1994. New algorithm for determining primer efficiency in PCR and sequencing. J NIH Res 6: 78.
+- Rychlik W, Spencer WJ, Rhoads RE. 1990. Optimization of the annealing temperature for DNA amplification in vitro. Nucleic Acids Res 18:6409–6412. (Erratum Nucleic Acids Res [1991] 19: 698.)
+- Schaap AP, Akhavan H, Romano LJ. 1989. Chemiluminescent substrates for alkaline phosphatase: Application to ultrasensitive enzyme-linked immunoassays and DNA probes. Clin Chem 35: 1863–1864.
+- Seibl R, Höltke HJ, Rüger R, Meindl A, Zachau HG, Rasshofer R, Roggendorf M, Wolf H, Arnold N, Wienberg J, et al. 1990. Non-radioactive labeling and detection of nucleic acids. III. Applications of the digoxigenin system. Biol Chem Hoppe-Seyler 371: 939–951.
+- Shapiro JT, Stannard BS, Felsenfeld G. 1969. The binding of small cations to deoxyribonucleic acid. Nucleotide specificity. Biochemistry 8: 3233–3241.
+- Smith LM, Sanders JZ, Kaiser RJ, Hughes P, Dodd C, Connell CR, Heiner C, Kent SB, Hood LE. 1986. Fluorescence detection in automated DNA sequence analysis. Nature 321: 674–679.
+- Smith M. 1983. Synthetic oligodeoxyribonucleotides as probes for nucleic acids and as primers in sequence determination. In Methods of DNA and RNA sequencing (ed Weissman SM), pp. 23–68. Praeger, New York.
+- Sood AK, Pereira D, Weissman SM. 1981. Isolation and partial nucleotide sequence of a cDNA clone for human histocompatibility antigen HLA-B by use of an oligodeoxynucleotide primer. Proc Natl Acad Sci 78:616–620.
+- Suggs SV, Wallace RB, Hirose T, Kawashima EH, Itakura K. 1981a. Use of synthetic oligonucleotides as hybridization probes: Isolation of cloned cDNA sequences for human $\beta_{2}$-microglobulin. Proc Natl Acad Sci 78:6613-6617.
+- Suggs SV, Hirose T, Miyake T, Kawashima EH, Johnson MJ, Itakura K, Wallace RB. 1981b. Use of synthetic oligodeoxyribonucleotides for the isolation of specific cloned DNA sequences. In Developmental biology using purified genes (ed Brown DB, et al.), pp. 683–693. Academic, New York.
+- Takahashi Y, Kato K, Hayashizaki Y, Wakabayashi T, Ohtsuka E, Matsuki S, Ikehara M, Matsubara K. 1985. Molecular cloning of the human cholecystokinin gene by use of a synthetic probe containing deoxyinosine. Proc Natl Acad Sci 82: 1931–1935.
+- Templeton EF, Wong HE, Evangelista RA, Granger T, Pollak A. 1991. Time-resolved fluorescence detection of enzyme-amplified lanthanide luminescence for nucleic acid hybridization assays. Clin Chem 37:1506–1512.
+- Thein SL, Wallace RB. 1986. The use of synthetic oligonucleotides as specific hybridization probes in the diagnosis of genetic disorders. In Human genetic diseases: A practical approach (ed Davies KE), pp. 33–50. IRL, Oxford.
+- Thomsen R, Nielsen PS, Jensen TH. 2005. Dramatically improved RNA in situ hybridization signals using LNA-modified probes. RNA 11: 1745–1748.
+- Thorpe GH, Kricka LJ. 1986. Enhanced chemiluminescent reactions catalyzed by horseradish peroxidase. Methods Enzymol 133: 331–353.
+- Tizard R, Cate RL, Ramachandran KL, Wysk M, Voyta JC, Murphy OJ, Bronstein I. 1990. Imaging of DNA sequences with chemiluminescence. Proc Natl Acad Sci 87: 4514–4518.
+- Tolstrup N, Nielsen PS, Kolberg JG, Frankel AM, Vissing H, Kauppinen S. 2003. OligoDesign: Optimal design of LNA (locked nucleic acid) oligonucleotide capture probes for gene expression profiling. Nucleic Acids Res 31: 3758–3762.
+- Toole JJ, Knopf JL, Wozney JM, Sultzman LA, Buecker JL, Pittman DD, Kaufman RJ, Brown E, Shoemaker C, Orr EC, et al. 1984 Molecular cloning of a cDNA encoding human antihaemophilic factor. Nature 312: 342–347.
+- Traincard F, Ternynck T, Danchin A, Avrameas S. 1983. An immunoenzyme technique for demonstrating the molecular hybridization of nucleic acids (translation). Ann Immunol 134D: 399–404.
+- Turnbow MA, Garner CW. 1993. Ribonuclease protection assay: Use of biotinylated probes for the detection of two messenger RNAs. Bio-Techniques 15: 267–270.
+- Uhlenbeck OC, Martin FH, Doty P. 1971. Self-complementary oligoribonucleotides: Effects of helix defects and guanylic acid-cytidylic acid base pairs. J Mol Biol 57: 217–229.
+- Urdea MS, Warner BD, Running JA, Stempien M, Clyne J, Horn T. 1988. A comparison of non-radioisotopic hybridization assay methods using fluorescent, chemiluminescent and enzyme labeled synthetic oligodeoxyribonucleotide probes. Nucleic Acids Res 16: 4937–4956.
+- van Houten V, Denkers F, van Dijk M, van den Brekel M, Brakenhoff R. 1998. Labeling efficiency of oligonucleotides by T4 polynucleotide kinase depends on 5'-nucleotide. Anal Biochem 265: 386–389.
+- Vester B, Wengel J. 2004. LNA (locked nucleic acid): High-affinity targeting of complementary RNA and DNA. Biochemistry 43: 13233-13241.
+- Wada K, Wada Y, Ishibashi F, Gojobori T, Ikemura T. 1992. Codon usage tabulated from the GenBank genetic sequence data. Nucleic Acids Res (suppl) 20: 2111–2118.
+- Wallace RB, Johnson MJ, Hirose T, Miyake T, Kawashima EH, Itakura K. 1981. The use of synthetic oligonucleotides as hybridization probes. II. Hybridization of oligonucleotides of mixed sequence to rabbit β–globin DNA. Nucleic Acids Res 9: 879–894.
+- Wetmur JG. 1991. DNA probes: Applications of the principles of nucleic acid hybridization. Crit Rev Biochem Mol Biol 26: 227–259.
+- Whitehead TP, Thorpe GHG, Carter TJN, Groucutt C, Kricka LJ. 1983. Enhanced luminescence procedure for sensitive determination of peroxidase-labelled conjugates in immunoassay. Nature 305: 158–159.
+- Wood WI, Gitschier J, Lasky LA, Lawn RM. 1985. Base composition-independent hybridization in tetramethylammonium chloride: A method for oligonucleotide screening of highly complex gene libraries. Proc Natl Acad Sci 82: 1585–1588.
+- Wu R. 1972. Nucleotide sequence analysis of DNA. Nat New Biol 236:198–200.
+- Xuan JC, Weber IT. 1992. Crystal structure of a B-DNA dodecamer containing inosine, d(CGCIAATTCGCG), at 2.4 Å resolution and its comparison with other B-DNA dodecamers. Nucleic Acids Res 20:5457–5464.
+
+## 网络资源
+
+List of relative codon frequencies http://www.kazusa.or.jp/codon
+
+Source of OligoDesign software http://www.exiqon.com/oligo-tools
+
+## 方案 1 随机引物法: 用随机寡核苷酸延伸法标记纯化的 DNA 片段
+
+利用寡核苷酸作引物，DNA聚合酶可沿单链模板起始DNA的合成（Goulian 1969）。如果寡核苷酸的序列不均一，它们就可在模板的多位点上杂交。因此模板上每一核苷酸（5'端的核苷酸除外）的互补物将以同样的频率掺入产物。用一种 $[\alpha -^{32}\mathrm{P}]$ 放射性标记的dNTP及其他三种非标记dNTP作为前体，可合成放射性标记的DNA，产生比活度为
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+793
+
+$5 \times 10^{8} \sim 5 \times 10^{9} \mathrm{dpm} / \mu \mathrm{g}$ 的探针。这种标记法亦适用于生物素、DIG或荧光素标记的dUTP的非放射性标记。
+
+Taylor 等（1976）首次报道了随机引物法制备的放射性标记探针应用于杂交。然而，直到20世纪80年代中期，有了商品化的DNA聚合酶及寡核苷酸引物，Feinberg和Vogelstein（1983，1984）建立起一套标准化的、严谨的反应条件之后，这个方法才被广泛接受。此后几个商品生产厂家将此反应条件随标记试剂盒推出投放市场，但由于随机引物反应简便易行，试剂盒实属不必要的奢侈。分别购买标记所用的各种试剂可使操作同样有效并且更经济。有关随机引物反应中各组分的讨论，见信息栏“随机引物反应的组分”。
+
+与切口平移法（见方案3）相比，随机引物法更为简单，因为它不需要两种酶（DNA酶I和 $5^{\prime} \rightarrow 3^{\prime}$ 外切酶）参与反应。随机引物反应产生的放射性标记产物长度更为均一，在杂交反应中重复性更强。切口平移法无法精确地控制放射性标记产物的平均长度，而在随机引物反应中，由于探针的长度与引物的浓度呈负相关（Hodgson and Fisk 1987），因而探针DNA的平均长度可受研究者的控制。实验充分证实了随机引物法的优越性，它作为双链DNA探针的标准标记方法已完全取代了切口平移法。
+
+## 随机引物反应的组分
+
+## DNA 聚合酶
+
+包括 Taq 在内的几种 DNA 聚合酶均可催化随机引物反应（Sayavedra-Soto and Gresshoff 1992）。但是，就酶在各种条件下的效率及耐受性而言，大肠杆菌 DNA 聚合酶 I 的 Klenow 片段为首选酶。由于 Klenow 片段缺乏  $5'\rightarrow3'$  外切酶活性（见信息栏“大肠杆菌 DNA 聚合酶 I 和 Klenow 片段”），因此，放射性标记产物全部通过引物延伸而非切口平移合成，并且不会被外切核酸酶所降解。反应在 pH6.6 的条件下进行，此时该酶的  $3'\rightarrow5'$  外切酶活性很低（Lehman and Richardson 1964）。此外，亦可应用序列酶 Version 2.0（Affymetrix 公司）或 Klenow 片段的突变产物（Stratagene/Agilent Technologies 公司或 New England Biolabs 公司），此两种酶均缺乏 Klenow 片段的  $3'\rightarrow5'$  外切酶活性。
+
+## 放射性标记物
+
+随机引物反应一般以一种放射性标记的 $[\alpha -^{32}\mathrm{P}]$ dNTP（比活度 $3000\mathrm{Ci / mmol}$）和三种未标记的dNTP作为前体。在本方案的反应条件下，$40\% \sim 80\%$ 的 $[\alpha -^{32}\mathrm{P}]$ dNTP可掺入DNA，放射性标记产物的比活度范围在 $1\times 10^{9}\sim 4\times 10^{9}\mathrm{dpm} / \mu \mathrm{g}$，它取决于反应中模板DNA含量。虽然用两种 $[\alpha -^{32}\mathrm{P}]$ dNTP作为前体可使标记产物的比活度提高，但由于放射性化学衰变可导致探针的迅速降解（Stent and Fuerst 1960），因此标记后必须立即使用。当以低比活度的 $[\alpha -^{32}\mathrm{P}]$ dNTP作为前体时（如比活度为 $800\mathrm{Ci / mmol}$），DNA的产量可提高4倍，而它的比活性则降至小于 $10^{9}\mathrm{dpm} / \mu \mathrm{g}$。但对于大多数实验，此种探针已游刃有余。在辐射分解造成探针降解之前，尚可冷冻保存数天。
+
+## 非放射性标记物
+
+在随机引物 DNA 标记反应中，可用生物素、DIG 或荧光素标记的 dUTP 取代 dTTP，其应用比例为 35% dUTP:65% dTTP。在这些条件下，新合成的 DNA 探针中，每 25～36 个核苷酸即有标记的 dUTP 掺入（Kessler et al. 1990）。
+
+最初的研究是将生物素-7-dATP通过随机引物法引入核酸（Roy et al. 1988, 1989），此法与 $^{32}\mathrm{P}$ 标记的探针相比敏感性相同或更高。应用随机引物法进一步修饰生物素化的DNA探针，可使DNA的检测水平达到毫微微克级（subfemtogram）（Eweida et al. 1989）。请注意DIG-dUTP是碱不稳定的，因此DIG标记的探针不可接触强碱（如0.2mmol/L NaOH）。现在已有碱稳定的同类探针，但是在进行Southern印迹实验去除探针及重新标记时，建议用碱不稳定的配方。
+
+---
+
+794
+
+分子克隆实验指南（原书第四版）
+
+## 引物
+
+一般可通过商品渠道购买寡核苷酸引物，但亦可用 DNA 酶 I 酶解小牛胸腺 DNA 或在自动 DNA 合成仪上合成获得。引物的长度至关重要，短于 6 个碱基的引物是不可取的，而长于 7 个碱基的引物则增加了自身复性及自身引导的概率（Suganuma and Gupta 1995）。因此，适用于随机引物法的理想寡核苷酸引物集群的长度应当为 6 个或 7 个核苷酸，集群中所有可能的序列应当以相同的频率出现。
+
+随机引物反应合成的探针的平均长度与引物的浓度成反比(Hodgson and Fisk 1987): 放射性标记产物的长度 $= k / \sqrt{\ln P_{c}}, P_{c}$ 表示引物的浓度。
+
+此方案描述的标准引物反应采用 60ng 和 125ng 六聚体或七聚体的随机寡核苷酸，产生的放射性标记产物长度为 400～600 核苷酸，可用碱性琼脂糖凝胶或变性聚丙烯酰胺凝胶电泳测定探针的长度。较高浓度的引物可导致空间位阻或  $\left[\alpha-^{32}P\right]$  dNTP 前体耗竭而使产量降低；较低浓度的引物则导致放射性标记产物集群大小不均一（0.4～4kb）（Hodgson and Fisk 1987），从而引起杂交动力学异常。
+
+## 模板 DNA
+
+此方案的反应条件系根据 Feinberg 和 Vogelstein（1983，1984）的方法修改、优化而来，用以标记长度达 1kb 的线性双链 DNA 模板。较短的 DNA 模板产生的探针比活度低，在严谨条件下杂交效果不佳。闭环的双链 DNA 是低效模板，在进行随机引物反应之前，应当用限制性内切核酸酶消化成线性分子。条件允许的情况下，应尽可能用纯化的 DNA 片段代替完整质粒作模板，这样的放射性标记 DNA 在用作杂交探针时，可使本底水平显著降低（Feinberg and Vogelstein 1983, 1984）。
+
+![](../../raw/pages_0305-0320/images/page_304_image_8.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+碱性琼脂糖凝胶或变性聚丙烯酰胺凝胶（见步骤4）
+
+乙酸铵（10mol/L）&lt;A&gt;（可选，见步骤5）
+
+乙醇（可选，见步骤5）。
+
+凝胶过滤介质（Sephadex G-50 或 Bio-Gel），用  $1 \times TEN$  平衡（pH 8.0）&lt;A&gt;
+
+大肠杆菌聚合酶 I Klenow 片段
+
+NA 终止 / 储备缓冲液&lt;R&gt;
+
+非放射性标记溶液
+
+dNTP 溶液，其中含浓度各为 1mmol/L dATP、dCTP、dGTP 和 0.65 mmol/L dTTP
+
+有关配制及储存 dNTP 储备溶液，见信息栏 “dNTP 储备溶液的制备”
+
+生物素-dUTP、荧光素-dUTP 或 DIG-dUTP（0.35mmol/L）
+
+或
+
+放射性标记溶液
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+795
+
+含三种未标记的 dNTP 溶液（各 5mmol/L）
+
+此溶液的组分取决于欲使用的  $\left[\alpha-^{32}P\right]$  dNTP。如应用放射性标记的 dATP，混合物应含各 5mmol/L 的 dCTP、dTTP 和 dGTP。如应用两种放射性标记的 dNTP，则溶液中应含各 5mmol/L 的其他两种 dNTP。有关制备和储存 dNTP 储备溶液，见信息栏 “dNTP 储备溶液的制备”。
+
+$\left[\alpha-^{32}P\right]$  dNTP（10mCi/mL，比活度大于3000Ci/mmol）
+
+为最大限度地减少前体的辐射分解，应尽可能在  $\left[^{32}P\right]$  dNTP 到达实验室的当天制备放射性标记探针。
+
+长度为 6 或 7 个碱基的随机脱氧核苷酸引物（125ng/ $\mu$ L 溶于 TE, pH 7.6）
+
+合成的随机寡核苷酸长度均一，无序列偏性，因此为引物的首选。最佳长度的寡核苷酸（六聚体和七聚体）（Suganuma and Gupta 1995）可从商业渠道购买（如 Sigma-Aldrich 公司或 Life Technologies 公司）或在自动 DNA 合成仪上合成。引物溶液应以小份分装储存于-20℃。
+
+随机引物缓冲液（5×）&lt;R&gt;
+
+模板 DNA（5～25ng/μL 溶于 TE, pH 7.6）
+
+按第 1 章介绍的方法之一纯化欲进行标记的 DNA。
+
+本方案中取 25ng 的模板 DNA 在 50μL 标准体积中反应最好。应用此法时模板 DNA 的量越大，产生的探针比活度越低；DNA 的量越小，则所需的反应时间越长（参看步骤 4 的注释）。
+
+## 仪器
+
+预热至 $95^{\circ} \mathrm{C}$ 的沸水浴或加热块
+
+用于离心柱色谱法的仪器（玻璃棉和 1mL 一次性注射器）
+
+Sephadex G-50 离心柱，用 pH 7.6 TE 平衡（可选，见步骤 5）
+
+Sephadex G-50 凝胶过滤介质可用于从低分子质量物质（放射性前体保留在柱中）中分离 DNA（DNA 可穿过介质）。放射性标记 DNA 的纯化用 Sephadex G-50 柱可从几个商品渠道获得，如 Quick Spin Columns（Roche Applied Science 公司）。但是，用 1mL 装填硅化玻璃棉的一次性注射器很容易完成（见本方案步骤 6～14）。
+
+![](../../raw/pages_0305-0320/images/page_305_image_17.jpg)
+
+## 方法
+
+1. 在一个 0.5mL 的微量离心管中加入溶于 30μL 水的模板 DNA（25ng）及 1μL 随机脱氧核苷酸引物（约 125ng）。盖紧微量离心管，置于沸水浴中 2min。
+
+2. 将微量离心管移至冰上放置 $1\mathrm{min}$，$4^{\circ}\mathrm{C}$ 下离心 $10\mathrm{s}$，使引物与模板的混合物沉降至管底，将微量离心管重新置于冰上。
+
+3. 应用以下一种反应混合物进行标记反应
+
+## 制备放射性标记探针
+
+在引物与模板的混合物中加入:
+
+| 5mmol/L dNTP 溶液 | 1μL |
+| --- | --- |
+| 5×随机引物缓冲液 | 10μL |
+| 10mCi/mL [$\alpha^{-32}P$] dNTP | 5μL(比活度 3000Ci/mmol) |
+| $H_2O$ | 加至 50μL |
+
+## 制备 DIG、生物素或荧光素标记的探针
+
+在引物与模板的混合物中加入:
+
+| 1mmol/L dNTP 溶液 | 1μL(含0.65mmol/L dTTP) |
+| --- | --- |
+| 5×随机引物缓冲液 | 10μL |
+| 0.35mmol/L 标记的dUTP | 5μL |
+| $H_2O$ | 加至50μL |
+
+---
+
+796
+
+分子克隆实验指南（原书第四版）
+
+4. 加入 5U（约  $1 \mu L$ ）的 Klenow 片段，轻弹管壁以混合各组分。以最大速度离心  $1 \sim 2s$ ，使所有液体沉降于管底。反应混合物室温下反应 60min。
+
+如标记大量的 DNA，按步骤 3 和步骤 4 准备反应混合物，温育反应 60min。如标记小量的 DNA，则反应时间与加入模板的量成反比。例如，含有 10ng DNA 模板的随机引物反应，温育时间应为 2.5h。
+
+为监测反应的进程，检测放射性标记的 dNTP 掺入三氯乙酸（TCA）可沉淀物中的比例（见附录 2）。
+
+在这些反应条件下，放射性标记产物的长度约为 400～600 个核苷酸。通过碱性琼脂糖凝胶电泳（第 6 章，方案 11）或变性聚丙烯酰胺凝胶电泳（第 6 章，方案 11）可确定标记产物的分子质量。
+
+5. 在反应液中加入 $10 \mu \mathrm{L} \mathrm{NA}$ 终止/储备缓冲液, 可根据需要进行以下步骤。
+
+\- 储存放射性标记的探针于-20℃以备杂交用。
+
+或
+
+\- 通过离心柱色谱法（按以下步骤6～14，使用商品化的柱子或自制的柱子）分离放射性标记的探针与未结合的dNTP或以乙酸铵和乙醇选择性地沉淀放射性标记的DNA（见第1章，方案4）。如果大于50%的放射性dNTP已在反应中掺入，可略过该步骤。
+
+假定 50% 的放射活度在随机引物反应中已掺入 TCA 可沉淀部分，而且 90% 的产物系由模板 DNA 通过随机引物反应产生（非寡核苷酸自身引导），探针 DNA 的总比活度应约为  $4.5 \times 10^{7}$  dpm（可用于 2～5 次哺乳动物基因组 DNA 的 Southern 杂交）。探针的比活度可达约  $1.8 \times 10^{9}$  dpm/ $\mu$ g，反应中合成的 DNA 量可达 9.7ng，足以通过 Southern 分析检测哺乳动物 DNA 单拷贝序列。
+
+## 离心柱色谱法
+
+6. 将 $1\mathrm{mL}$ 一次性注射器的底部填入少量无菌的玻璃棉。最好用注射器的针筒将玻璃棉填实。
+
+7. 在注射器中填入 Sephadex G-50 或 Bio-Gel P-60，用  $1 \times TEN$  缓冲液（pH 8.0）平衡。轻敲注射器针筒几次使缓冲液流出。再加入一些树脂，直至注射器完全充满。
+
+注意，并非所有树脂皆可用于离心沉淀——DEAE Sephacel 在离心过程中可形成不渗透的块状物。由于离心可使珠子被挤碎，因此不能使用更高级别的 Sephadex ( $\geqslant$ G-100)。如果需要大分子的筛选树脂，可使用 Sepharose CL-4B。
+
+8. 将注射器插入一只 $15 \mathrm{~mL}$ 一次性塑料离心管, 使用吊桶式转头台式离心机, $1600 \mathrm{~g}$ 、室温下离心 $4 \mathrm{~min}$ 。无需担心柱子的外观, 离心过程中树脂可沉淀呈部分脱水状。继续加入树脂并离心, 直至柱子的体积达到约 $0.9 \mathrm{~mL}$ 且在离心后体积不变。
+
+9. 在柱子中加入  $0.1 \, mL \times TEN$  缓冲液，重复步骤 8，再次离心。
+
+10. 重复步骤 9 两次。
+
+如需要，在此阶段可储存离心柱备用。可同时制备几个离心柱，使用前储存于 $4^{\circ}\mathrm{C}1$ 至数月。在注射器中加入$1\times \mathrm{TEN}$ 缓冲液，用Parafilm膜包裹以避免蒸发。将柱子直立储存于 $4^{\circ}\mathrm{C}$ 。这样储存的离心柱在使用前可按照步骤9用 $1\times \mathrm{TEN}$ 缓冲液洗1次。
+
+11. 将总体积为 $0.1 \mathrm{~mL}$ 的 DNA 样品加入柱中（用 $1 \times \mathrm{TEN}$ 缓冲液补充体积）。将离心柱放入一个新的一次性离心管，其中含一个去盖的微量离心管。
+
+12. 按步骤 8 离心，收集注射器底部流入去盖离心管的液体（约  $100 \mu L$ ）。
+
+13. 移去注射器，其中含未掺入的放射性标记的 dNTP 或其他小分子物质。用镊子小心取出含有洗脱的 DNA 的去盖离心管，将管中的液体转移至一个有盖并标注的微量离心管。
+
+将注射器和洗脱的 DNA 置于手提式小型探测器，可粗略估计掺入核酸的放射性部分。
+
+14. 如果注射器具有放射性，小心弃于放射性废弃物中。将洗脱的 DNA 储存于  $-20^{\circ}C$  以备用。
+
+![](../../raw/pages_0305-0320/images/page_306_image_24.jpg)
+
+<details>
+<summary>text_image</summary>
+
+Sephadex G-50
+无菌的玻璃棉
+</details>
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+797
+
+![](../../raw/pages_0305-0320/images/page_307_image_2.jpg)
+
+## 配方
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+NA 终止/储备缓冲液（1mL）
+
+| 试剂 | 体积 | 终浓度 |
+| --- | --- | --- |
+| Tris-Cl (1mol/L, pH 7.5) | 50μL | 50mmol/L |
+| NaCl (5mol/L) | 10μL | 50mmol/L |
+| EDTA (0.5mol/L, pH 8.0) | 10μL | 5mmol/L |
+| SDS (10%, m/V) 50μL | 0.5%(m/V) |  |
+
+随机引物缓冲液（1mL）
+
+| 试剂 | 体积 | 终浓度 |
+| --- | --- | --- |
+| Tris-Cl (1mol/L, pH 8.0) | 250μL | 250mmol/L |
+| MgCl2(1mol/L) | 25μL | 25mmol/L |
+| NaCl (5mol/L) | 20μL | 100mmol/L |
+| 二硫苏糖醇(Dithiothreitol, DTT) (1mol/L) | 10μL | 10mmol/L |
+| HEPES (2mol/L, 用4mol/L NaOH调pH至6.6) | 500μL | 1mol/L |
+
+使用前用  $H_{2}O$  稀释储存于  $-20^{\circ}C$  的 1mol/L DTT 储备溶液。用后弃去稀释的 DTT 溶液。
+
+## 参考文献
+
+- Eweida M, Sit TL, Sira S, AbouHaidar MG. 1989. Highly sensitive and specific non-radioactive biotinylated probes for dot-blot, Southern and colony hybridizations. J Virol Methods 26: 35–43.
+- Feinberg AP, Vogelstein B. 1983. A technique for radiolabeling DNA restriction endonuclease fragments to high specific activity. Anal Biochem 132: 6–13.
+- Feinberg AP, Vogelstein B. 1984. A technique for radiolabeling DNA restriction endonuclease fragments to high specific activity. Addendum. Anal Biochem 137: 266–267.
+- Goulian M. 1969. Initiation of the replication of single-stranded DNA by Escherichia coli DNA polymerase. Cold Spring Harbor Symp Quant Biol 33: 11–20.
+- Hodgson CP, Fisk RZ. 1987. Hybridization probe size control: Optimized "oligolabelling." Nucleic Acids Res 15: 6295.
+- Kessler C, Holtke HJ, Seibl R, Burg J, Muhlegger K. 1990. Non-radioactive labeling and detection of nucleic acids. I. A novel DNA labeling and detection system based on digoxigenin: anti-digoxigenin ELISA principle (digoxigenin system). Biol Chem Hoppe Seyler 371: 917–927.
+- Lehman IR, Richardson CC. 1964. The deoxyribonucleases of Escherichia coli. IV. An exonuclease activity present in purified preparations of
+- deoxyribonucleic acid polymerase. J Biol Chem 239: 233–241.
+- Roy BP, AbouHaidar MG, Sit TL, Alexander A. 1988. Construction and use of cloned cDNA biotin and  ${}^{32}$ P-labeled probes for the detection of papaya mosaic potexvirus RNA in plants. Phytopathology 78: 1425–1429.
+- Roy BP, AbouHaidar MG, Alexander A. 1989. Biotinylated RNA probes for the detection of potato spindle tuber viroid (PSTV) in plants. J Virol Methods 23: 149–155.
+- Sayavedra-Soto LA, Gresshoff PM. 1992. Taq DNA polymerase for labeling DNA using random primers. BioTechniques 13: 568, 570, 572.
+- Stent GS, Fuerst CR. 1960. Genetic and physiological effects of the decay of incorporated radioactive phosphorus in bacterial viruses and bacteria. Adv Biol Med Phys 7: 2–71.
+- Suganuma A, Gupta KC. 1995. An evaluation of primer length on random-primed DNA synthesis for nucleic acid hybridization: Longer is not better. Anal Biochem 224: 605–608.
+- Taylor JM, Illmensee R, Summers J. 1976. Efficient transcription of RNA into DNA by avian sarcoma virus polymerase. Biochim Biophys Acta 442: 324–330.
+
+---
+
+798
+
+分子克隆实验指南（原书第四版）
+
+# 方案 2 随机引物法:在融化琼脂糖存在下用随机寡核苷酸延伸法标记 DNA
+
+此法由方案 1 修改而成，可用于放射性标记从低熔点琼脂糖凝胶中回收的 DNA（Feinberg and Vogelstein 1983, 1984）。本方法中使用的大多数材料与方案 1 相同，仅标记缓冲液稍加修改，其中含未标记的 dNTP 和随机寡核苷酸引物。根据研究者的需要，标记反应可采用方案 1 中介绍的缓冲液或本法所述缓冲液。有关此法中所用材料、所合成的探针比活度和长度，见方案 1 中的导言部分。
+
+![](../../raw/pages_0305-0320/images/page_308_image_4.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+碱性琼脂糖凝胶或变性聚丙烯酰胺（见步骤4）
+
+$\left[\alpha-^{32}P\right]$ dNTP（10mCi/mL，比活度>3000Ci/mmol）
+
+为最大限度地减少前体的辐射分解，应尽可能在  $\left[^{32}P\right]$  dNTP 到达实验室的当天制备放射性标记探针。
+
+乙酸铵（10mol/L）&lt;A&gt;（可选，见步骤5）
+
+牛血清白蛋白（BSA）(10mg/mL)
+
+乙醇（可选，见步骤5）
+
+溴化乙锭（10mg/mL）或 SYBR Green 染液
+
+大肠杆菌 DNA 聚合酶 Klenow 片段
+
+在每一随机引物反应中需要 Klenow 片段（5U）
+
+NA 终止/储备缓冲液&lt;R&gt;
+
+5×寡核苷酸标记缓冲液&lt;R&gt;
+
+5×寡核苷酸标记缓冲液的组分取决于欲使用的 $[\alpha-^{32}P]dNTP$ 。如使用放射性标记的dATP，缓冲液中应含有dCTP、dTTP和dGTP。如使用两种放射性标记的dNTP，缓冲液中则含有其他两种未标记的dNTP。有关制备和储存dNTP储备缓冲液，见信息栏“dNTP储备溶液的制备”。
+
+长度为 6 个或 7 个碱基的随机脱氧核苷酸引物（125ng/ $\mu$ L 溶于 TE, pH 7.6）
+
+合成的随机寡核苷酸引物长度均一，无序列偏性，因而是引物的首选。最佳长度的寡核苷酸（六聚体或七聚体）（Suganuma and Gupta 1995）可从商业渠道购买（如 Sigma-Aldrich 公司或 Life Technologies 公司）或在自动 DNA 合成仪上合成。引物溶液应分装成小份储存于 -20℃，使用时将引物加入 5×寡核苷酸标记缓冲液。
+
+## 模板 DNA
+
+通过低熔点（LMT）琼脂糖凝胶（如 FMC SeaPlaque LMT 琼脂糖）回收待标记的 DNA（见本方案的步骤 1～3）。用  $1 \times$  Tris-乙酸盐电泳缓冲液制备凝胶及电泳。关于低熔点琼脂糖凝胶的制备及凝胶电泳见第 2 章，方案 9。
+
+此方案中应用 25ng 模板 DNA 于标准的 50μL 反应体积为最好。DNA 模板量越大，产生的探针比活度越低；DNA 模板量越小，则所需的反应时间越长。见步骤 4 的注释。
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+799
+
+## 设备
+
+沸水浴
+
+Sephadex G-50 离心柱，用 TE（pH 7.6）平衡（可选，见步骤 5）。
+
+Sephadex G-50 凝胶过滤介质可用于从低分子质量物质（放射性前体保留在柱中）中分离 DNA（DNA 可穿过介质）。放射性标记 DNA 纯化用的 Sephadex G-50 柱可从几个商业渠道获得，如 Quick Spin Columns（Roche Applied Science 公司）。但是，用 1mL 装填硅化玻璃棉的一次性注射器很容易完成（见方案 1，步骤 6～14）。
+
+![](../../raw/pages_0305-0320/images/page_309_image_6.jpg)
+
+## 方法
+
+1. 电泳后用溴化乙锭（终浓度 $0.5\mu \mathrm{g} / \mathrm{mL}$ ）或SYBR Green染胶，切下所需条带，尽可能切去多余的琼脂糖凝胶。
+2. 将切下的条带放入预先称重的微量离心管中，称出条带的重量。每克琼脂糖凝胶加水 $3 \mathrm{~mL}$ 。
+3. 将微量离心管放在沸水浴中煮 7min 以使凝胶融化，同时也使 DNA 变性。
+
+如立即进行放射性标记，可将离心管置于  $37^{\circ}C$ ，直至需要加入模板；否则可储存于  $-20^{\circ}C$ 。但每次从  $-20^{\circ}C$  取出后，含 DNA 的凝胶团要在  $100^{\circ}C$  加热  $3 \sim 5 \, min$ ，然后置于  $37^{\circ}C$  直至放射性标记反应开始。
+
+4. 将一个新的微量离心管置于  $37^{\circ}$ C 水浴或加热块上，按下列次序加入:
+
+| 寡核苷酸标记缓冲液(5×) | 10μL |
+| --- | --- |
+| 牛血清白蛋白溶液(10mg/mL) | 2μL |
+| DNA(体积不超过32μL) | 20~50ng |
+| [α-32P]dNTP(10mCi/mL) | 5μL(比活度>3000Ci/mmol) |
+| Klenow片段(5U) | 1μL |
+| ${\mathrm{H}}_{2}\mathrm{O}$ | 加至50μL |
+
+用微量加样器彻底混合各组分，于室温温育 2～3h 或 37℃ 温育 60min。
+
+如标记大量的 DNA，按比例调整反应液的体积，温育反应 60min。如标记小量的 DNA，则温育反应时间与加入模板的量成反比。例如，含 10ng 模板 DNA 的随机引物反应，温育时间应为 2.5h。
+
+为监测反应的进程，可检测放射性标记 dNTP 掺入 TCA 可沉淀物中的比例（见附录 2）。
+
+上述反应条件下，放射性标记产物的长度约为400～600个核苷酸，通过碱性琼脂糖凝胶（第2章，方案9）或变性聚丙烯酰胺凝胶（第6章，方案11）可确定标记产物的分子质量。
+
+5. 在反应体系中加入 $50 \mu \mathrm{L} \mathrm{NA}$ 终止/储备缓冲液, 根据需要继续进行下列步骤:
+
+\- 储存放射性标记探针于 $-20^{\circ} \mathrm{C}$ 以备杂交时用。
+
+或
+
+\- 通过离心柱色谱法（按照方案1，步骤6～14，用商品化的柱子或自制的柱子）分离放射性标记的探针与未掺入的dNTP，或用乙酸铵及乙醇选择性地沉淀放射性标记DNA（见第1章，方案4）。如大于 $50\%$ 放射性标记的dNTP已在反应中掺入，此步骤可省去。
+
+假设 50% 的放射性活度已在随机引物反应中掺入 TCA 可沉淀的物质，且 90% 的该物质系随机引物反应沿模板 DNA 产生（而非寡核苷酸的自身引导），探针 DNA 的总比活度则约为  $4.5 \times 10^{7}$  dpm（足以进行 2～5 次哺乳动物基因组 DNA 的 Southern 杂交）。探针的比活度可达约  $1.8 \times 10^{9}$  dpm/ $\mu$ g，反应中合成的 DNA 重量可达 9.7ng，足以检测单拷贝序列。
+
+---
+
+800
+
+分子克隆实验指南（原书第四版）
+
+![](../../raw/pages_0305-0320/images/page_310_image_2.jpg)
+
+## 配方
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+NA 终止/储备缓冲液（1mL）
+
+| 试剂 | 体积 | 终浓度 |
+| --- | --- | --- |
+| Tris-Cl (1mol/L, pH 7.5) | 50μL | 50mmol/L |
+| NaCl (5mol/L) | 10μL | 50mmol/L |
+| EDTA (0.5mol/L, pH 8.0) | 10μL | 5mmol/L |
+| SDS (10%, m/V) | 50μL | 0.5% (m/V) |
+
+寡核苷酸标记缓冲液（1mL）
+
+| 试剂 | 体积 | 终浓度 |
+| --- | --- | --- |
+| Tris-Cl (1mol/L, pH 8.0) | 250μL | 250mmol/L |
+| MgCl2(1mol/L) | 25μL | 25mmol/L |
+| DTT (1mol/L) | 20μL | 20mmol/L |
+| 未标记的 dNTP (100mmol/L) | 20μL | 每种 2mmol/L |
+| HEPES (2mol/L, 用 4mol/L NaOH 调 pH 至 6.6) | 585μL | 1mol/L |
+| 随机寡核苷酸引物,长度为 6 个碱基(10mg/mL) | 100μL | 1mg/mL |
+
+分装小份储存于-20℃。此缓冲液冻融数次效果不受影响。
+
+## 参考文献
+
+Feinberg AP, Vogelstein B. 1983. A technique for radiolabeling DNA restriction endonuclease fragments to high specific activity. Anal Biochem 132:6–13.
+
+Feinberg AP, Vogelstein B. 1984. A technique for radiolabeling DNA restriction endonuclease fragments to high specific activity. Addendum. Anal
+
+Biochem 137: 266–267.
+Suganuma A, Gupta KC. 1995. An evaluation of primer length on random-primed DNA synthesis for nucleic acid hybridization: Longer is not better. Anal Biochem 224: 605–608.
+
+## 方案 3 用切口平移法标记 DNA 探针
+
+切口平移需要两种不同的酶活性参与反应（图 13-2）。DNase I 可在双链靶 DNA 的两条链上的随机位点切割（切口）磷酸二酯键（在  $Mg^{2+}$  存在下，DNase I 具有单链内切核酸酶活性）。大肠杆菌 DNA 聚合酶 I 则将脱氧核苷酸加到 DNase I 切割产生的 3' 羟基端。DNA 聚合酶 I 除具有聚合酶活性，还具有 5'→3' 外切核酸酶活性，因而能从切口 5' 端去除核苷酸。5' 端核苷酸的去除与 3' 端标记核苷酸的加入同时进行，使切口沿着 DNA 链移动（切口平移），产生高比活性的标记 DNA（Kelly et al. 1970）。反应产生的双链探针可用于多种研究目的，包括基因组和 cDNA 文库的筛选、Southern、Northern 和原位杂交。应用该法可合成放射性和非放射性的探针，但需要的 DNA 量较大（1μg），反应时间相对较长（2h），且反应温度（15℃）很重要。
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+801
+
+![](../../raw/pages_0305-0320/images/page_311_image_2.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["5'"] --> B["3'"]
+  C["3'"] --> D["5'"]
+  E["5'"] --> F["3'"]
+  G["3'"] --> H["3'"]
+  I["3'"] --> J["5'"]
+  K["3'"] --> L["3'"]
+  M["3'"] --> N["5'"]
+  O["3'"] --> P["3'"]
+  Q["3'"] --> R["5'"]
+  S["3'"] --> T["3'"]
+  U["3'"] --> V["5'"]
+  W["3'"] --> X["3'"]
+  Y["3'"] --> Z["5'"]
+  AA["5'"] --> AB["3'"]
+  AC["3'"] --> AD["5'"]
+  AE["3'"] --> AF["5'"]
+  AG["3'"] --> AH["5'"]
+  AI["3'"] --> AJ["5'"]
+  AK["3'"] --> AL["5'"]
+  AM["3'"] --> AN["5'"]
+  AO["3'"] --> AP["5'"]
+  AQ["3'"] --> AR["5'"]
+  AS["3'"] --> AT["5'"]
+  AU["3'"] --> AV["5'"]
+  AW["3'"] --> AX["5'"]
+  A --> B
+  B --> C
+  C --> D
+  D --> E
+  E --> F
+  F --> G
+  G --> H
+  H --> I
+  I --> J
+  J --> K
+  K --> L
+  L --> M
+  M --> N
+  N --> O
+  O --> P
+  P --> Q
+  Q --> R
+  R --> S
+  S --> T
+  T --> U
+  U --> V
+  V --> W
+  W --> X
+  X --> Y
+  Y --> Z
+  Z --> AA
+  AA --> AB
+  AB --> AC
+  AC --> AD
+  AD --> AE
+  AE --> AF
+  AF --> AG
+  AG --> AH
+  AH --> AI
+  AI --> AJ
+  AJ --> AK
+  AK --> AL
+  AL --> AM
+  AM --> AN
+  AN --> AO
+  AO --> AP
+  AP --> AQ
+  AQ --> AR
+  AR --> AS
+  AS --> AT
+  AT --> AU
+  AU --> AV
+  AV --> AW
+  AW --> AX
+  AX --> AZ
+  AZ --> BA
+  BA --> BB
+  BB --> BC
+  BC --> BD
+  BD --> BE
+  BE --> BF
+  BF --> BG
+  BG --> BH
+  BH --> BI
+  BI --> BJ
+  BJ --> BK
+  BK --> BL
+  BL --> BM
+  BM --> BN
+  BN --> BO
+  BO --> BP
+  BP --> BR
+  BR --> BC
+  BC --> BD
+  BD --> BE
+  BE --> BF
+  BF --> BG
+  BG --> BH
+  BH --> BI
+  BI --> BJ
+  BJ --> BK
+  BK --> BL
+  BL --> BM
+  BM --> BN
+  BN --> BO
+  BO --> BP
+  BP --> BG
+  BG --> BH
+  BH --> BI
+  BI --> BJ
+  BJ --> BK
+  BK --> BL
+  BL --> BM
+  BM --> BN
+  BN --> BO
+  BO --> BP
+  BP --> BG
+  BG --> BH
+  BH --> BI
+  BI --> BJ
+  BJ --> BK
+  BK --> BL
+  BL --> BM
+  BM --> BN
+  BN --> BO
+  BO --> BP
+  BO --> BG
+  BG --> BH
+  BH --> BI
+  BI --> BJ
+  BJ --> BK
+  BK --> BL
+  BL --> BM
+  BM --> BN
+  BN --> BO
+  BO --> BP
+  BP --> BG
+```
+</details>
+
+图 13-2 利用大肠杆菌 DNA 聚合酶的切口平移反应。（引用于 Krieg and Melton，1987, Elsevier 许可）。
+
+切口平移作为放射性标记双链 DNA 的首选方法独领风骚多年之后，现已基本上被随机寡核苷酸引物法所取代，后者仅需一种酶参与反应。切口平移法长期存在的主要问题是平衡反应中的 DNA 聚合酶 I 及 DNase I 的活性。随着切口平移试剂盒的诞生（如 NIK-IT, Worthington Biochemical 公司），这个难题最终得以解决。切口平移反应中的注意事项描述于信息栏“优化切口平移反应”。
+
+## 优化切口平移反应
+
+切口平移反应中标记物掺入的量取决于DNA酶I切割产生的模板DNA中3'羟基端的数目。切口过多会产生过多的起始位点，可导致放射性标记物的最大掺入，但却产生过短的DNA片段而不能用作杂交探针。另一方面，切口过少则使切口平移可用的起始位点数目受限，从而产生低比活度的产物。制备过程中每批DNase I的活性可有所不同，大肠杆菌DNA聚合酶I中所污染的DNA酶的量亦相差悬殊。因此需要测定每批DNase I，摸索出酶的适当浓度，以产生所需比活度及长度的探针。当酶切（切口）和聚合反应同时进行时，在核苷酸的掺入开始之前可观察到微细滞后现象（Rigby et al. 1977），此滞后现象反映了DNase I在模板上产生切口的时间，而并不具实际意义。若以切口和聚合反应相继进行，取代两个反应同时进行，滞后现象即可消失（Koch et al. 1986）。
+
+有必要摸索 DNase I 的合适浓度，以使约 40% 的  $[\alpha-^{32}P]$ dNTP 在反应中掺入。在此条件下，标准的切口平移反应可产生比活度高于  $10^{8}cpm/\mu g$  的放射性标记探针。标记 DNA 链的长度为 400～750 个核苷酸，因此必须依据实验确定每种酶的最佳用量，以获得高比活度及长度适当的探针。可通过固定 DNA 聚合酶的用量（如 2.5U）而改变 DNase I 的用量使优化反应得以实现。
+
+---
+
+802
+
+分子克隆实验指南（原书第四版）
+
+虽然大肠杆菌 DNA 聚合酶 I 能在 dNTP 的浓度低至 2μmol/L 时作用，但在高浓度的底物存在时，酶催化 DNA 合成会更有效。为减少花费，切口平移反应中通常含有最低浓度的放射性标记 dNTP（0.5～5μmol/L），而未标记的 dNTP 的浓度则高得多（1mmol/L）。很大程度上，反应中放射性标记的 dNTP 的比活度决定终产物的比活度。这样，用同源未标记的 dNTP 来稀释放射性标记的 dNTP，可制备不同比活度的标记 DNA。如需要制备高比活度（>5×10$^{8}$ dpm/μg）的探针（用于重组 DNA 文库的筛选或用于复杂的哺乳类动物基因组 DNA 的 Southern 杂交检测单拷贝序列），切口平移反应中应含有所有 4 种放射性标记的 dNTP（比活度>800Ci/mmol），而不含有未标记的 dNTP。对于大多数研究目的，应用一种[α-$^{32}$P]（800Ci/mmol）标记的 dNTP 及三种未标记的 dNTP 即可，或用适量未标记的 dNTP 稀释每种[α-$^{32}$]dNTP，则足以满足需要。在比活度为 800Ci/mmol（约 12pmol/μL）的溶液中，放射性标记的 dNTP 浓度比在比活度为 3000Ci/mmol（约 3.3pmol/μL）的溶液中高约 3.75 倍。
+
+![](../../raw/pages_0305-0320/images/page_312_image_3.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+$[\alpha-^{32}P]$ dATP（800Ci/mmol），0.5mmol/L 生物素-11-dUTP 或 0.5mmol/L DIG-11-dUTP
+
+为最大限度地减少前体的辐射分解，应尽可能在  $\left[^{32}P\right]$  dNTP 到达实验室的当天制备放射性标记探针。
+
+DNase I (1mg/mL 储备溶液，稀释 1000 倍或 10 000 倍，见以下的注释)
+
+DNase I 通常以溶液形式出售（无 RNA 酶和/或无蛋白酶），亦有浓度为 2000～3000U/mg 蛋白的冻干粉出售。制备储备溶液时，可将 1mg DNase I 冻干粉溶于 1mL 含 20mmol/L Tris-Cl（pH 7.5）和 1mmol/L MgCl₂ 的溶液。将溶液分装微量离心管，迅速置于干冰上，然后储存于 -80℃。这样的溶液可保持酶活性储存达 1 年。使用时，将溶液在冰上融化，未用完的液体不可继续冻存。
+
+当制备放射性标记的探针时，用含 20mmol/L Tris-Cl（pH 7.5）、0.5mg/mL BSA 和 10mmol/L β-巯基乙醇的溶液稀释储备溶液 10 000 倍，此溶液在 4℃下可储存达 1 个月。因此，在制备非放射性探针时，以 1000 倍稀释 DNase I 储备溶液。
+
+dNTP 溶液，含 dTTP、dCTP 和 dGTP，每种浓度为 0.5mmol/L
+
+当制备非放射性探针时，用含 dUTP、dCTP 和 dGTP（每种浓度为 0.5mmol/L）的溶液代替含 dTTP、dCTP 和 dGTP 的 dNTP 溶液。
+
+大肠杆菌 DNA 聚合酶 I（10U/ $\mu$ L）
+
+EDTA (0.5mol/L, pH 8.0) &lt;A&gt;
+
+切口平移反应缓冲液（10×）&lt;R&gt;
+
+模板 DNA（50～500ng/μL）/TE（pH 7.6）
+
+应用本方案最好在标准的  $50 \mu L$  反应体系中用  $50 \mu g$  DNA。
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+803
+
+## 设备
+
+冰盒
+
+Sephadex G-50 离心柱，用 pH 7.6 TE 平衡（可选；见步骤 4）
+
+Sephadex G-50 凝胶过滤介质可用于从低分子质量物质（放射性前体保留在柱中）中分离 DNA（DNA 可穿过介质）。放射性标记 DNA 的纯化用 Sephadex G-50 柱可从几个商品渠道获得，如 Quick Spin Columns（Roche Applied Science 公司）。但是，用 1mL 装填硅化玻璃棉的一次性注射器很容易完成（见方案 1，步骤 6～14）。
+
+水浴（15℃）
+
+![](../../raw/pages_0305-0320/images/page_313_image_7.jpg)
+
+## 方法
+
+1. 将 $1.5 \mathrm{~mL}$ 的微量离心管置于冰上, 在管中加入下列组分:
+
+| 切口平移反应缓冲液(10×) | 5μL |
+| --- | --- |
+| dNTP 溶液 | 5μL |
+| $\left\lbrack {\alpha - {}^{32}\mathrm{P}}\right\rbrack \mathrm{{dATP}}\left( {{50\mu }\mathrm{{Ci}}}\right)$ ,生物素-11-dUTP (0.5 mmol/L) 或 DIG-11-dUTP (0.5mmol/L) | 5μL |
+| 稀释的 DNase I |  |
+| 大肠杆菌 DNA 聚合酶 I | 2μL |
+| 在步骤 2 加入 DNA 后,水加至终体积 | 50μL |
+
+2. 用于放射性标记时加入 $0.5\mu \mathrm{g}$ DNA，用于生物素或DIG标记时加入 $1\mu \mathrm{g}$ DNA。盖好微量离心管的盖子，轻敲管壁以混合各组分。以最大速度离心 $1\sim 2\mathrm{s}$，使所有液体降至管底。
+
+3. 制备放射性标记探针时，$15^{\circ}\mathrm{C}$ 下温育反应 $1\mathrm{h}$ 。制备DIG或生物素标记探针时，$15^{\circ}\mathrm{C}$ 下延长温育反应时间至 $2\mathrm{h}$ 。
+
+制备非放射性标记探针时，延长反应时间可使修饰的脱氧核苷酸掺入的效率达到最佳。
+
+4. 加入  $2 \mu L$   $0.5 \, mol/L$  EDTA 以终止反应，根据情况继续进行以下步骤。
+
+\- 储存放射性标记的探针于 $-20^{\circ} \mathrm{C}$ 以备杂交。
+
+或
+
+\- 通过离心柱色谱法（按照方案1，步骤6～14，用商品化的柱子或自制的柱子）将放射性标记探针与未标记的dNTP分离，或以乙酸铵和乙醇选择性地沉淀放射性标记的DNA（见第1章，方案4）。如>50%放射性标记的dNTP已在反应中掺入，则此步骤可省去。
+
+见“疑难解答”。
+
+5. 通过适当的分子标记物和琼脂糖迷你胶电泳分析小量反应混合物。理想的情况下，消化的 DNA 分子质量应当在 100bp 和 500bp。如果探针的大小在 500bp 和 1000bp（或更长），可增加反应中 DNase I 的量。
+
+见“疑难解答”。
+
+![](../../raw/pages_0305-0320/images/page_313_image_21.jpg)
+
+## 疑难解答
+
+问题（步骤 4）:标记物不能充分地掺入探针。
+
+解决方案:反应时间太短或 DNase I 量太低。为使切口平移反应优化，需要优化反应
+
+---
+
+804
+
+分子克隆实验指南（原书第四版）
+
+时间和加入反应的 DNase I 的量。可建立一系列平行反应，采用不同的反应时间和酶量，检测  $[\alpha-^{32}P]$ dATP 掺入探针的量，理想的情况下，探针中应当有 30%～40% 的标记物掺入。
+
+问题（步骤 4）:探针降解。
+
+解决方案:反应时间过长或 DNase I 量过高。如上所述，建立一系列平行反应优化反应时间和酶量。
+
+问题（步骤 5）:标记物不能充分地掺入探针。
+
+解决方案:DNA 模板片段可能过短（<500 bp）。可增加 DNase I 量以确保 DNA 至少形成一个切口。
+
+![](../../raw/pages_0305-0320/images/page_314_image_7.jpg)
+
+## 配方
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+切口平移反应缓冲液（10×）
+
+| 试剂 | 体积(1mL) | 终浓度 |
+| --- | --- | --- |
+| Tris-Cl (1mol/L, pH 7.5) | 500μL | 0.5mol/L |
+| MgCl2(1mol/L) | 100μL | 0.1mol/L |
+| DTT (1mol/L) | 10μL | 10mmol/L |
+| BSA (10mg/mL) | 50μL | 0.5mg/mL |
+
+分装并储存于 -20℃
+
+## 参考文献
+
+Kelly RB, Cozzarelli NR, Deutscher MP, Lehman IR, Kornberg A. 1970. Enzymatic synthesis of deoxyribonucleic acid. XXXII. Replication of duplex deoxyribonucleic acid by polymerase at a single strand break. J Biol Chem 245: 39–45.
+Koch J, Kolvraa S, Bolund L. 1986. An improved method for labelling of DNA probes by nick translation. Nucleic Acids Res 14: 7132.
+
+Krieg PA, Melton DA. 1987. In vitro RNA synthesis with SP6 RNA polymerase. Methods Enzymol 155: 397–415.
+
+Rigby PW, Dieckmann M, Rhodes C, Berg P. 1977. Labeling deoxyribonucleic acid to high specific activity in vitro by nick translation with DNA polymerase I. J Mol Biol 113: 237–251.
+
+## 方案 4 用聚合酶链反应标记 DNA 探针
+
+聚合酶链反应法（见第 7 章）可用于制备非放射性标记的 DNA 探针和高比活度的放射性标记的 DNA 探针。该法的优点如下:
+
+- 可扩增和标记目的 DNA 的限定片段，而不依赖于限制性酶切位点的定位与类型。
+- 不需要分离 DNA 片段或将片段亚克隆入含噬菌体启动子的载体。
+- 仅需要小量的模板 DNA（2～10 ng 或约 1 fmol）。
+- 放射性标记扩增的 DNA 的比活性可达 $10^{9} \mathrm{dpm} / \mu \mathrm{g}$。
+
+能同时扩增并放射性标记DNA的方法有四种。下述前三种方法需要靶DNA的序列信息，而第四种方法则无此需要。
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+805
+
+\- 应用常规 PCR 法可获得双链 DNA 探针，PCR 反应中含有同样浓度的上、下游引物。合成放射性探针时，反应中含有三种未标记的 dNTP，其浓度均超过各自的 $K_{\mathrm{m}}$ (200μmol/L)，一种 $[\alpha -^{32}\mathrm{P}]$ 标记的 dNTP 浓度等于或略高于其 $K_{\mathrm{m}}$ (2\~3μmol/L) (Jansen and Ledley 1989; Schowalter and Sommer 1989)。合成非放射性探针时，反应中含有非放射性标记的脱氧核苷酸，如生物素-11-dUTP 或 DIG-11-dUTP，浓度为正常水平的 1/3 (66.7μmol/L)，其中，dTTP 的量降至正常水平的 2/3 (133μmol/L)。
+
+\- 可通过 PCR 合成以 DNA 的一条链占优势的标记探针。此反应中，一条引物的浓度为另一条引物的 20～200 倍。在 PCR 最初的几个循环中，双链 DNA 以常规指数方式扩增。但当一条引物的浓度受限时，反应则以算术级数积聚单链 DNA，结果合成的 DNA 一条链的浓度大于另一条链 3～5 倍（Scully et al. 1990）（详见后文附加方案:不对称探针）。
+
+\- 通过热循环反应可合成完全由 DNA 的一条链构成的标记探针。此反应中含有双链 DNA 模板，但仅含有一条引物。通过 40 个循环反应，双链 DNA 模板（20ng）可产生约 200ng 的单链探针。通过引物结合位点下游的一个限制性位点，切割模板 DNA，可限定探针的长度（Stürzl and Roth 1990; Finckh et al. 1991）。注意，用细菌 T4 多核苷酸激酶和 Klenow 酶，通过引物延伸法亦可合成均一标记的单链 DNA 探针（见第 6 章，方案 16）。
+
+\- 靶 DNA 可用限制性内切核酸酶 CviJ I 酶切。此酶以三磷酸腺苷（ATP）为辅助因子，能切割识别序列 GC（YGCR 除外，Y 为嘧啶，R 为嘌呤）（Swaminathan et al. 1996）。由于二核苷酸 GC 在大多数 DNA 中频繁出现，因而酶切后产生分子质量较小的平端 DNA 片段，长度为 20～60 个核苷酸。这些小片段可作为 PCR 反应中的序列特异性引物，其中一等份的靶 DNA 可作为模板，产生分子质量不均一的双链 DNA 分子群，其分子质量从最小约 60bp 至最大超过靶 DNA 分子不等（Swaminathan et al. 1994）。其中大分子片段被认为是自嵌合模板与引物产生的复杂而混乱的靶 DNA 版本。研究者们对应用其序列与原模板 DNA 呈非共线性关系的探针深感不安，希望避免使用这种方法，但该技术仍受到那些因缺乏 DNA 序列信息而又想应用 PCR 技术的人们的青睐。
+
+下述方案由 Mala Mahendroo 和 Galvin Swift（得克萨斯州立大学，西南医学中心，达拉斯）提供，与 Schowalter 和 Sommer（1989）的制备放射性标记双链探针的方法十分接近。有关利用 PCR 法制备不对称探针的改进方法见后文附加方案:不对称探针。
+
+![](../../raw/pages_0305-0320/images/page_315_image_7.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+$\left[\alpha-^{32}\mathrm{P}\right]\mathrm{dCTP}$ （10mCi/mL，比活度为 3000Ci/mmol）
+
+为最大限度地减少前体的辐射分解，应尽可能在  $\left[^{32}P\right]$  dNTP 到达实验室的当天制备放射性标记探针。
+
+---
+
+806
+
+分子克隆实验指南（原书第四版）
+
+乙酸铵（10mol/L）&lt;A&gt;
+
+扩增缓冲液（10×）&lt;R&gt;
+
+生物素-11-dUTP 或 DIG-11-dUTP
+
+用于乙醇沉淀放射性标记探针的载体（见步骤5）
+
+可使用糖原（储备溶液=50 mg/mL，水配制）或酵母 tRNA（储备溶液浓度为 10mg/mL，水配制）。
+
+氯仿
+
+dCTP（0.1mmol/L，用于放射性标记）
+
+用 99 体积的 10mmol/L Tris-Cl（pH8.0）稀释 1 体积的 10mmol/L dCTP 储备溶液，将稀释后的溶液分装成 50μL 小份储存于 -20℃。
+
+dNTP 溶液
+
+含 dATP、dGTP 和 dTTP 各 10mmol/L 的 dNTP 溶液 1
+
+或
+
+含 dATP、dGTP 和 dCTP 各 10mmol/L 的 dNTP 溶液 2
+
+溶液 1 中加入放射性标记的 dCTP，溶液 2 中加入非放射性标记的 dUTP。关于制备和储存 dNTP 储备溶液，见信息栏 “dNTP 储备溶液的制备”。
+
+dTTP（5mmol/L，用于 DIG 或生物素标记）
+
+乙醇
+
+正向引物（20μmol/L）及反向引物（20μmol/L）（水配制）
+
+每条引物的长度应为20～30个核苷酸，4种碱基的数量应相近，G和C残基分布平衡，不易形成稳定的二级结构。将引物储备溶液储存于-20℃。
+
+自动 DNA 合成仪合成的寡核苷酸引物通常无需纯化即可用于标准的 PCR 反应。然而，如果将寡核苷酸引物用商品化的树脂层析纯化（如 NENSORB 公司、PerkinElmer Life Science 公司的产品）或通过变性聚丙烯酰胺凝胶电泳纯化，则哺乳动物基因组模板单拷贝的扩增和放射性标记常更有效（见第 2 章，方案 3）。
+
+TE (pH 7.6) &lt;A&gt;
+
+模板 DNA（2～10ng）
+
+各种模板均可用于此方案，包括小量制备的质粒 DNA 粗提样品（见第 1 章，方案 1）、分离纯化的琼脂糖或聚丙烯酰胺凝胶中的 DNA 片段（见第 2 章，方案 1），以及低复杂性微生物的基因组 DNA（如细菌和酵母）。
+
+当以重组质粒或其他类型的重组体为模板时，由于寡核苷酸引物与目的 DNA 两侧的载体序列互补或 PCR 在起始模板 DNA 上产生长的通读链，放射性标记的探针中可能会含有小量载体序列。对于大多数杂交实验，低水平载体序列的存在不会干扰实验结果。但是在筛选以高拷贝质粒（如 pUC、pBluescript 和 pGEM 载体）为载体的文库时，探针中的载体序列可导致本底增高。解决的办法包括:①采用定位于靶区内的正向和反向引物；②用凝胶纯化的 DNA 片段作为 PCR 扩增的起始模板；③用限制性内切核酸酶酶切模板 DNA 以防止通读链的合成。
+
+热稳定的 DNA 聚合酶（如 Taq DNA 聚合酶）
+
+每一扩增/标记反应需要热稳定的 DNA 聚合酶（2.5U）。
+
+## 设备
+
+自动微量进样器的屏障吸头
+
+微量离心管（0.5mL，PCR 专用的薄壁小管）
+
+正向置换进样器
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+807
+
+Sephadex G-75 离心柱，用 TE（pH 7.6）平衡
+
+Sephadex G-75 凝胶过滤介质可用于从低分子质量物质（放射性前体保留在柱中）中分离 DNA（DNA 可穿过介质）。但是，用 1mL 装填硅化玻璃棉的一次性注射器很容易完成（见方案 1，步骤 6～14，亦可用 Sephadex G-50 柱代替 Sephadex G-75。Sephadex G-50 柱可从商品渠道获得，如 Sigma-Aldrich 公司或 GE Healthcare Life Sciences 公司）。
+
+可编程所需扩增方案的热循环仪
+
+如果热循环仪无加热盖，可使用矿物油或石蜡珠以防止 PCR 过程中反应液蒸发。
+
+![](../../raw/pages_0305-0320/images/page_317_image_6.jpg)
+
+## 方法
+
+1. 在一个 0.5mL 的薄壁微量管中设置下列任一扩增/放射性标记反应体系:
+
+放射性标记
+
+| 扩增缓冲液(10×) | 5.0μL |
+| --- | --- |
+| dNTP溶液1(10mmol/L) | 1.0μL |
+| dCTP(0.1mmol/L) | 1.0μL |
+| 正向寡核苷酸引物(20μmol/L) | 2.5μL |
+| 反向寡核苷酸引物(20μmol/L) | 2.5μL |
+| 模板DNA(2~10ng或约1fmol) | 5~10μL |
+| [α-32P]dCTP(10mCi/mL) | 5.0μL |
+| (比活度3000Ci/mmol) |  |
+| H2O | 加至48μL |
+
+DIG 或生物素标记
+
+| 扩增缓冲液(10×) | 5.0μL |
+| --- | --- |
+| dNTP溶液2(10mmol/L) | 1.0μL |
+| dTTP(5mmol/L) | 1.33μL |
+| 正向寡核苷酸引物(20μmol/L) | 2.5μL |
+| 反向寡核苷酸引物(20μmol/L) | 2.5μL |
+| 模板DNA(2~10ng或约1fmol) | 5~10μL |
+| 生物素-11-dUTP或DIG-11-dUTP | 至66.7μmol/L |
+| ${\mathrm{H}}_{2}\mathrm{O}$ | 加至48μL |
+
+在反应体系中加入 2.5U 的热稳定 DNA 聚合酶。轻敲管壁以混合各组分。
+
+如利用一对引物标记一个以上的 DNA 片段时，可先配制含所有反应组分的母液（DNA 模板除外），将反应母液分入各 PCR 管，在加入酶及开始反应之前，将不同的模板 DNA 加入各管。
+
+2. 如果热循环仪无加热盖，可加一滴（50μL）轻矿物油或一粒石蜡珠于反应混合物之上，以防止样品在反复加热及冷却的循环中蒸发。将微量管放入热循环仪。
+
+3. 通过变性、复性和聚合扩增样品，反应时间见下表。
+
+| 循环数 | 变性 | 复性 | 聚合 |
+| --- | --- | --- | --- |
+| 30个循环 | 94°C,30~45s | 55~60°C,30~45s | 72°C,1~2min |
+| 末循环 | 94°C,1min | 55°C,30s | 72°C,1min |
+
+---
+
+808
+
+分子克隆实验指南（原书第四版）
+
+上述条件适用于 0.5mL 薄壁管、体积为  $50 \mu L$  的反应。如应用其他类型的仪器及反应体积，可适当调整反应时间和温度。
+
+每 1000bp 靶 DNA 的聚合时间应为 1min。
+
+大多数热循环仪常规设有在扩增完毕后  $4^{\circ}$ C 孵育的程序。样品可置于此温度直至取出或过夜，但取出后应储存于  $-20^{\circ}$ C。
+
+4. 从热循环仪中取出反应管, 用微量进样器尽可能地从反应液上层吸去矿物油。用 $50 \mu \mathrm{L}$ 氯仿抽提反应液, 以除去剩余的矿物油。室温下离心 $1 \mathrm{~min}$ 以使液相与有机相分离。
+
+5. 将上层水相转移到一个清洁的微量管中, 加入载体 tRNA (10\~100μg) 或糖原 (5μg), 用等体积的 4mol/L 乙酸铵和 2.5 体积的乙醇沉淀 DNA, 放置于 -20℃、1\~2h, 或 -70℃、10\~20min。4℃ 下以最大速度离心 5\~10min 收集沉淀的 DNA。
+
+6. 将 DNA 溶于  $20 \mu L$  TE (pH 7.6)，按照方案 1 步骤 6～14，用 Sephadex G-75 离心柱色谱法除去残存的未掺入 dNTP 和寡核苷酸引物。
+
+约 60% 的放射性同位素应掺入 DNA，通过离心柱色谱法洗脱而存在于流出液中。
+
+7. 当制备放射性标记探针时，用液闪仪测定  $1.0 \mu L$  离心柱中流出液的放射活性。储存剩余的放射性标记 DNA 于  $-20^{\circ} C$  以备用。
+
+放射性标记 DNA 的产量为 20～50ng，比活性为  $1 \times 10^{9} \sim 2.5 \times 10^{9}$  dpm/ $\mu$ g。
+
+## 附加方案 不对称探针
+
+通过限制扩增反应中一条引物的用量，可使扩增反应中双链 DNA 模板的一条链的合成占优势（Gyllensten and Erlich 1988; Innis et al. 1988; Shyamala and Ames 1989,1993; McCabe 1990; Scully et al. 1990）。产生的不对称探针可用于 Northern 杂交中确定未知 DNA 中哪一条链为基因的有义链、哪一条链为反义链。
+
+应用上述反应合成不对称探针时，可用  $0.4\mu mol/L$  的正向引物或反向引物代替标准的  $20\mu mol/L$  引物溶液（见方案 4，步骤 1）。其余步骤与以上描述的方法完全相同。
+
+谨记不对称扩增最初是以指数速率进行，当一条寡核苷酸引物量受限时，扩增速度延缓而以算术速率进行。不对称探针的比活度与常规 PCR 合成的探针相同，但反应中合成的 DNA 量将明显降低。于步骤 1 设立多组反应可弥补探针总量的减少。
+
+此外，反应中放射性标记的一条链合成占优势，但通常不超过另一条链的 5 倍。如有必要，此比率可加以改进，可通过:①利用凝胶电泳或阴离子交换层析分离单链与双链 DNA 产物；②用更为复杂的两步扩增法使单链探针能以大于 20 倍量合成（Finckh et al. 1991）。
+
+![](../../raw/pages_0305-0320/images/page_318_image_16.jpg)
+
+## 配方
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+809
+
+扩增缓冲液（10×）
+
+| 试剂 | 体积(50mL) | 终浓度 |
+| --- | --- | --- |
+| KCl(1mol/L) | 25mL | 0.5mol/L |
+| Tris-Cl(1mol/L,pH 8.3) | 5mL | 0.1mol/L |
+| MgCl2(1mol/L) | 750μL | 15mmol/L |
+
+将  $10 \times$  缓冲液在液体循环  $15 \, psi \, (1.05 \, kg/cm^{2})$  下灭菌  $10 \, min$ 。分装并储存于  $-20^{\circ}C$ 。
+
+## 参考文献
+
+- Finckh U, Lingenfelter PA, Myerson D. 1991. Producing single-stranded DNA probes with the Taq DNA polymerase: A high yield protocol. BioTechniques 10: 35–39. (Erratum BioTechniques [1992] 12: 382.)
+- Gyllensten UB, Erlich HA. 1988. Generation of single-stranded DNA by the polymerase chain reaction and its application to direct sequencing of the HLA-DQA locus. Proc Natl Acad Sci 85: 7652–7656.
+- Innis MA, Myambo KB, Gelfand DH, Brow MAD. 1988. DNA sequencing with Thermus aquaticus DNA polymerase and direct sequencing of polymerase chain reaction-amplified DNA. Proc Natl Acad Sci 85:9436–9440.
+- Jansen R, Ledley FD. 1989. Production of discrete high specific activity DNA probes using the polymerase chain reaction. Gene Anal Tech 6: 79–83.
+- McCabe PC. 1990. Production of single-stranded DNA by asymmetric PCR. In PCR protocols: A guide to methods and applications (ed Innis MA, et al.), pp. 76–83. Academic, New York.
+- Schowalter DB, Sommer SS. 1989. The generation of radiolabeled DNA and RNA probes with polymerase chain reaction. Anal Biochem 177:90–94.
+- Scully SP, Joyce ME, Abidi N, Bolander ME. 1990. The use of polymerase chain reaction generated nucleotide sequences as probes for hybridization. Mol Cell Probes 4: 485–495.
+- Shyamala V, Ames GE. 1989. Genome walking by single-specific-primer polymerase chain reaction: SSP-PCR. Gene 84: 1–8.
+- Shymala V, Ames GF. 1993. Genome walking by single specific primer-polymerase chain reaction. Methods Enzymol 217: 436–446.
+- Stürzl M, Roth WK. 1990. Run-off synthesis and application of defined single-stranded DNA hybridization probes. Anal Biochem 185: 164–169.
+- Swaminathan N, George D, McMaster K, Szablewski J, Van Etten JL, Mead DA. 1994. Restriction generated oligonucleotides utilizing the two base recognition endonuclease CviJI\*. Nucleic Acids Res 22: 1470–1475.
+- Swaminathan N, Mead DA, McMaster K, George D, Van Etten JL, Skowron PM. 1996. Molecular cloning of the three base restriction endonuclease R.CviJI from eukaryotic Chlorella virus IL-3A. Nucleic Acids Res 24: 2463–2469.
+
+## 方案 5 体外转录合成单链 RNA 探针
+
+制备特异性的单链 RNA 探针不仅比 DNA 探针更容易，在杂交反应中，一般也比具相同比活性的 DNA 探针容易产生更强的信号，这可能是由于 RNA 的杂合链固有的更高稳定性的缘故（Casey and Davidson 1977）。虽然 DNA 探针仍普遍地应用于 Northern 和 Southern 杂交，但当分析哺乳类动物基因的转录时，放射性标记的 RNA 是目前首选探针。由于 RNA 酶 A 既耐用又容易控制，可用其来消化 RNA-RNA 杂交体，而不必用特异性 S1 核酸酶来消化 DNA-RNA 杂合分子，RNA 酶 A 可在较宽的浓度范围内使用而不影响实验结果（Zinn et al. 1983; Melton et al. 1984）（见第 6 章，方案 17）。应用体外转录法可合成放射性标记和非放射性标记的探针。
+
+将含目的 DNA 片段及其上游带噬菌体强启动子的重组质粒线性化（图 13-3，见信息栏“用于体外转录的质粒载体”），或通过 PCR 合成 5'端含噬菌体启动子编码序列的模板（见本方案后的附加方案“用 PCR 法将噬菌体编码的 RNA 聚合酶启动子加至 DNA 片段上”），可产生体外转录 RNA 探针的模板。目前许多厂商销售体外转录试剂盒（如 MAXIscript 和 MEGAscript [Ambion 公司]、Riboprobe Gemini Systems [Promega 公司]）。对于第一次使用体外转录法的研究者来说，如果技术上存在问题，试剂盒显然很方便。但是，实验室里熟练的工作者很容易配制试剂盒中提供的试剂及缓冲液，单独购买酶则较经济。
+
+---
+
+810
+
+分子克隆实验指南（原书第四版）
+
+![](../../raw/pages_0321-0336/images/page_320_image_2.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["多位点人工接头"] --> B["SP6启动子"]
+  B --> C["T7启动子"]
+  D["限制性片段"] --> E["克隆DNA片段"]
+  C --> E
+  E --> F["线性化质粒DNA"]
+  G["用SP6 RNA聚合酶转录"] --> H["转录产物"]
+  I["用DNA酶处理以去除模板"] --> J["纯化转录产物"]
+```
+</details>
+
+图13-3 用噬菌体编码的RNA聚合酶体外合成RNA。[本图由Krieg和Melton（1987）提供，经Elsevier许可]。
+
+在本方案中，我们介绍从含噬菌体编码的RNA聚合酶启动子的质粒中合成高特异性RNA探针的方法。以下附加方案介绍PCR产物的产生和转录。这两种方法的简介和背景信息见下述信息栏。
+
+- 用于转录反应中 RNA 聚合酶的酶学特性详见本章末的信息栏“体外转录系统”。
+- 减少 RNA 酶的污染应采取的必要措施概括于第 6 章信息栏“如何去除 RNase”。
+
+## 用于体外转录的质粒载体
+
+许多市售的质粒和噬菌粒载体带有各种不同噬菌体启动子和多克隆位点的组合 [如 pGEM 系列（Promega 公司）]。一些载体还编码 lacZ α互补片段，可利用含有 X-gal（5-溴-4-氯-3-蚓哚-β-D-半乳糖苷）的平板，根据颜色来筛选重组体。如何选用这些载体，在很大程度上要看个人所好。但是，假如需要同时得到两条模板链的转录物，那么选用带两种不同噬菌体启动子的载体会比将模板以两个方向插入只携带一种噬菌体启动子的载体更为有效。仔细考虑模板 DNA 内部及其下游限制性内切核酸酶位点的分布也很重要。转录的 5'端被噬菌体启动子所固定，而它的 3'端则由下游的限制性内切核酸酶位点所限定。所以采用同一质粒经不同的限制性内切核酸酶产生一系列线性模板，就可制备不同长度的 RNA 探针。然而，RNA 探针中的质粒序列会增加杂交背景，这些探针不能用于筛选质粒或黏粒文库。
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+811
+
+制备模板 DNA 时，务必用一种限制酶完全切割超螺旋质粒 DNA，少量的环形质粒 DNA 可导致多聚转录物的形成而使产率显著降低。造成平端或 5' 突出端的限制酶可产生最佳的线性模板。但是，两种末端产生的 RNA 产物的 3' 端很不均一 (Melton et al. 1984; Milligan and Uhlenbeck 1989)。具 3' 突出端的模板会导致大量 RNA 分子在模板末端不正确地起始转录，从而产生双链 RNA 分子 (Schenborn and Mierendorf 1985)，因此应避免采用产生 3' 突出端的限制性内切核酸酶。
+
+除质粒外，一些噬菌体和黏粒载体也含有噬菌体启动子，通常分别以相反方向设计在可供外源 DNA 插入的克隆位点的两侧。当以这类载体构建的重组体被一种可在外源 DNA 内部切割数次的限制酶消化后，可产生大量的片段，其中之一将含有某特定噬菌体启动子及紧靠其下游的外源序列。假如所产生的片段不含 3'突出端，那么只有带噬菌体启动子的片段才能作为体外转录反应的模板。所产生的放射性标记 RNA 与原外源 DNA 片段一侧的序列互补，可用作探针以筛选基因组 DNA 文库或 cDNA 文库相互重叠的克隆。这些载体大大简化了从一个重组克隆到另一个重组克隆的染色体步查的任务。以下是两个高效合成链特异性 RNA 探针的方法:
+
+- 可将相关 DNA 片段克隆或亚克隆于含噬菌体编码的 DNA 依赖性 RNA 聚合酶启动子的特化质粒。以重组质粒作为双链模板的来源，体外转录成固定长度的、具链特异性的单链 RNA（Zinn et al. 1983; Melton et al. 1984）。
+- 在引物的 5'端设计有噬菌体编码的、依赖 DNA 的 RNA 聚合酶的合成启动子，通过 PCR 扩增待转录的 DNA 片段。将 PCR 产物纯化后，可用作体外转录反应的双链模板（Logel et al. 1992; Bales et al. 1993; Urrutia et al. 1993）。
+
+采用这两种方法均可极为有效地合成 RNA。当体外转录反应随核苷三磷酸（rNTP）饱和时，模板可被转录许多次，产生的 RNA 的量可数倍于模板。rNTP 浓度相对较低时（1～20μmol/L），噬菌体编码的、依赖 DNA 的 RNA 聚合酶也能在体外有效地发挥作用，所以合成高比活度全长探针的成本较低。此外，用无 RNA 酶的 DNase I 处理反应产物，即可从 RNA 探针中除去模板 DNA，因而通常不必用凝胶电泳进行纯化。但是，当用高比活度的 RNA 探针检测稀有 mRNA 转录物时，变性凝胶电泳纯化后的探针可使杂交背景最低。
+
+![](../../raw/pages_0321-0336/images/page_321_image_8.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+▲用于此方案的所有试剂均须用 DEPC 处理的水配制（见第 6 章的信息栏 “如何去除 RNase”）。
+
+## 试剂
+
+琼脂糖凝胶（0.8%\~1.0%）（见步骤1）
+
+$\left[\alpha-^{32}P\right]$ rGTP（10mCi/mL，比活度400～3000 Ci/mmol）
+
+为最大限度地减少前体的辐射分解，应尽可能在 $\left[\alpha-^{32}P\right]$ dNTP到达实验室的当天制备放射性标记探针。
+
+乙酸铵（10mol/L）&lt;A&gt;（可选；见步骤8）
+
+---
+
+812
+
+分子克隆实验指南（原书第四版）
+
+适当的限制性内切核酸酶（见步骤1）
+
+T4 噬菌体 DNA 聚合酶（2.5U/ $\mu$ L）（可选；见步骤 2）
+
+10×T4噬菌体DNA聚合酶缓冲液（可选；见步骤2）
+
+生物素-11-UTP 或 DIG-11-UTP（3.5mmol/L）
+
+牛血清白蛋白（2mg/mL，片段 V，Sigma-Aldrich 公司）
+
+DTT (1mol/L) &lt;A&gt;
+
+## T3、T7 或 SP6 噬菌体依赖 DNA 的 RNA 聚合酶
+
+这些酶由几家公司提供，通常浓度为 $10\sim 20\mathrm{U} / \mu \mathrm{L}$ 。大多数厂家还提供 $10\times$ 转录缓冲液，系适用于各自制备的依赖DNA的RNA聚合酶的优化缓冲液。但如厂商未提供缓冲液，可采用普通的 $10\times$ 转录缓冲液（见以下内容）。
+
+dNTP 溶液，含各 2mmol/L dATP、dCTP、dGTP 和 dTTP（可选；见步骤 2）
+
+有关配制及储存 dNTP 溶液，见信息栏 “dNTP 储备溶液的制备”
+
+乙醇
+
+酚:氯仿（1:1，V/V）
+
+胎盘 RNA 酶抑制剂（20U/ $\mu$ L）
+
+rGTP（0.5mmol/L）（可选；见步骤5）
+
+无 RNA 酶的胰腺 DNase I（1mg/mL）
+
+有几家厂商可提供这种酶（如 RQ1 无 RNA 酶的 DNA 酶 I [Promega 公司]）。
+
+rNTP 溶液 1，含 rATP、rCTP 和 rUTP 各 5mmol/L
+
+或
+
+rNTP 溶液 2，含 rATP、rCTP 和 rGTP 各 10mmol/L 以及 rUTP（6.5mmol/L）
+
+乙酸钠（3mol/L，pH 5.2）&lt;A&gt;
+
+模板 DNA
+
+体外转录的 DNA 片段应克隆于商品化的含噬菌体 RNA 聚合酶启动子质粒 [如 pGEM （Promega 公司）或 pBluescript（Stratagene 公司）] 中的多克隆位点两侧。按第 1 章所述的一种或多种方法纯化超螺旋重组质粒。
+
+用作体外转录反应的模板 DNA 不需高度纯化，小量制备的粗制品即足以胜任。最基本的要求就是模板不含 RNA 酶。这一标准通常用酚:氯仿抽提质粒 DNA 两次即可达到。在纯化过程中，如去除蛋白后再用 RNA 酶处理，这时应通过以下方法用蛋白酶 K 处理而除去 RNA 酶:
+
+1. 在质粒 DNA 样品中加入 0.1 体积 10×蛋白酶 K 缓冲液 [100mmol/L Tris-Cl (pH 8.0) / 50 mmol/L EDTA (pH 8.0) / 500mmol/L NaCl]、0.1 体积 0.5% (m/V) SDS 和终浓度为 100μg/mL 的蛋白酶 K（储备溶液 20 mg/mL）。
+
+2.  $37^{\circ}$ C 温育反应 1 h。
+
+3. 用酚:氯仿抽提及标准乙醇沉淀回收 DNA。
+
+4. 将 DNA 悬浮于无 RNA 酶的 TE（pH 7.6）至浓度为大于等于  $100 \mu g/mL$ 。
+
+10×转录缓冲液&lt;R&gt;
+
+## 设备
+
+微量离心管（0.5mL）
+
+Sephadex G-50 离心柱，用 10mmol/L Tris-Cl（pH7.5）平衡（可选；见步骤 8）。
+
+Sephadex G-50 凝胶过滤介质可用于从低分子质量物质（放射性前体保留在柱中）中分离 DNA（DNA 可穿过介质）。放射性标记 DNA 的纯化用 Sephadex G-50 柱可从几个商品渠道获得 [如 Quick Spin Columns（Roche Applied Science 公司）]。但是，用 1mL 装填硅化玻璃棉的一次性注射器很容易完成（见方案 1，步骤 6～14）。
+
+水浴（40℃）（如在步骤4中应用SP6噬菌体依赖DNA的RNA聚合酶）
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+813
+
+![](../../raw/pages_0321-0336/images/page_323_image_2.jpg)
+
+## 方法
+
+1. 用适量的限制酶消化超螺旋质粒 DNA 制备 5pmol 的线性模板 DNA。取一小份消化的 DNA（100ng）进行琼脂糖凝胶电泳分析。如有必要，再补加限制酶继续温育，直至不再残存痕量的未消化 DNA。
+
+2μg 3kb 质粒相当于约 1pmol。
+
+▲质粒 DNA 模板必须酶切完全，因为痕量的闭环质粒 DNA 可产生含质粒序列的极长转录物。由于这些转录物很长，因而会占用相当比例的放射性标记 rNTP 掺入。
+
+2. 如必须用产生 3' 突出端的限制酶如 PstI 或 SstI，则应用 T4 噬菌体 DNA 聚合酶在 4 种 dNTP 的存在下处理消化的 DNA 片段，以除去产生的 3' 突出端。
+
+3' 突出端可在依赖 DNA 的 RNA 聚合酶的作用下转移到模板的互补链，产生具有延伸二级结构的长 U 形回转转录物。T4 DNA 聚合酶具有 3' → 5' 外切核酸活性，对于单链底物的作用比双链底物更强，此酶能快速水解 3' 突出端，然后继续以较慢的速度去除 DNA 底物的双链部分。然而，在高浓度 dNTP 的存在下，由外切核酸活性产生的凹进的 3' 羟基端可作为模板的引物，通过 5' → 3' 聚合酶活性引导单核苷酸的加入。由于 T4 DNA 聚合酶的合成能力超过其外切核酸活性，突出的 3' 端即转变成平端（Richardson et al. 1964）。
+
+i. 酶切后先用酚:氯仿抽提，再用含 2.5mol/L 乙酸铵的乙醇沉淀，以纯化 DNA（见第 2 章，方案 4）。
+
+ii. 将 DNA 沉淀溶于
+
+| 10×T4 噬菌体 DNA 聚合酶缓冲液 | 2μL |
+| --- | --- |
+| 未标记的 dNTP 溶液(2mmol/L) | 1μL |
+| T4 噬菌体 DNA 聚合酶(2.5U/μL) | 1μL |
+| ${\mathrm{H}}_{2}\mathrm{O}$ | 加至 20μL |
+
+iii.  $37^{\circ}$ C下温育反应5min。
+
+3. 用酚:氯仿抽提及标准乙醇沉淀纯化模板 DNA。将 DNA 溶解于水，使其终浓度为 $100\mathrm{nmol/L}$ （如 $3\mathrm{kb}$ 质粒为 $200\mu \mathrm{g/mL}$）。
+
+4. 选择下列配方之一，将前6种组分置于室温下复温。在一个灭菌的 $0.5\mathrm{mL}$ 微量离心管中，室温下按以下列顺序混合:
+
+放射性标记
+
+| 模板 DNA | 0.2pmol(3kb 质粒为 400ng) |
+| --- | --- |
+| 无 RNA 酶的水 | 加至 6μL |
+| rNTP 溶液 1(5mmol/L) | 2μL |
+| DTT(100mmol/L) | 2μL |
+| 转录缓冲液(10×) | 2μL |
+| 牛血清白蛋白(2mg/mL) | 1μL |
+| [α-32P]rGTP(10mCi/mL) | 5μL(比活性 400~3000 Ci/mmol) |
+
+DIG或生物素标记
+
+| 模板 DNA | 0.2pmol(3kb 质粒为 400ng) |
+| --- | --- |
+| 无 RNA 酶的水 | 加至 9μL |
+| rNTP 溶液 2(10mmol/L) | 2μL(含 6.5mmol/L rUTP) |
+| DTT(100mmol/L) | 2μL |
+| 10×转录缓冲液 | 2μL |
+| 牛血清白蛋白(2mg/mL) | 1μL |
+| 生物素-11-UTP 或 DIG-11-UTP (3.5mmol/L) | 2μL |
+
+---
+
+814
+
+分子克隆实验指南（原书第四版）
+
+轻弹管外壁以使各组分混合。然后加入:
+
+| 胎盘 RNA 酶抑制剂(10U) | 1μL |
+| --- | --- |
+| 噬菌体依赖 DNA 的 RNA 聚合酶(约 10U) | 1μL |
+
+▲注意:在室温下按上述顺序加入各成分，以避免模板 DNA 被转录缓冲液中高浓度的亚精胺沉淀。
+
+轻敲管壁外侧使反应物混合，离心 1～2s 以使所有液体沉降到管底。37℃（T3 和 T7 噬菌体依赖 DNA 的 RNA 聚合酶）或 40℃（SP6 噬菌体依赖 DNA 的 RNA 聚合酶）温育反应物 1～2h。
+
+可依试剂的稀释程度调整反应体积至  $20 \sim 50 \mu L$ 。
+
+如按上述反应条件，一般能使 $80\% \sim 90\%$ 的放射性标记物掺入RNA。当 $[\alpha^{-32}\mathrm{P}]\mathrm{GTP}$ 的比活性为 $3000\mathrm{Ci / mmol}$ 时，RNA的产率约为 $20\mathrm{ng}$ （比活性为 $4.7\times 10^{9}\mathrm{dpm / \mu g})$ ；当前体的比活性为 $400\mathrm{Ci / mmol}$ 时，RNA产率约为 $150\mathrm{ng}$ （比活性为 $6.2\times 10^{8}\mathrm{dpm / \mu g})$ 。
+
+当使用生物素或 DIG 标记的 rNTP 时，反应中使用低浓度的修饰的核苷酸以确保仅有少量标记的核苷酸掺入探针的每个分子（每 20～25 个聚合的核苷酸中掺入约 1 个标记的核苷酸）。当仅有几个碱基被标记的同类物取代时，标记物在杂交后可被抗体更有效地识别。过多修饰核苷酸的掺入可减少探针与目标 mRNA 或 DNA 的杂交。
+
+5.（可选）当制备放射性标记探针时，如需全长转录物，可加入 $2\mu \mathrm{L}0.5\mathrm{mmol / L}$ rGTP，在适宜该聚合酶的温度下再温育 $60\mathrm{min}$ 。
+
+6. 加入 $1\mu \mathrm{L} 1\mathrm{mg / mL}$ 无RNA酶的胰DNaseI以终止体外转录反应。轻弹管外壁以混合各试剂。 $37^{\circ}C$ 温育反应混合物 $15\mathrm{min}$ 。
+
+7. 加入  $100 \mu L$  无 RNA 酶的水，通过用酚:氯仿抽提纯化 RNA。
+
+在某些实验中，探针的长度更为重要（如 RNA 酶保护试验），应通过聚丙烯酰胺凝胶电泳纯化放射性标记的 RNA（见第 2 章，方案 3），此步骤可除去探针中截短的标记分子。
+
+8. 将水相转移至一个新的微量离心管，用下列三种方法中的任一方法将标记的 RNA 与不需要的小分子 RNA 和 rNTP 分开。
+
+## 用乙醇沉淀纯化 RNA
+
+i. 在水相中加入  $30 \mu L$  10mol/L 乙酸铵，混匀后再加入  $250 \mu L$  冰预冷的乙醇。置于冰上 30min 后，在微量离心机中  $4^{\circ}C$  下以最大速度离心 10min 收集 RNA。
+ii. 小心地尽量吸去其中的乙醇，然后将管口敞开，在实验台上放置几分钟，使剩余的可见乙醇挥发干净。把 RNA 溶于  $100 \mu L$  无 RNA 酶的水中。
+iii. 加 2 倍体积冰预冷的乙醇，于  $-70^{\circ}C$  储存备用。
+
+回收 RNA 时，吸出一份乙醇溶液，转移到新的微量离心管。加入 0.25 体积的 10mol/L 乙酸铵，混匀后将管置于 -20℃ 至少 15min。在微量离心机中 4℃ 下以最大速度离心 10min。吸去乙醇，将 RNA 溶于适量体积的无 RNA 酶缓冲液中。
+
+## 通过离心柱色谱法纯化 RNA
+
+i. 如不使用商品化的离心柱, 将 Sephadex G-50 离心柱 (见方案 1) 平衡于 $10 \mathrm{mmol} / \mathrm{L}$ Tris-Cl (pH 7.5) 中灭菌处理。
+ii. 按方案 1 用离心柱色谱法纯化 RNA。
+iii. 将洗脱的 RNA 储存于  $-70^{\circ}$ C 备用。
+
+## 通过凝胶电泳纯化 RNA
+
+i. 按第 6 章，方案 11 准备中性聚丙烯酰胺凝胶。
+ii. 在水相中加入适量的凝胶上样缓冲液，通过凝胶电泳纯化 RNA。
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+815
+
+iii. 按第 2 章，方案 7 通过放射性自显影定位 RNA。
+
+iv. 按第 2 章，方案 10 用挤碎和浸泡的方法从凝胶块中纯化 RNA。
+
+v. 将 RNA 储存于  $-70^{\circ}$ C 备用。
+
+上述任一纯化方法均应能够从 RNA 中除去大于 99.0% 未掺入的 rNTP。
+
+见“疑难解答”。
+
+![](../../raw/pages_0321-0336/images/page_325_image_7.jpg)
+
+## 疑难解答
+
+问题（步骤 8）:无 RNA 合成。
+
+解决方案: 如果不见 RNA 合成, 最常见的一个原因就是试管或试剂中污染了 RNA 酶。采取第 6 章概述中所述的注意事项可避免污染。
+
+另一个不太常见的原因是  $10 \times$  转录缓冲液中的亚精胺使 DNA 模板发生沉淀。务必注意在室温下并按所述顺序添加反应液各成分。如有必要，取少量反应液用琼脂糖凝胶电泳分析，确证模板处于溶解状态。
+
+问题（步骤 8）:按错误的 DNA 链进行转录。
+
+解决方案:通常由噬菌体依赖的 DNA 的 RNA 聚合酶体外合成的大于 99.8% 转录物沿正确的 DNA 链产生（Melton et al. 1984），但只有采用非 3' 突出端的线状模板才能获得这样高的特异性。模板中污染的超螺旋质粒 DNA 将会增加 RNA 链，同时在 DNA 的两条链上错误起始。而且噬菌体启动子下游的 3' 突出端也将导致产生与全长的 DNA 错误链互补的转录物（如 U 形回转录物）。制备模板时多加小心即可避免这个问题（见步骤 1 和步骤 2）。
+
+问题（步骤 8）:合成的转录物小于所需长度。
+
+解决方案:合成产物未能达到全长的原因可能是由于所使用的特殊的依赖 DNA 的 RNA 聚合酶在某些终止转录的模板序列上停止转录；受前体（常为放射性标记的 rNTP）的浓度制约则可能为另一个原因。
+
+为解决第一个问题，可构建一个新的质粒，在该质粒中由另一种噬菌体编码的聚合酶对目的序列进行转录。对于噬菌体依赖 DNA 的 RNA 聚合酶来说，转录终止子序列并不会同样有效地被各种酶所识别。
+
+虽然转录终止信号的强度相差悬殊，但只要增加限速 rNTP 的浓度，除最强的终止信号外，所有终止信号均可能被超越，至少是部分被超越。在大多数情况下，增加反应中放射性标记 rNTP 的浓度是不切实际的，因为提高全长产物的产率是以降低探针的比活度为代价的。此时，可采用其他步骤:
+
+\- 降低转录反应的温度至 $30^{\circ} \mathrm{C}$ (Krieg and Melton 1987)。
+
+\- 把待转录序列减到最小，这样有可能从克隆中去除终止序列。
+
+\- 按第 2 章，方案 1 或方案 3 所述，用聚丙烯酰胺或琼脂糖凝胶电泳纯化目的产物。由于转录反应的效率很高，即使它们在反应中仅占合成的总 RNA 中相对较少的一部分，亦常能纯化出足够量的目的 RNA。
+
+---
+
+816
+
+分子克隆实验指南（原书第四版）
+
+# 附加方案 用 PCR 法将噬菌体编码的 RNA 聚合酶启动子加至 DNA 片段上
+
+通过将目的 DNA 片段克隆到带噬菌体启动子的质粒中可产生噬菌体编码的 RNA 聚合酶作用的模板（方案 5），亦可用基因特异性的引物通过 PCR 合成模板，该基因特异性引物 5'端编码合成的启动子，供噬菌体编码的依赖 DNA 的 RNA 聚合酶起始转录。PCR 产物经纯化后，可用作体外转录反应的双链模板（Logel et al. 1992; Bales et al. 1993; Urrutia et al. 1993）。这样通过采用含编码不同启动子的成对引物，可合成 DNA 片段，以此为模板用适当的 RNA 聚合酶即可进行链特异性的转录。PCR 法的优越性如下:
+
+- 探针可直接从不同群体的 DNA 片段扩增出来的 DNA 模板合成。
+- 不需质粒的克隆及制备。
+- 探针中不含质粒或多克隆位点序列。
+- 可合成高比活性及任意大小的探针。
+
+T3、T7噬菌体编码的RNA聚合酶可转录高特异性及含适当启动子的PCR扩增的DNA，但所获RNA的产率比线状质粒模板低3～4倍。当用PCR扩增的DNA作模板时，20%～30%标记的rNTP成为酸不溶性物质；而用线性质粒DNA作模板时，则大于75%标记的rNTP成为酸不溶性物质（Logel et al. 1992）。尽管如此，以PCR扩增产物合成的RNA的产率和比活性足以满足大多数实验目的。据报道，由SP6噬菌体编码的RNA聚合酶转录PCR扩增产物的效率远低于转录线性质粒DNA的效率（Logel et al. 1992）。因此，我们建议采用编码T3和T7噬菌体启动子的引物。
+
+## 引物设计
+
+通常引物很长（>50个核苷酸），由三个区域组成:
+
+| 5'夹子(约10个核苷酸) | 核心启动子(约22个核苷酸) | 基因特异性序列3'(约20个核苷酸) |
+| --- | --- | --- |
+
+由 T3 和 T7 噬菌体 RNA 聚合酶识别的核心启动子序列由 Jorgensen 等(1991)报道(见信息栏“体外转录系统”):
+
+| T7噬菌体核心启动子:5'TAATACGACTCACTATAGGGAGA3' |
+| --- |
+| T3噬菌体核心启动子:5'ATTAACCCTCACTAAAGGGAGA3' |
+
+T3 启动子的 3'端的大多数二核苷酸可能为 GA 或 AG。
+
+引物对的每一条引物使用不同的夹子序列，推测夹子序列为（Logel et al. 1992）5'CAGAGATGCA3'和5'CCAAGCCTTC3'。应按常规设计基因特异性引物（见第7章导言中有关引物设计的讨论）。
+
+## 扩增条件
+
+扩增反应含 10～20pg 的单种模板 DNA，如模板为 DNA 的复杂集群，则按比例增加模板量。其余扩增反应试剂均按标准浓度（见第 7 章，方案 1）。以下列举的变性、复性和聚合时间适用于 50μL 反应体积、使用 0.5mL 薄壁小管及应用以下热循环仪，如 Perkin-Elmer 9600 或 9700、Master Cycler（Eppendorf 公司）及 PTC 100（MJ Research 公司）。如应用其他类型的仪器及不同的反应体积，反应时间和温度应适当调整。
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+817
+
+| 循环数 | 变性 | 复性 | 聚合 |
+| --- | --- | --- | --- |
+| 1~4 | 94°C, 1min | 54°C, 2min | 72°C, 3min |
+| 5~36 | 94°C, 1min | 65°C, 1min | 72°C, 3min |
+
+每 1000bp 的靶 DNA 聚合时间应为 1min。
+
+大多数热循环仪设置  $4^{\circ}$ C 温育扩增样品的终末程序直至样品取出。样品在此温度下可过夜，但此后应储存于  $-20^{\circ}$ C。
+
+## 扩增 DNA 的纯化
+
+虽然扩增的 DNA 不经纯化即可用作体外转录反应的模板(Bales et al. 1993; Urrutia et al. 1993)，但如通过低融点琼脂糖凝胶、Sephadex G-75 离心柱色谱法或通过商品化的树脂吸附/洗脱而除去剩余引物和扩增反应的副产品，如采用 Wizard PCR 样品纯化系统（Promega 公司）或 QIAquick（Qiagen 公司）进行纯化，RNA 合成的效率会更高。
+
+## 扩增 DNA 的体外转录
+
+在适当噬菌体编码的依赖 DNA 的 RNA 酶的催化下，约  $0.5 \mu g$  纯化的扩增 DNA 可用作标准转录反应中的模板（见方案 5）。
+
+![](../../raw/pages_0321-0336/images/page_327_image_9.jpg)
+
+## 配方
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+$10 \times$ 转录缓冲液
+
+| 试剂 | 体积(1mL) | 终浓度 |
+| --- | --- | --- |
+| Tris-Cl(1mol/L,pH 7.5) | 400μL | 400mmol/L |
+| MgCl2(1mol/L) | 60μL | 60mmol/L |
+| Spermidine HCl(100mmol/L) | 200μL | 20mmol/L |
+| NaCl(5mol/L) | 10μL | 50mmol/L |
+
+对  $10\times$  缓冲液进行过滤除菌，然后分装、储存于  $-20^{\circ}C$ ，使用后弃去。
+
+## 参考文献
+
+- Bales KR, Hannon K, Smith CK II, Santerre RF. 1993. Single-stranded RNA probes generated from PCR-derived DNA templates. Mol Cell Probes 7: 269–275.
+- Casey J, Davidson N. 1977. Rates of formation and thermal stabilities of RNA:DNA and DNA:DNA duplexes at high concentrations of formamide. Nucleic Acids Res 4: 1539–1552.
+- Jorgensen ED, Durbin RK, Risman SS, McAllister WT. 1991. Specific contacts between the bacteriophage T3, T7, and SP6 RNA polymerases and their promoters. J Biol Chem 266: 645–651.
+- Krieg PA, Melton DA. 1987. In vitro RNA synthesis with SP6 RNA polymerase. Methods Enzymol 155: 397–415.
+- Logel J, Dill D, Leonard S. 1992. Synthesis of cRNA probes from PCR-generated DNA. BioTechniques 13: 604–610.
+- Melton DA, Krieg PA, Rebagliati MR, Maniatis T, Zinn K, Green MR. 1984. Efficient in vitro synthesis of biologically active RNA and RNA hybridization probes from plasmids containing a bacteriophage
+- SP6 promoter. Nucleic Acids Res 12: 7035–7056.
+- Milligan JF, Uhlenbeck OC. 1989. Synthesis of small RNAs using T7 RNA polymerase. Methods Enzymol 180: 51–62.
+- Richardson CC, Schildkraut CL, Aposhian HV, Kornberg A. 1964. Enzymatic synthesis of deoxyribonucleic acid. XIV. Further purification and properties of deoxyribonucleic acid polymerase of Escherichia coli. J Biol Chem 239: 222–232.
+- Schenborn ET, Mierendorf RC Jr. 1985. A novel transcription property of SP6 and T7 RNA polymerases: Dependence on template structure. Nucleic Acids Res 13: 6223–6236.
+- Urrutia R, McNiven MA, Kachar B. 1993. Synthesis of RNA probes by the direct in vitro transcription of PCR-generated DNA templates. J Biochem Biophys Methods 26: 113–120.
+- Zinn K, DiMaio D, Maniatis T. 1983. Identification of two distinct regulatory regions adjacent to the human β-interferon gene. Cell 34: 865–879.
+
+---
+
+818
+
+分子克隆实验指南（原书第四版）
+
+# 方案 6 用随机寡核苷酸引物法从 mRNA 合成 cDNA 探针
+
+此法以 $\mathrm{poly(A)^+}$ RNA作为模板，通过随机引物反应合成放射性标记的cDNA探针，这类探针可用于cDNA文库的差异筛选。
+
+![](../../raw/pages_0321-0336/images/page_328_image_4.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+▲用于此方案的所有试剂均须用 DEPC 处理的水配制（见第 6 章的信息栏 “如何去除 RNase”）。
+
+## 试剂
+
+$\left[\alpha-^{32}P\right]$ dCTP（10mCi/mL，比活度>3000Ci/mmol）
+
+为最大限度地减少前体的辐射分解，应尽可能在 $\left[\alpha-^{32}P\right]$ dNTP到达实验室的当天制备放射性标记探针。
+
+乙酸铵（10mol/L）&lt;A&gt;
+
+dCTP (125μmmol/L)
+
+在  $160 \mu L$  25mmol/L Tris-Cl（pH 7.6）中加入  $1 \mu L$  20mmol/L dCTP 储备溶液。将稀释的溶液以小份分装，储存于  $-20^{\circ}C$ 。
+
+dNTP 溶液，含有 dATP、dGTP 和 dTTP 各 20mmol/L
+
+有关配制及储存 dNTP 溶液，见信息栏 “dNTP 储备溶液的制备”。
+
+DTT (1mol/L)
+
+EDTA (0.5mol/L, pH 8.0)
+
+乙醇
+
+HCl (2.5mol/L)
+
+NaOH(3mol/L)
+
+酚:氯仿（1:1，V/V）
+
+胎盘 RNA 酶抑制剂（20U/ $\mu$ L）
+
+这些抑制剂有几家厂商以各种商品名销售（如 RNasin [Promega 公司]、RNaseOUT [Life Technologies 公司]。详情见第 6 章信息栏 “RNase 的抑制剂”。
+
+长度为 6 或 7 个碱基的随机脱氧核苷酸引物
+
+随机序列的合成寡核苷酸长度均一，无序列偏性，因而作为首选引物。最佳长度的寡核苷酸（六聚体或七聚体）（Suganuma and Gupta 1995）可从商品来源获得（如 Sigma-Aldrich 公司和 Boehringer Mannheim 公司）或在自动 DNA 合成仪上合成。将引物溶于 TE（pH 7.6），浓度为  $0.125 \mu g/\mu L$ ，分装成小份储存于  $-20^{\circ}C$ 。
+
+## 反转录酶
+
+Moloney 小鼠白血病病毒（Mo-MLV）pol 基因衍生的反转录酶在 cDNA 合成中的效率高于从禽髓系白血病病毒获得的反转录酶（见 Fargnoli et al. 1990）。克隆的 Mo-MLV 编码的反转录酶是本方案的首选酶。缺乏 RNase H 活性的酶的突变株 [如 StrataScript（Stratagene 公司）或 Superscript II（Life Technologies 公司）] 比野生型酶具有以下优越性:①全长延伸产物的产率高；②在 47℃ 和 37℃ 下均能有效作用（Gerard and D'Alessio 1993）。
+
+Mo-MLV 反转录酶对温度很敏感，应储存于  $-20^{\circ}C$  直至步骤 2 时使用。
+
+10×反转录酶缓冲液&lt;A&gt;
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+819
+
+$$
+\mathrm{SDS} (10 \%, m / V) <   \mathrm{A}>
+$$
+
+模板 mRNA
+
+按第 6 章，方案 9 所述制备 poly(A) $^{+}$ RNA，溶于无 RNA 酶的水，浓度为 250μg/mL。
+
+$$
+\text {Tris - Cl} (1 \mathrm{mol} / \mathrm{L}, \mathrm{pH} 7. 4) <   \mathrm{A} >
+$$
+
+## 设备
+
+冰水浴
+
+Sephadex G-50 离心柱，平衡于 TE（pH7.6）（可选；见步骤 7）。
+
+Sephadex G-50 凝胶过滤介质可用于从低分子质量物质（放射性前体保留在柱中）中分离 DNA（DNA 可穿过介质）。放射性标记 DNA 纯化用 Sephadex G-50 柱可从几个商品渠道获得 [如 Quick Spin Columns （Roche Applied Science 公司）]。但是，用 1mL 装填硅化玻璃棉的一次性注射器很容易完成（见方案 1，步骤 6～14）。
+
+预热至  $45^{\circ}$ C、 $68^{\circ}$ C 和  $70^{\circ}$ C 的水浴或加热块。
+
+![](../../raw/pages_0321-0336/images/page_329_image_11.jpg)
+
+## 方法
+
+1. 将 $1 \mu \mathrm{g} \mathrm{poly}(\mathrm{A})^{+} \mathrm{RNA}$ 转移至无菌的离心管。用无 RNA 酶的水将溶液的体积调至 $4 \mu \mathrm{L}$ 。盖紧微量离心管盖，于 $70^{\circ} \mathrm{C}$ 加热 $5 \mathrm{~min}$，然后迅速将离心管置于冰水浴中。
+
+2. 在微量离心管的冷溶液中加入:
+
+| DTT(10mmol/L) | 2.5μL |
+| --- | --- |
+| 胎盘RNA酶抑制剂 | 20U |
+| 随机脱氧寡核苷酸引物 | 5μL |
+| 10×反转录缓冲液 | 2.5μL |
+| dGTP、dATP和dTTP溶液(20mmol/L) | 1μL |
+| dCTP溶液(125μmol/L) | 1μL |
+| [α-32P]dCTP(10mCi/mL) | 10μL |
+| (比活性为>3000Ci/mmol) |  |
+| 无RNA酶的水 | 加至24μL |
+| 反转录酶(200U) | 1μL |
+
+▲ 最后加反转录酶。
+
+由不同厂商提供的每单位反转录酶的活性不同。当使用一批新的酶时，应设立一系列含等量 $\mathrm{poly(A)^+RNA}$ 、寡核苷酸引物及不同酶量的延伸反应。如有可能，应使用对于 $\mathrm{poly(A)^+RNA}$ 中以中等丰度存在的某一 mRNA 为特异性的引物。按本方案所述，通过凝胶电泳分析每次反应的产物。应用能产生最高得率的延伸产物所需的最小酶量。本方案中所述的酶单位对于大多数批次的 StrataScript 和 Superscript II 都适用。
+
+轻敲管壁以混匀各成分，稍加离心以除去气泡。45℃温育反应混合物1h。
+
+可用比活性为 800 Ci/mmol 的  $[\alpha-^{32}P]$ dCTP 代替反应混合物中的 125μmol/L dCTP。
+
+3. 加入下列试剂以终止反应:
+
+| EDTA (0.5 mol/L, pH 8.0) | 1μL |
+| --- | --- |
+| SDS (10%, m/V) | 1μL |
+
+充分混合管中的试剂。
+
+单链放射性标记的 cDNA 很黏，能非特异性地附着于玻璃、滤膜和某些塑料制品。因此用于本方案步骤 3 的溶液至少应含 0.05% (m/V) SDS，以及杂交缓冲液中含 0.1%\~1.0% SDS。
+
+4. 在反应管中加入 $3 \mu \mathrm{L} 3 \mathrm{~mol} / \mathrm{L} \mathrm{NaOH}, 68^{\circ} \mathrm{C}$ 温育混合物 $30 \mathrm{~min}$ 以水解 RNA。
+
+5. 使反应混合物的温度降至室温，加入 $10 \mu \mathrm{L} 1 \mathrm{~mol} / \mathrm{L}$ Tris-Cl（$\mathrm{pH} 7.4$）以中和溶液，完全混匀，然后加入 $3 \mu \mathrm{L} 2.5 \mathrm{~mol} / \mathrm{L} \mathrm{HCl}$。取极小量液体在 $\mathrm{pH}$ 试纸上，以检测溶液的 $\mathrm{pH}$。
+
+6. 用酚:氯仿抽提纯化 cDNA。
+
+---
+
+820
+
+分子克隆实验指南（原书第四版）
+
+7. 用离心柱色谱法（按照方案1步骤 $6\sim 14$ 用商品化的柱子或自制的柱子）或在$2.5\mathrm{mol / L}$ 乙酸铵存在下用乙醇选择性地沉淀（见第1章，方案4)，将放射性标记的探针与未掺入的dNTP分离。
+
+8. 确定放射性标记 dNTP 掺入 TCA 沉淀物中的比例（见附录 2）。
+
+假定 30% 的放射性活性在随机引物反应中掺入了 TCA 可沉淀物，且 90% 该物质是沿模板 RNA 由随机引物反应产生的（而非寡核苷酸的自身引导），那么探针 DNA 的总活性将为约  $6 \times 10^{7}$  dpm，探针的比活性可达约  $5 \times 10^{9}$  dpm/ $\mu$ g，反应中合成的 DNA 量为 11.7ng。
+
+如需标记大量的 cDNA，可按比例增加各成分的体积。重要的是保持 200U 反转录酶/ $\mu$ g mRNA 的比例，以确保最高产率。
+
+纯化的放射性标记 cDNA 无须变性即可用于杂交。每张 150mm 滤膜可用  $5 \times 10^{7}$  dpm 放射性标记的 cDNA，每张 90mm 滤膜可用  $5 \times 10^{6} \sim 1 \times 10^{7}$  dpm 放射性标记的 cDNA。
+
+## 参考文献
+
+Fargnoli J, Holbrook NJ, Fornace AJ Jr. 1990. Low-ratio hybridization subtraction. Anal Biochem 187: 364–373.
+
+Gerard GF, D'Alessio JM. 1993. Reverse transcriptase (EC2.7.7.49): The use of cloned Moloney murine leukemia virus reverse transcriptase to synthesize DNA from RNA. In Enzymes of molecular biology (ed Burrell
+
+MM), pp. 73–94. Humana, Totowa, NJ.
+Suganuma A, Gupta KC. 1995. An evaluation of primer length on random-primed DNA synthesis for nucleic acid hybridization: Longer is not better. Anal Biochem 224: 605–608.
+
+## 方案 7 用随机寡核苷酸延伸法制备放射性标记的消减 cDNA 探针
+
+此方案中 cDNA 的合成是在 4 种饱和浓度的 dNTP 及一种痕量的放射性标记的 dNTP 中进行的。消减杂交后，在大肠杆菌 DNA 聚合酶 I 的 Klenow 片段作用下，富集的单链 cDNA 通过随机寡核苷酸引物延伸的二次合成反应，标记成高比活度的探针。由于第一轮反应中 dNTP 的浓度为非限制性的，所生成的 cDNA 的量及大小均高于标准方案，因此消减杂交步骤以高效进行。由此产生的 cDNA 群体不易受辐射分解的破坏，从而可长期储存，必要时尚可标记成较高比活度的探针。
+
+如初始反应中合成的 cDNA 为全长或接近全长，本方案最为适用。所以本方案 cDNA 的合成以 oligo(dT) 引导，而不以随机六核苷酸作引物。随后的放射性标记反应则以随机寡核苷酸作引物，产生较短的 DNA 产物，如此大小的片段是杂交的理想探针。
+
+按本方案中步骤 1～10 所述制备的 cDNA 可转变成双链 DNA，并克隆到噬菌体或质粒载体而产生消减 cDNA 文库（Sargent and Dawid 1983; Davis 1986; Rhyner et al. 1986; Fargnoli et al. 1990），可用消减探针筛选 cDNA 文库。由于消减文库中富集了与低丰度 mRNA 相对应的 cDNA 克隆，所以要找到一个相应于稀有 mRNA 克隆所需的筛选量可减少 10 倍。本方案介绍的放射性标记的消减探针可检测到相当于每个哺乳类动物细胞表达 5 个 mRNA 分子水平的 cDNA。
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+821
+
+![](../../raw/pages_0321-0336/images/page_331_image_2.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+▲用于此方案的所有试剂均须用 DEPC 处理的水配制（见第 6 章的信息栏 “如何去除 RNase”）。
+
+## 试剂
+
+$\left[\alpha-^{32}P\right]$ dATP（10mCi/mL，比活性>3000Ci/mmol）
+
+$\left[\alpha-^{32}\mathrm{P}\right]\mathrm{dCTP}$ （10mCi/mL，比活性800～3000Ci/mmol）
+
+为最大限度地减少前体和探针的辐射分解，应尽可能在 $\left[\alpha-^{32}P\right]$ dNTP到达实验室的当天制备放射性标记探针。
+
+乙酸铵（10mol/L）&lt;A&gt;
+
+含 4 种 dNTP 各 5mmol/L 的 dNTP 溶液（完全溶液）
+
+含 dCTP、dGTP 和 dTTP 各 5mmol/L 的 dNTP 溶液
+
+▲此溶液中省去 dATP。
+
+有关制备和储存 dNTP 溶液见信息栏 “dNTP 储备溶液的制备”。
+
+驱动 mRNA（见步骤 8）
+
+DTT (1mol/L) &lt;A&gt;
+
+EDTA (0.5mol/L, pH 8.0) &lt;A&gt;
+
+乙醇
+
+HCl (2.5mol/L)
+
+异丁醇
+
+大肠杆菌 DNA 聚合酶 I Klenow 片段
+
+NaOH (3mol/L)
+
+oligo(dT) $_{12\sim18}$
+
+可购买 oligo(dT) $_{12\sim18}$ ，将其溶解于 TE（pH 7.6），浓度为 1mg/mL。-20℃储存。
+
+酚:氯仿（1:1，V/V）
+
+胎盘 RNA 酶抑制剂
+
+几家厂商以不同的商品名出售这类抑制剂 [如 Rnasin（Promega 公司）；RNaseOUT（Life Technologies 公司）]。详细内容见第 6 章的信息栏 “RNase 的抑制剂”。
+
+长度为 6 或 7 个碱基的随机脱氧核苷酸引物
+
+随机序列的合成寡核苷酸长度均一、无序列偏性，为引物首选。最佳长度的寡核苷酸（六聚体和七聚体）（Suganuma and Gupta 1995）可从商业渠道购买（如 Sigma-Aldrich 公司和 Life Technologies 公司）或在自动 DNA 合成仪上合成。将引物溶于 TE（pH 7.6），浓度为  $0.125 \mu g/\mu L$ ，分装成小份储存于  $-20^{\circ}C$ 。
+
+$5 \times$ 随机引物缓冲液 $< \mathrm{A} >$
+
+反转录酶
+
+Moloney 小鼠白血病病毒（Mo-MLV）pol 基因衍生的反转录酶在 cDNA 合成中的效率高于从禽髓系白血病病毒获得的反转录酶（见 Fargnoli et al. 1990）。克隆的 Mo-MLV 编码的反转录酶是本方案的首选酶。缺乏 RNase H 活性的酶的突变株 [如 StrataScript（Stratagene 公司）或 Superscript II（Life Technologies 公司）] 比野生型酶具有以下优越性:①全长延伸产物的产率高；②在 47℃ 和 37℃ 下均能有效作用（Gerard and D'Alessio 1993）。
+
+10×反转录酶缓冲液&lt;A&gt;
+
+SDS (20%, m/V) &lt;A&gt;
+
+SDS/EDTA 溶液
+
+EDTA (30mmol/L, pH 8.0)
+
+SDS (1.2%)
+
+---
+
+822
+
+分子克隆实验指南（原书第四版）
+
+乙酸钠（3mol/L, pH 5.2）&lt;A&gt;
+
+磷酸钠缓冲液（2mol/L, pH 6.8）&lt;A&gt;
+
+SPS 缓冲液
+
+磷酸钠缓冲液（0.12mol/L, pH 6.8）
+
+SDS (0.1%, m/V)
+
+模板 RNA
+
+从表达目的 mRNA 的细胞或组织中两次过柱制备的 poly(A) $^{+}$ 丰富的 mRNA
+
+从不表达目的 mRNA 的细胞或组织中两次过柱制备的 poly(A) $^{+}$ 丰富的 mRNA
+
+通过 oligo(dT)磁珠制备和分离 mRNA 见第 6 章，方案 9。两种 RNA 应溶解于水，浓度约为 1mg/mL。
+
+Tris-Cl (1mol/L, pH 7.4) &lt;A&gt;
+
+无 RNA 酶的水
+
+## 设备
+
+Sephadex G-50 离心柱，平衡于 TE（pH 7.6）
+
+Sephadex G-50 凝胶过滤介质可用于从低分子质量物质（放射性前体保留在柱中）中分离 DNA（DNA 可穿过介质）。放射性标记 DNA 纯化用 Sephadex G-50 柱可从几个商品渠道获得 [如 Quick Spin Columns（Roche Applied Science 公司）]。但是，用 1mL 装填硅化玻璃棉的一次性注射器很容易完成（见方案 1，步骤 6～14）。
+
+硅化的微量离心管（1.5mL）
+
+预热至  $45^{\circ}$ C、 $60^{\circ}$ C 和  $68^{\circ}$ C 的水浴或加热块
+
+![](../../raw/pages_0321-0336/images/page_332_image_18.jpg)
+
+## 方法
+
+1. 4℃下在一个灭菌的微量离心管中混合下列组分以合成 cDNA 第一链:
+
+| 模板 RNA(1mg/mL) | 10μL |
+| --- | --- |
+| oligo(dT)12~18(1mg/mL) | 10μL |
+| dNTP完全溶液(5mmol/L) | 10μL |
+| DTT(50mmol/L) | 1μL |
+| 10×反转录酶缓冲液 | 5μL |
+| [α-32P]dCTP(10mCi/mL) | 5μL |
+| (比活性800Ci/mmol或3000Ci/mmol) |  |
+| 胎盘RNA酶抑制剂 | 25U |
+| 无RNA酶的水 | 加至46μL |
+| 反转录酶(约800U) | 4μL |
+
+▲ 最后加反转录酶。
+
+由不同厂商提供的每单位反转录酶的活性不同。当使用一批新的酶时，应设立一系列含等量 $\mathrm{poly(A)^+RNA}$ 、寡核苷酸引物及不同酶量的延伸反应。如有可能，应使用对于 $\mathrm{poly(A)^+RNA}$ 中以中等丰度存在的某一 mRNA 为特异性的引物。按本方案所述，通过凝胶电泳分析每次反应的产物。应用能产生最高得率的延伸产物所需的最小酶量。本方案中所述的酶单位对于大多数批次的 StrataScript 和 Superscript II 都适用。
+
+轻弹管外壁以混合各组分，稍加离心以收集管底的反应物。于  $45^{\circ}$ C 温育反应物 1 h。
+
+$\alpha-^{32}P$ dCTP 可用作示踪剂检测 cDNA 第一链的合成。
+
+2. 检测放射性标记的 dNTP 掺入 TCA 可沉淀物的比率（见附录 2）。用下列公式计算 cDNA 的产率。在含每种 dNTP 各 50nmol 的反应中:
+
+$$
+\frac {\text {掺入的cpm}}{\text {总cpm}} \times 2 0 0 \mathrm{nmol} \mathrm{dNTP} \times 3 3 0 \mathrm{ng} \mathrm{nmol} = \text {合成的cDNA(ng)}
+$$
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+823
+
+3. 加入下列试剂以终止反应:
+
+| EDTA (0.5 mol/L, pH 8.0) | 2μL |
+| --- | --- |
+| SDS (20%, m/V) | 2μL |
+
+充分混匀微量管中的各成分。
+
+单链放射性标记的 cDNA 很黏，能非特异性地附着于玻璃、滤膜和某些塑料制品。因此用于本方案步骤 3 的溶液至少应含 0.05% (m/V) SDS，以及杂交缓冲液中含 0.1%～1.0% SDS。
+
+4. 在反应管中加入 $5 \mu \mathrm{L} 3 \mathrm{~mol} / \mathrm{L} \mathrm{NaOH}$, 于 $68^{\circ} \mathrm{C}$ 温育反应 $30 \mathrm{~min}$ 以水解 RNA。
+
+5. 将反应物温度降至室温。加入  $10 \mu L$  1mol/L Tris-Cl（pH 7.4），充分混匀以中和溶液，然后加  $5 \mu L$  2.5mol/L HCl。点一小滴溶液（<1  $\mu L$ ）在 pH 试纸上以检测溶液的 pH。
+
+6. 用酚:氯仿抽提纯化 cDNA。
+
+7. 用 Sephadex G-50 离心柱色谱法分离放射性标记的探针与未掺入的 dNTP（见方案 1，步骤 6～14）。
+
+▲此步骤及随后的所有步骤均须使用硅化管（见附录2）。
+
+8. 按以下步骤进行两轮消减杂交:
+
+i. 在放射性标记的 cDNA 中，加入 10 倍重量的驱动 mRNA（用于消减 cDNA 探针）、0.2 体积的 10mol/L 乙酸铵和 2.5 倍体积的冷乙醇。在 0℃ 下反应 10～15min，然后在 4℃ 下、微量离心机中以最大速度离心 5 min，以回收核酸。
+
+ii. 吸去所有的乙醇，敞开管盖，置于实验台上，使大多数残留的乙醇蒸发。将核酸溶于  $6 \mu L$  无 RNA 酶的水中。
+
+iii. 在溶解的核酸中加入:
+
+| 磷酸钠(2 mol/L, pH 6.8) | 2μL |
+| --- | --- |
+| SDS/EDTA 溶液 | 2μL |
+
+iv. 用一滴轻矿物油覆盖于溶液上，将微量离心管置于沸水浴中 5min，然后转移至  $68^{\circ}$ C 水浴，使核酸杂交至  $C_{r_{0}} t = 1000 \, mol \cdot sec/L$ 。
+
+为计算达此  $C_{r_{0}}t$  所需的时间，解下列方程求 t:
+
+$$
+D / D _ {0} = \mathrm{e} ^ {- k C _ {r _ {0}} t}
+$$
+
+式中，D 为在 t 时刻未反应的单链 cDNA 的浓度； $D_{0}$  为投入 cDNA 的总量；e 为自然对数；k 为生成 RNA-DNA 杂交体的速度常数，取决于 mRNA 群体的复杂度，可假定为约  $6.7 \times 10^{-3}$  L/mol-sec， $C_{r_{0}}t$  为 RNA 驱动方的初始浓度（在杂交反应中无显著变化）（有关此方程的精确描述见 Sargent 1987，其他信息请见 538 页 Davidson 1986）。
+
+v. 从水浴中取出离心管，用一个尖部拉长的吸头连到微量进样器上，从微量离心管中吸出杂交液，将杂交反应液转移至含 1mL SPS 缓冲液的管中。
+
+vi.  $60^{\circ}$ C下通过羟基磷灰石层析分离单链和双链核酸。
+
+用液体闪烁计数仪测定每一组分中的放射性量。至少应有 $90\%$ 投入的 $\left[{ }^{32} \mathrm{P}\right]$ cDNA已与mRNA杂交，应存在于 $>0.36 \mathrm{~mol} / \mathrm{L}$ 磷酸钠洗涤液中。
+
+vii. 合并含单链 cDNA 的各组分，用异丁醇反复抽提浓缩。加入等体积的异丁醇，涡旋振荡混匀两相，室温下以最大速度在微量离心机中离心 2min。弃上相（有机相）。反复用异丁醇抽提，直至水相体积小于 100μL。
+
+viii. 用含 0.1% SDS 的 TE（pH 8.0）平衡的 Sephadex G-50 离心柱色谱法，去除 cDNA 中的盐（见方案 1，步骤 6～14）。
+
+▲勿用乙醇沉淀浓缩 cDNA，因为磷酸离子的存在会干扰 DNA 沉淀。勿采用透析去除磷酸离子，因为 cDNA 会附着于透析袋。
+
+---
+
+824
+
+分子克隆实验指南（原书第四版）
+
+ix. 测定样品中的放射性量，计算消减探针中 DNA 的量。
+
+x. 重复步骤（i）～（ix）。
+
+10%\~30%的 cDNA 将在第二轮杂交中与驱动方 RNA 形成杂交体。
+
+若探针用于检测 cDNA 文库，则无须对 cDNA 终产物进行浓缩或除盐。放射性标记的 cDNA 探针无须变性即可用于杂交。高比活性的放射性探针可因放射化学衰变而被迅速破坏，因此消减杂交应在实际情况许可的前提下尽快进行，探针亦尽早使用，切勿延误。每张 150mm 滤膜用  $5 \times 10^{7}$  dpm 放射性标记的 cDNA，每张 90 mm 滤膜用  $5 \times 10^{6} \sim 1 \times 10^{7}$  dpm 放射性标记的 cDNA。
+
+如用放射性标记的消减探针筛选基因组 DNA 文库，可将 oligo(dA) 以  $1 \mu g/mL$  的浓度加到预杂交和杂交反应液中，以防止 cDNA 的 oligo(dT) 尾与基因组 DNA 中 oligo(dA) 非特异性杂交。
+
+9. 用异丁醇续贯抽提浓缩最终的 cDNA，按照上述步骤 8 中 vii 和 viii 所述，通过 Sephadex G-50 层析除盐。
+
+10. 通过标准的乙醇沉淀回收 cDNA（见第 1 章，方案 4）。将 cDNA 溶于水，终浓度为  $15ng/\mu L$ 。
+
+▲ 在用离心柱色谱法去除磷酸离子之前不可用乙醇沉淀 cDNA，磷酸离子的存在会干扰 DNA 沉淀。
+
+11. 为制备高比活度的放射性标记的消减 cDNA 探针，在一个 $0.5 \mathrm{~mL}$ 微量离心管中混合下列试剂:
+
+| 消减 cDNA | 5μL |
+| --- | --- |
+| 随机脱氧核苷酸引物(125μg/mL) | 5μL |
+
+12. 于  $60^{\circ}$ C 加热混合物 5 min，然后冷却至  $4^{\circ}$ C。
+
+13. 向引物:cDNA 模板混合物中加入:
+
+| 5×随机引物缓冲液 | 10μL |
+| --- | --- |
+| 含dCTP、dGTP和dTTP | 5μL |
+| 各5mmol/L的dNTP溶液 |  |
+| $[\alpha-^{32}P]$ dATP(10mCi/mL) | 25μL |
+| (比活度大于3000Ci/mmol) |  |
+| Klenow片段(12.5U) | 2.5μL |
+| $H_2O$ | 加至50μL |
+
+室温下反应 4～6 h。每次随机引物反应需要 10～15U 的 Klenow 片段。
+
+14. 加入下列试剂以终止反应:
+
+| EDTA (0.5mol/L, pH 8.0) | 1μL |
+| --- | --- |
+| SDS (20%, m/V) | 2.5μL |
+
+15. 用 Sephadex G-50 离心柱色谱法分离放射性标记的 cDNA 与未掺入的 dNTP（见方案 1，步骤 6～14）。
+
+杂交前，放射性标记的 cDNA 应在  $100^{\circ}$ C 加热 5min 变性。每张 138mm 滤膜用  $5 \times 10^{7}$  dpm 放射性标记的 cDNA，每张 82mm 滤膜用  $5 \times 10^{6} \sim 1 \times 10^{7}$  dpm 放射性标记的 cDNA。探针经放射性标记后，应立即使用，以避免放射化学衰变导致的破坏。
+
+![](../../raw/pages_0321-0336/images/page_334_image_20.jpg)
+
+## 配方
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+825
+
+$5 \times$ 随机引物缓冲液
+
+| 试剂 | 体积(1mL) | 终浓度 |
+| --- | --- | --- |
+| Tris-Cl(1mol/L,pH 8.0) | 250μL | 250mmol/L |
+| MgCl2(1mol/L) | 25μL | 25mmol/L |
+| NaCl(5mol/L) | 20μL | 100mmol/L |
+| DTT(1mol/L) | 10μL | 10mmol/L |
+| HEPES(2mol/L,用4mol/L NaOH调至pH 6.6) | 500μL | 1mol/L |
+
+用水新鲜稀释储存于-20℃的1mol/L DTT储备溶液，使用后弃去稀释的DTT溶液。
+
+## 参考文献
+
+- Davidson EH. 1986. Gene activity in early development, 3rd ed., pp. 538–540. Academic, New York.
+- Davis MM. 1986. Subtractive cDNA hybridization and the T-cell receptor genes. In Handbook of experimental immunology (ed Weir DM, et al.), vol. 2, pp. 76.1–76.13. Blackwell Scientific, Oxford.
+- Fargnoli J, Holbrook NJ, Fornace AJ Jr. 1990. Low-ratio hybridization subtraction. Anal Biochem 187: 364–373.
+- Gerard GF, D'Alessio JM. 1993. Reverse transcriptase (EC2.7.7.49): The use of cloned Moloney murine leukemia virus reverse transcriptase to synthesize DNA from RNA. In Enzymes of molecular biology (ed Burrell MM), pp. 73–94. Humana, Totowa, NJ.
+
+Rhyner TA, Biguet NF, Berrard S, Borbély AA, Mallet J. 1986. An efficient approach for the selective isolation of specific transcripts from complex brain mRNA populations. J Neurosci Res 16: 167–181.
+
+Sargent TD. 1987. Isolation of differentially expressed genes. Methods Enzymol 152: 423–432.
+
+Sargent TD, Dawid IB. 1983. Differential gene expression in the gastrula of Xenopus laevis. Science 222: 135–139.
+
+Suganuma A, Gupta KC. 1995. An evaluation of primer length on random-primed DNA synthesis for nucleic acid hybridization: Longer is not better. Anal Biochem 224: 605–608.
+
+## 方案 8 用大肠杆菌 DNA 聚合酶 I 的 Klenow 片段标记双链 DNA 的 3' 端
+
+线性双链 DNA 最简单的标记方法是利用大肠杆菌 DNA 聚合酶 I 的 Klenow 片段催化一个或多个  $[\alpha-^{32}P]dNTP$  掺入 3' 凹端（Telford et al. 1979; Cobianchi and Wilson 1987）。有关可用于 DNA 末端标记的其他方法的总结见表 13-3。可用适当的限制性内切核酸酶消化 DNA，产生末端补平反应适宜的模板片段，然后用 Klenow 酶催化 dNTP 附着于凹进的 3' 羟基（见信息栏“大肠杆菌 DNA 聚合酶 I 和 Klenow 片段”）。标记反应为通用而迅速的反应，其优越之处在于反应能在限制酶消化中进行，无须更换缓冲液。由于 Klenow 酶的 3'→5' 外切酶活性较弱，因而酶对于平端或 3' 突出端核酸掺入的能力有限。根据 DNA 末端及标记反应中放射性标记的核苷酸的性质，可标记线性双链 DNA 分子 3' 端的一端或两端（见信息栏“3' 凹端和平端的标记”）。然而，多数情况下，标记反应中最好含有未标记的 dNTP，因而可在 3' 凹端的任何位置进行标记。此外，在标记 dNTP 下游掺入未标记 dNTP，可保护标记的核苷酸免受惰性 3'→5' 外切核酸酶的作用。两端均标记的 3' 端片段可用作:
+
+- Southern 杂交中的分子质量标准（见步骤 4 后的信息栏 “制备凝胶电泳用的放射性标记分子质量标准”）
+- 凝胶上小量 DNA 的示踪剂
+
+只标记一端的片段可用于:
+
+- S1 核酸酶进行 RNA 作图使用的探针（第 6 章，方案 16）
+- 引物延伸反应中的引物
+
+---
+
+826
+
+分子克隆实验指南（原书第四版）
+
+![](../../raw/pages_0337-0352/images/page_336_image_2.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+表 13-3 DNA 的末端标记
+
+| 模板 | 标记位点 | 首选方法 |
+| --- | --- | --- |
+| 单链DNA或RNA | 5'端 | 激酶反应:先用碱性磷酸酶如CIP或SAP从核酸的5'端除去未标记的磷酸残基而产生一个羟基(方案9),然后用T4噬菌体多核苷酸激酶将标记物从ATP的γ位转移到新产生的5'羟基上(Wu et al.1976)(方案10和方案11)。上述反应可在一只管中相继进行,但需以无机磷酸抑制磷酸酶活性(Chaconas and van de Sande 1980;Cobianchi and Wilson 1987)。另一可供选择的程序是限制性内切核酸酶消化及多核苷酸激酶5'端标记一步进行,而不需借助碱性磷酸酶的作用(Oommen et al. 1990)。此反应机制尚不清楚交换反应:将未标记的磷酸残基从核酸的5'端转移到ADP上,而后被ATPγ位的标记磷酸基所取代。两种反应均由T4噬菌体多核苷酸激酶催化,反应于同一试管中在过量的ADP及限量γ-标记ATP的存在下同步进行(Berkner and Folk 1977)。当标记的单链DNA长度>300核苷酸时,交换反应的总效率可因反应混合物中加入大分子聚集剂如聚乙二醇(4%~10%)而大为改善(Harrison and Zimmerman 1986a,b)。尽管如此,5'端标记DNA的比活度总是低于激酶反应的标记产物注意:T4噬菌体多核苷酸激酶具有降解ATP的3'磷酸酶活性。几家厂商则利用一株携带编码多核苷酸激酶的突变型基因的T4噬菌体(amN81 pseT1)感染细胞并从中制备该酶。该突变型酶缺乏3'磷酸酶活性 |
+| 单链DNA | 3'端 | 牛胸腺末端脱氧核苷酸转移酶可催化非模板依赖性的[α-32P]NTP聚合到单链DNA的3'端,此反应需要$Co^{2+}$作为辅助因子(方案13,Deng and Wu 1983)。放射性标记的DNA继之在碱性条件下用碱性磷酸酶处理,以产生固定长度、均一标记的DNA片段(Roychoudhury et al. 1976,1979; Wu et al. 1976)。此外,应用[α-32P]双脱氧ATP(Yousaf et al. 1984)或[α-32P]3'脱氧腺苷三磷酸(Tu and Cohen 1980)作为末端转移酶的底物,可使3'端的掺入仅限于一个核苷酸。由于这些分子均无3'羟基,因而无其他分子可被掺入。多数情况下,[α-32P]双脱氧ATP是标记3'端的优先底物,因为它的掺入比[α-32P]3'脱氧腺苷三磷酸效率更高。但3'端含脱氧腺苷残基的DNA分子有一个优点:它们能抵抗污染的外切核酸酶的消化,因而避免了单链DNA3'端核酸标记物的丢失亦可用末端转移酶将生物素和荧光素化的脱氧或双脱氧核苷酸加到单链DNA片段的3'端(见方案13可选方案“用TdT合成非放射性标记的探针”,见Vincent et al.1982;Schneider et al. 1994) |
+| 带5'突出端的双链DNA | 5'端 | 如上所述,用多核苷酸激酶可进行单链DNA5'端的标记(方案10) |
+| 含平端或5'凹端的双链DNA | 5'端 | 如上所述,用多核苷酸激酶可进行单链DNA5'端的标记(方案11)。但是,用多核苷酸激酶标记含平端或5'凹端的双链DNA分子的效率低于5'突出端分子的标记,即使5'凹端的部分反应仍可能需要大量的酶和[γ-32P]ATP,或需要加入拥挤剂如PEG(Lillehaug and Kleppe 1975; Harrison and Zimmerman 1986a) |
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+827
+
+续表
+
+| 模板 | 标记位点 | 首选方法 |
+| --- | --- | --- |
+| 含平端和3'凹端的双链DNA | 3'端 | Klenow片段保留了模板依赖性的DNA聚合酶活性和全酶3'→5'外切核酸酶活性,但缺乏其强力的5'→3'外切核酸酶活性,可用于双链DNA3'凹端的补平(方案8)。通常反应混合物中4种dNTP中仅有1种被放射性标记。加入3种未标记dNTP有两个目的:避免模板3'端的核苷酸被外切核酸酶除去;可使放射性标记的dNTP作为第2、第3或第4个核苷酸加到3'凹端。有时在反应混合物中仅有一个放射性标记的dNTP存在,可使两种不同的限制性内切核酸酶消化的双链DNA仅在一端被选择性标记。例如,DNA被切割成GGBamHI CCTAG和EcoRI CTTAA可在补平反应中,用[α-32P]dGTP作为放射性标记物的唯一来源,选择性地标记BamHI末端。DNA亦可由一种限制性内切核酸酶消化及放射性标记,然后再用第二种酶切割成两个DNA片段,每一个片段仅在一端带有放射性标记物现已有可供DNA片段不对称标记用的特殊载体。例如,载体pSP64CS和pSP65CS含有被限制性内切核酸酶Tth111I切割的位点,该酶识别冗余序列↓5' GACNNNGTC 3'3' CTGNNNCAG 5'↑能产生单一突出的5'核苷。将靶DNA克隆于两个Tth111I位点之间,能在两端产生含不同突出核苷的末端。DNA经消化后,可通过Klenow片段及适当的[α-32P]dNTP选择性地标记DNA的一端或两端(Volkaert et al. 1984; Eckert 1987)在Taq聚合酶的催化下,平端DNA片段可通过模板非依赖性的单个核苷酸添加(通常用[α-32P]dATP)而被标记 |
+| 带有3'突出端的双链DNA | 3'端 | T4噬菌体DNA聚合酶具5'→3'聚合酶活性和3'→5'外切核酸酶活性,这种外切核酸酶切割单链DNA的活性比作用于双链DNA的活性更高。T4噬菌体DNA聚合酶的外切核酸酶活性比Klenow片段的外切核酸酶强约200倍。因此,T4 DNA聚合酶可用于含3'突出端DNA分子的末端标记。此反应分两步进行。首先,强有力的3'→5'外切核酸酶除去DNA的突出尾端产生3'凹端。然后,在高浓度放射性标记前体的存在下,3'端dNTP的掺入使核酸外切降解得到平衡。此反应为3'凹端或平端DNA的核苷酸去除和置换的循环,有时又称交换或置换反应(O'Farrell et al. 1980)此外,突出的3'端亦可用牛胸腺末端脱氧核苷酸转移酶、poly(A)聚合酶(见单链DNA3'端标记)或某些热稳定的DNA聚合酶如Taq催化,通过模板非依赖性的核苷酸添加而标记 |
+| RNA | 3'端 | T4噬菌体RNA连接酶可催化终止性放射性标记的二磷酸核苷([5'-32P]pNp)连接到RNA的3'羟基端(Uhlenbeck and Gumport 1982)。反应使RNA分子延伸一个核苷酸的长度,并在最后一个核苷酸间连键内产生一个[α-32P]磷酸化的3'端(England et al. 1977; Kikuchi et al. 1978; Tyc and Steitz 1989)。这个末端3'磷酸基团可作为一个链终止子,通过防止进一步形成磷酸二酯键而起作用。这种标记方法主要用于标记小分子RNA。然而,可能由于二级结构引起的位阻效应,标记物的掺入量常使底物RNA的相对丰度产生假象poly(A)聚合酶可催化模板非依赖性RNA3'端添加腺苷残基。当[α-32P]ATP用作底物时,poly(A)区域内的磷酸二酯键含32P原子(Lingner and Keller 1993)。用3'脱氧腺苷三磷酸(3'-dATP)取代ATP,可导致单一3'-dA残基添加到RNA末端,因而此法成为RNA3'端放射性标记的有用方法。酵母poly(A)聚合酶优先标记较长的RNA分子,而RNA连接酶则可更有效地标记短的RNA分子末端转移酶已被用于将生物素标记的双脱氧核苷酸添到RNA的3'端(Schneider et al. 1994),但这种反应的效率尚未被彻底地研究 |
+
+---
+
+828
+
+分子克隆实验指南（原书第四版）
+
+## 3'凹端和平端的标记
+
+此方案要求待末端标记的 DNA 含有某种序列，该序列可被某种限制性内切核酸酶识别和切割而产生 3'凹端。反应中所用  $[\alpha-^{32}P]dNTP$  的选择取决于 DNA 末端 5'突出端的序列及实验目的。例如，用 EcoRI 切出的 DNA 末端可用  $[\alpha-^{32}P]dATP$  标记:
+
+$$
+\begin{array}{c} _ {3 ^ {\prime}} ^ {5 ^ {\prime}} - \mathrm{CTTAA} _ {\mathrm{P} 5 ^ {\prime}} ^ {\prime} + _ {3 ^ {\prime} \mathrm{HO}} ^ {5 ^ {\prime} \mathrm{P}} \mathrm{G} _ {- 5 ^ {\prime}} ^ {\text {AATTC} _ {- 3 ^ {\prime}}} \xrightarrow [ [ \alpha^ {- 3 2} \mathrm{P} ] \mathrm{dATP} ]{\text {Klenow酶}} _ {3 ^ {\prime}} ^ {5 ^ {\prime}} - \mathrm{CTTAA} _ {\mathrm{P} 5 ^ {\prime}} ^ {\text {GAA} _ {\mathrm{OH} 3 ^ {\prime}}} + _ {3 ^ {\prime} \mathrm{HO}} ^ {5 ^ {\prime} \mathrm{P}} \mathrm{AATTC} _ {- 3 ^ {\prime}} \\ \end{array}
+$$
+
+两个近侧 5' 突出的核苷酸均为胸苷残基，因此 Klenow 酶能够插入两个腺嘌呤残基。由 BamHI 切割 DNA 产生的末端可用  $[\alpha-^{32}P]$ dGTP 标记:
+
+$$
+\begin{array}{c} _ {3 ^ {\prime}} ^ {5 ^ {\prime}} - \mathrm{CCTAG} _ {\mathrm{P} 5 ^ {\prime}} ^ {\prime} + _ {3 ^ {\prime} \mathrm{HO}} ^ {5 ^ {\prime} \mathrm{P}} \mathrm{GATCC} _ {- 3 ^ {\prime}} ^ {\prime} \xrightarrow [ [ \alpha^ {- 3 2} \mathrm{P} ] \mathrm{dGTP} ]{\text {Klenow酶}} _ {3 ^ {\prime}} ^ {5 ^ {\prime}} - \mathrm{CCTAG} _ {\mathrm{P} 5 ^ {\prime}} ^ {\prime} + _ {3 ^ {\prime} \mathrm{HO}} ^ {5 ^ {\prime} \mathrm{P}} \mathrm{GATCC} _ {- 3 ^ {\prime}} ^ {\prime} \end{array}
+$$
+
+请注意，利用 $[\alpha-^{32}P]dGTP$ 作为放射性标记底物的反应中，只有一个放射性标记的核苷酸掺入每一端。但是，如在聚合反应中加入未标记的 dGTP、dATP 和 dTTP，可用 $[\alpha-^{32}P]dCTP$ 进行 DNA 片段的放射性标记。反应中加入未标记的 dNTP:①可使用任何与 5'突出端互补的放射性标记的 dNTP；②可避免 Klenow 酶的 3'→5'外切酶活性使核酸外切去除模板 3'端核苷酸的可能性；③确保所有放射性标记的 DNA 产物等长。
+
+通过选择适当的$[\alpha-^{32}\mathrm{P}]\mathrm{dNTP}$，可做到只标记双链 DNA 分子的一端。例如，用 EcoRI 切开 DNA 的一端，而另一端用 BamHI 酶切，则可在反应中加入 $[\alpha-^{32}\mathrm{P}]\mathrm{dATP}$（标记 EcoRI 位点）或用$[\alpha-^{32}\mathrm{P}]\mathrm{dGTP}$（标记 BamHI 位点）进行选择性标记。如待末端标记片段的序列是已知的，则某些限制酶识别序列中 N 核苷酸可被用于优先标记 DNA 的一端。例如，限制酶 HinfI 识别序列 5'-GANTC-3'，并在 G 和 A 之间切割产生 3'凹端。如果 DNA 片段 5'端的 HinfI 识别序列为 5'-GACTC-3'，而 3'端序列为 5'-GAGTC-3'，则可在反应中加入未标记的 dATP 和$[\alpha-^{32}\mathrm{P}]\mathrm{dGTP}$ 选择性地标记 DNA 片段的 5'端，或在反应中加入未标记的 dATP 和$[\alpha-^{32}\mathrm{P}]\mathrm{dCTP}$ 选择性地标记 DNA 片段的 3'端。限制性内切核酸酶如 DdeI、Fnu4H、Bsu36I 和 EcoO109I 均可用于多种类似的标记策略。
+
+利用 Klenow 酶较弱的  $3'\rightarrow5'$  外切核酸酶活性和较强的聚合酶活性, 可置换平端 DNA 片段的末端核苷酸。例如, 识别  $5'$ -AGCT- $3'$  序列并在 G 和 C 之间切割 DNA 的限制酶 AluI 所产生的 DNA 片段, 在 Klenow 酶和  $[\alpha-^{32}P]$ dGTP 存在下温育时, 会导致外切核酸酶去除 dGMP, 并被放射性标记的鸟嘌呤核苷酸取代:
+
+$$
+\begin{array}{l} _ {3 ^ {\prime}} ^ {5 ^ {\prime}} - \mathrm{AG} _ {\mathrm{OH3} ^ {\prime}} + _ {3 ^ {\prime} \mathrm{OH}} ^ {5 ^ {\prime} \mathrm{P}} \mathrm{CT} _ {- 3 ^ {\prime}} \xrightarrow {\text {Klenow酶}} _ {3 ^ {\prime}} ^ {5 ^ {\prime}} - \mathrm{A} _ {\mathrm{OH3} ^ {\prime}} + _ {3 ^ {\prime} \mathrm{OH}} ^ {5 ^ {\prime} \mathrm{P}} \mathrm{CT} _ {- 3 ^ {\prime}} \xrightarrow [ [ \alpha - {} ^ {3 2} \mathrm{P} ] \mathrm{dGTP} ]{\text {Klenow酶}} _ {3 ^ {\prime}} ^ {5 ^ {\prime}} - \mathrm{AG} _ {\mathrm{OH3} ^ {\prime}} + _ {3 ^ {\prime} \mathrm{OH}} ^ {5 ^ {\prime} \mathrm{P}} \mathrm{CT} _ {- 3 ^ {\prime}} \end{array}
+$$
+
+虽然放射性标记平端 DNA 片段的比活度不高，但一般足以用作凝胶电泳中的分子质量标准。T4 噬菌体 DNA 聚合酶比 Klenow 片段的 3'→5' 外切核酸酶活性强得多，用 T4 DNA 聚合酶标记平端分子更有效。
+
+由 Klenow 酶催化的末端补平反应不限于放射性标记 dNTP，用半抗原如生物素、荧光素和 DIG 修饰的脱氧核苷酸亦可使用。
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+829
+
+## 试剂
+
+$[\alpha-^{32}P]dNTP$ （10mCi/mL，比活性800～3000Ci/mmol）
+
+为最大限度地减少前体和探针的辐射分解，应尽可能在 $\left[\alpha-^{32}P\right]dGTP$ 到达实验室的当天制备放射性标记探针。乙酸铵（10mol/L）（可选，见步骤4）。
+
+适宜的限制性内切核酸酶
+
+选择产生3'凹端的酶。
+
+含适当未标记的 dNTP 各 1mmol/L 的 dNTP 溶液
+
+有关制备和储存 dNTP 溶液，见信息栏 “dNTP 储备溶液的制备”。
+
+乙醇
+
+大肠杆菌 DNA 聚合酶 I Klenow 片段
+
+模板 DNA (0.1\~5μg)
+
+采用含适当 3' 凹端的线性双链 DNA。
+
+## 设备
+
+Sephadex G-50 离心柱，用 TE（pH 7.6）平衡（可选；见步骤 4）
+
+Sephadex G-50 凝胶过滤介质可用于从低分子质量物质（放射性前体保留在柱中）中分离 DNA（DNA 可穿过介质）。放射性标记 DNA 纯化用 Sephadex G-50 柱可从几个商品渠道获得[如 Quick Spin Columns(Roche Applied Science 公司)]。但是，用 1mL 装填硅化玻璃棉的一次性注射器很容易完成（见方案 1，步骤 6～14）。
+
+水浴（75℃）
+
+![](../../raw/pages_0337-0352/images/page_339_image_17.jpg)
+
+## 方法
+
+1. 在 $25 \sim 50 \mu \mathrm{L}$ 适当的限制酶缓冲液中, 用所需限制酶消化 $5 \mu \mathrm{g}$ 模板 DNA。
+
+标记反应可在限制性内切核酸酶消化 DNA 后立即进行，且不必除去或灭活限制酶。鉴于 Klenow 片段在多种条件下均可作用（只要  $Mg^{2+}$  以毫摩尔浓度存在），故也不必更换缓冲液。在限制性酶切反应结束时，加入 Klenow 酶、未标记的 dNTP 和适当的  $[\alpha-^{32}P]dNTP$ ，于室温下再反应 15min（如下述）。即使采用粗提的 DNA 样品（如小量制备的质粒），此程序亦可顺利进行。
+
+2. 向完成的限制酶消化反应中加入:
+
+| $[\alpha-^{32}P]dNTP(10\ mCi/mL)$(比活性 800~3000 Ci/mmol) | 2~50μCi |
+| --- | --- |
+| 未标记的 dNTP | 至终浓度为 100 μmol/L |
+| Klenow 片段 | 1~5U |
+
+如本方案用于非放射性标记，则用修饰的核苷酸（如生物素-dUTP、DIG-dUTP或荧光素-dUTP）取代一部分dTTP，比率为35%修饰的dUTP及65%dTTP，而不用 $[\alpha-^{32}P]$ dNTP。
+
+室温温育反应 15min。
+
+每微克模板 DNA（1μg 1000 bp 片段相当于约 3.1pmol 双链 DNA 的末端；见方案 9 中信息栏 “计算 DNA 样品中 5' 端含量”）需要约 0.5U 的 Klenow 酶。Klenow 酶在多数限制酶缓冲液中均可作用。
+
+亦可用反转录酶（1～2U）替代本方案中的 Klenow 酶。但是，反转录酶对于缓冲液的条件要求较高。因此，反转录酶主要是在常规反转录酶缓冲液的反应中用于标记纯化的 DNA 片段。
+
+当标记的 DNA 用于 S1 核酸酶绘制 mRNA 图谱时（见第 6 章，方案 16），则反应中标记 dNTP 的浓度应在实际情况允许的前提下增至最大。反应在室温进行 15min 后，加入终浓度各为 0.2mmol/L 的 4 种未标记 dNTP，在室温下继续反应 5min。这一冷追加措施可确保每个 3' 凹端都被完全补平，并保证所有标记 DNA 分子都精确
+
+---
+
+830
+
+分子克隆实验指南（原书第四版）
+
+等长。
+
+3. 于 $75^{\circ} \mathrm{C}$ 加热 $10 \mathrm{~min}$ 以终止反应。
+4. 用 Sephadex G-50 离心柱色谱法分离放射性标记的 DNA 与未掺入的 dNTP（按照方案 1，步骤 6～14 用商品化或自制的柱子），或在 2.5mol/L 乙酸铵存在下进行两轮乙醇沉淀（见第 1 章，方案 4）。
+
+## 制备凝胶电泳用的放射性标记分子质量标准
+
+本方案制备的标记 DNA 片段可用作凝胶电泳的 DNA 分子质量标准物。由于 DNA 片段的标记程度与其摩尔浓度而不是大小成正比，所以限制酶消化后所产生的大片段与小片段均以同样的程度被标记。因此，通过放射自显影可定位那些由于分子质量太小而用溴化乙锭或其他染色无法看到的 DNA 条带。
+
+凝胶电泳前，亦可从标记DNA中除去未掺入的 $[\alpha -^{32}\mathrm{P}]\mathrm{dNTP}$，但非必需。$[\alpha -^{32}\mathrm{P}]\mathrm{dNTP}$ 在聚丙烯酰胺和琼脂糖凝胶中的迁移率均比溴酚蓝快，因此除最小的DNA片段外，不会干扰任何样品的检测。但是，除去未掺入的标记物的优点在于，它可以避免放射性物质污染电泳槽的阳极缓冲液室，还可用手提式小型探测器估计加到凝胶上的放射性标记DNA的量，并可减少对DNA的放射化学破坏。
+
+## 参考文献
+
+- Berkner KL, Folk WR. 1977. Polynucleotide kinase exchange reaction: Quantitative assay for restriction endonuclease-generated 5'-phosphoryl termini in DNA. J Biol Chem 252: 3176–3184.
+- Chaconas G, van de Sande JH. 1980. 5'-32P labeling of RNA and DNA restriction fragments. Methods Enzymol 65: 75–85.
+- Cobianchi F, Wilson SH. 1987. Enzymes for modifying and labeling DNA and RNA. Methods Enzymol 152: 94–110.
+- Deng G, Wu R. 1983. Terminal transferase: Use of the tailing of DNA and for in vitro mutagenesis. Methods Enzymol 100: 96–116.
+- Eckert RL. 1987. New vectors for rapid sequencing of DNA fragments by chemical degradation. Gene 51: 247–254.
+- England TE, Gumport RI, Uhlenbeck OC. 1977. Dinucleoside pyrophosphate are substrates for T4-induced ligase. Proc Natl Acad Sci 74:4839–4842.
+- Harrison B, Zimmerman SB. 1986a. T4 polynucleotide kinase: Macromolecular crowding increases the efficiency of reaction at DNA termini. Anal Biochem 158: 307–315.
+- Harrison B, Zimmerman SB. 1986b. Stabilization of T4 polynucleotide kinase by macromolecular crowding. Nucleic Acids Res 14: 1863–1870.
+- Kikuchi Y, Hishinuma F, Sakaguchi K. 1978. Addition of mononucleotides to oligoribonucleotide acceptors with T4 RNA ligase. Proc Natl Acad Sci 75: 1270–1273.
+- Lillehaug JR, Kleppe K. 1975. Effect of salts and polyamines polynucleotide kinase. Biochemistry 14: 1225–1229.
+- Lingner J, Keller W. 1993. 3'-End labeling of RNA with recombinant yeast poly(A) polymerase. Nucleic Acids Res 21: 2917–2920.
+- O'Farrell PH, Kutter E, Nakanishi M. 1980. A restriction map of the bacteriophage T4 genome. Mol Gen Genet 179: 421–435.
+- Oommen A, Ferrandis I, Wang MJ. 1990. Single-step labeling of DNA using restriction endonucleases and T4 polynucleotide kinase. Bio-Techniques 8: 482–486.
+- Roychoudhury R, Jay E, Wu R. 1976. Terminal labeling and addition of homopolymer tracts to duplex DNA fragments by terminal deoxynucleotidyl transferase. Nucleic Acids Res 3: 101–116.
+- Roychoudhury R, Tu CP, Wu R. 1979. Influence of nucleotide sequence adjacent to duplex DNA termini on 3' terminal labeling by terminal transferase. Nucleic Acids Res 6: 1323–1333.
+- Schneider GS, Martin CS, Bronstein 1. 1994. Chemiluminescent detection of RNA labeled with biotinylated dideoxynucleotides and terminal transferase. J NIH Res 6: 90.
+- Telford JL, Kressmann A, Koski RA, Grosschedl R, Müller F, Clarkson SG, Birnstiel ML. 1979. Delimitation of a promoter for RNA polymerase III by means of a functional test. Proc Natl Acad Sci 76: 2590–2594.
+- Tu CP, Cohen SN. 1980. 3'-End labeling of DNA with  $[\alpha-^{32}P]$ cordycepin-5'-triphosphate. Gene 10: 177–183.
+- Tyc K, Steitz JA. 1989. U3, U8 and U13 comprise a new class of mammalian snRNPs localized in the cell nucleolus. EMBO J 8: 3113–3119.
+- Vincent C, Tchen P, Cohen-Solal M, Kourilsky P. 1982. Synthesis of 8-(2-4 dinitrophenyl 2-6 aminohexyl)aminoadenosine 5' triphosphate: Biological properties and potential uses. Nucleic Acids Res 10: 6787–6796.
+- Volkaert G, de Vleeschouwer E, Blöcker H, Frank R. 1984. A novel type of cloning vector for ultrarapid chemical degradation sequencing of DNA. Gene Anal Tech 1: 52–59
+- Wu R, Jay E, Roychoudhury R. 1976. Nucleotide sequence analysis of DNA. Methods Cancer Res 12: 87–176.
+- Yousaf SI, Carroll AR, Clarke BE. 1984. A new and improved method for 3'-end labelling DNA using  $[\alpha-^{32}P]$ ddATP. Gene 27: 309–313.
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+831
+
+## 方案 9 用碱性磷酸酶进行 DNA 片段的去磷酸化
+
+去除核酸的 5'磷酸可用来增强随后的 $[\gamma-^{32}P]$ ATP 的标记，减少质粒载体在连接反应中的环化，使 DNA 易受或抵抗其他作用于核酸的酶（如  $\lambda$  外切核酸酶）。究其实质，任何核苷磷酸酶 [如细菌碱性磷酸酶、牛小肠磷酸酶（CIP）、胎盘磷酸酶、虾碱性磷酸酶（SAP）或几种酸性磷酸酶如红薯和前列腺酸性磷酸酶] 均可催化核酸模板上 5'端磷酸的去除。事实上，这些酶优先作用于小分子底物如 p-硝基苯磷酸（PNPP）和核酸暴露的 5'端磷酸基，而非大分子球形蛋白类底物。详细内容见本章信息栏“碱性磷酸酶”。
+
+由于 CIP 和 SAP 可从商业渠道获得，且容易灭活，因此是分子克隆中应用最广泛的磷酸酶。虽然每活性单位的 CIP 较便宜，但 SAP 具有在缺乏螯合剂时容易灭活的优点。实际操作中，DNA 修饰反应（如磷酸化和连接）能在同一反应管中连续进行，因而避免了酚:氯仿抽提和乙醇沉淀。
+
+![](../../raw/pages_0337-0352/images/page_341_image_5.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+氯仿
+
+CIP 或 SAP（Affymetrix 公司，Roche Applied Sicence 公司或 Worthington Biochemicals 公司）
+
+10×去磷酸化缓冲液（用于 CIP 或 SAP）&lt;A&gt;
+
+DNA 样品（0.1～10μg [1～100 pmol]）
+
+去磷酸反应通常在  $25 \sim 50 \mu L$  体积中进行，含  $1 \sim 100 pmol 5'$  磷酸化的 DNA 末端。
+
+EDTA (0.5mol/L, pH 8.0) &lt;A&gt;或 EGTA (0.5mol/L, pH 8.0) &lt;A&gt; (如使用 CIP)
+
+乙醇
+
+酚:氯仿（1:1，V/V）
+
+蛋白酶 K
+
+限制性内切核酸酶
+
+SDS (10%, m/V) &lt;A&gt; (如使用 CIP)
+
+乙酸钠（3mol/L，pH 7.0 [如使用 CIP] 和 pH 5.2）&lt;A&gt;
+
+之所以使用 pH 为 7.0 的 3 mol/L 的乙酸钠，是因为在酸性 pH 的条件下，EDTA 会从溶液中沉淀下来。
+
+TE (pH 7.6) &lt;A&gt;
+
+Tris-Cl (1mol/L, pH 8.5) &lt;A&gt;
+
+---
+
+832
+
+分子克隆实验指南（原书第四版）
+
+## 设备
+
+水浴或加热块（56℃、65℃或75℃ [用于 CIP] 或 70℃ [用于 SAP]）
+
+## 计算 DNA 样品中 5' 端含量
+
+用下列公式计算待测定 DNA 样品中 5' 端的 pmol 数。
+
+双链 DNA
+
+5'端含量（pmol）= $\left[X/(Y\times660g/mol/bp)\right]\times10^{12}$ pmol/mol×2末端/分子式中，X是DNA片段的质量（g）；Y是DNA片段的长度（bp）。例如，1μg线性化的3kb质粒DNA=1pmol 5'端，1μg 1kb双链DNA片段=3pmol 5'端。
+
+单链 DNA
+
+5'端含量（pmol）= $\left[X/(Y\times330\ g/mol/核苷酸)\right]\times10^{12}\ pmol/mol$ 
+
+式中，X是DNA片段的质量（g）；Y是DNA片段的长度（核苷酸）。例如，1μg（约0.03  $OD_{260}$ ）25-mer寡核苷酸等于120 pmol 5'端。
+
+![](../../raw/pages_0337-0352/images/page_342_image_10.jpg)
+
+## 方法
+
+1. 用所选择的限制性内切核酸酶完全消化 $1 \sim 10 \mu \mathrm{g} (10 \sim 100 \mathrm{pmol})$ 待去磷酸化的 DNA。
+
+按照限制性内切核酸酶生产厂家建议的温育时间和温度进行反应。消化的进程可用琼脂糖凝胶电泳进行分析。
+
+在用  $10 \times CIP$  或  $10 \times SAP$  缓冲液调至 pH 8.5 的限制酶缓冲液中，CIP 和 SAP 将以略微降低的效率使 DNA 去磷酸化，见下一步骤。如仍不满意，可用酚:氯仿抽提及标准乙醇沉淀纯化 DNA，然后溶于最小体积的 10mmol/L Tris-Cl（pH 8.5）。
+
+2. 用 CIP 或 SAP 使限制性酶切的 DNA 5' 端去磷酸化。
+
+## 用 CIP 进行 DNA 的去磷酸化
+
+i. 向 DNA 中加入:
+
+| 10×CIP 去磷酸化缓冲液 | 5μL |
+| --- | --- |
+| $H_2O$ | 加至 48μL |
+
+ii. 加入适量的 CIP。
+
+1U 的 CIP 可使约 1pmol 5' 磷酸化末端（5'凹端或平端）或约 50pmol 5' 突出端去磷酸化。不同厂家的酶用量可稍有不同。
+
+iii. 37℃温育反应30min后，加入第二份CIP，继续温育30min。
+
+iv. 在温育反应结束后，加入 SDS 和 EDTA（pH 8.0）至终浓度分别为 0.5% 和 5mmol/L 以灭活 CIP，充分混匀各试剂，再加入蛋白酶 K 至终浓度为 100μg/mL，56℃ 下温育 30 min。
+
+v. 将反应物冷却至室温，先用酚:氯仿抽提 2 次，再以氯仿单独抽提 1 次以纯化 DNA。
+
+用于灭活和消化 CIP 的蛋白酶 K 和 SDS 必须用酚:氯仿抽提完全去除，然后进行下步的酶处理（多核苷酸激酶的磷酸化或连接酶反应等）。
+
+▲ 单独用氯仿抽提一次不足以使 SDS 浓度降低至不再抑制多核苷酸激酶的程度。因此，Kurien 等（1997）建议可能需要用氯仿抽提 4 次。
+
+如反应中含小量 DNA (<100 ng)，在酚:氯仿抽提前，可加入糖原或线性聚丙烯酰胺（Gaillard and Strauss 1990）作载体。勿加核酸载体（tRNA、鲑精 DNA 等），因为它们可在激酶反应中与去磷酸化的 DNA 竞争放射性标记的 ATP。
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+833
+
+CIP 亦可在 10mmol/L EGTA（pH 8.0）存在下，65℃加热 30 min 灭活（或 75℃加热 10 min）。
+
+▲ 用 EGTA，而不是 EDTA。
+
+## 用 SAP 进行 DNA 去磷酸化
+
+i. 在 DNA 中加入:
+
+| 10×SAP去磷酸化缓冲液 | 5μL |
+| --- | --- |
+| $H_{2}O$ | 加至48μL |
+
+ii. 加入适量的 SAP。
+
+1U 的 SAP 可使约 1 pmol 5'磷酸化末端（3'凹端或 5'凹端）或约 0.2pmol 平端 DNA 去磷酸化。不同厂家酶的用量可略有差异。
+
+iii.  $37^{\circ}$ C 温育反应 1h。
+
+iv. 为灭活 SAP，将反应转移至  $70^{\circ}$ C 加热 20min，然后冷却至室温。
+
+3. 将水相转移至一个清洁的微量离心管中，在 0.1 体积的 3mol/L 乙酸钠（pH 5.2）（如用 SAP）或 0.1 体积的 3mol/L 乙酸钠（pH 7.0）（如用 CTP）的存在下，用标准乙醇沉淀回收 DNA。
+
+4. 室温下干燥沉淀物，然后溶于 TE（pH 7.6），使 DNA 的浓度大于 2nmol/mL。
+
+为自 RNA 中去除 5' 磷酸基，使用 0.01U CIP/pmol 5' 端，37℃ 温育 15min，然后在 55℃ 下继续温育 30min。亦可用 0.01～0.1U SAP/pmol 5' 端，37℃ 温育 1h，以使 RNA 去磷酸化。
+
+如果去磷酸化的 DNA 用作多核苷酸激酶的底物，则必须严格纯化。可通过离心柱色谱法、凝胶电泳、密度梯度离心或 Sepharose CL-4B 柱色谱法将其与低分子质量核酸分离。虽然此类污染物在制品中仅占核酸量的一小部分，但它们却能产生比例大得多的 5' 端。在 T4 噬菌体多核苷酸激酶催化的反应中，污染的低分子质量 DNA 和 RNA 分子可作为占优势的核酸群体被标记，因此必须除去。
+
+由于氨离子是 T4 噬菌体多核苷酸激酶的强力抑制剂，因此在多核苷酸激酶处理前，去磷酸化的 DNA 不应溶于含氨盐的缓冲液或在该缓冲液中沉淀。
+
+## 参考文献
+
+Gaillard C, Strauss F. 1990. Ethanol precipitation of DNA with linear polyacrylamide as carrier. Nucleic Acids Res 18: 378.
+
+Kurien BT, Scofield RH, Broyles RH. 1997. Efficient 5' end labeling of dephosphorylated DNA. Anal Biochem 245: 123–126.
+
+## 方案 10 含 5'突出羟基端的 DNA 分子磷酸化
+
+用磷酸酶去除核酸的 5' 磷酸根，然后在 T4 噬菌体多核苷酸激酶的催化下，以放射性标记的形式重新将磷酸加到核酸上，这是一种广泛应用的制备  ${}^{32}P$  标记探针的技术（见信息栏“用 T4 噬菌体多核苷酸激酶标记 DNA 5' 端”）。当反应有效进行时，反应中 40%～50% 的 5' 突出端可被放射性标记（Berkner and Folk 1977）。但产生的探针不如由其他放射性标记方法获得的比活性高，因为每个 DNA 分子中仅引入了一个放射性原子。尽管如此，比活性范围在 3000～7000Ci/mmol 的  $[\gamma-{}^{32}P]$  ATP 的实用性使探针的合成适用于多种研究目的，包括:
+
+- 作为引物在引物延伸实验中进行 mRNA 5'端作图
+- 在用 S1 核酸酶进行 RNA 结构分析时作为底物
+
+本方案介绍一种标记去磷酸化的 5' 突出端的方法。DNA 末端标记方法的总结可见方案 8 中的表 13-3。
+
+---
+
+834
+
+分子克隆实验指南（原书第四版）
+
+## 用 T4 噬菌体多核苷酸激酶标记 DNA 5'端
+
+催化核酸 5'端标记的首选酶为 T4 噬菌体多核苷酸激酶，该酶可将 $[\gamma-^{32}P]$ ATP 的 $\gamma$ 磷酸残基转移到去磷酸化的单链 DNA、双链 DNA 和 RNA 的 5'羟基端。此外，该酶以低得多的效率，将磷酸残基恢复至位于双链 DNA 切口的 5'羟基上。T4 多核苷酸激酶是一个相对分子质量约为 142 000 的四聚体蛋白，由 T4 噬菌体结构基因 pseT 编码的 4 个相同的亚单位构成（见综述，Richardson 1971; Maunder 1993）。由 T4 噬菌体多核苷酸激酶催化的 $^{32}P$ 向 DNA 5'端的转移，可以两种方式进行（图 1）:
+
+- 在正向反应中，首先用磷酸酶（CIP 或 SAP）处理单链或双链 DNA，以去除 5' 端磷酸基团（方案 9）。然后，反应产生的 5'羟基末端在多核苷酸激酶催化的反应中，被  $[\gamma-^{32}P]$  ATP 转移来的  $\gamma$ -磷酸基重新磷酸化（本方案和方案 11）。放射性标记的效率取决于 DNA 的纯度（未纯化的 DNA 溶液中含有激酶抑制剂）和 DNA 5' 端的序列。由于未知的原因，5' 端带有一个胞嘧啶残基的寡核苷酸比以 A 或 T 开始的寡核苷酸的标记效率低 4 倍，比以 G 开始的寡核苷酸低 6 倍（van Houten et al. 1998）。
+- 某些 DNA 模板如合成的寡核苷酸在激酶反应前不必用磷酸酶处理，合成的寡核苷酸几乎必定带有游离的 5'羟基。由于磷酸化反应是可逆的，T4 多核苷酸激酶在核苷二磷酸受体如 ADP 摩尔过量的条件下，将催化 5'端的去磷酸化（van de Sande et al. 1973）。标记的第二种方法（交换反应）利用该酶催化的正向和反向两种反应。
+
+T4 多核苷酸激酶可在限制性内切核酸酶缓冲液中作用，但效率不高，然而，置换反应却可与 5' 突出端的酶切反应同时进行。产生的 DNA 可在凝胶电泳中用作放射性标记的分子质量标准物（Oommen et al. 1990）。
+
+![](../../raw/pages_0337-0352/images/page_344_image_8.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["5' pCpGpC...... 3'"] -->|"用碱性磷酸酶\n处理 DNA"| B["5' OH CpGpC...... 3'"]
+  B -->|"与T4噬菌体多核苷酸\n激酶及["γ-³²P"]孵育"| C["ADP + 5' *pCpGpC...... 3'"]
+```
+</details>
+
+图 1 T4 噬菌体多核苷酸激酶可用于标记 DNA 分子的 5' 端（详见正文）。
+
+![](../../raw/pages_0337-0352/images/page_344_image_10.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+835
+
+## 试剂
+
+乙酸铵（10mol/L）&lt;A&gt;（可选；见步骤3）
+
+## T4 噬菌体多核苷酸激酶
+
+野生型多核苷酸激酶具有 5'磷酸转移酶活性和 3'磷酸酶活性（Depew and Cozzarelli 1974; Sirotkin et al. 1978）。市售的突变型酶（Cameron et al. 1978）缺乏磷酸酶活性，但完好地保留了磷酸转移酶活性（如 Boehringer Mannheim 公司）。我们建议应尽可能用此突变型酶进行 5'端标记；催化 10～50pmol 去磷酸化的 5'突出端磷酸化需要 10～20U 的酶。
+
+10×T4噬菌体多核苷酸激酶缓冲液&lt;A&gt;
+
+DNA (10\~50pmol)
+
+应按方案 9 所述进行 DNA 的去磷酸化或合成含 5'羟基端的 DNA 片段。DNA 样品中 5'端含量的计算见方案 9 信息栏内容。
+
+EDTA (0.5 mol/L, pH 8.0) &lt;A&gt;
+
+乙醇
+
+$[\gamma-^{32}P]$ ATP（10mCi/mL，比活性为3000～7000 Ci/mmol）
+
+为最大限度地减少前体和探针的辐射分解，应尽可能在 $[\gamma-^{32}P]dNTP$ 到达实验室的当天制备放射性标记探针。
+
+## 设备
+
+液体闪烁计数仪，可通过契仑科夫辐射定量  ${}^{32}P$
+
+Sephadex G-50 离心柱，用 TE（pH 7.6）平衡或
+
+Sephadex G-50 柱（1mL），用 TE（pH 7.6）平衡（上述两种可任选；见步骤 3）。
+
+Sephadex G-50 凝胶过滤介质可用于从低分子质量物质（放射性前体保留在柱中）中分离 DNA（DNA 可穿过介质）。放射性标记 DNA 纯化用 Sephadex G-50 柱可从几个商业渠道获得[如 Quick Spin Columns(Roche Applied Science 公司)]。但是，用 1mL 装填硅化玻璃棉的一次性注射器很容易完成（见方案 1，步骤 6～14）。
+
+![](../../raw/pages_0337-0352/images/page_345_image_18.jpg)
+
+## 方法
+
+1. 在一个微量离心管中，按下列顺序混合各试剂:
+
+| 去磷酸化的DNA | 10~50pmol |
+| --- | --- |
+| 10×T4噬菌体多核苷酸激酶缓冲液 | 5μL |
+| $[γ-^{32}P]$ATP(10mCi/mL)(比活度为3000~7000Ci/mmol) | 50pmol |
+| T4噬菌体多核苷酸激酶 | 10U |
+| $H_2O$ | 加至50μL |
+
+$37^{\circ}\mathrm{C}$ 温育反应 $1\mathrm{h}$ 。
+
+理想的条件下，ATP 应 5 倍摩尔过量于 DNA 5'端，DNA 末端的浓度应大于或等于  $0.4 \mu mol/L$ 。因此，反应中 ATP 的浓度应大于  $2 \mu mol/L$ ，但在实际中很少达到。为提高放射性标记探针的比活度，应增加磷酸化反应中  $[\gamma-^{32}P]$  ATP 的用量，减少水的体积，维持反应体积为  $50 \mu L$ 。
+
+2. 加入 $2\mu \mathrm{L}0.5\mathrm{mol} / \mathrm{L}$ EDTA（pH 8.0）以终止反应。用液体闪烁计数仪中的契仑科夫计数测量反应混合物中的总放射性。
+
+3. 通过下列方法之一分离放射性标记的探针与未掺入的 dNTP:
+
+\- 用 Sephadex G-50 离心柱色谱法（按照方案 1，步骤 6～14 所述，用商品化的柱子或自制的柱子）
+
+---
+
+836
+
+分子克隆实验指南（原书第四版）
+
+\- 用 $1\mathrm{mL}$ Sephadex G-50 柱（用 TE 平衡）常规分子筛层析
+
+或
+
+\- 用乙酸铵和乙醇对放射性标记的 DNA 进行两轮选择性沉淀（见第 1 章，方案 4）
+
+4. 通过契仑科夫计数测定探针制品中的放射性量，用探针中放射性含量除以反应混合物中的放射性总量来计算放射性标记物转移到5'端的效率（步骤2）。
+
+## 参考文献
+
+- Berkner KL, Folk WR. 1977. Polynucleotide kinase exchange reaction: Quantitative assay for restriction endonuclease-generated 5'-phosphoryl termini in DNA. J Biol Chem 252: 3176–3184.
+- Cameron V, Soltis D, Uhlenbeck OC. 1978. Polynucleotide kinase from a T4 mutant which lacks the 3' phosphatase activity. Nucleic Acids Res 5:825–833.
+- Depew RE, Cozzarelli NR. 1974. Genetics and physiology of bacteriophage T4 3'-phosphatase: Evidence for involvement of the enzyme in T4 DNA metabolism. J Virol 13: 888–897.
+- Maunders MJ. 1993. Polynucleotide kinase. Methods Mol Biol 16: 343–356.
+  Oommen A, Ferrandis I, Wang MJ. 1990. Single-step labeling of DNA using restriction endonucleases and T4 polynucleotide kinase. Bio-Techniques 8: 482–486.
+- Richardson CC. 1971. Polynucleotide kinase from Escherichia coli infected with bacteriophage T4. In Procedures in nucleic acid research (ed Cantoni GL, Davies DR), vol. 2, pp. 815–828. Harper and Row, New York.
+- Sirotkin K, Cooley W, Runnels J, Snyder LR. 1978. A role in true-late gene expression for the T4 bacteriophage 5' polynucleotide kinase 3' phosphatase. J Mol Biol 123: 221–233.
+- van de Sande JH, Kleppe K, Khorana HG. 1973. Reversal of bacteriophage T4 induced polynucleotide kinase action. Biochemistry 12:5050–5055.
+- van Houten V, Denkers F, van Dijk M, van den Brekel M, Brakenhoff R. 1998. Labeling efficiency of oligonucleotides by T4 polynucleotide kinase depends on 5'-nucleotide. Anal Biochem 265: 386–389.
+
+## 方案 11 去磷酸化的平端或 5'凹端 DNA 分子的磷酸化
+
+在 T4 多核苷酸激酶催化的正向反应中，带有平端、5'凹端或分子内切口的 DNA 底物比含 5'突出端的双链 DNA 的标记效率低。例如，磷酸基掺入 DNA 内部切口比转移到 5' 端的效率低 30 倍（Lillehaug et al. 1976; Berkner and Folk 1977）。然而，标记该类底物的困难可通过以下方法克服:①将 ATP 的浓度增至极高水平(>100 μmol/L)(Lillehaug and Kleppe 1975a)；②在反应中加入聚胺或聚乙二醇 8000（PEG 8000）(Lillehaug and Kleppe 1975b; Harrison and Zimmerman 1986a)。在 PEG 和镁的存在下，DNA 可折卷成高度凝聚态（Lerman 1971）。随后磷酸化反应效率提高，据信这是所产生的大分子群集的结果（Harrison and Zimmerman 1986b；综述见 Zimmerman and Minton 1993）。其刺激量取决于 PEG 的浓度。因此，检测 4%～10% PEG 浓度范围内反应效率可能是有益的。当使用长于 300 bp 的 DNA 时，PEG 的有益效应才变得显著。较小的 DNA 片段可能由于其刚性过强而不能折卷为凝聚态。有关用 T4 多核苷酸激酶标记 DNA 的其他信息见方案 10 概述中的信息栏“用 T4 噬菌体多核苷酸激酶标记 DNA 5'端”。DNA 末端标记方法的总结见方案 8 中的表 13-3。
+
+本方案中，PEG 与高浓度的 ATP 及多核苷酸激酶一起加入，以提高平端或 5'凹端 DNA 片段的标记。
+
+![](../../raw/pages_0337-0352/images/page_346_image_20.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+837
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+乙酸铵（10mol/L）&lt;A&gt;（可选；见步骤5）
+
+## T4 噬菌体多核苷酸激酶
+
+野生型多核苷酸激酶具有 5' 磷酸转移酶活性和 3' 磷酸酶活性（Depew and Cozzarelli 1974; Sirotkin et al. 1978）。市售的突变型酶（Cameron et al. 1978）缺乏磷酸酶活性但完好地保留了磷酸转移酶活性（如 Boehringer Mannheim 公司）。我们建议应尽可能用此突变型酶进行 5' 端标记。
+
+DNA（10～50pmol，体积 $\leqslant$ 11 $\mu$ L）
+
+按方案 9 所述进行 DNA 的去磷酸化或合成含  $5'$  羟基端的 DNA 片段。DNA 样品中  $5'$  端含量的计算见方案 9。
+
+EDTA (0.5mol/L, pH 8.0) &lt;A&gt;
+
+乙醇
+
+10×咪唑缓冲液&lt;R&gt;
+
+$\gamma-^{32}P$ ATP（10mCi/mL，比活性3000Ci/mmol）
+
+为最大限度地减少前体和探针的辐射分解，尽可能在 $\left[\gamma-^{32}P\right]dNTP$ 到达实验室的当天制备放射性标记的探针。
+
+PEG 8000（24%，m/V），水配制
+
+## 设备
+
+可通过契仑科夫辐射定量  ${}^{32}P$  的液体闪烁计数仪
+
+Sephadex G-50 离心柱，用 TE（pH 7.6）平衡
+
+或
+
+SephadexG-50 柱（1mL），用 TE（pH 7.6）平衡（上述两种任选，见步骤 5）。
+
+Sephadex G-50 凝胶过滤介质可用于从低分子质量物质（放射性前体保留在柱中）中分离 DNA（DNA 可穿过介质）。放射性标记 DNA 纯化用 Sephadex G-50 柱可从几个商业渠道获得[如 Quick Spin Columns(Roche Applied Science 公司)]。但是，用 1mL 装填硅化玻璃棉的一次性注射器很容易完成（见方案 1，步骤 6～14）。
+
+![](../../raw/pages_0337-0352/images/page_347_image_21.jpg)
+
+## 方法
+
+1. 在一个微量离心管中，按下列顺序混合:
+
+| 去磷酸化的 DNA | 10~50pmol |
+| --- | --- |
+| 10×咪唑缓冲液 | 4μL |
+| $H_2O$ | 加至 15μL |
+| PEG(24%, m/V) | 10μL |
+
+2. 加入 $40\mathrm{pmol}[\gamma^{-32}\mathrm{P}]\mathrm{ATP}$ （$10\mathrm{mCi/mL}$；比活性为 $3000\mathrm{Ci/mmol}$），加水至反应终体积为 $40\mu\mathrm{L}$。
+
+理想的条件下，ATP 摩尔数应超过 DNA 5' 端 5 倍以上。DNA 末端的浓度应为  $\geqslant 0.4\mu mol/L$ 。因此，反应中 ATP 的浓度应 >2  $\mu mol/L$ ，但实际上很难达到。为提高放射性标记的 DNA 产物的比活性，可增加磷酸化反应中  $[\gamma-^{32}P]$  ATP 的用量，减少水的体积，以维持反应体积为 40  $\mu L$ 。
+
+---
+
+838
+
+分子克隆实验指南（原书第四版）
+
+3. 在反应中加入 40U 的 T4 噬菌体多核苷酸激酶。轻弹管壁以混匀试剂，$37^{\circ} \mathrm{C}$ 温育反应 $30 \mathrm{~min}$。
+
+4. 加入  $2 \mu L$  0.5 mol/L EDTA（pH 8.0）以终止反应。用液体闪烁计数仪的契仑科夫计数测定反应混合物的放射性活度。
+
+5. 通过以下方法之一分离放射性标记的探针与未掺入的 dNTP:
+
+\- 用 Sephadex G-50 离心柱色谱法（按照方案 1，步骤 6～14，用商品化的柱子或自制的柱子）；
+
+\- 用 $1 \mathrm{~mL}$ Sephadex G-50 柱（用 TE 平衡）常规分子筛层析；
+
+或
+
+\- 用乙酸铵和乙醇对放射性标记的 DNA 进行两轮选择性沉淀（见第 1 章，方案 4）。
+
+6. 用契仑科夫计数检测探针的放射性。用探针的放射性含量除以反应混合物中的放射性总量来计算放射性标记物转移到  $5'$  端的效率（步骤 4）。
+
+![](../../raw/pages_0337-0352/images/page_348_image_10.jpg)
+
+## 配方
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+10×咪唑缓冲液
+
+| 试剂 | 体积(1mL) | 终浓度 |
+| --- | --- | --- |
+| 咪唑盐酸(1mol/L,pH 6.4) | 500μL | 500mmol/L |
+| $MgCl_2$(1mol/L) | 180μL | 180mmol/L |
+| DTT(1mol/L) | 50μL | 50mmol/L |
+| 亚精胺盐酸(100mmol/L) | 10μL | 1mmol/L |
+| EDTA(0.5mol/L,pH 8.0) | 2μL | 1mmol/L |
+
+## 参考文献
+
+- Berkner KL, Folk WR. 1977. Polynucleotide kinase exchange reaction: Quantitative assay for restriction endonuclease-generated 5'-phosphoryl termini in DNA. J Biol Chem 252: 3176–3184.
+- Cameron V, Soltis D, Uhlenbeck OC. 1978. Polynucleotide kinase from a T4 mutant which lacks the 3' phosphatase activity. Nucleic Acids Res 5:825–833.
+- Depew RE, Cozzarelli NR. 1974. Genetics and physiology of bacteriophage T4 3'-phosphatase: Evidence for involvement of the enzyme in T4 DNA metabolism. J Virol 13: 888–897.
+- Harrison B, Zimmerman SB. 1986a. T4 polynucleotide kinase: Macromolecular crowding increases the efficiency of reaction at DNA termini. Anal Biochem 158: 307–315.
+- Harrison B, Zimmerman SB. 1986b. Stabilization of T4 polynucleotide kinase by macromolecular crowding. Nucleic Acids Res 14: 1863–1870.
+- Lerman LS. 1971. A transition to a compact form of DNA in polymer solutions. Proc Natl Acad Sci 68: 1886–1890.
+- Lillehaug JR, Kleppe K. 1975a. Kinetics and specificity of T4 polynucleotide kinase. Biochemistry 14: 1221–1225.
+- Lillehaug JR, Kleppe K. 1975b. Effect of salts and polyamines polynucleotide kinase. Biochemistry 14: 1225–1229.
+- Lillehaug JR, Kleppe RK, Kleppe K. 1976. Phosphorylation of double-stranded DNAs by T4 polynucleotide kinase. Biochemistry 15: 1858–1865.
+- Sirotkin K, Cooley W, Runnels J, Snyder LR. 1978. A role in true-late gene expression for the T4 bacteriophage 5' polynucleotide kinase 3' phosphatase. J Mol Biol 123: 221–233.
+- Zimmerman SB, Minton AP. 1993. Macromolecular crowding: Biochemical, biophysical, and physiological consequences. Annu Rev Biophys Biomol Struct 22: 27–65.
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+839
+
+## 方案 12 用 T4 多核苷酸激酶进行
+
+## 寡核苷酸 5' 端的磷酸化
+
+合成的寡核苷酸 5'端不含磷酸基，因此，通过 T4 噬菌体多核苷酸激酶催化 $[\gamma-^{32}P]$ ATP 的 $\gamma-^{32}P$ 转移的反应，可标记寡核苷酸的 5'端。用此法放射性标记的寡核苷酸可用作杂交探针和引物，用于 DNA 测序和 mRNA 5'端作图。
+
+当反应在标准条件下进行时，>50%的寡核苷酸分子可被放射性标记。然而，由于某些未知的原因，寡核苷酸放射性标记的效率取决于寡核苷酸的序列（van Houten et al. 1998）。5'端带有一个胞嘧啶残基的寡核苷酸比以A或T开始的寡核苷酸的标记效率低4倍，比以G开始的寡核苷酸低6倍。当设计寡核苷酸探针时，应注意5'端的位置不是胞嘧啶残基。
+
+本方案描述的反应按标记高比活性 $(1\times10^{8}\sim4\times10^{8}\mathrm{dpm}/\mu\mathrm{g})$ 的10pmol寡核苷酸设计。通过增加或减少反应的体积而维持所有组分的浓度不变，可很容易实现不同量的寡核苷酸的标记。
+
+![](../../raw/pages_0337-0352/images/page_349_image_7.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+## T4 噬菌体多核苷酸激酶
+
+野生型多核苷酸激酶具有 5' 磷酸转移酶活性和 3' 磷酸酶活性（Depew and Cozzarelli 1974; Sirotkin et al. 1978）。市售的突变型酶（Cameron et al. 1978）缺乏磷酸酶活性，但完好地保留了磷酸转移酶活性（如 Boehringer Mannheim 公司）。我们建议应尽可能用此突变型酶进行 5' 端标记。催化 10～50pmol 去磷酸化的 5' 突出端磷酸化需要 10～20U 的酶。
+
+▲ 注意，已报道不同厂商出售的多核苷酸激酶制品催化单链合成寡核苷酸 5' 端磷酸化的能力相差较大（van Houten et al. 1998）。
+
+10×T4噬菌体多核苷酸激酶缓冲液&lt;A&gt;
+
+$\left[\gamma-^{32}P\right]$ ATP 水溶液（10mCi/mL，比活性>5000 Ci/mmol）
+
+标记 10 pmol 高比活性的去磷酸化的 5' 端需要 10pmol  $[\gamma-^{32}P]$ ATP。
+
+为最大限度地减少前体和探针的辐射分解，尽可能在 $[\gamma-^{32}P]dNTP$ 到达实验室的当天制备放射性标记的探针。
+
+## 寡核苷酸
+
+为获得标记的最大效率，应当通过 PAGE 纯化寡核苷酸。在多核苷酸激酶催化的反应中，寡核苷酸的粗制品标记效率较低（van Houten et al. 1998）。当使用未纯化的寡核苷酸制品时，确保合成的最后一个循环设定为“去三苯甲基”，即从固相合成载体中释放 DNA 之前，除去寡核苷酸引物 5' 端的二甲氧基三苯基阻断基。
+
+Tris-Cl (1mol/L, pH 8.0) &lt;A&gt;
+
+---
+
+840
+
+分子克隆实验指南（原书第四版）
+
+## 设备
+
+微量离心管（0.5mL）
+
+水浴（68℃）
+
+![](../../raw/pages_0337-0352/images/page_350_image_5.jpg)
+
+## 方法
+
+1. 在一个 $0.5 \mathrm{~mL}$ 含有下列试剂的微量离心管中配制反应体系:
+
+| 合成的寡核苷酸(10 pmol/μL) | 1μL |
+| --- | --- |
+| 10×T4噬菌体多核苷酸激酶缓冲液 | 2μL |
+| $\left\lbrack {\gamma - {}^{32}\mathrm{P}}\right\rbrack \mathrm{{ATP}}\left( {{10}\mathrm{{pmol}},\text{比活性} > {5000}\mathrm{{Ci}}/\mathrm{{mmol}}}\right)$ | 5μL |
+| ${\mathrm{H}}_{2}\mathrm{O}$ | 加至 11.4μL |
+
+轻柔并持续敲击管壁混匀各组分。将  $0.5 \mu L$  的反应混合物加入含  $10 \mu L$  10 mmol/L Tris-Cl（pH 8.0）的管中。放置待步骤 4 使用。
+
+反应中含有等浓度的 $[\gamma -^{32}\mathrm{P}]\mathrm{ATP}$ 和寡核苷酸。一般来说，仅有 $50\%$ 的标记物被转移至寡核苷酸。转移的效率可通过增加反应中寡核苷酸的浓度而提高10倍。这种效率的提高可使约 $90\%$ 的标记物转移至寡核苷酸。但是，放射性标记的DNA比活性则减少约5倍。为标记高比活性的寡核苷酸，
+
+- 提高反应中 $[\gamma -^{32}\mathrm{P}]\mathrm{ATP}$ 的浓度至3倍（如用 $15\mu \mathrm{L}$ 标记物而减少水的体积至 $1.4\mu \mathrm{L}$ ）
+- 寡核苷酸的量减至 3pmol
+
+在此条件下，仅有约 10% 的标记物被转移，但高比例的寡核苷酸可被放射性标记。
+
+理想的情况下，ATP 的摩尔数应超过 DNA 5' 端的 5 倍，DNA 末端的浓度应  $\geqslant 4\mu mol/L$ 。因此，反应中 ATP 的浓度应 >2  $\mu mol/L$ ，但在实际情况下很难达到。
+
+2. 加入 10U（约  $1 \mu L$ ）T4 噬菌体多核苷酸激酶至剩余的反应混合物。彻底混匀，在  $37^{\circ}C$  下温育反应混合物 1h。
+3. 反应结束时，将 $0.5 \mu \mathrm{L}$ 反应混合物加入含 $10 \mu \mathrm{L} 10 \mathrm{mmol} / \mathrm{L}$ Tris-Cl（$\mathrm{pH} 8.0$）的第二支管中。$68^{\circ} \mathrm{C}$ 下加热剩余的反应混合物 $10 \mathrm{~min}$，以灭活多核苷酸激酶。将含有加热后的反应混合物的离心管置于冰上。
+4. 在进行下一步骤前，用一小份反应混合物测定转移至寡核苷酸底物的放射性标记物，以确定标记反应是否成功。将反应的样品（0.5μL）移至含有 10μL 10mmol/L Tris-Cl（pH 8.0）的管中。通过以下任一方法，用此样品（以及步骤 1 和步骤 3 的样品）测定 ATP 中的 α-$^{32}$P 转移的效率:
+
+\- 测定放射性标记的 dNTP 掺入 TCA 可沉淀物中的比例（见附录 2）。
+
+或
+
+\- 通过 Sephadex G-15 或 Bio-Rad P-60 分子排阻色谱评估随寡核苷酸迁移的标记物比例，以测定标记反应的效率。此方法的详细描述见方案 17。某些情况下，在两种方法中此法更为便捷，因为掺入和未掺入的相对放射性量可在层析过程中用手提式微型探测器估计。
+
+如果比活性过低，请参看“疑难解答”。
+
+5. 如果寡核苷酸的比活性是可接受的，可按方案 15～17 纯化放射性标记的寡核苷酸。
+
+![](../../raw/pages_0337-0352/images/page_350_image_25.jpg)
+
+## 疑难解答
+
+问题（步骤4）:探针的比活性过低。
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+841
+
+解决方案:再加入 8U 的多核苷酸激酶，在  $37^{\circ}$ C 下继续温育反应 30min（共 90min）。在  $68^{\circ}$ C 下加热反应物 10min 以灭活酶，按照步骤 4 所述再次分析反应产物。
+
+问题（步骤4）:探针的比活性过低，增加一轮磷酸化反应仍未使寡核苷酸探针的比活性达到足够的要求。
+
+解决方案:检查寡核苷酸的 5'端是否含有胞嘧啶残基。如果含有，请考虑重新设计寡核苷酸，使之 5'端为 G、A 或 T 残基（见本方案的概述）。此外，可尝试通过 Sep-Pak 层析纯化初始寡核苷酸制品（方案 17），然后重复本方案。
+
+## 参考文献
+
+Cameron V, Soltis D, Uhlenbeck OC. 1978. Polynucleotide kinase from a T4 mutant which lacks the 3' phosphatase activity. \*Nucleic Acids Res\* 5: 825–833.
+
+Depew RE, Cozzarelli NR. 1974. Genetics and physiology of bacteriophage T4 3'-phosphatase: Evidence for involvement of the enzyme in T4 DNA metabolism. J Virol 13: 888–897.
+
+Sirotkin K, Cooley W, Runnels J, Snyder LR. 1978. A role in true-late gene expression for the T4 bacteriophage 5' polynucleotide kinase 3' phosphatase. J Mol Biol 123: 221–233.
+
+van Houten V, Denkers F, van Dijk M, van den Brekel M, Brakenhoff R. 1998. Labeling efficiency of oligonucleotides by T4 polynucleotide kinase depends on 5'-nucleotide. Anal Biochem 265: 386–389.
+
+## 方案 13 用末端脱氧核苷酸转移酶标记寡核苷酸 3' 端
+
+末端脱氧核苷酸转移酶（TdT，又简称为末端转移酶）是一种模板非依赖的聚合酶，可催化脱氧核苷酸和双脱氧核苷酸加至DNA分子的3'羟基末端。钴（$\mathrm{Co}^{2+}$）为该酶活性必需的辅因子。末端转移酶对单链DNA具有底物偏好，亦可将核苷酸加至突出、凹进或平端双链DNA片段，但效率较低。此反应在链终止类似物如双脱氧核苷酸（ddNTP，常为$[\alpha-^{32}\mathrm{P}]\mathrm{ddATP}$）存在下使用时，仅限于添加单一核苷酸（Yousaf et al. 1984）。在所谓的同聚物加尾反应（homopolymeric “tailing” reaction）中，此酶则能将几个（2～100）核苷酸加至3'端（Deng and Wu 1983）（更多信息见本方案末的附加方案“加尾反应”）。除添加放射性核苷酸外，末端转移酶亦可用于添加非放射性标记物如生物素、DIG或荧光素标记的核苷酸（Kumar et al. 1988; Igloi and Schiefermayr 1993）。非放射性标记通常用于促进几个核苷酸的添加，以提高探针的敏感性。虽然3'端标记反应相对容易操作（见本方案末的可选方案“用TdT合成非放射性标记的探针”），几家厂商亦提供生物素和DIG3'端标记试剂盒（如Thermo Scientific公司和Roche Applied Science公司）。
+
+![](../../raw/pages_0337-0352/images/page_351_image_12.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+$\alpha-^{32}P$ ddATP（10mCi/mL，比活性3000Ci/mmol）
+
+$CoCl_{2}$  溶液（25mmol/L）
+
+---
+
+842
+
+分子克隆实验指南（原书第四版）
+
+DNA 寡核苷酸（约 10pmol DNA 3'端，10～100ng，取决于长度）
+
+见方案 9 中信息栏 “计算 DNA 样品中 5' 端含量”。
+
+EDTA (0.2mol/L, pH8.0) &lt;A&gt; (可选，见步骤3)
+
+重组末端转移酶（400U/μL）
+
+重组形式的末端转移酶比天然酶的活性更高，由几家公司（如 Roche Applied Science 公司和 New England Biolabs 公司）提供。
+
+5×末端转移酶反应缓冲液&lt;R&gt;
+
+无核酸酶的无菌水
+
+## 设备
+
+水浴或加热块（37℃和70℃）（可选）
+
+![](../../raw/pages_0353-0368/images/page_352_image_11.jpg)
+
+## 方法
+
+1. 在一个置于冰上的微量离心管中，加入下列试剂:
+
+| 末端转移酶反应缓冲液 | 10μL |
+| --- | --- |
+| ${\mathrm{{CoCl}}}_{2}$(25nmol/L) | 5μL |
+| DNA 寡核苷酸(10pmol 3'端) | ${x\mu }{\mathrm{L}}^{\mathrm{a}}$ |
+| $\left\lbrack {\alpha - {}^{32}\mathrm{P}}\right\rbrack \mathrm{{ddATP}}$ | 5μL |
+| 末端转移酶 | 1μL |
+| ${\mathrm{H}}_{2}\mathrm{O}$ | 加至终体积 50μL |
+
+a. 根据 DNA 寡核苷酸的浓度决定适宜的体积。
+
+轻柔而持续敲击管壁以混匀试剂。瞬时离心以收集管底部的溶液。将  $0.5 \mu L$  的反应混合物加入一支含有 0.02 mol/L EDTA 的管中，放置待步骤 4 时确定放射性标记物的掺入。
+
+2.  $37^{\circ}$ C下温育反应60min。
+
+3. $70^{\circ} \mathrm{C}$ 加热 $10 \mathrm{~min}$ 或加入 $5 \mu \mathrm{L} 0.2 \mathrm{~mol} / \mathrm{L}$ EDTA (pH 8.0) 以终止反应。
+
+4. 用一小份反应混合物测定转移至寡核苷酸底物的放射性标记物，以确定标记反应是否成功。将反应的样品（0.5μL）移至含有0.02mol/L EDTA的管中。通过以下任一方法，用此样品（以及步骤1的样品）测定 $^{32}$ P-ddATP掺入的效率:
+
+\- 测定放射性标记的 dNTP 掺入 TCA 可沉淀物中的比例（见附录 2）。
+
+或
+
+\- 通过 Sephadex G-15 或 Bio-Rad P-60 分子排阻色谱评估随寡核苷酸迁移的标记物比例，测定标记反应的效率。此方法的详细描述见方案 17。某些情况下，在两种方法中此法更为便捷，因为掺入和未掺入的相对量可在层析过程中用手提式微型探测器估计。至少应获得 30% 的掺入率。
+
+5. 如果寡核苷酸的比活性是可接受的，可按方案 $15\sim 17$ 所述纯化放射性标记的寡核苷酸。
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+843
+
+## 替代方案 用 TdT 合成非放射性标记的探针
+
+![](../../raw/pages_0353-0368/images/page_353_image_3.jpg)
+
+## 方法
+
+为改进上述方案以用于非放射性的核苷酸，可增加反应中  $3'$  端的量至约 100pmol，使反应中  $CoCl_{2}$  的量加倍至 5mmol/L。
+
+1. 在一个置于冰上的微量离心管中加入下列试剂:
+
+| 末端转移酶反应缓冲液 | 4μL |
+| --- | --- |
+| $CoCl_2$(25mmol/L) | 4μL |
+| DNA 寡核苷酸(100pmol 3'端) | $x\mu L^a$ |
+| 生物素、DIG 或荧光素-ddUTP | 1μL |
+| 末端转移酶 | 1μL |
+| $H_2O$ | 加至终体积 20μL |
+
+a. 根据 DNA 寡核苷酸的浓度决定适宜的体积。
+
+轻柔而持续敲击管壁以混匀试剂。瞬时离心以收集管底部的溶液。
+
+2.  $37^{\circ}$ C下温育反应15min。
+3. 70℃加热 10min 或加入 2μL 0.2mol/L EDTA（pH 8.0）以终止反应。
+4. 按方案 15～17 所述从未掺入的标记物中分离纯化探针。
+
+## 附加方案 加尾反应
+
+加尾反应在标记的和未标记的 dATP、dTTP、dGTP 或 dCTP 的存在下进行。添加 dNTP 的速率和尾的长度取决于 DNA 3'端和 dNTP 浓度的比率，以及所用特异性的 dNTP。下列数据是在  $37^{\circ}$ C 下温育 15min 得出的近似估算值。
+
+<table><tr><td rowspan="2">pmol 3&#x27;端的比率/ (μmol/L dNTP)</td><td colspan="4">尾长(37°C下温育15min)(核苷酸)</td></tr><tr><td>dATP</td><td>dTTP</td><td>dGTP</td><td>dCTP</td></tr><tr><td>1:0.1</td><td>1~5</td><td>1~5</td><td>1~3</td><td>1~3</td></tr><tr><td>1:1</td><td>10~20</td><td>10~20</td><td>5~10</td><td>10~20</td></tr><tr><td>1:5</td><td>100~300</td><td>200~300</td><td>10~25</td><td>50~200</td></tr><tr><td>1:10</td><td>300~500</td><td>250~350</td><td>15~25</td><td>100~150</td></tr></table>
+
+本方案中所述反应条件产生尾长为 75～125 个核苷酸的片段，用于尾部携 dATP 和 dTTP 的放射性标记探针，以及尾部携 dGTP 和 dCTP 的、长度为 15～30 个核苷酸的探针。
+
+![](../../raw/pages_0353-0368/images/page_353_image_18.jpg)
+
+## 其他材料
+
+试剂
+
+dNTP 标记混合物（见步骤 1）
+
+---
+
+844
+
+分子克隆实验指南（原书第四版）
+
+![](../../raw/pages_0353-0368/images/page_354_image_2.jpg)
+
+## 方法
+
+## 1. 为进行放射性标记，准备下列试剂:
+
+$CoCl_{2}$  溶液（15mmol/L 储备溶液）
+
+放射性标记混合物
+
+如使用 dATP 或 dTTP 标记混合物，将 1 倍体积 2.5mmol/L 的 dATP 或 dTTP 与 4 倍体积的  $[\alpha-^{32}P]$ dATP 或  $[\alpha-^{32}P]$ dTTP（800Ci/mmol）及 15 倍体积的水混合。如使用 dGTP 或 dCTP 标记混合物，将 1 倍体积 2 mmol/L 的 dGTP 或 dTTP 与 4 倍体积的  $[\alpha-^{32}P]$ dATP 或  $[\alpha-^{32}P]$ dTTP（800Ci/mmol）及 15 倍体积的水混合。
+
+## 2. 在一个置于冰上的微量离心管中，加入:
+
+| 末端转移酶反应缓冲液 | 4μL |
+| --- | --- |
+| ${\mathrm{{CoCl}}}_{2}$(15mmol/L) | 2μL(用 dATP 或 dTTP 的加尾反应)或1μL(用 dGTP 或 dCTP 的加尾反应) |
+| DNA 寡核苷酸(1pmol 3'端) | ${x\mu }{\mathrm{L}}^{\mathrm{a}}$ |
+| 放射性标记的 dNTP 标记混合物 | 1μL |
+| 末端转移酶 | 1μL |
+| ${\mathrm{H}}_{2}\mathrm{O}$ | 加至终体积 20μL |
+
+a. 根据 DNA 寡核苷酸的浓度决定适宜的体积。
+
+轻柔而持续敲击管壁以混匀试剂。瞬时离心以收集管底部的溶液。
+
+3.  $37^{\circ}$ C下温育反应15min。
+
+4. 70℃加热10min，或加入2μL 0.2mol/L EDTA（pH 8.0）以终止反应。
+
+## 附加方案 合成非放射性标记探针的修饰
+
+非放射性标记探针的加尾反应是在生物素-、DIG-或荧光素-dUTP，以及dATP、dTTP、dGTP或dCTP的存在下进行的。尾长反映了掺入标记的dUTP的数量，这取决于dNTP的类型和浓度，以及标记的dUTP核苷酸与未标记的核苷酸的比率。下列方案是在标记的dUTP:dNTP比率为1:10的条件下得出的结果。
+
+|  | dATP | dTTP | dGTP | dCTP |
+| --- | --- | --- | --- | --- |
+| 平均尾长 | 50 | 10 | 15 | 25 |
+| 尾长范围 | 10~100 | 1~20 | 5~10 | 10~40 |
+| 标记的 dUTP 分子/尾 | 5 | 1 | 1.5 | 2.5 |
+
+![](../../raw/pages_0353-0368/images/page_354_image_17.jpg)
+
+## 方法
+
+## 1. 在一个置于冰上的微量离心管中，加入下列试剂:
+
+| 末端转移酶反应缓冲液 | 4μL |
+| --- | --- |
+| $CoCl_2$(25mmol/L) | 4μL |
+| DNA 寡核苷酸(100pmol 3'端) | $x\mu L^a$ |
+| 生物素-、DIG-或荧光素-dUTP(1mmol/L) | 1μL |
+| dATP、dTTP、dGTP 或 dCTP(10mmol/L) | 1μL |
+| 末端转移酶 | 1μL |
+| $H_2O$ | 加至终体积 20μL |
+
+a. 根据 DNA 寡核苷酸的浓度决定适宜的体积。
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+845
+
+轻柔而持续敲击管壁以混匀试剂。瞬时离心以收集管底部的溶液。
+
+2.  $37^{\circ}$ C下温育反应15min。
+3. 70℃加热 10min 或加入 2μL 0.2mol/L EDTA（pH 8.0）以终止反应。
+
+![](../../raw/pages_0353-0368/images/page_355_image_6.jpg)
+
+## 配方
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+$5 \times$ 末端转移反应缓冲液
+
+| 试剂 | 体积(10mL) | 终浓度 |
+| --- | --- | --- |
+| 二甲基胂酸钾 | 1.76g | 1mol/L |
+| Tris-HCl(1mol/L,pH6.6) | 1.25 | 0.125mol/L |
+| BSA(10mg/mL) | 12.5mL | 1.25mg/mL |
+
+## 参考文献
+
+Deng G, Wu R. 1983. Terminal transferase: Use of the tailing of DNA and for in vitro mutagenesis. Methods Enzymol 100: 96–116.
+
+Igloi GL, Schiefermayr E. 1993. Enzymatic addition of fluorescein- or biotin-riboUTP to oligonucleotides results in primers suitable for DNA sequencing and PCR. BioTechniques 15: 486–488, 490–482, 494–487.
+
+Kumar A, Tchen P, Roullet F, Cohen J. 1988. Nonradioactive labeling of synthetic oligonucleotide probes with terminal deoxynucleotidyl transferase. Anal Biochem 169: 376–382.
+
+Yousaf SI, Carroll AR, Clarke BE. 1984. A new and improved method for 3'-end labelling DNA using  $[\alpha-^{32}P]$ ddATP. Gene 27: 309–313.
+
+## 方案 14 用大肠杆菌 DNA 聚合酶 I 的 Klenow 片段标记合成的寡核苷酸
+
+用大肠杆菌 DNA 聚合酶 I 的 Klenow 片段合成与寡核苷酸互补的一条 DNA 链，可获得 5' 和 3' 端标记的高比活度的探针（Studencki and Wallace 1984; Ullrich et al. 1984b；综述见 Wetmur 1991）。先用一条短引物与待标记放射性探针序列互补的寡核苷酸杂交，再以模板指导的方式，用 Klenow 片段催化  $[\alpha-^{32}P]dNTP$  掺入使引物延伸。反应完成后，模板与产物通过变性及随后的变性聚丙烯酰胺凝胶电泳分离（图 13-4）。用这种方法制备寡核苷酸探针，可以使每个寡核苷酸分子含有数个放射性原子，获得比活度高达  $2 \times 10^{10}$  cpm/ $\mu$ g 的探针。由于反应的终产物为双链 DNA，需解开双链，分离标记的产物（见下述），因此，本方法一般不用于制备非放射性标记的寡核苷酸。为获得最佳结果，可考虑信息栏“优化用 Klenow 片段进行的寡核苷酸标记”中的要点。
+
+---
+
+846
+
+分子克隆实验指南（原书第四版）
+
+![](../../raw/pages_0353-0368/images/page_356_image_2.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["5'单链DNA模板"] --> B["合成的寡核苷酸引物"]
+  B --> C["大肠杆菌DNA聚合酶I\nKlenow片段"]
+  C --> D["[α-32P]dNTP\n3种未标记的dNTP"]
+  D --> E["变性"]
+  E --> F["通过变性聚丙烯酰胺凝胶制\n备电泳从放射性标记产物中分离模板DNA"]
+  F --> G["未标记的模板"]
+  G --> H["放射性标记的产物"]
+  H --> I["放射性标记的分子质量标准"]
+```
+</details>
+
+图13-4 用大肠杆菌DNA聚合酶I的Klenow片段标记合成的寡核苷酸。
+
+## 优化用 Klenow 片段进行的寡核苷酸标记
+
+当设计此类标记实验时，请考虑下列几点:
+
+- 反应中 $[\alpha -^{32}\mathrm{P}]\mathrm{dNTP}$ 的比活度。所有 $\alpha$ 位磷酸根全部被 $^{32}\mathrm{P}$ 取代的dNTP比活度为约9000Ci/mmol，如低于此比活度，则为 $^{32}\mathrm{P}$ 标记及未标记的寡核苷酸的混合物。假如参与合成反应的一种dNTP比活度为3000Ci/mmol，而有3个位置供核苷酸掺入终产物，那么每一个探针分子中平均只含有1个 $^{32}\mathrm{P}$ 原子（探针的比活度将与T4噬菌体多核苷酸激酶催化标记的探针大致相当）。如果已知所需探针的序列和可用的反应前体的比活度，就有可能预测在1种、2种、3种或全部4种 $[\alpha -^{32}\mathrm{P}]\mathrm{dNTP}$ 参与反应时探针的比活度。
+- 反应中 dNTP 的浓度。要使核苷酸多聚化反应能有效地进行，反应的全过程中每种 dNTP 的浓度始终维持在 1μmol/L 或更高（1μmol/L=约 0.66ng/μL）。假定反应中所有的单链序列都可以作为模板，计算掺入到探针中每一种 dNTP 的量。反应中每一种 dNTP 的总量应是掺入探针量加 0.66ng/μL 之和。
+- 引物必须足够长，具有与模板结合的特异性，并能在适当的位点启动合成。用于此目的的引物长度一般为7\~9个核苷酸，其序列与模板寡核苷酸3'端或近3'端序列互补。由于难以预测如此短的杂交体的稳定性，故在进行大规模标记反应之前，应确定能获得全长探针最高产率的模板与引物的比率。
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+847
+
+\- 终产物为双链 DNA 片段，其长度等于或稍短于模板（取决于与引物互补序列的位置）。为了更有效地发挥探针的作用，必须将未标记的模板链与互补的放射性标记产物分开。否则，由于两条互补的链复性，可使探针与靶序列杂交的效率降低。对于长度小于 30 个核苷酸的寡核苷酸，用 20% 聚丙烯酰胺凝胶电泳是最有效的分离互补链的方法。如果两条互补链长度不等，分离的效果会更好。因此，应尽可能将引物设计在模板近末端的互补位置。如果引物不能杂交于模板 3' 端 2\~3 个核苷酸的位置上，放射性标记的产物将短于未标记的模板，因而更有利于电泳分离。即使二者长度完全相等，通过电泳仍有可能使模板与产物链在某种程度上分离，因为单链 DNA 在凝胶中移动的速率不仅取决于其长度，而且还取决于其碱基组成与序列。
+
+在合成探针前,用非放射性的 ATP 将两条链之一(模板或引物)磷酸化(见方案 12),或通过保留连在引物 5'端的二甲氧三苯甲基（Studencki and Wallace 1984），可进一步提高分离度。由于不可能预料究竟何种方法对于某一特定的寡核苷酸最有效，所以通常有必要进行一系列预实验，以确定在各种条件下产物与模板的分离效率。
+
+![](../../raw/pages_0353-0368/images/page_357_image_4.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+$\left[\alpha-^{32}\mathrm{P}\right]\mathrm{dNTP}$
+
+为保持反应底物的高浓度，应在尽可能小的体积中进行链延伸反应。因此，最好使用溶于乙醇-水中的放射性标记 dNTP，而不是溶于缓冲的水溶液中。适量体积的醇溶性  $[\alpha-^{32}P]dNTP$  可在用于进行反应的微量离心管中混合和蒸发干燥。为最大限度地减少前体和探针的辐射分解，尽可能在  $[^{32}P]dNTP$  到达实验室的当天制备放射性标记的探针。
+
+变性聚丙烯酰胺凝胶
+
+聚丙烯酰胺在凝胶溶液中的比例及电泳条件，依反应混合液中寡核苷酸的大小不同而异，表 13-4 列出一些有用的提示。
+
+表 13-4 不同寡核苷酸所需聚丙烯酰胺的浓度
+
+| 寡核苷酸的长度 | 聚丙烯酰胺的浓度/% |
+| --- | --- |
+| 12~15个核苷酸 | 20 |
+| 25~35个核苷酸 | 15 |
+| 35~45个核苷酸 | 12 |
+| 45~70个核苷酸 | 10 |
+
+聚丙烯酰胺凝胶通常用  $1 \times$  TBE（89mmol/L TBE，2mmol/L EDTA）灌制，电泳亦在此缓冲液中进行。聚丙烯酰胺凝胶灌制与操作详见第 1 章，方案 3。
+
+甲酰胺上样缓冲液&lt;A&gt;
+
+---
+
+848
+
+分子克隆实验指南（原书第四版）
+
+10×Klenow 缓冲液&lt;A&gt;
+
+大肠杆菌 DNA 聚合酶 I Klenow 片段
+
+寡核苷酸引物
+
+寡核苷酸引物应当通过 PAGE 纯化。为确保有效地放射性标记，反应混合液中的引物浓度应 3～10 倍摩尔过量于模板 DNA。
+
+寡核苷酸模板
+
+应当通过PAGE纯化模板寡核苷酸。寡核苷酸模板的序列应与所需放射性标记探针的序列互补。
+
+## 设备
+
+磷荧光粘贴标签（有商品供应）或热放射性墨水标记的粘贴标签&lt;A&gt;
+
+水浴或加热块（80℃）
+
+![](../../raw/pages_0353-0368/images/page_358_image_11.jpg)
+
+## 方法
+
+1. 计算出能达到比活度要求及足以使全部模板链完全合成所需的 $[\alpha -^{32}\mathrm{P}]\mathrm{dNTP}$ 量，将其加入微量离心管中（见本方案的概述）。
+
+在反应的任一阶段，dNTP 的浓度都不能低于  $1 \mu mol/L$ 。为保持反应底物的高浓度，应在尽可能小的体积中进行延伸反应。
+
+2. 在离心管中加入适量的寡核苷酸引物和模板寡核苷酸。
+
+为确保有效的放射性标记，反应液中引物的摩尔浓度应3\~10倍过量于模板DNA。
+
+3. 加入 0.1 倍体积的  $10 \times$  Klenow 缓冲液，充分混匀。
+
+4. 按每  $5 \mu L$  反应体积 2～4U 加入 Klenow 片段，充分混匀， $14^{\circ} C$  下反应 2～3h。
+
+如有必要，反应过程中可取出小量（0.1μL）样品，测定可被10% TCA沉淀的放射性比例来监测反应的进程（见附录2）。
+
+5. 用等体积甲酰胺上样缓冲液稀释反应混合液，于 $80^{\circ}\mathrm{C}$ 加热 $3\mathrm{min}$，然后将全部样品加至变性聚丙烯酰胺凝胶。
+
+6. 电泳结束后，卸下电泳装置，将聚丙烯酰胺凝胶黏附于一侧的玻璃上（详细操作见第6章，方案11）。
+
+▲未掺入的 $[\alpha-^{32}P]dNTP$ 可能迁移到下层电泳槽中，使其带有放射性。此时应将凝胶、玻璃板、缓冲液及电泳装置均作为放射源处理。应在树脂玻璃防护屏后谨慎处理。
+
+7. 将凝胶及其背面的玻璃板一起包裹于塑料薄膜，记下指示染料的位置，用手提式小型监测仪检测凝胶上含寡核苷酸区域的放射性活度。在包裹样品的塑料膜的边缘粘贴一组用热放射性墨水或磷光圆点标签标记的粘贴标签，并用胶带覆盖放射性标签，以防放射性墨水污染胶片夹或增感屏。
+
+8. 将凝胶在放射性自显影胶片上曝光（见第 2 章，方案 5）。
+
+通常掺入探针的放射性活度甚高，获得胶片图像的时间仅需数秒。
+
+9. 胶片显影后，将放射性墨水的影像和放射性标签重叠，以定位探针在凝胶上的位置。切下条带，按第2章，方案11所述方法回收放射性标记的寡核苷酸。
+
+![](../../raw/pages_0353-0368/images/page_358_image_27.jpg)
+
+## 讨论
+
+通过对这一放射性标记方法的改良，可以用两条3'端序列互补的寡核苷酸合成更长的探针（Ullrich et al. 1984a）。首先将两条寡核苷酸通过它们互补的3'端复性，然后在Klenow片段的催化下延伸。反应中两条链均可延伸（即被标记），所获得的双螺旋体长于最初的任一寡核苷酸。虽然这种方法需要两条寡核苷酸，但其优点在于产物的两条链均可被放射
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+849
+
+性标记。因此，放射性标记探针的分离和纯化不必非用聚丙烯酰胺凝胶电泳不可，而可以按方案1所述，选用 Sephadex G-50 或 Bio-Gel P-60 层析纯化放射性标记的探针。
+
+## 参考文献
+
+Studencki AB, Wallace RB. 1984. Allele-specific hybridization using oligonucleotide probes of very high specific activity: Discrimination of the human β A- and β S-globin genes. DNA 3: 7–15.
+
+Ullrich A, Berman CH, Dull TJ, Gray A, Lee JM. 1984a. Isolation of the human insulin-like growth factor I gene using a single synthetic DNA probe. EMBO J 3: 361–364.
+
+Ullrich A, Gray A, Wood WI, Hayflick J, Seeburg PH. 1984b. Isolation of a cDNA clone coding for the  $\alpha$ -subunit of mouse nerve growth factor using a high-stringency selection procedure. DNA 3: 387–392.
+
+Wetmur JG. 1991. DNA probes: Applications of the principles of nucleic acid hybridization. Crit Rev Biochem Mol Biol 26: 227–259.
+
+## 方案 15 用乙醇沉淀法纯化标记的寡核苷酸
+
+如果标记的寡核苷酸只是用作杂交探针的话，一般不必完全除去未掺入的标记物。然而，为了使本底降至最低，应当将未掺入的大部分标记物与标记的寡核苷酸分离。如果寡核苷酸长度超过18个核苷酸，则绝大部分未掺入的前体物质可通过乙醇分级沉淀除去。如需将未掺入的放射性标记物完全除去（如放射性标记的寡核苷酸用于引物延伸反应时），则必须用层析法（方案17和方案18）或凝胶电泳法（主要在第2章、方案3中介绍）纯化。
+
+![](../../raw/pages_0353-0368/images/page_359_image_10.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+乙酸铵（10mol/L）&lt;A&gt;
+
+乙醇
+
+放射性标记的寡核苷酸
+
+纯化的原始材料是方案 12（步骤 3 或步骤 5）或方案 13 的反应混合物，酶已被加热灭活或化学灭活。
+
+TE (pH 7.6) &lt;A&gt;
+
+![](../../raw/pages_0353-0368/images/page_359_image_20.jpg)
+
+## 方法
+
+1. 在含有放射性标记的寡核苷酸的管中加入 $40\mu \mathrm{L}$ 水，充分混匀，再加入 $240\mu \mathrm{L}5\mathrm{mol / L}$ 的乙酸铵溶液。再次混匀后，加入用冰预冷的乙醇 $750\mu \mathrm{L}$，混匀，于 $0^{\circ}\mathrm{C}$ 放置 $30\mathrm{min}$。
+
+用乙酸铵代替乙酸钠以确保更有效地除去未掺入的核苷酸。核糖核苷酸与脱氧核糖核苷酸在乙醇-乙酸铵溶液中的溶解度大于乙醇-乙酸钠溶液。未掺入的核糖核苷酸在沉淀反应中被保留在乙醇相。
+
+2. 在 $4^{\circ} \mathrm{C}$ 下以最大转速离心 $20 \mathrm{~min}$, 回收放射性标记的寡核苷酸。
+
+3. 用装有一次性吸头的微量移液器小心吸去管中的所有上清。
+
+▲在标记放射性探针时，上清中含有大部分未掺入的放射性核苷酸。因此，应小心、谨慎处理未掺入的放射性物质、移液器吸头及微量离心管。
+
+4. 在管中加入 $500\mu \mathrm{L}80\%$ 的乙醇，弹动管壁以洗涤核酸沉淀，再次在 $4^{\circ}\mathrm{C}$ 下以最大转
+
+---
+
+850
+
+分子克隆实验指南（原书第四版）
+
+速离心 5min。
+
+5. 用装有一次性吸头的微量移液器小心吸去管中的上清（此时上清中仍含有相当剂量的放射性）。将离心管放置于实验台上树脂玻璃防护屏后（如果是放射性标记的寡核苷酸），打开管盖，让剩余的乙醇挥发干净。
+
+6. 用 $100\mu \mathrm{L}$ TE（pH7.6）溶解放射性标记的寡核苷酸。
+
+放射性标记的寡核苷酸在 $-20^{\circ}C$ 下可以保存数天。但是，保存期延长时， $^{32}P$ 的衰变引起的放射化学损伤会导致寡核苷酸与靶序列杂交的能力下降。非放射性标记的寡核苷酸可保存更久。
+
+## 方案 16 用空间排阻层析法纯化标记的寡核苷酸
+
+标记的寡核苷酸用于酶促反应如引物延伸反应时，需要完全除去未掺入的标记物。此时，层析法（本方案和方案17）或凝胶电泳法（主要在第2章，方案3中介绍）则优于乙醇或十六烷基溴化吡啶（cetylpyridinium bromide, CPB）差异沉淀寡核苷酸的方法。本方案介绍的是利用空间排阻层析时寡核苷酸与单核苷酸移动速率差异，分离标记的寡核苷酸与未掺入的标记物的方法。几家公司（如Biosearch Technologies公司、Dionex公司、Roche Molecular Biochemicals公司）出售即用型离心柱，提供了一种快速、简便的方法，可从标记反应中去除未掺入的核苷酸。
+
+虽然空间排阻层析法能用于纯化放射性标记或非放射性标记的寡核苷酸，但本方案以纯化放射性标记的寡核苷酸为主，用小型探测器可检测柱中的流出液，通过液体闪烁计数仪可检测未掺入的核苷酸的分离情况。
+
+![](../../raw/pages_0353-0368/images/page_360_image_9.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+氯仿（可选；见步骤7）
+
+EDTA (0.5 mol/L, pH 8.0) &lt;A&gt;
+
+乙醇
+
+酚:氯仿（可选；见步骤7）
+
+放射性标记的寡核苷酸
+
+纯化的原始材料是方案12（步骤3或步骤5）或方案13的反应混合物，酶已被加热灭活或化学灭活。
+
+乙酸钠（3mol/L, pH5.2）&lt;A&gt;（可选；见步骤7）
+
+TE (pH7.6) &lt;A&gt;
+
+Tris-Cl（1mol/L, pH8.0）&lt;A&gt;（可选；见步骤7）
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+851
+
+Tris-SDS 层析缓冲液
+
+Tris-Cl (pH 8.0) 10 mmol/L
+
+SDS (0.1%, m/V)
+
+## 设备
+
+凝胶过滤树脂（Bio-Gel P-60 [精细级] 或 Sephadex G-15）
+
+Bio-Gel P-60(精细级)可以从 Bio-Rad 公司购买, 大多数化学试剂供应商可提供 Sephadex G-15(如 Sigma-Aldrich 公司)。Bio-Gel P-60 是预胀后产品, 而 Sephadex G-15 则必须在使用前膨胀及平衡。
+
+玻璃棉
+
+用铝箔包裹少量的玻璃棉，按包裹物的灭菌程序在 15psi（1.05 kg/cm²）下高压灭菌 15min。
+
+微量离心管（1.5mL）放于管架或分部收集器
+
+用于收集从层析柱中洗脱的放射性标记的寡核苷酸。
+
+巴斯德吸管
+
+![](../../raw/pages_0353-0368/images/page_361_image_13.jpg)
+
+## 方法
+
+1. 在含有放射性标记的寡核苷酸的管中加入 $30\mu \mathrm{L}20\mathrm{mmol / L}$ EDTA（pH8.0）溶液。在准备空间阻排层析树脂时，将样品保存于 $0^{\circ}\mathrm{C}$ 。
+
+为方便起见，本方案以 Bio-Gel P-60 树脂为例，亦可同样有效地应用于 Sephadex G-15。
+
+2. 用消毒巴斯德吸管制备 Bio-Gel P-60 层析柱。
+
+i. 将厂家提供的 Bio-Gel P-60 树脂用 10 倍体积的 Tris-SDS 层析缓冲液平衡。
+如果有离心干燥机（Savant SpeedVac 或类似设备），可以用 0.1% 的碳酸氢铵溶液制备 Bio-Gel P-60 层析柱及操作。收集的含放射性标记的寡核苷酸组分（见步骤 6）可以用离心蒸发器干燥，而不须用有机溶剂抽提和乙醇沉淀。
+ii. 将一团灭菌后的玻璃棉塞入消毒的巴斯德吸管底部。
+玻璃毛细管亦可作为很好的填塞工具。
+iii. 准备好层析管后，倒入少量的 Tris-SDS 层析缓冲液，检查缓冲液流速（以数秒一滴为宜）。
+iv. 将 Bio-Gel P-60 树脂浆倒入层析管。树脂随重力下沉，缓冲液流出，柱身迅速形成。再加入树脂浆，使玻璃棉塞至吸管顶端附近的溢痕处完全被充填。
+v. 用 3mL Tris-SDS 层析缓冲液冲洗柱子。
+
+▲勿让层析柱流干。必要时用封口膜封住管底。
+
+3. 用吸管吸去树脂上多余的缓冲液，然后迅速将放射性标记的寡核苷酸加到树脂上（体积为 $100\mu \mathrm{L}$ 或稍小）。
+
+4. 样品进入树脂后，立即加入 $100\mu \mathrm{L}$ 缓冲液，待缓冲液进入树脂后，即刻连续补充新的缓冲液，不要让层析柱流干。
+
+5. 用手提式微型探测仪检测放射性标记寡核苷酸的流动。待流出液开始出现放射性时，用微量离心管收集两滴液体。
+
+▲磷酸化反应常常使用大于  $100 \mu Ci$  放射性标记的 ATP，因此，洗脱液中放射性剂量相当可观，应小心、谨慎处理未掺入的放射性物质、移液器吸头及微量离心管。
+
+6. 当放射性液体接近全部流出时，用液体闪烁计数仪测量各组分的契仑科夫计数。如果快速移动的洗脱峰（放射性标记的寡核苷酸）与移动较慢的未掺入的核苷酸能明显分离，可以合并所有的含放射性标记寡核苷酸的组分。如果各峰分离不明显，则取每一组分各约 $0.5 \mu \mathrm{L}$，通过薄层层析进行分析，再合并不含未掺入的放射性核苷酸的放射性标记寡核苷酸组分。
+
+---
+
+852
+
+分子克隆实验指南（原书第四版）
+
+7. 如放射性标记的寡核苷酸用于酶促反应，应进行下列步骤；否则，进行步骤8。
+
+i. 用等体积酚:氯仿抽提合并的标记寡核苷酸组分。
+ii. 用  $50 \mu L$  10mmol/L Tris-Cl（pH 8.0）反向抽提有机相，合并两次的水相。
+iii. 用等体积氯仿抽提合并的水相。
+
+iv. 加入 0.1 倍体积 3mol/L 乙酸钠（pH 5.2），充分混旋，再加入 3 倍体积的乙醇，0℃下放置 30min。在微量离心机中 4℃下以最大转速离心 20min。用装有一次性吸头的微量移液器吸去管中的乙醇（放射性含量应当很低）。
+
+8. 在离心管中加入 $500 \mu \mathrm{L} 80 \%$ 的乙醇, 稍加振荡, 再以最大转速离心 $5 \mathrm{~min}$ 。
+
+9. 用装有一次性吸头的微量移液器吸去管中的乙醇。将离心管打开管口，放置在实验台树脂玻璃防护屏后，直到剩余的乙醇挥发干净。
+
+10. 用  $20 \mu L$  TE（pH 7.6）溶解沉淀的寡核苷酸，于  $-20^{\circ}C$  保存。
+
+## 方案 17 用 Sep-Pak C$_{18}$ 柱色谱法 纯化标记的寡核苷酸
+
+本方案介绍的是利用寡核苷酸对于硅胶反相亲和的特性，将放射性标记的寡核苷酸与未掺入的放射性标记物分离的方法。该方法是由 Lo 等（1984）、Sanchez-Pescador 和 Urdea（1984）及 Zoller 和 Smith（1984）介绍的方法改良而成的。本方案只可用于纯化含 5' 端磷酸基团的放射性标记的或非标记的寡核苷酸。即用型 Sep-Pak C$_{18}$ 层析柱由厂家提供（如 Science Kit, Millipore 公司的 Waters 部门）。
+
+![](../../raw/pages_0353-0368/images/page_362_image_13.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+乙腈（5%、30%和100%）
+
+每个 Sep-Pak 柱用 10mL 高效液相（HPLC）级乙腈（100%）。使用前用水稀释乙腈。
+
+碳酸氢铵（25mmol/L, pH 8.0）
+
+含 5% (V/V) 乙腈的碳酸氢铵 (25mmol/L, pH 8.0)
+
+将 5mL 乙腈与 95mL 25mmol/L 碳酸氢铵混合。
+
+放射性标记的寡核苷酸
+
+纯化的原始材料是方案 12（步骤 3 或步骤 5）或方案 13 的反应混合物，酶已被加热灭活或化学灭活。
+
+TE (pH 7.6) &lt;A&gt;
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+853
+
+## 设备
+
+离心干燥机（Savant SpeedVac 或同类设备）
+
+微量离心管（1.5mL）放于管架或分部收集器
+
+用于收集层析柱中的放射性标记寡核苷酸洗脱液。
+
+Sep-Pak 经典层析柱，短柱身
+
+每一 Sep-Pak 经典层析柱（可从 Millipore 公司的 Waters 部门购买）含有 360mg/柱疏水反相层析树脂（ $C_{18}$ ）。纯化是利用寡核苷酸在溶剂极性较大时吸附于树脂，而在溶剂（如甲醇与水混合液）极性降低时脱离的原理。每一次磷酸化反应需要一个分离柱。
+
+注射器（10mL 聚丙烯）
+
+![](../../raw/pages_0353-0368/images/page_363_image_9.jpg)
+
+## 方法
+
+1. 按下列方法准备 Sep-Pak C18 反相层析柱:
+
+i. 将装有 10mL 乙腈的聚丙烯注射器连接于 Sep-Pak C $_{18}$ 柱。
+
+ii. 缓慢推动注射器，使乙腈流过 Sep-Pak 柱。
+
+iii. 先将注射器与 Sep-Pak 柱分离，再将注射器的柱芯抽出注射器针筒，这样可以防止空气抽入层析柱内。将注射器针筒再连于层析柱。
+
+iv. 用 $10 \mathrm{~mL}$ 无菌水洗去有机溶剂, 共 2 次, 每次冲洗后均重复步骤 1 (iii)。
+
+2. 用无菌水将放射性标记的寡核苷酸稀释至 $1.5 \mathrm{~mL}$，并将全部样品用注射器推入层析柱。
+
+3. 用下列 4 种溶液冲洗层析柱，每次冲洗后重复步骤 1（iii）。
+
+| 碳酸氢铵(25mmol/L, pH 8.0) | 10mL |
+| --- | --- |
+| 碳酸氢铵/5%乙腈(25mmol/L, pH 8.0) | 10mL |
+| 乙腈(5%) | 10mL |
+| 乙腈(5%) | 10mL |
+
+4. 用 3 份 $1 \mathrm{~mL} 30 \%$ 乙腈洗脱放射性标记的寡核苷酸, 用 $1.5 \mathrm{~mL}$ 微量离心管分别收集每个组分, 每次洗脱后重复步骤 1 (iii)。
+
+▲磷酸化反应常常使用大于  $100 \mu Ci$  放射性标记的 ATP，因此，洗脱液中的放射性剂量相当可观，应小心、谨慎处理未掺入的放射性标记物、移液器吸头及微量离心管。
+
+5. 用离心干燥机（Savant SpeedVac 或同类设备）干燥含寡核苷酸的洗脱液。
+
+6. 将放射性标记的寡核苷酸溶于小体积（10μL）TE（pH 7.6）。
+
+## 参考文献
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">Lo K-M, Jones SS, Hackett NR, Khorana HG. 1984. Specific amino acid substitutions in bacterioopsin: Replacement of a restriction fragment in the structural gene by synthetic DNA fragments containing altered codons. Proc Natl Acad Sci 81: 2285–2289.</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">Sanchez-Pescador R, Urdea MS. 1984. Use of unpurified synthetic deoxynucleotide primers for rapid dideoxynucleotide chain termination</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">sequencing. DNA 3: 339–343.<br>Zoller MJ, Smith M. 1984. Oligonucleotide-directed mutagenesis: A simple method using two oligonucleotide primers and a single-stranded DNA template. DNA 3: 479–488.</span></small>
+
+---
+
+854
+
+分子克隆实验指南（原书第四版）
+
+## 方案 18 寡核苷酸探针在水溶液中杂交: 在含季铵盐缓冲液中洗涤
+
+Jacobs 等（1988）介绍了在含季铵盐缓冲液中杂交的方法与原理。下述为该法的简单变通方案。杂交首先在低于解链温度的常规溶液中进行，随后在含有季铵盐缓冲液的严格条件下洗涤。TMACl 用于长度为 14～50 个核苷酸的探针，而 TEACl 则用于长度为 50～200 个核苷酸的探针。
+
+图 13-5 中的曲线用于 TMAC1 缓冲液中给定长度的寡核苷酸探针洗涤温度的估算。当使用 TEAC1 缓冲液时，可用图中 TMAC1 曲线的计算值减去  $33^{\circ}$ C。
+
+![](../../raw/pages_0353-0368/images/page_364_chart_5.jpg)
+
+<details>
+<summary>line</summary>
+
+| 长度/bp | \(Tm/{}^{\circ}C\) |
+| --- | --- |
+| ~12 | ~44 |
+| ~14 | ~46 |
+| ~15 | ~49 |
+| ~18 | ~54 |
+| ~20 | ~58 |
+| ~27 | ~71 |
+| ~30 | ~75 |
+| ~31 | ~77 |
+| ~36 | ~78 |
+| ~46 | ~83 |
+| ~75 | ~88 |
+| ~87 | ~89 |
+| ~100 | ~89 |
+</details>
+
+图13-5 含 $3.0\mathrm{mol / L}$ TMACl的缓冲液中 $T_{\mathrm{m}}$ 值的估算（示图来自Wood1985，经许可使用）。
+
+![](../../raw/pages_0353-0368/images/page_364_image_7.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+固定于硝酸纤维素滤膜、尼龙滤膜或其他滤膜的靶核酸（例如，Southern 或 Northern 印迹、裂解的细菌集落或噬菌体噬菌斑的滤膜）
+
+寡核苷酸杂交溶液&lt;R&gt;
+
+寡核苷酸预杂交溶液&lt;R&gt;
+
+放射性标记的寡核苷酸探针
+
+按方案 12 或方案 14 制备探针。我们推荐使用磷酸化的探针，杂交前按方案 16 所述用 CPB 沉淀法纯化探针。这种纯化方法可以除去未掺入的  $[^{32}P]$ ATP，从而减少放射性自显影时易与阳性杂交信号混淆的强放射性斑点（胡椒粉斑点）的数量。
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+855
+
+$6 \times$ SSC 或 SSPE&lt;A&gt;
+
+在进行本方案步骤 4 和步骤 5 之前，将此溶液放置于冰上。
+
+## TEAC1 洗涤液&lt;R&gt;
+
+该洗涤液用于长度为 50～200 个核苷酸的探针。使用前须预温至所需温度（见步骤 6 和步骤 7）。
+
+TMACl（5mol/L）或 TEACl（3mol/L）
+
+配制 5mol/L TMACl 或 3mol/L TEACl 水溶液。TMACl 用于长度为 14～50 个核苷酸的探针，而 TEACl 则用于长度为 50～200 个核苷酸的探针。这两种试剂均可从 Sigma-Aldrich 公司购买。在 TMACl 或 TEACl 溶液中，加入终浓度约为 10% 的活性炭，搅拌 20～30min。活性炭沉降下来后，用 Whatman 1 号滤纸过滤季铵盐溶液，并用硝酸纤维素滤膜（0.45μm 孔径）过滤除菌。测量溶液的折光指数，用下列公式精确计算季铵盐溶液浓度: $C = (n - 1.331)/0.018$ ，式中，C 是季铵盐溶液摩尔浓度；n 是折光指数。过滤的溶液可在室温下保存于棕色瓶中。
+
+TMAC1 洗涤液&lt;R&gt;
+
+该洗涤液用于长度为 14～50 个核苷酸探针。使用前须预温至所需温度（见步骤 6 和步骤 7）。
+
+## 设备
+
+杂交装置（见步骤1）
+
+振荡培养器、水浴或杂交装置 [预温至  $37^{\circ}$ C（步骤 1 和步骤 3），洗涤时调至适当的洗涤温度（步骤 7）]
+
+![](../../raw/pages_0353-0368/images/page_365_image_13.jpg)
+
+## 方法
+
+1. 滤膜或膜在寡核苷酸预杂交液中  $37^{\circ}$ C 下预杂交 4～16h。
+
+圆形滤膜的预杂交、杂交与洗涤最好在 Seal-A-Meal 袋（Rival）或带有密封盖的塑料盒中进行。Southern 和 Northern 杂交膜可在有密封盖的玻璃管中进行。
+
+2. 弃预杂交液，置换成含 180pmol/L 的放射性标记的寡核苷酸探针的杂交液。
+
+当数种寡核苷酸同时杂交时，每一种探针的浓度均应在 180pmol/L，放射性标记探针的比活度应在  $5 \times 10^{5} \sim 1.5 \times 10^{6}$  cpm/pmol。
+
+3. 滤膜在  $37^{\circ}$ C 下温育反应 12～16h。
+
+4. 将放射性的杂交液弃至适当的容器内，在 $4^{\circ}\mathrm{C}$ 下用预冷的 $6\times \mathrm{SSC}$ 或 $6\times \mathrm{SSPE}$ 洗涤滤膜3次，以洗去大部分硫酸右旋糖酐。
+
+5. 在  $4^{\circ}$ C 下用预冷的  $6 \times$  SSC 或  $6 \times$  SSPE 洗涤滤膜 2 次，共 30min。
+
+6. 在  $37^{\circ}$ C 下用 TMAC1 或 TEAC1 液洗涤滤膜 2 次。
+
+此步骤的目的是用季铵盐溶液置换 SSC 或 SSPE，只有认真操作方可见 TEACl 或 TMACl 的优越性。
+
+7. 在低于图 13-5 指示的 $T_m$ 值 $2 \sim 4^\circ C$ 的温度下，用 TMACl 或 TEACl 洗涤液洗涤滤膜 2 次，每次 20min。
+
+注意: 杂交体在含 TEACl 的缓冲液中的  $T_{m}$  值比在含 TMACl 的缓冲液中低  $33^{\circ}C$  。确保缓冲液预温至所需温度，且温度波动小于  $\pm1^{\circ}C$  。
+
+8. 从洗涤液中取出滤膜，室温下吸干液体，按第2章，方案7所述进行放射自显影。
+
+---
+
+856
+
+分子克隆实验指南（原书第四版）
+
+![](../../raw/pages_0353-0368/images/page_366_image_2.jpg)
+
+## 配方
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+寡核苷酸杂交液
+
+<table><tr><td>试剂</td><td>体积(1L)</td><td>终浓度</td></tr><tr><td>20×SSC或SSPE</td><td>300mL</td><td>6×</td></tr><tr><td>磷酸钠(0.1mol/L,pH 6.8)</td><td>500mL</td><td>0.05mol/L</td></tr><tr><td>EDTA (0.5mol/L,pH 8.0)</td><td>2mL</td><td>1mmol/L</td></tr><tr><td>50×Denhardt&#x27;s溶液&lt;A&gt;</td><td>100mL</td><td>5×</td></tr><tr><td>变性、断裂的鲑精DNA(10mg/mL)</td><td>10mL</td><td>100μg/mL</td></tr><tr><td>右旋糖酐</td><td>100g</td><td>100mg/mL</td></tr><tr><td colspan="3">变性、断裂的鲑精DNA可从Pharmacia公司购买或按附录1配制。</td></tr></table>
+
+寡核苷酸预杂交液
+
+| 试剂 | 体积(1L) | 终浓度 |
+| --- | --- | --- |
+| 20×SSC或SSPE | 300mL | 6× |
+| 磷酸钠(0.1mol/L,pH 6.8) | 500mL | 0.05mol/L |
+| EDTA(0.5mol/L,pH 8.0) | 2mL | 1mmol/L |
+| 50×Denhardt's溶液&lt;A> | 100mL | 5× |
+| 变性、断裂的鲑精DNA(10mg/mL) | 10mL | 100μg/mL |
+
+TEACI 洗涤液
+
+| 试剂 | 体积(1L) | 终浓度 |
+| --- | --- | --- |
+| TEACl(5mol/L) | 480mL | 2.4mol/L |
+| Tris-Cl(1mol/L, pH 8.0) | 50mL | 50mmol/L |
+| EDTA (0.5mol/L, pH 7.6) | 400μL | 0.2mmol/L |
+| SDS | 1g | 1mg/mL |
+
+TMACI 洗涤液
+
+| 试剂 | 体积(1L) | 终浓度 |
+| --- | --- | --- |
+| TMACl(6mol/L) | 500mL | 3mol/L |
+| Tris-Cl(1mol/L, pH 8.0) | 50mL | 50mmol/L |
+| EDTA(0.5mol/L, pH 7.6) | 400μL | 0.2mmol/L |
+| SDS | 1g | 1mg/mL |
+
+## 参考文献
+
+Jacobs KA, Rudersdorf R, Neill SD, Dougherty JP, Brown EL, Fritsch EF. 1988. The thermal stability of oligonucleotide duplexes is sequence independent in tetraalkylammonium salt solutions: Application to identifying recombinant DNA clones. Nucleic Acids Res 16: 4637–4650.
+
+Wood WI, Gitschier J, Lasky LA, Lawn RM. 1985. Base composition-independent hybridization in tetramethylammonium chloride: A method for oligonucleotide screening of highly complex gene libraries. Proc Natl Acad Sci 82: 1585–1588.
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+857
+
+## 信息栏
+
+![](../../raw/pages_0353-0368/images/page_367_image_3.jpg)
+
+## dNTP 储备溶液的制备
+
+pH 已校正的 dNTP 溶液可从许多厂家购买, 也可用钠盐粉配制。根据研究者的需要, 通常储备溶液中每一种 dNTP 的浓度为 10mmol/L 或 20mmol/L。储备溶液分装成小份, 储存于 -20℃, 使用时可稀释成每种 dNTP 浓度各为 5 mmol/L 的溶液。
+
+用微量天平称取所需量的 dNTP，放入无菌的微量离心管中。当制备不同的 dNTP 溶液时，可使用一次性的小铲或每次称量后用乙醇彻底清洁小铲。下表显示配制 1mL 20mmol/L dNTP 储备溶液时需要的固体无水脱氧核苷酸的量。
+
+| 脱氧核苷酸 | F.W. | 制备 1mL 20mmol/L 溶液所需量/mg |
+| --- | --- | --- |
+| dATP | 491.2 | 9.82 |
+| dCTP | 467.2 | 9.34 |
+| dTTP | 482.2 | 9.64 |
+| dGTP | 507.2 | 10.14 |
+
+把脱氧寡核苷酸溶解于小体积的水，然后用自动移液器加入 2mol/L NaOH 调整 pH，用 pH 试纸检测，直至 pH 达 8.0。亦可用脱氧核苷酸三磷酸钠盐配制储备溶液，将适量的干粉用 1 mL 水溶解，彻底混匀，分装小份，储存于 -20℃。
+
+![](../../raw/pages_0353-0368/images/page_367_image_9.jpg)
+
+## 大肠杆菌 DNA 聚合酶 I 和 Klenow 片段
+
+DNA 聚合酶 I（Kornberg et al. 1956）由单一多肽链组成（相对分子质量约 103 000；Joyce et al. 1982），由大肠杆菌 polA 基因编码（De Lucia and Cairns 1969）。除具有磷酸交换活性外，DNA 聚合酶 I 可通过三个明确的功能域执行三种酶反应（表 1）。
+
+表 1 大肠杆菌 DNA 聚合酶 I 的结构域
+
+| 结构域 | 活性 | 生化功能 |
+| --- | --- | --- |
+| 羧基端结构域(543~928位残基;约46kDa) | $5' \rightarrow 3'DNA$聚合酶 | 将dNTP的单核苷酸残基加到RNA或DNA引物的$3'$羟基端。这些末端由双链DNA中的切口或裂缝以及与单链DNA分子碱基配对的RNA或DNA短片段组成。 |
+| 中间结构域(326~542位残基,约22kDa) | $3' \rightarrow 5'$外切核酸酶 | 切割$3'$羟基端的核苷酸残基,产生$3'$凹端 |
+| 氨基端结构域(1~325位残基) | $5' \rightarrow 3'$外切核酸酶 | 碱基配对的$5'$端寡核苷酸的切割 |
+
+注:羧基端和中间结构域构成聚合酶 I 的 Klenow 片段。
+
+在大肠杆菌的 DNA 复制期间，聚合酶 I 的酶活性以协调的方式进行，从新产生的 DNA 5'端除去 RNA 引物，补平 DNA 相邻片段之间的切口。有关这一过程的详细描述请见文献 Kornberg 和 Baker（1992）。聚合酶 I 用枯草芽孢杆菌蛋白酶温和处理后，可被切割成两个片段，其中较大的片段（包含残基 326～928）称为 Klenow 片段。Klenow 片段
+
+---
+
+858
+
+分子克隆实验指南（原书第四版）
+
+执行聚合酶 I 的 DNA 聚合酶和 3'→5' 外切核酸酶活性（Brutlag et al. 1969; Klenow and Henningsen 1970; Klenow and Overgaard-Hansen 1970; Klenow et al. 1971），而全酶的 5'→3' 外切核酸酶活性存在于较小的氨基端片段（残基为 1\~325）。该片段未命名（见综述，Joyce and Steitz 1987；见表 1）。
+
+DNA 聚合酶 I 基因已被测序（Joyce et al. 1982），并通过原核表达载体表达（Murray and Kelley 1979），这使纯化大量的蛋白质用于商业目的成为可能（Murray and Kelley 1979）。编码 Klenow 酶的聚合酶 I 基因片段也已被克隆至各种各样的表达载体（见 Joyce and Grindley 1983; Pandey et al. 1993），因此能提供大量的纯化蛋白，足以用于商业目的和生物物理学及生物化学研究。
+
+1985 年通过 X 射线衍射获得了 Klenow 片段的三维结构（Ollis et al. 1985），由此产生了一系列一流的结构研究（Beese and Steitz 1991; Beese et al. 1993a,b）、动力学研究（Kuchta et al. 1987,1988; Cowart et al. 1989; Catalano et al. 1990; Guest et al. 1991），以及突变分析（Freemont et al. 1986; Derbyshire et al. 1988,1991; Polesky et al. 1990,1992）。这些采用不同方法的研究结果明显一致，证实了 dNTP 的聚合与  $3'\rightarrow5'$  外切核酸酶消化活性位点分别位于 Klenow 片段的不同结构域，彼此相距  $30\sim35\AA$ 。
+
+由于 Klenow 酶的小结构域（22 kDa）携带外切核酸酶活性（Joyce and Steitz 1987），可通过切除含有错配碱基或移码错误的 DNA 来执行校正功能（Bebenek et al. 1990）。据信双链 DNA 的 3'→5' 消化遵循一个三步途径:底物结合至聚合酶结构域的裂缝处；3' 端转位至外切核酸酶结构域的活性位点；化学性催化（Catalano et al. 1990）。在作为反应的限速步骤转位过程中，双链 DNA 的 4\~5 个末端碱基对发生解链（Cowart et al. 1989），产生缺损的 3' 端以纳摩尔范围 $K_{\mathrm{m}}$ 值结合于外切核酸酶结构域的活性位点（Kuchta et al. 1988）。活性位点中的三个羧基残基与 1 个或 2 个结合于外切核酸酶结构域的二价金属离子直接相互作用，这对于酶的切割是十分关键的。结合于外切核酸酶结构域的金属离子与底物末端磷酸残基相互作用（Derbyshire et al. 1991; Han et al. 1991），从而允许对暴露的磷酸二酯键进行亲核攻击（可能来自氢氧化物离子）（Freemont et al. 1988），此反应产物为 dNMP 。高浓度下，dNMP 作为单链 DNA 缺损末端，占据酶分子中相同的位点，而抑制了 3'→5' 外切核酸酶反应（Que et al. 1978; Ollis et al. 1985）。外切核酸酶降解双链底物的速度很慢，$k_{\mathrm{cat}}$ 值约为 $10^{-3}/\mathrm{s}$ 。然而，消化单链底物的速度却快约 100 倍，$k_{\mathrm{cat}}$ 值为 0.09/s（Kuchta et al. 1988; Derbyshire et al. 1991）。通过采用定点突变改变活性位点内的氨基酸，现已构建出突变型 Klenow 酶，保留了正常的聚合酶活性，而从根本上去除了外切核酸酶活性（Derbyshire et al. 1988, 1991）。这些酶的平均误差率为每聚合 10 000\~40 000 个碱基发生 1 个碱基的置换，比野生型 Klenow 酶的误差率高 7\~30 倍（Bebenek et al. 1990; Eger et al. 1991）。因此，Klenow 酶的高保真特性更多的是来自聚合酶结构域对碱基的高精度选择，而并非通过外切核酸酶结构域进行复制后编辑。
+
+聚合酶结构域中存在的一条大缝隙是引物:模板 DNA 的结合位点（Beese et al. 1993a）。直接参与结合底物及催化的氨基酸残基已通过定点突变获得鉴定（Polesky et al. 1990,1992），并通过对结合于双链 DNA 的 Klenow 片段的 X 射线晶体衍射分析加以证实（Beese et al. 1993a）。聚合酶 Pol I 和若干其他 B 型 DNA 聚合酶，包括来自水生栖热菌及 T5 和 T7 噬菌体的聚合酶，其聚合酶结构域内具有高度同源性（Delarue et al. 1990; Blanco et al. 1991）。这些同源性包括:①直接参与催化的残基簇；②与 dNTP 结合的酪氨酸残基（Beese et al. 1993b）。引物:模板的取向及 Klenow 片段的两个结构域的通用模型显示于图 1。
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+859
+
+![](../../raw/pages_0369-0384/images/page_369_image_2.jpg)
+
+<details>
+<summary>text_image</summary>
+
+5'模板
+P3'
+指状突
+3'
+5'引物
+E
+5'模板
+P
+3'
+5'引物
+指状突
+</details>
+
+图 1 DNA 结合于 Klenow DNA 聚合酶的模型（经 Beese et al. 1993a 许可，版权归美国科学进展协会所有）。
+
+## 大肠杆菌聚合酶 I Klenow 片段在分子克隆中的应用
+
+## 补平由限制性内切核酸酶消化产生的 3'凹端
+
+许多情况下，单一缓冲液即可用于限制性内切核酸酶切割 DNA 及随后的 3'凹端补平。可通过从反应中省去 4 种 dNTP 中的 1 种、2 种或 3 种而控制末端补平反应，从而产生含有新的黏性末端部分补平的末端（图 2 和方案 8）。
+
+![](../../raw/pages_0369-0384/images/page_369_image_7.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["Klenow片段"] --> B["Mg2+ dNTPs"]
+  A --> C["NpNpNOH 3'"]
+  A --> D["NpNpNpNpNpNp 5'"]
+```
+</details>
+
+图 2 用 Klenow DNA 聚合酶补平 DNA 片段的 3'凹端。
+
+## 通过放射性 dNTP 的掺入标记 DNA 片段的 3' 端
+
+一般来说，标记反应含有的3种未标记的dNTP浓度均超过各自的 $K_{\mathrm{m}}$ 值，而放射性标记的dNTP浓度则远低于其 $K_{\mathrm{m}}$ 值。在这种情况下，即使反应速率远未达到最大限度，标记物掺入DNA的比例仍很高。3种未标记dNTP以高浓度存在可降低外切核酸酶从模板的3'端除去核苷酸的可能性。反应中需要加入哪一种 $\alpha$ 标记的dNTP取决于DNA末端的序列和性质。
+
+\- 任何可与 5'突出端未配对碱基互补的 dNTP 均可用于标记 3'凹端。根据研究者对放射性标记 dNTP 的选择，放射性可掺入重建末端内的任何位点。为确保所有放射性标记分子具有同样长度，可能有必要通过含有 4 种高浓度未标记的 dNTP 的“追加”反应来完成末端补平反应。
+
+---
+
+860
+
+分子克隆实验指南（原书第四版）
+
+\- 利用 Klenow 片段的两个结构域的酶反应可标记平端和 3'突出端。首先，通过 3'→5' 外切核酸酶活性除去 DNA 的任何突出尾，产生 3'凹端。然后，在一种高浓度的放射性标记前体存在的条件下，外切核酸酶降解作用由于在 3'端掺入放射性标记的 dNTP 而被平衡。此反应从凹端或平端 DNA 循环去除及置换 3'端而构成，有时又称为交换或置换反应。由于 Klenow 酶的 3'→5' 外切核酸酶作用相当缓慢，尤其是作用在双链底物上，因而可达到适度的特异性活性。T4 DNA 聚合酶的 3'→5' 外切核酸酶活性比 Klenow 片段强约 200 倍，因而为这类反应的首选酶。
+
+如用 $\left[^{35}\mathrm{S}\right]$ dNTP代替常用的 $\left[\alpha-^{32}\mathrm{P}\right]$ dNTP，反应则仅限于一个循环的去除和置换，因为与T4 DNA聚合酶的外切核酸酶不同，大肠杆菌DNA聚合酶I的 $3'\rightarrow5'$ 外切核酸酶不能攻击硫酯键（Kunkel et al. 1981; Gupta et al. 1984）。
+
+## 用随机引物法标记单链 DNA
+
+详见文献 Feinberg 和 Vogelstein（1983,1984），以及方案 1 和方案 2。
+
+## 用引物延伸法合成单链探针
+
+详见文献 Meinkoth 和 Wahl（1984）、Studencki 和 Wallace（1984），以及第 6 章中的方案 18。多年来，聚合酶 I Klenow 片段是质量最高的商品化 DNA 聚合酶，所以它曾是 DNA 体外合成的首选酶，也是最后的手段。然而，随着更适合各种合成任务的聚合酶的发现或工程化，Klenow 已逐渐被取代而不再成为分子克隆中各种程序的首选酶。这些程序包括:
+
+- 用 Sanger 法进行 DNA 测序。Klenow 已经被阅读长度更长的噬菌体的或耐热的聚合酶所取代。
+- 在体外诱变中从单链模板合成双链 DNA。虽然 Klenow 片段仍广泛用于应用突变引物进行环状 DNA 体外合成，但它并非达到此目的的最好的酶。除非有大量的连接酶存在于聚合/延伸反应混合物中，否则 Klenow 酶会从模板链上移开致突变的寡核苷酸引物，从而减少所获突变分子的数量。DNA 聚合酶不能引起链置换，用包括 T4 噬菌体 DNA 聚合酶(Nossal 1974; Lechner et al. 1983: Geisselsoder et al. 1987)、T7 噬菌体 DNA 聚合酶(Bebenek and Kunkel 1989)和测序酶(Schena 1989)在内的 DNA 聚合酶可使这个问题得到解决。
+T4 噬菌体基因 32 蛋白（单链 DNA 结合蛋白）可用于 DNA 聚合酶（包括 Klenow 酶）催化的引物延伸反应，以减少富含二级结构的模板引起的合成拖延问题（Craik et al. 1985; Kunkel et al. 1987）。
+- 聚合酶链反应。Klenow 片段是首先用于 PCR 的酶（Saiki et al. 1985）。然而，现在它已经完全被热稳定的 DNA 聚合酶所取代，从而不需在每一轮合成和变性后补加酶。
+
+## Klenow 片段的事实与数据
+
+用于检测 Klenow 片段聚合酶活性的标准试验是由用 poly（d [A-T]）作为模板的 Setlow（1974）法。一个单位的聚合酶活性是指在  $37^{\circ}$ C 下 10min 内催化 3.3nmol dNTP 掺入酸不溶性物质的酶量。纯的 Klenow 片段样品的特异性活性约为 10 000U/mg 蛋白（Derbyshire et al. 1993）。反应通常在  $Mg^{2+}$  的存在下进行。如用  $Mn^{2+}$  代替  $Mg^{2+}$ ，则会增加错误掺入率，而降低校对的精确性（Carroll and Benkovic 1990）。酶对于 4 种 dNTP 的  $K_{m}$  变化范围为  $4 \sim 20\mu mol/L$ 。Klenow 片段的外切核酸酶活性的检测方法见文献 Freemont 等（1986）和 Derbyshire 等（1988）。
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+861
+
+## 聚合酶 | 在分子克隆中的应用
+
+\- 用切口平移法标记 DNA（Maniatis et al. 1975; Rigby et al. 1977）。在这个反应中，酶结合于双链 DNA 的切口或短缝隙中，而后聚合酶 I 的 $5' \rightarrow 3'$ 外切核酸酶活性从 DNA 的一条链除去核苷酸，形成模板，用于同时合成 DNA 的生长链。通过 $5' \rightarrow 3'$ 外切核酸酶和 $5' \rightarrow 3'$ 聚合酶的联合作用，最初的切口沿着 DNA 分子被翻译。图 3 中，双链 DNA 上链的切口从左至右被翻译，新合成的 DNA 片段由深色的箭头表示。切口平移反应通常在 $16^{\circ}\mathrm{C}$ 下进行，以减少折返 DNA 的合成，折返 DNA 是在 DNA 环生长链的 $3'$ 羟基端自身返折成环，并引发发夹形 DNA 分子合成时产生的（Richardson et al. 1964a）。
+
+![](../../raw/pages_0369-0384/images/page_371_image_4.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["dATP\ndCTP\ndGTP\ndTTP"] --> B["与大肠杆菌DNA\n聚合酶温育"]
+  C["继续聚合"] --> D["聚合成体"]
+  D --> E["聚合成体"]
+```
+</details>
+
+图 3 切口平移示意图。
+
+- cDNA 第二链的置换合成（见文献，Gubler and Hoffman 1983）。在此方法中，第一链合成的产物 cDNA-mRNA 杂交体被用作切口平移反应的模板。RNase H 被用于在杂交体的 mRNA 链上产生切口和缝隙，造成一系列被聚合酶 I 用来起始第二链 cDNA 合成的 RNA 引物。
+- 带 3'突出尾的 DNA 分子的末端标记。此反应分两步:首先，全酶的 3'→5'外切核酸酶活性去除 cDNA 的 3'突出尾，造成一个 3'凹端。然后，在一种高浓度的放射性标记前体的存在下，继续进行的核酸外切降解由于 3'端 dNTP 的掺入而得到平衡。虽然聚合酶 I 催化交换反应或取代反应相当有效，但 T4 噬菌体 DNA 聚合酶的 3'→5'外切核酸酶活性更强，因此它仍然是首选酶。
+
+## 关于 DNA 聚合酶 I 的指标和参数
+
+- 大多数厂商提供的聚合酶 I 是从（Kelley and Stump 1979）一株携单拷贝 polA 基因的 λ 噬菌体转导的溶源性大肠杆菌中分离所得（如 NM964）（Murray and Kelley 1979）。
+- 1U DNA 聚合酶是指在 $37^{\circ} \mathrm{C}$ 下用 poly (d [A-T]) 作模板, 在 $30 \mathrm{~min}$ 内催化 $10 \mathrm{nmol}$ 总 dNTP 转变为酸不溶型物质所需的酶量 (Richardson et al. 1964b)。商品酶的比活性通常约为 $5000 \mathrm{U} / \mathrm{mg}$ 蛋白。
+- 如同所有其他的 DNA 聚合酶，聚合酶 I 活性需要二价阳离子。精确复制选择  $Mg^{2+}$ ，而  $Mn^{2+}$  则有目的地用于提高误差频率。
+
+---
+
+862
+
+分子克隆实验指南（原书第四版）
+
+## 参考文献
+
+- Bebenek K, Kunkel TA. 1989. The use of native T7 DNA polymerase for site-directed mutagenesis. Nucleic Acids Res 17: 5408.
+- Bebenek K, Joyce CM, Fitzgerald MP, Kunkel TA. 1990. The fidelity of DNA synthesis catalyzed by derivatives of Escherichia coli DNA polymerase I. J Biol Chem 265: 13878–13887.
+- Beese LS, Steitz TA. 1991. Structural basis for the 3'-5' exonuclease activity of Escherichia coli DNA polymerase I: A two metal ion mechanism. EMBO J 10: 25–33.
+- Beese LS, Derbyshire VC, Steitz TA. 1993a. Structure of DNA polymerase I Klenow fragment bound to duplex DNA. Science 260: 352–355.
+- Beese LS, Friedman JM, Steitz TA. 1993b. Crystal structures of the Klenow fragment of DNA polymerase I complexed with deoxynucleoside triphosphate and pyrophosphate. Biochemistry 32: 14095–14101.
+- Blanco L, Bernad A, Blasco MA, Salas M. 1991. A general structure for DNA-dependent DNA polymerases Gene 100: 27–38. (Erratum Gene [1991] 108: 165.)
+- Brutlag D, Atkinson MR, Setlow P, Kornberg A. 1969. An active fragment of DNA polymerase produced by proteolytic cleavage. Biochem Biophys Res Commun 37: 982–989.
+- Carroll SS, Benkovic SJ. 1990. Mechanistic aspects of DNA-polymerases: Escherichia coli DNA polymerase I (Klenow fragment) as a paradigm. Chem Rev 90: 1291–1307.
+- Catalano CE, Allen DJ, Benkovic SJ. 1990. Interaction of Escherichia coli DNA polymerase I with azido DNA and fluorescent DNA probes: Identification of protein-DNA. Biochemistry 29: 3612–3621.
+- Cowart M, Gibson KJ, Allen DJ, Benkovic SJ. 1989. DNA substrate structural requirements for the exonuclease and polymerase activities of procaryotic and phage DNA polymerases. Biochemistry 28: 1975–1983.
+- Craik CS, Largman C, Fletcher T, Roczniak S, Barr PJ, Fletterick R, Rutter WJ. 1985. Redesigning trypsin: Alteration of substrate specificity. Science 228; 291–297.
+- Delarue M, Poch O, Tordo N, Moras D, Argos P. 1990. An attempt to unify the structure of polymerases. Protein Eng 3: 461–467.
+- De Lucia P, Cairns J. 1969. Isolation of an E. coli strain with a mutation affecting DNA polymerase. Nature 224: 1164–1166.
+- Derbyshire V, Freemont PS, Sanderson MR, Beese L, Friedman JM, Joyce CM, Steitz TA. 1988. Genetic and crystallographic studies of the 3',5'-exonucleolytic site of DNA polymerase I. Science 240: 199–201.
+- Derbyshire V, Grindley NDF, Joyce CM. 1991. The 3'-5' exonuclease of DNA polymerase I of Escherichia coli: Contribution of each amino acid at the active site to the reaction. EMBO J 10: 17–24.
+- Derbyshire V, Astatke M, Joyce CM. 1993. Re-engineering the polymerase domain of Klenow fragment and evaluation of overproduction and purification strategies. Nucleic Acids Res 23: 5439–5448.
+- Eger BT, Kuchta RD, Carroll SS, Benkovic PA, Dahlberg ME, Joyce CM, Benkovic SJ. 1991. Mechanism of DNA replication fidelity for three mutants of DNA polymerase I: Klenow fragment $\mathrm{KF}(\mathrm{exo}^{+})$, $\mathrm{KF}(\mathrm{polA5})$ and $\mathrm{KF}(\mathrm{exo}^{-})$. Biochemistry 30: 1441-1448.
+- Feinberg AP, Vogelstein B. 1983. A technique for radiolabeling DNA restriction endonuclease fragments to high specific activity. Anal Biochem 132: 6–13.
+- Feinberg AP, Vogelstein B. 1984. A technique for radiolabeling DNA restriction endonuclease fragments to high specific activity. Addendum. Anal Biochem 137: 266–267.
+- Freemont PS, Ollis DL, Steitz TA, Joyce CM. 1986. A domain of the Klenow fragment of Escherichia coli DNA polymerase I has polymerase but no exonuclease activity. Proteins 1: 66–73.
+- Freemont PS, Friedman JM, Beese LS, Sanderson MR, Steitz TA. 1988. Cocrystal structure of an editing complex of Klenow fragment with DNA. Proc Natl Acad Sci 85: 8924–8928.
+- Geisselsoder J, Witney F, Yuckenberg P. 1987. Efficient site-directed in vitro mutagenesis. BioTechniques 5: 786–791.
+- Gubler U, Hoffman BJ. 1983. A simple and very efficient method for generating cDNA libraries. Gene 25: 263–269.
+- Guest CR, Hochstrasser RA, Dupuy CG, Allen DJ, Benkovic SJ, Millar DP. 1991. Interaction of DNA with the Klenow fragment of DNA polymerase I studied by time-resolved fluorescence spectroscopy. Biochemistry 30: 8759–8770.
+- Gupta AP, Benkovic PA, Benkovic SJ. 1984. The effect of the 3',5' thiophosphoryl linkage on the exonuclease activities of T4 polymerase and the Klenow fragment. Nucleic Acids Res 12: 5897–5911.
+- IIan II, Rifkind JM, Mildvan AS. 1991. Role of divalent cations in the 3',5'-exonuclease reaction of DNA polymerase I. Biochemistry 30: 11104-11108.
+- Joyce CM, Grindley NDF. 1983. Construction of a plasmid that overproduces the large proteolytic fragment (Klenow fragment) of DNA polymerase I of Escherichia coli. Proc Natl Acad Sci 80: 1830–1834.
+- Joyce CM, Steitz TA. 1987. DNA polymerase I: From crystal structure to function via genetics. Trends Biochem Sci 12: 288–292.
+- Joyce CM, Kelley WS, Grindley NDF. 1982. Nucleotide sequence of the Escherichia coli polA gene and primary structure of DNA polymerase I. J Biol Chem 257: 1958–1964.
+- Kelley WS, Stump KH. 1979. A rapid procedure for isolation of large quantities of Escherichia coli DNA polymerase utilizing a λpolA transducing phage. J Biol Chem 254: 3206–3210.
+- Klenow H, Henningsen I. 1970. Selective elimination of the exonuclease activity of the deoxyribonucleic acid polymerase from Escherichia coli B by limited proteolytic digestion. Proc Natl Acad Sci 65: 168–175.
+- Klenow H, Overgaard-Hansen K. 1970. Proteolytic cleavage of DNA polymerase from Escherichia coli B into an exonuclease unit and a polymerase unit. FEBS Lett 6: 25–27.
+- Klenow H, Overgaard-Hansen K, Patkar SA. 1971. Proteolytic cleavage of native DNA polymerase into two different catalytic fragments. Influence of assay conditions on the change of exonuclease activity and polymerase-activity accompanying cleavage. Eur J Biochem 22: 371–381.
+- Kornberg A, Baker TA. 1992. DNA replication, 2nd ed. W.H. Freeman, New York.
+- Kornberg A, Lehman IR, Bessman MJ, Simms ES. 1956. Enzymic synthesis of deoxyribonucleic acid. Biochim Biophys Acta 21: 197–198.
+- Kuchta RD, Benkovic P, Benkovic SJ. 1988. Kinetic mechanism whereby DNA polymerase 1 (Klenow) replicates DNA with high fidelity. Biochemistry 27: 6716–6725.
+- Kuchta RD, Mizrahi V, Benkovic PA, Johnson KA, Benkovic SJ. 1987. Kinetic mechanism of DNA polymerase I (Klenow). Biochemistry 26:8410–8417.
+- Kunkel TA, Eckstein F, Mildvan AS, Koplitz RM, Loeb LA. 1981. Deoxynucleoside [1-thio]triphosphates prevent proofreading during in vitro DNA synthesis. Proc Natl Acad Sci 78: 6734–6738.
+- Kunkel TA, Roberts JD, Zakour RA. 1987. Rapid and efficient site-specific mutagenesis without phenotypic selection. Methods Enzymol 154:367–382.
+- Lechner RL, Engler MJ, Richardson CC. 1983. Characterization of strand displacement synthesis catalyzed by bacteriophage T7 DNA polymerase. J Biol Chem 258: 11174–11184.
+- Maniatis T, Jeffrey A, Kleid DG. 1975. Nucleotide sequence of the rightward operator of phage λ. Proc Natl Acad Sci 72: 1184–1188.
+- Meinkoth J, Wahl G. 1984. Hybridization of nucleic acids immobilized on solid supports. Anal Biochem 138: 267–284.
+- Murray NE, Kelley WS. 1979. Characterization of λpolA transducing phages; effective expression of the E coli polA gene. Mol Gen Genet 175: 77–87.
+- Nossal NG. 1974. DNA synthesis on a double-stranded DNA template by the T4 bacteriophage DNA polymerase and the T4 gene 32 DNA unwinding protein. J Biol Chem 249: 5668–5676.
+- Ollis DL, Brick P, Hamlin R, Xuong NG, Steitz TA. 1985. Structure of the large fragment of Escherichia coli DNA polymerase complexed with dTMP. Nature 313: 762–766.
+- Pandey VN, Kaushok N, Sanzgiri RP, Patil M, Modak M, Barik S. 1993. Site-directed mutagenesis of DNA polymerase I (Klenow) from Escherichia coli. Eur J Biochem 214: 59–65.
+- Polesky AH, Dahlberg ME, Benkovic SJ, Grindley NDF, Joyce CM. 1992. Side chains involved in catalysis of the polymerase reaction of DNA polymerase I from Escherichia coli. J Biol Chem 267: 8417–8428.
+- Polesky AH, Steitz TA, Grindley NDF, Joyce CM. 1990. Identification of residues critical for the polymerase activity of the Klenow fragment of DNA polymerase I from Escherichia coli. J Biol Chem 265: 14579–14591.
+- Que BG, Downey KM, So A. 1978. Mechanisms of selective inhibition of 3' to 5' exonuclease activity of Escherichia coli DNA polymerase I by nucleoside 5'-monophosphates. Biochemistry 17: 1603–1606.
+- Richardson CC, Inman RB, Kornberg A. 1964a. Enzymic synthesis of deoxyribonucleic acid. XVIII. The repair of partially single-stranded DNA templates by DNA polymerase. J Mol Biol 9: 46–69.
+- Richardson CC, Schildkraut CL, Aposhian HV, Kornberg A. 1964b. Enzymatic synthesis of deoxyribonucleic acid. XIV. Further purification and properties of deoxyribonucleic acid polymerase of Escherichia coli. J Biol Chem 239: 222–232.
+- Rigby PW, Dieckmann M, Rhodes C, Berg P. 1977. Labeling deoxyribonucleic acid to high specific activity in vitro by nick translation with DNA polymerase I. J Mol Biol 113: 237–251.
+- Saiki RK, Scharf S, Faloona F, Mullis KB, Horn GT, Erlich HA, Arnheim N. 1985. Enzymatic amplification of α-globin genomic sequences and restriction site analysis for diagnosis of sickle cell anemia. Science 230: 1350–1354.
+- Schena M. 1989. High efficiency oligonucleotide mutagenesis using Sequenase. Comments (U.S. Biochemical Corp.) 15: 23.
+- Setlow P. 1974. DNA polymerase I from Escherichia coli. Methods Enzymo 29: 3–12.
+- Studencki AB, Wallace RB, 1984. Allele-specific hybridization using oligonucleotide probes of very high specific activity: Discrimination of the human β A- and β S-globin genes. DNA 3: 7–15.
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+863
+
+![](../../raw/pages_0369-0384/images/page_373_image_2.jpg)
+
+## 体外转录系统
+
+事实上, 所有体外 DNA 转录成 RNA 都由噬菌体编码的依赖 DNA 的 RNA 聚合酶催化进行。噬菌体编码的依赖 DNA 的 RNA 聚合酶现已身价百倍, 这是由于: ①这些酶可在已明确的同源启动子上起始有效且选择性的转录 (Melton et al. 1984); ②这些酶由单一肽链 (约 900 个氨基酸) 组成, 不需辅助转录因子, 这可能是由于其已进化至能高效转录特化基因组内的小量基因。
+
+已充分鉴定的噬菌体 RNA 聚合酶为伤寒沙门氏菌 SP6 噬菌体(Butler and Chamberlin 1982; Green et al. 1983)，以及大肠杆菌 T3 和 T7 噬菌体（Studier and Rosenberg 1981; Davanloo et al. 1984; Tabor and Richardson 1985）编码的 RNA 聚合酶。编码这三类 RNA 聚合酶的基因已被分离（Davannloo et al. 1984; Morris et al. 1986）、测序（Moffatt et al. 1984; McGraw et al. 1987; Kotani et al. 1987）及表达（Davanloo et al. 1984; Morris et al. 1985）。T7 聚合酶的晶体结构已经阐明（Doublie et al. 1998）。SP6、T3 和 T7 依赖 DNA 的 RNA 聚合酶以相似的方式发生作用，彼此之间未见其中某一种具明显的生化优势。虽然 SP6 酶最容易从噬菌体感染的细胞中制备，但它的价格通常却比 T7 和 T3 编码的酶贵 4～5 倍。
+
+上述三种 RNA 聚合酶均能转录单链 DNA（Salvo et al. 1973; Milligan et al. 1987），但实际上体外转录的进行均以含适当启动子的双链线性 DNA 为模板（表 2）。
+
+表 2 由噬菌体编码的 RNA 聚合酶识别的启动子序列
+
+<table><tr><td>噬菌体</td><td colspan="5">启动子</td></tr><tr><td></td><td>-15</td><td>-10</td><td>-5</td><td>+1</td><td>+5</td></tr><tr><td>T7</td><td colspan="5">TAATACGACTCACTATAGGGAGA</td></tr><tr><td>T3</td><td colspan="5">AATTAAACCCTCACTAAAGGGAGA</td></tr><tr><td></td><td colspan="5">T</td></tr><tr><td>SP6</td><td colspan="5">ATTTAGGGGACACTATAGAAG</td></tr></table>
+
+注:启动子的共有序列能被三种噬菌体编码的 RNA 聚合酶 T7（Dunn and Studier 1983）、T3（Beck et al. 1989）和 SP6（Brown et al. 1986）所识别。所有噬菌体的启动子共有一个-7 到+1 的核心序列，提示该区域在启动子功能中具相同作用。位于启动子-8 到-10 的区域有所差异，提示启动子特异性的接触发生于该区域。按常规显示非模板链序列（经允许按 Jorgensen et al. 改编，1991）。
+
+由于噬菌体 RNA 聚合酶最小的启动子长度仅为 21bp（Jorgensen et al. 1991），因此易于用合成寡核苷酸制成便携式噬菌体启动子。含有噬菌体 RNA 聚合酶启动子的双链 DNA 接头可直接与纯化的 DNA 片段（Loewy et al. 1989）或 PCR 产物连接。通过合成适当的接头/衔接子，混合物中的一个 DNA 片段可被修饰，随后被体外转录。
+
+合成启动子亦可被加至 PCR 扩增 DNA 所用引物的 5'端（见方案 5 的附加方案“用 PCR 法将噬菌体编码的 RNA 聚合酶启动子加至 DNA 片段上”）。因此，利用位于 DNA 分子的一端或两端的噬菌体启动子，几乎能扩增任何 DNA 分子。扩增的 DNA 是体外转录反应的有效模板。应用 PCR 也可以很方便地将限制性位点引入 DNA 片段的末端，使模板容易线性化，亦可将翻译信号引入 DNA 片段的 5'端，使 RNA 产物能在无细胞的蛋白合成系统中被有效地翻译（Browning 1989; Kain et al. 1991）。
+
+---
+
+864
+
+分子克隆实验指南（原书第四版）
+
+噬菌体聚合酶与其启动子的亲和力相当低（约 $10^{-7} / \mathrm{mol}$），因此需核苷三磷酸来稳定瞬时的启动子酶复合物。在一个短暂的延滞期后，RNA的合成迅速达到 $37^{\circ} \mathrm{C}$ 下每秒 $200 \sim 300$ 个核苷酸的速率（T7和T3聚合酶），与同样条件下大肠杆菌RNA聚合酶相比，速度几乎快10倍。T3和T7 RNA聚合酶对于ATP、UTP和CTP的 $K_{\mathrm{m}}$ 值为 $40 \sim 100 \mu \mathrm{mol} / \mathrm{L}$ (Oakley et al.1979)。GTP则相反，可能由于GTP被用作链起始核苷酸。例如，T3 RNA聚合酶起始的RNA链以pppGGGA和pppGGGG开始（见综述Chamberlin and Ryan 1982）。当模板DNA的浓度为 $20 \mathrm{~nmol} / \mathrm{L}$ 、每一rNTP的浓度大于 $50 \mu \mathrm{mol} / \mathrm{L}$ 时，RNA合成速率至少在1h内呈线性关系，而反应的速率则与加入反应的酶量成正比。反应过程中，RNA链在每一模板分子上起始多次；最佳条件下，每摩尔模板可产生 $10 \sim 20 \mathrm{~mol}$ 的全长转录物。然而，当用一个放射性标记的或修饰的碱基作为前体时，为优化罕见组分掺入而改变了反应条件，产率则大为降低。通常的做法是从反应中去除同源核苷酸或显著降低其浓度。但如反应中该核苷酸的浓度降至其 $K_{\mathrm{m}}$ 值以下，则不仅影响总产率，而且全长RNA链的比例亦将显著降低。
+
+虽然三种噬菌体聚合酶共有许多生化特性，但对各自的启动子均显示相当大的偏性，不能在其他启动子的驱动下以显著的速率起始转录。噬菌体酶不能识别克隆 DNA 序列中的细菌、质粒或真核启动子。由于 RNA 链终止的有效信号亦属稀有，因此噬菌体编码的聚合酶能合成几乎任何置于适当启动子控制下的 DNA 的全长转录物。这些转录物仅与模板的一条链互补，因而它们是用于包括 Southern、Norhtern、原位杂交和 RNA 酶保护试验的所有杂交技术的极好的探针。此外，聚合酶能合成大量的、与哺乳类动物基因不稳定的初级转录物序列一致的长 RNA，导致真核 mRNA 3'端剪接与加工的体外试验发展（见文献，Green 1991）。合成的 RNA 亦是配体，供诸如人免疫缺陷病毒的 tat 基因产物的调控蛋白结合（Roy et al. 1990）。
+
+体外制备的全长转录物常用作真核无细胞蛋白合成系统中的 mRNA。只有模板 RNA 5'端被加帽时，这些及其他反应（如体外剪接反应）才能有效进行。5'端帽结构的添加亦极大地改进了注射进卵母细胞中 RNA 的稳定性（见文献，Yisraeli and Melton 1989）。通过降低反应混合物中 GTP 浓度至 50μmol/L，加入 10 倍摩尔数过量的帽类似物（如 G [5'] ppp [5'] G）（Contreras et al. 1982; Konarska et al. 1984），加帽的 RNA 可在体外合成。在此条件下合成的大多数转录物于 5'帽状结构处起始合成。然而，一旦 RNA 合成开始，帽类似物的独特化学结构（含两个暴露的 3'羟基）可确保不再发生帽状核苷酸的掺入。
+
+最后，在发展原核和真核表达系统的过程中，噬菌体 RNA 聚合酶的高度特异性已得到开发。将靶 cDNA 或基因克隆于噬菌体启动子序列的下游及适当转录终止序列的上游，再将所产生的重组质粒（第一个质粒）导入含有以可调控方式表达噬菌体 RNA 聚合酶的第二个质粒的细胞。因此，诱导聚合酶基因可导致第一个质粒中靶 DNA 的转录及其所编码产物随后的充分表达。T7 噬菌体 RNA 聚合酶和启动子为在大肠杆菌中应用最广泛的二元表达系统（Tabor and Richardson 1985; Studier and Moffatt 1986; Studier et al. 1990）。在真核细胞中，可通过感染含 T7 聚合酶基因的重组痘病毒（Fuerst et al. 1986）或通过转染表达质粒而产生 T7 RNA 聚合酶。
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+865
+
+## 事实和提示
+
+为自大规模反应中获得毫克量级的 RNA，应使  $MgCl_{2}$  的浓度比反应中总核苷酸浓度高 6nmol/L（Milligan and Uhlenbeck 1989），反应中应含有 5U/mL 的酵母无机焦磷酸酶（Cunningham and Ofengand 1990）。焦磷酸酶可防止  $Mg^{2+}$  以焦磷酸镁的形式螯合。
+
+噬菌体 RNA 聚合酶可接受生物素化的核苷酸作为前体。但是与放射性标记的 NTP 相比掺入效率不高，反应产物含有较高比例的截短 RNA（Grabowski and Sharp 1986; Yisraeli and Melton 1989）。
+
+T7 RNA 聚合酶受 T7 溶菌酶的强烈抑制（Moffatt and Studier 1987; Ikeda and Bailey 1992），因而有人已应用 T7 溶菌酶基因共表达作为降低转化菌中 T7 聚合酶活性的方法（综述见 Studier et al. 1990）。
+
+## 参考文献
+
+- Beck S, O'Keeffe T, Coull JM, Koster H. 1989. Chemiluminescent detection of DNA: Application for DNA sequencing and hybridization. Nucleic Acids Res 17: 5115–5123.
+- Brown JE, Klement JF, McAllister WT. 1986. Sequences of three promoters for the bacteriophage SP6 RNA polymerase. Nucleic Acids Res 14:3521–3526.
+- Browning KS. 1989. Transcription and translation of mRNA from polymerase chain reaction-generated DNA. Amplifications 3: 15–16.
+- Butler ET, Chamberlin MJ. 1982. Bacteriophage SP6-specific RNA polymerase. I. Isolation and characterization of the enzyme. J Biol Chem 257: 5772–5778.
+- Chamberlin M, Ryan T. 1982. Bacteriophage DNA-dependent RNA polymerases. In The enzymes, 3rd ed. (ed Boyer PD), vol. 15, pp. 87–108. Academic, New York.
+- Contreras R, Cheroutre H, Degrave W, Fiers W. 1982. Simple, efficient in vitro synthesis of capped RNA useful for direct expression of cloned eukaryotic genes. Nucleic Acids Res 10: 6353–6362.
+- Cunningham PR, Ofengand J. 1990. Use of inorganic pyrophosphatase to improve the yield of in vitro transcription reactions catalyzed by T7 RNA polymerase. BioTechniques 9: 713–714.
+- Davanloo P, Rosenberg AH, Dunn JJ, Studier FW. 1984. Cloning and expression of the gene for bacteriophage T7 RNA polymerase. Proc Natl Acad Sci 81: 2035–2039.
+- Doublie S, Tabor S, Long AM, Richardson CC, Ellenberger T. 1998. Crystal structure of a bacteriophage T7 DNA replication complex at 2.2 Å resolution. Nature 391: 251–258.
+- Dunn JJ, Studier FW. 1983. Complete nucleotide sequence of bacteriophage T7 DNA and the locations of T7 genetic elements. J Mol Biol 166: 477–535.
+- Fuerst TR, Niles EG, Studier FW, Moss B. 1986. Eukaryotic transient-expression system based on recombinant vaccinia virus that synthesizes bacteriophage T7 RNA polymerase. Proc Natl Acad Sci 83: 8122–8126.
+- Grabowski PJ, Sharp PA. 1986. Affinity chromatography of splicing complexes: U2, U5, and U4+U6 small nuclear ribonucleoprotein particles in the spliceosome. Science 233: 1294–1299.
+- Green MR. 1991. Biochemical mechanisms of constitutive and regulated pre-mRNA splicing. Annu Rev Cell Biol 7: 559–599.
+- Green MR, Maniatis T, Melton DA. 1983. Human β-globin pre-mRNA synthesized in vitro is accurately spliced in Xenopus oocyte nuclei. Cell 32: 681–694.
+- Ikeda RA, Bailey PA. 1992. Inhibition of T7 RNA polymerase by T7 lysozyme in vitro. J Biol Chem 267: 20153–20158.
+- Jorgensen ED, Durbin RK, Risman SS, McAllister WT. 1991. Specific contacts between the bacteriophage T3, T7, and SP6 RNA polymerases and their promoters. J Biol Chem 266: 645–651.
+- Kain KC, Orlandi PA, Lanar DE. 1991. Universal promoter for gene expression without cloning: Expression-PCR. BioTechniques 10: 366–374.
+- Konarska MM, Padgett RA, Sharp PA. 1984. Recognition of cap structure in splicing in vitro of mRNA precursors. Cell 38: 731–736.
+- Kotani H, Ishizaki Y, Hiraoka N, Obayashi A. 1987. Nucleotide sequence and expression of the cloned gene of bacteriophage SP6 RNA polymerase. Nucleic Acids Res 15: 2653–2664.
+- Loewy ZG, Leary SL, Baum HJ. 1989. Site-directed transcription initiation with a mobile promoter. Gene 83: 367–370.
+- McGraw NJ, Bailey JN, Cleaves GR, Dembinski DR, Gocke CR, Joliffe LK, MacWright RS, McAllister WT. 1985. Sequence and analysis of the gene for bacteriophage T3 RNA polymerase. Nucleic Acids Res 13:6753–6766.
+- Melton DA, Krieg PA, Rebagliati MR, Maniatis T, Zinn K, Green MR. 1984. Efficient in vitro synthesis of biologically active RNA and RNA hybridization probes from plasmids containing a bacteriophage SP6 promoter. Nucleic Acids Res 12; 7035–7056.
+- Milligan JF, Uhlenbeck OC. 1989. Synthesis of small RNAs using T7 RNA polymerase. Methods Enzymol 180: 51–62.
+- Milligan JF, Groebe DR, Witherell GW, Uhlenbeck OC. 1987. Oligoribonucleotide synthesis using T7 RNA polymerase and synthetic DNA templates. Nucleic Acids Res 15: 8783–8798.
+- Moffatt BA, Studier FW. 1987. T7 lysozyme inhibits transcription by T7 RNA polymerase. Cell 49: 221–227.
+- Moffatt BA, Dunn JJ, Studier FW. 1984. Nucleotide sequence of the gene for bacteriophage T7 RNA polymerase. J Mol Biol 173: 265–269.
+- Morris CE, Klement JF, McAllister WT. 1986. Cloning and expression of the bacteriophage T3 RNA polymerase gene. Gene 41: 193–200.
+- Oakley JL, Strothkamp RE, Sarris AH, Coleman JE. 1979. T7 RNA polymerase: Promoter structure and polymerase binding. Biochemistry 18: 528–537.
+- Roy S, Delling U, Chen CH, Rosen CA, Sonenberg N. 1990. A bulge structure in HIV-1 TAR RNA is required for Tat binding and Tat-mediated trans-activation. Genes Dev 4: 1365–1373.
+- Salvo RA, Chakraborty PR, Maitra U. 1973. Studies on T3-induced ribonucleic acid polymerase. IV. Transcription of denatured deoxyribonucleic acid preparations by T3 ribonucleic acid polymerase. J Biol Chem 248: 6647–6654.
+- Studier FW, Moffatt BA. 1986. Use of bacteriophage T7 RNA polymerase to direct selective high-level expression of cloned genes. J Mol Biol 189: 113–130.
+- Studier FW, Rosenberg AH. 1981. Genetic and physical mapping of the late region of bacteriophage T7 DNA by use of cloned fragments of T7 DNA. J Mol Biol 153: 503–525.
+- Studier FW, Rosenberg AH, Dunn JJ, Dubendorff JW. 1990. Use of T7 RNA polymerase to direct expression of cloned genes. Methods Enzymol 185: 60–89.
+- Tabor S, Richardson CC. 1985. A bacteriophage T7 RNA polymerase/promoter system for controlled exclusive expression of specific genes. Proc Natl Acad Sci 82: 1074–1078.
+- Yisraeli JK, Melton DA. 1989. Synthesis of long, capped transcripts in vitro by SP6 and T7 RNA polymerases. Methods Enzymol 180: 42–50.
+
+---
+
+866
+
+分子克隆实验指南（原书第四版）
+
+![](../../raw/pages_0369-0384/images/page_376_image_2.jpg)
+
+## 碱性磷酸酶
+
+几种碱性磷酸酶（或碱性磷酸单酯酶）常用于分子克隆，包括细菌碱性磷酸酶（BAP）和牛小肠碱性磷酸酶（CIP、CIAP 或 CAP）。近年来又分离到类似的酶，如从更为神秘的冷血生物中分离的碱性磷酸酶（虾 SAP）可供使用，它们在去磷酸化反应之后比 BAP 或 CIP 更易灭活。所有的碱性磷酸酶均为 Zn（II）金属酶，它们通过形成磷酸化的丝氨酸中间体而催化磷酸单酯水解。碱性磷酸酶在分子克隆中用于三个目的:
+
+- 去除核酸 5'端的磷酸残基，以便通过γ-标记 ATP 的 $[^{32}P]$ 转移对所产生的 5'羟基进行放射性标记。第二种反应受 T4 噬菌体多核苷酸激酶的催化(Chaconas and van de Sande 1980)。
+- 去除 DNA 片段 5'端磷酸残基，以防止自身连接。这种去磷酸反应主要用于抑制载体分子的自身连接，从而减少克隆过程中“空心”克隆产生的数目（Ullrich et al. 1977）。
+- 作为非放射性系统中的报告酶检测及定位核酸和蛋白质。在这种情况下，碱性磷酸酶被偶联于配体，如能与生物素化靶分子特异性相互作用的链霉抗生物素蛋白（Leary et al. 1983）。
+
+## 去磷酸化反应
+
+碱性磷酸酶能从各种底物分子中去除 3'磷酸基，包括 3'磷酸化多核苷酸和 3'-单磷酸脱氧核苷（Reid and Wilson 1971）。但是，BAP、CIP 和 SAP 在分子克隆中的主要用途为催化单链或双链 DNA 和 RNA 5'端磷酸残基的去除。所产生的 5'羟基端不再参与连接反应，而成为多核苷酸激酶催化的放射性标记反应底物（Chaconas and van de Sande 1980）。
+
+虽然碱性磷酸酶在 5'端核酸标记中的作用毋庸置疑，但其防止自身连接的价值仍有争议。毫无疑问，去磷酸化后减少了线性质粒 DNA 的重新环化，因而减少了含“空心”质粒的转化细菌集落的本底（Ullrich et al. 1977; Ish-Horowicz and Burke 1981; Evans et al. 1992）。但是更为常见的是携所需重组体的菌落数亦平行下降。此外，一些研究者认为 5'羟基的存在可导致重排或缺失克隆出现频率的增高。由于这些原因，只要有适宜的限制性酶切位点可用，定向克隆应为首选方法。
+
+## 碱性磷酸酶的性质
+
+用于分子克隆的碱性磷酸酶在碱性 Tris 缓冲液（pH 8.0～pH 9.0）及低浓度  $Zn^{2+}$ （<1mmol/L）的存在下显示最高活性。
+
+\- BAP 以单体形式分泌（相对分子质量 47 000）到大肠杆菌的周质间隙内，在周质间隙中二聚化，成为有催化活性的酶分子（Bradshaw et al. 1981）。在中性或碱性 pH 下，二聚体 BAP 含多达 6 个 Zn$^{2+}$，其中 2 个对酶活性是必要的（见综述，Coleman and Gettins 1983）。每个二聚体的两个催化位点中仅有一个在低浓度人工底物下具有活性，而在高浓度下两个位点均有活性（Heppel et al. 1962; Fife 1967）。
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+867
+
+BAP 是种非常稳定的酶，能抵抗加热及去垢剂的灭活。因此，BAP 在去磷酸反应后难以去除。
+
+- CIP 是一个二聚体糖蛋白，由两个 514 个残基的单体构成，通过磷脂酰肌醇锚定于质膜（Hoffmann-Blume et al. 1991; Weissig et al. 1993），其最佳酶活性取决于 $\mathrm{Mg}^{2+}$ 和 $\mathrm{Zn}^{2+}$ 的浓度。某些结合于催化位点的 $\mathrm{Zn}^{2+}$ 为催化活性所必需。$\mathrm{Mg}^{2+}$ 为变构激活剂，它们结合于不同的位点。但是，如果 $\mathrm{Zn}^{2+}$ 以高浓度存在，将竞争 $\mathrm{Mg}^{2+}$ 的结合位点，并阻碍变构激活（Fernley 1971）。蛋白酶 K 和/或在 $10\mathrm{mmol/L}$ EGTA的存在下加热（$65^{\circ}\mathrm{C} 30\mathrm{min}$ 或 $75^{\circ}\mathrm{C} 10\sim15\mathrm{min}$）很容易灭活 CIP。去磷酸化的 DNA 可通过酚:氯仿抽提纯化。
+- SAP 是自北极虾中分离，其酶的特性与 CIP 相似。与 BAP 不同的是，SAP 在温度升高时不稳定。据厂商介绍，将其加热至  $65^{\circ}$ C、15 min 可完全灭活。但在分子生物学的交流网站上常有顾客评论，认为短暂加热不能使酶完全灭活。公平地说，约同样数量的报告认为灭活 SAP 没有问题。但是为安全起见，我们建议加热至  $70^{\circ}$ C 维持 20min，以确保 SAP 的完全灭活。
+
+几种碱性磷酸酶均受无机正磷酸盐（Zittle and Della Monica 1950）及金属离子螯合剂如 EDTA 和 EGTA 的抑制，其他丝氨酸水解酶的强力抑制剂——二异丙基氟磷酸的抑制作用（Dabich and Neuhaus 1966）未达到具有统计学意义的水平。L-苯丙氨酸为 CIP 的非竞争性抑制剂（Weissig et al. 1993）。
+
+## 参考文献
+
+- Bradshaw RA, Cancedda F, Ericsson LH, Neumann PA, Piccoli SP, Schlesinger MJ, Shriefer K, Walsh KA. 1981. Amino acid sequence of Escherichia coli alkaline phosphatase. Proc Natl Acad Sci 78: 3473–3477.
+- Chaconas G, van de Sande JH. 1980. 5'-32P labeling of RNA and DNA restriction fragments. Methods Enzymol 65: 75–85.
+- Coleman JE, Gettins P. 1983. Alkaline phosphatase, solution structure, and mechanism. Adv Enzymol Relat Areas Mol Biol 55: 381–452.
+- Dabich D, Neuhaus OW. 1966. Purification and properties of bovine synovial fluid alkaline phosphatase. J Biol Chem 241: 415–420.
+- Evans GA, Snider K, Hermanson GG. 1992. Use of cosmids and arrayed clone libraries for genome analysis. Methods Enzymol 216: 530–548.
+- Fernley HN. 1971. Mammalian alkaline phosphatases. In The enzymes, 3rd ed. (ed Boyer PD), vol. 4, pp. 417–447. Academic, New York.
+- Fife WK. 1967. Phosphorylation of alkaline phosphatase (E. coli) with o- and p-nitrophenyl phosphate at pH below 6. Biochem Biophys Res Commun 28: 309–317.
+- Heppel LA, Harkness DR, Hilmoe RJ. 1962. A study of the substrate specificity and other properties of the alkaline phosphatase of Escherichia coli. J Biol Chem 237: 841–846.
+- Hoffmann-Blume E, Garcia Marenco MB, Ehle H, Bublitz R, Schulze M, Horn A. 1991. Evidence for glycosylphosphatidylinositol anchoring
+- of intralumenal alkaline phosphatase of the calf intestine. Eur J Biochem 199: 305–312.
+- Ish-Horowicz D, Burke JF. 1981. Rapid and efficient cosmid cloning. Nucleic Acids Res 9: 2989–2998.
+- Leary JJ, Brigati DJ, Ward DC. 1983. Rapid and sensitive colorimetric method for visualizing biotin-labeled DNA probes hybridized to DNA or RNA immobilized on nitrocellulose: Bio-blots. Proc Natl Acad Sci 80: 4045–4049.
+- Reid TW, Wilson IB. 1971. E coli alkaline phosphatase In The enzymes, 3rd ed. (ed Boyer PD), vol. 4, pp. 373–415. Academic, New York.
+- Ullrich A, Shine J, Chirgwin J, Pictet R, Tischer E, Rutter WJ, Goodman HM. 1977. Rat insulin genes: Construction of plasmids containing the coding sequences. Science 196: 1313–1319.
+- Weissig H, Schildge A, Hoylaerts MF, Iqbal M, Millán JL. 1993. Cloning and expression of the bovine intestinal alkaline phosphatase gene: Biochemical characterization of the recombinant enzyme. Biochem J 290:503–508.
+- Zittle CA, Della Monica ES. 1950. Effects of borate and other ions on the alkaline phosphatase of bovine milk and intestinal mucosa. Arch Biochem Biophys 26: 112–122.
+
+![](../../raw/pages_0369-0384/images/page_377_image_26.jpg)
+
+## 解链温度
+
+将双链 DNA 溶液加热，可使互补碱基间的氢键断裂而使双螺旋解开。单一氢键力相对较弱（约 5kcal/mol/键），因此很容易受加热破坏。然而，任意两条互补 DNA 链拥有的氢键数目越多，引起所有氢键断裂进而使 DNA 两条链分离所需的温度也越高。由温度引起的从双链（双螺旋）到单链（卷曲）构象的转变，可通过光吸收增强来监测，在构象转变的温度下，以消光系数急剧增加为特征。光吸收增加的中点所对应的温度称
+
+---
+
+868
+
+分子克隆实验指南（原书第四版）
+
+为解链温度（ $T_{m}$ ）。用结构术语来描述， $T_{m}$  为双链 DNA 中 50% 的碱基对变性时的温度。核酸结构与热稳定性之间关系的实验探索已有 40 年了。
+
+Marmur 和 Doty（1959, 1962）根据核酸与热稳定之间的关系提出，对于大多数 DNA 样品，其碱基组成与 $T_m$ 呈线形关系。（G+C）含量每增加 1%，直线的斜率增加 0.41℃。对于 DNA 样品（G+C 的含量在 30%～75%之间）在 0.15mol/L NaCl 和 15mmol/L 柠檬酸钠溶液中变性，解链温度为:
+
+$$
+T _ {\mathrm{m}} = 6 9. 3 ^ {\circ} \mathrm{C} + 0. 4 1 (\% [ G + C ]) \tag {1}
+$$
+
+利用此公式可很容易地通过测定样品的  $T_{m}$  来精确计算 DNA 样品的碱基组成。如检测其他盐溶液中 DNA 样品的  $T_{m}$ ，可以用下列更通用的公式:
+
+$$
+T _ {\mathrm{m}} = 8 1. 5 ^ {\circ} \mathrm{C} + 1 6. 6 \log_ {1 0} \left[ M ^ {+} \right] + 0. 4 1 (\% [ G + C ]) \tag {2}
+$$
+
+式中， $[M^{+}]$  为  $M^{+} \leqslant 0.5 mol/L$  时的单价阳离子浓度。
+
+## 分子杂交
+
+20 世纪 60 年代发展起来的分子杂交技术一直是对于分子生物学家最有用的工具之一。分子杂交技术简单而灵敏，促使我们对于基因结构、基因表达和基因组构成理解的更新，并且也成为临床实验室及制药公司的诊断工具。
+
+核酸探针与靶序列间分子杂交理想条件的建立须掌握靶序列:核酸探针双链体的 $T_{m}$ 的知识。虽然在有些情况下， $T_{m}$ 值可通过实验确定（见方案7），但更多的是计算 $T_{m}$ 值。目前已研究出多种公式，可用于估算一定条件下靶序列:探针双链体的 $T_{m}$ 。
+
+当靶与探针均为寡核苷酸，在此 $T_{\mathrm{m}}$ 下，分子内存在由变性区将天然双链体拆开的伸展力。此时从双螺旋向卷曲构象的转变是在分子内进行的，因而不依赖于寡核苷酸的浓度（Wetmur 1991）。$T_{\mathrm{m}}$ 是碱基组成、溶剂成分、双螺旋长度和碱基错配程度的函数（Hall et al. 1980; Wahl et al. 1987; Baldino et al. 1989）。Wetmur（1991）对公式（2）作了改良，可用于 $1 \mathrm{~mol} / \mathrm{L} \mathrm{NaCl}$ 高盐溶液中的杂交:
+
+$$
+\begin{array}{l} T _ {\mathrm{m}} = 8 1. 5 + 1 6. 6 \log_ {1 0} ([ \mathrm{Na} ^ {+} ] / \{1. 0 + 0. 7 [ \mathrm{Na} ^ {+} ] \}) \\ + 0. 4 1 \left(\% [ G + C ]\right) - 5 0 0 / n - P - F \tag {3} \\ \end{array}
+$$
+
+式中，n 是双螺旋体的长度；P 为碱基错配百分率的温度校正（一般每 1% 错配为  $1^{\circ}$ C），每 1% 甲酰胺浓度 F 为  $0.63^{\circ}$ C。对于 RNA 双螺旋:
+
+$$
+\begin{array}{l} T _ {\mathrm{m}} = 7 8 + 1 6. 6 \log_ {1 0} ([ \mathrm{Na} ^ {+} ] / \{1. 0 + 0. 7 [ \mathrm{Na} ^ {+} ] \}) \\ + 0. 7 (\% [ G + C ]) - 5 0 0 / n - P - F \tag{4} \\ \end{array}
+$$
+
+式中，每1%甲酰胺F为0.35℃。对于RNA与DNA杂交体:
+
+$$
+\begin{array}{l} T _ {\mathrm{m}} = 6 7 + 1 6. 6 \log_ {1 0} \left(\left[ \mathrm{Na} ^ {+} \right] / \left\{1. 0 + 0. 7 \left[ \mathrm{Na} ^ {+} \right] \right\}\right) \\ + 0. 8 (\% [ G + C ]) - 5 0 0 / n - P - F \tag {5} \\ \end{array}
+$$
+
+式中，每 1% 甲酰胺 F 为 0.5℃。公式（4）与公式（5）分别由 Bodkin 和 Knudson（1985）及 Casey 和 Davidson（1977）提出。
+
+当探针为寡核苷酸、温度为  $T_{m}$  时，半数双螺旋已解链。此时从双螺旋向卷曲构象的转变是在分子间进行的，因而  $T_{m}$  取决于寡核苷酸的浓度（Wetmur 1991）、序列和溶剂组成。虽然公式（3）、（4）、（5）的多种变通公式亦属常用，但仅用%（ $G + C$ ）不足以预测  $T_{m}$ 。利用最近邻模型结合序列相关热力学数据，可估算出更精确的  $T_{m}$  值（Breslauer et
+
+---
+
+第 13 章 标记的 DNA 探针、RNA 探针和寡核苷酸探针的制备
+
+869
+
+al. 1986; Freier et al. 1986; Kierzek et al. 1986; Rychlik et al. 1990; Wetmur 1991; Rychlik 1994)。由此模型推导的公式是:
+
+$$
+\begin{array}{l} T _ {\mathrm{m}} / ^ {\circ} \mathrm{C} = (T ^ {0} \Delta H ^ {0}) / (\Delta H ^ {0} - \Delta G ^ {0} + R T ^ {0} \ln [ c ]) \\ + 1 6. 6 \log_ {1 0} ([ \mathrm{Na} ^ {+} ] / \{1. 0 + 0. 7 [ \mathrm{Na} ^ {+} ] \}) - 2 6 9. 3 \tag {6} \\ \end{array}
+$$
+
+其中
+
+$$
+\begin{array}{l} \Delta H ^ {0} = \sum_ {\mathrm{nn}} (\mathrm{nn} \Delta H _ {\mathrm{nn}} ^ {0}) + \Delta H _ {\mathrm{p}} ^ {0} + \Delta H _ {\mathrm{e}} ^ {0} \\ \Delta G ^ {0} = \sum_ {\mathrm{nn}} (N _ {\mathrm{nn}} \Delta G _ {\mathrm{nn}} ^ {0}) + \Delta G _ {\mathrm{i}} ^ {0} + \Delta G _ {\mathrm{e}} ^ {0} \\ \end{array}
+$$
+
+式中， $N_{nn}$  为最近邻数目（如 14 聚体的 13 位）；R=1.99 cal/mol（开氏温度）； $T^{0}=298.2^{\circ}K$ ；C 是总摩尔链浓度； $[Na^{+}]\leqslant1\ mol/L$ 。
+
+几个热力学术语的近似值:
+
+平均最近邻焓:
+
+$$
+\Delta H _ {\mathrm{nn}} ^ {0} = - 8. 0 \mathrm{kcal/mol}
+$$
+
+平均最近邻自由能:
+
+$$
+\Delta G _ {\mathrm{nn}} ^ {0} = - 1. 6 \mathrm{kcal/mol}
+$$
+
+启动条件:
+
+$$
+\Delta G _ {\mathrm{i}} ^ {0} = + 2. 2 \mathrm{kcal/mol}
+$$
+
+平均自由末端焓:
+
+$$
+\Delta H _ {\mathrm{e}} ^ {0} = - 8. 0 \mathrm{kcal/mol/末端}
+$$
+
+平均自由末端自由能:
+
+$$
+\Delta G _ {\mathrm{e}} ^ {0} = - 1 \mathrm{kcal/mol/末端}
+$$
+
+平均错配/环焓:
+
+$$
+\Delta H _ {\mathrm{p}} ^ {0} = - 8. 0 \mathrm{kcal/mol/错配}
+$$
+
+注意对每一个错配或环的  $N_{nn}$  应减去 2，在复杂范围内相反末端的公式为:
+
+$$
+T _ {\mathrm{m}} = 2 (A + T) + 4 (G + C) \tag {7}
+$$
+
+式中， $(A+T)$  为寡核苷酸中腺嘌呤和胸腺嘧啶的数目； $(G+C)$  是寡核苷酸中鸟嘌呤和胞嘧啶的数目，并在完全匹配靶序列的短寡核苷酸中起作用（Suggs et al. 1981）。更准确地讲，这一公式预测的是寡核苷酸与固相载体结合的靶序列的杂交体的解离温度 $(T_{\mathrm{d}})$ 。有关 $T_{d}$  的详细讨论见文献 Wetmur（1991）。
+
+上述方法计算出的  $T_{m}$  值可能有较大差异。例如，在 0.5mol/L NaCl 中，与靶 DNA 序列完全匹配（%  $[G + C] = 50$ ）的 14 个碱基的寡核苷酸探针杂交时的  $T_{m}$  的预测，用公式（3）为  $59^{\circ}C$ ，公式（6）为  $55^{\circ}C$ ，公式（7）为  $42^{\circ}C$ 。
+
+---
+
+870
+
+分子克隆实验指南（原书第四版）
+
+## 参考文献
+
+- Baldino FJ, Chesselet MF, Lewis ME. 1989. High resolution in situ hybridization. Methods Enzymol 168: 761–777.
+- Bodkin DK, Knudson DL. 1985. Assessment of sequence relatedness of double-stranded RNA genes by RNA-RNA blot hybridization. J Virol Methods 10: 45–52.
+- Breslauer KJ, Frank R, Blöcker H, Marky LA. 1986. Predicting DNA duplex stability from the base sequence. Proc Natl Acad Sci 83: 8893–8897.
+- Casey J, Davidson N. 1977. Rates of formation and thermal stabilities of RNA:DNA and DNA:DNA duplexes at high concentrations of formamide. Nucleic Acids Res 4: 1539–1552.
+- Freier SM, Kierzek R, Jaeger JA, Sugimoto N, Caruthers MH, Neilson T, Turner DH. 1986. Improved free-energy parameters for predictions of RNA duplex stability. Proc Natl Acad Sci 83: 9373–9377.
+- Hall TJ, Grula JW, Davidson EH, Britten RJ. 1980. Evolution of sea urchin non-repetitive DNA. J Mol Evol 16: 95–110.
+- Kierzek R, Caruthers MH, Longfellow CE, Swinton D, Turner DH, Freier SM. 1986. Polymer-supported RNA synthesis and its application to test the nearest-neighbor model for duplex stability. Biochemistry 25:7840–7846.
+- Marmur J, Doty P. 1959. Heterogeneity in deoxyribonucleic acids. 1. Dependence on composition of the configurational stability of deoxy-
+
+ribonucleic acids. Nature 183: 1427–1429.
+
+Marmur J, Doty P. 1962. Determination of the base composition of deoxyribonucleic acid from its thermal denaturation temperature. J Mol Biol 5: 109–118.
+
+Rychlik R. 1994. New algorithm for determining primer efficiency in PCR and sequencing. J NIH Res 6: 78.
+
+Rychlik W, Spencer WJ, Rhoads RE. 1990. Optimization of the annealing temperature for DNA amplification in vitro. Nucleic Acids Res 18:6409–6412. (Erratum Nucleic Acids Res [1991] 19: 698.)
+
+Suggs SV, Hirose T, Miyake T, Kawashima EH, Johnson MJ, Itakura K, Wallace RB. 1981. Use of synthetic oligodeoxyribonucleotides for the isolation of specific cloned DNA sequences. In Developmental biology using purified genes (ed Brown DB, et al.), pp. 683–693. Academic, New York.
+
+Wahl GM, Berger SL, Kimmel AR. 1987. Molecular hybridization of immobilized nucleic acids: Theoretical concepts and practical considerations. Methods Enzymol 152: 399–407.
+
+Wetmur JG. 1991. DNA probes: Applications of the principles of nucleic acid hybridization. Crit Rev Biochem Mol Biol 26: 227–259.
+
+(郭 宁 译, 王友亮 校)

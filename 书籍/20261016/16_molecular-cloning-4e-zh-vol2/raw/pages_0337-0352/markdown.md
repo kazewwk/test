@@ -1,0 +1,625 @@
+![](images/page_336_image_2.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+表 13-3 DNA 的末端标记
+
+| 模板 | 标记位点 | 首选方法 |
+| --- | --- | --- |
+| 单链DNA或RNA | 5'端 | 激酶反应:先用碱性磷酸酶如CIP或SAP从核酸的5'端除去未标记的磷酸残基而产生一个羟基(方案9),然后用T4噬菌体多核苷酸激酶将标记物从ATP的γ位转移到新产生的5'羟基上(Wu et al.1976)(方案10和方案11)。上述反应可在一只管中相继进行,但需以无机磷酸抑制磷酸酶活性(Chaconas and van de Sande 1980;Cobianchi and Wilson 1987)。另一可供选择的程序是限制性内切核酸酶消化及多核苷酸激酶5'端标记一步进行,而不需借助碱性磷酸酶的作用(Oommen et al. 1990)。此反应机制尚不清楚交换反应:将未标记的磷酸残基从核酸的5'端转移到ADP上,而后被ATPγ位的标记磷酸基所取代。两种反应均由T4噬菌体多核苷酸激酶催化,反应于同一试管中在过量的ADP及限量γ-标记ATP的存在下同步进行(Berkner and Folk 1977)。当标记的单链DNA长度>300核苷酸时,交换反应的总效率可因反应混合物中加入大分子聚集剂如聚乙二醇(4%~10%)而大为改善(Harrison and Zimmerman 1986a,b)。尽管如此,5'端标记DNA的比活度总是低于激酶反应的标记产物注意:T4噬菌体多核苷酸激酶具有降解ATP的3'磷酸酶活性。几家厂商则利用一株携带编码多核苷酸激酶的突变型基因的T4噬菌体(amN81 pseT1)感染细胞并从中制备该酶。该突变型酶缺乏3'磷酸酶活性 |
+| 单链DNA | 3'端 | 牛胸腺末端脱氧核苷酸转移酶可催化非模板依赖性的[α-32P]NTP聚合到单链DNA的3'端,此反应需要$Co^{2+}$作为辅助因子(方案13,Deng and Wu 1983)。放射性标记的DNA继之在碱性条件下用碱性磷酸酶处理,以产生固定长度、均一标记的DNA片段(Roychoudhury et al. 1976,1979; Wu et al. 1976)。此外,应用[α-32P]双脱氧ATP(Yousaf et al. 1984)或[α-32P]3'脱氧腺苷三磷酸(Tu and Cohen 1980)作为末端转移酶的底物,可使3'端的掺入仅限于一个核苷酸。由于这些分子均无3'羟基,因而无其他分子可被掺入。多数情况下,[α-32P]双脱氧ATP是标记3'端的优先底物,因为它的掺入比[α-32P]3'脱氧腺苷三磷酸效率更高。但3'端含脱氧腺苷残基的DNA分子有一个优点:它们能抵抗污染的外切核酸酶的消化,因而避免了单链DNA3'端核酸标记物的丢失亦可用末端转移酶将生物素和荧光素化的脱氧或双脱氧核苷酸加到单链DNA片段的3'端(见方案13可选方案“用TdT合成非放射性标记的探针”,见Vincent et al.1982;Schneider et al. 1994) |
+| 带5'突出端的双链DNA | 5'端 | 如上所述,用多核苷酸激酶可进行单链DNA5'端的标记(方案10) |
+| 含平端或5'凹端的双链DNA | 5'端 | 如上所述,用多核苷酸激酶可进行单链DNA5'端的标记(方案11)。但是,用多核苷酸激酶标记含平端或5'凹端的双链DNA分子的效率低于5'突出端分子的标记,即使5'凹端的部分反应仍可能需要大量的酶和[γ-32P]ATP,或需要加入拥挤剂如PEG(Lillehaug and Kleppe 1975; Harrison and Zimmerman 1986a) |
+| 含平端和3'凹端的双链DNA | 3'端 | Klenow片段保留了模板依赖性的DNA聚合酶活性和全酶3'→5'外切核酸酶活性,但缺乏其强力的5'→3'外切核酸酶活性,可用于双链DNA3'凹端的补平(方案8)。通常反应混合物中4种dNTP中仅有1种被放射性标记。加入3种未标记dNTP有两个目的:避免模板3'端的核苷酸被外切核酸酶除去;可使放射性标记的dNTP作为第2、第3或第4个核苷酸加到3'凹端。有时在反应混合物中仅有一个放射性标记的dNTP存在,可使两种不同的限制性内切核酸酶消化的双链DNA仅在一端被选择性标记。例如,DNA被切割成GGBamHI CCTAG和EcoRI CTTAA可在补平反应中,用[α-32P]dGTP作为放射性标记物的唯一来源,选择性地标记BamHI末端。DNA亦可由一种限制性内切核酸酶消化及放射性标记,然后再用第二种酶切割成两个DNA片段,每一个片段仅在一端带有放射性标记物现已有可供DNA片段不对称标记用的特殊载体。例如,载体pSP64CS和pSP65CS含有被限制性内切核酸酶Tth111I切割的位点,该酶识别冗余序列↓5' GACNNNGTC 3'3' CTGNNNCAG 5'↑能产生单一突出的5'核苷。将靶DNA克隆于两个Tth111I位点之间,能在两端产生含不同突出核苷的末端。DNA经消化后,可通过Klenow片段及适当的[α-32P]dNTP选择性地标记DNA的一端或两端(Volkaert et al. 1984; Eckert 1987)在Taq聚合酶的催化下,平端DNA片段可通过模板非依赖性的单个核苷酸添加(通常用[α-32P]dATP)而被标记 |
+| 带有3'突出端的双链DNA | 3'端 | T4噬菌体DNA聚合酶具5'→3'聚合酶活性和3'→5'外切核酸酶活性,这种外切核酸酶切割单链DNA的活性比作用于双链DNA的活性更高。T4噬菌体DNA聚合酶的外切核酸酶活性比Klenow片段的外切核酸酶强约200倍。因此,T4 DNA聚合酶可用于含3'突出端DNA分子的末端标记。此反应分两步进行。首先,强有力的3'→5'外切核酸酶除去DNA的突出尾端产生3'凹端。然后,在高浓度放射性标记前体的存在下,3'端dNTP的掺入使核酸外切降解得到平衡。此反应为3'凹端或平端DNA的核苷酸去除和置换的循环,有时又称交换或置换反应(O'Farrell et al. 1980)此外,突出的3'端亦可用牛胸腺末端脱氧核苷酸转移酶、poly(A)聚合酶(见单链DNA3'端标记)或某些热稳定的DNA聚合酶如Taq催化,通过模板非依赖性的核苷酸添加而标记 |
+| RNA | 3'端 | T4噬菌体RNA连接酶可催化终止性放射性标记的二磷酸核苷([5'-32P]pNp)连接到RNA的3'羟基端(Uhlenbeck and Gumport 1982)。反应使RNA分子延伸一个核苷酸的长度,并在最后一个核苷酸间连键内产生一个[α-32P]磷酸化的3'端(England et al. 1977; Kikuchi et al. 1978; Tyc and Steitz 1989)。这个末端3'磷酸基团可作为一个链终止子,通过防止进一步形成磷酸二酯键而起作用。这种标记方法主要用于标记小分子RNA。然而,可能由于二级结构引起的位阻效应,标记物的掺入量常使底物RNA的相对丰度产生假象poly(A)聚合酶可催化模板非依赖性RNA3'端添加腺苷残基。当[α-32P]ATP用作底物时,poly(A)区域内的磷酸二酯键含32P原子(Lingner and Keller 1993)。用3'脱氧腺苷三磷酸(3'-dATP)取代ATP,可导致单一3'-dA残基添加到RNA末端,因而此法成为RNA3'端放射性标记的有用方法。酵母poly(A)聚合酶优先标记较长的RNA分子,而RNA连接酶则可更有效地标记短的RNA分子末端转移酶已被用于将生物素标记的双脱氧核苷酸添到RNA的3'端(Schneider et al. 1994),但这种反应的效率尚未被彻底地研究 |
+
+## 3'凹端和平端的标记
+
+此方案要求待末端标记的 DNA 含有某种序列，该序列可被某种限制性内切核酸酶识别和切割而产生 3'凹端。反应中所用  $[\alpha-^{32}P]dNTP$  的选择取决于 DNA 末端 5'突出端的序列及实验目的。例如，用 EcoRI 切出的 DNA 末端可用  $[\alpha-^{32}P]dATP$  标记:
+
+$$
+\begin{array}{c} _ {3 ^ {\prime}} ^ {5 ^ {\prime}} - \mathrm{CTTAA} _ {\mathrm{P} 5 ^ {\prime}} ^ {\prime} + _ {3 ^ {\prime} \mathrm{HO}} ^ {5 ^ {\prime} \mathrm{P}} \mathrm{G} _ {- 5 ^ {\prime}} ^ {\text {AATTC} _ {- 3 ^ {\prime}}} \xrightarrow [ [ \alpha^ {- 3 2} \mathrm{P} ] \mathrm{dATP} ]{\text {Klenow酶}} _ {3 ^ {\prime}} ^ {5 ^ {\prime}} - \mathrm{CTTAA} _ {\mathrm{P} 5 ^ {\prime}} ^ {\text {GAA} _ {\mathrm{OH} 3 ^ {\prime}}} + _ {3 ^ {\prime} \mathrm{HO}} ^ {5 ^ {\prime} \mathrm{P}} \mathrm{AATTC} _ {- 3 ^ {\prime}} \\ \end{array}
+$$
+
+两个近侧 5' 突出的核苷酸均为胸苷残基，因此 Klenow 酶能够插入两个腺嘌呤残基。由 BamHI 切割 DNA 产生的末端可用  $[\alpha-^{32}P]$ dGTP 标记:
+
+$$
+\begin{array}{c} _ {3 ^ {\prime}} ^ {5 ^ {\prime}} - \mathrm{CCTAG} _ {\mathrm{P} 5 ^ {\prime}} ^ {\prime} + _ {3 ^ {\prime} \mathrm{HO}} ^ {5 ^ {\prime} \mathrm{P}} \mathrm{GATCC} _ {- 3 ^ {\prime}} ^ {\prime} \xrightarrow [ [ \alpha^ {- 3 2} \mathrm{P} ] \mathrm{dGTP} ]{\text {Klenow酶}} _ {3 ^ {\prime}} ^ {5 ^ {\prime}} - \mathrm{CCTAG} _ {\mathrm{P} 5 ^ {\prime}} ^ {\prime} + _ {3 ^ {\prime} \mathrm{HO}} ^ {5 ^ {\prime} \mathrm{P}} \mathrm{GATCC} _ {- 3 ^ {\prime}} ^ {\prime} \end{array}
+$$
+
+请注意，利用 $[\alpha-^{32}P]dGTP$ 作为放射性标记底物的反应中，只有一个放射性标记的核苷酸掺入每一端。但是，如在聚合反应中加入未标记的 dGTP、dATP 和 dTTP，可用 $[\alpha-^{32}P]dCTP$ 进行 DNA 片段的放射性标记。反应中加入未标记的 dNTP:①可使用任何与 5'突出端互补的放射性标记的 dNTP；②可避免 Klenow 酶的 3'→5'外切酶活性使核酸外切去除模板 3'端核苷酸的可能性；③确保所有放射性标记的 DNA 产物等长。
+
+通过选择适当的$[\alpha-^{32}\mathrm{P}]\mathrm{dNTP}$，可做到只标记双链 DNA 分子的一端。例如，用 EcoRI 切开 DNA 的一端，而另一端用 BamHI 酶切，则可在反应中加入 $[\alpha-^{32}\mathrm{P}]\mathrm{dATP}$（标记 EcoRI 位点）或用$[\alpha-^{32}\mathrm{P}]\mathrm{dGTP}$（标记 BamHI 位点）进行选择性标记。如待末端标记片段的序列是已知的，则某些限制酶识别序列中 N 核苷酸可被用于优先标记 DNA 的一端。例如，限制酶 HinfI 识别序列 5'-GANTC-3'，并在 G 和 A 之间切割产生 3'凹端。如果 DNA 片段 5'端的 HinfI 识别序列为 5'-GACTC-3'，而 3'端序列为 5'-GAGTC-3'，则可在反应中加入未标记的 dATP 和$[\alpha-^{32}\mathrm{P}]\mathrm{dGTP}$ 选择性地标记 DNA 片段的 5'端，或在反应中加入未标记的 dATP 和$[\alpha-^{32}\mathrm{P}]\mathrm{dCTP}$ 选择性地标记 DNA 片段的 3'端。限制性内切核酸酶如 DdeI、Fnu4H、Bsu36I 和 EcoO109I 均可用于多种类似的标记策略。
+
+利用 Klenow 酶较弱的  $3'\rightarrow5'$  外切核酸酶活性和较强的聚合酶活性, 可置换平端 DNA 片段的末端核苷酸。例如, 识别  $5'$ -AGCT- $3'$  序列并在 G 和 C 之间切割 DNA 的限制酶 AluI 所产生的 DNA 片段, 在 Klenow 酶和  $[\alpha-^{32}P]$ dGTP 存在下温育时, 会导致外切核酸酶去除 dGMP, 并被放射性标记的鸟嘌呤核苷酸取代:
+
+$$
+\begin{array}{l} _ {3 ^ {\prime}} ^ {5 ^ {\prime}} - \mathrm{AG} _ {\mathrm{OH3} ^ {\prime}} + _ {3 ^ {\prime} \mathrm{OH}} ^ {5 ^ {\prime} \mathrm{P}} \mathrm{CT} _ {- 3 ^ {\prime}} \xrightarrow {\text {Klenow酶}} _ {3 ^ {\prime}} ^ {5 ^ {\prime}} - \mathrm{A} _ {\mathrm{OH3} ^ {\prime}} + _ {3 ^ {\prime} \mathrm{OH}} ^ {5 ^ {\prime} \mathrm{P}} \mathrm{CT} _ {- 3 ^ {\prime}} \xrightarrow [ [ \alpha - {} ^ {3 2} \mathrm{P} ] \mathrm{dGTP} ]{\text {Klenow酶}} _ {3 ^ {\prime}} ^ {5 ^ {\prime}} - \mathrm{AG} _ {\mathrm{OH3} ^ {\prime}} + _ {3 ^ {\prime} \mathrm{OH}} ^ {5 ^ {\prime} \mathrm{P}} \mathrm{CT} _ {- 3 ^ {\prime}} \end{array}
+$$
+
+虽然放射性标记平端 DNA 片段的比活度不高，但一般足以用作凝胶电泳中的分子质量标准。T4 噬菌体 DNA 聚合酶比 Klenow 片段的 3'→5' 外切核酸酶活性强得多，用 T4 DNA 聚合酶标记平端分子更有效。
+
+由 Klenow 酶催化的末端补平反应不限于放射性标记 dNTP，用半抗原如生物素、荧光素和 DIG 修饰的脱氧核苷酸亦可使用。
+
+## 试剂
+
+$[\alpha-^{32}P]dNTP$ （10mCi/mL，比活性800～3000Ci/mmol）
+
+为最大限度地减少前体和探针的辐射分解，应尽可能在 $\left[\alpha-^{32}P\right]dGTP$ 到达实验室的当天制备放射性标记探针。乙酸铵（10mol/L）（可选，见步骤4）。
+
+适宜的限制性内切核酸酶
+
+选择产生3'凹端的酶。
+
+含适当未标记的 dNTP 各 1mmol/L 的 dNTP 溶液
+
+有关制备和储存 dNTP 溶液，见信息栏 “dNTP 储备溶液的制备”。
+
+乙醇
+
+大肠杆菌 DNA 聚合酶 I Klenow 片段
+
+模板 DNA (0.1\~5μg)
+
+采用含适当 3' 凹端的线性双链 DNA。
+
+## 设备
+
+Sephadex G-50 离心柱，用 TE（pH 7.6）平衡（可选；见步骤 4）
+
+Sephadex G-50 凝胶过滤介质可用于从低分子质量物质（放射性前体保留在柱中）中分离 DNA（DNA 可穿过介质）。放射性标记 DNA 纯化用 Sephadex G-50 柱可从几个商品渠道获得[如 Quick Spin Columns(Roche Applied Science 公司)]。但是，用 1mL 装填硅化玻璃棉的一次性注射器很容易完成（见方案 1，步骤 6～14）。
+
+水浴（75℃）
+
+![](images/page_339_image_17.jpg)
+
+## 方法
+
+1. 在 $25 \sim 50 \mu \mathrm{L}$ 适当的限制酶缓冲液中, 用所需限制酶消化 $5 \mu \mathrm{g}$ 模板 DNA。
+
+标记反应可在限制性内切核酸酶消化 DNA 后立即进行，且不必除去或灭活限制酶。鉴于 Klenow 片段在多种条件下均可作用（只要  $Mg^{2+}$  以毫摩尔浓度存在），故也不必更换缓冲液。在限制性酶切反应结束时，加入 Klenow 酶、未标记的 dNTP 和适当的  $[\alpha-^{32}P]dNTP$ ，于室温下再反应 15min（如下述）。即使采用粗提的 DNA 样品（如小量制备的质粒），此程序亦可顺利进行。
+
+2. 向完成的限制酶消化反应中加入:
+
+| $[\alpha-^{32}P]dNTP(10\ mCi/mL)$(比活性 800~3000 Ci/mmol) | 2~50μCi |
+| --- | --- |
+| 未标记的 dNTP | 至终浓度为 100 μmol/L |
+| Klenow 片段 | 1~5U |
+
+如本方案用于非放射性标记，则用修饰的核苷酸（如生物素-dUTP、DIG-dUTP或荧光素-dUTP）取代一部分dTTP，比率为35%修饰的dUTP及65%dTTP，而不用 $[\alpha-^{32}P]$ dNTP。
+
+室温温育反应 15min。
+
+每微克模板 DNA（1μg 1000 bp 片段相当于约 3.1pmol 双链 DNA 的末端；见方案 9 中信息栏 “计算 DNA 样品中 5' 端含量”）需要约 0.5U 的 Klenow 酶。Klenow 酶在多数限制酶缓冲液中均可作用。
+
+亦可用反转录酶（1～2U）替代本方案中的 Klenow 酶。但是，反转录酶对于缓冲液的条件要求较高。因此，反转录酶主要是在常规反转录酶缓冲液的反应中用于标记纯化的 DNA 片段。
+
+当标记的 DNA 用于 S1 核酸酶绘制 mRNA 图谱时（见第 6 章，方案 16），则反应中标记 dNTP 的浓度应在实际情况允许的前提下增至最大。反应在室温进行 15min 后，加入终浓度各为 0.2mmol/L 的 4 种未标记 dNTP，在室温下继续反应 5min。这一冷追加措施可确保每个 3' 凹端都被完全补平，并保证所有标记 DNA 分子都精确
+
+等长。
+
+3. 于 $75^{\circ} \mathrm{C}$ 加热 $10 \mathrm{~min}$ 以终止反应。
+4. 用 Sephadex G-50 离心柱色谱法分离放射性标记的 DNA 与未掺入的 dNTP（按照方案 1，步骤 6～14 用商品化或自制的柱子），或在 2.5mol/L 乙酸铵存在下进行两轮乙醇沉淀（见第 1 章，方案 4）。
+
+## 制备凝胶电泳用的放射性标记分子质量标准
+
+本方案制备的标记 DNA 片段可用作凝胶电泳的 DNA 分子质量标准物。由于 DNA 片段的标记程度与其摩尔浓度而不是大小成正比，所以限制酶消化后所产生的大片段与小片段均以同样的程度被标记。因此，通过放射自显影可定位那些由于分子质量太小而用溴化乙锭或其他染色无法看到的 DNA 条带。
+
+凝胶电泳前，亦可从标记DNA中除去未掺入的 $[\alpha -^{32}\mathrm{P}]\mathrm{dNTP}$，但非必需。$[\alpha -^{32}\mathrm{P}]\mathrm{dNTP}$ 在聚丙烯酰胺和琼脂糖凝胶中的迁移率均比溴酚蓝快，因此除最小的DNA片段外，不会干扰任何样品的检测。但是，除去未掺入的标记物的优点在于，它可以避免放射性物质污染电泳槽的阳极缓冲液室，还可用手提式小型探测器估计加到凝胶上的放射性标记DNA的量，并可减少对DNA的放射化学破坏。
+
+## 参考文献
+
+- Berkner KL, Folk WR. 1977. Polynucleotide kinase exchange reaction: Quantitative assay for restriction endonuclease-generated 5'-phosphoryl termini in DNA. J Biol Chem 252: 3176–3184.
+- Chaconas G, van de Sande JH. 1980. 5'-32P labeling of RNA and DNA restriction fragments. Methods Enzymol 65: 75–85.
+- Cobianchi F, Wilson SH. 1987. Enzymes for modifying and labeling DNA and RNA. Methods Enzymol 152: 94–110.
+- Deng G, Wu R. 1983. Terminal transferase: Use of the tailing of DNA and for in vitro mutagenesis. Methods Enzymol 100: 96–116.
+- Eckert RL. 1987. New vectors for rapid sequencing of DNA fragments by chemical degradation. Gene 51: 247–254.
+- England TE, Gumport RI, Uhlenbeck OC. 1977. Dinucleoside pyrophosphate are substrates for T4-induced ligase. Proc Natl Acad Sci 74:4839–4842.
+- Harrison B, Zimmerman SB. 1986a. T4 polynucleotide kinase: Macromolecular crowding increases the efficiency of reaction at DNA termini. Anal Biochem 158: 307–315.
+- Harrison B, Zimmerman SB. 1986b. Stabilization of T4 polynucleotide kinase by macromolecular crowding. Nucleic Acids Res 14: 1863–1870.
+- Kikuchi Y, Hishinuma F, Sakaguchi K. 1978. Addition of mononucleotides to oligoribonucleotide acceptors with T4 RNA ligase. Proc Natl Acad Sci 75: 1270–1273.
+- Lillehaug JR, Kleppe K. 1975. Effect of salts and polyamines polynucleotide kinase. Biochemistry 14: 1225–1229.
+- Lingner J, Keller W. 1993. 3'-End labeling of RNA with recombinant yeast poly(A) polymerase. Nucleic Acids Res 21: 2917–2920.
+- O'Farrell PH, Kutter E, Nakanishi M. 1980. A restriction map of the bacteriophage T4 genome. Mol Gen Genet 179: 421–435.
+- Oommen A, Ferrandis I, Wang MJ. 1990. Single-step labeling of DNA using restriction endonucleases and T4 polynucleotide kinase. Bio-Techniques 8: 482–486.
+- Roychoudhury R, Jay E, Wu R. 1976. Terminal labeling and addition of homopolymer tracts to duplex DNA fragments by terminal deoxynucleotidyl transferase. Nucleic Acids Res 3: 101–116.
+- Roychoudhury R, Tu CP, Wu R. 1979. Influence of nucleotide sequence adjacent to duplex DNA termini on 3' terminal labeling by terminal transferase. Nucleic Acids Res 6: 1323–1333.
+- Schneider GS, Martin CS, Bronstein 1. 1994. Chemiluminescent detection of RNA labeled with biotinylated dideoxynucleotides and terminal transferase. J NIH Res 6: 90.
+- Telford JL, Kressmann A, Koski RA, Grosschedl R, Müller F, Clarkson SG, Birnstiel ML. 1979. Delimitation of a promoter for RNA polymerase III by means of a functional test. Proc Natl Acad Sci 76: 2590–2594.
+- Tu CP, Cohen SN. 1980. 3'-End labeling of DNA with  $[\alpha-^{32}P]$ cordycepin-5'-triphosphate. Gene 10: 177–183.
+- Tyc K, Steitz JA. 1989. U3, U8 and U13 comprise a new class of mammalian snRNPs localized in the cell nucleolus. EMBO J 8: 3113–3119.
+- Vincent C, Tchen P, Cohen-Solal M, Kourilsky P. 1982. Synthesis of 8-(2-4 dinitrophenyl 2-6 aminohexyl)aminoadenosine 5' triphosphate: Biological properties and potential uses. Nucleic Acids Res 10: 6787–6796.
+- Volkaert G, de Vleeschouwer E, Blöcker H, Frank R. 1984. A novel type of cloning vector for ultrarapid chemical degradation sequencing of DNA. Gene Anal Tech 1: 52–59
+- Wu R, Jay E, Roychoudhury R. 1976. Nucleotide sequence analysis of DNA. Methods Cancer Res 12: 87–176.
+- Yousaf SI, Carroll AR, Clarke BE. 1984. A new and improved method for 3'-end labelling DNA using  $[\alpha-^{32}P]$ ddATP. Gene 27: 309–313.
+
+## 方案 9 用碱性磷酸酶进行 DNA 片段的去磷酸化
+
+去除核酸的 5'磷酸可用来增强随后的 $[\gamma-^{32}P]$ ATP 的标记，减少质粒载体在连接反应中的环化，使 DNA 易受或抵抗其他作用于核酸的酶（如  $\lambda$  外切核酸酶）。究其实质，任何核苷磷酸酶 [如细菌碱性磷酸酶、牛小肠磷酸酶（CIP）、胎盘磷酸酶、虾碱性磷酸酶（SAP）或几种酸性磷酸酶如红薯和前列腺酸性磷酸酶] 均可催化核酸模板上 5'端磷酸的去除。事实上，这些酶优先作用于小分子底物如 p-硝基苯磷酸（PNPP）和核酸暴露的 5'端磷酸基，而非大分子球形蛋白类底物。详细内容见本章信息栏“碱性磷酸酶”。
+
+由于 CIP 和 SAP 可从商业渠道获得，且容易灭活，因此是分子克隆中应用最广泛的磷酸酶。虽然每活性单位的 CIP 较便宜，但 SAP 具有在缺乏螯合剂时容易灭活的优点。实际操作中，DNA 修饰反应（如磷酸化和连接）能在同一反应管中连续进行，因而避免了酚:氯仿抽提和乙醇沉淀。
+
+![](images/page_341_image_5.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+氯仿
+
+CIP 或 SAP（Affymetrix 公司，Roche Applied Sicence 公司或 Worthington Biochemicals 公司）
+
+10×去磷酸化缓冲液（用于 CIP 或 SAP）&lt;A&gt;
+
+DNA 样品（0.1～10μg [1～100 pmol]）
+
+去磷酸反应通常在  $25 \sim 50 \mu L$  体积中进行，含  $1 \sim 100 pmol 5'$  磷酸化的 DNA 末端。
+
+EDTA (0.5mol/L, pH 8.0) &lt;A&gt;或 EGTA (0.5mol/L, pH 8.0) &lt;A&gt; (如使用 CIP)
+
+乙醇
+
+酚:氯仿（1:1，V/V）
+
+蛋白酶 K
+
+限制性内切核酸酶
+
+SDS (10%, m/V) &lt;A&gt; (如使用 CIP)
+
+乙酸钠（3mol/L，pH 7.0 [如使用 CIP] 和 pH 5.2）&lt;A&gt;
+
+之所以使用 pH 为 7.0 的 3 mol/L 的乙酸钠，是因为在酸性 pH 的条件下，EDTA 会从溶液中沉淀下来。
+
+TE (pH 7.6) &lt;A&gt;
+
+Tris-Cl (1mol/L, pH 8.5) &lt;A&gt;
+
+## 设备
+
+水浴或加热块（56℃、65℃或75℃ [用于 CIP] 或 70℃ [用于 SAP]）
+
+## 计算 DNA 样品中 5' 端含量
+
+用下列公式计算待测定 DNA 样品中 5' 端的 pmol 数。
+
+双链 DNA
+
+5'端含量（pmol）= $\left[X/(Y\times660g/mol/bp)\right]\times10^{12}$ pmol/mol×2末端/分子式中，X是DNA片段的质量（g）；Y是DNA片段的长度（bp）。例如，1μg线性化的3kb质粒DNA=1pmol 5'端，1μg 1kb双链DNA片段=3pmol 5'端。
+
+单链 DNA
+
+5'端含量（pmol）= $\left[X/(Y\times330\ g/mol/核苷酸)\right]\times10^{12}\ pmol/mol$ 
+
+式中，X是DNA片段的质量（g）；Y是DNA片段的长度（核苷酸）。例如，1μg（约0.03  $OD_{260}$ ）25-mer寡核苷酸等于120 pmol 5'端。
+
+![](images/page_342_image_10.jpg)
+
+## 方法
+
+1. 用所选择的限制性内切核酸酶完全消化 $1 \sim 10 \mu \mathrm{g} (10 \sim 100 \mathrm{pmol})$ 待去磷酸化的 DNA。
+
+按照限制性内切核酸酶生产厂家建议的温育时间和温度进行反应。消化的进程可用琼脂糖凝胶电泳进行分析。
+
+在用  $10 \times CIP$  或  $10 \times SAP$  缓冲液调至 pH 8.5 的限制酶缓冲液中，CIP 和 SAP 将以略微降低的效率使 DNA 去磷酸化，见下一步骤。如仍不满意，可用酚:氯仿抽提及标准乙醇沉淀纯化 DNA，然后溶于最小体积的 10mmol/L Tris-Cl（pH 8.5）。
+
+2. 用 CIP 或 SAP 使限制性酶切的 DNA 5' 端去磷酸化。
+
+## 用 CIP 进行 DNA 的去磷酸化
+
+i. 向 DNA 中加入:
+
+| 10×CIP 去磷酸化缓冲液 | 5μL |
+| --- | --- |
+| $H_2O$ | 加至 48μL |
+
+ii. 加入适量的 CIP。
+
+1U 的 CIP 可使约 1pmol 5' 磷酸化末端（5'凹端或平端）或约 50pmol 5' 突出端去磷酸化。不同厂家的酶用量可稍有不同。
+
+iii. 37℃温育反应30min后，加入第二份CIP，继续温育30min。
+
+iv. 在温育反应结束后，加入 SDS 和 EDTA（pH 8.0）至终浓度分别为 0.5% 和 5mmol/L 以灭活 CIP，充分混匀各试剂，再加入蛋白酶 K 至终浓度为 100μg/mL，56℃ 下温育 30 min。
+
+v. 将反应物冷却至室温，先用酚:氯仿抽提 2 次，再以氯仿单独抽提 1 次以纯化 DNA。
+
+用于灭活和消化 CIP 的蛋白酶 K 和 SDS 必须用酚:氯仿抽提完全去除，然后进行下步的酶处理（多核苷酸激酶的磷酸化或连接酶反应等）。
+
+▲ 单独用氯仿抽提一次不足以使 SDS 浓度降低至不再抑制多核苷酸激酶的程度。因此，Kurien 等（1997）建议可能需要用氯仿抽提 4 次。
+
+如反应中含小量 DNA (<100 ng)，在酚:氯仿抽提前，可加入糖原或线性聚丙烯酰胺（Gaillard and Strauss 1990）作载体。勿加核酸载体（tRNA、鲑精 DNA 等），因为它们可在激酶反应中与去磷酸化的 DNA 竞争放射性标记的 ATP。
+
+CIP 亦可在 10mmol/L EGTA（pH 8.0）存在下，65℃加热 30 min 灭活（或 75℃加热 10 min）。
+
+▲ 用 EGTA，而不是 EDTA。
+
+## 用 SAP 进行 DNA 去磷酸化
+
+i. 在 DNA 中加入:
+
+| 10×SAP去磷酸化缓冲液 | 5μL |
+| --- | --- |
+| $H_{2}O$ | 加至48μL |
+
+ii. 加入适量的 SAP。
+
+1U 的 SAP 可使约 1 pmol 5'磷酸化末端（3'凹端或 5'凹端）或约 0.2pmol 平端 DNA 去磷酸化。不同厂家酶的用量可略有差异。
+
+iii.  $37^{\circ}$ C 温育反应 1h。
+
+iv. 为灭活 SAP，将反应转移至  $70^{\circ}$ C 加热 20min，然后冷却至室温。
+
+3. 将水相转移至一个清洁的微量离心管中，在 0.1 体积的 3mol/L 乙酸钠（pH 5.2）（如用 SAP）或 0.1 体积的 3mol/L 乙酸钠（pH 7.0）（如用 CTP）的存在下，用标准乙醇沉淀回收 DNA。
+
+4. 室温下干燥沉淀物，然后溶于 TE（pH 7.6），使 DNA 的浓度大于 2nmol/mL。
+
+为自 RNA 中去除 5' 磷酸基，使用 0.01U CIP/pmol 5' 端，37℃ 温育 15min，然后在 55℃ 下继续温育 30min。亦可用 0.01～0.1U SAP/pmol 5' 端，37℃ 温育 1h，以使 RNA 去磷酸化。
+
+如果去磷酸化的 DNA 用作多核苷酸激酶的底物，则必须严格纯化。可通过离心柱色谱法、凝胶电泳、密度梯度离心或 Sepharose CL-4B 柱色谱法将其与低分子质量核酸分离。虽然此类污染物在制品中仅占核酸量的一小部分，但它们却能产生比例大得多的 5' 端。在 T4 噬菌体多核苷酸激酶催化的反应中，污染的低分子质量 DNA 和 RNA 分子可作为占优势的核酸群体被标记，因此必须除去。
+
+由于氨离子是 T4 噬菌体多核苷酸激酶的强力抑制剂，因此在多核苷酸激酶处理前，去磷酸化的 DNA 不应溶于含氨盐的缓冲液或在该缓冲液中沉淀。
+
+## 参考文献
+
+Gaillard C, Strauss F. 1990. Ethanol precipitation of DNA with linear polyacrylamide as carrier. Nucleic Acids Res 18: 378.
+
+Kurien BT, Scofield RH, Broyles RH. 1997. Efficient 5' end labeling of dephosphorylated DNA. Anal Biochem 245: 123–126.
+
+## 方案 10 含 5'突出羟基端的 DNA 分子磷酸化
+
+用磷酸酶去除核酸的 5' 磷酸根，然后在 T4 噬菌体多核苷酸激酶的催化下，以放射性标记的形式重新将磷酸加到核酸上，这是一种广泛应用的制备  ${}^{32}P$  标记探针的技术（见信息栏“用 T4 噬菌体多核苷酸激酶标记 DNA 5' 端”）。当反应有效进行时，反应中 40%～50% 的 5' 突出端可被放射性标记（Berkner and Folk 1977）。但产生的探针不如由其他放射性标记方法获得的比活性高，因为每个 DNA 分子中仅引入了一个放射性原子。尽管如此，比活性范围在 3000～7000Ci/mmol 的  $[\gamma-{}^{32}P]$  ATP 的实用性使探针的合成适用于多种研究目的，包括:
+
+- 作为引物在引物延伸实验中进行 mRNA 5'端作图
+- 在用 S1 核酸酶进行 RNA 结构分析时作为底物
+
+本方案介绍一种标记去磷酸化的 5' 突出端的方法。DNA 末端标记方法的总结可见方案 8 中的表 13-3。
+
+## 用 T4 噬菌体多核苷酸激酶标记 DNA 5'端
+
+催化核酸 5'端标记的首选酶为 T4 噬菌体多核苷酸激酶，该酶可将 $[\gamma-^{32}P]$ ATP 的 $\gamma$ 磷酸残基转移到去磷酸化的单链 DNA、双链 DNA 和 RNA 的 5'羟基端。此外，该酶以低得多的效率，将磷酸残基恢复至位于双链 DNA 切口的 5'羟基上。T4 多核苷酸激酶是一个相对分子质量约为 142 000 的四聚体蛋白，由 T4 噬菌体结构基因 pseT 编码的 4 个相同的亚单位构成（见综述，Richardson 1971; Maunder 1993）。由 T4 噬菌体多核苷酸激酶催化的 $^{32}P$ 向 DNA 5'端的转移，可以两种方式进行（图 1）:
+
+- 在正向反应中，首先用磷酸酶（CIP 或 SAP）处理单链或双链 DNA，以去除 5' 端磷酸基团（方案 9）。然后，反应产生的 5'羟基末端在多核苷酸激酶催化的反应中，被  $[\gamma-^{32}P]$  ATP 转移来的  $\gamma$ -磷酸基重新磷酸化（本方案和方案 11）。放射性标记的效率取决于 DNA 的纯度（未纯化的 DNA 溶液中含有激酶抑制剂）和 DNA 5' 端的序列。由于未知的原因，5' 端带有一个胞嘧啶残基的寡核苷酸比以 A 或 T 开始的寡核苷酸的标记效率低 4 倍，比以 G 开始的寡核苷酸低 6 倍（van Houten et al. 1998）。
+- 某些 DNA 模板如合成的寡核苷酸在激酶反应前不必用磷酸酶处理，合成的寡核苷酸几乎必定带有游离的 5'羟基。由于磷酸化反应是可逆的，T4 多核苷酸激酶在核苷二磷酸受体如 ADP 摩尔过量的条件下，将催化 5'端的去磷酸化（van de Sande et al. 1973）。标记的第二种方法（交换反应）利用该酶催化的正向和反向两种反应。
+
+T4 多核苷酸激酶可在限制性内切核酸酶缓冲液中作用，但效率不高，然而，置换反应却可与 5' 突出端的酶切反应同时进行。产生的 DNA 可在凝胶电泳中用作放射性标记的分子质量标准物（Oommen et al. 1990）。
+
+![](images/page_344_image_8.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["5' pCpGpC...... 3'"] -->|"用碱性磷酸酶\n处理 DNA"| B["5' OH CpGpC...... 3'"]
+  B -->|"与T4噬菌体多核苷酸\n激酶及["γ-³²P"]孵育"| C["ADP + 5' *pCpGpC...... 3'"]
+```
+</details>
+
+图 1 T4 噬菌体多核苷酸激酶可用于标记 DNA 分子的 5' 端（详见正文）。
+
+![](images/page_344_image_10.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+乙酸铵（10mol/L）&lt;A&gt;（可选；见步骤3）
+
+## T4 噬菌体多核苷酸激酶
+
+野生型多核苷酸激酶具有 5'磷酸转移酶活性和 3'磷酸酶活性（Depew and Cozzarelli 1974; Sirotkin et al. 1978）。市售的突变型酶（Cameron et al. 1978）缺乏磷酸酶活性，但完好地保留了磷酸转移酶活性（如 Boehringer Mannheim 公司）。我们建议应尽可能用此突变型酶进行 5'端标记；催化 10～50pmol 去磷酸化的 5'突出端磷酸化需要 10～20U 的酶。
+
+10×T4噬菌体多核苷酸激酶缓冲液&lt;A&gt;
+
+DNA (10\~50pmol)
+
+应按方案 9 所述进行 DNA 的去磷酸化或合成含 5'羟基端的 DNA 片段。DNA 样品中 5'端含量的计算见方案 9 信息栏内容。
+
+EDTA (0.5 mol/L, pH 8.0) &lt;A&gt;
+
+乙醇
+
+$[\gamma-^{32}P]$ ATP（10mCi/mL，比活性为3000～7000 Ci/mmol）
+
+为最大限度地减少前体和探针的辐射分解，应尽可能在 $[\gamma-^{32}P]dNTP$ 到达实验室的当天制备放射性标记探针。
+
+## 设备
+
+液体闪烁计数仪，可通过契仑科夫辐射定量  ${}^{32}P$
+
+Sephadex G-50 离心柱，用 TE（pH 7.6）平衡或
+
+Sephadex G-50 柱（1mL），用 TE（pH 7.6）平衡（上述两种可任选；见步骤 3）。
+
+Sephadex G-50 凝胶过滤介质可用于从低分子质量物质（放射性前体保留在柱中）中分离 DNA（DNA 可穿过介质）。放射性标记 DNA 纯化用 Sephadex G-50 柱可从几个商业渠道获得[如 Quick Spin Columns(Roche Applied Science 公司)]。但是，用 1mL 装填硅化玻璃棉的一次性注射器很容易完成（见方案 1，步骤 6～14）。
+
+![](images/page_345_image_18.jpg)
+
+## 方法
+
+1. 在一个微量离心管中，按下列顺序混合各试剂:
+
+| 去磷酸化的DNA | 10~50pmol |
+| --- | --- |
+| 10×T4噬菌体多核苷酸激酶缓冲液 | 5μL |
+| $[γ-^{32}P]$ATP(10mCi/mL)(比活度为3000~7000Ci/mmol) | 50pmol |
+| T4噬菌体多核苷酸激酶 | 10U |
+| $H_2O$ | 加至50μL |
+
+$37^{\circ}\mathrm{C}$ 温育反应 $1\mathrm{h}$ 。
+
+理想的条件下，ATP 应 5 倍摩尔过量于 DNA 5'端，DNA 末端的浓度应大于或等于  $0.4 \mu mol/L$ 。因此，反应中 ATP 的浓度应大于  $2 \mu mol/L$ ，但在实际中很少达到。为提高放射性标记探针的比活度，应增加磷酸化反应中  $[\gamma-^{32}P]$  ATP 的用量，减少水的体积，维持反应体积为  $50 \mu L$ 。
+
+2. 加入 $2\mu \mathrm{L}0.5\mathrm{mol} / \mathrm{L}$ EDTA（pH 8.0）以终止反应。用液体闪烁计数仪中的契仑科夫计数测量反应混合物中的总放射性。
+
+3. 通过下列方法之一分离放射性标记的探针与未掺入的 dNTP:
+
+\- 用 Sephadex G-50 离心柱色谱法（按照方案 1，步骤 6～14 所述，用商品化的柱子或自制的柱子）
+
+\- 用 $1\mathrm{mL}$ Sephadex G-50 柱（用 TE 平衡）常规分子筛层析
+
+或
+
+\- 用乙酸铵和乙醇对放射性标记的 DNA 进行两轮选择性沉淀（见第 1 章，方案 4）
+
+4. 通过契仑科夫计数测定探针制品中的放射性量，用探针中放射性含量除以反应混合物中的放射性总量来计算放射性标记物转移到5'端的效率（步骤2）。
+
+## 参考文献
+
+- Berkner KL, Folk WR. 1977. Polynucleotide kinase exchange reaction: Quantitative assay for restriction endonuclease-generated 5'-phosphoryl termini in DNA. J Biol Chem 252: 3176–3184.
+- Cameron V, Soltis D, Uhlenbeck OC. 1978. Polynucleotide kinase from a T4 mutant which lacks the 3' phosphatase activity. Nucleic Acids Res 5:825–833.
+- Depew RE, Cozzarelli NR. 1974. Genetics and physiology of bacteriophage T4 3'-phosphatase: Evidence for involvement of the enzyme in T4 DNA metabolism. J Virol 13: 888–897.
+- Maunders MJ. 1993. Polynucleotide kinase. Methods Mol Biol 16: 343–356.
+  Oommen A, Ferrandis I, Wang MJ. 1990. Single-step labeling of DNA using restriction endonucleases and T4 polynucleotide kinase. Bio-Techniques 8: 482–486.
+- Richardson CC. 1971. Polynucleotide kinase from Escherichia coli infected with bacteriophage T4. In Procedures in nucleic acid research (ed Cantoni GL, Davies DR), vol. 2, pp. 815–828. Harper and Row, New York.
+- Sirotkin K, Cooley W, Runnels J, Snyder LR. 1978. A role in true-late gene expression for the T4 bacteriophage 5' polynucleotide kinase 3' phosphatase. J Mol Biol 123: 221–233.
+- van de Sande JH, Kleppe K, Khorana HG. 1973. Reversal of bacteriophage T4 induced polynucleotide kinase action. Biochemistry 12:5050–5055.
+- van Houten V, Denkers F, van Dijk M, van den Brekel M, Brakenhoff R. 1998. Labeling efficiency of oligonucleotides by T4 polynucleotide kinase depends on 5'-nucleotide. Anal Biochem 265: 386–389.
+
+## 方案 11 去磷酸化的平端或 5'凹端 DNA 分子的磷酸化
+
+在 T4 多核苷酸激酶催化的正向反应中，带有平端、5'凹端或分子内切口的 DNA 底物比含 5'突出端的双链 DNA 的标记效率低。例如，磷酸基掺入 DNA 内部切口比转移到 5' 端的效率低 30 倍（Lillehaug et al. 1976; Berkner and Folk 1977）。然而，标记该类底物的困难可通过以下方法克服:①将 ATP 的浓度增至极高水平(>100 μmol/L)(Lillehaug and Kleppe 1975a)；②在反应中加入聚胺或聚乙二醇 8000（PEG 8000）(Lillehaug and Kleppe 1975b; Harrison and Zimmerman 1986a)。在 PEG 和镁的存在下，DNA 可折卷成高度凝聚态（Lerman 1971）。随后磷酸化反应效率提高，据信这是所产生的大分子群集的结果（Harrison and Zimmerman 1986b；综述见 Zimmerman and Minton 1993）。其刺激量取决于 PEG 的浓度。因此，检测 4%～10% PEG 浓度范围内反应效率可能是有益的。当使用长于 300 bp 的 DNA 时，PEG 的有益效应才变得显著。较小的 DNA 片段可能由于其刚性过强而不能折卷为凝聚态。有关用 T4 多核苷酸激酶标记 DNA 的其他信息见方案 10 概述中的信息栏“用 T4 噬菌体多核苷酸激酶标记 DNA 5'端”。DNA 末端标记方法的总结见方案 8 中的表 13-3。
+
+本方案中，PEG 与高浓度的 ATP 及多核苷酸激酶一起加入，以提高平端或 5'凹端 DNA 片段的标记。
+
+![](images/page_346_image_20.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+乙酸铵（10mol/L）&lt;A&gt;（可选；见步骤5）
+
+## T4 噬菌体多核苷酸激酶
+
+野生型多核苷酸激酶具有 5' 磷酸转移酶活性和 3' 磷酸酶活性（Depew and Cozzarelli 1974; Sirotkin et al. 1978）。市售的突变型酶（Cameron et al. 1978）缺乏磷酸酶活性但完好地保留了磷酸转移酶活性（如 Boehringer Mannheim 公司）。我们建议应尽可能用此突变型酶进行 5' 端标记。
+
+DNA（10～50pmol，体积 $\leqslant$ 11 $\mu$ L）
+
+按方案 9 所述进行 DNA 的去磷酸化或合成含  $5'$  羟基端的 DNA 片段。DNA 样品中  $5'$  端含量的计算见方案 9。
+
+EDTA (0.5mol/L, pH 8.0) &lt;A&gt;
+
+乙醇
+
+10×咪唑缓冲液&lt;R&gt;
+
+$\gamma-^{32}P$ ATP（10mCi/mL，比活性3000Ci/mmol）
+
+为最大限度地减少前体和探针的辐射分解，尽可能在 $\left[\gamma-^{32}P\right]dNTP$ 到达实验室的当天制备放射性标记的探针。
+
+PEG 8000（24%，m/V），水配制
+
+## 设备
+
+可通过契仑科夫辐射定量  ${}^{32}P$  的液体闪烁计数仪
+
+Sephadex G-50 离心柱，用 TE（pH 7.6）平衡
+
+或
+
+SephadexG-50 柱（1mL），用 TE（pH 7.6）平衡（上述两种任选，见步骤 5）。
+
+Sephadex G-50 凝胶过滤介质可用于从低分子质量物质（放射性前体保留在柱中）中分离 DNA（DNA 可穿过介质）。放射性标记 DNA 纯化用 Sephadex G-50 柱可从几个商业渠道获得[如 Quick Spin Columns(Roche Applied Science 公司)]。但是，用 1mL 装填硅化玻璃棉的一次性注射器很容易完成（见方案 1，步骤 6～14）。
+
+![](images/page_347_image_21.jpg)
+
+## 方法
+
+1. 在一个微量离心管中，按下列顺序混合:
+
+| 去磷酸化的 DNA | 10~50pmol |
+| --- | --- |
+| 10×咪唑缓冲液 | 4μL |
+| $H_2O$ | 加至 15μL |
+| PEG(24%, m/V) | 10μL |
+
+2. 加入 $40\mathrm{pmol}[\gamma^{-32}\mathrm{P}]\mathrm{ATP}$ （$10\mathrm{mCi/mL}$；比活性为 $3000\mathrm{Ci/mmol}$），加水至反应终体积为 $40\mu\mathrm{L}$。
+
+理想的条件下，ATP 摩尔数应超过 DNA 5' 端 5 倍以上。DNA 末端的浓度应为  $\geqslant 0.4\mu mol/L$ 。因此，反应中 ATP 的浓度应 >2  $\mu mol/L$ ，但实际上很难达到。为提高放射性标记的 DNA 产物的比活性，可增加磷酸化反应中  $[\gamma-^{32}P]$  ATP 的用量，减少水的体积，以维持反应体积为 40  $\mu L$ 。
+
+3. 在反应中加入 40U 的 T4 噬菌体多核苷酸激酶。轻弹管壁以混匀试剂，$37^{\circ} \mathrm{C}$ 温育反应 $30 \mathrm{~min}$。
+
+4. 加入  $2 \mu L$  0.5 mol/L EDTA（pH 8.0）以终止反应。用液体闪烁计数仪的契仑科夫计数测定反应混合物的放射性活度。
+
+5. 通过以下方法之一分离放射性标记的探针与未掺入的 dNTP:
+
+\- 用 Sephadex G-50 离心柱色谱法（按照方案 1，步骤 6～14，用商品化的柱子或自制的柱子）；
+
+\- 用 $1 \mathrm{~mL}$ Sephadex G-50 柱（用 TE 平衡）常规分子筛层析；
+
+或
+
+\- 用乙酸铵和乙醇对放射性标记的 DNA 进行两轮选择性沉淀（见第 1 章，方案 4）。
+
+6. 用契仑科夫计数检测探针的放射性。用探针的放射性含量除以反应混合物中的放射性总量来计算放射性标记物转移到  $5'$  端的效率（步骤 4）。
+
+![](images/page_348_image_10.jpg)
+
+## 配方
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+10×咪唑缓冲液
+
+| 试剂 | 体积(1mL) | 终浓度 |
+| --- | --- | --- |
+| 咪唑盐酸(1mol/L,pH 6.4) | 500μL | 500mmol/L |
+| $MgCl_2$(1mol/L) | 180μL | 180mmol/L |
+| DTT(1mol/L) | 50μL | 50mmol/L |
+| 亚精胺盐酸(100mmol/L) | 10μL | 1mmol/L |
+| EDTA(0.5mol/L,pH 8.0) | 2μL | 1mmol/L |
+
+## 参考文献
+
+- Berkner KL, Folk WR. 1977. Polynucleotide kinase exchange reaction: Quantitative assay for restriction endonuclease-generated 5'-phosphoryl termini in DNA. J Biol Chem 252: 3176–3184.
+- Cameron V, Soltis D, Uhlenbeck OC. 1978. Polynucleotide kinase from a T4 mutant which lacks the 3' phosphatase activity. Nucleic Acids Res 5:825–833.
+- Depew RE, Cozzarelli NR. 1974. Genetics and physiology of bacteriophage T4 3'-phosphatase: Evidence for involvement of the enzyme in T4 DNA metabolism. J Virol 13: 888–897.
+- Harrison B, Zimmerman SB. 1986a. T4 polynucleotide kinase: Macromolecular crowding increases the efficiency of reaction at DNA termini. Anal Biochem 158: 307–315.
+- Harrison B, Zimmerman SB. 1986b. Stabilization of T4 polynucleotide kinase by macromolecular crowding. Nucleic Acids Res 14: 1863–1870.
+- Lerman LS. 1971. A transition to a compact form of DNA in polymer solutions. Proc Natl Acad Sci 68: 1886–1890.
+- Lillehaug JR, Kleppe K. 1975a. Kinetics and specificity of T4 polynucleotide kinase. Biochemistry 14: 1221–1225.
+- Lillehaug JR, Kleppe K. 1975b. Effect of salts and polyamines polynucleotide kinase. Biochemistry 14: 1225–1229.
+- Lillehaug JR, Kleppe RK, Kleppe K. 1976. Phosphorylation of double-stranded DNAs by T4 polynucleotide kinase. Biochemistry 15: 1858–1865.
+- Sirotkin K, Cooley W, Runnels J, Snyder LR. 1978. A role in true-late gene expression for the T4 bacteriophage 5' polynucleotide kinase 3' phosphatase. J Mol Biol 123: 221–233.
+- Zimmerman SB, Minton AP. 1993. Macromolecular crowding: Biochemical, biophysical, and physiological consequences. Annu Rev Biophys Biomol Struct 22: 27–65.
+
+## 方案 12 用 T4 多核苷酸激酶进行
+
+## 寡核苷酸 5' 端的磷酸化
+
+合成的寡核苷酸 5'端不含磷酸基，因此，通过 T4 噬菌体多核苷酸激酶催化 $[\gamma-^{32}P]$ ATP 的 $\gamma-^{32}P$ 转移的反应，可标记寡核苷酸的 5'端。用此法放射性标记的寡核苷酸可用作杂交探针和引物，用于 DNA 测序和 mRNA 5'端作图。
+
+当反应在标准条件下进行时，>50%的寡核苷酸分子可被放射性标记。然而，由于某些未知的原因，寡核苷酸放射性标记的效率取决于寡核苷酸的序列（van Houten et al. 1998）。5'端带有一个胞嘧啶残基的寡核苷酸比以A或T开始的寡核苷酸的标记效率低4倍，比以G开始的寡核苷酸低6倍。当设计寡核苷酸探针时，应注意5'端的位置不是胞嘧啶残基。
+
+本方案描述的反应按标记高比活性 $(1\times10^{8}\sim4\times10^{8}\mathrm{dpm}/\mu\mathrm{g})$ 的10pmol寡核苷酸设计。通过增加或减少反应的体积而维持所有组分的浓度不变，可很容易实现不同量的寡核苷酸的标记。
+
+![](images/page_349_image_7.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+## T4 噬菌体多核苷酸激酶
+
+野生型多核苷酸激酶具有 5' 磷酸转移酶活性和 3' 磷酸酶活性（Depew and Cozzarelli 1974; Sirotkin et al. 1978）。市售的突变型酶（Cameron et al. 1978）缺乏磷酸酶活性，但完好地保留了磷酸转移酶活性（如 Boehringer Mannheim 公司）。我们建议应尽可能用此突变型酶进行 5' 端标记。催化 10～50pmol 去磷酸化的 5' 突出端磷酸化需要 10～20U 的酶。
+
+▲ 注意，已报道不同厂商出售的多核苷酸激酶制品催化单链合成寡核苷酸 5' 端磷酸化的能力相差较大（van Houten et al. 1998）。
+
+10×T4噬菌体多核苷酸激酶缓冲液&lt;A&gt;
+
+$\left[\gamma-^{32}P\right]$ ATP 水溶液（10mCi/mL，比活性>5000 Ci/mmol）
+
+标记 10 pmol 高比活性的去磷酸化的 5' 端需要 10pmol  $[\gamma-^{32}P]$ ATP。
+
+为最大限度地减少前体和探针的辐射分解，尽可能在 $[\gamma-^{32}P]dNTP$ 到达实验室的当天制备放射性标记的探针。
+
+## 寡核苷酸
+
+为获得标记的最大效率，应当通过 PAGE 纯化寡核苷酸。在多核苷酸激酶催化的反应中，寡核苷酸的粗制品标记效率较低（van Houten et al. 1998）。当使用未纯化的寡核苷酸制品时，确保合成的最后一个循环设定为“去三苯甲基”，即从固相合成载体中释放 DNA 之前，除去寡核苷酸引物 5' 端的二甲氧基三苯基阻断基。
+
+Tris-Cl (1mol/L, pH 8.0) &lt;A&gt;
+
+## 设备
+
+微量离心管（0.5mL）
+
+水浴（68℃）
+
+![](images/page_350_image_5.jpg)
+
+## 方法
+
+1. 在一个 $0.5 \mathrm{~mL}$ 含有下列试剂的微量离心管中配制反应体系:
+
+| 合成的寡核苷酸(10 pmol/μL) | 1μL |
+| --- | --- |
+| 10×T4噬菌体多核苷酸激酶缓冲液 | 2μL |
+| $\left\lbrack {\gamma - {}^{32}\mathrm{P}}\right\rbrack \mathrm{{ATP}}\left( {{10}\mathrm{{pmol}},\text{比活性} > {5000}\mathrm{{Ci}}/\mathrm{{mmol}}}\right)$ | 5μL |
+| ${\mathrm{H}}_{2}\mathrm{O}$ | 加至 11.4μL |
+
+轻柔并持续敲击管壁混匀各组分。将  $0.5 \mu L$  的反应混合物加入含  $10 \mu L$  10 mmol/L Tris-Cl（pH 8.0）的管中。放置待步骤 4 使用。
+
+反应中含有等浓度的 $[\gamma -^{32}\mathrm{P}]\mathrm{ATP}$ 和寡核苷酸。一般来说，仅有 $50\%$ 的标记物被转移至寡核苷酸。转移的效率可通过增加反应中寡核苷酸的浓度而提高10倍。这种效率的提高可使约 $90\%$ 的标记物转移至寡核苷酸。但是，放射性标记的DNA比活性则减少约5倍。为标记高比活性的寡核苷酸，
+
+- 提高反应中 $[\gamma -^{32}\mathrm{P}]\mathrm{ATP}$ 的浓度至3倍（如用 $15\mu \mathrm{L}$ 标记物而减少水的体积至 $1.4\mu \mathrm{L}$ ）
+- 寡核苷酸的量减至 3pmol
+
+在此条件下，仅有约 10% 的标记物被转移，但高比例的寡核苷酸可被放射性标记。
+
+理想的情况下，ATP 的摩尔数应超过 DNA 5' 端的 5 倍，DNA 末端的浓度应  $\geqslant 4\mu mol/L$ 。因此，反应中 ATP 的浓度应 >2  $\mu mol/L$ ，但在实际情况下很难达到。
+
+2. 加入 10U（约  $1 \mu L$ ）T4 噬菌体多核苷酸激酶至剩余的反应混合物。彻底混匀，在  $37^{\circ}C$  下温育反应混合物 1h。
+3. 反应结束时，将 $0.5 \mu \mathrm{L}$ 反应混合物加入含 $10 \mu \mathrm{L} 10 \mathrm{mmol} / \mathrm{L}$ Tris-Cl（$\mathrm{pH} 8.0$）的第二支管中。$68^{\circ} \mathrm{C}$ 下加热剩余的反应混合物 $10 \mathrm{~min}$，以灭活多核苷酸激酶。将含有加热后的反应混合物的离心管置于冰上。
+4. 在进行下一步骤前，用一小份反应混合物测定转移至寡核苷酸底物的放射性标记物，以确定标记反应是否成功。将反应的样品（0.5μL）移至含有 10μL 10mmol/L Tris-Cl（pH 8.0）的管中。通过以下任一方法，用此样品（以及步骤 1 和步骤 3 的样品）测定 ATP 中的 α-$^{32}$P 转移的效率:
+
+\- 测定放射性标记的 dNTP 掺入 TCA 可沉淀物中的比例（见附录 2）。
+
+或
+
+\- 通过 Sephadex G-15 或 Bio-Rad P-60 分子排阻色谱评估随寡核苷酸迁移的标记物比例，以测定标记反应的效率。此方法的详细描述见方案 17。某些情况下，在两种方法中此法更为便捷，因为掺入和未掺入的相对放射性量可在层析过程中用手提式微型探测器估计。
+
+如果比活性过低，请参看“疑难解答”。
+
+5. 如果寡核苷酸的比活性是可接受的，可按方案 15～17 纯化放射性标记的寡核苷酸。
+
+![](images/page_350_image_25.jpg)
+
+## 疑难解答
+
+问题（步骤4）:探针的比活性过低。
+
+解决方案:再加入 8U 的多核苷酸激酶，在  $37^{\circ}$ C 下继续温育反应 30min（共 90min）。在  $68^{\circ}$ C 下加热反应物 10min 以灭活酶，按照步骤 4 所述再次分析反应产物。
+
+问题（步骤4）:探针的比活性过低，增加一轮磷酸化反应仍未使寡核苷酸探针的比活性达到足够的要求。
+
+解决方案:检查寡核苷酸的 5'端是否含有胞嘧啶残基。如果含有，请考虑重新设计寡核苷酸，使之 5'端为 G、A 或 T 残基（见本方案的概述）。此外，可尝试通过 Sep-Pak 层析纯化初始寡核苷酸制品（方案 17），然后重复本方案。
+
+## 参考文献
+
+Cameron V, Soltis D, Uhlenbeck OC. 1978. Polynucleotide kinase from a T4 mutant which lacks the 3' phosphatase activity. \*Nucleic Acids Res\* 5: 825–833.
+
+Depew RE, Cozzarelli NR. 1974. Genetics and physiology of bacteriophage T4 3'-phosphatase: Evidence for involvement of the enzyme in T4 DNA metabolism. J Virol 13: 888–897.
+
+Sirotkin K, Cooley W, Runnels J, Snyder LR. 1978. A role in true-late gene expression for the T4 bacteriophage 5' polynucleotide kinase 3' phosphatase. J Mol Biol 123: 221–233.
+
+van Houten V, Denkers F, van Dijk M, van den Brekel M, Brakenhoff R. 1998. Labeling efficiency of oligonucleotides by T4 polynucleotide kinase depends on 5'-nucleotide. Anal Biochem 265: 386–389.
+
+## 方案 13 用末端脱氧核苷酸转移酶标记寡核苷酸 3' 端
+
+末端脱氧核苷酸转移酶（TdT，又简称为末端转移酶）是一种模板非依赖的聚合酶，可催化脱氧核苷酸和双脱氧核苷酸加至DNA分子的3'羟基末端。钴（$\mathrm{Co}^{2+}$）为该酶活性必需的辅因子。末端转移酶对单链DNA具有底物偏好，亦可将核苷酸加至突出、凹进或平端双链DNA片段，但效率较低。此反应在链终止类似物如双脱氧核苷酸（ddNTP，常为$[\alpha-^{32}\mathrm{P}]\mathrm{ddATP}$）存在下使用时，仅限于添加单一核苷酸（Yousaf et al. 1984）。在所谓的同聚物加尾反应（homopolymeric “tailing” reaction）中，此酶则能将几个（2～100）核苷酸加至3'端（Deng and Wu 1983）（更多信息见本方案末的附加方案“加尾反应”）。除添加放射性核苷酸外，末端转移酶亦可用于添加非放射性标记物如生物素、DIG或荧光素标记的核苷酸（Kumar et al. 1988; Igloi and Schiefermayr 1993）。非放射性标记通常用于促进几个核苷酸的添加，以提高探针的敏感性。虽然3'端标记反应相对容易操作（见本方案末的可选方案“用TdT合成非放射性标记的探针”），几家厂商亦提供生物素和DIG3'端标记试剂盒（如Thermo Scientific公司和Roche Applied Science公司）。
+
+![](images/page_351_image_12.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+$\alpha-^{32}P$ ddATP（10mCi/mL，比活性3000Ci/mmol）
+
+$CoCl_{2}$  溶液（25mmol/L）
