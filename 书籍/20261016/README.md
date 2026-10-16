@@ -6,7 +6,7 @@
 
 识别结果保留原件供核对，未宣称 OCR 和公式经过逐字人工校对。
 
-完成 9/29 本；[逐书 ZIP Release](https://github.com/kazewwk/test/releases/tag/mineru-advanced-textbooks-2026-10-16)。
+完成 10/29 本；[逐书 ZIP Release](https://github.com/kazewwk/test/releases/tag/mineru-advanced-textbooks-2026-10-16)。
 
 | 教材 | 页数 | 状态 |
 | --- | ---: | --- |
@@ -18,7 +18,7 @@
 | [Bioinformatics Algorithms A_](06_bioinformatics-algorithms/) | 380 | 已完成 |
 | Bioinformatics Data Skills_ | 538 | 待完成 |
 | biostat | 472 | 待完成 |
-| Gene Cloning and DNA Analys_ | 435 | 待完成 |
+| [Gene Cloning and DNA Analys_](09_gene-cloning-and-dna-analysis/) | 435 | 已完成 |
 | Introduction to bioinformat_ | 440 | 待完成 |
 | Introduction to Probability_ | 636 | 待完成 |
 | [Synthetic Biology A Primer_](12_synthetic-biology-a-primer/) | 194 | 已完成 |
