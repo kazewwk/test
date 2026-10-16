@@ -1,0 +1,3757 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Bioinformatics Data Skills",
+      "authors": [
+        "Vince Buffalo"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "created_at": "2015-06-30T16:29:18Z",
+      "modified_at": "2015-06-30T13:45:47-04:00",
+      "creator_application": "AH CSS Formatter V6.2 MR4 for Linux64 : 6.2.6.18551 (2014/09/24 15:00JST)",
+      "producer_application": "Antenna House PDF Output Library 6.2.609 (Linux64)",
+      "page_count": 538,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 272,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 273,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 274,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 275,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 276,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 277,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 278,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 279,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 280,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 281,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 282,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 283,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 284,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 285,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 286,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 287,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 272,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.136,
+            0.081,
+            0.861,
+            0.239
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "You may be wondering why we slogged through all of the split(), lapply(), and do.call() material given how much simpler it is to call tapply() or aggregate(). The answer is twofold. First, R’s base functions like split(), lapply(), and do.call() give you some raw power and flexibility in how you use the split-applycombine pattern. In working with genomics datasets (and with Bioconductor packages), we often need this flexibility. Second, Hadley Wickham’s package dplyr (which we see in the next section) is both simpler and more powerful than R’s built-in splitapply-combine functions like tapply() and aggregate()."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.247,
+            0.861,
+            0.326
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The take-home point of this section: the split-apply-combine pattern is an essential part of data analysis. As Hadley Wickham’s article points out, this strategy is similar to Google’s map-reduce framework and SQL’s GROUP BY and AGGREGATE functions (which we cover in “SQLite Aggregate Functions” on page 442)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.138,
+            0.341,
+            0.479,
+            0.368
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Exploring Dataframes with dplyr"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.136,
+            0.374,
+            0.86,
+            0.571
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Every data analysis you conduct will likely involve manipulating dataframes at some point. Quickly extracting, transforming, and summarizing information from dataframes is an essential R skill. The split-apply-combine pattern implemented from R base functions like split() and lapply() is versatile, but not always the fastest or simplest approach. R’s split-apply-combine convenience functions like tapply() and aggregate() simplify the split-apply-combine, but their output still often requires some cleanup before the next analysis step. This is where Hadley Wickham’s dplyr package comes in: dplyr consolidates and simplifies many of the common operations we perform on dataframes. Also, dplyr is very fast; much of its key functionality is written in C++ for speed."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.136,
+            0.58,
+            0.86,
+            0.698
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "dplyr has five basic functions for manipulating dataframes: arrange(), filter(), mutate(), select(), and summarize(). None of these functions perform tasks you can’t accomplish with R’s base functions. But dplyr’s advantage is in the added consistency, speed, and versatility of its data manipulation interface. dplyr’s design drastically simplifies routine data manipulation and analysis tasks, allowing you to more easily and effectively explore your data."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.136,
+            0.706,
+            0.86,
+            0.786
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Because it’s common to work with dataframes with more rows and columns than fit in your screen, dplyr uses a simple class called tbl_df that wraps dataframes so that they don’t fill your screen when you print them (similar to using head()). Let’s convert our d dataframe into a tbl_df object with the tbl_df() function:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 6,
+          "bbox": [
+            0.17,
+            0.794,
+            0.796,
+            0.874
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 6,
+              "bbox": [
+                0.17,
+                0.794,
+                0.796,
+                0.874
+              ],
+              "content": "> install.packages(\"dplyr\") # install dplyr if it's not already installed\n> library(dplyr)\n> d_df <- tbl_df(d)\n> d_df\nSource: local data frame [59,140 x 20]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "footer",
+          "index": 7,
+          "bbox": [
+            0.566,
+            0.922,
+            0.799,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Working with and Visualizing Data in R"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 8,
+          "bbox": [
+            0.832,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "243"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 273,
+      "blocks": [
+        {
+          "type": "code",
+          "index": 0,
+          "bbox": [
+            0.171,
+            0.081,
+            0.837,
+            0.158
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 0,
+              "bbox": [
+                0.171,
+                0.081,
+                0.837,
+                0.158
+              ],
+              "content": "start end total.SNPs total.Bases depth unique.SNPs dhSNPs reference.Bases\n1 55001 56000          0       1894 3.41         0      0           556\n2 56001 57000          5       6683 6.68         2      2           1000\n3 57001 58000          1       9063 9.06         1      0           1000\n[...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.171,
+            0.159,
+            0.826,
+            0.205
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Variables not shown: Theta (dbl), Pi (dbl), Heterozygosity (dbl), percent.GC (dbl), Recombination (dbl), Divergence (dbl), Constraint (int), SNPs (int), cent (lgl), diversity (dbl), position (dbl), GC.binned (fctr)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.214,
+            0.82,
+            0.233
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let’s start by selecting some columns from d_df using dplyr’s select() function:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.171,
+            0.243,
+            0.615,
+            0.258
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "> select(d_df, start, end, Pi, Recombination, depth)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.171,
+            0.258,
+            0.489,
+            0.273
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Source: local data frame [59,140 x 5]"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 5,
+          "bbox": [
+            0.171,
+            0.289,
+            0.524,
+            0.366
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 5,
+              "bbox": [
+                0.171,
+                0.289,
+                0.524,
+                0.366
+              ],
+              "content": "start end     Pi Recombination depth\n1 55001 56000 0.000   0.009601574 3.41\n2 56001 57000 10.354   0.009601574 6.68\n3 57001 58000 1.986   0.009601574 9.06\n[...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.136,
+            0.375,
+            0.86,
+            0.493
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This is equivalent to d[, c(\"start\", \"end\", \"Pi\", \"Recombination\", \"depth\")], but dplyr uses special evaluation rules that allow you to omit quoting column names in select() (and the returned object is a tbl_df). select() also understands ranges of consecutive columns like select(d_df, start:total.Bases). Additionally, you can drop columns from a dataframe by prepending a negative sign in front of the column name (and this works with ranges too):"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 7,
+          "bbox": [
+            0.171,
+            0.502,
+            0.49,
+            0.626
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 7,
+              "bbox": [
+                0.171,
+                0.502,
+                0.49,
+                0.626
+              ],
+              "content": "> select(d_df, -(start:cent))\nSource: local data frame [59,140 x 3]\n\n    position   GC.binned diversity\n1   55500.5 (51.6,68.5] 0.0000000\n2   56500.5 (34.7,51.6] 0.0010354\n3   57500.5 (34.7,51.6] 0.0001986\n[...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.136,
+            0.634,
+            0.86,
+            0.732
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Similarly, we can select specific rows as we did using dataframe subsetting in “Exploring Data Through Slicing and Dicing: Subsetting Dataframes” on page 203 using the dplyr function filter(). filter() is similar to subsetting dataframes using expressions like d[d$Pi > 16 & d$percent.GC > 80, ], though you can use multiple statements (separated by commas) instead of chaining them with &:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 9,
+          "bbox": [
+            0.171,
+            0.742,
+            0.515,
+            0.773
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 9,
+              "bbox": [
+                0.171,
+                0.742,
+                0.515,
+                0.773
+              ],
+              "content": "> filter(d_df, Pi > 16, percent.GC > 80)\nSource: local data frame [3 x 20]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "python"
+        },
+        {
+          "type": "code",
+          "index": 10,
+          "bbox": [
+            0.171,
+            0.788,
+            0.793,
+            0.881
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 10,
+              "bbox": [
+                0.171,
+                0.788,
+                0.793,
+                0.881
+              ],
+              "content": "start     end total.SNPs total.Bases depth unique.SNPs dhSNPs\n1 63097001 63098000       5       947 2.39        2      1\n2 63188001 63189000       2       1623 3.21        2      0\n3 63189001 63190000       5       1395 1.89        3      2\nVariables not shown: reference.Bases (int), Theta (dbl), Pi (dbl),\n    Heterozygosity (dbl), percent.GC (dbl), Recombination (dbl), Divergence"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "page_number",
+          "index": 11,
+          "bbox": [
+            0.139,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "244"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 12,
+          "bbox": [
+            0.201,
+            0.922,
+            0.5,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 8: A Rapid Introduction to the R Language"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 274,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.189,
+            0.081,
+            0.819,
+            0.113
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(dbl), Constraint (int), SNPs (int), cent (lgl), position (dbl), GC.binned (fctr), diversity (dbl)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.121,
+            0.859,
+            0.16
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To connect statements with logical OR, you need to use the standard logical operator | we learned about in “Vectors, Vectorization, and Indexing” on page 183."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.17,
+            0.859,
+            0.208
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "dplyr also simplifies sorting by columns with the function arrange(), which behaves like d[order(d$percent.GC), ]:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 3,
+          "bbox": [
+            0.171,
+            0.218,
+            0.497,
+            0.25
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 3,
+              "bbox": [
+                0.171,
+                0.218,
+                0.497,
+                0.25
+              ],
+              "content": "> arrange(d_df, depth)\nSource: local data frame [59,140 x 20]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "code",
+          "index": 4,
+          "bbox": [
+            0.171,
+            0.264,
+            0.754,
+            0.342
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 4,
+              "bbox": [
+                0.171,
+                0.264,
+                0.754,
+                0.342
+              ],
+              "content": "start       end total.SNPs total.Bases depth unique.SNPs dhSNPs\n1  1234001 1235000      0          444   1          0     0\n2  1584001 1585000      0          716   1          0     0\n3  2799001 2800000      0          277   1          0     0\n[...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.351,
+            0.859,
+            0.39
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "You can sort a column in descending order using arrange() by wrapping its name in the function desc(). Also, additional columns can be specified to break ties:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 6,
+          "bbox": [
+            0.171,
+            0.4,
+            0.564,
+            0.431
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 6,
+              "bbox": [
+                0.171,
+                0.4,
+                0.564,
+                0.431
+              ],
+              "content": "> arrange(d_df, desc(total.SNPs), desc(depth))\nSource: local data frame [59,140 x 20]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "code",
+          "index": 7,
+          "bbox": [
+            0.171,
+            0.446,
+            0.754,
+            0.524
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 7,
+              "bbox": [
+                0.171,
+                0.446,
+                0.754,
+                0.524
+              ],
+              "content": "start       end total.SNPs total.Bases depth unique.SNPs dhSNPs\n1   2621001 2622000      93       11337 11.34       13     10\n2  13023001 13024000      88       11784 11.78       11     1\n3  47356001 47357000      87       12505 12.50       9     7\n[...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.137,
+            0.533,
+            0.86,
+            0.591
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Using dplyr’s mutate() function, we can add new columns to our dataframe: For example, we added a rescaled version of the Pi column as d$diversity—let’s drop d $diversity using select() and then recalculate it:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 9,
+          "bbox": [
+            0.171,
+            0.601,
+            0.787,
+            0.663
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 9,
+              "bbox": [
+                0.171,
+                0.601,
+                0.787,
+                0.663
+              ],
+              "content": "> d_df <- select(d_df, -diversity) # remove our earlier diversity column\n> d_df <- mutate(d_df, diversity = Pi/(10*1000))\n> d_df\nSource: local data frame [59,140 x 20]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "code",
+          "index": 10,
+          "bbox": [
+            0.171,
+            0.678,
+            0.836,
+            0.818
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 10,
+              "bbox": [
+                0.171,
+                0.678,
+                0.836,
+                0.818
+              ],
+              "content": "start end total.SNPs total.Bases depth unique.SNPs dhSNPs reference.Bases\n1 55001 56000          0       1894 3.41         0      0           556\n2 56001 57000          5       6683 6.68         2      2           1000\n3 57001 58000          1       9063 9.06         1      0           1000\n[...]\n... ... ...     ...     ... ...     ...    ...\nVariables not shown: Theta (dbl), Pi (dbl), Heterozygosity (dbl), percent.GC\n (dbl), Recombination (dbl), Divergence (dbl), Constraint (int), SNPs (int),\n cent (lgl), position (dbl), GC.binned (fctr), diversity (dbl)"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.137,
+            0.826,
+            0.859,
+            0.866
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "mutate() creates new columns by transforming existing columns. You can refer to existing columns directly by name, and not have to use notation like d$Pi."
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 12,
+          "bbox": [
+            0.566,
+            0.923,
+            0.798,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Working with and Visualizing Data in R"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 13,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "245"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 275,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.137,
+            0.081,
+            0.861,
+            0.333
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "So far we’ve been using dplyr to get our dataframes into shape by selecting columns, filtering and arranging rows, and creating new columns. In daily work, you’ll need to use these and other dplyr functions to manipulate and explore your data. While we could assign output after each step to an intermediate variable, it’s easier (and more memory efficient) to chain dplyr operations. One way to do this is to nest functions (e.g., filter(select(hs_df, seqname, start, end, strand), strand == \"+\")). However, reading a series of data manipulation steps from the inside of a function outward is a bit unnatural. To make it easier to read and create data-processing pipelines, dplyr uses %>% (known as pipe) from "
+            },
+            {
+              "type": "hyperlink",
+              "url": "http://github.com/smbache/magrittr",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "the magrittr package"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "content": ". With these pipes, the lefthand side is passed as the first argument of the righthand side function, so d_df %>% filter(percent.GC > 40) becomes filter(d_df, percent.GC > 40. Using pipes in dplyr allows us to clearly express complex data manipulation operations:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 1,
+          "bbox": [
+            0.171,
+            0.344,
+            0.72,
+            0.516
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 1,
+              "bbox": [
+                0.171,
+                0.344,
+                0.72,
+                0.516
+              ],
+              "content": "> d_df %>% mutate(GC.scaled = scale(percent.GC)) %>%\n        filter(GC.scaled > 4, depth > 4) %>%\n        select(start, end, depth, GC.scaled, percent.GC) %>%\n        arrange(desc(depth))\n\nSource: local data frame [18 x 5]\n    start      end depth GC.scaled percent.GC\n1 62535001 62536000 7.66 4.040263   73.9740\n2 63065001 63066000 6.20 4.229954   75.3754\n3 62492001 62493000 5.25 4.243503   75.4755\n[...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.522,
+            0.859,
+            0.562
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Pipes are a recent innovation, but one that’s been quickly adopted by the R community. You can learn more about magrittr’s pipes in help('%>%')."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.571,
+            0.86,
+            0.65
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "dplyr’s raw power comes from the way it handles grouping and summarizing data. For these examples, let’s use the mtfs dataframe (loaded into R in “Merging and Combining Data: Matching Vectors and Merging Dataframes” on page 219), as it has some nice factor columns we can group by:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 4,
+          "bbox": [
+            0.172,
+            0.658,
+            0.389,
+            0.675
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 4,
+              "bbox": [
+                0.172,
+                0.658,
+                0.389,
+                0.675
+              ],
+              "content": "> mtfs_df <- tbl_df(mtfs)"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.683,
+            0.859,
+            0.723
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Now let’s group by the chromosome column chr. We can group by one or more columns by calling group_by() with their names as arguments:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 6,
+          "bbox": [
+            0.171,
+            0.731,
+            0.754,
+            0.858
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 6,
+              "bbox": [
+                0.171,
+                0.731,
+                0.754,
+                0.858
+              ],
+              "content": "> mtfs_df %>% group_by(chr)\nSource: local data frame [20,050 x 10]\nGroups: chr\n\n    chr motif_start motif_end     dist recomb_start recomb_end  recom\n1  chrX      35471312 35471325 39323.0     35430651   35433340 0.0015\n2  chrX      35471312 35471325 36977.0     35433339   35435344 0.0015\n[...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "page_number",
+          "index": 7,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "246"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 8,
+          "bbox": [
+            0.201,
+            0.922,
+            0.5,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 8: A Rapid Introduction to the R Language"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 276,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.135,
+            0.081,
+            0.861,
+            0.176
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Note that dplyr’s output now includes a line indicating which column(s) the dataset is grouped by. But this hasn’t changed the data; now dplyr’s functions will be applied per group rather than on all data (where applicable). The most common use case is to create summaries as we did with tapply() and aggregate() using the summarize() function:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 1,
+          "bbox": [
+            0.171,
+            0.188,
+            0.794,
+            0.344
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 1,
+              "bbox": [
+                0.171,
+                0.188,
+                0.794,
+                0.344
+              ],
+              "content": "> mtfs_df %>%\n    group_by(chr) %>%\n    summarize(max_recom = max(recom), mean_recom = mean(recom), num=n())\n\nSource: local data frame [23 x 4]\n    chr max_recom mean_recom num\n1   chr1   41.5648   2.217759 2095\n2   chr10   42.4129   2.162635 1029\n3   chr11   36.1703   2.774918  560\n[...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.352,
+            0.86,
+            0.431
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "dplyr’s summarize() handles passing the relevant column to each function and automatically creates columns with the supplied argument names. Because we’ve grouped this data by chromosome, summarize() computes per-group summaries. Try this same expression without group_by()."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.44,
+            0.86,
+            0.558
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "dplyr provides some convenience functions that are useful in creating summaries. Earlier, we saw that n() returns the number of observations in each group. Similarly, n_distinct() returns the unique number of observations in each group, and first(), last() and nth() return the first, last, and n"
+            },
+            {
+              "type": "text",
+              "content": "th",
+              "styles": [
+                "superscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " observations, respectively. These latter three functions are mostly useful on data that has been sorted with arrange() (because specific rows are arbitrary in unsorted data)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.567,
+            0.859,
+            0.606
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We can chain additional operations on these grouped and summarized results; for example, if we wanted to sort by the newly created summary column max_recom:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 5,
+          "bbox": [
+            0.171,
+            0.615,
+            0.831,
+            0.802
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 5,
+              "bbox": [
+                0.171,
+                0.615,
+                0.831,
+                0.802
+              ],
+              "content": "> mtfs_df %>%\n    group_by(chr) %>%\n    summarize(max_recom = max(recom), mean_recom = mean(recom), num=n()) %>%\n    arrange(desc(max_recom))\n\nSource: local data frame [23 x 4]\n    chr max_recom mean_recom num\n1   chrX  74.0966   2.686840  693\n2   chr8   62.6081   1.913325 1727\n3   chr3   56.2775   1.889585 1409\n4   chr16   54.9638   2.436250  535\n[...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.137,
+            0.81,
+            0.861,
+            0.889
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "dplyr has a few other functions we won’t cover in depth: distinct() (which returns only unique values), and sampling functions like sample_n() and sample_frac() (which sample observations). Finally, one of the best features of dplyr is that all of these same methods also work with database connections. For example, you can"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 7,
+          "bbox": [
+            0.566,
+            0.923,
+            0.799,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Working with and Visualizing Data in R"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 8,
+          "bbox": [
+            0.833,
+            0.923,
+            0.859,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "247"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 277,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.136,
+            0.08,
+            0.861,
+            0.12
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "manipulate a SQLite database (the subject of Chapter 13) with all of the same verbs we’ve used here. See "
+            },
+            {
+              "type": "hyperlink",
+              "url": "http://bit.ly/dplyr_data",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "dplyr’s databases vignette"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "content": " for more information on this."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.136,
+            0.361,
+            0.163
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Working with Strings"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.136,
+            0.169,
+            0.861,
+            0.343
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In bioinformatics, we often need to extract data from strings. R has several functions to manipulate strings that are handy when working with bioinformatics data in R. Note, however, that for most bioinformatics text-processing tasks, R is not the preferred language to use for a few reasons. First, R works with all data stored in memory; many bioinformatics text-processing tasks are best tackled with the stream-based approaches (discussed in Chapters 3 and 7), which explicitly avoid loading all data in memory at once. Second, R’s string processing functions are admittedly a bit clunky compared to Python’s. Even after using these functions for years, I still have to constantly refer to their documentation pages."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.136,
+            0.35,
+            0.861,
+            0.483
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Despite these limitations, there are many cases when working with strings in R is the best solution. If we’ve already loaded data into R to explore, it’s usually easier to use R’s string processing functions than to write and process data through a separate Python script. In terms of performance, we’ve already incurred the costs of reading data from disk, so it’s unlikely there will be performance gains from using Python or another language. With these considerations in mind, let’s jump into R’s string processing functions."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.136,
+            0.492,
+            0.862,
+            0.571
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "First, remember that all strings in R are actually character vectors. Recall that this means a single string like “AGCTAG” has a length of 1 (try length(\"AGCTAG\")). If you want to retrieve the number of characters of each element of a character vector, use nchar(). Like many of R’s functions, nchar() is vectorized:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 5,
+          "bbox": [
+            0.17,
+            0.579,
+            0.542,
+            0.612
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 5,
+              "bbox": [
+                0.17,
+                0.579,
+                0.542,
+                0.612
+              ],
+              "content": "> nchar(c(\"AGCTAG\", \"ATA\", \"GATCTGAG\", \"\"))\n[1] 6 3 8 0"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "lua"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.136,
+            0.62,
+            0.861,
+            0.698
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We can search for patterns in character vectors using either grep() or regexpr(). These functions differ slightly in their behavior, making both useful under different circumstances. The function grep(pattern, x) returns the positions of all elements in x that match pattern:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 7,
+          "bbox": [
+            0.17,
+            0.707,
+            0.641,
+            0.755
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 7,
+              "bbox": [
+                0.17,
+                0.707,
+                0.641,
+                0.755
+              ],
+              "content": "> re_sites <- c(\"CTGCAG\", \"CGATCG\", \"CAGCTG\", \"CCCACA\")\n> grep(\"CAG\", re_sites)\n[1] 1 3"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.137,
+            0.763,
+            0.859,
+            0.802
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "By default, grep() uses POSIX extended regular expressions, so we could use more sophisticated patterns:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 9,
+          "bbox": [
+            0.171,
+            0.811,
+            0.395,
+            0.843
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 9,
+              "bbox": [
+                0.171,
+                0.811,
+                0.395,
+                0.843
+              ],
+              "content": "> grep(\"CT[CG]\", re_sites)\n[1] 1 3"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "erlang"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.137,
+            0.851,
+            0.859,
+            0.891
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "grep() and R’s other regular-expression handling functions (which we’ll see later) support Perl Compatible Regular Expressions (PCRE) with the argument perl=TRUE,"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 11,
+          "bbox": [
+            0.139,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "248"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 12,
+          "bbox": [
+            0.201,
+            0.922,
+            0.5,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 8: A Rapid Introduction to the R Language"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 278,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.135,
+            0.081,
+            0.859,
+            0.139
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "and fixed string matching (e.g., not interpreting special characters) with fixed=TRUE. If a regular expression you’re writing isn’t working, it may be using features only available in the more modern PCRE dialect; try enabling PCRE with perl=TRUE."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.149,
+            0.861,
+            0.228
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Because grep() is returning indices that match the pattern, grep() is useful as a pattern-matching equivalent of match(). For example, we could use grep() to pull out chromosome 6 entries from a vector of chromosome names with sloppy, inconsistent naming:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 2,
+          "bbox": [
+            0.17,
+            0.236,
+            0.794,
+            0.314
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 2,
+              "bbox": [
+                0.17,
+                0.236,
+                0.794,
+                0.314
+              ],
+              "content": "> chrs <- c(\"chrom6\", \"chr2\", \"chr6\", \"chr4\", \"chr1\", \"chr16\", \" chrom8\")\n> grep(\"[^\\d]6\", chrs, perl=TRUE)\n[1] 1 3\n> chrs[grep(\"[^\\d]6\", chrs, perl=TRUE)]\n[1] \"chrom6\" \"chr6\""
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.322,
+            0.861,
+            0.46
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "There are some subtle details in this example worth discussing. First, we can’t use a simpler regular expression like chrs[grep(\"6\", chrs)] because this would match entries like \"chr16\". We prevent this by writing a restrictive pattern that is any non-numeric character ([^\\\\d]) followed by a 6. Note that we need an additional backslash to escape the backslash in \\d. Finally, \\d is a special symbol available in Perl Compatible Regular Expressions, so we need to specify perl=TRUE. See help(regex) for more information on R’s regular expressions."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 4,
+          "bbox": [
+            0.167,
+            0.475,
+            0.255,
+            0.564
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 4,
+              "bbox": [
+                0.167,
+                0.475,
+                0.255,
+                0.564
+              ],
+              "image_path": "images/page_278_image_4.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.267,
+            0.481,
+            0.427,
+            0.498
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The Double Backslash"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.266,
+            0.509,
+            0.79,
+            0.614
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The double backslash is a very important part of writing regular expressions in R. Backslashes don’t represent themselves in R strings (i.e., they are used as escape characters as in \"\\\"quote\\\" string\" or the newline character \\n). To actually include a blackslash in a string, we need to escape the backslash’s special meaning with another backslash."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.639,
+            0.859,
+            0.679
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Unlike grep(), regexpr(pattern, x) returns where in each element of x it matched pattern. If an element doesn’t match the pattern, regexpr() returns –1. For example:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 8,
+          "bbox": [
+            0.171,
+            0.688,
+            0.49,
+            0.78
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 8,
+              "bbox": [
+                0.171,
+                0.688,
+                0.49,
+                0.78
+              ],
+              "content": "> regexpr(\"[^\\d]6\", chrs, perl=TRUE)\n[1]  5 -1  3 -1 -1 -1 -1\nattr(,\"match.length\")\n[1]  2 -1  2 -1 -1 -1 -1\nattr(,\"useBytes\")\n[1] TRUE"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.137,
+            0.789,
+            0.861,
+            0.868
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "regexpr() also returns the length of the matching string using attributes. We haven’t discussed attributes, but they’re essentially a way to store meta-information alongside objects. You can access attributes with the function attributes(). For more information on regexpr’s output, see help(regexpr)."
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 10,
+          "bbox": [
+            0.566,
+            0.923,
+            0.799,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Working with and Visualizing Data in R"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 11,
+          "bbox": [
+            0.833,
+            0.923,
+            0.859,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "249"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 279,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.135,
+            0.081,
+            0.861,
+            0.16
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Clearly, the vector chromosome named chrs is quite messy and needs tidying. One way to do this is to find the informative part of each name with regexpr() and extract this part of the string using substr(). substr(x, start, stop) takes a string x and returns the characters between start and stop:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 1,
+          "bbox": [
+            0.17,
+            0.17,
+            0.642,
+            0.309
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 1,
+              "bbox": [
+                0.17,
+                0.17,
+                0.642,
+                0.309
+              ],
+              "content": "> pos <- regexr(\"\\\\d+\", chrs, perl=TRUE)\n> pos\n[1] 6 4 4 4 4 4 7\nattr(,\"match.length\")\n[1] 1 1 1 1 1 2 1\nattr(,\"useBytes\")\n[1] TRUE\n> substr(chrs, pos, pos + attributes(pos)$match.length)\n[1] \"6\" \"2\" \"6\" \"4\" \"1\" \"16\" \"8\""
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "javascript"
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.318,
+            0.861,
+            0.452
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "While this solution introduced the helpful substr() function, it is fragile code and we can improve upon it. The most serious flaw to this approach is that it isn’t robust to all valid chromosome names. We’ve written code that solves our immediate problem, but may not be robust to data this code may encounter in the future. If our code were rerun on an updated input with chromosomes “chrY” or “chrMt,” our regular expression would fail to match these. While it may seem like a far-fetched case to worry about, consider the following points:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 3,
+          "bbox": [
+            0.155,
+            0.467,
+            0.856,
+            0.528
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 4,
+              "bbox": [
+                0.155,
+                0.467,
+                0.748,
+                0.485
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• These types of errors can bite you and are time consuming to debug."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 5,
+              "bbox": [
+                0.155,
+                0.492,
+                0.856,
+                0.528
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• Our code should anticipate biologically realistic input data (like sex and mitochondrial chromosomes)."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.137,
+            0.545,
+            0.86,
+            0.663
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We can implement a cleaner, more robust solution with the sub() function. sub() allows us to substitute strings for other strings. Before we continue with our example, let’s learn about sub() through a simple example that doesn’t use regular expressions. sub(pattern, replacement, x) replaces the first occurrence of pattern with replacement for each element in character vector x. Like regexpr() and grep(), sub() supports perl=TRUE and fixed=TRUE:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 7,
+          "bbox": [
+            0.17,
+            0.673,
+            0.691,
+            0.72
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 7,
+              "bbox": [
+                0.17,
+                0.673,
+                0.691,
+                0.72
+              ],
+              "content": "> sub(pattern=\"Watson\", replacement=\"Watson, Franklin\",\n       x=\"Watson and Crick discovered DNA's structure.\")\n[1] \"Watson, Franklin, and Crick discovered DNA's structure.\""
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "python"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.137,
+            0.728,
+            0.861,
+            0.883
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Here, we’ve replaced the string “Watson” with the string “Watson, Franklin,” using sub(). Fixed text substitution like this works well for some problems, but to tidy our chr vector we want to capture the informative part of chromosome name (e.g., 1, 2, X, Y, or M) and substitute it into a consistent naming scheme (e.g., chr1, chr2, chrX, or chrM). We do this with regular expression capturing groups. If you’re completely unfamiliar with these, do study how they work in other scripting languages you use; capturing groups are extremely useful in bioinformatics string processing tasks. In this case, the parts of our regular expression in parentheses are captured and can be"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 9,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "250"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 10,
+          "bbox": [
+            0.201,
+            0.922,
+            0.5,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 8: A Rapid Introduction to the R Language"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 280,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.137,
+            0.08,
+            0.859,
+            0.12
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "used later by referencing which group they are. Let’s look at a few simple examples and then use sub() to help tidy our chromosomes:"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "code",
+          "index": 1,
+          "bbox": [
+            0.171,
+            0.128,
+            0.827,
+            0.3
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 1,
+              "bbox": [
+                0.171,
+                0.128,
+                0.827,
+                0.3
+              ],
+              "content": "> sub(\"gene=(\\\\w+)\", \"\\\\1\", \"gene=LEAFY\", perl=TRUE) ①\n[1] \"LEAFY\"\n\n> sub(\">[^ ]+ *(.*)\", \"\\\\1\", \">1 length=301354135 type=dna\") ②\n[1] \"length=301354135 type=dna\"\n\n> sub(\".*(\\d+|X|Y|M)\", \"chr\\1\", \"chr19\", perl=TRUE) ③\n[1] \"chr9\"\n\n> sub(\" *[chrom]+(\\d+|X|Y|M) *\" , \"chr\\1\", c(\"chr19\", \"chrY\"), perl=TRUE) ④\n[1] \"chr19\" \"chrY\""
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "list",
+          "index": 6,
+          "bbox": [
+            0.137,
+            0.317,
+            0.862,
+            0.81
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 2,
+              "bbox": [
+                0.137,
+                0.317,
+                0.861,
+                0.432
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "1 This line extracts a gene name from a string formatted as gene=<name>. We anchor our expression with gene=, and then use the word character \\\\w. This matches upper- and lowercase letters, digits, and underscores. Note that this regular expression assumes our gene name will only include alphanumeric characters and underscores; depending on the data, this regular expression may need to be changed."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 3,
+              "bbox": [
+                0.137,
+                0.448,
+                0.861,
+                0.527
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "This expression extracts all text after the first space. This uses a common idiom: specify a character class of characters not to match. In this case, [^ ]+ specifies match all characters that aren’t spaces. Then, match zero or more spaces, and capture one or more of any character (.*)."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 4,
+              "bbox": [
+                0.137,
+                0.544,
+                0.862,
+                0.679
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Here, we show a common problem with regular expressions and sub(). Our intention was to extract the informative part of a chromosome name like “chr19” (in this case, “19”). However, our regular expression was too greedy. Because the part .* matches zero more of any character, this matches through to the “1” of “chr19.” The “9” is still matched by the rest of the regular expression, captured, and inserted into the replacement string. Note that this error is especially dangerous because it silently makes your data incorrect."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 5,
+              "bbox": [
+                0.137,
+                0.695,
+                0.862,
+                0.81
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "4 This expression can be used to clean up the messy chromosome name data. Both “chr” and “chrom” (as well as other combinations of these characters) are matched. The informative part of each chromosome name is captured, and replaced into the string “chr” to give each entry a consistent name. We’re assuming that we only have numeric, X, Y, and mitochondrion (M) chromosomes in this example."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.819,
+            0.861,
+            0.896
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Parsing inconsistent naming is always a daily struggle for bioinformaticians. Inconsistent naming isn’t usually a problem with genome data resources like Ensembl or the UCSC Genome Browser; these resources are well curated and consistent. Data input by humans is often the cause of problems, and unfortunately, no regular expres‐"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 8,
+          "bbox": [
+            0.566,
+            0.923,
+            0.799,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Working with and Visualizing Data in R"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 9,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "251"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 281,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.137,
+            0.08,
+            0.861,
+            0.138
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "sion can handle all errors a human can make when inputting data. Our best strategy is to try to write general parsers and explicitly test that parsed values make sense (see the following tip)."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "image",
+          "index": 1,
+          "bbox": [
+            0.167,
+            0.153,
+            0.255,
+            0.242
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 1,
+              "bbox": [
+                0.167,
+                0.153,
+                0.255,
+                0.242
+              ],
+              "image_path": "images/page_281_image_1.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.267,
+            0.159,
+            0.506,
+            0.178
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Friendly Functions for Loud Code"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.266,
+            0.187,
+            0.79,
+            0.365
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The Golden Rule of Bioinformatics is to not trust your data (or tools). We can be proactive about this in code by using functions like stopifnot(), stop() warning(), and message() that stop execution or let the user know of issues that occur when running code. The function stopifnot() errors out if any of its arguments don’t evaluate to TRUE. warning() and message() don’t stop execution, but pass warnings and messages to users. Occasionally, it’s useful to turn R warnings into errors so that they stop execution. We can enable this behavior with options(warn=2) (and set options(warn=0) to return to the default)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.389,
+            0.861,
+            0.468
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Another useful function is paste(), which constructs strings by “pasting” together the parts. paste() takes any number of arguments and concatenates them together using the separating string specified by the sep argument (which is a space by default). Like many of R’s functions, paste() is vectorized:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 5,
+          "bbox": [
+            0.171,
+            0.478,
+            0.818,
+            0.54
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 5,
+              "bbox": [
+                0.171,
+                0.478,
+                0.818,
+                0.54
+              ],
+              "content": "> paste(\"chr\", c(1:22, \"X\", \"Y\"), sep=\"\")\n[1] \"chr1\"  \"chr2\"  \"chr3\"  \"chr4\"  \"chr5\"  \"chr6\"  \"chr7\"  \"chr8\"  \"chr9\"\n[10] \"chr10\"  \"chr11\"  \"chr12\"  \"chr13\"  \"chr14\"  \"chr15\"  \"chr16\"  \"chr17\"  \"chr18\"\n[19] \"chr19\"  \"chr20\"  \"chr21\"  \"chr22\"  \"chrX\"  \"chrY\""
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.137,
+            0.549,
+            0.86,
+            0.608
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Here, paste() pasted together the first vector (chr) and second vector (the autosome and sex chromosome names), recycling the shorter vector chr. paste() can also paste all these results together into a single string (see paste()’s argument collapse)."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 7,
+          "bbox": [
+            0.167,
+            0.624,
+            0.255,
+            0.712
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 7,
+              "bbox": [
+                0.167,
+                0.624,
+                0.255,
+                0.712
+              ],
+              "image_path": "images/page_281_image_7.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 8,
+          "bbox": [
+            0.267,
+            0.629,
+            0.559,
+            0.648
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Extracting Multiple Values from a String"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.266,
+            0.657,
+            0.788,
+            0.728
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For some strings, like “chr10:158395-172881,” we might want to extract several chunks. Processing the same string many times to extract different parts is not efficient. A better solution is to combine sub() and strsplit():"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 10,
+          "bbox": [
+            0.3,
+            0.735,
+            0.71,
+            0.844
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 10,
+              "bbox": [
+                0.3,
+                0.735,
+                0.71,
+                0.844
+              ],
+              "content": "> region <- \"chr10:158395-172881\"\n> chunks <- sub(\"(chr[\\d+MYX]+):(\\d+)-(\\d+)\",\n              \"\\\\1;;\\2;;\\3\",\n              region, perl=TRUE)\n> strsplit(chunks, \";;\")\n[[1]]\n[1] \"chr10\"  \"158395\" \"172881\""
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "page_number",
+          "index": 11,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "252"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 12,
+          "bbox": [
+            0.201,
+            0.922,
+            0.5,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 8: A Rapid Introduction to the R Language"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 282,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.135,
+            0.081,
+            0.861,
+            0.18
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The final function essential to string processing in R is strsplit(x, split), which splits string x by split. Like R’s other string processing functions, strsplit() supports optional perl and fixed arguments. For example, if we had a string like gene=LEAFY;locus=2159208;gene_model=AT5G61850.1 and we wished to extract each part, we’d need to split by “;”:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 1,
+          "bbox": [
+            0.171,
+            0.188,
+            0.743,
+            0.253
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 1,
+              "bbox": [
+                0.171,
+                0.188,
+                0.743,
+                0.253
+              ],
+              "content": "> leafy <- \"gene=LEAFY;locus=2159208;gene_model=AT5G61850.1\"\n> strsplit(leafy, \";\")\n[[1]]\n[1] \"gene=LEAFY\"      \"locus=2159208\"      \"gene_model=AT5G61850.1\""
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.26,
+            0.86,
+            0.318
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Also, like all of R’s other string functions, strsplit() is vectorized, so it can process entire character vectors at once. Because the number of split chunks can vary, strsplit() always returns results in a list."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.138,
+            0.336,
+            0.596,
+            0.366
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Developing Workflows with R Scripts"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.374,
+            0.86,
+            0.451
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In the last part of this section, we’ll focus on some topics that will help you develop the data analysis techniques we’ve learned so far into reusable workflows stored in scripts. We’ll look at control flow, R scripts, workflows for working with many files, and exporting data."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.467,
+            0.451,
+            0.492
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Control Flow: if, for, and while"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.136,
+            0.5,
+            0.86,
+            0.616
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "You might have noticed that we’ve come this far in the chapter without using any control flow statements common in other languages, such as if, for, or while. Many data analysis tasks in R don’t require modifying control flow, and we can avoid using loops by using R’s apply functions like lapply(), sapply(), and mapply(). Still, there are some circumstances where we need these classic control flow and looping statements. The basic syntax of if, for, and while are:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 7,
+          "bbox": [
+            0.171,
+            0.626,
+            0.449,
+            0.829
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 7,
+              "bbox": [
+                0.171,
+                0.626,
+                0.449,
+                0.829
+              ],
+              "content": "if (x == some_value) {\n    # do some stuff in here\n} else {\n    # else is optional\n}\n\nfor (element in some_vector) {\n    # iteration happens here\n}\n\nwhile (something_is_true) {\n    # do some stuff\n}"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.137,
+            0.837,
+            0.859,
+            0.876
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "You can break out of for and while loops with a break statement, and advance loops to the next iteration with next. If you do find you need loops in your R code, read the"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 9,
+          "bbox": [
+            0.578,
+            0.922,
+            0.799,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Developing Workflows with R Scripts"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 10,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "253"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 283,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.137,
+            0.08,
+            0.858,
+            0.117
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "additional notes about loops and pre-allocation in this chapter’s README on Git‐Hub."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "image",
+          "index": 1,
+          "bbox": [
+            0.167,
+            0.134,
+            0.255,
+            0.222
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 1,
+              "bbox": [
+                0.167,
+                0.134,
+                0.255,
+                0.222
+              ],
+              "image_path": "images/page_283_image_1.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.268,
+            0.14,
+            0.428,
+            0.159
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Iterating over Vectors"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.267,
+            0.169,
+            0.721,
+            0.186
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In for loops, it’s common to create a vector of indexes like:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 4,
+          "bbox": [
+            0.301,
+            0.193,
+            0.526,
+            0.24
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 4,
+              "bbox": [
+                0.301,
+                0.193,
+                0.526,
+                0.24
+              ],
+              "content": "for (i in 1:length(vec)) {\n    # do something\n}"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.266,
+            0.246,
+            0.789,
+            0.317
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "However, there’s a subtle gotcha here—if the vector vec has no elements, it’s length is 0, and 1:0 would return the sequence 1, 0. The behavior we want is for the loop to not be evaluated at all. R provides the function seq_along() to handle this situation safely:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 6,
+          "bbox": [
+            0.3,
+            0.324,
+            0.786,
+            0.417
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 6,
+              "bbox": [
+                0.3,
+                0.324,
+                0.786,
+                0.417
+              ],
+              "content": "> vec <- rnorm(3)\n> seq_along(vec)\n[1] 1 2 3\n> seq_along(numeric(0)) # numeric(0) returns an empty\n                                # numeric vector\ninteger(0)"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.266,
+            0.422,
+            0.787,
+            0.459
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "seq_len(length.out) is a similar function, which returns a sequence length.out elements long."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.137,
+            0.481,
+            0.86,
+            0.542
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "R also has a vectorized version of if: the ifelse function. Rather than control program flow, ifelse(test, yes, no) returns the yes value for all TRUE cases of test, and no for all FALSE cases. For example:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 9,
+          "bbox": [
+            0.17,
+            0.55,
+            0.363,
+            0.598
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 9,
+              "bbox": [
+                0.17,
+                0.55,
+                0.363,
+                0.598
+              ],
+              "content": "> x <- c(-3, 1, -5, 2)\n> ifelse(x < 0, -1, 1)\n[1] -1 1 -1 1"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 10,
+          "bbox": [
+            0.138,
+            0.612,
+            0.376,
+            0.639
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Working with R Scripts"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.137,
+            0.646,
+            0.86,
+            0.76
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Although we’ve learned R interactively though examples in this chapter, in practice your analyses should be kept in scripts that can be run many times throughout development. Scripts can be organized into project directories (see Chapter 2) and checked into Git repositories (see Chapter 5). There’s also a host of excellent R tools to help in creating well-documented, reproducible projects in R; see the following sidebar for examples."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 12,
+          "bbox": [
+            0.287,
+            0.789,
+            0.711,
+            0.814
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Reproducibility with Knitr and Rmarkdown"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.153,
+            0.819,
+            0.845,
+            0.894
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For our work to be reproducible (and to make our lives easier if we need to revisit code in the future), it’s essential that our code is saved, version controlled, and well documented. Although in-code comments are a good form of documentation, R has two related packages that go a step further and create reproducible project reports:"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 14,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "254"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 15,
+          "bbox": [
+            0.201,
+            0.922,
+            0.5,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 8: A Rapid Introduction to the R Language"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 284,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.152,
+            0.081,
+            0.845,
+            0.246
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "knitr and Rmarkdown. Both packages allow you to integrate chunks of R code into your text documents (such as a lab notebook or manuscript), so you can describe your data and analysis steps. Then, you can render (also known as “knit”) your document, which runs all R code and outputs the result in a variety of formats such as HTML or PDF (using LaTeX). Images, tables, and other output created by your R code will also appear in your finalized rendered document. Each document greatly improves reproducibility by integrating code and explanation (an approach inspired by Donald Knuth’s literate programming, which was discussed in “Unix Data Tools and the Unix One-Liner Approach: Lessons from Programming Pearls” on page 125)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.153,
+            0.253,
+            0.844,
+            0.329
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "While we don’t have the space to cover these packages in this chapter, both are easy to learn on your own with resources online. If you’re just beginning R, I’d recommend starting with Rmarkdown. Rmarkdown is well integrated into RStudio and is very easy to use. R code is simply woven between Markdown text using a simple syntax:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.186,
+            0.337,
+            0.668,
+            0.368
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The following code draws 100 random normally distributed value and finds their mean:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 3,
+          "bbox": [
+            0.189,
+            0.382,
+            0.321,
+            0.453
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 3,
+              "bbox": [
+                0.189,
+                0.382,
+                0.321,
+                0.453
+              ],
+              "content": "set.seed(0)\nx <- rnorm(100)\nmean(x)\n..."
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.154,
+            0.469,
+            0.844,
+            0.526
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Then, you can save and call Rmarkdown’s render() on this file—creating an HTML version containing the documentation, code, and the results of the R block between {r} and ```. There are numerous other options; the best introductions are:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 5,
+          "bbox": [
+            0.174,
+            0.54,
+            0.466,
+            0.607
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.174,
+                0.54,
+                0.437,
+                0.556
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• "
+                },
+                {
+                  "type": "hyperlink",
+                  "url": "http://bit.ly/rstudio-rmkdwn",
+                  "content": [
+                    {
+                      "type": "text",
+                      "content": "RStudio’s Rmarkdown tutorial"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.174,
+                0.564,
+                0.465,
+                0.581
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• "
+                },
+                {
+                  "type": "hyperlink",
+                  "url": "http://kbroman.org/knitr_knutshell/",
+                  "content": [
+                    {
+                      "type": "text",
+                      "content": "Karl Broman’s knitr in a knutshell"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.174,
+                0.588,
+                0.414,
+                0.606
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• "
+                },
+                {
+                  "type": "hyperlink",
+                  "url": "http://yihui.name/knitr/demo/minimal/",
+                  "content": [
+                    {
+                      "type": "text",
+                      "content": "Minimal Examples of Knitr"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.137,
+            0.646,
+            0.859,
+            0.684
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "You can run R scripts from R using the function source(). For example, to execute an R script named my_analysis.R use:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.171,
+            0.693,
+            0.388,
+            0.71
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "> source",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "(\"my_analysis.R\")"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.137,
+            0.717,
+            0.861,
+            0.871
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As discussed in “Loading Data into R” on page 194, it’s important to mind R’s working directory. Scripts should not use setwd() to set their working directory, as this is not portable to other systems (which won’t have the same directory structure). For the same reason, use relative paths like data/achievers.txt when loading in data, and not absolute paths like /Users/jlebowski/data/achievers.txt (as point also made in “Project Directories and Directory Structures” on page 21). Also, it’s a good idea to indicate (either in comments or a README file) which directory the user should set as their working directory."
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 12,
+          "bbox": [
+            0.578,
+            0.923,
+            0.798,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Developing Workflows with R Scripts"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 13,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "255"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 285,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.138,
+            0.08,
+            0.825,
+            0.099
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Alternatively, we can execute a script in batch mode from the command line with:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.171,
+            0.109,
+            0.457,
+            0.126
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "$ Rscript --vanilla my_analysis.R"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.133,
+            0.861,
+            0.287
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This comes in handy when you need to rerun an analysis on different files or with different arguments provided on the command line. I recommend using --vanilla because by default, Rscript will restore any past saved environments and save its current environment after the execution completes. Usually we don’t want R to restore any past state from previous runs, as this can lead to irreproducible results (because how a script runs depends on files only on your machine). Additionally, saved environments can make it a nightmare to debug a script. See R --help for more information."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.336,
+            0.317,
+            0.661,
+            0.341
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Reproducibility and sessionInfo()"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.153,
+            0.347,
+            0.845,
+            0.459
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Versions of R and any R packages installed change over time. This can lead to reproducibility headaches, as the results of your analyses may change with the changing version of R and R packages. Solving these issues is an area of ongoing development (see, for example, "
+            },
+            {
+              "type": "hyperlink",
+              "url": "http://rstudio.github.io/packrat/",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "the packrat package"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "content": "). At the very least, you should always record the versions of R and any packages you use for an analysis. R actually makes this incredibly easy to do—just call the sessionInfo() function:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 5,
+          "bbox": [
+            0.186,
+            0.467,
+            0.795,
+            0.702
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 5,
+              "bbox": [
+                0.186,
+                0.467,
+                0.795,
+                0.702
+              ],
+              "content": "> sessionInfo()\nR version 3.1.2 (2014-10-31)\nPlatform: x86_64-apple-darwin14.0.0 (64-bit)\n\nlocale:\n[1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8\n[...]\n\nloaded via a namespace (and not attached):\n [1] assertthat_0.1    colorspace_1.2-4 DBI_0.3.1      digest_0.6.4\n [5] gtable_0.1.2     labeling_0.3      lattice_0.20-29 lazyeval_0.1.10\n[17] scales_0.2.4     stringr_0.6.2      tools_3.1.2\n\n[...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.137,
+            0.73,
+            0.86,
+            0.788
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Lastly, if you want to retrieve command-line arguments passed to your script, use R’s commandArgs() with trailingOnly=TRUE. For example, this simple R script just prints all arguments:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 7,
+          "bbox": [
+            0.17,
+            0.798,
+            0.635,
+            0.845
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 7,
+              "bbox": [
+                0.17,
+                0.798,
+                0.635,
+                0.845
+              ],
+              "content": "## args.R -- a simple script to show command line args\nargs <- commandArgs(TRUE)\nprint(args)"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "markdown"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.139,
+            0.853,
+            0.288,
+            0.87
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We run this with:"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 9,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "256"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 10,
+          "bbox": [
+            0.201,
+            0.922,
+            0.5,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 8: A Rapid Introduction to the R Language"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 286,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.171,
+            0.081,
+            0.524,
+            0.096
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "$ Rscript --vanilla args.R arg1 arg2 arg3"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.171,
+            0.097,
+            0.379,
+            0.112
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "[1] \"arg1\" \"arg2\" \"arg3\""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.127,
+            0.68,
+            0.154
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Workflows for Loading and Combining Multiple Files"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.136,
+            0.161,
+            0.861,
+            0.316
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In bioinformatics projects, sometimes loading data into R can be half the battle. Loading data is nontrivial whenever data resides in large files and when it’s scattered across many files. We’ve seen some tricks to deal with large files in “Loading Data into R” on page 194 and we’ll see a different approach to this problem when we cover databases in Chapter 13. In this section, we’ll learn some strategies and workflows for loading and combining multiple files. These workflows tie together many of the R tools we’ve learned so far: lapply(), do.call(), rbind(), and string functions like sub()."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.324,
+            0.861,
+            0.42
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let’s step through how to load and combine multiple tab-delimited files in a directory. Suppose you have a directory containing genome-wide hotspot data separated into different files by chromosome. Data split across many files is a common result of pipelines that have been parallelized by chromosome. I’ve created example data of this nature in this chapter’s GitHub repository under the hotspots/ directory:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 5,
+          "bbox": [
+            0.171,
+            0.43,
+            0.735,
+            0.539
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 5,
+              "bbox": [
+                0.171,
+                0.43,
+                0.735,
+                0.539
+              ],
+              "content": "$ ls -l hotspots\n[vinceb]% ls -l hotspots\ntotal 1160\n-rw-r--r-- 1 vinceb staff 42041 Feb 11 13:54 hotspots_chr1.bed\n-rw-r--r-- 1 vinceb staff 26310 Feb 11 13:54 hotspots_chr10.bed\n-rw-r--r-- 1 vinceb staff 24760 Feb 11 13:54 hotspots_chr11.bed\n[...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.137,
+            0.545,
+            0.86,
+            0.681
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The first step to loading this data into R is to programmatically access these files from R. If your project uses a well-organized directory structure and consistent filenames (see Chapter 2), this is easy. R’s function list.files() lists all files in a specific directory. Optionally, list.files() takes a regular-expression pattern used to select matching files. In general, it’s wise to use this pattern argument to be as restrictive as possible so as to prevent problems if a file accidentally ends up in your data directory. For example, to load in all chromosomes’ .bed files:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 7,
+          "bbox": [
+            0.171,
+            0.691,
+            0.742,
+            0.753
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 7,
+              "bbox": [
+                0.171,
+                0.691,
+                0.742,
+                0.753
+              ],
+              "content": "> list.files(\"hotspots\", pattern=\"hotspots.*\\\\.bed\")\n[1] \"hotspots_chr1.bed\"  \"hotspots_chr10.bed\" \"hotspots_chr11.bed\"\n[4] \"hotspots_chr12.bed\" \"hotspots_chr13.bed\" \"hotspots_chr14.bed\"\n[...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.137,
+            0.762,
+            0.859,
+            0.817
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Note that our regular expression needs to use two backslashes to escape the period in the .bed extension. list.files() also has an argument that returns full relative paths to each file:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 9,
+          "bbox": [
+            0.17,
+            0.829,
+            0.861,
+            0.877
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 9,
+              "bbox": [
+                0.17,
+                0.829,
+                0.861,
+                0.877
+              ],
+              "content": "> hs_files <- list.files(\"hotspots\", pattern=\"hotspots.*\\\\.bed\", full.names=TRUE)\n> hs_files\n[1] \"hotspots/hotspots_chr1.bed\"  \"hotspots/hotspots_chr10.bed\""
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "footer",
+          "index": 10,
+          "bbox": [
+            0.578,
+            0.923,
+            0.798,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Developing Workflows with R Scripts"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 11,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "257"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 287,
+      "blocks": [
+        {
+          "type": "code",
+          "index": 0,
+          "bbox": [
+            0.174,
+            0.08,
+            0.717,
+            0.113
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 0,
+              "bbox": [
+                0.174,
+                0.08,
+                0.717,
+                0.113
+              ],
+              "content": "[3] \"hotspots/hotspots_chr11.bed\" \"hotspots/hotspots_chr12.bed\"\n[...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.121,
+            0.856,
+            0.16
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We’ll use the hs_files vector because it includes the path to each file. list.files() has other useful arguments; see help(list.files) for more information."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.17,
+            0.859,
+            0.209
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "With list.files() programmatically listing our files, it’s then easy to lapply() a function that loads each file in. For example:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 3,
+          "bbox": [
+            0.171,
+            0.218,
+            0.783,
+            0.358
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 3,
+              "bbox": [
+                0.171,
+                0.218,
+                0.783,
+                0.358
+              ],
+              "content": "> bedcols <- c(\"chr\", \"start\", \"end\")\n> loadFile <- function(x) read.delim(x, header=FALSE, col.names=bedcols)\n> hs <- lapply(hs_files, loadFile)\n> head(hs[[1]])\n    chr   start     end\n1 chr1 1138865 1161866\n2 chr1 2173749 2179750\n3 chr1 2246749 2253750\n[...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.365,
+            0.859,
+            0.403
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Often, it’s useful to name each list item with the filename (sans full path). For example:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 5,
+          "bbox": [
+            0.171,
+            0.413,
+            0.725,
+            0.43
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 5,
+              "bbox": [
+                0.171,
+                0.413,
+                0.725,
+                0.43
+              ],
+              "content": "> names(hs) <- list.files(\"hotspots\", pattern=\"hotspots.*\\\\.bed\")"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.138,
+            0.438,
+            0.7,
+            0.457
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Now, we can use do.call() and rbind to merge this data together:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 7,
+          "bbox": [
+            0.171,
+            0.466,
+            0.516,
+            0.59
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 7,
+              "bbox": [
+                0.171,
+                0.466,
+                0.516,
+                0.59
+              ],
+              "content": "> hsd <- do.call(rbind, hs)\n> head(hsd)\n                  chr  start   end\nhotspots_chr1.bed.1 chr1 1138865 1161866\nhotspots_chr1.bed.2 chr1 2173749 2179750\nhotspots_chr1.bed.3 chr1 2246749 2253750\n[...]\n> row.names(hsd) <- NULL"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.137,
+            0.6,
+            0.859,
+            0.638
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "rbind() has created some row names for us (which aren’t too helpful), but you can remove them with row.names(hsd) <- NULL."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.137,
+            0.647,
+            0.861,
+            0.803
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Often, we need to include a column in our dataframe containing meta-information about files that’s stored in each file’s filename. For example, if you had to load in multiple samples’ data like sampleA_repl01.txt, sampleA_repl02.txt, …, sampleC_repl01.txt you will likely want to extract the sample name and replicate information and attach these as columns in your dataframe. As a simple example of this, let’s pretend we did not have the column chr in our hotspot files and needed to extract this information from each filename using sub(). We’ll modify our load File() function accordingly:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 10,
+          "bbox": [
+            0.172,
+            0.812,
+            0.75,
+            0.891
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 10,
+              "bbox": [
+                0.172,
+                0.812,
+                0.75,
+                0.891
+              ],
+              "content": "loadFile <- function(x) {\n  # read in a BED file, extract the chromosome name from the file,\n  # and add it as a column\n  df <- read.delim(x, header=FALSE, col.names=bedcols)\n  df\\$chr_name <- sub(\"hotspots_([^\\\\.]+)\\.bed\", \"\\\\1\", basename(x))"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "r"
+        },
+        {
+          "type": "page_number",
+          "index": 11,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "258"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 12,
+          "bbox": [
+            0.201,
+            0.922,
+            0.5,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 8: A Rapid Introduction to the R Language"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}

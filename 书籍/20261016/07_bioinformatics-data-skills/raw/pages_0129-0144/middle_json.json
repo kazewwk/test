@@ -1,0 +1,3443 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Bioinformatics Data Skills",
+      "authors": [
+        "Vince Buffalo"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "created_at": "2015-06-30T16:29:18Z",
+      "modified_at": "2015-06-30T13:45:47-04:00",
+      "creator_application": "AH CSS Formatter V6.2 MR4 for Linux64 : 6.2.6.18551 (2014/09/24 15:00JST)",
+      "producer_application": "Antenna House PDF Output Library 6.2.609 (Linux64)",
+      "page_count": 538,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 128,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 129,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 130,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 131,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 132,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 133,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 134,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 135,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 136,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 137,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 138,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 139,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 140,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 141,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 142,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 143,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 128,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.137,
+            0.08,
+            0.859,
+            0.119
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "always refer to a specific commit by its SHA-1 ID. So, to restore README.md to the version from commit 08ccd3b, we use:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 1,
+          "bbox": [
+            0.171,
+            0.129,
+            0.583,
+            0.207
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 1,
+              "bbox": [
+                0.171,
+                0.129,
+                0.583,
+                0.207
+              ],
+              "content": "$ git checkout 08ccd3b -- README.md\n$ cat README.md\nZea Mays SNP Calling Project\nProject started 2013-01-03\nSamples expected from sequencing core 2013-01-10"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.171,
+            0.238,
+            0.48,
+            0.253
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We downloaded refgen3 on 2013-01-04."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.138,
+            0.261,
+            0.701,
+            0.28
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "If we restore to get the most recent commit’s version, we could use:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 4,
+          "bbox": [
+            0.171,
+            0.29,
+            0.532,
+            0.352
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 4,
+              "bbox": [
+                0.171,
+                0.29,
+                0.532,
+                0.352
+              ],
+              "content": "$ git checkout 20041ab -- README.md\n$ git status\n# On branch master\nnothing to commit, working directory clean"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.36,
+            0.86,
+            0.418
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Note that after checking out the latest version of the README.md file from commit 20041ab, nothing has effectively changed in our working directory; you can verify this using git status."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.138,
+            0.435,
+            0.476,
+            0.461
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Stashing Your Changes: git stash"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.469,
+            0.86,
+            0.585
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "One very useful Git subcommand is git stash, which saves any working changes you’ve made since the last commit and restores your repository to the version at HEAD. You can then reapply these saved changes later. git stash is handy when we want to save our messy, partial progress before operations that are best performed with a clean working directory—for example, git pull or branching (more on branching later)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.138,
+            0.595,
+            0.717,
+            0.615
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let’s practice using git stash by first adding a line to README.md:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 9,
+          "bbox": [
+            0.171,
+            0.624,
+            0.734,
+            0.794
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 9,
+              "bbox": [
+                0.171,
+                0.624,
+                0.734,
+                0.794
+              ],
+              "content": "$ echo \"\\nAdapter file: adapters.fa\" >> README.md\n$ git status\n# On branch master\n# Changes not staged for commit:\n# (use \"git add <file>...\" to update what will be committed)\n# (use \"git checkout -- <file>...\" to discard changes in working directory)\n#\n# modified: README.md\n#\nno changes added to commit (use \"git add\" and/or \"git commit -a\")"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.139,
+            0.803,
+            0.524,
+            0.822
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Then, let’s stash this change using git stash:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 11,
+          "bbox": [
+            0.171,
+            0.833,
+            0.701,
+            0.894
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 11,
+              "bbox": [
+                0.171,
+                0.833,
+                0.701,
+                0.894
+              ],
+              "content": "\\$ git stash\nSaved working directory and index state WIP on master: 20041ab resolved merge conflict in README.md\nHEAD is now at 20041ab resolved merge conflict in README.md"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "footer",
+          "index": 12,
+          "bbox": [
+            0.466,
+            0.922,
+            0.806,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Using Git to Make Life Easier: Working with Past Commits"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 13,
+          "bbox": [
+            0.84,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "99"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 129,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.137,
+            0.08,
+            0.861,
+            0.119
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Stashing our working changes sets our directory to the same state it was in at the last commit; now our project directory is clean."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.138,
+            0.129,
+            0.604,
+            0.148
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To reapply the changes we stashed, use git stash pop:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 2,
+          "bbox": [
+            0.171,
+            0.158,
+            0.734,
+            0.328
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 2,
+              "bbox": [
+                0.171,
+                0.158,
+                0.734,
+                0.328
+              ],
+              "content": "$ git stash pop\n# On branch master\n# Changes not staged for commit:\n# (use \"git add <file>...\" to update what will be committed)\n# (use \"git checkout -- <file>...\" to discard changes in working\n# directory)\n#\n# modified: README.md\n#\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\nDropped refs/stash@{0} (785dad46104116610d5840b317f05465a5f07c8b)"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.336,
+            0.86,
+            0.414
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Note that the changes stored with git stash are not committed; git stash is a separate way to store changes outside of your commit history. If you start using git stash a lot in your work, check out other useful stash subcommands like git stash apply and git stash list."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.138,
+            0.432,
+            0.586,
+            0.459
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "More git diff: Comparing Commits and Files"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.465,
+            0.86,
+            0.543
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Earlier, we used git diff to look at the difference between our working directory and our staging area. But git diff has many other uses and features; in this section, we’ll look at how we can use git diff to compare our current working tree to other commits."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.137,
+            0.554,
+            0.86,
+            0.611
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "One use for git diff is to compare the difference between two arbitrary commits. For example, if we wanted to compare what we have now (at HEAD) to commit dafce75:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 7,
+          "bbox": [
+            0.171,
+            0.622,
+            0.754,
+            0.84
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 7,
+              "bbox": [
+                0.171,
+                0.622,
+                0.754,
+                0.84
+              ],
+              "content": "$ git diff dafce75\ndiff --git a/README.md b/README.md\nindex 016ed0c..9491359 100644\n--- a/README.md\n+++ b/README.md\n@@ -3,5 +3,7 @@ Project started 2013-01-03\n  Samples expected from sequencing core 2013-01-10\n\n-Maize reference genome version: refgen3, downloaded 2013-01-04 from\n+We downloaded the B72 reference genome (refgen3) on 2013-01-04 from\n  http://maizegdb.org into `/share/data/refgen3/'.\n+\n+Adapter file: adapters.fa"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "diff"
+        },
+        {
+          "type": "page_number",
+          "index": 8,
+          "bbox": [
+            0.141,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "100"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 9,
+          "bbox": [
+            0.201,
+            0.922,
+            0.364,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 5: Git for Scientists"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 130,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "index": 0,
+          "bbox": [
+            0.313,
+            0.109,
+            0.685,
+            0.134
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Specifying Revisions Relative to HEAD"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.153,
+            0.14,
+            0.845,
+            0.232
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Like writing out absolute paths in Unix, referring to commits by their full SHA-1 ID is tedious. While we can reduce typing by using the abbreviated commits (the first seven characters of the full SHA-1 ID), there’s an easier way: relative ancestry references. Similar to using relative paths in Unix like ./ and ../, Git allows you to specify commits relative to HEAD (or any other commit, with SHA-1 IDs)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.153,
+            0.242,
+            0.846,
+            0.3
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The caret notation (^) represents the parent commit of a commit. For example, to refer to the parent of the most recent commit on the current branch (HEAD), we’d use HEAD^ (commit 08ccd3b in our examples)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.153,
+            0.308,
+            0.844,
+            0.422
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Similarly, if we’d wanted to refer to our parent’s parent commit (dafce75 in our example), we use HEAD^^. Our example repository doesn’t have enough commits to refer to the parent of this commit, but if it did, we could use HEAD^^^. At a certain point, using this notation is no easier than copying and pasting a SHA-1, so a succinct alternative syntax exists: git HEAD~<n>, where <n> is the number of commits back in the ances try of HEAD (including the last one). Using this notation, HEAD^^ is the same as HEAD~2."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.153,
+            0.43,
+            0.846,
+            0.504
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Specifying revisions becomes more complicated with merge commits, as these have two parents. Git has an elaborate language to specify these commits. For a full specification, enter git rev-parse --help and see the “Specifying Revisions” section of this manual page."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.536,
+            0.861,
+            0.614
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Using git diff, we can also view all changes made to a file between two commits. To do this, specify both commits and the file’s path as arguments (e.g., git diff <com mit> <commit> <path>). For example, to compare our version of README.md across commits 269aa09 and 46f0781, we could use either:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 6,
+          "bbox": [
+            0.171,
+            0.625,
+            0.482,
+            0.671
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 6,
+              "bbox": [
+                0.171,
+                0.625,
+                0.482,
+                0.671
+              ],
+              "content": "$ git diff 46f0781 269aa09 README.md\n# or\n$ git diff HEAD~3 HEAD~2 README.md"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "shell"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.679,
+            0.859,
+            0.718
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This second command utilizes the relative ancestry references explained in “Specify ing Revisions Relative to HEAD” on page 101."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.137,
+            0.727,
+            0.861,
+            0.845
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "How does this help? Git’s ability to compare the changes between two commits allows you to find where and how a bug entered your code. For example, if a modified script produces different results from an earlier version, you can use git diff to see exactly which lines differ across versions. Git also has a tool called git bisect to help developers find where exactly bugs entered their commit history. git bisect is out of the scope of this chapter, but there are some good examples in git bisect --help."
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 9,
+          "bbox": [
+            0.46,
+            0.922,
+            0.799,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Using Git to Make Life Easier: Working with Past Commits"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 10,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "101"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 131,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "index": 0,
+          "bbox": [
+            0.138,
+            0.079,
+            0.668,
+            0.105
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Undoing and Editing Commits: git commit --amend"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.112,
+            0.861,
+            0.169
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "At some point, you’re bound to accidentally commit changes you didn’t mean to or make an embarrassing typo in a commit message. For example, suppose we were to make a mistake in a commit message:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 2,
+          "bbox": [
+            0.171,
+            0.179,
+            0.59,
+            0.227
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 2,
+              "bbox": [
+                0.171,
+                0.179,
+                0.59,
+                0.227
+              ],
+              "content": "\\$ git commit -a -m \"added adapters file to readme\"\n[master f4993e3] added adapters file to readme\n1 file changed, 2 insertions(+)"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.138,
+            0.234,
+            0.486,
+            0.252
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We could easily amend our commit with:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 4,
+          "bbox": [
+            0.172,
+            0.263,
+            0.347,
+            0.278
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 4,
+              "bbox": [
+                0.172,
+                0.263,
+                0.347,
+                0.278
+              ],
+              "content": "\\$ git commit --amend"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.287,
+            0.86,
+            0.384
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "git commit --amend opens up your last commit message in your default text editor, allowing you to edit it. Amending commits isn’t limited to just changing the commit message though. You can make changes to your file, stage them, and then amend these staged changes with git commit --amend. In general, unless you’ve made a mistake, it’s best to just use separate commits."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.137,
+            0.393,
+            0.86,
+            0.471
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "It’s also possible to undo commits using either git revert or the more advanced git reset (which if used improperly can lead to data loss). These are more advanced topics that we don’t have space to cover in this chapter, but I’ve listed some resources on this issue in this chapter’s README file on GitHub."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.138,
+            0.489,
+            0.43,
+            0.518
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Working with Branches"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.137,
+            0.527,
+            0.859,
+            0.584
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Our final topic is probably Git’s greatest feature: branching. If you’re feeling overwhelmed so far by Git (I certainly did when I first learned it), you can move forward to Chapter 6 and work through this section later."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.137,
+            0.593,
+            0.86,
+            0.707
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Branching is much easier with Git than in other version control systems—in fact, I switched to Git after growing frustrated with another version control system’s branching model. Git’s branches are virtual, meaning that branching doesn’t require actually copying files in your repository. You can create, merge, and share branches effortlessly with Git. Here are some examples of how branches can help you in your bioinformatics work:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 10,
+          "bbox": [
+            0.155,
+            0.722,
+            0.858,
+            0.881
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 11,
+              "bbox": [
+                0.155,
+                0.722,
+                0.858,
+                0.835
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• Branches allow you to experiment in your project without the risk of adversely affecting the main branch, master. For example, if in the middle of a variant calling project you want to experiment with a new pipeline, you can create a new branch and implement the changes there. If the new variant caller doesn’t work out, you can easily switch back to the master branch—it will be unaffected by your experiment."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 12,
+              "bbox": [
+                0.155,
+                0.843,
+                0.858,
+                0.881
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• If you’re developing software, branches allow you to develop new features or bug fixes without affecting the working production version, the master branch. Once"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "page_number",
+          "index": 13,
+          "bbox": [
+            0.141,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "102"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 14,
+          "bbox": [
+            0.201,
+            0.922,
+            0.364,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 5: Git for Scientists"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 132,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.171,
+            0.08,
+            0.856,
+            0.119
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "the feature or bug fix is complete, you can merge it into the master branch, incorporating the change into your production version."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.156,
+            0.124,
+            0.861,
+            0.2
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Similarly, branches simplify working collaboratively on repositories. Each collab orator can work on their own separate branches, which prevents disrupting the master branch for other collaborators. When a collaborator’s changes are ready to be shared, they can be merged into the master branch."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.233,
+            0.812,
+            0.259
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Creating and Working with Branches: git branch and git checkout"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.266,
+            0.86,
+            0.322
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As a simple example, let’s create a new branch called readme-changes. Suppose we want to make some edits to README.md, but we’re not sure these changes are ready to be incorporated into the main branch, master."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.333,
+            0.86,
+            0.39
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To create a Git branch, we use git branch <branchname>. When called without any arguments, git branch lists all branches. Let’s create the readme-changes branch and check that it exists:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 5,
+          "bbox": [
+            0.171,
+            0.401,
+            0.404,
+            0.463
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 5,
+              "bbox": [
+                0.171,
+                0.401,
+                0.404,
+                0.463
+              ],
+              "content": "$ git branch readme-changes\n$ git branch\n* master\n  readme-changes"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.137,
+            0.472,
+            0.859,
+            0.51
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The asterisk next to master is there to indicate that this is the branch we’re currently on. To switch to the readme-changes branch, use git checkout readme-changes:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 7,
+          "bbox": [
+            0.171,
+            0.521,
+            0.47,
+            0.598
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 7,
+              "bbox": [
+                0.171,
+                0.521,
+                0.47,
+                0.598
+              ],
+              "content": "$ git checkout readme-changes\nSwitched to branch 'readme-changes'\n$ git branch\n  master\n* readme-changes"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.137,
+            0.607,
+            0.859,
+            0.644
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Notice now that the asterisk is next to readme-changes, indicating this is our current branch. Now, suppose we edit our README.md section extensively, like so:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 9,
+          "bbox": [
+            0.171,
+            0.655,
+            0.572,
+            0.84
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 9,
+              "bbox": [
+                0.171,
+                0.655,
+                0.572,
+                0.84
+              ],
+              "content": "# Zea Mays SNP Calling Project\nProject started 2013-01-03.\n\n## Samples\nSamples downloaded 2013-01-11 into `data/seqs`:\n\n        data/seqs/zmaysA_R1.fastq\n        data/seqs/zmaysA_R2.fastq\n        data/seqs/zmaysB_R1.fastq\n        data/seqs/zmaysB_R2.fastq\n        data/seqs/zmaysC_R1.fastq\n        data/seqs/zmaysC_R2.fastq"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "code",
+          "index": 10,
+          "bbox": [
+            0.172,
+            0.856,
+            0.279,
+            0.87
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 10,
+              "bbox": [
+                0.172,
+                0.856,
+                0.279,
+                0.87
+              ],
+              "content": "## Reference"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "markdown"
+        },
+        {
+          "type": "footer",
+          "index": 11,
+          "bbox": [
+            0.657,
+            0.923,
+            0.798,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Working with Branches"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 12,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "103"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 133,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.171,
+            0.081,
+            0.743,
+            0.113
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We downloaded the B72 reference genome (refgen3) on 2013-01-04 from http://maizegdb.org into `/share/data/refgen3/`."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.12,
+            0.858,
+            0.178
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Now if we commit these changes, our commit is added to the readme-changes branch. We can verify this by switching back to the master branch and seeing that this commit doesn’t exist:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 2,
+          "bbox": [
+            0.171,
+            0.186,
+            0.702,
+            0.39
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 2,
+              "bbox": [
+                0.171,
+                0.186,
+                0.702,
+                0.39
+              ],
+              "content": "$ git commit -a -m \"reformatted readme, added sample info\" ①\n[readme-changes 6e680b6] reformatted readme, added sample info\n1 file changed, 12 insertions(+), 3 deletions(-)\n$ git log --abbrev-commit --pretty=oneline -n 3 ②\n6e680b6 reformatted readme, added sample info\n20041ab resolved merge conflict in README.md\n08ccd3b added reference download date\n$ git checkout master ③\nSwitched to branch 'master'\n$ git log --abbrev-commit --pretty=oneline -n 3 ④\n20041ab resolved merge conflict in README.md\n08ccd3b added reference download date\ndafce75 added ref genome download date and link"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "list",
+          "index": 3,
+          "bbox": [
+            0.138,
+            0.405,
+            0.861,
+            0.57
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 4,
+              "bbox": [
+                0.138,
+                0.405,
+                0.601,
+                0.425
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "0 Our commit, made on the branch readme-changes."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 5,
+              "bbox": [
+                0.138,
+                0.441,
+                0.49,
+                0.46
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "2 The commit we just made (6e680b6)."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.138,
+                0.477,
+                0.49,
+                0.496
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Switching back to our master branch."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.137,
+                0.513,
+                0.859,
+                0.569
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "④ Our last commit on master is 20041ab. Our changes to README.md are only on the readme-changes branch, and when we switch back to master, Git swaps our files out to those versions on that branch."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.137,
+            0.58,
+            0.859,
+            0.619
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Back on the master branch, suppose we add the adapters.fa file, and commit this change:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 9,
+          "bbox": [
+            0.171,
+            0.628,
+            0.701,
+            0.768
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 9,
+              "bbox": [
+                0.171,
+                0.628,
+                0.701,
+                0.768
+              ],
+              "content": "$ git branch\n* master\n  readme-changes\n$ echo \">adapter-1\\\\nGATGATCATTCAGCGACTACGATCG\" >> adapters.fa\n$ git add adapters.fa\n$ git commit -a -m \"added adapters file\"\n[master dd57e33] added adapters file\n 1 file changed, 2 insertions(+)\n  create mode 100644 adapters.fa"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "shell"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.138,
+            0.775,
+            0.775,
+            0.795
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Now, both branches have new commits. This situation looks like Figure 5-6."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 11,
+          "bbox": [
+            0.141,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "104"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 12,
+          "bbox": [
+            0.201,
+            0.922,
+            0.364,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 5: Git for Scientists"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 134,
+      "blocks": [
+        {
+          "type": "image",
+          "index": 0,
+          "bbox": [
+            0.368,
+            0.089,
+            0.624,
+            0.332
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 0,
+              "bbox": [
+                0.368,
+                0.089,
+                0.624,
+                0.332
+              ],
+              "image_path": "images/page_134_image_0.jpg",
+              "content": "```mermaid\ngraph TD\n  A[\"new-methods\"] --> B[\"6e680b6\"]\n  B --> C[\"20041ab\"]\n  D[\"HEAD\"] --> E[\"master\"]\n  E --> F[\"dd57e33\"]\n  F --> C\n  C <--> D\n```"
+            },
+            {
+              "type": "image_caption",
+              "index": 1,
+              "bbox": [
+                0.137,
+                0.352,
+                0.851,
+                0.429
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Figure 5-6. Our two branches (within Git, branches are represented as pointers at commits, as depicted here), the master and readme-changes branches have diverged, as they point to different commits (our HEAD points to master, indicating this is the current branch we’re on)"
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.448,
+            0.859,
+            0.486
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Another way to visualize this is with git log. We’ll use the --branches option to specify we want to see all branches, and -n 2 to only see these last commits:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 3,
+          "bbox": [
+            0.171,
+            0.496,
+            0.727,
+            0.56
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 3,
+              "bbox": [
+                0.171,
+                0.496,
+                0.727,
+                0.56
+              ],
+              "content": "$ git log --abbrev-commit --pretty=oneline --graph --branches -n2\n* dd57e33 added adapters file\n| * 6e680b6 reformatted readme, added sample info\n|/"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.138,
+            0.574,
+            0.442,
+            0.601
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Merging Branches: git merge"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.607,
+            0.86,
+            0.704
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "With our two branches diverged, we now want to merge them together. The strategy to merge two branches is simple. First, use git checkout to switch to the branch we want to merge the other branch into. Then, use git merge <otherbranch> to merge the other branch into the current branch. In our example, we want to merge the readme-changes branch into master, so we switch to master first. Then we use:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 6,
+          "bbox": [
+            0.171,
+            0.715,
+            0.592,
+            0.778
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 6,
+              "bbox": [
+                0.171,
+                0.715,
+                0.592,
+                0.778
+              ],
+              "content": "$ git merge readme-changes\nMerge made by the 'recursive' strategy.\n  README.md | 15 +++++++++++++---\n  1 file changed, 12 insertions(+), 3 deletions(-)"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.785,
+            0.859,
+            0.824
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "There wasn’t a merge conflict, so git merge opens our text editor and has us write a merge commit message. Once again, let’s use git log to see this:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 8,
+          "bbox": [
+            0.171,
+            0.834,
+            0.735,
+            0.898
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 8,
+              "bbox": [
+                0.171,
+                0.834,
+                0.735,
+                0.898
+              ],
+              "content": "$ git log --abbrev-commit --pretty=oneline --graph --branches -n 3\n*   e9a81b9 Merge branch 'readme-changes'\n|\\\n| * 6e680b6 reformatted readme, added sample info"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "footer",
+          "index": 9,
+          "bbox": [
+            0.657,
+            0.923,
+            0.798,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Working with Branches"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 10,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "105"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 135,
+      "blocks": [
+        {
+          "type": "code",
+          "index": 0,
+          "bbox": [
+            0.171,
+            0.08,
+            0.44,
+            0.113
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 0,
+              "bbox": [
+                0.171,
+                0.08,
+                0.44,
+                0.113
+              ],
+              "content": "* | dd57e33 added adapters file\n|/"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.12,
+            0.861,
+            0.239
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Bear in mind that merge conflicts can occur when merging branches. In fact, the merge conflict we encountered in “Merge Conflicts” on page 92 when pulling in remote changes was a conflict between two branches; git pull does a merge between a remote branch and a local branch (more on this in “Branches and Remotes” on page 106). Had we encountered a merge conflict when running git merge, we’d follow the same strategy as in “Merge Conflicts” on page 92 to resolve it."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.247,
+            0.859,
+            0.286
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "When we’ve used git log to look at our history, we’ve only been looking a few commits back—let’s look at the entire Git history now:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 3,
+          "bbox": [
+            0.171,
+            0.295,
+            0.695,
+            0.558
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 3,
+              "bbox": [
+                0.171,
+                0.295,
+                0.695,
+                0.558
+              ],
+              "content": "$ git log --abbrev-commit --pretty=oneline --graph --branches\n*   e9a81b9 Merge branch 'readme-changes'\n|\\\n| * 6e680b6 reformatted readme, added sample info\n* | dd57e33 added adapters file\n|/\n*   20041ab resolved merge conflict in README.md\n|\\\n| * dafce75 added ref genome download date and link\n* | 08ccd3b added reference download date\n|/\n* 269aa09 added reference genome info\n* 46f0781 added information about samples\n* c509f63 added .gitignore\n* e4feb22 added markdown extensions to README files\n* 94e2365 added information about project to README\n* 3d7ffa6 initial import"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "shell"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.566,
+            0.86,
+            0.625
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Note that we have two bubbles in our history: one from the merge conflict we resolved after git pull, and the other from our recent merge of the readme-changes branch."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.138,
+            0.64,
+            0.379,
+            0.664
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Branches and Remotes"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.137,
+            0.673,
+            0.86,
+            0.806
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The branch we created in the previous section was entirely local—so far, our collaborators are unable to see this branch or its commits. This is a nice feature of Git: you can create and work with branches to fit your workflow needs without having to share these branches with collaborators. In some cases, we do want to share our local branches with collaborators. In this section, we’ll see how Git’s branches and remote repositories are related, and how we can share work on local branches with collaborators."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.815,
+            0.86,
+            0.892
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Remote branches are a special type of local branch. In fact, you’ve already interacted with these remote branches when you’ve pushed to and pulled from remote repositories. Using git branch with the option --all, we can see these hidden remote branches:"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 8,
+          "bbox": [
+            0.141,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "106"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 9,
+          "bbox": [
+            0.201,
+            0.922,
+            0.364,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 5: Git for Scientists"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 136,
+      "blocks": [
+        {
+          "type": "code",
+          "index": 0,
+          "bbox": [
+            0.171,
+            0.081,
+            0.371,
+            0.143
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 0,
+              "bbox": [
+                0.171,
+                0.081,
+                0.371,
+                0.143
+              ],
+              "content": "$ git branch --all\n* master\n  readme-changes\n  remotes/origin/master"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.151,
+            0.861,
+            0.249
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "remotes/origin/master is a remote branch—we can’t do work on it, but it can be synchronized with the latest commits from the remote repository using git fetch. Interestingly, a git pull is nothing more than a git fetch followed by a git merge. Though a bit technical, understanding this idea will greatly help you in working with remote repositories and remote branches. Let’s step through an example."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.257,
+            0.861,
+            0.315
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Suppose that Barbara is starting a new document that will detail all the bioinformatics methods of your project. She creates a new-methods branch, makes some commits, and then pushes these commits on this branch to our central repository:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 3,
+          "bbox": [
+            0.171,
+            0.325,
+            0.658,
+            0.448
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 3,
+              "bbox": [
+                0.171,
+                0.325,
+                0.658,
+                0.448
+              ],
+              "content": "$ git push origin new-methods\nCounting objects: 4, done.\nDelta compression using up to 2 threads.\nCompressing objects: 100% (2/2), done.\nWriting objects: 100% (3/3), 307 bytes | 0 bytes/s, done.\nTotal 3 (delta 1), reused 0 (delta 0)\nTo git@github.com:vsbuffalo/zmays-snps.git\n * [new branch]      new-methods -> new-methods"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.457,
+            0.859,
+            0.514
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Back in our repository, we can fetch Barbara’s latest branches using git fetch <remo tename>. This creates a new remote branch, which we can see with git branch -- all:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 5,
+          "bbox": [
+            0.171,
+            0.526,
+            0.635,
+            0.727
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 5,
+              "bbox": [
+                0.171,
+                0.526,
+                0.635,
+                0.727
+              ],
+              "content": "$ git fetch origin\nremote: Counting objects: 4, done.\nremote: Compressing objects: 100% (1/1), done.\nremote: Total 3 (delta 1), reused 3 (delta 1)\nUnpacking objects: 100% (3/3), done.\nFrom github.com:vsbuffalo/zmays-snps\n= [up to date] master -> origin/master\n* [new branch] new-methods -> origin/new-methods\n$ git branch --all\n* master\n  new-methods\n  remotes/origin/master\n  remotes/origin/new-methods"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.137,
+            0.736,
+            0.861,
+            0.854
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "git fetch doesn’t change any of your local branches; rather, it just synchronizes your remote branches with the newest commits from the remote repositories. If after a git fetch we wanted to incorporate the new commits on our remote branch into our local branch, we would use a git merge. For example, we could merge Barbara’s newmethods branch into our master branch with git merge origin/new-methods, which emulates a git pull."
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 7,
+          "bbox": [
+            0.657,
+            0.923,
+            0.799,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Working with Branches"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 8,
+          "bbox": [
+            0.833,
+            0.923,
+            0.859,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "107"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 137,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.135,
+            0.08,
+            0.861,
+            0.157
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "However, Barbara’s branch is just getting started—suppose we want to develop on the new-methods branch before merging it into our master branch. We cannot develop on remote branches (e.g., our remotes/origin/new-methods), so we need to make a new branch that starts from this branch:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 1,
+          "bbox": [
+            0.17,
+            0.167,
+            0.791,
+            0.212
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 1,
+              "bbox": [
+                0.17,
+                0.167,
+                0.791,
+                0.212
+              ],
+              "content": "\\$ git checkout -b new-methods origin/new-methods\nBranch new-methods set up to track remote branch new-methods from origin.\nSwitched to a new branch 'new-methods'"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.222,
+            0.861,
+            0.321
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Here, we’ve used git checkout to simultaneously create and switch a new branch using the -b option. Note that Git notified us that it’s tracking this branch. This means that this local branch knows which remote branch to push to and pull from if we were to just use git push or git pull without arguments. If we were to commit a change on this branch, we could then push it to the remote with git push:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 3,
+          "bbox": [
+            0.17,
+            0.33,
+            0.785,
+            0.514
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 3,
+              "bbox": [
+                0.17,
+                0.33,
+                0.785,
+                0.514
+              ],
+              "content": "$ echo \"\\n(1) trim adapters\\n(2) quality-based trimming\" >> methods.md\n$ git commit -am \"added quality trimming steps\"\n[new-methods 5f78374] added quality trimming steps\n 1 file changed, 3 insertions(+)\n$ git push\nCounting objects: 5, done.\nDelta compression using up to 2 threads.\nCompressing objects: 100% (3/3), done.\nWriting objects: 100% (3/3), 339 bytes | 0 bytes/s, done.\nTotal 3 (delta 1), reused 0 (delta 0)\nTo git@github.com:vsbuffalo/zmays-snps.git\n    6364ebb..9468e38 new-methods -> new-methods"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.523,
+            0.861,
+            0.62
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Development can continue on new-methods until you and your collaborator decide to merge these changes into master. At this point, this branch’s work has been incorporated into the main part of the project. If you like, you can delete the remote branch with git push origin :new-methods and your local branch with git branch -d new-methods."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.138,
+            0.638,
+            0.512,
+            0.668
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Continuing Your Git Education"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.137,
+            0.677,
+            0.862,
+            0.89
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Git is a massively powerful version control system. This chapter has introduced the basics of version control and collaborating through pushing and pulling, which is enough to apply to your daily bioinformatics work. We’ve also covered some basic tools and techniques that can get you out of trouble or make working with Git easier, such as git checkout to restore files, git stash to stash your working changes, and git branch to work with branches. After you’ve mastered all of these concepts, you may want to move on to more advanced Git topics such as rebasing (git rebase), searching revisions (git grep), and submodules. However, none of these topics are required in daily Git use; you can search out and learn these topics as you need them. A great resource for these advanced topics is Scott Chacon and Ben Straub’s "
+            },
+            {
+              "type": "hyperlink",
+              "url": "http://git-scm.com/book/en/v2",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Pro Git book"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "content": "."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 7,
+          "bbox": [
+            0.141,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "108"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 8,
+          "bbox": [
+            0.201,
+            0.922,
+            0.364,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 5: Git for Scientists"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 138,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.737,
+            0.118,
+            0.859,
+            0.14
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "CHAPTER 6"
+            }
+          ]
+        },
+        {
+          "type": "doc_title",
+          "index": 1,
+          "bbox": [
+            0.53,
+            0.154,
+            0.857,
+            0.187
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Bioinformatics Data"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.365,
+            0.861,
+            0.442
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Thus far, we’ve covered many of the preliminaries to get started in bioinformatics: organizing a project directory, intermediate Unix, working with remote machines, and using version control. However, we’ve ignored an important component of a new bioinformatics project: data."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.451,
+            0.862,
+            0.547
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Data is a requisite of any bioinformatics project. We further our understanding of complex biological systems by refining a large amount of data to a point where we can extract meaning from it. Unfortunately, many tasks that are simple with small or medium-sized datasets are a challenge with the large and complex datasets common in genomics. These challenges include:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.139,
+            0.557,
+            0.27,
+            0.575
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Retrieving data"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.172,
+            0.575,
+            0.859,
+            0.632
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Whether downloading large sequencing datasets or accessing a web application hundreds of times to download specific files, retrieving data in bioinformatics can require special tools and skills."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.139,
+            0.644,
+            0.333,
+            0.663
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Ensuring data integrity"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.172,
+            0.663,
+            0.859,
+            0.74
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Transferring large datasets across networks creates more opportunities for data corruption, which can later lead to incorrect analyses. Consequently, we need to ensure data integrity with tools before continuing with analysis. The same tools can also be used to verify we’re using the correct version of data in an analysis."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 8,
+          "bbox": [
+            0.139,
+            0.75,
+            0.248,
+            0.768
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Compression"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.172,
+            0.768,
+            0.859,
+            0.824
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The data we work with in bioinformatics is large enough that it often needs to be compressed. Consequently, working with compressed data is an essential skill in bioinformatics."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 10,
+          "bbox": [
+            0.833,
+            0.923,
+            0.859,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "109"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 139,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "index": 0,
+          "bbox": [
+            0.139,
+            0.079,
+            0.523,
+            0.109
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Retrieving Bioinformatics Data"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.118,
+            0.861,
+            0.27
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Suppose you’ve just been told the sequencing for your project has been completed: you have six lanes of Illumina data to download from your sequencing center. Downloading this amount of data through your web browser is not feasible: web browsers are not designed to download such large datasets. Additionally, you’d need to download this sequencing data to your server, not the local workstation where you browse the Internet. To do this, you’d need to SSH into your data-crunching server and download your data directly to this machine using command-line tools. We’ll take a look at some of these tools in this section."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.138,
+            0.287,
+            0.533,
+            0.312
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Downloading Data with wget and curl"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.321,
+            0.861,
+            0.419
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Two common command-line programs for downloading data from the Web are wget and curl. Depending on your system, these may not be already installed; you’ll have to install them with a package manager (e.g., Homebrew or apt-get). While curl and wget are similar in basic functionality, their relative strengths are different enough that I use both frequently."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.138,
+            0.438,
+            0.184,
+            0.456
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "wget"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.464,
+            0.859,
+            0.503
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "wget is useful for quickly downloading a file from the command line—for example, human chromosome 22 from the GRCh37 (also known as hg19) assembly version:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 6,
+          "bbox": [
+            0.17,
+            0.512,
+            0.827,
+            0.621
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 6,
+              "bbox": [
+                0.17,
+                0.512,
+                0.827,
+                0.621
+              ],
+              "content": "$ wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/chr22.fa.gz\n--2013-06-30 00:15:45--  http://[...]/goldenPath/hg19/chromosomes/chr22.fa.gz\nResolving hgdownload.soe.ucsc.edu... 128.114.119.163\nConnecting to hgdownload.soe.ucsc.edu|128.114.119.163|:80... connected.\nHTTP request sent, awaiting response... 200 OK\nLength: 11327826 (11M) [application/x-gzip]\nSaving to: 'chr22.fa.gz'"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "code",
+          "index": 7,
+          "bbox": [
+            0.172,
+            0.636,
+            0.28,
+            0.652
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 7,
+              "bbox": [
+                0.172,
+                0.636,
+                0.28,
+                0.652
+              ],
+              "content": "17% [=================>"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "code",
+          "index": 8,
+          "bbox": [
+            0.544,
+            0.636,
+            0.811,
+            0.652
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 8,
+              "bbox": [
+                0.544,
+                0.636,
+                0.811,
+                0.652
+              ],
+              "content": "] 1,989,172    234KB/s eta 66s"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.137,
+            0.66,
+            0.86,
+            0.756
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "wget downloads this file to your current directory and provides a useful progress indicator. Notice that the link to chromosome 22 begins with “http” (short for Hyper‐Text Transfer Protocol). wget can also handle FTP links (which start with “ftp,” short for File Transfer Protocol). In general, FTP is preferable to HTTP for large files (and is often recommended by websites like the UCSC Genome Browser)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.137,
+            0.765,
+            0.861,
+            0.862
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Because UCSC generously provides the human reference genome publicly, we don’t need any authentication to gain access to this file. However, if you’re downloading data from a Lab Information Management System (LIMS), you may need to first authenticate with a username and password. For simple HTTP or FTP authentication, you can authenticate using wget’s --user= and --ask-password options. Some"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 11,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "110"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 12,
+          "bbox": [
+            0.201,
+            0.922,
+            0.385,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 6: Bioinformatics Data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 140,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.136,
+            0.08,
+            0.859,
+            0.119
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "sites use more elaborate authentication procedures; in these cases, you’ll need to contact the site administrator."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.129,
+            0.861,
+            0.228
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "One of wget’s strengths is that it can download data recursively. When run with the recursive option (--recursive or -r), wget will also follow and download the pages linked to, and even follow and download links on these pages, and so forth. By default (to avoid downloading the entire Internet), wget limits itself to only follow five links deep (but this can be customized using the option --level or -l)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.235,
+            0.861,
+            0.293
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Recursive downloading can be useful for downloading all files of a certain type from a page. For example, if another lab has a web page containing many GTF files we wish to download, we could use:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 3,
+          "bbox": [
+            0.171,
+            0.303,
+            0.735,
+            0.335
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 3,
+              "bbox": [
+                0.171,
+                0.303,
+                0.735,
+                0.335
+              ],
+              "content": "$ wget --accept \"*.gtf\" --no-directories --recursive --no-parent \\\nhttp://genomics.someuniversity.edu/labsite/annotation.html"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "powershell"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.343,
+            0.862,
+            0.461
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "But beware! wget’s recursive downloading can be quite aggressive. If not constrained, wget will download everything it can reach within the maximum depth set by -- level. In the preceding example, we limited wget in two ways: with --no-parent to prevent wget from downloading pages higher in the directory structure, and with -- accept \"*.gtf\", which only allows wget to download filenames matching this pattern."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.47,
+            0.862,
+            0.588
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Exercise caution when using wget’s recursive option; it can utilize a lot of network resources and overload the remote server. In some cases, the remote host may block your IP address if you’re downloading too much too quickly. If you plan on downloading a lot of data from a remote host, it’s best to inquire with the website’s sysadmin about recommended download limits so your IP isn’t blocked. wget’s --limitrate option can be used to limit how quickly wget downloads files."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.137,
+            0.597,
+            0.862,
+            0.656
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "wget is an incredibly powerful tool; the preceding examples have only scraped the surface of its capabilities. See Table 6-1 for some commonly used options, or man wget for an exhaustive list."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 8,
+          "bbox": [
+            0.141,
+            0.698,
+            0.845,
+            0.851
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 7,
+              "bbox": [
+                0.14,
+                0.674,
+                0.377,
+                0.693
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Table 6-1. Useful wget options"
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 8,
+              "bbox": [
+                0.141,
+                0.698,
+                0.845,
+                0.851
+              ],
+              "image_path": "images/page_140_table_8.jpg",
+              "content": "<table><tr><td>Option</td><td>Values</td><td>Use</td></tr><tr><td>-A, --accept</td><td>Either a suffix like &quot;.fastq&quot; or a pattern with *, ?, or [ and ], optionally comma-separated list</td><td>Only download files matching this criteria.</td></tr><tr><td>-R, --reject</td><td>Same as with --accept</td><td>Don&#x27;t download files matching this; for example, to download all files on a page except Excel files, use --reject &quot;.xls&quot;.</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 9,
+          "bbox": [
+            0.613,
+            0.923,
+            0.799,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Retrieving Bioinformatics Data"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 10,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "111"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 141,
+      "blocks": [
+        {
+          "type": "table",
+          "index": 0,
+          "bbox": [
+            0.141,
+            0.08,
+            0.845,
+            0.46
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 0,
+              "bbox": [
+                0.141,
+                0.08,
+                0.845,
+                0.46
+              ],
+              "image_path": "images/page_141_table_0.jpg",
+              "content": "<table><tr><td>Option</td><td>Values</td><td>Use</td></tr><tr><td>-nd, --no-directory</td><td>No value</td><td>Don&#x27;t place locally downloaded files in same directory hierarchy as remote files.</td></tr><tr><td>-r, --recursive</td><td>No value</td><td>Follow and download links on a page, to a maximum depth of five by default.</td></tr><tr><td>-np, --no-parent</td><td>No value</td><td>Don&#x27;t move above the parent directory.</td></tr><tr><td>--limit-rate</td><td>number of bytes to allow per second</td><td>Throttle download bandwidth.</td></tr><tr><td>--user=user</td><td>FTP or HTTP username</td><td>Username for HTTP or FTP authentication.</td></tr><tr><td>--ask-password</td><td>No value</td><td>Prompt for password for HTTP of FTP authentication; --password= could also be used, but then your password is in your shell&#x27;s history.</td></tr><tr><td>-O</td><td>Output filename</td><td>Download file to filename specified; useful if link doesn&#x27;t have an informative name (e.g., http://lims.sequencingcenter.com/seqs.html?id=sample_A_03).</td></tr></table>"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.138,
+            0.475,
+            0.176,
+            0.493
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Curl"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.502,
+            0.86,
+            0.581
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "curl serves a slightly different purpose than wget. wget is great for downloading files via HTTP or FTP and scraping data from a web page using its recursive option. curl behaves similarly, although by default writes the file to standard output. To download chromosome 22 as we did with wget, we’d use:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 3,
+          "bbox": [
+            0.171,
+            0.59,
+            0.847,
+            0.653
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 3,
+              "bbox": [
+                0.171,
+                0.59,
+                0.847,
+                0.653
+              ],
+              "image_path": "images/page_141_table_3.jpg",
+              "content": "<table><tr><td colspan=\"11\">$ curl http://[...]/goldenPath/hg19/chromosomes/chr22.fa.gz &gt; chr22.fa.gz</td></tr><tr><td>% Total</td><td>% Received</td><td>% Xferd</td><td colspan=\"2\">Average Speed</td><td>Time</td><td>Time</td><td>Time</td><td>Current</td><td></td><td></td></tr><tr><td></td><td></td><td></td><td>Dload</td><td>Upload</td><td>Total</td><td>Spent</td><td>Left</td><td>Speed</td><td></td><td></td></tr><tr><td>14</td><td>10.8M</td><td>14</td><td>1593k</td><td>0</td><td>0</td><td>531k</td><td>0</td><td>0:00:20</td><td>0:00:02</td><td>0:00:18</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.66,
+            0.859,
+            0.7
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Note that I’ve had to truncate the URL so this example fits within a page; the URL is the same as we used with wget earlier."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.709,
+            0.86,
+            0.768
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "If you prefer not to redirect curl’s output, use -O <filename> to write the results to <filename>. If you omit the filename argument, curl will use same filename as the remote host."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.137,
+            0.777,
+            0.861,
+            0.877
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "curl has the advantage that it can transfer files using more protocols than wget, including SFTP (secure FTP) and SCP (secure copy). One especially nice feature of curl is that it can follow page redirects if the -L/--location option is enabled. With this enabled, curl will download the ultimate page the link redirects to, not the redirect page itself. Finally, Curl itself is also a library, meaning in addition to the"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 7,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "112"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 8,
+          "bbox": [
+            0.201,
+            0.922,
+            0.385,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 6: Bioinformatics Data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 142,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.136,
+            0.081,
+            0.861,
+            0.121
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "command-line curl program, Curl’s functionality is wrapped by software libraries like "
+            },
+            {
+              "type": "hyperlink",
+              "url": "http://bit.ly/cran-rcurl",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "RCurl"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "hyperlink",
+              "url": "http://pycurl.sourceforge.net/doc/",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "pycurl"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "content": "."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.138,
+            0.136,
+            0.429,
+            0.163
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Rsync and Secure Copy (scp)"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.136,
+            0.17,
+            0.861,
+            0.266
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "wget and curl are appropriate for quickly downloading files from the command line, but are not optimal for some heavier-duty tasks. For example, suppose a colleague needs all large sequencing datasets in your project directory that are ignored by Git (e.g., in your .gitignore). A better tool for synchronizing these entire directories across a network is Rsync."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.136,
+            0.274,
+            0.861,
+            0.425
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Rsync is a superior option for these types of tasks for a few reasons. First, Rsync is often faster because it only sends the difference between file versions (when a copy already exists or partially exists) and it can compress files during transfers. Second, Rsync has an archive option that preserves links, modification timestamps, permissions, ownership, and other file attributes. This makes Rsync an excellent choice for network backups of entire directories. Rsync also has numerous features and options to handle different backup scenarios, such as what to do if a file exists on the remote host."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.136,
+            0.437,
+            0.861,
+            0.516
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "rsync’s basic syntax is rsync source destination, where source is the source of the files or directories you’d like to copy, and destination is the destination you’d like to copy these files to. Either source or destination can be a remote host specified in the format user@host:/path/to/directory/."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.136,
+            0.525,
+            0.861,
+            0.682
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let’s look at an example of how we can use rsync to copy over an entire directory to another machine. Suppose you’d like to copy all of your project’s data in zea_mays/ data to your colleague’s directory /home/deborah/zea_mays/data on the host 192.168.237.42. The most common combination of rsync options used to copy an entire directory are -avz. The option -a enables wrsync’s archive mode, -z enables file transfer compression, and -v makes rsync’s progress more verbose so you can see what’s being transferred. Because we’ll be connecting to the remote host through SSH, we also need to use -e ssh. Our directory copying command would look as follows:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 6,
+          "bbox": [
+            0.17,
+            0.69,
+            0.811,
+            0.845
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 6,
+              "bbox": [
+                0.17,
+                0.69,
+                0.811,
+                0.845
+              ],
+              "content": "\\$ rsync -avz -e ssh zea_mays/data/ vinceb@[...]:/home/deborah/zea_mays/data\nbuilding file list ... done\nzmaysA_R1.fastq\nzmaysA_R2.fastq\nzmaysB_R1.fastq\nzmaysB_R2.fastq\nzmaysC_R1.fastq\nzmaysC_R2.fastq\nsent 2861400 bytes received 42 bytes 107978.94 bytes/sec\ntotal size is 8806085 speedup is 3.08"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "shell"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.855,
+            0.861,
+            0.895
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "One subtle yet important behavior of rsync is that trailing slashes (e.g., data/ versus data) are meaningful when specifying paths in rsync. A trailing slash in the source"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 8,
+          "bbox": [
+            0.612,
+            0.923,
+            0.799,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Retrieving Bioinformatics Data"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 9,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "113"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 143,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.136,
+            0.08,
+            0.862,
+            0.176
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "path means copy the contents of the source directory, whereas no trailing slash means copy the entire directory itself. Because we’d like to copy all contents of zea_mays/data/ to /home/deborah/zea_mays/data in our example, we use a trailing slash. If the data/ directory didn’t already exist on the remote destination host, we’d want to copy it and its contents by using zea_mays/data (e.g., omitting the trailing slash)."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.136,
+            0.186,
+            0.861,
+            0.342
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Because rsync only transmits files if they don’t exist or they’ve changed, you can (and should) run rsync again after your files have transferred. This operates as a simple check to ensure everything is synchronized between the two directories. It’s also a good idea to check the exit status of rsync when calling it in scripts; rsync will exit with a nonzero status if it runs into problems transferring files. Lastly, rsync can use host aliases specified in an SSH config file (see the first Tip in “Connecting to Remote Machines with SSH” on page 57). You can omit -e ssh if you connect to a host through an SSH host alias."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.351,
+            0.861,
+            0.472
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Occasionally, we just need to quickly copy a single file over SSH—for tasks where Unix’s cp would be sufficient, but needs to work over an SSH connection. rsync would work, but it’s a bit overkill. Secure copy (scp) is perfect for this purpose. Secure copy works just like cp, except we need to specify both host and path (using the same user@host:/path/to/file notation as wget). For example, we could transfer a single GTF file to 192.168.237.42:/home/deborah/zea_mays/data/ using:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.171,
+            0.478,
+            0.778,
+            0.496
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "$ scp Zea_mays.AGPv3.20.gtf 192.168.237.42:/home/deborah/zea_mays/data/"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.172,
+            0.51,
+            0.356,
+            0.526
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Zea_mays.AGPv3.20.gtf"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.587,
+            0.51,
+            0.836,
+            0.525
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "100% 55 0.1KB/s 00:00"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.139,
+            0.542,
+            0.319,
+            0.573
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Data Integrity"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.136,
+            0.58,
+            0.86,
+            0.734
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Data we download into our project directory is the starting point of all future analyses and conclusions. Although it may seem improbable, the risk of data corruption during transfers is a concern when transferring large datasets. These large files take a long time to transfer, which translates to more opportunities for network connections to drop and bits to be lost. In addition to verifying your transfer finished without error, it’s also important to explicitly check the transferred data’s integrity with checksums. Checksums are very compressed summaries of data, computed in a way that even if just one bit of the data is changed, the checksum will be different."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.136,
+            0.742,
+            0.861,
+            0.878
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Data integrity checks are also helpful in keeping track of data versions. In collaborative projects, our analyses may depend on our colleagues’ intermediate results. When these intermediate results change, all downstream analyses that depend on these results need to be rerun. With many intermediate files, it’s not always clear which data has changed and which steps need to be rerun. The checksums would differ if the data changed even the tiniest bit, so we can use them to calculate the version of the data. Checksums also facilitate reproducibility, as we can link a particular analysis"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 9,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "114"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 10,
+          "bbox": [
+            0.201,
+            0.922,
+            0.385,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 6: Bioinformatics Data"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}

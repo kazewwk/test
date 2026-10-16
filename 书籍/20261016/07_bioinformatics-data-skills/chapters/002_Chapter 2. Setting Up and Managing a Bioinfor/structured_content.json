@@ -1,0 +1,1950 @@
+{
+  "pages": [
+    {
+      "page_idx": 50,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.737,
+            0.117,
+            0.859,
+            0.143
+          ],
+          "content": "CHAPTER 2"
+        },
+        {
+          "type": "doc_title",
+          "bbox": [
+            0.407,
+            0.153,
+            0.862,
+            0.23
+          ],
+          "level": 1,
+          "content": "Setting Up and Managing a Bioinformatics Project"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.401,
+            0.861,
+            0.573
+          ],
+          "content": "Just as a well-organized laboratory makes a scientist’s life easier, a well-organized and well-documented project makes a bioinformatician’s life easier. Regardless of the particular project you’re working on, your project directory should be laid out in a consistent and understandable fashion. Clear project organization makes it easier for both you and collaborators to figure out exactly where and what everything is. Additionally, it’s much easier to automate tasks when files are organized and clearly named. For example, processing 300 gene sequences stored in separate FASTA files with a script is trivial if these files are organized in a single directory and are consistently named."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.582,
+            0.861,
+            0.716
+          ],
+          "content": "Every bioinformatics project begins with an empty project directory, so it’s fitting that this book begin with a chapter on project organization. In this chapter, we’ll look at some best practices in organizing your bioinformatics project directories and how to digitally document your work using plain-text Markdown files. We’ll also see why project directory organization isn’t just about being tidy, but is essential to the way by which tasks are automated across large numbers of files (which we routinely do in bioinformatics)."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.733,
+            0.679,
+            0.765
+          ],
+          "level": 2,
+          "content": "Project Directories and Directory Structures"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.772,
+            0.861,
+            0.888
+          ],
+          "content": "Creating a well-organized directory structure is the foundation of a reproducible bioinformatics project. The actual process is quite simple: laying out a project only entails creating a few directories with mkdir and empty README files with touch (commands we’ll see in more depth later). But this simple initial planning pays off in the long term. For large projects, researchers could spend years working in this directory structure."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.84,
+            0.924,
+            0.859,
+            0.938
+          ],
+          "content": "21"
+        }
+      ]
+    },
+    {
+      "page_idx": 51,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.08,
+            0.858,
+            0.157
+          ],
+          "content": "Other researchers have noticed the importance of good project organization, too (Noble 2009). While eventually you’ll develop a project organization scheme that works for you, we’ll begin in this chapter with a scheme I use in my work (and is similar to Noble’s)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.165,
+            0.859,
+            0.283
+          ],
+          "content": "All files and directories used in your project should live in a single project directory with a clear name. During the course of a project, you’ll have amassed data files, notes, scripts, and so on—if these were scattered all over your hard drive (or worse, across many computers’ hard drives), it would be a nightmare to keep track of everything. Even worse, such a disordered project would later make your research nearly impossible to reproduce."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.289,
+            0.861,
+            0.385
+          ],
+          "content": "Keeping all of your files in a single directory will greatly simplify things for you and your collaborators, and facilitate reproducibility (we’ll discuss how to collaboratively work on a project directory with Git in Chapter 5). Suppose you’re working on SNP calling in maize (Zea mays). Your first step would be to choose a short, appropriate project name and create some basic directories:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.394,
+            0.635,
+            0.535
+          ],
+          "sub_type": "code",
+          "content": "```shell\n$ mkdir zmays-snps\n$ cd zmays-snps\n$ mkdir data\n$ mkdir data/seqs scripts analysis\n$ ls -l\ntotal 0\ndrwxr-xr-x 2 vinceb staff 68 Apr 15 01:10 analysis\ndrwxr-xr-x 3 vinceb staff 102 Apr 15 01:10 data\ndrwxr-xr-x 2 vinceb staff 68 Apr 15 01:10 scripts\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.541,
+            0.86,
+            0.657
+          ],
+          "content": "This is a sensible project layout scheme. Here, data/ contains all raw and intermediate data. As we’ll see, data-processing steps are treated as separate subprojects in this data/ directory. I keep general project-wide scripts in a scripts/ directory. If scripts contain many files (e.g., multiple Python modules), they should reside in their own subdirectory. Isolating scripts in their own subdirectory also keeps project directories tidy while developing these scripts (when they produce test output files)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.665,
+            0.86,
+            0.761
+          ],
+          "content": "Bioinformatics projects contain many smaller analyses—for example, analyzing the quality of your raw sequences, the aligner output, and the final data that will produce figures and tables for a paper. I prefer keeping these in a separate analysis/ directory, as it allows collaborators to see these high-level analyses without having to dig deeper into subproject directories."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.16,
+            0.936
+          ],
+          "content": "22"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.194,
+            0.922,
+            0.555,
+            0.94
+          ],
+          "content": "Chapter 2: Setting Up and Managing a Bioinformatics Project"
+        }
+      ]
+    },
+    {
+      "page_idx": 52,
+      "blocks": [
+        {
+          "type": "image",
+          "bbox": [
+            0.167,
+            0.073,
+            0.255,
+            0.162
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0049-0064/images/page_52_image_0.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.268,
+            0.079,
+            0.403,
+            0.096
+          ],
+          "level": 2,
+          "content": "What’s in a Name?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.267,
+            0.108,
+            0.788,
+            0.265
+          ],
+          "content": "Naming files and directories on a computer matters more than you might think. In transitioning from a graphical user interface (GUI) based operating system to the Unix command line, many folks bring the bad habit of using spaces in file and directory names. This isn’t appropriate in a Unix-based environment, because spaces are used to separate arguments in commands. For example, suppose that you create a directory named raw sequences from a GUI (e.g., through OS X’s Finder), and later try to remove it and its contents with the following command:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.301,
+            0.272,
+            0.492,
+            0.286
+          ],
+          "content": "\\$ rm -rf raw sequences"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.267,
+            0.291,
+            0.788,
+            0.38
+          ],
+          "content": "If you’re lucky, you’d be warned that there is “No such file or directory” for both raw and sequences. What’s going on here? Spaces matter: your shell is interpreting this rm command as “delete both the raw and sequences files/directories,” not “delete a single file or directory called raw sequences.”"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.267,
+            0.386,
+            0.788,
+            0.492
+          ],
+          "content": "If you’re unlucky enough to have a file or directory named either raw or sequences, this rm command would delete it. It’s possible to escape this by using quotes (e.g., rm -r \"raw sequences\"), but it’s better practice to not use spaces in file or directory names in the first place. It’s best to use only letters, numbers, underscores, and dashes in file and directory names."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.267,
+            0.499,
+            0.788,
+            0.638
+          ],
+          "content": "Although Unix doesn’t require file extensions, including extensions in filenames helps indicate the type of each file. For example, a file named osativa-genes.fasta makes it clear that this is a file of sequences in FASTA format. In contrast, a file named osativa-genes could be a file of gene models, notes on where these Oryza sativa genes came from, or sequence data. When in doubt, explicit is always better than implicit when it comes to filenames, documentation, and writing code."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.66,
+            0.86,
+            0.835
+          ],
+          "content": "Scripts and analyses often need to refer to other files (such as data) in your project hierarchy. This may require referring to parent directories in your directory’s hierarchy (e.g., with ..). In these cases, it’s important to always use relative paths (e.g., ../ data/stats/qual.txt) rather than absolute paths (e.g., /home/vinceb/projects/ zmays-snps/data/stats/qual.txt). As long as your internal project directory structure remains the same, these relative paths will always work. In contrast, absolute paths rely on your particular user account and directory structures details above the project directory level (not good). Using absolute paths leaves your work less portable between collaborators and decreases reproducibility."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.844,
+            0.859,
+            0.882
+          ],
+          "content": "My project directory scheme here is by no means the only scheme possible. I’ve worked with bioinformaticians that use entirely different schemes for their projects"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.547,
+            0.923,
+            0.806,
+            0.939
+          ],
+          "content": "Project Directories and Directory Structures"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.84,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "23"
+        }
+      ]
+    },
+    {
+      "page_idx": 53,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.08,
+            0.857,
+            0.136
+          ],
+          "continues_prev": true,
+          "content": "and do excellent work. However, regardless of the organization scheme, a good bioinformatician will always document everything extensively and use clear filenames that can be parsed by a computer, two points we’ll come to in a bit."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.142,
+            0.156,
+            0.428,
+            0.185
+          ],
+          "level": 2,
+          "content": "Project Documentation"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.194,
+            0.858,
+            0.364
+          ],
+          "content": "In addition to having a well-organized directory structure, your bioinformatics project also should be well documented. Poor documentation can lead to irreproducibility and serious errors. There’s a vast amount of lurking complexity in bioinformatics work: complex workflows, multiple files, countless program parameters, and different software versions. The best way to prevent this complexity from causing problems is to document everything extensively. Documentation also makes your life easier when you need to go back and rerun an analysis, write detailed methods about your steps for a paper, or find the origin of some data in a directory. So what exactly should you document? Here are some ideas:"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.142,
+            0.377,
+            0.468,
+            0.394
+          ],
+          "level": 2,
+          "content": "Document your methods and workflows"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.176,
+            0.396,
+            0.858,
+            0.527
+          ],
+          "content": "This should include full command lines (copied and pasted) that are run through the shell that generate data or intermediate results. Even if you use the default values in software, be sure to write these values down; later versions of the program may use different default values. Scripts naturally document all steps and parameters (a topic we’ll cover in Chapter 12), but be sure to document any command-line options used to run this script. In general, any command that produces results used in your work needs to be documented somewhere."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.142,
+            0.54,
+            0.599,
+            0.558
+          ],
+          "level": 2,
+          "content": "Document the origin of all data in your project directory"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.176,
+            0.559,
+            0.858,
+            0.728
+          ],
+          "content": "You need to keep track of where data was downloaded from, who gave it to you, and any other relevant information. “Data” doesn’t just refer to your project’s experimental data—it’s any data that programs use to create output. This includes files your collaborators send you from their separate analyses, gene annotation tracks, reference genomes, and so on. It’s critical to record this important data about your data, or metadata. For example, if you downloaded a set of genic regions, record the website’s URL. This seems like an obvious recommendation, but countless times I’ve encountered an analysis step that couldn’t easily be reproduced because someone forgot to record the data’s source."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.142,
+            0.741,
+            0.457,
+            0.758
+          ],
+          "level": 2,
+          "content": "Document when you downloaded data"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.176,
+            0.76,
+            0.858,
+            0.854
+          ],
+          "content": "It’s important to include when the data was downloaded, as the external data source (such as a website or server) might change in the future. For example, a script that downloads data directly from a database might produce different results if rerun after the external database is updated. Consequently, it’s important to document when data came into your repository."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.141,
+            0.924,
+            0.16,
+            0.936
+          ],
+          "content": "24"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.194,
+            0.923,
+            0.553,
+            0.939
+          ],
+          "content": "Chapter 2: Setting Up and Managing a Bioinformatics Project"
+        }
+      ]
+    },
+    {
+      "page_idx": 54,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.142,
+            0.082,
+            0.406,
+            0.098
+          ],
+          "level": 2,
+          "content": "Record data version information"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.176,
+            0.1,
+            0.858,
+            0.175
+          ],
+          "content": "Many databases have explicit release numbers, version numbers, or names (e.g., TAIR10 version of genome annotation for Arabidopsis thaliana, or Wormbase release WS231 for Caenorhabditis elegans). It’s important to record all version information in your documentation, including minor version numbers."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.142,
+            0.187,
+            0.462,
+            0.204
+          ],
+          "level": 2,
+          "content": "Describe how you downloaded the data"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.176,
+            0.206,
+            0.858,
+            0.261
+          ],
+          "content": "For example, did you use MySQL to download a set of genes? Or the UCSC Genome Browser? These details can be useful in tracking down issues like when data is different between collaborators."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.142,
+            0.274,
+            0.557,
+            0.292
+          ],
+          "level": 2,
+          "content": "Document the versions of the software that you ran"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.176,
+            0.293,
+            0.858,
+            0.443
+          ],
+          "content": "This may seem unimportant, but remember the example from “Reproducible Research” on page 6 where my colleagues and I traced disagreeing results down to a single piece of software being updated. These details matter. Good bioinformatics software usually has a command-line option to return the current version. Software managed with a version control system such as Git has explicit identifiers to every version, which can be used to document the precise version you ran (we’ll learn more about this in Chapter 5). If no version information is available, a release date, link to the software, and download date will suffice."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.453,
+            0.859,
+            0.605
+          ],
+          "content": "All of this information is best stored in plain-text README files. Plain text can easily be read, searched, and edited directly from the command line, making it the perfect choice for portable and accessible README files. It’s also available on all computer systems, meaning you can document your steps when working directly on a server or computer cluster. Plain text also lacks complex formatting, which can create issues when copying and pasting commands from your documentation back into the command line. It’s best to avoid formats like Microsoft Word for README documentation, as these are less portable to the Unix systems common in bioinformatics."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.615,
+            0.859,
+            0.768
+          ],
+          "content": "Where should you keep your README files? A good approach is to keep README files in each of your project’s main directories. These README files don’t necessarily need to be lengthy, but they should at the very least explain what’s in this directory and how it got there. Even this small effort can save someone exploring your project directory a lot of time and prevent confusion. This someone could be your advisor or a collaborator, a colleague trying to reproduce your work after you’ve moved onto a different lab, or even yourself six months from now when you’ve completely forgotten what you’ve done (this happens to everyone!)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.776,
+            0.859,
+            0.873
+          ],
+          "content": "For example, a data/README file would contain metadata about your data files in the data/ directory. Even if you think you could remember all relevant information about your data, it’s much easier just to throw it in a README file (and collaborators won’t have to email you to ask what files are or where they are). Let’s create some empty README files using touch. touch updates the modification time of a file or"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.666,
+            0.924,
+            0.804,
+            0.938
+          ],
+          "content": "Project Documentation"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.84,
+            0.924,
+            0.857,
+            0.937
+          ],
+          "content": "25"
+        }
+      ]
+    },
+    {
+      "page_idx": 55,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.08,
+            0.859,
+            0.119
+          ],
+          "continues_prev": true,
+          "content": "creates a file if it doesn’t already exist. We can use it for this latter purpose to create empty template files to lay out our project structure:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.129,
+            0.398,
+            0.144
+          ],
+          "content": "\\$ touch README data/README"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.152,
+            0.861,
+            0.248
+          ],
+          "content": "Following the documentation guidelines just discussed, this data/README file would include where you downloaded the data in data/, when you downloaded it, and how. When we learn more about data in Chapter 6, we’ll see a case study example of how to download and properly document data in a project directory (“Case Study: Reproducibly Downloading Data” on page 120)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.257,
+            0.861,
+            0.336
+          ],
+          "content": "By recording this information, we’re setting ourselves up to document everything about our experiment and analysis, making it reproducible. Remember, as your project grows and accumulates data files, it also pays off to keep track of this for your own sanity."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.351,
+            0.845,
+            0.381
+          ],
+          "level": 2,
+          "content": "Use Directories to Divide Up Your Project into Subprojects"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.389,
+            0.861,
+            0.504
+          ],
+          "content": "Bioinformatics projects involve many subprojects and subanalyses. For example, the quality of raw experimental data should be assessed and poor quality regions removed before running it through bioinformatics tools like aligners or assemblers (we see an example of this in “Example: Inspecting and Trimming Low-Quality Bases” on page 346). Even before you get to actually analyzing sequences, your project directory can get cluttered with intermediate files."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.512,
+            0.861,
+            0.667
+          ],
+          "content": "Creating directories to logically separate subprojects (e.g., sequencing data quality improvement, aligning, analyzing alignment results, etc.) can simplify complex projects and help keep files organized. It also helps reduce the risk of accidentally clobbering a file with a buggy script, as subdirectories help isolate mishaps. Breaking a project down into subprojects and keeping these in separate subdirectories also makes documenting your work easier; each README pertains to the directory it resides in. Ultimately, you’ll arrive at your own project organization system that works for you; the take-home point is: leverage directories to help stay organized."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.683,
+            0.764,
+            0.714
+          ],
+          "level": 2,
+          "content": "Organizing Data to Automate File Processing Tasks"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.721,
+            0.861,
+            0.875
+          ],
+          "content": "Because automating file processing tasks is an integral part of bioinformatics, organizing our projects to facilitate this is essential. Organizing data into subdirectories and using clear and consistent file naming schemes is imperative—both of these practices allow us to programmatically refer to files, the first step to automating a task. Doing something programmatically means doing it through code rather than manually, using a method that can effortlessly scale to multiple objects (e.g., files). Programmatically referring to multiple files is easier and safer than typing them all out (because it’s less error prone)."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.16,
+            0.936
+          ],
+          "content": "26"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.194,
+            0.922,
+            0.555,
+            0.94
+          ],
+          "content": "Chapter 2: Setting Up and Managing a Bioinformatics Project"
+        }
+      ]
+    },
+    {
+      "page_idx": 56,
+      "blocks": [
+        {
+          "type": "image",
+          "bbox": [
+            0.167,
+            0.073,
+            0.255,
+            0.162
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0049-0064/images/page_56_image_0.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.268,
+            0.079,
+            0.418,
+            0.098
+          ],
+          "level": 2,
+          "content": "Shell Expansion Tips"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.267,
+            0.108,
+            0.788,
+            0.195
+          ],
+          "content": "Bioinformaticians, software engineers, and system administrators spend a lot of time typing in a terminal. It’s no surprise these individuals collect tricks to make this process as efficient as possible. As you spend more time in the shell, you’ll find investing a little time in learning these tricks can save you a lot of time down the road."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.267,
+            0.2,
+            0.788,
+            0.326
+          ],
+          "content": "One useful trick is shell expansion. Shell expansion is when your shell (e.g., Bash, which is likely the shell you’re using) expands text for you so you don’t have to type it out. If you’ve ever typed cd \\~ to go to your home directory, you’ve used shell expansion—it’s your shell that expands the tilde character (\\~) to the full path to your home directory (e.g., /Users/vinceb/). Wildcards like an asterisk (\\*) are also expanded by your shell to all matching files."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.267,
+            0.332,
+            0.788,
+            0.419
+          ],
+          "content": "A type of shell expansion called brace expansion can be used to quickly create the simple zmays-snps/ project directory structure with a single command. Brace expansion creates strings by expanding out the comma-separated values inside the braces. This is easier to understand through a trivial example:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.3,
+            0.426,
+            0.533,
+            0.457
+          ],
+          "sub_type": "code",
+          "content": "```txt\n\\$ echo dog-{gone,bowl,bark}\ndog-gone dog-bowl dog-bark\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.267,
+            0.462,
+            0.788,
+            0.496
+          ],
+          "content": "Using this same strategy, we can create the zmays-snps/ project directory:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.3,
+            0.504,
+            0.727,
+            0.52
+          ],
+          "sub_type": "code",
+          "content": "```scss\n\\$ mkdir -p zmays-snps/{data/seqs,scripts,analysis}\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.267,
+            0.524,
+            0.788,
+            0.666
+          ],
+          "content": "This produces the same zmays-snps layout as we constructed in four separate steps in “Project Directories and Directory Structures” on page 21: analysis/, data/seqs, and scripts/. Because mkdir takes multiple arguments (creating a directory for each), this creates the three subdirectories (and saves you having to type “zmayssnps/” three times). Note that we need to use mkdir’s -p flag, which tells mkdir to create any necessary subdirectories it needs (in our case, data/ to create data/seqs/)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.689,
+            0.861,
+            0.861
+          ],
+          "content": "We’ll step through a toy example to illustrate this point, learning some important shell wildcard tricks along the way. In this example, organizing data files into a single directory with consistent filenames prepares us to iterate over all of our data, whether it’s the four example files used in this example, or 40,000 files in a real project. Think of it this way: remember when you discovered you could select many files with your mouse cursor? With this trick, you could move 60 files as easily as six files. You could also select certain file types (e.g., photos) and attach them all to an email with one movement. By using consistent file naming and directory organization, you can do the same programmatically using the Unix shell and other programming languages."
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.506,
+            0.923,
+            0.806,
+            0.939
+          ],
+          "content": "Organizing Data to Automate File Processing Tasks"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.84,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "27"
+        }
+      ]
+    },
+    {
+      "page_idx": 57,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.08,
+            0.859,
+            0.12
+          ],
+          "content": "We’ll see a Unix example of this using shell wildcards to automate tasks across many files. Later in Chapter 12, we’ll see more advanced bulk file manipulation strategies."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.128,
+            0.859,
+            0.185
+          ],
+          "content": "Let’s create some fake empty data files to see how consistent names help with programmatically working with files. Suppose that we have three maize samples, “A,” “B,” and “C,” and paired-end sequencing data for each:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.195,
+            0.574,
+            0.273
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ cd data\n$ touch seqs/zmays{A,B,C}_R{1,2}.fastq\n$ ls seqs/\nzmaysA_R1.fastq zmaysB_R1.fastq zmaysC_R1.fastq\nzmaysA_R2.fastq zmaysB_R2.fastq zmaysC_R2.fastq\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.28,
+            0.861,
+            0.378
+          ],
+          "content": "In this file naming scheme, the two variable parts of each filename indicate sample name (zmaysA, zmaysB, zmaysC) and read pair (R1 and R2). Suppose that we wanted to programmatically retrieve all files that have the sample name zmaysB (regardless of the read pair) rather than having to manually specify each file. To do this, we can use the Unix shell wildcard, the asterisk character (\\*):"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.388,
+            0.44,
+            0.42
+          ],
+          "sub_type": "code",
+          "content": "```txt\n\\$ ls seqs/zmaysB*\nzmaysB_R1.fastq zmaysB_R2.fastq\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.427,
+            0.861,
+            0.522
+          ],
+          "content": "Wildcards are expanded to all matching file or directory names (this process is known as globbing). In the preceding example, your shell expanded the expression zmaysB\\* to zmaysB\\_R1.fastq and zmaysB\\_R2.fastq, as these two files begin with zmaysB. If this directory had contained hundreds of zmaysB files, all could be easily referred to and handled with shell wildcards."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.164,
+            0.545,
+            0.264,
+            0.622
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0049-0064/images/page_57_image_6.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.268,
+            0.544,
+            0.551,
+            0.563
+          ],
+          "level": 2,
+          "content": "Wildcards and “Argument list too long”"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.267,
+            0.573,
+            0.789,
+            0.711
+          ],
+          "content": "OS X and Linux systems have a limit to the number of arguments that can be supplied to a command (more technically, the limit is to the total length of the arguments). We sometimes hit this limit when using wildcards that match tens of thousands of files. When this happens, you’ll see an “Argument list too long” error message indicating you’ve hit the limit. Luckily, there’s a clever way around this problem (see “Using find and xargs” on page 411 for the solution)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.735,
+            0.861,
+            0.873
+          ],
+          "content": "In general, it’s best to be as restrictive as possible with wildcards. This protects against accidental matches. For example, if a messy colleague created an Excel file named zmaysB-interesting-SNPs-found.xls in this directory, this would accidentally match the wildcard expression zmaysB\\*. If you needed to process all zmaysB FASTQ files, referring to them with zmaysB\\* would include this Excel file and lead to problems. This is why it’s best to be as restrictive as possible when using wildcards. Instead of zmaysB\\*, use zmaysB\\*fastq or zmaysB\\_R?.fastq (the ? only matches a single character)."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.16,
+            0.936
+          ],
+          "content": "28"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.194,
+            0.922,
+            0.555,
+            0.939
+          ],
+          "content": "Chapter 2: Setting Up and Managing a Bioinformatics Project"
+        }
+      ]
+    },
+    {
+      "page_idx": 58,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.08,
+            0.861,
+            0.253
+          ],
+          "content": "There are other simple shell wildcards that are quite handy in programmatically accessing files. Suppose a collaborator tells you that the C sample sequences are poor quality, so you’ll have to work with just the A and B samples while C is resequenced. You don’t want to delete zmaysC\\_R1.fastq and zmaysC\\_R2.fastq until the new samples are received, so in the meantime you want to ignore these files. The folks that invented wildcards foresaw problems like this, so they created shell wildcards that allow you to match specific characters or ranges of characters. For example, we could match the characters U, V, W, X, and Y with either [UVWXY] or [U-Y] (both are equivalent). Back to our example, we could exclude the C sample using either:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.262,
+            0.44,
+            0.325
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ ls zmays[AB]_R1.fastq\nzmaysA_R1.fastq zmaysB_R1.fastq\n$ ls zmays[A-B]_R1.fastq\nzmaysA_R1.fastq zmaysB_R1.fastq\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.333,
+            0.861,
+            0.45
+          ],
+          "content": "Using a range between A and B isn’t really necessary, but if we had samples A through I, using a range like zmays[C-I]\\_R1.fastq would be better than typing out zmays[CDEFGHI]\\_R1.fastq. There’s one very important caveat: ranges operate on character ranges, not numeric ranges like 13 through 30. This means that wildcards like snps\\_[10-13].txt will not match files snps\\_10.txt, snps\\_11.txt, snps\\_12.txt, and snps\\_13.txt."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.458,
+            0.861,
+            0.631
+          ],
+          "content": "However, the shell does offer an expansion solution to numeric ranges—through the brace expansion we saw earlier. Before we see this shortcut, note that while wildcard matching and brace expansion may seem to behave similarly, they are slightly different. Wildcards only expand to existing files that match them, whereas brace expansions always expand regardless of whether corresponding files or directories exist or not. If we knew that files snps\\_10.txt through snps\\_13.txt did exist, we could match them with the brace expansion sequence expression like snps\\_{10..13}.txt. This expands to the integer sequence 10 through 13 (but remember, whether these files exist or not is not checked by brace expansion). Table 2-1 lists the common Unix wildcards."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.141,
+            0.674,
+            0.645,
+            0.835
+          ],
+          "content": "| Wildcard | What it matches |\n| --- | --- |\n| * | Zero or more characters (but ignores hidden files starting with a period). |\n| ? | One character (also ignores hidden files). |\n| [A-Z] | Any character between the supplied alphanumeric range (in this case, any character between A and Z); this works for any alphanumeric character range (e.g., [0-9] matches any character between 0 and 9). |",
+          "captions": [
+            {
+              "bbox": [
+                0.14,
+                0.65,
+                0.492,
+                0.668
+              ],
+              "content": "Table 2-1. Common Unix filename wildcards"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0049-0064/images/page_58_table_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.85,
+            0.859,
+            0.89
+          ],
+          "content": "By now, you should begin to see the utility of shell wildcards: they allow us to handle multiple files with ease. Because lots of daily bioinformatics work involves file pro‐"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.506,
+            0.923,
+            0.806,
+            0.94
+          ],
+          "content": "Organizing Data to Automate File Processing Tasks"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.84,
+            0.923,
+            0.859,
+            0.937
+          ],
+          "content": "29"
+        }
+      ]
+    },
+    {
+      "page_idx": 59,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.08,
+            0.862,
+            0.289
+          ],
+          "continues_prev": true,
+          "content": "cessing, programmatically accessing files makes our job easier and eliminates mistakes made from mistyping a filename or forgetting a sample. However, our ability to programmatically access files with wildcards (or other methods in R or Python) is only possible when our filenames are consistent. While wildcards are powerful, they’re useless if files are inconsistently named. For example, processing a subset of files with names like zmays sampleA - 1.fastq, zmays\\_sampleA-2.fastq, sampleB1.fastq, sample-B2.fastq is needlessly more complex because of the inconsistency of these filenames. Unfortunately, inconsistent naming is widespread across biology, and is the scourge of bioinformaticians everywhere. Collectively, bioinformaticians have probably wasted thousands of hours fighting others’ poor naming schemes of files, genes, and in code."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.167,
+            0.305,
+            0.255,
+            0.395
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0049-0064/images/page_59_image_1.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.267,
+            0.311,
+            0.46,
+            0.331
+          ],
+          "level": 2,
+          "content": "Leading Zeros and Sorting"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.339,
+            0.789,
+            0.429
+          ],
+          "content": "Another useful trick is to use leading zeros (e.g., file-0021.txt rather than file-21.txt) when naming files. This is useful because lexicographically sorting files (as ls does) leads to the correct ordering. For example, if we had filenames such as gene-1.txt, gene-2.txt, …, gene-14.txt, sorting these lexicographically would yield:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.301,
+            0.435,
+            0.782,
+            0.543
+          ],
+          "sub_type": "code",
+          "content": "```txt\n\\$ ls -l\n-rw-r--r-- 1 vinceb staff 0 Feb 21 21:24 genes-1.txt\n-rw-r--r-- 1 vinceb staff 0 Feb 21 21:24 genes-11.txt\n-rw-r--r-- 1 vinceb staff 0 Feb 21 21:24 genes-12.txt\n-rw-r--r-- 1 vinceb staff 0 Feb 21 21:24 genes-13.txt\n-rw-r--r-- 1 vinceb staff 0 Feb 21 21:24 genes-14.txt\n[...]\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.548,
+            0.788,
+            0.583
+          ],
+          "content": "But if we use leading zeros (e.g., gene-001.txt, gene-002.txt, …, gene-014.txt), the files sort in their correct order:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.301,
+            0.59,
+            0.789,
+            0.682
+          ],
+          "sub_type": "code",
+          "content": "```txt\n\\$ ls -l\n-rw-r--r-- 1 vinceb staff 0 Feb 21 21:23 genes-001.txt\n-rw-r--r-- 1 vinceb staff 0 Feb 21 21:23 genes-002.txt\n[...]\n-rw-r--r-- 1 vinceb staff 0 Feb 21 21:23 genes-013.txt\n-rw-r--r-- 1 vinceb staff 0 Feb 21 21:23 genes-014.txt\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.687,
+            0.789,
+            0.757
+          ],
+          "content": "Using leading zeros isn’t just useful when naming filenames; this is also the best way to name genes, transcripts, and so on. Projects like Ensembl use this naming scheme in naming their genes (e.g., ENSG00000164256)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.78,
+            0.862,
+            0.877
+          ],
+          "content": "In addition to simplifying working with files, consistent file naming is an often overlooked component of robust bioinformatics. Bad sample naming schemes can easily lead to switched samples. Poorly chosen filenames can also cause serious errors when you or collaborators think you’re working with the correct data, but it’s actually outdated or the wrong file. I guarantee that out of all the papers published in the past"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.16,
+            0.936
+          ],
+          "content": "30"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.194,
+            0.922,
+            0.555,
+            0.94
+          ],
+          "content": "Chapter 2: Setting Up and Managing a Bioinformatics Project"
+        }
+      ]
+    },
+    {
+      "page_idx": 60,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.08,
+            0.857,
+            0.118
+          ],
+          "continues_prev": true,
+          "content": "decade, at least a few and likely many more contain erroneous results because of a file naming issue."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.142,
+            0.136,
+            0.547,
+            0.166
+          ],
+          "level": 2,
+          "content": "Markdown for Project Notebooks"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.175,
+            0.859,
+            0.384
+          ],
+          "content": "It’s very important to keep a project notebook containing detailed information about the chronology of your computational work, steps you’ve taken, information about why you’ve made decisions, and of course all pertinent information to reproduce your work. Some scientists do this in a handwritten notebook, others in Microsoft Word documents. As with README files, bioinformaticians usually like keeping project notebooks in simple plain-text because these can be read, searched, and edited from the command line and across network connections to servers. Plain text is also a future-proof format: plain-text files written in the 1960s are still readable today, whereas files from word processors only 10 years old can be difficult or impossible to open and edit. Additionally, plain-text project notebooks can also be put under version control, which we’ll talk about in Chapter 5."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.393,
+            0.859,
+            0.469
+          ],
+          "content": "While plain-text is easy to write in your text editor, it can be inconvenient for collaborators unfamiliar with the command line to read. A lightweight markup language called Markdown is a plain-text format that is easy to read and painlessly incorporated into typed notes, and can also be rendered to HTML or PDF."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.479,
+            0.859,
+            0.592
+          ],
+          "content": "Markdown originates from the simple formatting conventions used in plain-text emails. Long before HTML crept into email, emails were embellished with simple markup for emphasis, lists, and blocks of text. Over time, this became a de facto plain-text email formatting scheme. This scheme is very intuitive: underscores or asterisks that flank text indicate emphasis, and lists are simply lines of text beginning with dashes."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.601,
+            0.859,
+            0.696
+          ],
+          "content": "Markdown is just plain-text, which means that it’s portable and programs to edit and read it will exist. Anyone who’s written notes or papers in old versions of word processors is likely familiar with the hassle of trying to share or update out-of-date proprietary formats. For these reasons, Markdown makes for a simple and elegant notebook format."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.142,
+            0.714,
+            0.442,
+            0.74
+          ],
+          "level": 2,
+          "content": "Markdown Formatting Basics"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.747,
+            0.859,
+            0.88
+          ],
+          "content": "Markdown’s formatting features match all of the needs of a bioinformatics notebook: text can be broken down into hierarchical sections, there’s syntax for both code blocks and inline code, and it’s easy to embed links and images. While the Markdown format is very simple, there are a few different variants. We’ll use the original Markdown format, invented by John Gruber, in our examples. John Gruber’s full markdown syntax specification is [available on his website](http://bit.ly/markdown-doc). Here is a basic Markdown document illustrating the format:"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.61,
+            0.924,
+            0.805,
+            0.938
+          ],
+          "content": "Markdown for Project Notebooks"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.84,
+            0.924,
+            0.857,
+            0.937
+          ],
+          "content": "31"
+        }
+      ]
+    },
+    {
+      "page_idx": 61,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.082,
+            0.38,
+            0.096
+          ],
+          "content": "\\# \\*Zea Mays\\* SNP Calling"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.113,
+            0.768,
+            0.189
+          ],
+          "content": "We sequenced three lines of \\*zea mays\\*, using paired-end sequencing. This sequencing was done by our sequencing core and we received the data on 2013-05-10. Each variety should have \\*\\*two\\*\\* sequences files, with suffixes \\`\\_R1.fastq\\` and \\`\\_R2.fastq\\`, indicating which member of the pair it is."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.172,
+            0.205,
+            0.338,
+            0.22
+          ],
+          "content": "\\## Sequencing Files"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.235,
+            0.547,
+            0.251
+          ],
+          "content": "All raw FASTQ sequences are in \\`data/seqs/\\`:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.206,
+            0.266,
+            0.48,
+            0.375
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ find data/seqs -name \"*.fastq\"\ndata/seqs/zmaysA_R1.fastq\ndata/seqs/zmaysA_R2.fastq\ndata/seqs/zmaysB_R1.fastq\ndata/seqs/zmaysB_R2.fastq\ndata/seqs/zmaysC_R1.fastq\ndata/seqs/zmaysC_R2.fastq\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.172,
+            0.39,
+            0.38,
+            0.405
+          ],
+          "content": "\\## Quality Control Steps"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.421,
+            0.751,
+            0.483
+          ],
+          "content": "After the sequencing data was received, our first stage of analysis was to ensure the sequences were high quality. We ran each of the three lines' two paired-end FASTQ files through a quality diagnostic and control pipeline. Our planned pipeline is:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.172,
+            0.498,
+            0.521,
+            0.559
+          ],
+          "sub_type": "text",
+          "content": "1. Create base quality diagnostic graphs.\n2. Check reads for adapter sequences.\n3. Trim adapter sequences.\n4. Trim poor quality bases."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.172,
+            0.575,
+            0.429,
+            0.59
+          ],
+          "content": "Recommended trimming programs:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.182,
+            0.607,
+            0.296,
+            0.636
+          ],
+          "sub_type": "text",
+          "content": "- Trimmomatic\n- Scythe"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.645,
+            0.86,
+            0.721
+          ],
+          "content": "Figure 2-1 shows this example Markdown notebook rendered in HTML5 by Pandoc. What makes Markdown a great format for lab notebooks is that it’s as easy to read in unrendered plain-text as it is in rendered HTML. Next, let’s take a look at the Markdown syntax used in this example (see Table 2-2 for a reference)."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.924,
+            0.16,
+            0.937
+          ],
+          "content": "32"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.194,
+            0.922,
+            0.555,
+            0.939
+          ],
+          "content": "Chapter 2: Setting Up and Managing a Bioinformatics Project"
+        }
+      ]
+    },
+    {
+      "page_idx": 62,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.159,
+            0.098,
+            0.481,
+            0.127
+          ],
+          "level": 2,
+          "content": "Zea Mays SNP Calling"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.158,
+            0.142,
+            0.834,
+            0.187
+          ],
+          "content": "We sequenced three lines of zea mays, using paired-end sequencing. This sequencing was done by our sequencing core and we received the data on 2013-05-10. Each variety should have two sequences files, with suffixes \\_R1. fastq and \\_R2. fastq, indicating which member of the pair it is."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.159,
+            0.203,
+            0.343,
+            0.224
+          ],
+          "level": 2,
+          "content": "Sequencing Files"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.239,
+            0.473,
+            0.254
+          ],
+          "content": "All raw FASTQ sequences are in data/seqs/:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.16,
+            0.265,
+            0.428,
+            0.35
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ find data/seqs -name \"*.fastq\"\ndata/seqs/zmaysA_R1.fastq\ndata/seqs/zmaysA_R2.fastq\ndata/seqs/zmaysB_R1.fastq\ndata/seqs/zmaysB_R2.fastq\ndata/seqs/zmaysC_R1.fastq\ndata/seqs/zmaysC_R2.fastq\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.16,
+            0.366,
+            0.397,
+            0.388
+          ],
+          "level": 2,
+          "content": "Quality Control Steps"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.158,
+            0.402,
+            0.825,
+            0.446
+          ],
+          "content": "After the sequencing data was received, our first stage of analysis was to ensure the sequences were high quality. We ran each of the three lines' two paired-end FASTQ files through a quality diagnostic and control pipeline. Our planned pipeline is:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.181,
+            0.457,
+            0.452,
+            0.515
+          ],
+          "sub_type": "text",
+          "content": "1. Create base quality diagnostic graphs.\n2. Check reads for adapter sequences.\n3. Trim adapter sequences.\n4. Trim poor quality bases."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.527,
+            0.395,
+            0.542
+          ],
+          "content": "Recommended trimming programs:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.184,
+            0.553,
+            0.294,
+            0.583
+          ],
+          "sub_type": "text",
+          "content": "• Trimmomatic\n• Scythe"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.141,
+            0.675,
+            0.716,
+            0.88
+          ],
+          "content": "| Markdown syntax | Result |\n| --- | --- |\n| *emphasis* | emphasis |\n| **bold** | bold |\n| `inline code` | inline code |\n|  | Hyperlink to http://website.com/link |\n| [link text](http://website.com/link) | Hyperlink to http://website.com/link, with text “link text” |",
+          "captions": [
+            {
+              "bbox": [
+                0.139,
+                0.614,
+                0.606,
+                0.633
+              ],
+              "content": "Figure 2-1. HTML Rendering of the Markdown notebook"
+            },
+            {
+              "bbox": [
+                0.14,
+                0.652,
+                0.488,
+                0.67
+              ],
+              "content": "Table 2-2. Minimal Markdown inline syntax"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0049-0064/images/page_62_table_18.jpg"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.608,
+            0.923,
+            0.806,
+            0.939
+          ],
+          "content": "Markdown for Project Notebooks"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.84,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "33"
+        }
+      ]
+    },
+    {
+      "page_idx": 63,
+      "blocks": [
+        {
+          "type": "table",
+          "bbox": [
+            0.141,
+            0.08,
+            0.716,
+            0.156
+          ],
+          "continues_prev": true,
+          "content": "| Markdown syntax | Result |\n| --- | --- |\n| ![alt text](path/to/figure.png) | Image, with alternative text “alt text” |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0049-0064/images/page_63_table_0.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.172,
+            0.859,
+            0.213
+          ],
+          "content": "Block elements like headers, lists, and code blocks are simple. Headers of different levels can be specified with varying numbers of hashes (#). For example:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.222,
+            0.331,
+            0.266
+          ],
+          "sub_type": "code",
+          "content": "```txt\n# Header level 1\n## Header level 2\n### Header level 3\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.276,
+            0.859,
+            0.314
+          ],
+          "content": "Markdown supports headers up to six levels deep. It’s also possible to use an alternative syntax for headers up to two levels:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.324,
+            0.296,
+            0.352
+          ],
+          "sub_type": "code",
+          "content": "```txt\nHeader level 1\n================\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.172,
+            0.37,
+            0.296,
+            0.397
+          ],
+          "sub_type": "code",
+          "content": "```txt\nHeader level 2\n--------------------------------\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.409,
+            0.859,
+            0.448
+          ],
+          "content": "Both ordered and unordered lists are easy too. For unordered lists, use dashes, asterisks, or pluses as list element markers. For example, using dashes:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.174,
+            0.458,
+            0.338,
+            0.502
+          ],
+          "sub_type": "code",
+          "content": "```txt\n- Francis Crick\n- James D. Watson\n- Rosalind Franklin\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.513,
+            0.86,
+            0.569
+          ],
+          "content": "To order your list, simply use numbers (i.e., 1., 2., 3., etc.). The ordering doesn’t matter, as HTML will increment these automatically for you. However, it’s still a good idea to clearly number your bullet points so the plain-text version is readable."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.579,
+            0.854,
+            0.598
+          ],
+          "content": "Code blocks are simple too—simply add four spaces or one tab before each code line:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.172,
+            0.608,
+            0.414,
+            0.624
+          ],
+          "content": "I ran the following command:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.205,
+            0.638,
+            0.446,
+            0.655
+          ],
+          "content": "\\$ find seqs/ -name \"\\*.fastq\""
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.662,
+            0.834,
+            0.682
+          ],
+          "content": "If you’re placing a code block within a list item, make this eight spaces, or two tabs:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.172,
+            0.691,
+            0.514,
+            0.799
+          ],
+          "sub_type": "text",
+          "content": "1. I searched for all FASTQ files using:\nfind seqs/ -name \"\\*.fastq\"\n2. And finally, VCF files with:\nfind vcf/ -name \"\\*.vcf\""
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.807,
+            0.86,
+            0.884
+          ],
+          "content": "What we’ve covered here should be more than enough to get you started digitally documenting your bioinformatics work. Additionally, there are extensions to Markdown, such as [MultiMarkdown](http://fletcherpenney.net/multimarkdown/) and [GitHub Flavored Markdown](http://bit.ly/gh-flavor-md). These variations add features (e.g., MultiMarkdown adds tables, footnotes, LaTeX math support, etc.)"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.924,
+            0.16,
+            0.936
+          ],
+          "content": "34"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.192,
+            0.922,
+            0.555,
+            0.94
+          ],
+          "content": "Chapter 2: Setting Up and Managing a Bioinformatics Project"
+        }
+      ]
+    },
+    {
+      "page_idx": 64,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.08,
+            0.861,
+            0.138
+          ],
+          "content": "and change some of the default rendering options. There are also many specialized Markdown editing applications if you prefer a GUI-based editor (see this chapter’s README on GitHub for some suggestions)."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.155,
+            0.592,
+            0.18
+          ],
+          "level": 2,
+          "content": "Using Pandoc to Render Markdown to HTML"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.187,
+            0.861,
+            0.264
+          ],
+          "content": "We’ll use [Pandoc](http://johnmacfarlane.net/pandoc/), a popular document converter, to render our Markdown documents to valid HTML. These HTML files can then be shared with collaborators or hosted on a website. See the [Pandoc installation page](http://bit.ly/pan-install) for instructions on how to install Pandoc on your system."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.272,
+            0.861,
+            0.334
+          ],
+          "content": "Pandoc can convert between a variety of different markup and output formats. Using Pandoc is very simple—to convert from Markdown to HTML, use the --from mark down and --to html options and supply your input file as the last argument:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.341,
+            0.684,
+            0.358
+          ],
+          "content": "\\$ pandoc --from markdown --to html notebook.md > output.html"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.365,
+            0.862,
+            0.48
+          ],
+          "content": "By default, Pandoc writes output to standard out, which we can redirect to a file (we’ll learn more about standard out and redirection in Chapter 3). We could also specify the output file using --output output.html. Finally, note that Pandoc can convert between many formats, not just Markdown to HTML. I’ve included some more examples of this in this chapter’s README on GitHub, including how to convert from HTML to PDF."
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.608,
+            0.923,
+            0.806,
+            0.939
+          ],
+          "content": "Markdown for Project Notebooks"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.84,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "35"
+        }
+      ]
+    },
+    {
+      "page_idx": 65,
+      "blocks": []
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Bioinformatics Data Skills",
+      "authors": [
+        "Vince Buffalo"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "created_at": "2015-06-30T16:29:18Z",
+      "modified_at": "2015-06-30T13:45:47-04:00",
+      "creator_application": "AH CSS Formatter V6.2 MR4 for Linux64 : 6.2.6.18551 (2014/09/24 15:00JST)",
+      "producer_application": "Antenna House PDF Output Library 6.2.609 (Linux64)",
+      "page_count": 538,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 0,
+          "width_pt": 503.16595458984375,
+          "height_pt": 660.5735470056534
+        },
+        {
+          "page_idx": 1,
+          "width_pt": 504.00201416015625,
+          "height_pt": 659.7847900390625
+        },
+        {
+          "page_idx": 2,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 3,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 4,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 5,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 6,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 7,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 8,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 9,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 10,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 11,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 12,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 13,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 14,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 15,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

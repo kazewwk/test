@@ -1,0 +1,3460 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Bioinformatics Data Skills",
+      "authors": [
+        "Vince Buffalo"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "created_at": "2015-06-30T16:29:18Z",
+      "modified_at": "2015-06-30T13:45:47-04:00",
+      "creator_application": "AH CSS Formatter V6.2 MR4 for Linux64 : 6.2.6.18551 (2014/09/24 15:00JST)",
+      "producer_application": "Antenna House PDF Output Library 6.2.609 (Linux64)",
+      "page_count": 538,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 416,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 417,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 418,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 419,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 420,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 421,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 422,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 423,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 424,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 425,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 426,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 427,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 428,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 429,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 430,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 431,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 416,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.137,
+            0.087,
+            0.858,
+            0.146
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "④ After resetting the position, calling the AlignmentFile.next() method returns the first alignment. Note that the query name, given by the attribute AlignedSeg ment.qname, is the same as the first alignment in Example 11-2."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.155,
+            0.859,
+            0.193
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Once you’re done working with an open SAM/BAM file, it’s a good idea to close it, which can be done with:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 2,
+          "bbox": [
+            0.171,
+            0.203,
+            0.337,
+            0.22
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 2,
+              "bbox": [
+                0.171,
+                0.203,
+                0.337,
+                0.22
+              ],
+              "content": ">>> bamfile.close()"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.228,
+            0.86,
+            0.267
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Note, though, that all examples in this section will assume that bamfile is open (so if you’ve just executed the preceding line, reopen the file)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.282,
+            0.803,
+            0.331
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Extracting SAM/BAM Header Information from an AlignmentFile Object"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.339,
+            0.86,
+            0.414
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "AlignmentFile objects also contain all information in the SAM header, which can be accessed using a variety of the AlignmentFile’s attributes and methods. The entire header is kept in a Python dictionary, which has the same possible keys as a SAM header:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 6,
+          "bbox": [
+            0.171,
+            0.426,
+            0.388,
+            0.457
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 6,
+              "bbox": [
+                0.171,
+                0.426,
+                0.388,
+                0.457
+              ],
+              "content": ">>> bamfile.header.keys()\n['SQ', 'RG', 'PG', 'HD']"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.465,
+            0.859,
+            0.524
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Each of the values corresponding to these keys contains a list of SAM header records. For example, the first record in the read group (RG) section and the third record in the sequence (SQ) section are:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 8,
+          "bbox": [
+            0.171,
+            0.534,
+            0.742,
+            0.658
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 8,
+              "bbox": [
+                0.171,
+                0.534,
+                0.742,
+                0.658
+              ],
+              "content": ">>> bamfile.header['RG'][0]\n{'LB': 'g1k-sc-NA12891-CEU-1', 'CN': 'SC', 'DS': 'SRP000032',\n'SM': 'NA12891', 'PI': '200', 'ID': 'ERR001776', 'PL': 'ILLUMINA'}\n>>> bamfile.header['SQ'][0]\n{'LN': 249250621, 'M5': '1b22b98cdeb4a9304cb5d48026a85128',\n'AS': 'NCBI37', 'SN': '1',\n'UR': 'file:/lustre/scratch102/projects/g1k/ref/main_project/\nhuman_g1k_v37.fasta'}"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "python"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.137,
+            0.667,
+            0.859,
+            0.744
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "While the AlignmentFile.header dictionary contains all information in the header, there are higher-level and easier ways to access header information. For example, the reference sequence names and their lengths are stored in two tuples, Alignment File.references and AlignmentFile.lengths:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 10,
+          "bbox": [
+            0.171,
+            0.755,
+            0.548,
+            0.833
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 10,
+              "bbox": [
+                0.171,
+                0.755,
+                0.548,
+                0.833
+              ],
+              "content": ">>> bamfile.references\n('1', '2', '3', '4', '5', '6', '7', [...])\n>>> bamfile.lengths\n(249250621, 243199373, 198022430, 191154276,\n 180915260, 171115067, 159138663, [...])"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.137,
+            0.841,
+            0.859,
+            0.88
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "When working with Pysam, one of the most common AlignmentFile methods you’ll use is AlignmentFile.getrname(). Whenever you process an AlignedSegment"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 12,
+          "bbox": [
+            0.454,
+            0.922,
+            0.798,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Creating Your Own SAM/BAM Processing Tools with Pysam"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 13,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "387"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 417,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.137,
+            0.08,
+            0.861,
+            0.158
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "object, the reference is stored as a non-negative integer reference ID (also known as a target ID or tid in the documentation). The reference ID corresponds to a particular reference sequence. The AlignmentFile.getrname() method is used to retrieve the name of the reference corresponding to this this integer reference ID:"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "code",
+          "index": 1,
+          "bbox": [
+            0.17,
+            0.167,
+            0.761,
+            0.274
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 1,
+              "bbox": [
+                0.17,
+                0.167,
+                0.761,
+                0.274
+              ],
+              "content": ">>> # check if aligned (only aligned reads have meaningful reference)\n>>> read.is_unmapped\nFalse\n>>> read.tid\n0\n>>> bamfile.getrname(read.reference_id)\n'1'"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.284,
+            0.748,
+            0.302
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "It’s also possible to go the opposite direction, from name to reference ID:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 3,
+          "bbox": [
+            0.171,
+            0.312,
+            0.38,
+            0.342
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 3,
+              "bbox": [
+                0.171,
+                0.312,
+                0.38,
+                0.342
+              ],
+              "content": ">>> bamfile.gettid('MT')\n24"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.352,
+            0.86,
+            0.409
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Reference IDs can only be non-negative integers; a value of –1 indicates something is wrong (and your code should explicitly test for this possibility!). For example, if we attempted to access a reference named “Mt” by mistake:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 5,
+          "bbox": [
+            0.171,
+            0.418,
+            0.38,
+            0.448
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 5,
+              "bbox": [
+                0.171,
+                0.418,
+                0.38,
+                0.448
+              ],
+              "content": ">>> bamfile.gettid('Mt')\n-1"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.137,
+            0.459,
+            0.859,
+            0.496
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "There are numerous other useful AlignmentFile attributes we don’t have the space to cover here; see the Pysam documentation for a full list."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.513,
+            0.543,
+            0.54
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Working with AlignedSegment Objects"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.137,
+            0.546,
+            0.86,
+            0.722
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Most SAM/BAM processing tasks you’ll tackle with Pysam will involve heavy work with AlignedSegment objects. These objects contain information about individual alignment records, which is what most SAM/BAM processing is centered around. All information about an alignment record is stored in this AlignedSegment object’s attributes. We’ll explore some of these attributes by taking a closer look at one AlignedSegment object from the NA12891_CEU_sample.bam file in this section. But note, the best and most up-to-date information will always come from the API documentation itself. This section quickly steps through the basics and highlights a few parts that can be tricky for those just starting out with Pysam."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.138,
+            0.73,
+            0.5,
+            0.748
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "First, let’s load a sample read from this file:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 10,
+          "bbox": [
+            0.17,
+            0.758,
+            0.682,
+            0.79
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 10,
+              "bbox": [
+                0.17,
+                0.758,
+                0.682,
+                0.79
+              ],
+              "content": ">>> bamfile = pysam.AlignmentFile(filename=fname, mode=\"rb\")\n>>> read = bamfile.next()"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.137,
+            0.798,
+            0.859,
+            0.836
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Basic information about the read (also known as the query), including its name, sequence, base qualities, and length are all stored as attributes:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 12,
+          "bbox": [
+            0.171,
+            0.844,
+            0.406,
+            0.894
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 12,
+              "bbox": [
+                0.171,
+                0.844,
+                0.406,
+                0.894
+              ],
+              "content": ">>> read.query_name ①\n'SRR005672.8895'\n>>> read.reference_start ②"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "page_number",
+          "index": 13,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "388"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 14,
+          "bbox": [
+            0.201,
+            0.922,
+            0.451,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 11: Working with Alignment Data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 418,
+      "blocks": [
+        {
+          "type": "code",
+          "index": 0,
+          "bbox": [
+            0.171,
+            0.082,
+            0.674,
+            0.22
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 0,
+              "bbox": [
+                0.171,
+                0.082,
+                0.674,
+                0.22
+              ],
+              "content": "215622849\n>>> read.query_sequence ③\n'GGAATAAATATAGGAAATGTATAATATATAGGAAATATATATATATAGTAA'\n>>> read.query_qualities ④\narray('B', [26, 28, 27, 29, 28, 27, 29, 27, 24, 27, [...]])\n>>> read.query_length ⑤\n51\n>>> read.query_length == len(read.query_sequence)\nTrue"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "python"
+        },
+        {
+          "type": "list",
+          "index": 6,
+          "bbox": [
+            0.137,
+            0.237,
+            0.859,
+            0.501
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 1,
+              "bbox": [
+                0.137,
+                0.237,
+                0.804,
+                0.258
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "The AlignedSegment.query_name attribute returns the read (query) name."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 2,
+              "bbox": [
+                0.137,
+                0.274,
+                0.859,
+                0.313
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "The AlignedSegment.reference_start attribute returns the alignment position (the column POS in the SAM/BAM file)."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 3,
+              "bbox": [
+                0.137,
+                0.33,
+                0.7,
+                0.352
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "AlignedSegment.query_sequence retrieves the read sequence."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 4,
+              "bbox": [
+                0.137,
+                0.367,
+                0.859,
+                0.424
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "④ AlignedSegment.query_qualities retrieves the read qualities, as a Python array. These qualities have already been converted; there’s no need to subtract 33 from these values."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 5,
+              "bbox": [
+                0.137,
+                0.442,
+                0.859,
+                0.501
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "The length of the query be accessed with AlignedSegment.query_length. This gives the entire query length, which as you see on the next line will be equal to the length of the sequence."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.508,
+            0.861,
+            0.586
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Earlier, in “Bitwise Flags” on page 360, we learned how to extract information from the SAM format’s bitwise flags. Pysam makes this much simpler by providing a series of clearly named attributes that get at the values of these bitwise flags. The following are some examples, but see the Pysam documentation for a full list:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 8,
+          "bbox": [
+            0.171,
+            0.595,
+            0.388,
+            0.873
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 8,
+              "bbox": [
+                0.171,
+                0.595,
+                0.388,
+                0.873
+              ],
+              "content": ">>> read.is_unmapped\nFalse\n>>> read.is_paired\nTrue\n>>> read.is_proper_pair\nTrue\n>>> read.mate_is_unmapped\nFalse\n>>> read.is_read1\nTrue\n>>> read.is_read2\nFalse\n>>> read.is_reverse\nFalse\n>>> read.mate_is_reverse\nTrue\n>>> read.is_qcfail\nFalse"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "footer",
+          "index": 9,
+          "bbox": [
+            0.454,
+            0.922,
+            0.798,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Creating Your Own SAM/BAM Processing Tools with Pysam"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 10,
+          "bbox": [
+            0.833,
+            0.923,
+            0.859,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "389"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 419,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.135,
+            0.081,
+            0.861,
+            0.178
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "There are two attributes to access an alignment’s CIGAR alignment details: Aligned Segment.cigartuples and AlignedSegment.cigarstring. The former returns a list of tuples that use integers to encode the CIGAR operation and its length (see the documentation for these operation codes). The latter returns the CIGAR alignment as a string."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.136,
+            0.187,
+            0.861,
+            0.341
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "One important consideration when working with Pysam’s AlignedSegment objects is how certain values handle soft-clipped alignments. With soft clipping, it’s possible that the length of the aligned query sequence is less than the original read sequence. Because we often want to work with only the aligned portion of query sequences when processing alignments, AlignedSegment has attributes that take soft clipping into account—be sure to use the correct attribute for your task! For example, let’s find a soft-clipped read by iterating over all reads until we find one with “S” in the CIGAR string, then break out of the loop:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 2,
+          "bbox": [
+            0.171,
+            0.35,
+            0.677,
+            0.459
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 2,
+              "bbox": [
+                0.171,
+                0.35,
+                0.677,
+                0.459
+              ],
+              "content": ">>> bamfile = pysam.AlignmentFile('NA12891_CEU_sample.bam')\n>>> for read in bamfile:\n...     if 'S' in read.cigarstring:\n...         break\n...\n>>> read.cigarstring\n'35M16S'"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "python"
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.468,
+            0.861,
+            0.546
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "AlignedSegment objects have some attributes with “alignment” in the name to emphasize these exclude soft-clipped bases. For example, note the difference between AlignedSegment.query_sequence and AlignedSegment.query_align ment_sequence:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 4,
+          "bbox": [
+            0.171,
+            0.557,
+            0.727,
+            0.648
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 4,
+              "bbox": [
+                0.171,
+                0.557,
+                0.727,
+                0.648
+              ],
+              "content": ">>> read.query_sequence\n'TAGGAAATGTATAATATATAGGAAATATATATATATAGGAAATATATAATA'\n>>> read.query_alignment_sequence\n'TAGGAAATGTATAATATATAGGAAATATATATATA'\n>>> len(read.query_sequence) - len(read.query_alignment_sequence)\n16"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.136,
+            0.657,
+            0.861,
+            0.816
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The difference between these two strings is the soft-clipped bases; AlignedSeg ment.query_alignment_sequence doesn’t include these soft-clipped bases and is 16 bases shorter. There are similar attributes, including AlignedSegment.query_align ment_start and AlignedSegment.query_alignment_end (which give the start and end indices in the aligned portion of the query sequence), AlignedSeg ment.query_alignment_length (which returns the alignment length), and Aligned Segment.query_alignment_qualities (which returns the sequence base qualities, excluding the soft-clipped bases)."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 6,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "390"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 7,
+          "bbox": [
+            0.201,
+            0.922,
+            0.451,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 11: Working with Alignment Data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 420,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "index": 0,
+          "bbox": [
+            0.137,
+            0.079,
+            0.649,
+            0.105
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Writing a Program to Record Alignment Statistics"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.136,
+            0.113,
+            0.861,
+            0.191
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We’re now ready to employ our knowledge of AlignedSegment objects to write a simple short program that gathers alignment statistics from a SAM or BAM file. We’ll then validate this tool by comparing its results to those from samtools flagstat, a tool that reports statistics about SAM bitwise flags:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 2,
+          "bbox": [
+            0.169,
+            0.2,
+            0.822,
+            0.807
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 2,
+              "bbox": [
+                0.169,
+                0.2,
+                0.822,
+                0.807
+              ],
+              "content": "import sys\nimport pysam\nfrom collections import Counter\n\nif len(sys.argv) < 2:\n    sys.exit(\"usage: alnstat.py in.bam\")\n\nfname = sys.argv[1]\nbamfile = pysam.AlignmentFile(fname) ①\n\nstats = Counter() ②\nfor read in bamfile:\n    stats['total'] += 1\n    stats['qcfail'] += int(read.is_qcfail) ③\n\n    # record paired end info\n    stats['paired'] += int(read.is_paired) ④\n    stats['read1'] += int(read.is_read1)\n    stats['read2'] += int(read.is_read2)\n\n    if read.is_unmapped: ⑤\n        stats['unmapped'] += 1\n        continue # other flags don't apply\n\n    # record if mapping quality <= 30 ⑥\n    stats[\"mapping quality <= 30\"] += int(read.mapping_quality <= 30)\n\n    stats['mapped'] += 1 ⑦\n    stats['proper pair'] += int(read.is_proper_pair) ⑧\n\n# specify the output order, since dicts don't have order ⑨\noutput_order = (\"total\", \"mapped\", \"unmapped\", \"paired\",\n               \"read1\", \"read2\", \"proper pair\", \"qcfail\",\n               \"mapping quality <= 30\")\n\n# format output and print to standard out\nfor key in output_order:\n    format_args = (key, stats[key], 100*stats[key]/float(stats[\"total\"]))\n    sys.stdout.write(\"%s: %d (%0.2f%)\\n\" % format_args) ⑪"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "python"
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.813,
+            0.861,
+            0.89
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This is a quick script, without many bells and whistles. In general, when writing scripts for simple tasks like this, it’s best to follow the KISS principle. Don’t needlessly overcomplicate things or add extra features—these can all come in later revisions after daily use has shown an inadequacy. Let’s step through some key parts:"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 4,
+          "bbox": [
+            0.454,
+            0.922,
+            0.798,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Creating Your Own SAM/BAM Processing Tools with Pysam"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 5,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "391"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 421,
+      "blocks": [
+        {
+          "type": "list",
+          "index": 0,
+          "bbox": [
+            0.138,
+            0.086,
+            0.858,
+            0.865
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 1,
+              "bbox": [
+                0.138,
+                0.086,
+                0.858,
+                0.165
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "After loading the necessary modules and checking there are a sufficient number of arguments to run the script, we open the SAM or BAM file. Here, we don’t explicitly specify a mode, because Pysam’s AlignmentFile can infer this (see the AlignmentFile documentation for more information)."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 2,
+              "bbox": [
+                0.138,
+                0.181,
+                0.858,
+                0.24
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Here, we initiate the Counter object from the collections module (Counter is an incredibly useful class in bioinformatics scripts!). Counter behaves much like a Python dictionary, which is how we see it used here."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 3,
+              "bbox": [
+                0.138,
+                0.257,
+                0.858,
+                0.375
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "3 Here’s an example of incrementing a key in the Counter object depending on what the value of an AlignedSegment attribute is. The attribute AlignedSeg ment.is_qcfail returns whether the QC fail bit is set, which is a Boolean value (True or False). To be explicit, we convert this to an integer, and add this value (either 1 for True or 0 for False) to the current count kept in the Counter object stats."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 4,
+              "bbox": [
+                0.138,
+                0.393,
+                0.858,
+                0.432
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Similar to how we increment the key for QC fail, we increment the counters for whether a read is paired, is read 1, or is read 2."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 5,
+              "bbox": [
+                0.138,
+                0.448,
+                0.858,
+                0.545
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "5 Some flags only make sense if a read mapped to the reference. At this point, we check if the read is unmapped, and increment the unmapped counter if so. Since the rest of the values we check in the for loop block depend on a read being aligned, if a read is unmapped we use continue to skip over this code (because none of these later keys should be incremented if a read is unmapped)."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.138,
+                0.561,
+                0.858,
+                0.619
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "At this point, all alignments are mapped. We increment a counter here recording whether the read mapped with mapping quality is less than 30 (any threshold can be used, but this is a common threshold for “low quality” alignments)."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.138,
+                0.636,
+                0.858,
+                0.694
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Here we increment the 'mapped' key, since all alignments at this point are mapped. We also increment if the read is in a proper pair (only aligned reads can be a proper pair)."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.138,
+                0.711,
+                0.858,
+                0.769
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Counter objects are based on Python’s dictionaries, so keys are not in any particular order. Here, we define the order to output keys (and their values) as a tuple. We’ll see how this is used in the next step."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 9,
+              "bbox": [
+                0.138,
+                0.786,
+                0.858,
+                0.865
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "In this loop, we iterate over each of the keys in the tuple output_order, which defines the order of output values in the Counter object stats. Each line of output has three values: the key name, the total counts for that key in the Counter object stats, and that key’s percentage of the total number of SAM/BAM entries."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "page_number",
+          "index": 10,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "392"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 11,
+          "bbox": [
+            0.201,
+            0.922,
+            0.451,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 11: Working with Alignment Data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 422,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.172,
+            0.08,
+            0.861,
+            0.119
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This line creates a tuple of these values, which are used to propagate the string formatting values in the next line."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.136,
+            0.859,
+            0.176
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This line writes a formatted string (using the tuple format_args created in the previous line) to standard output."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.183,
+            0.642,
+            0.202
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let’s run this script on our NA12891_CEU_sample.bam file:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 3,
+          "bbox": [
+            0.171,
+            0.212,
+            0.603,
+            0.368
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 3,
+              "bbox": [
+                0.171,
+                0.212,
+                0.603,
+                0.368
+              ],
+              "content": "$ python alnstat/alnstat.py NA12891_CEU_sample.bam\ntotal: 636207 (100.00%)\nmapped: 630875 (99.16%)\nunmapped: 5332 (0.84%)\npaired: 435106 (68.39%)\nread1: 217619 (34.21%)\nread2: 217487 (34.18%)\nproper pair: 397247 (62.44%)\nqcfail: 0 (0.00%)\nmapping quality <= 30: 90982 (14.30%)"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.375,
+            0.861,
+            0.508
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Even for simple scripts such as this one, it’s essential to validate the results. For longer scripts, frequently used programs, or critical parts of a workflow, we might employ unit testing (because if something’s wrong, everything will be wrong). Unit testing involves breaking code up into separate functions, and writing code that automatically tests that each function is working by checking its values (called unit tests). For a small script like this, this might be overkill. Fortunately, there are two simpler (but less robust) alternatives:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 7,
+          "bbox": [
+            0.155,
+            0.523,
+            0.856,
+            0.587
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 5,
+              "bbox": [
+                0.155,
+                0.523,
+                0.856,
+                0.56
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• Creating a small test dataset where you’ve worked out what the results should be by hand and can check your program’s results"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.156,
+                0.568,
+                0.678,
+                0.587
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• Using another program or application to validate the results"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.137,
+            0.602,
+            0.861,
+            0.641
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We’ll use the latter option, by validating our tool with samtools flagstat (which our program emulates):"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 9,
+          "bbox": [
+            0.171,
+            0.65,
+            0.641,
+            0.867
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 9,
+              "bbox": [
+                0.171,
+                0.65,
+                0.641,
+                0.867
+              ],
+              "content": "$ samtools flagstat NA12891_CEU_sample.bam\n636207 + 0 in total (QC-passed reads + QC-failed reads)\n0 + 0 secondary\n0 + 0 supplementary\n29826 + 0 duplicates\n630875 + 0 mapped (99.16%:nan%)\n435106 + 0 paired in sequencing\n217619 + 0 read1\n217487 + 0 read2\n397247 + 0 properly paired (91.30%:nan%)\n424442 + 0 with itself and mate mapped\n5332 + 0 singletons (1.23%:nan%)\n5383 + 0 with mate mapped to a different chr\n2190 + 0 with mate mapped to a different chr (mapQ>=5)"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "footer",
+          "index": 10,
+          "bbox": [
+            0.454,
+            0.923,
+            0.798,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Creating Your Own SAM/BAM Processing Tools with Pysam"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 11,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "393"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 423,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.136,
+            0.082,
+            0.861,
+            0.215
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Looking at the raw counts (in the first column, before +) we can see that each our values check out. samtools flagstat doesn’t return a figure for how many reads have a mapping quality less than or equal to 30, so we have to validate our value another way. One way is to use samtools view’s -q option, which returns the number of alignments with a mapping quality greater than or equal to the supplied value. We combine this with -c, which returns the count, rather than the alignments themselves:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 1,
+          "bbox": [
+            0.171,
+            0.227,
+            0.577,
+            0.258
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 1,
+              "bbox": [
+                0.171,
+                0.227,
+                0.577,
+                0.258
+              ],
+              "content": "\\$ samtools view -c -q 31 NA12891_CEU_sample.bam\n539893"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "batch"
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.267,
+            0.861,
+            0.343
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Now, to find the number of reads with mapping quality less than or equal to 30, we need to subtract this value from the total number of mapped reads. We count the total number of mapped reads with samtools flagstat, filtering out alignments with the unmapped bit (0x4) set:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 3,
+          "bbox": [
+            0.171,
+            0.354,
+            0.551,
+            0.383
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 3,
+              "bbox": [
+                0.171,
+                0.354,
+                0.551,
+                0.383
+              ],
+              "content": "samtools view -c -F 4 NA12891_CEU_sample.bam\n630875"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "batch"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.393,
+            0.859,
+            0.43
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Note that 630,875 – 539,893 = 90,982, which is exactly what we found with our alnstat.py script—this value checks out, too."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.447,
+            0.681,
+            0.473
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Additional Pysam Features and Other SAM/BAM APIs"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.136,
+            0.48,
+            0.86,
+            0.676
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In this introduction, we’ve skipped over some additional features of Pysam. For example, Pysam also includes an interface for creating and working with pileup data, through the AlignmentFile.pileup() method. In addition, Pysam implements some common samtools subcommands—for example, sort, view, and calmd are implemented as pysam.sort, pysam.view, pysam.calmd. Pysam also has a Python interface to Tabix files through pysam.TabixFile (we cover Tabix files later in “Fast Access to Indexed Tab-Delimited Files with BGZF and Tabix” on page 425), and FASTQ files through pysam.FastqFile. These are all well-written and easy-to-use interfaces; unfortunately, we don’t have the space to cover all of these in this section, so see Pysam’s excellent documentation for more details."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.136,
+            0.684,
+            0.861,
+            0.781
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Finally, Pysam is just one popular SAM/BAM API—there are numerous others available in different languages. For example, Samtools has "
+            },
+            {
+              "type": "hyperlink",
+              "url": "http://bit.ly/st-capi",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "its own C API"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "content": ". If you work in Java, "
+            },
+            {
+              "type": "hyperlink",
+              "url": "http://broadinstitute.github.io/picard/",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Picard"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "content": " offers a Java API for working with SAM and BAM files. Finally, Bioconductor has two excellent packages used for working with SAM and BAM files and genome alignments: "
+            },
+            {
+              "type": "hyperlink",
+              "url": "http://bit.ly/rsamtools",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Rsamtools"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "hyperlink",
+              "url": "http://bit.ly/genom-align",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "GenomicAlignment"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "content": "."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 8,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "394"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 9,
+          "bbox": [
+            0.201,
+            0.922,
+            0.452,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 11: Working with Alignment Data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 424,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.722,
+            0.117,
+            0.859,
+            0.143
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "CHAPTER 12"
+            }
+          ]
+        },
+        {
+          "type": "doc_title",
+          "index": 1,
+          "bbox": [
+            0.228,
+            0.152,
+            0.862,
+            0.23
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.401,
+            0.861,
+            0.537
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "I’ve waited until the penultimate chapter this book to share a regrettable fact: everyday bioinformatics work often involves a great deal of tedious data processing. Bioinformaticians regularly need to run a sequence of commands on not just one file, but dozens (sometimes even hundreds) of files. Consequently, a large part of bioinformatics is patching together various processing steps into a pipeline, and then repeatedly applying this pipeline to many files. This isn’t exciting scientific work, but it’s a necessary hurdle before tackling more exciting analyses."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.543,
+            0.86,
+            0.737
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "While writing pipelines is a daily burden of bioinformaticians, it’s essential that pipelines are written to be robust and reproducible. Pipelines must be robust to problems that might occur during data processing. When we execute a series of commands on data directly into the shell, we usually clearly see if something goes awry—output files are empty when they should contain data or programs exit with an error. However, when we run data through a processing pipeline, we sacrifice the careful attention we paid to each step’s output to gain the ability to automate processing of numerous files. The catch is that not only are errors likely to still occur, they’re more likely to occur because we’re automating processing over more data files and using more steps. For these reasons, it’s critical to construct robust pipelines."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.743,
+            0.861,
+            0.86
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Similarly, pipelines also play an important role in reproducibility. A well-crafted pipeline can be a perfect record of exactly how data was processed. In the best cases, an individual could download your processing scripts and data, and easily replicate your exact steps. However, it’s unfortunately quite easy to write obfuscated or sloppy pipelines that hinder reproducibility. We’ll see some principles that can help you avoid these mistakes, leading to more reproducible projects."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 5,
+          "bbox": [
+            0.833,
+            0.923,
+            0.859,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "395"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 425,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.141,
+            0.08,
+            0.859,
+            0.214
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In this chapter, we’ll learn the essential tools and skills to construct robust and reproducible pipelines. We’ll see how to write rerunnable Bash shell scripts, automate file processing tasks with find and xargs, run pipelines in parallel, and see a simple makefile. Note that the subset of techniques covered in this chapter do not target a specific cluster or high-performance computing (HPC) architecture—these are general Unix solutions that work well on any machine. For parallelization techniques specific to your HPC system, you will need consult its documentation."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.142,
+            0.233,
+            0.389,
+            0.263
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Basic Bash Scripting"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.177,
+            0.271,
+            0.825,
+            0.305
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We’ve found that duct tape is not a perfect solution for anything. But with a little ingenuity, in a pinch, it’s an adequate solution for just about everything."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.531,
+            0.311,
+            0.768,
+            0.328
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "— Mythbusters’ Jamie Hyneman"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.141,
+            0.333,
+            0.859,
+            0.485
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Bash, the shell we’ve used interactively throughout the book, is also a full-fledged scripting language. Like many other tools presented in this book, the trick to using Bash scripts effectively in bioinformatics is knowing when to use them and when not to. Unlike Python, Bash is not a general-purpose language. Bash is explicitly designed to make running and interfacing command-line programs as simple as possible (a good characteristic of a shell!). For these reasons, Bash often takes the role as the duct tape language of bioinformatics (also referred to as a glue language), as it’s used to tape many commands together into a cohesive workflow."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.141,
+            0.495,
+            0.859,
+            0.685
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Before digging into how to create pipelines in Bash, it’s important to note that Python may be a more suitable language for commonly reused or advanced pipelines. Python is a more modern, fully featured scripting language than Bash. Compared to Python, Bash lacks several nice features useful for data-processing scripts: better numeric type support, useful data structures, better string processing, refined option parsing, availability of a large number of libraries, and powerful functions that help with structuring your programs. However, there’s more overhead when calling command-line programs from a Python script (known as calling out or shelling out) compared to Bash. Although Bash lacks some of Python’s features, Bash is often the best and quickest “duct tape” solution (which we often need in bioinformatics)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.141,
+            0.702,
+            0.563,
+            0.728
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Writing and Running Robust Bash Scripts"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.141,
+            0.735,
+            0.859,
+            0.868
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Most Bash scripts in bioinformatics are simply commands organized into a rerunnable script with some added bells and whistles to check that files exist and ensuring any error causes the script to abort. These types of Bash scripts are quite simple to write: you’ve already learned important shell features like pipes, redirects, and background processes that play an important role in Bash scripts. In this section, we’ll cover the basics of writing and executing Bash scripts, paying particular attention to how create robust Bash scripts."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 8,
+          "bbox": [
+            0.14,
+            0.924,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "396"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 9,
+          "bbox": [
+            0.203,
+            0.923,
+            0.694,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 12: Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 426,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "index": 0,
+          "bbox": [
+            0.138,
+            0.079,
+            0.304,
+            0.096
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A robust Bash header"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.106,
+            0.861,
+            0.203
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "By convention, Bash scripts have the extension .sh. You can create them in your favorite text editor (and decent text editors will have support for Bash script syntax highlighting). Anytime you write a Bash script, you should use the following Bash script header, which sets some Bash options that lead to more robust scripts (there’s also a copy of this header in the template.sh file in this chapter’s directory on GitHub):"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 2,
+          "bbox": [
+            0.171,
+            0.209,
+            0.331,
+            0.274
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 2,
+              "bbox": [
+                0.171,
+                0.209,
+                0.331,
+                0.274
+              ],
+              "content": "#!/bin/bash ①\nset -e ②\nset -u ③\nset -o pipefail ④"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "shell"
+        },
+        {
+          "type": "list",
+          "index": 3,
+          "bbox": [
+            0.138,
+            0.289,
+            0.861,
+            0.598
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 4,
+              "bbox": [
+                0.138,
+                0.289,
+                0.861,
+                0.366
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "1 This is called the shebang, and it indicates the path to the interpreter used to execute this script. This is only necessary when running the script as a program (more on this in a bit). Regardless of how you plan to run your Bash script, it’s best to include a shebang line."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 5,
+              "bbox": [
+                0.138,
+                0.382,
+                0.862,
+                0.598
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "By default, a shell script containing a command that fails (exits with a nonzero exit status) will not cause the entire shell script to exit—the shell script will just continue on to the next line. This is not a desirable behavior; we always want errors to be loud and noticeable. set -e prevents this, by terminating the script if any command exited with a nonzero exit status. Note, however, that set -e has complex rules to accommodate cases when a nonzero exit status indicates “false” rather than failure. For example, test -d file.txt will return a nonzero exit status if its argument is not a directory, but in this context this isn’t meant to represent an error. set -e ignores nonzero statuses in if conditionals for this reason (we’ll discuss this later). Also, set -e ignores all exit statuses in Unix pipes except the last one—this relates to set -o pipefail, which we discuss later."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.138,
+            0.614,
+            0.861,
+            0.714
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3 set -u fixes another unfortunate default behavior of Bash scripts: any command containing a reference to an unset variable name will still run. As a horrifying example of what this can lead to, consider: rm -rf $TEMP_DIR/*. If the shell variable $TEMP_DIR isn’t set, Bash will still substitute its value (which is nothing) in place of it. The end result is rm -rf /*! You can see this for yourself:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 7,
+          "bbox": [
+            0.207,
+            0.722,
+            0.426,
+            0.755
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 7,
+              "bbox": [
+                0.207,
+                0.722,
+                0.426,
+                0.755
+              ],
+              "content": "$ echo \"rm $NOTSET/blah\"\nrm /blah"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "shell"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.172,
+            0.764,
+            0.859,
+            0.801
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "set -u prevents this type of error by aborting the script if a variable’s value is unset."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.138,
+            0.82,
+            0.861,
+            0.879
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As just discussed, set -e will cause a script to abort if a nonzero exit status is encountered, with some exceptions. One such exception is if a program run in a Unix pipe exited unsuccessfully; unless this program was the last program in the"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 10,
+          "bbox": [
+            0.676,
+            0.923,
+            0.798,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Basic Bash Scripting"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 11,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "397"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 427,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.172,
+            0.082,
+            0.858,
+            0.158
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "pipe, this would not cause the script to abort even with set -e. Including set -o pipefail will prevent this undesirable behavior—any program that returns a nonzero exit status in the pipe will cause the entire pipe to return a nonzero status. With set -e enabled, too, this will lead the script to abort."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "image",
+          "index": 1,
+          "bbox": [
+            0.174,
+            0.18,
+            0.255,
+            0.259
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 1,
+              "bbox": [
+                0.174,
+                0.18,
+                0.255,
+                0.259
+              ],
+              "image_path": "images/page_427_image_1.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.267,
+            0.18,
+            0.726,
+            0.2
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The Robust Bash Header in Bash Script Examples in this Chapter"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.266,
+            0.208,
+            0.787,
+            0.259
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "I will omit this header in Bash scripts throughout this chapter for clarity and to save space, but you should always use it in your own work."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.284,
+            0.86,
+            0.36
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "These three options are the first layer of protection against Bash scripts with silent errors and unsafe behavior. Unfortunately, Bash is a fragile language, and we need to mind a few other oddities to use it safely in bioinformatics. We’ll see these as we learn more about the language."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.138,
+            0.378,
+            0.303,
+            0.398
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Running Bash scripts"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.137,
+            0.406,
+            0.86,
+            0.562
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Running Bash scripts can be done one of two ways: with the bash program directly (e.g., bash script.sh), or calling your script as a program (./script.sh). For our purposes, there’s no technical reason to prefer one approach over the other. Practically, it’s wise to get in the habit of running scripts you receive with ./script.sh, as they might use interpreters other than /bin/bash (e.g., zsh, csh, etc.). But while we can run any script (as long as it has read permissions) with bash script.sh, calling the script as an executable requires that it have executable permissions. We can set these using:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.172,
+            0.572,
+            0.356,
+            0.587
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "$ chmod u+x script.sh"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.137,
+            0.596,
+            0.859,
+            0.636
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This adds executable permissions (+x) for the user who owns the file (u). Then, the script can be run with ./script.sh."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.138,
+            0.652,
+            0.512,
+            0.678
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Variables and Command Arguments"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.137,
+            0.685,
+            0.86,
+            0.857
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Bash variables play an extremely important role in robust, reproducible Bash scripts. Processing pipelines having numerous settings that should be stored in variables (e.g., which directories to store results in, parameter values for commands, input files, etc.). Storing these settings in a variable defined at the top of the file makes adjusting settings and rerunning your pipelines much easier. Rather than having to change numerous hardcoded values in your scripts, using variables to store settings means you only have to change one value—the value you’ve assigned to the variable. Bash also reads command-line arguments into variables, so you’ll need to be familiar with accessing variables’ values to work with command-line arguments."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 11,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "398"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 12,
+          "bbox": [
+            0.201,
+            0.922,
+            0.697,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 12: Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 428,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.137,
+            0.08,
+            0.861,
+            0.158
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Unlike other programming languages, Bash’s variables don’t have data types. It’s helpful to think of Bash’s variables as strings (but that may behave differently depending on context). We can create a variable and assign it a value with (note that spaces matter when setting Bash variables—do not use spaces around the equals sign!):"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 1,
+          "bbox": [
+            0.172,
+            0.166,
+            0.365,
+            0.183
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 1,
+              "bbox": [
+                0.172,
+                0.166,
+                0.365,
+                0.183
+              ],
+              "content": "results_dir=\"results/\""
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.19,
+            0.861,
+            0.248
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To access a variable’s value, we use a dollar sign in front of the variable’s name (e.g., $results_dir). You can experiment with this in a Bash script, or directly on the command line:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 3,
+          "bbox": [
+            0.171,
+            0.258,
+            0.38,
+            0.306
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 3,
+              "bbox": [
+                0.171,
+                0.258,
+                0.38,
+                0.306
+              ],
+              "content": "$ results_dir=\"results/\"\n$ echo $results_dir\nresults/"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "shell"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.314,
+            0.859,
+            0.352
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As mentioned in the previous section, you should always set set -u to force a Bash script to exit if a variable is not set."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.361,
+            0.861,
+            0.457
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Even though accessing a variable’s value using the dollar sign syntax works, it has one disadvantage: in some cases it’s not clear where a variable name ends and where an adjacent string begins. For example, suppose a section of your Bash script created a directory for a sample’s alignment data, called <sample>_aln/, where <sample> is replaced by the sample’s name. This would look like:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 6,
+          "bbox": [
+            0.171,
+            0.466,
+            0.331,
+            0.498
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 6,
+              "bbox": [
+                0.171,
+                0.466,
+                0.331,
+                0.498
+              ],
+              "content": "sample=\"CNTRL01A\"\nmkdir $sample_aln/"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.505,
+            0.862,
+            0.564
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Although the intention of this code block was to create a directory called CNTRL01A_aln/, this would actually fail, because Bash will try to retrieve the value of a variable named $sample_aln. To prevent this, wrap the variable name in braces:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 8,
+          "bbox": [
+            0.171,
+            0.573,
+            0.348,
+            0.606
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 8,
+              "bbox": [
+                0.171,
+                0.573,
+                0.348,
+                0.606
+              ],
+              "content": "sample=\"CNTRL01A\"\nmkdir \\${sample}_aln/"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.137,
+            0.612,
+            0.862,
+            0.709
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Now, a directory named CNTRL01A_aln/ will be created. While this solves our immediate problem of Bash interpreting sample_aln as the variable name, there’s one more step we should take to make this more robust: quoting variables. This prevents commands from interpreting any spaces or other special characters that the variable may contain. Our final command would look as follows:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 10,
+          "bbox": [
+            0.171,
+            0.718,
+            0.363,
+            0.751
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 10,
+              "bbox": [
+                0.171,
+                0.718,
+                0.363,
+                0.751
+              ],
+              "content": "sample=\"CNTRL01A\"\nmkdir \"\\${sample}_aln/\""
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "hcl"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 11,
+          "bbox": [
+            0.138,
+            0.767,
+            0.343,
+            0.786
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Command-line arguments"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.137,
+            0.793,
+            0.861,
+            0.852
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let’s now look at how Bash handles command-line arguments (which are assigned to the value $1, $2, $3, etc.). The variable $0 stores the name of the script. We can see this ourselves with a simple example script:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 13,
+          "bbox": [
+            0.172,
+            0.861,
+            0.271,
+            0.877
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 13,
+              "bbox": [
+                0.172,
+                0.861,
+                0.271,
+                0.877
+              ],
+              "content": "#!/bin/bash"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "shell"
+        },
+        {
+          "type": "footer",
+          "index": 14,
+          "bbox": [
+            0.676,
+            0.923,
+            0.799,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Basic Bash Scripting"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 15,
+          "bbox": [
+            0.833,
+            0.923,
+            0.859,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "399"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 429,
+      "blocks": [
+        {
+          "type": "code",
+          "index": 0,
+          "bbox": [
+            0.171,
+            0.081,
+            0.363,
+            0.144
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 0,
+              "bbox": [
+                0.171,
+                0.081,
+                0.363,
+                0.144
+              ],
+              "content": "echo \"script name: $0\"\necho \"first arg: $1\"\necho \"second arg: $2\"\necho \"third arg: $3\""
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "shell"
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.139,
+            0.152,
+            0.68,
+            0.172
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Running this file prints arguments assigned to $0, $1, $2, and $3:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 2,
+          "bbox": [
+            0.171,
+            0.181,
+            0.424,
+            0.26
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 2,
+              "bbox": [
+                0.171,
+                0.181,
+                0.424,
+                0.26
+              ],
+              "content": "\\$ bash args.sh arg1 arg2 arg3\nscript name: args.sh\nfirst arg: arg1\nsecond arg: arg2\nthird arg: arg3"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "yaml"
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.267,
+            0.86,
+            0.327
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Bash assigns the number of command-line arguments to the variable $# (this does not count the script name, $0, as an argument). This is useful for user-friendly messages (this uses a Bash if conditional, which we’ll cover in more depth in the next section):"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 4,
+          "bbox": [
+            0.171,
+            0.336,
+            0.718,
+            0.537
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 4,
+              "bbox": [
+                0.171,
+                0.336,
+                0.718,
+                0.537
+              ],
+              "content": "#!/bin/bash\n\nif [ \"\\$#\" -lt 3 ] # are there less than 3 arguments?\nthen\n    echo \"error: too few arguments, you provided \\$#, 3 required\"\n    echo \"usage: script.sh arg1 arg2 arg3\"\n    exit 1\nfi\n\necho \"script name: \\$0\"\necho \"first arg: \\$1\"\necho \"second arg: \\$2\"\necho \"third arg: \\$3\""
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "shell"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.545,
+            0.86,
+            0.603
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Running this with too few arguments gives an error (and leads the process to exit with a nonzero exit status—see “Exit Status: How to Programmatically Tell Whether Your Command Worked” on page 52 if you’re rusty on what exit statuses mean):"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 6,
+          "bbox": [
+            0.171,
+            0.612,
+            0.618,
+            0.66
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 6,
+              "bbox": [
+                0.171,
+                0.612,
+                0.618,
+                0.66
+              ],
+              "content": "$ ./script.sh some_arg\nerror: too few arguments, you provided 1, 3 required\nusage: script.sh arg1 arg2 arg3"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "asm"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.666,
+            0.86,
+            0.765
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "It’s possible to have more complex options and argument parsing with the Unix tool getopt. This is out of the scope of this book, but the manual entry for getopt is quite thorough. However, if you find your script requires numerous or complicated options, it might be easier to use Python instead of Bash. Python’s argparse module is much easier to use than getopt."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 8,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "400"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 9,
+          "bbox": [
+            0.201,
+            0.922,
+            0.695,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 12: Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 430,
+      "blocks": [
+        {
+          "type": "image",
+          "index": 0,
+          "bbox": [
+            0.167,
+            0.073,
+            0.255,
+            0.162
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 0,
+              "bbox": [
+                0.167,
+                0.073,
+                0.255,
+                0.162
+              ],
+              "image_path": "images/page_430_image_0.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.268,
+            0.079,
+            0.592,
+            0.098
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Reproducibility and Environmental Variables"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.266,
+            0.108,
+            0.788,
+            0.213
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Some bioinformaticians make use of environmental variables to store settings using the command export, but in general this makes scripts less portable and reproducible. Instead, all important settings should be stored inside the script as variables, rather than as external environmental variables. This way, the script is self-contained and reproducible."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.235,
+            0.862,
+            0.314
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Variables created in your Bash script will only be available for the duration of the Bash process running that script. For example, running a script that creates a variable with some_var=3 will not create some_var in your current shell, as the script runs in an entirely separate shell process."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.329,
+            0.585,
+            0.356
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Conditionals in a Bash Script: if Statements"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.363,
+            0.861,
+            0.44
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Like other scripting languages, Bash supports the standard if conditional statement. What makes Bash a bit unique is that a command’s exit status provides the true and false (remember: contrary to other languages, 0 represents true/success and anything else is false/failure). The basic syntax is:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 6,
+          "bbox": [
+            0.171,
+            0.447,
+            0.365,
+            0.541
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 6,
+              "bbox": [
+                0.171,
+                0.447,
+                0.365,
+                0.541
+              ],
+              "content": "if [commands] ①\nthen\n    [if-statements] ②\nelse\n    [else-statements] ③\nfi"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "list",
+          "index": 7,
+          "bbox": [
+            0.138,
+            0.558,
+            0.861,
+            0.771
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.138,
+                0.559,
+                0.861,
+                0.658
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "1 [commands] is a placeholder for any command, set of commands, pipeline, or test condition (which we’ll see later). If the exit status of these commands is 0, execution continues to the block after then; otherwise execution continues to the block after else. The then keyword can be placed on the same line as if, but then a semicolon is required: if [commands]; then."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 9,
+              "bbox": [
+                0.138,
+                0.674,
+                0.859,
+                0.713
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[if-statements] is a placeholder for all statements executed if [commands] evaluates to true (0)."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 10,
+              "bbox": [
+                0.138,
+                0.73,
+                0.859,
+                0.77
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "[else-statements] is a placeholder for all statements executed if [commands] evaluates to false (1). The else block is optional."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.137,
+            0.779,
+            0.862,
+            0.895
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Bash’s if condition statements may seem a bit odd compared to languages like Python, but remember: Bash is primarily designed to stitch together other commands. This is an advantage Bash has over Python when writing pipelines: Bash allows your scripts to directly work with command-line programs without requiring any overhead to call programs. Although it can be unpleasant to write complicated programs in Bash, writing simple programs is exceedingly easy because Unix tools"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 12,
+          "bbox": [
+            0.676,
+            0.923,
+            0.799,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Basic Bash Scripting"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 13,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "401"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 431,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.135,
+            0.08,
+            0.861,
+            0.138
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "and Bash harmonize well. For example, suppose we wanted to run a set of commands only if a file contains a certain string. Because grep returns 0 only if it matches a pattern in a file and 1 otherwise, we could use:"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "code",
+          "index": 1,
+          "bbox": [
+            0.171,
+            0.148,
+            0.566,
+            0.257
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 1,
+              "bbox": [
+                0.171,
+                0.148,
+                0.566,
+                0.257
+              ],
+              "content": "#!/bin/bash\n\nif grep \"pattern\" some_file.txt > /dev/null ①\nthen\n    # commands to run if \"pattern\" is found\n    echo \"found 'pattern' in 'some_file.txt\"\nfi"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "shell"
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.273,
+            0.861,
+            0.332
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This grep command is our condition statement. The redirection is to tidy the output of this script such that grep’s output is redirected to /dev/null and not to the script’s standard out."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.341,
+            0.861,
+            0.401
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The set of commands in an if condition can use all features of Unix we’ve mastered so far. For example, chaining commands with logical operators like && (logical AND) and || (logical OR):"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 4,
+          "bbox": [
+            0.171,
+            0.41,
+            0.685,
+            0.518
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 4,
+              "bbox": [
+                0.171,
+                0.41,
+                0.685,
+                0.518
+              ],
+              "content": "#!/bin/bash\n\nif grep \"pattern\" file_1.txt > /dev/null &&\n    grep \"pattern\" file_2.txt > /dev/null\nthen\n    echo \"found 'pattern' in 'file_1.txt' and in 'file_2.txt'\"\nfi"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "shell"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.138,
+            0.528,
+            0.573,
+            0.546
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We can also negate our program’s exit status with !:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 6,
+          "bbox": [
+            0.171,
+            0.557,
+            0.591,
+            0.648
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 6,
+              "bbox": [
+                0.171,
+                0.557,
+                0.591,
+                0.648
+              ],
+              "content": "#!/bin/bash\n\nif ! grep \"pattern\" some_file.txt > /dev/null\nthen\n  echo \"did not find 'pattern' in 'some_file.txt\"\nfi"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "shell"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.658,
+            0.862,
+            0.794
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Finally, it’s possible to use pipelines in if condition statements. Note, however, that the behavior depends on set -o pipefail. If pipefail is set, any nonzero exit status in a pipe in your condition statement will cause execution to continue on, skipping the if-statements section (and going on to the else block if it exists). However, if pipefail is not set, only the exit status of the last command is considered. Rather than trying to remember all of these rules, just use the robust header provided earlier —pipefail is a more sensible default."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.137,
+            0.805,
+            0.861,
+            0.884
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The final component necessary to understand Bash’s if statements is the test command. Like other programs, test exits with either 0 or 1. However test’s exit status indicates the return value of the test specified through its arguments, rather than exit success or error. test supports numerous standard comparison operators (whether"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 9,
+          "bbox": [
+            0.139,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "402"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 10,
+          "bbox": [
+            0.201,
+            0.922,
+            0.695,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 12: Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}

@@ -1,0 +1,2062 @@
+{
+  "pages": [
+    {
+      "page_idx": 432,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.08,
+            0.861,
+            0.18
+          ],
+          "content": "two strings are equal, whether two integers are equal, whether one integer is greater than or equal to another, etc.). Bash can’t rely on familiar syntax such as > for “greater than,” as this is used for redirection: instead, test has its own syntax (see Table 12-1 for a full list). You can get a sense of how test works by playing with it directly on the command line (using ; echo \"\\$?\" to print the exit status):"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.188,
+            0.449,
+            0.311
+          ],
+          "sub_type": "code",
+          "content": "```shell\n$ test \"ATG\" = \"ATG\" ; echo \"\\$?\"\n0\n$ test \"ATG\" = \"atg\" ; echo \"\\$?\"\n1\n$ test 3 -lt 1 ; echo \"\\$?\"\n1\n$ test 3 -le 3 ; echo \"\\$?\"\n0\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.141,
+            0.355,
+            0.716,
+            0.688
+          ],
+          "content": "| String/integer | Description |\n| --- | --- |\n| -z str | String str is null (empty) |\n| str1 = str2 | Strings str1 and str2 are identical |\n| str1 != str2 | Strings str1 and str2 are different |\n| int1 -eq int2 | Integers int1 and int2 are equal |\n| int1 -ne int2 | Integers int1 and int2 are not equal |\n| int1 -lt int2 | Integer int1 is less than int2 |\n| int1 -gt int2 | Integer int1 is greater than int2 |\n| int1 -le int2 | Integer int1 is less than or equal to int2 |\n| int1 -ge int2 | Integer int1 is greater than or equal to int2 |",
+          "captions": [
+            {
+              "bbox": [
+                0.14,
+                0.331,
+                0.544,
+                0.35
+              ],
+              "content": "Table 12-1. String and integer comparison operators"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_432_table_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.704,
+            0.861,
+            0.801
+          ],
+          "content": "In practice, the most common conditions you’ll be checking aren’t whether some integer is less than another, but rather checking to see if files or directories exist and whether you can write to them. test supports numerous file- and directory-related test operations (the few that are most useful in bioinformatics are in Table 12-2). Let’s look at a few basic command-line examples:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.81,
+            0.668,
+            0.888
+          ],
+          "sub_type": "code",
+          "content": "```shell\n$ test -d some_directory ; echo $? # is this a directory?\n0\n$ test -f some_file.txt ; echo $? # is this a file?\n0\n$ test -r some_file.txt ; echo $? $ is this file readable?\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.677,
+            0.923,
+            0.799,
+            0.94
+          ],
+          "content": "Basic Bash Scripting"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "403"
+        }
+      ]
+    },
+    {
+      "page_idx": 433,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.082,
+            0.666,
+            0.126
+          ],
+          "sub_type": "code",
+          "content": "```tcl\n$ test -w some_file.txt ; echo $? $ is this file writable?\n1\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.141,
+            0.169,
+            0.716,
+            0.434
+          ],
+          "content": "| File/directory expression | Description |\n| --- | --- |\n| -d dir | dir is a directory |\n| -f file | file is a file |\n| -e file | file exists |\n| -h link | link is a link |\n| -r file | file is readable |\n| -w file | file is writable |\n| -x file | file is executable (or accessible if argument is expression) |",
+          "captions": [
+            {
+              "bbox": [
+                0.14,
+                0.146,
+                0.492,
+                0.165
+              ],
+              "content": "Table 12-2. File and directory test expressions"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_433_table_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.451,
+            0.839,
+            0.471
+          ],
+          "content": "Combining test with if statements is simple; test is a command, so we could use:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.48,
+            0.38,
+            0.541
+          ],
+          "sub_type": "code",
+          "content": "```shell\nif test -f some_file.txt\nthen\n  [...] \nfi\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.551,
+            0.86,
+            0.611
+          ],
+          "content": "However, Bash provides a simpler syntactic alternative to test statements: [ -f some\\_file.txt ] . Note the spaces around and within the brackets—these are required. This makes for much simpler if statements involving comparisons:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.619,
+            0.372,
+            0.68
+          ],
+          "sub_type": "code",
+          "content": "```shell\nif [ -f some_file.txt ]\nthen\n  [...] \nfi\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.691,
+            0.86,
+            0.786
+          ],
+          "content": "When using this syntax, we can chain test expressions with -a as logical AND, -o as logical OR, ! as negation, and parentheses to group statements. Our familiar && and || operators won’t work in test, because these are shell operators. As an example, suppose we want to ensure our script has enough arguments and that the input file is readable:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.797,
+            0.432,
+            0.892
+          ],
+          "sub_type": "code",
+          "content": "```shell\n#!/bin/bash\nset -e\nset -u\nset -o pipefail\n\nif [ \"$#\" -ne 1 -o ! -r \"$1\" ]\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "404"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.695,
+            0.94
+          ],
+          "content": "Chapter 12: Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks"
+        }
+      ]
+    },
+    {
+      "page_idx": 434,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.172,
+            0.082,
+            0.506,
+            0.142
+          ],
+          "sub_type": "code",
+          "content": "```shell\nthen\n    echo \"usage: script.sh file_in.txt\"\n    exit 1\nfi\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.151,
+            0.859,
+            0.19
+          ],
+          "content": "As discussed earlier, we quote variables (especially those from human input); this is a good practice and prevents issues with special characters."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.2,
+            0.861,
+            0.318
+          ],
+          "content": "When chained together with -a or -e, test’s syntax uses short-circuit evaluation. This means that test will only evaluate as many expressions as needed to determine whether the entire statement is true or false. In this example, test won’t check if the file argument \\$1 is readable if there’s not exactly one argument provided (the first condition is true). These two expressions are combined with a logical OR, which only requires one expression to be true for the entire condition to be true."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.333,
+            0.719,
+            0.361
+          ],
+          "level": 2,
+          "content": "Processing Files with Bash Using for Loops and Globbing"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.366,
+            0.86,
+            0.499
+          ],
+          "content": "In bioinformatics, most of our data is split across multiple files (e.g., different treatments, replicates, genotypes, species, etc.). At the heart of any processing pipeline is some way to apply the same workflow to each of these files, taking care to keep track of sample names. Looping over files with Bash’s for loop is the simplest way to accomplish this. This is such an important part of bioinformatics processing pipelines that we’ll cover additional useful tools and methods in the next section of this chapter."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.509,
+            0.768,
+            0.529
+          ],
+          "content": "There are three essential parts to creating a pipeline to process a set of files:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.155,
+            0.544,
+            0.629,
+            0.613
+          ],
+          "sub_type": "text",
+          "content": "• Selecting which files to apply the commands to\n• Looping over the data and applying the commands\n• Keeping track of the names of any output files created"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.628,
+            0.859,
+            0.667
+          ],
+          "content": "There are different computational tricks to achieve each of these tasks. Let’s first look at the simple ways to select which files to apply commands to."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.675,
+            0.86,
+            0.828
+          ],
+          "content": "There are two common ways to select which files to apply a bioinformatics workflow to: approaches that start with a text file containing information about samples (their sample names, file path, etc.), and approaches that select files in directories using some criteria. Either approach is fine—it mostly comes down to what’s most efficient for a given task. We’ll first look at an approach that starts with sample names and return to how to look for files later. Suppose you have a file called samples.txt that tells you basic information about your raw data: sample name, read pair, and where the file is. Here’s an example (which is also in this chapter’s directory on GitHub):"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.837,
+            0.44,
+            0.884
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ cat samples.txt\nzmaysA R1 seq/zmaysA_R1.fastq\nzmaysA R2 seq/zmaysA_R2.fastq\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.677,
+            0.923,
+            0.799,
+            0.94
+          ],
+          "content": "Basic Bash Scripting"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "405"
+        }
+      ]
+    },
+    {
+      "page_idx": 435,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.081,
+            0.44,
+            0.144
+          ],
+          "sub_type": "code",
+          "content": "```txt\nzmaysB R1 seq/zmaysB_R1.fastq\nzmaysB R2 seq/zmaysB_R2.fastq\nzmaysC R1 seq/zmaysC_R1.fastq\nzmaysC R2 seq/zmaysC_R2.fastq\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.151,
+            0.861,
+            0.266
+          ],
+          "content": "The first column gives sample names, the second column contains read pairs, and the last column contains the path to the FASTQ file for this sample/read pair combination. The first two columns are called metadata (data about data), which is vital to relating sample information to their physical files. Note that the metadata is also in the filename itself, which is useful because it allows us to extract it from the filename if we need to."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.274,
+            0.861,
+            0.409
+          ],
+          "content": "With this samples.txt file, the first step of creating the pipeline is complete: all information about our files to be processed, including their path, is available. The second and third steps are to loop over this data, and do so in a way that keeps the samples straight. How we accomplish this depends on the specific task. If your command takes a single file and returns a single file, the solution is trivial: files are the unit we are processing. We simply loop over each file and use a modified version of that file’s name for the output."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.417,
+            0.861,
+            0.553
+          ],
+          "content": "Let’s look at an example: suppose that we want to loop over every file, gather quality statistics on each and every file (using the imaginary program fastq\\_stat), and save this information to an output file. Each output file should have a name based on the input file, so if a summary file indicates something is wrong we know which file was affected. There’s a lot of little parts to this, so we’re going to step through how to do this a piece at a time learning about Bash arrays, basename, and a few other shell tricks along the way."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.561,
+            0.859,
+            0.601
+          ],
+          "content": "First, we load our filenames into a Bash array, which we can then loop over. Bash arrays can be created manually using:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.609,
+            0.489,
+            0.626
+          ],
+          "sub_type": "code",
+          "content": "```txt\n\\$ sample_names=(zmaysA zmaysB zmaysC)\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.633,
+            0.79,
+            0.652
+          ],
+          "content": "And specific elements can be extracted with (note Bash arrays are 0-indexed):"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.661,
+            0.388,
+            0.724
+          ],
+          "sub_type": "code",
+          "content": "```shell\n$ echo ${sample_names[0]}\nzmaysA\n$ echo ${sample_names[2]}\nzmaysC\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.733,
+            0.755,
+            0.752
+          ],
+          "content": "All elements are extracted with the cryptic-looking \\${sample\\_files[@]}:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.761,
+            0.388,
+            0.793
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ echo ${sample_names[@]}\nzmaysA zmaysB zmaysC\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.801,
+            0.859,
+            0.84
+          ],
+          "content": "You can also access how many elements are in the array (and each element’s index) with the following:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.172,
+            0.848,
+            0.396,
+            0.879
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ echo ${#sample_names[@]}\n3\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "406"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.695,
+            0.94
+          ],
+          "content": "Chapter 12: Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks"
+        }
+      ]
+    },
+    {
+      "page_idx": 436,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.081,
+            0.395,
+            0.11
+          ],
+          "sub_type": "code",
+          "content": "```shell\n$ echo ${!sample_names[@]}\n0 1 2\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.121,
+            0.861,
+            0.237
+          ],
+          "content": "But creating Bash arrays by hand is tedious and error prone, especially because we already have our filenames in our sample.txt file. The beauty of Bash is that we can use a command substitution (discussed in “Command Substitution” on page 54) to construct Bash arrays (though this can be dangerous; see the following warning). Because we want to loop over each file, we need to extract the third column using cut -f 3 from samples.txt. Demonstrating this in the shell:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.246,
+            0.677,
+            0.309
+          ],
+          "sub_type": "code",
+          "content": "```shell\n$ sample_files=$($(cut -f 3 samples.txt))\n$ echo ${sample_files[@]}\nseq/zmaysA_R1.fastq seq/zmaysA_R2.fastq seq/zmaysB_R1.fastq\nseq/zmaysB_R2.fastq seq/zmaysC_R1.fastq seq/zmaysC_R2.fastq\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.317,
+            0.859,
+            0.376
+          ],
+          "content": "Again, this only works if you can make strong assumptions about your filenames— namely that they only contain alphanumeric characters, (\\_), and (-)! If spaces, tabs, newlines, or special characters like \\* end up in filenames, it will break this approach."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.164,
+            0.398,
+            0.264,
+            0.473
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_436_image_4.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.267,
+            0.396,
+            0.696,
+            0.416
+          ],
+          "level": 2,
+          "content": "The Internal Field Separator, Word Splitting, and Filenames"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.424,
+            0.789,
+            0.532
+          ],
+          "content": "When creating a Bash array through command substitution with sample\\_files=(\\$(cut -f 3 samples.txt)), Bash uses word splitting to split fields into array elements by splitting on the characters in the Internal Field Separator (IFS). The Internal Field Separator is stored in the Bash variable IFS, and by default includes spaces, tabs, and newlines. You can inspect the value of IFS with:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.3,
+            0.538,
+            0.457,
+            0.57
+          ],
+          "sub_type": "code",
+          "content": "```txt\n\\$ printf %q \"\\$IFS\"\n\\$' \\t\\n'\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.575,
+            0.789,
+            0.753
+          ],
+          "content": "Note that space is included in IFS (the first character). This can introduce problems when filenames contain spaces, as Bash will split on space characters breaking the filename into parts. Again, the best way to avoid issues is to not use spaces, tabs, newlines, or special characters (e.g., \\*) in filenames—only use alphanumeric characters, (-), and (\\_). The techniques taught in this section assume files are properly named and are not robust against improperly named files. If spaces are present in filenames, you can set the value of IFS to just tabs and newlines; see this chapter’s README file on GitHub for additional details on this topic."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.774,
+            0.86,
+            0.854
+          ],
+          "content": "With our filenames in a Bash array, we’re almost ready to loop over them. The last component is to strip the path and extension from each filename, leaving us with the most basic filename we can use to create an output filename. The Unix program base name strips paths from filenames:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.863,
+            0.439,
+            0.894
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ basename seqs/zmaysA_R1.fastq\nzmaysA_R1.fastq\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.677,
+            0.923,
+            0.798,
+            0.939
+          ],
+          "content": "Basic Bash Scripting"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "407"
+        }
+      ]
+    },
+    {
+      "page_idx": 437,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.082,
+            0.861,
+            0.121
+          ],
+          "content": "basename can also strip a suffix (e.g., extension) provided as the second argument from a filename (or alternatively using the argument -s):"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.13,
+            0.524,
+            0.193
+          ],
+          "sub_type": "code",
+          "content": "```shell\n$ basename seqs/zmaysA_R1.fastq .fastq\nzmaysA_R1\n$ basename -s .fastq seqs/zmaysA_R1.fastq\nzmaysA_R1\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.201,
+            0.859,
+            0.24
+          ],
+          "content": "We use basename to return the essential part of each filename, which is then used to create output filenames for fastq\\_stat’s results."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.25,
+            0.669,
+            0.268
+          ],
+          "content": "Now, all the pieces are ready to construct our processing script:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.278,
+            0.763,
+            0.633
+          ],
+          "sub_type": "code",
+          "content": "```shell\n#!/bin/bash\n\nset -e\nset -u\nset -o pipefail\n\n# specify the input samples file, where the third\n# column is the path to each sample FASTQ file\nsample_info=samples.txt\n\n# create a Bash array from the third column of $sample_info\nsample_files=$(cut -f 3 \"$sample_info\")) ①\n\nfor fastq_file in ${sample_files[@]} ②\ndo\n    # strip .fastq from each FASTQ file, and add suffix\n    # \"-stats.txt\" to create an output filename for each FASTQ file\n    results_file=\"$(basename $fastq_file .fastq)-stats.txt\" ③\n\n    # run fastq_stat on a file, writing results to the filename we've\n    # above\n    fastq_stat $fastq_file > stats/$results_file ④\ndone\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.138,
+            0.649,
+            0.861,
+            0.86
+          ],
+          "sub_type": "text",
+          "content": "1 This line uses command substitution to create a Bash array containing all FASTQ files. Note that this uses the filename contained in the variable \\$sample\\_info, which can later be easily be changed if the pipeline is to be run on a different set of samples.\nNext, we loop through each sample filename using a Bash for loop. The expression \\${sample\\_files[@]} returns all items in the Bash array.\nThis important line creates the output filename, using the input file’s filename. The command substitution \\$(basename \\$fastq\\_file .fastq) takes the current filename of the iteration, stored in \\$fastq\\_file, and strips the .fastq extension"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "408"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.695,
+            0.94
+          ],
+          "content": "Chapter 12: Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks"
+        }
+      ]
+    },
+    {
+      "page_idx": 438,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.172,
+            0.08,
+            0.859,
+            0.119
+          ],
+          "continues_prev": true,
+          "content": "off. What’s left is the portion of the sample name that identifies the original file, to which the suffix -stats.txt is added."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.136,
+            0.859,
+            0.178
+          ],
+          "content": "Finally, the command fastq\\_stat is run, using the filename of the current iteration as input, and writing results to stats/\\$results\\_file."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.185,
+            0.861,
+            0.245
+          ],
+          "content": "That’s all there is to it. A more refined script might add a few extra features, such as using an if statement to provide a friendly error if a FASTQ file does not exist or a call to echo to report which sample is currently being processed."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.253,
+            0.861,
+            0.483
+          ],
+          "content": "This script was easy to write because our processing steps took a single file as input, and created a single file as output. In this case, simply adding a suffix to each filename was enough to keep our samples straight. However, many bioinformatics pipelines combine two or more input files into a single output file. Aligning paired-end reads is a prime example: most aligners take two input FASTQ files and return one output alignment file. When writing scripts to align paired-end reads, we can’t loop over each file like we did earlier. Instead, each sample, rather than each file, is the processing unit. Our alignment step takes both FASTQ files for each sample, and turns this into a single alignment file for this sample. Consequently, our loop must iterate over unique sample names, and we use these sample names to re-create the input FASTQ files used in alignment. This will be clearer in an example; suppose that we use the aligner BWA and our genome reference is named zmays\\_AGPv3.20.fa:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.169,
+            0.491,
+            0.729,
+            0.864
+          ],
+          "sub_type": "code",
+          "content": "```shell\n#!/bin/bash\nset -e\nset -u\nset -o pipefail\n\n# specify the input samples file, where the third\n# column is the path to each sample FASTQ file\nsample_info=samples.txt\n\n# our reference\nreference=zmays_AGPv3.20.fa\n\n# create a Bash array from the first column, which are\n# sample names. Because there are duplicate sample names\n# (one for each read pair), we call uniq\nsample_names=$(cut -f 1 \"$sample_info\" | uniq)) ①\n\nfor sample in ${sample_names[@]}\ndo\n    # create an output file from the sample name\n    results_file=\"${sample}.sam\" ②\n    bwa mem $reference ${sample}_R1.fastq ${sample}_R2.fastq \\ ③\n    > $results_file\ndone\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.677,
+            0.923,
+            0.799,
+            0.94
+          ],
+          "content": "Basic Bash Scripting"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.859,
+            0.937
+          ],
+          "content": "409"
+        }
+      ]
+    },
+    {
+      "page_idx": 439,
+      "blocks": [
+        {
+          "type": "list",
+          "bbox": [
+            0.137,
+            0.086,
+            0.861,
+            0.392
+          ],
+          "sub_type": "text",
+          "content": "This is much like the previous example, except now we use cut to grab the first column (corresponding to sample names), and (most importantly) pipe these sample names to uniq so duplicates of the same sample name are removed. This is necessary because our first column repeats each sample name twice, once for each paired-end file.\nAs before, we create an output filename for the current sample being iterated over. In this case, all that’s needed is the sample name stored in \\$sample.\n3 Our call to bwa provides the reference, and the two paired-end FASTQ files for this sample as input. Note how we can re-create the two input FASTQ files for a given sample name, as the naming of these files across samples is consistent. In practice, this is possible for a large amount of bioinformatics data, which often comes from machines that name files consistently. Finally, the output of bwa is redirected to \\$results\\_file. For clarity, I’ve omitted quoting variables in this command, but you may wish to add this."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.401,
+            0.861,
+            0.497
+          ],
+          "content": "Finally, in some cases it might be easier to directly loop over files, rather than working a file containing sample information like samples.txt. The easiest (and safest) way to do this is to use Bash’s wildcards to glob files to loop over (recall we covered globbing in “Organizing Data to Automate File Processing Tasks” on page 26). The syntax of this is quite easy:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.506,
+            0.685,
+            0.645
+          ],
+          "sub_type": "code",
+          "content": "```shell\n#!/bin/bash\nset -e\nset -u\nset -o pipefail\n\nfor file in *.fastq\ndo\n    echo \"$file: \" $(bioawk -c fastx 'END {print NR}' $file)\ndone\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.654,
+            0.859,
+            0.694
+          ],
+          "content": "This simple script uses bioawk to count how many FASTQ records are in a file, for each file in the current directory ending in .fastq."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.701,
+            0.861,
+            0.837
+          ],
+          "content": "Bash’s loops are a handy way of applying commands to numerous files, but have a few downsides. First, compared to the Unix tool find (which we see in the next section), globbing is not a very powerful way to select certain files. Second, Bash’s loop syntax is lengthy for simple operations, and a bit archaic. Finally, there’s no easy way to parallelize Bash loops in a way that constrains the number of subprocesses used. We’ll see a powerful file-processing Unix idiom in the next section that works better for some tasks where Bash scripts may not be optimal."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "410"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.695,
+            0.94
+          ],
+          "content": "Chapter 12: Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks"
+        }
+      ]
+    },
+    {
+      "page_idx": 440,
+      "blocks": [
+        {
+          "type": "doc_title",
+          "bbox": [
+            0.137,
+            0.079,
+            0.728,
+            0.109
+          ],
+          "level": 1,
+          "content": "Automating File-Processing with find and xargs"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.118,
+            0.861,
+            0.178
+          ],
+          "content": "In this section, we’ll learn about a more powerful way to specify files matching some criteria using Unix find. We’ll also see how files printed by find can be passed to another tool called xargs to create powerful Unix-based processing workflows."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.194,
+            0.355,
+            0.219
+          ],
+          "level": 2,
+          "content": "Using find and xargs"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.227,
+            0.861,
+            0.305
+          ],
+          "content": "First, let’s look at some common shell problems that find and xargs solve. Suppose you have a program named process\\_fq that takes multiple filenames through standard in to process. If you wanted to run this program on all files with the suffix .fq, you might run:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.314,
+            0.574,
+            0.361
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ ls *.fq\ntreatment-01.fq treatment 02.fq treatment-03.fq\n$ ls *.fq | process_fq\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.37,
+            0.86,
+            0.563
+          ],
+          "content": "Your shell expands this wildcard to all matching files in the current directory, and ls prints these filenames. Unfortunately, this leads to a common complication that makes ls and wildcards a fragile solution. Suppose your directory contains a filename called treatment 02.fq. In this case, ls returns treatment 02.fq along with other files. However, because files are separated by spaces, and this file contains a space, process\\_fq will interpret treatment 02.fq as two separate files, named treatment and 02.fq. This problem crops up periodically in different ways, and it’s necessary to be aware of when writing file-processing pipelines. Note that this does not occur with file globbing in arguments—if process\\_fq takes multiple files as arguments, your shell handles this properly:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.574,
+            0.321,
+            0.59
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ process_fq *.fq\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.598,
+            0.86,
+            0.734
+          ],
+          "content": "Here, your shell automatically escapes the space in the filename treatment 02.fq, so process\\_fq will correctly receive the arguments treatment-01.fq, treatment 02.fq, treatment-03.fq. So why not use this approach? Alas, there’s a limit to the number of files that can be specified as arguments. It’s not unlikely to run into this limit when processing numerous files. As an example, suppose that you have a tmp/ directory with thousands and thousands of temporary files you want to remove before rerunning a script. You might try rm tmp/\\*, but you’ll run into a problem:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.744,
+            0.581,
+            0.774
+          ],
+          "sub_type": "code",
+          "content": "```txt\n\\$ rm tmp/*\n/bin/rm: cannot execute [Argument list too long]\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.782,
+            0.86,
+            0.859
+          ],
+          "content": "New bioinformaticians regularly encounter these two problems (personally, I am asked how to resolve these issues at least once every other month by various colleagues). The solution to both of these problems is through find and xargs, as we will see in the following sections."
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.514,
+            0.923,
+            0.798,
+            0.939
+          ],
+          "content": "Automating File-Processing with find and xargs"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.832,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "411"
+        }
+      ]
+    },
+    {
+      "page_idx": 441,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.142,
+            0.079,
+            0.371,
+            0.105
+          ],
+          "level": 2,
+          "content": "Finding Files with find"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.113,
+            0.861,
+            0.229
+          ],
+          "content": "Unlike ls, find is recursive (it will search for matching files in subdirectories, and subdirectories of subdirectories, etc.). This makes find useful if your project directory is deeply nested and you wish to search the entire project for a file. In fact, running find on a directory (without other arguments) can be a quick way to see a project directory’s structure. Again, using the zmays-snps/ toy directory we created in “Organizing Data to Automate File Processing Tasks” on page 26:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.239,
+            0.482,
+            0.425
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ find zmays-snps\nzmays-snps\nzmays-snps/analysis\nzmays-snps/data\nzmays-snps/data/seqs\nzmays-snps/data/seqs/zmaysA_R1.fastq\nzmays-snps/data/seqs/zmaysA_R2.fastq\nzmays-snps/data/seqs/zmaysB_R1.fastq\nzmays-snps/data/seqs/zmaysB_R2.fastq\nzmays-snps/data/seqs/zmaysC_R1.fastq\nzmays-snps/data/seqs/zmaysC_R2.fastq\nzmays-snps/scripts\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.433,
+            0.86,
+            0.511
+          ],
+          "content": "find’s recursive searching can be limited to search only a few directories deep with the argument -maxdepth. For example, to search only within the current directory, use -maxdepth 1; to search within the current directory and its subdirectories (but not within those subdirectories), use -maxdepth 2."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.522,
+            0.86,
+            0.698
+          ],
+          "content": "The basic syntax for find is find path expression. Here, path specifies which directory find is to search for files in (if you’re currently in this directory, it’s simply find .). The expression part of find’s syntax is where find’s real power comes in. Expressions are how we describe which files we want to find return. Expressions are built from predicates, which are chained together by logical AND and OR operators. find only returns files when the expression evaluates to true. Through expressions, find can match files based on conditions such as creation time or the permissions of the file, as well as advanced combinations of these conditions, such as “find all files created after last week that have read-only permissions.”"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.708,
+            0.86,
+            0.846
+          ],
+          "content": "To get a taste of how simple predicates work, let’s see how to use find to match files by filename using the -name predicate. Earlier we used unquoted wildcards with ls, which are expanded by the shell to all matching filenames. With find, we quote patterns (much like we did with grep) to avoid our shells from interpreting characters like \\*. For example, suppose we want to find all files matching the pattern \"zmaysB\\*fastq\" (e.g., FASTQ files from sample “B”, both read pairs) to pass to a pipeline. We would use the command shown in Example 12-1:"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "412"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.695,
+            0.939
+          ],
+          "content": "Chapter 12: Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks"
+        }
+      ]
+    },
+    {
+      "page_idx": 442,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.139,
+            0.079,
+            0.529,
+            0.099
+          ],
+          "level": 2,
+          "content": "Example 12-1. Find through filename matching"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.138,
+            0.111,
+            0.455,
+            0.16
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ find data/seqs -name \"zmaysB*fastq\"\ndata/seqs/zmaysB_R1.fastq\ndata/seqs/zmaysB_R2.fastq\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.173,
+            0.859,
+            0.213
+          ],
+          "content": "This gives similar results to ls zmaysB\\*fastq, as we’d expect. The primary difference is that find reports results separated by newlines and, by default, find is recursive."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.228,
+            0.326,
+            0.254
+          ],
+          "level": 2,
+          "content": "find’s Expressions"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.263,
+            0.86,
+            0.36
+          ],
+          "content": "find’s expressions allow you to narrow down on specific files using a simple syntax. In the previous example, the find command (Example 12-1) would return directories also matching the pattern \"zmaysB\\*fastq\". Because we only want to return FASTQ files (and not directories with that matching name), we might want to limit our results using the -type option:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.37,
+            0.559,
+            0.418
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ find data/seqs -name \"zmaysB*fastq\" -type f\ndata/seqs/zmaysB_R1.fastq\ndata/seqs/zmaysB_R2.fastq\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.425,
+            0.859,
+            0.482
+          ],
+          "content": "There are numerous different types you can search for (e.g., files, directories, named pipes, links, etc.), but the most commonly used are f for files, d for directories, and l for links."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.492,
+            0.86,
+            0.572
+          ],
+          "content": "By default, find connects different parts of an expression with logical AND. The find command in this case returns results where the name matches \"zmaysB\\*fastq\" and is a file (type “f ”). find also allows explicitly connecting different parts of an expression with different operators. The preceding command is equivalent to:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.581,
+            0.601,
+            0.628
+          ],
+          "sub_type": "code",
+          "content": "```shell\n$ find data/seqs -name \"zmaysB*fastq\" -and -type f\ndata/seqs/zmaysB_R1.fastq\ndata/seqs/zmaysB_R2.fastq\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.635,
+            0.859,
+            0.674
+          ],
+          "content": "We might also want all FASTQ files from samples A or C. In this case, we’d want to chain expressions with another operator, -or (see Table 12-3 for a full list):"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.684,
+            0.769,
+            0.763
+          ],
+          "sub_type": "code",
+          "content": "```shell\n$ find data/seqs -name \"zmaysA*fastq\" -or -name \"zmaysC*fastq\" -type f\ndata/seqs/zmaysA_R1.fastq\ndata/seqs/zmaysA_R2.fastq\ndata/seqs/zmaysC_R1.fastq\ndata/seqs/zmaysC_R2.fastq\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.141,
+            0.803,
+            0.716,
+            0.87
+          ],
+          "content": "| Operator/expression | Description |\n| --- | --- |\n| -name | Match a filename to, using the same special characters (*,?, and [...] as Bash) |",
+          "captions": [
+            {
+              "bbox": [
+                0.14,
+                0.779,
+                0.544,
+                0.798
+              ],
+              "content": "Table 12-3. Common find expressions and operators"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_442_table_12.jpg"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.515,
+            0.923,
+            0.798,
+            0.94
+          ],
+          "content": "Automating File-Processing with find and xargs"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "413"
+        }
+      ]
+    },
+    {
+      "page_idx": 443,
+      "blocks": [
+        {
+          "type": "table",
+          "bbox": [
+            0.141,
+            0.079,
+            0.716,
+            0.564
+          ],
+          "continues_prev": true,
+          "content": "| Operator/expression | Description |\n| --- | --- |\n| -iname | Identical to -name, but is case insensitive |\n| -empty | Matches empty files or directories |\n| -type | Matches types x (f for files, d for directories, l for links) |\n| -size | Matches files where theis the file size (shortcuts for kilobytes (k), megabytes (M), gigabytes (G), and terabytes (T) can be used); sizes preceded with + (e.g., +50M) match files at least this size; sizes preceded with - (e.g., -50M) match files at most this size |\n| -regex | Match by regular expression (extended regular expressions can be enabled with -E) |\n| -iregex | Identical to -regex, but is case insensitive |\n| -print0 | Separate results with null byte, not newline |\n| expr -and expr | Logical “and” |\n| expr -or expr | Logical “or” |\n| -not/“!”expr | Negation |\n| (expr) | Group a set of expressions |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_443_table_0.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.581,
+            0.585,
+            0.601
+          ],
+          "content": "An identical way to select these files is with negation:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.609,
+            0.549,
+            0.689
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ find seqs -type f \"!\" -name \"zmaysC*fastq\"\nseqs/zmaysA_R1.fastq\nseqs/zmaysA_R2.fastq\nseqs/zmaysB_R1.fastq\nseqs/zmaysB_R2.fastq\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.696,
+            0.861,
+            0.755
+          ],
+          "content": "Let’s see one more advanced example. Suppose that a messy collaborator decided to create a file named zmaysB\\_R1-temp.fastq in seqs/. You notice this file because now your find command is matching it (we are still in the zmays/data directory):"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.763,
+            0.549,
+            0.873
+          ],
+          "sub_type": "code",
+          "content": "```txt\n\\$ touch seqs/zmaysB_R1-temp.fastq\n\\$ find seqs -type f \"!\" -name \"zmaysC*fastq\"\nseqs/zmaysB_R1-temp.fastq\nseqs/zmaysA_R1.fastq\nseqs/zmaysA_R2.fastq\nseqs/zmaysB_R1.fastq\nseqs/zmaysB_R2.fastq\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "414"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.695,
+            0.94
+          ],
+          "content": "Chapter 12: Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks"
+        }
+      ]
+    },
+    {
+      "page_idx": 444,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.08,
+            0.861,
+            0.158
+          ],
+          "content": "You don’t want to delete his file or rename it, because your collaborator may need that file and/or rely on it having that specific name. So, the best way to deal with it seems to be to change your find command and talk to your collaborator about this mystery file later. Luckily, find allows this sort of advanced file querying:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.168,
+            0.758,
+            0.247
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ find seqs -type f \"!\" -name \"zmaysC*fastq\" -and \"!\" -name \"*-temp*\"\nseqs/zmaysA_R1.fastq\nseqs/zmaysA_R2.fastq\nseqs/zmaysB_R1.fastq\nseqs/zmaysB_R2.fastq\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.254,
+            0.859,
+            0.293
+          ],
+          "content": "Note that find’s operators like !, (, and ) should be quoted so as to avoid your shell from interpreting these."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.309,
+            0.651,
+            0.334
+          ],
+          "level": 2,
+          "content": "find’s -exec: Running Commands on find’s Results"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.343,
+            0.86,
+            0.442
+          ],
+          "content": "While find is useful for locating a file, its real strength in bioinformatics is as a tool to programmatically access certain files you want to run a command on. In the previous section, we saw how find’s expressions allow you to select distinct files that match certain conditions. In this section, we’ll see how find allows you to run commands on each of the files find returns, using find’s -exec option."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.451,
+            0.86,
+            0.508
+          ],
+          "content": "Let’s look at a simple example to understand how -exec works. Continuing from our last example, suppose that a messy collaborator created numerous temporary files. Let’s emulate this (in the zmays-snps/data/seqs directory):"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.518,
+            0.701,
+            0.612
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ touch zmays{A,C}_R{1,2}-temp.fastq\n$ ls\nzmaysA_R1-temp.fastq zmaysB_R1-temp.fastq zmaysC_R1.fastq\nzmaysA_R1.fastq     zmaysB_R1.fastq     zmaysC_R2-temp.fastq\nzmaysA_R2-temp.fastq zmaysB_R2.fastq     zmaysC_R2.fastq\nzmaysA_R2.fastq      zmaysC_R1-temp.fastq\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.619,
+            0.86,
+            0.738
+          ],
+          "content": "Suppose your collaborator allows you to delete all of these temporary files. One way to delete these files is with rm \\*-temp.fastq. However, rm with a wildcard in a direc tory filled with important data files is too risky. If you’ve accidentally left a space between \\* and -temp.fastq, the wildcard \\* would match all files in the current directory and pass them to rm, leading to everything in the directory being accidentally deleted. Using find’s -exec is a much safer way to delete these files."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.747,
+            0.861,
+            0.863
+          ],
+          "content": "find’s -exec works by passing each file that matches find’s expressions to the command specified by -exec. With -exec, it’s necessary to use a semicolon at the end of the command to indicate the end of your command. For example, let’s use find - exec and rm -i to delete these temporary files. rm’s -i forces rm to be interactive, prompting you to confirm that you want to delete a file. Our find and remove command is:"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.514,
+            0.923,
+            0.798,
+            0.939
+          ],
+          "content": "Automating File-Processing with find and xargs"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "415"
+        }
+      ]
+    },
+    {
+      "page_idx": 445,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.081,
+            0.574,
+            0.175
+          ],
+          "sub_type": "code",
+          "content": "```shell\n$ find . -name \"*.-temp.fastq\" -exec rm -i {} \\;\nremove ./zmaysA_R1-temp.fastq? y\nremove ./zmaysA_R2-temp.fastq? y\nremove ./zmaysB_R1-temp.fastq? y\nremove ./zmaysC_R1-temp.fastq? y\nremove ./zmaysC_R2-temp.fastq? y\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.182,
+            0.862,
+            0.28
+          ],
+          "content": "In one line, we’re able to pragmatically identify and execute a command on files that match a certain pattern. Our command was rm but can just as easily be a bioinformatics program. Using this approach allows you to call a program on any number of files in a directory. With find and -exec, a daunting task like processing a directory of 100,000 text files with a program is simple."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.167,
+            0.294,
+            0.255,
+            0.384
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_445_image_2.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.268,
+            0.3,
+            0.482,
+            0.319
+          ],
+          "level": 2,
+          "content": "Deleting Files with find -exec"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.267,
+            0.329,
+            0.79,
+            0.385
+          ],
+          "content": "Deleting files with find -exec is a such a common operation that find also has a -delete option you can use in place of -exec -rm {} (but it will not be interactive, unlike rm with -i)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.407,
+            0.861,
+            0.524
+          ],
+          "content": "When using -exec, always write your expression first and check that the files returned are those you want to apply the command to. Then, once your find command is returning the proper subset of files, add in your -exec statement. find - exec is most appropriate for quick, simple tasks (like deleting files, changing permissions, etc.). For larger tasks, xargs (which we see in the next section) is a better choice."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.542,
+            0.389,
+            0.568
+          ],
+          "level": 2,
+          "content": "xargs: A Unix Powertool"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.574,
+            0.86,
+            0.711
+          ],
+          "content": "If there were one Unix tool that introduced me to the incredible raw power of Unix, it is xargs. xargs allows us to take input passed to it from standard in, and use this input as arguments to another program, which allows us to build commands programmatically from values received through standard in (in this way, it’s somewhat similar to R’s do.call()). Using find with xargs is much like find with -exec, but with some added advantages that make xargs a better choice for larger bioinformatics file-processing tasks."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.72,
+            0.859,
+            0.759
+          ],
+          "content": "Let’s re-create our messy temporary file directory example again (from the zmayssnps/data/seqs directory):"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.17,
+            0.767,
+            0.703,
+            0.785
+          ],
+          "content": "\\$ touch zmays{A,C}\\_R{1,2}-temp.fastq # create the test files"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.792,
+            0.86,
+            0.869
+          ],
+          "content": "xargs works by taking input from standard in and splitting it by spaces, tabs, and newlines into arguments. Then, these arguments are passed to the command supplied. For example, to emulate the behavior of find -exec with rm, we use xargs with rm:"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.139,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "416"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.697,
+            0.94
+          ],
+          "content": "Chapter 12: Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks"
+        }
+      ]
+    },
+    {
+      "page_idx": 446,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.081,
+            0.516,
+            0.174
+          ],
+          "sub_type": "code",
+          "content": "```shell\n$ find . -name \"*.temp.fastq\"\n./zmaysA_R1-temp.fastq\n./zmaysA_R2-temp.fastq\n./zmaysC_R1-temp.fastq\n./zmaysC_R2-temp.fastq\n$ find . -name \"*.temp.fastq\" | xargs rm\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.165,
+            0.196,
+            0.264,
+            0.271
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_446_image_1.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.268,
+            0.194,
+            0.517,
+            0.213
+          ],
+          "level": 2,
+          "content": "Playing It Safe with find and xargs"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.267,
+            0.223,
+            0.788,
+            0.363
+          ],
+          "content": "There’s one important gotcha with find and xargs: spaces in filenames can break things, because spaces are considered argument separators by xargs. This would lead to a filename like treatment 02.fq being interpreted as two separate arguments, treatment and 02.fq. The find and xargs developers created a clever solution: both allow for the option to use the null byte as a separator. Here is an example of how to run find and xargs using the null byte delimiter:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.267,
+            0.372,
+            0.788,
+            0.481
+          ],
+          "content": "\\$ find . -name \"samples [AB].txt\" -print0 | xargs -0 rm In addition to this precaution, it’s also wise to simply not use filenames that contain spaces or other strange characters. Simple alphanumeric names with either dashes or underscores are best. To simplify examples, I will omit -print0 and -0, but these should always be used in practice."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.504,
+            0.816,
+            0.524
+          ],
+          "content": "Essentially, xargs is splitting the output from find into arguments, and running:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.533,
+            0.617,
+            0.565
+          ],
+          "sub_type": "code",
+          "content": "```shell\n\\$ rm ./zmaysA_R1-temp.fastq ./zmaysA_R2-temp.fastq \\\n./zmaysC_R1-temp.fastq ./zmaysC_R2-temp.fastq\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.573,
+            0.86,
+            0.688
+          ],
+          "content": "xargs passes all arguments received through standard in to the supplied program (rm in this example). This works well for programs like rm, touch, mkdir, and others that take multiple arguments. However, other programs only take a single argument at a time. We can set how many arguments are passed to each command call with xargs’s -n argument. For example, we could call rm four separate times (each on one file) with:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.7,
+            0.559,
+            0.716
+          ],
+          "sub_type": "code",
+          "content": "```powershell\n$ find . -name \"*-temp.fastq\" | xargs -n 1 rm\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.725,
+            0.86,
+            0.8
+          ],
+          "content": "One big benefit of xargs is that it separates the process that specifies the files to operate on (find) from applying a command to these files (through xargs). If we wanted to inspect a long list of files find returns before running rm on all files in this list, we could use:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.812,
+            0.607,
+            0.891
+          ],
+          "sub_type": "code",
+          "content": "```shell\n$ find . -name \"*-temp.fastq\" > files-to-delete.txt\n$ cat files-to-delete.txt\n./zmaysA_R1-temp.fastq\n./zmaysA_R2-temp.fastq\n./zmaysC_R1-temp.fastq\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.515,
+            0.923,
+            0.798,
+            0.939
+          ],
+          "content": "Automating File-Processing with find and xargs"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "417"
+        }
+      ]
+    },
+    {
+      "page_idx": 447,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.082,
+            0.482,
+            0.113
+          ],
+          "sub_type": "code",
+          "content": "```txt\n./zmaysC_R2-temp.fastq\n\\$ cat files-to-delete.txt | xargs rm\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.121,
+            0.861,
+            0.219
+          ],
+          "content": "Another common trick is to use xargs to build commands that are written to a simple Bash script. For example, rather than running rm directly, we could call echo on rm, and then allow xargs to place arguments after this command (remember, xargs’s behavior is very simple: it just places arguments after the command you provide). For example:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.228,
+            0.785,
+            0.322
+          ],
+          "sub_type": "code",
+          "content": "```shell\n$ find . -name \"*.temp.fastq\" | xargs -n 1 echo \"rm -i\" > delete-temp.sh\n$ cat delete-temp.sh\nrm -i ./zmaysA_R1-temp.fastq\nrm -i ./zmaysA_R2-temp.fastq\nrm -i ./zmaysC_R1-temp.fastq\nrm -i ./zmaysC_R2-temp.fastq\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.329,
+            0.861,
+            0.388
+          ],
+          "content": "Breaking up the task in this way allows us to inspect the commands we’ve built using xargs (because the command xargs runs is echo, which just prints everything). Then, we could run this simple script with:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.397,
+            0.449,
+            0.474
+          ],
+          "sub_type": "code",
+          "content": "```shell\n\\$ bash delete-temp.sh\nremove ./zmaysA_R1-temp.fastq? y\nremove ./zmaysA_R2-temp.fastq? y\nremove ./zmaysC_R1-temp.fastq? y\nremove ./zmaysC_R2-temp.fastq? y\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.489,
+            0.82,
+            0.516
+          ],
+          "level": 2,
+          "content": "Using xargs with Replacement Strings to Apply Commands to Files"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.524,
+            0.86,
+            0.66
+          ],
+          "content": "So far, xargs builds commands purely by adding arguments to the end of the command you’ve supplied. However, some programs take arguments through options, like program --in file.txt --out-file out.txt; others have many positional arguments like program arg1 arg2. xargs’s -I option allows more fine-grained placement of arguments into a command by replacing all instances of a placeholder string with a single argument. By convention, the placeholder string we use with -I is {}."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.671,
+            0.861,
+            0.846
+          ],
+          "content": "Let’s look at an example. Suppose the imaginary program fastq\\_stat takes an input file through the option --in, gathers FASTQ statistics information, and then writes a summary to the file specified by the --out option. As in our Bash loop example (“Processing Files with Bash Using for Loops and Globbing” on page 405), we want our output filenames to be paired with our input filenames and have corresponding names. We can tackle this with find, xargs, and basename. The first step is to use find to grab the files you want to process, and then use xargs and basename to extract the sample name. basename allows us to remove suffixes through the argument -s:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.857,
+            0.625,
+            0.889
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ find . -name \"*.fastq\" | xargs basename -s \".fastq\" zmaysA_R1\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.139,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "418"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.695,
+            0.94
+          ],
+          "content": "Chapter 12: Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Bioinformatics Data Skills",
+      "authors": [
+        "Vince Buffalo"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "created_at": "2015-06-30T16:29:18Z",
+      "modified_at": "2015-06-30T13:45:47-04:00",
+      "creator_application": "AH CSS Formatter V6.2 MR4 for Linux64 : 6.2.6.18551 (2014/09/24 15:00JST)",
+      "producer_application": "Antenna House PDF Output Library 6.2.609 (Linux64)",
+      "page_count": 538,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 432,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 433,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 434,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 435,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 436,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 437,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 438,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 439,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 440,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 441,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 442,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 443,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 444,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 445,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 446,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 447,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

@@ -1,0 +1,2071 @@
+{
+  "pages": [
+    {
+      "page_idx": 384,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.723,
+            0.118,
+            0.856,
+            0.14
+          ],
+          "content": "CHAPTER 11"
+        },
+        {
+          "type": "doc_title",
+          "bbox": [
+            0.364,
+            0.153,
+            0.856,
+            0.192
+          ],
+          "level": 1,
+          "content": "Working with Alignment Data"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.365,
+            0.861,
+            0.535
+          ],
+          "content": "In Chapter 9, we learned about range formats such as BED and GTF, which are often used to store genomic range data associated with genomic feature annotation data such as gene models. Other kinds of range-based formats are designed for storing large amounts of alignment data—for example, the results of aligning millions (or billions) of high-throughput sequencing reads to a genome. In this chapter, we’ll look at the most common high-throughput data alignment format: the Sequence Alignment/ Mapping (SAM) format for mapping data (and its binary analog, BAM). The SAM and BAM formats are the standard formats for storing sequencing reads mapped to a reference."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.546,
+            0.861,
+            0.699
+          ],
+          "content": "We study SAM and BAM for two reasons. First, a huge part of bioinformatics work is manipulating alignment files. Nearly every high-throughput sequencing experiment involves an alignment step that produces alignment data in the SAM/BAM formats. Because each sequencing read has an alignment entry, alignment data files are massive and require space-efficient complex binary file formats. Furthermore, modern aligners output an incredible amount of useful information about each alignment. It’s vital to have the skills necessary to extract this information and explore data kept in these complex formats."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.707,
+            0.861,
+            0.881
+          ],
+          "content": "Second, the skills developed through learning to work with SAM/BAM files are extensible and more widely applicable than to these specific formats. It would be unwise to bet that these formats won’t change (or even be replaced at some point)— the field of bioinformatics is notorious for inventing new data formats (the same goes with computing in general, see [xkcd’s “Standards” comic](http://xkcd.com/927/)). Some groups are already switching to storing alignments in CRAM format, a closely related alignment data format we’ll also discuss. So while learning how to work with specific bioinformatics formats may seem like a lost cause, skills such as following a format specification, manipulating binary files, extracting information from bitflags, and working with"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "355"
+        }
+      ]
+    },
+    {
+      "page_idx": 385,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.08,
+            0.861,
+            0.117
+          ],
+          "continues_prev": true,
+          "content": "application programming interfaces (APIs) are essential skills when working with any format."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.136,
+            0.775,
+            0.166
+          ],
+          "level": 2,
+          "content": "Getting to Know Alignment Formats: SAM and BAM"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.175,
+            0.862,
+            0.233
+          ],
+          "content": "Before learning to work with SAM/BAM, we need to understand the structure of these formats. We’ll do this by using celegans.sam, a small example SAM file included in this chapter’s directory in the GitHub repository."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.174,
+            0.254,
+            0.255,
+            0.332
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_385_image_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.265,
+            0.255,
+            0.79,
+            0.429
+          ],
+          "content": "The celegans.sam file was created by aligning reads simulated directly from the C. elegans genome (version WBcel235) using the wgsim read simulator. These reads differ slightly from the reference genome through simulated mutations and base errors. Simulating reads, realigning back to the reference, and calling SNPs is a very useful exercise in understanding the limitations of aligners and SNP callers; I encourage you to try this on your own. See the documentation in this chapter’s directory on GitHub for more information on how these reads were simulated and why this is a useful exercise."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.452,
+            0.862,
+            0.53
+          ],
+          "content": "We’ll step through the basic ideas of the SAM/BAM format, but note that as with any well-specified bioinformatics format, the ultimate reference is the original format specification and documentation, which is available on [GitHub](http://samtools.github.io/hts-specs/). [The original SAM Format paper](http://bit.ly/sam-format) (Li et al., 2009) is also a good introduction."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.545,
+            0.313,
+            0.569
+          ],
+          "level": 2,
+          "content": "The SAM Header"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.578,
+            0.86,
+            0.636
+          ],
+          "content": "Files in the SAM format consist of a header section and an alignment section. Because SAM files are plain text (unlike their binary counterpart, BAM), we can take a peek at a few lines of the header with head:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.646,
+            0.761,
+            0.819
+          ],
+          "sub_type": "code",
+          "content": "```powershell\n$ head -n 10 celegans.sam\n@SQ     SN:I    LN:15072434 ①\n@SQ     SN:II   LN:15279421\n@SQ     SN:III  LN:13783801\n@SQ     SN:IV   LN:17493829\n@SQ     SN:MtDNA      LN:13794\n@SQ     SN:V    LN:20924180\n@SQ     SN:X    LN:17718942\n@RG     ID:VB00023_L001 SM:celegans-01 ②\n@PG     ID:bwa  PN:bwa  VN:0.7.10-r789 [...] ③\nI_2011868_2012306_0:0:0_0:0:0_2489 83 I 2012257 40 50M [...] ④\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.825,
+            0.862,
+            0.884
+          ],
+          "content": "Header lines contain vital metadata about the reference sequences, read and sample information, and (optionally) processing steps and comments. Each header line begins with an @, followed by a two-letter code that distinguishes the different type of"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "356"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.451,
+            0.939
+          ],
+          "content": "Chapter 11: Working with Alignment Data"
+        }
+      ]
+    },
+    {
+      "page_idx": 386,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.08,
+            0.861,
+            0.176
+          ],
+          "continues_prev": true,
+          "content": "metadata records in the header. Following this two-letter code are tab-delimited keyvalue pairs in the format KEY:VALUE (the SAM format specification names these tags and values). The celegans.sam file contains the most common header records types you’ll encounter in SAM/BAM files. Let’s step through some of the header components in more detail:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.193,
+            0.861,
+            0.293
+          ],
+          "content": "1 @SQ header entries store information about the reference sequences (e.g., the chromosomes if you’ve aligned to a reference genome). The required key-values are SN, which stores the sequence name (e.g., the C. elegans chromosome I), and LN, which stores the sequence length (e.g., 15,072,434 bases). All separate sequences in your reference have a corresponding entry in the header."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.308,
+            0.861,
+            0.445
+          ],
+          "content": "② @RG header entries contain important read group and sample metadata. The read group identifier ID is required and must be unique. This ID value contains information about the origin of a set of reads. Some software relies on read groups to indicate a technical groups of reads, to account for batch effects (undesirable technical artifacts in data). Consequently, it’s beneficial to create read groups related to the specific sequencing run (e.g., ID could be related to the name of the sequencing run and lane)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.454,
+            0.861,
+            0.61
+          ],
+          "content": "Although ID is the only required key in @RG headers, in practice your SAM/BAM files should also keep track of sample information using the SM key. Sample infor mation is the metadata about your experiment’s samples (e.g., individual, treatment group, replicate, etc.). Finally, it’s worth noting that the SAM format specification also allows a PL key for indicating sequencing platform such as ILLUMINA, PACBIO, and so on. (See the specification for a full list of valid values.) Read group, sample, and platform information should be added to your SAM/BAM during alignment (and aligners have options for this)."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.137,
+            0.626,
+            0.861,
+            0.781
+          ],
+          "sub_type": "text",
+          "content": "@PG header entries contain metadata about the programs used to create and process a set of SAM/BAM files. Each program must have a unique ID value, and metadata such as program version number (via the VN key) and the exact command line (via the CL key) can be saved in these header entries. Many programs will add these lines automatically.\n4 This is the first line of the alignment section (because this line does not begin with @). We’ll cover the alignment section in more detail in the following section."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.789,
+            0.861,
+            0.827
+          ],
+          "content": "This is just an introduction to the basics of the SAM format’s header section; see [the SAM format specification](http://samtools.github.io/hts-specs/) for more detail."
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.494,
+            0.923,
+            0.798,
+            0.939
+          ],
+          "content": "Getting to Know Alignment Formats: SAM and BAM"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "357"
+        }
+      ]
+    },
+    {
+      "page_idx": 387,
+      "blocks": [
+        {
+          "type": "image",
+          "bbox": [
+            0.167,
+            0.073,
+            0.255,
+            0.162
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_387_image_0.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.268,
+            0.079,
+            0.362,
+            0.098
+          ],
+          "level": 2,
+          "content": "Read Groups"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.107,
+            0.789,
+            0.299
+          ],
+          "content": "One of the best features of the SAM/BAM format is that it supports including an extensive amount of metadata about the samples, the alignment reference, processing steps, etc. to be included within the file. (Note that in contrast, the FASTQ format doesn’t provide a standard way to include this metadata; in practice, we use filenames to connect metadata kept in a separate spreadsheet or tabdelimited file.) Many downstream applications make use of the metadata contained in the SAM header (and many programs require it). Given that this metadata is important (and often required), you should add read group and sample metadata when you align reads to a reference."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.305,
+            0.789,
+            0.358
+          ],
+          "content": "Luckily, most aligners allow you to specify this important metadata through your alignment command. For example, BWA allows (using made-up files in this example):"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.3,
+            0.364,
+            0.771,
+            0.395
+          ],
+          "sub_type": "code",
+          "content": "```powershell\n$ bwa mem -R'@RG\\tID:readgroup_id\\tSM:sample_id' ref.fa\nin.fq\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.4,
+            0.789,
+            0.436
+          ],
+          "content": "Bowtie2 similarly allows read group and sample information to be set with the --rg-id and --rg options."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.459,
+            0.86,
+            0.498
+          ],
+          "content": "Although head works to take a quick peek at the top of a SAM file, keep the following points in mind:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.156,
+            0.514,
+            0.546,
+            0.557
+          ],
+          "sub_type": "text",
+          "content": "• head won’t always provide the entire header.\n• It won’t work with binary BAM files."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.572,
+            0.86,
+            0.67
+          ],
+          "content": "The standard way of interacting with SAM/BAM files is through the SAMtools command-line program (samtools), which we’ll use extensively throughout the rest of this chapter. Like Git, samtools has many subcommands. samtools view is the general tool for viewing and converting SAM/BAM files. A universal way to look at an entire SAM/BAM header is with samtools view option -H:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.681,
+            0.44,
+            0.759
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ samtools view -H celegans.sam\n@SQ        SN:I    LN:15072434\n@SQ        SN:II   LN:15279421\n@SQ        SN:III  LN:13783801\n[...]\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.767,
+            0.859,
+            0.804
+          ],
+          "content": "This also works with BAM files, without any need to convert beforehand (samtools automatically detects whether the file is SAM or BAM):"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.815,
+            0.44,
+            0.893
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ samtools view -H celegans.bam\n@SQ        SN:I    LN:15072434\n@SQ        SN:II   LN:15279421\n@SQ        SN:III  LN:13783801\n[...]\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "358"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.451,
+            0.939
+          ],
+          "content": "Chapter 11: Working with Alignment Data"
+        }
+      ]
+    },
+    {
+      "page_idx": 388,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.081,
+            0.861,
+            0.136
+          ],
+          "content": "Of course, all our usual Unix tricks can be combined with samtools commands through piping results to other commands. For example, we could see all read groups with:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.148,
+            0.556,
+            0.163
+          ],
+          "content": "\\$ samtools view -H celegans.bam | grep \"^@RG\""
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.173,
+            0.165,
+            0.498,
+            0.179
+          ],
+          "content": "@RG ID:VB00023\\_L001 SM:celegans-01"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.189,
+            0.859,
+            0.225
+          ],
+          "content": "samtools view without any arguments returns the entire alignment section without the header:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.236,
+            0.811,
+            0.268
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ samtools view celegans.sam | head -n 1\nI_2011868_2012306_0:0:0:0:0:0:0_2489      83       I        2012257 40      50M\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.283,
+            0.427,
+            0.309
+          ],
+          "level": 2,
+          "content": "The SAM Alignment Section"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.316,
+            0.859,
+            0.373
+          ],
+          "content": "The alignment section contains read alignments (and usually includes reads that did not align, but this depends on the aligner and file). Each alignment entry is composed of 11 required fields (and optional fields after this)."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.167,
+            0.389,
+            0.255,
+            0.476
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_388_image_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.395,
+            0.789,
+            0.482
+          ],
+          "content": "We’ll step through the basic structure of an alignment entry, but it would be unnecessarily redundant to include all information in the original SAM format specification in this section. I highly recommend reading the alignment section of the SAM format specification for more detail."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.505,
+            0.86,
+            0.564
+          ],
+          "content": "Let’s step through an alignment entry’s fields. Because these alignment lines are quite lengthy and would overflow the width of this page, I use tr to convert tabs to newlines for a single alignment entry in celegans.sam:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.573,
+            0.651,
+            0.761
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ samtools view celegans.sam | tr '\\t' '\\n' | head -n 11\nI_2011868_2012306_0:0:0_0:0:0_2489 ①\n83 ②\nI ③\n2012257 ④\n40 ⑤\n50M ⑥\n= ⑦\n2011868\n-439 ⑧\nCAAAAAATTTTGAAAAAAAAATTGAATAAAATTCACGGATTTCTGGCT ⑨\n22222222222222222222222222222222222222\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.137,
+            0.777,
+            0.859,
+            0.854
+          ],
+          "sub_type": "text",
+          "content": "QNAME, the query name (e.g., a sequence read’s name).\nFLAG, the bitwise flag, which contains information about the alignment. Bitwise flags are discussed in “Bitwise Flags” on page 360 in much more detail."
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.494,
+            0.923,
+            0.798,
+            0.939
+          ],
+          "content": "Getting to Know Alignment Formats: SAM and BAM"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "359"
+        }
+      ]
+    },
+    {
+      "page_idx": 389,
+      "blocks": [
+        {
+          "type": "list",
+          "bbox": [
+            0.137,
+            0.086,
+            0.861,
+            0.746
+          ],
+          "sub_type": "text",
+          "content": "3 RNAME, the reference name (e.g., which sequence the query aligned to, such as a specific chromosome name like “chr1”). The reference name must be in the SAM/BAM header as an SQ entry. If the read is unaligned, this entry may be \\*.\nPOS, the position on the reference sequence (using 1-based indexing) of the first mapping base (leftmost) in the query sequence. This may be zero if the read does not align.\n5 MAPQ is the mapping quality, which is a measure of how likely the read is to actually originate from the position it maps to. Mapping quality is estimated by the aligner (and beware that different aligners have different estimation procedures!). Many tools downstream of aligners filter out reads that map with low mapping quality (because a low mapping quality score indicates the alignment program is not confident about the alignment’s position). Mapping qualities are an incredibly important topic that we’ll discuss in more depth later. Mapping quality is discussed in more depth in “Mapping Qualities” on page 365.\n6 CIGAR is the CIGAR string, which is a specialized format for describing the alignment (e.g., matching bases, insertions/deletions, clipping, etc.). We discuss CIGAR strings in much more detail in “CIGAR Strings” on page 363.\n7 RNEXT and PNEXT (on the next line) are the reference name and position (the R and P in RNEXT and PNEXT) of a paired-end read’s partner. The value \\* indicates RNEXT is not available, and = indicates that RNEXT is the same as RNAME. PNEXT will be 0 when not available.\nTLEN is the template length for paired-end reads.\n9 SEQ stores the original read sequence. This sequence will always be in the orientation it aligned in (and this may be the reverse complement of the original read sequence). Thus, if your read aligned to the reverse strand (which is information kept in the bitwise flag field), this sequence will be the reverse complement.\nQUAL stores the original read base quality (in the same format as Sanger FASTQ files)."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.139,
+            0.764,
+            0.28,
+            0.79
+          ],
+          "level": 2,
+          "content": "Bitwise Flags"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.797,
+            0.861,
+            0.875
+          ],
+          "content": "Many important pieces of information about an alignment are encoded using bitwise flags (also known as a bit field). There’s a lot of important information encoded in SAM/BAM bitwise flags, so it’s essential you understand how these work. Furthermore, bitwise flags are a very space-efficient and common way to encode attributes,"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "360"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.451,
+            0.94
+          ],
+          "content": "Chapter 11: Working with Alignment Data"
+        }
+      ]
+    },
+    {
+      "page_idx": 390,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.08,
+            0.859,
+            0.117
+          ],
+          "continues_prev": true,
+          "content": "so they’re worth understanding because you’re very likely to encounter them in other formats."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.127,
+            0.861,
+            0.243
+          ],
+          "content": "Bitwise flags are much like a series of toggle switches, each of which can be either on or off. Each switch represents whether a particular attribute of an alignment is true or false, such as whether a read is unmapped, is paired-end, or whether it aligned in the reverse orientation. Table 11-1 shows these bitwise flags and the attributes they encode, but the most up-to-date source will be the SAM format specification or the samtools flag command:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.283,
+            0.701,
+            0.316
+          ],
+          "sub_type": "code",
+          "content": "```txt\nAbout: Convert between textual and numeric flag representation\nUsage: samtools flags INT|STR[,...]\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.172,
+                0.253,
+                0.313,
+                0.269
+              ],
+              "content": "\\$ samtools flags"
+            }
+          ],
+          "footnotes": []
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.174,
+            0.346,
+            0.819,
+            0.439
+          ],
+          "sub_type": "code",
+          "content": "```txt\n0x1 PAIRED .. paired-end (or multiple-segment) sequencing technology\n0x2 PROPER_PAIR .. each segment properly aligned according to the aligner\n0x4 UNMAP .. segment unmapped\n[...]\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.174,
+                0.33,
+                0.227,
+                0.345
+              ],
+              "content": "Flags:"
+            }
+          ],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.446,
+            0.86,
+            0.522
+          ],
+          "content": "Under the hood, each of these toggle switches’ values are bits (0 or 1) of a binary number (the base-2 system of computing that uses 0s and 1s). Each bit in a bitfield represents a particular attribute about an alignment, with 1 indicating that the attribute is true and 0 indicating it’s false."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.141,
+            0.564,
+            0.716,
+            0.888
+          ],
+          "content": "| Flag (in hexadecimal) | Meaning |\n| --- | --- |\n| 0x1 | Paired-end sequence (or multiple-segment, as in strobe sequencing) |\n| 0x2 | Aligned in proper pair (according to the aligner) |\n| 0x4 | Unmapped |\n| 0x8 | Mate pair unmapped (or next segment, if multiple-segment) |\n| 0x10 | Sequence is reverse complemented |\n| 0x20 | Sequence of mate pair is reversed |\n| 0x40 | The first read in the pair (or segment, if multiple-segment) |\n| 0x80 | The second read in the pair (or segment, if multiple-segment) |\n| 0x100 | Secondary alignment |",
+          "captions": [
+            {
+              "bbox": [
+                0.14,
+                0.541,
+                0.373,
+                0.56
+              ],
+              "content": "Table 11-1. SAM bitwise flags"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_390_table_8.jpg"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.494,
+            0.923,
+            0.798,
+            0.939
+          ],
+          "content": "Getting to Know Alignment Formats: SAM and BAM"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "361"
+        }
+      ]
+    },
+    {
+      "page_idx": 391,
+      "blocks": [
+        {
+          "type": "table",
+          "bbox": [
+            0.141,
+            0.08,
+            0.716,
+            0.206
+          ],
+          "continues_prev": true,
+          "content": "| Flag (in hexadecimal) | Meaning |\n| --- | --- |\n| 0x200 | QC failure |\n| 0x400 | PCR or optical duplicate |\n| 0x800 | Supplementary alignment |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_391_table_0.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.223,
+            0.862,
+            0.395
+          ],
+          "content": "As an example, suppose you encounter the bitflag 147 (0x93 in hexidecimal) and you want to know what this says about this alignment. In binary this number is represented as 0x1001 0011 (the space is used to make this more readable). We see that the first, second, fifth, and eighth bits are 1 (in our switch analogy, these are the switches that are turned on). These specific bits correspond to the hexidecimal values 0x1, 0x2, 0x10, and 0x80. Looking at Table 11-1, we see these hexidecimal values correspond to the attributes paired-end, aligned in proper pair, the sequence is reverse complemented, and that this is the second read in the pair—which describes how our read aligned."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.167,
+            0.411,
+            0.255,
+            0.5
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_391_image_2.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.267,
+            0.417,
+            0.666,
+            0.436
+          ],
+          "level": 2,
+          "content": "Converting between Binary, Hexadecimal, and Decimal"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.445,
+            0.79,
+            0.569
+          ],
+          "content": "I won’t cover the details of converting between binary, hexadecimal, and decimal number systems because the command samtools flags can translate bitflags for us. But if you continue to dig deeper into computing, it’s a handy and necessary skill. I’ve included some supplementary resources in the GitHub repository’s README file for this chapter. Many calculators, such as the OS X calculator in “programmer” mode will also convert these values for you."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.592,
+            0.86,
+            0.651
+          ],
+          "content": "Working through this each time would be quite tedious, so the samtools command contains the subcommand samtools flags, which can translate decimal and hexidecimal flags:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.66,
+            0.583,
+            0.722
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ samtools flags 147\n0x93    147    PAIRED,PROPER_PAIR,REVERSE,READ2\n$ samtools flags 0x93\n0x93    147    PAIRED,PROPER_PAIR,REVERSE,READ2\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.731,
+            0.86,
+            0.77
+          ],
+          "content": "samtools flags can also convert attributes (of the prespecified list given by running samtools flags without arguments) to hexidecimal and decimal flags:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.78,
+            0.482,
+            0.811
+          ],
+          "sub_type": "code",
+          "content": "```csv\n\\$ samtools flags paired,read1,qcfail\n0x241 577 PAIRED,READ1,QCFAIL\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.819,
+            0.859,
+            0.859
+          ],
+          "content": "Later on, we’ll see how PySAM simplifies this through an interface where properties about an alignment are stored as attributes of an AlignedSegment Python object,"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "362"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.451,
+            0.939
+          ],
+          "content": "Chapter 11: Working with Alignment Data"
+        }
+      ]
+    },
+    {
+      "page_idx": 392,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.08,
+            0.858,
+            0.12
+          ],
+          "continues_prev": true,
+          "content": "which allows for easier checking of bitflag values with a syntax like aln.is\\_proper\\_pair or aln.is\\_reverse."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.136,
+            0.283,
+            0.163
+          ],
+          "level": 2,
+          "content": "CIGAR Strings"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.169,
+            0.86,
+            0.284
+          ],
+          "content": "Like bitwise flags, SAM’s CIGAR strings are another specialized way to encode information about an aligned sequence. While bitwise flags store true/false properties about an alignment, CIGAR strings encode information about which bases of an alignment are matches/mismatches, insertions, deletions, soft or hard clipped, and so on. I’ll assume you are familiar with the idea of matches, mismatches, insertions, and deletions, but it’s worth describing soft and hard clipping (as SAM uses them)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.292,
+            0.861,
+            0.445
+          ],
+          "content": "Soft clipping is when only part of the query sequence is aligned to the reference, leaving some portion of the query sequence unaligned. Soft clipping occurs when an aligner can partially map a read to a location, but the head or tail of the query sequence doesn’t match (or the alignment at the end of the sequence is questionable). Hard clipping is similar, but hard-clipped regions are not present in the sequence stored in the SAM field SEQ. A basic CIGAR string contains concatenated pairs of integer lengths and character operations (see Table 11-2 for a table of these operations)."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.141,
+            0.489,
+            0.501,
+            0.86
+          ],
+          "content": "| Operation | Value | Description |\n| --- | --- | --- |\n| M | 0 | Alignment match (note that this could be a sequence match or mismatch!) |\n| I | 1 | Insertion (to reference) |\n| D | 2 | Deletion (from reference) |\n| N | 3 | Skipped region (from reference) |\n| S | 4 | Soft-clipped region (soft-clipped regions are present in sequence in SEQ field) |\n| H | 5 | Hard-clipped region (not in sequence in SEQ field) |\n| P | 6 | Padding (see section 3.1 of the SAM format specification for detail) |\n| = | 7 | Sequence match |",
+          "captions": [
+            {
+              "bbox": [
+                0.14,
+                0.464,
+                0.377,
+                0.484
+              ],
+              "content": "Table 11-2. CIGAR operations"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_392_table_5.jpg"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.494,
+            0.923,
+            0.798,
+            0.939
+          ],
+          "content": "Getting to Know Alignment Formats: SAM and BAM"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "363"
+        }
+      ]
+    },
+    {
+      "page_idx": 393,
+      "blocks": [
+        {
+          "type": "table",
+          "bbox": [
+            0.141,
+            0.08,
+            0.501,
+            0.137
+          ],
+          "continues_prev": true,
+          "content": "| Operation | Value | Description |\n| --- | --- | --- |\n| X | 8 | Sequence mismatch |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_393_table_0.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.156,
+            0.862,
+            0.234
+          ],
+          "content": "For example, a fully aligned 51 base pair read without insertions or deletions would have a CIGAR string containing a single length/operation pair: 51M. By the SAM format specification, M means there’s an alignment match, not that all bases in the query and reference sequence are identical (it’s a common mistake to assume this!)."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.174,
+            0.255,
+            0.255,
+            0.332
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_393_image_2.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.266,
+            0.255,
+            0.71,
+            0.274
+          ],
+          "level": 2,
+          "content": "Sequence Matches and Mismatches, and the NM and MD Tags"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.283,
+            0.789,
+            0.407
+          ],
+          "content": "It’s important to remember that the SAM format specification simply lists what’s possible with the format. Along these lines, aligners choose how to output their results in this format, and there are differences among aligners in how they use the CIGAR string (and other parts of the SAM format). It’s common for many aligners to forgo using = and X to indicate sequence matches and mismatches, and instead just report these as M."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.412,
+            0.789,
+            0.52
+          ],
+          "content": "However, this isn’t as bad as it sounds—many aligners have differ ent goals (e.g., general read mapping, splicing-aware aligning, aligning longer reads to find chromosomal breakpoints). These tasks don’t require the same level of detail about the alignment, so in some cases explicitly reporting matches and mismatches with = and X would lead to needlessly complicated CIGAR strings."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.526,
+            0.79,
+            0.685
+          ],
+          "content": "Also, much of the information that = and X convey can be found in optional SAM tags that many aligners can include in their output. The NM tag is an integer that represents the edit distance between the aligned portion (which excludes clipped regions) and the reference. Additionally, the MD tag encodes mismatching positions from the reference (and the reference’s sequence at mismatching positions). See the SAM format specification for more detail. If your BAM file doesn’t have the NM and MD tags, samtools calmd can add them for you."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.709,
+            0.862,
+            0.845
+          ],
+          "content": "Let’s look at a trickier example: 43S6M1I26M. First, let’s break this down into pairs: 43S, 6M, 1I, and 26M. Using Table 11-2, we see this CIGAR string tells us that the first 43 bases were soft clipped, the next 6 were matches/mismatches, then a 1 base pair insertion to the reference, and finally, 26 matches. The SAM format specification mandates that all M, I, S, =, and X operations’ lengths must add to the length of the sequence. We can validate that’s the case here: 43 + 6 + 1 + 26 = 76, which is the length of the sequence in this SAM entry."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "364"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.452,
+            0.939
+          ],
+          "content": "Chapter 11: Working with Alignment Data"
+        }
+      ]
+    },
+    {
+      "page_idx": 394,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.142,
+            0.079,
+            0.331,
+            0.105
+          ],
+          "level": 2,
+          "content": "Mapping Qualities"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.111,
+            0.86,
+            0.284
+          ],
+          "content": "Our discussion of the SAM and BAM formats is not complete without mentioning mapping qualities (Li et al., 2008). Mapping qualities are one of the most important diagnostics in alignment. All steps downstream of alignment in all bioinformatics projects (e.g., SNP calling and genotyping, RNA-seq, etc.) critically depend on reliable mapping. Mapping qualities quantify mapping reliability by estimating how likely a read is to actually originate from the position the aligner has mapped it to. Similar to base quality, mapping quality is a log probability given by $Q = - 1 0 \\log _ { 1 0 } P ( i n c o r r e c t$ mapping position). For example, a mapping quality of 20 translates to a $I O^{(20/-10)} = I \\%$ chance the alignment is incorrect."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.293,
+            0.86,
+            0.428
+          ],
+          "content": "The idea of mapping quality is also related to the idea of mapping uniqueness. This is often defined as when a read’s second best hit has more mismatches than its first hit. However, this concept of uniqueness doesn’t account for the base qualities of mismatches, which carry a lot of information about whether a mismatch is due to a base calling error or a true variant (Li et al., 2008). Mapping quality estimates do account for base qualities of mismatches, which makes them a far better metric for measuring mapping uniqueness (as well as general mapping reliability)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.436,
+            0.86,
+            0.533
+          ],
+          "content": "We can use mapping qualities to filter out likely incorrect alignments (which we can do with samtools view, which we’ll learn about later), find regions where mapping quality is unusually low among most alignments (perhaps in repetitive or paralogous regions), or assess genome-wide mapping quality distributions (which could indicate alignment problems in highly repetitive or polyploid genomes)."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.141,
+            0.549,
+            0.842,
+            0.604
+          ],
+          "level": 2,
+          "content": "Command-Line Tools for Working with Alignments in the SAM Format"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.615,
+            0.86,
+            0.731
+          ],
+          "content": "In this section, we’ll learn about the Samtools suite of tools for manipulating and working with SAM, BAM, and CRAM files. These tools are incredibly powerful, and becoming skilled in working with these tools will allow you to both quickly move forward in file-processing tasks and explore the data in alignment files. All commands are well documented both online (see [the Samtools website](http://www.htslib.org/doc/)) and in the programs themselves (run a program without arguments or use --help for more information)."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.141,
+            0.747,
+            0.708,
+            0.772
+          ],
+          "level": 2,
+          "content": "Using samtools view to Convert between SAM and BAM"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.781,
+            0.86,
+            0.859
+          ],
+          "content": "Many samtools subcommands such as sort, index, depth, and mpileup all require input files (or streams) to be in BAM format for efficiency, so we often need to convert between plain-text SAM and binary BAM formats. samtools view allows us to convert SAM to BAM with the -b option:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.175,
+            0.869,
+            0.609,
+            0.885
+          ],
+          "content": "\\$ samtools view -b celegans.sam > celegans\\_copy.bam"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.388,
+            0.923,
+            0.798,
+            0.939
+          ],
+          "content": "Command-Line Tools for Working with Alignments in the SAM Format"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "365"
+        }
+      ]
+    },
+    {
+      "page_idx": 395,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.08,
+            0.48,
+            0.099
+          ],
+          "content": "Similarly, we can go from BAM to SAM:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.109,
+            0.717,
+            0.187
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ samtools view celegans.bam > celegans_copy.sam\n$ head -n 3 celegans_copy.sam\nI_2011868_2012306_0:0:0:0_0:0:0_2489    83    I   2012257    40 [...] \nI_2011868_2012306_0:0:0:0_0:0:0_2489    163    I   2011868    60 [...] \nI_13330604_13331055_2:0:0_0:0:0_3dd5   83    I   13331006    60 [...]\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.195,
+            0.86,
+            0.25
+          ],
+          "content": "However, samtools view will not include the SAM header (see “The SAM Header” on page 356) by default. SAM files without headers cannot be turned back into BAM files:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.262,
+            0.651,
+            0.325
+          ],
+          "sub_type": "code",
+          "content": "```txt\n\\$ samtools view -b celegans_copy.sam > celegans_copy.bam\n[E::sam_parse1] missing SAM header\n[W::sam_read1] parse error at line 1\n[main_samview] truncated file.\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.333,
+            0.859,
+            0.37
+          ],
+          "content": "Converting BAM to SAM loses information when we don’t include the header. We can include the header with -h:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.382,
+            0.861,
+            0.413
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ samtools view -h celegans.bam > celegans_copy.sam\n$ samtools view -b celegans_copy.sam > celegans_copy.bam #now we can convert back\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.42,
+            0.86,
+            0.498
+          ],
+          "content": "Usually we only need to convert BAM to SAM when manually inspecting files. In general, it’s better to store files in BAM format, as it’s more space efficient, compatible with all samtools subcommands, and faster to process (because tools can directly read in binary values rather than require parsing SAM strings)."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.41,
+            0.526,
+            0.589,
+            0.549
+          ],
+          "level": 2,
+          "content": "The CRAM Format"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.557,
+            0.845,
+            0.757
+          ],
+          "content": "Samtools now supports (after version 1) a new, highly compressed file format known as CRAM (see Fritz et al., 2011). Compressing alignments with CRAM can lead to a 10%–30% filesize reduction compared to BAM (and quite remarkably, with no significant increase in compression or decompression time compared to BAM). CRAM is a reference-based compression scheme, meaning only the aligned sequence that’s different from the reference sequence is recorded. This greatly reduces file size, as many sequences may align with minimal difference from the reference. As a consequence of this reference-based approach, it’s imperative that the reference is available and does not change, as this would lead to a loss of data kept in the CRAM format. Because the reference is so important, CRAM files contain an MD5 checksum of the reference file to ensure it has not changed."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.766,
+            0.844,
+            0.856
+          ],
+          "content": "CRAM also has support for multiple different lossy compression methods. Lossy compression entails some information about an alignment and the original read is lost. For example, it’s possible to bin base quality scores using a lower resolution binning scheme to reduce the filesize. CRAM has other lossy compression models; see [CRAMTools](http://github.com/enasequence/cramtools) for more details."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "366"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.451,
+            0.939
+          ],
+          "content": "Chapter 11: Working with Alignment Data"
+        }
+      ]
+    },
+    {
+      "page_idx": 396,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.154,
+            0.08,
+            0.844,
+            0.134
+          ],
+          "content": "Overall, working with CRAM files is not much different than working with SAM or BAM files; CRAM support is integrated into the latest Samtools versions. See [the documentation](http://bit.ly/cram-st) for more details on CRAM-based Samtools workflows."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.169,
+            0.396,
+            0.192
+          ],
+          "level": 2,
+          "content": "Samtools Sort and Index"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.201,
+            0.862,
+            0.298
+          ],
+          "content": "In “Indexed FASTA Files” on page 352, we saw how we can index a FASTA file to allow for faster random access of the sequence at specific regions in a FASTA file. Similarly, we sort (by alignment position) and index a BAM file to allow for fast random access to reads aligned within a certain region (we’ll see how to extract these regions in the next section)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.307,
+            0.719,
+            0.326
+          ],
+          "content": "We sort alignments by their alignment position with samtools sort:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.335,
+            0.627,
+            0.352
+          ],
+          "content": "\\$ samtools sort celegans\\_unsorted.bam celegans\\_sorted"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.36,
+            0.859,
+            0.398
+          ],
+          "content": "Here, the second argument is the output filename prefix (samtools sort will append the .bam extension for you)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.409,
+            0.861,
+            0.644
+          ],
+          "content": "Sorting a large number of alignments can be very computationally intensive, so sam tools sort has options that allow you to increase the memory allocation and parallelize sorting across multiple threads. Very often, large BAM files won’t fit entirely in memory, so samtools sort will divide the file into chunks, sort each chunk and write to a temporary file on disk, and then merge the results together; in computer science lingo, samtools sort uses a merge sort (which was also discussed in “Sorting Plain-Text Data with Sort” on page 147). Increasing the amount of memory samtools sort can use decreases the number of chunks samtools sort needs to divide the file into (because larger chunks can fit in memory), which makes sorting faster. Because merge sort algorithms sort each chunk independently until the final merge step, this can be parallelized. We can use the samtools sort option -m to increase the memory, and -@ to specify how many threads to use. For example:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.653,
+            0.719,
+            0.671
+          ],
+          "content": "\\$ samtools sort -m 4G -@ 2 celegans\\_unsorted.bam celegans\\_sorted"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.678,
+            0.862,
+            0.755
+          ],
+          "content": "samtools sort’s -m option supports the suffixes K (kilobytes), M (megabytes), and G (gigabytes) to specify the units of memory. Also, note though that in this example, the toy data file celegans\\_unsorted.bam is far too small for there to be any benefits in increasing the memory or parallelization."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.763,
+            0.862,
+            0.859
+          ],
+          "content": "Position-sorted BAM files are the starting point for most later processing steps such as SNP calling and extracting alignments from specific regions. Additionally, sorted BAM files are much more disk-space efficient than unsorted BAM files (and certainly more than plain-text SAM files). Most SAM/BAM processing tasks you’ll do in daily bioinformatics work will be to get you to this point."
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.387,
+            0.922,
+            0.799,
+            0.939
+          ],
+          "content": "Command-Line Tools for Working with Alignments in the SAM Format"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.859,
+            0.937
+          ],
+          "content": "367"
+        }
+      ]
+    },
+    {
+      "page_idx": 397,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.08,
+            0.861,
+            0.216
+          ],
+          "content": "Often, we want to work with alignments within a particular region in the genome. For example, we may want to extract these reads using samtools view or only call SNPs within this region using FreeBayes (Garrison et al., 2012) or samtools mpileup. Iterating through an entire BAM file just to work with a subset of reads at a position would be inefficient; consequently, BAM files can be indexed like we did in “Indexed FASTA Files” on page 352 with FASTA files. The BAM file must be sorted first, and we cannot index SAM files. To index a position-sorted BAM file, we simply use:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.226,
+            0.483,
+            0.241
+          ],
+          "content": "\\$ samtools index celegans\\_sorted.bam"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.249,
+            0.859,
+            0.287
+          ],
+          "content": "This creates a file named celegans\\_sorted.bam.bai, which contains the index for the celegans\\_sorted.bam file."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.304,
+            0.715,
+            0.33
+          ],
+          "level": 2,
+          "content": "Extracting and Filtering Alignments with samtools view"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.338,
+            0.86,
+            0.435
+          ],
+          "content": "Earlier, we saw how we can use samtools view to convert between SAM and BAM, but this is just scratching the surface of samtools view’s usefulness in working with alignment data. samtools view is a workhorse tool in extracting and filtering alignments in SAM and BAM files, and mastering it will provide you with important skills needed to explore alignments in these formats."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.453,
+            0.567,
+            0.473
+          ],
+          "level": 2,
+          "content": "Extracting alignments from a region with samtools view"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.48,
+            0.86,
+            0.557
+          ],
+          "content": "With a position-sorted and indexed BAM file, we can extract specific regions of an alignment with samtools view. To make this example more interesting, let’s use a subset of the 1000 Genomes Project data (1000 Genomes Project Consortium, 2012) that’s included in this chapter’s repository on GitHub. First, let’s index it:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.567,
+            0.509,
+            0.582
+          ],
+          "content": "\\$ samtools index NA12891\\_CEU\\_sample.bam"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.59,
+            0.859,
+            0.627
+          ],
+          "content": "Then, let’s take a look at some alignments in the region chromosome 1, 215,906,469-215,906,652:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.638,
+            0.785,
+            0.701
+          ],
+          "sub_type": "code",
+          "content": "```txt\n\\$ samtools view NA12891_CEU_sample.bam 1:215906469-215906652 | head -n 3\nSRR003212.5855757    147  1   215906433  60  33S43M = 215906402 [...] \nSRR003206.18432241  163  1   215906434  60  43M8S = 215906468 [...] \nSRR014595.5642583    16  1   215906435  37  8S43M * 0 [...]\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.708,
+            0.694,
+            0.727
+          ],
+          "content": "We could also write these alignments in BAM format to disk with:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.737,
+            0.727,
+            0.769
+          ],
+          "content": "\\$ samtools view -b NA12891\\_CEU\\_sample.bam 1:215906469-215906652 > USH2A\\_sample\\_alns.bam"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.777,
+            0.86,
+            0.816
+          ],
+          "content": "Lastly, note that if you have many regions stored in the BED format, samtools view can extract regions from a BED file with the -L option:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.826,
+            0.785,
+            0.889
+          ],
+          "sub_type": "code",
+          "content": "```dockerfile\n\\$ samtools view -L USH2A_exons.bed NA12891_CEU_sample.bam | head -n 3\nSRR003214.11652876 163 1 215796180 60 76M = 215796224 92 [...] \nSRR010927.6484300 163 1 215796188 60 51M = 215796213 76 [...] \nSRR005667.2049283 163 1 215796190 60 51M = 215796340 201 [...]\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "368"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.451,
+            0.939
+          ],
+          "content": "Chapter 11: Working with Alignment Data"
+        }
+      ]
+    },
+    {
+      "page_idx": 398,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.079,
+            0.447,
+            0.099
+          ],
+          "level": 2,
+          "content": "Filtering alignments with samtools view"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.106,
+            0.861,
+            0.222
+          ],
+          "content": "samtools view also has options for filtering alignments based on bitwise flags, mapping quality, read group. samtools view’s filtering features are extremely useful; very often we need to query BAM files for reads that match some criteria such as “all aligned proper-paired end reads with a mapping quality over 30.” Using samtools view, we can stream through and filter reads, and either pipe the results directly into another command or write them to a file."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.234,
+            0.861,
+            0.31
+          ],
+          "content": "First, note that samtools view (like other samtools subcommands) provides handy documentation within the program for all of its filtering options. You can see these any time by running the command without any arguments (to conserve space, I’ve included only a subset of the options):"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.35,
+            0.794,
+            0.506
+          ],
+          "sub_type": "code",
+          "content": "```txt\nUsage:  samtools view [options] <in.bam>|<in.sam>|<in.cram> [region ...]\n\nOptions: -b        output BAM\n    -C        output CRAM (requires -T)\n    -1        use fast BAM compression (implies -b)\n    -u        uncompressed BAM output (implies -b)\n    -h        include header in SAM output\n    -H        print SAM header only (no alignments)\n    -c        print only the count of matching records\n[...]\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.171,
+                0.319,
+                0.306,
+                0.335
+              ],
+              "content": "\\$ samtools view"
+            }
+          ],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.514,
+            0.86,
+            0.633
+          ],
+          "content": "Let’s first see how we can use samtools view to filter based on bitwise flags. There are two options related to this: -f, which only outputs reads with the specified flag(s), and -F, which only outputs reads without the specified flag(s). Let’s work through an example, using the samtools flags command to assist in figuring out the flags we need. Suppose you want to output all reads that are unmapped. UNMAP is a flag according to samtools flags:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.643,
+            0.365,
+            0.673
+          ],
+          "sub_type": "code",
+          "content": "```txt\n\\$ samtools flags unmap\n0x4      4       UNMAP\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.683,
+            0.714,
+            0.702
+          ],
+          "content": "Then, we use samtools view -f 4 to output reads with this flag set:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.711,
+            0.787,
+            0.774
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ samtools view -f 4 NA12891_CEU_sample.bam | head -n 3\nSRR003208.1496374    69   1   215623168 0  35M16S = 215623168 0  [...]\nSRR002141.16953736   181   1   215623191 0  40M11S = 215623191 0  [...]\nSRR002143.2512308   181   1   215623216 0 *     = 215623216 0  [...]\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.781,
+            0.859,
+            0.821
+          ],
+          "content": "Note that each of these flags (the second column) have the bit corresponding to unmapped set. We could verify this with samtools flags:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.831,
+            0.466,
+            0.861
+          ],
+          "sub_type": "code",
+          "content": "```csv\n\\$ samtools flags 69\n0x45    69    PAIRED,UNMAP,READ1\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.387,
+            0.922,
+            0.799,
+            0.939
+          ],
+          "content": "Command-Line Tools for Working with Alignments in the SAM Format"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.859,
+            0.937
+          ],
+          "content": "369"
+        }
+      ]
+    },
+    {
+      "page_idx": 399,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.08,
+            0.861,
+            0.14
+          ],
+          "content": "It’s also possible to output reads with multiple bitwise flags set. For example, we could find the first reads that aligned in a proper pair alignment. First, we use samtools flags to find out what the decimal representation of these two flags is:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.149,
+            0.465,
+            0.181
+          ],
+          "sub_type": "code",
+          "content": "```csv\n\\$ samtools flags READ1,PROPER_PAIR\n0x42 66 PROPER_PAIR,READ1\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.189,
+            0.687,
+            0.209
+          ],
+          "content": "Then, use samtools view’s -f option to extract these alignments:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.218,
+            0.785,
+            0.282
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ samtools view -f 66 NA12891_CEU_sample.bam | head -n 3\nSRR005672.8895       99  1   215622850  60  51M =  215623041  227    [...]\nSRR005674.4317449   99  1   215622863  37  51M =  215622987  175    [...]\nSRR010927.10846964  83  1   215622892  60  51M =  215622860 -83    [...]\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.289,
+            0.862,
+            0.348
+          ],
+          "content": "We can use the -F option to extract alignments that do not have any of the bits set of the supplied flag argument. For example, suppose we wanted to extract all aligned reads. We do this by filtering out all reads with the 0x4 bit (meaning unmapped) set:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.356,
+            0.811,
+            0.45
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ samtools flags UNMAP\n0x4      4       UNMAP\n\n$ samtools view -F 4 NA12891_CEU_sample.bam | head -n 3\nSRR005672.8895     99   1  215622850  60  51M    =  215623041  227  [...] \nSRR010927.10846964  163   1  215622860  60  35M16S  =  215622892  83  [...] \nSRR005674.4317449   99   1  215622863  37  51M    =  215622987  175  [...]\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.457,
+            0.86,
+            0.534
+          ],
+          "content": "Be aware that you will likely have to carefully combine bits to build queries that extract the information you want. For example, suppose you wanted to extract all reads that did not align in a proper pair. You might be tempted to approach this by filtering out all alignments that have the proper pair bit (0x2) set using:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.542,
+            0.642,
+            0.637
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ samtools flags PROPER_PAIR\n0x2      2       PROPER_PAIR\n$ samtools view -F 2 NA12891_CEU_sample.bam | head -n 3\nSRR005675.5348609   0  1  215622863  37  51M    [...]\nSRR002133.11695147   0  1  215622876  37  48M    [...]\nSRR002129.2750778   0  1  215622902  37  35M1S  [...]\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.643,
+            0.86,
+            0.701
+          ],
+          "content": "But beware—this would be incorrect! Both unmapped reads and unpaired reads will also be included in this output. Neither unmapped reads, nor unpaired reads will be in a proper pair and have this bit set."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "370"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.451,
+            0.939
+          ],
+          "content": "Chapter 11: Working with Alignment Data"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Bioinformatics Data Skills",
+      "authors": [
+        "Vince Buffalo"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "created_at": "2015-06-30T16:29:18Z",
+      "modified_at": "2015-06-30T13:45:47-04:00",
+      "creator_application": "AH CSS Formatter V6.2 MR4 for Linux64 : 6.2.6.18551 (2014/09/24 15:00JST)",
+      "producer_application": "Antenna House PDF Output Library 6.2.609 (Linux64)",
+      "page_count": 538,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 384,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 385,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 386,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 387,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 388,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 389,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 390,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 391,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 392,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 393,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 394,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 395,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 396,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 397,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 398,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 399,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

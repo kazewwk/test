@@ -1,0 +1,1801 @@
+{
+  "pages": [
+    {
+      "page_idx": 448,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.082,
+            0.254,
+            0.159
+          ],
+          "sub_type": "code",
+          "content": "```csv\nzmaysA_R2\nzmaysB_R1\nzmaysB_R2\nzmaysC_R1\nzmaysC_R2\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.168,
+            0.861,
+            0.244
+          ],
+          "content": "Then, we want to run the command fastq\\_stat --in file.fastq --out ../ summaries/file.txt, but with file replaced with the file’s base name. We do this by piping the sample names we’ve created earlier to another xargs command that runs fastq\\_stat:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.256,
+            0.727,
+            0.289
+          ],
+          "sub_type": "code",
+          "content": "```shell\n$ find . -name \"*.fastq\" | xargs basename -s \".fastq\" | \\\nxargs -I{} fastq_stat --in {}.fastq --out ../summaries/{}.txt\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.162,
+            0.308,
+            0.264,
+            0.385
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_448_image_3.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.268,
+            0.307,
+            0.409,
+            0.327
+          ],
+          "level": 2,
+          "content": "BSD and GNU xargs"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.336,
+            0.789,
+            0.482
+          ],
+          "content": "Unfortunately, the behavior of -I differs across BSD xargs (which is what OS X uses) and GNU xargs. BSD xargs will only replace up to five instances of the string specified by -I by default, unless more are set with -R. In general, it’s better to work with GNU xargs. If you’re on a Mac, you can install GNU Coreutils with Homebrew. To prevent a clash with your system’s xargs (the BSD version), Homebrew prefixes its version with g so the GNU version of xargs would be gxargs."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.505,
+            0.86,
+            0.662
+          ],
+          "content": "Combining xargs with basename is a powerful idiom used to apply commands to many files in a way that keeps track of which output file was created by a particular input file. While we could accomplish this other ways (e.g., through Bash for loops or custom Python scripts), xargs allows for very quick and incremental command building. However, as we’ll see in the next section, xargs has another very large advantage over for loops: it allows parallelization over a prespecified number of processes. Overall, it may take some practice to get these xargs tricks under your fingers, but they will serve you well for decades of bioinformatics work."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.679,
+            0.398,
+            0.703
+          ],
+          "level": 2,
+          "content": "xargs and Parallelization"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.712,
+            0.86,
+            0.81
+          ],
+          "content": "An incredibly powerful feature of xargs is that it can launch a limited number of processes in parallel. I emphasize limited number, because this is one of xargs’s strengths over Bash’s for loops. We could launch numerous multiple background processes with Bash for loops, which on a system with multiple processors would run in parallel (depending on other running tasks):"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.82,
+            0.406,
+            0.866
+          ],
+          "sub_type": "code",
+          "content": "```shell\nfor filename in *.fastq; do\n  program \"$filename\" &\ndone\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.515,
+            0.923,
+            0.798,
+            0.939
+          ],
+          "content": "Automating File-Processing with find and xargs"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.859,
+            0.937
+          ],
+          "content": "419"
+        }
+      ]
+    },
+    {
+      "page_idx": 449,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.081,
+            0.861,
+            0.218
+          ],
+          "content": "But this launches however many background processes there are files in \\*.fastq! This is certainly not good computing etiquette on a shared server, and even if you were the only user of this server, this might lead to bottlenecks as all processes start reading from and writing to the disk. Consequently, when running multiple process in parallel, we want to explicitly limit how many processes run simultaneously. xargs allows us to do this with the option -P &lt;num&gt; where &lt;num&gt; is the number of processes to run simultaneously."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.226,
+            0.861,
+            0.305
+          ],
+          "content": "Let’s look at a simple example—running our imaginary program fastq\\_stat in parallel, using at most six processes. We accomplish this by adding -P 6 to our second xargs call (there’s no point in parallelizing the basename command, as this will be very fast):"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.314,
+            0.77,
+            0.348
+          ],
+          "sub_type": "code",
+          "content": "```shell\n$ find . -name \"*.fastq\" | xargs basename -s \".fastq\" | \\\nxargs -P 6 -I{} fastq_stat --in {}.fastq --out ../summaries/{}.txt\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.355,
+            0.861,
+            0.414
+          ],
+          "content": "Generally, fastq\\_stat could be any program or even a shell script that performs many tasks per sample. The key point is that we provide all information the program or script needs to run through the sample name, which is what replaces the string {}."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.167,
+            0.428,
+            0.255,
+            0.516
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_449_image_4.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.266,
+            0.434,
+            0.465,
+            0.453
+          ],
+          "level": 2,
+          "content": "xargs, Pipes, and Redirects"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.462,
+            0.79,
+            0.606
+          ],
+          "content": "One stumbling block beginners frequently encounter is trying to use pipes and redirects with xargs. This won’t work, as the shell process that reads your xargs command will interpret pipes and redirects as what to do with xarg’s output, not as part of the command run by xargs. The simplest and cleanest trick to get around this limitation is to create a small Bash script containing the commands to process a single sample, and have xargs run this script in many parallel Bash processes. For example:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.299,
+            0.612,
+            0.756,
+            0.753
+          ],
+          "sub_type": "code",
+          "content": "```shell\n#!/bin/bash\nset -e\nset -u\nset -o pipefail\n\nsample_name=$(basename -s \".fastq\" \"$1\")\n\nsome_program ${sample_name}.fastq | another_program >\n${sample_name}-results.txt\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.267,
+            0.757,
+            0.425,
+            0.772
+          ],
+          "content": "Then, run this with:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.78,
+            0.789,
+            0.854
+          ],
+          "content": "\\$ find . -name \"\\*.fastq\" | xargs -n 1 -P 4 bash script.sh Where -n 1 forces xargs to process one input argument at a time. This could be easily parallelized by specifying how many processes to run with -P."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "420"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.697,
+            0.94
+          ],
+          "content": "Chapter 12: Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks"
+        }
+      ]
+    },
+    {
+      "page_idx": 450,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.081,
+            0.861,
+            0.219
+          ],
+          "content": "Admittedly, the price of some powerful xargs workflows is complexity. If you find yourself using xargs mostly to parallelize tasks or you’re writing complicated xargs commands that use basename, it may be worthwhile to learn GNU Parallel. GNU Parallel extends and enhances xargs’s functionality, and fixes several limitations of xargs. For example, GNU parallel can handle redirects in commands, and has a shortcut ({/.}) to extract the base filename without basename. This allows for very short, powerful commands:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.228,
+            0.842,
+            0.246
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ find . -name \"*.fastq\" | parallel --max-procs=6 'program {/.} > {/.}-out.txt'\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.252,
+            0.86,
+            0.329
+          ],
+          "content": "GNU Parallel has numerous other options and features. If you find yourself using xargs frequently for complicated workflows, I’d recommend learning more about GNU Parallel. The GNU Parallel website has numerous examples and [a detailed tutorial](http://www.gnu.org/software/parallel)."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.347,
+            0.757,
+            0.379
+          ],
+          "level": 2,
+          "content": "Make and Makefiles: Another Option for Pipelines"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.385,
+            0.86,
+            0.673
+          ],
+          "content": "Although this chapter has predominantly focused on building pipelines from Bash, and using find and xargs to apply commands to certain files, I can’t neglect to quickly introduce another very powerful tool used to create bioinformatics pipelines. This tool is Make, which interprets makefiles (written in their own makefile language). Make was intended to compile software, which is a complex process as each step that compiles a file needs to ensure every dependency is already compiled or available. Like SQL (which we cover in Chapter 13), the makefile language is declarative—unlike Bash scripts, makefiles don’t run from top to bottom. Rather, makefiles are constructed as a set of rules, where each rule has three parts: the target, the prerequisites, and the recipe. Each recipe is a set of commands used to build a target, which is a file. The prerequisites specify which files the recipe needs to build the target file (the dependencies). The amazing ingenuity of Make is that the program figures out how to use all rules to build files for you from the prerequisites and targets. Let’s look at a simple example—we want to write a simple pipeline that downloads a file from the Internet and creates a summary of it:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.681,
+            0.601,
+            0.858
+          ],
+          "sub_type": "code",
+          "content": "```makefile\nFASTA_FILE_LINK=http://bit.ly/egfr_flank ①\n\n.PHONY: all clean ②\n\nall: egfr_comp.txt ③\n\negfr_flank.fa: ④\n    curl -L $(FASTA_FILE_LINK) > egfr_flank.fa\n\negfr_comp.txt: egfr_flank.fa ⑤\n    seqtk comp egfr_flank.fa > egfr_comp.txt\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.503,
+            0.922,
+            0.799,
+            0.939
+          ],
+          "content": "Make and Makefiles: Another Option for Pipelines"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "421"
+        }
+      ]
+    },
+    {
+      "page_idx": 451,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.172,
+            0.079,
+            0.254,
+            0.095
+          ],
+          "content": "clean:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.24,
+            0.097,
+            0.524,
+            0.113
+          ],
+          "content": "rm -f egfr\\_comp.txt egfr\\_flank.fa"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.137,
+            0.128,
+            0.859,
+            0.659
+          ],
+          "sub_type": "text",
+          "content": "1 We define a variable in a makefile much like we do in a Bash script. We keep this link to this FASTA file at the top so it is noticeable and can be adjusted easily.\nThe targets all and clean in this makefile aren’t the names of files, but rather are just names of targets we can refer to. We indicate these targets aren’t files by specifying them as prerequisites in the special target .PHONY.\nall is the conventional name of the target used to build all files this makefile is meant to build. Here, the end goal of this simple example makefile is to download a FASTA file from the Internet and run seqtk comp on it, returning the sequence composition of this FASTA file. The final file we’re writing sequence composition to is egfr\\_comp.txt, so this is the prerequisite for the all target.\n4 This rule creates the file egfr\\_flank.fa. There are no prerequisites in this rule because there are no local files needed for the creation of egfr\\_flank.fa (as we’re downloading this file). Our recipe uses curl to download the link stored in the variable FASTA\\_FILE\\_LINK. Since this is a shortened link, we use curl’s -L option to follow redirects. Finally, note that to reference a variable’s value in a makefile, we use the syntax \\$(VARIABLE).\nThis rule creates the file containing the sequencing composition data, egfr\\_comp.txt. Because we need the FASTA file egfr\\_flank.fa to create this file, we specify egfr\\_flank.fa as a prerequisite. The recipe runs seqtk comp on the prerequisite, and redirects the output to the target file, egfr\\_comp.txt.\nFinally, it’s common to have a target called clean, which contains a recipe for cleaning up all files this makefile produces. This allows us to run make clean and return the directory to the state before the makefile was run."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.67,
+            0.861,
+            0.75
+          ],
+          "content": "We run makefiles using the command make. For the preceding makefile, we’d run it using make all, where the all argument specifies that make should start with the all target. Then, the program make will first search for a file named Makefile in the current directory, load it, and start at the target all. This would look like the following:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.759,
+            0.845,
+            0.869
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ make all\ncurl -L http://bit.ly/egfr_flank > egfr_flank.fa\n  % Total      % Received % Xferd   Average Speed Time Time Time Current\n                       Dload Upload Total Spent Left Speed\n100    190 100  190    0     0    566       0 --:--:-- --:--:-- --:--:--    567\n100    1215 100  1215    0     0    529       0 0:00:02 0:00:02 --:--:--    713\nseqtk comp egfr_flank.fa > egfr_comp.txt\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.937
+          ],
+          "content": "422"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.697,
+            0.94
+          ],
+          "content": "Chapter 12: Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks"
+        }
+      ]
+    },
+    {
+      "page_idx": 452,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.081,
+            0.861,
+            0.178
+          ],
+          "content": "An especially powerful feature of make is that it only generates targets when they don’t exist or when their prerequisites have been modified. This is very powerful: if you have a long and complex makefile, and you modified one file, make will only rerun the recipes for the targets that depend on this modified file (assuming you fully specified dependencies). Note what happens if we run make all again:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.187,
+            0.47,
+            0.218
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ make all\nmake: Nothing to be done for `all'.\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.226,
+            0.859,
+            0.286
+          ],
+          "content": "Because all targets have been created and no input files have been modified, there’s nothing to do. Now, look what happens if we use touch to change the modification time of the egfr\\_flank.fa file:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.294,
+            0.515,
+            0.341
+          ],
+          "sub_type": "code",
+          "content": "```tcl\n\\$ touch egfr_flank.fa\n\\$ make all\nseqtk comp egfr_flank.fa > egfr_comp.txt\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.35,
+            0.859,
+            0.389
+          ],
+          "content": "Because egfr\\_flank.fa is a prerequisite to create the egfr\\_comp.txt file, make reruns this rule to update egfr\\_comp.txt using the newest version of egfr\\_flank.txt."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.398,
+            0.65,
+            0.418
+          ],
+          "content": "Finally, we can remove all files created with our clean target:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.427,
+            0.456,
+            0.459
+          ],
+          "sub_type": "code",
+          "content": "```shell\n$ make clean\nrm -f egfr_comp.txt egfr_flank.fa\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.466,
+            0.86,
+            0.6
+          ],
+          "content": "We’re just scratching the surface of Make’s capabilities in this example; a full tutorial of this language is outside the scope of this book. Unfortunately, like Bash, Make’s syntax can be exceedingly cryptic and complicated for some more advanced tasks. Additionally, because makefiles are written in a declarative way (and executed in a nonlinear fashion), debugging makefiles can be exceptionally tricky. Still, Make is a useful tool that you should be aware of in case you need an option for simple tasks and workflows. For more information, see [the GNU Make documentation](http://bit.ly/gnu-make)."
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.503,
+            0.923,
+            0.798,
+            0.939
+          ],
+          "content": "Make and Makefiles: Another Option for Pipelines"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "423"
+        }
+      ]
+    },
+    {
+      "page_idx": 453,
+      "blocks": []
+    },
+    {
+      "page_idx": 454,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.722,
+            0.117,
+            0.859,
+            0.143
+          ],
+          "content": "CHAPTER 13"
+        },
+        {
+          "type": "doc_title",
+          "bbox": [
+            0.387,
+            0.153,
+            0.862,
+            0.227
+          ],
+          "level": 1,
+          "content": "Out-of-Memory Approaches: Tabix and SQLite"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.402,
+            0.861,
+            0.553
+          ],
+          "content": "In this chapter, we’ll look at out-of-memory approaches—computational strategies built around storing and working with data kept out of memory on the disk. Reading data from a disk is much, much slower than working with data in memory (see “The Almighty Unix Pipe: Speed and Beauty in One” on page 45), but in many cases this is the approach we have to take when in-memory (e.g., loading the entire dataset into R) or streaming approaches (e.g., using Unix pipes, as we did in Chapter 7) aren’t appropriate. Specifically, we’ll look at two tools to work with data out of memory: Tabix and SQLite databases."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.571,
+            0.661,
+            0.626
+          ],
+          "level": 2,
+          "content": "Fast Access to Indexed Tab-Delimited Files with BGZF and Tabix"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.638,
+            0.86,
+            0.81
+          ],
+          "content": "BGZF and Tabix solve a really important problem in genomics: we often need fast read-only random access to data linked to a genomic location or range. For the scale of data we encounter in genomics, retrieving this type of data is not trivial for a few reasons. First, the data may not fit entirely in memory, requiring an approach where data is kept out of memory (in other words, on a slow disk). Second, even powerful relational database systems can be sluggish when querying out millions of entries that overlap a specific region—an incredibly common operation in genomics. The tools we’ll see in this section are specially designed to get around these limitations, allowing fast random-access of tab-delimited genome position data."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.818,
+            0.861,
+            0.898
+          ],
+          "content": "In chapter on alignment, we saw how sorted and indexed BAM files allow us to quickly access alignments from within a particular region. The technology that allows fast random access of alignments within a region is based on an ingenious compression format called BGZF (Blocked GNU Zip Format), which uses the GNU Zip"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.924,
+            0.859,
+            0.937
+          ],
+          "content": "425"
+        }
+      ]
+    },
+    {
+      "page_idx": 455,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.081,
+            0.861,
+            0.236
+          ],
+          "continues_prev": true,
+          "content": "(gzip) compression format we first saw in “gzip” on page 119. However, while gzip compresses the entire file, BGZF files are compressed in blocks. These blocks provide BGZF files with a useful feature that gzip-compressed files don’t have: we can jump to and decompress a specific block without having to decompress the entire file. Block compression combined with file indexing is what enables fast random access of alignments from large BAM files with samtools view. In this section, we’ll utilize BGZF compression and a command-line tool called Tabix to provide fast random access to a variety of tab-delimited genomic formats, including GFF, BED, and VCF."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.245,
+            0.859,
+            0.303
+          ],
+          "content": "To use Tabix to quickly retrieve rows that overlap a query region, we first must prepare our file containing the genomic regions. We can prepare a file using the following steps:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.149,
+            0.318,
+            0.859,
+            0.409
+          ],
+          "sub_type": "text",
+          "content": "1. Sort the file by chromosome and start position, using Unix sort.\n2. Use the bgzip command-line tool to compress the file using BGZF.\n3. Index the file with tabix, specifying which format the data is in (or by manually specifying which columns contain the chromosome, start, and end positions)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.424,
+            0.861,
+            0.482
+          ],
+          "content": "Before getting started, check that you have the bgzip and tabix programs installed. These are both included with Samtools, and should already be installed if you’ve worked through Chapter 11. We’ll use both bgzip and tabix throughout this section."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.499,
+            0.536,
+            0.526
+          ],
+          "level": 2,
+          "content": "Compressing Files for Tabix with Bgzip"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.531,
+            0.86,
+            0.646
+          ],
+          "content": "Let’s use the gzipped Mus\\_musculus.GRCm38.75.gtf.gz file from this chapter’s directory in the GitHub repository in our Tabix examples. First, note that this file is compressed using gzip, not BGZF. To prepare this file, we first need to unzip it, sort by chromosome and start position, and then compress it with bgzip. We can transform this gzipped GTF file into a sorted BGZF-compressed file using a single line built from piped commands."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.657,
+            0.859,
+            0.695
+          ],
+          "content": "Unfortunately, we have to deal with one minor complication before calling sort—this GTF file has a metadata header at the top of the file:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.705,
+            0.585,
+            0.798
+          ],
+          "sub_type": "code",
+          "content": "```powershell\n$ gzcat Mus_musculus.GRCm38.75.gtf.gz | head -n5\n#!genome-build GRCm38.p2\n#!genome-version GRCm38\n#!genome-date 2012-01\n#!genome-build-accession NCBI:GCA_000001635.4\n#!genebuild-last-updated 2013-09\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.805,
+            0.859,
+            0.845
+          ],
+          "content": "We’ll get around this using the subshell trick we learned in “Subshells” on page 169, substituting the gzip step with bgzip:"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "426"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.542,
+            0.939
+          ],
+          "content": "Chapter 13: Out-of-Memory Approaches: Tabix and SQLite"
+        }
+      ]
+    },
+    {
+      "page_idx": 456,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.081,
+            0.702,
+            0.129
+          ],
+          "sub_type": "code",
+          "content": "```shell\n$ (zgrep \"^#\" Mus_musculus.GRCm38.75.gtf.gz; \\\n    zgrep -v \"^#\" Mus_musculus.GRCm38.75.gtf.gz | \\\n    sort -k1,1 -k4,4n) | bgzip > Mus_musculus.GRCm38.75.gtf.bg\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.136,
+            0.861,
+            0.293
+          ],
+          "content": "Remember, subshells are interpreted in a separate shell. All standard output produced from each sequential command is sent to bgzip, in the order it’s produced. In the preceding example, this has the effect of outputting the metadata header (lines that start with #), and then outputting all nonheader lines sorted by the first and fourth columns to bgzip. The end result is a bzip-compressed, sorted GTF file we can now index with tabix. Subshells are indeed a bit tricky—if you forget the specifics of how to use them to bgzip files with headers, the tabix man page (man tabix) has an example."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.309,
+            0.4,
+            0.334
+          ],
+          "level": 2,
+          "content": "Indexing Files with Tabix"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.342,
+            0.861,
+            0.479
+          ],
+          "content": "Once our tab-delimited data file (with data linked to genomic ranges) is compressed with BGZF, we can use the tabix command-line tool to index it. Indexing files with tabix is simple for files in standard bioinformatics formats—tabix has preset options for GTF/GFF, BED, SAM, VCF, and PSL (a tab-delimited format usually generated from BLAT). We can index a file in these formats using the -p argument. So, we index a GTF file that’s been compressed with bgzip (remember, files must be sorted and compressed with BGZF!) with:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.489,
+            0.559,
+            0.506
+          ],
+          "sub_type": "code",
+          "content": "```batch\n$ tabix -p gff Mus_musculus.GRCm38.75.gtf.bgz\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.513,
+            0.701,
+            0.532
+          ],
+          "content": "Note that Tabix created a new index file, ending with the suffix .tbi:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.172,
+            0.541,
+            0.466,
+            0.574
+          ],
+          "sub_type": "code",
+          "content": "```txt\n\\$ ls *tbi\nMus_musculus.GRCm38.75.gtf.bgz.tbi\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.581,
+            0.86,
+            0.658
+          ],
+          "content": "Tabix will also work with custom tab-delimited formats—we just need to specify the columns that contain the chromosome, start, and end positions. Run tabix without any arguments to see its help page for more information (but in general, it’s better to stick to an existing bioinformatics format whenever you can)."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.674,
+            0.263,
+            0.7
+          ],
+          "level": 2,
+          "content": "Using Tabix"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.708,
+            0.86,
+            0.784
+          ],
+          "content": "Once our tab-delimited file is indexed with Tabix, we can make fast random queries with the same tabix command we used to index the file. For example, to access features in Mus\\_musculus.GRCm38.75.gtf.bgz on chromosome 16, from 23,146,536 to 23,158,028, we use:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.794,
+            0.769,
+            0.858
+          ],
+          "sub_type": "code",
+          "content": "```tcl\n$ tabix Mus_musculus.GRCm38.75.gtf.bgz 16:23146536-23158028 | head -n3\n16 protein_coding UTR 23146536 23146641 [...] \n16 protein_coding exon 23146536 23146641 [...] \n16 protein_coding gene 23146536 23158028 [...]\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.427,
+            0.923,
+            0.799,
+            0.938
+          ],
+          "content": "Fast Access to Indexed Tab-Delimited Files with BGZF and Tabix"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.859,
+            0.937
+          ],
+          "content": "427"
+        }
+      ]
+    },
+    {
+      "page_idx": 457,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.08,
+            0.861,
+            0.138
+          ],
+          "content": "From here, we could redirect these results to a file or use them directly in a stream. For example, we might want to pipe these results to awk and extract rows with the feature column “exon” in this region:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.148,
+            0.718,
+            0.273
+          ],
+          "sub_type": "algorithm",
+          "content": "\\$ tabix Mus\\_musculus.GRCm38.75.gtf.bgz 16:23146536-23158028 | awk '\\$3 \\~ /exon/ {print}'\n16 protein\\_coding exon 23146536 23146641 [...] 16 protein\\_coding exon 23146646 23146734 [...] 16 protein\\_coding exon 23155217 23155447 [...] 16 protein\\_coding exon 23155217 23155447 [...] 16 protein\\_coding exon 23157074 23157292 [...] 16 protein\\_coding exon 23157074 23158028 [...]",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.28,
+            0.861,
+            0.359
+          ],
+          "content": "A nice feature of Tabix is that it works across an HTTP or FTP server. Once you’ve sorted, bgzipped, and indexed a file with tabix, you can host the file on a shared server so others in your group can work with it remotely. Sharing files this way is outside the scope of this book, but it’s worth noting Tabix supports this possibility."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.375,
+            0.75,
+            0.406
+          ],
+          "level": 2,
+          "content": "Introducing Relational Databases Through SQLite"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.413,
+            0.86,
+            0.568
+          ],
+          "content": "Many standard bioinformatics data formats (GTF/GFF, BED, VCF/BCF, SAM/BAM) we’ve encountered so far store tabular data in single flat file formats. Flat file formats don’t have any internal hierarchy or structured relationship with other tables. While we’re able to join tables using Unix tools like join, and R’s match() and merge() functions, the flat files themselves do not encode any relationships between tables. Flat file formats are widely used in bioinformatics because they’re simple, flexible, and portable, but occasionally we do need to store and manipulate data that is best represented in many related tables—this is where relational databases are useful."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.575,
+            0.86,
+            0.672
+          ],
+          "content": "Unlike flat files, relational databases can contain multiple tables. Relational databases also support methods that use relationships between tables to join and extract specific records using specialized queries. The most common language for querying relational databases is SQL (Structured Query Language), which we’ll use throughout the remainder of this chapter."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.68,
+            0.861,
+            0.891
+          ],
+          "content": "In this section, we’ll learn about a relational database management system (the software that implements a relational database, also known as RDBMS) called SQLite. SQLite is an entirely self-contained database system that runs as a single process on your machine. We’ll use SQLite in this section because it doesn’t require any setup— you can create a database and start making queries with minimal time spent on configuring and administrating your database. In contrast, other database systems like MySQL and PostgreSQL require extensive configuration just to get them up and running. While SQLite is not as powerful as these larger database systems, it works surprisingly well for databases in the gigabytes range. In cases when we do need a relational database management system in bioinformatics (less often than you’d think, as we’ll see in the next section), SQLite performs well. I like to describe SQLite as hav‐"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "428"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.542,
+            0.939
+          ],
+          "content": "Chapter 13: Out-of-Memory Approaches: Tabix and SQLite"
+        }
+      ]
+    },
+    {
+      "page_idx": 458,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.08,
+            0.859,
+            0.118
+          ],
+          "continues_prev": true,
+          "content": "ing the highest ratio of power and usability to setup cost of any relational database system."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.141,
+            0.135,
+            0.673,
+            0.159
+          ],
+          "level": 2,
+          "content": "When to Use Relational Databases in Bioinformatics"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.168,
+            0.86,
+            0.337
+          ],
+          "content": "As it turns out, you’ll need to directly interact with relational databases less often than you might think, for two reasons. First, many large bioinformatics databases provide user-friendly application programming interfaces (known more commonly by their acronym, API) for accessing data. It’s often more convenient to access data through an API than by interacting with databases directly. This is because APIs allow you to interact with higher-level applications so you don’t have to worry about the gritty details of how the database is structured to get information out. For example, both [Ensembl](http://ensembl.org) and [Entrez Global Query](http://www.ncbi.nlm.nih.gov/gquery/) have APIs that simplify accessing data from these resources."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.348,
+            0.86,
+            0.481
+          ],
+          "content": "Second, for many bioinformatics tasks, using a relational database often isn’t the best solution. Relational databases are designed for storing and managing multiple records in many tables, where users will often need to add new records, update existing records, and extract specific records using queries. To get an idea of when relational databases are a suitable choice, let’s compare working with two different types of data: a curated set of gene models and a set of alignment data from a sequencing experiment."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.141,
+            0.493,
+            0.357,
+            0.512
+          ],
+          "level": 2,
+          "content": "Adding and Merging Data"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.176,
+            0.513,
+            0.86,
+            0.683
+          ],
+          "content": "Suppose we need to merge a set of new gene models with an existing database of gene models. Simply concatenating the new gene models to the database of existing gene models isn’t appropriate, as we could end up with duplicate exons, gene identifiers, gene names, and the like. These duplicate entries would lead to cluttered queries in the future (e.g., fetching all exons from a certain gene would return duplicate exons). With datasets like these, we need a structured way to query existing records, and only add gene models that aren’t already in the dataset. Relational databases provide data insertion methods that simplify keeping consistent relationships among data."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.176,
+            0.692,
+            0.86,
+            0.865
+          ],
+          "content": "In contrast, when we merge two alignment files, we don’t have to maintain any consistency or structure—each alignment is essentially an observation in an experiment. To merge two alignment files, we can simply concatenate two align ment files together (though with proper tools like samtools merge and attention to issues like the RG dictionary in the header). Additionally, we don’t have to pay attention to details like duplicates during the merge step. Duplicate alignments created by technical steps like PCR are best removed using specialized programs designed to remove duplicates. Overall, the nature of alignment data obviates the need for advanced data merging operations."
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.506,
+            0.923,
+            0.796,
+            0.938
+          ],
+          "content": "Introducing Relational Databases Through SQLite"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.924,
+            0.858,
+            0.936
+          ],
+          "content": "429"
+        }
+      ]
+    },
+    {
+      "page_idx": 459,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.143,
+            0.081,
+            0.265,
+            0.098
+          ],
+          "level": 2,
+          "content": "Updating Data"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.176,
+            0.1,
+            0.86,
+            0.327
+          ],
+          "content": "Suppose now that a collaborator has run a new version of gene finding software. After some data processing, you produce a list of gene models that differ from your original gene models. After some careful checking, it’s decided that the new gene models are superior, and you need to update all original gene models with the new models’ coordinates. As with merging data, these types of update operations are much simpler to do using a relational database system. SQL provides an expressive syntax for updating existing data. Additionally, relational databases simplify updating relationships between data. If an updated gene model includes two new exons, these can be added to a relational database without modifying additional data. Relational databases also allow for different versions of databases and tables, which allows you to safely archive past gene models (good for reproducibility!)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.177,
+            0.337,
+            0.725,
+            0.355
+          ],
+          "content": "In contrast, consider that any updates we make to alignment data:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.191,
+            0.366,
+            0.677,
+            0.434
+          ],
+          "sub_type": "text",
+          "content": "• Are never made in place (changing the original dataset)\n• Usually affect all alignments, not a specific subset\n• Do not require sophisticated queries"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.176,
+            0.447,
+            0.859,
+            0.54
+          ],
+          "content": "As a result, any updates we need to make to alignment data are made with specialized tools that usually operate on streams of data (which allows them to be included in processing pipelines). Using tools designed specifically to update certain alignment attributes will always be faster than trying to store alignments in a database and update all entries."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.142,
+            0.553,
+            0.262,
+            0.571
+          ],
+          "level": 2,
+          "content": "Querying data"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.176,
+            0.572,
+            0.86,
+            0.8
+          ],
+          "content": "Querying information from a set of gene models can become quite involved. For example, imagine you had to write a script to find the first exon for all transcripts for all genes in a given set of gene identifiers. This wouldn’t be too difficult, but writing separate scripts for additional queries would be tedious. If you were working with a large set of gene models, searching each gene model for a matching identifier would be unnecessarily slow. Again, relational databases streamline these types of queries. First, SQL acts as a language you can use to specify any type of query. Second, unlike Python and R, SQL is a declarative language, meaning you state what you want, not how to get it (the RDBMS implements this). This means you don’t have to implement the specific code that retrieves gene models matching your query. Last, RDBMS allow you to index certain columns, which can substantially speed up querying data."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.176,
+            0.809,
+            0.859,
+            0.886
+          ],
+          "content": "On the other hand, the queries made to alignment data are often much simpler. The most common query is to extract alignments from a specific region, and as we saw in Chapter 11, this can be easily accomplished with samtools view. Querying alignments within a region in a position-sorted and indexed BAM file"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.924,
+            0.166,
+            0.936
+          ],
+          "content": "430"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.541,
+            0.939
+          ],
+          "content": "Chapter 13: Out-of-Memory Approaches: Tabix and SQLite"
+        }
+      ]
+    },
+    {
+      "page_idx": 460,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.172,
+            0.08,
+            0.861,
+            0.176
+          ],
+          "continues_prev": true,
+          "content": "is much faster than loading all alignments into a database and extracting align ments with SQL. Additionally, sorted BAM files are much more space efficient and other than a small index file, there’s no additional overhead in indexing alignments for fast retrieval. For other types of queries, we can use algorithms that stream through an entire BAM file."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.185,
+            0.861,
+            0.337
+          ],
+          "content": "This comparison illustrates the types of applications where a relational database would be most suitable. Overall, databases are not appropriate for raw experimental data, which rarely needs to be merged or modified in a way not possible with a streaming algorithm. For these activities, specialized bioinformatics formats (such as SAM/BAM, VCF/VCF) and tools to work with these formats will be more computationally efficient. Relational databases are better suited for smaller, refined datasets where relationships between records are easily represented and can be utilized while querying out data."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.354,
+            0.315,
+            0.379
+          ],
+          "level": 2,
+          "content": "Installing SQLite"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.386,
+            0.862,
+            0.485
+          ],
+          "content": "Unlike MySQL and PostgreSQL, SQLite doesn’t require separate server and client programs. You can install on OS X with Homebrew, using brew install sqlite, or on an Ubuntu machine with apt-get using apt-get install sqlite3. The [SQLite website](http://www.sqlite.org/) also has source code you can download, compile, and install yourself (but it’s preferable to just use your ports/packages manager)."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.501,
+            0.776,
+            0.526
+          ],
+          "level": 2,
+          "content": "Exploring SQLite Databases with the Command-Line Interface"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.533,
+            0.86,
+            0.744
+          ],
+          "content": "We’ll learn the basics of SQL through SQLite, focusing on how to build powerful queries and use joins that take advantage of the relational structure of databases. We’ll start off with the gwascat.db example database included in this chapter’s directory in the book’s GitHub repository. This is a SQLite database containing a table of the National Human Genome Research Institute’s catalog of published Genome-Wide Association Studies (GWAS) with some modifications (Welter et al., 2014). In later examples, we’ll use another database using a different relational structure of this data. The code and documentation on how these databases were created is included in the same directory in the GitHub repository. The process of structuring, creating, and managing a database is outside the scope of this chapter, but I encourage you to refer to Jay A. Kreibich’s book [Using SQLite](http://bit.ly/using_sqlite) and Anthony Molinaro’s [SQL Cookbook](http://bit.ly/SQL_Cookbook)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.752,
+            0.861,
+            0.811
+          ],
+          "content": "Each SQLite database is stored in its own file (as explained on the [SQLite website](http://www.sqlite.org/onefile.html)). We can connect to our example database, the gwascat.db file, using SQLite’s command-line tool sqlite3. This leaves you with an interactive SQLite prompt:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.17,
+            0.82,
+            0.524,
+            0.867
+          ],
+          "content": "\\$ sqlite3 gwascat.db SQLite version 3.7.13 2012-07-17 17:46:21 Enter \".help\" for instructions"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.505,
+            0.923,
+            0.798,
+            0.939
+          ],
+          "content": "Introducing Relational Databases Through SQLite"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "431"
+        }
+      ]
+    },
+    {
+      "page_idx": 461,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.081,
+            0.531,
+            0.113
+          ],
+          "content": "Enter SQL statements terminated with a \";\" sqlite>"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.121,
+            0.862,
+            0.198
+          ],
+          "content": "We can issue commands to the SQLite program (not the databases it contains) using dot commands, which start with a . (and must not begin with whitespace). For example, to list the tables in our SQLite database, we use .tables (additional dot commands are listed in Table 13-1):"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.208,
+            0.306,
+            0.24
+          ],
+          "sub_type": "code",
+          "content": "```txt\nsqlite> .tables\ngwascat\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.141,
+            0.28,
+            0.859,
+            0.613
+          ],
+          "content": "| Command | Description |\n| --- | --- |\n| .exit, .quit | Exit SQLite |\n| .help | List all SQLite dot commands |\n| .tables | Print a list of all tables |\n| .schema | Print the table schema (the SQL statement used to create a table) |\n| .headers &lt;on,off> | Turn column headers on, off |\n| .import | Import a file into SQLite (see SQLite's documentation for more information) |\n| .indices | Show column indices (see \"Indexing\" on page 457) |\n| .mode | Set output mode (e.g., csv, column, tabs, etc.; see .help for a full list) |\n| .read &lt;filename> | Execute SQL from file |",
+          "captions": [
+            {
+              "bbox": [
+                0.14,
+                0.257,
+                0.468,
+                0.275
+              ],
+              "content": "Table 13-1. Useful SQLite3 dot commands"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_461_table_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.632,
+            0.86,
+            0.803
+          ],
+          "content": "From .tables, we know this database contains one table: gwascat. Our next step in working with this table is understanding its columns and the recommended type used to store data in that column. In database lingo, we call the structure of a database and its tables (including their columns, preferred types, and relationships between tables) the schema. Note that it’s vital to understand a database’s schema before querying data (and even more so when inserting data). In bioinformatics, we often run into the situation where we need to interact with a remote public SQL database, often with very complex schema. Missing important schema details can lead to incorrectly structured queries and erroneous results."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.813,
+            0.859,
+            0.851
+          ],
+          "content": "In SQLite, the .schema dot command prints the original SQL CREATE statements used to create the tables:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.172,
+            0.862,
+            0.355,
+            0.893
+          ],
+          "sub_type": "code",
+          "content": "```sql\nsqlite> .schema\nCREATE TABLE gwascat(\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.937
+          ],
+          "content": "432"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.542,
+            0.94
+          ],
+          "content": "Chapter 13: Out-of-Memory Approaches: Tabix and SQLite"
+        }
+      ]
+    },
+    {
+      "page_idx": 462,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.081,
+            0.445,
+            0.236
+          ],
+          "sub_type": "code",
+          "content": "```txt\nid integer PRIMARY KEY NOT NULL,\ndbdate text,\npubmedid integer,\nauthor text,\ndate text,\njournal text,\nlink text,\nstudy text,\ntrait text,\n[...]\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.245,
+            0.861,
+            0.379
+          ],
+          "content": "Don’t worry too much about the specifics of the CREATE statement—we’ll cover this later. More importantly, .schema provides a list of all columns and their preferred type. Before going any further, it’s important to note an important feature of SQLite: columns do not have types, data values have types. This is a bit like a spreadsheet: while a column of height measurements should all be real-valued numbers (e.g., 63.4, 59.4, etc.), there’s no strict rule mandating this is the case. In SQLite, data values are one of five types:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.157,
+            0.396,
+            0.522,
+            0.514
+          ],
+          "sub_type": "text",
+          "content": "• text\n• integer\n• real\n• NULL, used for missing data, or no value"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.155,
+            0.495,
+            0.845,
+            0.514
+          ],
+          "content": "• BLOB, which stands for binary large object, and stores any type of object as bytes"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.529,
+            0.86,
+            0.679
+          ],
+          "content": "But again, SQLite’s table columns do not enforce all data must be the same type. This makes SQLite unlike other database systems such as MySQL and PostgreSQL, which have strict column types. Instead, each column of a SQLite table has a preferred type called a type affinity. When data is inserted into a SQLite table, SQLite will try to coerce this data into the preferred type. Much like R, SQLite follows a set of coercion rules that don’t lead to a loss of information. We’ll talk more about the different SQLite type affinities when we discuss creating tables in “Creating tables” on page 455."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.167,
+            0.697,
+            0.255,
+            0.785
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_462_image_9.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.268,
+            0.702,
+            0.391,
+            0.72
+          ],
+          "level": 2,
+          "content": "Orderly Columns"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.73,
+            0.788,
+            0.818
+          ],
+          "content": "Despite SQLite’s column type leniency, it’s best to try to keep data stored in the same column all the same type. Keeping orderly columns makes downstream processing much easier because you won’t need to worry about whether the data in a column is all different types."
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.506,
+            0.923,
+            0.798,
+            0.939
+          ],
+          "content": "Introducing Relational Databases Through SQLite"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "433"
+        }
+      ]
+    },
+    {
+      "page_idx": 463,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.081,
+            0.861,
+            0.138
+          ],
+          "content": "With the skills to list tables with .tables and peek at their schema using .schema, we’re ready to start interacting with data held in tables using the SQL SELECT command."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.156,
+            0.67,
+            0.182
+          ],
+          "level": 2,
+          "content": "Querying Out Data: The Almighty SELECT Command"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.19,
+            0.861,
+            0.343
+          ],
+          "content": "Querying out data using the SQL SELECT command is one of the most important data skills you can learn. Even if you seldom use relational database systems, the reasoning behind querying data using SQL is applicable to many other problems. Also, while we’ll use our example gwascat.db database in these examples, the SELECT syntax is fairly consistent among other relational database management systems. Consequently, you’ll be able to apply these same querying techniques when working with public MySQL biological databases like UCSC’s Genome Browser and Ensembl databases."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.353,
+            0.859,
+            0.393
+          ],
+          "content": "In its most basic form, the SELECT statement simply fetches rows from a table. The most basic SELECT query grabs all rows from all columns from a table:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.403,
+            0.803,
+            0.511
+          ],
+          "sub_type": "code",
+          "content": "```txt\nsqlite> SELECT * FROM gwascat;\nid|dbdate|pubmedid|author|date|journal| [...]\n1|08/02/2014|24388013|Ferreira MA|12/30/2013|J Allergy Clin Immunol| [...]\n2|08/02/2014|24388013|Ferreira MA|12/30/2013|J Allergy Clin Immunol| [...]\n3|08/02/2014|24388013|Ferreira MA|12/30/2013|J Allergy Clin Immunol| [...]\n4|08/02/2014|24388013|Ferreira MA|12/30/2013|J Allergy Clin Immunol| [...]\n[...]\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.519,
+            0.861,
+            0.579
+          ],
+          "content": "The syntax of this simple SELECT statement is SELECT &lt;columns&gt; FROM &lt;tablename&gt;. Here, the asterisk (\\*) denotes that we want to select all columns in the table specified by FROM (in this case, gwascat). Note that SQL statements must end with a semicolon."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.167,
+            0.594,
+            0.255,
+            0.683
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_463_image_6.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.267,
+            0.599,
+            0.593,
+            0.618
+          ],
+          "level": 2,
+          "content": "Working with the SQLite Command-Line Tool"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.628,
+            0.79,
+            0.788
+          ],
+          "content": "If you make a mistake entering a SQLite command, it can be frustrating to cancel it and start again. With text entered, sqlite3 won’t obey exiting with Control-c;—the sqlite3 command-line client isn’t user-friendly in this regard. The best way around this is to use Control-u, which clears all input to the beginning of the line. If your input has already carried over to the next line, the only solution is a hack—you’ll need to close any open quotes, enter a syntax error so your command won’t run, finish your statement with ;, and run it so sqlite3 errors out."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.811,
+            0.861,
+            0.889
+          ],
+          "content": "The sqlite3 command-line tool can also take queries directly from the command line (rather than in the interactive SQLite shell). This is especially useful when writing processing pipelines that need to execute a SQL statement to retrieve data. For example, if we wanted to retrieve all data in the gwascat table:"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "434"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.542,
+            0.939
+          ],
+          "content": "Chapter 13: Out-of-Memory Approaches: Tabix and SQLite"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Bioinformatics Data Skills",
+      "authors": [
+        "Vince Buffalo"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "created_at": "2015-06-30T16:29:18Z",
+      "modified_at": "2015-06-30T13:45:47-04:00",
+      "creator_application": "AH CSS Formatter V6.2 MR4 for Linux64 : 6.2.6.18551 (2014/09/24 15:00JST)",
+      "producer_application": "Antenna House PDF Output Library 6.2.609 (Linux64)",
+      "page_count": 538,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 448,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 449,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 450,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 451,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 452,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 453,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 454,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 455,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 456,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 457,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 458,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 459,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 460,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 461,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 462,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 463,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

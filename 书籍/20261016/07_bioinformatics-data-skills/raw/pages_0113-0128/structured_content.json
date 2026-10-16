@@ -1,0 +1,2088 @@
+{
+  "pages": [
+    {
+      "page_idx": 112,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.08,
+            0.861,
+            0.138
+          ],
+          "content": "of your project’s dependencies are in one place and are managed by Git. In the long run, it’s far easier to have Git keep track of your project’s files, than try to keep track of them yourself."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.155,
+            0.411,
+            0.181
+          ],
+          "level": 2,
+          "content": "Undoing a Stage: git reset"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.187,
+            0.861,
+            0.264
+          ],
+          "content": "Recall that one nice feature of Git is that you don’t have to include messy changes in a commit—just don’t stage these files. If you accidentally stage a messy file for a commit with git add, you can unstage it with git reset. For example, suppose you add a change to a file, stage it, but decide it’s not ready to be committed:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.274,
+            0.718,
+            0.412
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ echo \"TODO: ask sequencing center about adapters\" >> README.md\n$ git add README.md\n$ git status\n# On branch master\n# Changes to be committed:\n# (use \"git reset HEAD <file>...\" to unstage)\n#\n# new file: README.md\n#\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.422,
+            0.859,
+            0.478
+          ],
+          "content": "With git status, we can see that our change to README.md is going to be included in the next commit. To unstage this change, follow the directions git status provides:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.49,
+            0.735,
+            0.643
+          ],
+          "sub_type": "code",
+          "content": "```perl\n$ git reset HEAD README.md\n$ git status\n# On branch master\n# Changes not staged for commit:\n# (use \"git add <file>...\" to update what will be committed)\n# (use \"git checkout -- <file>...\" to discard changes in working directory)\n#\n# modified: README.md\n#\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.653,
+            0.86,
+            0.77
+          ],
+          "content": "The syntax seems a little strange, but all we’re doing is resetting our staging area (which Git calls the index) to the version at HEAD for our README.md file. In Git’s lingo, HEAD is an alias or pointer to the last commit on the current branch (which is, as mentioned earlier, the default Git branch called master). Git’s reset command is a powerful tool, but its default action is to just reset your index. We’ll see additional ways to use git reset when we learn about working with commit histories."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.787,
+            0.849,
+            0.818
+          ],
+          "level": 2,
+          "content": "Collaborating with Git: Git Remotes, git push, and git pull"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.826,
+            0.86,
+            0.884
+          ],
+          "content": "Thus far, we’ve covered the very basics of Git: tracking and working with files, staging changes, making commits, and looking at our commit history. Commits are the foundation of Git—they are the snapshots of our project as it evolves. Commits allow you"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.465,
+            0.923,
+            0.806,
+            0.94
+          ],
+          "content": "Collaborating with Git: Git Remotes, git push, and git pull"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.84,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "83"
+        }
+      ]
+    },
+    {
+      "page_idx": 113,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.08,
+            0.858,
+            0.157
+          ],
+          "continues_prev": true,
+          "content": "to go back in time and look at, compare, and recover past versions, which are all topics we look at later in this chapter. In this section, we’re going to learn how to collaborate with Git, which at its core is just about sharing commits between your repository and your collaborators’ repositories."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.166,
+            0.859,
+            0.283
+          ],
+          "content": "The basis of sharing commits in Git is the idea of a remote repository, which is just a version of your repository hosted elsewhere. This could be a shared departmental server, your colleague’s version of your repository, or on a repository hosting service like GitHub or Bitbucket. Collaborating with Git first requires we configure our local repository to work with our remote repositories. Then, we can retrieve commits from a remote repository (a pull) and send commits to a remote repository (a push)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.289,
+            0.859,
+            0.366
+          ],
+          "content": "Note that Git, as a distributed version control system, allows you to work with remote repositories any way you like. These workflow choices are up to you and your collaborators. In this chapter, we’ll learn an easy common workflow to get started with: collaborating over a shared central repository."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.374,
+            0.859,
+            0.468
+          ],
+          "content": "Let’s take a look at an example: suppose that you’re working on a project you wish to share with a colleague. You start the project in your local repository. After you’ve made a few commits, you want to share your progress by sharing these commits with your collaborator. Let’s step through the entire workflow before seeing how to execute it with Git:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.149,
+            0.484,
+            0.857,
+            0.736
+          ],
+          "sub_type": "text",
+          "content": "1. You create a shared central repository on a server that both you and your collaborator have access to.\n2. You push your project’s initial commits to this repository (seen in (a) in Figure 5-3).\n3. Your collaborator then retrieves your initial work by cloning this central repository (seen in (b) in Figure 5-3).\n4. Then, your collaborator makes her changes to the project, commits them to her local repository, and then pushes these commits to the central repository (seen in (a) in Figure 5-4).\n5. You then pull in the commits your collaborator pushed to the central repository (seen in (b) in Figure 5-4). The commit history of your project will be a mix of both you and your collaborator’s commits."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.924,
+            0.16,
+            0.936
+          ],
+          "content": "84"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.194,
+            0.922,
+            0.356,
+            0.939
+          ],
+          "content": "Chapter 5: Git for Scientists"
+        }
+      ]
+    },
+    {
+      "page_idx": 114,
+      "blocks": [
+        {
+          "type": "image",
+          "bbox": [
+            0.277,
+            0.089,
+            0.447,
+            0.226
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph TD\n  A[\"Shared central repository\"] --> B[\"Your repository\"]\n  B -->|\"git push\"| A\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.373,
+                0.235,
+                0.397,
+                0.253
+              ],
+              "content": "(a)"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_114_image_0.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.509,
+            0.089,
+            0.717,
+            0.226
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph TD\n  A[\"Shared central repository\"] -->|\"git clone\"| B[\"collaborator's repository\"]\n  C[\"Your repository\"] -.-> B\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.599,
+                0.235,
+                0.624,
+                0.253
+              ],
+              "content": "(b)"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_114_image_2.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.283,
+            0.351,
+            0.486,
+            0.488
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph TD\n  A[\"Shared central repository\"] -->|\"git push\"| B[\"collaborator's repository\"]\n  C[\"Your repository\"] -.-> A\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.137,
+                0.267,
+                0.851,
+                0.325
+              ],
+              "content": "Figure 5-3. After creating a new shared central repository, you push your project’s commits (a); your collaborator can retrieve your project and its commits by cloning this central repository (b)"
+            },
+            {
+              "bbox": [
+                0.371,
+                0.497,
+                0.396,
+                0.515
+              ],
+              "content": "(a)"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_114_image_5.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.509,
+            0.351,
+            0.713,
+            0.487
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph TD\n  A[\"Shared central repository\"] -->|\"git pull\"| B[\"Your repository\"]\n  B --> C[\"collaborator's repository\"]\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.598,
+                0.497,
+                0.622,
+                0.515
+              ],
+              "content": "(b)"
+            },
+            {
+              "bbox": [
+                0.137,
+                0.529,
+                0.851,
+                0.586
+              ],
+              "content": "Figure 5-4. After making and committing changes, your collaborator pushes them to the central repository (a); to retrieve your collaborator’s new commits, you pull them from the central repository (b)"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_114_image_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.604,
+            0.86,
+            0.737
+          ],
+          "content": "This process then repeats: you and your collaborator work independently in your own local repositories, and when either of you have commits to share, you push them to the central repository. In many cases, if you and your collaborator work on different files or different sections of the same file, Git can automatically figure out how best to merge these changes. This is an amazing feature of collaborating with Git: you and your collaborator can work on the same project simultaneously. Before we dive into how to do this, there is one caveat to discuss."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.746,
+            0.861,
+            0.862
+          ],
+          "content": "It’s important to note that Git cannot always automatically merge code and documents. If you and your collaborator are both editing the same section of the same file and both of you commit these changes, this will create a merge conflict. Unfortunately, one of you will have to resolve the conflicting files manually. Merge conflicts occur when you (or your collaborator) pull in commits from the central repository and your collaborator’s (or your) commits conflict with those in the local repository. In"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.465,
+            0.923,
+            0.806,
+            0.94
+          ],
+          "content": "Collaborating with Git: Git Remotes, git push, and git pull"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.84,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "85"
+        }
+      ]
+    },
+    {
+      "page_idx": 115,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.08,
+            0.857,
+            0.118
+          ],
+          "continues_prev": true,
+          "content": "these cases, Git just isn’t smart enough to figure out how to reconcile you and your collaborator’s conflicting versions."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.127,
+            0.859,
+            0.297
+          ],
+          "content": "Most of us are familiar with this process when we collaboratively edit manuscripts in a word processor. If you write a manuscript and send it to all your collaborators to edit, you will need to manually settle sections with conflicting edits. Usually, we get around this messy situation through planning and prioritizing which coauthors will edit first, and gradually incorporating changes. Likewise, good communication and planning with your collaborators can go far in preventing Git merge conflicts, too. Additionally, it’s helpful to frequently push and pull commits to the central repository; this keeps all collaborators synced so everyone’s working with the newest versions of files."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.141,
+            0.315,
+            0.649,
+            0.34
+          ],
+          "level": 2,
+          "content": "Creating a Shared Central Repository with GitHub"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.348,
+            0.859,
+            0.462
+          ],
+          "content": "The first step of our workflow is to create a shared central repository, which is what you and your collaborator(s) share commits through. In our examples, we will use GitHub, a web-based Git repository hosting service. [Bitbucket](http://bitbucket.org/) is another Git repository hosting service you and your collaborators could use. Both are excellent; we’ll use GitHub because it’s already home to many large bioinformatics projects like Biopython and Samtools."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.471,
+            0.859,
+            0.662
+          ],
+          "content": "Navigate to [http://github.com](http://github.com) and sign up for an account. After your account is set up, you’ll be brought to the GitHub home page, which is a newsfeed for you to follow project development (this newsfeed is useful to follow how bioinformatics software you use changes over time). On the main page, there’s a link to create a new repository. After you’ve navigated to [the Create a New Repository page](https://github.com/new), you’ll see you need to provide a repository name, and you’ll have the choice to initialize with a README.md file (GitHub plays well with Markdown), a .gitignore file, and a license (to license your software project). For now, just create a repository named zmayssnps. After you’ve clicked the “Create repository” button, GitHub will forward you to an empty repository page—the public frontend of your project."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.671,
+            0.517,
+            0.69
+          ],
+          "content": "There are a few things to note about GitHub:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.159,
+            0.705,
+            0.861,
+            0.858
+          ],
+          "content": "• Public repositories are free, but private repositories require you to pay. Luckily, GitHub has [a special program for educational users](http://github.com/edu). If you need private repositories without cost, Bitbucket has a different pricing scheme and provides some for free. Or, you can set up your own internal Git repository on your network if you have shared server space. Setting up your own Git server is out of the scope of this book, but see “Git on the Server - Setting Up the Server” in Scott Chacon and Ben Straub’s free online book [Pro Git](http://bit.ly/setup-server) for more information. If your repository is public, anyone can see the source (and even clone and develop their own ver‐"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.141,
+            0.924,
+            0.16,
+            0.936
+          ],
+          "content": "86"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.194,
+            0.923,
+            0.356,
+            0.938
+          ],
+          "content": "Chapter 5: Git for Scientists"
+        }
+      ]
+    },
+    {
+      "page_idx": 116,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.08,
+            0.858,
+            0.119
+          ],
+          "continues_prev": true,
+          "content": "sions of your repository). However, other users don’t have access to modify your GitHub repository unless you grant it to them."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.156,
+            0.124,
+            0.856,
+            0.345
+          ],
+          "sub_type": "text",
+          "content": "• If you’re going to use GitHub for collaboration, all participating collaborators need a GitHub account.\n• By default, you are the only person who has write (push) access to the repository you created. To use your remote repository as a shared central repository, you’ll have to add collaborators in your GitHub repository’s settings. Collaborators are GitHub users who have access to push their changes to your repository on Git‐Hub (which modifies it).\n• There are other common GitHub workflows. For example, if you manage a lab or other group, you can set up an organization account. You can create repositories and share them with collaborators under the organization’s name. We’ll discuss other GitHub workflows later in this chapter."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.378,
+            0.482,
+            0.403
+          ],
+          "level": 2,
+          "content": "Authenticating with Git Remotes"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.411,
+            0.861,
+            0.584
+          ],
+          "content": "GitHub uses SSH keys to authenticate you (the same sort we generated in “Quick Authentication with SSH Keys” on page 59). SSH keys prevent you from having to enter a password each time you push or pull from your remote repository. Recall in “Quick Authentication with SSH Keys” on page 59 we generated two SSH keys: a public key and a private key. Navigate to your account settings on GitHub, and in account settings, find the SSH keys tab. Here, you can enter your public SSH key (remember, don’t share your private key!) by using cat \\~/.ssh/id\\_rsa.pub to view it, copying it to your clipboard, and pasting it into GitHub’s form. You can then try out your SSH public key by using:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.594,
+            0.616,
+            0.64
+          ],
+          "sub_type": "code",
+          "content": "```txt\n\\$ ssh -T git@github.com\nHi vsbuffalo! You've successfully authenticated, but GitHub does not provide shell access.\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.648,
+            0.831,
+            0.668
+          ],
+          "content": "If you’re having troubles with this, consult GitHub’s [“Generating SSH Keys” article](http://bit.ly/genkeys)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.675,
+            0.859,
+            0.751
+          ],
+          "content": "GitHub allows you to use to HTTP as a protocol, but this is typically only used if your network blocks SSH. By default, HTTP asks for passwords each time you try to pull and push (which gets tiresome quickly), but there are ways around this—see GitHub’s [“Caching Your GitHub Password in Git”](http://bit.ly/cache-pw) article."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.769,
+            0.563,
+            0.794
+          ],
+          "level": 2,
+          "content": "Connecting with Git Remotes: git remote"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.802,
+            0.856,
+            0.84
+          ],
+          "content": "Now, let’s configure our local repository to use the GitHub repository we’ve just created as a remote repository. We can do this with git remote add:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.17,
+            0.851,
+            0.7,
+            0.867
+          ],
+          "content": "\\$ git remote add origin git@github.com:username/zmays-snps.git"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.465,
+            0.923,
+            0.806,
+            0.939
+          ],
+          "content": "Collaborating with Git: Git Remotes, git push, and git pull"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.84,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "87"
+        }
+      ]
+    },
+    {
+      "page_idx": 117,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.08,
+            0.858,
+            0.176
+          ],
+          "content": "In this command, we specify not only the address of our Git repository (git@github.com:username/zmays-snps.git), but also a name for it: origin. By convention, origin is the name of your primary remote repository. In fact, earlier when we cloned Seqtk from GitHub, Git automatically added the URL we cloned from as a remote named origin."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.186,
+            0.859,
+            0.224
+          ],
+          "content": "Now if you enter git remote -v (the -v makes it more verbose), you see that our local Git repository knows about the remote repository:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.234,
+            0.635,
+            0.282
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ git remote -v\norigin  git@github.com:username/zmays-snps.git (fetch)\norigin  git@github.com:username/zmays-snps.git (push)\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.288,
+            0.859,
+            0.326
+          ],
+          "content": "Indeed, origin is now a repository we can push commits to and fetch commits from. We’ll see how to do both of these operations in the next two sections."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.335,
+            0.861,
+            0.432
+          ],
+          "content": "It’s worth noting too that you can have multiple remote repositories. Earlier, we mentioned that Git is a distributed version control system; as a result, we can have many remote repositories. We’ll come back to how this is useful later on. For now, note that you can add other remote repositories with different names. If you ever need to delete an unused remote repository, you can with git remote rm &lt;repository-name&gt;."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.448,
+            0.71,
+            0.475
+          ],
+          "level": 2,
+          "content": "Pushing Commits to a Remote Repository with git push"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.481,
+            0.86,
+            0.577
+          ],
+          "content": "With our remotes added, we’re ready to share our work by pushing our commits to a remote repository. Collaboration on Git is characterized by repeatedly pushing your work to allow your collaborators to see and work on it, and pulling their changes into your own local repository. As you start collaborating, remember you only share the commits you’ve made."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.585,
+            0.86,
+            0.683
+          ],
+          "content": "Let’s push our initial commits from zmays-snps into our remote repository on Git‐Hub. The subcommand we use here is git push &lt;remote-name&gt; &lt;branch&gt;. We’ll talk more about using branches later, but recall from “Tracking Files in Git: git add and git status Part I” on page 72 that our default branch name is master. Thus, to push our zmays-snps repository’s commits, we do this:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.691,
+            0.666,
+            0.816
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ git push origin master\nCounting objects: 14, done.\nDelta compression using up to 2 threads.\nCompressing objects: 100% (9/9), done.\nWriting objects: 100% (14/14), 1.24 KiB | 0 bytes/s, done.\nTotal 14 (delta 0), reused 0 (delta 0)\nTo git@github.com:vsbuffalo/zmays-snps.git\n * [new branch]      master -> master\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.823,
+            0.86,
+            0.881
+          ],
+          "content": "That’s it—your collaborator now has access to all commits that were on your master branch through the central repository. Your collaborator retrieves these commits by pulling them from the central repository into her own local repository."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.16,
+            0.936
+          ],
+          "content": "88"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.194,
+            0.922,
+            0.356,
+            0.939
+          ],
+          "content": "Chapter 5: Git for Scientists"
+        }
+      ]
+    },
+    {
+      "page_idx": 118,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.079,
+            0.718,
+            0.105
+          ],
+          "level": 2,
+          "content": "Pulling Commits from a Remote Repository with git pull"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.112,
+            0.862,
+            0.248
+          ],
+          "content": "As you push new commits to the central repository, your collaborator’s repository will go out of date, as there are commits on the shared repository she doesn’t have in her own local repository. She’ll need to pull these commits in before continuing with her work. Collaboration on Git is a back-and-forth exchange, where one person pushes their latest commits to the remote repository, other collaborators pull changes into their local repositories, make their own changes and commits, and then push these commits to the central repository for others to see and work with."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.254,
+            0.861,
+            0.368
+          ],
+          "content": "To work through an example of this exchange, we will clone our own repository to a different directory, mimicking a collaborator’s version of the project. Let’s first clone our remote repository to a local directory named zmay-snps-barbara/. This directory name reflects that this local repository is meant to represent our colleague Barbara’s repository. We can clone zmays-snps from GitHub to a local directory named zmayssnps-barbara/ as follows:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.379,
+            0.768,
+            0.487
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ git clone git@github.com:vsbuffalo/zmays-snps.git zmays-snps-barbara\nCloning into 'zmays-snps-barbara'...\nremote: Counting objects: 14, done.\nremote: Compressing objects: 100% (9/9), done.\nremote: Total 14 (delta 0), reused 14 (delta 0)\nReceiving objects: 100% (14/14), done.\nChecking connectivity... done\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.496,
+            0.86,
+            0.554
+          ],
+          "content": "Now, both repositories have the same commits. You can verify this by using git log and seeing that both have the same commits. Now, in our original zmay-snps/ local repository, let’s modify a file, make a commit, and push to the central repository:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.563,
+            0.769,
+            0.748
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ echo \"Samples expected from sequencing core 2013-01-10\" >> README.md\n$ git commit -a -m \"added information about samples\"\n[master 46f0781] added information about samples\n 1 file changed, 1 insertion(+)\n$ git push origin master\nCounting objects: 5, done.\nDelta compression using up to 2 threads.\nCompressing objects: 100% (3/3), done.\nWriting objects: 100% (3/3), 415 bytes | 0 bytes/s, done.\nTotal 3 (delta 0), reused 0 (delta 0)\nTo git@github.com:vsbuffalo/zmays-snps.git\n    c509f63..46f0781 master -> master\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.756,
+            0.86,
+            0.814
+          ],
+          "content": "Now, Barbara’s repository (zmays-snps-barbara) is a commit behind both our local zmays-snps repository and the central shared repository. Barbara can pull in this change as follows:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.824,
+            0.563,
+            0.886
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ # in zmays-snps-barbara/\n$ git pull origin master\nremote: Counting objects: 5, done.\nremote: Compressing objects: 100% (3/3), done.\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.465,
+            0.923,
+            0.806,
+            0.94
+          ],
+          "content": "Collaborating with Git: Git Remotes, git push, and git pull"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.84,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "89"
+        }
+      ]
+    },
+    {
+      "page_idx": 119,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.081,
+            0.582,
+            0.221
+          ],
+          "sub_type": "code",
+          "content": "```txt\nremote: Total 3 (delta 0), reused 3 (delta 0)\nUnpacking objects: 100% (3/3), done.\nFrom github.com:vsbuffalo/zmays-snps\n * branch          master      -> FETCH_HEAD\n   c509f63..46f0781 master      -> origin/master\nUpdating c509f63..46f0781\nFast-forward\n README.md | 1 +\n 1 file changed, 1 insertion(+)\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.23,
+            0.861,
+            0.288
+          ],
+          "content": "We can verify that Barbara’s repository contains the most recent commit using git log. Because we just want a quick image of the last few commits, I will use git log with some helpful formatting options:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.298,
+            0.592,
+            0.405
+          ],
+          "sub_type": "code",
+          "content": "```shell\n$ # in zmays-snps-barbara/\n$ git log --pretty=oneline --abbrev-commit\n46f0781 added information about samples\nc509f63 added .gitignore\ne4feb22 added markdown extensions to README files\n94e2365 added information about project to README\n3d7ffa6 initial import\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.414,
+            0.789,
+            0.433
+          ],
+          "content": "Now, our commits are in both the central repository and Barbara’s repository."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.449,
+            0.695,
+            0.475
+          ],
+          "level": 2,
+          "content": "Working with Your Collaborators: Pushing and Pulling"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.482,
+            0.86,
+            0.577
+          ],
+          "content": "Once you grow a bit more acquainted with pushing and pulling commits, it will become second nature. I recommend practicing this with fake repositories with a labmate or friend to get the hang of it. Other than merge conflicts (which we cover in the next section), there’s nothing tricky about pushing and pulling. Let’s go through a few more pushes and pulls so it’s extremely clear."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.587,
+            0.861,
+            0.703
+          ],
+          "content": "In the last section, Barbara pulled our new commit into her repository. But she will also create and push her own commits to the central repository. To continue our example, let’s make a commit from Barbara’s local repository and push it to the central repository. Because there is no Barbara (Git is using the account we made at the beginning of this chapter to make commits), I will modify git log’s output to show Barbara as the collaborator. Suppose she adds the following line to the README.md:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.712,
+            0.727,
+            0.882
+          ],
+          "sub_type": "code",
+          "content": "```powershell\n$ # in zmays-snps-barbara/ -- Barbara's version\n$ echo \"\\n\\nMaize reference genome version: refgen3\" >> README.md\n$ git commit -a -m \"added reference genome info\"\n[master 269aa09] added reference genome info\n 1 file changed, 3 insertions(+)\n$ git push origin master\nCounting objects: 5, done.\nDelta compression using up to 2 threads.\nCompressing objects: 100% (3/3), done.\nWriting objects: 100% (3/3), 390 bytes | 0 bytes/s, done.\nTotal 3 (delta 1), reused 0 (delta 0)\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.924,
+            0.16,
+            0.936
+          ],
+          "content": "90"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.194,
+            0.922,
+            0.356,
+            0.939
+          ],
+          "content": "Chapter 5: Git for Scientists"
+        }
+      ]
+    },
+    {
+      "page_idx": 120,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.173,
+            0.081,
+            0.531,
+            0.111
+          ],
+          "sub_type": "code",
+          "content": "```txt\nTo git@github.com:vsbuffalo/zmays-snps.git\n46f0781..269aa09 master -> master\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.121,
+            0.861,
+            0.178
+          ],
+          "content": "Now Barbara’s local repository and the central repository are two commits ahead of our local repository. Let’s switch to our zmays-snps repository, and pull these new commits in. We can see how Barbara’s commits changed README.md with cat:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.188,
+            0.585,
+            0.314
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ # in zmays-snps/ -- our version\n$ git pull origin master\nFrom github.com:vsbuffalo/zmays-snps\n  * branch          master      -> FETCH_HEAD\nUpdating 46f0781..269aa09\nFast-forward\n  README.md | 3 +++\n  1 file changed, 3 insertions(+)\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.172,
+            0.328,
+            0.584,
+            0.39
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ cat README.md\nZea Mays SNP Calling Project\nProject started 2013-01-03\nSamples expected from sequencing core 2013-01-10\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.42,
+            0.506,
+            0.435
+          ],
+          "sub_type": "code",
+          "content": "```txt\nMaize reference genome version: refgen3\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.444,
+            0.739,
+            0.462
+          ],
+          "content": "If we were to look at the last two log entries, they would look as follows:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.473,
+            0.573,
+            0.535
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ git log -n 2\ncommit 269aa09418b0d47645c5d077369686ff04b16393\nAuthor: Barbara <barbara@barbarasmaize.com>\nDate:   Sat Sep 28 22:58:55 2013 -0700\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.206,
+            0.55,
+            0.44,
+            0.565
+          ],
+          "sub_type": "code",
+          "content": "```txt\nadded reference genome info\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.581,
+            0.591,
+            0.626
+          ],
+          "sub_type": "code",
+          "content": "```txt\ncommit 46f0781e9e081c6c9ee08b2d83a8464e9a26ae1f\nAuthor: Vince Buffalo <vsbuffaloAAAAAA@gmail.com>\nDate:   Tue Sep 24 00:31:31 2013 -0700\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.206,
+            0.642,
+            0.473,
+            0.657
+          ],
+          "sub_type": "code",
+          "content": "```txt\nadded information about samples\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.665,
+            0.859,
+            0.742
+          ],
+          "content": "This is what collaboration looks like in Git’s history: a set of sequential commits made by different people. Each is a snapshot of their repository and the changes they made since the last commit. All commits, whether they originate from your collaborator’s or your repository, are part of the same history and point to their parent commit."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.751,
+            0.857,
+            0.79
+          ],
+          "content": "Because new commits build on top of the commit history, it’s helpful to do the following to avoid problems:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.155,
+            0.804,
+            0.859,
+            0.862
+          ],
+          "content": "• When pulling in changes, it helps to have your project’s changes committed. Git will error out if a pull would change a file that you have uncommitted changes to, but it’s still helpful to commit your important changes before pulling."
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.465,
+            0.923,
+            0.806,
+            0.94
+          ],
+          "content": "Collaborating with Git: Git Remotes, git push, and git pull"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.84,
+            0.923,
+            0.857,
+            0.937
+          ],
+          "content": "91"
+        }
+      ]
+    },
+    {
+      "page_idx": 121,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.08,
+            0.861,
+            0.157
+          ],
+          "content": "• Pull often. This complements the earlier advice: planning and communicating what you’ll work on with your collaborators. By pulling in your collaborator’s changes often, you’re in a better position to build on your collaborators’ changes. Avoid working on older, out-of-date commits."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.188,
+            0.304,
+            0.214
+          ],
+          "level": 2,
+          "content": "Merge Conflicts"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.221,
+            0.861,
+            0.298
+          ],
+          "content": "Occasionally, you’ll pull in commits and Git will warn you there’s a merge conflict. Resolving merge conflicts can be a bit tricky—if you’re struggling with this chapter so far, you can bookmark this section and return to it when you encounter a merge conflict in your own work."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.307,
+            0.861,
+            0.385
+          ],
+          "content": "Merge conflicts occur when Git can’t automatically merge your repository with the commits from the latest pull—Git needs your input on how best to resolve a conflict in the version of the file. Merge conflicts seem scary, but the strategy to solve them is always the same:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.145,
+            0.395,
+            0.862,
+            0.556
+          ],
+          "sub_type": "text",
+          "content": "1. Use git status to find the conflicting file(s).\n2. Open and edit those files manually to a version that fixes the conflict.\n3. Use git add to tell Git that you’ve resolved the conflict in a particular file.\n4. Once all conflicts are resolved, use git status to check that all changes are staged. Then, commit the resolved versions of the conflicting file(s). It’s also wise to immediately push this merge commit, so your collaborators see that you’ve resolved a conflict and can continue their work on this new version accordingly."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.567,
+            0.862,
+            0.683
+          ],
+          "content": "As an example, let’s create a merge conflict between our zmays-snps repository and Barbara’s zmays-snps-barbara repository. One common situation where merge conflicts arise is to pull in a collaborator’s changes that affect a file you’ve made and committed changes to. For example, suppose that Barbara changed README.md to something like the following (you’ll have to do this in your text editor if you’re following along):"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.17,
+            0.691,
+            0.585,
+            0.74
+          ],
+          "content": "Zea Mays SNP Calling Project Project started 2013-01-03 Samples expected from sequencing core 2013-01-10"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.17,
+            0.769,
+            0.744,
+            0.801
+          ],
+          "content": "Maize reference genome version: refgen3, downloaded 2013-01-04 from http://maizegdb.org into \\`/share/data/refgen3/\\`."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.808,
+            0.861,
+            0.847
+          ],
+          "content": "After making these edits to README.md, Barbara commits and pushes these changes. Meanwhile, in your repository, you also changed the last line:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.856,
+            0.415,
+            0.887
+          ],
+          "content": "Zea Mays SNP Calling Project Project started 2013-01-03"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.924,
+            0.16,
+            0.936
+          ],
+          "content": "92"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.194,
+            0.922,
+            0.357,
+            0.939
+          ],
+          "content": "Chapter 5: Git for Scientists"
+        }
+      ]
+    },
+    {
+      "page_idx": 122,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.172,
+            0.082,
+            0.584,
+            0.097
+          ],
+          "content": "Samples expected from sequencing core 2013-01-10"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.128,
+            0.48,
+            0.143
+          ],
+          "content": "We downloaded refgen3 on 2013-01-04."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.151,
+            0.86,
+            0.19
+          ],
+          "content": "You commit this change, and then try to push to the shared central repository. To your surprise, you get the following error message:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.2,
+            0.822,
+            0.339
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ git push origin master\nTo git@github.com:vsbuffalo/zmays-snps.git\n  ! [rejected]          master -> master (fetch first)\nerror: failed to push some refs to 'git@github.com:vsbuffalo/zmays-snps.git'\nhint: Updates were rejected because the remote contains work that you do\nhint: not have locally. This is usually caused by another repository pushing\nhint: to the same ref. You may want to first integrate the remote changes\nhint: (e.g., 'git pull ...') before pushing again.\nhint: See the 'Note about fast-forwards' in 'git push --help' for details.\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.347,
+            0.861,
+            0.461
+          ],
+          "content": "Git rejects your push attempt because Barbara has already updated the central repository’s master branch. As Git’s message describes, we need to resolve this by integrating the commits Barbara has pushed into our own local repository. Let’s pull in Barbara’s commit, and then try pushing as the message suggests (note that this error is not a merge conflict—rather, it just tells us we can’t push to a remote that’s one or more commits ahead of our local repository):"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.471,
+            0.725,
+            0.641
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ git pull origin master\nremote: Counting objects: 5, done.\nremote: Compressing objects: 100% (2/2), done.\nremote: Total 3 (delta 1), reused 3 (delta 1)\nUnpacking objects: 100% (3/3), done.\nFrom github.com:vsbuffalo/zmays-snps\n * branch          master      -> FETCH_HEAD\n   269aa09..dafce75  master     -> origin/master\nAuto-merging README.md\nCONFLICT (content): Merge conflict in README.md\nAutomatic merge failed; fix conflicts and then commit the result.\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.649,
+            0.859,
+            0.688
+          ],
+          "content": "This is the merge conflict. This message isn’t very helpful, so we follow the first step of the merge strategy by checking everything with git status:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.698,
+            0.727,
+            0.869
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ git status\n# On branch master\n# You have unmerged paths.\n# (fix conflicts and run \"git commit\")\n#\n# Unmerged paths:\n# (use \"git add <file>...\" to mark resolution)\n#\n# both modified: README.md\n#\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.465,
+            0.923,
+            0.806,
+            0.94
+          ],
+          "content": "Collaborating with Git: Git Remotes, git push, and git pull"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.84,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "93"
+        }
+      ]
+    },
+    {
+      "page_idx": 123,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.081,
+            0.861,
+            0.138
+          ],
+          "content": "git status tells us that there is only one file with a merge conflict, README.md (because we both edited it). The second step of our strategy is to look at our conflicting file(s) in our text editor:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.149,
+            0.583,
+            0.196
+          ],
+          "sub_type": "code",
+          "content": "```txt\nZea Mays SNP Calling Project\nProject started 2013-01-03\nSamples expected from sequencing core 2013-01-10\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.224,
+            0.744,
+            0.318
+          ],
+          "sub_type": "code",
+          "content": "```txt\n<<<<<< HEAD ①\nWe downloaded refgen3 on 2013-01-04.\n====== ②\nMaize reference genome version: refgen3, downloaded 2013-01-04 from http://maizegdb.org into `/share/data/refgen3/'. >>>>>> dafce75dc531d123922741613d8f29b894e605ac ③\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.327,
+            0.809,
+            0.347
+          ],
+          "content": "Notice Git has changed the content of this file in indicating the conflicting lines."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.138,
+            0.363,
+            0.861,
+            0.532
+          ],
+          "sub_type": "text",
+          "content": "This is the start of our version, the one that’s HEAD in our repository. HEAD is Git’s lingo for the latest commit (technically, HEAD points to the latest commit on the current branch).\nIndicates the end of HEAD and beginning of our collaborator’s changes.\nThis final delimiter indicates the end of our collaborator’s version, and the different conflicting chunk. Git does its best to try to isolate the conflicting lines, so there can be many of these chunks."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.541,
+            0.86,
+            0.636
+          ],
+          "content": "Now we use step two of our merge conflict strategy: edit the conflicting file to resolve all conflicts. Remember, Git raises merge conflicts when it can’t figure out what to do, so you’re the one who has to manually resolve the issue. Resolving merge conflicts in files takes some practice. After resolving the conflict in README.md, the edited file would appear as follows:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.647,
+            0.583,
+            0.694
+          ],
+          "sub_type": "code",
+          "content": "```txt\nZea Mays SNP Calling Project\nProject started 2013-01-03\nSamples expected from sequencing core 2013-01-10\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.724,
+            0.744,
+            0.755
+          ],
+          "sub_type": "code",
+          "content": "```txt\nWe downloaded the B73 reference genome (refgen3) on 2013-01-04 from http://maizegdb.org into `/share/data/refgen3/`.\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.763,
+            0.86,
+            0.82
+          ],
+          "content": "I’ve edited this file so it’s a combination of both versions. We’re happy now with our changes, so we continue to the third step of our strategy—using git add to declare this conflict has been resolved:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.172,
+            0.831,
+            0.338,
+            0.846
+          ],
+          "sub_type": "code",
+          "content": "```txt\n\\$ git add README.md\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.855,
+            0.859,
+            0.893
+          ],
+          "content": "Now, the final step in our strategy—check git status to ensure all conflicts are resolved and ready to be merged, and commit them:"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.924,
+            0.16,
+            0.936
+          ],
+          "content": "94"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.194,
+            0.922,
+            0.356,
+            0.939
+          ],
+          "content": "Chapter 5: Git for Scientists"
+        }
+      ]
+    },
+    {
+      "page_idx": 124,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.082,
+            0.659,
+            0.282
+          ],
+          "sub_type": "code",
+          "content": "```shell\n$ git status\ngit status\n# On branch master\n# All conflicts fixed but you are still merging.\n# (use \"git commit\" to conclude merge)\n#\n# Changes to be committed:\n#\n# modified: README.md\n#\n$ git commit -a -m \"resolved merge conflict in README.md\"\n[master 20041ab] resolved merge conflict in README.md\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.29,
+            0.861,
+            0.363
+          ],
+          "content": "That’s it: our merge conflict is resolved! With our local repository up to date, our last step is to share our merge commit with our collaborator. This way, our collaborators know of the merge and can continue their work from the new merged version of the file."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.377,
+            0.859,
+            0.414
+          ],
+          "content": "After pushing our merge commit to the central repository with git push, let’s switch to Barbara’s local repository and pull in the merge commit:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.424,
+            0.583,
+            0.61
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ git pull origin master\nremote: Counting objects: 10, done.\nremote: Compressing objects: 100% (4/4), done.\nremote: Total 6 (delta 2), reused 5 (delta 2)\nUnpacking objects: 100% (6/6), done.\nFrom github.com:vsbuffalo/zmays-snps\n * branch          master      -> FETCH_HEAD\n   dafce75..20041ab master     -> origin/master\nUpdating dafce75..20041ab\nFast-forward\n README.md | 2 +-\n 1 file changed, 1 insertion(+), 1 deletion(-)\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.619,
+            0.722,
+            0.638
+          ],
+          "content": "Using git log we see that this is a special commit—a merge commit:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.647,
+            0.591,
+            0.71
+          ],
+          "sub_type": "code",
+          "content": "```txt\ncommit cd72acf0a81cdd688cb713465cb774320caeb2fd\nMerge: f9114a1 d99121e\nAuthor: Vince Buffalo <vsbuffaloAAAAA@gmail.com>\nDate:   Sat Sep 28 20:38:01 2013 -0700\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.206,
+            0.725,
+            0.515,
+            0.74
+          ],
+          "content": "resolved merge conflict in README.md"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.748,
+            0.86,
+            0.806
+          ],
+          "content": "Merge commits are special, in that they have two parents. This happened because both Barbara and I committed changes to the same file with the same parent commit. Graphically, this situation looks like Figure 5-5."
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.465,
+            0.923,
+            0.806,
+            0.94
+          ],
+          "content": "Collaborating with Git: Git Remotes, git push, and git pull"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.84,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "95"
+        }
+      ]
+    },
+    {
+      "page_idx": 125,
+      "blocks": [
+        {
+          "type": "image",
+          "bbox": [
+            0.325,
+            0.086,
+            0.672,
+            0.205
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph TD\n  A[\"20041ab\"] --> B[\"08ccd3b\"]\n  A --> C[\"dafce75\"]\n  B --> D[\"269aa09\"]\n  C --> D\n  D --> E[\"...\"]\n  subgraph Merge_commit[\"\\\"Merge commit\\\"\"]\n    A\n    B\n    C\n  end\n  style E fill:#fff,stroke:#333\n  style D fill:#fff,stroke:#333\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.137,
+                0.219,
+                0.828,
+                0.256
+              ],
+              "content": "Figure 5-5. A merge commit has two parents—in this case, Barbara’s version and our version; merge commits resolve conflicts between versions"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_125_image_0.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.276,
+            0.859,
+            0.314
+          ],
+          "content": "We can also see the same story through git log with the option --graph, which draws a plain-text graph of your commits:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.323,
+            0.625,
+            0.601
+          ],
+          "sub_type": "code",
+          "content": "```txt\n* commit 20041abaab156c39152a632ea7e306540f89f706\n|\\ Merge: 08ccd3b dafce75\n| | Author: Vince Buffalo <vsbuffaloAAAAAA@gmail.com>\n| | Date: Sat Sep 28 23:13:07 2013 -0700\n||\n|| resolved merge conflict in README.md\n||\n| * commit dafce75dc531d123922741613d8f29b894e605ac\n| | Author: Vince Buffalo <vsbuffaloAAAAAA@gmail.com>\n| | Date: Sat Sep 28 23:09:01 2013 -0700\n||\n|| added ref genome download date and link\n||\n* | commit 08ccd3b056785513442fc405f568e61306d62d4b\n|/ Author: Vince Buffalo <vsbuffaloAAAAAA@gmail.com>\n| Date: Sat Sep 28 23:10:39 2013 -0700\n|\n| added reference download date\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.609,
+            0.86,
+            0.726
+          ],
+          "content": "Merge conflicts are intimidating at first, but following the four-step strategy introduced at the beginning of this section will get you through it. Remember to repeatedly check git status to see what needs to be resolved, and use git add to stage edited files as you resolve the conflicts in them. At any point, if you’re overwhelmed, you can abort a merge with git merge --abort and start over (but beware: you’ll lose any changes you’ve made)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.734,
+            0.86,
+            0.83
+          ],
+          "content": "There’s one important caveat to merging: if your project’s code is spread out across a few files, resolving a merge conflict does not guarantee that your code works. Even if Git can fast-forward your local repository after a pull, it’s still possible your collaborator’s changes may break something (such is the danger when working with collaborators!). It’s always wise to do some sanity checks after pulling in code."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.839,
+            0.859,
+            0.879
+          ],
+          "content": "For complex merge conflicts, you may want to use a merge tool. Merge tools help visualize merge conflicts by placing both versions side by side, and pointing out what’s"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.924,
+            0.16,
+            0.936
+          ],
+          "content": "96"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.194,
+            0.922,
+            0.356,
+            0.939
+          ],
+          "content": "Chapter 5: Git for Scientists"
+        }
+      ]
+    },
+    {
+      "page_idx": 126,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.08,
+            0.858,
+            0.119
+          ],
+          "continues_prev": true,
+          "content": "different (rather than using Git’s inline notation that uses inequality and equal signs). Some commonly used merge tools include [Meld](http://meldmerge.org/) and [Kdiff](http://kdiff3.sourceforge.net/)."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.135,
+            0.668,
+            0.162
+          ],
+          "level": 2,
+          "content": "More GitHub Workflows: Forking and Pull Requests"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.168,
+            0.861,
+            0.363
+          ],
+          "content": "While the shared central repository workflow is the easiest way to get started collabo rating with Git, GitHub suggests a slightly different workflow based on forking repositories. When you visit a repository owned by another user on GitHub, you’ll see a “fork” link. Forking is an entirely GitHub concept—it is not part of Git itself. By forking another person’s GitHub repository, you’re copying their repository to your own GitHub account. You can then clone your forked version and continue development in your own repository. Changes you push from your local version to your remote repository do not interfere with the main project. If you decide that you’ve made changes you want to share with the main repository, you can request that your commits are pulled using a pull request (another feature of GitHub)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.369,
+            0.861,
+            0.504
+          ],
+          "content": "This is the workflow GitHub is designed around, and it works very well with projects with many collaborators. Development primarily takes place in contributors’ own repositories. A developer’s contributions are only incorporated into the main project when pulled in. This is in contrast to a shared central repository workflow, where collaborators can push their commits to the main project at their will. As a result, lead developers can carefully control what commits are added to the project, which prevents the hassle of new changes breaking functionality or creating bugs."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.52,
+            0.847,
+            0.551
+          ],
+          "level": 2,
+          "content": "Using Git to Make Life Easier: Working with Past Commits"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.559,
+            0.861,
+            0.637
+          ],
+          "content": "So far in this chapter we’ve created commits in our local repository and shared these commits with our collaborators. But our commit history allows us to do much more than collaboration—we can compare different versions of files, retrieve past versions, and tag certain commits with helpful messages."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.644,
+            0.861,
+            0.76
+          ],
+          "content": "After this point, the material in this chapter becomes a bit more advanced. Readers can skip ahead to Chapter 6 without a loss of continuity. If you do skip ahead, bookmark this section, as it contains many tricks used to get out of trouble (e.g., restoring files, stashing your working changes, finding bugs by comparing versions, and editing and undoing commits). In the final section, we’ll also cover branching, which is a more advanced Git workflow—but one that can make your life easier."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.775,
+            0.556,
+            0.801
+          ],
+          "level": 2,
+          "content": "Getting Files from the Past: git checkout"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.808,
+            0.861,
+            0.869
+          ],
+          "content": "Anything in Git that’s been committed is easy to recover. Suppose you accidentally overwrite your current version of README.md by using > instead of >>. You see this change with git status:"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.467,
+            0.922,
+            0.806,
+            0.939
+          ],
+          "content": "Using Git to Make Life Easier: Working with Past Commits"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.84,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "97"
+        }
+      ]
+    },
+    {
+      "page_idx": 127,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.08,
+            0.734,
+            0.282
+          ],
+          "sub_type": "code",
+          "content": "```txt\n\\$ echo \"Added an accidental line\" > README.md\n\\$ cat README.md\nAdded an accidental line\n\\$ git status\n# On branch master\n# Changes not staged for commit:\n# (use \"git add <file>...\" to update what will be committed)\n# (use \"git checkout -- <file>...\" to discard changes in working directory)\n#\n# modified: README.md\n#\nno changes added to commit (use \"git add\" and/or \"git commit -a\")\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.29,
+            0.861,
+            0.384
+          ],
+          "content": "This mishap accidentally wiped out the previous contents of README.md! However, we can restore this file by checking out the version in our last commit (the commit HEAD points to) with the command git checkout -- &lt;file&gt;. Note that you don’t need to remember this command, as it’s included in git status messages. Let’s restore README.md:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.397,
+            0.583,
+            0.474
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ git checkout -- README.md\n$ cat README.md\nZea Mays SNP Calling Project\nProject started 2013-01-03\nSamples expected from sequencing core 2013-01-10\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.17,
+            0.505,
+            0.744,
+            0.536
+          ],
+          "content": "We downloaded the B72 reference genome (refgen3) on 2013-01-04 from http://maizegdb.org into \\`/share/data/refgen3/\\`."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.544,
+            0.86,
+            0.621
+          ],
+          "content": "But beware: restoring a file this way erases all changes made to that file since the last commit! If you’re curious, the cryptic -- indicates to Git that you’re checking out a file, not a branch (git checkout is also used to check out branches; commands with multiple uses are common in Git)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.632,
+            0.86,
+            0.728
+          ],
+          "content": "By default, git checkout restores the file version from HEAD. However, git checkout can restore any arbitrary version from commit history. For example, suppose we want to restore the version of README.md one commit before HEAD. The past three commits from our history looks like this (using some options to make git log more concise):"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.739,
+            0.574,
+            0.801
+          ],
+          "sub_type": "code",
+          "content": "```shell\n$ git log --pretty=oneline --abbrev-commit -n 3\n20041ab resolved merge conflict in README.md\n08ccd3b added reference download date\ndafce75 added ref genome download date and link\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.81,
+            0.86,
+            0.868
+          ],
+          "content": "Thus, we want to restore README.md to the version from commit 08ccd3b. These SHA-1 IDs (even the abbreviated one shown here) function as absolute references to your commits (similar to absolute paths in Unix like /some/dir/path/file.txt). We can"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.924,
+            0.16,
+            0.936
+          ],
+          "content": "98"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.194,
+            0.922,
+            0.356,
+            0.939
+          ],
+          "content": "Chapter 5: Git for Scientists"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Bioinformatics Data Skills",
+      "authors": [
+        "Vince Buffalo"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "created_at": "2015-06-30T16:29:18Z",
+      "modified_at": "2015-06-30T13:45:47-04:00",
+      "creator_application": "AH CSS Formatter V6.2 MR4 for Linux64 : 6.2.6.18551 (2014/09/24 15:00JST)",
+      "producer_application": "Antenna House PDF Output Library 6.2.609 (Linux64)",
+      "page_count": 538,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 112,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 113,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 114,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 115,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 116,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 117,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 118,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 119,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 120,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 121,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 122,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 123,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 124,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 125,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 126,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 127,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

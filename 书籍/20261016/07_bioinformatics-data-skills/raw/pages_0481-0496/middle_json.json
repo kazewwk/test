@@ -1,0 +1,3279 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Bioinformatics Data Skills",
+      "authors": [
+        "Vince Buffalo"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "created_at": "2015-06-30T16:29:18Z",
+      "modified_at": "2015-06-30T13:45:47-04:00",
+      "creator_application": "AH CSS Formatter V6.2 MR4 for Linux64 : 6.2.6.18551 (2014/09/24 15:00JST)",
+      "producer_application": "Antenna House PDF Output Library 6.2.609 (Linux64)",
+      "page_count": 538,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 480,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 481,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 482,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 483,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 484,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 485,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 486,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 487,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 488,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 489,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 490,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 491,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 492,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 493,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 494,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 495,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 480,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "index": 0,
+          "bbox": [
+            0.138,
+            0.079,
+            0.226,
+            0.099
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Inner joins"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.135,
+            0.106,
+            0.862,
+            0.203
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Once data is neatly organized in different tables linked with foreign keys, we’re ready to use SQLite queries to join results back together. In these examples, we’ll use the joins.db database from this chapter’s GitHub directory. This small database contains the two tables we just organized, assocs and studies, with a few additional rows to illustrate some intricacies with different types of joins."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.138,
+            0.211,
+            0.405,
+            0.23
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let’s load the joins.db database:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 3,
+          "bbox": [
+            0.171,
+            0.24,
+            0.532,
+            0.333
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 3,
+              "bbox": [
+                0.171,
+                0.24,
+                0.532,
+                0.333
+              ],
+              "content": "\\$ sqlite3 joins.db\nSQLite version 3.7.13 2012-07-17 17:46:21\nEnter \".help\" for instructions\nEnter SQL statements terminated with a \";\".\nsqlite> .mode columns\nsqlite> .header on"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "csv"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.138,
+            0.341,
+            0.465,
+            0.361
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let’s take a peek at these example data:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 5,
+          "bbox": [
+            0.171,
+            0.37,
+            0.695,
+            0.51
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 5,
+              "bbox": [
+                0.171,
+                0.37,
+                0.695,
+                0.51
+              ],
+              "image_path": "images/page_480_table_5.jpg",
+              "content": "<table><tr><td colspan=\"4\">sqlite&gt; SELECT * FROM assocs;</td></tr><tr><td>id</td><td>study_id</td><td>trait</td><td>strongest_risk_snp</td></tr><tr><td>1</td><td>1</td><td>Asthma, hay fever</td><td>rs9273373</td></tr><tr><td>2</td><td>1</td><td>Asthma, hay fever</td><td>rs4833095</td></tr><tr><td>3</td><td>1</td><td>Asthma, hay fever</td><td>rs1438673</td></tr><tr><td>4</td><td>2</td><td>Hypertension</td><td>rs2820037</td></tr><tr><td>5</td><td>2</td><td>Crohn&#x27;s disease</td><td>rs6596075</td></tr><tr><td>6</td><td></td><td>Urate levels</td><td>rs12498742</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 6,
+          "bbox": [
+            0.171,
+            0.524,
+            0.569,
+            0.617
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 6,
+              "bbox": [
+                0.171,
+                0.524,
+                0.569,
+                0.617
+              ],
+              "image_path": "images/page_480_table_6.jpg",
+              "content": "<table><tr><td colspan=\"4\">sqlite&gt; SELECT * FROM studies;</td></tr><tr><td>id</td><td>pubmedid</td><td>year</td><td>journal</td></tr><tr><td>1</td><td>24388013</td><td>2013</td><td>J Allergy</td></tr><tr><td>2</td><td>17554300</td><td>2007</td><td>Nature</td></tr><tr><td>3</td><td>16252231</td><td>2005</td><td>Am J Hum G</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.625,
+            0.861,
+            0.684
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "By far, the most frequently used type of join used is an inner join. We would use an inner join to reunite the association results in the assocs table with the studies in the studies table. Here’s an example of the inner join notation:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 8,
+          "bbox": [
+            0.171,
+            0.693,
+            0.868,
+            0.817
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 8,
+              "bbox": [
+                0.171,
+                0.693,
+                0.868,
+                0.817
+              ],
+              "image_path": "images/page_480_table_8.jpg",
+              "content": "<table><tr><td colspan=\"8\">sqlite&gt; SELECT * FROM assocs INNER JOIN studies ON assocs.study_id = studies.id;</td></tr><tr><td>id</td><td>study_id</td><td>trait</td><td>strongest_risk_snp</td><td>id</td><td>pubmedid</td><td>year</td><td>journal</td></tr><tr><td>1</td><td>1</td><td>Asthma, hay fever</td><td>rs9273373</td><td>1</td><td>24388013</td><td>2013</td><td>J Allergy</td></tr><tr><td>2</td><td>1</td><td>Asthma, hay fever</td><td>rs4833095</td><td>1</td><td>24388013</td><td>2013</td><td>J Allergy</td></tr><tr><td>3</td><td>1</td><td>Asthma, hay fever</td><td>rs1438673</td><td>1</td><td>24388013</td><td>2013</td><td>J Allergy</td></tr><tr><td>4</td><td>2</td><td>Hypertension</td><td>rs2820037</td><td>2</td><td>17554300</td><td>2007</td><td>Nature</td></tr><tr><td>5</td><td>2</td><td>Crohn&#x27;s disease</td><td>rs6596075</td><td>2</td><td>17554300</td><td>2007</td><td>Nature</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.138,
+            0.826,
+            0.542,
+            0.845
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Notice three important parts of this join syntax:"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 10,
+          "bbox": [
+            0.506,
+            0.923,
+            0.799,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introducing Relational Databases Through SQLite"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 11,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "451"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 481,
+      "blocks": [
+        {
+          "type": "list",
+          "index": 0,
+          "bbox": [
+            0.155,
+            0.087,
+            0.858,
+            0.254
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 1,
+              "bbox": [
+                0.155,
+                0.087,
+                0.858,
+                0.145
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• The type of join (INNER JOIN). The table on the left side of the INNER JOIN statement is known as the left table and the table on the right side is known as the right table."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 2,
+              "bbox": [
+                0.155,
+                0.152,
+                0.857,
+                0.189
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• The join predicate, which follows ON (in this case, it’s assocs.study_id = stud ies.id)."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 3,
+              "bbox": [
+                0.155,
+                0.197,
+                0.858,
+                0.254
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• The new notation table.column we use to specify a column from a specific table. This is necessary because there may be duplicate column names in either table, so to select a particular column we need a way to identify which table it’s in."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.269,
+            0.861,
+            0.386
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Inner joins only select records where the join predicate is true. In this case, this is all rows where the id column in the studies table is equal to the study_id column of the assocs table. Note that we must use the syntax studies.id to specify the column id from the table studies. Using id alone will not work, as id is a column in both assocs and studies. This is also the case if you select a subset of columns where some names are shared:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 6,
+          "bbox": [
+            0.171,
+            0.43,
+            0.625,
+            0.537
+          ],
+          "content": [
+            {
+              "type": "code_caption",
+              "index": 5,
+              "bbox": [
+                0.171,
+                0.397,
+                0.692,
+                0.429
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "sqlite> SELECT studies.id, assocs.id, trait, year FROM assocs...> INNER JOIN studies ON assocs.study_id = studies.id;"
+                }
+              ]
+            },
+            {
+              "type": "code_body",
+              "index": 6,
+              "bbox": [
+                0.171,
+                0.43,
+                0.625,
+                0.537
+              ],
+              "content": "id           id          trait         year\n--------   --------------   ---------------   ---------------\n1           1           Asthma, hay fever 2013\n1           2           Asthma, hay fever 2013\n1           3           Asthma, hay fever 2013\n2           4           Hypertension    2007\n2           5           Crohn's disease 2007"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.139,
+            0.546,
+            0.687,
+            0.563
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To make the results table even clearer, use AS to rename columns:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 9,
+          "bbox": [
+            0.171,
+            0.607,
+            0.625,
+            0.713
+          ],
+          "content": [
+            {
+              "type": "code_caption",
+              "index": 8,
+              "bbox": [
+                0.171,
+                0.574,
+                0.793,
+                0.606
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "sqlite> SELECT studies.id AS study_id, assocs.id AS assoc_id, trait, year...> FROM assocs INNER JOIN studies ON assocs.study_id = studies.id;"
+                }
+              ]
+            },
+            {
+              "type": "code_body",
+              "index": 9,
+              "bbox": [
+                0.171,
+                0.607,
+                0.625,
+                0.713
+              ],
+              "content": "study_id     assoc_id    trait           year\n--------   --------------   ---------------   ---------------\n1             1              Asthma, hay fever 2013\n1             2              Asthma, hay fever 2013\n1             3              Asthma, hay fever 2013\n2             4              Hypertension      2007\n2             5              Crohn's disease 2007"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.137,
+            0.722,
+            0.86,
+            0.78
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In both cases, our join predicate links the studies table’s primary key, id, with the study_id foreign key in assocs. But note that our inner join only returns five columns, when there are six records in assocs:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 11,
+          "bbox": [
+            0.171,
+            0.791,
+            0.633,
+            0.884
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 11,
+              "bbox": [
+                0.171,
+                0.791,
+                0.633,
+                0.884
+              ],
+              "content": "sqlite> SELECT count(*) FROM assocs INNER JOIN studies\n...> ON assocs.study_id = studies.id;\ncount(*)\n-----------\n5\nsqlite> SELECT count(*) FROM assocs;"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "sql"
+        },
+        {
+          "type": "page_number",
+          "index": 12,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "452"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 13,
+          "bbox": [
+            0.201,
+            0.922,
+            0.541,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 13: Out-of-Memory Approaches: Tabix and SQLite"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 482,
+      "blocks": [
+        {
+          "type": "code",
+          "index": 0,
+          "bbox": [
+            0.172,
+            0.082,
+            0.261,
+            0.126
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 0,
+              "bbox": [
+                0.172,
+                0.082,
+                0.261,
+                0.126
+              ],
+              "content": "count(*)\n--------------------------------\n6"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.137,
+            0.861,
+            0.194
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "What’s going on here? There’s one record in assocs with a study_id not in the studies.id column (in this case, because it’s NULL). We can find such rows using subqueries:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 2,
+          "bbox": [
+            0.171,
+            0.204,
+            0.818,
+            0.266
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 2,
+              "bbox": [
+                0.171,
+                0.204,
+                0.818,
+                0.266
+              ],
+              "content": "sqlite> SELECT * FROM assocs WHERE study_id NOT IN (SELECT id FROM studies);\nid            study_id    trait         strongest_risk_snp\n--------  --------------  --------------  --------------\n6                  Urate levels  rs12498742"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "sql"
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.276,
+            0.859,
+            0.313
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Likewise, there is also a record in the studies table that is not linked to any association results in the assocs table:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 4,
+          "bbox": [
+            0.171,
+            0.324,
+            0.818,
+            0.386
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 4,
+              "bbox": [
+                0.171,
+                0.324,
+                0.818,
+                0.386
+              ],
+              "content": "sqlite> SELECT * FROM studies WHERE id NOT IN (SELECT study_id FROM assocs);\nid          pubmedid    year        journal\n----------  ----------  ----------  ----------  -------\n3         16252231   2005       Am J Hum Genet"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "sql"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.394,
+            0.86,
+            0.472
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "When using inner joins, it’s crucial to remember that such cases will be ignored! All records where the join predicate assocs.study_id = studies.id is not true are excluded from the results of an inner join. In this example, some records from both the left table (assocs) and right table (studies) are excluded."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.138,
+            0.49,
+            0.259,
+            0.51
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Left outer joins"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.136,
+            0.517,
+            0.86,
+            0.631
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In some circumstances, we want to join in such a way that includes all records from one table, even if the join predicate is false. These types of joins will leave some column values NULL (because there’s no corresponding row in the other table) but pair up corresponding records where appropriate. These types of joins are known as outer joins. SQLite only supports a type of outer join known as a left outer join, which we’ll see in this section."
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 8,
+          "bbox": [
+            0.506,
+            0.923,
+            0.798,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introducing Relational Databases Through SQLite"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 9,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "453"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 483,
+      "blocks": [
+        {
+          "type": "image",
+          "index": 0,
+          "bbox": [
+            0.167,
+            0.073,
+            0.255,
+            0.162
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 0,
+              "bbox": [
+                0.167,
+                0.073,
+                0.255,
+                0.162
+              ],
+              "image_path": "images/page_483_image_0.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.268,
+            0.079,
+            0.459,
+            0.098
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Other Types of Outer Joins"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.265,
+            0.107,
+            0.788,
+            0.213
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In addition to the left outer joins we’ll discuss in this section, there are two other types of outer joins: right outer joins and full outer joins. Right outer joins are like left outer joins that include all rows from the right table. Right outer joins aren’t supported in SQLite, but we can easily emulate their behavior using left outer joins by swapping the left and right tables (we’ll see this in this section)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.265,
+            0.218,
+            0.788,
+            0.34
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Full outer joins return all rows from both the left and right table, uniting records from both tables where the join predicate is true. SQLite doesn’t support full outer joins, but it’s possible to emulate full outer joins in SQLite (though this is outside of the scope of this book). In cases where I’ve needed to make use of extensive outer joins, I’ve found it easiest to switch to PostgreSQL, which supports a variety of different joins."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.362,
+            0.86,
+            0.459
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Left outer joins include all records from the left table (remember, this is the table on the left of the JOIN keyword). Cases where the join predicate are true are still linked in the results. For example, if we wanted to print all association records in the assocs table (regardless of whether they come from a study in the studies table), we would use:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 6,
+          "bbox": [
+            0.171,
+            0.487,
+            0.861,
+            0.624
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 5,
+              "bbox": [
+                0.171,
+                0.47,
+                0.616,
+                0.485
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "sqlite> SELECT * FROM assocs LEFT OUTER JOIN studies"
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 6,
+              "bbox": [
+                0.171,
+                0.487,
+                0.861,
+                0.624
+              ],
+              "image_path": "images/page_483_table_6.jpg",
+              "content": "<table><tr><td colspan=\"8\">...&gt; ON assocs.study_id = studies.id;</td></tr><tr><td>id</td><td>study_id</td><td>trait</td><td>[...]risk_snp</td><td>id</td><td>pubmedid</td><td>year</td><td>journal</td></tr><tr><td>1</td><td>1</td><td>Asthma, hay fever</td><td>rs9273373</td><td>1</td><td>24388013</td><td>2013</td><td>J Allergy</td></tr><tr><td>2</td><td>1</td><td>Asthma, hay fever</td><td>rs4833095</td><td>1</td><td>24388013</td><td>2013</td><td>J Allergy</td></tr><tr><td>3</td><td>1</td><td>Asthma, hay fever</td><td>rs1438673</td><td>1</td><td>24388013</td><td>2013</td><td>J Allergy</td></tr><tr><td>4</td><td>2</td><td>Hypertension</td><td>rs2820037</td><td>2</td><td>17554300</td><td>2007</td><td>Nature</td></tr><tr><td>5</td><td>2</td><td>Crohn&#x27;s disease</td><td>rs6596075</td><td>2</td><td>17554300</td><td>2007</td><td>Nature</td></tr><tr><td>6</td><td></td><td>Urate levels</td><td>rs12498742</td><td></td><td></td><td></td><td></td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.633,
+            0.86,
+            0.709
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As this example shows (note the last record), SQLite left outer joins cover a very important use case: we need all records from the left table, but want to join on data from the right table whenever it’s possible to do so. In contrast, remember that an inner join will only return records in which the join predicate is true."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.137,
+            0.718,
+            0.86,
+            0.834
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "While SQLite doesn’t support right outer joins, we can emulate their behavior by swapping the left and right columns. For example, suppose rather than fetching all association results and joining on a study where a corresponding study exists, we wanted to fetch all studies, and join on an association where one exists. This can easily be done by making studies the left table, and assocs the right table in a left outer join:"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 9,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "454"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 10,
+          "bbox": [
+            0.201,
+            0.922,
+            0.542,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 13: Out-of-Memory Approaches: Tabix and SQLite"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 484,
+      "blocks": [
+        {
+          "type": "code",
+          "index": 0,
+          "bbox": [
+            0.171,
+            0.081,
+            0.852,
+            0.235
+          ],
+          "content": [
+            {
+              "type": "algorithm_body",
+              "index": 0,
+              "bbox": [
+                0.171,
+                0.081,
+                0.852,
+                0.235
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "sqlite> SELECT * FROM studies LEFT OUTER JOIN assocs\n...> ON assocs.study_id = studies.id;\nid pubmedid year journal id study_id trait [...]_risk_snp\n-- ------------ ---- ------------ -- ------------ --- ------------\n1 24388013 2013 J Allergy 3 1 Asthma, hay fever rs1438673\n1 24388013 2013 J Allergy 2 1 Asthma, hay fever rs4833095\n1 24388013 2013 J Allergy 1 1 Asthma, hay fever rs9273373\n2 17554300 2007 Nature 5 2 Crohn's disease rs6596075\n2 17554300 2007 Nature 4 2 Hypertension rs2820037\n3 16252231 2005 Am J Hum G"
+                }
+              ]
+            }
+          ],
+          "sub_type": "algorithm"
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.245,
+            0.859,
+            0.303
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Again, note that the assocs’s columns id, study_id, trait, and strongest_risk_snp have some values that are NULL, for the single record (with PubMed ID 16252231) without any corresponding association results in assocs."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.312,
+            0.861,
+            0.409
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Finally, while our example joins all use join predicates that are simply connecting assocs’s study_id foreign key with studies’s primary key, it’s important to recognize that join predicates can be quite advanced if necessary. It’s easy to build more complex join predicates that join on multiple columns using AND and ON to link statements."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.138,
+            0.426,
+            0.36,
+            0.451
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Writing to Databases"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.459,
+            0.86,
+            0.613
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Most bioinformatics databases are primarily read-only: we read data more often than we add new data or modify existing data. This is because data we load into a database is usually generated by a pipeline (e.g., gene annotation software) that takes input data and creates results we load in bulk to a database. Consequently, bioinformaticians need to be primarily familiar with bulk loading data into a database rather than making incremental updates and modifications. In this section, we’ll learn the basic SQL syntax to create tables and insert records into tables. Then in the next section, we’ll see how to load data into SQLite using Python’s sqlite3 module."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.621,
+            0.86,
+            0.68
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Because we mainly load data in bulk into bioinformatics databases once, we won’t cover tools common SQL modification and deletion operations like DROP, DELETE, UPDATE, and ALTER used to delete and modify tables and rows."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.138,
+            0.698,
+            0.259,
+            0.718
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Creating tables"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.726,
+            0.86,
+            0.802
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The SQL syntax to create a table is very simple. Using the .schema dot command, let’s look at the statement that was used to create the table study in gwascat2table.db (execute this after connecting to the gwascat2table.db database with sqlite3 gwascat2table.db):"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 8,
+          "bbox": [
+            0.172,
+            0.813,
+            0.386,
+            0.891
+          ],
+          "content": [
+            {
+              "type": "algorithm_body",
+              "index": 8,
+              "bbox": [
+                0.172,
+                0.813,
+                0.386,
+                0.891
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "sqlite> .schema study\nCREATE TABLE study(\n  id integer primary key,\n  dbdate text,\n  pubmedid integer,"
+                }
+              ]
+            }
+          ],
+          "sub_type": "algorithm"
+        },
+        {
+          "type": "footer",
+          "index": 9,
+          "bbox": [
+            0.506,
+            0.923,
+            0.798,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introducing Relational Databases Through SQLite"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 10,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "455"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 485,
+      "blocks": [
+        {
+          "type": "code",
+          "index": 0,
+          "bbox": [
+            0.171,
+            0.082,
+            0.422,
+            0.22
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 0,
+              "bbox": [
+                0.171,
+                0.082,
+                0.422,
+                0.22
+              ],
+              "content": "author text,\ndate text,\njournal text,\nlink text,\nstudy text,\ntrait text,\ninitial_samplesize text,\nreplication_samplesize text\n);"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.139,
+            0.229,
+            0.812,
+            0.248
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This shows the basic syntax of the CREATE TABLE command. The basic format is:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 2,
+          "bbox": [
+            0.171,
+            0.258,
+            0.386,
+            0.352
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 2,
+              "bbox": [
+                0.171,
+                0.258,
+                0.386,
+                0.352
+              ],
+              "content": "CREATE TABLE tablename(\n  id integer primary key,\n  column1 column1_type,\n  column2 column2_type,\n  ...\n);"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "sql"
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.359,
+            0.861,
+            0.628
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Each column can have one of the basic SQLite data types (text, integer, numeric, real, or blob) or none (for no type affinity). In the preceding example (and all table definitions used throughout this chapter), you’ll notice that the first column always has the definition id integer primary key. Primary keys are unique integers that are used to identify a record in a table. In general, every table you create should have primary key column, so you can unambiguously and exactly refer to any particular record. The guaranteed uniqueness means that no two rows can have the same primary key— you’ll get an error from SQLite if you try to insert a row with a duplicate primary key. Primary keys are one type of table constraint; others like UNIQUE, NOT NULL, CHECK and FOREIGN KEY are also useful in some situations but are outside of the scope of this chapter. If you’re creating multiple tables to build a complex relational database, I’d recommend getting the basic idea in this section, and then consulting a book dedicated to SQL. Thoughtfulness and planning definitely pay off when it comes to organizing a database."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.138,
+            0.637,
+            0.842,
+            0.657
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let’s create a toy SQLite database, and create a new table we’ll use in a later example:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 5,
+          "bbox": [
+            0.171,
+            0.666,
+            0.455,
+            0.799
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 5,
+              "bbox": [
+                0.171,
+                0.666,
+                0.455,
+                0.799
+              ],
+              "content": "\\$ sqlite3 practice.db\n\nsqlite> CREATE TABLE variants(\n...> id integer primary key,\n...> chrom text,\n...> start integer,\n...> end integer,\n...> strand text,\n...> name text);"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "sql"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.137,
+            0.808,
+            0.859,
+            0.847
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Then, using the dot command .tables shows this table now exists (and you can check its schema with .schema variants if you like):"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 7,
+          "bbox": [
+            0.172,
+            0.857,
+            0.304,
+            0.887
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 7,
+              "bbox": [
+                0.172,
+                0.857,
+                0.304,
+                0.887
+              ],
+              "content": "sqlite> .tables\nvariants"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "page_number",
+          "index": 8,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "456"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 9,
+          "bbox": [
+            0.201,
+            0.922,
+            0.541,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 13: Out-of-Memory Approaches: Tabix and SQLite"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 486,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "index": 0,
+          "bbox": [
+            0.138,
+            0.079,
+            0.355,
+            0.098
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Inserting records into tables"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.106,
+            0.831,
+            0.126
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Like creating new tables, inserting records into tables is simple. The basic syntax is:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.171,
+            0.135,
+            0.505,
+            0.149
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "INSERT INTO",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " tablename(column1, column2)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.171,
+            0.151,
+            0.378,
+            0.166
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "VALUES",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " (value1, value2);"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.174,
+            0.858,
+            0.232
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "It’s also possible to omit the column names (column1, column2), but I wouldn’t recommend this—specifying the column names is more explicit and improves readability."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.241,
+            0.859,
+            0.355
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In the previous section, we learned how all tables should absolutely have a primary key. Primary keys aren’t something we need to create manually ourselves—we can insert the value NULL and SQLite will automatically increment the last primary key (as long as it’s an integer primary key) and use that for the row we’re inserting. With this in mind, let’s insert a record into the variants table we created in the previous section:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 6,
+          "bbox": [
+            0.171,
+            0.367,
+            0.733,
+            0.399
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 6,
+              "bbox": [
+                0.171,
+                0.367,
+                0.733,
+                0.399
+              ],
+              "content": "sqlite> INSERT INTO variants(id, chrom, start, end, strand, name)\n...> VALUES(NULL, \"16\", 48224287, 48224287, \"+\", \"rs17822931\");"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "sql"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.406,
+            0.859,
+            0.444
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Then, let’s select all columns and rows from this table (which comprises only the record we just created) to ensure this worked as we expect:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 8,
+          "bbox": [
+            0.171,
+            0.454,
+            0.769,
+            0.516
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 8,
+              "bbox": [
+                0.171,
+                0.454,
+                0.769,
+                0.516
+              ],
+              "image_path": "images/page_486_table_8.jpg",
+              "content": "<table><tr><td colspan=\"6\">sqlite&gt; SELECT * FROM variants;</td></tr><tr><td>id</td><td>chrom</td><td>start</td><td>end</td><td>strand</td><td>name</td></tr><tr><td>1</td><td>16</td><td>48224287</td><td>48224287</td><td>+</td><td>rs17822931</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.138,
+            0.534,
+            0.212,
+            0.554
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Indexing"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.137,
+            0.56,
+            0.859,
+            0.673
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "While querying records in our example databases takes less than a second, complex queries (especially those involving joins) on large databases can be quite slow. Under the hood, SQLite needs to search every record to see if it matches the query. For large queries, these full table scans are time consuming, as potentially gigabytes of data need to be read from your disk. Fortunately, there’s a computational trick SQLite can use: it can index a column of a table."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.137,
+            0.683,
+            0.859,
+            0.874
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A database index works much like the index in a book. Database indexes contain an sorted listing of all entries found in a particular row, alongside which row these entries can be found. Because the indexed column’s entries are sorted, it’s much faster to search for particular entries (compare searching for a word in an entire book, versus looking it up in an alphabetized index). Then, once the entry is found in the database index, it’s easy to find matching records in the table (similar to turning directly to a page where a word occurs in a book index). Indexes do come at a cost: just as book indexes add additional pages to a text, table indexes take up additional disk space. Indexes for very large tables can be quite large (something to be aware of when indexing bioinformatics data)."
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 12,
+          "bbox": [
+            0.505,
+            0.923,
+            0.798,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introducing Relational Databases Through SQLite"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 13,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "457"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 487,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.135,
+            0.08,
+            0.861,
+            0.136
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Creating an index for a particular table’s column is quite simple. Here, we create an index on the strongest_risk_snp column of the table assocs in the gwascat2table.db database:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 1,
+          "bbox": [
+            0.171,
+            0.148,
+            0.674,
+            0.165
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 1,
+              "bbox": [
+                0.171,
+                0.148,
+                0.674,
+                0.165
+              ],
+              "content": "sqlite> CREATE INDEX snp_idx ON assocs(strongest_risk_snp);"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "sql"
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.173,
+            0.761,
+            0.192
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We can use the SQLite dot command .indices to look at all table indexes:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 3,
+          "bbox": [
+            0.171,
+            0.202,
+            0.313,
+            0.233
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 3,
+              "bbox": [
+                0.171,
+                0.202,
+                0.313,
+                0.233
+              ],
+              "content": "sqlite> .indices\nsnp_idx"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.24,
+            0.86,
+            0.318
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This index will automatically be updated as new records are added to the table. Behind the scenes, SQLite will utilize this indexed column to more efficiently query records. The databases used in this chapter’s examples are quite small, and queries on indexed tables are unlikely to be noticeably faster."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.326,
+            0.861,
+            0.404
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Note that SQLite automatically indexes the primary key for each table—you won’t have to index this yourself. In addition, SQLite will not index foreign keys for you, and you should generally index foreign keys to improve the performance joins. For example, we would index the foreign key column study_id in assocs with:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 6,
+          "bbox": [
+            0.171,
+            0.413,
+            0.632,
+            0.476
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 6,
+              "bbox": [
+                0.171,
+                0.413,
+                0.632,
+                0.476
+              ],
+              "content": "sqlite> CREATE INDEX study_id_idx ON assocs(study_id);\nsqlite> .indices\nsnp_idx\nstudy_id_idx"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.138,
+            0.484,
+            0.755,
+            0.503
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "If, for some reason, you need to delete an index, you can use DROP INDEX:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 8,
+          "bbox": [
+            0.171,
+            0.513,
+            0.404,
+            0.56
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 8,
+              "bbox": [
+                0.171,
+                0.513,
+                0.404,
+                0.56
+              ],
+              "content": "sqlite> DROP INDEX snp_idx;\nsqlite> .indices\nstudy_id_idx"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.138,
+            0.6,
+            0.559,
+            0.626
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Dropping Tables and Deleting Databases"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.137,
+            0.633,
+            0.859,
+            0.672
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Occasionally, you’ll create a table incorrectly and need to delete it. We can delete a table old_table using:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 11,
+          "bbox": [
+            0.171,
+            0.682,
+            0.421,
+            0.699
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 11,
+              "bbox": [
+                0.171,
+                0.682,
+                0.421,
+                0.699
+              ],
+              "content": "sqlite> DROP TABLE old_table;"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "sql"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.137,
+            0.706,
+            0.859,
+            0.744
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "It’s also possible to modify existing tables with ALTER TABLE, but this is outside of the scope of this chapter."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.137,
+            0.753,
+            0.859,
+            0.809
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Unlike SQLite and PostgreSQL, which support multiple databases, each database in SQLite is a single file. The best way to delete a database is just to delete the entire SQLite database file."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 14,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "458"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 15,
+          "bbox": [
+            0.201,
+            0.922,
+            0.542,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 13: Out-of-Memory Approaches: Tabix and SQLite"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 488,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "index": 0,
+          "bbox": [
+            0.139,
+            0.079,
+            0.515,
+            0.105
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Interacting with SQLite from Python"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.113,
+            0.861,
+            0.268
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The SQLite command-line tool sqlite3 we’ve used in examples so far is just one way to interact with SQLite databases. The sqlite3 tool is primarily useful for extracting data from SQLite databases from a script, or quick exploration and interaction with a SQLite database. For more involved tasks such as loading numerous records into a database or executing complex queries as part of data analysis, it’s often preferable to interact with a SQLite database through an API. APIs allow you to interact with a database through an interface in your language of choice (as long as there’s an API for that language). In this section, we’ll take a quick look at Python’s excellent API."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.285,
+            0.628,
+            0.305
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Connecting to SQLite databases and creating tables from Python"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.312,
+            0.861,
+            0.389
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Python’s standard library includes the module sqlite3 for working with SQLite databases. As with all of Python’s standard library modules, "
+            },
+            {
+              "type": "hyperlink",
+              "url": "http://bit.ly/sqlite3-doc",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "the documentation"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "content": " is thorough and clear, and should be your primary reference (using an API is largely about mastering its documentation!)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.397,
+            0.861,
+            0.53
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let’s take a quick look at the basics of using this Python module. Because Python is well suited to processing data in chunks, it’s a good language to reach for when bulkloading data into a SQLite database. In contrast, while it’s certainly possible to use R to bulk-load into a SQLite database, it’s a bit trickier if the data is too large to load into the database all at once. The following script is a simple example of how we initialize a connection to a SQLite database and execute a SQL statement to create a simple table:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 5,
+          "bbox": [
+            0.171,
+            0.54,
+            0.501,
+            0.867
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 5,
+              "bbox": [
+                0.171,
+                0.54,
+                0.501,
+                0.867
+              ],
+              "content": "import sqlite3\n\n# the filename of this SQLite database\ndb_filename = \"variants.db\"\n\n# initialize database connection\nconn = sqlite3.connect(db_filename) ①\n\nc = conn.cursor() ②\n\ntable_def = \"\"'\\ ③\nCREATE TABLE variants(\n    id integer primary key,\n    chrom test,\n    start integer,\n    end integer,\n    strand text,\n    rsid text);\n\"\"\"\n\nc.execute(table_def) ④"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "python"
+        },
+        {
+          "type": "footer",
+          "index": 6,
+          "bbox": [
+            0.506,
+            0.923,
+            0.798,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introducing Relational Databases Through SQLite"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 7,
+          "bbox": [
+            0.833,
+            0.923,
+            0.859,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "459"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 489,
+      "blocks": [
+        {
+          "type": "code",
+          "index": 0,
+          "bbox": [
+            0.172,
+            0.08,
+            0.313,
+            0.113
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 0,
+              "bbox": [
+                0.172,
+                0.08,
+                0.313,
+                0.113
+              ],
+              "content": "conn.commit() ⑤\nconn.close() ⑥"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "list",
+          "index": 1,
+          "bbox": [
+            0.138,
+            0.129,
+            0.861,
+            0.564
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 2,
+              "bbox": [
+                0.138,
+                0.129,
+                0.861,
+                0.228
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "1 First, we use the connect() function to establish a connection with the database (provided by the file in db_filename; in this case, we’re using variants.db). con nect() returns an object with class Connection, which here we assign to conn. Connection objects have numerous methods for interacting with a database connection (the exhaustive list is presented in the Python documentation)."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 3,
+              "bbox": [
+                0.138,
+                0.244,
+                0.861,
+                0.322
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "When interacting with a SQLite database through Python’s API, we use a Cursor object. Cursors allow us to retrieve results from queries we’ve made. In this script, we’re just executing a single SQL statement to create a table (and thus there are no results to fetch), but we’ll see more on how cursors are used later on."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 4,
+              "bbox": [
+                0.138,
+                0.338,
+                0.859,
+                0.377
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "This block of text is the SQL statement to create a table. For readability, I’ve formatted it across multiple lines."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 5,
+              "bbox": [
+                0.138,
+                0.393,
+                0.861,
+                0.472
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "To execute SQL statements, we use the execute() method of the Cursor object c. In cases where there are results returned from the database after executing a SQL statement (as with a SELECT statement that has matching records), we’ll use this cursor object to retrieve them—(we’ll see an example of this later)."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.138,
+                0.488,
+                0.859,
+                0.527
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "We need to commit our statement, using the Connection.commit() method. This writes the changes to the SQL database."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.138,
+                0.544,
+                0.814,
+                0.564
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Finally, we close our connection to the database using Connection.close()."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.137,
+            0.572,
+            0.86,
+            0.611
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We’ll save this script to create_table.py. Before proceeding, let’s check that this worked. First, we run this script:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 9,
+          "bbox": [
+            0.172,
+            0.621,
+            0.381,
+            0.637
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 9,
+              "bbox": [
+                0.172,
+                0.621,
+                0.381,
+                0.637
+              ],
+              "content": "$ python create_table.py"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.137,
+            0.644,
+            0.86,
+            0.681
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This creates the variants.db SQLite database in the current directory. Let’s check that this has the correct schema:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 11,
+          "bbox": [
+            0.171,
+            0.692,
+            0.532,
+            0.879
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 11,
+              "bbox": [
+                0.171,
+                0.692,
+                0.532,
+                0.879
+              ],
+              "content": "\\$ sqlite3 variants.db\nSQLite version 3.7.13 2012-07-17 17:46:21\nEnter \".help\" for instructions\nEnter SQL statements terminated with a \";\".\nsqlite> .tables\nvariants\nsqlite> .schema variants\nCREATE TABLE variants(\n    id integer primary key,\n    chrom test,\n    start integer,\n    end integer,"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "sql"
+        },
+        {
+          "type": "page_number",
+          "index": 12,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "460"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 13,
+          "bbox": [
+            0.201,
+            0.922,
+            0.542,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 13: Out-of-Memory Approaches: Tabix and SQLite"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 490,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.19,
+            0.082,
+            0.294,
+            0.112
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "strand text, rsid text);"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.138,
+            0.13,
+            0.431,
+            0.15
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Loading data into a table from Python"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.157,
+            0.86,
+            0.212
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Next, we need to write code to load some data into the variants table. Included in this chapter’s directory in the GitHub repository is a tab-delimited example data file, variants.txt:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 3,
+          "bbox": [
+            0.171,
+            0.224,
+            0.668,
+            0.302
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 3,
+              "bbox": [
+                0.171,
+                0.224,
+                0.668,
+                0.302
+              ],
+              "image_path": "images/page_490_table_3.jpg",
+              "content": "<table><tr><td colspan=\"5\">$ cat variants.txt</td></tr><tr><td>chr10</td><td>114808901</td><td>114808902</td><td>+</td><td>rs12255372</td></tr><tr><td>chr9</td><td>22125502</td><td>22125503</td><td>+</td><td>rs1333049</td></tr><tr><td>chr3</td><td>46414946</td><td>46414978</td><td>+</td><td>rs333</td></tr><tr><td>chr2</td><td>136608645</td><td>136608646</td><td>-</td><td>rs4988235</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.309,
+            0.861,
+            0.427
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "There are a couple important considerations when bulk-loading data into a SQLite table. First, it’s important to make sure data loaded into the database is clean, has the correct data type, and missing values are converted to NULL (which are represented in Python by None). Note that while SQLite is very permissive with data types, it’s usually best to try to stick with one type per column—as mentioned earlier, this makes downstream work that utilizes data from a table much simpler."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.433,
+            0.861,
+            0.53
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let’s now write a quick script to load data from the file variants.txt into our newly created table. Normally, you might fold this code into the same script that created the tables, but to prevent redundancy and simplify discussion, I’ll keep them separate. A simple script that reads a tab-delimited file, coerces each column’s data to the appropriate type, and inserts these into the variants table would look as follows:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 6,
+          "bbox": [
+            0.171,
+            0.541,
+            0.687,
+            0.895
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 6,
+              "bbox": [
+                0.171,
+                0.541,
+                0.687,
+                0.895
+              ],
+              "content": "import sys\nimport sqlite3\nfrom collections import OrderedDict\n\n# the filename of this SQLite database\ndb_filename = \"variants.db\"\n\n# initialize database connection\nconn = sqlite3.connect(db_filename)\nc = conn.cursor()\n\n## Load Data\n# columns (other than id, which is automatically incremented\ntbl_cols = OrderedDict([\"chrom\", str), (\"start\", int), ①\n            (\"end\", int), (\"strand\", str),\n            (\"rsid\", str)])\n\nwith open(sys.argv[1]) as input_file:\n    for line in input_file:\n        # split a tab-delimited line\n        values = line.strip().split(\"\\t\")\n\n        # pair each value with its column name"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "python"
+        },
+        {
+          "type": "footer",
+          "index": 7,
+          "bbox": [
+            0.505,
+            0.923,
+            0.798,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introducing Relational Databases Through SQLite"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 8,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "461"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 491,
+      "blocks": [
+        {
+          "type": "code",
+          "index": 0,
+          "bbox": [
+            0.238,
+            0.079,
+            0.855,
+            0.345
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 0,
+              "bbox": [
+                0.238,
+                0.079,
+                0.855,
+                0.345
+              ],
+              "content": "cols_values = zip(tbl_cols.keys(), values) ②\n\n# use the column name to lookup an appropriate function to coerce each\n# value to the appropriate type\ncoerced_values = [tbl_cols[col](value) for col, value in cols_values] ③\n\n# create an empty list of placeholders\nplaceholders = [\"?\"] * len(tbl_cols) ④\n\n# create the query by joining column names and placeholders quotation\n# marks into comma-separated strings\ncolnames = \", \".join(tbl_cols.keys())\nplaceholders = \", \".join(placeholders)\nquery = \"INSERT INTO variants(%s) VALUES (%s);\"%(colnames, placeholders)\n\n# execute query\nc.execute(query, coerced_values) ⑤"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "python"
+        },
+        {
+          "type": "code",
+          "index": 1,
+          "bbox": [
+            0.171,
+            0.36,
+            0.482,
+            0.391
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 1,
+              "bbox": [
+                0.171,
+                0.36,
+                0.482,
+                0.391
+              ],
+              "content": "conn.commit() # commit these inserts\nconn.close()"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "list",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.407,
+            0.861,
+            0.882
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 3,
+              "bbox": [
+                0.137,
+                0.407,
+                0.861,
+                0.523
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "0 First, we use an OrderedDict from the collections module to store each column in the table (and our variants.txt file) with its appropriate type. Functions str() and int() coerce their input to strings and integers, respectively. We use these functions to coerce data from the input data into its appropriate table type. Additionally, if the data cannot be coerced to the appropriate type, these functions will raise a loud error and stop the program."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 4,
+              "bbox": [
+                0.137,
+                0.54,
+                0.861,
+                0.599
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Using the zip() function, we take a list of column names and a list of values from a single line of the tab-delimited input file, and combine them into a list of tuples. Pairing this data allows for easier processing in the next step."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 5,
+              "bbox": [
+                0.137,
+                0.614,
+                0.861,
+                0.806
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "3 Here, we use a Python list comprehension to extract the appropriate coercion function from tbl_cols for each column. We then call this function on the value: this is what tbl_cols[col](value) does. While storing functions in lists, dictionaries, or OrderedDicts may seem foreign at first, this strategy can drastically simplify code. The end result of this list comprehension is a list of values (still in the order as they appear in the input data), coerced to the appropriate type. To reduce the complexity of this example, I’ve not handled missing values (because our test data does not contain them). See the code-examples/ README.md file in this chapter’s GitHub repository for more information on this."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.137,
+                0.824,
+                0.861,
+                0.882
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "While we could directly insert our values into a SQL query statement, this is a bad practice and should be avoided. At the very least, inserting values directly into a SQL query statement string can lead to a host of problems with quotations"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "page_number",
+          "index": 7,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "462"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 8,
+          "bbox": [
+            0.201,
+            0.922,
+            0.541,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 13: Out-of-Memory Approaches: Tabix and SQLite"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 492,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.171,
+            0.08,
+            0.862,
+            0.198
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "in the data being interpreted as valid SQL quotations. The solution is to use parameter substitution, or parameterization. Python’s sqlite3 module supports two methods to parameterize a SQL statement. In this case, we replace the values in an INSERT statement with ?, and then pass our values directly as a list to the Cursor.execute() method. Note too that we ignore the primary key column id, as SQLite will automatically increment this for us."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.215,
+            0.859,
+            0.252
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Finally, we use the Cursor.execute() method to execute our SQL INSERT statement."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.262,
+            0.573,
+            0.281
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let’s run this script, and verify our data was loaded:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.171,
+            0.291,
+            0.5,
+            0.308
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "$ python load_variants.py variants.txt"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.139,
+            0.315,
+            0.283,
+            0.333
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Then, in SQLite:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 5,
+          "bbox": [
+            0.171,
+            0.359,
+            0.77,
+            0.499
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 5,
+              "bbox": [
+                0.171,
+                0.359,
+                0.77,
+                0.499
+              ],
+              "image_path": "images/page_492_table_5.jpg",
+              "content": "<table><tr><td colspan=\"6\">sqlite&gt; .header on</td></tr><tr><td colspan=\"6\">sqlite&gt; .mode column</td></tr><tr><td colspan=\"6\">sqlite&gt; select * from variants;</td></tr><tr><td>id</td><td>chrom</td><td>start</td><td>end</td><td>strand</td><td>rsid</td></tr><tr><td>1</td><td>chr10</td><td>114808901</td><td>114808902</td><td>+</td><td>rs12255372</td></tr><tr><td>2</td><td>chr9</td><td>22125502</td><td>22125503</td><td>+</td><td>rs1333049</td></tr><tr><td>3</td><td>chr3</td><td>46414946</td><td>46414978</td><td>+</td><td>rs333</td></tr><tr><td>4</td><td>chr2</td><td>136608645</td><td>136608646</td><td>-</td><td>rs4988235</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.137,
+            0.506,
+            0.862,
+            0.621
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In this example, we’ve manually parsed and loaded multiple lines of a tab-delimited file into a table using Cursor.execute() and Connection.commit(). However, note that we’re only committing all of these INSERT statements at the end of the for loop. While this wouldn’t be a problem with small datasets that fit entirely in memory, for larger datasets (that may not fit entirely in memory) we need to pay attention to these technical details."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.632,
+            0.861,
+            0.868
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "One solution is to commit after each INSERT statement, which we could do explicitly by pushing conn.commit() inside the loop. sqlite3 also supports autocommit mode (which can be enabled in sqlite.connect()), which automatically commits SQL statements. Unfortunately, using either conn.commit() or autocommit mode leads to each record being committed one at a time, which can be inefficient. To get around this limitation, Python’s sqlite3 Cursor objects have an executemany() method that can take any Python sequence or iterator of values to fill placeholders in a query. Cur sor.executemany() is the preferable way to bulk-load large quantities of data into a SQLite database. Loading data with this approach is a bit more advanced (because it relies on using generator functions), but I’ve included an example script in this chapter’s directory in the GitHub repository. Note that it’s also possible to interface Python’s csv module’s reader objects with executemany()."
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 8,
+          "bbox": [
+            0.505,
+            0.923,
+            0.798,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introducing Relational Databases Through SQLite"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 9,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "463"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 493,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "index": 0,
+          "bbox": [
+            0.4,
+            0.109,
+            0.598,
+            0.134
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "R’s RSQLite Package"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.153,
+            0.14,
+            0.845,
+            0.215
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Like Python, R has a library to interface with SQLite databases: RSQLite. Like sqlite3, RSQLite is very easy to use. The primary difference is that RSQLite connects well with R’s dataframes. As a simple demonstration of the interface, let’s connect with the variants.db database and execute a query:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 2,
+          "bbox": [
+            0.186,
+            0.224,
+            0.675,
+            0.503
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 2,
+              "bbox": [
+                0.186,
+                0.224,
+                0.675,
+                0.503
+              ],
+              "content": "> library(RSQLite)\n> sqlite <- dbDriver(\"SQLite\")\n> variants_db <- dbConnect(sqlite, \"variants.db\")\n\n> dbListTables(variants_db)\n[1] \"variants\"\n> dbListFields(variants_db, \"variants\")\n[1] \"id\"      \"chrom\"  \"start\"  \"end\"    \"strand\" \"rsid\"\n\n> d <- dbGetQuery(variants_db, \"SELECT * FROM variants;\");\n> head(d)\n    id chrom     start       end strand      rsid\n1   1 chr10 114808901 114808902      + rs12255372\n2   2 chr9  22125502  22125503      + rs1333049\n3   3 chr3  46414946  46414978      +       rs333\n4   4 chr2 136608645 136608646      - rs4988235\n> class(d)\n[1] \"data.frame\""
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.153,
+            0.511,
+            0.845,
+            0.603
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "dbSendQuery() grabs all results from a SQL statement at once—much like using fetchall() in sqlite3. RSQLite also has methods that support incrementally access ing records resulting from a SQL statement, through dbSendQuery() and fetch(). Overall, the RSQLite’s functions are similar to those in Python’s sqlite3; for further information, consult the manual."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.637,
+            0.86,
+            0.695
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Finally, let’s look at how to work with Python’s Cursor objects to retrieve data. We’ll step through this interactively in the Python shell. First, let’s connect to the database and initialize a Cursor:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 5,
+          "bbox": [
+            0.171,
+            0.706,
+            0.524,
+            0.752
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 5,
+              "bbox": [
+                0.171,
+                0.706,
+                0.524,
+                0.752
+              ],
+              "content": ">>> import sqlite3\n>>> conn = sqlite3.connect(\"variants.db\")\n>>> c = conn.cursor()"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.138,
+            0.761,
+            0.655,
+            0.779
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Next, let’s use Cursor.execute() to execute a SQL statement:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 7,
+          "bbox": [
+            0.171,
+            0.79,
+            0.852,
+            0.884
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 7,
+              "bbox": [
+                0.171,
+                0.79,
+                0.852,
+                0.884
+              ],
+              "content": ">>> statement = \"\"\\\n... SELECT chrom, start, end FROM variants WHERE rsid IN ('rs12255372', 'rs333')\n... \"\"\n\n>>> c.execute(statement)\n<sqlite3.Cursor object at 0x10e249f80>"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "page_number",
+          "index": 8,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "464"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 9,
+          "bbox": [
+            0.201,
+            0.922,
+            0.542,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 13: Out-of-Memory Approaches: Tabix and SQLite"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 494,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.135,
+            0.081,
+            0.861,
+            0.18
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Finally, we can fetch data from this query using the Cursor.fetchone(), Cursor.fetchmany() (which takes an integer argument of how many records to fetch), and Cursor.fetchall() methods. The benefit of the Cursor object is that it keeps track of which row’s you’ve fetched and which rows you haven’t, so you won’t accidentally double process a row. Let’s look at Cursor.fetchone():"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 1,
+          "bbox": [
+            0.171,
+            0.189,
+            0.449,
+            0.281
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 1,
+              "bbox": [
+                0.171,
+                0.189,
+                0.449,
+                0.281
+              ],
+              "content": ">>> c.fetchone()\n(u'chr10', 114808901, 114808902)\n>>> c.fetchone()\n(u'chr3', 46414946, 46414978)\n>>> c.fetchone() # nothing left\n>>>"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.138,
+            0.298,
+            0.351,
+            0.323
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Dumping Databases"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.33,
+            0.861,
+            0.446
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Finally, let’s talk about database dumps. A database dump is all SQL commands necessary to entirely reproduce a database. Database dumps are useful to back up and duplicate databases. Dumps can also be useful in sharing databases, though in SQLite it’s easier to simply share the database file (but this isn’t possible with other database engines like MySQL and PostgreSQL). SQLite makes it very easy to dump a database. We can use the sqlite3 command-line tool:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 4,
+          "bbox": [
+            0.171,
+            0.456,
+            0.836,
+            0.688
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 4,
+              "bbox": [
+                0.171,
+                0.456,
+                0.836,
+                0.688
+              ],
+              "content": "\\$ sqlite3 variants.db \".dump\"\nPRAGMA foreign_keys=OFF;\nBEGIN TRANSACTION;\nCREATE TABLE variants(\n  id integer primary key,\n  chrom test,\n  start integer,\n  end integer,\n  strand text,\n  rsid text);\nINSERT INTO \"variants\" VALUES(1,'chr10',114808901,114808902,'+','rs12255372');\nINSERT INTO \"variants\" VALUES(2,'chr9',22125502,22125503,'+','rs1333049');\nINSERT INTO \"variants\" VALUES(3,'chr3',46414946,46414978,'+','rs333');\nINSERT INTO \"variants\" VALUES(4,'chr2',136608645,136608646,'-','rs4988235');\nCOMMIT;"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "sql"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.696,
+            0.86,
+            0.752
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The .dump dot command also takes an optional table name argument, if you wish to dump a single table and not the entire database. We can use database dumps to create databases:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 6,
+          "bbox": [
+            0.171,
+            0.763,
+            0.534,
+            0.794
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 6,
+              "bbox": [
+                0.171,
+                0.763,
+                0.534,
+                0.794
+              ],
+              "content": "$ sqlite3 variants.db \".dump\" > dump.sql\n$ sqlite3 variants-duplicate.db < dump.sql"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.802,
+            0.86,
+            0.879
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This series of commands dumps all tables in the variants.db database to a SQL file dump.sql. Then, this SQL file is loaded into a new empty database variantsduplicate.db, creating all tables and inserting all data in the original variants.db database."
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 8,
+          "bbox": [
+            0.505,
+            0.923,
+            0.798,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Introducing Relational Databases Through SQLite"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 9,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "465"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 495
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}

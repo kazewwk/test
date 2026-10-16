@@ -1,0 +1,2821 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Bioinformatics Data Skills",
+      "authors": [
+        "Vince Buffalo"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "created_at": "2015-06-30T16:29:18Z",
+      "modified_at": "2015-06-30T13:45:47-04:00",
+      "creator_application": "AH CSS Formatter V6.2 MR4 for Linux64 : 6.2.6.18551 (2014/09/24 15:00JST)",
+      "producer_application": "Antenna House PDF Output Library 6.2.609 (Linux64)",
+      "page_count": 538,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 400,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 401,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 402,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 403,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 404,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 405,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 406,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 407,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 408,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 409,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 410,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 411,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 412,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 413,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 414,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 415,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 400,
+      "blocks": [
+        {
+          "type": "image",
+          "index": 0,
+          "bbox": [
+            0.164,
+            0.08,
+            0.266,
+            0.155
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 0,
+              "bbox": [
+                0.164,
+                0.08,
+                0.266,
+                0.155
+              ],
+              "image_path": "images/page_400_image_0.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.268,
+            0.079,
+            0.512,
+            0.098
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "SAM Bitwise Flags and SAM Fields"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.267,
+            0.107,
+            0.787,
+            0.161
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "It’s vital to consider how some bitflags may affect other bitflags (technically speaking, some bitflags are non-orthogonal). Similarly, if some bitflags are set, certain SAM fields may no longer apply."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.267,
+            0.166,
+            0.789,
+            0.412
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For example, 0x4 (unmapped) is the only reliable way to tell if an alignment is unaligned. In other words, one cannot tell if a read is aligned by looking at fields such as mapped position (POS and reference RNAME); the SAM format specification does not limit these fields’ values if a read is unaligned. If the 0x4 bit is set (meaning the read is unmapped), the fields regarding alignment including position, CIGAR string, mapping quality, and reference name are not relevant and their values cannot be relied upon. Similarly, if the 0x4 bit is set, bits that only apply to mapped reads such as 0x2 (proper pair), 0x10 (aligned to reverse strand), and others cannot be relied upon. The primary lesson is you should carefully consider all flags that may apply when working with SAM entries, and start with low-level attributes (whether it’s aligned, paired). See the SAM format specification for more detail on bitflags."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.434,
+            0.86,
+            0.493
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Instead, we want to make sure the unmapped (0x4) and proper paired bits are unset (so the read is aligned and paired), and the paired end bit is set (so the read is not in a proper pair). We do this by combining bits:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 5,
+          "bbox": [
+            0.171,
+            0.5,
+            0.761,
+            0.626
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 5,
+              "bbox": [
+                0.171,
+                0.5,
+                0.761,
+                0.626
+              ],
+              "content": "$ samtools flags paired\n0x1      1       PAIRED\n$ samtools flags unmap,proper_pair\n0x6      6       PROPER_PAIR,UNMAP\n$ samtools view -F 6 -f 1 NA12891_CEU_sample.bam | head -n 3\nSRR003208.1496374   137  1  215623168  0  35M16S =  215623168  [...]\nERR002297.5178166   177  1  215623174  0  36M    =  215582813  [...]\nSRR002141.16953736  121  1  215623191  0  7S44M =  215623191  [...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.137,
+            0.633,
+            0.86,
+            0.729
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "One way to verify that these results make sense is to check the counts (note that this may be very time consuming for large files). In this case, our total number of reads that are mapped and paired should be equal to the sum of the number of reads that are mapped, paired, and properly paired, and the number of reads that are mapped, paired, and not properly paired:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 7,
+          "bbox": [
+            0.171,
+            0.737,
+            0.856,
+            0.86
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 7,
+              "bbox": [
+                0.171,
+                0.737,
+                0.856,
+                0.86
+              ],
+              "content": "$ samtools view -F 6 NA12891_CEU_sample.bam | wc -l # total mapped and paired\n233628\n$ samtools view -F 7 NA12891_CEU_sample.bam | wc -l # total mapped, paired,\n201101\n# proper paired\n$ samtools view -F 6 -f 1 NA12891_CEU_sample.bam | wc -l # total mapped, paired,\n32527\n# and not proper paired\n$ echo \"201101 + 32527\" | bc\n233628"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "footer",
+          "index": 8,
+          "bbox": [
+            0.388,
+            0.922,
+            0.798,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Command-Line Tools for Working with Alignments in the SAM Format"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 9,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "371"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 401,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.136,
+            0.081,
+            0.861,
+            0.139
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Summing these numbers with the command-line bench calculator bc validates that our totals add up. Also, for set operations like this drawing a Venn diagram can help you reason through what’s going on."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.156,
+            0.784,
+            0.213
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Visualizing Alignments with samtools tview and the Integrated Genomics Viewer"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.136,
+            0.222,
+            0.861,
+            0.32
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As we saw in Chapter 8, we can learn a lot about our data through visualization. The same applies with alignment data: one of the best ways to explore alignment data is through visualization. The samtools suite includes the useful tview subcommand for quickly looking at alignments in your terminal. We’ll take a brief look at tview first, then look at the Broad Institute’s Integrated Genomics Viewer (IGV) application."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.136,
+            0.329,
+            0.861,
+            0.522
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "samtools tview requires position-sorted and indexed BAM files as input. We already indexed the position-sorted BAM file NA12891_CEU_sample.bam (in this chapter’s GitHub directory) in “Extracting alignments from a region with samtools view” on page 368, so we’re ready to visualize it with samtools tview. samtools tview can also load the reference genome alongside alignments so the reference sequence can be used in comparisons. The reference genome file used to align the reads in NA12891_CEU_sample.bam is human_g1k_v37.fasta, and although it’s too large to include in this chapter’s GitHub directory, it can be easily downloaded (see the directory’s README.md for directions). So to view these alignments with samtools tview, we use:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.171,
+            0.532,
+            0.677,
+            0.549
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "$ samtools tview NA12891_CEU_sample.bam human_g1k_v37.fasta"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.136,
+            0.556,
+            0.861,
+            0.613
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "However, this will view the very beginning of a chromosome; because NA12891_CEU_sample.bam is a subset of reads, let’s go to a specific region with the option -p:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.171,
+            0.624,
+            0.735,
+            0.655
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "$ samtools tview -p 1:215906469-215906652 NA12891_CEU_sample.bam \\ human_g1k_v37.fasta"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.136,
+            0.664,
+            0.861,
+            0.743
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This will open up a terminal-based application. samtools tview has many options to navigate around, jump to particular regions, and change the output format and colors of alignments; press ? to see these options (and press again to close the help screen). Figure 11-1 shows an example of what tview looks like."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 8,
+          "bbox": [
+            0.139,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "372"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 9,
+          "bbox": [
+            0.201,
+            0.922,
+            0.451,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 11: Working with Alignment Data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 402,
+      "blocks": [
+        {
+          "type": "image",
+          "index": 0,
+          "bbox": [
+            0.149,
+            0.085,
+            0.849,
+            0.625
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 0,
+              "bbox": [
+                0.149,
+                0.085,
+                0.849,
+                0.625
+              ],
+              "image_path": "images/page_402_image_0.jpg",
+              "content": "215906471 215906481 215906491 215906501 215906511 215906521 215906531\nAACTATGATGGAAGGTGAAGAAAGAGCAAGTGCATCACGTGCAGAGAGCAGGAGCAAGAGAGAGAGGTGGC*GGGGGGCG\n..T...........S\n,,t,,,,,,,,,,,,,,,,,,,,,,,*,,,,,,,,,\n..T......a,,,,g,,,,,,a,,,,,,,,,,,, ........*...........\n,,t,,+----------+,,,,,,,,,,,,,,,,,,,,,,*,,,,,,,,,\n,,t,,|      -- Help   --- |,,, ...........*........G.\n..T..l                      |...........*........G.\n,,t,,| ?          This window |,,, ,,,,,,,,,,,,,,,*,,,,,,,,\n,,t,,| Arrows      Small scroll movement |,,,,,,,,,,,,,,,,, ....C..\n,,t,,| h,j,k,l      Small scroll movement |........G ,,,,,g,,g,,g*,,,,,,,,,\n,,t,,| H,J,K,L      Large scroll movement |............C...*........G.\n,,t,,| ctrl-H      Scroll 1k left |,,,,,,,,,,,,,,,,, .............\n,,t,,| ctrl-L      Scroll 1k right |,,,,,,,,,,,,*,,,,,,,,,\n..T..l space      Scroll one screen |,,,,,,,,,,,,,,,,,,,, ....\n..T..l backspace      Scroll back one screen |,,,,,,,,,,,,,,,,,,,,*, ....\n,,t,,| g          Go to specific location |,,, ...........*........G\n..T..l m          Color for mapping qual |,,,,,,,,,,,,,,,,,,,*,,,,,,g\n..l n          Color for nucleotide |,,,g,,,,gt,,,,,,,g,,,,,,,,,\n,| b          Color for base quality |,,,,, ...........*.........\n| c          Color for cs color |,,,,,,,,,,,,,,,,,,,*,,,,,,gc\n| z          Color for cs qual | ,,,,,,,,,,,,,,,,,*,,,,,,gc\n| .          Toggle on/off dot view |,,, , ,,,,g,,,,g*,,,,,,,,\n| s          Toggle on/off ref skip |........ ... ,,,,g,,g,,g*,,,,g,\n| r          Toggle on/off rd name |,,,,,,,,,,,,,,,, ........*.........\n| N          Turn on nt view |,,,,,,,,,,,,,,,,, ,,,\n| C          Turn on cs view |,,,,,,,,,,,,,,,,*,,,,,,gc\n| i          Toggle on/off ins |,,,,,,,,,,,,,,,,*,,,,,,gc\n| q          Exit | ,,,,,,,,,,,,,***,*,,,,,,,gc\n|\nUnderline: Secondary or orphan\nBlue: 0-9 Green: 10-19\nYellow: 20-29 White: >=30"
+            },
+            {
+              "type": "image_caption",
+              "index": 1,
+              "bbox": [
+                0.139,
+                0.635,
+                0.704,
+                0.656
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Figure 11-1. A region in samtools tview with the help dialog box open"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.673,
+            0.86,
+            0.788
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As a command-line visualization program, samtools tview is great for quickly inspecting a few alignments. However, if you need to spend more time investigating alignments, variants, and insertions/deletions in BAM data, the Integrated Genomics Viewer (IGV) may be more well suited. As an application with a graphical user interface, IGV is easy to use. IGV also has numerous powerful features we won’t cover in this brief introduction, so I encourage you to explore IGV’s excellent documentation."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.796,
+            0.861,
+            0.875
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "First, we need to install IGV. It’s distributed as a Java application, so you’ll need to have Java installed on your system. After Java is installed, you can install IGV through a package manager such as Homebrew on OS X or apt-get. See the README.md file in this chapter’s GitHub directory for more detail on installing IGV."
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 4,
+          "bbox": [
+            0.32,
+            0.923,
+            0.798,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Visualizing Alignments with samtools tview and the Integrated Genomics Viewer"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 5,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "373"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 403,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.136,
+            0.081,
+            0.858,
+            0.119
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "If you’ve installed IGV through Homebrew or apt-get, you can launch the application with:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.172,
+            0.129,
+            0.221,
+            0.145
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "$ igv"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.154,
+            0.859,
+            0.192
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The command igv calls a small shell script wrapper for the Java application and opens IGV."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.136,
+            0.201,
+            0.861,
+            0.354
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Once in IGV, we need load our reference genome before loading our alignments. Reference genomes can be loaded from a file by navigating to Genomes → Load Genome from File, and then choosing your reference genome through the file browser. IGV also has prepared reference genomes for common species and versions; these can be accessed through Genomes → Load Genome From Server. Navigate to this menu and load the “Human (1kg, b37+decoy)” genome. This prepared genome file has some nice additional features used in display such as gene tracks and chromosome ideograms."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.363,
+            0.86,
+            0.44
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Once our reference genome is loaded, we can load in the BAM alignments in NA12891_CEU_sample.bam by navigating to File → Load from File and choosing the reference genome through the file browser. Note that you will not see any alignments, as this file contains a subset of alignments in a region IGV’s not currently focused on."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.447,
+            0.861,
+            0.562
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "IGV’s graphical user interface provides many methods for navigation, zooming in and out of a chromosome, and jumping to particular regions. Let’s jump to a region that our alignments in NA12891_CEU_sample.bam overlap: 1:215,906,528-215,906,567 (there’s a copyable version of this region in this chapter’s README.md for convenience). Enter this region in the text box at the top of the window, and press Enter; this region should look like Figure 11-2."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 6,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "374"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 7,
+          "bbox": [
+            0.201,
+            0.922,
+            0.451,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 11: Working with Alignment Data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 404,
+      "blocks": [
+        {
+          "type": "image",
+          "index": 0,
+          "bbox": [
+            0.141,
+            0.081,
+            0.86,
+            0.472
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 0,
+              "bbox": [
+                0.141,
+                0.081,
+                0.86,
+                0.472
+              ],
+              "image_path": "images/page_404_image_0.jpg",
+              "content": "IGV_2.3.40 File Genomes View Tracks Regions Tools GenomeSpace Help\nHuman (1kg, b37+... 1 1:215,906,528-215,906,567 Go IGV\np36.23 p36.12 p34.3 p33 p32.1 p31.1 p22.2 p21.1 p13.1 q11 q12 q21.2 q23.2 q24.3 q25.3 q31.3 q32.2 q41 q42.2 q44\n40 bp\n215,906,530 bp 215,906,540 bp 215,906,550 bp 215,906,560 bp\nNA12891_CEU_sample.bam Cov\nNA12891_CEU_sample.bam\nSequence\n0ene\nG A G A G A G G T G G C G G G G G G C G G G G G G C G G G T G G A G T C C T A\nUSH2A\n4 tracks loaded 1:215,906,549 147M of 279M"
+            },
+            {
+              "type": "image_caption",
+              "index": 1,
+              "bbox": [
+                0.139,
+                0.475,
+                0.724,
+                0.496
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Figure 11-2. A region in IGV that shows possible paralogous alignments"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.512,
+            0.861,
+            0.702
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As shown in Figure 11-2, IGV shows an ideogram to indicate where on the chromosome the region is and base pair positions in the top pane, coverage and alignment tracks in the middle pane, and the sequence and gene track information in the bottom pane. The colored letters in alignments indicate bases mismatched between the read sequence and the reference. These mismatching bases can be caused either by sequencing errors, misalignment, errors in library preparation, or an authentic SNP. In this case, we might make a ballpark guess that the stacked mismatches at positions 215,906,547, 215,906,548 and 215,906,555 are true polymorphisms. However, let’s use some of IGV’s features to take a closer look, specifically at the variants around 215,906,547–215,906,548."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.711,
+            0.861,
+            0.828
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let’s start our exploration by hovering over alignments in this region to reveal IGV’s pop-up window full of that alignment’s information (see Figure 11-3). This allows you to inspect useful information about each alignment such as the base qualities of mismatches and the alignment’s mapping quality. For example, hovering over the alignments in the region from 215,906,547–215,906,548 shows that some aligned with lower mapping quality."
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 4,
+          "bbox": [
+            0.32,
+            0.923,
+            0.799,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Visualizing Alignments with samtools tview and the Integrated Genomics Viewer"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 5,
+          "bbox": [
+            0.833,
+            0.923,
+            0.859,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "375"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 405,
+      "blocks": [
+        {
+          "type": "image",
+          "index": 0,
+          "bbox": [
+            0.141,
+            0.079,
+            0.86,
+            0.753
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 0,
+              "bbox": [
+                0.141,
+                0.079,
+                0.86,
+                0.753
+              ],
+              "image_path": "images/page_405_image_0.jpg",
+              "content": "Read name = SRR001171.7340629\nSample = NA12891\nRead group = SRR001171\nG\nLocation = 1:215,906,548\nAlignment start = 215,906,540 (+)\nCigar = 35M13S\nMapped = yes\nMapping quality = 37\nSecondary = no\nSupplementary = no\nDuplicate = no\nFailed QC = no\nBase = G\nBase phred quality = 27\nUSH2A\nX0 = 1\nX1 = 0\nXC = 35\nMD = 15G19\nRG = SRR001171\nXG = 0\nNM = 1\nXM = 1\nXO = 0\nOQ = DIIIII@=IF;@9A6)5:+*6++('&.-'+'$*0)&1%\"(%\"$$$%^\"\nXT = U"
+            },
+            {
+              "type": "image_caption",
+              "index": 1,
+              "bbox": [
+                0.138,
+                0.757,
+                0.633,
+                0.777
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Figure 11-3. IGV’s pop-up window of alignment information"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.794,
+            0.86,
+            0.853
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We can also learn a lot about our variants by looking at which reads they are carried on. For the potential variants at 215,906,547 and 215,906,548, mismatches are carried on three categories of reads that span these positions:"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 3,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "376"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 4,
+          "bbox": [
+            0.201,
+            0.922,
+            0.451,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 11: Working with Alignment Data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 406,
+      "blocks": [
+        {
+          "type": "list",
+          "index": 0,
+          "bbox": [
+            0.155,
+            0.086,
+            0.858,
+            0.177
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 1,
+              "bbox": [
+                0.155,
+                0.086,
+                0.858,
+                0.125
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• Reads with a reference base at 215,906,547 and a reference base at 215,906,548 (e.g., the first alignment from the top)"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 2,
+              "bbox": [
+                0.155,
+                0.13,
+                0.825,
+                0.15
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• Reads with a G and a reference base (e.g., the twelfth alignment from the top)"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 3,
+              "bbox": [
+                0.155,
+                0.156,
+                0.702,
+                0.176
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• Reads with a G and a C (e.g., the sixth alignment from the top)"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.19,
+            0.861,
+            0.304
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A single read contains a single continuous stretch of DNA, so the presence of three different combinations of mismatching bases in these reads indicates three different haplotypes in this region (ignoring for the moment the possibility that these mismatches might be sequencing errors). Because these sequences come from a single diploid human individual, this indicates a likely problem—probably due to misalignment."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.313,
+            0.861,
+            0.485
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The mismatches in this region could be due to misalignment caused by reads from a different region in the genome aligning to this region due to similar sequence (creating that third haplotype). Misalignments of this nature can be caused by common repeats, paralogous sequences, or similar domains. Misalignments of this type are a major cause of false positive variant calls, and visual inspection with tools like IGV can greatly help in recognizing these issues. While somewhat tedious, manual inspection of alignment data is especially important for entries at the top of lists of significant variants. However, for this particular region, it’s more likely a different misalignment mishap is creating these mismatches that look like variants."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.137,
+            0.494,
+            0.861,
+            0.686
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Note that IGV also displays the reference sequence track in the bottom pane, which gives us another clue as to what could be causing these variants. This region is composed of low-complexity sequences: GGCGGGGGGGCGGGGGGCGGG. Low-complexity sequences are composed of runs of bases or simple repeats, and are a major cause of erroneous variant calls (Li, 2014). In this low-complexity region, reads containing the mismatches G-C might actually contain an upstream G insertion. In low-complexity regions, an aligner may align a read with a single base mismatch rather than an indel, creating a false SNP. Indeed, there’s some evidence that this type of misalignment is occurring here: the only reads that carry the G-C mismatches are those that do not span the low-complexity region on the left."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.694,
+            0.861,
+            0.79
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Finally, it’s worth noting that in addition to being a low-complexity sequence, the base composition in this region might be a concern as well. GGC sequences are known to generate sequence-specific errors in some Illumina data (see Nakamura et al., 2011). We can inspect the sequencing platform metadata in the BAM header and indeed see that this data comes from an Illumina sequencer:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 8,
+          "bbox": [
+            0.17,
+            0.799,
+            0.786,
+            0.832
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 8,
+              "bbox": [
+                0.17,
+                0.799,
+                0.786,
+                0.832
+              ],
+              "content": "\\$ samtools view -H NA12891_CEU_sample.bam | grep PL | tail -n 1\n@RG ID:SRR035334 PL:ILLUMINA LB:Solexa-3628 [...] SM:NA12891 CN:BI"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "batch"
+        },
+        {
+          "type": "footer",
+          "index": 9,
+          "bbox": [
+            0.32,
+            0.922,
+            0.799,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Visualizing Alignments with samtools tview and the Integrated Genomics Viewer"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 10,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "377"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 407,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "index": 0,
+          "bbox": [
+            0.137,
+            0.078,
+            0.82,
+            0.128
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Pileups with samtools pileup, Variant Calling, and Base Alignment Quality"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.136,
+            0.134,
+            0.861,
+            0.404
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In this section, we’ll discuss the pileup format, a plain-text format that summarizes reads’ bases at each chromosome position by stacking or “piling up” aligned reads. The per-base summary of the alignment data created in a pileup can then be used to identify variants (regions different from the reference), and determine sample individuals’ genotypes. samtools’s mpileup subcommand creates pileups from BAM files, and this tool is the first step in samtools-based variant calling pipelines. In this chapter, we’ll introduce the pileup format and samtools variant calling tools through simple examples that explore how the misalignments we saw in the previous section can lead to erroneous variant calls. We’ll also examine how samtools’s clever Base Alignment Quality algorithm can prevent erroneous variant calls due to misalignment. Note that this chapter is not meant to teach variant calling, as this subject is complex, procedures are project- and organism-specific, and methods will rapidly change with improvements to sequencing technology and advancement in variant calling methods."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.414,
+            0.861,
+            0.513
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To begin, let’s look at how a “vanilla” (all extra features turned off) samtools variant calling pipeline handles this region. We’ll start by creating a pileup to learn more about this format. To do this, we run samtools mpileup in the same region we visualized in IGV in “Visualizing Alignments with samtools tview and the Integrated Genomics Viewer” on page 372 (again using the human_g1k_v37.fasta file):"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 3,
+          "bbox": [
+            0.171,
+            0.519,
+            0.795,
+            0.709
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 3,
+              "bbox": [
+                0.171,
+                0.519,
+                0.795,
+                0.709
+              ],
+              "content": "$ samtools mpileup --no-BAQ --region 1:215906528-215906567 \\ ①\n    --fasta-ref human_g1k_v37.fasta NA12891_CEU_sample.bam\n[mpileup] 1 samples in 1 input files\n<mpileup> Set max per-file depth to 8000\n1  215906528 G 21 ,,,,,,,,,,,,,,.,,, ;=?./:?>>>;=7?>>@A?==: ②\n1  215906529 A 18 ,,,,,,,,,,,,,,., D>AA:@A>9>?;;?>@=\n[...]\n1  215906547 C 15 gGg$,GggGG,,.... <;80;><9=86=C>= ③\n1  215906548 G 19 c$,ccC.,.,.,.,.,...,^]. ;58610=7=>75=7<463;\n[...]\n1  215906555 G 16 .$aaaaaA.AAAaAAA^:A 2@>?8?;<:335?:A> ④\n[...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.723,
+            0.861,
+            0.879
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "1 First, samtools mpileup requires an input BAM file (in this example, we use NA12891_CEU_sample.bam). We also supply a reference genome in FASTA format through the --fasta-ref or -f options (be sure to use the exact same reference used for mapping) so samtools mpileup knows each reference base. Additionally, we use the --region or -r options to limit our pileup to the same region we visualized with IGV. Lastly, we disable Base Alignment Quality (BAQ) with --no-BAQ or -B, an additional feature of samtools mpileup we’ll discuss later."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 5,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "378"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 6,
+          "bbox": [
+            0.201,
+            0.922,
+            0.451,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 11: Working with Alignment Data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 408,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.137,
+            0.086,
+            0.692,
+            0.107
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This is is a typical line in the pileup format. The columns are:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 1,
+          "bbox": [
+            0.191,
+            0.115,
+            0.858,
+            0.202
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 2,
+              "bbox": [
+                0.191,
+                0.115,
+                0.722,
+                0.133
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• Reference sequence name (e.g., chromosome 1 in this entry)."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 3,
+              "bbox": [
+                0.191,
+                0.14,
+                0.857,
+                0.177
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• Position in reference sequence, 1-indexed (position 215,906,528 in this entry)."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 4,
+              "bbox": [
+                0.191,
+                0.184,
+                0.694,
+                0.202
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• Reference sequence base at this position (G in this entry)."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.191,
+            0.209,
+            0.857,
+            0.247
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "• Depth of aligned reads at this position (the depth or coverage, 21 in this entry)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.191,
+            0.254,
+            0.858,
+            0.488
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "• This column encodes the reference reads bases. Periods (.) indicate a refer ence sequence match on the forward strand, commas (,) indicate a reference sequence match to the reverse strand, an uppercase base (either A, T, C, G, or N) indicates a mismatch on the forward strand, and a lowercase base (a, t, c, g, or n) indicates a mismatch on the reverse strand. The ^ and $ characters indicate the start and end of reads, respectively. Insertions are denoted with a plus sign (+), followed by the length of the insertion, followed by the sequence of the insertion. An insertion on a line indicates it’s between the current line and the next line. Similarly, deletions are encoded with a minus sign (-), followed by the length of the deletion and the deleted sequence. Lastly, the mapping quality of each alignment is specified after the beginning of the alignment character, ^ as the ASCII character value minus 33."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.191,
+            0.495,
+            0.857,
+            0.532
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "• Finally, the last column indicates the base qualities (the ASCII value minus 33)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.137,
+            0.562,
+            0.859,
+            0.657
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3 On this line and the next line are the stacked mismatches we saw at positions 215,906,547 and 215,906,548 with IGV in Figure 11-2. These lines show the stacked mismatches as nucleotides in the fifth column. Note that variants in this column are both lower- and uppercase, indicating they are supported by both reads aligning to both the forward and reverse strands."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.137,
+            0.673,
+            0.859,
+            0.752
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4 Finally, note at this position most reads disagree with the reference base. Also, this line contains the start of a new read (indicated with the ^ mark), with mapping quality 25 (the character : has ASCII code 58, and 58 - 33 = 25; try ord(:) - 33 in Python)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.137,
+            0.763,
+            0.859,
+            0.877
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Altering our mpileup command to output variant calls rather than a pileup is not difficult (we’ll see how in a bit). However, while pileups are simply per-position summaries of the data in aligned reads, variant and genotype calls require making inferences from noisy alignment data. Most variant calling approaches utilize probabilistic frameworks to make reliable inferences in spite of low coverage, poor base qualities, possible misalignments, and other issues. Additionally, methods can increase power"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 11,
+          "bbox": [
+            0.32,
+            0.922,
+            0.798,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Visualizing Alignments with samtools tview and the Integrated Genomics Viewer"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 12,
+          "bbox": [
+            0.832,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "379"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 409,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.137,
+            0.081,
+            0.858,
+            0.158
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "to detect variants by jointly calling variants on many individuals simultaneously. sam tools mpileup will jointly call SNPs and genotypes for multiple individuals—each individual simply needs to be identified through the SM tags in the @RG lines in the SAM header."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.169,
+            0.861,
+            0.361
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Calling variants with samtools and its companion tool bcftools is a two-step process (excluding the very important steps of validation). In the first step, samtools mpi leup called with the -v or -g arguments will generate genotype likelihoods for every site in the genome (or all sites within a region if one is specified). These results will be returned in either a plain-text tab-delimited Variant Call Format (known more commonly by its abbreviation, VCF) if -v is used, or BCF (the binary analog of VCF) if -g is used. In the second step, bcftools call will filter these results so only variant sites remain, and call genotypes for all individuals at these sites. Let’s see how the first step works by calling samtools mpileup with -v in the region we investigated earlier with IGV:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 2,
+          "bbox": [
+            0.171,
+            0.374,
+            0.71,
+            0.452
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 2,
+              "bbox": [
+                0.171,
+                0.374,
+                0.71,
+                0.452
+              ],
+              "content": "$ samtools mpileup -v --no-BAQ --region 1:215906528-215906567 \\\n    --fasta-ref human_g1k_v37.fasta NA12891_CEU_sample.bam   \\\n    > NA12891_CEU_sample.vcf.gz\n[mpileup] 1 samples in 1 input files\n<mpileup> Set max per-file depth to 8000"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "shell"
+        },
+        {
+          "type": "image",
+          "index": 3,
+          "bbox": [
+            0.167,
+            0.466,
+            0.255,
+            0.555
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 3,
+              "bbox": [
+                0.167,
+                0.466,
+                0.255,
+                0.555
+              ],
+              "image_path": "images/page_409_image_3.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.268,
+            0.471,
+            0.383,
+            0.489
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The VCF Format"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.268,
+            0.5,
+            0.655,
+            0.518
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "VCF is a tab-delimited format that has three parts:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 6,
+          "bbox": [
+            0.285,
+            0.53,
+            0.788,
+            0.645
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.285,
+                0.53,
+                0.725,
+                0.547
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• A metadata header consisting of lines that start with ##"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.285,
+                0.554,
+                0.786,
+                0.589
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• A header line with the eight mandatory fields and if genotypes are called, the individuals’ sample names"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 9,
+              "bbox": [
+                0.285,
+                0.595,
+                0.786,
+                0.645
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• The data lines, where each line consists of the information for a variant at a particular position and all individuals’ genotypes for this variant"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.266,
+            0.662,
+            0.788,
+            0.785
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "VCF can be a deceivingly complex format that comes in different versions and flavors (and is very likely to change, and may at some point be replaced entirely). For these reasons, the specifics of VCF won’t be covered in depth here, but see "
+            },
+            {
+              "type": "hyperlink",
+              "url": "http://github.com/samtools/hts-specs",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "the format specification"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "content": " and the supplementary information in this chapter’s GitHub directory. I encourage you to become familiar with the VCF format, as it will aid in understanding these examples."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.137,
+            0.806,
+            0.859,
+            0.884
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This produces a gzipped VCF file full of intermediate variant and genotype data for every site in the region (or if you haven’t specified a region with --region or -r, the entire genome). Note that you can force samtools mpileup to output uncompressed results with -u. These intermediate results are then fed into bcftools call, which"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 12,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "380"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 13,
+          "bbox": [
+            0.201,
+            0.922,
+            0.451,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 11: Working with Alignment Data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 410,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.135,
+            0.08,
+            0.861,
+            0.198
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "uses the estimated genotype likelihoods and other information to call certain sites as variant or not, and infer the genotypes of all individuals (in our example, our file only has one individual, NA12891). The VCF file produced is long and too wide to show in a book page, so I’ve used zgrep -v to remove the header and awk to select some columns of interest. Because VCF is a tab-delimited file, we can use all of our Unix tricks to manipulate and explore it:"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "code",
+          "index": 1,
+          "bbox": [
+            0.171,
+            0.205,
+            0.825,
+            0.378
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 1,
+              "bbox": [
+                0.171,
+                0.205,
+                0.825,
+                0.378
+              ],
+              "content": "$ zgrep \"^##\" -v NA12891_CEU_sample.vcf.gz | \\\nawk 'BEGIN{OFS=\"\\t\"} {split($8, a, \";\"); print $1,$2,$4,$5,$6,a[1],$9,$10}'\n#CHROM POS REF ALT QUAL INFO FORMAT NA12891\n1 215906528 G <X> 0 DP=21 PL 0,63,236\n1 215906529 A <X> 0 DP=22 PL 0,54,251\n[...]\n1 215906547 C G,<X> 0 DP=22 PL 123,0,103,144,127,233\n1 215906548 G C,<X> 0 DP=22 PL 23,0,163,68,175,207\n[...]\n1 215906555 G A,<X> 0 DP=19 PL 184,7,0,190,42,204\n[...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.384,
+            0.86,
+            0.6
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "First, note that some positions such as 215,906,528 and 215,906,528 only contain the alternative allele (in the ALT column) <X>. <X> represents the possibility that an alternative allele has not been observed in the data due to under-sampling (e.g., low coverage). Second, note how the sites 215,906,547, 215,906,548, and 215,906,555 all have an alternative allele other than <X>. These are the same sites we saw earlier in IGV that had multiple mismatches that looked like variants. The alternative alleles in column ALT represent possible variants at these positions samtools mpileup has identified. Additional information about these variants is passed in this intermediate VCF file to bcftools call, which uses this information to make an inference whether sites are really variant and what each individuals’ genotype is. Let’s run this bcftools call step, and then do some exploring of where we lose variants and why:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.607,
+            0.861,
+            0.692
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "$ bcftools call -v -m NA12891_CEU_sample.vcf.gz > NA12891_CEU_sample_calls.vcf.gz bcftools call run with -m uses the multiallelic caller (the other option is to use the original consensus caller with -c). The -v option only outputs variant sites, which is why our output is much shorter:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 4,
+          "bbox": [
+            0.171,
+            0.7,
+            0.825,
+            0.78
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 4,
+              "bbox": [
+                0.171,
+                0.7,
+                0.825,
+                0.78
+              ],
+              "content": "$ zgrep \"^##\" -v NA12891_CEU_sample_calls.vcf.gz | \\\nawk 'BEGIN{OFS=\"\\t\"} {split($8, a, \";\"); print $1,$2,$4,$5,$6,a[1],$9,$10}'\n#CHROM POS REF ALT QUAL INFO FORMAT NA12891\n1 215906547 C G 90 DP=22 GT:PL 0/1:123,0,103\n1 215906555 G A 157 DP=19 GT:PL 1/1:184,7,0"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "perl"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.787,
+            0.861,
+            0.886
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We see that bcftools calls calls only two variant sites in this region, which is fewer sites than have alternative alleles in the intermediate VCF output from samtools mpileup. Noticeably, the site 215,906,548 is not called as a variant site after being processed through bcftools call’s multiallelic caller. This is good—looking at the alignments in IGV (“Visualizing Alignments with samtools tview and the Integrated"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 6,
+          "bbox": [
+            0.32,
+            0.922,
+            0.799,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Visualizing Alignments with samtools tview and the Integrated Genomics Viewer"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 7,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "381"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 411,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.135,
+            0.08,
+            0.859,
+            0.157
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Genomics Viewer” on page 372), you can see that there are 4 C alleles and 20 reference (G) alleles; hardly convincing evidence that this a true variant. More individuals with this alternative allele in a joint variant calling context may have tipped the balance toward this being called a variant site."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.136,
+            0.167,
+            0.861,
+            0.263
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Additionally, bcftools call has estimated a quality score (the QUAL column) for each alternative allele in ALT. These quality scores are Phred-scaled values that estimate the probability that the alternative allele is incorrect (see “Base Qualities” on page 344 for more on Phred-scaled values). Higher QUAL scores indicate the variant caller is more confident in a call."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.136,
+            0.273,
+            0.861,
+            0.373
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "If the alternative allele in column ALT is . (representing no variant), this quality score reflects the probability that the site really does have a variant. We can see how bcftools call is less certain about the nonvariant call at position 215,906,548 by looking at the QUAL value for this variant. Omitting the flag -v with bcftools call to see all sites’ information is shown in Example 11-1:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 4,
+          "bbox": [
+            0.139,
+            0.424,
+            0.794,
+            0.598
+          ],
+          "content": [
+            {
+              "type": "code_caption",
+              "index": 3,
+              "bbox": [
+                0.138,
+                0.393,
+                0.467,
+                0.412
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Example 11-1. bcftools call with all sites"
+                }
+              ]
+            },
+            {
+              "type": "code_body",
+              "index": 4,
+              "bbox": [
+                0.139,
+                0.424,
+                0.794,
+                0.598
+              ],
+              "content": "$ bcftools call -m NA12891_CEU_sample.vcf.gz | grep -v \"^##\" | \\\nawk 'BEGIN{OFS=\"\\t\"} {split($8, a, \";\"); print $1,$2,$4,$5,$6,a[1],$9,$10}'\n#CHROM POS REF ALT QUAL INFO FORMAT NA12891\n1 215906528 G . 999 DP=21 GT 0/0\n1 215906529 A . 999 DP=22 GT 0/0\n[...]\n1 215906547 C G 90 DP=22 GT:PL 0/1:123,0,103\n1 215906548 G . 12.1837 DP=22 GT 0/0\n[...]\n1 215906555 G A 157 DP=19 GT:PL 1/1:184,7,0\n[...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.136,
+            0.609,
+            0.86,
+            0.765
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Compared to other nonvariant sites like 215,906,528 and 215,906,529, and sites with visible stacked mismatches (like 215,906,547), 215,906,548 has a very low QUAL reflecting the variant caller’s uncertainty at this site (because there were four mismatches of the same base). Recalculating this Phred-value into a probability using the formula Q = -10 log"
+            },
+            {
+              "type": "text",
+              "content": "10",
+              "styles": [
+                "subscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " P(alternative call is incorrect), we see that P(alternative call is incorrect) = 10(-1"
+            },
+            {
+              "type": "text",
+              "content": "2",
+              "styles": [
+                "superscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ".1837/10) ≈ 0.060, or about a 6% chance the call that this site is invariant is in incorrect—a fairly large chance. Compare that to the quality at 215,906,555 where the P(alternative call is incorrect) "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\approx 2 \\mathrm { ~ x ~ } 1 0 ^ { - 1 6 }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.136,
+            0.772,
+            0.861,
+            0.89
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A lot of information regarding each individual’s genotype call can be crammed into the VCF format. The VCF format supports variable numbers of information about genotypes (e.g., genotype call, genotype quality, likelihoods, etc.) by concatenating many values together into a single column per individual. Values are separated by colons (:), and the FORMAT column describes the order of each value in the genotype columns. For example, in Example 11-1, the entry for position 215,906,555 has a FOR"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 7,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "382"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 8,
+          "bbox": [
+            0.201,
+            0.922,
+            0.451,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 11: Working with Alignment Data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 412,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.137,
+            0.081,
+            0.861,
+            0.16
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "MAT entry of GT:PL and the entry for individual NA12891 is 1/1:184,7,0. This means that the key GT has a value 1/1, and the key PL has a value 184,7,0. A really nice feature of the VCF format is that all FORMAT keys are described in the header, so we can use grep to figure out what these keys mean:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 1,
+          "bbox": [
+            0.17,
+            0.169,
+            0.837,
+            0.187
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 1,
+              "bbox": [
+                0.17,
+                0.169,
+                0.837,
+                0.187
+              ],
+              "content": "$ bcftools call -m NA12891_CEU_sample.vcf.gz > NA12891_CEU_sample_calls.vcf.gz"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "shell"
+        },
+        {
+          "type": "code",
+          "index": 2,
+          "bbox": [
+            0.171,
+            0.201,
+            0.686,
+            0.279
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 2,
+              "bbox": [
+                0.171,
+                0.201,
+                0.686,
+                0.279
+              ],
+              "content": "$ grep \"FORMAT=<ID=GT\" NA12891_CEU_sample_calls.vcf.gz\n##FORMAT=<ID=GT,Number=1,Type=String,Description=\"Genotype\">\n$ grep \"FORMAT=<ID=PL\" NA12891_CEU_sample_calls.vcf.gz\n##FORMAT=<ID=PL,Number=G,Type=Integer,\n    Description=\"List of Phred-scaled genotype likelihoods\">"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "erb"
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.287,
+            0.861,
+            0.442
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "So we see that these values are the genotypes (key GT) and Phred-scaled genotype likelihoods (key PL) of each individual. These are always in the order ref/ref, ref/alt, and alt/alt alleles for biallelic loci (and a similar pattern for multiallelic loci; see the VCF format specification for an example). All genotype likelihoods (PL) are rescaled so the most likely genotype is 1 (so it’s Phred-scaled likelihood is 0). Thus, at position 215,906,555 the most likely genotype is alt/alt, the next most likely is ref/alt, and the least likely is ref/ref. There are additional resources on interpreting VCF genotype fields in this chapter’s README file."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.45,
+            0.861,
+            0.603
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Lastly, let’s return to the idea that our reads may have misaligned around the low complexity region near the 215,906,547. Misalignments in low-complexity regions (usually due to indels being aligned as mismatches) are a major cause of erroneous SNP calls. To address this, samtools mpileup enables Base Alignment Quality (BAQ), which uses uses a Hidden Markov Model to adjust base qualities to reflect not only the probability of an incorrect base call, but also of a particular base being misaligned. We disabled this algorithm earlier in our simple pipeline, but let’s see how it affects our calls:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 5,
+          "bbox": [
+            0.171,
+            0.613,
+            0.825,
+            0.846
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 5,
+              "bbox": [
+                0.171,
+                0.613,
+                0.825,
+                0.846
+              ],
+              "content": "$ samtools mpileup -u -v --region 1:215906528-215906567 \\\n    --fasta-ref human_g1k_v37.fasta NA12891_CEU_sample.bam > \\\n    NA12891_CEU_sample_baq.vcf.gz\n\n$ grep -v \"^##\" NA12891_CEU_sample_baq.vcf.gz | \\\nawk 'BEGIN{OFS=\"\\t\"} {split($8, a, \";\"); print $1,$2,$4,$5,$6,a[1],$9,$10}'\n#CHROM POS REF ALT QUAL INFO FORMAT NA12891\n1 215906528 G <X> 0 DP=21 PL 0,63,236\n1 215906529 A <X> 0 DP=22 PL 0,54,249\n[...]\n1 215906547 C <X> 0 DP=22 PL 0,21,141\n1 215906548 G <X> 0 DP=22 PL 0,42,200\n[...]\n1 215906555 G A,<X> 0 DP=19 PL 194,36,0,194,36,194\n[...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "shell"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.137,
+            0.853,
+            0.859,
+            0.891
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Note how both sites 215,906,547 and 215,906,548 are now not considered as possible variant sites—the BAQ algorithm has downweighted the bases around the low com‐"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 7,
+          "bbox": [
+            0.32,
+            0.922,
+            0.799,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Visualizing Alignments with samtools tview and the Integrated Genomics Viewer"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 8,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "383"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 413,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.136,
+            0.081,
+            0.861,
+            0.119
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "plexity region we saw in IGC sufficiently enough that samtools mpileup no longer considers these invariant sites."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.137,
+            0.856,
+            0.169
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Creating Your Own SAM/BAM Processing Tools with Pysam"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.136,
+            0.176,
+            0.861,
+            0.346
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In this section, we’ll learn about the basics of Pysam, an application programming interface (more commonly known as an API). As the name suggests, APIs provide a defined interface to some component (in this case, the data in SAM and BAM files) through a set of well-defined classes and functions. The Pysam API allows for us to quickly work with data in SAM and BAM files without having to implement parsers, write code to read binary BAM files, or parse bitflags. The classes and functions in the pysam module take care of all these intermediate steps for you, and provide a consistent interface for you to access the data kept in the lower-level SAM and BAM formats."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.136,
+            0.357,
+            0.861,
+            0.508
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Learning to work with software libraries (which implement APIs) is one of the most important steps in becoming a skilled programmer. Often, beginning programmers are eager to implement everything themselves—while this can be a good learning exercise, for production projects it’s far better to utilize libraries. Not only does using libraries save a considerable amount of time, libraries are community tested and less likely to contain bugs that can lead to incorrect results. Fundamentally, libraries allow you as the programmer to ignore lower-level details and work with higher-level abstractions."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.519,
+            0.859,
+            0.559
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let’s start by installing Pysam. While "
+            },
+            {
+              "type": "hyperlink",
+              "url": "http://github.com/pysam-developers/pysam",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "the source"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "content": " is available on GitHub, the easiest way to install Pysam is through PyPI (the Python Package Index):"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.171,
+            0.567,
+            0.341,
+            0.584
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "$ pip install pysam"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.136,
+            0.591,
+            0.86,
+            0.669
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Once Pysam is installed, open "
+            },
+            {
+              "type": "hyperlink",
+              "url": "http://pysam.readthedocs.org",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "its documentation"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "content": ". Using APIs efficiently is largely about learning how to effectively access information about classes and functions as you need them in the API’s documentation. This is one of the most vital skills to develop in working with APIs."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.683,
+            0.856,
+            0.731
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Opening BAM Files, Fetching Alignments from a Region, and Iterating Across Reads"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.137,
+            0.738,
+            0.859,
+            0.779
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let’s start by opening our NA12891_CEU_sample.bam file using Pysam. We’ll do this interactively to introduce useful Python functions that help in exploring APIs:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 9,
+          "bbox": [
+            0.17,
+            0.787,
+            0.686,
+            0.898
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 9,
+              "bbox": [
+                0.17,
+                0.787,
+                0.686,
+                0.898
+              ],
+              "content": ">>> import pysam\n>>> fname = \"NA12891_CEU_sample.bam\"\n>>> bamfile = pysam.AlignmentFile(filename=fname, mode=\"rb\")\n\n>>> type(bamfile)\n<type 'pysamakovignmentfile.AlignmentFile'>\n>>> dir(bamfile)"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "page_number",
+          "index": 10,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "384"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 11,
+          "bbox": [
+            0.201,
+            0.922,
+            0.452,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 11: Working with Alignment Data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 414,
+      "blocks": [
+        {
+          "type": "code",
+          "index": 0,
+          "bbox": [
+            0.171,
+            0.08,
+            0.783,
+            0.144
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 0,
+              "bbox": [
+                0.171,
+                0.08,
+                0.783,
+                0.144
+              ],
+              "content": "['__class__', '___delattr__', ..., 'close', 'count', 'fetch', 'filename',\n'getrname', 'gettid', 'head', 'header', 'lengths', 'mapped', 'mate',\n'next', 'nocoordinate', 'nreferences', 'pileup', 'references', 'reset',\n'seek', 'tell', 'text', 'unmapped', 'write']"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "python"
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.152,
+            0.861,
+            0.25
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "pysam.AlignmentFile opens the specified file and returns an AlignmentFile object. pysam.AlignmentFile’s default mode is to read plain-text SAM files; because we’re reading a BAM file here, we specify the mode as \"rb\", which opens a binary BAM file (b) for reading (r). We could also open SAM/BAM files for writing, but we won’t cover that in this quick introduction."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.259,
+            0.861,
+            0.394
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As a well-designed higher-level API, Pysam abstracts away many lower-level technical details we shouldn’t have to worry about when writing higher-level applications. For example, we use the exact same pysam.AlignmentFile class and its methods when working with both SAM and BAM files. Similarly, when you open a BAM file, Pysam will check to see if the file has a corresponding .bai index and automatically load this. This allows for quick random access of position-sorted and indexed BAM files, much like we achieved earlier with samtools view."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.404,
+            0.859,
+            0.443
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We could use the pysam.AlignmentFile.fetch() method to fetch aligned reads from a particular region of an indexed BAM file:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 4,
+          "bbox": [
+            0.17,
+            0.452,
+            0.741,
+            0.56
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 4,
+              "bbox": [
+                0.17,
+                0.452,
+                0.741,
+                0.56
+              ],
+              "content": ">>> for read in bamfile.fetch('1', start=215906528, end=215906567):\n...   print read.qname, \"aligned at position\", read.pos\n...\nSRR005672.5788073 aligned at position 215906479\nSRR005666.5830972 aligned at position 215906486\nERR002294.5383813 aligned at position 215906495\n[...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "python"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.568,
+            0.859,
+            0.606
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Similarly, we can iterate through all reads in the BAM file (aligned and unaligned) with the code shown in Example 11-2:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 7,
+          "bbox": [
+            0.138,
+            0.661,
+            0.658,
+            0.817
+          ],
+          "content": [
+            {
+              "type": "code_caption",
+              "index": 6,
+              "bbox": [
+                0.138,
+                0.628,
+                0.578,
+                0.648
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Example 11-2. Iterating through all reads with Pysam"
+                }
+              ]
+            },
+            {
+              "type": "code_body",
+              "index": 7,
+              "bbox": [
+                0.138,
+                0.661,
+                0.658,
+                0.817
+              ],
+              "content": ">>> bamfile = pysam.AlignmentFile(filename=fname, mode=\"rb\")\n>>> for read in bamfile:\n...   status = \"unaligned\" if read.is_unmapped else \"aligned\"\n...   print read.qname, \"is\", status\n...\nSRR005672.8895 is aligned\nSRR010927.10846964 is aligned\nSRR005674.4317449 is aligned\nSRR005675.5348609 is aligned\n[...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.137,
+            0.831,
+            0.86,
+            0.888
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Each iteration returns a single AlignedSegment object, which contains all information kept in a single SAM/BAM entry. These objects contain attributes that store align ment and read information, as well as many useful methods that simplify common"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 9,
+          "bbox": [
+            0.454,
+            0.923,
+            0.798,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Creating Your Own SAM/BAM Processing Tools with Pysam"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 10,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "385"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 415,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.135,
+            0.081,
+            0.861,
+            0.14
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "tasks such as counting how many bases an AlignedSegment object overlaps a supplied region, or returning the reference positions this aligned read overlaps. We’ll cover AlignedSegment objects in “Working with AlignedSegment Objects” on page 388."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.148,
+            0.861,
+            0.34
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "There’s a very important but subtle behavior to remember: when we iterate through an AlignmentFile object this way, the current position in the file is remembered. If you iterate through half a file, break out of the loop, and then begin again, you will start where you left off, not at the beginning of the file. This should be no surprise if you’ve used iterators in Python before; state about the current position is also stored when you iterate through the lines of regular files in Python. But if you’re still relatively unfamiliar with Python, this is a common gotcha to remember. As a result of the file position being stored, if you iterate through an entire file, you’ll need to reset the file position with reset. Let’s demonstrate this gotcha and Alignment File.reset():"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 2,
+          "bbox": [
+            0.171,
+            0.351,
+            0.685,
+            0.601
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 2,
+              "bbox": [
+                0.171,
+                0.351,
+                0.685,
+                0.601
+              ],
+              "content": ">>> bamfile = pysam.AlignmentFile(filename=fname, mode=\"rb\")\n>>> nmapped = 0\n>>> for read in bamfile: ①\n...    nmapped += not read.is_unmapped\n...\n...\n>>> bamfile.next() ②\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"calignmentfile.pyx\", line 1282, [...]\nStopIteration\n>>> bamfile.reset() ③\n0\n>>> read = bamfile.next() ④\n>>> read.qname\n'SRR005672.8895'"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "list",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.616,
+            0.859,
+            0.825
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 4,
+              "bbox": [
+                0.137,
+                0.616,
+                0.859,
+                0.655
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "We iterate through each entry in the bamfile object in this for loop (which in the body simply counts how many mapped reads there are)."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 5,
+              "bbox": [
+                0.137,
+                0.671,
+                0.861,
+                0.768
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "2 Once the for loop is complete, the bamfile object’s internal state is pointing at the end of the file (because we looped through everything). If we were to try to grab another entry in bamfile using the AlignmentFile.next() method, the Python exception StopIteration is raised signaling that there’s nothing left to iterate over."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.137,
+                0.786,
+                0.859,
+                0.824
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Calling the AlignmentFile.reset() method resets the file position to the head of the BAM file (below the header)."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "page_number",
+          "index": 7,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "386"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 8,
+          "bbox": [
+            0.201,
+            0.922,
+            0.451,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 11: Working with Alignment Data"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}

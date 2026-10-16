@@ -1,0 +1,2358 @@
+{
+  "pages": [
+    {
+      "page_idx": 66,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.737,
+            0.117,
+            0.859,
+            0.143
+          ],
+          "content": "CHAPTER 3"
+        },
+        {
+          "type": "doc_title",
+          "bbox": [
+            0.527,
+            0.153,
+            0.859,
+            0.189
+          ],
+          "level": 1,
+          "content": "Remedial Unix Shell"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.365,
+            0.861,
+            0.501
+          ],
+          "content": "The Unix shell is the foundational computing environment for bioinformatics. The shell serves as our interface to large bioinformatics programs, as an interactive console to inspect data and intermediate results, and as the infrastructure for our pipelines and workflows. This chapter will help you develop a proficiency with the necessary Unix shell concepts used extensively throughout the rest of the book. This will allow you to focus on the content of commands in future chapters, rather than be preoccupied with understanding shell syntax."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.508,
+            0.861,
+            0.739
+          ],
+          "content": "This book assumes you’re familiar with basic topics such as what a terminal is, what the shell is, the Unix filesystem hierarchy, moving about directories, file permissions, executing commands, and working with a text editor. If these topics sound foreign to you, it’s best to brush up on using more basic materials (see “Assumptions This Book Makes” on page xvi for some resources). In this chapter, we’ll cover remedial concepts that deeply underly how we use the shell in bioinformatics: streams, redirection, pipes, working with running programs, and command substitution. Understanding these shell topics will prepare you to use the shell to work with data (Chapter 7) and build pipelines and workflows (Chapter 12). In this chapter, we’ll also see why the Unix shell has such a prominent role in how we do modern bioinformatics. If you feel comfortable with these shell topics already, I suggest reading the first section of this chapter and then skipping to Chapter 4."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.754,
+            0.821,
+            0.814
+          ],
+          "level": 2,
+          "content": "Why Do We Use Unix in Bioinformatics? Modularity and the Unix Philosophy"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.82,
+            0.861,
+            0.88
+          ],
+          "content": "Imagine rather than using the Unix shell as our bioinformatics computing environment, we were to implement our entire project as single large program. We usually don’t think of a bioinformatics project as a “program” but it certainly could be—we"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.84,
+            0.924,
+            0.859,
+            0.937
+          ],
+          "content": "37"
+        }
+      ]
+    },
+    {
+      "page_idx": 67,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.08,
+            0.86,
+            0.175
+          ],
+          "continues_prev": true,
+          "content": "could write a single complex program that takes raw data as input, and after hours of data processing, outputs publication figures and a final table of results. For a project like variant calling, this program would include steps for raw sequence read processing, read mapping, variant calling, filtering variant calls, and final data analysis. This program’s code would be massive—easily thousands of lines long."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.185,
+            0.86,
+            0.375
+          ],
+          "content": "While a program like this has the benefit of being customized to a particular variant calling project, it would not be general enough to adapt to others. Given its immense amount of code, this program would be impractical to adjust to each new project. The large codebase would also make finding and fixing bugs difficult. To make matters worse, unless our monolithic program was explicitly programmed to check that data between steps looked error free, a step may go awry (unbeknownst to us) and it would dutifully continue the analysis with incorrect data. While this custom program might be more computationally efficient, this would come at the expense of being fragile, difficult to modify, error prone (because it makes checking intermediate data very difficult), and not generalizable to future projects."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.384,
+            0.859,
+            0.461
+          ],
+          "content": "Unix is the foundational computing environment in bioinformatics because its design philosophy is the antithesis of this inflexible and fragile approach. The Unix shell was designed to allow users to easily build complex programs by interfacing smaller modular programs together. This approach is the Unix philosophy:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.176,
+            0.469,
+            0.825,
+            0.519
+          ],
+          "content": "This is the Unix philosophy: Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.533,
+            0.526,
+            0.656,
+            0.544
+          ],
+          "level": 2,
+          "content": "—Doug McIlory"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.549,
+            0.86,
+            0.643
+          ],
+          "content": "The Unix shell provides a way for these programs to talk to each other (pipes) and write to and read files (redirection). Unix’s core programs (which we’ll use to analyze data on the command line in Chapter 7) are modular and designed to work well with other programs. The modular approach of the Unix philosophy has many advantages in bioinformatics:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.155,
+            0.659,
+            0.858,
+            0.894
+          ],
+          "sub_type": "text",
+          "content": "• With modular workflows, it’s easier to spot errors and figure out where they’re occurring. In a modular workflow, each component is independent, which makes it easier to inspect intermediate results for inconsistencies and isolate problematic steps. In contrast, large nonmodular programs hide potential problems (all you see is its final output data) and make isolating where problems originate difficult.\n• Modular workflows allow us to experiment with alternative methods and approaches, as separate components can be easily swapped out with other components. For example, if you suspect a particular aligner is working poorly with your data, it’s easy to swap this aligner out with another one. This is possible only with modular workflows, where our alignment program is separate from downstream steps like variant calling or RNA-seq analysis."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.141,
+            0.924,
+            0.159,
+            0.936
+          ],
+          "content": "38"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.194,
+            0.923,
+            0.378,
+            0.938
+          ],
+          "content": "Chapter 3: Remedial Unix Shell"
+        }
+      ]
+    },
+    {
+      "page_idx": 68,
+      "blocks": [
+        {
+          "type": "list",
+          "bbox": [
+            0.155,
+            0.081,
+            0.858,
+            0.296
+          ],
+          "sub_type": "text",
+          "content": "• Modular components allow us to choose tools and languages that are appropriate for specific tasks. This is another reason the Unix environment fits bioinformatics well: it allows us to combine command-line tools for interactively exploring data (covered in more depth in Chapter 7), Python for more sophisticated scripting, and R for statistical analysis. When programs are designed to work with other programs, there’s no cost to choosing a specialized tool for a specific task— something we quite often do in bioinformatics.\n• Modular programs are reusable and applicable to many types of data. Wellwritten modular programs can be recombined and applied to different problems and datasets, as they are independent pieces. Most important, by remixing modular components, novel problems can be solved with existing tools."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.311,
+            0.861,
+            0.598
+          ],
+          "content": "In addition to emphasizing the program modularity and interfacing, McIlroy’s quote also mentions text streams. We’ll address Unix streams in this chapter, but the concept of a stream is very important in how we process large data. Definitions of large data may vary, and while a single lane of sequencing data may be big to one lab just getting into sequencing, this is minuscule compared to what larger sequencing centers process each hour. Regardless, a lane of sequencing data is too big to fit in the memory of most standard desktops. If I needed to search for the exact string “GTGAT‐TAACTGCGAA” in this data, I couldn’t open up a lane of data in Notepad and use the Find feature to pinpoint where it occurs—there simply isn’t enough memory to hold all these nucleotides in memory. Instead, tools must rely on streams of data, being read from a source and actively processed. Both general Unix tools and many bioinformatics programs are designed to take input through a stream and pass output through a different stream. It’s these text streams that allow us to both couple programs together into workflows and process data without storing huge amounts of data in our computers’ memory."
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.36,
+            0.922,
+            0.806,
+            0.939
+          ],
+          "content": "Why Do We Use Unix in Bioinformatics? Modularity and the Unix Philosophy"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.84,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "39"
+        }
+      ]
+    },
+    {
+      "page_idx": 69,
+      "blocks": [
+        {
+          "type": "image",
+          "bbox": [
+            0.167,
+            0.073,
+            0.255,
+            0.162
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0065-0080/images/page_69_image_0.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.268,
+            0.079,
+            0.424,
+            0.097
+          ],
+          "level": 2,
+          "content": "The Many Unix Shells"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.267,
+            0.107,
+            0.788,
+            0.195
+          ],
+          "content": "Throughout this book, I’ll refer to the Unix shell in general, but there’s no single Unix shell. Shells are computer programs, and many programmers have designed and implemented their own versions. These many versions can lead to frustrating problems for new users, as some shells have features incompatible with others."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.267,
+            0.2,
+            0.789,
+            0.398
+          ],
+          "content": "To avoid this frustration, make sure you’re using the Bourne-again shell, or bash. Bash is widely available and the default shell on operating systems like Apple’s OS X and Ubuntu Linux. You can run echo \\$SHELL to verify you’re using bash as your shell (although it’s best to also check what echo \\$0 says too, because even how you identify your shell differs among shells!). I wouldn’t recommend other shells like the C shell (csh), its descendant tcsh, and the Korn shell (ksh), as these are less popular in bioinformatics and may not be compatible with examples in this book. The Bourne shell (sh) was the predecessor of the Bourne-again shell (bash); but bash is newer and usually preferred."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.267,
+            0.404,
+            0.79,
+            0.543
+          ],
+          "content": "It’s possible to change your shell with the command chsh. In my daily bioinformatics work, I use Z shell (zsh) and have made this my default shell. Z shell has more advanced features (e.g., better autocomplete) that come in handy in bioinformatics. Everything in this book is compatible between these two shells unless explicitly noted otherwise. If you feel confident with general shell basics, you may want to try Z shell. I’ve included resources about Z shell in this chapter’s README file on GitHub."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.566,
+            0.861,
+            0.72
+          ],
+          "content": "The last point to stress about the Unix shell is that it’s incredibly powerful. With simple features like wildcards, it’s trivial to apply a command to hundreds of files. But with this power comes risk: the Unix shell does not care if commands are mistyped or if they will destroy files; the Unix shell is not designed to prevent you from doing unsafe things. A good analogy comes from Gary Bernhardt: Unix is like a chainsaw. Chainsaws are powerful tools, and make many difficult tasks like cutting through thick logs quite easy. Unfortunately, this power comes with danger: chainsaws can cut just as easily through your leg (well, technically more easily). For example, consider:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.729,
+            0.804,
+            0.791
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ rm -rf tmp-data/aligned-reads*  # deletes all old large files\n$ # versus\n$ rm -rf tmp-data/aligned-reads *  # deletes your entire current directory\nrm: tmp-data/aligned-reads: No such file or directory\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.799,
+            0.861,
+            0.895
+          ],
+          "content": "In Unix, a single space could mean the difference between cleaning out some old files and finishing your project behind schedule because you’ve accidentally deleted everything. This isn’t something that should cause alarm—this is a consequence of working with powerful tools. Rather, just adopt a cautious attitude when experimenting or trying a new command (e.g., work in a temporary directory, use fake files or data if"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.924,
+            0.16,
+            0.936
+          ],
+          "content": "40"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.194,
+            0.922,
+            0.378,
+            0.939
+          ],
+          "content": "Chapter 3: Remedial Unix Shell"
+        }
+      ]
+    },
+    {
+      "page_idx": 70,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.08,
+            0.859,
+            0.137
+          ],
+          "continues_prev": true,
+          "content": "you’re unsure how a command behaves, and always keep backups). That the Unix shell has the power to allow you to do powerful (possibly unsafe) things is an important part of its design:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.177,
+            0.146,
+            0.822,
+            0.181
+          ],
+          "content": "Unix was not designed to stop its users from doing stupid things, as that would also stop them from doing clever things."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.533,
+            0.187,
+            0.64,
+            0.204
+          ],
+          "content": "—Doug Gwyn"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.209,
+            0.859,
+            0.323
+          ],
+          "content": "Tackling repetitive large data-processing tasks in clever ways is a large part of being a skillful bioinformatician. Our shell is often the fastest tool for these tasks. In this chapter, we’ll focus on some of these Unix shell primitives that allow us to build complex programs from simple parts: streams, redirection, pipes, working with processes, and command substitution. We’ll learn more about automating tasks, another important part of the Unix shell, in Chapter 12."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.141,
+            0.341,
+            0.618,
+            0.371
+          ],
+          "level": 2,
+          "content": "Working with Streams and Redirection"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.38,
+            0.859,
+            0.494
+          ],
+          "content": "Bioinformatics data is often text—for example, the As, Cs, Ts, and Gs in sequencing read files or reference genomes, or tab-delimited files of gene coordinates. The text data in bioinformatics is often large, too (gigabytes or more that can’t fit into your computer’s memory at once). This is why Unix’s philosophy of handling text streams is useful in bioinformatics: text streams allow us to do processing on a stream of data rather than holding it all in memory."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.503,
+            0.859,
+            0.77
+          ],
+          "content": "For example, suppose we had two large files full of nucleotide sequences in a FASTA file, a standard text format used to store sequence data (usually of DNA, but occasionally proteins, too). Even the simple task of combining these two large files into a single file becomes tricky once these are a few gigabytes in size. How would this simple task be accomplished without using the Unix shell? You could try to open one file, select and copy all of its contents, and paste it into another file. However, not only would this require loading both files in memory, but you’d also use additional memory making another copy of one file when you select all, copy, and paste. Approaches like this do not scale to the size of data we routinely work with in bioinformatics. Additionally, pasting contents into a file doesn’t follow a recommendation from Chapter 1: treat data as read-only. If something went wrong, one of the files (or both!) could easily be corrupted. To make matters worse, copying and pasting large files uses lots of memory, so it’s even more likely something could go awry with your computer. Streams offer a scalable, robust solution to these problems."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.141,
+            0.786,
+            0.489,
+            0.812
+          ],
+          "level": 2,
+          "content": "Redirecting Standard Out to a File"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.819,
+            0.859,
+            0.877
+          ],
+          "content": "The Unix shell simplifies tasks like combining large files by leveraging streams. Using streams prevents us from unnecessarily loading large files into memory. Instead, we can combine large files by printing their contents to the standard output stream and"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.575,
+            0.923,
+            0.804,
+            0.938
+          ],
+          "content": "Working with Streams and Redirection"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.84,
+            0.924,
+            0.857,
+            0.937
+          ],
+          "content": "41"
+        }
+      ]
+    },
+    {
+      "page_idx": 71,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.08,
+            0.861,
+            0.178
+          ],
+          "continues_prev": true,
+          "content": "redirect this stream from our terminal to the file we wish to save the combined results to. You’ve probably used the program cat to print a file’s contents to standard out (which when not redirected is printed to your terminal screen). For example, we can look at the tb1-protein.fasta file (available in this chapter’s directory on GitHub) by using cat to print it to standard out:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.188,
+            0.601,
+            0.325
+          ],
+          "sub_type": "code",
+          "content": "```powershell\n$ cat tb1-protein.fasta\n>teosinte-branched-1 protein\nLGVPSVKHMFPFCDSSSMDLPLYQQLQLSPSSPKTDQSSSFYCYPCSPP\nFAAADASFPLSYQIGSAAAADATPPQAVINSPDLPVQALMDHAPAPATEL\nGACASGAEGSGASLDRAAAAARKDRHSKICTAGGMRDRRMRLSLDVARKF\nFALQDMLGFDKASKTVQWLLNTSKSAIQEIMADDASSECVEDGSSSLSVD\nGKHNPAEQLGGGGDQKPGNCRGEGKKPAKASKAAATPKPPRKSANNAHQ\nVPDKETRAKARERARERTKEKHRMRWVKLASAIDVEAAAASVPSDRPSSN\nNLSHHSSLSMNMPCAAA\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.336,
+            0.86,
+            0.395
+          ],
+          "content": "cat also allows us to print multiple files’ contents to the standard output stream, in the order as they appear to command arguments. This essentially concatenates these files, as seen here with the tb1 and tga1 translated sequences:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.403,
+            0.601,
+            0.602
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ cat tb1-protein.fasta tga1-protein.fasta\n>teosinte-branched-1 protein\nLGVPSVKHMFPFCDSSSMDLPLYQQLQLSPSSPKTDQSSSFYCYPCSPP\nFAAADASFPLSYQIGSAAAADATPPQAVINSPDLPVQALMDHAPAPATEL\nGACASGAEGSGASLDRAAAAARKDRHSKICTAGGMRDRRMRLSLDVARKF\nFALQDMLGFDKASKTVQWLLNTSKSAIQEIMADDASSECVEDGSSSLSVD\nGKHNPAEQLGGGGDQKPKGNCRGEGKKPAKASKAAATPKPPRKSANNAHQ\nVPDKETRAKARERARERTKEKHRMRWVKLASAIDVEAAAASVPSDRPSSN\nNLSHHSSLSMNMPCAAA\n>teosinte-glume-architecture-1 protein\nDSDCALSLLSAPANSSGIDVSRMVRPTEHVPMAQQPVVPGLQFGSASWFP\nRPQASTGGSFVPSCPAAVEGEQQLNAVLGPNDSEVSMNYGGMFHVGGGSG\nGGEGSSDGGT\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.611,
+            0.86,
+            0.707
+          ],
+          "content": "While these files have been concatenated, the results are not saved anywhere—these lines are just printed to your terminal screen. In order to save these concatenated results to a file, you need to redirect this standard output stream from your terminal screen to a file. Redirection is an important concept in Unix, and one you’ll use frequently in bioinformatics."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.717,
+            0.861,
+            0.833
+          ],
+          "content": "We use the operators > or >> to redirect standard output to a file. The operator > redirects standard output to a file and overwrites any existing contents of the file (take note of this and be careful), whereas the latter operator >> appends to the file (keeping the contents and just adding to the end). If there isn’t an existing file, both operators will create it before redirecting output to it. To concatenate our two FASTA files, we use cat as before, but redirect the output to a file:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.843,
+            0.71,
+            0.859
+          ],
+          "content": "\\$ cat tb1-protein.fasta tga1-protein.fasta > zea-proteins.fasta"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.924,
+            0.16,
+            0.936
+          ],
+          "content": "42"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.194,
+            0.922,
+            0.378,
+            0.939
+          ],
+          "content": "Chapter 3: Remedial Unix Shell"
+        }
+      ]
+    },
+    {
+      "page_idx": 72,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.08,
+            0.862,
+            0.157
+          ],
+          "content": "Note that nothing is printed to your terminal screen when you redirect standard output to a file. In our example, the entire standard output stream ends up in the zeaproteins.fasta file. Redirection of a standard output stream to a file looks like Figure 3-1 (b)."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.167,
+            0.175,
+            0.837,
+            0.341
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.137,
+                0.35,
+                0.845,
+                0.391
+              ],
+              "content": "Figure 3-1. (a) Unredirected standard output, standard error, and standard input (the gray box is what is printed to a user’s terminal); (b) standard output redirected to a file"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0065-0080/images/page_72_image_1.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.407,
+            0.86,
+            0.446
+          ],
+          "content": "We can verify that our redirect worked correctly by checking that the mostly recently created file in this directory is the one we just created (i.e., zea-proteins.fasta):"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.455,
+            0.241,
+            0.469
+          ],
+          "content": "ls -lrt"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.174,
+            0.471,
+            0.245,
+            0.484
+          ],
+          "content": "total 24"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.174,
+            0.486,
+            0.714,
+            0.533
+          ],
+          "sub_type": "text",
+          "content": "-rw-r--r-- 1 vinceb staff 353 Jan 20 21:24 tb1-protein.fasta\n-rw-r--r-- 1 vinceb staff 152 Jan 20 21:24 tga1-protein.fasta\n-rw-r--r-- 1 vinceb staff 505 Jan 20 21:35 zea-proteins.fasta"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.541,
+            0.862,
+            0.621
+          ],
+          "content": "Adding -lrt to the ls lists files in this directory in list format (-l), in reverse (-r) time (-t) order (see man ls for more details). Also, note how these flags have been combined into -lrt; this is a common syntactic shortcut. If you wished to see the newest files at the top, you could omit the r flag."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.637,
+            0.419,
+            0.663
+          ],
+          "level": 2,
+          "content": "Redirecting Standard Error"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.67,
+            0.86,
+            0.784
+          ],
+          "content": "Because many programs use the standard output stream for outputting data, a separate stream is needed for errors, warnings, and messages meant to be read by the user. Standard error is a stream just for this purpose (depicted in Figure 3-1). Like standard output, standard error is by default directed to your terminal. In practice, we often want to redirect the standard error stream to a file so messages, errors, and warnings are logged to a file we can check later."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.792,
+            0.862,
+            0.873
+          ],
+          "content": "To illustrate how we can redirect both standard output and standard error, we’ll use the command ls -l to list both an existing file (tb1.fasta) and a file that does not exist (leafy1.fasta). The output of ls -l for the existing file tb1.fasta will be sent to standard output, while an error message saying leafy1.fasta does not exist will be out‐"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.574,
+            0.923,
+            0.806,
+            0.939
+          ],
+          "content": "Working with Streams and Redirection"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.84,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "43"
+        }
+      ]
+    },
+    {
+      "page_idx": 73,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.081,
+            0.859,
+            0.119
+          ],
+          "continues_prev": true,
+          "content": "put to standard error. When you don’t redirect anything, both streams are output to your terminal:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.129,
+            0.625,
+            0.174
+          ],
+          "sub_type": "code",
+          "content": "```txt\n\\$ ls -l tb1.fasta leafy1.fastals: leafy1.fasta: No such file or directory-rw-r--r-- 1 vinceb staff 0 Feb 21 21:58 tb1.fasta\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.184,
+            0.859,
+            0.223
+          ],
+          "content": "To redirect each stream to separate files, we combine the > operator from the previous section with a new operator for redirecting the standard error stream, 2>:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.232,
+            0.7,
+            0.31
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ ls -l tb1.fasta leafy1.fasta > listing.txt 2> listing.stderr\n$ cat listing.txt\n-rw-r--r-- 1 vinceb staff 152 Jan 20 21:24 tb1.fasta\n$ cat listing.stderr\nls: leafy1.fasta: No such file or directory\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.319,
+            0.859,
+            0.356
+          ],
+          "content": "Additionally, 2> has 2>>, which is analogous to >> (it will append to a file rather than overwrite it)."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.167,
+            0.373,
+            0.255,
+            0.461
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0065-0080/images/page_73_image_5.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.268,
+            0.378,
+            0.382,
+            0.397
+          ],
+          "level": 2,
+          "content": "File Descriptors"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.407,
+            0.79,
+            0.566
+          ],
+          "content": "The 2> notation may seem rather cryptic (and difficult to memorize), but there’s a reason why standard error’s redirect operator has a 2 in it. All open files (including streams) on Unix systems are assigned a unique integer known as a file descriptor. Unix’s three standard streams—standard input (which we’ll see in a bit), standard output, and standard error—are given the file descriptors 0, 1, and 2, respectively. It’s even possible to use 1> as the redirect operator for standard output, though this is not common in practice and may be confusing to collaborators."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.588,
+            0.86,
+            0.74
+          ],
+          "content": "Occasionally a program will produce messages we don’t need or care about. Redirection can be a useful way to silence diagnostic information some programs write to standard out: we just redirect to a logfile like stderr.txt. However, in some cases, we don’t need to save this output to a file and writing output to a physical disk can slow programs down. Luckily, Unix-like operating systems have a special “fake” disk (known as a pseudodevice) to redirect unwanted output to: /dev/null. Output written to /dev/null disappears, which is why it’s sometimes jokingly referred to as a “blackhole” by nerds."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.16,
+            0.936
+          ],
+          "content": "44"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.194,
+            0.922,
+            0.378,
+            0.939
+          ],
+          "content": "Chapter 3: Remedial Unix Shell"
+        }
+      ]
+    },
+    {
+      "page_idx": 74,
+      "blocks": [
+        {
+          "type": "image",
+          "bbox": [
+            0.167,
+            0.073,
+            0.255,
+            0.162
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0065-0080/images/page_74_image_0.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.268,
+            0.079,
+            0.624,
+            0.098
+          ],
+          "level": 2,
+          "content": "Using tail -f to Monitor Redirected Standard Error"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.267,
+            0.107,
+            0.789,
+            0.286
+          ],
+          "content": "We often need to redirect both the standard output and standard error for large bioinformatics programs that could run for days (or maybe weeks, or months!). With both these streams redirected, nothing will be printed to your terminal, including useful diagnostic messages you may want to keep an eye on during long-running tasks. If you wish to follow these messages, the program tail can be used to look at the last lines of an output file by calling tail filename.txt. For example, running tail stderr.txt will print the last 10 lines of the file stderr.txt. You can set the exact number of lines tail will print with the -n option."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.267,
+            0.291,
+            0.79,
+            0.416
+          ],
+          "content": "Tail can also be used to constantly monitor a file with -f (-f for follow). As the monitored file is updated, tail will display the new lines to your terminal screen, rather than just display 10 lines and exiting as it would without this option. If you wish to stop the monitoring of a file, you can use Control-C to interrupt the tail process. The process writing to the file will not be interrupted when you close tail."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.437,
+            0.486,
+            0.463
+          ],
+          "level": 2,
+          "content": "Using Standard Input Redirection"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.47,
+            0.86,
+            0.548
+          ],
+          "content": "The Unix shell also provides a redirection operator for standard input. Normally standard input comes from your keyboard, but with the < redirection operator you can read standard input directly from a file. Though standard input redirection is less common than >, >>, and 2>, it is still occasionally useful:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.558,
+            0.466,
+            0.575
+          ],
+          "content": "\\$ program < inputfile > outputfile"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.583,
+            0.859,
+            0.622
+          ],
+          "content": "In this example, the artificial file inputfile is provided to program through standard input, and all of program’s standard output is redirected to the file outputfile."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.632,
+            0.86,
+            0.729
+          ],
+          "content": "It’s a bit more common to use Unix pipes (e.g., cat inputfile | program > output file) than <. Many programs we’ll see later (like grep, awk, sort) also can take a file argument in addition to input through standard input. Other programs (common especially in bioinformatics) use a single dash argument (-) to indicate that they should use standard input, but this is a convention rather than a feature of Unix."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.747,
+            0.753,
+            0.778
+          ],
+          "level": 2,
+          "content": "The Almighty Unix Pipe: Speed and Beauty in One"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.173,
+            0.785,
+            0.825,
+            0.82
+          ],
+          "content": "We should have some ways of connecting programs like [a] garden hose—screw in another segment when it becomes necessary to massage data in another way."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.529,
+            0.825,
+            0.71,
+            0.843
+          ],
+          "content": "—Doug McIlory (1964)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.848,
+            0.86,
+            0.887
+          ],
+          "content": "In “Why Do We Use Unix in Bioinformatics? Modularity and the Unix Philosophy” on page 37 McIlroy’s quote included the recommendation, “write programs to work"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.51,
+            0.923,
+            0.806,
+            0.94
+          ],
+          "content": "The Almighty Unix Pipe: Speed and Beauty in One"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.84,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "45"
+        }
+      ]
+    },
+    {
+      "page_idx": 75,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.08,
+            0.858,
+            0.176
+          ],
+          "continues_prev": true,
+          "content": "together.” This is easy thanks to the Unix pipe, a concept that McIlroy himself invented. Unix pipes are similar to the redirect operators we saw earlier, except rather than redirecting a program’s standard output stream to a file, pipes redirect it to another program’s standard input. Only standard output is piped to the next command; standard error still is printed to your terminal screen, as seen in Figure 3-2."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.251,
+            0.19,
+            0.744,
+            0.269
+          ],
+          "sub_type": "flowchart",
+          "content": "```mermaid\ngraph LR\n  A[\"Display\"] -->|\"Standard error\"| B[\"Program1\"]\n  B -->|\"Standard out\"| C[\"Program2\"]\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.137,
+                0.279,
+                0.837,
+                0.318
+              ],
+              "content": "Figure 3-2. Piping standard output from program1 to program2; standard error is still printed to the user’s terminal"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0065-0080/images/page_75_image_1.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.334,
+            0.86,
+            0.431
+          ],
+          "content": "You may be wondering why we would pipe a program’s standard output directly into another program’s standard input, rather than writing output to a file and then read ing this file into the next program. In many cases, creating a file would be helpful in checking intermediate results and possibly debugging steps of your workflow—so why not do this every time?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.439,
+            0.861,
+            0.61
+          ],
+          "content": "The answer is that it often comes down to computational efficiency—reading and writing to the disk is very slow. We use pipes in bioinformatics (quite compulsively) not only because they are useful way of building pipelines, but because they’re faster (in some cases, much faster). Modern disks are orders of magnitude slower than memory. For example, it only takes about 15 microseconds to read 1 megabyte of data from memory, but 2 milliseconds to read 1 megabyte from a disk. These 2 milliseconds are 2,000 microseconds, making reading from the disk more than 100 times slower (this is an estimate; actual numbers will vary according to your disk type and speed)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.62,
+            0.86,
+            0.753
+          ],
+          "content": "In practice, writing or reading from a disk (e.g., during redirection of standard output to a file) is often a bottleneck in data processing. For large next-generation sequencing data, this can slow things down quite considerably. If you implement a clever algorithm that’s twice as fast as an older version, you may not even notice the difference if the true bottleneck is reading or writing to the disk. Additionally, unnecessarily redirecting output to a file uses up disk space. With large next-generation data and potentially many experimental samples, this can be quite a problem."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.762,
+            0.86,
+            0.877
+          ],
+          "content": "Passing the output of one program directly into the input of another program with pipes is a computationally efficient and simple way to interface Unix programs. This is another reason why bioinformaticians (and software engineers in general) like Unix. Pipes allow us to build larger, more complex tools from smaller modular parts. It doesn’t matter what language a program is written in, either; pipes will work between anything as long as both programs understand the data passed between"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.924,
+            0.16,
+            0.936
+          ],
+          "content": "46"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.194,
+            0.922,
+            0.378,
+            0.939
+          ],
+          "content": "Chapter 3: Remedial Unix Shell"
+        }
+      ]
+    },
+    {
+      "page_idx": 76,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.08,
+            0.861,
+            0.138
+          ],
+          "continues_prev": true,
+          "content": "them. As the lowest common denominator between most programs, plain-text streams are often used—a point that McIlroy makes in his quote about the Unix philosophy."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.154,
+            0.783,
+            0.181
+          ],
+          "level": 2,
+          "content": "Pipes in Action: Creating Simple Programs with Grep and Pipes"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.187,
+            0.861,
+            0.396
+          ],
+          "content": "The Golden Rule of Bioinformatics is to not trust your tools or data. This skepticism requires constant sanity checking of intermediate results, which ensures your methods aren’t biasing your data, or problems in your data aren’t being exacerbated by your methods. However, writing custom scripts to check every bit of your intermediate data can be costly, even if you’re a fast programmer who can write bug-free code the first go. Unix pipes allow us to quickly and iteratively build tiny command-line programs to inspect and manipulate data—an approach we’ll explore in much more depth in Chapter 7. Pipes also are used extensively in larger bioinformatics workflows (Chapter 12), as they avoid latency issues from writing unnecessary files to disk. We’ll learn the basics of pipes in this section, preparing you to use them throughout the rest of the book."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.406,
+            0.861,
+            0.579
+          ],
+          "content": "Let’s look at how we can chain processes together with pipes. Suppose we’re working with a FASTA file and a program warns that it contains non-nucleotide characters in sequences. You’re surprised by this, as the sequences are only DNA. We can check for non-nucleotide characters easily with a Unix one-liner using pipes and the grep. The grep Unix tool searches files or standard input for strings that match patterns. These patterns can be simple strings, or regular expressions (there are actually two flavors of regular expressions, basic and extended; see man grep for more details). If you’re unfamiliar with regular expressions, see the book’s GitHub repository’s README for resources."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.589,
+            0.861,
+            0.704
+          ],
+          "content": "Our pipeline would first remove all header lines (those that begin with >) from the FASTA files, as we only care if sequences have non-nucleotide characters. The remaining sequences of the FASTA file could then be piped to another instance of grep, which would only print lines containing non-nucleotide characters. To make these easier to spot in our terminal, we could also color these matching characters. The entire command would look like:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.713,
+            0.77,
+            0.763
+          ],
+          "sub_type": "code",
+          "content": "```shell\n$ grep -v \"^> \" tb1.fasta | \\ ①\n    grep --color -i \"[^ATCG]\" ②\nCCCCAAAGACGGACCAATCCAGCAGCTTCTACTGCTAYCCATGCTCCCCTCCCTTCGCCGCCGCCGACGC\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.778,
+            0.861,
+            0.895
+          ],
+          "content": "1 First, we remove the FASTA header lines, which begin with the > character. Our regular expression pattern is ^>, which matches all lines that start with a > character. The caret symbol has two meanings in regular expressions, but in this context, it’s used to anchor a pattern to the start of a line. Because we want to exclude lines starting with >, we invert the matching lines with the grep option -v. Finally, we pipe the standard output to the next command with the pipe charac‐"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.51,
+            0.922,
+            0.806,
+            0.939
+          ],
+          "content": "The Almighty Unix Pipe: Speed and Beauty in One"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.84,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "47"
+        }
+      ]
+    },
+    {
+      "page_idx": 77,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.172,
+            0.081,
+            0.858,
+            0.12
+          ],
+          "continues_prev": true,
+          "content": "ter (|). The backslash (\\) character simply means that we’re continuing the command on the next line, and is used above to improve readability."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.136,
+            0.861,
+            0.309
+          ],
+          "content": "2 Second, we want to find any characters that are not A, T, C, or G. It’s easiest to construct a regular expression pattern that doesn’t match A, T, C, or G. To do this, we use the caret symbol’s second meaning in regular expressions. When used in brackets, a caret symbol matches anything that’s not one of the characters in these brackets. So the pattern [^ATCG] matches any character that’s not A, T, C, or G. Also, we ignore case with -i, because a, t, c, and g are valid nucleotides (lowercase characters are often used to indicate masked repeat or low-complexity sequences). Finally, we add grep’s --color option to color the matching non-nucleotide characters."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.319,
+            0.861,
+            0.416
+          ],
+          "content": "When run in a terminal window, this would highlight “Y”. Interestingly, Y is actually a valid extended ambiguous nucleotide code according to a standard set by IUPAC. Y represents the pYrimidine bases: C or T. Other single-letter IUPAC codes can represent uncertainty in sequence data. For example, puRine bases are represented by R, and a base that’s either A, G, or T has the code D."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.424,
+            0.861,
+            0.558
+          ],
+          "content": "Let’s discuss a few additional points about this simple Unix pipe. First, note that both regular expressions are in quotes, which is a good habit to get into. Also, if instead we had used grep -v > tb1.fasta, your shell would have interpreted the > as a redirect operator rather than a pattern supplied to grep. Unfortunately, this would mistakenly overwrite your tb1.fasta file! Most bioinformaticians have made this mistake at some point and learned the hard way (by losing the FASTA file they were hoping to grep), so beware."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.569,
+            0.861,
+            0.704
+          ],
+          "content": "This simple Unix one-liner takes only a few seconds to write and run, and works great for this particular task. We could have written a more complex program that explicitly parses the FASTA format, counts the number of occurrences, and outputs a list of sequence names with non-nucleotide characters. However, for our task—seeing why a program isn’t working—building simple command-line tools on the fly is fast and sufficient. We’ll see many more examples of how to build command line tools with Unix data programs and pipes in Chapter 7."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.719,
+            0.485,
+            0.744
+          ],
+          "level": 2,
+          "content": "Combining Pipes and Redirection"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.752,
+            0.861,
+            0.849
+          ],
+          "content": "Large bioinformatics programs like aligners, assemblers, and SNP callers will often use multiple streams simultaneously. Results (e.g., aligned reads, assembled contigs, or SNP calls) are output via the standard output stream while diagnostic messages, warnings, or errors are output to the standard error stream. In such cases, we need to combine pipes and redirection to manage all streams from a running program."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.924,
+            0.16,
+            0.936
+          ],
+          "content": "48"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.194,
+            0.922,
+            0.378,
+            0.939
+          ],
+          "content": "Chapter 3: Remedial Unix Shell"
+        }
+      ]
+    },
+    {
+      "page_idx": 78,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.082,
+            0.861,
+            0.276
+          ],
+          "content": "For example, suppose we have two imaginary programs: program1 and program2. Our first program, program1, does some processing on an input file called input.txt and outputs results to the standard output stream and diagnostic messages to the standard error stream. Our second program, program2, takes standard output from program1 as input and processes it. program2 also outputs its own diagnostic messages to standard error, and results to standard output. The tricky part is that we now have two processes outputting to both standard error and standard output. If we didn’t capture both program1’s and program2’s standard error streams, we’d have a jumbled mess of diagnostic messages on our screen that scrolls by too quickly for us to read. Luckily, we can can combine pipes and redirects easily:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.284,
+            0.592,
+            0.318
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ program1 input.txt 2> program1.stderr | \\\n    program2 2> program2.stderr > results.txt\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.138,
+            0.333,
+            0.861,
+            0.488
+          ],
+          "sub_type": "text",
+          "content": "1 program1 processes the input.txt input file and then outputs its results to standard output. program1’s standard error stream is redirected to the program1.stderr logfile. As before, the backslash is used to split these commands across multiple lines to improve readability (and is optional in your own work).\nMeanwhile, program2 uses the standard output from program1 as its standard input. The shell redirects program2’s standard error stream to the program2.stderr logfile, and program2’s standard output to results.txt."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.496,
+            0.861,
+            0.614
+          ],
+          "content": "Occasionally, we need to redirect a standard error stream to standard output. For example, suppose we wanted to use grep to search for “error” in both the standard output and standard error streams of program1. Using pipes wouldn’t work, because pipes only link the standard output of one program to the standard input of the next. Pipes ignore standard error. We can get around this by first redirecting standard error to standard output, and then piping this merged stream to grep:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.623,
+            0.431,
+            0.64
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ program1 2>&1 | grep \"error\"\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.648,
+            0.821,
+            0.668
+          ],
+          "content": "The 2>&1 operator is what redirects standard error to the standard output stream."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.683,
+            0.567,
+            0.71
+          ],
+          "level": 2,
+          "content": "Even More Redirection: A tee in Your Pipe"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.717,
+            0.861,
+            0.87
+          ],
+          "content": "As mentioned earlier, pipes prevent unnecessary disk writing and reading operations by connecting the standard output of one process to the standard input of another. However, we do occasionally need to write intermediate files to disk in Unix pipelines. These intermediate files can be useful when debugging a pipeline or when you wish to store intermediate files for steps that take a long time to complete. Like a plumber’s T joint, the Unix program tee diverts a copy of your pipeline’s standard output stream to an intermediate file while still passing it through its standard output:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.879,
+            0.795,
+            0.896
+          ],
+          "sub_type": "code",
+          "content": "```powershell\n$ program1 input.txt | tee intermediate-file.txt | program2 > results.txt\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.51,
+            0.923,
+            0.806,
+            0.94
+          ],
+          "content": "The Almighty Unix Pipe: Speed and Beauty in One"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.84,
+            0.923,
+            0.859,
+            0.937
+          ],
+          "content": "49"
+        }
+      ]
+    },
+    {
+      "page_idx": 79,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.081,
+            0.859,
+            0.123
+          ],
+          "content": "Here, program1’s standard output is both written to intermediate-file.txt and piped directly into program2’s standard input."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.139,
+            0.655,
+            0.169
+          ],
+          "level": 2,
+          "content": "Managing and Interacting with Processes"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.177,
+            0.861,
+            0.33
+          ],
+          "content": "When we run programs through the Unix shell, they become processes until they successfully finish or terminate with an error. There are multiple processes running on your machine simultaneously—for example, system processes, as well as your web browser, email application, bioinformatics programs, and so on. In bioinformatics, we often work with processes that run for a large amount of time, so it’s important we know how to work with and manage processes from the Unix shell. In this section, we’ll learn the basics of manipulating processes: running and managing processes in the background, killing errant processes, and checking process exit status."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.346,
+            0.373,
+            0.373
+          ],
+          "level": 2,
+          "content": "Background Processes"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.379,
+            0.86,
+            0.513
+          ],
+          "content": "When we type a command in the shell and press Enter, we lose access to that shell prompt for however long the command takes to run. This is fine for short tasks, but waiting for a long-running bioinformatics program to complete before continuing work in the shell would kill our productivity. Rather than running your programs in the foreground (as you do normally when you run a command), the shell also gives you the option to run programs in the background. Running a process in the background frees the prompt so you can continue working."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.521,
+            0.859,
+            0.562
+          ],
+          "content": "We can tell the Unix shell to run a program in the background by appending an ampersand (&) to the end of our command. For example:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.57,
+            0.483,
+            0.602
+          ],
+          "sub_type": "code",
+          "content": "```batch\n$ program1 input.txt > results.txt &\n[1] 26577\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.61,
+            0.86,
+            0.67
+          ],
+          "content": "The number returned by the shell is the process ID or PID of program1. This is a unique ID that allows you to identify and check the status of program1 later on. We can check what processes we have running in the background with jobs:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.172,
+            0.679,
+            0.618,
+            0.711
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ jobs\n[1]+  Running      program1 input.txt > results.txt\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.719,
+            0.86,
+            0.876
+          ],
+          "content": "To bring a background process into the foreground again, we can use fg (for foreground). fg will bring the most recent process to the foreground. If you have many processes running in the background, they will all appear in the list output by the program jobs. The numbers like [1] are job IDs (which are different than the process IDs your system assigns your running programs). To return a specific background job to the foreground, use fg %&lt;num&gt; where &lt;num&gt; is its number in the job list. If we wanted to return program1 to the foreground, both fg and fg %1 would do the same thing, as there’s only one background process:"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.16,
+            0.936
+          ],
+          "content": "50"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.194,
+            0.922,
+            0.378,
+            0.939
+          ],
+          "content": "Chapter 3: Remedial Unix Shell"
+        }
+      ]
+    },
+    {
+      "page_idx": 80,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.172,
+            0.082,
+            0.21,
+            0.096
+          ],
+          "content": "\\$ fg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.172,
+            0.097,
+            0.447,
+            0.112
+          ],
+          "content": "program1 input.txt > results.txt"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.165,
+            0.134,
+            0.266,
+            0.209
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0081-0096/images/page_80_image_2.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.268,
+            0.133,
+            0.577,
+            0.152
+          ],
+          "level": 2,
+          "content": "Background Processes and Hangup Signals"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.16,
+            0.788,
+            0.248
+          ],
+          "content": "There’s a slight gotcha with background processes: although they run in the background and seem disconnected from our terminal, closing our terminal window would cause these processes to be killed. Unfortunately, a lot of long-running important jobs have been accidentally killed this way."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.254,
+            0.788,
+            0.378
+          ],
+          "content": "Whenever our terminal window closes, it sends a hangup signal. Hangup signals (also know as SIGHUP) are from the era in which network connections were much less reliable. A dropped connection could prevent a user from stopping an aberrant, resourcehungry process. To address this, the hangup signal is sent to all processes started from closed terminal. Nearly all Unix commandline programs stop running as soon as they receive this signal."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.383,
+            0.788,
+            0.454
+          ],
+          "content": "So beware—running a process in the background does not guarantee that it won’t die when your terminal closes. To prevent this, we need to use the tool nohup or run it from within Tmux, two topics we’ll cover in much more detail in Chapter 4."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.476,
+            0.86,
+            0.592
+          ],
+          "content": "It’s also possible to place a process already running in the foreground into the background. To do this, we first need to suspend the process, and then use the bg command to run it in the background. Suspending a process temporarily pauses it, allowing you to put it in the background. We can suspend processes by sending a stop signal through the key combination Control-z. With our imaginary program1, we would accomplish this as follows:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.602,
+            0.713,
+            0.68
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ program1 input.txt > results.txt # forgot to append ampersand\n$ # enter control-z\n[1]+  Stopped                 program1 input.txt > results.txt\n$ bg\n[1]+ program1 input.txt > results.txt\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.688,
+            0.86,
+            0.747
+          ],
+          "content": "As with fg earlier, we could also use jobs to see the suspended process’s job ID. If we have multiple running processes, we can specify which one to move to the background with bg %&lt;num&gt; (where &lt;num&gt; is the job ID)."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.763,
+            0.314,
+            0.789
+          ],
+          "level": 2,
+          "content": "Killing Processes"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.796,
+            0.86,
+            0.892
+          ],
+          "content": "Occasionally we need to kill a process. It’s not uncommon for a process to demand too many of our computer’s resources or become nonresponsive, requiring that we send a special signal to kill the process. Killing a process ends it for good, and unlike suspending it with a stop signal, it’s unrecoverable. If the process is currently running in your shell, you can kill it by entering Control-C. This only works if this process is"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.558,
+            0.923,
+            0.806,
+            0.939
+          ],
+          "content": "Managing and Interacting with Processes"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.84,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "51"
+        }
+      ]
+    },
+    {
+      "page_idx": 81,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.081,
+            0.859,
+            0.119
+          ],
+          "continues_prev": true,
+          "content": "running in the foreground, so if it’s in the background you’ll have to use the fg discussed earlier."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.129,
+            0.861,
+            0.205
+          ],
+          "content": "More advanced process management (including monitoring and finding processes with top and ps, and killing them with the kill command) is out of the scope of this chapter. However, there’s a lot of information about process and resource management in this chapter’s README on GitHub."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.222,
+            0.715,
+            0.268
+          ],
+          "level": 2,
+          "content": "Exit Status: How to Programmatically Tell Whether Your Command Worked"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.278,
+            0.862,
+            0.412
+          ],
+          "content": "One concern with long-running processes is that you’re probably not going to wait around to monitor them. How do you know when they complete? How do you know if they successfully finished without an error? Unix programs exit with an exit status, which indicates whether a program terminated without a problem or with an error. By Unix standards, an exit status of 0 indicates the process ran successfully, and any nonzero status indicates some sort of error has occurred (and hopefully the program prints an understandable error message, too)."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.163,
+            0.434,
+            0.266,
+            0.51
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0081-0096/images/page_81_image_4.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.268,
+            0.433,
+            0.43,
+            0.451
+          ],
+          "level": 2,
+          "content": "Warning Exit Statuses"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.267,
+            0.46,
+            0.79,
+            0.583
+          ],
+          "content": "Unfortunately, whether a program returns a nonzero status when it encounters an error is up to program developers. Occasionally, programmers forget to handle errors well (and this does indeed happen in bioinformatics programs), and programs can error out and still return a zero-exit status. This is yet another reason why it’s crucial to follow The Golden Rule (i.e., don’t trust your tools) and to always check your intermediate data."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.605,
+            0.859,
+            0.664
+          ],
+          "content": "The exit status isn’t printed to the terminal, but your shell will set its value to a variable in your shell (aptly named a shell variable) named \\$?. We can use the echo command to look at this variable’s value after running a command:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.673,
+            0.466,
+            0.719
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ program1 input.txt > results.txt\n$ echo $?\n0\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.728,
+            0.862,
+            0.883
+          ],
+          "content": "Exit statuses are incredibly useful because they allow us to programmatically chain commands together in the shell. A subsequent command in a chain is run conditionally on the last command’s exit status. The shell provides two operators that implement this: one operator that runs the subsequent command only if the first command completed successfully (&&), and one operator that runs the next command only if the first completed unsuccessfully (||). If you’re familiar with concept of short-circuit evaluation, you’ll understand that these operators are short-circuiting and and or, respectively."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.16,
+            0.936
+          ],
+          "content": "52"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.194,
+            0.922,
+            0.378,
+            0.939
+          ],
+          "content": "Chapter 3: Remedial Unix Shell"
+        }
+      ]
+    },
+    {
+      "page_idx": 82,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.082,
+            0.861,
+            0.198
+          ],
+          "content": "It’s best to see these operators in an example. Suppose we wanted to run program1, have it write its output to file, and then have program2 read this output. To avoid the problem of program2 reading a file that’s not complete because program1 terminated with an error, we want to start program2 only after program1 returns a zero (successful) exit code. The shell operator && executes subsequent commands only if previous commands have completed with a nonzero exit status:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.209,
+            0.616,
+            0.24
+          ],
+          "sub_type": "code",
+          "content": "```batch\n$ program1 input.txt > intermediate-results.txt && \\program2 intermediate-results.txt > results.txt\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.249,
+            0.859,
+            0.306
+          ],
+          "content": "Using the || operator, we can have the shell execute a command only if the previous command has failed (exited with a nonzero status). This is useful for warning messages:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.316,
+            0.616,
+            0.347
+          ],
+          "sub_type": "code",
+          "content": "```shell\n$ program1 input.txt > intermediate-results.txt || \\\n    echo \"warning: an error occurred\"\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.356,
+            0.86,
+            0.414
+          ],
+          "content": "If you want to test && and ||, there are two Unix commands that do nothing but return either exit success (true) or exit failure (false). For example, think about why the following lines are printed:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.424,
+            0.59,
+            0.609
+          ],
+          "sub_type": "code",
+          "content": "```shell\n$ true\n$ echo $?\n0\n$ false\n$ echo $?\n1\n$ true && echo \"first command was a success\"\nfirst command was a success\n$ true || echo \"first command was not a success\"\n$ false || echo \"first command was not a success\"\nfirst command was not a success\n$ false && echo \"first command was a success\"\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.618,
+            0.859,
+            0.657
+          ],
+          "content": "Additionally, if you don’t care about the exit status and you just wish to execute two commands sequentially, you can use a single semicolon (;):"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.666,
+            0.666,
+            0.697
+          ],
+          "sub_type": "code",
+          "content": "```txt\n\\$ false; true; false; echo \"none of the previous mattered\"\nnone of the previous mattered\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.705,
+            0.86,
+            0.82
+          ],
+          "content": "If you’ve only known the shell as something that you interacted with through a terminal, you may start to notice that it has many elements of a full programming language. This is because it is! In fact, you can write and execute shell scripts just as you do Python scripts. Keeping your bioinformatics shell work in a commented shell script kept under version control is the best way to ensure that your work is reproducible. We will discuss shell scripts in Chapter 12."
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.558,
+            0.923,
+            0.806,
+            0.939
+          ],
+          "content": "Managing and Interacting with Processes"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.84,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "53"
+        }
+      ]
+    },
+    {
+      "page_idx": 83,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.079,
+            0.43,
+            0.105
+          ],
+          "level": 2,
+          "content": "Command Substitution"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.117,
+            0.862,
+            0.214
+          ],
+          "content": "Unix users like to have the Unix shell do work for them—this is why shell expansions like wildcards and brace expansion exist (if you need a refresher, refer back to Chapter 2). Another type of useful shell expansion is command substitution. Command substitution runs a Unix command inline and returns the output as a string that can be used in another command. This opens up a lot of useful possibilities."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.222,
+            0.861,
+            0.395
+          ],
+          "content": "A good example of when this is useful is in those early days of the New Year when we haven’t yet adjusted to using the new date. For example, five days into 2013, I shared with my collaborators a directory of new results named snp-sim-01-05-2012 (in mmdd-yyyy format). After the embarrassment subsided, the Unix solution presented itself: the date command is there to programmatically return the current date as a string. We can use this string to automatically give our directories names containing the current date. We use command substitution to run the date program and replace this command with its output (the string). This is easier to understand through a simpler example:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.404,
+            0.811,
+            0.469
+          ],
+          "sub_type": "code",
+          "content": "```shell\n$ grep -c '^>' input.fasta ①\n416\n$ echo \"There are $(grep -c '^>' input.fasta) entries in my FASTA file.\" ②\nThere are 416 entries in my FASTA file.\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.137,
+            0.483,
+            0.861,
+            0.695
+          ],
+          "sub_type": "text",
+          "content": "1 This command uses grep to count (the -c option stands for count) the number of lines matching the pattern. In this case, our pattern ^> matches FASTA header lines. Because each FASTA file entry has a header like “>sequence-a” that begins with “>”, this command matches each of these headers and counts the number of FASTA entries.\n2 Now suppose we wanted to take the output of the grep command and insert it into another command—this is what command substitution is all about. In this case, we want echo to print a message containing how many FASTA entries there are to standard output. Using command substitution, we can calculate and return the number of FASTA entries directly into this string!"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.703,
+            0.861,
+            0.802
+          ],
+          "content": "Using this command substitution approach, we can easily create dated directories using the command date +%F, where the argument +%F simply tells the date program to output the date in a particular format. date has multiple formatting options, so your European colleagues can specify a date as “19 May 2011” whereas your American colleagues can specify “May 19, 2011:”"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.81,
+            0.406,
+            0.842
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ mkdir results-$(date +%F)\n$ ls results-2015-04-13\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.16,
+            0.936
+          ],
+          "content": "54"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.194,
+            0.922,
+            0.378,
+            0.939
+          ],
+          "content": "Chapter 3: Remedial Unix Shell"
+        }
+      ]
+    },
+    {
+      "page_idx": 84,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.081,
+            0.861,
+            0.138
+          ],
+          "content": "In general, the format returned by date +%F is a really good one for dated directories, because when results are sorted by name, directories in this format also sort chronologically:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.171,
+            0.148,
+            0.642,
+            0.287
+          ],
+          "content": "<table><tr><td colspan=\"7\">$ ls -l</td></tr><tr><td>drwxr-xr-x</td><td>2</td><td>vinceb</td><td>staff</td><td>68</td><td>Feb</td><td>3 23:23 1999-07-01</td></tr><tr><td>drwxr-xr-x</td><td>2</td><td>vinceb</td><td>staff</td><td>68</td><td>Feb</td><td>3 23:22 2000-12-19</td></tr><tr><td>drwxr-xr-x</td><td>2</td><td>vinceb</td><td>staff</td><td>68</td><td>Feb</td><td>3 23:22 2011-02-03</td></tr><tr><td>drwxr-xr-x</td><td>2</td><td>vinceb</td><td>staff</td><td>68</td><td>Feb</td><td>3 23:22 2012-02-13</td></tr><tr><td>drwxr-xr-x</td><td>2</td><td>vinceb</td><td>staff</td><td>68</td><td>Feb</td><td>3 23:23 2012-05-26</td></tr><tr><td>drwxr-xr-x</td><td>2</td><td>vinceb</td><td>staff</td><td>68</td><td>Feb</td><td>3 23:22 2012-05-27</td></tr><tr><td>drwxr-xr-x</td><td>2</td><td>vinceb</td><td>staff</td><td>68</td><td>Feb</td><td>3 23:23 2012-07-04</td></tr><tr><td>drwxr-xr-x</td><td>2</td><td>vinceb</td><td>staff</td><td>68</td><td>Feb</td><td>3 23:23 2012-07-05</td></tr></table>",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0081-0096/images/page_84_table_1.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.295,
+            0.858,
+            0.314
+          ],
+          "content": "The cleverness behind this is what makes this date format, known as ISO 8601, useful."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.167,
+            0.33,
+            0.255,
+            0.419
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0081-0096/images/page_84_image_3.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.267,
+            0.335,
+            0.44,
+            0.354
+          ],
+          "level": 2,
+          "content": "Storing Your Unix Tricks"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.365,
+            0.789,
+            0.435
+          ],
+          "content": "In Chapter 2, we made a project directory with mkdir -p and brace expansions. If you find yourself making the same project structures a lot, it’s worthwhile to store it rather than typing it out each time. Why repeat yourself?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.44,
+            0.79,
+            0.566
+          ],
+          "content": "Early Unix users were a clever (or lazy) bunch and devised a tool for storing repeated command combinations: alias. If you’re running a clever one-liner over and over again, use add alias to add it to your \\~/.bashrc (or \\~/.profile if on OS X). alias simply aliases your command to a shorter name alias. For example, if you always create project directories with the same directory structure, add a line like the following:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.3,
+            0.572,
+            0.727,
+            0.589
+          ],
+          "content": "alias mkpr=\"mkdir -p {data/seqs,scripts,analysis}\""
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.593,
+            0.789,
+            0.646
+          ],
+          "content": "For small stuff like this, there’s no point writing more complex scripts; adopt the Unix way and keep it simple. Another example is that we could alias our date +%F command to today:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.301,
+            0.653,
+            0.492,
+            0.668
+          ],
+          "content": "alias today=\"date +%F\""
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.674,
+            0.789,
+            0.71
+          ],
+          "content": "Now, entering mkdir results-\\$(today) will create a dated results directory."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.715,
+            0.789,
+            0.855
+          ],
+          "content": "A word of warning, though: do not use your aliased command in project-level shell scripts! These reside in your shell’s startup file (e.g., \\~/.profile or \\~/.bashrc), which is outside of your project directory. If you distribute your project directory, any shell programs that require alias definitions will not work. In computing, we say that such a practice is not portable—if it moves off your system, it breaks. Writing code to be portable, even if it’s not going to run elsewhere, will help in keeping projects reproducible."
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.665,
+            0.923,
+            0.806,
+            0.938
+          ],
+          "content": "Command Substitution"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.84,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "55"
+        }
+      ]
+    },
+    {
+      "page_idx": 85,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.08,
+            0.86,
+            0.175
+          ],
+          "content": "Like all good things, Unix tricks like command substitution are best used in moderation. Once you’re a bit more familiar with these tricks, they’re very quick and easy solutions to routine annoyances. In general, however, it’s best to keep things simple and know when to reach for the quick Unix solution and when to use another tool like Python or R. We’ll discuss this in more depth in Chapters 7 and 8."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.142,
+            0.925,
+            0.159,
+            0.936
+          ],
+          "content": "56"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.195,
+            0.924,
+            0.378,
+            0.938
+          ],
+          "content": "Chapter 3: Remedial Unix Shell"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Bioinformatics Data Skills",
+      "authors": [
+        "Vince Buffalo"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "created_at": "2015-06-30T16:29:18Z",
+      "modified_at": "2015-06-30T13:45:47-04:00",
+      "creator_application": "AH CSS Formatter V6.2 MR4 for Linux64 : 6.2.6.18551 (2014/09/24 15:00JST)",
+      "producer_application": "Antenna House PDF Output Library 6.2.609 (Linux64)",
+      "page_count": 538,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 0,
+          "width_pt": 503.16595458984375,
+          "height_pt": 660.5735470056534
+        },
+        {
+          "page_idx": 1,
+          "width_pt": 504.00201416015625,
+          "height_pt": 659.7847900390625
+        },
+        {
+          "page_idx": 2,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 3,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 4,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 5,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 6,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 7,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 8,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 9,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 10,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 11,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 12,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 13,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 14,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 15,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

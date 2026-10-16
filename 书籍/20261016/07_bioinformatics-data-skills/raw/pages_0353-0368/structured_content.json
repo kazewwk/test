@@ -1,0 +1,1951 @@
+{
+  "pages": [
+    {
+      "page_idx": 352,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.081,
+            0.773,
+            0.1
+          ],
+          "content": "Here’s what amy1\\_exons now looks like (only one transcript’s exons shown):"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.111,
+            0.837,
+            0.297
+          ],
+          "sub_type": "algorithm",
+          "content": "> amy1\\_exons\nGRangesList object of length 5:\n\\$18879\nGRanges object with 11 ranges and 3 metadata columns:\n    seqnames        ranges strand | exon\\_id exon\\_name [...] [...]\n        &lt;Rle&gt;        &lt;IRanges&gt; &lt;Rle&gt; | &lt;integer&gt; &lt;character&gt; [...] [...]\n[1]     chr3 [113577701, 113577830]   - | 68142      &lt;NA&gt; [...] [...]\n[2]     chr3 [113569845, 113570057]   - | 68139      &lt;NA&gt; [...] [...]\n[3]     chr3 [113569382, 113569528]   - | 68138      &lt;NA&gt; [...] [...]\n[4]     chr3 [113564869, 113565066]   - | 68136      &lt;NA&gt; [...] [...]\n[5]     chr3 [113563445, 113563675]   - | 68135      &lt;NA&gt; [...] [...]\n[...]",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.304,
+            0.861,
+            0.399
+          ],
+          "content": "Now, we want to process each transcript and its exons pairwise. Our exons are already grouped by transcript, but our transcripts are in a single GRanges object (because these are transcripts grouped by gene, and we’re looking at one gene). So we split up transcript ranges into a GRangeList object, this time grouping by transcript identifier:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.41,
+            0.814,
+            0.628
+          ],
+          "sub_type": "algorithm",
+          "content": "> amy1\\_tx <- split(amy1, amy1\\$tx\\_id)\n> amy1\\_tx\nGRangesList object of length 5:\n\\$18879\nGRanges object with 1 range and 2 metadata columns:\n    seqnames          ranges strand | tx\\_id        tx\\_name\n        &lt;Rle&gt;           &lt;IRanges&gt; &lt;Rle&gt; | &lt;integer&gt;       &lt;character&gt;\n[1]     chr3 [113555710, 113577830]   - |  18879 ENSMUST00000067980\n\n\\$18880\nGRanges object with 1 range and 2 metadata columns:\n    seqnames          ranges strand | tx\\_id        tx\\_name\n[1]     chr3 [113555953, 113574762]   - | 18880 ENSMUST00000106540\n[...]",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.635,
+            0.861,
+            0.713
+          ],
+          "content": "With both our exons and transcripts grouped by transcript, we can finally take the pairwise set difference (with psetdiff()) which creates the set of introns for each transcript. Remember, it’s imperative when using pairwise set functions to make sure your two objects are correctly matched up!"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.721,
+            0.811,
+            0.888
+          ],
+          "sub_type": "algorithm",
+          "content": "> all(names(amy1\\_tx) == names(amy1\\_exons))  # check everything's matched up\n[1] TRUE\n> amy1\\_introns <- psetdiff(amy1\\_tx, amy1\\_exons)\n> head(amy1\\_introns[['18880']]. 2) # the first two introns of amylase\n                      # 1 transcript 18880\nGRanges with 2 ranges and 0 metadata columns:\n        seqnames            ranges strand\n            &lt;Rle&gt;              &lt;IRanges&gt; &lt;Rle&gt;\n[1]     chr3 [113556174, 113558092]    -\n[2]     chr3 [113558219, 113558321]    -\n---",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.42,
+            0.923,
+            0.798,
+            0.94
+          ],
+          "content": "An Interactive Introduction to Range Data with GenomicRanges"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "323"
+        }
+      ]
+    },
+    {
+      "page_idx": 353,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.19,
+            0.082,
+            0.284,
+            0.096
+          ],
+          "content": "seqlengths:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.292,
+            0.097,
+            0.761,
+            0.127
+          ],
+          "content": "| chr1 | chr2 ... | chrUn_JH584304 |\n| --- | --- | --- |\n| 195471971 | 182113224 ... | 114452 |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_353_table_1.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.136,
+            0.86,
+            0.213
+          ],
+          "content": "Are the introns we created manually for this gene identical to those created by the function intronsByTranscripts()? It’s always a good idea to validate your methods through comparison to another method or visual inspection using a genome browser. Here, we compare to the introns found with intronsByTranscript():"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.224,
+            0.624,
+            0.255
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> identical(mm_introns[names(amy1_tx)], amy1_introns)\n[1] TRUE\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.264,
+            0.588,
+            0.282
+          ],
+          "content": "Indeed, the manual method using psetdiff() works."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.299,
+            0.621,
+            0.325
+          ],
+          "level": 2,
+          "content": "Finding and Working with Overlapping Ranges"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.333,
+            0.858,
+            0.429
+          ],
+          "content": "Finding and counting overlaps are probably the most important operations in working with GRanges objects and ranges in general. Bioconductor’s GenomicRanges package has functions for finding overlaps, subsetting by overlaps, and counting overlaps that are nearly identical to methods found in the IRanges package. There are a couple exceptions:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.153,
+            0.443,
+            0.784,
+            0.515
+          ],
+          "sub_type": "text",
+          "content": "• Overlap methods that work with GRanges objects.\n• Only consider overlaps of ranges on the same chromosome or sequence.\n• You have the choice to consider how strands are handled."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.363,
+            0.559,
+            0.635,
+            0.584
+          ],
+          "level": 2,
+          "content": "Mind Your Overlaps (Part II)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.589,
+            0.845,
+            0.882
+          ],
+          "content": "Overlaps get quite complex very quickly (as discussed in a warning earlier). Nowhere is this more apparent than with RNA-seq, where many technical issues can make the simple act of estimating transcript abundance (by counting how many aligned sequencing reads overlap a transcript region) incredibly complicated. First, counting overlaps in RNA-seq yields quantitative results that are used in downstream statistical analyses (e.g., the abundance of estimates for a particular transcript). This means that bias and noise that enter the range overlap quantification process could lead to inaccuracies in differential expression tests. Second, sequencing reads may align ambiguously—to multiple spots in the genome equally well. Do we count these multiple mapping reads (sometimes known as “multireads”)? Or discard them entirely? Some modern RNA-seq quantification methods like RSEM (Li et al., 2011) attempt to rescue these multireads. Third, some reads may align uniquely, but overlap an exon that’s shared by two or more transcripts’ isoforms. Should we ignore this read, count it once for each transcript (leading to double counting), or assign it to a transcript? All of these rather technical decisions in finding and counting overlaps can unfortunately lead to different biological results. Accurate RNA-seq quantification is still an actively"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "324"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.419,
+            0.939
+          ],
+          "content": "Chapter 9: Working with Range Data"
+        }
+      ]
+    },
+    {
+      "page_idx": 354,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.08,
+            0.845,
+            0.155
+          ],
+          "continues_prev": true,
+          "content": "researched area, and methods are still being developed and improving. In general, the methods in this section are only appropriate for simple overlap operations, and may not be appropriate for quantification tasks like estimating transcript abundance for RNA-seq."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.154,
+            0.162,
+            0.543,
+            0.181
+          ],
+          "content": "Some popular RNA-seq quantification tools are:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.173,
+            0.195,
+            0.842,
+            0.38
+          ],
+          "sub_type": "text",
+          "content": "• [RSEM, or RNA-Seq by Expectation Maximization](http://deweylab.biostat.wisc.edu/rsem/) (Li et al., 2011).\n• [TopHat](http://bit.ly/TopHat-tool) and [The TopHat and Cufflinks](http://cufflinks.cbcb.umd.edu/) suite of tools (Trapnell et al., 2009; Trapnell et al., 2012).\n• [HTSeq](http://bit.ly/HTSeq) (Anders et al., 2014).\n• [The GenomicAlignments Bioconductor package](http://bit.ly/genom-align) (Lawrence et al., 2013). This new package from Bioconductor has special structures for storing genomic alignments and working with these alignments. This package also contains a summari zeOverlaps() method, which supports specific overlap options (and works directly on BAM files)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.418,
+            0.861,
+            0.533
+          ],
+          "content": "To demonstrate how findOverlaps() can be used with GRanges objects, we’ll load in a BED file of dbSNP (build 137) variants (in addition to SNPs, dbSNP also includes other types of variants like insertions/deletions, short tandem repeats, multi-nucleotide polymorphisms) for mouse chromosome 1. This BED file is available in the book’s GitHub repository, in the directory for this chapter. Using rtracklayer, we’ll load these in:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.172,
+            0.543,
+            0.625,
+            0.576
+          ],
+          "sub_type": "text",
+          "content": "**> library**(rtracklayer)\n> dbsnp137 <- import(\"mm10\\_snp137\\_chr1\\_trunc.bed.gz\")"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.583,
+            0.86,
+            0.678
+          ],
+          "content": "Suppose we want to find out how many of these variants fall into exonic regions, and how many do not. Using the mouse TranscriptDb object we loaded earlier (txdb) we can extract and collapse all overlapping exons with reduce(). We’ll also subset so that we’re only looking at chromosome 1 exons (because our variants are only from chromosome 1):"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.171,
+            0.69,
+            0.836,
+            0.722
+          ],
+          "sub_type": "text",
+          "content": "> collapsed\\_exons <- reduce(exons(txdb), ignore.strand=**TRUE**)\n> chr1\\_collapsed\\_exons <- collapsed\\_exons[seqnames(collapsed\\_exons) == \"chr1\"]"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.73,
+            0.859,
+            0.768
+          ],
+          "content": "Let’s explore our dbsnp137 object before looking for overlaps (remember the Golden Rule: don’t trust your data). Let’s look at the length distribution of our variants:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.172,
+            0.778,
+            0.574,
+            0.856
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> summary(width(dbsnp137))\n    Min. 1st Qu.   Median      Mean 3rd Qu.     Max.\n    0.000   1.000   1.000   1.138   1.000 732.000\n> dbsnp137\\$name[which.max(width(dbsnp137))]\n[1] \"rs232497063\"\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.42,
+            0.923,
+            0.799,
+            0.94
+          ],
+          "content": "An Interactive Introduction to Range Data with GenomicRanges"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "325"
+        }
+      ]
+    },
+    {
+      "page_idx": 355,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.08,
+            0.861,
+            0.331
+          ],
+          "content": "The variant that’s 732 bases long is a bit large, so we find out which entry it is and grab its RS identifier. Checking on [the dbSNP website](http://bit.ly/ref-snp), we see that this is indeed a real variant—a rather large insertion/deletion on chromosome 1. From our summary(), we see that the vast majority of variants are 1 nucleotide long, which are either SNPs or 1 basepair insertons/deletions. Note that the minimum width is zero—there are also variants with zero widths. Using dbsnp137[width(dbsnp137) == 0], we can take look at a few of these. In most cases, these correspond to insertions into the reference genome (these can be easily verified with the dbSNP or UCSC Genome Browser websites). Zero-width ranges will not overlap any feature, as they don’t have any region to overlap another range (create some range with zero widths and validate this). These technical details are rather annoying, but illustrate why it’s important to inspect and understand our data and not just blindly apply functions. To count these zero-width features too, we’ll resize using the resize() function:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.341,
+            0.743,
+            0.389
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> dbsnp137_resized <- dbsnp137\n> zw_i <- width(dbsnp137_resized) == 0\n> dbsnp137_resized[zw_i] <- resize(dbsnp137_resized[zw_i], width=1)\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.396,
+            0.861,
+            0.454
+          ],
+          "content": "With this set of ranges, it’s easy now to find out how many variants overlap our chromosome 1 exon regions. We’ll use findOverlaps() to create a Hits object. We’ll tell findOverlaps() to ignore strand:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.463,
+            0.701,
+            0.742
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> hits <- findOverlaps(dbsnp137_resized, chr1_collapsed_exons,\n    ignore.strand=TRUE)\n> hits\nHits of length 58346\nqueryLength: 2700000\nsubjectLength: 15048\n    queryHits subjectHits\n        <integer>      <integer>\n1           1250          1\n2           1251          1\n3           1252          1\n4           1253          1\n5           1254          1\n[...]\n> length(unique(queryHits(hits)))\n[1] 58343\n> length(unique(queryHits(hits)))/length(dbsnp137_resized)\n[1] 0.02160852\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.75,
+            0.861,
+            0.848
+          ],
+          "content": "The number of dbSNP variants on chromosome 1 that overlap our exons is given by the number of unique query hits in the Hits object: 118,594. This represents about 2% of the variants on chromosome 1, a figure that makes sense given that exonic regions make up small proportion of chromosome 1 (you should be able to work out what proportion of this is using GenomicRanges methods fairly easily)."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "326"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.419,
+            0.94
+          ],
+          "content": "Chapter 9: Working with Range Data"
+        }
+      ]
+    },
+    {
+      "page_idx": 356,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.08,
+            0.861,
+            0.139
+          ],
+          "content": "Suppose we now wanted to look at the variants that do overlap these exons. We could do this by using the indices in the Hits object, but a simpler method is to use the method subsetByOverlaps():"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.149,
+            0.836,
+            0.18
+          ],
+          "content": "> subsetByOverlaps(dbsnp137\\_resized, chr1\\_collapsed\\_exons, ignore.strand=**TRUE**) GRanges with 118594 ranges and 2 metadata columns:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.174,
+            0.182,
+            0.814,
+            0.305
+          ],
+          "sub_type": "algorithm",
+          "content": "        seqnames          ranges strand | name   score\n        &lt;Rle&gt;          &lt;IRanges&gt; &lt;Rle&gt; | &lt;character&gt; &lt;numeric&gt;\n[1]    chr1     [3054535, 3054535]  + | rs30525614      0\n[2]    chr1     [3054556, 3054556]  + | rs233033126      0\n[3]    chr1     [3054666, 3054666]  + | rs51218981      0\n[4]    chr1     [3054674, 3054674]  + | rs49979360      0\n[5]    chr1     [3054707, 3054707]  + | rs108510965      0\n[...]",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.313,
+            0.859,
+            0.351
+          ],
+          "content": "Note that the length of this GRanges object matches up with the number of overlapping variants that overlap exons earlier."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.361,
+            0.86,
+            0.437
+          ],
+          "content": "GenomicRanges also includes a method for counting overlaps, countOverlaps(). So suppose we wanted to count the number of variants that overlap each exonic region. Because we want the counts to be based on the exonic regions (which were the subject ranges in these operations), we reverse the order of the arguments:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.447,
+            0.758,
+            0.509
+          ],
+          "sub_type": "algorithm",
+          "content": "> var\\_counts <- countOverlaps(chr1\\_collapsed\\_exons, dbsnp137\\_resized,\n    ignore.strand=TRUE)\n> head(var\\_counts)\n[1]  6  0 35 48  2  5",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.517,
+            0.859,
+            0.556
+          ],
+          "content": "To make these easier to follow, let’s append them to our chromosome 1 exonic regions GRanges object as a metadata column:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.566,
+            0.705,
+            0.736
+          ],
+          "sub_type": "algorithm",
+          "content": "> chr1\\_collapsed\\_exons\\$num\\_vars <- var\\_counts\n> chr1\\_collapsed\\_exons\nGRanges with 15048 ranges and 1 metadata column:\n        seqnames                  ranges strand | num\\_vars\n            &lt;Rle&gt;              &lt;IRanges&gt; &lt;Rle&gt; | &lt;integer&gt;\n    [1]     chr1      [3054233, 3054733]   \\* |       6\n    [2]     chr1      [3102016, 3102125]   \\* |       0\n    [3]     chr1      [3205901, 3207317]   \\* |       35\n    [4]     chr1      [3213439, 3216968]   \\* |       48\n    [5]     chr1      [3421702, 3421901]   \\* |       2\n[...]",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.744,
+            0.86,
+            0.801
+          ],
+          "content": "At this point, it wouldn’t be a bad idea to visit some of these regions (like “chr1:3054233-3054733”) on the mouse UCSC Genome Browser and check that the number of variants on the dbSNP track matches up with the number we see here (6)."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.817,
+            0.56,
+            0.843
+          ],
+          "level": 2,
+          "content": "Calculating Coverage of GRanges Objects"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.851,
+            0.859,
+            0.891
+          ],
+          "content": "The same coverage methods we saw with IRanges also work with GRanges and GRangesList objects. Let’s generate some random fake 150bp reads on chromosome"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.42,
+            0.923,
+            0.798,
+            0.94
+          ],
+          "content": "An Interactive Introduction to Range Data with GenomicRanges"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "327"
+        }
+      ]
+    },
+    {
+      "page_idx": 357,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.08,
+            0.861,
+            0.198
+          ],
+          "content": "19 (because it’s the smallest chromosome) of our mouse genome and then empirically measure their coverage. We’ll target 5x coverage. Using the famous Lander-Waterman coverage equation for coverage (C = LN/G, where C is coverage, L is the read length, N is the sequence length, and N is the number of reads), we see that for 150bp reads, a chromosome length of 61,431,566bp, and a target of 5x coverage, we need: 5\\*61,431,566/150 = 2,047,719 reads. Let’s generate these using R’s sample() function:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.206,
+            0.718,
+            0.314
+          ],
+          "sub_type": "code",
+          "content": "```r\n> set.seed(0)\n> chr19_len <- seqlengths(txdb)['chr19']\n> chr19_len\n    chr19\n61431566\n> start_pos <- sample(1:(chr19_len-150), 2047719, replace=TRUE)\n> reads <- GRanges(\"chr19\", IRanges(start=start_pos, width=150))\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.323,
+            0.859,
+            0.36
+          ],
+          "content": "Now, let’s use the coverage() method from GenomicRanges to calculate the coverage of these random reads:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.371,
+            0.431,
+            0.387
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> cov_reads <- coverage(reads)\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.395,
+            0.86,
+            0.454
+          ],
+          "content": "Coverage is calculated per every chromosome in the ranges object, and returned as a run-length encoded list (much like sequence names are returned by seqnames() from a GRangesList). We can calculate mean coverage per chromosome easily:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.464,
+            0.321,
+            0.508
+          ],
+          "sub_type": "code",
+          "content": "```python\n> mean(cov_reads)\n    chr19\n5.000001\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.518,
+            0.86,
+            0.575
+          ],
+          "content": "It’s also easy to calculate how much of this chromosome has no reads covering it (this will happen with shotgun sequencing, due to the random nature of read placement). We can do this two ways. First, we could use == and table():"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.586,
+            0.372,
+            0.631
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> table(cov_reads == 0)\n        FALSE      TRUE\nchr19 61025072   406487\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.64,
+            0.859,
+            0.678
+          ],
+          "content": "Or, we could use some run-length encoding tricks (these are faster, and scale to larger data better):"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.688,
+            0.625,
+            0.78
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> sum(runLength(cov_reads)[runValue(cov_reads) == 0])\nchr19\n406487\n> 406487/chr19_len\n    chr19\n0.006616908\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.789,
+            0.86,
+            0.884
+          ],
+          "content": "So, about 0.6% of our chromosome 19 remains uncovered. Interestingly, this is very close to the proportion of uncovered bases expected under Lander-Waterman, which is Poisson distributed with λ = c (where c is coverage). Under the Poisson distribution, the expected proportion of uncovered genome is e-<sup>c</sup> where c is coverage, which in this case is e-<sup>c</sup> \\~ 0.0067 (where e is Napier/Euler’s constant)."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "328"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.419,
+            0.94
+          ],
+          "content": "Chapter 9: Working with Range Data"
+        }
+      ]
+    },
+    {
+      "page_idx": 358,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.14,
+            0.078,
+            0.812,
+            0.133
+          ],
+          "level": 2,
+          "content": "Working with Ranges Data on the Command Line with BEDTools"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.145,
+            0.862,
+            0.375
+          ],
+          "content": "While Bioconductor’s IRanges, GenomicRanges, and GenomicFeatures packages are all powerful libraries for working with genomic interval data in R, for some tasks working with range data on the command line can be more convenient. While GenomicRanges offers the huge advantage of allowing interactive work, there’s a cost to loading all data into memory at once so we can work with it. For example, suppose you wanted to calculate the coverage across a genome for each of 300 BED files. A single command that reads a BED file and calculates coverage would would be easier to run than loading the data into R, writing (simple) code to calculate coverage, and saving the results to file. While a custom solution allows more fine-tuned control, this means more work. A specialized command-line tool may offer less flexibility, but it’s easier to get up and running and parallelize in Unix (we’ll see how we could parallelize this in Chapter 12)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.384,
+            0.861,
+            0.557
+          ],
+          "content": "The BEDTools suite is a set of command-line tools for working directly with data kept in range file formats like BED, GTF, and GFF. Much like Git, BEDTools is a single command that uses a series of subcommands that do specific tasks. Each of these subcommands has similarities with one or more range operations we’ve seen in IRanges and GenomicRanges. The skills you’ve learned for manipulating IRanges and GenomicRanges objects are directly applicable to the range operations you’ll perform with BEDTools. Because you’re likely very familiar with range operations and “rangethinking” by now, we’ll move through this material quickly, mostly as a demonstration of how powerful BEDTools is and when it will be useful in your work."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.566,
+            0.861,
+            0.624
+          ],
+          "content": "First, let’s download the toy data we’ll be playing with. All of these files are available in this chapter’s directory in the GitHub repository. We’ll continue using the data from Mus musculus, genome version mm10. Specifically, we’ll use the following files:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.155,
+            0.639,
+            0.856,
+            0.859
+          ],
+          "sub_type": "text",
+          "content": "• ranges-qry.bed is a simple BED file containing six ranges. These are the query ranges used in the GenomicRanges findOverlaps examples (except, because these are in BED format, they are 0-indexed).\n• ranges-sbj.bed is the counterpart of ranges-sbj; these are the subject ranges used in the GenomicRanges findOverlaps examples. Both ranges-sbj.bed and rangesqry.bed are depicted in Figure 9-11 (though, this visualization uses 1-based coordinates).\n• Mus\\_musculus.GRCm38.75\\_chr1.gtf.gz are features on chromosome 1 of Mus\\_musculus.GRCm38.75.gtf.gz. The latter file is Ensembl’s annotation file for mm10 (which is the same as GRCh38) and was downloaded from [Ensembl’s FTP site](http://bit.ly/mus-dl)."
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.421,
+            0.922,
+            0.798,
+            0.939
+          ],
+          "content": "Working with Ranges Data on the Command Line with BEDTools"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "329"
+        }
+      ]
+    },
+    {
+      "page_idx": 359,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.08,
+            0.858,
+            0.119
+          ],
+          "content": "• Mus\\_musculus.GRCm38\\_genome.txt is a tab-delimited file of all chromosome names and lengths from the mm10/GRCm38 genome version."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.133,
+            0.861,
+            0.253
+          ],
+          "content": "As a Unix command-line tool that works with plain-text range formats like BED, GTF, and GFF, BEDTools is desgined to be used in collaboration with other Unix tools like cut, sort, grep, and awk. For example, while BEDTools has its own sortBed command, it’s more efficient to use Unix sort. Also, BEDTools operations that can be applied to many independent files can also be parallelized using Unix tools like xargs or GNU parallel (covered in Chapter 12)."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.268,
+            0.6,
+            0.294
+          ],
+          "level": 2,
+          "content": "Computing Overlaps with BEDTools Intersect"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.301,
+            0.862,
+            0.475
+          ],
+          "content": "Overlaps are the most commonly used range-based operations in bioinformatics, so they’re a natural place to start with BEDTools. The BEDTools intersect subcommand computes the overlaps between two sets of ranges. Run in the default mode, bedtools intersect works exactly like the GenomicRanges intersect() function. Let’s use the BED files ranges-qry.bed and ranges-sbj.bed, which contain the same ranges used in the findOverlaps() example. Rather than thinking about ranges as query and subject, BEDTools labels ranges “A” and “B.” We specify the input BED files “A” and “B” through the options -a and -b. We’ll use BED files, but a nice feature of BEDTools is that its commands also work with GTF/GFF files."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.486,
+            0.677,
+            0.506
+          ],
+          "content": "Below, we calculate the intersection using bedtools intersect."
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.515,
+            0.651,
+            0.793
+          ],
+          "sub_type": "algorithm",
+          "content": "\\$ cat ranges-qry.bed\nchr1     0       15      a\nchr1     25       29      b\nchr1     18       18      c\nchr1     10       14      d\nchr1     20       23      e\nchr1     6       7      f\n\\$ cat ranges-sbj.bed\nchr1     0       4      x\nchr1     18       28      y\nchr1     9       15      z\n\\$ bedtools intersect -a ranges-qry.bed -b ranges-sbj.bed\nchr1     0       4      a\nchr1     9       15      a\nchr1     25       28      b\nchr1     18       18      c\nchr1     10       14      d\nchr1     20       23      e",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.802,
+            0.861,
+            0.882
+          ],
+          "content": "bedtools intersect returns the intersecting ranges with names from the file passed to the -a argument. Like GenomicRanges intersect(), only the overlap region is returned. For example, only the sections of range a in ranges-qry.bed that overlap the x and z ranges in ranges-sbj.bed are returned."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "330"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.419,
+            0.94
+          ],
+          "content": "Chapter 9: Working with Range Data"
+        }
+      ]
+    },
+    {
+      "page_idx": 360,
+      "blocks": [
+        {
+          "type": "image",
+          "bbox": [
+            0.167,
+            0.073,
+            0.255,
+            0.162
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_360_image_0.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.268,
+            0.079,
+            0.489,
+            0.098
+          ],
+          "level": 2,
+          "content": "Alignment Files with BEDTools"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.107,
+            0.789,
+            0.268
+          ],
+          "content": "While we’re focusing on annotation/track formats like BED and GFF/GTF, BEDTools also has full support to work with BAM files, a binary alignment format we’ll talk about in much detail in Chap ter 10. For now, note that for subcommands like intersect and genomecov, you can also work with BAM files directly. BEDTools also has a subcommand to convert BAM files to BED files (bed tools bamtobed), but usually it’s best to work with BAM files directly: the conversion from BAM to BED loses information stored about each alignment."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.29,
+            0.862,
+            0.388
+          ],
+          "content": "Often, we don’t want just the intersect of overlapping query and subject ranges, but the entire query range. This is akin to using findOverlaps() to create a Hits object, and taking all query ranges with an overlap (covered in “Finding Overlapping Ranges” on page 281). With BEDTools, we can do this using the option -wa, which returns the ranges in “A” that overlap “B”:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.171,
+            0.397,
+            0.685,
+            0.504
+          ],
+          "content": "<table><tr><td colspan=\"4\">$ bedtools intersect -a ranges-qry.bed -b ranges-sbj.bed -wa</td></tr><tr><td>chr1</td><td>0</td><td>15</td><td>a</td></tr><tr><td>chr1</td><td>0</td><td>15</td><td>a</td></tr><tr><td>chr1</td><td>25</td><td>29</td><td>b</td></tr><tr><td>chr1</td><td>18</td><td>18</td><td>c</td></tr><tr><td>chr1</td><td>10</td><td>14</td><td>d</td></tr><tr><td>chr1</td><td>20</td><td>23</td><td>e</td></tr></table>",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_360_table_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.514,
+            0.86,
+            0.573
+          ],
+          "content": "Now, note that because the range “a” overlaps two subjects (x and z), the full “a” range is reported twice, one for each subject. If you don’t want these duplicates, you could specify the flag -u (for unique)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.582,
+            0.424,
+            0.601
+          ],
+          "content": "Similarly, there’s a -wb option too:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.171,
+            0.611,
+            0.685,
+            0.72
+          ],
+          "content": "<table><tr><td colspan=\"8\">$ bedtools intersect -a ranges-qry.bed -b ranges-sbj.bed -wb</td></tr><tr><td>chr1</td><td>0</td><td>4</td><td>a</td><td>chr1</td><td>0</td><td>4</td><td>x</td></tr><tr><td>chr1</td><td>9</td><td>15</td><td>a</td><td>chr1</td><td>9</td><td>15</td><td>z</td></tr><tr><td>chr1</td><td>25</td><td>28</td><td>b</td><td>chr1</td><td>18</td><td>28</td><td>y</td></tr><tr><td>chr1</td><td>18</td><td>18</td><td>c</td><td>chr1</td><td>18</td><td>28</td><td>y</td></tr><tr><td>chr1</td><td>10</td><td>14</td><td>d</td><td>chr1</td><td>9</td><td>15</td><td>z</td></tr><tr><td>chr1</td><td>20</td><td>23</td><td>e</td><td>chr1</td><td>18</td><td>28</td><td>y</td></tr></table>",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_360_table_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.729,
+            0.86,
+            0.807
+          ],
+          "content": "Here, the overlapping region is first reported (this is the same as bedtools inter sect without any additional arguments), followed by the full ranges of “B” that “A” overlaps. Flags -wa and -wb can be combined to return the full “A” and “B” ranges that are overlapping:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.171,
+            0.816,
+            0.718,
+            0.894
+          ],
+          "content": "<table><tr><td colspan=\"8\">$ bedtools intersect -a ranges-qry.bed -b ranges-sbj.bed -wa -wb</td></tr><tr><td>chr1</td><td>0</td><td>15</td><td>a</td><td>chr1</td><td>0</td><td>4</td><td>x</td></tr><tr><td>chr1</td><td>0</td><td>15</td><td>a</td><td>chr1</td><td>9</td><td>15</td><td>z</td></tr><tr><td>chr1</td><td>25</td><td>29</td><td>b</td><td>chr1</td><td>18</td><td>28</td><td>y</td></tr><tr><td>chr1</td><td>18</td><td>18</td><td>c</td><td>chr1</td><td>18</td><td>28</td><td>y</td></tr></table>",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_360_table_9.jpg"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.42,
+            0.922,
+            0.798,
+            0.939
+          ],
+          "content": "Working with Ranges Data on the Command Line with BEDTools"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "331"
+        }
+      ]
+    },
+    {
+      "page_idx": 361,
+      "blocks": [
+        {
+          "type": "table",
+          "bbox": [
+            0.171,
+            0.081,
+            0.66,
+            0.113
+          ],
+          "content": "| chr1 | 10 | 14 | d | chr1 | 9 | 15 | z |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| chr1 | 20 | 23 | e | chr1 | 18 | 28 | y |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_361_table_0.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.121,
+            0.862,
+            0.239
+          ],
+          "content": "Running bedtools intersect on large files can use a lot of your system’s memory. For very large files, it can be much more efficient to first sort both “A” and “B” files by chromosome and position, and then compute intersects on these sorted input files. bedtools intersect has a special algorithm that works faster (and uses less memory) on sorted input files; we enable this with -sorted. For example, using the fake files query-sorted.bed and subject-sorted.bed:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.171,
+            0.247,
+            0.778,
+            0.264
+          ],
+          "content": "\\$ bedtools intersect -a query-sorted.bed -b subject-sorted.bed --sorted"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.27,
+            0.862,
+            0.349
+          ],
+          "content": "These BED files would have to be sorted first, as we did in “Sorting Plain-Text Data with Sort” on page 147 with sort -k1,1 -k2,2n. Note that the performance benefits pay off most when intersecting large files; with small files, the benefits may be too small to notice or might be swamped out by fixed costs."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.358,
+            0.861,
+            0.398
+          ],
+          "content": "BEDTools’s intersect has lots of functionality beyond just overlaps. For example, you can also return the number of overlapping bases with the -wo argument:"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.171,
+            0.406,
+            0.729,
+            0.515
+          ],
+          "content": "<table><tr><td colspan=\"9\">$ bedtools intersect -a ranges-qry.bed -b ranges-sbj.bed -wo</td></tr><tr><td>chr1</td><td>0</td><td>15</td><td>a</td><td>chr1</td><td>0</td><td>4</td><td>x</td><td>4</td></tr><tr><td>chr1</td><td>0</td><td>15</td><td>a</td><td>chr1</td><td>9</td><td>15</td><td>z</td><td>6</td></tr><tr><td>chr1</td><td>25</td><td>29</td><td>b</td><td>chr1</td><td>18</td><td>28</td><td>y</td><td>3</td></tr><tr><td>chr1</td><td>18</td><td>18</td><td>c</td><td>chr1</td><td>18</td><td>28</td><td>y</td><td>0</td></tr><tr><td>chr1</td><td>10</td><td>14</td><td>d</td><td>chr1</td><td>9</td><td>15</td><td>z</td><td>4</td></tr><tr><td>chr1</td><td>20</td><td>23</td><td>e</td><td>chr1</td><td>18</td><td>28</td><td>y</td><td>3</td></tr></table>",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_361_table_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.524,
+            0.861,
+            0.562
+          ],
+          "content": "Like grep -v (which returns nonmatching lines), bedtools intersect also has a -v option, which returns all nonoverlapping ranges."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.171,
+            0.572,
+            0.678,
+            0.602
+          ],
+          "content": "| $ bedtools intersect -a ranges-qry.bed -b ranges-sbj.bed -vchr1 6 7 f |\n| --- |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_361_table_7.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.167,
+            0.618,
+            0.254,
+            0.706
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_361_image_8.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.267,
+            0.623,
+            0.45,
+            0.642
+          ],
+          "level": 2,
+          "content": "Getting Help in BEDTools"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.651,
+            0.79,
+            0.775
+          ],
+          "content": "Much like Git, BEDTools has extensive documentation built into the BEDTools command (and luckily, it’s much less technical and easier to understand than Git’s documentation). We can see all BEDTools subcommands by simply running bedtools without any arguments. Running a subcommand such as bedtools intersect without any arguments prints out the arguments, options, and useful notes for this command."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.798,
+            0.862,
+            0.858
+          ],
+          "content": "This test data isn’t stranded, but with real data we need to be concerned with strand. bedtools intersect does not consider strand by default, so if you want to only look for intersects of features on the same strand, you must specify -s."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "332"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.419,
+            0.94
+          ],
+          "content": "Chapter 9: Working with Range Data"
+        }
+      ]
+    },
+    {
+      "page_idx": 362,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.081,
+            0.858,
+            0.119
+          ],
+          "content": "This is just a quick demonstration of bedtools intersect; see [the full documentation](http://bit.ly/bt-intersect) for much more information."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.136,
+            0.393,
+            0.162
+          ],
+          "level": 2,
+          "content": "BEDTools Slop and Flank"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.17,
+            0.861,
+            0.348
+          ],
+          "content": "Like GenomicRanges, BEDTools has support for increasing the size of features and extracting flanking sequences. Earlier we saw how we could grow GRanges objects using arithemetic operators like + or the resize() function. With BEDTools, we grow ranges with bedtools slop. Unlike bedtools intersect, slop takes a single input range file through the argument -i. We also need to provide bedtools slop with a tab-delimited genome file that specifies the length of each chromosome—this is what BEDTools uses to ensure that ranges don’t grow past the end of the of the chromosome. For our fake test data, we’ll create this using echo, but in general we could use bioawk (discussed in “Bioawk: An Awk for Biological Formats” on page 163):"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.356,
+            0.854,
+            0.398
+          ],
+          "content": "\\$ bioawk -c fastx '{print \\$name\"\\t\"length(\\$seq)}' your\\_genome.fastq > genome.txt So for our test data, we’d use:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.409,
+            0.685,
+            0.641
+          ],
+          "sub_type": "code",
+          "content": "```shell\n$ echo -e \"chr1\\t100\" > genome.txt\n$ bedtools slop -i ranges-qry.bed -g genome.txt -b 4 ①\nchr1     0       19      a\nchr1     21       33      b\nchr1     14       22      c\nchr1     6       18      d\nchr1     16       27      e\nchr1     2       11      f\n$ bedtools slop -i ranges-qry.bed -g genome.txt -l 3 -r 5 ②\nchr1     0       20      a\nchr1     22       34      b\nchr1     15       23      c\nchr1     7       19      d\nchr1     17       28      e\nchr1     3       12      f\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.137,
+            0.658,
+            0.861,
+            0.792
+          ],
+          "sub_type": "text",
+          "content": "0 Here, the argument -b 4 tells bedtools slop to grow both sides of each range by 4 base pairs. If this runs past the beginning or end of the chromosome (as range a in ranges-qry.bed does), this will return 0 or the total chromosome length, respectively.\nOptionally, you can specify how many bases to add to the left (-l) and right (-r) sides of each range. Either can be set to zero to resize only one side."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.799,
+            0.861,
+            0.88
+          ],
+          "content": "BEDTools also has a tool for extracting flanking ranges, which is handy for getting promoter sequences. As with slop, flank needs a genome file containing the lengths of each chromosome sequence. Let’s use bedtools flank to extract some promoter regions for genes. We’ll use the Mus\\_musculus.GRCm38.75\\_chr1.gtf.gz GTF file."
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.42,
+            0.922,
+            0.799,
+            0.94
+          ],
+          "content": "Working with Ranges Data on the Command Line with BEDTools"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "333"
+        }
+      ]
+    },
+    {
+      "page_idx": 363,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.08,
+            0.861,
+            0.158
+          ],
+          "content": "However, this file contains all types of features: exons, transcripts, CDS, noncoding regions, and so on (look at it with zless for confirmation). If we only want to use promoters for each protein coding gene, we can use the Unix tricks of Chapter 7 to extract only these ranges:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.167,
+            0.844,
+            0.215
+          ],
+          "sub_type": "code",
+          "content": "```shell\n$ bioawk -cgff '{if ($feature == \"gene\") print $0}' \\\nMus_musculus.GRCm38.75_chr1.gtf.gz | \\\ngrep 'gene_biotype \"protein_coding\";' > mm_GRCm38.75_protein_coding_genes.gtf\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.164,
+            0.235,
+            0.264,
+            0.311
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_363_image_2.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.268,
+            0.234,
+            0.495,
+            0.251
+          ],
+          "level": 2,
+          "content": "Mind Your Chromosome Names"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.262,
+            0.789,
+            0.42
+          ],
+          "content": "It’s very likely that when working with data (annotation or other data) from other sources, you’ll run into the different chromosome naming scheme problem. For example, the UCSC Genome Browser gives Mus musculus chromosome names like “chr1,” “chrX,” etc. while Ensembl uses named like “1,” “X,” etc. BEDTools is good about warning you when it can’t find a sequence length in a genome file, but it won’t warn for subcommands that don’t require a genome file (like intersect). Always check that your chromosome names across different data sources are compatible."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.443,
+            0.859,
+            0.482
+          ],
+          "content": "Now, using these protein coding gene feature and the mm10/GRCm38 genome file in this chapter’s GitHub repository, we can extract 3kbp left of each range:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.49,
+            0.727,
+            0.66
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$ bedtools flank -i mm_GRCm38.75_protein_coding_genes.gtf \\\n              -g Mus_musculus.GRCm38_genome.txt \\\n              -l 3000 -r 0 > mm_GRCm38_3kb_promoters.gtf\n$ cut -f1,4,5,7 mm_GRCm38.75_protein_coding_genes.gtf | head -n 3\n1       3205901 3671498 -\n1       4343507 4360314 -\n1       4490928 4496413 -\n$ cut -f1,4,5,7 mm_GRCm38_3kb_promoters.gtf | head -n 3\n1       3671499 3674498 -\n1       4360315 4363314 -\n1       4496414 4499413 -\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.669,
+            0.859,
+            0.708
+          ],
+          "content": "Check that these upstream ranges make sense, minding the very important fact that these are all on the negative strand (a common stumbling block)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.717,
+            0.861,
+            0.853
+          ],
+          "content": "We can use the bedtools getfasta subcommand to extract sequences for a given set of ranges. For example, we could use bedtools getfasta to extract the promoter sequences for the ranges we’ve just created. Including the entire mouse genome in this book’s GitHub repository would be a bit too much, so rather than using the full genome, we’ll use the chromosome 1 file, Mus\\_musculus.GRCm38.75.dna\\_rm.toplevel\\_chr1.fa. You’ll need to unzip this first from Mus\\_musculus.GRCm38.75.dna\\_rm.toplevel\\_chr1.fa.gz, then run bedtools getfasta:"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "334"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.419,
+            0.94
+          ],
+          "content": "Chapter 9: Working with Range Data"
+        }
+      ]
+    },
+    {
+      "page_idx": 364,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.081,
+            0.811,
+            0.129
+          ],
+          "sub_type": "code",
+          "content": "```shell\n$ gunzip Mus_musculus.GRCm38.75.dna_rm.toplevel_chr1.fa.gz\n$ bedtools getfasta -fi Mus_musculus.GRCm38.75.dna_rm.toplevel_chr1.fa \\\n-bed mm_GRCm38_3kb_promoters.gtf -fo mm_GRCm38_3kb_promoters.fasta\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.137,
+            0.144,
+            0.856,
+            0.22
+          ],
+          "sub_type": "text",
+          "content": "The input FASTA file with -fi.\nInput BED file is specified with -bed and output FASTA file of extracted sequences is specified with -fo."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.237,
+            0.388,
+            0.262
+          ],
+          "level": 2,
+          "content": "Coverage with BEDTools"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.271,
+            0.86,
+            0.346
+          ],
+          "content": "BEDTools’s genomecov subcommand is a versatile tool for summarizing the coverage of features along chromosome sequences. By default, it summarizes the coverage per chromosome sequence (and across the entire genome) as a histogram. A simple example will make this clearer:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.357,
+            0.592,
+            0.621
+          ],
+          "sub_type": "code",
+          "content": "```powershell\n$ cat ranges-cov.bed\nchr1     4       9\nchr1     1       6\nchr1     8       19\nchr1     25       30\nchr2     0       20\n\n$ cat cov.txt\nchr1     30\nchr2     20\n\n$ bedtools genomecov -i ranges-cov.bed -g cov.txt\nchr1     0       7       30      0.233333 ①\nchr1     1       20      30      0.666667\nchr1     2       3       30      0.1\nchr2     1       20      20      1 ②\ngenome    0       7       50      0.14 ③\ngenome    1       40      50      0.8\ngenome    2       3       50      0.06\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.138,
+            0.636,
+            0.861,
+            0.824
+          ],
+          "sub_type": "text",
+          "content": "1 By default, genomecov summarizes the number of bases covered at a certain depth, per chromosome. The columns are depth, how many bases covered at this depth, total number of bases per chromosome, and proportion of bases covered at this depth. Here, we see that 23% of chr1’s bases are not covered (coverage of zero); 7/30 is around 0.23.\nchr2 is entirely covered by the only range on this sequence, so its proportion covered at depth 1 is 1.\ngenomecov also includes genome-wide statistics on coverage."
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.42,
+            0.922,
+            0.798,
+            0.939
+          ],
+          "content": "Working with Ranges Data on the Command Line with BEDTools"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "335"
+        }
+      ]
+    },
+    {
+      "page_idx": 365,
+      "blocks": [
+        {
+          "type": "image",
+          "bbox": [
+            0.174,
+            0.079,
+            0.255,
+            0.157
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_365_image_0.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.268,
+            0.079,
+            0.431,
+            0.098
+          ],
+          "level": 2,
+          "content": "Sorting Chromosomes"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.108,
+            0.788,
+            0.215
+          ],
+          "content": "BEDTools genomecov requires that all ranges from a particular chromosome are grouped together—in other words, consecutive in the BED file. Because the first column of a BED file is the chromosome, we can easily group features with Unix sort, using: sort - k1,1 ranges.bed > ranges.sorted.bed. See “Sorting Plain-Text Data with Sort” on page 147 for more information on Unix sort."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.239,
+            0.859,
+            0.278
+          ],
+          "content": "With bedtools genomecov, it’s also possible to get per-base pair coverage. This is much like GenomicRanges coverage():"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.287,
+            0.718,
+            0.38
+          ],
+          "sub_type": "code",
+          "content": "```powershell\n$ bedtools genomecov -i ranges-cov.bed -g cov.txt -d | head -n5\nchr1     1       0\nchr1     2       1\nchr1     3       1\nchr1     4       1\nchr1     5       2\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.388,
+            0.86,
+            0.504
+          ],
+          "content": "These three columns correspond to the chromosome, the position on that chromosome, and the coverage at that position. As you might imagine, this is not the most compact format for per-base coverage statistics. A much better solution is to use the BedGraph format. BedGraph is similar to the run-length encoding we encountered earlier, except runs of the same depth are stored as the ranges. We can tell genomecov to output data in BedGraph format using:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.513,
+            0.625,
+            0.637
+          ],
+          "sub_type": "code",
+          "content": "```powershell\n$ bedtools genomecov -i ranges-cov.bed -g cov.txt -bg\nchr1     1       4       1\nchr1     4       6       2\nchr1     6       8       1\nchr1     8       9       2\nchr1     9       19       1\nchr1     25       30       1\nchr2     0       20       1\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.653,
+            0.62,
+            0.679
+          ],
+          "level": 2,
+          "content": "Other BEDTools Subcommands and pybedtools"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.685,
+            0.86,
+            0.78
+          ],
+          "content": "There are many other useful subcommands in the BEDTools suite that we don’t have the space to discuss. BEDTools subcommands are extensively well documented though, both within the command itself (discussed earlier) and online at [the BED‐Tools documentation site](http://bedtools.readthedocs.org). The following are a few useful subcommands worth reading about:"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.793,
+            0.314,
+            0.809
+          ],
+          "level": 2,
+          "content": "bedtools annotate"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.172,
+            0.812,
+            0.86,
+            0.888
+          ],
+          "content": "This is an incredibly useful command that takes a set of files (e.g., BED files for CpG islands, conservation tracks, methylation regions, etc.) and annotates how much coverage each of these files has over another input file (e.g., exonic regions)."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "336"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.419,
+            0.939
+          ],
+          "content": "Chapter 9: Working with Range Data"
+        }
+      ]
+    },
+    {
+      "page_idx": 366,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.083,
+            0.282,
+            0.098
+          ],
+          "content": "bedtools merge"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.176,
+            0.101,
+            0.859,
+            0.139
+          ],
+          "content": "merge is a lot like the GenomicRanges reduce() method; it merges overlapping ranges into a single range."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.152,
+            0.301,
+            0.167
+          ],
+          "content": "bedtools closest"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.177,
+            0.171,
+            0.761,
+            0.188
+          ],
+          "content": "This subcommand is a lot like the GenomicRanges nearest() method."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.202,
+            0.331,
+            0.218
+          ],
+          "content": "bedtools complement"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.177,
+            0.221,
+            0.735,
+            0.239
+          ],
+          "content": "This is the BEDTools version of gaps() (similar to setdiff() too)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.253,
+            0.312,
+            0.269
+          ],
+          "content": "bedtools multicov"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.176,
+            0.272,
+            0.859,
+            0.328
+          ],
+          "content": "multicov counts the number of alignments in multiple BAM files that overlap a specified BED file. This is an incredibly useful tool for counting overlaps across numerous BED files, which could represent different samples or treatments."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.341,
+            0.331,
+            0.357
+          ],
+          "content": "bedtools multiinter"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.176,
+            0.361,
+            0.859,
+            0.495
+          ],
+          "content": "This subcommand is similar to bedtools intersect, but works with multiple file inputs. multiinter will return whether each input BED file overlaps a given feature. This is useful for comparing whether experimental data (e.g., ChIP-Seq peaks or DNase I hypersensitivity sites) for many samples intersect features differently across samples. Similarly, the subcommand bedtools jaccard can calculate similarity metrics for pairs of datasets to summarize similarities across samples through a simple statistic (Jaccard Similarity)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.508,
+            0.321,
+            0.525
+          ],
+          "content": "bedtools unionbedg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.177,
+            0.526,
+            0.744,
+            0.545
+          ],
+          "content": "This subcommand merges multiple BedGraph files into a single file."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.554,
+            0.857,
+            0.59
+          ],
+          "content": "This is not an exhaustive subcommand list; see the full listing at [the BEDTools documentation website](http://bedtools.readthedocs.org/)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.601,
+            0.859,
+            0.658
+          ],
+          "content": "Finally, it’s worth mentioning [the Pybedtools library](http://pythonhosted.org/pybedtools/) (Dale et al., 2011). Pybedtools is an excellent Python wrapper for BEDTools that allows you to employ BEDTools’s range operations from within Python."
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.421,
+            0.923,
+            0.797,
+            0.939
+          ],
+          "content": "Working with Ranges Data on the Command Line with BEDTools"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "337"
+        }
+      ]
+    },
+    {
+      "page_idx": 367,
+      "blocks": []
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Bioinformatics Data Skills",
+      "authors": [
+        "Vince Buffalo"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "created_at": "2015-06-30T16:29:18Z",
+      "modified_at": "2015-06-30T13:45:47-04:00",
+      "creator_application": "AH CSS Formatter V6.2 MR4 for Linux64 : 6.2.6.18551 (2014/09/24 15:00JST)",
+      "producer_application": "Antenna House PDF Output Library 6.2.609 (Linux64)",
+      "page_count": 538,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 352,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 353,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 354,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 355,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 356,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 357,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 358,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 359,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 360,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 361,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 362,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 363,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 364,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 365,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 366,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 367,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

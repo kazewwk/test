@@ -1,0 +1,2014 @@
+{
+  "pages": [
+    {
+      "page_idx": 256,
+      "blocks": [
+        {
+          "type": "chart",
+          "bbox": [
+            0.141,
+            0.08,
+            0.86,
+            0.399
+          ],
+          "sub_type": "scatter",
+          "content": "| Category | Dataset | X-axis (dist) range | Y-axis (recom) range |\n| --- | --- | --- | --- |\n| L2 | CCTCCCTAGCCAC | -40000~40000 | 0~60 |\n| L2 | CCTCCCTGACCAC | -40000~40000 | 0~50 |\n| THE1B | CCTCCCTAGCCAC | -40000~40000 | 0~60 |\n| THE1B | CCTCCCTGACCAC | -40000~40000 | 0~15 |\n| NA | CCTCCCTAGCCAC | -40000~40000 | 0~60 |\n| NA | CCTCCCTGACCAC | -40000~40000 | 0~60 |",
+          "captions": [
+            {
+              "bbox": [
+                0.137,
+                0.403,
+                0.841,
+                0.442
+              ],
+              "content": "Figure 8-12. Using facet\\_grid() to facet by both repeat background and motif sequence; the empty panel indicates there is no data for this particular motif/repeat combination"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_256_chart_0.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.46,
+            0.862,
+            0.538
+          ],
+          "content": "The tilde (\\~) used with facet\\_wrap() and facet\\_grid() is how we specify model formula in R. If you’ve used R to fit linear models, you’ve encountered \\~ before. We can ignore the specifics when using it in facet\\_wrap() (but see help(formula) if you’re curious)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.548,
+            0.861,
+            0.704
+          ],
+          "content": "One important feature of facet\\_wrap() and facet\\_grid() is that by default, x- and y-scales will be the same across all panels. This is a good default because people have a natural tendency to compare adjacent graphics as if they’re on the same scale. However, forcing facets to have fixed scales can obscure patterns that occur on different scales. Both facet\\_grid() and facet\\_wrap() have scales arguments that by default are \"fixed\". You can set scales to be free with scales=\"free\\_x\" and scales=\"free\\_y\" (to free the x- and y-scales, respectively), or scales=\"free\" to free both axes. For example (see Figure 8-13):"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.713,
+            0.819,
+            0.778
+          ],
+          "sub_type": "code",
+          "content": "```r\n> p <- ggplot(mtfs, aes(x=dist, y=recom)) + geom_point(size=1, color=\"grey\")\n> p <- p + geom_smooth(method='loess', se=FALSE, span=1/10)\n> p <- p + facet_wrap( ~ motif, scales=\"free_y\")\n> print(p)\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.566,
+            0.923,
+            0.799,
+            0.94
+          ],
+          "content": "Working with and Visualizing Data in R"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.859,
+            0.937
+          ],
+          "content": "227"
+        }
+      ]
+    },
+    {
+      "page_idx": 257,
+      "blocks": [
+        {
+          "type": "chart",
+          "bbox": [
+            0.141,
+            0.08,
+            0.86,
+            0.4
+          ],
+          "sub_type": "scatter",
+          "content": "| Series | dist (range) | recom (range) |\n| --- | --- | --- |\n| CCTCCCTAGCCAC | -40000~40000 | 0~75 |\n| CCTCCCTGACCAC | -40000~40000 | 0~55 |",
+          "captions": [
+            {
+              "bbox": [
+                0.139,
+                0.404,
+                0.82,
+                0.424
+              ],
+              "content": "Figure 8-13. Recombination rates around two sequence motifs, with the y-scales free"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_257_chart_0.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.44,
+            0.86,
+            0.48
+          ],
+          "content": "Try using facets to look at this data when grouped by chromosome with facet\\_wrap( \\~ chr)."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.496,
+            0.439,
+            0.519
+          ],
+          "level": 2,
+          "content": "More R Data Structures: Lists"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.529,
+            0.86,
+            0.586
+          ],
+          "content": "Thus far, we’ve used two R data structures for everything: vectors and dataframes. In this section, we’ll learn about another R data structure as important as these two: the list. Recall the following points about R’s vectors:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.155,
+            0.602,
+            0.856,
+            0.682
+          ],
+          "sub_type": "text",
+          "content": "• R vectors require all elements to have the same data type (that is, vectors are homogenous)\n• They only support the six data types discussed earlier (integer, double, character, logical, complex, and raw)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.699,
+            0.461,
+            0.716
+          ],
+          "content": "In contrast, R’s lists are more versatile:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.155,
+            0.733,
+            0.856,
+            0.838
+          ],
+          "sub_type": "text",
+          "content": "• Lists can contain elements of different types (they are heterogeneous)\n• Elements can be any object in R (vectors with different types, other lists, environments, dataframes, matrices, functions, etc.)\n• Because lists can store other lists, they allow for storing data in a recursive way (in contrast, vectors cannot contain other vectors)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.855,
+            0.859,
+            0.894
+          ],
+          "content": "The versatility of lists make them indispensable in programming and data analysis with R. You’ve actually been using lists already without knowing it—dataframes are"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "228"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.5,
+            0.94
+          ],
+          "content": "Chapter 8: A Rapid Introduction to the R Language"
+        }
+      ]
+    },
+    {
+      "page_idx": 258,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.08,
+            0.861,
+            0.158
+          ],
+          "continues_prev": true,
+          "content": "built using R’s lists. This makes sense, because the columns of a dataframe are vectors and each column can have a different type. The R data structure used to store heterogeneous elements is the list. See for yourself that dataframes are truly lists; try is.list(mtfs)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.167,
+            0.861,
+            0.247
+          ],
+          "content": "We create lists with the list() function. Like creating dataframes with the data.frame() function or combining vectors with c(), list() will interpret named arguments as the names of the elements. For example, suppose we wanted to store a specific genomic position using a list:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.254,
+            0.744,
+            0.41
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> adh <- list(chr=\"2L\", start=14615555L, end=14618902L, name=\"Adh\")\n> adh\n\\$chr\n[1] \"2L\"\n\\$start\n[1] 14615555\n\\$end\n[1] 14618902\n\\$name\n[1] \"Adh\"\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.417,
+            0.861,
+            0.496
+          ],
+          "content": "Had we tried to store these three values in a vector, vector coercion would coerce them into a character vector. Lists allow heterogeneous typed elements, so the character vectors “chr2L” and “Adh”, and integer vectors 14,615,555 and 14,618,902 can exist in the same list without being coerced."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.502,
+            0.862,
+            0.659
+          ],
+          "content": "As with R’s vectors, we can extract subsets of a list or change values of specific elements using indexing. However, accessing elements from an R list is slightly different than with vectors. Because R’s lists can contain objects with different types, a subset containing multiple list elements could contain objects with different types. Consequently, the only way to return a subset of more than one list element is with another list. As a result, there are two indexing operators for lists: one for accessing a subset of multiple elements as a list (the single bracket; e.g., adh[1:2]) and one for accessing an element within a list (the double bracket; e.g., adh[[3]])."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.666,
+            0.859,
+            0.706
+          ],
+          "content": "For example, if we were to access the first two elements of the list x we created before, we would use single bracket indexing:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.715,
+            0.281,
+            0.793
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> adh[1:2]\n\\$chr\n[1] \"2L\"\n\\$start\n[1] 14615555\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.32,
+            0.82,
+            0.679,
+            0.845
+          ],
+          "level": 2,
+          "content": "Peeking into R’s Structures with str()"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.154,
+            0.85,
+            0.845,
+            0.888
+          ],
+          "content": "Because R’s lists can be nested and can contain any type of data, list-based data structures can grow to be quite complex. In some cases, it can be difficult to understand"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.566,
+            0.923,
+            0.799,
+            0.94
+          ],
+          "content": "Working with and Visualizing Data in R"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.859,
+            0.937
+          ],
+          "content": "229"
+        }
+      ]
+    },
+    {
+      "page_idx": 259,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.152,
+            0.081,
+            0.845,
+            0.174
+          ],
+          "continues_prev": true,
+          "content": "the overall structure of some lists. The function str() is a convenient R function for inspecting complex data structures. str() prints a line for each contained data structure, complete with its type, length (or dimensions), and the first few elements it contains. We can see an example by creating an artificially complex nested list (for the sake of this example) and looking at its structure:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.186,
+            0.182,
+            0.717,
+            0.293
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> z <- list(a=list(rn1=rnorm(20), rn2=rnorm(20)), b=rnorm(10))\n> str(z)\nList of 2\n$ a:List of 2\n  ..$ rn1: num [1:20] -2.8126 1.0328 -0.6777 0.0821 0.7532 ...\n  ..$ rn2: num [1:20] 1.09 1.27 1.31 2.03 -1.05 ...\n$ b: num [1:10] 0.571 0.929 1.494 1.123 1.713 ...\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.3,
+            0.844,
+            0.356
+          ],
+          "content": "For deeply nested lists, you can simplify str()’s output by specifying the maximum depth of nested structured to return with str()’s second argument, max.level. By default, max.level is NA, which returns all nested structures."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.388,
+            0.86,
+            0.446
+          ],
+          "content": "Note that this subset of the original list is returned as a list. We can verify this using the function is.list(). Additionally, note that single brackets return a list even if a single element is selected (for consistency):"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.456,
+            0.337,
+            0.518
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> is.list(adh[1:2])\n[1] TRUE\n> is.list(adh[1])\n[1] TRUE\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.526,
+            0.86,
+            0.582
+          ],
+          "content": "Because the single bracket operator always returns subjects of a list as a list, R has the double bracket operator to extract an object from a list position (either by position or name):"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.593,
+            0.312,
+            0.655
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> adh[[2]]\n[1] 14615555\n> adh[['start']]\n[1] 14615555\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.663,
+            0.86,
+            0.721
+          ],
+          "content": "Unlike the single bracket operator, the double bracket operator will return the value from inside a list position (e.g., not as a list). Because accessing list elements by name is quite common, R has a syntactic shortcut:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.172,
+            0.73,
+            0.253,
+            0.761
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> adh\\$chr\n[1] \"2L\"\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.769,
+            0.86,
+            0.825
+          ],
+          "content": "You should be familiar with this syntax already—we used the same syntax to extract columns from a dataframe. This isn’t a coincidence: dataframes are built from lists, and each dataframe column is a vector stored as a list element."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.835,
+            0.86,
+            0.892
+          ],
+          "content": "We can create new elements or change existing elements in a list using the familiar <-. Assigning a list element the value NULL removes it from the list. Some examples are shown here:"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "230"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.5,
+            0.94
+          ],
+          "content": "Chapter 8: A Rapid Introduction to the R Language"
+        }
+      ]
+    },
+    {
+      "page_idx": 260,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.08,
+            0.516,
+            0.452
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> adh$id <- \"FBgn0000055\"\n> adh$chr <- \"chr2L\"\n> adh\n$chr\n[1] \"chr2L\"\n$start\n[1] 14615555\n$end\n[1] 14618902\n$name\n[1] \"Adh\"\n$id\n[1] \"FBgn0000055\"\n\n> adh$id <- NULL # remove the FlyBase ID\n> adh\n$chr\n[1] \"chr2L\"\n$start\n[1] 14615555\n$end\n[1] 14618902\n$name\n[1] \"Adh\"\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.461,
+            0.861,
+            0.519
+          ],
+          "content": "Similar to vectors, list names can be accessed with names() or changed using names(x) <-. We’ll use lists extensively in the next few sections of this book, so it’s important that you’re familiar with these basic operations."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.535,
+            0.816,
+            0.563
+          ],
+          "level": 2,
+          "content": "Writing and Applying Functions to Lists with lapply() and sapply()"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.568,
+            0.861,
+            0.74
+          ],
+          "content": "Understanding R’s data structures and how subsetting works are fundamental to having the freedom in R to explore data any way you like. In this section, we’ll cover another cornerstone of R: how to write and apply functions to data. This approach of applying functions to data rather than writing explicit loops follows from a functional-programming style that R inherited from one of its language influences, Scheme. Specifically, our focus will be on applying functions to R’s lists using lapply() and sapply(), but the same ideas extend to other R data structures through similar “apply” functions. Solving common data analysis problems with apply functions is tricky at first, but mastering it will serve you well in R."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.758,
+            0.248,
+            0.779
+          ],
+          "level": 2,
+          "content": "Using lapply()"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.785,
+            0.86,
+            0.843
+          ],
+          "content": "Let’s work through a simple example on artificial data first (we’ll see how to apply these concepts to real data in the next section). Suppose you have a list of numeric values (here, generated at random with rnorm()):"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.853,
+            0.783,
+            0.884
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> ll <- list(a=rnorm(6, mean=1), b=rnorm(6, mean=4), c=rnorm(6, mean=6))\n> ll\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.566,
+            0.922,
+            0.799,
+            0.939
+          ],
+          "content": "Working with and Visualizing Data in R"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.832,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "231"
+        }
+      ]
+    },
+    {
+      "page_idx": 261,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.082,
+            0.761,
+            0.175
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$a\n[1] 2.2629543 0.6737666 2.3297993 2.2724293 1.4146414 -0.5399500\n$b\n[1] 3.071433 3.705280 3.994233 6.404653 4.763593 3.200991\n$c\n[1] 4.852343 5.710538 5.700785 5.588489 6.252223 5.108079\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.182,
+            0.86,
+            0.241
+          ],
+          "content": "How might we calculate the mean of each vector stored in this list? If you’re familiar with for loops in other languages, you may approach this problem using R’s for loops (a topic we save for “Control Flow: if, for, and while” on page 253):"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.25,
+            0.585,
+            0.359
+          ],
+          "sub_type": "code",
+          "content": "```r\n# create an empty numeric vector for the means\nll_means <- numeric(length(ll))\n\n# loop over each list element and calculate mean\nfor (i in seq_along(ll)) {\n    ll_means[i] <- mean(ll[[i]])\n}\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.366,
+            0.862,
+            0.462
+          ],
+          "content": "However, this is not idiomatic R; a better approach is to use an apply function that applies another function to each list element. For example, to calculate the mean of each list element, we’d want to apply the function mean() to each element. To do so, we can use the function lapply() (the l is for list, as lapply() returns the result as a list):"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.473,
+            0.329,
+            0.582
+          ],
+          "sub_type": "code",
+          "content": "```perl\n> lapply(ll, mean)\n$a\n[1] 0.5103648\n$b\n[1] 0.09681026\n$c\n[1] -0.2847329\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.59,
+            0.862,
+            0.666
+          ],
+          "content": "lapply() has several advantages: it creates the output list for us, uses fewer lines of code, leads to clearer code, and is in some cases faster than using a for loop. While using lapply() rather than loops admittedly takes time getting used to, it’s worth the effort."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "232"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.5,
+            0.94
+          ],
+          "content": "Chapter 8: A Rapid Introduction to the R Language"
+        }
+      ]
+    },
+    {
+      "page_idx": 262,
+      "blocks": [
+        {
+          "type": "image",
+          "bbox": [
+            0.167,
+            0.073,
+            0.255,
+            0.162
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_262_image_0.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.268,
+            0.079,
+            0.404,
+            0.098
+          ],
+          "level": 2,
+          "content": "lapply() in Parallel"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.267,
+            0.108,
+            0.789,
+            0.181
+          ],
+          "content": "A great feature of using the lapply() approach is that parallelizing lapply()s is simple. R’s parallel package has a parallelized drop in version of lapply() called mclapply() (“mc” stands for multicore). We can use mclapply() just as we would use lapply():"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.3,
+            0.187,
+            0.702,
+            0.219
+          ],
+          "sub_type": "code",
+          "content": "```r\n> library(parallel)\n> results <- mclapply(my_samples, slowFunction)\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.224,
+            0.789,
+            0.313
+          ],
+          "content": "This would run the function slowFunction on each of the elements of my\\_samples in parallel. By default, mclapply() will use as many cores as are set in your options (or two cores if this option is not set). You can explicitly set the number of cores to use by setting this option:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.3,
+            0.319,
+            0.474,
+            0.365
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> options(cores=3)\n> getOption('cores')\n[1] 3\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.37,
+            0.789,
+            0.442
+          ],
+          "content": "Even though for some tasks parallelization is absolutely indispensable, it’s not a substitute for writing idiomatic, efficient R code. Often, efficient R code will lead to sizable performance gains without requiring parallelization."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.463,
+            0.861,
+            0.562
+          ],
+          "content": "A few remarks: first, don’t call the function you pass to lapply()—for example, don’t do lapply(d\\_split, mean(x)) or lapply(d\\_split, mean()). Remember, you’re passing lapply() the function you want it to apply to each list element. It’s lapply()’s job to call the mean() function. Note that lapply() calls the supplied function using each list element as the function’s first argument."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.57,
+            0.861,
+            0.666
+          ],
+          "content": "Second, in some cases you will need to specify additional arguments to the function you’re passing to lapply(). For example, suppose an element of ll was a vector that contained an NA. In this case, mean() would return NA unless we ignore NA values by calling mean() with the argument na.rm=TRUE. To supply this argument to mean(), we could use:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.678,
+            0.687,
+            0.895
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> ll$a[3] <- NA      # replace an element with a missing value\n> lapply(ll, mean)\n$a\n[1] NA\n$b\n[1] 4.19003\n$c\n[1] 5.53541\n\n> lapply(ll, mean, na.rm=TRUE)\n$a\n[1] 1.216768\n$b\n[1] 4.19003\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.566,
+            0.923,
+            0.799,
+            0.94
+          ],
+          "content": "Working with and Visualizing Data in R"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "233"
+        }
+      ]
+    },
+    {
+      "page_idx": 263,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.173,
+            0.082,
+            0.27,
+            0.113
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$c\n[1] 5.53541\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.121,
+            0.859,
+            0.16
+          ],
+          "content": "In general, it’s a good idea to pass arguments by name—both to help readers understand what’s going on and to prevent issues in argument matching."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.177,
+            0.276,
+            0.197
+          ],
+          "level": 2,
+          "content": "Writing functions"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.203,
+            0.861,
+            0.3
+          ],
+          "content": "There’s another way to specify additional arguments in functions that illustrates the flexibility of R’s functions: write a function that wraps another function. R makes writing functions very easy, both because you should be writing lots of them to organize your code and applying functions is such a common operation in R. For example, we could write a simple version of R’s mean() function with na.rm=TRUE:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.309,
+            0.591,
+            0.435
+          ],
+          "sub_type": "code",
+          "content": "```r\n> meanRemoveNA <- function(x) mean(x, na.rm=TRUE)\n> lapply(ll, meanRemoveNA)\n$a\n[1] 1.216768\n$b\n[1] 4.19003\n$c\n[1] 5.53541\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.442,
+            0.859,
+            0.478
+          ],
+          "content": "The syntax for meanRemoveNA() is a common shortened version of the general syntax for R functions:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.489,
+            0.474,
+            0.553
+          ],
+          "sub_type": "code",
+          "content": "```r\nfun_name <- function(args) {\n    # body, containing R expressions\n    return(value)\n}\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.56,
+            0.86,
+            0.678
+          ],
+          "content": "Function definitions consist of arguments, a body, and a return value. Functions that contain only one line in their body can omit the braces (as the meanRemoveNA() func tion does). Similarly, using return() to specify the return value is optional; R’s functions will automatically return the last evaluated expression in the body. These syntactic shortcuts are commonly used in R, as we often need to quickly write func tions to apply to data."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.686,
+            0.861,
+            0.783
+          ],
+          "content": "Alternatively, we could forgo creating a function named meanRemoveNA() in our global environment altogether and instead use an anonymous function (named so because anonymous functions are functions without a name). Anonymous functions are useful when we only need a function once for a specific task. For example, instead of writing meanRemoveNA(), we could use:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.791,
+            0.559,
+            0.87
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> lapply(ll, function(x) mean(x, na.rm=TRUE))\n$a\n[1] 1.216768\n$b\n[1] 4.19003\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "234"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.5,
+            0.94
+          ],
+          "content": "Chapter 8: A Rapid Introduction to the R Language"
+        }
+      ]
+    },
+    {
+      "page_idx": 264,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.173,
+            0.082,
+            0.27,
+            0.113
+          ],
+          "sub_type": "code",
+          "content": "```txt\n$c\n[1] 5.53541\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.12,
+            0.861,
+            0.258
+          ],
+          "content": "In other cases, we might need to create polished functions that we’ll use repeatedly throughout our code. In theses cases, it pays off to carefully document your functions and add some extra features. For example, the following is a version of meanRemo veNA() that will warn the user when it encounters and automatically removes missing values. This more verbose behavior can be disabled by setting the argument warn=FALSE. Note how in constructing this meanRemoveNAVerbose() function, we specify that the argument warn is TRUE by default in the arguments:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.267,
+            0.752,
+            0.392
+          ],
+          "sub_type": "code",
+          "content": "```r\nmeanRemoveNAVerbose <- function(x, warn=TRUE) {\n  # A function that removes missing values when calculating the mean\n  # and warns us about it.\n    if (any(is.na(x)) && warn) {\n      warning(\"removing some missing values!\")\n    }\n  mean(x, na.rm=TRUE)\n}\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.4,
+            0.861,
+            0.477
+          ],
+          "content": "Don’t try to type out long function definitions like meanRemoveNAVerbose() directly in the R interpreter: functions over one line should be kept in a file and sent to the interpreter. RStudio conveniently allows you to send a whole function definition at once with Command-Option-f on a Mac and Control-Alt-f on Windows."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.167,
+            0.492,
+            0.255,
+            0.58
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_264_image_4.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.267,
+            0.497,
+            0.382,
+            0.516
+          ],
+          "level": 2,
+          "content": "Function Scope"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.525,
+            0.79,
+            0.613
+          ],
+          "content": "One of the benefits of using functions in your code is that they organize code into separate units. One way functions separate code is through scoping, which is how R’s function finds the value of variables. The limited scope of R’s functions prevents mistakes due to name collisions; for example:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.3,
+            0.621,
+            0.493,
+            0.759
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> x <- 3\n> fun <- function(y) {\n    x <- 2.3\n    x + y\n}\n> fun(x)\n[1] 5.3\n> x\n[1] 3\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.764,
+            0.789,
+            0.887
+          ],
+          "content": "Note that although we’ve assigned x a new value in our fun() func tion, this does not affect the value of x defined earlier in our global environment. The technical name for R scoping rules is lexical scoping. Fully understanding how lexical scoping works is outside of the scope of this introductory chapter, but there are many good resource on the subject. Hadley Wickham’s terrific book [Advanced R](http://bit.ly/lex-scoping) is a good place to start."
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.566,
+            0.923,
+            0.798,
+            0.939
+          ],
+          "content": "Working with and Visualizing Data in R"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "235"
+        }
+      ]
+    },
+    {
+      "page_idx": 265,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.08,
+            0.861,
+            0.214
+          ],
+          "content": "There are several benefits to using functions in code. Functions can easily turn complex code into neatly contained, reusable, easy-to-debug blocks of code. Functions also make code easier to read; it’s much easier to figure out what a function named normalizeRNASeqCounts() does than looking at its code (though you should still document your functions). In general, if you find yourself copying and pasting code, this is almost surely a sign you’re repeating code that should be turned into a function."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.233,
+            0.37,
+            0.254
+          ],
+          "level": 2,
+          "content": "Digression: Debugging R Code"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.259,
+            0.861,
+            0.412
+          ],
+          "content": "Functions are great because they help organize code into reusable containers. But this can make debugging code more difficult, as without the right tools it can be hard to poke around in misbehaving functions. Fortunately, R has numerous debugging tools. Often it’s hard to convince new programmers to take the time to play around and learn these debugging tools. If you’re doubtful about taking the time to learn R’s debugging tools, I can promise you: you will have bugs in your code, and debugging tools help you find and fix these frustrating bugs faster. With that advice, let’s take a quick look."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.421,
+            0.861,
+            0.517
+          ],
+          "content": "One of the best ways to debug a function is to pause execution at a breakpoint in code and poke around. With execution paused, you can step through code line by line, look at variables’ values, and inspect what functions called other functions (known as the call stack). The function browser() allows us to do this—let’s place a call to browser() in a fake function foo():"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.527,
+            0.348,
+            0.621
+          ],
+          "sub_type": "code",
+          "content": "```r\nfoo <- function(x) {\n  a <- 2\n  browser()\n  y <- x + a\n  return(y)\n}\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.629,
+            0.477,
+            0.646
+          ],
+          "content": "Load this function into R, and then run:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.658,
+            0.337,
+            0.704
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> foo(1)\nCalled from: foo(1)\nBrowse[1]>\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.713,
+            0.861,
+            0.791
+          ],
+          "content": "We use one-letter commands to control stepping through code with browser(). The mostly frequently used are n (execute the next line), c (continue running the code), and Q (exit without continuing to run code). You can see help(browser) for other commands. Within browser(), we can view variables’ values:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.801,
+            0.607,
+            0.864
+          ],
+          "sub_type": "code",
+          "content": "```txt\nBrowse[1]> ls() # list all variables in local scope\n[1] \"a\" \"x\"\nBrowse[1]> a\n[1] 2\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "236"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.5,
+            0.94
+          ],
+          "content": "Chapter 8: A Rapid Introduction to the R Language"
+        }
+      ]
+    },
+    {
+      "page_idx": 266,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.082,
+            0.859,
+            0.121
+          ],
+          "content": "If we step to the two next lines, our function assigns a value to y, which we can inspect:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.129,
+            0.372,
+            0.222
+          ],
+          "sub_type": "code",
+          "content": "```txt\nBrowse[1]> n\ndebug at #4: y <- x + a\nBrowse[2]> n\ndebug at #5: return(y)\nBrowse[2]> y\n[1] 3\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.231,
+            0.741,
+            0.25
+          ],
+          "content": "Then, we can continue with c, and foo(1) runs normally and returns 3:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.172,
+            0.26,
+            0.281,
+            0.291
+          ],
+          "sub_type": "code",
+          "content": "```txt\nBrowse[2]> c\n[1] 3\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.301,
+            0.859,
+            0.359
+          ],
+          "content": "Another useful debugging trick is to set options(error=recover). Setting this option will drop you into an interactive debugging session anytime an error is encountered. For example, if you were to have a buggy function bar():"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.368,
+            0.666,
+            0.415
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> bar <- function(x) x + \"1\"\n> bar(2)\nError in x + \"1\" : non-numeric argument to binary operator\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.424,
+            0.859,
+            0.462
+          ],
+          "content": "There’s not much we can do here. But setting options(error=recover) allows us to select which function (only one in this simple case) we’d like to enter to inspect:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.472,
+            0.667,
+            0.658
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> options(error=recover)\n> bar(2)\nError in x + \"1\" : non-numeric argument to binary operator\n\nEnter a frame number, or 0 to exit\n\n1: bar(2)\n\nSelection: 1\nSelection: 1\nCalled from: top level\nBrowse[1]> # now at browser() prompt\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.666,
+            0.519,
+            0.684
+          ],
+          "content": "To turn this off, enter options(error=NULL)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.694,
+            0.859,
+            0.733
+          ],
+          "content": "We’ve only scratched the surface of R’s debugging capabilities. See the help pages for browser(), debug(), traceback(), and recover() for more detail."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.751,
+            0.504,
+            0.772
+          ],
+          "level": 2,
+          "content": "More list apply functions: sapply() and mapply()"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.779,
+            0.859,
+            0.876
+          ],
+          "content": "In the same family as lapply() are the functions sapply() and mapply(). The sap ply() function is similar to lapply(), except that it simplifies the results into a vector, array, or matrix (see “Other Apply Functions for Other R Data Structures” on page 238 for a quick note about these other data structures). For example, if we were to replace our earlier lapply() call with sapply():"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.566,
+            0.923,
+            0.799,
+            0.94
+          ],
+          "content": "Working with and Visualizing Data in R"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "237"
+        }
+      ]
+    },
+    {
+      "page_idx": 267,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.081,
+            0.559,
+            0.127
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> sapply(ll, function(x) mean(x, na.rm=TRUE))\n      a       b       c\n1.216768 4.190030 5.535410\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.137,
+            0.861,
+            0.214
+          ],
+          "content": "sapply() can simplify more complex data structures than this simple list, but occasionally sapply() simplifies something in a strange way, leading to more headaches than it’s worth. In “Working with the Split-Apply-Combine Pattern” on page 239, we’ll see other ways to combine data from lists into more interpretable structures."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.224,
+            0.861,
+            0.303
+          ],
+          "content": "The last apply function we’ll discuss is mapply(). mapply() is a multivariate version of sapply(): the function you pass to mapply() can take in and use multiple arguments. Suppose you had two lists of genotypes and you wanted to see how many alleles are shared by calling intersect() pairwise on both lists:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.31,
+            0.811,
+            0.389
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> ind_1 <- list(loci_1=c(\"T\", \"T\"), loci_2=c(\"T\", \"G\"), loci_3=c(\"C\", \"G\"))\n> ind_2 <- list(loci_1=c(\"A\", \"A\"), loci_2=c(\"G\", \"G\"), loci_3=c(\"C\", \"G\"))\n> mapply(function(a, b) length(intersect(a, b)), ind_1, ind_2)\nloci_1 loci_2 loci_3\n       0      1      2\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.398,
+            0.862,
+            0.496
+          ],
+          "content": "Unlike lapply() and sapply(), mapply()’s first argument is the function you want to apply. mapply() then takes as many vectors as there are needed arguments in the function applied to the data. Here, each loci in these two lists is processed pairwise using an anonymous function across the two lists ind\\_1 and ind\\_2. intersect() is one of R’s set functions (see help(intersect) for some useful others)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.506,
+            0.861,
+            0.585
+          ],
+          "content": "Like sapply(), mapply() tries to simplify the result as much as possible. Unfortunately, sometimes this will wreak havoc on your resulting data. To prevent this, specify SIMPLIFY=FALSE. Also, mapply(fun, x, y, SIMPLIFY=FALSE) is equivalent to using the function Map() like Map(fun, x, y), which saves some typing."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.254,
+            0.613,
+            0.745,
+            0.638
+          ],
+          "level": 2,
+          "content": "Other Apply Functions for Other R Data Structures"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.643,
+            0.848,
+            0.828
+          ],
+          "content": "There are two other R data structures we won’t cover in this chapter: arrays and matrices. Both are simply R vectors with dimensions. Arrays can be any number of dimensions; matrices are arrays with two dimensions (like the matrices from linear algebra). Because arrays and matrices are simply vectors, they follow the same coercion rules and are of homogeneous type. We use dataframes rather than matrices because most data we encounter has a mix of different column types. However, if you need to implement lower-level statistical or mathematical functionality, you’ll likely need to work with R’s arrays or matrices. While these topics are out of the scope of this introductory chapter, it’s worth mentioning that these data structures have their own useful apply functions—for example, see apply() and sweep()."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "238"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.5,
+            0.94
+          ],
+          "content": "Chapter 8: A Rapid Introduction to the R Language"
+        }
+      ]
+    },
+    {
+      "page_idx": 268,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.079,
+            0.626,
+            0.105
+          ],
+          "level": 2,
+          "content": "Working with the Split-Apply-Combine Pattern"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.111,
+            0.861,
+            0.383
+          ],
+          "content": "Grouping data is a powerful method in exploratory data analysis. With data grouped by a factor, per-group summaries can reveal interesting patterns we may have missed by exploring ungrouped data. We’ve already used grouping implicitly with ggplot2, through coloring or faceting plots by a factor column (such as motif sequence, repeat, or the GC bins we created with cut()). For example, in Figure 8-9, binning GC content and plotting depth densities per GC bin revealed that both low GC contents and high GC content windows have lower sequencing depth. In this section, we’ll learn a common data analysis pattern used to group data, apply a function to each group, and then combine the results. This pattern is split-apply-combine, a widely used strategy in data analysis (see Hadley Wickham’s paper [“The Split-Apply-Combine Strategy for Data Analysis”](http://www.jstatsoft.org/v40/i01/paper) for a nice detailed introduction). At first, we’ll use standard R functions to implement the split-apply-combine pattern, but later in “Exploring Dataframes with dplyr” on page 243 we’ll apply this same strategy using the dplyr package."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.39,
+            0.861,
+            0.45
+          ],
+          "content": "Let’s get started with a simple example of split-apply-combine: finding the mean depth for the three GC bins we created in Example 8-4 for the d dataframe. This will give us some numeric summaries of the pattern we saw in Figure 8-9."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.458,
+            0.861,
+            0.536
+          ],
+          "content": "The first step is to split our data. Splitting data combines observations into groups based on the levels of the grouping factor. We split a dataframe or vector using split(x, f), where x is a dataframe/vector and f is a factor. In this example, we’ll split the d\\$depth column into a list based on the factor column d\\$GC.binned:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.545,
+            0.742,
+            0.671
+          ],
+          "sub_type": "code",
+          "content": "```matlab\n> d_split <- split(d\\$depth, d\\$GC.binned)\n> str(d_split)\nList of 5\n\\$ (0.716,17.7]: num [1:6] 4.57 1.12 6.95 2.66 3.69 3.87\n\\$ (17.7,34.7] : num [1:4976] 8 8.38 9.02 10.31 12.09 ...\n\\$ (34.7,51.6] : num [1:45784] 6.68 9.06 10.26 8.06 7.05 ...\n\\$ (51.6,68.5] : num [1:8122] 3.41 7 6.63 7.15 6.97 4.77 5.18 ...\n\\$ (68.5,85.6] : num [1:252] 8.04 1.96 3.71 1.97 4.82 4.22 3.76 ...\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.678,
+            0.861,
+            0.797
+          ],
+          "content": "Be sure to understand what’s happened here: split() returns a list with each element containing all observations for a particular level of the factor used in grouping. The elements in the list returned from split() correspond to the levels of the grouping factor d\\$GC.binned. You can verify that the list returned by split() contains elements corresponding to the levels of d\\$GC.binned using names(d\\_split), levels(d \\$GC.binned), length(d\\_split), and nlevels(d\\$GC.binned)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.805,
+            0.861,
+            0.865
+          ],
+          "content": "With our data split into groups, we can then apply a function to each group using the lapply() function we learned earlier. Continuing our example, let’s find the mean depth of each GC bin by applying the function mean() to d\\_split:"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.566,
+            0.922,
+            0.799,
+            0.94
+          ],
+          "content": "Working with and Visualizing Data in R"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.832,
+            0.922,
+            0.859,
+            0.937
+          ],
+          "content": "239"
+        }
+      ]
+    },
+    {
+      "page_idx": 269,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.081,
+            0.371,
+            0.252
+          ],
+          "sub_type": "algorithm",
+          "content": "> lapply(d\\_split, mean)\n$'(0.716,17.7]$\n[1] 3.81\n$'(17.7,34.7]$\n[1] 8.788244\n$'(34.7,51.6]$\n[1] 8.296699\n$'(51.6,68.5]$\n[1] 7.309941\n$'(68.5,85.6]$\n[1] 4.037698",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.259,
+            0.861,
+            0.337
+          ],
+          "content": "Finally, the last step is to combine this data together somehow (because it’s currently split). In this case, the data in this list is already understandable without combining it back together (though this won’t always be the case). But we can simplify our splitapply results by converting it to a vector. One way to do this is to call unlist():"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.346,
+            0.72,
+            0.392
+          ],
+          "sub_type": "code",
+          "content": "```python\n> unlist(lapply(d_split, mean))\n(0.716,17.7] (17.7,34.7] (34.7,51.6] (51.6,68.5] (68.5,85.6]\n    3.810000     8.788244     8.296699     7.309941     4.037698\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.401,
+            0.861,
+            0.461
+          ],
+          "content": "unlist() returns a vector with the highest type it can (following R’s coercion rules; see help(unlist) for more information). Equivalently, we could just replace our call to lapply() with sapply():"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.47,
+            0.72,
+            0.516
+          ],
+          "sub_type": "code",
+          "content": "```python\n> sapply(d_split, mean)\n(0.716,17.7] (17.7,34.7] (34.7,51.6] (51.6,68.5] (68.5,85.6]\n    3.810000     8.788244     8.296699     7.309941     4.037698\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.525,
+            0.861,
+            0.583
+          ],
+          "content": "Now, let’s look at an example that involves a slightly trickier combine step: applying the summary() function to each group. We’ll run both the split and apply steps in one expression:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.593,
+            0.675,
+            0.748
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> dpth_summ <- lapply(split(d\\$depth, d\\$GC.binned), summary)\n> dpth_summ\n\\$(0.716,17.7]`\n    Min. 1st Qu.    Median      Mean 3rd Qu.     Max.\n    1.120   2.918    3.780    3.810    4.395    6.950\n\\$(17.7,34.7]`\n    Min. 1st Qu.    Median      Mean 3rd Qu.     Max.\n    1.000   7.740    8.715    8.788    9.800    17.780\n\n[...]\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.756,
+            0.861,
+            0.815
+          ],
+          "content": "dpth\\_summ is a list of depth summary tables for each GC bin. The routine way to combine a list of vectors is by binding each element together into a matrix or dataframe using either cbind() (column bind) or rbind() (row bind). For example:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.824,
+            0.55,
+            0.886
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> rbind(dpth_summ[[1]], dpth_summ[[2]])\n        Min. 1st Qu. Median Mean 3rd Qu. Max.\n[1,] 1.12  2.918 3.780 3.810 4.395 6.95\n[2,] 1.00  7.740 8.715 8.788 9.800 17.78\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "240"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.5,
+            0.94
+          ],
+          "content": "Chapter 8: A Rapid Introduction to the R Language"
+        }
+      ]
+    },
+    {
+      "page_idx": 270,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.096,
+            0.506,
+            0.22
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> cbind(dpth_summ[[1]], dpth_summ[[2]])\n          [,1]   [,2]\nMin.    1.120  1.000\n1st Qu. 2.918  7.740\nMedian   3.780  8.715\nMean     3.810  8.788\n3rd Qu. 4.395  9.800\nMax.    6.950 17.780\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.228,
+            0.861,
+            0.343
+          ],
+          "content": "However, this approach won’t scale if we needed to bind together many list elements. No one wants to type out rbind(x[[1]], x[[2]], x[[3]], … for a thousand list entries. Fortunately, R’s do.call() function takes a function and a list as arguments, and calls the function using the list as the function’s arguments (see the following tip). We can use do.call() with rbind() to merge the list our split-apply steps produces into a matrix:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.355,
+            0.7,
+            0.463
+          ],
+          "sub_type": "code",
+          "content": "```csv\n> do.call(rbind, lapply(split(d\\$depth, d\\$GC.binned), summary))\n        Min. 1st Qu. Median Mean 3rd Qu. Max.\n(0.716,17.7] 1.12 2.918 3.780 3.810 4.395 6.95\n(17.7,34.7] 1.00 7.740 8.715 8.788 9.800 17.78\n(34.7,51.6] 1.00 7.100 8.260 8.297 9.470 21.91\n(51.6,68.5] 1.00 6.030 7.250 7.310 8.540 21.18\n(68.5,85.6] 1.00 2.730 3.960 4.038 5.152 9.71\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.472,
+            0.86,
+            0.528
+          ],
+          "content": "Combining this data such that the quantiles and means are columns is the natural way to represent it. Replacing rbind with cbind in do.call() would swap the rows and columns."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.538,
+            0.86,
+            0.793
+          ],
+          "content": "There are a few other useful tricks to know about the split-apply-combine pattern built from split(), lapply(), and do.call() with rbind() that we don’t have the space to cover in detail here, but are worth mentioning. First, it’s possible to group by more than one factor—just provide split() with a list of factors. split() will split the data by all combinations of these factors. Second, you can unsplit a list back into its original vectors using the function unsplit(). unsplit() takes a list and the same factor (or list of factors) used as the second argument of split() to reconstruct the new list back into its original form (see help(split) for more information). Third, although we split single columns of a dataframe (which are just vectors), split() will happily split dataframes. Splitting entire dataframes is necessary when your apply step requires more than one column. For example, if you wanted to fit separate linear models for each set of observations in a group, you could write a function that takes each dataframe passed lapply() and fits a model using its column with lm()."
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.566,
+            0.923,
+            0.799,
+            0.939
+          ],
+          "content": "Working with and Visualizing Data in R"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "241"
+        }
+      ]
+    },
+    {
+      "page_idx": 271,
+      "blocks": [
+        {
+          "type": "image",
+          "bbox": [
+            0.167,
+            0.073,
+            0.255,
+            0.162
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_271_image_0.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.268,
+            0.079,
+            0.442,
+            0.098
+          ],
+          "level": 2,
+          "content": "Understanding do.call()"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.267,
+            0.108,
+            0.79,
+            0.359
+          ],
+          "content": "If do.call() seems confusing, this is because it is at first. But understanding do.call() will provide you with an essential tool in problem solving in R. They key point about do.call() is that it constructs and executes a function call. Function calls have two parts: the name of the function you’re calling, and the arguments supplied to the function. For example, in the function call func(arg1, arg2, arg3), func is the name of the function and arg1, arg2, arg3 are the arguments. All do.call() does is allow you to construct and call a function using the function name and a list of arguments. For example, calling func(arg1, arg2, arg3) is the same as do.call(func, list(arg1, arg2, arg3)). If the list passed to do.call() has named elements, do.call() will match these named elements with named arguments in the function call. For example, one could build a call to rnorm() using:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.3,
+            0.365,
+            0.668,
+            0.397
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> do.call(rnorm, list(n=4, mean=3.3, sd=4))\n[1] 8.351817 1.995067 8.619197 8.389717\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.266,
+            0.403,
+            0.79,
+            0.527
+          ],
+          "content": "do.call() may seem like a complex way to construct and execute a function call, but it’s the most sensible way to handle situations where the arguments we want to pass to a function are already in a list. This usually occurs during data processing when we need to combine a list into a single data structure by using functions like cbind() or rbind() that take any number of arguments (e.g., their first argument is ...)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.549,
+            0.859,
+            0.608
+          ],
+          "content": "Lastly, R has some convenience functions that wrap the split(), lapply(), and combine steps. For example, the functions tapply() and aggregate() can be used to create per-group summaries too:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.617,
+            0.72,
+            0.789
+          ],
+          "sub_type": "code",
+          "content": "```csv\n> tapply(d\\$depth, d\\$GC.binned, mean)\n(0.716,17.7] (17.7,34.7] (34.7,51.6] (51.6,68.5] (68.5,85.6]\n    3.810000    8.788244    8.296699    7.309941    4.037698\n\n> aggregate(d\\$depth, list(gc=d\\$GC.binned), mean)\n        gc      x\n1 (0.716,17.7] 3.810000\n2 (17.7,34.7] 8.788244\n3 (34.7,51.6] 8.296699\n4 (51.6,68.5] 7.309941\n5 (68.5,85.6] 4.037698\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.797,
+            0.86,
+            0.855
+          ],
+          "content": "Both tapply() and aggregate() have the same split-apply-combine pattern at their core, but vary slightly in the way they present their output. If you’re interested in similar functions in R, see the help pages for aggregate(), tapply(), and by()."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.937
+          ],
+          "content": "242"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.5,
+            0.94
+          ],
+          "content": "Chapter 8: A Rapid Introduction to the R Language"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Bioinformatics Data Skills",
+      "authors": [
+        "Vince Buffalo"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "created_at": "2015-06-30T16:29:18Z",
+      "modified_at": "2015-06-30T13:45:47-04:00",
+      "creator_application": "AH CSS Formatter V6.2 MR4 for Linux64 : 6.2.6.18551 (2014/09/24 15:00JST)",
+      "producer_application": "Antenna House PDF Output Library 6.2.609 (Linux64)",
+      "page_count": 538,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 256,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 257,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 258,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 259,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 260,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 261,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 262,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 263,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 264,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 265,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 266,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 267,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 268,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 269,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 270,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 271,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

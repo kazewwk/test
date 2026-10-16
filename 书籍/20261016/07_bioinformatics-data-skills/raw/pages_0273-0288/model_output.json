@@ -1,0 +1,6214 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Bioinformatics Data Skills",
+      "authors": [
+        "Vince Buffalo"
+      ],
+      "subject": null,
+      "keywords": [],
+      "description": null,
+      "languages": [
+        "EN"
+      ],
+      "identifiers": [],
+      "publisher": null,
+      "created_at": "2015-06-30T16:29:18Z",
+      "modified_at": "2015-06-30T13:45:47-04:00",
+      "creator_application": "AH CSS Formatter V6.2 MR4 for Linux64 : 6.2.6.18551 (2014/09/24 15:00JST)",
+      "producer_application": "Antenna House PDF Output Library 6.2.609 (Linux64)",
+      "page_count": 538,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 272,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 273,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 274,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 275,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 276,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 277,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 278,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 279,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 280,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 281,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 282,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 283,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 284,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 285,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 286,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 287,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        }
+      ]
+    }
+  },
+  "schema_version": "2.0",
+  "schema": "docvortex.model",
+  "pages": [
+    [
+      {
+        "type": "text",
+        "bbox": [
+          0.136,
+          0.081,
+          0.861,
+          0.239
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "You may be wondering why we slogged through all of the split(), lapply(), and do.call() material given how much simpler it is to call tapply() or aggregate(). The answer is twofold. First, R’s base functions like split(), lapply(), and do.call() give you some raw power and flexibility in how you use the split-applycombine pattern. In working with genomics datasets (and with Bioconductor packages), we often need this flexibility. Second, Hadley Wickham’s package dplyr (which we see in the next section) is both simpler and more powerful than R’s built-in splitapply-combine functions like tapply() and aggregate()."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.142,
+              0.083,
+              0.857,
+              0.099
+            ]
+          },
+          {
+            "bbox": [
+              0.143,
+              0.103,
+              0.855,
+              0.119
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.123,
+              0.856,
+              0.139
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.143,
+              0.854,
+              0.16
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.163,
+              0.855,
+              0.179
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.182,
+              0.856,
+              0.197
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.201,
+              0.854,
+              0.217
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.221,
+              0.625,
+              0.237
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.247,
+          0.861,
+          0.326
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "The take-home point of this section: the split-apply-combine pattern is an essential part of data analysis. As Hadley Wickham’s article points out, this strategy is similar to Google’s map-reduce framework and SQL’s GROUP BY and AGGREGATE functions (which we cover in “SQLite Aggregate Functions” on page 442)."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.142,
+              0.249,
+              0.857,
+              0.266
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.269,
+              0.856,
+              0.284
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.288,
+              0.856,
+              0.303
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.306,
+              0.671,
+              0.323
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph_title",
+        "bbox": [
+          0.138,
+          0.341,
+          0.479,
+          0.368
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Exploring Dataframes with dplyr"
+          }
+        ],
+        "level": 2,
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.341,
+              0.476,
+              0.366
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.136,
+          0.374,
+          0.86,
+          0.571
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Every data analysis you conduct will likely involve manipulating dataframes at some point. Quickly extracting, transforming, and summarizing information from dataframes is an essential R skill. The split-apply-combine pattern implemented from R base functions like split() and lapply() is versatile, but not always the fastest or simplest approach. R’s split-apply-combine convenience functions like tapply() and aggregate() simplify the split-apply-combine, but their output still often requires some cleanup before the next analysis step. This is where Hadley Wickham’s dplyr package comes in: dplyr consolidates and simplifies many of the common operations we perform on dataframes. Also, dplyr is very fast; much of its key functionality is written in C++ for speed."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.142,
+              0.376,
+              0.856,
+              0.391
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.396,
+              0.855,
+              0.411
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.415,
+              0.856,
+              0.43
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.433,
+              0.856,
+              0.45
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.455,
+              0.856,
+              0.47
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.475,
+              0.856,
+              0.49
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.495,
+              0.855,
+              0.51
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.515,
+              0.856,
+              0.53
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.535,
+              0.856,
+              0.55
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.553,
+              0.353,
+              0.569
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.136,
+          0.58,
+          0.86,
+          0.698
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "dplyr has five basic functions for manipulating dataframes: arrange(), filter(), mutate(), select(), and summarize(). None of these functions perform tasks you can’t accomplish with R’s base functions. But dplyr’s advantage is in the added consistency, speed, and versatility of its data manipulation interface. dplyr’s design drastically simplifies routine data manipulation and analysis tasks, allowing you to more easily and effectively explore your data."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.143,
+              0.582,
+              0.855,
+              0.598
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.602,
+              0.856,
+              0.618
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.622,
+              0.855,
+              0.638
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.642,
+              0.855,
+              0.658
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.661,
+              0.856,
+              0.676
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.68,
+              0.469,
+              0.697
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.136,
+          0.706,
+          0.86,
+          0.786
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Because it’s common to work with dataframes with more rows and columns than fit in your screen, dplyr uses a simple class called tbl_df that wraps dataframes so that they don’t fill your screen when you print them (similar to using head()). Let’s convert our d dataframe into a tbl_df object with the tbl_df() function:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.709,
+              0.856,
+              0.723
+            ]
+          },
+          {
+            "bbox": [
+              0.139,
+              0.728,
+              0.858,
+              0.743
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.749,
+              0.855,
+              0.763
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.77,
+              0.722,
+              0.783
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.17,
+          0.794,
+          0.796,
+          0.874
+        ],
+        "content": "> install.packages(\"dplyr\") # install dplyr if it's not already installed\n> library(dplyr)\n> d_df <- tbl_df(d)\n> d_df\nSource: local data frame [59,140 x 20]"
+      },
+      {
+        "type": "footer",
+        "bbox": [
+          0.566,
+          0.922,
+          0.799,
+          0.939
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Working with and Visualizing Data in R"
+          }
+        ]
+      },
+      {
+        "type": "page_number",
+        "bbox": [
+          0.832,
+          0.923,
+          0.858,
+          0.937
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "243"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "type": "code",
+        "bbox": [
+          0.171,
+          0.081,
+          0.837,
+          0.158
+        ],
+        "content": "start end total.SNPs total.Bases depth unique.SNPs dhSNPs reference.Bases\n1 55001 56000          0       1894 3.41         0      0           556\n2 56001 57000          5       6683 6.68         2      2           1000\n3 57001 58000          1       9063 9.06         1      0           1000\n[...]"
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.171,
+          0.159,
+          0.826,
+          0.205
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Variables not shown: Theta (dbl), Pi (dbl), Heterozygosity (dbl), percent.GC (dbl), Recombination (dbl), Divergence (dbl), Constraint (int), SNPs (int), cent (lgl), diversity (dbl), position (dbl), GC.binned (fctr)"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.175,
+              0.159,
+              0.819,
+              0.174
+            ]
+          },
+          {
+            "bbox": [
+              0.193,
+              0.175,
+              0.823,
+              0.188
+            ]
+          },
+          {
+            "bbox": [
+              0.191,
+              0.19,
+              0.708,
+              0.204
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.214,
+          0.82,
+          0.233
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Let’s start by selecting some columns from d_df using dplyr’s select() function:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.142,
+              0.217,
+              0.818,
+              0.23
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.171,
+          0.243,
+          0.615,
+          0.258
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "> select(d_df, start, end, Pi, Recombination, depth)"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.175,
+              0.245,
+              0.614,
+              0.257
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.171,
+          0.258,
+          0.489,
+          0.273
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Source: local data frame [59,140 x 5]"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.175,
+              0.26,
+              0.488,
+              0.273
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.171,
+          0.289,
+          0.524,
+          0.366
+        ],
+        "content": "    start end     Pi Recombination depth\n1 55001 56000 0.000   0.009601574 3.41\n2 56001 57000 10.354   0.009601574 6.68\n3 57001 58000 1.986   0.009601574 9.06\n[...]"
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.136,
+          0.375,
+          0.86,
+          0.493
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "This is equivalent to d[, c(\"start\", \"end\", \"Pi\", \"Recombination\", \"depth\")], but dplyr uses special evaluation rules that allow you to omit quoting column names in select() (and the returned object is a tbl_df). select() also understands ranges of consecutive columns like select(d_df, start:total.Bases). Additionally, you can drop columns from a dataframe by prepending a negative sign in front of the column name (and this works with ranges too):"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.376,
+              0.856,
+              0.393
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.397,
+              0.858,
+              0.414
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.417,
+              0.856,
+              0.432
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.437,
+              0.856,
+              0.453
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.456,
+              0.855,
+              0.472
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.477,
+              0.513,
+              0.491
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.171,
+          0.502,
+          0.49,
+          0.626
+        ],
+        "content": "> select(d_df, -(start:cent))\nSource: local data frame [59,140 x 3]\n\n    position   GC.binned diversity\n1   55500.5 (51.6,68.5] 0.0000000\n2   56500.5 (34.7,51.6] 0.0010354\n3   57500.5 (34.7,51.6] 0.0001986\n[...]"
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.136,
+          0.634,
+          0.86,
+          0.732
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Similarly, we can select specific rows as we did using dataframe subsetting in “Exploring Data Through Slicing and Dicing: Subsetting Dataframes” on page 203 using the dplyr function filter(). filter() is similar to subsetting dataframes using expressions like d[d$Pi > 16 & d$percent.GC > 80, ], though you can use multiple statements (separated by commas) instead of chaining them with &:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.635,
+              0.854,
+              0.651
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.655,
+              0.856,
+              0.671
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.675,
+              0.856,
+              0.691
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.696,
+              0.855,
+              0.71
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.716,
+              0.705,
+              0.73
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.171,
+          0.742,
+          0.515,
+          0.773
+        ],
+        "content": "> filter(d_df, Pi > 16, percent.GC > 80)\nSource: local data frame [3 x 20]"
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.171,
+          0.788,
+          0.793,
+          0.881
+        ],
+        "content": "start     end total.SNPs total.Bases depth unique.SNPs dhSNPs\n1 63097001 63098000       5       947 2.39        2      1\n2 63188001 63189000       2       1623 3.21        2      0\n3 63189001 63190000       5       1395 1.89        3      2\nVariables not shown: reference.Bases (int), Theta (dbl), Pi (dbl),\n    Heterozygosity (dbl), percent.GC (dbl), Recombination (dbl), Divergence"
+      },
+      {
+        "type": "page_number",
+        "bbox": [
+          0.139,
+          0.923,
+          0.166,
+          0.936
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "244"
+          }
+        ]
+      },
+      {
+        "type": "footer",
+        "bbox": [
+          0.201,
+          0.922,
+          0.5,
+          0.94
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Chapter 8: A Rapid Introduction to the R Language"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "bbox": [
+          0.189,
+          0.081,
+          0.819,
+          0.113
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "(dbl), Constraint (int), SNPs (int), cent (lgl), position (dbl), GC.binned (fctr), diversity (dbl)"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.194,
+              0.083,
+              0.817,
+              0.096
+            ]
+          },
+          {
+            "bbox": [
+              0.194,
+              0.097,
+              0.386,
+              0.11
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.121,
+          0.859,
+          0.16
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "To connect statements with logical OR, you need to use the standard logical operator | we learned about in “Vectors, Vectorization, and Indexing” on page 183."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.142,
+              0.122,
+              0.857,
+              0.138
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.141,
+              0.756,
+              0.158
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.17,
+          0.859,
+          0.208
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "dplyr also simplifies sorting by columns with the function arrange(), which behaves like d[order(d$percent.GC), ]:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.142,
+              0.171,
+              0.856,
+              0.187
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.19,
+              0.42,
+              0.207
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.171,
+          0.218,
+          0.497,
+          0.25
+        ],
+        "content": "> arrange(d_df, depth)\nSource: local data frame [59,140 x 20]"
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.171,
+          0.264,
+          0.754,
+          0.342
+        ],
+        "content": "        start       end total.SNPs total.Bases depth unique.SNPs dhSNPs\n1  1234001 1235000      0          444   1          0     0\n2  1584001 1585000      0          716   1          0     0\n3  2799001 2800000      0          277   1          0     0\n[...]"
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.351,
+          0.859,
+          0.39
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "You can sort a column in descending order using arrange() by wrapping its name in the function desc(). Also, additional columns can be specified to break ties:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.142,
+              0.353,
+              0.857,
+              0.368
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.374,
+              0.775,
+              0.388
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.171,
+          0.4,
+          0.564,
+          0.431
+        ],
+        "content": "> arrange(d_df, desc(total.SNPs), desc(depth))\nSource: local data frame [59,140 x 20]"
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.171,
+          0.446,
+          0.754,
+          0.524
+        ],
+        "content": "        start       end total.SNPs total.Bases depth unique.SNPs dhSNPs\n1   2621001 2622000      93       11337 11.34       13     10\n2  13023001 13024000      88       11784 11.78       11     1\n3  47356001 47357000      87       12505 12.50       9     7\n[...]"
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.533,
+          0.86,
+          0.591
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Using dplyr’s mutate() function, we can add new columns to our dataframe: For example, we added a rescaled version of the Pi column as d$diversity—let’s drop d $diversity using select() and then recalculate it:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.142,
+              0.534,
+              0.858,
+              0.549
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.553,
+              0.856,
+              0.57
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.575,
+              0.57,
+              0.589
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.171,
+          0.601,
+          0.787,
+          0.663
+        ],
+        "content": "> d_df <- select(d_df, -diversity) # remove our earlier diversity column\n> d_df <- mutate(d_df, diversity = Pi/(10*1000))\n> d_df\nSource: local data frame [59,140 x 20]"
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.171,
+          0.678,
+          0.836,
+          0.818
+        ],
+        "content": "start end total.SNPs total.Bases depth unique.SNPs dhSNPs reference.Bases\n1 55001 56000          0       1894 3.41         0      0           556\n2 56001 57000          5       6683 6.68         2      2           1000\n3 57001 58000          1       9063 9.06         1      0           1000\n[...]\n... ... ...     ...     ... ...     ...    ...\nVariables not shown: Theta (dbl), Pi (dbl), Heterozygosity (dbl), percent.GC\n (dbl), Recombination (dbl), Divergence (dbl), Constraint (int), SNPs (int),\n cent (lgl), position (dbl), GC.binned (fctr), diversity (dbl)"
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.826,
+          0.859,
+          0.866
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "mutate() creates new columns by transforming existing columns. You can refer to existing columns directly by name, and not have to use notation like d$Pi."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.139,
+              0.828,
+              0.856,
+              0.843
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.849,
+              0.758,
+              0.863
+            ]
+          }
+        ]
+      },
+      {
+        "type": "footer",
+        "bbox": [
+          0.566,
+          0.923,
+          0.798,
+          0.939
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Working with and Visualizing Data in R"
+          }
+        ]
+      },
+      {
+        "type": "page_number",
+        "bbox": [
+          0.833,
+          0.923,
+          0.858,
+          0.937
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "245"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.081,
+          0.861,
+          0.333
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "So far we’ve been using dplyr to get our dataframes into shape by selecting columns, filtering and arranging rows, and creating new columns. In daily work, you’ll need to use these and other dplyr functions to manipulate and explore your data. While we could assign output after each step to an intermediate variable, it’s easier (and more memory efficient) to chain dplyr operations. One way to do this is to nest functions (e.g., filter(select(hs_df, seqname, start, end, strand), strand == \"+\")). However, reading a series of data manipulation steps from the inside of a function outward is a bit unnatural. To make it easier to read and create data-processing pipelines, dplyr uses %>% (known as pipe) from "
+          },
+          {
+            "type": "hyperlink",
+            "url": "http://github.com/smbache/magrittr",
+            "content": [
+              {
+                "type": "text",
+                "content": "the magrittr package",
+                "styles": []
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "content": ". With these pipes, the lefthand side is passed as the first argument of the righthand side function, so d_df %>% filter(percent.GC > 40) becomes filter(d_df, percent.GC > 40. Using pipes in dplyr allows us to clearly express complex data manipulation operations:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.083,
+              0.856,
+              0.099
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.101,
+              0.856,
+              0.119
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.122,
+              0.856,
+              0.138
+            ]
+          },
+          {
+            "bbox": [
+              0.143,
+              0.141,
+              0.856,
+              0.157
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.161,
+              0.856,
+              0.177
+            ]
+          },
+          {
+            "bbox": [
+              0.143,
+              0.182,
+              0.855,
+              0.196
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.201,
+              0.856,
+              0.216
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.219,
+              0.854,
+              0.236
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.239,
+              0.856,
+              0.255
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.259,
+              0.856,
+              0.273
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.278,
+              0.856,
+              0.294
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.299,
+              0.855,
+              0.314
+            ]
+          },
+          {
+            "bbox": [
+              0.14,
+              0.317,
+              0.192,
+              0.334
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.171,
+          0.344,
+          0.72,
+          0.516
+        ],
+        "content": "> d_df %>% mutate(GC.scaled = scale(percent.GC)) %>%\n        filter(GC.scaled > 4, depth > 4) %>%\n        select(start, end, depth, GC.scaled, percent.GC) %>%\n        arrange(desc(depth))\n\nSource: local data frame [18 x 5]\n    start      end depth GC.scaled percent.GC\n1 62535001 62536000 7.66 4.040263   73.9740\n2 63065001 63066000 6.20 4.229954   75.3754\n3 62492001 62493000 5.25 4.243503   75.4755\n[...]"
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.522,
+          0.859,
+          0.562
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Pipes are a recent innovation, but one that’s been quickly adopted by the R community. You can learn more about magrittr’s pipes in help('%>%')."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.524,
+              0.856,
+              0.54
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.545,
+              0.68,
+              0.559
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.571,
+          0.86,
+          0.65
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "dplyr’s raw power comes from the way it handles grouping and summarizing data. For these examples, let’s use the mtfs dataframe (loaded into R in “Merging and Combining Data: Matching Vectors and Merging Dataframes” on page 219), as it has some nice factor columns we can group by:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.143,
+              0.573,
+              0.855,
+              0.589
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.593,
+              0.854,
+              0.609
+            ]
+          },
+          {
+            "bbox": [
+              0.143,
+              0.613,
+              0.854,
+              0.627
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.631,
+              0.454,
+              0.648
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.172,
+          0.658,
+          0.389,
+          0.675
+        ],
+        "content": "> mtfs_df <- tbl_df(mtfs)"
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.683,
+          0.859,
+          0.723
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Now let’s group by the chromosome column chr. We can group by one or more columns by calling group_by() with their names as arguments:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.139,
+              0.684,
+              0.856,
+              0.701
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.705,
+              0.644,
+              0.721
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.171,
+          0.731,
+          0.754,
+          0.858
+        ],
+        "content": "> mtfs_df %>% group_by(chr)\nSource: local data frame [20,050 x 10]\nGroups: chr\n\n    chr motif_start motif_end     dist recomb_start recomb_end  recom\n1  chrX      35471312 35471325 39323.0     35430651   35433340 0.0015\n2  chrX      35471312 35471325 36977.0     35433339   35435344 0.0015\n[...]"
+      },
+      {
+        "type": "page_number",
+        "bbox": [
+          0.14,
+          0.923,
+          0.166,
+          0.936
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "246"
+          }
+        ]
+      },
+      {
+        "type": "footer",
+        "bbox": [
+          0.201,
+          0.922,
+          0.5,
+          0.94
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Chapter 8: A Rapid Introduction to the R Language"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "bbox": [
+          0.135,
+          0.081,
+          0.861,
+          0.176
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Note that dplyr’s output now includes a line indicating which column(s) the dataset is grouped by. But this hasn’t changed the data; now dplyr’s functions will be applied per group rather than on all data (where applicable). The most common use case is to create summaries as we did with tapply() and aggregate() using the summarize() function:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.083,
+              0.859,
+              0.099
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.103,
+              0.857,
+              0.119
+            ]
+          },
+          {
+            "bbox": [
+              0.14,
+              0.123,
+              0.856,
+              0.138
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.143,
+              0.855,
+              0.158
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.162,
+              0.22,
+              0.176
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.171,
+          0.188,
+          0.794,
+          0.344
+        ],
+        "content": "> mtfs_df %>%\n    group_by(chr) %>%\n    summarize(max_recom = max(recom), mean_recom = mean(recom), num=n())\n\nSource: local data frame [23 x 4]\n    chr max_recom mean_recom num\n1   chr1   41.5648   2.217759 2095\n2   chr10   42.4129   2.162635 1029\n3   chr11   36.1703   2.774918  560\n[...]"
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.352,
+          0.86,
+          0.431
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "dplyr’s summarize() handles passing the relevant column to each function and automatically creates columns with the supplied argument names. Because we’ve grouped this data by chromosome, summarize() computes per-group summaries. Try this same expression without group_by()."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.354,
+              0.855,
+              0.369
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.373,
+              0.855,
+              0.387
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.393,
+              0.857,
+              0.408
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.414,
+              0.458,
+              0.428
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.44,
+          0.86,
+          0.558
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "dplyr provides some convenience functions that are useful in creating summaries. Earlier, we saw that n() returns the number of observations in each group. Similarly, n_distinct() returns the unique number of observations in each group, and first(), last() and nth() return the first, last, and n"
+          },
+          {
+            "type": "text",
+            "content": "th",
+            "styles": [
+              "superscript"
+            ]
+          },
+          {
+            "type": "text",
+            "content": " observations, respectively. These latter three functions are mostly useful on data that has been sorted with arrange() (because specific rows are arbitrary in unsorted data)."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.441,
+              0.856,
+              0.457
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.461,
+              0.856,
+              0.478
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.483,
+              0.857,
+              0.497
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.502,
+              0.854,
+              0.517
+            ]
+          },
+          {
+            "bbox": [
+              0.143,
+              0.521,
+              0.856,
+              0.536
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.542,
+              0.681,
+              0.556
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.567,
+          0.859,
+          0.606
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "We can chain additional operations on these grouped and summarized results; for example, if we wanted to sort by the newly created summary column max_recom:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.142,
+              0.569,
+              0.856,
+              0.584
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.589,
+              0.811,
+              0.602
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.171,
+          0.615,
+          0.831,
+          0.802
+        ],
+        "content": "> mtfs_df %>%\n    group_by(chr) %>%\n    summarize(max_recom = max(recom), mean_recom = mean(recom), num=n()) %>%\n    arrange(desc(max_recom))\n\nSource: local data frame [23 x 4]\n    chr max_recom mean_recom num\n1   chrX  74.0966   2.686840  693\n2   chr8   62.6081   1.913325 1727\n3   chr3   56.2775   1.889585 1409\n4   chr16   54.9638   2.436250  535\n[...]"
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.81,
+          0.861,
+          0.889
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "dplyr has a few other functions we won’t cover in depth: distinct() (which returns only unique values), and sampling functions like sample_n() and sample_frac() (which sample observations). Finally, one of the best features of dplyr is that all of these same methods also work with database connections. For example, you can"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.142,
+              0.811,
+              0.856,
+              0.827
+            ]
+          },
+          {
+            "bbox": [
+              0.143,
+              0.833,
+              0.854,
+              0.847
+            ]
+          },
+          {
+            "bbox": [
+              0.144,
+              0.853,
+              0.857,
+              0.867
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.871,
+              0.857,
+              0.887
+            ]
+          }
+        ]
+      },
+      {
+        "type": "footer",
+        "bbox": [
+          0.566,
+          0.923,
+          0.799,
+          0.94
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Working with and Visualizing Data in R"
+          }
+        ]
+      },
+      {
+        "type": "page_number",
+        "bbox": [
+          0.833,
+          0.923,
+          0.859,
+          0.937
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "247"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "bbox": [
+          0.136,
+          0.08,
+          0.861,
+          0.12
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "manipulate a SQLite database (the subject of Chapter 13) with all of the same verbs we’ve used here. See "
+          },
+          {
+            "type": "hyperlink",
+            "url": "http://bit.ly/dplyr_data",
+            "content": [
+              {
+                "type": "text",
+                "content": "dplyr’s databases vignette",
+                "styles": []
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "content": " for more information on this."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.083,
+              0.856,
+              0.097
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.103,
+              0.779,
+              0.117
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph_title",
+        "bbox": [
+          0.137,
+          0.136,
+          0.361,
+          0.163
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Working with Strings"
+          }
+        ],
+        "level": 2,
+        "lines": [
+          {
+            "bbox": [
+              0.139,
+              0.135,
+              0.361,
+              0.162
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.136,
+          0.169,
+          0.861,
+          0.343
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "In bioinformatics, we often need to extract data from strings. R has several functions to manipulate strings that are handy when working with bioinformatics data in R. Note, however, that for most bioinformatics text-processing tasks, R is not the preferred language to use for a few reasons. First, R works with all data stored in memory; many bioinformatics text-processing tasks are best tackled with the stream-based approaches (discussed in Chapters 3 and 7), which explicitly avoid loading all data in memory at once. Second, R’s string processing functions are admittedly a bit clunky compared to Python’s. Even after using these functions for years, I still have to constantly refer to their documentation pages."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.171,
+              0.856,
+              0.186
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.19,
+              0.855,
+              0.205
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.21,
+              0.855,
+              0.225
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.229,
+              0.856,
+              0.244
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.247,
+              0.857,
+              0.262
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.267,
+              0.856,
+              0.282
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.286,
+              0.855,
+              0.301
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.305,
+              0.856,
+              0.32
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.323,
+              0.496,
+              0.34
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.136,
+          0.35,
+          0.861,
+          0.483
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Despite these limitations, there are many cases when working with strings in R is the best solution. If we’ve already loaded data into R to explore, it’s usually easier to use R’s string processing functions than to write and process data through a separate Python script. In terms of performance, we’ve already incurred the costs of reading data from disk, so it’s unlikely there will be performance gains from using Python or another language. With these considerations in mind, let’s jump into R’s string processing functions."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.142,
+              0.352,
+              0.856,
+              0.367
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.37,
+              0.856,
+              0.386
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.39,
+              0.856,
+              0.406
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.409,
+              0.856,
+              0.424
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.429,
+              0.856,
+              0.444
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.447,
+              0.856,
+              0.463
+            ]
+          },
+          {
+            "bbox": [
+              0.143,
+              0.467,
+              0.291,
+              0.481
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.136,
+          0.492,
+          0.862,
+          0.571
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "First, remember that all strings in R are actually character vectors. Recall that this means a single string like “AGCTAG” has a length of 1 (try length(\"AGCTAG\")). If you want to retrieve the number of characters of each element of a character vector, use nchar(). Like many of R’s functions, nchar() is vectorized:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.142,
+              0.495,
+              0.856,
+              0.509
+            ]
+          },
+          {
+            "bbox": [
+              0.14,
+              0.514,
+              0.859,
+              0.53
+            ]
+          },
+          {
+            "bbox": [
+              0.14,
+              0.533,
+              0.858,
+              0.549
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.554,
+              0.666,
+              0.568
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.17,
+          0.579,
+          0.542,
+          0.612
+        ],
+        "content": "> nchar(c(\"AGCTAG\", \"ATA\", \"GATCTGAG\", \"\"))\n[1] 6 3 8 0"
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.136,
+          0.62,
+          0.861,
+          0.698
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "We can search for patterns in character vectors using either grep() or regexpr(). These functions differ slightly in their behavior, making both useful under different circumstances. The function grep(pattern, x) returns the positions of all elements in x that match pattern:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.62,
+              0.855,
+              0.637
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.641,
+              0.859,
+              0.656
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.662,
+              0.856,
+              0.676
+            ]
+          },
+          {
+            "bbox": [
+              0.14,
+              0.681,
+              0.348,
+              0.696
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.17,
+          0.707,
+          0.641,
+          0.755
+        ],
+        "content": "> re_sites <- c(\"CTGCAG\", \"CGATCG\", \"CAGCTG\", \"CCCACA\")\n> grep(\"CAG\", re_sites)\n[1] 1 3"
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.763,
+          0.859,
+          0.802
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "By default, grep() uses POSIX extended regular expressions, so we could use more sophisticated patterns:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.142,
+              0.765,
+              0.858,
+              0.781
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.785,
+              0.33,
+              0.799
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.171,
+          0.811,
+          0.395,
+          0.843
+        ],
+        "content": "> grep(\"CT[CG]\", re_sites)\n[1] 1 3"
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.851,
+          0.859,
+          0.891
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "grep() and R’s other regular-expression handling functions (which we’ll see later) support Perl Compatible Regular Expressions (PCRE) with the argument perl=TRUE,"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.142,
+              0.854,
+              0.856,
+              0.869
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.875,
+              0.856,
+              0.889
+            ]
+          }
+        ]
+      },
+      {
+        "type": "page_number",
+        "bbox": [
+          0.139,
+          0.923,
+          0.166,
+          0.936
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "248"
+          }
+        ]
+      },
+      {
+        "type": "footer",
+        "bbox": [
+          0.201,
+          0.922,
+          0.5,
+          0.94
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Chapter 8: A Rapid Introduction to the R Language"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "bbox": [
+          0.135,
+          0.081,
+          0.859,
+          0.139
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "and fixed string matching (e.g., not interpreting special characters) with fixed=TRUE. If a regular expression you’re writing isn’t working, it may be using features only available in the more modern PCRE dialect; try enabling PCRE with perl=TRUE."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.14,
+              0.082,
+              0.857,
+              0.1
+            ]
+          },
+          {
+            "bbox": [
+              0.14,
+              0.102,
+              0.854,
+              0.119
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.123,
+              0.807,
+              0.137
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.149,
+          0.861,
+          0.228
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Because grep() is returning indices that match the pattern, grep() is useful as a pattern-matching equivalent of match(). For example, we could use grep() to pull out chromosome 6 entries from a vector of chromosome names with sloppy, inconsistent naming:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.151,
+              0.857,
+              0.168
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.172,
+              0.856,
+              0.187
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.189,
+              0.856,
+              0.206
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.211,
+              0.271,
+              0.225
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.17,
+          0.236,
+          0.794,
+          0.314
+        ],
+        "content": "> chrs <- c(\"chrom6\", \"chr2\", \"chr6\", \"chr4\", \"chr1\", \"chr16\", \" chrom8\")\n> grep(\"[^\\d]6\", chrs, perl=TRUE)\n[1] 1 3\n> chrs[grep(\"[^\\d]6\", chrs, perl=TRUE)]\n[1] \"chrom6\" \"chr6\""
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.322,
+          0.861,
+          0.46
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "There are some subtle details in this example worth discussing. First, we can’t use a simpler regular expression like chrs[grep(\"6\", chrs)] because this would match entries like \"chr16\". We prevent this by writing a restrictive pattern that is any non-numeric character ([^\\\\d]) followed by a 6. Note that we need an additional backslash to escape the backslash in \\d. Finally, \\d is a special symbol available in Perl Compatible Regular Expressions, so we need to specify perl=TRUE. See help(regex) for more information on R’s regular expressions."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.323,
+              0.857,
+              0.34
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.344,
+              0.856,
+              0.359
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.364,
+              0.854,
+              0.379
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.385,
+              0.854,
+              0.399
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.403,
+              0.856,
+              0.419
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.424,
+              0.854,
+              0.439
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.442,
+              0.546,
+              0.459
+            ]
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "bbox": [
+          0.167,
+          0.475,
+          0.255,
+          0.564
+        ],
+        "content": null,
+        "image_base64": "data:image/jpeg;base64,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"
+      },
+      {
+        "type": "paragraph_title",
+        "bbox": [
+          0.267,
+          0.481,
+          0.427,
+          0.498
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "The Double Backslash"
+          }
+        ],
+        "level": 2,
+        "lines": [
+          {
+            "bbox": [
+              0.269,
+              0.482,
+              0.425,
+              0.499
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.266,
+          0.509,
+          0.79,
+          0.614
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "The double backslash is a very important part of writing regular expressions in R. Backslashes don’t represent themselves in R strings (i.e., they are used as escape characters as in \"\\\"quote\\\" string\" or the newline character \\n). To actually include a blackslash in a string, we need to escape the backslash’s special meaning with another backslash."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.271,
+              0.51,
+              0.786,
+              0.526
+            ]
+          },
+          {
+            "bbox": [
+              0.269,
+              0.528,
+              0.786,
+              0.543
+            ]
+          },
+          {
+            "bbox": [
+              0.269,
+              0.547,
+              0.781,
+              0.561
+            ]
+          },
+          {
+            "bbox": [
+              0.271,
+              0.566,
+              0.783,
+              0.579
+            ]
+          },
+          {
+            "bbox": [
+              0.269,
+              0.582,
+              0.786,
+              0.598
+            ]
+          },
+          {
+            "bbox": [
+              0.271,
+              0.601,
+              0.451,
+              0.613
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.639,
+          0.859,
+          0.679
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Unlike grep(), regexpr(pattern, x) returns where in each element of x it matched pattern. If an element doesn’t match the pattern, regexpr() returns –1. For example:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.142,
+              0.641,
+              0.857,
+              0.657
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.66,
+              0.854,
+              0.677
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.171,
+          0.688,
+          0.49,
+          0.78
+        ],
+        "content": "> regexpr(\"[^\\d]6\", chrs, perl=TRUE)\n[1]  5 -1  3 -1 -1 -1 -1\nattr(,\"match.length\")\n[1]  2 -1  2 -1 -1 -1 -1\nattr(,\"useBytes\")\n[1] TRUE"
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.789,
+          0.861,
+          0.868
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "regexpr() also returns the length of the matching string using attributes. We haven’t discussed attributes, but they’re essentially a way to store meta-information alongside objects. You can access attributes with the function attributes(). For more information on regexpr’s output, see help(regexpr)."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.143,
+              0.792,
+              0.856,
+              0.807
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.811,
+              0.856,
+              0.826
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.832,
+              0.854,
+              0.845
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.852,
+              0.521,
+              0.866
+            ]
+          }
+        ]
+      },
+      {
+        "type": "footer",
+        "bbox": [
+          0.566,
+          0.923,
+          0.799,
+          0.939
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Working with and Visualizing Data in R"
+          }
+        ]
+      },
+      {
+        "type": "page_number",
+        "bbox": [
+          0.833,
+          0.923,
+          0.859,
+          0.937
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "249"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "bbox": [
+          0.135,
+          0.081,
+          0.861,
+          0.16
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Clearly, the vector chromosome named chrs is quite messy and needs tidying. One way to do this is to find the informative part of each name with regexpr() and extract this part of the string using substr(). substr(x, start, stop) takes a string x and returns the characters between start and stop:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.142,
+              0.083,
+              0.856,
+              0.1
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.102,
+              0.857,
+              0.119
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.125,
+              0.856,
+              0.139
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.144,
+              0.59,
+              0.158
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.17,
+          0.17,
+          0.642,
+          0.309
+        ],
+        "content": "> pos <- regexr(\"\\\\d+\", chrs, perl=TRUE)\n> pos\n[1] 6 4 4 4 4 4 7\nattr(,\"match.length\")\n[1] 1 1 1 1 1 2 1\nattr(,\"useBytes\")\n[1] TRUE\n> substr(chrs, pos, pos + attributes(pos)$match.length)\n[1] \"6\" \"2\" \"6\" \"4\" \"1\" \"16\" \"8\""
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.318,
+          0.861,
+          0.452
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "While this solution introduced the helpful substr() function, it is fragile code and we can improve upon it. The most serious flaw to this approach is that it isn’t robust to all valid chromosome names. We’ve written code that solves our immediate problem, but may not be robust to data this code may encounter in the future. If our code were rerun on an updated input with chromosomes “chrY” or “chrMt,” our regular expression would fail to match these. While it may seem like a far-fetched case to worry about, consider the following points:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.143,
+              0.32,
+              0.857,
+              0.335
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.34,
+              0.857,
+              0.355
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.359,
+              0.856,
+              0.374
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.378,
+              0.856,
+              0.392
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.397,
+              0.856,
+              0.411
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.416,
+              0.856,
+              0.43
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.435,
+              0.504,
+              0.451
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "bbox": [
+          0.155,
+          0.467,
+          0.856,
+          0.528
+        ],
+        "content": null
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.155,
+          0.467,
+          0.748,
+          0.485
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "• These types of errors can bite you and are time consuming to debug."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.158,
+              0.466,
+              0.748,
+              0.486
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.155,
+          0.492,
+          0.856,
+          0.528
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "• Our code should anticipate biologically realistic input data (like sex and mitochondrial chromosomes)."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.163,
+              0.494,
+              0.856,
+              0.509
+            ]
+          },
+          {
+            "bbox": [
+              0.178,
+              0.514,
+              0.392,
+              0.527
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.545,
+          0.86,
+          0.663
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "We can implement a cleaner, more robust solution with the sub() function. sub() allows us to substitute strings for other strings. Before we continue with our example, let’s learn about sub() through a simple example that doesn’t use regular expressions. sub(pattern, replacement, x) replaces the first occurrence of pattern with replacement for each element in character vector x. Like regexpr() and grep(), sub() supports perl=TRUE and fixed=TRUE:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.143,
+              0.548,
+              0.854,
+              0.563
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.567,
+              0.855,
+              0.582
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.587,
+              0.855,
+              0.602
+            ]
+          },
+          {
+            "bbox": [
+              0.143,
+              0.607,
+              0.856,
+              0.622
+            ]
+          },
+          {
+            "bbox": [
+              0.143,
+              0.628,
+              0.855,
+              0.642
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.648,
+              0.509,
+              0.661
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.17,
+          0.673,
+          0.691,
+          0.72
+        ],
+        "content": "> sub(pattern=\"Watson\", replacement=\"Watson, Franklin\",\n       x=\"Watson and Crick discovered DNA's structure.\")\n[1] \"Watson, Franklin, and Crick discovered DNA's structure.\""
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.728,
+          0.861,
+          0.883
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Here, we’ve replaced the string “Watson” with the string “Watson, Franklin,” using sub(). Fixed text substitution like this works well for some problems, but to tidy our chr vector we want to capture the informative part of chromosome name (e.g., 1, 2, X, Y, or M) and substitute it into a consistent naming scheme (e.g., chr1, chr2, chrX, or chrM). We do this with regular expression capturing groups. If you’re completely unfamiliar with these, do study how they work in other scripting languages you use; capturing groups are extremely useful in bioinformatics string processing tasks. In this case, the parts of our regular expression in parentheses are captured and can be"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.728,
+              0.857,
+              0.747
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.75,
+              0.856,
+              0.766
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.771,
+              0.855,
+              0.786
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.79,
+              0.855,
+              0.805
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.808,
+              0.854,
+              0.824
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.827,
+              0.857,
+              0.844
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.847,
+              0.857,
+              0.862
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.866,
+              0.856,
+              0.882
+            ]
+          }
+        ]
+      },
+      {
+        "type": "page_number",
+        "bbox": [
+          0.14,
+          0.923,
+          0.166,
+          0.936
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "250"
+          }
+        ]
+      },
+      {
+        "type": "footer",
+        "bbox": [
+          0.201,
+          0.922,
+          0.5,
+          0.94
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Chapter 8: A Rapid Introduction to the R Language"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.08,
+          0.859,
+          0.12
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "used later by referencing which group they are. Let’s look at a few simple examples and then use sub() to help tidy our chromosomes:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.082,
+              0.858,
+              0.099
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.103,
+              0.566,
+              0.118
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.171,
+          0.128,
+          0.827,
+          0.3
+        ],
+        "content": "> sub(\"gene=(\\\\w+)\", \"\\\\1\", \"gene=LEAFY\", perl=TRUE) ①\n[1] \"LEAFY\"\n\n> sub(\">[^ ]+ *(.*)\", \"\\\\1\", \">1 length=301354135 type=dna\") ②\n[1] \"length=301354135 type=dna\"\n\n> sub(\".*(\\d+|X|Y|M)\", \"chr\\1\", \"chr19\", perl=TRUE) ③\n[1] \"chr9\"\n\n> sub(\" *[chrom]+(\\d+|X|Y|M) *\" , \"chr\\1\", c(\"chr19\", \"chrY\"), perl=TRUE) ④\n[1] \"chr19\" \"chrY\""
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.317,
+          0.861,
+          0.432
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "1 This line extracts a gene name from a string formatted as gene=<name>. We anchor our expression with gene=, and then use the word character \\\\w. This matches upper- and lowercase letters, digits, and underscores. Note that this regular expression assumes our gene name will only include alphanumeric characters and underscores; depending on the data, this regular expression may need to be changed."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.146,
+              0.319,
+              0.856,
+              0.335
+            ]
+          },
+          {
+            "bbox": [
+              0.177,
+              0.339,
+              0.856,
+              0.354
+            ]
+          },
+          {
+            "bbox": [
+              0.176,
+              0.357,
+              0.854,
+              0.374
+            ]
+          },
+          {
+            "bbox": [
+              0.177,
+              0.377,
+              0.856,
+              0.392
+            ]
+          },
+          {
+            "bbox": [
+              0.177,
+              0.396,
+              0.856,
+              0.411
+            ]
+          },
+          {
+            "bbox": [
+              0.177,
+              0.415,
+              0.277,
+              0.431
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.448,
+          0.861,
+          0.527
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "This expression extracts all text after the first space. This uses a common idiom: specify a character class of characters not to match. In this case, [^ ]+ specifies match all characters that aren’t spaces. Then, match zero or more spaces, and capture one or more of any character (.*)."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.45,
+              0.856,
+              0.466
+            ]
+          },
+          {
+            "bbox": [
+              0.176,
+              0.471,
+              0.856,
+              0.486
+            ]
+          },
+          {
+            "bbox": [
+              0.177,
+              0.491,
+              0.857,
+              0.505
+            ]
+          },
+          {
+            "bbox": [
+              0.176,
+              0.51,
+              0.531,
+              0.525
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.544,
+          0.862,
+          0.679
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Here, we show a common problem with regular expressions and sub(). Our intention was to extract the informative part of a chromosome name like “chr19” (in this case, “19”). However, our regular expression was too greedy. Because the part .* matches zero more of any character, this matches through to the “1” of “chr19.” The “9” is still matched by the rest of the regular expression, captured, and inserted into the replacement string. Note that this error is especially dangerous because it silently makes your data incorrect."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.145,
+              0.545,
+              0.856,
+              0.562
+            ]
+          },
+          {
+            "bbox": [
+              0.176,
+              0.565,
+              0.854,
+              0.581
+            ]
+          },
+          {
+            "bbox": [
+              0.178,
+              0.584,
+              0.856,
+              0.6
+            ]
+          },
+          {
+            "bbox": [
+              0.176,
+              0.604,
+              0.858,
+              0.62
+            ]
+          },
+          {
+            "bbox": [
+              0.179,
+              0.623,
+              0.856,
+              0.64
+            ]
+          },
+          {
+            "bbox": [
+              0.178,
+              0.644,
+              0.855,
+              0.659
+            ]
+          },
+          {
+            "bbox": [
+              0.178,
+              0.663,
+              0.585,
+              0.678
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.695,
+          0.862,
+          0.81
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "4 This expression can be used to clean up the messy chromosome name data. Both “chr” and “chrom” (as well as other combinations of these characters) are matched. The informative part of each chromosome name is captured, and replaced into the string “chr” to give each entry a consistent name. We’re assuming that we only have numeric, X, Y, and mitochondrion (M) chromosomes in this example."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.145,
+              0.697,
+              0.856,
+              0.713
+            ]
+          },
+          {
+            "bbox": [
+              0.176,
+              0.714,
+              0.858,
+              0.733
+            ]
+          },
+          {
+            "bbox": [
+              0.176,
+              0.735,
+              0.857,
+              0.751
+            ]
+          },
+          {
+            "bbox": [
+              0.177,
+              0.755,
+              0.856,
+              0.771
+            ]
+          },
+          {
+            "bbox": [
+              0.176,
+              0.774,
+              0.858,
+              0.789
+            ]
+          },
+          {
+            "bbox": [
+              0.177,
+              0.793,
+              0.288,
+              0.809
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "bbox": [
+          0.137,
+          0.317,
+          0.862,
+          0.81
+        ],
+        "content": null
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.819,
+          0.861,
+          0.896
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Parsing inconsistent naming is always a daily struggle for bioinformaticians. Inconsistent naming isn’t usually a problem with genome data resources like Ensembl or the UCSC Genome Browser; these resources are well curated and consistent. Data input by humans is often the cause of problems, and unfortunately, no regular expres‐"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.821,
+              0.856,
+              0.837
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.84,
+              0.856,
+              0.856
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.859,
+              0.856,
+              0.875
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.878,
+              0.856,
+              0.894
+            ]
+          }
+        ]
+      },
+      {
+        "type": "footer",
+        "bbox": [
+          0.566,
+          0.923,
+          0.799,
+          0.939
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Working with and Visualizing Data in R"
+          }
+        ]
+      },
+      {
+        "type": "page_number",
+        "bbox": [
+          0.833,
+          0.923,
+          0.858,
+          0.937
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "251"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.08,
+          0.861,
+          0.138
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "sion can handle all errors a human can make when inputting data. Our best strategy is to try to write general parsers and explicitly test that parsed values make sense (see the following tip)."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.082,
+              0.856,
+              0.099
+            ]
+          },
+          {
+            "bbox": [
+              0.14,
+              0.102,
+              0.857,
+              0.117
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.12,
+              0.291,
+              0.137
+            ]
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "bbox": [
+          0.167,
+          0.153,
+          0.255,
+          0.242
+        ],
+        "content": null,
+        "image_base64": "data:image/jpeg;base64,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"
+      },
+      {
+        "type": "paragraph_title",
+        "bbox": [
+          0.267,
+          0.159,
+          0.506,
+          0.178
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Friendly Functions for Loud Code"
+          }
+        ],
+        "level": 2,
+        "lines": [
+          {
+            "bbox": [
+              0.269,
+              0.161,
+              0.504,
+              0.176
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.266,
+          0.187,
+          0.79,
+          0.365
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "The Golden Rule of Bioinformatics is to not trust your data (or tools). We can be proactive about this in code by using functions like stopifnot(), stop() warning(), and message() that stop execution or let the user know of issues that occur when running code. The function stopifnot() errors out if any of its arguments don’t evaluate to TRUE. warning() and message() don’t stop execution, but pass warnings and messages to users. Occasionally, it’s useful to turn R warnings into errors so that they stop execution. We can enable this behavior with options(warn=2) (and set options(warn=0) to return to the default)."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.271,
+              0.188,
+              0.785,
+              0.202
+            ]
+          },
+          {
+            "bbox": [
+              0.271,
+              0.207,
+              0.785,
+              0.22
+            ]
+          },
+          {
+            "bbox": [
+              0.27,
+              0.225,
+              0.785,
+              0.239
+            ]
+          },
+          {
+            "bbox": [
+              0.271,
+              0.243,
+              0.784,
+              0.256
+            ]
+          },
+          {
+            "bbox": [
+              0.271,
+              0.261,
+              0.786,
+              0.274
+            ]
+          },
+          {
+            "bbox": [
+              0.27,
+              0.278,
+              0.786,
+              0.293
+            ]
+          },
+          {
+            "bbox": [
+              0.271,
+              0.297,
+              0.785,
+              0.31
+            ]
+          },
+          {
+            "bbox": [
+              0.27,
+              0.314,
+              0.786,
+              0.328
+            ]
+          },
+          {
+            "bbox": [
+              0.27,
+              0.331,
+              0.789,
+              0.347
+            ]
+          },
+          {
+            "bbox": [
+              0.271,
+              0.35,
+              0.595,
+              0.364
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.389,
+          0.861,
+          0.468
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Another useful function is paste(), which constructs strings by “pasting” together the parts. paste() takes any number of arguments and concatenates them together using the separating string specified by the sep argument (which is a space by default). Like many of R’s functions, paste() is vectorized:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.142,
+              0.39,
+              0.856,
+              0.408
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.412,
+              0.856,
+              0.427
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.432,
+              0.855,
+              0.448
+            ]
+          },
+          {
+            "bbox": [
+              0.143,
+              0.452,
+              0.629,
+              0.466
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.171,
+          0.478,
+          0.818,
+          0.54
+        ],
+        "content": "> paste(\"chr\", c(1:22, \"X\", \"Y\"), sep=\"\")\n[1] \"chr1\"  \"chr2\"  \"chr3\"  \"chr4\"  \"chr5\"  \"chr6\"  \"chr7\"  \"chr8\"  \"chr9\"\n[10] \"chr10\"  \"chr11\"  \"chr12\"  \"chr13\"  \"chr14\"  \"chr15\"  \"chr16\"  \"chr17\"  \"chr18\"\n[19] \"chr19\"  \"chr20\"  \"chr21\"  \"chr22\"  \"chrX\"  \"chrY\""
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.549,
+          0.86,
+          0.608
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Here, paste() pasted together the first vector (chr) and second vector (the autosome and sex chromosome names), recycling the shorter vector chr. paste() can also paste all these results together into a single string (see paste()’s argument collapse)."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.142,
+              0.551,
+              0.855,
+              0.565
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.571,
+              0.857,
+              0.586
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.59,
+              0.804,
+              0.607
+            ]
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "bbox": [
+          0.167,
+          0.624,
+          0.255,
+          0.712
+        ],
+        "content": null,
+        "image_base64": "data:image/jpeg;base64,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"
+      },
+      {
+        "type": "paragraph_title",
+        "bbox": [
+          0.267,
+          0.629,
+          0.559,
+          0.648
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Extracting Multiple Values from a String"
+          }
+        ],
+        "level": 2,
+        "lines": [
+          {
+            "bbox": [
+              0.271,
+              0.631,
+              0.556,
+              0.647
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.266,
+          0.657,
+          0.788,
+          0.728
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "For some strings, like “chr10:158395-172881,” we might want to extract several chunks. Processing the same string many times to extract different parts is not efficient. A better solution is to combine sub() and strsplit():"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.269,
+              0.659,
+              0.786,
+              0.673
+            ]
+          },
+          {
+            "bbox": [
+              0.27,
+              0.677,
+              0.786,
+              0.691
+            ]
+          },
+          {
+            "bbox": [
+              0.271,
+              0.695,
+              0.785,
+              0.708
+            ]
+          },
+          {
+            "bbox": [
+              0.269,
+              0.713,
+              0.487,
+              0.727
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.3,
+          0.735,
+          0.71,
+          0.844
+        ],
+        "content": "> region <- \"chr10:158395-172881\"\n> chunks <- sub(\"(chr[\\d+MYX]+):(\\d+)-(\\d+)\",\n              \"\\\\1;;\\2;;\\3\",\n              region, perl=TRUE)\n> strsplit(chunks, \";;\")\n[[1]]\n[1] \"chr10\"  \"158395\" \"172881\""
+      },
+      {
+        "type": "page_number",
+        "bbox": [
+          0.14,
+          0.923,
+          0.166,
+          0.937
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "252"
+          }
+        ]
+      },
+      {
+        "type": "footer",
+        "bbox": [
+          0.201,
+          0.922,
+          0.5,
+          0.94
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Chapter 8: A Rapid Introduction to the R Language"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "bbox": [
+          0.135,
+          0.081,
+          0.861,
+          0.18
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "The final function essential to string processing in R is strsplit(x, split), which splits string x by split. Like R’s other string processing functions, strsplit() supports optional perl and fixed arguments. For example, if we had a string like gene=LEAFY;locus=2159208;gene_model=AT5G61850.1 and we wished to extract each part, we’d need to split by “;”:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.142,
+              0.083,
+              0.856,
+              0.1
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.103,
+              0.854,
+              0.119
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.124,
+              0.856,
+              0.138
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.144,
+              0.857,
+              0.158
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.163,
+              0.427,
+              0.177
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.171,
+          0.188,
+          0.743,
+          0.253
+        ],
+        "content": "> leafy <- \"gene=LEAFY;locus=2159208;gene_model=AT5G61850.1\"\n> strsplit(leafy, \";\")\n[[1]]\n[1] \"gene=LEAFY\"      \"locus=2159208\"      \"gene_model=AT5G61850.1\""
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.26,
+          0.86,
+          0.318
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Also, like all of R’s other string functions, strsplit() is vectorized, so it can process entire character vectors at once. Because the number of split chunks can vary, strsplit() always returns results in a list."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.142,
+              0.261,
+              0.858,
+              0.278
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.282,
+              0.857,
+              0.297
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.302,
+              0.496,
+              0.316
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph_title",
+        "bbox": [
+          0.138,
+          0.336,
+          0.596,
+          0.366
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Developing Workflows with R Scripts"
+          }
+        ],
+        "level": 2,
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.335,
+              0.596,
+              0.365
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.374,
+          0.86,
+          0.451
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "In the last part of this section, we’ll focus on some topics that will help you develop the data analysis techniques we’ve learned so far into reusable workflows stored in scripts. We’ll look at control flow, R scripts, workflows for working with many files, and exporting data."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.376,
+              0.855,
+              0.392
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.396,
+              0.857,
+              0.411
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.415,
+              0.857,
+              0.43
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.435,
+              0.303,
+              0.45
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph_title",
+        "bbox": [
+          0.137,
+          0.467,
+          0.451,
+          0.492
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Control Flow: if, for, and while"
+          }
+        ],
+        "level": 2,
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.467,
+              0.449,
+              0.49
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.136,
+          0.5,
+          0.86,
+          0.616
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "You might have noticed that we’ve come this far in the chapter without using any control flow statements common in other languages, such as if, for, or while. Many data analysis tasks in R don’t require modifying control flow, and we can avoid using loops by using R’s apply functions like lapply(), sapply(), and mapply(). Still, there are some circumstances where we need these classic control flow and looping statements. The basic syntax of if, for, and while are:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.5,
+              0.856,
+              0.52
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.523,
+              0.856,
+              0.538
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.542,
+              0.856,
+              0.557
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.562,
+              0.856,
+              0.577
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.581,
+              0.855,
+              0.596
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.601,
+              0.556,
+              0.616
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.171,
+          0.626,
+          0.449,
+          0.829
+        ],
+        "content": "if (x == some_value) {\n    # do some stuff in here\n} else {\n    # else is optional\n}\n\nfor (element in some_vector) {\n    # iteration happens here\n}\n\nwhile (something_is_true) {\n    # do some stuff\n}"
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.837,
+          0.859,
+          0.876
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "You can break out of for and while loops with a break statement, and advance loops to the next iteration with next. If you do find you need loops in your R code, read the"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.142,
+              0.84,
+              0.854,
+              0.854
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.86,
+              0.856,
+              0.874
+            ]
+          }
+        ]
+      },
+      {
+        "type": "footer",
+        "bbox": [
+          0.578,
+          0.922,
+          0.799,
+          0.939
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Developing Workflows with R Scripts"
+          }
+        ]
+      },
+      {
+        "type": "page_number",
+        "bbox": [
+          0.833,
+          0.923,
+          0.858,
+          0.937
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "253"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.08,
+          0.858,
+          0.117
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "additional notes about loops and pre-allocation in this chapter’s README on Git‐Hub."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.139,
+              0.081,
+              0.856,
+              0.099
+            ]
+          },
+          {
+            "bbox": [
+              0.139,
+              0.1,
+              0.186,
+              0.118
+            ]
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "bbox": [
+          0.167,
+          0.134,
+          0.255,
+          0.222
+        ],
+        "content": null,
+        "image_base64": "data:image/jpeg;base64,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"
+      },
+      {
+        "type": "paragraph_title",
+        "bbox": [
+          0.268,
+          0.14,
+          0.428,
+          0.159
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Iterating over Vectors"
+          }
+        ],
+        "level": 2,
+        "lines": [
+          {
+            "bbox": [
+              0.27,
+              0.141,
+              0.426,
+              0.157
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.267,
+          0.169,
+          0.721,
+          0.186
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "In for loops, it’s common to create a vector of indexes like:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.269,
+              0.17,
+              0.719,
+              0.186
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.301,
+          0.193,
+          0.526,
+          0.24
+        ],
+        "content": "for (i in 1:length(vec)) {\n    # do something\n}"
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.266,
+          0.246,
+          0.789,
+          0.317
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "However, there’s a subtle gotcha here—if the vector vec has no elements, it’s length is 0, and 1:0 would return the sequence 1, 0. The behavior we want is for the loop to not be evaluated at all. R provides the function seq_along() to handle this situation safely:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.271,
+              0.248,
+              0.784,
+              0.261
+            ]
+          },
+          {
+            "bbox": [
+              0.269,
+              0.266,
+              0.785,
+              0.279
+            ]
+          },
+          {
+            "bbox": [
+              0.27,
+              0.284,
+              0.784,
+              0.297
+            ]
+          },
+          {
+            "bbox": [
+              0.271,
+              0.303,
+              0.743,
+              0.316
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.3,
+          0.324,
+          0.786,
+          0.417
+        ],
+        "content": "> vec <- rnorm(3)\n> seq_along(vec)\n[1] 1 2 3\n> seq_along(numeric(0)) # numeric(0) returns an empty\n                                # numeric vector\ninteger(0)"
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.266,
+          0.422,
+          0.787,
+          0.459
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "seq_len(length.out) is a similar function, which returns a sequence length.out elements long."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.271,
+              0.424,
+              0.787,
+              0.438
+            ]
+          },
+          {
+            "bbox": [
+              0.268,
+              0.442,
+              0.55,
+              0.458
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.481,
+          0.86,
+          0.542
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "R also has a vectorized version of if: the ifelse function. Rather than control program flow, ifelse(test, yes, no) returns the yes value for all TRUE cases of test, and no for all FALSE cases. For example:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.142,
+              0.484,
+              0.854,
+              0.499
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.505,
+              0.856,
+              0.518
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.524,
+              0.471,
+              0.539
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.17,
+          0.55,
+          0.363,
+          0.598
+        ],
+        "content": "> x <- c(-3, 1, -5, 2)\n> ifelse(x < 0, -1, 1)\n[1] -1 1 -1 1"
+      },
+      {
+        "type": "paragraph_title",
+        "bbox": [
+          0.138,
+          0.612,
+          0.376,
+          0.639
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Working with R Scripts"
+          }
+        ],
+        "level": 2,
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.613,
+              0.376,
+              0.637
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.646,
+          0.86,
+          0.76
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Although we’ve learned R interactively though examples in this chapter, in practice your analyses should be kept in scripts that can be run many times throughout development. Scripts can be organized into project directories (see Chapter 2) and checked into Git repositories (see Chapter 5). There’s also a host of excellent R tools to help in creating well-documented, reproducible projects in R; see the following sidebar for examples."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.142,
+              0.647,
+              0.857,
+              0.663
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.667,
+              0.854,
+              0.682
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.686,
+              0.856,
+              0.701
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.705,
+              0.857,
+              0.721
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.724,
+              0.856,
+              0.74
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.743,
+              0.226,
+              0.759
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph_title",
+        "bbox": [
+          0.287,
+          0.789,
+          0.711,
+          0.814
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Reproducibility with Knitr and Rmarkdown"
+          }
+        ],
+        "level": 2,
+        "lines": [
+          {
+            "bbox": [
+              0.288,
+              0.79,
+              0.709,
+              0.811
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.153,
+          0.819,
+          0.845,
+          0.894
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "For our work to be reproducible (and to make our lives easier if we need to revisit code in the future), it’s essential that our code is saved, version controlled, and well documented. Although in-code comments are a good form of documentation, R has two related packages that go a step further and create reproducible project reports:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.157,
+              0.821,
+              0.841,
+              0.836
+            ]
+          },
+          {
+            "bbox": [
+              0.159,
+              0.84,
+              0.84,
+              0.854
+            ]
+          },
+          {
+            "bbox": [
+              0.159,
+              0.859,
+              0.84,
+              0.873
+            ]
+          },
+          {
+            "bbox": [
+              0.159,
+              0.876,
+              0.839,
+              0.89
+            ]
+          }
+        ]
+      },
+      {
+        "type": "page_number",
+        "bbox": [
+          0.14,
+          0.923,
+          0.166,
+          0.936
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "254"
+          }
+        ]
+      },
+      {
+        "type": "footer",
+        "bbox": [
+          0.201,
+          0.922,
+          0.5,
+          0.94
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Chapter 8: A Rapid Introduction to the R Language"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "bbox": [
+          0.152,
+          0.081,
+          0.845,
+          0.246
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "knitr and Rmarkdown. Both packages allow you to integrate chunks of R code into your text documents (such as a lab notebook or manuscript), so you can describe your data and analysis steps. Then, you can render (also known as “knit”) your document, which runs all R code and outputs the result in a variety of formats such as HTML or PDF (using LaTeX). Images, tables, and other output created by your R code will also appear in your finalized rendered document. Each document greatly improves reproducibility by integrating code and explanation (an approach inspired by Donald Knuth’s literate programming, which was discussed in “Unix Data Tools and the Unix One-Liner Approach: Lessons from Programming Pearls” on page 125)."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.158,
+              0.083,
+              0.84,
+              0.099
+            ]
+          },
+          {
+            "bbox": [
+              0.156,
+              0.101,
+              0.839,
+              0.116
+            ]
+          },
+          {
+            "bbox": [
+              0.157,
+              0.12,
+              0.839,
+              0.134
+            ]
+          },
+          {
+            "bbox": [
+              0.158,
+              0.138,
+              0.841,
+              0.152
+            ]
+          },
+          {
+            "bbox": [
+              0.157,
+              0.155,
+              0.841,
+              0.171
+            ]
+          },
+          {
+            "bbox": [
+              0.159,
+              0.175,
+              0.84,
+              0.189
+            ]
+          },
+          {
+            "bbox": [
+              0.157,
+              0.193,
+              0.84,
+              0.207
+            ]
+          },
+          {
+            "bbox": [
+              0.158,
+              0.211,
+              0.839,
+              0.226
+            ]
+          },
+          {
+            "bbox": [
+              0.159,
+              0.228,
+              0.834,
+              0.243
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.153,
+          0.253,
+          0.844,
+          0.329
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "While we don’t have the space to cover these packages in this chapter, both are easy to learn on your own with resources online. If you’re just beginning R, I’d recommend starting with Rmarkdown. Rmarkdown is well integrated into RStudio and is very easy to use. R code is simply woven between Markdown text using a simple syntax:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.159,
+              0.254,
+              0.841,
+              0.27
+            ]
+          },
+          {
+            "bbox": [
+              0.158,
+              0.274,
+              0.839,
+              0.288
+            ]
+          },
+          {
+            "bbox": [
+              0.158,
+              0.293,
+              0.841,
+              0.307
+            ]
+          },
+          {
+            "bbox": [
+              0.159,
+              0.312,
+              0.756,
+              0.326
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.186,
+          0.337,
+          0.668,
+          0.368
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "The following code draws 100 random normally distributed value and finds their mean:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.192,
+              0.339,
+              0.666,
+              0.352
+            ]
+          },
+          {
+            "bbox": [
+              0.191,
+              0.354,
+              0.421,
+              0.367
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.189,
+          0.382,
+          0.321,
+          0.453
+        ],
+        "content": "```{r}\nset.seed(0)\nx <- rnorm(100)\nmean(x)\n..."
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.154,
+          0.469,
+          0.844,
+          0.526
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Then, you can save and call Rmarkdown’s render() on this file—creating an HTML version containing the documentation, code, and the results of the R block between {r} and ```. There are numerous other options; the best introductions are:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.159,
+              0.472,
+              0.839,
+              0.486
+            ]
+          },
+          {
+            "bbox": [
+              0.157,
+              0.49,
+              0.841,
+              0.503
+            ]
+          },
+          {
+            "bbox": [
+              0.184,
+              0.509,
+              0.783,
+              0.523
+            ]
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "bbox": [
+          0.174,
+          0.54,
+          0.466,
+          0.607
+        ],
+        "content": null
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.174,
+          0.54,
+          0.437,
+          0.556
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "• "
+          },
+          {
+            "type": "hyperlink",
+            "url": "http://bit.ly/rstudio-rmkdwn",
+            "content": [
+              {
+                "type": "text",
+                "content": "RStudio’s Rmarkdown tutorial",
+                "styles": []
+              }
+            ]
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.179,
+              0.541,
+              0.434,
+              0.556
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.174,
+          0.564,
+          0.465,
+          0.581
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "• "
+          },
+          {
+            "type": "hyperlink",
+            "url": "http://kbroman.org/knitr_knutshell/",
+            "content": [
+              {
+                "type": "text",
+                "content": "Karl Broman’s knitr in a knutshell",
+                "styles": []
+              }
+            ]
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.179,
+              0.567,
+              0.461,
+              0.58
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.174,
+          0.588,
+          0.414,
+          0.606
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "• "
+          },
+          {
+            "type": "hyperlink",
+            "url": "http://yihui.name/knitr/demo/minimal/",
+            "content": [
+              {
+                "type": "text",
+                "content": "Minimal Examples of Knitr",
+                "styles": []
+              }
+            ]
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.179,
+              0.59,
+              0.411,
+              0.604
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.646,
+          0.859,
+          0.684
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "You can run R scripts from R using the function source(). For example, to execute an R script named my_analysis.R use:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.648,
+              0.857,
+              0.663
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.668,
+              0.454,
+              0.682
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.171,
+          0.693,
+          0.388,
+          0.71
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "> source",
+            "styles": [
+              "bold"
+            ]
+          },
+          {
+            "type": "text",
+            "content": "(\"my_analysis.R\")"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.174,
+              0.696,
+              0.387,
+              0.709
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.717,
+          0.861,
+          0.871
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "As discussed in “Loading Data into R” on page 194, it’s important to mind R’s working directory. Scripts should not use setwd() to set their working directory, as this is not portable to other systems (which won’t have the same directory structure). For the same reason, use relative paths like data/achievers.txt when loading in data, and not absolute paths like /Users/jlebowski/data/achievers.txt (as point also made in “Project Directories and Directory Structures” on page 21). Also, it’s a good idea to indicate (either in comments or a README file) which directory the user should set as their working directory."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.143,
+              0.718,
+              0.854,
+              0.735
+            ]
+          },
+          {
+            "bbox": [
+              0.143,
+              0.74,
+              0.856,
+              0.755
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.759,
+              0.856,
+              0.773
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.778,
+              0.857,
+              0.792
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.796,
+              0.856,
+              0.811
+            ]
+          },
+          {
+            "bbox": [
+              0.143,
+              0.816,
+              0.856,
+              0.832
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.835,
+              0.857,
+              0.85
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.854,
+              0.363,
+              0.87
+            ]
+          }
+        ]
+      },
+      {
+        "type": "footer",
+        "bbox": [
+          0.578,
+          0.923,
+          0.798,
+          0.939
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Developing Workflows with R Scripts"
+          }
+        ]
+      },
+      {
+        "type": "page_number",
+        "bbox": [
+          0.833,
+          0.923,
+          0.858,
+          0.937
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "255"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "bbox": [
+          0.138,
+          0.08,
+          0.825,
+          0.099
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Alternatively, we can execute a script in batch mode from the command line with:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.081,
+              0.822,
+              0.098
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.171,
+          0.109,
+          0.457,
+          0.126
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "$ Rscript --vanilla my_analysis.R"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.174,
+              0.111,
+              0.455,
+              0.125
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.133,
+          0.861,
+          0.287
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "This comes in handy when you need to rerun an analysis on different files or with different arguments provided on the command line. I recommend using --vanilla because by default, Rscript will restore any past saved environments and save its current environment after the execution completes. Usually we don’t want R to restore any past state from previous runs, as this can lead to irreproducible results (because how a script runs depends on files only on your machine). Additionally, saved environments can make it a nightmare to debug a script. See R --help for more information."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.133,
+              0.856,
+              0.151
+            ]
+          },
+          {
+            "bbox": [
+              0.143,
+              0.155,
+              0.856,
+              0.171
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.174,
+              0.856,
+              0.19
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.194,
+              0.857,
+              0.21
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.214,
+              0.856,
+              0.229
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.232,
+              0.856,
+              0.248
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.253,
+              0.856,
+              0.268
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.272,
+              0.249,
+              0.286
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph_title",
+        "bbox": [
+          0.336,
+          0.317,
+          0.661,
+          0.341
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Reproducibility and sessionInfo()"
+          }
+        ],
+        "level": 2,
+        "lines": [
+          {
+            "bbox": [
+              0.337,
+              0.317,
+              0.659,
+              0.342
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.153,
+          0.347,
+          0.845,
+          0.459
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Versions of R and any R packages installed change over time. This can lead to reproducibility headaches, as the results of your analyses may change with the changing version of R and R packages. Solving these issues is an area of ongoing development (see, for example, "
+          },
+          {
+            "type": "hyperlink",
+            "url": "http://rstudio.github.io/packrat/",
+            "content": [
+              {
+                "type": "text",
+                "content": "the packrat package",
+                "styles": []
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "content": "). At the very least, you should always record the versions of R and any packages you use for an analysis. R actually makes this incredibly easy to do—just call the sessionInfo() function:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.159,
+              0.349,
+              0.839,
+              0.365
+            ]
+          },
+          {
+            "bbox": [
+              0.158,
+              0.367,
+              0.841,
+              0.384
+            ]
+          },
+          {
+            "bbox": [
+              0.159,
+              0.387,
+              0.84,
+              0.401
+            ]
+          },
+          {
+            "bbox": [
+              0.16,
+              0.405,
+              0.84,
+              0.42
+            ]
+          },
+          {
+            "bbox": [
+              0.159,
+              0.423,
+              0.84,
+              0.438
+            ]
+          },
+          {
+            "bbox": [
+              0.159,
+              0.442,
+              0.636,
+              0.456
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.186,
+          0.467,
+          0.795,
+          0.702
+        ],
+        "content": "> sessionInfo()\nR version 3.1.2 (2014-10-31)\nPlatform: x86_64-apple-darwin14.0.0 (64-bit)\n\nlocale:\n[1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8\n[...]\n\nloaded via a namespace (and not attached):\n [1] assertthat_0.1    colorspace_1.2-4 DBI_0.3.1      digest_0.6.4\n [5] gtable_0.1.2     labeling_0.3      lattice_0.20-29 lazyeval_0.1.10\n[17] scales_0.2.4     stringr_0.6.2      tools_3.1.2\n\n[...]"
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.73,
+          0.86,
+          0.788
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Lastly, if you want to retrieve command-line arguments passed to your script, use R’s commandArgs() with trailingOnly=TRUE. For example, this simple R script just prints all arguments:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.142,
+              0.733,
+              0.855,
+              0.747
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.752,
+              0.858,
+              0.768
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.772,
+              0.316,
+              0.786
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.17,
+          0.798,
+          0.635,
+          0.845
+        ],
+        "content": "## args.R -- a simple script to show command line args\nargs <- commandArgs(TRUE)\nprint(args)"
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.139,
+          0.853,
+          0.288,
+          0.87
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "We run this with:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.14,
+              0.852,
+              0.287,
+              0.871
+            ]
+          }
+        ]
+      },
+      {
+        "type": "page_number",
+        "bbox": [
+          0.14,
+          0.923,
+          0.166,
+          0.936
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "256"
+          }
+        ]
+      },
+      {
+        "type": "footer",
+        "bbox": [
+          0.201,
+          0.922,
+          0.5,
+          0.94
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Chapter 8: A Rapid Introduction to the R Language"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "type": "text",
+        "bbox": [
+          0.171,
+          0.081,
+          0.524,
+          0.096
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "$ Rscript --vanilla args.R arg1 arg2 arg3"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.174,
+              0.083,
+              0.522,
+              0.096
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.171,
+          0.097,
+          0.379,
+          0.112
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "[1] \"arg1\" \"arg2\" \"arg3\""
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.174,
+              0.097,
+              0.381,
+              0.112
+            ]
+          }
+        ]
+      },
+      {
+        "type": "paragraph_title",
+        "bbox": [
+          0.137,
+          0.127,
+          0.68,
+          0.154
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Workflows for Loading and Combining Multiple Files"
+          }
+        ],
+        "level": 2,
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.128,
+              0.678,
+              0.152
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.136,
+          0.161,
+          0.861,
+          0.316
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "In bioinformatics projects, sometimes loading data into R can be half the battle. Loading data is nontrivial whenever data resides in large files and when it’s scattered across many files. We’ve seen some tricks to deal with large files in “Loading Data into R” on page 194 and we’ll see a different approach to this problem when we cover databases in Chapter 13. In this section, we’ll learn some strategies and workflows for loading and combining multiple files. These workflows tie together many of the R tools we’ve learned so far: lapply(), do.call(), rbind(), and string functions like sub()."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.163,
+              0.854,
+              0.178
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.182,
+              0.856,
+              0.197
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.201,
+              0.856,
+              0.217
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.22,
+              0.859,
+              0.236
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.239,
+              0.856,
+              0.255
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.259,
+              0.857,
+              0.274
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.279,
+              0.855,
+              0.294
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.298,
+              0.199,
+              0.315
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.324,
+          0.861,
+          0.42
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Let’s step through how to load and combine multiple tab-delimited files in a directory. Suppose you have a directory containing genome-wide hotspot data separated into different files by chromosome. Data split across many files is a common result of pipelines that have been parallelized by chromosome. I’ve created example data of this nature in this chapter’s GitHub repository under the hotspots/ directory:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.142,
+              0.325,
+              0.854,
+              0.342
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.346,
+              0.857,
+              0.361
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.364,
+              0.859,
+              0.38
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.384,
+              0.859,
+              0.398
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.402,
+              0.777,
+              0.419
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.171,
+          0.43,
+          0.735,
+          0.539
+        ],
+        "content": "$ ls -l hotspots\n[vinceb]% ls -l hotspots\ntotal 1160\n-rw-r--r-- 1 vinceb staff 42041 Feb 11 13:54 hotspots_chr1.bed\n-rw-r--r-- 1 vinceb staff 26310 Feb 11 13:54 hotspots_chr10.bed\n-rw-r--r-- 1 vinceb staff 24760 Feb 11 13:54 hotspots_chr11.bed\n[...]"
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.545,
+          0.86,
+          0.681
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "The first step to loading this data into R is to programmatically access these files from R. If your project uses a well-organized directory structure and consistent filenames (see Chapter 2), this is easy. R’s function list.files() lists all files in a specific directory. Optionally, list.files() takes a regular-expression pattern used to select matching files. In general, it’s wise to use this pattern argument to be as restrictive as possible so as to prevent problems if a file accidentally ends up in your data directory. For example, to load in all chromosomes’ .bed files:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.143,
+              0.547,
+              0.857,
+              0.563
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.567,
+              0.857,
+              0.582
+            ]
+          },
+          {
+            "bbox": [
+              0.143,
+              0.587,
+              0.855,
+              0.602
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.607,
+              0.858,
+              0.622
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.627,
+              0.857,
+              0.642
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.646,
+              0.856,
+              0.662
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.665,
+              0.568,
+              0.68
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.171,
+          0.691,
+          0.742,
+          0.753
+        ],
+        "content": "> list.files(\"hotspots\", pattern=\"hotspots.*\\\\.bed\")\n[1] \"hotspots_chr1.bed\"  \"hotspots_chr10.bed\" \"hotspots_chr11.bed\"\n[4] \"hotspots_chr12.bed\" \"hotspots_chr13.bed\" \"hotspots_chr14.bed\"\n[...]"
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.762,
+          0.859,
+          0.817
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Note that our regular expression needs to use two backslashes to escape the period in the .bed extension. list.files() also has an argument that returns full relative paths to each file:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.764,
+              0.856,
+              0.779
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.783,
+              0.856,
+              0.799
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.802,
+              0.239,
+              0.818
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.17,
+          0.829,
+          0.861,
+          0.877
+        ],
+        "content": "> hs_files <- list.files(\"hotspots\", pattern=\"hotspots.*\\\\.bed\", full.names=TRUE)\n> hs_files\n[1] \"hotspots/hotspots_chr1.bed\"  \"hotspots/hotspots_chr10.bed\""
+      },
+      {
+        "type": "footer",
+        "bbox": [
+          0.578,
+          0.923,
+          0.798,
+          0.939
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Developing Workflows with R Scripts"
+          }
+        ]
+      },
+      {
+        "type": "page_number",
+        "bbox": [
+          0.833,
+          0.923,
+          0.858,
+          0.937
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "257"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "type": "code",
+        "bbox": [
+          0.174,
+          0.08,
+          0.717,
+          0.113
+        ],
+        "content": "[3] \"hotspots/hotspots_chr11.bed\" \"hotspots/hotspots_chr12.bed\"\n[...]"
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.121,
+          0.856,
+          0.16
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "We’ll use the hs_files vector because it includes the path to each file. list.files() has other useful arguments; see help(list.files) for more information."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.122,
+              0.854,
+              0.139
+            ]
+          },
+          {
+            "bbox": [
+              0.14,
+              0.143,
+              0.754,
+              0.158
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.17,
+          0.859,
+          0.209
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "With list.files() programmatically listing our files, it’s then easy to lapply() a function that loads each file in. For example:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.171,
+              0.859,
+              0.189
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.19,
+              0.514,
+              0.207
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.171,
+          0.218,
+          0.783,
+          0.358
+        ],
+        "content": "> bedcols <- c(\"chr\", \"start\", \"end\")\n> loadFile <- function(x) read.delim(x, header=FALSE, col.names=bedcols)\n> hs <- lapply(hs_files, loadFile)\n> head(hs[[1]])\n    chr   start     end\n1 chr1 1138865 1161866\n2 chr1 2173749 2179750\n3 chr1 2246749 2253750\n[...]"
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.365,
+          0.859,
+          0.403
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Often, it’s useful to name each list item with the filename (sans full path). For example:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.141,
+              0.366,
+              0.858,
+              0.383
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.386,
+              0.221,
+              0.403
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.171,
+          0.413,
+          0.725,
+          0.43
+        ],
+        "content": "> names(hs) <- list.files(\"hotspots\", pattern=\"hotspots.*\\\\.bed\")"
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.138,
+          0.438,
+          0.7,
+          0.457
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Now, we can use do.call() and rbind to merge this data together:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.14,
+              0.439,
+              0.699,
+              0.457
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.171,
+          0.466,
+          0.516,
+          0.59
+        ],
+        "content": "> hsd <- do.call(rbind, hs)\n> head(hsd)\n                  chr  start   end\nhotspots_chr1.bed.1 chr1 1138865 1161866\nhotspots_chr1.bed.2 chr1 2173749 2179750\nhotspots_chr1.bed.3 chr1 2246749 2253750\n[...]\n> row.names(hsd) <- NULL"
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.6,
+          0.859,
+          0.638
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "rbind() has created some row names for us (which aren’t too helpful), but you can remove them with row.names(hsd) <- NULL."
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.142,
+              0.601,
+              0.858,
+              0.617
+            ]
+          },
+          {
+            "bbox": [
+              0.139,
+              0.62,
+              0.522,
+              0.637
+            ]
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "bbox": [
+          0.137,
+          0.647,
+          0.861,
+          0.803
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Often, we need to include a column in our dataframe containing meta-information about files that’s stored in each file’s filename. For example, if you had to load in multiple samples’ data like sampleA_repl01.txt, sampleA_repl02.txt, …, sampleC_repl01.txt you will likely want to extract the sample name and replicate information and attach these as columns in your dataframe. As a simple example of this, let’s pretend we did not have the column chr in our hotspot files and needed to extract this information from each filename using sub(). We’ll modify our load File() function accordingly:"
+          }
+        ],
+        "lines": [
+          {
+            "bbox": [
+              0.143,
+              0.649,
+              0.857,
+              0.664
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.668,
+              0.854,
+              0.684
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.686,
+              0.857,
+              0.705
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.706,
+              0.856,
+              0.722
+            ]
+          },
+          {
+            "bbox": [
+              0.141,
+              0.726,
+              0.859,
+              0.741
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.746,
+              0.856,
+              0.761
+            ]
+          },
+          {
+            "bbox": [
+              0.142,
+              0.766,
+              0.854,
+              0.781
+            ]
+          },
+          {
+            "bbox": [
+              0.14,
+              0.783,
+              0.386,
+              0.803
+            ]
+          }
+        ]
+      },
+      {
+        "type": "code",
+        "bbox": [
+          0.172,
+          0.812,
+          0.75,
+          0.891
+        ],
+        "content": "loadFile <- function(x) {\n  # read in a BED file, extract the chromosome name from the file,\n  # and add it as a column\n  df <- read.delim(x, header=FALSE, col.names=bedcols)\n  df\\$chr_name <- sub(\"hotspots_([^\\\\.]+)\\.bed\", \"\\\\1\", basename(x))"
+      },
+      {
+        "type": "page_number",
+        "bbox": [
+          0.14,
+          0.923,
+          0.166,
+          0.936
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "258"
+          }
+        ]
+      },
+      {
+        "type": "footer",
+        "bbox": [
+          0.201,
+          0.922,
+          0.5,
+          0.94
+        ],
+        "content": [
+          {
+            "type": "text",
+            "content": "Chapter 8: A Rapid Introduction to the R Language"
+          }
+        ]
+      }
+    ]
+  ],
+  "page_index_map": [
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287
+  ]
+}

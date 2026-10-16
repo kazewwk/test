@@ -1,0 +1,1308 @@
+{
+  "id": "07_bioinformatics-data-skills",
+  "title": "Bioinformatics Data Skills_",
+  "original_name": "Bioinformatics Data Skills_ (z-library.sk, 1lib.sk, z-lib.sk).pdf",
+  "source_name": "bioinformatics-data-skills.pdf",
+  "source_size": 8263777,
+  "source_sha256": "d2b476902ca8490240152247ce45627e75cc853f247c287a6597f4fcf31ad4e1",
+  "download_url": "https://github.com/kazewwk/test/releases/download/biology-textbooks-2026-10-16/bioinformatics-data-skills.pdf",
+  "pages": 538,
+  "toc": [
+    [
+      1,
+      "Copyright",
+      4
+    ],
+    [
+      1,
+      "Table of Contents",
+      7
+    ],
+    [
+      1,
+      "Preface",
+      15
+    ],
+    [
+      2,
+      "The Approach of This Book",
+      16
+    ],
+    [
+      2,
+      "Why This Book Focuses on Sequencing Data",
+      17
+    ],
+    [
+      2,
+      "Audience",
+      17
+    ],
+    [
+      2,
+      "The Difficulty Level of Bioinformatics Data Skills",
+      18
+    ],
+    [
+      2,
+      "Assumptions This Book Makes",
+      18
+    ],
+    [
+      2,
+      "Supplementary Material on GitHub",
+      21
+    ],
+    [
+      2,
+      "Computing Resources and Setup",
+      21
+    ],
+    [
+      2,
+      "Organization of This Book",
+      22
+    ],
+    [
+      2,
+      "Code Conventions",
+      24
+    ],
+    [
+      2,
+      "Conventions Used in This Book",
+      24
+    ],
+    [
+      2,
+      "Using Code Examples",
+      25
+    ],
+    [
+      2,
+      "Safari® Books Online",
+      25
+    ],
+    [
+      2,
+      "How to Contact Us",
+      26
+    ],
+    [
+      2,
+      "Acknowledgments",
+      26
+    ],
+    [
+      1,
+      "Part I. Ideology: Data Skills for Robust and Reproducible Bioinformatics",
+      29
+    ],
+    [
+      1,
+      "Chapter 1. How to Learn Bioinformatics",
+      31
+    ],
+    [
+      2,
+      "Why Bioinformatics? Biology’s Growing Data",
+      31
+    ],
+    [
+      2,
+      "Learning Data Skills to Learn Bioinformatics",
+      34
+    ],
+    [
+      2,
+      "New Challenges for Reproducible and Robust Research",
+      35
+    ],
+    [
+      2,
+      "Reproducible Research",
+      36
+    ],
+    [
+      2,
+      "Robust Research and the Golden Rule of Bioinformatics",
+      38
+    ],
+    [
+      2,
+      "Adopting Robust and Reproducible Practices Will Make Your Life Easier, Too",
+      39
+    ],
+    [
+      2,
+      "Recommendations for Robust Research",
+      40
+    ],
+    [
+      3,
+      "Pay Attention to Experimental Design",
+      40
+    ],
+    [
+      3,
+      "Write Code for Humans, Write Data for Computers",
+      41
+    ],
+    [
+      3,
+      "Let Your Computer Do the Work For You",
+      42
+    ],
+    [
+      3,
+      "Make Assertions and Be Loud, in Code and in Your Methods",
+      42
+    ],
+    [
+      3,
+      "Test Code, or Better Yet, Let Code Test Code",
+      43
+    ],
+    [
+      3,
+      "Use Existing Libraries Whenever Possible",
+      44
+    ],
+    [
+      3,
+      "Treat Data as Read-Only",
+      44
+    ],
+    [
+      3,
+      "Spend Time Developing Frequently Used Scripts into Tools",
+      45
+    ],
+    [
+      3,
+      "Let Data Prove That It’s High Quality",
+      45
+    ],
+    [
+      2,
+      "Recommendations for Reproducible Research",
+      46
+    ],
+    [
+      3,
+      "Release Your Code and Data",
+      46
+    ],
+    [
+      3,
+      "Document Everything",
+      46
+    ],
+    [
+      3,
+      "Make Figures and Statistics the Results of Scripts",
+      47
+    ],
+    [
+      3,
+      "Use Code as Documentation",
+      47
+    ],
+    [
+      2,
+      "Continually Improving Your Bioinformatics Data Skills",
+      47
+    ],
+    [
+      1,
+      "Part II. Prerequisites: Essential Skills for Getting Started with a Bioinformatics Project",
+      49
+    ],
+    [
+      1,
+      "Chapter 2. Setting Up and Managing a Bioinformatics Project",
+      51
+    ],
+    [
+      2,
+      "Project Directories and Directory Structures",
+      51
+    ],
+    [
+      2,
+      "Project Documentation",
+      54
+    ],
+    [
+      2,
+      "Use Directories to Divide Up Your Project into Subprojects",
+      56
+    ],
+    [
+      2,
+      "Organizing Data to Automate File Processing Tasks",
+      56
+    ],
+    [
+      2,
+      "Markdown for Project Notebooks",
+      61
+    ],
+    [
+      3,
+      "Markdown Formatting Basics",
+      61
+    ],
+    [
+      3,
+      "Using Pandoc to Render Markdown to HTML",
+      65
+    ],
+    [
+      1,
+      "Chapter 3. Remedial Unix Shell",
+      67
+    ],
+    [
+      2,
+      "Why Do We Use Unix in Bioinformatics? Modularity and the Unix Philosophy",
+      67
+    ],
+    [
+      2,
+      "Working with Streams and Redirection",
+      71
+    ],
+    [
+      3,
+      "Redirecting Standard Out to a File",
+      71
+    ],
+    [
+      3,
+      "Redirecting Standard Error",
+      73
+    ],
+    [
+      3,
+      "Using Standard Input Redirection",
+      75
+    ],
+    [
+      2,
+      "The Almighty Unix Pipe: Speed and Beauty in One",
+      75
+    ],
+    [
+      3,
+      "Pipes in Action: Creating Simple Programs with Grep and Pipes",
+      77
+    ],
+    [
+      3,
+      "Combining Pipes and Redirection",
+      78
+    ],
+    [
+      3,
+      "Even More Redirection: A tee in Your Pipe",
+      79
+    ],
+    [
+      2,
+      "Managing and Interacting with Processes",
+      80
+    ],
+    [
+      3,
+      "Background Processes",
+      80
+    ],
+    [
+      3,
+      "Killing Processes",
+      81
+    ],
+    [
+      3,
+      "Exit Status: How to Programmatically Tell Whether Your Command Worked",
+      82
+    ],
+    [
+      2,
+      "Command Substitution",
+      84
+    ],
+    [
+      1,
+      "Chapter 4. Working with Remote Machines",
+      87
+    ],
+    [
+      2,
+      "Connecting to Remote Machines with SSH",
+      87
+    ],
+    [
+      2,
+      "Quick Authentication with SSH Keys",
+      89
+    ],
+    [
+      2,
+      "Maintaining Long-Running Jobs with nohup and tmux",
+      91
+    ],
+    [
+      3,
+      "nohup",
+      91
+    ],
+    [
+      2,
+      "Working with Remote Machines Through Tmux",
+      91
+    ],
+    [
+      3,
+      "Installing and Configuring Tmux",
+      92
+    ],
+    [
+      3,
+      "Creating, Detaching, and Attaching Tmux Sessions",
+      92
+    ],
+    [
+      3,
+      "Working with Tmux Windows",
+      94
+    ],
+    [
+      1,
+      "Chapter 5. Git for Scientists",
+      97
+    ],
+    [
+      2,
+      "Why Git Is Necessary in Bioinformatics Projects",
+      98
+    ],
+    [
+      3,
+      "Git Allows You to Keep Snapshots of Your Project",
+      98
+    ],
+    [
+      3,
+      "Git Helps You Keep Track of Important Changes to Code",
+      99
+    ],
+    [
+      3,
+      "Git Helps Keep Software Organized and Available After People Leave",
+      99
+    ],
+    [
+      2,
+      "Installing Git",
+      100
+    ],
+    [
+      2,
+      "Basic Git: Creating Repositories, Tracking Files, and Staging and Committing Changes",
+      100
+    ],
+    [
+      3,
+      "Git Setup: Telling Git Who You Are",
+      100
+    ],
+    [
+      3,
+      "git init and git clone: Creating Repositories",
+      100
+    ],
+    [
+      3,
+      "Tracking Files in Git: git add and git status Part I",
+      102
+    ],
+    [
+      3,
+      "Staging Files in Git: git add and git status Part II",
+      103
+    ],
+    [
+      3,
+      "git commit: Taking a Snapshot of Your Project",
+      106
+    ],
+    [
+      3,
+      "Seeing File Differences: git diff",
+      107
+    ],
+    [
+      3,
+      "Seeing Your Commit History: git log",
+      109
+    ],
+    [
+      3,
+      "Moving and Removing Files: git mv and git rm",
+      110
+    ],
+    [
+      3,
+      "Telling Git What to Ignore: .gitignore",
+      111
+    ],
+    [
+      3,
+      "Undoing a Stage: git reset",
+      113
+    ],
+    [
+      2,
+      "Collaborating with Git: Git Remotes, git push, and git pull",
+      113
+    ],
+    [
+      3,
+      "Creating a Shared Central Repository with GitHub",
+      116
+    ],
+    [
+      3,
+      "Authenticating with Git Remotes",
+      117
+    ],
+    [
+      3,
+      "Connecting with Git Remotes: git remote",
+      117
+    ],
+    [
+      3,
+      "Pushing Commits to a Remote Repository with git push",
+      118
+    ],
+    [
+      3,
+      "Pulling Commits from a Remote Repository with git pull",
+      119
+    ],
+    [
+      3,
+      "Working with Your Collaborators: Pushing and Pulling",
+      120
+    ],
+    [
+      3,
+      "Merge Conflicts",
+      122
+    ],
+    [
+      3,
+      "More GitHub Workflows: Forking and Pull Requests",
+      127
+    ],
+    [
+      2,
+      "Using Git to Make Life Easier: Working with Past Commits",
+      127
+    ],
+    [
+      3,
+      "Getting Files from the Past: git checkout",
+      127
+    ],
+    [
+      3,
+      "Stashing Your Changes: git stash",
+      129
+    ],
+    [
+      3,
+      "More git diff: Comparing Commits and Files",
+      130
+    ],
+    [
+      3,
+      "Undoing and Editing Commits: git commit --amend",
+      132
+    ],
+    [
+      2,
+      "Working with Branches",
+      132
+    ],
+    [
+      3,
+      "Creating and Working with Branches: git branch and git checkout",
+      133
+    ],
+    [
+      3,
+      "Merging Branches: git merge",
+      135
+    ],
+    [
+      3,
+      "Branches and Remotes",
+      136
+    ],
+    [
+      2,
+      "Continuing Your Git Education",
+      138
+    ],
+    [
+      1,
+      "Chapter 6. Bioinformatics Data",
+      139
+    ],
+    [
+      2,
+      "Retrieving Bioinformatics Data",
+      140
+    ],
+    [
+      3,
+      "Downloading Data with wget and curl",
+      140
+    ],
+    [
+      3,
+      "Rsync and Secure Copy (scp)",
+      143
+    ],
+    [
+      2,
+      "Data Integrity",
+      144
+    ],
+    [
+      3,
+      "SHA and MD5 Checksums",
+      145
+    ],
+    [
+      2,
+      "Looking at Differences Between Data",
+      146
+    ],
+    [
+      2,
+      "Compressing Data and Working with Compressed Data",
+      148
+    ],
+    [
+      3,
+      "gzip",
+      149
+    ],
+    [
+      3,
+      "Working with Gzipped Compressed Files",
+      150
+    ],
+    [
+      2,
+      "Case Study: Reproducibly Downloading Data",
+      150
+    ],
+    [
+      1,
+      "Part III. Practice: Bioinformatics Data Skills",
+      153
+    ],
+    [
+      1,
+      "Chapter 7. Unix Data Tools",
+      155
+    ],
+    [
+      2,
+      "Unix Data Tools and the Unix One-Liner Approach: Lessons from Programming Pearls",
+      155
+    ],
+    [
+      2,
+      "When to Use the Unix Pipeline Approach and How to Use It Safely",
+      157
+    ],
+    [
+      2,
+      "Inspecting and Manipulating Text Data with Unix Tools",
+      158
+    ],
+    [
+      3,
+      "Inspecting Data with Head and Tail",
+      159
+    ],
+    [
+      3,
+      "less",
+      161
+    ],
+    [
+      3,
+      "Plain-Text Data Summary Information with wc, ls, and awk",
+      164
+    ],
+    [
+      3,
+      "Working with Column Data with cut and Columns",
+      168
+    ],
+    [
+      3,
+      "Formatting Tabular Data with column",
+      169
+    ],
+    [
+      3,
+      "The All-Powerful Grep",
+      170
+    ],
+    [
+      3,
+      "Decoding Plain-Text Data: hexdump",
+      175
+    ],
+    [
+      3,
+      "Sorting Plain-Text Data with Sort",
+      177
+    ],
+    [
+      3,
+      "Finding Unique Values in Uniq",
+      182
+    ],
+    [
+      3,
+      "Join",
+      185
+    ],
+    [
+      3,
+      "Text Processing with Awk",
+      187
+    ],
+    [
+      3,
+      "Bioawk: An Awk for Biological Formats",
+      193
+    ],
+    [
+      3,
+      "Stream Editing with Sed",
+      195
+    ],
+    [
+      2,
+      "Advanced Shell Tricks",
+      199
+    ],
+    [
+      3,
+      "Subshells",
+      199
+    ],
+    [
+      3,
+      "Named Pipes and Process Substitution",
+      201
+    ],
+    [
+      2,
+      "The Unix Philosophy Revisited",
+      203
+    ],
+    [
+      1,
+      "Chapter 8. A Rapid Introduction to the R Language",
+      205
+    ],
+    [
+      2,
+      "Getting Started with R and RStudio",
+      206
+    ],
+    [
+      2,
+      "R Language Basics",
+      208
+    ],
+    [
+      3,
+      "Simple Calculations in R, Calling Functions, and Getting Help in R",
+      208
+    ],
+    [
+      3,
+      "Variables and Assignment",
+      212
+    ],
+    [
+      3,
+      "Vectors, Vectorization, and Indexing",
+      213
+    ],
+    [
+      2,
+      "Working with and Visualizing Data in R",
+      223
+    ],
+    [
+      3,
+      "Loading Data into R",
+      224
+    ],
+    [
+      3,
+      "Exploring and Transforming Dataframes",
+      229
+    ],
+    [
+      3,
+      "Exploring Data Through Slicing and Dicing: Subsetting Dataframes",
+      233
+    ],
+    [
+      3,
+      "Exploring Data Visually with ggplot2 I: Scatterplots and Densities",
+      237
+    ],
+    [
+      3,
+      "Exploring Data Visually with ggplot2 II: Smoothing",
+      243
+    ],
+    [
+      3,
+      "Binning Data with cut() and Bar Plots with ggplot2",
+      245
+    ],
+    [
+      3,
+      "Merging and Combining Data: Matching Vectors and Merging Dataframes",
+      249
+    ],
+    [
+      3,
+      "Using ggplot2 Facets",
+      254
+    ],
+    [
+      3,
+      "More R Data Structures: Lists",
+      258
+    ],
+    [
+      3,
+      "Writing and Applying Functions to Lists with lapply() and sapply()",
+      261
+    ],
+    [
+      3,
+      "Working with the Split-Apply-Combine Pattern",
+      269
+    ],
+    [
+      3,
+      "Exploring Dataframes with dplyr",
+      273
+    ],
+    [
+      3,
+      "Working with Strings",
+      278
+    ],
+    [
+      2,
+      "Developing Workflows with R Scripts",
+      283
+    ],
+    [
+      3,
+      "Control Flow: if, for, and while",
+      283
+    ],
+    [
+      3,
+      "Working with R Scripts",
+      284
+    ],
+    [
+      3,
+      "Workflows for Loading and Combining Multiple Files",
+      287
+    ],
+    [
+      3,
+      "Exporting Data",
+      290
+    ],
+    [
+      2,
+      "Further R Directions and Resources",
+      291
+    ],
+    [
+      1,
+      "Chapter 9. Working with Range Data",
+      293
+    ],
+    [
+      2,
+      "A Crash Course in Genomic Ranges and Coordinate Systems",
+      294
+    ],
+    [
+      2,
+      "An Interactive Introduction to Range Data with GenomicRanges",
+      299
+    ],
+    [
+      3,
+      "Installing and Working with Bioconductor Packages",
+      299
+    ],
+    [
+      3,
+      "Storing Generic Ranges with IRanges",
+      300
+    ],
+    [
+      3,
+      "Basic Range Operations: Arithmetic, Transformations, and Set Operations",
+      305
+    ],
+    [
+      3,
+      "Finding Overlapping Ranges",
+      311
+    ],
+    [
+      3,
+      "Finding Nearest Ranges and Calculating Distance",
+      320
+    ],
+    [
+      3,
+      "Run Length Encoding and Views",
+      322
+    ],
+    [
+      3,
+      "Storing Genomic Ranges with GenomicRanges",
+      329
+    ],
+    [
+      3,
+      "Grouping Data with GRangesList",
+      333
+    ],
+    [
+      3,
+      "Working with Annotation Data: GenomicFeatures and rtracklayer",
+      338
+    ],
+    [
+      3,
+      "Retrieving Promoter Regions: Flank and Promoters",
+      344
+    ],
+    [
+      3,
+      "Retrieving Promoter Sequence: Connection GenomicRanges with Sequence Data",
+      345
+    ],
+    [
+      3,
+      "Getting Intergenic and Intronic Regions: Gaps, Reduce, and Setdiffs in Practice",
+      349
+    ],
+    [
+      3,
+      "Finding and Working with Overlapping Ranges",
+      354
+    ],
+    [
+      3,
+      "Calculating Coverage of GRanges Objects",
+      357
+    ],
+    [
+      2,
+      "Working with Ranges Data on the Command Line with BEDTools",
+      359
+    ],
+    [
+      3,
+      "Computing Overlaps with BEDTools Intersect",
+      360
+    ],
+    [
+      3,
+      "BEDTools Slop and Flank",
+      363
+    ],
+    [
+      3,
+      "Coverage with BEDTools",
+      365
+    ],
+    [
+      3,
+      "Other BEDTools Subcommands and pybedtools",
+      366
+    ],
+    [
+      1,
+      "Chapter 10. Working with Sequence Data",
+      369
+    ],
+    [
+      2,
+      "The FASTA Format",
+      369
+    ],
+    [
+      2,
+      "The FASTQ Format",
+      371
+    ],
+    [
+      2,
+      "Nucleotide Codes",
+      373
+    ],
+    [
+      2,
+      "Base Qualities",
+      374
+    ],
+    [
+      2,
+      "Example: Inspecting and Trimming Low-Quality Bases",
+      376
+    ],
+    [
+      2,
+      "A FASTA/FASTQ Parsing Example: Counting Nucleotides",
+      379
+    ],
+    [
+      2,
+      "Indexed FASTA Files",
+      382
+    ],
+    [
+      1,
+      "Chapter 11. Working with Alignment Data",
+      385
+    ],
+    [
+      2,
+      "Getting to Know Alignment Formats: SAM and BAM",
+      386
+    ],
+    [
+      3,
+      "The SAM Header",
+      386
+    ],
+    [
+      3,
+      "The SAM Alignment Section",
+      389
+    ],
+    [
+      3,
+      "Bitwise Flags",
+      390
+    ],
+    [
+      3,
+      "CIGAR Strings",
+      393
+    ],
+    [
+      3,
+      "Mapping Qualities",
+      395
+    ],
+    [
+      2,
+      "Command-Line Tools for Working with Alignments in the SAM Format",
+      395
+    ],
+    [
+      3,
+      "Using samtools view to Convert between SAM and BAM",
+      395
+    ],
+    [
+      3,
+      "Samtools Sort and Index",
+      397
+    ],
+    [
+      3,
+      "Extracting and Filtering Alignments with samtools view",
+      398
+    ],
+    [
+      2,
+      "Visualizing Alignments with samtools tview and the Integrated Genomics Viewer",
+      402
+    ],
+    [
+      3,
+      "Pileups with samtools pileup, Variant Calling, and Base Alignment Quality",
+      408
+    ],
+    [
+      2,
+      "Creating Your Own SAM/BAM Processing Tools with Pysam",
+      414
+    ],
+    [
+      3,
+      "Opening BAM Files, Fetching Alignments from a Region, and Iterating Across Reads",
+      414
+    ],
+    [
+      3,
+      "Extracting SAM/BAM Header Information from an AlignmentFile Object",
+      417
+    ],
+    [
+      3,
+      "Working with AlignedSegment Objects",
+      418
+    ],
+    [
+      3,
+      "Writing a Program to Record Alignment Statistics",
+      421
+    ],
+    [
+      3,
+      "Additional Pysam Features and Other SAM/BAM APIs",
+      424
+    ],
+    [
+      1,
+      "Chapter 12. Bioinformatics Shell Scripting, Writing Pipelines, and Parallelizing Tasks",
+      425
+    ],
+    [
+      2,
+      "Basic Bash Scripting",
+      426
+    ],
+    [
+      3,
+      "Writing and Running Robust Bash Scripts",
+      426
+    ],
+    [
+      3,
+      "Variables and Command Arguments",
+      428
+    ],
+    [
+      3,
+      "Conditionals in a Bash Script: if Statements",
+      431
+    ],
+    [
+      3,
+      "Processing Files with Bash Using for Loops and Globbing",
+      435
+    ],
+    [
+      2,
+      "Automating File-Processing with find and xargs",
+      441
+    ],
+    [
+      3,
+      "Using find and xargs",
+      441
+    ],
+    [
+      3,
+      "Finding Files with find",
+      442
+    ],
+    [
+      3,
+      "find’s Expressions",
+      443
+    ],
+    [
+      3,
+      "find’s -exec: Running Commands on find’s Results",
+      445
+    ],
+    [
+      3,
+      "xargs: A Unix Powertool",
+      446
+    ],
+    [
+      3,
+      "Using xargs with Replacement Strings to Apply Commands to Files",
+      448
+    ],
+    [
+      3,
+      "xargs and Parallelization",
+      449
+    ],
+    [
+      2,
+      "Make and Makefiles: Another Option for Pipelines",
+      451
+    ],
+    [
+      1,
+      "Chapter 13. Out-of-Memory Approaches: Tabix and SQLite",
+      455
+    ],
+    [
+      2,
+      "Fast Access to Indexed Tab-Delimited Files with BGZF and Tabix",
+      455
+    ],
+    [
+      3,
+      "Compressing Files for Tabix with Bgzip",
+      456
+    ],
+    [
+      3,
+      "Indexing Files with Tabix",
+      457
+    ],
+    [
+      3,
+      "Using Tabix",
+      457
+    ],
+    [
+      2,
+      "Introducing Relational Databases Through SQLite",
+      458
+    ],
+    [
+      3,
+      "When to Use Relational Databases in Bioinformatics",
+      459
+    ],
+    [
+      3,
+      "Installing SQLite",
+      461
+    ],
+    [
+      3,
+      "Exploring SQLite Databases with the Command-Line Interface",
+      461
+    ],
+    [
+      3,
+      "Querying Out Data: The Almighty SELECT Command",
+      464
+    ],
+    [
+      3,
+      "SQLite Functions",
+      471
+    ],
+    [
+      3,
+      "SQLite Aggregate Functions",
+      472
+    ],
+    [
+      3,
+      "Subqueries",
+      477
+    ],
+    [
+      3,
+      "Organizing Relational Databases and Joins",
+      478
+    ],
+    [
+      3,
+      "Writing to Databases",
+      485
+    ],
+    [
+      3,
+      "Dropping Tables and Deleting Databases",
+      488
+    ],
+    [
+      3,
+      "Interacting with SQLite from Python",
+      489
+    ],
+    [
+      3,
+      "Dumping Databases",
+      495
+    ],
+    [
+      1,
+      "Chapter 14. Conclusion",
+      497
+    ],
+    [
+      2,
+      "Where to Go From Here?",
+      498
+    ],
+    [
+      1,
+      "Glossary",
+      501
+    ],
+    [
+      1,
+      "Bibliography",
+      509
+    ],
+    [
+      1,
+      "Index",
+      513
+    ],
+    [
+      1,
+      "About the Author",
+      538
+    ]
+  ],
+  "sample_text_lengths": {
+    "1": 97,
+    "2": 2218,
+    "9": 4454,
+    "21": 2588,
+    "41": 2884,
+    "61": 2711
+  },
+  "ocr_mode": "auto",
+  "course_folder": "书籍/20261016",
+  "status": "pending"
+}

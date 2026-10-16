@@ -1,0 +1,3575 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Bioinformatics Data Skills",
+      "authors": [
+        "Vince Buffalo"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "created_at": "2015-06-30T16:29:18Z",
+      "modified_at": "2015-06-30T13:45:47-04:00",
+      "creator_application": "AH CSS Formatter V6.2 MR4 for Linux64 : 6.2.6.18551 (2014/09/24 15:00JST)",
+      "producer_application": "Antenna House PDF Output Library 6.2.609 (Linux64)",
+      "page_count": 538,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 224,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 225,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 226,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 227,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 228,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 229,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 230,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 231,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 232,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 233,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 234,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 235,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 236,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 237,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 238,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 239,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 224,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.136,
+            0.08,
+            0.861,
+            0.138
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For all examples in this chapter, I’ll assume R’s working directory is this chapter’s directory in the book’s GitHub repository. We’ll come back to working directories again when we discuss R scripts in “Working with R Scripts” on page 254."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.147,
+            0.861,
+            0.243
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Next, it’s wise to first inspect a file from the command line before loading it into R. This will give you a sense of the column delimiter being used, whether there are comment lines (e.g., lines that don’t contain data and begin with a character like #), and if the first line is a header containing column names. Either head or less work well for this:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 2,
+          "bbox": [
+            0.17,
+            0.254,
+            0.717,
+            0.318
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 2,
+              "bbox": [
+                0.17,
+                0.254,
+                0.717,
+                0.318
+              ],
+              "content": "$ head -n 3 Dataset_S1.txt\nstart,end,total SNPs,total Bases,depth,unique SNPs,dhSNPs, [...] \n55001,56000,0,1894,3.41,0,0, [...] \n56001,57000,5,6683,6.68,2,2, [...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "csv"
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.324,
+            0.861,
+            0.478
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "From this, we see Dataset_S1.txt is a comma-separated value file with a header. If you explore this file in more detail with less, you’ll notice this data is tidy and organized. Each column represents a single variable (e.g., window start position, window end position, percent GC, etc.) and each row represents an observation (in this case, the values for a particular 1kb window). Loading tidy plain-text data like Dataset_S1.txt requires little effort, so you can quickly get started working with it. Your R scripts should organize data in a similar tidy fashion (and in a format like tab-delimited or CSV), as it’s much easier to work with tidy data using Unix tools and R."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.189,
+            0.506,
+            0.809,
+            0.531
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Large Genomics Data into R: colClasses, Compression, and More"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.153,
+            0.536,
+            0.845,
+            0.719
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "It’s quite common to encounter genomics datasets that are difficult to load into R because they’re large files. This is either because it takes too long to load the entire dataset into R, or your machine simply doesn’t have enough memory. In many cases, the best strategy is to reduce the size of your data somehow: summarizing data in earlier processing steps, omitting unnecessary columns, splitting your data into chunks (e.g., working with a chromosome at a time), or working on a random subset of your data. Many bioinformatics analyses do not require working on an entire genomic dataset at once, so these strategies can work quite well. These approaches are also the only way to work with data that is truly too large to fit in your machine’s memory (apart from getting a machine with more memory)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.153,
+            0.726,
+            0.846,
+            0.894
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "If your data will fit in your machine’s memory, it’s still possible that loading the data into R may be quite slow. There are a few tricks to make the read.csv() and read.delim() functions load large data files more quickly. First, we could explicitly set the class of each column through the colClasses argument. This saves R time (usually making the R’s data reading functions twice as fast), as it takes R time to figure out what type of class a column has and convert between classes. If your dataset has columns you don’t need in your analysis (and unnecessarily take up memory), you can set their value in the colClasses vector to \"NULL\" (in quotes) to force R to skip them."
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 7,
+          "bbox": [
+            0.566,
+            0.923,
+            0.799,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Working with and Visualizing Data in R"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 8,
+          "bbox": [
+            0.833,
+            0.923,
+            0.859,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "195"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 225,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.153,
+            0.081,
+            0.845,
+            0.196
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Additionally, specifying how many rows there are in your data by setting nrow in read.delim() can lead to some performance gains. It’s OK to somewhat overestimate this number; you can get a quick estimate using wc -l. If these solutions are still too slow, you can install the data.table package and use its fread() function, which is the fastest alternative to read.* functions (though be warned: fread() returns a data.table, not a data.frame, which behaves differently; see the manual)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.153,
+            0.203,
+            0.844,
+            0.298
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "If your data is larger than the available memory on your machine, you’ll need to use a strategy that keeps the bulk of your data out of memory, but still allows for easy access from R. A good solution for moderately large data is to use SQLite and query out subsets for computation using the R package RSQLite (we’ll cover SQLite and other strategies for data too large to fit in memory in Chapter 13)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.153,
+            0.304,
+            0.844,
+            0.414
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Finally, as we saw in Chapter 6, many Unix data tools have versions that work on gzipped files: zless, zcat (gzcat on BSD-derived systems like Max OS X), and others. Likewise, R’s data-reading functions can also read gzipped files directly—there’s no need to uncompress gzipped files first. This saves disk space and there can be some slight performance gains in reading in gzipped files, as there are fewer bytes to read off of (slow) hard disks."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.446,
+            0.861,
+            0.603
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "With our working directory properly set, let’s load Dataset_S1.txt into R. The R functions read.csv() and read.delim() are used for reading CSV and tab-delimited files, respectively. Both are thin wrappers around the function read.table() with the proper arguments set for CSV and tab-delimited files—see help(read.table) for more information. To load the CSV file Dataset_S1.txt, we’d use read.csv() with \"Dataset_S1.txt\" as the file argument (the first argument). To avoid repeatedly typing a long name when we work with our data, we’ll assign this to a variable named d:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 4,
+          "bbox": [
+            0.171,
+            0.613,
+            0.457,
+            0.63
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 4,
+              "bbox": [
+                0.171,
+                0.613,
+                0.457,
+                0.63
+              ],
+              "content": "> d <- read.csv(\"Dataset_S1.txt\")"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.638,
+            0.861,
+            0.775
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Note that the functions read.csv() and read.delim() have the argument header set to TRUE by default. This is important because Dataset_S1’s first line contains column names rather than the first row of data. Some data files don’t include a header, so you’d need to set header=FALSE. If your file lacks a column name header, it’s a good idea to assign column names as you read in the data using the col.names argument. For example, to load a fake tab-delimited file named noheader.bed that contains three columns named chrom, start, and end, we’d use:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 6,
+          "bbox": [
+            0.171,
+            0.785,
+            0.65,
+            0.817
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 6,
+              "bbox": [
+                0.171,
+                0.785,
+                0.65,
+                0.817
+              ],
+              "content": "> bd <- read.delim(\"noheader.bed\", header=FALSE,\n                       col.names=c(\"chrom\", \"start\", \"end\"))"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "r"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.825,
+            0.861,
+            0.884
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "R’s read.csv() and read.delim() functions have numerous arguments, many of which will need to be adjusted for certain files you’ll come across in bioinformatics. See Table 8-4 for a list of some commonly used arguments, and consult"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 8,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "196"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 9,
+          "bbox": [
+            0.201,
+            0.922,
+            0.5,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 8: A Rapid Introduction to the R Language"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 226,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.137,
+            0.081,
+            0.862,
+            0.275
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "help(read.csv) for full documentation. Before we move on to working with the data in Dataset_S1.txt, we need to discuss one common stumbling block when loading data into R: factors. As we saw in “Factors and classes in R” on page 191, factors are R’s way of encoding categorical data in a vector. By default, R’s read.delim() and read.csv() functions will coerce a column of strings to a factor, rather than treat it as a character vector. It’s important to know that R does this so you can disable this coercion when you need a column as a character vector. To do this, set the argument stringsAsFactors=FALSE (or use asis; see help(read.table) for more information). In “Factors and classes in "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbb { R } ^ { \\mathfrak { z } }"
+            },
+            {
+              "type": "text",
+              "content": " on page 191, we saw how factors are quite useful, despite the headaches they often cause new R users."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "table",
+          "index": 2,
+          "bbox": [
+            0.141,
+            0.316,
+            0.859,
+            0.847
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 1,
+              "bbox": [
+                0.14,
+                0.293,
+                0.651,
+                0.312
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Table 8-4. Commonly used read.csv() and read.delim() arguments"
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 2,
+              "bbox": [
+                0.141,
+                0.316,
+                0.859,
+                0.847
+              ],
+              "image_path": "images/page_226_table_2.jpg",
+              "content": "<table><tr><td>Argument</td><td>Description</td><td>Additional comments</td></tr><tr><td>header</td><td>A TRUE/FALSE value indicating whether the first row contains column names rather than data</td><td></td></tr><tr><td>sep</td><td>A character value indicating what delimits columns; using the empty string &quot;&quot; treats all whitespace as a separator</td><td></td></tr><tr><td>stringsAs Factors</td><td>Setting this argument as FALSE prevents R from coercing character vectors to factors for all columns; see argument as is in help(read.delim) to prevent coercion to factor on specific columns</td><td>This is an important argument to be aware of, because R&#x27;s default behavior of coercing character vector columns to factors is a common stumbling block for beginners.</td></tr><tr><td>col.names</td><td>A character vector to be used as column names</td><td></td></tr><tr><td>row.names</td><td>A vector to use for row names, or a single integer or column name indicating which column to use as row names</td><td></td></tr><tr><td>na.strings</td><td>A character vector of possible missing values to convert to NA</td><td>Files using inconsistent missing values (e.g., a mix of &quot;NA,&quot; &quot;Na,&quot; &quot;na&quot;) can be corrected using nastrings=c(&quot;NA&quot;, &quot;Na&quot;, &quot;na&quot;).</td></tr><tr><td>colClasses</td><td>A character vector of column classes; &quot;NULL&quot; indicates a column should be skipped and NA indicates R should infer the type</td><td>colClasses can drastically decrease the time it takes to load a file into R, and is a useful argument when working with large bioinformatics files.</td></tr><tr><td>com ment.char</td><td>Lines beginning with this argument are ignored; the empty string (i.e., &quot;&quot;) disables this feature</td><td>This argument is useful in ignoring metadata lines in bioinformatics files.</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 3,
+          "bbox": [
+            0.566,
+            0.923,
+            0.799,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Working with and Visualizing Data in R"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 4,
+          "bbox": [
+            0.833,
+            0.923,
+            0.859,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "197"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 227,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "index": 0,
+          "bbox": [
+            0.379,
+            0.11,
+            0.62,
+            0.134
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Getting Data into Shape"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.153,
+            0.14,
+            0.845,
+            0.195
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Quite often, data we load in to R will be in the wrong shape for what we want to do with it. Tabular data can come in two different formats: long and wide. With wide data, each measured variable has its own column (Table 8-5)."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 3,
+          "bbox": [
+            0.157,
+            0.237,
+            0.842,
+            0.338
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 2,
+              "bbox": [
+                0.156,
+                0.213,
+                0.664,
+                0.233
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Table 8-5. A gene expression counts table by tissue in wide format"
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 3,
+              "bbox": [
+                0.157,
+                0.237,
+                0.842,
+                0.338
+              ],
+              "image_path": "images/page_227_table_3.jpg",
+              "content": "<table><tr><td>Gene</td><td>Meristem</td><td>Root</td><td>Flower</td></tr><tr><td>gene_1</td><td>582</td><td>91</td><td>495</td></tr><tr><td>gene_2</td><td>305</td><td>3505</td><td>33</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.154,
+            0.353,
+            0.843,
+            0.391
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "With long data, one column is used to store what type of variable was measured and another column is used to store the measurement (Table 8-6)."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 6,
+          "bbox": [
+            0.157,
+            0.433,
+            0.842,
+            0.678
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 5,
+              "bbox": [
+                0.156,
+                0.409,
+                0.66,
+                0.428
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Table 8-6. A gene expression counts table by tissue in long format"
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 6,
+              "bbox": [
+                0.157,
+                0.433,
+                0.842,
+                0.678
+              ],
+              "image_path": "images/page_227_table_6.jpg",
+              "content": "<table><tr><td>Gene</td><td>Tissue</td><td>Expression</td></tr><tr><td>gene_1</td><td>meristem</td><td>582</td></tr><tr><td>gene_2</td><td>meristem</td><td>305</td></tr><tr><td>gene_1</td><td>root</td><td>91</td></tr><tr><td>gene_2</td><td>root</td><td>3503</td></tr><tr><td>gene_1</td><td>flower</td><td>495</td></tr><tr><td>gene_2</td><td>flower</td><td>33</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.153,
+            0.694,
+            0.845,
+            0.789
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In many cases, data is recorded by humans in wide format, but we need data in long format when working with and plotting statistical modeling functions. Hadley Wickham’s reshape2 package provides functions to reshape data: the function melt() turns wide data into long data, and cast() turns long data into wide data. There are numerous resources for learning more about the reshape2 package:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 8,
+          "bbox": [
+            0.173,
+            0.802,
+            0.451,
+            0.848
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 9,
+              "bbox": [
+                0.174,
+                0.802,
+                0.369,
+                0.822
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• "
+                },
+                {
+                  "type": "hyperlink",
+                  "url": "http://bit.ly/reshape-2",
+                  "content": [
+                    {
+                      "type": "text",
+                      "content": "reshape2 CRAN page"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 10,
+              "bbox": [
+                0.174,
+                0.827,
+                0.45,
+                0.847
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• "
+                },
+                {
+                  "type": "hyperlink",
+                  "url": "http://had.co.nz/reshape/",
+                  "content": [
+                    {
+                      "type": "text",
+                      "content": "Hadley Wickham’s reshape page"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "page_number",
+          "index": 11,
+          "bbox": [
+            0.141,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "198"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 12,
+          "bbox": [
+            0.201,
+            0.922,
+            0.5,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 8: A Rapid Introduction to the R Language"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 228,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "index": 0,
+          "bbox": [
+            0.138,
+            0.079,
+            0.553,
+            0.105
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Exploring and Transforming Dataframes"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.113,
+            0.861,
+            0.227
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The Dataset_S1.txt data we’ve loaded into R with read.csv() is stored as a dataframe. Dataframes are R’s workhorse data structure for storing tabular data. Dataframes consist of columns (which represent variables in your dataset), and rows (which represent observations). In this short section, we’ll learn the basics of accessing the dimensions, rows, columns, and row and column names of a dataframe. We’ll also see how to transform columns of a dataframe and add additional columns."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.236,
+            0.861,
+            0.333
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Each of the columns of a dataframe are vectors just like those introduced in “Vectors, Vectorization, and Indexing” on page 183. Consequently, each element in a dataframe column has the same type. But a dataframe can contain many columns of all different types; storing columns of heterogeneous types of vectors is what dataframes are designed to do."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.341,
+            0.861,
+            0.401
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "First, let’s take a look at the dataframe we’ve loaded in with the function head(). By default, head() prints the first six lines of a dataframe, but we’ll limit this to three using the n argument:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 4,
+          "bbox": [
+            0.171,
+            0.41,
+            0.849,
+            0.551
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 4,
+              "bbox": [
+                0.171,
+                0.41,
+                0.849,
+                0.551
+              ],
+              "image_path": "images/page_228_table_4.jpg",
+              "content": "<table><tr><td colspan=\"9\">&gt; head(d, n=3)</td></tr><tr><td>start</td><td>end</td><td>total.SNPs</td><td>total.Bases</td><td>depth</td><td>unique.SNPs</td><td>dhSNPs</td><td>reference.Bases</td><td></td></tr><tr><td>1</td><td>55001</td><td>56000</td><td>0</td><td>1894</td><td>3.41</td><td>0</td><td>0</td><td>556</td></tr><tr><td>2</td><td>56001</td><td>57000</td><td>5</td><td>6683</td><td>6.68</td><td>2</td><td>2</td><td>1000</td></tr><tr><td>3</td><td>57001</td><td>58000</td><td>1</td><td>9063</td><td>9.06</td><td>1</td><td>0</td><td>1000</td></tr><tr><td colspan=\"2\">Theta</td><td>Pi</td><td>Heterozygosity</td><td>X.GC</td><td>Recombination</td><td>Divergence</td><td>Constraint</td><td>SNPs</td></tr><tr><td>1</td><td>0.000</td><td>0.000</td><td>0.000</td><td>54.8096</td><td>0.009601574</td><td>0.003006012</td><td></td><td>0</td></tr><tr><td>2</td><td>8.007</td><td>10.354</td><td>7.481</td><td>42.4424</td><td>0.009601574</td><td>0.018018020</td><td></td><td>0</td></tr><tr><td>3</td><td>3.510</td><td>1.986</td><td>1.103</td><td>37.2372</td><td>0.009601574</td><td>0.007007007</td><td></td><td>0</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.138,
+            0.558,
+            0.595,
+            0.576
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(Note that R has wrapped the columns of this dataset.)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.137,
+            0.586,
+            0.86,
+            0.645
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Other things we might want to know about this dataframe are its dimensions, which we can access using nrow() (number of rows), ncol() (number of columns), and dim() (returns both):"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 7,
+          "bbox": [
+            0.171,
+            0.654,
+            0.306,
+            0.748
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 7,
+              "bbox": [
+                0.171,
+                0.654,
+                0.306,
+                0.748
+              ],
+              "content": "> nrow(d)\n[1] 59140\n> ncol(d)\n[1] 16\n> dim(d)\n[1] 59140    16"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.137,
+            0.756,
+            0.859,
+            0.794
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We can also print the columns of this dataframe using col.names() (there’s also a row.names() function):"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 9,
+          "bbox": [
+            0.171,
+            0.805,
+            0.819,
+            0.884
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 9,
+              "bbox": [
+                0.171,
+                0.805,
+                0.819,
+                0.884
+              ],
+              "content": "> colnames(d)\n[1] \"start\"          \"end\"          \"total.SNPs\"      \"total.Bases\"\n[5] \"depth\"          \"unique.SNPs\"      \"dhSNPs\"          \"reference.Bases\"\n[9] \"Theta\"          \"Pi\"              \"Heterozygosity\"  \"X.GC\"\n[13] \"Recombination\"   \"Divergence\"       \"Constraint\"      \"SNPs\""
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "footer",
+          "index": 10,
+          "bbox": [
+            0.566,
+            0.923,
+            0.799,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Working with and Visualizing Data in R"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 11,
+          "bbox": [
+            0.833,
+            0.923,
+            0.859,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "199"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 229,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.137,
+            0.081,
+            0.861,
+            0.198
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Note that R’s read.csv() function has automatically renamed some of these columns for us: spaces have been converted to periods and the percent sign in %GC has been changed to an “X.” “X.GC” isn’t a very descriptive column name, so let’s change this. Much like we’ve set the names of a vector using names() <-, we can set column names with col.names() <-. Here, we only want to change the 12"
+            },
+            {
+              "type": "text",
+              "content": "th",
+              "styles": [
+                "superscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " column name, so we’d use:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 1,
+          "bbox": [
+            0.171,
+            0.208,
+            0.457,
+            0.286
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 1,
+              "bbox": [
+                0.171,
+                0.208,
+                0.457,
+                0.286
+              ],
+              "content": "> colnames(d)[12] # original name\n[1] \"X.GC\"\n> colnames(d)[12] <- \"percent.GC\"\n> colnames(d)[12] # after change\n[1] \"percent.GC\""
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.167,
+            0.3,
+            0.255,
+            0.389
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.167,
+                0.3,
+                0.255,
+                0.389
+              ],
+              "image_path": "images/page_229_image_2.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.267,
+            0.306,
+            0.515,
+            0.325
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Creating Dataframes from Scratch"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.266,
+            0.335,
+            0.79,
+            0.513
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "R’s data loading functions read.csv() and read.delim() read in data from a file and return the results as a data.frame. Sometimes you’ll need to create a dataframe from scratch from a set of vectors. You can do this with the function data.frame(), which creates a dataframe from vector arguments (recycling the shorter vectors when necessary). One nice feature of data.frame() is that if you provide vectors as named arguments, data.frame() will use these names as column names. For example, if we simulated data from a simple linear model using sample() and rnorm(), we could store it in a dataframe with:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 5,
+          "bbox": [
+            0.3,
+            0.52,
+            0.626,
+            0.567
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 5,
+              "bbox": [
+                0.3,
+                0.52,
+                0.626,
+                0.567
+              ],
+              "content": "> x <- sample(1:50, 300, replace=TRUE)\n> y <- 3.2*x + rnorm(300, 0, 40)\n> d_sim <- data.frame(y=y, x=x)"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "r"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.266,
+            0.573,
+            0.789,
+            0.627
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As with R’s read.csv() and read.delim() functions, data.frame() will convert character vectors into factors. You can disable this behavior by setting stringsAsFactors=FALSE."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.651,
+            0.859,
+            0.688
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Similarly, we could set row names using row.names() <- (note that row names must be unique)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.137,
+            0.697,
+            0.859,
+            0.738
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The most common way to access a single column of a dataframe is with the dollar sign operator. For example, we could access the column depth in d using:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 9,
+          "bbox": [
+            0.172,
+            0.747,
+            0.574,
+            0.779
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 9,
+              "bbox": [
+                0.172,
+                0.747,
+                0.574,
+                0.779
+              ],
+              "content": "> d\\$depth\n[1] 3.41 6.68 9.06 10.26 8.06 7.05 [...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.137,
+            0.786,
+            0.859,
+            0.825
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This returns the depth column as a vector, which we can then pass to R functions like mean() or summary() to get an idea of what depth looks like across this dataset:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 11,
+          "bbox": [
+            0.172,
+            0.835,
+            0.329,
+            0.882
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 11,
+              "bbox": [
+                0.172,
+                0.835,
+                0.329,
+                0.882
+              ],
+              "content": "> mean(d\\$depth)\n[1] 8.183938\n> summary(d\\$depth)"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "page_number",
+          "index": 12,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "200"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 13,
+          "bbox": [
+            0.201,
+            0.922,
+            0.5,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 8: A Rapid Introduction to the R Language"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 230,
+      "blocks": [
+        {
+          "type": "code",
+          "index": 0,
+          "bbox": [
+            0.19,
+            0.082,
+            0.574,
+            0.111
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 0,
+              "bbox": [
+                0.19,
+                0.082,
+                0.574,
+                0.111
+              ],
+              "content": "Min. 1st Qu. Median Mean 3rd Qu. Max.\n1.000 6.970 8.170 8.184 9.400 21.910"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.121,
+            0.861,
+            0.274
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The dollar sign operator is a syntactic shortcut for a more general bracket operator used to access rows, columns, and cells of a dataframe. Using the bracket operator is similar to accessing the elements of a vector (e.g., vec[2]), except as two-dimensional data structures, dataframes use two indexes separated by a comma: df[row, col]. Just as with indexing vectors, these indexes can be vectors to select multiple rows and columns simultaneously. Omitting the row index retrieves all rows, and omitting the column index retrieves all columns. This will be clearer with some examples. To access the first two columns (and all rows), we’d use:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 2,
+          "bbox": [
+            0.171,
+            0.284,
+            0.291,
+            0.378
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 2,
+              "bbox": [
+                0.171,
+                0.284,
+                0.291,
+                0.378
+              ],
+              "content": "> d[ , 1:2]\n    start end\n1 55001 56000\n2 56001 57000\n3 57001 58000\n[...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.385,
+            0.861,
+            0.461
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "It’s important to remember the comma (and note that whitespace does not matter here; it’s just to increase readability). Selecting two columns like this returns a dataframe. Equivalently, we could use the column names (much like we could use names to access elements of a vector):"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 4,
+          "bbox": [
+            0.171,
+            0.471,
+            0.38,
+            0.564
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 4,
+              "bbox": [
+                0.171,
+                0.471,
+                0.38,
+                0.564
+              ],
+              "content": "> d[, c(\"start\", \"end\")]\n  start   end\n1 55001 56000\n2 56001 57000\n3 57001 58000\n[...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.138,
+            0.573,
+            0.707,
+            0.591
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "If we only wanted the first row of start and end positions, we’d use:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 6,
+          "bbox": [
+            0.171,
+            0.602,
+            0.388,
+            0.647
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 6,
+              "bbox": [
+                0.171,
+                0.602,
+                0.388,
+                0.647
+              ],
+              "content": "> d[1, c(\"start\", \"end\")]\n  start end\n1 55001 56000"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.657,
+            0.859,
+            0.692
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Similarly, if we wanted the first row of data for all columns, we’d omit the column index:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 8,
+          "bbox": [
+            0.171,
+            0.704,
+            0.837,
+            0.782
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 8,
+              "bbox": [
+                0.171,
+                0.704,
+                0.837,
+                0.782
+              ],
+              "content": "> d[1, ]\n  start   end total.SNPs total.Bases depth unique.SNPs dhSNPs reference.Bases\n1 55001 56000          0       1894 3.41         0      0           556\n  Theta Pi Heterozygosity percent.GC Recombination Divergence Constraint SNPs\n1     0  0           0   54.8096   0.009601574 0.003006012         0      0"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.138,
+            0.79,
+            0.765,
+            0.81
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Single cells can be accessed by specifying a single row and a single column:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 10,
+          "bbox": [
+            0.172,
+            0.818,
+            0.261,
+            0.85
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 10,
+              "bbox": [
+                0.172,
+                0.818,
+                0.261,
+                0.85
+              ],
+              "content": "> d[2, 3]\n[1] 5"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "footer",
+          "index": 11,
+          "bbox": [
+            0.566,
+            0.923,
+            0.799,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Working with and Visualizing Data in R"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 12,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "201"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 231,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.137,
+            0.08,
+            0.861,
+            0.136
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "However, in practice we don’t usually need to access single rows or cells of a dataframe during data analysis (see Fragile Code and Accessing Rows and Columns in Dataframes)."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 1,
+          "bbox": [
+            0.167,
+            0.153,
+            0.255,
+            0.242
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 1,
+              "bbox": [
+                0.167,
+                0.153,
+                0.255,
+                0.242
+              ],
+              "image_path": "images/page_231_image_1.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.267,
+            0.159,
+            0.707,
+            0.178
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Fragile Code and Accessing Rows and Columns in Dataframes"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.266,
+            0.187,
+            0.789,
+            0.293
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "It’s a good idea to avoid referring to specific dataframe rows in your analysis code. This would produce code fragile to row permutations or new rows that may be generated by rerunning a previous analysis step. In every case in which you might need to refer to a specific row, it’s avoidable by using subsetting (see “Exploring Data Through Slicing and Dicing: Subsetting Dataframes” on page 203)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.266,
+            0.298,
+            0.789,
+            0.384
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Similarly, it’s a good idea to refer to columns by their column name, not their position. While columns may be less likely to change across dataset versions than rows, it still happens. Column names are more specific than positions, and also lead to more readable code."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.408,
+            0.861,
+            0.485
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "When accessing a single column from a dataframe, R’s default behavior is to return this as a vector—not a dataframe with one column. Sometimes this can cause problems if downstream code expects to work with a dataframe. To disable this behavior, we set the argument drop to FALSE in the bracket operator:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 6,
+          "bbox": [
+            0.171,
+            0.494,
+            0.397,
+            0.589
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 6,
+              "bbox": [
+                0.171,
+                0.494,
+                0.397,
+                0.589
+              ],
+              "content": "> d[, \"start\", drop=FALSE]\n  start\n1 55001\n2 56001\n3 57001\n[...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.595,
+            0.861,
+            0.732
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Now, let’s add an additional column to our dataframe that indicates whether a window is in the centromere region. The positions of the chromosome 20 centromere (based on Giemsa banding) are 25,800,000 to 29,700,000 (see this chapter’s README on GitHub to see how these coordinates were found). We can append to our d dataframe a column called cent that has TRUE/FALSE values indicating whether the current window is fully within a centromeric region using comparison and logical operations:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 8,
+          "bbox": [
+            0.171,
+            0.74,
+            0.61,
+            0.756
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 8,
+              "bbox": [
+                0.171,
+                0.74,
+                0.61,
+                0.756
+              ],
+              "content": "> d$cent <- d$start >= 25800000 & d$end <= 29700000"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "perl"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.137,
+            0.765,
+            0.861,
+            0.864
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Note the single ampersand (&), which is the vectorized version of logical AND. & operates on each element of the two vectors created by dd$start >= 25800000 and dd$end <= 29700000 and returns TRUE when both are >true. How many windows fall into this centromeric region? There are a few ways to tally the TRUE values. First, we could use table():"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 10,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "202"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 11,
+          "bbox": [
+            0.201,
+            0.922,
+            0.5,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 8: A Rapid Introduction to the R Language"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 232,
+      "blocks": [
+        {
+          "type": "code",
+          "index": 0,
+          "bbox": [
+            0.171,
+            0.081,
+            0.304,
+            0.127
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 0,
+              "bbox": [
+                0.171,
+                0.081,
+                0.304,
+                0.127
+              ],
+              "content": "> table(d$cent)\nFALSE    TRUE\n58455     685"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.137,
+            0.86,
+            0.195
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Another approach uses the fact that sum() will coerce logical values to integers (so TRUE has value 1 and FALSE has value 0). To count how many windows fall in this centromeric region, we could use:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 2,
+          "bbox": [
+            0.172,
+            0.205,
+            0.286,
+            0.236
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 2,
+              "bbox": [
+                0.172,
+                0.205,
+                0.286,
+                0.236
+              ],
+              "content": "> sum(d$cent)\n[1] 685"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.243,
+            0.861,
+            0.36
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Lastly, note that according to the supplementary material of this paper, the diversity estimates (columns Theta, Pi, and Heterozygosity) are all scaled up by 10x in the dataset (see supplementary Text S1 for more details). We’ll use the nucleotide diversity column Pi later in this chapter in plots, and it would be useful to have this scaled as per basepair nucleotide diversity (so as to make the scale more intuitive). We can create a new rescaled column called diversity with:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 4,
+          "bbox": [
+            0.17,
+            0.37,
+            0.821,
+            0.433
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 4,
+              "bbox": [
+                0.17,
+                0.37,
+                0.821,
+                0.433
+              ],
+              "content": "> d$diversity <- d$Pi / (10*1000)  # rescale, removing 10x and making per bp\n> summary(d$diversity )\n    Min.   1st Qu.   Median      Mean   3rd Qu.     Max.\n0.0000000 0.0005577 0.0010420 0.0012390 0.0016880 0.0265300"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "csv"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.441,
+            0.86,
+            0.498
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Average nucleotide diversity per basepair in this data is around 0.001 (0.12%), roughly what we’d expect from other estimates of human diversity (Hernandez et al., 2012, Perry et al., 2012)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.138,
+            0.514,
+            0.823,
+            0.541
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Exploring Data Through Slicing and Dicing: Subsetting Dataframes"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.547,
+            0.86,
+            0.701
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The most powerful feature of dataframes is the ability to slice out specific rows by applying the same vector subsetting techniques we saw in “Vectors, Vectorization, and Indexing” on page 183 to columns. Combined with R’s comparison and logical operators, this leads to an incredibly powerful method to query out rows in a dataframe. Understanding and mastering dataframe subsetting is one of the most important R skills to develop, as it gives you considerable power to interrogate and explore your data. We’ll learn these skills in this section by applying them to the Dataset_S1.txt dataset to explore some features of this data."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.137,
+            0.71,
+            0.859,
+            0.748
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let’s start by looking at the total number of SNPs per window. From summary(), we see that this varies quite considerably across all windows on chromosome 20:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 9,
+          "bbox": [
+            0.172,
+            0.758,
+            0.574,
+            0.804
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 9,
+              "bbox": [
+                0.172,
+                0.758,
+                0.574,
+                0.804
+              ],
+              "content": "> summary(d$total.SNPs)\n    Min. 1st Qu.   Median      Mean 3rd Qu.     Max.\n    0.000    3.000    7.000    8.906   12.000    93.000"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.137,
+            0.812,
+            0.86,
+            0.889
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Notice how right-skewed this data is: the third quartile is 12 SNPs, but the maximum is 93 SNPs. Often we want to investigate such outliers more closely. Let’s use data subsetting to select out some rows that have 85 or more SNPs (this arbitrary threshold is just for exploratory data analysis, so it doesn’t matter much). We can create a logical"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 11,
+          "bbox": [
+            0.566,
+            0.923,
+            0.799,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Working with and Visualizing Data in R"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 12,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "203"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 233,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.135,
+            0.08,
+            0.859,
+            0.12
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "vector containing whether each observation (row) has 85 or more SNPs using the following:"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "code",
+          "index": 1,
+          "bbox": [
+            0.171,
+            0.129,
+            0.559,
+            0.16
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 1,
+              "bbox": [
+                0.171,
+                0.129,
+                0.559,
+                0.16
+              ],
+              "content": "> d$total.SNPs >= 85\n[1] FALSE FALSE FALSE FALSE FALSE FALSE [...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.167,
+            0.862,
+            0.244
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Recall from “Vectors, Vectorization, and Indexing” on page 183 that in addition to integer indexing vectors, we can use logical vectors (Example 8-1). Likewise, we can use the logical vector we created earlier to extract the rows of our dataframe. R will keep only the rows that have a TRUE value:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 3,
+          "bbox": [
+            0.171,
+            0.254,
+            0.813,
+            0.455
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 3,
+              "bbox": [
+                0.171,
+                0.254,
+                0.813,
+                0.455
+              ],
+              "content": "> d[d$total.SNPs >= 85, ]\n        start      end total.SNPs total.Bases depth unique.SNPs dhSNPs\n2567   2621001 2622000          93       11337 11.34         13     10\n12968 13023001 13024000          88       11784 11.78         11     1\n43165 47356001 47357000          87       12505 12.50         9     7\n        reference.Bases Theta    Pi Heterozygosity percent.GC Recombination\n2567           1000 43.420 50.926          81.589   43.9439   0.000706536\n12968           1000 33.413 19.030          74.838   28.8288   0.000082600\n43165           1000 29.621 27.108          69.573   46.7467   0.000500577\n        Divergence Constraint SNPs cent\n2567 0.01701702            0     1 FALSE\n12968 0.01401401            0     1 FALSE\n43165 0.02002002            0     7 FALSE"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.463,
+            0.86,
+            0.541
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This subset of the data gives a view of windows with 85 or greater SNPs. With the start and end positions of these windows, we can see if any potential confounders stand out. If you’re curious, explore these windows using the "
+            },
+            {
+              "type": "hyperlink",
+              "url": "http://genome.ucsc.edu",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "UCSC Genome Browser"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "content": "; remember to use the NCBI34/hg16 version of the human genome)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.137,
+            0.548,
+            0.86,
+            0.645
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We can build more elaborate queries by chaining comparison operators. For example, suppose we wanted to see all windows where Pi (nucleotide diversity) is greater than 16 and percent GC is greater than 80. Equivalently, we could work with the rescaled diversity column but subsetting with larger numbers like 16 is easier and less error prone than with numbers like 0.0016. We’d use:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 6,
+          "bbox": [
+            0.171,
+            0.655,
+            0.813,
+            0.858
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 6,
+              "bbox": [
+                0.171,
+                0.655,
+                0.813,
+                0.858
+              ],
+              "content": "> d[d$Pi > 16 & d$percent.GC > 80, ]\n    start      end total.SNPs total.Bases depth unique.SNPs dhSNPs\n58550 63097001 63098000          5           947 2.39         2       1\n58641 63188001 63189000          2           1623 3.21         2       0\n58642 63189001 63190000          5           1395 1.89         3       2\n    reference.Bases Theta     Pi Heterozygosity percent.GC Recombination\n58550            397 37.544 41.172        52.784   82.0821   0.000781326\n58641            506 16.436 16.436          12.327   82.3824   0.000347382\n58642            738 35.052 41.099        35.842   80.5806   0.000347382\n    Divergence Constraint SNPs cent\n58550 0.03826531        226   1 FALSE\n58641 0.01678657        148   0 FALSE\n58642 0.01793722        0   0 FALSE"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "page_number",
+          "index": 7,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "204"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 8,
+          "bbox": [
+            0.201,
+            0.922,
+            0.5,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 8: A Rapid Introduction to the R Language"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 234,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.135,
+            0.08,
+            0.861,
+            0.139
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In these examples, we’re extracting all columns by omitting the column argument in the bracket operator (e.g., col in df[row, col]). If we only care about a few particular columns, we could specify them by their position or their name:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 1,
+          "bbox": [
+            0.171,
+            0.147,
+            0.752,
+            0.226
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 1,
+              "bbox": [
+                0.171,
+                0.147,
+                0.752,
+                0.226
+              ],
+              "content": "> d[d$Pi > 16 & d$percent.GC > 80, c(\"start\", \"end\", \"depth\", \"Pi\")]\n        start     end depth    Pi\n58550 63097001 63098000  2.39 41.172\n58641 63188001 63189000  3.21 16.436\n58642 63189001 63190000  1.89 41.099"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.234,
+            0.86,
+            0.291
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Similarly, you could reorder columns by providing the column names or column indexes in a different order. For example, if you wanted to swap the order of depth and Pi, use:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 3,
+          "bbox": [
+            0.171,
+            0.302,
+            0.751,
+            0.38
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 3,
+              "bbox": [
+                0.171,
+                0.302,
+                0.751,
+                0.38
+              ],
+              "content": "> d[d$Pi > 16 & d$percent.GC > 80, c(\"start\", \"end\", \"Pi\", \"depth\")]\n        start     end     Pi depth\n58550 63097001 63098000 41.172  2.39\n58641 63188001 63189000 16.436  3.21\n58642 63189001 63190000 41.099  1.89"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "julia"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.388,
+            0.859,
+            0.426
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Remember, columns of a dataframe are just vectors. If you only need the data from one column, just subset it as you would a vector:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 5,
+          "bbox": [
+            0.172,
+            0.436,
+            0.659,
+            0.468
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 5,
+              "bbox": [
+                0.172,
+                0.436,
+                0.659,
+                0.468
+              ],
+              "content": "> d$percent.GC[d$Pi > 16]\n[1] 39.1391 38.0380 36.8368 36.7367 43.0430 41.1411 [...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.137,
+            0.475,
+            0.86,
+            0.533
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This returns all of the percent GC values for observations where that observation has a Pi value greater than 16. Note that there’s no need to use a comma in the bracket because d$percent is a vector, not a two-dimensional dataframe."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.542,
+            0.86,
+            0.618
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Subsetting columns can be a useful way to summarize data across two different conditions. For example, we might be curious if the average depth in a window (the depth column) differs between very high GC content windows (greater than 80%) and all other windows:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 8,
+          "bbox": [
+            0.171,
+            0.629,
+            0.575,
+            0.721
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 8,
+              "bbox": [
+                0.171,
+                0.629,
+                0.575,
+                0.721
+              ],
+              "content": "> summary(d\\$depth[d\\$percent.GC >= 80])\n    Min. 1st Qu.   Median      Mean 3rd Qu.    Max.\n    1.05     1.89     2.14     2.24     2.78     3.37\n> summary(d\\$depth[d\\$percent.GC < 80])\n    Min. 1st Qu.   Median      Mean 3rd Qu.    Max.\n    1.000    6.970    8.170    8.185    9.400    21.910"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "perl"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.137,
+            0.73,
+            0.859,
+            0.768
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This is a fairly large difference, but it’s important to consider how many windows this includes. Indeed, there are only nine windows that have a GC content over 80%:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 10,
+          "bbox": [
+            0.172,
+            0.778,
+            0.388,
+            0.81
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 10,
+              "bbox": [
+                0.172,
+                0.778,
+                0.388,
+                0.81
+              ],
+              "content": "> sum(d$percent.GC >= 80)\n[1] 9"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.137,
+            0.818,
+            0.86,
+            0.879
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As another example, consider looking at Pi by windows that fall in the centromere and those that do not. Because d$cent is a logical vector, we can subset with it directly (and take its complement by using the negation operator, !):"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 12,
+          "bbox": [
+            0.566,
+            0.923,
+            0.799,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Working with and Visualizing Data in R"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 13,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "205"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 235,
+      "blocks": [
+        {
+          "type": "code",
+          "index": 0,
+          "bbox": [
+            0.171,
+            0.081,
+            0.574,
+            0.173
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 0,
+              "bbox": [
+                0.171,
+                0.081,
+                0.574,
+                0.173
+              ],
+              "content": "> summary(d$Pi[d$cent])\n    Min. 1st Qu.   Median      Mean 3rd Qu.     Max.\n    0.00      7.95    16.08    20.41    27.36    194.40\n> summary(d$Pi[!d$cent])\n    Min. 1st Qu.   Median      Mean 3rd Qu.     Max.\n    0.000    5.557    10.370    12.290    16.790    265.300"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.182,
+            0.861,
+            0.278
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Indeed, the centromere does appear to have higher nucleotide diversity than other regions in this data. Extracting specific observations using subsetting, and summarizing particular columns is a quick way to explore relationships within the data. Later on in “Working with the Split-Apply-Combine Pattern” on page 239, we’ll learn ways to group observations and create per-group summaries."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.286,
+            0.861,
+            0.346
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In addition to using logical vectors to subset dataframes, it’s also possible to subset rows by referring to their integer positions. The function which() takes a vector of logical values and returns the positions of all TRUE values. For example:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 3,
+          "bbox": [
+            0.171,
+            0.355,
+            0.556,
+            0.417
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 3,
+              "bbox": [
+                0.171,
+                0.355,
+                0.556,
+                0.417
+              ],
+              "content": "> d$Pi > 3\n[1] FALSE   TRUE FALSE   TRUE   TRUE   TRUE [...]\n> which(d$Pi > 3)\n[1]  2  4  5  6  7 10 [...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.426,
+            0.861,
+            0.522
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Thus, d[$Pi > 3, ] is identical to d[which(d$Pi > 3), ]; subsetting operations can be expressed using either method. In general, you should omit which() when subsetting dataframes and use logical vectors, as it leads to simpler and more readable code. Under other circumstances, which() is necessary—for example, if we wanted to select the four first TRUE values in a vector:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 5,
+          "bbox": [
+            0.171,
+            0.534,
+            0.37,
+            0.564
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 5,
+              "bbox": [
+                0.171,
+                0.534,
+                0.37,
+                0.564
+              ],
+              "content": "> which(d$Pi > 10)[1:4]\n[1] 2 16 21 23"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.137,
+            0.574,
+            0.859,
+            0.613
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "which() also has two related functions that return the index of the first minimum or maximum element of a vector: which.min() and which.max(). For example:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 7,
+          "bbox": [
+            0.171,
+            0.622,
+            0.666,
+            0.731
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 7,
+              "bbox": [
+                0.171,
+                0.622,
+                0.666,
+                0.731
+              ],
+              "content": "> d[which.min(d$total.Bases),]\n        start     end total.SNPs total.Bases depth [...]\n25689 25785001 25786000          0         110 1.24  [...]\n\n> d[which.max(d$depth),]\n        start     end total.SNPs total.Bases depth [...]\n8718 8773001 8774000          58       21914 21.91 [...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.137,
+            0.739,
+            0.861,
+            0.837
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Sometimes subsetting expressions inside brackets can be quite redundant (because each column must be specified like d$Pi, d$depth, etc). A useful convenience function (intended primarily for interactive use) is the R function subset(). subset() takes two arguments: the dataframe to operate on, and then conditions to include a row. With subset(), d[d$Pi > 16 & d$percent.GC > 80, ] can be expressed as:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 9,
+          "bbox": [
+            0.171,
+            0.847,
+            0.666,
+            0.894
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 9,
+              "bbox": [
+                0.171,
+                0.847,
+                0.666,
+                0.894
+              ],
+              "content": "$ subset(d, Pi > 16 & percent.GC > 80)\n    start      end total.SNPs total.Bases depth [...]\n58550 63097001 63098000          5           947  2.39 [...]"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "page_number",
+          "index": 10,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "206"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 11,
+          "bbox": [
+            0.201,
+            0.922,
+            0.5,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 8: A Rapid Introduction to the R Language"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 236,
+      "blocks": [
+        {
+          "type": "table",
+          "index": 0,
+          "bbox": [
+            0.171,
+            0.081,
+            0.668,
+            0.113
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 0,
+              "bbox": [
+                0.171,
+                0.081,
+                0.668,
+                0.113
+              ],
+              "image_path": "images/page_236_table_0.jpg",
+              "content": "<table><tr><td>58641</td><td>63188001</td><td>63189000</td><td>2</td><td>1623</td><td>3.21</td><td>[...]</td></tr><tr><td>58642</td><td>63189001</td><td>63190000</td><td>5</td><td>1395</td><td>1.89</td><td>[...]</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.12,
+            0.86,
+            0.158
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Optionally, a third argument can be supplied to specify which columns (and in what order) to include:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 2,
+          "bbox": [
+            0.171,
+            0.168,
+            0.575,
+            0.261
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 2,
+              "bbox": [
+                0.171,
+                0.168,
+                0.575,
+                0.261
+              ],
+              "content": "> subset(d, Pi > 16 & percent.GC > 80,\n    c(start, end, Pi, percent.GC, depth))\n        start     end     Pi percent.GC depth\n58550 63097001 63098000 41.172      82.0821  2.39\n58641 63188001 63189000 16.436      82.3824  3.21\n58642 63189001 63190000 41.099      80.5806  1.89"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.137,
+            0.269,
+            0.86,
+            0.327
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Note that we (somewhat magically) don’t need to quote column names. This is because subset() follows special evaluation rules, and for this reason, subset() is best used only for interactive work."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.138,
+            0.343,
+            0.812,
+            0.371
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Exploring Data Visually with ggplot2 I: Scatterplots and Densities"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.173,
+            0.376,
+            0.825,
+            0.412
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Instead of spending time making your graph look pretty, [ggplot2 allows you to] focus on creating a graph that best reveals the messages in your data."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.527,
+            0.416,
+            0.824,
+            0.451
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "— ggplot2: Elegant Graphics for Data Analysis Hadley Wickham"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.137,
+            0.456,
+            0.86,
+            0.651
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Exploratory data analysis emphasizes visualization as the best tool to understand and explore our data—both to learn what the data says and what its limitations are. We’ll learn visualization in R through Hadley Wickham’s powerful ggplot2 package, which is just one of a few ways to plot data in R; R also has a built-in graphics system (known as base graphics) and the lattice package. Every R user should be acquainted with base graphics (at some point, you’ll encounter a base graphics plot you need to modify), but we’re going to skip base graphics in this chapter to focus entirely on learning visualization with ggplot2. The reason for this is simple: you’ll be able to create more informative plots with less time and effort invested with ggplot2 than possible with base graphics."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.137,
+            0.66,
+            0.86,
+            0.796
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As with other parts of this chapter, this discussion of ggplot2 will be short and deficient in some areas. This introduction is meant to get you on your feet so you can start exploring your data, rather than be an exhaustive reference. The best up-to-date reference for ggplot2 is "
+            },
+            {
+              "type": "hyperlink",
+              "url": "http://docs.ggplot2.org/",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "the ggplot2 online documentation"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "content": ". As you shift from beginning ggplot2 to an intermediate user, I highly recommend the books ggplot2: Elegant Graphics for Data Analysis by Hadley Wickham (Springer, 2010) and "
+            },
+            {
+              "type": "hyperlink",
+              "url": "http://bit.ly/r-graphics-ckbk",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "R Graphics Cookbook"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "content": " by Winston Chang (O’Reilly, 2012) for more detail."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.137,
+            0.805,
+            0.86,
+            0.845
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "First, we need to load the ggplot2 package with R’s library() function. If you don’t have ggplot2 installed, you’ll need to do that first with install.packages():"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 10,
+          "bbox": [
+            0.171,
+            0.854,
+            0.421,
+            0.886
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 10,
+              "bbox": [
+                0.171,
+                0.854,
+                0.421,
+                0.886
+              ],
+              "content": "> install.packages(\"ggplot2\")\n> library(ggplot2)"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "scala"
+        },
+        {
+          "type": "footer",
+          "index": 11,
+          "bbox": [
+            0.566,
+            0.922,
+            0.799,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Working with and Visualizing Data in R"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 12,
+          "bbox": [
+            0.832,
+            0.923,
+            0.859,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "207"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 237,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.137,
+            0.081,
+            0.861,
+            0.236
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "ggplot2 is quite different from R’s base graphics because it’s built on top of a grammar inspired by Leland Wilkinson’s Grammar of Graphics (Springer, 2005). This grammar provides an underlying logic to creating graphics, which considerably simplifies creating complex plots. Each ggplot2 plot is built by adding layers to a plot that map the aesthetic properties of geometric objects to data. Layers can also apply statistical transformations to data and change the scales of axes and colors. This may sound abstract now, but you’ll become familiar with gplot2’s grammar through examples."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.137,
+            0.245,
+            0.861,
+            0.324
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Let’s look at how we’d use ggplot2 to create a scatterplot of nucleotide diversity along the chromosome in the diversity column in our d dataframe. Because our data is window-based, we’ll first add a column called position to our dataframe that’s the midpoint between each window:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 2,
+          "bbox": [
+            0.171,
+            0.333,
+            0.635,
+            0.367
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 2,
+              "bbox": [
+                0.171,
+                0.333,
+                0.635,
+                0.367
+              ],
+              "content": "> d$position <- (d$end + d$start) / 2\n> ggplot(d) + geom_point(aes(x=position, y=diversity))"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "txt"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.139,
+            0.373,
+            0.339,
+            0.392
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This creates Figure 8-1."
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.137,
+            0.401,
+            0.861,
+            0.482
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "There are two components of this ggplot2 graphic: the call to the function ggplot(), and the call to the function geom_point(). First, we use ggplot(d) to supply this plot with our d dataframe. ggplot2 works exclusively with dataframes, so you’ll need to get your data tidy and into a dataframe before visualizing it with ggplot2."
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 5,
+          "bbox": [
+            0.141,
+            0.489,
+            0.86,
+            0.81
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 5,
+              "bbox": [
+                0.141,
+                0.489,
+                0.86,
+                0.81
+              ],
+              "image_path": "images/page_237_chart_5.jpg",
+              "content": "| Position | Diversity |\n| --- | --- |\n| ~0.1e+07 | ~0.008 |\n| ~0.2e+07 | ~0.009 |\n| ~0.3e+07 | ~0.010 |\n| ~0.4e+07 | ~0.008 |\n| ~0.5e+07 | ~0.009 |\n| ~0.6e+07 | ~0.008 |\n| ~0.7e+07 | ~0.009 |\n| ~0.8e+07 | ~0.017 |\n| ~1.5e+07 | ~0.019 |\n| ~2.5e+07 | ~0.012 |\n| ~2.6e+07 | ~0.010 |\n| ~2.7e+07 | ~0.012 |\n| ~2.8e+07 | ~0.011 |\n| ~3.5e+07 | ~0.014 |\n| ~4.5e+07 | ~0.028 |\n| ~5.5e+07 | ~0.013 |\n| ~5.6e+07 | ~0.013 |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 6,
+              "bbox": [
+                0.137,
+                0.813,
+                0.733,
+                0.851
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Figure 8-1. ggplot2 scatterplot nucleotide diversity by position for human chromosome 20"
+                }
+              ]
+            }
+          ],
+          "sub_type": "scatter"
+        },
+        {
+          "type": "page_number",
+          "index": 7,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "208"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 8,
+          "bbox": [
+            0.201,
+            0.922,
+            0.5,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 8: A Rapid Introduction to the R Language"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 238,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.136,
+            0.081,
+            0.858,
+            0.158
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Second, with our data specified, we then add layers to our plot (remember: ggplot2 is layer-based). To add a layer, we use the same + operator that we use for addition in R. Each layer updates our plot by adding geometric objects such as the points in a scatterplot, or the lines in a line plot."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.136,
+            0.169,
+            0.861,
+            0.384
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "We add geom_point() as a layer because we want points to create a scatterplot. geom_point() is a type of geometric object (or geom in ggplot2 lingo). ggplot2 has many geoms (e.g., geom_line(), geom_bar(), geom_density(), geom_boxplot(), etc.), which we’ll see throughout this chapter. Geometric objects have many aesthetic attributes (e.g., x and y positions, color, shape, size, etc.). Different geometric objects will have different aesthetic attributes (ggplot2 documentation refers to these as aesthetics). The beauty of ggplot2s grammar is that it allows you to map geometric objects’ aesthetics to columns in your dataframe. In our diversity by position scatterplot, we mapped the x position aesthetic to the position column, and the y position to the diversity column. We specify the mapping of aesthetic attributes to columns in our dataframe using the function aes()."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.167,
+            0.399,
+            0.255,
+            0.488
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.167,
+                0.399,
+                0.255,
+                0.488
+              ],
+              "image_path": "images/page_238_image_2.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.267,
+            0.405,
+            0.513,
+            0.423
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Axis Labels, Plot Titles, and Scales"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.266,
+            0.434,
+            0.789,
+            0.613
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As my high school mathematics teacher Mr. Williams drilled into my head, no plot is complete without proper axis labels and a title. While ggplot2 chooses smart labels based on your column names, you might want to change this down the road. ggplot2 makes specifying labels easy: simply use the xlab(), ylab(), and ggti tle() functions to specify the x-axis label, y-axis label, and plot title. For example, we could change our x- and y-axis labels when plotting the diversity data with p + xlab(\"chromosome position (basepairs)\") + ylab(\"nucleotide diversity\"). To avoid clutter in examples in this book, I’ll just use the default labels."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.266,
+            0.619,
+            0.79,
+            0.761
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "You can also set the limits for continuous axes using the function scale_x_continuous(limits=c(start, end)) where start and end are the start and end of the axes (and scale_y_continuous() for the y axis). Similarly, you can change an axis to a log10-scale using the functions scale_x_log10() and scale_y_log10(). ggplot2 has numerous other scale options for discrete scales, other axes transforms, and color scales; see "
+            },
+            {
+              "type": "hyperlink",
+              "url": "http://docs.ggplot2.org",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "http://docs.ggplot2.org"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "content": " for more detail."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.137,
+            0.785,
+            0.859,
+            0.824
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Aesthetic mappings can also be specified in the call to ggplot()—geoms will then use this mapping. Example 8-2 creates the exact same scatterplot as Figure 8-1."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.138,
+            0.845,
+            0.467,
+            0.864
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 8-2. Including aes() in ggplot()"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.138,
+            0.878,
+            0.616,
+            0.895
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "> ggplot(d, aes(x=position, y=diversity)) + geom_point()"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 9,
+          "bbox": [
+            0.566,
+            0.923,
+            0.799,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Working with and Visualizing Data in R"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 10,
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "209"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 239,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.137,
+            0.08,
+            0.862,
+            0.218
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Notice the missing diversity estimates in the middle of this plot. What’s going on in this region? ggplot2’s strength is that it makes answering these types of questions with exploratory data analysis techniques effortless. We simply need to map a possible confounder or explanatory variable to another aesthetic and see if this reveals any unexpected patterns. In this case, let’s map the color aesthetic of our point geometric objects to the column cent, which indicates whether the window falls in the centromeric region of this chromosome (see Example 8-3)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.138,
+            0.238,
+            0.598,
+            0.258
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 8-3. A simple diversity scatterplot with ggplot2"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.137,
+            0.301,
+            0.861,
+            0.359
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As you can see from Figure 8-2, the region with missing diversity estimates is around the centromere. This is intentional; centromeric and heterochromatic regions were excluded from this study."
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 3,
+          "bbox": [
+            0.141,
+            0.367,
+            0.86,
+            0.695
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 3,
+              "bbox": [
+                0.141,
+                0.367,
+                0.86,
+                0.695
+              ],
+              "image_path": "images/page_239_chart_3.jpg",
+              "content": "| Series | position (range) | diversity (range) |\n| --- | --- | --- |\n| FALSE | 0e+00~6.5e+07 | 0.00~0.028 |\n| TRUE | 2.5e+07~3.0e+07 | 0.00~0.019 |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 4,
+              "bbox": [
+                0.137,
+                0.698,
+                0.848,
+                0.738
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Figure 8-2. ggplot2 scatterplot nucleotide diversity by position coloring by whether windows are in the centromeric region"
+                }
+              ]
+            }
+          ],
+          "sub_type": "scatter"
+        },
+        {
+          "type": "image",
+          "index": 5,
+          "bbox": [
+            0.174,
+            0.757,
+            0.255,
+            0.836
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 5,
+              "bbox": [
+                0.174,
+                0.757,
+                0.255,
+                0.836
+              ],
+              "image_path": "images/page_239_image_5.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.266,
+            0.759,
+            0.79,
+            0.83
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Throughout this chapter, I’ve used a slightly different ggplot theme than the default to optimize graphics for print and screen. All of the code to produce the plots exactly as they appear in this chapter is in this chapter’s directory on GitHub."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 7,
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "210"
+            }
+          ]
+        },
+        {
+          "type": "footer",
+          "index": 8,
+          "bbox": [
+            0.201,
+            0.922,
+            0.5,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Chapter 8: A Rapid Introduction to the R Language"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}

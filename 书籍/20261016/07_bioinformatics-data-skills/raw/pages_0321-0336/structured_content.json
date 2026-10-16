@@ -1,0 +1,1752 @@
+{
+  "pages": [
+    {
+      "page_idx": 320,
+      "blocks": [
+        {
+          "type": "chart",
+          "bbox": [
+            0.141,
+            0.08,
+            0.861,
+            0.322
+          ],
+          "sub_type": "treemap",
+          "content": "| Block | X Range | Y Range |\n| --- | --- | --- |\n| 1 | 1~4 | 0~1 |\n| 2 | 4~6 | 1~3 |\n| query | 6~13 | 0~1 |\n| 3 | 18~21 | 0~1 |\n| 4 | 18~25 | 1~3 |",
+          "captions": [
+            {
+              "bbox": [
+                0.139,
+                0.326,
+                0.697,
+                0.346
+              ],
+              "content": "Figure 9-16. The ranges used in nearest, precede, and follow example"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_320_chart_0.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.364,
+            0.859,
+            0.403
+          ],
+          "content": "Note too that these operations are all vectorized, so you can provide a query IRanges object with multiple ranges:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.411,
+            0.524,
+            0.46
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> qry2 <- IRanges(start=c(6, 7), width=3)\n> nearest(qry2, sbj)\n[1] 2 2\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.467,
+            0.86,
+            0.543
+          ],
+          "content": "This family of functions for finding nearest ranges also includes distan ceToNearest() and distance(), which return the distance to the nearest range and the pairwise distances between ranges. We’ll create some random ranges to use in this example:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.554,
+            0.616,
+            0.833
+          ],
+          "sub_type": "code",
+          "content": "```c\n> qry <- IRanges(sample(seq_len(1000), 5), width=10)\n> sbj <- IRanges(sample(seq_len(1000), 5), width=10)\n> qry\nIRanges of length 5\n    start end width\n[1]   897 906    10\n[2]   266 275    10\n[3]   372 381    10\n[4]   572 581    10\n[5]   905 914    10\n> sbj\nIRanges of length 5\n    start end width\n[1]   202 211    10\n[2]   898 907    10\n[3]   943 952    10\n[4]   659 668    10\n[5]   627 636    10\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.42,
+            0.923,
+            0.798,
+            0.94
+          ],
+          "content": "An Interactive Introduction to Range Data with GenomicRanges"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "291"
+        }
+      ]
+    },
+    {
+      "page_idx": 321,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.081,
+            0.861,
+            0.141
+          ],
+          "content": "Now, let’s use distanceToNearest() to find neighboring ranges. It works a lot like findOverlaps()—for each query range, it finds the closest subject range, and returns everything in a Hits object with an additional column indicating the distance:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.15,
+            0.468,
+            0.32
+          ],
+          "sub_type": "algorithm",
+          "content": "> distanceToNearest(qry, sbj)\nHits of length 5\nqueryLength: 5\nsubjectLength: 5\n    queryHits subjectHits distance\n    &lt;integer&gt;      &lt;integer&gt; &lt;integer&gt;\n1         1          2        0\n2         2          1       54\n3         3          1       160\n4         4          5       45\n5         5          2       0",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.329,
+            0.859,
+            0.368
+          ],
+          "content": "The method distance() returns each pairwise distance between query and subject ranges:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.172,
+            0.377,
+            0.372,
+            0.409
+          ],
+          "sub_type": "algorithm",
+          "content": "> distance(qry, sbj)\n[1] 685 622 561 77 268",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.424,
+            0.473,
+            0.449
+          ],
+          "level": 2,
+          "content": "Run Length Encoding and Views"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.458,
+            0.86,
+            0.553
+          ],
+          "content": "The generic ranges implemented by IRanges can be ranges over any type of sequence. In the context of genomic data, these ranges’ coordinates are based on the underlying nucleic acid sequence of a particular chromosome. Yet, many other types of genomic data form a sequence of numeric values over each position of a chromosome sequence. Some examples include:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.155,
+            0.568,
+            0.858,
+            0.751
+          ],
+          "sub_type": "text",
+          "content": "• Coverage, the depth of overlap of ranges across the length of a sequence. Coverage is used extensively in genomics, from being an important factor in how variants are called to being used to discover coverage peaks that indicate the presence of some feature (as in a ChIP-seq study).\n• Conservation tracks, which are base-by-base evolutionary conservation scores between species, generated by a program like phastCons (see Siepel et al., 2005 as an example).\n• Per-base pair estimates of population genomics summary statistics like nucleotide diversity."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.766,
+            0.86,
+            0.882
+          ],
+          "content": "In this section, we’ll take a closer look at working with coverage data, creating ranges from numeric sequence data, and a powerful abstraction called views. Each of these concepts provides a powerful new way to manipulate sequence and range data. However, this section is a bit more advanced than earlier ones; if you’re feeling overwhelmed, you can skim the section on coverage and then skip ahead to “Storing Genomic Ranges with GenomicRanges” on page 299."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "292"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.419,
+            0.94
+          ],
+          "content": "Chapter 9: Working with Range Data"
+        }
+      ]
+    },
+    {
+      "page_idx": 322,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.079,
+            0.419,
+            0.099
+          ],
+          "level": 2,
+          "content": "Run-length encoding and coverage()"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.106,
+            0.862,
+            0.22
+          ],
+          "content": "Long sequences can grow quite large in memory. For example, a track containing numeric values over each of the 248,956,422 bases of chromosome 1 of the human genome version GRCh38 would be 1.9Gb in memory. To accommodate working with data this size in R, IRanges can work with sequences compressed using a clever trick: it compresses runs of the same value. For example, imagine a sequence of integers that represent the coverage of a region in a chromosome:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.231,
+            0.643,
+            0.246
+          ],
+          "sub_type": "code",
+          "content": "```txt\n4 4 4 3 3 2 1 1 1 1 1 0 0 0 0 0 0 0 0 1 1 1 4 4 4 4 4 4 4\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.254,
+            0.861,
+            0.33
+          ],
+          "content": "Data like coverage often exhibit runs: consecutive stretches of the same value. We can compress these runs using a scheme called run-length encoding. Run-length encoding compresses this sequence, storing it as: 3 fours, 2 threes, 1 two, 5 ones, 7 zeros, 3 ones, 7 fours. Let’s see how this looks in R:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.34,
+            0.852,
+            0.449
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> x <- as.integer(c(4, 4, 4, 3, 3, 2, 1, 1, 1, 1, 1, 0, 0, 0,\n                                      0, 0, 0, 0, 1, 1, 1, 4, 4, 4, 4, 4, 4, 4))\n> xrle <- Rle(x)\n> xrle\ninteger-Rle of length 28 with 7 runs\n    Lengths: 3 2 1 5 7 3 7\n    Values : 4 3 2 1 0 1 4\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.457,
+            0.86,
+            0.517
+          ],
+          "content": "The function Rle() takes a vector and returns a run-length encoded version. Rle() is a function from a low-level Bioconductor package called S4Vectors, which is automatically loaded with IRanges. We can revert back to vector form with as.vector():"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.172,
+            0.527,
+            0.685,
+            0.558
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> as.vector(xrle)\n[1] 4 4 4 3 3 2 1 1 1 1 1 0 0 0 0 0 0 0 1 1 1 4 4 4 4 4 4 4\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.566,
+            0.86,
+            0.621
+          ],
+          "content": "Run-length encoded objects support most of the basic operations that regular R vectors do, including subsetting, arithemetic and comparison operations, summary functions, and math functions:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.633,
+            0.501,
+            0.895
+          ],
+          "sub_type": "code",
+          "content": "```snap\n> xrle + 4L\ninteger-Rle of length 28 with 7 runs\n Lengths: 3 2 1 5 7 3 7\n Values : 8 7 6 5 4 5 8\n> xrle/2\nnumeric-Rle of length 28 with 7 runs\n Lengths:   3   2   1   5   7   3   7\n Values :   2 1.5   1 0.5   0 0.5   2\n> xrle > 3\nlogical-Rle of length 28 with 3 runs\n Lengths:     3    18      7\n Values : TRUE FALSE TRUE\n> xrle[xrle > 3]\nnumeric-Rle of length 11 with 3 runs\n Lengths:   3   1   7\n Values :   4 100   4\n> sum(xrle)\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.42,
+            0.923,
+            0.798,
+            0.939
+          ],
+          "content": "An Interactive Introduction to Range Data with GenomicRanges"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "293"
+        }
+      ]
+    },
+    {
+      "page_idx": 323,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.081,
+            0.62,
+            0.204
+          ],
+          "sub_type": "algorithm",
+          "content": "[1] 56\n> summary(xrle)\n    Min. 1st Qu.   Median      Mean 3rd Qu.     Max.\n    0.00      0.75      1.00      2.00       4.00       4.00\n> round(cos(xrle), 2)\nnumeric-Rle of length 28 with 7 runs\n    Lengths:      3       2       1       5       7       3       7\n    Values : -0.65 -0.99 -0.42  0.54       1  0.54 -0.65",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.214,
+            0.854,
+            0.253
+          ],
+          "content": "We can also access an Rle object’s lengths and values using the functions run Lengths() and runValues():"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.263,
+            0.321,
+            0.325
+          ],
+          "sub_type": "algorithm",
+          "content": "> runLength(xrle)\n[1] 3 2 1 5 7 3 7\n> runValue(xrle)\n[1] 4 3 2 1 0 1 4",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.333,
+            0.859,
+            0.373
+          ],
+          "content": "While we don’t save any memory by run-length encoding vectors this short, runlength encoding really pays off with genomic-sized data."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.381,
+            0.86,
+            0.459
+          ],
+          "content": "One place where we encounter run-length encoded values is in working with cover age(). The coverage() function takes a set of ranges and returns their coverage as an Rle object (to the end of the rightmost range). Simulating 70 random ranges over a sequence of 100 positions:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.469,
+            0.72,
+            0.591
+          ],
+          "sub_type": "algorithm",
+          "content": "> set.seed(0)\n> rngs <- IRanges(start=sample(seq\\_len(60), 10), width=7)\n> names(rngs)[9] <- \"A\" # label one range for examples later\n> rngs\\_cov <- coverage(rngs)\n> rngs\\_cov\ninteger-Rle of length 63 with 18 runs\nLengths: 11 4 3 3 1 6 4 2 5 2 7 2 3 3 1 3 2 1\nValues : 0 1 2 1 2 1 0 1 2 1 0 1 2 3 4 3 2 1",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.6,
+            0.86,
+            0.659
+          ],
+          "content": "These ranges and coverage can be seen in Figure 9-17 (as before, the y position of the ranges does not mean anything; it’s chosen so they can be viewed without overlapping)."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "294"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.419,
+            0.94
+          ],
+          "content": "Chapter 9: Working with Range Data"
+        }
+      ]
+    },
+    {
+      "page_idx": 324,
+      "blocks": [
+        {
+          "type": "chart",
+          "bbox": [
+            0.141,
+            0.08,
+            0.861,
+            0.382
+          ],
+          "sub_type": "bar_stacked",
+          "content": "| X | Value |\n| --- | --- |\n| 0 | 0 |\n| ~12 | 1 |\n| ~15 | 2 |\n| ~18 | 1 |\n| ~22 | 2 |\n| ~25 | 1 |\n| ~30 | 0 |\n| ~35 | 1 |\n| ~38 | 2 |\n| ~42 | 1 |\n| ~45 | 0 |\n| ~50 | 1 |\n| ~53 | 2 |\n| ~55 | 3 |\n| ~57 | 4 |\n| ~60 | 2 |\n| ~62 | 6 |",
+          "captions": [
+            {
+              "bbox": [
+                0.139,
+                0.385,
+                0.52,
+                0.406
+              ],
+              "content": "Figure 9-17. Ranges and their coverage plotted"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_324_chart_0.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.422,
+            0.86,
+            0.482
+          ],
+          "content": "In Chapter 8, we saw how powerful R’s subsetting is at allowing us to extract and work with specific subsets of vectors, matrices, and dataframes. We can work with subsets of a run-length encoded sequence using similar semantics:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.489,
+            0.864,
+            0.613
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> rngs_cov > 3  # where is coverage greater than 3?\nlogical-Rle of length 63 with 3 runs\n  Lengths:    56     1      6\n  Values : FALSE  TRUE FALSE\n> rngs_cov[as.vector(rngs_cov) > 3]  # extract the depths that are greater than 3\ninteger-Rle of length 1 with 1 run\n  Lengths: 1\n  Values : 4\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.622,
+            0.861,
+            0.7
+          ],
+          "content": "Additionally, we also have the useful option of using IRanges objects to extract subsets of a run-length encoded sequence. Suppose we wanted to know what the coverage was in the region overlapping the range labeled “A” in Figure 9-17. We can subset Rle objects directly with IRanges objects:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.709,
+            0.473,
+            0.771
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> rngs_cov[rngs['A']]\ninteger-Rle of length 7 with 2 runs\nLengths: 5 2\nValues : 2 1\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.779,
+            0.859,
+            0.819
+          ],
+          "content": "If instead we wanted the mean coverage within this range, we could simply pass the result to mean():"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.172,
+            0.828,
+            0.407,
+            0.86
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> mean(rngs_cov[rngs['A']])\n[1] 1.714286\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.42,
+            0.923,
+            0.799,
+            0.94
+          ],
+          "content": "An Interactive Introduction to Range Data with GenomicRanges"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "295"
+        }
+      ]
+    },
+    {
+      "page_idx": 325,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.08,
+            0.861,
+            0.198
+          ],
+          "content": "Numerous analysis tasks in genomics involve calculating a summary of some sequence (coverage, GC content, nucleotide diversity, etc.) for some set of ranges (repetitive regions, protein coding sequences, low-recombination regions, etc.). These calculations are trivial once our data is expressed as ranges and sequences, and we use the methods in IRanges. Later in this chapter, we’ll see how GenomicRanges provides nearly identical methods tailored to these tasks on genomic data."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.214,
+            0.624,
+            0.234
+          ],
+          "level": 2,
+          "content": "Going from run-length encoded sequences to ranges with slice()"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.242,
+            0.861,
+            0.414
+          ],
+          "content": "Earlier, we used rngs\\_cov > 3 to create a run-length encoded vector of TRUE/FALSE values that indicate whether the coverage for a position was greater than 3. Suppose we wanted to now create an IRanges object containing all regions where coverage is greater than 3. What we want is an operation that’s the inverse of using ranges to subset a sequence—using a subset of sequence to define new ranges. In genomics, we use these types of operations that define new ranges quite frequently—for example, taking coverage and defining ranges corresponding to extremely high-coverage peaks, or a map of per-base pair recombination estimates and defining a recombinational hotspot region."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.424,
+            0.861,
+            0.522
+          ],
+          "content": "It’s very easy to create ranges from run-length encoded vectors. The function slice() takes a run-length encoded numeric vector (e.g., of coverage) as its argument and slices it, creating a set of ranges where the run-length encoded vector has some minimal value. For example, we could take our coverage Rle object rngs\\_cov and slice it to create ranges corresponding to regions with more than 2x coverage:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.53,
+            0.557,
+            0.685
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> min_cov2 <- slice(rngs_cov, lower=2)\n> min_cov2\nViews on a 63-length Rle subject\n\nviews:\n    start end width\n[1]     16  18      3 [2 2 2]\n[2]     22  22      1 [2]\n[3]     35  39      5 [2 2 2 2 2]\n[4]     51  62      12 [2 2 2 3 3 3 4 3 3 3 2 2]\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.693,
+            0.861,
+            0.807
+          ],
+          "content": "This object that’s returned is called a view. Views combine a run-length encoded vectors and ranges, such that each range is a “view” of part of the sequence. In this case, each view is a view on to the part of the sequence that has more than 2x coverage. The numbers to the right of the ranges are the underlying elements of the run-length encoded vector in this range. If you’re simply interested in ranges, it’s easy to extract out the underlying ranges:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.172,
+            0.817,
+            0.341,
+            0.894
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> ranges(min_cov2)\nIRanges of length 4\n    start end width\n[1]     16   18      3\n[2]     22   22      1\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "296"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.419,
+            0.94
+          ],
+          "content": "Chapter 9: Working with Range Data"
+        }
+      ]
+    },
+    {
+      "page_idx": 326,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.173,
+            0.081,
+            0.34,
+            0.113
+          ],
+          "sub_type": "code",
+          "content": "```txt\n[3]    35  39    5\n[4]    51  62    12\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.121,
+            0.862,
+            0.239
+          ],
+          "content": "The slice() method is quite handy when we need to define coverage peaks—regions where coverage of experimental data like aligned reads is high such that could indicate something biologically interesting. For example, after looking at a histogram of genome-wide coverage, we could define a coverage threshold that encapsulates outliers, use slice() to find the regions with high coverage, and then see where these regions fall and if they overlap other interesting biological features."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.255,
+            0.334,
+            0.274
+          ],
+          "level": 2,
+          "content": "Advanced IRanges: Views"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.281,
+            0.861,
+            0.357
+          ],
+          "content": "Before we go any further, the end of this section goes into some deeper, slightly more complex material. If you’re struggling to keep up at this point, it may be worth skipping to “Storing Genomic Ranges with GenomicRanges” on page 299 and coming back later to this section."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.367,
+            0.861,
+            0.465
+          ],
+          "content": "OK, intrepid reader, let’s dig a bit deeper into these Views objects we saw earlier. While they may seem a bit strange at first, views are incredibly handy. By combining a sequence vector and ranges, views simplify operations that involve aggregating a sequence vector by certain ranges. In this way, they’re similar to calculating per-group summaries as we did in Chapter 8, but groups are ranges."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.473,
+            0.861,
+            0.532
+          ],
+          "content": "For example, we could summarize the views we created earlier using slice() using functions like viewMeans(), viewMaxs(), and even viewApply(), which applies an arbitrary function to views:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.54,
+            0.507,
+            0.634
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> viewMeans(min_cov2)\n[1] 2.000000 2.000000 2.000000 2.666667\n> viewMaxs(min_cov2)\n[1] 2 2 2 4\n> viewApply(min_cov2, median)\n[1] 2 2 2 3\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.642,
+            0.86,
+            0.721
+          ],
+          "content": "Each element of these returned vectors is a summary of a range’s underlying runlength encoded vector (in this case, our coverage vector min\\_cov2 summarized by the ranges we carved out using slice()). Also, there are a few other built-in view summarization methods; see help(viewMeans) for a full list."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.73,
+            0.861,
+            0.807
+          ],
+          "content": "Using Views, we can also create summaries of sequences by window/bin. In the views lingo, we create a set of ranges for each window along a sequence and then summarize the views onto the underlying sequence these windows create. For example, if we wanted to calculate the average coverage for windows 5-positions wide:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.815,
+            0.718,
+            0.895
+          ],
+          "sub_type": "code",
+          "content": "```r\n> length(rngs_cov) ①\n[1] 63\n> bwidth <- 5L ②\n> end <- bwidth * floor(length(rngs_cov) / bwidth) ③\n> windows <- IRanges(start=seq(1, end, bwidth), width=bwidth) ④\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.42,
+            0.923,
+            0.799,
+            0.94
+          ],
+          "content": "An Interactive Introduction to Range Data with GenomicRanges"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.859,
+            0.937
+          ],
+          "content": "297"
+        }
+      ]
+    },
+    {
+      "page_idx": 327,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.081,
+            0.619,
+            0.436
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> head(windows)\nIRanges of length 6\n    start end width\n[1]     1   5       5\n[2]     6  10       5\n[3]     11  15       5\n[4]     16  20       5\n[5]     21  25       5\n[6]     26  30       5\n> cov_by_wnd <- Views(rngs_cov, windows) ⑤\n> head(cov_by_wnd)\nViews on a 63-length Rle subject\n\nviews:\n    start end width\n[1]     1   5       5 [0 0 0 0 0]\n[2]     6  10       5 [0 0 0 0 0]\n[3]     11  15       5 [0 1 1 1 1]\n[4]     16  20       5 [2 2 2 1 1]\n[5]     21  25       5 [1 2 1 1 1]\n[6]     26  30       5 [1 1 1 0 0]\n> viewMeans(cov_by_wnd) ⑥\n[1] 0.0 0.0 0.8 1.6 1.2 0.6 0.8 1.8 0.2 0.4 2.4 3.2\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.445,
+            0.829,
+            0.465
+          ],
+          "content": "There’s a bit of subtle arithmetic going on here, so let’s step through piece by piece."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.137,
+            0.48,
+            0.861,
+            0.88
+          ],
+          "sub_type": "text",
+          "content": "1 First, note that our coverage vector is 63 elements long. We want to create consecutive windows along this sequence, with each window containing 5 elements. If we do so, we’ll have 3 elements of the coverage vector hanging off the end (63 divided by 5 is 12, with a remainder of 3). These overhanging ends are a common occurrence when summarizing data by windows, and it’s common to just ignore these last elements. While cutting these elements off seems like a strange approach, a summary calculated over a smaller range will have a higher variance that can lead to strange results. Dropping this remainder is usually the simplest and best option.\nWe’ll set bwidth to be our bin width.\nNow, we compute the end position of our window. To do so, we divide our coverage vector length by the bin width, and chop off the remainder using the floor() function. Then, we multiply by the bin width to give the end position.\n4 Next, we create our windows using IRanges. We use seq() to generate the start positions: a start position from 1 to our end (60, as we just programmatically calculated), moving by 5 each time. If we wanted a different window step width, we could change the third (by) argument of seq() here. With our start position specified, we simply set width=bwidth to give each window range a width of 5."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "298"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.419,
+            0.94
+          ],
+          "content": "Chapter 9: Working with Range Data"
+        }
+      ]
+    },
+    {
+      "page_idx": 328,
+      "blocks": [
+        {
+          "type": "list",
+          "bbox": [
+            0.137,
+            0.087,
+            0.858,
+            0.24
+          ],
+          "sub_type": "text",
+          "content": "With our run-length encoded coverage vector and our windows as IRanges objects, we create our Views object. Views effectively groups each element of the coverage vector rngs\\_cov inside a window.\nFinally, we compute summaries on these Views. Here we use viewMeans() to get the mean coverage per window. We could use any other summarization view method (e.g., viewMaxs(), viewSums(), etc.) or use viewApply() to apply any function to each view."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.25,
+            0.859,
+            0.327
+          ],
+          "content": "Summarizing a sequence of numeric values by window over a sequence such as a chromosome is a common task in genomics. The techniques used to implement the generic solution to this problem with ranges, run-length encoded vectors, and views are directly extensible to tackling this problem with real genomics data."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.337,
+            0.859,
+            0.455
+          ],
+          "content": "Because GenomicRanges extends IRanges, everything we’ve learned in the previous sections can be directly applied to the genomic version of an IRanges object, GRanges. None of the function names nor behaviors differ much, besides two added complications: dealing with multiple chromosomes and strand. As we’ll see in the next sections, GenomicRanges manages these complications and greatly simplifies our lives when working with genomic data."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.47,
+            0.618,
+            0.496
+          ],
+          "level": 2,
+          "content": "Storing Genomic Ranges with GenomicRanges"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.504,
+            0.861,
+            0.643
+          ],
+          "content": "The GenomicRanges package introduces a new class called GRanges for storing genomic ranges. The GRanges builds off of IRanges. IRanges objects are used to store ranges of genomic regions on a single sequence, and GRanges objects contain the two other pieces of information necessary to specify a genomic location: sequence name (e.g., which chromosome) and strand. GRanges objects also have metadata columns, which are the data linked to each genomic range. We can create GRanges objects much like we did with IRanges objects:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.651,
+            0.668,
+            0.87
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> library(GenomicRanges)\n> gr <- GRanges(seqname=c(\"chr1\", \"chr1\", \"chr2\", \"chr3\"),\n                   ranges=IRanges(start=5:8, width=10),\n                   strand=c(\"+\", \"-\", \"-\", \"+\"))\n> gr\nGRanges with 4 ranges and 0 metadata columns:\n    seqnames      ranges strand\n        <Rle> <IRanges>   <Rle>\n[1]     chr1    [5, 14]     +\n[2]     chr1    [6, 15]     -\n[3]     chr2    [7, 16]     -\n[4]     chr3    [8, 17]     +\n---\nseqlengths:\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.42,
+            0.923,
+            0.798,
+            0.94
+          ],
+          "content": "An Interactive Introduction to Range Data with GenomicRanges"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "299"
+        }
+      ]
+    },
+    {
+      "page_idx": 329,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.197,
+            0.081,
+            0.322,
+            0.111
+          ],
+          "sub_type": "code",
+          "content": "```txt\nchr1 chr2 chr3\n    NA    NA    NA\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.121,
+            0.86,
+            0.16
+          ],
+          "content": "Using the GRanges() constructor, we can also add arbitrary metadata columns by specifying additional named arguments:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.169,
+            0.752,
+            0.4
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> gr <- GRanges(seqname=c(\"chr1\", \"chr1\", \"chr2\", \"chr3\"),\n        ranges=IRanges(start=5:8, width=10),\n        strand=c(\"+\", \"-\", \"-\", \"+\"), gc=round(runif(4), 3))\n> gr\nGRanges with 4 ranges and 1 metadata column:\n    seqnames      ranges strand |       gc\n        <Rle> <IRanges>  <Rle> | <numeric>\n[1]     chr1   [5, 14]      + |      0.897\n[2]     chr1   [6, 15]      - |      0.266\n[3]     chr2   [7, 16]      - |      0.372\n[4]     chr3   [8, 17]      + |      0.573\n---\nseqlengths:\n    chr1 chr2 chr3\n        NA    NA    NA\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.41,
+            0.859,
+            0.468
+          ],
+          "content": "This illustrates the structure of GRanges objects: genomic location specified by sequence name, range, and strand (on the left of the dividing bar), and metadata columns (on the right). Each row of metadata corresponds to a range on the same row."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.477,
+            0.86,
+            0.673
+          ],
+          "content": "All metadata attached to a GRanges object are stored in a DataFrame, which behaves identically to R’s base data.frame, but supports a wider variety of column types. For example, DataFrames allow for run-length encoded vectors to save memory (whereas R’s base data.frame does not). Whereas in the preceding example metadata columns are used to store numeric data, in practice we can store any type of data: identifiers and names (e.g., for genes, transcripts, SNPs, or exons), annotation data (e.g., conservation scores, GC content, repeat content, etc.), or experimental data (e.g., if ranges correspond to alignments, data like mapping quality and the number of gaps). As we’ll see throughout the rest of this chapter, the union of genomic location with any type of data is what makes GRanges so powerful."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.681,
+            0.86,
+            0.817
+          ],
+          "content": "Also, notice seqlengths in the gr object we’ve just created. Because GRanges (and genomic range data in general) is always with respect to a particular genome version, we usually know beforehand what the length of each sequence/chromosome is. Knowing the length of chromosomes is necessary when computing coverage and gaps (because we need to know where the end of the sequence is, not just the last range). We can specify the sequence lengths in the GRanges constructor, or set it after the object has been created using the seqlengths() function:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.826,
+            0.666,
+            0.89
+          ],
+          "sub_type": "code",
+          "content": "```python\n> seqlens <- c(chr1=152, chr2=432, chr3=903)\n> gr <- GRanges(seqname=c(\"chr1\", \"chr1\", \"chr2\", \"chr3\"),\n                  ranges=IRanges(start=5:8, width=10),\n                  strand=c(\"+\", \"-\", \"-\", \"+\"),\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "300"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.419,
+            0.94
+          ],
+          "content": "Chapter 9: Working with Range Data"
+        }
+      ]
+    },
+    {
+      "page_idx": 330,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.081,
+            0.727,
+            0.311
+          ],
+          "sub_type": "code",
+          "content": "```txt\ngc=round(runif(4), 3),\n    seqlengths=seqlens)\n> seqlengths(gr) <- seqlens # another way to do the same as above\n> gr\nGRanges with 4 ranges and 1 metadata column:\n    seqnames      ranges strand |     gc\n        <Rle> <IRanges>   <Rle> | <numeric>\n[1]     chr1    [5, 14]       + |     0.897\n[2]     chr1    [6, 15]       - |     0.266\n[3]     chr2    [7, 16]       - |     0.372\n[4]     chr3    [8, 17]       + |     0.573\n---\nseqlengths:\n    chr1 chr2 chr3\n    152  432 903\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.322,
+            0.86,
+            0.381
+          ],
+          "content": "We access data in GRanges objects much like we access data from IRanges objects: with accessor functions. Accessors for start position, end position, and width are the same as with IRanges object:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.39,
+            0.306,
+            0.482
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> start(gr)\n[1] 5 6 7 8\n> end(gr)\n[1] 14 15 16 17\n> width(gr)\n[1] 10 10 10 10\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.491,
+            0.859,
+            0.53
+          ],
+          "content": "For the GRanges-specific data like sequence name and strand, there are new accessor functions—seqnames and strand:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.54,
+            0.465,
+            0.694
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> seqnames(gr)\nfactor-Rle of length 4 with 3 runs\n  Lengths:   2   1   1\n  Values : chr1 chr2 chr3\nLevels(3): chr1 chr2 chr3\n> strand(gr)\nfactor-Rle of length 4 with 3 runs\n  Lengths: 1 2 1\n  Values : + - +\nLevels(3): + - *\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.703,
+            0.859,
+            0.743
+          ],
+          "content": "The returned objects are all run-length encoded. If we wish to extract all IRanges ranges from a GRanges object, we can use the ranges accessor function:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.172,
+            0.753,
+            0.339,
+            0.861
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> ranges(gr)\nIRanges of length 4\n    start end width\n[1]     5  14    10\n[2]     6  15    10\n[3]     7  16    10\n[4]     8  17    10\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.42,
+            0.923,
+            0.798,
+            0.94
+          ],
+          "content": "An Interactive Introduction to Range Data with GenomicRanges"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "301"
+        }
+      ]
+    },
+    {
+      "page_idx": 331,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.081,
+            0.859,
+            0.121
+          ],
+          "content": "Like most objects in R, GRanges has a length that can be accessed with length(), and supports names:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.129,
+            0.549,
+            0.36
+          ],
+          "sub_type": "code",
+          "content": "```asm\n> length(gr)\n[1] 4\n> names(gr) <- letters[1:length(gr)]\n> gr\nGRanges with 4 ranges and 1 metadata column:\n    seqnames      ranges strand |        gc\n        <Rle> <IRanges>  <Rle> | <numeric>\n    a     chr1   [5, 14]       + |       0.897\n    b     chr1   [6, 15]       - |       0.266\n    c     chr2   [7, 16]       - |       0.372\n    d     chr3   [8, 17]       + |       0.573\n    ---\n    seqlengths:\n        chr1 chr2 chr3\n        100  100  100\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.37,
+            0.86,
+            0.429
+          ],
+          "content": "The best part of all is that GRanges objects support the same style of subsetting you’re already familiar with (i.e., from working with other R objects like vectors and dataframes). For example, if you wanted all ranges with a start position greater than 7:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.437,
+            0.54,
+            0.606
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> start(gr) > 7\n[1] FALSE FALSE FALSE  TRUE\n> gr[start(gr) > 7]\nGRanges with 1 range and 1 metadata column:\n    seqnames   ranges strand |      gc\n        <Rle> <IRanges>  <Rle> | <numeric>\n    d     chr3   [8, 17]      + |      0.573\n  ---\n  seqlengths:\n    chr1 chr2 chr3\n      100  100  100\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.616,
+            0.861,
+            0.695
+          ],
+          "content": "Once again, there’s no magic going on; GRanges simply interprets a logical vector of TRUE/FALSE values given by start(gr) > 7 as which rows to include/exclude. Using the seqname() accessor, we can count how many ranges there are per chromosome and then subset to include only ranges for a particular chromosome:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.704,
+            0.549,
+            0.89
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> table(seqnames(gr))\n\nchr1 chr2 chr3\n  2   1   1\n> gr[seqnames(gr) == \"chr1\"]\nGRanges with 2 ranges and 1 metadata column:\n    seqnames     ranges strand |      gc\n      <Rle> <IRanges>  <Rle> | <numeric>\na     chr1    [5, 14]       + |      0.897\nb     chr1    [6, 15]       - |      0.266\n---\nseqlengths:\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "302"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.419,
+            0.94
+          ],
+          "content": "Chapter 9: Working with Range Data"
+        }
+      ]
+    },
+    {
+      "page_idx": 332,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.199,
+            0.082,
+            0.321,
+            0.111
+          ],
+          "sub_type": "code",
+          "content": "```txt\nchr1 chr2 chr3\n 100  100  100\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.121,
+            0.604,
+            0.139
+          ],
+          "content": "The mcols() accessor is used access metadata columns:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.15,
+            0.465,
+            0.273
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> mcols(gr)\nDataFrame with 4 rows and 1 column\n        gc\n    <numeric>\n1       0.897\n2       0.266\n3       0.372\n4       0.573\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.283,
+            0.859,
+            0.338
+          ],
+          "content": "Because this returns a DataFrame and DataFrame objects closely mimic data.frame, \\$ works to access specific columns. The usual syntactic shortcut for accessing a column works too:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.35,
+            0.406,
+            0.412
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> mcols(gr)$gc\n[1] 0.897 0.266 0.372 0.573\n> gr$gc\n[1] 0.897 0.266 0.372 0.573\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.42,
+            0.859,
+            0.478
+          ],
+          "content": "The real power is when we combine subsetting with the data kept in our metadata columns. Combining these makes complex queries trivial. For example, we could easily compute the average GC content of all ranges on chr1:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.487,
+            0.548,
+            0.55
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> mcols(gr[seqnames(gr) == \"chr1\")]$gc\n[1] 0.897 0.266\n> mean(mcols(gr[seqnames(gr) == \"chr1\")]$gc)\n[1] 0.5815\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.558,
+            0.859,
+            0.613
+          ],
+          "content": "If we wanted to find the average GC content for all chromosomes, we would use the same split-apply-combine strategy we learned about in Chapter 9. We’ll see this later on."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.632,
+            0.478,
+            0.658
+          ],
+          "level": 2,
+          "content": "Grouping Data with GRangesList"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.664,
+            0.859,
+            0.764
+          ],
+          "content": "In Chapter 8, we saw how R’s lists can be used to group data together, such as after using split() to split a dataframe by a factor column. Grouping data this way is useful for both organizing data and processing it in chunks. GRanges objects also have their own version of a list, called GRangesList, which are similar to R’s lists. GRanges Lists can be created manually:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.17,
+            0.772,
+            0.845,
+            0.882
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> gr1 <- GRanges(c(\"chr1\", \"chr2\"), IRanges(start=c(32, 95), width=c(24, 123)))\n> gr2 <- GRanges(c(\"chr8\", \"chr2\"), IRanges(start=c(27, 12), width=c(42, 34)))\n> gr1 <- GRangesList(gr1, gr2)\n> gr1\nGRangesList of length 2:\n[[1]]\nGRanges with 2 ranges and 0 metadata columns:\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.42,
+            0.923,
+            0.798,
+            0.94
+          ],
+          "content": "An Interactive Introduction to Range Data with GenomicRanges"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "303"
+        }
+      ]
+    },
+    {
+      "page_idx": 333,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.081,
+            0.556,
+            0.311
+          ],
+          "sub_type": "code",
+          "content": "```txt\nseqnames   ranges strand\n        <Rle> <IRanges>  <Rle>\n[1]     chr1 [32,  55]      *\n[2]     chr2 [95, 217]      *\n\n[[2]]\nGRanges with 2 ranges and 0 metadata columns:\n    seqnames  ranges strand\n[1]     chr8 [27, 68]      *\n[2]     chr2 [12, 45]      *\n\n---\nseqlengths:\nchr1 chr2 chr8\nNA    NA    NA\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.322,
+            0.62,
+            0.341
+          ],
+          "content": "GRangesList objects behave almost identically to R’s lists:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.349,
+            0.556,
+            0.598
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> unlist(grl) ①\nGRanges with 4 ranges and 0 metadata columns:\n        seqnames    ranges strand\n            <Rle> <IRanges>  <Rle>\n[1]     chr1 [32,  55]      *\n[2]     chr2 [95, 217]      *\n[3]     chr8 [27,  68]      *\n[4]     chr2 [12,  45]      *\n---\nseqlengths:\n    chr1 chr2 chr8\n        NA   NA   NA\n\n> doubled_grl <- c(grl, grl) ②\n> length(doubled_grl)\n[1] 4\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.137,
+            0.614,
+            0.856,
+            0.69
+          ],
+          "sub_type": "text",
+          "content": "1 unlist() combines all GRangesList elements into a single GRanges object (much like unlisting an R list of vectors to create one long vector).\nWe can combine many GRangesList objects with c()."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.699,
+            0.859,
+            0.757
+          ],
+          "content": "Accessing certain elements works exactly as it did with R’s lists. Single brackets return GRangesList objects, and double brackets return what’s in a list element—in this case, a GRanges object:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.767,
+            0.556,
+            0.891
+          ],
+          "sub_type": "code",
+          "content": "```python\n> doubled_grl[2]\nGRangesList of length 1:\n[[1]]\nGRanges with 2 ranges and 0 metadata columns:\n    seqnames   ranges strand\n        <Rle> <IRanges>  <Rle>\n[1]     chr8 [27, 68]      *\n[2]     chr2 [12, 45]      *\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.924,
+            0.166,
+            0.936
+          ],
+          "content": "304"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.923,
+            0.419,
+            0.94
+          ],
+          "content": "Chapter 9: Working with Range Data"
+        }
+      ]
+    },
+    {
+      "page_idx": 334,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.1,
+            0.556,
+            0.311
+          ],
+          "sub_type": "code",
+          "content": "```yaml\n---\nseqlengths:\n  chr1 chr2 chr8\n    NA   NA   NA\n> doubled_grl[[2]]\nGRanges with 2 ranges and 0 metadata columns:\n    seqnames   ranges strand\n      <Rle> <IRanges>  <Rle>\n[1]     chr8 [27, 68]     *\n[2]     chr2 [12, 45]     *\n---\nseqlengths:\n  chr1 chr2 chr8\n    NA   NA   NA\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.322,
+            0.861,
+            0.401
+          ],
+          "content": "Like lists, we can also give and access list element names with the function names(). GRangesList objects also have some special features. For example, accessor functions for GRanges data (e.g., seqnames(), start(), end(), width(), ranges(), strand(), etc.) also work on GRangesList objects:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.171,
+            0.41,
+            0.466,
+            0.689
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> seqnames(grl)\nRleList of length 2\n[[1]]\nfactor-Rle of length 2 with 2 runs\n    Lengths:   1   1\n    Values : chr1 chr2\nLevels(3): chr1 chr2 chr8\n\n[[2]]\nfactor-Rle of length 2 with 2 runs\n    Lengths:   1   1\n    Values : chr8 chr2\nLevels(3): chr1 chr2 chr8\n\n> start(grl)\nIntegerList of length 2\n[[1]] 32 95\n[[2]] 27 12\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.697,
+            0.861,
+            0.875
+          ],
+          "content": "Note the class of object Bioconductor uses for each of these: RleList and Integer List. While these are classes we haven’t seen before, don’t fret—both are analogous to GRangesList: a list for a specific type of data. Under the hood, both are specialized, low-level data structures from the S4Vectors package. RleList are lists for runlength encoded vectors, and IntegerList objects are lists for integers (with added features). Both RleList and IRangesList are a bit advanced for us now, but suffice to say they behave a lot like R’s lists and they’re useful for intermediate and advanced GenomicRanges users. I’ve included some resources about these in the README file in this chapter’s directory on GitHub."
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.42,
+            0.923,
+            0.799,
+            0.94
+          ],
+          "content": "An Interactive Introduction to Range Data with GenomicRanges"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.833,
+            0.923,
+            0.858,
+            0.937
+          ],
+          "content": "305"
+        }
+      ]
+    },
+    {
+      "page_idx": 335,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.081,
+            0.861,
+            0.16
+          ],
+          "content": "In practice, we’re usually working with too much data to create GRanges objects manually with GRangesList(). More often, GRangesLists come about as the result of using the function split() on GRanges objects. For example, I’ll create some random GRanges data, and demonstrate splitting by sequence name:"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.169,
+            0.169,
+            0.692,
+            0.68
+          ],
+          "sub_type": "code",
+          "content": "```txt\n> chrs <- c(\"chr3\", \"chr1\", \"chr2\", \"chr2\", \"chr3\", \"chr1\")\n> gr <- GRanges(chrs, IRanges(sample(1:100, 6, replace=TRUE),\n                    width=sample(3:30, 6, replace=TRUE)))\n> head(gr)\nGRanges with 6 ranges and 0 metadata columns:\n        seqnames     ranges strand\n            <Rle> <IRanges>  <Rle>\n[1]      chr3 [90,  93]       *\n[2]      chr1 [27,  34]       *\n[3]      chr2 [38,  44]       *\n[4]      chr2 [58,  79]       *\n[5]      chr3 [91, 103]       *\n[6]      chr1 [21,  44]       *\n---\nseqlengths:\n    chr3 chr1 chr2\n        NA   NA   NA\n\n> gr_split <- split(gr, seqnames(gr))\n> gr_split[[1]]\nGRanges with 4 ranges and 0 metadata columns:\n        seqnames     ranges strand\n            <Rle> <IRanges>  <Rle>\n[1]      chr3 [90,  93]       *\n[2]      chr3 [91, 103]       *\n[3]      chr3 [90, 105]       *\n[4]      chr3 [95, 117]       *\n---\nseqlengths:\n    chr3 chr1 chr2\n        NA   NA   NA\n> names(gr_split)\n[1] \"chr3\" \"chr1\" \"chr2\"\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.688,
+            0.859,
+            0.768
+          ],
+          "content": "Bioconductor also provides an unsplit() method to rejoin split data on the same factor that was used to split it. For example, because we created gr\\_split by splitting on seqnames(gr), we could unsplit gr\\_split with unsplit(gr\\_split, seq names(gr))."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.776,
+            0.861,
+            0.895
+          ],
+          "content": "So why split GRanges objects into GRangesList objects? The primary reason is that GRangesList objects, like R’s base lists, are a natural way to group data. For example, if we had a GRanges object containing all exons, we may want to work with exons grouped by what gene or transcript they belong to. With all exons grouped in a GRangesList object, exons for a particular gene or transcript can be returned by accessing a particular list element."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.14,
+            0.923,
+            0.166,
+            0.936
+          ],
+          "content": "306"
+        },
+        {
+          "type": "footer",
+          "bbox": [
+            0.201,
+            0.922,
+            0.419,
+            0.94
+          ],
+          "content": "Chapter 9: Working with Range Data"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Bioinformatics Data Skills",
+      "authors": [
+        "Vince Buffalo"
+      ],
+      "languages": [
+        "EN"
+      ],
+      "created_at": "2015-06-30T16:29:18Z",
+      "modified_at": "2015-06-30T13:45:47-04:00",
+      "creator_application": "AH CSS Formatter V6.2 MR4 for Linux64 : 6.2.6.18551 (2014/09/24 15:00JST)",
+      "producer_application": "Antenna House PDF Output Library 6.2.609 (Linux64)",
+      "page_count": 538,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 320,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 321,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 322,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 323,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 324,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 325,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 326,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 327,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 328,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 329,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 330,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 331,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 332,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 333,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 334,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        },
+        {
+          "page_idx": 335,
+          "width_pt": 504.0,
+          "height_pt": 661.5
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}
