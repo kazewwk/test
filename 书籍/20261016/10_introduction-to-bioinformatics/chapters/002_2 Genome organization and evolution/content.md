@@ -1,0 +1,1791 @@
+# 2 Genome organization and evolution
+
+原始 PDF 第 85–136 页。
+
+Genome organization and evolution
+
+## LEARNING GOALS
+
+• Knowing the basic sizes, contents, and organizing principles of simple and complex genomes.
+• Understanding how genomes are analysed, and the relation of gene sequences to phenotypic features, including inherited diseases.
+• Recognizing the importance and the difficulty of deriving from a complete genome sequence the amino acid sequences of the proteins encoded, and assigning functions to these proteins.
+• Understanding how to find genes associated with inherited diseases, and how the availability of the complete human genome has changed such investigations. Compare the identification of the gene for cystic fibrosis, by classical methods, with modern genome-wide association studies.
+• Knowing the general ideas of the contents of particular genomes, and how the genomes of prokaryotes and eukaryotes differ systematically, and appreciating the implications of general surveys of genomes of different organisms.
+Realizing that many published genomes record the characteristics of only a single individual, and that there is considerable variation within populations and great variation between separated populations of organisms belonging to the same species. For humans there has been extensive collection of polymorphisms and their distribution in different populations, complete sequencing of many individuals, and investigation of the effects of disease. Genome variation within other species has been the subject of some study, but to a minor extent compared to humans.
+• Appreciating the power of DNA sequences in studying human history, including inference of human migration patterns, and as records of plant and animal domestication.
+• Recognizing the power of DNA sequencing for personal identification, its application in paternity and criminal cases, and the questions of social policy it raises.
+• Appreciating the power of comparative genomics to identify features responsible for differences between species: what is it that makes us human?
+
+## Genomes, transcriptomes, and proteomes
+
+The genome of a typical bacterium comes as a single DNA molecule of about 5 million characters, about the same as a fairly large book. The number of characters in the E. coli genome and in the first folio edition of Shakespeare’s plays differ by less than 0.1%. If extended, the bacterial genome would be about 2 mm long. (It has to fit into a cell with a diameter of about 0.001 mm!). The DNA of higher organisms is organized into chromosomes: normal human cells contain 23 chromosome pairs. The total amount of genetic information per cell—the sequence of nucleotides of DNA—is very nearly constant for all members of a species, but varies widely between species, as shown in the table (see Box 2.1 for a longer list). There is no simple proportionality between genome size and number of proteins encoded.
+
+| Organism | Genome size (base pairs) |
+| --- | --- |
+| Epstein-Barr virus | 0.172 × 106 |
+
+85
+
+---
+
+| Bacterium (Escherichia coli) | 4.6 × 106 |
+| --- | --- |
+| Yeast (Saccharomyces cerevisiae) | 12.5 × 106 |
+| Nematode worm (Caenorahbditis elegans) | 100.3 × 106 |
+| Thale cress (Arabidopsis thaliana) | 115.4 × 106 |
+| Fruit fly (Drosophila melanogaster) | 128.3 × 106 |
+| Human (Homo sapiens) | 3223 × 106 |
+
+Different patterns of transcribed RNAs and translated proteins also characterize different species, and different tissues within an organism.
+
+Some RNAs, such as mRNA involved in protein coding, are transient. Some, such as the RNA components of the ribosome, are stable. Some RNAs are involved in gene regulation. These include microRNAs (miRNAs), small interfering RNAs (siRNAs), and piwi-interacting RNAs (piRNAs), which interact with mRNA to inhibit translation. It is clear that cellular RNA is a far more complex domain than was for a long time adequately appreciated.
+
+The relationship between DNA content and protein content is not direct. As a very rough rule of thumb, all metazoa have slightly over 20 000 protein-coding genes. But not all DNA codes for proteins. Conversely, some genes exist in multiple copies. In eukarya, many genes produce several different proteins by alternative splicing. Therefore, the amount of protein sequence information in a cell, much less the number and pattern of different proteins expressed, cannot easily be estimated from the genome size (see Box 2.1).
+
+## Genes
+
+A single gene coding for a particular protein corresponds to a sequence of nucleotides along one or more regions of a molecule of DNA. In cells, genes may appear on either strand of DNA. Bacterial genes are continuous regions of DNA. The nucleotide sequence of the DNA and the amino acid sequence of the corresponding protein are collinear. Therefore, the functional unit of genetic sequence information from a bacterium is a string of 3N nucleotides encoding a string of N amino acids, or a string of N nucleotides encoding a structural RNA molecule of N nucleotides, together with associated control sequences. Such a string, equipped with annotations, would form a typical entry an archive of genetic sequences.
+
+![](../../raw/pages_0081-0096/images/page_85_image_6.jpg)
+
+## See Weblems 2.1 – 2.6
+
+In eukarya the nucleotide sequences that encode amino acid sequences of proteins are organized in a more complex manner. Frequently one gene appears split into separate segments in the genomic DNA. An exon—an **ex**pressed regi**on**—is a stretch of DNA retained in the mature mRNA that the ribosome translates into protein. An intron is an **int**ervening regi**on** between two exons. Cellular machinery splices together segments of initial RNA transcripts, based on signal sequences flanking the exons in the sequences themselves. Many introns are very long, in some cases substantially longer than the exons.
+
+The genes that code for proteins, and for structural RNA molecules, present only a static picture of the genome.
+
+Control information organizes the expression of genes. Control mechanisms may turn genes on and off, or regulate gene expression more finely. Cascades of controls respond to concentrations of nutrients, or to stress, or to control the cell cycle. Regulatory networks orchestrate complex programmes of development during the lifetimes of higher organisms.
+
+86
+
+---
+
+Many control regions of DNA lie near the segments coding for proteins. They contain signal sequences that serve as binding sites for the molecules that transcribe the DNA sequence, or sequences that bind regulatory molecules that can block transcription. Bacterial genomes contain examples of contiguous genes, coding for several proteins that catalyse successive steps in an integrated sequence of reactions, all under the control of the same regulatory sequence. F. Jacob, J. Monod, and E. Wollman named
+
+Box 2.1 Genome sizes
+
+| Organism | Number of base pairs | Number of genes | Comment |
+| --- | --- | --- | --- |
+| ΦX-174 | 5386 | 10 | Virus infecting E. coli |
+| Human mitochondrion | 16 569 | 37 | Subcellular organelle |
+| Epstein-Barr virus | 172 282 | 80 | Cause of mononucleosis |
+| Mycoplasma pneumoniae | 816 394 | 680 | Cause of cyclic pneumonia epidemics |
+| Rickettsia prowazekii | 1 111 523 | 878 | Bacterial cause of epidemic typhus |
+| Treponema pallidum | 1 138 011 | 1039 | Bacterial cause of syphilis |
+| Borrelia burgdorferi | 1 471 725 | 1738 | Bacterial cause of Lyme disease |
+| Aquifex aeolicus | 1 551 335 | 1749 | Bacterium from hot springs |
+| Thermoplasma acidophilum | 1 564 905 | 1509 | Archaeal prokaryote lacking a cell wall |
+| Campylobacter jejuni | 1 641 481 | 1708 | Frequent cause of food poisoning |
+| Methanococcus jannaschii | 1 664 970 | 1783 | Archaeal prokaryote thermophile |
+| Helicobacter pylori | 1 667 867 | 1589 | Chief cause of stomach ulcers |
+| Haemophilus influenzae | 1 830 138 | 1738 | Bacterial cause of middle ear infections |
+| Thermotoga maritima | 1 860 725 | 1879 | Marine bacterium |
+| Archaeoglobus fulgidus | 2 178 400 | 2437 | Another archaeon |
+| Deinococcus radiodurans | 3 284 156 | 3187 | Radiation-resistant bacterium |
+| Synechocystis | 3 573 470 | 4003 | Cyanobacterium, 'blue-green alga' |
+| Vibrio cholerae | 4 033 460 | 3890 | Cause of cholera |
+| Mycobacterium tuberculosis | 4 411 529 | 4275 | Cause of tuberculosis |
+| Bacillus subtilis | 4 214 814 | 4779 | Popular in molecular biology |
+| Escherichia coli | 4 639 221 | 4406 | Molecular biologists' all-time favourite |
+| Pseudomonas aeruginosa | 6 264 403 | 5570 | Largest prokaryote yet sequenced |
+| Saccharomyces cerevisiae | $12.1 \times 10^6$ | 6172 | Yeast; first eukaryotic genome sequenced |
+| Caenorhabditis elegans | $95.5 \times 10^6$ | 19 099 | The worm |
+| Arabidopsis thaliana | $1.17 \times 10^8$ | 25 498 | Flowering plant (angiosperm) |
+| Drosophila melanogaster | $1.8 \times 10^8$ | 13 601 | The fruit fly |
+| Takifugu rubripes | $3.9 \times 10^8$ | 30 000 | Fugu fish |
+| Human | $3.2 \times 10^9$ | 21 000 |  |
+| Wheat | $16 \times 10^9$ | 30 000 |  |
+| Psilotum nudum | $71 \times 10^9$ | ? | Whisk fern, a simple plant |
+| Necturus lewisi | $118 \times 10^9$ |  | Gulf coast waterdog (salamander) |
+| Paris japonica | $149 \times 10^9$ |  | Canopy plant |
+
+Some of the largest genomes have arisen by polyploidization.
+
+these operons. One can readily understand the utility of a parallel control mechanism.
+
+In higher organisms, epigenetic signals such as DNA methylation and histone modification direct tissue-specific expression of developmentally regulated genes. DNA methylation is stable during tissue differentiation, surviving cell division. When a cell divides, enzymes copy the methylation
+
+87
+
+---
+
+patterns, preserving the settings of the regulatory switches.
+
+Products of certain genes cause cells to commit suicide, a process called apoptosis. Defects in the apoptotic mechanism leading to uncontrolled growth are observed in some cancers, and stimulation of these mechanisms is a general approach to cancer therapy.
+
+Eukaryotic chromosomes contain complexes of DNA with histones. Chromatin remodelling is an important mechanism of transcriptional control. Reversible chemical modification of histones, by a variety of reactions including deacetylation, methylation, decarboxylation, phosphorylation, ubiquitinylation, and sumoylation, leads to alterations of the DNA–histone interactions that render transcription-initiation sites more or less accessible.
+
+The conclusion is that to reduce genetic data to individual coding sequences is to disguise the very complex nature of the interrelationships among them, and to ignore the historical and integrative aspects of the genome. Robbins has expressed the situation unimprovably:
+
+Consider the 3.2 gigabytes of a human genome as equivalent to 3.2 gigabytes of files on the mass-storage device of some computer system of unknown design. Obtaining the sequence is equivalent to obtaining an image of the contents of that mass-storage device. Understanding the sequence is equivalent to reverse engineering that unknown computer system (both the hardware and the 3.2 gigabytes of software) all the way back to a full set of design and maintenance specifications.
+
+‘Reverse engineering the sequence is complicated by the fact that the resulting image of the massstorage device will not be a file-by-file copy, but rather a streaming dump of the bytes in the order they were entered into the device. Furthermore, the files are known to be fragmented. In addition, some of the device contains erased files or other garbage. Once the garbage has been recognized and discarded and the fragmented files reassembled, the reverse engineering of the codes can be undertaken with only a partial, and sometimes incorrect, understanding of the CPU on which the codes run. In fact, deducing the structure and function of the CPU is part of the project, since some of the 3.2 gigabytes are the binary specifications for the computer-assisted-manufacturing process that fabricates the CPU. In addition, one must also consider that the huge database also contains code generated from the result of literally millions of maintenance revisions performed by the worst possible set of kludge-using, spaghetti-coding, opportunistic hackers who delight in clever tricks like writing self-modifying code and relying upon undocumented system quirks.’
+
+Robbins, R.J. (1992). Challenges in the human genome project. IEEE Eng. Med. Biol., **11**, 25–34 (©1992 IEEE).
+
+## Proteomics and transcriptomics
+
+An organism’s genome gives a complete specification of the potential life of that individual. What reveals the activity of a cell at any instant, at the molecular level, is the set of RNAs being transcribed and the set of proteins synthesized. These also show the state of development of different tissues, and can in some cases mark the presence of disease. The DNA does contain some clues, notably in epigenetic markers. However, inventories of RNA molecules and proteins in cells deal in a more direct and integral way with cellular status and activity. These data are the subjects of the transcriptome and proteome projects.
+
+What kinds of data would we like to measure, and what mature experimental techniques exist to determine them? The basic goal is a spatiotemporal description of the inventory and deployment of RNAs and proteins in the organism. These vary among different tissues and different cell types and states of activity. Methods are available for efficient analysis of transcription patterns of multiple genes.
+
+88
+
+---
+
+## Proteomics
+
+Measurement of protein-coding RNA transcripts provides more information about the cell’s proteins than genome sequences do. However, because proteins are both synthesized and ‘turned over’ at different rates, it is also necessary to measure proteins directly. High-resolution two-dimensional polyacrylamide gel electrophoresis (2D PAGE) shows the pattern of protein content in a sample. Mass-spectrometric techniques identify the proteins into which the sample has been separated. We shall develop these topics in Chapter 9.
+
+Application of these methods provides a picture of the protein-based activity of an organism, as the genome provides a complete set of potential proteins. R. Simpson has drawn an analogy: if the genome is a list of the instruments in an orchestra, the proteome is the orchestra in the process of playing a symphony.
+
+Historically the chemical problem of determining amino acid sequences of proteins directly was solved before the genetic code was established and before methods for determination of nucleotide sequences of DNA were developed. (F. Sanger’s sequencing of insulin in 1955 first proved that proteins had definite amino acid sequences, a proposition that until then was hypothetical.) However, much—although not all—information about the amino acid sequences of an organism’s proteins are inherent in its genome sequence, by virtue of the genetic code. Indeed, new protein sequence data are now being determined by translation of DNA sequences, rather than by direct sequencing of proteins.
+
+![](../../raw/pages_0081-0096/images/page_88_image_4.jpg)
+
+## See Weblem 2.7
+
+Yet it is important to distinguish amino acid sequences inferred by translation from DNA, and actual sequences of proteins. First we must assume that it is possible correctly to identify within DNA sequences the regions that encode proteins. The pattern-recognition programs that address this question are subject to three types of error: a genuine protein sequence may be missed entirely, an incomplete protein may be reported, or a gene may be incorrectly spliced. Several variations on the theme add to the complexity: genes for different proteins may overlap; or genes may be assembled from exons in different ways, in different tissues, or even in individual cells. In rare cases, the genetic code of a species may contain slightly different codon/amino acid mappings than the standard. In some cases, mRNA is edited before translation, altering amino acid sequences in ways not inferrable from the gene sequences. Conversely, some genetic sequences that appear to code for proteins may in fact be defective or not expressed. A protein inferred from a genome sequence is a hypothetical object until an experiment verifies its existence.
+
+Several other important features of proteins are not available from genome sequences, even if protein-coding regions are identified accurately. Genome sequences give no clue to the quaternary structure of a protein; for instance, how could one deduce from the genome sequence that adult haemoglobin is a tetramer containing two α- and two β-chains? Many proteins bind prosthetic groups; these are invisible in the genome. Patterns of disulphide bridges—primary chemical bonds between cysteine residues—cannot be deduced directly from the amino acid sequence.
+
+In addition to binding ligands integral to the native structure, many proteins undergo covalent alterations within a cell, to make a mature protein that differs significantly from the one suggested by translation of the gene sequence. In many cases the missing details of post-translational modifications—the molecular analogues of body piercing—are quite important. Post-translational modifications include addition of ligands (for instance, the covalently bound haem group of cytochrome c), glycosylation, methylation, phosphorylation, excision of peptides, and many others.
+
+Cleavage of a peptide is a common post-translational modification. In some cases, cleavage
+
+89
+
+---
+
+converts an inactive form of a protein to an active one. The proteases active in digestion of our food are examples. In other cases, the effect is to promote correct folding. For instance, insulin is synthesized as a single-chain precursor that folds properly, after which excision of a peptide produces the mature oligomeric form.
+
+Most post-translational cleavage reactions are carried out by proteases. Alternatively, inteins are proteins that have a ‘self-splicing’ activity. They autocatalytically excise internal peptides and join the ends. (In contrast, peptide excision from proinsulin leaves two chains that are not joined by a peptide bond.)
+
+## Transcriptomics
+
+‘Between the genome and the proteome lies the transcriptome.’ This rather glib statement is not so much untrue but incomplete. In some ways analogous to proteomics, transcriptomics deals with the inventory of RNA molecules in the cell. Some of the RNA is transient, such as mRNA. Much is stable, such as the RNA components of the ribosome, which typically accounts for over 90% of cellular RNA. Some RNA molecules exert control over translation.
+
+We now recognize that the RNA world is much more complex than previously suspected. Indeed, we now know that 60–70% of the human genome is not transcriptionally inert, although we don’t know the function of many of the RNAs produced. The implication is that the transcriptome and proteome are not as closely related as once thought. Many RNA transcripts are not protein-coding.
+
+The RNAseq method applies modern sequencing techniques to inventory RNA molecules. RNA fragments are converted to cDNA, and high-throughput sequencing methods applied. Because variation in the yields of the RNA → cDNA step may bias the results, there is current effort to develop methods to sequence RNA directly. RNA sequencing methods are competitive with, if they have not entirely superseded, classical microarray methods. An advantage of RNA sequencing is that one need not know in advance the information required to create microarray chips.
+
+## Eavesdropping on the transmission of genetic information
+
+How hereditary information is stored, passed on, and implemented is perhaps the fundamental problem of biology. Three types of maps have been essential (see Box 2.2):
+
+1. linkage maps of genes,
+2. banding patterns of chromosomes,
+3. DNA sequences.
+
+These maps represent three very different types of data. Genes, as discovered by Mendel, were entirely abstract entities. Chromosomes are physical objects, banding patterns their visible landmarks. Only with DNA sequences are we dealing directly with stored hereditary information in its physical form.
+
+It was the very great achievement of biology during the last century to forge connections between these three types of data. The first steps—which were indeed giant strides—proved that, for any chromosome, the maps are one-dimensional arrays, and that they are collinear. Any school child now knows that genes are strung out along chromosomes, and that each gene corresponds to a DNA sequence. But the proofs of these statements earned a large number of Nobel prizes.
+
+Splitting a long molecule of DNA—for example, the DNA in an entire chromosome—into fragments of convenient size for cloning and sequencing requires additional maps to report the order
+
+90
+
+---
+
+of the fragments, to facilitate assembly of the entire sequence from the sequences of the fragments. A restriction endonuclease is an enzyme that cuts DNA at a specific sequence, usually about 6 bp long. Cutting DNA with several restriction enzymes with different specificities produces sets of overlapping fragments. From the sizes of the fragments it is possible to construct a restriction map, stating the order and distance between the restriction enzyme cleavage sites. A mutation in one of these cleavage sites will change the sizes of the fragments produced by the corresponding enzyme, allowing the mutation to be located in the map.
+
+Restriction enzymes can produce fairly large pieces of DNA. Cutting the DNA into smaller pieces, which are cloned and ordered by sequence overlaps, produces a finer dissection of the DNA called a contig map (which stands for contiguous clone map). In contemporary sequencing technology, random shearing or nebulization produces the set of fragments.
+
+## Identification of genes associated with inherited diseases
+
+In the past, the connections between chromosomes, genes, and DNA sequences were essential for identifying the molecular deficits underlying inherited diseases, such as Huntington’s disease or cystic fibrosis. Sequencing of the human genome has changed the situation radically.
+
+Given a disease attributable to a defective protein:
+
+• if we know the protein involved, we can pursue rational approaches to therapy;
+• if we know the gene involved, we can devise tests to identify sufferers or carriers;
+
+## Box 2.2 Gene maps, chromosome maps, and sequence maps
+
+**1.** A gene map is classically determined by observed patterns of heredity. Linkage groups and recombination frequencies can detect whether genes are on the same or different chromosomes, and, for genes on the same chromosome, how far apart they are. The principle is that the farther apart two linked genes are, the more likely they are to recombine, by crossing over during meiosis. Indeed, two genes on the same chromosome but very far apart will appear to be unlinked. The unit of length in a gene map is the Morgan, defined by the relation that 1 cM corresponds to a 1% recombination frequency. (We now know that 1 cM ${ \approx } 1 \times 1 0 ^ { 6 }$ bp in humans, but it varies with the location in the genome and with the distance between genes.)
+
+![](../../raw/pages_0081-0096/images/page_90_image_10.jpg)
+
+## See Weblem 2.8
+
+**2.** Chromosome banding pattern maps. Chromosomes are physical objects. Banding patterns are visible features on them. The nomenclature is as follows: in many organisms, chromosomes are numbered in order of size, 1 being the largest. The two arms of chromosomes, separated by the centromere, are called the p (petite = short) arm and q (queue) arm. Regions of the chromosome are numbered p1, p2,… and q1, q2,… outward from the centromere. Subsequent digits indicate subdivisions of bands. For example, certain bands on the q arm of human chromosome 15 are labelled 15q11.1, 15q11.2, 15q12. Originally bands 15q11 and 15q12 were defined; subsequently 15q11 was divided into 15q11.1 and 15q11.2.
+
+Deletions of substantial segments of DNA are observable in changes in banding patterns. (Smaller deletions are observable by fluorescent in situ hybridization, or FISH; see Plate III.) The observation of banding patterns was crucial to the identification of chromosomes as the vessels of heredity (see Introduction to Genomics, Lesk 2011, chapter 1).
+
+91
+
+---
+
+![](../../raw/pages_0081-0096/images/page_91_image_0.jpg)
+
+<details>
+<summary>natural_image</summary>
+
+Microscopic image of stained chromosomes with a white arrow pointing to a specific cell (no text or symbols present)
+</details>
+
+**Plate III** FISH can detect the presence of locus-specific probes and visualize their chromosomal positions. Shown in red is a probe for the centromeric region of chromosome 20, to identify the two homologous copies of the chromosome that appear at metaphase. Shown in green is a probe for D20S108, within the region 20q11.2–13.1, which is present in one copy of chromosome 20 and deleted from the other (see arrow). This cell came from a patient suffering from polycythaemia rubra vera (an abnormal increase in blood cells, primarily erythrocytes, arising from abnormality in bone marrow). The region deleted in the long arm of chromosome 20 is believed to contain tumour-suppressor gene(s), the loss of which contributes to the development of leukaemias. (See Chapter 1.)
+
+Courtesy of Dr E. Nacheva, Department of Academic Haematology, Royal Free & University College London School of Medicine, London.
+
+![](../../raw/pages_0081-0096/images/page_91_image_3.jpg)
+
+## See Weblem 2.9
+
+Many deletions are associated with inherited diseases. For instance, deletion in the 15q region in the human are associated with Prader–Willi and Angleman syndromes. These syndromes have the interesting feature that the alternative clinical consequences depend on whether the affected chromosome is paternal or maternal. This observation of genomic imprinting shows that the genetic information in a fertilized egg is not simply the bare DNA sequences contributed by the parents. Chromosomes of paternal and maternal origin have different states of methylation: epigenetic signals for differential expression of their genes. The process of modifying the DNA which takes place during differentiation in development is already present in the zygote.
+
+**3.** The DNA sequence itself. Physically a sequence of nucleotides in the molecule, computationally a string of characters: A, T, G, and C. Genes are regions of the sequence, in many cases interrupted by noncoding regions.
+
+in many cases, knowledge of the chromosomal location of the gene is unnecessary for either therapy or detection; it is required only for identifying the gene, providing a bridge between the patterns of inheritance and the DNA sequence. (This is not true of diseases arising from chromosome abnormalities.) For instance, in the case of sickle-cell anaemia, we know the protein involved. The disease arises from a single point mutation in haemoglobin. We can proceed directly to drug design. We need the DNA sequence only for genetic testing and counselling.
+
+![](../../raw/pages_0081-0096/images/page_91_image_8.jpg)
+
+## See Weblem 2.10
+
+In contrast, if we know neither the protein nor the gene, we must somehow retrace the steps back to the gene from the phenotype, a process called positional cloning or reverse genetics. Positional cloning used to involve a kind of ‘Tinker to Evers to Chance’ (see [http://www.1907cubs.com/tinkers-to-evers-to-chance.php](http://www.1907cubs.com/tinkers-to-evers-to-chance.php)) cascade from the gene map to the chromosome map to the DNA sequence. Recent developments have short-circuited this process.
+
+Patterns of inheritance identify the type of genetic defect responsible for a condition. Simple Mendelian inheritance patterns show, for example, that Huntington’s disease and cystic fibrosis are
+
+92
+
+---
+
+caused by single genes. To find the gene associated with cystic fibrosis it was necessary to begin with the gene map, using linkage patterns of heredity in affected families to localize the affected gene to a particular region of a particular chromosome. Knowing the general region of the chromosome, it was then possible to search the DNA of that region to identify candidate genes, and finally to pinpoint the particular gene responsible and sequence it (see Boxes 2.3 and 2.4.) In contrast, many diseases do not show simple inheritance or, even if only a single gene is involved, heredity creates only a predisposition, the clinical consequences of which depend on environmental, including lifestyle, factors. The full human genome sequence, and measurements of expression patterns, are essential to identify the genetic components of these more complex cases.
+
+## Mappings between the maps
+
+A gene linkage map can be calibrated to chromosome banding patterns through observation of individuals
+
+## Box 2.3 Identification of the cystic fibrosis gene
+
+Cystic fibrosis, a disease known to folklore since at least the Middle Ages and to science for about 500 years, is an inherited recessive autosomal condition. Its symptoms include intestinal obstruction, reduced fertility including anatomical abnormalities (especially in males), and recurrent clogging and infection of lungs, which is the primary cause of death now that there are effective treatments for the gastrointestinal symptoms. Approximately half the sufferers die before the age of 25 years, and few survive beyond 50. Cystic fibrosis affects 1 in 2500 individuals in the American and European populations. Approximately 1 in 25 white people carry a mutant gene, as do 1 in 65 African-Americans. The protein that is defective in cystic fibrosis also acts as a receptor for uptake of Salmonella typhi, the pathogen that causes typhoid fever. Increased resistance to typhoid in heterozygotes—who do not develop cystic fibrosis itself but are carriers of the mutant gene—probably explains why the gene has not been eliminated from the population.
+
+The pattern of inheritance showed that cystic fibrosis was the effect of a single gene. However, the actual protein involved was unknown. It had to be found via the gene. Note that this work was carried out before the human genome sequence was available.
+
+Clinical observations provided the gene hunters with useful clues. It was known that the problem had to do with chloride transport in epithelial tissues. Folklore had long recognized that children with excessive salt in their sweat—tasteable when kissing an infant on the forehead—were short-lived. Modern physiological studies showed that epithelial tissues of cystic fibrosis patients cannot reabsorb chloride. When closing in on the gene, the expected distribution—among tissues—of its expression and of the type of protein implicated were useful guides.
+
+In 1989 the gene for cystic fibrosis was isolated and sequenced. This gene—called cystic fibrosis transmembrane conductance regulator (CFTR)—codes for a 1480-amino acid protein that normally forms a cyclic AMP (cAMP)-regulated epithelial chloride channel. The gene, comprising 24 exons, spans a 250 kilobase (kb) region. For 70% of mutant alleles the mutation is a 3 bp deletion, deleting the residue <sup>508</sup>Phe from the protein. This mutation is denoted del508. The effect of the deletion is defective translocation of the protein, which is degraded in the endoplasmic reticulum rather than being transported to the cell membrane.
+
+An in utero test for cystic fibrosis is based on recovery of foetal DNA. A PCR primer is designed to give a 154 bp product from the normal allele and a 151 bp product from the del508 allele.
+
+To experiment with gene therapy clinicians have taken advantage of the fact that the affected tissues of the airways are easily accessible. A delivery system using inhaled liposomes is currently in clinical trials. Alternative approaches using viral carriers of the normal gene are under investigation.
+
+## Box 2.4 Positional cloning: finding the cystic fibrosis gene
+
+93
+
+---
+
+The process by which the gene responsible for cystic fibrosis was found has been called positional cloning or reverse genetics.
+
+A search in family pedigrees for a linked marker showed that the cystic fibrosis gene was close to a known variable-number tandem repeat (VNTR), DOCR-917. Somatic cell hybrids placed this on chromosome 7, band $\mathrm { q 3 }$
+Other markers found were linked more tightly to the target gene. It was thereby bracketted by a VNTR in the MET oncogene and a second VNTR, D7S8. The target gene lies 1.3 cM from MET and 0.9 cM from D7S8: localizing it to a region of approximately 1–2 million bp. A region this long could well contain 100–200 genes.
+The inheritance patterns of additional markers from within this region localized the target more sharply to within 500 kb. A technique called chromosome jumping made the exploration of the region more efficient.
+A 300 kb region at the right distance from the markers was cloned. Probes were isolated from the region, to look for active genes, characterized by an upstream CCGG sequence. (The restriction endonuclease HpaII is useful for this step: it cuts DNA at this sequence, but only when the second C is not methylated; that is, when the gene is active.)
+• Identification of genes in this region by sequencing.
+Checking in animals for genes similar to the candidate genes turned up four likely possibilities. Checking these possibilities against a cDNA library from sweat glands of cystic fibrosis patients and healthy controls identified one probe with the right tissue distribution for the expected expression pattern of the gene responsible for cystic fibrosis. One long coding segment had the right properties, and indeed corresponded to an exon of the cystic fibrosis gene. Most cystic fibrosis patients have a common alteration in the sequence of this gene: a 3 bp deletion, deleting the residue <sup>508</sup>Phe from the protein.
+
+Proof that the gene was correctly identified included:
+
+70% of cystic fibrosis alleles have the deletion. It is not found in people who are neither sufferers nor likely to be carriers;
+• expression of the wild-type gene in cells isolated from patients restores normal chloride transport;
+• knockout of the homologous gene in mice produces the cystic fibrosis phenotype;
+• the pattern of gene expression matches the organs in which it is expected;
+the protein encoded by the gene would contain a transmembrane domain, consistent with involvement in transport.
+
+with deletions or translocations of parts of chromosomes. The genes responsible for phenotypic changes associated with a deletion must lie within the deletion. Translocations are correlated with altered patterns of linkage and recombination.
+
+There have been several approaches to coordinating chromosome banding patterns with individual DNA sequences of genes.
+
+In FISH, a probe sequence is labelled with fluorescent dye. The probe is hybridized with the chromosomes and the chromosomal location where the probe is bound shows up directly in a photograph (see Plate III). Typical resolution is ${ \approx } 1 0 ^ { 5 }$ bp, but specialized new techniques can achieve high resolution, down to 1 kbp. Simultaneous FISH with two probes can detect linkage and even estimate genetic distances. This is important in species for which the generation time is long enough to make standard genetic approaches inconvenient. FISH can also detect chromosomal abnormalities.
+Somatic cell hybrids are rodent cells containing few, one, or even partial human chromosomes. (Chromosome fragments are produced by irradiating the human cells prior to fusion. Such lines are called radiation hybrids.) Hybridization of a probe sequence with a panel of somatic cell hybrids, detected by fluorescence, can identify which chromosome contains the probe. This
+
+94
+
+---
+
+approach has been superseded by use of clones of yeast, bacteria, or phage containing fragments of human DNA in artificial chromosomes (named YACs, BACs, and PACs, respectively; that is, yeast, bacterial, and bacteriophage P1 artificial chromosomes).
+
+Of course, with sequences from the human or other organisms for which the complete genome sequence is known, one could localize most genes just by looking them up in the sequence.
+
+![](../../raw/pages_0081-0096/images/page_94_image_2.jpg)
+
+**See Weblem 2.11**
+
+![](../../raw/pages_0081-0096/images/page_94_image_4.jpg)
+
+**See Weblem 2.12**
+
+## High-resolution maps
+
+Formerly, genes were the only visible portions of genomes. Now, markers are no longer limited to genes with phenotypically observable effects, which are anyway too sparse for an adequately highresolution map of the human genome. Now that we can interrogate DNA sequences directly, any features of DNA that vary among individuals can serve as markers, including the following.
+
+Variable-number tandem repeats (VNTRs), also called minisatellites. VNTRs contain regions 10–100 bp long, repeated a variable number of times (same sequence, different number of repeats). In any individual, VNTRs based on the same repeat motif may appear only once in the genome; or several times, with different lengths on different chromosomes. The distribution of the sizes of the repeats is the marker. Inheritance of VNTRs can be followed in a family and mapped to a disease phenotype like any other trait. VNTRs were the first genetic sequence data used for personal identification—genetic fingerprints—in paternity and in criminal cases.
+
+Formerly, VNTRs were observed by producing restriction-fragment length polymorphisms (RFLPs) from them. VNTRs are generally flanked by recognition sites for the same restriction enzyme, which will neatly excise them. The results can be spread out on a gel, and the distribution of their lengths detected by Southern blotting. (Distinguish: VNTRs are characteristics of genome sequences; RFLPs are artificial mixtures of short stretches of DNA created in the laboratory in order to identify VNTRs.) However, it is much easier and more efficient to measure the sizes of VNTRs by amplifying them with PCR, and this method has replaced the use of restriction enzymes.
+
+• Short tandem-repeat polymorphisms (STRPs), also called microsatellites. STRPs are regions of only 2–5 bp but repeated many times; typically 10–30 consecutive copies. They have several advantages as markers over VNTRs, one of which is a more even distribution over the human genome.
+
+There is no reason why these markers need lie within expressed genes, and usually they do not. (The CAG repeats in the gene for Huntington and certain other disease genes are exceptions.)
+
+Panels of microsatellite markers greatly simplify the identification of genes. It is interesting to compare a recent project to identify a disease gene now that the human genome sequence is available, with such classic studies as the identification of the gene for cystic fibrosis.
+
+Additional mapping techniques deal more directly with the DNA sequences, and can short-circuit the process of gene identification:
+
+• A contig, or contiguous clone map, is a series of overlapping DNA clones of known order along a
+
+95
+
+---
+
+chromosome from an organism of interest—for instance, human—stored in yeast or bacterial cells as YACs or BACs. A contig map can produce very fine mapping of a genome. In a YAC, human DNA is stably integrated into a small extra chromosome in a yeast cell. A YAC can contain up to $1 0 ^ { 6 }$ bp. In principle, the entire human genome could be represented in 10 000 YAC clones. In a BAC, human DNA is inserted into a plasmid in an E. coli cell. (A plasmid is a small piece of double-stranded DNA found in addition to the main genome, usually but not always circular.) A BAC can carry about 250 000 bp. Despite their smaller capacities, BACs are preferred to YACs because of their greater stability and ease of handling.
+
+• A sequence tagged site (STS) is a short, sequenced region of DNA, typically 200–600 bp long, that appears in a unique location in the genome. It need not be polymorphic. An STS can be mapped into the genome by using PCR to test for the presence of the sequence in the cells containing a contig map.
+
+One type of STS arises from an expressed sequence tag (EST), a piece of cDNA (complementary DNA; that is, a DNA sequence derived from the mRNA of an expressed gene). The sequence contains only the exons of the gene, spliced together to form the sequence that encodes the protein. cDNA sequences can be mapped to chromosomes using FISH, or located within contig maps.
+
+How do contig maps and STSs facilitate identifying genes? If you are working with an organism for which the full genome sequence is not known, but for which full contig maps are available for all chromosomes, you would identify STS markers that are tightly linked to your gene and then locate these markers in the contig maps.
+
+## Genome-wide association studies
+
+The goal of genome-wide association studies is the correlation between phenotypic traits and specific locations in the genome. Of particular interest is understanding the genetics of appearance or risk of diseases (see Box 2.5). In cases of simple Mendelian inheritance, one specific allele may govern the observed trait. In other cases, multiple sites in the genome may influence the trait. In addition there may be contributions to the observed phenotype from epigenetic signals and from the environment.
+
+The genetic data most often used in genome-wide association studies are a set of SNPs. To isolate the genetic concomitants of disease, studies compare cases and controls: people with a disease, and healthy people. It is not necessary to examine every possible SNP. The human genome consists of a succession of ‘haplotype blocks’—coinherited regions with relatively little recombination within them. (Haplotype blocks vary in length but 100-150 kb is typical.) A correlation between disease, or other phenotype, with any representative locus within some haplotype points to this region as containing some gene of interest. More fine-grained studies of the regions of interest can pinpoint a specific site. (see Box 2.5.)
+
+![](../../raw/pages_0081-0096/images/page_95_image_7.jpg)
+
+## See Weblem 2.13
+
+## Box 2.5 The genetics of age-related macular degeneration
+
+Macular degeneration is a common cause of loss of visual acuity in the elderly. The macula is the central region of the retina, required for registration of fine detail, including but not limited to reading and face recognition. Its degeneration does not always cause complete blindness (peripheral vision may remain), but nevertheless is a great handicap in normal activity. Although environmental factors are involved, notably smoking, there is a
+
+96
+
+---
+
+strong genetic component.
+
+Genome-wide association studies show that the genetics of age-related macular degeneration are multifactorial. Several genes implicated are involved in the immune response and related processes.
+
+| Complement factor H | Immune response |
+| --- | --- |
+| SERPING1 | Inhibitor of the inflammatory process |
+| PLEKHA1 | Mediates cellular processes related to the immune response |
+| C-reactive protein | Response to inflammation |
+| Complement C3 | Complement cascade |
+| Complement factor B | Complement cascade |
+| Complement component 2 | Complement cascade |
+| Toll-like receptor 3 | Immune response |
+| Interleukins IL-6 and IL-8 | Immune response |
+| Chemokine (C-C motif) ligand 2 | Immune response |
+
+Other genes implicated include:
+
+| ARMS/HTRA1 | HTRA1 is a serine proteinase |
+| --- | --- |
+| LOC387715 | Proposed mitochondrial function (?) |
+| HMCN1/FBLN6 | Immunoglobulin superfamily |
+| FBLN5 | Fibulin-5 |
+| ApoE | Apolipoprotein E; transports of fats in blood (also involved in Alzheimer’s disease) |
+| Cluster of differentiation 36 | Scavenger of toxins |
+
+These results have several implications.
+
+**1.** They give some clue about the underlying biology. For instance, the prevalence of genes coding for proteins involved in the immune response has led to the suggestion that development of macular degeneration is related to inflammation.
+**2.** They allow for evaluation of risk. In particular, a correlation of LOC387715 with enhanced risk of development of macular degeneration as a result of smoking suggests that protective lifestyle changes may be made.
+**3.** The correlation of individual alleles with effectiveness of treatment suggests gene-sequence-guided therapy. For example, the high-risk genotype of complement factor H limits the benefits of zinc and antioxidant therapy. This is an example of pharmacogenomics, the tailoring of treatment to the patient on the basis of genetic information.
+
+![](../../raw/pages_0097-0112/images/page_96_image_10.jpg)
+
+## See Weblem 2.14
+
+## Picking out genes in genomes
+
+Computer programs for genome analysis identify open reading frames or ORFs. An ORF is a region of DNA sequence that begins with an initiation codon (ATG) and ends with a stop codon. An ORF is a potential protein-coding region.
+
+Approaches to identifying protein-coding regions choose from or combine two possible approaches.
+
+Detection of regions similar to known coding regions from other organisms. These regions may encode amino acid sequences similar to known proteins, or may be similar to ESTs. Because ESTs are derived from mRNA they correspond to genes known to be transcribed. It is necessary to sequence only a few hundred initial bases of cDNA to give enough information to identify a
+
+97
+
+---
+
+gene. Characterization of genes by ESTs is like indexing poems or songs by their first lines.
+
+2. Ab initio methods that seek to identify genes from the properties of the DNA sequences themselves.
+
+Computer-assisted annotation of genomes is more complete and accurate for bacteria than for eukarya. Bacterial genes are relatively easy to identify because they are contiguous—they lack the introns characteristic of eukaryotic genomes—and the intergene spaces are small. In higher organisms, identifying genes is harder. Identification of exons is one problem, assembling them is another. Alternative splicing patterns present a particular difficulty.
+
+A framework for ab initio gene identification in eukaryotic genomes includes the following features.
+
+The initial (5′) exon starts with a transcription start point, preceded by a core promotor site such as the TATA box typically ≈30 bp upstream. It is free of in-frame stop codons and ends immediately before a dinucleotide GT splice signal. (Occasionally a noncoding exon precedes the exon that contains the initiator codon.)
+Internal exons, like initial exons, are free of in-frame stop codons. They begin immediately after an AG splice signal and end immediately before a GT splice signal.
+The final (3′) exon starts immediately after an AG splice signal and ends with a stop codon, followed by a polyadenylation signal sequence. (Occasionally a noncoding exon follows the exon that contains the stop codon.)
+
+All coding regions have nonrandom sequence characteristics, based partly on codon-usage preferences. Empirically, it is found that statistics of hexanucleotides perform best in distinguishing coding from noncoding regions. Starting from a set of known genes from an organism as a training set, pattern-recognition programs can be tuned to particular genomes.
+
+Accurate gene detection is a crucial component of genome sequence analysis. This problem is an important focus of current research.
+
+## Genome-sequencing projects
+
+Completely sequenced genomes currently include several hundred bacteria, over 20 archaea, many viruses and organelles, and over 30 eukarya (see Table 2.1 for some examples). Almost all the results are freely available on the web. Many others are in progress (not counting assemblies from metagenomics sequencing projects).
+
+Table 2.1 A sample of completed eukaryotic genomes
+
+<table><tr><td colspan="2">Mammals</td></tr><tr><td>Human</td><td>Homo sapiens</td></tr><tr><td>Chimpanzee</td><td>Pan troglodytes</td></tr><tr><td>Macaque</td><td>Macaca mulatta</td></tr><tr><td>Mouse</td><td>Mus musculus</td></tr><tr><td>Norway or brown rat</td><td>Rattus norvegicus</td></tr><tr><td>Dog</td><td>Canis familiaris</td></tr><tr><td>Cow</td><td>Bos taurus</td></tr><tr><td>African elephant</td><td>Loxodonta africana</td></tr><tr><td>Opossum</td><td>Monodelphis domestica</td></tr><tr><td colspan="2">Other chordates</td></tr></table>
+
+98
+
+---
+
+<table><tr><td>Chicken</td><td>Gallus gallus</td></tr><tr><td>Frog</td><td>Xenopus tropicalis</td></tr><tr><td>Zebrafish</td><td>Danio rerio</td></tr><tr><td>Fugu fish</td><td>Takifugu rubripes</td></tr><tr><td>Puffer fish</td><td>Tetraodon nigroviridis</td></tr><tr><td>Sea squirt (tunicate)</td><td>Ciona intestinalis</td></tr><tr><td>Tunicate</td><td>Ciona savignyi</td></tr><tr><td colspan="2">Higher plants</td></tr><tr><td>Thale cress</td><td>Arabidopsis thaliana</td></tr><tr><td>Rice</td><td>Oryza sativa</td></tr><tr><td>Maize (corn)</td><td>Zea mays</td></tr><tr><td>Lotus</td><td>Lotus japonicus</td></tr><tr><td>Barrel medic</td><td>Medicago truncatula</td></tr><tr><td>Tomato</td><td>Lycopersicon esculentum</td></tr><tr><td>Black cottonwood</td><td>Populus trichocarpa</td></tr><tr><td>Cacao tree</td><td>Theobroma cacao</td></tr><tr><td colspan="2">Other eukarya</td></tr><tr><td>Fruit fly</td><td>Drosophila melanogaster</td></tr><tr><td>Anopheles mosquito</td><td>Anopheles gambiae</td></tr><tr><td>Dengue mosquito</td><td>Aedes aegypti</td></tr><tr><td>Honeybee</td><td>Apis mellifera</td></tr><tr><td>Nematode worm</td><td>Caenorhabditis elegans</td></tr><tr><td>Baker&#x27;s yeast</td><td>Saccharomyces cerevisiae</td></tr><tr><td>Fission yeast</td><td>Schizosaccharomyces pombe</td></tr><tr><td>Fungus</td><td>Candida glabrata CBS138</td></tr><tr><td>Fungus</td><td>Debaryomyces hansenii CBS767</td></tr><tr><td>Microsporidian</td><td>Encephalitozoon cuniculi</td></tr></table>
+
+Sequencing of the genomes of many other organisms is in progress. The site [http://www.ncbi.nlm.nih.gov/genome/reports](http://www.ncbi.nlm.nih.gov/genome/reports):
+
+<table><tr><td colspan="2">Complete genome projects</td></tr><tr><td>Viruses</td><td>3843</td></tr><tr><td>Prokaryotes</td><td>22 030</td></tr><tr><td>Eukaryotes</td><td>3324</td></tr></table>
+
+As of 29 July 2013.
+
+![](../../raw/pages_0097-0112/images/page_98_image_4.jpg)
+
+## See Weblem 2.15
+
+Groups involved in many full-genome sequencing projects create and maintain databases focused on individual species. Scientists with specialized expertise assume responsibility for curation and annotation of the data. The analysis includes identification of genes, and assignment of function to their products. The results embed the genome in the context of other information about the individual species, arising from other data streams such as proteomics.
+
+For instance, the Comprehensive Yeast Genome Database (CYGD), based at the Munich Information Center for Protein Sequences (MIPS), organizes and presents information on sequence, structure, function, and molecular interactions in S. cerevisiae ([http://mips.gsf.de/genre/proj/yeast/](http://mips.gsf.de/genre/proj/yeast/)).The MIPS group, one of the leading bioinformatics groups in Europe, has provided the nexus of computational support for numerous other collaborative sequencing projects, including that of yeast and A. thaliana.
+
+Several groups, including MIPS, have developed tools specialized for information retrieval and
+
+99
+
+---
+
+comparative analysis of genomes. Others include the ENSEMBL (at the Wellcome Trust Sanger Institute; [http://www.ensembl.org](http://www.ensembl.org)) and University of California at Santa Cruz genome browsers ([http://genome.ucsc.edu](http://genome.ucsc.edu)).
+
+## Genomes of prokaryotes
+
+The genetic material of most prokaryotic cells takes the form of a large single circular piece of double-stranded DNA, usually less than 5 Mb long. In addition, the cells may contain plasmids.
+
+The protein-coding regions of bacterial genomes do not contain introns. In many prokaryotic genomes the protein-coding regions are partially organized into operons: tandem genes transcribed into a single mRNA molecule, under common transcriptional control. In bacteria, the genes of many operons code for proteins with related functions. For instance, successive genes in the trp operon of E. coli code for proteins that catalyse successive steps in the biosynthesis of tryptophan (see Fig. 2.1). In archaea, a metabolic relationship between genes in operons is less frequently observed.
+
+![](../../raw/pages_0097-0112/images/page_99_image_4.jpg)
+
+Figure 2.1 The trp operon in E. coli begins with a control region containing promoter, operator, and leader sequences. Five structural genes encode proteins that catalyse successive steps in the synthesis of the amino acid tryptophan from its precursor chorismate:
+
+![](../../raw/pages_0097-0112/images/page_99_image_6.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["Chorismate"] --> B["anthranilate"]
+  B --> C["phosphoribosyl-anthranilate"]
+  C --> D["indole glycerolphosphate"]
+  D --> E["indole"]
+  E --> F["tryptophan"]
+```
+</details>
+
+Reaction step (1): trpE and trpD encode two components of anthranilate synthase. This tetrameric enzyme, comprising two copies of each subunit, catalyses the conversion of chorismate to anthranilate. Reaction step (2): the protein encoded by trpD also catalyses the subsequent phosphoribosylation of anthranilate. Reaction step (3): trpC encodes another bifunctional enzyme, phosphoribosylanthranilate isomerase–indoleglycerolphosphate synthase. It converts phosphoribosyl anthranilate to indoleglycerolphosphate, through the intermediate, carboxyphenylaminodeoxyribulose phosphate. Reaction steps (4) and (5): trpB and trpA encode the β and α subunits, respectively, of a third bifunctional enzyme, tryptophan synthase (an α<sub>2</sub>β<sub>2</sub> tetramer). A tunnel in the structure of this enzyme delivers, without release to the solvent, the intermediate produced by the α subunit—indoleglycerolphosphate to indole—to the active site of the β subunit, which converts indole to tryptophan.
+
+A separate gene, trpR, not closely linked to this operon, codes for the trp repressor. The repressor can bind to the operator sequence in the DNA (within the control region) only when binding tryptophan. Binding of repressor blocks access of RNA polymerase to the promoter, turning the pathway off when tryptophan is abundant. Further control of transcription in response to tryptophan levels is exerted by the attenuator element in the mRNA, within the leader sequence. The attenuator region (a) contains two tandem trp codons and (b) can adopt alternative secondary structures, one of which terminates transcription. Levels of tryptophan govern levels of trp-tRNAs, which govern the rate of progress of the tandem trp codons through the ribosome. Stalling on the ribosome at the tandem trp codons in response to low tryptophan levels reduces the formation of the mRNA secondary structure that terminates transcription.
+
+The typical prokaryotic genome contains only a relatively small amount of noncoding DNA (in comparison with eukarya), distributed throughout the sequence. In E. coli only ≈11% of the DNA is noncoding.
+
+## The genome of the bacterium Escherichia coli
+
+E. coli, strain K-12, has long been the workhorse of molecular biology. The genome of strain MG1655, published in 1997 by the group of F. Blattner at the University of Wisconsin, contains 4
+
+100
+
+---
+
+639 221 bp in a single circular DNA molecule, with no plastids. Approximately 89% of the sequence codes for proteins or structural RNAs. An inventory reveals:
+
+• 4284 protein-coding genes,
+• 122 structural RNA genes,
+noncoding repeat sequences,
+• regulatory elements,
+transcription/translation guides,
+transposases,
+• prophage remnants,
+• insertion sequence elements,
+
+patches of unusual composition, likely to be foreign elements introduced by horizontal transfer.
+
+Analysis of the genome sequence required identification and annotation of protein-coding genes and other functional regions. Many E. coli proteins were known before the sequencing was complete, from the many years of intensive investigation: 1853 proteins had been described before publication of the genome sequence. Other genes could be assigned functions from identification of homologues by searching in sequence data banks. The narrower the range of specificity of the function of the homologues, the more precise could be the assignment. Currently, over 60% of proteins can be assigned at least a general function (see Box 2.6). Other regions of the genome are recognized as regulatory sites, or mobile genetic elements, also on the basis of similarity to homologous sequences known in other organisms.
+
+We visualize the contents of bacterial and organelle genomes as concentric circular diagrams, looking vaguely like ‘tie-dyed’ patterns. (Introduction to Genomics contains several examples.) Complex patterns of colour-coding serve as a visual ‘feature table.’ The website [http://wishart.biology.ualberta.ca/BacMap/index.html](http://wishart.biology.ualberta.ca/BacMap/index.html)
+
+Box 2.6 Distribution of E. coli proteins among 22 functional groups
+
+| Functional class | Number | % |
+| --- | --- | --- |
+| Regulatory function | 45 | 1.05 |
+| Putative regulatory proteins | 133 | 3.10 |
+| Cell structure | 182 | 4.24 |
+| Putative membrane proteins | 13 | 0.30 |
+| Putative structural proteins | 42 | 0.98 |
+| Phage, transposons, plasmids | 87 | 2.03 |
+| Transport and binding proteins | 281 | 6.55 |
+| Putative transport proteins | 146 | 3.40 |
+| Energy metabolism | 243 | 5.67 |
+| DNA replication, recombination, modification, and repair | 115 | 2.68 |
+| Transcription, RNA synthesis, metabolism, and modification | 55 | 1.28 |
+| Translation, post-translational protein modification | 182 | 4.24 |
+| Cell processes (including adaptation, protection) | 188 | 4.38 |
+| Biosynthesis of cofactors, prosthetic groups, and carriers | 103 | 2.40 |
+| Putative chaperones | 9 | 0.21 |
+| Nucleotide biosynthesis and metabolism | 58 | 1.35 |
+| Amino acid biosynthesis and metabolism | 131 | 3.06 |
+
+101
+
+---
+
+| Fatty acid and phospholipid metabolism | 48 | 1.12 |
+| --- | --- | --- |
+| Carbon compound catabolism | 130 | 3.03 |
+| Central intermediary metabolism | 188 | 4.38 |
+| Putative enzymes | 251 | 5.85 |
+| Other known genes (gene product or phenotype known) | 26 | 0.61 |
+| Hypothetical, unclassified, unknown | 1632 | 38.06 |
+
+From Blattner, F.R., Plunkett, 3rd, G., Bloch, C.A., Perna, N.T., Burland, V. et al. (1997). The complete genome sequence of Escherichia coli K12. Science, 277, 1453–1462.
+
+contains an atlas of bacterial genome diagrams.<sup>1</sup>
+
+The distribution of protein-coding genes over the genome of E. coli does not seem to follow any simple rules, either along the DNA or on different strands. Indeed, comparison of strains suggests that the genes are mobile.
+
+The E. coli genome is relatively gene dense. Genes coding for proteins or structural RNAs occupy ≈89% of the sequence. The average size of an ORF is 317 amino acids. If the genes were evenly distributed, the average intergenic region would be 130 bp; the observed average distance between genes is 118 bp. However, the sizes of intergenic regions vary considerably. Some intergenic regions are large. These contain sites of regulatory function, and repeated sequences. The longest intergenic region, 1730 bp, contains noncoding repeat sequences.
+
+Approximately three-quarters of the transcribed units contain only one gene; the rest contain several consecutive genes, or operons. It is estimated that the E. coli genome contains 630–700 operons. Operons vary in size, although few contain more than five genes. The genes in operons tend to have related functions.
+
+In some cases, the same DNA sequence encodes parts of more than one polypeptide chain. One gene codes for both the τ and γ subunits of DNA polymerase III. Translation of the entire gene forms the τ subunit. The γ subunit corresponds approximately to the N-terminal two-thirds of the τ subunit. A frameshift on the ribosome at this point leads to chain termination 50% of the time, causing a 1:1 ratio of expressed τ and γ subunits. There do not appear to be any overlapping genes in which different reading frames both code for expressed proteins.
+
+In other cases, the same polypeptide chain appears in more than one enzyme. A protein that functions on its own as lipoate dehydrogenase is also an essential subunit of pyruvate dehydrogenase, 2-oxoglutarate dehydrogenase, and the glycine cleavage complex.
+
+Having the complete genome, we can examine the protein repertoire of E. coli. The largest class of proteins is the enzymes, accounting for ≈30% of the total genes. Many enzymatic functions are shared by more than one protein. Some of these sets of functionally similar enzymes are very closely related, and appear to have arisen by duplication, either in E. coli itself or in an ancestor or gene donor species. Other sets of functionally similar enzymes have very dissimilar sequences, and differ in specificity, regulation, or intracellular location.
+
+Several features of E. coli’s generous endowment of enzymes give it a versatile metabolic competence, which allow it to grow and compete under varying conditions.
+
+• It can synthesize all components of proteins and nucleic acids (amino acids and nucleotides), and cofactors.
+• It has metabolic flexibility: both aerobic and anaerobic growth are possible, utilizing different pathways of energy capture. It can grow on many different carbon sources. Not all metabolic pathways are active at any given time: the alternatives allow response to changes in conditions.
+
+102
+
+---
+
+• Even for specific metabolic reactions there are many cases of multiple enzymes. These provide redundancy, and contribute to an ability to tune metabolism to varying conditions, through complementary control mechanisms.
+• However, E. coli does not possess a complete range of enzymatic capacity. It cannot fix $\mathrm { C O } _ { 2 }$ or $\mathrm{N}_{2}$
+
+We have described here some of the static features of the E. coli genome and its protein repertoire. Current research has elucidated dynamic aspects, including the mechanisms that govern protein expression patterns in time and space.
+
+![](../../raw/pages_0097-0112/images/page_102_image_4.jpg)
+
+## See Weblem 2.16
+
+## The genome of the archaeon Methanococcus jannaschii
+
+S. Luria once suggested that to determine common features of all life one should not try to survey everything, but rather identify the organism most different from us and see what we have in common with it. The assumption was that the way to do this would be to find an organism adapted to the most different environment.
+
+Deep-sea exploration has revealed environments as far from the familiar as those portrayed in science fiction. Hydrothermal vents are underwater volcanoes emitting hot lava and gases through cracks in the ocean floor. They create niches for communities of living things disconnected from the surface, which depend on the minerals exuded from the vent as inorganic nutrients. They support living communities of microorganisms that are the only known forms of life not dependent on sunlight, directly or indirectly, for their energy source.
+
+The microorganism M. jannaschii was collected from a hydrothermal vent 2600 m deep off the coast of Baja California, Mexico, in 1983. It is a thermophilic organism, surviving at temperatures from 48 to $9 4 ^ { \circ } \mathrm { C }$ , with an optimum at $8 5 ^ { \circ } \mathrm { C }$ . It is a strict anaerobe, capable of self-reproduction from inorganic components. Its overall metabolic equation is to synthesize methane from $\mathrm { H } _ { 2 }$ and $\mathrm { C O } _ { 2 }$
+
+M. jannaschii belongs to the archaea, one of the three major divisions of life along with the bacteria and eukarya (see Fig. 1.2). The archaea comprise groups of prokaryotes, including organisms adapted to extreme environmental conditions such as high temperature and pressure, or high salt concentration. However, many archaea are not extremophiles.
+
+The genome of M. jannaschii was sequenced in 1996 by The Institute for Genomic Research (TIGR). It was the first archaeal genome sequenced. It contains a large chromosome containing a circular double-stranded DNA molecule of 1 664 976 bp long, and two extrachromosomal elements of 58 407 and 16 550 bp. There are 1784 predicted protein-coding regions, of which 1728 are on the chromosome, and 44 and 12 on the large and small extrachromosomal elements, respectively. Some RNA genes contain introns. As in other prokaryotic genomes there is little noncoding DNA.
+
+M. jannaschii would appear to satisfy Luria’s goal of finding our most distant extant relative. Comparison of its genome sequence with others shows that it is distantly related to other forms of life. Only 42% of the genes have been assigned a function. However, to everyone’s great surprise, archaea are in some ways more closely related to eukarya than to bacteria! They are a complex mixture. In archaea, proteins involved in transcription, translation, and regulation are more similar to those of eukarya. Archaeal proteins involved in metabolism are more similar to those of bacteria.
+
+The genome of one of the simplest organisms: Mycoplasma genitalium
+
+103
+
+---
+
+M. genitalium is an infectious bacterium, the cause of nongonococcal urethritis. Its genome was sequenced in 1995 by a collaboration of groups at TIGR, Johns Hopkins University, and the University of North Carolina. The genome is a single DNA molecule containing 580 070 bp. At the time, this was the smallest cellular genome yet sequenced. So far, is the closest we have to a minimal organism, the smallest capable of independent life. (Viruses, in contrast, require the cellular machinery of their hosts.)
+
+The genome is dense in coding regions: 468 genes have been identified as expressed proteins. Some regions of the sequence are gene-rich, others gene-poor, but overall 85% of the sequence is coding. The average length of a coding region is 1040 bp. As in other bacterial genomes the coding regions do not contain introns. Further compression of the genome is achieved by overlapping genes. It appears that many of these have arisen through loss of stop codons.
+
+The gene repertoire of M. genitalium includes some that encode proteins essential for independent reproduction, such as those involved in DNA replication, transcription, and translation, plus ribosomal and transfer RNAs. Other genes are specific for the infectious activity, including adhesins that mediate binding to infected cells, other molecules for defence against the host’s immune system, and a large number of transport proteins. As an adaptation to the parasitic lifestyle of the organism there has been widespread loss of metabolic enzymes, including those responsible for amino acid biosynthesis.
+
+![](../../raw/pages_0097-0112/images/page_103_image_3.jpg)
+
+**See Weblem 2.17**
+
+## Metagenomics: the collection of genomes in a coherent environmental sample
+
+Classically, the goal of microbiology was the identification of pathogenic organisms responsible for infectious disease. Isolation and cloning of pure strains facilitated diagnosis, and allowed testing of drugs. Powerful as the methods were, and important as they were for clinical applications, they were also blinders that prevented full appreciation of the variety and interactions of species in natural environments. Indeed, it is the lack of independence under natural conditions of many species that makes it impossible to clone them. Conversely, study of entire microbial communities is essential to illuminate general principles of ecology and evolution.
+
+From natural samples containing complex mixtures it is possible to determine sequences directly, without culturing individual strains. This provides access to information about species that cannot be cloned in the traditional way. A millilitre of ocean water may contain 100–200 species. A gram of soil may contain 4000. The human gut contains on the order of 500 different species of microorganisms (although 10% of those species probably account for 99% of the total bacterial population.)
+
+In addition to prokaryotes, many natural samples contain a rich mixture of viruses.
+
+## Subjects of metagenomic sequencing
+
+Subjects of metagenomic sequencing include:
+
+the human microbiome: samples from different parts of the body, comparison of healthy and disease states, and during infant development, including observation of distinct differences between breast- and formula-fed babies, and between babies delivered normally or by Caesarean section;
+
+104
+
+---
+
+general environmental samples: including oceans (see Box 2.7), glaciers, soils, mine tailings, and (even) windshield splatter. Such studies consider spatial and temporal (diurnal and seasonal) variation;
+agricultural samples: the flora of the rhizosphere (the immediate vicinity of roots) of wheat, rice, maize, and soybean.
+
+Application of new high-throughput sequencing techniques to metagenomic samples generates very large quantities of data. Sequencing of samples from the human gut identifies over $3   \times   1 0 ^ { 6 }$ genes, from 567.7 Gb of sequence data. These numbers are more than impressive: they are daunting. Recognize that the data are noisy, fragmented, and arise from a complex mixture of sources. (A crucial feature, the read length, depends on the sequencing technique used.) For many metagenomic data sets it is not possible to assemble complete genomes.
+
+However, it is often possible to perform BLAST searches on the fragments to identify source and —in cases of protein-coding sequences—function. This can be enough to estimate an inventory of which species are present and in what proportions. Comparative studies can clarify spatial and temporal variation,
+
+## Box 2.7 The Sorcerer II Global Ocean Sampling Expedition
+
+A very ambitious harvesting of metagenomics data came from the Sorcerer II Global Ocean Sampling Expedition.<sup>2</sup> During a round-the-world trip between 8 August 2003 and 22 May 2004, samples were collected at ≈320 km intervals along a more than 8000 km route that started in Halifax, Nova Scotia, Canada, along the East Coast of the USA, the Gulf of Mexico, the Galapagos Islands, across the Pacific Ocean to Australia, through the Indian Ocean, to South Africa and back across the Atlantic to the USA. The expedition was inspired by the HMS Challenger expedition of 1872–1876, a survey of ocean geology, climate, and biology.
+
+| Phylum or class | Fraction |
+| --- | --- |
+| α-Proteobacteria | 0.32 |
+| Unclassified proteobacteria | 0.155 |
+| γ-Proteobacteria | 0.132 |
+| Bacteriodetes | 0.13 |
+| Cyanobacteria | 0.079 |
+| Firmicutes | 0.075 |
+| Actinobacteria | 0.046 |
+| Marine group A | 0.022 |
+| β-Proteobacteria | 0.017 |
+| OP11 | 0.008 |
+| Unclassified bacteria | 0.008 |
+| δ-Proteobacteria | 0.005 |
+| Planctomycetes | 0.002 |
+| ε-Proteobacteria | 0.001 |
+
+From Rusch, D.B., Halpern, A.L., Sutton, G., Heidelberg, K.B., Williamson, S. et al. (2007). The Sorcerer II Global Ocean Sampling Expedition: Northwest Atlantic through Eastern Tropical Pacific. PLoS Biol., **13**, e77.
+
+Selected fractions with cells of size 0.1–0.8 µm were filtered to focus on bacteria. Of 7.7 million sequencing reads from these samples, amounting in total to $6 . 3 \times 1 0 ^ { 9 }$ bp, there remained, upon counting for overlaps, almost 6 Gb of unique sequence. Over half the reads were unique; that is, they had 98% or less sequence similarity to previously reported sequences. Contigs were assemblable into over 3 million whole genome scaffolds.
+
+The 16S RNA data from shotgun sequencing revealed 811 distinct sequence types (below 97% identity). Over half represented putative novel species. Note the absence of Archaea from the most highly represented taxa.
+
+105
+
+---
+
+Translations of gene sequences identified over 6 million bacterial and viral proteins. Of these, 6000 have no similarity to previously known proteins. If all are indeed novel—remember that sequence-based tools do not always successfully identify structural similarity in distantly related proteins—the results will almost double the number of known protein families.
+
+and even evolutionary relationships among different samples. Harder to achieve is an understanding of the functional relationships and interactions among the different components of an ecosystem.
+
+It was formerly common to characterize individual species in metagenomic samples by 16S rRNA sequences, as in the original work of Woese. However, copy-number variation make this an unreliable index of species frequency. Horizontal gene transfer further erodes its accuracy.
+
+Even worse, viruses do not contain ribosomes and therefore are invisible to probes for 16S rRNA. Viruses are the ‘dark matter’ of nature: they exist in unsuspected numbers and variety. It has been estimated that there are 10<sup>30</sup> tailed bacteriophages in nature. In the oceans, viruses outnumber cells by at least an order of magnitude (although, as they are so much smaller than cells, they account for no more than 5% of the total biomass). Many viral proteins are very different from the sets of molecules from cellular organisms with which we are familiar: typically 90% of viral proteins found in a metagenomic sample don’t match anything in GenBank. Anyone with the ambition of deriving a catalogue of protein-folding patterns, on the basis of the results of current structural genomics projects, should live in dire fear of what the combined viral proteome will reveal. In addition to exposing our ignorance, marine viruses are a mechanism of horizontal gene transfer between cells, thereby contributing to establishment of prokaryotic genetic diversity.
+
+Fields of application of metagenomics include the following.
+
+Human health: Our bodies contain about 10 times as many bacterial cells as human cells. They contribute to healthy states by aiding digestion, synthesizing essential vitamins and amino acids, detoxifying certain harmful chemicals in food, and helping defend against pathogens. They can signal, and of course even cause, disease. Recall the famous story of (subsequent) Nobel laureate Barry Marshall. To prove that H. pylori caused peptic ulcers in the face of a consensus of disbelief, Marshall ingested a sample and induced the disease in himself.
+
+Another illuminating anecdote describes a patient with a recalcitrant unilateral ear infection. After physicians tried everything in their armamentarium, the patient cured himself by transplanting a sample of earwax (and its associated microflora) from his good ear to the infected one. What is perhaps misleading about these examples is that the human microbiome is complex, and its variation in health and disease may in general be far more subtle. The same principles apply to health and disease of animals.
+
+• Agriculture: microorganisms symbiotic with plants, of which the best known are the nitrogenfixing bacteria associated with root nodules of legumes, can provide crop plants with essential nutrients and protect against pathogens.
+Environmental remediation: profiles of microbial communities can monitor acute environmental damage, and track long-term changes such as climate change. Bacteria can even help detoxify damaged environments: after the release of $4 \times 1 0 ^ { 6 }$ barrels of oil into the Gulf of Mexico following the sinking of the Deepwater Horizon oil rig, bacteria contributed to the cleanup by digesting components of the hydrocarbons.
+• Anthropology: human microbiome profiles are more variable than human genomic DNA variation. They provide data for tracing of migration patterns, using the genetic diversity of H. pylori strains in different human populations. They are an index to social organization and diet.
+
+106
+
+---
+
+Biotechnology: although the core of metabolism is common to most life forms, individual species develop unusual enzymes that are applicable to synthesis of useful products on the industrial scale. This includes, but is not limited to, the development of economic alternative energy sources. For instance, leaf-cutter ants harbour symbiotic bacteria that effectively degrade cellulose and lignin to sugars, which can be fermented to ethanol for fuel.
+
+## The human microbiome
+
+The human body contains several ecological niches that harbour flourishing microbial communities. These include internal habitats such as the gut, and exposed regions such as the skin and nasal mucosa which more readily exchange microorganisms with the environment. In all, the microbiome contains about 10 times as many cells as human cells, contributing several kilograms of body weight; these cells contain millions of genes, dwarfing the 21 000 of the human genome (excluding the immune system).
+
+Recognition of the significance of the human microbiome in health and disease is a recent development. Many people feel that its importance continues to be seriously underestimated. The large number of new discoveries in this field support this point of view.
+
+The US National Institutes of Health has established the Human Microbiome Project to characterize the microorganisms living in and on our bodies, and to determine their roles in health and disease. What are the biodiversities and structures of these microbial communities? How do they interact, with one another and with the surroundings? How do they vary from individual to individual, from place to place on Earth? How do they reveal and contribute to health and disease?
+
+Altogether, human microbiome projects have identified 30 human-associated bacterial phyla (less than half of all known bacterial phyla), 51 classes, 125 orders, 493 families, and 939 genera. The distribution is highly skewed: most sites in the body show a few dominant species and a ‘tail’ of rare ones.
+
+The distribution differs from external environments such as soil and sea, showing that we are not merely reflecting our surroundings. For instance, the human microbiome is rich in Firmicutes, Actinobacteria, Proteobacteria, and Bacteriodetes; in contrast, Firmicutes are rarer in external environments.
+
+Different habitats on and within the human body are characterized by different patterns of microflora. Different sites show different person-to-person variation. For example, the mouth shows the least variation among individuals. The mouth flora is also the most stable when remeasured at intervals of several months.
+
+Clinical applications of the human microbiome project depend on recognizing the effects of microflora on health and disease. In addition to the H. pylori–ulcer connection, gut flora are known to be involved in irritable bowel syndrome, Crohn disease, ulcerative colitis, and a variety of gastrointestinal infections. Two specific mechanisms affecting human health are:
+
+1. bacteria in the gut metabolizing dietary choline to produce a substance leading to arteriosclerosis, and, thereby, cardiovascular disease. Antibiotic treatment is effective;
+2. bacteria in the gut metabolizing orally administered drugs. For instance, Eggerthella lenta can inactivate the drug digoxin. Individual and population-specific variation in the population of E. lenta can cause variant responses to treatments with ‘standard’ dosages. This new field is called pharmacomicrobiomics.
+
+107
+
+---
+
+## Genomes of eukarya
+
+It is rare in science to encounter a completely new world containing entirely unsuspected phenomena. The complexity of the eukaryotic genome is such a world (see Box 2.8).
+
+In eukaryotic cells, the majority of DNA is in the nucleus, separated into bundles of nucleoprotein, the chromosomes. Each chromosome contains a single double-stranded DNA molecule. Smaller amounts of
+
+Box 2.8 Inventory of a eukaryotic genome
+
+Moderately repetitive DNA
+
+<div class="docvortex-algorithm" style="white-space: pre-wrap; font-family:monospace;">
+- Functional
+  - Dispersed gene families
+    - e.g. actin, globin
+  - tandem gene family arrays
+    - rRNA genes (250 copies)
+    - tRNA genes (50 sites with 10–100 copies each in humans)
+    - histone genes in many species
+</div>
+
+<div class="docvortex-algorithm" style="white-space: pre-wrap; font-family:monospace;">
+- Without known function
+  - short interspersed nuclear elements (SINEs)
+    - Alu is an example
+    - 200–300 bp long
+    - 100 000s of copies (300 000 Alu)
+    - scattered locations (not in tandem repeats)
+  - long interspersed nuclear elements (LINEs)
+    - 1–5 kb long
+    - 10–10 000 copies per genome
+  - pseudogenes
+</div>
+
+Highly repetitive DNA
+
+<div class="docvortex-algorithm" style="white-space: pre-wrap; font-family:monospace;">
+- Minisatellites
+  - composed of repeats of 14–500 bp segments
+  - 1–5 kb long
+  - many different ones
+  - scattered throughout the genome
+- Microsatellites
+  - composed of repeats of up to 13 bp
+  - ≈ 100s of kb long
+  - ≈ $10^{6}$ copies/genome
+  - most of the heterochromatin around the centromere
+</div>
+
+<div class="docvortex-algorithm" style="white-space: pre-wrap; font-family:monospace;">
+- Telomeres
+  - contain a short repeat unit (typically 6 bp: TTAGGG in human genome, TTGGGG in Paramecium, TAGGG in trypanosomes, TTTAGGG in Arabidopsis)
+  - 250–1000 repeats at the end of each chromosome
+</div>
+
+108
+
+---
+
+DNA appear in organelles: mitochondria and chloroplasts. The organelles originated as intracellular parasites. Organelle genomes usually have the form of circular double-stranded DNA, but are sometimes linear and sometimes appear as multiple circles. The genetic code by which organelle genes are translated differs from that of nuclear genes.
+
+Nuclear genomes of different species vary widely in size (see Box 2.1). The correlation between genome size and complexity of the organism is very rough. It certainly does not support any preconception that humans stand on a pinnacle. In many cases differences in genome size reflect different amounts of simple repetitive sequences.
+
+In addition to variation in DNA content, eukaryotic species vary in the number of chromosomes and distribution of genes among them. Some differences in the distribution of genes among chromosomes involve translocations, or chromosome fragmentations or joinings. For instance, humans have 23 pairs of chromosomes; chimpanzees have 24. Human chromosome 2 is equivalent to a fusion of chimpanzee chromosomes 12 and 13 (see Fig. 2.2). Such differences in chromosome structures can cause fatal difficulty in chromosome pairing during mitosis in a zygote, and thereby contribute to the reproductive isolation associated with species separation.
+
+![](../../raw/pages_0097-0112/images/page_108_image_3.jpg)
+
+<details>
+<summary>natural_image</summary>
+
+Black and white abstract pattern resembling vertical stripes or chromosome pairs (no text or symbols)
+</details>
+
+Figure 2.2 Left: human chromosome 2. Right: matching chromosomes from a chimpanzee.
+
+Other differences in chromosome complement reflect duplication or hybridization events. The wheat first used in agriculture, in the Middle East at least 10 000–15 000 years ago, was a diploid called einkorn (Triticum monococcum), containing 14 pairs of chromosomes. Emmer wheat (Triticum turgidum ssp. dicoccum), also cultivated since Palaeolithic times, and durum wheat (T. turgidum ssp. durum), are merged hybrids of relatives of einkorn with other wild grasses, to form tetraploid species. Additional hybridizations, with different wild grasses, gave hexaploid forms,
+
+109
+
+---
+
+including spelt (Triticum aestivum ssp. spelta) and modern common wheat (T. aestivum ssp. aestivum. Triticale, a robust crop developed in modern agriculture and currently used primarily for animal feed, is an artificial genus arising from crossing durum wheat (T. turgidum ssp. durum) and rye (Secale cereale). Most triticale varieties are hexaploids. (see Table 2.2).
+
+Table 2.2 Development of polyploidy in wheat
+
+| Variety of wheat | Classification | Chromosome complement |
+| --- | --- | --- |
+| Einkorn | Triticum monococcum | AA |
+| Emmer wheat | Triticum turgidum ssp. dicoccum | AABB |
+| Durum wheat | Triticum turgidum ssp. durum | AABB |
+| Spelt | Triticum aestivum ssp. spelta | AABBDD |
+| Common wheat | Triticum aestivum ssp. aestivum | AABBDD |
+| Triticale | Triticosecale | AABBRR |
+
+A, genome of original diploid wheat or a relative; B, genome of a wild grass Aegilops speltoides or Triticum speltoides or a relative; D, genome of another wild grass, Triticum tauschii, or a relative; R, genome of rye Secale cereale.
+
+All these species are still cultivated—some to only minor extents—and have their individual uses in cooking. Spelt, or farro in Italian, is the basis of a well-known soup; pasta is made from durum wheat; and bread from ssp. aestivum.
+
+Recent investigations of the history of wheat go beyond simple chromosome counts, to studies of relationships between species and subspecies at the genomic level. General results have measured the decay of synteny between orthologous regions after polyploidization, and mapping of insertions and deletions. Particular results include identification of mutations that confer properties favourable for agriculture. These properties include survival under stressful climate or soil conditions; and firmer attachment of grains to spikes, preserving them for harvesting against dispersal by wind.
+
+A species that undergoes a revolutionary genomic change such as polyploidization is threatened with a penalty in the form of loss of genetic diversity. For the change must have occurred initially in only one or a few individuals, founders of new populations. Evidence for gene flow between domestic and wild forms of wheat suggests a mechanism for recovery and maintenance of genetic diversity. (For a corresponding discussion of maize domestication see Introduction to Genomics, chapter 3.)
+
+## Gene families
+
+In addition to duplications of entire chromosomes, duplications of individual genes are common, as a result of unequal crossing over. Therefore, gene families on single chromosomes are common in eukarya.
+
+Some family members are paralogues—related genes that have diverged to provide separate functions in the same species. (Orthologues, in contrast, are homologues that perform the same function in different species. For instance, human α and β globin are paralogues, and human and horse myoglobin are orthologues.) Other related sequences may be pseudogenes, which may have arisen by duplication, or by retrotransposition from mRNA, followed by the accumulation of mutations to the point of loss of function. The human globin gene cluster is a good example (see Box 2.9).
+
+## The genome of Saccharomyces cerevisiae (baker’s yeast)
+
+Yeast is one of the simplest known eukaryotic organisms. Its cells, like our own, contain a nucleus
+
+110
+
+---
+
+and other specialized intracellular compartments. The sequencing of its genome, by an unusually effective international consortium involving ≈100 laboratories, was completed in 1992. The yeast genome contains 12 057 500 bp of nuclear DNA, distributed over 16 chromosomes. The chromosomes range in size
+
+## Box 2.9 The globin gene clusters
+
+Human haemoglobin genes and pseudogenes appear in clusters on chromosomes 11 and 16. The normal adult human synthesizes primarily three types of globin chain: α- and β-chains, which assemble into haemoglobin α<sub>2</sub>β<sub>2</sub> tetramers, and myoglobin, a monomeric protein found in muscle. Other forms of haemoglobin, encoded by different genes, are synthesized in the embryonic and foetal stages of life. Other globins are unlinked; they arose long before this cluster diverged.
+
+![](../../raw/pages_0097-0112/images/page_110_image_3.jpg)
+
+## See Weblems 2.18 and 2.19
+
+![](../../raw/pages_0097-0112/images/page_110_image_5.jpg)
+
+The α gene cluster on chromosome 16 extends over 28 kbp. It contains three functional genes: $\zeta$ and two α genes identical in their coding regions, $\mathfrak { a } _ { 1 }$ and $\mathbf { a } _ { 2 } ;$ three pseudogenes, ψζ, ψα<sub>1</sub>, and possibly μ; and another homologous gene the function of which is obscure, θ. The β gene cluster on chromosome 11 extends over 50 kbp. It includes five functional genes: ε, two γ genes $( \mathbf { G } _ { \gamma }$ and $\mathbf { A } _ { \gamma } )$ , which differ in one amino acid, δ, and β; and one pseudogene, ψβ. The genes for myoglobin, neuroglobin and cytoglobin are unlinked from both of these clusters.
+
+All human haemoglobin and myoglobin genes have the same intron/exon structure. They contain three exons separated by two introns.
+
+| E1 | I1 | E2 | I2 | E3 |
+| --- | --- | --- | --- | --- |
+
+Here E means exon and I means intron. The lengths of the regions in this figure reflect the human β globin gene. This exon/intron pattern is conserved in most expressed vertebrate globin genes, including haemoglobin α- and β-chains and myoglobin. In contrast, the genes for plant globins have an additional intron, genes for Paramecium globins have one fewer intron, and genes for insect globins contain none. The gene for human neuroglobin, a homologue expressed at low levels in the brain, contains three introns, like plant globin genes.
+
+The distribution of haemoglobin genes and pseudogenes on the chromosomes appears to reflect their evolution via duplication and divergence.
+
+![](../../raw/pages_0097-0112/images/page_110_image_11.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  Root["Gene duplication"] --> Branch1["α & β"]
+  Root --> Branch2["β & γ"]
+  
+  Branch1 --> Branch2
+  
+  Branch2 --> Branch3["Further duplications and divergence"]
+  
+  Branch3 --> Branch4["α"]
+  Branch3 --> Branch5["β"]
+  
+  Branch4 --> Branch6["ζ"]
+  Branch4 --> Branch7["ψζ"]
+  Branch4 --> Branch8["μ"]
+  Branch4 --> Branch9["ψα₁"]
+  Branch4 --> Branch10["α₂"]
+  Branch4 --> Branch11["α₁"]
+  Branch4 --> Branch12["θ"]
+  
+  Branch5 --> Branch6
+  Branch5 --> Branch7
+  Branch5 --> Branch8
+  Branch5 --> Branch9
+  Branch5 --> Branch10
+  Branch5 --> Branch11
+  Branch5 --> Branch12
+  
+  Branch6 -.-> Root
+  Branch7 -.-> Root
+  Branch8 -.-> Root
+  Branch9 -.-> Root
+  Branch10 -.-> Root
+  Branch11 -.-> Root
+  Branch12 -.-> Root
+  
+  Root --> Final["β"]
+  Final --> End["β"]
+```
+</details>
+
+111
+
+---
+
+The expression of these genes follows a strict developmental pattern. In the embryo (up to 6 weeks after conception) two haemoglobin chains are primarily synthesized—ζ and ε—which form a ζ<sub>2</sub>ε<sub>2</sub> tetramer. Between 6 weeks after conception until about 8 weeks after birth, foetal haemoglobin—α<sub>2</sub>γ<sub>2</sub>—is the predominant species. This is succeeded by adult haemoglobin: α<sub>2</sub>β<sub>2</sub>.
+
+Thalassaemias are genetic diseases associated with defective or deleted haemoglobin genes. Most caucasian people have four genes for the α-chain of normal adult haemoglobin, two alleles of each of the two tandem genes $\mathfrak { a } _ { 1 }$ and α<sub>2</sub>. Therefore α-thalassaemias can present clinically in different degrees of severity, depending on how many genes express normal α-chains. Only deletions leaving fewer than two active genes present as symptomatic under normal conditions. Observed genetic defects include deletions of both genes (a process made more probable by the tandem gene arrangement and repetitive sequences, which make crossing over more likely) and loss of chain termination leading to transcriptional ‘read through’, creating extended polypeptide chains that are unstable.
+
+β-Thalassaemias are usually point mutations, including missense mutations (amino acid substitutions) or nonsense mutations (changes from a triplet coding for an amino acid to a stop codon) leading to premature termination and a truncated protein, mutations in splice sites, or mutations in regulatory regions. Certain deletions including the normal termination codon and the intergenic region between δ and β genes create δ–β fusion proteins.
+
+over an order of magnitude, from the 1352 kbp chromosome IV to the 230 kbp chromosome I.
+
+The yeast genome contains 6172 predicted protein-coding genes, ≈140 genes for rRNAs, 40 genes for small nuclear RNAs, and 275 tRNA genes. In two respects, the yeast genome is denser in coding regions than the known genomes of the more complex eukarya C. elegans, D. melanogaster, and human: (1) introns are relatively rare, and relatively small (only 231 genes in yeast contain introns) and (2) there are fewer repeat sequences compared with more complex eukarya.
+
+A duplication of the entire yeast genome appears to have occurred ≈150 million years ago. This was followed by translocations of pieces of the duplicated DNA and loss of one of the copies of most ( ≈92%) of the genes.
+
+Of the 6172 protein-coding genes, between 4000 and 5000 correspond to molecules to which a function can be assigned, with varying degrees of confidence. Only about one-third of yeast proteins have identifiable homologues in the human genome.
+
+In taking censuses of genes it has been useful to classify their functions into broad categories. The classification of yeast protein functions in Table 2.3 is taken from [http://mips.gsf.de/genre/proj/yeast/Search/Catalogs/catalog.jsp](http://mips.gsf.de/genre/proj/yeast/Search/Catalogs/catalog.jsp).
+
+Table 2.3 Distribution of functional categories among yeast proteins
+
+| Functional category | Number of proteins |
+| --- | --- |
+| Metabolism | 1514 |
+| Energy | 367 |
+| Cell cycle and DNA processing | 1007 |
+| Transcription | 1078 |
+| Protein synthesis | 480 |
+| Protein fate (folding, modification, destination) | 1154 |
+| Protein with binding function or cofactor requirement (structural or catalytic) | 1048 |
+| Regulation of metabolism and protein function | 249 |
+| Cellular transport, transport facilities, and transport routes | 1038 |
+| Cellular communication/signal transduction mechanism | 234 |
+| Cell rescue, defence, and virulence | 554 |
+| Interaction with the environment | 463 |
+| Transposable elements, viral and plasmid proteins | 120 |
+
+112
+
+---
+
+| Cell fate | 273 |
+| --- | --- |
+| Development (systemic) | 69 |
+| Biogenesis of cellular components | 862 |
+| Cell-type differentiation | 452 |
+| Total functionally classified proteins | 4778 |
+| Functionally unclassified proteins | 1394 |
+
+Yeast is a testbed for development of methods to assign functions to gene products. The search for homologues has been exhaustive and continues. Collections of mutants exist that contain a knockout of every gene. (A unique sequence ‘bar code’ introduced into each mutant facilitates identification of the ones that grow under selected conditions.) Cellular localization and expression patterns are being investigated. Several types of measurement, including those based on activation of transcription by pairs of proteins that can form dimers, are producing catalogues of interprotein interactions.
+
+![](../../raw/pages_0113-0128/images/page_112_image_2.jpg)
+
+## See Weblem 2.20
+
+## The genome of Caenorhabditis elegans
+
+The nematode worm C. elegans entered biological research in the 1960s, at the express invitation of Sydney Brenner. He recognized its potential as an organism sufficiently complex to be interesting yet simple enough to permit complete analysis, at the cellular level, of its genetics, development, and neural circuitry.
+
+The C. elegans genome, completed in 1998, provided the first full DNA sequence of a multicellular organism. The C. elegans genome contains ≈97 Mbp of DNA distributed on paired chromosomes I, II, III, IV, V, and X (see Table 2.4). There is no Y chromosome. Different genders in C. elegans appear in the XX genotype, a self-fertilizing hermaphrodite, and the XO genotype, a male.
+
+Table 2.4 Distribution of C. elegans genes
+
+| Chromosome | Size (Mb) | Number of protein genes | Density of protein genes (kb/gene) | Number of tRNA genes |
+| --- | --- | --- | --- | --- |
+| I | 7.9 | 2803 | 5.06 | 13 |
+| II | 8.5 | 3259 | 3.65 | 6 |
+| III | 7.6 | 2508 | 5.40 | 9 |
+| IV | 9.2 | 3094 | 5.17 | 7 |
+| V | 9.8 | 4082 | 4.15 | 5 |
+| X | 10.1 | 2631 | 6.54 | 3 |
+
+The C. elegans genome is about eight times larger than that of yeast, and its 19 099 predicted genes are approximately three times the number in yeast. The gene density is relatively low for a eukaryote, with ≈1 gene/5 kb of DNA. Exons cover ≈27% of the genome; the genes contain an average of five introns each. Approximately 25% of the genes are in clusters of related genes.
+
+Many C. elegans proteins have homologues common to other life forms. Others are apparently specific to nematodes: 42% of proteins have homologues outside the phylum, 34% are homologous to proteins of other nematodes, and 24% have no known homologues outside C. elegans itself. Many of the proteins have been classified according to structure and function (see Table 2.5).
+
+Table 2.5 C. elegans: 20 commonest protein domains
+
+| Type of domain | Number |
+| --- | --- |
+| Seven-transmembrane spanning chemoreceptor | 650 |
+
+113
+
+---
+
+| Eukaryotic protein kinase domain | 410 |
+| --- | --- |
+| Two domain, C4 type zinc finger | 240 |
+| Collagen | 170 |
+| Seven-transmembrane spanning receptor (rhodopsin-family) | 140 |
+| C2H2-type zinc finger | 130 |
+| C-type lectin | 120 |
+| RNA-recognition motif | 100 |
+| C3HC4-type (RING finger) zinc fingers | 90 |
+| Protein tyrosine phosphatase | 90 |
+| Ankyrin repeat | 90 |
+| WD domain G-β repeat | 90 |
+| Homeobox domain | 80 |
+| Neurotransmitter-gated ion channel | 80 |
+| Cytochrome P450 | 80 |
+| Conserved C-terminal helicase | 80 |
+| Short-chain and alcohol dehydrogenases | 80 |
+| UDP-glucoronosyl and UDP-glucosyl transferases | 70 |
+| EGF-like domain | 70 |
+| Immunoglobulin superfamily | 70 |
+
+From the C. elegans genome consortium paper in Science volume 282, dated 11 December 1998.
+
+Several kinds of RNA genes have been identified. The C. elegans genome contains 659 genes for tRNA, almost half of them (44%) on the X chromosome. Spliceosomal RNAs appear in dispersed copies, often identical. (Spliceosomes are the organelles that convert pre-mRNA transcripts to mature mRNA by excising introns and stitching the exons together.) rRNAs appear in a long tandem array at the end of chromosome I. 5S RNAs appear in a tandem array on chromosome V. Some RNA genes appear in introns of protein-coding genes.
+
+The C. elegans genome contains many repeat sequences. Approximately 2.6% of the genome consists of tandem repeats. Approximately 3.6% of the genome contains inverted repeats; these appear preferentially within introns, rather than between genes. Repeats of the hexamer sequence TTAGGC appear in many places. There are also simple duplications, involving hundreds to tens of thousands of kilobases.
+
+## The genome of Drosophila melanogaster
+
+D. melanogaster, the fruit fly, has been the subject of detailed studies of genetics and development for almost a century. Its genome sequence, the product of a collaboration between Celera Genomics and the Berkeley Drosophila Genome Project, was announced in 1999.
+
+The chromosomes of D. melanogaster are nucleoprotein complexes, with variation in their structure along their lengths. Approximately one-third of the genome is contained in heterochromatin, highly coiled and compact (and therefore densely staining) regions flanking the centromeres. The other two-thirds is euchromatin, a relatively uncoiled, less compact form. Most of the active genes are in the euchromatin. The heterochromatin in D. melanogaster contains many tandem repeats of the sequence AATAACATAG, and relatively few genes.
+
+The total chromosomal DNA of D. melanogaster contains about ≈180 Mbp. The sequence released in 1999 consists of the euchromatic portion, about 120 Mbp. In 2007 an additional ≈15 Mbp of heterochromatin sequence was assembled.
+
+The genome is distributed over five chromosomes: three large autosomes, a Y chromosome, and a
+
+114
+
+---
+
+fifth tiny chromosome containing only ≈1 Mbp of euchromatin. The fly’s 13 601 genes are approximately double the number in yeast, but are fewer than in C. elegans, perhaps a surprise. The average density of genes in the euchromatin sequence is 1 gene/9 kb, much lower than the typical 1 gene/kb densities of prokaryotic genomes.
+
+The heterochromatin contains at least ≈250 protein-coding genes. They differ from typical euchromatic protein-coding genes by containing longer introns. Most of the intron sequences are repetitive, predominantly fragmented transposable elements.
+
+Despite the fact that insects are not very closely related to mammals, the fly genome is useful in the study of human disease. It contains homologues of 289 human genes implicated in various diseases, including cancer and cardiovascular, neurological, endocrinological, renal, metabolic, and haematological diseases. Some of these homologues have different functions in humans and flies. Other human disease-associated genes can be introduced into, and studied in, the fly. For instance, the gene for human spinocerebellar ataxia type 3, when expressed in the fly, produces similar neuronal cell degeneration. There are now fly models for Parkinson’s disease and malaria.
+
+The noncoding regions of the D. melanogaster genome must contain regions controlling spatiotemporal patterns of development. The developmental biology of the fly has been studied very intensively. It is therefore an organism in which the study of the genomics of development should prove extremely informative.
+
+## The genome of Arabidopsis thaliana
+
+As a flowering plant A. thaliana is a very distant relative of most other higher eukaryotic organisms for which genome sequences are available. It invites comparative analysis to identify common and specialized features. A. thaliana has a relatively small genome—146 Mb—distributed over five chromosomes. The maize genome is almost 20 times larger. The compact genome was one reason for the adoption of Arabidopsis as a research species. A. thaliana is called ‘the fruit fly of botany’
+
+The Arabidopsis Genome Initiative reported 115.4 Mbp of genomic DNA sequence in 2000. There are five pairs of chromosomes, containing 25 498 predicted genes (see Table 2.6). The genome is relatively compact, with 1 gene/4.6 kb on average. This figure is intermediate between prokaryotes and Drosophila, and roughly similar to C. elegans. The genes of Arabidopsis are relatively small. Exons are typically 250 bp long, and introns relatively small, with a mean length 170 bp. Typical of plant genes is an enrichment of coding regions in GC content.
+
+Table 2.6 The A. thaliana genome
+
+<table><tr><td></td><td colspan="5">Chromosome</td><td>Total</td></tr><tr><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td></td></tr><tr><td>Length (bp)</td><td>29 105 111</td><td>19 646 945</td><td>23 172 617</td><td>17 549 867</td><td>25 353 409</td><td>115 409 949</td></tr><tr><td>Number of genes</td><td>6543</td><td>4036</td><td>5220</td><td>3825</td><td>5874</td><td>25 498</td></tr><tr><td>Density (kb/gene)</td><td>4.0</td><td>4.9</td><td>4.5</td><td>4.6</td><td>4.4</td><td></td></tr><tr><td>Mean gene length (kb)</td><td>2078</td><td>1949</td><td>1925</td><td>2138</td><td>1974</td><td></td></tr></table>
+
+Most Arabidopsis proteins have homologues in animals, but some systems are unique, among higher organisms, to plants. These include cell wall production and photosynthesis. It might be expected that these need special proteins that might not be shared with animals. Many proteins shared with animals have diverged widely since the last common ancestor. Typical of another difference between plants and animals, 25% of the nuclear genes have signal sequences governing their transport into organelles—mitochondria and chloroplasts—compared to 5% of mitochondrion-
+
+115
+
+---
+
+targeted nuclear genes in animals.
+
+![](../../raw/pages_0113-0128/images/page_115_image_1.jpg)
+
+## See Weblem 2.21
+
+The Arabidopsis nuclear genome is relatively compact. Protein-coding genes contain an average of 5.4 exons and have an average length 276 bp, separated by relatively short introns of about 165 bp long. The intergenic spacing is also short, about 4.6 kb. A feature of plant genes is that the G + C content of exons (44%) is higher than that of introns (32%).
+
+The structure of the A. thaliana genome reveals both local and genome-wide duplications. There were at least three polyploidizations, estimates for the dates of which vary widely. The ranges 225–300 million years ago for the first, 150–170 million years ago for the second, and 25–40 million years ago for the most recent have been suggested. In addition, local duplications have affected ≈17% of genes. Close relatives, such as cabbage and cauliflower, have undergone additional polyploidizations during the 12 million years since they diverged from Arabidopsis.
+
+Higher plants must integrate the effects of three genomes: nuclear, chloroplast, and mitochondrial. The organelle genomes are much smaller (see Table 2.7).
+
+Table 2.7 Gene distribution in A. thaliana between nucleus and organelles
+
+|  | Nucleus | Chloroplast | Mitochondrion |
+| --- | --- | --- | --- |
+| Size (kb) | 125 100 | 154 | 367 |
+| Protein genes | 25 498 | 79 | 58 |
+| Density (kb/protein gene) | 4.5 | 1.2 | 6.25 |
+
+Many genes for proteins synthesized by nuclear genes and transported to organelles appear to have originated in the organelles and been transferred to the nucleus.
+
+Genome analysis must address questions of divisions of labour. Relative to animal cells, organelles in plant cells bear a greater metabolic burden, if only because of the activities of chloroplasts. Chloroplast genomes are relatively gene-dense, with preserved gene order. In plant mitochondria, genes are more widely spaced, and recombination is more common. Mitochondrial and chloroplast genes contain fewer introns, as shown here.
+
+| Genome | Nucleus | Chloroplast | Mitochondrion |
+| --- | --- | --- | --- |
+| Genes containing introns | 80% | 18.4% | 12% |
+
+The Arabidopsis proteome contains many genes specific to plants, including those involved in photosynthesis, and metabolism of cell wall components.
+
+Plants have many special metabolic pathways, for photosynthesis and for metabolism of cell wall components, alkaloids, and growth regulators such as auxins and gibberelins. Complex metabolism requires the genome to encode a large and varied set of enzymes.
+• Plants are threatened by pathogens and have evolved defence mechanisms dissimilar from our immune system. One weapon against pathogens involves production of reactive oxygen species. Plants synthesize some defence molecules against animals and others that attract pollinators. These have provided useful sources of flavours, fragrances, and drugs, encompassing traditional ‘herbal medicine’ and modern pharmacology.
+• In keeping with the essential role of light in plant life, Arabidopsis has many light sensors, that regulate development and circadian responses.
+
+116
+
+---
+
+• Arabidopsis is rich in genes that encode water-transporting channels, peptide hormone transporters, metabolic and biosynthetic enzymes, and proteins involved in defence, detoxification, and environmental sensing.
+
+Comparing the proteins encoded in the nuclear genome of Arabidopsis with human proteins, the fraction of homologues observed varies with functional category. For protein synthesis, 60% of nuclear-encoded Arabidopsis genes have human homologues. For transcription regulation, the figure is only 30%. It is not that transcription is poorly represented in plant genomes; it’s just that plants do it differently. In fact, plants have several times as many transcription factors as the fruit fly. Although many components of the signal transduction pathways familiar from animals are absent in plants, plants have developed specific transcription factor families unknown in animals.
+
+Many Arabidopsis genes are homologous to human genes implicated in disease. For instance, plants and animals have similar DNA-repair systems, and Arabidopsis has a homologue of BRCA2. For some human-disease-associated genes, the plant homologue is more similar to the human protein than those from fruit fly or C. elegans. Study of the function of the plant homologues will be illuminating, even though it is unlikely that Arabidopsis will be suitable for clinical trials of drugs intended for human use!
+
+## The genome of Homo sapiens (the human genome)
+
+## NOTICE
+
+Persons attempting to find a motive in this narrative will be prosecuted; persons attempting to find a moral in it will be banished; persons attempting to find a plot in it will be shot.
+
+Mark Twain, Preface to The Adventures of Huckleberry Finn
+
+In February 2001 the International Human Genome Sequencing Consortium and Celera Genomics published, separately, drafts of the human genome. On 14 April 2003 the finishing of the genome was announced, with reduced error rate and closure of most gaps. This date was within a few days of the fiftieth anniversary of the publication of the Watson–Crick model for the structure for DNA.
+
+The sequence amounts to about $3 . 2 \times 1 0 ^ { 9 }$ bp, 30 times larger than the genomes of C. elegans or D. melanogaster. One reason for this disparity in size is that coding sequences form less than 5% of the human genome and repeat sequences over 50%. Perhaps the most surprising feature was the small number of genes identified. The finding of only about 20 000–25 000 genes suggests that alternative splicing patterns make a very significant contribution to our protein repertoire. It is estimated that ≈35% of human genes have alternative splicing patterns.
+
+The human genome is distributed over 22 chromosome pairs plus the X and Y chromosomes. The DNA contents of the autosomes range from 279 down to 48 Mbp. The X chromosome contains 163 Mbp and the Y chromosome only 51 Mbp.
+
+The exons of human protein-coding genes are relatively small compared to those in other known eukaryotic genomes. The introns are relatively long. As a result many protein-coding genes span long stretches of DNA. For instance, the dystrophin gene, coding for a 3685 amino acid protein, is more than 2.4 Mbp long.
+
+## Protein-coding genes
+
+Analysis of the human protein repertoire implied by the genome sequence has proved difficult
+
+117
+
+---
+
+because of the problems in detecting genes reliably, and because of alternative splicing patterns. Of the estimated 20 000–25 000 genes, the top categories in a functional classification are in Table 2.8.
+
+Table 2.8 Functional classification of human gene products
+
+| Function | Number | % of genome |
+| --- | --- | --- |
+| Nucleic acid binding | 2207 | 14.0% |
+| DNA binding | 1656 | 10.5% |
+| DNA-repair protein | 45 | 0.2% |
+| DNA replication factor | 7 | 0.0% |
+| Transcription factor | 986 | 6.2% |
+| RNA binding | 380 | 2.4% |
+| Structural protein of ribosome | 137 | 0.8% |
+| Translation factor | 44 | 0.2% |
+| Transcription factor binding | 6 | 0.0% |
+| Cell-cycle regulator | 75 | 0.4% |
+| Chaperone | 154 | 0.9% |
+| Motor | 85 | 0.5% |
+| Actin binding | 129 | 0.8% |
+| Defence/immunity protein | 603 | 3.8% |
+| Enzyme | 3242 | 20.6% |
+| Peptidase | 457 | 2.9% |
+| Endopeptidase | 403 | 2.5% |
+| Protein kinase | 839 | 5.3% |
+| Protein phosphatase | 295 | 1.8% |
+| Enzyme activator | 3 | 0.0% |
+| Enzyme inhibitor | 132 | 0.8% |
+| Apoptosis inhibitor | 28 | 0.1% |
+| Signal transduction | 1790 | 11.4% |
+| Receptor | 1318 | 8.4% |
+| Transmembrane receptor | 1202 | 7.6% |
+| G-protein linked receptor | 489 | 3.1% |
+| Olfactory receptor | 71 | 0.4% |
+| Storage protein | 7 | 0.0% |
+| Cell adhesion | 189 | 1.2% |
+| Structural protein | 714 | 4.5% |
+| Cytoskeletal structural protein | 145 | 0.9% |
+| Transporter | 682 | 4.3% |
+| Ion channel | 269 | 1.7% |
+| Neurotransmitter transporter | 19 | 0.1% |
+| Ligand binding or carrier | 1536 | 9.7% |
+| Electron transfer | 33 | 0.2% |
+| Cytochrome P450 | 50 | 0.3% |
+| Tumour suppressor | 5 | 0.0% |
+| Unclassified | 4813 | 30.6% |
+| Total | 15 683 | 100.0% |
+
+A classification based on structure revealed the most common types of protein (Table 2.9).
+
+Table 2.9 Most common types of protein
+
+| Protein | Number |
+| --- | --- |
+| Immunoglobulin and major histocompatibility complex domain | 591 |
+| Zinc finger, C2H2 type | 499 |
+
+118
+
+---
+
+| Eukaryotic protein kinase | 459 |
+| --- | --- |
+| Rhodopsin-like GPCR superfamily | 346 |
+| Serine/threonine protein kinase family active site | 285 |
+| EGF-like domain | 259 |
+| RNA-binding region RNP-1 (RNA recognition motif) | 214 |
+| G-protein β WD-40 repeats | 196 |
+| Src homology 3 (SH3) domain | 194 |
+| Pleckstrin homology (PH) domain | 188 |
+| EF-hand family | 185 |
+| Homeobox domain | 179 |
+| Tyrosine kinase catalytic domain | 173 |
+| Immunoglobulin V-type | 163 |
+| RING finger | 159 |
+| Proline-rich extensin | 156 |
+| Fibronectin type III domain | 151 |
+| Ankyrin-repeat | 135 |
+| KRAB box | 133 |
+| Immunoglobulin subtype | 128 |
+| Cadherin domain | 118 |
+| PDZ domain (also known as DHR or GLGF) | 117 |
+| Leucine-rich repeat | 113 |
+| Serine proteases, trypsin family | 108 |
+| Ras GTPase superfamily | 103 |
+| Src homology 2 (SH2) domain | 100 |
+| BTB/POZ domain | 99 |
+| TPR repeat | 92 |
+| AAA ATPase superfamily | 92 |
+| Aspartic acid and asparagine hydroxylation site | 91 |
+
+DHR, Dig-homologous region; GLGF, glycine-leucine-glycine-phenylalanine domain; GPCR, G-protein-coupled receptor. From [http://www.ebi.ac.uk/proteome/](http://www.ebi.ac.uk/proteome/).
+
+## Repeat sequences
+
+Repeat sequences comprise over 50% of the genome:
+
+• transposable elements, or interspersed repeats: almost half the entire genome! These include the LINEs and SINEs (see Table 2.10);
+• retroposed pseudogenes;
+simple ‘stutters’: repeats of short oligomers. These include the minisatellites and microsatellites. Trinucleotide repeats such as CAG, corresponding to glutamine repeats in the corresponding protein, are implicated in numerous diseases;
+segmental duplications, in blocks of ≈10–300 kb: interchromosomal duplications appear on nonhomologous chromosomes, sometimes at multiple sites. Some intrachromosomal duplications include closely spaced duplicated regions many kilobases long of very similar sequence implicated in genetic diseases; for example, Charcot–Marie–Tooth syndrome type 1A, a progressive peripheral neuropathy resulting from duplication of a region containing the gene for peripheral myelin protein 22;
+• blocks of tandem repeats, including gene families.
+
+Table 2.10 Types of transposable element in the human genome
+
+119
+
+---
+
+| Element | Size (bp) | Copy number | Fraction of genome |
+| --- | --- | --- | --- |
+| Short interspersed nuclear elements (SINEs) | 100–300 | 1 500 000 | 13% |
+| Long interspersed nuclear elements (LINEs) | 6000–8000 | 850 000 | 21% |
+| Long terminal repeats | 15 000–110 000 | 450 000 | 8% |
+| DNA transposon fossils | 80–3000 | 300 000 | 3% |
+
+## RNA
+
+RNA genes in the human genome include:
+
+497 tRNA genes: one large cluster contains 140 tRNA genes in a 4 Mbp region on chromosome 6;
+genes for 28S and 5.8S rRNAs appear in a 44 kb tandem repeat unit of 150–200 copies; 5S RNA genes also appear in tandem arrays containing 200–300 genes, the largest of which is on chromosome 1;
+• small nuclear RNAs (snRNAs) include two families of molecules that cleave and process rRNAs;
+• spliceosomal snRNAs, including the U1, U2, U4, U5, and U6 snRNAs, many of which appear in clusters of tandem repeats of nearly identical sequences, or inverted repeats;
+• other noncoding RNAs are distributed around the genome. These include siRNAs, miRNAs, and piRNAs active in control of gene expression.
+
+## Single-nucleotide polymorphisms and haplotypes
+
+All people, except identical siblings, have a unique DNA sequences in almost all cells.<sup>3</sup> Comparisons between unrelated individuals reveal overall differences between whole-genome sequences of ≈0.1%. Many of the differences between individuals have the form of single-nucleotide polymorphisms, or SNPs. There are also many short deletions.
+
+A SNP (pronounced ‘snip’) is a genetic variation between individuals, limited to a single base pair that can be substituted, inserted, or deleted. Sickle-cell anaemia is an example of a disease caused by a specific SNP: an A → T mutation in the β globin gene changes a Glu to a Val, creating a sticky surface on the haemoglobin molecule that leads to polymerization of the deoxy form.
+
+Not all SNPs are linked to diseases. Many are not within functional regions (although the density of SNPs is higher than the average in regions containing genes). Some SNPs that occur within exons are mutations to synonymous codons, or cause substitutions that do not significantly affect protein function. Other types of SNP can cause more than local perturbation to a protein: (1) a mutation from a sense codon to a stop codon, or vice versa, will cause either premature truncation of protein synthesis or ‘read through’ and (2) a deletion or insertion may cause a phase shift in translation.
+
+![](../../raw/pages_0113-0128/images/page_119_image_13.jpg)
+
+## See Weblem 2.22
+
+The A, B, and O alleles of the genes for blood groups illustrate these possibilities. A and B alleles differ by four SNP substitutions. They code for related proteins that add different saccharide units to an antigen on the surface of red blood cells.
+
+| Allele | Sequence | Saccharide |
+| --- | --- | --- |
+| A | ...gctggtgacccctt... | N-Acetylgalactosamine |
+| B | ...gctcgtcaccgcta... | Galactose |
+| O | ...cgtggt-acccctt... | — |
+
+The O allele has undergone a mutation causing a phase shift, and produces no active enzyme. The
+
+120
+
+---
+
+red blood cells of type O individuals contain neither the A nor the B antigen. This is why people with type O blood are universal donors in blood transfusions. The loss of activity of the protein does not seem to carry any adverse consequences. Indeed, individuals of blood types B and O have greater resistance to smallpox.
+
+Strong correlation of a disease with a specific SNP is advantageous in clinical work because it is relatively easy to test for affected people or carriers. But if a disease arises from dysfunction of a specific protein there ought to be many sites of mutations that could cause inactivation. However, a particular site may predominate if (1) all bearers of the gene are descendants of a single individual in whom the mutation occurred, and/or (2) the disease results from a gain rather than loss of a specific property, such as in the ability of sickle-cell haemoglobin to polymerize, and/or (3) the mutation rate at a particular site is unusually high, as in the $^ { 3 8 0 } \mathrm { G l y }   \rightarrow   \mathrm { A r g }$ mutation in the fibroblast growth receptor gene FGFR3, associated with achondroplasia (a syndrome including short stature).
+
+In contrast, many independent mutations have been detected in the BRCA1 and BRCA2 genes, loci associated with increased disposition to early-onset breast and ovarian cancer. The normal gene products function as tumour suppressors. Insertion or deletion mutants causing phase shifts generally produce a missing or inactive protein. But it cannot be deduced a priori whether a novel substitution mutant in BRCA1 or BRCA2 confers increased risk or not.
+
+Treatments of diseases caused by defective or absent proteins include the following.
+
+1. Providing normal protein. We have mentioned insulin for diabetes, and Factor VIII in the most common type of haemophilia. Another example is the administration of human growth hormone in patients with an absence or severe reduction in normal levels. Use of recombinant proteins eliminates the risk of transmission of AIDS through blood transfusions or of Creutzfeld–Jakob disease from growth hormone isolated from crude pituitary extracts.
+2. Lifestyle adjustments that make the function unnecessary. Phenylketonuria (PKU) is a genetic disease caused by deficiency in phenylalanine hydroxylase, the enzyme that converts phenylalanine to tyrosine. Accumulation of high levels of phenylalanine causes developmental defects, including mental retardation. The symptoms can be avoided by a phenylalanine-free diet. Screening of newborns for high blood phenylalanine levels is legally required in the USA and many other countries.
+3. Gene therapy to replace absent proteins is an active field of research.
+
+![](../../raw/pages_0113-0128/images/page_120_image_8.jpg)
+
+## See Weblem 2.23 and 2.24
+
+Other clinical applications of SNPs reflect correlations between genotype and reaction to therapy (pharmacogenomics). For example, a SNP in the gene for N-acetyltransferase (NAT-2) is correlated with peripheral neuropathy—weakness, numbness, and pain in the arms, legs, hands, or feet—as a side effect of treatment with isoniazid (isonicotinic acid hydrazide), a common treatment for tuberculosis. Patients who test positive for this SNP are given alternative treatment.
+
+SNPs are distributed throughout the genome, occurring on the average every 2000 bp. Although they arose by mutation, many positions containing SNPs have low mutation rates, and provide stable markers for mapping genes.
+
+Each of us bears an accumulated collection of SNPs reflecting mutations that occurred in our ancestors. Some constellations of SNPs are co-inherited as blocks. Others are not: mutations in dif erent DNA molecules of diploid chromosomes become separated within a single generation, by assortment. Mutations on the same chromosome become separated more slowly, by recombination. Haploid sequences, such as the most of the human Y chromosome or mitochondrial DNA, are not
+
+121
+
+---
+
+subject to recombination. Mutations in these sequences remain together.
+
+Mutations in the same DNA molecule in diploid chromosomes will become unlinked by recombination events that occur between their loci. The greater the separation between two sites, the greater the frequency of recombination. However, recombination rates vary widely along the genome, by several orders of magnitude. SNPs on opposite sides of recombinational ‘hot spots’ are more likely to be separated in any generation. SNPs lying within recombination-poor (‘cold’) regions will tend to stay together.
+
+Haplotypes are local combinations of genetic polymorphisms that tend to be co-inherited. In humans, many 100 kb regions tend to remain intact. They show the expected number of SNPs, but relatively few of the possible combinations. An average SNP density of 0.1%, or 1 SNP/kb, suggests ≈100 SNPs per 100 kb. The genome of any individual may possess, or may lack, each of them, giving a very large number $( 2 ^ { 1 0 0 } )$ of possible combinations. However, many 100 kb regions show fewer than five combinations of SNPs. These discrete combinations of SNPs in recombination-poor regions define an individual’s ‘haploid genotype’ or haplotype (see Box 2.10).
+
+Haplotypes provide a very economical characterization of entire genomes. They simplify the search for genes responsible for diseases, or any other phenotype–genotype correlations. For field biologists, including anthropologists, haplotypes permit detection of migratory and interbreeding patterns in populations.
+
+In looking for genes responsible for diseases or other phenotypic traits, haplotypes provide a magnifying glass. The goal is to correlate phenotype with genetic sequence. The target may be to identify one base out of $3   \times   1 0 ^ { 9 }$ . By correlating phenotype with haplotype, much less sequencing data must be collected to localize the site to within the typical length of a haplotype block, perhaps ≈100 kb, containing only a few genes. Another way to look at it is to regard boundaries between haplotype blocks as like the grooves in a bar of chocolate that permit it to be broken easily into bitesize fragments.
+
+## Systematic measurements and collections of single-nucleotide polymorphisms
+
+Variations in human genomes are the subject of several large-scale projects. NCBI’s dbSNP collects human SNPs. Its database currently contains ${ \approx } 1 0 ^ { 8 }$ entries. The International HapMap project has collected and curated haplotype distributions from 1184
+
+## Box 2.10 Haplotype distributions
+
+Our individual genomes are characterized by a distribution of genetic markers. SNPs are convenient features to observe and to study within and across populations. Although the overall density of SNPs in our genomes is ≈1 SNP/5 kb, many 100 kb regions show only a few (typically two to four) of the possible combinations of SNPs, suggesting that recombination is rare within the region. These segments, which remain intact, are separated by intervals in which recombination is more frequent.
+
+The few discrete combinations of SNPs define the haplotype of an individual. The International HapMap project collects and curates haplotype distributions from several human populations.
+
+Haplotypes are difficult to measure because it is essential to determine which SNPs appear in the same DNA strand. Clearly, study of mixed samples from several individuals can determine the frequencies of individual SNPs but not their correlation into haplotypes. Even a sample containing both chromosomes from a diploid cell mixes the contributions of both copies of the region. However, mass spectral studies of amplified single-copy DNA molecules, produced by dilution, can identify the combination of SNPs appearing together on the same
+
+122
+
+---
+
+chromosome, allowing unambiguous haplotyping.
+
+reference individuals from 11 geographically diverse human populations (see Box 2.11). It measures SNPs and copy-number polymorphisms.
+
+The work of the International HapMap Consortium, together with other studies, shows that:
+
+• most of the variations appear in all populations sampled. Some of the interpopulation differences reflect different relative amounts of the same SNPs;
+however, a very few SNPs are unique to particular populations. For example, out of over 1 million SNPs, only 11 are consistently different between all individuals of European origin in the sample studied, and all individuals of Chinese or Japanese origin in the sample studied;
+• the genomes of individuals from Japan and China are very similar, suggesting more recent common ancestry than other pairs of populations in the study;
+• the X chromosome varies more between different populations than other chromosomes. This may arise from the fact that males have only
+
+Box 2.11 Origin of samples for the International HapMap project\*
+
+| Population origin | Location | Number of individuals | Relationships |
+| --- | --- | --- | --- |
+| Yoruba | Ibadan, Nigeria | 90 | 30 parent/offspring trios |
+| Northern and western European descent | Utah, USA | 90 | 30 parent/offspring trios |
+| Han Chinese | Beijing, China | 45 |  |
+| Japanese | Tokyo, Japan | 45 |  |
+
+Why the choice of parent/offspring combinations? When determining haplotypes in heterozygous regions of diploid chromosomes a difficulty is how to determine which SNPs lie in the same DNA molecule. Comparison of parental and child sequences can sort the observed SNPs into haploid contributions.
+
+\* The International HapMap Consortium (2005). A haplotype map of the human genome. Nature, **437**, 1299–1320.
+
+one X chromosome, the genes on which are therefore subject to stronger selective pressure. Recombinations of X chromosomes can occur, but only in females;
+
+lengths of haplotype blocks vary among the different sources of samples. They tend to be shorter among populations from Africa, consistent with the idea of African origin of the human species.
+
+The International HapMap Consortium paid due attention to ethical, legal and social issues. Informed consent of the donors preceded collection of samples. The procedure for informed consent involved not only individual agreement, but also community engagement, including interactive explanation of the project. Samples were labelled anonymously. In fact, more samples were collected than used (similar in some ways to the principle of issuing blank cartridges to a firing squad). Nevertheless, the characteristics of a population constitute personal information, the release of which may affect all individuals in the population, including those who were never asked to contribute a sample, and even those who refused. For this reason the HapMap Consortium did not collect medical information about the sample contributors, even under the protections of consent and anonymity.
+
+123
+
+---
+
+## Ethical, legal, and social issues
+
+Knowledge creates power. Power requires control. Control requires decisions. Advances in genomics have created problems that individuals and societies must face. In setting up the Human Genome Project, the US Department of Energy and National Institutes of Health recognized the importance of ethical, legal, and social issues by allocating 3–5% of the funding to them.
+
+There is considerable discussion both within the scientific community and among governments about how to set rules that balance the interests of society as a whole, and the privacy rights of individuals.
+
+There are four general sources of human sequence information:
+
+1. research efforts, such as the 1000 Genomes project (now containing sequence information for 1092 individuals) and the International HapMap project;
+2. sequencing of patients in clinical contexts;
+3. sequencing by law-enforcement agencies. (On 3 June 2013, in a split decision, the US Supreme Court voted to allow taking DNA samples from people arrested—though not tried and convicted — for serious crimes.);
+4. popular genealogy companies, which will provide limited sequence information to individuals.
+
+Provided DNA sequence information is kept as private as normal medical records, sequencing can benefit individuals in a clinical setting. More controversial questions arise in allowing the sequence information to be collected into a generally accessible data bank. Most people recognize that extensive data on genome sequences, in a form that can be correlated with clinical records, would be an extremely valuable resource for medical research. Most people would accept a scheme that would assist in capturing criminals, especially those who are likely to repeat their offences. Most people would have no problem accepting a scheme that would make it easier to identify victims of death on a battlefield or after a terrorist attack.
+
+Questions have been raised, however, over privacy issues:
+
+• Should inclusion of genomic information in a data bank require the individual’s consent?
+What data should be included? Should the data be limited to the minimum required for standard identification procedures, or be more extensive? (For instance, should sufficient additional data be kept to identify physical features or ethnic characteristics?)
+• Who should have access to the information?
+
+In the UK and USA at least, legislation is moving in the direction of greater protection for the privacy of DNA sequence information. Belief in this protection, which may well be illusory, could lead to increased genetic testing, both in medical practice and by private companies. But (1) as with mailing lists, testing companies may sell genetic information to outside parties, (2) given the increased degree of international sharing of identification information, individuals need to be concerned not with the countries with the most secure databases, but those with the least secure ones, and (3) experience has shown that much private information in fact becomes disseminated, through either accident or design.
+
+Indeed, many researchers have thought that adequate protection would be afforded by construction of a database correlating clinical information with genome sequences, keeping both sets of data anonymous. However, it has recently emerged that by combining the putatively anonymous data from the 1000 Genomes project with sequence information available from ‘pop’ genealogy sites, the
+
+124
+
+---
+
+anonymity could be broken fairly easily.
+
+## Genetic diversity in anthropology
+
+SNP data are of great utility in anthropology, giving clues to historical variations in population size, and migration patterns. Degrees of genetic diversity are interpretable in terms of the size of the founding population. Founders are the original set of individuals from whom an entire population is descended. Founders can be either original colonists, such as the Polynesians who first settled New Zealand, or merely the survivors of a near-extinction. Cheetahs show the effects of a population bottleneck estimated to have occurred 10 000 years ago. All living cheetahs are as closely related to one another as siblings. Extrapolations of mitochondrial DNA variation in contemporary humans suggest a single maternal ancestor who lived 140 000–200 000 years ago. Calling her Eve suggests that she was the first woman. But fossil evidence for human-like ancestors reaches back much longer. Mitochondrial Eve was the founder of a surviving population following a near-extinction.
+
+There is now consensus that our species, H. sapiens, arose in Africa approximately 100 000–150 000 years ago. The evidence for human origins in Africa is that contemporary genetic diversity is highest there. The mitochondrial DNA haplogroup L1 (see Box 2.12), believed to be the oldest haplotype that
+
+## Box 2.12 Human mitochondrial DNA haplogroups
+
+Human mitochondrial DNA is a double-stranded closed circular molecule 16 569 bp long. It is inherited almost exclusively through maternal lines. A fertilized egg contains the mother’s mitochondria. Although sperm contain mitochondria—essential to provide energy for their motility—the few paternal mitochondria that enter the egg are selectively eliminated. As a haploid entity, mitochondrial DNA is therefore not subject to recombination, and changes only by mutation.
+
+Mitochondrial DNA is estimated to adopt one mutation every 25 000 years. This gives a reasonable rate of divergence to trace human migration patterns. (Nuclear DNA mutates approximately 10 times more slowly than mitochondrial DNA because (1) histones protect it, (2) active repair mechanisms edit out some mutations, and (3) the activity of mitochondria in respiration exposes the DNA to mutagenic oxygen radicals.)
+
+Human mitochondrial DNA contains genes for 22 tRNAs, two rRNAs, and 13 proteins. The major noncoding region is the control region, or D-loop, involved in regulation and initiation of replication. This region is about 1 kb long. It shows a higher rate of substitution than the rest of the mitochondrial genome, by a factor of about 4.
+
+Different mitochondrial DNA sequences are associated with different populations. Mutations are referred to the first human mitochondrial DNA sequence determined, called the Cambridge Reference Sequence. Groups of related sequences are called haplogroups. (The distribution of the number of sequence differences between different individuals has peaks at ≈70 for Africans and ≈30 for non-Africans.) The original classification of sequence variants depended on changes in restriction sites (see Fig. 2.3). This was followed by explicit sequencing of the control region, focusing on its two highly polymorphic segments. For finest resolution, contemporary studies are now more frequently determining full mitochondrial DNA sequences, except in cases of ancient DNA where the best recoverable material may be fragmentary.
+
+Several databases focus on human mitochondrial genomes, including MITOMAP ([http://www.mitomap.org](http://www.mitomap.org))and mtDB ([http://www.genpat.uu.se/mtDB](http://www.genpat.uu.se/mtDB)).
+
+125
+
+---
+
+![](../../raw/pages_0113-0128/images/page_125_chart_0.jpg)
+
+<details>
+<summary>dendrogram</summary>
+
+| Group | Subgroup | Prevalent in |
+| --- | --- | --- |
+| L3 | L1 | Africa |
+| L3 | L2 | Africa |
+| L3 | L3+ | Africa |
+| M | CZ | Siberia |
+| M | C | NE Asia, Amerinds |
+| M | D | NE Asia, Amerinds |
+| M | M* | India, Asia |
+| M | E | — |
+| M | G | East Asia |
+| M | Q | Oceania |
+| N | A | Asia, Americas |
+| N | Z | Russia, Saami |
+| N | W | W. Urals, E. Baltic |
+| N | X | Near East, Caucasus |
+| N | Y | Siberia |
+| N | N* | Asia, Oceania |
+| N | B | Amerinds, SE Asia |
+| N | F | Asia |
+| N | H1 | Europe |
+| N | H3 | Europe |
+| N | V | Oceania |
+| N | R* | East Asia |
+| N | P | Oceania |
+| N | T | Eastern Baltic Sea, Urals |
+| N | J | Europe |
+| N | U | Europe |
+| N | K | Europe |
+</details>
+
+Figure 2.3 Phylogenetic tree of major mitochondrial haplogroups. The nomenclature began with a study of Native Americans, or Amerinds, and the letters A, B, C, and D were assigned to them. Other letters were introduced, and (as more detailed sequencing data appeared) were subdivided as needed (HV0 was formerly called pre-V).
+
+survives, is found in the KhoiSan of the Kalahari Desert in southern Africa, and in the Biaka pygmies of the central African rainforest.
+
+Migrations beginning approximately 60 000 years ago took our ancestors around the world, and continue to do so. Unlike modern population flows documented in historical records we depend on archaeological relics, contemporary genomics, and linguistics to infer the timing, routes, numbers of individuals, and even perhaps motivation of ancient migrations. (See Introduction to Genomics, chapter 3.)
+
+Population-specific SNPs are informative about migrations. Mitochondrial sequences provide information about female ancestors and Y chromosome sequences provide information about male ancestors. For example, it has been suggested that the population of Iceland—first inhabited about 1100 years ago—is descended from Scandinavian males and from females from both Scandinavia and the British Isles. Mediaeval Icelandic writings refer to raids on settlements in the British Isles.
+
+Other crucial transitions in human social organization, such as turning from hunting to agriculture, can be seen in domestications of other species such as maize and dog. Genomic data are joining classical archaeological evidence to illuminate times and places of domestications (see Box 2.13).
+
+## DNA sequences and languages
+
+A fascinating relationship between human DNA sequences and language families has been investigated by L.L. Cavalli-Sforza and colleagues. These
+
+126
+
+---
+
+Box 2.13 Genetic analysis of cattle domestication
+
+Animal resources are an integral and essential aspect of human culture. Analysis of DNA sequences sheds light on their historical development and on the genetic variety characterizing modern breeding populations.
+
+Contemporary domestic cattle include those familiar in Western Europe and North America, Bos taurus, and the zebu of Africa and India, Bos indicus. The most obvious difference in external appearance is the humped back of the zebu. It has been widely believed that the domestication of cattle occurred once, about 8000–10 000 years ago, and that the two species subsequently diverged.
+
+Analysis of mitochondrial DNA sequences from European, African, and Asian cattle suggest, however, that (1) all European and African breeds are more closely related to each other than either is to Indian breeds and (2) the two groups diverged about 200 000 years ago, implying recent independent domestications of different species. The similarity in physical appearance of the African and Indian zebu (and other similarities at the molecular level; for instance, VNTR markers in nuclear DNA) must then be attributable to importation of male cattle from India to East Africa.
+
+studies have proved useful in working out interrelationships among American Indian languages. They confirm that the Basques, known to be a linguistically isolated population, have been genetically isolated also.
+
+![](../../raw/pages_0113-0128/images/page_126_image_5.jpg)
+
+## See Weblem 2.25
+
+With the study of isolated populations, anthropological genetics provides data useful in medicine, for mapping disease genes is easier if the background variation is low. Genetically isolated populations in Europe include, in addition to the Basques, the Finns, Icelanders, Welsh, and Lapps.
+
+## Genetic diversity and personal identification
+
+Variations in our DNA sequences give us individual fingerprints, useful for identification and for establishment of relationships, including but not limited to questions of paternity. The use of DNA analysis as evidence in criminal trials is now well established.
+
+Genetic fingerprinting techniques were originally based on patterns of VNTRs, but have been extended to include analysis of other features including mitochondrial DNA sequences.
+
+For most of us, all our mitochondria are genetically identical, a condition called homoplasmy. However, some individuals contain mitochondria with different DNA sequences, called heteroplasmy. Such sequence variation in a disease gene can complicate the observed inheritance pattern of the disease.
+
+The most famous case of heteroplasmy involved Tsar Nicholas II of Russia. After the revolution in 1917 the Tsar and his family were taken to exile in Yekaterinburg in Central Russia. During the night of 16–17 July 1918, the Tsar, Tsarina Alexandra, at least three of their five children, plus their physician and three servants who had accompanied the family, were killed, and their bodies buried in a secret grave. When the remains were rediscovered, assembly of the bones and examination of the dental work suggested—and sequence analysis confirmed—that the remains included an expected family group. The identity of the remains of the Tsarina were proved by matching the mitochondrial DNA sequence with that of a maternal relative, Prince Philip, Chancellor of the University of Cambridge, Duke of Edinburgh, and grandnephew of the Tsarina.
+
+However, comparisons of mitochondrial DNA sequences of the putative remains of Nicholas II with those of two maternal relatives revealed a difference at base 16 169: the Tsar had a C and the relatives a T. Extreme political and even religious sensitivities mandated that no doubts were
+
+127
+
+---
+
+tolerable. Further tests showed that the Tsar was heteroplasmic; T was a minor component of his mitochondrial DNA at position 16 169. To confirm the identity beyond any reasonable question, the body of Grand Duke Georgij, brother of the Tsar, was exhumed, and was shown to have the same rare heteroplasmy.
+
+Continuing the royal theme, Richard III was the last Plantagenet King of England, reigning from 1483 until 1485. (He is best known as the title role in a play by Shakespeare.) King Richard died at Bosworth Field on 22 August 1485, during the crucial battle in the Wars of the Roses.
+
+In 2012, an archaeological excavation of a city council car park in Leicester, UK, turned up remains that were thought to be those of Richard III. Consistent with historical records, the skeleton showed a scoliosis <sup>4</sup> and bore the effects of wounds consistent with reports of the battle. Matching mitochondrial DNA from the skeleton to living descendants of Richard’s sister, Anne of York, showed a rare shared mitochondrial DNA haplotype.
+
+There is the possibility of also matching Y chromosome sequences, provided nuclear DNA can be recovered intact from the skeleton. Richard’s ancestor, John of Gaunt, has four traceable living maleline descendants. (John of Gaunt also appears in Shakespeare, in Richard II. His most famous line, ‘This other Eden, demi-paradise…’, now appears somewhat ironic given that the garden in which his great-great-grandson was buried became paved over for a car park.)
+
+## Evolution of genomes
+
+The availability of complete information about genomic sequences has redirected research. A general challenge in analysis of genomes is to identify ‘interesting events’. A background mutation rate in coding sequences is reflected in synonymous nucleotide substitutions: changes in codons that do not alter the amino acid. With this as a baseline one can search for instances in which there are significantly higher rates of nonsynonymous nucleotide substitutions: changes in codons that cause mutations in the corresponding protein. (Note, however, that synonymous changes are not necessarily selectively neutral.)
+
+Given two aligned gene sequences, we can calculate $K _ { s } ,$ the number of synonyous substitutions, and $K _ { a } ,$ or the number of nonsynonymous substitutions. (The calculation involves more than simple counting because of the need to estimate and correct for possible multiple changes.) A high ratio of $K _ { \mathrm { s } } / K _ { \mathrm { a } }$ identifies pairs of sequences apparently showing positive selection, possibly even functional changes.
+
+The new field of comparative genomics treats questions that can only now be addressed, such as:
+
+• What genes do different phyla share? What genes are unique to different phyla? Do the arrangements of these genes in the genome vary from phylum to phylum?
+What homologous proteins do different phyla share? What proteins are unique to different phyla? Does the integration of the activities of these proteins vary from phylum to phylum? Do the mechanisms of control of expression patterns of these proteins vary from phylum to phylum?
+What biochemical functions do different phyla share? What biochemical functions are unique to different phyla? Does the integration of these biochemical functions vary from phylum to phylum? If two phyla share a function, and the protein that carries out this function in one phylum has a homologue in the other, does the homologous protein carry out the same function?
+
+The same questions could be asked about different species in each phylum.
+
+M.A. Andrade, C. Ouzounis, C. Sander, J. Tamames, and A. Valencia compared the protein
+
+128
+
+---
+
+repertoire of species from the three major domains of life: Haemophilus influenzae represented the bacteria, M. jannaschii the archaea, and S. cerevisiae (yeast) the eukarya. Their classification of protein functions contained as major categories processes involving energy, information, and communication (see Box 2.14).
+
+## Box 2.14 General functional classes
+
+• Energy
+0 Biosynthesis of cofactors, amino acids
+Central and intermediary metabolism
+0 Energy metabolism
+0 Fatty acids and phospholipids
+0 Nucleotide biosynthesis
+0 Transport
+• Information
+0 Replication
+0 Transcription
+Translation
+• Communication
+0 Regulatory functions
+Cell envelope/cell wall
+Cellular processes
+
+The numbers of genes in the three species, known at the time of the study, are:
+
+| Species | Number of genes |
+| --- | --- |
+| H. influenzae | 1680 |
+| M. jannaschii | 1735 |
+| S. cerevisiae | 6278 |
+
+Are there, among these, shared proteins for shared functions? In the category of energy, proteins are shared across the three domains. In the category of communication, proteins are unique to each domain. In the categories of information, archaea share some proteins with bacteria and others with eukarya.
+
+Analysis of shared functions among all domains of life has led people to ask whether it might be possible to define a minimal organism; that is, an organism with the smallest gene complement consistent with independent life based on the central DNA → RNA → protein dogma (i.e. excluding protein-free life forms based solely on RNA). The minimal organism must have the ability to reproduce, but not be required to compete in growth and reproductive rate with other organisms. One may reasonably assume a generous nutrient medium, relieving the organism of biosynthetic responsibility, and dispensing with stress-reponse functions including DNA repair.
+
+The smallest known independent organism is M. genitalium, with 468 predicted protein sequences. In 1996, A.R. Mushegian and E.V. Koonin compared the genomes of M. genitalium and H. influenzae. (At the time, these were the only completely sequenced bacterial genomes.) The last common ancestor of these widely diverged bacteria lived about 2 billion years ago. Of 1703 proteincoding genes of H. influenzae, 240 are homologues of proteins in M. genitalium. Mushegian and
+
+129
+
+---
+
+Koonin reasoned that all of these must be essential, but might not be sufficient for autonomous life, for some essential functions might be carried out by unrelated proteins in the two organisms. For instance, the common set of 240 proteins left gaps in essential pathways, which could be filled by adding 22 enzymes from M. genitalium. Finally, removing functional redundancy and parasitespecific genes gave a list of 256 genes as the proposed necessary and sufficient minimal set.
+
+What is in the proposed minimal genome? Functional classes included:
+
+• translation, including protein synthesis,
+DNA replication,
+recombination and repair: a second function of essential proteins involved in DNA replication,
+• transcription apparatus,
+• chaperone-like proteins,
+• intermediary metabolism: the glycolytic pathway,
+• no nucleotide, amino acid, or fatty acid biosynthesis,
+protein-export machinery,
+• limited repertoire of metabolite transport proteins.
+
+It should be emphasized that the viability of an organism with these proteins has not been proven. Moreover, even if experiments proved that some minimal gene content—the proposed set or some other set—is necessary and sufficient, this does not answer the related question of identifying the gene complement of the common ancestor of M. genitalium and H. influenzae, or of the earliest cellular forms of life. For only 71% of the proposed set of 256 proteins have recognizable homologues among eukaryotic or archaeal proteins.
+
+Nevertheless, identification of functions necessarily common to all forms of life allows us to investigate the extent to which different forms of life accomplish these functions in the same ways. Are similar reactions catalysed in different species by homologous proteins? Genome analysis has revealed families of proteins with homologues in archaea, bacteria, and eukarya. The assumption is that these have evolved from an individual ancestral gene through a series of speciation and duplication events, although some may be the effects of horizontal transfer. The challenge is to map common functions and common proteins.
+
+Several thousand protein families have been identified with homologues in archaea, bacteria, and eukarya. Different species contain different amounts of these common families: in bacteria, the range is from Aquifex aeolicus, 83% of the proteins of which have archaeal and eukaryotic homologues, to Borrelia burgdorferi, in which only 52% of the proteins have archaeal and eukaryotic homologues. Archaeal genomes have somewhat higher percentages (62–71%) of proteins with bacterial and eukaryotic homologues. But only 35% of the proteins of yeast have bacterial and archaeal homologues.
+
+Does the common set of proteins carry out the common set of functions? Among the proteins of the minimal set identified from M. genitalium, only ≈30% have homologues in all known genomes. Other essential functions must be carried out by unrelated proteins, or possibly by unrecognized homologues. The protein families for which homologues carry out common functions in archaea, bacteria, and eukarya are enriched in those involved in translation and biosynthesis (see Table 2.11).
+
+Table 2.11 Functional classification of proteins common to many species
+
+| Protein functional class | Number of families appearing in all known genomes |
+| --- | --- |
+
+130
+
+---
+
+| Translation, including ribosome structure | 53 |
+| --- | --- |
+| Transcription | 4 |
+| Replication, recombination, repair | 5 |
+| Metabolism | 9 |
+| Cellular processes (chaperones, secretion, cell division, cell wall biosynthesis) | 9 |
+
+The picture is emerging that evolution has explored the vast potential of proteins to different extents for different types of functions. It has been most conservative in the area of protein synthesis.
+
+## Please pass the genes: horizontal gene transfer
+
+Learning that Streptomyces griseus trypsin is more closely related to bovine trypsin than to other microbial proteinases, Brian Hartley commented in 1970 that, ’… the bacterium must have been infected by a cow’. It was a clear case of lateral or horizontal gene transfer: a bacterium picking up a gene from the soil in which it was growing, which an organism of another species had deposited there. The classic experiments on pneumococcal transformation by O. Avery, C. MacLeod, and M. McCarthy that identified DNA as the genetic material are another example. In general, horizontal gene transfer is the acquisition of genetic material by one organism from another, by natural rather than laboratory procedures, through some means other than descent from a parent during replication or mating. Several mechanisms of horizontal gene transfer are known, including direct uptake, as in the pneumococcal transformation experiments, or via a viral carrier.
+
+Analysis of genome sequences has shown that horizontal gene transfer is not a rare event, but has affected most genes in microorganisms. It requires a change in our thinking from ordinary ‘clonal’ or parental models of heredity. Evidence for horizontal transfer includes (1) discrepancies among evolutionary trees constructed from different genes and (2) direct sequence comparisons between genes from different species.
+
+In E. coli, 755 ORFs (a total of 547.8 kb, ≈18% of the genome) appear to have entered the genome by horizontal transfer after divergence from the Salmonella lineage 100 million years ago.
+In microbial evolution, horizontal gene transfer is more prevalent among operational genes—those responsible for ‘housekeeping’ activities such as biosynthesis—than among informational genes, or those responsible for organizational activities such as transcription and translation. For example, Bradyrhizobium japonicum, a nitrogen-fixing bacterium symbiotic with higher plants, has two glutamine synthetase genes. One is similar to those of its bacterial relatives and the other is 50% identical to those of higher plants. Rubisco (ribulose-1,5-bisphosphate carboxylase/oxygenase), the enzyme that first fixes carbon dioxide at the entry to the Calvin cycle of photosynthesis, has been passed around between bacteria, mitochondria, and algal plastids, as well as undergoing gene duplication. Many phage genes appearing in the E. coli genome provide further examples and point to a mechanism of transfer.
+
+Nor is the phenomenon of horizontal gene transfer limited to prokaryotes. Both eukarya and prokaryotes are chimaeras. Eukarya derive their informational genes primarily from an organism related to Methanococcus, and their operational genes primarily from proteobacteria with some contributions from cyanobacteria and methanogens. Almost all informational genes from Methanococcus itself are similar to those in yeast. Nor is gene transfer limited to ancient ancestors. The human genome has revealed hundreds of bacterial proteins among our genes. Conversely, at least eight human genes appeared in the M. tuberculosis genome.
+
+131
+
+---
+
+The observations hint at the model of a ‘global organism’, a genetic common market, or even a worldwide DNA web’ from which organisms download genes at will! How can this be reconciled with the fact that the discreteness of species has been maintained? The conventional explanation is that the living world contains ecological ‘niches’ to which individual species are adapted. It is the discreteness of niches that explains the discreteness of species. But this explanation depends on the stability of normal heredity to maintain the fitness of the species. Why would not the global organism break down the lines of demarcation between species, just as global access to popular culture threatens to break down lines of demarcation between national and ethnic cultural heritages? Perhaps the answer is that it is the informational genes, which appear to be less subject to horizontal transfer, that determine the identity of the species.
+
+It is interesting that although evidence for the importance of horizontal gene transfer is overwhelming, it was dismissed for a long time as rare and unimportant. The source of the intellectual discomfort is clear: parent-to-child transmission of genes is at the heart of the Darwinian model of biological evolution whereby selection (differential reproduction) of parental phenotypes alters gene frequencies in the next generation. For offspring to gain genes from somewhere other than their parents smacks of Lamarck and other discredited alternatives to the paradigm. The evolutionary tree as an organizing principle of biological relationship is a deeply ingrained concept: scientists display an environmentalist-like fervour in their commitment to trees, even when trees are not an appropriate model of a network of relationships (See Chapter 5). Perhaps it is well to recall that Darwin knew nothing of genes, and the mechanism that generated the variation on which selection could operate was a mystery to him. Maybe he would have accepted horizontal gene transfer more easily than his followers!
+
+## Comparative genomics of eukarya
+
+A comparison of the genomes of yeast, fly, worm, and human has revealed 1308 groups of proteins that appear in all four genomes. These form a conserved core of proteins for basic functions, including metabolism, DNA replication and repair, and translation.
+
+These proteins are made up of individual protein domains, including single-domain proteins, oligomeric proteins, and modular proteins containing many domains (the biggest, the muscle protein titin, contains 250–300 domains). The proteins of the worm and fly are built from a structural repertoire containing about three times as many domains as the proteins of yeast. Human proteins are built from about twice as many as those of the worm and fly. Most of these domains appear also in bacteria and archaea, but some are specific to (probably, invented by) vertebrates.
+
+Distribution of probable homologues of predicted human proteins
+
+| Vertebrates only | 22% |
+| --- | --- |
+| Vertebrates and other animals | 24% |
+| Animals and other eukarya | 32% |
+| Eukarya and prokaryotes | 21% |
+| No homologues in animals | 1% |
+| Prokaryotes only | 1% |
+
+These include proteins that mediate activities unique to vertebrates, such as defence and immunity proteins, and proteins in the nervous system; only one of them is an enzyme, a ribonuclease.
+
+To create new proteins, inventing new domains is an unusual event. It is far more common to create different combinations of existing domains in increasingly complex ways. A common
+
+132
+
+---
+
+mechanism is by accretion of domains at the ends of modular proteins (see Fig. 2.4). This process can occur independently, and take different courses, in different phyla.
+
+![](../../raw/pages_0129-0144/images/page_132_image_1.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  subgraph YPR031W (Yeast)
+  A["EP1"] --> B["PHD"]
+  B --> C["PHD"]
+  C --> D["EP2"]
+  end
+
+  subgraph Lin_49_Worm["Lin-49 (Worm)"]
+  E["EP1"] --> F["PHD"]
+  F --> G["PHD"]
+  G --> H["EP2"]
+  H --> I["BR"]
+  end
+
+  subgraph peregrin (Fly, human)
+  J["ZNF"] --> K["EP1"]
+  K --> L["PHD"]
+  L --> M["PHD"]
+  M --> N["EP2"]
+  N --> O["BR"]
+  O --> P["PWWP"]
+  end
+```
+</details>
+
+Figure 2.4 Evolution by accretion of domains, of molecules related to perigrin, a human protein that probably functions in transcription regulation. The C. elegans homologue, lin-49, is essential for normal development of the worm. The function of the yeast homologue is unknown. The proteins contain these domains: ZNF, C2H2-type zinc finger (not to be confused with acetylene; C and H stand for cysteine and histidine); EP1 and EP2, enhancer of polycomb 1 and 2; PHD, plant homeodomain, a repressor domain containing the $\mathrm { C } _ { 4 } \mathrm { H } _ { 3 } \mathrm { C } _ { 3 }$ type of zinc finger; BR, bromo domain; PWWP, domain containing sequence motif Pro-Trp-Trp-Pro.
+
+Gene duplication followed by divergence is a mechanism for creating protein families. For instance, there are 906 genes + pseudogenes for olfactory receptors in the human genome. These are estimated to bind ≈10 000 odour molecules. Homologues have been demonstrated in yeast and other fungi (some comparisons are odorous), but it is the need of vertebrates for a highly developed sense of smell that multiplied and specialized the family to such a great extent. Eighty per cent of the human olfactory receptor genes are in clusters. Compare this with the small size of the globin gene cluster (see Box 2.9), which did not require such great variety.
+
+## RECOMMENDED READING
+
+- Ashburner, M. (2006). Won for All: How the Drosophila Genome Was Sequenced. Cold Spring Harbor Laboratory Press, Cold Spring Harbor. A personal description—a ‘blow-by-blow’ account—of the fly genome project.
+- Bentley, D.R. (2004). Genomes for medicine. Nature, 429, 440–445. Summary and discussion of the results of genomic sequencing and their applications.
+- C. elegans Sequencing Consortium (1999). How the worm was won. The C. elegans genome sequencing project. Trends Genet., 15, 51–58. Description of the project in which high-throughput DNA sequencing was originally developed, and the results: the first metazoan genome to be sequenced.
+- Doolittle, W.F. (1999). Lateral genomics. Trends Cell Biol., 9, M5–M8. How the discovery of horizontal gene transfer has upset traditional views of evolution.
+- Dubcovsky, J. and Dvorak, J. (2007). Genome plasticity a key factor in the success of polyploid wheat under domestication. Science, 316, 1862–1866.
+- Koonin, E.V. (2000). How many genes can make a cell: the minimal-gene-set concept. Annu. Rev. Genomics Hum. Genet., 1, 99–116. A summary of work on comparative genomics.
+- Kwok, P.-Y. and Gu, Z. (1999). SNP libraries: why and how are we building them? Mol. Med. Today, 5, 538–543. Progress and rationale for databases of SNPs.
+- Lesk, A.M. (2011). Introduction to Genomics, 2nd edn. Oxford University Press, Oxford.
+- Southan, C. (2004). Has the yo-yo stopped? An assessment of human protein-coding gene number. Proteomics, 4, 1712–1726. How many genes are there in the human genome? Estimates have been changing.
+- Ureta-Vidal, A., Ettwiller, L., and Birney, E. (2003). Comparative genomics: genomewide analysis in metazoan eukarya. Nat. Rev. Genet., 4, 251–262. Introduction to the repertoire of solved genomes and how genomes from different species illuminate one another.
+- Zhang, R. and Zhang, C.-T. (2006). The impact of comparative genomics on infectious disease research. Microbes Infect., 8, 1613–1622. How comparative genomics of prokaryotes is elucidating infectious disease, including
+
+133
+
+---
+
+identification of virulence determinants, drug targets, candidate vaccines, and diagnostic markers.
+
+Publications of the drafts of the human genome sequences appeared in special issues of Nature, 15 February 2001, containing the results of the publicly supported Human Genome Project, and Science, 16 February 2001, containing the results produced by Celera Genomics. These are landmark issues.
+
+The May 2001 issue of Genome Research, volume 11, number 5, is devoted to the human genome.
+
+The completion of the human genome in 2003 was announced in various press releases, and described in issues of Nature and Science.
+
+Altenhoff, A.M. and Dessimoz, C. (2012). Inferring orthology and paralogy. Methods Mol. Biol., **855**, 259–279.
+
+Collins, F.S., Green, E.D., Guttmacher, A.E., and Guyer, M.S. (2003). A vision for the future of genomics research. Nature, **422**, 835–847.
+
+Building on the DNA revolution. Special section. Science, **300**.
+
+Two papers discussing the current status and conceptual problems of coming to terms with metagenomics.
+
+Eisen, J.A. (2007). Environmental shotgun sequencing: its potential and challenges for studying the hidden world of microbes. PLoS Biol., 5, e82.
+
+Xu, J. (2006). Microbial ecology in the age of genomics and metagenomics: concepts, tools and recent advances. Mol. Ecol., **15**, 1713–1731.
+
+## EXERCISES AND PROBLEMS
+
+**Exercise 2.1** The overall base composition of the E. coli genome is A = T = 49.2% and G = C = 50.8%. In a random sequence of 4 639 221 nucleotides with these proportions, what is the expected number of occurrences of the sequence CTAG?
+
+**Exercise 2.2** The E. coli genome contains a number of pairs of enzymes that catalyse the same reaction. How would this affect the use of knockout experiments (deletion or inactivation of individual genes) to try to discern function?
+
+**Exercise 2.3** Which of the categories used to classify the functions of yeast proteins (see Table 2.3) would be appropriate for classifying proteins from a prokaryotic genome?
+
+**Exercise 2.4** Which occurred first, a man landing on the moon or the discovery of deep-sea hydrothermal vents? Guess first, then look it up.
+
+**Exercise 2.5** Gardner syndrome is a condition in which large numbers of polyps develop in the lower gastrointestinal tract, leading inevitably to cancer if untreated. In every observed case, one of the parents is also a sufferer. What is the mode of the inheritance of this condition?
+
+**Exercise 2.6** The gene for retinoblastoma is transmitted along with a gene for esterase D to which it is closely linked. However, either of the two alleles for esterase D can be transmitted with either allele for retinoblastoma. How do you know that retinoblastoma is not the direct effect of the esterase D genotype?
+
+**Exercise 2.7** If all somatic cells of an organism have the same DNA sequence, why is it necessary to have cDNA libraries from different tissues?
+
+**Exercise 2.8** Suppose you are trying to identify a gene causing a human disease. You find a genetic marker 0.75 cM from the disease gene. To within approximately how many bp have you localized the gene you are looking for? Approximately how many genes is this region likely to contain?
+
+**Exercise 2.9** Leber hereditary optic neuropathy (LHON) is an inherited condition that can cause loss of central vision, resulting from mutations in mitochondrial DNA. You are asked to counsel a woman who has normal mitochondrial DNA and a man with LHON, who are contemplating marriage. What advice would you give them about the risk to their offspring of developing LHON?
+
+**Exercise 2.10** Glucose-6-phosphate dehydrogenase deficiency is a single-gene recessive X-linked genetic defect affecting hundreds of millions of people. Clinical consequences include haemolytic anaemia and persistent neonatal jaundice. The gene has not been eliminated from the population because it confers resistance to malaria. In this case, general knowledge of metabolic pathways identified the protein causing the defect. Given the amino acid sequence of the protein, how would you determine the chromosomal location(s) of the corresponding gene?
+
+134
+
+---
+
+**Exercise 2.11** Before DNA was recognized as the genetic material, the nature of a gene—in detailed biochemical terms—was obscure. In the 1940s, G. Beadle and E. Tatum observed that single mutations could knock out individual steps in biochemical pathways. On this basis they proposed the one gene, one enzyme hypothesis. On a photocopy of Figure 2.1, draw lines linking genes in the figure to numbered steps in the sequence of reactions in the pathway. To what extent do the genes of the trp operon satisfy the one gene, one enzyme hypothesis and to what extent do they present exceptions?
+
+**Exercise 2.12** The figure here shows human chromosome 5 (left) and the matching chromosome from a chimpanzee. On a photocopy of this figure indicate which regions show an inversion of the banding pattern.
+
+![](../../raw/pages_0129-0144/images/page_134_image_2.jpg)
+
+<details>
+<summary>natural_image</summary>
+
+Two vertical chromosome pairs showing black and white bands (no text or labels)
+</details>
+
+**Exercise 2.13** Describe in general terms how the FISH picture in Plate III would appear if the affected region of chromosome 20 were not deleted but translocated to another chromosome.
+
+**Exercise 2.14** The surface area of the human gut is approximately 200 $\mathbf { m } ^ { 2 }$ (for comparison, the area of a singles tennis court is $1 9 6 \: \mathrm { m } ^ { 2 } )$ . The diameter of a standard Petri dish is 100 mm. How many Petri dishes are equivalent in surface area to the human gut?
+
+**Exercise 2.15** A total of 755 ORFs entered the E. coli genome by horizontal transfer in the 14.4 million years since divergence from Salmonella. What is the average rate of horizontal transfer in kb/year? To how many typical proteins (≈300 amino acids) would this correspond? What percentage of known genes entered the E. coli genome via horizontal transfer?
+
+**Exercise 2.16** To what extent is a living genome like a database? Which of the following properties are shared by living genomes and computer databases? Which are properties of living genomes but not databases? Which are properties of databases but not living genomes? (a) Serve as repositories of information. (b) Are self-interpreting. (c) Different copies are not identical. (d) Scientists can detect errors. (e) Scientists can correct errors. (f) There is planned and organized responsibility for assembling and disseminating the information.
+
+**Problem 2.1** Summarize the experimental evidence that shows that the genetic linkage map on any single chromosome is linearly ordered.
+
+**Problem 2.2** For M. genitalium and H. influenzae, what are the values of (a) gene density in genes/kb, (b) average
+
+135
+
+---
+
+gene size in base pairs, and (c) number of genes? Which factor contributes most highly to the reduction of genome size in M. genitalium relative to H. influenzae?
+
+**Problem 2.3** It is estimated that the human immune system can produce $1 0 ^ { 1 5 }$ antibodies. Would it be feasible for such a large number of proteins each to be encoded entirely by a separate gene, the diversity arising from gene duplication and divergence? A typical gene for an IgG molecule is about 2000 bp long.
+
+1 Stothard, P., Van Domselaar, G., Shrivastava, S., Guo, A., O’Neill, B. et al. (2005). BacMap: an interactive picture atlas of annotated bacterial genomes. Nucl. Acids Res., 33, D317–D320.
+2 Yooseph, S. et al. (2007). The Sorcerer II Global Ocean Sampling Expedition: expanding the universe of protein families. PLoS Biol., 13, e16; Rusch, D.B. et al. (2007). The Sorcerer II Global Ocean Sampling Expedition: Northwest Atlantic through Eastern Tropical Pacific. PLoS Biol., 13, e77.
+3 Exceptions include sperm and egg cells, erythrocytes, cells of the immune system, and the effects of other, sporadic, somatic mutations and polyploidization, that accumulate as we age.
+4 See [http://www.theguardian.com/science/blog/2013/feb/04/richard-iii-skeleton-last-plantagenet-king-live](http://www.theguardian.com/science/blog/2013/feb/04/richard-iii-skeleton-last-plantagenet-king-live)
+
+136

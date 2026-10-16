@@ -1,0 +1,641 @@
+Yucel-Lindberg T, Modéer T, Pütsep K. Mutations in the ELANE gene are associated with development of periodontitis in patients with severe congenital neutropenia. J Clin Immunol. 2011 Dec;31(6):936–45.
+3. Vogt SL, Green C, Stevens KM, Day B, Erickson DL, Woods DE, Storey DG. The stringent response is essential for Pseudomonas aeruginosa virulence in the rat lung agar bead and Drosophila melanogaster feeding models of infection. Infect Immun. 2011 Oct;79(10):4094-104.
+4. Dunn CT, Skrypek MM, Powers AL, Laguna TA. The need for vigilance: the case of a falsenegative newborn screen for cystic fibrosis. Pediatrics. 2011 Aug;128(2):e446–9.
+5. Wang D, Wang W, Dawkins P, Paterson T, Kalsheker N, Sallenave JM, Houghton AM. Deletion of Serpina1a, a murine α1-antitrypsin ortholog, results in embryonic lethality. Exp Lung Res. 2011 Jun;37(5):291–300.
+6. Ding J, Yannam GR, Roy-Chowdhury N, Hidvegi T, Basma H, Rennard SI, Wong RJ, Avsar Y, Guha C, Perlmutter DH, Fox IJ, Roy-Chowdhury J. Spontaneous hepatic repopulation in transgenic mice expressing mutant human α1-antitrypsin by wild-type donor hepatocytes. J Clin Invest. 2011 May;121(5):1930–4.
+7. Flotte TR, Mueller C. Gene therapy for alpha-1 antitrypsin deficiency. Hum Mol Genet. 2011 Apr 15;20(R1):R87–92.
+8. Walkovich K, Boxer LA. Congenital neutropenia in a newborn. J Perinatol. 2011 Apr;31 Suppl 1:S22–3.
+
+Two themes among these, and rest of the citations returned, are references to serpins, including α<sub>1</sub>- antitrypsin, which is an inhibitor of elastase, and to a relationship between mutations in neutrophil elastase and neutropenia, a low level of a type of white blood cells called neutrophils. To pursue cyclic neutropenia, we can look for elastase in the database of human genetic disease.
+
+## Online Mendelian Inheritance in Man
+
+Online Mendelian Inheritance in Man (OMIM™) is a database of human genes and genetic disorders. It was originally compiled by V.A. McKusick, M. Smith, and colleagues and published on paper. The NCBI has developed it into a database accessible from the web, and introduced links to other archives of related information, including sequence data banks and the medical literature. OMIM is now well integrated with the NCBI information-retrieval system ENTREZ. A related database, the OMIM Morbid Map, treats genetic diseases and their chromosomal locations.
+
+The response to ELASTASE in a search of OMIM describes the results linking mutations in the gene to both cyclic and congenital (noncyclic) neutropenia. OMIM lists nine allelic variants (many more are known). Five are associated with cyclic neutropenia, of which three cause amino acid substitutions, one is in a splice site, and one is in an intron. Four variants, all substitutions, are associated with severe congenital neutropenia.
+
+The collection of results on elastase that we have assembled would support research on the system; for instance, we could map elastase mutants onto the structure of the molecule to see whether we could derive clues to the causes of cyclic and noncyclic neutropenia.
+
+## Evolution of elastase
+
+In addition to looking at the clinical relevance of elastase, its interactions, and its mutants, we might be interested in its evolution. Although elastase has many homologues in the human genome— digestive enzymes such as trypsin and chymotrypsin, and proteins involved in blood clotting—it is also of interest to see how widely distributed among species the family is.
+
+There are several approaches:
+
+we could submit the sequence of human leukocyte elastase to PSI-BLAST, collect the sequences found, and align them;
+there are several databases collecting protein families, and showing their sequence alignments; an example is Pfam ([http://pfam.sanger.ac.uk](http://pfam.sanger.ac.uk)). SCOP and CATH also define families of proteins related by evolution, but they are restricted to proteins of known structure.
+
+Plate V shows an alignment of 14 mammalian elastases.
+
+![](images/page_209_chart_6.jpg)
+
+<details>
+<summary>other</summary>
+
+| Chromosome | Sample | Sequence |
+| --- | --- | --- |
+| CLCR_RAT | CPAD_RAT | HHSSVYLVAVVLEAVCAQPRG |
+| CLCR_RAT | CLCR_RAT | MLGTVLAALACAGCCGFBPAFDPN |
+| ELI_BOVIN | CLCR_RAT | HLRLVPTSLSLYGHSTDQFPETN |
+| ELI_BOVIN | CLER_BOVIN | HMLLVVASLYGHSTDQFPETN |
+| ELI_BOVIN | ELI_BAT | HLRLIVFASLVIYGHSTDQFPETN |
+| ELI_BOVIN | ELI_BAT | MIRALLSLLTAGALS GCGSTYAF |
+| ELI_BOVIN | ELI2A_HUMAN | MIRALLSLLTAGALS GCGSTYAF |
+| ELI2B_HUMAN | ELI2B_HUMAN | MIRALLSLLTAGALS GCGSTYAF |
+| ELI2B_HUMAN | ELI2_BOVIN | MIRALLSLLTAGALS GCGSTYAF |
+| ELI2B_HUMAN | ELI2_MOUSE | MIRALLSLLAGALS GCGSTYAF |
+| ELI2B_HUMAN | ELI2_PIG | MIRALLSLLTAGALS GCGSTYAF |
+| ELI2B_HUMAN | ELI2_RAT | MIRALLSLLAGALS GCGSTYAF |
+| ELI3A_HUMAN | ELI3A_HUMAN | MHLRLSSELLAYAVSGYQPSHS |
+| ELI3B_HUMAN | ELI3B_HUMAN | MHLRLSSELLAYAVSGYQPSHS |
+| ELIE_HUMAN | ELIE_HUMAN | MTLGRRKACLFACVLPALLGGTA |
+| CLCR_RAT | CPAD_RAT | EKFKHYLDVQSVVLHFGSPDSVED |
+| CLCR_RAT | CLCR_RAT | EKGKYVAISVDZYVEKHEW |
+| ELI_BOVIN | CLER_BOVIN | DGTQTYGVQTVVVRHSNSMNVAGYDIAVRLAOSATLMSVQ |
+| ELI_BOVIN | ELI_PIG | DGTQTYGVQTVVVRHSNSMQVS |
+| ELI_BOVIN | ELI_RAT | DGTQTYGVQTVVVRHSNSMQVS |
+| ELI2A_HUMAN | CLER_A_HUMAN | EKGDAVSVSKIVVRKDMSKQIS |
+| ELI2B_HUMAN | CLER_BOVIN | EKGDAVSVSKIVVRKDMSKQIS |
+| ELI2_BOVIN | ELI2_MOUSE | GAGAAVVSVKLVVRQRMSKVQGYDIALKLASPVLTDKIQ |
+| ELI2_BOVIN | ELI2_PIG | EKGDAVVSVKLVVRKDMSKQIS |
+| ELI2_RAT | ELI3A_HUMAN | EKGDAVVSVKLVVRKDMSKQIS |
+| ELI3A_HUMAN | ELI3B_HUMAN | EKGDAVVSVKLVVRKDMSKQIS |
+| ELIE_HUMAN | CLER_HUMAN | ERTQVFAVQNTFEN |
+| CLCR_RAT | CPAD_RAT | DGATTENHHCAMSH |
+| CLCR_RAT | CLCR_RAT | FIKVERTHVCAGGDQVISACNGDSGGGLMCQADGDSHO |
+| ELI_BOVIN | CLER_BOVIN | GSTVTTHVCAGGDQVISACNGDSGGGLMCQADGDSHO |
+| ELI_BOVIN | ELI_PIG | GSTVTTHVCAGGDQVISACNGDSGGGLMCQADGDSHO |
+| ELI_RAT | CLER_RAT | GSTVTTHVCAGGDQVISACNGDSGGGLMCQADGDSHO |
+| ELI2A_HUMAN | CLER_A_HUMAN | GSTVTTHMCAGGDQVISACNGDSGGGLMCQADGDSHO |
+| ELI2B_HUMAN | CLER_BOVIN | GSTVTTHMCAGGDQVISACNGDSGGGLMCQADGDSHO |
+| ELI2_MOUSE | CLER_MOUSE | GSTVTTHMCAGGDQVISACNGDSGGGLMCQADGDSHO |
+| ELI2_RAT | CLER_RAT | GSTVTTHMCAGGDQVISACNGDSGGGLMCQADGDSHO |
+| ELI3A_HUMAN | CLER_HUMAN | GSTVTTHMCAGGDQVISACNGDSGGGLMCQADGDSHO |
+| ELI3B_HUMAN | CLER_HUMAN | GSTVTTHMCAGGDQVISACNGDSGGGLMCQADGDSHO |
+| ELIE_HUMAN | CLER_HUMAN | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQVGVGTFSVFGSLGCNYRKPSVTVSNYNDIMSVNM |
+| CLER_HUMAN | CLER_HUMAN | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQVGVGTFSVFGSLGCNYRKPSVTVSNYNDIMSVNM |
+| CLER_RAT | CLER_RAT | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQVGVGTFSVFGSLGCNYRKPSVTVSNYNDIMSVNM |
+| ELI2A_HUMAN | CLER_A_HUMAN | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQVGVGTFSVFGSLGCNYRKPSVTVSNYNDIMSVNM |
+| ELI2B_HUMAN | CLER_BOVIN | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQVGVGTFSVFGSLGCNYRKPSVTVSNYNDIMSVNM |
+| ELI2_MOUSE | CLER_MOUSE | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQVGVGTFSVFGSLGCNYRKPSVTVSNYNDIMSVNM |
+| ELI2_RAT | CLER_RAT | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQVGVGTFSVFGSLGCNYRKPSVTVSNYNDIMSVNM |
+| ELI3A_HUMAN | CLER_HUMAN | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQVGVGTFSVFGSLGCNYRKPSVTVSNYNDIMSVNM |
+| ELI3B_HUMAN | CLER_HUMAN | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQVGVGTFSVFGSLGCNYRKPSVTVSNYNDIMSVNM |
+| ELIE_HUMAN | CLER_HUMAN | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQVGVGTFSVFGSLGCNYRKPSVTVSNYNDIMSVNM |
+| CLER_HUMAN | CLER_HUMAN | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQVGVGTFSVFGSLGCNYRKPSVTVSN YNDIMSVNM |
+| CLER_HUMAN | CLER_HUMAN | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQVGVGTFSVFGSLGCNYRKPSVT VSNYNDIMSVNM |
+| CLER_HUMAN | CLER_HUMAN | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQVGVGTFSVFGSLGCNYRKPSVT VSNYNDIM SVNM |
+| CLER_HUMAN | CLER_HUMAN | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQVGVGTFSVFGSLGCNYRKPSVT VSNYNDIM SVNM |
+| CLER_HUMAN | CLER_HUMAN | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQVGVGTFSVFGSLGCNYRKPSVT VSWYNDIM SVNM |
+| CLER_HUMAN | CLER_HUMAN | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQVGVGTFSVFGSLGCNYRKPSVT VSWYNDIM SVNM |
+| CLER_HUMAN | CLER_HUMAN | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQVGVGTFSVFGSLGCNY RKPSVT VSWYNDIM SVNM |
+| CLER_HUMAN | CLER_HUMAN | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQVGVGTFSVFGSLGCNY RKPSVT VSWYNDIM SVNM |
+| CLER_HUMAN | CLER_HUMAN | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQVGVGTFS VFGSLGCNY RKPSVT VSWYNDIM SVNM |
+| CLER_HUMAN | CLER_HUMAN | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQVGVGTFS VFGSLGCNY RKPSVT VSWYNDIM SVNM |
+| CLER_HUMAN | CLER_HUMAN | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQ VGSFTPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVP VPAPVFPCPGLP_C |
+| CLER_HUMAN | CLER_HUMAN | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQVGVGTFS VFGSLGCNY RKPSVT VSWYNDIM SVNM |
+| CLER_HUMAN | CLER_HUMAN | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQVGVGTFS VFGSLGCNY RKPSVT VSW YNDIM SVNM |
+| CLER_HUMAN | CLER_HUMAN | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQ VGSFTPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPLP_VAPVFPCPGLP_C |
+| CLER_HUMAN | CLER_HUMAN | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQ VGSFTPVPVPVPVPVPVPVPVPVPVPVPVPVPVPVPLP_VAPVFPCPGLP_C |
+| CLER_HUMAN | CLER_HUMAN | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQ VGSFTPVPVPVPVPVPVPVPLP_VAPVFPCPGLP_C |
+| CLER_HUMAN | CLER_HUMAN | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQ VGSFTPVPVPVPVPLP_VAPVFPCPGLP_C |
+| CLER_HUMAN | CLER_HUMAN | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQ VGSFTPVPVPVLVDYMDTMMN |
+| CLER_HUMAN | CLER_HUMAN | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQ VGSFTPIPVLVDYMDTMMN |
+| CLER_HUMAN | CLER_HUMAN | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQ VGSFTPIPVLVDYMDTMMN |
+| CLER_HUMAN | CLER_HUMAN | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQ VGSFTPIPVLVDYMDTMMN |
+| ELIE_HUMAN | CLER_HUMAN | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQ VGSFTPIPVLVDYMDTMMN |
+| ELIE_HUMAN | CLER_HUMAN | GSSVKTVMVCAGGD_IZSGCMGDSGGGLMCPTEDGGHQ VGSFTPIPVLVDYMDTMMN |
+</details>
+
+Plate V Alignment of amino acid sequences of mammalian elastases (See Chapter 5.).
+
+## The Protein Identification Resource
+
+The Protein Identification Resource (PIR) is an effective combination of a carefully curated database, information-retrieval access software, and a workbench for investigations of sequences. The PIR describes itself as an integrated protein informatics resource for genomic and proteomic research. Think of it as an analysis package sitting on top of a retrieval system. Its functionality includes browsing, searching and similarity analysis, and links to other databases. Users may:
+
+• browse by annotation;
+
+• search selected text fields for different annotations, such as superfamily, family, title, species, taxonomy group, keywords, and domains;
+• analyse sequences using BLAST or FASTA searches, pattern match, or multiple alignment;
+global and domain search, and annotation-sorted search;
+• view statistics for superfamily, family, title, species, taxonomy group, keywords, domains, and features;
+• view links to other databases, including PDB, COG, KEGG, WIT, and BRENDA;
+• select specialized sequence groups such as human, mouse, yeast, and E. coli genomes.
+
+A URL for a search of PIR using text terms is [http://pir.georgetown.edu/pirwww](http://pir.georgetown.edu/pirwww).
+
+One feature of the PIR International system is the search for a specific peptide. (Identifying proteins from sequences of fragments also has applications in proteomics; See Chapter 9). Looking at the alignment of mammalian elastases in Plate V, we note at positions 220–228 a conserved motif: most of the sequences contain CNGDSGGPLN. In the PIR we can select Peptide Search in iProClass and retrieve exact matches for the subsequence CNGDSGGPLN, giving:
+
+| 1 | ELRT2 pancreatic elastase II (EC 3.4.21.71) |
+| --- | --- |
+|  | 214 - 223 GVTSSCNGDSGGPLNCQASN |
+| 2 | CPBOA3 procarboxypeptidase A complex compon |
+|  | 183 - 192 DTRSGCNGDSGGPLNCPAAD |
+| 3 | S68826 pancreatic elastase (EC 3.4.21.36) i |
+|  | 212 - 221 GVISACNGDSGGPLNCQLEN |
+| 4 | S68825 pancreatic elastase (EC 3.4.21.36) i |
+|  | 212 - 221 GVISACNGDSGGPLNCQLEN |
+| 5 | A29934 pancreatic elastase (EC 3.4.21.36) I |
+|  | 213 - 222 YIRSGCNGDSGGPLNCPTED |
+| 6 | B26823 pancreatic elastase II (EC 3.4.21.71 |
+|  | 212 - 221 GVISSCNGDSGGPLNCQASD |
+| 7 | C26823 pancreatic elastase II (EC 3.4.21.71 |
+|  | 212 - 221 GVICTCNGDSGGPLNCQASD |
+| 8 | A26823 pancreatic elastase II (EC 3.4.21.71 |
+|  | 212 - 221 GIISSCNGDSGGPLNCQGAN |
+| 9 | A25528 pancreatic elastase II (EC 3.4.21.71 |
+|  | 214 - 223 GVTSSCNGDSGGPLNCRASN |
+| 10 | JQ1473 pancreatic elastase (EC 3.4.21.36) I |
+|  | 212 - 221 GVISACNGDSGGPLNCQAED |
+| 11 | B29934 pancreatic elastase (EC 3.4.21.36) I |
+|  | 213 - 222 DIRSGCNGDSGGPLNCPTED |
+| 12 | S29239 chymotrypsin (EC 3.4.21.1) 1 precurs |
+|  | 219 - 228 GGKSTCNGDSGGPLNLNGMT |
+| 13 | T10495 chymotrypsin (EC 3.4.21.1) BII - pen |
+|  | 214 - 223 GGKGTCNGDSGGPLNLNGMT |
+
+Note that the molecule names are truncated, which can sometimes create misleading situations, especially if one tries to analyse the output with a computer program, with which it is often harder to see the obvious. For instance, it might appear that an identical 10-residue subsequence appears in carboxypeptidase, a molecule entirely unrelated to elastase. But entry CPBOA3, the second response, is actually the molecule bovine procarboxypeptidase A complex component III, an elastase homologue. Chymotrypsin is of course a close homologue of elastase.
+
+Returning to the alignment table (Plate V), variations in the pattern appear in some molecules. The more general search for C[RNQF]GDSG[GS]PL[HNV], in which [XYZ] means a position containing X or Y or Z, would pull out all the mammalian elastases in the alignment, plus a total of 82 sequences in all. Even these are not all the sequences related to elastase in the data bank, as one could find by running a PSI-BLAST search for any of the sequences, or, remaining strictly within PIR, by looking up elastase in the Pfam database. The pattern matches 20 families, all serine proteinases.
+
+We are well on the way to generating a complete list of homologues.
+
+## ExPASy: Expert Protein Analysis System
+
+ExPASy is the information-retrieval and -analysis system of the Swiss Institute of Bioinformatics, which (in collaboration with the EBI) also produces the protein sequence databases SWISS-PROT and TrEMBL. TrEMBL contains translations of nucleotide sequences from the EMBL Nucleotide Database not yet fully integrated into SWISS-PROT.
+
+Opening the main web page of ExPASy and selecting SWISS-PROT and TrEMBL gives access to a set of information-retrieval tools. There is also the option of searching SWISS-PROT directly. If we select Full Text Search and probe SWISS-PROT with the single term ELASTASE, we find ELNE\_HUMAN, the real goal of our search, and 180 other hits: 53 from SWISS-PROT and 127 from TrEMBL. These include many inhibitors. One elastase homologue found is from the blood fluke: CERC\_SCHMA. Both sequences are precursors (in the following alignment of these two sequences, upper-case letters indicate the mature enzyme):
+
+```txt
+CERC_SCHMA --msnrwrfvvvvtlftycltfervstwlIRSGEPVQHPAEFPFIAFLTTER-TMCTGSL
+57ELNE_HUMAN mtlgrrlaclflacvlpalllggtalaseIVGGR-RARPHAWPFMVSLQLRGGHFCGATL 59
+: ... * : ... : : * . : * .* . * * * * . * . : * .* *
+CERC_SCHMA VSTRAVLTAGHCVCSPLPVIRVSFLTLRNGDQQGIHHQPSGVKVAPGYMPSCMSARQRRP 117
+ELNE_HUMAN IAPNFVMSAAHCVAN----VNVRAVRVVLGAHNLSRREP----TRQVFAVQRIFENGYDP 111
+: ... * : * * * * . : . : . *
+CERC_SCHMA IAQTLSGFDIAIVMLAQMVNLQSGIRVISLPQPSDIPPPGTGVFIVGYGRDDNDRDPSRK 177
+ELNE_HUMAN VNLLN---DIVILQLNGSATINANVQVAQLPAQGRRLGNGVQCLAMGWGLLGRNRG---- 164
+: **.*: * ..::.:.:* .** . *. : *:* ..:*.
+CERC_SCHMA NGGILKKGRATIMECRHATNGNPICVKAGQNFGQLPAPGDSGGPLLPS-LQGPVLGVVSH 236
+ELNE_HUMAN IASVLQELNVTVVTS-LCRRSNVCTLVRGRQAG--VCFGDSGSPLVCNGLIHGIASFVRG 221
+: ..*:: ..*:: . ...* : *:: * . ****.**: . * : ..*
+CERC_SCHMA GVTLPNLPDIIVEYASVARMLDFVRSNI---------- 264
+ELNE_HUMAN GCASGLYPDAFAPVAQFVNWIDSIIQRSEDNPCPHPRDPDPASRTH 267
+* : ** : .. * .... : * : ..
+```
+
+The structure of human neutrophil elastase is known from X-ray crystallography, but that of the blood fluke elastase is not.
+
+One of the facilities of the ExPASy server is the link to SWISS-MODEL, an automatic web server for building homology models. Opening SWISS-MODEL and choosing FIRST APPROACH MODE (the simplest), we can simply enter the SWISS-PROT code CERC\_SCHMA, and launch the application. Model building is not a trivial operation, so the job is done off-line and the results sent by e-mail.
+
+We shall discuss SWISS-MODEL further in Chapter 6.
+
+## Where do we go from here?
+
+We have visited only a few of the many data banks in molecular biology accessible on the web. In the short term readers will explore these sites and others, and become familiar not only with the contents of the web but its dynamics: the appearance and disappearance of sites and links. There are various biological metaphors for the web; as an ecosystem that is evolving, or that is growing polluted by dead sites and links to dead sites.
+
+Data banks are developing more effective avenues of intercommunication, to the point where ever more intimate links shade into apparent coalescence. The time is not far off when there will be one molecular biology data bank with many avenues of access. Scientists will be able to configure their own access to selected slices and views of the information, creating personal ‘virtual databases.
+
+## RECOMMENDED READING
+
+- Each year the January issue of Nucleic Acids Research contains a set of articles on databases in molecular biology. This should be kept at hand for ready reference.
+- Doolittle, R.F. (1981). Similar amino acid sequences: chance or common ancestry? Science, 214, 149–159. Some basic ideas about the relationship between sequence similarity and homology.
+- Hubbard, T.J. Aken, B.L., Beal, K., Ballester, B., Caccamo, M. et al. (2007). Ensembl 2007. Nucleic Acids Res., 35, D610–D617. Description of Ensembl.
+- http://www.ornl.gov/sci/techresources/Human\_Genome/posters/chromosome/sequence.shtml Tutorial covering accessing records in NCBI's sequence databases, with links to tutorials about other ENTREZ databases.
+- http://www.nlm.nih.gov/bsd/pubmed\_tutorial/m1001.html NCBI tutorial on the use of PubMed.
+- Likić, V.A. (2006). Databases of metabolic pathways. Biochem. Mol. Biol. Educ., 6, 408–412. Expository comparison of BioCyc and KEGG.
+
+## EXERCISES AND PROBLEMS
+
+- Exercise 4.1 A database of vehicles has entries for the following: bicycle, tricycle, motorcycle, car. It stores only the following information about each entry: (1) how many wheels (a number) and (2) source of propulsion = human or engine. For every possible pair of vehicles, devise a logical combination of query terms referring to either the exact value or the range in the number of wheels, and to the source of propulsion, that will return the two selected vehicles and no others.
+- Exercise 4.2 Box 4.4 shows the NCBI protein entry for human elastase 1 precursor. On a photocopy of this page, indicate which items are (a) purely database housekeeping, (b) peripheral data such as literature references, (c) the results of experimental measurements, (d) information inferred from experimental measurements, or (e) links to other databases exclusive of literature references.
+- Exercise 4.3 Write a PERL script to extract the amino acid sequence or the encoded protein from an entry in the EMBL nucleotide sequence database, as shown in Box 4.1, and convert it to FASTA format.
+- Exercise 4.4 Compare the files retrieved by a search in NCBI for human elastase under protein (Box 4.4) and nucleotide (Box 4.5). On photocopies of these two pages, mark with a highlighter all information that the two files have in common.
+- Exercise 4.5 What is the latest common ancestor of the human and the aardvark? (Compare information in Boxes 4.1 and 4.4.)
+- Exercise 4.6 Box 4.4 contains the amino acid sequence of human elastase 1 precursor. What sequence differences are there between this and the mature protein?
+- Problem 4.1 The multiple sequence alignment of mammalian elastases in Plate V contains 34 conserved residues. (a) How many residues are conserved, in the alignment shown in Plate V, between EL2\_PIG and EL2\_RAT? (b) How
+
+many residues are conserved, in the alignment shown in Plate V, between EL2\_BOVINE and EL2\_MOUSE? (c) How many of the positions found in parts (a) and (b) are common? (d) How many positions found in (a) are not conserved in the full alignment in Plate V? (e) How many positions found in (b) are not conserved in the full alignment? (f) How many positions found in (c) are not conserved in the full alignment? The point of this problem is to compare the efficacy of detection of conservation patterns between pairwise and multiple sequence alignments. In principle the reader should have been required to perform pairwise realignments of each pair of sequences treated separately. However, for sequences this closely related that would not make a very great difference. For distantly related sequences, it would have been essential.
+
+1 Capitani, G., Marković-Housley, Z., DelVal, G., Morris, M., Jansonius, J.N., and Schürmann, P. (2000). Crystal structures of two functionally different thioredoxins in spinach chloroplasts. J. Mol. Biol., **302**, 135–154.
+
+# Alignments and phylogenetic trees
+
+## LEARNING GOALS
+
+• Understanding the concept of sequence alignment: the assignment of residue–residue correspondences.
+• Knowing how to construct and interpret dotplots, and understanding the relationship between dotplots and alignments.
+• Being able to define and distinguish the Hamming distance and Levenshtein distance as measures of dissimilarity of character strings.
+• Understanding the basis of scoring schemes for string alignment, including substitution matrices and gap penalties.
+• Appreciating the difference between global alignments and local alignments, and understanding the use of approximate methods for quick screening of databases.
+• Understanding the significance of Z scores, and knowing how to interpret P values and E values returned by database searches.
+• Being able to interpret multiple alignments of amino acid sequences, and to make inferences from multiple sequence alignments about protein structures.
+• Being able to define and distinguish the concepts of homology, similarity, clustering, and phylogeny.
+Becoming expert in the use of PSI-BLAST and related programs.
+• Appreciating the use of profile methods and hidden Markov models in database searching.
+• Understanding the contents and significance of phylogenetic trees, and the methods available for deriving them, including maximum parsimony and maximum likelihood; knowing the role and use of an outgroup in derivation of a phylogenetic tree.
+
+## Introduction to sequence alignment
+
+Given two or more sequences, we wish to:
+
+• measure their similarity;
+• determine the residue–residue correspondences;
+observe patterns of conservation and variability;
+infer evolutionary relationships.
+
+If we can do these, we will be in a good position to go fishing in data banks for related sequences. A major application is to the annotation of genomes, involving assignment of structure and function to as many genes as possible.
+
+How can we define a quantitative measure of sequence similarity? Before comparing the nucleotides or amino acids that appear at corresponding positions in two or more sequences, we must first assign those correspondences. Sequence alignment is the identification of residue–residue correspondences. It is the basic tool of bioinformatics.
+
+Any assignment of correspondences that preserves the order of the residues within the sequences is
+
+an alignment. Gaps may be introduced.
+
+| Given two | first string | a b c d e |
+| --- | --- | --- |
+| text strings: | second string | a c d e f |
+
+| A reasonable alignment would be: | a b c d e - |
+| --- | --- |
+|  | a - c d e f |
+
+We must define criteria so that an algorithm can choose the best alignment. For the sequences gctgaacg and ctataatc:
+
+An uninformative alignment:
+
+<table><tr><td colspan="2">- - - - - - - g c t g c t a t a a t c</td></tr><tr><td colspan="2">c t a t a a t c - - - - - - - - - - - - -</td></tr><tr><td>An alignment</td><td>g c t g a a c g</td></tr><tr><td>without gaps:</td><td>c t a t a a t c</td></tr><tr><td>An alignment</td><td>g c t g a - a - - c g</td></tr><tr><td>with gaps:</td><td>- - c t - a t a a t c</td></tr><tr><td>And another:</td><td>g c t g - a a - c g</td></tr><tr><td></td><td>- c t a t a a t c -</td></tr></table>
+
+Most readers would consider the last of these alignments the best of the four. To confirm this, and to decide whether it is the best of all possibilities, we need a way to examine all possible alignments systematically. Then we need to compute a score reflecting the quality of each possible alignment. Then we can identify the alignment with the optimal score. In many cases, the optimal alignment is not unique: several different alignments may give the same best score. Moreover, even minor variations in the scoring scheme may change the ranking of alignments, causing a different one to emerge as the best.
+
+These examples illustrate pairwise sequence alignments. However, usually we can find large families of similar sequences by identifying homologues in different species. A mutual alignment of more than two sequences is called a multiple sequence alignment. Multiple sequence alignments are much more informative than pairwise sequence alignments in terms of revealing patterns of conservation.
+
+## The dotplot
+
+The dotplot is a simple picture that gives an overview of the similarities between two sequences. Less obvious is its close relationship to alignments.
+
+The dotplot is a table or matrix. The rows correspond to the residues of one sequence and the columns to the residues of the other sequence. In its simplest form, the positions in the dotplot are left blank if the residues are different, and filled if they match. Stretches of similar residues show up as diagonals in the upper left–lower right (northwest–southeast) direction (see Examples 5.1, 5.2, and 5.3).
+
+The dotplot gives a quick pictorial statement of the relationship between two sequences. Obvious features of similarity stand out. For example, a dotplot relating the mitochondrial ATPase-6 genes from a lamprey (Petromyzon marinus) and dogfish (Scyliorhinus canicula) shows that the similarity of the sequences is weakest near the beginning. This gene codes for a subunit of the ATPase complex. In the human, mutations in this gene cause Leigh syndrome, a neurological disorder of infants produced by the effects of impaired oxidative metabolism on the brain during development.
+
+Example 5.1 Dotplot showing identities between short name (DOROTHYHODGKIN) and full name (DOROTHYCROWFOOTHODGKIN) of a famous protein crystallographer
+
+![](images/page_216_chart_2.jpg)
+
+<details>
+<summary>heatmap</summary>
+
+| D | D | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | D | — | — | — |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| O | — | O | — | O | — | — | — | — | — | O | — | — | O | O | — | — | O | — | — | — | — |
+| R | — | — | R | — | — | — | — | — | R | — | — | — | — | — | — | — | — | — | — | — | — |
+| O | — | O | — | O | — | — | — | — | — | O | — | — | O | O | — | — | O | — | — | — | — |
+| T | — | — | — | — | T | — | — | — | — | — | — | — | — | T | — | — | — | — | — | — | — |
+</details>
+
+Letters corresponding to isolated matches are shown in nonbold type. The longest matching regions, shown in boldface, are the first and last names DOROTHY and HODGKIN. Shorter matching regions, such as the OTH of dorOTHy and crowfoOTHodgkin, or the RO of doROthy and cROwfoot, are noise.
+
+## Example 5.2 Dotplots showing identities between a repetitive sequence and itself
+
+The first shows the result for the sequence ABRACADABRACADABRA. The repeats appear on several subsidiary diagonals parallel to the main diagonal. The second, in honour of the discovery of the remains of Richard III, shows the result for perhaps his famous line, ‘A horse! A horse! My kingdom for a horse!’ ([http://www.youtube.com/watch?v=Fk\_teL3QudI](http://www.youtube.com/watch?v=Fk_teL3QudI).)
+
+![](images/page_216_chart_6.jpg)
+
+<details>
+<summary>heatmap</summary>
+
+| Row | A | B | R | A | C | A | D | A | B | R | A | C | A | D | A | B | R | A |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| A | A | — | — | A | — | A | — | A | — | — | A | — | A | — | A | — | — | A |
+| B | — | B | — | — | — | — | — | — | B | — | — | — | — | — | — | B | — | — |
+| R | — | — | R | — | — | — | — | — | — | R | — | — | — | — | — | — | R | — |
+| A | A | — | — | A | — | A | — | A | — | — | A | — | A | — | A | — | — | A |
+| C | — | — | — | — | C | — | — | — | — | — | — | C | — | — | — | — | — | — |
+| A | A | — | — | A | — | A | — | A | — | — | A | — | A | — | A | — | — | A |
+| D | — | — | — | — | — | D | — | — | — | — | — | — | D | — | — | — | — | — |
+| A | A | — | — | A | — | A | — | A | — | — | A | — | A | — | A | — | — | A |
+</details>
+
+![](images/page_217_chart_0.jpg)
+
+<details>
+<summary>heatmap</summary>
+
+| A | h | o | r | s | e | ! | h | o | r | s | e | ! | M | y | k | i | n | g | d | o | m | f |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| b | h | o | r | s | e | ! | o | r | s | e | ! | ! | o | y | k | i | n | g | d | o | m | f |
+| c | o | r | s | e | ! | ! | o | r | s | e | ! | ! | o | y | k | i | n | g | d | o | m | f |
+| d | r | s | e | ! | ! | ! | o | r | s | e | ! | ! | o | y | k | i | n | g | d | o | m | f |
+| e | s | e | ! | ! | ! | ! | o | r | s | e | ! | ! | o | y | k | i | n | g | d | o | m | f |
+</details>
+
+## Example 5.3 Dotplot showing identities between the palindromic sequence MAX I STAY AWAY AT SIX AM and itself
+
+The palindrome reveals itself as a stretch of matches perpendicular to the main diagonal.
+
+![](images/page_217_chart_3.jpg)
+
+<details>
+<summary>heatmap</summary>
+
+|  | M | A | X | I | S | T | A | Y | A | W | A | Y | A | T | S | I | X | A | M |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **M** | M | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | M |
+| **A** | — | A | — | — | — | — | A | — | A | — | A | — | A | — | — | — | — | A | — |
+| **X** | — | — | X | — | — | — | — | — | — | — | — | — | — | — | — | — | X | — | — |
+| **I** | — | — | — | I | — | — | — | — | — | — | — | — | — | — | — | I | — | — | — |
+| **S** | — | — | — | — | S | — | — | — | — | — | — | — | — | — | S | — | — | — | — |
+| **T** | — | — | — | — | — | T | — | — | — | — | — | — | — | T | — | — | — | — | — |
+| **A** | — | A | — | — | — | — | A | — | A | — | A | — | A | — | — | — | — | A | — |
+</details>
+
+This is not just word play: regions in DNA recognized by transcriptional regulators or restriction enzymes have sequences related to palindromes, crossing from one strand to the other:
+
+EcoRI recognition site:
+
+GAATTC
+
+CTTAAG
+
+Within each strand a region is followed by its reverse complement (see Exercise 5.9 and Problem 5.9). Longer regions of DNA or RNA containing inverted repeats of this form can form stem–loop structures. In addition, some transposable elements in plants contain true (approximate) palindromic sequences: inverted repeats of noncomplemented sequences, on the same strand; the following example appears in the wheat dwarf virus genome: ttttcgtgagtgcgcggaggctttt.
+
+![](images/page_218_chart_1.jpg)
+
+<details>
+<summary>scatter</summary>
+
+| Series | X (range) | Y (range) |
+| --- | --- | --- |
+| Data Points | 0~100 | 0~100 |
+</details>
+
+![](images/page_218_image_2.jpg)
+
+## See Weblem 5.1
+
+A disadvantage of the dotplot is that its ‘reach’ into the realm of distantly related sequences is poor. In analysing sequences, one should always look at a dotplot to be sure of not missing anything obvious, but be prepared to apply more sensitive tools.
+
+Often regions of similarity may be displaced, to appear on parallel but not collinear diagonals. This indicates that insertions or deletions have occurred in the segments between the similar regions. A dotplot relating the PAX-6 protein of mouse and the eyeless protein of D. melanogaster shows three extended regions of similarity with different lengths of sequence between them, two near the beginning of the sequences and one near the middle. Between the second and third of them, there is a longer intervening region in the mouse than in the Drosophila sequence.
+
+![](images/page_218_image_6.jpg)
+
+<details>
+<summary>text_image</summary>
+
+Drosophila eyeless
+mouse PAX-6
+</details>
+
+Filtering the results can reduce the noise in a dotplot. In the comparison of the ATPase sequences, dots were not shown unless they were at the centre of a consecutive region of 15 residues containing at least six matches. The PERL program for dotplots (see Box 5.1) allows the user to set values for a window (length of region of consecutive residues) and a threshold (number of matches required within the window).
+
+## Box 5.1 A PERL program to draw dotplots
+
+The program shown reads the following.
+
+**1.** A general title for the job, printed at the top of the output drawing. (First line of input.)
+**2.** Parameters specifying the filtering parameters window and threshold (second line of input). A dot will appear in the dotplot if it is in the centre of a stretch of residues of length window in which the number of matches is ≥ threshold.
+**3.** The two sequences, each beginning with a title line and ending with an \*.
+
+The program draws a dotplot similar to those shown in the text. The output is in a graphical language called Post-Script™, which can be displayed or printed on many devices, or converted to the common pdf format.
+
+```perl
+#!/usr/bin/perl
+#dotplot.pl -- reads two sequences and prints dotplot
+
+# read input
+
+$/ = "";
+$_ = <DATA>; $_ =~ s/#(.*)\n/\n/g;
+$_ =~ /^(.*)\n\s*(\d+)\s+(\d+)\s*\n(.*) \n([A-Z\n]*)\*\s*\n(.*)\n([A-Z\n]*)\*/;
+\$title = \$1; \$nwind = \$2; \$thresh = \$3;
+\$seq1 = \$4; \$seq1 = \$5; \$seq2 = \$6; \$seq2 = \$7;
+\$seq1 =~ s/\n//g; \$seq2 =~ s/\n//g; \$n = length(\$seq1); \$m = length(\$seq2);
+# postscript header
+
+print <<EOF;
+%!PS-Adobe-/s /stroke load def /l /lineto load def /m /moveto load def /r /rlineto load def
+/n /newpath load def /c /closepath load def /f /fill load def
+1.75 setlinewidth 30 30 translate /Helvetica findfont 20 scalefont setfont EOF
+
+#print matrix
+
+\$dx = 500.0/\$n; \$mdx = -\$dx; \$dy = 500.0/\$m;
+if (\$dy < \$dx) {\$dx = \$dy;} \$dy = \$dx; \$xmax = \$n*\$dx; \$ymax = \$m*\$dx;
+print "0 510 m (\$title NWIND = \$nwind) show\n";
+printf "0 0 m 0 %9.2f 1 %9.2f %9.2f 1 %9.2f 0 l c s\n",
+\$ymx,\$xmax,\$ymx,\$xmax;
+
+for (\$k = \$nwind - \$m + 1; \$k < \$n - \$nwind; \$k++) {
+    \$i = \$k; \$j = 1; if (\$k < 1) {\$i = 1; \$j = 2 - \$k;}
+    while (\$i <= \$n - \$nwind && \$j <= \$m - \$nwind) {
+        $_ = (substr(\$seq1,\$i -1,\$nwind) ^ substr(\$seq2,\$j -1,\$nwind));
+        \$mismatch = (\$_ =~ s/[^\x0]//g);
+        if (\$mismatch < \$thresh) {
+            \$xl = (\$i - 1)*\$dx; \$yb = (\$m - \$j)*\$dy;
+            printf "n %9.2f %9.2f m %9.2f 0 r 0 %9.2f r %9.2f 0 r c f\n",
+                    \$xl,\$yb,\$dx,\$dy,\$mdx;
+        }
+        \$i++; \$j++;
+    }
+}
+print "showpage\n";
+__END__
+```
+
+```txt
+ATPases lamprey / dogfish #TITLE
+15 6 #WINDOW, THRESHOLD
+Petromyzon marinus mitochondrion #SEQUENCE 1
+ATGACACTAGATATCTTTGACCAATTTACCTCCCCAACA
+ATATTTGGGCTTCCACTAGCCTGATTAGCTATACTAGCCCCTAGCTTA
+ATATTAGTTTCACAAACACCAAAATTTATCAAATCTCGTTATCACACACTA
+CTTACACCCATCTTAACATCTATTGCCAAACAACTCTTTCTTCCAATAAAC
+CAACAAGGGCATAAATGAGCCTTAATTTGTATAGCCTCTATAATATTTATC
+TTAATAATTAATCTTTTAGGATTATTACCATATACTTATACACCAACTACC
+CAATTATCAATAAACATAGGATTAGCAGTGCCACTATGACTAGCTACTGTC
+CTCATTGGGTTACAAAAAAAACCAACAGAAGCCCTAGCCCACTTATTACCA
+GAAGGTACCCCAGCAGCACTCATTCCCATATTAATTATCATTGAAACTATT
+AGTCTTTTTATCCGACCTATCGCCCTAGGAGTCCGACTAACCGCTAATTTA
+ACAGCTGGTCACTTACTTATACAACTAGTTTCTATAACAACCTTTGTAATA
+ATTCCTGTCATTTCAATTTCAATTATTACCTCACTACTTCTTCTATTA
+CTAACAATTCTGGAGTTAGCTGTTGCTGTAATCCAGGCATATGTATTTATT
+CTACTTTTAACTCTTTATCTGCAAGAAAACGTTT*
+Scyliorhinuscanicula mitochondrion #SEQUENCE 2
+ATGATTATAAGCTTTTTTGATCAATTCCTAAGTCCCTCCTTTCTAGGA
+ATCCCACTAATTGCCCTAGCTATTTCAATTCCATGATTAATATTTCCAACACCAACC
+AATCGTTGACTTAATAATCGATTATTAACTCTTCAAGCATGATTTATTAACCGATTTATT
+TATCAACTAATACAACCCATAAATTTAGGAGGACATAAATGAGCTATCTTATTTACAGCC
+CTAATATTATTTTAATTACCATCAATCTTCTAGGTCTCCTTCCATATACTTTTACGCCT
+ACAACTCAACTTTCTCTTAATATAGCCTTTGCCCTGCCCTTATGGCTTACAACTGTATTA
+ATTGGTATATTTAATCAACCAACCATTGCCCTAGGGCACTTATTACCTGAAGGTACCCCA
+ACCCCTTTAGTACCAGTACTAATCATTATCGAAACCATCAGTTTATTTATTCGACCATTAG
+GCCTTAGGAGTCCGATTAACAGCCAACTTAACAGCTGGACATCTCCTTATACAATTAATC
+GCAACTGCGGCCTTTGTCCTTTTAACTATAATACCAACCGTGGCCTTACTAACCTCCCTA
+GTCCTGTTCCTATTGACTATTTTAGAAGTGGCTGTAGCTATAATTCAAGCATACGTATTT
+GTCCTTCTTTTAAGCTTATATCTACAAGAAAACGTATAA*
+```
+
+## Web resource: Dotplots
+
+E.L. Sonnhammer’s program Dotter computes and displays dotplots. It allows the user to control the calculation and alter the appearance of the display by adjusting parameters interactively ([http://www.cgr.ki.se/cgr/groups/sonnhammer/Dotter.html](http://www.cgr.ki.se/cgr/groups/sonnhammer/Dotter.html)).
+
+To use the full set of features of Dotter it is necessary to install it locally. A website that offers interactive dotplotting is: [http://myhits.isb-sib.ch/cgi-bin/dotlet](http://myhits.isb-sib.ch/cgi-bin/dotlet).
+
+## Dotplots and sequence alignments
+
+The dotplot captures in a single picture not only the overall similarity of two sequences, but also the complete set and relative quality of different possible alignments. Any path through the dotplot from upper left to lower right, moving from each point only in the east, south, or southeast directions, corresponds to a possible alignment. If two sequences are closely related, the alignment can be read directly off the dotplot.
+
+Figure 5.1 shows an example based on the Dorothy Hodgkin dotplot. If the direction of the ‘move between successive cells is diagonal, two pairs of successive residues appear in the alignment without an insertion between them. If the direction of the move is horizontal, a gap is introduced in the sequence indexing the rows. If the direction of the move is vertical, a gap would be introduced in the sequence indexing the columns. Note that no moves can be directed up or to the left, as this would correspond to aligning several residues of one sequence with only one residue of the other, or to introducing gaps in both sequences. The path indicated by the arrows corresponds to the obvious alignment:
+
+DOROTHY––––––––HODGKIN
+
+DOROTHYCROWFOOTHODGKIN
+
+![](images/page_221_chart_3.jpg)
+
+<details>
+<summary>line</summary>
+
+| Category | Value |
+| --- | --- |
+| D | 1 |
+| O | 2 |
+| R | 3 |
+| O | 4 |
+| T | 5 |
+| H | 6 |
+| Y | 7 |
+| H | 8 |
+| H | 9 |
+| H | 10 |
+| H | 11 |
+| H | 12 |
+| H | 13 |
+| H | 14 |
+| H | 15 |
+| H | 16 |
+| H | 17 |
+| H | 18 |
+| H | 19 |
+| H | 20 |
+| H | 21 |
+| H | 22 |
+| H | 23 |
+| H | 24 |
+| H | 25 |
+| H | 26 |
+| H | 27 |
+| H | 28 |
+| H | 29 |
+| H | 30 |
+| H | 31 |
+| H | 32 |
+| H | 33 |
+| H | 34 |
+| H | 35 |
+| H | 36 |
+| H | 37 |
+| H | 38 |
+| H | 39 |
+| H | 40 |
+| H | 41 |
+| H | 42 |
+| H | 43 |
+| H | 44 |
+| H | 45 |
+| H | 46 |
+| H | 47 |
+| H | 48 |
+| H | 49 |
+| H | 50 |
+| H | 51 |
+| H | 52 |
+| H | 53 |
+| H | 54 |
+| H | 55 |
+| H | 56 |
+| H | 57 |
+| H | 58 |
+| H | 59 |
+| H | 60 |
+| H | 61 |
+| H | 62 |
+| H | 63 |
+| H | 64 |
+| H | 65 |
+| H | 66 |
+| H | 67 |
+| H | 68 |
+| H | 69 |
+| H | 70 |
+| H | 71 |
+| H | 72 |
+| H | 73 |
+| H | 74 |
+| H | 75 |
+| H | 76 |
+| H | 77 |
+| H | 78 |
+| H | 79 |
+| H | 80 |
+| H | 81 |
+| H | 82 |
+| H | 83 |
+| H | 84 |
+| H | 85 |
+| H | 86 |
+| H | 87 |
+| H | 88 |
+| H | 89 |
+| H | 90 |
+| H | 91 |
+| H | 92 |
+| H | 93 |
+| H | 94 |
+| H | 95 |
+| H | 96 |
+| H | 97 |
+| H | 98 |
+| H | 99 |
+| N | 100 |
+</details>
+
+Figure 5.1 Any path through the dotplot from upper left to lower right passes through a succession of cells, each of which picks out a pair of positions, one from the row and one from the column, that are matched in the alignment that corresponds to that path; or that indicates a gap in one of the sequences. The path need not pass through filled-in points only. However, the more filled-in points on the path, the more matching residues in the alignment.
+
+Another way to think of a path through the dotplot is as an edit script; that is, a prescription of a series of operations that transforms the sequence that indexes the columns—the ‘horizontal’ sequence—into the sequence that indexes the rows, or the ‘vertical’ sequence. Each move tells us to perform an operation: a substitution, an insertion, or a deletion. When the end of the path is reached, the effect will be to change one sequence into the other. In many cases, several different sequences of edit operations may convert one string into the other in the same number of steps, but they induce different alignments.
+
+It should be emphasized that although a sequence of edit operations derived from an optimal alignment may correspond to an actual set of evolutionary events, it is impossible to prove that it does. The larger the edit distance, the larger the number of reasonable evolutionary pathways between two sequences. Moreover, an alignment does not contain any information about the order of occurrence of the sequence changes during evolution. (See Case Study 5.1.)
+
+## Measures of sequence similarity
+
+To go beyond ‘alignment by eyeball’ via dotplots, we must define quantitative measures of sequence similarity and difference.
+
+Given two character strings, two measures of the distance between them are:
+
+1. the Hamming distance, defined between two strings of equal length, is the number of positions with mismatching characters;
+2. the Levenshtein, or edit, distance, defined between two strings of not necessarily equal length, is the minimal number of ‘edit operations’ required to change one string into the other. An edit operation is a deletion, insertion, or alteration of a single character in either sequence. A given sequence of edit operations induces a unique alignment, but not vice versa.
+
+For example:
+
+```hcl
+agtc                      Hamming distance = 2
+cgta
+ag-tcc                  Levenshtein distance = 3
+cgctca
+```
+
+For applications to molecular biology, recognize that certain changes are more likely to occur than others. For example, amino acid substitutions tend to be
+
+## CASE STUDY 5.1 Dotplots and alignments
+
+Let us compare the appearance of dotplots between pairs of proteins with increasingly more distant relationships. Figure 5.2 shows the dotplot comparisons of the sulphydryl proteinase papain from papaya with four homologues: the close relative, kiwi fruit actinidin, and the successively more distant relatives, human procathepsin L, human cathepsin B, and Staphylococcus aureus staphopain. The sequence alignments are also shown. As the sequences progressively diverge, it becomes more and more difficult to spot the correct alignment in the dotplot. The alignments shown were derived from comparisons of the structures. For pictures of the superposed structures, see Introduction to Protein Science (Lesk, 2004).
+
+![](images/page_223_image_0.jpg)
+
+Figure 5.2 (a) Alignment of papaya papain and kiwi fruit actinidin, with the corresponding dotplot. (b) Alignment of papaya papain and human procathepsin L, with the corresponding dotplot. This dotplot shows that there are several similar regions, but it would be difficult to generate a complete sequence alignment from the dotplot. (c) Alignment of papaya papain and human liver cathepsin B, with the corresponding dotplot. Note, in both the sequence alignment and the dotplot, the higher similarity at the beginning and end of the sequences than in the middle region. (d) Alignment of papaya papain and S. aureus staphopain, with the corresponding dotplot. The alignment is not derivable from this dotplot.
+
+![](images/page_223_image_2.jpg)
+
+## See Weblems 5.2, 5.3 and 5.4
+
+conservative: the replacement of one amino acid by another with similar size or physicochemical properties is more likely to have occurred than its replacement by another amino acid with greater

@@ -1,0 +1,2630 @@
+--- PDF page 266 ---
+Structural bioinformatics and drug
+discovery
+LEARNING GOALS
+• Understanding the concept of protein folding: the process by which the one-dimensional amino acid sequence
+encoded by a gene takes up a definite and biologically active three-dimensional conformation.
+• Recognizing that steric considerations severely limit the conformations of the polypeptide chain, with the
+Sasisekharan–Ramakrishnan–Ramachandran plot showing the allowed states of the mainchain.
+• Getting to know the 20 sidechains: the actors that play all the roles in all the proteins.
+• Understanding the hydrophobic effect and its implications for the structures and energetics of folded proteins.
+• Generalizing the ideas of sequence alignment to alignment of protein sequences by structural superposition.
+• Knowing the relationship between divergence of sequence and divergence of structure in protein evolution.
+• Becoming familiar with classification of protein folding patterns, as presented for example by the Structural
+Classification of Proteins (SCOP) database and website.
+• Knowing some basic approaches to the prediction of protein structure from amino acid sequence, and the Critical
+Assessment of Structure Prediction (CASP) programs.
+• Understanding neural networks and hidden Markov models, among the most powerful bases for ‘machine-learning’
+algorithms.
+• Knowing the basic requirements of a successful drug and understanding some approaches to drug discovery and
+design.
+Introduction
+To equip them to play their biological roles, proteins have three profound and fundamental
+properties:
+1. for implementation of the metabolism, growth, architecture, and regulation of cell and organism,
+proteins show a great variety of structures and functions;
+2. for their synthesis, proteins show a unity that permits all proteins to be synthesized by one
+apparatus, the ribosome. The implications for molecular biology are analogous to the impact of
+movable type on printing;
+3. proteins fold spontaneously to active native three-dimensional states. It is therefore sufficient to
+encode the amino acid sequence in terms of a one-dimensional sequence of nucleotides in a
+genome. Evolution takes advantage of the hereditary transmission of the information, and of the
+mutations that generate variants on which natural selection can act.
+The great variety of three-dimensional structures and functions of proteins arise in molecules that
+share underlying common chemical features. Proteins are like strings of Christmas tree lights: almost
+all proteins consist of a linear (that is, unbranched) polymer mainchain with different amino acid
+sidechains attached at regular intervals (Fig. 1.6). The wire linking the string of lights corresponds to
+the repetitive mainchain or backbone, and the variable sequence of colours of the lights corresponds
+266
+
+
+--- PDF page 267 ---
+to the individuality of the sequence of sidechains.
+The amino acid sequence of a protein is specified by the nucleotide sequence of a gene. The three-
+dimensional structures of protein molecules are determined, without further participation of nucleic
+acids, by the one-dimensional sequences of their amino acids. Proteins fold spontaneously to their
+native conformations.
+How does the amino acid sequence encode the three-dimensional structure? Any possible folding
+of the mainchain places different residues into contact. The interactions of the sidechains and
+mainchain, with one another and with the solvent, and the restrictions placed on sidechain mobility,
+determine the relative stabilities of different conformations. This is a consequence of the second law
+of thermodynamics, which states that systems at constant temperature and pressure find an
+equilibrium state that is a compromise between comfort (low enthalpy, H) and freedom (high
+entropy, S), to give a minimum Gibbs free energy G = H − TS, in which T is the absolute
+temperature. (In human relationships, marriage is just such a compromise.)
+Proteins have evolved so that one folding pattern of the mainchain is thermodynamically
+significantly better than other conformations. This is the native state. If we could calculate
+sufficiently accurately the energies and entropies of different conformations, and if we could
+computationally examine a large enough set of possible conformations to be sure of including the
+correct one, it would be possible consistently to predict protein structures from amino acid sequences
+on the basis of a priori physicochemical principles. There has been progress towards this goal but it
+has not yet been achieved.
+The mainchain of each protein in its native state describes a curve in space. We now know 100
+000 protein structures. They show a great variety of folding patterns. The first problem in analysing
+these structures is one of presentation. Figure 6.1 illustrates the difficulty in interpreting a fully
+detailed, literal representation, and the kind of simplified pictures that computer programs produce to
+give us visual access to the material. An active cottage industry has produced many different
+simplified representations. A skilled molecular illustrator will combine them to show different parts
+of a structure in finely tuned degrees of detail.
+    See Weblems 6.1 and 6.2
+The central panel of Figure 6.1 shows the course through space of the mainchain. Two regions at the
+front of the picture have the form of helices—like classic barber poles—with their axes almost
+vertical in the orientation shown. The structure also contains four strands of sheet, in which the chain
+is extended, almost linearly. These too are approximately vertical in orientation.
+The four strands interact laterally to stabilize their assembly into a β sheet. In the bottom frame,
+helices and strands are represented by ‘icons’: helices as cylinders and strands of sheet as large
+arrows. The top panel of Figure 6.1, showing the most detailed representation of the structure,
+including mainchain and sidechains, demonstrates the importance of simplification in producing an
+intelligible picture of even a small protein.
+267
+
+
+--- PDF page 268 ---
+Figure 6.1 Proteins are sufficiently complex structures that it has been necessary to develop specialized tools to
+present them. This figure shows a relatively small protein, at three different degrees of simplification. (Which protein?
+This is the subject of a series of web-based projects.) Top: complete skeletal model; mainchain bolder than sidechains.
+Centre: the course of the chain is represented by a smooth interpolated curve, the chevrons indicating the direction of
+the chain. Bottom: schematic diagram, in which cylinders represent helices and arrows represent strands of sheet. The
+solid objects in the picture are represented as ‘translucent’ by altering lines that pass behind them to broken lines. It is
+possible to superpose different representations visually by rotating the page 90° and viewing in stereo (but not for too
+long!)
+Protein stability and folding
+To form the native structure, a protein must optimize the interactions within and between residues,
+subject to constraints on the space curve traced out by the mainchain. Preferred conformations of the
+mainchain bias the folding pattern towards recurrent structural patterns: (1) helices, (2) extended
+regions that interact to form sheets, and (3) several standard types of turns.
+The Sasisekharan–Ramakrishnan–Ramachandran plot describes allowed
+mainchain conformations
+To a good approximation, the mainchain conformation of each nonglycine residue in a protein is
+restricted to two discrete conformational states.
+A fragment of the polypeptide chain common to all protein structures is shown in Figure 6.2.
+Rotation is permitted around the N–Cα and Cα–C single bonds of all residues (with one exception:
+proline). The angles ϕ and ψ around these bonds, and the angle of rotation, ω, around the peptide
+bond, define the conformation of a residue. The peptide bond itself tends to be planar, with two
+allowed states: trans, ω ≈ 180° and cis, ω ≈ 0°. Most peptide bonds in proteins are in the trans state.
+268
+
+
+--- PDF page 269 ---
+cis peptides are rare, and most cases involve a proline residue. The sequence of ψ, ϕ, and ω angles of
+all residues in a protein defines the backbone conformation.
+Figure 6.2 Definition of conformational angles of the polypeptide backbone.
+The principle that two atoms cannot occupy the same space limits the values of conformational
+angles. The allowed ranges of ϕ and ψ, for ω = 180°, fall into defined regions in a graph called a
+Sasisekharan–Ramakrishnan–Ramachandran plot, usually shortened to ‘Ramachandran plot’ (see
+Fig. 6.3). Solid lines in the figure delimit energetically preferred regions of ϕ and ψ; regions outside
+the broken lines are sterically disallowed. The conformations of most amino acids fall into either the
+αR or β regions. Glycine has access to additional conformations. In particular it can form a left-
+handed helix, αL. Figure 6.3 shows the typical distribution of residue conformations in a well-
+determined protein structure. Most residues fall in or near the allowed regions, although a few are
+forced by the folding into energetically less favourable states.
+Figure 6.3 A Sasisekharan–Ramakrishnan–Ramachandran plot of acyl phosphatase (PDB code 2ACY). Note the
+clustering of residues in the α and β regions, and that most of the exceptions occur in glycine residues (labelled G).
+The allowed regions generate standard conformations. A stretch of consecutive residues in the α
+conformation (typically between 6 and 20 in native states of globular proteins) generates an α helix.
+Repeating the β conformation generates an extended β strand. Two or more β strands can interact
+laterally to form β sheets, as in (Fig. 6.1).
+    See Weblems 6.3–6.4
+Helices and sheets are ‘standard’ or ‘prefabricated’ structural pieces that form components of the
+conformations of most proteins. They are stabilized by relatively weak interactions, hydrogen bonds,
+between mainchain atoms. In some fibrous proteins virtually all of the residues belong to one of
+these types of structure: wool contains α helices and silk β sheets. Amyloid fibrils, formed in disease
+states by many proteins, also contain extensive β sheets.
+269
+
+
+--- PDF page 270 ---
+Typical globular proteins contain several helix and/or sheet regions, connected by turns. Usually
+the ends of helix or strand regions appear on the surface of a domain of a protein structure. They are
+connected by turns, or loops: regions in which the chain alters direction to point back into the
+structure. Many but not all turns are short, surface-exposed regions that contain charged or polar
+residues.
+How does the mainchain choose among the possible allowed conformations? What is unique about
+each protein is the sequence of its sidechains. Therefore, interactions involving sidechains must
+determine the mainchain conformation.
+The sidechains
+Sidechains offer the physicochemical versatility required to generate all the different folding
+patterns. The sidechains of the 20 amino acids vary in the following ways.
+• Size The smallest, glycine, consists of only a hydrogen atom; one of the largest, phenylalanine,
+contains a benzene ring.
+• Electric charge Some sidechains bear a net positive or negative charge at normal pH. Asp and Glu
+are negatively charged. Lys, Arg, and often His are positively charged. Charged residues of
+opposite sign can form attractive pairwise interactions called salt bridges.
+• Polarity Some sidechains are polar; they can form hydrogen bonds to other polar sidechains, or to
+the mainchain, or to water. Other sidechains are electrically neutral. Some of these contain
+chemical groups related to ordinary hydrocarbons such as methane or benzene. Because of the
+thermodynamically unfavourable interaction of hydrocarbons with water, these are called
+‘hydrophobic’ residues. Congregation of hydrophobic residues in protein interiors, predicted by
+W.J. Kauzmann before the first protein structures were determined, is an important contribution to
+protein stability. This effect is analogous to the formation of droplets of oil in salad dressing. (See
+Box 6.1.)
+• Shape and rigidity The overall shape of a sidechain depends on its chemical structure and on its
+degrees of internal conformational freedom.
+Many pairs of amino acids have similar properties. For instance, Glu and Asp both contain distal
+Box 6.1 The hydrophobic effect
+The difference among the different amino acid sidechains in their preferences for aqueous or oil-like
+environments is one of the governing principles of protein structure.
+What is the hydrophobic effect? Phase separation in oil/water mixtures—for instance, salad dressing—is one
+common example; another is that gases (unlike most solids) are less soluble in water as the temperature
+increases. Readers with whistling tea kettles will have heard low levels of sound prior to proper boiling; this
+occurs when dissolved air comes out of solution as the water is heated.
+What is the origin of the hydrophobic effect? Cold water is a highly structured liquid. It contains many
+hydrogen bonds, which account for its high heat of vaporization and low density. But water is even more highly
+ordered around solutes than in the pure liquid. Methane dissolved in water—it is only slightly soluble, but
+soluble enough to study—is surrounded by a cage of water molecules called a clathrate complex. As a result,
+dissolving methane in water makes the solvent even more ordered, lowering the entropy. The natural tendency
+towards states of higher entropy inhibits the dissolving of methane in water. This is why methane and other
+hydrocarbons are only very slightly water-soluble. The solubilities of nonpolar gases decrease upon heating—
+from an already small value in cold water—because as the temperature increases entropy plays an even more
+270
+
+
+--- PDF page 271 ---
+important role in determining the equilibrium state.
+The hydrophobic effect in aqueous solutions of simple nonpolar solutes was well known to physical chemists
+when W.J. Kauzmann, in 1959, recognized its importance for protein structure.
+The nonpolar sidechains of proteins are similar to oil-like solutes. Their interaction with water is unfavourable.
+Kauzmann predicted that they would be sequestered in protein interiors, away from the solvent. This oil-drop
+model of protein interiors was confirmed by the X-ray crystal structures of globular proteins. We now recognize
+also the importance of high packing densities in protein interiors, and that it is better to regard the interior of a
+folded protein as more like a crystal than like an organic liquid. But the hydrophobic effect has lost none of its
+significance.
+As a consequence of the hydrophobic effect, charged residues are largely excluded from protein interiors; in
+rare cases they form internal salt bridges, or gain or lose protons to form neutral states. Obviously, the backbone
+must traverse the interiors of the protein, and carries with it the polar N and O atoms, which interact with other
+polar mainchain atoms and with polar sidechains such as threonine or asparagine. Thus the interior is not
+completely oil-like. Conversely, the surface of a protein is not exclusively charged or polar. About half the
+residues on the surface of a protein are nonpolar.
+carboxyl groups. Leu and Ile are both hydrophobic and have the same sidechain volume. Mutations
+changing Glu ↔ Asp or Leu ↔ Ile are conservative changes, and might be expected to cause only
+minor changes in the protein's structure and function. A mutation from a Leu to a Glu, especially in a
+residue in a protein interior, would be expected to do severe damage. One of the motivations for
+collecting SNPs by wide-scale genetic screening is to look for mutants that, by damaging proteins,
+cause disease. (However, many SNPs associated with diseases appear in nonprotein-coding regions!)
+    See Weblem 6.5
+Protein stability and denaturation
+What are the chemical forces that stabilize native protein structures? What is the process by which a
+protein folds from an ensemble of denatured conformations to a unique native state?
+To address these questions, biochemists have studied the denaturation of proteins in response to
+heat, or to increasing concentrations of urea or guanidinium hydrochloride (commonly used
+denaturants). Some measurements are static, such as determination of the amount of native and
+denatured states at equilibrium under different conditions, or the heat released at points along the
+transition. Others are kinetic, such as measurement of rates of folding or unfolding, or identification
+of structures that appear transiently during the process.
+One important message from these studies is that proteins are only marginally stable. The native
+state of globular proteins is typically only 20 − 60 kJ⋅mol−1 (5 − 15 kcal⋅mol−1) more stable than the
+denatured state. This is the equivalent of about one or two water–water hydrogen bonds.
+Precisely why proteins have marginal stability is unclear. Some people believe that it facilitates
+protein turnover. Others suggest that proteins are as stable as they need to be so ‘why bother’ (less
+informally: there is no selective advantage in) further optimizing the stabilizing interactions. We do
+know that the interactions that stabilize native proteins are capable of producing protein structures
+with much higher stabilities.
+Suppose you are a globular protein in aqueous solution, and you want to achieve a stable native
+state. Your major problem is the great loss of conformational freedom, relative to the large ensemble
+of denatured states, that is exacted from you in adopting a unique conformation. This entails a large
+reduction in entropy, which is thermodynamically unfavourable. One way in which you can
+compensate is to form a compact globular state, burying many residues in the interior away from
+271
+
+
+--- PDF page 272 ---
+contact with water. The release of water from interaction with the nonpolar atoms of the protein
+produces a compensating favourable increase in entropy arising from the hydrophobic effect (See
+Box 6.1).
+That's fine, but now you discover that to form the compact state you have buried many polar
+atoms, including but not limited to mainchain nitrogen and carbonyl oxygens. In the denatured state,
+these atoms make hydrogen bonds to water. When buried in the interior, their hydrogen-bonding
+potential must somehow be satisfied. (Don't forget: one or two uncompensated hydrogen bonds and
+you've blown it; your native state would be unstable.) A fairly general-purpose solution that satisfies
+mainchain hydrogen-bonding potential is to form helices or sheets.
+There is a bonus: formation of secondary structure also ensures that the mainchain is in a
+stereochemically acceptable conformation, as limited by the Sasisekharan–Ramakrishnan–
+Ramachandran plot. Residues in α helices are all in the α conformation; residues in strands of β sheet
+are all in the β conformation.
+How do you decide which regions should form helices or strands? Enthalpically, helix and sheet
+are reasonably similar for most residues. However, entropically, some sidechains are more hindered
+in helices than in strands (Ile, Val, Thr); these prefer strands. Such effects bias the formation of
+secondary structures. Specific sequences providing sidechain–mainchain hydrogen bonds form helix
+caps, governing where α helices begin and end.
+How compact is the globular state required to be? You could achieve exclusion of water from your
+interior by fairly loose packing—as long as no channel is larger than 1.4 Å in radius—the size of a
+water molecule (see Box 6.2). But the closer together you can squeeze your atoms, the better
+advantage you can take of Van der Waals forces: general forces of attraction between atoms that give
+matter its general cohesion. Protein interiors are densely packed: the fitting together of the sidechains
+is like a solved jigsaw puzzle. However, the puzzle pieces (the residues) are deformable, so the
+folding process is more complicated than the rigid matching of pieces in ordinary jigsaw puzzles.1
+Box 6.2 Accessible and buried surface area
+In a pioneering development of computational analysis of protein structures, B.D. Lee and F.M. Richards defined
+and measured the solvent-accessible surface areas of proteins.
+The accessible surface area of a protein or protein complex is the area swept out by a water molecule
+(modelled as a sphere 1.4 Å in radius) rolling around the outside of the protein. The accessible surface includes
+nooks and crannies in the protein surface that are larger than 2.8 Å wide, but smoothes over finer wrinkles.
+Calculations of accessible surface area rationalize the hydrophobic contribution to the thermodynamics of protein
+folding and interactions. Observed regularities include the following.
+1. C. Chothia established a basic calibration: each Å2 of buried surface area contributes 6 J (25  cal) of free
+energy of stabilization.
+2. The accessible surface area (ASA) of monomeric proteins of up to about 300 residues varies as the ⅔ power
+of the molecular weight M: ASA = 11.1M⅔.
+3. The formation of oligomeric proteins from monomers buries an additional 1000–5000 Å2 of surface. Lower
+values characterize proteins for which the monomer structure is stable in isolation; higher values characterize
+proteins in which association must stabilize the structure of the monomers as well as the complex.
+4. The nature of the accessible and buried area in native protein structures: the average solvent-accessible
+surface of monomeric proteins—the protein exterior—is ≈58% nonpolar (hydrophobic), ≈29% polar, and
+≈13% charged. The average buried surface of monomeric proteins—the protein interior—is ≈60% nonpolar
+(hydrophobic), ≈33% polar, and ≈7% charged. Many people expect the large buried hydrophobic surface but
+are surprised at how large the exterior hydrophobic area is. In fact, the main ‘take-home message’ about the
+difference between the surface and the interior is that proteins rarely bury charged groups.
+272
+
+
+--- PDF page 273 ---
+In summary, you have to find a conformation of the chain that simultaneously solves all the
+following problems.
+1. All residues must have stereochemically allowed conformations. This applies to both the
+mainchain and the sidechains. Steric collisions would raise the energy of the conformation and
+render it unstable.
+2. Buried polar atoms must be hydrogen-bonded to other buried polar atoms. If you miss out a few
+hydrogen bonds, the protein will prefer to form the denatured state to allow these unsatisfied
+polar atoms to hydrogen bond to solvent.
+3. Enough hydrophobic surface must be buried, and the interior must be sufficiently densely
+packed, to provide thermodynamic stability.
+For most proteins there is a unique solution of all these problems, defining the native state. Other
+proteins change conformation when they bind ligands, or pass through metastable states, as part of
+their mechanisms of function. Many proteins contain disordered regions.
+The fact that one conformation of a protein—the native state—has substantially greater stability
+than others is complex but not mysterious. It is a question of optimizing the available interactions,
+and selecting sequences for which this optimum is unique and substantially lower than others. For
+most regions the local structure is determined by local interactions. Therefore if the native state were
+not unique there would have to be more than one way to fit a given set of pieces together. This is
+possible for small independent subunits. Many small inorganic and organic molecules crystallize in
+different forms. But the constraints imposed by the connectivity of the polypeptide chain make this
+much more difficult for a protein. As a result it is easy for evolution to avoid multiple stable
+conformations, unless this is required by the mechanism of biological activity.
+Protein folding
+Suppose again that you are a protein, and that you are denatured. Now that you understand how your
+native state is stabilized, how would you go about finding it? Clearly you can't try all conformations:
+many years ago C. Levinthal calculated that a simple conformational search, using reasonable
+assumptions about speeds of internal rotations, could not achieve the desired result in times shorter,
+by many orders of magnitude, than observed folding times.
+Two circumstances conspire to make the process by which proteins fold to their native states a
+mysterious one.
+First is the fact that proteins are only marginally stable. This implies that any quasi-stable
+intermediate in protein folding must be even less stable, else the folding process would get trapped in
+the intermediates. Indeed, for many proteins, measurements of fractions of molecules in native and
+denatured states, as a function of temperature or denaturant concentration, imply simple two-state
+native ↔ denatured equilibria in which undetectably few molecules are anything but native or
+denatured. This confirms that there are no intermediates with more than marginal stability. But this
+makes it difficult to follow the folding transition structurally.
+The second circumstance that makes protein folding mysterious is that the denatured state is so
+heterogeneous that in the absence of stable intermediates there is no convenient way to visualize the
+complete pathway.
+273
+
+
+--- PDF page 274 ---
+Contrast protein folding with two other types of structure formation.
+1. In assembling do-it-yourself furniture, one passes through a succession of well-defined
+intermediate states. First one screws A to B in the native-like conformation. The structure of the
+A–B fragment is determined and stabilized purely by the interactions between A and B. Were it
+not for gravity, a stable A–B intermediate would be formed. But proteins don't have the luxury of
+forming stable intermediates.
+2. In assembling an arch from its voussoirs, the structure as a whole has no stability until the
+keystone is inserted. Only the completed arch has independent stability, there are no stable
+intermediates, and the only way to assemble the structure is by using scaffolding which is
+subsequently removed. But proteins don't have the luxury of using external scaffolding.
+What proteins have to do is to work with unstable intermediates—like do-it-yourself furniture in the
+presence of gravity—and to get the job finished before the intermediates fall apart, or else keep
+reforming them and trying again.
+Identification of transient structure during protein folding can be achieved experimentally by
+isotope-exchange measurements. Prepare a sample of denatured protein in which all hydrogen atoms
+are replaced by deuterium. (It is possible to separate signals from H and D in NMR experiments.) At
+various times during refolding, in separate experiments, expose the sample to a pulse of protons.
+After the native state is formed, detect where in the structure D ↔ H exchange occurred and when.
+Such studies justify the model that many proteins fold by initial formation of a ‘molten globule’
+containing some native secondary structure, but without the tertiary structural interactions that lock
+the molecule into its final conformation. This is followed by a hierarchical condensation to form
+supersecondary structure, etc., leading eventually to accretion of the native state. For most proteins
+there is no evidence for nonnative structures as intermediates along productive folding pathways,
+although nonnative structures—such as incorrect proline isomers—can divert and thereby slow down
+the folding process.
+The conclusion is that structures of local regions are determined primarily by local interactions,
+and, although these interactions may be inadequate to stabilize local regions to the point where they
+can be isolated, they are good enough to provide a low-energy pathway for structure assembly.
+Most of what we understand about the process of protein folding comes from measurements on
+purified proteins in dilute solution. Within cells, protein folding is made more difficult by the
+intermolecular crowding. What is worse, misfolded proteins have an enhanced tendency to
+aggregate. Protein aggregates are implicated in many diseases, including spongiform
+encepalopathies, and Alzheimer’s disease. Cells contain chaperones to catalyse proper folding and
+reduce aggregation.
+The idea is that the function of a chaperone is to prevent unwanted interactions. The ‘substrates’ of
+chaperones are misfolded proteins. The chaperone recognizes them by the exposure of hydrophobic
+surface. The chaperonin system GroEL and GroES engulfs such misfolded proteins in a cage,
+forming a macroclathrate complex. The misfolded proteins are unfolded, and released to have
+another try at folding properly. Observe that the chaperonin does not contain any information about
+the native state of any specific protein on which it acts. Therefore, chaperones are not an exception to
+the statement that all information about the native protein fold is contained in the amino acid
+sequence.
+Applications of hydrophobicity
+274
+
+
+--- PDF page 275 ---
+Using a hydrophobicity scale that assigns a value to each amino acid we can plot the variation of
+hydrophobicity along the sequence of a protein. This is called a hydrophobicity profile.
+Hydrophobicity profiles have been used to predict the positions of turns between elements of
+secondary structure, exposed and buried residues, membrane-spanning segments, and antigenic sites
+(see Examples 6.1 and 6.2, and Box 6.3).
+Coiled-coiled proteins
+Helical wheel diagrams also illuminate coiled-coil structures, in which two α helical regions wind
+around each other. Proteins containing coiled coils are known among structural proteins, such as α-
+keratin, and also in a variety of globular proteins associated with a number of functions prominently
+including transcription regulation. The pitch—the rise, along the axis, of one complete turn—is 14.7
+nm. The chains go in opposite directions. The JUN–DNA complex is a typical example (see Fig.
+6.5).
+Such coiled-coil domains contain a signature pattern in their amino acid sequences. They show
+heptad repeats—seven-residue patterns—containing positions denoted a, b, c, d, e, f, and g, of which
+Example 6.1 Use of hydrophobicity profiles to predict the positions turns between helices
+and strands of sheet
+Figure 6.4a shows the hydrophobicity profile of hen egg white lysozyme. It has pronounced minima at the
+following residues: 17, 44, 70, 93, and 117. Figure 6.4b shows the structure of hen egg white lysozyme, from
+which it is possible to check the correlation between turns in the structure and the positions of the minima in the
+hydrophobicity profile.
+Four of the major minima in the hydrophobicity profile appear at or near the positions of turns. Another
+minimum occurs in a surface-exposed region, but in the structure this one corresponds to a strand of a β sheet
+rather than to a turn. One of the minima is within a helix. Conversely, many of the turns do not correspond to
+pronounced minima in the hydrophobicity plot. Hydrophobicity profiles provide useful information, but do not
+unambiguously predict all turns in a protein structure.
+275
+
+
+--- PDF page 276 ---
+Figure 6.4 (a) Hydrophobicity profile of hen egg white lysozyme. (Produced using the Primary Structure
+Analysis tools available through http://www.expasy.org.) (b) Structure of hen egg white lysozyme. Regions
+corresponding to minima in the hydrophobicity plot are shown with bold green lines.
+Example 6.2 The helical wheel
+O.B. Ptitsyn observed that α helices in globular proteins often have a ‘hydrophobic face’ turns inwards towards
+the protein interior, and a ‘hydrophilic face’ turned outwards towards the solvent. Each residue in an α helix
+appears at a position 100° around the circumference of the helix from its predecessor. Therefore, to achieve
+Ptitsyn's effect, the sequence of residues should alternate between hydrophobic and hydrophilic with a
+periodicity of approximately four.
+To check this relationship, the residues can be projected onto a plane perpendicular to a helix axis, a diagram
+called a helical wheel. This example shows the sequence of an α helix of sperm whale myoglobin. Charged and
+polar residues appear in green; others in black.
+The helix has a hydrophobic face—which points to the inside of the structure, and a hydrophilic face—which
+points outside. In this picture the hydrophilic face is at the bottom of the diagram. From such a pattern of
+hydrophobicity we can predict whether a region of an amino acid sequence is likely to form an α helix in the
+native protein structure.
+276
+
+
+--- PDF page 277 ---
+Box 6.3 shows a PERL program to draw helical wheels.
+Box 6.3 A PERL program to draw helical wheels
+#!/usr/bin/perl
+#helwheel.pl---draw helical wheel
+#usage: echo DVAGHGQDILIRLFKSH | helwheel.prl > output.ps
+# or    echo 20DVAGHGQDILIRLFKSH | helwheel.prl > output.ps
+#       the numerical prefix sets the first residue number
+# The output of this program is in PostScript (TM),
+#      a general-purpose graphical language
+# The next section prints a header for the PostScript file
+print <<EOF;
+%!PS-Adobe-
+%%BoundingBox: (atend)
+%1 0 0 setrgbcolor
+%newpath
+%37.5 161 moveto 557.5 161 lineto 557.5 681 lineto 37.5 681 lineto
+%closepath stroke
+297.5 421. translate 2 setlinewidth 1 setlinecap
+/Helvetica findfont 20 scalefont setfont 0 0 moveto
+EOF
+#  Define fonts to associate with each amino acid
+$font{“G”} = “Helvetica”;      $font{“A”} = “Helvetica”;      $font{“S”} =
+“Helvetica”;
+$font{“T”} = “Helvetica”;      $font{“C”} = “Helvetica”;      $font{“V”} =
+“Helvetica”;
+$font{“I”} = “Helvetica”;      $font{“L”} = “Helvetica”;      $font{“F”} =
+“Helvetica”;
+$font{“Y”} = “Helvetica”;      $font{“P”} = “Helvetica”;      $font{“M”} =
+“Helvetica”;
+$font{“W”} = “Helvetica”;      $font{“H”} = “Helvetica-Bold”; $font{“N”} =
+“Helvetica-Bold”;
+$font{“Q”} = “Helvetica-Bold”; $font{“D”} = “Helvetica-Bold”; $font{“E”} =
+“Helvetica-Bold”;
+$font{“K”} = “Helvetica-Bold”; $font{“R”} = “Helvetica-Bold”;
+$_= <>;                                     #  read line of input
+chop();$_ =~ s/\s//g;                       #  remove terminal carriage
+return and blanks
+if ($_ =~ s/^(\d+)//)                       #  if input begins with integer
+     {$resno = $1;}                         #  extract it as initial
+residue number
+else {$resno = 1}                           #  if not, set initial residue
+number = 1
+$radius = 50;                               #  initialize values for
+radius,
+$x = 0; $y = -50; $theta = -90;             #  x, y and angle theta
+#  print light gray spiral arc as succession of line segments, 10 per
+residue
+$npoints = 10*(length($_) - 1);
+277
+
+
+--- PDF page 278 ---
+print “0.8 0.8 0.8 setrgbcolor\n”;          #  set colour to light gray
+print “newpath\n”;                          #  draw spiral arc
+printf(“%8.3f %8.3f moveto\n”,$x,$y);
+foreach $d (1 .. $npoints) {                #  10 points per residue
+    $theta += 10; $radius += 0.6;           #  increase radius and theta
+    $x = $radius*cos($theta*0.01747737);    #  calculate new value of x
+    $y = $radius*sin($theta*0.01747737);    #    and y
+    printf(“%8.3f %8.3f lineto\n”,$x,$y);
+}
+print “stroke\n”;
+#  print residues and residue numbers
+$radius = 50;                               #  reinitialize values for
+radius,
+$x = 0; $y = -50; $theta = -90;             #  x, y and angle theta
+print “0 setgray\n”;                        #  set colour to black
+foreach (split (“”,$_)) {                   #  loop over characters from
+input line
+    print “/$font{$_} findfont “;           #  set font appropriate
+    print “20 scalefont setfont\n”;         #  for this amino acid
+    printf(“%8.3f %8.3f moveto\n”,$x,$y);   #  move to current point
+    print “ ($resno$_) stringwidth”;        #  adjust position to centre
+residue
+    print “ pop -0.5 mul -7 rmoveto\n”;     #     identification on point
+on spiral
+    print “ ($resno$_) show\n”;             #  print residue number and id
+    print “% $theta $resno$_\n”;
+    $theta += 100; $radius += 6;            #  set new values of angle,
+radius
+    $x = $radius*cos($theta*0.01747737);    #  compute new values of x
+    $y = $radius*sin($theta*0.01747737);    #     and y
+    $resno++;                               #  increase residue number
+}
+print “showpage\n”;                         #  postscript signals to
+print “%%BoundingBox:”;                     #  print
+$xl = 297.5 - 1.05*$radius;                 #   x
+$xr = 297.5 + 1.05*$radius;                 #    and
+$yb = 421.  - 1.05*$radius;                 #     y
+$yt = 421.  + 1.05*$radius;                 #      limits
+printf(“%8.3f %8.3f %8.3f %8.3f\n”,$xl,$xr,$yb,$yt);
+print “%%EOF\n”;                            #  and wind up
+the first and fourth positions—a and g—are usually hydrophobic. The sequences of coiled-coiled
+regions frequently contain a motif called the ‘leucine zipper’ because of the leucine repeats every
+seven residues. Here is the sequence of the coiled-coil region of GCN4, with the heptads demarcated
+and the hydrophobic positions indicated by asterisks:
+278
+
+
+--- PDF page 279 ---
+Figure 6.5 Coiled-coil BZIP domain from proto-oncogene c-jun bound to cAMP response element (CRE) DNA
+target.
+ abcdefg abcdefg abcdefg abcdefg
+ *  *    *  *    *  *    *  *
+R|MKQLEDK|VEELLSK|NYHLENE|VARLKKL|VG
+The distribution of leucine residues (green) is clear on a helical wheel:
+Prediction of transmembrane proteins and signal peptides
+Many proteins are designed to sit within membranes. Membrane proteins mediate the exchange of
+matter, energy, and information between cell interiors, organelles, and surroundings. Examples of
+membrane protein functions include energy transduction, via the generation or release of
+concentration gradients across cell or organelle membranes; and signal reception and transmission.
+    See Weblem 6.6
+It is estimated that in the human genome approximately 30% of genes encode membrane proteins.
+Approximately 70% of known targets of drugs are membrane proteins, mostly receptors. Given that
+membrane proteins are so common, it is important to have reliable tools for their identification.
+Relatively few membrane protein structures have been experimentally determined. Their
+identification and characterization places a greater burden on computational tools for sequence
+analysis.
+Among their adaptations, transmembrane proteins contain regions of mostly nonpolar residues,
+which interact with the organic layer. Thereby they differ from water-soluble proteins that show
+biases towards a hydrophobic interior and a hydrophilic exterior. Most also contain additional
+domains in the aqueous regions inside and/or outside the membrane. Many transmembrane proteins
+contain a set of seven consecutive α helices that traverse the membrane, oriented approximately
+279
+
+
+--- PDF page 280 ---
+perpendicular to the plane of the membrane. These helices are connected by loops that protrude into
+the aqueous surroundings. A second class of membrane-associated protein structures contains a β-
+barrel. Transmembrane helices are typically 15–30 residues long. Although enriched in hydrophobic
+residues they contain some polar sidechains, usually in interfaces between helices packed together in
+the structure.
+A useful clue to the orientation of the helices across the membrane is the ‘positive-inside rule’.
+The loops between helices lie either entirely inside or entirely outside the cell or organelle. Those
+inside contain a preponderance of positively charged residues. (see Example 6.3.)
+These applications of hydrophobicity are typical of early approaches to sequence–structure
+correlation. Using some specific physical idea about proteins, they describe, or infer, structural
+properties of one protein at a time, from one sequence at a time.
+Example 6.3 Detection of transmembrane helical segments
+Bacteriorhodopsin was the first solved structure to show the configuration of seven helices traversing a
+membrane, connected by loops (see Fig. 6.6).
+Figure 6.6 Bacteriorhodopsin from the bacterium Halobacterium salinarum (formerly H. halobium) [2BRD]
+viewed in the plane of the membrane. The ligand shown in ball-and-stick representation is the chromophore,
+retinal.
+Residues within the membrane-spanning segments are almost exclusively hydrophobic because the entire helix
+is embedded in a nonaqueous medium. They are separated by regions containing polar amino acids.
+An unfiltered hydrophobicity plot of the amino acid sequence of Halobacterium salinarum bacteriorhodopsin
+shows seven regions of maxima, corresponding to the seven transmembrane helices (positions indicated by
+horizontal bars).
+    See Weblem 6.7
+280
+
+
+--- PDF page 281 ---
+Modern developments have demonstrated the predictive power of multiple sequence alignments.
+Indeed, a program to predict coiled-coil regions, by C.D.D. Barry in 1982, was the first application
+of position-specific scoring matrices (See Chapter 5). The best current methods for predicting coiled
+coils and transmembrane domains make use of hidden Markov models (HMMs; See Chapter 5).
+Superposition of structures, and structural alignments
+Some aspects of sequence analysis carry over fairly directly into structural analysis, some must be
+generalized, and others have no analogues at all.
+As in the case of sequences, a fundamental question in analysing structures is to devise and
+compute a measure of similarity. If two molecules have very similar structures, we can imagine
+superposing them so that corresponding points are as close together as possible. Then the average
+distance between corresponding points is a measure of the structural similarity. In practice it is
+conventional to report the root-mean-square (r.m.s.) deviation of the corresponding atoms:
+where di is the distance between the ith pair of atoms after optimal fitting, and n is the number of
+points. This assumes that we have prespecified the correspondence between the points.
+If the correspondence is not known, we must first determine it and only then calculate the r.m.s.
+deviation of the alignable substructures. If each point corresponds to an atom representing the
+successive residues of a protein or nucleic acid structure (the Cα atoms of proteins or the phosphorus
+atoms of nucleic acids), the problem is literally a question of alignment (= assignment of residue–
+residue correspondences) (see Example 6.4 and Box 6.4). Indeed, determination of residue–residue
+correspondences
+Example 6.4 Structural alignment of bovine γ-chymotrypsin and S. aureus epidermolytic
+toxin A
+Bovine chymotrypsin and S. aureus epidermolytic toxin A are both members of the chymotrypsin family of
+proteinases. Figure 6.7 shows a structural superposition of PDB entries 8GCH (γ-chymotrypsin) (black) and
+1AGJ (S. aureus epidermolytic toxin A) (green). The molecules share the common chymotrypsin-family serine
+proteinase folding pattern, and the Ser-His-Asp catalytic triad (ball-and-stick).
+A sequence alignment derived from the superposition follows:
+8gch CGVPAIQPVLIVNG------------------------------EEAVP--GS----WPWQVSLQ-DKTG
+281
+
+
+--- PDF page 282 ---
+1agj --------------EVSAEEIKKHEEKWNKYYGVNAFNLPKELFSKVDEKDR-QKYPYNTIGNVFVK-G-
+8gch FH--FCGGSLINE-NWVVTAAHC-GV-T---T-SDVVVAGEFDQG---SSSEKI--QKLKIAKVFK-NS-
+1agj --QTSATGVLIG-KNTVLTNRHIAK-FANGDPSKVSFRPSI-NTDDNGNT-E-TPYGEYEVKEILQEP-F
+8gch KYNSLTINNDITLLKLST-----AAS--FSQTVSAVCLPSASD--DFAAGTTCVTTGWG-LTRYNTPD-R
+1agj GAG-----VDLALIRLKPDQNGVSL-GDK---ISPAKIGT---SNDLKDGDKLELIGYPFDH----KVNQ
+9gch LQQASLPLL-SNTNCKKYWGTKIKDAM--ICAGASGV-SSCMGDSGGPLVCKKNGAWTLVGIVSWGSSTC
+1agj MHRSEIELTTLS---------------RGLRYY----GFTVPGNSGSGIFNSN---GELVGIHSSK----
+8gch STST---------PGVYARVTA-LVNWVQQTLAAN-
+1agj ----VSHLDREHQINYGVGIGNYVKRIINEKN---E
+The resemblance between these two sequences is well within the ‘twilight zone’. It could not be derived correctly
+from standard pairwise alignment of the two sequences alone.
+    See Weblem 6.8
+Figure 6.7 Structural superposition of γ-chymotrypsin [8GCH] (black) and S. aureus epidermolytic toxin A
+[1AGJ] (green). The sidechains of the catalytic triads are shown. Observe that the region around the active site is
+the best-conserved part of the protein.
+Box 6.4 Determination of similarity and alignment in computational chemistry
+Three related problems have applications in molecular biology.
+1. Similarity of two sets of atoms with known correspondences:
+The analogue, for sequences, is the Hamming distance: mismatches only.
+2. Similarity of two sets of atoms with unknown correspondences, but for which the molecular structure—
+specifically, the linear order of the residues—restricts the possibilities. In the case of proteins or nucleic acids
+we are limited to correspondences in which we retain the order along the chain:
+with the constraint that if k1 > k2 then it is necessary that i(k1) > i(k2) and j(k1) > j(k2). This can be thought of
+as corresponding to the Levenshtein distance, or to sequence alignment with gaps. The result of such a
+calculation is a structural alignment of parts of all of the sequences.
+3. Similarities between two sets of atoms with unknown correspondence, with no restrictions on the
+correspondence:
+282
+
+
+--- PDF page 283 ---
+This problem arises in the following important case: suppose two (or more) molecules have similar biological
+effects, such as a common pharmacological activity. It is often the case that the structures share a common
+constellation of a relatively small subset of their atoms that are responsible for the biological activity. These
+atoms are called a pharmacophore. The problem is to identify them: to do so it is useful to be able to find the
+maximal subsets of atoms from the two molecules that have a similar structure.
+via structural superposition of two or more proteins is a powerful method of sequence alignment.
+Because structure tends to diverge more conservatively than sequence during evolution, structure
+alignment is a more powerful method than pairwise sequence alignment for detecting homology and
+aligning the sequences of distantly related proteins.
+There are many available programs for pairwise and multiple structure alignment (see
+http://www.cgl.ucsf.edu/home/meng/grpmt/structalign.html).
+    See Weblems 6.9–6.10
+DALI and MUSTANG
+As proteins evolve, their structures change. Among the subtle details that evolution has strongly
+tended to conserve are the patterns of contacts between residues. That is, if two residues are in
+contact in one protein, the residues aligned with these two in a related protein are also likely to be in
+contact. This is true even in very distant homologues, and even if the residues involved change in
+size. Mutations that change the sizes of packed buried residues produce adjustments in packing of the
+helices and sheets against one another.
+L. Holm and C. Sander applied these observations to the problem of structural alignment of
+proteins. If the interresidue contact pattern is preserved in distantly related proteins then it should be
+possible to identify distantly related proteins by detecting conserved contact patterns.
+Computationally, one makes matrices of contact patterns in two proteins (this is very easy) and
+then seeks the maximal matching submatrices (this is hard). Using carefully chosen approximations,
+Holm and Sander wrote an efficient program called DALI (for Distance-matrix ALIgnment) that is
+now in common use for identifying proteins with folding patterns similar to that of a query structure.
+The program runs fast enough to carry out routine screens of the entire Protein Data Bank for
+structures similar to a newly determined structure, and even to perform a classification of protein
+domain structures from an all-against-all comparison. Holm and Sander have found several
+unexpected similarities not detectable at the level of pairwise sequence alignment.
+An example of DALI's ‘reach’ into recognition of very distant structural similarities is its
+identification of the relationship between mouse adenosine deaminase, Klebsiella aerogenes urease,
+and Pseudomonas diminuta phosphotriesterase (see Fig. 6.8).
+283
+
+
+--- PDF page 284 ---
+Figure 6.8 The regions of common fold, as determined by the program DALI by L. Holm and C. Sander, in the TIM-
+barrel proteins mouse adenosine deaminase [1FKX] (black) and Pseudomonas diminuta phosphotriesterase [1PTA]
+(green). In the alignment shown in this figure the sequences have only 13% identical residues: closer to midnight than
+to the twilight zone.
+DALI 
+is 
+available 
+over 
+the 
+web. 
+You 
+can 
+submit 
+coordinates 
+to 
+the 
+site
+http://ekhidna.biocenter.helsinki.fi/dali_lite/start and receive the set of similar structures and their
+alignments with the query.
+    See Weblem 6.11
+MUSTANG, written by A.S. Konagurthu, is a development of DALI's distance-matrix approach to
+multiple structural alignment (http://www.csse.monash.edu.au/~karun/Site/mustang.html).
+Evolution of protein structures
+Included in the 100 000 protein structures now known are several families in which the molecules
+maintain the same basic folding pattern over ranges of sequence similarity from near-identity down
+to well below 20% conservation. The serine proteinases (γ-chymotrypsin and S. aureus
+epidermolytic toxin A; Fig. 6.7) and the adenosine deaminase/phosphotriesterase family (Fig. 6.8)
+are examples.
+The general response to mutation is structural change. It is characteristic of biological systems that
+the objects we observe to have a certain form arose by evolution from related objects with similar but
+not identical form. They must, therefore, be robust, having the freedom to tolerate some variation.
+We can take advantage of this robustness in our analysis: by identifying and comparing related
+objects we can distinguish variable and conserved features, and thereby determine what is crucial to
+structure and function.
+Natural variations in families of homologous proteins that retain a common function reveal how
+structures accommodate changes in amino acid sequence. Surface residues not involved in function
+are usually free to mutate. Loops on the surface can often accommodate changes by local refolding.
+Mutations that change the volumes of buried residues generally do not change the conformations of
+individual helices or sheets, but produce distortions of their spatial assembly. The nature of the
+forces that stabilize protein structures sets general limitations on these conformational changes.
+Particular constraints derived from function vary from case to case.
+Families of related proteins tend to retain common folding patterns. However, although the
+general folding pattern is preserved, there are distortions which increase as the amino acid sequences
+progressively diverge. These distortions are not uniformly distributed throughout the structure.
+Usually, a large central core of the structure retains the same qualitative fold, and other parts of the
+structure change conformation more radically. As a simple analogy, consider the letters B and R. As
+structures, they have a common core which corresponds to the letter P. Outside the common core
+they differ: at the bottom right B has a loop and R has a diagonal stroke.
+Figure 6.9 compares spinach plastocyanin and cucumber stellacyanin. For other illustrations of
+structural comparisons of homologous proteins, and discussion of classification schemes, see
+Chapter 4 of Introduction to Protein Architecture: The Structural Biology of Proteins (Lesk, 2001;
+see Recommended reading). That book contains a large number of pictures of protein structures,
+suitable for browsing, for any reader interested in exploring the stunning variety of protein folding
+patterns.
+284
+
+
+--- PDF page 285 ---
+Figure 6.9 Two related proteins that share the same general folding pattern but which differ in detail. Circles
+represent copper ions. (a) Spinach plastocyanin [1AG6], (b) cucumber stellacyanin [1JER], (c,d) superpositions,
+showing (c) the entire structures and (d) only the well-fitting core. The main secondary structural elements of these
+proteins are two β sheets packed face-to-face. It is seen in the superposition that several strands of β sheet are
+conserved but displaced, and that the helix at the right of cucumber stellacyanin has no counterpart in the spinach
+plastocyanin structure. Even the relatively well-fitting core shows the conservation of folding topology but
+nevertheless reveals considerable distortion.
+Systematic studies of the structural differences between pairs of related proteins have defined a
+quantitative relationship between the divergence of the amino acid sequences of the core of a family
+of structures and the divergence of structure. As the sequence diverges, there are progressively
+increasing distortions in the mainchain conformation, and the fraction of the residues in the core
+usually decreases. Until the fraction of identical residues in the sequence drops below about 40–50%
+these effects are relatively modest. Almost all the structure remains in the core, and the deformation
+of the mainchain atoms is on average no more than 1.0 Å. With increasing sequence divergence, in
+most cases some regions refold entirely, reducing the size of the core, and the distortions of the
+residues remaining within the core increase in magnitude.
+A correlation between the divergence of sequence and structure applies to all families of proteins.
+Figure 6.10a shows the changes in structure of the core, expressed as the r.m.s. deviation of the
+mainchain atoms after optimal superposition; plotted against the sequence divergence, expressed as
+the percentage conserved amino acids of the core after optimal alignment. The points correspond to
+pairs of homologous proteins from many related families. (Those at 100% residue identity are
+proteins for which the structure was determined in two or more crystal environments, and the
+deviations show that crystal packing forces—and, to a lesser extent, solvent and temperature—can
+modify slightly the conformation of the proteins.) Figure 6.10b shows the changes in the fraction of
+residues in the core as a function of sequence divergence. The fraction of residues in the cores of
+distantly related proteins can vary widely: in some cases the fraction of residues in the core remains
+high, in others it can drop to below 50% of the structure.
+285
+
+
+--- PDF page 286 ---
+Figure 6.10 Relationships between divergence of amino acid sequence and three-dimensional structure of the core, in
+evolving proteins. (a) Variation of r.m.s. deviation of the core with the percent identical residues in the core. (b)
+Variation of size of the core with the percent identical residues in the core. This figure shows results calculated for 32
+pairs of homologous proteins of a variety of structural types.
+Adapted from Chothia, C. and Lesk, A.M. (1986). Relationship between the divergence of sequence and structure in
+proteins. EMBO J., 5, 823–826.
+Classifications of protein structures
+Organization of protein structures according to folding pattern imposes a very useful logical structure
+on the entries in the PDB. It affords a basis for structure-oriented information retrieval. Several
+databases derived from the PDB are built around classifications of protein structures. They offer
+useful features for exploring the protein structure world, including search for keyword or sequence,
+navigation among similar structures at various levels of the classification hierarchy, presentation of
+structure pictures, probing the data bank for structures similar to a new structure, and links to other
+sites. These databases include SCOP (Structural Classification of Proteins), CATH (Class,
+Architecture, Topology, Homologous superfamily), and FSSP/DDD (Fold classification based on
+Structure-Structure alignment of Proteins/Dali Domain Dictionary).
+SCOP
+SCOP, by A.G. Murzin, L. Lo Conte, B.G. Ailey, S.E. Brenner, T.J.P. Hubbard, and C. Chothia,
+organizes protein structures in a hierarchy according to evolutionary origin and structural similarity.
+At the lowest level of the SCOP hierarchy are individual domains, extracted from the PDB entries.
+Sets of domains are grouped into families of homologues, for which the similarities in structure,
+sequence, and sometimes function imply a common evolutionary origin. Groups of families
+containing proteins of similar structure and function, but for which the evidence for evolutionary
+relationship is suggestive but not compelling, form superfamilies. Superfamilies that share a common
+folding topology, for at least a large central portion of the structure, are grouped as folds. Finally,
+each fold group falls into one of the general classes. The major classes in SCOP are α, β, α + β, α/β,
+and miscellaneous ‘small proteins’, which often
+286
+
+
+--- PDF page 287 ---
+Box 6.5 SCOP classification of flavodoxin from C. beijerinckii
+1. Root
+SCOP
+2. Class
+α and β proteins (α/β)
+Mainly parallel β sheets (β-α-β units)
+3. Fold
+Flavodoxin-like
+Three layers, α/β/α; parallel β sheet of five strands, order 21345
+4. Superfamily
+Flavoproteins
+5. Family
+Flavodoxin-related, binds FMN (flavin mononucleotide)
+6. Protein
+Flavodoxin
+7. Species
+Clostridium beijerinckii
+have little secondary structure and are held together by disulphide bridges or ligands.
+    See Weblem 6.12
+Box 6.5 shows the SCOP classification of flavodoxin from Clostridium beijerinckii (Plate VIII.) For
+illustrations of the degree of similarities of proteins grouped together at different levels of the
+hierarchy, and discussion of other classification schemes, see Introduction to Protein Architecture,
+chapter 4 (Lesk, 2001).
+Plate VIII Flavodoxin from Clostridium beijerinckii, binding cofactor FMN [5NLL]. Large arrows represent strands
+of sheet. Placement of this structure in a hierarchical classification of protein structures according to the SCOP
+database is described in Box 6.5.
+The SCOP release of February 2009 contained 38 221 PDB entries, split into 110 800 domains.
+The distribution of entries at different levels of the hierarchy is shown in Table 6.1.
+Table 6.1 Contents of current SCOP release
+287
+
+
+--- PDF page 288 ---
+Protein structure prediction and modelling
+The observation that each protein folds spontaneously into a unique three-dimensional native
+conformation implies that nature has an algorithm for predicting protein structure from amino acid
+sequence.
+    See Weblem 6.13
+Some attempts to understand this algorithm are based solely on general physical principles; others
+are empirical, based on observations of the known amino acid sequences and protein structures. A
+proof of our understanding would be the ability to reproduce the algorithm in a computer program
+that could predict protein structure from amino acid sequence (see Box 6.6).
+A priori and empirical methods
+Many attempts to predict protein structure from basic physical principles alone try to reproduce the
+interatomic interactions in proteins, to define a computable energy associated with any conformation.
+Computationally, the problem of protein structure prediction then becomes a task of finding the
+global
+Box 6.6 Overview of modelling methods
+Nature has an algorithm that computes protein native structure from amino acid sequence. All the information
+needed to do this computation is contained in the sequence itself: proteins don't need to look things up in
+databases. We do. Many of the most effective methods for protein structure prediction make use of known
+structures of homologous proteins. Indeed, the degree of sequence similarity between a protein of unknown
+structure and its nearest homologue of known structure controls what we can achieve in prediction of the
+unknown structure, and dictates what methods to use.
+Generally speaking:
+1. If a protein of unknown structure has homologues of known structure with 40% or more identical residues in
+an optimal alignment, homology modelling methods are likely to produce a nearly complete structural model.
+The quality of the model is likely to be good enough to interpret the protein's function. (The higher the
+sequence similarity, the more accurate the model.) Mature software for homology modelling is available.
+2. If no homologue of known structure has sequence similarity to the unknown with 40% or more residue
+identity, it may still be possible to assign a general folding pattern to the protein of unknown structure. It
+should be possible to predict its secondary structure with ≈70–80% accuracy on a residue-by-residue basis.
+Many servers will apply a variety of methods to a submitted sequence.
+3. If no homologue of known structure is recognizable from the sequences, the last recourse is to use a
+prediction method general enough to handle novel folds. Such methods include both a priori and knowledge-
+based approaches. At present, the program ROBETTA, by D. Baker and colleagues, is the most effective tool
+for protein structure prediction whenever homology modelling is not applicable. It has proved quite
+successful at recent Critical Assessment of Structure Prediction (CASP) programmes.
+minimum of this conformational energy function. So far this approach has not succeeded, partly
+because of the inadequacy of the energy function, partly because the minimization algorithms tend to
+get trapped in local minima, and partly because the calculations require more computer resources
+than are available.
+Other a priori approaches to structure prediction are based on attempts to simplify the problem, to
+288
+
+
+--- PDF page 289 ---
+capture the essentials somehow.
+There is a spectrum of approaches, distributed between two extremes.
+1. Establish the most detailed and accurate model of the interatomic interactions within a protein
+and between protein and solvent. Apply molecular dynamics to simulate the motion of the system
+starting with a denatured conformation—perhaps the extended chain—and ending with
+something in the vicinity of the native state. The idea is that the physics of the problem is fairly
+well understood, down to the detailed microscopic level. The challenges are computational: how
+to simulate the system for long enough to attain the native state.
+2. Establish the least detailed and least accurate model that can give the correct answer. If one
+could identify the essentials, great computational power might not be needed. The idea is that the
+physics of the problem is not well understood, except in microscopic detail. Of course, everyone
+accepts the principles of mechanics and thermodynamics, but much of the detail is irrelevant and
+unilluminating, and this is a crucial part of the picture. Proteins just aren't that fussy: at the
+melting temperature half the molecules are in the native state, despite the very great alteration in
+the relative strengths of various terms in the free energy relative to normal physiological
+conditions. This argues for a great robustness in the determinants of structure, which is difficult
+to capture in detailed calculations, or to explain even if they were captured. It argues for a
+distinction between determinants of structure and determinants of stability, also difficult to
+explain from detailed calculations. In addition, many proteins with substantial sequence
+differences fold to very similar native states. However, in some cases there are large
+perturbations of the folding pathway.
+The field contains many people widely scattered between these endpoints, linked by a certain
+creative tension.
+It is partly a question of choosing goals. To go beyond a prediction of the native state, to account
+for trajectories, transition states, intermediates if any, and melting temperatures, a detailed simulation
+may well be necessary. If one wants a perspicuous and satisfying explanation of how amino acid
+sequence determines protein structure, then even a successful fully detailed calculation may not
+provide it.
+A proponent of molecular dynamics might argue that (1) from a successful fully detailed
+calculation one could generate a series of simplified models by making approximations that keep the
+broad picture intact and (2) a simplified model that works is—by virtue of its success—interesting,
+but may be unrealistic, or, even if realistic, incomplete. After all, there may be many simplified
+models, all of which work, but which do not agree on what is essential. The reason for suspecting
+that this may be true is the observation that folded proteins solve many problems at once:
+stereochemistry, packing, hydrogen bonding, entropy compensation. It might be possible to base a
+successful prediction on optimizing one of these features, while ignoring the others; any spoke may
+lead to the hub.
+The alternative to a priori methods are approaches based on assembling clues to the structure of a
+target sequence by finding similarities to known structures. These empirical or ‘knowledge-based’
+methods have become very powerful.
+We are coming closer and closer to saturating the set of possible folds with known structures. This
+is the stated goal of structural genomics projects (see Box 6.7). Once we have a complete set of folds
+and sequences, and powerful methods for relating them, empirical methods will provide pragmatic
+solutions of many problems. What will be the effect of this on attempts to predict protein structure a
+priori? The intellectual appeal of the problem will still be there: nature folds proteins without
+289
+
+
+--- PDF page 290 ---
+searching databases. Moreover, some methods may not merely identify the native conformation, but
+illuminate folding pathways. But it is unlikely that the problem will continue to command interest of
+the same intensity, and support of the same largesse, once a pragmatic solution has been found.
+Methods for prediction of protein structure from amino acid sequence include the following.
+• Attempts to predict secondary structure without attempting to assemble these regions in three
+dimensions. The results are lists of regions of the sequence predicted to form α helices and regions
+predicted to form strands of β sheet.
+• Homology modelling: prediction of the three-dimensional structure of a protein from the known
+structures of one or more related proteins. The results are a complete coordinate set for mainchain
+and sidechains, intended to be a high-quality model of the structure, comparable to at least a low-
+resolution experimental structure.
+• Fold recognition: given a library of known structures, determine which of them shares a folding
+pattern with a query protein of known sequence but unknown structure. If the folding pattern of
+the target protein does not occur in the library, such a method should recognize this. The results
+are a nomination of a known structure that has the same fold as the query protein, or a statement
+that no protein in the library has the same fold as the query protein.
+• Prediction of novel folds, by either a priori or knowledge-based methods. The results are a
+complete coordinate set for at least the mainchain and sometimes the sidechains also. The model is
+intended to have the correct folding pattern, but would not be expected to be comparable in quality
+to an experimental structure. D. Jones has likened the distinction between a priori modelling and
+fold recognition to the difference between an essay and a multiple-choice question in an exam.
+Critical Assessment of Structure Prediction
+Critical Assessment of Structure Prediction (CASP) organizes blind tests of protein structure
+predictions, in which participating crystallographers and NMR spectroscopists make public the
+amino acid
+Box 6.7 Structural genomics
+In analogy with full-genome sequencing projects, structural genomics has the commitment to deliver the
+structures of the complete protein repertoire. X-ray crystallographic and NMR experiments will solve a ‘dense
+set’ of proteins, such that all proteins are within homology-modelling range of one or more known experimental
+structures. More so than genomic sequencing projects, structural genomics projects combine results from
+different organisms. The human proteome is of course of special interest, as are proteins unique to infectious
+microorganisms.
+The goals of structural genomics have become feasible partly by advances in experimental techniques, which
+make high-throughput structure determination possible; and partly by advances in our understanding of protein
+structures, which define reasonable general goals for the experimental work, and suggest specific targets.
+The theory and practice of homology modelling suggests that at least 30% sequence identity between target
+and some experimental structure is necessary. This means that experimental structure determinations will be
+required for an exemplar of every sequence family, including many that share the same basic folding pattern.
+Experiment will have to deliver the structures of on the order of 10 000 domains. In the year 2006, 6547
+structures were deposited in the PDB, so the throughput rate is adequate.
+Methods of bioinformatics can help select targets for experimental structure determination that offer the
+highest payoff in terms of useful information. Goals of target selection include:
+• elimination of redundant targets: proteins too similar to known structures;
+290
+
+
+--- PDF page 291 ---
+• identification of sequences with undetectable similarity to proteins of known structure;
+• identification of sequences with similarity only to proteins of unknown function; or
+• proteins of unknown structure with ‘interesting’ functions; for example, human proteins implicated in disease,
+or bacterial proteins implicated in antibiotic resistance;
+• proteins with properties favourable for structure determination—likely to be soluble—or contain methionine
+(which facilitates solving the phase problem of X-ray crystallography).
+The 
+machinery 
+for 
+carrying 
+out 
+the 
+modelling 
+is 
+already 
+up 
+and 
+running. 
+MODBASE
+(http://modbase.compbio.ucsf.edu/) 
+and 
+the 
+SWISS-MODEL 
+repository
+(http://swissmodel.expasy.org/repository/) collect homology models of proteins of known sequence.
+sequences of the proteins they are investigating, and agree to keep the experimental structure secret
+until predictors have had a chance to submit their models. CASP runs on a 2-year cycle. Every 2
+years the sequences are published in the spring, and predictions are due in the autumn. At the end of
+the year a gala meeting brings the predictors together to discuss the current results and to gauge
+progress. (The CASP programmes were introduced briefly in Chapter 1.)
+Protein structure predictions in CASP have traditionally fallen into three main categories: (1)
+comparative modelling (in effect homology modelling), (2) fold recognition, and (3) modelling of
+novel folds (Table 6.2).
+Table 6.2 Traditional categories of protein structure prediction challenges in CASP
+CASP
+category
+Nature of target
+Comparative
+modelling
+Close homologues of known structure are available; homology modelling methods are applicable.
+Fold
+recognition
+Structures with similar folds are available, but no sufficiently close relative for homology modelling;
+the challenge is to identify structures with similar topology.
+New fold
+No structure with same folding pattern known; requires either a genuine a priori method or a
+knowledge-based method that can combine features of several structures.
+Three groups of assessors, one for each category, compared the predicted and experimental
+structures, and judged the predictions. Speakers at the end-of-year meeting include the organizers,
+the assessors, and selected predictors, including those who have been particularly successful, or who
+have an interesting novel method to present.
+As the field has progressed, the prediction challenges have varied. Secondary structure prediction
+was dropped a decade ago, when specialized methods ceased to make robust progress. Fold
+recognition has been dropped, as a priori methods did as well as specialized ones. The classical
+problems still provide essential background to understanding the state of the art, and we will
+continue to discuss them.
+Currently the categories for CASP predictions are:
+• template-based modelling: a sequence such that a homologue of known structure can be identified
+so that homology modelling methods, for instance, are applicable;
+• refinement: given a—perhaps rough—homology model, can it be improved?
+• template-free modelling: no suitable homologue identified, a priori method necessary;
+• contact-assisted structure modelling: given, as a hint, a small number of pairs of residues that are
+neighbours, can this information improve prediction quality?
+• chemical-shift guided modelling: given the chemical shifts measured by NMR, can this
+information improve prediction quality?
+291
+
+
+--- PDF page 292 ---
+• molecular-replacement structure modelling: given crystallographic diffraction data (phases not
+measured), can an a priori model be of adequate quality to place the model in the unit cell and
+solve the structure?
+• prediction of residue–residue contact patterns;
+• identification of disordered regions;
+• prediction of binding sites;
+• quality assessment of models, in ignorance of the correct structure.
+The latest CASP programme took place in 2012. There were over 100 targets. In all categories, 213
+groups of predictors, and 69 servers, submitted a total of 66 297 models. This was almost equal to
+the number of entries in the PDB!
+Many predictions are prepared by groups of researchers who study the results generated by their
+computer programs, and select and edit them before submission. In addition, the target sequences are
+sent to web servers that return predictions without human intervention. The CAFASP, or Critical
+Assessment of Fully Automated Structure Prediction, programme monitors the quality of these
+predictions. It is thereby possible to determine to what extent successful procedures could be made
+fully automatic. There are three challenges:
+Human against protein
+CASP
+Computer against protein
+CAFASP
+Human against computer
+CASP versus CAFASP
+A separate programme of blind tests of prediction evaluates methods for predicting protein–
+protein interactions, or ‘docking’. This is CAPRI, or Critical Assessment of PRedicted Interactions.
+Both CASP and CAPRI held assessment meetings in 2012–2013.
+Structure predictions at recent CASP programmes have showed continued improvements. Indeed,
+improvements in knowledge-based methods originally developed for prediction of novel folds
+threaten to supersede traditional methods for fold recognition, such as threading, that make explicit
+reference to libraries of complete structures.
+For the most part progress has been incremental rather than spectacular, with one notable
+exception: David Baker's group predicted and refined the structure of a small (70-residue) protein
+from Thermus thermophilus, producing a model that deviated by 1.59 Å from the X-ray structure!
+Results at CAPRI show that complexes between partners that do not undergo major
+conformational changes can now be predicted from the structures of the components. Large
+conformational changes upon complex formation still present difficulties. However, progress could
+be seen in at least one case, the trimeric TBE envelope protein.
+For both CASP and CAPRI the best results are very impressive. An observer of this scene once
+commented some years ago that protein structure prediction had advanced to the point that ‘failure
+can no longer be guaranteed’. Things are now much better than that. However, consistency in quality
+of prediction is still the challenge.
+Secondary structure prediction
+It seems obvious that (1) it should be easier to predict secondary structure than tertiary structure and
+(2) to predict tertiary structure a sensible way to proceed would be first to predict the helices and
+strands of sheet and then to assemble them. Whether or not these propositions are correct, many
+people have believed in, and acted upon, them. Given the amino acid sequence of a protein of
+292
+
+
+--- PDF page 293 ---
+unknown structure, they produce secondary structure predictions, the assignment of regions in the
+sequence as helices or strands of sheet.
+To assess the quality of a secondary structure prediction, classify the residues in the experimental
+three-dimensional structure into three categories (helix = H, strand = E (extended), and other = -).
+The percentage of residues predicted correctly is denoted Q3. At the 2000 CASP programme, the
+PROF server by B. Rost achieved a good prediction of a domain from the Thermus aquaticus
+mismatch-repair protein MutS. The value of Q3 for Rost's prediction is 81%:
+                           10        20        30        40        50
+                            |         |         |         |         |
+Amino acid sequence ALVEDPPLKVSEGGLIREGYDPDLDALRAAHREGVAYFLELEERERERTG
+Prediction          HH–––EEE–-HHHHHHHHHH-HHHHHHHHHHHHHHH-
+Experiment          -E–––-E–-HHHHHHHHHHHHHHHHHHHHHHHHHHHH-
+                           60        70        80        90       100
+                            |         |         |         |         |
+Amino acid sequence IPTLKVGYNAVFGYYLEVTRPYYERVPKEYRPVQTLKDRQRYTLPEMKEK
+Prediction          -EEEEEEEEEEEEEEEE–––EEEEEEEE-EEEE-HHHHHH
+Experiment          –EEEEE–EEEEEEEHHHHHH–-EEEEE–EEEEE-HHHHHH
+                          110       120
+                            |         |
+Amino acid sequence EREVYRLEALIRRREEEVFLEVRERAKRQ
+Prediction          HHHHHHHHHHHHHHHHHHHHHHHHHHHH-
+Experiment          HHHHHHHHHHHHHHHHHHHHHHHHHHH-
+Figure 6.11 shows the experimental structure, with the predicted secondary structures distinguished.
+Except for a short 310 helix, the secondary structural elements are predicted correctly except for
+some minor discrepancies in the positions at which they start and end. (Other scoring schemes that
+check for segment overlap are less sensitive to end effects.) The quality of this result is very high but
+not exceptionally rare. This target was classified as being of medium difficulty by the assessors at
+CASP4 (the fourth CASP meeting, held in 2000). At present, PROF is running at an average
+accuracy of Q3 ≈77%.
+Figure 6.11 The structure from the T. aquaticus mismatch-repair protein MutS [1EWQ]. (a) The regions predicted by
+the PROF server of Rost to be helical are shown as wider ribbons. The prediction missed only a short 310 helix, at the
+top left of the picture. (b) The regions predicted to be in strands are shown as wider ribbons.
+The most powerful methods of secondary structure prediction are based on artificial neural
+networks.
+Artificial neural networks
+Artificial neural networks are a class of general computational structures based loosely on the
+anatomy and physiology of biological nervous systems. They have been applied successfully to a
+wide variety of pattern recognition, classification, and decision problems.
+293
+
+
+--- PDF page 294 ---
+A single neuron, in the computational scheme, is a node in a directed graph, with one or more
+entering connections designated as input, and a single leaving connection called the output:
+In the physiological metaphor, one says that the neuron ‘fired’ if the output is 1, and that the neuron
+‘didn't fire’ if the output is 0. Simulated neurons can differ in the number of input and output
+connections, and in the formula for deciding whether to fire (see Box 6.8).
+To form a network, assemble several neurons and connect the outputs of some to the inputs of
+others. Some nodes contain connections that provide input to the entire network; some deliver output
+information from the network to the outside world; and others, that do not interact directly with the
+outside, are called hidden layers.
+An unlimited degree of complexity is available by assembling and connecting neurons, and by
+varying
+Box 6.8 Logic of neural networks
+For a single neuron, a discrete decision process governing the output has a geometric interpretation in terms of
+lines and planes. The neuron in the following figure has two inputs. If we interpret the inputs as the coordinates
+of a point (x, y) in the plane, the neuron ‘decides’ on which side of a line the input point lies. The output will be 1
+if and only if x+ y ≤ 2; that is, if the point is below and to the left of the line x + y = 2.
+A neural network is specified by the topology of its connections, and the weights and decision formulas of its
+nodes. A network can make more complex decisions than a single neuron. Thus, if one neuron with two inputs
+can decide on which side of a line a point lies, three neurons can select points that lie within a triangle:
+294
+
+
+--- PDF page 295 ---
+Neural networks are more powerful and robust if the output is a smoothly varying function of the inputs. Such
+networks can perform more general kinds of computations and are better at pattern recognition. Also, for training
+the network it is useful if the output is a differentiable function of the parameters. To this end a sharp threshold
+function for the output of a neuron is replaced by a smoothed-out step, or sigmoidal, function:
+the strengths of the connections. That is, instead of taking a simple sum of inputs, i1 + i2 + i3, take a
+weighted sum—for instance, 10i1 + 5i2 + i3—which would make the neuron most sensitive to input 1
+and least sensitive to input 3. Biologically, this may correspond to changing the strengths of
+synapses.
+A property of a neural network that gives it great power is that the weights may be regarded as variables, and a
+calculation or learning process may determine the weights appropriate for a particular decision or pattern identifier. To
+train a network, feed the system sets of sample input for which the desired output is known, and compare the output
+with the correct answer. If the observed output differs from the desired one, adjust the parameters. The topology of the
+network remains invariant during the training process, although of course setting a weight to 0 has the effect of
+detaching an input.
+The type of neural network that has been applied to secondary structure prediction is shown in
+Figure 6.12.
+295
+
+
+--- PDF page 296 ---
+Figure 6.12 A neural network applicable to secondary structure prediction contains three layers:
+1. The input layer sees a sliding 15-residue window in the sequence. That is, it treats a 15-residue region, predicts the
+secondary structure of the central residue (marked by an arrow, at the top), and then moves the window one residue
+along the amino acid sequence and repeats the process. To each of the 15 residues in the current window there
+correspond 20 nodes in the input layer of the network, one of which will be triggered according to the amino acid
+in that position.
+2. A hidden layer of ≈100 units connects the input with the output. Each node of the hidden layer is connected to all
+input and output units; not all the connections are shown.
+3. The output layer consists of only three nodes, that signify prediction that the central residue in the window be in a
+helix, strand, or other conformation.
+A major advance in secondary structure prediction occurred with the application of evolutionary
+information, the recognition that multiple sequence alignment tables contain much more information
+than individual sequences. The conservation of secondary structure among related proteins means
+that the sequence–structure correlations are much more robust when a family as a whole is taken into
+account. Most neural network-based methods for secondary structure prediction now feed the input
+layer not simply with the identities of the amino acid at successive positions, but with a profile
+derived from a multiple sequence alignment.
+It has also proved useful to run two neural networks in tandem, to make use of observed
+correlations among conformations of residues at neighbouring positions. Predictions of the states of
+several successive residues by one network similar to the one shown in Figure 6.12 are combined by
+a second network into a final prediction.
+A test of the maturity of a prediction method is whether it can be made fully automatic. (See the
+section on CASP.) Some computational methods require human intervention and editing of results.
+Others, including PROF, the system that predicted the secondary structure of MutS, are fully
+automatic.
+Homology modelling
+Model building by homology is a useful technique for predicting the structure of a target protein of
+known sequence, when the target protein is related to at least one other protein of known sequence
+and structure. If the proteins are closely related, the known protein structures—called the parents—
+can serve as the basis for a model of the target. Although the quality of the model will depend on the
+degree of similarity of the sequences, it is possible to estimate this quality before experimental
+testing (see Fig. 6.10). In consequence, knowing how good a model is necessary for the intended
+application permits intelligent prediction of the probable success of the exercise.
+Steps in homology modelling are outlined here.
+296
+
+
+--- PDF page 297 ---
+1. Align the amino acid sequences of the target and the protein or proteins of known structure. It
+will generally be observed that insertions and deletions lie in the loop regions between helices
+and sheets.
+2. Determine mainchain segments to represent the regions containing insertions or deletions.
+Stitching these regions into the mainchain of the known protein creates a model for the complete
+mainchain of the target protein.
+3. Replace the sidechains of residues that have been mutated. For residues that have not mutated,
+retain the sidechain conformation. Residues that have mutated tend to keep the same sidechain
+conformational angles, and could be modelled on this basis. However, computational methods
+are now available to search over possible combinations of sidechain conformations.
+4. Examine the model—both by eye and by programs—to detect any serious collisions between
+atoms. Relieve these collisions, as far as possible, by manual manipulations.
+5. Refine the model by limited energy minimization. The role of this step is to fix up the exact
+geometrical relationships at places where regions of mainchain have been joined together, and to
+allow the sidechains to wriggle around a bit to place themselves in comfortable positions. The
+effect is really only cosmetic: energy refinement will not fix serious errors in such a model.
+To a great extent, this procedure produces ‘what you get for free’ in that it defines the model of the
+protein of unknown structure by making minimal changes to its known relatives. In some cases it is
+possible to make substantial improvements. A rule of thumb (referring again to Fig. 6.10) is that if
+two or more sequences have at least 40–50% identical amino acids in an optimal alignment of their
+sequences, the procedure described will produce a model of sufficient accuracy to be useful for many
+applications. If the sequences are very distantly related, neither the procedure described nor any other
+currently available method will produce a model, correct in detail to atomic resolution, of the target
+protein from the structure of its relative.
+    See Weblem 6.14
+In most families of proteins the structures contain relatively constant regions and more variable ones.
+A single parent structure will permit reasonable modelling of the conserved portion of the target
+protein, but may fail to produce a satisfactory model of the variable portion. From only one target
+and one parent sequence, it will not be easy to even predict which are the variable and constant
+regions. A more favourable situation occurs when several related proteins of known structure provide
+a basis for modelling a target protein. These reveal the regions of constant and variable structure in
+the family. The observed distribution of structural variability among the parents dictates an
+appropriate distribution of constraints to be applied to the model.
+SWISS-MODEL hosts a website that will accept the amino acid sequence of a target protein,
+determine whether a suitable parent or parents for homology modelling exist, and, if so, deliver a set
+of coordinates for the target. SWISS-MODEL was developed by T. Schwede, M.C. Peitsch, and N.
+Guex, now at the Geneva Biomedical Research Institute.
+An example of the automatic prediction by SWISS-MODEL is the prediction of the structure a
+neurotoxin from red scorpion (Buthus tamulus) from the known structure of the neurotoxin from the
+related scorpion North African yellow scorpion (Androctonus australis hector). These two proteins
+have 52% identical residues in their sequence alignment. With such a close degree of similarity it is
+not surprising that the model fits the experimental result very closely, even with respect to the
+sidechain conformation (Fig. 6.13).
+297
+
+
+--- PDF page 298 ---
+Figure 6.13 SWISS-MODEL predicts the structure of red scorpion neurotoxin [1DQ7] (green) from a closely related
+protein [1PTX] (black). The prediction was done automatically. Observe that most of the buried sidechains have not
+mutated, and have very similar conformations. Some sidechains on the surface have different conformations, and the
+mainchain of the C-terminus is in a different position (upper left). Not shown is a network of disulphide bridges, which
+constrain the structure. However, a model of this high quality would be expected, for two such closely related proteins,
+even without the extra constraints.
+    See Weblem 6.15
+Fold recognition
+Searching a sequence database for a probe sequence and searching a structure database with a probe
+structure are problems with known solutions. The mixed problems—probing a sequence database
+with a structure, or a structure database with a sequence—are less straightforward. They require a
+method for evaluating the compatibility of a given sequence with a given folding pattern.
+The goal is to abstract the essence of a set of sequences or structures. Other proteins that share the
+pattern are expected to adopt similar structures.
+Three-dimensional profiles
+We have discussed patterns and profiles derived from multiple sequence alignments and their
+application to detection of distant homologues. One way to take advantage of available structural
+information to improve the power of these methods is a type of profile derived from the available
+sequences and structures of a family of proteins.
+J.U. Bowie, R. Lüthy, and D. Eisenberg analysed the environments of each position in known
+protein structures and related them to a set of preferences of the 20 amino acids for these structural
+contexts.
+Given a protein structure, classify the environment of each amino acid in three separate categories:
+1. its mainchain hydrogen-bonding interactions; that is, its secondary structure;
+2. the extent to which it is buried within or on the surface of the protein structure;
+3. the polar/nonpolar nature of its environment.
+The secondary structure may be one of three possibilities: helix, sheet, and other. A sidechain is
+considered buried if the accessible surface area is less than 40 Å2, partially buried if the accessible
+surface area is between 40 and 114 Å2, and exposed if the accessible surface area is greater than 114
+Å2. The fraction of sidechain area covered by polar atoms is measured. The authors define six classes
+on the basis of accessibility and polarity of the surroundings. Sidechains in each of these six classes
+may have any of three types of secondary structure assignment: helix, sheet, or neither. This gives a
+total of 18 classes.
+Assigning each sidechain to one of 18 categories makes it possible to write a coded description of
+298
+
+
+--- PDF page 299 ---
+a protein structure as a message in an alphabet of 18 letters, called a 3D structure profile. Algorithms
+developed for sequence searches can thereby be applied to ‘sequences’ of encoded structures. For
+example, one could try to align two distantly related sequences by aligning their 3D structure profiles
+rather than their amino acid sequences. The 3D profile method translates protein structures into one-
+dimensional probe (or probe-able) objects that do not explicitly retain either the sequence or structure
+of the molecules from which they were derived.
+Next, how can one relate the 3D structure profile to the set of known protein folding patterns? It is
+clear that some amino acids will be unhappy in certain kinds of sites; for example, a charged
+sidechain would prefer not to be buried in an entirely nonpolar environment. Other preferences are
+not so clear-cut, and it is necessary to derive a preference table from a statistical survey of a library
+of well-refined protein structures.
+Suppose now that we are given a sequence and want to evaluate the likelihood that it takes up, say,
+the globin fold. From the 3D structure profile of the known sperm whale myoglobin structure we
+know the environment class of each position of the sequence. We must consider all possible
+alignments of the sequence of the protein of unknown structure with the 3D structure profile of
+myoglobin. Consider a particular alignment, and suppose that the residue in the unknown sequence
+that corresponds to the first residue of myoglobin is phenylalanine. The environment class in the 3D
+structure profile of the first residue of sperm whale myoglobin is: exposed, no secondary structure.
+One can score the probability of finding phenylalanine in this structural environment class from the
+table of preferences of particular amino acids for this 3D structure profile class. (The fact that the
+first residue of the sperm whale myoglobin sequence is actually valine is not used, and in fact that
+information is not directly accessible to the algorithm. Sperm whale myoglobin is represented only
+by the sequence of environment classes of its residues, and the preference table is averaged over
+proteins with many different folding patterns.) Extension of this calculation to all positions and to all
+possible alignments (not allowing gaps within regions of secondary structure) gives a set of scores
+that measures how well the given unknown sequence, in each possible alignment, fits the sperm
+whale myoglobin sequence–structure profile. The best score, over all tested alignments, can be
+calibrated to decide whether the sequence and folding pattern are likely to correspond.
+A particular advantage of this method is that it can be automated, with a new sequence being
+scored against every 3D profile in the library of known folds, in essentially the same way as a new
+sequence is routinely screened against a library of known sequences.
+Use of three-dimensional profiles to assess the quality of structures
+The 3D profile derived from a structure depends only very indirectly on the amino acid sequence. It
+is therefore meaningful to ask not only whether it is possible to identify other amino acid sequences
+compatible with the given fold, but whether the score of a 3D profile for its own parent sequence is a
+measure of the compatibility of the sequence with the structure. Naturally, if real sequences did not
+generally appear to be compatible with their own structures, credibility in the method as capturing a
+valid connection between sequence and structure would be severely impaired. Two interesting results
+are observed. (1) protein structures determined correctly do fit their own profiles well, although
+other, related, proteins, may give higher scores. The profile is abstracting properties of the family,
+not of individual sequences. (2) When a sequence does not match a profile computed from an
+experimental structure of that protein there is likely to have been an error in the structure
+determination. The positions in the profile that do not match can identify the regions of error.
+299
+
+
+--- PDF page 300 ---
+Threading
+Threading is a method for fold recognition. Given a library of known structures, and a sequence of a
+query protein of unknown structure, does the query protein share a folding pattern with any of the
+known structures? The fold library could include some or all of the PDB, or even hypothetical folds.
+The basic idea of threading is to build many rough models of the query protein, based on each of
+the known structures and using different possible alignments of the sequences of the known and
+unknown proteins. This systematic exploration of the many possible alignments gives threading its
+name: imagine trying out all alignments by pulling the query sequence gently through the three-
+dimensional framework of any known structure. Gaps must be allowed in the alignments, but if the
+thread is thought of as being sufficiently elastic the metaphor of threading survives.
+Both threading and homology modelling deal with the three-dimensional structure induced by an
+alignment of the query sequence with known structures of homologues. Homology modelling
+focuses on one set of alignments and the goal is a very detailed model. Threading explores many
+alignments and deals with only rough models usually not even constructed explicitly.
+Homology modelling
+Threading
+First, identify homologues
+Try all possible folds
+Then, determine optimal alignment
+Try many possible alignments
+Optimize one model
+Evaluate many rough models
+Successful fold recognition by threading requires:
+1. a method to score the models, so that we can select the best one;
+2. a method for calibrating the scores, so that we can decide whether the best-scoring model is
+likely to be correct.
+Several approaches to scoring have been tried. One of the most effective is based on empirical
+patterns of residue neighbours, as derived from known structures. First, we observe the distribution
+of interresidue distances in known protein structures, for all 20 × 20 pairs of residue types. For each
+pair, derive a probability distribution, as a function of the separation in space, and in the amino acid
+sequence. For instance, for the pair Leu–Ile, consider every Leu and Ile residue in known structures,
+and, for each Leu–Ile pair, record the distance between their Cβ atoms, and the difference in their
+positions in the sequence. Collecting these statistics permits estimation of how well the distributions
+observed in a model agree with the distributions in known structures.
+The Boltzmann equation relates probabilities and energies. Usual applications of the Boltzmann
+equation start from an energy function and predict a probability distribution. (A standard example is
+the prediction of the density of the atmosphere as a function of altitude from the gravitational
+potential energy function of the air molecules.) For threading, one turns this on its head, and derives
+an energy function from the probability distribution. This energy function is then used to score
+threading models.
+For each structure in the fold library, the procedure finds the assignment of residues that produces
+the lowest energy score. The most effective algorithms for finding optimal sequence alignments are
+based on a mathematical technique called dynamic programming (See Chapter 5).
+Although threading is an alignment problem, it can't be solved by dynamic programming, because
+of the nonlocal interactions.
+Fold recognition at CASP in 2000
+300
+
+
+--- PDF page 301 ---
+The best methods for fold recognition are consistently effective. These include, but are not limited to,
+methods based on threading.
+Figures 6.14 and 6.15 show a prediction by A.G. Murzin, and another prediction by Bonneau,
+Tsai, Ruczinski, and Baker, of targets from the 2000 CASP programme. Both proteins were of
+unknown function and came from H. influenzae.
+Figure 6.14 Prediction of structure of H. influenzae, hypothetical protein. (a) The folding pattern of the target. (b)
+Prediction by A.G. Murzin. (c) Folding pattern of the closest homologue of known structure: an N-ethylmaleimide-
+sensitive fusion protein involved in vesicular transport (PDB entry 1NSF). The topology of Murzin's prediction is
+closer to the target than that of the closest single parent.
+Figure 6.15 Prediction by Bonneau, Tsai, Ruczinski, and Baker of another hypothetical protein from H. influenzae,
+based on glycine N-methyltransferase [1XVA]. Black, experimental structure; green, prediction. Note that much of the
+prediction superposes well on the experimental structure, and that the parts that do not superpose well have similar
+local structures but improper orientation and packing against the main body of the protein.
+Prediction of coiled coils by hidden Markov models
+Approaches to prediction of coiled-coiled regions in proteins include:
+• profile methods using running windows (PCOILS);
+• profile methods, running windows, with residue correlations (PairCoil2);
+• HMMs (MARCOIL).
+MARCOIL gave the best overall performance in controlled tests.
+    See weblem 6.16
+301
+
+
+--- PDF page 302 ---
+MARCOIL uses a HMM trained on a database containing nine classes of proteins:
+• Tropomyosins
+• Myosins
+• Intermediate filaments
+• Dyneins
+• Kinesins
+• Laminins
+• SNARE proteins
+• Transcription factors
+• Others
+Submitting to MARCOIL the chicken proto-oncogene protein c-fos, and selecting default
+parameters:
+>P11939 – FOS_CHICK Proto-oncogene protein c-fos – Gallus gallus (Chicken).
+MMYQGFAGEYEAPSSRCSSASPAGDSLTYYPSPADSFSSMGSPVNSQDFCTDLAVSSANF
+VPTVTAISTSPDLQWLVQPTLISSVAPSQNRGHPYGVPAPAPPAAYSRPAVLKAPGGRGQ
+SIGRRGKVEQLSPEEEEKRRIRRERNKMAAAKCRNRRRELTDTLQAETDQLEEEKSALQA
+EIANLLKEKEKLEFILAAHRPACKMPEELRFSEELAAATALDLGAPSPAAAEEAFALPLM
+TEAPPAVPPKEPSGSGLELKAEPFDELLFSAGPREASRSVPDMDLPGASSFYASDWEPLG
+AGSGGELEPLCTPVVTCTPCPSTYTSTFVFTYPEADAFPSCAAAHRKGSSSNEPSSDSLS
+SPTLLAL
+The program returned the prediction shown in Figure 6.16. The program is quite confident that the
+protein contains a coiled-coil domain, between residues ≈125– ≈ 200.
+Figure 6.16 Prediction by MARCOIL of a coiled-coil domain in chicken c-fos.
+Prediction of transmembrane helices and signal sequences by hidden Markov
+models
+Some fold-recognition procedures strive for sufficient generality to identify all known domain
+structures. Others are specialized to particular types of folds. The best algorithms for prediction of
+transmembrane helices and coiled coils make use of HMMs, as will be discussed.
+A simple approach to prediction of membrane proteins involves looking for amino acid segments
+15–30 residues in length that are rich in hydrophobic residues. However, signal peptides also contain
+hydrophobic helices: the signal sequence typically comprises a positively charged n-region, followed
+by a helical hydrophobic h-region, followed by a polar c-region. Methods for recognizing
+transmembrane helices in amino acid sequences tend to pick up the h-regions of signal peptides as
+false positives. Methods for recognizing signal peptides in amino acid sequences tend to pick up
+transmembrane helices as false positives.
+Käll, Krogh, and Sonnhammer trained HMMs to test simultaneously for transmembrane helices
+and signal peptides. The goals are to find both at the same time, to discriminate between them in the
+results, and to predict not only the positions of the transmembrane helices but the locations—
+cytoplasmic or interior—of the loops. They called their method PHOBIUS.
+PHOBIUS is the most successful algorithm currently available for recognizing signal peptides and
+helical transmembrane proteins, and for predicting the orientation of the transmembrane segments.
+PHOBIUS is capable of distinguishing h-domains of signal peptides from transmembrane helices:
+the number of false classifications of signal peptides was 3.9%, and the number of false
+302
+
+
+--- PDF page 303 ---
+classifications of transmembrane helices was 7.7%. These results represent a substantial
+improvement over previous methods. It is interesting that addressing the two problems at once
+proved to be more successful than treating them separately.
+Web resources: Membrane proteins
+PHOBIUS (L. Käll, A. Krogh, and E. Sonnhammer)
+http://phobius.cgb.ki.se/
+PHDhtm (B. Rost)
+http://www.predictprotein.org
+Membrane Protein Explorer (S. White)
+http://blanco.biomol.uci.edu/mpex/
+Membrane proteins of known structure
+http://blanco.biomol.uci.edu/mpstruc/listAll/list
+The Membrane Protein Data Bank (P. Raman, V. Cherezov, and
+M. Caffrey)
+http://www.mpdb.tcd.ie/
+Protein Data Bank of Transmembrane Proteins (G.E. Tusnády,
+Z. Dosztányi, and I. Simon)
+http://pdbtm.enzim.hu/
+Conformational energy calculations and molecular dynamics
+A protein is a collection of atoms. The interactions between the atoms create a unique state of
+maximum stability. Find it, that's all!
+The computational difficulties in this approach arise because (1) the model of the interatomic
+interactions is not complete or exact and (2) even if the model were exact we face an optimization
+problem in a large number of variables, involving nonlinearities in the objective function and the
+constraints, creating a very rough energy surface with many local minima. Like a golf course with
+many bunkers, such problems are very difficult.
+The interactions between atoms in a molecule can be divided into:
+1. primary chemical bonds: strong interactions between atoms that must be close together in space;
+these are regarded as a fixed set of interactions that are not broken or formed when the
+conformation of a protein changes, but are equally consistent with a large number of
+conformations;
+2. weaker interactions that depend on the conformation of the chain. These can be significant in
+some conformations and not in others: they affect sets of atoms that are brought into proximity by
+different folds of the chain.
+The conformation of a protein can be specified by giving the list of atoms in the structure, their
+coordinates, and the set of primary chemical bonds between them (this can be read off, with only
+slight ambiguity, from the amino acid sequence). Terms used in the evaluation of the energy of a
+conformation typically include:
+• Bond stretching: ∑bonds Kr(r − r0)2. Here r0 is the equilibrium interatomic separation and Kr is the
+force constant for stretching the bond. r0 and Kr depend on the type of chemical bond.
+• Bond angle bend: ∑angles Kθ(θ − θ0)2. For any atom i that is chemically bonded to two (or more)
+other atoms j and k, the angle i − j − k has an equilibrium value θ0 and a force constant for bending
+Kθ.
+• Other terms to enforce proper stereochemistry penalize deviations from planarity of certain
+groups, or enforce correct chirality (handedness) at certain centres.
+303
+
+
+--- PDF page 304 ---
+• Torsion angle: ∑dihedrals ½Vn[1+cosnϕ] For any four connected atoms—i bonded to j bonded to k
+bonded to l—the energy barrier to rotation of atom l with respect to atom i around the j–k bond is
+given by a periodic potential. Vn is the height of the barrier to internal rotation; n barriers are
+encountered during a full 360° rotation. (For instance, for ethane n = 3.) The mainchain
+conformational angles ϕ, ψ, and ω are examples of torsional rotations (see Fig. 6.2).
+• Van der Waals interactions:
+. For each pair of nonbonded atoms i and j the first term
+accounts for a short-range repulsion and the second term for a long-range attraction between them.
+The parameters A and B depend on atom type.
+• Hydrogen bonds:
+. The hydrogen bond is an weak chemical/electrostatic interaction
+between two polar atoms. Its strength depends on distance and also on the bond angle. This
+approximate hydrogen-bond potential does not explicitly reflect the angular dependence of
+hydrogen-bond strength; other potentials attempt to account for hydrogen-bond geometry more
+accurately.
+• Electrostatics: QiQj/(εRij). For each pair of charged atoms i and j, Qi and Qj are the effective
+charges on the atoms, Rij is the distance between them, and ε is the dielectric ‘constant’. This
+formula applies only approximately to media that are not infinite and isotropic, including proteins.
+• Solvent: interactions with the solvent, water, and cosolutes such as salts and sugars, are crucial for
+the thermodynamics of protein structures. Attempts to model the solvent as a continuous medium,
+characterized primarily by a dielectric constant, are approximations. With the increase in available
+computer power it is now possible to include solvent explicitly, simulating the motion of a protein
+in a box of water molecules.
+There are numerous sets of conformational energy potentials of this or closely related forms, and a
+great deal of effort has gone into the tuning of parameter sets. The energy of a conformation is
+computed by summing these terms over all bonded and nonbonded atoms.
+The potential functions satisfy necessary but not sufficient conditions for successful structure
+prediction. One test is to take the right answer—an experimentally determined protein structure—as
+a starting conformation, and minimize the energy starting from there. Most high-quality energy
+functions produce a minimized conformation that is about 1 Å (r.m.s. deviation) away from the
+starting model. This can be thought of as a measure of the resolution of the force field. Another test
+has been to take deliberately misfolded proteins and minimize their conformational energies, to see
+whether the energy value of the local minimum in the vicinity of the correct fold is significantly
+lower than that of the local minimum in the vicinity of an incorrect fold. Such tests reveal that
+multiple local minima cannot be reliably distinguished from the correct one on the basis of calculated
+conformational energies.
+Indeed, attempts to predict the conformation of a protein by minimization of the conformational
+energy have so far not provided a general method for predicting protein structure from amino acid
+sequence. Molecular dynamics offers a way to overcome the problems of getting trapped in local
+minima, and of the absence of a good static model for protein–solvent interactions. In molecular
+dynamics calculations, the protein plus explicit solvent molecules are treated—via the force field—
+by classical Newtonian mechanics. It is true that this permits exploration of a much larger sector of
+phase space. However, as an a priori method of structure prediction it has still not succeeded
+consistently. However, these are calculations that are extremely computationally intensive and here,
+perhaps more than anywhere else in this field, advances deriving from the increased power of
+processors will have an effect.
+304
+
+
+--- PDF page 305 ---
+Is lack of computational power the only reason for lack of success in prediction of protein
+structure by simulation of the folding pathway? There have been several attempts to apply ‘brute
+force’, including the IBM Blue Gene supercomputer project and the distributed computing approach
+of Folding, which makes use of contributions of computer power from over a million participating
+CPUs. (A similar approach has been applied to drug design.) In 2003, an IBM group folded a 20-
+residue peptide from a fully extended conformation to a state within ≈1.5 Å r.m.s. deviation of the
+native state. (See Box 6.9.)
+In the meantime, molecular dynamics, if supplemented by experimental data, regularly makes
+extremely important contributions to structure determinations by both X-ray crystallography
+(usually) and NMR (always). How is molecular dynamics integrated into the process of structure
+determination? For any conformation, one can measure the consistency of the model with the
+experimental data. In the case of crystallography, the experimental data are the absolute values of the
+Fourier transform of the electron density of the molecule. In the case of NMR, the experimental data
+provide constraints on the distances
+Box 6.9 Scaling of resource requirements for molecular dynamics calculations
+Fully detailed molecular dynamics calculations perform a series of individual time steps of duration 10−15 s (= 1
+fs). The computer time required for an individual time step scales approximately as N lnN, where N is the length
+of the protein. The time required for a protein to fold depends on a number of features, but, for purposes of a
+‘back-of-the-envelope’ calculation, it varies with the length N of the protein as ≈N2/3.
+Therefore the total computer resources required to fold a protein may be expected to vary approximately as
+N5/3 lnN. This means that if it takes 3 months (of uninterrupted time on a supercomputer running flat out) to fold
+a protein of length N, it would be expected to require over 1.5 years, on the same system, to fold up a protein of
+length 3N residues.
+between certain pairs of residues. But in both X-ray crystallography (usually) and NMR the
+experimental data underdetermine the protein structure. To solve a structure one must seek a set of
+coordinates that minimizes a combination of the deviation from the experimental data and the
+conformational energy. Molecular dynamics is successful at determining such coordinate sets: the
+dynamics provides adequate coverage of conformation space, and the bias derived from the
+experimental data channels the calculation quite effectively towards the correct structure.
+Molecular dynamics revolutionized protein crystallography. It has transformed what used to be a
+lengthy, labour-intensive process of manual building and rebuilding of models into electron
+densities, into a ‘batch’ job turned over to a computer, and requiring much less overall time.
+ROSETTA
+ROSETTA is a program by D. Baker and colleagues that predicts protein structure from amino acid
+sequence by assimilating information from known structures. At recent CASP programmes,
+ROSETTA has showed consistent success on targets in both the Fold Recognition and Novel Fold
+categories. At present, it leads the field by several lengths. It represents a major breakthrough.
+ROSETTA predicts a protein structure by first generating structures of fragments using known
+structures, and then combining them. First, for each contiguous region of three and nine residues,
+instances of that sequence and related sequences are identified in proteins of known structure. For
+fragments this small there is no assumption of homology to the target protein. The distribution of
+305
+
+
+--- PDF page 306 ---
+conformations of the fragments serves as a model for the distribution of possible conformations of
+the corresponding fragments of the target structure.
+ROSETTA explores the possible combinations of fragments using Monte Carlo calculations (see
+Box 6.10). The energy function has terms reflecting compactness, paired β sheets, and burial of
+hydrophobic residues. The procedure carries out 1000 independent simulations, with starting
+structures chosen from the fragment conformation distribution pattern generated previously. The
+structures that result from these simulations are clustered, and the centres of the largest clusters
+presented as predictions of the target
+Box 6.10 Monte Carlo algorithms
+Monte Carlo algorithms are used very widely in protein structure calculations to explore conformations
+efficiently, and in many other optimization problems to search for the minimum of a complicated function.
+Simple minimization methods based on moving ‘downhill’ in energy fail because the calculation gets trapped in
+a local minimum far from the native state.
+In general, Monte Carlo methods make use of random numbers to solve problems for which it is difficult to
+calculate the answer exactly. The name was invented by J. von Neumann, referring to the applications of
+random-number generators in the famous casino in Monaco.
+To apply Monte Carlo techniques to find the minimum of a function of many variables—for instance, the
+minimum energy of a protein as a function of the variables that define its conformation—suppose that the
+configuration of the system is specified by the variables x, and that for any values of these variables we can
+calculate the energy of the conformation, E(x). (x stands for a whole set of variables: perhaps the set of atomic
+coordinates of a protein, or the mainchain and sidechain torsion angles.)
+Then the Metropolis procedure (invented in 1953, allegedly at a dinner party in Los Alamos) prescribes:
+1. generate a random set of values of x, to provide starting conformation. Calculate the energy of this
+conformation, E = E(x);
+2. perturb the variables, x → x′, to generate a neighbouring conformation;
+3. calculate the energy of the new conformation, E(x′);
+4. decide whether to accept the step, to move x → x′, or to stay at x and try a different perturbation:
+a. if the energy has decreased, so E = E(x) > E(x′)—that is, the step went downhill—always accept it. The
+perturbed conformation becomes the new current conformation: set x′ = x and E = E(x′);
+b. if the energy has increased or stayed the same; that is E(x) ≤ E(x′)—in other words the step goes uphill
+—sometimes accept the new conformation. If Δ = E(x′) − E(x), accept the step with a probability
+exp[−Δ/(kT)], where k is Boltzmann's constant and T is an effective temperature;
+5. return to step 2.
+It is step 4b that is the ingenious one. It has the potential to get over barriers; out of traps in local minima. The
+effective temperature, T, controls the chance that an uphill move will be accepted. T is not the physical
+temperature at which we wish to predict the protein conformation, but simply a numerical parameter that controls
+the calculation.
+For any temperature, the higher the uphill energy difference, the less likely that the step will be accepted. For
+any value of E, if T is low, then E(x)/(kT) will be high, and exp[−E(x)/(kT)] will be relatively low. If T is high
+then E(x)/(kT) will be low, and exp[−E(x)/(kT)] will be relatively high. The higher the temperature, the more
+probable the acceptance of an uphill move. This relatively simple idea has proved extremely effective, with
+successful applications including but by no means limited to protein structure calculations.
+Simulated annealing is a development of Monte Carlo calculations in which T varies; first it is set high to
+allow efficient exploration of conformations and then it is reduced to drop the system into a low-energy state.
+structure. The idea is that a structure that emerges many times from independent simulations is likely
+306
+
+
+--- PDF page 307 ---
+to have favourable features.
+Figure 6.17 shows successful predictions by ROSETTA of two targets from the 2000 CASP
+programme.
+Figure 6.17 Predictions by ROSETTA of (a) H. influenzae, hypothetical protein and (b) the N-terminal half of
+domain 1 of human DNA repair protein Xrcc4. Panel b shows a selected substructure containing the N-terminal 55 out
+of 116 residues. Solid lines, experimental structures; broken lines, predicted structures.
+ROBETTA (http://robetta.bakerlab.org) is a web server designed to integrate and implement the
+best of the protein structure prediction tools. The central pipeline of the software involves first the
+parsing of a submitted amino acid sequence of a protein of unknown structure into putative domains.
+Then homology modelling techniques are applied to those domains for which suitable parents of
+known structure exist, and the de novo methods developed by Baker and coworkers to other
+domains. In addition, the user will receive the results of other prediction methods based on software
+developed outside the ROBETTA group. These include, for example, predictions of secondary
+structure, coiled coils, and transmembrane helices.
+LINUS
+LINUS, or Local Independently Nucleated Units of Structure, is a program for prediction of protein
+structure from amino acid sequence by G.D. Rose and R. Srinivasan. It is a completely a priori
+procedure, making no explicit reference to any known structures or sequence–structure relationships.
+LINUS folds the polypeptide chain in a hierarchical fashion, first producing structures of short
+segments and then assembling them into progressively larger fragments.
+An insight underlying LINUS is that the structures of local regions of a protein—short segments
+of residues consecutive in the sequence—are controlled by local interactions within these segments.
+During natural protein folding, each segment will preferentially sample its most favourable
+conformations. However, these preferred conformations of local regions, even the one that will
+ultimately be adopted in the native state, are below the threshold of stability. Local structure will
+form transiently and break up many times before a suitable interacting partner stabilizes it. But in the
+computer one is free to anticipate the results. In a LINUS simulation, favourable structures of local
+fragments, as determined by their frequent recurrence during the simulation, transmit their preferred
+conformations as biases that influence subsequent steps. The procedure applies the principle of a
+rachet to direct the calculation along productive lines.
+LINUS begins by building the polypeptide from the sequence as an extended chain. The
+307
+
+
+--- PDF page 308 ---
+simulation proceeds by perturbing the conformations of a succession of randomly chosen three-
+residue segments and evaluating the energies of the results. Structures with steric clashes are rejected
+out of hand; other energetic contributions are evaluated only in terms of local interactions. A Monte
+Carlo procedure (see Box 6.10) is used to decide whether to accept a perturbed structure or revert to
+its predecessor. LINUS performs a large number of such steps. It periodically samples the
+conformations of the residues to accumulate statistics of structural preferences.
+Subsequent stages in the simulation assemble local regions into larger fragments, using the
+conformational biases of the smaller regions to guide the process. The window within the sequence
+controlling the range of interactions is progressively opened, from short local regions to larger ones,
+and ultimately to the entire protein.
+The LINUS representation of the protein folding process is realistic in essential respects, although
+approximate. All nonhydrogen atoms of a protein are modelled, but the energy function is
+approximate and the dynamics simplified. The energy function captures the ideas of (1) steric
+repulsion preventing overlap of atoms, (2) clustering of buried hydrophobic residues, (3) hydrogen
+bonding, and (4) salt bridges.
+LINUS is generally successful in getting correct structures of small fragments (sized between a
+supersecondary structure and a domain), and in some cases can assemble them into the right global
+structure. Figure 6.18 shows the LINUS prediction of the C-terminal domain of rat endoplasmic
+reticulum protein ERp29, one of the targets of the 2000 CASP programme.
+Figure 6.18 A LINUS prediction of the C-terminal domain of rat endoplasmic reticulum protein ERp29. Black,
+experimental structure; green, prediction.
+Assignment of protein structures to genomes
+A genome sequence is the complete statement of a potential life. Assignment of structures to gene
+products is a first step in understanding how organisms implement their genomic information.
+We want to understand the structures of the molecules encoded in a genome, their individual
+activities and interactions, and the organization of these activities and interactions in space and time
+during the lifetime of the organism. We want to understand the relationships among the molecules
+encoded in the genome of one individual, and their relationships to those of other individuals and
+other species.
+For individual proteins, knowing their structure is essential for understanding the mechanism of
+their function and interactions. For entire organisms, knowing the structures tells us how the
+repertoire of possible protein folds is called upon, and how it is distributed among different
+functional categories in different species. For interspecies comparisons, protein structures can reveal
+relationships invisible in highly diverged sequences.
+Several methods have been applied to structure assignment.
+• Experimental structure determination: the best way of all!
+308
+
+
+--- PDF page 309 ---
+• Detection of homology in sequences: sophisticated sequence comparison methods such as PSI-
+BLAST or HMMs can identify relationships between proteins, both within an organism and
+between species. If the structure of any homologue is known experimentally, at least the general
+fold of the family can be inferred.
+• Fold-recognition methods can assign folds to some proteins even in the absence of evidence for
+homology.
+• Specialized techniques detect membrane proteins and coiled coils.
+The results of structure assignments provide partial inventories of proteins in the different genomes,
+and, for the subset of proteins with sufficiently close relatives of known structure, detailed three-
+dimensional models. The degree of coverage of assignments is changing very fast, primarily because
+of the rapid growth of sequence and structural data. The table contains a current scorecard:
+From GeneQuiz, http://jura.ebi.ac.uk:8765/ext-genequiz/.
+What do these results tell us about the usage of the potential protein repertoire? A comparison of
+folding patterns of proteins deduced from the genomes of an archaeon, M. jannaschii, a bacterium,
+H. influenzae, and a eukaryote, S. cerevisiae, revealed that, out of a total of 148 folds, 45 were
+common to all three species, and, by implication, probably common to most forms of life. The
+archaeon M. jannaschii had the fewest unshared folds (see Fig. 6.19).
+Figure 6.19 Shared protein folds in an archaeon, M. jannaschii, a bacterium, H. influenzae, and a eukaryote, S.
+cerevisiae.
+After Gerstein, M. (1997). A structural census of genomes: comparing bacterial, eukaryotic, and archaeal genomes in
+terms of protein structure. J. Mol. Biol., 274, 562–576.
+An inventory of the structures common to all three species showed that the five most common
+folding patterns of domains are (1) the P-loop-containing NTP hydrolase fold, (2) the NAD-binding
+domain, (3) the TIM-barrel fold, (4) the flavodoxin fold, and (5) the thiamin-binding fold. Plate IX
+shows the structure and a simplified schematic diagram of the topology of the first of these (see also
+Weblem 6.2). All are of the α/β type.
+309
+
+
+--- PDF page 310 ---
+Plate IX The thiamin-binding domain from yeast pyruvate decarboxylase. Thiamin-binding domains, identified by
+M. Gerstein as one of the five most common folding patterns, have been found in archaea, bacteria, and eukarya. (a)
+Three-dimensional structure. (b) Schematic topology diagram (See Chapter 6).
+Prediction of protein function
+The cascade of inference should ideally flow as sequence → structure → function. However,
+although we can be confident that similar amino acid sequences will produce similar protein
+structures, the relationship between structure and function is more complex. Proteins of similar
+structure and even of similar sequence can be recruited for very different functions. Very widely
+diverged proteins may retain similar functions. Moreover, just as many different sequences are
+compatible with the same structure, proteins with different folds can carry out the same function (see
+Fig. 6.20).
+Figure 6.20 Relationships among sequence, structure, and function:
+• similar sequences can be relied on to produce similar protein structures, with divergence in structure increasing
+progressively with the divergence in sequence;
+• conversely, similar structures are often found with very different sequences. In many cases the relationships in a
+family of proteins can be detected only in the structures, the sequences having diverged beyond the point of our
+being able to detect the underlying common features;
+• similar sequences and structures often produce proteins with similar functions, but exceptions abound;
+• conversely, similar functions are often carried out by nonhomologous proteins with dissimilar structures; examples
+include the different families of proteinases, sugar kinases, and lysyl-tRNA synthetases.
+As proteins evolve they may:
+• retain function and specificity;
+• retain function but alter specificity;
+• change to a related function, or a similar function in a different metabolic context; or
+• change to a completely unrelated function.
+310
+
+
+--- PDF page 311 ---
+Divergence of function: orthologues and paralogues
+The family of chymotrypsin-like serine proteinases includes closely related enzymes in which
+function is conserved, and widely diverged homologues that have developed novel functions (see
+Box 6.11).
+Trypsin, a digestive enzyme in mammals, catalyses the hydrolysis of peptide bonds adjacent to a
+positively charged residues, Arg or Lys. (A specificity pocket, a surface cleft in the active site, is
+complementary in shape and charge distribution to the sidechain of the residue adjacent to the
+scissile bond.) Enzymes with similar sequence, structure, function, and specificity exist in many
+species, including human, cow, Atlantic salmon, and even Streptomyces griseus (Fig. 6.21). The
+similarity of the S. griseus enzyme to vertebrate trypsins suggests a lateral gene transfer. For the
+three vertebrate enzymes, each pair of sequences has 64% or more identical residues in the
+alignment, and the bacterial homologue has 30% or more identical residues with the others; all have
+very similar structures. These enzymes are orthologues, or homologous proteins in different species.
+(Other bacterial homologues are very different in sequence.)
+Figure 6.21 Alignment of sequences of trypsins from human, cow, Atlantic salmon, and S. griseus. In the lines under
+the blocks, uppercase letters indicate absolutely conserved residues and lowercase letters indicate residues conserved in
+three of the four sequences (in most but not all cases S. griseus is the exception).
+Evolution has also created related enzymes in the same species with different specificities.
+Chymotrypsin and pancreatic elastase are other digestive enzymes that, like trypsin, cleave peptide
+bonds, but next to different residues: chymotrypsin cleaves adjacent to
+Box 6.11 Evolutionary relationships among proteins: homologues, orthologues, and
+paralogues
+• Proteins are homologous if and only if they are descended from a common ancestor.
+• Homologues in different species, descended from a single ancestral protein, are orthologues.
+• Homologues in the same species, arising from gene duplication, are paralogues. Their descendants are also
+paralogues. After gene duplication, one of the resulting pairs of proteins can continue to provide its customary
+function, releasing the other to diverge, to develop new functions. Therefore, inferences of function from
+homology are more secure for orthologues than for paralogues.
+large flat hydrophobic residues (Phe, Trp) and elastase cleaves adjacent to small residues (Ala). The
+change in specificity is effected by mutations of residues in the specificity pocket. Another
+homologue, leukocyte elastase (the object of database searching in Chapter 4) is essential for
+phagocytosis and defence against infection. Under certain conditions it is responsible for lung
+311
+
+
+--- PDF page 312 ---
+damage leading to emphysema.
+Homologous proteins in the same species are called paralogues. Trypsin, chymotrypsin and
+pancreatic elastase function in digestion of food. Another set of paralogues mediates the blood
+coagulation cascade. Although all are proteinases, the requirements for activation and control are
+very different for digestion and blood coagulation, and the families have diverged and become
+specialized for these respective roles.
+Many proteolytic enzymes are synthesized in inactive forms, and mature by peptide cleavage to
+expose the active site. (It would just not do to have rogue proteases running around in cells.)
+However, in trypsin, activation involves cleavage of a 15-residue N-terminal peptide. In the
+activation of thrombin the protein is doubly cleaved, not near the initial N-terminus, and ends up as
+about half the size of its precursor. Also, trypsin and thrombin interact with different sets of
+inhibitors and thrombin, but not trypsin, is subject to allosteric control.
+Some homologues of trypsin have developed entirely new functions, as described here.
+• Haptoglobin is a chymotrypsin homologue that has lost its proteolytic activity. It acts as a
+chaperone, preventing unwanted aggregation of proteins. Haptoglobin forms a tight complex with
+haemoglobin fragments released from erythrocytes, with several useful effects including
+preventing the loss of iron.
+• The serine proteinase of rhinovirus has developed a separate, independent function, of forming the
+initiation complex in RNA synthesis, using residues on the opposite side of the molecule from the
+active site for proteolysis. This is not a modification of an active site: it is the creation of a new
+one.
+• Subunits homologous to serine proteinases appear in plasminogen-related growth factors. The role
+of these subunits in growth factor activity is not yet known, but it cannot be a proteolytic function
+because essential catalytic residues have been lost.
+• An antifreeze glycoprotein in antarctic fish is homologous to chymotrypsin.
+• The insect ‘immune’ protein scolexin is a distant homologue of serine proteinases that induces
+coagulation of haemolymph in response to infection.
+In the chymotrypsin family we see a retention of structure with similar functions in closely related
+proteins, and progressive divergence of function in some but not all distantly related ones.
+The message is that the overall folding pattern of a protein is an unreliable guide to predicting
+function, especially for very distant homologues. For correct prediction of function in distantly
+related proteins it is necessary to focus on the active site. For example:
+• J.F. Bazan and R. Fletterick, and, independently, P. Argos, G. Kamer, M.J. Nicklin, and E.
+Wimmer, recognized that viral 3C proteinases are chymotrypsin homologues, despite the fact that
+the serine of the catalytic triad is changed to cysteine;
+• W.R. Taylor and L. Pearl recognized the distant homology between retroviral and aspartic
+proteinases from conserved Asp, Thr, and Gly residues.
+Like motif libraries such as PROSITE, such approaches go directly from signature patterns of active-
+site residues in the sequence to conserved function, even in the absence of an experimental structure.
+In focusing on the active site there is opportunity to use methods similar to those used in drug
+design to predict ligands that might bind to the proteins. These would be putative substrates. It will
+be important to make use of other experimental information available, such as tissue-distribution
+patterns of expression, and catalogues of proteins that interact. Attempts to measure function
+312
+
+
+--- PDF page 313 ---
+directly, for instance by means of gene knockouts, will sometimes provide an answer, but are
+unproductive if the knocked-out phenotype is lethal or if there are multiple proteins that share a
+function.
+It seems likely that the contribution of bioinformatics to prediction of protein function from
+sequence and structure will not be a simple algorithm that provides an unambiguous answer. (In
+contrast there is reasonable hope that there will someday be a program that will predict structure
+from sequence.) More reasonable aims are to suggest productive experiments and to contribute to the
+interpretation of the results. These are not unworthy goals.
+Drug discovery and development
+It is a sobering experience to ask a classroom full of students how many would be alive today
+without at least one course of drug therapy during a serious illness. (This ignores diseases escaped
+entirely, through vaccination.) Or to ask the students how many of their surviving grandparents
+would be leading lives of greatly reduced quality without regular treatment with drugs. The answers
+are eloquent. They engender fear of the new antibiotic-resistant strains of infectious microorganisms.
+It is necessary to develop new drugs, which, in combination with genomic information that can
+improve their specificity and reduce side effects, will extend and improve our lives.
+However, it is not easy to be a drug. For a chemical compound to qualify as a drug, it must be:
+1. safe,
+2. effective,
+3. stable: both chemically and metabolically,
+4. deliverable: the drug must be absorbed and make its way to its site of action,
+5. available: by isolation from natural sources or by synthesis,
+6. novel; that is, patentable.
+Medicinal chemists apply an equivalent of the duck test: only if it walks like a drug, swims like drug,
+and quacks like a drug, then maybe it will be a drug. Steps in the development of new drug are
+summarized in Box 6.12. The process involves
+Box 6.12 Steps in the development of a new drug
+1. Understanding the biological nature and symptoms of a disease. Is it caused by
+an infectious agent: bacterium, virus, other?
+a poison of nonbiological origin?
+a mutant protein in the patient?
+2. Developing an assay. Given a candidate drug, can you test it by:
+its effect on the growth of a microorganism?
+its effect on cells grown in tissue culture?
+its effect on animals that suffer the disease or an analogue?
+its binding to a known protein target?
+3. Is an effective agent from a natural source known from folklore? If so, go to 6.
+4. Identify a specific molecular target, usually a protein. Determine its structure experimentally or by model
+building.
+313
+
+
+--- PDF page 314 ---
+5. Get a general idea of what kind of molecule would fit the site on the target. Is there a known substrate or
+inhibitor?
+6. Identification of a lead compound: any chemical that shows the desired biological activity to any measurable
+extent. A lead compound is a bridgehead; finding lead compounds and subsequently modifying them are
+quite different kinds of activities.
+7. Development of the lead compound: extensive study of variants of the compound, with the goal of building in
+all the desired properties and enhancing the biological activity.
+8. Preclinical testing, in vitro and with animals, to prove effectiveness and safety. At this point the drug may be
+patented. (In principle, one wants to delay patenting as long as possible because of finite lifetime of the
+patent. Many lengthy steps still remain before the drug can be sold.)
+9. In the USA: submission of an Investigational New Drug Application to the Federal Drug Administration
+(FDA). This is followed by three phases of clinical trials.
+10. Phase I clinical trials. Test the compound for safety on healthy volunteers. Determine how the body deals
+with the drug: how it is absorbed, distributed, metabolized, and excreted. The results suggest a safe dosage
+range.
+11. Phase II clinical trials. Test the compound for efficacy against a disease on approximately 200 volunteer
+patients. Does it cure the disease or alleviate symptoms? Calibrate the dosage.
+12. Phase III clinical trials. Test approximately 2000 patients to demonstrate conclusively that the compound is
+better than the best known treatment. These are randomized double-blind tests, either against a placebo or
+against a currently used drug. These trials are very expensive; it is not uncommon to kill a project before
+embarking on this step, if the phase II trials expose side effects or unsatisfactory efficacy.
+13. File a New Drug Application with the FDA, containing supporting data proving safety and efficacy. FDA
+approval allows selling the drug. Only now can the drug bring in income.
+14. Phase IV studies, subsequent to FDA approval and marketing, involve continued monitoring the effects of the
+drug, reflecting the wider experience in its use. New side effects may turn up in some classes of patients,
+leading to restrictions on the use of the drug, or even possibly its recall.
+scientific research, clinical testing to prove safety and efficacy, and very important economic and
+legal aspects involving patent protection and estimation of returns on the very high investment that is
+required.
+To develop a drug, first you must choose a target disease. You will want to study what is known
+about its possible causes, its symptoms, its genetics, its epidemiology, its relationship to other
+diseases—human and animal—and all known treatments. Assuming that the potential utility of a
+drug justifies the major time, expense, and effort required to develop one, you are now ready to
+begin.
+You must develop a suitable assay with which to detect success in the initial phase. If a known
+protein is the target, binding can be measured directly. A potential antibacterial drug can be tested by
+its effect on growth of the pathogen. Some compounds might be tested for effects on eukaryotic cells
+grown in tissue culture. If a laboratory animal is susceptible to the disease, compounds can be tested
+on animal subjects. However, compounds may have different effects on animals and humans. For
+example, tamoxifen, now a drug used widely against breast cancer, was originally developed as a
+birth-control pill. In fact it is a fine contraceptive for rats but promotes ovulation in women.
+The lead compound
+A goal in the early stages of drug development is identification of one or more lead compounds. A
+lead compound is any substance that shows the biological activity you seek. It demonstrates that a
+compound exists that possesses at least some of the desired properties.
+314
+
+
+--- PDF page 315 ---
+    See Weblem 6.17
+There are a number of ways to find lead compounds.
+1. Serendipity: penicillin is the classic example.
+2. Survey of natural sources. ‘Grind and find’ is the medicinal chemist's motto. Sometimes
+traditional remedies point to a source of active compounds. For example, digitalis was isolated
+from leaves of the foxglove, which had been used for congestive heart failure. (Why not just
+continue to use the traditional remedy? Isolation of the active principle makes it possible to
+regulate dosage, and to explore variants.)
+3. Study of what is known about substrates, inhibitors, and the mechanism of action of a protein
+implicated in a disease, and select potentially active compounds from these properties.
+4. Drugs effective against similar diseases.
+5. Large-scale screening. Techniques of combinatorial chemistry permit parallel testing of large sets
+of related compounds. A special technique applicable to polypeptides is phage display.
+6. Occasionally, from side effects of existing drugs. Minoxidil (2,4-diamino-6-piperidino-
+pyrimidine-3-oxide), originally designed as an antihypertensive, was found to induce hair growth.
+Viagra, originally developed as a heart medicine, is another example.
+7. Screening. The US National Cancer Institute has screened tens of thousands of compounds.
+(Screening of variants is also very important after a lead compound has been found.)
+8. Computer screening and ab initio computer design.
+Discovery of a lead compound triggers other kinds of research activities. Many variants of the lead
+compound must be tested to improve its effectiveness, and to build in other essential properties. For
+instance, a compound that binds to its target is no good as a drug unless it can get there.
+Deliverability of a drug to a target within the body requires the capacity to be absorbed and
+transmitted. It requires metabolic stability. It requires the proper solubility profile: a drug must be
+sufficiently water-soluble to be absorbed, but not so soluble that it is excreted immediately; it must
+(in most cases) be sufficiently lipid-soluble to get across membranes, but not so lipid-soluble that it
+is merely taken up by fat stores.
+Improving on the lead compound: quantitative structure-activity relationships
+For any compound with pharmacological activity, similar compounds typically exhibit related
+activity but vary in potency and specificity. Starting with a lead compound, chemists must survey
+large numbers of related molecules to optimize desired pharmacological properties. To search
+systematically, it would be very useful to understand how the variation in structural and
+physicochemical features in the family of molecules is correlated with pharmacological properties.
+The problem is that there are very many possible descriptors for characterizing molecules. These
+include structural features such as the nature and distribution of substituents; experimental features
+such as solubility in aqueous and organic solvents, or dipole moments; and computed features such
+as charges on individual atoms.
+Quantitative structure-activity relationships (QSARs) provide methods for predicting the
+pharmacological activity of a set of compounds from the relationship between molecular features and
+pharmacological activity, based on test cases. The method was developed by C. Hansch and
+colleagues in the 1960s and has been of very widespread use.
+315
+
+
+--- PDF page 316 ---
+C. Hansch, J. McClarin, T. Klein, and R. Langridge applied QSAR methods to study inhibitors of
+carbonic anhydrase. Carbonic anhydrase is an enzyme that catalyses the reaction CO2 + H2O ⇌ H+ +
+HCO3
+−. Clinical applications of carbonic anhydrase inhibitors include diuretics, treatment of high
+interocular pressure in glaucoma by supressing secretion of aqueous humour (the fluid within the
+eye), and antiepileptic agents. High-altitude climbers take carbonic anhydrase inhibitors for relief of
+symptoms of acute mountain sickness.
+Measurements of carbonic anhydrase binding of 29 phenylsulphonamides:
+where X stands for a set of substituents on the ring that are variable in both structure and position,
+showed that the binding constant was related to Hammett electronic substituent constant σ, a measure
+of the electron-withdrawing or -donating strength of the substituent; the octanol–water partition
+coefficient P of the unionized form of the ligand; and the location (ortho or meta) of the substitution:
+in which K = binding constant, I1 = 1 if X is meta and 0 otherwise and I2 = 1 if X is ortho and 0
+otherwise. The substituents X were of the form -alkyl, -COO-alkyl, or -CONH-alkyl.
+This type of correlation has two implications.
+1. A large number of compounds can be screened in the computer and those predicted to be the best
+can then be tested experimentally.
+2. It is possible to visualize the binding site from analysis of the parameters:
+• the positive coefficient of σ, implying that electron-withdrawing substituents are favoured,
+suggests that the ionized form of the –SO2NH2 moiety binds to the Zn2+ ion in the carbonic
+anhydrase active site;
+• the positive coefficient of logP suggests a hydrophobic interaction between the protein and
+ligand;
+• the negative coefficients of I1 and I2 suggest steric clashes with substituents in the meta or
+ortho positions.
+Structures of ligated carbonic anhydrase confirm these conclusions.
+Bioinformatics in drug discovery and development
+Computing and information retrieval contribute to several steps in drug discovery and development
+projects. These include target identification, design, analysis, and enhancement of ligands, and
+selection and in silicio screening of libraries. Information systems are also important in the
+organization of the theoretical predictions, the experimental designs, and analysis of the data. D.
+Searls has called the intimate interplay between theory and experiment ‘wet–dry cycles’.
+Target selection
+To develop a drug against a disease it is necessary to select a protein linked to the disease in a way
+that suggests that it would be therapeutically useful to affect its function or expression. New high-
+throughput data sources, particularly of genome sequences and protein expression patterns, provide a
+rich source of material for identifying potential drug targets. Differential genomics and proteomics,
+316
+
+
+--- PDF page 317 ---
+the comparisons of healthy and diseased humans or animals, can pinpoint which particular protein is
+missing, dysfunctional, improperly regulated, or expressed only in affected cells. Comparisons
+between antibiotic-resistant and -susceptible strains of bacteria can elucidate the mechanism of
+resistance. Information about protein–protein complexes make it possible to target not just a single
+protein, but a specific protein–protein interaction.
+Knowledge of prokaryotic and viral genomes supports identification of targets for drugs against
+infectious disease. Of particular interest are metabolic pathways specific to microorganisms, and the
+proteins that participate in them. A drug affecting such a target is less likely to interact with a human
+homologue with consequent side effects. Proteins with sequences similar across bacterial clades offer
+the possibility of broad-spectrum antibiotics. Conversely, gene duplications warn of potential
+redundant functions, with concomitant insensitivity to inactivation of the target. Knowledge of the
+relative speed of evolution of different proteins, including horizontal gene transfer rates, indicates the
+expected stability of a therapy against development of resistant strains.
+Commitment to a target by a large pharmaceutical company involves a very heavy investment of
+resources. The profit expected to flow from a successful drug exerts a very important influence on
+the choice of targets actively pursued. Analysis of the history of drugs that currently yield high
+profits suggests that prediction of economic returns is not a very precise science. Now, even
+generously supported bioinformatics efforts are much less expensive than laboratory work. The
+possibility that calculations will improve predictions and enhance profit is behind the espousal of
+bioinformatics by the pharmaceutical industry, in addition to the purely scientific contributions of
+bioinformatics to drug discovery. This contribution to economic forecasting is especially important
+when a company considers high-risk projects, such as those aimed at developing a drug against a
+new class of targets. Such projects must compete with lower-risk activities such as trying to improve
+on a competitor's success.
+Prediction of a lead compound
+Methods for predicting ligands suitable as lead compounds for drug discovery can be divided into
+inductive and deductive approaches.
+Inductive methods depend on correlations between known affinities of some test set of
+compounds, and molecular features characterizing entire libraries of potential ligands. These features
+include structural properties such as size, geometry, charge distributions, and specific functional
+groups including hydrogen-bond donors and acceptors. They include general ‘drug-like’ qualities
+such as solubility in aqueous and organic solvents, easy route of administration, appropriate
+distribution in body tissues, and metabolic turnover rate. The relevant characteristics of compounds
+are compiled into a feature vector used to compare the overall match between compounds of known
+affinity and a complete library. The requirements for organization, encoding, storage, and searching
+of information about small molecules has created a new field, chemoinformatics, which complements
+bioinformatics in applications to drug discovery.
+Deductive methods are applicable if the binding site on the target protein is known or can be
+inferred. However, because binding affinity and specificity are only two requirements for a lead
+compound—admittedly essential ones—it is necessary to combine deductive methods with the
+correlation to desirable properties as in the purely inductive approach. Binding assays on purified
+systems give little idea of the behaviour of a compound as a drug in its biological context.
+Bioinformatics has a contribution to make in integrating the information available from molecular
+and cell biology, and physiology and pharmacology, to help bridge the gap between in vitro
+317
+
+
+--- PDF page 318 ---
+experiments and in vivo therapeutic activities.
+Molecular modelling in drug discovery
+A central problem in drug discovery is the identification of a compound that will bind tightly and
+specifically to a target protein. Tight binding is necessary for efficacy at low concentrations.
+Specificity is necessary to minimize side effects.
+If the structure of the target is known from experiment, it is possible to apply molecular modelling
+directly to ligand design. If the structure of the target is unknown, a picture of the binding site must
+be created from indirect evidence and ligand design is correspondingly more difficult. Ligand design
+without the target structure is like trying to catch a bank robber from eyewitness descriptions; ligand
+design to a target of known structure is like trying to catch the bank robber from a clear image on a
+CCTV recording.
+Goals of molecular modelling applied to drug design include:
+• ideally: suggestion of a lead compound that already shows reasonable affinity and specificity. This
+is a rare achievement;
+• analysis of compounds known to bind to the target. Understanding the important interactions
+serves as a guide to design and testing of potential ligands, and for selecting structural features to
+build into combinatorial synthesis of libraries. In the case of antibacterial or antiviral projects, a
+model of the protein–ligand complex can give some idea of how easy it would be for the pathogen
+to develop resistance by mutations that lower the affinity;
+• pharmacophore identification is the identification of common substructures of many compounds
+that share a pharmacological activity, or at least that bind to the same site on a protein. The
+hypothesis is that there is some common constellation of atoms within the structures that is
+responsible. The computational problem of extracting the pharmacophore from a set of
+compounds is similar to that of structural alignment of a set of homologous proteins. Although
+typical ligands are much smaller than proteins, the combinatorial problems are more severe
+because one has lost the linear ordering of the residues in proteins (see Box 6.4). Inferred
+pharmacophore properties are integrated with QSAR methods to filter libraries of compounds for
+candidate ligands;
+• in silicio screening: predicting of affinities, even qualitatively, suggests candidate ligands from a
+library of chemical structures. (See Box 6.13.) The results can be either used for setting priorities
+in experimental tests or integrated into broader approaches to computer screening of libraries on
+the basis of features correlated with favourable chemical and pharmacological properties. Many
+readers will be aware of the harnessing of screensavers worldwide to search for potential drugs.2
+Over 3.5 million computers joined the project. They contributed a cumulative total of over 320
+000 years of CPU power;
+• lead compound improvement: once a compound is identified that binds to a target protein, albeit
+with low affinity and specificity, interactive modelling can suggest modifications that are expected
+to enhance the fit. Synthesis and testing of compounds predicted to show enhanced affinity, and
+even solution of crystal structures of their complexes, can guide the search for improved
+compounds. The modelling is usually coupled with combinatorial chemistry and experimental
+library screening.
+318
+
+
+--- PDF page 319 ---
+Box 6.13 Docking: prediction of ligand geometry and affinity
+Docking is prediction of ligand binding. It includes prediction both of binding of small molecules to proteins and
+of protein–protein binding. The goals of docking are (1) to identify the binding site on the protein, and determine
+the position and orientation of the ligand, and (2) to estimate the affinity.
+1. Identification of mode of binding. Docking of small molecules to proteins requires matching of the ligand to
+a site on a protein of known structure. The binding site may be known in advance, or it may be necessary to
+try many different modes of apposition of the ligand and protein to predict the optimal binding site.
+The basis for docking is the identification of complementarity in size, shape, and distribution of charge,
+polarity, and potential for hydrophobic and hydrogen-bonding interactions. A complication is the possibility
+of flexibility in both partners. Small organic molecules containing many single bonds have high degree of
+conformational flexibility. (Drug designers love structures with rings and bridges.) Many proteins show
+conformational changes upon binding ligands. Therefore the experimental structure of an unligated protein
+cannot be assumed to serve as a rigid target for docking. However, allowing for flexibility complicates
+docking calculations substantially.
+Water molecules at interfaces present another difficulty. They can contribute to the surface
+complementarity, and provide bridging hydrogen bonds.
+2. Estimation of affinity. It is difficult to estimate absolute affinities. However, comparative docking can
+provide useful information about relative affinities. A suitable scoring function that can predict the ranking of
+different ligands in approximate order of affinity allows selectivity, and setting of priorities, in experimental
+testing. Such scoring schemes can be ab initio—based on the kinds of force fields described in the section
+entitled Conformational energy calculations and molecular dynamics—or empirical. Conversely, comparative
+docking of one ligand to many proteins can predict the specificity of the interaction.
+Docking calculation
+Information provided
+1 ligand–1 protein
+Mode of binding, estimate of affinity
+Many ligands–1 protein
+Ranking of affinities of a series of potential ligands
+1 ligand–many proteins
+Prediction of specificity
+Docking and scoring are important steps in the filter between a total potential library and testing at the bench. A
+typical narrowing of the funnel might run as follows:
+Overall library size
+1012 compounds
+After general filters
+105
+Docking
+104
+Scoring
+103
+Visual
+10–100 for experimental testing
+Case Studies 6.1 and 6.2 illustrate the range of chemical and molecular biological techniques
+involved in drug development, and show some interesting similarities and contrasts. They concern
+well-known families of analgesic drugs—colloquially, painkillers—typified by morphine and
+aspirin. The two groups of compounds have different mechanisms of actions, different potencies, and
+different spectra of side effects.
+CASE STUDY 6.1 Development of analgesic drugs based on morphine*
+Morphine and codeine are natural alkaloids contained in the latex of the opium poppy (Papaver somniferum)
+(Fig. 6.22). The pharmacological effects have been known since antiquity. Modern chemistry has explored and
+319
+
+
+--- PDF page 320 ---
+developed many variants. Heroin was synthesized in 1874 (Fig. 6.22). More hydrophobic than the natural
+compounds, heroin traverses the blood–brain barrier more readily, giving it a more rapid onset of action.
+Both codeine and heroin are metabolized to produce morphine, the active form. Codeine is therefore a natural
+example of a prodrug, an inactive agent that is converted to an active one. The conversion depends on a
+cytochrome, CYP2D6, which is absent in 5–10% of white people and 1–3% of African-Americans and Asians.
+Morphine and codeine have been applied in medicine and surgery as analgesics, or drugs to relieve severe
+pain. Side effects include passivity and euphoria, and physical dependence and addiction. Drug developers have
+therefore long sought a compound that would relieve pain without the harmful side effects. Of course there was
+no guarantee that this would be possible.
+Synthetic variants of morphine allow correlation of biological effects with chemical structure.
+One approach is to try to simplify the structure. The goals are (1) to infer the minimal pharmacophore
+required for activity and (2) if possible, to dissect the parts of the structure that relieve pain away from those
+causing addiction. Morphine, codeine, and heroin are rigid compounds containing five fused rings. Levorphanol
+differs from morphine by loss of the bridging oxygen (i.e. removal of the tetrahydrofuran ring) and one of the
+hydroxyl groups (Fig. 6.23). It is a more potent analgesic than morphine but still addictive. Benzomorphan,
+cyclazocine, and pentazocine break the cyclohexene ring (Fig. 6.24). The addictive effects of these compounds
+are less than those of morphine and levorphanol. Demerol, which opens the cyclohexene ring, and methadone,
+which has no fused rings, retain analgesic activity, sharing even smaller common substructures with morphine.
+From these structures one can infer the pharmacophore shown in Figure 6.25.
+Figure 6.22 Morphine, codeine, and heroin have structures differing only in substituents at two positions:
+Compound
+R
+R′
+Morphine
+–H
+–H
+Codeine
+–CH3
+–H
+Heroin
+–COCH3
+–COCH3
+Figure 6.23 The structure of levorphanol.
+Figure 6.24 The structures of benzomorphan (R = CH3), cyclazocine (R = CH2-cp, where cp = cyclopropane),
+and pentazocine (R = CH2CH = C(CH3)2).
+320
+
+
+--- PDF page 321 ---
+Figure 6.25 Pharmacophore (green) derived from structural comparisons among morphine derivatives.
+After A.D. MacKerell, Jr.
+In contrast to simplifying the molecule to identify a pharmacophore, attempts to enhance specificity have
+retained the pharmacophore but made the molecule more complex. Some success has been achieved. Etorphine
+and buprenorphine, discovered in the 1960s, are far more powerful analgesics than morphine (etorphine is used
+for sedation of large animals) and have lower addictive potential (see Fig. 6.26). Indeed, the most important
+clinical use of buprenorphine is in treatment of drug addiction rather than in analgesia.
+Figure 6.26 The structures of etorphine (R = CH3, R′ = C3H7) and buprenorphine (R = CH2-cp, where cp =
+cyclopropane; R′ = t-butyl).
+This exploration of variants went on before the natural receptors were identified. We now know that the
+natural targets of action of morphine and related molecules are receptors for endogenous peptides called
+endorphins. These include:
+β-Endorphin
+YGGFMTSEKSQTPLVTLFKNAIIKNAYKKGE
+Dynorphin
+YGGFLRRIRPKLKWDNQ
+And their cleavage products:
+Leu-enkephalin
+YGGFL
+Met-enkephalin
+YGGFM
+Morphine is therefore a natural peptidomimetic, a nonpeptide that shares a structure and activity with a peptide.
+Several classes of receptors are known, including μ, κ, and δ types, and a recently discovered fourth type,
+called ORL-1 (where ORL means opiate-receptor like). They are G-protein-coupled receptors, similar in
+structure to bacteriorhodopsin (see Fig. 6.6). Their sequences are about 50–70% identical at the residue level.
+Different ligands—natural and synthetic—have differential affinity to different receptors, and different kinetics
+of binding and dissociation. The natural targets of morphine are μ receptors. It is thought that μ receptors tend
+to be more involved in physical dependence and addiction than κ receptors, although this statement of the
+situation is extremely oversimplified. Nevertheless the suggestion is that an approach to producing a drug that
+provides analgesia with reduced side effects is to look at the distribution of affinities of compounds with the
+different types of receptor.
+*Coop, A. and MacKerell, Jr., A.D. (2002). The future of opioid analgesics. Am. J. Pharm. Edu., 66, 153–156.
+CASE STUDY 6.2 Computer-aided drug design: specific inhibitors of
+prostaglandin cyclooxygenase 2
+Prostaglandins are a family of natural compounds that mediate a wide variety of physiological processes.
+Pharmacological applications include the use of prostaglandins themselves, and, conversely, drugs that block
+prostaglandin synthesis. Prostaglandin E2 (dinoprostone) is used in obstetrics to induce labour. Aspirin,
+ibuprofen, acetaminophen (paracetamol), and other non-steroidal anti-inflammatory drugs (NSAIDs) are
+effective against arthritis and related diseases (see Box 6.14). They achieve this effect by inhibiting enzymes in
+the pathway of prostaglandin synthesis; specifically, prostaglandin cyclooxygenases. A well-known side effect
+321
+
+
+--- PDF page 322 ---
+of aspirin is bleeding from the walls of the stomach. This occurs because prostaglandins (the production of
+which aspirin inhibits) suppress acid secretions by the stomach and promote formation of a mucus coating
+protecting the stomach lining.
+Aspirin and other NSAIDs inhibit two closely related prostaglandin cyclooxygenases, called COX-1 and
+COX-2. (Unfortunately the same abbreviations are used for cytochrome oxidases 1 and 2.) COX-1 is expressed
+constitutively in the stomach lining. COX-2 is inducible, and upregulated in response to inflammation. This
+suggests that a drug that would inhibit COX-2 but not COX-1 would retain the desired activity of NSAIDs but
+reduce unwanted side effects.
+The amino acid sequences and crystal structures of COX-1 and COX-2 are known. (These proteins have 65%
+sequence identity.) Figure 6.27 shows part of the structure of COX-1, acetylated by the aspirin analogue 2-
+bromoacetoxybenzoic acid (aspirin brominated on the methyl group of the acetyl moiety). The salicylate moiety
+binds nearby. The effect is to block the entrance to the active site. Most NSAIDs bind but do not covalently
+modify the enzyme.
+Figure 6.27 The binding site in COX-1 for an aspirin analogue, 2-bromoacetoxybenzoic acid. The ligand has
+reacted with the protein, transferring the bromoacetyl group to the sidechain of 530Ser. The protein is shown in
+skeletal representation, in black. The aspirin analogue is shown in ball-and-stick representation, in green.
+Figure 6.28 shows the same figure with the corresponding region of COX-2 superposed. Can you see regions
+of structural difference, that could be clues to the design of selective drugs? Figure 6.29 shows the region of
+COX-2 
+with 
+the 
+selective 
+inhibitor 
+SC-558 
+(1-phenylsulphonamide-3-trifluoromethyl-5-
+parabromophenylpyrazole; made by Searle). From Figure 6.30 we can see why SC-558 cannot inhibit COX-1.
+There would be steric clashes with the isoleucine sidechain, which corresponds to a valine in COX-2.
+Figure 6.28 The binding site in COX-1 for an aspirin analogue, 2-bromoacetoxybenzoic acid, in black, and the
+homologous residues of COX-2, in green. Can you see what unoccupied space exists in the site that could
+accomodate a larger ligand? Can you see any sequence differences that might be exploited to design an inhibitor
+that would bind to COX-2 (green) but not to COX-1 (black)?.
+Figure 6.29 The binding site in COX-2 (black) for a selective inhibitor of COX-2, SC-558 (1-
+phenylsulphonamide-3-trifluoromethyl-5-parabromophenylpyrazole) (green).
+322
+
+
+--- PDF page 323 ---
+Figure 6.30 SC-558 and the residue in COX-1 (black, isoleucine) and COX-2 (green, valine) that appears to
+produce the selectivity. SC-558 cannot bind to COX-1 because there would be steric contacts between it and the
+isoleucine.
+Box 6.14 Aspirin
+Aspirin is one of the oldest of folk remedies and newest of scientific ones. Hippocrates noted the effectiveness of
+preparations of willow leaves or bark to assuage pain and reduce fever. The active ingredient, salicin, was
+purified in 1828, and synthesized in 1859 by Kolbe. The mechanism of its action was unknown, and indeed
+remained unknown until, in the 1970s, J. Vane and colleagues discovered that aspirin acts by blocking
+prostaglandin synthesis. Not knowing the mechanism of action was never an impediment to its use.
+A century ago, sodium salicylate was used in the treatment of arthritis. Because stomach irritation was a
+serious side effect, F. Hoffman sought to reduce the compound's acidity by forming acetylsalicylic acid, or
+aspirin. Aspirin was the first synthetic drug, which launched the modern pharmaceutical industry. (The name
+salicin comes from the Latin name for willow, Salix, and the name aspirin comes from ‘a’ for acetyl and ‘spir’
+from the Spirea plant, another natural source of salicin.)
+Aspirin has the effect of reducing fever, and giving relief from aches and pains. In high doses it is effective
+against arthritis. Aspirin is also used for prevention and treatment of heart attacks and strokes. The applications
+to cardiovascular disease depend on inhibition of blood clotting by suppressing prostaglandin control over
+platelet clumping. The many applications of aspirin reflect the many physiological processes that involve
+prostaglandins.
+Aspirin's many uses:
+Small doses
+Medium doses Large doses
+Interferes with blood clotting Fever/pain
+Reduces pain and inflammation of arthritis and related diseases
+ RECOMMENDED READING
+Protein folding
+Baldwin, R.L. and Rose, G.D. (1999). Is protein folding hierarchic? I. Local structure and peptide folding. II. Folding
+intermediates and transition states. Trends Biochem. Sci., 24, 26–32, 77–83.
+Han, J.-H., Batey, S., Nickson, A.A., Teichman, S.A., and Clarke, J. (2007). The folding and evolution of multidomain
+proteins. Nat. Rev. Mol. Cell Biol., 8, 319–330.
+Lesk, A.M. (2001). Introduction to Protein Architecture: The Structural Biology of Proteins. Oxford University Press,
+Oxford.
+Liberles, D.A. et al. (2012). The interface of protein structure, protein biophysics, and molecular evolution. Prot. Sci.,
+21, 769–785.
+Morris, E.R. and Searle, M.S. (2012). Overview of protein folding mechanisms: experimental and theoretical
+approaches to probing energy landscapes. Curr. Protocols Prot. Sci., Chapter 28, Unit 28.2, 1–22.
+Structural bioinformatics
+323
+
+
+--- PDF page 324 ---
+Donald, B.R. (2011). Algorithms in Structural Molecular Biology. MIT Press, Cambridge, MA.
+Peitsch, M. and Schwede, T. (eds) (2008). Computational Structural Biology. World Scientific Publishing, Singapore.
+Sussman, J.L. and Silman, I. (eds) (2008). Structural Proteomics and its Impact on the Life Sciences. World Scientific
+Publishing, Singapore.
+Structure alignment and sequence–structure relationships
+Hasegawa, H. and Holm, L. (2009). Advances and pitfalls of protein structural alignment. Curr. Opin. Struct. Biol., 19,
+341–348.
+Holm, L. and Sander. C. (1995). Dali: a network tool for protein structure comparison. Trends Biochem. Sci., 20, 478–
+480. Describes DALI and its applications to structural alignment.
+Sadowski, M.I. and Taylor, W.R. (2012). Evolutionary inaccuracy of pairwise structural alignments. Bioinformatics,
+28, 1209–1215.
+Slater, A.W., Castellanos, J.I., Sippl, M.J., and Melo, F. (2013). Towards the development of standardized methods for
+comparison, ranking and evaluation of structure alignments. Bioinformatics, 29, 47–53.
+Connections among sequences, structures, and functions
+Das, R., Junker, J., Greenbaum, D., and Gerstein, M.B. (2001). Global perspectives on proteins: comparing genomes in
+terms of folds, pathways and beyond. Pharmacogenom. J., 1, 115–125.
+Galperin, M.Y. and Koonin, E.V. (2003). Sequence – Evolution – Function / Computational Approaches in
+Comparative Genomics. Kluwer, Boston, MA.
+Pethica, R.B., Levitt, M., and Gough, J. (2012). Evolutionarily consistent families in SCOP: sequence, structure and
+function. BMC Struct. Biol., 12, 27.
+State of the art in homology modelling and its application in structural
+genomics
+Guex, N., Diemand, A., and Peitsch, M.C. (1999). Protein modelling for all. Trends. Biochem. Sci., 24, 364–367. A
+description of SWISS-MODEL.
+Martí-Renom, M.A., Stuart, A.C., Fiser, A., Sánchez, R., Melo, F., and Sali, A. (2000). Comparative protein structure
+modeling of genes and genomes. Annu. Rev. Biophys. Biomol. Struct., 29, 291–325.
+Nurisso, A., Daina, A., and Walker, R.C. (2012). A practical introduction to molecular dynamics simulations:
+applications to homology modeling. Methods Mol. Biol., 857, 137–173.
+Peitsch, M.C., Schwede, T., and Guex, N. (2000). Automated protein modelling – the proteome in 3D.
+Pharmacogenomics, 1, 257–266. What it will take to complete the structural genomics problem.
+Pieper, U., Eswar, N., Braberg, H., Madhusudhan, M.S., Davis, F.P. et al. (2004). MODBASE, a database of annotated
+comparative protein structure models, and associated resources. Nucl. Acids Res., 32, D217–D222.
+Schwede, T., Kopp, J., Guex, N., and Peitsch, M.C. (2003). SWISS-MODEL: an automated protein homology-
+modeling server. Nucl. Acids Res., 31, 3381–3385. A description of SWISS-MODEL.
+Tramontano, A. (2004). Integral and differential form of the protein folding problem. Phys. Life Rev., 1, 103–127.
+Tramontano, A. (2006). Protein Structure Prediction: Concepts and Applications. Wiley-VCH, Weinheim, Baden-
+Württemberg.
+Other protein structure prediction methods
+Bonneau, R. and Baker, D. (2001). Ab initio protein structure prediction: progress and prospects. Annu. Rev. Biophys.
+Biomol. Struct., 30, 173–189.
+Kaufmann, K.W., Lemmon, G.H., Deluca, S.L., Sheehan, J.H., and Meiler, J. (2010). Practically useful: what the
+Rosetta protein modeling suite can do for you. Biochemistry (ACS), 49, 2987–2498.
+Kuroda, D., Shirai, H., Jacobson, M.P., and Nakamura, H. (2012). Computer-aided antibody design. Prot. Eng. Des.
+Sel., 25, 507–522.
+324
+
+
+--- PDF page 325 ---
+Marks, D.S., Colwell, L.J., Sheridan, R., Hopf, T.A., Pagnani, A., Zecchina, R., and Sander C. (2011). Protein 3D
+structure computed from evolutionary sequence variation. PLoS One., 6, e28766.
+Pavlopoulou, A. and Michalopoulos, I. (2011). State-of-the-art bioinformatics protein structure prediction tools. Int. J.
+Mol. Med., 28, 2959–3010.
+Raman, S. et al. (2009). Structure prediction for CASP8 with all-atom refinement using Rosetta. Proteins, 77 (suppl.
+9), 89–99.
+Structural and computational drug design
+Abraham, D.J. (2007). Structure-based drug design – a historical perspective and the future. In: Comprehensive
+Medicinal Chemistry II, Mason, J.S. (volume editor), vol. 4, pp. 1–22. Elsevier, Amsterdam.
+Frey, J.G. and Bird, C.L. (2011). Web-based services for drug design and discovery. Expert Opin. Drug Discov., 6,
+885–895.
+Kortagere, S., Lill, M., and Kerrigan, J. (2012). Role of computational methods in pharmaceutical sciences. Methods
+Mol. Biol., 929, 21–48.
+Introduction to molecular visualization
+Lesk, A.M. and Bernstein, H.J. (2008). Molecular graphics in stuctural biology. In: Computational Structural Biology,
+Peitsch, M. and Schwede, T. (eds), pp. 729–770. World Scientific Publishing, Singapore.
+Classics still well worth reading
+Chothia, C. (1984). Principles that determine the structure of proteins. Annu. Rev. Biochem., 53, 537–572.
+Kauzmann, W. (1959). Some factors in the interpretation of protein denaturation. Adv. Protein Chem., 14, 1–63.
+Richards, F.M. (1977). Areas, volumes, packing and protein structure. Annu. Rev. Biophys. Bioeng., 6, 151–176.
+Richards, F.M. (1991). The protein folding problem. Sci. Am., 264(1), 54–57, 60–63.
+ EXERCISES AND PROBLEMS
+Exercise 6.1 The heat of sublimation of ice = 51 kJ⋅mol−1 at the freezing point. In the solid state, each molecule of
+H2O makes two hydrogen bonds. What is the energy of a single water–water hydrogen bond?
+Exercise 6.2 Which pairs are orthologues, which are paralogues and which are neither?
+(a) Human haemoglobin α and human haemoglobin β
+(b) Human haemoglobin α and horse haemoglobin α
+(c) Human haemoglobin α and horse haemoglobin β
+(d) Human haemoglobin α and human haemoglobin γ
+(e) The proteinases human chymotrypsin and human thrombin
+(f) The proteinases human chymotrypsin and kiwi fruit actinidin
+Exercise 6.3 On a photocopy of Plate IX, indicate the locations in the structure that correspond to X, Y, and Z in the
+following diagram.
+Exercise 6.4 On a photocopy of Figure 6.11a, highlight the region of 310 helix that was not predicted to be helical.
+Exercise 6.5 Which of the following shows the correct topology—correct strand order in the sequence and orientation
+—of the β sheet in Figure 6.11b?
+325
+
+
+--- PDF page 326 ---
+Exercise 6.6 On a photocopy of Figure 6.9a, indicate with highlighters of two different colours the strands that form
+the two β sheets.
+Exercise 6.7 In the structure prediction of the H. influenzae hypothetical protein (Fig. 6.14): (a) What are the
+differences in folding pattern between the target protein and the experimental parent? (b) What are the differences in
+folding pattern between the prediction by A.G. Murzin and the target? (c) What are the differences in folding pattern
+between the prediction by A.G. Murzin and the experimental parent? In what respects is Murzin's prediction a better
+representation of the folding pattern than the experimental parent?
+Exercise 6.8 Draw the chemical structures of aspirin and 2-bromoacetoxybenzoic acid.
+Exercise 6.9 Many proteins from pathogens have human homologues. Suppose you had a method for comparing the
+determinants of specificity in the binding sites of two homologous proteins. How could you use this method to select
+propitious targets for drug design?
+Exercise 6.10 In the neural network illustrated in Box 6.8, how many parameters—variable weights and thresholds—
+are available to adjust, assuming a linear decision procedure?
+Exercise 6.11 What is the geometrical interpretation of a neuron that accepts two inputs x and y and ‘fires’ if and only
+if x + 2y ≥ 2?
+Exercise 6.12 Sketch a neuron with two inputs x and y, each of which may have any numerical value, that will emit 1
+if and only if the value of the first input is greater than or equal to that of the second. What is the geometric
+interpretation of this neuron?
+Exercise 6.13 Which of the following compounds would you expect to have the higher affinity for carbonic
+anhydrase?
+(a) 
+(b) 
+Problem 6.1 In the table of aligned sequences of ETS domains (see Problem 1.1): (a) which are the most similar and
+most distant members of the family? (b) Suppose that an experimental structure is known only for the first sequence.
+For which others would you expect to be able to build a model with an overall deviation of ≤ 1.0 Å for 90% or more of
+the residues?
+Problem 6.2 Sketch a network that accepts eight inputs, each of which has value 0 or 1, with the interpretation that the
+eight inputs correspond to the residues in a sequence of eight amino acids, and that the value of the ith input is 0 if the
+ith residue is hydrophilic and 1 if the ith residue is hydrophobic. The network should output 1 if the pattern appears
+helical—for simplicity demand that it be PPHHPPHH where H = hydrophobic (uncharged) and P = polar or charged—
+and 0 otherwise.
+Problem 6.3 Write a more reasonable set of patterns to identify helices from the hydrophobic/hydrophilic character of
+the residues in a 10-residue sequence. Your patterns might include ‘wild cards’: positions that could be either
+hydrophobic or hydrophilic, or correlations between different positions. Generalize the previous problem by sketching
+neural networks to detect these more complex patterns.
+Problem 6.4 We, and computers, can do logic with arithmetic. Define: 1 = TRUE and 0 = FALSE. Sketch simulated
+neurons with two inputs, each of which can have only the values 0 or 1, and a linear decision process for firing, for
+which (a) the output is the logical AND of the inputs and (b) the output is the logical OR of the two inputs. (c) What is
+the simplest neural network, with each neuron having a linear decision process for firing, that produces as its output the
+EXCLUSIVE OR of the two inputs (the exclusive or is true if either one of the inputs is true, and false if neither or
+both inputs are true.) Can this be done with a single neuron? If not, what is the minimum number of layers in the
+326
+
+
+--- PDF page 327 ---
+network required?
+Problem 6.5 Modify the PERL program for drawing helical wheels (Box 6.3) so that different amino acids appear in
+different colours, as follows: GAST, cyan; CVILFYPMW, green; HNQ, magenta, DE, red; KR, blue.
+Problem 6.6 Hydrophobic cluster analysis. Suppose a region of a protein forms an α helix. To represent its surface,
+imagine winding the sequence into an α helix (even if in fact it forms a strand of sheet or loop in the native structure).
+Then ‘ink’ the surface of the helix, and roll it onto a sheet of paper, to print the names of the residues. By rolling the
+helix over twice, all surfaces are visible. From such a diagram, hydrophobic patches on surfaces of helices can be
+identified. In this way it is possible to try to predict which regions of the sequence actually form helices in the native
+structure. Comparisons of hydrophobic clusters can also be used to detect distant relationships. Write a PERL program
+to produce such diagrams.
+Problem 6.7 In the 2000 CASP4, one of the targets in the category for which no similar fold was known was the N-
+terminal domain of the human DNA end-joining protein Xrcc4, residues 1–116. The secondary structure prediction by
+B. Rost, using the method PROF (profile-based neural network prediction), is as follows (an H under a residue means
+that residue is predicted to be in a Helix, an E means that that residue is predicted to be in an Extended conformation,
+or strand, and–means Other):
+                   1         2         3         4         5         6
+                   0         0         0         0         0         0
+Sequence   MERKISRIHLVSEPSITHFLQVSWEKTLESGFVITLTDGHSAWTGTVSESEISQEADDMA
+Prediction ---EEEEEEE----HHHHHH-HHHHHHH--EEEEEE-------EE---HHHHHHHHHHHH
+                                                 1         1
+                   7         8         9         0         1
+                   0         0         0         0         0
+Sequence   MEKGKYVGELRKALLSGAGPADVYTFNFSKESCYFFFEKNLKDVSFRLGSFNLEKV
+Prediction HHH-HHHHHHHHHHHH-----EEEEEE-----EEEEE------EEEE-----HHHH
+The experimental structure of this domain, released after the predictions were submitted (PDB entry 1FU1) is shown
+here:
+The secondary structure assignments from the wwPDB entry are:
+Secondary structure
+Residue ranges
+Helix
+27–29, 49–59, 62–75
+Sheet 1
+2–8, 18–24, 31–37, 42–48, 114–115
+Sheet 2
+84–88, 95–101, 104–111
+(a) Calculate the value of Q3, the percentage of residues correctly assigned to helix (H), strand (E), and other (–).
+(b) On a photocopy of the picture of Xrcc4, highlight, in separate colours, the regions predicted to be in helices and
+strands.
+(c) From the result of (b), how many predicted helices overlap with helices in the experimental structure? How many
+strands overlap with strands in the experimental structure?
+Problem 6.8 In CASP4 the group of Bonneau, Tsai, Ruczinski, and Baker made a prediction of the full three-
+dimensional structure of protein Xrcc4, residues 1–116. The secondary structure prediction derived from their model is
+327
+
+
+--- PDF page 328 ---
+as follows (H = helix, E = strand (extended), − = other):
+                   1         2         3         4         5         6
+                   0         0         0         0         0         0
+Sequence   MERKISRIHLVSEPSITHFLQVSWEKTLESGFVITLTDGHSAWTGTVSESEISQEADDMA
+Prediction ----E--EEEE---EEEE--EHHHHHHHH----EEEE--EEEE-----HHHHHHHHHHHH
+                                                 1         0
+                   7         8         9         0         1
+                   0         0         0         0         0
+Sequence   MEKGKYVGELRKALLSGAGPADVYTFNFSKESCYFFFEKNLKDVSFRLGSFNLEKV
+Prediction HHH---HHHHHHHHHHH-----EEEEEEE--EEEEEEE------HHHH----HHHH
+(a) What is the value of Q3 for this prediction? (b) In this case, which method gives the better results, as measured by
+Q3, for the prediction of secondary structure: the neural network that produces only a secondary structure prediction,
+or a prediction of the full three-dimensional structure.
+Problem 6.9 A much more ambitious challenge: write a PERL program that implements the neural network shown in
+the second diagram in Box 6.8.
+Problem 6.10 Suppose that you are trying to evaluate, using a threading approach, whether a sequence of length M is
+likely to have the folding pattern of a protein of known structure of length N > M. (a) How many different alignments
+of the sequences are possible? (b) Suppose that half the residues of the known protein form α helices, and no gaps
+within helical regions are permitted. How many different alignments of the sequences are now possible? (c) How many
+alignments are there, under each of these assumptions, if N = 200 and M = 150?
+Problem 6.11 Write a PERL program to calculate approximate values of π by a Monte Carlo method, as follows: the
+square in the plane with corners at (0, 0), (1, 0), (0, 1), and (1, 1) has area 1. Compute a series of pairs of random
+numbers (x, y) in the range [0, 1] to generate points distributed at random in this square. Count the number of points
+that lie within a circle of radius 0.5 inscribed in the square. The ratio of the number of points that fall within the circle
+to the total number of points = the ratio of the area of the circle to the area of the square = π/4.
+Determine the average relationship between the number of points chosen and the number of correct digits in the
+calculated value of π. Estimate the number of points required to determine π correctly to 50 decimal places.
+Problem 6.12 To convert the output of a neuron from a step function to a smooth function (see the third diagram in
+Box 6.8) one can replace a statement of the form ‘Let X be some weighted sum of the inputs; then output 1 if X > 0,
+else output 0’ to ‘Let X be some weighted sum of the inputs; then output 1/(1 + e−X)’. (a) Verify that as X→ −∞, 1/(1 +
+e−X) → 0, as X→ +∞, 1/(1 + e−X) → 1, and that if X = 0, 1/(1 + e−X) = 0.5. (b) Suppose the network for determining
+whether a point lies within a triangle (as in the second diagram in Box 6.8) is so altered that the output of each neuron
+is described by the smooth function 1/(1 + e−X) rather than a step function, and that a point is considered inside the
+accepted area if the output of the network is > 0.5. Write a PERL program to determine what area is then defined.
+Problem 6.13 The pollen antigen from western ragweed Ambrosia psilostachya (SWISS-PROT ID MPA5A_AMBPS)
+is a 77-residue protein with the sequence:
+MNNEKNVSFEFIGSTDEVDEIKLLPCAWAGNVCGEKRAYC
+CSDPGRYCPWQVVCYESSEICSQKCGKMRMNVTKNTI
+A BLAST search in the nonredundant protein sequence data bank produced the following hits:
+Score E
+Sequences producing significant alignments: (Bits) Value
+sp – P43174 – MP5A_AMBPS Pollen allergen Amb p 5a precursor (Amb …   142 8e-33
+gb – AAA20067.1 – Amb p V allergen                                   140 2e-32
+sp – P43175 – MPA5B_AMBPS Pollen allergen Amb p 5b precursor (Amb…   116 3e-25
+gb – AAA20066.1 – Amb p V allergen                                   115 5e-25
+gb – AAA20068.1 – Amb p V allergen                                   115 1e-24
+sp – P02878 – MPA5_AMBEL Pollen allergen Amb a 5 (Amb a V) (Allergen 81.3 2e-14
+328
+
+
+--- PDF page 329 ---
+sp – P10414 – MPAT5_AMBTR Pollen allergen Amb t 5 precursor (Amb …   42.4 0.008
+The first six ‘hits’ have E values substantially less than 1.0. These proteins can be confidently taken to be homologous
+to the probe sequence. The last ‘hit’, with an E value of 0.008, is a likely homologue, a pollen antigen from a closely
+related plant: ragweed pollen allergen from giant ragweed Ambrosia trifida (SWISS-PROT ID MPAT5_AMBTR).
+Although the similarity of the sequences is above Doolittle's ‘twilight zone’, the E value suggests that there is almost a
+1% chance of finding a sequence, with this degree of similarity to the probe sequence, at random.
+What can we do to try to confirm a true relationship? The structure of the mature form of the A. trifida protein,
+corresponding to the C-terminal 40 residues of that sequence, is known (PDB entry 1BBG). In the full alignment of the
+sequences, uppercase letters indicate the portion of the sequence that corresponds to the mature protein, and which
+appears in the structure; and the letter B underneath the blocks indicates the residues buried within the structure
+(computed from coordinate set 1BBG):
+P43174|MPA5A_AMBPS 
+ 
+mnne––––-----knvsfefigstdevdeikllP–-
+CAWAGNVCGEKRAYCCSDPGRYCP 49
+P10414|MPAT5_AMBTR  mknifmltlfiliitstikaigstnevdeikqeDDGLCYEGTNCGKVGKYCCSPIGKYC-
+59
+                   *:*           . :::  ****
+:******      .:   *.  **:   ****  *:**
+                                                                     B      BB
+P43174|MPA5A_AMBPS  WQVVCYESSEICSQKCGkmrmnvtknti 77
+P10414|MPAT5_AMBTR  –––VCYDSKAICNKNCT––––––––--- 73
+                      ***:*. **.::*
+                              B
+These two sequences share the same residue at 28 positions. From the structure, the following pairs of cysteines form
+disulphide bridges: 5–35, 11–26, 18–28, 19–39.
+Figure 6.31 shows the structure of the mature fragment of the giant ragweed (A. trifida) antigen, including the putative
+disulphide bridges. Sidechains corresponding to positions of mutations are shown in green. The site of the insertion in
+the A. psilostachya sequence is marked by a ‘*’.
+Figure 6.31 Ambrosia trifida pollen antigen. Sidechains shown are those that differ from pollen antigen of A.
+psilostachya.
+(a) Does the overall extent of sequence similarity suggest that the proteins are homologous? (b) On a photocopy of
+Figure 6.31 mark the N- and C-termini. (c) On a photocopy of Figure 6.31 write next to the sidechain of each mutated
+residue the one-letter code of the amino acid that appears in the parent sequence. (d) Is the site of insertion in a loop
+between two elements of secondary structure? (e) Consider each of the mutations. Which are easy to reconcile with a
+conservation of structure and which are difficult to reconcile with a conservation of structure? (f) Was MODBASE
+able to construct a model of the parent sequence? (This will require checking a website.)
+1
+For a more in-depth discussion of protein folding see Chapter 5 in Lesk, A.M. (2004). Introduction to
+Protein Science. Architecture, Function and Genomics. Oxford University Press, Oxford.
+2
+See http://www.chem.ox.ac.uk/curecancer.html
+329

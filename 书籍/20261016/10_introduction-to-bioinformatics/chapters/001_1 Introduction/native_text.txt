@@ -1,0 +1,2604 @@
+--- PDF page 25 ---
+Introduction
+LEARNING GOALS
+• To gain an overview of the subject: the topics, the questions, the point of view, and examples of specific problems
+and how to solve them. Many of the topics introduced in this chapter are developed elsewhere in the book.
+• To review and assemble the general principles of molecular biology necessary for dealing with data on sequences,
+structures, interactions, metabolism, and regulation.
+• To appreciate the very high capacity of the data streams that are producing data for molecular biology, notably but
+not limited to fast full-genome sequencing. The challenge of giving a manageable form to these data is the province
+of bioinformatics.
+• To understand the essential characteristics of a database: its coverage, its organization, and the access routes to
+retrieve the information it contains.
+• To appreciate the importance of quality control and annotation in data curation.
+• To understand the role of computer hardware and software in the infrastructure of bioinformatics. To evaluate your
+own talents, skills, and interest, and to decide to what extent you want to create programs, and the extent to which
+you want no more than to develop expertise in their use.
+• To know the basic principles of protein structure, and the extent to which protein structures can be predicted from
+amino acid sequences.
+• To be familiar with the type of questions that the fields of transcriptomics and proteomics address, and the methods
+used to collect and analyse the data required to answer them.
+• To appreciate the clinical implications of discoveries in molecular biology, and the role of bioinformatics in forging
+links between laboratory bench and clinical practice.
+• To distinguish between ‘static’ data—for instance, the DNA sequence in a cell—and ‘dynamic’ data, such as
+patterns of transcription, and to recognize that underlying the dynamic data are extensive and complex control
+mechanisms.
+Biology has traditionally been an observational rather than a deductive science. Although recent
+developments have not altered this basic orientation, the nature of the data has changed radically. It
+is arguable that until recently most biological observations were fundamentally anecdotal, although
+admittedly with varying degrees of precision, some of which were very high indeed. However, in the
+most recent generation the data have become not only much more quantitative and precise, in the
+case of nucleotide and amino acid sequences they have become discrete. It is possible to determine
+the genome sequence of an individual organism or clone not only completely, but in principle
+exactly. Experimental error can never be avoided entirely, but the quality of modern genomic
+sequencing methods is extremely high. Not that this has converted biology into a deductive science.
+Life does obey principles of physics and chemistry, but for now life is too complex, and too
+dependent on historical contingency, for us to deduce its detailed properties from basic principles.
+A second obvious property of the data of bioinformatics is their very, very large amount. Currently
+the nucleotide sequence databases contain 6 × 1011 bases (abbreviated to 600 Gbp, or gigabasepairs).
+If we use the approximate size of the human genome—3 × 109 letters—as a unit, this amounts to 200
+25
+
+
+--- PDF page 26 ---
+human genome equivalents (or 200 huges, an apt name; for a comprehensible standard of
+comparison, 1 huge is comparable to the number of characters appearing in six complete years of
+issues of the New York Times). The database of macromolecular structures contains over 100 000
+entries, containing the full three-dimensional coordinates of proteins, nucleic acids, and their
+complexes, of typical length ≈400 residues. Not only are the individual databases large, but their
+sizes are increasing at a very high rate. Figure 1.1 shows the growth over the past decade of the
+nucleotide sequence data banks (which archive nucleic acid sequences) and the Worldwide Protein
+Data Bank (which archives macromolecular structures). It would be precarious to extrapolate.
+Figure 1.1 (a) Growth of the nucleotide sequence data banks. (b) Growth of Protein Data Bank, archive of three-
+dimensional biological macromolecular structures, from the wwPDB, a collaboration between groups in the USA,
+Europe, and Japan. (Note the inconsistency with the text: the growth is so fast that these graphs are already out of
+date.)
+In addition to the continuing archives of nucleic acid sequences, amino acid sequences of proteins,
+and structures of proteins and protein–nucleic acid complexes, there has been a proliferation of
+biological databases. The Nucleic Acids Research online Molecular Biology Database Collection
+contains 1380 databases! These databases reflect both novel data streams and different specialist
+approaches. The challenge to bioinformatics is correspondingly increased.
+    See Weblem 1.1
+The growing quality, quantity, and variety of data have encouraged scientists to aim at
+commensurately ambitious goals:
+• to have it said that they ‘saw life clearly and saw it whole’; that is, to understand integrated
+aspects of the biology of organisms, viewed as coherent complex organizations, at microscopic
+and macroscopic levels;
+• to curate, annotate, and impose a structure on the available data, and to provide avenues for access
+and distribution;
+• to interrelate sequence, three-dimensional structure, expression pattern, interaction, and function
+26
+
+
+--- PDF page 27 ---
+of individual proteins, nucleic acids, and protein–nucleic acid complexes;
+• to integrate the data on the different aspects of the life of a cell or organism into a ‘systems’
+description of its structure and dynamics;
+• to use data on contemporary organisms as a basis for travel backward and forward in time: back to
+deduce events in evolutionary history, forward to achieve greater deliberate scientific modification
+of biological systems;
+• to support applications to medicine, agriculture, and technology.
+Indeed, biology has been an applied science throughout human history. Now, as much as ever,
+human society faces many extremely serious problems. Some have potential scientific solutions,
+including:
+• improvement of the health of humans, animals, and plants. Possible contributions include
+identifying lifestyles that prevent, or at least lower the risk of, disease, and treatment of illnesses
+when they do arise. There is consensus that bioinformatics will play an essential role; for example,
+analysis of genome sequence data can identify risks, aid diagnosis and prognosis of disease, and
+guide treatments tailored to the patient (pharmacogenomics);
+• providing adequate nutrition to a growing population;
+• providing energy to run industries, transportation, communications, and personal appliances such
+as computers, telephones, music players, etc.;
+• development of novel materials;
+• identifying the causes and effects of climate change, and developing ways to slow it down;
+• guiding conservation efforts, especially the preservation of endangered species.
+    See Weblems 1.2 and 1.3
+A generation or two ago, physics represented the hope for technical solutions to our problems,
+notably through the provision of cheap, clean energy. Now it is biology’s turn. Even more than
+physics, biology is data-driven. Given the data streams—or, perhaps better, data floods—analysis has
+become ever more challenging.
+Not only has bioinformatics developed powerful tools, but its methods are becoming more deeply
+integrated into the biomedical enterprise. Major genome centres typically have as many
+computational specialists as ‘wet’ laboratory scientists. Moreover, computing is not exclusively the
+province of specialists. Courses in bioinformatics are a common component of university curricula.
+This book has as its readership scientists who do not intend to become computational specialists, but
+find that the contribution of bioinformatics to their research is an essential one.
+Life in space and time
+It is difficult to define life, and it may be necessary to modify its definition as computers grow in
+power and the silicon–life interface grows more intimate. For now, try this: a biological organism is
+a naturally occurring self-reproducing device that effects controlled manipulations of matter, energy,
+and information.
+From the most distant perspective, life on Earth is a complex, self-perpetuating, evolving system
+distributed in space and time. It is of the greatest significance that it is largely composed of discrete
+individual organisms, each with a finite lifetime and—except for clonal populations—with unique
+27
+
+
+--- PDF page 28 ---
+features.
+Spatially, starting far away and zooming in progressively, one can distinguish, within the
+biosphere, local ecosystems, stable until their environmental conditions change or they are invaded.
+Each species within an ecosystem is composed of organisms carrying out individual if not
+independent activities. Organisms are composed of cells. Every cell is an intimate local ecosystem,
+not isolated from its environment but interacting with it in specific and controlled ways. Eukaryotic
+cells contain a complex internal structure of their own, including nuclei and other subcellular
+organelles, and a cytoskeleton. And finally we come down to the level of molecules.
+Life is extended not only in space but in time. We see today a snapshot of one stage in the history
+of life that extends back in time for at least 3.5 billion1 years. The theory of natural selection has
+been extremely successful in rationalizing the process of life’s development. However, historical
+accident plays too dominant a role in determining the course of events to allow much detailed
+prediction. DNA from extinct organisms affords only limited access to the historical record at the
+molecular level. Instead, we must try to read the past in contemporary genomes. US Supreme Court
+Justice Felix Frankfurter once wrote that ‘… the American constitution is not just a document, it is a
+historical stream.’ This is also true of genomes, which contain records of their own past.
+Phenotype = genotype + environment + life history + epigenetics
+To what extent do the contents of our genomes determine who we are?
+Each reader of this book is an individual, with physical, biochemical, and psychological
+characteristics. (Do not be surprised if these distinctions become more and more tenuous during your
+lifetime!) Each of you has a general form and metabolism that is common to all humans, and, at the
+molecular level, much in common with other species as well. But there is considerable variation
+within our species, to give you individual appearance and character. You are in a state of health
+somewhere along the spectrum between robust good health and morbid disease. You are currently in
+some psychological state, and in some mood, reflecting your personality and current activities.
+• Your genotype is your DNA sequence, both nuclear and mitochondrial. (For plants, include also
+the sequence of the chloroplast DNA). The genotype is inherited from your parents.
+• Your phenotype is the collection of your observable traits, other than your genotype. These
+include macroscopic properties such as height, weight, and eye and hair colour; and microscopic
+ones such as whether you suffer from sickle-cell anaemia, and your major histocompatibility
+complex (MHC) locus haplotype.
+• Your life history includes the integrated total of your experiences, and the physical and
+psychological environment within which you developed. Your nutritional history has influenced
+your physical development. For many, a nurturing environment and educational opportunities
+have influenced your psychological development. What is perhaps less obvious than most aspects
+of your life history is the growing recognition of the importance of your in utero environment in
+determining your development curve and even your adult characteristics.
+• At the interface between the genome and life experience are epigenetic factors. It is largely true
+that all cells of your body, except sperm or egg cells, erythrocytes, and cells of the immune
+system, have virtually the same DNA sequence. Yet your tissues are differentiated, with different
+sets of genes expressed or silenced in liver, brain, etc. Some of these regulatory signals survive
+cell division. (When a liver cell divides, it divides into two liver cells.) Your parents’ own life
+28
+
+
+--- PDF page 29 ---
+histories might have altered the epigenetic patterns in their cells, and the fertilized egg from which
+you were subsequently formed contained some of these ‘predifferentiation’ signals. Via
+epigenetics, inheritance of acquired characteristics has re-entered respectable mainstream biology.
+The relative importance of these factors in determining your phenotype varies from trait to trait.
+Some are determined exclusively by your alleles for single, specific genes. Others depend on
+complex interactions between your genes and your life history, and epigenetic signals from your
+parents.
+Evolution is the change over time in the world of living things
+The processes of evolution change distributions of genotypes and phenotypes in successive
+generations. The genotype is an organism’s genetic information, the sequence of its genome. All
+other observable features of an organism—macroscopic and biochemical—comprise its phenotype.
+The genotype is inherited from a parent or parents, subject to modification by mutation or by lateral
+transfer of genetic material. The phenotype depends on the genotype, including epigenetic signals,
+which control the development of the organism under the influence of its environment.
+The asymmetry between genotype and phenotype is the engine of evolution.
+• Changes in genotypes are inheritable. Effects on the phenotype, of the environment or lifestyle—
+for instance, better nutrition leading to larger body size, or debilitating effects of disease or injury
+—are not directly inheritable.
+• During the development of any organism, genotype constrains phenotype. Phenotype does not
+influence genotype.
+• Many genotypes can create the same phenotype. For example:
+• many mutations in genes coding for proteins leave amino acid sequences unchanged, or make
+modifications with no apparent effect on function;
+• alleles are different forms (sequences) of the same gene. Any organism that contains two copies
+of a gene at equivalent positions in the genome can have, at that site, two copies of the same
+allele (homozygosity) or two different alleles (heterozygosity). (In mammals ≈20% of loci are
+heterozygous.) Homozygotes and heterozygotes have different genotypes, but if a single gene
+has exclusive control over a trait, and one allele is dominant, homozygotes and heterozygotes
+may have the same phenotype.
+At what levels does evolution operate? Most life consists of discrete organisms. A population is a
+group of similar organisms that interact. Populations of sexually reproducing organisms interbreed;
+individuals in all populations compete for resources. The processes of evolution alter the
+composition and distribution of the gene pools and phenotypes in populations. It is arguable that the
+population is the true unit of evolutionary activity. (There is nothing like a deme.)
+What is the mechanism of evolution? Within a population, individuals with a variety of genotypes
+arise, displaying a corresponding variety of phenotypes. Although selection has no direct leverage on
+genotype, individuals with different phenotypes show differential success at reproduction. As a
+result, the new generation may have an altered distribution of genotypes and phenotypes. Natural
+selection—enhanced reproduction by ‘fitter’ individuals—is the most important mechanism of
+evolution. Another mechanism of evolution is genetic drift, the random change in allelic frequencies,
+which is not in response to selection. Genetic drift is especially important in small, isolated
+29
+
+
+--- PDF page 30 ---
+populations.
+Mechanisms that produce genetic variety create the potential for evolution:
+• mutations, such as point substitutions, insertions and deletions, and transpositions. Rates of
+generation of point mutations are estimated to be about 10−12–10−10 per base pair per generation
+(this is not the same as the rate of allelic replacement in a population; mutations only propose
+candidates for evolutionary change);
+• recombination can bring different loci together, or split them apart. Recombination within a gene
+can create a new allele, whereas recombination outside of genes can affect the relationship
+between genes and regulatory elements;
+• gene duplication, followed by divergence;
+• gene loss, either by deletion or by mutations that destroy expression or function;
+• gene flow from mixing of populations, or gene transfer between species.
+Evolution can increase or decrease the variety in gene pools. If a novel mutation confers selective
+advantage only in the homozygous state, the gene may spread throughout a population. Adoption of
+the allele by all members of a population can decrease the variety in the gene pool. If a gene arises
+that confers selective advantage in the heterozygous state only, the gene pool may move towards
+greater variety. Some mutations create recessive alleles that are deleterious only in the homozygous
+state. These are harder to remove from a population, especially if heterozygotes have some
+compensating advantage. An example is the gene for sickle-cell anaemia, which confers on
+heterozygotes an enhanced resistance to malaria.
+Microevolution refers to relatively small changes in a few genes, leading in most cases to
+relatively small changes in phenotypes. Microevolution affects the individuals within a population.
+Modern techniques allow us to follow microevolution at the molecular level, through measurements
+of genome sequences and patterns of RNA transcription and protein expression. Macroevolution
+refers to larger-scale changes in populations as a whole, including formation of new species. The
+fossil record provides a partial history of macroevolution, revealing phylogenetic relationships, using
+geological methods to date events. Comparative anatomy and physiology, and embryology, provide
+additional clues.
+Observations of micro- and macroevolution illuminate each other. Genome sequences help in the
+classification of species. The fossil record permits dating of past events that have had consequences
+on the molecular scale, which we can observe now. A major challenge to modern biology is to
+understand how large-scale events such as the development of new species can occur as a composite
+result of microevolutionary events.
+Dogmas: central and peripheral
+The information archive in each organism—the repertoire for potential development and activity—is
+the genetic material: DNA or, in some viruses, RNA. DNA and RNA molecules are long, linear,
+chain molecules containing a message in a four-letter alphabet (see Box 1.1). Even for
+microorganisms the message is long, typically ≈106 characters. Implicit in the structure of the DNA
+are mechanisms for self-replication
+Box 1.1 The components of nucleic acids and proteins
+30
+
+
+--- PDF page 31 ---
+The four naturally occurring nucleotides in DNA (RNA)
+The twenty naturally occurring amino acids in proteins
+Nonpolar amino acids
+Polar amino acids
+Charged amino acids
+Under typical physiological conditions, many histidines are charged.
+Other classifications of amino acids can also be useful. For instance histidine, phenylalanine, tyrosine, and
+tryptophan are aromatic, and are observed to play special structural roles in membrane proteins.
+In addition to the one-letter codes given in the table, amino acid names are frequently abbreviated to their first
+three letters: for instance, Gly for glycine. Exceptions are isoleucine, asparagine, glutamine, and tryptophan,
+which are abbreviated to Ile, Asn, Gln and Trp, respectively. The rare amino acid selenocysteine has the three-
+letter abbreviation Sec and the one-letter code U.
+It is conventional to write nucleotides in lower case and amino acids in upper case. Thus atg means adenine-
+thymine-guanine and ATG means alanine-threonine-glycine.
+and for encoding amino acid sequences of proteins. The double helix and its internal self-
+complementarity, providing for accurate replication, are well known2 (see Plate I). Near-perfect
+replication is essential for stability of inheritance, but some imperfect replication, or mechanism for
+import of foreign genetic material, is also essential. Otherwise evolution could not take place in
+asexual organisms.
+Plate I The double helix of DNA. This is a stereo pair, requiring a viewer, or practice, to see in three dimensions (See
+Chapter 1).
+The strands in the double helix are antiparallel; directions along each strand are called 3′ and 5′
+31
+
+
+--- PDF page 32 ---
+(for positions in the deoxyribose ring). In transcription of DNA to RNA, and in translation of
+messenger RNA (mRNA) to protein, the base sequence is always read in the 5′ → 3′ direction.
+The implementation of genetic information occurs, initially, through the synthesis of RNA and
+proteins.
+The RNA referred to in the central dogma is messenger RNA. mRNA is copied from a protein-
+encoding gene, and in eukaryotes may require splicing to remove noncoding introns. Variable
+splicing can lead to production of several different proteins from the same gene, by ‘mixing and
+matching’ of exons.
+It is now recognized that the RNA world has a rich variety of structure and function. Ribozymes
+are RNA molecules with enzymatic activity. The ribosome itself is an example: although the
+ribosome is an RNA–protein complex, its catalytic activity—mRNA-directed polypeptide chain
+synthesis—resides in the RNA. Other types of RNA, such as small interfering RNA (siRNA),
+microRNA (miRNA), and piwi-interacting RNAs (piRNAs), function to control translation.
+Proteins are the molecules responsible for much of the structure and biochemical activity of
+organisms. (A colleague once entitled a keynote lecture ‘Genes are from Venus, proteins are from
+Mars.’) Our hair, muscle fibres, digestive enzymes, and antibodies are all proteins. Like nucleic
+acids, proteins are long, linear chain molecules. The genetic ‘code’ is in fact a cipher (see Box 1.2):
+successive triplets of letters from the DNA sequence specify successive amino acids; stretches of
+Box 1.2 The standard genetic code
+DNA sequences encipher amino acid sequences of proteins. Alternative genetic codes appear in
+organelles—chloroplasts and mitochondria—and in some species.
+Typically, proteins are 200–400 amino acids long, requiring 600–1200 letters of expressed DNA
+message to specify them. DNA sequences also direct the synthesis of RNA molecules, for instance
+the RNA components of the ribosome. However, not all DNA is expressed as proteins or structural
+32
+
+
+--- PDF page 33 ---
+RNA. Most genes in higher organisms contain internal untranslated regions, or introns. Some regions
+of the DNA sequence are devoted to control mechanisms, and a substantial amount of the genomes
+of higher organisms has been termed ‘junk’, which may mean merely that we do not yet understand
+its function.
+A major effort to understand the function of the genome has produced the results of the ENCODE
+project (see Box 1.3).
+Box 1.3 The ENCODE project
+The goal of the ENCODE project (derived from Encylopaedia of DNA Elements) is to understand the function of
+the entire human genome. Almost 500 scientists in 32 research groups formed the consortium that tackled the
+problem. The current effort is the result of a scaling up from a pilot project started in 2007, which focused on a
+selected 1% (about 30 Mb) of the human genome deemed likely to be of interest. The current results, a landmark
+burst of 30 papers published coordinately in Nature, Genome Research, and Genome Biology, assign function
+(meaning that they specify biological activity) to about 80% of the human genome. It is entirely possible that the
+functions of the remaining 20% will be identified. The Nature ENCODE Explorer offers web access to the
+project and its results (http://www.nature.com/encode/#/threads).
+When the human genome was first sequenced it appeared that there were only about 23 000 protein-coding
+genes, accounting for about 1.5% of the genome. The number of genes was smaller than expected (earlier, much
+larger estimates, if scrutinised, had no reliable basis). It is true that variable splicing means that the number of
+proteins is not limited to the number of protein-coding genes. (The immune system generates the vast majority of
+the individual proteins in our bodies, but uses a different splicing system—at the DNA rather than the RNA
+level.)
+In addition to proteins, regions of DNA encode non-messenger RNA molecules, including but not limited to
+the RNA components of the ribosome, and transfer RNAs (tRNAs).
+Nevertheless, the function of the more than 99% non-protein-coding DNA was a mystery. Although clearly
+some of the noncoding regions were regulatory, there was still a tendency to talk about the large amounts of
+‘junk’ DNA. For, although the fugu fish genome is only one-eighth the size of the human genome, fugu has a
+protein repertoire of a similar size to humans. If fugu could get along without seven-eighths of our DNA, the
+suggestion was that much of this excess must be ‘junk’. (Sydney Brenner distinguished junk, meaning useless
+stuff you keep around, from garbage, or useless stuff you get rid of.)
+There are two ways for a noncoding region of DNA to have a function. Even if not transcribed, it could be
+involved in sequence-dependent physical interactions, within chromatin, that either expose it to or block it from
+protein ligands. If transcribed, it can form RNAs with various possible functions, the most common of which is
+regulation of transcription.
+Categories of results of the ENCODE analysis include:
+• evidence that 75% of the human genome is transcribed;
+• a mapping and dictionary of regulatory sites in the genome, regions of the DNA that bind proteins to control
+transcription. The 8.4 million such sites amount to twice as much DNA as codes for protein. The affinity is
+many-to-one; that is, many proteins can bind to the same regulatory region;
+• a sketch of the structure of the regulatory network. The interactions that enhance or inhibit gene expression
+have a detailed and intricate logic, including feedback loops. Many interactions contribute to the ultimate
+decision;
+• a mapping of exposed sites in chromatin, which are unprotected from DNase 1 cleavage. These sites mark
+regulatory regions typically adjacent to genes, and provide sites for binding of regulators of expression.
+The data provided by the ENCODE project will be the launching pad for many future research projects. A
+colleague admitted to hearing an echo: ‘Now this is not the end. It is not even the beginning of the end. But it is,
+perhaps, the end of the beginning.’
+In DNA the molecules comprising the alphabet are chemically similar, and the structure of DNA
+33
+
+
+--- PDF page 34 ---
+is, to a first approximation, uniform (although some DNA–protein interactions distort the DNA
+structure). Proteins, and structural RNAs, in contrast, show great variety in their three-dimensional
+conformation. These are necessary to support their very diverse structural and functional roles.
+The amino acid sequence of a protein dictates its three-dimensional structure. For each natural
+amino acid sequence there is a unique stable native state that under proper conditions is adopted
+spontaneously (see Box 1.4). If a purified protein is heated, or otherwise brought to conditions far
+from the normal physiological environment, it will ‘unfold’ to a disordered and biologically inactive
+structure. (This is why our bodies contain mechanisms to maintain nearly constant internal
+conditions.) When normal conditions are restored, protein molecules will generally readopt the
+native structure, indistinguishable from the original state. There are important exceptions, however.
+Irreversible denaturation leading to formation of insoluble aggregates is most familiar to us when we
+hard-boil an egg. Such aggregates are associated with many diseases, including Alzheimer’s disease
+and bovine spongiform encephalopathies (such as so-called mad-cow disease).
+The functions of proteins depend on their adopting their native three-dimensional structure. For
+example, the native structure of an enzyme may have a cavity on its surface that binds a small
+molecule and juxtaposes
+Box 1.4 From one dimension to three
+The spontaneous folding of proteins to form their native states is the point at which nature makes the giant leap
+from the one-dimensional world of gene and protein sequences to the three-dimensional world that we inhabit.
+There is a paradox: the translation of DNA sequences to amino acid sequences is very simple to describe
+logically; it is specified by the genetic code. The folding of a polypeptide chain into a precise three-dimensional
+structure is very difficult to describe logically. However, translation requires the immensely complicated
+machinery of the ribosome, tRNAs, and associated molecules, but protein folding occurs spontaneously (see
+Plate II).
+Plate II Expression of gene sequences as three-dimensional structures of proteins. A DNA sequence encodes an
+amino acid sequence. The polypeptide chain of a protein folds spontaneously into the correct native structure.
+it to catalytic residues. Many regulatory mechanisms depend on the binding of proteins to other
+proteins or to DNA. We thus have the paradigm:
+• DNA sequence determines protein sequence;
+• protein sequence determines protein structure;
+• protein structure determines protein function;
+• regulatory mechanisms, including but not limited to control of expression patterns, deliver the
+34
+
+
+--- PDF page 35 ---
+right amount of the right function to the right place at the right time.
+Much of the organized activity of bioinformatics has been focused on the analysis of the data related
+to these processes.
+Statics and dynamics
+The genome sequence of a cell, and its implied repertoire of RNAs and proteins, expresses what the
+cell could be and could do. But cells make choices. Dense, logically integrated, networks of control
+mechanisms govern the dynamic state of cellular metabolic and transcriptional activity. (See Chapter
+7.)
+The dynamics of the molecular biology of cells and organisms include levels higher than the
+molecular, of structure and organization. Examples are such questions as how tissues become
+specialized during development or, more generally, how environmental effects exert control over
+genetic events. In some cases of simple feedback loops it is understood at the molecular level how
+increasing the amount of a reactant causes an increase in the production of an enzyme that catalyses
+its transformation. The lac operon of Escherichia coli is an example.
+More complex are the programmes of development that unfold during the lifetime of an organism.
+Learning, which must ultimately be reflected in changes in structure and dynamics of the nervous
+system, is really a developmental process. These fascinating problems about the information flow
+and control in an organism have now come within the scope of mainstream bioinformatics. For
+example, it was reported recently3 in honeybees that patterns of DNA methylation—that is,
+epigenetic signals—reversibly control behaviour patterns.
+Many novel data streams reflect experiments on dynamic aspects of molecular biology. These
+include new techniques, such as:
+• sequencing of cells’ RNA content to measure the transcriptome;
+• determination of DNA methylation patterns;
+• identification of splice variants and post-translational modifications of proteins;
+• identifying the partners in:
+• protein–protein interactions,
+• DNA–protein interaction in transcription regulation: both the DNA region and the proteins that
+bind to it;
+• integration of individual regulatory steps into networks.
+Systematic application of both old and new techniques permits controlled comparisons:
+• large-scale surveys of single-nucleotide polymorphisms (SNPs) in human populations;
+• phylogenetic studies, to understand the origin and changes of particular genes during the course of
+evolution;
+• tissue-specific, disease-specific, and age-specific measurements of sequences, epigenetic signals,
+and expression patterns.
+Networks
+Crucial to biology is how components of living systems interact. Any molecule may have several
+partners with which it interacts in different ways. The sets of interactions of different molecules form
+35
+
+
+--- PDF page 36 ---
+networks.
+There are networks of genes, proteins, and metabolites. Indeed, the same set of molecules may be
+connected by different types of interaction or relationship, to form different networks (see Table 1.1).
+Table 1.1
+Network
+Element of network
+Connection between elements
+Genomes
+Gene
+Homology
+Linkage
+Shared expression pattern
+Protein
+Protein
+Homology
+Regulatory relationship
+Shared expression pattern
+Physical complex formation
+Metabolite
+Chemical compound
+Substrate and product of an enzymatic reaction
+Similarity in structure
+Similarity in reactivity
+In cells, the two types of interaction network are in operation: a physical network of protein–
+protein and protein–nucleic acid complexes, and a logical network of control cascades. Physical and
+logical networks operate in parallel. Interactions may be physical or logical—often they are both. A
+macromolecular complex such as the ribosome is a network of proteins and RNAs, interacting
+through the physical contacts in their assembly. A transcription-regulatory network is a network of
+genes, exerting logical control over expression patterns via the synthesis of specific DNA-binding
+proteins. A transcription factor that acts by binding to DNA may never interact physically with the
+proteins the expression of which it controls. Metabolic pathways have a similar duality: many but not
+all metabolic pathways are mediated by physical protein–protein interactions and regulated by
+logical ones.
+Even though particular complexes may participate in both physical and logical networks, the two
+remain distinct in terms of their organization and their biological function, and it is useful to keep the
+distinction between them in mind, especially when they overlap.
+Observables and data archives
+Bioinformatics deals with biological data, their collection, curation, distribution, and analysis. The
+‘unit’ of distribution of a collection of some type of biological information is a database. There has
+been a great deal of growth and proliferation of databases and, perhaps paradoxically, there is a trend
+towards integration into larger and more comprehensive ones, to combine different categories of
+information that were formerly the provinces of individual projects. This is being driven by both
+academic and political forces.
+A database includes (1) an archive of information, (2) a logical organization or ‘structure’ of that
+information, called a schema, and (3) tools to gain access to it. Databases in molecular biology
+contain nucleic acid and protein sequences, macromolecular structures and functions, expression
+patterns, and networks of metabolic pathways and control cascades. They include:
+• archival databases of biological information:
+• DNA and protein sequences, including annotation (see Box 1.5);
+• variations, such as compilations of haplotypes, or disease-associated mutations;
+36
+
+
+--- PDF page 37 ---
+• nucleic acid and protein structures, including annotation;
+• databases focused on organisms, including genome databases;
+• databases of protein expression patterns;
+• databases of metabolic pathways;
+• databases of interactions and of regulatory networks;
+• derived databases: these contain information collected from the archival databases, and inferred
+from analysis of their contents. For instance:
+• sequence motifs (characteristic ‘signature patterns’ of families of proteins);
+• classifications or relationships (connections between, and common features of, entries in
+archives). Examples include databases of protein sequence families, or hierarchical
+classifications of protein folding patterns);
+Box 1.5 Archives of nucleic acid and protein sequences
+The archive of nucleic acid sequences is maintained by a triple partnership, the International Nucleotide
+Sequence Database Collaboration, comprising GenBank, based at the US National Center for Biotechnology
+Information, in Bethesda, Maryland; the European Nucleotide Archive, or ENA, based at the European
+Bioinformatics Institute (EBI), in Hinxton, UK, and the Center for Information Biology and DNA Data Bank of
+Japan, at the National Institute of Genetics in Mishima, Japan. The three sites exchange incoming submissions
+daily to ensure common coverage. However, the format, annotation, and embedded links differ among the
+corresponding entries released by the different databases.
+    See Weblem 1.4
+The archive of amino acid sequences of proteins, now determined almost exclusively from translation of gene
+sequences, is maintained by the United Protein Database (UniProtKB), a merger of the databases SWISS-PROT,
+the Protein Identification Resource (PIR), and Translated EMBL (TrEMBL).
+Associated with the archives are tools for selection and retrieval of sequences. The EBI has a number of search
+engines pointed at different components of its databases. The US National Center for Biotechnology Information
+offers ENTREZ. Both allow parallel searches in multiple data archives.
+Many full-genome sequencing projects maintain databases focused on individual species. Notable are the
+Ensembl (Wellcome Trust Sanger Institute, Hinxton, UK), University of California at Santa Cruz browsers for
+the human and other genomes, and FlyBase.
+Many derived databases assemble families of proteins or subunits based on the similarities of their sequences.
+An ‘umbrella’ database, InterPro, integrates the contents, features, and annotation of several individual databases
+of protein families, domains, and functional sites, and contains links to others, including the Gene Ontology
+Consortium functional classification. Interpro intends to assimilate additional databases, including structural
+databases. (Resistance is futile.)
+• bibliographic databases. The scientific literature itself is data. PubMed is a database. Researchers
+‘datamine’ PubMed as they do any other database;
+• databases of websites:
+• databases of databases containing biological information;
+• links between databases.
+A database without effective modes of access is merely a data graveyard
+37
+
+
+--- PDF page 38 ---
+Useful access to data requires a set of tools for answering questions, such as:
+• ‘Does the database contain the information I require?’ (Example: can I retrieve the amino acid
+sequence of human alcohol dehydrogenase?)
+• ‘How can I assemble selected information from the database in a useful form?’ (Example: compile
+a list of globin sequences; or even better, a table of aligned globin sequences.)
+• Indices of databases are useful in asking ‘Where can I find some specific piece of information?’
+(Example: what databases contain the amino acid sequence of porcupine trypsin?) Of course, if I
+know and can specify exactly what I want, the problem is relatively straightforward.
+Mechanisms that allow effective access are an issue of database design that ideally should remain
+hidden from users. It has become clear that effective access cannot be provided by bolting a query
+system onto an unstructured archive. Instead, the logical organization of the storage of the
+information must be designed with the access in mind, considering what kinds of questions users will
+want to ask. The structure of the archive must mesh smoothly with the information-retrieval
+software.
+A variety of database queries arise in bioinformatics. Compare the following typical examples:
+1. Given a sequence, or fragment of a sequence, find sequences in the database that are similar to it.
+This is a central problem in bioinformatics. We share such string-matching problems with many
+fields of computer science. For instance, word processing and editing programs support string-
+search functions.
+2. Given a protein structure, or fragment, find protein structures in the database that are similar to it.
+This is the generalization of the string-matching problem to three dimensions.
+3. Given a sequence of a protein of unknown structure, find structures in the database that adopt
+similar three-dimensional structures. One might be tempted to cheat, to look in the sequence data
+banks for proteins with sequences similar to the probe sequence. For if two proteins have
+sufficiently similar sequences, they will have similar structures. However, the converse is not
+true, and one can hope to create more powerful search techniques that will find proteins of
+similar structure even though their sequences have diverged beyond the point where they can be
+recognized as similar by sequence comparison.
+4. Given a protein structure, find sequences in the data bank that correspond to similar structures.
+Again, one can cheat by using the structure to probe a structure data bank, but this can give only
+limited success because there are so many more sequences known than structures. It is therefore
+desirable to have a method that can pick out the structure from the sequence.
+Points 1 and 2 are solved problems; such searches are carried out thousands of times a day. Points 3
+and 4 are active fields of research.
+Information flow in bioinformatics
+Data enter the bioinformatics establishment when a scientist deposits an experimental result in an
+archive, or a database records a result appearing in the literature. The archive curates and annotates
+the data to create an entry of proper contents and format. Quality checks are part of the curation
+process. The new entry then appears in the public release of the archive.
+The division of the archive into entries is determined by the provenance of the data; that is, an
+entry corresponds to one coherent set of experimental measurements, often corresponding to one
+38
+
+
+--- PDF page 39 ---
+published article. In some cases, fragments of a complete sequence appear in several articles. A
+database can join the results to form an entry containing the complete biological entity. Currently,
+many nucleotide sequence data sets enter the databases as annotated genomes, or as unassembled
+metagenomic fragments.
+Other information-retrieval projects, either associated with an archive or independent, may
+integrate newly released entries into their individual systems. They may select or reorganize the data
+structure, and provide novel tools for analysis.
+Reorganization of the data may involve:
+• simply integrating the new entries into a general or specialized search engine;
+• extracting useful subsets of the data. Examples include (1) identification of genes in a connected
+DNA sequence, such as a bacterial genome or a eukaryotic chromosome, and (2) the extraction of
+a nonredundant set of protein sequences, to both shorten searches and reduce statistical bias;
+• deriving new types of information from the original data. A simple example: release of a protein-
+coding gene by a DNA sequence archive will trigger the appearance of its amino acid sequence
+translation in databases of protein sequences. (A not-so-simple aspect: DNA sequences don’t tell
+us about splice variants or about other important information related to the protein);
+• recombining data in different ways. Many projects group sequences or structures of families of
+homologous proteins, or proteins that share function. Examples include the MEROPS protease
+database and the Protein Kinase Resource. Some archives tend to keep related entries separate to
+preserve clarity of provenance. Some databases integrate data about a particular organism or sets
+of related organisms: FlyBase is an example;
+• reannotating the data, including provision of different constellations of links. The integration may
+be horizontal or vertical. That is, links may indicate relationships to other entries of the same type
+(for instance, correspondences within a genome among homologous genes or among genes
+associated with the same metabolic pathway). Or, links may adduce a variety of information about
+a gene or protein (for instance, links between a gene and the clinical consequences of mutations).
+Many sites serve as gateways between the archives and the computational tools available for data
+analysis. Information retrieval permits selection and extraction of data to provide the ingredients of a
+research project. Many bioinformatics resources not only offer information retrieval, but facilitate the
+‘downstream’ processing of the entries selected. A typical example would be to retrieve the
+sequences of a set of homologous genes and then to align them. The goal is to provide smooth
+integration of all the data-processing steps required for a research project, by intimate links among
+the tools for data storage, retrieval, and analysis.
+The growing importance of simultaneous access to databases has led to research in database
+interactivity: how can databases ‘talk to one another’ without too great a sacrifice of the freedom of
+each one to structure its own data in ways appropriate to the individual features of the material it
+contains?
+On the other hand there is a very strong trend towards merging and integration of data resources in
+bioinformatics. Some of the reasons for this are political: the ‘empire-building’ allele is present at
+fairly high frequency in the scientific population, and then the ‘too big to fail’ argument for
+continued and enhanced funding takes over. Scientifically, integrating databases allows for ‘one-stop
+shopping’, makes for ease of handling queries that require access to different categories of
+information, and facilitates of cross-category consistency checks in curating the data. Moreover,
+large database organizations have the personnel to provide tutorial guides: to usage of the site and to
+39
+
+
+--- PDF page 40 ---
+present scientific background. A large organization can support a help desk. Frustrated users may
+retort that the integration of the data produces a site so complex as to require guidance. However,
+there are plenty of small specialized databases that users also find confusing.
+Indeed, only national or commercial rivalries impede fusion into a single world-wide database.
+Because of the danger that the result will prove unwieldy, it will be possible to tailor access to the
+needs of particular projects. The unification of the archives will be accompanied by a fragmentation
+of the routes of access.
+Although there are good arguments for unique, or no more than partnership, control over the
+archives, there is no need to limit the ways to access them: colloquially, the design of the ‘front end’
+of the database. Specialized user communities may extract subsets of the data, or recombine data
+from different sources, and provide specialized avenues of access. Such ‘boutique’ databases depend
+on the primary archives as the source of the information they contain, but redesign the organization
+and presentation. Indeed, different derived databases can slice and dice the same information in
+different ways. This accounts for much of the great proliferation of specialized databases reported in
+the annual Nucleic Acids Research compendium.
+A reasonable extrapolation suggests the concept of specialized ‘virtual databases’ (a concept first
+suggested almost 50 years ago), grounded in the archives but providing individual scope and
+function, tailored to the needs of individual research groups or even individual scientists.
+Curation, annotation, and quality control
+The scientific and medical communities are dependent on the quality of databases. Indices of quality,
+even if they do not permit correction of mistakes, may help us avoid arriving at wrong conclusions.
+Database entries comprise raw experimental results, and supplementary information or
+annotations. Each of these has its own sources of error.
+The most important determinant of the quality of the data themselves is the state of the art of the
+experiments. Older data were limited by older techniques; for instance, amino acid sequences of
+proteins were once determined by peptide sequencing, but are now translated from DNA sequences
+(except for partial sequencing by mass spectrometry). One consequence of the data explosion is that
+most data are new data, governed by current technology, which in most cases does quite a good job.
+Annotations include information about the source of the data and the methods used to determine
+them. They identify the investigators responsible and cite relevant publications. They provide links
+to related information in other databases. In some sequence databases the annotations include feature
+tables, which are lists of segments of the sequences that have biological significance; for instance,
+regions of a DNA sequence that code for proteins. These appear in computer-parsable formats, their
+contents restricted to a controlled vocabulary. Note that a statement by each database on a controlled
+vocabulary, and the definitions of the terms that appear in the vocabulary, is essential for
+information-retrieval operations involving interactions among multiple databases, and distributed
+queries. (This is like a ‘convention card’ at a bridge tournament.)
+Formerly, a typical DNA sequence entry was produced by a single research group, investigating a
+gene and its products in a coherent way. Annotations were grounded in experimental data and written
+by specialists. In contrast, full-genome sequencing projects offer no experimental confirmation of the
+expression of most putative genes, nor characterization of their products. Curators at databases base
+much of their annotation on the analysis of the sequences by computer programs.
+Annotation is the weakest component of the genomics enterprise. Automation of annotation is
+possible only to a limited extent; getting it right remains labour-intensive, and allocated resources are
+40
+
+
+--- PDF page 41 ---
+inadequate. But the importance of proper annotation cannot be underestimated. P. Bork has
+commented that errors in gene assignments vitiate the high quality of the sequence data themselves.
+Growth of genomic data will permit improvement in the quality of annotation as statistical
+methods increase in accuracy. This will allow improved reannotation of entries. The improvement of
+annotations will be a good thing. It implies, however, the disturbing concomitant that annotation will
+be in flux. The problem is aggravated by the proliferation of websites with increasingly dense
+networks of links. Networks of websites provide useful avenues for applications. But the web is also
+a vector of contagion, propagating errors in raw data, in immature data subsequently corrected but
+the corrections not passed on, and in variant annotations.
+Perhaps the only possible solution is a distributed and dynamic error-correction and annotation
+process. Distributed in that database staff will have neither the time nor the expertise for the job;
+specialists will have to act as curators. Dynamic in that progress in automation of annotation and
+error identification/correction will permit reannotation of databases. We will have to give up the safe
+idea of a stable database composed of entries that were correct when first distributed and which will
+stay fixed. Databases will become a seething broth of information, growing in size and maturing—
+we must hope—in quality.
+Tasks of greater subtlety arise when one wishes to study relationships between information
+contained in separate databases. This requires links that facilitate simultaneous access to several
+databases. Here is an example: for which proteins of known structure involved in diseases of purine
+biosynthesis in humans are there related proteins in yeast? We are setting conditions on known
+structure, specified function, detection of relatedness, correlation with disease, and specified species.
+Today the quality of a database depends not only on the information it contains but on the
+effectiveness of its links to other related sources of information. This one of the reasons for
+integration of databases.
+The worldwide web
+    See Weblem 1.5
+All readers will have used the worldwide web, for reference material, for news, for access to
+databases in molecular biology, for checking out personal information about individuals—friends or
+colleagues or celebrities—or just for browsing. The web is a means of interpersonal and
+intercomputer contact over networks. It provides a complete global village, containing the equivalent
+of library, post office, shops, and schools.
+As a repository, the web can be thought of as a giant worldwide multimedia notice board. It
+contains text, images, cinema, and sound. Virtually anything that can be stored on a computer can be
+made available and accessed via the web. An interesting example is a site treating the poetry of Walt
+Whitman (http://www.whitmanarchive.org). The highest-level page contains a table of contents. The
+site contains printed text of different poems. You can compare different editions. You can access
+critical analysis of the poems. You can see versions of some poems in manuscripts. There is even a
+link to an audio file, from which you can hear Whitman himself reading part of a poem.
+Links embedded in a website can be internal or external. Internal links take you to other portions
+of the text of a current document, or to associated images, cinema, or sounds. External links may
+allow you to move down to more specialized documents, up to more general ones (perhaps providing
+background to technical material), sideways to parallel documents (other papers on the same
+subject), or over, to directories that show what other relevant material is available.
+41
+
+
+--- PDF page 42 ---
+Nor is the web solely a one-way street. Many web documents include forms in which you can
+enter information, and launch a program. Search engines are common examples. Many calculations
+in bioinformatics are now launched via such web servers (see Box 1.6). If the calculations are
+lengthy the results may not be returned within the session, but sent by e-mail.
+    See Weblem 1.6
+Box 1.6 Submitting a BLAST search
+A BLAST search is a common and typical example of the use of a web server in bioinformatics. Pointing a
+browser at a web server, one can paste in a sequence of interest, choose options, and submit the calculation.
+Subsequently the result will appear in the window.
+The 
+calculation 
+is 
+done 
+remotely. 
+If 
+you 
+are 
+using 
+the 
+BLAST 
+server 
+at 
+the 
+EBI
+(http://www.ebi.ac.uk/Tools/sss/ncbiblast/nucleotide.html) the computations will be done at a data centre in
+London. External users initiate ≈3.7 × 106 sequence-similarity-related jobs per month (most but not all are
+BLAST searches). Currently, the EBI dedicates a 216-node cluster to this service.
+Very soon we shall examine the results of such a search in detail.
+The main thing to do, to get started using the web effectively, is to find useful entry points. Once a
+session is launched, links will take you where you want to go. Among the most important sites are
+search engines, such as Google, that index the entire web and permit retrieval by keywords. You can
+enter one or more terms, such as ‘phosphorylase’, ‘allosteric change’, or ‘crystal structure’, and the
+search program will return a list of links to sites on the web that contain these terms.
+Once you have completed a successful session, when you next log in the intersession memory
+facilities of the browsers allow you to pick up cleanly where you left off. During any session, should
+you find yourself viewing a document to which you will want to return, you can save the link in a
+file of bookmarks or favourites. In a subsequent session you can return directly to any site on this list,
+not needing to follow the trail of links that led you there in the first place.
+A personal home page is a short autobiographical sketch (with links, of course). You and your
+colleagues will have your own home pages which typically include name, institutional affiliation,
+addresses for paper and electronic mail, telephone and fax numbers, a list of publications, and current
+research interests. It is not uncommon for home pages to include personal information, such as
+hobbies, pictures of the individual with his or her spouse and children, and even with the family dog!
+(It is important, however, not to include information that would create vulnerability to identity theft.)
+Electronic publication
+We are in an era of a transition to paper-free publishing. More and more publications are appearing
+on the web. A scientific journal may post only its table of contents, or a table of contents together
+with abstracts of articles, or complete articles. Many institutional publications—newsletters and
+technical reports—appear on the web. Many other magazines and newspapers are showing up as
+well. You might want to try http://www.nytimes.com. Many printed publications now contain
+references to web links containing supplementary material that never appears on paper.
+Major forces in the conversion of paper to electronic libraries are the advent of electronic-format-
+only journals and Google’s project to scan in the contents of a number of academic libraries. There is
+movement towards open access publication. We shall develop this topic in Chapter 3.
+42
+
+
+--- PDF page 43 ---
+Computers and computer science
+Bioinformatics would not be possible without advances in computing hardware and software. Fast
+and high-capacity storage media are essential even to maintain the archives. Information retrieval
+and analysis require programs: some fairly straightforward and others extremely sophisticated.
+Distribution of the information requires the facilities of computer networks and the worldwide web.
+Computer science is a relatively young and flourishing field with the goal of making the most
+effective use of information technology hardware. Certain areas of computer science impinge most
+directly on bioinformatics. Consider their application to a specific biological problem, that of
+retrieving from a database all sequences similar to the human PAX-6 sequence. A good solution to
+this problem would appeal to computer science for:
+• Analysis of algorithms. An algorithm is a complete and precise specification of a method for
+solving a problem. For the retrieval of similar sequences, we need to measure the similarity of the
+probe sequence to every sequence in the database. It is possible to do much better than the naive
+approach of checking every pair of positions in every possible juxtaposition, a method that even
+without allowing gaps would require a time proportional to the product of the number of
+characters in the probe sequence times the number of characters in the database. A speciality in
+computer science, known colloquially as ‘stringology’, focuses on developing efficient methods
+for this type of problem, and analysing their effective performance.
+• Data structures and information retrieval. How can we organize our data for efficient response to
+queries? For instance, are there ways to index or otherwise ‘preprocess’ the data to make our
+sequence-similarity searches more efficient? How can we provide interfaces that will assist the
+user in framing and executing queries?
+• Software engineering. Hardly ever anymore does anyone write programs in the native language of
+computers. Programmers work in higher-level languages, such as C, C++, PERL, PYTHON,
+JAVA, or even FORTRAN. The choice of programming language depends on the nature of the
+algorithm and associated data structure, and the expected use of the program. Of course, most
+complicated software used in bioinformatics is now written by specialists, which brings up the
+question of how much programming expertise a bioinformatician needs.
+Programming
+Programming is to computer science what bricklaying is to architecture. Both are creative; one is an
+art and the other a craft.
+Many students of bioinformatics ask whether it is essential to learn to write complicated computer
+programs. My advice (not agreed upon by everyone in the field) is: ‘Don’t. Unless you want to
+specialize in it.’ To work in bioinformatics, you will need to develop expertise in using tools
+available on the web. Learning how to create and maintain a website is essential. And of course you
+will need facility in the use of the your computer’s operating system, including general-purpose
+application programs such as word processors and presentation tools. Some skill in writing simple
+scripts in a language like PERL provides an essential extension to the basic facilities of the operating
+system.
+On the other hand, the size of the data archives, and the growing sophistication of the questions we
+wish to address, demand respect. Truly creative programming in the field is best left to specialists,
+with advanced training in computer science. Nor does using programs, via highly polished (not to
+43
+
+
+--- PDF page 44 ---
+say flashy) web interfaces, provide any indication of the nature of the activity involved in writing
+and debugging programs. Bismarck once said: ‘Those who love sausages or the law should not watch
+either being made.’ Perhaps computer programs should be added to his list.
+I recommend learning some basic skills with PERL, or with one of the related languages
+PYTHON or RUBY. PERL is a very powerful tool, and is available for all computer systems. PERL
+makes it very easy to carry out many very useful simple tasks, but can also be effective in projects
+demanding heavy computation.
+How should you learn enough PERL to be useful in bioinformatics? Many institutions run courses.
+Learning from colleagues is fine, depending on the ratio of your aptitude to their patience. Books are
+available. A very useful approach is to find lessons on the web: ask a search engine for ‘PERL
+tutorial’ and you will turn up many useful sites that will lead you by the hand through the basics.
+And, of course, use it as much as you can. This book will not teach you PERL, but it will provide
+opportunities to practise what you learn elsewhere. Should your programming ambitions go beyond
+simple tasks, check out the BioPERL project, a source of freely available PERL programs and
+components in the field of bioinformatics (http://bio.perl.org).
+Examples of simple PERL programs appear in this book. The strength of PERL at character-string
+handling make it suitable for sequence-analysis tasks in biology. Here is a very simple PERL
+program to translate a nucleotide sequence into an amino acid sequence according to the standard
+genetic code. The first line, #!/usr/bin/perl, is a signal to the UNIX (or LINUX) operating
+system that what follows is a PERL program. Within the program, all text commencing with a ‘#’,
+through to the end of the line on which it appears, is merely comment. The line __END__ signals that
+the program is finished and what follows is the input data. (All material that the reader might find
+useful to have in computer-readable form, including all programs, appears in the online resource
+centre associated with this book: http://www.oxfordtextbooks.co.uk/orc/leskbioinf4e/.)
+Even the simple program in Case Study 1.1 displays several features of the PERL language. The
+file contains background data (the standard genetic code translation table), statements that tell the
+computer to do something, and the input data (appearing after the __END__line). Comments
+summarize sections of the program and describe the effect of each statement.
+The program is structured as blocks enclosed in curly brackets, {…}, which are useful in
+controlling the flow of execution. Within blocks, individual statements (each ending in a semicolon,
+;) are executed in order of appearance. However, the outer block is a loop:
+while ($line = <DATA>) {
+     …
+}
+CASE STUDY 1.1 Translation of a DNA sequence to an amino acid
+sequence using the standard genetic code
+#!/usr/bin/perl
+#translate.pl -- translate nucleic acid sequence to protein sequence
+#                according to standard genetic code
+#   set up table of standard genetic code
+%standardgeneticcode = (
+"ttt"=> "Phe",   "tct"=> "Ser", "tat"=> "Tyr",   "tgt"=> "Cys",
+"ttc"=> "Phe",   "tcc"=> "Ser", "tac"=> "Tyr",   "tgc"=> "Cys",
+"tta"=> "Leu",   "tca"=> "Ser", "taa"=> "TER",   "tga"=> "TER",
+44
+
+
+--- PDF page 45 ---
+"ttg"=> "Leu",   "tcg"=> "Ser", "tag"=> "TER",   "tgg"=> "Trp",
+"ctt"=> "Leu",   "cct"=> "Pro", "cat"=> "His",   "cgt"=> "Arg",
+"ctc"=> "Leu",   "ccc"=> "Pro", "cac"=> "His",   "cgc"=> "Arg",
+"cta"=> "Leu",   "cca"=> "Pro", "caa"=> "Gln",   "cga"=> "Arg",
+"ctg"=> "Leu",   "ccg"=> "Pro", "cag"=> "Gln",   "cgg"=> "Arg",
+"att"=> "Ile",   "act"=> "Thr", "aat"=> "Asn",   "agt"=> "Ser",
+"atc"=> "Ile",   "acc"=> "Thr", "aac"=> "Asn",   "agc"=> "Ser",
+"ata"=> "Ile",   "aca"=> "Thr", "aaa"=> "Lys",   "aga"=> "Arg",
+"atg"=> "Met",   "acg"=> "Thr", "aag"=> "Lys",   "agg"=> "Arg",
+"gtt"=> "Val",   "gct"=> "Ala", "gat"=> "Asp",   "ggt"=> "Gly",
+"gtc"=> "Val",   "gcc"=> "Ala", "gac"=> "Asp",   "ggc"=> "Gly",
+"gta"=> "Val",   "gca"=> "Ala", "gaa"=> "Glu",   "gga"=> "Gly",
+"gtg"=> "Val",   "gcg"=> "Ala", "gag"=> "Glu",   "ggg"=> "Gly"
+);
+#   process input data
+while ($line = <DATA>) {                                 # read in line of
+input
+    print "$line";                                       # transcribe to
+output
+    chop();                                              # remove end-of-
+line character
+    @triplets = unpack("a3" x (length($line)/3), $line); # pull out
+successive triplets
+    foreach $codon (@triplets) {                         # loop over
+triplets
+      print "$standardgeneticcode{$codon}";              # print out
+translation of each
+    }                                                    # end loop on
+triplets
+    print "\n\n";                                        # skip line on
+output
+}                                                        # end loop on
+input lines
+#   what follows is input data
+__END__
+atgcatccctttaat
+tctgtctga
+Running this program on the given input data produces the output:
+atgcatccctttaat
+MetHisProPheAsn
+tctgtctga
+SerValTER
+Here <DATA> refers, successively, to the lines of input data (appearing after __END__). The block is
+executed once for each line of input; that is, while there is any line of input remaining.
+Three types of data structures appear in the program. The line of input data, referred to as $line,
+is a simple character string. It is split into an array or vector of triplets. An array stores several items
+in a linear order, and individual items of data can be retrieved from their positions in the array. Then,
+for ease of looking up the amino acid coded by any triplet, the genetic code is stored as an
+associative array. An associative array, or hash table, is a generalization of a simple or sequential
+45
+
+
+--- PDF page 46 ---
+array. Elements of a simple array are indexed by consecutive integers. Elements of an associative
+array are indexed by any character strings, in this case the 64 triplets. We utilize the input triplets in
+order of their appearance in the nucleotide sequence, but we need to access the elements of the
+genetic code table in an arbitrary order as dictated by the succession of triplets in the input data. A
+simple array or vector of character strings is appropriate for processing successive triplets, and the
+associative array is appropriate for looking up the amino acids that correspond to them (see Case
+Study 1.2).
+    See Weblems 1.7 and 1.8
+CASE STUDY 1.2 Assembly of overlapping fragments
+Here is another PERL program, that illustrates additional aspects of the language. It continues to emphasize the
+importance of descriptive comments as an essential part of good programming style. This program reassembles
+the sentence:
+                           All the world’s a stage,
+And all the men and women merely players;
+They have their exits and their entrances,
+And one man in his time plays many parts.
+after it has been chopped into random overlapping fragments (\n in the fragments represents end-of-line in the
+original):
+the men and women merely players;\n
+one man in his time
+All the world’s
+their entrances,\nAnd one man
+stage,\nAnd all the men and women
+They have their exits and their entrances,\n
+world’s a stage,\nAnd all
+their entrances,\nAnd one man
+in his time plays many parts.
+merely players;\nThey have
+This kind of calculation is important in assembling DNA sequences from overlapping fragments.
+#!/usr/bin/perl
+#assemble.pl -- assemble overlapping fragments of strings
+#  input of fragments
+while ($line = <DATA>) {                 #   read in fragments, 1 per line
+   chop($line);                          #   remove trailing carriage
+return
+   push(@fragments,$line);               #   copy each fragment into array
+}
+#  now array  @fragments  contains fragments
+#  we need two relationships between fragments:
+#  (1) which fragment shares no prefix with suffix of another fragment
+#      * This tells us which fragment comes first
+#  (2) which fragment shares longest suffix with a prefix of another
+#      * This tells us which fragment  follows  any fragment
+46
+
+
+--- PDF page 47 ---
+#  First set array of prefixes to the default value   "noprefixfound".
+#      Later, change this default value when a prefix is found.
+#      The one fragment that retains the default value must be come first.
+#  Then loop over pairs of fragments to determine maximal overlap.
+#      This determines successor of each fragment
+#      Note in passing that if a fragment has a successor then the
+#          successor must have a prefix
+foreach $i (@fragments) {                #   initially set  prefix of each
+fragment
+    $prefix{$i} = "noprefixfound";       #       to  "noprefixfound"
+    }                                    #   this will be overwritten when
+a prefix is found
+#  for each pair, find longest overlap of suffix of one with prefix of the
+other
+#       This tells us which fragment FOLLOWS any fragment
+foreach $i (@fragments) {                #   loop over fragments
+    $longestsuffix = "";                 #   initialize longest suffix to
+null
+    foreach $j (@fragments) {            #   loop over fragment pairs
+        unless ($i eq $j) {              #   don’t check fragment against
+itself
+            $combine = $i . "XXX" . $j;  #   concatenate fragments, with
+fence XXX
+            $combine =~ /([\S ]{2,})XXX\1/;   #   check for repeated
+sequence
+            if (length($1) > length($longestsuffix)) {    # keep longest
+overlap
+                $longestsuffix = $1;     #   retain longest suffix
+                $successor{$i} = $j;     #   record that $j follows $i
+            }
+        }
+    }
+    $prefix{$successor{$i}} = "found";   #  if $j follows $i then $j must
+have a prefix
+}
+foreach (@fragments) {                   # find fragment that has no
+prefix; that’s the start
+    if ($prefix{$_} eq "noprefixfound") {$outstring = $_;}
+}
+$test = $outstring;                      #   start with fragment without
+prefix
+while ($successor{$test}) {              #   append fragments in order
+     $test = $successor{$test};          #   choose next fragment
+     $outstring = $outstring . "XXX" . $test;  # append to string
+     $outstring =~ s/([\S ]+)XXX\1/\1/;  #   remove overlapping segment
+}
+$outstring =~ s/\\n/\n/g;                #   change signal \n to real
+carriage return
+print "$outstring\n";                    #   print final result
+__END__
+the men and women merely players;\n
+one man in his time
+47
+
+
+--- PDF page 48 ---
+All the world’s
+their entrances,\nand one man
+stage,\nAnd all the men and women
+They have their exits and their entrances,\n
+world’s a stage,\nAnd all
+their entrances,\nand one man
+in his time plays many parts.
+merely players;\nThey have
+Biological classification and nomenclature
+Back to the eighteenth century when academic life was simpler, at least in some respects.
+Biological nomenclature is based on the idea that living things are divided into units called
+species: groups of similar organisms with a common gene pool. (Why living things should be
+‘quantized’ into discrete species is a very complicated question.) Linnaeus, a Swedish naturalist,
+classified living things according to a hierarchy: kingdom, phylum, class, order, family, genus, and
+species. Modern taxonomists have added additional levels. For identification it generally suffices to
+specify the binomial genus and species; for instance, Homo sapiens for human or Drosophila
+melanogaster for fruit fly. Each binomial uniquely specifies a species that may also be known by one
+or more common names; for instance, Bos taurus = cow. Of course, most species have no common
+names.
+    See Weblems 1.9, 1.10, 1.11
+Taxonomic classifications of human and fruit fly
+Human
+Fruit fly
+Kingdom
+Animalia
+Animalia
+Phylum
+Chordata
+Arthropoda
+Class
+Mammalia
+Insecta
+Order
+Primata
+Diptera
+Family
+Hominidae
+Drosophilidae
+Genus
+Homo
+Drosophila
+Species
+sapiens
+melanogaster
+Originally the Linnaean system was only a classification based on observed similarities. Once
+evolution was understood it emerged that the system largely reflects biological ancestry. But which
+similarities truly reflect common ancestry? Characteristics derived from a common ancestor are
+homologous; for instance, an eagle’s wing and a human’s arm. Other apparently similar
+characteristics may have arisen independently by convergent evolution; for instance, an eagle’s wing
+and a bee’s wing: the most recent common ancestor of eagles and bees did not have wings.
+Conversely, truly homologous characters may have diverged to become very dissimilar in structure
+and function. The bones of our middle ears are homologous to bones in the jaws of primitive fishes;
+our eustachian tubes are homologues of gill slits. In most cases experts can distinguish true
+homologies from similarities resulting from convergent evolution.
+Sequence analysis gives the most unambiguous evidence for the relationships among species. The
+system works well for higher organisms, for which sequence analysis and the classical tools of
+comparative anatomy, palaeontology, and embryology usually give a consistent picture.
+48
+
+
+--- PDF page 49 ---
+Classification of microorganisms is more difficult, partly because it is less obvious how to select the
+features on which to classify them and partly because a large amount of lateral gene transfer
+threatens to overturn the picture entirely.
+Ribosomal RNAs (rRNAs) turned out to have the essential feature of being present in all
+organisms, with the right degree of divergence. (Too much or too little divergence and relationships
+become invisible, as is apparent when looking into phylogenetic relationships among elephants and
+mammoths; see Case Study 1.5).
+On the basis of 15S rRNAs, C. Woese divided living things most fundamentally into three
+domains (a level above kingdom in the hierarchy): Bacteria, Archaea, and Eukarya (see Fig. 1.2).
+Bacteria and archaea are prokaryotes; their cells do not contain nuclei. Bacteria include the typical
+microorganisms responsible for many infectious diseases, and, of course, Escherichia coli, the
+mainstay of molecular biology. Archaea include, but are not limited to, extreme thermophiles and
+halophiles, sulphate reducers, and methanogens. We ourselves are Eukarya—organisms containing
+cells with nuclei—as are yeasts and all other multicellular organisms.
+Figure 1.2 Major divisions of living things, derived by C. Woese on the basis of 15S RNA sequences.
+A census of the species with sequenced genomes reveals emphasis on bacteria, because of their
+clinical importance, and for the relative ease of sequencing genomes of prokaryotes. However,
+despite the obvious differences in lifestyle, and the absence of a nucleus, Archaea are in some ways
+more closely related on a molecular level to Eukarya than to Bacteria. It is also likely that the
+Archaea are the closest living organisms to the root of the tree of life.
+Figure 1.2 shows the deepest levels of the tree. The Eukarya branch includes animals, plants, and
+fungi. At the ends of the eukarya branch are the metazoa (multicellular organisms) (Fig. 1.3). We and
+our closest relatives are deuterostomes (Fig. 1.4).
+Figure 1.3 Phylogenetic tree of metazoa (multicellular animals). Bilaterians include all animals that share a left/right
+symmetry of body plan. Protostomes and deuterostomes are two major lineages that separated at an early stage of
+evolution, estimated at 670 million years ago. They show very different patterns of embryological development,
+including different early cleavage patterns, opposite orientations of the mature gut with respect to the earliest
+49
+
+
+--- PDF page 50 ---
+invagination of the blastula, and the origin of the skeleton from mesoderm (deuterostomes) or ectoderm (protostomes).
+Protostomes comprise two subgroups distinguished on the basis of 18S RNA (from the small ribosomal subunit) and
+HOX gene sequences. Morphologically, Ecdysozoa have a moulting cuticle: a hard outer layer of organic material.
+Lophotrochozoa have soft bodies.
+Based on Adouette, A., Balavoine, G., Lartillot, N., Lespinet, O., Prud’homme, B., and de Rosa, R. (2000). The new
+animal phylogeny: reliability and implications. Proc. Natl. Acad. Sci. USA, 97, 4453–4456.
+Figure 1.4 Phylogenetic tree of vertebrates and our closest relatives. Chordates, including vertebrates, and
+echinoderms are all deuterostomes.
+Use of sequences to determine phylogenetic relationships
+Previous sections have introduced sequence databases and biological relationships. Case Studies 1.3,
+1.4, and 1.5 are examples of the application of sequence retrieval from databases, and the use of
+sequence comparisons to analyse biological relationships.
+    See Weblems 1.13, 1.14
+CASE STUDY 1.3 Retrieve the amino acid sequence of horse pancreatic
+ribonuclease
+Use the ExPASy server at the Swiss Institute for Bioinformatics. The URL is
+http://www.expasy.org.
+Type in the keywords:
+horse pancreatic ribonuclease
+followed by the ENTER key. Select RNP_HORSE and then FASTA format. The ID code
+RNP_HORSE comprises abbreviations of the molecule and the species (see Box 1.7). This will
+produce the following (the first line has been truncated):
+>sp|P00674|RNP_HORSE RIBONUCLEASE PANCREATIC (EC 3.1.27.5) (RNASE 1) …
+KESPAMKFERQHMDSGSTSSSNPTYCNQMMKRRNMTQGWCKPVNTFVHEP
+LADVQAICLQKNITCKNGQSNCYQSSSSMHITDCRLTSGSKYPNCAYQTS
+QKERHIIVACEGNPYVPVHFDASVEVST
+For example, we could retrieve several sequences and align them (see Box 1.8). Analysis of
+patterns of similarity among aligned sequences are useful properties in assessing closeness of
+relationships.
+Box 1.7 FASTA format
+50
+
+
+--- PDF page 51 ---
+A very common format for sequence data is derived from conventions of FASTA, a program for fast alignment
+by W.R. Pearson. Many programs use the FASTA format for reading sequences, or for reporting results.
+A sequence in FASTA format:
+• Begins with a single-line description. The symbol > must appear in the first column. The rest of the title line is
+arbitrary but should be informative.
+• Subsequent lines contain the sequence, one character per residue.
+• Use one-letter codes for nucleotides or amino acids specified by the International Union of Biochemistry and
+International Union of Pure and Applied Chemistry (IUB/IUPAC):
+http://www.chem.qmw.ac.uk/iupac/misc/naabb.html and http://www.chem.qmw.ac.uk/iupac/AminoAcid/
+• Use Sec and U as the three-letter and one-letter codes for selenocysteine:
+http://www.chem.qmw.ac.uk/iubmb/newsletter/1999/item3.html
+• Lines can have different lengths; that is, ‘ragged right’ margins.
+• Most programs will accept lower-case letters as amino acid codes.
+An example of FASTA format for bovine glutathione peroxidase:
+>gi|121664|sp|P00435|GSHC_BOVIN GLUTATHIONE PEROXIDASE
+MCAAQRSAAALAAAAPRTVYAFSARPLAGGEPFNLSSLRGKVLLIENVASLUGTTVRDYTQMNDLQRRLG
+PRGLVVLGFPCNQFGHQENAKNEEILNCLKYVRPGGGFEPNFMLFEKCEVNGEKAHPLFAFLREVLPTPS
+DDATALMTDPKFITWSPVCRNDVSWNFEKFLVGPDGVPVRRYSRRFLTIDIEPDIETLLSQGASA
+The title line contains the following fields:
+• > is obligatory in column 1.
+• gi|121664 is the geninfo (gi) number, an identifier assigned by the US National Center for Biotechnology
+Information (NCBI) to every sequence in its ENTREZ data bank. The NCBI collects sequences from a variety
+of sources, including primary archival data collections and patent applications. Its gi numbers provide a
+common and consistent ‘umbrella’ identifier, superimposed on different conventions of source databases.
+When a source database updates an entry, the NCBI creates a new entry with a new gi number if the changes
+affect the sequence, but updates and retains its entry if the changes affect only non-sequence information, such
+as a literature citation.
+• sp|P00435 indicates that the source database was SWISS-PROT, and that the accession number of the entry in
+SWISS-PROT was P00435.
+• GSHC_BOVIN GLUTATHIONE PEROXIDASE is the SWISS-PROT identifier of sequence and species
+(GSHC_BOVIN), followed by the name of the molecule.
+Box 1.8 Alignment
+51
+
+
+--- PDF page 52 ---
+    See Weblem 1.12
+CASE STUDY 1.4 Determine, from the sequences of pancreatic
+ribonuclease from horse (Equus caballus), minke whale (Balaenoptera
+acutorostrata), and red kangaroo (Macropus rufus), which two of these
+species are most closely related
+Knowing that horse and whale are placental mammals and kangaroo is a marsupial, we expect horse and whale
+to be the closest pair. Retrieving the three sequences as in the previous example, and pasting the following:
+>RNP_HORSE
+52
+
+
+--- PDF page 53 ---
+KESPAMKFERQHMDSGSTSSSNPTYCNQMMKRRNMTQGWCKPVNTFVHEP
+LADVQAICLQKNITCKNGQSNCYQSSSSMHITDCRLTSGSKYPNCAYQTS
+QKERHIIVACEGNPYVPVHFDASVEVST
+>RNP_BALAC
+RESPAMKFQRQHMDSGNSPGNNPNYCNQMMMRRKMTQGRCKPVNTFVHES
+LEDVKAVCSQKNVLCKNGRTNCYESNSTMHITDCRQTGSSKYPNCAYKTS
+QKEKHIIVACEGNPYVPVHFDNSV
+>RNP_MACRU
+ETPAEKFQRQHMDTEHSTASSSNYCNLMMKARDMTSGRCKPLNTFIHEPK
+SVVDAVCHQENVTCKNGRTNCYKSNSRLSITNCRQTGASKYPNCQYETSN
+LNKQIIVACEGQYVPVHFDAYV
+into the multiple sequence alignment program CLUSTAL-W (http://www.ebi.ac.uk/Tools/msa/clustalw2/) or,
+alternatively, T-Coffee (http://www.ch.embnet.org/software/TCoffee.html) produces the following:
+CLUSTAL W (1.8) multiple sequence alignment
+RNP_HORSE KESPAMKFERQHMDSGSTSSSNPTYCNQMMKRRNMTQGWCKPVNTFVHEPLADVQAICLQ 60
+RNP_BALAC RESPAMKFQRQHMDSGNSPGNNPNYCNQMMMRRKMTQGRCKPVNTFVHESLEDVKAVCSQ 60
+RNP_MACRU -ETPAEKFQRQHMDTEHSTASSSNYCNLMMKARDMTSGRCKPLNTFIHEPKSVVDAVCHQ 59
+           *:** **:*****:  :……*** **  *.**.* ***:***:**.   *.*:* *
+RNP_HORSE KNITCKNGQSNCYQSSSSMHITDCRLTSGSKYPNCAYQTSQKERHIIVACEGNPYVPVHF 120
+RNP_BALAC KNVLCKNGRTNCYESNSTMHITDCRQTGSSKYPNCAYKTSQKEKHIIVACEGNPYVPVHF 120
+RNP_MACRU ENVTCKNGRTNCYKSNSRLSITNCRQTGASKYPNCQYETSNLNKQIIVACEG-QYVPVHF 118
+          :*: ****::***:*.* : **:** *..****** *:**: :::*******  ******
+RNP_HORSE DASVEVST 128
+RNP_BALAC DNSV---- 124
+RNP_MACRU DAYV---- 122
+          *  *
+In this table, a * under the sequences indicates a position that is conserved (the same in all sequences), and : and
+. indicate positions at which all sequences contain residues of very similar physicochemical character (:) or
+somewhat similar physicochemical character (.).
+Large patches of the sequences are identical. There are numerous substitutions but only one internal deletion.
+By comparing the sequences in pairs, the number of identical residues shared among pairs in this alignment
+(not the same as counting *s) is:
+Number of identical residues in aligned
+ribonuclease
+A sequences (out of a total of 122–128
+residues)
+Horse and minke whale
+95
+Minke whale and red kangaroo
+82
+Horse and red kangaroo
+75
+Horse and whale share the highest number of identical residues. The result appears significant, and therefore
+confirms our expectations. Warning: or is the logic really the other way round?
+Let’s try a hard one: are mammoths more closely related to Indian or African elephants?
+• We ‘know’ that African and Indian elephants and mammoths must be close relatives: just look at
+them. But could we tell from these sequences alone that they are from closely related species?
+• Given that the differences are so few, do they represent true evolutionary divergence or merely
+random noise or drift?
+As background to such questions, let us re-emphasize the distinction between similarity and
+53
+
+
+--- PDF page 54 ---
+homology. Similarity is the observation or measurement of resemblance and difference, independent
+of the source of the resemblance. Homology means, specifically, that the sequences and the
+organisms in which they occur are descended from a common ancestor, with the implication that the
+similarities are shared ancestral characteristics. Similarity of sequences (or of macroscopic biological
+characters) is observable in data collectable now, and involves no historical hypotheses. In contrast,
+assertions of homology are statements of historical events that are almost always unobservable.
+Homology must be an inference from observations of similarity. Only in a few cases is homology
+directly
+CASE STUDY 1.5 Phylogeny of Elephantidae
+The two living genera of elephant are represented by the African elephant (Loxodonta africana) and the Indian
+elephant (Elephas maximus). Can we decide, from the sequences of the haemoglobin α-chains of these species,
+to which modern elephant the Siberian mammoth Mammuthus primigenius is more closely related?
+Retrieving the amino acid sequences, and running CLUSTAL-W:
+E. maximus           -VLSDKDKTNVKATWSKVGDHASDYVAEALERMFFSFPTTKTYFPHFDLS 49
+L. africana          -VLSDNDKTNVKATWSKVGDHASDYVAEALERMFFSFPTTKTYFPHFDLG 49
+M. primigenius       MVLSDNDKTNVKATWSKVGDHASDYVAEALERMFFSFPTTKTYFPHFDLS 50
+                      ****:*******************************************.
+E. maximus           HGSGQVKGHGKKVGEALTQAVGHLDDLPSALSALSDLHAHKLRVDPVNFK 99
+L. africana          HGSGQVKAHGKKVGEALTQAVGHLDDLPSALSALSDLHAHKLRVDPVNFK 99
+M. primigenius       HGSGQVKGHGKKVGEALTQAVGHLDDLPSALSALSDLHAHKLRVDPVNFK
+100
+                     *******.******************************************
+E. maximus           LLSHCLLVTLSSHQPTEFTPEVHASLDKFLSNVSTVLTSKYR 141
+L. africana          LLSHCLLVTLSSHQPTEFTPEVHASLDKFLSNVSTVLTSKYR 141
+M. primigenius       LLSHCLLVTLSSHQPTEFTPEVHASLDKFLSNVSTVLTSKYR 142
+                     ******************************************
+The mammoth and African elephant sequences have two mismatches, and the mammoth and Indian elephant
+sequences have one mismatch, but not at the position of a mammoth/African elephant mismatch. Forced to form
+a conclusion, we would have to suggest that the mammoth is more closely related to the Indian elephant.
+However, this result is less satisfying than the previous one. There are so few differences! Are they significant?
+(In this case, it is harder to decide whether the differences are significant because we have no preconceived idea
+of what the answer should be.) The data strongly suggest that we should identify and compare other sets of
+sequences from these species.
+observable; for instance in pedigrees of families showing unusual phenotypes such as the Hapsburg
+lip, or in laboratory populations, or in clinical studies that follow the course of viral infections at the
+sequence level in individual patients. The new field of metagenomics will provide other examples
+(See Chapter 2, and Introduction to Genomics; Lesk 2011).
+The assertion that the haemoglobin α-chains from African and Indian elephants and mammoths are
+homologous means that there was a common ancestor, presumably containing a unique haemoglobin
+α-chain, that by alternative mutations gave rise to the proteins of mammoths and modern elephants.
+Is the very high degree of similarity of the sequences proof that they are homologous, or are there
+other possible explanations?
+• It might be that a functional haemoglobin α-chain requires so many conserved residues that
+54
+
+
+--- PDF page 55 ---
+haemoglobins from all animals must be as similar to one another as the elephant and mammoth
+proteins are, whether or not they are homologues. We can test this by looking at haemoglobin α-
+chain sequences from other species. The result is that the corresponding sequences from other
+animals differ substantially from those of elephants and mammoths.
+• A second possibility is that there are special physiological requirements for a haemoglobin α-chain
+to function well in an animal with the size and form of an elephant, that the three sequences
+started out from independent ancestors, and that common selective pressures forced them to
+become similar. (Remember that we are asking what can be deduced from these sequences alone.)
+• The mammoth may be more closely related to the African elephant, but since the time of the last
+common ancestor the haemoglobin α-chain sequence of the African elephant may have evolved
+faster than that of the Indian elephant or the mammoth, accumulating more mutations.
+• A fourth hypothesis is that all common ancestors of elephants and mammoths had very dissimilar
+sequences, but that living elephants and mammoths gained a common gene by transfer from a
+species in some other family via a virus.
+Suppose, however, that we are satisfied that the similarity of the elephant and mammoth sequences is
+high enough to imply homology: what then about the ribonuclease sequences in Case Study 1.4? Are
+the larger differences among the pancreatic ribonucleases of horse, whale, and kangaroo evidence
+that they are not homologues?
+How can we answer these questions? Specialists have undertaken careful calibrations of sequence
+similarities and divergences, among many proteins from many species for which the taxonomic
+relationships have been worked out by classical methods. In the example of pancreatic ribonucleases,
+the reasoning from similarity to homology is justified. In the second edition of this book, I wrote:
+‘The question of whether mammoths are closer to African or Indian elephants was decided only
+recently, in favour of African elephants.’ Since then, expert opinion—including that of some of the
+same experts—has shifted to the conclusion that Indian elephants are the closest extant relatives of
+mammoths. Why has this question proved so difficult? It reflects the limited power of our tools,
+applied to the available data, to resolve events that happened very close to each other, very long ago.
+    See Weblems 1.15, 1.16, 1.17
+The three major groups of elephants are: African elephants, Asian elephants, and mammoths. These
+taxa comprise a family, the Elephantidae, containing three main genera: Loxodonta, including the
+African species L. africana; Elephas, including the Asian species E. maximus; and Mammuthus,
+including the Siberian species M. primigenius. (At the family level in our lineage, humans,
+chimpanzees, gorillas, and orangutans comprise the hominidae.)
+The genera in the family Elephantidae diverged about 6 million years ago in Africa, at
+approximately the same time as the divergence of human and chimpanzee ancestors. Today,
+‘mammoth’ connotes an extinct Arctic animal. However, our ancestors hunted mammoths in
+Southern Europe, as depicted in cave-wall paintings (see Box 1.9).
+The challenging phylogenetic problem is to determine the branching order of Asian and African
+elephants and mammoths. Which group split off first? It took only ≈500 000 years to establish the
+three lineages. The shortness of this time makes great demands on our analytical tools.
+Other factors that make the identification of the true branching pattern difficult include:
+• is the sequence of a close relative available to serve for comparison (as an outgroup). The earliest
+work on the mammoth genome used dugong or hyrax as the outgroup. These diverged from
+55
+
+
+--- PDF page 56 ---
+elephants ≈65 million years ago. Sequences from the American mastodon (Mammut americanum)
+have provided a more suitable outgroup in recent investigations;
+• small population sizes may increase the importance of fluctuations;
+• the assumption of constant rates of evolution in the different lineages may be unjustified.
+Current data and analysis suggest that mammoths are more closely related to Asian elephants.
+Despite the difficulty of the elephant/mammoth problem, analysis of sequence similarities in
+genomes and proteins is now sufficiently well established that it is considered the most reliable
+method for
+Box 1.9 Mammoth fossils helped shape ideas about species extinction
+Cuvier himself first distinguished the African, Asian, and mammoth lineages, in a 1796 paper. Cuvier accepted
+the idea that species could become extinct, a prerequisite to development of ideas about evolution. Many
+contemporaries believed instead in the immutability of species. US President Thomas Jefferson was one. He
+instructed Meriwether Lewis and William Clark, explorers of the Louisiana Territory purchased from France in
+1803, to look out for living mammoths.
+establishing phylogenetic relationships, even though sometimes the results may not be significant
+and in other cases they even give incorrect answers. Except for many—but not all—attempts to treat
+extinct species, there are copious data available, effective tools for retrieving what is necessary to
+bring to bear on a specific question, and powerful analytical tools. None of this replaces the need for
+thoughtful scientific judgement.
+Use of SINES and LINES to derive phylogenetic relationships
+Major problems with inferring phylogenies from comparisons of gene and protein sequences are (1)
+the wide range of variation of similarity, which may dip below statistical significance, and (2) the
+effects of different rates of evolution along different branches of the evolutionary tree. In many
+cases, even if sequence similarities confidently establish relationships, it may be very difficult or
+impossible to decide the order in which sets of taxa have split. (The Elephantidae are an example.)
+The phylogeneticist’s dream—features that have an ‘all-or-none’ character, the appearance of which
+is irreversible so that the order of branching events can be decided—is in some cases afforded by
+certain noncoding sequences in genomes.
+Short and long interspersed nuclear elements, or SINES and LINES, are repetitive noncoding
+sequences that form large fractions of eukaryotic genomes; that is, at least 30% of human
+chromosomal DNA and over 50% of some higher plant genomes. Typically, SINES are ≈70–500
+base pairs long, and up to 106 copies may appear. LINES may be up to 7000 base pairs long, and up
+to 105 copies may appear. SINES enter the genome by reverse transcription of RNA. Most SINES
+contain a 5′ region homologous to tRNA, a central region unrelated to tRNA, and a 3′ AT-rich
+region.
+Features of SINES that make them useful for phylogenetic studies include the following.
+• A SINE is either present or absent. Presence of a SINE at any particular position is a property that
+entails no complicated and variable measure of similarity.
+• SINES are inserted at random in the noncoding portion of a genome. Therefore appearance of
+56
+
+
+--- PDF page 57 ---
+similar SINES at the same locus in two species implies that the species share a common ancestor
+in which the insertion event occurred. No analogue of convergent evolution muddies this picture,
+because there is no selection for the site of insertion.
+• SINE insertion appears to be irreversible: no mechanism for loss of SINES is known, other than
+rare large-scale deletions or translocations that include the SINE site. Therefore if two species
+share a SINE at a common locus, absence of this SINE in a third species implies that the first two
+species must be more closely related to each other than either is to the third.
+• Not only do SINES show relationships, they imply which species branched off first. The last
+common ancestor of species containing a common SINE must have come after the last common
+ancestor linking these species and another that lacks this SINE.
+N. Okada and colleagues applied SINE sequences to questions of phylogeny.
+Whales, like Australians, are mammals that have adopted an aquatic lifestyle. But what—in the
+case of the whales—are their closest land-based relatives? Classical palaeontology linked the order
+Cetacea—comprising whales, dolphins, and porpoises—with the order Artiodactyla, the even-toed
+ungulates (including cows and sheep, for instance). Cetaceans were thought to have diverged before
+the common ancestor of the three extant artiodactyl suborders: Suiformes (pigs), Tylopoda
+(including camels and llamas), and Ruminantia (including deer, cows, goats, sheep, antelopes,
+giraffes, etc.). To place cetaceans properly among these groups, several studies were carried out with
+DNA sequences. Comparisons of mitochondrial DNA, and genes for pancreatic ribonuclease, γ-
+fibrinogen, and other proteins, suggested that the closest relatives of the whales are hippopotamuses,
+and that cetaceans and hippopotamuses form a separate group within the artiodactyls, most closely
+related to the Ruminantia.
+Analysis of SINES confirms this relationship. Several SINES are common to Ruminantia,
+hippopotamuses, and cetaceans. Four SINES appear in hippopotamuses and cetaceans only. These
+observations imply the phylogenetic tree shown in Figure 1.5, in which the SINE insertion events are
+marked.
+    See Weblems 1.18, 1.19
+Figure 1.5 Phylogenetic relationships among cetaceans and other artiodactyl subgroups, derived from analysis of
+SINE sequences. Arrowheads mark insertion events. Each arrowhead indicates the presence of a particular SINE or
+LINE at a specific locus in all species to the right of the arrowhead. Lower-case letters identify loci, upper-case letters
+identify sequence patterns. For instance, the ARE2 pattern appears only in pigs, at the ino locus. The ARE pattern
+appears twice in the pig genome, at loci gpi and pro, and in the peccary genome at the same loci. The ARE insertion
+occurred in a species that was ancestral to pigs and peccaries but to no other species in the diagram. This implies that
+pigs and peccaries are more closely related to each other than to any of the other animals studied.
+From Nikaido, M., Rooney, A.P., and Okada, N. (1999). Phylogenetic relationships among cetartiodactyls based on
+insertions of short and long interspersed elements: hippopotamuses are the closest extant relatives of whales. Proc.
+Natl. Acad. Sci. USA, 96, 10261–10266. Copyright 1999, National Academy of Sciences, USA. Reproduced by
+permission.
+57
+
+
+--- PDF page 58 ---
+Figure 1.6 The polypeptide chains of proteins have a mainchain of constant structure and sidechains that vary in
+sequence. Here Si−1, Si, and Si+1 represent sidechains. The sidechains may be chosen, independently, from the set of
+20 standard amino acids. It is the sequence of the sidechains that gives each protein its individual structural and
+functional characteristics.
+Figure 1.7 Standard secondary structures of proteins. (a) α-Helix. Hydrogen atoms not shown. (b) β-Sheet. (b)
+Illustrates a parallel β-sheet, in which all strands point in the same direction. Antiparallel β-sheets, in which all pairs of
+adjacent strands point in opposite directions, are also common. In fact, β-sheets can be formed by any combination of
+parallel and antiparallel strands.
+Recently discovered fossils of land-based ancestors of whales confirm the link between whales and
+artiodactyls. This is a good example of the complementarity between molecular and palaeontological
+methods: DNA sequence analysis can specify relationships among living species quite precisely, but
+fossils reveal relationships among their extinct ancestors.
+Searching for similar sequences in databases: PSI-BLAST
+A common theme of the examples we have treated is the search of a database for items similar to a
+probe. For instance, if you are studying a novel gene, or if you identify within the human genome a
+gene responsible for some disease, you will wish to determine whether related genes appear in other
+species. The ideal method is both sensitive—that is, it picks up even very distant relationships—and
+selective—that is, all the relationships that it reports are true (see Box 1.10).
+A powerful tool for searching sequence databases with a probe sequence is PSI-BLAST, from the
+NCBI. PSI-BLAST stands for Position Specific Iterated – Basic Local Alignment Search Tool. A
+previous program, BLAST, worked by identifying local regions of similarity without gaps and then
+piecing them together. The PSI in PSI-BLAST refers to enhancements that identify patterns within
+the sequences at preliminary stages of the database search, and then progressively refine them.
+Recognition of conserved patterns can sharpen both the selectivity and sensitivity of the search. PSI-
+BLAST involves a repetitive (or iterative) process, as the emergent pattern becomes better defined in
+successive stages of the search. (See Case Study 1.6 and Chapter 5.)
+58
+
+
+--- PDF page 59 ---
+The few PSI-BLAST hits to the probe sequence PAX-6 shown later appear in the format:
+paired box protein Pax-6 isoform a [Homo sapiens]
+A longer list of hits would of course include multiple sequences from many of the species, and
+contributions from many more species. How would we extract these species names from the results?
+The following is a typical example of the pattern-identification facilities of PERL (Case Study 1.7).
+Box 1.10 Sensitivity and selectivity
+Database search methods involve a tradeoff between sensitivity and selectivity. Does the method find all or most
+of the examples that are actually present, or does it miss a large fraction? Conversely, how many of the ‘hits’ that
+it reports are incorrect? Suppose a database contains 1000 globin sequences and that a search of this database for
+globins reported 900 results, 700 of which were really globin sequences and 200 of which were not. This result
+would be said to have 300 false negatives (misses) and 200 false positives. There is a tradeoff between sensitivity
+and selectivity: lowering a tolerance threshold will increase the numbers of both false negatives and false
+positives. Often one is willing to work with low thresholds to be sure of not missing anything that might be
+important, but this requires detailed examination of the results to eliminate the false positives.
+Et in terra PAX hominibus, muscisque…
+The eyes of the human, fly, and octopus are very different in structure. Conventional wisdom, noting the
+immense selective advantage conferred by the ability to see, held that eyes arose independently in different
+phyla. It therefore came as a great surprise that a gene controlling human eye development has a homologue
+governing eye development in Drosophila.
+The PAX-6 gene was first cloned in the mouse and human. It is a master regulatory gene, controlling a
+complex cascade of events in eye development. Mutations in the human gene cause the clinical condition
+aniridia, a developmental defect in which the iris of the eye is absent or deformed. The PAX-6 homologue in
+Drosophila—called the eyeless gene—has a similar function of control over eye development. Flies mutated in
+this gene develop without eyes; conversely, expression of this gene in a fly’s wing, leg, or antenna produces
+ectopic (i.e. out-of-place) eyes. (The Drosophila eyeless mutant was first described in 1915. Little did anyone
+then suspect a relation to a mammalian gene.)
+Not only are the insect and mammalian genes similar in sequence, they are so closely related that their
+function crosses species boundaries. Expression of the mouse PAX-6 gene in the fly causes ectopic eye
+development just as expression of the fly’s own eyeless gene does. (It should not, however, be thought that eye
+development is under the control of a single gene.  The expression of mouse PAX-6 in the fly triggers a complex
+cascade of fly genes.)
+PAX-6 has homologues in other phyla, including flatworms, ascidians, sea urchins, and nematodes. The
+observation that rhodopsins—a family of proteins containing retinal as a common chromophore—function as
+light-sensitive pigments in different phyla is supporting evidence for a common origin of different photoreceptor
+systems. The genuine structural differences in the macroscopic anatomy of different eyes reflect the divergence
+and independent development of higher-order structure.
+CASE STUDY 1.6 PAX-6 genes
+Homologues of the human PAX-6 gene
+PAX-6 genes control eye development in a widely divergent set of species (see Et in terra PAX hominibus,
+muscisque…). The human PAX-6 gene encodes the protein appearing in UniProtKB/SWISS-PROT entry
+P26367. (Tip: the easiest way to retrieve the sequence is to type HUMAN PAX-6 into a Google search.)
+59
+
+
+--- PDF page 60 ---
+To run PSI-BLAST, go to the following URL: http://www.ncbi.nlm.nih.gov/BLAST. Enter the sequence and
+use the default options for selections of the database to search, and the similarity matrix to use, and select PSI-
+BLAST as the algorithm.
+The program returns a list of entries similar to the probe, sorted in decreasing order of statistical significance.
+(Extracts from the response are shown in the box entitled  Results of a PSI-BLAST search for human PAX-6
+protein. Only a few lines are shown, merely to illustrate the format.) A typical line appears as follows:
+pir ||I45557 eyeless, long form - fruit fly (Drosophila melano… 250 2e-64
+The first item on the line is the database and corresponding entry number (separated by ||), in this case Protein
+Identification Resource (PIR) entry I45557. It is the Drosophila homologue eyeless. The number 250 is a score
+for the match detected, and the significance of this match is measured by E = 2 × 10−64. E is related to the
+probability that the observed degree of similarity could have arisen by chance: E is the number of sequences
+that would be expected to match as well or better than the one being considered, if the same database were
+probed with random sequences. E = 2 × 10−64 means that it is extremely unlikely that even one random
+sequence would match as well as the Drosophila homologue. Values of E below about 0.05 would be
+considered significant; at least they might be worth considering. For borderline cases, you would ask: are the
+mismatches conservative? Is there any pattern or are the matches and mismatches distributed randomly through
+the sequences? There is an elusive concept, the texture of an alignment, that you will become sensitive to. The
+court of last resort is whether the structures are similar, but often this information is not available.
+Note that if there are many sequences in the database that are very similar to the probe sequence, they will
+head the list. In this example, there are many very similar PAX genes in other mammals. You may have to scan
+far down the list to find a distant relative that you consider to be interesting.
+Even in the case of Drosophila eyeless, a very close relative of the probe sequence, the program reports only
+a local match to a portion of the sequences. The full alignment is shown in the box entitled Complete pairwise
+sequence alignment of human PAX-6 protein and Drosophila melanogaster eyeless.
+Results of a PSI-BLAST search for human PAX-6 protein
+One iteration of PSI-BLAST was run, using human PAX-6 as the query sequence, searching the nonredundant
+(nr) database. The NCBI nr database is a set of unique sequences selected from the full databases to eliminate
+multiple hits to very similar sequences. The output contains a list of sequences identified. A few are shown
+below, just to illustrate the format. A more complete list appears in the online resource centre associated with this
+book: http://www.oxfordtextbooks.co.uk/orc/leskbioinf4e/.
+paired box protein Pax-6 isoform a [Homo sapiens]
+paired box protein Pax-6 isoform a [Homo sapiens]
+paired box protein Pax-6 isoform 2 [Mus musculus]
+paired box protein Pax-6 isoform 2 [Mus musculus]
+paired box protein Pax-6 isoform 1 [Sus scrofa]
+paired box protein Pax-6 isoform 1 [Sus scrofa]
+paired box protein Pax-6 isoform a [Homo sapiens]
+paired box protein Pax-6 isoform a [Homo sapiens]
+paired box protein Pax-6 [Macaca mulatta]
+PREDICTED: paired box protein Pax-6 isoform 1 [Cricetulus griseus]
+PREDICTED: paired box protein Pax-6 [Callithrix jacchus]
+PREDICTED: paired box protein Pax-6 isoform 2 [Callithrix jacchus]
+PREDICTED: paired box protein Pax-6 [Callithrix jacchus]
+PREDICTED: paired box protein Pax-6 [Otolemur garnettii]
+PREDICTED: paired box protein Pax-6 isoform 1 [Pan paniscus]
+PREDICTED: paired box protein Pax-6 isoform 2 [Pan paniscus]
+PREDICTED: paired box protein Pax-6 isoform 3 [Pan paniscus]
+PREDICTED: paired box protein Pax-6 isoform 1 [Saimiri boliviensis
+boliviensis]
+60
+
+
+--- PDF page 61 ---
+PREDICTED: paired box protein Pax-6 isoform 2 [Saimiri boliviensis
+boliviensis]
+Even the short list shows that (1) multiple sequences—different isoforms—appear from the same species and (2)
+some of the taxonomic names are classic binomials (for instance, Homo sapiens) and others are trinomials
+indicating subspecies designations.
+PSI-BLAST also returns pairwise alignments of well-matching regions from the query and the retrieved
+sequences. Three selected alignments are shown following the alignments results: PAX-6 from Danio rerio,
+Drosophila eyeless, and a Drosophila circadian clock protein, for which the matching is both shorter and less
+perfect.
+Query= sp|P26367|PAX6_HUMAN Paired box protein Pax-6(Oculorhombin)
+(Aniridia, type II protein) - Homo sapiens (Human).
+         (422 letters)
+Database: All non-redundant GenBank CDS
+translations+PDB+SwissProt+PIR+PRF
+          2,738,511 sequences; 768,166,133 total letters
+Results of PSI-Blast iteration 5
+  Score E
+Sequences producing significant alignments:                    (Bits) Value
+gb|AAA59962.1| oculorhombin >gb|AAA59963.1| oculorhombin         600 6e-170
+ref|NP_000271.1| paired box gene 6 isoform a [Homo sapiens] >…   600 7e-170
+gb|ABI98848.1| paired box 6 transcript variant 3 [Columba livia] 599 9e-170
+ref|NP_001035735.1| paired box gene 6 (aniridia, keratitis) […   599 1e-169
+gb|EAW68233.1| paired box gene 6 (aniridia, keratitis), isofo…   599 1e-169
+gb|ABA90484.1| paired box protein PAX6 isoform a [Oryctolagus cu 598 2e-169
+ref|NP_037133.1| paired box gene 6 [Rattus norvegicus] >sp|P6…   598 2e-169
+dbj|BAA24025.1| PAX6 SL [Cynops pyrrhogaster]                    596 8e-169
+ref|NP_038655.1| paired box gene 6 [Mus musculus] >emb|CAA453…   596 1e-168
+dbj|BAC25729.1| unnamed protein product [Mus musculus]           595 2e-168
+emb|CAC80516.1| paired box protein [Mus musculus]                594 2e-168
+ref|NP_001595.2| paired box gene 6 isoform b [Homo sapiens] >…   594 3e-168
+gb|AAH41712.1| MGC52531 protein [Xenopus laevis]                 594 3e-168
+ref|NP_990397.1| paired box gene 6 [Gallus gallus] >dbj|BAA23…   594 3e-168
+gb|ABO70134.1| PAX6 [Canis familiaris]                           593 5e-168
+gb|EAW68236.1| paired box gene 6 (aniridia, keratitis), isofo…   593 6e-168
+emb|CAF29075.1| putative pax6 isoform 5a [Rattus norvegicus]     593 8e-168
+ref|NP_001075686.1| paired box protein PAX6 isoform b [Orycto…   593 9e-168
+emb|CAE45868.1| hypothetical protein [Homo sapiens]              593 9e-168
+prf||1902328A PAX6 gene                                          592 1e-167
+gb|AAS48919.1| paired box 6 isoform 5a [Rattus norvegicus] >g…   592 1e-167
+gb|AAB36681.1| paired-type homeodomain Pax-6 protein [Xenopus la 592 1e-167
+gb|AAF73271.1|AF154555_1 paired domain transcription factor v…   590 5e-167
+gb|AAB05932.1| Xpax6 [Xenopus laevis]                            589 7e-167
+sp|P47238|PAX6_COTJA Paired box protein Pax-6 (Pax-QNR) >pir|…   589 1e-166
+dbj|BAA24024.1| PAX6 LL [Cynops pyrrhogaster]                    589 1e-166
+sp|P55864|PAX6_XENLA Paired box protein Pax-6 >gb|AAB36683.1| Pa 588 2e-166
+emb|CAA68838.1| PAX-6 protein [Astyanax mexicanus]               588 3e-166
+…
+emb|CAE66896.1| Hypothetical protein CBG12277 [Caenorhabditis br 44.7 0.010
+gb|AAP79287.2| hox 7 [Saccoglossus kowalevskii]                  44.7 0.010
+gb|AAS07621.1| homeobox protein Lox18 [Perionyx excavatus]       44.7 0.010
+gb|AAL04488.1|AF365974_1 transcription factor SOHo [Oryzias lati 44.7 0.010
+61
+
+
+--- PDF page 62 ---
+ref|NP_186796.1| ATHB-1 (Homeobox-leucine zipper protein HAT5…   44.7 0.010
+ref|XP_001076009.1| PREDICTED: similar to gooseberry-neuro CG…   44.7 0.010
+ref|XP_001060443.1| PREDICTED: similar to double homeobox 4c [Ra 44.7 0.010
+gb|EAT37245.1| lim homeobox protein [Aedes aegypti]              44.7 0.010
+gb|AAW70293.1| invected [Heliconius pachinus]                    44.7 0.010
+ref|NP_174164.1| HB-1 (homeobox-1); transcription factor [Arabid 44.7 0.010
+ref|NP_001029316.1| NK-3 transcription factor, locus 1 [Rattu…   44.7 0.010
+dbj|BAE44266.1| hoxB3a [Oryzias latipes] >dbj|BAE53473.1| hox…   44.7 0.010
+dbj|BAE06563.1| transcription factor protein [Ciona intestinalis 44.7 0.010
+gb|EAT43388.1| homeobox protein [Aedes aegypti]                  44.7 0.010
+gb|AAS21413.1| HOX11 [Oikopleura dioica]                         44.7 0.010
+Additional ‘hits’ are not shown.
+The three selected alignments follow. PAX-6 from human (the query sequence) and Danio rerio:
+ref|NP_571379.1| paired box gene 6a [Danio rerio]
+  emb|CAA44867.1| pax-6 [Danio rerio]
+  emb|CAM16650.1| paired box gene 6a [Danio rerio]
+Length=451
+  Score =  662 bits (1707),  Expect = 0.0, Method: Composition-based stats.
+  Identities = 404/436 (92%), Positives = 409/436 (93%), Gaps = 18/436 (4%)
+Query  1    MQNSHSGVNQLGGVFVNGRPLPDSTRQKIVELAHSGARPCDISRILQ------------
+-  47
+            MQNSHSGVNQLGGVFVNGRPLPDSTRQKIVELAHSGARPCDISRILQ
+Sbjct  20   MQNSHSGVNQLGGVFVNGRPLPDSTRQKIVELAHSGARPCDISRILQTHADAKVQVLDNE  79
+Query 
+ 
+48 
+ 
+ 
+-
+VSNGCVSKILGRYYETGSIRPRAIGGSKPRVATPEVVSKIAQYKRECPSIFAWEIRDRL  106
+             VSNGCVSKILGRYYETGSIRPRAIGGSKPRVATPEVV KIAQYKRECPSIFAWEIRDRL
+Sbjct  80   NVSNGCVSKILGRYYETGSIRPRAIGGSKPRVATPEVVGKIAQYKRECPSIFAWEIRDRL  139
+Query  107  LSEGVCTNDNIPSVSSINRVLRNLASEKQQMGADGMYDKLRMLNGQTGSWGTRPGWYPGT  166
+            LSEGVCTNDNIPSVSSINRVLRNLASEKQQMGADGMY+KLRMLNGQTG+WGTRPGWYPGT
+Sbjct  140  LSEGVCTNDNIPSVSSINRVLRNLASEKQQMGADGMYEKLRMLNGQTGTWGTRPGWYPGT  199
+Query  167  SVPGQPTQDGCQQQEGGGENTNSISSNGEDSDEAQMRLQLKRKLQRNRTSFTQEQIEALE  226
+            SVPGQP QDGCQQ +GGGENTNSISSNGEDSDE QMRLQLKRKLQRNRTSFTQEQIEALE
+Sbjct  200  SVPGQPNQDGCQQSDGGGENTNSISSNGEDSDETQMRLQLKRKLQRNRTSFTQEQIEALE  259
+Query  227  KEFERTHYPDVFARERLAAKIDLPEARIQVWFSNRRAKWRREEKLRNQRRQASNTPSHIP  286
+            KEFERTHYPDVFARERLAAKIDLPEARIQVWFSNRRAKWRREEKLRNQRRQASN+ SHIP
+Sbjct  260  KEFERTHYPDVFARERLAAKIDLPEARIQVWFSNRRAKWRREEKLRNQRRQASNSSSHIP  319
+Query  287  ISSSFSTSVYQPIPQPTTPVSSFTSGSMLGRTDTALTNTYSALPPMPSFTMANNLPMQPP  346
+            ISSSFSTSVYQPIPQPTTPV SFTSGSMLGR+DTALTNTYSALPPMPSFTMANNLPMQP
+Sbjct 
+ 
+320 
+ 
+ISSSFSTSVYQPIPQPTTPV-
+SFTSGSMLGRSDTALTNTYSALPPMPSFTMANNLPMQP-  377
+Query  347  VPSQTSSYSCMLPTSPSVNGRSYDTYTPPHMQTHMNSQPMGTSGTTSTGLISPGVSVPVQ  406
+              SQTSSYSCMLPTSPSVNGRSYDTYTPPHMQ HMNSQ M  SGTTSTGLISPGVSVPVQ
+Sbjct 
+ 
+378 
+ 
+--
+SQTSSYSCMLPTSPSVNGRSYDTYTPPHMQAHMNSQSMAASGTTSTGLISPGVSVPVQ  435
+62
+
+
+--- PDF page 63 ---
+Query  407  VPGSEPDMSQYWPRLQ  422
+            VPGSEPDMSQYWPRLQ
+Sbjct  436  VPGSEPDMSQYWPRLQ  451
+Human PAX-6 and Drosophila eyeless:
+>pir||I45557  eyeless, long form - fruit fly (Drosophila melanogaster)
+ 
+emb|CAA56038.1| 
+UniGene 
+info 
+transcription 
+factor 
+[Drosophila
+melanogaster]
+Length=838
+ Score =  224 bits (572),  Expect = 8e-59, Method: Composition-based stats.
+ Identities = 133/212 (62%), Positives = 143/212 (67%), Gaps = 2/212 (0%)
+Query  2    QNSHSGVNQLGGVFVNGRPLPDSTRQKIVELAHSGARPCDISRILQVSNGCVSKILGRYY  61
+               HSGVNQLGGVFV GRPLPDSTRQKIVELAHSGARPCDISRILQVSNGCVSKILGRYY
+Sbjct  35   HKGHSGVNQLGGVFVGGRPLPDSTRQKIVELAHSGARPCDISRILQVSNGCVSKILGRYY  94
+Query  62   ETGSIRPRAIGGSKPRVATPEVVSKIAQYKRECPSIFAWEIRDRLLSEGVCTNDNIPSVS  121
+            ETGSIRPRAIGGSKPRVAT EVVSKI+QYKRECPSIFAWEIRDRLL E VCTNDNIPSVS
+Sbjct  95   ETGSIRPRAIGGSKPRVATAEVVSKISQYKRECPSIFAWEIRDRLLQENVCTNDNIPSVS  154
+Query  122  SINRVLRNLASEKQQMGADGMYDKLRMLNGQTGSWGTRPGWYPGTSVPGQPTQDGCQQQE  181
+            SINRVLRNLA++K+Q             N  +       G        G
+          
+Sbjct  155  SINRVLRNLAAQKEQQSTGSGSSSTSAGNSISAKVSVSIGGNVSNVASGSRGTLSSSTDL  214
+Query  182  GGGENT--NSISSNGEDSDEAQMRLQLKRKLQ  211
+                    +S S    +S E   +  +  KL+
+Sbjct  215  MQTATPLNSSESGGATNSGEGSEQEAIYEKLR  246
+Human PAX-6 and Drosophila circadian clock protein:
+>gb|AAB94890.1|  circadian clock protein [Drosophila melanogaster]
+Length=1398
+ Score = 33.5 bits (75),  Expect = 0.42, Method: Composition-based stats.
+Identities = 22/145 (15%), Positives = 37/145 (25%), Gaps = 31/145 (21%)
+Query 
+ 
+113 
+ 
+TNDNIPSVSSINRVLRN-------LASEKQQMGADGMYDK----
+LRMLNGQTGSWGTRPG  161
+             N   P+ S+    L N           +    A     K        +      G +
+Sbjct  411  NNTTNPTSSAPQGCLGNEPFKPPPPLPVRASTSAHAQMQKFNESSYASHVSAVKLGQKSP  470
+Query 
+ 
+162 
+ 
+WYPGTSV-------------
+PGQPTQDGCQQQEGGGENTNSISSNGEDSDEAQMRLQLKR  208
+                  +               Q     C       EN  SIS++  D D  Q + Q ++
+Sbjct 
+ 
+471 
+ 
+HAGQLQLTKGKCCPQKRECPSSQSELSDCGYGT-
+QVENQESISTSSNDDDGPQGKPQHQK  529
+Query  209  K------LQRNRTSFTQEQIEALEK  227
+                     + RT  +    + L +
+Sbjct  530  PPCNTKPRNKPRTIMSPMDKKELRR  554
+63
+
+
+--- PDF page 64 ---
+Complete pairwise sequence alignment of human PAX-6 protein and Drosophila
+melanogaster eyeless
+PAX6_human   ---------------------------------MQNSHSGVNQLGGVFVNGRPLPDSTRQ
+27
+eyeless      MFTLQPTPTAIGTVVPPWSAGTLIERLPSLEDMAHKGHSGVNQLGGVFVGGRPLPDSTRQ
+60
+                                               ::.************.**********
+PAX6_human   KIVELAHSGARPCDISRILQVSNGCVSKILGRYYETGSIRPRAIGGSKPRVATPEVVSKI
+87
+eyeless      KIVELAHSGARPCDISRILQVSNGCVSKILGRYYETGSIRPRAIGGSKPRVATAEVVSKI
+120
+             *****************************************************.******
+PAX6_human   AQYKRECPSIFAWEIRDRLLSEGVCTNDNIPSVSSINRVLRNLASEKQQ-----------
+136
+eyeless      SQYKRECPSIFAWEIRDRLLQENVCTNDNIPSVSSINRVLRNLAAQKEQQSTGSGSSSTS
+180
+             :*******************.*.*********************::*:*
+PAX6_human   ------------MG-------------------------------------------ADG
+141
+eyeless      AGNSISAKVSVSIGGNVSNVASGSRGTLSSSTDLMQTATPLNSSESGGATNSGEGSEQEA
+240
+                         :*                                            :.
+PAX6_human   MYDKLRMLNGQTGS--------------------WGTRP---------------------
+160
+eyeless      IYEKLRLLNTQHAAGPGPLEPARAAPLVGQSPNHLGTRSSHPQLVHGNHQALQQHQQQSW
+300
+             :*:***:** * .:                     ***.
+PAX6_human   -------GWYPG-------TSVP------------------------------GQP----
+172
+eyeless      PPRHYSGSWYPTSLSEIPISSAPNIASVTAYASGPSLAHSLSPPNDIKSLASIGHQRNCP
+360
+                    .***        :*.*                              *:
+PAX6_human   ----------TQDGCQQQEGG---GENTNSISSNGEDSDEAQMRLQLKRKLQRNRTSFTQ
+219
+eyeless      VATEDIHLKKELDGHQSDETGSGEGENSNGGASNIGNTEDDQARLILKRKLQRNRTSFTN
+420
+                         ** *.:* *   ***:*. :**  :::: * ** *************:
+PAX6_human   EQIEALEKEFERTHYPDVFARERLAAKIDLPEARIQVWFSNRRAKWRREEKLRNQRRQAS
+279
+eyeless      DQIDSLEKEFERTHYPDVFARERLAGKIGLPEARIQVWFSNRRAKWRREEKLRNQRRTPN
+480
+             :**::********************.**.**************************** ..
+PAX6_human   NTPSHIPISSSFSTSVYQPIPQPTTPVSSFTSGSMLG-----------------------
+316
+eyeless      STGASATSSSTSATASLTDSPNSLSACSSLLSGSAGGPSVSTINGLSSPSTLSTNVNAPT
+540
+             .* :  . **: :*:     *:. :. **: ***  *
+64
+
+
+--- PDF page 65 ---
+PAX6_human   ------------------------------------------------------------
+eyeless      LGAGIDSSESPTPIPHIRPSCTSDNDNGRQSEDCRRVCSPCPLGVGGHQNTHHIQSNGHA
+600
+PAX6_human   ----------------------------RTDTALTNTYSALPPMPSFTMANNLPMQPPVP
+348
+eyeless      QGHALVPAISPRLNFNSGSFGAMYSNMHHTALSMSDSYGAVTPIPSFNHSAVGPLAPPSP
+660
+                                         :*  :::::*.*:.*:***. :   *: ** *
+PAX6_human   S-------QTSSYSCMLPTSP---------------------------------SVNGRS
+368
+eyeless      IPQQGDLTPSSLYPCHMTLRPPPMAPAHHHIVPGDGGRPAGVGLGSGQSANLGASCSGSG
+720
+                      :* *.* :.  *                                 * .* .
+PAX6_human   YDTYTP-----------------------------PHMQTHMNSQP----------MGTS
+389
+eyeless      YEVLSAYALPPPPMASSSAADSSFSAASSASANVTPHHTIAQESCPSPCSSASHFGVAHS
+780
+             *:. :.                             **     :* *          :. *
+PAX6_human   GTTSTGLISPGVS----------------VPVQVPGS----EPDMSQYWPRLQ----- 422
+eyeless      SGFSSDPISPAVSSYAHMSYNYASSANTMTPSSASGTSAHVAPGKQQFFASCFYSPWV 838
+             .  *:. ***.**                .* …*:     *. .*::.
+CASE STUDY 1.7 What species contain homologues to human PAX-6
+detectable by PSI-BLAST?
+PSI-BLAST reports the species in which the identified sequences occur (see box entitled Results of a PSI-
+BLAST search for human PAX-6 protein). These appear, embedded in the text of the output, in square brackets;
+for instance:
+emb|CAA56038.1| (X79493) transcription factor [Drosophila melanogaster]
+(In the section reporting E values, the species names may be truncated.)
+The following PERL program extracts species names from the PSI-BLAST output:
+#!/usr/bin/perl
+#extract species from psiblast output
+# Method:
+#   For each line of input, check for a pattern of form [Drosophila
+melanogaster]
+#   Use each pattern found as the index in an associative array
+#   The value corresponding to this index is irrelevant
+#   By using an associative array, subsequent instances of the same
+#      species will overwrite the first instance, keeping only a unique
+set
+#   After processing of input complete, sort results and print.
+while (<>) {                             # read line of input
+    if (/\[([A-Z][a-z]+ [a-z]+)\]/) {    # select lines containing strings
+of form
+                                         #     [Drosophila melanogaster]
+     $species{$1} = 1;                   # make or overwrite entry in
+65
+
+
+--- PDF page 66 ---
+   }                                     #         associative array
+}
+foreach (sort(keys(%species))){          # in alphabetical order,
+    print "$_\n";                        #    print species names
+}
+The program makes use of PERL’s rich pattern-recognition resources to search for character strings of the form
+[Drosophila melanogaster]. We want to specify the following pattern:
+• a square bracket,
+• followed by a word beginning with an upper-case letter,
+• followed by a variable number of lower-case letters,
+• then a space between words,
+• then a word all in lower-case letters,
+• then a closing square bracket.
+This kind of pattern is called a regular expression and appears in the PERL program in the following form:
+[([A-Z][a-z]+ [a-z]+)].
+Building blocks of the pattern specify ranges of characters:
+[A-Z] = any letter in the range A, B, C, …Z
+[a-z] = any letter in the range a, b, c, …z
+We can specify repetitions:
+[A-Z] = one upper-case letter
+[a-z]+ = one or more lower-case letters
+and combine the results:
+[A-Z][a-z]+ [a-z]+ = an upper-case letter followed by one or more lower-case letters (the genus
+name), followed by a blank, followed by one or more lower-case letters (the species name).
+Enclosing these in parentheses: ([A-Z][a-z]+ [a-z]+) tells PERL to save the material that matched
+the pattern for future reference. In PERL this matched material is designated by the variable $1. Thus if the
+input line contained [Drosophila melanogaster] the statement:
+$species{$1} = 1;
+would effectively be:
+$species {"Drosophila melanogaster"} = 1;
+Finally, we want to include the brackets surrounding the genus and species name, but brackets signify character
+ranges. Therefore we must precede the brackets by backslashes \[…\] to give the final pattern: \[([A-Z]
+[a-z]+ [a-z]+)\].
+The use of the associative array to retain only a unique set of species is another instructive aspect of the
+program. Recall that an associative array is a generalization of an ordinary array or vector, in which the
+elements are not indexed by integers but by arbitrary strings. A second reference to an associative array with a
+previously encountered index string could change the value in the array but not the list of index strings. In this
+case we do not care about the value but just use the index strings to compile a unique list of species detected.
+Multiple references to the same species will merely overwrite the first reference, not make a repetitive list. The
+set of indices (or ‘keys’) in the associated array %species collects the names of the species found.
+Newer versions of PSI-BLAST report the taxonomic distribution of the hits. However, the program in this
+example would be useful if one wanted to retrieve the alignments, or perform other types of analysis on the
+results.
+Would the program handle correctly identifiers containing subspecies; for example, [Saimiri
+boliviensis boliviensis]?
+    See Weblem 1.20
+66
+
+
+--- PDF page 67 ---
+Introduction to protein structure
+With protein structures we leave behind the one-dimensional world of nucleotide and amino acid
+sequences and enter the spatial world of molecular structures. Some of the facilities for archiving and
+retrieving molecular biological information survive this change pretty well intact, some must be
+substantially altered, and others do not make it at all.
+Biochemically, proteins play a variety of roles in life processes: there are structural proteins (for
+example, viral coat proteins, the horny outer layer of human and animal skin, and proteins of the
+cytoskeleton); proteins that catalyse chemical reactions (the enzymes); transport and storage proteins
+(haemoglobin); regulatory proteins, including hormones and receptor/signal transduction proteins;
+proteins that control gene transcription; and proteins involved in recognition, including cell adhesion
+molecules, and antibodies and other proteins of the immune system.
+Proteins are large molecules. In many cases only a small part of the structure—an active site—is
+directly functional, the rest existing only to create and fix the spatial relationship among the active
+site residues. Proteins evolve by structural changes produced by mutations in the amino acid
+sequence and genetic rearrangements that bring together different combinations of structural
+subunits.
+Approximately 100 000 protein structures are now known. Most were determined by X-ray
+crystallography or nuclear magnetic resonance (NMR). From these we have derived our
+understanding both of the functions of individual proteins—for example, the chemical explanation of
+catalytic activity of enzymes—and of the general principles of protein structure and folding.
+Chemically, protein molecules are long polymers typically containing several thousand atoms,
+composed of a uniform repetitive backbone (or mainchain) with a particular sidechain attached to
+each residue (see Fig. 1.6). The amino acid sequence of a protein records the succession of
+sidechains.
+The polypeptide chain folds into a curve in space; the course of the chain defines a folding pattern.
+Proteins show a great variety of folding patterns. Underlying these are a number of common
+structural features. These include the recurrence of explicit structural paradigms—for example, α-
+helices and β-sheets (Fig. 1.7)—and common principles or features such as the dense packing of the
+atoms in protein interiors. Folding may be thought of as a kind of intramolecular condensation or
+crystallization.
+The hierarchical nature of protein architecture
+The Danish protein chemist K.U. Linderstrøm-Lang described the following levels of protein
+structure. The amino acid sequence—the set of primary chemical bonds—is called the primary
+structure. The assignment of helices and sheets—the hydrogen-bonding pattern of the mainchain—is
+called the secondary structure. The assembly and interactions of the helices and sheets is called the
+tertiary structure. For proteins composed of more than one subunit, J.D. Bernal called the assembly
+of the monomers the quaternary structure. In some cases, evolution can merge proteins, changing
+quaternary to tertiary structure. For example, five separate enzymes in the bacterium E. coli that
+catalyse successive steps in the pathway of biosynthesis of aromatic amino acids underwent a gene
+fusion. These separate genes in E. coli correspond to five regions of a single protein in the fungus
+67
+
+
+--- PDF page 68 ---
+Aspergillus nidulans. Sometimes homologous monomers form oligomers in different ways; for
+instance, globins form tetramers in mammalian haemoglobins, and dimers—using a different
+interface—in the ark clam Scapharca inaequivalvis.
+It has proved useful to add additional levels to the hierarchy, as follows.
+• Supersecondary structures. Proteins show recurrent patterns of interaction between helices and
+sheets close together in the sequence. These supersecondary structures include the α-helix hairpin,
+the β-hairpin, and the β-α-β unit (Fig. 1.8).
+• Domains. Many proteins contain compact units within the folding pattern of a single chain that
+look as if they should have independent stability. These are called domains. (Do not confuse
+domains as substructures of proteins with domains as general classes of living things: Archaea,
+Bacteria, and Eukarya.) The RNA-binding protein L1 (Fig. 1.9) has features typical of
+multidomain proteins: the binding site appears in a cleft between the two domains, and the relative
+geometry of the two domains is flexible, allowing ligand-induced conformational changes. In the
+hierarchy, domains fall between supersecondary structures and the tertiary structure of a complete
+monomer.
+• Modular proteins. Modular proteins are multidomain proteins that often contain many copies of
+closely related domains. Domains recur in many proteins in different structural contexts; that is,
+different modular proteins can ‘mix and match’ sets of domains. For example, fibronectin, a large
+extracellular protein involved in cell adhesion and migration, contains 29 domains including
+multiple tandem repeats of three types of domain, called F1, F2, and F3. It is a linear array of the
+form (F1)6(F2)2(F1)3(F3)15(F1)3. Fibronectin domains also appear in other modular proteins. (See
+http://www.bork.embl-heidelberg.de/Modules/ for pictures and nomenclature.)
+    See Weblem 1.21
+68
+
+
+--- PDF page 69 ---
+Figure 1.8 Common supersecondary structures. (a) α-Helix hairpin. (b) β-Hairpin. (c) β-α-β Unit. The chevrons
+indicate the direction of the chain.
+Figure 1.9 Ribosomal protein L1 from Methanococcus jannaschii [1CJS]. ([1CJS] is the Protein Data Bank
+identification code for the entry.)
+Classification of protein structures
+The most general classification of families of protein structures is based on the secondary and
+tertiary structures of proteins (see Table 1.2).
+Table 1.2 Classification of protein structures based on secondary and tertiary structure
+Class
+Characteristic
+α-Helical
+Secondary structure exclusively or almost exclusively α-helical
+β-Sheet
+Secondary structure exclusively or almost exclusively β-sheet
+α + β
+α-Helices and β-sheets separated in different parts of the molecule; absence of β-α-β supersecondary
+structure
+α/β
+Helices and sheets assembled from β-α-β units
+    α/β-
+Linear
+Line through centres of strands of sheet roughly linear
+    α/β-
+Barrels
+Line through centres of strands of sheet roughly circular
+Proteins with little or no secondary structure
+Within these broad categories, protein structures show a variety of folding patterns. Among
+proteins with similar folding patterns there are families that share enough features of structure,
+sequence, and function to suggest an evolutionary relationship. However, unrelated proteins often
+show similar structural themes.
+Classification of protein structures occupies a key position in bioinformatics, not least as a bridge
+between sequence and function. We shall return to this theme to describe results and relevant
+websites. Meanwhile, an album of small structures provides opportunities for practising visual
+analysis and recognition of the important spatial patterns (Fig. 1.10). Trace the chains visually,
+picking out helices and sheets. (The chevrons indicate the direction of the chain.)
+69
+
+
+--- PDF page 70 ---
+70
+
+
+--- PDF page 71 ---
+71
+
+
+--- PDF page 72 ---
+Figure 1.10 An album of protein structures: (a) engrailed homeodomain [1ENH], (b) utrophin calmodulin homology
+domain [1BHD], (c) HIN recombinase, DNA-binding domain [1HCR] (d) rice embryo cytochrome c [1CCR], (e)
+fibronectin cell-adhesion module type III-10 [1FNA], (f) mannose-specific agglutinin (lectin) [1NPL], (g) TATA-box-
+binding protein core domain [1CDW] (h) barnase [1BRN], (i) lysyl-tRNA synthetase [1BBW], (j) scytalone
+dehydratase [3STD], (k) alcohol dehydrogenase, NAD-binding domain [1EE2] (l) adenylate kinase [3ADK], (m)
+chemotaxis receptor methyltransferase [1AF7], (n) thiamin phosphate synthase [2TPS], and (o) porcine pancreatic
+spasmolytic polypeptide [2PSP].
+Can you see supersecondary structures? Into which general classes do these structures fall? (See
+Exercises 1.13 and 1.14, and Problem 1.2.) Many other examples appear in Introduction to Protein
+Architecture: The Structural Biology of Proteins (Lesk, 2001) and Introduction to Protein Science
+(Lesk, 2004; see Recommended reading).
+    See Weblem 1.22
+Web resource: Web access to macromolecular structures
+The Worldwide Protein Data Bank (wwPDB) is a collaboration between three primary archival projects to
+integrate the archiving and distribution of biological macromolecular structures:
+• The Research Collaboratory for Structural Bioinformatics (RCSB) (USA);
+• The Protein Databank Europe Database (PDBe) (at the EBI, Hinxton, UK);
+• The Protein Data Bank/Japan (Osaka, Japan).
+    See Weblem 1.23
+The wwPDB sites accept depositions, process new entries, and maintain the archives. Other databases
+reorganize, and provide access to the data, including:
+• Structural Classification of Proteins (SCOP) and Class, Architecture, Topology, Homologous superfamily
+(CATH) are carefully curated databases of all protein domains, classified according to structure, function, and
+evolution;
+• the Molecular Modeling DataBase (MMDB) is the project within the NCBI ENTREZ system, treating
+experimentally determined macromolecular structures.
+Naturally there is considerable overlap between the sites. Each has its own strengths, based in many cases on the
+research interests of the contributing scientists. For instance, the Macromolecular Structure Database at the EBI
+maintains the Protein Quaternary Structure site, which gives the probable state of assembly of multichain
+proteins in their biologically active forms. Indeed, the EBI group has been active in creating a series of very
+useful software tools for analysis of protein structures. One example is PDBeMotif, a fast and powerful search
+tool that combines searching protein sequences, chemical structures (e.g. of ligands), and three-dimensional
+coordinate data, into a single operation. Different sites differ also in their ‘look and feel’, and users will discover
+their own preferences.
+These and many other sites provide search facilities to identify structures of interest. For instance, to locate a
+protein of interest in SCOP the user can traverse the structural hierarchy, or search via keywords, such as protein
+name, PDB code, function (including Enzyme Commission number), or name of fold (for instance, barrel). For
+72
+
+
+--- PDF page 73 ---
+each structure, SCOP provides textual information (including the full text of the entry), pictures, and links to
+other databases.
+    See Weblem 1.24
+Protein structure prediction and engineering
+The amino acid sequence of a protein dictates its three-dimensional structure. In a medium of
+suitable solvent and under temperature conditions, such as provided by a cell interior, proteins fold
+spontaneously into their active states. Chaperones help proteins to fold properly, but they catalyse the
+process rather than direct it.
+If amino acid sequences contain sufficient information to specify three-dimensional structures of
+proteins it should be possible to devise an algorithm to predict protein structure from amino acid
+sequence. This has proved elusive, although recent progress has been impressive. In consequence, in
+addition to pursuing the fundamental problem of a priori prediction of protein structure from amino
+acid sequence, scientists have defined less-ambitious goals, as follows.
+1. Secondary structure prediction: which segments of the sequence form helices and which form
+strands of sheet?
+2. Fold recognition: given a library of known protein structures and their amino acid sequences, and
+the amino acid sequence of a protein of unknown structure, can we find the structure in the
+library that is most likely to have a folding pattern similar to that of the protein of unknown
+structure?
+3. Homology modelling: suppose a target protein, of known amino acid sequence but unknown
+structure, is homologous to one or more proteins of known structure. Then we expect that much
+of the structure of the target protein will resemble that of the known protein, and it can serve as a
+basis for a model of the target structure. The completeness and quality of the result depend
+crucially on how similar the sequences are. As a rule of thumb, if the sequences of two related
+proteins have 50% or more identical residues in an optimal alignment, the structures are likely to
+have similar conformations over more than 90% of the model. (This is a conservative estimate, as
+the following illustration shows.)
+Here are the aligned sequences, and superposed structures, of two related proteins, hen egg white
+lysozyme (black) and baboon α-lactalbumin (green). The sequences are closely related (37%
+identical residues in the aligned sequences), and the structures are very similar. Each protein could
+serve as a good model for the other, at least as far as the course of the mainchain is concerned (see
+Table 1.3).
+Table 1.3
+Chicken lysozyme
+KVFGRCELAAAMKRHGLDNYRGYSLGNWVCAAKFESNFNTQATNRNTDGS
+Baboon α-lactalbumin
+KQFTKCELSQNLY-DIDGYGRIALPELICTMFHTSGYDTQAIVEND-ES
+Chicken lysozyme
+TDYGILQINSRWWCNDGRTPGSRNLCNIPCSALLSSDITASVNCAKKIVS
+73
+
+
+--- PDF page 74 ---
+Baboon α-lactalbumin
+TEYGLFQISNALWCKSSQSPQSRNICDITCDKFLDDDITDDIMCAKKILD
+Chicken lysozyme
+DGN-GMNAWVAWRNRCKGTDVQA-WIRGCRL-
+Baboon α-lactalbumin
+I-KGIDYWIAHKALC-TEKL-EQWL-CE-K
+Critical Assessment of Structure Prediction
+Judging of techniques for predicting protein structures requires blind tests. To this end, J. Moult
+initiated biennial Critical Assessment of Structure Prediction (CASP) programmes. Crystallographers
+and NMR spectroscopists in the process of determining a protein structure are invited to (1) publish
+the amino acid sequence several months before the expected date of completion of their experiment
+and (2) commit themselves to keeping the results secret until an agreed date. Predictors submit
+models, which are held until the deadline for release of the experimental structure. Then the
+predictions and experiments are compared, to the delight of a few and the chagrin of most.
+The results of CASP evaluations record progress in the effectiveness of predictions, which has
+occurred partly because of the growth of the databases but also because of improvements in the
+methods. We shall discuss protein structure prediction in Chapter 6.
+Protein engineering
+Molecular biologists used to be like astronomers, in that we could observe our subjects but not
+modify them. This is no longer true. In the laboratory we can modify nucleic acids and proteins at
+will. We can probe them by exhaustive mutation to see the effects on function. We can endow old
+proteins with new functions, as in the development of catalytic antibodies. We can even create new
+ones.
+From Merski, M. and Shoichet, B.K. (2012). Engineering a model protein cavity to catalyze the Kemp elimination.
+Proc. Natl. Acad. Sci. USA, 109, 16179–16183.
+Many rules about protein structure were derived from observations of natural proteins. These rules
+do not necessarily apply to engineered proteins. Natural proteins have features required by general
+principles of physical chemistry, and by the mechanism of protein evolution. Engineered proteins
+must obey the laws of physical chemistry but not the constraints of evolution. Engineered proteins
+can explore new territory. This includes enhancing thermostability and catalytic effectiveness,
+features useful for industrial processes. Methods of approach include directed evolution to modify a
+starting structure, and de novo design, and combinations of techniques. Fields of application of
+engineered proteins include, but are not limited to, medicine, the chemical industry, biofuel
+production, and bioremediation (the destruction of toxic pollutants in the environment).4 A particular
+challenge is to create novel activities, for either specific binding or even catalysis. It has proved
+possible to engineer proteins that catalyse the Kemp elimination, an activity unknown among natural
+enzymes.
+Proteomics and transcriptomics
+The proteome, in analogy with the genome, is the set of proteins of an organism. Proteomics
+74
+
+
+--- PDF page 75 ---
+combines the census, distribution, interactions, dynamics, and expression patterns of the proteins
+within living systems. It is a data-intensive subject, depending on high-throughput measurements.
+These include DNA microarrays, RNA sequencing, and mass spectrometry.
+DNA microarrays
+DNA microarrays, or DNA chips, are devices for checking a sample simultaneously for the presence
+of many sequences. DNA microarrays can be used (1) to determine expression patterns of different
+proteins by detection of mRNAs or (2) for genotyping, by detection of different variant gene
+sequences, including but not limited to single-nucleotide polymorphisms (SNPs). It is possible to
+measure simple presence or absence, or to quantitate relative abundance. A caveat is that because of
+differential mRNA lifetimes and translation rates, the concentrations of mRNAs and the
+corresponding proteins are not necessarily proportional. (see Box 1.11.)
+From the point of view of bioinformatics, DNA arrays are yet another prolific stream of data
+creation. They demand effective design of archives and information retrieval systems. One advantage
+is that the data are all so new that the field is not encumbered with data structures and formats based
+on older generations of hardware and programs.
+Box 1.11 Applications of DNA microarrays
+• Identifying genetic individuality in tissues or organisms, or genotyping. Detection of SNPs is one example. In
+humans and animals this permits correlation of genotype with susceptibility to disease. In bacteria it permits
+identifying mechanisms of development of drug resistance by pathogens.
+• Investigating cellular states and processes. Patterns of expression that change with cellular state or growth
+conditions can give clues to the mechanisms of processes such as sporulation, or the change from aerobic to
+anaerobic metabolism.
+• Diagnosis of genetic disease. Testing for the presence of mutations can confirm the diagnosis of a suspected
+genetic disease. Detection of carriers can help in counselling prospective parents.
+• Diagnosis of infectious disease. Microarrays can detect viruses or other pathogens in blood samples. It may be
+possible to recognize strains resistant to certain antibiotics, guiding optimal treatment and isolation protocols.
+• Specialized diagnosis of disease. Different types of leukaemia, for example, can be identified by different
+patterns of gene expression. Knowing the exact type of the disease is important for prognosis, and for selecting
+treatment. More generally, expression profiling of tumours permits analysis of development and progression
+of the disease.
+• Genetic warning signs. Some diseases are not determined entirely and irrevocably by genotype, but the
+probability of their development is correlated with genes or their expression patterns. A person aware of an
+enhanced risk of developing a condition can in some cases improve his or her prospects by adjustments in
+lifestyle, or in some cases even prophylactic surgery.
+• Drug selection. Genetic factors can be detected that govern responses to drugs, that in some patients render
+treatment ineffective and in others cause unusual serious adverse reactions.
+• Target selection for drug design. Proteins showing enhanced transcription in particular disease states might be
+candidates for attempts at pharmacological intervention. Detection of genes expressed in pathogens are useful
+for identification of the pathogen, and for choosing targets for drug design.
+• Pathogen resistance. Comparisons of genotypes or expression patterns, between bacterial strains susceptible
+and resistant to an antibiotic, point to the proteins involved in the mechanism of resistance.
+• Measuring temporal variations in protein expression. This permits timing the course of many interesting
+processes, including (1) responses to pathogen infection, (2) responses to environmental change, and (3)
+changes during the cell cycle.
+75
+
+
+--- PDF page 76 ---
+Transcriptomics and RNA sequencing
+The direct sequencing of RNA is replacing microarrays as the method of choice for detecting
+patterns of transcription. Reverse transcription into complementary DNA (cDNA) of RNA extracted
+from a sample of cells allows the application of high-throughput DNA sequencing techniques. Both
+static versus dynamic, and isolated versus distributed information is available: from the sequences of
+particular cells at a particular time it is possible to detect, for example, abundances, splice variants,
+SNPs, and RNA editing. It is also possible to compare different tissues, samples of healthy versus
+diseased tissues, and dependence on cell and organism age.
+Mass spectrometry
+Mass spectrometry is a physical technique that characterizes molecules by measuring the masses of
+their ions. Applications to proteomics include:
+• rapid identification of the components of a complex mixture of proteins;
+• partial sequencing of proteins and nucleic acids;
+• analysis of post-translational modifications, or substitutions relative to an expected sequence;
+• measuring extents of hydrogen–deuterium exchange, to reveal the solvent exposure of individual
+sites. This provides information about static conformation, dynamics—including folding and
+aggregation—and interactions.
+Systems biology
+The watchword of systems biology is integration. Integration has two aspects. One is the study of
+patterns within a cell or an organism: patterns of protein–protein and protein–nucleic acid
+interactions, patterns of metabolic pathways and control cascades, and patterns of protein expression.
+Patterns have both static and dynamic aspects. Identification of pairs of proteins that bind to each
+other, and the assembly of pairwise interactions into a network, produces a static pattern. The flow of
+metabolites through a network of enzymes, or the flow of information down a control cascade, is a
+dynamic pattern.
+The other aspect of integration is the comparison of occurrence, activities, and interactions of
+genes and proteins across different species. The reason why the comparative approach is so powerful
+in biology is that the systems we are trying to understand arose through processes of evolution.
+Different species illuminate one another. To understand what it means to be human we must
+appreciate both what we have in common with other species and how we differ.
+High-throughput methods of genomics and proteomics provide data about sequences, expression
+patterns, and interactions. From genome sequences we can infer the amino acid sequences of an
+organism’s complement of proteins. Proteomics tells us how expression patterns of these proteins
+vary within the organism, how they change during development or in response to changes in
+conditions, and how they cooperate with one another. Systems biology takes these data as pieces of a
+jigsaw puzzle that extends in both space and time. To understand the complex and delicate
+instrument that is the living cell, we must fit the pieces into their frame.
+Clinical implications
+76
+
+
+--- PDF page 77 ---
+There is consensus that the sequencing of human and other genomes will lead to improvements in
+human health. Even discounting some of the more outrageous claims—hype springs eternal—
+categories of applications include the following.
+1. Diagnosis of disease and disease risks. DNA sequencing can detect the absence of a particular
+gene, or a mutation. Identification of specific gene sequences associated with diseases will permit
+fast and reliable diagnosis of conditions (1) when a patient presents with symptoms, (2) in
+advance of appearance of symptoms, as in tests for inherited late-onset conditions such as
+Huntington’s disease (see Box 1.12 and Box 1.13), (3) for in utero diagnosis of potential
+abnormalities such as cystic fibrosis, and (4) for genetic counselling of couples contemplating
+having children.
+    See Weblem 1.25
+In many cases our genes do not irrevocably condemn us to contract a disease, but raise the
+probability that we will. An example of a risk factor detectable at the genetic level involves α1-
+antitrypsin, a protein that normally functions to inhibit elastase in the alveoli of the lung. People
+homozygous for the Z mutant of α1-antitrypsin (342Glu → Lys) express only a dysfunctional protein.
+They are at risk of emphysema, because of damage to the lungs from endogenous elastase unchecked
+by normal inhibitory activity, and also of liver disease, because of accumulation of a polymeric form
+of the mutant α1-antitrypsin in hepatocytes where it is synthesized. Smoking makes the development
+of emphysema all but certain. In these cases the
+Box 1.12 Huntington’s disease
+Huntington’s disease is an inherited neurodegenerative disorder affecting 5–10 people in every 100 000
+worldwide. Its symptoms are quite severe, including uncontrollable dance-like (choreatic) movements, mental
+disturbance, personality changes, and intellectual impairment. Death usually follows within 10–15 years after the
+onset of symptoms. The gene arrived in New England during the colonial period, in the 17th century. It may have
+been responsible for some accusations of witchcraft. The gene has not been eliminated from the population,
+because the age of onset—30–50 years—is after the typical reproductive period.
+Formerly, members of affected families had no alternative but to face the uncertainty and fear, during youth
+and early adulthood, of not knowing whether they had inherited the disease. The discovery of the gene for
+Huntington’s disease in 1993 made it possible to identify affected individuals. The gene contains expanded
+repeats of the trinucleotide CAG, corresponding to polyglutamine blocks in the corresponding protein,
+huntingtin. (Huntington’s disease is one of a family of neurodegenerative conditions resulting from trinucleotide
+repeats.) The larger the block of CAGs, the earlier the onset and more severe the symptoms. The normal gene
+contains 11–28 CAG repeats. People with 29–34 repeats are unlikely to develop the disease, and those with 35–
+41 repeats may develop only relatively mild symptoms. However people with more than 41 repeats are almost
+certain to suffer full Huntington’s disease.
+The inheritance is marked by a phenomenon called anticipation: the repeats grow longer in successive
+generations, progressively increasing the severity of the disease and reducing the age of onset. For some reason
+this effect is greater in paternal than in maternal genes. Therefore, even people in the borderline region, who
+might bear a gene containing 29–41 repeats, should be counselled about the risks to their offspring.
+Box 1.13 Two clinical applications of human genome sequencing
+Two examples involve subjects who have voluntarily disclosed information about their own medical histories.
+77
+
+
+--- PDF page 78 ---
+James D. Watson, discoverer of the double helix with Francis Crick in 1953, was later in his life treated for
+high blood pressure with a type of drug called a β-blocker. β-Blockers target the β-adregenic receptor, active in
+stress response. Watson found that the drug was making him inappropriately sleepy. His genome sequence
+revealed that he was homozygous for a variant of a gene for cytochrome P450, resulting in unusually slow
+metabolism of the drug. Reducing the dosage avoided the unwanted side effects.
+Michael Snyder, of Stanford University, found from his genome sequence a predisposition to type 2 diabetes.
+Tests of his blood sugar levels did subsequently show development of the condition, which was reversed by
+lifestyle changes. The genomic sequence ‘tip off’ gave Snyder the advantages of prompt detection, and prompt
+treatment.
+disease is brought on by a combination of genetic and environmental factors. (‘Genetics loads the
+gun and environment pulls the trigger’, J. Stern)
+Often the relationship between genotype and disease risk is much more difficult to pin down.
+Some diseases such as asthma depend on interactions of many genes, as well as environmental
+factors. In other cases a gene may be all present and correct, but a mutation elsewhere may alter its
+level of expression or distribution among tissues. Such abnormalities must be detected by
+measurements of protein activity. Analysis of protein expression patterns is also an important way to
+measure response to treatment.
+Genome-wide association studies (GWAS) are a common approach to determining sites
+responsible for diseases. Comparing of genome sequences of patients with a control group permits
+statistical analysis of the correlation of the disease with sequence changes. The changes usually take
+the form of SNPs. It might be thought that such studies are simplified by limiting them to exon
+sequences. However, the ENCODE project has shown that more disease-associated SNPs lie in
+regulatory than in coding regions.
+2. Genetics of responses to therapy: customized treatment. Because people differ in their ability to
+metabolize drugs, different patients with the same condition may require different dosages (see
+Box 1.13). Sequence analysis permits selecting drugs and dosages optimal for individual patients,
+a fast-growing field called pharmacogenomics. Physicians can thereby avoid experimenting with
+different therapies, a procedure that is dangerous in terms of side effects—often even fatal—and
+in any case expensive. Treatment of patients for adverse reactions to prescribed drugs consumes
+billions of dollars in healthcare costs.
+    See Weblem 1.26
+For example, the very toxic drug 6-mercaptopurine is used in the treatment of childhood leukaemia.
+A small fraction of patients used to die from the treatment because they lacked the enzyme
+thiopurine methyltransferase, needed to metabolize the drug. Testing of patients for this enzyme
+identifies those at risk.
+Conversely, it may become possible to use drugs that are safe and effective in a minority of
+patients, but which have been rejected before or during clinical trials because of inefficacy or severe
+side effects in the majority. We are on the cusp of personal genome sequences having widespread
+application in routine clinical medicine.
+3. Identification of drug targets. Many drugs will affect the symptoms or underlying causes of a
+disease by interaction with a specific protein to alter its function. This protein is the target of the
+drug-discovery process. The specificity of the interaction is important: interaction of the drug
+with other proteins may lead to unacceptable side effects. Identification of a target provides the
+78
+
+
+--- PDF page 79 ---
+focus for subsequent steps in the drug-design process. Among drugs now in use, the targets of
+about half are receptors, about a quarter are enzymes, and about another quarter are hormones.
+Approximately 7% act on unknown targets.
+The growth in bacterial resistance to antibiotics is creating a crisis in disease control. There is a very
+real possibility that our descendants will look back at the second half of the twentieth century as a
+narrow window during which bacterial infections could be controlled, and before and after which
+they could not.
+The urgency of finding new drugs is mitigated by the increasing availability of data on which to
+base their development. Genomics can suggest targets. Differential genomics, and comparison of
+protein expression patterns, between drug-sensitive and -resistant strains of pathogenic bacteria, can
+pinpoint the proteins responsible for drug resistance. The study of genetic variation between tumour
+and normal cells can identify differentially expressed proteins as potential targets for anticancer
+drugs.
+4. Gene therapy. If a gene is missing or defective, we’d like to replace it or at least supply its
+product. If a gene is overactive, we’d like to turn it off.
+Direct supply of proteins is possible for many diseases, of which insulin replacement for diabetes and
+Factor VIII for a common form of haemophilia are perhaps the best known.
+    See Weblem 1.27
+Gene transfer has succeeded in animals, for production of human proteins in the milk of sheep and
+cows. In human patients there have been clinical successes in treating immunodeficiency, Leber’s
+congenital amaurosis, adrenoleukodystrophy, chronic myelogenous leukemia, and Parkinson’s
+disease.
+One approach to blocking genes is called ‘antisense therapy.’ The idea is to introduce a short
+stretch of DNA or RNA that binds in a sequence-specific manner to a region of a gene. Binding to
+endogenous DNA can interfere with transcription; binding to mRNA can interfere with translation.
+Antisense therapy has shown some efficacy against cytomegalovirus and Crohn disease.
+Antisense therapy is very attractive because going directly from target sequence to blocker short
+circuits many stages of the drug-design process.
+The future
+This century will see a revolution in healthcare development and delivery. Barriers between ‘blue
+sky’ research and clinical practice are tumbling down. It is possible that a reader of this book will
+discover a cure for a disease that would otherwise kill him or her. It is extremely likely that Szent-
+Gyorgi’s quip, ‘Cancer supports more people than it kills’, will come true. One hopes that this will
+happen because the research establishment succeeds in developing therapeutic or preventative
+measures against tumours rather than merely by imitating their uncontrolled growth.
+ RECOMMENDED READING
+Lesk, A.M. (2011). Introduction to Genomics, 2nd edn. Oxford University Press, Oxford.
+A glimpse of the future?
+Blumberg, B.S. (1996). Medical research for the next millennium. The Cambridge Review, 117, 3–8. Still interesting
+79
+
+
+--- PDF page 80 ---
+reading. A fascinating prediction of things to come, some of which are already here.
+Ouzounis, C.A. (2012). Rise and demise of bioinformatics? Promise and progress. PLoS Comput. Biol., 8(4),
+e1002487.
+The intellectual setting
+Mayr, E. (2004). What Makes Biology Unique? Considerations on the Autonomy of a Scientific Discipline. Cambridge
+University Press, Cambridge. Perspectives from a self-described ‘dirty-fingernails biologist’ with an unequalled
+clarity of mind.
+The overall biological context
+Doolittle, W.F. (2000). Uprooting the tree of life. Sci. Am., 282 (2), 90–95. Implications for analysis of sequences for
+our understanding of the relationships between living things.
+Hedges, S.B. and Kumar, S. (eds) (2009). The Timetree of Life. Oxford University Press, Oxford. A comprehensive
+combination of phylogenetic trees linked to timescale.
+Genomic sequence determination: first-hand accounts
+Ashburner, M. (2006). Won for All: How the Drosophila Genome Was Sequenced. Cold Spring Harbor Laboratory
+Press, Cold Spring Harbor.
+Sulston, J. and Ferry, G. (2002). The Common Thread: A Story of Science, Politics, Ethics and the Human Genome.
+Bantam, New York.
+Genomic sequence determination: applications to medicine and biology
+Desai, N., Antonopoulos, D., Gilbert, J.A., Glass, E.M., and Meyer, F. (2012). From genomics to metagenomics. Curr.
+Opin. Biotechnol., 23, 72–76.
+Didelot, X., Bowden, R., Wilson, D.J., Peto, T.E.A., and Crook, D.W. (2012). Transforming clinical microbiology
+with bacterial genome sequencing. Nat. Rev. Genet., 13, 601–612.
+Gonzaga-Jauregui, C., Lupski, J.R., and Gibbs, R.A. (2012). Human genome sequencing in health and disease. Annu.
+Rev. Med., 63, 35–61.
+Nagarajan, N. and Pop, M. (2013). Sequence assembly demystified. Nat. Rev. Genet., 14, 157–167.
+Ottman, N., Smidt, H., de Vos, W.M., and Belzer, C. (2012). The function of our microbiota: who is out there and
+what do they do? Front. Cell Infect. Microbiol., 2, 104.
+Shokralla, S., Spall, J.L., Gibson, J.F., and Hajibabaei, M. (2012). Next-generation sequencing technologies for
+environmental DNA research. Mol. Ecol., 21, 1794–1805.
+Teeling, H. and Glöckner, F.O. (2012). Current opportunities and challenges in microbial metagenome analysis - a
+bioinformatic perspective. Brief Bioinform., 13, 728–742.
+Sequencing the genomes of extinct organisms: ‘ancient DNA’
+Rizzi, E., Lari, M., Gigli, E., De Bellis, G., and Caramelli, D. (2012). Ancient DNA studies: new perspectives on old
+samples. Genet. Sel. Evol., 44, 21.
+Rohland, N., Reich, D., Mallick, S., Meyer, M., Green, R.E. et al. (2010). Genomic DNA sequences from mastodon
+and woolly mammoth reveal deep speciation of forest and savanna elephants. PLoS Biol., 8(12), e1000564.
+Databases and information retrieval
+Jensen, L.J., Saric, J., and Bork, P. (2006). Literature mining for the biologist: from information retrieval to biological
+discovery. Nat. Rev. Genet., 7, 119–129.
+Kortagere, S., Lill, M., and Kerrigan, J. (2012). Role of computational methods in pharmaceutical sciences. Methods
+Mol. Biol., 929, 21–48.
+80
+
+
+--- PDF page 81 ---
+Wang, J., Kong, L., Gao, G., and Luo, J. (2013). A brief introduction to web-based genome browsers. Brief Bioinform.,
+14, 131–143.
+Yandell, M. and Ence, D. (2012). A beginner’s guide to eukaryotic genome annotation. Nat. Rev. Genet., 13, 329–342.
+Epigenetics
+Herb, B.R., Wolschin, F., Hansen, K.D., Aryee, M.J., Langmead, B. et al. (2012). Reversible switching between
+epigenetic states in honeybee behavioral subcastes. Nat. Neurosci., 15, 1371–1373.
+Martín-Subero, J.I. (2011). How epigenomics brings phenotype into being. Pediatr. Endocrinol. Rev., 9 Suppl 1, 506–
+510.
+Proteins
+Branden, C.I. and Tooze, J. (1999). Introduction to Protein Structure, 2nd edn. Garland, New York. A fine
+introductory text.
+Lesk, A.M. (2001). Introduction to Protein Architecture: The Structural Biology of Proteins. Oxford University Press,
+Oxford.
+Lesk, A.M. (2004). Introduction to Protein Science. Architecture, Function and Genomics. Oxford University Press,
+Oxford. Companion volumes to Introduction to Bioinformatics, with a focus on protein structure, function, and
+evolution.
+The transition to electronic publishing, and text mining
+Berners-Lee, T. and Hendler, J. (2001). Publishing on the semantic web. Nature, 410, 1023–1024. From the inventor
+of the worldwide web.
+Harmston, N., Filsell, W., and Stumpf, M.P. (2010). What the papers say: text mining for genomics and systems
+biology. Hum. Genomics, 5, 17–29.
+Neylon, C. (2012). More than just access: delivering on a network-enabled literature. PLoS Biol. 10:e1001417.
+Valencia, A. (2002). Search and retrieve. EMBO Reports 3, 396–400.
+Legal aspects
+Cook-Deegan, R. and Heaney, C. (2010). Patents in genomics and human genetics. Annu. Rev. Genomics Hum. Genet.,
+11, 383–425.
+Greenbaum, D., Sboner, A., Mu, X.J., and Gerstein, M. (2011). Genomics and privacy: implications of the new reality
+of closed data for the field. PLoS Comput. Biol., 7, e1002278.
+Yadav, D., Anand, G., Dubey, A.K., Gupta, S., and Yadav, S. (2012). Patents in the era of genomics: an overview.
+Recent Pat. DNA Genet., 6, 127–144.
+ EXERCISES AND PROBLEMS
+Exercise 1.1 (a) The Sloan Digital Sky Survey is a mapping of the northern sky over a 5-year period. The data in
+release 5 amount to about 15 terabytes (1 byte = 1 character; 1 TB = 1012 bytes). To how many human genome
+equivalents does this correspond? (b) The Earth Observing System/Data Information System (EOS/DIS)—a series of
+long-term global observations of the Earth—is estimated to require 15 petabytes of storage (1 petabyte = 1015 bytes).
+To how many human genome equivalents will this correspond? (c) Compare the data storage required for EOS/DIS
+with that required to store the complete DNA sequences of every inhabitant of the USA (population 314 million).
+(Ignore savings available using various kinds of storage-compression techniques. Assume that each person’s DNA
+sequence requires 1 byte/nucleotide.)
+Exercise 1.2 (a) How many CDs would be required to store the entire human genome? (c) How many DVDs would be
+required to store the entire human genome? (In all cases assume that the sequence is stored as 1 byte/character,
+uncompressed.)
+81
+
+
+--- PDF page 82 ---
+Exercise 1.3 Suppose you were going to prepare Box 1.12, on Huntington’s disease, for a website. For which words or
+phrases would you provide links?
+Exercise 1.4 The end of the human β-haemoglobin gene has the nucleotide sequence:
+…ctg gcc cac aag tat cac taa
+(a) What is the translation of this sequence into an amino acid sequence? (b) Write the nucleotide sequence of a single
+base change producing a silent mutation in this region. (A silent mutation is one that leaves the amino acid sequence
+unchanged.) (c) Write the nucleotide sequence, and the translation to an amino acid sequence, of a single base change
+producing a missense mutation in this region. (d) Write the nucleotide sequence, and the translation to an amino acid
+sequence, of a single base change producing a mutation in this region that would lead to premature truncation of the
+protein. (e) Write the nucleotide sequence of a single base change producing a mutation in this region that would lead
+to improper chain-termination resulting in extension of the protein.
+Exercise 1.5 On a photocopy of the box entitled Complete pairwise sequence alignment of human PAX-6 protein and
+Drosophila melanogaster eyeless indicate with a highlighter pen the regions aligned by PSI-BLAST.
+Exercise 1.6 On a photocopy of the box entitled Complete pairwise sequence alignment of human PAX-6 protein and
+Drosophila melanogaster eyeless highlight the regions in the human PAX-6 protein aligned to the Drosophila
+circadian clock protein.
+Exercise 1.7 (a) What cutoff value of E would you use in a PSI-BLAST search if all you want to know is whether your
+sequence is already in a database? (b) What cutoff value of E would you use in a PSI-BLAST search if you want to
+locate distant homologues of your sequence?
+Exercise 1.8 In designing an antisense sequence, estimate the minimum length required to avoid exact
+complementarity to many random regions of the human genome.
+Exercise 1.9 It is suggested that all living humans are descended from a common ancestor called Eve, who lived ≈190
+000–200 000 years ago. (a) Assuming six generations per century, how many generations have there been between Eve
+and the present? (b) If a bacterial cell divides every 20 minutes, how long would be required for the bacterium to go
+through that number of generations?
+Exercise 1.10 Name an amino acid that has physicochemical properties similar to (a) leucine, (b) aspartic acid, and (c)
+threonine. We expect that such substitutions would in most cases have relatively little effect on the structure and
+function of a protein. Name an amino acid that has physicochemical properties very different from (d) leucine, (e)
+aspartic acid, and (f) threonine. Such substitutions might have severe effects on the structure and function of a protein,
+especially if they occur in the interior of the protein structure.
+Exercise 1.11 In Figure 1.7a, does the direction of the chain from N-terminus to C-terminus point up the page or down
+the page? In Figure 1.7b, do the directions of the chain from N-terminus to C-terminus point up the page or down the
+page?
+Exercise 1.12 From inspection of Figure 1.9, how many times does the chain pass between the domains of M.
+jannaschii ribosomal protein L1?
+Exercise 1.13 On a photocopy of Figure 1.10 k and l, indicate with highlighter pen the helices (in pink) and strands of
+sheet (in green). On a photocopy of Figure 1.10 g and m, divide the protein into domains.
+Exercise 1.14 Which of the structures shown in Figure 1.10 contains the following domain?
+Exercise 1.15 On a photocopy of the superposition of chicken lysozyme and baboon α-lactalbumin structures, indicate
+with a highlighter pen two regions in which the conformation of the mainchain is different.
+Exercise 1.16 In the PERL program in Case Study 1.1, estimate the fraction of the text of the program that contains
+82
+
+
+--- PDF page 83 ---
+comment material. (Count full lines and half lines.)
+Exercise 1.17 Modify the PERL program that extracts species names from PSI-BLAST output so that it would also
+accept names given in the form [D. melanogaster].
+Exercise 1.18 Modify the PERL program that extracts species names from PSI-BLAST output so that it would count
+the number of sequences from each species occurring in the list.
+Exercise 1.19 What is the nucleotide sequence of the molecule shown in Plate I?
+Problem 1.1 The following table contains a multiple alignment of partial sequences from a family of proteins called
+ETS domains. Each line corresponds to the amino acid sequence from one protein, specified as a sequence of letters
+each specifying one amino acid. Looking down any column shows the amino acids that appear at that position in each
+of the proteins in the family. In this way patterns of preference are made visible.
+TYLWEFLLKLLQDR.EYCPRFIKWTNREKGVFKLV..DSKAVSRLWGMHKN.KPD
+VQLWQFLLEILTD..CEHTDVIEWVG.TEGEFKLT..DPDRVARLWGEKKN.KPA
+IQLWQFLLELLTD..KDARDCISWVG.DEGEFKLN..QPELVAQKWGQRKN.KPT
+IQLWQFLLELLSD..SSNSSCITWEG.TNGEFKMT..DPDEVARRWGERKS.KPN
+IQLWQFLLELLTD..KSCQSFISWTG.DGWEFKLS..DPDEVARRWGKRKN.KPK
+IQLWQFLLELLQD..GARSSCIRWTG.NSREFQLC..DPKEVARLWGERKR.KPG
+IQLWHFILELLQK..EEFRHVIAWQQGEYGEFVIK..DPDEVARLWGRRKC.KPQ
+VTLWQFLLQLLRE..QGNGHIISWTSRDGGEFKLV..DAEEVARLWGLRKN.KTN
+ITLWQFLLHLLLD..QKHEHLICWTS.NDGEFKLL..KAEEVAKLWGLRKN.KTN
+LQLWQFLVALLDD..PTNAHFIAWTG.RGMEFKLI..EPEEVARLWGIQKN.RPA
+IHLWQFLKELLASP.QVNGTAIRWIDRSKGIFKIE..DSVRVAKLWGRRKN.RPA
+RLLWDFLQQLLNDRNQKYSDLIAWKCRDTGVFKIV..DPAGLAKLWGIQKN.HLS
+RLLWDYVYQLLSD..SRYENFIRWEDKESKIFRIV..DPNGLARLWGNHKN.RTN
+IRLYQFLLDLLRS..GDMKDSIWWVDKDKGTFQFSSKHKEALAHRWGIQKGNRKK
+LRLYQFLLGLLTR..GDMRECVWWVEPGAGVFQFSSKHKELLARRWGQQKGNRKR
+On a photocopy of this page: (a) Using coloured highlighter, mark, in each sequence, the residues in
+different classes in different colours:
+Small residues
+G A S T
+Medium-sized nonpolar residues:
+C P V I L
+Large nonpolar residues:
+F Y M W
+Polar residues:
+H N Q
+Positively charged residues:
+K R
+Negatively charged residues:
+D E
+(b) For each position containing the same amino acid in every sequence, write the letter symbolizing
+the common residue in upper case below the column. For each position containing the same amino
+acid in all but one of the sequences, write the letter symbolizing the preferred residue in lower case
+below the column. (c) What patterns of periodicity of conserved residues suggest themselves? (d)
+What secondary structure do these patterns suggest in certain regions? (e) What distribution of
+conservation of charged residues do you observe? Propose a reasonable guess about what kind of
+molecule these domains interact with.
+Problem 1.2 Classify the structures appearing in Fig. 1.10 in the following categories: α-helical, β-sheet, α + β, α/β-
+linear, α/β-barrels, little or no secondary structure.
+Problem 1.3 Generalize the PERL program in Case Study 1.1 to print the translations of a DNA sequence in all six
+possible reading frames.
+Problem 1.4 Write a PERL program to read a CLUSTAL-W alignment, such as the alignment of pancreatic
+ribonuclease from horse (Equus caballus), minke whale (Balaenoptera acutorostrata), and red kangaroo (Macropus
+rufus), to count the number of sequence mismatches between each pair of proteins.
+83
+
+
+--- PDF page 84 ---
+Problem 1.5 Write a PERL program to find motif matches as illustrated in Box 1.8. (a) Demand exact matches. (b)
+Allow one mismatch, not necessarily at the first position as in the examples, but no insertions or deletions.
+Problem 1.6 PERL is capable of great concision. Here is an alternative version of the program to assemble
+overlapping fragments:
+#!/usr/bin/perl
+$/ = "";
+@fragments = split("\n",<DATA>);
+foreach (@fragments) { $firstfragment{$_} = $_; }
+foreach $i (@fragments) {
+  foreach $j (@fragments) { unless ($i eq $j) {
+    ($combine = $i . "XXX" . $j) =~ /([\S ]{2,})XXX\1/;
+    (length($1) <= length($successor{$i})) || { $successor{$i} = $j };
+  }
+  undef $firstfragment{$successor{$i}};
+}
+$test = $outstring = join "", values(%firstfragment);
+while ($test = $successor{$test}) { ($outstring .= "XXX" . $test) =~ s/([\S
+]+)XXX\1/\1/; }
+$outstring =~ s/\\n/\n/g; print "$outstring\n";
+__END__
+the men and women merely players;\n
+one man in his time
+All the world’s
+their entrances,\nand one man
+stage,\nAnd all the men and women
+They have their exits and their entrances,\n
+world’s a stage,\nAnd all
+their entrances,\nand one man
+in his time plays many parts.
+merely players;\nThey have
+This is a good example of what to avoid. Anyone who produces code like this should be fired
+immediately. The absence of comments, and the tricky coding and useless brevity, make it difficult
+to understand what the program is doing. A program written in this way is difficult to debug and
+virtually impossible to maintain. Someday you may succeed someone in a job and be presented with
+such a program to work on. You will have my sympathy. (a) Photocopy the concise program listed in
+this problem and the original version in Case Study 1.2 so that they appear side-by-side on a page.
+Wherever possible, map each line of the concise program into the corresponding set of lines of the
+long one. (b) Prepare a version of the concise program with enough comments to clarify what it is
+doing (for this you could consider adapting the comments from the original program) and how it is
+doing it. Do not change any of the executable statements (back to the original version or to anything
+else); just add comments.
+1 We use 1 billion = 109.
+2 For the history of the discovery of the double helix, see Introduction to Genomics (Lesk, 2011), chapter 1.
+3 Herb et al. (2012); see Recommended reading.
+4 An extensive table appears in Li, S., Yang, X., Yang, S., Zhu, M., and Wang, X. (2012). Technology
+prospecting on enzymes: Application, marketing and engineering. Comput. Struct. Biotechnol., 2, e201209017,
+http://journals.sfu.ca/rncsb/index.php/csbj/article/view/csbj.201209017/160.
+84

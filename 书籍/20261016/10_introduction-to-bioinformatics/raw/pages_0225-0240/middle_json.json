@@ -1,0 +1,4047 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Introduction to Bioinformatics, 4th Edition",
+      "authors": [
+        "Arthur Lesk"
+      ],
+      "created_at": "2018-08-07T17:45:54+02:00",
+      "modified_at": "2018-08-09T11:39:02+02:00",
+      "producer_application": "3-Heights(TM) PDF Optimization Shell 4.8.25.2 (http://www.pdf-tools.com)",
+      "page_count": 440,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 224,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        },
+        {
+          "page_idx": 225,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        },
+        {
+          "page_idx": 226,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        },
+        {
+          "page_idx": 227,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        },
+        {
+          "page_idx": 228,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        },
+        {
+          "page_idx": 229,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        },
+        {
+          "page_idx": 230,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        },
+        {
+          "page_idx": 231,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        },
+        {
+          "page_idx": 232,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        },
+        {
+          "page_idx": 233,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        },
+        {
+          "page_idx": 234,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        },
+        {
+          "page_idx": 235,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        },
+        {
+          "page_idx": 236,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        },
+        {
+          "page_idx": 237,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        },
+        {
+          "page_idx": 238,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        },
+        {
+          "page_idx": 239,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 224,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.064,
+            0.05,
+            0.932,
+            0.187
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "differences. Or, the deletion of a succession of contiguous bases or amino acids is a more probable event than the independent deletion of the same number of bases or amino acids at noncontiguous positions in the sequences. Therefore, we may wish to assign variable weights to different edit operations. A computer program can then determine not just minimal edit distances but optimal alignments. It can score each path by adding up the scores of the individual steps. For substitutions, it adds the score of the mutation, depending on the pair of residues involved. For horizontal and vertical moves, it adds a suitable gap penalty."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.066,
+            0.207,
+            0.258,
+            0.228
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Scoring schemes"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.064,
+            0.239,
+            0.931,
+            0.277
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A scoring system must account for residue substitutions, and insertions or deletions. Deletions, or gaps in a sequence, will have scores that depend on their lengths."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.064,
+            0.279,
+            0.932,
+            0.392
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Hamming and Levenshtein distances measure the dissimilarity of two sequences: similar sequences give small distances and dissimilar sequences give large distances. It is common in molecular biology to define scores as measures of sequence similarity. Then similar sequences give high scores and dissimilar sequences give low scores. These are equivalent formulations. Algorithms for optimal alignment can seek either to minimize a dissimilarity measure or to maximize a scoring function."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.064,
+            0.396,
+            0.931,
+            0.452
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For nucleic acid sequences, it is common to use a simple scheme for substitutions: +1 for a match, −1 for a mismatch, or a more complicated scheme based on a higher frequency of transition mutations than transversion mutations. (See Example 5.4.)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.064,
+            0.454,
+            0.932,
+            0.59
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For proteins, a variety of scoring schemes have been proposed. We might group the amino acids into classes of similar physicochemical type, and score +1 for a match within residue class and –1 for residues in different classes. We might try to devise a more precise substitution score from a combination of properties of the amino acids. Alternatively, we might try to let the proteins teach us an appropriate scoring scheme. M.O. Dayhoff did this first by collecting statistics on substitution frequencies in the protein sequences then known. Her results were used for many years to score alignments. They have been superseded by"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.087,
+            0.621,
+            0.867,
+            0.657
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 5.4 Substitution matrix reflecting greater frequency of transition mutations than transversion mutations"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.085,
+            0.675,
+            0.911,
+            0.724
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Transition mutations (purine↔purine and pyrimidine↔pyrimidine, i.e. a↔g and t↔c) are more common than transversions [purine↔pyrimidine, i.e. (a, g)↔(t, c)]. Suggest a substitution matrix that reflects this. (The higher the value in the matrix, the more favourable the contribution to the alignment score.)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.105,
+            0.725,
+            0.242,
+            0.741
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "One possibility is:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 9,
+          "bbox": [
+            0.368,
+            0.753,
+            0.634,
+            0.84
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 9,
+              "bbox": [
+                0.368,
+                0.753,
+                0.634,
+                0.84
+              ],
+              "image_path": "images/page_224_table_9.jpg",
+              "content": "<table><tr><td></td><td>a</td><td>g</td><td>t</td><td>c</td></tr><tr><td>a</td><td>20</td><td>10</td><td>5</td><td>5</td></tr><tr><td>g</td><td>10</td><td>20</td><td>5</td><td>5</td></tr><tr><td>t</td><td>5</td><td>5</td><td>20</td><td>10</td></tr><tr><td>c</td><td>5</td><td>5</td><td>10</td><td>20</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.064,
+            0.881,
+            0.931,
+            0.918
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "newer matrices based on the very much larger set of sequences that has subsequently become available."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 11,
+          "bbox": [
+            0.481,
+            0.967,
+            0.517,
+            0.982
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "225"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 225,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "index": 0,
+          "bbox": [
+            0.066,
+            0.051,
+            0.796,
+            0.071
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Derivation of substitution matrices: PAM and BLOSUM matrices"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.064,
+            0.084,
+            0.932,
+            0.218
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As sequences diverge, mutations accumulate. To measure the relative probability of any particular substitution, for instance serine→threonine, we can count the number of serine→threonine changes in pairs of aligned homologous sequences. We could use the relative frequencies of such changes to form a scoring matrix for substitutions. A common change should score higher than a rare one. But, what if there have been multiple substitutions at certain sites? This will bias the statistics. We can avoid this problem by restricting our samples to sequences that are sufficiently similar that we can assume that no position has changed more than once."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.064,
+            0.22,
+            0.932,
+            0.315
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A measure of sequence divergence is the PAM, where 1 PAM = 1 per cent accepted mutation. Thus, two sequences 1 PAM apart have 99% identical residues. For pairs of sequences within the 1 PAM level of divergence, it is likely that there has been no more than one change at any position. Collecting statistics from pairs of sequences as closely related as this, and correcting for different amino acid abundances, produces the 1 PAM substitution matrix."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.064,
+            0.318,
+            0.932,
+            0.413
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To produce a matrix appropriate for more widely divergent sequences, we can take powers of this matrix. The PAM250 level, corresponding to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\approx } 2 0 \\%"
+            },
+            {
+              "type": "text",
+              "content": " overall sequence identity, is the lowest sequence similarity for which we can hope to produce a correct alignment by simple pairwise sequence comparison alone. It is therefore the appropriate level to choose for practical work. (Several authors have derived substitution matrices appropriate in different ranges of overall sequence similarity.)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.064,
+            0.416,
+            0.931,
+            0.472
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The occurrence of reversions, either directly or via one or more other changes, produces an apparent slowdown in mutation rates as sequences progressively diverge. The relationship between PAM score and percentage sequence identity is:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 5,
+          "bbox": [
+            0.333,
+            0.485,
+            0.667,
+            0.525
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 5,
+              "bbox": [
+                0.333,
+                0.485,
+                0.667,
+                0.525
+              ],
+              "image_path": "images/page_225_table_5.jpg",
+              "content": "<table><tr><td>PAM</td><td>0</td><td>30</td><td>80</td><td>110</td><td>200</td><td>250</td></tr><tr><td>% Identity</td><td>100</td><td>75</td><td>50</td><td>60</td><td>25</td><td>20</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.065,
+            0.539,
+            0.905,
+            0.558
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The PAM250 matrix of M.O. Dayhoff is shown in Box 5.2. It expresses scores as log-odds values:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.298,
+            0.574,
+            0.698,
+            0.655
+          ],
+          "image_path": "images/page_225_equation_7.jpg",
+          "content": "\\begin{array}{l} \\text {Score of mutation $i \\leftrightarrow j =$} \\\\ \\log_ {1 0} \\frac {\\text {observed $i \\leftrightarrow j$ mutation rate}}{\\text {mutation rate expected from amino}} \\\\ \\text {acid frequencies} \\end{array}"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 8,
+          "bbox": [
+            0.087,
+            0.693,
+            0.8,
+            0.712
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Box 5.2 Substitution matrices used for scoring amino acid sequence similarity"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.085,
+            0.728,
+            0.911,
+            0.793
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The entries are in alphabetical order of the three-letter amino acid names. Only the lower triangles of the matrices are shown, as the substitution probabilities are taken as symmetric. (This is not because we are sure that the rate of any substitution is the same as the rate of its reverse, but because we cannot determine the differences between the two rates.)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.087,
+            0.794,
+            0.39,
+            0.81
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The Dayhoff PAM250 matrix (MDM78):"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 11,
+          "bbox": [
+            0.481,
+            0.968,
+            0.517,
+            0.982
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "226"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 226,
+      "blocks": [
+        {
+          "type": "table",
+          "index": 0,
+          "bbox": [
+            0.18,
+            0.048,
+            0.818,
+            0.402
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 0,
+              "bbox": [
+                0.18,
+                0.048,
+                0.818,
+                0.402
+              ],
+              "image_path": "images/page_226_table_0.jpg",
+              "content": "<table><tr><td>Ala (A)</td><td>2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Arg (R)</td><td>-2</td><td>6</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Asn (N)</td><td>0</td><td>0</td><td>2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Asp (D)</td><td>0</td><td>-1</td><td>2</td><td>4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Cys (C)</td><td>-2</td><td>-4</td><td>-4</td><td>-5</td><td>12</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Gln (Q)</td><td>0</td><td>1</td><td>1</td><td>2</td><td>-5</td><td>4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Glu (E)</td><td>0</td><td>-1</td><td>1</td><td>3</td><td>-5</td><td>2</td><td>4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Gly (G)</td><td>1</td><td>-3</td><td>0</td><td>1</td><td>-3</td><td>-1</td><td>0</td><td>5</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>His (H)</td><td>-1</td><td>2</td><td>2</td><td>1</td><td>-3</td><td>3</td><td>1</td><td>-2</td><td>6</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Ile (I)</td><td>-1</td><td>-2</td><td>-2</td><td>-2</td><td>-2</td><td>-2</td><td>-2</td><td>-3</td><td>-2</td><td>-5</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Leu (L)</td><td>-2</td><td>-3</td><td>-3</td><td>-4</td><td>-6</td><td>-2</td><td>-3</td><td>-4</td><td>-2</td><td>2</td><td>6</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Lys (K)</td><td>-1</td><td>3</td><td>1</td><td>0</td><td>-5</td><td>1</td><td>0</td><td>-2</td><td>0</td><td>-2</td><td>-3</td><td>5</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Met (M)</td><td>-1</td><td>0</td><td>-2</td><td>-3</td><td>-5</td><td>-1</td><td>-2</td><td>-3</td><td>-2</td><td>2</td><td>4</td><td>0</td><td>6</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Phe (F)</td><td>-3</td><td>-4</td><td>-3</td><td>-6</td><td>-4</td><td>-5</td><td>-5</td><td>-5</td><td>-2</td><td>1</td><td>2</td><td>-5</td><td>0</td><td>9</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Pro (P)</td><td>1</td><td>0</td><td>0</td><td>-1</td><td>-3</td><td>0</td><td>-1</td><td>0</td><td>0</td><td>-2</td><td>-3</td><td>-1</td><td>-2</td><td>-5</td><td>6</td><td></td><td></td><td></td><td></td></tr><tr><td>Ser (S)</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>-1</td><td>0</td><td>1</td><td>-1</td><td>-1</td><td>-3</td><td>0</td><td>-2</td><td>-3</td><td>1</td><td>2</td><td></td><td></td><td></td></tr><tr><td>Thr (T)</td><td>1</td><td>-2</td><td>0</td><td>0</td><td>-2</td><td>-1</td><td>0</td><td>0</td><td>-1</td><td>0</td><td>-2</td><td>0</td><td>-1</td><td>-3</td><td>0</td><td>1</td><td>3</td><td></td><td></td></tr><tr><td>Trp (W)</td><td>-6</td><td>2</td><td>-4</td><td>-7</td><td>-8</td><td>-5</td><td>-7</td><td>-7</td><td>-3</td><td>-5</td><td>-2</td><td>-3</td><td>-4</td><td>0</td><td>-6</td><td>-2</td><td>-5</td><td>17</td><td></td></tr><tr><td>Tyr (Y)</td><td>-3</td><td>-4</td><td>-2</td><td>-4</td><td>0</td><td>-4</td><td>-4</td><td>-5</td><td>0</td><td>-1</td><td>-1</td><td>-4</td><td>-2</td><td>7</td><td>-5</td><td>-3</td><td>-3</td><td>0</td><td>10</td></tr><tr><td>Val (V)</td><td>0</td><td>-2</td><td>-2</td><td>-2</td><td>-2</td><td>-2</td><td>-2</td><td>-1</td><td>-2</td><td>4</td><td>2</td><td>-2</td><td>2</td><td>-1</td><td>-1</td><td>-1</td><td>0</td><td>-6</td><td>-2</td></tr><tr><td></td><td>A</td><td>R</td><td>N</td><td>D</td><td>C</td><td>Q</td><td>E</td><td>G</td><td>H</td><td>I</td><td>L</td><td>K</td><td>M</td><td>F</td><td>P</td><td>S</td><td>T</td><td>W</td><td>Y</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 2,
+          "bbox": [
+            0.18,
+            0.445,
+            0.818,
+            0.798
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 1,
+              "bbox": [
+                0.088,
+                0.415,
+                0.275,
+                0.43
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "The BLOSUM62 matrix:"
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 2,
+              "bbox": [
+                0.18,
+                0.445,
+                0.818,
+                0.798
+              ],
+              "image_path": "images/page_226_table_2.jpg",
+              "content": "<table><tr><td>Ala (A)</td><td>4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Arg (R)</td><td>-1</td><td>5</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Asn (N)</td><td>-2</td><td>0</td><td>6</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Asp (D)</td><td>-2</td><td>-2</td><td>1</td><td>6</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Cys (C)</td><td>0</td><td>-3</td><td>-3</td><td>-3</td><td>9</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Gln (Q)</td><td>-1</td><td>1</td><td>0</td><td>0</td><td>-3</td><td>5</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Glu (E)</td><td>-1</td><td>0</td><td>0</td><td>2</td><td>-4</td><td>2</td><td>5</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Gly (G)</td><td>0</td><td>-2</td><td>0</td><td>-1</td><td>-3</td><td>-2</td><td>-2</td><td>6</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>His (H)</td><td>-2</td><td>0</td><td>1</td><td>-1</td><td>-3</td><td>0</td><td>0</td><td>-2</td><td>8</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Ile (I)</td><td>-1</td><td>-3</td><td>-3</td><td>-3</td><td>-1</td><td>-3</td><td>-3</td><td>-4</td><td>-3</td><td>4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Leu (L)</td><td>-1</td><td>-2</td><td>-3</td><td>-4</td><td>-1</td><td>-2</td><td>-3</td><td>-4</td><td>-3</td><td>2</td><td>4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Lys (K)</td><td>-1</td><td>2</td><td>0</td><td>-1</td><td>-3</td><td>1</td><td>1</td><td>-2</td><td>-1</td><td>-3</td><td>-2</td><td>5</td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Met (M)</td><td>-1</td><td>-1</td><td>-2</td><td>-3</td><td>-1</td><td>0</td><td>-2</td><td>-3</td><td>-2</td><td>1</td><td>2</td><td>-1</td><td>5</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Phe (F)</td><td>-2</td><td>-3</td><td>-3</td><td>-3</td><td>-2</td><td>-3</td><td>-3</td><td>-3</td><td>-1</td><td>0</td><td>0</td><td>-3</td><td>0</td><td>6</td><td></td><td></td><td></td><td></td></tr><tr><td>Pro (P)</td><td>-1</td><td>-2</td><td>-2</td><td>-1</td><td>-3</td><td>-1</td><td>-1</td><td>-2</td><td>-2</td><td>-3</td><td>-3</td><td>-1</td><td>-2</td><td>-4</td><td>7</td><td></td><td></td><td></td></tr><tr><td>Ser (S)</td><td>1</td><td>-1</td><td>1</td><td>0</td><td>-1</td><td>0</td><td>0</td><td>0</td><td>-1</td><td>-2</td><td>-2</td><td>0</td><td>-1</td><td>-2</td><td>-1</td><td>4</td><td></td><td></td></tr><tr><td>Thr (T)</td><td>0</td><td>-1</td><td>0</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td><td>-2</td><td>-2</td><td>-1</td><td>-1</td><td>-1</td><td>-1</td><td>-2</td><td>-1</td><td>1</td><td>5</td><td></td></tr><tr><td>Trp (W)</td><td>-3</td><td>-3</td><td>-4</td><td>-4</td><td>-2</td><td>-2</td><td>-3</td><td>-2</td><td>-2</td><td>-3</td><td>-2</td><td>-3</td><td>-1</td><td>1</td><td>-4</td><td>-3</td><td>-2</td><td>11</td></tr><tr><td>Tyr (Y)</td><td>-2</td><td>-2</td><td>-2</td><td>-3</td><td>-2</td><td>-1</td><td>-2</td><td>-3</td><td>2</td><td>-1</td><td>-1</td><td>-2</td><td>-1</td><td>3</td><td>-3</td><td>-2</td><td>-2</td><td>2</td></tr><tr><td>Val (V)</td><td>0</td><td>-3</td><td>-3</td><td>-3</td><td>-1</td><td>-2</td><td>-2</td><td>-3</td><td>-3</td><td>3</td><td>1</td><td>-2</td><td>1</td><td>-1</td><td>-2</td><td>-2</td><td>0</td><td>-3</td></tr><tr><td></td><td>A</td><td>R</td><td>N</td><td>D</td><td>C</td><td>Q</td><td>E</td><td>G</td><td>H</td><td>I</td><td>L</td><td>K</td><td>M</td><td>F</td><td>P</td><td>S</td><td>T</td><td>W</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.064,
+            0.843,
+            0.933,
+            0.942
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The numbers are multiplied by 10, simply to avoid decimal points. The matrix entries reflect the probabilities of mutational events. A value of +2—for instance, C↔S—implies that in related sequences the mutation would be expected to occur 1.6 times more frequently than random. The calculation is as follows: the matrix entry 2 corresponds to the actual value 0.2 because of the scaling. The value 0.2 is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\log _ { 1 0 }"
+            },
+            {
+              "type": "text",
+              "content": " of the relative expectation value of the mutation. Therefore, this"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 4,
+          "bbox": [
+            0.481,
+            0.967,
+            0.518,
+            0.983
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "227"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 227,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.065,
+            0.05,
+            0.341,
+            0.068
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "expectation value is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 0 ^ { 0 . 2 }   { = }   1 . 6 ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.065,
+            0.07,
+            0.933,
+            0.109
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The probability of two independent mutational events is the product of their probabilities. By using logs we have scores that we can add up rather than multiply, a computational convenience."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.067,
+            0.129,
+            0.332,
+            0.148
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The BLOSUM matrices"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.064,
+            0.157,
+            0.933,
+            0.234
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "S. Henikoff and J.G. Henikoff developed the family of BLOSUM matrices for scoring substitutions in amino acid sequence comparisons. Their goal was to replace the Dayhoff matrix with one that would perform best in identifying distant relationships, making use of the much larger amount of sequence data that had become available since Dayhoff’s work."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.064,
+            0.236,
+            0.934,
+            0.41
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The BLOSUM matrices are based on the BLOCKS database of aligned protein sequences; hence the name BLOcks SUbstitution Matrix. From regions of closely related proteins alignable without gaps, Henikoff and Henikoff calculated the ratio of the number of observed pairs of amino acids at any position to the number of pairs expected from the overall amino acid frequencies. Like the Dayhoff matrix, the results are expressed as log-odds. In order to avoid overweighting closely related sequences, the Henikoffs replaced groups of proteins that have sequence identities higher than a threshold by either a single representative or a weighted average. The threshold 62% produces the commonly used BLOSUM62 substitution matrix (see Box 5.2). This is offered by all programs as an option, and is the default in most. BLOSUM matrices have superseded the Dayhoff matrix."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.065,
+            0.43,
+            0.603,
+            0.453
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Scoring insertions/deletions, or ‘gap weighting"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.064,
+            0.459,
+            0.933,
+            0.517
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To form a complete scoring scheme for alignments, we need, in addition to the substitution matrix, a way of scoring gaps. How important are insertions and deletions relative to substitutions? Distinguish gap initiation:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.067,
+            0.524,
+            0.147,
+            0.537
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "aaagaaa"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.067,
+            0.541,
+            0.148,
+            0.553
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "aaa–aaa"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.066,
+            0.564,
+            0.24,
+            0.581
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "from gap extension:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.067,
+            0.589,
+            0.181,
+            0.603
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "aaaggggaaa"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.067,
+            0.606,
+            0.18,
+            0.618
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "aaa––––aaa"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.064,
+            0.628,
+            0.933,
+            0.724
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For aligning DNA sequences, CLUSTAL-W recommends use of the identity matrix for substitution (+1 for a match, 0 for a mismatch) and gap penalties of 10 for gap initiation and 0.1 for gap extension by one residue. For aligning protein sequences, the recommendations are to use the BLOSUM62 matrix for substitutions, and gap penalties of 11 for gap initiation and 1 for gap extension by one residue."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 13,
+          "bbox": [
+            0.065,
+            0.758,
+            0.578,
+            0.78
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Computing the alignment of two sequences"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.064,
+            0.79,
+            0.933,
+            0.887
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Now that we have a scoring scheme, we can apply it to finding optimal alignments: we seek the alignment that maximizes the score. A famous algorithm to determine the global optimal alignments of two sequences is based on a mathematical technique called dynamic programming. (Details appear in the next section.) This algorithm has been extremely important in molecular biology. Some noteworthy features are as follows."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.065,
+            0.898,
+            0.933,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The good news is that the method is guaranteed to give an optimal global alignment. It will find the best alignment score, given the choice of parameters—substitution matrix and gap penalty—"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 16,
+          "bbox": [
+            0.481,
+            0.967,
+            0.518,
+            0.982
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "228"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 228,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.088,
+            0.051,
+            0.292,
+            0.068
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "with no approximation."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 1,
+          "bbox": [
+            0.066,
+            0.073,
+            0.932,
+            0.29
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 2,
+              "bbox": [
+                0.066,
+                0.073,
+                0.932,
+                0.169
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "The bad news is that many alignments may give the same optimal score, and none of these need correspond to the biologically correct alignment. For instance, in comparing the α- and β-chains of chicken haemoglobin, W. Fitch and T. Smith found 17 alignments, all of which give the same optimal score and one of which is correct (on the basis of the structures, the court of last resort). There are 1317 alignments with scores within 5% of the optimum."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 3,
+              "bbox": [
+                0.066,
+                0.174,
+                0.932,
+                0.29
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Another item of bad news is technical: the time required to align two sequences of lengths n and m is proportional to "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "n \\times m ,"
+                },
+                {
+                  "type": "text",
+                  "content": " , because this is the size of the edit matrix that must be filled in. This means that the dynamic-programming method is not convenient to use for searching in an entire sequence database for a match to a probe sequence, and even less convenient for ‘all-against-all’ alignments. The database search problem is in effect the problem of matching a probe sequence to a region of a very long sequence, the length of the entire database."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.066,
+            0.31,
+            0.406,
+            0.331
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Variations and generalizations"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.064,
+            0.343,
+            0.932,
+            0.44
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Variations of the dynamic-programming method apply to three related alignment questions: entire sequence against entire sequence, region of one sequence against entire other sequence, and region of one sequence against region of other sequence (see Box 1.8). The global alignment algorithm was first applied to biological sequence alignment by S.B. Needleman and C.D. Wunsch. T. Smith and M. Waterman modified it to identify local matches."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 7,
+          "bbox": [
+            0.085,
+            0.491,
+            0.915,
+            0.613
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 6,
+              "bbox": [
+                0.087,
+                0.47,
+                0.56,
+                0.489
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Box 5.3 BLAST programs come in several flavours"
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 7,
+              "bbox": [
+                0.085,
+                0.491,
+                0.915,
+                0.613
+              ],
+              "image_path": "images/page_228_table_7.jpg",
+              "content": "<table><tr><td>Program</td><td>Type of query sequence</td><td>Search in database of:</td></tr><tr><td>BLASTP</td><td>Amino acid sequence</td><td>Protein sequences</td></tr><tr><td>BLASTX</td><td>Translated nucleotide sequence</td><td>Protein sequences</td></tr><tr><td>TBLASTN</td><td>Amino acid sequence</td><td>Translated nucleotide sequences</td></tr><tr><td>TBLASTX</td><td>Translated nucleotide sequence</td><td>Translated nucleotide sequences</td></tr><tr><td>PSI-BLAST</td><td>Amino acid sequence</td><td>Protein sequence database</td></tr></table>"
+            },
+            {
+              "type": "table_footnote",
+              "index": 8,
+              "bbox": [
+                0.085,
+                0.62,
+                0.911,
+                0.687
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "All these programs compare amino acid sequences with amino acid sequences, using by default the BLOSUM62 matrix. Searches involving nucleotide sequences, either as query sequence or in the database searched, are carried out by translating nucleotide sequences to amino acid sequences in all six possible reading frames. BLASTN compares nucleic acid query sequences with nucleic acid data banks directly."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.065,
+            0.723,
+            0.681,
+            0.746
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Approximate methods for quick screening of databases"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.064,
+            0.755,
+            0.932,
+            0.869
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "It is routine to screen genes from a new genome against the databases, for similarity to other sequences. Approximate methods can detect close relationships well and quickly but are inferior to the exact ones in picking up very distant relationships. In practice they give satisfactory performance in the many cases in which the probe sequence is fairly similar to one or more sequences in the data bank. They are therefore worth trying first. (We have already seen an example of PSI-BLAST in Chapter 1.)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.064,
+            0.871,
+            0.932,
+            0.949
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A typical approximation approach would take a small integer k, and determine all instances of each k-tuple of residues in the probe sequence that occur in any sequence in the database. A candidate sequence is a sequence in the data bank containing a large number of matching k-tuples, with equivalent spacing in probe and candidate sequences."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 12,
+          "bbox": [
+            0.481,
+            0.967,
+            0.518,
+            0.983
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "229"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 229,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.064,
+            0.05,
+            0.932,
+            0.149
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "There are several variations on this theme, including the original BLAST program and its variants (see Box 5.3). For a selected set of candidate sequences, approximate optimal alignment calculations are then carried out, with the time- and space-saving restriction that the paths through the matrix that can be considered are restricted to bands around the diagonals containing the many matching ktuples. It is clearest to show the procedure in terms of a dotplot (see Fig. 5.3)."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 1,
+          "bbox": [
+            0.302,
+            0.159,
+            0.7,
+            0.427
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 1,
+              "bbox": [
+                0.302,
+                0.159,
+                0.7,
+                0.427
+              ],
+              "image_path": "images/page_229_image_1.jpg",
+              "content": "```mermaid\ngraph TD\n  A[\"(1) Empty dotplot\"] --> B[\"Probe sequence\"]\n  B --> C[\"Database to be searched\"]\n  C --> D[\"(2) Word lookup\"]\n  D --> E[\"Match extension\"]\n  E --> F[\"(3) Local gapped alignment\"]\n  F --> G[\"Final Output\"]\n```"
+            },
+            {
+              "type": "image_caption",
+              "index": 2,
+              "bbox": [
+                0.064,
+                0.438,
+                0.925,
+                0.471
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Figure 5.3 The mechanism of a BLAST search shown as a schematic. BLAST solves the problem of finding matches of a probe sequence in a full genome or a full database that is much longer than the probe sequence."
+                }
+              ]
+            }
+          ],
+          "sub_type": "flowchart"
+        },
+        {
+          "type": "list",
+          "index": 3,
+          "bbox": [
+            0.065,
+            0.474,
+            0.932,
+            0.679
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 4,
+              "bbox": [
+                0.067,
+                0.474,
+                0.931,
+                0.506
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "1. The ‘playing field’ of the algorithm is the outline of a dotplot, just as if the problem were going to be solved by application of an exact alignment method."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 5,
+              "bbox": [
+                0.065,
+                0.509,
+                0.932,
+                0.591
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "2. BLAST first divides the probe sequence into fixed-length words of length k; here, k = 4. It then identifies all exact occurrences of these words in the full database: no mismatches, no gaps. Note that the same four-letter word may occur several times in the probe sequence (shown here in green), and of course each four-letter word may match many times within the database. It is possible to do this step quickly after pre-processing the database to record the sites of appearance of all four-letter words."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.065,
+                0.594,
+                0.931,
+                0.626
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "3. Starting with each match, BLAST tries to extend the match in both directions. Still no mismatches, no gaps allowed."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.065,
+                0.629,
+                0.931,
+                0.679
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "4. Given the extended matches, BLAST tries to put them together by doing alignments allowing mismatches and gaps, but only within limited regions containing the preliminary matches (grey areas). The result of this step is to add to the matches the positions shown as ★. This produces longer matching regions."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.064,
+            0.68,
+            0.932,
+            0.745
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "It is the restriction of the more complex matching procedure to relatively small regions, rather than applying it to the entire matrix, that gives the method its speed. The price to pay is that if a combined match lies outside the grey area, the method will miss it. In the example illustrated, the matching regions at the right of the matrix, will not be combined, but reported as separate hits."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.065,
+            0.779,
+            0.88,
+            0.831
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The dynamic-programming algorithm for optimal pairwise sequence alignment1"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.064,
+            0.842,
+            0.932,
+            0.939
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A chart implicitly containing all possible alignments can be constructed as a matrix similar to that used in drawing the dotplot. The residues of one sequence index the rows, the residues from the other sequence index the columns. Any path through the matrix from upper left to lower right corresponds to an alignment. The task is to find the path that has the lowest cost, and the difficulty is that there are a very large number of paths to consider."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 11,
+          "bbox": [
+            0.481,
+            0.967,
+            0.518,
+            0.983
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "230"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 230,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.064,
+            0.051,
+            0.932,
+            0.128
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "As an illustration, suppose you wanted to drive from Malmö in southern Sweden to Tromsø in northern Norway. Your route will consist of a number of segments, taking you through a succession of intermediate cities (see Fig. 5.4). There are many choices of different combinations of segments to produce a complete, continuous path."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 1,
+          "bbox": [
+            0.334,
+            0.141,
+            0.67,
+            0.455
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 1,
+              "bbox": [
+                0.334,
+                0.141,
+                0.67,
+                0.455
+              ],
+              "image_path": "images/page_230_image_1.jpg",
+              "content": "TROMSO\nUPPSALA\nSTOCKHOLM\nMALMO"
+            },
+            {
+              "type": "image_caption",
+              "index": 2,
+              "bbox": [
+                0.065,
+                0.468,
+                0.757,
+                0.485
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Figure 5.4 Possible routes from Malmö to Tromsø. How can you determine an optimal route?"
+                }
+              ]
+            },
+            {
+              "type": "image_footnote",
+              "index": 3,
+              "bbox": [
+                0.066,
+                0.488,
+                0.322,
+                0.503
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "© Collins Bartholemew Ltd. 1980."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.064,
+            0.522,
+            0.934,
+            0.733
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The computational approach to finding the optimal path begins by assigning a numerical measure of the ‘cost’ to each of the possible individual segments of the journey. This ‘cost’ is not simply the financial outlay, but a more general estimate of your relative preferences for different portions of the route. The distance travelled will clearly be an important component of the cost, but other factors such as the quality of the roads and the opportunities for sightseeing may also contribute. For any route selected, the overall cost of the trip is the sum of the costs of the individual segments. Clearly it is inefficient to repeat any leg of the journey, or to visit any city twice, so we will agree that every intermediate stop will be north of the previous one. This formalism is expressed in terms of minimizing a cost rather than maximizing a score; for our purposes the two approaches are equivalent. An algorithm can explore the possible combinations to determine an optimal overall route."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.064,
+            0.736,
+            0.931,
+            0.775
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Here is an abstract version of the problem, which illuminates the essential idea of dynamic programming."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 6,
+          "bbox": [
+            0.405,
+            0.786,
+            0.599,
+            0.884
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 6,
+              "bbox": [
+                0.405,
+                0.786,
+                0.599,
+                0.884
+              ],
+              "image_path": "images/page_230_image_6.jpg",
+              "content": "Start\nA\nFinish"
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.065,
+            0.898,
+            0.934,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Consider first: how many paths from Start to Finish pass through A? There are six paths from Start to A. (Write them all down.) Therefore, by symmetry, there are six paths from A to Finish, and a"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 8,
+          "bbox": [
+            0.481,
+            0.968,
+            0.516,
+            0.982
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "231"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 231,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.064,
+            0.05,
+            0.932,
+            0.185
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "total of 36 paths from Start to Finish passing through A. (Why?) Assuming that we have assigned costs to the individual steps, do we have to check all 36 paths to find the path of minimum cost that goes from Start to Finish, passing through A? No. Here is the crucial observation: the choice of the best path from A to Finish is independent of the choice of path from the Start to A. If we determine the best of the six paths from Start to A, and we determine the best of the six paths from A to Finish, the best path from Start to Finish passing through A is the best path from Start to A followed by the best path from A to Finish. No more than 12 of the paths through A need be considered."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.064,
+            0.187,
+            0.932,
+            0.224
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Even greater simplification is possible by systematically re-subdividing the problem. The dynamic-programming method for finding the optimal path through the matrix is based on this idea."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.064,
+            0.226,
+            0.932,
+            0.307
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A statement of the optimal alignment problem and the dynamic-programming solution are as follows. Given two character strings, possibly of unequal length— "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\mathcal { A } } = a _ { 1 } a _ { 2 } { \\cdots } a _ { n }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B = b _ { 1 } b _ { 2 } . . . b _ { m } \\mathrm { {  —  } }"
+            },
+            {
+              "type": "text",
+              "content": " where each "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " is a member of an alphabet set "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { A } _ { 1 }"
+            },
+            {
+              "type": "text",
+              "content": " , consider sequences of edit operations that convert A and B to a common sequence. Individual edit operations include:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.25,
+            0.322,
+            0.682,
+            0.344
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Substitution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " is represented by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(a_{i},b_{j})"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.251,
+            0.355,
+            0.746,
+            0.375
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Deletion of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " from sequence A is represented by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(a_{i}, \\phi)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.252,
+            0.384,
+            0.741,
+            0.406
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Deletion of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "b_{j}"
+            },
+            {
+              "type": "text",
+              "content": " from sequence B is represented by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( \\phi , b _ { j } )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.064,
+            0.425,
+            0.931,
+            0.462
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "If we extend the alphabet set to include the null character "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\Phi : \\mathcal { A } ^ { + } = \\mathcal { A } \\cup \\{ \\phi \\}"
+            },
+            {
+              "type": "text",
+              "content": " , a sequence of edit operations is a set of ordered pairs "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( x , y )"
+            },
+            {
+              "type": "text",
+              "content": " , with "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x , y \\in \\mathcal { A }"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.086,
+            0.464,
+            0.5,
+            0.482
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A cost function, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "d ,"
+            },
+            {
+              "type": "text",
+              "content": " is defined on edit operations:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.271,
+            0.497,
+            0.717,
+            0.59
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "which position i of sequence A corresponds to position "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j"
+            },
+            {
+              "type": "text",
+              "content": " of sequence "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B _{ z }"
+            },
+            {
+              "type": "text",
+              "content": " and the mutation"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.065,
+            0.634,
+            0.673,
+            0.652
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Define the minimum weighted distance between sequences A and B as:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.396,
+            0.668,
+            0.602,
+            0.696
+          ],
+          "image_path": "images/page_231_equation_10.jpg",
+          "content": "D (A, B) = \\min _ {A \\to B} \\Sigma d (x, y)"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.064,
+            0.713,
+            0.931,
+            0.75
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x , y \\in \\mathcal { A }"
+            },
+            {
+              "type": "text",
+              "content": " and the minimum is taken over all sequences of edit operations that convert A and B into a common sequence."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.086,
+            0.752,
+            0.829,
+            0.77
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The problem is to find "
+            },
+            {
+              "type": "equation_inline",
+              "content": "D ( A , B )"
+            },
+            {
+              "type": "text",
+              "content": " and one or more of the alignments that correspond to it."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.064,
+            0.772,
+            0.932,
+            0.848
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "An algorithm that solves this problem, requiring execution time proportional to the product of the lengths of the two sequences, creates a matrix "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { D } ( i , j ) , i = 0 , \\ldots n ; j = 0 , \\ldots m ,"
+            },
+            {
+              "type": "text",
+              "content": " such that "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { D } \\left( i , j \\right)"
+            },
+            {
+              "type": "text",
+              "content": " is the minimal distance between the strings that consist of the first i characters of A and the first j characters of B. Then "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { D } ( n , m )"
+            },
+            {
+              "type": "text",
+              "content": " will be the required minimal distance "
+            },
+            {
+              "type": "equation_inline",
+              "content": "D ( A , B )"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.064,
+            0.85,
+            0.932,
+            0.933
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The algorithm computes "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\varpi ( i , j )"
+            },
+            {
+              "type": "text",
+              "content": " by recursion. The value of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\varpi ( i , j )"
+            },
+            {
+              "type": "text",
+              "content": " corresponds to the conversion of the initial subsequences "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\mathcal { A } } _ { i }   =   a _ { 1 } a _ { 2 } { \\cdots } a _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B _ { j }   =   b _ { 1 } b _ { 2 } . . . b _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " into a common sequence by L edit operations "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S _ { k } , k = 1 , \\ldots L ,"
+            },
+            {
+              "type": "text",
+              "content": " , which can be considered to be applied in increasing order of position in the strings. Consider undoing the last of these edit operations. The resulting truncated sequence of edit"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 15,
+          "bbox": [
+            0.481,
+            0.967,
+            0.518,
+            0.983
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "232"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 232,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.064,
+            0.05,
+            0.932,
+            0.154
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "operations, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S _ { k } ,   k = 1 ,   \\ldots   L ^ { - 1 }"
+            },
+            {
+              "type": "text",
+              "content": " , is a sequence of edit operations for converting a substring of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " and a substring of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " into a common result. What is more, it must be an optimal sequence of edit operations for these substrings, for if some other sequence "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\vec { S } _ { \\vec { k } } ^ { \\prime }"
+            },
+            {
+              "type": "text",
+              "content": " were a lower-cost sequence of operations for these substrings, then followed by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S _ { L }"
+            },
+            {
+              "type": "text",
+              "content": " would be a lower-cost sequence of operations than "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S _ { k }"
+            },
+            {
+              "type": "text",
+              "content": " for converting "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B _ { j }"
+            },
+            {
+              "type": "text",
+              "content": " . Therefore, there should be a recursive method for calculating the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\varpi ( i , j )"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.064,
+            0.157,
+            0.931,
+            0.196
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Recognize the correspondence of steps between adjacent squares in the matrix, and individual edit operations (see Fig. 5.1):"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 2,
+          "bbox": [
+            0.28,
+            0.21,
+            0.709,
+            0.349
+          ],
+          "image_path": "images/page_232_equation_2.jpg",
+          "content": "\\begin{array}{l} \\begin{array}{l} (i - 1, j - 1) \\to (i, j) \\text {corresponds to the} \\\\ \\text {substitution} a _ {i} \\to b _ {j} \\end{array} \\\\ \\begin{array}{l l} (i - 1, j) \\to (i, j) & \\text {corresponds to the} \\\\ & \\text {deletion of a_{i} from A} \\end{array} \\\\ \\begin{array}{l l}(i, j - 1) \\rightarrow (i, j)&\\text {corresponds to the insertion}\\\\&\\text {of b_{j} into A at position i}\\end{array} \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.065,
+            0.369,
+            0.732,
+            0.386
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Sequences of edit operations correspond to stepwise paths through the matrix:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.339,
+            0.403,
+            0.656,
+            0.423
+          ],
+          "image_path": "images/page_232_equation_4.jpg",
+          "content": "(i _ {0}, j _ {0}) = (0, 0) \\rightarrow (i _ {1}, j _ {1}) \\rightarrow \\dots (n, m)"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.064,
+            0.442,
+            0.932,
+            0.56
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 \\leq i _ { k + 1 } { - } i _ { k } \\leq 1"
+            },
+            {
+              "type": "text",
+              "content": " (for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 \\leq k \\leq n { - } 1 )"
+            },
+            {
+              "type": "text",
+              "content": " , "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 \\leq j _ { k + 1 } - j _ { k } \\leq 1"
+            },
+            {
+              "type": "text",
+              "content": " (for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 \\leq k \\leq m { - } 1 )"
+            },
+            {
+              "type": "text",
+              "content": " . Considering the possible sequences of edit operations and the corresponding paths through the matrix, the predecessor of an optimal string of edit operations leading from "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( 0 , \\; 0 )"
+            },
+            {
+              "type": "text",
+              "content": " to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( i , j )"
+            },
+            {
+              "type": "text",
+              "content": " , where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i , j \\geq 0"
+            },
+            {
+              "type": "text",
+              "content": " , must be an optimal sequence of edit operations leading to one of the cells "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( i { - } 1 , \\; j ) , \\; ( i { - } 1 , \\; j { - } 1 )"
+            },
+            {
+              "type": "text",
+              "content": " , or "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( i ,   j { - } 1 )"
+            },
+            {
+              "type": "text",
+              "content": " ; and, correspondingly, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { D } ( i , j )"
+            },
+            {
+              "type": "text",
+              "content": " must depend only on the values of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\scriptstyle { \\mathcal { D } } ( i - 1 ,   j ) , \\; { \\mathcal { D } } ( i - 1 ,   j - 1 )"
+            },
+            {
+              "type": "text",
+              "content": " , and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { D } ( i , j { - } 1 )"
+            },
+            {
+              "type": "text",
+              "content": " , together, of course, with the parameterization specified by the cost function d."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.087,
+            0.562,
+            0.371,
+            0.579
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The algorithm is then as follows."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.065,
+            0.581,
+            0.521,
+            0.599
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Compute the "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( m + 1 ) \\times ( n + 1 )"
+            },
+            {
+              "type": "text",
+              "content": " matrix D by applying:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.067,
+            0.611,
+            0.606,
+            0.629
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "1. the initialization conditions on the top row and left column:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.409,
+            0.647,
+            0.589,
+            0.751
+          ],
+          "image_path": "images/page_232_equation_9.jpg",
+          "content": "\\begin{array}{l} \\mathcal {D} (i, 0) = \\sum_ {k = 0} ^ {i} d (a _ {k}, \\phi) \\\\ \\mathcal {D} (0, j) = \\sum_ {k = 0} ^ {j} d (\\phi , b _ {k}) \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.096,
+            0.767,
+            0.919,
+            0.785
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "These values impose the gap penalty on unmatched residues at the beginning of either sequence."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.097,
+            0.79,
+            0.188,
+            0.806
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "And then:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.065,
+            0.812,
+            0.341,
+            0.83
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2. the recurrence relationships:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.289,
+            0.845,
+            0.705,
+            0.899
+          ],
+          "image_path": "images/page_232_equation_13.jpg",
+          "content": "\\begin{array}{l} \\mathcal {D} (i, j) = \\min \\left\\{\\mathcal {D} (i - 1, j) + d (a _ {i}, \\phi), \\mathcal {D} (i - 1, j - 1) + \\right. \\\\ d (a _ {i}, b _ {j}), \\mathcal {D} (i, j - 1) + d (\\phi , b _ {j}) \\bigg \\} \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.096,
+            0.916,
+            0.783,
+            0.935
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i = 1 \\ldots n ; j = 1 , \\ldots m"
+            },
+            {
+              "type": "text",
+              "content": " . This means, consider all three possible steps to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\varpi ( i , j )"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 15,
+          "bbox": [
+            0.481,
+            0.967,
+            0.517,
+            0.983
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "233"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 233,
+      "blocks": [
+        {
+          "type": "table",
+          "index": 0,
+          "bbox": [
+            0.068,
+            0.048,
+            0.932,
+            0.126
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 0,
+              "bbox": [
+                0.068,
+                0.048,
+                0.932,
+                0.126
+              ],
+              "image_path": "images/page_233_table_0.jpg",
+              "content": "<table><tr><td>Operation</td><td>Cumulative cost</td></tr><tr><td>Insert a gap in sequence A</td><td><eq>\\mathcal{D}(i-1,j) + d(a_i, \\phi)</eq></td></tr><tr><td>Substitute <eq>a_i \\leftrightarrow b_j</eq></td><td><eq>\\mathcal{D}(i-1,j-1) + d(a_i, b_j)</eq></td></tr><tr><td>Insert a gap in sequence B</td><td><eq>\\mathcal{D}(i,j-1) + d(\\phi, b_j)</eq></td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.065,
+            0.136,
+            0.932,
+            0.193
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "From these, choose the minimal value of the cumulative cost. For each cell, record not only the value "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { D } ( i , j )"
+            },
+            {
+              "type": "text",
+              "content": " but a pointer back to (one or more of) the cell(s) "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( i – 1 , j ) , ( i , – 1 , j – 1 )"
+            },
+            {
+              "type": "text",
+              "content": " , or "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( i , j { - } 1 )"
+            },
+            {
+              "type": "text",
+              "content": " selected by the minimization operation. Note that more than one predecessor may give the same value."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.064,
+            0.195,
+            0.934,
+            0.273
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "When the calculations are complete, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathcal { D } ( n , ~ m )"
+            },
+            {
+              "type": "text",
+              "content": " is the optimal distance "
+            },
+            {
+              "type": "equation_inline",
+              "content": "D ( A ,   B )"
+            },
+            {
+              "type": "text",
+              "content": " . An alignment corresponding to the sequence of edit operations recorded by the pointers can be recovered by tracing a path back through the matrix from "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( n ,   m )"
+            },
+            {
+              "type": "text",
+              "content": " to (0, 0). This alignment, corresponding to the minimal distance "
+            },
+            {
+              "type": "equation_inline",
+              "content": "D ( A , B ) = \\mathcal { D } ( n , m )"
+            },
+            {
+              "type": "text",
+              "content": " , may well not be unique. (See Example 5.5.)"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.087,
+            0.303,
+            0.745,
+            0.323
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example 5.5 Dynamic-programming algorithm for sequence alignment"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.086,
+            0.338,
+            0.911,
+            0.37
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Align the strings "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A = g g a a t g g"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B = a t g"
+            },
+            {
+              "type": "text",
+              "content": " according to the simple scoring scheme of match = 0, mismatch = 20, and insertion or deletion = 25."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.086,
+            0.372,
+            0.912,
+            0.406
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Here is the state of play after the top row and leftmost column have been initialized (italic), and the element in the second row and second column has been entered as "
+            },
+            {
+              "type": "text",
+              "content": "20",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " (boldface):"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 6,
+          "bbox": [
+            0.342,
+            0.417,
+            0.658,
+            0.584
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 6,
+              "bbox": [
+                0.342,
+                0.417,
+                0.658,
+                0.584
+              ],
+              "image_path": "images/page_233_table_6.jpg",
+              "content": "<table><tr><td></td><td><eq>\\phi</eq></td><td>a</td><td>t</td><td>g</td></tr><tr><td><eq>\\phi</eq></td><td>0</td><td>25</td><td>50</td><td>75</td></tr><tr><td>g</td><td>25</td><td>20</td><td></td><td></td></tr><tr><td>g</td><td>50</td><td></td><td></td><td></td></tr><tr><td>a</td><td>75</td><td></td><td></td><td></td></tr><tr><td>a</td><td>100</td><td></td><td></td><td></td></tr><tr><td>t</td><td>125</td><td></td><td></td><td></td></tr><tr><td>g</td><td>150</td><td></td><td></td><td></td></tr><tr><td>g</td><td>175</td><td></td><td></td><td></td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.085,
+            0.597,
+            0.912,
+            0.698
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The value of "
+            },
+            {
+              "type": "text",
+              "content": "20",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " was chosen as the minimum of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "2 5 \\pm 2 5"
+            },
+            {
+              "type": "text",
+              "content": " (horizontal move, or insert gap into string atg), 0 + 20 (substitution "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha { \\leftrightarrow } g ) ,"
+            },
+            {
+              "type": "text",
+              "content": " , and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "2 5 \\pm 2 5"
+            },
+            {
+              "type": "text",
+              "content": " (vertical move, or insert gap into string ggaatgg). Because the substitution (the diagonal move) provided the minimal value, the cell containing 0 in the upper left-hand corner of the matrix is the predecessor of the cell in which we have just entered the 20. For traceback purposes, we would also draw an arrow from the value of 20 just entered, back to the 0 at the upper left. (If two or even three of the possible moves produce the same value, the resulting cell has multiple predecessors.)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.105,
+            0.698,
+            0.498,
+            0.713
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Here is the matrix after completion of the calculation:"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 9,
+          "bbox": [
+            0.481,
+            0.968,
+            0.518,
+            0.983
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "234"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 234,
+      "blocks": [
+        {
+          "type": "image",
+          "index": 0,
+          "bbox": [
+            0.406,
+            0.053,
+            0.592,
+            0.293
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 0,
+              "bbox": [
+                0.406,
+                0.053,
+                0.592,
+                0.293
+              ],
+              "image_path": "images/page_234_image_0.jpg",
+              "content": "φ a t g\n0 ←25 ←50 ←75\n↑ ↘ ↘ ↘\ng 25 20 ←45 50\n↑ ↘ ↘ ↘\ng 50 45 40 45\n↑ ↘ ↘ ↘\na 75 50 65 60\n↑ ↘ ↘ ↘ ↘\na 100 75 70 85\n↑ ↑ ↘ ↘\nt 125 100 75 90\n↑ ↑ ↑ ↘\ng 150 125 100 75\n↑ ↑ ↑ ↘ ↗\ng 175 150 125 100"
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.085,
+            0.309,
+            0.911,
+            0.39
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "It includes the traceback information in the form of arrows pointing from each cell to its predecessor(s). For some applications we may need only the value of D(A, B) but not an alignment; if so, it is unnecessary to save the pointers. Boldface arrows delineate the paths of optimal alignment retracing a trail of predecessors from lower right, back to upper left. In some cases, one cell may show two predecessors. These correspond to alternative alignments with the same score."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.086,
+            0.392,
+            0.91,
+            0.424
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "There are two cells at which the traceback path branches. This gives a total of four optimal alignments with equal score:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 3,
+          "bbox": [
+            0.352,
+            0.437,
+            0.647,
+            0.467
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 3,
+              "bbox": [
+                0.352,
+                0.437,
+                0.647,
+                0.467
+              ],
+              "image_path": "images/page_234_table_3.jpg",
+              "content": "<table><tr><td>ggaatgg</td><td>ggaatgg</td><td>ggaatgg</td><td>ggaatgg</td></tr><tr><td>---atg-</td><td>---at-g</td><td>--a-tg-</td><td>--a-t-g</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.085,
+            0.479,
+            0.912,
+            0.544
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "With a gap-weighting scheme that assigned a smaller penalty to gap extension than to gap initiation the first two of these would score better than the others, because they contain the smallest number of gaps, irrespective of the length of the individual gaps. However, more sophisticated gap-weighting schemes require more complicated recurrence formulas for filling the matrix."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.085,
+            0.545,
+            0.912,
+            0.645
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This algorithm determines the optimal global alignment of two sequences. It is inappropriate for detection of local regions of high similarity within two sequences, or for probing a long sequence with a short fragment, because it imposes gap penalties outside the similar regions. The method of T. Smith and M. Waterman solves this problem. Their modifications of the basic dynamic-programming algorithm find optimal local alignments; that is, they select the substrings from both sequences that are most similar to each other. Their changes affect the following aspects."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 6,
+          "bbox": [
+            0.087,
+            0.654,
+            0.91,
+            0.858
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.088,
+                0.654,
+                0.909,
+                0.703
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Initialization of the matrix: setting the values of the top row and left column. In the Smith–Waterman method, the top row and left column are set to 0. As a result, either sequence can slide along the other before alignment starts, without incurring any gap penalty against the residues it passes by."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.086,
+                0.706,
+                0.91,
+                0.771
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "2. Filling in the matrix: in global alignment, at each step a choice is forced among match, insertion, or deletion, even if none of these choices is attractive and even if a succession of unattractive choices degrades the score along a path containing a well-fitting local region. The Smith–Waterman method adds the fourth option: end the region being aligned."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 9,
+              "bbox": [
+                0.086,
+                0.775,
+                0.91,
+                0.858
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "3. Scoring and traceback: the score of a global alignment is the number in the matrix element at the lower right. In the Smith–Waterman method it is the optimal value encountered, wherever in the matrix it appears. For global alignment, traceback to determine the actual alignment starts at the lower-right cell. In the Smith– Waterman method it starts at the cell containing the optimal value and continues back only as far as the region of local similarity continues."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.087,
+            0.868,
+            0.715,
+            0.884
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The Smith–Waterman method would report a unique global optimum for our example:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.087,
+            0.929,
+            0.473,
+            0.945
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Note that no gaps appear outside the region matched."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 12,
+          "bbox": [
+            0.481,
+            0.967,
+            0.517,
+            0.982
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "235"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 235,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.086,
+            0.049,
+            0.908,
+            0.083
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Example adapted from Tyler, E.C., Horton, M.R., and Krause, P.R. (1991). A review of algorithms for molecular sequence comparison. Computers and Biomedical Research, 24, 72–96."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.066,
+            0.131,
+            0.38,
+            0.154
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Significance of alignments"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.064,
+            0.164,
+            0.934,
+            0.279
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Suppose alignment reveals an intriguing similarity between two sequences. Is the similarity significant or could it have arisen by chance? (We raised this question in Chapter 1.) For some simple phenomena—tossing a coin or rolling dice—it is possible to calculate exactly the expected distribution of results, and the likelihood of any particular result. For sequences it is not trivial to define the population from which the alignment is selected. For instance, to take random strings of nucleotides or amino acids as controls ignores the bias arising from nonrandom composition."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.064,
+            0.281,
+            0.932,
+            0.397
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A practical approach to the problem is as follows: if the score of the alignment observed is no better than might be expected from the corresponding alignment of a random permutation of the sequence, then it is likely to have arisen by chance. We may randomize one of the sequences many times, realign each result to the second sequence (held fixed) and collect the distribution of resulting scores. Figure 5.5 shows a typical result. For database searches we would use the population of results returned from the entire database as the population with which to measure the statistics."
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 4,
+          "bbox": [
+            0.394,
+            0.409,
+            0.606,
+            0.535
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 4,
+              "bbox": [
+                0.394,
+                0.409,
+                0.606,
+                0.535
+              ],
+              "image_path": "images/page_235_chart_4.jpg",
+              "content": "| Optimal local alignment score | Number of pairs of sequences |\n| --- | --- |\n| Low | ~0.1 |\n| Peak | ~0.9 |\n| High | ~0.1 |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 5,
+              "bbox": [
+                0.065,
+                0.545,
+                0.9,
+                0.579
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Figure 5.5 Optimal local alignment scores for pairs of random amino acid sequences of the same length follow an extreme value distribution. For any score x the probability of observing a score ≥ x is:"
+                }
+              ]
+            }
+          ],
+          "sub_type": "violin"
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.384,
+            0.595,
+            0.613,
+            0.614
+          ],
+          "image_path": "images/page_235_equation_6.jpg",
+          "content": "P (\\text {Score} \\geq x) = 1 - \\exp (- K e ^ {- \\lambda x})"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.064,
+            0.63,
+            0.931,
+            0.68
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where K and λ are parameters related to the position of the maximum and the width of the distribution. Note the long tail at the right. This means that a score several standard deviations above the mean has a higher probability of arising by chance (i.e. it is less significant) than if the scores followed a normal distribution."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.064,
+            0.696,
+            0.932,
+            0.774
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Clearly, if the randomized sequences score as well as the original one then the alignment is unlikely to be significant. We can measure the mean and standard deviation of the scores of the alignments of randomized sequences and ask whether the score of original sequence is unusually high. The Z score reflects the extent to which the original result is an outlier from the population:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.36,
+            0.792,
+            0.637,
+            0.826
+          ],
+          "image_path": "images/page_235_equation_9.jpg",
+          "content": "Z \\text { score } = \\frac {\\text { score - mean }}{\\text { standard   deviation }}"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.064,
+            0.843,
+            0.932,
+            0.94
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A Z score of 0 means that the observed similarity is no better than the average of random permutations of the sequence, and might well have arisen by chance. Other values used as measures of significance are P, or the probability that the observed match could have happened by chance, and, for database searching, E, which is the number of matches as good as the observed one that would be expected to appear by chance in a database of the size probed (see Box 5.4)."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 11,
+          "bbox": [
+            0.481,
+            0.967,
+            0.518,
+            0.982
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "236"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 236,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.064,
+            0.05,
+            0.932,
+            0.224
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Many ‘rules of thumb’ are expressed in terms of percentage of identical residues in the optimal alignment. If two proteins have more than 45% identical residues in their optimal alignment they will have very similar structures and are very likely to have a common or at least a similar function. If two proteins have greater than 25% identical residues they are likely to have a similar general folding pattern. On the other hand, observations of a lower degree of sequence similarity cannot rule out homology. Recall R.F. Doolittle’s definition of the region of 18–25% sequence identity as the ‘twilight zone’ in which the suggestion of homology is tantalizing but dangerous. Below the twilight zone is a region where pairwise sequence alignments tell very little. Lack of significant sequence similarity does not preclude genuine homology."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.064,
+            0.226,
+            0.932,
+            0.283
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Although the twilight zone is a treacherous region, we are not entirely helpless. In deciding whether there is a genuine relationship, the ‘texture’ of the alignment is important: are the similar residues isolated"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.087,
+            0.315,
+            0.583,
+            0.333
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Box 5.4 How to play with matches but not get burned"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.085,
+            0.35,
+            0.911,
+            0.464
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Pairwise alignments and database searches often show tenuous but tantalizing sequence similarities. How can we decide whether we are seeing a true relationship? Statistics cannot answer biological questions directly, but can tell us the likelihood that a similarity as good as the one observed would appear, just by chance, among unrelated sequences. To do this we want to compare our result with alignments of the same sequences to a large population. This ‘control’ population should be similar in general features to our aligned sequences, but should contain few sequences related to them. Only if the observed match stands out from the population can we regard it as significant."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.085,
+            0.465,
+            0.91,
+            0.53
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To what population of sequences should we compare our alignment? For pairwise alignments we can pick one of the two sequences, make many scrambled copies of it using a random-number generator, and align each permuted copy to the second sequence. For probing a database the entire database provides a comparison population."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.085,
+            0.531,
+            0.912,
+            0.58
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Aligning our sequence to each member of the control population generates a large set of scores. How does the score of our original alignment rate? Several statistical parameters have been used to evaluate the significance of alignments, as follows."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.087,
+            0.591,
+            0.91,
+            0.623
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The Z score is a measure of how unusual our original match is, in terms of the mean and standard deviation of the population scores. If the original alignment has score S,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.397,
+            0.639,
+            0.599,
+            0.664
+          ],
+          "image_path": "images/page_236_equation_7.jpg",
+          "content": "\\text {Z score of } S = \\frac {S - \\text {mean}}{\\text {standard deviation}}"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.087,
+            0.681,
+            0.91,
+            0.729
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A Z score of 0 means that the observed similarity is no better than the average of the control population, and might well have arisen by chance. The higher the Z score, the greater the probability that the observed alignment has not arisen simply by chance. Experience suggests that Z scores ≥5 are significant."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.087,
+            0.731,
+            0.91,
+            0.779
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Many programs report P, the probability that the alignment is better than random. The relationship between Z and P depends on the distribution of the scores from the control population, which do not follow the normal distribution."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.087,
+            0.782,
+            0.373,
+            0.797
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A rough guide to interpreting P values:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 11,
+          "bbox": [
+            0.087,
+            0.806,
+            0.91,
+            0.912
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 11,
+              "bbox": [
+                0.087,
+                0.806,
+                0.91,
+                0.912
+              ],
+              "image_path": "images/page_236_table_11.jpg",
+              "content": "<table><tr><td>P≤10-100</td><td>Exact match</td></tr><tr><td>P in range 10-100-10-50</td><td>Sequences very nearly identical, e.g. alleles or SNPs</td></tr><tr><td>P in range 10-50-10-10</td><td>Closely related sequences, homology certain</td></tr><tr><td>P in range 10-5-10-1</td><td>Usually, distant relatives</td></tr><tr><td>P&gt;10-1</td><td>Match probably insignificant</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.087,
+            0.921,
+            0.909,
+            0.937
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "• For database searches, some programs (including PSI-BLAST) report E-values. The E value of an alignment is"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 13,
+          "bbox": [
+            0.481,
+            0.967,
+            0.517,
+            0.982
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "237"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 237,
+      "blocks": [
+        {
+          "type": "text",
+          "index": 0,
+          "bbox": [
+            0.102,
+            0.049,
+            0.911,
+            0.114
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "the expected number of sequences that give the same Z score or better if the database is probed with a random sequence. E is found by multiplying the value of P by the size of the database probed. Note that E but not P depends on the size of the database. Values of P are between 0 and 1.0. Values of E are between 0 and the number of sequences in the database searched."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 1,
+          "bbox": [
+            0.088,
+            0.117,
+            0.393,
+            0.133
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "• A rough guide to interpreting E values:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 2,
+          "bbox": [
+            0.088,
+            0.142,
+            0.911,
+            0.197
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 2,
+              "bbox": [
+                0.088,
+                0.142,
+                0.911,
+                0.197
+              ],
+              "image_path": "images/page_237_table_2.jpg",
+              "content": "<table><tr><td>E ≤ 0.02</td><td>Sequences probably homologous</td></tr><tr><td>E between 0.02 and 1</td><td>Homology unproven but cannot be ruled out</td></tr><tr><td>E &gt; 1</td><td>You would have to expect this good a match just by chance</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.085,
+            0.206,
+            0.911,
+            0.24
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Statistics are a useful guide, but not a substitute for thinking carefully about the results, and further analysis of ones that look promising!"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.064,
+            0.281,
+            0.932,
+            0.358
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "and scattered throughout the sequence, or are there ‘icebergs’? Are there local regions of high similarity (another term of Doolittle’s) that may correspond to a shared active site? We may need to rely on other information, about shared ligands or function. Of course, if the structures are known we could examine them directly."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.086,
+            0.36,
+            0.451,
+            0.377
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Some illustrative examples are listed here."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 6,
+          "bbox": [
+            0.065,
+            0.389,
+            0.932,
+            0.687
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.065,
+                0.389,
+                0.932,
+                0.467
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Sperm whale myoglobin and lupin leghaemoglobin have 15% identical residues in optimal alignment. This is even below Doolittle’s definition of the twilight zone. But we also know that both molecules have similar three-dimensional structures, and that both contain a haem group and both bind oxygen. They are indeed distantly related homologues."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.065,
+                0.47,
+                0.932,
+                0.567
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "The sequences of the N- and C- terminal halves of rhodanese have 11% identical residues in optimal alignment. If these appeared in independent proteins one could not conclude from the sequences alone that they were related. However, their appearance in the same protein suggests that they arose via gene duplication and divergence. The striking similarity of their structures confirms their relationship."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 9,
+              "bbox": [
+                0.065,
+                0.571,
+                0.932,
+                0.687
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "As a cautionary note, consider the proteinases chymotrypsin and subtilisin. They have 12% identical residues in optimal alignment. These enzymes have a common function and a common catalytic triad (see Fig. 8.5). However, they have dissimilar folding patterns, and are not related. Their common function and mechanism is an example of convergent evolution. This case serves as a warning against special pleading for relationships between proteins with dissimilar sequences on the basis of similarities of function and mechanism!"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 10,
+          "bbox": [
+            0.067,
+            0.72,
+            0.411,
+            0.743
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Multiple sequence alignment"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.064,
+            0.752,
+            0.932,
+            0.868
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "‘One amino acid sequence plays coy; a pair of homologous sequences whisper; many aligned sequences shout out loud.’ In nature, even a single sequence contains all the information necessary to dictate the fold of the protein. How does a multiple sequence alignment make that information more intelligible and useful? Alignment tables expose patterns of amino acid conservation, from which distant relationships may be more reliably detected. Structure-prediction tools also give more reliable results when based on multiple sequence alignments than on single sequences."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.064,
+            0.87,
+            0.932,
+            0.946
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Visual examination of multiple sequence alignment tables is one of the most profitable activities that a molecular biologist can undertake away from the laboratory bench. Don’t even think about not displaying them with different colours for amino acids of different physiochemical type. A reasonable colour scheme (not the only possible one) is shown in Table 5.1."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 13,
+          "bbox": [
+            0.481,
+            0.967,
+            0.518,
+            0.982
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "238"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 238,
+      "blocks": [
+        {
+          "type": "table",
+          "index": 1,
+          "bbox": [
+            0.068,
+            0.07,
+            0.932,
+            0.178
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 0,
+              "bbox": [
+                0.067,
+                0.049,
+                0.848,
+                0.066
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Table 5.1 Distinguishing amino acids of different physico-chemical types in multiple sequence alignments"
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 1,
+              "bbox": [
+                0.068,
+                0.07,
+                0.932,
+                0.178
+              ],
+              "image_path": "images/page_238_table_1.jpg",
+              "content": "<table><tr><td>Colour</td><td>Residue type</td><td>Amino acids</td></tr><tr><td>Yellow</td><td>Small nonpolar</td><td>Gly, Ala, Ser, Thr</td></tr><tr><td>Green</td><td>Hydrophobic</td><td>Cys, Val, Ile, Leu, Pro, Phe, Tyr, Met, Trp</td></tr><tr><td>Magenta</td><td>Polar</td><td>Asn, Gln, His</td></tr><tr><td>Red</td><td>Negatively charged</td><td>Asp, Glu</td></tr><tr><td>Blue</td><td>Positively charged</td><td>Lys, Arg</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.064,
+            0.188,
+            0.934,
+            0.324
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To be informative, a multiple alignment should contain a distribution of closely and distantly related sequences. If all the sequences are very closely related, the information they contain is largely redundant, and few inferences can be drawn. If all the sequences are very distantly related, it will be difficult to construct an accurate alignment (unless all the structures are available), and in such cases the quality of the results, and the inferences they might suggest, are questionable. Ideally, one has a complete range of similarities, including distantly related examples linked through chains of close relationships. (See Case Study 5.2.)"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.089,
+            0.349,
+            0.825,
+            0.396
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "CASE STUDY 5.2 Structural inferences from multiple sequence alignments of thioredoxins"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.089,
+            0.414,
+            0.907,
+            0.463
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Thioredoxins are enzymes found in all cells. They participate in a broad range of biological processes, including cell proliferation, blood clotting, seed germination, insulin degradation, repair of oxidative damage, and enzyme regulation. The common mechanism of these activities is the reduction of protein disulphide bonds."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.089,
+            0.463,
+            0.909,
+            0.564
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Plate VI shows a multiple sequence alignment of 16 thioredoxins. The structure of E. coli thioredoxin contains a central five-stranded β sheet flanked on either side by α helices; these helices and strands are indicated by the symbols α and β. Other thioredoxins are expected to share most but not all of the secondary structure of the E. coli enzyme. The plate also shows a summary of the alignment as a sequence logo, in which letters of different sizes indicate different proportions of amino acids. (T. Schneider and M. Stephens designed sequence logos; this example was produced using the web server at "
+            },
+            {
+              "type": "hyperlink",
+              "url": "http://weblogo.berkeley.edu/logo.cgi",
+              "content": [
+                {
+                  "type": "text",
+                  "content": "http://weblogo.berkeley.edu/logo.cgi"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "content": ")."
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 6,
+          "bbox": [
+            0.481,
+            0.967,
+            0.518,
+            0.983
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "239"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 239,
+      "blocks": [
+        {
+          "type": "image",
+          "index": 1,
+          "bbox": [
+            0.307,
+            0.061,
+            0.71,
+            0.247
+          ],
+          "content": [
+            {
+              "type": "image_caption",
+              "index": 0,
+              "bbox": [
+                0.291,
+                0.048,
+                0.478,
+                0.06
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(a) Alignment of thioredoxins"
+                }
+              ]
+            },
+            {
+              "type": "image_body",
+              "index": 1,
+              "bbox": [
+                0.307,
+                0.061,
+                0.71,
+                0.247
+              ],
+              "image_path": "images/page_239_image_1.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 3,
+          "bbox": [
+            0.307,
+            0.262,
+            0.71,
+            0.343
+          ],
+          "content": [
+            {
+              "type": "image_caption",
+              "index": 2,
+              "bbox": [
+                0.291,
+                0.251,
+                0.382,
+                0.262
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(b) Thioredoxin"
+                }
+              ]
+            },
+            {
+              "type": "image_body",
+              "index": 3,
+              "bbox": [
+                0.307,
+                0.262,
+                0.71,
+                0.343
+              ],
+              "image_path": "images/page_239_image_3.jpg",
+              "content": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n40\n41\n42\n43\n44\n45\n46\n47\n48\n49\n50\n51\n52\n53\n54\n55\n56\n57\n58\n59\n60\nK Y D P C F E F K V V D W C P K M L P E F E F L E X E Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F Y F YF E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E E EE A B C D D"
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "image",
+          "index": 4,
+          "bbox": [
+            0.321,
+            0.35,
+            0.471,
+            0.468
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 4,
+              "bbox": [
+                0.321,
+                0.35,
+                0.471,
+                0.468
+              ],
+              "image_path": "images/page_239_image_4.jpg",
+              "content": "Protein secondary structure diagram showing helices and labeled amino acid residues (N, C)"
+            }
+          ],
+          "sub_type": "chemical"
+        },
+        {
+          "type": "image",
+          "index": 5,
+          "bbox": [
+            0.547,
+            0.35,
+            0.696,
+            0.468
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 5,
+              "bbox": [
+                0.547,
+                0.35,
+                0.696,
+                0.468
+              ],
+              "image_path": "images/page_239_image_5.jpg",
+              "content": "Protein secondary structure diagram with labeled amino acid residues and helices"
+            },
+            {
+              "type": "image_caption",
+              "index": 6,
+              "bbox": [
+                0.09,
+                0.481,
+                0.905,
+                0.617
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Plate VI (a) Alignment of amino acid sequences of E. coli thioredoxin and homologues. Some of the sequences have been trimmed at their termini. Residue numbers in this table corresponds to positions in the E. coli sequence (top line). Helix α and strand β assignments for E. coli thioredoxin are from PDB entry 2TRX. (b) Sequence logo derived from this multiple-sequence alignment. (c) The structure of E. coli thioredoxin [2TRX] contains a central five-stranded β sheet flanked on either side by α helices. Residue numbers correspond to those in the multiple sequence alignment table. The N- and C-termini are also marked. Spheres indicate positions of the Cα atoms of every tenth residue. The reactive disulphide bridge between "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "^ { 3 2 } \\mathrm { C y s }"
+                },
+                {
+                  "type": "text",
+                  "content": " and "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "^ { 3 5 } \\mathrm { C y s }"
+                },
+                {
+                  "type": "text",
+                  "content": " appears in yellow (see Case Study 5.2)."
+                }
+              ]
+            }
+          ],
+          "sub_type": "chemical"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.09,
+            0.63,
+            0.907,
+            0.664
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Structural and functional features of thioredoxins that we might hope to identify from the multiple sequence alignment include the following (see Fig. 5.6 and Plate VI)."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 8,
+          "bbox": [
+            0.091,
+            0.674,
+            0.907,
+            0.925
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 9,
+              "bbox": [
+                0.091,
+                0.674,
+                0.907,
+                0.739
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• The most highly conserved regions probably correspond to the active site. The disulphide bridge between residues 32 and 35 in E. coli thioredoxin is part of a WCGPC[K or R] motif conserved in the family. Other regions conserved in the sequences, including the PT at residues 75–77 and the GA at residues 92–93, are involved in substrate binding."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 10,
+              "bbox": [
+                0.091,
+                0.741,
+                0.907,
+                0.84
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Regions rich in insertions and deletions probably correspond to surface loops. A position containing a conserved Gly or Pro probably corresponds to a turn. Turns correlated with insertions and deletions occur at positions 9, 20, 60, and 95. The conserved glycine at position 92 in E. coli thioredoxin is indeed part of a turn. It is in an unusual mainchain conformation, one that is easily accessible only to glycine (See Chapter 6). The conserved proline at position 76 in E. coli thioredoxin is also associated with a turn. It is in another unusual mainchain conformation, this one easily accessible only to proline."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 11,
+              "bbox": [
+                0.091,
+                0.842,
+                0.905,
+                0.889
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• A conserved pattern of hydrophobicity with spacing 2 (i.e. every other residue)—with the intervening residues more variable and including hydrophilic residues—suggests a "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\beta"
+                },
+                {
+                  "type": "text",
+                  "content": " strand on the surface. This pattern is observable in the β strand between residues 50 and 60."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 12,
+              "bbox": [
+                0.091,
+                0.892,
+                0.905,
+                0.924
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "• A conserved pattern of hydrophobicity with spacing ≈4 suggests a helix. This pattern is observable in the region of helix between residues 40 and 49."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "page_number",
+          "index": 13,
+          "bbox": [
+            0.482,
+            0.968,
+            0.518,
+            0.982
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "240"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}

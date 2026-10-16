@@ -1,0 +1,543 @@
+# 7 Introduction to systems biology
+
+原始 PDF 第 330–345 页。
+
+# Introduction to systems biology
+
+## LEARNING GOALS
+
+• Appreciating a trend towards a new point of view: the theme of systems biology is integration.
+• Understanding the general features of graphs, including the distinction between undirected, directed, and labelled graphs. Understanding the representation of networks by graphs.
+• Knowing which kinds of biological interaction patterns can profitably be thought of as networks.
+• Recognizing the distinction between static and dynamic properties of networks.
+Appreciating the different possible kinds of dynamic states of networks.
+
+## Introduction
+
+Like all good first acts, this short interlude is anticipatory. It provides the background for the final two chapters. This is a tribute to the recent growth in systems biology: in the previous edition the subject could be contained in a single chapter.
+
+The increased interest in systems biology is both the effect and, if not the cause, certainly a contributor to the motivation for development, of novel high-throughput data streams. Like most of contemporary biology, systems biology is data-driven. But where are the data driving us? They are driving us to the exploration of new directions and attitudes. Specifically, there is focus on integration of the components of biological activity, at the cellular, organismic, and ecological levels. It is justifiable to repeat that, for generations, biochemists have been taking things apart. Systems biology has the goal of putting them back together.
+
+This change in focus demands new ideas, and new mathematical techniques with which to express them.
+
+Many patterns of interaction have the form of networks. Many networks are already familiar: the web is a pervasive example. A road map of the city in which you live portrays a network of locations connected by streets. In biology, metabolic pathways and phylogenetic trees are networks.
+
+As phylogenetic trees show, the mathematical representation of a network is a graph. A strictly hierarchical graph, or a ‘tree’ structure, is a simple type of graph. The Bandelt–Dress representation of phylogenetic relationships (see Example 5.7) is a more complex form of graph.
+
+We are interested in both the static and dynamic aspects of networks. A graph showing the underground rail system in a city, such as London, indicates the stations and the links between them. The familiar map reports the static structure of the network. But although stations and tracks do not move, trains and their passengers do. The traffic patterns in a network at a particular time are an aspect of its dynamic structure. So too are the variations in traffic patterns. Although the static structure of the London underground—the stations and tracks—is the same at noon and midnight, the dynamic structure—the traffic pattern—is very different.
+
+Similarly, in an E. coli cell, the potential metabolic pathways are fixed. These depend on the
+
+330
+
+---
+
+catalytic activities of the enzymes that the genome encodes, plus spontaneous reactions not requiring enzymes. But, depending on the physiological state of the cell, the traffic through the network of metabolic pathways may be very different. Indeed, the metabolic network is itself governed by a supervising control network that responds to internal and external changes. A famous example is control of the Lac operon in response to the composition of the medium.
+
+We have suggested that an initial goal of systems biology is to identify the active networks in cells, organisms, and ecosystems, and to understand the properties of their components and the interactions among them. Perhaps an ultimate challenge would be this: suppose we know the complete structure of the cellular networks, and know exact details specifying, quantitatively, the inputs and outputs of each network element. That is, suppose for simplicity that we consider a cell in some fixed physiological state. Assume that we know the complete inventory of cellular enzymes, and we know exactly which reactions they catalyse and the relevant kinetic parameters. Would the behaviour of the cell be predictable? Given a set of conditions—initial metabolite concentrations— would we be able to model, computationally, the metabolic traffic patterns?
+
+Some systems biologists have already achieved some interesting results in modelling the dynamics of some fragments of metabolic networks, under simplifying assumptions.
+
+How can we try to set reasonable goals? We learn from physics that some dynamical systems are stable, and robust to perturbations. For instance, a golf ball sitting at the bottom of a hill will, after a small displacement up the hill, return and come to rest at its initial position. Other systems are not stable. A golf ball balanced precariously on the peak of a hill will, after a small displacement, roll down the hill.
+
+Living things are more complicated, because the environment is changeable. There is consensus that instead of asking whether a cell is or is not stable, we must ask whether or not it is robust. Before trying to answer such a question, we shall have to devote some attention to a careful characterization of robustness, a matter of considerable delicacy.
+
+We also learn from physics that for a system consisting of a small number of particles we can in classical mechanics predict their trajectories precisely in many cases, knowing the forces between them and given the initial conditions. But for large numbers of particles, for example the air in a bicycle tyre, even in classical mechanics we can hope for no more than to derive some statistical regularities.
+
+There is an analogue of that in biology, in modelling epidemics of a disease. Suppose we know the state of a population, the typical severity and time course of the disease in individuals, and the probability of transmission. It is then possible to predict the spread of the disease in the population. We cannot predict whether any particular individual will become ill, but we can do a reasonable job of modelling the number of affected individuals as a function of time. In particular we can try to decide whether the parameters suggest that there will be an epidemic—uncontrolled spread of disease throughout the population—or only self-contained pockets.
+
+Such ideas set out the program for our discussion of systems biology, as follows.
+
+What are the data?
+• How can we represent and analyse them?
+• What concepts do we need to understand if we are to be able to make sense of the data?
+• What kinds of predictions can we make?
+
+• Specific?
+• Statistical?
+
+331
+
+---
+
+• Qualitative?
+• Quantitative?
+
+## Networks and graphs
+
+In the abstract, networks have the form of graphs. (See Box 7.1.)
+
+The routes between cities on the map of Sweden in Figure 5.4 is a network represented by a graph, similar to those appearing in systems biology. Each city is a node. The thick lines joining them indicate routes. Other examples familiar to many readers are the map of the London Underground, and maps of the subway systems of other cities (see Box 7.2). Each station is a node of the graph, and edges correspond to tracks connecting the stations. The modern London Underground map shows the topology of the network; it does not quantitatively represent the geography of the area. An early map, from 1925, did maintain geographic accuracy.<sup>2</sup> This was possible when the system was simpler than it is now. Some of the maps now posted in the Paris Métro are fairly accurate geographically. Considered as networks, a geographically accurate map and a simplified map with the same topology correspond to the same graph.
+
+The London Underground network is fully connected, in that there is (on most days) a route between any two stations. Many questions familiar to commuters are shared in the analysis of biological networks; for example: what are the routes connecting
+
+## Box 7.1 The idea of a graph
+
+• Mathematically, a graph consists of a set of vertices V and a set of edges E.
+• Each edge is specified by a pair of vertices.
+• In a directed graph the edges are ordered pairs of vertices.
+In a labelled graph there is a value associated with each edge. (A directed graph is a special case of a labelled graph: consider the arrowheads as labels.)
+
+![](../../raw/pages_0321-0336/images/page_331_image_13.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  V1["V1"] --> V2["V2"]
+  V2 --> V4["V4"]
+  V3["V3"] --> V4
+  V4 --> V5["V5"]
+  V4 --> V6["V6"]
+  V6 --> V5
+```
+</details>
+
+Graph
+
+![](../../raw/pages_0321-0336/images/page_331_image_15.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  V1["V1"] --> V2["V2"]
+  V2 --> V4["V4"]
+  V3["V3"] -.-> V4
+  V4 --> V5["V5"]
+  V4 --> V6["V6"]
+  V6 --> V4
+```
+</details>
+
+Directed graph
+
+![](../../raw/pages_0321-0336/images/page_331_image_17.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  V1["V1"] -->|"3"| V2["V2"]
+  V2 -->|"x"| V6["V6"]
+  V3["V3"] -->|"y"| V4["V4"]
+  V4 -->|"14"| V5["V5"]
+```
+</details>
+
+Labelled graph
+
+An undirected unlabelled graph specifies the connectivity of a network but not the distances between vertices (the topology but not the geometry, as in the modern London Underground map). Labels on the edges can indicate distances. For example, some phylogenetic trees indicate only the topology of the ancestry. Others indicate quantitatively the amount of divergence between species. Phylogenetic trees are often drawn with the lengths of the branches indicating the time since the last common ancestor. This is a pictorial device for labelling the edges.
+
+Some graphs do not correspond to physical structures, and in any event edge labels need not indicate only internode distances; they can be far more general. For example, the links in a network of metabolic pathways might be labelled to reflect flow capacities.
+
+## Box 7.2 Examples of graphs
+
+332
+
+---
+
+• Sets of people who have met each other; generalizable to people linked in online social networks
+• Road maps, railroad maps, airline routing maps (but not purely topographic maps)
+• Electricity distribution systems
+• Phylogenetic trees
+• Metabolic pathways
+• Chemical bonding patterns in molecules
+• Citation patterns in scientific literature
+• The worldwide web
+
+Station A and Station B? Regarding different lines as subnetworks, how easy is it to transfer from one to another; that is, what is the nature of the patterns of connectivity? In case of failure of one or more links, does the network remain fully connected? If so, this would be an example of robustness.
+
+## Connectivity in networks
+
+If $V _ { A }$ and $V _ { Z }$ are vertices in a graph, a path from $V _ { A }$ to $V _ { Z }$ is a series of vertices: $V _ { A } ,   V _ { B } ,   V _ { C } ,   \dots   V _ { Z } ,$ such that an edge in the graph connects each successive pair of vertices. For instance, in the graph in Box 7.1, $V _ { 1 } ,   V _ { 2 } ,   V _ { 4 } ,   V _ { 5 }$ is a path from $V _ { 1 }$ to $V _ { 5 } .$ . The number of vertices in the chain, including the initial and final vertices, is called the length of the path. A cycle is a path of length $> 2$ in a nondirected graph for which the initial and final endpoints are the same, but in which no intermediate link is repeated.
+
+A graph that contains a path between any two vertices is called connected. Alternatively, a graph may split into several connected components.
+
+The graph in the Box 7.1 contains two connected components, one containing five vertices and one containing only one vertex. (In the extreme, a graph could contain many vertices but no edges at all.) It is often useful to determine the shortest path between any two nodes, and to characterize a network by the distribution of shortest path lengths. The phrase ‘six degrees of separation’—also the title of a play by John Guare, made into a film—refers to the assertion (attributed originally to Marconi) that if the people in the world are vertices of a graph and the graph contains an edge whenever two people know each other, then the graph is connected, and there is a path between any two vertices with length $\leq 6$
+
+A tree is a special form of graph. A tree is a connected graph containing only one path between each pair of vertices. A hierarchy is a tree: examples include chains of command and Linnaean taxonomy. Note that some family trees are not trees in the mathematical sense; examples are plentiful in the royal families of Europe. A tree cannot contain a cycle: if it did, there would be two paths from the initial point (= the final point) to each intermediate point. In the graph in Box 7.1 the subgraph consisting of vertices $V _ { 1 , }   V _ { 2 , }   V _ { 4 , }   V _ { 5 , }$ and $V _ { 6 }$ is a tree. Adding an edge from $V _ { 1 }$ to $V _ { 5 }$ would create an alternative path from $V _ { 1 }$ to $V _ { 5 , }$ and the cycle $V _ { 1 } \to V _ { 2 } \to V _ { 4 } \to V _ { 5 } \to V _ { 1 }$ ; the modified subgraph is not a tree.
+
+![](../../raw/pages_0321-0336/images/page_332_image_15.jpg)
+
+## See Weblem 7.1
+
+The density of connections, or the mean number of edges per vertex, characterizes the structure of a graph. A fully connected graph of N vertices has N − 1 connections per vertex; a graph with no edges has 0. Nervous systems of higher animals achieve their power not only by containing large number of neurons but also by having high connectivities.
+
+333
+
+---
+
+In some systems there are limits on numbers of connections: for many human societies, in the graph in which individuals are the vertices and edges link people married to each other, each node has connectivity 0 or 1. For any hydrocarbon, the graph in which carbon and hydrogen atoms are the vertices and edges link atoms bonded to each other, each node has four or fewer connections. In other networks, connectivities follow observable regularities (see Box 7.3). For instance, the worldwide web can be considered as a directed graph. Individual documents are the nodes, and hyperlinks are the edges. It is observed that the distribution of incoming and outgoing links follow power laws: P(k) = probability of k edges is proportional to $k ^ { - q }$ , where $q = 2 . 1$ for incoming links and $q = 2 . 4 5$ for outgoing links.
+
+The density of connections is very important in defining the properties of a network. For instance, the interactions that spread disease among humans and/or animals form a network. Whether a disease will cause an epidemic depends not only on the ease
+
+## Box 7.3 ’Small-world’ networks
+
+Many observed networks, including biological networks, the worldwide web, and electric power distribution grids, have the characteristics of high clustering and short path lengths. They include relatively few nodes with very large numbers of connections, called ’hubs’, and many that contain few connections. These combine to produce short path lengths between all nodes. From this feature they are called ’small-world’ networks. Such networks tend to be fairly robust, staying connected after failure of random nodes. Failure of a hub would be disastrous but is unlikely, because there are so few hubs. The 1987 fire in the King’s Cross underground station in London had a devastating effect on the underground network because King’s Cross is a hub.
+
+Many networks, notably the worldwide web, are continuously adding nodes. The connectivity distribution tends to remain fairly constant as the network grows. These are called ’scale-free’ networks.
+
+![](../../raw/pages_0321-0336/images/page_333_image_5.jpg)
+
+## See Weblem 7.2
+
+of transmission in any particular interaction, but on the density of connections. As the density of connections—the rate of interactions—increases, the system can exhibit a qualitative change in behaviour, analogous to a phase change in physical chemistry, from a situation in which the disease remains under control to an epidemic spreading through an entire population. The classic approach of ‘quarantine’—isolating people for 40 days—works by cutting down the degree of connectivity of the disease-transmission network. Note that a carrier who shows no symptoms—‘Typhoid Mary’ <sup>3</sup> was a classic case—serves as a hub of the disease-transmission network.
+
+Two historical epidemics associated with wars demonstrate the distinction between topology and geometry in network connectivity. In the early years of the Peloponnesian War, Athens suffered a severe epidemic. (From Thucydides' detailed description of the symptoms, the disease was probably bubonic plague.) A factor contributing to its transmission was the crowding of people into the city from the more militarily vulnerable surrounding countryside. After World War I, an epidemic of influenza killed an estimated 20 million people, more than died in the war itself. Long-distance travel by soldiers returning from the war helped spread the disease. Any epidemic needs an infectious agent and a high density of routes of transmission. These examples show that the controlling factor is the density of the connections and not necessarily the density of the people.
+
+A change in behaviour analogous to the transition to an epidemic appears in nuclear fission. In a sample of uranium-235, decaying nuclei produce neutrons that can trigger fission of other atoms. If the sample is small, so many secondary neutrons are lost through the surface that the sample remains
+
+334
+
+---
+
+stable. Above a critical mass, enough neutrons are captured within the sample to create a chain reaction. If the atoms are vertices of a graph, and the edges are the trajectories of neutrons from one atom to another, the change in behaviour can be seen as the effect of increasing the connectivity density of a network. (The background to Michael Frayn's popular play, Copenhagen, involves the attempts, before and during the Second World War, to estimate the size of the critical mass, in order to determine whether nuclear explosions would be feasible.)
+
+## Dynamics, stability, and robustness
+
+An unlabelled, undirected graph gives a static structure of the topology of a network. For our molecular interaction networks this may be an adequate description of many of the physical interactions.
+
+For some networks, such as metabolic pathways or patterns of traffic in cities, the dynamics of the system depend on the transmission capacities of the individual links. These capacities can be indicated as labels of the edges of the graph. This allows modelling of patterns of flow through the network. Examples include route planning, in travel or deliveries. Note that the shortest path may well not give optimal throughput. In many cities, taxi drivers are exquisitely sensitive—and insensitively garrulous—about optimal traffic paths.
+
+In molecular biology, metabolic pathways and signal transduction cascades are networks that lend themselves to pathway and flow analysis. Optimal sequence alignment by dynamic programming (see Chapter 5) involves determining the optimal path through an edit graph.
+
+Although much is known about the mechanisms of individual elements of control in signalling pathways, understanding their integration is a subject of current research. For instance, the idea that healthy cells and organisms are in stable states is certainly no more than an approximation (and in most cases a gross idealization). The description of the actual dynamic state of the metabolic and regulatory networks is a very delicate problem. Understanding how cells achieve even an apparent approximation to stability is also quite tricky. It is likely that great redundancy of control processes lies at its basis. Regulation is based on the resultant of many individual control mechanisms: here a short feedback loop, there a multistep cascade. Somehow the independent actions of all the individual signals combine to achieve an overall, integrated result. It is like the operation of the ‘invisible hand’ that, according to Adam Smith, coordinates individual behaviour into the regulation of national economies.
+
+## Stability and robustness
+
+Stability is the property of being able to continue to carry out approximately the same set of activities when challenged by small fluctuations in conditions: ’Take it in your stride’. A stable system is not necessarily a static system.
+
+Robustness is the property of being able to continue to carry out the same or if necessary a more substantially modified set of activities, that achieve similar goals, after challenge by larger perturbations. Sometimes but not always this involves the attainment of a different stable state. An example would be a switch from anaerobic to aerobic metabolism in yeast, which involves major physiological changes. ’Oops!’
+
+Several types of dynamic states of a network are possible (see Box 7.4):
+
+• equilibrium;
+
+335
+
+---
+
+• steady-state;
+• states that vary periodically;
+• unfolding of developmental programmes;
+• chaotic states;
+• runaway or divergence;
+shutdown.
+
+## Box 7.4 States of a network of processes
+
+At equilibrium one or more forward and reverse processes occur at compensating rates, to leave the amounts of different substances unchanging:
+
+$$
+A \rightleftharpoons B
+$$
+
+Chemical equilibria are generally self-adjusting upon changes in conditions, or in concentrations of reactants or products.
+
+A steady state will exist if the total rate of processes that produce a substance is the same as the total rate of processes that consume it. For instance, the two-step conversion:
+
+$$
+\mathrm{A} \rightarrow \mathrm{B} \rightarrow \mathrm{C}
+$$
+
+could maintain the amount of B constant, provided that the rate of production of B (the process A → B) is the same as the rate of its consumption (the process B → C). The net effect would be to convert A to C.
+
+A cyclic process could maintain a steady state in all its components:
+
+![](../../raw/pages_0321-0336/images/page_335_image_15.jpg)
+
+A steady state in such a cyclic process with all reactions proceeding in one direction is very different from an equilibrium state. Nevertheless, in some cases it is still true that altering external conditions produces a shift to another, neighbouring, steady state.
+
+States that vary periodically appear in the regulation of the cell cycle, circadian rhythms, and seasonal changes such as annual patterns of breeding in animals and flowering in plants. Circadian and seasonal cycles have their origins in the regular progressions of the day and year, but have evolved a certain degree of internalization.
+Many equilibrium and some steady-state conditions are stable, in the sense that concentrations of most metabolites are changing slowly if at all, and the system is robust to small changes in external conditions. The alternative is a chaotic state, in which small changes in conditions can cause very large responses. Weather is a chaotic system: the meteorologist Lorenz asked, ’Does the flap of a butterfly’s wings in Brazil set off a tornado in Texas?’ In a carefully regulated system, chaos is usually well worth avoiding, and it is likely that life has evolved to damp down the responses to the kinds of fluctuations that might give rise to it. Chaotic dynamics does sometimes produce the approximations to stable states: these are called strange attractors. Understanding stability in dynamical systems subject to changing environmental stimuli is an important topic, but beyond the scope of this book.
+Unfolding of developmental programmes occurs over the course of the lifetime of the cell or organism. Many developmental events are relatively independent of external conditions, and are controlled primarily by regulation of gene expression patterns.
+Runaway or divergence. Breakdown in control over cellular proliferation leads to unconstrained growth, in cancer.
+• Shutdown is part of the picture. Apoptosis is the programmed death of a cell, as part of normal developmental
+
+336
+
+---
+
+processes, or in response to damage that could threaten the organism, such as DNA strand breaks. Breakdown of mechanisms of apoptosis—for instance, mutations in the protein p53—is an important cause of cancer.
+
+## Some sources of ideas for systems biology
+
+Several related ideas are important in coping with the static and dynamic aspects of the networks studied in systems biology. These include complexity, entropy, randomness, redundancy, robustness, predictability, and chaos. We deal with these in our daily lives, but without the need to define them precisely and quantitatively. How well do we really understand these concepts? What are the relationships among them? And how can they be used to illuminate biology in general and systems biology in particular?
+
+## Complexity of sequences
+
+The simplest complex object in biology is a sequence. We have all heard of random sequences, and probably agree that the more random the sequence the more complex it is. For example, genomic sequences contain ‘low-complexity’ regions. In the human genome, such regions include simple repeats, or microsatellites, or regions of highly skewed nucleotide composition such as AT-rich or GC-rich regions, or polypurine and polypyrimidine stretches. Are these regions more, or less, random than a region containing a gene that encodes a specific protein? How can such properties of sequences be measured?
+
+Take a sequence of characters:
+
+AGTCTCTA . . ., or AATAAAAATAAA . . ., or ABZXUVJFLT....
+
+What determines the amount of information needed to specify the next character in each sequence? Less information is required if the set of possible characters—A, T, G, C—is very small, or if the distribution is very skewed—AATAAAAATAAA—than if the set is very large and the ratios of different characters is more even.
+
+How can we make this quantitative? Genomic sequences are limited to the characters A, T, G, and C. To identify each symbol it is enough to ask two ‘yes-or-no’ questions. For instance:
+
+Question 1: is it a purine (or a pyrimidine)? (Purine implies it is A or G.)
+
+Question 2: Is it 6-amino (or 6-keto)? (6-Amino implies it is A or C.)
+
+Knowing the answer to these two questions is enough for us to identify one of the four bases uniquely.
+
+Representing yes with 1 and no with 0, each ‘yes-or-no’ question provides 1 binary digit, or 1 bit of information. We could encode each nucleotide of a genome sequence as a two-bit binary string.
+
+To identify a character of the ordinary alphabet—abcd … z—requires more than two yes/no questions. It is therefore reasonable to think that a character string of full text is more complex than a genomic sequence of the same length containing only the characters A, T, G, and C.
+
+Questions of how much information is needed to specify an amino acid appear in the genetic code itself. How many nucleotides are required to encode 20 amino acids? If each position in a gene can contain one of four nucleotides, then there are only 16 possible dinucleotides: not enough. So, if the same number of nucleotides is to be required for each amino acid, there must be at least three
+
+337
+
+---
+
+nucleotides per codon, as observed. Because there are only 20 amino acids, the triplet code contains redundancy.
+
+Why not make do with fewer amino acids? If 15 amino acids (plus a STOP signal)—not unreasonable—would suffice, then from the information point of view a doublet code would be possible. However, a two-base codon/two-base anticodon interaction would probably not have adequate stability.
+
+It has been possible to embed these ideas in a more formal framework.
+
+## Shannon's definition of entropy
+
+In 1948 C.E. Shannon introduced the concept of entropy into information theory, as part of his analysis of signal transmission. Suppose a text contains symbols with relative probability $p _ { i } .$ Shannon's measure of entropy is:
+
+$$
+H = - \sum_ {i} p _ {i} \log_ {2} p _ {i}
+$$
+
+The entropy H can be interpreted as the minimum average number of bits per symbol required to transmit the sequence.
+
+For example, for a genomic sequence with equimolar base composition, $p_{\mathrm{G}}=p_{\mathrm{C}}=p_{\mathrm{G}}=p_{\mathrm{C}}=0.25$
+
+$$
+\begin{array}{l} H = - \sum_ {i} p _ {i} \log_ {2} p _ {i} \\ = - [ 0. 2 5 \log_ {2} 0. 2 5 + 0. 2 5 \log_ {2} 0. 2 5 + 0. 2 5 \log_ {2} 0. 2 5 \\ + 0. 2 5 \log_ {2} 0. 2 5 ] = 2 \\ \end{array}
+$$
+
+(Note that $\log_{2}0.25 = \log_{2}\% = - 2.$
+
+The result H = 2 for the gene sequence with equimolar base composition recovers our informal result that 2 bits, or two ‘yes-or-no’ questions, are required. For a sequence limited to two equiprobable characters A and T: $p_{\mathrm{A}} = p_{\mathrm{T}} = 0.5, H = - \left[ 0.5 \log_{2} 0.5 + 0.5 \log_{2} 0.5 \right] = 1$ . This also makes sense because, knowing that the only choices are A and T, we can decide which it is with one ‘yes-or-no’ question, or 1 bit.
+
+Suppose that a sequence is known to have the skewed nucleotide composition: $p _ { \mathrm { A } }   =   p _ { \mathrm { T } }   =   0 . 4 2$ , and $p _ { \mathrm { G } }   =   p _ { \mathrm { C } }   =   0 . 0 8$ . Then:
+
+$$
+\begin{array}{l} H = - [ 0. 4 2 \log_ {2} 0. 4 2 + 0. 4 2 \log_ {2} 0. 4 2 + 0. 0 8 \log_ {2} 0. 0 8 \\ + 0. 0 8 \log_ {2} 0. 0 8 ] = 1. 6 3 \\ \end{array}
+$$
+
+What is the significance of the fact that the value H = 1.63 is less than 2? It suggests that we might be able to encode the sequence with fewer than 2 bits/character, on average.
+
+The Morse code for telegraphy took such advantage of unequal letter distribution frequencies to encode common letters with short sequences and uncommon letters with longer ones. For instance E = dot (length one) and J = dot-dash-dash-dash (length four). Note that to take advantage of entropy values lower than those corresponding to equal distributions of characters requires variable-length encoding. Huffman devised an algorithm for assigning length-optimal codes to symbols knowing their relative probabilities.
+
+It would be difficult to devise a Morse code for single nucleotides because the fact that we can easily encode them with no more than 2 bits doesn’t give us much room to play with; after all, we can’t subdivide a single bit. However, consider encoding a genome sequence at the trinucleotide
+
+338
+
+---
+
+level. Assume that there is no bias in trinucleotide frequencies other than that expected from the mononucleotide frequencies. (That is, $p _ { \mathrm { A T C } } = p _ { \mathrm { A } } \times p _ { \mathrm { T } } \times p _ { \mathrm { C } }$ , etc.) There are 64 trinucleotides to encode. Six bits per triplet obviously suffice, but for the skewed distribution $p _ { \mathrm { A } }   =   p _ { \mathrm { T } }   =   0 . 4 2$ and $p _ { \mathrm { G } } =$ $p_{\mathrm{C}} = 0.08, H = 4.9$ . We could encode the sequence using 5 bits per trinucleotide instead of 6.
+
+The entropy is lower than for an equimolar sequence because the uncertainty in each transmitted symbol is not complete: it is more likely to be A or T than G or C. In principle we can use this knowledge to improve the coding efficiency.
+
+Conversely, looking at distributions of oligonucleotides (dinucleotides, triplets, etc.) is a useful way to detect biologically significant patterns. Codon usage patterns in protein-coding regions are examples. Some algorithms for gene identification make use of biases, in coding regions, of frequencies of hexanucleotides.
+
+Although the actual genetic code does not achieve the theoretical efficiency that entropy calculations suggest, and indeed there does not even seem to be selection for reduction in the size of nonviral genomes, it is clear that the redundancy in the genetic code has biological significance. Many single-base mutations are silent. Conservative mutations allow proteins to evolve with small nonlethal changes that, cumulatively, can achieve large changes in structure and function. And of course the redundancy in having two copies of the genetic information in two strands of DNA is used to detect and correct errors in replication and translation, and to repair DNA damage.
+
+## Randomness of sequences
+
+The Shannon entropy of sequences is related to the idea of randomness, another concept that we know from everyday life without worrying too much about exactly what it means.<sup>4</sup> A.N. Kolmogorov defined, as a quantitative measure of the randomness of a sequence of numbers, the length of the shortest computer program that can reproduce the sequence. Thus the sequence 0, 0, 0, 0, 0, 0, 0, … is far from random, as it is the output of the very short program:
+
+Step 1: print 0
+
+Step 2: go back to step 1
+
+Periodic sequences, such as:
+
+Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Monday,
+
+are also of low complexity. In contrast, a truly random sequence has no description shorter than the sequence itself.
+
+## The relationship between complexity, randomness, and compressibility
+
+One way to shorten the specification of a nonrandom sequence is to compress it. We all use compression algorithms on our computer files to save disk space. If a sequence is truly random, in the sense of Kolmogorov, it cannot be compressed. By definition, nonrandom sequences can be compressed.
+
+One basic principle of compression is that: if you can predict what is coming next, you can compress ef ectively.
+
+The reason that sequences such as 0, 0, 0, 0, … and Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Monday, … are so effectively compressible, and—concomitantly—far
+
+339
+
+---
+
+from random, is that it is simple to decide what the successor of any element is. Even sequences for which it is not possible to decide unambiguously what the next element is can be compressed if some indications are available. It is not even necessary that the rules be supplied ‘up front’ as they can be for sequences such as 0, 0, 0, 0, … and Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, Monday, … The rules and statistics of prediction of a successor can be generated on the fly from the incoming data. The rule, ‘the weather tomorrow is likely to be the same as the weather today’ would—in most places—be good enough for effective compression of a series of daily weather reports.
+
+Putting together these considerations suggests a general idea that the harder it is to predict the contents of a data set from a subset of the data, the more complex the data set is.
+
+The relationships among complexity, predictability, compressibility, and randomness, which we have so far described for character strings, apply to the static structures of other types of objects, including images, three-dimensional structures, and—especially—networks. Indeed, most types of biological data can be regarded as networks. For instance, a nucleotide sequence is equivalent to a network in which the individual bases are the nodes, and each base is connected by a directed edge pointing to the next base. That's a perfectly proper graph! Conversely, recognizing that sequences are networks can usefully lead us to ask: can we define analogues of sequence alignment for more general networks? (Yes, we can.)
+
+## Complexity of other types of biological data
+
+Many types of biological data are not sequences. These include static data, such as protein structures,<sup>5</sup> gene expression patterns measured with microarrays, and regulatory networks; and dynamic data, describing processes.
+
+For static data, generalizations of Kolmogorov's approach are suitable for defining complexity. The description of the complexity of a process is more difficult.
+
+## Computational complexity
+
+Perhaps the best-developed area of analysis of complexity of processes comes from studies of the complexities of computational problems.
+
+An algorithm in computer science defines a process for solving a computational problem. For some problems, the execution time required to solve it is directly proportional to the size of the problem. These are said to be of order O(N) (read ‘Oh-N’). For instance, searching for a number in an unsorted table requires an execution time proportional to the length N of the table, O(N). For some problems, the execution time increases only as N logN. Sorting a list is an O(N logN) problem. For some problems, the execution time increases as a power $N ^ { 2 }$ or $N ^ { 3 }$ or …. The alignment by dynamic programming (see Chapter 5) of two sequences, both of length N, by dynamic programming is an O(N <sup>2</sup> ) problem. These are called polynomial-time problems. Still other problems have even greater time demands. Enumerating all subsets of a set containing N members is $O ( 2 ^ { N } )$
+
+Computer scientists define the complexity of a problem in terms of the dependence of execution time on problem size (see Box 7.5).
+
+In principle, constraints of computational complexity apply to biological systems much as to any other kind of computer. Computational complexity describes the complexity of the problem, not the complexity of the device that solves it. However, classical computational complexity theory applies to computers that execute programs sequentially. Biological computers do lots of parallel processing. This allows them to solve problems of substantial complexity. For instance, the regulatory activities
+
+340
+
+---
+
+that biological systems carry out are complicated nonlinear optimization calculations. Prediction of protein structure from amino acid sequence is an example. Another, described by Sydney Brenner, is the growth of bacteria in heavy water. Changing from $\mathrm { H } _ { 2 } \mathrm { O }$ to $\mathrm { D } _ { 2 } \mathrm { O }$ has the effect of changing the kinetic constants of many enzymatic reactions. After a relatively short period, cells readjust and resume activity and growth. (Would you call this stability or robustness?)
+
+## Static and dynamic complexity
+
+One dimension of complexity is time. Is it possible to distinguish static from dynamic complexity? If we could define and measure the static complexity of a system, this would provide an approach to dynamic complexity: we could ask how the static complexity of a system changes with time.
+
+For example, a program that sorts a list of numbers into order may proceed through a series of steps
+
+## Box 7.5 Classes P and NP
+
+A problem that can be solved in polynomial time is said to be in class P. O(N logN) algorithms are faster than $O ( N ^ { 2 } )$ , and are therefore in class P.
+
+Suppose on the other hand that the optimal algorithm to solve a problem has order worse than polynomial— for instance, it might have exponential order $O ( 2 ^ { N } )$ but that if you propose a solution it can be checked in polynomial time. Such a problem is said to be of class NP. (NP does not stand for nonpolynomial, but for nondeterministic polynomial, referring to a different model for the computation. Don’t worry about this technical distinction.)
+
+Consider the problem of sorting a list of numbers into order. That is, given a series of N numbers—2, 1, 7, 5, 8, 4, 3, … —an algorithm must produce as output the numbers rearranged into order: 1, 2, 3, 4, 5, 7, 8, Whatever the order of the optimal algorithm that solves the problem, an algorithm to verify that 1, 2, 3, 4, 5, 7, 8, is a solution (or that 1, 8, 7, 2, 4, 5, 3, …, is not a solution) can run in time linear in the length of the list. It is necessary only to check that each number is greater than or equal to its predecessor, which can be done by looking at each element of the list once. Therefore, sorting a list of numbers into order is a problem in class NP. (Sorting happens also to be in class P; sorting algorithms are known with order O(N logN).)
+
+For many problems, we don’t know whether any polynomial time algorithm exists.
+
+## NP-complete problems. Does P = NP?
+
+Many NP problems have equivalent complexities, in the sense that if a polynomial algorithm were discovered for one, it could be applied to solve others. The set of NP-complete problems is the set of NP problems, such that if we could solve any one of them in polynomial time we would be able to solve all of them in polynomial time. In other words, the discovery of a polynomial-time algorithm for any problem known to be NP complete would cause the classes P and NP-complete to coalesce. But are there any NP problems that are not in class P? This is the famous unsolved conjecture of computer science: does P = NP? (See Figure 7.1).
+
+![](../../raw/pages_0337-0352/images/page_340_image_11.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["NP-complete problems"] --> B["Class P problems"]
+  C["Class NP problems"] -.-> A
+```
+</details>
+
+Figure 7.1 Computational problems can be:
+
+341
+
+---
+
+• class P = problems for which algorithms of polynomial asymptotic order are known;
+• class NP = problems, for which optimal algorithms are probably nonpolynomial;
+NP-complete = a set of problems for which no algorithms of asymptotic polynomial-time order are known but which are reducible to one another in the sense that the discovery of an algorithm of asymptotic polynomialtime order for one of them (proving it to be of class P) would show that all NP-complete problems are of class P, or:
+
+If P = NP, class P would expand to fill the entire class NP set.
+
+in which the numbers appear ordered to progressively greater extents. The randomness, of the list may steadily decrease. This provides an important connection between complexity of static data and complexity of process. We can collect the historical records of a process, and treat them as a succession of cases of static data. We can apply ideas of predictability and complexity of structures to these historical records, to give insight into the changes in complexity of the system during the process.
+
+For real physical processes, changes in complexity over time appear to be governed by some general rules. If you stop people on the street, some of them might well say that in closed systems the laws of thermodynamics require that structural complexity always increases in natural processes. Others might say that the solar system is structurally complex but, ignoring tidal effects, dynamically simple. Will these statements hold up to rigorous analysis?
+
+Within classical Newtonian mechanics, we could base an analysis of dynamic complexity on the definition and description of the trajectories of a system of particles. The initial positions and velocities of the particles, knowledge of the forces between them, and Newton’s laws of motion, together provide a concise description of the dynamics of such a system.
+
+However, even within the framework of classical dynamics, this concise description can break down in the case of chaotic states. In chaotic states, very small changes in the initial conditions can lead to very large changes in the ensuing trajectories. Prediction of the dynamics requires very precise statement of the initial conditions, and very precise knowledge of the forces. Specification of the information required to describe the dynamics cannot in these cases be concise. Chaos is an extreme form of dynamic complexity.<sup>6</sup>
+
+Another way to look at this is directly relevant to systems biology: the dynamics of nonchaotic systems are robust to small changes in initial conditions. The dynamics of chaotic systems are not robust to small changes in initial conditions.
+
+## Chaos and predictability
+
+The discovery of the laws of mechanics in the 17th century—Newton’s Principia was published in 1687—gave rise to the hope that the dynamics of the solar system in particular (and much if not all of the universe in general) was predictable. Laplace expressed the view that:
+
+‘If we can imagine a consciousness great enough to know the exact locations and velocities of all the objects in the universe at the present instant, as well as all forces, then there could be no secrets from this consciousness. It could calculate anything about the past or future from the laws of cause and effect.’
+
+Leaving aside philosophical questions of the implications about free will and responsibility, there are also issues of computability. How much information do we really need, and how accurately do
+
+342
+
+---
+
+we need it, to predict the dynamics of the solar system? The weather? The universe? In chaotic systems, accurate prediction of the dynamic development requires unachievably accurate knowledge of the initial conditions. (At the atomic level Heisenberg’s uncertainty principle killed off Laplace’s hope of perfect determinism.)
+
+It is true that, in classical mechanics, even chaotic systems are subject to Poincaré’s recurrence principle: any system of particles held at fixed total energy will eventually return arbitrarily closely to any set of initial positions and velocities. (What rescues the second law of thermodynamics is that the closer the reapproach demanded, the longer the time required; that is, the rarer the fluctuations that achieve the recurrence.) However, knowing that the configuration will recur does not simplify the calculation of the trajectories of the particles.
+
+Through unpredictability, chaotic dynamics is associated with complexity. However, chaotic dynamics is not entirely incompatible with order and even the ‘spontaneous’ generation of order. In governing the time course of evolution of a system, chaotic dynamics does sometimes produce stable states or approximations to stable states: these are called attractors. Sometimes these are unique points, in other cases they are periodic and/or localized states. There have been examples of apparent generation of order in model systems evolving ‘at the edge of chaos’.
+
+There are even examples of static or structural order in chaotic systems. Many sequences associated with chaotic behaviour have a fractal structure. This means that if an object is dissected into parts, the parts have a structure similar to that of the whole (as well as to one another). B. Mandelbrot has produced many familiar beautiful images. This self-similarity at different scales implies that if we know part of such a structure we can predict a larger segment of it. This should recall the idea that predictability should permit compressibility, and effectively reduce complexity. Indeed, such internal structural relationships have been applied to compression. Fractal image compression is an effective tool for reducing the sizes of images, to a form from which the recovered image is not exactly the same as the starting image but perceptually equivalent.
+
+Fractal structures in biology include branching patterns of plants, and of the circulatory systems of vertebrates. At the molecular level, the storage polysaccharide glycogen has features of a fractal structure.
+
+## RECOMMENDED READING
+
+- Albert, R. and Barabási, A.-L. (2002). Statistical mechanics of complex networks. Rev. Mod. Phys., 74, 47–97.
+- Barabási, A.-L. (2003). Linked: How Everything Is Connected to Everything Else and What It Means. Plume Books, New York.
+- Bechhoefer, J. (2005). Feedback for physicists: a tutorial essay on control. Rev. Mod. Phys., 77, 783–836.
+- Emmert-Streib, F. and Dehmer, M. (2011). Networks for systems biology: conceptual connection of data and function. IET Syst. Biol., 5, 185–207.
+- Ideker, T. (2004). A systems approach to discovering signaling and regulatory pathways – or, how to digest large interaction networks into relevant pieces. Adv. Exp. Med. Biol., 547, 21–30.
+- Ma’ayan, A. (2011). Introduction to network analysis in systems biology. Sci Signal., 4(190), tr5.
+- Pavlopoulos, G.A., Secrier, M., Charalampos, N., Moschopoulos, C.N., Soldatos, T.G. et al. (2011). Using graph theory to analyze biological networks. BioData Mining, 4, 10.
+- Wagner, A. (2009). Robustness and Evolvability in Living Systems. Princeton University Press, Princeton, NJ.
+- Wagner, A. (2009) Networks in molecular evolution. In: Meyers, R.A. (ed.), Encyclopedia of Complexity and System Science|, pp. 5655–5667. Springer, Heidelberg.
+
+## EXERCISES AND PROBLEMS
+
+343
+
+---
+
+**Exercise 7.1** In the undirected, unlabelled graph in Box 7.1:
+
+(a) Name two vertices such that if you add an edge between them at least one vertex has exactly four neighbours. (Note that two edges may cross without making a new vertex at their point of intersection.)
+(b) Name two vertices such that if you add an edge between them to the original graph, the graph becomes a tree.
+(c) Starting with the answer to (b), name two vertices (neither of them $V _ { 1 } )$ such that if you add an edge between them to the original graph, the graph does not remain a tree.
+(d) Name two vertices such that if you add an edge between them to the original graph, there are alternative paths, of lengths 3 and 4, between $V _ { 1 }$ and $V _ { 5 } ,$ with no vertices repeated. (In determining the length of a path, you have to count the initial and final vertices. A path of length 3 between $V _ { 1 }$ and $V _ { 5 }$ contains one intermediate vertex.)
+(e) Name two vertices such that if you add an edge between them to the original graph there is exactly one path between $V _ { 1 }$ and $V _ { 3 } ,$ with no vertices repeated, and it has length 4.
+
+**Exercise 7.2** Of the examples of graphs in Box 7.1, (a) which are directed graphs? (b) Which are labelled graphs? (c) In each example, what is the set of nodes? (d) In each example, what is the set of edges?
+
+**Exercise 7.3** In the London Underground: (a) what is the shortest path between Moorgate and Embankment stations? Note that, considered as a graph, the shortest path between two nodes is the path with the fewest intervening nodes, not the path that would take the minimal time or fewest interchanges. (b) What is the shortest cycle containing King’s Cross, Holborn, and Oxford Circus stations? (c) The clustering coefficient of a node in a graph is defined as follows: suppose the node has k neighbours. Then the total possible connections between the neighbours is $k ( k - 1 ) / 2$ The clustering coefficient is the observed number of neighbours divided by this maximum potential number of neighbours. If the neighbours of a station are the other stations that can be reached without passing through any intervening stations, what is the clustering coefficient of the Oxford Circus station? (If necessary, see [http://www.bbc.co.uk/london/travel/downloads/tube\_map.html](http://www.bbc.co.uk/london/travel/downloads/tube_map.html)).
+
+**Exercise 7.4** In the London Underground: (a) what is the maximum path length between any two stations? That is, for which two stations does the shortest trip between them involve the maximum number of intervening stops? (b) If the District Line were not active, what stations if any would be inaccessible by underground? (c) If the Jubilee line were not active, what stations if any would be inaccessible by underground?
+
+**Problem 7.1** On the map of the London Underground, what is the distribution of numbers of neighbours of vertices? (You could just count them by hand. Or you could download the map and write a program to solve this problem. Generating the connectivity list is not an entirely trivial exercise.)
+
+**Problem 7.2** Analyse the map of the London Underground by counting the number of connections made from each station in Zone 1 (the central portion). Count connections to stations inside and outside Zone 1 as long as they originate within Zone 1. Count only one connection if two stations are connected by more than one line; in other words, for each station, the question is: how many other stations can be reached without passing through any intermediate stops? (a) What is the maximum number of connections of any station? (b) For each integer k from 1 to this maximum number, how many stations have k connections? (c) Plot these data on a log-log plot. Does the relationship appear reasonably linear? (d) If so, fit a straight line to the log-log plot and determine the exponent. Results of network analysis of this sort are more significant if the data cover several orders of magnitude, but this is not possible for this example.
+
+**Problem 7.3** What is the minimum number of ’yes-or-no’ questions required to identify a specific letter of the English uppercase alphabet: ABC … Z? Assume a random text with equal distribution of all letters.
+
+**Problem 7.4** Suppose you want a program to identify whether a certain passage of text, no fewer than 200 words in length, is in English, French, or German. You are given sample texts of comparable length known to be in each of those languages. Of course you could scan the unknown text for its alphabet: the presence of é would imply French, the presence of ü would imply German, and the absence of both would imply English. Or you could look for words:’and’ implies English, ’le’ implies French, and ’der’ or ’das’ (but not ’die’ or ’den’, or even, in Brooklyn, ’dem’) implies German. However, these might fail in the case of text primarily in one language, but quoting a short passage in one of the others.
+
+Think of a method based on compression of the concatenation of the unknown text with each of the knowns. Your method should require no knowledge whatsoever of the alphabet or vocabulary of each of the languages. Indeed, it should work even if the languages of the known texts were unidentified and unrecognized. For instance, there is no
+
+344
+
+---
+
+reason why it should not work with transliterations of material in oriental languages, provided samples were provided. (Based on a remark by A. Aho.)
+
+**Problem 7.5** Write a program that accepts as input two London Underground stations, and advises a traveller what line to take, and where if necessary to change trains. Choose the route to minimize the number of changes.
+
+**Problem 7.6** Write a web server to provide the information generated in Problem 7.5 to tourists. (Note that Transport for London has already done this. If you were lazy or in a hurry, could your program simply access their site, rather than redoing the calculation yourself? Why might you want to revisit a solved problem? One reason might be to provide versions in languages that the TFL site does not. Another might be to link to sites with local attractions around the destination.)
+
+![](../../raw/pages_0337-0352/images/page_344_image_3.jpg)
+
+## See Weblems 7.3, 7.4 and 7.5
+
+1 See [http://www.bbc.co.uk/london/travel/downloads/tube\_map.html](http://www.bbc.co.uk/london/travel/downloads/tube_map.html). Exercises 7.3 and 7.4, Problems 7.1, 7.2, and 7.5, and Weblem 7.4 also make use of this map.
+[2 See http://www.ltmcollection.org/museum/object/related.html?](http://www.ltmcollection.org/museum/object/related.html?IXrelsr=sdi5UHeCftW&IXrelinv=&IXinv=1983/4/1924&IXcollection=tickets%20or%20maps%20or%20timetables&IXsummary=collection/collection&IXfirst=7)
+[IXrelsr=sdi5UHeCftW&IXrelinv=&IXinv=1983/4/1924&IXcollection=tickets%20or%20maps%20or%20timetables&](http://www.ltmcollection.org/museum/object/related.html?IXrelsr=sdi5UHeCftW&IXrelinv=&IXinv=1983/4/1924&IXcollection=tickets%20or%20maps%20or%20timetables&IXsummary=collection/collection&IXfirst=7)
+3 Mary Mallon (1869–1938) presented the following unfortunate combination of features: (1) she was infected with typhoid, (2) she did not show symptoms, and (3) she worked for many families as a cook.
+4 Shannon entropy is linked with thermodynamic entropy through the general notion of disorder or randomness. The relationship has been explored by physicists, including J.C. Maxwell and L. Szilard, in their discussions of’Maxwell’s demon’, and by E.T. Jaynes.
+5 A paradox when applying Kolmogorov’s ideas to protein structures is that the shortest representation of a protein structure is an amino acid or DNA sequence!
+6 The original meaning of the word chaos (from the Greek word for vast empty void) suggests a structural significance, but modern physics, since Maxwell, has given it a dynamical one.
+
+345

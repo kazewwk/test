@@ -1,0 +1,1673 @@
+{
+  "pages": [
+    {
+      "page_idx": 176,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.075,
+            0.074,
+            0.23,
+            0.184
+          ],
+          "content": ""
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.233,
+            0.155,
+            0.87,
+            0.183
+          ],
+          "content": "Archives and information retrieval"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.067,
+            0.216,
+            0.392,
+            0.24
+          ],
+          "level": 2,
+          "content": "LEARNING GOALS"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.065,
+            0.268,
+            0.92,
+            0.412
+          ],
+          "sub_type": "text",
+          "content": "• Understanding the general kinds of data describing the molecules and processes of life assembled in the data banks supporting research and applications in biology, medicine, agriculture, and technology.\n• Knowing the basic infrastructure of bioinformatics, in terms of the sites and responsibilities of the major archival projects.\n• Understanding the basic concepts of information retrieval, including how to frame queries.\n• Gaining facility with general search engines on the web, and with specific websites for bioinformatics.\n• Knowing how to search for specific information about sequences, structures, metabolic pathways, and relationships to disease, and how to launch analyses of the data retrieved."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.427,
+            0.932,
+            0.583
+          ],
+          "content": "This chapter introduces the specialized information-retrieval skills that will allow you to make effective use of the data banks in molecular biology. The goal is to give you familiarity with basic operations. It will then be easy to improve and develop your technique, and to learn in more detail the facilities, and interrelationships and interactions, of resources available on the web. Convenient sources of training materials include the tutorials embedded in many data banks. An example is the ENTREZ tutorial site at the US National Center for Biotechnology Information (NCBI): [http://www.ncbi.nlm.nih.gov/education/tutorials/](http://www.ncbi.nlm.nih.gov/education/tutorials/). The European Bioinformatics Institute (EBI) offers many tutorials on various aspects of experiments, databases, and bioinformatics."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.066,
+            0.616,
+            0.681,
+            0.637
+          ],
+          "level": 2,
+          "content": "Database indexing and specification of search terms"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.063,
+            0.648,
+            0.932,
+            0.782
+          ],
+          "content": "An index is a set of pointers to information in a database. You have explored the entire worldwide web with a general search engine such as Google, and have visited specialized databases in molecular biology. You proposed one or more search terms, and the retrieval program checked for them in its tables of indices. The model is that the database is composed of entries: discrete, coherent parcels of information. The software identified entries with contents relevant to your interest. An example of the simplest paradigm is that you submit the term ‘horse’ and the program returns a list of entries that contain the term horse."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.063,
+            0.785,
+            0.932,
+            0.881
+          ],
+          "content": "A full search of the web would turn up information about many different aspects of horses— molecular biology, breeding, racing, poems about horses—most of which you do not want to see. For a successful search, it is not enough to mention what you do want you must specialize your search to ensure that your desired responses don't get buried in a mass of extraneous rubbish. (Of course, rubbish is merely whatever other people are interested in.)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.882,
+            0.932,
+            0.94
+          ],
+          "content": "To focus the results, information-retrieval programs accept multiple query terms or keywords. A search for ‘horse liver alcohol dehydrogenase’ would produce responses specialized to this enzyme. The search would, most likely, identify entries that contain all four keywords that you submitted:"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.483,
+            0.967,
+            0.517,
+            0.982
+          ],
+          "content": "177"
+        }
+      ]
+    },
+    {
+      "page_idx": 177,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.069,
+            0.05,
+            0.93,
+            0.088
+          ],
+          "content": "horse AND liver AND alcohol AND dehydrogenase. Poems about horses would be unlikely to appear among its top hits."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.069,
+            0.09,
+            0.931,
+            0.224
+          ],
+          "content": "It is possible to ask for other logical combinations of indexing terms. For instance, if a search engine did not know about transatlantic spelling differences, it would be useful to be able to search for ‘hemoglobin OR haemoglobin’. Note that a search for ‘hemoglobin haemoglobin’ would probably be interpreted as ‘hemoglobin AND haemoglobin’ which would pick up documents written by international committees or orthographically challenged expatriates. (Some websites deliberately include both spellings, using a synonym dictionary.) Similar considerations apply to sulfur/sulphur, for example."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.069,
+            0.226,
+            0.931,
+            0.342
+          ],
+          "content": "If you wanted to know about other dehydrogenases, you could ask for dehydrogenase NOT alcohol. This would retrieve entries that contain the term dehydrogenase but did not contain the word alcohol. You would find entries about lactate dehydrogenase, malate dehydrogenase, etc. You would miss references to review articles that compared alcohol dehydrogenases with other dehydrogenases, or alignments of the sequences of many dehydrogenases including alcohol dehydrogenase. You might regret missing these."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.069,
+            0.343,
+            0.931,
+            0.458
+          ],
+          "content": "Many database search engines will allow complex logical expressions such as (haemoglobin OR hemoglobin) AND (dehydrogenase NOT alcohol). Construction of such expressions is an exercise in set theory. Drawing Venn diagrams helps in formulating the query. Although the logic of a search is independent of the software used to query a database, different programs demand different syntax to express the same conditions. For example the query for dehydrogenase NOT alcohol might have to be entered as DEHYDROGENASE -ALCOHOL or DEHYDOGENASE!ALCOHOL."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.069,
+            0.46,
+            0.931,
+            0.613
+          ],
+          "content": "Specialized databases, including those in molecular biology, impose a structure on the information to separate different categories of data. This is essential. The biomedical scientific community includes people named E(lisabetta) Coli, (John D.) Yeast, (Patrice) Rat, and a large number of Rabbits, as well as several Crystals and Blots. If you wanted to find papers published by these investigators it would be naive to perform a general search of PubMed or some other molecular biology database with any of their names. Many databases provide separate indexing and searching of different categories of information. They permit searching for papers of which E. Coli is an author."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.069,
+            0.616,
+            0.931,
+            0.77
+          ],
+          "content": "Some categories, such as taxonomy, have controlled vocabularies. Often a query system presents the vocabulary terms to the user as choices from pull-down menus. The structure of taxonomic information is important in retrieval. To do a search for ‘globin NOT mammal’, and pick out the relatively few entries about nonmammalian globins rather than the very many entries about globins, including human haemoglobins, that do not explicitly mention the term mammal, requires an information-retrieval system that ‘understands’ the taxonomic hierarchy. Controlled vocabularies— limited, explicit, and carefully defined sets of terms, known as ontologies—are also important for distributing queries among several databases."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.069,
+            0.772,
+            0.931,
+            0.868
+          ],
+          "content": "A technical problem that frequently creates difficulty is how to enter terms containing nonstandard characters such as accent marks or umlauts, cedillas, Greek letters, and, as already mentioned, differences between British and US spelling. NCBI's ENTREZ can handle the US/British spelling differences with a synonym dictionary. Programs that index the entire web usually do not. Ignore the accent marks and hope for the best."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.069,
+            0.889,
+            0.295,
+            0.91
+          ],
+          "level": 2,
+          "content": "Follow-up questions"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.069,
+            0.921,
+            0.931,
+            0.94
+          ],
+          "content": "When searching in databases, it is rare that you will find exactly what you want on the first round of"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.485,
+            0.968,
+            0.516,
+            0.982
+          ],
+          "content": "178"
+        }
+      ]
+    },
+    {
+      "page_idx": 178,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.05,
+            0.932,
+            0.184
+          ],
+          "continues_prev": true,
+          "content": "probing. Usually you have to modify the query on the basis of the results initially returned. Most information-retrieval software permits consecutive, cumulative searches, with altered sets of search terms and/or logical relationships. Conversely, once you find what you were looking for, you will often want to extend your search to find related material. If you find a gene sequence, you might want to know about homologous genes in other organisms, or whether a three-dimensional structure of the corresponding protein is available. Or you might want to read papers published about the sequence."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.065,
+            0.187,
+            0.932,
+            0.243
+          ],
+          "content": "For these subsidiary queries you need links between entries in the same or different databases. This is an example of the question of how one ‘browses’ in electronic libraries, which is a difficult problem and the subject of current research."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.067,
+            0.246,
+            0.934,
+            0.478
+          ],
+          "content": "Suppose that you are interested in a particular gene. To find homologous genes you would like links to other items in the same database (a database of gene sequences). To find structures, or bibliographical references, related to that gene you would like links between different databases (from the database of gene sequences to a database of three-dimensional structures, or to a bibliographical database). As the number of databases, and the variety of their contents, grows, intercommunication among them has become a high-priority goal. Indeed, the interactivity of the databases in molecular biology is growing more and more effective, so that these operations are fairly easy now – formerly one had to do separate searches on isolated databases. NCBI's ENTREZ allows selecting a set of databases to search. Alternatively, most entries in molecular biology databases contain large numbers of embedded links. This is a generalization of the original model of a database as a closed set of independent entries that can be selected only by their indexed contents. One must think of the web as a very high-dimensional space."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.065,
+            0.48,
+            0.932,
+            0.556
+          ],
+          "content": "Database construction in bioinformatics involves activities that can be classified, to some extent, into archiving—with the major goals of conservation and curation of facts—and interpreting and annotating, the compilation of biological information in a form most useful to support research. (Include, within annotation, provision of links to other databases.)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.558,
+            0.932,
+            0.711
+          ],
+          "content": "Many archival databases specialize in different kinds of data—nucleic acid sequences, protein sequences, or macromolecular structures—for reasons in part historical and in part because of the different curatorial skills required. In many cases, archival and interpretative projects are carried out at the same institution and even by the same people. However, anyone who wishes to create a new database is free to combine and repackage information from any available sources. Practical laboratory experience and expert knowledge of the experimental techniques used to generate the data are essential for curating an archival database, but are only extremely desirable for an interpretative database."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.713,
+            0.932,
+            0.809
+          ],
+          "content": "Two aspects of the recent development of bioinformatics databases stand out. One is the appearance of many projects that recombine the archived data in different ways. The other is the combination of many individual databases into larger and larger conglomerates. These processes overlap and sometimes happen together. Most database unifications are outgrowths of prior collaborations, with varying degrees of intimacy in the result."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.066,
+            0.831,
+            0.526,
+            0.853
+          ],
+          "level": 2,
+          "content": "Analysis and processing of retrieved data"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.065,
+            0.863,
+            0.932,
+            0.942
+          ],
+          "content": "Sometimes as a result of a search you will want to launch a program, using the results retrieved for its input. For instance, if you identify a protein sequence of interest, you might want to perform a PSI-BLAST search. This is somewhat different from a strictly keyword-based database entryretrieval problem. Formerly you would have to run one job to search for your data, store the results"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.483,
+            0.967,
+            0.517,
+            0.982
+          ],
+          "content": "179"
+        }
+      ]
+    },
+    {
+      "page_idx": 179,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.051,
+            0.932,
+            0.149
+          ],
+          "continues_prev": true,
+          "content": "of your search, and then run a separate, second, job, feeding the retrieved sequence to the application program by hand. However, like searches in multiple databases, several information-retrieval systems in molecular biology provide facilities for initiating such calculations. This makes for very much improved fluency in your sessions at the computer. We saw an example in Chapter 3, retrieving C. elegans serpins and feeding the sequences into a multiple alignment program."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.067,
+            0.181,
+            0.224,
+            0.202
+          ],
+          "level": 2,
+          "content": "The archives"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.213,
+            0.932,
+            0.308
+          ],
+          "content": "Although our knowledge of biological data is very far from complete, it is nevertheless of impressive size, and growing extremely rapidly. Many scientists are working to generate the data, and to carry out research projects analysing the results. There is a smooth and copious flow of results from the laboratory bench to data-banking organizations, for archiving, curation, and distribution to the research laboratory and the clinic."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.311,
+            0.934,
+            0.485
+          ],
+          "content": "Archiving of bioinformatics data was originally carried out by individual research groups motivated by an interest in the associated science. As the requirements for equipment and personnel grew—and the nature of the skills required multiplied, to include much more emphasis on computer science—national and in most cases international organizations have taken on the responsibility. To match the high volumes of data production these projects have become very large scale indeed. Anyone who has followed the entire history of the field cannot help being impressed by the replacement of tiny, low-profile, and ill-funded projects carried out by a few dedicated individuals to a multinational heavy industry subject to hostile takeovers and the scientific equivalent of leveraged buyouts."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.088,
+            0.516,
+            0.651,
+            0.535
+          ],
+          "level": 2,
+          "content": "Primary data collections related to biological macromolecules"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.087,
+            0.551,
+            0.51,
+            0.568
+          ],
+          "content": "Nucleic acid sequences, including whole-genome projects"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.087,
+            0.578,
+            0.768,
+            0.7
+          ],
+          "sub_type": "text",
+          "content": "• Amino acid sequences of proteins\n• Protein and nucleic acid structures\n• Small-molecule crystal structures\n• Protein functions\n• Expression patterns of genes\n• Networks: of metabolic pathways, of gene and protein interactions, and of control cascades\n• Publications"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.066,
+            0.747,
+            0.431,
+            0.768
+          ],
+          "level": 2,
+          "content": "Nucleic acid sequence databases"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.78,
+            0.932,
+            0.936
+          ],
+          "content": "The worldwide nucleic acid sequence archive is a triple partnership of the NCBI (USA), the European Nucleotide Archive (or ENA; at the EBI, UK), and the DNA Data Bank of Japan (National Institute of Genetics, Japan). These projects curate, archive, and distribute DNA and RNA sequences collected from genome projects, scientific publications, and patent applications. The groups exchange data daily. As a result the raw data are identical. However, the format in which they are presented, and the nature of the annotation, vary among these data banks. To ensure that these fundamental data are freely available, scientific journals require deposition of new nucleotide sequences, as a condition for publication of an article. Similar conditions apply to nucleic acid and"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.483,
+            0.967,
+            0.518,
+            0.982
+          ],
+          "content": "180"
+        }
+      ]
+    },
+    {
+      "page_idx": 180,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.065,
+            0.052,
+            0.223,
+            0.068
+          ],
+          "continues_prev": true,
+          "content": "protein structures."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.07,
+            0.932,
+            0.166
+          ],
+          "content": "The nucleic acid sequence databases, as distributed, are collections of entries. Each entry has the form of a text file containing data and annotations for a single contiguous sequence. Some entries are assembled from several published papers reporting overlapping fragments of a complete sequence. More common now are deposition of the results of (a) sequencing and assembly of complete genomes and (b) sequences of fragments, without assembly, from metagenomic samples."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.168,
+            0.931,
+            0.225
+          ],
+          "content": "Entries have a life history. Because of the desire on the part of the user community for rapid access to data, new entries are made available before completion of annotation and checking. Entries mature through the classes:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.254,
+            0.241,
+            0.744,
+            0.259
+          ],
+          "content": "\\text {Unannotated} \\rightarrow \\text {Preliminary} \\rightarrow \\text {Unreviewed} \\rightarrow \\text {Standard}",
+          "image_source": "images/page_180_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.065,
+            0.276,
+            0.854,
+            0.293
+          ],
+          "content": "Rarely, an entry ‘dies’: a few have been removed when they are determined to be erroneous."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.296,
+            0.932,
+            0.371
+          ],
+          "content": "A sample DNA sequence entry from the European Nucleotide Archive, including annotations as well as sequence data, is the ATP7A gene from the aardvark (see Box 4.1). It encodes a protein involved in regulating copper levels. Mutations in the human homologue are implicated in Menkes syndrome, a progressive neurodegenerative disorder of copper metabolism."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.373,
+            0.932,
+            0.469
+          ],
+          "content": "A feature table (lines beginning FT) is a component of the annotation of an entry that reports properties of specific regions, for instance coding sequences (CDS). The aardvark ATP7A gene contains only one exon. Because feature tables are designed to be readable by computer programs— for example, to extract the amino acid sequence (see Exercise 4.4)—they have a more carefully controlled format and a more restricted vocabulary."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.087,
+            0.471,
+            0.456,
+            0.488
+          ],
+          "content": "The feature table may indicate regions that"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.065,
+            0.501,
+            0.355,
+            0.609
+          ],
+          "sub_type": "text",
+          "content": "perform or affect function;\n• interact with other molecules;\n• affect replication;\n• are involved in recombination;\n• are a repeated unit;"
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.085,
+            0.671,
+            0.911,
+            0.941
+          ],
+          "sub_type": "code",
+          "content": "```txt\nID AAG47427; SV 1; linear; genomic DNA; STD; MAM; 675 BP.\nXX\nPA AY011392.1\nXX\nDE Orycteropus afer (aardvark) ATP7A\nXX\nOS Orycteropus afer (aardvark)\nOC Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;\nMammalia;\nOC Eutheria; Afrotheria; Tubulidentata; Orycteropodidae; Orycteropus.\nOX NCBI_TaxID=9818;\nXX\nFH Key Location/Qualifiers\nFH\nFT source 1..675\nFT /organism=\"Orycteropus afer\"\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.087,
+                0.64,
+                0.799,
+                0.658
+              ],
+              "content": "Box 4.1 The EMBL Nucleotide Database entry for ATP7A from the aardvark"
+            }
+          ],
+          "footnotes": []
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.483,
+            0.968,
+            0.514,
+            0.982
+          ],
+          "content": "181"
+        }
+      ]
+    },
+    {
+      "page_idx": 181,
+      "blocks": [
+        {
+          "type": "code",
+          "bbox": [
+            0.082,
+            0.048,
+            0.905,
+            0.56
+          ],
+          "sub_type": "code",
+          "content": "```txt\nFT                  /mol_type=\"genomic DNA\"\nFT CDS     AY011392.1:\\<1..>675\nFT                 /codon_start=1\nFT                 /gene=\"ATP7A\"\nFT                 /product=\"ATP7A\"\nFT                 /db_xref=\"GOA:Q9BFP6\"\nFT                 /db_xref=\"HSSP:Q04656\"\nFT                 /db_xref=\"InterPro:IPR001757\"\nFT                 /db_xref=\"InterPro:IPR006121\"\nFT                 /db_xref=\"UniProtKB/TrEMBL:Q9BFP6\"\nFT                 /protein_id=\"AAG47427.1\"\nFT                 /translation=\"IYQPHLITVEEIKKQIEAVGFPAFIKKQPKYLTLGAIDIERLKN\nFT                 TSARSSEGSLQKSPSYTNDSTATFIIDGMHCKSCVNSIESALSTLQYVSSIAISLENRS\nFT                 AIVKYNASSVTPETLRKAIEAVSPGQYTVSIISDVESIPNSPFSSSHQKIPLNIVSQPL\nFT                 TQETVINISGMTCNSCVQSIEGVISKKAGVKSVQVSLADSSGVVEYDPLLTSPETLREE\nFT                 IEN\"\nXX\nSQ Sequence 675 BP; 233 A; 136 C; 124 G; 182 T; 0 other; 264016655 CRC32;\n        attgtttatc agcctcatct tatcacagta gaggaaataa aaaagcagat tgaagctgtg 60\n        ggttttccag cattcatcaa aaaacagccc aagtacctta cattgggagc tattgacata 120\n        gaacgtctaa agaacacatc tgccagatcc tcagaaggat cactgcaaaa gagtccatca 180\n        tataccaatg attcaacagc cacttttatc atagatggca tgcattgtaa atcatgtgtg 240\n        tcaaatattg aaagtgcttt atctacactc caatatgtaa gcagcatagc aatttcttta 300\n        gagaataggt ctgccattgt aaaatataat gcaagctcag tcactccaga aaccctgaga 360\n        aaggcaatag aggcaagtatc accagggcaa tatactgtta gtattataag tgatgttgag 420\n        agtatcccaa actctccttt tagctcatct catcaaaaaa tccctttgaa catagtgagc 480\n        cagcctctga ctcaagaaac tgtaataaac atcagtggca tgacttgtaa ttcttgtgta 540\n        cagtctattg agggtgtcat atcaaaaaaag gcaggtgtaa aatccgtaca agtctccctt 600\n        gcagatagca gtggagttgt tgaatatgat cctctactaa cctctccaga aaccttgaga 660\n        gaagaaatag aaaac 675\n//\n```",
+          "captions": [],
+          "footnotes": []
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.067,
+            0.599,
+            0.401,
+            0.637
+          ],
+          "sub_type": "text",
+          "content": "have secondary or tertiary structure;\n• are revised or corrected."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.065,
+            0.66,
+            0.525,
+            0.681
+          ],
+          "level": 2,
+          "content": "Genome databases and genome browsers"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.692,
+            0.933,
+            0.75
+          ],
+          "content": "The general nucleic acid databases focus on collecting individual sequences. Associated with many full-genome sequences are genome browsers, databases bringing together all molecular information available about a particular species."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.066,
+            0.771,
+            0.169,
+            0.789
+          ],
+          "level": 2,
+          "content": "Ensembl"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.8,
+            0.934,
+            0.935
+          ],
+          "content": "Ensembl ([http://www.ensembl.org](http://www.ensembl.org)) is intended to be the universal information source for the human and other genomes. A goal is to collect and annotate all available information about human DNA sequences, link it to the master genome sequence, and make it accessible to the many scientists who will approach the data with many different points of view and different requirements. To this end, in addition to collecting and organizing the information, very serious effort has gone into developing computational infrastructure, including establishment of suitable conventions of nomenclature. It is not trivial to devise a scheme for maintaining stable identifiers in the face of data that will be"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.483,
+            0.967,
+            0.517,
+            0.982
+          ],
+          "content": "182"
+        }
+      ]
+    },
+    {
+      "page_idx": 182,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.065,
+            0.051,
+            0.932,
+            0.089
+          ],
+          "continues_prev": true,
+          "content": "undergoing not only growth but revision. The most visible result of these efforts is the website, very rich in facilities for both general browsing and focusing on details."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.065,
+            0.09,
+            0.932,
+            0.146
+          ],
+          "content": "Ensembl is a joint project of the EBI and the Wellcome Trust Sanger Institute. However, Ensembl is organized as an open project; encouraging outside contributions. All but the most naive of readers must recognize the great demands that this will place on quality-control procedures."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.148,
+            0.932,
+            0.264
+          ],
+          "content": "Data collected in Ensembl includes genes, SNPs, repeats, and homologies. Genes may either be known experimentally or deduced from the sequence. Because the experimental support for annotation of the human genome is so variable, Ensembl records and presents the evidence for identification and annotation of every gene. Very extensive linking to other databases containing related information, such as Online Mendelian Inheritance in Man (OMIM), or expression databases, extend the accessible information."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.065,
+            0.265,
+            0.931,
+            0.303
+          ],
+          "content": "Ensembl and other genome browsers are structured around the sequences themselves. To focus on a desired region, users have available several avenues of selective entry into the system:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.065,
+            0.315,
+            0.61,
+            0.445
+          ],
+          "sub_type": "text",
+          "content": "• browsing, starting at the chromosome level then zooming in;\nBLAST searches on a sequence or fragment;\n• gene name;\nrelation to diseases, via OMIM;\n• Ensembl ID if the user knows it;\n• general text search."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.065,
+            0.457,
+            0.932,
+            0.573
+          ],
+          "content": "A text search in the Ensembl human genome browser for BRCA1 produced the page displayed in Plate IV, showing the region around the BRCA1 locus. The upper frame shows a megabase, mapped to the q21.2 and q21.31 bands of chromosome 17. It reports markers and assigned genes. The bottom frame shows a more detailed view. Note the control panels between the two frames that permit navigation and ‘zooming’. The bottom frame shows a 0.1 megabase region, reporting many more details, including the detailed structure of the BRCA1 gene and the SNPs observed."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.483,
+            0.967,
+            0.517,
+            0.982
+          ],
+          "content": "183"
+        }
+      ]
+    },
+    {
+      "page_idx": 183,
+      "blocks": [
+        {
+          "type": "image",
+          "bbox": [
+            0.3,
+            0.046,
+            0.703,
+            0.462
+          ],
+          "sub_type": "text_image",
+          "content": "e! project Ensembl ContigView\nHome ▲ News ▲ BLAST ▲ Disease Browser ▲ Docs ▲ Download ▲\nFind Lookup [e.g. U34879, APO00869]\nOverview\nchr17 band 421.21 421.21\nONH(cont.lgs)\n45.45 Mb 44.45 Mb\nGENESOME 457243\nMARKERS\nBETA107a\nTURKE 4293\nKONTSX 4293\nKORNE 4293\nKIRKEL 4293\nKINEL 4293\nKIFL27 4293\nKIFL27_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_000\nDetailed View\n← 2 Mb  ↑ 1 Mb  Zoom  ↑ 1 Mb → 2 Mb\nLength 188.89 Kb\nSpTREBL 45.51 Mb 45.51 Mb 45.52 Mb 45.53 Mb 45.54 Mb 45.55 Mb 45.56 Mb 45.57 Mb 45.58 Mb\nmRNA 45.51 Mb 45.52 Mb 45.53 Mb 45.54 Mb 45.55 Mb 45.56 Mb 45.57 Mb 45.58 Mb\nUniGene 45.51 Mb 45.52 Mb 45.53 Mb 45.54 Mb 45.55 Mb 45.56 Mb 45.57 Mb 45.58 Mb\nGenscan 45.51 Mb 45.52 Mb 45.53 Mb 45.54 Mb 45.55 Mb 45.56 Mb 45.57 Mb 45.58 Mb\nTranscript 45.51 Mb 45.52 Mb 45.53 Mb 45.54 Mb 45.55 Mb 45.56 Mb 45.57 Mb 45.58 Mb\nONH(cont.lgs) 421.21/421.21/421.21/421.21/421.21/421.21/421.21/421.21/421.21/421.21/421.21/421.21/421.21/421.21/421.21/4\nTranscript 45.51 Mb 45.52 Mb 45.53 Mb 45.54 Mb 45.55 Mb 45.56 Mb 45.57 Mb 45.58 Mb\nGenscan 45.51 Mb 45.52 Mb 45.53 Mb 45.54 Mb 45.55 Mb 45.57 Mb 45.58 Mb\nUniGene 45.51 Mb 45.52 Mb 45.53 Mb 45.54 Mb 45.55 Mb 45.56 Mb 45.57 Mb 45.58 Mb\nmRNA 45.51Mb 45.52Mb 45.53Mb 45.54Mb 45.55Mb 45.56Mb 45.57Mb 45.58Mb\nSpTREBL 45.51Mb 45.52Mb 45.53Mb 45.54Mb 45.55Mb 45.56Mb 45.57Mb 45.58Mb\nSNP 45.51Mb 45.52Mb 45.53Mb 45.54Mb 45.55Mb 45.56Mb 45.57Mb 45.58Mb\nMouse trace Repeats\nBP16-CPNOSI BETA-CPNOSI BETA-CPNOSI BETA-CPNOSI BETA-CPNOSI BETA-CPNOSI BETA-CPNOSI BETA-CPNOSI BETA-CPNOSI BETA-CPNOSI BETA-CPNOSI BETA-CPNOSI BETA-CPNOSI BETA-CPNOSI BETA-CPNOSI BETA-CDKALR\nFile Path RP16-CPNOSI RP16-CPNOSI RP16-CPNOSI RP16-CPNOSI RP16-CPNOSI RP16-CPNOSI RP16-CPNOSI RP16-CPNOSI RP16-CPNOSI RP16-CPNOSI RP16-CPNOSI RP16-CPNOSI RP16-CPNOSI RP16-CPALER\nView as text Dump Mouse Trains Jams to UCSC Customize this view\nChr: 17 Nucleotides: 4S49S312 to S39S312 Turn menu On Off Refresh",
+          "captions": [
+            {
+              "bbox": [
+                0.066,
+                0.474,
+                0.816,
+                0.491
+              ],
+              "content": "Plate IV Ensembl genome browser showing the region surrounding the BRCA1 locus (See Chapter 4)."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_183_image_0.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.067,
+            0.505,
+            0.107,
+            0.531
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_183_image_2.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.118,
+            0.509,
+            0.294,
+            0.523
+          ],
+          "level": 2,
+          "content": "See Weblems 4.1 – 4.4"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.067,
+            0.551,
+            0.373,
+            0.573
+          ],
+          "level": 2,
+          "content": "Protein sequence databases"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.584,
+            0.932,
+            0.699
+          ],
+          "content": "In 2002, three protein sequence databases—the Protein Information Resource (PIR; at the National Biomedical Research Foundation of the Georgetown University Medical Center in Washington, DC, USA), SWISS-PROT, and TrEMBL (from the Swiss Institute of Bioinformatics in Geneva, Switzerland and the EBI in Hinxton, UK)—coordinated their efforts, to form the UniProtKB consortium. The partners in this enterprise share the database but continue to offer separate information-retrieval tools for access."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.701,
+            0.932,
+            0.797
+          ],
+          "content": "The PIR grew out of the very first sequence database, developed by Margaret O. Dayhoff, the pioneer of the field of bioinformatics. SWISS-PROT was developed at the Swiss Institute of Bioinformatics. TrEMBL contains the translations of genes identified within DNA sequences in the European Nucleotide Archive. TrEMBL entries are regarded as preliminary, and are converted— after curation and extended annotation—to mature entries."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.798,
+            0.932,
+            0.934
+          ],
+          "content": "Today, almost all amino acid sequence information arises from translation of gene sequences. However, even the amino acid sequence of a protein is not in general inferrable with confidence from the gene sequence. The main reason, in eukaryotes, is ambiguity in splicing. In addition, information about ligands, disulphide bridges, subunit associations, post-translational modifications, effects of mRNA editing, etc., is not available from nucleic acid sequences. For instance, from genetic information alone one would not know that human insulin is a dimer linked by disulphide bridges. Protein-sequence data banks collect this additional information from the literature and"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.483,
+            0.968,
+            0.517,
+            0.982
+          ],
+          "content": "184"
+        }
+      ]
+    },
+    {
+      "page_idx": 184,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.065,
+            0.052,
+            0.314,
+            0.068
+          ],
+          "content": "provide suitable annotations."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.07,
+            0.933,
+            0.128
+          ],
+          "content": "From UniProtKB, the entry for the amino acid sequence of the protein bovine pancreatic trypsin inhibitor, in SWISS-PROT format, is shown in the box. Note that the sequence itself occupies only a relatively small amount of space in the entry."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.088,
+            0.159,
+            0.691,
+            0.177
+          ],
+          "level": 2,
+          "content": "Amino acid sequence entry for bovine pancreatic trypsin inhibitor"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.26,
+            0.257,
+            0.737,
+            0.315
+          ],
+          "content": "| Entry name | BPT1_BOVIN |\n| --- | --- |\n| Primary accession number | P00974 |\n| Secondary accession numbers | None |\n| Entered in Swiss-Prot in | Release 01, July 1986 |\n| Sequence was last modified in | Release 10, March 1989 |\n| Annotations were last modified in | Release 44, June 2004 |",
+          "captions": [
+            {
+              "bbox": [
+                0.26,
+                0.206,
+                0.4,
+                0.244
+              ],
+              "content": "NiceProt View of Swiss-Prot: P00974"
+            },
+            {
+              "bbox": [
+                0.26,
+                0.247,
+                0.347,
+                0.256
+              ],
+              "content": "Entry information"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_184_table_5.jpg"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.26,
+            0.327,
+            0.737,
+            0.417
+          ],
+          "content": "| Protein name | Pancreatic trypsin inhibitor [Precursor] |\n| --- | --- |\n| Synonyms | Basic protease inhibitorBPIBPTIAprotinin |\n| Gene name | None |\n| From | Bos taurus (Bovine) [TaxID: 9913] |\n| Taxonomy | Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;Mammalia; Eutheria; Cetartiodactyla; Ruminantia; Pecora; Bovidae; Bovinae; Bos. |",
+          "captions": [
+            {
+              "bbox": [
+                0.261,
+                0.316,
+                0.409,
+                0.325
+              ],
+              "content": "Name and origin of the protein"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_184_table_7.jpg"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.26,
+            0.427,
+            0.737,
+            0.478
+          ],
+          "content": "| [1] SEQUENCE FROM NUCLEIC ACID.MEDLINE=87283904; PubMed=2441071; [NCBI, ExPASy, EBI, Israel, Japan]Creighton T.E., Charles I.G.;\"Sequences of the genes and polypeptide precursors for two bovine protease inhibitors.\";J. Mol. Biol. 194:11-22(1987).REFERENCES 2-13 DELETED |\n| --- |",
+          "captions": [
+            {
+              "bbox": [
+                0.261,
+                0.418,
+                0.317,
+                0.425
+              ],
+              "content": "References"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_184_table_9.jpg"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.26,
+            0.489,
+            0.717,
+            0.54
+          ],
+          "content": "| FUNCTION: Inhibits trypsin, kallikrein, chymotrypsin, and plasmin.SUBCELLULAR LOCATION: Secreted.PHARMACEUTICAL: Available under the name Trasylol (Mile). Used for inhibiting coagulation so as to reduce blood loss during bypass surgery.SIMILARITY: Contains 1 BPTI/Kunitz inhibitor domain.DATABASE: NAME=Trasylol; NOTE=Clinical information on Trasylol; WWW=\"http://www.trasylol.com/. |\n| --- |",
+          "captions": [
+            {
+              "bbox": [
+                0.261,
+                0.481,
+                0.315,
+                0.488
+              ],
+              "content": "Comments"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_184_table_11.jpg"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.26,
+            0.55,
+            0.69,
+            0.566
+          ],
+          "content": "| This Swiss-Prot entry is copyright. It is produced through a collaboration between the Swiss Institute of Bioinformatics and the EMBL outstation - the European Bioinformatics Institute. |\n| --- |",
+          "captions": [
+            {
+              "bbox": [
+                0.261,
+                0.541,
+                0.31,
+                0.549
+              ],
+              "content": "Copyright"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_184_table_13.jpg"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.26,
+            0.577,
+            0.72,
+            0.661
+          ],
+          "content": "| EMBL | M20934; AAD13685.1; -.[EMBL / GenBank / DDBJ] [CoDingSequence]5 ADDITIONAL CROSS-REFERENCES DELETED |\n| --- | --- |\n| PIR | S00277; TIBO.1K09; 10-JUL-02.[ExPASy / RCSB / EBI] |\n| PDB | 46 ADDITIONAL STRUCTURES DELETEDDetailed list of linked structures. |\n| InterPro | IPR002223; Kunitz_BPTI.Graphical view of domain structure. |\n| Pfam | PF00014; Kunitz_BPTI; 1. |",
+          "captions": [
+            {
+              "bbox": [
+                0.261,
+                0.567,
+                0.345,
+                0.575
+              ],
+              "content": "Cross-references"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_184_table_15.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.484,
+            0.968,
+            0.516,
+            0.982
+          ],
+          "content": "185"
+        }
+      ]
+    },
+    {
+      "page_idx": 185,
+      "blocks": [
+        {
+          "type": "image",
+          "bbox": [
+            0.259,
+            0.056,
+            0.737,
+            0.515
+          ],
+          "sub_type": "text_image",
+          "content": "Pfam graphical view of domain structure.\nPRINTS PR00759; BASICPTASE.\nProDom PD000222; Kunitz_BPTI; 1.\n[Domain structure / List of seq. sharing at least 1 domain]\nSMART SM00131; KU; 1.\nPS00280; BPTI_KUNITZ_1; 1.\nPROSITE PSS0279; BPTI_KUNITZ_2; 1.\nPROSITE graphical view of domain structure.\nHOVERGEN [Family / Alignment / Tree]\nBLOCKS P00974.\nProtoNet P00974.\nProtoMap P00974.\nPRESAGE P00974.\nDIP P00974.\nModBase P00974.\nSMR P00974; 6A778A4AD763FB19.\nSWISS-2DPAGE Get region on 2D PAGE.\nUniRef View cluster of proteins with at least 50% / 90% identity.\nKeywords\nSerine protease inhibitor: Signal: Pharmaceutical; 3D-structure.\nFeatures\nFeature table viewer Feature aligner\nKey From To Length Description\nSIGNAL 1_21 21 Potential.\nPROPEP 22_35 14\nCHAIN 36_93 58 Pancreatic trypsin inhibitor.\nPROPEP 94_100 7\nDOMAIN 40_90 51 BPTI/Kunitz inhibitor.\nSITE 50_51 2 Reactive bond for trypsin.\nDISULFID 40_90\nDISULFID 49_73\nDISULFID 65_86\nHELIX 38_41 4\nSTRAND 53_59 7\nTURN 60_63 4\nSTRAND 64_70 7\nSTRAND 80_80 1\nHELIX 83_90 8\nSequence information\nLength: 100 AA [This is the length Molecular weight: 10903 Da [This is the CRC64: 6A778A4AD763FB19 [This is the unprocessed precursor] MW of the unprocessed precursor] is a checksum on the sequence]\n10 20 30 40 50 60\n| | | | | |\nMKMSRLCLSV ALLVLLGTLA ASTPGCOTSN QAKAQRPDFC LEPPYTGPCK ARIIRYFYNA\n70 80 90 100\nKAGLCQTFVY GGCRAKRNNF KSAEDCMRTC GGAIGPWENL\nP00974 in FASTA format",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_185_image_0.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.067,
+            0.567,
+            0.489,
+            0.589
+          ],
+          "level": 2,
+          "content": "The Swiss Institute for Bioinformatics"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.595,
+            0.933,
+            0.654
+          ],
+          "content": "The Swiss Institute for Bioinformatics originally compiled SWISS-PROT. It carries out a wide range of activities, including additional databases, and collections of bioinformatics tools and links, called the Expert Protein Analysis System (ExPASy; [http://www.expasy.org](http://www.expasy.org))."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.655,
+            0.932,
+            0.77
+          ],
+          "content": "PROSITE is a set of signature patterns characteristic of protein families. Such a pattern (or motif, or signature, or fingerprint, or template) is common to related proteins, usually because of the requirements of binding sites that constrain the evolution of the protein family. For instance, the consensus pattern for inorganic pyrophosphatase is D-[SGDN]-D-[PE]-[LIVMF]-D-[LIVMGAC]. The three conserved Ds bind divalent metal cations. Often, such a pattern identifies distant relationships not otherwise detectable by comparing sequences."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.772,
+            0.932,
+            0.868
+          ],
+          "content": "ExPASy presents certain bioinformatics tools as servers on its website, and has links to many others. Categories of tools include proteomics, genomics, structural bioinformatics, systems biology, phylogeny/evolution, population genetics, transcriptomics, biophysics, imaging, IT infrastructure, and drug design. The full list of tools contains 325 entries, roughly half of which were created and are maintained ‘in house’, with the others being links to external sites."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.067,
+            0.888,
+            0.806,
+            0.91
+          ],
+          "level": 2,
+          "content": "The Protein Information Resource (PIR) and associated databases"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.066,
+            0.917,
+            0.933,
+            0.935
+          ],
+          "content": "The PIR is one of the partners in UniProtKB. In addition, the PIR maintains several databases about"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.483,
+            0.968,
+            0.517,
+            0.982
+          ],
+          "content": "186"
+        }
+      ]
+    },
+    {
+      "page_idx": 186,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.066,
+            0.052,
+            0.145,
+            0.068
+          ],
+          "content": "proteins:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.065,
+            0.081,
+            0.93,
+            0.201
+          ],
+          "sub_type": "text",
+          "content": "PIRSF: the Protein Family Classification System provides clustering of the sequences in UniProtKB according to their evolutionary relationships;\n• iProClass, an integrated Protein Knowledgebase, is a gateway providing uniform access to over 90 biological databases, with flexible retrieval and navigation facilities;\n• iProLINK (integrated Protein Literature, Information and Knowledge) is a gateway to the literature."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.066,
+            0.223,
+            0.393,
+            0.245
+          ],
+          "level": 2,
+          "content": "Databases of protein families"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.256,
+            0.932,
+            0.39
+          ],
+          "content": "Evolutionary relationships are essential for making sense of biological data. Evolution provides the framework for an integrated appreciation of the properties of molecules and processes, and their similarities and difference in various species. Perhaps less obvious is that comparative studies illuminate, in an essential way, even individual molecules. Knowing only a single sequence, or structure, it is difficult to understand the significance of particular features. Patterns of conservation identify features that nature has found it necessary to retain. (PROSITE signatures are examples.) The challenge then is to figure out why."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.393,
+            0.932,
+            0.489
+          ],
+          "content": "Study of evolutionary patterns must begin with assembling a set of homologues. We again emphasize (1) the distinction between homology—descent from a common ancestor—a yes-or-no property, from similarity, which is some quantitative measure of the difference between two objects, and (2) that similarity can always be measured but it is rare to be able to observe homology directly; therefore, in most cases homology is an inference from similarity."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.49,
+            0.932,
+            0.685
+          ],
+          "content": "R. Doolittle suggested a general calibration of pairwise sequence similarity for homology detection. Two full-length protein sequences (≥100 residues) that have 25% or more identical residues in an optimal alignment are likely to be related. Below ≈15% identical residues in an optimal alignment and we become mired in the noise. In this range of similarity we have no reason to believe that the sequences are related, although they might be. Doolittle defined the range between 18 and 25% identity as ‘the twilight zone’, where there may be tantalizing suspicion of a relationship, but the evidence falls short of proof. In some cases the active site is better conserved than the bulk of the protein. In these cases the appearance of a motif—such as the PROSITE consensus pattern for inorganic pyrophosphatase, D-[SGDN]-D-[PE]-[LIVMF]-D-[LIVMGAC]—can support the case for homology."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.686,
+            0.931,
+            0.744
+          ],
+          "content": "Multiple sequence alignments are much more powerful than pairwise sequence alignments. First, the additional data allow more accurate alignments. Second, the conservation patterns stand out far more sharply. (See Problem 4.1)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.745,
+            0.932,
+            0.86
+          ],
+          "content": "Protein structure changes more conservatively than amino acid sequence. Therefore inference of homology from structural similarity can link more distant relatives than sequence similarity can. In cases that lie in the twilight zone where sequence similarity is suggestive but not convincing, structural similarity is the court of last resort. In many cases, structural similarity can identify homologues even if no signal whatever—at least no signal detectable by current techniques— remains in the sequences."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.861,
+            0.932,
+            0.937
+          ],
+          "content": "It is common to refer to a group of related proteins as a family. Many databases classify proteins into families. These include sequence-oriented databases such as InterPro, Pfam, and COG and structure-oriented databases such as SCOP and CATH. The assignment of proteins to families is similar but not identical in various sources."
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.483,
+            0.967,
+            0.517,
+            0.982
+          ],
+          "content": "187"
+        }
+      ]
+    },
+    {
+      "page_idx": 187,
+      "blocks": [
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.05,
+            0.932,
+            0.166
+          ],
+          "content": "Most protein families contain many clusters of closer relatives. These form subfamilies. Conversely, two or more families can be grouped into superfamilies. Whereas the distinction between homologous and nonhomologous proteins is objective (even if we cannot determine it with confidence in all cases), the clustering of homologues into subfamilies or superfamilies is partially a matter of convention or taste. Definition of subfamilies and superfamilies may legitimately differ among different databases."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.066,
+            0.188,
+            0.329,
+            0.208
+          ],
+          "level": 2,
+          "content": "Databases of structures"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.22,
+            0.932,
+            0.395
+          ],
+          "content": "Structure databases archive, annotate, and distribute sets of atomic coordinates. Started by the late Walter Hamilton at Brookhaven National Laboratories (Long Island, NY, USA) in 1971, the major database for biological macromolecular structures is now the Worldwide Protein Data Bank (wwPDB). It is a joint effort of the Research Collaboratory for Structural Bioinformatics (RCSB; a distributed organization based at Rutgers University in New Jersey, the San Diego Supercomputer Center in California, and the University of Wisconsin, all in the USA), the Protein Data Bank Europe (at the EBI in the UK), and the Protein Data Bank Japan (based at Osaka University). The wwPDB contains structures of proteins, nucleic acids, and a few carbohydrates. The parent website is [http://www.wwpdb.org](http://www.wwpdb.org)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.396,
+            0.931,
+            0.452
+          ],
+          "content": "The home pages of the wwPDB partners contain links to the data files themselves, to expository and tutorial material including short news items and the PDB Newsletter, to facilities for deposition of new entries, and to specialized search software for retrieving structures."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.065,
+            0.454,
+            0.931,
+            0.491
+          ],
+          "content": "Box 4.2 shows part of a Protein Data Bank entry for a structure of spinach chloroplast thioredoxin.<sup>1</sup> The information contained includes:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.065,
+            0.504,
+            0.931,
+            0.737
+          ],
+          "sub_type": "text",
+          "content": "• what protein is the subject of the entry, and what species it came from;\n• who solved the structure, and literature references;\nexperimental details about the structure determination, including information related to the general quality of the result, such as resolution of an X-ray structure determination, and stereochemical statistics;\n• the amino acid sequence;\n• the atomic coordinates (lines beginning ATOM);\n• what additional molecules appear in the structure, potentially including cofactors, inhibitors, and water molecules (the keyword HETATM identifies the coordinates of these moities);\n• assignments of secondary structure: helices and sheets;\n• disulphide bridges."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.749,
+            0.932,
+            0.904
+          ],
+          "content": "The wwPDB overlaps several other databases. The Cambridge Crystallographic Data Centre (CCDC) archives the structures of small molecules; oligonucleotides appear in both the CCDC and the wwPDB. The combination of structural data from these sources is extremely useful in studies of conformations of the component units of biological macromolecules, and for investigations of macromolecule–ligand interactions, including but not limited to applications to drug design. The Nucleic Acid Structure Databank (NDB) at Rutgers University also complements the wwPDB. The BioMagResBank, at the Department of Biochemistry, University of Wisconsin—a partner in the RCSB—archives protein structures determined by nuclear magnetic resonance."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.065,
+            0.906,
+            0.932,
+            0.943
+          ],
+          "content": "The archives collect not only the results of structure determination, but also the measurements on which they are based. The wwPDB keeps the data from X-ray structure determinations, and the"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.483,
+            0.967,
+            0.517,
+            0.982
+          ],
+          "content": "188"
+        }
+      ]
+    },
+    {
+      "page_idx": 188,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.067,
+            0.051,
+            0.372,
+            0.069
+          ],
+          "content": "BioMagResBank those from NMR."
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.085,
+            0.133,
+            0.816,
+            0.711
+          ],
+          "sub_type": "code",
+          "content": "```proteindb\nHEADER ELECTRON TRANSPORT 13-JUL-00 1FAA\nTITLE CRYSTAL STRUCTURE OF THIOREDOXIN F FROM SPINACH CHLOROPLAST\nTITLE     2 (LONG FORM)\nCOMPND      MOL_ID: 1;\nCOMPND   2 MOLECULE: THIOREDOXIN F;\nCOMPND   3 CHAIN: A;\nCOMPND   4 FRAGMENT: LONG FORM;\nCOMPND   5 ENGINEERED: YES;\nCOMPND   6 MUTATION: YES\nSOURCE       MOL_ID: 1;\nSOURCE   2 ORGANISM_SCIENTIFIC: SPINACIA OLERACEA;\nSOURCE   3 ORGANISM_COMMON: SPINACH;\nSOURCE   4 CELLULAR_LOCATION: CHLOROPLAST;\nSOURCE   5 EXPRESSION_SYSTEM: ESCHERICHIA COLI;\nSOURCE   6 EXPRESSION_SYSTEM_COMMON: BACTERIA;\nSOURCE   7 EXPRESSION_SYSTEM_PLASMID: PKK233-2 (MODIFIED)\nKEYWDS      ELECTRON TRANSPORT\nEXPDTA      X-RAY DIFFRACTION\nAUTHOR     G.CAPITANI,Z.MARKOVIC-HOUSLEY,G.DELVAL,M.MORRIS,\nAUTHOR   2 J.N.JANSONIUS,P.SCHURMANN\nREVDAT    1 20-SEP-00 1FAA     0\nJRNL           AUTH    G.CAPITANI,Z.MARKOVIC-HOUSLEY,G.DELVAL,M.MORRIS,\nJRNL           AUTH 2 J.N.JANSONIUS,P.SCHURMANN\nJRNL           TITL   CRYSTAL STRUCTURES OF TWO FUNCTIONALLY DIFFERENT\nJRNL           TITL 2 THIOREDOXINS IN SPINACH CHLOROPLASTS\nJRNL           REF     J.MOL.BIOL.                  V. 302   135 2000\nJRNL           REFN   ASTM JMOBAK UK ISSN 0022-2836\nREMARK    1\nREMARK    2\nREMARK   2 RESOLUTION. 1.85 ANGSTROMS.\nREMARK    3\nREMARK   3 REFINEMENT.\nREMARK   3 PROGRAM          : X-PLOR 3.851\nREMARK   3 AUTHORS          : BRUNGER\nREMARK    3\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.087,
+                0.1,
+                0.757,
+                0.119
+              ],
+              "content": "Box 4.2 Protein Data Bank entry 1FAA, spinach chloroplast thioredoxin"
+            }
+          ],
+          "footnotes": []
+        },
+        {
+          "type": "code",
+          "bbox": [
+            0.085,
+            0.747,
+            0.816,
+            0.944
+          ],
+          "sub_type": "code",
+          "content": "```proteindb\nREMARK 900 RELATED ENTRIES\nREMARK 900 RELATED ID: 1F9M    RELATED DB: PDB\nREMARK 900 THIOREDOXIN F FROM SPINACH CHLOROPLAST (SHORT FORM)\nREMARK 900 RELATED ID: 1FB0    RELATED DB: PDB\nREMARK 900 THIOREDOXIN M FROM SPINACH CHLOROPLAST (REDUCED FORM)\nREMARK 900 RELATED ID: 1FB6    RELATED DB: PDB\nREMARK 900 THIOREDOXIN M FROM SPINACH CHLOROPLAST (OXIDIZED FORM)\nDBREF 1FAA A      1   121     SWS     P09856    THIF_SPIOL      69    189\nSEQADV 1FAA MET A    -2     SWS    P09856             CLONING ARTIFACT\nSEQADV 1FAA TYR A    -1     SWS    P09856             CLONING ARTIFACT\nSEQADV 1FAA TYR A      0     SWS    P09856             CLONING ARTIFACT\nSEQADV 1FAA LEU A      1     SWS    P09856    MET     69 ENGINEERED\n```",
+          "captions": [
+            {
+              "bbox": [
+                0.087,
+                0.726,
+                0.618,
+                0.74
+              ],
+              "content": "Additional information about details of solution of structure omitted"
+            }
+          ],
+          "footnotes": []
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.484,
+            0.968,
+            0.518,
+            0.983
+          ],
+          "content": "189"
+        }
+      ]
+    },
+    {
+      "page_idx": 189,
+      "blocks": [
+        {
+          "type": "table",
+          "bbox": [
+            0.086,
+            0.049,
+            0.912,
+            0.941
+          ],
+          "content": "<table><tr><td>SEQADV</td><td>1FAA</td><td>LEU A</td><td>3</td><td>SWS</td><td>P09856</td><td>GLN</td><td>71</td><td>ENGINEERED</td><td></td><td></td></tr><tr><td>SEQRES</td><td>1 A</td><td>124</td><td>MET</td><td>TYR</td><td>TYR</td><td>LEU</td><td>GLU</td><td>LEU ALA</td><td>LEU GLY</td><td>THR GLN GLU MET</td></tr><tr><td>SEQRES</td><td>2 A</td><td>124</td><td>GLU</td><td>ALA</td><td>ILE</td><td>VAL</td><td>GLY</td><td>LYS VAL</td><td>THR GLU VAL ASN LYS ASP</td><td></td></tr><tr><td>SEQRES</td><td>3 A</td><td>124</td><td>THR</td><td>PHE</td><td>TRP</td><td>PRO</td><td>ILE</td><td>VAL LYS ALA</td><td>ALA ALA GLY ASP LYS PRO</td><td></td></tr><tr><td>SEQRES</td><td>4 A</td><td>124</td><td>VAL</td><td>VAL</td><td>LEU</td><td>ASP</td><td>MET</td><td>PHE THR GLN TRP CYS GLY PRO CYS</td><td></td><td></td></tr><tr><td>SEQRES</td><td>5 A</td><td>124</td><td>LYS</td><td>ALA</td><td>MET</td><td>ALA</td><td>PRO LYS</td><td>TYR GLU LYS LEU ALA GLU GLU</td><td></td><td></td></tr><tr><td>SEQRES</td><td>6 A</td><td>124</td><td>TYR</td><td>LEU</td><td>ASP</td><td>VAL</td><td>ILE</td><td>PHE LEU LYS LEU ASP CYS ASN GLN</td><td></td><td></td></tr><tr><td>SEQRES</td><td>7 A</td><td>124</td><td>GLU</td><td>ASN LYS</td><td>THR</td><td>LEU</td><td>ALA LYS GLU LEU GLY ILE ARG VAL</td><td></td><td></td><td></td></tr><tr><td>SEQRES</td><td>8 A</td><td>124</td><td>VAL</td><td>PRO</td><td>THR</td><td>PHE</td><td>LYS ILE</td><td>LEU LYS GLU ASN SER VAL VAL</td><td></td><td></td></tr><tr><td>SEQRES</td><td>9 A</td><td>124</td><td>GLY</td><td>GLU</td><td>VAL</td><td>THR</td><td>GLY ALA LYS TYR ASP LYS LEU LEU GLU</td><td></td><td></td><td></td></tr><tr><td>SEQRES</td><td>10 A</td><td>124</td><td>ALA</td><td>ILE</td><td>GLN</td><td>ALA</td><td>ALA ARG SER</td><td></td><td></td><td></td></tr><tr><td>FORMUL</td><td>2</td><td>HOH</td><td colspan=\"8\">*34 (H2 O1)</td></tr><tr><td>HELIX</td><td>1</td><td>1 GLY A</td><td>6</td><td>ALA A</td><td>12</td><td>1</td><td></td><td></td><td></td><td>7</td></tr><tr><td>HELIX</td><td>2</td><td>2 THR A</td><td>24</td><td>ALA A</td><td>32</td><td>1</td><td></td><td></td><td></td><td>9</td></tr><tr><td>HELIX</td><td>3</td><td>3 CYS A</td><td>46</td><td>TYR A</td><td>63</td><td>1</td><td></td><td></td><td></td><td>18</td></tr><tr><td>HELIX</td><td>4</td><td>4 ASN A</td><td>77</td><td>GLY A</td><td>85</td><td>1</td><td></td><td></td><td></td><td>9</td></tr><tr><td>HELIX</td><td>5</td><td>5 LYS A</td><td>108</td><td>ARG A</td><td>120</td><td>1</td><td></td><td></td><td></td><td>13</td></tr><tr><td>SHEET</td><td>1</td><td>A 5 VAL A</td><td>17</td><td>GLU A</td><td>19</td><td>0</td><td></td><td></td><td></td><td></td></tr><tr><td>SHEET</td><td>2</td><td>A 5 ILE A</td><td>67</td><td>ASP A</td><td>72</td><td>1</td><td>O PHE A</td><td>68 N</td><td>THR A</td><td>18</td></tr><tr><td>SHEET</td><td>3</td><td>A 5 VAL A</td><td>37</td><td>PHE A</td><td>42</td><td>1</td><td>N VAL A</td><td>38 O</td><td>ILE A</td><td>67</td></tr><tr><td>SHEET</td><td>4</td><td>A 5 THR A</td><td>91</td><td>LYS A</td><td>96</td><td>-1</td><td>O THR A</td><td>91 N</td><td>MET A</td><td>41</td></tr><tr><td>SHEET</td><td>5</td><td>A 5 SER A</td><td>99</td><td>THR A</td><td>105</td><td>-1</td><td>O SER A</td><td>99 N</td><td>LYS A</td><td>96</td></tr><tr><td>SSBOND</td><td>1</td><td>CYS A</td><td>46</td><td>CYS A</td><td>49</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>CISPEP</td><td>1</td><td>VAL A</td><td>89</td><td>PRO A</td><td>90</td><td></td><td>0</td><td>-0.06</td><td></td><td></td></tr><tr><td>CRYST1</td><td>30.600</td><td>63.100</td><td colspan=\"2\">31.600</td><td>90.00</td><td>110.70</td><td colspan=\"3\">90.00 P 1 21 1</td><td>2</td></tr><tr><td>ORIGX1</td><td colspan=\"2\">1.000000</td><td colspan=\"2\">0.000000</td><td colspan=\"2\">0.000000</td><td colspan=\"3\">0.00000</td><td></td></tr><tr><td>ORIGX2</td><td colspan=\"2\">0.000000</td><td colspan=\"2\">1.000000</td><td colspan=\"2\">0.000000</td><td colspan=\"3\">0.00000</td><td></td></tr><tr><td>ORIGX3</td><td colspan=\"2\">0.000000</td><td colspan=\"2\">0.000000</td><td colspan=\"2\">1.000000</td><td colspan=\"3\">0.00000</td><td></td></tr><tr><td>SCALE1</td><td colspan=\"2\">0.032680</td><td colspan=\"2\">0.000000</td><td colspan=\"2\">0.012349</td><td colspan=\"3\">0.00000</td><td></td></tr><tr><td>SCALE2</td><td colspan=\"2\">0.000000</td><td colspan=\"2\">0.015848</td><td colspan=\"2\">0.000000</td><td colspan=\"3\">0.00000</td><td></td></tr><tr><td>SCALE3</td><td colspan=\"2\">0.000000</td><td colspan=\"2\">0.000000</td><td colspan=\"2\">0.033829</td><td colspan=\"3\">0.00000</td><td></td></tr><tr><td>ATOM</td><td>1</td><td>N</td><td>LEU A</td><td>1</td><td></td><td></td><td>24.389</td><td>12.172</td><td>22.330</td><td>1.00</td></tr><tr><td>49.98</td><td></td><td></td><td>N</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ATOM</td><td>2</td><td>CA</td><td>LEU A</td><td>1</td><td></td><td></td><td>23.617</td><td>11.064</td><td>22.997</td><td>1.00</td></tr><tr><td>51.12</td><td></td><td></td><td>C</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ATOM</td><td>3</td><td>C</td><td>LEU A</td><td>1</td><td></td><td></td><td>22.228</td><td>10.829</td><td>22.381</td><td>1.00</td></tr><tr><td>51.55</td><td></td><td></td><td>C</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ATOM</td><td>4</td><td>O</td><td>LEU A</td><td>1</td><td></td><td></td><td>21.316</td><td>11.634</td><td>22.547</td><td>1.00</td></tr><tr><td>50.88</td><td></td><td></td><td>O</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ATOM</td><td>5</td><td>CB</td><td>LEU A</td><td>1</td><td></td><td></td><td>23.447</td><td>11.351</td><td>24.497</td><td>1.00</td></tr><tr><td>49.15</td><td></td><td></td><td>C</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ATOM</td><td>6</td><td>CG</td><td>LEU A</td><td>1</td><td></td><td></td><td>24.373</td><td>10.670</td><td>25.513</td><td>1.00</td></tr><tr><td>47.15</td><td></td><td></td><td>C</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ATOM</td><td>7</td><td>CD1</td><td>LEU A</td><td>1</td><td></td><td></td><td>23.831</td><td>10.905</td><td>26.924</td><td>1.00</td></tr><tr><td>45.33</td><td></td><td></td><td>C</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ATOM</td><td>8</td><td>CD2</td><td>LEU A</td><td>1</td><td></td><td></td><td>24.488</td><td>9.185</td><td>25.215</td><td>1.00</td></tr><tr><td>44.91</td><td></td><td></td><td>C</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ATOM</td><td>9</td><td>N</td><td>GLU A</td><td>2</td><td></td><td></td><td>22.076</td><td>9.713</td><td>21.674</td><td>1.00</td></tr><tr><td>53.58</td><td></td><td></td><td>N</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ATOM</td><td>10</td><td>CA</td><td>GLU A</td><td>2</td><td></td><td></td><td>20.806</td><td>9.358</td><td>21.044</td><td>1.00</td></tr><tr><td>54.60</td><td></td><td></td><td>C</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ATOM</td><td>11</td><td>C</td><td>GLU A</td><td>2</td><td></td><td></td><td>20.054</td><td>8.350</td><td>21.907</td><td>1.00</td></tr><tr><td>52.06</td><td></td><td></td><td>C</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ATOM</td><td>12</td><td>O</td><td>GLU A</td><td>2</td><td></td><td></td><td>20.550</td><td>7.916</td><td>22.943</td><td>1.00</td></tr></table>",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_189_table_0.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.484,
+            0.968,
+            0.518,
+            0.982
+          ],
+          "content": "190"
+        }
+      ]
+    },
+    {
+      "page_idx": 190,
+      "blocks": [
+        {
+          "type": "table",
+          "bbox": [
+            0.086,
+            0.049,
+            0.91,
+            0.493
+          ],
+          "content": "| 53.01 |  |  | O |  |  |  |  |  |  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| ATOM | 13 | CB | GLU A | 2 | 21.043 | 8.762 | 19.650 | 1.00 |  |\n| 60.19 |  |  | C |  |  |  |  |  |  |\n| ATOM | 14 | CG | GLU A | 2 | 20.884 | 9.756 | 18.502 | 1.00 |  |\n| 71.27 |  |  | C |  |  |  |  |  |  |\n| ATOM | 15 | CD | GLU A | 2 | 19.687 | 10.694 | 18.678 | 1.00 |  |\n| 77.29 |  |  | C |  |  |  |  |  |  |\n| ATOM | 16 | OE1 | GLU A | 2 | 19.521 | 11.277 | 19.779 | 1.00 |  |\n| 79.51 |  |  | O |  |  |  |  |  |  |\n| ATOM | 17 | OE2 | GLU A | 2 | 18.910 | 10.850 | 17.705 | 1.00 |  |\n| 81.98 |  |  | O |  |  |  |  |  |  |\n| ATOM | 18 | N | LEU A | 3 | 18.857 | 7.975 | 21.477 | 1.00 |  |\n| 48.15 |  |  | N |  |  |  |  |  |  |\n| ATOM | 19 | CA | LEU A | 3 | 18.047 | 7.029 | 22.227 | 1.00 |  |\n| 43.81 |  |  | C |  |  |  |  |  |  |\n| ATOM | 20 | C | LEU A | 3 | 18.098 | 5.650 | 21.573 | 1.00 |  |\n| 40.93 |  |  | C |  |  |  |  |  |  |\n| ATOM | 21 | O | LEU A | 3 | 18.285 | 5.529 | 20.371 | 1.00 |  |\n| 40.43 |  |  | O |  |  |  |  |  |  |\n| ATOM | 22 | CB | LEU A | 3 | 16.598 | 7.531 | 22.280 | 1.00 |  |\n| 44.07 |  |  | C |  |  |  |  |  |  |\n| ATOM | 23 | CG | LEU A | 3 | 15.797 | 7.608 | 23.586 | 1.00 |  |\n| 44.51 |  |  | C |  |  |  |  |  |  |\n| ATOM | 24 | CD1 | LEU A | 3 | 15.534 | 6.207 | 24.087 | 1.00 |  |\n| 52.05 |  |  | C |  |  |  |  |  |  |\n| ATOM | 25 | CD2 | LEU A | 3 | 16.543 | 8.400 | 24.639 | 1.00 |  |\n| 48.17 |  |  | C |  |  |  |  |  |  |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_190_table_0.jpg"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.085,
+            0.528,
+            0.91,
+            0.941
+          ],
+          "content": "<table><tr><td>ATOM</td><td>937</td><td>N</td><td>SER A 121</td><td></td><td>8.850</td><td>-16.291</td><td>7.411</td><td>1.00</td></tr><tr><td>55.56</td><td></td><td></td><td>N</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ATOM</td><td>938</td><td>CA</td><td>SER A 121</td><td></td><td>9.537</td><td>-17.581</td><td>7.231</td><td>1.00</td></tr><tr><td>60.26</td><td></td><td></td><td>C</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ATOM</td><td>939</td><td>C</td><td>SER A 121</td><td></td><td>10.923</td><td>-17.478</td><td>6.558</td><td>1.00</td></tr><tr><td>62.65</td><td></td><td></td><td>C</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ATOM</td><td>940</td><td>O</td><td>SER A 121</td><td></td><td>11.870</td><td>-18.086</td><td>7.107</td><td>1.00</td></tr><tr><td>64.76</td><td></td><td></td><td>O</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ATOM</td><td>941</td><td>CB</td><td>SER A 121</td><td></td><td>8.656</td><td>-18.556</td><td>6.432</td><td>1.00</td></tr><tr><td>60.35</td><td></td><td></td><td>C</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ATOM</td><td>942</td><td>OG</td><td>SER A 121</td><td></td><td>7.280</td><td>-18.401</td><td>6.747</td><td>1.00</td></tr><tr><td>60.82</td><td></td><td></td><td>O</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>ATOM</td><td>943</td><td>OXT</td><td>SER A 121</td><td></td><td>11.059</td><td>-16.809</td><td>5.503</td><td>1.00</td></tr><tr><td>63.39</td><td></td><td></td><td>O</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>TER</td><td>944</td><td colspan=\"2\">SER A 121</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>HETATM</td><td>945</td><td>O</td><td>HOH</td><td>1</td><td>2.260</td><td>-3.687</td><td>15.041</td><td>1.00</td></tr><tr><td>21.56</td><td></td><td></td><td>O</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>HETATM</td><td>946</td><td>O</td><td>HOH</td><td>2</td><td>0.884</td><td>-6.116</td><td>15.287</td><td>1.00</td></tr><tr><td>24.15</td><td></td><td></td><td>O</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>HETATM</td><td>947</td><td>O</td><td>HOH</td><td>3</td><td>0.912</td><td>13.888</td><td>2.773</td><td>1.00</td></tr><tr><td>30.06</td><td></td><td></td><td>O</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>HETATM</td><td>948</td><td>O</td><td>HOH</td><td>4</td><td>14.616</td><td>-4.966</td><td>11.156</td><td>1.00</td></tr><tr><td>26.65</td><td></td><td></td><td>O</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>HETATM</td><td>949</td><td>O</td><td>HOH</td><td>5</td><td>4.640</td><td>10.330</td><td>9.025</td><td>1.00</td></tr><tr><td>23.93</td><td></td><td></td><td>O</td><td></td><td></td><td></td><td></td><td></td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.088,
+                0.507,
+                0.467,
+                0.523
+              ],
+              "content": "Coordinates of residues 4–121 of protein omitted"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_190_table_2.jpg"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.484,
+            0.968,
+            0.514,
+            0.982
+          ],
+          "content": "191"
+        }
+      ]
+    },
+    {
+      "page_idx": 191,
+      "blocks": [
+        {
+          "type": "table",
+          "bbox": [
+            0.069,
+            0.047,
+            0.931,
+            0.116
+          ],
+          "continues_prev": true,
+          "content": "| HETATM | 950 | O | HOH | 6 | 3.040 | -0.537 | 15.641 | 1.00 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 28.46 |  |  | O |  |  |  |  |  |\n| HETATM | 951 | O | HOH | 7 | 6.246 | -2.378 | 27.633 | 1.00 |\n| 49.34 |  |  | O |  |  |  |  |  |",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_191_table_0.jpg"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.088,
+            0.149,
+            0.86,
+            0.215
+          ],
+          "content": "| CONECT | 358 | 375 |  |  |  |  |  |  |  |  |  |  |  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| CONECT | 375 | 358 |  |  |  |  |  |  |  |  |  |  |  |\n| MASTER |  | 211 | 0 | 0 | 5 | 5 | 0 | 0 | 6 | 977 | 1 | 2 | 10 |\n| END |  |  |  |  |  |  |  |  |  |  |  |  |  |",
+          "captions": [
+            {
+              "bbox": [
+                0.088,
+                0.128,
+                0.48,
+                0.143
+              ],
+              "content": "Coordinates of additional water molecules omitted"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_191_table_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.254,
+            0.932,
+            0.35
+          ],
+          "content": "The wwPDB assigns a four-character identifier to each structure deposited. The first character is a number from 1 to 9. Do not expect mnemonic significance. In many cases several entries correspond to one protein, solved in different states of ligation, or in different crystal forms, or re-solved using better crystals or more accurate data-collection techniques. For instance, there have been at least four generations of sperm whale myoglobin crystal structures."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.064,
+            0.352,
+            0.932,
+            0.429
+          ],
+          "content": "It is easy to retrieve a structure if you know its identifier. From the RCSB home page, entering a PDB ID and selecting ‘Explore’ gives a one-page summary of the entry. Figure 4.1 shows part of the summary page for the spinach chloroplast thioredoxin structure, identifier 1FAA. Links from this page take you to:"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.319,
+            0.441,
+            0.681,
+            0.723
+          ],
+          "sub_type": "text_image",
+          "content": "PDB\nAn Information Portal for Biological Micro-Interferential Structure\nAs of Tuesday, 12, 2017\nThere are 4848 structures\nContact on WIP/PRINT NAME\nPDB @ http://www.pdb.org\nPDB & Method\nAUXIA\nFile Source\nPhysical System\nAlert: Our data files are changing seen. Please see http://www.expdb.org for more details.\nTitle: CHEMICAL STRUCTURE OF THEORECOSM FROM SPINACH CHLORoplast LONG FORM\nAuthors: Captur, C., Harvallou, Mouta, C., Chetak, G., Homi, H., Janshuk, JU., Schyrmann, R.\nPrimary Litigation: Captur, C., Harvallou, Mouta, C., Chetak, G., Homi, H., Janshuk, JU., Schyrmann, R. Copy annotations if yes; automatically effective information in spinach chloroplast (used as: pp.133-079, pp.133-079, pp.133-079).\nMilitary Department: 2000-07-13 Author: 2000-09-02\nExperimental Method: Type: A/B/M DIFFRACTION Form: E1001\nNumber of entries: Numbered by: 1.05 0.209 (each) 0.269 Space group:\nLength (ft): 30.00 10.15 31.80\nAngle (°): 90.00 110.70 90.00\nMolecular Transcription Assymptomatic script: Pateman T, Mouta, THREOCOSM F Magnment LONG FORM\nHuisman MLL QIL Zhao A\nChemical Action: Mechanic Transport\nBook#: Pateman | Scientific Name | Ighustic distance | Common Name | Ighustic Expression | Expression system | Ischerichia coli\nAvidated: PDB | Pateman | Threobium from spinach chloroplast (reduced form) | Threobium from spinach chloroplast (reduced form) | Threobium from spinach chloroplast (soft form)\nBIDP Classification: Domain Info | Data and key problems | Part | Superfamily | Parent | Domain | Species | Ighustic Expression | Intense Expression\nCATA Classification: Chain #1000 | Chain #1000 | Chain #1000 | Threobium fast | Threobium fast | Threobium fast | Threobium fast | Threobium fast |\nPDA Classification: Chain #1000 to update a copy of PDA | PDA #1000 | Description | Type | Type | Type | Type | Type |\nAD Forms: Numbering | Molecular Function | Biological Process | Cellular Component | Cellular Component | Cellular Component | Cellular Component | Cellular Component | Cellular Component |",
+          "captions": [
+            {
+              "bbox": [
+                0.065,
+                0.735,
+                0.746,
+                0.752
+              ],
+              "content": "Figure 4.1 The summary page for the wwPDB entry 1FAA, spinach chloroplast thioredoxin."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_191_image_5.jpg"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.065,
+            0.768,
+            0.932,
+            0.941
+          ],
+          "sub_type": "text",
+          "content": "• the publication in which the entry was described, via the bibliographic database PubMed;\n• pictures of the structure (some of these may require that you install a viewing program on your computer);\naccess to the file containing the entry itself;\n• lists of related structures, according to several different classifications of protein structures;\nstereochemical analysis: the distribution of bond lengths and angles, and conformational angles;\nsources of other information about this entry;\n• the sequence and secondary structure assignment;"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.483,
+            0.967,
+            0.517,
+            0.982
+          ],
+          "content": "192"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "title": "Introduction to Bioinformatics, 4th Edition",
+      "authors": [
+        "Arthur Lesk"
+      ],
+      "created_at": "2018-08-07T17:45:54+02:00",
+      "modified_at": "2018-08-09T11:39:02+02:00",
+      "producer_application": "3-Heights(TM) PDF Optimization Shell 4.8.25.2 (http://www.pdf-tools.com)",
+      "page_count": 440,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 176,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        },
+        {
+          "page_idx": 177,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        },
+        {
+          "page_idx": 178,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        },
+        {
+          "page_idx": 179,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        },
+        {
+          "page_idx": 180,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        },
+        {
+          "page_idx": 181,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        },
+        {
+          "page_idx": 182,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        },
+        {
+          "page_idx": 183,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        },
+        {
+          "page_idx": 184,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        },
+        {
+          "page_idx": 185,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        },
+        {
+          "page_idx": 186,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        },
+        {
+          "page_idx": 187,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        },
+        {
+          "page_idx": 188,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        },
+        {
+          "page_idx": 189,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        },
+        {
+          "page_idx": 190,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        },
+        {
+          "page_idx": 191,
+          "width_pt": 708.6610107421875,
+          "height_pt": 1000.6300048828125
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

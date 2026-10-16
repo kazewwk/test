@@ -1,0 +1,479 @@
+Programming languages differ from natural human languages in many respects, including a restricted horizon of possibility of expression, and very strict intolerance to error. A similar intolerance to error affects the preparation and formatting of data to be read by computer programs. To serve as input to a program, data must be (1) presented according to specific rules—for example, terms restricted to a controlled vocabulary—and (2) properly formatted. There is a tension between user-friendliness and program-friendliness in the requirements.
+
+Another distinction, which is not as sharp as it used to be, classifies programs into systems programs and applications programs. Applications programs are generally specific to one or more users. They solve a particular problem in a particular field. They are active in a computer for limited times, after which they report an answer and disappear. In contrast, systems programs govern the overall workflow of the computer, are common to all users, and are consistent with the use of the computer to solve a wide variety of problems (by means of individual applications programs). For instance, a program to superpose two or more protein structures would be an application program. The programs that create the general operating environment—for instance UNIX or Microsoft Windows—are systems programs.
+
+Operating systems offer many specific facilities in addition to their overall ‘housekeeping’ functions. To create lists of orders invoking the facilities of the operating system is to write a program called a script.
+
+The boundaries between systems and applications program are becoming fluid. All the features of the editor with which I am typing this paragraph are specific to the problem of accepting and editing text. However, many people use it, it was distributed with the operating system, and it remains active (in ‘background’) even when I am finished with this passage. Conversely, many programmers who put together large and powerful packages that address a variety of problems—for example, retrieval of genetic sequences from a database—boast of having written ‘program systems’ (rather than systems programs).
+
+## Traditional programming languages
+
+Previous generations of computer languages included FORTRAN, C, and C++. Usually, a separate program called the compiler translates a program in these languages into the appropriate set of computer instructions. The maturity of compiler technology, together with the understanding of algorithms provided by computer scientists, and the experience and skill of the community of programmers, combine to make these languages most suitable for large-scale computations which strain the available resources.
+
+Another advantage of not writing in native machine language is code portability: the ability of one program, written in FORTRAN, C, or C++, to run on a large variety of platforms. It is true that each target machine language requires its own compiler. But writing a compiler needs be done only once per machine, and there is mature software that facilitates compiler construction. Then an entire literature of programs becomes executable.
+
+## Scripting languages
+
+Many extremely useful tasks require only minimal computer resources. For instance, the translation of a gene sequence into an amino acid sequence requires only a straightforward looking-up on a table for each codon (See Chapter 1). For these, a simple program achieves adequate throughput: what is important is to save programmer time. The computer time required is often negligible.
+
+Indeed, there has been a steady trend in the relative costs of hardware and software. The balance is tipping, steeply, in the direction of high costs of creating software relative to purchasing and maintaining hardware. Programming practice has reacted with tools and languages that streamline the effort required to write code that works correctly, even at some cost in efficiency of execution.
+
+Several languages provide such facilities, including PERL, PYTHON, and RUBY. At least in their initial versions they were interpreted languages. This means that the systems program that carried out the commands skipped the step of compilation to machine language, but simulated the stated operation on a line-by-line basis. In principle this makes for less-efficient execution. In any case, it is a legitimate price to pay for the ease of writing the program and the sharp curtailment of the ‘debugging’ phase. Often the difference in execution time is unnoticeable.
+
+Some languages can be run in either interpretive or compiled mode, for instance LISP. Demonstration by a new interpreted language such as PERL of significant advantages and popular appeal will elicit writing of a compiler, or at least a more efficient interpreter. (A superficially attractive but ultimately ineffective idea is to write a translation program that will convert the scripting language into a language which can be compiled. This will often not speed up execution significantly if the original interpreter calls upon programs written in the compiled language.)
+
+Useful skills in using a scripting language such as PERL are relatively easy to attain, relative to languages such as C or C++. Learning some PERL (or PYTHON or RUBY) is a good compromise for a research scientist who does not intend to specialize in software creation.
+
+## Program libraries specialized for molecular biology
+
+Programmers usually construct new programs by combining well-established components. For instance, an algorithm may contain a step that requires sorting a list, or solving linear equations. Subprograms for these steps are widely available. All programs depend on standard libraries for input and output. Almost never does one write a program completely ‘from scratch.’
+
+In addition to standard libraries for numerical analysis and text processing there are libraries specialized for molecular biology. Different libraries are associated with different programming languages. For example, BioPERL ([http://www.bioperl.org](http://www.bioperl.org)) contains modules that implement common computational tasks in bioinformatics, written in PERL. Typical modules translate nucleic acid sequences to protein sequences, or perform sequence alignments. Modules can be integrated smoothly into a new program.
+
+## Java: computing over the web
+
+The Java language has a syntax with many similarities to C and C++. Its operating environment is designed to address the following problem: suppose the creator of a website wants to provide a program which users can run interactively from a browser. If the program is run on a computer at the website, and if many users simultaneously avail themselves of the facilities, the hardware on which the website is running will come under pressure. An example of this mode is the NCBI BLAST server, which in a typical month fields about 6.5 million enquiries, and runs them on a cluster with 300 CPUs.
+
+An alternative is to ask each user to provide the computer power. Without leaving the website, the browser will dynamically download programs (called applets). The programs will be run on the user's computer. This, in turn, creates a security problem: the user must give the website access to resources on the user's computer. A website that can download executable code and gain access to the local files can do considerable harm, including crashing the computer, or snooping around the file system to steal or damage confidential information, or carrying out unwanted invasive activity such as displaying unsolicited advertising material.
+
+The basic idea of the way to protect the user is as follows: the downloaded Java program is not run directly by the user's operating system, but involves an intermediate agent. The user's system simulates an internal computer—called a virtual machine—which runs the Java program. (Each actual operating system requires its own Java virtual machine to provide the executable environment for programs written in Java. Automatic portability of Java programs is concomitant.) The virtual machine carefully restricts the resources to which the Java program running under its auspices has access. The local virtual machine imposes the rules; the distant website programmer must follow them.
+
+Java is a compiled language. Although usually executed from a browser, Java programs can stand alone. In contrast, programs in JavaScript are interpreted by a browser.
+
+## Markup languages
+
+Algorithms + data structures = programs
+
+N. Wirth
+
+Markup languages implement data structures, which are as essential a component of programs as executable instructions. Data structures are the organization of the information on which a program acts. Choice of the proper data structure is a crucial aspect of programming.
+
+The term markup originally described editors’ annotations to manuscripts, which control the appearance of the final published text without explicitly appearing in it. An example would be designation of certain words to appear in italics. Computer-typesetting systems include formatting commands: the UNIX facilities of the ‘roff’ family are an early example, and D. Knuth's TeX system is a development with all possible bells and whistles. HTML, or hypertext markup language, is primarily a presentational markup language.
+
+The utility of the close coupling of annotation with contents extends, beyond presentation markup, to organization of data in files. Such a structure provides an alternative to traditional positional formatting. Positional formatting is specifying how to interpret an item in a file through rigid rules specifying where the item appears. Typical examples of positional formatting are: ‘The number of bases in the sequence appears in columns $1 0 { - } 1 6 ^ { \circ }$ or ‘Items, separated by white space, appear in the order: gene name, source organism, number of bases, sequence’. The markup approach achieves greater flexibility by associating each item with a local descriptor. The line:
+
+$$
+<   \text {number of bases} > 5 3 8 6 <   / \text {number of bases} >
+$$
+
+could appear anywhere in a file. A program or a human reader would recognize what the number 5386 signified. The syntax < descriptor > value < /descriptor> is common to many markup languages, including HTML. The descriptor is called a tag. The material enclosed by the beginning and end of the tag is called the element. Standardization of the syntax simplifies the construction of the software to interpret it.
+
+Tag/element combinations provide self-describing data. Moreover the data description is local; that is, contiguous with individual data items. In contrast, the summaries that appear in the Learning goals at the beginning of each chapter in this book are descriptions of contents that are not local to the sections to which they refer.
+
+Flexibility of format comes at a price, most obviously in a rather cumbersome and bloated appearance of the files. Nor is adult supervision entirely unnecessary: the ontology of the data must specify acceptable ranges of values. Programs could not be asked to swallow:
+
+$$
+<   \text {number of bases} > \text {Tuesday} <   / \text {number of bases} >
+$$
+
+Therefore, any file in a markup language requires a schema: a list of allowed element and attribute names, and allowed ranges of values. This permits validating a file for proper formatting and consistency. A Document Type Definition, itself written in a standardized language, specifies the schema. Note that < number of bases > Tuesday < /number of bases > is valid syntax but invalid with respect to any reasonable schema.
+
+There are many markup languages, specialized for different types of data. One of the most general is XML (or extensible markup language), used in many databases and information-retrieval systems. XML assumes a tree-based, or hierarchical, structure of the material. Lower-level tags and elements can appear within higher-level ones.
+
+An XML database of mammalian species might contain the following:
+
+```txt
+\<mammals>
+    \<genus>Homo
+        \<species>sapiens common_name=
+            'human'</species>
+        \<species>neanderthalis common_name=
+            'neanderthal man'</species>
+    \</genus>
+\</mammals>
+```
+
+Note the three nested levels of tags: mammals, genus, species. The species elements include the common name as an attribute. In an alternative schema, the common name might be a separate tag within the species.
+
+It would be more difficult to construct an XML database of information that is nonhierarchical. Consider a database of information about movies. It would be possible to define an XML schema in which the movie title was at a higher level in the hierarchy than the list of performers. Then it would be easy to probe the database with a movie title, and retrieve the cast. In contrast, it would be more difficult to retrieve all the movies in which Peter Sellers acted. In an alternative schema the performers could be at a higher level than the movies, making it easy to search for an actor or actress, but then it would be difficult to probe with a title and retrieve the cast. A relational database would be a more natural way to organize the data if one wanted to be able to query with either movie title or performer. However, facilities for such queries are not completely incompatibile with XML. Even in a database that is structured hierarchically with an XML schema, it is possible to index it in different ways to support versatile approaches to retrieval, including nonhierarchical ones.
+
+XML, unlike HTML, is not directly concerned with appearance or presentation. On the other hand, it is perfectly possible to write formatting programs that control the presentation of the contents of an XML file such as the mammal-genus-species example. Such a program could follow convention to display genus and species names in italics. Different programs could impose independent decisions about how to display common names. One program could display common names in boldface, another in plain roman type.
+
+In contrast, in an HTML file, the decision to display common names in boldface type would be irrevocably implemented by tags: < b > neanderthal man &lt;/b&gt;, which would force **neanderthal man** to appear in boldface. Moreover, it is impossible to make up novel tags for HTML format (without approval by an international commission). In other words, the schema of HTML has been fixed. This has the advantage of complete portability and the disadvantage of inflexibility.
+
+Markup languages in general, and XML and HTML in particular, are becoming standard in database construction and distribution:
+
+Archiving and curating data. XML provides a general and flexible structure compatible with organizing information from many different fields and applications. Data validation—checking that the values of the elements are consistent with the schema—is straightforward. The results provide a format for data interchange, facilitating database interoperability.
+• Providing data to programs. Insertion of a parser between an XML data file and an application program can simplify the input phase of a calculation.
+Ease of data extraction and presentation. Selection of data and formatting into an HTML file can be a natural and fluent mapping that facilitates conversion of data into a form that is both humanfriendly and distributable over the web. Other markup languages provide facilities for describing graphics. These are profoundly concerned with both data structure and presentation.
+
+## Natural language processing
+
+Biomedical research depends crucially on the quality of the data and annotations in databases. Some annotations are generated from the data whereas others are extracted from articles in the scientific literature. Extraction from the literature is a labour-intensive activity that will not be able to keep up with the increasing rate of published articles. Will it be possible for computers to take over this task? Unlike most input prepared for computers in strictly defined formats, the literature, aimed primarily at human-to-human communication, appears in a natural language, although of course many articles contain equations and tables. Much of the contemporary scientific literature is written in English.
+
+Natural language refers to the oral and/or textual forms of human-to-human communication. Natural language processing by computer means at least the analysis of a stream of spoken or written words that a human could interpret and at best a suitable reaction, such as acting on a command or providing a suitable response in the natural language. (Few people think it a realistic goal for computers to deal with the grunt-and-gesture communications especially common in certain cities.)
+
+Natural language processing has been a goal of computing for decades. Early hopes, during the 1950s and 1960s, for achieving automatic language translation, were unfulfilled (see Box 3.5).
+
+A major difficulty in natural language processing is the ambiguity of words and even phrases. If a man married to a lawyer asks his wife to ‘press his suit’, does he want sartorial or forensic action? Human beings extract the meaning from such phrases by using contextual clues to resolve ambiguities. No reader would interpret the third line of Keats's ‘Ode to a Nightingale’:
+
+## Box 3.5 Automatic translation?
+
+An apocryphal story about automatic translation concerns a program that converted English to Russian and back. From the input ‘The spirit is willing but the flesh is weak’ came back ‘The vodka is fine but the meat is rotten.’ (That this occurred in a computer system is an urban myth. The first traceable publication of this joke actually is in a newspaper over a century ago: The Decatur, Illinois, USA Herald, 20 January 1903, p. 5.) A true computer translation howler was the rendering of ‘…la Cour de Justice considére la création d'un sixiéme poste d'avocat général’ as ‘…the Court of Justice is considering the creation of a sixth general avocado station.’\*
+
+<sup>\*</sup>Wheeler, P.J. and Lawson, V. (1982). Computing ahead of the linguists. Ambassador Int., March, 21–22.
+
+My heart aches, and a drowsy numbness pains
+
+My sense, as though of hemlock I had drunk,
+
+Or emptied some dull opiate to the drains
+
+One minute past, and Lethe-wards had sunk
+
+as signifying that the poet had just poured his opiate down his kitchen sink. Keats was deliberately using archaic senses of words.
+
+Turning from the sublime to the ridiculous, headlines, because of their enforced concision, are common sources of ambiguity. A standard machine parser ([http://www.link.cs.cmu.edu/link/](http://www.link.cs.cmu.edu/link/)) got this one wrong:
+
+## British left waffles on Falklands<sup>5</sup>
+
+It interprets ‘left’ as a verb and ‘waffles’ as a noun.
+
+Computer programs have access to neither life experience nor context-related clues: is the lawyer's husband holding a garment or a folder of papers? Therefore, ambiguities are difficult to circumvent. A simplification is to restrict the field of discourse. For instance, an early natural languageprocessing system provided an interface to a database of information about the baseball team the Boston Red Sox.
+
+A relatively successful approach to the specific problem of machine translation has been Google Translate. It works by searching a large corpus of paired documents produced by human translators. It is not immune from ambiguity: it translated, from English to French:
+
+They fired the professor for showing up drunk in class.
+
+as
+
+Ils ont tiré le professeur pour se présenter ivre en classe.
+
+but French tirer means fire in the sense of fire a gun, not a person.
+
+## Natural language processing and mining the biomedical literature
+
+Natural language processing in bioinformatics has set as goals the extraction of information from the relevant scientific literature and databases. Applications of textual analysis of databases of biomedical literature include the following.
+
+## Identifying keywords and combinations of keywords
+
+Given a list of names of genes and a list of names of diseases it should be possible to identify papers that contain references to combinations of genes and diseases, and to produce a list of gene/disease combinations based on co-occurrences in one or more papers. Several aspects of this problem make it more challenging than a simple keyword search. Many biological entities have multiple synonyms. Conversely, many terms appear in several technical categories and are used also as colloquial terms. As an extreme example, consider: ‘common cold’, ‘cold sore’, ‘cold shock protein’, ‘kept in a cold room’, ‘cold finger’, ‘paroxysmal cold haemogloburia’, ‘cold turkey’, ‘cold compresses’, ‘colicigonenic plasmid Cold-CA23’, and ‘Cold Spring Harbor Laboratory’, all of which appear in technical articles. Disambiguation challenges abound even in the restricted sphere of the biomedical literature.
+
+Bioinformaticians have applied synonym dictionaries, syntactic analysers that parse sentences to assign parts of speech to words—cold is a noun in only two of the examples in the preceding paragraph—and a variety of machine learning models that try to assemble context information by analysing the groups of terms that accompany each potential meaning of a word.
+
+## Knowledge extraction: protein–protein interactions
+
+There are several approaches to compiling a database of protein–protein interactions, some experimental and some theoretical. One is to extract information automatically from the scientific literature. For instance, an article entitled: ‘Calnuc binds to Alzheimer's β-amyloid precursor protein and affects its biogenesis’ appeared in the Journal of Neurochemistry.<sup>6</sup> (Of course, it makes no difference whether the sentence is in the title or the text of the article.) A human reader could harvest for a protein interaction database the pair: calnuc and Alzheimer's β-amyloid precursor protein.
+
+To extract this information automatically, it would help to have a list of protein names. The challenge is to write a program that can identify, within processed text, patterns of the form:
+
+```txt
+< protein name > ...
+  < bind or some equivalent verb > ...
+  < protein name >
+```
+
+The … allows for various kinds of intervening material. For instance, another article has the title: ‘Ubiquitin binds to and regulates a subset of SH3 domains’.<sup>7</sup> The program should recognize the verb ‘binds’ and ignore ‘to and regulates’. Alternatively, if one were trying to deduce regulatory networks, then a different verb would form part of the pattern. With respect to the proteins that bind ubiquitin, the title of this paper is relatively general. A sentence in the abstract of that paper: ‘The yeast endocytic protein Sla1, as well as the mammalian proteins CIN85 and amphiphysin, carry ubiquitin-binding SH3 domains’, would, if properly parsed, permit extraction of three specific SH3 domains that bind ubiquitin.
+
+One word within the … that the pattern should not ignore is ‘not’: The sentence ‘Auxin-binding protein 1 does not bind auxin within the endoplasmic reticulum despite this being the predominant subcellular location for this hormone receptor’ <sup>8</sup> satisfies the pattern but is a false positive. It is not enough to check for the presence of ‘not’. Consider: ‘The human anti-apoptotic proteins cIAP1 and cIAP2 bind but do not inhibit caspases.’ <sup>9</sup>
+
+To do a better job of data mining would seem to require a better analysis of the structures of the sentences used. A syntactic analyser is a program that parses natural language text. It identifies nouns, verbs, and other elements of a sentence. It specifies relationships among words; for instance, which noun or noun phrase is the subject of which verb (see Box 3.6).
+
+Automatic text-mining software does not work perfectly. (See Problem 3.3.) Some people believe that there are fundamental limitations that will never be overcome. Nevertheless, for extracting information from the literature to create the complete and high-quality annotations in the databases on which
+
+## Box 3.6 Syntactic analysis: parsing of English text
+
+Applied to the sentence:
+
+Mutations alter the base sequence of DNA.
+
+a syntactic analyser would return:
+
+```txt
+[ROOT
+  [S
+    [NP [NNS Mutations]
+      [VP [VBP alter
+        [NP
+          [NP [DT the [JJ nucleotide]
+          [NN sequence]]
+          [PP [IN of
+            [NP [NNP DNA]]]]
+        [...]]]
+```
+
+which could be displayed as a tree structure:
+
+![](images/page_167_image_4.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  ROOT["ROOT"] --> S["S"]
+  S --> VP["VP"]
+  VP --> NP["NP"]
+  NP --> PP["PP"]
+  PP --> N["N"]
+  N --> DNA["DNA"]
+  subgraph Steps
+    direction TB
+  D1["DT"] --> J1["JJ"]
+  J1 --> N2["IN"]
+  N2 --> N3["N"]
+  N3 --> DNA
+    end
+  subgraph Details
+    E1["Mutations"] -.-> NP
+    E2["alter"] -.-> VBP["VBP"]
+    E3["the"] -.-> DT
+    E4["nucleotide"] -.-> J1
+    E5["sequence of"] -.-> N2
+  end
+```
+</details>
+
+Here S = subject, NP = noun phrase, NN = singular noun, VP = verb phrase, VBP = verb (non-third-personsingular present tense), DT = determiner (article), JJ = adjective, IN = preposition, NNP = proper noun, singular (for a complete set of definitions see: [http://www.computing.dcu.ie/\~acahill/tagset.html](http://www.computing.dcu.ie/~acahill/tagset.html)).
+
+research crucially depends, what else is there? Annotation by human action is labour-intensive and error-prone. Databases cannot augment their staff by sufficient numbers of well-trained annotation experts to do the job. The only real alternative to successful natural language processing is distributed annotation: authors of journal articles distill database annotations from their own results.
+
+## Applications of text mining
+
+Computational analysis of texts of articles in the biomedical literature offers a series of challenges. The results have been successful in supporting the identification of relevant information for collection into databases, and even in generating useful suggestions for treatments of diseases.
+
+One goal is to identify papers that contain targetted types of information. For example, the protein sequence database SWISS-PROT stores information about protein function, and protein post-translational modifications. BIND is a database of protein–protein interactions. Identification of papers containing relevant information supports the work of the curators of these databases. Because the set of terms that might be relevant is so diffuse, simple keyword searches do not suffice. For instance, to identify post-translational modifications, a search for PHOSPHORYLATION would pick up not only papers describing the phosphorylation of proteins—which are relevant—but also the phosphorylation of glucose or fructose, which might well not be.
+
+Selection of papers is already a useful result, even if a human curator must read them. The next step would be automatic extraction of the information from the paper. This is a challenge and focus of current research. CASP-like evaluations track progress.
+
+The most basic task in computer analysis of an article is to identify the names that appear: names of genes, proteins, metabolites, drugs, and diseases (or more generally, phenotypes). Name identification depends heavily on dictionaries, but natural language processing contributes semantic information helpful in both recognizing names themselves and recognizing modifiers of names.
+
+The next level is to identify associations and interactions. Examples include attempts to correlate genes or proteins with diseases, or, more generally, to assign function to genes or proteins. To extract interactions, the minimal pattern must include two names + one interaction, the interaction being specified by a word or a phrase. We have already seen examples of the combination:
+
+$$
+<   \text {protein name} > \dots \text {binds} \dots <   \text {protein name} >
+$$
+
+There are many other protein–protein interactions, such as:
+
+$$
+<   \text {protein name} > \dots \text {regulates} \dots <   \text {protein name} >
+$$
+
+More complex combinations are very important: a correlation between a set of interacting proteins and two or more apparently unrelated diseases can show a hidden relationship in the mechanism underlying the diseases.
+
+## Identification of references to individual genes and proteins
+
+A basic task is to identify in a body of text the names of the relevant objects, such as genes and proteins. The difficulty is the wide range and ambiguity of names, and the use of common words as parts of gene names. The problem of identifying the species from which a gene arises is very difficult, as many genes have equivalent names in different mammalian species. It is very important to recognize species differences in searching for correlations between genes and drug activities. Tamoxifen, used widely against breast cancer, was originally developed as a birth-control pill. It is a fine contraceptive for rats but promotes ovulation in women.
+
+Chang, Schütze, and Altman developed a program called GAPSCORE that identifies gene and protein names within submitted text.<sup>10</sup> One might think that simply creating a dictionary and looking for its entries would suffice. Dictionaries are of course at the core of any identification procedure. But many genes names have other meanings. For instance, ‘ring’ (which stands for ‘really interesting new gene’) can also appear in articles in the biomedical literature in the context of chemical structure (‘histidine ring’) or histology (‘signet-ring cell’). Even the common colloquial sense of the word ring, as an item of jewellery, appears in the scientific literature in connection with metal-elicited contact dermatitis. Also, a dictionary should include a thesaurus, specifying, for example, that PTEN and MMAC1 are synonyms. (PTEN stands for phosphatase and tensin homolog and MMAC1 stands for mutated in multiple advanced cancers 1.)
+
+GAPSCORE scores terms according to a statistical model based on:
+
+dictionary lookup: a table of known gene names;
+appearance: many gene names have the form NAT1; other gene or protein names end with -in. Many enzyme names end with -ase;
+variations: the title of a recent paper included the phrase ‘conformational changes of apo- and
+
+holocalmodulin’; the prefixes apo- and holo- are used only for proteins;
+
+• syntax/context: the name of a protein or gene must be a noun. It is likely to be associated with certain other words, such as ‘expression’, ‘mutated’, or even ‘gene’ itself. To utilize such word combinations as effectively as possible requires syntactic analysis;
+• word morphology: the derivation and formation of terms. For example, any short term that begins cdk… is likely to be a cyclin-dependent protein kinase.
+
+Submitting to GAPSCORE only the title of a paper,<sup>11</sup> ‘Neuroprotection by transforming growth factor-β1 involves activation of nuclear factor-κB through phosphatidylinositol-3-OH kinase/Akt and mitogen-activated protein kinase-extracellular-signal regulated kinase1,2 signaling pathways’, returned the following:
+
+<table><tr><td colspan="2">Gene or protein name</td><td>Quality (score)</td></tr><tr><td>1</td><td>Mitogen-activated protein kinase</td><td>Excellent (1.00)</td></tr><tr><td>2</td><td>Phosphatidylinositol-3-OH kinase</td><td>Excellent (1.00)</td></tr><tr><td>3</td><td>Transforming growth factor-beta1</td><td>Excellent (1.00)</td></tr><tr><td>4</td><td>Nuclear factor-kappaB</td><td>Good (0.60)</td></tr><tr><td>5</td><td>Activation</td><td>Poor (0.07)</td></tr><tr><td>6</td><td>Neuroprotection</td><td>Poor (0.04)</td></tr></table>
+
+Note that the Greek letter β is spelt out in full.
+
+![](images/page_169_image_7.jpg)
+
+## See Weblem 3.11
+
+## Identification of interactions
+
+R. Hofmann and A. Valencia developed a system for data mining PubMed by natural language processing to identify genes, proteins, and their interactions. Their results are available in a database named iHOP,<sup>12</sup> or Information Hyperlinked Over Proteins ([http://www.ihop-net.org/UniPub/iHOP/](http://www.ihop-net.org/UniPub/iHOP/)).
+
+The basic item of iHOP data is a sentence from an abstract of an article appearing in PubMed. Appearances of any gene name, or synonym, in two different sentences provide a link. Currently the system contains 12 000 000 sentences, referring to 80 000 genes, from 1500 organisms.
+
+An example of iHOP and its navigation facilities appears in Figure 3.5.
+
+![](images/page_169_image_13.jpg)
+
+**Figure 3.5** Use of the iHOP website. (a) Choice of a gene—snf1 in this case—calls up presentation of information about that gene and its interactions. Panel (a) contains five sentences describing SNF1 (many others are omitted). Each sentence describes an interaction and/or function of SNF1. On the right is a link to the full abstract in which the sentence appeared. The top sentence links the current gene of focus, snf1, with another, reg1. Clicking on any mention of reg1 will shift the focus to it, opening another window. (b) The corresponding window for REG1. Note that the top sentences in this frame contain SNF1 as well as REG1. Information about the predecessor governs the ranking and ordering of the sentences in the new window. (c) In the course of navigation through iHOP, relationships can be collected into a logbook or gene model. The interaction network relating the selected proteins appears as a graph in a separate window.
+
+From Hoffmann, R. and Valencia, A. (2005). Implementing the iHOP concept for navigation of biomedical literature. Bioinformatics, **21**(Suppl. 2), ii252–ii258.
+
+## Interaction networks and diseases
+
+Some genetic diseases show simple Mendelian inheritance. They are the effect of a single gene. Other genetic diseases may arise from mutations of any of several genes. This suggests the involvement of a pathway or network, that has several vulnerable points. Still more complex are several diseases that appear to share a common protein-interaction network.
+
+Sam, Liu, Li, Friedman, and Lussier applied data-mining techniques based on natural language processing to identify relationships between diseases through sharing of components of a proteininteraction network. They combined two sets of data:
+
+1. relationships between proteins and diseases: this data set associated 154 diseases with 1931 proteins;
+2. a protein-interaction network: a set of relationships among proteins, including binary interactions and direct complex formation. This data set included 20 317 interaction pairs from 1140 proteins.
+
+For each pair of diseases, the associated proteins were checked for identity or interaction. That is, one protein might be associated with both diseases. Or, one protein associated with one disease might be paired in the interaction network with another protein associated with the other disease. Either contributes to a link between the two diseases.
+
+A pair of diseases that share both common proteins and interactions is xeroderma pigmentosum and Cockayne syndrome (see Box 3.7 and Fig. 3.6). Both diseases involve defects in DNA repair systems. Of the proteins shared by both diseases, some mutations in XPB lead to the combined syndrome called the XP/CS complex, with both sets of symptoms. Mutations in ERCC6 are associated with Cockayne syndrome. The tumour antigen p53—which does not interact with any of the other proteins—is likely to be not the primary lesion but the subject of unrepaired damage leading to enhanced cancer susceptibility.
+
+![](images/page_170_image_10.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  subgraph Xeroderma pigmentosum
+    A["Xeroderma pigmentosum group A-complementing protein (P23025)"]
+    B["Xeroderma pigmentosum group C-complementing protein (Q01831)"]
+    C["DNA repair protein RAD51 homologue 1 (Q06609)"]
+    D["DNA damage-binding protein 1 (Q16531)"]
+    E["DNA damage-binding protein 2 (Q92466)"]
+    F["DNA repair endonuclease XPF (Q92889)"]
+  end
+
+  subgraph Cockayne syndrome
+    G["DNA excision repair protein ERCC-8 (Q13216)"]
+  end
+
+  A --> G
+  B --> G
+  C --> G
+  D --> G
+  E --> G
+  F --> G
+  G --> H["TFIIH basal transcription factor complex helicase subunit (P19447)"]
+  I["Cellular tumour antigen p53 (P04637)"] --> H
+  J["TFIIH basal transcription factor complex helicase subunit (P18074)"] --> H
+  K["DNA excision repair protein ERCC-5 (P28715)"] --> H
+  L["DNA excision repair protein ERCC-6 (Q03468)"] --> H
+```
+</details>
+
+**Figure 3.6** Proteins associated with xeroderma pigmentosum and Cockayne syndrome, and their interactions. Arc at lower left: proteins associated with xeroderma pigmentosum. Arc at lower right: proteins associated with Cockayne syndrome. Arc at top: proteins associated with both. Lines indicate interaction pairs. Note that there is only one direct interaction between a protein associated with xeroderma pigmentosum only and another associated with Cockayne syndrome only.
+
+From Sam, L., Liu, Y., Li, J., Friedman, C., and Lussier, Y.A. (2007). Discovery of protein interaction networks shared by diseases. Pacific Symposium on Biocomputing, **12**, 76–87.
+
+At the time of this work, the close connection between xeroderma pigmentosum and Cockayne syndrome, both effects of repair dysfunction, was already known. What was and still is not well understood is what, beyond the known functional defects,
+
+## Box 3.7 Xeroderma pigmentosum and Cockayne syndrome: two diseases of DNA repair
+
+Xeroderma pigmentosum is a genetic disorder involving a defect in the ability to repair damage caused by ultraviolet light. This leads most obviously to great sensitivity to sunlight, including tendency, upon even short exposure, to sunburn, blisters, and freckles. More devastating is the predisposition to development of malignant tumours, presumably arising from unrepaired damage to tumour-suppressor genes.
+Cockayne syndrome shares with xeroderma pigmentosum a sensitivity to sunlight, but involves other symptoms including abnormal growth and development leading to short stature, retinal and other neurological degeneration, and premature aging. Risk of skin cancer is normal, not elevated as in xeroderma pigmentosum.
+A small number of cases of the xeroderma pigmentosum/Cockayne complex (XP/CS) syndrome are known. Patients show symptoms of both diseases.
+
+| Disease | Genes in which mutations appear include |
+| --- | --- |
+| Xeroderma pigmentosum | XPA, XPB (ERCC3), XPC, XPD (ERCC2), XPE (DDB2), XPF (ERCC4), XPG (RAD2, ERCC5), XPV (POLH) |
+| Cockayne syndrome | CSB ERCC6 (CSB), ERCC8 (CSA) |
+| XP/CS complex | XPB (ERCC3), XPD (ERCC2), XPG (ERCC5) |
+
+produces the differences in phenotype associated with the two diseases. In this respect, the mutations that produce the combined symptoms—the XP/CS complex—may be the ones that provide the clues.
+
+## Hypothesis generation
+
+The literature implicitly contains many unsuspected relationships. D.R. Swanson read papers that connected magnesium and epilepsy, and papers that connected epilepsy and migraine headaches. Taken together, these suggested to him that there should be a relationship between magnesium and migrane. Subsequent research confirmed such a link. Swanson had other successes, including the suggestion that fish oil would benefit patients with Raynaud's syndrome (a disorder affecting blood vessels of the extremities). Subsequent research confirmed this suggestion as well.
+
+Automation of Swanson's approach is an obvious goal; implementation of effective methods is not so easy.
+
+P. Srinivasan and B. Libbus developed software to apply Swanson's approach. They searched for applications of turmeric, a spice from the rhizomes of the plant Curcuma longa, containing the active compound curcumin.13 <sub>In</sub> Asia, turmeric is in common use in cooking. Its medicinal properties are also well known. It is an analgesic and an antiseptic, used for treatment of burns, stomach ulcers, skin diseases, and the common cold.
+
+A PubMed search for TURMERIC OR CURCUMIN OR CURCUMA returned 1175 documents. From these, using natural language processing, Srinivasan and Libbus extracted terms with names of genes or genomes, enzymes, and amino acids, peptides, or proteins, and ranked these terms by how frequently they turned up in the articles identified. They then reprobed PubMed using these results as search terms, and extracted from the results, and ranked, terms referring to diseases or syndromes; neoplastic processes (= terms referring to cancer).
+
+The idea is that this procedure would link turmeric with certain diseases through the medium of genes, genomes, enzymes, or proteins (see Fig. 3.7). The results embody suggestions that turmeric would have some relation with the diseases, and perhaps even be useful in their treatment.
+
+![](images/page_172_image_2.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["Probe term (turmeric)"] --> B["Gene"]
+  A --> C["Gene"]
+  A --> D["Protein"]
+  A --> E["Protein"]
+  B --> F["Disease"]
+  B --> G["Disease"]
+  C --> H["Disease"]
+  C --> I["Disease"]
+  D --> J["Disease"]
+  D --> K["Disease"]
+  E --> L["Disease"]
+```
+</details>
+
+Figure 3.7 The goal is to link a probe term, such as turmeric, with a set of diseases. In a two-stage procedure, first probe PubMed with the probe term, and recover names of genes, genomes, enzymes, and proteins. These links from turmeric to molecules have a ‘strength’ proportional to the number of times the term appears in the articles that PubMed identifies as related to turmeric. A second stage probes PubMed again, separately, with each of the molecules identified in the first stage. This time analysis of the articles extracts names of diseases. Again the ranking of the molecule–disease link is proportional to the number of times the disease term appears in the articles that PubMed identified in the second stage. A connection between turmeric and a disease, through two strong links, is suggestive of a relationship between turmeric and the disease.
+
+Srinivasan and Libbus discussed three diseases:
+
+• retinal diseases, including diabetic retinopathy, inflammation, and glaucoma;
+• Crohn disease;
+• disorders related to the spinal core, including inflammation following injury, and an autoimmune disease resembling multiple sclerosis.
+
+A common feature of all these diseases is inflammation. A common set of proteins linking turmeric with the disease includes TNFα, MAPK, NF-κB, COX-2, and other cytokines and interleukins. Knowing the molecules involved in the links between turmeric and diseases means that scientists can understand the mechanism by which turmeric might be expected to act. The result is not merely a correlation but supports a rationale of the relevance of the turmeric to the disease, which in turn usefully guides design of experiments to evaluate and elucidate the connection, and the clinical utility of the probe substance, turmeric.
+
+## RECOMMENDED READING
+
+## The transition to electronic publishing
+
+Berners-Lee, T. (with Mark Fischetti|) (2000). Weaving the Web: The Original Design and Ultimate Destiny of the World Wide Web. Harper Business, New York.
+
+- Berners-Lee, T. and Hendler, J. (2001). Publishing on the semantic web. Nature, 410, 1023–1024. From the inventor of the web.
+- Butler, D. and Campbell, P. (2001). Future e-access to the primary literature. Nature Web Debates, 5 April. [http://www.nature.com/nature/debates/e-access/introduction.html](http://www.nature.com/nature/debates/e-access/introduction.html). Introduction to a continuing discussion, about the web, on the web.
+- King, D.W. and Tenopir, C. (2004). Scholarly journal and digital database pricing: threat or opportunity? [http://web.utk.edu/\~tenopir/eprints/database\_pricing.pdf](http://web.utk.edu/~tenopir/eprints/database_pricing.pdf).
+- King, D.W. (2007). The cost of journal publishing: a literature review and commentary. Learned Publishing, 20, 85–106.
+- Lesk, A.M. (2004). Understanding Digital Libraries, 2nd edn. Morgan Kaufmann, San Francisco, CA. Introduction to the transition from traditional libraries to information provision by computer.
+- Malakoff, D. (2003). Scientific publishing. Opening the books on open access. Science, 302, 550–554. Description of the journals published by the Public Library of Science.
+- Spedding, V. (2003). Great data, but will it last? Research Information, Spring, 16–20. Problems of preservation of digital information. This journal has many articles of interest to scientists whose research depends on the quality and computer accessibility of data.
+- SQW Ltd (2004). Costs and Business Models in Scientific Research Publishing. The Wellcome Trust, London.
+- Winograd, S. and Zare, R.N. (1995). ‘Wired’ science or whither the printed pages. Science, 269, 615. The authors, among the most distinguished of contemporary scientists, raise questions that are still not answered after almost 20 years.
+- Van Orsdel, L.C. and Born, K. (2006). Journals in the time of Google. Library Journal, 131(7), 39–44.
+
+## Discussion of developments in access and pricing in scientific journals
+
+Dewatriont, M., Ginsburgh, V., Legros, P., Walckiers, A., Devroey, J.-P. et al. (2006). Study on the Economic and Technical Evolution of the Scientific Publication Markets in Europe. European Commission, Directorate-General for Research, Brussels. A thorough exposition of the issues, and some recommendations.
+
+Krallinger, M. and Valencia, A. (2005). Text-mining and information-retrieval services for molecular biology. Genome Biol., 6, 224.
+
+Rebholz-Schuhmann, D., Oellrich, A., and Hoehndorf, R. (2012). Text-mining solutions for biomedical research: enabling integrative biology. Nat. Rev. Genet., 13, 829–839.
+
+Shatkay, H. (2005). Hairpins in bookstacks: information retrieval from biomedical text. Briefings Bioinformatics, 6, 222–238.
+
+## Reviews of the achievements, challenges, and resources for applications of natural language processing in bioinformatics
+
+Bosak, J. and Bray, T. (1999). XML and the second-generation web. Sci. Am., 280(5), 89–93. An introduction to XML, including descriptions of the problems that motivated its development, and the solutions it provides.
+
+Garson, L.R. (2004). Communicating original research in chemistry and related sciences. Accts. Chem. Res., 37, 141–148.
+
+## EXERCISES AND PROBLEMS
+
+Exercise 3.1 Suppose a university library purchases electronic access to a very broad spectrum of scientific journals. Information about usage patterns of different journals are recordable at the publishers’ websites. (a) How could a university librarian make use of this information to help make difficult choices in the face of budgetary pressure? (b) Is it to a publisher's financial advantage to make this information available to university librarians?
+
+Exercise 3.2 Consider a database of audio clips (for example, recordings of broadcasts of speeches by Winston Churchill). You want to create software to make this database searchable by computer, using spoken English sentences as search objects. (a) Suppose you had software that would perform accurate speech recognition; that is, conversion of speech to text. How could you use this to solve the problem? (b) How, in general terms, might you try to solve the
+
+problem without using speech→text conversion?
+
+**Exercise 3.3** According to the data in Box 3.1, which amino acids satisfy the compound query discussed in the section entitled ‘Database organization’?
+
+**Exercise 3.4** For what types of data are the following markup languages specialized? (a) VRML, (b) CML, (c) BSML, (d) LOGML.
+
+**Exercise 3.5** Rewrite the XML fragment containing a database of mammals in the discussion about Markup languages, converting common name from an attribute to a tag.
+
+**Exercise 3.6** The sentence ‘Time flies like an arrow’ is ambiguous. (a) Explain three potential meanings of this sentence, treating time as (1) a noun, (2) a verb, and (3) an adjective (modifying flies). (b) Could you reject any of these meanings because they do not correctly obey the rules of grammar? (c) Could you reject any of these meanings because they are not consistent with ordinary experience?
+
+**Exercise 3.7** Compose a search pattern to detect interacting proteins analogous to < protein name > … < binds or some equivalent verb > … < protein name > based on the noun association instead of the verb binds.
+
+**Exercise 3.8** A simple way to try to find enzyme names in text is to search for words that end in -ase. Think of 10 English words ending in -ase that are not names of enzymes. What is the longest word ending in -ase that you can find? Of the words you suggest, would any of them be likely to appear in an article in the biomedical literature? (Two obvious words ending in -ase that appear frequently in the biomedical literature are case and disease. To turn this exercise into a weblem, look for an online rhyming dictionary.)
+
+**Problem 3.1** From the data in Figure 3.1, (a) for sales of subscriptions, what price per subscription would give a 5% profit over costs? and (b) how many subscriptions would be required to make a 5% profit while charging half the cost of subscription found in (a)? Assume for simplicity that the cost of reproduction does not increase, but that the cost of distribution is linearly proportional to the number of copies distributed. (c) What would have to be charged for an electronic subscription (no paper version produced) to make a 5% profit if there are still subscribers? Assume for simplicity zero reproduction and distribution costs.
+
+**Problem 3.2** Consider the query: what are the three-letter codes of all amino acids that have volumes greater than 120 Å<sup>3</sup> with distal carboxyl or amide groups? Draw a Venn diagram showing, separately, the distributions of three-letter codes of sidechains, distal functional groups, and volumes. Show the overlaps of the distributions and indicate the residues that satisfy the query.
+
+**Problem 3.3** Recall the ambiguous headline, ‘British left waffles on Falklands’. (a) Parse this text yourself and derive a graph comparable to that given in the text for the sentence 'Mutations alter the base sequence of DNA’ (Box 3.6). (b) In what ways does your analysis differ from that of the computer program? (c) Suppose you think that the example is unfair because waffles is not a verb in US English. Think of a sentence in which waffles must be a verb and submit it to the syntactic analyser at [http://www.link.cs.cmu.edu/link/](http://www.link.cs.cmu.edu/link/). Did it get your sentence right?
+
+**Problem 3.4** Submit to the syntactic analyser the following sentence from Macbeth: ‘The raven himself is hoarse that croaks the fatal entrance of Duncan under my battlements’. Does it get this right? In particular, does it consider ‘under my battlements’ as modifying ‘hoarse’ or ‘entrance of Duncan’? Note that a human reader would use the relationship between entrance and battlements as a clue to disambiguation.
+
+1 Dewatriont, M., Ginsburgh, V., Legros, P., Walckiers, A., Devroey, J.-P. et al. (2006). Study on the Economic and Technical Evolution of the Scientific Publication Markets in Europe. European Commission, Directorate-General for Research, Brussels.
+2 For a directory of open-access journals see [http://www.doaj.org](http://www.doaj.org).
+3 See [http://swift.cmbi.ru.nl/gv/pdbreport/](http://swift.cmbi.ru.nl/gv/pdbreport/) and Hooft, R.W.W., Vriend, G., Sander, C., and Abola, E.E. (1996). Errors in protein structures. Nature, 381, 272.
+4 Park, Y.R., Kim, J., Lee, H.W., Yoon, Y.J., and Kim, J.H. (2011). GOChase-II: correcting semantic inconsistencies from Gene Ontology-based annotations for gene products. BMC Bioinformat., 12 (suppl. 1), S40.
+5 Said to be a headline in The Guardian from April 1982, but perhaps apocryphal.
+6 Lin, P., Fischer, T., Lavoie, C., Huang, H., and Farquhar, M.G. (2007). Calnuc plays a role in dynamic distribution of Gαi but not Gβ subunits and modulates ACTH secretion in AtT-20 neuroendocrine secretory cells. J. Neurochem., 100, 1505–1514.
+7 Stamenova, S.D., French, M.E., He, Y., Francis, S.A., Kramer, Z.B., and Hicke, L. (2007). Ubiquitin binds to and regulates a subset of SH3 domains. Mol. Cell, 25, 273–284.
+8 Tian, H., Klämbt, D., and Jones, A.M. (1995). Auxin-binding Protein 1 does not bind auxin within the endoplasmic reticulum despite this being the predominant subcellular location for this hormone receptor. J. Biol. Chem., 270, 26962–26969.
+9 Eckelman, B.P. and Salveson, G.S. (2006). The human anti-apoptotic proteins cIAP1 and cIAP2 bind but do not inhibit caspases. J. Biol. Chem., 281, 3253–3260.
+10 Chang, J.T., Schütze, H., and Altman, R.B. (2004). GAPSCORE: finding gene and protein names one word at a time. Bioinformatics, 20, 216–225.
+11 Zhu, Y., Culmsee, C., Klumpp, S., and Krieglstein, J. (2004). Neuroscience, 123, 897–906. [http://bionlp.stanford.edu/gapscore/](http://bionlp.stanford.edu/gapscore/).
+12 Unfortunately, the acronym also specifies a chain of restaurants in the USA. This is ironic, from a project that so successfully faced challenges of disambiguation.
+13 Srinivasan, P. and Libbus, B. (2004). Mining MEDLINE for implicit links between dietary substances and diseases. Bioinformatics, 20 (suppl. 1), i290–i296.

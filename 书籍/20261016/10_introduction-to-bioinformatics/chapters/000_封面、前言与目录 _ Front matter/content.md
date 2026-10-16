@@ -1,0 +1,836 @@
+# 封面、前言与目录 / Front matter
+
+原始 PDF 第 1–24 页。
+
+![](../../raw/pages_0001-0016/images/page_0_chart_0.jpg)
+
+<details>
+<summary>bubble</summary>
+
+| Node Type | Color |
+| --- | --- |
+| Nodes | Dark Blue, Light Blue, Green, Yellow |
+</details>
+
+# Introduction to Bioinformatics
+
+Fourth Edition
+
+Arthur M. Lesk
+
+---
+
+![](../../raw/pages_0001-0016/images/page_1_chart_0.jpg)
+
+<details>
+<summary>bubble</summary>
+
+| Entity | Connection Type |
+| --- | --- |
+| Oxford | Network Graph |
+</details>
+
+# Introduction to Bioinformatics
+
+Fourth Edition
+
+Arthur M. Lesk
+
+2
+
+---
+
+Introduction to Bioinformatics
+
+3
+
+---
+
+## INTRODUCTION TO BIOINFORMATICS
+
+**FOURTH EDITION**
+
+Arthur M. Lesk
+
+The Pennsylvania State University
+
+In nature’s infinite book of secrecy A little I can read.
+
+Antony and Cleopatra
+
+OXFORD UNIVERSITY PRESS
+
+4
+
+---
+
+## OXFORD
+
+## UNIVERSITY PRESS
+
+Great Clarendon Street, Oxford, OX2 6DP, United Kingdom
+
+Oxford University Press is a department of the University of Oxford. It furthers the University’s objective of excellence in research, scholarship, and education by publishing worldwide. Oxford is a registered trade mark of Oxford University Press in the UK and in certain other countries
+
+© Arthur M. Lesk 2014
+
+The moral rights of the author have been asserted
+
+First Edition copyright 2002
+
+Second Edition copyright 2005
+
+Third Edition copyright 2008
+
+Impression: 1
+
+All rights reserved. No part of this publication may be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, without the prior permission in writing of Oxford University Press, or as expressly permitted by law, by licence or under terms agreed with the appropriate reprographics rights organization. Enquiries concerning reproduction outside the scope of the above should be sent to the Rights Department, Oxford University Press, at the address above
+
+You must not circulate this work in any other form and you must impose this same condition on any acquirer
+
+British Library Cataloguing in Publication Data
+
+Data available
+
+ISBN 978–0–19–965156–6
+
+Printed in Italy by L.E.G.O. S.p.A—Lavis TN
+
+Links to third party websites are provided by Oxford in good faith and for information only. Oxford disclaims any responsibility for the materials contained in any third party website referenced in this work.
+
+5
+
+---
+
+Dedicated to Eda, with whom I have merged my genes.
+
+6
+
+---
+
+## CONTENTS
+
+**Preface to the first edition**
+
+**Preface to the second edition**
+
+**Preface to the third edition**
+
+**Preface to the fourth edition**
+
+**Plan of the book**
+
+**Introduction to bioinformatics on the web**
+
+**Acknowledgements**
+
+## 1 Introduction
+
+**Life in space and time**
+
+**Phenotype = genotype + environment + life history + epigenetics**
+
+**Evolution is the change over time in the world of living things**
+
+**Dogmas: central and peripheral**
+
+Statics and dynamics
+
+Networks
+
+**Observables and data archives**
+
+A database without effective modes of access is merely a data graveyard
+
+Information flow in bioinformatics
+
+Curation, annotation, and quality control
+
+**The world-wide web**
+
+**Electronic publication**
+
+**Computers and computer science**
+
+Programming
+
+**Biological classification and nomenclature**
+
+**Use of sequences to determine phylogenetic relationships**
+
+Use of SINES and LINES to derive phylogenetic relationships
+
+**Searching for similar sequences in databases: PSI-BLAST**
+
+**Introduction to protein structure**
+
+**The hierarchical nature of protein architecture**
+
+7
+
+---
+
+**Classification of protein structures**
+
+**Protein structure prediction and engineering**
+
+Critical Assessment of Structure Prediction
+
+Protein engineering
+
+**Proteomics and transcriptomics**
+
+DNA microarrays
+
+Transcriptomics and RNA sequencing
+
+Mass spectrometry
+
+**Systems biology**
+
+**Clinical implications**
+
+The future
+
+**Recommended reading**
+
+**Exercises and problems**
+
+## 2 Genome organization and evolution
+
+**Genomes, transcriptomes, and proteomes**
+
+Genes
+
+Proteomics and transcriptomics
+
+**Eavesdropping on the transmission of genetic information**
+
+Identification of genes associated with inherited diseases
+
+Mappings between the maps
+
+**High-resolution maps**
+
+**Genome-wide association studies**
+
+**Picking out genes in genomes**
+
+**Genome-sequencing projects**
+
+**Genomes of prokaryotes**
+
+The genome of the bacterium Escherichia coli
+
+The genome of the archaeon Methanococcus jannaschii
+
+The genome of one of the simplest organisms: Mycoplasma genitalium
+
+**Metagenomics: the collection of genomes in a coherent environmental sample**
+
+The human microbiome
+
+**Genomes of eukarya**
+
+Gene families
+
+The genome of Saccharomyces cerevisiae (baker's yeast)
+
+The genome of Caenorhabditis elegans
+
+The genome of Drosophila melanogaster
+
+8
+
+---
+
+The genome of Arabidopsis thaliana
+
+## The genome of Homo sapiens (the human genome)
+
+Protein-coding genes
+
+Repeat sequences
+
+RNA
+
+Single-nucleotide polymorphisms and haplotypes
+
+Systematic measurements and collections of single-nucleotide polymorphisms
+
+Ethical, legal, and social issues
+
+## Genetic diversity in anthropology
+
+DNA sequences and languages
+
+Genetic diversity and personal identification
+
+## Evolution of genomes
+
+Please pass the genes: horizontal gene transfer
+
+## Comparative genomics of eukarya
+
+## Recommended Reading
+
+## Exercises and problems
+
+## 3 Scientific publications and archives: media, content, and access
+
+## The scientific literature
+
+## Economic factors governing access to scholarly publications
+
+Open access
+
+The Public Library of Science
+
+## Traditional and digital libraries
+
+How to populate a digital library
+
+## The information explosion
+
+The web: higher dimensions
+
+New media: video, sound
+
+Searching the literature
+
+Bibliography management
+
+## Databases
+
+Database contents
+
+The literature as a database
+
+Database organization
+
+Annotation
+
+Database quality control
+
+Database access
+
+Links
+
+9
+
+---
+
+Database interoperability
+
+Data mining
+
+## Programming languages and tools
+
+Traditional programming languages
+
+Scripting languages
+
+Program libraries specialized for molecular biology
+
+Java: computing over the web
+
+Markup languages
+
+## Natural language processing
+
+Natural language processing and mining the biomedical literature
+
+Applications of text mining
+
+## Recommended reading
+
+## Exercises and problems
+
+## 4 Archives and information retrieval
+
+## Database indexing and specification of search terms
+
+Follow-up questions
+
+Analysis and processing of retrieved data
+
+## The archives
+
+Nucleic acid sequence databases
+
+Genome databases and genome browsers
+
+Protein sequence databases
+
+Databases of protein families
+
+Databases of structures
+
+Classifications of protein structures
+
+Accuracy and precision of protein structure determinations
+
+Specialized, or ‘boutique’, databases
+
+Expression and proteomics databases
+
+Bibliographic databases
+
+Surveys of molecular biology databases and servers
+
+## Gateways to archives
+
+Access to databases in molecular biology
+
+ENTREZ
+
+The Protein Identification Resource
+
+ExPASy: Expert Protein Analysis System
+
+## Where do we go from here?
+
+## Recommended reading
+
+10
+
+---
+
+**Exercises and problems**
+
+## 5 Alignments and phylogenetic trees
+
+**Introduction to sequence alignment**
+
+**The dotplot**
+
+**Dotplots and sequence alignments**
+
+**Measures of sequence similarity**
+
+Scoring schemes
+
+Derivation of substitution matrices: PAM and BLOSUM matrices
+
+## Computing the alignment of two sequences
+
+Variations and generalizations
+
+Approximate methods for quick screening of databases
+
+## The dynamic-programming algorithm for optimal pairwise sequence alignment
+
+**Significance of alignments**
+
+**Multiple sequence alignment**
+
+## Applications of multiple sequence alignments and database searching
+
+Profiles
+
+PSI-BLAST
+
+Hidden Markov models
+
+## Phylogeny
+
+Determination of taxonomic relationships from molecular properties
+
+## Phylogenetic trees
+
+Clustering methods
+
+Cladistic methods
+
+Reconstruction of ancestral sequences
+
+## The problem of varying rates of evolution
+
+Are trees the correct way to present phylogenetic relationships?
+
+Computational considerations
+
+## Putting it all together
+
+## Recommended reading
+
+## Exercises and problems
+
+## 6 Structural bioinformatics and drug discovery
+
+## Introduction
+
+## Protein stability and folding
+
+11
+
+---
+
+The Sasisekharan–Ramakrishnan–Ramachandran plot describes allowed mainchain conformations
+
+The sidechains
+
+Protein stability and denaturation
+
+## Protein folding
+
+## Applications of hydrophobicity
+
+Coiled-coiled proteins
+
+## Superposition of structures, and structural alignments
+
+DALI and MUSTANG
+
+## Evolution of protein structures
+
+Classifications of protein structures
+
+## Protein structure prediction and modelling
+
+A priori and empirical methods
+
+Critical Assessment of Structure Prediction
+
+Secondary structure prediction
+
+Homology modelling
+
+Fold recognition
+
+Conformational energy calculations and molecular dynamics
+
+## Assignment of protein structures to genomes
+
+## Prediction of protein function
+
+Divergence of function: orthologues and paralogues
+
+## Drug discovery and development
+
+The lead compound
+
+Improving on the lead compound: quantitative structure-activity relationships
+
+Bioinformatics in drug discovery and development
+
+Molecular modelling in drug discovery
+
+## Recommended reading
+
+## Exercises and problems
+
+## 7 Introduction to systems biology
+
+## Introduction
+
+## Networks and graphs
+
+Connectivity in networks
+
+## Dynamics, stability, and robustness
+
+## Some sources of ideas for systems biology
+
+Complexity of sequences
+
+Computational complexity
+
+12
+
+---
+
+Static and dynamic complexity
+
+Chaos and predictability
+
+**Recommended reading**
+
+**Exercises and problems**
+
+## 8 Metabolic pathways
+
+**Classification and assignment of protein function**
+
+The Enzyme Commission
+
+The Gene Ontology Consortium protein function classification
+
+**Catalysis by enzymes**
+
+**Active sites**
+
+Cofactors
+
+**Protein–ligand binding equilibria**
+
+**Enzyme kinetics**
+
+**Measures of effectiveness of enzymes**
+
+**How do proteins evolve new functions?**
+
+Control over enzyme activity
+
+Structural mechanisms of evolution of altered or novel protein functions
+
+**Protein evolution at the level of domain assembly**
+
+**Databases of metabolic pathways**
+
+EcoCyc
+
+The Kyoto Encyclopedia of Genes and Genomes
+
+**Evolution and phylogeny of metabolic pathways**
+
+Pathway comparison
+
+**Alignment of metabolic pathways**
+
+Comparing linear metabolic pathways
+
+Comparing nonlinear metabolic pathways: the pentose phosphate pathway and the Calvin–Benson cycle
+
+**Dynamics of metabolic networks**
+
+Robustness of metabolic networks
+
+Dynamic modelling of metabolism
+
+**Recommended reading**
+
+**Exercises and problems**
+
+## 9 Gene expression and regulation
+
+**DNA microarrays**
+
+Microarray data are quantitative but imprecise
+
+13
+
+---
+
+Analysis of microarray data
+
+## Mass spectrometry
+
+Identification of components of a complex mixture
+Protein sequencing by mass spectrometry
+Measuring deuterium exchange in proteins
+Genome sequence analysis by mass spectrometry
+
+## Protein complexes and aggregates
+
+Properties of protein–protein complexes
+
+## Protein interaction networks
+
+## Regulatory networks
+
+Signal transduction and transcriptional control
+Structures of regulatory networks
+Structural biology of regulatory networks
+
+## The genetic switch of bacteriophage λ
+
+What are the characteristics of the switch that must be implemented by DNA–protein interactions?
+
+The materials
+
+How to ’throw’ the switch
+
+## The genetic regulatory network of Saccharomyces cerevisiae
+
+Adaptability of the yeast regulatory network
+
+## Recommended reading
+
+## Exercises and problems
+
+## Conclusion
+
+## Index
+
+14
+
+---
+
+# PREFACE TO THE FIRST EDITION
+
+On June 26, 2000, the sciences of biology and medicine changed forever. Prime Minister of the United Kingdom Tony Blair and President of the United States Bill Clinton held a joint press conference, linked via satellite, to announce the completion of the draft of the Human Genome. The New York Times ran a banner headline: ‘Genetic Code of Human Life is Cracked by Scientists’. The sequence of 3 billion bases was the culmination of over a decade of work, during which the goal was always clearly in sight and the only questions were how fast the technology could progress and how generously the funding would flow. The Table shows some of the landmarks along the way.
+
+Next to the politicians stood the scientists. John Sulston, Director of the Wellcome Trust Sanger Institute in the UK, had been a key player since the beginning of high-throughput sequencing methods. He had grown with the project from the earliest ‘one man and a dog’ stages to the current international consortium. In the US, appearing with President Clinton were Francis Collins, director of the US National Human Genome Research Institute, representing the US publicly-funded efforts; and J. Craig Venter, President and Chief Scientific Officer of Celera Genomics Corporation, representing the commercial sector. It is difficult to introduce these two without thinking, ‘In this corner … and in this corner …’. Although never actually coming to blows, there was certainly intense competition, in the later stages a race.
+
+The race was more than an effort to finish first and receive scientific credit for priority. Indeed, it was a race after which the contestants would be tested not for whether they had taken drugs, but whether they and others could discover them. Clinical applications were a prime motive for support of the Human Genome Project. Once the courts had held that gene sequences were patentable—with enormous potential payoffs for drugs based on them—the commercial sector rushed to submit patents on sets of sequences that they determined, and the academic groups rushed to place each bit of sequence that they determined into the public domain to prevent Celera—or anyone else—from applying for patents.
+
+The academic groups lined up against Celera were a collaborating group of laboratories primarily but not exclusively in the UK and USA. These included the Wellcome Trust Sanger Institute in England, Washington University in St. Louis, Missouri, the Whitehead Institute at the Massachusetts Institute of Technology in Cambridge, Massachusetts, Baylor College of Medicine in Houston, Texas, the Joint Genome Institute at Lawrence Livermore National Laboratory in Livermore, California, and the RIKEN Genomic Sciences Center, now in Yokahama, Japan.
+
+Both sides could dip into deep pockets. Celera had its original venture capitalists; its current parent company, PE Corporation; and, after going public, anyone who cared to take a flutter. The Wellcome Trust Sanger Institute was supported by the UK Medical Research Council and The Wellcome Trust. The US academic labs were supported by the US National Institutes of Health and Department of Energy.
+
+On June 26, 2000 the contestants agreed to declare the race a tie, or at least a carefully out-of-focus photo finish.
+
+**Landmarks in the Human Genome Project**
+
+15
+
+---
+
+| 1953 | Watson–Crick structure of DNA published. |
+| --- | --- |
+| 1975 | F. Sanger, and independently A. Maxam and W. Gilbert, develop methods for sequencing DNA. |
+| 1977 | Bacteriophage $\phi$X-174 sequenced: first ‘complete genome’. |
+| 1980 | US Supreme Court holds that genetically-modified bacteria are patentable. This decision was the original basis for patenting of genes. |
+| 1981 | Human mitochondrial DNA sequenced: 16 569 base pairs. |
+| 1984 | Epstein–Barr virus genome sequenced: 172 281 base pairs |
+| 1990 | International Human Genome Project launched: target horizon 15 years. |
+| 1991 | J. Craig Venter and colleagues identify active genes via expressed sequence tags, sequences of initial portions of DNA complementary to messenger RNA. |
+| 1992 | Complete low-resolution linkage map of the human genome. |
+| 1992 | Beginning of the Caenorhabditis elegans sequencing project. |
+| 1992 | Wellcome Trust and UK Medical Research Council establish the Sanger Centre for large-scale genomic sequencing, directed by J. Sulston. |
+| 1992 | J. Craig Venter forms the Institute for Genome Research (TIGR), associated with plans to exploit sequencing commercially through gene identification and drug discovery. |
+| 1995 | First complete sequence of a bacterial genome, Haemophilus influenzae, by TIGR. |
+| 1996 | High-resolution map of human genome: markers spaced by ≈600 000 base pairs. |
+| 1996 | Completion of yeast genome, first eukaryotic genome sequence. |
+| May 1998 | Celera claims to be able to finish human genome by 2001. Wellcome responds by increasing funding to Sanger Centre. |
+| 1998 | Caenorhabditis elegans sequence published. |
+| September 1, 1999 | Drosophila melanogaster genome sequence announced, by Celera Genomics; released Spring 2000. |
+| 1999 | Human Genome Project states goal: working draft of human genome by 2001 (90% of genes sequenced to >95% accuracy). |
+| December 1, 1999 | Sequence of first complete human chromosome published. |
+| June 26, 2000 | Joint announcement of complete draft sequence of human genome. |
+| 2003 | Fiftieth anniversary of discovery of the structure of DNA. Announcement of completion of human genome sequence. |
+
+The human genome is only one of the many complete genome sequences known. Taken together, genome sequences from organisms distributed widely among the branches of the tree of life give us a sense, only hinted at before, of the very great unity in detail of all life on Earth. They have changed our perceptions, much as the first pictures of the Earth from space engendered a unified view of our planet.
+
+The sequencing of the human genome sequence ranks with the Manhattan project that produced atomic weapons during the Second World War, and the space program that sent people to the Moon, as one of the great bursts of technological achievement of the last century. These projects share a grounding in fundamental science, and large-scale and expensive engineering development and support. For biology, neither the attitudes nor the budgets will ever be the same. Soon a ‘one man and a dog project’ will refer only to an afternoon’s undergraduate practical experiment in sequencing and comparison of two mammalian genomes.
+
+The human genome is fundamentally about information, and computers were essential both for the determination of the sequence and for the applications to biology and medicine that are already flowing from it. Computing contributed not only the raw capacity for processing and storage of data, but also the mathematically-sophisticated methods required to achieve the results. The marriage of biology and computer science has created a new field called bioinformatics.
+
+Today bioinformatics is an applied science. We use computer programs to make inferences from
+
+16
+
+---
+
+the data archives of modern molecular biology, to make connections among them, and to derive useful and interesting predictions.
+
+This book is aimed at students and practising scientists who need to know how to access the data archives of genomes and proteins, the tools that have been developed to work with these archives, and the kinds of questions that these data and tools can answer. In fact, there are a lot of sources of this information. Sites treating topics in bioinformatics are sprawled out all over the Web. The challenge is to select an essential core of this material and to describe it clearly and coherently, at an introductory level.
+
+It is assumed that the reader already has some knowledge of modern molecular biology, and some facility at using a computer. The purpose of this book is to build on and develop this background. It is suitable as a textbook for advanced undergraduates or beginning postgraduate students. Many worked-out examples are integrated into the text, and references to useful web sites and recommended reading are provided.
+
+Problems test and consolidate understanding, provide opportunities to practise skills, and explore additional subjects. Three types of problems appear at the ends of chapters. Exercises are short and straightforward applications of material in the text. Problems also require no information not contained in the text, but require lengthier answers or in some cases calculations. The third category, ‘Weblems,’ require access to the Worldwide Web. Weblems are designed to give readers practice with the tools required for further study and research in the field.
+
+What has made it possible to try to write such a book now is the extent to which the Worldwide Web has made easily accessible both the archives themselves and the programs that deal with them. In the past, it was necessary to install programs and data on one’s own system, and run calculations locally. Of course this meant that everything was dependent on the facilities available. Now it is possible to channel all the work through an interface to the Web. The web site linked with this book will ease the transition. To ensure that readers will be able freely to pursue discussions in the book onto the Web, descriptions of and references to commercial software have been avoided, although many commercial packages are of very high quality.
+
+A serious problem with the web is its volatility. Sites come and go, leaving trails of dead links in their wake. There are so many sites that it is necessary to try to find a few gateways that are stable: not only continuing to exist but also kept up-to-date in both their contents and links. I have suggested some such sites, but many others are just as good. The problem is not to create a long list of useful sites—this has been done many times, and is relatively easy—but to create a short one—this is much harder!
+
+Some computing is introduced in this book based on the widely available language PERL. Examples of simple PERL programs appear in the context of biological problems. Many simple PERL tasks are assigned as exercises or problems at the ends of the chapters.
+
+Where might the reader turn next? This book is designed as a companion volume—in current parlance, a ‘prequel’—to Introduction to Protein Architecture: the Structural Biology of Proteins (Oxford University Press, 2000), and that title is of course recommended. Other books on sequence analysis range from those oriented towards biology to others in the field of computer science. The goal is that each reader will come to recognize his or her own interests, and be equipped to follow them up.
+
+17
+
+---
+
+# PREFACE TO THE SECOND EDITION
+
+Bioinformatics has grown since the first edition of this book appeared.
+
+The most striking change has been a refocus on integration; that is, of trying to see life processes as unified systems. As I wrote at the end of Introduction to Protein Science: Architecture, Function and Genomics, ‘During the last century, molecular biologists have been taking living things apart. Our task now is to understand how to put them back together.’ We have had large amounts of data. Now we are trying to see how they interrelate. At the heart of life processes, are complicated patterns of interaction among the components, in space and in time. To understand these patterns the field has moved towards combining information into networks, and trying to understand their structures and dynamics.
+
+Supporting this venture are the growing streams of data. The human genome, available in draft form when the first edition appeared, is now complete. It is joined by the complete genomes of 18 archaea, 155 bacteria, over 30 eukarya, and many other organelle and viral sequences. These genomes illuminate each other. One story that they tell is about unsuspected underlying unities of all living things, despite the obvious and profound differences in morphology and lifestyle.
+
+Genomic sequences are supplemented by other data streams, notably the proteome. Knowing patterns of gene expression, and networks of regulatory interactions, shows how cells and organisms implement the information in the DNA. The potential for the life of an organism is contained in its genome, but it would be impossible to deduce a biography from it. Genomes are not formulas or scripts. It is in the proteins, and their interactions with themselves and with DNA, that we must seek the set of activities, contingent on and responsive to, the environment. Proteomics is giving us the information we need to see how the system works.
+
+Research and applications require that the data be available in useful form. It is not enough to make the data public. The information must be subjected to quality control, annotation, and a logical structure must be imposed on it to make information retrieval possible. For this we are indebted to the institutions that archive, curate, organize and distribute the data. A recent trend has seen mergers of these groups into collaborative projects spanning the continents. In accord with the need to integrate the study of different types of data, we are moving in the direction of a single biological data repository. Individual scientists will be able to define ‘virtual databanks’ tailoring access to the information to suit particular needs and interests.
+
+A gratifying consequence of academic bioinformatics is its contributions to applications in medicine, agriculture and technology. A better understanding of life processes empowers us to deal with them when they go wrong.
+
+18
+
+---
+
+# PREFACE TO THE THIRD EDITION
+
+Major changes in molecular biology since the second edition most prominently involve the great growth in new complete genome sequences that have become available. These are results of enhancements in methods of sequence determination. The extension to metagenomics—the survey of distributions of sequences in a region of the earth or ocean—is new.
+
+Major changes in information distribution involve the accelerating transition from paper to electronic libraries. A new chapter treating this subject, appears in this edition. The implications for scientific research are only a part of the great social revolution that has flowed from the development of the Web; comparable to, if not exceeding, the one impelled by the printing press 500 years ago.
+
+There are many different possible points of view from which to present molecular biology. Bioinformatics is one of them. I have also written about genomics, and about proteins, in companion volumes also published by Oxford University Press: Introduction to Protein Science: Architecture, Function and Genomics and Introduction to Genomics. As a result, this book is focussed more tightly on the applied science of bioinformatics. Readers are urged to put the books together for a more rounded appreciation of the pageant and mechanisms of life.
+
+19
+
+---
+
+# PREFACE TO THE FOURTH EDITION
+
+The natural habitat of bioinformatics is the web. Previous versions of this book recognized this, to some extent, with an Online Resource Centre supplementing the text. With this edition, the online material assumes a full partnership.
+
+To learn bioinformatics means to understand basic concepts and principles, and to develop a set of skills. The paper text contains an exposition of the concepts and principles; the Online Resource Centre is the equivalent of a ‘laboratory’ or ‘practical’ component of the course. An icon in the text indicates the appearance in the Online Resource Centre of material related to current discussion.
+
+The data of bioinformatics are accessible on the web. Programs to analyse them are available on the web. Indeed, many authors of programs provide web servers for remote access to the calculations. Links from databases to servers streamline the passage from data retrieval to data analysis. Such facilities supersede the old procedure of ‘download the data onto your computer, install the program on your computer, and run it locally’.
+
+All research in contemporary molecular biology depends on data, and programs to retrieve and analyse them. There is consensus that all biomedical scientists must achieve a minimum of programming skills, but there is vigorous debate over what this minimum level should be. The point of view expressed in this book is that molecular biologists based primarily in a ‘wet’ lab must dip no more than their toes into the stream; those based primarily at a computer must wade in up to their waist perhaps; but only those specializing in computer science and software development must undergo total immersion.
+
+Indeed, one of the arguments for the suggestion that sophisticated programming skills are not generally required is the great panoply of freely available programs, written by acknowledged professionals. What is essential is developing skill in using these programs, and in intelligent interpretion of the results that they produce.
+
+This is the goal of the problems and projects in the Online Resource Centre. Many of them are ‘weblems’ based on data and facilities on the web. Some are programming exercises, based on the PERL language. PERL is a relatively simple but extremely effective programming language. It is one of the languages popular in the bioinformatics community. Similar languages include PYTHON and RUBY; each of these has its adherents. For PERL (and for the other languages), an extensive repertoire of utilizable program components is available, both general (see, e.g. T. Christiansen and N. Torkington, Perl Cookbook, 2nd edn, O'Reilly Media, Sebastopol, CA, 2003) and specialized ([www.bioperl.org](http://www.bioperl.org)).
+
+Some of the PERL exercises in the Online Resource Centre involve modifying programs. Such challenges can be more focused than writing programs from scratch. Some of the exercises, problems, and weblems, although not requiring any programming, can be solved more easily by writing short PERL programs. Readers are encouraged to try this approach whenever appropriate.
+
+In addition to PERL, the minimal computing skills essential for a biomedical scientist would include facility with using social media for communication (it is assumed that readers are familiar with Facebook and YouTube, but there are others that are in use for communication among scientists), and the ability to create a website. Studying from this book and the Online Resource
+
+20
+
+---
+
+Centre affords an opportunity to practise these skills. You might, for instance, ‘turn in’ the answers to homework assignments by gathering them into a web page. Questions about statements that you and the other students found unclear in your instructor's lectures—or, conceivably, even in this book could be shared and discussed in a blog. Indeed, there is now a trend to integrating websites and social media. However, there are security issues. Your instructor might be unhappy if everyone copied the answers to the exercises from the first student to post them. A class taught from this book would afford a fine opportunity to explore the possibilities and challenges.
+
+21
+
+---
+
+# PLAN OF THE BOOK
+
+Chapter 1 sets the stage and introduces all of the major players: DNA and protein sequences and structures, genomes and proteomes, databases and information retrieval, the worldwide web, computer programming. Before developing individual topics in detail it is important to see the framework of their interactions.
+• Chapter 2 presents the nature of individual genomes, including the human genome, and the relationships among them, from the biological point of view.
+Chapter 3 describes the current state of the scientific literature as it makes the transition from paper to electronic form. This transition has many consequences, both intellectual and practical. It has had profound effects on research in bioinformatics.
+Chapter 4 imparts basic skills in using the web in bioinformatics. It describes archival databanks and leads the reader through sample sessions involving information retrieval from some of the major archival databases in molecular biology.
+Chapter 5 treats the analysis of relationships among sequences: alignments and phylogenetic trees. These methods underlie some of the major computational challenges of bioinformatics: detecting distant relatives, understanding relationships among genomes of different organisms, and tracing the course of evolution at the species and molecular levels.
+Chapter 6 moves into three dimensions, treating protein structure and folding. Sequence and structure must be seen as full partners, with bioinformatics developing methods for moving back and forth between them as fluently as possible. Understanding protein structures in detail is essential for determining their mechanisms of action, and for clinical and pharmacological applications.
+Chapter 7 introduces systems biology. The key idea of systems biology is integration: how do all the pieces fit together? How do they interact? How do the individual molecules and processes together create a whole that so far transcends the pieces in self-sufficiency?
+Chapter 8 describes metabolic pathways. The activities of individual enzymes are the subject matter of classical biochemistry. Understanding their controls has been a goal of molecular biology, revealing a variety of mechanisms at the levels of transcription, translation, post-translational modifications, and the interaction of inhibitors and allosteric effectors with enzymes themselves. The integration of these controls is a development of systems biology, as a continuation of Chapter 7.
+Chapter 9 deals with gene expression, another development of systems biology. Gene expression is of course a component of metabolism, but gene expression exerts comprehensive control over cell structure and function. Gene expression is involved in responses to stimuli and changes in the cell’s environment, and governs short- and long-term developmental processes.
+
+22
+
+---
+
+## INTRODUCTION TO BIOINFORMATICS ON THE WEB
+
+Bioinformatics is intimately bound up with the worldwide web. This book is closely coordinated with its own website: [http://www.oxfordtextbooks.co.uk/orc/leskbioinf4e/](http://www.oxfordtextbooks.co.uk/orc/leskbioinf4e/).
+
+This site contains:
+
+1. References to all sites mentioned in the book, in context, so that the reader can link to them directly instead of needing to type their locations.
+2. In previous editions, the weblems appeared in the text. These are now in the Online Resource Centre. They have been developed and now feature challenges with a range of difficulties, from relatively straightforward exercises to extended projects.
+3. Higher-quality graphics than could be reproduced in the book, including coloured animations of structural diagrams.
+4. Worldwide web resources, to supplement treatments of specific topics. Some of these sites implement methods, such as sequence alignment, or homology modelling of protein structures. Others provide curated lists of links to other websites specialized to particular subjects, such as expression databases.
+5. In general, all material from the book that the reader would find useful to have in computerreadable form, including data for exercises and problems, and all programs, now appear in the Online Resource Centre.
+
+23
+
+---
+
+## ACKNOWLEDGEMENTS
+
+I am grateful to many colleagues for discussions and advice during the preparation of this book, and to the universities of Uppsala, Umeå, Rome ‘Tor Vergata’, and Cambridge for the opportunity to try out this material.
+
+I thank S. Adhya, D.J. Abraham, S. Aparicio, M.M. Babu, T. Baglin, D. Baker, S. Balaji, M. Bashton, A. Bateman, A. Bench, J.M. Bollinger, V. Bonazzi, M. Brand, A. Brazma, A. Buckle, C. Cantor, R.W. Carrell, C. Chothia, D. Crowther, T. Dafforn, I. Dodd, R.B. Eckhardt, J.G. Ferry, R. Foley, A. Friday, M.B. Gerstein, T. Gibson, J. Irving, B. Jorden, J. Karn, K. Karplus, P. Klappa, A.S. Konagurthu, E.V. Koonin, M. Krichevsky, P. Lawrence, E.L. Lesk, M.E. Lesk, V.E. Lesk, V.I. Lesk, A. Lister, L. Lo Conte, D.A. Lomas, A.D. MacKerell Jr, T. Madden, J. Magré, M. McFall-Ngai, J. McInerney, P. Miller, C. Mitchell, J. Moult, E. Nacheva, C. Notredame, C. Ouzounis, H. Parfrey, D. Parkinson, A. Pastore, M. Peitsch, D. Penny, J. Pettitt, C.A. Praul, F.W. Roberts, G.D. Rose, P.B. Rosenthal, B. Rost, E.J. Simon, M. Segal, O. Skovegaard, E.L. Sonnhammer, R. Srinivasan, R. Staden, J. Sulston, I. Tickle, A. Tramontano, A.A. Travers, A.R. Venkitaraman, G. Vriend, P. Welsch, J.C. Whisstock, M. Wildersten, A.S. Wilkins, S.H. White, V.E. Womble, and E.B. Ziff for advice and critical reading.
+
+A.M.L.
+
+July 2013
+
+24
