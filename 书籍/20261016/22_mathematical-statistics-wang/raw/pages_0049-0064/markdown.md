@@ -1,0 +1,679 @@
+统计中还有多种常用分布, 现罗列出连续总体的概率密度、期望与方差如下:
+
+(1) 指数分布  $Exp(\mu, \lambda)$ ，其概率密度为
+
+$$
+\lambda \mathrm{e} ^ {- \lambda (x - \mu)} I _ {[ \mu , \infty)} (x), \lambda > 0, \mu \in \mathbb {R},
+$$
+
+期望与方差分别为  $\mu + \lambda^{-1}, \lambda^{-2}$ . 为了简单, 记  $\mu = 0$  的指数分布为  $Exp(\lambda)$ .
+
+(2) 双指数分布  $DE(\mu, \lambda)$ ，其概率密度为
+
+$$
+\frac {\lambda}{2} \mathrm{e} ^ {- \lambda | x - \mu |}, \lambda > 0, \mu \in \mathbb {R},
+$$
+
+期望与方差分别为  $\mu, 2/\lambda^{2}$ .
+
+(3) Laplace 分布  $L(\lambda)$ ，其概率密度为
+
+$$
+\lambda \mathrm{e} ^ {- \lambda | x |}, \lambda > 0,
+$$
+
+期望与方差分别为  $0,1/\lambda$ .
+
+(4)  $\beta$  分布  $\mathrm{Beta}(\alpha, \beta)$ ，其概率密度为
+
+$$
+\frac {\Gamma (\alpha + \beta)}{\Gamma (\alpha) \Gamma (\beta)} x ^ {\alpha - 1} (1 - x) ^ {\beta - 1} I _ {(0, 1)} (x), \alpha > 0, \beta > 0,
+$$
+
+期望与方差分别为 $\alpha / (\alpha + \beta), \alpha \beta / [(\alpha + \beta + 1)(\alpha + \beta)^2]$.
+
+(5) Cauchy 分布  $C(\mu, \sigma)$ ，其概率密度为
+
+$$
+\frac {1}{\pi \sigma \left[ 1 + \left(\frac {x - \mu}{\sigma}\right) ^ {2} \right]}, \mu \in \mathbb {R}, \sigma > 0,
+$$
+
+期望与方差均不存在. 称  $C(0,1)$  为标准 Cauchy 分布.
+
+(6) 对数正态分布  $LN(\mu, \sigma^{2})$ ，其概率密度为
+
+$$
+\frac {1}{\sqrt {2 \pi} \sigma} x ^ {- 1} \mathrm{e} ^ {- \frac {(\ln x - \mu) ^ {2}}{2 \sigma^ {2}}} I _ {(0, \infty)} (x), \mu \in \mathbb {R}, \sigma > 0,
+$$
+
+期望与方差分别为 $\mathrm{e}^{\mu +\sigma^2 /2},\mathrm{e}^{2\mu +\sigma^2}\left(\mathrm{e}^{\sigma^2} - 1\right)$
+
+(7) Weibull 分布  $W(\alpha, \beta)$ ，其概率密度为
+
+$$
+\frac {\alpha}{\beta} x ^ {\alpha - 1} \mathrm{e} ^ {- \frac {x ^ {\alpha}}{\beta}} I _ {(0, \infty)} (x), \alpha > 0, \beta > 0,
+$$
+
+期望与方差分别为 $\beta^{\alpha^{-1}}\Gamma (\alpha^{-1} + 1)$ 和 $\beta^{2 / \alpha}\left[\Gamma (2\alpha^{-1} + 1) - [\Gamma (\alpha^{-1} + 1)]^{2}\right].$
+
+(8) Pareto 分布 $Pa(a, \theta)$, 其概率密度为
+
+$$
+\theta a ^ {\theta} x ^ {- (\theta + 1)} I _ {[ a, \infty)} (x), \theta > 0, a > 0,
+$$
+
+期望与方差分别为  $\theta a/(\theta-1)$  (要求  $\theta>1$ ) 和  $\theta a^{2}/[(\theta-1)^{2}(\theta-2)]$  (要求  $\theta>2$ ).
+
+(9) logistic 分布 $LG(\mu, \sigma)$, 其概率密度为
+
+$$
+\frac {1}{\sigma} \frac {\mathrm{e} ^ {- \frac {x - \mu}{\sigma}}}{1 + \mathrm{e} ^ {- \frac {x - \mu}{\sigma}}},
+$$
+
+期望与方差分别为  $\mu,\pi^{2}\sigma^{2}/3$ .
+
+其他一些常用离散总体的概率分布、期望及方差如下:
+
+(1) 几何分布  $G(p)$ ，其概率分布为
+
+$$
+(1 - p) ^ {x - 1} p, \quad x = 1, 2, \dots , \quad p \in [ 0, 1 ],
+$$
+
+其期望与方差分别为 $1 / p$ 和 $(1 - p) / p^2$.
+
+(2) 超几何分布 $HG(r, n, m)$, 其概率分布为
+
+$$
+\frac {\binom {n} {x} \binom {m} {r - x}}{\binom {n + m} {r}}, \quad x = 0, 1, \dots , \min \{r, n \}, r - x \leqslant m,
+$$
+
+其期望与方差分别为 $rn / (n + m)$ 和 $rnm(n + m - r) / [(n + m)^2 (n + m - 1)]$.
+
+(3) 负二项分布  $NB(p, r)$ ，其概率分布为
+
+$$
+\binom {x - 1} {r - 1} p ^ {r} (1 - p) ^ {x - r}, \quad x = r, r + 1, \dots , \quad p \in [ 0, 1 ],
+$$
+
+其期望与方差分别为 r/p 和  $r(1-p)/p^{2}$ .
+
+## 1.4 充分与完全统计量
+
+在结束本章之前, 我们引进两个在估计中非常有用的统计量: 充分统计量、完全统计量.
+
+20 世纪 20 年代初, 在 R. A. Fisher 与天文学家 A. S. Eddington (爱丁顿, 1882—1944) 之间发生了如下争论: 对于 n 个来自正态总体  $N(\mu, \sigma^{2})$  的独立同分布样本  $X_{1}, X_{2}, \cdots, X_{n}$ , 如何估计总体标准差  $\sigma$ . Fisher 主张用样本标准差  $S_{n}$ , 而 Eddington 主张用如下的平均绝对偏差:
+
+$$
+D _ {n} = \sqrt {\frac {\pi}{2}} \frac {1}{n} \sum_ {i = 1} ^ {n} | X _ {i} - \bar {X} |. \tag {1.4.1}
+$$
+
+Fisher 给出的原因是: 样本标准差  $S_{n}$  包含了样本中有关  $\sigma$  的全部信息, 而  $D_{n}$  则没有. 由此, Fisher 于 1922 年提出了充分统计量 (sufficient statistic).
+
+对于一个统计量 $T(X)$, 我们知道 $E[T(X)]$ 是由样本空间 $\mathcal{X}$ 到参数空间 $\Theta$ 的一个映射. 请问, 这个映射是一一对应的吗? 当 $T(X)$ 是完全统计量 (complete statistic) 时, 答案是肯定的.
+
+## 1.4.1 充分统计量
+
+要衡量一个统计量是否把样本中关于参数的所有信息都包含进来, 就要回答两个问题: 一、如何度量样本中关于参数的信息, 二、如何度量统计量是否包含了样本中关于参数的全部信息.
+
+实际上, 关于参数的信息有两部分, 一是总体分布所提供的, 二是样本所提供的. 综合这两部分我们知道, 关于参数的所有信息就包含在样本分布之中. 如果统计量 $T(X)$ 包含了参数的全部信息, 则意味着扣除统计量所包含的信息外, 样本分布中就不再有参数的信息了. 于是, Fisher 给出充分统计量的定义如下:
+
+定义 1.4.1 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体概率分布为  $f(x; \theta)(\theta \in \Theta)$  的样本，称统计量  $T(X)$  为参数  $\theta$  的充分统计量，是指在给定  $T(X)$  下，样本的条件联合分布与参数  $\theta$  无关.
+
+从上述定义可以看出, 充分统计量并不唯一, 且充分统计量的可逆函数, 只要它仍是统计量, 则它也是充分统计量.
+
+例 1.4.1 在例 1.2.1 中, 假设抽样是有返回的, 证明  $\sum_{i=1}^{n} X_{i}$  是次品率参数的充分统计量.
+
+证明 如记 p = M/N，则 n 次抽样所得样本  $X_{1}, X_{2}, \cdots, X_{n}$  就是来自两点分布总体  $B(1, p)$  的独立同分布样本。样本分布及加和统计量  $T(X) = \sum_{i=1}^{n} X_{i}$  的分布分别为
+
+$$
+P (X _ {1} = x _ {1}, X _ {2} = x _ {2}, \dots , X _ {n} = x _ {n}) = p ^ {\sum_ {i = 1} ^ {n} x _ {i}} (1 - p) ^ {n - \sum_ {i = 1} ^ {n} x _ {i}},
+$$
+
+$$
+P (T (X) = t) = \binom {n} {t} p ^ {t} (1 - p) ^ {n - t}.
+$$
+
+于是, 在给定统计量 T = t 下, 样本的条件概率分布为
+
+$$
+\begin{array}{l} P (X _ {1} = x _ {1}, \dots , X _ {n} = x _ {n} | T = t) \\ = \frac {P \left(X _ {1} = x _ {1} , \cdots , X _ {n - 1} = x _ {n - 1} , X _ {n} = t - \sum_ {i = 1} ^ {n - 1} x _ {i}\right)}{P (T = t)} \\ = \frac {p ^ {t} (1 - p) ^ {n - t}}{\binom{n}{t} p ^ {t} (1 - p) ^ {n - t}} = \binom{n}{t} ^ {- 1}, \\ \end{array}
+$$
+
+它与参数 p 无关.
+
+在例 1.4.1 中, 当 n > 2 时, 如果采用统计量  $T_{1}(X) = X_{1} + X_{2}$ , 则由于
+
+$$
+\begin{array}{l} P (X _ {1} = x _ {1}, \dots , X _ {n} = x _ {n} | T _ {1} = t) \\ = \frac {P (X _ {1} = x _ {1} , X _ {2} = t - x _ {1} , X _ {3} = x _ {3} , \cdots , X _ {n} = x _ {n})}{P (T _ {1} = t)} \\ = \frac {p ^ {t + \sum_ {i = 3} ^ {n} x _ {i}} (1 - p) ^ {n - t - \sum_ {i = 3} ^ {n} x _ {i}}}{\binom{2}{t} p ^ {t} (1 - p) ^ {2 - t}} \\ \end{array}
+$$
+
+与 p 有关, 则说明  $T_{1}(X)$  不是充分统计量.
+
+例 1.4.2 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自 Poisson(泊松) 分布  $P(\lambda)$  的独立同分布样本，证明  $T = \sum_{i=1}^{n} X_{i}$  是  $\lambda$  的充分统计量.
+
+证明 由 Poisson 分布的可加性知, $T = \sum_{i=1}^{n} X_i \sim P(n\lambda)$, 故当 $T = t$ 时, 样本的条件概率分布为
+
+$$
+\begin{array}{l} P (X _ {1} = x _ {1}, \dots , X _ {n} = x _ {n} | T = t) \\ = \frac {P (X _ {1} = x _ {1}) \cdots P (X _ {n - 1} = x _ {n - 1}) P \left(X _ {n} = t - \sum_ {i = 1} ^ {n - 1} x _ {i}\right)}{P (T = t)} \\ = \frac {\left(\prod_ {j = 1} ^ {n - 1} \frac {\lambda^ {x _ {j}} \mathrm{e} ^ {- \lambda}}{x _ {j} !}\right) \frac {\lambda^ {t - \sum_ {i = 1} ^ {n - 1} x _ {i}} \mathrm{e} ^ {- \lambda}}{\left(t - \sum_ {i = 1} ^ {n - 1} x _ {i}\right) !}}{\frac {(n \lambda) ^ {t}}{t !} \mathrm{e} ^ {- n \lambda}} \\ = \frac {t !}{\prod_ {j = 1} ^ {n - 1} x _ {j} ! \left(t - \sum_ {i = 1} ^ {n - 1} x _ {i}\right) !} \frac {1}{n ^ {t}}, \\ \end{array}
+$$
+
+与  $\lambda$  无关, 故 T 是充分统计量.
+
+例 1.4.3 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自正态总体  $N(\mu, 1)$  的独立同分布样本, 证明  $T(X) = \sum_{i=1}^{n} X_{i}$  是  $\mu$  的充分统计量.
+
+证明 由于此时总体分布是连续的, 故不易直接计算条件分布. 为此, 作正交变换  $\boldsymbol{Y} = (Y_{1}, Y_{2}, \cdots, Y_{n})^{\mathrm{T}} = \boldsymbol{C}\boldsymbol{X}$ , 其中 C 是第一行为  $(1/\sqrt{n}, 1/\sqrt{n}, \cdots, 1/\sqrt{n})$  的正交矩阵,  $\boldsymbol{X} = (X_{1}, X_{2}, \cdots, X_{n})^{\mathrm{T}}$ . 此时,  $Y_{1} = T(X)/\sqrt{n}$ , 且  $Y_{1}, Y_{2}, \cdots, Y_{n}$  独立,  $Y_{i} \sim N(0,1), 2 \leqslant i \leqslant n$ . 由此可知, 在给定  $T(X)$  即  $Y_{1}$  的条件下,  $(Y_{2}, Y_{3}, \cdots, Y_{n})$  的条件分布与  $\mu$  无关. 由于正交矩阵 C 与  $\mu$  无关, 故知  $X_{1}, X_{2}, \cdots, X_{n}$  在给定  $T(X)$  下的条件分布也与  $\mu$  无关, 即得证. □
+
+从上述三个例子可以看出, 相较于离散总体, 关于连续总体的充分统计量的验证就要麻烦许多, 即使是离散总体, 其计算也较复杂. 为了更加容易验证一个统计量是否为充分的, 下面的因子分解定理就非常有用.
+
+定理 1.4.1（因子分解定理 (factorization theorem)）设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体概率分布为  $f(x; \theta)$  的样本，则统计量  $T(X)$  为充分统计量的充要条件是:样本分布  $f(x_{1}, x_{2}, \cdots, x_{n}; \theta)$  可如下分解:
+
+$$
+f (x _ {1}, x _ {2}, \dots , x _ {n}; \theta) = g _ {\theta} (T (x _ {1}, x _ {2}, \dots , x _ {n})) \cdot h (x _ {1}, x _ {2}, \dots , x _ {n}), \tag {1.4.2}
+$$
+
+其中  $h(x_{1},x_{2},\cdots,x_{n})$  不依赖于参数  $\theta$ .
+
+证明 为简单, 这里仅考虑总体分布连续的证明, 且在不引起混淆的情况下, 以 X 记样本  $X_{1}, X_{2}, \cdots, X_{n}$ . 假设统计量  $T(\boldsymbol{X}) = (T_{1}(\boldsymbol{X}), T_{2}(\boldsymbol{X}), \cdots, T_{k}(\boldsymbol{X}))$ ,  $W(\boldsymbol{X}) = (W_{1}(\boldsymbol{X}), W_{2}(\boldsymbol{X}), \cdots, W_{n-k}(\boldsymbol{X}))$ , 其中 k < n, 且要求变换
+
+$$
+(X _ {1}, X _ {2}, \dots , X _ {n}) \rightarrow (T _ {1} (\boldsymbol {X}), T _ {2} (\boldsymbol {X}), \dots , T _ {k} (\boldsymbol {X}), W _ {1} (\boldsymbol {X}), W _ {2} (\boldsymbol {X}), \dots , W _ {n - k} (\boldsymbol {X})) (* 1)
+$$
+
+是一对一的. 如以 J 记上述变换的 Jacobi 行列式的绝对值, 以  $H(t,w)$  表示 (1.4.2) 式中的  $h(x_{1},x_{2},\cdots,x_{n})/J$ , 则  $(T,W)$  的概率密度函数为  $g_{\theta}(t)H(t,w)$ . 由此可求得给定 T 时, W 的条件概率密度为
+
+$$
+f _ {W | T} (w) = \frac {g _ {\theta} (t) H (t , w)}{\int_ {\mathbb {R} ^ {n - k}} g _ {\theta} (t) H (t , w) \mathrm{d} w} = \frac {H (t , w)}{\int_ {\mathbb {R} ^ {n - k}} H (t , w) \mathrm{d} w}. \tag {*2}
+$$
+
+下证充分性:
+
+由前述可知, $\forall t_{1},t_{2},\cdots,t_{k}$ ，如记
+
+$$
+B (t) = \{\boldsymbol {X} \in \mathcal {X}: T (\boldsymbol {X}) = (t _ {1}, t _ {2}, \dots , t _ {k}) \},
+$$
+
+则在集合  $B(t)$  内, X 与  $W(X)$  也一一对应. 因此, 要确定给定  $T(X)$  下, X 的条件分布与参数  $\theta$  无关, 只需确定在给定  $T(X)$  下,  $W(X)$  的分布与参数  $\theta$  无关即可.
+
+由 $(*)2)$ 式可知, 当样本分布满足 $(1.4.2)$ 式的形式时, 给定 T 下, W 的条件分布与参数  $\theta$  无关, 于是,  $T(X)$  即为充分统计量.
+
+下证必要性:
+
+设 $T(X)$ 为充分统计量, 且记 $G(t, w)$ 为给定 $T$ 下 $W$ 的条件概率密度. 由充分统计量定义知, $G(t, w)$ 与 $\theta$ 无关. 如记 $g_{\theta}(t)$ 为 $T$ 的概率密度, 则知 $(T, W)$ 的联合概率密度为
+
+$$
+f _ {(T, W)} (t, w) = g _ {\theta} (t) G (t, w).
+$$
+
+如通过变换  $(*1)$  式, 把  $G(t,w)$  表示为  $h_{1}(x_{1},x_{2},\cdots,x_{n})$ , 且利用密度变换公式, 则可求得样本分布为
+
+$$
+f (x _ {1}, x _ {2}, \dots , x _ {n}; \theta) = f _ {(T, W)} (t, w) J = g _ {\theta} (x _ {1}, x _ {2}, \dots , x _ {n}) h _ {1} (x _ {1}, x _ {2}, \dots , x _ {n}) J.
+$$
+
+如记  $h_{1}(x_{1},x_{2},\cdots,x_{n})J=h(x_{1},x_{2},\cdots,x_{n})$ ，由于它与  $\theta$  无关，则结论得证.
+
+注 1.4.1 Fisher (1922) 首先给出此定理, Halmos et al. (1949) 给出了其一般形式及严格数学证明. 上述定理的证明来自陈希孺等 (2009), 其一般形式的严格证明参见陈希孺 (2009).
+
+例 1.4.4 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自正态总体  $N(\mu, \sigma^{2})$  的独立同分布样本, 求其充分统计量.
+
+解 此时, 样本分布为
+
+$$
+\begin{array}{l} f (\boldsymbol {x}; \mu , \sigma^ {2}) = (2 \pi \sigma^ {2}) ^ {- n / 2} \exp \left\{- \frac {\sum_ {i = 1} ^ {n} (x _ {i} - \mu) ^ {2}}{2 \sigma^ {2}} \right\} \\ = (2 \pi \sigma^ {2}) ^ {- n / 2} \exp \left\{- \frac {\sum_ {i = 1} ^ {n} x _ {i} ^ {2}}{2 \sigma^ {2}} + \frac {\mu \sum_ {i = 1} ^ {n} x _ {i}}{\sigma^ {2}} - \frac {n \mu^ {2}}{2 \sigma^ {2}} \right\}. \\ \end{array}
+$$
+
+由因子分解定理可知, 当  $\sigma^{2}$  已知时,  $\sum_{i=1}^{n} X_{i}$  为充分统计量, 这与例 1.4.3 的结论一致; 当  $\mu, \sigma^{2}$  均未知时,  $\left(\sum_{i=1}^{n} X_{i}, \sum_{i=1}^{n} X_{i}^{2}\right)$  为充分统计量. ☐
+
+由上例可知, $(n - 1)S_{n}^{2} = \sum_{i=1}^{n} X_{i}^{2} - n\bar{X}^{2}$ 为充分统计量的函数, 这即是本节开始时提到的 Fisher 的观点.
+
+例 1.4.5 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自均匀分布  $U(0, \theta)$  的独立同分布样本, 求  $\theta$  的充分统计量.
+
+解 此时样本分布为
+
+$$
+f _ {\theta} (\pmb {x}) = \left\{ \begin{array}{l l} {\theta^ {- n},} & {\max \{x _ {1}, x _ {2}, \dots , x _ {n} \} <   \theta ,} \\ {0,} & {\text {否则}.} \end{array} \right.
+$$
+
+如记  $t = \max\{x_{1}, x_{2}, \cdots, x_{n}\}$ ，则上式可改写为
+
+$$
+f _ {\theta} (\boldsymbol {x}) = \frac {1}{\theta^ {n}} I _ {(0, \theta)} (t),
+$$
+
+则由因子分解定理可知, $T=X_{(n)}$ 即为 $\theta$ 的充分统计量.
+
+例 1.4.6 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自均匀分布  $U\left(-\frac{1}{2} + \theta, \frac{1}{2} + \theta\right)$  的独立同分布样本, 求  $\theta$  的充分统计量.
+
+解 此时样本分布为
+
+$$
+f _ {\theta} (\boldsymbol {x}) = \prod_ {i = 1} ^ {n} I _ {(- \frac {1}{2} + \theta , \frac {1}{2} + \theta)} (x _ {i}) = I _ {(x _ {(n)} - \frac {1}{2}, x _ {(1)} + \frac {1}{2})} (\theta),
+$$
+
+故由因子分解定理可知, $(X_{(1)},X_{(n)})$ 是 $\theta$ 的充分统计量.
+
+此例说明, 一维参数的充分统计量并不一定是一维的. 另外, 从充分统计量定义或因子分解定理可知, 充分统计量不唯一. 为此, 我们引入最小充分统计量的定义.
+
+定义 1.4.2(最小充分统计量) 设 T 为充分统计量, 如果对于任何一个充分统计量 S, 都存在一一映射  $\psi$ , 使得  $T = \psi(S)$ , 则称统计量 T 为最小充分统计量.
+
+从上述定义可以看出, 在一一映射相等的条件下, 最小充分统计量是唯一的.
+
+例 1.4.7 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自均匀分布  $U(\theta, \theta+1)$  的独立同分布样本,  $\theta \in R$  为参数, 且 n > 1. 证明  $(X_{(1)}, X_{(n)})$  是最小充分统计量.
+
+证明 此时样本分布为
+
+$$
+f _ {\theta} (\boldsymbol {x}) = \prod_ {i = 1} ^ {n} I _ {(\theta , \theta + 1)} (x _ {i}) = I _ {(x _ {(n)} - 1, x _ {(1)})} (\theta),
+$$
+
+则由因子分解定理知, $T=(X_{(1)},X_{(n)})$ 为充分统计量,且
+
+$$
+x _ {(1)} = \sup \{\theta : f _ {\theta} (\boldsymbol {x}) > 0 \}, x _ {(n)} = 1 + \inf \{\theta : f _ {\theta} (\boldsymbol {x}) > 0 \}.
+$$
+
+设 $S(X)$ 为 $\theta$ 的任一充分统计量, 则由因子分解定理知, 存在两个函数 $h, g_{\theta}$, 使得
+
+$$
+f _ {\theta} (\boldsymbol {x}) = g _ {\theta} (S (\boldsymbol {x})) h (\boldsymbol {x}).
+$$
+
+由于对于任一满足  $h(\boldsymbol{x}) > 0$  的 x, 有
+
+$$
+x _ {(1)} = \sup \{\theta : g _ {\theta} (S (\boldsymbol {x})) > 0 \}, x _ {(n)} = 1 + \inf \{\theta : g _ {\theta} (S (\boldsymbol {x})) > 0 \}.
+$$
+
+故当 $h(\pmb{x}) > 0$ 时，存在可测函数 $\phi$ ，使得 $T(\pmb{x}) = \phi (S(\pmb{x}))$ .由于 $P(h(\pmb {X}) > 0) = 1,$ 故$T$ 是最小充分统计量. □
+
+定理1.4.2 设总体 $X$ 的概率分布为 $f(x;\theta) = g_{\theta}(T(x))h(x)$，且满足:如果由存在不依赖于 $\theta$ 的常数 $c(x,y)$ 使得 $f(x;\theta) = c(x,y)f(y;\theta)$，就可推出 $T(x) = T(y)$，则 $T(X)$ 是 $\theta$ 的最小充分统计量.
+
+证明 设  $T'$  为一充分统计量, 则由因子分解定理知,
+
+$$
+f (\boldsymbol {x}; \theta) = \tilde {g} _ {\theta} (T ^ {\prime} (\boldsymbol {x})) \tilde {h} (\boldsymbol {x}).
+$$
+
+如果 T 不是最小充分统计量，即 T 不是  $T'$  的函数，则存在两组样本点  $x_{0}, y_{0}$ ，使得  $T'(\boldsymbol{x}_{0}) = T'(\boldsymbol{y}_{0})$ ，但是  $T(\boldsymbol{x}_{0}) \neq T(\boldsymbol{y}_{0})$ .
+
+由于 $T^{\prime}(\pmb{x}_0) = T^{\prime}(\pmb{y}_0)$，故存在不依赖于 $\theta$ 的常数 $c(\pmb{x}_0, \pmb{y}_0)$，使得
+
+$$
+f (\boldsymbol {x} _ {0}; \theta) = \tilde {g} _ {\theta} (T ^ {\prime} (\boldsymbol {x} _ {0})) \tilde {h} (\boldsymbol {x} _ {0}) = c (\boldsymbol {x} _ {0}, \boldsymbol {y} _ {0}) \tilde {g} _ {\theta} (T ^ {\prime} (\boldsymbol {y} _ {0})) \tilde {h} (\boldsymbol {y} _ {0}) = c (\boldsymbol {x} _ {0}, \boldsymbol {y} _ {0}) f (\boldsymbol {y} _ {0}; \theta),
+$$
+
+于是，由已知条件有 $T(\pmb{x}_0) = T(\pmb{y}_0)$. 矛盾.
+
+□
+
+例 1.4.8 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自双指数分布  $DE(\theta, 1)$  的独立同分布样本, 其中  $\theta \in R$ . 证明次序统计量  $(X_{(1)}, X_{(2)}, \cdots, X_{(n)})$  是最小充分统计量.
+
+证明 此时, 样本分布为
+
+$$
+f (\boldsymbol {x}; \theta) = \frac {1}{2 ^ {n}} \exp \left\{- \sum_ {i = 1} ^ {n} | x _ {i} - \theta | \right\}.
+$$
+
+由因子分解定理可知, 次序统计量  $(X_{(1)}, X_{(2)}, \cdots, X_{(n)})$  是充分统计量, 下证它是最小的. 假设存在常数  $c(\boldsymbol{x}, \boldsymbol{y})$ , 使得
+
+$$
+f (\pmb {x}; \theta) = c (\pmb {x}, \pmb {y}) f (\pmb {y}; \theta), \text {即} \sum_ {i = 1} ^ {n} | x _ {i} - \theta | = c _ {0} (\pmb {x}, \pmb {y}) + \sum_ {i = 1} ^ {n} | y _ {i} - \theta |,
+$$
+
+其中  $c_{0}(\boldsymbol{x},\boldsymbol{y})=-\ln(c(\boldsymbol{x},\boldsymbol{y}))$  。由于上述函数都是  $\theta$  的分段线性函数，而斜率仅依赖于每个次序统计量中的两个，且递增。注意到如果 x,y 有相同的次序统计量，则二者的差仅是一个常数  $c_{0}(\boldsymbol{x},\boldsymbol{y})$  。因此，由上面定理知，次序统计量是最小充分统计量。☐
+
+## 1.4.2 完全统计量
+
+完全统计量是 E. L. Lehmann (莱曼, 1917—2009) 和 H. Scheffé (谢费, 1907—1977) 提出的, 参见 Lehmann et al. (1950, 1955). 有文献也称之为完备统计量, 它类似于泛函分析中函数系的完全性概念.
+
+定义 1.4.3 设  $X_{1}, X_{2}, \cdots, X_{n}$  是来自某参数总体的样本，参数  $\theta \in \Theta$ . 统计量  $T(X)$  如满足:对任何满足条件
+
+$$
+E _ {\theta} [ g (T (X)) ] = 0, \forall \theta \in \Theta
+$$
+
+的统计量  $g(T)$ ，都有
+
+$$
+P _ {\theta} (g (T (X)) = 0) = 1, \forall \theta \in \Theta ,
+$$
+
+则称之为完全统计量.
+
+在统计中, 还有如下的完全分布族的概念:
+
+定义 1.4.4 对于总体 X, 参数  $\theta \in \Theta$ , 如果对于任一函数  $\psi(x)$ , 由
+
+$$
+E _ {\theta} [ \psi (X) ] = 0, \forall \theta \in \Theta ,
+$$
+
+总可推出  $P_{\theta}(\psi(X)=0)=1$ ，则称此总体分布族是完全的。
+
+从上述两个定义可以看出, 统计量  $T(X)$  的完全性, 与此统计量的抽样分布族的完全性等价. 另外, 如果上述定义中的函数 g 是有界的, 那么称统计量 T 是有界完全的或其分布族是有界完全的. 显然, 一个完全统计量肯定是有界完全的, 但反之不一定成立.
+
+例 1.4.9 考虑二项分布族  $\{B(n,p):0<p<1\}$  的完全性.
+
+解 设函数 $\psi (x)$ 满足
+
+$$
+E _ {p} [ \psi (X) ] = \sum_ {x = 0} ^ {n} \psi (x) \binom{n}{x} p ^ {x} (1 - p) ^ {n - x} = 0, \forall 0 <   p <   1.
+$$
+
+令 $\theta = p / (1 - p)$, 则 $\theta > 0$, 且上式可以写成
+
+$$
+\sum_ {x = 0} ^ {n} \psi (x) \binom{n}{x} \theta^ {x} = 0, \forall \theta > 0.
+$$
+
+由于上式左边是  $\theta$  的一个 n 次多项式, 故有  $\psi(x)=0, x=0,1,\cdots,n$ , 故二项分布族是完全的. □
+
+例 1.4.10 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自均匀分布  $U(0, \theta)$  的独立同分布样本, 证明其充分统计量  $T_{n} = X_{(n)}$  的完全性.
+
+证明 由于统计量 $T_{n}$ 的概率密度为
+
+$$
+f (t; \theta) = {\left\{ \begin{array}{l l} {{\frac {n t ^ {n - 1}}{\theta^ {n}}},} & {0 <   t <   \theta ,} \\ {0,} & {{\text {否则}},} \end{array} \right.}
+$$
+
+又设  $\psi(T)$  满足  $E_{\theta}[\psi(T)]=0,\forall\theta>0,$  即
+
+$$
+\int_ {0} ^ {\theta} \psi (t) f (t; \theta) \mathrm{d} t = 0, \forall \theta > 0,
+$$
+
+即
+
+$$
+\int_ {0} ^ {\theta} \psi (t) t ^ {n - 1} \mathrm{d} t = 0, \forall \theta > 0,
+$$
+
+两边关于  $\theta$  求导, 有
+
+$$
+\psi (\theta) \theta^ {n - 1} = 0, \forall \theta > 0,
+$$
+
+即
+
+$$
+\psi (\theta) = 0, \forall \theta > 0,
+$$
+
+所以, 均匀分布族  $U(0,\theta)$  的充分统计量  $T_{n}=X_{(n)}$  是完全的.
+
+定理 1.4.3 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自指数型分布 (1.3.6) 的独立同分布样本, 则
+
+(1) $T(X)=\left(\sum_{i=1}^{n}b_{1}(X_{i}),\sum_{i=1}^{n}b_{2}(X_{i}),\cdots,\sum_{i=1}^{n}b_{q}(X_{i})\right)$ 是充分统计量.
+(2) 如果其自然参数空间 G 包含一个开集, 则  $T(X)$  也是完全的.
+
+证明请参见陈希孺 (1997).
+
+例 1.4.11 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自 Poisson 分布  $P(\lambda)$  的独立同分布样本, 证明  $\sum_{i=1}^{n} X_{i}$  是充分完全统计量.
+
+证明 由 Poisson 分布的可加性知, 统计量 $T = \sum_{i=1}^{n} X_i \sim P(n\lambda)$, 且其概率分布为
+
+$$
+P (T = t) = \frac {(n \lambda) ^ {t}}{t !} \mathrm{e} ^ {- n \lambda} = \mathrm{e} ^ {- n \lambda} \exp \{t \ln (n \lambda) \} / t!, t = 0, 1, \dots .
+$$
+
+如令  $\eta=\ln(n\lambda)$ ，则知  $T(X)$  的分布是指数型分布，且由于其自然参数空间
+
+$$
+\mathcal {G} = \{\eta : \eta = \ln (n \lambda), \lambda > 0 \} = \mathbb {R},
+$$
+
+故由定理 1.4.3 知, 统计量  $T = \sum_{i=1}^{n} X_{i}$  是充分完全的.
+
+充分完全统计量在参数估计中, 以及假设检验中均有很好的应用. 另外, 关于充分完全统计量的应用还有一个非常著名的 Basu(巴苏) 定理 (Basu, 1955). 为此, 我们先引入如下定义.
+
+定义 1.4.5(辅助统计量) 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自某参数分布的样本, 参数为  $\theta$ . 如果统计量  $T(X)$  的分布与参数  $\theta$  无关, 则称之为辅助统计量.
+
+定理 1.4.4 (Basu 定理) 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自某参数分布的样本, 参数为  $\theta$ . 设  $T(X)$  为充分且有界完全统计量,  $S(X)$  为辅助统计量, 则统计量  $T(X)$  与  $S(X)$  独立.
+
+证明 为证 $T$ 与 $S$ 独立, 仅需证明
+
+$$
+P (S (X) \in B | T (X) = t) = P (S (X) \in B), \forall B. \tag {*1}
+$$
+
+因为 T 是充分统计量, S 是辅助统计量, 所以上式中左右端的概率均与  $\theta$  无关. 如记  $C = \{X : S(X) \in B\}$ , 则上式可以写为
+
+$$
+P (X \in C | T = t) = P (X \in C),
+$$
+
+它等价于下式
+
+$$
+E [ I _ {C} (X) | T (X) = t ] = P (X \in C) \stackrel {\text {记为}} {=} \alpha . \tag {*2}
+$$
+
+其中  $\alpha$  仅与 C 有关, 与  $\theta$  无关. 为此, 我们令
+
+$$
+h (T) = E [ I _ {C} (X) | T (X) = t ] - \alpha .
+$$
+
+显然, 它是一个统计量, 且可以求得其期望为零, 即
+
+$$
+E _ {\theta} (h (T)) = 0, \forall \theta \in \Theta ,
+$$
+
+则因为 T 是完全统计量, 可知  $h(T)=0$ , 即  $(*2)$  式成立.
+
+□
+
+例 1.4.12 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自  $N(\mu, \sigma^{2})$  的样本，如果  $g(x_{1}, x_{2}, \cdots, x_{n})$  满足平移不变性，即任给 c， $g(x_{1} + c, x_{2} + c, \cdots, x_{n} + c) = g(x_{1}, x_{2}, \cdots, x_{n})$ ，证明  $g(x_{1}, x_{2}, \cdots, x_{n})$  与  $\bar{X}$  独立.
+
+证明 当 $\sigma$ 已知时, 易证 $\bar{X}$ 是 $\mu$ 的充分完全统计量. 由于 $g$ 的平移不变性, 如取 $c = -\mu$, 则知 $g(X)$ 为辅助统计量, 故由 Basu 定理知二者独立. 由于上述对任给的 $\sigma$ 都成立, 故结论得证.
+
+## 习题一
+
+1. 证明例 1.2.3 中的 (1.2.10) 式.
+2. 设 X 的累积分布为  $F(x)$ ，且 F 连续，证明: $F(X) \sim U(0,1)$ .
+3. 设  $X \sim U(0,1)$ ，且 F 为一累积分布函数。定义  $Y = F^{-1}(X)$ ，证明:Y 的累积分布为 F，其中  $F^{-1}(t) = \inf\{x : F(x) \geqslant t\}$ .
+4. 设 X, Y 独立同分布, 证明:  $E|X + Y| \geqslant E|X|$ .
+5. 设 $X, Y$ 为两随机变量, 证明: $(1)E[E(X|Y)] = E(X)$. (2) 对于任一可测函数 $g$, 如 $E[X^2] < \infty, E[g^2(Y)] < \infty$, 则 $E[X - E(X|Y)]^2 = \min_g E[X - g(Y)]^2$.
+6. 设 $X$ 为一随机变量, $g(x)$ 为给定函数, 且 $E[g(X) - \theta]^2$ 在 $\theta \in [a, b]$ 上存在. 定义
+
+$$
+S (x) = \left\{ \begin{array}{l l} a, & g (x) <   a, \\ g (x), & a \leqslant g (x) \leqslant b, \\ b, & g (x) > b. \end{array} \right.
+$$
+
+证明: $E[S(X)-\theta]^{2}\leqslant E[g(X)-\theta]^{2},\quad\forall\theta\in[a,b].$
+
+7. 设  $E(X) = E(Y) = 0, E(X^{2}) = E(Y^{2}) = 1, E(XY) = \rho.$  证明如下的二元 Chebyshev(切比雪夫) 不等式: 对任一 a > 0,
+
+$$
+P (\max \{| X |, | Y | \} \geqslant a) \leqslant \frac {1 + \sqrt {1 - \rho^ {2}}}{a ^ {2}}.
+$$
+
+8. 设 X, Y 独立, 且均服从标准正态分布, 求 Z = Y / X 的概率密度.
+9. 设 $X_{1}, X_{2}, X_{3}$ 相互独立, 且服从 $N(0, \sigma^{2})$. 证明: $(1)(X_{1} + X_{2}X_{3}) / \sqrt{1 + X_{2}^{2}} \sim N(0, \sigma^{2})$; (2) $X_{1} / X_{2}$ 与 $X_{1}^{2} + X_{2}^{2} + X_{3}^{2}$ 独立.
+10. 对于 n 个样本  $X_{1}, X_{2}, \cdots, X_{n}$ ，记  $\bar{X}_{m} = \frac{1}{m} \sum_{i=1}^{m} X_{i}, T_{m} = \sum_{i=1}^{m} (X_{i} - \bar{X}_{m})^{2}$ . 证明:
+
+$$
+T _ {m} = T _ {m - 1} + \frac {m - 1}{m} (X _ {m} - \bar {X} _ {m - 1}) ^ {2}.
+$$
+
+11. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体 X 的独立同分布样本，对于  $m \leqslant n$ ，记  $T_{m} = \sum_{i=1}^{m} X_{i}$ 。证明: $(X_{i}, T_{m})$  的分布与 i 无关。
+12. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自两点分布  $B(1, \theta)$  的独立同分布样本, 其中  $\theta \in (0, 1)$ .
+求在给定  $\sum_{i=1}^{n}X_{i}$  下,  $X_{1}(1-X_{2})$  的条件分布.
+13. 设 $(X_{1}, X_{2})$ 的概率分布为 $f_{X}(x_{1}, x_{2})$. 记 $g(x) = (x_{1}, x_{1} + x_{2}), h(x) = (x_{1} / x_{2}, x_{2})$. 证明: (1) $g(X)$ 的概率分布为 $f_{g}(x_{1}, y) = f_{X}(x_{1}, y - x_{1})$; (2) $h(X)$ 的概率分布为 $f_{h}(z, x_{2}) = |x_{2}|f_{X}(zx_{2}, x_{2})$; (3) 如 $X_{1}, X_{2}$ 独立, 且均服从标准正态分布, 则 $Z = X_{1} / X_{2} \sim C(0, 1)$, 其中 $C(0, 1)$ 为标准 Cauchy 分布.
+14. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体 X 的独立同分布样本，且总体 X 关于常数 c 对称，即 X - c 与  $-X + c$  同分布。证明:(1)  $E(X) = c$ ; (2)  $\mathrm{Cov}(\bar{X}; S_{n}^{2}) = 0$ ; (3) 如设总体 X 连续，且记  $f_{i}(x)$  为第 i 个次序统计量的概率密度，则  $f_{i}(x + c) = f_{n-i+1}(c - x)$ ,  $\forall x \in R, i = 1, 2, \cdots, n$ .
+15. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体  $N(\mu, 1)$  的独立同分布样本，以  $\Phi(x)$  记标准正态分布的累积分布，求 a，使得  $E[a\Phi(\bar{X})] = \Phi(\mu)$ .
+16. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自指数分布  $Exp(\lambda)$  的独立同分布样本, 记  $T_{n} = \sum_{i=1}^{n} X_{i}$ , 以  $f_{n}(x; \lambda)$  记  $T_{n}$  的概率密度, 证明:
+
+$$
+f _ {n} (x; \lambda) = \int_ {\infty} ^ {\lambda} \lambda \mathrm{e} ^ {- (x - y)} f _ {n - 1} (y; \lambda) \mathrm{d} y,
+$$
+
+并由此求  $\bar{X}$  的概率密度.
+
+17. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体累积分布为 F 的独立同分布样本，对于  $1 \leqslant i < j \leqslant n$ ，求  $X_{(j)} - X_{(i)}$  的累积分布，并由此给出极差  $R = X_{(n)} - X_{(1)}$  的累积分布。如总体  $X \sim U(0,1)$ ，则给出具体表达式。（提示:令  $U = X_{(i)}, V = X_{(j)} - X_{(i)}$ .）
+18. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体 X 的独立同分布样本, 且总体累积分布  $F(x)$  连续. 记其次序统计量为  $X_{(1)} \leqslant X_{(2)} \leqslant \cdots \leqslant X_{(n)}$ , 定义
+
+$$
+\bar {F} (x) = [ F (x) - F (x _ {(1)}) ] / [ 1 - F (x _ {(1)}) ] I _ {(x _ {(1)}, \infty)} (x).
+$$
+
+证明:在给定  $X_{(1)} = x_{(1)}$  的条件下， $X_{(2)}, X_{(3)}, \cdots, X_{(n)}$  的条件分布即为从  $\bar{F}$  中抽取的 n - 1 个独立同分布样本的次序统计量的分布.
+
+19. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自指数分布  $Exp(1)$  的独立同分布样本，证明: $nX_{(1)}$ ， $(n-1)[X_{(2)}-X_{(1)}], \cdots, (n-r+1)[X_{(r)}-X_{(r-1)}], \cdots, X_{(n)}-X_{(n-1)}$  仍为来自  $Exp(1)$  的独立同分布样本.
+20. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体累积分布为 F 的独立同分布样本，且 F 连续，
+
+证明:
+
+$$
+E [ F (X _ {(i)}) ] = \frac {i}{n + 1}, \operatorname{Var} [ F (X _ {(i)}) ] = \frac {i (n + 1 - i)}{(n + 1) ^ {2} (n + 2)}.
+$$
+
+21. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自 Weibull 分布  $W(\alpha, \beta)$  的独立同分布样本, 证明:  $X_{(1)}$  仍服从 Weibull 分布.
+22. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体 X 的独立同分布样本，总体 X 服从指数分布  $Exp(a, b)$ . 考虑定数截尾试验，即对于事先给定的正整数 r，当事件  $X_{(r)}$  发生时试验停止. 记  $T_{1} = nX_{(1)}, T_{2} = \sum_{i=1}^{r}[X_{(i)} - X_{(1)}] + (n - r)X_{(r)}$ ，证明: $T_{1}, T_{2}$  独立，且  $T_{1} \sim Exp(na, b), 2bT_{2} \sim \chi^{2}(2r - 2)$ .
+23. 设 $X \sim \chi^2(n)$, 证明: 当 $n \to \infty$ 时, $(X - n) / \sqrt{2n} \xrightarrow{\mathrm{d}} N(0,1)$. 利用此结果, 给出 $\chi^2(n)$ 的 $p$ 分位数 $\chi_p^2(n)$ 与标准正态分布的 $p$ 分位数 $u_p$ 间的近似关系.
+24. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自某总体  $X \sim F$  的独立同分布样本，且  $E(X) = \mu$ ， $\text{Var}(X) = \sigma^{2}$ 。记  $T_{n} = \frac{\sqrt{n}(\bar{X} - \mu)}{\sigma}$ ，则在某些连续性假设下，证明: $T_{n}$  的分布函数可展开成如下形式:
+
+$$
+\varPhi (x) - \phi (x) \left\{\frac {\gamma_ {1}}{6 \sqrt {n}} H _ {2} (x) + \frac {1}{n} \left[ \frac {\gamma_ {2}}{2 4} H _ {3} (x) + \frac {\gamma_ {1} ^ {2}}{7 2} H _ {5} (x) \right] + r _ {n} \right\},
+$$
+
+其中  $\gamma_{1}, \gamma_{2}$  分别为总体 X 的偏度与峰度,  $r_{n} = o(n^{-1})$ ,  $H_{r}(\cdot)$  为 r 阶 Hermite(埃尔米特) 多项式, 其定义如下:  $\frac{\mathrm{d}^{r}(\mathrm{e}^{-x^{2}/2})}{\mathrm{d}x^{r}} = (-1)^{r}H_{r}(x)\mathrm{e}^{-x^{2}/2}$ . 上述展开式被称为 Edgeworth(埃奇沃思) 展开. 由上述 Edgeworth 展开, 请验证:  $T_{n}$  的  $\alpha$  分位数可近似为
+
+$$
+u _ {\alpha} + \frac {\gamma_ {1}}{6 \sqrt {n}} (u _ {\alpha} ^ {2} - 1) + \frac {\gamma_ {2}}{2 4 n} (u _ {\alpha} ^ {3} - 3 u _ {\alpha}) - \frac {\gamma_ {1} ^ {2}}{3 6 n} (2 u _ {\alpha} ^ {3} - 5 u _ {\alpha}) + r _ {n},
+$$
+
+其中  $u_{\alpha}$  为标准正态分布的  $\alpha$  分位数, 且上述展开式被称为 Cornish-Fisher(科尼什-费希尔) 展开.
+
+25. 设  $X_{1}, X_{2}, \cdots, X_{m}$  和  $Y_{1}, Y_{2}, \cdots, Y_{n}$  为分别来自正态总体  $N(\mu, \sigma_{1}^{2})$  和  $N(\mu, \sigma_{2}^{2})$  的独立同分布样本，且全样本独立，记  $S_{1x}^{2}, S_{2y}^{2}$  分别为两组样本方差， $\alpha_{1} = S_{1x}^{2} / (S_{1x}^{2} + S_{2y}^{2}), \alpha_{2} = S_{2y}^{2} / (S_{1x}^{2} + S_{2y}^{2})$ . 求  $\alpha_{1}\bar{X} + \alpha_{2}\bar{Y}$  的期望.
+26. 设  $U_{1}, U_{2}, \cdots, U_{n}$  为来自  $U(0,1)$  的独立同分布样本的次序统计量,  $X_{1}, X_{2}, \cdots, X_{n}$  为来自指数分布  $Exp(1)$  的独立同分布样本,  $Y_{r} = \sum_{i=1}^{r} X_{i} / (n - i + 1)$ . 证明:  $(-\ln U_{1}, -\ln U_{2}, \cdots, -\ln U_{n})$  与  $(Y_{1}, Y_{2}, \cdots, Y_{n})$  依分布相等.
+27. 设 $X_{1}, X_{2}$ 独立同分布于 $N(0,1)$, 证明: $X_{1} / |X_{2}|$ 服从标准 Cauchy 分布.
+28. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自标准 Cauchy 分布的独立同分布样本, 证明:  $\bar{X}$  也服从标准 Cauchy 分布.
+
+29. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自  $N(\mu, \sigma^{2})$  的样本, 且  $\mathrm{Cov}(X_{i}, X_{j}) = \rho \sigma^{2}$ , 其中  $|\rho| < 1$ .
+
+证明:  $\bar{X}$  与  $S_{n}^{2}$  独立, 且
+
+$$
+\bar {X} \sim N (\mu , (1 + (n - 1) \rho) \sigma^ {2} / n), (n - 1) S _ {n} ^ {2} / [ (1 - \rho) \sigma^ {2} ] \sim \chi^ {2} (n - 1).
+$$
+
+30. 设  $X_{1}, X_{2}, \cdots, X_{n}$  相互独立，且  $X_{i} \sim \chi^{2}(n_{i})$ . 记
+
+$$
+U _ {i} = \frac {\sum_ {k = 1} ^ {i} X _ {k}}{\sum_ {k = 1} ^ {i + 1} X _ {k}}, i = 1, 2, \dots , n - 1.
+$$
+
+证明: $U_{1}, U_{2}, \cdots, U_{n-1}$ 相互独立, 且 $U_{i} \sim B\left(\sum_{k=1}^{i} n_{k}/2, n_{i+1}/2\right)$.
+
+31. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自  $\beta$  分布  $Beta(\theta, 1)$  的独立同分布样本, 证明:
+
+$$
+- 2 \theta \sum_ {i = 1} ^ {n} \ln X _ {i} \sim \chi^ {2} (2 n).
+$$
+
+32. 设  $X_{1}, X_{2}, \cdots, X_{n}$  是 n 个相互独立的随机变量，且  $X_{i} \sim N(0, \sigma_{i}^{2})$ . 记
+
+$$
+Y = \frac {\sum_ {i = 1} ^ {n} X _ {i} / \sigma_ {i} ^ {2}}{\sum_ {i = 1} ^ {n} 1 / \sigma_ {i} ^ {2}}, Z = \sum_ {i = 1} ^ {n} \frac {(X _ {i} - Y) ^ {2}}{\sigma_ {i} ^ {2}},
+$$
+
+试证明  $Z \sim \chi^{2}(n-1)$ .
+
+33. 设  $\begin{pmatrix} X \\ Y \end{pmatrix} \sim N(\boldsymbol{\mu}, \Sigma)$ ，其中  $\boldsymbol{\mu} = (\mu_{1}, \mu_{2})^{\mathrm{T}}$ ， $\Sigma = \left( \begin{array}{cc} \sigma_{1}^{2} & \rho \sigma_{1} \sigma_{2} \\ \rho \sigma_{1} \sigma_{2} & \sigma_{2}^{2} \end{array} \right)$ 。证明:
+
+(1) $X + Y$ 与 $X - Y$ 独立, 当且仅当 $\sigma_1^2 = \sigma_2^2$; (2) 如果 $\sigma_1\sigma_2 > 0, |\rho| < 1$, 则
+
+$$
+\frac {1}{1 - \rho^ {2}} \left[ \frac {(X - \mu_ {1}) ^ {2}}{\sigma_ {1} ^ {2}} - 2 \rho \frac {(X - \mu_ {1}) (Y - \mu_ {2})}{\sigma_ {1} \sigma_ {2}} + \frac {(Y - \mu_ {2}) ^ {2}}{\sigma_ {2} ^ {2}} \right] \sim \chi^ {2} (2).
+$$
+
+34. 设 $X \sim N(0,1), T \sim t(n)$, 证明: 存在一个正数 $t_0$, 使得
+
+$$
+P (| T | \geqslant t _ {0}) \geqslant P (| X | \geqslant t _ {0}).
+$$
+
+35. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自正态总体  $N(\mu, \sigma^{2})$  的独立同分布样本，记  $\tau = \frac{X_{1} - \bar{X}}{S_{n}} \sqrt{\frac{n}{n-1}}$ ，证明:
+
+$$
+T = \frac {\sqrt {n - 2} \tau}{\sqrt {n - 1 - \tau^ {2}}} \sim t (n - 2).
+$$
+
+36. 设  $\left(\begin{array}{c} X_{1} \\ Y_{1} \end{array}\right)$ ,  $\left(\begin{array}{c} X_{2} \\ Y_{2} \end{array}\right)$ ,  $\cdots$ ,  $\left(\begin{array}{c} X_{n} \\ Y_{n} \end{array}\right)$  为来自二元正态分布  $N(\boldsymbol{\mu}, \Sigma)$  的独立同分布样本, 其中  $\boldsymbol{\mu} = (\mu_{1}, \mu_{2})^{\mathrm{T}}$ ,  $\Sigma = \left(\begin{array}{cc} \sigma_{1}^{2} & \rho\sigma_{1}\sigma_{2} \\ \rho\sigma_{1}\sigma_{2} & \sigma_{2}^{2} \end{array}\right)$ . 定义两个分量间的相关系数为
+
+$$
+r (X, Y) = \frac {\sum_ {i = 1} ^ {n} (X _ {i} - \bar {X}) (Y _ {i} - \bar {Y})}{\left[ \sum_ {i = 1} ^ {n} (X _ {i} - \bar {X}) ^ {2} \sum_ {i = 1} ^ {n} (Y _ {i} - \bar {Y}) ^ {2} \right] ^ {1 / 2}},
+$$
+
+证明: 如果  $\rho = 0$ ，则统计量
+
+$$
+T = \sqrt {n - 2} \frac {r (X , Y)}{\sqrt {1 - r ^ {2} (X , Y)}} \sim t (n - 2).
+$$
+
+37. 设 $X \sim F(n, m)$, 证明: $nX / (m + nX) \sim Beta(n/2, m/2)$.
+
+38. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自 Weibull 分布的独立同分布样本,  $X_{1}$  的概率密度为
+
+$$
+f (x; \lambda) = \alpha \lambda x ^ {\alpha - 1} \mathrm{e} ^ {- \lambda x ^ {\alpha}} I _ {[ 0, \infty)} (x).
+$$
+
+证明: $-2\lambda\sum_{i=1}^{n}X_{i}^{\alpha}\sim\chi^{2}(2n)$.
+
+39. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自正态总体的独立同分布样本, 证明:  $(X_{1}-\bar{X})/S_{n}$  与  $(n-1)Y/\sqrt{n(Y^{2}+n-2)}$  分布相等, 其中  $Y \sim t(n-2)$ ,  $\bar{X}, S_{n}^{2}$  分别为样本均值和方差.
+
+40. 设  $X_{1}, X_{2}, \cdots, X_{n}$  和  $Y_{1}, Y_{2}, \cdots, Y_{n}$  为分别来自  $\Gamma$  分布  $\Gamma(\alpha, \lambda_{1})$  和  $\Gamma(\alpha, \lambda_{2})$  的独立同分布样本, 且独立, 求  $\bar{X}/\bar{Y}$  的分布.
+
+41. 设 $X \sim \Gamma(\alpha, 1), Y \sim \Gamma(\alpha + 1/2, 1)$, 且二者独立, 证明: $2\sqrt{XY} \sim \Gamma(2\alpha, 1)$.
+
+42. 设  $X \sim N(\mu, 1)$ ，证明: $X^{2}$  的累积分布函数是  $\mu^{2}$  的递减函数.
+
+43. 设 $T, S$ 是两个统计量, 且 $S = \phi(T)$, 其中 $\phi$ 是一可测函数. 证明: (1) 如果 $T$ 是完全的, 则 $S$ 也是完全的; (2) 如果 $T$ 是充分完全的, 且 $\phi$ 是一一映射, 则 $S$ 也是充分完全的.
+
+44. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自  $\Gamma$  分布  $\Gamma(\alpha, \lambda)$  的独立同分布样本. 求 (1) 当  $\alpha$  已知时,  $\lambda$  的充分统计量; (2) 当  $\lambda$  已知时,  $\alpha$  的充分统计量.
+
+45. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自  $N(\theta, \theta^{2})(\theta > 0)$  的独立同分布样本. 问  $\bar{X}$  是否仍为充分统计量?
+
+46. 设样本  $Y_{1}, Y_{2}, \cdots, Y_{n}$  相互独立，且  $Y_{i}$  服从 Poisson 分布  $P(\lambda_{i})$ . 另外，假设
+
+$$
+\ln \lambda_ {i} = \alpha + \beta x _ {i}, \quad i = 1, 2, \dots , n,
+$$
+
+其中  $x_{i}$  为已知常数. 求  $\alpha, \beta$  的最小充分统计量.
+
+47. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自  $N(0, \sigma^{2})$  的独立同分布样本, 其中  $\sigma > 0$  为参数. 证明: 统计量  $\left(\sum_{i=1}^{n} X_{i}, \sum_{i=1}^{n} X_{i}^{2}\right)$  是充分的但不是有界完全的.
+
+48. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自均匀分布  $U(\theta - 1/2, \theta + 1/2)$  的独立同分布样本, 其中  $\theta \in R$  为参数. 证明:  $(X_{(1)}, X_{(n)})$  不是完全统计量.
+
+49. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自均匀分布  $U(-\theta, \theta)$  的独立同分布样本, 其中  $\theta > 0$  为参数. 记  $T_{1} = X_{(n)} - X_{(1)}, T_{2} = \max\{X_{(n)}, -X_{(1)}\}$ . (1) 证明  $T_{2}$  是充分统计量, 且  $T_{1}/T_{2}$  与  $T_{2}$  独立; (2) 求  $T_{1}/(2T_{2})$  的分布.
+
+50. 设  $Y_{1}, Y_{2}, \cdots, Y_{n}$  相互独立，且  $Y_{i} \sim N(\alpha + \beta x_{i}, \sigma^{2})$ ，其中  $x_{1}, x_{2}, \cdots, x_{n}$  为给定的常数， $\alpha, \beta, \sigma > 0$  为参数。求充分与完全统计量。
+
+51. 设  $X_{1}, X_{2}, \cdots, X_{m}$  和  $Y_{1}, Y_{2}, \cdots, Y_{n}$  为分别来自总体  $N(\mu, \sigma_{1}^{2})$  和  $N(\mu, \sigma_{2}^{2})$  的独立同分布样本，且全体独立。当  $\sigma_{1}^{2}/\sigma_{2}^{2}=c$  为常数时，求充分完全统计量。
+
+52. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体 X 的独立同分布样本，总体 X 的概率密度为  $\theta^{-1}\mathrm{e}^{-(x-\theta)/\theta}I_{[\theta,\infty)}(x)$ ，其中  $\theta > 0$  为参数。(1) 求  $\theta$  的最小充分统计量；(2) 证明上述最小充分统计量是完全的。
+
+53. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自均匀分布总体  $U(\theta_{1}, \theta_{2})$  的独立同分布样本，证明: $(X_{(1)}, X_{(n)})$  是完全统计量.
+
+54. 设  $X_{1}, X_{2}, \cdots, X_{n}$  相互独立, g, h 为两个可测函数,  $1 \leqslant k < n$ , 证明:  $g(X_{1}, X_{2}, \cdots, X_{k})$  与  $h(X_{k+1}, X_{k+2}, \cdots, X_{n})$  独立.
+
+55. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自  $\Gamma$  分布  $\Gamma(\alpha, \lambda)$  的独立同分布样本，证明: $\sum_{i=1}^{n} X_{i}$  与  $\sum_{i=1}^{n} [\ln X_{i} - \ln X_{(1)}]$  独立.
+
+56. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体  $N(0, \sigma^{2})$  的独立同分布样本，证明: $\bar{X}/S_{n}$  与  $\sum_{i=1}^{n} X_{i}^{2}$  独立.
+
+57. 设 $X, Y$ 独立且均服从 $N(0, \sigma^2)$, 证明: $X^2 + Y^2$ 与 $X / \sqrt{X^2 + Y^2}$ 独立.
+
+58. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自均匀分布  $U(a, b)$  的独立同分布样本,  $-\infty < a < b < \infty$ . 证明: 对于任何 a 和  $b, (X_{(i)} - X_{(1)}) / (X_{(n)} - X_{(1)}), i = 2, 3, \cdots, n - 1$  独立于  $(X_{(1)}, X_{(n)})$ .
+
+59. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自均匀分布总体  $U(0, \theta)$  的独立同分布样本, 证明:  $X_{1}/X_{(n)}$  与  $X_{(n)}$  独立.
+
+60. 设 $X_{i}, i = 1,2,3$ 独立且均服从指数分布 $Exp(\lambda)$. 记 $Y_{1} = X_{1} + X_{2} + X_{3}$, $Y_{2} = X_{1} / (X_{1} + X_{2}), Y_{3} = (X_{1} + X_{2}) / (X_{1} + X_{2} + X_{3}).$ $Y_{1}, Y_{2}, Y_{3}$ 独立吗？
+
+61. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自指数分布  $Exp(\lambda)$  的独立同分布样本, 其中  $\lambda > 0$  为参数. 证明:  $\bar{X}$  与  $X_{(1)} / X_{(n)}$  独立.

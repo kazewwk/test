@@ -1,0 +1,433 @@
+设损失函数严格凸, 且 $\delta_0$ 是另一 minimax 估计, 则
+
+$$
+R (\theta , (\delta + \delta_ {0}) / 2) <   \frac {1}{2} [ R (\theta , \delta) + R (\theta , \delta_ {0}) ] = c = R (\theta , \delta), \forall \theta \in \Theta ,
+$$
+
+与  $\delta$  为容许估计矛盾. 故  $\delta$  唯一.
+
+![](images/page_112_image_5.jpg)
+
+由此定理, 我们有如下推论.
+
+推论 2.5.1 如果在某标准先验下的 Bayes 估计是唯一的, 且有常数风险, 则必为容许的 minimax 估计.
+
+例 2.5.1 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体  $X \sim B(1, \theta)$  的独立同分布样本，取二次损失函数  $L(\theta, a) = (\theta - a)^{2}$ ，先验分布为 Beta(a, b) 时，求其 Bayes 估计的风险。当  $a = \sqrt{n}/2, b = \sqrt{n}/2$  时，求  $\theta$  的 minimax 估计。
+
+解 由上节的 (2.4.6) 式知, 此时  $\theta$  的 Bayes 估计为
+
+$$
+\hat {\theta} _ {B} = \frac {n \bar {X} + a}{n + a + b},
+$$
+
+其风险为
+
+$$
+R (\theta , \hat {\theta} _ {B}) = E _ {\theta} \left[ \left(\theta - \frac {n \bar {X} + a}{n + a + b}\right) ^ {2} \right] = \frac {n \theta (1 - \theta) + [ (a + b) \theta - a ] ^ {2}}{(n + a + b) ^ {2}}.
+$$
+
+当 $a = \sqrt{n} / 2, b = \sqrt{n} / 2$ 时，代入上面两式得到，Bayes估计为
+
+$$
+\hat {\theta} _ {B} = \frac {n \bar {X} + \sqrt {n} / 2}{n + \sqrt {n}},
+$$
+
+其风险
+
+$$
+R (\theta , \hat {\theta} _ {B}) = E _ {\theta} \left[ \left(\theta - \frac {n \bar {X} + \sqrt {n} / 2}{n + \sqrt {n}}\right) ^ {2} \right] = \frac {1}{4 (1 + \sqrt {n}) ^ {2}}, \tag {2.5.4}
+$$
+
+由于其风险为常数, 故知  $\hat{\theta}_{B}$  是  $\theta$  的 minimax 估计. 且由定理 2.5.2 和推论 2.5.1 知, 此 minimax 估计是容许估计, 也是唯一的. □
+
+对于上例, $\theta$ 的 UMVUE 为 $\hat{\theta} = \bar{X}$, 其此时的风险为 $R(\theta, \hat{\theta}) = \theta(1 - \theta)/n$. 与 (2.5.4) 式比较可以看到, 当
+
+$$
+\left| \theta - \frac {1}{2} \right| <   \frac {1}{2} \sqrt {1 - \frac {n}{(1 + \sqrt {n}) ^ {2}}}
+$$
+
+时, minimax 估计比样本均值有较小的风险, 但二者风险最大差也只是 $\frac{2\sqrt{n} + 1}{4(n + \sqrt{n})^2}$. 由此可见, 随着 $n$ 的增大, minimax 估计比频率估计好的参数区间长度越来越短, 且二者风险之差也越来越小. 这也表明 minimax 估计是保守的, 它旨在降低最坏情况出现时可能遇到的风险, 但其代价就是通常情况下表现并不理想.
+
+当 n = 100 时, 二者的风险函数如图 2.5.1 所示, 其中风险值扩大了 484 倍, 虚线为 minimax 估计的风险函数, 实线为 UMVUE 的风险函数. 此时, minimax 估计优于样本均值的参数区间为  $(0.5 \pm 0.2083)$ , 且二者最大差距为  $4.34 \times 10^{-4}$ ; 当 n = 1000 时, minimax 估计优于样本均值的参数区间为  $(0.5 \pm 0.1228)$ , 二者最大差距为  $1.51 \times 10^{-5}$ . 可见, 当 n 较大时, minimax 相较于样本均值的风险优势并不明显.
+
+![](images/page_113_chart_3.jpg)
+
+<details>
+<summary>line</summary>
+
+| \(\theta\) | 风险函数 \(R \times 484\) |
+| --- | --- |
+| 0.0 | 0.0 |
+| 0.2 | ~0.75 |
+| 0.3 | 1.0 |
+| 0.5 | 1.2 |
+| 0.7 | 1.0 |
+| 1.0 | 0.0 |
+</details>
+
+图2.5.1 minimax估计与UMVUE的风险函数
+
+定理 2.5.2 要求 Bayes 估计的风险为常数, 但这一点并不满足时, 我们无法利用此结论来求取 minimax 估计. 此时, 我们可以利用如下定理.
+
+定理 2.5.3 设  $\{\pi_{k}\}$  是标准的先验分布列,  $\delta_{k}$  为先验  $\pi_{k}$  时的 Bayes 估计, 如果估计  $\delta$  满足
+
+$$
+\infty > M (\delta) \leqslant \operatorname * {l i m s u p} _ {k \to \infty} R _ {\pi_ {k}} (\delta_ {k}) = c <   \infty , \tag {2.5.5}
+$$
+
+则  $\delta$  为 minimax 估计, 其中  $R_{\pi_{k}}(\delta_{k})$  为决策  $\delta_{k}$  的 Bayes 风险, c 为常数.
+
+证明 如果 $\delta$ 不是 minimax 估计, 则存在 $\delta^{*}$, 使得 $M(\delta^{*}) < M(\delta)$. 于是, 由条件 (2.5.5) 知, 存在正整数 $K$, 使
+
+$$
+M (\delta^ {*}) <   R _ {\pi_ {K}} (\delta_ {K}).
+$$
+
+又由  $M(\delta^{*})$  的定义知,  $R_{\pi_{K}}(\delta^{*}) \leqslant M(\delta^{*})$ , 故综合上述有
+
+$$
+R _ {\pi_ {K}} (\delta^ {*}) \leqslant M (\delta^ {*}) <   R _ {\pi_ {K}} (\delta_ {K}),
+$$
+
+与  $\delta_{K}$  为 Bayes 估计矛盾.
+
+例 2.5.2 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体  $N(\mu, \sigma^{2})$  的独立同分布样本, 其中  $\sigma^{2} > 0$  已知, 取平方损失  $L(\mu, a) = (\mu - a)^{2}$ , 证明样本均值  $\bar{X}$  是  $\mu$  的 minimax 估计.
+
+证明 取先验分布列 $\{\pi_k: \mu \sim N(0, k^2)\}$. 由 (2.4.7) 式可知, 此时的 Bayes 估计为
+
+$$
+\delta_ {k} = \frac {k ^ {2}}{k ^ {2} + \sigma^ {2} / n} \bar {X},
+$$
+
+其风险函数
+
+$$
+R (\mu , \delta_ {k}) = E [ (\delta_ {k} - \mu) ^ {2} ] = \frac {n k ^ {4} \sigma^ {2} + \sigma^ {4} \mu^ {2}}{(n k ^ {2} + \sigma^ {2}) ^ {2}},
+$$
+
+由此求得其 Bayes 风险为
+
+$$
+R _ {k} (\delta_ {k}) = E _ {\mu} [ R (\mu , \delta_ {k}) ] = \frac {\sigma^ {2} k ^ {2}}{n k ^ {2} + \sigma^ {2}} \longrightarrow \frac {\sigma^ {2}}{n}, k \to \infty .
+$$
+
+由于  $\bar{X}$  的风险函数, 即方差为  $\frac{\sigma^{2}}{n}$ , 满足条件 (2.5.5), 故由定理 2.5.3 知, 样本均值  $\bar{X}$  是  $\mu$  的 minimax 估计. □
+
+## 习题二
+
+1. 对于 n 个常数  $a_{1}, a_{2}, \cdots, a_{n}$ ，取  $l(x) = \sum_{i=1}^{n} |x - a_{i}|$ ，证明: $l(x)$  的最小值点为  $a_{1}, a_{2}, \cdots, a_{n}$  的中位数。如取  $l(x) = \sum_{i=1}^{n} (x - a_{i})^{2}$ ，则  $l(x)$  的最小值点为  $\sum_{i=1}^{n} a_{i}/n$ 。
+2. 设 $X_{1} \sim N(\mu_{1}, 1)$, $X_{2} \sim N(\mu_{2}, 1)$ 且相互独立, 其中 $\mu_{1}, \mu_{2} \in \mathbb{R}$. 记 $\theta = \max\{\mu_{1}, \mu_{2}\}$. 证明 $\theta$ 的无偏估计不存在.
+3. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体  $X \sim F(x - \theta)$  的独立同分布样本, 其中  $F(x)$  为总体累积分布, 且关于原点对称, 其中  $\theta \in R$  为参数.
+
+(1) 证明 $\sum_{i=1}^{n} w_i X_{(i)} - \theta$ 关于原点对称, 其中 $w_i$ 为常数且满足 $w_i = w_{n-i+1}$,
+
+$$
+\sum_ {i = 1} ^ {n} w _ {i} = 1;
+$$
+
+(2) 如总体期望存在, 证明上述估计 $\sum_{i=1}^{n} w_i X_{(i)}$ 是 $\theta$ 的无偏估计.
+
+4. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体 X 的独立同分布样本, 记  $X_{-i} = (X_{1}, \cdots, X_{i-1}, X_{i+1}, \cdots, X_{n})$ , 即不包括  $X_{i}$  的样本. 设  $T_{n}(X)$  为基于 n 个样本  $X_{1}, X_{2}, \cdots, X_{n}$  的关于总体参数  $\theta$  的一个估计, 且其偏差  $b_{T_{n}}(\theta) = O(n^{-1})$ . 称
+
+$$
+T _ {J} (X) = n T _ {n} (X) - \frac {n - 1}{n} \sum_ {i = 1} ^ {n} T _ {n - 1} (X _ {- i})
+$$
+
+为  $\theta$  的 jackknife(刀切法) 估计. 证明:  $b_{T_{J}}(\theta)=O(n^{-2})$ .
+
+5. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自正态总体  $N(\mu, \sigma^{2})$  的独立同分布样本, 求常数  $d_{n}$ , 使得  $d_{n}R_{n}$  为  $\sigma$  的无偏估计, 其中  $R_{n} = X_{(n)} - X_{(1)}$  为极差.
+6. 设 X 服从 Poisson 分布  $P(\lambda)$ ，求 (1) 关于参数  $\lambda^{-1}$  的 Fisher 信息量；(2)  $\eta = g(\lambda)$ ，使关于  $\eta$  的 Fisher 信息量与  $\lambda$  无关.
+
+7. 考虑如下的自回归模型: $X_{1} \sim N(\theta, \sigma^{2}/(1 - \rho^{2}))$, 且在给定 $X_{1} = x_{1}, X_{2} = x_{2}, \cdots, X_{j} = x_{j}$ 的条件下, $X_{j+1} \sim N(\theta + \rho(x_{j} - \theta), \sigma^{2}), j = 1, 2, \cdots, n-1$, 其中 $|\rho| < 1$ 为给定常数, $\theta, \sigma^{2} > 0$ 为参数. (1) 基于样本联合分布, 求 $(\theta, \sigma^{2})$ 的 Fisher 信息矩阵; (2) 证明样本均值 $\bar{X}$ 是 $\theta$ 的无偏估计, 并求其方差; (3) 当 $\sigma$ 已知, 取 $\theta$ 的先验分布为 $N(0, \tau^{2})$, 损失为平方损失时, 求 $\theta$ 的 Bayes 估计.
+
+8. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自均匀分布  $U(0, \theta)$  的独立同分布样本. 证明 (1)  $\hat{\theta}_{1} = X_{(n)} + X_{(1)}$  是  $\theta$  的一个 UE; (2) 对适当选择的常数  $c_{n}, \hat{\theta}_{2} = c_{n}X_{(1)}$  是  $\theta$  的 UE, 但这个估计的方差比另外两个 UE  $\hat{\theta}_{3} = 2\bar{X}$  和  $\hat{\theta}_{4} = \frac{n+1}{n}X_{(n)}$  都大 (除非 n = 1).
+
+9. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自均匀分布  $U(0, \theta)$  的独立同分布样本, 其中  $\theta > 0$  为未知参数. (1) 证明  $\hat{\theta}_{1} = \frac{n+1}{n} X_{(n)}, \hat{\theta}_{2} = (n+1) X_{(1)}, \hat{\theta}_{3} = 2 \bar{X}$  均是  $\theta$  的 UE.
+(2) 上述三个估计中哪个方差最小？(3) 试证明  $\hat{\theta}_{1}$  是  $\theta$  的 UMVUE.
+
+10. 设 $X \sim f(x; \theta)$. 记 $Y = g(X) \sim g(y; \theta), Z = h(X) \sim h(z; \theta)$, 设 $Y, Z$ 均满足正则条件 (定理 2.1.6 的条件), 且二者相互独立, 证明: $I_{Y,Z}(\theta) = I_Y(\theta) + I_Z(\theta)$, 其中 $I_{Y,Z}(\theta)$ 表示由 $(Y, Z)$ 联合分布计算得到的 $\theta$ 的 Fisher 信息量.
+
+11. 设 $T_{i}(X)$ 是参数 $g_{i}(\theta)$ 的 UMVUE $(i = 1,2)$. 证明: 对于任意给定的常数 $c_{i}$, $c_{1}T_{1}(X) + c_{2}T_{2}(X)$ 是 $c_{1}g_{1}(\theta) + c_{2}g_{2}(\theta)$ 的 UMVUE.
+
+12. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为总体 X 的独立同分布样本, 记  $E(X) = \mu, \mathcal{T} = \left\{\sum_{i=1}^{n} c_{i} X_{i}: c_{i} \in \mathbb{R}, i = 1, 2, \cdots, n.\right\}$ . (1) 证明  $T(X_{1}, X_{2}, \cdots, X_{n}) \in \mathcal{T}$  为  $\mu$  的无偏估计的充要条件是  $\sum_{i=1}^{n} c_{i} = 1$ ; (2) 在线性无偏估计类  $\mathcal{T}_{1} = \left\{T(x) \in \mathcal{T}, \sum_{i=1}^{n} c_{i} = 1\right\}$  中, 求  $\mu$  的 UMVUE.
+
+13. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体 X 的独立同分布样本, 且 X 为  $\{1, 2, \cdots, N\}$  上的均匀分布, 即
+
+$$
+P _ {N} (X = k) = \frac {1}{N}, k = 1, 2, \dots , N.
+$$
+
+其中 N 未知. (1) 证明  $X_{(n)}$  是充分完全统计量; (2) 求 N 的 UMVUE.
+
+14. 设  $X_{1}, X_{2}, \cdots, X_{n}$  相互独立且方差均为  $\sigma^{2}$ ,  $E(X_{i}) = i\theta$ , 其中  $\theta, \sigma$  均为参数.
+(1) 在  $\theta$  的所有线性无偏估计中找一个方差最小的无偏估计  $\hat{\theta}$ ; (2) 如果样本服从正态分布, 则  $\hat{\theta}$  是  $\theta$  的 UMVUE 吗?
+
+15. 设  $X_{1}, X_{2}, \cdots, X_{m}$  为来自正态总体  $N(\mu_{1}, \sigma^{2})$  的独立同分布样本,  $Y_{1}, Y_{2}, \cdots, Y_{n}$  为来自正态总体  $N(\mu_{2}, \sigma^{2})$  的独立同分布样本, 且 X 样本与 Y 样本独立,  $\mu_{1}, \mu_{2}, \sigma^{2}$  为参数. 求  $\sigma^{2}$  及  $(\mu_{1} - \mu_{2}) / \sigma$  的 UMVUE.
+
+16. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自 Pareto 分布  $Pa(\alpha, \beta)$  的独立同分布样本, 其中  $\alpha > 0, \beta > 0$  为参数. (1) 当  $\beta$  已知时, 求  $\alpha$  的 UMVUE; (2) 当  $\alpha$  已知时, 求  $\beta$  的
+
+UMVUE; (3) 求  $\alpha, \beta$  的 UMVUE.
+
+17. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自 Laplace 总体的独立同分布样本，此时总体分布为  $f(\theta) = -\frac{1}{2\theta} \exp\{-|x|/\theta\}$ ，其中  $\theta > 0$ 。求  $\theta, \theta^{-1}, \theta^{r}$  的 UMVUE，其中 r 为正整数。
+18. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自两点分布  $B(1, \theta)$  的独立同分布样本, 其中  $\theta \in (0, 1)$ . 设  $m \leqslant n$  为已知正整数, 求 (1)  $\theta^{m}$  的 UMVUE; (2)  $P\left(\sum_{i=1}^{m} X_{i} = k\right)$  的 UMVUE, 其中  $k \leqslant m$  已知.
+19. 设  $X_{1}, X_{2}, \cdots, X_{n}$  相互独立，且  $X_{1} \sim N(\mu, \sigma^{2}), X_{j} \sim N(0, \sigma^{2}) (j = 2, 3, \cdots, n - 1), X_{n} \sim N(0, \beta \sigma^{2})$ . 求  $\mu, \beta, \sigma^{2}$  的 UMVUE.
+20. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自均匀分布  $U(0, \theta)$  的独立同分布样本，其中  $\theta > 0$ . 记  $\theta$  的 MLE 和 UMVUE 分别为  $\hat{\theta}_{m} = X_{(n)}$  和  $\hat{\theta}_{u} = (n + 1)\hat{\theta}_{m}/n$ . 如记  $T = (n + 2)\hat{\theta}_{m}/(n + 1)$ ，请证  $\mathrm{MSE}(T) < \min\{\mathrm{MSE}(\hat{\theta}_{m}), \mathrm{MSE}(\hat{\theta}_{u})\}$ .
+21. 设某种产品的寿命 X 服从指数分布  $Exp(\lambda)$ ， $t_{0}$  为给定常数， $X_{1}, X_{2}, \cdots, X_{n}$  是独立观测到的 n 件产品的寿命。求产品在  $t_{0}$  前失效的概率  $P(X \leqslant t_{0}) = 1 - \exp\{-\lambda t_{0}\} = g(\lambda)$  的 UMVUE.
+22. 设  $X_{1}, X_{2}, \cdots, X_{m}$  和  $Y_{1}, Y_{2}, \cdots, Y_{n}$  为分别来自 Poisson 分布  $P(\lambda_{x})$  和  $P(\lambda_{y})$  的独立同分布样本, 且全样本独立. 求  $(\lambda_{x} - \lambda_{y})^{2}$  的 UMVUE.
+23. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自  $N(\mu, 1)$  的独立同分布样本, 记标准正态的累积分布为  $\Phi(x)$ , 求  $a_{n}$ , 使得  $\Phi(a_{n}\bar{X})$  为  $\Phi(\mu)$  的 UMVUE, 并由此求  $P(X_{1} < c)$  的 UMVUE, 其中 c 为常数.
+24. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自  $N(0, \sigma^{2})$  的独立同分布样本, 求  $\sigma^{2}$  的充分完全统计量,  $\sigma$  和  $3\sigma^{4}$  的 UMVUE, 并证明  $\frac{1}{n} \sum_{i=1}^{n} X_{i}^{2}$  是  $\sigma^{2}$  的有效估计和相合估计.
+25. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为某总体的独立同分布样本, 统计量  $T_{n}$  是参数  $\theta$  的无偏估计, 且  $\mathrm{Var}(T_{n}) < \infty$ . 如果对于任何  $\theta$  的无偏估计  $U_{n}$  都有  $\mathrm{Var}(T_{n}) \leqslant \mathrm{Var}(U_{n})$ , 证明  $T_{n}$  是  $\theta$  的均方相合估计.
+26. 设  $X \sim \chi^{2}(n)$ ，证明:
+
+$$
+\sqrt {X} - \sqrt {n} \xrightarrow {\mathrm{d}} N (0, 1 / 2).
+$$
+
+并由此得: $P(X \leqslant x)$ 的值可由 $\Phi(\sqrt{2x} - \sqrt{2n})$ 来近似 (称之为 Fisher 近似).
+
+27. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体  $B(1, \theta)$  的独立同分布样本, 其中  $0 < \theta < 1$ . 记  $T_{n} = \sum_{i=1}^{n} X_{i}, Y_{n} = \ln(T_{n}) I_{[1,\infty)}(T_{n})$ . 证明:  $Y_{n}$  是  $\ln\theta$  的强相合估计, 也是 CAN 估计.
+28. 设  $X_{1}, X_{2}, \cdots, X_{n}$  和  $Y_{1}, Y_{2}, \cdots, Y_{n}$  为分别来自总体 X, Y 的独立同分布样本,
+
+且 $P(X > 0) = 1, E(X^2) < \infty, E(Y^2) < \infty$，记 $\theta = E(Y) / E(X)$，证明
+
+$$
+\sqrt {n} (\bar {Y} / \bar {X} - \theta) \stackrel {\mathrm{d}} {\longrightarrow} N (0, \sigma^ {2}),
+$$
+
+并求  $\sigma^{2}$ .
+
+29. 设 $(X_{i}, Y_{i})$ 为来自某二维总体的独立同分布样本, $r(X, Y)$ 为 (1.2.8) 式定义的样本相关系数, 即
+
+$$
+r (X, Y) = \frac {\sum_ {i = 1} ^ {n} (X _ {i} - \bar {X}) (Y _ {i} - \bar {Y})}{\sqrt {\sum_ {i = 1} ^ {n} (X _ {i} - \bar {X}) ^ {2} \sum_ {i = 1} ^ {n} (Y _ {i} - \bar {Y}) ^ {2}}}.
+$$
+
+(1) 如 $E(X_1^4) < \infty, E(Y_1^4) < \infty$, 证明:
+
+$$
+\sqrt {n} [ r (X, Y) - \rho ] \stackrel {\mathrm{d}} {\longrightarrow} N (0, c ^ {2}),
+$$
+
+其中  $\rho=\mathrm{Cov}(X_{1},Y_{1})/\sqrt{\mathrm{Var}(X_{1})\mathrm{Var}(Y_{1})}$ ，c 为不依赖于样本但依赖某些未知参数的常数.
+
+(2) 如 $X_{1} \sim N(\mu_{1}, \sigma_{1}^{2}), Y_{1} \sim N(\mu_{2}, \sigma_{2}^{2})$, 证明: $r(X, Y)$ 的概率密度为
+
+$$
+f (r) = \frac {\Gamma ((n - 1) / 2)}{\sqrt {\pi} \Gamma (n / 2 - 1)} (1 - r ^ {2}) ^ {(n - 4) / 2} I _ {[ - 1, 1 ]} (r).
+$$
+
+30. 设  $X_{1}, X_{2}, \cdots, X_{n}$  相互独立，且  $E(X_{i}) = \mu$ ，记  $\sigma_{n}^{2} = \operatorname{Var}\left(\sum_{i=1}^{n} X_{i}\right)$ 。如果  $\sum_{i=1}^{n}(X_{i} - \mu)/\sigma_{n} \xrightarrow{\mathrm{d}} N(0,1)$ ，证明: $\bar{X}$  是  $\mu$  的相合估计当且仅当  $\sigma_{n} = o(n)$ .
+31. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体  $N(\mu, \sigma^{2})$  的独立同分布样本, 证明: 样本方差  $S_{n}^{2}$  是  $\sigma^{2}$  的均方相合估计.
+32. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自均匀分布  $U(\theta - 0.5, \theta + 0.5)$  的独立同分布样本, 其中  $\theta \in R$  为参数. 证明:  $[X_{(1)} + X_{(n)}] / 2$  是  $\theta$  的强相合估计, 也是均方相合估计.
+33. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体 X 的独立同分布样本,  $E(X^{4}) < \infty$ , 记
+
+$$
+T _ {n} (X) = \frac {\sum_ {i = 1} ^ {n} | X _ {i} | / n}{\sum_ {i = 1} ^ {n} X _ {i} ^ {2} / n}.
+$$
+
+(1) 证明: $\sqrt{n}(T_n - \nu) \xrightarrow{\mathrm{d}} N(0, c^2)$, 并用 $X$ 的矩给出 $\nu, c^2$ 的表达式; (2) 当 $X \sim N(0, \sigma^2)$ 时, 验证 (1) 中的结论.
+
+34. 证明 $T_{n}(X)$ 是参数 $\theta$ 的均方相合估计的充要条件为: $T_{n}(X)$ 渐近无偏, 且 $\lim_{n\to \infty}\mathrm{Var}_{\theta}[T_n(X)] = 0, \forall \theta \in \Theta$.
+35. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体 X 的独立同分布样本，且  $E(X) = \theta, \operatorname{Var}(X) = \theta$ ，其中  $\theta > 0$ 。对于参数  $g(\theta) = \sqrt{\theta}$ ，设  $T_{1n} = \sqrt{\bar{X}}, T_{2n} = \bar{X}/S_{n}$ 。求  $T_{1n}$  相对于  $T_{2n}$  的渐近相对效率。
+36. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体 X 的独立同分布样本,  $E(X) = \mu, \operatorname{Var}(X) < \infty$ . 记  $T_{1n} = \bar{X}, T_{2n} = \frac{2}{n(n+1)} \sum_{i=1}^{n} iX_{i}$ . (1) 证明  $T_{2n}$  是  $\mu$  的相合估计; (2) 求  $T_{1n}$  相对于  $T_{2n}$  的渐近相对效率.
+37. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自  $N(0, \sigma^{2})$  的独立同分布样本, 其中  $\sigma > 0$ . 对于参数  $g(\sigma^{2}) = \sigma$ , 求两个估计  $\sqrt{\pi/2} \sum_{i=1}^{n} |X_{i}| / n, \sqrt{\sum_{i=1}^{n} X_{i}^{2} / n}$  的渐近相对效率.
+38. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自  $B(1, p)$  的独立同分布样本, 其中  $p \in (0, 1)$ . 考虑估计参数 p, 记 a, b 为两个正常数, 求  $(a + n\bar{X}) / (n + a + b)$  关于  $\bar{X}$  的渐近相对效率.
+39. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自均匀分布  $U(\theta - 0.5, \theta + 0.5)$  的独立同分布样本 ( $n \geqslant 2$ ),  $\theta \in R$  为未知参数. (1) 求  $\theta$  的矩估计  $\hat{\theta}_{M}$ . (2)  $\hat{\theta}_{M}$  和  $\hat{\theta}_{1} = [X_{(1)} + X_{(n)}] / 2$  是  $\theta$  的 UE 吗？为什么？(3)  $\hat{\theta}_{M}$  和  $\hat{\theta}_{1}$  哪个方差较小？为什么？
+40. 设  $Y \sim N(\mu, \sigma^{2})$ ，称  $X = e^{Y}$  的分布为对数正态分布。（1）求 X 的概率密度；
+(2) 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体 X 的独立同分布样本，求  $\mu, \sigma^{2}$  的矩估计与 MLE.
+41. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体 X 的独立同分布样本, 概率密度为
+
+$$
+\frac {1}{2 \sigma} \exp \{- | x - \mu | / \sigma \}.
+$$
+
+(1) 求  $\mu, \sigma$  的矩估计与 MLE; (2)  $\mu$  的矩估计是相合估计吗?
+
+42. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体 X 的独立同分布样本, 记  $\mu, \sigma^{2}$  分别为总体均值与方差. 证明: 对于任意三阶导数存在且有界的函数 h, 都有
+
+$$
+E [ h (\bar {X}) ] = h (\mu) + \frac {1}{2 n} h ^ {\prime \prime} (\mu) \sigma^ {2} + O _ {p} (n ^ {- 2}).
+$$
+
+43. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体 X 的独立同分布样本，记  $\mu, \sigma^{2}$  分别为总体均值与方差，且总体三阶中心矩  $\nu_{3}$  存在且有界.证明:(1)  $E(\bar{X} - \mu)^{3} = \nu_{3}/n^{2}$ ; (2) 对于任意三阶导数存在且有界的函数 h，都有
+
+$$
+E \left\{\left\{h (\bar {X}) - E [ h (\bar {X}) ] \right\} ^ {3} \right\} = \frac {1}{n ^ {2}} [ h ^ {\prime} (\mu) ] ^ {3} \nu_ {3} + \frac {3}{n ^ {2}} h ^ {\prime \prime} (\mu) [ h ^ {\prime} (\mu) ] ^ {2} \sigma^ {2} + O _ {p} (n ^ {- 3}).
+$$
+
+44. 设总体 X 的概率分布为
+
+$$
+P (X = x) = p (1 - p) ^ {x - 1}, x = 1, 2, \dots ,
+$$
+
+$X_{1}, X_{2}, \cdots, X_{n}$  为来自此总体的独立同分布样本, 求 p 的矩估计和 MLE.
+
+45. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自均匀分布  $U(a, b)$  的独立同分布样本, 求  $a^{2}$  的 MLE.
+46. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自二项总体  $B(1, p)$  的独立同分布样本, 求 p 的 MLE. 假设  $p \in [1/3, 1/2]$ , 求其 MLE.
+47. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自 logistic 分布  $LG(\mu, \sigma)$  的独立同分布样本, (1) 当  $\sigma$  已知,  $\mu \in R$  时, 试求  $\mu$  的 MLE; (2) 当  $\mu$  已知,  $\sigma > 0$  时, 试求  $\sigma$  的 MLE.
+48. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自  $N(\mu, \sigma^{2})$  的独立同分布样本. (1) 当  $\mu \in [a, b]$ , a, b 已知时, 求  $\mu, \sigma^{2}$  的 MLE; (2) 当  $\sigma^{2}$  已知, 且  $\mu \in (0, \infty)$  时, 求  $\mu$  的 MLE.
+49. 设  $X_{i1}, X_{i2}, \cdots, X_{in_{i}}$  为来自  $N(\mu_{i}, \sigma_{i}^{2})$  的独立同分布样本  $(i = 1, 2)$ ，且全样本独立。(1) 求  $\mu_{1} - \mu_{2}$  的 MLE。(2) 如  $n_{1} + n_{2} = n$  已知，且  $\sigma_{1}, \sigma_{2}$  已知，求使上述 MLE 的均方误差达到最小的  $n_{1}, n_{2}$  的比例。
+50. 设  $X_{1}, \cdots, X_{m}, X_{m+1}, \cdots, X_{m+n}$  为来自 Poisson 分布  $P(\lambda)$  的独立同分布样本, 但由于某种原因, 假设仅观测到前 m 个样本, 以及  $\sum_{i=m+1}^{m+n} X_{i}$ , 求  $\lambda$  的 MLE.
+51. 设  $X_{1}, \cdots, X_{m}, X_{m+1}, \cdots, X_{m+n}$  为来自指数分布  $Exp(\lambda)$  的独立同分布样本，但由于采用定时截尾实验，即实验进行到  $\tau$  时刻 ( $\tau$  为已知正数)，停止实验，故只观测到前 m 个样本，以及  $X_{i} > \tau (i = m + 1, m + 2, \cdots, m + n)$ . 求  $\lambda$  的 MLE.
+52. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自 Cauchy 分布  $C(\theta, 1)$  的独立同分布样本. (1) 当 n = 1 时, 证明  $\theta$  的 MLE 为  $X_{1}$ ; (2) 当 n = 2 时, 证明  $\theta$  的 MLE 存在且唯一, 但似然方程有多个根.
+53. 设总体 $X$ 服从混合正态分布, 即以均等概率按 $N(0,1)$ 分布和按 $N(\mu, \sigma^2)$ 分布取值, 其中 $\mu \in \mathbb{R}, \sigma^2 > 0$ 均未知. 此时 $X$ 的概率密度为
+
+$$
+f (x; \mu , \sigma^ {2}) = \frac {1}{2} \frac {1}{\sqrt {2 \pi}} \exp \{- x ^ {2} / 2 \} + \frac {1}{2} \frac {1}{\sqrt {2 \pi} \sigma} \exp \{- (x - \mu) ^ {2} / 2 \sigma^ {2} \}.
+$$
+
+设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自此混合分布总体的独立同分布样本, 证明  $\mu, \sigma^{2}$  不存在 MLE. (提示: 当  $\mu = x_{i}$ , 且  $\sigma^{2} \rightarrow 0$  时, 似然函数趋于无穷.)
+
+54. 设样本  $Y_{1}, Y_{2}, \cdots, Y_{n}$  相互独立，且  $Y_{i} \sim B(1, p_{i})$ ，而  $p_{i}$  满足线性方程
+
+$$
+\ln \frac {p _ {i}}{1 - p _ {i}} = \alpha + \beta x _ {i}, i = 1, 2, \dots , n,
+$$
+
+其中  $x_{i}$  为已知常数,  $\alpha, \beta$  为未知参数. 求  $\alpha, \beta$  的 MLE.
+
+55. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自两点分布  $B(1, \theta)$  的独立同分布样本, 其中  $\theta \in (0, 1)$ . 求在平方损失时下面估计的风险:
+
+$$
+T _ {1} (X) = \left\{ \begin{array}{c l} 0, & \text {样本中等于0的个数多于一半}, \\ 1, & \text {样本中等于1的个数多于一半}, \\ 1 / 2, & \text {样本中等于0的个数等于一半}. \end{array} \right.
+$$
+
+$$
+T _ {2} (X) = \left\{ \begin{array}{l l} {{\bar {X},}} & {{\text {概率} 1 / 2,}} \\ {{T _ {1},}} & {{\text {概率} 1 / 2.}} \end{array} \right.
+$$
+
+56. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自指数分布总体  $Exp(\theta)$  的独立同分布样本，在平方损失下，求  $\bar{X}, cX_{(1)}$  的风险，其中 c 为正常数.
+57. 设  $X_{ij} = \mu + a_i + \varepsilon_{ij}, i = 1, 2, \cdots, m, j = 1, 2, \cdots, n,$  其中  $a_i, \varepsilon_{ij}$  独立，且  $a_i \sim N(0, \sigma_a^2), \varepsilon_{ij} \sim N(0, \sigma_e^2), \mu, \sigma_a, \sigma_e$  未知.记  $\bar{X}_i = \sum_{j=1}^{n} X_{ij} / n, \bar{X} = \sum_{i=1}^{m} \bar{X}_i / m, MSA = \sum_{i=1}^{m} (\bar{X}_i - \bar{X})^2 / [n(m-1)], MSE = \sum_{i=1}^{m} \sum_{j=1}^{n} (X_{ij} - \bar{X}_i)^2 / [m(n-1)].$
+
+设  $m(n-1)>4$ ，且记  $\theta=\sigma_{a}^{2}/\sigma_{e}^{2}$ ，及  $\theta$  的估计类:
+
+$$
+\left\{\hat {\theta} (\delta) = \frac {1}{n} \left[ (1 - \delta) \frac {\mathrm{MSA}}{\mathrm{MSE}} - 1 \right]: \delta \in \mathbb {R} \right\}.
+$$
+
+(1) 证明 MSA 和 MSE 独立; (2) 求 $\delta$, 使 $\hat{\theta}(\delta)$ 是 $\theta$ 的无偏估计; (3) 求平方损失下 $\hat{\theta}(\delta)$ 的风险; (4) 证明存在一个常数 $\delta^{*} \in \mathbb{R}$, 使得对于任何固定的 $\theta, \hat{\theta}(\delta)$ 的风险当 $\delta < \delta^{*}$ 时关于 $\delta$ 递减, 当 $\delta > \delta^{*}$ 时, 关于 $\delta$ 递增.
+
+58. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自两点分布  $B(1, p)$  的独立同分布样本, 其中  $p \in (0, 1)$ . 取 p 的先验分布为  $U(0, 1)$ , 且损失  $L(p, a) = (p - 1)^{2} / [p(1 - p)]$ , 求此时关于 p 的 Bayes 估计.
+59. 设 $X$ 为来自 Poisson 分布 $P(\lambda)$ 的一个样本, 参数 $\lambda$ 的先验密度为 $\pi(\lambda) = \mathrm{e}^{-\lambda} I_{(0,\infty)}(\lambda)$. 求 $\lambda$ 的 Bayes 估计.
+60. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自均匀分布  $U(0, \theta)$  的独立同分布样本，其中  $\theta > 0$ . 取先验  $\pi(\theta)$  为 Pareto 分布  $Pa(\beta, \alpha)$ ，即  $\pi(\theta) = \alpha \beta^{\alpha} \theta^{-(\alpha+1)} I_{(\beta, \infty)}(\theta)$ ，其中  $\alpha > 0, \beta > 0$  已知. 求: (1)  $\theta$  的后验分布; (2) 在绝对损失  $L(\theta, a) = |\theta - a|$  下,  $\theta$  的 Bayes 估计.
+61. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体 X 的独立同分布样本, 且总体 X 的概率密度为
+
+$$
+f (x; \theta) = \theta \mathrm{e} ^ {- \theta x} I _ {[ 0, \infty)} (x), \quad \theta > c,
+$$
+
+其中 $c$ 为已知的正常数. 如取先验 $\pi (\theta) = \mathrm{e}^{-(\theta -c)}I_{[c,\infty)}(\theta)$, 求: (1) $\theta$ 的后验分布; (2) 在绝对损失 $L(\theta ,a) = |\theta -a|$ 下, $\theta$ 的Bayes估计.
+
+62. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体 X 的独立同分布样本,  $E(X^{2}) < \infty$ . 记  $\mu = E(X)$ , 取平方损失. 证明: (1) 对于任意两个常数 a > 1, b, 关于  $\mu$  的形如  $a\bar{X} + b$  的估计是不容许的; (2) 如  $b \neq 0$ , 则形如  $\bar{X} + b$  的估计是不容许的.
+63. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自两点分布  $B(1, \theta)$  的独立同分布样本, 其中  $\theta \in (0, 1)$ . 取损失为二次损失函数  $(\theta - a)^{2}$ , 先验分布为  $P(\theta = \theta_{0}) = 1 - P(\theta = 1 - \theta_{0}) = 1/2$ . 试决定  $\theta_{0}$ , 使在此先验下  $\theta$  的 Bayes 估计为 minimax 估计.
+
+64. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自指数分布  $Exp(\theta)$  的独立同分布样本，其中  $\theta > 0$ . 证明:(1) 任给一  $b \geqslant 0$ ,  $(n\bar{X} + b)/(n + 1)$  是平方损失下  $\theta^{-1}$  的容许估计；(2)  $(n\bar{X} + b)/(n + 1)$  是损失函数  $L(\theta, a) = \theta^{2}(1 - a/\theta)^{2}$  下  $\theta^{-1}$  的 minimax 估计；(3)  $\bar{X}$  不是  $\theta^{-1}$  的容许估计.
+65. 设样本 $X$ 来自 Poisson 分布 $P(\theta)$. 证明: 在损失函数为 $L(\theta, a) = (a - \theta)^2 / \theta$ 下, $X$ 为 $\theta$ 的容许的 minimax 估计.
+
+## 第三章
+
+## 假设检验与置信区间
+
+假设检验 (hypothesis test) 是统计推断方法的核心之一, 在当今大数据时代的真伪性判定问题中扮演着重要角色. 它是由 K. Pearson 于 20 世纪初提出的, 之后由 Fisher 进行了细化, 并最终由 Neyman (奈曼, 1894—1981) 和 E. Pearson (埃贡·皮尔逊, 或称小皮尔逊, 1895—1980) 建立了较完整的假设检验理论. 假设检验是用于决定样本数据是否支持某个特定假设的统计过程. 在本章中, 我们将介绍假设检验的基本概念、工具, 以及在数据分析中的应用. 首先, 我们将从假设检验的概述开始, 介绍假设检验的基本原理和步骤. 这包括零假设与备择假设的设置, 以及如何通过数据来支持或反驳这些假设. 接着, 我们会讨论正态总体的检验, 详细解释当总体呈现正态分布时如何进行假设检验. 这是统计分析中一个非常常见的场景, 理解这一部分对于掌握后续的统计方法至关重要. 本章还将探讨最大功效检验和似然比检验这两种高级检验方法. 最大功效检验侧重于找到在给定备择假设下, 拒绝零假设的最佳方法. 而似然比检验则利用似然比来评估两个假设中哪一个更可能正确. 这些方法在复杂数据分析中尤其有用. 最后, 我们将研究假设检验与置信区间的对偶性关系. 这部分内容将帮助我们理解这两个概念是如何相互联系的, 以及它们在实际应用中是如何互相补充的. 通过本章的学习, 读者将能够理解假设检验的基本概念, 掌握主要的检验方法, 并应用这些方法来解决实际问题.
+
+## 3.1 假设检验问题概述
+
+## 3.1.1 显著性检验思想
+
+我们先看一看 Fisher 的显著性检验思想. 下面是著名的女士品茶试验.
+
+例 3.1.1 (女士品茶试验) 一种饮料由牛奶与茶按一定比例混合而成, 可以先倒茶后倒牛奶 (记为 TM), 也可以反过来 (记为 MT). 某女士声称她可以鉴别是 TM 还是 MT. 为此 Fisher 设计了如下试验来检验她的说法是否可信. 准备八杯饮料, TM 与 MT 各一半, 把它们随机地排在一起, 让她品尝, 并告诉她 TM 与 MT 各四杯, 然后让她指出哪四杯是 TM. 假设她全说对了, 你相信她有这个能力吗?
+
+对此问题, Fisher 先引进一个假设:
+
+$$
+H _ {0}: \text {该女士并无鉴别能力}. \tag {3.1.1}
+$$
+
+当 $H_0$ 正确时, 她只能随机地指出四杯是 TM, 而从八杯中选四杯共有 $\binom{8}{4} = 70$ 种选法, 其中仅有一种判断是正确的. 于是, 当 $H_0$ 正确时, 这个女士选对四杯的概率为 $1/70$. 此时, 我们必须承认, 下述两种情况必发生其一:
+
+(1) $H_0$ 不成立, 即, 该女士有一定的鉴别力;
+
+(2) 发生了一件概率只有 1/70 的事件.
+
+显然, 由于第二种情况发生比较稀奇, 因而我们有相当的理由认为第一种情况发生了, 或者说, “该女士四杯全选对” 这一事件是一个不利于假设 $H_0$ 的显著性证据. 这样的一个推理过程就叫做显著性检验.
+
+如果该女士只说对了三杯, 则表面上看, 四杯说对了三杯已经很不错, 但我们可以计算一下, 纯粹出于碰巧而得到这个以至更好成绩的机会多大, 即当 $H_0$ 成立时, 从70种不同的挑法中, 挑对三杯以上的概率为 $17 / 70 = 0.243$. 显然发生一个概率为0.243的事件并不稀奇. 因此, 试验结果没有提供不利于 $H_0$ 的显著性证据.
+
+那我们凭什么说概率为 1/70 的事件的发生几乎不可能, 而概率为 17/70 的可能性就大了呢? 并且概率小到多少才认为不可能呢? 之所以提出这个问题, 是由于此值的大小与最终的判断结果有着直接的关系. 于是, 为了得到一个大家都认可的判决, 人们就必须事先指定一个临界值 (threshold) $\alpha$, 比如常取 0.01, 0.05, 0.1 等. 只有当计算所得的概率小于 $\alpha$ 时, 才认为是小概率事件, 即结果是显著的, 也就是说提供了不利于 $H_0$ 的显著性证据. 如在上面的品茶试验中, 如取 $\alpha = 0.01$, 则即使四杯全说对, 那我们也不能认为结果显著, 这是因为 $1/70 > 0.01$. 而如取 $\alpha = 0.05$, 则说对四杯就可以认为显著了. 所以, Fisher 认为, 在做检验之前要先设定好 $\alpha$. 在后面, 我们称这样的 $\alpha$ 为显著性水平 (significance level), 它越小, 获得显著性结果越难, 即越难拒绝 $H_0$. 我们称这样的检验为显著性检验.
+
+下面我们介绍几个有关假设检验的基本概念.
+
+## 3.1.2 基本概念
+
+假设检验在我们的实际生活中有很多应用, 尤其是在现在的商品经济社会中. 在讲述基本概念前, 我们再看一个例子.
+
+例 3.1.2 某电商在把产品卖给用户之前, 与用户约定: 如果此批产品的次品率小于某个给定值, 如 0.05, 则用户接受这批产品, 否则拒收. 同时, 双方同意从此批产品中随机地抽取 n 件产品以估计其次品率 p. 现以 X 记抽取 n 件产品中的次品数, 则用户如何根据 X 的大小来决定是否接受这批产品?
+
+对于此问题, 如我们假设 X 服从二项分布  $B(n,p)$ , 则上述问题就可以归结成如下的统计问题: 设有来自二项分布  $B(n,p)$  的样本 X, 我们如何根据 X 的观测值对命题  $H_{0}: p \leqslant 0.05$  作出 “对” 或 “不对” 的判断.
+
+在统计或数据科学中, 我们把这种需要根据样本去推断其 “正确” 与否的命题, 称为一个假设或统计假设. 假设可以是关于某些感兴趣的参数, 也可以是关于分布的. 通过样本对一个假设作出 “对” 或 “不对” 的具体判断规则被称为该假设的一个检验. 检验的结果如果是否定该命题, 就称拒绝 (reject) 该假设; 否则, 就称接受 (accept) 该假设. 我们注意到, 这里的 “接受” 或 “拒绝” 一个假设的行为, 只是反映了当事者在给定样本之下对该命题所采取的一种 (决策) 态度, 是一种 “自愿” 行为, 而不是从逻辑上或理论上 “证明” 该命题正确与否. 于是, 我们经常对 “接受” 一个假设换一个说法, 称为 “不能拒绝” (retain) 此假设. 这是由于我们所应用的样本是随机的, 故我们所采取的决策可能是错误的 (在现代很多应用中, 人们也不再特别纠结这种术语上的区别).
+
+对于例 3.1.2, 我们可以把假设检验问题总结如下: 设有样本 X, 取值于样本空间 X, 且知道样本来自某一个参数分布族  $\{F(x,\theta):\theta\in\Theta\}$ , 其中  $\Theta$  为参数空间. 设  $\Theta_{0}\subset\Theta$ , 且  $\Theta_{0}\neq\varnothing$ , 则命题  $H_{0}:\theta\in\Theta_{0}$  称为一个假设或零假设 (null hypothesis) 或原假设. 如记  $\Theta_{1}=\Theta-\Theta_{0}$ , 则命题  $H_{1}:\theta\in\Theta_{1}$  称为  $H_{0}$  的对立假设或备择假设 (alternative hypothesis). 于是, 我们感兴趣的假设就是
+
+$$
+H _ {0}: \theta \in \Theta_ {0} \longleftrightarrow H _ {1}: \theta \in \Theta_ {1}. \tag {3.1.2}
+$$
+
+在实际应用中, 零假设的选取很多时候是有技巧的, 要针对所研究的问题具体处理. 比如, 在例 3.1.1 的女士品茶试验中, 如我们不取 (3.1.1) 式的假设作为零假设, 而取 $H_0$: 该女士有鉴别能力, 作为零假设, 由于我们无法对 “有鉴别能力” 进行模型处理, 故我们就无法进行上面的统计分析, 也就得不到任何结论. 又如, 对于例 3.1.2, 参数空间 $\Theta = (0,1), \Theta_0 = (0,0.05]$, 由于假设完全可由参数表示出来, 故与例 3.1.1 有所不同.
+
+对于假设 (3.1.2), 如果 $\Theta_0$ 只有一个点, 则我们称之为简单 (simple) 假设, 否则就称之为复合 (composite) 假设. 同样, 备择假设也有简单与复合之别. 当 $H_0$ 为简单假设时, 其形式可写成 $H_0: \theta = \theta_0$. 此时备择假设有两种可能:
+
+$$
+H _ {1} ^ {\prime}: \theta \neq \theta_ {0}, \quad H _ {1} ^ {\prime \prime}: \theta <   \theta_ {0} \text {或} \theta > \theta_ {0}.
+$$
+
+我们称  $H_{0} \leftrightarrow H_{1}^{\prime}$  为双边的 (或双侧的),  $H_{0} \leftrightarrow H_{1}^{\prime\prime}$  为单边的 (或单侧的).
+
+对于假设 (3.1.2) 的检验就是指如下的法则或策略: 当有了具体的样本后, 由该法则或策略就可决定是接受 $H_0$ 还是拒绝 $H_0$, 即检验就等价于把样本空间 $\mathcal{X}$ 划分成两个互不相交的部分 $\mathcal{W}$ 和 $\mathcal{W}^c$, 当样本属于 $\mathcal{W}^c$ 时, 接受 $H_0$; 否则拒绝 $H_0$. 于是, 我们称 $\mathcal{W}$ 为该检验的拒绝域, 而 $\mathcal{W}^c$ 为接受域. 对于例 3.1.2, 其零假设与备择假设均是复合的, 而此检验的拒绝域为 $\{X > c\}$, 其中常数 $c$ 由买卖双方协商决定, 其与前面提到的 $\alpha$ 有关, 称为 $\alpha$ 的临界值.
+
+假设检验类似于法律中的无罪推定. 我们假定某人是无罪的, 除非证据强烈表明他有罪. 类似地, 我们会保留 (不拒绝) 原假设, 除非有强有力的证据来拒绝它. 这时候, 显然我们可能犯两种类型的错误. 在原假设为真时拒绝它被称为第一类错误 (type I error). 在备择假设为真时接受原假设被称为第二类错误 (type II error), 见表 3.1.1.
+
+表 3.1.1 两类错误
+
+| 决策 | $H_0$为真 | $H_1$为真 |
+| --- | --- | --- |
+| 接受 $H_0$ | 正确 | 第二类错误 |
+| 拒绝 $H_0$ | 第一类错误 | 正确 |
+
+我们也常称第一、二类错误为拒真与纳伪. 由于上述两种错误决策受随机样本的影响, 因此我们定义犯第一、二类错误的概率如下:
+
+第一类错误概率: $\alpha = P_{\theta}(X \in \mathcal{W})$, $\theta \in \Theta_0$, 也记为 $P_{H_0}(X \in \mathcal{W})$;
+
+第二类错误概率:  $\beta = P_{\theta}(X \in \mathcal{W}^{c})$ ,  $\theta \in \Theta_{1}$ , 也记为  $P_{H_{1}}(X \in \mathcal{W}^{c})$ .
+
+既然一个检验都有如上两类错误, 那我们能否找到一个检验, 使其犯两类错误的概率都尽可能地小呢? 实际上, 我们做不到这一点. 为了说明其原因, 我们先引进如下的功效函数 (power function) 或势函数的概念.
+
+定义 3.1.1(功效函数) 对于假设 (3.1.2) 的一个检验方法  $\psi$ ，其拒绝域记为 W，则我们称
+
+$$
+\beta_ {\psi} (\theta) = P _ {\theta} (X \in \mathcal {W}), \forall \theta \in \Theta \tag {3.1.3}
+$$
+
+为此检验的功效函数或势函数.
+
+从这一定义可以看出, 当  $\theta \in \Theta_{0}$  时, 此检验犯第一类错误的概率等于其功效函数  $\beta_{\psi}(\theta)$ ; 而当  $\theta \in \Theta_{1}$  时, 检验犯第二类错误的概率等于  $1 - \beta_{\psi}(\theta)$ .
+
+下面我们通过一个例子说明我们无法使一个检验的第一、二类错误概率都尽可能地小.
+
+例 3.1.3 如何判断商家欺骗顾客: 如果买到标记是 500 g 的一袋巧克力, 其实际质量为 400 g, 能告商家欺诈吗?
+
+解 如以  $\mu$  表示商家生产此种巧克力每袋的平均质量, 则我们要检验的假设为
+
+$$
+H _ {0}: \mu = 5 0 0 \leftrightarrow H _ {1}: \mu <   5 0 0.
+$$
+
+顾客为了打官司, 就要搜集证据, 假设他又买了 n 袋巧克力, 称其质量为  $X_{1}, X_{2}, \cdots, X_{n}$ , 显然如果  $\bar{X} = \sum_{i=1}^{n} X_{i}/n$  远小于 500, 这场官司就有胜的把握, 即当  $\bar{X} - 500 < c$  时, 我们可以拒绝  $H_{0}$ , 于是, 取拒绝域为  $\{X : \bar{X} - 500 < c\}$  是合理的. 至于如何确定常数 c, 就要依赖错误概率的选取.
+
+如假设总体服从 $N(\mu, \sigma_0^2)$，且 $\sigma_0$ 已知。由定义3.1.1知，这个检验的功效函数为 $\beta(\mu) = P_{\mu}(\bar{X} < 500 + c)$。这样其第一、二类错误概率分别为
+
+$$
+\alpha = P _ {\mu = 5 0 0} \left(\bar {X} <   5 0 0 + c\right) = P _ {\mu = 5 0 0} \left(\frac {\bar {X} - 5 0 0}{\sigma_ {0} / \sqrt {n}} <   \frac {c}{\sigma_ {0} / \sqrt {n}}\right) = \varPhi (\sqrt {n} c / \sigma_ {0}),
+$$

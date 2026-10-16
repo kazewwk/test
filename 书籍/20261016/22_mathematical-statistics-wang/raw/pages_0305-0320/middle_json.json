@@ -1,0 +1,7027 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "created_at": "2026-05-30T23:42:17+08:00",
+      "producer_application": "jsPDF 2.4.0",
+      "page_count": 373,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 304,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 305,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 306,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 307,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 308,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 309,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 310,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 311,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 312,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 313,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 314,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 315,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 316,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 317,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 318,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 319,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 304,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.08,
+            0.068,
+            0.109,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "292"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.265,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第六章 非参数方法"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 2,
+          "bbox": [
+            0.164,
+            0.12,
+            0.83,
+            0.208
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 3,
+              "bbox": [
+                0.164,
+                0.12,
+                0.83,
+                0.152
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "- Cramér-von Mises (克拉默-冯·米泽斯) 统计量: "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "C_n = \\int [F_n(x) - F_0(x)]^2 \\mathrm{d}F_0(x)"
+                },
+                {
+                  "type": "text",
+                  "content": "."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 4,
+              "bbox": [
+                0.164,
+                0.155,
+                0.83,
+                0.208
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "- Anderson-Darling (安德森-达林) 统计量: "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "n \\int w(x)[F_n(x) - F_0(x)]^2 \\mathrm{d}F_0(x)"
+                },
+                {
+                  "type": "text",
+                  "content": ", 其中 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "w(x) = [x(1 - x)]^{-1/2}"
+                },
+                {
+                  "type": "text",
+                  "content": "."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.122,
+            0.213,
+            0.832,
+            0.276
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Kolmogorov-Smirnov 统计量度量了经验分布函数和总体分布的差异的最大值, Cramér-von Mises 检验统计量考虑经验分布函数和总体分布的差异在密度函数意义下的加权平均. Cramér-von Mises 检验统计量有下面的极限分布:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.381,
+            0.29,
+            0.572,
+            0.333
+          ],
+          "image_path": "images/page_304_equation_6.jpg",
+          "content": "n C _ {n} \\xrightarrow {\\mathrm{d}} \\sum_ {j = 0} ^ {\\infty} j ^ {- 2} \\pi^ {- 2} \\chi_ {1 j} ^ {2},"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.123,
+            0.349,
+            0.801,
+            0.369
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\chi_{1j}^{2}"
+            },
+            {
+              "type": "text",
+              "content": "  独立同分布于  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\chi_{1}^{2}"
+            },
+            {
+              "type": "text",
+              "content": "  分布. Anderson-Darling 统计量采用更灵活的加权平均."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 8,
+          "bbox": [
+            0.16,
+            0.394,
+            0.353,
+            0.413
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "6.3.4 正态性检验"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.122,
+            0.437,
+            0.832,
+            0.593
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "前面提到的  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\chi^{2}"
+            },
+            {
+              "type": "text",
+              "content": "  拟合优度检验和 Kolmogorov-Smirnov 检验方法等方法对于总体分布没有做特殊限制, 即其可适用于正态分布, 也可适用于其他分布类型. 正态分布在统计学中占有特殊地位. 许多统计推断方法都是基于正态总体的, 因此检验数据是否服从正态分布是很有意义的. 有必要针对数据是否服从正态分布给出特殊的检验方法. 本小节介绍另两种有更高检验功效的常用检验方法, 即 Shapiro-Wilk 的 W 检验和 D'Agostino 的 D 检验. 我国已把这两个方法列入了国家标准. 当样本量  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\leqslant 50"
+            },
+            {
+              "type": "text",
+              "content": "  时, 用 W 检验; 当样本量 n > 50 时, 用 D 检验."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.123,
+            0.599,
+            0.831,
+            0.636
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "为了方便, 本小节始终假设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  为来自总体为 F 的独立同分布样本, 现感兴趣的假设为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.303,
+            0.636,
+            0.652,
+            0.672
+          ],
+          "image_path": "images/page_304_equation_11.jpg",
+          "content": "H _ {0}: F (x) \\in \\left\\{\\varPhi \\left(\\frac {x - \\mu}{\\sigma}\\right): \\mu \\in \\mathbb {R}, \\sigma > 0 \\right\\}."
+        },
+        {
+          "type": "paragraph_title",
+          "index": 12,
+          "bbox": [
+            0.161,
+            0.681,
+            0.264,
+            0.699
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "1. W 检验"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.123,
+            0.713,
+            0.83,
+            0.752
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "W 检验是 S. Shapiro (夏皮罗) 和 M. Wilk (威尔克) 提出的, 参见 Shapiro et al. (1965). W 检验的检验统计量为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.314,
+            0.767,
+            0.641,
+            0.849
+          ],
+          "image_path": "images/page_304_equation_14.jpg",
+          "content": "W = \\frac {\\left(\\sum_ {k = 1} ^ {[ n / 2 ]} a _ {k} (n) (X _ {(n + 1 - k)} - X _ {(k)})\\right) ^ {2}}{\\sum_ {i = 1} ^ {n} (X _ {(i)} - \\bar {X}) ^ {2}},"
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.123,
+            0.863,
+            0.83,
+            0.903
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{(1)} \\leqslant X_{(2)} \\leqslant \\cdots \\leqslant X_{(n)}"
+            },
+            {
+              "type": "text",
+              "content": "  为次序统计量,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{a_{k}(n)\\}"
+            },
+            {
+              "type": "text",
+              "content": "  是一组给定的与 n 有关的常数, 可查表求得. W 检验的拒绝域为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 16,
+          "bbox": [
+            0.436,
+            0.91,
+            0.518,
+            0.928
+          ],
+          "image_path": "images/page_304_equation_16.jpg",
+          "content": "\\{W <   c \\},"
+        }
+      ]
+    },
+    {
+      "page_idx": 305,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.742,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "6.3 拟合优度检验"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.069,
+            0.917,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "293"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.165,
+            0.122,
+            0.48,
+            0.139
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中临界值 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c"
+            },
+            {
+              "type": "text",
+              "content": " 满足 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(W < c|H_0) = \\alpha"
+            },
+            {
+              "type": "text",
+              "content": "."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.203,
+            0.145,
+            0.405,
+            0.16
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "此检验的理由大致如下:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.165,
+            0.16,
+            0.875,
+            0.21
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  为来自  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N(\\mu, \\sigma^{2})"
+            },
+            {
+              "type": "text",
+              "content": "  的独立同分布样本，如记  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{i} = \\frac{X_{(i)} - \\mu}{\\sigma}, m_{i} = E(Y_{i}), \\varepsilon_{i} = X_{(i)} - E[X_{(i)}]"
+            },
+            {
+              "type": "text",
+              "content": " ，则知  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "m_{i}"
+            },
+            {
+              "type": "text",
+              "content": "  是与  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu, \\sigma"
+            },
+            {
+              "type": "text",
+              "content": "  无关的常数，且有"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.432,
+            0.228,
+            0.605,
+            0.246
+          ],
+          "image_path": "images/page_305_equation_5.jpg",
+          "content": "X _ {(i)} = \\mu + \\sigma m _ {i} + \\varepsilon_ {i}."
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.164,
+            0.263,
+            0.871,
+            0.302
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由于当 n 较大时,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{(i)} \\approx E[X_{(i)}]"
+            },
+            {
+              "type": "text",
+              "content": " , 因而  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\varepsilon_{i}"
+            },
+            {
+              "type": "text",
+              "content": "  较小. 于是 n 个点  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{(X_{(i)}, m_{i}) : i = 1, 2, \\cdots, n\\}"
+            },
+            {
+              "type": "text",
+              "content": "  近似在一条直线上."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.203,
+            0.308,
+            0.719,
+            0.325
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "为区别这 n 个点是否在一条直线上, 可采用下面的  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "R^{2}"
+            },
+            {
+              "type": "text",
+              "content": "  统计量:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.328,
+            0.34,
+            0.872,
+            0.429
+          ],
+          "image_path": "images/page_305_equation_8.jpg",
+          "content": "R ^ {2} = \\left\\{\\frac {\\sum_ {i = 1} ^ {n} [ X _ {(i)} - \\bar {X} ] (m _ {i} - \\bar {m})}{\\sqrt {\\sum_ {i = 1} ^ {n} [ X _ {(i)} - \\bar {X} ] ^ {2} \\sum_ {i = 1} ^ {n} (m _ {i} - \\bar {m}) ^ {2}}} \\right\\} ^ {2}, \\tag {6.3.6}"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.165,
+            0.445,
+            0.871,
+            0.498
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\bar{m}=\\sum_{i=1}^{n}m_{i}/n."
+            },
+            {
+              "type": "text",
+              "content": "  当  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{0}"
+            },
+            {
+              "type": "text",
+              "content": "  成立时, 即  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{i}"
+            },
+            {
+              "type": "text",
+              "content": "  服从  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N(\\mu,\\sigma^{2})"
+            },
+            {
+              "type": "text",
+              "content": "  时, (6.3.6) 式的  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "R^{2}"
+            },
+            {
+              "type": "text",
+              "content": "  应接近 1.\n于是, 当  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "R^{2}"
+            },
+            {
+              "type": "text",
+              "content": "  远离 1 时, 有理由拒绝  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{0}"
+            },
+            {
+              "type": "text",
+              "content": " ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.165,
+            0.504,
+            0.873,
+            0.567
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由于  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N(0,1)"
+            },
+            {
+              "type": "text",
+              "content": "  是对称分布, 故当  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{0}"
+            },
+            {
+              "type": "text",
+              "content": "  成立时,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(Y_{1}, Y_{2}, \\cdots, Y_{n})"
+            },
+            {
+              "type": "text",
+              "content": "  与  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(-Y_{1}, -Y_{2}, \\cdots, -Y_{n})"
+            },
+            {
+              "type": "text",
+              "content": "  有相同的联合分布, 从而  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{k}"
+            },
+            {
+              "type": "text",
+              "content": "  与  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "-Y_{n+1-k}"
+            },
+            {
+              "type": "text",
+              "content": "  也有相同的分布, 故  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "m_{k} = -m_{n+1-k}, \\bar{m} = 0"
+            },
+            {
+              "type": "text",
+              "content": " . 于是,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.218,
+            0.58,
+            0.873,
+            0.662
+          ],
+          "image_path": "images/page_305_equation_11.jpg",
+          "content": "R ^ {2} = \\frac {\\left(\\sum_ {i = 1} ^ {n} X _ {(i)} m _ {i}\\right) ^ {2}}{\\sum_ {i = 1} ^ {n} (X _ {(i)} - \\bar {X}) ^ {2} \\sum_ {i = 1} ^ {n} m _ {i} ^ {2}} = \\frac {\\left(\\sum_ {k = 1} ^ {[ n / 2 ]} m _ {n + 1 - k} (X _ {(n + 1 - k)} - X _ {(k)})\\right) ^ {2}}{\\sum_ {i = 1} ^ {n} (X _ {(i)} - \\bar {X}) ^ {2} \\sum_ {i = 1} ^ {n} m _ {i} ^ {2}}, \\tag {6.3.7}"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.166,
+            0.676,
+            0.208,
+            0.691
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "如取"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.425,
+            0.694,
+            0.611,
+            0.748
+          ],
+          "image_path": "images/page_305_equation_13.jpg",
+          "content": "a _ {k} (n) = \\frac {m _ {n + 1 - k}}{\\left(\\sum_ {i = 1} ^ {n} m _ {i} ^ {2}\\right) ^ {1 / 2}},"
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.165,
+            0.757,
+            0.285,
+            0.773
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "则知 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "W = R^2"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.204,
+            0.781,
+            0.397,
+            0.797
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "为理解 (6.3.7) 式, 定义"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 16,
+          "bbox": [
+            0.289,
+            0.813,
+            0.748,
+            0.855
+          ],
+          "image_path": "images/page_305_equation_16.jpg",
+          "content": "Q ^ {2} = \\sum_ {i = 1} ^ {n} (X _ {(i)} - \\bar {X}) ^ {2}, \\hat {\\sigma} = \\sum_ {i = 1} ^ {n} b _ {i} X _ {(i)}, b _ {i} = m _ {i} / \\sum_ {i = 1} ^ {n} m _ {i} ^ {2},"
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.165,
+            0.87,
+            0.318,
+            0.887
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "则 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "R^2"
+            },
+            {
+              "type": "text",
+              "content": " 可以重写成"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 18,
+          "bbox": [
+            0.437,
+            0.888,
+            0.6,
+            0.929
+          ],
+          "image_path": "images/page_305_equation_18.jpg",
+          "content": "R ^ {2} = \\sum_ {i = 1} ^ {n} m _ {i} ^ {2} \\hat {\\sigma} ^ {2} / Q ^ {2}."
+        }
+      ]
+    },
+    {
+      "page_idx": 306,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.08,
+            0.068,
+            0.107,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "294"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.264,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第六章 非参数方法"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.122,
+            0.121,
+            0.832,
+            0.207
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "注意到, 无论样本是否正态, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Q^2"
+            },
+            {
+              "type": "text",
+              "content": " 经修正后都可以成为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma^2"
+            },
+            {
+              "type": "text",
+              "content": " 的一个 UE, 而分子 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\sigma}"
+            },
+            {
+              "type": "text",
+              "content": " 是样本的线性函数, 且当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_0"
+            },
+            {
+              "type": "text",
+              "content": " 成立时它是 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma"
+            },
+            {
+              "type": "text",
+              "content": " 的 UE, 于是 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\sigma}^2"
+            },
+            {
+              "type": "text",
+              "content": " 也可成为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma^2"
+            },
+            {
+              "type": "text",
+              "content": " 的一个估计. 这样, 在正态性假设下, 二者的差别不应很大. 这就是采用 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "R^2"
+            },
+            {
+              "type": "text",
+              "content": " 来检验正态性假设的一个直观解释. 为了扩大这个差异, Shapiro 和 Wilk 把上述的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\sigma}"
+            },
+            {
+              "type": "text",
+              "content": " 换为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma"
+            },
+            {
+              "type": "text",
+              "content": " 的 BLUE"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.395,
+            0.218,
+            0.83,
+            0.259
+          ],
+          "image_path": "images/page_306_equation_3.jpg",
+          "content": "\\hat {\\sigma} ^ {\\prime} = \\sum_ {i = 1} ^ {n} c _ {i} X _ {(i)}, \\tag {6.3.8}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.124,
+            0.27,
+            0.334,
+            0.286
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "就得到了 W 检验统计量."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.16,
+            0.302,
+            0.257,
+            0.318
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2. D 检验"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.122,
+            0.333,
+            0.83,
+            0.373
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "W 检验虽有效, 但可惜的是它只适用于容量 3—50 的样本, 其主要原因是, 对超过 50 的样本容量 n, 很难计算其分位数值. 为此, D'Agostino (1971) 提出了 D 检验."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.122,
+            0.379,
+            0.832,
+            0.496
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由 W 统计量的定义不难看出, 如果不计常数因子, 它是正态分布的标准差  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma"
+            },
+            {
+              "type": "text",
+              "content": "  的 BLUE 与样本标准差的比值的平方, 即关于  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma"
+            },
+            {
+              "type": "text",
+              "content": "  的两个估计量的比值的平方. 由于 BLUE 的系数计算是繁杂的, 且随着样本量的增加, 这种繁杂在增加. 随着样本量的增加, 不得不放弃用 BLUE 来构造检验统计量. 因此, D'Agostino 建议, 在样本容量超过 50 时, 用  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i - \\frac{n + 1}{2}"
+            },
+            {
+              "type": "text",
+              "content": "  来代替 BLUE (6.3.8) 式中的  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c_{i}"
+            },
+            {
+              "type": "text",
+              "content": " , 即考虑用"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.37,
+            0.505,
+            0.585,
+            0.546
+          ],
+          "image_path": "images/page_306_equation_8.jpg",
+          "content": "T = \\sum_ {i = 1} ^ {n} \\left(i - \\frac {n + 1}{2}\\right) X _ {(i)}"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.124,
+            0.557,
+            0.596,
+            0.573
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "作为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma"
+            },
+            {
+              "type": "text",
+              "content": " 的一个线性无偏估计. 再考虑到 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n"
+            },
+            {
+              "type": "text",
+              "content": " 的阶, 用统计量"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.361,
+            0.584,
+            0.593,
+            0.664
+          ],
+          "image_path": "images/page_306_equation_10.jpg",
+          "content": "D _ {n} = \\frac {\\sum_ {i = 1} ^ {n} \\left(i - \\frac {n + 1}{2}\\right) X _ {(i)}}{n ^ {3 / 2} \\sqrt {\\sum_ {i = 1} ^ {n} (X _ {i} - \\bar {X}) ^ {2}}},"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.123,
+            0.674,
+            0.667,
+            0.69
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "作为正态性检验统计量, 且当它远离 1 时, 有理由拒绝正态性假设."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.16,
+            0.697,
+            0.551,
+            0.714
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "为求取其极限零分布, 可以证明, 当  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{0}"
+            },
+            {
+              "type": "text",
+              "content": "  成立时,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.248,
+            0.727,
+            0.705,
+            0.747
+          ],
+          "image_path": "images/page_306_equation_13.jpg",
+          "content": "E (D _ {n}) = 0. 2 8 2 0 9 4 7 9, \\sqrt {\\mathrm{Var} (D _ {n})} = 0. 0 2 9 9 8 5 9 8 / \\sqrt {n},"
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.124,
+            0.76,
+            0.376,
+            0.776
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "故采用如下的标准化随机变量"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.354,
+            0.782,
+            0.599,
+            0.816
+          ],
+          "image_path": "images/page_306_equation_15.jpg",
+          "content": "Y _ {n} = \\frac {\\sqrt {n} (D _ {n} - 0 . 2 8 2 0 9 4 7 9)}{0 . 0 2 9 9 8 5 9 8}"
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.124,
+            0.823,
+            0.386,
+            0.839
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "作为检验统计量, 且其拒绝域为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 17,
+          "bbox": [
+            0.382,
+            0.855,
+            0.572,
+            0.873
+          ],
+          "image_path": "images/page_306_equation_17.jpg",
+          "content": "\\{Y _ {n} <   c _ {1} \\} \\cup \\{Y _ {n} > c _ {2} \\},"
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.123,
+            0.887,
+            0.234,
+            0.903
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c_{1} < c_{2}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 19,
+          "bbox": [
+            0.16,
+            0.909,
+            0.462,
+            0.926
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "关于 D 检验的分位数现已有表可查."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 307,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.757,
+            0.068,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "6.4 独立性检验"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.069,
+            0.917,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "295"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.165,
+            0.12,
+            0.367,
+            0.141
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "6.4 独立性检验"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.204,
+            0.188,
+            0.75,
+            0.205
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "当研究两个分类变量 A 和 B 之间是否独立时, 即考虑如下的假设:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.411,
+            0.222,
+            0.871,
+            0.239
+          ],
+          "image_path": "images/page_307_equation_4.jpg",
+          "content": "H _ {0}: \\text {变量} A \\text {与} B \\text {独立}, \\tag {6.4.1}"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.164,
+            0.254,
+            0.873,
+            0.317
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "此时, 常用的检验方法是使用列联表, 其为这两个变量交叉分类的频数分布表. 交叉分类的目的是将多个变量分组, 然后比较各组的分布状况, 以寻找变量间是否存在相关性等关系. 列联表的方法也可以检验多个分类变量之间是否独立."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.164,
+            0.323,
+            0.874,
+            0.432
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "按两个变量交叉分类的列联表称为二维列联表, 如例 6.3.4 中的色盲和性别是两个变量; 若按三个变量交叉分类, 所得的列联表称为三维列联表, 以此类推. 三维及以上的列联表称为 “多维列联表” 或 “高维列联表”. 列联表分析主要包括两个任务: 一是根据收集的样本数据, 产生二维或多维列联表; 二是在列联表的基础上, 通过检验统计量对变量间是否存在相关性进行检验."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.164,
+            0.438,
+            0.873,
+            0.513
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "一般的二维列联表数据如表 6.4.1 所示, 其中, 变量 A, B 分别有 r, s 个水平, 且以  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n_{ij}"
+            },
+            {
+              "type": "text",
+              "content": "  表示在 n 个样本中属于  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A_{i} \\cap B_{j}"
+            },
+            {
+              "type": "text",
+              "content": "  的样本个数,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n_{i.} = \\sum_{j=1}^{s} n_{ij}"
+            },
+            {
+              "type": "text",
+              "content": "  和  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n_{.j} = \\sum_{i=1}^{r} n_{ij}"
+            },
+            {
+              "type": "text",
+              "content": "  分别表示 A 取第 i 个水平和 B 取第 j 个水平的样本个数. 记"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.298,
+            0.53,
+            0.738,
+            0.549
+          ],
+          "image_path": "images/page_307_equation_8.jpg",
+          "content": "p _ {i j} = P (X \\in A _ {i} \\cap B _ {j}), i = 1, 2, \\dots , r, j = 1, 2, \\dots , s,"
+        },
+        {
+          "type": "table",
+          "index": 10,
+          "bbox": [
+            0.167,
+            0.59,
+            0.878,
+            0.751
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 9,
+              "bbox": [
+                0.416,
+                0.572,
+                0.622,
+                0.587
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "表 6.4.1 二维列联表数据"
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 10,
+              "bbox": [
+                0.167,
+                0.59,
+                0.878,
+                0.751
+              ],
+              "image_path": "images/page_307_table_10.jpg",
+              "content": "<table><tr><td rowspan=\"2\">A</td><td colspan=\"4\">B</td><td rowspan=\"2\">总计</td></tr><tr><td><eq>B_1</eq></td><td><eq>B_2</eq></td><td>...</td><td><eq>B_s</eq></td></tr><tr><td><eq>A_1</eq></td><td><eq>n_{11}</eq></td><td><eq>n_{12}</eq></td><td>...</td><td><eq>n_{1s}</eq></td><td><eq>n_{1.}</eq></td></tr><tr><td><eq>A_2</eq></td><td><eq>n_{21}</eq></td><td><eq>n_{22}</eq></td><td>...</td><td><eq>n_{2s}</eq></td><td><eq>n_{2.}</eq></td></tr><tr><td><eq>\\vdots</eq></td><td><eq>\\vdots</eq></td><td><eq>\\vdots</eq></td><td></td><td><eq>\\vdots</eq></td><td><eq>\\vdots</eq></td></tr><tr><td><eq>A_r</eq></td><td><eq>n_{r1}</eq></td><td><eq>n_{r2}</eq></td><td>...</td><td><eq>n_{rs}</eq></td><td><eq>n_{r.}</eq></td></tr><tr><td>总计</td><td><eq>n_{.1}</eq></td><td><eq>n_{.2}</eq></td><td>...</td><td><eq>n_{.s}</eq></td><td>n</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.165,
+            0.773,
+            0.614,
+            0.79
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "则这 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n"
+            },
+            {
+              "type": "text",
+              "content": " 个样本可以看成是来自多项分布 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " 的样本. 令"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.384,
+            0.807,
+            0.653,
+            0.825
+          ],
+          "image_path": "images/page_307_equation_12.jpg",
+          "content": "p _ {i.} = P (X \\in A _ {i}), i = 1, 2, \\dots , r,"
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.382,
+            0.84,
+            0.655,
+            0.858
+          ],
+          "image_path": "images/page_307_equation_13.jpg",
+          "content": "p _ {\\cdot j} = P (X \\in B _ {j}), j = 1, 2, \\dots , s,"
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.166,
+            0.869,
+            0.207,
+            0.884
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "则有"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.407,
+            0.887,
+            0.629,
+            0.929
+          ],
+          "image_path": "images/page_307_equation_15.jpg",
+          "content": "p _ {i.} = \\sum_ {j = 1} ^ {s} p _ {i j}, p _ {. j} = \\sum_ {i = 1} ^ {r} p _ {i j}."
+        }
+      ]
+    },
+    {
+      "page_idx": 308,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.08,
+            0.068,
+            0.107,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "296"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.264,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第六章 非参数方法"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.124,
+            0.122,
+            0.393,
+            0.138
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "另外, 还要注意到如下两个约束:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.374,
+            0.152,
+            0.83,
+            0.194
+          ],
+          "image_path": "images/page_308_equation_3.jpg",
+          "content": "\\sum_ {i = 1} ^ {r} p _ {i.} = \\sum_ {j = 1} ^ {s} p _ {. j} = 1. \\tag {6.4.2}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.123,
+            0.208,
+            0.83,
+            0.247
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_0"
+            },
+            {
+              "type": "text",
+              "content": " 成立时, 对于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A"
+            },
+            {
+              "type": "text",
+              "content": " 和 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B"
+            },
+            {
+              "type": "text",
+              "content": " 这两个离散型随机变量, 应有 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p_{ij} = p_i \\cdot p_j"
+            },
+            {
+              "type": "text",
+              "content": ". 于是, (6.4.1)式的零假设等价于如下假设:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.267,
+            0.266,
+            0.83,
+            0.283
+          ],
+          "image_path": "images/page_308_equation_5.jpg",
+          "content": "H _ {0}: p _ {i j} = p _ {i}. p _ {. j}, i = 1, 2, \\dots , r, j = 1, 2, \\dots , s. \\tag {6.4.3}"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.123,
+            0.298,
+            0.832,
+            0.361
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由于可以把上述列联表数据看作是多项分布的样本, 故可以用  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\chi^{2}"
+            },
+            {
+              "type": "text",
+              "content": "  拟合优度检验对其独立性假设 (6.4.3) 进行显著性检验. 由于  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p_{i}"
+            },
+            {
+              "type": "text",
+              "content": " . 和  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p_{\\cdot j}"
+            },
+            {
+              "type": "text",
+              "content": "  是未知的, 且有两个约束 (6.4.2), 故当  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{0}"
+            },
+            {
+              "type": "text",
+              "content": "  成立时共有  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r + s - 2"
+            },
+            {
+              "type": "text",
+              "content": "  个未知参数. 此时, 其未知参数的最大似然估计为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.265,
+            0.373,
+            0.688,
+            0.402
+          ],
+          "image_path": "images/page_308_equation_7.jpg",
+          "content": "\\hat {p} _ {i \\cdot} = \\frac {n _ {i \\cdot}}{n}, \\hat {p} _ {\\cdot j} = \\frac {n _ {\\cdot j}}{n}, i = 1, 2, \\dots , r, j = 1, 2, \\dots , s."
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.124,
+            0.412,
+            0.538,
+            0.429
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "于是, 对于二维列联表,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\chi^{2}"
+            },
+            {
+              "type": "text",
+              "content": "  拟合优度检验统计量为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.347,
+            0.441,
+            0.607,
+            0.495
+          ],
+          "image_path": "images/page_308_equation_9.jpg",
+          "content": "\\chi^ {2} = n \\sum_ {i = 1} ^ {r} \\sum_ {j = 1} ^ {s} \\frac {\\left(n _ {i j} - \\frac {n _ {i} . n _ {. j}}{n}\\right) ^ {2}}{n _ {i} . n _ {. j}},"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.124,
+            0.508,
+            0.568,
+            0.525
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "且当  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{0}"
+            },
+            {
+              "type": "text",
+              "content": "  成立及  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\rightarrow \\infty"
+            },
+            {
+              "type": "text",
+              "content": "  时, 根据 (6.3.4) 式的结果, 有"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.275,
+            0.54,
+            0.676,
+            0.561
+          ],
+          "image_path": "images/page_308_equation_11.jpg",
+          "content": "\\chi^ {2} \\xrightarrow {\\mathrm{d}} \\chi^ {2} (r s - r - s + 2 - 1) = \\chi^ {2} ((r - 1) (s - 1)),"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.124,
+            0.576,
+            0.506,
+            0.592
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "于是, 此检验的近似水平为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha"
+            },
+            {
+              "type": "text",
+              "content": "  的检验拒绝域为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.367,
+            0.609,
+            0.587,
+            0.629
+          ],
+          "image_path": "images/page_308_equation_13.jpg",
+          "content": "\\{\\chi^ {2} \\geqslant \\chi_ {\\alpha} ^ {2} ((r - 1) (s - 1)) \\}."
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.123,
+            0.643,
+            0.83,
+            0.683
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "对于例 6.3.4 中的数据, 由于 r = s = 2, n = 1000,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\chi^{2} = 27.4 > 6.64 = \\chi_{0.01}^{2}(1)"
+            },
+            {
+              "type": "text",
+              "content": " , 故有理由拒绝  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{0}"
+            },
+            {
+              "type": "text",
+              "content": " , 即认为色盲与性别之间存在着显著性的相关关系."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.212,
+            0.69,
+            0.83,
+            0.732
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "注 6.4.1 当分类指标为连续型变量时, 仍然可以先用前面的离散化方法对变量离散后, 再用  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\chi^{2}"
+            },
+            {
+              "type": "text",
+              "content": "  拟合优度检验对二者的独立性进行检验."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.123,
+            0.751,
+            0.833,
+            0.881
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "可以将上述结果推广到多维的情况. 下面考虑三维列联表的独立性检验问题. 假设一个观测包含三个指标: A, B, C, 且分别有 r, s, t 个水平. 记  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n_{ijk}(i = 1, 2, \\cdots, r, j = 1, 2, \\cdots, s, k = 1, 2, \\cdots, t)"
+            },
+            {
+              "type": "text",
+              "content": "  表示在 n 个样本中属于  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A_i \\cap B_j \\cap C_k"
+            },
+            {
+              "type": "text",
+              "content": "  的样本个数;  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n_{i..}(i = 1, 2, \\cdots, r)"
+            },
+            {
+              "type": "text",
+              "content": "  表示在 n 个样本中属于  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A_i"
+            },
+            {
+              "type": "text",
+              "content": "  的样本个数,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n_{\\cdot j.(j = 1, 2, \\cdots, s)}"
+            },
+            {
+              "type": "text",
+              "content": "  表示在 n 个样本中属于  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B_j"
+            },
+            {
+              "type": "text",
+              "content": "  的样本个数,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n_{\\cdot k}(k = 1, 2, \\cdots, t)"
+            },
+            {
+              "type": "text",
+              "content": "  表示在 n 个样本中属于  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "C_k"
+            },
+            {
+              "type": "text",
+              "content": "  的样本个数, 即"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 17,
+          "bbox": [
+            0.234,
+            0.885,
+            0.719,
+            0.93
+          ],
+          "image_path": "images/page_308_equation_17.jpg",
+          "content": "n _ {i..} = \\sum_ {j = 1} ^ {s} \\sum_ {k = 1} ^ {t} n _ {i j k}, \\quad n _ {. j.} = \\sum_ {i = 1} ^ {r} \\sum_ {k = 1} ^ {t} n _ {i j k}, \\quad n _ {.. k} = \\sum_ {i = 1} ^ {r} \\sum_ {j = 1} ^ {s} n _ {i j k}."
+        }
+      ]
+    },
+    {
+      "page_idx": 309,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.757,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "6.4 独立性检验"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.068,
+            0.917,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "297"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.164,
+            0.122,
+            0.874,
+            0.185
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "令  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n_{ij}.(i=1,2,\\cdots,r,j=1,2,\\cdots,s)"
+            },
+            {
+              "type": "text",
+              "content": "  表示在 n 个样本中属于  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A_{i}\\cap B_{j}"
+            },
+            {
+              "type": "text",
+              "content": "  的样本个数， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n_{i\\cdot k}(i=1,2,\\cdots,r,k=1,2,\\cdots,t)"
+            },
+            {
+              "type": "text",
+              "content": "  表示在 n 个样本中属于  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A_{i}\\cap C_{k}"
+            },
+            {
+              "type": "text",
+              "content": "  的样本个数， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n_{\\cdot jk}(j=1,2,\\cdots,s,k=1,2,\\cdots,t)"
+            },
+            {
+              "type": "text",
+              "content": "  表示在 n 个样本中属于  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B_{j}\\cap C_{k}"
+            },
+            {
+              "type": "text",
+              "content": "  的样本个数，即"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.317,
+            0.201,
+            0.72,
+            0.245
+          ],
+          "image_path": "images/page_309_equation_3.jpg",
+          "content": "n _ {i j.} = \\sum_ {k = 1} ^ {t} n _ {i j k}, \\quad n _ {i \\cdot k} = \\sum_ {j = 1} ^ {s} n _ {i j k}, \\quad n _ {\\cdot j k} = \\sum_ {i = 1} ^ {r} n _ {i j k}."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.163,
+            0.259,
+            0.873,
+            0.301
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "分别对 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n_{i..}, n_{.j..}, n_{..k}, n_{ij..}, n_{i.k}, n_{.jk}"
+            },
+            {
+              "type": "text",
+              "content": " 和 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n_{ijk}"
+            },
+            {
+              "type": "text",
+              "content": " 除以样本总数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n"
+            },
+            {
+              "type": "text",
+              "content": ", 得到相应的概率 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p_{i..}, p_{.j..}, p_{..k}, p_{ij..}, p_{i.k}, p_{.jk}"
+            },
+            {
+              "type": "text",
+              "content": " 和 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p_{ijk}"
+            },
+            {
+              "type": "text",
+              "content": " 等概率值. 从而, 有"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.277,
+            0.314,
+            0.765,
+            0.359
+          ],
+          "image_path": "images/page_309_equation_5.jpg",
+          "content": "\\sum_ {i = 1} ^ {r} \\sum_ {j = 1} ^ {s} \\sum_ {k = 1} ^ {t} p _ {i j k} = 1, \\quad \\sum_ {i = 1} ^ {r} p _ {i..} = 1, \\quad \\sum_ {j = 1} ^ {s} p _ {\\cdot j.} = 1, \\quad \\sum_ {k = 1} ^ {t} p _ {\\cdot .. k} = 1,"
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.279,
+            0.366,
+            0.67,
+            0.41
+          ],
+          "image_path": "images/page_309_equation_6.jpg",
+          "content": "\\sum_ {i = 1} ^ {r} \\sum_ {j = 1} ^ {s} p _ {i j.} = 1, \\sum_ {i = 1} ^ {r} \\sum_ {k = 1} ^ {t} p _ {i \\cdot k} = 1, \\sum_ {j = 1} ^ {s} \\sum_ {k = 1} ^ {t} p _ {\\cdot j k} = 1."
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.203,
+            0.424,
+            0.461,
+            0.44
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "此时感兴趣的假设可能有三类:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.206,
+            0.447,
+            0.453,
+            0.463
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "- 三个指标相互独立, 即检验"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.431,
+            0.484,
+            0.871,
+            0.501
+          ],
+          "image_path": "images/page_309_equation_9.jpg",
+          "content": "H _ {0}: \\quad p _ {i j k} = p _ {i..} p _ {\\cdot j}. p _ {\\cdot k}. \\tag {6.4.4}"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.206,
+            0.517,
+            0.871,
+            0.557
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "- 部分独立性检验, 即检验某个分组变量独立于其他分组变量. 例如, 指标 A 与指标 B、C 之间独立, 即检验"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.477,
+            0.577,
+            0.871,
+            0.594
+          ],
+          "image_path": "images/page_309_equation_11.jpg",
+          "content": "H _ {0}: \\quad p _ {i j k} = p _ {i..} p _ {\\cdot j k}. \\tag {6.4.5}"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.226,
+            0.611,
+            0.729,
+            0.629
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "类似地, 可检验  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{0}"
+            },
+            {
+              "type": "text",
+              "content": " :  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p_{ijk} = p_{\\cdot j}"
+            },
+            {
+              "type": "text",
+              "content": " .  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p_{i\\cdot k}"
+            },
+            {
+              "type": "text",
+              "content": "  或  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{0}"
+            },
+            {
+              "type": "text",
+              "content": " :  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p_{ijk} = p_{\\cdot k}"
+            },
+            {
+              "type": "text",
+              "content": " .  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p_{ij\\cdot}"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.206,
+            0.633,
+            0.873,
+            0.673
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "- 条件独立性检验, 即检验其中两个变量在第三个变量的每一水平上独立. 例如, 给定指标 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "C"
+            },
+            {
+              "type": "text",
+              "content": " 下, 指标 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A"
+            },
+            {
+              "type": "text",
+              "content": " 与 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B"
+            },
+            {
+              "type": "text",
+              "content": " 独立, 即检验"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.425,
+            0.693,
+            0.871,
+            0.71
+          ],
+          "image_path": "images/page_309_equation_14.jpg",
+          "content": "H _ {0}: \\quad p _ {i j k} = p _ {i \\cdot k} p _ {\\cdot j k} / p _ {\\cdot \\cdot k}. \\tag {6.4.6}"
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.202,
+            0.727,
+            0.547,
+            0.743
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "对于这三个检验, 可以用似然比检验方法."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.202,
+            0.75,
+            0.695,
+            0.767
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "对于三个指标相互独立的检验问题 (6.4.4), 似然比统计量为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 17,
+          "bbox": [
+            0.323,
+            0.782,
+            0.713,
+            0.86
+          ],
+          "image_path": "images/page_309_equation_17.jpg",
+          "content": "\\Lambda_ {1} = \\frac { \\prod_ {i = 1} ^ {r} \\prod_ {j = 1} ^ {s} \\prod_ {k = 1} ^ {t} \\left(\\frac {n _ {i . .}}{n}\\right) ^ {n _ {i . .}} \\left(\\frac {n _ {. j .}}{n}\\right) ^ {n _ {. j .}} \\left(\\frac {n _ {. . k}}{n}\\right) ^ {n _ {. . k}}}{ \\prod_ {i = 1} ^ {r} \\prod_ {j = 1} ^ {s} \\prod_ {k = 1} ^ {t} \\left(\\frac {n _ {i j k}}{n}\\right) ^ {n _ {i j k}}},"
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.166,
+            0.874,
+            0.42,
+            0.891
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "且当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_0"
+            },
+            {
+              "type": "text",
+              "content": " 成立及 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n\\to \\infty"
+            },
+            {
+              "type": "text",
+              "content": " 时，有"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 19,
+          "bbox": [
+            0.308,
+            0.906,
+            0.729,
+            0.927
+          ],
+          "image_path": "images/page_309_equation_19.jpg",
+          "content": "- 2 \\ln \\varLambda_ {1} \\stackrel {\\mathrm{d}} {\\rightarrow} \\chi^ {2} (r s t - 1 - (r - 1) - (s - 1) - (t - 1))."
+        }
+      ]
+    },
+    {
+      "page_idx": 310,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.08,
+            0.068,
+            0.106,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "298"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.264,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第六章 非参数方法"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.16,
+            0.122,
+            0.578,
+            0.138
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "对于部分独立性检验问题 (6.4.5), 似然比统计量为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.321,
+            0.156,
+            0.632,
+            0.233
+          ],
+          "image_path": "images/page_310_equation_3.jpg",
+          "content": "\\Lambda_ {2} = \\frac { \\prod_ {i = 1} ^ {r} \\prod_ {j = 1} ^ {s} \\prod_ {k = 1} ^ {t} \\left(\\frac {n _ {i . .}}{n}\\right) ^ {n _ {i . .}} \\left(\\frac {n _ {. j k}}{n}\\right) ^ {n _ {. j k}}}{ \\prod_ {i = 1} ^ {r} \\prod_ {j = 1} ^ {s} \\prod_ {k = 1} ^ {t} \\left(\\frac {n _ {i j k}}{n}\\right) ^ {n _ {i j k}}},"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.124,
+            0.249,
+            0.377,
+            0.265
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "且当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_0"
+            },
+            {
+              "type": "text",
+              "content": " 成立及 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n\\to \\infty"
+            },
+            {
+              "type": "text",
+              "content": " 时，有"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.301,
+            0.282,
+            0.652,
+            0.304
+          ],
+          "image_path": "images/page_310_equation_5.jpg",
+          "content": "- 2 \\ln \\varLambda_ {2} \\xrightarrow {\\mathrm{d}} \\chi^ {2} (r s t - 1 - (r - 1) - (s t - 1))."
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.16,
+            0.322,
+            0.71,
+            0.339
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "对于条件独立性检验问题 (6.4.6), 可以得到此时的似然比统计量为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.343,
+            0.355,
+            0.611,
+            0.433
+          ],
+          "image_path": "images/page_310_equation_7.jpg",
+          "content": "\\Lambda_ {3} = \\frac { \\prod_ {i = 1} ^ {r} \\prod_ {j = 1} ^ {s} \\prod_ {k = 1} ^ {t} \\left(\\frac {n _ {i \\cdot k} n _ {\\cdot j k}}{n n _ {\\cdot \\cdot k}}\\right) ^ {n _ {i j k}}}{ \\prod_ {i = 1} ^ {r} \\prod_ {j = 1} ^ {s} \\prod_ {k = 1} ^ {t} \\left(\\frac {n _ {i j k}}{n}\\right) ^ {n _ {i j k}}},"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.124,
+            0.449,
+            0.377,
+            0.465
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "且当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_0"
+            },
+            {
+              "type": "text",
+              "content": " 成立及 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n\\to \\infty"
+            },
+            {
+              "type": "text",
+              "content": " 时，有"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.351,
+            0.482,
+            0.602,
+            0.504
+          ],
+          "image_path": "images/page_310_equation_9.jpg",
+          "content": "- 2 \\ln \\varLambda_ {3} \\xrightarrow {\\mathrm{d}} \\chi^ {2} (t (r - 1) (s - 1))."
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.122,
+            0.522,
+            0.832,
+            0.584
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "需要指出的是, 也可以把三维列联表合并为一个二维列联表来处理. 不过, 这种处理会损失掉许多信息. 因此, 在一些情形下, 合并的列联表中认为变量之间是独立的, 但在三维列联表的检验中是不独立的."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 11,
+          "bbox": [
+            0.123,
+            0.637,
+            0.41,
+            0.658
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "6.5 U 统计量与秩检验"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.122,
+            0.706,
+            0.832,
+            0.791
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "U 统计量 (U-statistic) 是一类特定的、具有对称性的统计量, 它是由 Hoeffding (1948) 引进的一种非参数统计量, 是样本均值的推广. U 统计量在非参数估计和非参数检验中都有重要应用, 其名称中的 “U” 为无偏 (unbiased) 之意. 本节将介绍 U 统计量的性质及其应用. 此外, 本节还介绍秩和检验等非参数检验."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 13,
+          "bbox": [
+            0.159,
+            0.82,
+            0.334,
+            0.837
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "6.5.1 U 统计量"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.16,
+            0.863,
+            0.474,
+            0.88
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "先看下面的可靠性统计中的一个例子."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.123,
+            0.886,
+            0.832,
+            0.926
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例6.5.1 对于某种电子元器件的寿命 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " ，在参数统计中，常设 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " 服从某类特殊的参数分布，例如指数分布、Weibull分布，或对数正态分布等；在非参数统计中，往往仅"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 311,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.71,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "6.5 U 统计量与秩检验"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.069,
+            0.917,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "299"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.164,
+            0.122,
+            0.873,
+            0.185
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "假设 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " 服从非负值连续分布 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x)"
+            },
+            {
+              "type": "text",
+              "content": ". 如果对任意的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "s > 0, t > 0"
+            },
+            {
+              "type": "text",
+              "content": ", 都有 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(X > s + t | X > t) < P(X > s)"
+            },
+            {
+              "type": "text",
+              "content": ", 则称该元器件老化; 若有 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(X > s + t | X > t) = P(X > s)"
+            },
+            {
+              "type": "text",
+              "content": ", 则称该元器件无老化. 在可靠性统计中, 一个重要的检验问题如下:"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.321,
+            0.203,
+            0.873,
+            0.221
+          ],
+          "image_path": "images/page_311_equation_3.jpg",
+          "content": "H _ {0}: \\text {元器件无老化} \\leftrightarrow H _ {1}: \\text {元器件老化}. \\tag {6.5.1}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.165,
+            0.238,
+            0.873,
+            0.28
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "令生存函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\bar{F}(x) = 1 - F(x)"
+            },
+            {
+              "type": "text",
+              "content": ", 则 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(X > s + t | X > t) = P(X > s)"
+            },
+            {
+              "type": "text",
+              "content": " 等价于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\bar{F}(s + t) = \\bar{F}(s) \\cdot \\bar{F}(t)"
+            },
+            {
+              "type": "text",
+              "content": ", "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(X > s + t | X > t) < P(X > s)"
+            },
+            {
+              "type": "text",
+              "content": " 等价于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\bar{F}(s + t) < \\bar{F}(s) \\cdot \\bar{F}(t)"
+            },
+            {
+              "type": "text",
+              "content": ". 令"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.323,
+            0.292,
+            0.714,
+            0.328
+          ],
+          "image_path": "images/page_311_equation_5.jpg",
+          "content": "\\omega = \\int_ {0} ^ {\\infty} \\int_ {0} ^ {\\infty} [ \\bar {F} (s) \\cdot \\bar {F} (t) - \\bar {F} (s + t) ] \\mathrm{d} F (s) \\mathrm{d} F (t)."
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.165,
+            0.341,
+            0.6,
+            0.358
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "则检验问题 (6.5.1) 可简化为关于参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\omega"
+            },
+            {
+              "type": "text",
+              "content": "  的检验问题"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.402,
+            0.378,
+            0.637,
+            0.394
+          ],
+          "image_path": "images/page_311_equation_7.jpg",
+          "content": "H _ {0}: \\omega = 0 \\quad \\leftrightarrow \\quad H _ {1}: \\omega > 0."
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.165,
+            0.412,
+            0.854,
+            0.43
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "设 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, X_{3}"
+            },
+            {
+              "type": "text",
+              "content": " 是该元器件的寿命试验的三次随机试验结果，即独立同分布于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x)"
+            },
+            {
+              "type": "text",
+              "content": ". 因为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.254,
+            0.443,
+            0.785,
+            0.482
+          ],
+          "image_path": "images/page_311_equation_9.jpg",
+          "content": "\\int_ {0} ^ {\\infty} \\int_ {0} ^ {\\infty} \\bar {F} (s) \\cdot \\bar {F} (t) \\mathrm{d} F (s) \\mathrm{d} F (t) = \\int_ {0} ^ {1} \\int_ {0} ^ {1} (1 - u) \\cdot (1 - v) \\mathrm{d} u \\mathrm{d} v = \\frac {1}{4},"
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.233,
+            0.492,
+            0.804,
+            0.557
+          ],
+          "image_path": "images/page_311_equation_10.jpg",
+          "content": "\\begin{array}{l} \\int_ {0} ^ {\\infty} \\int_ {0} ^ {\\infty} \\bar {F} (s + t) \\mathrm{d} F (s) \\mathrm{d} F (t) = \\int_ {0} ^ {\\infty} \\int_ {0} ^ {\\infty} P (X _ {1} > x _ {2} + x _ {3}) \\mathrm{d} F (x _ {2}) \\mathrm{d} F (x _ {3}) \\\\ = P (X _ {1} > X _ {2} + X _ {3}), \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.164,
+            0.574,
+            0.873,
+            0.62
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "所以 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\omega = \\frac{1}{4} - P(X_1 > X_2 + X_3)"
+            },
+            {
+              "type": "text",
+              "content": ". 若令 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta = P(X_1 > X_2 + X_3)"
+            },
+            {
+              "type": "text",
+              "content": ", 则检验问题 (6.5.1) 可进一步简化为关于参数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": " 的检验问题"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.401,
+            0.631,
+            0.638,
+            0.662
+          ],
+          "image_path": "images/page_311_equation_12.jpg",
+          "content": "H _ {0}: \\theta = \\frac {1}{4} \\leftrightarrow H _ {1}: \\theta <   \\frac {1}{4}."
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.164,
+            0.673,
+            0.717,
+            0.69
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "因此, 一个非参数检验问题也可以简化为关于某个参数的检验问题."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.164,
+            0.696,
+            0.873,
+            0.736
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "为了寻求检验统计量, 首先要估计  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": " . 一种自然的想法是寻找  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  的无偏估计. 根据两点分布的性质, 可知"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.352,
+            0.75,
+            0.677,
+            0.802
+          ],
+          "image_path": "images/page_311_equation_15.jpg",
+          "content": "\\psi (X _ {1}, X _ {2}, X _ {3}) = \\left\\{ \\begin{array}{l l} 1, & X _ {1} > X _ {2} + X _ {3}, \\\\ 0, & X _ {1} \\leqslant X _ {2} + X _ {3} \\end{array} \\right."
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.165,
+            0.815,
+            0.822,
+            0.832
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "是 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": " 的一个无偏估计. 考虑到样本中各个分量的地位是相同的, 故定义对称函数"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 17,
+          "bbox": [
+            0.366,
+            0.842,
+            0.672,
+            0.876
+          ],
+          "image_path": "images/page_311_equation_17.jpg",
+          "content": "\\phi (X _ {1}, X _ {2}, X _ {3}) = \\frac {\\sum \\psi (X _ {i _ {1}} , X _ {i _ {2}} , X _ {i _ {3}})}{3 !},"
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.165,
+            0.886,
+            0.874,
+            0.927
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "它也是 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": " 的一个无偏估计, 其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(i_1, i_2, i_3)"
+            },
+            {
+              "type": "text",
+              "content": " 是 (1,2,3) 的一个置换, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sum"
+            },
+            {
+              "type": "text",
+              "content": " 表示对所有这种置换求和. "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\psi(X_1, X_2, X_3)"
+            },
+            {
+              "type": "text",
+              "content": " 和 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\phi(X_1, X_2, X_3)"
+            },
+            {
+              "type": "text",
+              "content": " 都是 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": " 的无偏估计, 但 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\phi(X_1, X_2, X_3)"
+            },
+            {
+              "type": "text",
+              "content": " 的方"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 312,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.08,
+            0.068,
+            0.107,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "300"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.264,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第六章 非参数方法"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.122,
+            0.122,
+            0.831,
+            0.161
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "差不会比  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\psi(X_{1},X_{2},X_{3})"
+            },
+            {
+              "type": "text",
+              "content": "  的方差大. 进一步地, 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  为来自总体分布  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x)"
+            },
+            {
+              "type": "text",
+              "content": "  的独立同分布样本,"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.304,
+            0.171,
+            0.651,
+            0.21
+          ],
+          "image_path": "images/page_312_equation_3.jpg",
+          "content": "U (X _ {1}, X _ {2}, \\dots , X _ {n}) = \\frac {\\sum \\phi (X _ {i _ {1}} , X _ {i _ {2}} , X _ {i _ {3}})}{\\mathrm{C} _ {n} ^ {3}},"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.122,
+            0.223,
+            0.832,
+            0.31
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 \\leqslant i_{1} < i_{2} < i_{3} \\leqslant n, \\sum"
+            },
+            {
+              "type": "text",
+              "content": "  表示对所有组合  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(i_{1}, i_{2}, i_{3})"
+            },
+            {
+              "type": "text",
+              "content": "  求和. 则  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U(X_{1}, X_{2}, \\cdots, X_{n})"
+            },
+            {
+              "type": "text",
+              "content": "  仍是  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  的一个无偏估计, 其方差不比  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\phi(X_{1}, X_{2}, X_{3})"
+            },
+            {
+              "type": "text",
+              "content": "  的方差大. 由于  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{1}"
+            },
+            {
+              "type": "text",
+              "content": "  为真时,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  的值比较小, 因此当  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U(X_{1}, X_{2}, \\cdots, X_{n}) \\leqslant c"
+            },
+            {
+              "type": "text",
+              "content": "  时拒绝原假设, 认为元器件老化. 这里临界值 c 由统计量  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U(X_{1}, X_{2}, \\cdots, X_{n})"
+            },
+            {
+              "type": "text",
+              "content": "  的分布决定."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.122,
+            0.315,
+            0.832,
+            0.378
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在例 6.5.1 中, 统计量  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U(X_{1}, X_{2}, \\cdots, X_{n})"
+            },
+            {
+              "type": "text",
+              "content": "  是待估参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  特殊的无偏估计. 称其为 U 统计量. 若能得到该统计量的分布或极限分布, 则可解决检验问题 (6.5.1). 下面给出 U 统计量的定义."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.123,
+            0.385,
+            0.832,
+            0.469
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定义 6.5.1 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  为来自总体分布  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x)"
+            },
+            {
+              "type": "text",
+              "content": "  的独立同分布样本, 其中未知总体 F 来自非参数族 F. 设对称函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\phi(X_{1}, X_{2}, \\cdots, X_{m})"
+            },
+            {
+              "type": "text",
+              "content": "  是待估参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta = T(F)"
+            },
+            {
+              "type": "text",
+              "content": "  的一个无偏估计, 其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "m \\leqslant n"
+            },
+            {
+              "type": "text",
+              "content": " , 且对任意  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F \\in F"
+            },
+            {
+              "type": "text",
+              "content": " , 有  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E\\left[\\left|\\phi(X_{1}, X_{2}, \\cdots, X_{m})\\right|\\right] < \\infty"
+            },
+            {
+              "type": "text",
+              "content": " . 称  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  的一个对称无偏估计"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.333,
+            0.47,
+            0.621,
+            0.506
+          ],
+          "image_path": "images/page_312_equation_7.jpg",
+          "content": "U _ {n} = \\frac {1}{\\mathrm{C} _ {n} ^ {m}} \\sum_ {c} \\phi (X _ {i _ {1}}, X _ {i _ {2}}, \\dots , X _ {i _ {m}})"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.123,
+            0.517,
+            0.831,
+            0.564
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "为具有 m 阶核  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\phi"
+            },
+            {
+              "type": "text",
+              "content": "  的 U 统计量. 这里,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sum_{c}"
+            },
+            {
+              "type": "text",
+              "content": "  表示对全部  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "C_{n}^{m}"
+            },
+            {
+              "type": "text",
+              "content": "  个有不同元素的  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{i_{1}, i_{2}, \\cdots, i_{m}\\} \\subset \\{1, 2, \\cdots, n\\}"
+            },
+            {
+              "type": "text",
+              "content": "  求和."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.16,
+            0.568,
+            0.72,
+            0.586
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "令  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta = E[\\phi(X_{1}, X_{2}, \\cdots, X_{m})]"
+            },
+            {
+              "type": "text",
+              "content": " . 基于核函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\phi(X_{1}, X_{2}, \\cdots, X_{m})"
+            },
+            {
+              "type": "text",
+              "content": " ，定义"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.208,
+            0.604,
+            0.745,
+            0.622
+          ],
+          "image_path": "images/page_312_equation_10.jpg",
+          "content": "\\phi_ {k} (x _ {1}, x _ {2}, \\dots , x _ {k}) = E [ \\phi (x _ {1}, \\dots , x _ {k}, X _ {k + 1}, \\dots , X _ {m}) ], 0 \\leqslant k \\leqslant m,"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.122,
+            0.639,
+            0.83,
+            0.704
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "则  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\phi_{0}=E[\\phi(X_{1},X_{2},\\cdots,X_{m})]"
+            },
+            {
+              "type": "text",
+              "content": " ， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\phi_{m}=E[\\phi(x_{1},x_{2},\\cdots,x_{m})]"
+            },
+            {
+              "type": "text",
+              "content": " ，且对于任意 k，我们有  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E[\\phi_{k}(X_{1},X_{2},\\cdots,X_{k})]=\\theta"
+            },
+            {
+              "type": "text",
+              "content": " 。记  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\phi_{k}"
+            },
+            {
+              "type": "text",
+              "content": "  的方差为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma_{k}^{2}=\\mathrm{Var}[\\phi_{k}(X_{1},X_{2},\\cdots,X_{k})]"
+            },
+            {
+              "type": "text",
+              "content": " ，则  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma_{0}^{2}=0"
+            },
+            {
+              "type": "text",
+              "content": " ， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma_{m}^{2}=\\mathrm{Var}[\\phi_{m}(X_{1},X_{2},\\cdots,X_{m})]"
+            },
+            {
+              "type": "text",
+              "content": " 。由条件方差分解，有  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0=\\sigma_{0}^{2}\\leqslant\\sigma_{1}^{2}\\leqslant\\cdots\\leqslant\\sigma_{m}^{2}"
+            },
+            {
+              "type": "text",
+              "content": " 。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.165,
+            0.708,
+            0.468,
+            0.725
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定理 6.5.1 U 统计量有以下性质:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 15,
+          "bbox": [
+            0.161,
+            0.731,
+            0.576,
+            0.771
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 13,
+              "bbox": [
+                0.161,
+                0.731,
+                0.576,
+                0.749
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(1) 数学期望  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "E(U_{m}) = E[\\phi(X_{1}, X_{2}, \\cdots, X_{m})] = \\theta."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 14,
+              "bbox": [
+                0.162,
+                0.755,
+                0.234,
+                0.771
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(2) 方差"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "equation",
+          "index": 16,
+          "bbox": [
+            0.345,
+            0.785,
+            0.609,
+            0.827
+          ],
+          "image_path": "images/page_312_equation_16.jpg",
+          "content": "\\mathrm{Var} (U _ {n}) = \\frac {1}{\\mathrm{C} _ {n} ^ {m}} \\sum_ {k = 1} ^ {m} \\mathrm{C} _ {m} ^ {k} \\mathrm{C} _ {n - m} ^ {m - k} \\sigma_ {k} ^ {2},"
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.124,
+            0.842,
+            0.564,
+            0.873
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "特别地, 当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma_{m}^{2}<\\infty"
+            },
+            {
+              "type": "text",
+              "content": " 时, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{Var}(U_{k})=\\frac{m^{2}}{n}\\cdot\\sigma_{1}^{2}+O(n^{-2})."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.16,
+            0.874,
+            0.51,
+            0.891
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(3) 渐近正态性. 当  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma_{m}^{2}<\\infty"
+            },
+            {
+              "type": "text",
+              "content": "  且  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma_{1}^{2}>0"
+            },
+            {
+              "type": "text",
+              "content": "  时,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 19,
+          "bbox": [
+            0.363,
+            0.906,
+            0.591,
+            0.928
+          ],
+          "image_path": "images/page_312_equation_19.jpg",
+          "content": "\\sqrt {n} (U _ {n} - \\theta) \\xrightarrow {\\mathrm{d}} N (0, m ^ {2} \\sigma_ {1} ^ {2})."
+        }
+      ]
+    },
+    {
+      "page_idx": 313,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.71,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "6.5 U 统计量与秩检验"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.069,
+            0.916,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "301"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.165,
+            0.121,
+            0.871,
+            0.162
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "证明 数学期望可由 U 统计量的定义以及期望的可加性得到. 下面, 计算 U 统计量的方差. 根据  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma_{k}^{2}"
+            },
+            {
+              "type": "text",
+              "content": "  的定义, 对于  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  的方差计算中每一个小单元,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.293,
+            0.175,
+            0.744,
+            0.195
+          ],
+          "image_path": "images/page_313_equation_3.jpg",
+          "content": "\\mathrm{Cov} (\\phi (X _ {i _ {1}}, X _ {i _ {2}}, \\dots , X _ {i _ {m}}), \\phi (X _ {j _ {1}}, X _ {j _ {2}}, \\dots , X _ {j _ {m}})) = \\sigma_ {k} ^ {2},"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.164,
+            0.207,
+            0.871,
+            0.248
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i_{1}, i_{2}, \\cdots, i_{m}"
+            },
+            {
+              "type": "text",
+              "content": "  和  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j_{1}, j_{2}, \\cdots, j_{m}"
+            },
+            {
+              "type": "text",
+              "content": "  为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  中选出的 m 个元素，k 为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i_{1}, i_{2}, \\cdots, i_{m}"
+            },
+            {
+              "type": "text",
+              "content": "  和  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j_{1}, j_{2}, \\cdots, j_{m}"
+            },
+            {
+              "type": "text",
+              "content": "  中相同的对数. 则"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.189,
+            0.259,
+            0.855,
+            0.469
+          ],
+          "image_path": "images/page_313_equation_5.jpg",
+          "content": "\\begin{array}{l} \\mathrm{Var} (U _ {n}) \\\\ = \\operatorname{Var} \\left[ \\frac {1}{\\mathrm{C} _ {n} ^ {m}} \\sum_ {1 \\leqslant i _ {1} <   i _ {2} <   \\dots <   i _ {m} \\leqslant n} \\phi (X _ {i _ {1}}, X _ {i _ {2}}, \\dots , X _ {i _ {m}}) \\right] \\\\ = \\frac {1}{\\left(\\mathrm{C} _ {n} ^ {m}\\right) ^ {2}} \\sum_ {i _ {1} <   i _ {2} <   \\dots <   i _ {m}} \\sum_ {j _ {1} <   j _ {2} <   \\dots <   j _ {m}} \\operatorname{Cov} \\left(\\phi \\left(X _ {i _ {1}}, X _ {i _ {2}}, \\dots , X _ {i _ {m}}\\right), \\phi \\left(X _ {j _ {1}}, X _ {j _ {2}}, \\dots , X _ {j _ {m}}\\right)\\right) \\\\ = \\frac {1}{\\mathrm{C} _ {n} ^ {m}} \\sum_ {j _ {1} <   j _ {2} <   \\dots <   j _ {m}} \\operatorname{Cov} \\left(\\phi (X _ {1}, X _ {2}, \\dots , X _ {m}), \\phi (X _ {j _ {1}}, X _ {j _ {2}}, \\dots , X _ {j _ {m}})\\right) \\\\ = \\frac {1}{\\mathrm{C} _ {n} ^ {m}} \\sum_ {k = 1} ^ {m} \\mathrm{C} _ {m} ^ {k} \\mathrm{C} _ {n - m} ^ {m - k} \\sigma_ {k} ^ {2}. \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.164,
+            0.48,
+            0.871,
+            0.564
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由此可知, 当  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma_{m}^{2}<\\infty"
+            },
+            {
+              "type": "text",
+              "content": "  时,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{Var}(U_{k})=\\frac{m^{2}}{n}\\cdot\\sigma_{1}^{2}+O(n^{-2})"
+            },
+            {
+              "type": "text",
+              "content": " . 下面来证明渐近正态性. 由于  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\phi_{1}(X_{1}),\\phi_{1}(X_{2}),\\cdots,\\phi_{1}(X_{n})"
+            },
+            {
+              "type": "text",
+              "content": "  是独立同分布于均值为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": " , 方差为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma_{1}^{2}(\\sigma_{1}^{2}\\in(0,\\infty))"
+            },
+            {
+              "type": "text",
+              "content": "  的分布, 若令  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U_{n}^{*}=\\frac{1}{n}\\sum_{i=1}^{n}\\phi_{1}(X_{i})"
+            },
+            {
+              "type": "text",
+              "content": " , 则根据中心极限定理,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.417,
+            0.574,
+            0.619,
+            0.596
+          ],
+          "image_path": "images/page_313_equation_7.jpg",
+          "content": "\\sqrt {n} (U _ {n} ^ {*} - \\theta) \\xrightarrow {\\mathrm{d}} N (0, \\sigma_ {1} ^ {2})."
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.166,
+            0.609,
+            0.207,
+            0.624
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "再令"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.375,
+            0.631,
+            0.66,
+            0.65
+          ],
+          "image_path": "images/page_313_equation_9.jpg",
+          "content": "T _ {n} = \\sqrt {n} (U _ {n} - \\theta) - m \\sqrt {n} (U _ {n} ^ {*} - \\theta),"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.165,
+            0.656,
+            0.347,
+            0.673
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "则可证 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(T_{n}) = 0"
+            },
+            {
+              "type": "text",
+              "content": " ，且"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.289,
+            0.686,
+            0.747,
+            0.817
+          ],
+          "image_path": "images/page_313_equation_11.jpg",
+          "content": "\\begin{array}{l} \\mathrm{Var} (T _ {n}) = n \\mathrm{Var} (U _ {n}) + m ^ {2} n \\mathrm{Var} (U _ {n} ^ {*}) - 2 m n \\mathrm{Cov} (U _ {n}, U _ {n} ^ {*}) \\\\ = \\frac {n}{\\mathrm{C} _ {n} ^ {m}} \\sum_ {k = 1} ^ {m} \\mathrm{C} _ {m} ^ {k} \\mathrm{C} _ {n - m} ^ {m - k} \\sigma_ {k} ^ {2} + m ^ {2} \\sigma_ {1} ^ {2} - 2 m ^ {2} \\sigma_ {1} ^ {2} \\\\ = m ^ {2} \\sigma_ {1} ^ {2} (1 + o (1)) - m ^ {2} \\sigma_ {1} ^ {2} \\\\ = o (1). \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.165,
+            0.83,
+            0.649,
+            0.848
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由 Markov 不等式, 有 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n} \\stackrel{\\mathrm{p}}{\\rightarrow} 0"
+            },
+            {
+              "type": "text",
+              "content": ", 因此, 由 Slutsky 定理, 可知"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.405,
+            0.856,
+            0.631,
+            0.877
+          ],
+          "image_path": "images/page_313_equation_13.jpg",
+          "content": "\\sqrt {n} (U _ {n} - \\theta) \\xrightarrow {\\mathrm{d}} N (0, m ^ {2} \\sigma_ {1} ^ {2})."
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.164,
+            0.886,
+            0.871,
+            0.926
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "根据定理 6.5.1 的渐近正态性, 可知 U 统计量具有相合性. 进一步地, 可以构造 U 统计量来做一些非参数检验."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 314,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.08,
+            0.068,
+            0.109,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "302"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.265,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第六章 非参数方法"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.123,
+            0.122,
+            0.831,
+            0.161
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例 6.5.2 设总体 X 的分布函数为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x - \\theta)"
+            },
+            {
+              "type": "text",
+              "content": " ，其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x)"
+            },
+            {
+              "type": "text",
+              "content": "  是关于原点对称的连续型分布，具体形式未知。考虑检验问题"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.362,
+            0.183,
+            0.594,
+            0.2
+          ],
+          "image_path": "images/page_314_equation_3.jpg",
+          "content": "H _ {0}: \\theta = 0 \\quad \\leftrightarrow \\quad H _ {1}: \\theta > 0,"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.123,
+            0.22,
+            0.832,
+            0.307
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "即检验对称分布的对称中心在原点, 还是在原点的右边. 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  是来自总体 X 的一个样本. 当原假设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{0}: \\theta = 0"
+            },
+            {
+              "type": "text",
+              "content": "  成立时,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(X_{1} + X_{2} > 0) = 0.5"
+            },
+            {
+              "type": "text",
+              "content": " ; 当备择假设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{1}: \\theta > 0"
+            },
+            {
+              "type": "text",
+              "content": "  成立时,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(X_{1} + X_{2} > 0) > 0.5"
+            },
+            {
+              "type": "text",
+              "content": " . 令  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\omega = P(X_{1} + X_{2} > 0)"
+            },
+            {
+              "type": "text",
+              "content": " , 则上述检验问题可简化为关于参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\omega"
+            },
+            {
+              "type": "text",
+              "content": "  的检验问题,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.345,
+            0.329,
+            0.609,
+            0.345
+          ],
+          "image_path": "images/page_314_equation_5.jpg",
+          "content": "H _ {0}: \\omega = 0. 5 \\leftrightarrow H _ {1}: \\omega > 0. 5."
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.124,
+            0.366,
+            0.306,
+            0.382
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "根据两点分布的性质，"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.334,
+            0.399,
+            0.611,
+            0.451
+          ],
+          "image_path": "images/page_314_equation_7.jpg",
+          "content": "\\phi (X _ {1}, X _ {2}) = \\left\\{ \\begin{array}{l l} 1, & X _ {1} + X _ {2} > 0, \\\\ 0, & X _ {1} + X _ {2} \\leqslant 0 \\end{array} \\right."
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.124,
+            0.467,
+            0.649,
+            0.484
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "是  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\omega"
+            },
+            {
+              "type": "text",
+              "content": "  的一个无偏估计. 由对称函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\phi(X_{1}, X_{2})"
+            },
+            {
+              "type": "text",
+              "content": "  可构造 U 统计量,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.303,
+            0.501,
+            0.651,
+            0.539
+          ],
+          "image_path": "images/page_314_equation_9.jpg",
+          "content": "U = U (X _ {1}, X _ {2}, \\dots , X _ {n}) = \\frac {\\sum \\phi (X _ {i _ {1}} , X _ {i _ {2}})}{\\mathrm{C} _ {n} ^ {2}},"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.123,
+            0.555,
+            0.832,
+            0.649
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 \\leqslant i_1 < i_2 \\leqslant n"
+            },
+            {
+              "type": "text",
+              "content": ", "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sum"
+            },
+            {
+              "type": "text",
+              "content": " 表示对所有组合 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(i_1, i_2)"
+            },
+            {
+              "type": "text",
+              "content": " 求和. 根据定理 6.5.1 可知, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U"
+            },
+            {
+              "type": "text",
+              "content": " 也是 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\omega"
+            },
+            {
+              "type": "text",
+              "content": " 的一个无偏估计. 由于在备择假设成立时, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\omega"
+            },
+            {
+              "type": "text",
+              "content": " 的值较大, 则当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U(X_1, X_2, \\cdots, X_n) \\geqslant c"
+            },
+            {
+              "type": "text",
+              "content": " 时, 拒绝原假设. 具体的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c"
+            },
+            {
+              "type": "text",
+              "content": " 由下面的方式确定. 由于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "m = 2"
+            },
+            {
+              "type": "text",
+              "content": ", 当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_0"
+            },
+            {
+              "type": "text",
+              "content": " 为真时, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E[U(X_1, X_2, \\cdots, X_n)] = 0.5"
+            },
+            {
+              "type": "text",
+              "content": ", 且 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\phi_1(x_1) = F(x_1), \\sigma_1^2 = \\frac{1}{12}, \\phi_2(x_1, x_2) = \\phi(x_1, x_2), \\sigma_2^2 = \\frac{1}{4}"
+            },
+            {
+              "type": "text",
+              "content": ". 则"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.254,
+            0.663,
+            0.7,
+            0.698
+          ],
+          "image_path": "images/page_314_equation_11.jpg",
+          "content": "\\mathrm{Var} [ U (X _ {1}, X _ {2}, \\dots , X _ {n}) ] = \\frac {2 n - 1}{6 n (n - 1)} = \\frac {1}{3 n} + O (n ^ {- 2}),"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.123,
+            0.715,
+            0.831,
+            0.768
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在原假设成立时, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sqrt{n} \\cdot \\left(U - \\frac{1}{2}\\right) \\xrightarrow{\\mathrm{d}} N\\left(0, \\frac{1}{3}\\right), n \\to \\infty"
+            },
+            {
+              "type": "text",
+              "content": ". 因此, 在大样本场合下检验问题的拒绝域为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.394,
+            0.772,
+            0.56,
+            0.808
+          ],
+          "image_path": "images/page_314_equation_13.jpg",
+          "content": "U \\geqslant \\frac {1}{2} + \\sqrt {\\frac {1}{3 n}} \\cdot u _ {\\alpha},"
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.124,
+            0.816,
+            0.458,
+            0.833
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "u_{\\alpha}"
+            },
+            {
+              "type": "text",
+              "content": "  是标准正态分布的上  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha"
+            },
+            {
+              "type": "text",
+              "content": "  分位数."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.123,
+            0.84,
+            0.833,
+            0.929
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "前面的单样本的 U 统计量可以推广至两样本的情形.考虑两个相互独立的总体，其分布分别为 F 和 G，关心的参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta = \\theta(F, G)"
+            },
+            {
+              "type": "text",
+              "content": " .类似地，设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n_{1}}"
+            },
+            {
+              "type": "text",
+              "content": " ，和  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{1}, Y_{2}, \\cdots, Y_{n_{2}}"
+            },
+            {
+              "type": "text",
+              "content": "  是分别来自 F 和 G 的随机样本.设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\phi(X, Y)"
+            },
+            {
+              "type": "text",
+              "content": "  为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  的无偏估计.在  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n_{1}}"
+            },
+            {
+              "type": "text",
+              "content": "  给定时， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\phi(X_{1}, X_{2}, \\cdots, X_{n_{1}}, Y_{1}, Y_{2}, \\cdots, Y_{n_{2}})"
+            },
+            {
+              "type": "text",
+              "content": "  为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{1}, Y_{2}, \\cdots, Y_{n_{2}}"
+            },
+            {
+              "type": "text",
+              "content": "  的对称"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 315,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.709,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "6.5 U 统计量与秩检验"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.069,
+            0.917,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "303"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.164,
+            0.122,
+            0.871,
+            0.163
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "函数, 而在  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{1}, Y_{2}, \\cdots, Y_{n_{2}}"
+            },
+            {
+              "type": "text",
+              "content": "  给定时,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\phi(X_{1}, X_{2}, \\cdots, X_{n_{1}}, Y_{1}, Y_{2}, \\cdots, Y_{n_{2}})"
+            },
+            {
+              "type": "text",
+              "content": "  为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n_{1}}"
+            },
+            {
+              "type": "text",
+              "content": "  的对称函数. 令"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.171,
+            0.175,
+            0.866,
+            0.217
+          ],
+          "image_path": "images/page_315_equation_3.jpg",
+          "content": "U _ {n _ {1}, n _ {2}} = \\frac {1}{\\mathrm{C} _ {n _ {1}} ^ {m _ {1}}} \\frac {1}{\\mathrm{C} _ {n _ {2}} ^ {m _ {2}}} \\sum_ {i _ {1} <   i _ {2} <   \\dots <   i _ {m _ {1}}} \\sum_ {j _ {1} <   j _ {2} <   \\dots <   j _ {m _ {2}}} \\phi (X _ {i _ {1}}, X _ {i _ {2}}, \\dots , X _ {i _ {m _ {1}}}, Y _ {j _ {1}}, Y _ {j _ {2}}, \\dots , Y _ {j _ {m _ {2}}}),"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.164,
+            0.234,
+            0.873,
+            0.298
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "则称  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U_{n_{1},n_{2}}"
+            },
+            {
+              "type": "text",
+              "content": "  是以  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\phi(X_{1},X_{2},\\cdots,X_{m_{1}},Y_{1},Y_{2},\\cdots,Y_{m_{2}})"
+            },
+            {
+              "type": "text",
+              "content": "  为核的两样本 U 统计量. 这里的对称化, 使得所有  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{i}"
+            },
+            {
+              "type": "text",
+              "content": "  地位是一样的, 所有  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{j}"
+            },
+            {
+              "type": "text",
+              "content": "  地位是一样的, 但是两者不一定可以交换. 类似地, 也可以定义:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.231,
+            0.316,
+            0.792,
+            0.337
+          ],
+          "image_path": "images/page_315_equation_5.jpg",
+          "content": "\\sigma_ {i j} ^ {2} = \\mathrm{Cov} \\left(\\phi (X _ {1}, \\dots , X _ {i}, X _ {i + 1}, \\dots , X _ {m _ {1}}, Y _ {1}, \\dots , Y _ {j}, Y _ {j + 1}, \\dots , Y _ {m _ {2}}\\right),"
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.332,
+            0.349,
+            0.804,
+            0.369
+          ],
+          "image_path": "images/page_315_equation_6.jpg",
+          "content": "\\phi (X _ {1}, \\dots , X _ {i}, X _ {i + 1} ^ {*}, \\dots , X _ {m _ {1}} ^ {*}, Y _ {1}, \\dots , Y _ {j}, Y _ {j + 1} ^ {*}, \\dots , Y _ {m _ {2}} ^ {*}))."
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.164,
+            0.387,
+            0.873,
+            0.45
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "这里  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1},\\cdots,X_{i},X_{i+1},\\cdots,X_{m_{1}},X_{i+1}^{*},\\cdots,X_{m_{1}}^{*}"
+            },
+            {
+              "type": "text",
+              "content": "  是来自总体分布 F 的独立同分布样本， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{1},\\cdots,Y_{j},Y_{j+1},\\cdots,Y_{m_{2}},Y_{j+1}^{*},\\cdots,Y_{m_{2}}^{*}"
+            },
+            {
+              "type": "text",
+              "content": "  是来自总体分布 G 的独立同分布样本. 类似于一元的情形, 有下面的结论."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.203,
+            0.456,
+            0.834,
+            0.475
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定理6.5.2 两样本U统计量 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U_{n_1,n_2}"
+            },
+            {
+              "type": "text",
+              "content": " 的数学期望为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(U_{n_1,n_2}) = \\theta"
+            },
+            {
+              "type": "text",
+              "content": "，其方差"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.309,
+            0.491,
+            0.727,
+            0.534
+          ],
+          "image_path": "images/page_315_equation_9.jpg",
+          "content": "\\mathrm{Var} (U _ {n _ {1}, n _ {2}}) = \\sum_ {k = 0} ^ {m _ {1}} \\sum_ {l = 0} ^ {m _ {2}} \\frac {\\mathrm{C} _ {m _ {1}} ^ {k} \\mathrm{C} _ {n _ {1} - m _ {1}} ^ {m _ {1} - k}}{\\mathrm{C} _ {n _ {1}} ^ {m _ {1}}} \\frac {\\mathrm{C} _ {m _ {2}} ^ {l} \\mathrm{C} _ {n _ {2} - m _ {2}} ^ {m _ {2} - l}}{\\mathrm{C} _ {n _ {2}} ^ {m _ {2}}} \\sigma_ {k l} ^ {2}."
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.165,
+            0.552,
+            0.767,
+            0.571
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "进一步地, 若 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma_{m_1m_2}^2 < \\infty"
+            },
+            {
+              "type": "text",
+              "content": ", "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n_1 + n_2 \\to \\infty"
+            },
+            {
+              "type": "text",
+              "content": " 且 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n_1 / (n_1 + n_2) \\to p \\in (0,1)"
+            },
+            {
+              "type": "text",
+              "content": ", 则"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.28,
+            0.587,
+            0.757,
+            0.624
+          ],
+          "image_path": "images/page_315_equation_11.jpg",
+          "content": "\\sqrt {n _ {1} + n _ {2}} (U _ {n _ {1}, n _ {2}} - \\theta) \\xrightarrow {\\mathrm{d}} N (0, \\sigma^ {2}), \\quad \\sigma^ {2} = \\frac {m _ {1} ^ {2}}{p} \\sigma_ {1 0} ^ {2} + \\frac {m _ {2} ^ {2}}{p} \\sigma_ {0 1} ^ {2}."
+        },
+        {
+          "type": "paragraph_title",
+          "index": 12,
+          "bbox": [
+            0.201,
+            0.642,
+            0.35,
+            0.661
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "6.5.2 秩检验"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.163,
+            0.687,
+            0.875,
+            0.796
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "除了 U 统计量检验方法外, 秩检验方法也是非常重要的非参数检验方法. Wilcoxon (1945) 提出秩和检验方法之后, 秩和检验和其他秩方法逐渐受到人们的重视. 秩和检验方法不考虑总体的参数和总体的分布类型, 而是对样本所代表的总体的分布和分布位置进行假设检验, 其在应用上有很大的意义. 秩检验方法是建立在秩与秩统计量基础上的非参数方法."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.164,
+            0.802,
+            0.874,
+            0.888
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例 6.5.3 对于某生物实验中的对照实验, 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(X_{1}, Y_{1}), (X_{2}, Y_{2}), \\cdots, (X_{n}, Y_{n})"
+            },
+            {
+              "type": "text",
+              "content": " , 其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}, Y_{1}, Y_{2}, \\cdots, Y_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  分别是实验组和对照组的结果. 假设实验组服从连续分布  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x)"
+            },
+            {
+              "type": "text",
+              "content": " , 对照组的分布为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x - \\theta)"
+            },
+            {
+              "type": "text",
+              "content": " . 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z_{i} = Y_{i} - X_{i}"
+            },
+            {
+              "type": "text",
+              "content": " , 则  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z_{i}"
+            },
+            {
+              "type": "text",
+              "content": "  的分布是对称的连续分布, 对称点为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": " . 现关心实验效果  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  是否为 0, 即检验"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.404,
+            0.91,
+            0.632,
+            0.927
+          ],
+          "image_path": "images/page_315_equation_15.jpg",
+          "content": "H _ {0}: \\theta = 0 \\quad \\leftrightarrow \\quad H _ {1}: \\theta \\neq 0."
+        }
+      ]
+    },
+    {
+      "page_idx": 316,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.08,
+            0.068,
+            0.107,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "304"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.264,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第六章 非参数方法"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.122,
+            0.122,
+            0.831,
+            0.162
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "若原假设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{0}:\\theta=0"
+            },
+            {
+              "type": "text",
+              "content": "  成立, 则  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z_{i}"
+            },
+            {
+              "type": "text",
+              "content": "  的取值中应接近一半的值大于 0, 一半的值小于 0; 若大部分  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z_{i}"
+            },
+            {
+              "type": "text",
+              "content": "  的取值大于 (或小于) 0, 则可以拒绝原假设. 令  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\phi_{i}=I(Z_{i}>0)"
+            },
+            {
+              "type": "text",
+              "content": " ,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.309,
+            0.178,
+            0.646,
+            0.218
+          ],
+          "image_path": "images/page_316_equation_3.jpg",
+          "content": "S ^ {+} = \\sum_ {i = 1} ^ {n} \\phi_ {i} = \\# \\{Z _ {i} > 0, i = 1, 2, \\dots , n \\}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.122,
+            0.234,
+            0.83,
+            0.299
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中记号 # 表示计数. 原假设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{0}"
+            },
+            {
+              "type": "text",
+              "content": "  成立时,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\phi_{i} \\sim B(1,0.5)"
+            },
+            {
+              "type": "text",
+              "content": " , 则  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S^{+} \\sim B(n,0.5)"
+            },
+            {
+              "type": "text",
+              "content": " . 于是当  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S^{+}"
+            },
+            {
+              "type": "text",
+              "content": "  比较小或比较大时拒绝原假设, 认为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta \\neq 0"
+            },
+            {
+              "type": "text",
+              "content": " . 检验临界值分别为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B_{1-\\alpha/2}(n,0.5)"
+            },
+            {
+              "type": "text",
+              "content": "  和  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B_{\\alpha/2}(n,0.5)"
+            },
+            {
+              "type": "text",
+              "content": " ,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha"
+            },
+            {
+              "type": "text",
+              "content": "  为检验水平."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.122,
+            0.303,
+            0.832,
+            0.412
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在例 6.5.3 中, 所用的检验方法称为符号检验. 然而, 符号检验仅仅使用样本是正数还是负数的信息, 而没有使用样本数据值大小的信息. 为了更有效地解决对称中心  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  是否等于 0 的检验问题, 不仅应用正负号信息, 还应该使用其数值大小的信息. Wilcoxon (威尔科克森) 提出的秩和检验方法可改进符号检验方法. 为此, 下面首先介绍秩与秩统计量."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.123,
+            0.419,
+            0.832,
+            0.504
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定义 6.5.2 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  为来自连续型分布 F 的独立同分布样本，得到次序统计量  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{(1)} < X_{(2)} < \\cdots < X_{(n)}"
+            },
+            {
+              "type": "text",
+              "content": " . 若  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{i} = X_{(R_{i})}"
+            },
+            {
+              "type": "text",
+              "content": " ，则称  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{i} (i = 1, 2, \\cdots, n)"
+            },
+            {
+              "type": "text",
+              "content": "  在  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  中的秩为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "R_{i}"
+            },
+            {
+              "type": "text",
+              "content": " ，简称  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{i}"
+            },
+            {
+              "type": "text",
+              "content": "  的秩为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "R_{i}, R_{i} = 1, 2, \\cdots, n"
+            },
+            {
+              "type": "text",
+              "content": " .  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "R = (R_{1}, R_{2}, \\cdots, R_{n})"
+            },
+            {
+              "type": "text",
+              "content": "  以及 R 的任意可测函数称为秩统计量. 基于秩统计量的检验方法为秩检验."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.122,
+            0.51,
+            0.832,
+            0.596
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由于随机样本  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  来自连续型分布 F，从而以概率 1 保证，样本  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  互不相等。R 为离散型随机变量，它取 n! 个值，且取  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1, 2, \\cdots, n"
+            },
+            {
+              "type": "text",
+              "content": "  的任意一排列  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(r_{1}, r_{2}, \\cdots, r_{n})"
+            },
+            {
+              "type": "text",
+              "content": "  的概率都是 1/n！，即 R 服从均匀分布。因此，秩统计量的分布和总体分布 F 没有关系。对于单个秩统计量  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "R_{i}"
+            },
+            {
+              "type": "text",
+              "content": " ，有"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.322,
+            0.612,
+            0.63,
+            0.653
+          ],
+          "image_path": "images/page_316_equation_8.jpg",
+          "content": "R _ {i} = \\sum_ {k = 1} ^ {n} I (X _ {k} \\leqslant X _ {i}), i = 1, 2, \\dots , n."
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.124,
+            0.668,
+            0.69,
+            0.686
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由于 R 服从均匀分布, 单个的秩  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "R_{i}(i=1,2,\\cdots,n)"
+            },
+            {
+              "type": "text",
+              "content": "  也服从均匀分布:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.341,
+            0.705,
+            0.612,
+            0.722
+          ],
+          "image_path": "images/page_316_equation_10.jpg",
+          "content": "P (R _ {i} = r) = 1 / n, r = 1, 2, \\dots , n,"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.124,
+            0.74,
+            0.501,
+            0.759
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "且 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "R_{i}"
+            },
+            {
+              "type": "text",
+              "content": " 和 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "R_{j}(i\\neq j)"
+            },
+            {
+              "type": "text",
+              "content": " 的联合分布也是均匀分布:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.309,
+            0.77,
+            0.644,
+            0.803
+          ],
+          "image_path": "images/page_316_equation_12.jpg",
+          "content": "P (R _ {i} = r _ {1}, R _ {j} = r _ {2}) = \\frac {1}{n (n - 1)}, r _ {1} \\neq r _ {2}."
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.123,
+            0.819,
+            0.701,
+            0.851
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "从而, 可得 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(R_i) = \\frac{n + 1}{2}"
+            },
+            {
+              "type": "text",
+              "content": ", "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname{Var}(R_i) = \\frac{n^2 - 1}{12}"
+            },
+            {
+              "type": "text",
+              "content": ", "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname{Cov}(R_i, R_j) = -\\frac{n + 1}{12}"
+            },
+            {
+              "type": "text",
+              "content": "."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.124,
+            0.851,
+            0.83,
+            0.89
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定义 6.5.3 对于随机样本  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": " ，设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "R_{i}^{+}"
+            },
+            {
+              "type": "text",
+              "content": "  为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "|X_{i}|"
+            },
+            {
+              "type": "text",
+              "content": "  在  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "|X_{1}|, |X_{2}|, \\cdots, |X_{n}|"
+            },
+            {
+              "type": "text",
+              "content": "  中的秩， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\phi_{i} = I(X_{i} > 0)"
+            },
+            {
+              "type": "text",
+              "content": " ，则称"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.344,
+            0.908,
+            0.609,
+            0.929
+          ],
+          "image_path": "images/page_316_equation_15.jpg",
+          "content": "R ^ {+} = \\left(\\phi_ {1} R _ {1} ^ {+}, \\phi_ {2} R _ {2} ^ {+}, \\dots , \\phi_ {n} R _ {n} ^ {+}\\right)"
+        }
+      ]
+    },
+    {
+      "page_idx": 317,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.71,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "6.5 U 统计量与秩检验"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.069,
+            0.917,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "305"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.167,
+            0.122,
+            0.445,
+            0.138
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(X_{1},X_{2},\\cdots,X_{n})"
+            },
+            {
+              "type": "text",
+              "content": " 的符号秩,称"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.451,
+            0.158,
+            0.586,
+            0.199
+          ],
+          "image_path": "images/page_317_equation_3.jpg",
+          "content": "W ^ {+} = \\sum_ {i = 1} ^ {n} \\phi_ {i} R _ {i} ^ {+}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.167,
+            0.216,
+            0.327,
+            0.232
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "为符号秩和统计量."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.164,
+            0.239,
+            0.874,
+            0.349
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由于符号秩涉及符号, 对于不同的分布 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F, \\phi"
+            },
+            {
+              "type": "text",
+              "content": " 取 0 或者 1 的情况完全不同, 因此一般的符号秩统计量应该与 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F"
+            },
+            {
+              "type": "text",
+              "content": " 密切相关. 特别地, 若 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F"
+            },
+            {
+              "type": "text",
+              "content": " 连续且关于 0 对称, 可以证明, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\phi_1, |X_1|, \\phi_2, |X_2|, \\cdots, \\phi_n, |X_n|"
+            },
+            {
+              "type": "text",
+              "content": " 相互独立, 且 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(\\phi_i = 0) = P(\\phi_i = 1) = 1/2"
+            },
+            {
+              "type": "text",
+              "content": ". 应用符号秩和统计量可以做一些非参数检验. 例如, 在例 6.5.3 中, 记 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "R_i"
+            },
+            {
+              "type": "text",
+              "content": " 为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z_i"
+            },
+            {
+              "type": "text",
+              "content": " 的秩, 则可以考虑符号秩和统计量:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.451,
+            0.353,
+            0.586,
+            0.395
+          ],
+          "image_path": "images/page_317_equation_6.jpg",
+          "content": "W _ {n} ^ {+} = \\sum_ {i = 1} ^ {n} \\phi_ {i} R _ {i}."
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.165,
+            0.408,
+            0.873,
+            0.472
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "W_{n}^{+}"
+            },
+            {
+              "type": "text",
+              "content": " 偏大或偏小时, 都可以拒绝原假设 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{0}"
+            },
+            {
+              "type": "text",
+              "content": ". 为了求检验的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p"
+            },
+            {
+              "type": "text",
+              "content": " 值和检验的临界值, 下面研究原假设 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{0}: \\theta = 0"
+            },
+            {
+              "type": "text",
+              "content": " 成立, 即总体的分布关于原点 0 对称时, 符号秩和检验统计量 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "W_{n}^{+}"
+            },
+            {
+              "type": "text",
+              "content": " 的分布的性质."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.164,
+            0.476,
+            0.875,
+            0.579
+          ],
+          "content": [
+            {
+              "type": "equation_inline",
+              "content": "W_{n}^{+}"
+            },
+            {
+              "type": "text",
+              "content": " 服从离散型分布, 它可能取  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0,1,2,\\cdots,\\frac{n(n+1)}{2}"
+            },
+            {
+              "type": "text",
+              "content": "  各个值. 令  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t_{n,d}"
+            },
+            {
+              "type": "text",
+              "content": "  表示从  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1,2,\\cdots,n"
+            },
+            {
+              "type": "text",
+              "content": "  这 n 个数字中任取若干个数, 其和恰为 d 的取法种数, 其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "d=0,1,2,\\cdots,\\frac{n(n+1)}{2}"
+            },
+            {
+              "type": "text",
+              "content": " . 则在总体 X 的分布是关于原点 0 对称的连续型分布时,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "R_{1}, R_{2}, \\cdots, R_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  给定后  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "W_{n}^{+}=d"
+            },
+            {
+              "type": "text",
+              "content": "  的条件概率为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.251,
+            0.595,
+            0.786,
+            0.675
+          ],
+          "image_path": "images/page_317_equation_9.jpg",
+          "content": "\\begin{array}{l} P (W _ {n} ^ {+} = d | R _ {1}, R _ {2}, \\dots , R _ {n}) = P \\bigg (\\sum_ {i = 1} ^ {n} \\phi_ {i} R _ {i} = d \\bigg | R _ {1}, R _ {2}, \\dots , R _ {n} \\bigg) \\\\ = t _ {n, d} / 2 ^ {n}, \\quad d = 0, 1, 2, \\dots , \\frac {n (n + 1)}{2}. \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.164,
+            0.688,
+            0.875,
+            0.73
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "这个条件概率和  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "R_{1}, R_{2}, \\cdots, R_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  没有关系. 这说明在  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "R_{1}, R_{2}, \\cdots, R_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  给定后  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "W_{n}^{+} = d"
+            },
+            {
+              "type": "text",
+              "content": "  的条件概率就是  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "W_{n}^{+} = d"
+            },
+            {
+              "type": "text",
+              "content": "  的概率. 由此, 对于检验水平  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha"
+            },
+            {
+              "type": "text",
+              "content": " , 即可得检验临界值."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.164,
+            0.736,
+            0.873,
+            0.8
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例 6.5.3 中的配对问题可以推广至更一般的情形. 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{m}"
+            },
+            {
+              "type": "text",
+              "content": "  为来自总体  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x)"
+            },
+            {
+              "type": "text",
+              "content": "  的独立同分布样本,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{1}, Y_{2}, \\cdots, Y_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  为来自总体  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "G(x)"
+            },
+            {
+              "type": "text",
+              "content": "  的独立同分布样本, 且两总体相互独立. 令  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\gamma = P(X < Y)"
+            },
+            {
+              "type": "text",
+              "content": " , 感兴趣的问题是检验"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.421,
+            0.819,
+            0.871,
+            0.851
+          ],
+          "image_path": "images/page_317_equation_12.jpg",
+          "content": "\\gamma = \\frac {1}{2} \\leftrightarrow \\gamma \\neq \\frac {1}{2}. \\tag {6.5.2}"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.165,
+            0.865,
+            0.795,
+            0.883
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "当  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x)"
+            },
+            {
+              "type": "text",
+              "content": "  为连续型对称分布且  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "G(x)=F(x-\\theta)"
+            },
+            {
+              "type": "text",
+              "content": "  时, 该检验问题也等价于检验"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.427,
+            0.91,
+            0.871,
+            0.927
+          ],
+          "image_path": "images/page_317_equation_14.jpg",
+          "content": "\\theta = 0 \\quad \\leftrightarrow \\quad \\theta \\neq 0, \\tag {6.5.3}"
+        }
+      ]
+    },
+    {
+      "page_idx": 318,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.08,
+            0.068,
+            0.107,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "306"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.264,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第六章 非参数方法"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.123,
+            0.122,
+            0.72,
+            0.138
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其假设两个分布的类型相同, 而对称点可能不同. 若把  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{i}"
+            },
+            {
+              "type": "text",
+              "content": "  对应的秩相加:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.403,
+            0.155,
+            0.83,
+            0.197
+          ],
+          "image_path": "images/page_318_equation_3.jpg",
+          "content": "W _ {n} = \\sum_ {k = 1} ^ {m} R _ {k}, \\tag {6.5.4}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.122,
+            0.213,
+            0.832,
+            0.321
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(R_{1}, R_{2}, \\cdots, R_{m+n})"
+            },
+            {
+              "type": "text",
+              "content": " 为样本 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(X_{1}, X_{2}, \\cdots, X_{m}, Y_{1}, Y_{2}, \\cdots, Y_{n})"
+            },
+            {
+              "type": "text",
+              "content": " 的秩统计量，则当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\gamma"
+            },
+            {
+              "type": "text",
+              "content": " 太大或者太小时，有理由认为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "W_{n}"
+            },
+            {
+              "type": "text",
+              "content": " 很大或者很小。这里把 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{i}"
+            },
+            {
+              "type": "text",
+              "content": " 对应的秩相加，等价地，也可以考虑把 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{j}"
+            },
+            {
+              "type": "text",
+              "content": " 对应的秩相加。从而，可以通过统计量 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "W_{n}"
+            },
+            {
+              "type": "text",
+              "content": " 来检验两总体是否相同。这种检验方法即为 Wilcoxon 秩和检验方法，称 (6.5.4) 式为 Wilcoxon 秩和统计量。拒绝域为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.281,
+            0.335,
+            0.673,
+            0.355
+          ],
+          "image_path": "images/page_318_equation_5.jpg",
+          "content": "\\left\\{W _ {n} \\leqslant W _ {1 - \\alpha / 2} (m, n) \\quad \\text {或} \\quad W _ {n} \\geqslant W _ {\\alpha / 2} (m, n) \\right\\}."
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.123,
+            0.372,
+            0.832,
+            0.451
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "具体的临界值可参见现成的分布表. 实际上, 可以证明 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "W_{n}"
+            },
+            {
+              "type": "text",
+              "content": " 的分布关于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\frac{1}{2} m(m + n + 1)"
+            },
+            {
+              "type": "text",
+              "content": " 是对称的, 且 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(W_{n}) = \\frac{m(m + n + 1)}{2}, \\operatorname{Var}(W_{n}) = \\frac{mn(m + n + 1)}{12}"
+            },
+            {
+              "type": "text",
+              "content": ". 在样本容量较大时,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.302,
+            0.473,
+            0.83,
+            0.542
+          ],
+          "image_path": "images/page_318_equation_7.jpg",
+          "content": "W ^ {*} = \\frac {W _ {n} - \\frac {m (m + n + 1)}{2}}{\\sqrt {\\frac {m n (m + n + 1)}{1 2}}} \\stackrel {\\cdot} {\\sim} N (0, 1). \\tag {6.5.5}"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.123,
+            0.556,
+            0.487,
+            0.573
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在 m, n 都大于等于 20 时, 近似效果已很好."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.122,
+            0.58,
+            0.831,
+            0.619
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "对于检验问题 (6.5.2), 也可以从 U 统计量的角度, 构造参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\gamma = P(X < Y)"
+            },
+            {
+              "type": "text",
+              "content": "  的 U 统计量:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.352,
+            0.627,
+            0.602,
+            0.671
+          ],
+          "image_path": "images/page_318_equation_10.jpg",
+          "content": "U _ {n} = \\frac {1}{m n} \\sum_ {i = 1} ^ {m} \\sum_ {j = 1} ^ {n} I \\left(X _ {i} <   Y _ {j}\\right)."
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.123,
+            0.688,
+            0.648,
+            0.706
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "这里核函数为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\phi(x,y)=I(x<y)"
+            },
+            {
+              "type": "text",
+              "content": " . 则根据上一小节的内容, 可得"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.199,
+            0.723,
+            0.754,
+            0.744
+          ],
+          "image_path": "images/page_318_equation_12.jpg",
+          "content": "\\sigma_ {1 1} ^ {2} = \\mathrm{Var} [ I (X <   Y) ] = P (X <   Y) [ 1 - P (X <   Y) ] = \\gamma (1 - \\gamma) <   \\infty ,"
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.2,
+            0.75,
+            0.717,
+            0.785
+          ],
+          "image_path": "images/page_318_equation_13.jpg",
+          "content": "\\sigma_ {0 1} ^ {2} = \\mathrm{Cov} \\left(I (X <   Y), I \\left(X <   Y _ {1}\\right)\\right) = \\int \\left[ 1 - G (x) \\right] ^ {2} \\mathrm{d} F (x) - \\gamma^ {2},"
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.2,
+            0.789,
+            0.676,
+            0.824
+          ],
+          "image_path": "images/page_318_equation_14.jpg",
+          "content": "\\sigma_ {1 0} ^ {2} = \\mathrm{Cov} \\left(I (X <   Y), I \\left(X _ {1} <   Y\\right)\\right) = \\int F (x) ^ {2} \\mathrm{d} G (x) - \\gamma^ {2}."
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.122,
+            0.839,
+            0.83,
+            0.879
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "当  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "m+n\\to\\infty"
+            },
+            {
+              "type": "text",
+              "content": "  且  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "m/(m+n)\\to p\\in(0,1)"
+            },
+            {
+              "type": "text",
+              "content": "  时，由定理 6.5.2 中两样本 U 统计量的渐近结果，有"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 16,
+          "bbox": [
+            0.256,
+            0.885,
+            0.698,
+            0.919
+          ],
+          "image_path": "images/page_318_equation_16.jpg",
+          "content": "\\sqrt {m + n} \\left(U _ {n} - \\gamma\\right) \\xrightarrow {\\mathrm{d}} N \\left(0, \\sigma^ {2}\\right), \\sigma^ {2} = \\frac {1}{p} \\sigma_ {1 0} ^ {2} + \\frac {1}{1 - p} \\sigma_ {0 1} ^ {2}."
+        }
+      ]
+    },
+    {
+      "page_idx": 319,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.71,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "6.5 U 统计量与秩检验"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.068,
+            0.917,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "307"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.164,
+            0.121,
+            0.854,
+            0.139
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "若再用一次U统计量的方法，可以构造出 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma^2"
+            },
+            {
+              "type": "text",
+              "content": " 的相合估计 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\sigma}^2"
+            },
+            {
+              "type": "text",
+              "content": " .由Slutsky定理，可得"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.383,
+            0.152,
+            0.871,
+            0.185
+          ],
+          "image_path": "images/page_319_equation_3.jpg",
+          "content": "\\frac {\\sqrt {m + n} (U _ {n} - \\gamma)}{\\hat {\\sigma} ^ {2}} \\xrightarrow {\\mathrm{d}} N (0, 1). \\tag {6.5.6}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.164,
+            0.199,
+            0.873,
+            0.277
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "从而, 得到检验的接受域: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A = \\left\\{u_{\\alpha / 2} \\leqslant \\frac{\\sqrt{m + n}(U_n - 1/2)}{\\hat{\\sigma}^2} \\leqslant u_{1 - \\alpha / 2}\\right\\}"
+            },
+            {
+              "type": "text",
+              "content": ". 若对于检验问题 (6.5.3), 当原假设成立时, 两个分布相同, 则可以直接计算出 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma^2"
+            },
+            {
+              "type": "text",
+              "content": ", 代入即可. 这种方法即为 Mann-Whitney (曼-惠特尼) 检验方法."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.164,
+            0.282,
+            0.873,
+            0.321
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "此外, 还可以通过 U 统计量的工具得到秩和检验统计量 (6.5.4) 的极限分布. 对于秩统计量, 有"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.282,
+            0.336,
+            0.758,
+            0.38
+          ],
+          "image_path": "images/page_319_equation_6.jpg",
+          "content": "R _ {i} = \\sum_ {k = 1} ^ {m} I \\left(X _ {k} \\leqslant X _ {i}\\right) + \\sum_ {j = 1} ^ {n} I \\left(Y _ {j} \\leqslant X _ {i}\\right), \\quad i = 1, 2, \\dots , m."
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.165,
+            0.393,
+            0.19,
+            0.409
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "则"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.286,
+            0.42,
+            0.749,
+            0.571
+          ],
+          "image_path": "images/page_319_equation_8.jpg",
+          "content": "\\begin{array}{l} W _ {n} = \\sum_ {i = 1} ^ {m} R _ {i} = \\sum_ {i = 1} ^ {m} \\left(\\sum_ {k = 1} ^ {m} I \\left(X _ {k} \\leqslant X _ {i}\\right) + \\sum_ {j = 1} ^ {n} I \\left(Y _ {j} \\leqslant X _ {i}\\right)\\right) \\\\ = \\sum_ {i = 1} ^ {m} \\sum_ {j = 1} ^ {m} I \\left(X _ {i} \\leqslant X _ {j}\\right) + \\sum_ {i = 1} ^ {m} \\sum_ {j = 1} ^ {n} I \\left(Y _ {j} \\leqslant X _ {i}\\right) \\\\ = \\frac {m (m + 1)}{2} + m n - \\sum_ {i = 1} ^ {m} \\sum_ {j = 1} ^ {n} I \\left(X _ {i} <   Y _ {j}\\right). \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.165,
+            0.586,
+            0.743,
+            0.617
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "因此, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "W_{n} = \\frac{m(m + 1)}{2} + mn(1 - U_{n})"
+            },
+            {
+              "type": "text",
+              "content": ". 由 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U_{n}"
+            },
+            {
+              "type": "text",
+              "content": " 的极限分布 (6.5.6), 可得"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.302,
+            0.63,
+            0.704,
+            0.666
+          ],
+          "image_path": "images/page_319_equation_10.jpg",
+          "content": "\\sqrt {m + n} \\left(1 + \\frac {m + 1}{2 n} - \\frac {1}{m n} W _ {n} - \\gamma\\right) \\xrightarrow {\\mathrm{d}} N (0, \\sigma^ {2})."
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.164,
+            0.679,
+            0.509,
+            0.695
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "这即是经典的 Wilcoxon 两样本秩和检验."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.164,
+            0.702,
+            0.871,
+            0.743
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例 6.5.4 在某小学随机采集 12 岁男童和女童各 10 名的头发样品, 检测发样中钙含量 (单位:  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu g/g"
+            },
+            {
+              "type": "text",
+              "content": " ), 数据见表 6.5.1. 检验男童与女童头发中钙含量有无差异?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.164,
+            0.748,
+            0.873,
+            0.834
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "首先对男童和女童的数据进行正态性检验. 经检验, 在检验水平 0.05 下, 认为这两组数据都不符合正态分布. 因此, 下面考虑用非参数检验中的秩和检验方法. 把这 20 个数据放在一起得到相应的秩, 见表 6.5.1, 从而得到男童的秩和为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "W_1 = 77"
+            },
+            {
+              "type": "text",
+              "content": ", 选其作为 Wilcoxon 秩和检验统计量 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "W"
+            },
+            {
+              "type": "text",
+              "content": ". 在原假设 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_0"
+            },
+            {
+              "type": "text",
+              "content": " 成立的情况下, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "W"
+            },
+            {
+              "type": "text",
+              "content": " 的均值和方差分别为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.247,
+            0.844,
+            0.791,
+            0.876
+          ],
+          "image_path": "images/page_319_equation_14.jpg",
+          "content": "E (W) = \\frac {m (m + n + 1)}{2} = 1 0 5, \\mathrm{Var} (W) = \\frac {m n (m + n + 1)}{1 2} = 1 7 5."
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.164,
+            0.886,
+            0.873,
+            0.927
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "根据 (6.5.5) 式, 男童的秩和 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "W = 77"
+            },
+            {
+              "type": "text",
+              "content": " 与 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(W)"
+            },
+            {
+              "type": "text",
+              "content": " 之差的绝对值约为标准差的 2 倍: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(77 - 105) / 13.229 = -2.117"
+            },
+            {
+              "type": "text",
+              "content": ", 因此, 在检验水平 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha = 0.05"
+            },
+            {
+              "type": "text",
+              "content": " 下, 认为两组数据是有差异的."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}

@@ -1,0 +1,6349 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "created_at": "2026-05-30T23:42:17+08:00",
+      "producer_application": "jsPDF 2.4.0",
+      "page_count": 373,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 256,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 257,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 258,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 259,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 260,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 261,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 262,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 263,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 264,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 265,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 266,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 267,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 268,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 269,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 270,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 271,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 256,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.08,
+            0.068,
+            0.109,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "244"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.354,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第五章 线性模型与logistic回归"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.122,
+            0.121,
+            0.833,
+            0.414
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\varepsilon \\sim N(0, \\sigma^{2})"
+            },
+            {
+              "type": "text",
+              "content": " ，即协变量  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{1}, x_{3}, x_{5}, x_{6}, x_{8}"
+            },
+            {
+              "type": "text",
+              "content": "  是不显著的。分别取  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma = 0.2"
+            },
+            {
+              "type": "text",
+              "content": "  和 2，产生 100 个随机样本。应用 Lasso 回归估计，并用 10-折叠交叉验证方法。图 5.3.4(a) 给出  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma = 0.2"
+            },
+            {
+              "type": "text",
+              "content": "  的情形，其横坐标  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda"
+            },
+            {
+              "type": "text",
+              "content": "  取了  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\ln"
+            },
+            {
+              "type": "text",
+              "content": "  变换，图形上方的数字  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 \\sim 8"
+            },
+            {
+              "type": "text",
+              "content": "  的位置表示随着  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda"
+            },
+            {
+              "type": "text",
+              "content": "  的减少，第几个变量进入模型。当随机误差方差比较小时，随着  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda"
+            },
+            {
+              "type": "text",
+              "content": "  逐渐变小，对参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\beta"
+            },
+            {
+              "type": "text",
+              "content": "  的约束越来越小， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\beta_{2}, \\beta_{4}"
+            },
+            {
+              "type": "text",
+              "content": "  和  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\beta_{7}"
+            },
+            {
+              "type": "text",
+              "content": "  逐渐往其真值靠拢，而其他不显著的变量的参数也接近 0.10-折叠交叉验证的结果显示，使预测误差最小的  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda = 0.0074"
+            },
+            {
+              "type": "text",
+              "content": " ，对应于图中 “minMSE” 处，这时选入线性模型的变量个数为 5 个，剔除了 3 个变量。若取  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda"
+            },
+            {
+              "type": "text",
+              "content": "  使预测误差控制在离最小值的 1 倍标准差，即  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda"
+            },
+            {
+              "type": "text",
+              "content": "  为图中 “1SE” 处，此时  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda = 0.0434"
+            },
+            {
+              "type": "text",
+              "content": " ，且恰好保留了 3 个重要变量。类似地，图 5.3.4(b) 给出  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma = 2"
+            },
+            {
+              "type": "text",
+              "content": "  的情形，使预测误差最小的  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda = 0.0367"
+            },
+            {
+              "type": "text",
+              "content": " ，使预测均方误差控制在离最小值的 1 倍标准差的  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda = 0.5445"
+            },
+            {
+              "type": "text",
+              "content": " ；前者保留了全部 8 个变量，而后者保留了 3 个重要变量。此外，图 5.3.5 给出  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma = 2"
+            },
+            {
+              "type": "text",
+              "content": "  时，用 10-折叠交叉验证得到不同  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda"
+            },
+            {
+              "type": "text",
+              "content": "  的预测均方误差。从中可知， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda"
+            },
+            {
+              "type": "text",
+              "content": "  严重影响预测效果。不过  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda"
+            },
+            {
+              "type": "text",
+              "content": "  从取 “1SE” 处后，预测 MSE 变化不大。"
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 3,
+          "bbox": [
+            0.143,
+            0.427,
+            0.469,
+            0.643
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 3,
+              "bbox": [
+                0.143,
+                0.427,
+                0.469,
+                0.643
+              ],
+              "image_path": "images/page_256_chart_3.jpg",
+              "content": "| \\(\\lambda\\) | Curve 1 (Top) | Curve 2 (Middle) | Curve 3 (Bottom) |\n| --- | --- | --- | --- |\n| ~0.5 | 0 | 0 | 0 |\n| ~0.2 | 3 | 2 | -3 |\n| ~0.01 | 3 | 2 | -3 |\n| ~0.001 | 3 | 2 | -3 |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 4,
+              "bbox": [
+                0.291,
+                0.649,
+                0.356,
+                0.663
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(a) "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\sigma = 0.2"
+                }
+              ]
+            }
+          ],
+          "sub_type": "contour"
+        },
+        {
+          "type": "chart",
+          "index": 5,
+          "bbox": [
+            0.494,
+            0.427,
+            0.816,
+            0.643
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 5,
+              "bbox": [
+                0.494,
+                0.427,
+                0.816,
+                0.643
+              ],
+              "image_path": "images/page_256_chart_5.jpg",
+              "content": "| \\(\\lambda\\) | Series 1 (Top) | Series 2 | Series 3 | Series 4 | Series 5 (Bottom) |\n| --- | --- | --- | --- | --- | --- |\n| 10^0 | 0 | 0 | 0 | 0 | 0 |\n| ~10^-0.5 | ~2.5 | ~1.1 | ~0.1 | ~-0.1 | ~-0.2 |\n| ~10^-1 | ~3.0 | ~1.4 | ~0.3 | ~-0.3 | ~-0.4 |\n| ~10^-2 | ~3.0 | ~1.4 | ~0.3 | ~-0.3 | ~-0.4 |\n| ~10^-3 | ~3.0 | ~1.4 | ~0.3 | ~-0.3 | ~-0.4 |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 6,
+              "bbox": [
+                0.641,
+                0.649,
+                0.696,
+                0.663
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(b) "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\sigma = 2"
+                }
+              ]
+            }
+          ],
+          "sub_type": "line"
+        },
+        {
+          "type": "chart",
+          "index": 8,
+          "bbox": [
+            0.205,
+            0.696,
+            0.75,
+            0.902
+          ],
+          "content": [
+            {
+              "type": "chart_caption",
+              "index": 7,
+              "bbox": [
+                0.326,
+                0.672,
+                0.629,
+                0.687
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图5.3.4 例5.3.4的Lasso回归结果"
+                }
+              ]
+            },
+            {
+              "type": "chart_body",
+              "index": 8,
+              "bbox": [
+                0.205,
+                0.696,
+                0.75,
+                0.902
+              ],
+              "image_path": "images/page_256_chart_8.jpg",
+              "content": "| \\(\\lambda\\) | MSE |\n| --- | --- |\n| ~0.2 | ~30 |\n| ~0.25 | ~28 |\n| ~0.3 | ~26 |\n| ~0.4 | ~23 |\n| ~0.5 | ~21 |\n| ~0.6 | ~19 |\n| ~0.7 | ~17 |\n| ~0.8 | ~15 |\n| ~0.9 | ~14 |\n| ~1.0 | ~12 |\n| ~1.2 | ~10 |\n| ~1.4 | ~9 |\n| ~1.6 | ~8 |\n| ~1.8 | ~7 |\n| ~2.0 | ~6 |\n| ~2.5 | ~5 |\n| ~3.0 | ~4.5 |\n| ~4.0 | ~4.5 |\n| ~5.0 | ~4.5 |\n| ~6.0 | ~4.5 |\n| ~8.0 | ~4.5 |\n| ~10.0 | ~4.5 |\n| ~20.0 | ~4.5 |\n| ~30.0 | ~4.5 |\n| ~40.0 | ~4.5 |\n| ~50.0 | ~4.5 |\n| ~60.0 | ~4.5 |\n| ~80.0 | ~4.5 |\n| ~100.0 | ~4.5 |\n| ~200.0 | ~4.5 |\n| ~300.0 | ~4.5 |\n| ~400.0 | ~4.5 |\n| ~500.0 | ~4.5 |\n| ~600.0 | ~4.5 |\n| ~800.0 | ~4.5 |\n| ~1000.0 | ~4.5 |\n| ~2000.0 | ~4.5 |\n| ~3000.0 | ~4.5 |\n| ~4000.0 | ~4.5 |\n| ~5000.0 | ~4.5 |\n| ~6000.0 | ~4.5 |\n| ~8000.0 | ~4.5 |\n| ~10000.0 | ~4.5 |\n| ~20000.0 | ~4.5 |\n| ~30000.0 | ~4.5 |\n| ~40000.0 | ~4.5 |\n| ~50000.0 | ~4.5 |\n| ~60000.0 | ~4.5 |\n| ~80000.0 | ~4.5 |\n| ~100000.0 | ~4.5 |\n| ~200000.0 | ~4.5 |\n| ~300000.0 | ~4.5 |\n| ~400000.0 | ~4.5 |\n| ~500000.0 | ~4.5 |\n| ~600000.0 | ~4.5 |\n| ~800000.0 | ~4.5 |\n| ~1000000.0 | ~4.5 |\n| ~2000000.0 | ~4.5 |\n| ~3000000.0 | ~4.5 |\n| ~4000000.0 | ~4.5 |\n| ~5000000.0 | ~4.5 |\n| ~6000000.0 | ~4.5 |\n| ~8000000.0 | ~4.5 |\n| ~10000000.0 | ~4.5 |\n| ~20000000.0 | ~4.5 |\n| ~30000000.0 | ~4.5 |\n| ~40000000.0 | ~4.5 |\n| ~50000000.0 | ~4.5 |\n| ~60000000.0 | ~4.5 |\n| ~80000000.0 | ~4.5 |\n| ~10^3 | 4~35 (minMSE) |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 9,
+              "bbox": [
+                0.264,
+                0.911,
+                0.69,
+                0.926
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图5.3.5 例5.3.4中 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\sigma = 2"
+                },
+                {
+                  "type": "text",
+                  "content": " 时Lasso回归的预测误差"
+                }
+              ]
+            }
+          ],
+          "sub_type": "error_bar"
+        }
+      ]
+    },
+    {
+      "page_idx": 257,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.772,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5.3 变量选择"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.068,
+            0.917,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "245"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.164,
+            0.122,
+            0.875,
+            0.255
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由例 5.3.4 可知, Lasso 回归估计可以起到变量选择的效果, 而参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda"
+            },
+            {
+              "type": "text",
+              "content": "  严重影响预测效果. 一般地, Lasso 回归估计可把显著的变量选出来, 不过保留的协变量个数往往比真实的参数个数稍多, 即部分不显著的变量也被纳入回归模型. 对于变量个数达到几百、几千甚至几万的情形, 这个缺点尤为突出. 此外, 在 Lasso 回归估计的求解路径中, 对于  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\times p"
+            },
+            {
+              "type": "text",
+              "content": "  的设计矩阵, 最多只能选出  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\min\\{n, p\\}"
+            },
+            {
+              "type": "text",
+              "content": "  个变量, 当 p > n 时, 最多只能选出 n 个预测变量, 因此, 对于 p > n 的情况, Lasso 回归估计方法不能很好地选出真实模型."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.164,
+            0.26,
+            0.872,
+            0.324
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "为此, 不同的研究人员对 (5.3.6) 式中的惩罚项  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p(\\beta)"
+            },
+            {
+              "type": "text",
+              "content": "  做了其他定义, 使估计效果更好. 例如, Zou et al. (2005) 提出弹性网 (elastic net) 回归方法, 其惩罚项为岭回归估计和 Lasso 回归估计的惩罚项的加权, 即"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.35,
+            0.349,
+            0.655,
+            0.369
+          ],
+          "image_path": "images/page_257_equation_4.jpg",
+          "content": "p (\\boldsymbol {\\beta}) = \\lambda \\left[ \\alpha \\parallel \\boldsymbol {\\beta} \\parallel_ {1} + (1 - \\alpha) \\parallel \\boldsymbol {\\beta} \\parallel^ {2} \\right],"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.164,
+            0.387,
+            0.872,
+            0.474
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中权重 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha \\in [0,1]"
+            },
+            {
+              "type": "text",
+              "content": ". 当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha = 0"
+            },
+            {
+              "type": "text",
+              "content": " 时, 弹性网回归即为岭回归; 当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha = 1"
+            },
+            {
+              "type": "text",
+              "content": " 时, 弹性网回归即为 Lasso 回归. 因此, 弹性网回归兼有 Lasso 回归和岭回归的优点, 既能达到变量选择的目的, 又具有对重要特征选择的作用. 此外, Fan et al. (2001) 提出了 SCAD (smoothly clipped absolute deviation) 这一变量选择的新方法, 其惩罚函数为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.421,
+            0.492,
+            0.586,
+            0.533
+          ],
+          "image_path": "images/page_257_equation_6.jpg",
+          "content": "p (\\boldsymbol {\\beta}) = \\sum_ {i = 1} ^ {p} p _ {\\lambda} (| \\beta_ {i} |),"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.165,
+            0.55,
+            0.399,
+            0.568
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p_{\\lambda}(\\beta)"
+            },
+            {
+              "type": "text",
+              "content": " 的导函数为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.319,
+            0.584,
+            0.687,
+            0.621
+          ],
+          "image_path": "images/page_257_equation_8.jpg",
+          "content": "p _ {\\lambda} ^ {\\prime} (\\beta) = \\lambda \\left[ I (\\beta \\leqslant \\lambda) + \\frac {(a \\lambda - \\beta) _ {+}}{(a - 1) \\lambda} I (\\beta > \\lambda) \\right],"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.166,
+            0.636,
+            0.489,
+            0.654
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "且 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a > 2, \\beta > 0"
+            },
+            {
+              "type": "text",
+              "content": ". 这里 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I(\\cdot)"
+            },
+            {
+              "type": "text",
+              "content": " 是示性函数,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.437,
+            0.675,
+            0.591,
+            0.727
+          ],
+          "image_path": "images/page_257_equation_10.jpg",
+          "content": "b _ {+} = \\left\\{ \\begin{array}{l l} b, & b > 0, \\\\ 0, & \\text {否则}. \\end{array} \\right."
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.164,
+            0.748,
+            0.874,
+            0.927
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "对于该惩罚函数中的两个参数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda"
+            },
+            {
+              "type": "text",
+              "content": " 和 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a"
+            },
+            {
+              "type": "text",
+              "content": ", 可以通过交叉验证来得到. 不过该文中也给出了一个较为通用的值, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda = \\sqrt{2\\ln(p)}"
+            },
+            {
+              "type": "text",
+              "content": ", 在 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p < 100"
+            },
+            {
+              "type": "text",
+              "content": " 时, 可取 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a = 3.7"
+            },
+            {
+              "type": "text",
+              "content": ". 他们证明了在该惩罚函数下, 兼具变量选择一致性和与经典最小二乘估计相同的收敛速度. 前者是指不仅可以把显著的变量选出来, 而且尽量避免不显著的变量被纳入模型. 不过由于 SCAD 回归模型的形式过于复杂, 以至于迭代算法运行速度较慢, 因此比较适合于维数在一百以内的情形; 此外, 该方法在低噪声水平的情况下表现较优, 但在高噪声水平的情况下表现一般. 除了前面提到的弹性网回归和 SCAD 回归, 人们还提出自适应 Lasso (adaptive Lasso) 回归、群组 Lasso (group Lasso) 回归等变量选择方法."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 258,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.08,
+            0.068,
+            0.109,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "246"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.354,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第五章 线性模型与logistic回归"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.123,
+            0.122,
+            0.832,
+            0.207
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在实际应用时, 没有一种变量选择算法是万能的. 对于不同的数据集, 需寻找合适的变量选择算法. 对于超高维的情形, 也有研究人员推荐把 Lasso 和 SCAD 两种方法结合起来使用, 即先用 Lasso 法在超高维的协变量中筛选出部分变量, 再用 SCAD 法筛选重要变量."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.124,
+            0.261,
+            0.345,
+            0.283
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5.4 logistic 回归"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.122,
+            0.329,
+            0.833,
+            0.53
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "前面讨论的回归模型中, 响应 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y"
+            },
+            {
+              "type": "text",
+              "content": " 取值往往是连续的, 然而在实际应用中, 经常遇到 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y"
+            },
+            {
+              "type": "text",
+              "content": " 是离散的情形, 即 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y"
+            },
+            {
+              "type": "text",
+              "content": " 是分类数据. 最常见的是二分类问题, 即 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y"
+            },
+            {
+              "type": "text",
+              "content": " 的取值仅为 0 和 1. 二分类的问题可以推广到多分类问题. 例如, 在疾病研究中, 经常需要分析疾病的发生与各危险因素之间的定量关系. 例如, 研究胃癌的发生与吸烟、饮酒、不良饮食习惯等危险因素的关系. 对于二分类问题, 由于响应 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y"
+            },
+            {
+              "type": "text",
+              "content": " 为分类变量, 不满足正态分布和方差齐性等条件, 若采用多元线性回归分析, 则其预测值可能会大于 1 或小于 0, 从而无法给出合理的解释. logistic 回归模型较好地解决了上述问题. 由于该方法简单、实用、高效, 因此在医学、大数据分析等诸多领域都有十分广泛的应用. logistic 回归通常用于解决分类问题, 例如客户是否会购买某个商品, 借款人是否会违约等."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.16,
+            0.557,
+            0.308,
+            0.575
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5.4.1 二分类"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.162,
+            0.601,
+            0.604,
+            0.618
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "首先考虑 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y"
+            },
+            {
+              "type": "text",
+              "content": " 取值为0和1的二分类问题. 给定数据集"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.21,
+            0.637,
+            0.744,
+            0.656
+          ],
+          "image_path": "images/page_258_equation_7.jpg",
+          "content": "D = \\{(\\boldsymbol {x} _ {i}, y _ {i}): \\boldsymbol {x} _ {i} = (x _ {i 1}, x _ {i 2}, \\dots , x _ {i p}), y _ {i} \\in \\{0, 1 \\}, i = 1, 2, \\dots , n \\},"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.123,
+            0.673,
+            0.832,
+            0.735
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "一个自然的做法是直接对该数据集用多元线性回归模型 (5.1.8) 式来拟合数据. 如图 5.4.1(a) 所示, 一个只有一个协变量的二分类数据, 若直接用线性回归模型来拟合, 得到的拟合模型"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.362,
+            0.741,
+            0.594,
+            0.761
+          ],
+          "image_path": "images/page_258_equation_9.jpg",
+          "content": "\\hat {f} (x) = - 0. 2 9 5 0 + 1. 4 3 3 7 x"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.123,
+            0.771,
+            0.831,
+            0.811
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "并不能保证其预测值落在 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "[0,1]"
+            },
+            {
+              "type": "text",
+              "content": "，而且线性回归拟合的曲线似乎和数据点没有关系，从而没有意义。一种简单的处理方式是通过下面的阶跃函数:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.362,
+            0.825,
+            0.548,
+            0.877
+          ],
+          "image_path": "images/page_258_equation_11.jpg",
+          "content": "\\hat {y} = \\left\\{ \\begin{array}{l l} 1, & \\hat {f} (x) > 0. 5, \\\\ 0, & \\hat {f} (x) \\leqslant 0. 5 \\end{array} \\right."
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.123,
+            0.886,
+            0.832,
+            0.927
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "把数据的预测值强行变为0或1. 对于该拟合数据，当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x > 0.5545"
+            },
+            {
+              "type": "text",
+              "content": " 时，令 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{y} = 1"
+            },
+            {
+              "type": "text",
+              "content": " ，否则 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{y} = 0"
+            },
+            {
+              "type": "text",
+              "content": " .然而，阶跃函数不是连续函数.为此，希望像线性回归的函数一样，使协变量"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 259,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.75,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5.4 logistic 回归"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.068,
+            0.917,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "247"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.164,
+            0.122,
+            0.871,
+            0.139
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "和响应 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y"
+            },
+            {
+              "type": "text",
+              "content": " 之间的关系用一个单调可导的函数来描述. 常见的拟合函数为 sigmoid 函数:"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.451,
+            0.156,
+            0.587,
+            0.188
+          ],
+          "image_path": "images/page_259_equation_3.jpg",
+          "content": "f (z) = \\frac {1}{1 + \\mathrm{e} ^ {- z}},"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.164,
+            0.205,
+            0.873,
+            0.269
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "该函数在机器学习中的神经网络中有诸多应用。该函数图形是一条S形曲线，如图5.4.1(b)所示，其有个平滑的过渡且可导。从中可见，sigmoid函数曲线将取值范围 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(-\\infty ,\\infty)"
+            },
+            {
+              "type": "text",
+              "content": " 映射到(0,1).从而，sigmoid函数值更适宜表示预测的概率。"
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 5,
+          "bbox": [
+            0.18,
+            0.287,
+            0.517,
+            0.5
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 5,
+              "bbox": [
+                0.18,
+                0.287,
+                0.517,
+                0.5
+              ],
+              "image_path": "images/page_259_chart_5.jpg",
+              "content": "| x | y |\n| --- | --- |\n| ~0.1 | 0 |\n| ~0.15 | 0 |\n| ~0.18 | 0 |\n| ~0.2 | 0 |\n| ~0.25 | 0 |\n| ~0.28 | 0 |\n| ~0.3 | 0 |\n| ~0.35 | 0 |\n| ~0.45 | 0 |\n| ~0.48 | 1.0 |\n| ~0.5 | 1.0 |\n| ~0.55 | 0 |\n| ~0.58 | 0 |\n| ~0.6 | 1.0 |\n| ~0.7 | 1.0 |\n| ~0.78 | 1.0 |\n| ~0.8 | 1.0 |\n| ~0.85 | 1.0 |\n| ~0.9 | 1.0 |\n| ~0.95 | 1.0 |\n| ~0.98 | 1.0 |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 6,
+              "bbox": [
+                0.355,
+                0.506,
+                0.377,
+                0.519
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(a)"
+                }
+              ]
+            }
+          ],
+          "sub_type": "scatter"
+        },
+        {
+          "type": "chart",
+          "index": 7,
+          "bbox": [
+            0.557,
+            0.289,
+            0.859,
+            0.489
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 7,
+              "bbox": [
+                0.557,
+                0.289,
+                0.859,
+                0.489
+              ],
+              "image_path": "images/page_259_chart_7.jpg",
+              "content": "| X | Y |\n| --- | --- |\n| -6 | 0 |\n| -4 | ~0.02 |\n| -2 | ~0.15 |\n| 0 | 0.5 |\n| 2 | ~0.85 |\n| 4 | ~0.98 |\n| 6 | 1.0 |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 8,
+              "bbox": [
+                0.706,
+                0.506,
+                0.728,
+                0.519
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(b)"
+                }
+              ]
+            },
+            {
+              "type": "chart_caption",
+              "index": 9,
+              "bbox": [
+                0.4,
+                0.528,
+                0.637,
+                0.544
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图 5.4.1 logistic 回归示意图"
+                }
+              ]
+            }
+          ],
+          "sub_type": "line"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.164,
+            0.566,
+            0.873,
+            0.606
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "令 y 取值为 1 的概率为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(y=1|x)"
+            },
+            {
+              "type": "text",
+              "content": " ，则  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(y=0|x)=1-P(y=1|x)"
+            },
+            {
+              "type": "text",
+              "content": " 。两者的比值称为几率 (odds)，其指该事件发生与不发生的概率比值。则对数几率为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.394,
+            0.622,
+            0.641,
+            0.657
+          ],
+          "image_path": "images/page_259_equation_11.jpg",
+          "content": "\\ln (\\text {odds}) = \\ln \\frac {P (y = 1 | \\boldsymbol {x})}{1 - P (y = 1 | \\boldsymbol {x})}."
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.163,
+            0.672,
+            0.873,
+            0.737
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "对于 p 维变量  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{1}, x_{2}, \\cdots, x_{p}"
+            },
+            {
+              "type": "text",
+              "content": " ，在不混淆的情形下，令  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\boldsymbol{x} = (x_{0}, x_{1}, \\cdots, x_{p})^{\\mathrm{T}}"
+            },
+            {
+              "type": "text",
+              "content": " ，其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{0} = 1"
+            },
+            {
+              "type": "text",
+              "content": " ， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\boldsymbol{\\beta} = (\\beta_{0}, \\boldsymbol{\\beta}_{1})^{\\mathrm{T}}"
+            },
+            {
+              "type": "text",
+              "content": " ， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\boldsymbol{\\beta}_{1} = (\\beta_{1}, \\beta_{2}, \\cdots, \\beta_{p})^{\\mathrm{T}}"
+            },
+            {
+              "type": "text",
+              "content": " 。则线性回归项  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\boldsymbol{\\beta}^{T}x = \\beta_{0} + \\beta_{1}x_{1} + \\cdots + \\beta_{p}x_{p}"
+            },
+            {
+              "type": "text",
+              "content": " ，对线性回归项  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\beta^{T}x"
+            },
+            {
+              "type": "text",
+              "content": "  经过 sigmoid 函数变换后，令其为 y = 1 的概率，即"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.318,
+            0.751,
+            0.719,
+            0.791
+          ],
+          "image_path": "images/page_259_equation_13.jpg",
+          "content": "P (y = 1 | \\boldsymbol {x}) = \\frac {1}{1 + \\exp \\{- \\boldsymbol {\\beta} ^ {\\mathrm{T}} \\boldsymbol {x} \\}} = \\frac {\\exp \\{\\boldsymbol {\\beta} ^ {\\mathrm{T}} \\boldsymbol {x} \\}}{1 + \\exp \\{\\boldsymbol {\\beta} ^ {\\mathrm{T}} \\boldsymbol {x} \\}}."
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.165,
+            0.805,
+            0.214,
+            0.821
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "因此，"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.324,
+            0.822,
+            0.713,
+            0.857
+          ],
+          "image_path": "images/page_259_equation_15.jpg",
+          "content": "P (y = 0 | \\boldsymbol {x}) = 1 - P (y = 1 | \\boldsymbol {x}) = \\frac {1}{1 + \\exp \\{\\boldsymbol {\\beta} ^ {\\mathrm{T}} \\boldsymbol {x} \\}},"
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.166,
+            0.867,
+            0.19,
+            0.882
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "且"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 17,
+          "bbox": [
+            0.29,
+            0.895,
+            0.871,
+            0.93
+          ],
+          "image_path": "images/page_259_equation_17.jpg",
+          "content": "\\ln \\frac {P (y = 1 | \\boldsymbol {x})}{1 - P (y = 1 | \\boldsymbol {x})} = \\boldsymbol {\\beta} ^ {\\mathrm{T}} \\boldsymbol {x} = \\beta_ {0} + \\beta_ {1} x _ {1} + \\dots + \\beta_ {p} x _ {p}, \\tag {5.4.1}"
+        }
+      ]
+    },
+    {
+      "page_idx": 260,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.08,
+            0.068,
+            0.107,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "248"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.354,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第五章 线性模型与logistic回归"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.122,
+            0.122,
+            0.832,
+            0.207
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "该式即为 logistic 回归模型, 即输出 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y = 1"
+            },
+            {
+              "type": "text",
+              "content": " 的对数几率由输入 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\pmb{x}"
+            },
+            {
+              "type": "text",
+              "content": " 的线性函数表示. 当 (5.4.1) 式右边的取值越接近 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "+\\infty"
+            },
+            {
+              "type": "text",
+              "content": " 时, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y = 1"
+            },
+            {
+              "type": "text",
+              "content": " 的概率越接近 1. 因此 logistic 回归的思路是, 先拟合决策边界, 再建立这个边界与分类的概率联系, 从而得到二分类情况下的概率."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.122,
+            0.213,
+            0.833,
+            0.3
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "给定数据集 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "D"
+            },
+            {
+              "type": "text",
+              "content": " 后, 需要估计 logistic 回归模型 (5.4.1) 的参数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\beta"
+            },
+            {
+              "type": "text",
+              "content": ". 下面考虑最大似然估计方法. 由于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(y = 1|\\pmb{x})"
+            },
+            {
+              "type": "text",
+              "content": " 与 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\beta"
+            },
+            {
+              "type": "text",
+              "content": " 有关, 为方便记, 可设 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(y = 1|\\pmb{x}) = P(y = 1|\\pmb{x}, \\beta) = p(\\pmb{x}, \\beta)"
+            },
+            {
+              "type": "text",
+              "content": ", 则 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(y = 0|\\pmb{x}) = 1 - p(\\pmb{x}, \\beta)"
+            },
+            {
+              "type": "text",
+              "content": ", 且 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(y|\\pmb{x}, \\beta) = [p(\\pmb{x}, \\beta)]^y [1 - p(\\pmb{x}, \\beta)]^{1 - y}"
+            },
+            {
+              "type": "text",
+              "content": ". 因此, 似然函数为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.298,
+            0.314,
+            0.83,
+            0.355
+          ],
+          "image_path": "images/page_260_equation_4.jpg",
+          "content": "L (\\boldsymbol {\\beta}) = \\prod_ {i = 1} ^ {n} [ p (\\boldsymbol {x} _ {i}, \\boldsymbol {\\beta}) ] ^ {y _ {i}} [ 1 - p (\\boldsymbol {x} _ {i}, \\boldsymbol {\\beta}) ] ^ {1 - y _ {i}}. \\tag {5.4.2}"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.124,
+            0.371,
+            0.318,
+            0.387
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "相应的对数似然函数为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.225,
+            0.401,
+            0.728,
+            0.443
+          ],
+          "image_path": "images/page_260_equation_6.jpg",
+          "content": "l (\\boldsymbol {\\beta}) = \\ln L (\\boldsymbol {\\beta}) = \\sum_ {i = 1} ^ {n} \\{y _ {i} \\ln p (\\boldsymbol {x} _ {i}, \\boldsymbol {\\beta}) + (1 - y _ {i}) \\ln [ 1 - p (\\boldsymbol {x} _ {i}, \\boldsymbol {\\beta}) ] \\}."
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.123,
+            0.458,
+            0.419,
+            0.476
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "把 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p(\\pmb{x}_i,\\beta)"
+            },
+            {
+              "type": "text",
+              "content": " 的表达式代入 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "l(\\beta)"
+            },
+            {
+              "type": "text",
+              "content": " 可得"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.301,
+            0.492,
+            0.652,
+            0.533
+          ],
+          "image_path": "images/page_260_equation_8.jpg",
+          "content": "l (\\boldsymbol {\\beta}) = \\sum_ {i = 1} ^ {n} \\left[ y _ {i} \\boldsymbol {\\beta} ^ {\\mathrm{T}} \\boldsymbol {x} _ {i} - \\ln (1 + \\exp \\{\\boldsymbol {\\beta} ^ {\\mathrm{T}} \\boldsymbol {x} _ {i} \\}) \\right]."
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.124,
+            0.548,
+            0.706,
+            0.567
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "为了最大化  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "l(\\beta)"
+            },
+            {
+              "type": "text",
+              "content": " ，将上式分别对  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\beta_{0}, \\beta_{1}, \\cdots, \\beta_{p}"
+            },
+            {
+              "type": "text",
+              "content": "  求偏导并令其为 0。由于"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.199,
+            0.579,
+            0.754,
+            0.67
+          ],
+          "image_path": "images/page_260_equation_10.jpg",
+          "content": "\\begin{array}{l} \\frac {\\partial l (\\boldsymbol {\\beta})}{\\partial \\beta_ {j}} = \\sum_ {i = 1} ^ {n} y _ {i} x _ {i j} - \\sum_ {i = 1} ^ {n} \\frac {x _ {i j} \\exp \\{\\boldsymbol {\\beta} ^ {\\mathrm{T}} \\boldsymbol {x} _ {i} \\}}{1 + \\exp \\{\\boldsymbol {\\beta} ^ {\\mathrm{T}} \\boldsymbol {x} _ {i} \\}} = \\sum_ {i = 1} ^ {n} y _ {i} x _ {i j} - \\sum_ {i = 1} ^ {n} p (\\boldsymbol {x} _ {i}, \\boldsymbol {\\beta}) x _ {i j} \\\\ = \\sum_ {i = 1} ^ {n} x _ {i j} [ y _ {i} - p (\\boldsymbol {x} _ {i}, \\boldsymbol {\\beta}) ], \\quad j = 0, 1, \\dots , p, \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.124,
+            0.685,
+            0.291,
+            0.702
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "写成矩阵形式, 可得"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.357,
+            0.705,
+            0.597,
+            0.746
+          ],
+          "image_path": "images/page_260_equation_12.jpg",
+          "content": "\\frac {\\partial l (\\boldsymbol {\\beta})}{\\partial \\boldsymbol {\\beta}} = \\sum_ {i = 1} ^ {n} \\boldsymbol {x} _ {i} [ y _ {i} - p (\\boldsymbol {x} _ {i}, \\boldsymbol {\\beta}) ],"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.123,
+            0.756,
+            0.553,
+            0.773
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "因此, 最大似然估计即为求解这  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p + 1"
+            },
+            {
+              "type": "text",
+              "content": "  个非线性方程"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.359,
+            0.784,
+            0.597,
+            0.82
+          ],
+          "image_path": "images/page_260_equation_14.jpg",
+          "content": "\\frac {\\partial l (\\boldsymbol {\\beta})}{\\partial \\beta_ {j}} = 0, \\quad j = 0, 1, \\dots , p."
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.123,
+            0.834,
+            0.83,
+            0.874
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "该方程组没有显式解, 其可通过 Newton-Raphson (牛顿-拉弗森) 算法求解. 为此, 求出它的二阶导数, 即得"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 16,
+          "bbox": [
+            0.176,
+            0.888,
+            0.779,
+            0.93
+          ],
+          "image_path": "images/page_260_equation_16.jpg",
+          "content": "\\frac {\\partial^ {2} l (\\boldsymbol {\\beta})}{\\partial \\beta_ {j} \\partial \\beta_ {k}} = - \\sum_ {i = 1} ^ {n} \\frac {(1 + \\exp \\{\\boldsymbol {\\beta} ^ {\\mathrm{T}} \\boldsymbol {x} _ {i} \\}) \\exp \\{\\boldsymbol {\\beta} ^ {\\mathrm{T}} \\boldsymbol {x} _ {i} \\} x _ {i j} x _ {i k} - (\\exp \\{\\boldsymbol {\\beta} ^ {\\mathrm{T}} \\boldsymbol {x} _ {i} \\}) ^ {2} x _ {i j} x _ {i k}}{(1 + \\exp \\{\\boldsymbol {\\beta} ^ {\\mathrm{T}} \\boldsymbol {x} _ {i} \\}) ^ {2}}"
+        }
+      ]
+    },
+    {
+      "page_idx": 261,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.75,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5.4 logistic 回归"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.068,
+            0.917,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "249"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 2,
+          "bbox": [
+            0.286,
+            0.119,
+            0.624,
+            0.209
+          ],
+          "image_path": "images/page_261_equation_2.jpg",
+          "content": "\\begin{array}{l} = - \\sum_ {i = 1} ^ {n} \\left[ x _ {i j} x _ {i k} p (\\boldsymbol {x} _ {i}, \\boldsymbol {\\beta}) - x _ {i j} x _ {i k} p (\\boldsymbol {x} _ {i}, \\boldsymbol {\\beta}) ^ {2} \\right] \\\\ = - \\sum_ {i = 1} ^ {n} x _ {i j} x _ {i k} p (\\boldsymbol {x} _ {i}, \\boldsymbol {\\beta}) [ 1 - p (\\boldsymbol {x} _ {i}, \\boldsymbol {\\beta}) ]. \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.166,
+            0.224,
+            0.4,
+            0.24
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "从而其Hesse(黑塞)矩阵为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.342,
+            0.256,
+            0.696,
+            0.297
+          ],
+          "image_path": "images/page_261_equation_4.jpg",
+          "content": "\\frac {\\partial^ {2} l (\\boldsymbol {\\beta})}{\\partial \\boldsymbol {\\beta} \\partial \\boldsymbol {\\beta} ^ {\\mathrm{T}}} = - \\sum_ {i = 1} ^ {n} \\boldsymbol {x} _ {i} \\boldsymbol {x} _ {i} ^ {\\mathrm{T}} p (\\boldsymbol {x} _ {i}, \\boldsymbol {\\beta}) [ 1 - p (\\boldsymbol {x} _ {i}, \\boldsymbol {\\beta}) ]."
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.165,
+            0.313,
+            0.591,
+            0.331
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "从某个  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\beta^{old}"
+            },
+            {
+              "type": "text",
+              "content": "  开始, 一个 Newton-Raphson 更新如下:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.376,
+            0.345,
+            0.662,
+            0.385
+          ],
+          "image_path": "images/page_261_equation_6.jpg",
+          "content": "\\boldsymbol {\\beta} ^ {\\mathrm{new}} = \\boldsymbol {\\beta} ^ {\\mathrm{old}} - \\left[ \\frac {\\partial^ {2} l (\\boldsymbol {\\beta})}{\\partial \\boldsymbol {\\beta} \\partial \\boldsymbol {\\beta} ^ {\\mathrm{T}}} \\right] ^ {- 1} \\frac {\\partial l (\\boldsymbol {\\beta})}{\\partial \\boldsymbol {\\beta}},"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.164,
+            0.399,
+            0.875,
+            0.464
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中的导数是在 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\beta^{\\mathrm{old}}"
+            },
+            {
+              "type": "text",
+              "content": " 处计算的. 这个迭代过程可用矩阵来表示. 令 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\pmb{y}"
+            },
+            {
+              "type": "text",
+              "content": " 为响应 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y_{i}"
+            },
+            {
+              "type": "text",
+              "content": " 组成的列向量, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " 为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\times (p + 1)"
+            },
+            {
+              "type": "text",
+              "content": " 系数矩阵, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\pmb{p}"
+            },
+            {
+              "type": "text",
+              "content": " 为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n"
+            },
+            {
+              "type": "text",
+              "content": " 维向量且其第 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i"
+            },
+            {
+              "type": "text",
+              "content": " 个元素为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p(\\pmb{x}_i, \\beta^{\\mathrm{old}})"
+            },
+            {
+              "type": "text",
+              "content": ", "
+            },
+            {
+              "type": "equation_inline",
+              "content": "W"
+            },
+            {
+              "type": "text",
+              "content": " 为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\times n"
+            },
+            {
+              "type": "text",
+              "content": " 对角矩阵且其第 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i"
+            },
+            {
+              "type": "text",
+              "content": " 个对角元素为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p(\\pmb{x}_i, \\beta^{\\mathrm{old}})[1 - p(\\pmb{x}_i, \\beta^{\\mathrm{old}})]"
+            },
+            {
+              "type": "text",
+              "content": ". 则可得"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.446,
+            0.477,
+            0.619,
+            0.511
+          ],
+          "image_path": "images/page_261_equation_8.jpg",
+          "content": "\\frac {\\partial l (\\boldsymbol {\\beta})}{\\partial \\boldsymbol {\\beta}} = X ^ {\\mathrm{T}} (\\boldsymbol {y} - \\boldsymbol {p}),"
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.449,
+            0.517,
+            0.622,
+            0.553
+          ],
+          "image_path": "images/page_261_equation_9.jpg",
+          "content": "\\frac {\\partial^ {2} l (\\boldsymbol {\\beta})}{\\partial \\boldsymbol {\\beta} \\partial \\boldsymbol {\\beta} ^ {\\mathrm{T}}} = - X ^ {\\mathrm{T}} W X."
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.165,
+            0.567,
+            0.441,
+            0.584
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "因此, Newton-Raphson 迭代式为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.319,
+            0.598,
+            0.717,
+            0.684
+          ],
+          "image_path": "images/page_261_equation_11.jpg",
+          "content": "\\begin{array}{l} \\boldsymbol {\\beta} ^ {\\mathrm{new}} = \\boldsymbol {\\beta} ^ {\\mathrm{old}} + (X ^ {\\mathrm{T}} W X) ^ {- 1} X ^ {\\mathrm{T}} (\\boldsymbol {y} - \\boldsymbol {p}) \\\\ = (X ^ {\\mathrm{T}} W X) ^ {- 1} X ^ {\\mathrm{T}} W [ X \\boldsymbol {\\beta} ^ {\\text {old}} + W ^ {- 1} (\\boldsymbol {y} - \\boldsymbol {p}) ] \\\\ = (X ^ {\\mathrm{T}} W X) ^ {- 1} X ^ {\\mathrm{T}} W \\boldsymbol {z}, \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.164,
+            0.703,
+            0.874,
+            0.744
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "z \\stackrel{\\mathrm{def}}{=} X\\beta^{\\mathrm{old}} + W^{-1}(\\pmb{y} - \\pmb{p})"
+            },
+            {
+              "type": "text",
+              "content": "。因此，求解logistic回归模型参数的迭代过程如算法5.6所示。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 13,
+          "bbox": [
+            0.202,
+            0.751,
+            0.698,
+            0.769
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "算法 5.6 (logistic 回归模型参数的最大似然估计迭代算法)"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.192,
+            0.787,
+            0.401,
+            0.803
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "步骤 1 令初始值  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\beta = 0"
+            },
+            {
+              "type": "text",
+              "content": " ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.192,
+            0.82,
+            0.409,
+            0.837
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "步骤 2 计算 p, 其元素为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 16,
+          "bbox": [
+            0.383,
+            0.851,
+            0.748,
+            0.89
+          ],
+          "image_path": "images/page_261_equation_16.jpg",
+          "content": "p (\\boldsymbol {x} _ {i}, \\boldsymbol {\\beta}) = \\frac {\\exp \\{\\boldsymbol {\\beta} ^ {\\mathrm{T}} \\boldsymbol {x} _ {i} \\}}{1 + \\exp \\{\\boldsymbol {\\beta} ^ {\\mathrm{T}} \\boldsymbol {x} _ {i} \\}}, \\quad i = 1, 2, \\dots , n."
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.191,
+            0.909,
+            0.871,
+            0.927
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "步骤 3 计算对角矩阵 W, 其第 i 个对角元素为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p(\\boldsymbol{x}_{i}, \\boldsymbol{\\beta})[1 - p(\\boldsymbol{x}_{i}, \\boldsymbol{\\beta})], i = 1, 2, \\cdots, n."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 262,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.08,
+            0.068,
+            0.107,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "250"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.354,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第五章 线性模型与logistic回归"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.149,
+            0.122,
+            0.441,
+            0.14
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "步骤 4 令  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "z = X\\beta + W^{-1}(y - p)"
+            },
+            {
+              "type": "text",
+              "content": " ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.15,
+            0.152,
+            0.469,
+            0.171
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "步骤 5 更新  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\boldsymbol{\\beta}=(X^{\\mathrm{T}}WX)^{-1}X^{\\mathrm{T}}W\\boldsymbol{z}"
+            },
+            {
+              "type": "text",
+              "content": " ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.15,
+            0.185,
+            0.607,
+            0.202
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "步骤 6 若满足停止准则, 则中止算法; 否则回到步骤 2."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.122,
+            0.217,
+            0.832,
+            0.304
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在算法 5.6 的步骤 6 中, 停止准则可定义为更新后的  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\beta"
+            },
+            {
+              "type": "text",
+              "content": "  与更新前的没有太多变化, 即  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\left|\\left|\\boldsymbol{\\beta}^{\\mathrm{new}}-\\boldsymbol{\\beta}^{\\mathrm{old}}\\right|\\right|<\\varepsilon"
+            },
+            {
+              "type": "text",
+              "content": " , 其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\varepsilon"
+            },
+            {
+              "type": "text",
+              "content": "  为给定的小常数. 由算法 5.6 可知, logistic 回归模型参数的最大似然估计通过 Newton-Raphson 迭代算法容易求出. 得到模型参数的估计  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\beta}"
+            },
+            {
+              "type": "text",
+              "content": "  之后, 则概率  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(y=1|x)"
+            },
+            {
+              "type": "text",
+              "content": "  和  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(y=0|x)"
+            },
+            {
+              "type": "text",
+              "content": "  的估计分别为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.243,
+            0.314,
+            0.71,
+            0.361
+          ],
+          "image_path": "images/page_262_equation_6.jpg",
+          "content": "p (\\boldsymbol {x}, \\hat {\\boldsymbol {\\beta}}) = \\frac {\\exp \\{\\hat {\\boldsymbol {\\beta}} ^ {\\mathrm{T}} \\boldsymbol {x} \\}}{1 + \\exp \\{\\hat {\\boldsymbol {\\beta}} ^ {\\mathrm{T}} \\boldsymbol {x} \\}}, 1 - p (\\boldsymbol {x}, \\hat {\\boldsymbol {\\beta}}) = \\frac {1}{1 + \\exp \\{\\hat {\\boldsymbol {\\beta}} ^ {\\mathrm{T}} \\boldsymbol {x} \\}}."
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.123,
+            0.372,
+            0.832,
+            0.412
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "显然, 给定样本 x, 当  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\beta^{T}x > 0"
+            },
+            {
+              "type": "text",
+              "content": "  时, 相应的  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{y} = 1"
+            },
+            {
+              "type": "text",
+              "content": " ; 否则  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{y} = 0"
+            },
+            {
+              "type": "text",
+              "content": " . 因此, 确定响应变量 y 属于哪一类的判别边界仍是一个线性函数."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.122,
+            0.418,
+            0.832,
+            0.459
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例 5.4.1 对于某个具有两个协变量的二分类数据, 根据算法 5.6 得到  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\beta"
+            },
+            {
+              "type": "text",
+              "content": "  的估计  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\boldsymbol{\\beta}} = (0.7679, -0.6816, -0.3664)^{\\mathrm{T}}"
+            },
+            {
+              "type": "text",
+              "content": " , 从而"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.246,
+            0.468,
+            0.707,
+            0.505
+          ],
+          "image_path": "images/page_262_equation_9.jpg",
+          "content": "P (y = 1 | \\boldsymbol {x}) = \\frac {\\exp \\{0 . 7 6 7 9 - 0 . 6 8 1 6 x _ {1} - 0 . 3 6 6 4 x _ {2} \\}}{1 + \\exp \\{0 . 7 6 7 9 - 0 . 6 8 1 6 x _ {1} - 0 . 3 6 6 4 x _ {2} \\}},"
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.249,
+            0.508,
+            0.709,
+            0.543
+          ],
+          "image_path": "images/page_262_equation_10.jpg",
+          "content": "P (y = 0 | \\boldsymbol {x}) = \\frac {1}{1 + \\exp \\{0 . 7 6 7 9 - 0 . 6 8 1 6 x _ {1} - 0 . 3 6 6 4 x _ {2} \\}},"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.125,
+            0.553,
+            0.224,
+            0.569
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "且对数几率"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.297,
+            0.582,
+            0.655,
+            0.599
+          ],
+          "image_path": "images/page_262_equation_12.jpg",
+          "content": "\\ln (\\text {odds}) = 0. 7 6 7 9 - 0. 6 8 1 6 x _ {1} - 0. 3 6 6 4 x _ {2}."
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.123,
+            0.615,
+            0.434,
+            0.632
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "因此, 对于给定样本 x, 其判别函数为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.269,
+            0.648,
+            0.675,
+            0.7
+          ],
+          "image_path": "images/page_262_equation_14.jpg",
+          "content": "\\hat {y} = \\left\\{ \\begin{array}{l l} 1, & 0. 7 6 7 9 - 0. 6 8 1 6 x _ {1} - 0. 3 6 6 4 x _ {2} > 0, \\\\ 0, & \\text {否则}. \\end{array} \\right."
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.124,
+            0.716,
+            0.447,
+            0.733
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由该式可知, 判别边界是一个线性函数."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.122,
+            0.739,
+            0.833,
+            0.895
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由例 5.4.1 可知, logistic 回归模型可用于解决二分类的问题. 此外, 若某个协变量  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{i}"
+            },
+            {
+              "type": "text",
+              "content": "  是定类数据, 则可对其进行伪变量处理. logistic 回归模型中估计的参数有直观解释. 例如, 在研究肺癌与吸烟、饮酒的关系时, 设响应 y 表示是否患肺癌, 吸烟  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{1}"
+            },
+            {
+              "type": "text",
+              "content": "  和饮酒  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{2}"
+            },
+            {
+              "type": "text",
+              "content": "  为协变量. 令 y=1 表示患肺癌, y=0 表示未患肺癌;  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{1}=1"
+            },
+            {
+              "type": "text",
+              "content": "  表示吸烟,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{1}=0"
+            },
+            {
+              "type": "text",
+              "content": "  表示不吸烟;  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{2}=1"
+            },
+            {
+              "type": "text",
+              "content": "  表示饮酒,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{2}=0"
+            },
+            {
+              "type": "text",
+              "content": "  表示不饮酒. 实际上, 吸烟和饮酒这两个变量都是定性变量, 经  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{1}"
+            },
+            {
+              "type": "text",
+              "content": "  和  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{2}"
+            },
+            {
+              "type": "text",
+              "content": "  这样设定后变为伪变量, 可代入 logistic 回归模型中进行回归. 根据数据, 假设得到如下的 logistic 回归模型:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 17,
+          "bbox": [
+            0.354,
+            0.907,
+            0.598,
+            0.927
+          ],
+          "image_path": "images/page_262_equation_17.jpg",
+          "content": "\\ln (\\text {odds}) = \\hat {\\beta} _ {0} + \\hat {\\beta} _ {1} x _ {1} + \\hat {\\beta} _ {2} x _ {2},"
+        }
+      ]
+    },
+    {
+      "page_idx": 263,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.75,
+            0.068,
+            0.871,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5.4 logistic 回归"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.069,
+            0.915,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "251"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.164,
+            0.121,
+            0.873,
+            0.207
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "此时, 模型中各参数的解释如下: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\beta}_0"
+            },
+            {
+              "type": "text",
+              "content": " 表示不吸烟且不饮酒的人患肺癌与不患肺癌概率之比的对数值; 控制饮酒因素后, 吸烟者患肺癌的概率是不吸烟者的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\exp \\{\\hat{\\beta}_1\\}"
+            },
+            {
+              "type": "text",
+              "content": " 倍; 控制吸烟因素后, 饮酒者患肺癌的概率是不饮酒者的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\exp \\{\\hat{\\beta}_2\\}"
+            },
+            {
+              "type": "text",
+              "content": " 倍. 由此可见, logistic 回归模型在医学中可以很好地解释二分类的问题, 因此得以大量应用."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.165,
+            0.214,
+            0.873,
+            0.253
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "进一步地, 需要检验 logistic 回归模型 (5.4.1) 是否显著. 此时, 原假设和备择假设分别如下:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.26,
+            0.278,
+            0.778,
+            0.295
+          ],
+          "image_path": "images/page_263_equation_4.jpg",
+          "content": "H _ {0}: \\beta_ {1} = \\beta_ {2} = \\dots = \\beta_ {p} = 0 \\leftrightarrow H _ {1}: \\text {至少存在某个} i, \\beta_ {i} \\neq 0."
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.165,
+            0.318,
+            0.722,
+            0.335
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "似然比检验法是检验上述问题的常用方法. 似然比检验统计量 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "G"
+            },
+            {
+              "type": "text",
+              "content": " 为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.423,
+            0.354,
+            0.612,
+            0.371
+          ],
+          "image_path": "images/page_263_equation_6.jpg",
+          "content": "G = - 2 (\\ln L _ {1} - \\ln L _ {0})."
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.164,
+            0.388,
+            0.875,
+            0.52
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "L_{1}"
+            },
+            {
+              "type": "text",
+              "content": "  为 (5.4.2) 式包含所有协变量  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\beta_{0}, \\beta_{1}, \\cdots, \\beta_{p}"
+            },
+            {
+              "type": "text",
+              "content": "  的回归模型的似然函数， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "L_{0}"
+            },
+            {
+              "type": "text",
+              "content": "  为仅包含常数项  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\beta_{0}"
+            },
+            {
+              "type": "text",
+              "content": "  的回归模型的似然函数。根据似然比检验理论，可知在原假设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{0}"
+            },
+            {
+              "type": "text",
+              "content": "  成立时，G 统计量的极限分布服从自由度为 p 的  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\chi^{2}"
+            },
+            {
+              "type": "text",
+              "content": "  分布。从而，给定样本后，可得相应的 p 值。若 p 值小于给定的显著性水平  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha"
+            },
+            {
+              "type": "text",
+              "content": " ，则该 logistic 回归模型是显著的。当模型显著时，还需对模型中的每一个协变量的回归系数进行假设检验，以检验每个协变量是否显著，其原假设和备择假设分别如下所示:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.39,
+            0.545,
+            0.649,
+            0.563
+          ],
+          "image_path": "images/page_263_equation_8.jpg",
+          "content": "H _ {0}: \\beta_ {j} = 0 \\leftrightarrow H _ {1}: \\beta_ {j} \\neq 0."
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.165,
+            0.585,
+            0.66,
+            0.602
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "常用的假设检验方法为 Wald  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\chi^{2}"
+            },
+            {
+              "type": "text",
+              "content": "  检验, 相应的检验统计量为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.452,
+            0.625,
+            0.585,
+            0.647
+          ],
+          "image_path": "images/page_263_equation_10.jpg",
+          "content": "\\chi^ {2} = (\\hat {\\beta} _ {j} / S _ {\\hat {\\beta} _ {j}}) ^ {2},"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.164,
+            0.666,
+            0.873,
+            0.707
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S_{\\hat{\\beta}_j}"
+            },
+            {
+              "type": "text",
+              "content": " 为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\beta}_j"
+            },
+            {
+              "type": "text",
+              "content": " 的估计标准差. 在原假设 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_0"
+            },
+            {
+              "type": "text",
+              "content": " 成立时, Wald "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\chi^2"
+            },
+            {
+              "type": "text",
+              "content": " 检验统计量服从自由度为1的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\chi^2"
+            },
+            {
+              "type": "text",
+              "content": " 分布."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 12,
+          "bbox": [
+            0.202,
+            0.735,
+            0.35,
+            0.754
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5.4.2 多分类"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.164,
+            0.778,
+            0.874,
+            0.841
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在实际应用中, 经常遇到多分类的情形, 即最终的分类结果中类别数会大于 2. 例如, 新闻可以分为体育、财经、其他等三个类别, 目标是根据某一个用户的各种特征, 判断其更喜欢哪一类新闻. 这是一个典型的多分类任务."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.164,
+            0.848,
+            0.873,
+            0.887
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "一般地, 对于多分类问题, 设类别为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{1,2,\\cdots,K\\}"
+            },
+            {
+              "type": "text",
+              "content": " . 对于任一点 x, 可以估计其落入每个类的概率, 从而可以定义一个判别函数 G 如下:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.397,
+            0.905,
+            0.64,
+            0.93
+          ],
+          "image_path": "images/page_263_equation_15.jpg",
+          "content": "\\hat {G} (\\boldsymbol {x}) = \\arg \\max _ {k} P (G = k | \\boldsymbol {x}),"
+        }
+      ]
+    },
+    {
+      "page_idx": 264,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.08,
+            0.068,
+            0.107,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "252"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.354,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第五章 线性模型与logistic回归"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.122,
+            0.122,
+            0.832,
+            0.184
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "即判别函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "G"
+            },
+            {
+              "type": "text",
+              "content": " 是依据最大概率原则来确定其分类. 由于响应 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y"
+            },
+            {
+              "type": "text",
+              "content": " 为多类别数据, 研究协变量 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\pmb{x}"
+            },
+            {
+              "type": "text",
+              "content": " 对 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y"
+            },
+            {
+              "type": "text",
+              "content": " 的影响时, 通常做两两比较来得到相对信息. 对于第 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k"
+            },
+            {
+              "type": "text",
+              "content": " 和第 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "l"
+            },
+            {
+              "type": "text",
+              "content": " 类, 其判别边界为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.366,
+            0.197,
+            0.587,
+            0.214
+          ],
+          "image_path": "images/page_264_equation_3.jpg",
+          "content": "P (G = k | \\boldsymbol {x}) = P (G = l | \\boldsymbol {x})."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.123,
+            0.23,
+            0.507,
+            0.248
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "对上式两边都除以 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(G = l|\\pmb{x})"
+            },
+            {
+              "type": "text",
+              "content": " 并取对数，可得"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.394,
+            0.264,
+            0.559,
+            0.3
+          ],
+          "image_path": "images/page_264_equation_5.jpg",
+          "content": "\\ln {\\frac {P (G = k | \\boldsymbol {x})}{P (G = l | \\boldsymbol {x})}} = 0."
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.123,
+            0.316,
+            0.738,
+            0.334
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "若希望判别边界是线性的, 则类似于 (5.4.1) 式的二分类 logistic 模型, 可设"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.324,
+            0.345,
+            0.629,
+            0.389
+          ],
+          "image_path": "images/page_264_equation_7.jpg",
+          "content": "\\ln \\frac {P (G = k | \\boldsymbol {x})}{P (G = l | \\boldsymbol {x})} = a _ {0} ^ {(k, l)} + \\sum_ {j = 1} ^ {p} a _ {j} ^ {(k, l)} x _ {j}."
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.122,
+            0.401,
+            0.832,
+            0.441
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "显然, 给定某个样本 x, 其一定属于某个类, 因此对于不同的  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(k, l)"
+            },
+            {
+              "type": "text",
+              "content": " ,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a^{(k, l)}"
+            },
+            {
+              "type": "text",
+              "content": "  之间存在某些约束, 故可设"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.291,
+            0.447,
+            0.83,
+            0.482
+          ],
+          "image_path": "images/page_264_equation_9.jpg",
+          "content": "\\ln \\frac {P (G = j | \\boldsymbol {x})}{P (G = K | \\boldsymbol {x})} = \\boldsymbol {\\beta} _ {j} ^ {\\mathrm{T}} \\boldsymbol {x}, \\quad j = 1, 2, \\dots , K - 1, \\tag {5.4.3}"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.122,
+            0.493,
+            0.832,
+            0.534
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\beta_{j}^{T}x=\\beta_{j0}+\\beta_{j1}x_{1}+\\cdots+\\beta_{jp}x_{p}"
+            },
+            {
+              "type": "text",
+              "content": " . 称 (5.4.3) 式为多分类 logistic 模型. 从而, 对于任一对  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(k,l)"
+            },
+            {
+              "type": "text",
+              "content": " , 有"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.348,
+            0.537,
+            0.606,
+            0.571
+          ],
+          "image_path": "images/page_264_equation_11.jpg",
+          "content": "\\ln \\frac {P (G = k | \\boldsymbol {x})}{P (G = l | \\boldsymbol {x})} = (\\boldsymbol {\\beta} _ {k} - \\boldsymbol {\\beta} _ {l}) ^ {\\mathrm{T}} \\boldsymbol {x}."
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.122,
+            0.578,
+            0.832,
+            0.645
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "因此, 只需以第 K 类作为基准, 考虑其他 K-1 类与第 K 类的比较, 就可以得到任意对  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(k,l)"
+            },
+            {
+              "type": "text",
+              "content": "  之间的关系. 从而, 在整个模型中需要估计的参数个数为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(K-1)(p+1)"
+            },
+            {
+              "type": "text",
+              "content": " , 记为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\boldsymbol{\\beta}=\\{\\beta_{10},\\beta_{11},\\cdots,\\beta_{1p},\\beta_{20},\\beta_{21},\\cdots,\\beta_{2p},\\cdots,\\beta_{(K-1)0},\\beta_{(K-1)1},\\cdots,\\beta_{(K-1)p}\\}"
+            },
+            {
+              "type": "text",
+              "content": " . 易得"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.243,
+            0.653,
+            0.717,
+            0.709
+          ],
+          "image_path": "images/page_264_equation_13.jpg",
+          "content": "P (G = k | \\boldsymbol {x}) = \\frac {\\exp \\{\\boldsymbol {\\beta} _ {k} ^ {\\mathrm{T}} \\boldsymbol {x} \\}}{1 + \\sum_ {l = 1} ^ {K - 1} \\exp \\{\\boldsymbol {\\beta} _ {l} ^ {\\mathrm{T}} \\boldsymbol {x} \\}}, \\quad k = 1, 2, \\dots , K - 1,"
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.239,
+            0.714,
+            0.53,
+            0.769
+          ],
+          "image_path": "images/page_264_equation_14.jpg",
+          "content": "P (G = K | \\boldsymbol {x}) = \\frac {1}{1 + \\sum_ {l = 1} ^ {K - 1} \\exp \\{\\boldsymbol {\\beta} _ {l} ^ {\\mathrm{T}} \\boldsymbol {x} \\}}."
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.124,
+            0.78,
+            0.341,
+            0.817
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "显然, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sum_{k=1}^{K}P(G=k|\\boldsymbol{x})=1."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.123,
+            0.82,
+            0.834,
+            0.861
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "给定样本  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{(\\boldsymbol{x}_{i}, g_{i}), i = 1, 2, \\cdots, N\\}"
+            },
+            {
+              "type": "text",
+              "content": " ，其中类别  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g_{i} \\in \\{1, 2, \\cdots, K\\}"
+            },
+            {
+              "type": "text",
+              "content": " ，令  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(G = g_{i} | \\boldsymbol{x}_{i}) = P(G = g_{i} | \\boldsymbol{x}_{i}, \\boldsymbol{\\beta}) = p_{g_{i}} (\\boldsymbol{x}_{i}, \\boldsymbol{\\beta})"
+            },
+            {
+              "type": "text",
+              "content": " 。则对数最大似然估计为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 17,
+          "bbox": [
+            0.264,
+            0.871,
+            0.688,
+            0.93
+          ],
+          "image_path": "images/page_264_equation_17.jpg",
+          "content": "l (\\boldsymbol {\\beta}) = \\sum_ {i = 1} ^ {N} \\ln p _ {g _ {i}} (\\boldsymbol {x} _ {i}, \\boldsymbol {\\beta}) = \\sum_ {i = 1} ^ {N} \\ln \\frac {\\exp \\{\\boldsymbol {\\beta} _ {g _ {i}} ^ {\\mathrm{T}} \\boldsymbol {x} _ {i} \\}}{1 + \\sum_ {l = 1} ^ {K - 1} \\exp \\{\\boldsymbol {\\beta} _ {l} ^ {\\mathrm{T}} \\boldsymbol {x} _ {i} \\}}"
+        }
+      ]
+    },
+    {
+      "page_idx": 265,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.75,
+            0.068,
+            0.871,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5.4 logistic 回归"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.069,
+            0.917,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "253"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 2,
+          "bbox": [
+            0.347,
+            0.119,
+            0.702,
+            0.164
+          ],
+          "image_path": "images/page_265_equation_2.jpg",
+          "content": "= \\sum_ {i = 1} ^ {N} \\left[ \\boldsymbol {\\beta} _ {g _ {i}} ^ {\\mathrm{T}} \\boldsymbol {x} _ {i} - \\ln \\left(1 + \\sum_ {l = 1} ^ {K - 1} \\exp \\{\\boldsymbol {\\beta} _ {l} ^ {\\mathrm{T}} \\boldsymbol {x} _ {i} \\}\\right) \\right]."
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.164,
+            0.177,
+            0.871,
+            0.217
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "类似于二分类的情形, 用 Newton-Raphson 算法求解. 令 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I(\\cdot)"
+            },
+            {
+              "type": "text",
+              "content": " 为示性函数, 即条件满足时取值为 1, 否则为 0. 则 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "l(\\beta)"
+            },
+            {
+              "type": "text",
+              "content": " 的一阶偏导数为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.311,
+            0.227,
+            0.721,
+            0.354
+          ],
+          "image_path": "images/page_265_equation_4.jpg",
+          "content": "\\begin{array}{l} \\frac {\\partial l (\\boldsymbol {\\beta})}{\\partial \\beta_ {k j}} = \\sum_ {i = 1} ^ {N} \\left[ I (g _ {i} = k) x _ {i j} - \\frac {\\exp \\{\\boldsymbol {\\beta} _ {k} ^ {\\mathrm{T}} \\boldsymbol {x} _ {i} \\} x _ {i j}}{1 + \\sum_ {l = 1} ^ {K - 1} \\exp \\{\\boldsymbol {\\beta} _ {l} ^ {\\mathrm{T}} \\boldsymbol {x} _ {i} \\}} \\right] \\\\ = \\sum_ {i = 1} ^ {N} x _ {i j} \\left[ I (g _ {i} = k) - p _ {k} (\\boldsymbol {x} _ {i}, \\boldsymbol {\\beta}) \\right], \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.166,
+            0.367,
+            0.304,
+            0.383
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "而二阶偏导数为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.186,
+            0.39,
+            0.85,
+            0.645
+          ],
+          "image_path": "images/page_265_equation_6.jpg",
+          "content": "\\begin{array}{l} \\frac {\\partial^ {2} l (\\boldsymbol {\\beta})}{\\partial \\beta_ {k j} \\partial \\beta_ {m n}} \\\\ = - \\sum_ {i = 1} ^ {N} x _ {i j} \\frac {1}{\\left(1 + \\sum_ {l = 1} ^ {K - 1} \\exp \\{\\boldsymbol {\\beta} _ {l} ^ {\\mathrm{T}} \\boldsymbol {x} _ {i} \\}\\right) ^ {2}}. \\\\ \\left[ - \\exp \\{\\boldsymbol {\\beta} _ {k} ^ {\\mathrm{T}} \\boldsymbol {x} _ {i} \\} I (k = m) x _ {i n} \\bigg (1 + \\sum_ {l = 1} ^ {K - 1} \\exp \\{\\boldsymbol {\\beta} _ {l} ^ {\\mathrm{T}} \\boldsymbol {x} _ {i} \\} \\bigg) + \\exp \\{\\boldsymbol {\\beta} _ {k} ^ {\\mathrm{T}} \\boldsymbol {x} _ {i} \\} \\exp \\{\\boldsymbol {\\beta} _ {m} ^ {\\mathrm{T}} \\boldsymbol {x} _ {i} \\} x _ {i n} \\right] \\\\ = \\sum_ {i = 1} ^ {N} x _ {i j} x _ {i n} \\left[ - p _ {k} (\\boldsymbol {x} _ {i}, \\boldsymbol {\\beta}) I (k = m) + p _ {k} (\\boldsymbol {x} _ {i}, \\boldsymbol {\\beta}) p _ {m} (\\boldsymbol {x} _ {i}, \\boldsymbol {\\beta}) \\right] \\\\ = - \\sum_ {i = 1} ^ {N} x _ {i j} x _ {i n} p _ {k} (\\boldsymbol {x} _ {i}, \\boldsymbol {\\beta}) \\left[ I (k = m) - p _ {m} (\\boldsymbol {x} _ {i}, \\boldsymbol {\\beta}) \\right]. \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.166,
+            0.658,
+            0.871,
+            0.675
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "上述式子也可以用矩阵形式表示. 令 y 是下面由示性函数构成的  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N(K-1)"
+            },
+            {
+              "type": "text",
+              "content": "  维列向量,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.282,
+            0.687,
+            0.754,
+            0.789
+          ],
+          "image_path": "images/page_265_equation_8.jpg",
+          "content": "\\boldsymbol {y} = \\left( \\begin{array}{c} \\boldsymbol {y} _ {1} \\\\ \\boldsymbol {y} _ {2} \\\\ \\vdots \\\\ \\boldsymbol {y} _ {K - 1} \\end{array} \\right), \\quad \\boldsymbol {y} _ {k} = \\left( \\begin{array}{c} I (g _ {1} = k) \\\\ I (g _ {2} = k) \\\\ \\vdots \\\\ I (g _ {N} = k) \\end{array} \\right), 1 \\leqslant k \\leqslant K - 1."
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.166,
+            0.801,
+            0.436,
+            0.817
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "令 p 为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N(K-1)"
+            },
+            {
+              "type": "text",
+              "content": "  维的拟合概率"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.282,
+            0.83,
+            0.754,
+            0.932
+          ],
+          "image_path": "images/page_265_equation_10.jpg",
+          "content": "\\boldsymbol {p} = \\left( \\begin{array}{c} \\boldsymbol {p} _ {1} \\\\ \\boldsymbol {p} _ {2} \\\\ \\vdots \\\\ \\boldsymbol {p} _ {K - 1} \\end{array} \\right), \\boldsymbol {p} _ {k} = \\left( \\begin{array}{c} p _ {k} (\\boldsymbol {x} _ {1}, \\boldsymbol {\\beta}) \\\\ p _ {k} (\\boldsymbol {x} _ {2}, \\boldsymbol {\\beta}) \\\\ \\vdots \\\\ p _ {k} (\\boldsymbol {x} _ {N}, \\boldsymbol {\\beta}) \\end{array} \\right), 1 \\leqslant k \\leqslant K - 1."
+        }
+      ]
+    },
+    {
+      "page_idx": 266,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.08,
+            0.068,
+            0.107,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "254"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.354,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第五章 线性模型与logistic回归"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.122,
+            0.121,
+            0.803,
+            0.14
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "记 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " 为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N \\times (p + 1)"
+            },
+            {
+              "type": "text",
+              "content": " 的系数矩阵, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\tilde{\\mathbf{X}}"
+            },
+            {
+              "type": "text",
+              "content": " 为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N(K - 1) \\times (p + 1)(K - 1)"
+            },
+            {
+              "type": "text",
+              "content": " 的块对角矩阵:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.365,
+            0.16,
+            0.592,
+            0.262
+          ],
+          "image_path": "images/page_266_equation_3.jpg",
+          "content": "\\tilde {\\boldsymbol {X}} = \\left( \\begin{array}{c c c c} X & 0 & \\dots & 0 \\\\ 0 & X & \\dots & 0 \\\\ \\vdots & \\vdots & & \\vdots \\\\ 0 & 0 & \\dots & X \\end{array} \\right)."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.123,
+            0.281,
+            0.459,
+            0.299
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "令 W 为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N(K-1) \\times N(K-1)"
+            },
+            {
+              "type": "text",
+              "content": "  的方阵:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.266,
+            0.319,
+            0.689,
+            0.42
+          ],
+          "image_path": "images/page_266_equation_5.jpg",
+          "content": "W = \\left( \\begin{array}{c c c c} W _ {1 1} & W _ {1 2} & \\dots & W _ {1 (K - 1)} \\\\ W _ {2 1} & W _ {2 2} & \\dots & W _ {2 (K - 1)} \\\\ \\vdots & \\vdots & & \\vdots \\\\ W _ {(K - 1) 1} & W _ {(K - 1) 2} & \\dots & W _ {(K - 1) (K - 1)} \\end{array} \\right),"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.123,
+            0.44,
+            0.835,
+            0.507
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "W_{km}, 1 \\leqslant k, m \\leqslant K - 1"
+            },
+            {
+              "type": "text",
+              "content": " 为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N \\times N"
+            },
+            {
+              "type": "text",
+              "content": " 的对角矩阵，且当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k = m"
+            },
+            {
+              "type": "text",
+              "content": " 时，"
+            },
+            {
+              "type": "equation_inline",
+              "content": "W_{kk}"
+            },
+            {
+              "type": "text",
+              "content": " 的第 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i"
+            },
+            {
+              "type": "text",
+              "content": " 个对角元素为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p_k(\\boldsymbol{x}_i, \\boldsymbol{\\beta}^{\\mathrm{old}})[1 - p_k(\\boldsymbol{x}_i, \\boldsymbol{\\beta}^{\\mathrm{old}})]"
+            },
+            {
+              "type": "text",
+              "content": "，当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k \\neq m"
+            },
+            {
+              "type": "text",
+              "content": " 时，"
+            },
+            {
+              "type": "equation_inline",
+              "content": "W_{km}"
+            },
+            {
+              "type": "text",
+              "content": " 的第 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i"
+            },
+            {
+              "type": "text",
+              "content": " 个对角元素为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "-p_k(\\boldsymbol{x}_i, \\boldsymbol{\\beta}^{\\mathrm{old}}) p_m(\\boldsymbol{x}_i, \\boldsymbol{\\beta}^{\\mathrm{old}})"
+            },
+            {
+              "type": "text",
+              "content": ". 从而，类似于二分类问题，可得"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.4,
+            0.524,
+            0.573,
+            0.559
+          ],
+          "image_path": "images/page_266_equation_7.jpg",
+          "content": "\\frac {\\partial l (\\boldsymbol {\\beta})}{\\partial \\boldsymbol {\\beta}} = \\tilde {\\boldsymbol {X}} ^ {\\mathrm{T}} (\\boldsymbol {y} - \\boldsymbol {p}),"
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.4,
+            0.565,
+            0.586,
+            0.601
+          ],
+          "image_path": "images/page_266_equation_8.jpg",
+          "content": "\\frac {\\partial^ {2} l (\\boldsymbol {\\beta})}{\\partial \\boldsymbol {\\beta} \\partial \\boldsymbol {\\beta} ^ {\\mathrm{T}}} = - \\tilde {\\boldsymbol {X}} ^ {\\mathrm{T}} \\boldsymbol {W} \\tilde {\\boldsymbol {X}},"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.123,
+            0.622,
+            0.458,
+            0.639
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "则  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\beta^{new}"
+            },
+            {
+              "type": "text",
+              "content": "  的更新式子和二分类的一样, 即"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.354,
+            0.663,
+            0.602,
+            0.683
+          ],
+          "image_path": "images/page_266_equation_10.jpg",
+          "content": "\\boldsymbol {\\beta} ^ {\\mathrm{new}} = (\\tilde {\\boldsymbol {X}} ^ {\\mathrm{T}} \\boldsymbol {W} \\tilde {\\boldsymbol {X}}) ^ {- 1} \\tilde {\\boldsymbol {X}} ^ {\\mathrm{T}} \\boldsymbol {W} \\boldsymbol {z},"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.123,
+            0.704,
+            0.484,
+            0.725
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "z \\stackrel{\\mathrm{def}}{=} \\tilde{X} \\beta^{\\mathrm{old}} + W^{-1}(y - p)"
+            },
+            {
+              "type": "text",
+              "content": ", 或等价地,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.313,
+            0.747,
+            0.642,
+            0.768
+          ],
+          "image_path": "images/page_266_equation_12.jpg",
+          "content": "\\boldsymbol {\\beta} ^ {\\mathrm{new}} = \\boldsymbol {\\beta} ^ {\\mathrm{old}} + (\\tilde {\\boldsymbol {X}} ^ {\\mathrm{T}} \\boldsymbol {W} \\tilde {\\boldsymbol {X}}) ^ {- 1} \\tilde {\\boldsymbol {X}} ^ {\\mathrm{T}} (\\boldsymbol {y} - \\boldsymbol {p})."
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.123,
+            0.791,
+            0.831,
+            0.831
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由此, 可类似于算法 5.6, 得到多分类的迭代算法. 此外, 多分类 logistic 回归模型的显著性检验类似于二分类的情形."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.122,
+            0.84,
+            0.833,
+            0.927
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "对于多分类 logistic 回归模型 (5.4.3) 中回归参数进行物理解释时, 需要做两两比较, 即可以把第 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K"
+            },
+            {
+              "type": "text",
+              "content": " 类作为基准, 再用类似于二分类模型的解释方法. 此外, 在实际应用中, 若响应 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y"
+            },
+            {
+              "type": "text",
+              "content": " 的类别个数较多, 例如为 10 个, 则可对类别进行某种组合, 以减少类别数量, 从而便于后续进行分析."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 267,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.823,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "习题五"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.068,
+            0.917,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "255"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.168,
+            0.118,
+            0.25,
+            0.14
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "习题五"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.203,
+            0.19,
+            0.871,
+            0.23
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "1. 下面是 7 个地区 2000 年的人均国内生产总值 (GDP) 和人均消费水平的统计数据:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 4,
+          "bbox": [
+            0.167,
+            0.253,
+            0.875,
+            0.324
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 4,
+              "bbox": [
+                0.167,
+                0.253,
+                0.875,
+                0.324
+              ],
+              "image_path": "images/page_267_table_4.jpg",
+              "content": "<table><tr><td>地区</td><td>北京</td><td>辽宁</td><td>上海</td><td>江西</td><td>河南</td><td>贵州</td><td>陕西</td></tr><tr><td>人均GDP/元</td><td>22 460</td><td>11 226</td><td>34 547</td><td>4 851</td><td>5 444</td><td>2 662</td><td>4 549</td></tr><tr><td>人均消费水平/元</td><td>7 326</td><td>4 490</td><td>11 546</td><td>2 396</td><td>2 208</td><td>1 608</td><td>2 035</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 5,
+          "bbox": [
+            0.225,
+            0.343,
+            0.874,
+            0.527
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.228,
+                0.347,
+                0.871,
+                0.386
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(1) 人均 GDP 作协变量, 人均消费水平作响应, 绘制散点图, 并说明二者之间的关系形态;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.228,
+                0.393,
+                0.813,
+                0.41
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(2) 计算两个变量之间的线性相关系数, 说明两个变量之间的关系强度;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.228,
+                0.416,
+                0.68,
+                0.433
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(3) 求出估计的回归方程, 并解释回归系数的实际意义;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 9,
+              "bbox": [
+                0.229,
+                0.439,
+                0.463,
+                0.456
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(4) 计算  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "R^{2}"
+                },
+                {
+                  "type": "text",
+                  "content": " ，并解释其意义；"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 10,
+              "bbox": [
+                0.228,
+                0.462,
+                0.628,
+                0.48
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(5) 检验回归方程线性关系的显著性 ( "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\alpha = 0.05"
+                },
+                {
+                  "type": "text",
+                  "content": " );"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 11,
+              "bbox": [
+                0.228,
+                0.485,
+                0.75,
+                0.502
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(6) 如果某地区的人均 GDP 为 5 000 元, 预测其人均消费水平;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 12,
+              "bbox": [
+                0.228,
+                0.508,
+                0.847,
+                0.525
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(7) 求人均 GDP 为 5 000 元时, 人均消费水平 95% 的置信区间和预测区间."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.203,
+            0.53,
+            0.756,
+            0.548
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2. 设 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H = X(X^{\\mathrm{T}}X)^{-1}X^{\\mathrm{T}}"
+            },
+            {
+              "type": "text",
+              "content": " 是秩为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k"
+            },
+            {
+              "type": "text",
+              "content": " 的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\times n"
+            },
+            {
+              "type": "text",
+              "content": " 矩阵 ("
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\geqslant k"
+            },
+            {
+              "type": "text",
+              "content": "), 试证明"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 14,
+          "bbox": [
+            0.225,
+            0.551,
+            0.76,
+            0.619
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 15,
+              "bbox": [
+                0.228,
+                0.554,
+                0.47,
+                0.571
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(1) H 是秩为 k 的投影矩阵;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 16,
+              "bbox": [
+                0.228,
+                0.577,
+                0.756,
+                0.595
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(2)  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "I_{n}-H"
+                },
+                {
+                  "type": "text",
+                  "content": "  是秩为 n-k 的投影矩阵, 其中  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "I_{n}"
+                },
+                {
+                  "type": "text",
+                  "content": "  为 n 阶单位矩阵;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 17,
+              "bbox": [
+                0.23,
+                0.601,
+                0.394,
+                0.617
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(3) "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "H(I_{n}-H)=0."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.203,
+            0.623,
+            0.348,
+            0.639
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3. 对于拟合模型"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 19,
+          "bbox": [
+            0.497,
+            0.655,
+            0.604,
+            0.673
+          ],
+          "image_path": "images/page_267_equation_19.jpg",
+          "content": "y = \\beta x ^ {2} + \\varepsilon ,"
+        },
+        {
+          "type": "text",
+          "index": 20,
+          "bbox": [
+            0.227,
+            0.697,
+            0.872,
+            0.736
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "试根据数据  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(x_{i}, y_{i}), i = 1, 2, \\cdots, n,"
+            },
+            {
+              "type": "text",
+              "content": "  估计参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\beta,"
+            },
+            {
+              "type": "text",
+              "content": "  并证明给出的估计为最小二乘估计."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 21,
+          "bbox": [
+            0.202,
+            0.743,
+            0.871,
+            0.782
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4. 对于随机样本  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{(x_{i}, y_{i}), i = 1, 2, \\cdots, n\\}"
+            },
+            {
+              "type": "text",
+              "content": " ，对协变量进行中心化，得到一元线性回归模型"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 22,
+          "bbox": [
+            0.387,
+            0.8,
+            0.712,
+            0.816
+          ],
+          "image_path": "images/page_267_equation_22.jpg",
+          "content": "y _ {i} = \\alpha + (x _ {i} - \\bar {x}) \\beta + \\varepsilon_ {i}, i = 1, 2, \\dots , n."
+        },
+        {
+          "type": "text",
+          "index": 23,
+          "bbox": [
+            0.227,
+            0.84,
+            0.706,
+            0.857
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\bar{x}"
+            },
+            {
+              "type": "text",
+              "content": "  为协变量的样本均值. 求  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha"
+            },
+            {
+              "type": "text",
+              "content": "  和  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\beta"
+            },
+            {
+              "type": "text",
+              "content": "  的最小二乘估计."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 24,
+          "bbox": [
+            0.202,
+            0.863,
+            0.873,
+            0.926
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5. 一个试验容器靠蒸汽供应热量, 使其保持恒温, 协变量 X 表示容器周围空气单位时间的平均温度 (单位: ℃), Y 表示单位时间内消耗的蒸汽量 (单位: L). 观测了 25 个单位时间的数据如表 5.1 所示."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 268,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.08,
+            0.068,
+            0.109,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "256"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.354,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第五章 线性模型与logistic回归"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 3,
+          "bbox": [
+            0.124,
+            0.143,
+            0.835,
+            0.361
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 2,
+              "bbox": [
+                0.382,
+                0.124,
+                0.573,
+                0.139
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "表 5.1 容器蒸汽量数据"
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 3,
+              "bbox": [
+                0.124,
+                0.143,
+                0.835,
+                0.361
+              ],
+              "image_path": "images/page_268_table_3.jpg",
+              "content": "<table><tr><td>序号</td><td>Y</td><td>X</td><td>序号</td><td>Y</td><td>X</td><td>序号</td><td>Y</td><td>X</td></tr><tr><td>1</td><td>10.98</td><td>35.3</td><td>10</td><td>9.14</td><td>57.5</td><td>19</td><td>6.83</td><td>70.0</td></tr><tr><td>2</td><td>11.13</td><td>29.7</td><td>11</td><td>8.24</td><td>46.4</td><td>20</td><td>8.88</td><td>74.5</td></tr><tr><td>3</td><td>12.51</td><td>30.8</td><td>12</td><td>12.19</td><td>28.9</td><td>21</td><td>7.68</td><td>72.1</td></tr><tr><td>4</td><td>8.40</td><td>58.8</td><td>13</td><td>11.88</td><td>28.1</td><td>22</td><td>8.47</td><td>58.1</td></tr><tr><td>5</td><td>9.27</td><td>61.4</td><td>14</td><td>9.57</td><td>39.1</td><td>23</td><td>8.86</td><td>44.6</td></tr><tr><td>6</td><td>8.73</td><td>71.3</td><td>15</td><td>10.94</td><td>46.8</td><td>24</td><td>10.36</td><td>33.4</td></tr><tr><td>7</td><td>6.36</td><td>74.4</td><td>16</td><td>9.58</td><td>48.5</td><td>25</td><td>11.08</td><td>28.6</td></tr><tr><td>8</td><td>8.50</td><td>76.7</td><td>17</td><td>10.09</td><td>59.3</td><td></td><td></td><td></td></tr><tr><td>9</td><td>7.82</td><td>70.7</td><td>18</td><td>8.11</td><td>70.0</td><td></td><td></td><td></td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.186,
+            0.379,
+            0.57,
+            0.396
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "画出散点图, 并估计相应的一元线性回归模型."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.16,
+            0.402,
+            0.832,
+            0.443
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "6. 表 5.2 是教育学家测试的 21 个儿童的记录, 其中 x 是儿童的年龄 (以月为单位), y 表示某种智力指标. 通过这些数据, 建立智力随年龄变化的关系."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 7,
+          "bbox": [
+            0.125,
+            0.486,
+            0.835,
+            0.662
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 6,
+              "bbox": [
+                0.39,
+                0.467,
+                0.564,
+                0.482
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "表 5.2 智力指标数据"
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 7,
+              "bbox": [
+                0.125,
+                0.486,
+                0.835,
+                0.662
+              ],
+              "image_path": "images/page_268_table_7.jpg",
+              "content": "<table><tr><td>序号</td><td>x</td><td>y</td><td>序号</td><td>x</td><td>y</td><td>序号</td><td>x</td><td>y</td></tr><tr><td>1</td><td>15</td><td>95</td><td>8</td><td>11</td><td>100</td><td>15</td><td>11</td><td>102</td></tr><tr><td>2</td><td>26</td><td>71</td><td>9</td><td>8</td><td>104</td><td>16</td><td>10</td><td>100</td></tr><tr><td>3</td><td>10</td><td>83</td><td>10</td><td>10</td><td>94</td><td>17</td><td>12</td><td>105</td></tr><tr><td>4</td><td>9</td><td>91</td><td>11</td><td>7</td><td>113</td><td>18</td><td>42</td><td>57</td></tr><tr><td>5</td><td>15</td><td>102</td><td>12</td><td>9</td><td>96</td><td>19</td><td>17</td><td>121</td></tr><tr><td>6</td><td>20</td><td>87</td><td>13</td><td>10</td><td>83</td><td>20</td><td>11</td><td>86</td></tr><tr><td>7</td><td>18</td><td>93</td><td>14</td><td>11</td><td>84</td><td>21</td><td>10</td><td>100</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 11,
+          "bbox": [
+            0.16,
+            0.68,
+            0.832,
+            0.811
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.161,
+                0.68,
+                0.317,
+                0.696
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "7. 证明定理 5.2.6."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 9,
+              "bbox": [
+                0.16,
+                0.701,
+                0.83,
+                0.742
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "8. 证明残差平方和 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "SS_{E} = Y^{\\mathrm{T}}\\left[\\mathbf{1}_{n} - X(X^{\\mathrm{T}}X)^{-1}X^{\\mathrm{T}}\\right]Y"
+                },
+                {
+                  "type": "text",
+                  "content": "，且 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\hat{\\sigma}^2 = SS_E / (n - p - 1)"
+                },
+                {
+                  "type": "text",
+                  "content": " 是 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\sigma^2"
+                },
+                {
+                  "type": "text",
+                  "content": " 的无偏估计."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 10,
+              "bbox": [
+                0.16,
+                0.748,
+                0.832,
+                0.811
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "9. 考虑求出 k 个物体的质量  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mu_{1}, \\mu_{2}, \\cdots, \\mu_{k}"
+                },
+                {
+                  "type": "text",
+                  "content": " . 一种方法是将每个物体称 m 次再求平均. 假定称量的误差方差都为  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\sigma^{2}"
+                },
+                {
+                  "type": "text",
+                  "content": " . 用  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "y_{ij}"
+                },
+                {
+                  "type": "text",
+                  "content": "  表示第 i 个物体第 j 次称量时得到的质量,  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "i = 1, 2, \\cdots, k; j = 1, 2, \\cdots, m"
+                },
+                {
+                  "type": "text",
+                  "content": " ."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "list",
+          "index": 15,
+          "bbox": [
+            0.186,
+            0.817,
+            0.454,
+            0.881
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 12,
+              "bbox": [
+                0.186,
+                0.817,
+                0.421,
+                0.834
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(1) 试写出相应的线性模型;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 13,
+              "bbox": [
+                0.187,
+                0.84,
+                0.454,
+                0.858
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(2) 求出  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mu_{i}"
+                },
+                {
+                  "type": "text",
+                  "content": "  的最小二乘估计  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\hat{\\mu}_{i}"
+                },
+                {
+                  "type": "text",
+                  "content": " ;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 14,
+              "bbox": [
+                0.187,
+                0.863,
+                0.337,
+                0.881
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(3) 计算  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mathrm{Var}(\\hat{\\mu}_{i})"
+                },
+                {
+                  "type": "text",
+                  "content": " ."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.15,
+            0.886,
+            0.832,
+            0.927
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "10. 设 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y_{1} = 2a + b + e_{1}"
+            },
+            {
+              "type": "text",
+              "content": ", "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y_{2} = 2a - b + e_{2}"
+            },
+            {
+              "type": "text",
+              "content": ", "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y_{3} = a + b + e_{3}"
+            },
+            {
+              "type": "text",
+              "content": ", 其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a, b"
+            },
+            {
+              "type": "text",
+              "content": " 为未知参数, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "e_{1}, e_{2}, e_{3}"
+            },
+            {
+              "type": "text",
+              "content": " 相互独立, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(e_{i}) = 0, \\mathrm{Var}(e_{i}) = \\sigma^{2}, i = 1, 2, 3"
+            },
+            {
+              "type": "text",
+              "content": ". 试求出 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a, b"
+            },
+            {
+              "type": "text",
+              "content": " 的最小二乘"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 269,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.823,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "习题五"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.068,
+            0.917,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "257"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.229,
+            0.122,
+            0.277,
+            0.137
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "估计."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 5,
+          "bbox": [
+            0.192,
+            0.144,
+            0.874,
+            0.23
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 3,
+              "bbox": [
+                0.192,
+                0.144,
+                0.874,
+                0.185
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "11. 设  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+                },
+                {
+                  "type": "text",
+                  "content": "  是来自  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "N(\\theta, \\sigma^{2})"
+                },
+                {
+                  "type": "text",
+                  "content": "  的独立同分布样本, 求  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\theta"
+                },
+                {
+                  "type": "text",
+                  "content": "  的最小方差线性无偏估计  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\hat{\\theta}"
+                },
+                {
+                  "type": "text",
+                  "content": " , 并求  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mathrm{Var}(\\hat{\\theta})"
+                },
+                {
+                  "type": "text",
+                  "content": " ."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 4,
+              "bbox": [
+                0.192,
+                0.19,
+                0.873,
+                0.23
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "12. 研究用电高峰时居民家庭每时的用电量 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "y"
+                },
+                {
+                  "type": "text",
+                  "content": " 与每月总用电量 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "x"
+                },
+                {
+                  "type": "text",
+                  "content": " 之间的关系, 收集的 53 户居民某月用电记录如表 5.3 所示."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "table",
+          "index": 7,
+          "bbox": [
+            0.168,
+            0.274,
+            0.873,
+            0.681
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 6,
+              "bbox": [
+                0.39,
+                0.254,
+                0.647,
+                0.269
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "表 5.3 用电高峰时居民家庭数据"
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 7,
+              "bbox": [
+                0.168,
+                0.274,
+                0.873,
+                0.681
+              ],
+              "image_path": "images/page_269_table_7.jpg",
+              "content": "<table><tr><td>序号</td><td>x</td><td>y</td><td>序号</td><td>x</td><td>y</td><td>序号</td><td>x</td><td>y</td></tr><tr><td>1</td><td>679</td><td>0.79</td><td>19</td><td>1 748</td><td>4.88</td><td>37</td><td>745</td><td>0.77</td></tr><tr><td>2</td><td>292</td><td>0.44</td><td>20</td><td>1 381</td><td>3.48</td><td>38</td><td>435</td><td>1.39</td></tr><tr><td>3</td><td>1 012</td><td>0.56</td><td>21</td><td>1 428</td><td>7.58</td><td>39</td><td>540</td><td>0.56</td></tr><tr><td>4</td><td>493</td><td>0.79</td><td>22</td><td>1 255</td><td>2.63</td><td>40</td><td>874</td><td>1.56</td></tr><tr><td>5</td><td>582</td><td>2.70</td><td>23</td><td>1 777</td><td>4.99</td><td>41</td><td>1 543</td><td>5.28</td></tr><tr><td>6</td><td>1 156</td><td>3.64</td><td>24</td><td>370</td><td>0.59</td><td>42</td><td>1 029</td><td>0.64</td></tr><tr><td>7</td><td>997</td><td>4.73</td><td>25</td><td>2 316</td><td>8.19</td><td>43</td><td>710</td><td>4.00</td></tr><tr><td>8</td><td>2 189</td><td>9.50</td><td>26</td><td>1 130</td><td>4.79</td><td>44</td><td>1 434</td><td>0.31</td></tr><tr><td>9</td><td>1 097</td><td>5.34</td><td>27</td><td>463</td><td>4.51</td><td>45</td><td>837</td><td>4.20</td></tr><tr><td>10</td><td>2 078</td><td>6.85</td><td>28</td><td>770</td><td>1.74</td><td>46</td><td>468</td><td>0.64</td></tr><tr><td>11</td><td>1 818</td><td>5.84</td><td>29</td><td>724</td><td>4.10</td><td>47</td><td>1 114</td><td>1.90</td></tr><tr><td>12</td><td>1 700</td><td>5.21</td><td>30</td><td>808</td><td>3.94</td><td>48</td><td>413</td><td>0.51</td></tr><tr><td>13</td><td>747</td><td>3.25</td><td>31</td><td>790</td><td>0.96</td><td>49</td><td>1 787</td><td>8.33</td></tr><tr><td>14</td><td>2 030</td><td>4.43</td><td>32</td><td>783</td><td>3.24</td><td>50</td><td>3 560</td><td>14.94</td></tr><tr><td>15</td><td>1 643</td><td>3.16</td><td>33</td><td>406</td><td>0.44</td><td>51</td><td>1 495</td><td>5.11</td></tr><tr><td>16</td><td>414</td><td>0.50</td><td>34</td><td>1 242</td><td>3.24</td><td>52</td><td>2 221</td><td>3.85</td></tr><tr><td>17</td><td>354</td><td>0.17</td><td>35</td><td>658</td><td>2.14</td><td>53</td><td>1 526</td><td>3.93</td></tr><tr><td>18</td><td>127 4</td><td>1.88</td><td>36</td><td>1 746</td><td>5.71</td><td></td><td></td><td></td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.229,
+            0.707,
+            0.467,
+            0.723
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "试编程完成下面的统计分析:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 9,
+          "bbox": [
+            0.228,
+            0.73,
+            0.874,
+            0.84
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 10,
+              "bbox": [
+                0.228,
+                0.73,
+                0.518,
+                0.746
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(1) 应用最小二乘法估计回归模型;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 11,
+              "bbox": [
+                0.228,
+                0.753,
+                0.873,
+                0.792
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(2) 以拟合值 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\hat{y}_i"
+                },
+                {
+                  "type": "text",
+                  "content": " 为横坐标, 残差 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\hat{\\varepsilon}_i"
+                },
+                {
+                  "type": "text",
+                  "content": " 为纵坐标, 作残差图, 分析 Gauss-Markov 条件对本例的适用性;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 12,
+              "bbox": [
+                0.228,
+                0.798,
+                0.873,
+                0.816
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(3) 考虑响应的变换 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "U = y^{1/2}"
+                },
+                {
+                  "type": "text",
+                  "content": "，再对新变量 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "U"
+                },
+                {
+                  "type": "text",
+                  "content": " 和 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "x"
+                },
+                {
+                  "type": "text",
+                  "content": " 重复 (1) 和 (2) 的统计分析；"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 13,
+              "bbox": [
+                0.229,
+                0.822,
+                0.545,
+                0.839
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(4) 考虑响应 y 的 Box-Cox 变换如下:"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.454,
+            0.862,
+            0.672,
+            0.916
+          ],
+          "image_path": "images/page_269_equation_14.jpg",
+          "content": "y (\\lambda) = \\left\\{ \\begin{array}{l l} \\frac {y ^ {\\lambda} - 1}{\\lambda}, & y \\neq 0, \\\\ \\ln y, & y = 0, \\end{array} \\right."
+        }
+      ]
+    },
+    {
+      "page_idx": 270,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.08,
+            0.068,
+            0.106,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "258"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.354,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第五章 线性模型与logistic回归"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.218,
+            0.121,
+            0.832,
+            0.231
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda"
+            },
+            {
+              "type": "text",
+              "content": "  为待估参数. Box-Cox 变换引入参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda"
+            },
+            {
+              "type": "text",
+              "content": " , 可以一定程度上减小不可观测的误差和预测变量的相关性, 可以明显地改善数据的正态性、对称性和方差相等性. 估计参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda"
+            },
+            {
+              "type": "text",
+              "content": "  的通常方法是假设经过转换后的响应服从正态分布, 再画出关于  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda"
+            },
+            {
+              "type": "text",
+              "content": "  的似然函数, 使其最大的  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda"
+            },
+            {
+              "type": "text",
+              "content": "  即为估计值. 查询 Box-Cox 变换的相关理论后编程实现, 并做讨论."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.15,
+            0.237,
+            0.832,
+            0.313
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "13. 对于随机样本  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{(x_{i1}, x_{i2}, \\cdots, x_{ip}, y_i), i = 1, 2, \\cdots, n\\}"
+            },
+            {
+              "type": "text",
+              "content": " ，若对协变量中心化，即设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_j = (x_{1j}, x_{2j}, \\cdots, x_{nj})^{\\mathrm{T}}, \\bar{x}_j = \\frac{1}{n} \\sum_{i=1}^{n} x_{ij}, X_c = (X_1 - \\bar{x}_1 \\mathbf{1}_n, X_2 - \\bar{x}_2 \\mathbf{1}_n, \\cdots, X_p - \\bar{x}_p \\mathbf{1}_n)"
+            },
+            {
+              "type": "text",
+              "content": " ，则对于中心化的线性模型"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.407,
+            0.333,
+            0.83,
+            0.351
+          ],
+          "image_path": "images/page_270_equation_4.jpg",
+          "content": "Y = \\alpha \\mathbf {1} _ {n} + X _ {c} \\boldsymbol {\\beta} + \\varepsilon , \\tag {5.1}"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.186,
+            0.368,
+            0.832,
+            0.424
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y = (y_{1}, y_{2}, \\cdots, y_{n})^{\\mathrm{T}}, \\boldsymbol{\\beta} = (\\beta_{1}, \\beta_{2}, \\cdots, \\beta_{p})^{\\mathrm{T}}"
+            },
+            {
+              "type": "text",
+              "content": " ，令  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\alpha} = \\bar{y} = \\frac{1}{n} \\sum_{i=1}^{n} y_{i}, \\hat{\\beta} = (X_{c}^{\\mathrm{T}} X_{c})^{-1} X_{c}^{\\mathrm{T}} Y"
+            },
+            {
+              "type": "text",
+              "content": " ，证明"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 6,
+          "bbox": [
+            0.188,
+            0.428,
+            0.538,
+            0.521
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.188,
+                0.428,
+                0.399,
+                0.446
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(1) "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "E(\\hat{\\alpha}) = \\alpha, E(\\hat{\\beta}) = \\beta;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.189,
+                0.448,
+                0.538,
+                0.5
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(2) "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mathrm{Cov}\\left( \\begin{array}{c}\\hat{\\alpha}\\\\ \\hat{\\beta} \\end{array} \\right) = \\sigma^{2}\\left( \\begin{array}{cc}\\frac{1}{n} & 0\\\\ 0 & (X_{c}^{\\mathrm{T}}X_{c})^{-1} \\end{array} \\right);"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 9,
+              "bbox": [
+                0.188,
+                0.503,
+                0.495,
+                0.521
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(3) 若进一步假设 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\varepsilon \\sim N(0, \\sigma^2 I_n)"
+                },
+                {
+                  "type": "text",
+                  "content": ", 则"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.346,
+            0.543,
+            0.704,
+            0.58
+          ],
+          "image_path": "images/page_270_equation_10.jpg",
+          "content": "\\hat {\\alpha} \\sim N \\left(\\alpha , \\frac {\\sigma^ {2}}{n}\\right), \\hat {\\beta} \\sim N (\\boldsymbol {\\beta}, \\sigma^ {2} (X _ {c} ^ {\\mathrm{T}} X _ {c}) ^ {- 1})."
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.15,
+            0.602,
+            0.832,
+            0.642
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "14. 根据经验知, 在人的身高相等的条件下, 其血压的收缩压 y 与体重  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{1}"
+            },
+            {
+              "type": "text",
+              "content": " 、年龄  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{2}"
+            },
+            {
+              "type": "text",
+              "content": "  有关. 现收集了 13 名男子的测量数据如表 5.4 所示."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 13,
+          "bbox": [
+            0.124,
+            0.685,
+            0.832,
+            0.86
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 12,
+              "bbox": [
+                0.39,
+                0.666,
+                0.564,
+                0.68
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "表 5.4 男子测量数据"
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 13,
+              "bbox": [
+                0.124,
+                0.685,
+                0.832,
+                0.86
+              ],
+              "image_path": "images/page_270_table_13.jpg",
+              "content": "<table><tr><td>序号</td><td><eq>x_1</eq></td><td><eq>x_2</eq></td><td>y</td><td>序号</td><td><eq>x_1</eq></td><td><eq>x_2</eq></td><td>y</td></tr><tr><td>1</td><td>152</td><td>50</td><td>120</td><td>8</td><td>158</td><td>50</td><td>125</td></tr><tr><td>2</td><td>183</td><td>20</td><td>141</td><td>9</td><td>170</td><td>40</td><td>132</td></tr><tr><td>3</td><td>171</td><td>20</td><td>124</td><td>10</td><td>153</td><td>55</td><td>123</td></tr><tr><td>4</td><td>165</td><td>30</td><td>126</td><td>11</td><td>164</td><td>40</td><td>132</td></tr><tr><td>5</td><td>158</td><td>30</td><td>117</td><td>12</td><td>190</td><td>40</td><td>155</td></tr><tr><td>6</td><td>161</td><td>50</td><td>125</td><td>13</td><td>185</td><td>20</td><td>147</td></tr><tr><td>7</td><td>149</td><td>60</td><td>123</td><td></td><td></td><td></td><td></td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.185,
+            0.886,
+            0.832,
+            0.926
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(1) 根据线性回归模型 (5.2.2), 建立 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y"
+            },
+            {
+              "type": "text",
+              "content": " 关于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{1}, x_{2}"
+            },
+            {
+              "type": "text",
+              "content": " 的线性回归方程. 给出相应的方差分析表, 并计算 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "R^{2}"
+            },
+            {
+              "type": "text",
+              "content": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 271,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.822,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "习题五"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.889,
+            0.068,
+            0.917,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "259"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.227,
+            0.121,
+            0.871,
+            0.161
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(2) 根据中心化线性回归模型 (5.1), 建立 y 关于  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{1}, x_{2}"
+            },
+            {
+              "type": "text",
+              "content": "  的线性回归方程. 给出相应的方差分析表, 计算  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "R^{2}"
+            },
+            {
+              "type": "text",
+              "content": " , 并与未中心化的线性模型做比较."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.192,
+            0.167,
+            0.876,
+            0.207
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "15. 对于线性回归模型 (5.2.3)，设参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\beta"
+            },
+            {
+              "type": "text",
+              "content": "  的最小二乘估计为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\beta}"
+            },
+            {
+              "type": "text",
+              "content": " ，令残差向量  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\varepsilon} = Y - \\hat{Y}"
+            },
+            {
+              "type": "text",
+              "content": " ，其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{Y} = (X^{\\mathrm{T}} X)^{-1} X^{\\mathrm{T}} Y"
+            },
+            {
+              "type": "text",
+              "content": " ，证明"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 4,
+          "bbox": [
+            0.227,
+            0.213,
+            0.697,
+            0.254
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 5,
+              "bbox": [
+                0.227,
+                0.213,
+                0.697,
+                0.231
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(1)  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "E(\\hat{\\varepsilon}) = \\varepsilon, \\operatorname{Var}(\\hat{\\varepsilon}) = \\sigma^{2}(I_{n} - H)"
+                },
+                {
+                  "type": "text",
+                  "content": " , 其中 H 为帽子矩阵;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.228,
+                0.236,
+                0.538,
+                0.254
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(2) 若进一步假设 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\varepsilon \\sim N(\\mathbf{0}, \\sigma^2 I_n)"
+                },
+                {
+                  "type": "text",
+                  "content": ", 则"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.473,
+            0.272,
+            0.659,
+            0.291
+          ],
+          "image_path": "images/page_271_equation_7.jpg",
+          "content": "\\hat {\\varepsilon} \\sim N (\\varepsilon , \\sigma^ {2} (I _ {n} - H))."
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.193,
+            0.309,
+            0.386,
+            0.325
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "16. 对于正态线性模型"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.425,
+            0.332,
+            0.675,
+            0.35
+          ],
+          "image_path": "images/page_271_equation_9.jpg",
+          "content": "y = X \\boldsymbol {\\beta} + \\varepsilon , \\quad \\varepsilon \\sim N (\\mathbf {0}, \\sigma^ {2} I _ {n}),"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.228,
+            0.363,
+            0.642,
+            0.38
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "证明  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\beta"
+            },
+            {
+              "type": "text",
+              "content": "  的最小二乘估计与最大似然估计是一致的."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.193,
+            0.386,
+            0.55,
+            0.403
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "17. 对于回归模型 (5.2.3), 若增加约束条件"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.514,
+            0.423,
+            0.587,
+            0.439
+          ],
+          "image_path": "images/page_271_equation_12.jpg",
+          "content": "H \\beta = c,"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.228,
+            0.458,
+            0.627,
+            0.476
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H"
+            },
+            {
+              "type": "text",
+              "content": " 为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "q \\times (p + 1)"
+            },
+            {
+              "type": "text",
+              "content": " 矩阵, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\pmb{c}"
+            },
+            {
+              "type": "text",
+              "content": " 为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "q"
+            },
+            {
+              "type": "text",
+              "content": " 维向量, 证明"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.228,
+            0.481,
+            0.438,
+            0.498
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(1) "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\beta"
+            },
+            {
+              "type": "text",
+              "content": " 的最小二乘估计为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.348,
+            0.515,
+            0.783,
+            0.536
+          ],
+          "image_path": "images/page_271_equation_15.jpg",
+          "content": "\\hat {\\boldsymbol {\\beta}} _ {H} = \\hat {\\boldsymbol {\\beta}} + (X ^ {\\mathrm{T}} X) ^ {- 1} H ^ {\\mathrm{T}} [ H (X ^ {\\mathrm{T}} X) ^ {- 1} H ^ {\\mathrm{T}} ] ^ {- 1} (\\boldsymbol {c} - H \\hat {\\boldsymbol {\\beta}}),"
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.26,
+            0.553,
+            0.594,
+            0.571
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\beta}"
+            },
+            {
+              "type": "text",
+              "content": "  为无约束时  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\beta"
+            },
+            {
+              "type": "text",
+              "content": "  的最小二乘估计;"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 17,
+          "bbox": [
+            0.227,
+            0.577,
+            0.807,
+            0.619
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 18,
+              "bbox": [
+                0.227,
+                0.577,
+                0.707,
+                0.593
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(2) 有约束时的残差平方和不小于无约束时的残差平方和;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 19,
+              "bbox": [
+                0.228,
+                0.598,
+                0.807,
+                0.619
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(3) "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mathrm{Var}(\\hat{\\beta}_H) = \\sigma^2 (X^{\\mathrm{T}}X)^{-1}\\left\\{I_n - H^{\\mathrm{T}}[H(X^{\\mathrm{T}}X)^{-1}H^{\\mathrm{T}}]^{-1}H(X^{\\mathrm{T}}X)^{-1}\\right\\}."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 20,
+          "bbox": [
+            0.193,
+            0.623,
+            0.874,
+            0.708
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "18. 研究一地区土壤内所含植物可给态磷 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y"
+            },
+            {
+              "type": "text",
+              "content": " 的情况, 观测数据如表 5.5 所示, 其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{1}"
+            },
+            {
+              "type": "text",
+              "content": " 是土壤内所含无机磷浓度; "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{2}"
+            },
+            {
+              "type": "text",
+              "content": " 是土壤内溶于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{K}_{2} \\mathrm{CO}_{3}"
+            },
+            {
+              "type": "text",
+              "content": " 溶液并受溴化物水解的有机磷; "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{3}"
+            },
+            {
+              "type": "text",
+              "content": " 是土壤内溶于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{K}_{2} \\mathrm{CO}_{3}"
+            },
+            {
+              "type": "text",
+              "content": " 溶液, 但不溶于溴化物的有机磷. "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y"
+            },
+            {
+              "type": "text",
+              "content": " 是在 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "35^{\\circ} \\mathrm{C}"
+            },
+            {
+              "type": "text",
+              "content": " 土壤内的植物可给态磷."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 21,
+          "bbox": [
+            0.227,
+            0.714,
+            0.717,
+            0.778
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 22,
+              "bbox": [
+                0.227,
+                0.714,
+                0.717,
+                0.732
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(1) 求 y 对  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "x_{1}, x_{2}, x_{3}"
+                },
+                {
+                  "type": "text",
+                  "content": "  的线性回归模型, 并估计误差方差  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\sigma^{2}"
+                },
+                {
+                  "type": "text",
+                  "content": " ;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 23,
+              "bbox": [
+                0.228,
+                0.738,
+                0.461,
+                0.755
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(2) 给出相应的方差分析表;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 24,
+              "bbox": [
+                0.228,
+                0.761,
+                0.478,
+                0.777
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(3) 检验每个协变量是否显著."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 25,
+          "bbox": [
+            0.193,
+            0.784,
+            0.648,
+            0.801
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "19. 对于表 5.5 的土壤数据, 考虑二次回归模型 (5.3.1),"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 26,
+          "bbox": [
+            0.227,
+            0.806,
+            0.871,
+            0.87
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 27,
+              "bbox": [
+                0.227,
+                0.806,
+                0.871,
+                0.845
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(1) 分别应用向前法、向后法和逐步回归法得到相应的回归方程, 并通过  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "R^{2}"
+                },
+                {
+                  "type": "text",
+                  "content": "  等准则做比较;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 28,
+              "bbox": [
+                0.228,
+                0.852,
+                0.677,
+                0.869
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(2) 应用 Lasso 方法做变量选择, 得到相应的回归方程."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}

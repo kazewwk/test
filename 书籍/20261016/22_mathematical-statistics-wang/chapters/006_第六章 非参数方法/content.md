@@ -1,0 +1,2091 @@
+# 第六章 非参数方法
+
+原始 PDF 第 278–325 页。
+
+## 第六章
+
+## 非参数方法
+
+---
+
+266
+
+第六章 非参数方法
+
+在一个统计推断问题中, 如果总体分布的具体形式已知, 例如假设其为正态分布等, 则只需对其中含有的若干个未知参数作出估计或进行某种形式的假设检验, 这类推断方法称为参数方法. 在前面的章节中, 通常假设样本是来自某个特定的参数分布或参数模型, 用参数方法进行推断. 然而, 参数方法具有一些局限性, 例如假定的参数分布并不一定正确. 在许多实际问题中, 对总体分布的形式可能所知甚少, 甚至一无所知. 这时, 往往只对分布做一些很弱的假设, 例如可设总体分布为连续型分布或总体分布关于均值对称等, 且使用不依赖于总体分布具体形式的统计推断方法, 此类推断方法即为非参数方法 (non-parametric method).
+
+非参数方法具有更少的模型假设, 其大致可以分为非参数估计和非参数检验两部分. 本章将介绍一些常用的非参数估计方法和非参数检验方法. 非参数估计方面将介绍直方图及核密度估计方法, 得到总体密度函数的估计, 并应用经验分布函数来估计总体分布函数. 非参数检验方面将介绍拟合优度检验、独立性检验和秩检验等方法. 对于给定数据, 若知道其总体服从的参数模型, 则参数检验方法的检验功效一般会比非参数检验方法的更高, 因为非参数方法不能充分利用信息. 然而, 在实际中总体分布往往未知, 可采用非参数检验方法.
+
+## 6.1 概率密度函数估计
+
+对于连续型随机变量 X, 给定其独立同分布样本  $X_{1}, X_{2}, \cdots, X_{n}$  后, 一个自然的问题是估计其概率密度函数. 人们可以通过分析样本  $X_{1}, X_{2}, \cdots, X_{n}$  的一些图形初步了解总体的一些信息. 直方图是一种常用的图形, 可展示数据的分布情况, 诸如众数、中位数的大致位置, 数据是否存在缺口或异常值等, 也可以大概判断总体的密度函数的形状. 进一步地, 本节将介绍核密度方法估计总体的密度函数.
+
+## 6.1.1 直方图
+
+作为描述数据分布的常用工具之一的直方图, 是根据具体数据的分布情况, 画成以组距为底长、以频数为高度的一系列连接起来的直方型矩形图. 具体而言, 在构造直方图时, 先把数据值域分成若干个等长区间, 之后利用这些区间把数据分组, 每组作一个矩形, 其高是数据落入该组的频数, 其底为所属区间. 有时, 也把直方图的高标准化, 即其高和数据落入该组的频数成比例. 对于样本 $X_{1}, X_{2}, \cdots, X_{n}$, 选择两个适当的常数 $X_{0}$ 和 $h (>0)$, 把 $(- \infty, \infty)$ 分成若干个小区间 $\Delta_{i} = [X_{0} + (i - 1)h, X_{0} + ih), i = 0, \pm 1, \pm 2, \cdots$, 并以 $n_{i}$ 记样本落入区间 $\Delta_{i}$ 的个数. 如以 $\Delta_{i}$ 为底, $\frac{n_{i}}{nh}$ 为高作一矩形, 则这些矩形就
+
+---
+
+6.1 概率密度函数估计
+
+267
+
+构成一个直方图. 因此直方图可表示为如下的函数:
+
+$$
+\hat {f} _ {h} (x) = \frac {1}{n h} \sum_ {i = 1} ^ {n} \sum_ {j} I (X _ {i} \in \varDelta_ {j}) I (x \in \varDelta_ {j}), \tag {6.1.1}
+$$
+
+其中 $I(\cdot)$ 为示性函数. 可证直方图 (6.1.1) 的线下面积为 1, 具体证明留作习题. 直方图的形状依赖于初值 $X_0$ 及窗宽 $h$ 的选取. 此外, 可证直方图 $\hat{f}_h(x)$ 并不是总体密度函数 $f(x)$ 的无偏估计, 具体证明留作习题.
+
+直方图与柱状图有所不同. 柱状图是通过矩形的长度表示数值, 宽度往往表示类别, 因此其更适合于定性变量且样本量较小的数据集; 直方图也是通过矩形的长度表示数值, 不过其宽度用于表示各组的组距, 因此其高度与宽度均有意义, 更适合展示大数据集的统计结果.
+
+图 6.1.1 给出不同数据类型各 1000 个样本的直方图, 其中图 6.1.1 (a)—(c) 是以频数为高, 而图 6.1.1 (d)—(f) 是使得阴影部分面积为 1 的相应图形. 通过直方图, 可以判断数据的总体分布是左偏、右偏、正态的, 或是多峰的. 例如, 图 6.1.1 (a) 的总体分布是一个右偏分布, 图 6.1.1 (b) 的总体分布比较接近正态分布, 图 6.1.1 (c) 所对应的总体是一个多峰分布. 在图 6.1.1 (d)—(f) 中, 每个直方图中的小矩形面积之和等于 1, 其可以作为总体密度函数的估计. 然而, 直方图是不光滑的, 需要一种光滑化的技术来估计总体密度函数.
+
+![](../../raw/pages_0273-0288/images/page_279_image_7.jpg)
+
+图6.1.1 不同数据的直方图
+
+参数方法是常用的估计密度函数的光滑化方法. 在参数方法中, 会假定总体密度有一个确定的参数结构 $f(x, \beta)$, 例如, 设其服从正态分布 $N(\mu, \sigma^2)$, 其参数为 $\beta = (\mu, \sigma^2)$,
+
+---
+
+268
+
+第六章 非参数方法
+
+则只需根据样本估计得到参数 $\beta$ 的估计值 $\hat{\beta}$, 即可得密度函数 $f(x, \hat{\beta})$ 的形式, 从而可得任一点 $x$ 处的密度函数值 $f(x, \hat{\beta})$. 图6.1.1(e)即假设密度函数服从正态分布, 可得到较好的拟合效果. 然而, 当给定的参数结构与真实的总体密度函数不符合时, 参数方法的效果不佳, 例如图6.1.1(d)中总体密度是偏态的, 若用正态分布来拟合, 则估计不太准确. 此时, 可采用其他的参数分布族, 也可采用非参数方法. 在非参数估计中, 不限定密度函数的参数结构, 而是估计任一点 $x$ 处的密度函数值 $\hat{f}(x)$, 从而通过逐点估计的方式得到密度函数的估计. 这种方法是由数据本身驱动的. 估计总体密度函数常用的非参数方法为核密度估计 (kernel density estimation, KDE) 法, 其将核光滑方法应用于总体的密度函数估计.
+
+## 6.1.2 核密度估计
+
+首先考虑一维情形. 设  $x_{1}, x_{2}, \cdots, x_{n}$  是从密度函数为  $f(x)$  的总体中抽取的独立同分布样本. 对于任一点 x, 希望得到密度函数  $f(x)$  的估计值. 根据密度函数的定义,
+
+$$
+f (x) = \lim _ {h \to 0} \frac {F (x + h) - F (x - h)}{2 h},
+$$
+
+其中, $h > 0$ 且 $F(x)$ 为总体分布函数. 一个自然的想法是类似于直方图, 选一个 $x$ 附近的小区间 $[x - h, x + h]$, 计算落入该区间的样本数, 再除以总样本数, 可作为 $F(x + h) - F(x - h)$ 的近似, 从而得到 $f(x)$ 的估计, 即
+
+$$
+\hat {f} _ {h} (x) = \frac {1}{2 h} \frac {\sum_ {i = 1} ^ {n} I (x _ {i} \in [ x - h , x + h ])}{n} = \frac {1}{n h} \sum_ {i = 1} ^ {n} \frac {1}{2} \cdot I \left(\frac {| x _ {i} - x |}{h} \leqslant 1\right),
+$$
+
+其中 $I(A)$ 为示性函数, 当 $A$ 为真时取值为 1, 否则为 0. 记 $K_0(t) = \frac{1}{2} \cdot I(|t| \leqslant 1)$, 上式可改写为
+
+$$
+\hat {f} _ {h} (x) = \frac {1}{n h} \sum_ {i = 1} ^ {n} K _ {0} \left(\frac {x _ {i} - x}{h}\right). \tag {6.1.2}
+$$
+
+由于 $\int K_0(t)\mathrm{d}t = 1$ ，故
+
+$$
+\begin{array}{l} \int \hat {f} _ {h} (x) \mathrm{d} x = \frac {1}{n h} \sum_ {i = 1} ^ {n} \int K _ {0} \left(\frac {x _ {i} - x}{h}\right) \mathrm{d} x \\ = \frac {1}{n} \sum_ {i = 1} ^ {n} \int K _ {0} (t) \mathrm{d} t = \int K _ {0} (t) \mathrm{d} t = 1, \\ \end{array}
+$$
+
+因此 (6.1.2) 式的估计可以保证其积分等于 1. 这也使得估计 (6.1.2) 是一种可行的估计. $K_{0}(t)$ 是一种特殊的权重函数, 即落在区间 $[x - h, x + h]$ 里的 $x_{i}$ 具有相同的权重, 而在
+
+---
+
+6.1 概率密度函数估计
+
+269
+
+区间外的点的权重都为0. 然而, 该估计得到的密度函数不是光滑的, 其本质原因在于函数 $K_{0}(t)$ 是一个阶跃函数. 进一步地, 可推广 $K_{0}(t)$ 至其他权重函数 $K(t)$, 并称 $K(t)$ 为核函数. 令 $K_{h}(t) = \frac{1}{h} K\left(\frac{t}{h}\right)$, 则得到密度函数 $f(x)$ 的核密度估计:
+
+$$
+\hat {f} (x) = \frac {1}{n} \sum_ {i = 1} ^ {n} K _ {h} (x _ {i} - x) = \frac {1}{n h} \sum_ {i = 1} ^ {n} K \left(\frac {x _ {i} - x}{h}\right). \tag {6.1.3}
+$$
+
+这里, $\frac{x_i - x}{h}$ 可视为 $x_{i}$ 与 $x$ 距离的关于 $h$ 的倍数, $x_{i}$ 距离 $x$ 越近, 则 $\frac{x_i - x}{h}$ 距离原点越近. 称 $h$ 为窗宽. 在核密度估计 (6.1.3) 中, 需要确定核函数 $K$ 和窗宽 $h$.
+
+核函数 K 可看成一个权重函数,  $x_{i}$  越接近 x 则分配的权重越大, 因此 K 一般以原点为中心, 且是单峰的. 此外, 根据密度函数的积分为 1 的要求, 有
+
+$$
+\int \hat {f} (x) \mathrm{d} x = \frac {1}{n h} \sum_ {i = 1} ^ {n} \int K \left(\frac {x _ {i} - x}{h}\right) \mathrm{d} x = \frac {1}{n} \sum_ {i = 1} ^ {n} \int K (t) \mathrm{d} t = \int K (t) \mathrm{d} t.
+$$
+
+从而, 只要 $K(t)$ 的积分等于 1 即可. 因此, 核函数 $K$ 可为一个以原点为中心、单峰的密度函数. 常见的核函数有
+
+均匀核: $K(t) = \frac{1}{2} I(|t| \leqslant 1)$,
+
+Gauss 核:  $K(t)=\frac{1}{\sqrt{2\pi}}\exp\left\{-\frac{t^{2}}{2}\right\}$ ,
+
+Epanechnikov 核: $K(t) = \frac{3}{4} (1 - t^2)I(|t| \leqslant 1)$,
+
+四次核: $K(t) = \frac{15}{16} (1 - t^2)^2 I(|t| \leqslant 1)$.
+
+在 (6.1.2) 式中的核函数即为均匀核, Gauss 核函数即为标准正态分布的密度函数. 图 6.1.2 给出前面提到的四种核函数. Gauss 核、Epanechnikov 核和四次核在整个实数空间上是连续函数, 而且满足单峰、关于原点对称且远离原点的取值非常小或为 0. 因此, 当 $x$ 和 $x'$ 相距很小时, $K\left(\frac{x_i - x}{h}\right)$ 和 $K\left(\frac{x_i - x'}{h}\right)$ 相差很小, 从而 $\hat{f}(x)$ 和 $\hat{f}(x')$ 也相差不大, 即采用这三种核函数可使核密度估计较光滑. 常用的核函数有 Gauss 核和 Epanechnikov 核.
+
+在核密度估计 (6.1.3) 中, 窗宽 $h$ 决定核密度估计的光滑程度, 即最终得到的密度估计图形是否平滑. 窗宽 $h$ 越大, 则任一样本 $x_{i}$ 经变换 $\frac{x_i - x}{h}$ 后离原点距离越小, 从而 $x_{i}$ 和其他样本 $x_{j}$ 的权重接近相同. 特别地, 当 $h \to \infty$ 时, 对于任一点 $x$, $\frac{x_i - x}{h} \to 0$, 则每个样本的权重都趋于相同且 $\hat{f}(x)$ 的取值趋于相同, 从而总体密度函数的估计变为均匀分布. 当 $h \to 0$ 时, 只在已有样本点 $x_{i}$ 处才有 $\frac{x_i - x}{h} \neq 0$, 其他处都趋于 0. 从而不同样本赋予的权重差异很大, 使得总体密度函数的估计图形起伏很大. 因此, 窗宽严重影响密度函数的估计. 这是非参数估计里面典型的偏差-方差平衡 (bias-variance tradeoff):
+
+---
+
+270
+
+第六章 非参数方法
+
+如果 $h$ 太大, 可以减小方差, 但偏差可能会比较大; 如果 $h$ 太小, 偏差变小, 但是邻域中的点太少, 使得方差变大. 因此需要选择合适的窗宽.
+
+![](../../raw/pages_0273-0288/images/page_282_chart_3.jpg)
+
+<details>
+<summary>violin</summary>
+
+| Category | Gauss核 | Epanechnikov核 | 均匀核 |
+| --- | --- | --- | --- |
+| -3 | 0 | — | — |
+| -2 | ~0.05 | — | — |
+| -1 | ~0.25 | 0 | 0.5 |
+| 0 | 0.4 | ~0.95 | 0.5 |
+| 1 | ~0.25 | 0 | 0.5 |
+| 2 | ~0.05 | — | — |
+| 3 | 0 | — | — |
+</details>
+
+图6.1.2 不同核函数
+
+设  $X_{1}, X_{2}, \cdots, X_{n}$  为总体 X 的密度函数为  $f(x)$  的随机样本.均方误差是评价估计好坏的一种常用指标，它同时考虑偏差和方差，即  $\mathrm{MSE}[\hat{f}(x)] = \{\mathrm{Bias}[\hat{f}(x)]\}^{2} + \mathrm{Var}[\hat{f}(x)]$ .遍历 x 可得积分均方误差 (mean integrated squared error, MISE),
+
+$$
+\mathrm{MISE} (\hat {f} (x)) = \int \mathrm{MSE} [ \hat {f} (x) ] \mathrm{d} x = E \left\{\int [ \hat {f} (x) - f (x) ] ^ {2} \mathrm{d} x \right\}.
+$$
+
+需要选择最优的窗宽和核函数, 使积分均方误差达到最小.
+
+定理 6.1.1 假设  $h \rightarrow 0, nh \rightarrow \infty, f(x)$  存在连续二阶导数, 对于核函数  $K, c_{K} = \int K^{2}(u) du, d_{K} = \int K(u) u^{2} du$  有限. 则在核密度估计 (6.1.3) 中, 使得 MISE[ $\hat{f}(x)$ ] 达到最小的窗宽 h 为
+
+$$
+h _ {\mathrm{opt}} = \left\{\frac {c _ {K}}{n d _ {K} ^ {2} \int [ f ^ {\prime \prime} (x) ] ^ {2} \mathrm{d} x} \right\} ^ {\frac {1}{5}}. \tag {6.1.4}
+$$
+
+证明 核密度估计  $\hat{f}(x)$  的期望:
+
+$$
+\begin{array}{l} E [ \hat {f} (x) ] = \frac {1}{h} E \left[ \frac {\sum_ {i = 1} ^ {n} K \left(\frac {X _ {i} - x}{h}\right)}{n} \right] = \frac {1}{h} \frac {\sum_ {i = 1} ^ {n} E \left[ K \left(\frac {X _ {i} - x}{h}\right) \right]}{n} = \frac {1}{h} E \left[ K \left(\frac {X _ {1} - x}{h}\right) \right] \\ = \frac {1}{h} \int K \left(\frac {x _ {1} - x}{h}\right) f (x _ {1}) \mathrm{d} x _ {1} = \int K (u) f (u h + x) \mathrm{d} u. \\ \end{array}
+$$
+
+上式中最后一个等式成立是做了变量替换 $u = \frac{x_1 - x}{h}$. 根据Taylor展式, $\hat{f}(x)$ 的偏差为
+
+$$
+\mathrm{Bias} [ \hat {f} (x) ] = E [ \hat {f} (x) ] - f (x) = \int K (u) f (u h + x) \mathrm{d} u - f (x) \int K (u) \mathrm{d} u
+$$
+
+---
+
+6.1 概率密度函数估计
+
+271
+
+$$
+\begin{array}{l} = \int K (u) [ f (u h + x) - f (x) ] \mathrm{d} u \\ = \int K (u) \left[ f ^ {\prime} (x) u h + f ^ {\prime \prime} (x) \frac {u ^ {2} h ^ {2}}{2} + o (u ^ {2} h ^ {2}) \right] \mathrm{d} u \\ = h f ^ {\prime} (x) \int K (u) u \mathrm{d} u + \frac {h ^ {2}}{2} f ^ {\prime \prime} (x) \int K (u) u ^ {2} \mathrm{d} u + o (h ^ {2}) \\ = \frac {h ^ {2}}{2} f ^ {\prime \prime} (x) d _ {K} + o (h ^ {2}). \\ \end{array}
+$$
+
+上式最后一个等式成立的原因是核函数 $K$ 是关于原点对称的, 则 $\int K(u)u\mathrm{d}u = 0.\hat{f}(x)$ 的方差为
+
+$$
+\begin{array}{l} \mathrm{Var} [ \hat {f} (x) ] = \mathrm{Var} \left[ \frac {1}{n h} \sum_ {i = 1} ^ {n} K \left(\frac {X _ {i} - x}{h}\right) \right] = \frac {1}{n h ^ {2}} \mathrm{Var} \left[ K \left(\frac {X _ {i} - x}{h}\right) \right] \\ = \frac {1}{n h ^ {2}} \left\{E \left[ K \left(\frac {X _ {i} - x}{h}\right) \right] ^ {2} - E ^ {2} \left[ K \left(\frac {X _ {i} - x}{h}\right) \right] \right\} \\ = \frac {1}{n h ^ {2}} \left\{h \int K ^ {2} (u) f (u h + x) \mathrm{d} u - h ^ {2} \left[ \int K (t) f (t h + x) \mathrm{d} t \right] ^ {2} \right\} \\ = \frac {1}{n h} \int K ^ {2} (u) [ f (x) + o (1) ] \mathrm{d} u - \frac {1}{n} \left[ \int K (t) f (t h + x) \mathrm{d} t \right] ^ {2} \\ = \frac {1}{n h} c _ {K} f (x) + o \left(\frac {1}{n h}\right) - \frac {1}{n} E _ {T} ^ {2} [ f (T h + x) ] \\ = \frac {1}{n h} c _ {K} f (x) + o \left(\frac {1}{n h}\right) - \frac {1}{n} o \left(\frac {1}{h}\right) \\ = \frac {1}{n h} c _ {K} f (x) + o \bigg (\frac {1}{n h} \bigg). \\ \end{array}
+$$
+
+上式倒数第三个等式中, 由于 $K(t)$ 也是一个对称的密度函数, $\int K(t)f(th + x)\mathrm{d}t$ 可视为 $f(Th + x)$ 的期望. 上式倒数第二个等式成立是因为 $E_T^2 [f(Th + x)] < \infty$. 因此核函数估计的均方误差为
+
+$$
+\begin{array}{l} \mathrm{MSE} [ \hat {f} (x) ] = \{\text {Bias} [ \hat {f} (x) ] \} ^ {2} + \operatorname{Var} [ \hat {f} (x) ] \\ = \left[ \frac {h ^ {2}}{2} f ^ {\prime \prime} (x) d _ {K} + o (h ^ {2}) \right] ^ {2} + \frac {1}{n h} c _ {K} f (x) + o \left(\frac {1}{n h}\right) \\ = \frac {1}{4} h ^ {4} d _ {K} ^ {2} [ f ^ {\prime \prime} (x) ] ^ {2} + \frac {1}{n h} c _ {K} f (x) + o (h ^ {4}) + o \left(\frac {1}{n h}\right). \\ \end{array}
+$$
+
+核函数估计的积分均方误差为
+
+$$
+\mathrm{MISE} [ \hat {f} (x) ] = \int \mathrm{MSE} [ \hat {f} (x) ] \mathrm{d} x
+$$
+
+---
+
+272
+
+第六章 非参数方法
+
+$$
+\begin{array}{l} = \frac {1}{4} h ^ {4} d _ {K} ^ {2} \int [ f ^ {\prime \prime} (x) ] ^ {2} \mathrm{d} x + \frac {1}{n h} c _ {K} \int f (x) \mathrm{d} x + o (h ^ {4}) + o \left(\frac {1}{n h}\right) \\ = \frac {1}{4} h ^ {4} d _ {K} ^ {2} \int [ f ^ {\prime \prime} (x) ] ^ {2} \mathrm{d} x + \frac {1}{n h} c _ {K} + o (h ^ {4}) + o \left(\frac {1}{n h}\right). \\ \end{array}
+$$
+
+求解可以使得 MISE[ $\hat{f}(x)$ ] 达到最小的窗宽 h, 即得 (6.1.4) 式.
+
+由 (6.1.4) 式可知, 当核函数确定后, 最优窗宽  $h_{\mathrm{opt}} = O(n^{-1/5})$ , 即  $h_{opt} = Cn^{-1/5}$ , 其中 C 为待定的正的常数. 当  $h = h_{opt}$  时,
+
+$$
+\begin{array}{l} \mathrm{MISE} [ \hat {f} (x) ] = \frac {5}{4} c _ {K} ^ {\frac {4}{5}} d _ {K} ^ {\frac {2}{5}} \bigg \{\int [ f ^ {\prime \prime} (x) ] ^ {2} \mathrm{d} x \bigg \} ^ {\frac {1}{5}} n ^ {- \frac {4}{5}} + o (n ^ {- \frac {4}{5}}) \\ = \frac {5}{4} (c _ {K} ^ {2} d _ {K}) ^ {\frac {2}{5}} \bigg \{\int [ f ^ {\prime \prime} (x) ] ^ {2} \mathrm{d} x \bigg \} ^ {\frac {1}{5}} n ^ {- \frac {4}{5}} + o (n ^ {- \frac {4}{5}}). \\ \end{array}
+$$
+
+由此可见, 应选择核函数 $K$ 使得 $c_K^2 d_K = \left[\int K^2(u) \mathrm{d}u\right]^2 \int u^2 K(u) \mathrm{d}u$ 尽可能小. 文献中已证明, Epanechnikov 核恰好是使得 $c_K^2 d_K$ 达到最小的核函数. 由于最优窗宽 (6.1.4) 是在积分均方误差准则下且要求 $f(x)$ 存在连续二阶导数的条件下得到的, 但在实际应用中 $f(x)$ 往往未知, 因此 $h_{\mathrm{opt}}$ 难以应用到实际问题中.
+
+Silverman (1986) 提出了一个选择 $h$ 的正态参考规则: 若 $f(x)$ 为正态分布 $N(0, \sigma^2)$ 的密度函数, 选取 Gauss 核, 此时可选择窗宽 $\hat{h}_{\mathrm{opt}} = 1.06 \hat{\sigma} n^{-\frac{1}{5}}$, 其中 $\hat{\sigma} = \min \left\{S, \frac{Q}{1.34}\right\}$, $S$ 为样本标准差, $Q$ 为样本的 $75\%$ 分位数与 $25\%$ 分位数的差.
+
+若总体不是正态的情形, 可用交叉验证法得到一个对最优窗宽的良好估计. 考虑下面的积分平方误差 (integrated squared error, ISE) 作为评价指标, 即
+
+$$
+\mathrm{ISE} [ \hat {f} (x) ] = \int [ \hat {f} (x) - f (x) ] ^ {2} \mathrm{d} x = \int \hat {f} ^ {2} (x) \mathrm{d} x - 2 \int \hat {f} (x) f (x) \mathrm{d} x + \int f ^ {2} (x) \mathrm{d} x,
+$$
+
+由于等式右边第三项与估计 $\hat{f}(x)$ 无关, 故只需考虑前两项, 并设为 $M(h)$. 选择窗宽使 $M(h)$ 达到最小. 下面分别考虑第一项和第二项. 对于第一项, 设 $t = \frac{x_j - x}{h}, K^*(u) = \int K(u + t)K(t)\mathrm{d}t$, 则
+
+$$
+\begin{array}{l} \int \hat {f} ^ {2} (x) \mathrm{d} x = \frac {1}{n ^ {2} h ^ {2}} \sum_ {i = 1} ^ {n} \sum_ {j = 1} ^ {n} \int K \bigg (\frac {x _ {i} - x}{h} \bigg) K \bigg (\frac {x _ {j} - x}{h} \bigg) \mathrm{d} x \\ = \frac {1}{n ^ {2} h} \sum_ {i = 1} ^ {n} \sum_ {j = 1} ^ {n} \int K \left(\frac {x _ {i} - x _ {j}}{h} + t\right) K (t) \mathrm{d} t \\ = \frac {1}{n ^ {2} h} \sum_ {i = 1} ^ {n} \sum_ {j = 1} ^ {n} K \bigg (\frac {x _ {i} - x _ {j}}{h} \bigg). \\ \end{array}
+$$
+
+---
+
+6.1 概率密度函数估计
+
+273
+
+对于第二项, $\int \hat{f}(x)f(x)\mathrm{d}x = E_X[\hat{f}(X)]$, 而 $\frac{1}{n}\sum_{i=1}^{n}\hat{f}(x_i)$ 是 $E_X[\hat{f}(X)]$ 的无偏估计. 应用交叉验证法时, 需要对每个样本都剔除过一次后分别计算其效果. 设 $\hat{f}^{-i}(x_i)$ 为将第 $i$ 个样本剔除后的核密度估计, 则 $\sum_{i=1}^{n}\hat{f}^{-i}(x_i)$ 均匀地对每个样本都剔除过一次, 且 $\frac{1}{n}\sum_{i=1}^{n}\hat{f}^{-i}(x_i)$ 也是 $E_X[\hat{f}(X)]$ 的无偏估计. 由于 $\hat{f}^{-i}(x_i) = \frac{1}{(n-1)h}\sum_{i\neq j}K\left(\frac{x_j - x_i}{h}\right)$,
+
+$$
+\begin{array}{l} \frac {1}{n} \sum_ {i = 1} ^ {n} \hat {f} ^ {- i} (x _ {i}) = \frac {1}{n (n - 1) h} \sum_ {i = 1} ^ {n} \sum_ {j \neq i} K \bigg (\frac {x _ {j} - x _ {i}}{h} \bigg) \\ = \frac {1}{n (n - 1) h} \sum_ {i = 1} ^ {n} \left[ \sum_ {j = 1} ^ {n} K \bigg (\frac {x _ {j} - x _ {i}}{h} \bigg) - K \bigg (\frac {x _ {j} - x _ {i}}{h} \bigg) I (i = j) \right] \\ = \frac {1}{n (n - 1) h} \sum_ {i = 1} ^ {n} \sum_ {j = 1} ^ {n} K \left(\frac {x _ {j} - x _ {i}}{h}\right) - \frac {K (0)}{(n - 1) h}. \\ \end{array}
+$$
+
+因此，
+
+$$
+\begin{array}{l} M (h) = \int \hat {f} ^ {2} (x) \mathrm{d} x - 2 \int \hat {f} (x) f (x) \mathrm{d} x \\ = \frac {1}{n ^ {2} h} \sum_ {i = 1} ^ {n} \sum_ {j = 1} ^ {n} K \left(\frac {x _ {i} - x _ {j}}{h}\right) - \frac {2}{n (n - 1) h} \sum_ {i = 1} ^ {n} \sum_ {j = 1} ^ {n} K \left(\frac {x _ {j} - x _ {i}}{h}\right) + \frac {2 K (0)}{(n - 1) h} \\ \approx - \frac {1}{n ^ {2} h} \sum_ {i = 1} ^ {n} \sum_ {j = 1} ^ {n} K \bigg (\frac {x _ {i} - x _ {j}}{h} \bigg) + \frac {2 K (0)}{(n - 1) h}. \\ \end{array}
+$$
+
+最后一个式子是用 n 代替 n-1. 对于样本  $x_{1}, x_{2}, \cdots, x_{n}$ ，当核函数 K 给定时， $M(h)$  是关于 h 的一元函数。通过优化求解该一元函数，可得最优的窗宽 h，即交叉验证法下的最优窗宽为
+
+$$
+h _ {\mathrm{opt2}} = \underset {h} {\arg \min} M (h), \tag {6.1.5}
+$$
+
+其可通过数值求解法得到. Stone (1984) 证明了当 $f(x)$ 有界时, 该窗宽 $h_{\mathrm{opt2}}$ 是渐近最优的.
+
+例 6.1.1 考虑由 500 个服从  $N(0,1)$  的样本和 500 个服从  $N(4,1.2^{2})$  的样本合在一起的混合正态总体的样本, 其直方图如图 6.1.3 所示. 考虑不同的窗宽 h, 图 6.1.3 中给出 h=0.1, 0.234, 0.768 和 2 的核密度估计, 其中 h=0.768 是假设总体服从正态分布而用正态参考规则给出的推荐窗宽, h=0.234 是由交叉验证法得到近似最优窗宽 (6.1.5). 从中可见, h=2 时, 核密度估计变为单峰的, 而这与真实的情形不符; 太小的窗宽, 如 h=0.1, 则估计的密度函数变化剧烈; 若总体不是正态或近似正态的, 则并不适合用正态参考规则.
+
+---
+
+274
+
+第六章 非参数方法
+
+![](../../raw/pages_0273-0288/images/page_286_chart_2.jpg)
+
+<details>
+<summary>histogram</summary>
+
+| Metric | Value |
+| --- | --- |
+| h=0.234 | 0.234 |
+| h=0.768 | 0.768 |
+| h=0.1 | 0.1 |
+| h=2 | 2 |
+</details>
+
+图 6.1.3 双峰密度函数在不同窗宽下的核密度估计
+
+一维的核密度估计可推广至 d 维. 对于 d 维样本  $x_{1}, x_{2}, \cdots, x_{n}$ ，其核密度估计为
+
+$$
+\hat {f} _ {h} (x) = \frac {1}{n h ^ {d}} \sum_ {i = 1} ^ {n} K \bigg (\frac {x _ {i} - x}{h} \bigg),
+$$
+
+其中 d 为 x 的维数, K 为多维核函数. 通常令  $K(t) = \prod_{i=1}^{d} K_{i}(t_{i})$ , 其中  $t = (t_{1}, t_{2}, \cdots, t_{d})$ ,  $K_{i}(t_{i})$  为一维核函数. 在实际应用中, 经常使用多维 Gauss 乘积核, 即  $K_{i}$  都是一维的 Gauss 核. d 维核密度估计中窗宽会严重影响估计结果. 类似于一维情形的最优窗宽 (6.1.4), 应用 Taylor 展式等方法也可以得到 d 维核密度估计最优窗宽, 其与  $n^{-1/(4+d)}$  同阶. 同样地, 可用交叉验证法得到近似的最优窗宽.
+
+下面给出核密度估计的大样本性质. 具体证明可参薛留根 (2015).
+
+定理6.1.2 设核函数 $K(u)$ 为概率密度函数, $x \in \mathbb{R}^d$, 窗宽 $h \to 0$, $E[\hat{f}(x)]$ 存在, 则 $\hat{f}(x)$ 有以下性质:
+
+渐近无偏性: $\lim_{n\to\infty}E[\hat{f}(x)]$  存在且等于  $f(x)$  的充要条件是  $(1+||x||^{d})K(x)$  几乎处处有界；
+
+弱相合性: $(1+||x||^{d})K(x)$ 几乎处处有界，且 $nh^{d}\to\infty$，则对任意连续点 x，有 $\lim_{n\to\infty}E[\hat{f}(x)-f(x)]^{2}=0$，从而 $\hat{f}(x)\stackrel{\mathrm{P}}{\rightarrow}f(x)$;
+
+强相合性: $(1+||x||^{d})K(x)$  几乎处处有界，且  $\frac{nh^{d}}{\ln n} \rightarrow \infty$ ，则对任意连续点 x，有  $\hat{f}(x) \stackrel{\mathrm{a.s.}}{\longrightarrow} f(x)$
+
+在一维情况下有下面的渐近正态性.
+
+定理 6.1.3 设核函数  $K(u)$  为 R 上对称的概率密度函数, 且满足  $\sup_{u}(1+|u|)K(u) \leqslant c_{1} < \infty, \int u^{2} K(u) \mathrm{d}u \leqslant c_{2} < \infty$ , 其中  $c_{1}$ 、 $c_{2}$  均为正的常数; 窗宽  $nh \to \infty, nh^{5} \to 0; f(x)$  存在有界的二阶导数, 则对任意满足  $f(x_{i}) > 0 (i = 1, 2, \cdots, k)$  的 k 个不同点
+
+---
+
+6.2 经验分布与替代原理
+
+275
+
+$x_{1},x_{2},\cdots,x_{k}$ ，有
+
+$$
+\sqrt {n h} (\hat {f} (x _ {1}) - f (x _ {1}), \hat {f} (x _ {2}) - f (x _ {2}), \dots , \hat {f} (x _ {k}) - f (x _ {k})) ^ {\mathrm{T}} \stackrel {\mathrm{d}} {\rightarrow} N (\mathbf {0}, B),
+$$
+
+其中  $B = \mathrm{diag}(b_{11}, b_{22}, \cdots, b_{kk}), b_{ii} = f(x_i) \int K^2(u) \mathrm{d}u, i = 1, 2, \cdots, k.$
+
+通过核密度估计法, 得到总体的密度函数的估计之后, 可以基于估计的密度做更多的统计推断. 例如, 可对数据做非参数回归. 这里不再展开详细的介绍.
+
+## 6.2 经验分布与替代原理
+
+由概率论的知识可知，分布函数包含了总体的所有的统计信息。根据总体的样本 $X_{1},X_{2},\cdots,X_{n}$ 对总体分布进行估计，可了解数据的性质、形态和概率特征，从而更好地分析总体的统计规律。分布估计可作为进一步数据分析的基础。此外，分位数也是一类非常有用的数字特征。基于样本 $X_{1},X_{2},\cdots,X_{n}$ ，可以给出分位数合理的估计。
+
+## 6.2.1 经验分布函数
+
+在 (1.2.9) 式中已给出经验分布函数的定义, 本小节进一步讨论经验分布函数的性质并给出详细的证明. 给定独立同分布随机变量  $X_{1}, X_{2}, \cdots, X_{n}$ , 它们均服从总体分布  $F(x)$ , 经验分布函数
+
+$$
+F _ {n} (x) = \left\{ \begin{array}{l l} 0, & x <   X _ {(1)}, \\ \frac {k}{n}, & X _ {(k)} \leqslant x <   X _ {(k + 1)}, k = 1, 2, \dots , n - 1, \\ 1, & x \geqslant X _ {(n)}, \end{array} \right. \tag {6.2.1}
+$$
+
+其中  $X_{(1)} \leqslant X_{(2)} \leqslant \cdots \leqslant X_{(n)}$  为次序统计量. 由于  $F_{n}(x)$  是一个非降的右连续函数, 故可作为总体分布  $F(x)$  的一个估计. 这里并没有要求总体分布的具体参数结构, 因此  $F_{n}(x)$  是  $F(x)$  的一个非参数估计. 下面的定理说明  $F_{n}(x)$  是  $F(x)$  的一个良好估计.
+
+定理 6.2.1 对于总体分布为  $F(x)$  的独立同分布随机样本  $X_{1}, X_{2}, \cdots, X_{n}$ ，其经验分布函数有如下性质:
+
+(1) 依概率收敛: $F_{n}(x) \stackrel{\mathrm{p}}{\rightarrow} F(x), \forall x \in \mathbb{R}$.
+(2) 均方收敛: $E[F_n(x) - F(x)]^2 \longrightarrow 0, \forall x \in \mathbb{R}$.
+(3) 几乎处处收敛: $P\left(\lim_{n\to \infty}F_n(x) = F(x)\right) = 1, \forall x\in \mathbb{R}$.
+(4) 渐近正态性: $\frac{F_n(x) - F(x)}{\sqrt{F(x)[1 - F(x)] / n}} \xrightarrow{\mathrm{d}} N(0,1), \forall x \in \mathbb{R}$.
+
+---
+
+276
+
+第六章 非参数方法
+
+证明 对于示性函数 $I(X_{i} \leqslant x)$, 其等于 1 若 $X_{i} \leqslant x$, 否则为 0, 由于 $X_{i}$ 是随机变量, 故 $I(X_{i} \leqslant x)$ 也是随机变量, 而且 $P(I(X_{i} \leqslant x) = 1) = P(X_{i} \leqslant x) = F(x)$, 相应地, $P(I(X_{i} \leqslant x) = 0) = P(X_{i} > x) = 1 - F(x)$. 从而,
+
+$$
+E [ I (X _ {i} \leqslant x) ] = 1 \cdot F (x) + 0 \cdot [ 1 - F (x) ] = F (x),
+$$
+
+$$
+\begin{array}{l} \mathrm{Var} [ I (X _ {i} \leqslant x) ] = E [ I (X _ {i} \leqslant x) ] ^ {2} - \{E [ I (X _ {i} \leqslant x) ] \} ^ {2} \\ = F (x) - [ F (x) ] ^ {2} = F (x) [ 1 - F (x) ]. \\ \end{array}
+$$
+
+对于独立同分布的  $X_{1}, X_{2}, \cdots, X_{n}, I(X_{i} \leqslant x)$  为两点分布  $B(1, F(x))$  的独立同分布样本。因此，经验分布函数  $F_{n}(x)$  可视为独立同分布的随机变量  $I(X_{i} \leqslant x)$  的样本均值，即  $F_{n}(x) = \frac{1}{n} \sum_{i=1}^{n} I(X_{i} \leqslant x)$ ，则
+
+$$
+\begin{array}{l} E [ F _ {n} (x) ] = \frac {1}{n} \sum_ {i = 1} ^ {n} E [ I (X _ {i} \leqslant x) ] = F (x), \\ \mathrm{Var} [ F _ {n} (x) ] = \frac {1}{n ^ {2}} \sum_ {i = 1} ^ {n} \mathrm{Var} [ I (X _ {i} \leqslant x) ] = \frac {1}{n} F (x) [ 1 - F (x) ]. \\ \end{array}
+$$
+
+因此, 由 Bernoulli 大数定律可得 $F_{n}(x)$ 依概率收敛于 $F(x)$, 即得 (1). 由于
+
+$$
+E [ F _ {n} (x) - F (x) ] ^ {2} = \mathrm{Var} [ F _ {n} (x) ] = \frac {1}{n} F (x) [ 1 - F (x) ] \leqslant \frac {1}{4 n} \longrightarrow 0 (n \rightarrow \infty),
+$$
+
+故得 (2). 根据 Borel (博雷尔) 强大数定律, 可得 (3). 根据 De Moivre-Laplace (棣莫弗-拉普拉斯) 中心极限定理, 可得 (4). □
+
+由定理 6.2.1(1) 可进一步地推出对于任意 x，经验分布函数依分布收敛于分布函数，即  $F_{n}(x) \stackrel{F}{\longrightarrow} F(x)$ ， $\forall x \in R$ 。从定理 6.2.1 可知，对于任意给定的实数 x，经验分布函数  $F_{n}(x)$  依分布、依概率、均方、几乎处处收敛于  $F(x)$ 。因此，当 n 充分大时， $F_{n}(x)$  与  $F(x)$  的值，在概率意义下是非常接近的。同时，根据定理 6.2.1(4) 可以构造大样本性质下的置信区间。对于任意点 x，其分布函数  $F(x)$  的一个可能的近似  $1 - \alpha$  置信区间为  $[L_{n}, U_{n}]$ ，其中
+
+$$
+\begin{array}{l} L _ {n} = \max \left\{0, F _ {n} (x) - u _ {\alpha / 2} \sqrt {\frac {F _ {n} (x) [ 1 - F _ {n} (x) ]}{n}} \right\}, \tag {6.2.2} \\ U _ {n} = \min \left\{1, F _ {n} (x) - u _ {\alpha / 2} \sqrt {\frac {F _ {n} (x) [ 1 - F _ {n} (x) ]}{n}} \right\}, \\ \end{array}
+$$
+
+且 $u_{\alpha /2}$ 为标准正态分布的上 $\alpha /2$ 分位数.这里，渐近标准差中用 $F_{n}(x)$ 代替未知的$F(x)$ ，置信下界与0取大的原因在于经验分布函数不小于0，置信上界与1取小的原因在于经验分布函数不大于1.图6.2.1展示标准正态分布 $N(0,1)$ 的50个随机样本所对
+
+---
+
+6.2 经验分布与替代原理
+
+277
+
+应的经验分布函数及其近似 $95\%$ 置信区间, 其中窄的近似置信区间是用渐近正态性得到的, 宽的是用后面的定理6.2.4得到的. 从中可见, 经验分布函数在已有的数据点上有个跳跃, 其跳跃高度为 $1 / n$. 用渐近正态性得到的近似置信区间在部分 $x$ 处并没有包含真值, 而宽的没有这个问题.
+
+![](../../raw/pages_0289-0304/images/page_289_chart_3.jpg)
+
+<details>
+<summary>line</summary>
+
+| x | 经验分布函数 | 正态分布函数 | 置信下限 | 置信上限 | 置信下限2 | 置信上限2 |
+| --- | --- | --- | --- | --- | --- | --- |
+| -3 | 0 | 0 | — | — | — | — |
+| -2.5 | ~0.01 | ~0.01 | ~0.06 | ~0.21 | ~0.01 | ~0.21 |
+| -2 | ~0.04 | ~0.04 | ~0.13 | ~0.25 | ~0.01 | ~0.25 |
+| -1.5 | ~0.07 | ~0.07 | ~0.13 | ~0.25 | ~0.01 | ~0.25 |
+| -1 | ~0.08 | ~0.13 | ~0.13 | ~0.27 | ~0.01 | ~0.27 |
+| -0.5 | ~0.16 | ~0.23 | ~0.16 | ~0.35 | ~0.01 | ~0.35 |
+| 0 | ~0.45 | ~0.45 | ~0.45 | ~0.65 | ~0.25 | ~0.65 |
+| 0.5 | ~0.72 | ~0.65 | ~0.65 | ~0.92 | ~0.55 | ~0.92 |
+| 1 | ~0.82 | ~0.82 | ~0.82 | 1.0 | ~0.65 | 1.0 |
+| 1.5 | ~0.91 | ~0.91 | ~0.91 | 1.0 | ~0.72 | 1.0 |
+| 2 | ~0.98 | ~0.98 | ~0.98 | 1.0 | ~0.78 | 1.0 |
+| 2.5 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
+| 3 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 | 1.0 |
+</details>
+
+图 6.2.1 标准正态分布的经验分布函数及其置信区间
+
+下一定理进一步给出了经验分布函数和分布函数之间的接近程度的大样本度量.
+
+定理 6.2.2 (Glivenko-Cantelli (格利文科-坎泰利) 定理) 对于任意给定的正整数 n, 设  $X_{1}, X_{2}, \cdots, X_{n}$  为取自总体分布  $F(x)$  的独立同分布样本,  $F_{n}(x)$  为其经验分布函数, 记
+
+$$
+D _ {n} = \sup _ {x} | F _ {n} (x) - F (x) |,
+$$
+
+则有 $P\left(\lim_{n\to \infty}D_n = 0\right) = 1.$
+
+证明 将 x 取值分段. 对任意正整数 r, 取  $x_{r,k}$  为满足下述不等式的最小 x:
+
+$$
+F (x - 0) \leqslant \frac {k}{r} \leqslant F (x) = F (x + 0), k = 1, 2, \dots , r. \tag {6.2.3}
+$$
+
+由定理 6.2.1(3) 的强大数定律可知
+
+$$
+P \left(\lim _ {n \to \infty} F _ {n} \left(x _ {r, k}\right) = F \left(x _ {r, k}\right)\right) = 1.
+$$
+
+类似地, 考虑示性函数并结合定理 6.2.1 的证明思路, 可得
+
+$$
+P \left(\lim _ {n \to \infty} F _ {n} \left(x _ {r, k} - 0\right) = F \left(x _ {r, k} - 0\right)\right) = 1.
+$$
+
+下面构造概率为 1 的事件 A, 使其包含所证的事件. 令
+
+$$
+A _ {k} ^ {r} = \left\{\lim _ {n \to \infty} F _ {n} \left(x _ {r, k}\right) = F \left(x _ {r, k}\right) \right\} = \left\{\lim _ {n \to \infty} | F _ {n} \left(x _ {r, k}\right) - F \left(x _ {r, k}\right) | = 0 \right\},
+$$
+
+---
+
+278
+
+第六章 非参数方法
+
+$$
+\begin{array}{l} B _ {k} ^ {r} = \left\{\lim _ {n \to \infty} F _ {n} \left(x _ {r, k} - 0\right) = F \left(x _ {r, k} - 0\right) \right\} \\ = \left\{\lim _ {n \to \infty} \left| F _ {n} \left(x _ {r, k} - 0\right) - F \left(x _ {r, k} - 0\right) \right| = 0 \right\}, \\ A ^ {r} = \bigcap_ {k = 1} ^ {r} \left(A _ {k} ^ {r} \bigcap B _ {k} ^ {r}\right) \\ = \Big \{\lim _ {n \to \infty} \max _ {1 \leqslant k \leqslant r} \left\{\max \{| F _ {n} (x _ {r, k}) - F (x _ {r, k}) |, | F _ {n} (x _ {r, k} - 0) - F (x _ {r, k} - 0) | \} \right\} = 0 \Big \}, \\ A = \bigcap_ {r = 1} ^ {\infty} A ^ {r}. \\ \end{array}
+$$
+
+由强大数定律, 有 $P(A_k^r) = P(B_k^r) = 1$. 根据和事件概率小于各事件概率之和, 可得
+
+$$
+P (\overline {{A ^ {r}}}) = P \left(\bigcup_ {k = 1} ^ {r} (\overline {{A _ {k} ^ {r}}} \cup \overline {{B _ {k} ^ {r}}})\right) \leqslant \sum_ {k = 1} ^ {r} [ P (\overline {{A _ {k} ^ {r}}}) + P (\overline {{B _ {k} ^ {r}}}) ] = 0,
+$$
+
+其中 $\overline{A^r}$ 表示事件 $A^r$ 的补事件. 从而
+
+$$
+\begin{array}{l} P (\bar {A}) = P \left(\bigcup_ {r = 1} ^ {\infty} \overline {{A ^ {r}}}\right) = P \left(\lim _ {n \to \infty} \bigcup_ {r = 1} ^ {n} \overline {{A ^ {r}}}\right) \\ = \lim _ {n \to \infty} P \left(\bigcup_ {r = 1} ^ {n} \overline {{A ^ {r}}}\right) \leqslant \lim _ {n \to \infty} \sum_ {r = 1} ^ {n} P (\overline {{A ^ {r}}}) = 0, \\ \end{array}
+$$
+
+即得事件 A 的概率为 1. 下面说明 A 包含所证的事件. 根据经验分布函数与总体分布函数的非降性质, 对满足  $x_{r,k} \leqslant x < x_{r,k+1}(k = 1, 2, \cdots, r-1)$  的 x 有如下不等式成立:
+
+$$
+F _ {n} \left(x _ {r, k}\right) \leqslant F _ {n} (x) \leqslant F _ {n} \left(x _ {r, k + 1} - 0\right),
+$$
+
+$$
+F \left(x _ {r, k}\right) \leqslant F (x) \leqslant F \left(x _ {r, k + 1} - 0\right).
+$$
+
+因此, 由 (6.2.3) 式可知, 当  $k = 1, 2, \cdots, r - 1$  时,
+
+$$
+\begin{array}{l} F _ {n} (x) - F (x) \leqslant F _ {n} \left(x _ {r, k + 1} - 0\right) - F \left(x _ {r, k}\right) \\ = F _ {n} \left(x _ {r, k + 1} - 0\right) - F \left(x _ {r, k + 1} - 0\right) + F \left(x _ {r, k + 1} - 0\right) - F \left(x _ {r, k}\right) \\ \leqslant \max _ {k} \left| F _ {n} \left(x _ {r, k} - 0\right) - F \left(x _ {r, k} - 0\right) \right| + \frac {1}{r}. \\ \end{array}
+$$
+
+类似地
+
+$$
+\begin{array}{l} F (x) - F _ {n} (x) \leqslant F \left(x _ {r, k + 1} - 0\right) - F _ {n} \left(x _ {r, k}\right) \\ = F \left(x _ {r, k + 1} - 0\right) - F \left(x _ {r, k}\right) + F \left(x _ {r, k}\right) - F _ {n} \left(x _ {r, k}\right) \\ \leqslant \frac {1}{r} + \max _ {k} \left| F \left(x _ {r, k}\right) - F _ {n} \left(x _ {r, k}\right) \right|. \\ \end{array}
+$$
+
+---
+
+6.2 经验分布与替代原理
+
+279
+
+此外, 当 k=0, r 时也有类似的式子成立, 从而得到
+
+$$
+\begin{array}{l} \sup _ {x \in \mathbb {R}} | F _ {n} (x) - F (x) | \\ \leqslant \max _ {1 \leqslant k \leqslant r} \left\{\max \left\{| F _ {n} \left(x _ {r, k} - 0\right) - F \left(x _ {r, k} - 0\right) |, | F _ {n} \left(x _ {r, k}\right) - F \left(x _ {r, k}\right) | \right\} \right\} + \frac {1}{r}. \\ \end{array}
+$$
+
+由于当事件 A 发生时, 事件  $A^{T}$  发生, 因此
+
+$$
+\begin{array}{l} \lim _ {n \to \infty} \sup _ {x \in \mathbb {R}} | F _ {n} (x) - F (x) | \\ \leqslant \lim _ {n \to \infty} \max _ {1 \leqslant k \leqslant r} \{\max \{| F _ {n} (x _ {r, k} - 0) - F (x _ {r, k} - 0) |, | F _ {n} (x _ {r, k}) - F (x _ {r, k}) | \} \} + \frac {1}{r} \\ = 0 + \frac {1}{r}. \\ \end{array}
+$$
+
+令 $r$ 趋于无穷, 则事件 $\lim_{n\to \infty}\sup_{x\in \mathbb{R}}|F_n(x) - F(x)|$ 发生的概率为0, 因此事件 $A$ 包含所证事件, 定理证毕. □
+
+Glivenko-Cantelli 定理由 Glivenko (1933) 证明了 $F$ 为连续的情况, Cantelli (1933) 证明了 $F$ 为一般的情况. $D_{n}$ 实际上是下一节中讨论的 Kolmogorov-Smirnov (科尔莫戈罗夫-斯米尔诺夫) 检验统计量, 其在非参数检验中有重要应用. 特别地, 当总体分布为均匀分布时, $D_{n}$ 变为星偏差这一种特殊的均匀性度量. 星偏差在高维积分的近似计算以及均匀试验设计等方面都有重要应用, 详细讨论参见 Fang et al. (2018).
+
+此外, Kolmogorov (1933) 给出了 $D_{n}$ 在一维且连续时的极限分布; Dvoretzky et al. (1956) 给出 $D_{n}$ 的取值范围, Massart (1990) 进一步地明确了 $D_{n}$ 的取值范围. 下面不加证明地给出他们的结论.
+
+定理 6.2.3 (Kolmogorov) 当 F 为一维且连续时, 有
+
+$$
+\lim _ {n \to \infty} P (\sqrt {n} D _ {n} \leqslant d) = 1 - 2 \sum_ {j = 1} ^ {\infty} (- 1) ^ {j + 1} \exp \{- 2 j ^ {2} d ^ {2} \}, \forall d > 0.
+$$
+
+定理 6.2.4 (Dvoretzky, Kiefer, Wolfowitz) 对于独立同分布样本  $X_{1}, X_{2}, \cdots, X_{n}$ ，存在一个不依赖于分布函数 F 的正常数 C，使得
+
+$$
+P (D _ {n} > d) \leqslant C \mathrm{e} ^ {- 2 n d ^ {2}}, \forall d > 0.
+$$
+
+进一步地, Massart 证明了
+
+$$
+P (D _ {n} > d) \leqslant 2 \mathrm{e} ^ {- 2 n d ^ {2}}, \forall d > 0.
+$$
+
+定理 6.2.4 给出的结论并不是极限性质, 而是直接对  $D_{n}$  的取值进行讨论, 这个不等式形式简单, 并给出经验分布函数关于 x 一致的概率上界, 且其是指数衰减的. 由定
+
+---
+
+280
+
+第六章 非参数方法
+
+理 6.2.4, 可构造  $F(x)$  的另一种置信区间. 只需令  $\alpha = 2e^{-2nd^{2}}$ , 反解出
+
+$$
+d = \sqrt {\frac {\ln \left(\frac {2}{\alpha}\right)}{2 n}}.
+$$
+
+因此, 对于任意 $x, F(x)$ 的一个近似 $1 - \alpha$ 置信区间为
+
+$$
+\left[ \max \left\{0, F _ {n} (x) - \sqrt {\frac {\ln \left(\frac {2}{\alpha}\right)}{2 n}} \right\}, \min \left\{1, F _ {n} (x) + \sqrt {\frac {\ln \left(\frac {2}{\alpha}\right)}{2 n}} \right\} \right]. \tag {6.2.4}
+$$
+
+根据 $D_{n}$ 的定义, $F(x)$ 落入上面置信区间的概率不小于 $1 - \alpha$. 而 (6.2.2) 式给出的近似置信区间并不能保证 $F(x)$ 落入的概率不小于 $1 - \alpha$. 因此, (6.2.4) 式给出的置信区间往往比 (6.2.2) 式给出的要宽, 也更合理.
+
+## 6.2.2 替代原理
+
+参数统计中, 常需要估计与总体分布 $F$ 有关的参数, 例如均值、方差、中位数等. 这些参数是从总体分布函数 $F$ 出发而得到的, 也可以看成定义在某分布函数空间取值为实数的泛函 $T(F)$, 称 $F$ 为函数参数 (functional parameter), 其为某个随机变量的分布函数. 所谓的泛函, 简单地说, 就是以函数为自变量的函数.
+
+例 6.2.1 对于分布函数为 F 的随机变量,
+
+均值: $\mu = T(F) = \int_{-\infty}^{\infty} x \mathrm{d}F(x)$,
+
+方差: $\sigma^2 = T(F) = \int_{-\infty}^{\infty} x^2 \mathrm{d}F(x) - \left[\int_{-\infty}^{\infty} x \mathrm{d}F(x)\right]^2$,
+
+中位数:  $\mathrm{med}(F)=T(F)=F^{-1}(0.5)=\inf\{x:F(x)\geqslant1/2\}$ ,
+
+密度: $f(x) = T(F) = F'(x)$,
+
+其中 $\inf \{x:F(x)\geqslant 1 / 2\}$ 表示满足条件 $F(x)\geqslant 1 / 2$ 的最小的 $x$ ，在均值、方差和中位数的定义中， $F(x)$ 可以是任意类型的随机变量的分布函数.当随机变量为连续型时，存在密度函数 $f(x)$ ，则 $\mathrm{d}F(x) = f(x)\mathrm{d}x$ ，相应的均值 $\mu = E(X) = \int_{-\infty}^{\infty}xf(x)\mathrm{d}x$ ，方差 $\sigma^2 = E(X^2) - [E(X)]^2 = \int_{-\infty}^{\infty}x^2 f(x)\mathrm{d}x - \left[\int_{-\infty}^{\infty}xf(x)\mathrm{d}x\right]^2$ 当随机变量为离散型时，其相应的分布函数即退化为(6.2.1）式的经验分布函数，则对于离散总体的样本
+
+---
+
+6.2 经验分布与替代原理
+
+281
+
+$$
+x _ {1}, x _ {2}, \dots , x _ {n},
+$$
+
+$$
+\int_ {- \infty} ^ {\infty} x \mathrm{d} F (x) = \frac {1}{n} \sum_ {i = 1} ^ {n} x _ {i}, \quad \int_ {- \infty} ^ {\infty} x ^ {2} \mathrm{d} F (x) = \frac {1}{n} \sum_ {i = 1} ^ {n} x _ {i} ^ {2},
+$$
+
+因为微分 $\mathrm{d}F(x)$ 只有在 $x_{i}$ 处才有取值 $\frac{1}{n}$, 其余的地方都为0.
+
+设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自分布函数为  $F(x)$  的总体的独立同分布样本, F 或者完全未知或者依赖于某些有限参数. 现在考虑参数  $\theta = T(F)$  的估计问题. 由于  $T(F)$  为 F 的泛函, 因此启示  $\theta$  的估计可以分两步: 先找到 F 的一个好的估计  $\hat{F}$ , 然后用  $\hat{\theta} = T(\hat{F})$  来估计  $\theta = T(F)$ . 这种用  $\hat{F}$  代替 F 得到  $\theta$  的估计方法称为替代原理. 替代原理有两个基本问题:
+
+(1) 怎样估计 F?
+(2) 替代原理能否得到好的估计  $\hat{\theta}$ ?
+
+根据前一小节的讨论可知, 经验分布函数  $F_{n}(x)$  是总体分布函数 F 一个较好的估计. 由于  $F_{n}(x)$  是一个阶梯函数, 有时  $F_{n}(x)$  并不适合来估计 F, 例如对于密度函数  $f(x)$  的估计, 不能由  $F_{n}(x)$  求导而得到. 对于密度函数, 可用 6.1 节的核密度估计方法来估计. 不过对于很多情形, 用  $F_{n}(x)$  来估计 F 后, 可以得到  $\theta$  较好的估计  $\hat{\theta}$ .
+
+例 6.2.2 设总体 X 的分布为  $F(x)$ ,  $X_{1}, X_{2}, \cdots, X_{n}$  是其独立同分布样本. 待估参数  $\theta = T(F) = E[h(X)] = \int_{-\infty}^{\infty} h(x) \mathrm{d}F(x)$ . 用经验分布函数  $F_{n}(x)$  代替 F 后, 可得
+
+$$
+\hat {\theta} = T (F _ {n}) = \int_ {- \infty} ^ {\infty} h (x) \mathrm{d} F _ {n} (x) = \frac {1}{n} \sum_ {i = 1} ^ {n} h (X _ {i}),
+$$
+
+即用  $h(X_{1}), h(X_{2}), \cdots, h(X_{n})$  的样本均值来估计  $E[h(X)]$ . 这里  $h(x)$  可取  $x^{k}, k \geqslant 1$ ，或其他函数. 通过替代原理，可得总体 k 阶矩  $E(X^{k})$  的估计为样本 k 阶原点矩  $a_{k} = \frac{1}{n} \sum_{i=1}^{n} X_{i}^{k}, k \geqslant 1$ .
+
+此外, 对于方差  $\sigma^{2}=T(F)$ , 应用替代原理可得其估计为
+
+$$
+\hat {\theta} = T (F _ {n}) = \frac {1}{n} \sum_ {i = 1} ^ {n} X _ {i} ^ {2} - \left(\frac {1}{n} \sum_ {i = 1} ^ {n} X _ {i}\right) ^ {2} = \frac {1}{n} \sum_ {i = 1} ^ {n} (X _ {i} - \bar {X}) ^ {2},
+$$
+
+其中  $\bar{X}=\frac{1}{n}\sum_{i=1}^{n}X_{i}$  为样本均值.
+
+例6.2.3 替代原理也可以应用于参数 $\theta = T(F)$ 不是显式形式的情形. 设 $X \sim F$, $\theta$ 满足 $\int_{-\infty}^{\infty} g(x; \theta) \mathrm{d}F(x) = 0$, 即 $E[g(X; \theta)] = 0$. 则由替代原理, 估计 $\hat{\theta} = T(F_n)$ 满足
+
+$$
+\int_ {- \infty} ^ {\infty} g \left(x; T \left(F _ {n}\right)\right) \mathrm{d} F _ {n} (x) = \frac {1}{n} \sum_ {i = 1} ^ {n} g (X _ {i}; \hat {\theta}) = 0.
+$$
+
+---
+
+282
+
+第六章 非参数方法
+
+由上式求得  $\hat{\theta}$  即可.
+
+进一步地, 可以利用替代原理去估计参数统计模型中的未知参数. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为总体  $X \sim F_{\theta}(x)$  的独立同分布样本, 其中  $\theta = (\theta_{1}, \theta_{2}, \cdots, \theta_{p})^{\mathrm{T}}$  为 p 个总体参数. 为用替代原理, 找关于 F 且依赖  $\theta$  的 p 个泛函  $\eta_{1}(F), \eta_{2}(F), \cdots, \eta_{p}(F)$ , 即  $\eta_{k}(F) = g_{k}(\theta), k = 1, 2, \cdots, p$ , 其中  $g_{1}, g_{2}, \cdots, g_{p}$  为已知函数. 这样给定  $\eta_{1}(F), \eta_{2}(F), \cdots, \eta_{p}(F)$ , 由 p 个方程可求解出  $\theta$ . 利用替代原理, 先找 F 的估计  $F_{n}$ , 定义  $\theta$  的估计为  $\hat{\theta}$  满足
+
+$$
+\eta_ {k} (F _ {n}) = g _ {k} (\hat {\theta}), \quad k = 1, 2, \dots , p.
+$$
+
+对于给定的  $\eta_{k}(F)$ ，相应的  $\eta_{k}(F_{n})$  的形式往往已知， $k=1,2,\cdots,p$ 。由此，可根据这 p 个方程解得  $\theta$  的估计  $\hat{\theta}$ 。选取  $\eta_{k}(F)$  的一个通常做法是取
+
+$$
+\eta_ {k} (F) = \int_ {- \infty} ^ {\infty} x ^ {k} \mathrm{d} F _ {\theta} (x) = E (X ^ {k}), k = 1, 2, \dots , p.
+$$
+
+此时, 根据替代原理可知, $\theta$ 的估计 $\hat{\theta}$ 满足
+
+$$
+\frac {1}{n} \sum_ {i = 1} ^ {n} X _ {i} ^ {k} = g _ {k} (\hat {\theta}), \quad k = 1, 2, \dots , p.
+$$
+
+从而可得估计  $\hat{\theta}$ . 上述估计总体参数  $\theta$  的做法即为矩估计方法. 因此, 矩估计可以认为是替代原理的一种应用.
+
+## 6.3 拟合优度检验
+
+在参数统计中，往往假设样本服从特定的概率分布，如正态分布、对数正态分布、Poisson分布或其他分布，并基于分布假设导出许多统计检验和方法。例如，$t$ 检验和方差分析假设样本来自正态总体。然而，首先需要检验来自某个特定分布的假设是否成立，即检验样本分布是否与假设分布一致。所谓的拟合优度检验(goodness of fit test)是确定样本数据与分布之间的差异是否具有统计学意义。下面分别介绍对于离散数据和连续数据的拟合优度检验方法。
+
+## 6.3.1 分类数据的  $\chi^{2}$  拟合优度检验
+
+对于分类数据或离散总体的情形, K. Pearson 提出了  $\chi^{2}$  拟合优度检验方法, 其为现代统计学的奠基性工作之一. 先看一个在生物中很有名的例子.
+
+---
+
+6.3 拟合优度检验
+
+283
+
+例 6.3.1 在 19 世纪, Mendel 按颜色与形状把豌豆分为四类: 黄圆、青圆、黄皱和青皱. 在 Mendel 观测的 556 颗豌豆中, 这四类豌豆的颗数分别为 315, 108, 101, 32. 于是, Mendel 判断这四类的比例为 9:3:3:1. 请问这个比例符合遗传规律吗?
+
+上一例子是关于分类数据的检验问题. 更一般地, 根据某项指标, 总体被分成 r 类:  $A_{1}, A_{2}, \cdots, A_{r}$ . 此时, 考虑下面关于各类所占比例的假设:
+
+$$
+H _ {0}: \text {第} i \text {类} A _ {i} \text {所占的比例为} p _ {i}, i = 1, 2, \dots , r, \tag {6.3.1}
+$$
+
+其中  $\sum_{i=1}^{r}p_{i}=1$ . 记  $X_{1},X_{2},\cdots,X_{n}$  为从此总体抽出的 n 个独立同分布样本, 且以  $n_{i}$  记这 n 个样本中属于  $A_{i}$  的样本个数. 由于当  $H_{0}$  成立时, 在 n 个样本中属于  $A_{i}$  类的 “理论频次” 或 “期望频次” 为  $np_{i}$ , 而我们实际观测到的值为  $n_{i}$ , 因此当  $H_{0}$  成立时,  $n_{i}$  与  $np_{i}$  应相差不大. 于是, K. Pearson 提出用统计量
+
+$$
+\chi^ {2} = \sum_ {i = 1} ^ {r} \frac {(n _ {i} - n p _ {i}) ^ {2}}{n p _ {i}} \tag {6.3.2}
+$$
+
+来衡量“理论频次”与实际观测频次之间的差别. 式中除以分母  $np_{i}$  是为了标准化, 因为不同的类别所占比例不同. 可以把  $\chi^{2}$  拟合优度检验统计量概括如下:
+
+$$
+\chi^ {2} = \sum_ {i = 1} ^ {r} \frac {(O _ {i} - E _ {i}) ^ {2}}{E _ {i}},
+$$
+
+其中  $O_{i}, E_{i}$  分别表示观测值和期望值. 对于  $\chi^{2}$  统计量 (6.3.2), 观测频次和理论频次差异越小, 则统计量值越小, 越应接受假设的分布; 观测频次和理论频次差异越大, 则统计量值越大, 越应拒绝假设的分布. 因此, 该检验统计量的拒绝域为  $\{\chi^{2} \geqslant c\}$ .
+
+对于  $\chi^{2}$  统计量 (6.3.2) 的一种自然推广是采用检验统计量  $\sum_{i=1}^{r} c_{ni}(n_{i}-np_{i})^{2}$ . 但只有取  $c_{ni}=1/np_{i}$  时, 上述检验统计量的极限分布总存在且形式最简单 (陈希孺 (2009)).
+
+为了控制上述检验的第一类错误, 必须知道此检验统计量的零分布, 为此, K. Pearson 证明了如下定理.
+
+定理 6.3.1 当  $H_{0}$  成立且  $p_{i}$  均已知时, 有
+
+$$
+\chi^ {2} \xrightarrow {\mathrm{d}} \chi^ {2} (r - 1).
+$$
+
+证明 当  $H_{0}$  成立时, 由于  $(n_{1}, n_{2}, \cdots, n_{r})$  服从如下的多项分布:
+
+$$
+\frac {n !}{n _ {1} ! n _ {2} ! \cdots n _ {r} !} p _ {1} ^ {n _ {1}} p _ {2} ^ {n _ {2}} \dots p _ {r} ^ {n _ {r}},
+$$
+
+于是, 当 r = 2 时,  $n_{1} \sim B(n, p_{1})$ , 且
+
+$$
+\chi^ {2} = \frac {(n _ {1} - n p _ {1}) ^ {2}}{n p _ {1}} + \frac {(n _ {2} - n p _ {2}) ^ {2}}{n p _ {2}} = \frac {(n _ {1} - n p _ {1}) ^ {2}}{n p _ {1} p _ {2}}.
+$$
+
+---
+
+284
+
+第六章 非参数方法
+
+而由中心极限定理可知，
+
+$$
+\frac {n _ {1} - n p _ {1}}{\sqrt {n p _ {1} p _ {2}}} \xrightarrow {\mathrm{d}} N (0, 1),
+$$
+
+故 $\chi^2\stackrel {\mathrm{d}}{\to}\chi^2 (1)$ ，即定理结论成立.下证 $r > 2$ 的情形
+
+当 $r > 2$ 时，令
+
+$$
+Y _ {i} = \frac {n _ {i} - n p _ {i}}{\sqrt {n p _ {i}}}, i = 1, 2, \dots , r,
+$$
+
+于是 $\chi^2 = \sum_{i=1}^{r} Y_i^2$. 因为 $\sum n_i = n, \sum p_i = 1$, 故 $\sum_{i=1}^{r} \sqrt{p_i} Y_i = 0$, 即不同的 $Y_i$ 之间并不独立.
+
+因为 $(n_{1},n_{2},\cdots,n_{r})$ 的特征函数为
+
+$$
+\begin{array}{l} \psi (t _ {1}, t _ {2}, \dots , t _ {r}) = E (\exp \{\mathrm{i} t _ {1} n _ {1} + \mathrm{i} t _ {2} n _ {2} + \dots + \mathrm{i} t _ {r} n _ {r} \}) \\ = \sum_ {n _ {1} + n _ {2} + \dots + n _ {r} = n} \frac {n !}{n _ {1} ! n _ {2} ! \cdots n _ {r} !} \left(p _ {1} \mathrm{e} ^ {\mathrm{i} t _ {1}}\right) ^ {n _ {1}} \left(p _ {2} \mathrm{e} ^ {\mathrm{i} t _ {2}}\right) ^ {n _ {2}} \dots \left(p _ {r} \mathrm{e} ^ {\mathrm{i} t _ {r}}\right) ^ {n _ {r}} \\ = \left(\sum_ {k = 1} ^ {r} p _ {k} \mathrm{e} ^ {\mathrm{i} t _ {k}}\right) ^ {n}, \\ \end{array}
+$$
+
+所以, $(Y_{1},Y_{2},\cdots,Y_{r})$ 的特征函数为
+
+$$
+\begin{array}{l} \psi_ {y} (t _ {1}, t _ {2}, \dots , t _ {r}) = E (\exp \{\mathrm{i} t _ {1} Y _ {1} + \mathrm{i} t _ {2} Y _ {2} + \dots + \mathrm{i} t _ {r} Y _ {r} \}) \\ = E \left(\exp \left\{\mathrm{i} \sum_ {k = 1} ^ {r} \frac {t _ {k} (n _ {k} - n p _ {k})}{\sqrt {n p _ {k}}} \right\}\right) \\ = \exp \left\{- \mathrm{i} \sum_ {k = 1} ^ {r} t _ {k} \sqrt {n p _ {k}} \right\} \left(\sum_ {k = 1} ^ {r} p _ {k} \exp \left\{\frac {\mathrm{i} t _ {k}}{\sqrt {n p _ {k}}} \right\}\right) ^ {n}, \\ \end{array}
+$$
+
+两边取对数后得到
+
+$$
+\ln [ \psi_ {y} (t _ {1}, t _ {2}, \dots , t _ {r}) ] = - \mathrm{i} \sum_ {k = 1} ^ {r} t _ {k} \sqrt {n p _ {k}} + n \ln \left(\sum_ {k = 1} ^ {r} p _ {k} \exp \left\{\frac {\mathrm{i} t _ {k}}{\sqrt {n p _ {k}}} \right\}\right).
+$$
+
+由 Taylor 展开知, $\mathrm{e}^{x} = 1 + x + \frac{x^{2}}{2} + o(x^{2})$, $\ln(1 + x) = x - \frac{x^{2}}{2} + o(x^{2})$, 故对于充分大的 $n$, 有
+
+$$
+\exp \left\{\frac {\mathrm{i} t _ {k}}{\sqrt {n p _ {k}}} \right\} = 1 + \frac {\mathrm{i} t _ {k}}{\sqrt {n p _ {k}}} - \frac {t _ {k} ^ {2}}{2 n p _ {k}} + o (n ^ {- 1}),
+$$
+
+$$
+\sum_ {k = 1} ^ {r} p _ {k} \exp \left\{\frac {\mathrm{i} t _ {k}}{\sqrt {n p _ {k}}} \right\} = 1 + \mathrm{i} \sum_ {k = 1} ^ {r} \frac {t _ {k} \sqrt {p _ {k}}}{\sqrt {n}} - \frac {1}{2 n} \sum_ {k = 1} ^ {r} t _ {k} ^ {2} + o (n ^ {- 1}),
+$$
+
+$$
+\ln \left(\sum_ {k = 1} ^ {r} p _ {k} \exp \left\{\frac {\mathrm{i} t _ {k}}{\sqrt {n p _ {k}}} \right\}\right) = \mathrm{i} \sum_ {k = 1} ^ {r} \frac {t _ {k} \sqrt {p _ {k}}}{\sqrt {n}} - \frac {1}{2 n} \sum_ {k = 1} ^ {r} t _ {k} ^ {2} - \frac {1}{2} \left(\mathrm{i} \sum_ {k = 1} ^ {r} \frac {t _ {k} \sqrt {p _ {k}}}{\sqrt {n}}\right) ^ {2} + o (n ^ {- 1}),
+$$
+
+---
+
+6.3 拟合优度检验
+
+285
+
+于是
+
+$$
+\ln [ \psi_ {y} (t _ {1}, t _ {2}, \dots , t _ {r}) ] = - \frac {1}{2} \left[ \sum_ {k = 1} ^ {r} t _ {k} ^ {2} - \left(\sum_ {k = 1} ^ {r} t _ {k} \sqrt {p _ {k}}\right) ^ {2} \right] + o (1).
+$$
+
+作如下的正交变换:
+
+$$
+\left\{ \begin{array}{l} Z _ {k} = \sum_ {j = 1} ^ {r} a _ {k j} Y _ {j}, k = 1, 2, \dots , r - 1, \\ Z _ {r} = \sum_ {j = 1} ^ {r} \sqrt {p _ {j}} Y _ {j}. \end{array} \right.
+$$
+
+若再令
+
+$$
+\left\{ \begin{array}{l} u _ {k} = \sum_ {j = 1} ^ {r} a _ {k j} t _ {j}, k = 1, 2, \dots , r - 1, \\ u _ {r} = \sum_ {j = 1} ^ {r} \sqrt {p _ {j}} t _ {j}, \end{array} \right.
+$$
+
+则
+
+$$
+\sum_ {j = 1} ^ {r} t _ {j} ^ {2} - \left(\sum_ {j = 1} ^ {r} t _ {j} \sqrt {p _ {j}}\right) ^ {2} = \sum_ {k = 1} ^ {r - 1} u _ {k} ^ {2},
+$$
+
+于是, 当  $n \to \infty$  时,  $(Z_{1}, Z_{2}, \cdots, Z_{r})$  的特征函数为
+
+$$
+\lim _ {n \to \infty} \psi_ {z} (u _ {1}, u _ {2}, \dots , u _ {r}) = \exp \left\{- \frac {1}{2} \sum_ {k = 1} ^ {r - 1} u _ {k} ^ {2} \right\},
+$$
+
+这是 r-1 个独立的标准正态随机向量的特征函数. 由此可以看出,  $Z_{1}, Z_{2}, \cdots, Z_{r-1}$  是 r-1 个独立的标准正态随机变量,  $Z_{r}$  依概率收敛于 0. 于是可得
+
+$$
+\chi^ {2} = \sum_ {k = 1} ^ {r} Y _ {k} ^ {2} = \sum_ {k = 1} ^ {r} Z _ {k} ^ {2} \xrightarrow {\mathrm{d}} \chi^ {2} (r - 1).
+$$
+
+于是, 对于假设 (6.3.1), 可以根据其极限分布采取如下的水平近似为  $\alpha$  的显著性检验, 即其拒绝域为
+
+$$
+\mathcal {W} = \{\chi^ {2} \geqslant \chi_ {\alpha} ^ {2} (r - 1) \}.
+$$
+
+这就是 K. Pearson 最早提出的一个检验方法, 称之为 Pearson  $\chi^{2}$  拟合优度检验.
+
+例 6.3.2 (例 6.3.1 续) 针对给出的数据, 可以做如下的  $\chi^{2}$  拟合优度检验. 注意到, 此时
+
+$$
+n = 5 5 6, \quad n _ {1} = 3 1 5, \quad n _ {2} = 1 0 8, \quad n _ {3} = 1 0 1, \quad n _ {4} = 3 2,
+$$
+
+待检验的假设为
+
+$$
+H _ {0}: p _ {1} = \frac {9}{1 6}, \quad p _ {2} = \frac {3}{1 6}, \quad p _ {3} = \frac {3}{1 6}, \quad p _ {4} = \frac {1}{1 6}.
+$$
+
+---
+
+286
+
+第六章 非参数方法
+
+由于
+
+$$
+\chi^ {2} = 0. 4 7 <   7. 8 1 = \chi_ {0. 0 5} ^ {2} (4 - 1),
+$$
+
+故在水平 0.05 下, 没有理由拒绝  $H_{0}$ , 即可以认为 Mendel 的结论是可接受的.
+
+Pearson $\chi^2$ 拟合优度检验提供了一种对于分类总体的概率分布的检验方法. 该方法可以应用于检验下面一般的分布假设:
+
+$$
+H _ {0}: F (x) = F _ {0} (x), \quad H _ {1}: F (x) \neq F _ {0} (x), \tag {6.3.3}
+$$
+
+其中  $F_{0}(x)$  为一个形式及参数均已知的分布函数.  $F_{0}(x)$  可以是连续型分布或离散型分布. 此时, 可以把  $(-\infty, \infty)$  (或样本空间) 分成 r 个互不相交的区间:
+
+$$
+(- \infty , \infty) = \bigcup_ {i = 1} ^ {r} I _ {i} = (- \infty , a _ {1}) \cup [ a _ {1}, a _ {2}) \cup \dots \cup [ a _ {r - 1}, \infty),
+$$
+
+且记 $n_i$ 为落在第 $i$ 个区间 $I_{i}$ 内的样本个数，再记
+
+$$
+\begin{array}{l} p _ {1} = F (a _ {1}), \quad p _ {1 0} = F _ {0} (a _ {1}), \\ p _ {2} = F (a _ {2}) - F (a _ {1}), \quad p _ {2 0} = F _ {0} (a _ {2}) - F _ {0} (a _ {1}), \\ \cdots , \\ \end{array}
+$$
+
+$$
+p _ {r} = 1 - F (a _ {r - 1}), \quad p _ {r 0} = 1 - F _ {0} (a _ {r - 1}),
+$$
+
+则可以利用统计量
+
+$$
+\chi^ {2} = \sum_ {i = 1} ^ {r} \frac {(n _ {i} - n p _ {i 0}) ^ {2}}{n p _ {i 0}}
+$$
+
+及定理 6.3.1 的结论来检验假设 (6.3.3).
+
+![](../../raw/pages_0289-0304/images/page_298_image_15.jpg)
+
+注6.3.1 拟合优度检验的分组不能过多或者过少. 在一般情形下, 分点的选取应保证落在每个区间内的样本点个数不小于5, 且总的样本量不应小于30.
+
+![](../../raw/pages_0289-0304/images/page_298_image_17.jpg)
+
+注6.3.2 通过上面分析, 可以看到, 当 $F_{0}$ 中含有未知参数时, 上述 $\chi^{2}$ 拟合优度检验无法实施.
+
+虽然上述的  $\chi^{2}$  拟合优度检验可以用来检验一般的分布假设 (6.3.3)，但通过上面的分析不难看出，此时检验的假设仅为
+
+$$
+H _ {0}: p _ {i} = p _ {i 0}, i = 1, 2, \dots , r
+$$
+
+而不是真正想检验的假设 (6.3.3). 上面的假设问题与假设 (6.3.3) 有着一定的区别. 如果分点选得不是很好, $\chi^2$ 拟合优度检验可能会把两个有一定差别的分布检验为没有区别. 例如, 图 6.3.1 给出了两个累积分布函数, 可选取合适的分点, 使得这两个不同的分
+
+---
+
+6.3 拟合优度检验
+
+287
+
+布在每个区间的概率值是相同的, 从而 Pearson $\chi^2$ 拟合优度检验统计量无法区分这两个分布.
+
+![](../../raw/pages_0289-0304/images/page_299_chart_3.jpg)
+
+<details>
+<summary>line</summary>
+
+| x | F(x) (Step Function) | F(x) (Dashed Curve) |
+| --- | --- | --- |
+| -3 | 0.01 | ~0.01 |
+| -2 | 0.01 | ~0.05 |
+| -1.7 | 0.01 | ~0.08 |
+| -1.5 | 0.2 | ~0.12 |
+| -0.5 | 0.2 | ~0.35 |
+| -0.2 | 0.5 | ~0.45 |
+| 0.2 | 0.5 | ~0.6 |
+| 0.5 | 0.75 | ~0.75 |
+| 1.1 | 0.75 | ~0.9 |
+| 1.4 | 1.0 | ~0.95 |
+| 3 | 1.0 | 1.0 |
+</details>
+
+图 6.3.1 针对连续情形的  $\chi^{2}$  拟合优度检验
+
+例 6.3.3 从标准正态分布  $N(0,1)$  中产生 30 个随机样本如下:
+
+| 0.276, | 0.459, | -0.218, | 0.796, | -1.518, | -1.075, | -3.072, | 0.521, | -0.991, | -0.253 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1.009, | 0.051, | -0.440, | -0.849, | -0.241, | 0.603, | -1.516, | -0.068, | 0.782, | -1.421 |
+| 0.669, | 0.683, | -0.882, | -1.505, | 0.433, | 0.808, | 0.579, | 0.763, | -1.182, | 0.584 |
+
+若将 $-1, -0.5, 0, 0.5, 1$ 作为分点，把 $(-\infty, \infty)$ 分为6部分，则相应的 $p_i$ 分别为0.159, 0.150, 0.191, 0.191, 0.150, 0.159. 得到 $\chi^2$ 拟合优度检验统计量(6.3.2)的取值为11.8842，其大于检验临界值 $\chi_{0.05}^2 (6 - 1) = 11.07$ ，则要拒绝原假设，即认为这批数据不来自标准正态分布.因此，犯了第一类错误.这批数据落入这6个区间的个数分别为7,3,5,4,10,1，这与注6.3.1的第一个要求不符合.出现错误的主要原因是这批数据的分布不太符合标准正态分布.若产生另外30个标准正态分布的随机样本，则很有可能接受原假设.
+
+## 6.3.2 带有未知参数的  $\chi^{2}$  拟合优度检验
+
+在许多实际问题中, 感兴趣的假设可能为
+
+$$
+H _ {0}: F (x) = F _ {0} (x; \theta_ {1}, \theta_ {2}, \dots , \theta_ {k}),
+$$
+
+其中  $F_{0}(x;\theta_{1},\theta_{2},\cdots,\theta_{k})$  是依赖于 k 个未知参数的形式已知的分布，如一般的正态分布、二项分布、Poisson 分布等。此时，无法计算 (6.3.2) 式的  $\chi^{2}$  统计量。K. Pearson 在其 1900 年的论文中注意到了这个问题，并建议用样本估计未知参数后，再得到  $\hat{p}_{i0}$  的值，之后可利用下面的统计量:
+
+$$
+\chi^ {2} = \sum_ {i = 1} ^ {r} \frac {(n _ {i} - n \hat {p} _ {i 0}) ^ {2}}{n \hat {p} _ {i 0}}
+$$
+
+---
+
+288
+
+第六章 非参数方法
+
+作为检验统计量, 且当 $H_0$ 成立及 $n \to \infty$ 时, 仍然成立 $\chi^2 \xrightarrow{\mathrm{d}} \chi^2 (r - 1)$.
+
+但是, Fisher 在 20 世纪 20 年代发现了上述结论是错误的. Fisher 指出, 当  $H_{0}$  成立时, 估计参数后的  $\chi^{2}$  统计量在一定条件下有如下的极限零分布:
+
+$$
+\chi^ {2} = \sum_ {i = 1} ^ {r} \frac {(n _ {i} - n \hat {p} _ {i 0}) ^ {2}}{n \hat {p} _ {i 0}} \xrightarrow {\mathrm{d}} \chi^ {2} (r - 1 - k), \tag {6.3.4}
+$$
+
+Fisher 还指出, 并不是所有的参数估计都能满足 (6.3.4) 式的要求, 比如一般情况下的矩估计等, 而 MLE 是近似可行的 (请参见陈希孺 (1997)). 故对于此类问题, 将采用 MLE 先估计未知参数, 之后再利用 (6.3.4) 式的结论进行检验.
+
+例 6.3.4 现在某地区随机地抽取 1 000 人, 检查其性别与色盲的数据如下左表所示. 按照遗传学规律, 这些数据具有右表的规律 (其中  $p + q = 1$ ).
+
+性别与色盲的数据
+
+|  | 男 | 女 |
+| --- | --- | --- |
+| 正常 | 442 | 514 |
+| 色盲 | 38 | 6 |
+
+性别与色盲模型
+
+|  | 男 | 女 |
+| --- | --- | --- |
+| 正常 | $p/2$ | $p^{2}/2 + pq$ |
+| 色盲 | $q/2$ | $q^{2}/2$ |
+
+请问这些数据符合遗传学规律吗？ $(\alpha = 0.05)$
+
+解 对于本问题, 所需检验的假设为
+
+$$
+H _ {0}: p _ {1} = \frac {p}{2}, \quad p _ {2} = \frac {p ^ {2}}{2} + p q = \frac {p (2 - p)}{2}, \quad p _ {3} = \frac {1 - p}{2}, \quad p _ {4} = \frac {(1 - p) ^ {2}}{2},
+$$
+
+其中参数 $p$ 是未知的, 故需要估计. 由于当 $H_0$ 成立时, 数据 (442,514,38,6) 服从一个多项分布, 故其似然函数为
+
+$$
+\begin{array}{l} L (p) \propto \left(\frac {p}{2}\right) ^ {4 4 2} \left[ \frac {p (2 - p)}{2} \right] ^ {5 1 4} \left(\frac {1 - p}{2}\right) ^ {3 8} \left[ \frac {(1 - p) ^ {2}}{2} \right] ^ {6} \\ = p ^ {9 5 6} (2 - p) ^ {5 1 4} (1 - p) ^ {5 0} / 2 ^ {1 0 0 0}. \\ \end{array}
+$$
+
+于是, 由 $\partial L(p) / \partial p = 0$ 可求得 $p$ 的MLE为 $\hat{p} = 0.91$. 由此可算得 $\chi^2$ 的值为
+
+$$
+\chi^ {2} = \sum_ {i = 1} ^ {4} \frac {(n _ {i} - n \hat {p} _ {i}) ^ {2}}{n \hat {p} _ {i}} = 3. 0 5 6 <   5. 9 9 = \chi_ {0. 0 5} ^ {2} (4 - 1 - 1),
+$$
+
+因此, 在水平 0.05 下, 没有理由拒绝  $H_{0}$ , 即认为此地区的数据符合遗传学规律.
+
+例 6.3.5 某工厂生产一种滚珠, 现随机地抽取了 50 件产品, 测得其直径为 (单位: mm)
+
+15.0, 15.8, 15.2, 15.1, 15.9, 14.7, 14.8, 15.5, 15.6, 15.3, 15.1, 15.3, 15.0, 15.6,
+
+15.7, 15.8, 14.5, 14.9, 14.9, 15.2, 15.0, 15.3, 15.6, 15.1, 14.9, 14.2, 14.6, 15.8,
+
+---
+
+6.3 拟合优度检验
+
+289
+
+15.2, 15.9, 15.2, 15.0, 14.9, 14.8, 15.1, 15.5, 15.5, 15.1, 15.1, 15.0, 15.3, 14.7,
+
+14.5, 15.5, 15.0, 14.7, 14.6, 14.2, 14.2, 14.5
+
+问:滚珠直径是否服从正态分布？ $(\alpha = 0.05)$
+
+解 设滚珠直径为 X, 其分布函数为  $F(x)$ , 现感兴趣的假设为
+
+$$
+H _ {0}: F (x) \in \left\{\varPhi \left(\frac {x - \mu}{\sigma}\right): \mu \in \mathbb {R}, \sigma > 0 \right\}.
+$$
+
+对于此问题, 首先由数据求得  $\mu, \sigma^{2}$  的 MLE 为  $\hat{\mu} = 15.1, \hat{\sigma}^{2} = 0.4325^{2}$ . 另外, 由于 50 个数据的最小值为 14.2, 最大值为 15.9, 故取分点为
+
+$$
+a _ {0} = 1 4. 0 5, a _ {1} = 1 4. 3 5, a _ {2} = 1 4. 6 5, a _ {3} = 1 4. 9 5,
+$$
+
+$$
+a _ {4} = 1 5. 2 5, a _ {5} = 1 5. 5 5, a _ {6} = 1 5. 8 5, a _ {7} = 1 6. 1 5.
+$$
+
+由此, 可利用公式
+
+$$
+\hat {p} _ {i} = \varPhi \left(\frac {a _ {i} - 1 5 . 1}{0 . 4 3 2 5}\right) - \varPhi \left(\frac {a _ {i - 1} - 1 5 . 1}{0 . 4 3 2 5}\right), i = 1, 2, \dots , 7,
+$$
+
+求得
+
+$$
+\hat {p} _ {1} = 0. 0 4 1 4, \hat {p} _ {2} = 0. 1 0 7 7, \hat {p} _ {3} = 0. 2 1 5 4,
+$$
+
+$$
+\hat {p} _ {4} = 0. 2 7 1 0, \hat {p} _ {5} = 0. 2 1 5 4, \hat {p} _ {6} = 0. 1 0 7 7, \hat {p} _ {7} = 0. 0 4 1 4.
+$$
+
+由于
+
+$$
+\chi^ {2} = 1. 7 2 8 4 <   9. 4 9 = \chi_ {0. 0 5} ^ {2} (7 - 1 - 2),
+$$
+
+故不能拒绝  $H_{0}$ .
+
+![](../../raw/pages_0289-0304/images/page_301_image_18.jpg)
+
+## 6.3.3 Kolmogorov-Smirnov 检验
+
+前面两小节的  $\chi^{2}$  拟合优度检验是针对离散型数据, 或把连续型分布离散化之后的数据. 然而,  $\chi^{2}$  拟合优度检验具有如图 6.3.1 所示的不足. 因此需要一个直接针对连续型分布的检验统计量. Kolmogorov-Smirnov 检验即可满足要求, 其可以用来很好地检验形如 (6.3.3) 式的假设.
+
+由于样本经验分布函数 $F_{n}(x)$ 是 $F(x)$ 的一个很好的估计，故当(6.3.3)式的 $H_0$ 成立时，$F_{n}(x)$ 与 $F_{0}(x)$ 应相差不大，于是，可以用统计量
+
+$$
+D _ {n} = \sup _ {x} | F _ {n} (x) - F _ {0} (x) |
+$$
+
+---
+
+290
+
+第六章 非参数方法
+
+来衡量经验分布函数 $F_{n}(x)$ 与理论分布 $F_{0}(x)$ 之间的差别，且拒绝域为 $\{D_n\geqslant c\}$ ，其中 $c$ 是临界值.此检验是由Kolmogorov(1933)针对单样本提出的，并给出了 $D_{n}$ 的极限零分布，见定理6.2.3.Smirnov(1939)把单样本推广至两样本的情形.因此，称之为Kolmogorov-Smirnov检验.对于单样本的情形， $D_{n}$ 的精确分布见下面的定理
+
+定理6.3.2 如果 $F_{0}(x)$ 连续, 则当 $H_0$ 成立时, 有
+
+$$
+P \left(D _ {n} <   \lambda\right) = \left\{ \begin{array}{l l} 0, & \lambda <   \frac {1}{2 n}, \\ n! \prod_ {i = 1} ^ {n} \int_ {\max \left\{0, \frac {n - i + 1}{n} - t \right\}} ^ {\min \left\{u _ {n - i + 2}, \frac {n - i}{n} + t \right\}} \mathrm{d} u _ {1} \mathrm{d} u _ {2} \dots \mathrm{d} u _ {n}, & \frac {1}{2 n} \leqslant \lambda <   1, \\ 1, & \lambda \geqslant 1. \end{array} \right. \tag {6.3.5}
+$$
+
+定理 6.3.2 的详细证明可参见陈希孺 (1997). 从中可见,  $D_{n}$  的分布与真实分布  $F_{0}$  无关. 虽然定理 6.2.3 和定理 6.3.2 的结论较复杂, 但是现在已有现成的分位数表可供大家查找.
+
+从 $D_{n}$ 的定义可知, 对于某些连续型分布检验, Kolmogorov-Smirnov 检验优于 $\chi^2$ 拟合优度检验. 但是, 它的计算看起来比较复杂. 然而, 由于 $F(x)$ 及 $F_{n}(x)$ 均是单增的, 且 $F_{n}(x)$ 是一阶梯函数, 于是其上确界仅可能在 $n$ 个点 $x_{(i)}$ 处达到. 如果 $F_{0}$ 连续,
+
+$$
+D _ {n} = \max _ {1 \leqslant i \leqslant n} \left\{F _ {0} (x _ {(i)}) - \frac {i - 1}{n}, \quad \frac {i}{n} - F _ {0} (x _ {(i)}) \right\}.
+$$
+
+类似地, 如果  $F_{0}$  是右连续的, 则  $D_{n}$  可以写成如下便于计算的公式:
+
+$$
+D _ {n} = \max _ {1 \leqslant i \leqslant n} \left\{F _ {0} (x _ {(i)} - 0) - \frac {i - 1}{n}, \quad \frac {i}{n} - F _ {0} (x _ {(i)}) \right\}.
+$$
+
+关于前面讲述的两个分布检验方法: $\chi^2$ 拟合优度检验与 Kolmogorov-Smirnov 检验, 有如下几点注解:
+
+注6.3.3 当 $F_{0}$ 为完全已知的连续型分布时，Kolmogorov-Smirnov检验优于 $\chi^2$ 拟合优度检验.但如果 $F_{0}$ 是离散的或含有未知参数，则Kolmogorov-Smirnov检验无法应用.
+注6.3.4 当 $F_{0}$ 为含有未知参数的连续型分布时，如用样本去估计未知参数，则定理6.2.3和定理6.3.2的结论均不成立，故此时无法利用Kolmogorov-Smirnov检验，但 $\chi^2$ 拟合优度检验是可以的.
+注6.3.5 Kolmogorov检验很难处理高维数据的分布检验，而 $\chi^2$ 拟合优度检验则与一维的类似.
+
+---
+
+6.3 拟合优度检验
+
+291
+
+例 6.3.6 问在水平  $\alpha = 0.1$  下是否可以认为下列 10 个数:
+
+$$
+0. 4 3 7, 0. 8 6 3, 0. 0 3 4, 0. 9 6 4, 0. 3 6 6, 0. 4 6 9, 0. 6 3 7, 0. 6 2 3, 0. 8 0 4, 0. 2 6 1
+$$
+
+来自均匀分布  $U(0,1)$ ?
+
+解 对于此组数据, 为了便于计算, 表 6.3.1 给出了相应的数据, 其中
+
+$$
+\delta_ {i} = \max \left\{F _ {0} (x _ {(i)}) - \frac {i - 1}{n}, \frac {i}{n} - F _ {0} (x _ {(i)}) \right\}.
+$$
+
+从表 6.3.1 可以看出，本问题的 Kolmogorov-Smirnov 统计量的值为  $D_{n} = 0.166 < 0.3687 = D_{0.1}(10)$ ，故没有理由拒绝  $H_{0}$ ，即可以认为这组数是来自  $U(0,1)$  的样本。☐
+
+表 6.3.1 例 6.3.6 的计算表
+
+| i | $x_{(i)}$ | $F_0(x_{(i)})$ | $\frac{i-1}{n}$ | $\frac{i}{n}$ | $\delta_i$ | i | $x_{(i)}$ | $F_0(x_{(i)})$ | $\frac{i-1}{n}$ | $\frac{i}{n}$ | $\delta_i$ |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | 0.034 | 0.034 | 0.0 | 0.1 | 0.066 | 6 | 0.623 | 0.623 | 0.5 | 0.6 | 0.123 |
+| 2 | 0.261 | 0.261 | 0.1 | 0.2 | 0.161 | 7 | 0.637 | 0.637 | 0.6 | 0.7 | 0.063 |
+| 3 | 0.366 | 0.366 | 0.2 | 0.3 | 0.166 | 8 | 0.804 | 0.804 | 0.7 | 0.8 | 0.104 |
+| 4 | 0.437 | 0.437 | 0.3 | 0.4 | 0.137 | 9 | 0.863 | 0.863 | 0.8 | 0.9 | 0.063 |
+| 5 | 0.469 | 0.469 | 0.4 | 0.5 | 0.069 | 10 | 0.964 | 0.964 | 0.9 | 1.0 | 0.064 |
+
+前面讨论的是单样本的 Kolmogorov-Smirnov 检验, 该结果可以推广至两样本的分布检验, 即检验相互独立的两个总体分布是否相同. 对于两样本分布假设检验问题, 即设  $X_{1}, X_{2}, \cdots, X_{m}$  和  $Y_{1}, Y_{2}, \cdots, Y_{n}$  为分别来自总体 F 和 G 的独立同分布样本, 且全样本独立, 则可以用统计量
+
+$$
+D _ {m, n} = \sup _ {x} | F _ {m} (x) - G _ {n} (x) |
+$$
+
+进行分布检验, 且拒绝域为  $\{D_{m,n} \geqslant c\}$ , 其中  $F_{m}, G_{n}$  分别表示总体 X, Y 的经验分布函数. 检验统计量  $D_{m,n}$  的极限分布如下:
+
+$$
+\lim _ {m, n \to \infty} P (\sqrt {m n / (m + n)} D _ {m, n} \leqslant t) = \sum_ {j = - \infty} ^ {\infty} (- 1) ^ {j - 1} \exp \{- 2 j ^ {2} t ^ {2} \}, t > 0.
+$$
+
+根据该极限分布, 有相应的分布表可供查询.
+
+关于 Kolmogorov-Smirnov 检验还有许多更深入的结论, 有兴趣的读者请参见 Serfling(1980) 等有关大样本的书籍. 关于分布检验, 有许多类似于 Kolmogorov-Smirnov 统计量的检验统计量, 如
+
+\- $\sup_{x}|w(x)[F_n(x) - F_0(x)]|$, 其中 $w(x)$ 为给定的权函数.
+
+---
+
+292
+
+第六章 非参数方法
+
+- Cramér-von Mises (克拉默-冯·米泽斯) 统计量: $C_n = \int [F_n(x) - F_0(x)]^2 \mathrm{d}F_0(x)$.
+- Anderson-Darling (安德森-达林) 统计量: $n \int w(x)[F_n(x) - F_0(x)]^2 \mathrm{d}F_0(x)$, 其中 $w(x) = [x(1 - x)]^{-1/2}$.
+
+Kolmogorov-Smirnov 统计量度量了经验分布函数和总体分布的差异的最大值, Cramér-von Mises 检验统计量考虑经验分布函数和总体分布的差异在密度函数意义下的加权平均. Cramér-von Mises 检验统计量有下面的极限分布:
+
+$$
+n C _ {n} \xrightarrow {\mathrm{d}} \sum_ {j = 0} ^ {\infty} j ^ {- 2} \pi^ {- 2} \chi_ {1 j} ^ {2},
+$$
+
+其中  $\chi_{1j}^{2}$  独立同分布于  $\chi_{1}^{2}$  分布. Anderson-Darling 统计量采用更灵活的加权平均.
+
+## 6.3.4 正态性检验
+
+前面提到的  $\chi^{2}$  拟合优度检验和 Kolmogorov-Smirnov 检验方法等方法对于总体分布没有做特殊限制, 即其可适用于正态分布, 也可适用于其他分布类型. 正态分布在统计学中占有特殊地位. 许多统计推断方法都是基于正态总体的, 因此检验数据是否服从正态分布是很有意义的. 有必要针对数据是否服从正态分布给出特殊的检验方法. 本小节介绍另两种有更高检验功效的常用检验方法, 即 Shapiro-Wilk 的 W 检验和 D'Agostino 的 D 检验. 我国已把这两个方法列入了国家标准. 当样本量  $n \leqslant 50$  时, 用 W 检验; 当样本量 n > 50 时, 用 D 检验.
+
+为了方便, 本小节始终假设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体为 F 的独立同分布样本, 现感兴趣的假设为
+
+$$
+H _ {0}: F (x) \in \left\{\varPhi \left(\frac {x - \mu}{\sigma}\right): \mu \in \mathbb {R}, \sigma > 0 \right\}.
+$$
+
+## 1. W 检验
+
+W 检验是 S. Shapiro (夏皮罗) 和 M. Wilk (威尔克) 提出的, 参见 Shapiro et al. (1965). W 检验的检验统计量为
+
+$$
+W = \frac {\left(\sum_ {k = 1} ^ {[ n / 2 ]} a _ {k} (n) (X _ {(n + 1 - k)} - X _ {(k)})\right) ^ {2}}{\sum_ {i = 1} ^ {n} (X _ {(i)} - \bar {X}) ^ {2}},
+$$
+
+其中  $X_{(1)} \leqslant X_{(2)} \leqslant \cdots \leqslant X_{(n)}$  为次序统计量,  $\{a_{k}(n)\}$  是一组给定的与 n 有关的常数, 可查表求得. W 检验的拒绝域为
+
+$$
+\{W <   c \},
+$$
+
+---
+
+6.3 拟合优度检验
+
+293
+
+其中临界值 $c$ 满足 $P(W < c|H_0) = \alpha$.
+
+此检验的理由大致如下:
+
+设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自  $N(\mu, \sigma^{2})$  的独立同分布样本，如记  $Y_{i} = \frac{X_{(i)} - \mu}{\sigma}, m_{i} = E(Y_{i}), \varepsilon_{i} = X_{(i)} - E[X_{(i)}]$ ，则知  $m_{i}$  是与  $\mu, \sigma$  无关的常数，且有
+
+$$
+X _ {(i)} = \mu + \sigma m _ {i} + \varepsilon_ {i}.
+$$
+
+由于当 n 较大时,  $X_{(i)} \approx E[X_{(i)}]$ , 因而  $\varepsilon_{i}$  较小. 于是 n 个点  $\{(X_{(i)}, m_{i}) : i = 1, 2, \cdots, n\}$  近似在一条直线上.
+
+为区别这 n 个点是否在一条直线上, 可采用下面的  $R^{2}$  统计量:
+
+$$
+R ^ {2} = \left\{\frac {\sum_ {i = 1} ^ {n} [ X _ {(i)} - \bar {X} ] (m _ {i} - \bar {m})}{\sqrt {\sum_ {i = 1} ^ {n} [ X _ {(i)} - \bar {X} ] ^ {2} \sum_ {i = 1} ^ {n} (m _ {i} - \bar {m}) ^ {2}}} \right\} ^ {2}, \tag {6.3.6}
+$$
+
+其中  $\bar{m}=\sum_{i=1}^{n}m_{i}/n.$  当  $H_{0}$  成立时, 即  $X_{i}$  服从  $N(\mu,\sigma^{2})$  时, (6.3.6) 式的  $R^{2}$  应接近 1.
+于是, 当  $R^{2}$  远离 1 时, 有理由拒绝  $H_{0}$ .
+
+由于  $N(0,1)$  是对称分布, 故当  $H_{0}$  成立时,  $(Y_{1}, Y_{2}, \cdots, Y_{n})$  与  $(-Y_{1}, -Y_{2}, \cdots, -Y_{n})$  有相同的联合分布, 从而  $Y_{k}$  与  $-Y_{n+1-k}$  也有相同的分布, 故  $m_{k} = -m_{n+1-k}, \bar{m} = 0$ . 于是,
+
+$$
+R ^ {2} = \frac {\left(\sum_ {i = 1} ^ {n} X _ {(i)} m _ {i}\right) ^ {2}}{\sum_ {i = 1} ^ {n} (X _ {(i)} - \bar {X}) ^ {2} \sum_ {i = 1} ^ {n} m _ {i} ^ {2}} = \frac {\left(\sum_ {k = 1} ^ {[ n / 2 ]} m _ {n + 1 - k} (X _ {(n + 1 - k)} - X _ {(k)})\right) ^ {2}}{\sum_ {i = 1} ^ {n} (X _ {(i)} - \bar {X}) ^ {2} \sum_ {i = 1} ^ {n} m _ {i} ^ {2}}, \tag {6.3.7}
+$$
+
+如取
+
+$$
+a _ {k} (n) = \frac {m _ {n + 1 - k}}{\left(\sum_ {i = 1} ^ {n} m _ {i} ^ {2}\right) ^ {1 / 2}},
+$$
+
+则知 $W = R^2$
+
+为理解 (6.3.7) 式, 定义
+
+$$
+Q ^ {2} = \sum_ {i = 1} ^ {n} (X _ {(i)} - \bar {X}) ^ {2}, \hat {\sigma} = \sum_ {i = 1} ^ {n} b _ {i} X _ {(i)}, b _ {i} = m _ {i} / \sum_ {i = 1} ^ {n} m _ {i} ^ {2},
+$$
+
+则 $R^2$ 可以重写成
+
+$$
+R ^ {2} = \sum_ {i = 1} ^ {n} m _ {i} ^ {2} \hat {\sigma} ^ {2} / Q ^ {2}.
+$$
+
+---
+
+294
+
+第六章 非参数方法
+
+注意到, 无论样本是否正态, $Q^2$ 经修正后都可以成为 $\sigma^2$ 的一个 UE, 而分子 $\hat{\sigma}$ 是样本的线性函数, 且当 $H_0$ 成立时它是 $\sigma$ 的 UE, 于是 $\hat{\sigma}^2$ 也可成为 $\sigma^2$ 的一个估计. 这样, 在正态性假设下, 二者的差别不应很大. 这就是采用 $R^2$ 来检验正态性假设的一个直观解释. 为了扩大这个差异, Shapiro 和 Wilk 把上述的 $\hat{\sigma}$ 换为 $\sigma$ 的 BLUE
+
+$$
+\hat {\sigma} ^ {\prime} = \sum_ {i = 1} ^ {n} c _ {i} X _ {(i)}, \tag {6.3.8}
+$$
+
+就得到了 W 检验统计量.
+
+## 2. D 检验
+
+W 检验虽有效, 但可惜的是它只适用于容量 3—50 的样本, 其主要原因是, 对超过 50 的样本容量 n, 很难计算其分位数值. 为此, D'Agostino (1971) 提出了 D 检验.
+
+由 W 统计量的定义不难看出, 如果不计常数因子, 它是正态分布的标准差  $\sigma$  的 BLUE 与样本标准差的比值的平方, 即关于  $\sigma$  的两个估计量的比值的平方. 由于 BLUE 的系数计算是繁杂的, 且随着样本量的增加, 这种繁杂在增加. 随着样本量的增加, 不得不放弃用 BLUE 来构造检验统计量. 因此, D'Agostino 建议, 在样本容量超过 50 时, 用  $i - \frac{n + 1}{2}$  来代替 BLUE (6.3.8) 式中的  $c_{i}$ , 即考虑用
+
+$$
+T = \sum_ {i = 1} ^ {n} \left(i - \frac {n + 1}{2}\right) X _ {(i)}
+$$
+
+作为 $\sigma$ 的一个线性无偏估计. 再考虑到 $n$ 的阶, 用统计量
+
+$$
+D _ {n} = \frac {\sum_ {i = 1} ^ {n} \left(i - \frac {n + 1}{2}\right) X _ {(i)}}{n ^ {3 / 2} \sqrt {\sum_ {i = 1} ^ {n} (X _ {i} - \bar {X}) ^ {2}}},
+$$
+
+作为正态性检验统计量, 且当它远离 1 时, 有理由拒绝正态性假设.
+
+为求取其极限零分布, 可以证明, 当  $H_{0}$  成立时,
+
+$$
+E (D _ {n}) = 0. 2 8 2 0 9 4 7 9, \sqrt {\mathrm{Var} (D _ {n})} = 0. 0 2 9 9 8 5 9 8 / \sqrt {n},
+$$
+
+故采用如下的标准化随机变量
+
+$$
+Y _ {n} = \frac {\sqrt {n} (D _ {n} - 0 . 2 8 2 0 9 4 7 9)}{0 . 0 2 9 9 8 5 9 8}
+$$
+
+作为检验统计量, 且其拒绝域为
+
+$$
+\{Y _ {n} <   c _ {1} \} \cup \{Y _ {n} > c _ {2} \},
+$$
+
+其中 $c_{1} < c_{2}$
+
+关于 D 检验的分位数现已有表可查.
+
+---
+
+6.4 独立性检验
+
+295
+
+## 6.4 独立性检验
+
+当研究两个分类变量 A 和 B 之间是否独立时, 即考虑如下的假设:
+
+$$
+H _ {0}: \text {变量} A \text {与} B \text {独立}, \tag {6.4.1}
+$$
+
+此时, 常用的检验方法是使用列联表, 其为这两个变量交叉分类的频数分布表. 交叉分类的目的是将多个变量分组, 然后比较各组的分布状况, 以寻找变量间是否存在相关性等关系. 列联表的方法也可以检验多个分类变量之间是否独立.
+
+按两个变量交叉分类的列联表称为二维列联表, 如例 6.3.4 中的色盲和性别是两个变量; 若按三个变量交叉分类, 所得的列联表称为三维列联表, 以此类推. 三维及以上的列联表称为 “多维列联表” 或 “高维列联表”. 列联表分析主要包括两个任务: 一是根据收集的样本数据, 产生二维或多维列联表; 二是在列联表的基础上, 通过检验统计量对变量间是否存在相关性进行检验.
+
+一般的二维列联表数据如表 6.4.1 所示, 其中, 变量 A, B 分别有 r, s 个水平, 且以  $n_{ij}$  表示在 n 个样本中属于  $A_{i} \cap B_{j}$  的样本个数,  $n_{i.} = \sum_{j=1}^{s} n_{ij}$  和  $n_{.j} = \sum_{i=1}^{r} n_{ij}$  分别表示 A 取第 i 个水平和 B 取第 j 个水平的样本个数. 记
+
+$$
+p _ {i j} = P (X \in A _ {i} \cap B _ {j}), i = 1, 2, \dots , r, j = 1, 2, \dots , s,
+$$
+
+表 6.4.1 二维列联表数据
+
+<table><tr><td rowspan="2">A</td><td colspan="4">B</td><td rowspan="2">总计</td></tr><tr><td> $B_1$ </td><td> $B_2$ </td><td>...</td><td> $B_s$ </td></tr><tr><td> $A_1$ </td><td> $n_{11}$ </td><td> $n_{12}$ </td><td>...</td><td> $n_{1s}$ </td><td> $n_{1.}$ </td></tr><tr><td> $A_2$ </td><td> $n_{21}$ </td><td> $n_{22}$ </td><td>...</td><td> $n_{2s}$ </td><td> $n_{2.}$ </td></tr><tr><td> $\vdots$ </td><td> $\vdots$ </td><td> $\vdots$ </td><td></td><td> $\vdots$ </td><td> $\vdots$ </td></tr><tr><td> $A_r$ </td><td> $n_{r1}$ </td><td> $n_{r2}$ </td><td>...</td><td> $n_{rs}$ </td><td> $n_{r.}$ </td></tr><tr><td>总计</td><td> $n_{.1}$ </td><td> $n_{.2}$ </td><td>...</td><td> $n_{.s}$ </td><td>n</td></tr></table>
+
+则这 $n$ 个样本可以看成是来自多项分布 $X$ 的样本. 令
+
+$$
+p _ {i.} = P (X \in A _ {i}), i = 1, 2, \dots , r,
+$$
+
+$$
+p _ {\cdot j} = P (X \in B _ {j}), j = 1, 2, \dots , s,
+$$
+
+则有
+
+$$
+p _ {i.} = \sum_ {j = 1} ^ {s} p _ {i j}, p _ {. j} = \sum_ {i = 1} ^ {r} p _ {i j}.
+$$
+
+---
+
+296
+
+第六章 非参数方法
+
+另外, 还要注意到如下两个约束:
+
+$$
+\sum_ {i = 1} ^ {r} p _ {i.} = \sum_ {j = 1} ^ {s} p _ {. j} = 1. \tag {6.4.2}
+$$
+
+当 $H_0$ 成立时, 对于 $A$ 和 $B$ 这两个离散型随机变量, 应有 $p_{ij} = p_i \cdot p_j$. 于是, (6.4.1)式的零假设等价于如下假设:
+
+$$
+H _ {0}: p _ {i j} = p _ {i}. p _ {. j}, i = 1, 2, \dots , r, j = 1, 2, \dots , s. \tag {6.4.3}
+$$
+
+由于可以把上述列联表数据看作是多项分布的样本, 故可以用  $\chi^{2}$  拟合优度检验对其独立性假设 (6.4.3) 进行显著性检验. 由于  $p_{i}$ . 和  $p_{\cdot j}$  是未知的, 且有两个约束 (6.4.2), 故当  $H_{0}$  成立时共有  $r + s - 2$  个未知参数. 此时, 其未知参数的最大似然估计为
+
+$$
+\hat {p} _ {i \cdot} = \frac {n _ {i \cdot}}{n}, \hat {p} _ {\cdot j} = \frac {n _ {\cdot j}}{n}, i = 1, 2, \dots , r, j = 1, 2, \dots , s.
+$$
+
+于是, 对于二维列联表,  $\chi^{2}$  拟合优度检验统计量为
+
+$$
+\chi^ {2} = n \sum_ {i = 1} ^ {r} \sum_ {j = 1} ^ {s} \frac {\left(n _ {i j} - \frac {n _ {i} . n _ {. j}}{n}\right) ^ {2}}{n _ {i} . n _ {. j}},
+$$
+
+且当  $H_{0}$  成立及  $n \rightarrow \infty$  时, 根据 (6.3.4) 式的结果, 有
+
+$$
+\chi^ {2} \xrightarrow {\mathrm{d}} \chi^ {2} (r s - r - s + 2 - 1) = \chi^ {2} ((r - 1) (s - 1)),
+$$
+
+于是, 此检验的近似水平为  $\alpha$  的检验拒绝域为
+
+$$
+\{\chi^ {2} \geqslant \chi_ {\alpha} ^ {2} ((r - 1) (s - 1)) \}.
+$$
+
+对于例 6.3.4 中的数据, 由于 r = s = 2, n = 1000,  $\chi^{2} = 27.4 > 6.64 = \chi_{0.01}^{2}(1)$ , 故有理由拒绝  $H_{0}$ , 即认为色盲与性别之间存在着显著性的相关关系.
+
+注 6.4.1 当分类指标为连续型变量时, 仍然可以先用前面的离散化方法对变量离散后, 再用  $\chi^{2}$  拟合优度检验对二者的独立性进行检验.
+
+可以将上述结果推广到多维的情况. 下面考虑三维列联表的独立性检验问题. 假设一个观测包含三个指标: A, B, C, 且分别有 r, s, t 个水平. 记  $n_{ijk}(i = 1, 2, \cdots, r, j = 1, 2, \cdots, s, k = 1, 2, \cdots, t)$  表示在 n 个样本中属于  $A_i \cap B_j \cap C_k$  的样本个数;  $n_{i..}(i = 1, 2, \cdots, r)$  表示在 n 个样本中属于  $A_i$  的样本个数,  $n_{\cdot j.(j = 1, 2, \cdots, s)}$  表示在 n 个样本中属于  $B_j$  的样本个数,  $n_{\cdot k}(k = 1, 2, \cdots, t)$  表示在 n 个样本中属于  $C_k$  的样本个数, 即
+
+$$
+n _ {i..} = \sum_ {j = 1} ^ {s} \sum_ {k = 1} ^ {t} n _ {i j k}, \quad n _ {. j.} = \sum_ {i = 1} ^ {r} \sum_ {k = 1} ^ {t} n _ {i j k}, \quad n _ {.. k} = \sum_ {i = 1} ^ {r} \sum_ {j = 1} ^ {s} n _ {i j k}.
+$$
+
+---
+
+6.4 独立性检验
+
+297
+
+令  $n_{ij}.(i=1,2,\cdots,r,j=1,2,\cdots,s)$  表示在 n 个样本中属于  $A_{i}\cap B_{j}$  的样本个数， $n_{i\cdot k}(i=1,2,\cdots,r,k=1,2,\cdots,t)$  表示在 n 个样本中属于  $A_{i}\cap C_{k}$  的样本个数， $n_{\cdot jk}(j=1,2,\cdots,s,k=1,2,\cdots,t)$  表示在 n 个样本中属于  $B_{j}\cap C_{k}$  的样本个数，即
+
+$$
+n _ {i j.} = \sum_ {k = 1} ^ {t} n _ {i j k}, \quad n _ {i \cdot k} = \sum_ {j = 1} ^ {s} n _ {i j k}, \quad n _ {\cdot j k} = \sum_ {i = 1} ^ {r} n _ {i j k}.
+$$
+
+分别对 $n_{i..}, n_{.j..}, n_{..k}, n_{ij..}, n_{i.k}, n_{.jk}$ 和 $n_{ijk}$ 除以样本总数 $n$, 得到相应的概率 $p_{i..}, p_{.j..}, p_{..k}, p_{ij..}, p_{i.k}, p_{.jk}$ 和 $p_{ijk}$ 等概率值. 从而, 有
+
+$$
+\sum_ {i = 1} ^ {r} \sum_ {j = 1} ^ {s} \sum_ {k = 1} ^ {t} p _ {i j k} = 1, \quad \sum_ {i = 1} ^ {r} p _ {i..} = 1, \quad \sum_ {j = 1} ^ {s} p _ {\cdot j.} = 1, \quad \sum_ {k = 1} ^ {t} p _ {\cdot .. k} = 1,
+$$
+
+$$
+\sum_ {i = 1} ^ {r} \sum_ {j = 1} ^ {s} p _ {i j.} = 1, \sum_ {i = 1} ^ {r} \sum_ {k = 1} ^ {t} p _ {i \cdot k} = 1, \sum_ {j = 1} ^ {s} \sum_ {k = 1} ^ {t} p _ {\cdot j k} = 1.
+$$
+
+此时感兴趣的假设可能有三类:
+
+\- 三个指标相互独立, 即检验
+
+$$
+H _ {0}: \quad p _ {i j k} = p _ {i..} p _ {\cdot j}. p _ {\cdot k}. \tag {6.4.4}
+$$
+
+\- 部分独立性检验, 即检验某个分组变量独立于其他分组变量. 例如, 指标 A 与指标 B、C 之间独立, 即检验
+
+$$
+H _ {0}: \quad p _ {i j k} = p _ {i..} p _ {\cdot j k}. \tag {6.4.5}
+$$
+
+类似地, 可检验  $H_{0}$ :  $p_{ijk} = p_{\cdot j}$ .  $p_{i\cdot k}$  或  $H_{0}$ :  $p_{ijk} = p_{\cdot k}$ .  $p_{ij\cdot}$
+
+\- 条件独立性检验, 即检验其中两个变量在第三个变量的每一水平上独立. 例如, 给定指标 $C$ 下, 指标 $A$ 与 $B$ 独立, 即检验
+
+$$
+H _ {0}: \quad p _ {i j k} = p _ {i \cdot k} p _ {\cdot j k} / p _ {\cdot \cdot k}. \tag {6.4.6}
+$$
+
+对于这三个检验, 可以用似然比检验方法.
+
+对于三个指标相互独立的检验问题 (6.4.4), 似然比统计量为
+
+$$
+\Lambda_ {1} = \frac { \prod_ {i = 1} ^ {r} \prod_ {j = 1} ^ {s} \prod_ {k = 1} ^ {t} \left(\frac {n _ {i . .}}{n}\right) ^ {n _ {i . .}} \left(\frac {n _ {. j .}}{n}\right) ^ {n _ {. j .}} \left(\frac {n _ {. . k}}{n}\right) ^ {n _ {. . k}}}{ \prod_ {i = 1} ^ {r} \prod_ {j = 1} ^ {s} \prod_ {k = 1} ^ {t} \left(\frac {n _ {i j k}}{n}\right) ^ {n _ {i j k}}},
+$$
+
+且当 $H_0$ 成立及 $n\to \infty$ 时，有
+
+$$
+- 2 \ln \varLambda_ {1} \stackrel {\mathrm{d}} {\rightarrow} \chi^ {2} (r s t - 1 - (r - 1) - (s - 1) - (t - 1)).
+$$
+
+---
+
+298
+
+第六章 非参数方法
+
+对于部分独立性检验问题 (6.4.5), 似然比统计量为
+
+$$
+\Lambda_ {2} = \frac { \prod_ {i = 1} ^ {r} \prod_ {j = 1} ^ {s} \prod_ {k = 1} ^ {t} \left(\frac {n _ {i . .}}{n}\right) ^ {n _ {i . .}} \left(\frac {n _ {. j k}}{n}\right) ^ {n _ {. j k}}}{ \prod_ {i = 1} ^ {r} \prod_ {j = 1} ^ {s} \prod_ {k = 1} ^ {t} \left(\frac {n _ {i j k}}{n}\right) ^ {n _ {i j k}}},
+$$
+
+且当 $H_0$ 成立及 $n\to \infty$ 时，有
+
+$$
+- 2 \ln \varLambda_ {2} \xrightarrow {\mathrm{d}} \chi^ {2} (r s t - 1 - (r - 1) - (s t - 1)).
+$$
+
+对于条件独立性检验问题 (6.4.6), 可以得到此时的似然比统计量为
+
+$$
+\Lambda_ {3} = \frac { \prod_ {i = 1} ^ {r} \prod_ {j = 1} ^ {s} \prod_ {k = 1} ^ {t} \left(\frac {n _ {i \cdot k} n _ {\cdot j k}}{n n _ {\cdot \cdot k}}\right) ^ {n _ {i j k}}}{ \prod_ {i = 1} ^ {r} \prod_ {j = 1} ^ {s} \prod_ {k = 1} ^ {t} \left(\frac {n _ {i j k}}{n}\right) ^ {n _ {i j k}}},
+$$
+
+且当 $H_0$ 成立及 $n\to \infty$ 时，有
+
+$$
+- 2 \ln \varLambda_ {3} \xrightarrow {\mathrm{d}} \chi^ {2} (t (r - 1) (s - 1)).
+$$
+
+需要指出的是, 也可以把三维列联表合并为一个二维列联表来处理. 不过, 这种处理会损失掉许多信息. 因此, 在一些情形下, 合并的列联表中认为变量之间是独立的, 但在三维列联表的检验中是不独立的.
+
+## 6.5 U 统计量与秩检验
+
+U 统计量 (U-statistic) 是一类特定的、具有对称性的统计量, 它是由 Hoeffding (1948) 引进的一种非参数统计量, 是样本均值的推广. U 统计量在非参数估计和非参数检验中都有重要应用, 其名称中的 “U” 为无偏 (unbiased) 之意. 本节将介绍 U 统计量的性质及其应用. 此外, 本节还介绍秩和检验等非参数检验.
+
+## 6.5.1 U 统计量
+
+先看下面的可靠性统计中的一个例子.
+
+例6.5.1 对于某种电子元器件的寿命 $X$ ，在参数统计中，常设 $X$ 服从某类特殊的参数分布，例如指数分布、Weibull分布，或对数正态分布等；在非参数统计中，往往仅
+
+---
+
+6.5 U 统计量与秩检验
+
+299
+
+假设 $X$ 服从非负值连续分布 $F(x)$. 如果对任意的 $s > 0, t > 0$, 都有 $P(X > s + t | X > t) < P(X > s)$, 则称该元器件老化; 若有 $P(X > s + t | X > t) = P(X > s)$, 则称该元器件无老化. 在可靠性统计中, 一个重要的检验问题如下:
+
+$$
+H _ {0}: \text {元器件无老化} \leftrightarrow H _ {1}: \text {元器件老化}. \tag {6.5.1}
+$$
+
+令生存函数 $\bar{F}(x) = 1 - F(x)$, 则 $P(X > s + t | X > t) = P(X > s)$ 等价于 $\bar{F}(s + t) = \bar{F}(s) \cdot \bar{F}(t)$, $P(X > s + t | X > t) < P(X > s)$ 等价于 $\bar{F}(s + t) < \bar{F}(s) \cdot \bar{F}(t)$. 令
+
+$$
+\omega = \int_ {0} ^ {\infty} \int_ {0} ^ {\infty} [ \bar {F} (s) \cdot \bar {F} (t) - \bar {F} (s + t) ] \mathrm{d} F (s) \mathrm{d} F (t).
+$$
+
+则检验问题 (6.5.1) 可简化为关于参数  $\omega$  的检验问题
+
+$$
+H _ {0}: \omega = 0 \quad \leftrightarrow \quad H _ {1}: \omega > 0.
+$$
+
+设 $X_{1}, X_{2}, X_{3}$ 是该元器件的寿命试验的三次随机试验结果，即独立同分布于 $F(x)$. 因为
+
+$$
+\int_ {0} ^ {\infty} \int_ {0} ^ {\infty} \bar {F} (s) \cdot \bar {F} (t) \mathrm{d} F (s) \mathrm{d} F (t) = \int_ {0} ^ {1} \int_ {0} ^ {1} (1 - u) \cdot (1 - v) \mathrm{d} u \mathrm{d} v = \frac {1}{4},
+$$
+
+$$
+\begin{array}{l} \int_ {0} ^ {\infty} \int_ {0} ^ {\infty} \bar {F} (s + t) \mathrm{d} F (s) \mathrm{d} F (t) = \int_ {0} ^ {\infty} \int_ {0} ^ {\infty} P (X _ {1} > x _ {2} + x _ {3}) \mathrm{d} F (x _ {2}) \mathrm{d} F (x _ {3}) \\ = P (X _ {1} > X _ {2} + X _ {3}), \\ \end{array}
+$$
+
+所以 $\omega = \frac{1}{4} - P(X_1 > X_2 + X_3)$. 若令 $\theta = P(X_1 > X_2 + X_3)$, 则检验问题 (6.5.1) 可进一步简化为关于参数 $\theta$ 的检验问题
+
+$$
+H _ {0}: \theta = \frac {1}{4} \leftrightarrow H _ {1}: \theta <   \frac {1}{4}.
+$$
+
+因此, 一个非参数检验问题也可以简化为关于某个参数的检验问题.
+
+为了寻求检验统计量, 首先要估计  $\theta$ . 一种自然的想法是寻找  $\theta$  的无偏估计. 根据两点分布的性质, 可知
+
+$$
+\psi (X _ {1}, X _ {2}, X _ {3}) = \left\{ \begin{array}{l l} 1, & X _ {1} > X _ {2} + X _ {3}, \\ 0, & X _ {1} \leqslant X _ {2} + X _ {3} \end{array} \right.
+$$
+
+是 $\theta$ 的一个无偏估计. 考虑到样本中各个分量的地位是相同的, 故定义对称函数
+
+$$
+\phi (X _ {1}, X _ {2}, X _ {3}) = \frac {\sum \psi (X _ {i _ {1}} , X _ {i _ {2}} , X _ {i _ {3}})}{3 !},
+$$
+
+它也是 $\theta$ 的一个无偏估计, 其中 $(i_1, i_2, i_3)$ 是 (1,2,3) 的一个置换, $\sum$ 表示对所有这种置换求和. $\psi(X_1, X_2, X_3)$ 和 $\phi(X_1, X_2, X_3)$ 都是 $\theta$ 的无偏估计, 但 $\phi(X_1, X_2, X_3)$ 的方
+
+---
+
+300
+
+第六章 非参数方法
+
+差不会比  $\psi(X_{1},X_{2},X_{3})$  的方差大. 进一步地, 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体分布  $F(x)$  的独立同分布样本,
+
+$$
+U (X _ {1}, X _ {2}, \dots , X _ {n}) = \frac {\sum \phi (X _ {i _ {1}} , X _ {i _ {2}} , X _ {i _ {3}})}{\mathrm{C} _ {n} ^ {3}},
+$$
+
+其中  $1 \leqslant i_{1} < i_{2} < i_{3} \leqslant n, \sum$  表示对所有组合  $(i_{1}, i_{2}, i_{3})$  求和. 则  $U(X_{1}, X_{2}, \cdots, X_{n})$  仍是  $\theta$  的一个无偏估计, 其方差不比  $\phi(X_{1}, X_{2}, X_{3})$  的方差大. 由于  $H_{1}$  为真时,  $\theta$  的值比较小, 因此当  $U(X_{1}, X_{2}, \cdots, X_{n}) \leqslant c$  时拒绝原假设, 认为元器件老化. 这里临界值 c 由统计量  $U(X_{1}, X_{2}, \cdots, X_{n})$  的分布决定.
+
+在例 6.5.1 中, 统计量  $U(X_{1}, X_{2}, \cdots, X_{n})$  是待估参数  $\theta$  特殊的无偏估计. 称其为 U 统计量. 若能得到该统计量的分布或极限分布, 则可解决检验问题 (6.5.1). 下面给出 U 统计量的定义.
+
+定义 6.5.1 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体分布  $F(x)$  的独立同分布样本, 其中未知总体 F 来自非参数族 F. 设对称函数  $\phi(X_{1}, X_{2}, \cdots, X_{m})$  是待估参数  $\theta = T(F)$  的一个无偏估计, 其中  $m \leqslant n$ , 且对任意  $F \in F$ , 有  $E\left[\left|\phi(X_{1}, X_{2}, \cdots, X_{m})\right|\right] < \infty$ . 称  $\theta$  的一个对称无偏估计
+
+$$
+U _ {n} = \frac {1}{\mathrm{C} _ {n} ^ {m}} \sum_ {c} \phi (X _ {i _ {1}}, X _ {i _ {2}}, \dots , X _ {i _ {m}})
+$$
+
+为具有 m 阶核  $\phi$  的 U 统计量. 这里,  $\sum_{c}$  表示对全部  $C_{n}^{m}$  个有不同元素的  $\{i_{1}, i_{2}, \cdots, i_{m}\} \subset \{1, 2, \cdots, n\}$  求和.
+
+令  $\theta = E[\phi(X_{1}, X_{2}, \cdots, X_{m})]$ . 基于核函数  $\phi(X_{1}, X_{2}, \cdots, X_{m})$ ，定义
+
+$$
+\phi_ {k} (x _ {1}, x _ {2}, \dots , x _ {k}) = E [ \phi (x _ {1}, \dots , x _ {k}, X _ {k + 1}, \dots , X _ {m}) ], 0 \leqslant k \leqslant m,
+$$
+
+则  $\phi_{0}=E[\phi(X_{1},X_{2},\cdots,X_{m})]$ ， $\phi_{m}=E[\phi(x_{1},x_{2},\cdots,x_{m})]$ ，且对于任意 k，我们有  $E[\phi_{k}(X_{1},X_{2},\cdots,X_{k})]=\theta$ 。记  $\phi_{k}$  的方差为  $\sigma_{k}^{2}=\mathrm{Var}[\phi_{k}(X_{1},X_{2},\cdots,X_{k})]$ ，则  $\sigma_{0}^{2}=0$ ， $\sigma_{m}^{2}=\mathrm{Var}[\phi_{m}(X_{1},X_{2},\cdots,X_{m})]$ 。由条件方差分解，有  $0=\sigma_{0}^{2}\leqslant\sigma_{1}^{2}\leqslant\cdots\leqslant\sigma_{m}^{2}$ 。
+
+定理 6.5.1 U 统计量有以下性质:
+
+(1) 数学期望  $E(U_{m}) = E[\phi(X_{1}, X_{2}, \cdots, X_{m})] = \theta.$
+(2) 方差
+
+$$
+\mathrm{Var} (U _ {n}) = \frac {1}{\mathrm{C} _ {n} ^ {m}} \sum_ {k = 1} ^ {m} \mathrm{C} _ {m} ^ {k} \mathrm{C} _ {n - m} ^ {m - k} \sigma_ {k} ^ {2},
+$$
+
+特别地, 当 $\sigma_{m}^{2}<\infty$ 时, $\mathrm{Var}(U_{k})=\frac{m^{2}}{n}\cdot\sigma_{1}^{2}+O(n^{-2}).$
+
+(3) 渐近正态性. 当  $\sigma_{m}^{2}<\infty$  且  $\sigma_{1}^{2}>0$  时,
+
+$$
+\sqrt {n} (U _ {n} - \theta) \xrightarrow {\mathrm{d}} N (0, m ^ {2} \sigma_ {1} ^ {2}).
+$$
+
+---
+
+6.5 U 统计量与秩检验
+
+301
+
+证明 数学期望可由 U 统计量的定义以及期望的可加性得到. 下面, 计算 U 统计量的方差. 根据  $\sigma_{k}^{2}$  的定义, 对于  $U_{n}$  的方差计算中每一个小单元,
+
+$$
+\mathrm{Cov} (\phi (X _ {i _ {1}}, X _ {i _ {2}}, \dots , X _ {i _ {m}}), \phi (X _ {j _ {1}}, X _ {j _ {2}}, \dots , X _ {j _ {m}})) = \sigma_ {k} ^ {2},
+$$
+
+其中  $i_{1}, i_{2}, \cdots, i_{m}$  和  $j_{1}, j_{2}, \cdots, j_{m}$  为  $X_{1}, X_{2}, \cdots, X_{n}$  中选出的 m 个元素，k 为  $i_{1}, i_{2}, \cdots, i_{m}$  和  $j_{1}, j_{2}, \cdots, j_{m}$  中相同的对数. 则
+
+$$
+\begin{array}{l} \mathrm{Var} (U _ {n}) \\ = \operatorname{Var} \left[ \frac {1}{\mathrm{C} _ {n} ^ {m}} \sum_ {1 \leqslant i _ {1} <   i _ {2} <   \dots <   i _ {m} \leqslant n} \phi (X _ {i _ {1}}, X _ {i _ {2}}, \dots , X _ {i _ {m}}) \right] \\ = \frac {1}{\left(\mathrm{C} _ {n} ^ {m}\right) ^ {2}} \sum_ {i _ {1} <   i _ {2} <   \dots <   i _ {m}} \sum_ {j _ {1} <   j _ {2} <   \dots <   j _ {m}} \operatorname{Cov} \left(\phi \left(X _ {i _ {1}}, X _ {i _ {2}}, \dots , X _ {i _ {m}}\right), \phi \left(X _ {j _ {1}}, X _ {j _ {2}}, \dots , X _ {j _ {m}}\right)\right) \\ = \frac {1}{\mathrm{C} _ {n} ^ {m}} \sum_ {j _ {1} <   j _ {2} <   \dots <   j _ {m}} \operatorname{Cov} \left(\phi (X _ {1}, X _ {2}, \dots , X _ {m}), \phi (X _ {j _ {1}}, X _ {j _ {2}}, \dots , X _ {j _ {m}})\right) \\ = \frac {1}{\mathrm{C} _ {n} ^ {m}} \sum_ {k = 1} ^ {m} \mathrm{C} _ {m} ^ {k} \mathrm{C} _ {n - m} ^ {m - k} \sigma_ {k} ^ {2}. \\ \end{array}
+$$
+
+由此可知, 当  $\sigma_{m}^{2}<\infty$  时,  $\mathrm{Var}(U_{k})=\frac{m^{2}}{n}\cdot\sigma_{1}^{2}+O(n^{-2})$ . 下面来证明渐近正态性. 由于  $\phi_{1}(X_{1}),\phi_{1}(X_{2}),\cdots,\phi_{1}(X_{n})$  是独立同分布于均值为  $\theta$ , 方差为  $\sigma_{1}^{2}(\sigma_{1}^{2}\in(0,\infty))$  的分布, 若令  $U_{n}^{*}=\frac{1}{n}\sum_{i=1}^{n}\phi_{1}(X_{i})$ , 则根据中心极限定理,
+
+$$
+\sqrt {n} (U _ {n} ^ {*} - \theta) \xrightarrow {\mathrm{d}} N (0, \sigma_ {1} ^ {2}).
+$$
+
+再令
+
+$$
+T _ {n} = \sqrt {n} (U _ {n} - \theta) - m \sqrt {n} (U _ {n} ^ {*} - \theta),
+$$
+
+则可证 $E(T_{n}) = 0$ ，且
+
+$$
+\begin{array}{l} \mathrm{Var} (T _ {n}) = n \mathrm{Var} (U _ {n}) + m ^ {2} n \mathrm{Var} (U _ {n} ^ {*}) - 2 m n \mathrm{Cov} (U _ {n}, U _ {n} ^ {*}) \\ = \frac {n}{\mathrm{C} _ {n} ^ {m}} \sum_ {k = 1} ^ {m} \mathrm{C} _ {m} ^ {k} \mathrm{C} _ {n - m} ^ {m - k} \sigma_ {k} ^ {2} + m ^ {2} \sigma_ {1} ^ {2} - 2 m ^ {2} \sigma_ {1} ^ {2} \\ = m ^ {2} \sigma_ {1} ^ {2} (1 + o (1)) - m ^ {2} \sigma_ {1} ^ {2} \\ = o (1). \\ \end{array}
+$$
+
+由 Markov 不等式, 有 $T_{n} \stackrel{\mathrm{p}}{\rightarrow} 0$, 因此, 由 Slutsky 定理, 可知
+
+$$
+\sqrt {n} (U _ {n} - \theta) \xrightarrow {\mathrm{d}} N (0, m ^ {2} \sigma_ {1} ^ {2}).
+$$
+
+根据定理 6.5.1 的渐近正态性, 可知 U 统计量具有相合性. 进一步地, 可以构造 U 统计量来做一些非参数检验.
+
+---
+
+302
+
+第六章 非参数方法
+
+例 6.5.2 设总体 X 的分布函数为  $F(x - \theta)$ ，其中  $F(x)$  是关于原点对称的连续型分布，具体形式未知。考虑检验问题
+
+$$
+H _ {0}: \theta = 0 \quad \leftrightarrow \quad H _ {1}: \theta > 0,
+$$
+
+即检验对称分布的对称中心在原点, 还是在原点的右边. 设  $X_{1}, X_{2}, \cdots, X_{n}$  是来自总体 X 的一个样本. 当原假设  $H_{0}: \theta = 0$  成立时,  $P(X_{1} + X_{2} > 0) = 0.5$ ; 当备择假设  $H_{1}: \theta > 0$  成立时,  $P(X_{1} + X_{2} > 0) > 0.5$ . 令  $\omega = P(X_{1} + X_{2} > 0)$ , 则上述检验问题可简化为关于参数  $\omega$  的检验问题,
+
+$$
+H _ {0}: \omega = 0. 5 \leftrightarrow H _ {1}: \omega > 0. 5.
+$$
+
+根据两点分布的性质，
+
+$$
+\phi (X _ {1}, X _ {2}) = \left\{ \begin{array}{l l} 1, & X _ {1} + X _ {2} > 0, \\ 0, & X _ {1} + X _ {2} \leqslant 0 \end{array} \right.
+$$
+
+是  $\omega$  的一个无偏估计. 由对称函数  $\phi(X_{1}, X_{2})$  可构造 U 统计量,
+
+$$
+U = U (X _ {1}, X _ {2}, \dots , X _ {n}) = \frac {\sum \phi (X _ {i _ {1}} , X _ {i _ {2}})}{\mathrm{C} _ {n} ^ {2}},
+$$
+
+其中 $1 \leqslant i_1 < i_2 \leqslant n$, $\sum$ 表示对所有组合 $(i_1, i_2)$ 求和. 根据定理 6.5.1 可知, $U$ 也是 $\omega$ 的一个无偏估计. 由于在备择假设成立时, $\omega$ 的值较大, 则当 $U(X_1, X_2, \cdots, X_n) \geqslant c$ 时, 拒绝原假设. 具体的 $c$ 由下面的方式确定. 由于 $m = 2$, 当 $H_0$ 为真时, $E[U(X_1, X_2, \cdots, X_n)] = 0.5$, 且 $\phi_1(x_1) = F(x_1), \sigma_1^2 = \frac{1}{12}, \phi_2(x_1, x_2) = \phi(x_1, x_2), \sigma_2^2 = \frac{1}{4}$. 则
+
+$$
+\mathrm{Var} [ U (X _ {1}, X _ {2}, \dots , X _ {n}) ] = \frac {2 n - 1}{6 n (n - 1)} = \frac {1}{3 n} + O (n ^ {- 2}),
+$$
+
+在原假设成立时, $\sqrt{n} \cdot \left(U - \frac{1}{2}\right) \xrightarrow{\mathrm{d}} N\left(0, \frac{1}{3}\right), n \to \infty$. 因此, 在大样本场合下检验问题的拒绝域为
+
+$$
+U \geqslant \frac {1}{2} + \sqrt {\frac {1}{3 n}} \cdot u _ {\alpha},
+$$
+
+其中  $u_{\alpha}$  是标准正态分布的上  $\alpha$  分位数.
+
+前面的单样本的 U 统计量可以推广至两样本的情形.考虑两个相互独立的总体，其分布分别为 F 和 G，关心的参数  $\theta = \theta(F, G)$ .类似地，设  $X_{1}, X_{2}, \cdots, X_{n_{1}}$ ，和  $Y_{1}, Y_{2}, \cdots, Y_{n_{2}}$  是分别来自 F 和 G 的随机样本.设  $\phi(X, Y)$  为  $\theta$  的无偏估计.在  $X_{1}, X_{2}, \cdots, X_{n_{1}}$  给定时， $\phi(X_{1}, X_{2}, \cdots, X_{n_{1}}, Y_{1}, Y_{2}, \cdots, Y_{n_{2}})$  为  $Y_{1}, Y_{2}, \cdots, Y_{n_{2}}$  的对称
+
+---
+
+6.5 U 统计量与秩检验
+
+303
+
+函数, 而在  $Y_{1}, Y_{2}, \cdots, Y_{n_{2}}$  给定时,  $\phi(X_{1}, X_{2}, \cdots, X_{n_{1}}, Y_{1}, Y_{2}, \cdots, Y_{n_{2}})$  为  $X_{1}, X_{2}, \cdots, X_{n_{1}}$  的对称函数. 令
+
+$$
+U _ {n _ {1}, n _ {2}} = \frac {1}{\mathrm{C} _ {n _ {1}} ^ {m _ {1}}} \frac {1}{\mathrm{C} _ {n _ {2}} ^ {m _ {2}}} \sum_ {i _ {1} <   i _ {2} <   \dots <   i _ {m _ {1}}} \sum_ {j _ {1} <   j _ {2} <   \dots <   j _ {m _ {2}}} \phi (X _ {i _ {1}}, X _ {i _ {2}}, \dots , X _ {i _ {m _ {1}}}, Y _ {j _ {1}}, Y _ {j _ {2}}, \dots , Y _ {j _ {m _ {2}}}),
+$$
+
+则称  $U_{n_{1},n_{2}}$  是以  $\phi(X_{1},X_{2},\cdots,X_{m_{1}},Y_{1},Y_{2},\cdots,Y_{m_{2}})$  为核的两样本 U 统计量. 这里的对称化, 使得所有  $X_{i}$  地位是一样的, 所有  $Y_{j}$  地位是一样的, 但是两者不一定可以交换. 类似地, 也可以定义:
+
+$$
+\sigma_ {i j} ^ {2} = \mathrm{Cov} \left(\phi (X _ {1}, \dots , X _ {i}, X _ {i + 1}, \dots , X _ {m _ {1}}, Y _ {1}, \dots , Y _ {j}, Y _ {j + 1}, \dots , Y _ {m _ {2}}\right),
+$$
+
+$$
+\phi (X _ {1}, \dots , X _ {i}, X _ {i + 1} ^ {*}, \dots , X _ {m _ {1}} ^ {*}, Y _ {1}, \dots , Y _ {j}, Y _ {j + 1} ^ {*}, \dots , Y _ {m _ {2}} ^ {*})).
+$$
+
+这里  $X_{1},\cdots,X_{i},X_{i+1},\cdots,X_{m_{1}},X_{i+1}^{*},\cdots,X_{m_{1}}^{*}$  是来自总体分布 F 的独立同分布样本， $Y_{1},\cdots,Y_{j},Y_{j+1},\cdots,Y_{m_{2}},Y_{j+1}^{*},\cdots,Y_{m_{2}}^{*}$  是来自总体分布 G 的独立同分布样本. 类似于一元的情形, 有下面的结论.
+
+定理6.5.2 两样本U统计量 $U_{n_1,n_2}$ 的数学期望为 $E(U_{n_1,n_2}) = \theta$，其方差
+
+$$
+\mathrm{Var} (U _ {n _ {1}, n _ {2}}) = \sum_ {k = 0} ^ {m _ {1}} \sum_ {l = 0} ^ {m _ {2}} \frac {\mathrm{C} _ {m _ {1}} ^ {k} \mathrm{C} _ {n _ {1} - m _ {1}} ^ {m _ {1} - k}}{\mathrm{C} _ {n _ {1}} ^ {m _ {1}}} \frac {\mathrm{C} _ {m _ {2}} ^ {l} \mathrm{C} _ {n _ {2} - m _ {2}} ^ {m _ {2} - l}}{\mathrm{C} _ {n _ {2}} ^ {m _ {2}}} \sigma_ {k l} ^ {2}.
+$$
+
+进一步地, 若 $\sigma_{m_1m_2}^2 < \infty$, $n_1 + n_2 \to \infty$ 且 $n_1 / (n_1 + n_2) \to p \in (0,1)$, 则
+
+$$
+\sqrt {n _ {1} + n _ {2}} (U _ {n _ {1}, n _ {2}} - \theta) \xrightarrow {\mathrm{d}} N (0, \sigma^ {2}), \quad \sigma^ {2} = \frac {m _ {1} ^ {2}}{p} \sigma_ {1 0} ^ {2} + \frac {m _ {2} ^ {2}}{p} \sigma_ {0 1} ^ {2}.
+$$
+
+## 6.5.2 秩检验
+
+除了 U 统计量检验方法外, 秩检验方法也是非常重要的非参数检验方法. Wilcoxon (1945) 提出秩和检验方法之后, 秩和检验和其他秩方法逐渐受到人们的重视. 秩和检验方法不考虑总体的参数和总体的分布类型, 而是对样本所代表的总体的分布和分布位置进行假设检验, 其在应用上有很大的意义. 秩检验方法是建立在秩与秩统计量基础上的非参数方法.
+
+例 6.5.3 对于某生物实验中的对照实验, 设  $(X_{1}, Y_{1}), (X_{2}, Y_{2}), \cdots, (X_{n}, Y_{n})$ , 其中  $X_{1}, X_{2}, \cdots, X_{n}, Y_{1}, Y_{2}, \cdots, Y_{n}$  分别是实验组和对照组的结果. 假设实验组服从连续分布  $F(x)$ , 对照组的分布为  $F(x - \theta)$ . 设  $Z_{i} = Y_{i} - X_{i}$ , 则  $Z_{i}$  的分布是对称的连续分布, 对称点为  $\theta$ . 现关心实验效果  $\theta$  是否为 0, 即检验
+
+$$
+H _ {0}: \theta = 0 \quad \leftrightarrow \quad H _ {1}: \theta \neq 0.
+$$
+
+---
+
+304
+
+第六章 非参数方法
+
+若原假设  $H_{0}:\theta=0$  成立, 则  $Z_{i}$  的取值中应接近一半的值大于 0, 一半的值小于 0; 若大部分  $Z_{i}$  的取值大于 (或小于) 0, 则可以拒绝原假设. 令  $\phi_{i}=I(Z_{i}>0)$ ,
+
+$$
+S ^ {+} = \sum_ {i = 1} ^ {n} \phi_ {i} = \# \{Z _ {i} > 0, i = 1, 2, \dots , n \}
+$$
+
+其中记号 # 表示计数. 原假设  $H_{0}$  成立时,  $\phi_{i} \sim B(1,0.5)$ , 则  $S^{+} \sim B(n,0.5)$ . 于是当  $S^{+}$  比较小或比较大时拒绝原假设, 认为  $\theta \neq 0$ . 检验临界值分别为  $B_{1-\alpha/2}(n,0.5)$  和  $B_{\alpha/2}(n,0.5)$ ,  $\alpha$  为检验水平.
+
+在例 6.5.3 中, 所用的检验方法称为符号检验. 然而, 符号检验仅仅使用样本是正数还是负数的信息, 而没有使用样本数据值大小的信息. 为了更有效地解决对称中心  $\theta$  是否等于 0 的检验问题, 不仅应用正负号信息, 还应该使用其数值大小的信息. Wilcoxon (威尔科克森) 提出的秩和检验方法可改进符号检验方法. 为此, 下面首先介绍秩与秩统计量.
+
+定义 6.5.2 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自连续型分布 F 的独立同分布样本，得到次序统计量  $X_{(1)} < X_{(2)} < \cdots < X_{(n)}$ . 若  $X_{i} = X_{(R_{i})}$ ，则称  $X_{i} (i = 1, 2, \cdots, n)$  在  $X_{1}, X_{2}, \cdots, X_{n}$  中的秩为  $R_{i}$ ，简称  $X_{i}$  的秩为  $R_{i}, R_{i} = 1, 2, \cdots, n$ .  $R = (R_{1}, R_{2}, \cdots, R_{n})$  以及 R 的任意可测函数称为秩统计量. 基于秩统计量的检验方法为秩检验.
+
+由于随机样本  $X_{1}, X_{2}, \cdots, X_{n}$  来自连续型分布 F，从而以概率 1 保证，样本  $X_{1}, X_{2}, \cdots, X_{n}$  互不相等。R 为离散型随机变量，它取 n! 个值，且取  $1, 2, \cdots, n$  的任意一排列  $(r_{1}, r_{2}, \cdots, r_{n})$  的概率都是 1/n！，即 R 服从均匀分布。因此，秩统计量的分布和总体分布 F 没有关系。对于单个秩统计量  $R_{i}$ ，有
+
+$$
+R _ {i} = \sum_ {k = 1} ^ {n} I (X _ {k} \leqslant X _ {i}), i = 1, 2, \dots , n.
+$$
+
+由于 R 服从均匀分布, 单个的秩  $R_{i}(i=1,2,\cdots,n)$  也服从均匀分布:
+
+$$
+P (R _ {i} = r) = 1 / n, r = 1, 2, \dots , n,
+$$
+
+且 $R_{i}$ 和 $R_{j}(i\neq j)$ 的联合分布也是均匀分布:
+
+$$
+P (R _ {i} = r _ {1}, R _ {j} = r _ {2}) = \frac {1}{n (n - 1)}, r _ {1} \neq r _ {2}.
+$$
+
+从而, 可得 $E(R_i) = \frac{n + 1}{2}$, $\operatorname{Var}(R_i) = \frac{n^2 - 1}{12}$, $\operatorname{Cov}(R_i, R_j) = -\frac{n + 1}{12}$.
+
+定义 6.5.3 对于随机样本  $X_{1}, X_{2}, \cdots, X_{n}$ ，设  $R_{i}^{+}$  为  $|X_{i}|$  在  $|X_{1}|, |X_{2}|, \cdots, |X_{n}|$  中的秩， $\phi_{i} = I(X_{i} > 0)$ ，则称
+
+$$
+R ^ {+} = \left(\phi_ {1} R _ {1} ^ {+}, \phi_ {2} R _ {2} ^ {+}, \dots , \phi_ {n} R _ {n} ^ {+}\right)
+$$
+
+---
+
+6.5 U 统计量与秩检验
+
+305
+
+为 $(X_{1},X_{2},\cdots,X_{n})$ 的符号秩,称
+
+$$
+W ^ {+} = \sum_ {i = 1} ^ {n} \phi_ {i} R _ {i} ^ {+}
+$$
+
+为符号秩和统计量.
+
+由于符号秩涉及符号, 对于不同的分布 $F, \phi$ 取 0 或者 1 的情况完全不同, 因此一般的符号秩统计量应该与 $F$ 密切相关. 特别地, 若 $F$ 连续且关于 0 对称, 可以证明, $\phi_1, |X_1|, \phi_2, |X_2|, \cdots, \phi_n, |X_n|$ 相互独立, 且 $P(\phi_i = 0) = P(\phi_i = 1) = 1/2$. 应用符号秩和统计量可以做一些非参数检验. 例如, 在例 6.5.3 中, 记 $R_i$ 为 $Z_i$ 的秩, 则可以考虑符号秩和统计量:
+
+$$
+W _ {n} ^ {+} = \sum_ {i = 1} ^ {n} \phi_ {i} R _ {i}.
+$$
+
+当 $W_{n}^{+}$ 偏大或偏小时, 都可以拒绝原假设 $H_{0}$. 为了求检验的 $p$ 值和检验的临界值, 下面研究原假设 $H_{0}: \theta = 0$ 成立, 即总体的分布关于原点 0 对称时, 符号秩和检验统计量 $W_{n}^{+}$ 的分布的性质.
+
+$W_{n}^{+}$ 服从离散型分布, 它可能取  $0,1,2,\cdots,\frac{n(n+1)}{2}$  各个值. 令  $t_{n,d}$  表示从  $1,2,\cdots,n$  这 n 个数字中任取若干个数, 其和恰为 d 的取法种数, 其中  $d=0,1,2,\cdots,\frac{n(n+1)}{2}$ . 则在总体 X 的分布是关于原点 0 对称的连续型分布时,  $R_{1}, R_{2}, \cdots, R_{n}$  给定后  $W_{n}^{+}=d$  的条件概率为
+
+$$
+\begin{array}{l} P (W _ {n} ^ {+} = d | R _ {1}, R _ {2}, \dots , R _ {n}) = P \bigg (\sum_ {i = 1} ^ {n} \phi_ {i} R _ {i} = d \bigg | R _ {1}, R _ {2}, \dots , R _ {n} \bigg) \\ = t _ {n, d} / 2 ^ {n}, \quad d = 0, 1, 2, \dots , \frac {n (n + 1)}{2}. \\ \end{array}
+$$
+
+这个条件概率和  $R_{1}, R_{2}, \cdots, R_{n}$  没有关系. 这说明在  $R_{1}, R_{2}, \cdots, R_{n}$  给定后  $W_{n}^{+} = d$  的条件概率就是  $W_{n}^{+} = d$  的概率. 由此, 对于检验水平  $\alpha$ , 即可得检验临界值.
+
+例 6.5.3 中的配对问题可以推广至更一般的情形. 设  $X_{1}, X_{2}, \cdots, X_{m}$  为来自总体  $F(x)$  的独立同分布样本,  $Y_{1}, Y_{2}, \cdots, Y_{n}$  为来自总体  $G(x)$  的独立同分布样本, 且两总体相互独立. 令  $\gamma = P(X < Y)$ , 感兴趣的问题是检验
+
+$$
+\gamma = \frac {1}{2} \leftrightarrow \gamma \neq \frac {1}{2}. \tag {6.5.2}
+$$
+
+当  $F(x)$  为连续型对称分布且  $G(x)=F(x-\theta)$  时, 该检验问题也等价于检验
+
+$$
+\theta = 0 \quad \leftrightarrow \quad \theta \neq 0, \tag {6.5.3}
+$$
+
+---
+
+306
+
+第六章 非参数方法
+
+其假设两个分布的类型相同, 而对称点可能不同. 若把  $X_{i}$  对应的秩相加:
+
+$$
+W _ {n} = \sum_ {k = 1} ^ {m} R _ {k}, \tag {6.5.4}
+$$
+
+其中 $(R_{1}, R_{2}, \cdots, R_{m+n})$ 为样本 $(X_{1}, X_{2}, \cdots, X_{m}, Y_{1}, Y_{2}, \cdots, Y_{n})$ 的秩统计量，则当 $\gamma$ 太大或者太小时，有理由认为 $W_{n}$ 很大或者很小。这里把 $X_{i}$ 对应的秩相加，等价地，也可以考虑把 $Y_{j}$ 对应的秩相加。从而，可以通过统计量 $W_{n}$ 来检验两总体是否相同。这种检验方法即为 Wilcoxon 秩和检验方法，称 (6.5.4) 式为 Wilcoxon 秩和统计量。拒绝域为
+
+$$
+\left\{W _ {n} \leqslant W _ {1 - \alpha / 2} (m, n) \quad \text {或} \quad W _ {n} \geqslant W _ {\alpha / 2} (m, n) \right\}.
+$$
+
+具体的临界值可参见现成的分布表. 实际上, 可以证明 $W_{n}$ 的分布关于 $\frac{1}{2} m(m + n + 1)$ 是对称的, 且 $E(W_{n}) = \frac{m(m + n + 1)}{2}, \operatorname{Var}(W_{n}) = \frac{mn(m + n + 1)}{12}$. 在样本容量较大时,
+
+$$
+W ^ {*} = \frac {W _ {n} - \frac {m (m + n + 1)}{2}}{\sqrt {\frac {m n (m + n + 1)}{1 2}}} \stackrel {\cdot} {\sim} N (0, 1). \tag {6.5.5}
+$$
+
+在 m, n 都大于等于 20 时, 近似效果已很好.
+
+对于检验问题 (6.5.2), 也可以从 U 统计量的角度, 构造参数  $\gamma = P(X < Y)$  的 U 统计量:
+
+$$
+U _ {n} = \frac {1}{m n} \sum_ {i = 1} ^ {m} \sum_ {j = 1} ^ {n} I \left(X _ {i} <   Y _ {j}\right).
+$$
+
+这里核函数为  $\phi(x,y)=I(x<y)$ . 则根据上一小节的内容, 可得
+
+$$
+\sigma_ {1 1} ^ {2} = \mathrm{Var} [ I (X <   Y) ] = P (X <   Y) [ 1 - P (X <   Y) ] = \gamma (1 - \gamma) <   \infty ,
+$$
+
+$$
+\sigma_ {0 1} ^ {2} = \mathrm{Cov} \left(I (X <   Y), I \left(X <   Y _ {1}\right)\right) = \int \left[ 1 - G (x) \right] ^ {2} \mathrm{d} F (x) - \gamma^ {2},
+$$
+
+$$
+\sigma_ {1 0} ^ {2} = \mathrm{Cov} \left(I (X <   Y), I \left(X _ {1} <   Y\right)\right) = \int F (x) ^ {2} \mathrm{d} G (x) - \gamma^ {2}.
+$$
+
+当  $m+n\to\infty$  且  $m/(m+n)\to p\in(0,1)$  时，由定理 6.5.2 中两样本 U 统计量的渐近结果，有
+
+$$
+\sqrt {m + n} \left(U _ {n} - \gamma\right) \xrightarrow {\mathrm{d}} N \left(0, \sigma^ {2}\right), \sigma^ {2} = \frac {1}{p} \sigma_ {1 0} ^ {2} + \frac {1}{1 - p} \sigma_ {0 1} ^ {2}.
+$$
+
+---
+
+6.5 U 统计量与秩检验
+
+307
+
+若再用一次U统计量的方法，可以构造出 $\sigma^2$ 的相合估计 $\hat{\sigma}^2$ .由Slutsky定理，可得
+
+$$
+\frac {\sqrt {m + n} (U _ {n} - \gamma)}{\hat {\sigma} ^ {2}} \xrightarrow {\mathrm{d}} N (0, 1). \tag {6.5.6}
+$$
+
+从而, 得到检验的接受域: $A = \left\{u_{\alpha / 2} \leqslant \frac{\sqrt{m + n}(U_n - 1/2)}{\hat{\sigma}^2} \leqslant u_{1 - \alpha / 2}\right\}$. 若对于检验问题 (6.5.3), 当原假设成立时, 两个分布相同, 则可以直接计算出 $\sigma^2$, 代入即可. 这种方法即为 Mann-Whitney (曼-惠特尼) 检验方法.
+
+此外, 还可以通过 U 统计量的工具得到秩和检验统计量 (6.5.4) 的极限分布. 对于秩统计量, 有
+
+$$
+R _ {i} = \sum_ {k = 1} ^ {m} I \left(X _ {k} \leqslant X _ {i}\right) + \sum_ {j = 1} ^ {n} I \left(Y _ {j} \leqslant X _ {i}\right), \quad i = 1, 2, \dots , m.
+$$
+
+则
+
+$$
+\begin{array}{l} W _ {n} = \sum_ {i = 1} ^ {m} R _ {i} = \sum_ {i = 1} ^ {m} \left(\sum_ {k = 1} ^ {m} I \left(X _ {k} \leqslant X _ {i}\right) + \sum_ {j = 1} ^ {n} I \left(Y _ {j} \leqslant X _ {i}\right)\right) \\ = \sum_ {i = 1} ^ {m} \sum_ {j = 1} ^ {m} I \left(X _ {i} \leqslant X _ {j}\right) + \sum_ {i = 1} ^ {m} \sum_ {j = 1} ^ {n} I \left(Y _ {j} \leqslant X _ {i}\right) \\ = \frac {m (m + 1)}{2} + m n - \sum_ {i = 1} ^ {m} \sum_ {j = 1} ^ {n} I \left(X _ {i} <   Y _ {j}\right). \\ \end{array}
+$$
+
+因此, $W_{n} = \frac{m(m + 1)}{2} + mn(1 - U_{n})$. 由 $U_{n}$ 的极限分布 (6.5.6), 可得
+
+$$
+\sqrt {m + n} \left(1 + \frac {m + 1}{2 n} - \frac {1}{m n} W _ {n} - \gamma\right) \xrightarrow {\mathrm{d}} N (0, \sigma^ {2}).
+$$
+
+这即是经典的 Wilcoxon 两样本秩和检验.
+
+例 6.5.4 在某小学随机采集 12 岁男童和女童各 10 名的头发样品, 检测发样中钙含量 (单位:  $\mu g/g$ ), 数据见表 6.5.1. 检验男童与女童头发中钙含量有无差异?
+
+首先对男童和女童的数据进行正态性检验. 经检验, 在检验水平 0.05 下, 认为这两组数据都不符合正态分布. 因此, 下面考虑用非参数检验中的秩和检验方法. 把这 20 个数据放在一起得到相应的秩, 见表 6.5.1, 从而得到男童的秩和为 $W_1 = 77$, 选其作为 Wilcoxon 秩和检验统计量 $W$. 在原假设 $H_0$ 成立的情况下, $W$ 的均值和方差分别为
+
+$$
+E (W) = \frac {m (m + n + 1)}{2} = 1 0 5, \mathrm{Var} (W) = \frac {m n (m + n + 1)}{1 2} = 1 7 5.
+$$
+
+根据 (6.5.5) 式, 男童的秩和 $W = 77$ 与 $E(W)$ 之差的绝对值约为标准差的 2 倍: $(77 - 105) / 13.229 = -2.117$, 因此, 在检验水平 $\alpha = 0.05$ 下, 认为两组数据是有差异的.
+
+---
+
+308
+
+第六章 非参数方法
+
+表 6.5.1 12 岁小学生发样中的钙含量
+
+<table><tr><td colspan="2">男童</td><td colspan="2">女童</td></tr><tr><td>1843</td><td>18</td><td>842</td><td>14</td></tr><tr><td>383</td><td>4</td><td>336</td><td>2</td></tr><tr><td>406</td><td>5</td><td>742</td><td>12</td></tr><tr><td>334</td><td>1</td><td>1367</td><td>15</td></tr><tr><td>443</td><td>6</td><td>1623</td><td>16</td></tr><tr><td>676</td><td>11</td><td>597</td><td>8</td></tr><tr><td>771</td><td>13</td><td>1976</td><td>19</td></tr><tr><td>358</td><td>3</td><td>1818</td><td>17</td></tr><tr><td>607</td><td>9</td><td>643</td><td>10</td></tr><tr><td>484</td><td>7</td><td>4534</td><td>20</td></tr><tr><td>m=10</td><td>W1=77</td><td>n=10</td><td>W2=133</td></tr></table>
+
+由前面的分析可知, Wilcoxon 秩和检验具有如下优点: (1) 不受总体分布限制, 适用面广; (2) 适用于等级数据及两端无确定值的数据; (3) 易于理解, 易于计算. 秩方法的内容非常丰富. 除了符号秩和检验与秩和检验这两种方法之外, 还可以对秩进行函数变换, 例如线性秩统计量等. 对于秩方法更深入的介绍, 可参考陈希孺 (2012).
+
+## 习题六
+
+1. 证明直方图 6.1.1 的线下面积为 1.
+2. 证明直方图 $\hat{f}_h(x)$ 不是总体密度函数 $f(x)$ 的无偏估计，而且
+
+$$
+\mathrm{Var} [ \hat {f} _ {h} (x) ] = \frac {1}{n h ^ {2}} \int_ {\Delta_ {j}} f (u) \mathrm{d} u \left[ 1 - \int_ {\Delta_ {j}} f (u) \mathrm{d} u \right] \approx \frac {1}{n h} f (x).
+$$
+
+3. 生成 $N(0,1)$ 的200个随机样本.
+
+(1) 作直方图;
+(2) 根据这些数据, 尝试不同的窗宽, 得到核密度估计的最优窗宽;
+(3) 计算得到的核密度估计和真实密度之间的差异.
+
+4. 对于均匀核、Gauss 核、Epanechnikov 核和四次核这四种核函数  $K(u)$ ，分别计算
+
+$$
+\int K ^ {2} (u) \mathrm{d} u, \quad \int u ^ {2} K (u) \mathrm{d} u.
+$$
+
+---
+
+习题六
+
+309
+
+5. 验证下面的函数为一个密度函数:
+
+$$
+f (x) = \frac {2}{3} \left[ \left(\frac {x}{2} + 1\right) I (x \in [ - 2, 0)) + (1 - x) I (x \in [ 0, 1)) \right],
+$$
+
+计算 $||f'||^2$ ，并计算估计该密度函数的核估计的最优窗宽.
+
+6. 生成 $\frac{2}{3} N_2(\boldsymbol{\mu}_1, \Sigma) + \frac{1}{3} N_2(\boldsymbol{\mu}_2, \Sigma)$ 的 600 个二维随机样本, 其中 $\boldsymbol{\mu}_1 = \begin{pmatrix} 0.4 \\ 0.4 \end{pmatrix}$, $\boldsymbol{\mu}_2 = \begin{pmatrix} 0.6 \\ 0.6 \end{pmatrix}$, $\Sigma = \begin{pmatrix} 0.1 \\ & 0.1 \end{pmatrix}$, 试用核密度方法估计其密度函数.
+
+7. 对于标准正态分布 $N(0,1)$, 证明其核密度估计的最优窗宽为 $h_0 = (24\sqrt{\pi})^{1/3} n^{-1/3}$. 若分布变为 $N(0, \sigma^2)$ 和 $N(\mu, \sigma^2)$, 其最优窗宽有什么变化?
+
+8. 设  $f(x)$  是正态分布  $N(\mu, \sigma^{2})$  的概率密度函数.  $X_{1}, X_{2}, \cdots, X_{n}$  为来自  $f(x)$  的独立同分布样本,  $\hat{f}_{n}(x)$  是具有 Gauss 核  $K(u)$  和窗宽  $h_{n}$  的  $f(x)$  的核估计. 求  $E[\hat{f}_{n}(x)]$  和  $\operatorname{Var}[\hat{f}_{n}(x)]$ .
+
+9. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体 F 的独立同分布样本，并令  $F_{n}$  为经验分布函数，a < b 为固定数，定义  $\theta = T(F) = F(b) - F(a)$ ，令  $\hat{\theta} = T(F_{n}) = F_{n}(b) - F_{n}(a)$ ，试求  $\theta$  的标准误差，进而给出  $\theta$  的一个渐近  $1 - \alpha$  置信区间.
+
+10. 有人制造一个含六个面的骰子，并声称是均匀的。现设计一个试验来检验此命题:连续投掷600次，发现出现六个面的频数分别为97, 104, 82, 110, 93, 114。问能否在显著性水平0.2下认为骰子是均匀的？
+
+11. 下面是某车间生产的一批轴的实际直径 (单位: mm):
+9.967, 10.001, 9.994, 10.023, 9.969, 10.013, 9.992, 9.954, 9.934, 9.965
+分别用 Kolmogorov-Smirnov 检验和  $\chi^{2}$  拟合优度检验, 检验该尺寸是否服从均值为 10, 标准差为 0.022 的正态分布.
+
+12. 设总体分布关于原点对称, 且  $X_{1}, X_{2}, \cdots, X_{n}$  为来自此总体的独立同分布样本,
+ $X_{(1)} \leqslant X_{(2)} \leqslant \cdots \leqslant X_{(n)}$  为次序统计量, 并记
+
+$$
+E [ X _ {(i)} ] = m _ {i}, \mathrm{Cov} (X _ {(i)}, X _ {(j)}) = v _ {i j}, i, j = 1, 2, \dots , n.
+$$
+
+请证明:
+
+(1) $m_{i} = -m_{n + 1 - i}$, 且 $\sum_{i=1}^{n} m_{i} = 0$;
+(2) $v_{ij}=v_{n+1-i,n+1-j}$, 且 $V=(v_{ij})$ 不仅关于主对角线对称, 而且还关于副对角线对称.
+
+13. 请检验下面 18 个数据是否来自 $N(0,1)$:
+
+$$
+- 2. 0 1, \quad - 1. 5 8, \quad - 1. 1 6, \quad - 0. 8 3, \quad - 0. 5 3, \quad - 0. 2 9, \quad 0. 0 2, \quad 0. 2 8, \quad 0. 5 1,
+$$
+
+$$
+- 1. 7 5, \quad - 1. 3 3, \quad - 0. 9 8, \quad - 0. 8 2, \quad - 0. 2 9, \quad - 0. 2 6, \quad 0. 0 3, \quad 0. 3 5, \quad 1. 1 3.
+$$
+
+---
+
+310
+
+第六章 非参数方法
+
+14. 从正态分布 $N(1,4)$ 中随机产生 $n$ 个随机样本. 对于 $n = 10, 20, 30, 50$ 等不同情形, 分别用 Kolmogorov-Smirnov 检验和 $\chi^2$ 拟合优度检验, 检验该样本是否服从正态分布. 重复前面的过程 100 次, 试分析随着样本量 $n$ 的提高, 拒绝样本服从正态分布的概率的变化情况.
+15. 在 $\pi$ 的前 800 位小数的数字中, 0 至 9 十个数字分别出现了 74, 92, 83, 79, 80, 73, 77, 75, 76 和 91 次. 试在水平 0.05 下检验这十个数字出现的可能性相等.
+16. 证明当 $n = 3$ 时, 正态性 W 检验的统计量 $W$ 的密度函数为
+
+$$
+\frac {3}{\pi} [ w (1 - w) ] ^ {- 1 / 2}, 3 / 4 \leqslant w \leqslant 1.
+$$
+
+17. 从某连续总体中抽取一个样本量为 100 的样本, 发现样本均值和样本标准差分别为 -0.225 和 1.282, 落在不同区间的频数如下表所示:
+
+| 区间 | (-∞,-1) | [-1,-0.5) | [-0.5,0) | [0,0.5) | [0.5,1) | [1,∞) |
+| --- | --- | --- | --- | --- | --- | --- |
+| 观测频数 | 25 | 10 | 18 | 24 | 10 | 13 |
+| 理论频数 | 27 | 14 | 16 | 14 | 12 | 17 |
+
+可否在显著性水平0.05下认为该总体服从正态分布？
+
+18. 为研究患慢性气管炎与吸烟量的关系, 现调查了 272 人, 其结果如下:
+
+<table><tr><td rowspan="2">是否患慢性气管炎</td><td colspan="3">每日吸烟量/支</td><td rowspan="2">和</td></tr><tr><td>0-9</td><td>10-19</td><td>≥20</td></tr><tr><td>是</td><td>22</td><td>98</td><td>25</td><td>145</td></tr><tr><td>否</td><td>22</td><td>89</td><td>16</td><td>127</td></tr><tr><td>和</td><td>44</td><td>187</td><td>41</td><td>272</td></tr></table>
+
+请问患慢性气管炎与每日的吸烟量有关吗 ( $\alpha = 0.05$ )?
+
+19. 美国在 1995 年因几种违法行为而被捕的人数按照性别为
+
+| 性别 | 男 | 女 |
+| --- | --- | --- |
+| 谋杀 | 13 927 | 1 457 |
+| 抢劫 | 116 741 | 12 068 |
+| 恶性攻击 | 328 476 | 70 938 |
+| 偷盗 | 236 495 | 29 866 |
+| 非法侵占 | 704 565 | 351 580 |
+| 偷盗机动车 | 119 175 | 18 058 |
+| 纵火 | 11 413 | 2 156 |
+
+从这些违法行为的组合看来, 是否与性别无关? 如果只考虑谋杀与抢劫罪, 结论是否一样?
+
+---
+
+习题六
+
+311
+
+20. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体 F 的独立同分布样本, 若 F 连续且关于 0 对称, 证明  $\phi_{1}, |X_{1}|, \phi_{2}, |X_{2}|, \cdots, \phi_{n}, |X_{n}|$  相互独立, 且  $P(\phi_{i}=0)=P(\phi_{i}=1)=1/2$ .
+21. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体 X 的独立同分布样本, 令  $p = P(X > 0)$ , 则对参数  $\theta = p(1 - p)$ , 求
+
+(1)  $\theta$  的 U 统计量  $U^{*}$ ;
+(2) $\operatorname{Var}(U^*)$;
+(3) $U^{*}$ 的渐近方差.
+
+22. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体  $X \sim F$  的独立同分布样本,  $X_{(1)}, X_{(2)}, \cdots, X_{(n)}$  为其次序统计量. 对于总体分布 F 的某个参数  $\theta(F)$ , 设  $\varphi(x_{1}, x_{2}, \cdots, x_{m})$  满足条件
+
+$$
+E _ {F} [ \varphi (X _ {1}, X _ {2}, \dots , X _ {m}) ] = \theta (F), \forall F,
+$$
+
+证明
+
+$$
+\begin{array}{l} E [ \varphi (X _ {1}, X _ {2}, \dots , X _ {m}) | (X _ {(1)}, X _ {(2)}, \dots , X _ {(n)}) ] \\ = \frac {1}{n (n - 1) \cdots (n - m + 1)} \sum^ {\prime} \varphi (X _ {\alpha_ {1}}, X _ {\alpha_ {2}}, \dots , X _ {\alpha_ {m}}) \\ \end{array}
+$$
+
+为 $\theta (F)$ 的UMVUE.这里 $\sum^{\prime}$ 表示求和的范围为
+
+$\{(\alpha_{1},\alpha_{2},\cdots,\alpha_{m}):\alpha_{1},\alpha_{2},\cdots,\alpha_{m}$  互不相同, $1\leqslant\alpha_{i}\leqslant n,i=1,2,\cdots,m\}.$
+
+23. 设  $X_{1}, X_{2}, \cdots, X_{n}$  和  $Y_{1}, Y_{2}, \cdots, Y_{m}$  为分别来自连续分布  $F(z)$  和  $G(y)$  的独立同分布样本, 两样本之间也相互独立.  $\theta = P(X_{1} + X_{2} < Y_{1} + Y_{2})$ .
+
+(1) 证明在  $H_{0}: F = G$  下,  $\theta = 1/2;$
+(2) 试求关于  $\theta$  的 U 统计量.
+
+24. 证明 (6.5.4) 式的 Wilcoxon 秩和统计量 $W_{n}$ 的分布关于 $\frac{1}{2} m(m + n + 1)$ 是对称的, 且 $E(W_{n}) = \frac{m(m + n + 1)}{2}, \operatorname{Var}(W_{n}) = \frac{mn(m + n + 1)}{12}$.
+
+25. 在研究计算器是否影响学生手算能力的试验中, 13 个没有计算器的学生 (A 组) 和 10 个拥有计算器的学生 (B 组) 对一些计算题进行了手算测试, 这两组学生得到正确答案的时间 (单位: min) 分别如下:
+
+A 组: 28, 20, 20, 27, 3, 29, 25, 19, 16, 24, 29, 16, 29
+
+B 组: 40, 31, 25, 29, 30, 25, 16, 30, 39, 25
+
+能否说 A 组学生比 B 组学生算得更快？利用所学的检验来得出你的结论.
+
+26. 调查某公司产品在两个不同国家的认可程度, 被调查人员对该产品打分结果如下: 国家 A: 21, 34, 56, 45, 58, 80, 32, 46, 50, 21, 11, 18, 38, 52, 47, 19, 60, 57, 72, 82, 29, 25, 89, 46, 39, 29, 67, 75, 31, 48, 45.
+
+---
+
+312
+
+第六章 非参数方法
+
+国家 B: 68, 77, 51, 51, 64, 43, 41, 20, 44, 57, 60, 82, 86, 92, 54, 33, 18, 39, 52, 66, 78, 77, 54, 63, 48, 40, 29, 56, 45, 21, 50, 48, 20.
+
+取  $\alpha = 0.05$ ，问该公司产品在两个国家的认可程度有无差别。
+
+27. 假设总体 $X \sim N(0, \sigma^2)$, 总体 $Y \sim N(\theta, \sigma^2)$, 其中 $\theta$ 和 $\sigma^2$ 为未知参数. 对假设检验问题 $H_0: \theta = 0 \leftrightarrow H_1: \theta > 0$, 使用计算机从两个总体中分别生成 100 个随机数.
+
+(1) 在重复随机数意义下, 考察 Wilcoxon 秩和检验在  $\theta = 0.1, 0.5, 1, 1.5$  时的拒绝率;
+(2) 对比两样本 $t$ 检验方法, 你能得出什么结论?

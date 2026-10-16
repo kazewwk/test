@@ -1,0 +1,4976 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "created_at": "2026-05-30T23:42:17+08:00",
+      "producer_application": "jsPDF 2.4.0",
+      "page_count": 373,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 0,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 1,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 2,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 3,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 4,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 5,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 6,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 7,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 8,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 9,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 10,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 11,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 12,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 13,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 14,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 15,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 325,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "index": 0,
+          "bbox": [
+            0.394,
+            0.104,
+            0.502,
+            0.133
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第七章"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.544,
+            0.172,
+            0.766,
+            0.212
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "bootstrap"
+            }
+          ],
+          "level": 2
+        }
+      ]
+    },
+    {
+      "page_idx": 326,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.08,
+            0.068,
+            0.107,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "314"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.255,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第七章 bootstrap"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.121,
+            0.122,
+            0.832,
+            0.231
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "本章介绍在统计学分析中常用的一个方法——bootstrap (自助法). 总的来说, bootstrap 方法通过对原始样本数据进行重复抽样, 以估计样本统计量的分布特性. bootstrap 方法具有广泛的应用领域, 包括参数估计、置信区间构造、假设检验等. 它不需要对总体分布做出特定的假设, 因此具有很高的灵活性和实用性. 同时, bootstrap 方法还可以用于处理复杂的数据结构和非参数问题, 为研究者提供了更多的分析工具."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.124,
+            0.284,
+            0.379,
+            0.306
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "7.1 bootstrap 原理"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.123,
+            0.351,
+            0.833,
+            0.526
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\boldsymbol{X}=(X_{1},X_{2},\\cdots,X_{n})"
+            },
+            {
+              "type": "text",
+              "content": "  是一组来自分布函数 F 的独立同分布的样本。令  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\boldsymbol{\\theta}=T(F)"
+            },
+            {
+              "type": "text",
+              "content": "  为我们感兴趣的关于分布函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x)"
+            },
+            {
+              "type": "text",
+              "content": "  的某一特征，比如期望  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T(F)=\\int z\\mathrm{d}F(z)"
+            },
+            {
+              "type": "text",
+              "content": " 。常见的参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  的一个估计可以表示为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\boldsymbol{\\theta}}=T(\\hat{F}_{n})"
+            },
+            {
+              "type": "text",
+              "content": " ，其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{F}_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  表示观测数据的经验分布函数。比如当  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  是一元总体均值时，估计为样本均值， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\theta}=\\int z\\mathrm{d}\\hat{F}_{n}(z)=\\sum_{i=1}^{n}X_{i}/n"
+            },
+            {
+              "type": "text",
+              "content": " 。一般来说，我们通过大样本理论推导出参数估计  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\theta}"
+            },
+            {
+              "type": "text",
+              "content": "  的理论分布。但是在实际中， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\theta}"
+            },
+            {
+              "type": "text",
+              "content": "  的理论分布可能难以处理或者根本就是未知的，或许也依赖于未知分布函数 F。因此我们希望提出一种在  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\theta}"
+            },
+            {
+              "type": "text",
+              "content": "  的渐近分布未知的情况下仍然有效的统计推断方法。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.121,
+            0.532,
+            0.832,
+            0.642
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "斯坦福大学教授 Bradley Efron (布莱德利·埃夫隆) 在 1979 年提出了著名的 bootstrap 方法, 提供了关于  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\theta}"
+            },
+            {
+              "type": "text",
+              "content": "  的分布的一种近似计算方法. 由 Glivenko 定理知, 当  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\to \\infty"
+            },
+            {
+              "type": "text",
+              "content": "  时,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{F}_{n} \\stackrel{a.s.}{\\rightarrow} F"
+            },
+            {
+              "type": "text",
+              "content": " . 因此, 直观上讲, 当我们产生一组来自经验分布函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{F}_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  的独立同分布的随机变量  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{X_{1}^{*}, X_{2}^{*}, \\cdots, X_{n}^{*}\\}"
+            },
+            {
+              "type": "text",
+              "content": "  时,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\theta}^{*} = T(\\hat{F}_{n}^{*})"
+            },
+            {
+              "type": "text",
+              "content": "  应该与  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\theta}"
+            },
+            {
+              "type": "text",
+              "content": "  的分布近似, 其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{F}_{n}^{*}"
+            },
+            {
+              "type": "text",
+              "content": "  表示观测  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{X_{i}^{*}, X_{2}^{*}, \\cdots, X_{n}^{*}\\}"
+            },
+            {
+              "type": "text",
+              "content": "  的样本分布函数."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.123,
+            0.647,
+            0.831,
+            0.687
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定义 7.1.1 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  是来自分布函数 F 的独立同分布样本，且  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T(X_{1}, X_{2}, \\cdots, X_{n}, F)"
+            },
+            {
+              "type": "text",
+              "content": "  是一个给定的函数。则定义 T 的原始分布和 bootstrap 分布分别为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.317,
+            0.699,
+            0.642,
+            0.717
+          ],
+          "image_path": "raw/pages_0321-0336/images/page_326_equation_7.jpg",
+          "content": "H _ {n} (x) = P _ {F} (T (X _ {1}, X _ {2}, \\dots , X _ {n}, F) \\leqslant x),"
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.297,
+            0.732,
+            0.66,
+            0.75
+          ],
+          "image_path": "raw/pages_0321-0336/images/page_326_equation_8.jpg",
+          "content": "H _ {\\mathrm{boot}} (x) = P _ {F _ {n}} (T (X _ {1} ^ {*}, X _ {2} ^ {*}, \\dots , X _ {n} ^ {*}, F _ {n}) \\leqslant x),"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.124,
+            0.762,
+            0.719,
+            0.779
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(X_{1}^{*},X_{2}^{*},\\cdots,X_{n}^{*})"
+            },
+            {
+              "type": "text",
+              "content": " 是一组来自经验分布函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F_{n}"
+            },
+            {
+              "type": "text",
+              "content": " 的独立同分布样本."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.16,
+            0.785,
+            0.63,
+            0.802
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定义 7.1.2 对于任意的两个分布函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x)"
+            },
+            {
+              "type": "text",
+              "content": " ,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "G(x)"
+            },
+            {
+              "type": "text",
+              "content": " ，定义"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.161,
+            0.808,
+            0.356,
+            0.825
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(1) Kolmogorov 距离为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.333,
+            0.838,
+            0.621,
+            0.864
+          ],
+          "image_path": "raw/pages_0321-0336/images/page_326_equation_12.jpg",
+          "content": "K (F, G) = \\sup _ {- \\infty <   x <   \\infty} | F (x) - G (x) |;"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.161,
+            0.874,
+            0.449,
+            0.89
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(2) Wasserstein (沃瑟斯坦) 距离为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.336,
+            0.899,
+            0.617,
+            0.929
+          ],
+          "image_path": "raw/pages_0321-0336/images/page_326_equation_14.jpg",
+          "content": "\\ell_ {2} (F, G) = \\inf _ {\\Gamma_ {2, F, G}} \\left(E (| Y - X | ^ {2})\\right) ^ {\\frac {1}{2}},"
+        }
+      ]
+    },
+    {
+      "page_idx": 327,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.731,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "7.1 bootstrap 原理"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.889,
+            0.068,
+            0.917,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "315"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.164,
+            0.122,
+            0.871,
+            0.161
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim F, Y \\sim G"
+            },
+            {
+              "type": "text",
+              "content": ", "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\Gamma_{2,F,G}"
+            },
+            {
+              "type": "text",
+              "content": " 为所有具有有限二阶矩且边际分布为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F"
+            },
+            {
+              "type": "text",
+              "content": " 和 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "G"
+            },
+            {
+              "type": "text",
+              "content": " 的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(X,Y)"
+            },
+            {
+              "type": "text",
+              "content": " 的联合分布的集合."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.164,
+            0.168,
+            0.873,
+            0.232
+          ],
+          "content": [
+            {
+              "type": "equation_inline",
+              "content": "\\ell_{2}(F_{n},F)\\rightarrow0"
+            },
+            {
+              "type": "text",
+              "content": " 当且仅当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F_{n}\\xrightarrow{d}F"
+            },
+            {
+              "type": "text",
+              "content": " 且 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E_{F_{n}}(X^{k})\\rightarrow E_{F}(X^{k}), k=1,2."
+            },
+            {
+              "type": "text",
+              "content": " 由于我们在运用bootstrap方法时常常考虑分布函数、均值、方差等特征，因此我们只需证明bootstrap分布 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{\\mathrm{boot}}(x)"
+            },
+            {
+              "type": "text",
+              "content": " 在Wasserstein距离下收敛到原始分布 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{n}(x)"
+            },
+            {
+              "type": "text",
+              "content": " ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.201,
+            0.238,
+            0.565,
+            0.255
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定义 7.1.3 对任意的一个距离函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\rho(\\cdot,\\cdot)"
+            },
+            {
+              "type": "text",
+              "content": " ,"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 5,
+          "bbox": [
+            0.201,
+            0.261,
+            0.871,
+            0.303
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.201,
+                0.261,
+                0.871,
+                0.28
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(1) 如果  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\rho(H_{n}, H_{\\mathrm{boot}}) \\xrightarrow{\\mathrm{P}} 0"
+                },
+                {
+                  "type": "text",
+                  "content": " ，则称对于函数 T, bootstrap 在距离  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\rho"
+                },
+                {
+                  "type": "text",
+                  "content": "  下是（弱）相合的."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.202,
+                0.285,
+                0.86,
+                0.303
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(2) 如果 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\rho(H_n, H_{\\mathrm{boot}}) \\xrightarrow{\\mathrm{a.s.}} 0"
+                },
+                {
+                  "type": "text",
+                  "content": "，则称对于函数 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "T"
+                },
+                {
+                  "type": "text",
+                  "content": "，bootstrap 在距离 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\rho"
+                },
+                {
+                  "type": "text",
+                  "content": " 下是强相合的."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.202,
+            0.309,
+            0.863,
+            0.327
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "下面我们对一些特殊情况给出 bootstrap 方法的相合性. 我们首先考虑均值函数."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.166,
+            0.332,
+            0.871,
+            0.374
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定理 7.1.1 假设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  是来自分布函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x)"
+            },
+            {
+              "type": "text",
+              "content": "  的一组独立同分布样本且  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(X) = \\mu, E(X^{2}) < \\infty"
+            },
+            {
+              "type": "text",
+              "content": " . 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T(X_{1}, X_{2}, \\cdots, X_{n}, F) = \\sqrt{n}(\\bar{X} - \\mu)"
+            },
+            {
+              "type": "text",
+              "content": " ，则当  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\to \\infty"
+            },
+            {
+              "type": "text",
+              "content": "  时，"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.358,
+            0.391,
+            0.677,
+            0.41
+          ],
+          "image_path": "raw/pages_0321-0336/images/page_327_equation_10.jpg",
+          "content": "K (H _ {n}, H _ {\\mathrm{boot}}) \\stackrel {{\\text {a.s.}}} {{\\to}} 0, \\ell_ {2} (H _ {n}, H _ {\\mathrm{boot}}) \\stackrel {{\\text {a.s.}}} {{\\to}} 0."
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.164,
+            0.432,
+            0.871,
+            0.472
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "bootstrap 在 Kolmogorov 距离下的强相合性由 Singh (1981) 给出, 在 Wasserstein 距离下的强相合性由 Bickel et al. (1981) 证明."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.164,
+            0.478,
+            0.873,
+            0.564
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例 7.1.1 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{i}, i=1,2,\\cdots,n"
+            },
+            {
+              "type": "text",
+              "content": "  是来自分布  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x)"
+            },
+            {
+              "type": "text",
+              "content": "  的独立同分布样本. 我们考虑统计量  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T=\\sqrt{n}[\\bar{X}-E(X)]"
+            },
+            {
+              "type": "text",
+              "content": " . 表 7.1.1 给出了不同分布下 bootstrap 和中心极限定理 (CLT) 对概率值的逼近效果. 在 bootstrap 中我们采用重抽样次数 B=500. 从表中我们可以看到两种方法都可以对概率值进行较好的估计, 尤其是当样本量增大时."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.202,
+            0.571,
+            0.507,
+            0.587
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在多元情形下, 我们同样有如下结论."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.165,
+            0.594,
+            0.871,
+            0.658
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定理 7.1.2 假设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  是来自分布函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x)"
+            },
+            {
+              "type": "text",
+              "content": "  的一组独立同分布样本且  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(\\boldsymbol{X}) = \\boldsymbol{\\mu}, \\mathrm{Cov}(\\boldsymbol{X}) = \\Sigma"
+            },
+            {
+              "type": "text",
+              "content": "  是正定的. 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T(\\boldsymbol{X}_{1}, \\boldsymbol{X}_{2}, \\cdots, \\boldsymbol{X}_{n}, F) = \\sqrt{n}(\\bar{\\boldsymbol{X}} - \\boldsymbol{\\mu})"
+            },
+            {
+              "type": "text",
+              "content": " ，则当  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\to \\infty"
+            },
+            {
+              "type": "text",
+              "content": "  时， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K(H_{n}, H_{\\mathrm{boot}}) \\stackrel{\\mathrm{a.s.}}{\\rightarrow} 0"
+            },
+            {
+              "type": "text",
+              "content": " ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.163,
+            0.664,
+            0.873,
+            0.727
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由 Delta 定理, 我们知道, 如果统计量 T 服从渐近正态分布, 那么对于光滑函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g(\\cdot)"
+            },
+            {
+              "type": "text",
+              "content": " ,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g(T)"
+            },
+            {
+              "type": "text",
+              "content": "  仍然满足渐近正态性. 下面的定理说明如果对于统计量 T, bootstrap 是相合的, 那么对于统计量  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g(T)"
+            },
+            {
+              "type": "text",
+              "content": " , bootstrap 仍然具有相合性."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.164,
+            0.733,
+            0.873,
+            0.821
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定理 7.1.3 假设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  是来自分布函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x)"
+            },
+            {
+              "type": "text",
+              "content": "  的一组独立同分布样本且  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(\\boldsymbol{X}) = \\boldsymbol{\\mu}, \\mathrm{Cov}(\\boldsymbol{X}) = \\Sigma"
+            },
+            {
+              "type": "text",
+              "content": "  是正定的。设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T(\\boldsymbol{X}_{1}, \\boldsymbol{X}_{2}, \\cdots, \\boldsymbol{X}_{n}, F) = \\sqrt{n}(\\bar{\\boldsymbol{X}} - \\boldsymbol{\\mu})"
+            },
+            {
+              "type": "text",
+              "content": " 。对于一个函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g : R^{p} \\to R^{m}, m \\geqslant 1, \\nabla g(\\cdot)"
+            },
+            {
+              "type": "text",
+              "content": "  在  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu"
+            },
+            {
+              "type": "text",
+              "content": "  的一个邻域内存在且在  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu"
+            },
+            {
+              "type": "text",
+              "content": "  处连续， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\nabla g(\\boldsymbol{\\mu}) \\neq \\mathbf{0}"
+            },
+            {
+              "type": "text",
+              "content": " 。则当  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\to \\infty"
+            },
+            {
+              "type": "text",
+              "content": "  时，对于函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sqrt{n}[g(\\bar{\\boldsymbol{X}}) - g(\\boldsymbol{\\mu})]"
+            },
+            {
+              "type": "text",
+              "content": " ， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K(H_{n}, H_{\\mathrm{boot}})^{\\mathrm{a.s.}} \\rightarrow 0"
+            },
+            {
+              "type": "text",
+              "content": " 。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.201,
+            0.826,
+            0.794,
+            0.843
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "除了均值函数, 我们再给出分位数和 U 统计量的 bootstrap 相合性结论."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.163,
+            0.849,
+            0.873,
+            0.89
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定理 7.1.4 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  是来自分布函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x)"
+            },
+            {
+              "type": "text",
+              "content": "  的一组独立同分布样本，0 < p < 1. 定义分位数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\xi_{p} = F^{-1}(p)"
+            },
+            {
+              "type": "text",
+              "content": "  且 F 在  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\xi_{p}"
+            },
+            {
+              "type": "text",
+              "content": "  处具有正的导数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(\\xi_{p})"
+            },
+            {
+              "type": "text",
+              "content": " . 设"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 19,
+          "bbox": [
+            0.286,
+            0.908,
+            0.691,
+            0.929
+          ],
+          "image_path": "raw/pages_0321-0336/images/page_327_equation_19.jpg",
+          "content": "T _ {n} = T \\left(X _ {1}, X _ {2}, \\dots , X _ {n}, F\\right) = \\sqrt {n} \\left[ F _ {n} ^ {- 1} (p) - \\xi_ {p} \\right],"
+        }
+      ]
+    },
+    {
+      "page_idx": 328,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.08,
+            0.068,
+            0.109,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "316"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.255,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第七章 bootstrap"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 2,
+          "bbox": [
+            0.243,
+            0.124,
+            0.709,
+            0.144
+          ],
+          "image_path": "raw/pages_0321-0336/images/page_328_equation_2.jpg",
+          "content": "T _ {n} ^ {*} = T \\left(X _ {1} ^ {*}, X _ {2} ^ {*}, \\dots , X _ {n} ^ {*}, F _ {n}\\right) = \\sqrt {n} \\left[ F _ {n} ^ {* - 1} (p) - F _ {n} ^ {- 1} (p) \\right],"
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.123,
+            0.165,
+            0.831,
+            0.207
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F_{n}^{*}"
+            },
+            {
+              "type": "text",
+              "content": "  是  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}^{*}, X_{2}^{*}, \\cdots, X_{n}^{*}"
+            },
+            {
+              "type": "text",
+              "content": "  的经验分布函数. 定义  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{n}(x) = P_{F}(T_{n} \\leqslant x)"
+            },
+            {
+              "type": "text",
+              "content": " ,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{\\mathrm{boot}}(x) = P_{*}(T_{n}^{*} \\leqslant x)"
+            },
+            {
+              "type": "text",
+              "content": " . 则"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.309,
+            0.22,
+            0.646,
+            0.248
+          ],
+          "image_path": "raw/pages_0321-0336/images/page_328_equation_4.jpg",
+          "content": "K \\left(H _ {n}, H _ {\\mathrm{boot}}\\right) = O \\left(n ^ {- 1 / 4} \\sqrt {\\ln \\ln n}\\right), \\text {a.s.}"
+        },
+        {
+          "type": "table",
+          "index": 6,
+          "bbox": [
+            0.124,
+            0.3,
+            0.833,
+            0.731
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 5,
+              "bbox": [
+                0.21,
+                0.28,
+                0.743,
+                0.296
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "表 7.1.1 bootstrap 方法和 CLT 近似法对均值分布的概率值的估计"
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 6,
+              "bbox": [
+                0.124,
+                0.3,
+                0.833,
+                0.731
+              ],
+              "image_path": "raw/pages_0321-0336/images/page_328_table_6.jpg",
+              "content": "<table><tr><td></td><td colspan=\"3\">N(0,1)</td><td colspan=\"3\">Exp(1)</td><td colspan=\"3\">t(3)</td></tr><tr><td>x</td><td><eq>H_n(x)</eq></td><td>CLT</td><td><eq>H_{\\text{boot}}(x)</eq></td><td><eq>H_n(x)</eq></td><td>CLT</td><td><eq>H_{\\text{boot}}(x)</eq></td><td><eq>H_n(x)</eq></td><td>CLT</td><td><eq>H_{\\text{boot}}(x)</eq></td></tr><tr><td colspan=\"10\">n = 20</td></tr><tr><td>-2</td><td>0.022</td><td>0.023</td><td>0.026</td><td>0.010</td><td>0.023</td><td>0.000</td><td>0.106</td><td>0.124</td><td>0.106</td></tr><tr><td>-1</td><td>0.159</td><td>0.159</td><td>0.146</td><td>0.160</td><td>0.159</td><td>0.062</td><td>0.261</td><td>0.282</td><td>0.300</td></tr><tr><td>0</td><td>0.500</td><td>0.500</td><td>0.480</td><td>0.533</td><td>0.500</td><td>0.542</td><td>0.501</td><td>0.500</td><td>0.538</td></tr><tr><td>1</td><td>0.842</td><td>0.841</td><td>0.838</td><td>0.845</td><td>0.841</td><td>0.950</td><td>0.739</td><td>0.718</td><td>0.770</td></tr><tr><td>2</td><td>0.977</td><td>0.977</td><td>0.954</td><td>0.967</td><td>0.977</td><td>0.998</td><td>0.894</td><td>0.876</td><td>0.902</td></tr><tr><td colspan=\"10\">n = 50</td></tr><tr><td>-2</td><td>0.022</td><td>0.023</td><td>0.044</td><td>0.015</td><td>0.023</td><td>0.014</td><td>0.111</td><td>0.124</td><td>0.030</td></tr><tr><td>-1</td><td>0.158</td><td>0.159</td><td>0.176</td><td>0.158</td><td>0.159</td><td>0.134</td><td>0.269</td><td>0.282</td><td>0.188</td></tr><tr><td>0</td><td>0.497</td><td>0.500</td><td>0.490</td><td>0.520</td><td>0.500</td><td>0.476</td><td>0.501</td><td>0.500</td><td>0.494</td></tr><tr><td>1</td><td>0.840</td><td>0.841</td><td>0.816</td><td>0.840</td><td>0.841</td><td>0.844</td><td>0.731</td><td>0.718</td><td>0.790</td></tr><tr><td>2</td><td>0.977</td><td>0.977</td><td>0.960</td><td>0.970</td><td>0.977</td><td>0.974</td><td>0.888</td><td>0.876</td><td>0.942</td></tr><tr><td colspan=\"10\">n = 100</td></tr><tr><td>-2</td><td>0.022</td><td>0.023</td><td>0.016</td><td>0.017</td><td>0.023</td><td>0.020</td><td>0.114</td><td>0.124</td><td>0.072</td></tr><tr><td>-1</td><td>0.158</td><td>0.159</td><td>0.148</td><td>0.159</td><td>0.159</td><td>0.146</td><td>0.271</td><td>0.282</td><td>0.230</td></tr><tr><td>0</td><td>0.500</td><td>0.500</td><td>0.478</td><td>0.512</td><td>0.500</td><td>0.540</td><td>0.500</td><td>0.500</td><td>0.468</td></tr><tr><td>1</td><td>0.842</td><td>0.841</td><td>0.852</td><td>0.841</td><td>0.841</td><td>0.822</td><td>0.728</td><td>0.718</td><td>0.718</td></tr><tr><td>2</td><td>0.978</td><td>0.977</td><td>0.968</td><td>0.972</td><td>0.977</td><td>0.976</td><td>0.885</td><td>0.876</td><td>0.906</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.16,
+            0.751,
+            0.691,
+            0.768
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例 7.1.2 由大样本理论, 在定理 7.1.4 的条件下, 当  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\to \\infty"
+            },
+            {
+              "type": "text",
+              "content": "  时,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.316,
+            0.786,
+            0.637,
+            0.822
+          ],
+          "image_path": "raw/pages_0321-0336/images/page_328_equation_8.jpg",
+          "content": "\\sqrt {n} \\left[ F _ {n} ^ {- 1} (p) - \\xi_ {p} \\right] \\xrightarrow {\\mathrm{d}} N \\left(0, \\frac {p (1 - p)}{\\left[ F ^ {\\prime} (\\xi_ {p}) \\right] ^ {2}}\\right)."
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.122,
+            0.84,
+            0.832,
+            0.927
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "但是在实际问题中分布函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x)"
+            },
+            {
+              "type": "text",
+              "content": "  的信息常常未知, 因此我们可以采用 bootstrap 方法来近似样本分位数的分布. 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n} \\sim N(0,1), n = 2000, B = 1000"
+            },
+            {
+              "type": "text",
+              "content": " . 考虑三个分位数 p = 0.3, 0.5, 0.7, 表 7.1.2 列出了不同分位数情况下 bootstrap 方法对样本分位数的分布近似情况."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 329,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.731,
+            0.068,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "7.1 bootstrap 原理"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.068,
+            0.917,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "317"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 3,
+          "bbox": [
+            0.167,
+            0.143,
+            0.875,
+            0.277
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 2,
+              "bbox": [
+                0.303,
+                0.124,
+                0.735,
+                0.14
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "表 7.1.2 bootstrap 方法对分位数分布的概率值的估计"
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 3,
+              "bbox": [
+                0.167,
+                0.143,
+                0.875,
+                0.277
+              ],
+              "image_path": "raw/pages_0321-0336/images/page_329_table_3.jpg",
+              "content": "<table><tr><td>p</td><td colspan=\"2\">0.3</td><td colspan=\"2\">0.5</td><td colspan=\"2\">0.7</td></tr><tr><td>x</td><td><eq>H_n(x)</eq></td><td><eq>H_{\\text{boot}}(x)</eq></td><td><eq>H_n(x)</eq></td><td><eq>H_{\\text{boot}}(x)</eq></td><td><eq>H_n(x)</eq></td><td><eq>H_{\\text{boot}}(x)</eq></td></tr><tr><td>-0.5</td><td>0.424</td><td>0.392</td><td>0.399</td><td>0.343</td><td>0.323</td><td>0.274</td></tr><tr><td>0</td><td>0.573</td><td>0.497</td><td>0.557</td><td>0.499</td><td>0.470</td><td>0.467</td></tr><tr><td>0.5</td><td>0.714</td><td>0.716</td><td>0.706</td><td>0.654</td><td>0.620</td><td>0.651</td></tr><tr><td>0.8</td><td>0.788</td><td>0.795</td><td>0.783</td><td>0.779</td><td>0.703</td><td>0.726</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.164,
+            0.293,
+            0.874,
+            0.38
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由定理7.1.4, 我们知道 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{\\mathrm{boot}}"
+            },
+            {
+              "type": "text",
+              "content": " 收敛到 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{n}"
+            },
+            {
+              "type": "text",
+              "content": " 的速度只有 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n^{-1/4}"
+            },
+            {
+              "type": "text",
+              "content": ", 因此在上述例7.1.2中我们设定样本数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n"
+            },
+            {
+              "type": "text",
+              "content": " 很大. 模拟结果显示当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n"
+            },
+            {
+              "type": "text",
+              "content": " 较小时, bootstrap方法的近似效果很不稳定. 但是在例7.1.1中当样本数很小时, bootstrap方法仍然有很好的近似效果. 这是因为对于均值函数, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{\\mathrm{boot}}"
+            },
+            {
+              "type": "text",
+              "content": " 收敛到 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{n}"
+            },
+            {
+              "type": "text",
+              "content": " 的速度可以达到 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n^{-1/2}"
+            },
+            {
+              "type": "text",
+              "content": "."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.166,
+            0.385,
+            0.873,
+            0.426
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定理 7.1.5 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  是来自分布函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x)"
+            },
+            {
+              "type": "text",
+              "content": "  的一组独立同分布样本，其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x)"
+            },
+            {
+              "type": "text",
+              "content": "  是连续函数且  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E_{F}(X^{6}) < \\infty"
+            },
+            {
+              "type": "text",
+              "content": " . 定义 t 检验统计量"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.444,
+            0.44,
+            0.594,
+            0.476
+          ],
+          "image_path": "raw/pages_0321-0336/images/page_329_equation_6.jpg",
+          "content": "T _ {n} = \\frac {\\sqrt {n} (\\bar {X} - \\mu)}{S _ {n}}"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.165,
+            0.487,
+            0.387,
+            0.504
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "和bootstrap "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t"
+            },
+            {
+              "type": "text",
+              "content": " 检验统计量"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.434,
+            0.504,
+            0.602,
+            0.541
+          ],
+          "image_path": "raw/pages_0321-0336/images/page_329_equation_8.jpg",
+          "content": "T _ {n} ^ {*} = \\frac {\\sqrt {n} (\\bar {X} ^ {*} - \\bar {X})}{S _ {n} ^ {*}},"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.164,
+            0.55,
+            0.873,
+            0.59
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S_{n}, S_{n}^{*}"
+            },
+            {
+              "type": "text",
+              "content": " 分别是原始样本和bootstrap样本的样本标准差. 则对于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{n}(x) = P_{F}(T_{n} \\leqslant x), H_{\\mathrm{boot}}(x) = P_{*}(T_{n}^{*} \\leqslant x)"
+            },
+            {
+              "type": "text",
+              "content": ", 有 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sqrt{n} K(H_{n}, H_{\\mathrm{boot}}) \\stackrel{\\mathrm{a.s.}}{\\rightarrow} 0"
+            },
+            {
+              "type": "text",
+              "content": "."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.164,
+            0.596,
+            0.874,
+            0.635
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定理 7.1.5 也为后续利用 bootstrap 构造置信区间提供理论依据. 对于一般情况下的多元均值函数, 我们也有类似的结论."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.165,
+            0.641,
+            0.873,
+            0.706
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定理 7.1.6 假设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  是来自分布函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x)"
+            },
+            {
+              "type": "text",
+              "content": "  的一组独立同分布样本且  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(X) = \\mu, \\operatorname{cov}(X) = \\Sigma"
+            },
+            {
+              "type": "text",
+              "content": "  是正定的。对于一个函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g : R^{p} \\to R, \\nabla g(\\cdot)"
+            },
+            {
+              "type": "text",
+              "content": "  在  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu"
+            },
+            {
+              "type": "text",
+              "content": "  的一个邻域内存在且在  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu"
+            },
+            {
+              "type": "text",
+              "content": "  处连续， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\nabla g(\\mu) \\neq 0"
+            },
+            {
+              "type": "text",
+              "content": " 。定义"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.401,
+            0.719,
+            0.637,
+            0.76
+          ],
+          "image_path": "raw/pages_0321-0336/images/page_329_equation_12.jpg",
+          "content": "T _ {n} = \\frac {\\sqrt {n} [ g (\\bar {\\boldsymbol {X}}) - g (\\boldsymbol {\\mu}) ]}{\\sqrt {(\\nabla g (\\boldsymbol {\\mu})) ^ {\\mathrm{T}} \\Sigma (\\nabla g (\\boldsymbol {\\mu}))}}"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.167,
+            0.773,
+            0.191,
+            0.787
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "且"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.388,
+            0.783,
+            0.649,
+            0.824
+          ],
+          "image_path": "raw/pages_0321-0336/images/page_329_equation_14.jpg",
+          "content": "T _ {n} ^ {*} = \\frac {\\sqrt {n} \\left[ g \\left(\\bar {\\boldsymbol {X}} ^ {*}\\right) - g (\\bar {\\boldsymbol {X}}) \\right]}{\\sqrt {(\\nabla g (\\bar {\\boldsymbol {X}})) ^ {\\mathrm{T}} S _ {B} (\\nabla g (\\bar {\\boldsymbol {X}}))}},"
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.165,
+            0.833,
+            0.873,
+            0.873
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S_B"
+            },
+            {
+              "type": "text",
+              "content": " 是bootstrap的样本协方差矩阵.则对于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{n}(x) = P_{F}(T_{n}\\leqslant x),H_{\\mathrm{boot}}(x) = P_{*}(T_{n}^{*}\\leqslant x)"
+            },
+            {
+              "type": "text",
+              "content": " ，有"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 16,
+          "bbox": [
+            0.425,
+            0.877,
+            0.613,
+            0.896
+          ],
+          "image_path": "raw/pages_0321-0336/images/page_329_equation_16.jpg",
+          "content": "\\sqrt {n} K (H _ {n}, H _ {\\mathrm{boot}}) \\stackrel {{\\text {a.s.}}} {{\\to}} 0."
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.203,
+            0.909,
+            0.642,
+            0.926
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "最后, 我们给出 U 统计量的 bootstrap 方法的相合性."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 330,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.08,
+            0.068,
+            0.107,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "318"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.255,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第七章 bootstrap"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.123,
+            0.123,
+            0.83,
+            0.186
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定理 7.1.7 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  是来自分布函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x)"
+            },
+            {
+              "type": "text",
+              "content": "  的一组独立同分布样本. 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U_{n} = U_{n}(X_{1}, X_{2}, \\cdots, X_{n})"
+            },
+            {
+              "type": "text",
+              "content": "  是一个二阶核 h 的 U 统计量. 定义  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta = E_{F}(U_{n}) = E_{F}[h(X_{1}, X_{2})]"
+            },
+            {
+              "type": "text",
+              "content": " . 假设"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 3,
+          "bbox": [
+            0.16,
+            0.191,
+            0.682,
+            0.256
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 4,
+              "bbox": [
+                0.161,
+                0.192,
+                0.38,
+                0.211
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(1) "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "E_F\\left[h^2 (X_1,X_2)\\right] <   \\infty ."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 5,
+              "bbox": [
+                0.161,
+                0.214,
+                0.682,
+                0.234
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(2)  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\tau^{2}=\\mathrm{Var}_{F}[\\tilde{h}(X)]>0,"
+                },
+                {
+                  "type": "text",
+                  "content": "  其中  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\tilde{h}(x)=E_{F}[h(X_{1},X_{2})\\mid X_{2}=x]."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.162,
+                0.239,
+                0.373,
+                0.256
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(3) "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "E_F[|h(X_1,X_1)|] < \\infty"
+                },
+                {
+                  "type": "text",
+                  "content": "."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.123,
+            0.261,
+            0.83,
+            0.302
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}=\\sqrt{n}(U_{n}-\\theta)"
+            },
+            {
+              "type": "text",
+              "content": " ,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}^{*}=\\sqrt{n}(U_{n}^{*}-U_{n})"
+            },
+            {
+              "type": "text",
+              "content": " , 其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U_{n}^{*}=U_{n}(X_{1}^{*},X_{2}^{*},\\cdots,X_{n}^{*})"
+            },
+            {
+              "type": "text",
+              "content": " ,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{n}(x)=P_{F}(T_{n}\\leqslant x)"
+            },
+            {
+              "type": "text",
+              "content": "  且  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H_{\\mathrm{boot}}(x)=P_{*}(T_{n}^{*}\\leqslant x)"
+            },
+            {
+              "type": "text",
+              "content": " . 则  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K(H_{n},H_{\\mathrm{boot}})\\xrightarrow{\\mathrm{a.s.}}0"
+            },
+            {
+              "type": "text",
+              "content": " ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.123,
+            0.307,
+            0.83,
+            0.37
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定理 7.1.7 的一个直接应用就是方差函数的 bootstrap 方法相合性, 因为方差函数可以表示为一个二阶 U 统计量, 即  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{Var}(X)=\\frac{1}{2}E[(X_{1}-X_{2})^{2}]"
+            },
+            {
+              "type": "text",
+              "content": " . 下面一节内容将单独介绍运用 bootstrap 方法对方差进行估计."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.161,
+            0.376,
+            0.604,
+            0.394
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定理 7.1.2—定理 7.1.7 的证明参见 Shao et al. (1995)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 10,
+          "bbox": [
+            0.124,
+            0.446,
+            0.429,
+            0.468
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "7.2 bootstrap 常见应用"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.123,
+            0.514,
+            0.83,
+            0.577
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "bootstrap 提供了一种无须进行参数假设就能进行分析和推断的方法. 对于那些难以找到解析解的问题, 它提供了一种解决方案, 并且能够提供比传统的标准参数理论更精确的答案. 下面我们给出 bootstrap 常见的几个应用."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 12,
+          "bbox": [
+            0.16,
+            0.605,
+            0.443,
+            0.625
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "7.2.1 bootstrap 方差估计"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.123,
+            0.648,
+            0.83,
+            0.716
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在常见的统计学问题中, 我们需要估计参数估计  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\theta}"
+            },
+            {
+              "type": "text",
+              "content": "  的方差  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{Var}(\\hat{\\theta})"
+            },
+            {
+              "type": "text",
+              "content": " . 一般我们先需要借助大样本理论去计算  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{Var}(\\hat{\\theta})"
+            },
+            {
+              "type": "text",
+              "content": "  的精确表达式, 再利用新的估计量去估计这个精确表达式中的未知参数. 如考虑样本中位数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\xi}_{\\frac{1}{2}}"
+            },
+            {
+              "type": "text",
+              "content": "  的方差估计问题. 由大样本理论可知"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.349,
+            0.723,
+            0.829,
+            0.761
+          ],
+          "image_path": "raw/pages_0321-0336/images/page_330_equation_14.jpg",
+          "content": "\\mathrm{Var} (\\hat {\\xi} _ {\\frac {1}{2}}) = \\frac {1}{4 n f ^ {2} (\\xi_ {\\frac {1}{2}})} + o (n ^ {- 1}). \\tag {7.2.1}"
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.122,
+            0.771,
+            0.83,
+            0.857
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在公式 (7.2.1) 中, 我们需要进一步估计未知参数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(\\xi_{\\frac{1}{2}})"
+            },
+            {
+              "type": "text",
+              "content": ". 一般地, 我们需要再利用核函数方法去估计 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(\\xi_{\\frac{1}{2}})"
+            },
+            {
+              "type": "text",
+              "content": ". 另一方面, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{Var}(\\hat{\\pmb{\\theta}})"
+            },
+            {
+              "type": "text",
+              "content": " 的精确表达式在大多数时候并不容易计算. bootstrap 方法则让我们可以直接进行方差估计而避免再去估计一个新的参数, 也并不需要得到 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{Var}(\\hat{\\pmb{\\theta}})"
+            },
+            {
+              "type": "text",
+              "content": " 的精确表达式."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.121,
+            0.863,
+            0.83,
+            0.927
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例 7.2.1 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  是来自  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N(0,1)"
+            },
+            {
+              "type": "text",
+              "content": "  的独立同分布样本. 我们通过 bootstrap 方法来计算样本中位数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\xi}_{\\frac{1}{2}}"
+            },
+            {
+              "type": "text",
+              "content": "  的方差  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma^{2}"
+            },
+            {
+              "type": "text",
+              "content": " . 设定 n = 200, 2000, B = 500. 定义运用 bootstrap 方法计算出的样本中位数的方差为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma_{*}^{2}"
+            },
+            {
+              "type": "text",
+              "content": " . 图 7.2.1 表示 10000 次模拟的  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma_{*}^{2}/\\sigma^{2}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 331,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.701,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "7.2 bootstrap 常见应用"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.068,
+            0.917,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "319"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.164,
+            0.122,
+            0.874,
+            0.185
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "的结果. 由图7.2.1可知, 大部分的比值在1附近. 并且对样本量 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n = 200, 2000, 10000"
+            },
+            {
+              "type": "text",
+              "content": " 次模拟的比值的均值分别为1.06,1.02, 方差分别为0.41,0.23. 当样本量 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n"
+            },
+            {
+              "type": "text",
+              "content": " 变得更大时, 方差比值的均值更接近1, 方差变小, 表示 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma_{*}^{2}"
+            },
+            {
+              "type": "text",
+              "content": " 在概率意义上可以很好地近似 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma^{2}"
+            },
+            {
+              "type": "text",
+              "content": "."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "image",
+          "index": 3,
+          "bbox": [
+            0.188,
+            0.201,
+            0.852,
+            0.43
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 3,
+              "bbox": [
+                0.188,
+                0.201,
+                0.852,
+                0.43
+              ],
+              "image_path": "raw/pages_0321-0336/images/page_331_image_3.jpg",
+              "content": ""
+            },
+            {
+              "type": "image_caption",
+              "index": 4,
+              "bbox": [
+                0.378,
+                0.435,
+                0.658,
+                0.451
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图 7.2.1 方差比值  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\sigma_{*}^{2}/\\sigma^{2}"
+                },
+                {
+                  "type": "text",
+                  "content": "  的直方图"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.164,
+            0.473,
+            0.875,
+            0.594
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "注意到, bootstrap 不是对于所有问题都能起到作用的. 通常来说, 如果我们感兴趣的是 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T\\left(\\widehat{F}_n\\right)"
+            },
+            {
+              "type": "text",
+              "content": " 的某些可以通过样本 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf{X}"
+            },
+            {
+              "type": "text",
+              "content": " 直接进行估计的数字特征, 则是否使用 bootstrap 所得结果没有区别. 比如说, 如果感兴趣的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T\\left(\\widehat{F}_n\\right)"
+            },
+            {
+              "type": "text",
+              "content": " 是样本均值, 则上面的 bootstrap 方差估计将收敛到 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\widehat{\\mathrm{Var}}(X)/n(B \\to \\infty)"
+            },
+            {
+              "type": "text",
+              "content": ", 其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\widehat{\\mathrm{Var}}(X)"
+            },
+            {
+              "type": "text",
+              "content": " 是 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf{X}"
+            },
+            {
+              "type": "text",
+              "content": " 的样本方差 (有偏的). 在这种情况下, bootstrap 没有带来更多的帮助. 事实上, 假设 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\bar{X}_i^*"
+            },
+            {
+              "type": "text",
+              "content": " 是一个 bootstrap 估计, 则"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.266,
+            0.609,
+            0.77,
+            0.651
+          ],
+          "image_path": "raw/pages_0321-0336/images/page_331_equation_6.jpg",
+          "content": "\\widehat {\\mathrm{Var}} (\\bar {X}) = \\mathrm{Var} _ {*} \\left(\\bar {X} _ {i} ^ {*}\\right) = \\frac {1}{n ^ {2}} \\sum_ {i = 1} ^ {n} \\frac {1}{n} \\sum_ {i = 1} ^ {n} \\left(X _ {i} - \\bar {X}\\right) ^ {2} = \\widehat {\\mathrm{Var}} (X) / n."
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.202,
+            0.672,
+            0.486,
+            0.692
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "7.2.2 bootstrap 偏差修正"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.163,
+            0.716,
+            0.874,
+            0.802
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "设统计量 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}"
+            },
+            {
+              "type": "text",
+              "content": " 是参数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": " 的一个估计量. 在很多情况下, 虽然在理论上我们可以得到统计量 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}"
+            },
+            {
+              "type": "text",
+              "content": " 的相合性, 但是在实际中, 尤其是当样本数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n"
+            },
+            {
+              "type": "text",
+              "content": " 较小时, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}"
+            },
+            {
+              "type": "text",
+              "content": " 会产生一个偏差, 即 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n} - \\theta"
+            },
+            {
+              "type": "text",
+              "content": " 的期望并不是0. 为此, 我们可以通过 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E_{F_n}(T_n^* - T_n)"
+            },
+            {
+              "type": "text",
+              "content": " 来估计这个偏差, 其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}^{*}"
+            },
+            {
+              "type": "text",
+              "content": " 是相应基于bootstrap样本的统计量."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.163,
+            0.804,
+            0.875,
+            0.927
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例 7.2.2 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n} \\stackrel{\\mathrm{iid}}{\\sim} \\chi_{1}^{2}"
+            },
+            {
+              "type": "text",
+              "content": " . 考虑 t 检验统计量  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n} = \\frac{\\sqrt{n}(\\bar{X} - 1)}{S_{n}}"
+            },
+            {
+              "type": "text",
+              "content": " . 当 n = 30 时, 我们通过模拟得出  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(T_{n}) = -0.296"
+            },
+            {
+              "type": "text",
+              "content": " ,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname{Var}(T_{n}) = 1.594"
+            },
+            {
+              "type": "text",
+              "content": " . 通过 bootstrap 方法, 我们可以得到这个偏差和方差的估计值分别为 -0.270 和 1.448. 我们发现 bootstrap 方法可以较好地估计偏差和方差, 而如果我们采用中心极限定理近似的方法则会对  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  的推断产生较大的偏差. 表 7.2.1 列出了 bootstrap 方法和 CLT 近似法对  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  的不同分位数"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 332,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.08,
+            0.068,
+            0.109,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "320"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.255,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第七章 bootstrap"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.122,
+            0.122,
+            0.831,
+            0.161
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "的估计值. 我们发现 CLT 近似法得到的分位数和真实的分位数偏差较大, 而 bootstrap 方法效果很好."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "table",
+          "index": 4,
+          "bbox": [
+            0.124,
+            0.199,
+            0.833,
+            0.292
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 3,
+              "bbox": [
+                0.228,
+                0.18,
+                0.725,
+                0.196
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "表 7.2.1 bootstrap 方法和 CLT 近似法对 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "{T}_{n}"
+                },
+                {
+                  "type": "text",
+                  "content": " 的分位数的估计"
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 4,
+              "bbox": [
+                0.124,
+                0.199,
+                0.833,
+                0.292
+              ],
+              "image_path": "raw/pages_0321-0336/images/page_332_table_4.jpg",
+              "content": "<table><tr><td>α</td><td>0.05</td><td>0.25</td><td>0.50</td><td>0.75</td><td>0.95</td></tr><tr><td><eq>T_n</eq></td><td>-2.618</td><td>-0.927</td><td>-0.092</td><td>0.566</td><td>1.345</td></tr><tr><td>bootstrap</td><td>-2.472</td><td>-0.989</td><td>-0.129</td><td>0.592</td><td>1.374</td></tr><tr><td>CLT</td><td>-1.645</td><td>-0.674</td><td>0.000</td><td>0.674</td><td>1.645</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.16,
+            0.326,
+            0.443,
+            0.347
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "7.2.3 bootstrap置信区间"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.123,
+            0.37,
+            0.832,
+            0.443
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "一般来说，对于参数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": " ，我们构造置信区间的方法往往是找一个枢轴量，如 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n} = \\frac{\\hat{\\theta}_{n} - \\theta}{\\hat{\\sigma}_{n}}"
+            },
+            {
+              "type": "text",
+              "content": " 使得 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}\\stackrel {\\mathrm{d}}{\\to}T,"
+            },
+            {
+              "type": "text",
+              "content": " 其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T"
+            },
+            {
+              "type": "text",
+              "content": " 的分布是一个已知的分布 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "G"
+            },
+            {
+              "type": "text",
+              "content": " 。为此，我们构造如下置信区间:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.284,
+            0.454,
+            0.667,
+            0.473
+          ],
+          "image_path": "raw/pages_0321-0336/images/page_332_equation_7.jpg",
+          "content": "\\hat {\\theta} _ {n} - G ^ {- 1} (1 - \\alpha / 2) \\hat {\\sigma} _ {n} \\leqslant \\theta \\leqslant \\hat {\\theta} _ {n} - G ^ {- 1} (\\alpha / 2) \\hat {\\sigma} _ {n}."
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.123,
+            0.485,
+            0.832,
+            0.548
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "上述构造置信区间的过程依赖于参数估计值 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\theta}_n"
+            },
+            {
+              "type": "text",
+              "content": " 的渐近方差的估计和已知的分布函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "G"
+            },
+            {
+              "type": "text",
+              "content": ". 在实际中渐近方差的估计和分布函数可能未知或计算复杂. 这时我们可以采用 bootstrap 方法来构造置信区间. 常见的 bootstrap 构造置信区间的方法有如下两种:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.123,
+            0.554,
+            0.833,
+            0.666
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(1) bootstrap 分位数置信区间 (percentile interval) 假设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\theta}_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  的一个点估计, 我们可从观测数据的经验分布函数中随机抽取 B 个独立的 bootstrap 伪-数据集. 将它们定义为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{i}^{*}"
+            },
+            {
+              "type": "text",
+              "content": " . 之后, 计算基于这 B 个的  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\theta}_{n}^{*}-\\hat{\\theta}_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  值,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{R_{1}^{*}, R_{2}^{*}, \\cdots, R_{B}^{*}\\}"
+            },
+            {
+              "type": "text",
+              "content": " . 那么利用  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{R_{1}^{*}, R_{2}^{*}, \\cdots, R_{B}^{*}\\}"
+            },
+            {
+              "type": "text",
+              "content": "  的经验分布函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\widehat{G}_{B}^{*}"
+            },
+            {
+              "type": "text",
+              "content": " , 可求得  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\left(\\widehat{G}_{B}^{*}(1-\\alpha/2), \\widehat{G}_{B}^{*}(\\alpha/2)\\right)"
+            },
+            {
+              "type": "text",
+              "content": " , 其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\widehat{G}_{B}^{*}(p)"
+            },
+            {
+              "type": "text",
+              "content": "  是  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{R_{1}^{*}, R_{2}^{*}, \\cdots, R_{B}^{*}\\}"
+            },
+            {
+              "type": "text",
+              "content": "  的第 [Bp] 个次序统计量. 则按照前述的 bootstrap 思想,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.331,
+            0.673,
+            0.622,
+            0.7
+          ],
+          "image_path": "raw/pages_0321-0336/images/page_332_equation_10.jpg",
+          "content": "\\left(\\hat {\\theta} _ {n} - \\widehat {G} _ {B} ^ {*} (1 - \\alpha / 2), \\hat {\\theta} _ {n} - \\widehat {G} _ {B} ^ {*} (\\alpha / 2)\\right)"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.124,
+            0.707,
+            0.438,
+            0.723
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "即为我们欲求的区间估计的一种近似."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.122,
+            0.727,
+            0.832,
+            0.821
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(2) bootstrap-t 置信区间 设 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_n = \\frac{\\hat{\\theta}_n - \\theta}{\\hat{\\sigma}_n}"
+            },
+            {
+              "type": "text",
+              "content": "，其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\sigma}_n^2"
+            },
+            {
+              "type": "text",
+              "content": " 是 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\theta}_n"
+            },
+            {
+              "type": "text",
+              "content": " 的渐近方差的一个估计。"
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_n^* = \\frac{\\hat{\\theta}_n^* - \\hat{\\theta}_n}{\\hat{\\sigma}_n^*}"
+            },
+            {
+              "type": "text",
+              "content": " 是对应的 bootstrap 样本的统计量。同样的，设 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{G}_B^*(x)"
+            },
+            {
+              "type": "text",
+              "content": " 是 B 个 bootstrap 样本计算出的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_n^*"
+            },
+            {
+              "type": "text",
+              "content": " 统计量的经验分布函数。则 bootstrap-t 置信区间为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.304,
+            0.831,
+            0.649,
+            0.851
+          ],
+          "image_path": "raw/pages_0321-0336/images/page_332_equation_13.jpg",
+          "content": "(\\hat {\\theta} _ {n} - \\hat {G} _ {B} ^ {*} (1 - \\alpha / 2) \\hat {\\sigma} _ {n}, \\hat {\\theta} _ {n} - \\hat {G} _ {B} ^ {*} (\\alpha / 2) \\hat {\\sigma} _ {n})."
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.122,
+            0.863,
+            0.832,
+            0.927
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "很多问题下, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\sigma}_n^2"
+            },
+            {
+              "type": "text",
+              "content": " 都没有简单的表达式, 我们自然也可以用前面介绍的 bootstrap 方差估计来近似之. 注意 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{G}_B^*"
+            },
+            {
+              "type": "text",
+              "content": " 是需要通过 bootstrap 由标准化的统计量来重抽样得到的, 因此此时两个 bootstrap 层叠在一起, 这时计算量相对会大很多."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 333,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.701,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "7.2 bootstrap 常见应用"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.069,
+            0.916,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "321"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.164,
+            0.121,
+            0.875,
+            0.185
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "注意到, 前面关于 bootstrap 构造置信区间的讨论与假设检验也密切相关. 一个原假设下的参数值落在置信度为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(1 - \\alpha)100\\%"
+            },
+            {
+              "type": "text",
+              "content": " 的置信区间外, 则以 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha"
+            },
+            {
+              "type": "text",
+              "content": " 的显著性水平拒绝原假设. 当然我们亦可类似地计算出基于 bootstrap 的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p"
+            },
+            {
+              "type": "text",
+              "content": " 值估计."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.164,
+            0.191,
+            0.876,
+            0.254
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例 7.2.3 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  为来自  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x)"
+            },
+            {
+              "type": "text",
+              "content": "  的独立同分布样本. 我们考虑均值  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu"
+            },
+            {
+              "type": "text",
+              "content": "  的置信区间. 设定 n = 20, B = 200, 置信水平为 0.9, 模拟次数为 10000 次. 表 7.2.2 显示不同分布下各种方法构造的置信区间的覆盖率和区间长度."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 5,
+          "bbox": [
+            0.166,
+            0.297,
+            0.875,
+            0.41
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 4,
+              "bbox": [
+                0.365,
+                0.279,
+                0.673,
+                0.294
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "表 7.2.2 置信区间的覆盖率和区间长度"
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 5,
+              "bbox": [
+                0.166,
+                0.297,
+                0.875,
+                0.41
+              ],
+              "image_path": "raw/pages_0321-0336/images/page_333_table_5.jpg",
+              "content": "<table><tr><td></td><td colspan=\"2\">N(0,1)</td><td colspan=\"2\">t(4)</td><td colspan=\"2\"><eq>\\chi_1^2</eq></td></tr><tr><td></td><td>覆盖率</td><td>区间长度</td><td>覆盖率</td><td>区间长度</td><td>覆盖率</td><td>区间长度</td></tr><tr><td>RT</td><td>0.898</td><td>0.765</td><td>0.907</td><td>1.041</td><td>0.841</td><td>1.013</td></tr><tr><td>BP</td><td>0.865</td><td>0.699</td><td>0.859</td><td>0.949</td><td>0.814</td><td>0.921</td></tr><tr><td>BT</td><td>0.889</td><td>0.760</td><td>0.921</td><td>1.076</td><td>0.804</td><td>1.274</td></tr></table>"
+            },
+            {
+              "type": "table_footnote",
+              "index": 6,
+              "bbox": [
+                0.194,
+                0.415,
+                0.772,
+                0.43
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "注:RT: 常规 t 置信区间；BP: bootstrap 分位数置信区间；BT: bootstrap-t 置信区间."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.202,
+            0.468,
+            0.466,
+            0.487
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "7.2.4 bootstrap 残差法"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.164,
+            0.513,
+            0.874,
+            0.575
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在回归模型中, bootstrap 方法的运用和上述独立同分布观测下的情况有所不同, 一般要依据具体的情况采用具体的方法. 我们在这里仅介绍针对线性模型的 bootstrap 残差法."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.163,
+            0.583,
+            0.877,
+            0.786
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "考虑如下典型多重回归模型: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_i = \\boldsymbol{x}_i^{\\mathrm{T}}\\boldsymbol{\\beta} + \\boldsymbol{\\varepsilon}_i, i = 1,2,\\dots,n"
+            },
+            {
+              "type": "text",
+              "content": ", 其中假设 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\boldsymbol{\\varepsilon}_i"
+            },
+            {
+              "type": "text",
+              "content": " 是均值为零、方差为常数的独立同分布随机变量. 这里, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\boldsymbol{x}_i"
+            },
+            {
+              "type": "text",
+              "content": " 和 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\boldsymbol{\\beta}"
+            },
+            {
+              "type": "text",
+              "content": " 分别是 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p"
+            },
+            {
+              "type": "text",
+              "content": " 维的协变量和参数. 一种简单但是错误的 bootstrap 方法描述如下. 我们从响应值集合中重抽样来构成一个新的伪-数据, 也就是对于每一个观测的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\boldsymbol{x}_i"
+            },
+            {
+              "type": "text",
+              "content": " 有 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_i^*"
+            },
+            {
+              "type": "text",
+              "content": ", 从而可得到一个新的回归数据集. 然后可以由这些伪-数据来计算 bootstrap 参数向量估计 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\widehat{\\boldsymbol{\\beta}}^*"
+            },
+            {
+              "type": "text",
+              "content": ". 重复重抽样和估计的步骤很多次后, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\widehat{\\boldsymbol{\\beta}}^*"
+            },
+            {
+              "type": "text",
+              "content": " 经验分布可用于推断 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\boldsymbol{\\beta}"
+            },
+            {
+              "type": "text",
+              "content": ". 这样做错误的原因是 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_i \\mid \\boldsymbol{x}_i"
+            },
+            {
+              "type": "text",
+              "content": " 不是独立同分布的样本, 它们具有不同的边际分布. 因此, 用这种方生成 bootstrap 回归数据集是不恰当的. 为了确定一个正确的 bootstrap 方法, 我们必须要找到合适的独立同分布的变量. 模型中的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\boldsymbol{\\varepsilon}_i"
+            },
+            {
+              "type": "text",
+              "content": " 是独立同分布的. 因此, 更恰当的策略是如下所描述的 bootstrap 残差法."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.163,
+            0.791,
+            0.877,
+            0.931
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "我们先由观测数据拟合回归模型, 然后获得响应  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\widehat{Y}_{i}"
+            },
+            {
+              "type": "text",
+              "content": "  和残差  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\widehat{\\varepsilon}_{i}"
+            },
+            {
+              "type": "text",
+              "content": " . 从拟合残差集合中有放回随机抽取得到 bootstrap 残差集合  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\widehat{\\varepsilon}_{1}^{*}, \\widehat{\\varepsilon}_{2}^{*}, \\cdots, \\widehat{\\varepsilon}_{n}^{*}"
+            },
+            {
+              "type": "text",
+              "content": " . (注意实际上  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\widehat{\\varepsilon}_{i}^{*}"
+            },
+            {
+              "type": "text",
+              "content": "  不是独立的, 尽管通常来说它们近似独立.) 生成一个伪-响应 bootstrap 集合,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y_{i}^{*} = \\widehat{Y}_{i} + \\widehat{\\varepsilon}_{i}^{*}, i = 1, 2, \\cdots, n"
+            },
+            {
+              "type": "text",
+              "content": " . 对 x 回归  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Y^{*}"
+            },
+            {
+              "type": "text",
+              "content": "  从而获得 bootstrap 参数估计  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\widehat{\\beta}^{*}"
+            },
+            {
+              "type": "text",
+              "content": " . 重复多次该过程可得到  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\widehat{\\beta}^{*}"
+            },
+            {
+              "type": "text",
+              "content": "  的经验分布函数, 然后我们用它进行推断. 由线性模型知识我们知道, 若采用  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\widehat{\\beta} = (\\boldsymbol{X}^{\\mathrm{T}}\\boldsymbol{X})^{-1}\\boldsymbol{X}^{\\mathrm{T}}\\boldsymbol{y}"
+            },
+            {
+              "type": "text",
+              "content": " , 则所得到的  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\widehat{\\beta}^{*}"
+            },
+            {
+              "type": "text",
+              "content": "  定满足  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E\\left(\\widehat{\\beta}^{*}\\right) = \\beta"
+            },
+            {
+              "type": "text",
+              "content": " ."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 334,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.08,
+            0.068,
+            0.109,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "322"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.255,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第七章 bootstrap"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.123,
+            0.122,
+            0.831,
+            0.161
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "对于简单线性模型 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y = \\alpha + \\beta x + \\varepsilon"
+            },
+            {
+              "type": "text",
+              "content": "，运用bootstrap方法我们也可以构造 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\beta"
+            },
+            {
+              "type": "text",
+              "content": " 的置信区间."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.16,
+            0.171,
+            0.452,
+            0.187
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "标准的基于正态假设下的置信区间"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.264,
+            0.209,
+            0.69,
+            0.239
+          ],
+          "image_path": "raw/pages_0321-0336/images/page_334_equation_4.jpg",
+          "content": "\\left[ \\widehat {\\beta} - \\mathrm{sd} (\\widehat {\\beta}) t _ {1 - \\alpha / 2} (n - 2), \\quad \\widehat {\\beta} + \\mathrm{sd} (\\widehat {\\beta}) t _ {1 - \\alpha / 2} (n - 2) \\right],"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.123,
+            0.26,
+            0.785,
+            0.281
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{sd}(\\widehat{\\beta}) = \\widehat{\\sigma}\\sqrt{c_{22}}"
+            },
+            {
+              "type": "text",
+              "content": " 为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\widehat{\\beta}"
+            },
+            {
+              "type": "text",
+              "content": " 的标准差, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c_{jj}"
+            },
+            {
+              "type": "text",
+              "content": " 是 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\left(\\boldsymbol{X}^{\\mathrm{T}}\\boldsymbol{X}\\right)^{-1}"
+            },
+            {
+              "type": "text",
+              "content": " 的对角线上的第 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "j"
+            },
+            {
+              "type": "text",
+              "content": " 个元素."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.123,
+            0.289,
+            0.832,
+            0.377
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "通过 bootstrap 残差法进行抽样并构造相应的 bootstrap-t 置信区间和 bootstrap 分位数置信区间. 即计算残差  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\widehat{\\varepsilon}_{i}=y_{i}-\\widehat{\\alpha}-\\widehat{\\beta}x_{i}"
+            },
+            {
+              "type": "text",
+              "content": " . 从拟合残差集合中有放回随机地抽取得到 bootstrap 残差集合  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\widehat{\\varepsilon}_{1}^{*},\\widehat{\\varepsilon}_{2}^{*},\\cdots,\\widehat{\\varepsilon}_{n}^{*}"
+            },
+            {
+              "type": "text",
+              "content": " , 再计算获得 bootstrap 响应  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y_{i}^{*}=\\widehat{y}_{i}+\\widehat{\\varepsilon}_{i}^{*}"
+            },
+            {
+              "type": "text",
+              "content": " . 以  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{x_{i},y_{i}^{*}\\}_{i=1}^{n}"
+            },
+            {
+              "type": "text",
+              "content": "  为一组 bootstrap 回归样本."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 7,
+          "bbox": [
+            0.123,
+            0.383,
+            0.832,
+            0.526
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.123,
+                0.383,
+                0.832,
+                0.458
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(1) bootstrap 分位数置信区间. 对第 j 次生成的 bootstrap 回归样本计算  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\widehat{\\beta}_{j}^{*}-\\widehat{\\beta}, j=1,2,\\cdots,B"
+                },
+                {
+                  "type": "text",
+                  "content": " . 之后求得  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\left(t_{\\alpha/2}^{*}, t_{1-\\alpha/2}^{*}\\right)"
+                },
+                {
+                  "type": "text",
+                  "content": " ，其中  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "t_{p}^{*}"
+                },
+                {
+                  "type": "text",
+                  "content": "  是  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\left\\{\\widehat{\\beta}_{1}^{*}, \\widehat{\\beta}_{2}^{*}, \\cdots, \\widehat{\\beta}_{B}^{*}\\right\\}"
+                },
+                {
+                  "type": "text",
+                  "content": "  的第  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\lceil Bp\\rceil"
+                },
+                {
+                  "type": "text",
+                  "content": "  个次序统计量. 则  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\left(\\widehat{\\beta}-t_{\\alpha/2}^{*}, \\widehat{\\beta}-t_{1-\\alpha/2}^{*}\\right)"
+                },
+                {
+                  "type": "text",
+                  "content": "  为我们所求."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 9,
+              "bbox": [
+                0.123,
+                0.462,
+                0.832,
+                0.526
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(2) bootstrap-t 置信区间. 同上但每次不仅计算 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\widehat{\\beta}_j^*"
+                },
+                {
+                  "type": "text",
+                  "content": ", 还需要计算 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\widehat{\\sigma}_j^*"
+                },
+                {
+                  "type": "text",
+                  "content": ", 之后计算标准化统计量 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\left(\\widehat{\\beta}_j^* - \\widehat{\\beta}\\right) / \\left(\\widehat{\\sigma}_j^*\\sqrt{c_{22}}\\right)"
+                },
+                {
+                  "type": "text",
+                  "content": ". 之后类似前种方法求得相应的 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\left(t_{\\alpha/2}^*, t_{1-\\alpha/2}^*\\right)"
+                },
+                {
+                  "type": "text",
+                  "content": ", 则构造的 bootstrap-t 置信区间为"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.321,
+            0.547,
+            0.635,
+            0.575
+          ],
+          "image_path": "raw/pages_0321-0336/images/page_334_equation_10.jpg",
+          "content": "\\left(\\widehat {\\beta} - \\widehat {\\sigma} \\sqrt {c _ {2 2}} t _ {1 - \\alpha / 2} ^ {*}, \\quad \\widehat {\\beta} - \\widehat {\\sigma} \\sqrt {c _ {2 2}} t _ {\\alpha / 2} ^ {*}\\right)."
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.123,
+            0.599,
+            0.832,
+            0.731
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例 7.2.4 考虑简单线性模型  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y_{i} = \\alpha + \\beta x_{i} + \\varepsilon_{i}, i = 1, 2, \\cdots, n,"
+            },
+            {
+              "type": "text",
+              "content": "  其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha = 1, \\beta = 2"
+            },
+            {
+              "type": "text",
+              "content": " . 自变量 x 设为固定值  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{i} = i/n"
+            },
+            {
+              "type": "text",
+              "content": " . 残差考虑三种分布: (1)  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N(0, 1); (2) t(5); (3) \\chi_{1}^{2} - 1"
+            },
+            {
+              "type": "text",
+              "content": " . 设定 n = 20, B = 200, 置信水平为 0.9, 模拟次数为 10000. 表 7.2.3 显示不同分布下各种方法构造的置信区间的覆盖率和区间长度. 从表中我们发现 bootstrap-t 置信区间的效果比 bootstrap 分位数置信区间更好. 这并不奇怪, 因为在这种情况下, bootstrap-t 置信区间的收敛速度比 bootstrap 分位数置信区间的更快."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 13,
+          "bbox": [
+            0.125,
+            0.779,
+            0.832,
+            0.892
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 12,
+              "bbox": [
+                0.323,
+                0.76,
+                0.63,
+                0.775
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "表 7.2.3 置信区间的覆盖率和区间长度"
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 13,
+              "bbox": [
+                0.125,
+                0.779,
+                0.832,
+                0.892
+              ],
+              "image_path": "raw/pages_0321-0336/images/page_334_table_13.jpg",
+              "content": "<table><tr><td></td><td colspan=\"2\">N(0,1)</td><td colspan=\"2\">t(5)</td><td colspan=\"2\"><eq>\\chi_1^2-1</eq></td></tr><tr><td></td><td>覆盖率</td><td>区间长度</td><td>覆盖率</td><td>区间长度</td><td>覆盖率</td><td>区间长度</td></tr><tr><td>RT</td><td>0.894</td><td>2.572</td><td>0.893</td><td>3.277</td><td>0.888</td><td>3.431</td></tr><tr><td>BP</td><td>0.857</td><td>2.349</td><td>0.857</td><td>2.994</td><td>0.852</td><td>3.145</td></tr><tr><td>BT</td><td>0.895</td><td>2.612</td><td>0.894</td><td>3.322</td><td>0.889</td><td>3.463</td></tr></table>"
+            },
+            {
+              "type": "table_footnote",
+              "index": 14,
+              "bbox": [
+                0.152,
+                0.902,
+                0.729,
+                0.917
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "注:RT: 常规 t 置信区间；BP: bootstrap 分位数置信区间；BT: bootstrap-t 置信区间."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 335,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.686,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "7.3 bootstrap失效的情况"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.068,
+            0.917,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "323"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.165,
+            0.12,
+            0.5,
+            0.143
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "7.3 bootstrap 失效的情况"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.164,
+            0.188,
+            0.871,
+            0.228
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "尽管在上述每节中我们发现 bootstrap 方法具有良好的性质, 但是 bootstrap 也并不是万能的. 在一些情况下, bootstrap 方法会失效. 一般来说有如下几种情况:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 10,
+          "bbox": [
+            0.164,
+            0.234,
+            0.874,
+            0.389
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 4,
+              "bbox": [
+                0.202,
+                0.234,
+                0.54,
+                0.252
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(1) "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "T_{n} = \\sqrt{n} (\\bar{X} -\\mu)"
+                },
+                {
+                  "type": "text",
+                  "content": " ，但是 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\operatorname {Var}(X) = \\infty"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 5,
+              "bbox": [
+                0.202,
+                0.256,
+                0.563,
+                0.275
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(2) "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "T_{n} = \\sqrt{n}[g(\\bar{X}) - g(\\mu)]"
+                },
+                {
+                  "type": "text",
+                  "content": ", 但是 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\nabla g(\\mu) = 0"
+                },
+                {
+                  "type": "text",
+                  "content": "."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.202,
+                0.28,
+                0.63,
+                0.298
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(3) "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "T_{n} = \\sqrt{n}[g(\\bar{X}) - g(\\mu)]"
+                },
+                {
+                  "type": "text",
+                  "content": ", 但是 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "g(\\cdot)"
+                },
+                {
+                  "type": "text",
+                  "content": " 在 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mu"
+                },
+                {
+                  "type": "text",
+                  "content": " 点不可导."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.164,
+                0.302,
+                0.874,
+                0.342
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(4) "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "T_{n} = \\sqrt{n}\\left[F_{n}^{-1}(p) - F^{-1}(p)\\right]"
+                },
+                {
+                  "type": "text",
+                  "content": ", 但是 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "f(F^{-1}(p)) = 0"
+                },
+                {
+                  "type": "text",
+                  "content": " 或者 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "F"
+                },
+                {
+                  "type": "text",
+                  "content": " 在 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "F^{-1}(p)"
+                },
+                {
+                  "type": "text",
+                  "content": " 点的左、右导数不相等."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.202,
+                0.349,
+                0.537,
+                0.366
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(5) 分布函数  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "F_{\\theta}"
+                },
+                {
+                  "type": "text",
+                  "content": "  的支撑集依赖于参数  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\theta"
+                },
+                {
+                  "type": "text",
+                  "content": " ."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 9,
+              "bbox": [
+                0.202,
+                0.372,
+                0.625,
+                0.389
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(6) 真实参数  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\theta_{0}"
+                },
+                {
+                  "type": "text",
+                  "content": "  在分布函数  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "F_{\\theta}"
+                },
+                {
+                  "type": "text",
+                  "content": "  的支撑集的边界上."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.203,
+            0.395,
+            0.568,
+            0.411
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "下面我们举两个bootstrap方法失效的例子."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.163,
+            0.418,
+            0.875,
+            0.527
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例7.3.1 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  为来自  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x)"
+            },
+            {
+              "type": "text",
+              "content": "  的独立同分布样本且  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(X)=0, \\operatorname{Var}(X)=1"
+            },
+            {
+              "type": "text",
+              "content": " . 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g(x)=|x|"
+            },
+            {
+              "type": "text",
+              "content": " ,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}=\\sqrt{n}[g(\\bar{X})-g(0)]"
+            },
+            {
+              "type": "text",
+              "content": " . 由大样本理论知  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}\\stackrel{\\mathrm{d}}{\\rightarrow}|N(0,1)|"
+            },
+            {
+              "type": "text",
+              "content": " . 但是 bootstrap 统计量  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}^{*}=\\sqrt{n}(\\bar{X}^{*}-\\bar{X})\\stackrel{\\mathrm{d}}{\\rightarrow}|Z_{1}+Z_{2}|-|Z_{1}|"
+            },
+            {
+              "type": "text",
+              "content": " , 其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z_{1}, Z_{2}"
+            },
+            {
+              "type": "text",
+              "content": "  是来自  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N(0,1)"
+            },
+            {
+              "type": "text",
+              "content": "  的独立同分布样本. 这种情况下 bootstrap 统计量  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}^{*}"
+            },
+            {
+              "type": "text",
+              "content": "  的渐近分布和原始统计量  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  的渐近分布并不一致."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.164,
+            0.533,
+            0.873,
+            0.577
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例 7.3.2 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  为来自  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U(0,1)"
+            },
+            {
+              "type": "text",
+              "content": "  的独立同分布样本,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n} = n[1 - X_{(n)}]"
+            },
+            {
+              "type": "text",
+              "content": " ,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}^{*} = n[X_{(n)} - X_{(n)}^{*}]"
+            },
+            {
+              "type": "text",
+              "content": " . 由大样本理论知,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n} \\stackrel{\\mathrm{d}}{\\rightarrow} Exp(1)"
+            },
+            {
+              "type": "text",
+              "content": " . 但是, 对任意的 t > 0,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.359,
+            0.595,
+            0.676,
+            0.768
+          ],
+          "image_path": "raw/pages_0321-0336/images/page_335_equation_14.jpg",
+          "content": "\\begin{array}{l} P _ {F _ {n}} \\left(T _ {n} ^ {*} \\leqslant t\\right) \\geqslant P _ {F _ {n}} \\left(T _ {n} ^ {*} = 0\\right) \\\\ = P _ {F _ {n}} \\left(X _ {(n)} ^ {*} = X _ {(n)}\\right) \\\\ = 1 - P _ {F _ {n}} \\left(X _ {(n)} ^ {*} <   X _ {(n)}\\right) \\\\ = 1 - \\left(\\frac {n - 1}{n}\\right) ^ {n} \\\\ \\xrightarrow {n \\to \\infty} 1 - \\mathrm{e} ^ {- 1}. \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.164,
+            0.787,
+            0.871,
+            0.83
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "如果 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t = 0.0001"
+            },
+            {
+              "type": "text",
+              "content": " ，则 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lim_{n}P_{F_n}(T_n^*\\leqslant t)\\geqslant 1 - \\mathrm{e}^{-1}"
+            },
+            {
+              "type": "text",
+              "content": " ，但是 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lim_{n}P_F(T_n\\leqslant t) = 1 - \\mathrm{e}^{-0.0001}\\approx 0."
+            },
+            {
+              "type": "text",
+              "content": " 因此 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P_{F_n}(T_n^*\\leqslant t)\\nrightarrow P_F(T_n\\leqslant t)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 336,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.08,
+            0.068,
+            0.109,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "324"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.256,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第七章 bootstrap"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.127,
+            0.119,
+            0.21,
+            0.14
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "习题七"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "list",
+          "index": 9,
+          "bbox": [
+            0.16,
+            0.187,
+            0.833,
+            0.53
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 3,
+              "bbox": [
+                0.16,
+                0.187,
+                0.83,
+                0.249
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "1. 生成 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "n = 20,30,50"
+                },
+                {
+                  "type": "text",
+                  "content": " 个来自 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "Exp(1)"
+                },
+                {
+                  "type": "text",
+                  "content": " 的随机变量, 比较样本均值 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\bar{X}"
+                },
+                {
+                  "type": "text",
+                  "content": " 的精确分布、CLT近似分布和bootstrap方法构造的分布之间的差异, 并讨论bootstrap方法相比于CLT近似法的优缺点."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 4,
+              "bbox": [
+                0.16,
+                0.256,
+                0.83,
+                0.297
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "2. 假设总体均值为 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mu"
+                },
+                {
+                  "type": "text",
+                  "content": ", 我们感兴趣的是估计 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mu^2"
+                },
+                {
+                  "type": "text",
+                  "content": ", 现考虑直接使用 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\bar{X}^2"
+                },
+                {
+                  "type": "text",
+                  "content": " 作为估计, 请问如何使用 bootstrap 方法进行偏差修正?"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 5,
+              "bbox": [
+                0.16,
+                0.302,
+                0.832,
+                0.392
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "3. 假设  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "(X_{i}, Y_{i}), i = 1, 2, \\cdots, n"
+                },
+                {
+                  "type": "text",
+                  "content": "  是来自二元正态分布  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "N(\\mathbf{0}, \\Sigma)"
+                },
+                {
+                  "type": "text",
+                  "content": "  的一组独立同分布样本, 其中  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\Sigma = \\begin{pmatrix} 1 & \\rho \\\\ \\rho & 1 \\end{pmatrix}"
+                },
+                {
+                  "type": "text",
+                  "content": " . 对于不同样本数 n = 20, 30, 50, 比较运用大样本理论和 bootstrap 方法对样本相关系数 r 的渐近方差的估计效果."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.161,
+                0.398,
+                0.451,
+                0.415
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "4. 证明例7.3.1中 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "T_{n}^{*}"
+                },
+                {
+                  "type": "text",
+                  "content": " 的渐近分布."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.16,
+                0.421,
+                0.83,
+                0.483
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "5. 假设  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+                },
+                {
+                  "type": "text",
+                  "content": "  为来自 Cauchy 分布  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "C(0,1)"
+                },
+                {
+                  "type": "text",
+                  "content": "  的独立同分布样本. 对不同样本数 n = 20, 50, 比较运用大样本理论和 bootstrap 方法构造 Cauchy 分布  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "C(0,1)"
+                },
+                {
+                  "type": "text",
+                  "content": "  中位数的置信水平为 0.95 的置信区间的效果."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.16,
+                0.489,
+                0.833,
+                0.53
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "6. (1) 给出一个运用 bootstrap 方法估计中位数失效的例子; (2) 给出一个运用 bootstrap 方法估计均值失效的例子."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}

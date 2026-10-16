@@ -1,0 +1,1626 @@
+{
+  "pages": [
+    {
+      "page_idx": 325,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.394,
+            0.104,
+            0.502,
+            0.133
+          ],
+          "level": 2,
+          "content": "第七章"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.544,
+            0.172,
+            0.766,
+            0.212
+          ],
+          "level": 2,
+          "content": "bootstrap"
+        }
+      ]
+    },
+    {
+      "page_idx": 326,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.08,
+            0.068,
+            0.107,
+            0.079
+          ],
+          "content": "314"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.125,
+            0.066,
+            0.255,
+            0.081
+          ],
+          "content": "第七章 bootstrap"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.122,
+            0.832,
+            0.231
+          ],
+          "content": "本章介绍在统计学分析中常用的一个方法——bootstrap (自助法). 总的来说, bootstrap 方法通过对原始样本数据进行重复抽样, 以估计样本统计量的分布特性. bootstrap 方法具有广泛的应用领域, 包括参数估计、置信区间构造、假设检验等. 它不需要对总体分布做出特定的假设, 因此具有很高的灵活性和实用性. 同时, bootstrap 方法还可以用于处理复杂的数据结构和非参数问题, 为研究者提供了更多的分析工具."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.124,
+            0.284,
+            0.379,
+            0.306
+          ],
+          "level": 2,
+          "content": "7.1 bootstrap 原理"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.351,
+            0.833,
+            0.526
+          ],
+          "content": "设  $\\boldsymbol{X}=(X_{1},X_{2},\\cdots,X_{n})$  是一组来自分布函数 F 的独立同分布的样本。令  $\\boldsymbol{\\theta}=T(F)$  为我们感兴趣的关于分布函数  $F(x)$  的某一特征，比如期望  $T(F)=\\int z\\mathrm{d}F(z)$ 。常见的参数  $\\theta$  的一个估计可以表示为  $\\hat{\\boldsymbol{\\theta}}=T(\\hat{F}_{n})$ ，其中  $\\hat{F}_{n}$  表示观测数据的经验分布函数。比如当  $\\theta$  是一元总体均值时，估计为样本均值， $\\hat{\\theta}=\\int z\\mathrm{d}\\hat{F}_{n}(z)=\\sum_{i=1}^{n}X_{i}/n$ 。一般来说，我们通过大样本理论推导出参数估计  $\\hat{\\theta}$  的理论分布。但是在实际中， $\\hat{\\theta}$  的理论分布可能难以处理或者根本就是未知的，或许也依赖于未知分布函数 F。因此我们希望提出一种在  $\\hat{\\theta}$  的渐近分布未知的情况下仍然有效的统计推断方法。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.532,
+            0.832,
+            0.642
+          ],
+          "content": "斯坦福大学教授 Bradley Efron (布莱德利·埃夫隆) 在 1979 年提出了著名的 bootstrap 方法, 提供了关于  $\\hat{\\theta}$  的分布的一种近似计算方法. 由 Glivenko 定理知, 当  $n \\to \\infty$  时,  $\\hat{F}_{n} \\stackrel{a.s.}{\\rightarrow} F$ . 因此, 直观上讲, 当我们产生一组来自经验分布函数  $\\hat{F}_{n}$  的独立同分布的随机变量  $\\{X_{1}^{*}, X_{2}^{*}, \\cdots, X_{n}^{*}\\}$  时,  $\\hat{\\theta}^{*} = T(\\hat{F}_{n}^{*})$  应该与  $\\hat{\\theta}$  的分布近似, 其中  $\\hat{F}_{n}^{*}$  表示观测  $\\{X_{i}^{*}, X_{2}^{*}, \\cdots, X_{n}^{*}\\}$  的样本分布函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.647,
+            0.831,
+            0.687
+          ],
+          "content": "定义 7.1.1 设  $X_{1}, X_{2}, \\cdots, X_{n}$  是来自分布函数 F 的独立同分布样本，且  $T(X_{1}, X_{2}, \\cdots, X_{n}, F)$  是一个给定的函数。则定义 T 的原始分布和 bootstrap 分布分别为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.317,
+            0.699,
+            0.642,
+            0.717
+          ],
+          "content": "H _ {n} (x) = P _ {F} (T (X _ {1}, X _ {2}, \\dots , X _ {n}, F) \\leqslant x),",
+          "image_source": "../../raw/pages_0321-0336/images/page_326_equation_7.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.297,
+            0.732,
+            0.66,
+            0.75
+          ],
+          "content": "H _ {\\mathrm{boot}} (x) = P _ {F _ {n}} (T (X _ {1} ^ {*}, X _ {2} ^ {*}, \\dots , X _ {n} ^ {*}, F _ {n}) \\leqslant x),",
+          "image_source": "../../raw/pages_0321-0336/images/page_326_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.762,
+            0.719,
+            0.779
+          ],
+          "content": "其中 $(X_{1}^{*},X_{2}^{*},\\cdots,X_{n}^{*})$ 是一组来自经验分布函数 $F_{n}$ 的独立同分布样本."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.785,
+            0.63,
+            0.802
+          ],
+          "content": "定义 7.1.2 对于任意的两个分布函数  $F(x)$ ,  $G(x)$ ，定义"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.808,
+            0.356,
+            0.825
+          ],
+          "content": "(1) Kolmogorov 距离为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.333,
+            0.838,
+            0.621,
+            0.864
+          ],
+          "content": "K (F, G) = \\sup _ {- \\infty <   x <   \\infty} | F (x) - G (x) |;",
+          "image_source": "../../raw/pages_0321-0336/images/page_326_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.874,
+            0.449,
+            0.89
+          ],
+          "content": "(2) Wasserstein (沃瑟斯坦) 距离为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.336,
+            0.899,
+            0.617,
+            0.929
+          ],
+          "content": "\\ell_ {2} (F, G) = \\inf _ {\\Gamma_ {2, F, G}} \\left(E (| Y - X | ^ {2})\\right) ^ {\\frac {1}{2}},",
+          "image_source": "../../raw/pages_0321-0336/images/page_326_equation_14.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 327,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.731,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": "7.1 bootstrap 原理"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.889,
+            0.068,
+            0.917,
+            0.08
+          ],
+          "content": "315"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.122,
+            0.871,
+            0.161
+          ],
+          "content": "其中 $X \\sim F, Y \\sim G$, $\\Gamma_{2,F,G}$ 为所有具有有限二阶矩且边际分布为 $F$ 和 $G$ 的 $(X,Y)$ 的联合分布的集合."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.168,
+            0.873,
+            0.232
+          ],
+          "content": "$\\ell_{2}(F_{n},F)\\rightarrow0$ 当且仅当 $F_{n}\\xrightarrow{d}F$ 且 $E_{F_{n}}(X^{k})\\rightarrow E_{F}(X^{k}), k=1,2.$ 由于我们在运用bootstrap方法时常常考虑分布函数、均值、方差等特征，因此我们只需证明bootstrap分布 $H_{\\mathrm{boot}}(x)$ 在Wasserstein距离下收敛到原始分布 $H_{n}(x)$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.201,
+            0.238,
+            0.565,
+            0.255
+          ],
+          "content": "定义 7.1.3 对任意的一个距离函数  $\\rho(\\cdot,\\cdot)$ ,"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.201,
+            0.261,
+            0.871,
+            0.303
+          ],
+          "sub_type": "text",
+          "content": "(1) 如果  $\\rho(H_{n}, H_{\\mathrm{boot}}) \\xrightarrow{\\mathrm{P}} 0$ ，则称对于函数 T, bootstrap 在距离  $\\rho$  下是（弱）相合的.\n(2) 如果 $\\rho(H_n, H_{\\mathrm{boot}}) \\xrightarrow{\\mathrm{a.s.}} 0$，则称对于函数 $T$，bootstrap 在距离 $\\rho$ 下是强相合的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.202,
+            0.309,
+            0.863,
+            0.327
+          ],
+          "content": "下面我们对一些特殊情况给出 bootstrap 方法的相合性. 我们首先考虑均值函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.166,
+            0.332,
+            0.871,
+            0.374
+          ],
+          "content": "定理 7.1.1 假设  $X_{1}, X_{2}, \\cdots, X_{n}$  是来自分布函数  $F(x)$  的一组独立同分布样本且  $E(X) = \\mu, E(X^{2}) < \\infty$ . 设  $T(X_{1}, X_{2}, \\cdots, X_{n}, F) = \\sqrt{n}(\\bar{X} - \\mu)$ ，则当  $n \\to \\infty$  时，"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.358,
+            0.391,
+            0.677,
+            0.41
+          ],
+          "content": "K (H _ {n}, H _ {\\mathrm{boot}}) \\stackrel {{\\text {a.s.}}} {{\\to}} 0, \\ell_ {2} (H _ {n}, H _ {\\mathrm{boot}}) \\stackrel {{\\text {a.s.}}} {{\\to}} 0.",
+          "image_source": "../../raw/pages_0321-0336/images/page_327_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.432,
+            0.871,
+            0.472
+          ],
+          "content": "bootstrap 在 Kolmogorov 距离下的强相合性由 Singh (1981) 给出, 在 Wasserstein 距离下的强相合性由 Bickel et al. (1981) 证明."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.478,
+            0.873,
+            0.564
+          ],
+          "content": "例 7.1.1 设  $X_{i}, i=1,2,\\cdots,n$  是来自分布  $F(x)$  的独立同分布样本. 我们考虑统计量  $T=\\sqrt{n}[\\bar{X}-E(X)]$ . 表 7.1.1 给出了不同分布下 bootstrap 和中心极限定理 (CLT) 对概率值的逼近效果. 在 bootstrap 中我们采用重抽样次数 B=500. 从表中我们可以看到两种方法都可以对概率值进行较好的估计, 尤其是当样本量增大时."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.202,
+            0.571,
+            0.507,
+            0.587
+          ],
+          "content": "在多元情形下, 我们同样有如下结论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.594,
+            0.871,
+            0.658
+          ],
+          "content": "定理 7.1.2 假设  $X_{1}, X_{2}, \\cdots, X_{n}$  是来自分布函数  $F(x)$  的一组独立同分布样本且  $E(\\boldsymbol{X}) = \\boldsymbol{\\mu}, \\mathrm{Cov}(\\boldsymbol{X}) = \\Sigma$  是正定的. 设  $T(\\boldsymbol{X}_{1}, \\boldsymbol{X}_{2}, \\cdots, \\boldsymbol{X}_{n}, F) = \\sqrt{n}(\\bar{\\boldsymbol{X}} - \\boldsymbol{\\mu})$ ，则当  $n \\to \\infty$  时， $K(H_{n}, H_{\\mathrm{boot}}) \\stackrel{\\mathrm{a.s.}}{\\rightarrow} 0$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.664,
+            0.873,
+            0.727
+          ],
+          "content": "由 Delta 定理, 我们知道, 如果统计量 T 服从渐近正态分布, 那么对于光滑函数  $g(\\cdot)$ ,  $g(T)$  仍然满足渐近正态性. 下面的定理说明如果对于统计量 T, bootstrap 是相合的, 那么对于统计量  $g(T)$ , bootstrap 仍然具有相合性."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.733,
+            0.873,
+            0.821
+          ],
+          "content": "定理 7.1.3 假设  $X_{1}, X_{2}, \\cdots, X_{n}$  是来自分布函数  $F(x)$  的一组独立同分布样本且  $E(\\boldsymbol{X}) = \\boldsymbol{\\mu}, \\mathrm{Cov}(\\boldsymbol{X}) = \\Sigma$  是正定的。设  $T(\\boldsymbol{X}_{1}, \\boldsymbol{X}_{2}, \\cdots, \\boldsymbol{X}_{n}, F) = \\sqrt{n}(\\bar{\\boldsymbol{X}} - \\boldsymbol{\\mu})$ 。对于一个函数  $g : R^{p} \\to R^{m}, m \\geqslant 1, \\nabla g(\\cdot)$  在  $\\mu$  的一个邻域内存在且在  $\\mu$  处连续， $\\nabla g(\\boldsymbol{\\mu}) \\neq \\mathbf{0}$ 。则当  $n \\to \\infty$  时，对于函数  $\\sqrt{n}[g(\\bar{\\boldsymbol{X}}) - g(\\boldsymbol{\\mu})]$ ， $K(H_{n}, H_{\\mathrm{boot}})^{\\mathrm{a.s.}} \\rightarrow 0$ 。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.201,
+            0.826,
+            0.794,
+            0.843
+          ],
+          "content": "除了均值函数, 我们再给出分位数和 U 统计量的 bootstrap 相合性结论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.849,
+            0.873,
+            0.89
+          ],
+          "content": "定理 7.1.4 设  $X_{1}, X_{2}, \\cdots, X_{n}$  是来自分布函数  $F(x)$  的一组独立同分布样本，0 < p < 1. 定义分位数  $\\xi_{p} = F^{-1}(p)$  且 F 在  $\\xi_{p}$  处具有正的导数  $f(\\xi_{p})$ . 设"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.286,
+            0.908,
+            0.691,
+            0.929
+          ],
+          "content": "T _ {n} = T \\left(X _ {1}, X _ {2}, \\dots , X _ {n}, F\\right) = \\sqrt {n} \\left[ F _ {n} ^ {- 1} (p) - \\xi_ {p} \\right],",
+          "image_source": "../../raw/pages_0321-0336/images/page_327_equation_19.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 328,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.08,
+            0.068,
+            0.109,
+            0.079
+          ],
+          "content": "316"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.125,
+            0.066,
+            0.255,
+            0.081
+          ],
+          "content": "第七章 bootstrap"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.243,
+            0.124,
+            0.709,
+            0.144
+          ],
+          "content": "T _ {n} ^ {*} = T \\left(X _ {1} ^ {*}, X _ {2} ^ {*}, \\dots , X _ {n} ^ {*}, F _ {n}\\right) = \\sqrt {n} \\left[ F _ {n} ^ {* - 1} (p) - F _ {n} ^ {- 1} (p) \\right],",
+          "image_source": "../../raw/pages_0321-0336/images/page_328_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.165,
+            0.831,
+            0.207
+          ],
+          "content": "其中  $F_{n}^{*}$  是  $X_{1}^{*}, X_{2}^{*}, \\cdots, X_{n}^{*}$  的经验分布函数. 定义  $H_{n}(x) = P_{F}(T_{n} \\leqslant x)$ ,  $H_{\\mathrm{boot}}(x) = P_{*}(T_{n}^{*} \\leqslant x)$ . 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.309,
+            0.22,
+            0.646,
+            0.248
+          ],
+          "content": "K \\left(H _ {n}, H _ {\\mathrm{boot}}\\right) = O \\left(n ^ {- 1 / 4} \\sqrt {\\ln \\ln n}\\right), \\text {a.s.}",
+          "image_source": "../../raw/pages_0321-0336/images/page_328_equation_4.jpg"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.124,
+            0.3,
+            0.833,
+            0.731
+          ],
+          "content": "<table><tr><td></td><td colspan=\"3\">N(0,1)</td><td colspan=\"3\">Exp(1)</td><td colspan=\"3\">t(3)</td></tr><tr><td>x</td><td> $H_n(x)$ </td><td>CLT</td><td> $H_{\\text{boot}}(x)$ </td><td> $H_n(x)$ </td><td>CLT</td><td> $H_{\\text{boot}}(x)$ </td><td> $H_n(x)$ </td><td>CLT</td><td> $H_{\\text{boot}}(x)$ </td></tr><tr><td colspan=\"10\">n = 20</td></tr><tr><td>-2</td><td>0.022</td><td>0.023</td><td>0.026</td><td>0.010</td><td>0.023</td><td>0.000</td><td>0.106</td><td>0.124</td><td>0.106</td></tr><tr><td>-1</td><td>0.159</td><td>0.159</td><td>0.146</td><td>0.160</td><td>0.159</td><td>0.062</td><td>0.261</td><td>0.282</td><td>0.300</td></tr><tr><td>0</td><td>0.500</td><td>0.500</td><td>0.480</td><td>0.533</td><td>0.500</td><td>0.542</td><td>0.501</td><td>0.500</td><td>0.538</td></tr><tr><td>1</td><td>0.842</td><td>0.841</td><td>0.838</td><td>0.845</td><td>0.841</td><td>0.950</td><td>0.739</td><td>0.718</td><td>0.770</td></tr><tr><td>2</td><td>0.977</td><td>0.977</td><td>0.954</td><td>0.967</td><td>0.977</td><td>0.998</td><td>0.894</td><td>0.876</td><td>0.902</td></tr><tr><td colspan=\"10\">n = 50</td></tr><tr><td>-2</td><td>0.022</td><td>0.023</td><td>0.044</td><td>0.015</td><td>0.023</td><td>0.014</td><td>0.111</td><td>0.124</td><td>0.030</td></tr><tr><td>-1</td><td>0.158</td><td>0.159</td><td>0.176</td><td>0.158</td><td>0.159</td><td>0.134</td><td>0.269</td><td>0.282</td><td>0.188</td></tr><tr><td>0</td><td>0.497</td><td>0.500</td><td>0.490</td><td>0.520</td><td>0.500</td><td>0.476</td><td>0.501</td><td>0.500</td><td>0.494</td></tr><tr><td>1</td><td>0.840</td><td>0.841</td><td>0.816</td><td>0.840</td><td>0.841</td><td>0.844</td><td>0.731</td><td>0.718</td><td>0.790</td></tr><tr><td>2</td><td>0.977</td><td>0.977</td><td>0.960</td><td>0.970</td><td>0.977</td><td>0.974</td><td>0.888</td><td>0.876</td><td>0.942</td></tr><tr><td colspan=\"10\">n = 100</td></tr><tr><td>-2</td><td>0.022</td><td>0.023</td><td>0.016</td><td>0.017</td><td>0.023</td><td>0.020</td><td>0.114</td><td>0.124</td><td>0.072</td></tr><tr><td>-1</td><td>0.158</td><td>0.159</td><td>0.148</td><td>0.159</td><td>0.159</td><td>0.146</td><td>0.271</td><td>0.282</td><td>0.230</td></tr><tr><td>0</td><td>0.500</td><td>0.500</td><td>0.478</td><td>0.512</td><td>0.500</td><td>0.540</td><td>0.500</td><td>0.500</td><td>0.468</td></tr><tr><td>1</td><td>0.842</td><td>0.841</td><td>0.852</td><td>0.841</td><td>0.841</td><td>0.822</td><td>0.728</td><td>0.718</td><td>0.718</td></tr><tr><td>2</td><td>0.978</td><td>0.977</td><td>0.968</td><td>0.972</td><td>0.977</td><td>0.976</td><td>0.885</td><td>0.876</td><td>0.906</td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.21,
+                0.28,
+                0.743,
+                0.296
+              ],
+              "content": "表 7.1.1 bootstrap 方法和 CLT 近似法对均值分布的概率值的估计"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0321-0336/images/page_328_table_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.751,
+            0.691,
+            0.768
+          ],
+          "content": "例 7.1.2 由大样本理论, 在定理 7.1.4 的条件下, 当  $n \\to \\infty$  时,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.316,
+            0.786,
+            0.637,
+            0.822
+          ],
+          "content": "\\sqrt {n} \\left[ F _ {n} ^ {- 1} (p) - \\xi_ {p} \\right] \\xrightarrow {\\mathrm{d}} N \\left(0, \\frac {p (1 - p)}{\\left[ F ^ {\\prime} (\\xi_ {p}) \\right] ^ {2}}\\right).",
+          "image_source": "../../raw/pages_0321-0336/images/page_328_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.84,
+            0.832,
+            0.927
+          ],
+          "content": "但是在实际问题中分布函数  $F(x)$  的信息常常未知, 因此我们可以采用 bootstrap 方法来近似样本分位数的分布. 设  $X_{1}, X_{2}, \\cdots, X_{n} \\sim N(0,1), n = 2000, B = 1000$ . 考虑三个分位数 p = 0.3, 0.5, 0.7, 表 7.1.2 列出了不同分位数情况下 bootstrap 方法对样本分位数的分布近似情况."
+        }
+      ]
+    },
+    {
+      "page_idx": 329,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.731,
+            0.068,
+            0.872,
+            0.081
+          ],
+          "content": "7.1 bootstrap 原理"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.89,
+            0.068,
+            0.917,
+            0.08
+          ],
+          "content": "317"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.167,
+            0.143,
+            0.875,
+            0.277
+          ],
+          "content": "<table><tr><td>p</td><td colspan=\"2\">0.3</td><td colspan=\"2\">0.5</td><td colspan=\"2\">0.7</td></tr><tr><td>x</td><td> $H_n(x)$ </td><td> $H_{\\text{boot}}(x)$ </td><td> $H_n(x)$ </td><td> $H_{\\text{boot}}(x)$ </td><td> $H_n(x)$ </td><td> $H_{\\text{boot}}(x)$ </td></tr><tr><td>-0.5</td><td>0.424</td><td>0.392</td><td>0.399</td><td>0.343</td><td>0.323</td><td>0.274</td></tr><tr><td>0</td><td>0.573</td><td>0.497</td><td>0.557</td><td>0.499</td><td>0.470</td><td>0.467</td></tr><tr><td>0.5</td><td>0.714</td><td>0.716</td><td>0.706</td><td>0.654</td><td>0.620</td><td>0.651</td></tr><tr><td>0.8</td><td>0.788</td><td>0.795</td><td>0.783</td><td>0.779</td><td>0.703</td><td>0.726</td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.303,
+                0.124,
+                0.735,
+                0.14
+              ],
+              "content": "表 7.1.2 bootstrap 方法对分位数分布的概率值的估计"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0321-0336/images/page_329_table_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.293,
+            0.874,
+            0.38
+          ],
+          "content": "由定理7.1.4, 我们知道 $H_{\\mathrm{boot}}$ 收敛到 $H_{n}$ 的速度只有 $n^{-1/4}$, 因此在上述例7.1.2中我们设定样本数 $n$ 很大. 模拟结果显示当 $n$ 较小时, bootstrap方法的近似效果很不稳定. 但是在例7.1.1中当样本数很小时, bootstrap方法仍然有很好的近似效果. 这是因为对于均值函数, $H_{\\mathrm{boot}}$ 收敛到 $H_{n}$ 的速度可以达到 $n^{-1/2}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.166,
+            0.385,
+            0.873,
+            0.426
+          ],
+          "content": "定理 7.1.5 设  $X_{1}, X_{2}, \\cdots, X_{n}$  是来自分布函数  $F(x)$  的一组独立同分布样本，其中  $F(x)$  是连续函数且  $E_{F}(X^{6}) < \\infty$ . 定义 t 检验统计量"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.444,
+            0.44,
+            0.594,
+            0.476
+          ],
+          "content": "T _ {n} = \\frac {\\sqrt {n} (\\bar {X} - \\mu)}{S _ {n}}",
+          "image_source": "../../raw/pages_0321-0336/images/page_329_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.487,
+            0.387,
+            0.504
+          ],
+          "content": "和bootstrap $t$ 检验统计量"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.434,
+            0.504,
+            0.602,
+            0.541
+          ],
+          "content": "T _ {n} ^ {*} = \\frac {\\sqrt {n} (\\bar {X} ^ {*} - \\bar {X})}{S _ {n} ^ {*}},",
+          "image_source": "../../raw/pages_0321-0336/images/page_329_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.55,
+            0.873,
+            0.59
+          ],
+          "content": "其中 $S_{n}, S_{n}^{*}$ 分别是原始样本和bootstrap样本的样本标准差. 则对于 $H_{n}(x) = P_{F}(T_{n} \\leqslant x), H_{\\mathrm{boot}}(x) = P_{*}(T_{n}^{*} \\leqslant x)$, 有 $\\sqrt{n} K(H_{n}, H_{\\mathrm{boot}}) \\stackrel{\\mathrm{a.s.}}{\\rightarrow} 0$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.596,
+            0.874,
+            0.635
+          ],
+          "content": "定理 7.1.5 也为后续利用 bootstrap 构造置信区间提供理论依据. 对于一般情况下的多元均值函数, 我们也有类似的结论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.641,
+            0.873,
+            0.706
+          ],
+          "content": "定理 7.1.6 假设  $X_{1}, X_{2}, \\cdots, X_{n}$  是来自分布函数  $F(x)$  的一组独立同分布样本且  $E(X) = \\mu, \\operatorname{cov}(X) = \\Sigma$  是正定的。对于一个函数  $g : R^{p} \\to R, \\nabla g(\\cdot)$  在  $\\mu$  的一个邻域内存在且在  $\\mu$  处连续， $\\nabla g(\\mu) \\neq 0$ 。定义"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.401,
+            0.719,
+            0.637,
+            0.76
+          ],
+          "content": "T _ {n} = \\frac {\\sqrt {n} [ g (\\bar {\\boldsymbol {X}}) - g (\\boldsymbol {\\mu}) ]}{\\sqrt {(\\nabla g (\\boldsymbol {\\mu})) ^ {\\mathrm{T}} \\Sigma (\\nabla g (\\boldsymbol {\\mu}))}}",
+          "image_source": "../../raw/pages_0321-0336/images/page_329_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.773,
+            0.191,
+            0.787
+          ],
+          "content": "且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.388,
+            0.783,
+            0.649,
+            0.824
+          ],
+          "content": "T _ {n} ^ {*} = \\frac {\\sqrt {n} \\left[ g \\left(\\bar {\\boldsymbol {X}} ^ {*}\\right) - g (\\bar {\\boldsymbol {X}}) \\right]}{\\sqrt {(\\nabla g (\\bar {\\boldsymbol {X}})) ^ {\\mathrm{T}} S _ {B} (\\nabla g (\\bar {\\boldsymbol {X}}))}},",
+          "image_source": "../../raw/pages_0321-0336/images/page_329_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.833,
+            0.873,
+            0.873
+          ],
+          "content": "其中 $S_B$ 是bootstrap的样本协方差矩阵.则对于 $H_{n}(x) = P_{F}(T_{n}\\leqslant x),H_{\\mathrm{boot}}(x) = P_{*}(T_{n}^{*}\\leqslant x)$ ，有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.425,
+            0.877,
+            0.613,
+            0.896
+          ],
+          "content": "\\sqrt {n} K (H _ {n}, H _ {\\mathrm{boot}}) \\stackrel {{\\text {a.s.}}} {{\\to}} 0.",
+          "image_source": "../../raw/pages_0321-0336/images/page_329_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.203,
+            0.909,
+            0.642,
+            0.926
+          ],
+          "content": "最后, 我们给出 U 统计量的 bootstrap 方法的相合性."
+        }
+      ]
+    },
+    {
+      "page_idx": 330,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.08,
+            0.068,
+            0.107,
+            0.079
+          ],
+          "content": "318"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.125,
+            0.066,
+            0.255,
+            0.081
+          ],
+          "content": "第七章 bootstrap"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.123,
+            0.83,
+            0.186
+          ],
+          "content": "定理 7.1.7 设  $X_{1}, X_{2}, \\cdots, X_{n}$  是来自分布函数  $F(x)$  的一组独立同分布样本. 设  $U_{n} = U_{n}(X_{1}, X_{2}, \\cdots, X_{n})$  是一个二阶核 h 的 U 统计量. 定义  $\\theta = E_{F}(U_{n}) = E_{F}[h(X_{1}, X_{2})]$ . 假设"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.16,
+            0.191,
+            0.682,
+            0.256
+          ],
+          "sub_type": "text",
+          "content": "(1) $E_F\\left[h^2 (X_1,X_2)\\right] <   \\infty .$\n(2)  $\\tau^{2}=\\mathrm{Var}_{F}[\\tilde{h}(X)]>0,$  其中  $\\tilde{h}(x)=E_{F}[h(X_{1},X_{2})\\mid X_{2}=x].$\n(3) $E_F[|h(X_1,X_1)|] < \\infty$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.261,
+            0.83,
+            0.302
+          ],
+          "content": "设  $T_{n}=\\sqrt{n}(U_{n}-\\theta)$ ,  $T_{n}^{*}=\\sqrt{n}(U_{n}^{*}-U_{n})$ , 其中  $U_{n}^{*}=U_{n}(X_{1}^{*},X_{2}^{*},\\cdots,X_{n}^{*})$ ,  $H_{n}(x)=P_{F}(T_{n}\\leqslant x)$  且  $H_{\\mathrm{boot}}(x)=P_{*}(T_{n}^{*}\\leqslant x)$ . 则  $K(H_{n},H_{\\mathrm{boot}})\\xrightarrow{\\mathrm{a.s.}}0$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.307,
+            0.83,
+            0.37
+          ],
+          "content": "定理 7.1.7 的一个直接应用就是方差函数的 bootstrap 方法相合性, 因为方差函数可以表示为一个二阶 U 统计量, 即  $\\mathrm{Var}(X)=\\frac{1}{2}E[(X_{1}-X_{2})^{2}]$ . 下面一节内容将单独介绍运用 bootstrap 方法对方差进行估计."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.376,
+            0.604,
+            0.394
+          ],
+          "content": "定理 7.1.2—定理 7.1.7 的证明参见 Shao et al. (1995)."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.124,
+            0.446,
+            0.429,
+            0.468
+          ],
+          "level": 2,
+          "content": "7.2 bootstrap 常见应用"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.514,
+            0.83,
+            0.577
+          ],
+          "content": "bootstrap 提供了一种无须进行参数假设就能进行分析和推断的方法. 对于那些难以找到解析解的问题, 它提供了一种解决方案, 并且能够提供比传统的标准参数理论更精确的答案. 下面我们给出 bootstrap 常见的几个应用."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.16,
+            0.605,
+            0.443,
+            0.625
+          ],
+          "level": 2,
+          "content": "7.2.1 bootstrap 方差估计"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.648,
+            0.83,
+            0.716
+          ],
+          "content": "在常见的统计学问题中, 我们需要估计参数估计  $\\hat{\\theta}$  的方差  $\\mathrm{Var}(\\hat{\\theta})$ . 一般我们先需要借助大样本理论去计算  $\\mathrm{Var}(\\hat{\\theta})$  的精确表达式, 再利用新的估计量去估计这个精确表达式中的未知参数. 如考虑样本中位数  $\\hat{\\xi}_{\\frac{1}{2}}$  的方差估计问题. 由大样本理论可知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.349,
+            0.723,
+            0.829,
+            0.761
+          ],
+          "content": "\\mathrm{Var} (\\hat {\\xi} _ {\\frac {1}{2}}) = \\frac {1}{4 n f ^ {2} (\\xi_ {\\frac {1}{2}})} + o (n ^ {- 1}). \\tag {7.2.1}",
+          "image_source": "../../raw/pages_0321-0336/images/page_330_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.771,
+            0.83,
+            0.857
+          ],
+          "content": "在公式 (7.2.1) 中, 我们需要进一步估计未知参数 $f(\\xi_{\\frac{1}{2}})$. 一般地, 我们需要再利用核函数方法去估计 $f(\\xi_{\\frac{1}{2}})$. 另一方面, $\\mathrm{Var}(\\hat{\\pmb{\\theta}})$ 的精确表达式在大多数时候并不容易计算. bootstrap 方法则让我们可以直接进行方差估计而避免再去估计一个新的参数, 也并不需要得到 $\\mathrm{Var}(\\hat{\\pmb{\\theta}})$ 的精确表达式."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.863,
+            0.83,
+            0.927
+          ],
+          "content": "例 7.2.1 设  $X_{1}, X_{2}, \\cdots, X_{n}$  是来自  $N(0,1)$  的独立同分布样本. 我们通过 bootstrap 方法来计算样本中位数  $\\hat{\\xi}_{\\frac{1}{2}}$  的方差  $\\sigma^{2}$ . 设定 n = 200, 2000, B = 500. 定义运用 bootstrap 方法计算出的样本中位数的方差为  $\\sigma_{*}^{2}$ . 图 7.2.1 表示 10000 次模拟的  $\\sigma_{*}^{2}/\\sigma^{2}$"
+        }
+      ]
+    },
+    {
+      "page_idx": 331,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.701,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": "7.2 bootstrap 常见应用"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.89,
+            0.068,
+            0.917,
+            0.08
+          ],
+          "content": "319"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.122,
+            0.874,
+            0.185
+          ],
+          "continues_prev": true,
+          "content": "的结果. 由图7.2.1可知, 大部分的比值在1附近. 并且对样本量 $n = 200, 2000, 10000$ 次模拟的比值的均值分别为1.06,1.02, 方差分别为0.41,0.23. 当样本量 $n$ 变得更大时, 方差比值的均值更接近1, 方差变小, 表示 $\\sigma_{*}^{2}$ 在概率意义上可以很好地近似 $\\sigma^{2}$."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.188,
+            0.201,
+            0.852,
+            0.43
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.378,
+                0.435,
+                0.658,
+                0.451
+              ],
+              "content": "图 7.2.1 方差比值  $\\sigma_{*}^{2}/\\sigma^{2}$  的直方图"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0321-0336/images/page_331_image_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.473,
+            0.875,
+            0.594
+          ],
+          "content": "注意到, bootstrap 不是对于所有问题都能起到作用的. 通常来说, 如果我们感兴趣的是 $T\\left(\\widehat{F}_n\\right)$ 的某些可以通过样本 $\\mathbf{X}$ 直接进行估计的数字特征, 则是否使用 bootstrap 所得结果没有区别. 比如说, 如果感兴趣的 $T\\left(\\widehat{F}_n\\right)$ 是样本均值, 则上面的 bootstrap 方差估计将收敛到 $\\widehat{\\mathrm{Var}}(X)/n(B \\to \\infty)$, 其中 $\\widehat{\\mathrm{Var}}(X)$ 是 $\\mathbf{X}$ 的样本方差 (有偏的). 在这种情况下, bootstrap 没有带来更多的帮助. 事实上, 假设 $\\bar{X}_i^*$ 是一个 bootstrap 估计, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.266,
+            0.609,
+            0.77,
+            0.651
+          ],
+          "content": "\\widehat {\\mathrm{Var}} (\\bar {X}) = \\mathrm{Var} _ {*} \\left(\\bar {X} _ {i} ^ {*}\\right) = \\frac {1}{n ^ {2}} \\sum_ {i = 1} ^ {n} \\frac {1}{n} \\sum_ {i = 1} ^ {n} \\left(X _ {i} - \\bar {X}\\right) ^ {2} = \\widehat {\\mathrm{Var}} (X) / n.",
+          "image_source": "../../raw/pages_0321-0336/images/page_331_equation_6.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.202,
+            0.672,
+            0.486,
+            0.692
+          ],
+          "level": 2,
+          "content": "7.2.2 bootstrap 偏差修正"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.716,
+            0.874,
+            0.802
+          ],
+          "content": "设统计量 $T_{n}$ 是参数 $\\theta$ 的一个估计量. 在很多情况下, 虽然在理论上我们可以得到统计量 $T_{n}$ 的相合性, 但是在实际中, 尤其是当样本数 $n$ 较小时, $T_{n}$ 会产生一个偏差, 即 $T_{n} - \\theta$ 的期望并不是0. 为此, 我们可以通过 $E_{F_n}(T_n^* - T_n)$ 来估计这个偏差, 其中 $T_{n}^{*}$ 是相应基于bootstrap样本的统计量."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.804,
+            0.875,
+            0.927
+          ],
+          "content": "例 7.2.2 设  $X_{1}, X_{2}, \\cdots, X_{n} \\stackrel{\\mathrm{iid}}{\\sim} \\chi_{1}^{2}$ . 考虑 t 检验统计量  $T_{n} = \\frac{\\sqrt{n}(\\bar{X} - 1)}{S_{n}}$ . 当 n = 30 时, 我们通过模拟得出  $E(T_{n}) = -0.296$ ,  $\\operatorname{Var}(T_{n}) = 1.594$ . 通过 bootstrap 方法, 我们可以得到这个偏差和方差的估计值分别为 -0.270 和 1.448. 我们发现 bootstrap 方法可以较好地估计偏差和方差, 而如果我们采用中心极限定理近似的方法则会对  $T_{n}$  的推断产生较大的偏差. 表 7.2.1 列出了 bootstrap 方法和 CLT 近似法对  $T_{n}$  的不同分位数"
+        }
+      ]
+    },
+    {
+      "page_idx": 332,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.08,
+            0.068,
+            0.109,
+            0.079
+          ],
+          "content": "320"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.125,
+            0.066,
+            0.255,
+            0.081
+          ],
+          "content": "第七章 bootstrap"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.122,
+            0.831,
+            0.161
+          ],
+          "continues_prev": true,
+          "content": "的估计值. 我们发现 CLT 近似法得到的分位数和真实的分位数偏差较大, 而 bootstrap 方法效果很好."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.124,
+            0.199,
+            0.833,
+            0.292
+          ],
+          "content": "| α | 0.05 | 0.25 | 0.50 | 0.75 | 0.95 |\n| --- | --- | --- | --- | --- | --- |\n| $T_n$ | -2.618 | -0.927 | -0.092 | 0.566 | 1.345 |\n| bootstrap | -2.472 | -0.989 | -0.129 | 0.592 | 1.374 |\n| CLT | -1.645 | -0.674 | 0.000 | 0.674 | 1.645 |",
+          "captions": [
+            {
+              "bbox": [
+                0.228,
+                0.18,
+                0.725,
+                0.196
+              ],
+              "content": "表 7.2.1 bootstrap 方法和 CLT 近似法对 ${T}_{n}$ 的分位数的估计"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0321-0336/images/page_332_table_4.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.16,
+            0.326,
+            0.443,
+            0.347
+          ],
+          "level": 2,
+          "content": "7.2.3 bootstrap置信区间"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.37,
+            0.832,
+            0.443
+          ],
+          "content": "一般来说，对于参数 $\\theta$ ，我们构造置信区间的方法往往是找一个枢轴量，如 $T_{n} = \\frac{\\hat{\\theta}_{n} - \\theta}{\\hat{\\sigma}_{n}}$ 使得 $T_{n}\\stackrel {\\mathrm{d}}{\\to}T,$ 其中 $T$ 的分布是一个已知的分布 $G$ 。为此，我们构造如下置信区间:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.284,
+            0.454,
+            0.667,
+            0.473
+          ],
+          "content": "\\hat {\\theta} _ {n} - G ^ {- 1} (1 - \\alpha / 2) \\hat {\\sigma} _ {n} \\leqslant \\theta \\leqslant \\hat {\\theta} _ {n} - G ^ {- 1} (\\alpha / 2) \\hat {\\sigma} _ {n}.",
+          "image_source": "../../raw/pages_0321-0336/images/page_332_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.485,
+            0.832,
+            0.548
+          ],
+          "content": "上述构造置信区间的过程依赖于参数估计值 $\\hat{\\theta}_n$ 的渐近方差的估计和已知的分布函数 $G$. 在实际中渐近方差的估计和分布函数可能未知或计算复杂. 这时我们可以采用 bootstrap 方法来构造置信区间. 常见的 bootstrap 构造置信区间的方法有如下两种:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.554,
+            0.833,
+            0.666
+          ],
+          "content": "(1) bootstrap 分位数置信区间 (percentile interval) 假设  $\\hat{\\theta}_{n}$  为  $\\theta$  的一个点估计, 我们可从观测数据的经验分布函数中随机抽取 B 个独立的 bootstrap 伪-数据集. 将它们定义为  $X_{i}^{*}$ . 之后, 计算基于这 B 个的  $\\hat{\\theta}_{n}^{*}-\\hat{\\theta}_{n}$  值,  $\\{R_{1}^{*}, R_{2}^{*}, \\cdots, R_{B}^{*}\\}$ . 那么利用  $\\{R_{1}^{*}, R_{2}^{*}, \\cdots, R_{B}^{*}\\}$  的经验分布函数  $\\widehat{G}_{B}^{*}$ , 可求得  $\\left(\\widehat{G}_{B}^{*}(1-\\alpha/2), \\widehat{G}_{B}^{*}(\\alpha/2)\\right)$ , 其中  $\\widehat{G}_{B}^{*}(p)$  是  $\\{R_{1}^{*}, R_{2}^{*}, \\cdots, R_{B}^{*}\\}$  的第 [Bp] 个次序统计量. 则按照前述的 bootstrap 思想,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.673,
+            0.622,
+            0.7
+          ],
+          "content": "\\left(\\hat {\\theta} _ {n} - \\widehat {G} _ {B} ^ {*} (1 - \\alpha / 2), \\hat {\\theta} _ {n} - \\widehat {G} _ {B} ^ {*} (\\alpha / 2)\\right)",
+          "image_source": "../../raw/pages_0321-0336/images/page_332_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.707,
+            0.438,
+            0.723
+          ],
+          "content": "即为我们欲求的区间估计的一种近似."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.727,
+            0.832,
+            0.821
+          ],
+          "content": "(2) bootstrap-t 置信区间 设 $T_n = \\frac{\\hat{\\theta}_n - \\theta}{\\hat{\\sigma}_n}$，其中 $\\hat{\\sigma}_n^2$ 是 $\\hat{\\theta}_n$ 的渐近方差的一个估计。$T_n^* = \\frac{\\hat{\\theta}_n^* - \\hat{\\theta}_n}{\\hat{\\sigma}_n^*}$ 是对应的 bootstrap 样本的统计量。同样的，设 $\\hat{G}_B^*(x)$ 是 B 个 bootstrap 样本计算出的 $T_n^*$ 统计量的经验分布函数。则 bootstrap-t 置信区间为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.304,
+            0.831,
+            0.649,
+            0.851
+          ],
+          "content": "(\\hat {\\theta} _ {n} - \\hat {G} _ {B} ^ {*} (1 - \\alpha / 2) \\hat {\\sigma} _ {n}, \\hat {\\theta} _ {n} - \\hat {G} _ {B} ^ {*} (\\alpha / 2) \\hat {\\sigma} _ {n}).",
+          "image_source": "../../raw/pages_0321-0336/images/page_332_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.863,
+            0.832,
+            0.927
+          ],
+          "content": "很多问题下, $\\hat{\\sigma}_n^2$ 都没有简单的表达式, 我们自然也可以用前面介绍的 bootstrap 方差估计来近似之. 注意 $\\hat{G}_B^*$ 是需要通过 bootstrap 由标准化的统计量来重抽样得到的, 因此此时两个 bootstrap 层叠在一起, 这时计算量相对会大很多."
+        }
+      ]
+    },
+    {
+      "page_idx": 333,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.701,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": "7.2 bootstrap 常见应用"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.89,
+            0.069,
+            0.916,
+            0.08
+          ],
+          "content": "321"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.121,
+            0.875,
+            0.185
+          ],
+          "content": "注意到, 前面关于 bootstrap 构造置信区间的讨论与假设检验也密切相关. 一个原假设下的参数值落在置信度为 $(1 - \\alpha)100\\%$ 的置信区间外, 则以 $\\alpha$ 的显著性水平拒绝原假设. 当然我们亦可类似地计算出基于 bootstrap 的 $p$ 值估计."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.191,
+            0.876,
+            0.254
+          ],
+          "content": "例 7.2.3 设  $X_{1}, X_{2}, \\cdots, X_{n}$  为来自  $F(x)$  的独立同分布样本. 我们考虑均值  $\\mu$  的置信区间. 设定 n = 20, B = 200, 置信水平为 0.9, 模拟次数为 10000 次. 表 7.2.2 显示不同分布下各种方法构造的置信区间的覆盖率和区间长度."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.166,
+            0.297,
+            0.875,
+            0.41
+          ],
+          "content": "<table><tr><td></td><td colspan=\"2\">N(0,1)</td><td colspan=\"2\">t(4)</td><td colspan=\"2\"> $\\chi_1^2$ </td></tr><tr><td></td><td>覆盖率</td><td>区间长度</td><td>覆盖率</td><td>区间长度</td><td>覆盖率</td><td>区间长度</td></tr><tr><td>RT</td><td>0.898</td><td>0.765</td><td>0.907</td><td>1.041</td><td>0.841</td><td>1.013</td></tr><tr><td>BP</td><td>0.865</td><td>0.699</td><td>0.859</td><td>0.949</td><td>0.814</td><td>0.921</td></tr><tr><td>BT</td><td>0.889</td><td>0.760</td><td>0.921</td><td>1.076</td><td>0.804</td><td>1.274</td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.365,
+                0.279,
+                0.673,
+                0.294
+              ],
+              "content": "表 7.2.2 置信区间的覆盖率和区间长度"
+            }
+          ],
+          "footnotes": [
+            {
+              "bbox": [
+                0.194,
+                0.415,
+                0.772,
+                0.43
+              ],
+              "content": "注:RT: 常规 t 置信区间；BP: bootstrap 分位数置信区间；BT: bootstrap-t 置信区间."
+            }
+          ],
+          "image_source": "../../raw/pages_0321-0336/images/page_333_table_5.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.202,
+            0.468,
+            0.466,
+            0.487
+          ],
+          "level": 2,
+          "content": "7.2.4 bootstrap 残差法"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.513,
+            0.874,
+            0.575
+          ],
+          "content": "在回归模型中, bootstrap 方法的运用和上述独立同分布观测下的情况有所不同, 一般要依据具体的情况采用具体的方法. 我们在这里仅介绍针对线性模型的 bootstrap 残差法."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.583,
+            0.877,
+            0.786
+          ],
+          "content": "考虑如下典型多重回归模型: $Y_i = \\boldsymbol{x}_i^{\\mathrm{T}}\\boldsymbol{\\beta} + \\boldsymbol{\\varepsilon}_i, i = 1,2,\\dots,n$, 其中假设 $\\boldsymbol{\\varepsilon}_i$ 是均值为零、方差为常数的独立同分布随机变量. 这里, $\\boldsymbol{x}_i$ 和 $\\boldsymbol{\\beta}$ 分别是 $p$ 维的协变量和参数. 一种简单但是错误的 bootstrap 方法描述如下. 我们从响应值集合中重抽样来构成一个新的伪-数据, 也就是对于每一个观测的 $\\boldsymbol{x}_i$ 有 $Y_i^*$, 从而可得到一个新的回归数据集. 然后可以由这些伪-数据来计算 bootstrap 参数向量估计 $\\widehat{\\boldsymbol{\\beta}}^*$. 重复重抽样和估计的步骤很多次后, $\\widehat{\\boldsymbol{\\beta}}^*$ 经验分布可用于推断 $\\boldsymbol{\\beta}$. 这样做错误的原因是 $Y_i \\mid \\boldsymbol{x}_i$ 不是独立同分布的样本, 它们具有不同的边际分布. 因此, 用这种方生成 bootstrap 回归数据集是不恰当的. 为了确定一个正确的 bootstrap 方法, 我们必须要找到合适的独立同分布的变量. 模型中的 $\\boldsymbol{\\varepsilon}_i$ 是独立同分布的. 因此, 更恰当的策略是如下所描述的 bootstrap 残差法."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.791,
+            0.877,
+            0.931
+          ],
+          "content": "我们先由观测数据拟合回归模型, 然后获得响应  $\\widehat{Y}_{i}$  和残差  $\\widehat{\\varepsilon}_{i}$ . 从拟合残差集合中有放回随机抽取得到 bootstrap 残差集合  $\\widehat{\\varepsilon}_{1}^{*}, \\widehat{\\varepsilon}_{2}^{*}, \\cdots, \\widehat{\\varepsilon}_{n}^{*}$ . (注意实际上  $\\widehat{\\varepsilon}_{i}^{*}$  不是独立的, 尽管通常来说它们近似独立.) 生成一个伪-响应 bootstrap 集合,  $Y_{i}^{*} = \\widehat{Y}_{i} + \\widehat{\\varepsilon}_{i}^{*}, i = 1, 2, \\cdots, n$ . 对 x 回归  $Y^{*}$  从而获得 bootstrap 参数估计  $\\widehat{\\beta}^{*}$ . 重复多次该过程可得到  $\\widehat{\\beta}^{*}$  的经验分布函数, 然后我们用它进行推断. 由线性模型知识我们知道, 若采用  $\\widehat{\\beta} = (\\boldsymbol{X}^{\\mathrm{T}}\\boldsymbol{X})^{-1}\\boldsymbol{X}^{\\mathrm{T}}\\boldsymbol{y}$ , 则所得到的  $\\widehat{\\beta}^{*}$  定满足  $E\\left(\\widehat{\\beta}^{*}\\right) = \\beta$ ."
+        }
+      ]
+    },
+    {
+      "page_idx": 334,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.08,
+            0.068,
+            0.109,
+            0.079
+          ],
+          "content": "322"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.125,
+            0.066,
+            0.255,
+            0.081
+          ],
+          "content": "第七章 bootstrap"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.122,
+            0.831,
+            0.161
+          ],
+          "content": "对于简单线性模型 $y = \\alpha + \\beta x + \\varepsilon$，运用bootstrap方法我们也可以构造 $\\beta$ 的置信区间."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.171,
+            0.452,
+            0.187
+          ],
+          "content": "标准的基于正态假设下的置信区间"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.264,
+            0.209,
+            0.69,
+            0.239
+          ],
+          "content": "\\left[ \\widehat {\\beta} - \\mathrm{sd} (\\widehat {\\beta}) t _ {1 - \\alpha / 2} (n - 2), \\quad \\widehat {\\beta} + \\mathrm{sd} (\\widehat {\\beta}) t _ {1 - \\alpha / 2} (n - 2) \\right],",
+          "image_source": "../../raw/pages_0321-0336/images/page_334_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.26,
+            0.785,
+            0.281
+          ],
+          "content": "其中 $\\mathrm{sd}(\\widehat{\\beta}) = \\widehat{\\sigma}\\sqrt{c_{22}}$ 为 $\\widehat{\\beta}$ 的标准差, $c_{jj}$ 是 $\\left(\\boldsymbol{X}^{\\mathrm{T}}\\boldsymbol{X}\\right)^{-1}$ 的对角线上的第 $j$ 个元素."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.289,
+            0.832,
+            0.377
+          ],
+          "content": "通过 bootstrap 残差法进行抽样并构造相应的 bootstrap-t 置信区间和 bootstrap 分位数置信区间. 即计算残差  $\\widehat{\\varepsilon}_{i}=y_{i}-\\widehat{\\alpha}-\\widehat{\\beta}x_{i}$ . 从拟合残差集合中有放回随机地抽取得到 bootstrap 残差集合  $\\widehat{\\varepsilon}_{1}^{*},\\widehat{\\varepsilon}_{2}^{*},\\cdots,\\widehat{\\varepsilon}_{n}^{*}$ , 再计算获得 bootstrap 响应  $y_{i}^{*}=\\widehat{y}_{i}+\\widehat{\\varepsilon}_{i}^{*}$ . 以  $\\{x_{i},y_{i}^{*}\\}_{i=1}^{n}$  为一组 bootstrap 回归样本."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.123,
+            0.383,
+            0.832,
+            0.526
+          ],
+          "sub_type": "text",
+          "content": "(1) bootstrap 分位数置信区间. 对第 j 次生成的 bootstrap 回归样本计算  $\\widehat{\\beta}_{j}^{*}-\\widehat{\\beta}, j=1,2,\\cdots,B$ . 之后求得  $\\left(t_{\\alpha/2}^{*}, t_{1-\\alpha/2}^{*}\\right)$ ，其中  $t_{p}^{*}$  是  $\\left\\{\\widehat{\\beta}_{1}^{*}, \\widehat{\\beta}_{2}^{*}, \\cdots, \\widehat{\\beta}_{B}^{*}\\right\\}$  的第  $\\lceil Bp\\rceil$  个次序统计量. 则  $\\left(\\widehat{\\beta}-t_{\\alpha/2}^{*}, \\widehat{\\beta}-t_{1-\\alpha/2}^{*}\\right)$  为我们所求.\n(2) bootstrap-t 置信区间. 同上但每次不仅计算 $\\widehat{\\beta}_j^*$, 还需要计算 $\\widehat{\\sigma}_j^*$, 之后计算标准化统计量 $\\left(\\widehat{\\beta}_j^* - \\widehat{\\beta}\\right) / \\left(\\widehat{\\sigma}_j^*\\sqrt{c_{22}}\\right)$. 之后类似前种方法求得相应的 $\\left(t_{\\alpha/2}^*, t_{1-\\alpha/2}^*\\right)$, 则构造的 bootstrap-t 置信区间为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.321,
+            0.547,
+            0.635,
+            0.575
+          ],
+          "content": "\\left(\\widehat {\\beta} - \\widehat {\\sigma} \\sqrt {c _ {2 2}} t _ {1 - \\alpha / 2} ^ {*}, \\quad \\widehat {\\beta} - \\widehat {\\sigma} \\sqrt {c _ {2 2}} t _ {\\alpha / 2} ^ {*}\\right).",
+          "image_source": "../../raw/pages_0321-0336/images/page_334_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.599,
+            0.832,
+            0.731
+          ],
+          "content": "例 7.2.4 考虑简单线性模型  $y_{i} = \\alpha + \\beta x_{i} + \\varepsilon_{i}, i = 1, 2, \\cdots, n,$  其中  $\\alpha = 1, \\beta = 2$ . 自变量 x 设为固定值  $x_{i} = i/n$ . 残差考虑三种分布: (1)  $N(0, 1); (2) t(5); (3) \\chi_{1}^{2} - 1$ . 设定 n = 20, B = 200, 置信水平为 0.9, 模拟次数为 10000. 表 7.2.3 显示不同分布下各种方法构造的置信区间的覆盖率和区间长度. 从表中我们发现 bootstrap-t 置信区间的效果比 bootstrap 分位数置信区间更好. 这并不奇怪, 因为在这种情况下, bootstrap-t 置信区间的收敛速度比 bootstrap 分位数置信区间的更快."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.125,
+            0.779,
+            0.832,
+            0.892
+          ],
+          "content": "<table><tr><td></td><td colspan=\"2\">N(0,1)</td><td colspan=\"2\">t(5)</td><td colspan=\"2\"> $\\chi_1^2-1$ </td></tr><tr><td></td><td>覆盖率</td><td>区间长度</td><td>覆盖率</td><td>区间长度</td><td>覆盖率</td><td>区间长度</td></tr><tr><td>RT</td><td>0.894</td><td>2.572</td><td>0.893</td><td>3.277</td><td>0.888</td><td>3.431</td></tr><tr><td>BP</td><td>0.857</td><td>2.349</td><td>0.857</td><td>2.994</td><td>0.852</td><td>3.145</td></tr><tr><td>BT</td><td>0.895</td><td>2.612</td><td>0.894</td><td>3.322</td><td>0.889</td><td>3.463</td></tr></table>",
+          "captions": [
+            {
+              "bbox": [
+                0.323,
+                0.76,
+                0.63,
+                0.775
+              ],
+              "content": "表 7.2.3 置信区间的覆盖率和区间长度"
+            }
+          ],
+          "footnotes": [
+            {
+              "bbox": [
+                0.152,
+                0.902,
+                0.729,
+                0.917
+              ],
+              "content": "注:RT: 常规 t 置信区间；BP: bootstrap 分位数置信区间；BT: bootstrap-t 置信区间."
+            }
+          ],
+          "image_source": "../../raw/pages_0321-0336/images/page_334_table_13.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 335,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.686,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": "7.3 bootstrap失效的情况"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.89,
+            0.068,
+            0.917,
+            0.08
+          ],
+          "content": "323"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.165,
+            0.12,
+            0.5,
+            0.143
+          ],
+          "level": 2,
+          "content": "7.3 bootstrap 失效的情况"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.188,
+            0.871,
+            0.228
+          ],
+          "content": "尽管在上述每节中我们发现 bootstrap 方法具有良好的性质, 但是 bootstrap 也并不是万能的. 在一些情况下, bootstrap 方法会失效. 一般来说有如下几种情况:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.164,
+            0.234,
+            0.874,
+            0.389
+          ],
+          "sub_type": "text",
+          "content": "(1) $T_{n} = \\sqrt{n} (\\bar{X} -\\mu)$ ，但是 $\\operatorname {Var}(X) = \\infty$\n(2) $T_{n} = \\sqrt{n}[g(\\bar{X}) - g(\\mu)]$, 但是 $\\nabla g(\\mu) = 0$.\n(3) $T_{n} = \\sqrt{n}[g(\\bar{X}) - g(\\mu)]$, 但是 $g(\\cdot)$ 在 $\\mu$ 点不可导.\n(4) $T_{n} = \\sqrt{n}\\left[F_{n}^{-1}(p) - F^{-1}(p)\\right]$, 但是 $f(F^{-1}(p)) = 0$ 或者 $F$ 在 $F^{-1}(p)$ 点的左、右导数不相等.\n(5) 分布函数  $F_{\\theta}$  的支撑集依赖于参数  $\\theta$ .\n(6) 真实参数  $\\theta_{0}$  在分布函数  $F_{\\theta}$  的支撑集的边界上."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.203,
+            0.395,
+            0.568,
+            0.411
+          ],
+          "content": "下面我们举两个bootstrap方法失效的例子."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.418,
+            0.875,
+            0.527
+          ],
+          "content": "例7.3.1 设  $X_{1}, X_{2}, \\cdots, X_{n}$  为来自  $F(x)$  的独立同分布样本且  $E(X)=0, \\operatorname{Var}(X)=1$ . 设  $g(x)=|x|$ ,  $T_{n}=\\sqrt{n}[g(\\bar{X})-g(0)]$ . 由大样本理论知  $T_{n}\\stackrel{\\mathrm{d}}{\\rightarrow}|N(0,1)|$ . 但是 bootstrap 统计量  $T_{n}^{*}=\\sqrt{n}(\\bar{X}^{*}-\\bar{X})\\stackrel{\\mathrm{d}}{\\rightarrow}|Z_{1}+Z_{2}|-|Z_{1}|$ , 其中  $Z_{1}, Z_{2}$  是来自  $N(0,1)$  的独立同分布样本. 这种情况下 bootstrap 统计量  $T_{n}^{*}$  的渐近分布和原始统计量  $T_{n}$  的渐近分布并不一致."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.533,
+            0.873,
+            0.577
+          ],
+          "content": "例 7.3.2 设  $X_{1}, X_{2}, \\cdots, X_{n}$  为来自  $U(0,1)$  的独立同分布样本,  $T_{n} = n[1 - X_{(n)}]$ ,  $T_{n}^{*} = n[X_{(n)} - X_{(n)}^{*}]$ . 由大样本理论知,  $T_{n} \\stackrel{\\mathrm{d}}{\\rightarrow} Exp(1)$ . 但是, 对任意的 t > 0,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.359,
+            0.595,
+            0.676,
+            0.768
+          ],
+          "content": "\\begin{array}{l} P _ {F _ {n}} \\left(T _ {n} ^ {*} \\leqslant t\\right) \\geqslant P _ {F _ {n}} \\left(T _ {n} ^ {*} = 0\\right) \\\\ = P _ {F _ {n}} \\left(X _ {(n)} ^ {*} = X _ {(n)}\\right) \\\\ = 1 - P _ {F _ {n}} \\left(X _ {(n)} ^ {*} <   X _ {(n)}\\right) \\\\ = 1 - \\left(\\frac {n - 1}{n}\\right) ^ {n} \\\\ \\xrightarrow {n \\to \\infty} 1 - \\mathrm{e} ^ {- 1}. \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0321-0336/images/page_335_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.787,
+            0.871,
+            0.83
+          ],
+          "content": "如果 $t = 0.0001$ ，则 $\\lim_{n}P_{F_n}(T_n^*\\leqslant t)\\geqslant 1 - \\mathrm{e}^{-1}$ ，但是 $\\lim_{n}P_F(T_n\\leqslant t) = 1 - \\mathrm{e}^{-0.0001}\\approx 0.$ 因此 $P_{F_n}(T_n^*\\leqslant t)\\nrightarrow P_F(T_n\\leqslant t).$"
+        }
+      ]
+    },
+    {
+      "page_idx": 336,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.08,
+            0.068,
+            0.109,
+            0.08
+          ],
+          "content": "324"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.125,
+            0.066,
+            0.256,
+            0.081
+          ],
+          "content": "第七章 bootstrap"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.127,
+            0.119,
+            0.21,
+            0.14
+          ],
+          "level": 2,
+          "content": "习题七"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.16,
+            0.187,
+            0.833,
+            0.53
+          ],
+          "sub_type": "text",
+          "content": "1. 生成 $n = 20,30,50$ 个来自 $Exp(1)$ 的随机变量, 比较样本均值 $\\bar{X}$ 的精确分布、CLT近似分布和bootstrap方法构造的分布之间的差异, 并讨论bootstrap方法相比于CLT近似法的优缺点.\n2. 假设总体均值为 $\\mu$, 我们感兴趣的是估计 $\\mu^2$, 现考虑直接使用 $\\bar{X}^2$ 作为估计, 请问如何使用 bootstrap 方法进行偏差修正?\n3. 假设  $(X_{i}, Y_{i}), i = 1, 2, \\cdots, n$  是来自二元正态分布  $N(\\mathbf{0}, \\Sigma)$  的一组独立同分布样本, 其中  $\\Sigma = \\begin{pmatrix} 1 & \\rho \\\\ \\rho & 1 \\end{pmatrix}$ . 对于不同样本数 n = 20, 30, 50, 比较运用大样本理论和 bootstrap 方法对样本相关系数 r 的渐近方差的估计效果.\n4. 证明例7.3.1中 $T_{n}^{*}$ 的渐近分布.\n5. 假设  $X_{1}, X_{2}, \\cdots, X_{n}$  为来自 Cauchy 分布  $C(0,1)$  的独立同分布样本. 对不同样本数 n = 20, 50, 比较运用大样本理论和 bootstrap 方法构造 Cauchy 分布  $C(0,1)$  中位数的置信水平为 0.95 的置信区间的效果.\n6. (1) 给出一个运用 bootstrap 方法估计中位数失效的例子; (2) 给出一个运用 bootstrap 方法估计均值失效的例子."
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "created_at": "2026-05-30T23:42:17+08:00",
+      "producer_application": "jsPDF 2.4.0",
+      "page_count": 373,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 0,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 1,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 2,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 3,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 4,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 5,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 6,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 7,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 8,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 9,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 10,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 11,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 12,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 13,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 14,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 15,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

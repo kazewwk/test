@@ -1,0 +1,3278 @@
+{
+  "pages": [
+    {
+      "page_idx": 64,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.088,
+            0.068,
+            0.108,
+            0.079
+          ],
+          "content": "52"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.125,
+            0.066,
+            0.249,
+            0.08
+          ],
+          "content": "第一章 基本概念"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.149,
+            0.121,
+            0.831,
+            0.38
+          ],
+          "sub_type": "text",
+          "content": "62. 设样本  $X_{1}, X_{2}, \\cdots, X_{n}$  相互独立，且  $X_{i} \\sim N(t_{i}\\theta, 1)$ ，其中  $t_{1}, t_{2}, \\cdots, t_{n}$  是非零的已知常数， $\\theta$  为参数。(1) 求  $\\theta$  的充分完全统计量；(2) 记  $\\hat{\\theta} = \\sum_{i=1}^{n} t_{i} X_{i} / \\sum_{i=1}^{n} t_{i}^{2}$ ，证明: $\\hat{\\theta}$  与  $\\sum_{i=1}^{n} (X_{i} - t_{i}\\hat{\\theta})^{2}$  独立。\n63. 设  $\\left(\\begin{array}{c} X_{1} \\\\ Y_{1} \\end{array}\\right)$ ,  $\\left(\\begin{array}{c} X_{2} \\\\ Y_{2} \\end{array}\\right)$ ,  $\\cdots$ ,  $\\left(\\begin{array}{c} X_{n} \\\\ Y_{n} \\end{array}\\right)$  为来自二元正态分布  $N(\\boldsymbol{\\mu}, \\Sigma)$  的独立同分布样本, 其中  $\\boldsymbol{\\mu} = (\\mu_{1}, \\mu_{2})^{\\mathrm{T}}$ ,  $\\Sigma = \\left(\\begin{array}{cc} \\sigma_{1}^{2} & \\rho\\sigma_{1}\\sigma_{2} \\\\ \\rho\\sigma_{1}\\sigma_{2} & \\sigma_{2}^{2} \\end{array}\\right)$ . 分别记两组样本的均值与方差为  $\\bar{X}, S_{x}^{2}$  和  $\\bar{Y}, S_{y}^{2}$ , 再记  $S_{xy}^{2} = \\sum_{i=1}^{n}(X_{i} - \\bar{X})(Y_{i} - \\bar{Y})/n$ . 证明:  $(\\bar{X}, \\bar{Y})$  与  $(S_{x}^{2}, S_{y}^{2}, S_{xy}^{2})$  独立."
+        }
+      ]
+    },
+    {
+      "page_idx": 65,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.394,
+            0.104,
+            0.502,
+            0.133
+          ],
+          "level": 2,
+          "content": "第二章"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.544,
+            0.17,
+            0.771,
+            0.208
+          ],
+          "level": 2,
+          "content": "参数点估计"
+        }
+      ]
+    },
+    {
+      "page_idx": 66,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.088,
+            0.068,
+            0.106,
+            0.079
+          ],
+          "content": "54"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.125,
+            0.066,
+            0.264,
+            0.08
+          ],
+          "content": "第二章 参数点估计"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.122,
+            0.831,
+            0.185
+          ],
+          "content": "参数估计是数理统计研究的重要内容之一, 且在实际中有广泛的应用. 参数估计包括点估计 (point estimate) 和区间 (interval) 估计, 它们各有各的特点与用途, 互为补充. 本章仅考虑点估计, 而区间估计将在下一章中讲述."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.191,
+            0.832,
+            0.3
+          ],
+          "content": "参数点估计的主要研究内容包括三个方面, 一是估计方法, 二是优良性准则, 三是渐近分布. 本章将讲述两个最基本的估计方法: 矩估计 (moment estimate) 和最大似然估计 (maximum likelihood estimate, 简记为 MLE), 简单介绍 Bayes 估计及 minimax(极小化极大) 估计, 以及几个优良性准则, 如无偏性、一致最小方差、相合性、有效性、渐近性等."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.306,
+            0.833,
+            0.438
+          ],
+          "content": "在本章, 假设  $X_{1}, X_{2}, \\cdots, X_{n}$  为来自总体  $X \\sim f(x; \\theta)$  的样本, 其中  $\\theta \\in \\Theta \\subset R^{k}$  为参数, 记  $g(\\theta)$  为感兴趣的参数. 另外, 为了书写简单, 记  $T_{n}(X)$  为基于前述 n 个样本的统计量, 在不引起混淆的情况下, 省略下标 n 及把样本简记为 X, 从而简记统计量  $T(X_{1}, X_{2}, \\cdots, X_{n})$  为  $T(X)$ . 再者,  $E_{\\theta}[T(X)], \\operatorname{Var}_{\\theta}[T(X)], \\operatorname{Cov}_{\\theta}[T(X), S(X)]$  分别表示统计量 T 的期望、方差, 以及 T 与估计量 S 间的协方差, 下标  $\\theta$  表示上述值与参数  $\\theta$  有关, 或表示在上述计算时, 总体分布或抽样分布是参数  $\\theta$  的函数."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.124,
+            0.491,
+            0.431,
+            0.513
+          ],
+          "level": 2,
+          "content": "2.1 几个常用的估计准则"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.559,
+            0.832,
+            0.624
+          ],
+          "content": "统计与数学的一个典型区别就是:数学的评价准则是对与错，而统计的评价准则是好与坏。显然，好与坏的评价就依赖于所选用的评价准则。本节将介绍统计中几个最常用的评价准则:无偏、一致最小方差无偏、相合，及相合渐近正态等。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.16,
+            0.651,
+            0.33,
+            0.669
+          ],
+          "level": 2,
+          "content": "2.1.1 无偏估计"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.694,
+            0.831,
+            0.734
+          ],
+          "content": "当用统计量  $T(X)$  估计参数  $g(\\theta)$  时, 自然要求二者相等或相近为好, 但由于样本具有随机性, 于是有如下的无偏估计 (unbiased estimate, 简记为 UE) 的定义."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.741,
+            0.555,
+            0.758
+          ],
+          "content": "定义 2.1.1 (无偏估计) 如果统计量  $T(X)$  满足"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.369,
+            0.777,
+            0.586,
+            0.795
+          ],
+          "content": "E _ {\\theta} [ T (X) ] = g (\\theta), \\forall \\theta \\in \\Theta ,",
+          "image_source": "images/page_66_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.815,
+            0.348,
+            0.831
+          ],
+          "content": "则称之为  $g(\\theta)$  的无偏估计."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.837,
+            0.83,
+            0.878
+          ],
+          "content": "从期望的定义, 不难理解无偏估计的含义: 虽然一次抽样得到的  $T(X)$  的值不一定等于待估参数  $g(\\theta)$ , 但多次重复抽样后, 此统计量的平均值等于待估参数  $g(\\theta)$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.883,
+            0.831,
+            0.924
+          ],
+          "content": "例 2.1.1 设  $X_{1}, X_{2}, \\cdots, X_{n}$  为来自总体 X 的独立同分布样本, 总体均值与总体方差分别为  $\\mu, \\sigma^{2}$ , 证明样本均值  $\\bar{X}$  与样本方差  $S_{n}^{2}$  分别是  $\\mu, \\sigma^{2}$  的 UE."
+        }
+      ]
+    },
+    {
+      "page_idx": 67,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.697,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": "2.1 几个常用的估计准则"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.89,
+            0.069,
+            0.909,
+            0.08
+          ],
+          "content": "55"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.201,
+            0.122,
+            0.431,
+            0.138
+          ],
+          "content": "证明 对于样本均值, 由于"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.41,
+            0.156,
+            0.629,
+            0.197
+          ],
+          "content": "E (\\bar {X}) = \\frac {1}{n} \\sum_ {i = 1} ^ {n} E (X _ {i}) = \\mu ,",
+          "image_source": "images/page_67_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.213,
+            0.654,
+            0.231
+          ],
+          "content": "故样本均值是总体均值 $\\mu$ 的无偏估计. 对于样本方差, 因为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.299,
+            0.246,
+            0.739,
+            0.291
+          ],
+          "content": "S _ {n} ^ {2} = \\frac {1}{n - 1} \\sum_ {i = 1} ^ {n} (X _ {i} - \\bar {X}) ^ {2} = \\frac {1}{n - 1} \\left(\\sum_ {i = 1} ^ {n} X _ {i} ^ {2} - n \\bar {X} ^ {2}\\right),",
+          "image_source": "images/page_67_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.166,
+            0.307,
+            0.19,
+            0.322
+          ],
+          "content": "而"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.273,
+            0.322,
+            0.765,
+            0.356
+          ],
+          "content": "E (X _ {i} ^ {2}) = \\mathrm{Var} (X _ {i}) + [ E (X) ] ^ {2} = \\sigma^ {2} + \\mu^ {2}, E (\\bar {X} ^ {2}) = \\frac {\\sigma^ {2}}{n} + \\mu^ {2},",
+          "image_source": "images/page_67_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.364,
+            0.461,
+            0.381
+          ],
+          "content": "则可验证它是总体方差的无偏估计."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.387,
+            0.874,
+            0.438
+          ],
+          "content": "例 2.1.2 设  $X_{1}, X_{2}, \\cdots, X_{n}$  为来自 Poisson 总体  $P(\\lambda)$  的独立同分布样本，记  $p_{\\lambda}(k) = \\frac{\\lambda^{k} e^{-\\lambda}}{k!}$ ，其中 k 为给定的正整数，求  $p_{\\lambda}(k)$  的 UE."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.202,
+            0.44,
+            0.401,
+            0.457
+          ],
+          "content": "解 由 $p_{\\lambda}(k)$ 的形式知,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.437,
+            0.465,
+            0.599,
+            0.484
+          ],
+          "content": "p _ {\\lambda} (k) = P (X = k),",
+          "image_source": "images/page_67_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.495,
+            0.636,
+            0.529
+          ],
+          "content": "于是, 可知 $I(X_{1} = k), \\frac{1}{n} \\sum_{i=1}^{n} I(X_{i} = k)$ 都是 $p_{\\lambda}(k)$ 的 UE."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.532,
+            0.874,
+            0.571
+          ],
+          "content": "例 2.1.3 设  $X_{1}, X_{2}, \\cdots, X_{n}$  为来自总体  $X \\sim P(\\lambda)$  的独立同分布样本, 求  $g(\\lambda) = \\mathrm{e}^{-2\\lambda}$  的 UE."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.202,
+            0.578,
+            0.449,
+            0.597
+          ],
+          "content": "解 取 $T(X) = (-1)^{X_1}$. 由于"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.367,
+            0.613,
+            0.672,
+            0.656
+          ],
+          "content": "E _ {\\lambda} [ T (X) ] = \\sum_ {k = 0} ^ {\\infty} (- 1) ^ {k} \\frac {\\lambda^ {k}}{k !} \\mathrm{e} ^ {- \\lambda} = \\mathrm{e} ^ {- 2 \\lambda},",
+          "image_source": "images/page_67_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.672,
+            0.405,
+            0.689
+          ],
+          "content": "故  $T(X)$  是  $g(\\lambda)$  的一个 UE."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.696,
+            0.874,
+            0.734
+          ],
+          "content": "在上例中, 当  $X_{1}$  为奇数时, 一个正参数的无偏估计为负值, 这说明此无偏估计有不合理的时候."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.742,
+            0.873,
+            0.784
+          ],
+          "content": "如果参数 $g(\\theta)$ 存在无偏估计, 则称其可估, 否则称之不可估. 如果 $T(X)$ 不是 $g(\\theta)$ 的无偏估计, 则称之为有偏估计, 且记其偏差 (bias) 为 $b_{T}(\\theta) = E[T(X)] - g(\\theta)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.788,
+            0.873,
+            0.828
+          ],
+          "content": "例 2.1.4 设  $X_{1}, X_{2}, \\cdots, X_{n}$  为来自 Poisson 总体  $P(\\lambda)$  的独立同分布样本, 验证参数  $1/\\lambda$  是否可估."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.201,
+            0.835,
+            0.862,
+            0.852
+          ],
+          "content": "解 此时 $1 / \\lambda$ 是不可估的. 事实上, 如果存在一个统计量 $T(X)$ 是它的 UE, 则有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.22,
+            0.87,
+            0.819,
+            0.93
+          ],
+          "content": "E _ {\\lambda} [ T (X) ] = \\sum_ {k _ {1}, k _ {2}, \\dots , k _ {n} = 0} ^ {\\infty} T (k _ {1}, k _ {2}, \\dots , k _ {n}) \\frac {\\sum_ {i = 1} ^ {n} k _ {i}}{k _ {1} ! k _ {2} ! \\cdots k _ {n} !} \\mathrm{e} ^ {- n \\lambda} = \\frac {1}{\\lambda}, \\forall \\lambda > 0,",
+          "image_source": "images/page_67_equation_21.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 68,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.088,
+            0.068,
+            0.106,
+            0.079
+          ],
+          "content": "56"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.125,
+            0.066,
+            0.264,
+            0.08
+          ],
+          "content": "第二章 参数点估计"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.122,
+            0.149,
+            0.137
+          ],
+          "content": "即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.18,
+            0.141,
+            0.775,
+            0.201
+          ],
+          "content": "\\sum_ {k _ {1}, k _ {2}, \\dots , k _ {n} = 0} ^ {\\infty} T (k _ {1}, k _ {2}, \\dots , k _ {n}) \\frac {\\sum_ {i = 1} ^ {n} k _ {i}}{k _ {1} ! k _ {2} ! \\cdots k _ {n} !} = \\frac {\\mathrm{e} ^ {n \\lambda}}{\\lambda} = \\frac {1}{\\lambda} \\sum_ {k = 0} ^ {\\infty} \\frac {(n \\lambda) ^ {k}}{k !}, \\forall \\lambda > 0.",
+          "image_source": "images/page_68_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.212,
+            0.686,
+            0.229
+          ],
+          "content": "但由多项式性质可知: 上述等式永远不成立. 于是, 参数  $1/\\lambda$  不可估."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.236,
+            0.83,
+            0.275
+          ],
+          "content": "由例2.1.1可知，无论总体分布如何，样本均值与样本方差始终是总体均值与总体方差的无偏估计.由此能说样本标准差 $S_{n}$ 是总体标准差 $\\sigma$ 的无偏估计吗？"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.282,
+            0.747,
+            0.3
+          ],
+          "content": "例 2.1.5 设总体  $X \\sim N(\\mu, \\sigma^{2})$ ，验证样本标准差  $S_{n}$  是否为  $\\sigma$  的 UE."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.304,
+            0.487,
+            0.323
+          ],
+          "content": "解 由于 $(n - 1)S_n^2 /\\sigma^2\\sim \\chi^2 (n - 1)$ ，故"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.229,
+            0.336,
+            0.728,
+            0.417
+          ],
+          "content": "\\begin{array}{l} E \\left(\\sqrt {n - 1} S _ {n} / \\sigma\\right) = \\int_ {0} ^ {\\infty} \\frac {\\sqrt {x}}{2 ^ {(n - 1) / 2} \\Gamma ((n - 1) / 2)} \\mathrm{e} ^ {- x / 2} x ^ {\\frac {n - 1}{2} - 1} \\mathrm{d} x \\\\ = \\frac {\\sqrt {2} \\Gamma (n / 2)}{\\Gamma ((n - 1) / 2)}, \\\\ \\end{array}",
+          "image_source": "images/page_68_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.431,
+            0.149,
+            0.447
+          ],
+          "content": "故"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.343,
+            0.45,
+            0.612,
+            0.488
+          ],
+          "content": "E (S _ {n}) = \\sigma \\sqrt {\\frac {2}{n - 1}} \\frac {\\Gamma (n / 2)}{\\Gamma ((n - 1) / 2)},",
+          "image_source": "images/page_68_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.498,
+            0.391,
+            0.514
+          ],
+          "content": "所以, 样本标准差不是  $\\sigma$  的 UE."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.518,
+            0.832,
+            0.602
+          ],
+          "content": "表 2.1.1 列出了  $c_{n}=\\sqrt{\\frac{2}{n-1}}\\frac{\\Gamma(n/2)}{\\Gamma((n-1)/2)}$  针对不同 n 的取值. 此表显示, 当 n 越来越大时, 样本标准差  $S_{n}$  越来越接近总体标准差  $\\sigma$  的无偏估计. 实际上, 利用前述提到的 Stirling 公式, 可以证明  $\\lim_{n\\to\\infty}c_{n}=1$ ."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.125,
+            0.645,
+            0.833,
+            0.694
+          ],
+          "content": "| n | 5 | 10 | 100 | 200 |\n| --- | --- | --- | --- | --- |\n| $c_n$ | 0.940 0 | 0.972 7 | 0.997 5 | 0.998 7 |",
+          "captions": [
+            {
+              "bbox": [
+                0.358,
+                0.626,
+                0.596,
+                0.641
+              ],
+              "content": "表 2.1.1 例 2.1.5 中 ${c}_{n}$ 的值"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_68_table_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.72,
+            0.663,
+            0.737
+          ],
+          "content": "定义 2.1.2 如果统计量  $T_{n}(X)$  是  $g(\\theta)$  的有偏估计, 但满足"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.344,
+            0.756,
+            0.61,
+            0.78
+          ],
+          "content": "\\lim _ {n \\to \\infty} E _ {\\theta} [ T _ {n} (X) ] = g (\\theta), \\forall \\theta \\in \\Theta ,",
+          "image_source": "images/page_68_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.794,
+            0.381,
+            0.81
+          ],
+          "content": "则称之为 $g(\\theta)$ 的渐近无偏估计."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.817,
+            0.8,
+            0.833
+          ],
+          "content": "由上述定义可知, 当总体为正态时, 样本标准差是总体标准差的渐近无偏估计."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.84,
+            0.83,
+            0.903
+          ],
+          "content": "综上可知, 不是所有参数都是可估的; 即使参数可估, 也可能存在不合理的无偏估计; 一个可估参数的无偏估计多数情况下不唯一; 无偏估计不具有变换不变性, 即 $T(X)$ 为 $\\theta$ 的无偏估计, 但 $H(T)$ 并不一定是 $H(\\theta)$ 的无偏估计, 除非 $H$ 为线性函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.909,
+            0.562,
+            0.926
+          ],
+          "content": "关于无偏估计与充分统计量的关系, 有如下结论:"
+        }
+      ]
+    },
+    {
+      "page_idx": 69,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.697,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": "2.1 几个常用的估计准则"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.89,
+            0.069,
+            0.91,
+            0.08
+          ],
+          "content": "57"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.123,
+            0.871,
+            0.164
+          ],
+          "content": "定理2.1.1 设 $T(X)$ 为充分统计量, $g(\\theta)$ 可估, 且 $S(X)$ 为任一无偏估计, 则 $H(T) = E[S(X)|T(X)]$ 是 $g(\\theta)$ 的无偏估计, 且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.374,
+            0.186,
+            0.871,
+            0.204
+          ],
+          "content": "\\mathrm{Var} _ {\\theta} [ H (T) ] \\leqslant \\mathrm{Var} _ {\\theta} [ S (X) ], \\forall \\theta \\in \\Theta , \\tag {2.1.1}",
+          "image_source": "images/page_69_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.166,
+            0.226,
+            0.584,
+            0.243
+          ],
+          "content": "其中等号成立的充要条件是 $P(S(X) = H(T)) = 1$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.251,
+            0.871,
+            0.291
+          ],
+          "content": "证明 因为 T 是充分统计量, 所以由充分统计量定义知: 在给定 T 时, 样本  $X_{1}, X_{2}, \\cdots, X_{n}$  的条件分布与参数  $\\theta$  无关. 因此,  $H(T)$  是一统计量. 另外, 由于"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.265,
+            0.313,
+            0.772,
+            0.332
+          ],
+          "content": "E _ {\\theta} [ H (T) ] = E _ {\\theta} \\left\\{E [ S (X) | T (X) ] \\right\\} = E _ {\\theta} [ S (X) ] = g (\\theta), \\forall \\theta \\in \\Theta ,",
+          "image_source": "images/page_69_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.353,
+            0.423,
+            0.37
+          ],
+          "content": "故  $H(T)$  也是  $g(\\theta)$  的一个 UE."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.205,
+            0.376,
+            0.265,
+            0.391
+          ],
+          "content": "又因为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.259,
+            0.413,
+            0.78,
+            0.53
+          ],
+          "content": "\\begin{array}{l} \\mathrm{Var} _ {\\theta} [ S (X) ] = E _ {\\theta} [ S (X) - g (\\theta) ] ^ {2} \\\\ = E _ {\\theta} [ S (X) - H (T) + H (T) - g (\\theta) ] ^ {2} \\\\ = E _ {\\theta} [ S (X) - H (T) ] ^ {2} + \\\\ \\mathrm{Var} _ {\\theta} [ H (T) ] + 2 E _ {\\theta} \\{[ S (X) - H (T) ] [ H (T) - g (\\theta) ] \\}, \\\\ \\end{array}",
+          "image_source": "images/page_69_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.547,
+            0.19,
+            0.561
+          ],
+          "content": "且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.318,
+            0.584,
+            0.725,
+            0.732
+          ],
+          "content": "\\begin{array}{l} E _ {\\theta} \\{[ S (X) - H (T) ] [ H (T) - g (\\theta) ] \\} \\\\ = E _ {\\theta} \\{E _ {\\theta} \\{[ S (X) - H (T) ] [ H (T) - g (\\theta) ] | T \\} \\} \\\\ = E _ {\\theta} \\{[ H (T) - g (\\theta) ] \\cdot E _ {\\theta} [ S (X) - H (T) ] | T \\} \\\\ = E _ {\\theta} \\{[ H (T) - g (\\theta) ] \\cdot E _ {\\theta} \\{[ S (X) - H (T) ] | T \\} \\} \\\\ = E _ {\\theta} \\{[ H (T) - g (\\theta) ] \\cdot \\{[ E _ {\\theta} S (X) | T ] - H (T) \\} \\} = 0, \\\\ \\end{array}",
+          "image_source": "images/page_69_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.166,
+            0.75,
+            0.19,
+            0.764
+          ],
+          "content": "故"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.226,
+            0.775,
+            0.81,
+            0.794
+          ],
+          "content": "\\mathrm{Var} _ {\\theta} [ S (X) ] = E _ {\\theta} [ S (X) - H (T) ] ^ {2} + \\mathrm{Var} _ {\\theta} [ H (T) ] \\geqslant \\mathrm{Var} _ {\\theta} [ H (T) ], \\forall \\theta \\in \\Theta ,",
+          "image_source": "images/page_69_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.166,
+            0.81,
+            0.746,
+            0.828
+          ],
+          "content": "且等号成立当且仅当  $E_{\\theta}[S(X)-H(T)]^{2}=0$ ，即  $P(S(X)=H(T))=1$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.255,
+            0.835,
+            0.873,
+            0.924
+          ],
+          "content": "注2.1.1 本定理是由C.R.Rao(拉奥,1920—2023)和D.Blackwell(布莱克维尔,1919—2010)独立给出的，参见Rao(1945)和Blackwell(1947).所以，在统计中也称之为Rao-Blackwell定理.另外,Hodges et al.(1950)证明了如果将作为二次损失的方差换成其他凸损失，上述结论仍成立."
+        }
+      ]
+    },
+    {
+      "page_idx": 70,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.088,
+            0.068,
+            0.106,
+            0.079
+          ],
+          "content": "58"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.125,
+            0.066,
+            0.264,
+            0.08
+          ],
+          "content": "第二章 参数点估计"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.122,
+            0.832,
+            0.184
+          ],
+          "content": "此定理表明, 关于可估参数 $g(\\theta)$, 如果有充分统计量, 则可由一个无偏估计构造一个依赖于充分统计量的新无偏估计, 且这个新无偏估计的方差不大于原来无偏估计的方差. 那是否可找到一个方差最小的无偏估计呢?"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.16,
+            0.212,
+            0.467,
+            0.231
+          ],
+          "level": 2,
+          "content": "2.1.2 一致最小方差无偏估计"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.256,
+            0.545,
+            0.273
+          ],
+          "content": "为回答上小节最后一个问题, 我们有如下准则:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.279,
+            0.832,
+            0.319
+          ],
+          "content": "定义2.1.3 设 $g(\\theta)$ 是一可估函数, $T(X)$ 是 $g(\\theta)$ 的一个无偏估计, 如对于 $g(\\theta)$ 的任一无偏估计 $S(X)$, 均有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.356,
+            0.338,
+            0.599,
+            0.356
+          ],
+          "content": "\\mathrm{Var} _ {\\theta} (T) \\leqslant \\mathrm{Var} _ {\\theta} (S), \\forall \\theta \\in \\Theta ,",
+          "image_source": "images/page_70_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.374,
+            0.832,
+            0.413
+          ],
+          "content": "则称 $T(X)$ 是 $g(\\theta)$ 的一致最小方差无偏估计 (uniformly minimum variance unbiased estimate, 简记为 UMVUE)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.419,
+            0.714,
+            0.436
+          ],
+          "content": "如果UMVUE存在，则如何求取呢？为此，引入两个统计量的集合:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.242,
+            0.455,
+            0.83,
+            0.473
+          ],
+          "content": "\\mathcal {T} = \\{T (X): E _ {\\theta} [ T (X) ] = g (\\theta), E _ {\\theta} [ T (X) ] ^ {2} <   \\infty , \\forall \\theta \\in \\Theta \\}, \\tag {2.1.2}",
+          "image_source": "images/page_70_equation_9.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.252,
+            0.49,
+            0.83,
+            0.51
+          ],
+          "content": "\\mathcal {T} _ {0} = \\{T (X): E _ {\\theta} [ T (X) ] = 0, E _ {\\theta} [ T (X) ] ^ {2} <   \\infty , \\forall \\theta \\in \\Theta \\}, \\tag {2.1.3}",
+          "image_source": "images/page_70_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.521,
+            0.56,
+            0.538
+          ],
+          "content": "它们分别表示  $g(\\theta)$  与 0 的二阶矩有限的无偏估计类."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.544,
+            0.788,
+            0.562
+          ],
+          "content": "定理2.1.2 设 $g(\\theta)$ 可估，则估计量 $T \\in \\mathcal{T}$ 是 $g(\\theta)$ 的UMVUE，当且仅当"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.299,
+            0.58,
+            0.83,
+            0.598
+          ],
+          "content": "E _ {\\theta} [ S (X) T (X) ] = 0, \\forall \\theta \\in \\Theta , \\forall S (X) \\in \\mathcal {T} _ {0}. \\tag {2.1.4}",
+          "image_source": "images/page_70_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.615,
+            0.374,
+            0.632
+          ],
+          "content": "证明 先证必要性. 反证:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.639,
+            0.83,
+            0.679
+          ],
+          "content": "设 $T \\in \\mathcal{T}$ 是 $g(\\theta)$ 的一个UMVUE, 但条件(2.1.4)不成立, 即存在 $S_0 \\in \\mathcal{T}_0$ 和 $\\theta_0 \\in \\Theta$, 使得 $E_{\\theta_0}(S_0T) \\neq 0$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.685,
+            0.641,
+            0.702
+          ],
+          "content": "因为 $S_0 \\in \\mathcal{T}_0$，所以对于任意常数 $\\lambda, T_\\lambda = T - \\lambda S_0 \\in \\mathcal{T}$，而"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.212,
+            0.719,
+            0.741,
+            0.739
+          ],
+          "content": "E _ {\\theta_ {0}} (T _ {\\lambda} ^ {2}) = E _ {\\theta_ {0}} (T - \\lambda S _ {0}) ^ {2} = E _ {\\theta_ {0}} (T ^ {2}) + \\lambda^ {2} E _ {\\theta_ {0}} (S _ {0} ^ {2}) - 2 \\lambda E _ {\\theta_ {0}} (T S _ {0}).",
+          "image_source": "images/page_70_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.755,
+            0.65,
+            0.775
+          ],
+          "content": "由于 $E_{\\theta_0}(S_0T) \\neq 0$，故取 $\\lambda_0 = E_{\\theta_0}(S_0T) / E_{\\theta_0}(S_0^2) \\neq 0$，就有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.392,
+            0.791,
+            0.564,
+            0.811
+          ],
+          "content": "E _ {\\theta_ {0}} (T _ {\\lambda_ {0}} ^ {2}) <   E _ {\\theta_ {0}} (T ^ {2}),",
+          "image_source": "images/page_70_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.827,
+            0.534,
+            0.845
+          ],
+          "content": "即 $\\mathrm{Var}_{\\theta_0}(T_{\\lambda_0}) < \\mathrm{Var}_{\\theta_0}(T)$，与 $T$ 是UMVUE矛盾."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.162,
+            0.851,
+            0.267,
+            0.867
+          ],
+          "content": "下证充分性."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.873,
+            0.789,
+            0.891
+          ],
+          "content": "设 $T$ 满足(2.1.4)式, 则对于任意 $\\tilde{T} \\in \\mathcal{T}$, 由于 $T - \\tilde{T} \\in \\mathcal{T}_0$, 则由(2.1.4)式知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.361,
+            0.908,
+            0.594,
+            0.927
+          ],
+          "content": "E _ {\\theta} [ (T - \\tilde {T}) T ] = 0, \\forall \\theta \\in \\Theta ,",
+          "image_source": "images/page_70_equation_23.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 71,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.697,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": "2.1 几个常用的估计准则"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.89,
+            0.069,
+            0.91,
+            0.08
+          ],
+          "content": "59"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.166,
+            0.122,
+            0.191,
+            0.137
+          ],
+          "content": "即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.403,
+            0.144,
+            0.637,
+            0.163
+          ],
+          "content": "E _ {\\theta} (T ^ {2}) = E _ {\\theta} (T \\tilde {T}), \\forall \\theta \\in \\Theta ,",
+          "image_source": "images/page_71_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.177,
+            0.57,
+            0.195
+          ],
+          "content": "于是由 Cauchy-Schwarz(柯西-施瓦茨) 不等式知,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.342,
+            0.212,
+            0.697,
+            0.232
+          ],
+          "content": "E _ {\\theta} (T ^ {2}) \\leqslant [ E _ {\\theta} (\\tilde {T} ^ {2}) ] ^ {1 / 2} [ E _ {\\theta} (T ^ {2}) ] ^ {1 / 2},   \\forall   \\theta \\in \\Theta ,",
+          "image_source": "images/page_71_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.166,
+            0.251,
+            0.19,
+            0.266
+          ],
+          "content": "即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.405,
+            0.274,
+            0.635,
+            0.292
+          ],
+          "content": "E _ {\\theta} (T ^ {2}) \\leqslant E _ {\\theta} (\\tilde {T} ^ {2}), \\forall \\theta \\in \\Theta .",
+          "image_source": "images/page_71_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.203,
+            0.306,
+            0.871,
+            0.325
+          ],
+          "content": "由于  $T, \\tilde{T}$  均是  $g(\\theta)$  的 UE, 且  $\\tilde{T}$  是任意的, 故由上式可知, T 是  $g(\\theta)$  的 UMVUE."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.853,
+            0.331,
+            0.872,
+            0.345
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_71_image_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.202,
+            0.353,
+            0.568,
+            0.37
+          ],
+          "content": "UMVUE 如存在, 那它唯一吗? 见下面定理:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.206,
+            0.376,
+            0.823,
+            0.395
+          ],
+          "content": "定理 2.1.3 如果  $g(\\theta)$  的无偏估计类 T 非空, 则其 UMVUE 最多有一个."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.202,
+            0.402,
+            0.641,
+            0.42
+          ],
+          "content": "证明 如果 $T \\neq T_0$ 是 $g(\\theta)$ 的两个UMVUE, 则必有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.294,
+            0.44,
+            0.744,
+            0.457
+          ],
+          "content": "E _ {\\theta} (T) = E _ {\\theta} (T _ {0}) = g (\\theta), \\operatorname{Var} _ {\\theta} (T _ {0}) = \\operatorname{Var} _ {\\theta} (T), \\forall \\theta \\in \\Theta .",
+          "image_source": "images/page_71_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.166,
+            0.476,
+            0.638,
+            0.493
+          ],
+          "content": "于是, $T-T_{0}\\in\\mathcal{T}_{0}$ . 因为 T 是 UMVUE, 故由定理 2.1.2 知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.401,
+            0.513,
+            0.638,
+            0.532
+          ],
+          "content": "E _ {\\theta} [ (T - T _ {0}) T ] = 0, \\forall \\theta \\in \\Theta .",
+          "image_source": "images/page_71_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.166,
+            0.55,
+            0.524,
+            0.567
+          ],
+          "content": "又由于 $T_0$ 也是UMVUE,故由定理2.1.2知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.398,
+            0.587,
+            0.64,
+            0.605
+          ],
+          "content": "E _ {\\theta} [ (T - T _ {0}) T _ {0} ] = 0, \\forall \\theta \\in \\Theta .",
+          "image_source": "images/page_71_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.623,
+            0.352,
+            0.64
+          ],
+          "content": "综合以上两式, 我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.31,
+            0.66,
+            0.728,
+            0.679
+          ],
+          "content": "E _ {\\theta} (T - T _ {0}) ^ {2} = E _ {\\theta} [ (T - T _ {0}) (T - T _ {0}) ] = 0, \\forall \\theta \\in \\Theta ,",
+          "image_source": "images/page_71_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.166,
+            0.697,
+            0.404,
+            0.714
+          ],
+          "content": "故 $P_{\\theta}(T = T_0) = 1, \\forall \\theta \\in \\Theta.$"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.853,
+            0.698,
+            0.872,
+            0.712
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_71_image_21.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.72,
+            0.873,
+            0.76
+          ],
+          "content": "从定理 2.1.3 可知, UMVUE 如存在, 则在概率 1 相等的意义下是唯一的. 如果存在充分统计量, 则结合定理 2.1.1 与定理 2.1.2, 我们有如下的结论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.205,
+            0.766,
+            0.643,
+            0.785
+          ],
+          "content": "定理2.1.4 设 $T(X)$ 为充分统计量, $g(\\theta)$ 可估. 记"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.277,
+            0.802,
+            0.873,
+            0.822
+          ],
+          "content": "\\mathcal {S} (T) = \\{S (T): E _ {\\theta} [ S (T) ] = g (\\theta), E _ {\\theta} [ S (T) ] ^ {2} <   \\infty , \\forall \\theta \\in \\Theta \\}, \\tag {2.1.5}",
+          "image_source": "images/page_71_equation_24.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.286,
+            0.84,
+            0.871,
+            0.86
+          ],
+          "content": "\\mathcal {S} _ {0} (T) = \\{S (T): E _ {\\theta} [ S (T) ] = 0, E _ {\\theta} [ S (T) ] ^ {2} <   \\infty , \\forall \\theta \\in \\Theta \\}, \\tag {2.1.6}",
+          "image_source": "images/page_71_equation_25.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.166,
+            0.873,
+            0.585,
+            0.89
+          ],
+          "content": "则 $S(T)\\in \\mathcal{S}(T)$ 为 $g(\\theta)$ 的UMVUE的充要条件是"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.327,
+            0.909,
+            0.872,
+            0.928
+          ],
+          "content": "E _ {\\theta} [ S (T) S _ {0} (T) ] = 0, \\forall S _ {0} (T) \\in \\mathcal {S} _ {0} (T), \\forall \\theta \\in \\Theta . \\tag {2.1.7}",
+          "image_source": "images/page_71_equation_27.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 72,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.088,
+            0.068,
+            0.106,
+            0.079
+          ],
+          "content": "60"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.125,
+            0.066,
+            0.264,
+            0.08
+          ],
+          "content": "第二章 参数点估计"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.122,
+            0.584,
+            0.139
+          ],
+          "content": "证明 由于 $\\mathcal{S}(T)\\subset \\mathcal{T},\\mathcal{S}_0(T)\\subset \\mathcal{T}_0$ ，故只要证明:由"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.288,
+            0.158,
+            0.666,
+            0.176
+          ],
+          "content": "E _ {\\theta} [ S (T) S _ {0} (T) ] = 0, \\forall S _ {0} (T) \\in \\mathcal {S} _ {0} (T), \\forall \\theta \\in \\Theta",
+          "image_source": "images/page_72_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.194,
+            0.186,
+            0.21
+          ],
+          "content": "可推得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.329,
+            0.217,
+            0.624,
+            0.235
+          ],
+          "content": "E _ {\\theta} [ S (T) S _ {0} ] = 0, \\forall S _ {0} \\in \\mathcal {S} _ {0}, \\forall \\theta \\in \\Theta",
+          "image_source": "images/page_72_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.248,
+            0.627,
+            0.266
+          ],
+          "content": "即可. 实际上, 对于任意的 $S_0 \\in \\mathcal{S}_0$, 因为 $E[S_0|T] \\in \\mathcal{S}_0(T)$, 且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.253,
+            0.284,
+            0.7,
+            0.302
+          ],
+          "content": "E _ {\\theta} [ S (T) S _ {0} ] = E _ {\\theta} \\{E [ S (T) S _ {0} | T ] \\} = E _ {\\theta} [ S (T) \\cdot E (S _ {0} | T) ],",
+          "image_source": "images/page_72_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.321,
+            0.266,
+            0.336
+          ],
+          "content": "故上述条件可证."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.812,
+            0.322,
+            0.83,
+            0.335
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_72_image_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.343,
+            0.83,
+            0.382
+          ],
+          "content": "例 2.1.6 设  $X_{1}, X_{2}, \\cdots, X_{n}$  为来自总体  $U(0, \\theta)$  的独立同分布样本, 其中  $\\theta > 0$ . 求  $\\theta$  的 UMVUE."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.389,
+            0.69,
+            0.407
+          ],
+          "content": "解 由例1.4.5知, $T(X) = X_{(n)}$ 是充分统计量, 且其概率密度为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.373,
+            0.423,
+            0.58,
+            0.456
+          ],
+          "content": "f _ {T} (t; \\theta) = \\frac {n t ^ {n - 1}}{\\theta^ {n}} I _ {(0, \\theta)} (t),",
+          "image_source": "images/page_72_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.468,
+            0.743,
+            0.485
+          ],
+          "content": "故我们可以利用定理 2.1.4 求  $\\theta$  的 UMVUE. 下设  $S(T)$  为 0 的一个 UE, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.384,
+            0.505,
+            0.569,
+            0.523
+          ],
+          "content": "E _ {\\theta} [ S (T) ] = 0, \\forall \\theta > 0.",
+          "image_source": "images/page_72_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.541,
+            0.512,
+            0.557
+          ],
+          "content": "又由例 1.4.10 知, T 是完全统计量, 故由上式知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.404,
+            0.578,
+            0.55,
+            0.595
+          ],
+          "content": "P (S (T) = 0) = 1.",
+          "image_source": "images/page_72_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.613,
+            0.454,
+            0.631
+          ],
+          "content": "于是, 只要  $H(T)$  是  $\\theta$  的无偏估计, 就有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.362,
+            0.65,
+            0.591,
+            0.668
+          ],
+          "content": "E _ {\\theta} [ H (T) S (T) ] = 0, \\forall \\theta > 0.",
+          "image_source": "images/page_72_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.686,
+            0.834,
+            0.748
+          ],
+          "content": "这样, 由定理 2.1.4 可知, 任一个基于充分完全统计量 T 的无偏估计就是  $\\theta$  的 UMVUE. 由  $X_{(n)}$  的概率密度, 可以验证  $E_{\\theta}[X_{(n)}] = \\frac{n}{n+1}\\theta$ . 于是可知  $\\theta$  的 UMVUE 为  $\\frac{n+1}{n}X_{(n)}$ . ☐"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.755,
+            0.83,
+            0.794
+          ],
+          "content": "上例说明, 我们可以利用充分完全统计量比较容易地求得某参数的 UMVUE, 这即为下面定理."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.801,
+            0.83,
+            0.842
+          ],
+          "content": "定理2.1.5 设参数 $g(\\theta)$ 可估, $T(X)$ 为充分完全统计量. 如果 $S(X)$ 是 $g(\\theta)$ 的 UE, 则 $S_0(T) = E[S(X)|T]$ 是 $g(\\theta)$ 的 UMVUE."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.849,
+            0.83,
+            0.89
+          ],
+          "content": "证明 设 $S_{1}, S_{2}$ 是 $g(\\theta)$ 的任意两个 UE, 则由条件期望的性质可知, $E(S_{1}|T), E(S_{2}|T)$ 均是 $g(\\theta)$ 的 UE, 即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.292,
+            0.909,
+            0.83,
+            0.928
+          ],
+          "content": "E _ {\\theta} [ E (S _ {1} | T) ] = E _ {\\theta} [ E (S _ {2} | T) ] = g (\\theta), \\forall \\theta \\in \\Theta , \\tag {*}.",
+          "image_source": "images/page_72_equation_23.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 73,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.697,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": "2.1 几个常用的估计准则"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.89,
+            0.068,
+            0.908,
+            0.08
+          ],
+          "content": "61"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.166,
+            0.122,
+            0.19,
+            0.137
+          ],
+          "content": "且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.368,
+            0.144,
+            0.669,
+            0.161
+          ],
+          "content": "\\mathrm{Var} _ {\\theta} [ E (S _ {1} | T) ] \\leqslant \\mathrm{Var} _ {\\theta} (S _ {1}), \\forall \\theta \\in \\Theta ,",
+          "image_source": "images/page_73_equation_3.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.372,
+            0.167,
+            0.668,
+            0.185
+          ],
+          "content": "\\mathrm{Var} _ {\\theta} [ E (S _ {2} | T) ] \\leqslant \\mathrm{Var} _ {\\theta} (S _ {2}), \\forall \\theta \\in \\Theta .",
+          "image_source": "images/page_73_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.203,
+            0.197,
+            0.674,
+            0.214
+          ],
+          "content": "另由 (\\*) 式可知,  $E(S_{1}|T)-E(S_{2}|T)$  是 0 的无偏估计, 即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.363,
+            0.233,
+            0.673,
+            0.251
+          ],
+          "content": "E _ {\\theta} [ E (S _ {1} | T) - E (S _ {2} | T) ] = 0, \\forall \\theta \\in \\Theta ,",
+          "image_source": "images/page_73_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.268,
+            0.471,
+            0.285
+          ],
+          "content": "又由于 T 是完全统计量, 故由定义知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.361,
+            0.304,
+            0.677,
+            0.321
+          ],
+          "content": "P _ {\\theta} (E (S _ {1} | T) = E (S _ {2} | T)) = 1, \\forall \\theta \\in \\Theta ,",
+          "image_source": "images/page_73_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.339,
+            0.871,
+            0.379
+          ],
+          "content": "这说明在概率 1 的意义下, $E(S_1|T)$ 与 $E(S_2|T)$ 相等, 又由于 $S_1$ 与 $S_2$ 的任意性, 故 $S_0 = E(S|T)$ 是唯一的 UMVUE. $\\square$"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.166,
+            0.386,
+            0.242,
+            0.429
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_73_image_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.254,
+            0.387,
+            0.871,
+            0.429
+          ],
+          "content": "注2.1.2 由定理2.1.5可知, 如果 $T(X)$ 是充分完全统计量, 且 $S(T)$ 是 $g(\\theta)$ 的 UE, 则它就是 $g(\\theta)$ 的 UMVUE."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.449,
+            0.871,
+            0.488
+          ],
+          "content": "例 2.1.7 设  $X_{1}, X_{2}, \\cdots, X_{n}$  为来自 Poisson 总体  $P(\\lambda)$  的独立同分布样本, 对于给定的非负整数 k, 求参数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.453,
+            0.491,
+            0.583,
+            0.524
+          ],
+          "content": "p _ {\\lambda} (k) = \\frac {\\lambda^ {k}}{k !} \\mathrm{e} ^ {- \\lambda}",
+          "image_source": "images/page_73_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.531,
+            0.271,
+            0.546
+          ],
+          "content": "的 UMVUE."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.553,
+            0.873,
+            0.629
+          ],
+          "content": "解 由 $p_{\\lambda}(k)$ 的定义可以看出, $S_{k}(X) = I_{k}(X_{1})$ 是其一个 UE. 再由例 1.4.11 可知, $T(X) = \\sum_{i=1}^{n} X_{i}$ 是完全统计量, 且由因子分解定理可证明, 它也是充分统计量. 于是, 根据定理 2.1.5 可知, $E[S_{k}(X)|T]$ 是 $p_{\\lambda}(k)$ 的 UMVUE."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.204,
+            0.634,
+            0.246,
+            0.649
+          ],
+          "content": "由于"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.275,
+            0.659,
+            0.761,
+            0.735
+          ],
+          "content": "\\begin{array}{l} E [ S _ {k} (X) | T = t ] = P (X _ {1} = k | T = t) = \\frac {P (X _ {1} = k , T = t)}{P (T = t)} \\\\ = \\frac {P (X _ {1} = k , X _ {2} + X _ {3} + \\cdots + X _ {n} = t - k)}{P (T = t)}, \\\\ \\end{array}",
+          "image_source": "images/page_73_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.749,
+            0.794,
+            0.767
+          ],
+          "content": "且  $X_{1} \\sim P(\\lambda)$  与  $X_{2} + X_{3} + \\cdots + X_{n} \\sim P((n-1)\\lambda)$  独立, 则代入上式后, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.328,
+            0.782,
+            0.709,
+            0.833
+          ],
+          "content": "E [ S _ {k} (X) | T = t ] = \\binom{t}{k} \\left(\\frac {1}{n}\\right) ^ {k} \\left(1 - \\frac {1}{n}\\right) ^ {t - k}.",
+          "image_source": "images/page_73_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.204,
+            0.847,
+            0.427,
+            0.864
+          ],
+          "content": "于是, $p_{\\lambda}(k)$ 的 UMVUE 为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.402,
+            0.878,
+            0.637,
+            0.93
+          ],
+          "content": "\\binom{T}{k} \\left(\\frac {1}{n}\\right) ^ {k} \\left(1 - \\frac {1}{n}\\right) ^ {T - k}.",
+          "image_source": "images/page_73_equation_21.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.853,
+            0.896,
+            0.871,
+            0.91
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_73_image_22.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 74,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.088,
+            0.068,
+            0.108,
+            0.079
+          ],
+          "content": "62"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.125,
+            0.066,
+            0.264,
+            0.08
+          ],
+          "content": "第二章 参数点估计"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.122,
+            0.831,
+            0.161
+          ],
+          "content": "从上述几个例子可以看到, 多数情况下可以求得 UMVUE, 但在某些情况下 UMVUE 不一定存在, 即使存在也有不合理的情况发生."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.168,
+            0.83,
+            0.208
+          ],
+          "content": "例 2.1.8 设  $X_{1}, X_{2}, \\cdots, X_{n}$  为来自 Poisson 总体  $P(\\lambda)$  的独立同分布样本, 求参数  $g(\\lambda) = \\mathrm{e}^{-a\\lambda}$  的 UMVUE, 其中 a > 0 为常数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.214,
+            0.83,
+            0.267
+          ],
+          "content": "解 由前述内容可知 $T(X) = \\sum_{i=1}^{n} X_i$ 为充分完全统计量, 且如果 $S(T)$ 是 $g(\\lambda)$ 的 UE, 则它就是其 UMVUE. 下设 $S(T)$ 为 $g(\\lambda)$ 的 UE, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.304,
+            0.284,
+            0.651,
+            0.325
+          ],
+          "content": "\\sum_ {t = 0} ^ {\\infty} \\frac {S (t) (n \\lambda) ^ {t}}{t !} = \\mathrm{e} ^ {(n - a) \\lambda} = \\sum_ {t = 0} ^ {\\infty} \\frac {(n - a) ^ {t} \\lambda^ {t}}{t !},",
+          "image_source": "images/page_74_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.342,
+            0.174,
+            0.359
+          ],
+          "content": "于是，"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.398,
+            0.366,
+            0.559,
+            0.387
+          ],
+          "content": "S (T) = (1 - a / n) ^ {T}",
+          "image_source": "images/page_74_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.402,
+            0.646,
+            0.42
+          ],
+          "content": "是  $g(\\lambda)$  的 UMVUE, 但是当  $a \\geqslant n$  时, 这个 UMVUE 并不合理."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.426,
+            0.832,
+            0.513
+          ],
+          "content": "既然 UMVUE 的方差在无偏估计类中最小, 那这个最小方差有一个下界吗? Fréchet (1943) 最早注意到了这个问题, 并引入信息不等式. 后来 Rao (1945) 和 Cramér (1946) 分别对此进行了推广, 其结果被称为 Cramér-Rao (克拉默-拉奥) 不等式, 简记为 C-R 不等式. 为了便于书写, 在下一定理中, 记 $\\boldsymbol{X} = (X_1, X_2, \\cdots, X_n), \\boldsymbol{x} = (x_1, x_2, \\cdots, x_n)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.517,
+            0.832,
+            0.603
+          ],
+          "content": "定理 2.1.6 (C-R 不等式) 设  $X_{1}, X_{2}, \\cdots, X_{n}$  为来自总体  $X \\sim f(x; \\theta)$  的独立同分布样本，其中  $\\theta \\in \\Theta \\subset R$ ，且  $\\Theta$  为开区间（有限、无限或半无限）。假设支撑集  $S = \\{x : f(x; \\theta) > 0\\}$  与参数  $\\theta$  无关， $f(x; \\theta)$  关于  $\\theta$  可导，且总体概率分布的微分与积分可互换，即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.319,
+            0.604,
+            0.83,
+            0.641
+          ],
+          "content": "\\frac {\\mathrm{d}}{\\mathrm{d} \\theta} \\int_ {- \\infty} ^ {\\infty} f (x; \\theta) \\mathrm{d} x = \\int_ {- \\infty} ^ {\\infty} \\frac {\\partial}{\\partial \\theta} f (x; \\theta) \\mathrm{d} x. \\tag {2.1.8}",
+          "image_source": "images/page_74_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.653,
+            0.255,
+            0.669
+          ],
+          "content": "再设  $g(\\theta)$  可估，"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.292,
+            0.674,
+            0.83,
+            0.713
+          ],
+          "content": "I (\\theta) = E _ {\\theta} \\left[ \\frac {\\partial}{\\partial \\theta} \\ln f (X; \\theta) \\right] ^ {2} \\text {存在,且} I (\\theta) > 0. \\tag {2.1.9}",
+          "image_source": "images/page_74_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.724,
+            0.588,
+            0.741
+          ],
+          "content": "如果  $T(\\boldsymbol{X})$  是  $g(\\theta)$  的 UE, 且满足积分与微分可互换, 即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.295,
+            0.754,
+            0.66,
+            0.789
+          ],
+          "content": "\\frac {\\mathrm{d}}{\\mathrm{d} \\theta} \\int T (\\pmb {x}) f (\\pmb {x}; \\theta) \\mathrm{d} \\pmb {x} = \\int T (\\pmb {x}) \\frac {\\partial}{\\partial \\theta} f (\\pmb {x}; \\theta) \\mathrm{d} \\pmb {x},",
+          "image_source": "images/page_74_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.801,
+            0.148,
+            0.816
+          ],
+          "content": "则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.342,
+            0.816,
+            0.83,
+            0.852
+          ],
+          "content": "\\mathrm{Var} _ {\\theta} [ T (\\boldsymbol {X}) ] \\geqslant \\frac {[ g ^ {\\prime} (\\theta) ] ^ {2}}{n I (\\theta)}, \\forall \\theta \\in \\Theta , \\tag {2.1.10}",
+          "image_source": "images/page_74_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.865,
+            0.469,
+            0.881
+          ],
+          "content": "且等号成立当且仅当，存在 $c(\\theta)\\neq 0$ ，使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.339,
+            0.898,
+            0.615,
+            0.932
+          ],
+          "content": "\\frac {\\partial \\ln f (\\boldsymbol {X} ; \\theta)}{\\partial \\theta} = c (\\theta) [ T (\\boldsymbol {X}) - g (\\theta) ].",
+          "image_source": "images/page_74_equation_19.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 75,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.697,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": "2.1 几个常用的估计准则"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.89,
+            0.069,
+            0.91,
+            0.08
+          ],
+          "content": "63"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.122,
+            0.871,
+            0.162
+          ],
+          "content": "证明 如 $I(\\theta) = \\infty$ 或 $\\operatorname{Var}_{\\theta}(T) = \\infty$，则 (2.1.10) 式均显然成立。故下面假设 $I(\\theta) < \\infty, \\operatorname{Var}_{\\theta}(T) < \\infty$。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.204,
+            0.169,
+            0.249,
+            0.185
+          ],
+          "content": "因为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.263,
+            0.199,
+            0.873,
+            0.235
+          ],
+          "content": "\\int \\frac {\\partial \\ln f (x ; \\theta)}{\\partial \\theta} f (x; \\theta) \\mathrm{d} x = \\int \\frac {\\partial f (x ; \\theta)}{\\partial \\theta} \\mathrm{d} x = \\frac {\\mathrm{d}}{\\mathrm{d} \\theta} \\int f (x; \\theta) \\mathrm{d} x = 0, \\tag {*1}",
+          "image_source": "images/page_75_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.254,
+            0.744,
+            0.286
+          ],
+          "content": "又因为样本是 iid 的, 且样本分布 $f(\\boldsymbol{x}; \\theta) = \\prod_{i=1}^{n} f(x_i; \\theta)$, 故由 (\\*1) 式知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.363,
+            0.305,
+            0.677,
+            0.34
+          ],
+          "content": "\\int \\frac {\\partial \\ln f (\\boldsymbol {x} ; \\theta)}{\\partial \\theta} f (\\boldsymbol {x}; \\theta) \\mathrm{d} \\boldsymbol {x} = 0, \\forall \\theta \\in \\Theta ,",
+          "image_source": "images/page_75_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.166,
+            0.357,
+            0.423,
+            0.376
+          ],
+          "content": "于是, 对于任意的 $g(\\theta)$, 我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.347,
+            0.392,
+            0.873,
+            0.427
+          ],
+          "content": "\\int g (\\theta) \\frac {\\partial \\ln f (\\boldsymbol {x} ; \\theta)}{\\partial \\theta} f (\\boldsymbol {x}; \\theta) \\mathrm{d} \\boldsymbol {x} = 0, \\forall \\theta \\in \\Theta . \\tag {*2}",
+          "image_source": "images/page_75_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.205,
+            0.446,
+            0.267,
+            0.461
+          ],
+          "content": "又因为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.281,
+            0.474,
+            0.756,
+            0.665
+          ],
+          "content": "\\begin{array}{l} g ^ {\\prime} (\\theta) = \\frac {\\partial}{\\partial \\theta} g (\\theta) = \\frac {\\partial}{\\partial \\theta} E _ {\\theta} [ T (\\boldsymbol {X}) ] \\\\ = \\frac {\\partial}{\\partial \\theta} \\int T (\\boldsymbol {x}) f (\\boldsymbol {x}; \\theta) \\mathrm{d} \\boldsymbol {x} \\\\ = \\int \\frac {\\partial}{\\partial \\theta} T (\\boldsymbol {x}) f (\\boldsymbol {x}; \\theta) \\mathrm{d} \\boldsymbol {x} \\\\ = \\int T (\\boldsymbol {x}) \\frac {\\partial \\ln f (\\boldsymbol {x} , \\theta)}{\\partial \\theta} f (\\boldsymbol {x}; \\theta) \\mathrm{d} \\boldsymbol {x} \\\\ \\stackrel {(* 2)} {=} \\int [ T (\\boldsymbol {x}) - g (\\theta) ] \\frac {\\partial \\ln f (\\boldsymbol {x} ; \\theta)}{\\partial \\theta} f (\\boldsymbol {x}; \\theta) \\mathrm{d} \\boldsymbol {x}, \\forall \\theta \\in \\Theta . \\\\ \\end{array}",
+          "image_source": "images/page_75_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.204,
+            0.683,
+            0.648,
+            0.7
+          ],
+          "content": "于是, 由 Cauchy-Schwarz 不等式知, 对于 $\\forall \\theta \\in \\Theta$, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.251,
+            0.713,
+            0.786,
+            0.829
+          ],
+          "content": "\\begin{array}{l} [ g ^ {\\prime} (\\theta) ] ^ {2} = \\left\\{\\int [ T (\\boldsymbol {x}) - g (\\theta) ] \\frac {\\partial \\ln f (\\boldsymbol {x} ; \\theta)}{\\partial \\theta} f (\\boldsymbol {x}; \\theta) \\mathrm{d} \\boldsymbol {x} \\right\\} ^ {2} \\\\ \\leqslant \\int [ T (\\boldsymbol {x}) - g (\\theta) ] ^ {2} f (\\boldsymbol {x}; \\theta) \\mathrm{d} \\boldsymbol {x} \\cdot \\int \\left[ \\frac {\\partial \\ln f (\\boldsymbol {x} ; \\theta)}{\\partial \\theta} \\right] ^ {2} f (\\boldsymbol {x}; \\theta) \\mathrm{d} \\boldsymbol {x} \\\\ = \\operatorname{Var} _ {\\theta} (T) \\cdot n I (\\theta), \\\\ \\end{array}",
+          "image_source": "images/page_75_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.166,
+            0.848,
+            0.797,
+            0.866
+          ],
+          "content": "且由 Cauchy-Schwarz 不等式知, 上述等号成立的条件为: 存在 $c(\\theta) \\neq 0$, 使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.381,
+            0.883,
+            0.657,
+            0.916
+          ],
+          "content": "\\frac {\\partial \\ln f (\\boldsymbol {X} ; \\theta)}{\\partial \\theta} = c (\\theta) [ T (\\boldsymbol {X}) - g (\\theta) ].",
+          "image_source": "images/page_75_equation_14.jpg"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.854,
+            0.893,
+            0.871,
+            0.906
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_75_image_15.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 76,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.088,
+            0.068,
+            0.106,
+            0.079
+          ],
+          "content": "64"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.125,
+            0.066,
+            0.264,
+            0.08
+          ],
+          "content": "第二章 参数点估计"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.213,
+            0.121,
+            0.544,
+            0.137
+          ],
+          "content": "注2.1.3 上一定理中几个条件的解释:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.247,
+            0.145,
+            0.807,
+            0.162
+          ],
+          "content": "(1) 关于总体概率分布的微分与积分可互换条件 (2.1.8), 相当于要求"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.393,
+            0.173,
+            0.829,
+            0.209
+          ],
+          "content": "E _ {\\theta} \\left[ \\frac {\\partial \\ln f (X ; \\theta)}{\\partial \\theta} \\right] = 0, \\forall \\theta \\in \\Theta . \\tag {2.1.11}",
+          "image_source": "images/page_76_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.213,
+            0.219,
+            0.83,
+            0.259
+          ],
+          "content": "(2) (2.1.9) 式的  $I(\\theta)$  被称为 Fisher 信息量, 它反映着总体分布为参数  $\\theta$  所提供的信息量, 且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.314,
+            0.27,
+            0.728,
+            0.307
+          ],
+          "content": "I (\\theta) = \\mathrm{Var} _ {\\theta} \\left[ \\frac {\\partial \\ln f (X ; \\theta)}{\\partial \\theta} \\right] = - E _ {\\theta} \\left[ \\frac {\\partial^ {2} \\ln f (X ; \\theta)}{\\partial \\theta^ {2}} \\right].",
+          "image_source": "images/page_76_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.214,
+            0.317,
+            0.489,
+            0.333
+          ],
+          "content": "另外, 如果 n 个样本相互独立, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.406,
+            0.345,
+            0.829,
+            0.381
+          ],
+          "content": "E _ {\\theta} \\left[ \\frac {\\partial \\ln f (\\boldsymbol {X} ; \\theta)}{\\partial \\theta} \\right] ^ {2} = n I (\\theta). \\tag {2.1.12}",
+          "image_source": "images/page_76_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.404,
+            0.832,
+            0.467
+          ],
+          "content": "上述 Fisher 信息量 $I(\\theta)$ 仅反映了总体给参数 $\\theta$ 提供的信息量. 在统计中还有度量两个概率密度间差异的信息量: Kullback-Leibler(库尔贝克-莱布勒) 信息, 简记为 K-L 信息, 其定义如下:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.474,
+            0.83,
+            0.512
+          ],
+          "content": "定义 2.1.4(K-L 信息) 设  $f(x)$ ,  $g(x)$  为两个概率密度, 则二者间的 K-L 信息定义为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.36,
+            0.514,
+            0.829,
+            0.549
+          ],
+          "content": "K (f, g) = E _ {X \\sim f} \\left[ \\ln \\frac {f (X)}{g (X)} \\right]. \\tag {2.1.13}",
+          "image_source": "images/page_76_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.561,
+            0.767,
+            0.578
+          ],
+          "content": "如果  $X \\sim f(x; \\theta)$ ,  $\\theta \\in \\Theta$ ，则对于任给的  $\\theta_{1}, \\theta_{2} \\in \\Theta$ ，总体 X 的 K-L 信息定义为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.347,
+            0.595,
+            0.83,
+            0.631
+          ],
+          "content": "K _ {X} (\\theta_ {1}, \\theta_ {2}) = E _ {\\theta} \\left[ \\ln \\frac {f (X ; \\theta_ {1})}{f (X ; \\theta_ {2})} \\right]. \\tag {2.1.14}",
+          "image_source": "images/page_76_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.652,
+            0.83,
+            0.692
+          ],
+          "content": "定理 2.1.7 设  $X \\sim f(x; \\theta)$ ，统计量  $T(X) \\sim g(t; \\theta)$ ，且两个分布都满足定理 2.1.6 中的条件，则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.374,
+            0.701,
+            0.579,
+            0.719
+          ],
+          "content": "K _ {X} (\\theta_ {1}, \\theta_ {2}) \\geqslant K _ {T} (\\theta_ {1}, \\theta_ {2}),",
+          "image_source": "images/page_76_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.735,
+            0.474,
+            0.751
+          ],
+          "content": "且等式成立当且仅当 $T(X)$ 是充分统计量."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.758,
+            0.38,
+            0.775
+          ],
+          "content": "证明请参见韦博成 (2006)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.782,
+            0.78,
+            0.798
+          ],
+          "content": "如果一个无偏估计的方差达到了上述下界, 则它是 UMVUE, 但反之不成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.805,
+            0.83,
+            0.843
+          ],
+          "content": "例 2.1.9 设  $X_{1}, X_{2}, \\cdots, X_{n}$  为来自  $X \\sim B(1, p)$  的独立同分布样本, 求 p 的 UMVUE."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.852,
+            0.742,
+            0.868
+          ],
+          "content": "解 可以验证总体分布满足定理 2.1.7 中的条件, 且其 Fisher 信息量为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.253,
+            0.886,
+            0.699,
+            0.929
+          ],
+          "content": "I (p) = E _ {p} \\left[ \\frac {\\partial \\ln f (X ; p)}{\\partial p} \\right] ^ {2} = \\sum_ {k = 0} ^ {1} \\left[ \\frac {\\partial \\ln f (k ; p)}{\\partial p} \\right] ^ {2} f (k; p),",
+          "image_source": "images/page_76_equation_21.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 77,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.697,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": "2.1 几个常用的估计准则"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.89,
+            0.069,
+            0.909,
+            0.08
+          ],
+          "content": "65"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.121,
+            0.549,
+            0.14
+          ],
+          "content": "其中 $f(k;p) = P(X = k) = p^k (1 - p)^{1 - k}$. 于是"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.292,
+            0.152,
+            0.748,
+            0.191
+          ],
+          "content": "I (p) = \\left[ \\frac {\\partial \\ln (1 - p)}{\\partial p} \\right] ^ {2} (1 - p) + \\left(\\frac {\\partial \\ln p}{\\partial p}\\right) ^ {2} p = \\frac {1}{p (1 - p)},",
+          "image_source": "images/page_77_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.204,
+            0.759,
+            0.239
+          ],
+          "content": "这样由信息不等式知, p 的 UE 的方差的 C-R 下界为  $\\frac{1}{nI(p)} = \\frac{p(1 - p)}{n}$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.242,
+            0.873,
+            0.295
+          ],
+          "content": "另外, 由于 $\\sum_{i=1}^{n} X_i \\sim B(n, p)$, 故 $\\operatorname{Var}(\\bar{X}) = \\frac{p(1-p)}{n}$ 达到了 C-R 下界, 且是 $p$ 的无偏估计, 故可知 $\\bar{X}$ 是 $p$ 的 UMVUE. $\\square$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.301,
+            0.873,
+            0.34
+          ],
+          "content": "例 2.1.10 设  $X_{1}, X_{2}, \\cdots, X_{n}$  为来自总体  $X \\sim N(\\mu, \\sigma^{2})$  的独立同分布样本, 求  $\\mu$  和  $\\sigma^{2}$  的 UE 的方差下界."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.202,
+            0.347,
+            0.618,
+            0.364
+          ],
+          "content": "解 容易验证正态分布满足定理中的要求, 且因为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.348,
+            0.376,
+            0.669,
+            0.413
+          ],
+          "content": "f (x; \\mu , \\sigma^ {2}) = \\frac {1}{\\sqrt {2 \\pi} \\sigma} \\exp \\left\\{- \\frac {(x - \\mu) ^ {2}}{2 \\sigma^ {2}} \\right\\},",
+          "image_source": "images/page_77_equation_8.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.417,
+            0.707,
+            0.451
+          ],
+          "content": "\\ln f (x; \\mu , \\sigma^ {2}) = - \\frac {(x - \\mu) ^ {2}}{2 \\sigma^ {2}} - \\frac {1}{2} \\ln \\sigma^ {2} - \\frac {1}{2} \\ln 2 \\pi ,",
+          "image_source": "images/page_77_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.461,
+            0.209,
+            0.476
+          ],
+          "content": "所以"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.221,
+            0.489,
+            0.715,
+            0.524
+          ],
+          "content": "\\frac {\\partial \\ln f (x ; \\mu , \\sigma^ {2})}{\\partial \\mu} = \\frac {x - \\mu}{\\sigma^ {2}}, \\quad \\frac {\\partial^ {2} \\ln f (x ; \\mu , \\sigma^ {2})}{\\partial \\mu^ {2}} = - \\frac {1}{\\sigma^ {2}},",
+          "image_source": "images/page_77_equation_11.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.224,
+            0.524,
+            0.815,
+            0.56
+          ],
+          "content": "\\frac {\\partial \\ln f (x ; \\mu , \\sigma^ {2})}{\\partial \\sigma^ {2}} = \\frac {(x - \\mu) ^ {2}}{2 \\sigma^ {4}} - \\frac {1}{2 \\sigma^ {2}}, \\frac {\\partial^ {2} \\ln f (x ; \\mu , \\sigma^ {2})}{\\partial (\\sigma^ {2}) ^ {2}} = - \\frac {(x - \\mu) ^ {2}}{\\sigma^ {6}} + \\frac {1}{2 \\sigma^ {4}}.",
+          "image_source": "images/page_77_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.204,
+            0.573,
+            0.295,
+            0.589
+          ],
+          "content": "于是，可知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.394,
+            0.595,
+            0.643,
+            0.614
+          ],
+          "content": "I (\\mu) = 1 / \\sigma^ {2}, \\quad I (\\sigma^ {2}) = 1 / 2 \\sigma^ {4},",
+          "image_source": "images/page_77_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.625,
+            0.646,
+            0.643
+          ],
+          "content": "则  $\\mu$  和  $\\sigma^{2}$  的 UE 的方差的 C-R 下界分别为  $\\sigma^{2}/n, 2\\sigma^{4}/n$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.648,
+            0.873,
+            0.723
+          ],
+          "content": "因为  $\\mathrm{Var}(\\bar{X}) = \\sigma^{2}/n$  达到了 C-R 下界且无偏，故  $\\bar{X}$  是  $\\mu$  的 UMVUE. 然而，对于  $\\sigma^{2}$  的 UMVUE——样本方差  $S_{n}^{2}$ ，由于  $(n-1)S_{n}^{2}/\\sigma^{2} \\sim \\chi^{2}(n-1)$ ，故由此可知， $\\mathrm{Var}(S_{n}^{2}) = \\frac{2\\sigma^{4}}{n-1}$ ，它并没有达到 C-R 下界."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.727,
+            0.873,
+            0.767
+          ],
+          "content": "上面仅考虑了单参数的情况, 对于多参数, 设  $\\boldsymbol{\\theta} = (\\theta_{1}, \\theta_{2}, \\cdots, \\theta_{r})^{\\mathrm{T}} \\in \\Theta$ , 则此时的 Fisher 信息矩阵定义为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.343,
+            0.778,
+            0.694,
+            0.823
+          ],
+          "content": "\\boldsymbol {I} (\\boldsymbol {\\theta}) = - E \\left[ \\left(\\frac {\\partial f (X ; \\boldsymbol {\\theta})}{\\partial \\boldsymbol {\\theta}}\\right) \\left(\\frac {\\partial f (X ; \\boldsymbol {\\theta})}{\\partial \\boldsymbol {\\theta}}\\right) ^ {\\mathrm{T}} \\right].",
+          "image_source": "images/page_77_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.836,
+            0.873,
+            0.891
+          ],
+          "content": "如记  $\\boldsymbol{g}(\\boldsymbol{\\theta})$  为 s 维参数向量,  $\\Delta=\\left(\\frac{\\partial g_{i}(\\boldsymbol{\\theta})}{\\partial\\theta_{j}}\\right)_{s\\times r}$ , s 维统计量  $\\boldsymbol{T}(X)$  是 g 的无偏估计, 则在一定正则条件下, C-R 不等式为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.365,
+            0.908,
+            0.672,
+            0.927
+          ],
+          "content": "\\operatorname{Var} _ {\\boldsymbol {\\theta}} [ \\boldsymbol {T} (X) ] \\geqslant \\Delta I ^ {- 1} (\\boldsymbol {\\theta}) \\Delta^ {\\mathrm{T}}, \\forall \\boldsymbol {\\theta} \\in \\Theta ,",
+          "image_source": "images/page_77_equation_20.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 78,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.088,
+            0.068,
+            0.106,
+            0.079
+          ],
+          "content": "66"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.125,
+            0.066,
+            0.264,
+            0.08
+          ],
+          "content": "第二章 参数点估计"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.121,
+            0.83,
+            0.139
+          ],
+          "content": "其中  $\\mathrm{Var}_{\\boldsymbol{\\theta}}[\\boldsymbol{T}(x)]=E_{\\boldsymbol{\\theta}}[(\\boldsymbol{T}(x)-\\boldsymbol{g}(\\boldsymbol{\\theta}))(T(x)-\\boldsymbol{g}(\\boldsymbol{\\theta}))^{\\mathrm{T}}]$ ，矩阵  $A\\geqslant B$  意味着 A-B 半正定."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.144,
+            0.83,
+            0.207
+          ],
+          "content": "在结束本小节前, 我们注意到在不同准则下, 估计量的优良性质是不同的. 如前面讲述的 UMVUE, 它在参数的无偏估计类中方差最小, 但在其他准则下, 就不一定是最优的, 比如在均方误差最小的准则下. 对于参数 $g(\\theta)$ 的估计量 $T(X)$, 由于"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.246,
+            0.23,
+            0.706,
+            0.249
+          ],
+          "content": "\\mathrm{MSE} _ {\\theta} [ T (X) ] = E _ {\\theta} [ T (X) - g (\\theta) ] ^ {2} = \\mathrm{Var} _ {\\theta} [ T (X) ] + b _ {T} ^ {2} (\\theta),",
+          "image_source": "images/page_78_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.27,
+            0.832,
+            0.334
+          ],
+          "content": "故可知估计量 $T(X)$ 的均方误差综合了其方差与偏差, 因此, 有些情况下, 也多采用均方误差的大小来衡量估计量的好坏. 比如在例2.1.6中, 记 $T_{n} = X_{(n)}$, $T^{*} = \\frac{n + 1}{n} T_{n}$ 是 $\\theta$ 的UMVUE, 但如果在形如 $cT_{n}$ 的估计类中, 由于"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.236,
+            0.353,
+            0.715,
+            0.389
+          ],
+          "content": "\\mathrm{MSE} _ {\\theta} (c T _ {n}) = E _ {\\theta} (c T _ {n} - \\theta) ^ {2} = \\theta^ {2} \\left(\\frac {n}{n + 2} c ^ {2} - \\frac {2 n}{n + 1} c + 1\\right),",
+          "image_source": "images/page_78_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.407,
+            0.83,
+            0.454
+          ],
+          "content": "则当取 $c_{0} = \\frac{n + 2}{n + 1}$ 时, $c_{0}T_{n}$ 的MSE达到最小, 即估计量 $\\frac{n + 2}{n + 1} X_{(n)}$ 是在形如 $cX_{(n)}$ 的估计类中, 均方误差最小者. 但是"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.265,
+            0.472,
+            0.688,
+            0.509
+          ],
+          "content": "\\mathrm{MSE} _ {\\theta} [ c _ {0} X _ {(n)} ] = \\frac {\\theta^ {2}}{(n + 1) ^ {2}} <   \\frac {\\theta^ {2}}{n (n + 2)} = \\mathrm{MSE} _ {\\theta} (T ^ {*}),",
+          "image_source": "images/page_78_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.527,
+            0.83,
+            0.59
+          ],
+          "content": "这就说明, 此时参数  $\\theta$  的 UMVUE, 在均方误差最小的准则下, 不是最优的. 另外, 由于均方误差平衡了方差与偏差的大小, 故在许多情况下都有很好的应用, 但其困难点在于估计类的确定."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.16,
+            0.618,
+            0.33,
+            0.637
+          ],
+          "level": 2,
+          "content": "2.1.3 有效估计"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.661,
+            0.829,
+            0.701
+          ],
+          "content": "从上小节内容可知, 有的 UMVUE 达到了 C-R 下界, 而有的则没有, 于是就有了有效估计的定义."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.708,
+            0.738,
+            0.725
+          ],
+          "content": "定义 2.1.5 (有效估计及效率) 设  $T(X)$  是  $g(\\theta)$  的一个 UE, 则称比值"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.394,
+            0.74,
+            0.559,
+            0.776
+          ],
+          "content": "e _ {n} = \\frac {[ g ^ {\\prime} (\\theta) ] ^ {2} / n I (\\theta)}{\\mathrm{Var} _ {\\theta} [ T (X) ]}",
+          "image_source": "images/page_78_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.79,
+            0.83,
+            0.83
+          ],
+          "content": "为 $T(X)$ 的效率. 如果 $e_n = 1$, 则称 $T(X)$ 为 $g(\\theta)$ 的有效估计. 如 $\\lim_{n \\to \\infty} e_n = 1$, 则称 $T(X)$ 为 $g(\\theta)$ 的渐近有效估计."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.836,
+            0.83,
+            0.875
+          ],
+          "content": "由此定义可知, 有效估计一定是 UMVUE, 但 UMVUE 不一定是有效估计. 另外, 有效估计一定要求总体分布及其自身都要满足 C-R 不等式定理中的条件."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.212,
+            0.882,
+            0.83,
+            0.923
+          ],
+          "content": "注 2.1.4 在文献中, 关于效率, 还有其他定义, 如 Pitman(皮特曼) 渐近相对效率; 关于有效估计, 还有 Bahadur(巴哈杜尔) 渐近有效估计等."
+        }
+      ]
+    },
+    {
+      "page_idx": 79,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.697,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": "2.1 几个常用的估计准则"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.89,
+            0.068,
+            0.91,
+            0.08
+          ],
+          "content": "67"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.122,
+            0.871,
+            0.161
+          ],
+          "content": "虽然下面讲述的得分函数与估计准则无关,但由于它在统计推断中发挥着非常重要的作用,且与 Fisher 信息量有关,故在这里加以叙述."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.203,
+            0.168,
+            0.427,
+            0.184
+          ],
+          "content": "定义 2.1.6 (得分函数) 称"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.423,
+            0.196,
+            0.614,
+            0.228
+          ],
+          "content": "S (\\boldsymbol {X}; \\theta) = \\frac {\\partial \\ln f (\\boldsymbol {X} ; \\theta)}{\\partial \\theta}",
+          "image_source": "images/page_79_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.166,
+            0.237,
+            0.862,
+            0.253
+          ],
+          "content": "为得分函数 (score function). 当  $X_{1}, X_{2}, \\cdots, X_{n}$  为来自总体 X 的独立同分布样本时,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.404,
+            0.265,
+            0.871,
+            0.305
+          ],
+          "content": "S (\\boldsymbol {X}; \\theta) = \\sum_ {i = 1} ^ {n} \\frac {\\partial \\ln f (X _ {i} ; \\theta)}{\\partial \\theta}. \\tag {2.1.15}",
+          "image_source": "images/page_79_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.203,
+            0.316,
+            0.484,
+            0.332
+          ],
+          "content": "如果样本独立同分布, 则可以证明"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.352,
+            0.348,
+            0.684,
+            0.366
+          ],
+          "content": "E _ {\\theta} [ S (\\boldsymbol {X}; \\theta) ] = 0, \\operatorname{Var} _ {\\theta} [ S (\\boldsymbol {X}; \\theta) ] = n I (\\theta),",
+          "image_source": "images/page_79_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.38,
+            0.19,
+            0.395
+          ],
+          "content": "且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.409,
+            0.392,
+            0.871,
+            0.425
+          ],
+          "content": "\\frac {1}{\\sqrt {n}} S (\\boldsymbol {X}; \\theta) \\xrightarrow {\\mathrm{d}} N (0, I (\\theta)). \\tag {2.1.16}",
+          "image_source": "images/page_79_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.431,
+            0.871,
+            0.47
+          ],
+          "content": "另外, 对于任一关于样本 X 和  $\\theta$  的函数  $T(X,\\theta)$ , 如满足定理 2.1.6 中的条件, 则有如下结论:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.295,
+            0.48,
+            0.871,
+            0.517
+          ],
+          "content": "E _ {\\theta} [ S (\\boldsymbol {X}) T (\\boldsymbol {X}; \\theta) ] = \\frac {\\partial}{\\partial \\theta} E _ {\\theta} [ T (\\boldsymbol {X}; \\theta) ] - E _ {\\theta} \\left[ \\frac {\\partial T (\\boldsymbol {X} ; \\theta)}{\\partial \\theta} \\right]. \\tag {2.1.17}",
+          "image_source": "images/page_79_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.166,
+            0.53,
+            0.29,
+            0.546
+          ],
+          "content": "由此等式可知:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.206,
+            0.553,
+            0.529,
+            0.571
+          ],
+          "content": "\\- 对 $g(\\theta)$ 的任一无偏估计 $T(\\pmb {X})$ ，都有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.451,
+            0.589,
+            0.647,
+            0.607
+          ],
+          "content": "E _ {\\theta} [ S (\\boldsymbol {X}) T (\\boldsymbol {X}) ] = g ^ {\\prime} (\\theta).",
+          "image_source": "images/page_79_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.206,
+            0.624,
+            0.719,
+            0.642
+          ],
+          "content": "\\- 对 $g(\\theta)$ 的任一有偏估计 $T(\\boldsymbol{X})$, 记 $E_{\\theta}(T) = g(\\theta) + b_{T}(\\theta)$, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.41,
+            0.655,
+            0.688,
+            0.688
+          ],
+          "content": "E _ {\\theta} [ S (\\boldsymbol {X}) T (\\boldsymbol {X}) ] = g ^ {\\prime} (\\theta) + \\frac {\\partial b _ {T} (\\theta)}{\\partial \\theta}.",
+          "image_source": "images/page_79_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.699,
+            0.871,
+            0.739
+          ],
+          "content": "在 C-R 不等式证明中, 我们主要用到了如下的 Cauchy-Schwarz 不等式: 如果  $T(\\boldsymbol{X})$  为  $g(\\theta)$  的一个无偏估计, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.287,
+            0.756,
+            0.749,
+            0.776
+          ],
+          "content": "\\mathrm{Cov} _ {\\theta} [ T (\\boldsymbol {X}), S (\\boldsymbol {X}) ] \\leqslant \\sqrt {\\mathrm{Var} _ {\\theta} [ T (\\boldsymbol {X}) ] \\mathrm{Var} _ {\\theta} [ S (\\boldsymbol {X}) ]}, \\forall \\theta \\in \\Theta .",
+          "image_source": "images/page_79_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.792,
+            0.873,
+            0.832
+          ],
+          "content": "如果 $g(\\theta)$ 以及得分函数 $S(\\mathbf{X};\\theta)$ 关于 $\\theta$ 的 $k$ 阶导数存在, 则在某些条件下 (类似于定理2.1.6中的条件), 取"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.323,
+            0.849,
+            0.714,
+            0.869
+          ],
+          "content": "\\tilde {S} (\\boldsymbol {X}, \\theta) = (S ^ {1} (\\boldsymbol {X}, \\theta), S ^ {2} (\\boldsymbol {X}, \\theta), \\dots , S ^ {k} (\\boldsymbol {X}, \\theta)) ^ {\\mathrm{T}},",
+          "image_source": "images/page_79_equation_21.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.886,
+            0.359,
+            0.902
+          ],
+          "content": "则可以用上述结论证明"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.401,
+            0.908,
+            0.871,
+            0.928
+          ],
+          "content": "\\mathrm{Var} _ {\\theta} [ T (\\boldsymbol {X}) ] \\geqslant \\boldsymbol {\\Delta} ^ {\\mathrm{T}} V ^ {- 1} (\\theta) \\boldsymbol {\\Delta}, \\tag {2.1.18}",
+          "image_source": "images/page_79_equation_23.jpg"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "created_at": "2026-05-30T23:42:17+08:00",
+      "producer_application": "jsPDF 2.4.0",
+      "page_count": 373,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 64,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 65,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 66,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 67,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 68,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 69,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 70,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 71,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 72,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 73,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 74,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 75,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 76,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 77,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 78,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 79,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

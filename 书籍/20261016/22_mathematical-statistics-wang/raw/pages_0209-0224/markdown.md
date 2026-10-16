@@ -1,0 +1,524 @@
+下面以  $m_{0}$  表示 m 个检验中的零假设是正确的检验的个数，并记  $m_{1}=m-m_{0}$  。令  $H_{0}=\{i:$  真实的  $H_{0i}\}$ ， $H_{1}=\{i:$  真实的  $H_{1i}\}$ ，用  $p_{1}, p_{2}, \cdots, p_{m}$  表示这 m 个检验的 p 值。
+
+此时, 控制一个检验的第一类错误概率  $\alpha$ , 比如 0.05, 意义并不大, 必须对全部检验统一来考虑. 我们需要新的准则以及针对新准则开发出确定拒绝域的方法. 这里我们仅用两个最常用的错误率准则, 也就是总体错误率和错误发现率为例进行阐述.
+
+## 4.3.2 总体错误率的控制
+
+第一类方法是考虑 family-wise error rate (FWER), 一般也称为总体错误率, 其定义就是错误拒绝任何一个零假设的概率.
+
+下面我们以例 4.3.2 中的多重比较问题来探讨如何选取临界值控制 FWER. 为方便讨论, 我们假设每个水平下的观测次数相等, 即  $n_{i}=t, i=1,2,\cdots,r, n=rt$ . 此时两样本均值检验统计量为
+
+$$
+T _ {i j} = \frac {\sqrt {t} (\bar {Y} _ {i .} - \bar {Y} _ {j .})}{\hat {\sigma} \sqrt {2}}, \tag {4.3.3}
+$$
+
+其中  $\bar{Y}_{i.}=\sum_{j=1}^{n_{i}}Y_{ij},\hat{\sigma}^{2}=(n-r)^{-1}\sum_{i=1}^{r}\sum_{j=1}^{n_{i}}(Y_{ij}-\bar{Y}_{i.})^{2},n=\sum_{i=1}^{r}n_{i}.$
+
+为控制该多重检验的FWER，我们需要寻找适当的临界值 $L$ 使得 $P(W) \leqslant \alpha$ 这里
+
+$$
+W = \bigcup_ {i <   j} \left\{\frac {\sqrt {t} | \bar {Y} _ {i .} - \bar {Y} _ {j .} |}{\hat {\sigma}} \geqslant L \right\}.
+$$
+
+注意到
+
+$$
+\begin{array}{l} P (W) = 1 - P \left(\bigcap_ {i <   j} \left\{\frac {\sqrt {t} | \bar {Y} _ {i .} - \bar {Y} _ {j .} |}{\hat {\sigma}} \leqslant L \right\}\right) \\ = 1 - P \left(\max _ {i <   j} \frac {\sqrt {t} | \bar {Y} _ {i .} - \bar {Y} _ {j .} |}{\hat {\sigma}} \leqslant L\right) \\ = P \left(\max _ {i <   j} \frac {\sqrt {t} | \bar {Y} _ {i .} - \bar {Y} _ {j .} |}{\hat {\sigma}} \geqslant L\right) \\ = P \left(\max _ {i <   j} \frac {\sqrt {t} | (\bar {Y} _ {i .} - \mu_ {i}) - (\bar {Y} _ {j .} - \mu_ {j}) |}{\hat {\sigma}} \geqslant L\right) \\ = P \left(\max _ {i} \frac {\sqrt {t} (\bar {Y} _ {i .} - \mu_ {i})}{\hat {\sigma}} - \min _ {i} \frac {\sqrt {t} (\bar {Y} _ {i .} - \mu_ {i})}{\hat {\sigma}} \geqslant L\right). \\ \end{array}
+$$
+
+由于在模型 (4.3.1) 下,
+
+$$
+\frac {\sqrt {t} (\bar {Y} _ {i .} - \mu_ {i})}{\hat {\sigma}} \sim t (n - r),
+$$
+
+因此, L 可选取为如下随机变量  $SR(r, n - r)$  分布的上  $\alpha$  分位数: 设  $T_{1}, T_{2}, \cdots, T_{r}$  为来自  $t(m)$  的独立同分布样本, 记其次序统计量为  $T_{(1)} \leqslant T_{(2)} \leqslant \cdots \leqslant T_{(r)}$ . 定义
+
+$$
+S R (r, m) = T _ {(r)} - T _ {(1)}. \tag {4.3.4}
+$$
+
+在文献中, $SR(r,m)$ 被称为Tukey学生化极差, 其分布称为学生化极差分布 (studentized range distribution).
+
+例 4.3.3 为研究四种防锈剂 (记  $A_{1}, A_{2}, A_{3}, A_{4}$ ) 的防锈能力, 现把 40 件同一厂家生产的大小、形状、质地相同的铁件随机分成四组, 每组 10 件, 随机分配防锈剂给每组铁件, 最后把涂好防锈剂的 40 件铁件放置到相同环境中. 一段时间后请 5 位专家对每一铁件的锈迹程度打分: 没有锈迹的 100 分, 全锈的 0 分. 每一铁件的 5 位专家打分的平均值如表 4.3.1 所示.
+
+表 4.3.1 例 4.3.3 中四种防锈剂的防锈能力分数
+
+| 序号 | $A_1$ | $A_2$ | $A_3$ | $A_4$ |
+| --- | --- | --- | --- | --- |
+| 1 | 43.9 | 89.8 | 68.4 | 36.2 |
+| 2 | 39.0 | 87.1 | 69.3 | 45.2 |
+| 3 | 46.7 | 92.7 | 68.5 | 40.7 |
+| 4 | 43.8 | 90.6 | 66.4 | 40.5 |
+| 5 | 44.2 | 87.7 | 70.0 | 39.3 |
+| 6 | 47.7 | 92.4 | 68.1 | 40.3 |
+| 7 | 43.6 | 86.1 | 70.6 | 43.2 |
+| 8 | 38.9 | 88.1 | 65.2 | 38.7 |
+| 9 | 43.6 | 90.8 | 63.8 | 40.9 |
+| 10 | 40.0 | 89.1 | 69.2 | 39.7 |
+
+请问四种防锈剂的防锈能力是否存在差异？如存在差异，哪种最好？(见茆诗松等(2012).)
+
+解 方差分析显示这四种防锈剂间存在显著差异. 另外, 它们的估计值分别为
+
+$$
+\hat {\mu} _ {1} = \bar {y} _ {1.} = 4 3. 1 3, \hat {\mu} _ {2} = \bar {y} _ {2.} = 8 9. 4 4, \hat {\mu} _ {3} = \bar {y} _ {3.} = 6 7. 9 5, \hat {\mu} _ {4} = \bar {y} _ {4.} = 4 0. 4 7,
+$$
+
+可见第二种防锈剂的防锈能力最强.
+
+下面应用上述多重比较方法检验两两间的差异如何. 此时, $r = 4$, $s = 10$, $n = 40$, $\hat{\sigma}^2 = 6.148$. 对于 $\alpha = 0.05$, 可知 $L = 3.82$, 故有
+
+$$
+\frac {\hat {\sigma}}{\sqrt {s}} L = \frac {\sqrt {6 . 1 4 8}}{\sqrt {1 0}} \times 3. 8 2 = 2. 9 9 5.
+$$
+
+而两两水平均值之差为
+
+$$
+\left| \bar {y} _ {1.} - \bar {y} _ {2.} \right| = 4 6. 3,
+$$
+
+$$
+| \bar {y} _ {1.} - \bar {y} _ {3.} | = 2 4. 8,
+$$
+
+$$
+\left| \bar {y} _ {1.} - \bar {y} _ {4.} \right| = 2. 6 6 <   2. 9 9 5,
+$$
+
+$$
+| \bar {y} _ {2.} - \bar {y} _ {3.} | = 2 1. 4 9,
+$$
+
+$$
+\left| \bar {y} _ {2.} - \bar {y} _ {4.} \right| = 4 8. 9 7,
+$$
+
+$$
+| \bar {y} _ {3.} - \bar {y} _ {4.} | = 2 7. 4 8,
+$$
+
+故由多重比较知, 仅接受  $H_{0}^{14}$ , 即可以把四种防锈剂分为三类: 第一类为  $A_{2}$ ; 第二类为  $A_{3}$ ; 第三类为  $A_{1}, A_{4}$ .
+
+对于本问题来说, 在最理想的假设下, 即 r 个水平所对应的样本相互独立以及正态分布情形下, 我们可以有严格控制 FWER 等于  $\alpha$  的方法. 是否有更加一般化的控制 FWER 的手段呢? 著名的 Bonferroni (邦费罗尼) 方法就是最常用、最简单的用于控制检验 FWER 的工具, 即
+
+$$
+\text {如果} p _ {i} <   \alpha / m, \text {则拒绝原假设} H _ {0 i}.
+$$
+
+我们有如下的定理.
+
+定理 4.3.1 使用 Bonferroni 方法, 错误地拒绝任何一个零假设的概率小于或等于  $\alpha$ .
+
+证明 令 R 表示至少有一个零假设被错误拒绝的事件, 而  $R_{i}$  表示第 i 个零假设被错误拒绝的事件. 则由经典的 Bonferroni 不等式, 我们有
+
+$$
+P (R) = P \left(\bigcup_ {i = 1} ^ {m} R _ {i}\right) \leqslant \sum_ {i = 1} ^ {m} P (R _ {i}) = \sum_ {i = 1} ^ {m} \frac {\alpha}{m} = \alpha .
+$$
+
+注意到, Bonferroni 方法不要求各个检验是独立的, 我们仅需要知道每个检验统计量的零分布即可, 这在实际使用上是非常方便的. 控制 FWER 还有一种改进的方法, 其是序贯进行的, 被称为 Holm (霍尔姆) 方法, 其检验过程如下:
+
+(1) 如果  $p_{(1)} \leqslant \alpha / m$ ，则拒绝  $H_{(1)}$ ，转到第二步；否则接受  $H_{(1)}, H_{(2)}, \cdots, H_{(m)}$  并停止.
+(2) 如果  $p_{(i)} \leqslant \alpha / (m - i + 1)$ ，则拒绝  $H_{(i)}$ ，转到第  $i + 1$  步；否则接受  $H_{(i)}, \cdots, H_{(m)}$  并停止.
+
+当 $p_{(i)}$ 超过临界值 $\alpha_{i} = \alpha / (m - i + 1)$ 时, Holm 方法就停止了. 可以看出, 该方法比 Bonferroni 方法具有更高的势, 这是因为 Bonferroni 方法中每个 $p$ 值的临界值都是 $\alpha / m$. 下面我们证明该方法的有效性.
+
+记 $i_0$ 是所有零假设中 $p$ 值最小的所对应的秩, 此处的秩指数据从小到大排序后所对应的次序, 也就是在Holm方法中我们会在第 $i_0$ 步第一次遇到真实的零假设. 显然有,
+
+$$
+i _ {0} \leqslant m - m _ {0} + 1.
+$$
+
+也就是说, 在 Holm 方法的步骤中第一个真实的零假设会在最多  $m - m_{0}$  个假设前遇到.
+注意到, 我们做出一个错误的拒绝当且仅当
+
+$$
+p _ {(1)} \leqslant \frac {\alpha}{m}, p _ {(2)} \leqslant \frac {\alpha}{m - 1}, \dots , p _ {(i _ {0})} \leqslant \frac {\alpha}{m - i _ {0} + 1}.
+$$
+
+这就意味着
+
+$$
+p _ {(i _ {0})} \leqslant \frac {\alpha}{m - i _ {0} + 1} \leqslant \frac {\alpha}{m _ {0}}.
+$$
+
+因此, 错误拒绝的概率就被下式所控制:
+
+$$
+P \left(\min _ {i \in \mathcal {H} _ {0}} p _ {i} \leqslant \frac {\alpha}{m _ {0}}\right) \leqslant \sum_ {i \in \mathcal {H} _ {0}} P (p _ {i} \leqslant \alpha / m _ {0}) = \alpha .
+$$
+
+![](images/page_211_image_8.jpg)
+
+## 4.3.3 错误发现率的控制
+
+在例 4.3.1 中, 如果我们使用考虑控制 FWER 低于  $\alpha = 0.05$  并使用 Bonferroni 方法, 则对每一个检验我们等价于需要使用显著性水平  $0.05 / 12256 \approx 4 \times 10^{-6}$ . 因此得到, 对于任何一个基因, 只有其 p 值小于  $4 \times 10^{-6}$ , 我们才能说该基因在两组患者中有不同的表达水平.
+
+显然, 控制 FWER, 或者说 Bonferroni 方法在这样同时做成千上万个检验的时候是非常保守的, 这是因为它试图使你不可能做出一次错误的拒绝. 即便使用 Holm 改进方法, 当 m 非常大时, 改进非常有限. 此时, 我们可能需要换个思路: 保守不是因为检验统计量不好, 而是我们的这个 “至少错误拒绝一个” 的要求在实际中可能太过苛刻了. 由此, 在 Benjamini et al.(1995) 中 Benjamini 和 Hochberg 提出了一个更加合理的策略, 即控制所谓的 false discovery rate (FDR), 一般称之为错误发现率, 其定义是在所有拒绝的检验中错误拒绝比例的期望.
+
+假设给定一个临界值, 我们拒绝掉所有 p 值小于该临界值的零假设. 所有的检验可以被划分在如表 4.3.2 中.
+
+表 4.3.2 判断表
+
+|  | $H_0$没有被拒绝 | $H_0$被拒绝 | 总和 |
+| --- | --- | --- | --- |
+| $H_0$是正确的 | U | V | $m_0$ |
+| $H_0$是错误的 | T | S | $m_1$ |
+| 总和 | m-R | R | m |
+
+此时, 我们定义错误拒绝比例 (false discovery proportion, 简记为 FDP) 为
+
+$$
+\mathrm{FDP} = \frac {V}{R} I (R > 0).
+$$
+
+注意到这个 FDP 是一个随机变量, 其依赖于  $p_{1}, p_{2}, \cdots, p_{m}$ , 代表了所有拒绝的决策中错误的比例, 而错误发现率就是其期望, 即  $\mathrm{FDR} = E(\mathrm{FDP})$ . 使用这样的准则, 例如, 在一次性检验成千上万的假设时, 是合理的, 因为我们很多时候可以接受一定数量的拒真错误 (也就是假阳性), 而找到更多的真实信号 (备择假设) 从而带来更多的收益. 当然, 这并不意味着 FWER 不再有用, 当检验个数较少, 或者对拒真错误的风险较为敏感时 (比如确定几种不同的治疗方案), 统计工作者需要根据问题来选定相应的准则.
+
+FDR 这一概念在著名论文 Benjamini et al.(1995) 中被提出, 由于其简单直观, 在诸多的大数据推断问题中体现出了强大的功效, 因此很快成了一个标准的多重检验度量, 获得了极高的引用 (该论文是迄今为止统计科学史上引用率最高的论文). 尽管经过了二十多年的发展, 已有大量的 FDR 理论分析和控制方法, 但该领域仍是现代统计的一个非常热门的方向, 新思想、新方法仍然层出不穷.
+
+这里的核心问题有两个, 一是如何选取临界值, 从而控制 FDR; 二是如何利用 m 个检验的 (其他) 信息, 如相关性等, 来提高检验的功效. 在这里我们仅探讨最经典的 Benjamini-Hochberg(简称 BH) 控制方法, 其在今天仍是大家最常用的、最标准的方法. BH 检验过程如下:
+
+(1) 令  $p_{(1)} < p_{(2)} < \cdots < p_{(m)}$  表示 p 值  $p_{1}, p_{2}, \cdots, p_{m}$  的次序统计量.
+(2) 定义 $\ell_i = i\alpha / (mC_m)$, $R = \max \{i : p_{(i)} < \ell_i\}$, 其中如果 $m$ 个检验独立则令 $C_m = 1$; 否则取 $C_m = \sum_{i=1}^{m}(1/i)$.
+(3) 令  $T = p_{(R)}$ ; 此时 T 就是 BH 方法的临界值.
+(4) 拒绝所有满足  $p_{i} \leqslant T$  的  $H_{0i}$ .
+
+我们有如下结论.
+
+定理 4.3.2 假设 p 个检验独立. 使用 BH 方法, 无论  $H_{0}$  正确的个数是多少, 也无论  $H_{0}$  错误的时候 p 值的分布如何, 我们总是有
+
+$$
+\mathrm{FDR} = E (\mathrm{FDP}) = \frac {m _ {0}}{m} \alpha \leqslant \alpha .
+$$
+
+关于该结论的证明以及其各种推广在最近二十年的文献中有很多讨论, 这里我们采用在 FDR 文献中常用的 “leave-one-out” 方法.
+
+证明 当 $m_0 = 0$ 时结论自然成立, 我们假设 $m_0 \geqslant 1$. 定义
+
+$$
+V _ {i} = I (H _ {0 i} \text {被拒绝}), i \in \mathcal {H} _ {0},
+$$
+
+因此我们可表示 FDP 为
+
+$$
+\mathrm{FDP} = \sum_ {i \in \mathcal {H} _ {0}} \frac {V _ {i}}{R \vee 1}.
+$$
+
+我们将证明 $E[V_i / (R\vee 1)] = \alpha /n.$ 如果该式成立，则立即有
+
+$$
+\mathrm{FDR} = \sum_ {i \in \mathcal {H} _ {0}} E \left(\frac {V _ {i}}{R \vee 1}\right) = \sum_ {i \in \mathcal {H} _ {0}} \frac {\alpha}{n} = \frac {n _ {0}}{n} \alpha .
+$$
+
+由定义有 $\frac{V_i}{R\vee 1} = \sum_{k = 1}^{m}\frac{V_iI(R = k)}{k}$. 当 $R = 0$ 时, 我们得到 $V_{i} / (R\vee 1) = 0$, 则结论自然成立, 下面考虑 $R \neq 0$.
+
+注意到在 BH 方法中的两个事实:
+
+- 当共有 $k$ 个拒绝时, $H_{0i}$ 被拒绝当且仅当 $p_i \leqslant \alpha k / m$. 因此, $V_i = I(p_i \leqslant \alpha k / m)$.
+- 假设 $p_i \leqslant \alpha k / m$, 我们将 $p_i$ 的值置为零. 将此时的拒绝总数记为 $R(p_i \to 0)$. 此时, 这个值精确等于 $R$, 因为, 我们置零这一操作仅影响前 $k$ 个 $p$ 值的顺序, 所有这 $k$ 个值仍然低于临界值 $\alpha k / m$. 另一方面, 如果 $p_i > \alpha k / m$, 则我们不拒绝 $p_i$, 因此 $V_i = 0$. 所以我们总是有 $V_i I(R = k) = V_i I(R(p_i \to 0) = k)$.
+
+基于如上事实, 取关于  $F_{i}=\{p_{1},\cdots,p_{i-1},p_{i+1},\cdots,p_{m}\}$  的条件期望, 我们有
+
+$$
+\begin{array}{l} E \left(\frac {V _ {i}}{R \vee 1} \Big | \mathcal {F} _ {i}\right) = \sum_ {k = 1} ^ {m} \frac {E \left[ I (p _ {i} \leqslant \alpha k / m) I (R (p _ {i} \rightarrow 0) = k) \mid \mathcal {F} _ {i} \right]}{k} \\ = \sum_ {k = 1} ^ {m} \frac {I (R (p _ {i} \to 0) = k) \alpha k / m}{k}, \\ \end{array}
+$$
+
+其中第二个等式是因为在给定  $F_{i}$  和  $p_{i}=0$  下  $I(R(p_{i}\rightarrow0)=k)$  是确定的. 这里我们也用到了  $p_{i}\sim U(0,1)$  且相互独立.
+
+最后, 我们有结论
+
+$$
+E \left(\frac {V _ {i}}{R \vee 1} \Big | \mathcal {F} _ {i}\right) = \frac {\alpha}{m} \sum_ {k = 1} ^ {m} I (R (p _ {i} \to 0) = k) = \frac {\alpha}{m}.
+$$
+
+这里利用了事实  $\sum_{k=1}^{m} I(R(p_{i} \to 0) = k) = 1$ . 这是因为当我们置一个真实零假设的  $p_{i}$  为零时，则至少做了一次错误拒绝——我们总是会拒绝  $H_{0i}$ . 因此， $R(p_{i} \to 0) \geqslant 1$ ，并且  $R(p_{i} \to 0)$  取 [1, m] 中的一个值. □
+
+注意到, 上面的标准 BH 方法的有效性是基于所有真实零假设对应的 p 值是独立这一前提的. 事实上, 当这些 p 值的相关性不是很强时, 可以证明相应的 FDR 是能够被渐近地控制在  $\alpha$  水平的  $(m \to \infty)$ , 参见 Storey et al.(2004). 对于有限样本的情形, 就需要更为具体的相关性假设. 这里介绍文献中著名的 PRDS 假设. 下面的叙述中我们用  $x = (x_{1}, x_{2}, \cdots, x_{n}) \geqslant y = (y_{1}, y_{2}, \cdots, y_{n})$  表示  $x_{i} \geqslant y_{i}, \forall i$ .
+
+定义 4.3.1 如果  $x \in D$  且  $y \geqslant x$  意味着  $y \in D$ ，则集合  $D \in R^{m}$  被称作是单增的.
+
+定义 4.3.2 如果对于任意单增集合和所有的  $i \in G_{0}$ ,  $P((X_{1}, X_{2}, \cdots, X_{m}) \in D \mid X_{i} = x)$  是关于 x 单增的，则我们称随机向量  $\boldsymbol{X} = (X_{1}, X_{2}, \cdots, X_{m})^{\mathrm{T}}$  是在  $G_{0}$  上 PRDS (positive regression dependence on each of a subset) 的.
+
+如果 $X$ 是在 $\mathcal{H}_0$ 上PRDS的, 则基于样本均值构造的 $t$ 统计量所对应的 $p$ 值也是PRDS的.
+
+我们看一个经典的 PRDS 例子.
+
+命题 4.3.1 假设  $X \sim N_{m}(\mu, \Sigma)$ . 如果对  $i \in H_{0}$  和所有的 j 都有  $\sigma_{ij} > 0$ , 则 X 是在  $H_{0}$  上 PRDS 的.
+
+证明 令  $\boldsymbol{X}_{1}=(X_{1},X_{2},\cdots,X_{m-1})$ ，注意到
+
+$$
+\boldsymbol {X} = \binom{\boldsymbol {X} _ {1}}{X _ {m}}, \quad \Sigma = \left( \begin{array}{c c} \Sigma_ {1 1} & \Sigma_ {1 2} \\ \Sigma_ {2 1} & \Sigma_ {2 2} \end{array} \right),
+$$
+
+$$
+(\boldsymbol {X} _ {1} \mid X _ {m} = x) \sim N _ {m - 1} \left(\boldsymbol {\mu} _ {1} + \Sigma_ {1 2} \Sigma_ {2 2} ^ {- 1} \left(x - \boldsymbol {\mu} _ {2}\right), \Sigma_ {1 1 \cdot 2}\right),
+$$
+
+$$
+\Sigma_ {1 1 \cdot 2} = \Sigma_ {1 1} - \Sigma_ {1 2} \Sigma_ {2 2} ^ {- 1} \Sigma_ {2 1},
+$$
+
+注意到协方差不依赖于 x，因此如果  $\Sigma_{12}$  是正定的，则上面的条件分布是关于 x (随机) 单增的。因此，对于非降函数  $f, x \leqslant x'$  意味着
+
+$$
+E \left[ f (X) \mid X _ {m} = x \right] \leqslant E \left[ f (X) \mid X _ {m} = x ^ {\prime} \right].
+$$
+
+取 f 为单增集合的示性函数则可得到结论.
+
+我们有如下在 PRDS 假设下的 FDR 控制结论.
+
+定理 4.3.3 如果检验统计量的联合分布 (或者 p 值的联合分布) 是在  $H_{0}$  上 PRDS 的, 则 BH 方法控制 FDR 在  $\alpha \frac{m_{0}}{m}$  水平上.
+
+证明 回顾 $\mathrm{FDR} = E\left(\sum_{i\in \mathcal{H}_0}\frac{V_i}{R\vee 1}\right)$. 下面我们证明 $E[V_i / (R\vee 1)]\leqslant \alpha /m$. 令 $\alpha_{k} = \alpha k / m,$ 我们有
+
+$$
+\begin{array}{l} \frac {V _ {i}}{R \vee 1} = \sum_ {k \geqslant 1} \frac {I (p _ {i} \leqslant \alpha_ {k}) I (R = k)}{k} \\ = \sum_ {k \geqslant 1} \frac {I \left(p _ {i} \leqslant \alpha_ {k}\right) \left[ I \left(R \leqslant k\right) - I \left(R \leqslant k - 1\right) \right]}{k} \\ = \sum_ {k = 1} ^ {m - 1} \left[ \frac {I (p _ {i} \leqslant \alpha_ {k})}{k} - \frac {I (p _ {i} \leqslant \alpha_ {k + 1})}{k + 1} \right] I (R \leqslant k) + \frac {I (R \leqslant m) I (p _ {i} \leqslant \alpha)}{m}. \\ \end{array}
+$$
+
+注意到 $E\left[\frac{I(R \leqslant m)I(p_i \leqslant \alpha)}{m}\right] = \frac{\alpha}{m}$ 总是成立的. 对于每个 $k$, 我们有
+
+$$
+E \left\{\left[ \frac {I (p _ {i} \leqslant \alpha_ {k})}{k} - \frac {I (p _ {i} \leqslant \alpha_ {k + 1})}{k + 1} \right] I (R \leqslant k) \right\}
+$$
+
+$$
+\begin{array}{l} = \frac {P (p _ {i} \leqslant \alpha_ {k} , R \leqslant k)}{k} - \frac {P (p _ {i} \leqslant \alpha_ {k + 1} , R \leqslant k)}{k + 1} \\ = \frac {P (R \leqslant k \mid p _ {i} \leqslant \alpha_ {k}) P (p _ {i} \leqslant \alpha_ {k})}{k} - \frac {P (R \leqslant k \mid p _ {i} \leqslant \alpha_ {k + 1}) P (p _ {i} \leqslant \alpha_ {k + 1})}{k + 1} \\ \leqslant \frac {P (R \leqslant k \mid p _ {i} \leqslant \alpha_ {k + 1}) P (p _ {i} \leqslant \alpha_ {k})}{k} - \frac {P (R \leqslant k \mid p _ {i} \leqslant \alpha_ {k + 1}) P (p _ {i} \leqslant \alpha_ {k + 1})}{k + 1} = 0. \\ \end{array}
+$$
+
+这里的不等式就利用了 PRDS 性质: 对于 $t \leqslant t'$, 如果 $i$ 属于 $\mathcal{H}_0$ 且 $D$ 是单增的, 则 $P(D \mid p_i \leqslant t) \leqslant P(D \mid p_i \leqslant t')$. 事实上, $\{R \leqslant k\}$ 确实是一个单增集合, 这是因为当 $p_i$ 增大, $R$ 就会降低 (我们将会拒绝更少的假设).
+
+最后, 我们讨论在不对相关性做任何假设下, 如何调整 BH 方法使其仍然能够控制 FDR.
+
+命题 4.3.2 当检验之间存在相关性时, BH 方法的 FDR 水平上界为  $\alpha \cdot a(m) \cdot \frac{m_{0}}{m}$ , 这里  $a(m) = 1 + 1/2 + 1/3 + \cdots + 1/m \approx \ln m + 0.577$ .
+
+证明 回顾 $\mathrm{FDP} = \sum_{i\in \mathcal{H}_0}\frac{V_i}{R\vee 1}$. 如果我们证明对于任意的真实零假设都有
+
+$$
+E \left(\frac {V _ {i}}{R \vee 1}\right) \leqslant \frac {\alpha}{m} a (m),
+$$
+
+则 $\mathrm{FDR}\leqslant \alpha \cdot a(m)\cdot \frac{m_0}{m}.$
+
+令  $\alpha_{k}=\alpha k/m,$  我们有
+
+$$
+\begin{array}{l} \frac {V _ {i}}{1 \vee R} = \sum_ {k = 1} ^ {m} \frac {I (p _ {i} \leqslant \alpha_ {k}) I (R = k)}{k} \\ = \sum_ {k = 1} ^ {m} \sum_ {\ell = 1} ^ {k} \frac {I \left(p _ {i} \in (\alpha_ {\ell - 1} , \alpha_ {\ell})\right) I (R = k)}{k} \\ = \sum_ {\ell = 1} ^ {m} \sum_ {k \geqslant \ell} ^ {m} \frac {I (R = k)}{k} I \left(p _ {i} \in (\alpha_ {\ell - 1}, \alpha_ {\ell})\right) \\ = \sum_ {\ell = 1} ^ {m} \frac {I (R \geqslant \ell)}{R} I \left(p _ {i} \in (\alpha_ {\ell - 1}, \alpha_ {\ell})\right) \\ \leqslant \sum_ {\ell = 1} ^ {m} \frac {1}{\ell} I \left(p _ {i} \in (\alpha_ {\ell - 1}, \alpha_ {\ell})\right). \\ \end{array}
+$$
+
+取期望后就可以得到结论.
+
+由该命题可知, 当没有任何相关性信息且对有限样本下的 FDR 控制要求较为严格时, 我们可以在 BH 方法中用  $\alpha/a(m)$  取代  $\alpha$  来进行检验, 此时相应的 FDR 被控制在  $\alpha$  以下. 当然, 这是个保守的策略, 这再次体现了统计学中的 “平衡”——精确性和一般性之间总是要进行一定的 “妥协”.
+
+## 习题四
+
+1. 如果 $X = (X_{1}, X_{2}, X_{3})^{\mathrm{T}} \sim N_{3}(\pmb{\mu}, \Sigma)$，且
+
+$$
+\Sigma = \left( \begin{array}{c c c} 4 & 1 & 0 \\ 1 & 3 & 0 \\ 0 & 0 & 2 \end{array} \right),
+$$
+
+则 $X_{1}$ 与 $X_{2}$ 是否相互独立？ $(X_{1},X_{2})$ 与 $X_{3}$ 是否独立？
+
+2. 如果 $A$ 为 $p \times p$ 对称常数矩阵, $\mathbf{X} \sim N_p(\boldsymbol{\mu}, \Sigma)$, 证明:
+
+$$
+\mathrm{Cov} (\boldsymbol {X}, \boldsymbol {X} ^ {\mathrm{T}} A \boldsymbol {X}) = 2 \Sigma A \boldsymbol {\mu}. \tag {4.1}
+$$
+
+3. 考虑一个多元正态分布 $N_{3}(\pmb{\mu}, \Sigma)$, 请用矩阵语言 $A\pmb{\mu} = \pmb{a}$ 叙述假设 $H_{0}: \mu_{1} = \mu_{2} = \mu_{3}$.
+
+4. 模拟一个具有  $\boldsymbol{\mu}=\begin{pmatrix}1\\2\end{pmatrix}$  和  $\Sigma=\begin{pmatrix}1&0.5\\0.5&2\end{pmatrix}$  的正态样本, 首先在  $\Sigma$  已知的情况下, 然后在  $\Sigma$  未知的情况下, 检验  $H_{0}:2\mu_{1}-\mu_{2}=0.2$ .
+
+5. 假设  $X_{1}, X_{2}, \cdots, X_{n}$  是从  $N_{p}(\boldsymbol{\mu}, \Sigma)$  总体中抽取的独立同分布样本. 在  $\Sigma$  未知且  $\mu = \mu_{0}$  的条件下, 证明对数似然函数的最大值为
+
+$$
+\ell_ {0} ^ {*} = \ell \left(\boldsymbol {\mu} _ {0}, \hat {\Sigma} + \boldsymbol {d} \boldsymbol {d} ^ {\mathrm{T}}\right), \quad \boldsymbol {d} = \bar {\boldsymbol {x}} - \boldsymbol {\mu} _ {0}.
+$$
+
+6. 假设  $X_{1}, X_{2}, \cdots, X_{n}$  是从  $N_{p}(\boldsymbol{\mu}, \Sigma)$  总体中抽取的独立同分布样本，并考虑在  $\Sigma$  未知的条件下检验  $H_{0}: \mu = \mu_{0} \leftrightarrow H_{1}: \mu \neq \mu_{0}$  。证明似然比检验的统计量等于
+
+$$
+- 2 \ln \lambda = n \ln \left(1 + \boldsymbol {d} ^ {\mathrm{T}} \hat {\Sigma} ^ {- 1} \boldsymbol {d}\right), \quad \boldsymbol {d} = \bar {\boldsymbol {X}} - \boldsymbol {\mu} _ {0}.
+$$
+
+7. 考虑 $X \sim N_3(\mu, \Sigma)$. 一个大小为 $n = 10$ 的独立同分布样本给出:
+
+$$
+\bar {\pmb {X}} = (1, 0, 2) ^ {\mathrm{T}} \quad \text {和} \quad \hat {\Sigma} = \left( \begin{array}{c c c} {{3}} & {{2}} & {{1}} \\ {{2}} & {{3}} & {{1}} \\ {{1}} & {{1}} & {{4}} \end{array} \right).
+$$
+
+(1) 计算  $\mu_{1}, \mu_{2}$  和  $\mu_{3}$  的同时置信区间.
+(2) 我们可以断言 $\mu_{1}$ 是 $\mu_{2}$ 和 $\mu_{3}$ 的平均值吗?
+
+8. 假设  $\boldsymbol{X} \sim N_{2}(\boldsymbol{\mu}, \Sigma)$ ，其中  $\Sigma = \begin{pmatrix} 2 & -1 \\ -1 & 2 \end{pmatrix}$ ，我们有一个大小为 n = 6 的独立同分布样本，根据其计算得到了  $\bar{\boldsymbol{X}}^{\mathrm{T}} = \left(1, \frac{1}{2}\right)$ 。解决以下检验问题 ( $\alpha = 0.05$ ):
+
+(1) $H_0: \boldsymbol{\mu} = \left(2, \frac{2}{3}\right)^{\mathrm{T}} \leftrightarrow H_1: \boldsymbol{\mu} \neq \left(2, \frac{2}{3}\right)^{\mathrm{T}}$.
+(2) $H_0: \mu_1 + \mu_2 = \frac{7}{2} \leftrightarrow H_1: \mu_1 + \mu_2 \neq \frac{7}{2}$.
+(3) $H_0: \mu_1 - \mu_2 = \frac{1}{2} \leftrightarrow H_1: \mu_1 - \mu_2 \neq \frac{1}{2}$.
+(4) $H_0: \mu_1 = 2 \leftrightarrow H_1: \mu_1 \neq 2$.
+
+对于每一种情况, 计算拒绝域.
+
+9. 同习题 8 的设定, 但  $\Sigma$  未知且样本协方差矩阵为  $\hat{\Sigma} = \begin{pmatrix} 2 & -1 \\ -1 & 2 \end{pmatrix}$ , 比较结果.
+
+10. 考虑来自两个二元正态总体的两个独立的同分布样本, 每个样本大小为 10, 从样本计算的结果如下:
+
+$$
+\bar {\boldsymbol {X}} _ {1} = (3, 1) ^ {\mathrm{T}}; \quad \bar {\boldsymbol {X}} _ {2} = (1, 1) ^ {\mathrm{T}};
+$$
+
+$$
+\hat {\Sigma} _ {1} = \left( \begin{array}{c c} 4 & - 1 \\ - 1 & 2 \end{array} \right); \quad \hat {\Sigma} _ {2} = \left( \begin{array}{c c} 2 & - 2 \\ - 2 & 4 \end{array} \right).
+$$
+
+对以下假设检验提供解决方案:
+
+(1) $H_0: \mu_1 = \mu_2 \leftrightarrow H_1: \mu_1 \neq \mu_2$.
+(2) $H_0: \mu_{11} = \mu_{21} \leftrightarrow H_1: \mu_{11} \neq \mu_{21}$.
+(3) $H_0: \mu_{12} = \mu_{22} \leftrightarrow H_1: \mu_{12} \neq \mu_{22}$.
+
+比较这些解决方案.
+
+11. 假设  $X \sim N_{p}(\boldsymbol{\mu}, \Sigma)$ ，其中  $\Sigma$  未知.
+
+(1) 导出用于检验 p 个分量是否独立的对数似然比检验, 即  $H_{0}: \Sigma$  是对角矩阵.
+(2) 假设 $\Sigma$ 是对角矩阵 (所有变量都是独立的). 能否导出针对 $H_0: \mu = \mu_0$ 的对立假设 $H_1: \mu \neq \mu_0$ 的渐近检验? 这与对每个 $\mu_j$ 进行的 $p$ 个独立的单变量 $t$ 检验相比如何?
+(3) 提供一个检验 p 个均值相等的渐近检验的简易导出方法. 将此与简单的方差分析 (ANOVA) 比较.
+
+12. Olkin (奥尔金) 和 Vaeth (维斯) (1981) 观察了在一天中三个不同时间点, 遵循不同饮食的两组患者的血浆柠檬酸浓度的变化. (患者在平衡设计下随机分配到每组, $n_1 = n_2 = 5$). 数据集在表 4.1 中给出, 检验两组的血浆柠檬酸浓度曲线是否平行变化.
+
+13. 在 30 个地块中测量小麦产量, 这些地块随机分配给三个使用三种不同肥料 A, B 和 C 处理的批次. 数据集在表 4.2 中给出, 利用习题 11, 完成以下要求:
+
+(1) 测试三列数据之间的独立性.
+(2) 检验  $\boldsymbol{\mu}=(2,6,4)^{\mathrm{T}}$  并将此与三个单变量 t 检验进行比较.
+
+(3) 使用简单的方差分析 (ANOVA) 和  $\chi^{2}$  近似测试是否  $\mu_{1} = \mu_{2} = \mu_{3}$ .
+
+表 4.1 血浆柠檬酸浓度
+
+<table><tr><td>组别</td><td>8:00</td><td>11:00</td><td>15:00</td></tr><tr><td rowspan="5">I</td><td>125</td><td>137</td><td>121</td></tr><tr><td>144</td><td>173</td><td>147</td></tr><tr><td>105</td><td>119</td><td>125</td></tr><tr><td>151</td><td>149</td><td>128</td></tr><tr><td>137</td><td>139</td><td>109</td></tr><tr><td rowspan="5">II</td><td>93</td><td>121</td><td>107</td></tr><tr><td>116</td><td>135</td><td>106</td></tr><tr><td>109</td><td>83</td><td>100</td></tr><tr><td>89</td><td>95</td><td>83</td></tr><tr><td>116</td><td>128</td><td>100</td></tr></table>
+
+表 4.2 小麦产量
+
+| 肥料 A | 肥料 B | 肥料 C |
+| --- | --- | --- |
+| 4 | 6 | 2 |
+| 3 | 7 | 1 |
+| 2 | 7 | 1 |
+| 5 | 5 | 1 |
+| 4 | 5 | 3 |
+| 4 | 5 | 4 |
+| 3 | 8 | 3 |
+| 3 | 9 | 3 |
+| 3 | 9 | 2 |
+| 1 | 6 | 2 |
+
+14. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体  $N_{p}(\boldsymbol{\mu}, \Sigma)$  的独立同分布样本, 其中
+
+$$
+\Sigma = \sigma^ {2} \left( \begin{array}{c c c c} 1 & \rho & \dots & \rho \\ \rho & 1 & \dots & \rho \\ \vdots & \vdots & & \vdots \\ \rho & \rho & \dots & 1 \end{array} \right).
+$$
+
+令 $Q_{H} = \sum_{j = 1}^{p}\left(\bar{X}_{.j} - \bar{X}_{..}\right)^{2},Q_{E} = \sum_{i = 1}^{n}\sum_{j = 1}^{p}\left(X_{ij} - \bar{X}_{i.} - \bar{X}_{.j} + \bar{X}_{..}\right)^{2}$ ，其中 $X_{ij}$ 为
+
+$X_{i}$  的第 j 个元素.证明:检验  $H_{0}:\mu_{1}=\mu_{2}=\cdots=\mu_{p}$  可用统计量  $F=(n-1)Q_{H}/Q_{E}$ ，当  $H_{0}$  为真时  $F\sim F(p-1,(n-1)(p-1))$ .
+
+15. 表 4.3 的数据为 38 个人的体重和身高, 试检验假设  $H_{0} : \boldsymbol{\mu} = (63.64, 1615.38)^{\mathrm{T}}$ .
+
+表 4.3 体重、身高数据
+
+| 体重/kg | 71.0 | 56.5 | 56.0 | 61.0 | 65.0 | 62.0 | 53.0 | 53.0 | 65.0 | 71.0 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 身高/mm | 1 629 | 1 569 | 1 561 | 1 619 | 1 566 | 1 639 | 1 494 | 1 568 | 1 610 | 1 572 |
+| 体重/kg | 65.0 | 57.0 | 66.5 | 59.1 | 64.0 | 69.5 | 64.0 | 56.5 | 60.2 | 55.0 |
+| 身高/mm | 1 540 | 1 530 | 1 622 | 1 486 | 1 578 | 1 645 | 1 648 | 1 521 | 1 534 | 1 536 |
+| 体重/kg | 57.0 | 55.0 | 57.0 | 58.0 | 59.5 | 61.0 | 57.0 | 57.5 | 70.0 | 64.0 |
+| 身高/mm | 1 547 | 1 505 | 1 473 | 1 538 | 1 513 | 1 653 | 1 566 | 1 580 | 1 630 | 1 640 |
+| 体重/kg | 74.0 | 72.0 | 62.5 | 68.0 | 63.4 | 68.0 | 69.0 | 73.0 |  |  |
+| 身高/mm | 1 647 | 1 620 | 1 637 | 1 528 | 1 647 | 1 605 | 1 625 | 1 615 |  |  |
+
+16. (1) 测量了 35 只雌性青蛙的头骨长和宽的数据后, 得到下面的统计量:
+
+$$
+\bar {\boldsymbol {X}} = \binom{2 2. 8 6 0}{2 4. 3 9 7}, \quad S _ {1} = \left( \begin{array}{c c} 1 7. 1 7 8 & 1 9. 7 1 0 \\ 1 9. 7 1 0 & 2 3. 7 1 0 \end{array} \right),
+$$
+
+检验假设  $H_{0}:\mu_{1}=\mu_{2}.$
+
+(2) 对 14 只雄性青蛙进行同样的测量得到统计量
+
+$$
+\bar {\boldsymbol {X}} = \binom{2 1. 8 2 1}{2 2. 8 4 3}, \quad S _ {2} = \left( \begin{array}{c c} 1 7. 1 5 9 & 1 7. 7 3 1 \\ 1 7. 7 3 1 & 1 9. 2 7 3 \end{array} \right),
+$$
+
+检验假设  $H_{0}:\mu_{1}=\mu_{2}$ .
+
+(3) 求上面数据综合起来后的协方差矩阵，并检验雄性和雌性青蛙是否相同 $(\mu_{1}=\mu_{2})$ .
+
+17. 为了研究某城市男性高中学生吸烟问题, 随机抽取了 300 名高中男生, 调查每天吸烟量, 结果如表 4.4 所示.
+
+表 4.4 吸烟数据
+
+| 吸烟量 | 不吸烟 | 少量 (1~4支) | 中等 (5~10支) | 严重 (10支以上) |
+| --- | --- | --- | --- | --- |
+| 人数 | 168 | 85 | 30 | 17 |
+
+试对这四种情况的人的比例 $p_i, i = 1,2,3,4, \sum_{i=1}^{4} p_i = 1$, 作出 $95\%$ 的联立置信区间.
+
+18. 在地质勘探中, 在三个不同的地区 (A, B 和 C) 采集了一些岩石, 测得它们的化学成分如表 4.5 所示.
+
+表 4.5 岩石化学成分数据
+
+<table><tr><td colspan="3">A</td><td colspan="3">B</td><td colspan="3">C</td></tr><tr><td> $SiO_2$ </td><td>FeO</td><td> $K_2O$ </td><td> $SiO_2$ </td><td>FeO</td><td> $K_2O$ </td><td> $SiO_2$ </td><td>FeO</td><td> $K_2O$ </td></tr><tr><td>47.22</td><td>5.06</td><td>0.10</td><td>54.33</td><td>6.22</td><td>0.12</td><td>43.12</td><td>10.33</td><td>0.05</td></tr><tr><td>47.45</td><td>4.35</td><td>0.15</td><td>56.17</td><td>3.31</td><td>0.15</td><td>42.05</td><td>9.67</td><td>0.08</td></tr><tr><td>47.52</td><td>6.85</td><td>0.12</td><td>48.40</td><td>2.43</td><td>0.22</td><td>42.50</td><td>9.62</td><td>0.02</td></tr><tr><td>47.86</td><td>4.19</td><td>0.17</td><td>52.62</td><td>5.92</td><td>0.12</td><td>40.77</td><td>9.68</td><td>0.04</td></tr><tr><td>47.31</td><td>7.57</td><td>0.18</td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>
+
+假定这三个地区岩石的三个成分服从  $N_{3}\left(\boldsymbol{\mu}_{i},\Sigma_{i}\right), i=1,2,3.$
+
+(1) 检验  $H_{0}:\Sigma_{1}=\Sigma_{2}=\Sigma_{3}\leftrightarrow H_{1}$  : 存在  $i\neq j$  使  $\Sigma_{i}\neq\Sigma_{j}$ .
+(2) 检验  $H_{0}:\mu_{1}=\mu_{2}\leftrightarrow H_{1}:\mu_{1}\neq\mu_{2}.$
+(3) 检验  $H_{0}:\mu_{1}=\mu_{2}=\mu_{3}\leftrightarrow H_{1}$ : 存在  $i\neq j$  使  $\mu_{i}\neq\mu_{j}$ .
+(4) 给出  $\mu_{1}-\mu_{2}$  的置信区间.
+
+19. 设  $\boldsymbol{X} = (\boldsymbol{X}_{1}, \boldsymbol{X}_{2}, \cdots, \boldsymbol{X}_{n})$  为来自总体  $N_{p}(\boldsymbol{\mu}, \Sigma)$  的独立同分布样本， $\Sigma$  正定并未知，p = 2k. 设  $\boldsymbol{\mu} = \left(\boldsymbol{\mu}_{(1)}^{\mathrm{T}}, \boldsymbol{\mu}_{(2)}^{\mathrm{T}}\right)^{\mathrm{T}}$ ,  $\boldsymbol{\mu}_{(i)}^{\mathrm{T}}$  的维数为 k. 试导出检验假设  $H_{0}: \boldsymbol{\mu}_{(1)}^{\mathrm{T}} = \boldsymbol{\mu}_{(2)}^{\mathrm{T}}$  的 LRT 统计量和分布.
+20. 设 X 为来自  $N_{p}(\boldsymbol{\mu}, \sigma^{2}I_{p})$  的观测, 其中  $\sigma^{2}$  已知, 试基于这一观测求出检验假设  $H_{0}: \boldsymbol{\mu}^{T}\boldsymbol{\mu}=1$  的 LRT 统计量.
+21. 为了判断两个不同产地的鸢尾花是否属于一个种, 各取 50 个样品测量了 $X_{1} =$ 花的萼片长, $X_{2} =$ 花的萼片宽, $X_{3} =$ 花瓣长, $X_{4} =$ 花瓣宽, 希望比较这些形态上的差异是否显著, 作为一个分类的依据, 由测得的数据算得两地的样本均值向量为
+
+$$
+\bar {\boldsymbol {X}} ^ {(1)} = (5. 9 3 6, 2. 7 7 0, 4. 2 6 0, 1. 3 2 8) ^ {\mathrm{T}}, \quad \bar {\boldsymbol {X}} ^ {(2)} = (5. 0 0 6, 3. 4 2 8, 1. 4 6 2, 0. 2 4 6) ^ {\mathrm{T}}
+$$
+
+及样本协方差矩阵为
+
+$$
+\begin{array}{l} \hat {\Sigma} _ {1} = \sum_ {i = 1} ^ {5 0} \left[ \boldsymbol {X} _ {i} ^ {(1)} - \bar {\boldsymbol {X}} ^ {(1)} \right] \left[ \boldsymbol {X} _ {i} ^ {(1)} - \bar {\boldsymbol {X}} ^ {(1)} \right] ^ {\mathrm{T}} \\ = \left( \begin{array}{c c c c} 9. 6 0 1 2 & & & \\ 5. 0 0 6 7 & 5. 8 8 2 3 & & \\ 4. 7 6 5 4 & 2. 8 0 1 1 & 6. 1 9 1 9 & \\ 1. 8 0 1 1 & 1. 3 0 2 5 & 1. 9 0 2 6 & 1. 3 1 1 8 \end{array} \right), \\ \end{array}
+$$
+
+$$
+\begin{array}{l} \hat {\Sigma} _ {2} = \sum_ {i = 1} ^ {5 0} \left[ \boldsymbol {X} _ {i} ^ {(2)} - \bar {\boldsymbol {X}} ^ {(2)} \right] \left[ \boldsymbol {X} _ {i} ^ {(2)} - \bar {\boldsymbol {X}} ^ {(2)} \right] ^ {\mathrm{T}} \\ = \left( \begin{array}{c c c c} 9. 5 4 2 2 & & & \\ 4. 9 2 8 9 & 5. 9 8 3 5 & & \\ 4. 9 9 8 0 & 1. 8 2 3 1 & 6. 1 0 5 9 & \\ 1. 4 3 8 3 & 1. 1 7 2 1 & 1. 9 7 6 8 & 1. 1 4 8 6 \end{array} \right). \\ \end{array}
+$$
+
+(1) 设两种鸢尾花形态的协方差矩阵相等, 对于  $\alpha = 0.05$ , 判断两地鸢尾花形态均值向量是否有显著差异.
+(2) 检验两地的鸢尾花形态的协方差矩阵是否相等 ( $\alpha = 0.05$ ).
+
+22. 设  $X_{i}, i = 1, 2, \cdots, n (n > p)$  为总体  $N_{p}(\boldsymbol{\mu}, \Sigma)$ , ( $\Sigma$  正定,  $\mu, \Sigma$  都未知) 的独立同分布样本, 试证明检验假设
+
+$$
+H _ {0}: \Sigma = \mathrm{diag} \left\{\sigma_ {1 1}, \sigma_ {2 2}, \dots , \sigma_ {p p} \right\} \leftrightarrow H _ {1}: \Sigma \neq \mathrm{diag} \left\{\sigma_ {1 1}, \sigma_ {2 2}, \dots , \sigma_ {p p} \right\}
+$$
+
+的似然比统计量为  $\lambda = |R|^{n/2}$ ，其中 R 为样本相关系数.
+
+23. 设  $X_{1}, X_{2}, \cdots, X_{n}$  为来自总体  $N_{d}(\boldsymbol{\mu}, \Sigma)$  的独立同分布样本,  $d \leqslant n - 1$ , 设  $H_{0}$  为线性假设  $\mu \in V$ , 其中 V 为 d 维 Euclid 空间的一个 p 维子空间, 证明当  $H_{0}$  成立时有
+
+$$
+\min _ {\boldsymbol {\mu} \in V} n (\bar {\boldsymbol {X}} - \boldsymbol {\mu}) ^ {\mathrm{T}} S ^ {- 1} (\bar {\boldsymbol {X}} - \boldsymbol {\mu}) \sim T ^ {2} (d - p, n - 1).
+$$
+
+## 第五章
+
+## 线性模型与
+
+## logistic回归

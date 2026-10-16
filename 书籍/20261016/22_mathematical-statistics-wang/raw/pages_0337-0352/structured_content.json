@@ -1,0 +1,3198 @@
+{
+  "pages": [
+    {
+      "page_idx": 336,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.08,
+            0.068,
+            0.109,
+            0.08
+          ],
+          "content": "324"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.125,
+            0.066,
+            0.256,
+            0.081
+          ],
+          "content": "第七章 bootstrap"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.127,
+            0.119,
+            0.21,
+            0.14
+          ],
+          "level": 2,
+          "content": "习题七"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.16,
+            0.187,
+            0.833,
+            0.53
+          ],
+          "sub_type": "text",
+          "content": "1. 生成 $n = 20,30,50$ 个来自 $Exp(1)$ 的随机变量, 比较样本均值 $\\bar{X}$ 的精确分布、CLT近似分布和bootstrap方法构造的分布之间的差异, 并讨论bootstrap方法相比于CLT近似法的优缺点.\n2. 假设总体均值为 $\\mu$, 我们感兴趣的是估计 $\\mu^2$, 现考虑直接使用 $\\bar{X}^2$ 作为估计, 请问如何使用 bootstrap 方法进行偏差修正?\n3. 假设  $(X_{i}, Y_{i}), i = 1, 2, \\cdots, n$  是来自二元正态分布  $N(\\mathbf{0}, \\Sigma)$  的一组独立同分布样本, 其中  $\\Sigma = \\begin{pmatrix} 1 & \\rho \\\\ \\rho & 1 \\end{pmatrix}$ . 对于不同样本数 n = 20, 30, 50, 比较运用大样本理论和 bootstrap 方法对样本相关系数 r 的渐近方差的估计效果.\n4. 证明例7.3.1中 $T_{n}^{*}$ 的渐近分布.\n5. 假设  $X_{1}, X_{2}, \\cdots, X_{n}$  为来自 Cauchy 分布  $C(0,1)$  的独立同分布样本. 对不同样本数 n = 20, 50, 比较运用大样本理论和 bootstrap 方法构造 Cauchy 分布  $C(0,1)$  中位数的置信水平为 0.95 的置信区间的效果.\n6. (1) 给出一个运用 bootstrap 方法估计中位数失效的例子; (2) 给出一个运用 bootstrap 方法估计均值失效的例子."
+        }
+      ]
+    },
+    {
+      "page_idx": 337,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.429,
+            0.104,
+            0.5,
+            0.133
+          ],
+          "level": 2,
+          "content": "附录"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.544,
+            0.17,
+            0.728,
+            0.208
+          ],
+          "level": 2,
+          "content": "补充知识"
+        }
+      ]
+    },
+    {
+      "page_idx": 338,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.08,
+            0.068,
+            0.107,
+            0.079
+          ],
+          "content": "326"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.125,
+            0.066,
+            0.234,
+            0.08
+          ],
+          "content": "附录 补充知识"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.124,
+            0.119,
+            0.465,
+            0.141
+          ],
+          "level": 2,
+          "content": "A.1 随机变量序列的收敛性"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.189,
+            0.66,
+            0.206
+          ],
+          "content": "设  $X_{n}, n \\geqslant 1$  与 X 是给定概率空间  $(\\Omega, \\mathcal{F}, P)$  上的随机变量."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.212,
+            0.578,
+            0.229
+          ],
+          "content": "定义A.1.1(依概率收敛) 如果对于任意 $\\varepsilon >0$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.363,
+            0.249,
+            0.591,
+            0.273
+          ],
+          "content": "\\lim _ {n \\to \\infty} P \\left(| X _ {n} - X | > \\varepsilon\\right) = 0,",
+          "image_source": "images/page_338_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.292,
+            0.489,
+            0.31
+          ],
+          "content": "则称  $\\{X_{n}\\}$  依概率收敛到 X，记作  $X_{n} \\xrightarrow{P} X$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.314,
+            0.83,
+            0.356
+          ],
+          "content": "对于 $p$ 维随机变量 $\\mathbf{X}_n, n \\geqslant 1$ 和 $\\mathbf{X}$, 如果 $||\\mathbf{X}_n - \\mathbf{X}|| \\xrightarrow{\\mathrm{P}} 0$, 则称 $\\mathbf{X}_n \\xrightarrow{\\mathrm{P}} \\mathbf{X}$. 易证, $\\mathbf{X}_n \\xrightarrow{\\mathrm{P}} \\mathbf{X}$ 当且仅当 $\\mathbf{X}_n$ 的每一维度都依概率收敛到 $\\mathbf{X}$ 的对应维度."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.361,
+            0.83,
+            0.402
+          ],
+          "content": "定理 A.1.1 (Chebyshev 不等式) 设随机变量 X 具有数学期望  $E(X) = \\mu$ ，方差  $\\mathrm{Var}(X) = \\sigma^{2}$ 。则对任意正数  $\\varepsilon$ ，有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.384,
+            0.417,
+            0.57,
+            0.45
+          ],
+          "content": "P \\left(\\left| X - \\mu \\right| \\geqslant \\varepsilon\\right) \\leqslant \\frac {\\sigma^ {2}}{\\varepsilon^ {2}}.",
+          "image_source": "images/page_338_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.159,
+            0.465,
+            0.618,
+            0.482
+          ],
+          "content": "证明 设 $X$ 的分布函数为 $F(x)$. 则对任意的 $\\varepsilon > 0$, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.184,
+            0.493,
+            0.768,
+            0.569
+          ],
+          "content": "\\begin{array}{l} \\sigma^ {2} = E [ (X - \\mu) ^ {2} ] = \\int (x - \\mu) ^ {2} \\mathrm{d} F (x) \\\\ \\geqslant \\int_ {| X - \\mu | \\geqslant \\varepsilon} (x - \\mu) ^ {2} \\mathrm{d} F (x) \\geqslant \\varepsilon^ {2} \\int_ {| X - \\mu | \\geqslant \\varepsilon} \\mathrm{d} F (x) = \\varepsilon^ {2} P \\left(| X - \\mu | \\geqslant \\varepsilon\\right). \\\\ \\end{array}",
+          "image_source": "images/page_338_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.585,
+            0.171,
+            0.601
+          ],
+          "content": "得证."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.811,
+            0.586,
+            0.83,
+            0.6
+          ],
+          "content": "□"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.612,
+            0.83,
+            0.652
+          ],
+          "content": "例A.1.1 对于一列独立同分布的二项分布试验 $B(1,0.5)$, $X_{n}$ 表示在前 $n$ 次试验中出现一次成功下一次失败的事件个数. 设"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.279,
+            0.672,
+            0.673,
+            0.69
+          ],
+          "content": "T _ {i} = I \\{\\text {第} i \\text {次试验成功且第} i + 1 \\text {次试验失败} \\},",
+          "image_source": "images/page_338_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.707,
+            0.281,
+            0.743
+          ],
+          "content": "则 $X_{n} = \\sum_{i = 1}^{n - 1}T_{i}$ ，且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.307,
+            0.759,
+            0.634,
+            0.878
+          ],
+          "content": "\\begin{array}{l} E (X _ {n}) = \\frac {n - 1}{4}, \\\\ = \\frac {3 (n - 1)}{1 6} - \\frac {2 (n - 2)}{1 6} = \\frac {n + 1}{1 6}. \\\\ \\end{array}",
+          "image_source": "images/page_338_equation_17.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.291,
+            0.796,
+            0.661,
+            0.839
+          ],
+          "content": "\\mathrm{Var} (X _ {n}) = \\sum_ {i = 1} ^ {n - 1} \\mathrm{Var} (T _ {i}) + 2 \\sum_ {i = 1} ^ {n - 2} \\mathrm{Cov} (T _ {i}, T _ {i + 1})",
+          "image_source": "images/page_338_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.892,
+            0.473,
+            0.924
+          ],
+          "content": "因此, 由 Chebyshev 不等式可知 $\\frac{X_n}{n} \\xrightarrow{\\mathrm{p}} \\frac{1}{4}$."
+        }
+      ]
+    },
+    {
+      "page_idx": 339,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.678,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": "A.1 随机变量序列的收敛性"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.89,
+            0.068,
+            0.917,
+            0.08
+          ],
+          "content": "327"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.122,
+            0.871,
+            0.161
+          ],
+          "content": "定义A.1.2(依概率有界) 如果对所有 $\\varepsilon > 0$，存在常数 $B_{\\varepsilon} > 0$ 以及整数 $N_{\\varepsilon}$ 使得当 $n \\geqslant N_{\\varepsilon}$ 时，"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.44,
+            0.168,
+            0.597,
+            0.185
+          ],
+          "content": "P \\left(\\left| X _ {n} \\right| \\geqslant B _ {\\varepsilon}\\right) <   \\varepsilon ,",
+          "image_source": "images/page_339_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.166,
+            0.197,
+            0.628,
+            0.214
+          ],
+          "content": "则称随机变量序列  $\\{X_{n}\\}$  依概率有界, 记作  $X_{n}=O_{p}(1)$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.219,
+            0.871,
+            0.26
+          ],
+          "content": "任意一个随机变量 (向量) 都依概率有界. 如果  $X_{n} \\stackrel{P}{\\rightarrow} 0$ , 则记  $X_{n} = o_{p}(1)$ . 一般地, 对于给定的一个随机变量序列  $\\{R_{n}\\}$ ,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.335,
+            0.273,
+            0.664,
+            0.293
+          ],
+          "content": "X _ {n} = o _ {p} (R _ {n}) \\text {表示} X _ {n} = Y _ {n} R _ {n}, Y _ {n} \\xrightarrow {\\mathrm{P}} 0;",
+          "image_source": "images/page_339_equation_6.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.336,
+            0.306,
+            0.7,
+            0.325
+          ],
+          "content": "X _ {n} = O _ {p} (R _ {n}) \\text {表示} X _ {n} = Y _ {n} R _ {n}, Y _ {n} = O _ {p} (1).",
+          "image_source": "images/page_339_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.338,
+            0.871,
+            0.38
+          ],
+          "content": "对于一个实数序列 $\\{a_{n}\\}$, 如果 $a_{n}X_{n} \\stackrel{\\mathrm{P}}{\\rightarrow} 0$, 则 $X_{n} = o_{p}(a_{n}^{-1})$; 如果 $a_{n}X_{n} = O_{p}(1)$, 则 $X_{n} = O_{p}(a_{n}^{-1})$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.206,
+            0.385,
+            0.68,
+            0.404
+          ],
+          "content": "定理A.1.2 $X_{n} = O_{p}(1),Y_{n} = o_{p}(1)$ ，则 $X_{n}Y_{n} = o_{p}(1)$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.202,
+            0.41,
+            0.582,
+            0.427
+          ],
+          "content": "证明 令 $\\varepsilon > 0$ ，选择 $B_{\\varepsilon} > 0$ 和整数 $N_{\\varepsilon}$ 使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.38,
+            0.443,
+            0.655,
+            0.46
+          ],
+          "content": "n \\geqslant N _ {\\varepsilon} \\Rightarrow P \\left(\\left| X _ {n} \\right| \\leqslant B _ {\\varepsilon}\\right) \\geqslant 1 - \\varepsilon .",
+          "image_source": "images/page_339_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.166,
+            0.476,
+            0.206,
+            0.491
+          ],
+          "content": "那么"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.285,
+            0.507,
+            0.751,
+            0.531
+          ],
+          "content": "\\lim _ {n \\to \\infty} P \\left(| X _ {n} Y _ {n} | \\geqslant \\varepsilon\\right) \\leqslant \\lim _ {n \\to \\infty} P \\left(| X _ {n} Y _ {n} | \\geqslant \\varepsilon , | X _ {n} | \\leqslant B _ {\\varepsilon}\\right) +",
+          "image_source": "images/page_339_equation_13.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.478,
+            0.542,
+            0.734,
+            0.565
+          ],
+          "content": "\\lim _ {n \\to \\infty} P \\left(| X _ {n} Y _ {n} | \\geqslant \\varepsilon , | X _ {n} | > B _ {\\varepsilon}\\right)",
+          "image_source": "images/page_339_equation_14.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.46,
+            0.577,
+            0.718,
+            0.6
+          ],
+          "content": "\\leqslant \\lim _ {n \\to \\infty} P \\left(| Y _ {n} | \\geqslant \\varepsilon / B _ {\\varepsilon}\\right) + \\varepsilon = \\varepsilon .",
+          "image_source": "images/page_339_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.61,
+            0.212,
+            0.625
+          ],
+          "content": "得证."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.632,
+            0.873,
+            0.679
+          ],
+          "content": "定义 A.1.3(依概率 1 收敛) 如果 $P\\left(\\lim_{n \\to \\infty} X_n = X\\right) = 1$, 则称 $\\{X_n\\}$ 依概率 1 收敛到 $X$, 记作 $X_n \\stackrel{\\text{a.s.}}{\\rightarrow} X$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.202,
+            0.684,
+            0.717,
+            0.702
+          ],
+          "content": "对于多维随机变量  $X_{n}$ ，如果  $\\left|\\left|X_{n}-X\\right|\\right|\\stackrel{a.s.}{\\rightarrow}0$ ，则称  $X_{n}\\stackrel{a.s.}{\\rightarrow}X$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.206,
+            0.707,
+            0.661,
+            0.725
+          ],
+          "content": "定理 A.1.3  $X_{n} \\stackrel{a.s.}{\\rightarrow} X$  的充要条件是对任意的  $\\varepsilon > 0,$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.374,
+            0.74,
+            0.871,
+            0.763
+          ],
+          "content": "\\lim _ {n \\to \\infty} P \\left(| X _ {m} - X | <   \\varepsilon , m \\geqslant n\\right) = 1. \\tag {A.1.1}",
+          "image_source": "images/page_339_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.203,
+            0.772,
+            0.604,
+            0.789
+          ],
+          "content": "定理 A.1.3 的证明参见 Serfling (1980) 的第七页."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.206,
+            0.794,
+            0.548,
+            0.813
+          ],
+          "content": "推论 A.1.1 若  $X_{n} \\stackrel{a.s.}{\\rightarrow} X$ ，则  $X_{n} \\stackrel{p}{\\rightarrow} X$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.206,
+            0.818,
+            0.834,
+            0.852
+          ],
+          "content": "推论 A.1.2 如果对任意的  $\\varepsilon > 0, \\sum_{n=1}^{\\infty} P(|X_n - X| > \\varepsilon) < \\infty,$  则  $X_n \\stackrel{a.s.}{\\rightarrow} X$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.854,
+            0.871,
+            0.896
+          ],
+          "content": "例 A.1.2 设  $X_{1}, X_{2}, \\cdots, X_{n}$  是一列来自  $U(0,1)$  的独立同分布随机变量序列. 则  $X_{(n)} \\stackrel{\\mathrm{def}}{=} \\max\\{X_{1}, X_{2}, \\cdots, X_{n}\\} \\stackrel{\\mathrm{a.s.}}{\\rightarrow} 1$ , 因为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.329,
+            0.908,
+            0.552,
+            0.928
+          ],
+          "content": "P \\left(\\left| X _ {(n)} - 1 \\right| \\leqslant \\varepsilon , \\forall n \\geqslant m\\right)",
+          "image_source": "images/page_339_equation_25.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 340,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.08,
+            0.068,
+            0.107,
+            0.079
+          ],
+          "content": "328"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.125,
+            0.066,
+            0.234,
+            0.079
+          ],
+          "content": "附录 补充知识"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.269,
+            0.124,
+            0.69,
+            0.175
+          ],
+          "content": "\\begin{array}{l} = P \\left(X _ {(n)} \\geqslant 1 - \\varepsilon , \\forall n \\geqslant m\\right) \\\\ = P \\left(X _ {(m)} \\geqslant 1 - \\varepsilon\\right) = 1 - (1 - \\varepsilon) ^ {m} \\rightarrow 1, \\quad m \\rightarrow \\infty . \\\\ \\end{array}",
+          "image_source": "images/page_340_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.196,
+            0.83,
+            0.243
+          ],
+          "content": "定义 A.1.4 (r 阶收敛) 设 r > 0 为常数, 如果  $\\lim_{n \\to \\infty} E[|X_n - X|^r] = 0$ , 则称  $\\{X_n\\}$  为 r 阶收敛到 X, 记作  $X_n \\xrightarrow{r^{th}} X$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.248,
+            0.684,
+            0.273
+          ],
+          "content": "对多维随机变量  $X_{n}$ ，若  $\\lim_{n\\to\\infty}E[||X_{n}-X||^{r}]=0$ ，则  $X_{n}\\stackrel{rth}{\\rightarrow}X$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.279,
+            0.829,
+            0.297
+          ],
+          "content": "定理A.1.4（Markov不等式） 设随机变量 $X$ 的 $r$ 阶矩有限，则对任意的 $\\varepsilon > 0$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.379,
+            0.315,
+            0.573,
+            0.347
+          ],
+          "content": "P \\left(| X | > \\varepsilon\\right) \\leqslant \\frac {E (| X | ^ {r})}{\\varepsilon^ {r}}.",
+          "image_source": "images/page_340_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.363,
+            0.83,
+            0.401
+          ],
+          "content": "定理A.1.4是定理A.1.1的推广，证明同理.由定理A.1.4，我们很容易得到如下推论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.406,
+            0.505,
+            0.426
+          ],
+          "content": "推论 A.1.3 若  $X_{n} \\stackrel{r^{th}}{\\rightarrow} X$ ，则  $X_{n} \\stackrel{p}{\\rightarrow} X$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.432,
+            0.83,
+            0.478
+          ],
+          "content": "例 A.1.3 设  $U \\sim U(0,1)$ ,  $X = \\sqrt{n}I(0 < U < 1/n)$ . 则  $P(|X| > \\varepsilon) = P(0 < U < 1/n) = \\frac{1}{n} \\rightarrow 0$ . 因此  $X \\xrightarrow{p} 0$ . 但是  $E(X^{2}) = 1$ , X 并不 r 阶收敛到 0."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.479,
+            0.83,
+            0.524
+          ],
+          "content": "定义A.1.5 设随机变量 $X_{n}$ 与 $X$ 分别有分布函数 $F_{n}(x)$ 与 $F(x)$，且在函数 $F$ 的连续点集上有 $\\lim_{n\\to \\infty}F_n(x) = F(x)$，则称 $\\{X_n\\}$ 依分布收敛到 $X$，记作 $X_{n}\\stackrel {\\mathrm{d}}{\\rightarrow}X$。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.528,
+            0.502,
+            0.548
+          ],
+          "content": "定理 A.1.5 若  $X_{n} \\stackrel{p}{\\rightarrow} X$ ，则  $X_{n} \\stackrel{d}{\\rightarrow} X$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.159,
+            0.559,
+            0.492,
+            0.575
+          ],
+          "content": "证明 对于任意的 $x \\in \\mathbb{R}, \\varepsilon > 0$, 我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.19,
+            0.596,
+            0.763,
+            0.647
+          ],
+          "content": "\\begin{array}{l} F _ {n} (x) = P (X _ {n} \\leqslant x) = P (X _ {n} \\leqslant x, X > x + \\varepsilon) + P (X _ {n} \\leqslant x, X \\leqslant x + \\varepsilon) \\\\ \\leqslant P \\left(\\left| X _ {n} - X \\right| > \\varepsilon\\right) + P (X \\leqslant x + \\varepsilon). \\\\ \\end{array}",
+          "image_source": "images/page_340_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.666,
+            0.83,
+            0.716
+          ],
+          "content": "因此由 $X_{n} \\stackrel{\\mathrm{P}}{\\to} X$，我们有 $\\varlimsup_{n \\to \\infty} F_{n}(x) \\leqslant F(x + \\varepsilon), x \\in C_{F}$，其中 $C_{F}$ 表示 $F(x)$ 的连续点集。同理 $\\varliminf_{n \\to \\infty} F_{n}(x) \\geqslant F(x - \\varepsilon), x \\in C_{F}$。令 $\\varepsilon \\to 0$，可证。$\\square$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.726,
+            0.83,
+            0.768
+          ],
+          "content": "例 A.1.4 设 $X \\sim N(0,1), X_n = -X$. 易知 $X_n \\sim N(0,1)$, 因此 $X_n \\stackrel{\\mathrm{d}}{\\to} X$. 但是 $P(|X_n - X| > \\varepsilon) = P(2|X| > \\varepsilon) = 1 - 2\\Phi(\\varepsilon/2) \\nrightarrow 0$. 因此 $\\{X_n\\}$ 并不依概率收敛到 $X$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.771,
+            0.484,
+            0.79
+          ],
+          "content": "定理A.1.6 若 $X_{n}\\xrightarrow{\\mathrm{d}}c$ ，则 $X_{n}\\xrightarrow{\\mathrm{p}}c.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.802,
+            0.356,
+            0.818
+          ],
+          "content": "证明 对任意的  $\\varepsilon > 0,$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.255,
+            0.839,
+            0.697,
+            0.889
+          ],
+          "content": "\\begin{array}{l} P \\left(\\left| X _ {n} - c \\right| > \\varepsilon\\right) = P \\left(X _ {n} \\geqslant c + \\varepsilon\\right) + P \\left(X _ {n} \\leqslant c - \\varepsilon\\right) \\\\ = 1 - F _ {n} (c + \\varepsilon) + F _ {n} (c - \\varepsilon + 0) \\rightarrow 0. \\\\ \\end{array}",
+          "image_source": "images/page_340_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.91,
+            0.171,
+            0.925
+          ],
+          "content": "得证."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.812,
+            0.911,
+            0.83,
+            0.924
+          ],
+          "content": "□"
+        }
+      ]
+    },
+    {
+      "page_idx": 341,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.632,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": "A.2 连续映射定理与 Slutsky 定理"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.89,
+            0.068,
+            0.917,
+            0.08
+          ],
+          "content": "329"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.122,
+            0.873,
+            0.193
+          ],
+          "content": "对于分布函数为  $F_{n}(\\boldsymbol{x})$  的多维随机变量  $\\boldsymbol{X}_{n}=(X_{n1},X_{n2},\\cdots,X_{np})$ ，如果在  $\\boldsymbol{X}=(X_{1},X_{2},\\cdots,X_{p})$  的分布函数  $F(\\boldsymbol{x})$  的连续集合上  $\\lim_{n\\to\\infty}F_{n}(\\boldsymbol{x})=F(\\boldsymbol{x})$ ，则称  $X_{n}\\stackrel{d}{\\rightarrow}X$ 。显然，如果  $X_{n}\\stackrel{d}{\\rightarrow}X$ ，则  $X_{nk}\\stackrel{d}{\\rightarrow}X_{k}, k=1,2,\\cdots,p$ 。但是反之并不成立。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.201,
+            0.197,
+            0.528,
+            0.214
+          ],
+          "content": "例A.1.5 设 $X \\sim U(0,1), X_n = X$ 且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.401,
+            0.23,
+            0.627,
+            0.282
+          ],
+          "content": "Y _ {n} = \\left\\{ \\begin{array}{l l} {{X,}} & {{n \\text {为偶数},}} \\\\ {{1 - X,}} & {{n \\text {为奇数}.}} \\end{array} \\right.",
+          "image_source": "images/page_341_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.299,
+            0.684,
+            0.319
+          ],
+          "content": "则 $X_{n}\\xrightarrow{\\mathrm{d}}U(0,1),Y_{n}\\xrightarrow{\\mathrm{d}}U(0,1)$ ，但是 $(X_{n},Y_{n})$ 并不依分布收敛."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.202,
+            0.325,
+            0.63,
+            0.342
+          ],
+          "content": "如下三个定理常用来证明变量之间的依分布收敛性."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.206,
+            0.346,
+            0.837,
+            0.366
+          ],
+          "content": "定理 A.1.7  $X_{n} \\xrightarrow{d} X \\Longleftrightarrow$  对任意有界连续函数  $g, E[g(X_{n})] \\to E[g(X)]$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.369,
+            0.871,
+            0.412
+          ],
+          "content": "定理A.1.8 设 $\\varphi_{\\pmb{X}}, \\varphi_{\\pmb{X}_n}$ 分别为 $X, X_n$ 的特征函数，则 $X_n \\xrightarrow{\\mathrm{d}} X \\Longleftrightarrow$ 对任意 $t \\in \\mathbb{R}^p$, $\\varphi_{\\pmb{X}_n}(\\pmb{t}) \\to \\varphi_{\\pmb{X}}(\\pmb{t})$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.205,
+            0.414,
+            0.783,
+            0.436
+          ],
+          "content": "定理A.1.9 $X_{n}\\xrightarrow{\\mathrm{d}}X$ 当且仅当对任意的 $c\\in \\mathbb{R}^p$ 有 $c^{\\mathrm{T}}X_{n}\\xrightarrow{\\mathrm{d}}c^{\\mathrm{T}}X.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.441,
+            0.873,
+            0.482
+          ],
+          "content": "定理 A.1.7 的证明参见 Serfling (1980) 第 16 页. 定理 A.1.8 的证明参见 Shao (2003) 第 57 页. 定理 A.1.9 可以由定理 A.1.8 推导出来, 留作练习."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.165,
+            0.534,
+            0.593,
+            0.557
+          ],
+          "level": 2,
+          "content": "A.2 连续映射定理与 Slutsky 定理"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.602,
+            0.873,
+            0.667
+          ],
+          "content": "定理A.2.1（连续映射定理）令 $g:\\mathbb{R}^p\\mapsto \\mathbb{R}^m$ 为在集合 $C$ 中几乎处处连续的映射.如果 $\\{\\pmb {X}_n\\}$ 依概率/依概率1收敛/依分布收敛到 $\\pmb {X}$ ，则 $\\{g(X_n)\\}$ 依概率/依概率1收敛/依分布收敛到 $g(\\pmb {X})$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.202,
+            0.672,
+            0.62,
+            0.69
+          ],
+          "content": "连续映射定理的证明参见 Serfling (1980) 第 24 页."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.695,
+            0.874,
+            0.737
+          ],
+          "content": "推论A.2.1 设 $p$ 维随机变量序列 $\\{X_{n}\\}$ 依概率/依概率1/依分布收敛到 $X$ ，则对$A\\in \\mathbb{R}^{q\\times p},B\\in \\mathbb{R}^{p\\times p},\\{AX_n\\} ,\\{X_n^{\\mathrm{T}}BX_n\\}$ 依概率/依概率1/依分布收敛到 $AX,X^{\\mathrm{T}}BX.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.74,
+            0.873,
+            0.784
+          ],
+          "content": "例A.2.1 若 $\\pmb{X}_n\\stackrel{\\mathrm{d}}{\\to}N(\\pmb {\\mu},\\Sigma),C\\in \\mathbb{R}^{q\\times p}$ ，则 $C\\pmb {X}_n\\xrightarrow{\\mathrm{d}}N(C\\pmb {\\mu},C\\Sigma C^{\\mathrm{T}})$ 且 $(\\pmb {X}_n - \\pmb {\\mu})^{\\mathrm{T}}\\Sigma^{-1}(\\pmb {X}_n - \\pmb {\\mu})\\stackrel{\\mathrm{d}}{\\to}\\chi_p^2.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.205,
+            0.787,
+            0.787,
+            0.806
+          ],
+          "content": "推论A.2.2 设 $g$ 是定义在 $\\mathbb{R}^p$ 上的函数且 $g(\\mathbf{0}) = 0$. 若 $X_{n} \\stackrel{\\mathrm{P}}{\\to} 0$, 则"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.202,
+            0.811,
+            0.709,
+            0.854
+          ],
+          "sub_type": "text",
+          "content": "(1) 如果当  $t \\rightarrow 0$  时  $g(t) = o(||t||^{r})$ ，则  $g(\\boldsymbol{X}_{n}) = o_{p}(||\\boldsymbol{X}_{n}||^{r})$ ;\n(2) 如果当  $t \\rightarrow 0$  时  $g(t) = O(||t||^{r})$ ，则  $g(\\boldsymbol{X}_{n}) = O_{p}(||\\boldsymbol{X}_{n}||^{r})$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.206,
+            0.856,
+            0.804,
+            0.875
+          ],
+          "content": "定理A.2.2(Slutsky定理) 令 $X_{n}\\xrightarrow{\\mathrm{d}}X$ 且 $Y_{n}\\xrightarrow{\\mathrm{p}}c,$ 其中 $c$ 为常数.则"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.205,
+            0.883,
+            0.388,
+            0.926
+          ],
+          "sub_type": "text",
+          "content": "(1) $X_{n}+Y_{n}\\xrightarrow{d}X+c;$\n(2) $X_{n}Y_{n}\\xrightarrow{d}cX;$"
+        }
+      ]
+    },
+    {
+      "page_idx": 342,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.08,
+            0.068,
+            0.107,
+            0.079
+          ],
+          "content": "330"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.125,
+            0.066,
+            0.234,
+            0.08
+          ],
+          "content": "附录 补充知识"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.121,
+            0.43,
+            0.141
+          ],
+          "content": "(3) $Y_{n}^{-1}X_{n}\\xrightarrow{d}c^{-1}X$ ，其中 $c\\neq0$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.15,
+            0.83,
+            0.19
+          ],
+          "content": "证明 (1) 设 $x$ 是一个实数使得 $F(x)$ 在点 $x - c$ 处连续, 且 $\\varepsilon$ 满足 $x - c + \\varepsilon$ 仍然是 $F(x)$ 的一个连续点, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.175,
+            0.207,
+            0.78,
+            0.325
+          ],
+          "content": "\\begin{array}{l} P \\left(X _ {n} + Y _ {n} \\leqslant x\\right) = P \\left(\\left\\{X _ {n} + Y _ {n} \\leqslant x \\right\\} \\cap \\left\\{\\left| Y _ {n} - c \\right| \\leqslant \\varepsilon \\right\\}\\right) + \\\\ P \\left(\\{X _ {n} + Y _ {n} \\leqslant x \\} \\cap \\{| Y _ {n} - c | > \\varepsilon \\}\\right) \\\\ \\leqslant P \\left(\\left\\{X _ {n} + Y _ {n} \\leqslant x \\right\\} \\cap \\left\\{\\left| Y _ {n} - c \\right| \\leqslant \\varepsilon \\right\\}\\right) + P \\left(\\left| Y _ {n} - c \\right| > \\varepsilon\\right) \\\\ \\leqslant P \\left(X _ {n} + c - \\varepsilon \\leqslant x\\right) + P \\left(\\left| Y _ {n} - c \\right| > \\varepsilon\\right). \\\\ \\end{array}",
+          "image_source": "images/page_342_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.342,
+            0.261,
+            0.357
+          ],
+          "content": "两边取极限可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.18,
+            0.377,
+            0.772,
+            0.402
+          ],
+          "content": "\\varlimsup_ {n \\to \\infty} P \\left(X _ {n} + Y _ {n} \\leqslant x\\right) \\leqslant \\varlimsup_ {n \\to \\infty} P \\left(X _ {n} + c - \\varepsilon \\leqslant x\\right) + \\varlimsup_ {n \\to \\infty} P \\left(\\left| Y _ {n} - c \\right| > \\varepsilon\\right).",
+          "image_source": "images/page_342_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.42,
+            0.49,
+            0.437
+          ],
+          "content": "由 $Y_{n}\\stackrel {\\mathrm{P}}{\\rightarrow}c$ 可知上式右边第二项趋于0.因此"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.274,
+            0.456,
+            0.679,
+            0.48
+          ],
+          "content": "\\varlimsup_ {n \\to \\infty} P \\left(X _ {n} + Y _ {n} \\leqslant x\\right) \\leqslant \\varlimsup_ {n \\to \\infty} P \\left(X _ {n} + c \\leqslant x + \\varepsilon\\right).",
+          "image_source": "images/page_342_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.499,
+            0.37,
+            0.518
+          ],
+          "content": "由 $X_{n}\\stackrel {\\mathrm{d}}{\\to}X$ 且令 $\\varepsilon \\rightarrow 0$ ，可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.316,
+            0.536,
+            0.637,
+            0.561
+          ],
+          "content": "\\varlimsup_ {n \\to \\infty} P (X _ {n} + Y _ {n} \\leqslant x) \\leqslant P (X + c \\leqslant x).",
+          "image_source": "images/page_342_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.574,
+            0.204,
+            0.59
+          ],
+          "content": "同理可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.316,
+            0.598,
+            0.637,
+            0.624
+          ],
+          "content": "\\varliminf_ {n \\to \\infty} P \\left(X _ {n} + Y _ {n} \\leqslant x\\right) \\geqslant P (X + c \\leqslant x).",
+          "image_source": "images/page_342_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.635,
+            0.168,
+            0.65
+          ],
+          "content": "因此"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.315,
+            0.659,
+            0.638,
+            0.682
+          ],
+          "content": "\\lim _ {n \\to \\infty} P (X _ {n} + Y _ {n} \\leqslant x) = P (X + c \\leqslant x).",
+          "image_source": "images/page_342_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.695,
+            0.551,
+            0.714
+          ],
+          "content": "(2) 设  $\\pm\\varepsilon/\\delta$  是  $F(x)$  的连续点. 不妨设  $Y_{n} \\stackrel{P}{\\rightarrow} 0$ :"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.143,
+            0.732,
+            0.809,
+            0.752
+          ],
+          "content": "P \\left(\\left| X _ {n} Y _ {n} \\right| > \\varepsilon\\right) = P \\left(\\left\\{\\left| X _ {n} Y _ {n} \\right| > \\varepsilon \\right\\} \\cap \\left\\{\\left| Y _ {n} \\right| > \\delta \\right\\}\\right) + P \\left(\\left\\{\\left| X _ {n} Y _ {n} \\right| > \\varepsilon \\right\\} \\cap \\left\\{\\left| Y _ {n} \\right| \\leqslant \\delta \\right\\}\\right).",
+          "image_source": "images/page_342_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.77,
+            0.168,
+            0.785
+          ],
+          "content": "因为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.276,
+            0.785,
+            0.679,
+            0.82
+          ],
+          "content": "| Y _ {n} | \\leqslant \\delta \\Rightarrow \\frac {1}{| Y _ {n} |} \\geqslant \\frac {1}{\\delta} \\Rightarrow \\frac {| X _ {n} Y _ {n} |}{| Y _ {n} |} \\geqslant \\frac {\\varepsilon}{\\delta} \\Rightarrow | X _ {n} | \\geqslant \\frac {\\varepsilon}{\\delta}",
+          "image_source": "images/page_342_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.83,
+            0.535,
+            0.849
+          ],
+          "content": "且 $(\\{|X_nY_n| > \\varepsilon\\} \\cap \\{|Y_n| > \\delta\\}) \\subseteq \\{|Y_n| > \\delta\\}$, 可知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.201,
+            0.86,
+            0.717,
+            0.932
+          ],
+          "content": "\\begin{array}{l} P \\left(\\left| X _ {n} Y _ {n} \\right| > \\varepsilon\\right) \\leqslant P \\left(\\left| Y _ {n} \\right| > \\delta\\right) + P \\left(\\left| X _ {n} \\right| > \\frac {\\varepsilon}{\\delta}\\right) \\\\ \\leqslant P \\left(\\left| Y _ {n} \\right| > \\delta\\right) + P \\left(X _ {n} > \\frac {\\varepsilon}{\\delta}\\right) + P \\left(X _ {n} \\leqslant \\frac {- \\varepsilon}{\\delta}\\right) \\\\ \\end{array}",
+          "image_source": "images/page_342_equation_20.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 343,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.633,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": "A.2 连续映射定理与 Slutsky 定理"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.89,
+            0.069,
+            0.915,
+            0.08
+          ],
+          "content": "331"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.374,
+            0.121,
+            0.79,
+            0.195
+          ],
+          "content": "\\begin{array}{l} = P \\left(\\left| Y _ {n} \\right| > \\delta\\right) + 1 - P \\left(X _ {n} \\leqslant \\frac {\\varepsilon}{\\delta}\\right) + P \\left(X _ {n} \\leqslant \\frac {- \\varepsilon}{\\delta}\\right) \\\\ = P \\left(\\left| Y _ {n} \\right| > \\delta\\right) + 1 - F _ {n} \\left(\\frac {\\varepsilon}{\\delta}\\right) + F _ {n} \\left(\\frac {- \\varepsilon}{\\delta}\\right). \\\\ \\end{array}",
+          "image_source": "images/page_343_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.166,
+            0.215,
+            0.208,
+            0.23
+          ],
+          "content": "因此"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.183,
+            0.246,
+            0.854,
+            0.281
+          ],
+          "content": "\\varlimsup_ {n \\to \\infty} P \\left(| X _ {n} Y _ {n} | > \\varepsilon\\right) \\leqslant \\varlimsup_ {n \\to \\infty} P \\left(| Y _ {n} | > \\delta\\right) + \\varlimsup_ {n \\to \\infty} 1 - \\varlimsup_ {n \\to \\infty} F _ {n} \\left(\\frac {\\varepsilon}{\\delta}\\right) + \\varliminf_ {n \\to \\infty} F _ {n} \\left(\\frac {- \\varepsilon}{\\delta}\\right).",
+          "image_source": "images/page_343_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.166,
+            0.302,
+            0.443,
+            0.32
+          ],
+          "content": "由 $Y_{n}\\stackrel {\\mathrm{p}}{\\to}0$ 且 $F(x)$ 的连续性可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.329,
+            0.34,
+            0.709,
+            0.376
+          ],
+          "content": "\\varlimsup_ {n \\to \\infty} P \\left(| X _ {n} Y _ {n} | > \\varepsilon\\right) \\leqslant 1 - F \\left(\\frac {\\varepsilon}{\\delta}\\right) + F \\left(\\frac {- \\varepsilon}{\\delta}\\right).",
+          "image_source": "images/page_343_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.397,
+            0.874,
+            0.474
+          ],
+          "content": "令 $\\delta \\to 0$ ，则 $F\\left(\\frac{\\varepsilon}{\\delta}\\right) \\to 1$ 且 $F\\left(\\frac{-\\varepsilon}{\\delta}\\right) \\to 0$ ，从而 $P(|X_nY_n| > \\varepsilon) \\to 0$ ，即 $X_{n}Y_{n} \\stackrel{\\mathrm{p}}{\\to} 0.$ 如果 $c \\neq 0$ ，则存在一个随机变量 $Z_{n} \\stackrel{\\mathrm{p}}{\\to} 0$ 使得 $Y_{n} = c + Z_{n}$. 因此 $X_{n}Y_{n} = X_{n}Z_{n} + cX_{n}$. 由(1)和连续映射定理可知(2)成立."
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.207,
+            0.476,
+            0.677,
+            0.509
+          ],
+          "content": "\\frac {X _ {n}}{Y _ {n}} - c ^ {- 1} X _ {n} = X _ {n} (Y _ {n} ^ {- 1} - c ^ {- 1}). \\tag {3}",
+          "image_source": "images/page_343_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.515,
+            0.873,
+            0.579
+          ],
+          "content": "由连续映射定理可知 $Y_{n}^{-1}\\xrightarrow{\\mathrm{p}}c^{-1}$ ，即 $Y_{n}^{-1} - c^{-1} = o_{p}(1)$ .由(2)可知， $X_{n}(Y_{n}^{-1} - c^{-1})\\xrightarrow{\\mathrm{d}}$ 0.由定理A.1.6, $X_{n}(Y_{n}^{-1} - c^{-1})\\xrightarrow{\\mathrm{p}}0.$ 由(1)可知， $Y_{n}^{-1}X_{n}\\xrightarrow{\\mathrm{d}}c^{-1}X_{n}.$ 再由(2)可知结论成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.592,
+            0.875,
+            0.67
+          ],
+          "content": "例 A.2.2 设  $X_{1}, X_{2}, \\cdots, X_{n}$  是一列独立同分布的随机变量序列且  $E(X_{1}) = 0$ ,  $\\sigma^{2} = E(X_{1}^{2}) < \\infty$ . 则由 Chebyshev 不等式, 我们可证  $\\frac{1}{n} \\sum_{i=1}^{n} X_{i}^{2} \\xrightarrow{P} \\sigma^{2}, \\bar{X}_{n} \\xrightarrow{P} 0$ . 由连续映射定理可知  $\\bar{X}_{n}^{2} \\xrightarrow{P} 0$ . 进一步, 由 Slutsky 定理可知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.27,
+            0.689,
+            0.769,
+            0.734
+          ],
+          "content": "S _ {n} ^ {2} = \\frac {1}{n - 1} \\sum_ {i = 1} ^ {n} (X _ {i} - \\bar {X} _ {n}) ^ {2} = \\frac {n}{n - 1} \\left(\\frac {1}{n} \\sum_ {i = 1} ^ {n} X _ {i} ^ {2} - \\bar {X} _ {n} ^ {2}\\right) \\xrightarrow {\\mathrm{P}} \\sigma^ {2}.",
+          "image_source": "images/page_343_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.755,
+            0.873,
+            0.798
+          ],
+          "content": "由连续映射定理可知 $S_{n}\\xrightarrow{\\mathrm{p}}\\sigma$ 由中心极限定理可知， $\\sqrt{n}\\bar{X}_n\\xrightarrow{\\mathrm{d}}N(0,\\sigma^2)$ 因此，由Slutsky定理可知 $t$ 统计量 $\\sqrt{n}\\bar{X}_n / S_n\\xrightarrow{\\mathrm{d}}N(0,1)$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.202,
+            0.805,
+            0.554,
+            0.823
+          ],
+          "content": "最后, 我们给出如下关于  $o_{p}$  和  $O_{p}$  的结论:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.252,
+            0.845,
+            0.783,
+            0.864
+          ],
+          "content": "o _ {p} (1) + o _ {p} (1) = o _ {p} (1), o _ {p} (1) + O _ {p} (1) = O _ {p} (1), O _ {p} (1) o _ {p} (1) = o _ {p} (1),",
+          "image_source": "images/page_343_equation_14.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.258,
+            0.875,
+            0.597,
+            0.896
+          ],
+          "content": "\\left[ 1 + o _ {p} (1) \\right] ^ {- 1} = O _ {p} (1), o _ {p} \\left(R _ {n}\\right) = R _ {n} o _ {p} (1),",
+          "image_source": "images/page_343_equation_15.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.254,
+            0.909,
+            0.577,
+            0.928
+          ],
+          "content": "O _ {p} \\left(R _ {n}\\right) = R _ {n} O _ {p} (1), o _ {p} \\left(O _ {p} (1)\\right) = o _ {p} (1).",
+          "image_source": "images/page_343_equation_16.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 344,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.08,
+            0.067,
+            0.109,
+            0.079
+          ],
+          "content": "332"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.125,
+            0.066,
+            0.235,
+            0.08
+          ],
+          "content": "附录 补充知识"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.124,
+            0.12,
+            0.494,
+            0.142
+          ],
+          "level": 2,
+          "content": "A.3 大数定律与中心极限定理"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.188,
+            0.831,
+            0.229
+          ],
+          "content": "本节给出关于独立随机变量序列求和的大数定理. 本节定理的证明参见 Billingsley (1995)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.235,
+            0.735,
+            0.252
+          ],
+          "content": "定义A.3.1 设 $\\{X_{n}\\}$ 为随机变量序列且有有限的期望 $E(X_{n})$ .如果"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.375,
+            0.264,
+            0.83,
+            0.305
+          ],
+          "content": "\\frac {1}{n} \\sum_ {i = 1} ^ {n} \\left[ X _ {i} - E (X _ {i}) \\right] \\xrightarrow {\\mathrm{p}} 0, \\tag {A.3.1}",
+          "image_source": "images/page_344_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.317,
+            0.431,
+            0.334
+          ],
+          "content": "则称 $\\{X_{n}\\}$ 满足（弱）大数定律.如果"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.374,
+            0.346,
+            0.83,
+            0.387
+          ],
+          "content": "\\frac {1}{n} \\sum_ {i = 1} ^ {n} \\left[ X _ {i} - E (X _ {i}) \\right] \\stackrel {\\mathrm{a.s.}} {\\rightarrow} 0, \\tag {A.3.2}",
+          "image_source": "images/page_344_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.399,
+            0.361,
+            0.416
+          ],
+          "content": "则称  $\\{X_{n}\\}$  满足强大数定律."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.422,
+            0.704,
+            0.439
+          ],
+          "content": "定理 A.3.1 假设  $\\{X_{n}\\}$  是一列独立同分布的随机变量序列, 则"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.16,
+            0.445,
+            0.818,
+            0.485
+          ],
+          "sub_type": "text",
+          "content": "(1) (Khinchin (辛钦) 大数定律) 弱大数定律成立的充要条件是  $E(X_{n}) = a$  有限;\n(2) 如果  $E(X_{n}) = a$  有限, 则强大数定律成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.162,
+            0.49,
+            0.531,
+            0.507
+          ],
+          "content": "下面给出一些独立但并不同分布的大数定律."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.514,
+            0.83,
+            0.555
+          ],
+          "content": "定理 A.3.2 假设  $\\{X_{n}\\}$  是一列期望有限的随机变量序列且  $E(X_{i})=\\mu_{i},\\mathrm{Var}(X_{i})=\\sigma_{i}^{2}$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.557,
+            0.629,
+            0.592
+          ],
+          "content": "(1) 假设  $X_{1}, X_{2}, \\cdots, X_{n}$  互不相关,  $\\lim_{n\\to\\infty}\\frac{1}{n^{2}}\\sum_{i=1}^{n}\\sigma_{i}^{2}=0$ , 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.374,
+            0.604,
+            0.58,
+            0.647
+          ],
+          "content": "\\frac {1}{n} \\sum_ {i = 1} ^ {n} X _ {i} - \\frac {1}{n} \\sum_ {i = 1} ^ {n} \\mu_ {i} \\xrightarrow {\\mathrm{p}} 0.",
+          "image_source": "images/page_344_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.659,
+            0.779,
+            0.694
+          ],
+          "content": "(2) 假设  $X_{1}, X_{2}, \\cdots, X_{n}$  独立,  $\\sum_{i=1}^{\\infty} \\sigma_{i}^{2}/c_{i}^{2} < \\infty$ , 其中  $c_{i} \\rightarrow \\infty$  且严格单增, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.383,
+            0.707,
+            0.57,
+            0.749
+          ],
+          "content": "c _ {n} ^ {- 1} \\sum_ {i = 1} ^ {n} (X _ {i} - \\mu_ {i}) \\stackrel {\\text {a.s.}} {\\rightarrow} 0.",
+          "image_source": "images/page_344_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.761,
+            0.628,
+            0.797
+          ],
+          "content": "(3) 假设  $X_{1}, X_{2}, \\cdots, X_{n}$  独立且  $\\mu_{i} = \\mu, \\sum_{i=1}^{\\infty} \\sigma_{i}^{-2} = \\infty$ ，则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.384,
+            0.809,
+            0.569,
+            0.851
+          ],
+          "content": "\\sum_ {i = 1} ^ {n} \\frac {X _ {i}}{\\sigma_ {i}} / \\sum_ {i = 1} ^ {n} \\sigma_ {i} ^ {- 2} \\stackrel {{\\text {a.s.}}} {{\\rightarrow}} \\mu .",
+          "image_source": "images/page_344_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.863,
+            0.832,
+            0.926
+          ],
+          "content": "例 A.3.1 假设  $(X_{i}, Y_{i}), i = 1, 2, \\cdots, n$  是一列独立同分布的二元随机变量且  $E(X_{1}) = \\mu_{1}, E(Y_{1}) = \\mu_{2}, \\operatorname{Var}(X_{1}) = \\sigma_{1}^{2}, \\operatorname{Var}(Y_{1}) = \\sigma_{2}^{2}, \\operatorname{Cor}(X_{1}, Y_{1}) = \\rho.$  设样本相关系数为"
+        }
+      ]
+    },
+    {
+      "page_idx": 345,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.663,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": "A.3 大数定律与中心极限定理"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.89,
+            0.069,
+            0.917,
+            0.08
+          ],
+          "content": "333"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.353,
+            0.119,
+            0.685,
+            0.194
+          ],
+          "content": "r _ {n} = \\frac {\\frac {1}{n} \\sum X _ {i} Y _ {i} - \\bar {X} \\bar {Y}}{\\sqrt {\\left(\\sum \\frac {X _ {i} ^ {2}}{n} - \\bar {X} ^ {2}\\right) \\left(\\sum \\frac {Y _ {i} ^ {2}}{n} - \\bar {Y} ^ {2}\\right)}}.",
+          "image_source": "images/page_345_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.208,
+            0.674,
+            0.244
+          ],
+          "content": "则由大数定律和连续映射定理知 $r_n \\stackrel{\\mathrm{a.s.}}{\\rightarrow} \\frac{E(X_1Y_1) - \\mu_1\\mu_2}{\\sigma_1^2\\sigma_2^2} = \\rho$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.203,
+            0.245,
+            0.885,
+            0.262
+          ],
+          "content": "下面我们介绍常用的中心极限定理. 首先介绍独立同分布假设条件下的中心极限定理."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.267,
+            0.875,
+            0.31
+          ],
+          "content": "定理 A.3.3 (Lindeberg-Lévy (林德伯格-莱维) 定理) 假设  $X_{1}, X_{2}, \\cdots, X_{n}$  独立同分布且  $E(X) = \\mu, \\operatorname{Var}(X) = \\sigma^{2} < \\infty$ ，则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.423,
+            0.322,
+            0.871,
+            0.356
+          ],
+          "content": "\\frac {\\sqrt {n} (\\bar {X} - \\mu)}{\\sigma} \\xrightarrow {\\mathrm{d}} N (0, 1). \\tag {A.3.3}",
+          "image_source": "images/page_345_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.369,
+            0.871,
+            0.412
+          ],
+          "content": "例 A.3.2 设  $X_{1}, X_{2}, \\cdots, X_{n}$  是一列独立同分布的随机变量序列.  $E(X_{1}) = \\mu$ ,  $\\mathrm{Var}(X_{1}) = \\sigma^{2}$ ,  $E(X_{1}^{4}) = \\mu_{4} < \\infty$ . 则对于样本方差  $S_{n}^{2}$ , 我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.228,
+            0.425,
+            0.811,
+            0.469
+          ],
+          "content": "\\sqrt {n} \\left(S _ {n} ^ {2} - \\sigma^ {2}\\right) = \\sqrt {n} \\left[ \\frac {1}{n - 1} \\sum_ {i = 1} ^ {n} \\left(X _ {i} - \\mu\\right) ^ {2} - \\sigma^ {2} \\right] - \\sqrt {n} \\frac {n}{n - 1} \\left(\\bar {X} _ {n} - \\mu\\right) ^ {2}.",
+          "image_source": "images/page_345_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.485,
+            0.873,
+            0.525
+          ],
+          "content": "由定理 A.3.3 知右边第一项渐近服从  $N(0, \\mu_{4} - \\sigma^{4})$ . 由大数定律知第二项依概率收敛到 0. 故由 Slutsky 定理知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.384,
+            0.542,
+            0.652,
+            0.564
+          ],
+          "content": "\\sqrt {n} \\left(S _ {n} ^ {2} - \\sigma^ {2}\\right) \\xrightarrow {\\mathrm{d}} N \\left(0, \\mu_ {4} - \\sigma^ {4}\\right).",
+          "image_source": "images/page_345_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.581,
+            0.875,
+            0.622
+          ],
+          "content": "定理 A.3.4（多元中心极限定理） 假设  $X_{1}, X_{2}, \\cdots, X_{n}$  独立同分布且  $E(X) = \\mu, \\operatorname{Var}(X) = \\Sigma$ ，则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.416,
+            0.637,
+            0.872,
+            0.658
+          ],
+          "content": "\\sqrt {n} (\\overline {{\\boldsymbol {X}}} - \\boldsymbol {\\mu}) \\xrightarrow {\\mathrm{d}} N _ {p} (\\boldsymbol {0}, \\Sigma). \\tag {A.3.4}",
+          "image_source": "images/page_345_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.203,
+            0.677,
+            0.585,
+            0.694
+          ],
+          "content": "对于独立但不同分布的情况, 我们有如下定理."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.206,
+            0.699,
+            0.873,
+            0.719
+          ],
+          "content": "定理 A.3.5 (Lindeberg-Feller (林德伯格-费勒) 定理) 假设 $\\{X_{n}\\}$ 是一列期望"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.725,
+            0.871,
+            0.777
+          ],
+          "content": "为 $\\mu_{n}$, 方差 $\\sigma_{n}^{2}$ 有限的随机变量序列. 设 $F_{i}(x)$ 是 $X_{i}$ 的累积分布函数, $s_{n}^{2} = \\sum_{i=1}^{n} \\sigma_{i}^{2}$. 如果对于任意的 $\\varepsilon > 0$,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.354,
+            0.792,
+            0.872,
+            0.833
+          ],
+          "content": "\\frac {1}{s _ {n} ^ {2}} \\sum_ {j = 1} ^ {n} \\int_ {| x - \\mu_ {j} | > \\varepsilon s _ {n}} (x - \\mu_ {j}) ^ {2} \\mathrm{d} F _ {j} (x) \\rightarrow 0, \\tag {A.3.5}",
+          "image_source": "images/page_345_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.851,
+            0.19,
+            0.865
+          ],
+          "content": "则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.416,
+            0.88,
+            0.62,
+            0.93
+          ],
+          "content": "\\frac {\\sum_ {i = 1} ^ {n} \\left(X _ {i} - \\mu_ {i}\\right)}{s _ {n}} \\xrightarrow {\\mathrm{d}} N (0, 1).",
+          "image_source": "images/page_345_equation_18.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 346,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.08,
+            0.067,
+            0.109,
+            0.079
+          ],
+          "content": "334"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.125,
+            0.066,
+            0.237,
+            0.08
+          ],
+          "content": "附录 补充知识"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.122,
+            0.831,
+            0.162
+          ],
+          "content": "条件 (A.3.5) 称为 Lindeberg-Feller 条件. 一般来说, Lindeberg-Feller 条件比较难验证. 下面有一个更加容易验证的条件——Lyapunov (李雅普诺夫) 条件 (A.3.6)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.167,
+            0.833,
+            0.227
+          ],
+          "content": "定理A.3.6 (Lyapunov定理) 假设 $\\{X_{n}\\}$ 是一列期望为 $\\mu_{n}$, 方差 $\\sigma_{n}^{2}$ 有限的随机变量序列. 设 $s_n^2 = \\sum_{i=1}^{n} \\sigma_i^2$. 如果存在 $\\delta > 0$, 使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.353,
+            0.243,
+            0.83,
+            0.285
+          ],
+          "content": "\\frac {1}{s _ {n} ^ {2 + \\delta}} \\sum_ {j = 1} ^ {n} E [ | X _ {j} - \\mu_ {j} | ^ {2 + \\delta} ] \\to 0, \\tag {A.3.6}",
+          "image_source": "images/page_346_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.304,
+            0.149,
+            0.32
+          ],
+          "content": "则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.375,
+            0.336,
+            0.581,
+            0.388
+          ],
+          "content": "\\frac {\\sum_ {i = 1} ^ {n} \\left(X _ {i} - \\mu_ {i}\\right)}{s _ {n}} \\xrightarrow {\\mathrm{d}} N (0, 1).",
+          "image_source": "images/page_346_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.405,
+            0.628,
+            0.423
+          ],
+          "content": "例 A.3.3 设  $X_{i} \\sim B(1, p_{i})$  且  $X_{1}, X_{2}, \\cdots, X_{n}$  独立. 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.181,
+            0.439,
+            0.771,
+            0.53
+          ],
+          "content": "\\begin{array}{l} \\sum_ {i = 1} ^ {n} E [ | X _ {i} - E (X _ {i}) | ^ {3} ] = \\sum_ {i = 1} ^ {n} [ (1 - p _ {i}) ^ {3} p _ {i} + p _ {i} ^ {3} (1 - p _ {i}) ] \\\\ \\leqslant 2 s _ {n} ^ {2} = 2 \\sum_ {i = 1} ^ {n} E [ | X _ {i} - E (X _ {i}) | ^ {2} ] = 2 \\sum_ {i = 1} ^ {n} p _ {i} \\left(1 - p _ {i}\\right). \\\\ \\end{array}",
+          "image_source": "images/page_346_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.547,
+            0.832,
+            0.618
+          ],
+          "content": "如果存在常数 $c_{1}, c_{2}$ 使得 $0 < c_{1} < p_{i} < c_{2} < 1$, 则 $s_{n}^{2} \\to \\infty$ 且 Lyapunov 条件成立. 从而 $\\frac{\\sum_{i=1}^{n}(X_i - p_i)}{s_n} \\xrightarrow{\\mathrm{d}} N(0,1)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.621,
+            0.564,
+            0.638
+          ],
+          "content": "对于非等权的求和式, 我们有如下中心极限定理."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.643,
+            0.833,
+            0.707
+          ],
+          "content": "定理 A.3.7 (Hajek-Šidák 定理) 假设  $X_{1}, X_{2}, \\cdots, X_{n}$  是一列独立同分布的随机变量序列.  $E(X) = \\mu, \\operatorname{Var}(X) = \\sigma^{2} < \\infty$ . 设  $c_{n} = (c_{n1}, c_{n2}, \\cdots, c_{nn})$  是一组向量满足当  $n \\to \\infty$  时,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.4,
+            0.722,
+            0.83,
+            0.779
+          ],
+          "content": "\\max _ {1 \\leqslant i \\leqslant n} \\frac {c _ {n i} ^ {2}}{\\sum_ {j = 1} ^ {n} c _ {n j} ^ {2}} \\to 0, \\tag {A.3.7}",
+          "image_source": "images/page_346_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.795,
+            0.148,
+            0.81
+          ],
+          "content": "则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.366,
+            0.816,
+            0.59,
+            0.895
+          ],
+          "content": "\\frac {\\sum_ {i = 1} ^ {n} c _ {n i} \\left(X _ {i} - \\mu\\right)}{\\sigma \\sqrt {\\sum_ {j = 1} ^ {n} c _ {n j} ^ {2}}} \\xrightarrow {\\mathrm{d}} N (0, 1).",
+          "image_source": "images/page_346_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.909,
+            0.554,
+            0.927
+          ],
+          "content": "同样地, 我们有如下多元 Lindeberg-Feller 定理."
+        }
+      ]
+    },
+    {
+      "page_idx": 347,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.757,
+            0.068,
+            0.872,
+            0.081
+          ],
+          "content": "A.4 Delta 方法"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.89,
+            0.069,
+            0.917,
+            0.08
+          ],
+          "content": "335"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.123,
+            0.874,
+            0.198
+          ],
+          "content": "定理 A.3.8 假设  $X_{i}, i=1,2,\\cdots,n$  是一列独立的多元随机变量序列.  $E(\\boldsymbol{X}_{i})=\\boldsymbol{\\mu}_{i}, \\operatorname{Var}(\\boldsymbol{X}_{i})=\\Sigma_{i}.$   $X_{i}$  的累积分布函数为  $F_{i}.$  如果当  $n\\to\\infty$  时,  $\\frac{1}{n}\\sum_{i=1}^{n}\\Sigma_{i}\\to\\Sigma$  且对任意的  $\\varepsilon>0,$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.343,
+            0.201,
+            0.695,
+            0.243
+          ],
+          "content": "\\frac {1}{n} \\sum_ {j = 1} ^ {n} \\int_ {\\| \\boldsymbol {x} - \\boldsymbol {\\mu} _ {j} \\| > \\varepsilon \\sqrt {n}} \\left\\| \\boldsymbol {x} - \\boldsymbol {\\mu} _ {j} \\right\\| ^ {2} \\mathrm{d} F _ {j} (\\boldsymbol {x}) \\to 0,",
+          "image_source": "images/page_347_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.166,
+            0.253,
+            0.19,
+            0.267
+          ],
+          "content": "则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.396,
+            0.27,
+            0.641,
+            0.311
+          ],
+          "content": "\\frac {1}{\\sqrt {n}} \\sum_ {i = 1} ^ {n} (\\boldsymbol {X} _ {i} - \\boldsymbol {\\mu} _ {i}) \\xrightarrow {\\mathrm{d}} N (\\boldsymbol {0}, \\Sigma).",
+          "image_source": "images/page_347_equation_5.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.166,
+            0.355,
+            0.372,
+            0.376
+          ],
+          "level": 2,
+          "content": "A.4 Delta 方法"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.424,
+            0.871,
+            0.463
+          ],
+          "content": "如果统计量  $T_{n}$  服从渐近正态分布, 那么对于连续函数  $g(x), g(T_{n})$  是否仍然具有渐近正态性? 下面的 Delta 定理给出了相应的结论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.467,
+            0.873,
+            0.51
+          ],
+          "content": "定理A.4.1 (Delta定理) 假设统计量 $T_{n}$ 满足 $\\sqrt{n}(T_n - \\theta)\\xrightarrow{\\mathrm{d}}N\\left(0,\\sigma^2 (\\theta)\\right)$. 实数空间上函数 $g(x)$ 在 $\\theta$ 处一阶可导且 $g^{\\prime}(\\theta)\\neq 0$. 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.345,
+            0.523,
+            0.691,
+            0.551
+          ],
+          "content": "\\sqrt {n} \\left[ g \\left(T _ {n}\\right) - g (\\theta) \\right] \\xrightarrow {\\mathrm{d}} N \\left(0, \\left[ g ^ {\\prime} (\\theta) \\right] ^ {2} \\sigma^ {2} (\\theta)\\right).",
+          "image_source": "images/page_347_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.202,
+            0.562,
+            0.8,
+            0.58
+          ],
+          "content": "证明 由 $T_{n}$ 的渐近正态性假设知 $T_{n} - \\theta = o_{p}(1)$. 因此由Taylor展开知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.338,
+            0.597,
+            0.697,
+            0.615
+          ],
+          "content": "g \\left(T _ {n}\\right) = g (\\theta) + \\left(T _ {n} - \\theta\\right) g ^ {\\prime} (\\theta) + o _ {p} \\left(T _ {n} - \\theta\\right).",
+          "image_source": "images/page_347_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.631,
+            0.381,
+            0.648
+          ],
+          "content": "等式两边同时乘 $\\sqrt{n}$ 可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.292,
+            0.666,
+            0.745,
+            0.686
+          ],
+          "content": "\\sqrt {n} \\left[ g \\left(T _ {n}\\right) - g (\\theta) \\right] = \\sqrt {n} \\left(T _ {n} - \\theta\\right) g ^ {\\prime} (\\theta) + \\sqrt {n} o _ {p} \\left(T _ {n} - \\theta\\right).",
+          "image_source": "images/page_347_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.701,
+            0.791,
+            0.72
+          ],
+          "content": "由于 $\\sqrt{n}(T_n - \\theta) = O_p(1)$, 因此 $\\sqrt{n} o_p(T_n - \\theta) = o_p(1)$. 由 Slutsky 定理得知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.345,
+            0.732,
+            0.691,
+            0.759
+          ],
+          "content": "\\sqrt {n} \\left[ g \\left(T _ {n}\\right) - g (\\theta) \\right] \\xrightarrow {\\mathrm{d}} N \\left(0, \\left[ g ^ {\\prime} (\\theta) \\right] ^ {2} \\sigma^ {2} (\\theta)\\right).",
+          "image_source": "images/page_347_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.203,
+            0.771,
+            0.763,
+            0.789
+          ],
+          "content": "当  $g'(\\theta)=0$  时， $g(T_{n})$  的渐近分布则由 Taylor 展开的更高阶项决定."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.792,
+            0.874,
+            0.835
+          ],
+          "content": "定理A.4.2 假设统计量 $T_{n}$ 满足 $\\sqrt{n}(T_n - \\theta)\\stackrel{\\mathrm{d}}{\\to}N\\left(0,\\sigma^2 (\\theta)\\right)$. 实数空间上函数 $g(x)$ 在 $\\theta$ 处 $k$ 阶可导且 $g^{(k)}(\\theta)\\neq 0,g^{(j)}(\\theta) = 0,j < k.$ 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.315,
+            0.845,
+            0.721,
+            0.876
+          ],
+          "content": "(\\sqrt {n}) ^ {k} \\left[ g \\left(T _ {n}\\right) - g (\\theta) \\right] \\xrightarrow {\\mathrm{d}} \\frac {1}{k !} g ^ {(k)} (\\theta) \\left[ N \\left(0, \\sigma^ {2} (\\theta)\\right) \\right] ^ {k}.",
+          "image_source": "images/page_347_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.886,
+            0.871,
+            0.926
+          ],
+          "content": "定理 A.4.2 的证明类似于定理 A.4.1 的证明, 区别在于利用了高阶 Taylor 展开式. 具体证明过程留作练习."
+        }
+      ]
+    },
+    {
+      "page_idx": 348,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.08,
+            0.068,
+            0.107,
+            0.079
+          ],
+          "content": "336"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.125,
+            0.066,
+            0.234,
+            0.079
+          ],
+          "content": "附录 补充知识"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.122,
+            0.831,
+            0.183
+          ],
+          "content": "例 A.4.1 设  $X_{1}, X_{2}, \\cdots, X_{n}$  是一列独立同分布的随机变量.  $E(X) = \\mu, \\operatorname{Var}(X) = \\sigma^{2} < \\infty$ . 定义  $T_{n} = \\bar{X}_{n}, \\theta = \\mu, \\sigma^{2}(\\theta) = \\sigma^{2}, g(x) = x^{2}$ . 当  $\\mu \\neq 0$  时,  $g'(\\theta) = 2\\mu \\neq 0$ . 由定理 A.4.1 知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.347,
+            0.185,
+            0.604,
+            0.206
+          ],
+          "content": "\\sqrt {n} \\left(\\bar {X} _ {n} ^ {2} - \\mu^ {2}\\right) \\xrightarrow {\\mathrm{d}} N \\left(0, 4 \\mu^ {2} \\sigma^ {2}\\right).",
+          "image_source": "images/page_348_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.21,
+            0.66,
+            0.231
+          ],
+          "content": "当 $\\mu = 0$ 时，$g'(\\theta) = 0, g''(\\theta) = 2$，由定理A.4.2知，$n\\bar{X}_n^2 / \\sigma^2 \\xrightarrow{\\mathrm{d}} \\chi_1^2$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.161,
+            0.235,
+            0.426,
+            0.251
+          ],
+          "content": "类似地, 我们有多元 Delta 定理."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.256,
+            0.83,
+            0.3
+          ],
+          "content": "定理A.4.3 设 $\\{\\pmb{T}_n\\}$ 是一列 $p$ 维随机向量满足 $\\sqrt{n} (\\pmb{T}_n - \\pmb{\\theta})\\xrightarrow{\\mathrm{d}}N_p(\\mathbf{0},\\Sigma (\\pmb {\\theta}))$ .函数 $g:\\mathbb{R}^p\\to \\mathbb{R}^m$ 在 $\\pmb{\\theta}$ 处一阶可导，导数为 $\\nabla g(\\pmb {\\theta})$ .如果 $[\\nabla g(\\pmb {\\theta})]^{\\mathrm{T}}\\Sigma (\\pmb {\\theta})\\nabla g(\\pmb {\\theta})$ 正定，则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.268,
+            0.307,
+            0.685,
+            0.329
+          ],
+          "content": "\\sqrt {n} \\left[ g \\left(\\boldsymbol {T} _ {n}\\right) - g (\\boldsymbol {\\theta}) \\right] \\xrightarrow {\\mathrm{d}} N _ {m} \\left(\\boldsymbol {0}, [ \\nabla g (\\boldsymbol {\\theta}) ] ^ {\\mathrm{T}} \\Sigma (\\boldsymbol {\\theta}) \\nabla g (\\boldsymbol {\\theta})\\right).",
+          "image_source": "images/page_348_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.339,
+            0.595,
+            0.355
+          ],
+          "content": "定理 A.4.3 的证明类似于一元 Delta 定理, 留作练习."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.362,
+            0.83,
+            0.403
+          ],
+          "content": "例 A.4.2 设  $X_{1}, X_{2}, \\cdots, X_{n}$  是一列独立同分布的随机变量.  $E(X) = \\mu, \\operatorname{Var}(X) = \\sigma^{2} < \\infty, \\mu_{3} = E(X^{3}) < \\infty, \\mu_{4} = E(X^{4}) < \\infty.$  则由定理 A.4.3 可知,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.249,
+            0.409,
+            0.704,
+            0.462
+          ],
+          "content": "\\sqrt {n} \\binom{\\bar {X} _ {n} - \\mu}{S _ {n} ^ {2} - \\sigma^ {2}} \\xrightarrow {\\mathrm{d}} N _ {2} \\left(\\binom{0}{0}, \\left( \\begin{array}{c c} \\sigma^ {2} & \\mu_ {3} \\\\ \\mu_ {3} & \\mu_ {4} - \\sigma^ {4} \\end{array} \\right)\\right).",
+          "image_source": "images/page_348_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.469,
+            0.529,
+            0.487
+          ],
+          "content": "故  $\\bar{X}_{n}$  与  $S_{n}^{2}$  渐近独立的一个充分条件是  $\\mu_{3}=0$ ."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.124,
+            0.539,
+            0.438,
+            0.56
+          ],
+          "level": 2,
+          "content": "A.5 常见重要概率不等式"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.607,
+            0.83,
+            0.647
+          ],
+          "content": "除了 Chebyshev 不等式和 Markov 不等式外, 本节给出一些常见的重要概率不等式. 这些不等式在统计学的理论分析中运用非常广泛."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.653,
+            0.83,
+            0.692
+          ],
+          "content": "定理 A.5.1 (Cantelli 不等式) 若 X 是一个随机变量, 其方差为  $\\sigma^{2} \\in (0, \\infty)$ , 则对于  $\\lambda > 0$ ,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.351,
+            0.695,
+            0.602,
+            0.728
+          ],
+          "content": "P (X - E (X) \\geqslant \\lambda) \\leqslant \\frac {\\sigma^ {2}}{\\sigma^ {2} + \\lambda^ {2}}.",
+          "image_source": "images/page_348_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.733,
+            0.52,
+            0.75
+          ],
+          "content": "证明 令 $Y = X - E(X)$, 并令 $u \\geqslant 0$. 那么"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.202,
+            0.76,
+            0.75,
+            0.831
+          ],
+          "content": "\\begin{array}{l} P (X - E (X) \\geqslant \\lambda) = P (Y + u \\geqslant \\lambda + u) \\leqslant P \\left((Y + u) ^ {2} \\geqslant (\\lambda + u) ^ {2}\\right) \\\\ \\leqslant \\frac {E \\left[ (Y + u) ^ {2} \\right]}{(\\lambda + u) ^ {2}} = \\frac {\\sigma^ {2} + u ^ {2}}{(\\lambda + u) ^ {2}}, \\\\ \\end{array}",
+          "image_source": "images/page_348_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.84,
+            0.357,
+            0.857
+          ],
+          "content": "令  $\\mu = \\sigma^{2}/\\lambda,$  则不等式成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.863,
+            0.83,
+            0.926
+          ],
+          "content": "Cantelli 不等式是对 Chebyshev 不等式单边尾部的改进. 若选取  $\\lambda = \\sigma$ , 我们可以通过 Cantelli 不等式得到  $P(X \\geqslant E(X) + \\sigma) \\leqslant \\frac{1}{2}$  和  $P(X \\leqslant E(X) - \\sigma) \\leqslant \\frac{1}{2}$ . 因此, Cantelli 不等式表明, 随机变量的平均数和中位数的差不会超过一个标准差."
+        }
+      ]
+    },
+    {
+      "page_idx": 349,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.693,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": "A.5 常见重要概率不等式"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.89,
+            0.068,
+            0.917,
+            0.08
+          ],
+          "content": "337"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.123,
+            0.871,
+            0.166
+          ],
+          "content": "定理 A.5.2 (Cauchy 不等式) 设 X, Y 为任意两个随机变量, 若  $E(X^{2}) < \\infty$ ,  $E(Y^{2}) < \\infty$ , 则有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.399,
+            0.171,
+            0.636,
+            0.192
+          ],
+          "content": "\\left[ E (X Y) \\right] ^ {2} \\leqslant E \\left(X ^ {2}\\right) E \\left(Y ^ {2}\\right).",
+          "image_source": "images/page_349_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.163,
+            0.206,
+            0.871,
+            0.248
+          ],
+          "content": "证明 设 $g(t) = E[(tX - Y)^2] = t^2 E(X^2) - 2tE(XY) + E(Y^2)$. 因为对任意的 $t, (tX - Y)^2 \\geqslant 0, g(t) \\geqslant 0$, 故"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.356,
+            0.267,
+            0.68,
+            0.288
+          ],
+          "content": "\\Delta = [ 2 E (X Y) ] ^ {2} - 4 E \\left(X ^ {2}\\right) E \\left(Y ^ {2}\\right) \\leqslant 0.",
+          "image_source": "images/page_349_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.307,
+            0.207,
+            0.322
+          ],
+          "content": "所以"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.4,
+            0.332,
+            0.637,
+            0.352
+          ],
+          "content": "\\left[ E (X Y) \\right] ^ {2} \\leqslant E \\left(X ^ {2}\\right) E \\left(Y ^ {2}\\right),",
+          "image_source": "images/page_349_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.166,
+            0.367,
+            0.42,
+            0.383
+          ],
+          "content": "当且仅当 $tX = Y$ 时等号成立."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.854,
+            0.369,
+            0.871,
+            0.382
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_349_image_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.166,
+            0.395,
+            0.873,
+            0.435
+          ],
+          "content": "例 A.5.1 Cauchy 不等式在数理统计中的一个具体应用是在计算相关系数的上、下界时. 相关系数是两个随机变量之间线性关系的度量, 其定义为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.387,
+            0.447,
+            0.649,
+            0.482
+          ],
+          "content": "\\rho_ {X Y} = \\frac {E \\left[ (X - \\mu_ {X}) (Y - \\mu_ {Y}) \\right]}{\\sigma_ {X} \\sigma_ {Y}},",
+          "image_source": "images/page_349_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.498,
+            0.871,
+            0.539
+          ],
+          "content": "其中， $\\mu_{X}$  和  $\\mu_{Y}$  分别是随机变量 X 和 Y 的期望， $\\sigma_{X}$  和  $\\sigma_{Y}$  是它们的标准差。根据 Cauchy 不等式，我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.271,
+            0.555,
+            0.766,
+            0.583
+          ],
+          "content": "\\left\\{E \\left[ (X - \\mu_ {X}) (Y - \\mu_ {Y}) \\right] \\right\\} ^ {2} \\leqslant E \\left[ (X - \\mu_ {X}) ^ {2} \\right] E \\left[ (Y - \\mu_ {Y}) ^ {2} \\right],",
+          "image_source": "images/page_349_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.166,
+            0.598,
+            0.19,
+            0.613
+          ],
+          "content": "即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.468,
+            0.623,
+            0.569,
+            0.643
+          ],
+          "content": "(\\rho_ {X Y}) ^ {2} \\leqslant 1.",
+          "image_source": "images/page_349_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.658,
+            0.619,
+            0.675
+          ],
+          "content": "因此, 我们得到了相关系数的上、下界:  $-1 \\leqslant \\rho_{XY} \\leqslant 1$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.207,
+            0.681,
+            0.791,
+            0.699
+          ],
+          "content": "定理 A.5.3 (Jensen 不等式) 设 X 为随机变量,  $\\psi$  为一个凸函数, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.43,
+            0.72,
+            0.605,
+            0.737
+          ],
+          "content": "\\psi (E (X)) \\leqslant E [ \\psi (X) ].",
+          "image_source": "images/page_349_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.202,
+            0.759,
+            0.425,
+            0.775
+          ],
+          "content": "证明 由凸函数的定义知,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.38,
+            0.796,
+            0.656,
+            0.814
+          ],
+          "content": "\\psi (X) \\geqslant \\psi (E (X)) + c [ X - E (X) ],",
+          "image_source": "images/page_349_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.834,
+            0.542,
+            0.85
+          ],
+          "content": "其中 $c$ 是某个常数. 对不等式两边取期望可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.304,
+            0.871,
+            0.731,
+            0.889
+          ],
+          "content": "E [ \\psi (X) ] \\geqslant \\psi (E (X)) + c [ E (X) - E (X) ] = \\psi (E (X)).",
+          "image_source": "images/page_349_equation_22.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.909,
+            0.6,
+            0.927
+          ],
+          "content": "反之, 如果  $\\psi$  是一个凹函数, 则  $E[\\psi(X)] \\leqslant \\psi(E(X))$ ."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.854,
+            0.911,
+            0.871,
+            0.924
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_349_image_24.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 350,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.08,
+            0.067,
+            0.107,
+            0.079
+          ],
+          "content": "338"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.125,
+            0.066,
+            0.235,
+            0.08
+          ],
+          "content": "附录 补充知识"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.121,
+            0.831,
+            0.161
+          ],
+          "content": "例A.5.2 设 $X$ 是一个正的随机变量. 我们来讨论 $E(X^a)$ 与 $[E(X)]^a$ 的大小关系. 首先,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.307,
+            0.168,
+            0.646,
+            0.187
+          ],
+          "content": "E \\left(X ^ {a}\\right) = 1 = [ E (X) ] ^ {a}, \\qquad \\text {如果} a = 0,",
+          "image_source": "images/page_350_equation_3.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.31,
+            0.19,
+            0.644,
+            0.21
+          ],
+          "content": "E \\left(X ^ {a}\\right) = E (X) = [ E (X) ] ^ {a}, \\text {如果} a = 1.",
+          "image_source": "images/page_350_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.221,
+            0.83,
+            0.261
+          ],
+          "content": "当 a < 0 或者 a > 1 时,  $\\psi(x) = x^{a}$  是一个凸函数. 当 0 < a < 1 时,  $\\psi(x)$  是一个凹函数. 故由 Jensen 不等式, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.29,
+            0.277,
+            0.656,
+            0.295
+          ],
+          "content": "E \\left(X ^ {a}\\right) \\geqslant [ E (X) ] ^ {a}, \\quad \\text {如果} a <   0 \\text {或者} a > 1,",
+          "image_source": "images/page_350_equation_6.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.291,
+            0.309,
+            0.597,
+            0.327
+          ],
+          "content": "E \\left(X ^ {a}\\right) \\leqslant [ E (X) ] ^ {a}, \\quad \\text {如果} 0 <   a <   1.",
+          "image_source": "images/page_350_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.342,
+            0.58,
+            0.361
+          ],
+          "content": "特别地, 当 $a = 2$ 时, $E(X^2) \\geqslant [E(X)]^2$, 即 $\\operatorname{Var}(X) \\geqslant 0$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.366,
+            0.83,
+            0.405
+          ],
+          "content": "Hölder (赫尔德) 不等式是 Cauchy 不等式的推广. 在概率论中, 我们常用如下形式的 Hölder 不等式."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.407,
+            0.832,
+            0.454
+          ],
+          "content": "定理 A.5.4 (Hölder 不等式) 假设 $p, q \\in (1, \\infty)$ 且 $\\frac{1}{p} + \\frac{1}{q} = 1$. 对随机变量 $X, Y$, 若 $E(|X|^p) < \\infty, E(|Y|^q) < \\infty$, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.465,
+            0.621,
+            0.487
+          ],
+          "content": "E (| X Y |) \\leqslant [ E (| X | ^ {p}) ] ^ {\\frac {1}{p}} [ E (| Y | ^ {q}) ] ^ {\\frac {1}{q}}.",
+          "image_source": "images/page_350_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.502,
+            0.832,
+            0.59
+          ],
+          "content": "证明 首先, 如果 $E(|X|^p) = 0$ 或 $E(|Y|^q) = 0$, 那么 Hölder 不等式显然成立. 因此, 我们可以假设 $E(|X|^p) > 0$ 且 $E(|Y|^q) > 0$. 然后, 我们可以利用 Young (杨) 不等式 (Young's inequality) 来证明 Hölder 不等式. Young 不等式的形式为: 对于任意的正数 $a, b, p, q$, 其中 $1/p + 1/q = 1$, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.416,
+            0.598,
+            0.537,
+            0.632
+          ],
+          "content": "a b \\leqslant \\frac {a ^ {p}}{p} + \\frac {b ^ {q}}{q}.",
+          "image_source": "images/page_350_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.645,
+            0.75,
+            0.666
+          ],
+          "content": "取 $a = |X| / [E(|X|^p)]^{\\frac{1}{p}}, b = |Y| / [E(|Y|^q)]^{\\frac{1}{q}}$，将它们代入Young不等式，得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.279,
+            0.676,
+            0.676,
+            0.716
+          ],
+          "content": "\\frac {| X Y |}{[ E (| X | ^ {p}) ] ^ {\\frac {1}{p}} [ E (| Y | ^ {q}) ] ^ {\\frac {1}{q}}} \\leqslant \\frac {| X | ^ {p}}{p E (| X | ^ {p})} + \\frac {| Y | ^ {q}}{q E (| Y | ^ {q})}.",
+          "image_source": "images/page_350_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.728,
+            0.318,
+            0.745
+          ],
+          "content": "不等式两边取期望可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.261,
+            0.753,
+            0.694,
+            0.793
+          ],
+          "content": "\\frac {E (| X Y |)}{[ E (| X | ^ {p}) ] ^ {\\frac {1}{p}} [ E (| Y | ^ {q}) ] ^ {\\frac {1}{q}}} \\leqslant \\frac {E (| X | ^ {p})}{p E (| X | ^ {p})} + \\frac {E (| Y | ^ {q})}{q E (| Y | ^ {q})} = 1.",
+          "image_source": "images/page_350_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.804,
+            0.171,
+            0.82
+          ],
+          "content": "即证."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.812,
+            0.806,
+            0.83,
+            0.819
+          ],
+          "content": "□"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.829,
+            0.67,
+            0.846
+          ],
+          "content": "Hölder 不等式的一个推论是 Minkowski (闵可夫斯基) 不等式."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.852,
+            0.83,
+            0.893
+          ],
+          "content": "定理 A.5.5 (Minkowski 不等式) 对随机变量 X, Y, 若  $E(|X|^{p}) < \\infty$ ,  $E(|Y|^{p}) < \\infty$ , 其中  $1 \\leqslant p < \\infty$ , 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.293,
+            0.905,
+            0.659,
+            0.929
+          ],
+          "content": "[ E \\left(| X + Y | ^ {p}\\right) ] ^ {\\frac {1}{p}} \\leqslant [ E \\left(| X | ^ {p}\\right) ] ^ {\\frac {1}{p}} + [ E \\left(| Y | ^ {p}\\right) ] ^ {\\frac {1}{p}}.",
+          "image_source": "images/page_350_equation_22.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 351,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.693,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": "A.5 常见重要概率不等式"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.89,
+            0.069,
+            0.917,
+            0.08
+          ],
+          "content": "339"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.122,
+            0.871,
+            0.16
+          ],
+          "content": "证明 首先, 我们可以将不等式左侧中括号内的和式变形, 即把一个和式写成两个和式之和的形式:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.29,
+            0.174,
+            0.748,
+            0.23
+          ],
+          "content": "\\begin{array}{l} E \\left(| X + Y | ^ {p}\\right) = E \\left[ (X + Y) (X + Y) ^ {p - 1} \\right] \\\\ = E \\left[ X (X + Y) ^ {p - 1} \\right] + E \\left[ Y (X + Y) ^ {p - 1} \\right]. \\\\ \\end{array}",
+          "image_source": "images/page_351_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.242,
+            0.762,
+            0.26
+          ],
+          "content": "然后, 我们可以对上式右端两个和式都应用 Hölder 不等式. 因此, 我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.286,
+            0.271,
+            0.751,
+            0.305
+          ],
+          "content": "E \\left[ X (X + Y) ^ {p - 1} \\right] \\leqslant \\left[ E \\left(| X | ^ {p}\\right) \\right] ^ {\\frac {1}{p}} \\left\\{E \\left[ \\left| (X + Y) ^ {p - 1} \\right| ^ {q} \\right] \\right\\} ^ {\\frac {1}{q}},",
+          "image_source": "images/page_351_equation_5.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.289,
+            0.308,
+            0.739,
+            0.341
+          ],
+          "content": "E \\left[ Y (X + Y) ^ {p - 1} \\right] \\leqslant [ E \\left(| Y | ^ {p}\\right) ] ^ {\\frac {1}{p}} \\left\\{E \\left[ \\left| (X + Y) ^ {p - 1} \\right| ^ {q} \\right] \\right\\} ^ {\\frac {1}{q}}",
+          "image_source": "images/page_351_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.35,
+            0.615,
+            0.368
+          ],
+          "content": "其中 $1 / p + 1 / q = 1$ 将上述两个不等式相加，我们得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.216,
+            0.382,
+            0.825,
+            0.482
+          ],
+          "content": "\\begin{array}{l} E \\left(| X + Y | ^ {p}\\right) \\\\ \\leqslant \\left[ E \\left(| X | ^ {p}\\right) \\right] ^ {\\frac {1}{p}} \\left\\{E \\left[ \\left| (X + Y) ^ {p - 1} \\right| ^ {q} \\right] \\right\\} ^ {\\frac {1}{q}} + \\left[ E \\left(| Y | ^ {p}\\right) \\right] ^ {\\frac {1}{p}} \\left\\{E \\left[ \\left| (X + Y) ^ {p - 1} \\right| ^ {q} \\right] \\right\\} ^ {\\frac {1}{q}} \\\\ = \\left\\{\\left[ E \\left(| X | ^ {p}\\right) \\right] ^ {\\frac {1}{p}} + \\left[ E \\left(| Y | ^ {p}\\right) \\right] ^ {\\frac {1}{p}} \\right\\} \\left\\{E \\left[ \\left| (X + Y) ^ {p - 1} \\right| ^ {q} \\right] \\right\\} ^ {\\frac {1}{q}}. \\\\ \\end{array}",
+          "image_source": "images/page_351_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.492,
+            0.641,
+            0.525
+          ],
+          "content": "由于 $\\left\\{E\\left[\\left|(X + Y)^{p - 1}\\right|^q\\right]\\right\\}^{\\frac{1}{q}} = [E(|X + Y|^p)]^{\\frac{1}{q}}$ ，我们得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.337,
+            0.536,
+            0.7,
+            0.557
+          ],
+          "content": "[ E \\left(| X + Y | ^ {p}\\right) ] ^ {\\frac {1}{p}} \\leqslant [ E \\left(| X | ^ {p}\\right) ] ^ {\\frac {1}{p}} + [ E \\left(| Y | ^ {p}\\right) ] ^ {\\frac {1}{p}}.",
+          "image_source": "images/page_351_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.572,
+            0.871,
+            0.611
+          ],
+          "content": "对于有界独立随机变量之和, Hoeffding (霍夫丁) 不等式给出了偏离其期望的概率的上界."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.165,
+            0.617,
+            0.873,
+            0.677
+          ],
+          "content": "定理 A.5.6 (Hoeffding 不等式) 若随机变量  $X_{1}, X_{2}, \\cdots, X_{n}$  是独立的，且每个  $X_{i}$  在区间  $[a_{i}, b_{i}]$  上取值，则对于任意  $\\varepsilon > 0$  和  $S_{n} = \\sum_{i=1}^{n} X_{i}$ ,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.319,
+            0.687,
+            0.717,
+            0.83
+          ],
+          "content": "\\begin{array}{l} P \\left(S _ {n} - E \\left(S _ {n}\\right) \\geqslant \\varepsilon\\right) \\leqslant \\exp \\left\\{- \\frac {2 \\varepsilon^ {2}}{\\sum_ {i = 1} ^ {n} \\left(b _ {i} - a _ {i}\\right) ^ {2}} \\right\\}, \\\\ P \\left(S _ {n} - E \\left(S _ {n}\\right) \\leqslant - \\varepsilon\\right) \\leqslant \\exp \\left\\{- \\frac {2 \\varepsilon^ {2}}{\\sum_ {i = 1} ^ {n} \\left(b _ {i} - a _ {i}\\right) ^ {2}} \\right\\}. \\\\ \\end{array}",
+          "image_source": "images/page_351_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.842,
+            0.873,
+            0.883
+          ],
+          "content": "证明 在证明Hoeffding不等式之前，先证明一个Hoeffding引理:对于一个随机变量 $X, P(X \\in [a, b]) = 1, E(X) = 0$ ，有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.391,
+            0.895,
+            0.646,
+            0.931
+          ],
+          "content": "E \\left(\\mathrm{e} ^ {s X}\\right) \\leqslant \\exp \\left\\{\\frac {1}{8} s ^ {2} (b - a) ^ {2} \\right\\}.",
+          "image_source": "images/page_351_equation_15.jpg"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "created_at": "2026-05-30T23:42:17+08:00",
+      "producer_application": "jsPDF 2.4.0",
+      "page_count": 373,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 336,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 337,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 338,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 339,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 340,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 341,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 342,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 343,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 344,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 345,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 346,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 347,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 348,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 349,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 350,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 351,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

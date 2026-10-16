@@ -1,0 +1,4629 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "created_at": "2026-05-30T23:42:17+08:00",
+      "producer_application": "jsPDF 2.4.0",
+      "page_count": 373,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 272,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 273,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 274,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 275,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 276,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 277,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 278,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 279,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 280,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 281,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 282,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 283,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 284,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 285,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 286,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 287,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 272,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.08,
+            0.068,
+            0.109,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "260"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.354,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第五章 线性模型与logistic回归"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 3,
+          "bbox": [
+            0.124,
+            0.143,
+            0.835,
+            0.382
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 2,
+              "bbox": [
+                0.399,
+                0.124,
+                0.556,
+                0.139
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "表 5.5 土壤数据"
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 3,
+              "bbox": [
+                0.124,
+                0.143,
+                0.835,
+                0.382
+              ],
+              "image_path": "images/page_272_table_3.jpg",
+              "content": "<table><tr><td>序号</td><td>x1</td><td>x2</td><td>x3</td><td>y</td><td>序号</td><td>x1</td><td>x2</td><td>x3</td><td>y</td></tr><tr><td>1</td><td>0.4</td><td>52</td><td>158</td><td>64</td><td>10</td><td>12.6</td><td>58</td><td>112</td><td>51</td></tr><tr><td>2</td><td>0.4</td><td>23</td><td>163</td><td>60</td><td>11</td><td>10.9</td><td>37</td><td>111</td><td>76</td></tr><tr><td>3</td><td>3.1</td><td>19</td><td>37</td><td>71</td><td>12</td><td>23.1</td><td>46</td><td>114</td><td>96</td></tr><tr><td>4</td><td>0.6</td><td>34</td><td>157</td><td>61</td><td>13</td><td>23.1</td><td>50</td><td>134</td><td>77</td></tr><tr><td>5</td><td>4.7</td><td>24</td><td>59</td><td>54</td><td>14</td><td>21.6</td><td>44</td><td>73</td><td>93</td></tr><tr><td>6</td><td>1.7</td><td>65</td><td>123</td><td>77</td><td>15</td><td>23.1</td><td>56</td><td>168</td><td>95</td></tr><tr><td>7</td><td>9.4</td><td>44</td><td>46</td><td>81</td><td>16</td><td>1.9</td><td>36</td><td>143</td><td>54</td></tr><tr><td>8</td><td>10.1</td><td>31</td><td>117</td><td>93</td><td>17</td><td>26.8</td><td>58</td><td>202</td><td>168</td></tr><tr><td>9</td><td>11.6</td><td>29</td><td>173</td><td>93</td><td>18</td><td>29.9</td><td>51</td><td>124</td><td>99</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 6,
+          "bbox": [
+            0.15,
+            0.398,
+            0.832,
+            0.484
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 4,
+              "bbox": [
+                0.15,
+                0.398,
+                0.832,
+                0.461
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "20. 在网络上查找一个样本数不少于 1 000, 变量个数不少于 10 的数据集, 建立多元线性回归模型, 分别应用向前法、向后法、逐步回归法、Lasso 方法得到相应的估计模型, 并做比较."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 5,
+              "bbox": [
+                0.15,
+                0.467,
+                0.58,
+                0.484
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "21. 假设已知 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "x_{1}, x_{2}"
+                },
+                {
+                  "type": "text",
+                  "content": " 与 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "y"
+                },
+                {
+                  "type": "text",
+                  "content": " 的关系服从线性回归模型"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.41,
+            0.511,
+            0.607,
+            0.527
+          ],
+          "image_path": "images/page_272_equation_7.jpg",
+          "content": "y = 1 0 + 2 x _ {1} + 3 x _ {2} + \\varepsilon ."
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.186,
+            0.552,
+            0.471,
+            0.569
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "给定  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{1}, x_{2}"
+            },
+            {
+              "type": "text",
+              "content": "  的 10 个值, 如下所示:"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 9,
+          "bbox": [
+            0.125,
+            0.587,
+            0.835,
+            0.71
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 9,
+              "bbox": [
+                0.125,
+                0.587,
+                0.835,
+                0.71
+              ],
+              "image_path": "images/page_272_table_9.jpg",
+              "content": "<table><tr><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td><eq>x_1</eq></td><td>1.1</td><td>1.4</td><td>1.7</td><td>1.7</td><td>1.8</td><td>1.8</td><td>1.9</td><td>2.0</td><td>2.3</td><td>2.4</td></tr><tr><td><eq>x_2</eq></td><td>1.1</td><td>1.5</td><td>1.8</td><td>1.7</td><td>1.9</td><td>1.8</td><td>1.8</td><td>2.1</td><td>2.4</td><td>2.5</td></tr><tr><td><eq>\\varepsilon</eq></td><td>0.8</td><td>-0.5</td><td>0.4</td><td>-0.5</td><td>0.2</td><td>1.9</td><td>1.9</td><td>0.6</td><td>-1.5</td><td>-1.5</td></tr><tr><td>y</td><td>16.3</td><td>16.8</td><td>19.2</td><td>18.0</td><td>19.5</td><td>20.9</td><td>21.1</td><td>20.9</td><td>20.3</td><td>22.0</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 10,
+          "bbox": [
+            0.18,
+            0.722,
+            0.835,
+            0.813
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 11,
+              "bbox": [
+                0.185,
+                0.725,
+                0.791,
+                0.742
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(1) 假设回归系数与误差项未知, 用普通最小二乘法求回归系数的估计值;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 12,
+              "bbox": [
+                0.186,
+                0.748,
+                0.534,
+                0.765
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(2) 判断协变量之间是否存在多重共线性;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 13,
+              "bbox": [
+                0.186,
+                0.771,
+                0.458,
+                0.788
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(3) 画出这两个协变量的岭迹图;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 14,
+              "bbox": [
+                0.186,
+                0.794,
+                0.617,
+                0.811
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(4) 确定合适的参数  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\lambda"
+                },
+                {
+                  "type": "text",
+                  "content": " ，并得到相应岭估计回归模型."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.15,
+            0.817,
+            0.832,
+            0.88
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "22. 表 5.6 是研究法国经济问题时收集的 1949 年至 1959 年共 11 年的数据, 其中响应为进口总额 y, 三个协变量分别为国内生产总值  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{1}"
+            },
+            {
+              "type": "text",
+              "content": " 、储蓄量  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{2}"
+            },
+            {
+              "type": "text",
+              "content": " 、总消费量  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{3}"
+            },
+            {
+              "type": "text",
+              "content": "  (单位均为 10 亿法郎)."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 19,
+          "bbox": [
+            0.185,
+            0.886,
+            0.763,
+            0.926
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 17,
+              "bbox": [
+                0.185,
+                0.886,
+                0.763,
+                0.903
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(1) 直接估计线性回归模型, 给出方差分析表, 并判断该模型是否合适;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 18,
+              "bbox": [
+                0.186,
+                0.909,
+                0.534,
+                0.926
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(2) 判断协变量之间是否存在多重共线性;"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        }
+      ]
+    },
+    {
+      "page_idx": 273,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.823,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "习题五"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.069,
+            0.916,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "261"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 4,
+          "bbox": [
+            0.227,
+            0.122,
+            0.658,
+            0.162
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 2,
+              "bbox": [
+                0.227,
+                0.122,
+                0.5,
+                0.139
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(3) 画出这三个协变量的岭迹图;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 3,
+              "bbox": [
+                0.228,
+                0.145,
+                0.658,
+                0.162
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(4) 确定合适的参数  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\lambda"
+                },
+                {
+                  "type": "text",
+                  "content": " ，并得到相应岭估计回归模型."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "table",
+          "index": 6,
+          "bbox": [
+            0.167,
+            0.205,
+            0.875,
+            0.372
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 5,
+              "bbox": [
+                0.433,
+                0.185,
+                0.605,
+                0.2
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "表 5.6 法国经济数据"
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 6,
+              "bbox": [
+                0.167,
+                0.205,
+                0.875,
+                0.372
+              ],
+              "image_path": "images/page_273_table_6.jpg",
+              "content": "<table><tr><td>年份</td><td>x1</td><td>x2</td><td>x3</td><td>y</td><td>年份</td><td>x1</td><td>x2</td><td>x3</td><td>y</td></tr><tr><td>1949</td><td>149.3</td><td>4.2</td><td>108.1</td><td>15.9</td><td>1955</td><td>202.1</td><td>2.1</td><td>146.0</td><td>22.7</td></tr><tr><td>1950</td><td>171.5</td><td>4.1</td><td>114.8</td><td>16.4</td><td>1956</td><td>212.4</td><td>5.6</td><td>154.1</td><td>26.5</td></tr><tr><td>1951</td><td>175.5</td><td>3.1</td><td>123.2</td><td>19.0</td><td>1957</td><td>226.1</td><td>5.0</td><td>162.3</td><td>28.1</td></tr><tr><td>1952</td><td>180.8</td><td>3.1</td><td>126.9</td><td>19.1</td><td>1958</td><td>231.9</td><td>5.1</td><td>164.3</td><td>27.6</td></tr><tr><td>1953</td><td>190.7</td><td>1.1</td><td>132.1</td><td>18.8</td><td>1959</td><td>239.0</td><td>0.7</td><td>167.6</td><td>26.3</td></tr><tr><td>1954</td><td>202.1</td><td>2.2</td><td>137.7</td><td>20.4</td><td></td><td></td><td></td><td></td><td></td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.192,
+            0.389,
+            0.875,
+            0.476
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "23. 在一次住房展销会上, 与房地产商签订初步购房意向书的共有 313 名顾客, 在随后的 3 个月的时间内, 只有一部分顾客确实购买了房屋. 购买了房屋的顾客记为 1, 没有购买房屋的顾客记为 0. 以顾客的家庭年收入为协变量 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": ", 家庭年收入按照高低不同分成了 9 组, 具体数据如表 5.7 所示."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 9,
+          "bbox": [
+            0.167,
+            0.516,
+            0.875,
+            0.755
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 8,
+              "bbox": [
+                0.44,
+                0.497,
+                0.598,
+                0.512
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "表 5.7 顾客数据"
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 9,
+              "bbox": [
+                0.167,
+                0.516,
+                0.875,
+                0.755
+              ],
+              "image_path": "images/page_273_table_9.jpg",
+              "content": "<table><tr><td>序号</td><td>家庭年收入x/万元</td><td>签订意向书人数<eq>n_i</eq></td><td>实际购房人数<eq>m_i</eq></td></tr><tr><td>1</td><td>3.5</td><td>25</td><td>8</td></tr><tr><td>2</td><td>5.5</td><td>32</td><td>13</td></tr><tr><td>3</td><td>7.5</td><td>58</td><td>26</td></tr><tr><td>4</td><td>9.5</td><td>52</td><td>22</td></tr><tr><td>5</td><td>11.5</td><td>43</td><td>20</td></tr><tr><td>6</td><td>13.5</td><td>39</td><td>22</td></tr><tr><td>7</td><td>15.5</td><td>28</td><td>16</td></tr><tr><td>8</td><td>17.5</td><td>21</td><td>12</td></tr><tr><td>9</td><td>19.5</td><td>15</td><td>15</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 10,
+          "bbox": [
+            0.227,
+            0.771,
+            0.872,
+            0.903
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 11,
+              "bbox": [
+                0.227,
+                0.771,
+                0.872,
+                0.811
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(1) 试通过 logistic 模型建立签订意向的顾客最终买房的概率与家庭年收入之间的关系, 以分析家庭年收入对最终购买住房的影响;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 12,
+              "bbox": [
+                0.227,
+                0.817,
+                0.872,
+                0.857
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(2) 估计一个家庭年收入为 15 万元的顾客签订意向书后最终买房与不买房的可能性大小之比值;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 13,
+              "bbox": [
+                0.228,
+                0.863,
+                0.872,
+                0.903
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(3) 估计一个家庭年收入为 15 万元的顾客签订意向书后最终买房的赔率是年收入为 10 万元的顾客的多少倍."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.192,
+            0.909,
+            0.873,
+            0.926
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "24. 探讨肾细胞癌转移有关的因素研究中, 收集了 26 例进行根治性肾切除术患者的"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 274,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.08,
+            0.068,
+            0.109,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "262"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.126,
+            0.066,
+            0.354,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第五章 线性模型与logistic回归"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.186,
+            0.121,
+            0.831,
+            0.161
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "肾细胞癌标本资料 (表 5.8), 有关变量说明如下, 试进行 logistic 回归分析, 并得到相应结论:"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.187,
+            0.168,
+            0.425,
+            0.185
+          ],
+          "content": [
+            {
+              "type": "equation_inline",
+              "content": "X_{1}"
+            },
+            {
+              "type": "text",
+              "content": " : 确诊时患者的年龄 (岁);"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.186,
+            0.191,
+            0.83,
+            0.23
+          ],
+          "content": [
+            {
+              "type": "equation_inline",
+              "content": "X_{2}"
+            },
+            {
+              "type": "text",
+              "content": " :肾细胞癌血管内皮生长因子，其阳性表达由低到高共3个等级，分别赋值1、2、3；"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.187,
+            0.237,
+            0.443,
+            0.253
+          ],
+          "content": [
+            {
+              "type": "equation_inline",
+              "content": "X_{3}"
+            },
+            {
+              "type": "text",
+              "content": " : 肾细胞癌组织内微血管数;"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.186,
+            0.26,
+            0.791,
+            0.277
+          ],
+          "content": [
+            {
+              "type": "equation_inline",
+              "content": "X_{4}"
+            },
+            {
+              "type": "text",
+              "content": " : 肾细胞癌细胞核组织学分级, 由低到高共 4 级, 分别赋值 1、2、3、4;"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.187,
+            0.283,
+            0.678,
+            0.3
+          ],
+          "content": [
+            {
+              "type": "equation_inline",
+              "content": "X_{5}"
+            },
+            {
+              "type": "text",
+              "content": " : 肾细胞癌分期, 由低到高共 4 期, 分别赋值 1、2、3、4;"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.187,
+            0.306,
+            0.618,
+            0.322
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Y: 肾细胞癌转移情况, 有转移记为 1, 无转移记为 0."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 10,
+          "bbox": [
+            0.124,
+            0.365,
+            0.833,
+            0.697
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 9,
+              "bbox": [
+                0.391,
+                0.345,
+                0.563,
+                0.36
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "表 5.8 患者标本资料"
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 10,
+              "bbox": [
+                0.124,
+                0.365,
+                0.833,
+                0.697
+              ],
+              "image_path": "images/page_274_table_10.jpg",
+              "content": "<table><tr><td>序号</td><td><eq>X_1</eq></td><td><eq>X_2</eq></td><td><eq>X_3</eq></td><td><eq>X_4</eq></td><td><eq>X_5</eq></td><td>Y</td><td>序号</td><td><eq>X_1</eq></td><td><eq>X_2</eq></td><td><eq>X_3</eq></td><td><eq>X_4</eq></td><td><eq>X_5</eq></td><td>Y</td></tr><tr><td>1</td><td>59</td><td>2</td><td>43.4</td><td>2</td><td>1</td><td>0</td><td>14</td><td>31</td><td>1</td><td>47.8</td><td>2</td><td>1</td><td>0</td></tr><tr><td>2</td><td>36</td><td>1</td><td>57.2</td><td>1</td><td>1</td><td>0</td><td>15</td><td>36</td><td>3</td><td>31.6</td><td>3</td><td>1</td><td>1</td></tr><tr><td>3</td><td>61</td><td>2</td><td>190.0</td><td>2</td><td>1</td><td>0</td><td>16</td><td>42</td><td>1</td><td>66.2</td><td>2</td><td>1</td><td>0</td></tr><tr><td>4</td><td>58</td><td>3</td><td>128.0</td><td>4</td><td>3</td><td>1</td><td>17</td><td>14</td><td>3</td><td>138.6</td><td>3</td><td>3</td><td>1</td></tr><tr><td>5</td><td>55</td><td>3</td><td>80.0</td><td>3</td><td>4</td><td>1</td><td>18</td><td>32</td><td>1</td><td>114.0</td><td>2</td><td>3</td><td>0</td></tr><tr><td>6</td><td>61</td><td>1</td><td>94.4</td><td>2</td><td>1</td><td>0</td><td>19</td><td>35</td><td>1</td><td>40.2</td><td>2</td><td>1</td><td>0</td></tr><tr><td>7</td><td>38</td><td>1</td><td>76.0</td><td>1</td><td>1</td><td>0</td><td>20</td><td>70</td><td>3</td><td>177.2</td><td>4</td><td>3</td><td>1</td></tr><tr><td>8</td><td>42</td><td>1</td><td>240.0</td><td>3</td><td>2</td><td>0</td><td>21</td><td>65</td><td>2</td><td>51.6</td><td>4</td><td>4</td><td>1</td></tr><tr><td>9</td><td>50</td><td>1</td><td>74.0</td><td>1</td><td>1</td><td>0</td><td>22</td><td>45</td><td>2</td><td>124.0</td><td>2</td><td>4</td><td>0</td></tr><tr><td>10</td><td>58</td><td>3</td><td>68.6</td><td>2</td><td>2</td><td>0</td><td>23</td><td>68</td><td>3</td><td>127.2</td><td>3</td><td>3</td><td>1</td></tr><tr><td>11</td><td>68</td><td>3</td><td>132.8</td><td>4</td><td>2</td><td>0</td><td>24</td><td>31</td><td>2</td><td>124.8</td><td>2</td><td>3</td><td>0</td></tr><tr><td>12</td><td>25</td><td>2</td><td>94.6</td><td>4</td><td>3</td><td>1</td><td>25</td><td>58</td><td>1</td><td>128.0</td><td>4</td><td>3</td><td>0</td></tr><tr><td>13</td><td>52</td><td>1</td><td>56.0</td><td>1</td><td>1</td><td>0</td><td>26</td><td>60</td><td>3</td><td>149.8</td><td>4</td><td>3</td><td>1</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.15,
+            0.712,
+            0.832,
+            0.798
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "25. 生物学家希望了解种子的发芽数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y"
+            },
+            {
+              "type": "text",
+              "content": " 是否受水分值 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{1}"
+            },
+            {
+              "type": "text",
+              "content": " 及是否加盖 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{2}"
+            },
+            {
+              "type": "text",
+              "content": " 的影响, 为此, 在加盖 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{2} = 1"
+            },
+            {
+              "type": "text",
+              "content": " 与不加盖 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{2} = 0"
+            },
+            {
+              "type": "text",
+              "content": " 两种情况下对不同水分值情况分别观察 100 粒种子是否发芽, 记录发芽数. 令 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y = 1"
+            },
+            {
+              "type": "text",
+              "content": " 表示发芽, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "y = 0"
+            },
+            {
+              "type": "text",
+              "content": " 表示不发芽. 相应数据如表 5.9 所示."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 12,
+          "bbox": [
+            0.186,
+            0.804,
+            0.831,
+            0.891
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 13,
+              "bbox": [
+                0.185,
+                0.804,
+                0.597,
+                0.822
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(1) 建立关于  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "x_{1}, x_{2}"
+                },
+                {
+                  "type": "text",
+                  "content": "  和  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "x_{1}x_{2}"
+                },
+                {
+                  "type": "text",
+                  "content": "  的 logistic 回归方程;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 14,
+              "bbox": [
+                0.186,
+                0.827,
+                0.677,
+                0.844
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(2) 分别求加盖与不加盖的情况下发芽率为 50% 的水分值;"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 15,
+              "bbox": [
+                0.186,
+                0.85,
+                0.83,
+                0.89
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(3) 在水分值为 4 的条件下, 分别估计加盖与不加盖的情况下发芽与不发芽的概率之比值, 并估计加盖对不加盖发芽的概率之比值."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        }
+      ]
+    },
+    {
+      "page_idx": 275,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.824,
+            0.068,
+            0.871,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "习题五"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.069,
+            0.916,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "263"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 3,
+          "bbox": [
+            0.166,
+            0.143,
+            0.874,
+            0.382
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 2,
+              "bbox": [
+                0.442,
+                0.124,
+                0.597,
+                0.139
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "表 5.9 种子数据"
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 3,
+              "bbox": [
+                0.166,
+                0.143,
+                0.874,
+                0.382
+              ],
+              "image_path": "images/page_275_table_3.jpg",
+              "content": "<table><tr><td>序号</td><td><eq>x_1</eq></td><td><eq>x_2</eq></td><td>y</td><td>频数</td><td>序号</td><td><eq>x_1</eq></td><td><eq>x_2</eq></td><td>y</td><td>频数</td></tr><tr><td>1</td><td>1</td><td>0</td><td>1</td><td>24</td><td>11</td><td>1</td><td>1</td><td>1</td><td>43</td></tr><tr><td>2</td><td>1</td><td>0</td><td>0</td><td>76</td><td>12</td><td>1</td><td>1</td><td>0</td><td>57</td></tr><tr><td>3</td><td>3</td><td>0</td><td>1</td><td>46</td><td>13</td><td>3</td><td>1</td><td>1</td><td>75</td></tr><tr><td>4</td><td>3</td><td>0</td><td>0</td><td>54</td><td>14</td><td>3</td><td>1</td><td>0</td><td>25</td></tr><tr><td>5</td><td>5</td><td>0</td><td>1</td><td>67</td><td>15</td><td>5</td><td>1</td><td>1</td><td>76</td></tr><tr><td>6</td><td>5</td><td>0</td><td>0</td><td>33</td><td>16</td><td>5</td><td>1</td><td>0</td><td>24</td></tr><tr><td>7</td><td>7</td><td>0</td><td>1</td><td>78</td><td>17</td><td>7</td><td>1</td><td>1</td><td>52</td></tr><tr><td>8</td><td>7</td><td>0</td><td>0</td><td>22</td><td>18</td><td>7</td><td>1</td><td>0</td><td>48</td></tr><tr><td>9</td><td>9</td><td>0</td><td>1</td><td>73</td><td>19</td><td>9</td><td>1</td><td>1</td><td>37</td></tr><tr><td>10</td><td>9</td><td>0</td><td>0</td><td>27</td><td>20</td><td>9</td><td>1</td><td>0</td><td>63</td></tr></table>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 276
+    },
+    {
+      "page_idx": 277,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "index": 0,
+          "bbox": [
+            0.394,
+            0.104,
+            0.502,
+            0.133
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第六章"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "paragraph_title",
+          "index": 1,
+          "bbox": [
+            0.544,
+            0.17,
+            0.773,
+            0.208
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "非参数方法"
+            }
+          ],
+          "level": 2
+        }
+      ]
+    },
+    {
+      "page_idx": 278,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.08,
+            0.068,
+            0.109,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "266"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.265,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第六章 非参数方法"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.122,
+            0.122,
+            0.834,
+            0.3
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在一个统计推断问题中, 如果总体分布的具体形式已知, 例如假设其为正态分布等, 则只需对其中含有的若干个未知参数作出估计或进行某种形式的假设检验, 这类推断方法称为参数方法. 在前面的章节中, 通常假设样本是来自某个特定的参数分布或参数模型, 用参数方法进行推断. 然而, 参数方法具有一些局限性, 例如假定的参数分布并不一定正确. 在许多实际问题中, 对总体分布的形式可能所知甚少, 甚至一无所知. 这时, 往往只对分布做一些很弱的假设, 例如可设总体分布为连续型分布或总体分布关于均值对称等, 且使用不依赖于总体分布具体形式的统计推断方法, 此类推断方法即为非参数方法 (non-parametric method)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.122,
+            0.307,
+            0.832,
+            0.462
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "非参数方法具有更少的模型假设, 其大致可以分为非参数估计和非参数检验两部分. 本章将介绍一些常用的非参数估计方法和非参数检验方法. 非参数估计方面将介绍直方图及核密度估计方法, 得到总体密度函数的估计, 并应用经验分布函数来估计总体分布函数. 非参数检验方面将介绍拟合优度检验、独立性检验和秩检验等方法. 对于给定数据, 若知道其总体服从的参数模型, 则参数检验方法的检验功效一般会比非参数检验方法的更高, 因为非参数方法不能充分利用信息. 然而, 在实际中总体分布往往未知, 可采用非参数检验方法."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.124,
+            0.516,
+            0.406,
+            0.538
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "6.1 概率密度函数估计"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.122,
+            0.586,
+            0.832,
+            0.696
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "对于连续型随机变量 X, 给定其独立同分布样本  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  后, 一个自然的问题是估计其概率密度函数. 人们可以通过分析样本  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  的一些图形初步了解总体的一些信息. 直方图是一种常用的图形, 可展示数据的分布情况, 诸如众数、中位数的大致位置, 数据是否存在缺口或异常值等, 也可以大概判断总体的密度函数的形状. 进一步地, 本节将介绍核密度方法估计总体的密度函数."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.16,
+            0.724,
+            0.309,
+            0.743
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "6.1.1 直方图"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.122,
+            0.768,
+            0.835,
+            0.933
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "作为描述数据分布的常用工具之一的直方图, 是根据具体数据的分布情况, 画成以组距为底长、以频数为高度的一系列连接起来的直方型矩形图. 具体而言, 在构造直方图时, 先把数据值域分成若干个等长区间, 之后利用这些区间把数据分组, 每组作一个矩形, 其高是数据落入该组的频数, 其底为所属区间. 有时, 也把直方图的高标准化, 即其高和数据落入该组的频数成比例. 对于样本 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": ", 选择两个适当的常数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{0}"
+            },
+            {
+              "type": "text",
+              "content": " 和 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h (>0)"
+            },
+            {
+              "type": "text",
+              "content": ", 把 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(- \\infty, \\infty)"
+            },
+            {
+              "type": "text",
+              "content": " 分成若干个小区间 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\Delta_{i} = [X_{0} + (i - 1)h, X_{0} + ih), i = 0, \\pm 1, \\pm 2, \\cdots"
+            },
+            {
+              "type": "text",
+              "content": ", 并以 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n_{i}"
+            },
+            {
+              "type": "text",
+              "content": " 记样本落入区间 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\Delta_{i}"
+            },
+            {
+              "type": "text",
+              "content": " 的个数. 如以 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\Delta_{i}"
+            },
+            {
+              "type": "text",
+              "content": " 为底, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\frac{n_{i}}{nh}"
+            },
+            {
+              "type": "text",
+              "content": " 为高作一矩形, 则这些矩形就"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 279,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.711,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "6.1 概率密度函数估计"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.068,
+            0.917,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "267"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.165,
+            0.121,
+            0.586,
+            0.138
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "构成一个直方图. 因此直方图可表示为如下的函数:"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.348,
+            0.147,
+            0.871,
+            0.19
+          ],
+          "image_path": "images/page_279_equation_3.jpg",
+          "content": "\\hat {f} _ {h} (x) = \\frac {1}{n h} \\sum_ {i = 1} ^ {n} \\sum_ {j} I (X _ {i} \\in \\varDelta_ {j}) I (x \\in \\varDelta_ {j}), \\tag {6.1.1}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.164,
+            0.2,
+            0.871,
+            0.264
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I(\\cdot)"
+            },
+            {
+              "type": "text",
+              "content": " 为示性函数. 可证直方图 (6.1.1) 的线下面积为 1, 具体证明留作习题. 直方图的形状依赖于初值 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_0"
+            },
+            {
+              "type": "text",
+              "content": " 及窗宽 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h"
+            },
+            {
+              "type": "text",
+              "content": " 的选取. 此外, 可证直方图 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{f}_h(x)"
+            },
+            {
+              "type": "text",
+              "content": " 并不是总体密度函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(x)"
+            },
+            {
+              "type": "text",
+              "content": " 的无偏估计, 具体证明留作习题."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.164,
+            0.269,
+            0.872,
+            0.355
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "直方图与柱状图有所不同. 柱状图是通过矩形的长度表示数值, 宽度往往表示类别, 因此其更适合于定性变量且样本量较小的数据集; 直方图也是通过矩形的长度表示数值, 不过其宽度用于表示各组的组距, 因此其高度与宽度均有意义, 更适合展示大数据集的统计结果."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.164,
+            0.362,
+            0.873,
+            0.517
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "图 6.1.1 给出不同数据类型各 1000 个样本的直方图, 其中图 6.1.1 (a)—(c) 是以频数为高, 而图 6.1.1 (d)—(f) 是使得阴影部分面积为 1 的相应图形. 通过直方图, 可以判断数据的总体分布是左偏、右偏、正态的, 或是多峰的. 例如, 图 6.1.1 (a) 的总体分布是一个右偏分布, 图 6.1.1 (b) 的总体分布比较接近正态分布, 图 6.1.1 (c) 所对应的总体是一个多峰分布. 在图 6.1.1 (d)—(f) 中, 每个直方图中的小矩形面积之和等于 1, 其可以作为总体密度函数的估计. 然而, 直方图是不光滑的, 需要一种光滑化的技术来估计总体密度函数."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 7,
+          "bbox": [
+            0.185,
+            0.529,
+            0.853,
+            0.843
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 7,
+              "bbox": [
+                0.185,
+                0.529,
+                0.853,
+                0.843
+              ],
+              "image_path": "images/page_279_image_7.jpg",
+              "content": ""
+            },
+            {
+              "type": "image_caption",
+              "index": 8,
+              "bbox": [
+                0.407,
+                0.85,
+                0.63,
+                0.866
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图6.1.1 不同数据的直方图"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.165,
+            0.886,
+            0.873,
+            0.927
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "参数方法是常用的估计密度函数的光滑化方法. 在参数方法中, 会假定总体密度有一个确定的参数结构 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(x, \\beta)"
+            },
+            {
+              "type": "text",
+              "content": ", 例如, 设其服从正态分布 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N(\\mu, \\sigma^2)"
+            },
+            {
+              "type": "text",
+              "content": ", 其参数为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\beta = (\\mu, \\sigma^2)"
+            },
+            {
+              "type": "text",
+              "content": ","
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 280,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.08,
+            0.068,
+            0.107,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "268"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.264,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第六章 非参数方法"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.122,
+            0.121,
+            0.832,
+            0.323
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "则只需根据样本估计得到参数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\beta"
+            },
+            {
+              "type": "text",
+              "content": " 的估计值 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\beta}"
+            },
+            {
+              "type": "text",
+              "content": ", 即可得密度函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(x, \\hat{\\beta})"
+            },
+            {
+              "type": "text",
+              "content": " 的形式, 从而可得任一点 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 处的密度函数值 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(x, \\hat{\\beta})"
+            },
+            {
+              "type": "text",
+              "content": ". 图6.1.1(e)即假设密度函数服从正态分布, 可得到较好的拟合效果. 然而, 当给定的参数结构与真实的总体密度函数不符合时, 参数方法的效果不佳, 例如图6.1.1(d)中总体密度是偏态的, 若用正态分布来拟合, 则估计不太准确. 此时, 可采用其他的参数分布族, 也可采用非参数方法. 在非参数估计中, 不限定密度函数的参数结构, 而是估计任一点 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 处的密度函数值 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{f}(x)"
+            },
+            {
+              "type": "text",
+              "content": ", 从而通过逐点估计的方式得到密度函数的估计. 这种方法是由数据本身驱动的. 估计总体密度函数常用的非参数方法为核密度估计 (kernel density estimation, KDE) 法, 其将核光滑方法应用于总体的密度函数估计."
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.16,
+            0.35,
+            0.351,
+            0.369
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "6.1.2 核密度估计"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.123,
+            0.394,
+            0.831,
+            0.435
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "首先考虑一维情形. 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{1}, x_{2}, \\cdots, x_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  是从密度函数为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(x)"
+            },
+            {
+              "type": "text",
+              "content": "  的总体中抽取的独立同分布样本. 对于任一点 x, 希望得到密度函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(x)"
+            },
+            {
+              "type": "text",
+              "content": "  的估计值. 根据密度函数的定义,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.338,
+            0.446,
+            0.615,
+            0.479
+          ],
+          "image_path": "images/page_280_equation_5.jpg",
+          "content": "f (x) = \\lim _ {h \\to 0} \\frac {F (x + h) - F (x - h)}{2 h},"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.123,
+            0.487,
+            0.832,
+            0.552
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h > 0"
+            },
+            {
+              "type": "text",
+              "content": " 且 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x)"
+            },
+            {
+              "type": "text",
+              "content": " 为总体分布函数. 一个自然的想法是类似于直方图, 选一个 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 附近的小区间 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "[x - h, x + h]"
+            },
+            {
+              "type": "text",
+              "content": ", 计算落入该区间的样本数, 再除以总样本数, 可作为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x + h) - F(x - h)"
+            },
+            {
+              "type": "text",
+              "content": " 的近似, 从而得到 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(x)"
+            },
+            {
+              "type": "text",
+              "content": " 的估计, 即"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.2,
+            0.562,
+            0.754,
+            0.618
+          ],
+          "image_path": "images/page_280_equation_7.jpg",
+          "content": "\\hat {f} _ {h} (x) = \\frac {1}{2 h} \\frac {\\sum_ {i = 1} ^ {n} I (x _ {i} \\in [ x - h , x + h ])}{n} = \\frac {1}{n h} \\sum_ {i = 1} ^ {n} \\frac {1}{2} \\cdot I \\left(\\frac {| x _ {i} - x |}{h} \\leqslant 1\\right),"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.123,
+            0.63,
+            0.831,
+            0.676
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I(A)"
+            },
+            {
+              "type": "text",
+              "content": " 为示性函数, 当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "A"
+            },
+            {
+              "type": "text",
+              "content": " 为真时取值为 1, 否则为 0. 记 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K_0(t) = \\frac{1}{2} \\cdot I(|t| \\leqslant 1)"
+            },
+            {
+              "type": "text",
+              "content": ", 上式可改写为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.336,
+            0.687,
+            0.83,
+            0.729
+          ],
+          "image_path": "images/page_280_equation_9.jpg",
+          "content": "\\hat {f} _ {h} (x) = \\frac {1}{n h} \\sum_ {i = 1} ^ {n} K _ {0} \\left(\\frac {x _ {i} - x}{h}\\right). \\tag {6.1.2}"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.124,
+            0.741,
+            0.32,
+            0.775
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\int K_0(t)\\mathrm{d}t = 1"
+            },
+            {
+              "type": "text",
+              "content": " ，故"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.279,
+            0.783,
+            0.675,
+            0.875
+          ],
+          "image_path": "images/page_280_equation_11.jpg",
+          "content": "\\begin{array}{l} \\int \\hat {f} _ {h} (x) \\mathrm{d} x = \\frac {1}{n h} \\sum_ {i = 1} ^ {n} \\int K _ {0} \\left(\\frac {x _ {i} - x}{h}\\right) \\mathrm{d} x \\\\ = \\frac {1}{n} \\sum_ {i = 1} ^ {n} \\int K _ {0} (t) \\mathrm{d} t = \\int K _ {0} (t) \\mathrm{d} t = 1, \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.123,
+            0.886,
+            0.83,
+            0.927
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "因此 (6.1.2) 式的估计可以保证其积分等于 1. 这也使得估计 (6.1.2) 是一种可行的估计. "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K_{0}(t)"
+            },
+            {
+              "type": "text",
+              "content": " 是一种特殊的权重函数, 即落在区间 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "[x - h, x + h]"
+            },
+            {
+              "type": "text",
+              "content": " 里的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{i}"
+            },
+            {
+              "type": "text",
+              "content": " 具有相同的权重, 而在"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 281,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.711,
+            0.067,
+            0.871,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "6.1 概率密度函数估计"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.069,
+            0.917,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "269"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.164,
+            0.121,
+            0.873,
+            0.199
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "区间外的点的权重都为0. 然而, 该估计得到的密度函数不是光滑的, 其本质原因在于函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K_{0}(t)"
+            },
+            {
+              "type": "text",
+              "content": " 是一个阶跃函数. 进一步地, 可推广 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K_{0}(t)"
+            },
+            {
+              "type": "text",
+              "content": " 至其他权重函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K(t)"
+            },
+            {
+              "type": "text",
+              "content": ", 并称 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K(t)"
+            },
+            {
+              "type": "text",
+              "content": " 为核函数. 令 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K_{h}(t) = \\frac{1}{h} K\\left(\\frac{t}{h}\\right)"
+            },
+            {
+              "type": "text",
+              "content": ", 则得到密度函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(x)"
+            },
+            {
+              "type": "text",
+              "content": " 的核密度估计:"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.303,
+            0.213,
+            0.873,
+            0.255
+          ],
+          "image_path": "images/page_281_equation_3.jpg",
+          "content": "\\hat {f} (x) = \\frac {1}{n} \\sum_ {i = 1} ^ {n} K _ {h} (x _ {i} - x) = \\frac {1}{n h} \\sum_ {i = 1} ^ {n} K \\left(\\frac {x _ {i} - x}{h}\\right). \\tag {6.1.3}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.165,
+            0.27,
+            0.871,
+            0.316
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "这里, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\frac{x_i - x}{h}"
+            },
+            {
+              "type": "text",
+              "content": " 可视为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{i}"
+            },
+            {
+              "type": "text",
+              "content": " 与 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 距离的关于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h"
+            },
+            {
+              "type": "text",
+              "content": " 的倍数, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{i}"
+            },
+            {
+              "type": "text",
+              "content": " 距离 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 越近, 则 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\frac{x_i - x}{h}"
+            },
+            {
+              "type": "text",
+              "content": " 距离原点越近. 称 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h"
+            },
+            {
+              "type": "text",
+              "content": " 为窗宽. 在核密度估计 (6.1.3) 中, 需要确定核函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K"
+            },
+            {
+              "type": "text",
+              "content": " 和窗宽 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h"
+            },
+            {
+              "type": "text",
+              "content": "."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.165,
+            0.321,
+            0.873,
+            0.361
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "核函数 K 可看成一个权重函数,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{i}"
+            },
+            {
+              "type": "text",
+              "content": "  越接近 x 则分配的权重越大, 因此 K 一般以原点为中心, 且是单峰的. 此外, 根据密度函数的积分为 1 的要求, 有"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.234,
+            0.374,
+            0.805,
+            0.415
+          ],
+          "image_path": "images/page_281_equation_6.jpg",
+          "content": "\\int \\hat {f} (x) \\mathrm{d} x = \\frac {1}{n h} \\sum_ {i = 1} ^ {n} \\int K \\left(\\frac {x _ {i} - x}{h}\\right) \\mathrm{d} x = \\frac {1}{n} \\sum_ {i = 1} ^ {n} \\int K (t) \\mathrm{d} t = \\int K (t) \\mathrm{d} t."
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.165,
+            0.429,
+            0.873,
+            0.469
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "从而, 只要 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K(t)"
+            },
+            {
+              "type": "text",
+              "content": " 的积分等于 1 即可. 因此, 核函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K"
+            },
+            {
+              "type": "text",
+              "content": " 可为一个以原点为中心、单峰的密度函数. 常见的核函数有"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.405,
+            0.479,
+            0.635,
+            0.51
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "均匀核: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K(t) = \\frac{1}{2} I(|t| \\leqslant 1)"
+            },
+            {
+              "type": "text",
+              "content": ","
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.387,
+            0.515,
+            0.685,
+            0.553
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Gauss 核:  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K(t)=\\frac{1}{\\sqrt{2\\pi}}\\exp\\left\\{-\\frac{t^{2}}{2}\\right\\}"
+            },
+            {
+              "type": "text",
+              "content": " ,"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.325,
+            0.557,
+            0.696,
+            0.587
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Epanechnikov 核: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K(t) = \\frac{3}{4} (1 - t^2)I(|t| \\leqslant 1)"
+            },
+            {
+              "type": "text",
+              "content": ","
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.405,
+            0.592,
+            0.713,
+            0.624
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "四次核: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K(t) = \\frac{15}{16} (1 - t^2)^2 I(|t| \\leqslant 1)"
+            },
+            {
+              "type": "text",
+              "content": "."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.164,
+            0.634,
+            0.874,
+            0.754
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在 (6.1.2) 式中的核函数即为均匀核, Gauss 核函数即为标准正态分布的密度函数. 图 6.1.2 给出前面提到的四种核函数. Gauss 核、Epanechnikov 核和四次核在整个实数空间上是连续函数, 而且满足单峰、关于原点对称且远离原点的取值非常小或为 0. 因此, 当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 和 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x'"
+            },
+            {
+              "type": "text",
+              "content": " 相距很小时, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K\\left(\\frac{x_i - x}{h}\\right)"
+            },
+            {
+              "type": "text",
+              "content": " 和 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K\\left(\\frac{x_i - x'}{h}\\right)"
+            },
+            {
+              "type": "text",
+              "content": " 相差很小, 从而 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{f}(x)"
+            },
+            {
+              "type": "text",
+              "content": " 和 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{f}(x')"
+            },
+            {
+              "type": "text",
+              "content": " 也相差不大, 即采用这三种核函数可使核密度估计较光滑. 常用的核函数有 Gauss 核和 Epanechnikov 核."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.164,
+            0.759,
+            0.875,
+            0.927
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在核密度估计 (6.1.3) 中, 窗宽 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h"
+            },
+            {
+              "type": "text",
+              "content": " 决定核密度估计的光滑程度, 即最终得到的密度估计图形是否平滑. 窗宽 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h"
+            },
+            {
+              "type": "text",
+              "content": " 越大, 则任一样本 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{i}"
+            },
+            {
+              "type": "text",
+              "content": " 经变换 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\frac{x_i - x}{h}"
+            },
+            {
+              "type": "text",
+              "content": " 后离原点距离越小, 从而 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{i}"
+            },
+            {
+              "type": "text",
+              "content": " 和其他样本 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{j}"
+            },
+            {
+              "type": "text",
+              "content": " 的权重接近相同. 特别地, 当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h \\to \\infty"
+            },
+            {
+              "type": "text",
+              "content": " 时, 对于任一点 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": ", "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\frac{x_i - x}{h} \\to 0"
+            },
+            {
+              "type": "text",
+              "content": ", 则每个样本的权重都趋于相同且 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{f}(x)"
+            },
+            {
+              "type": "text",
+              "content": " 的取值趋于相同, 从而总体密度函数的估计变为均匀分布. 当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h \\to 0"
+            },
+            {
+              "type": "text",
+              "content": " 时, 只在已有样本点 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{i}"
+            },
+            {
+              "type": "text",
+              "content": " 处才有 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\frac{x_i - x}{h} \\neq 0"
+            },
+            {
+              "type": "text",
+              "content": ", 其他处都趋于 0. 从而不同样本赋予的权重差异很大, 使得总体密度函数的估计图形起伏很大. 因此, 窗宽严重影响密度函数的估计. 这是非参数估计里面典型的偏差-方差平衡 (bias-variance tradeoff):"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 282,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.08,
+            0.068,
+            0.107,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "270"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.264,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第六章 非参数方法"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.122,
+            0.122,
+            0.831,
+            0.162
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "如果 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h"
+            },
+            {
+              "type": "text",
+              "content": " 太大, 可以减小方差, 但偏差可能会比较大; 如果 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h"
+            },
+            {
+              "type": "text",
+              "content": " 太小, 偏差变小, 但是邻域中的点太少, 使得方差变大. 因此需要选择合适的窗宽."
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 3,
+          "bbox": [
+            0.263,
+            0.178,
+            0.694,
+            0.385
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 3,
+              "bbox": [
+                0.263,
+                0.178,
+                0.694,
+                0.385
+              ],
+              "image_path": "images/page_282_chart_3.jpg",
+              "content": "| Category | Gauss核 | Epanechnikov核 | 均匀核 |\n| --- | --- | --- | --- |\n| -3 | 0 | — | — |\n| -2 | ~0.05 | — | — |\n| -1 | ~0.25 | 0 | 0.5 |\n| 0 | 0.4 | ~0.95 | 0.5 |\n| 1 | ~0.25 | 0 | 0.5 |\n| 2 | ~0.05 | — | — |\n| 3 | 0 | — | — |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 4,
+              "bbox": [
+                0.391,
+                0.39,
+                0.565,
+                0.406
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图6.1.2 不同核函数"
+                }
+              ]
+            }
+          ],
+          "sub_type": "violin"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.122,
+            0.426,
+            0.832,
+            0.492
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  为总体 X 的密度函数为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(x)"
+            },
+            {
+              "type": "text",
+              "content": "  的随机样本.均方误差是评价估计好坏的一种常用指标，它同时考虑偏差和方差，即  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{MSE}[\\hat{f}(x)] = \\{\\mathrm{Bias}[\\hat{f}(x)]\\}^{2} + \\mathrm{Var}[\\hat{f}(x)]"
+            },
+            {
+              "type": "text",
+              "content": " .遍历 x 可得积分均方误差 (mean integrated squared error, MISE),"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.234,
+            0.501,
+            0.72,
+            0.538
+          ],
+          "image_path": "images/page_282_equation_6.jpg",
+          "content": "\\mathrm{MISE} (\\hat {f} (x)) = \\int \\mathrm{MSE} [ \\hat {f} (x) ] \\mathrm{d} x = E \\left\\{\\int [ \\hat {f} (x) - f (x) ] ^ {2} \\mathrm{d} x \\right\\}."
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.124,
+            0.549,
+            0.6,
+            0.566
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "需要选择最优的窗宽和核函数, 使积分均方误差达到最小."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.123,
+            0.572,
+            0.832,
+            0.64
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定理 6.1.1 假设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h \\rightarrow 0, nh \\rightarrow \\infty, f(x)"
+            },
+            {
+              "type": "text",
+              "content": "  存在连续二阶导数, 对于核函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K, c_{K} = \\int K^{2}(u) du, d_{K} = \\int K(u) u^{2} du"
+            },
+            {
+              "type": "text",
+              "content": "  有限. 则在核密度估计 (6.1.3) 中, 使得 MISE[ "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{f}(x)"
+            },
+            {
+              "type": "text",
+              "content": " ] 达到最小的窗宽 h 为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.351,
+            0.651,
+            0.83,
+            0.693
+          ],
+          "image_path": "images/page_282_equation_9.jpg",
+          "content": "h _ {\\mathrm{opt}} = \\left\\{\\frac {c _ {K}}{n d _ {K} ^ {2} \\int [ f ^ {\\prime \\prime} (x) ] ^ {2} \\mathrm{d} x} \\right\\} ^ {\\frac {1}{5}}. \\tag {6.1.4}"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.16,
+            0.705,
+            0.434,
+            0.723
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "证明 核密度估计  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{f}(x)"
+            },
+            {
+              "type": "text",
+              "content": "  的期望:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.131,
+            0.73,
+            0.823,
+            0.85
+          ],
+          "image_path": "images/page_282_equation_11.jpg",
+          "content": "\\begin{array}{l} E [ \\hat {f} (x) ] = \\frac {1}{h} E \\left[ \\frac {\\sum_ {i = 1} ^ {n} K \\left(\\frac {X _ {i} - x}{h}\\right)}{n} \\right] = \\frac {1}{h} \\frac {\\sum_ {i = 1} ^ {n} E \\left[ K \\left(\\frac {X _ {i} - x}{h}\\right) \\right]}{n} = \\frac {1}{h} E \\left[ K \\left(\\frac {X _ {1} - x}{h}\\right) \\right] \\\\ = \\frac {1}{h} \\int K \\left(\\frac {x _ {1} - x}{h}\\right) f (x _ {1}) \\mathrm{d} x _ {1} = \\int K (u) f (u h + x) \\mathrm{d} u. \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.124,
+            0.859,
+            0.83,
+            0.888
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "上式中最后一个等式成立是做了变量替换 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "u = \\frac{x_1 - x}{h}"
+            },
+            {
+              "type": "text",
+              "content": ". 根据Taylor展式, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{f}(x)"
+            },
+            {
+              "type": "text",
+              "content": " 的偏差为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.194,
+            0.897,
+            0.76,
+            0.932
+          ],
+          "image_path": "images/page_282_equation_13.jpg",
+          "content": "\\mathrm{Bias} [ \\hat {f} (x) ] = E [ \\hat {f} (x) ] - f (x) = \\int K (u) f (u h + x) \\mathrm{d} u - f (x) \\int K (u) \\mathrm{d} u"
+        }
+      ]
+    },
+    {
+      "page_idx": 283,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.712,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "6.1 概率密度函数估计"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.068,
+            0.916,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "271"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 2,
+          "bbox": [
+            0.328,
+            0.121,
+            0.756,
+            0.272
+          ],
+          "image_path": "images/page_283_equation_2.jpg",
+          "content": "\\begin{array}{l} = \\int K (u) [ f (u h + x) - f (x) ] \\mathrm{d} u \\\\ = \\int K (u) \\left[ f ^ {\\prime} (x) u h + f ^ {\\prime \\prime} (x) \\frac {u ^ {2} h ^ {2}}{2} + o (u ^ {2} h ^ {2}) \\right] \\mathrm{d} u \\\\ = h f ^ {\\prime} (x) \\int K (u) u \\mathrm{d} u + \\frac {h ^ {2}}{2} f ^ {\\prime \\prime} (x) \\int K (u) u ^ {2} \\mathrm{d} u + o (h ^ {2}) \\\\ = \\frac {h ^ {2}}{2} f ^ {\\prime \\prime} (x) d _ {K} + o (h ^ {2}). \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.165,
+            0.285,
+            0.871,
+            0.335
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "上式最后一个等式成立的原因是核函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K"
+            },
+            {
+              "type": "text",
+              "content": " 是关于原点对称的, 则 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\int K(u)u\\mathrm{d}u = 0.\\hat{f}(x)"
+            },
+            {
+              "type": "text",
+              "content": " 的方差为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.229,
+            0.345,
+            0.808,
+            0.653
+          ],
+          "image_path": "images/page_283_equation_4.jpg",
+          "content": "\\begin{array}{l} \\mathrm{Var} [ \\hat {f} (x) ] = \\mathrm{Var} \\left[ \\frac {1}{n h} \\sum_ {i = 1} ^ {n} K \\left(\\frac {X _ {i} - x}{h}\\right) \\right] = \\frac {1}{n h ^ {2}} \\mathrm{Var} \\left[ K \\left(\\frac {X _ {i} - x}{h}\\right) \\right] \\\\ = \\frac {1}{n h ^ {2}} \\left\\{E \\left[ K \\left(\\frac {X _ {i} - x}{h}\\right) \\right] ^ {2} - E ^ {2} \\left[ K \\left(\\frac {X _ {i} - x}{h}\\right) \\right] \\right\\} \\\\ = \\frac {1}{n h ^ {2}} \\left\\{h \\int K ^ {2} (u) f (u h + x) \\mathrm{d} u - h ^ {2} \\left[ \\int K (t) f (t h + x) \\mathrm{d} t \\right] ^ {2} \\right\\} \\\\ = \\frac {1}{n h} \\int K ^ {2} (u) [ f (x) + o (1) ] \\mathrm{d} u - \\frac {1}{n} \\left[ \\int K (t) f (t h + x) \\mathrm{d} t \\right] ^ {2} \\\\ = \\frac {1}{n h} c _ {K} f (x) + o \\left(\\frac {1}{n h}\\right) - \\frac {1}{n} E _ {T} ^ {2} [ f (T h + x) ] \\\\ = \\frac {1}{n h} c _ {K} f (x) + o \\left(\\frac {1}{n h}\\right) - \\frac {1}{n} o \\left(\\frac {1}{h}\\right) \\\\ = \\frac {1}{n h} c _ {K} f (x) + o \\bigg (\\frac {1}{n h} \\bigg). \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.164,
+            0.667,
+            0.873,
+            0.739
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "上式倒数第三个等式中, 由于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K(t)"
+            },
+            {
+              "type": "text",
+              "content": " 也是一个对称的密度函数, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\int K(t)f(th + x)\\mathrm{d}t"
+            },
+            {
+              "type": "text",
+              "content": " 可视为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(Th + x)"
+            },
+            {
+              "type": "text",
+              "content": " 的期望. 上式倒数第二个等式成立是因为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E_T^2 [f(Th + x)] < \\infty"
+            },
+            {
+              "type": "text",
+              "content": ". 因此核函数估计的均方误差为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.273,
+            0.754,
+            0.765,
+            0.86
+          ],
+          "image_path": "images/page_283_equation_6.jpg",
+          "content": "\\begin{array}{l} \\mathrm{MSE} [ \\hat {f} (x) ] = \\{\\text {Bias} [ \\hat {f} (x) ] \\} ^ {2} + \\operatorname{Var} [ \\hat {f} (x) ] \\\\ = \\left[ \\frac {h ^ {2}}{2} f ^ {\\prime \\prime} (x) d _ {K} + o (h ^ {2}) \\right] ^ {2} + \\frac {1}{n h} c _ {K} f (x) + o \\left(\\frac {1}{n h}\\right) \\\\ = \\frac {1}{4} h ^ {4} d _ {K} ^ {2} [ f ^ {\\prime \\prime} (x) ] ^ {2} + \\frac {1}{n h} c _ {K} f (x) + o (h ^ {4}) + o \\left(\\frac {1}{n h}\\right). \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.165,
+            0.872,
+            0.417,
+            0.889
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "核函数估计的积分均方误差为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.227,
+            0.897,
+            0.477,
+            0.93
+          ],
+          "image_path": "images/page_283_equation_8.jpg",
+          "content": "\\mathrm{MISE} [ \\hat {f} (x) ] = \\int \\mathrm{MSE} [ \\hat {f} (x) ] \\mathrm{d} x"
+        }
+      ]
+    },
+    {
+      "page_idx": 284,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.08,
+            0.068,
+            0.109,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "272"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.265,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第六章 非参数方法"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 2,
+          "bbox": [
+            0.281,
+            0.119,
+            0.768,
+            0.196
+          ],
+          "image_path": "images/page_284_equation_2.jpg",
+          "content": "\\begin{array}{l} = \\frac {1}{4} h ^ {4} d _ {K} ^ {2} \\int [ f ^ {\\prime \\prime} (x) ] ^ {2} \\mathrm{d} x + \\frac {1}{n h} c _ {K} \\int f (x) \\mathrm{d} x + o (h ^ {4}) + o \\left(\\frac {1}{n h}\\right) \\\\ = \\frac {1}{4} h ^ {4} d _ {K} ^ {2} \\int [ f ^ {\\prime \\prime} (x) ] ^ {2} \\mathrm{d} x + \\frac {1}{n h} c _ {K} + o (h ^ {4}) + o \\left(\\frac {1}{n h}\\right). \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.123,
+            0.212,
+            0.639,
+            0.231
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "求解可以使得 MISE[ "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{f}(x)"
+            },
+            {
+              "type": "text",
+              "content": " ] 达到最小的窗宽 h, 即得 (6.1.4) 式."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.123,
+            0.235,
+            0.83,
+            0.277
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由 (6.1.4) 式可知, 当核函数确定后, 最优窗宽  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h_{\\mathrm{opt}} = O(n^{-1/5})"
+            },
+            {
+              "type": "text",
+              "content": " , 即  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h_{opt} = Cn^{-1/5}"
+            },
+            {
+              "type": "text",
+              "content": " , 其中 C 为待定的正的常数. 当  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h = h_{opt}"
+            },
+            {
+              "type": "text",
+              "content": "  时,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.239,
+            0.291,
+            0.713,
+            0.378
+          ],
+          "image_path": "images/page_284_equation_5.jpg",
+          "content": "\\begin{array}{l} \\mathrm{MISE} [ \\hat {f} (x) ] = \\frac {5}{4} c _ {K} ^ {\\frac {4}{5}} d _ {K} ^ {\\frac {2}{5}} \\bigg \\{\\int [ f ^ {\\prime \\prime} (x) ] ^ {2} \\mathrm{d} x \\bigg \\} ^ {\\frac {1}{5}} n ^ {- \\frac {4}{5}} + o (n ^ {- \\frac {4}{5}}) \\\\ = \\frac {5}{4} (c _ {K} ^ {2} d _ {K}) ^ {\\frac {2}{5}} \\bigg \\{\\int [ f ^ {\\prime \\prime} (x) ] ^ {2} \\mathrm{d} x \\bigg \\} ^ {\\frac {1}{5}} n ^ {- \\frac {4}{5}} + o (n ^ {- \\frac {4}{5}}). \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.123,
+            0.393,
+            0.832,
+            0.496
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由此可见, 应选择核函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K"
+            },
+            {
+              "type": "text",
+              "content": " 使得 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c_K^2 d_K = \\left[\\int K^2(u) \\mathrm{d}u\\right]^2 \\int u^2 K(u) \\mathrm{d}u"
+            },
+            {
+              "type": "text",
+              "content": " 尽可能小. 文献中已证明, Epanechnikov 核恰好是使得 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c_K^2 d_K"
+            },
+            {
+              "type": "text",
+              "content": " 达到最小的核函数. 由于最优窗宽 (6.1.4) 是在积分均方误差准则下且要求 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(x)"
+            },
+            {
+              "type": "text",
+              "content": " 存在连续二阶导数的条件下得到的, 但在实际应用中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(x)"
+            },
+            {
+              "type": "text",
+              "content": " 往往未知, 因此 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h_{\\mathrm{opt}}"
+            },
+            {
+              "type": "text",
+              "content": " 难以应用到实际问题中."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.123,
+            0.502,
+            0.832,
+            0.575
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Silverman (1986) 提出了一个选择 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h"
+            },
+            {
+              "type": "text",
+              "content": " 的正态参考规则: 若 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(x)"
+            },
+            {
+              "type": "text",
+              "content": " 为正态分布 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N(0, \\sigma^2)"
+            },
+            {
+              "type": "text",
+              "content": " 的密度函数, 选取 Gauss 核, 此时可选择窗宽 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{h}_{\\mathrm{opt}} = 1.06 \\hat{\\sigma} n^{-\\frac{1}{5}}"
+            },
+            {
+              "type": "text",
+              "content": ", 其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\sigma} = \\min \\left\\{S, \\frac{Q}{1.34}\\right\\}"
+            },
+            {
+              "type": "text",
+              "content": ", "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S"
+            },
+            {
+              "type": "text",
+              "content": " 为样本标准差, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Q"
+            },
+            {
+              "type": "text",
+              "content": " 为样本的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "75\\%"
+            },
+            {
+              "type": "text",
+              "content": " 分位数与 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "25\\%"
+            },
+            {
+              "type": "text",
+              "content": " 分位数的差."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.123,
+            0.582,
+            0.83,
+            0.622
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "若总体不是正态的情形, 可用交叉验证法得到一个对最优窗宽的良好估计. 考虑下面的积分平方误差 (integrated squared error, ISE) 作为评价指标, 即"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.16,
+            0.634,
+            0.794,
+            0.668
+          ],
+          "image_path": "images/page_284_equation_9.jpg",
+          "content": "\\mathrm{ISE} [ \\hat {f} (x) ] = \\int [ \\hat {f} (x) - f (x) ] ^ {2} \\mathrm{d} x = \\int \\hat {f} ^ {2} (x) \\mathrm{d} x - 2 \\int \\hat {f} (x) f (x) \\mathrm{d} x + \\int f ^ {2} (x) \\mathrm{d} x,"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.123,
+            0.684,
+            0.832,
+            0.766
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由于等式右边第三项与估计 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{f}(x)"
+            },
+            {
+              "type": "text",
+              "content": " 无关, 故只需考虑前两项, 并设为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "M(h)"
+            },
+            {
+              "type": "text",
+              "content": ". 选择窗宽使 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "M(h)"
+            },
+            {
+              "type": "text",
+              "content": " 达到最小. 下面分别考虑第一项和第二项. 对于第一项, 设 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t = \\frac{x_j - x}{h}, K^*(u) = \\int K(u + t)K(t)\\mathrm{d}t"
+            },
+            {
+              "type": "text",
+              "content": ", 则"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.246,
+            0.78,
+            0.709,
+            0.923
+          ],
+          "image_path": "images/page_284_equation_11.jpg",
+          "content": "\\begin{array}{l} \\int \\hat {f} ^ {2} (x) \\mathrm{d} x = \\frac {1}{n ^ {2} h ^ {2}} \\sum_ {i = 1} ^ {n} \\sum_ {j = 1} ^ {n} \\int K \\bigg (\\frac {x _ {i} - x}{h} \\bigg) K \\bigg (\\frac {x _ {j} - x}{h} \\bigg) \\mathrm{d} x \\\\ = \\frac {1}{n ^ {2} h} \\sum_ {i = 1} ^ {n} \\sum_ {j = 1} ^ {n} \\int K \\left(\\frac {x _ {i} - x _ {j}}{h} + t\\right) K (t) \\mathrm{d} t \\\\ = \\frac {1}{n ^ {2} h} \\sum_ {i = 1} ^ {n} \\sum_ {j = 1} ^ {n} K \\bigg (\\frac {x _ {i} - x _ {j}}{h} \\bigg). \\\\ \\end{array}"
+        }
+      ]
+    },
+    {
+      "page_idx": 285,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.711,
+            0.067,
+            0.871,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "6.1 概率密度函数估计"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.068,
+            0.917,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "273"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.164,
+            0.121,
+            0.874,
+            0.254
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "对于第二项, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\int \\hat{f}(x)f(x)\\mathrm{d}x = E_X[\\hat{f}(X)]"
+            },
+            {
+              "type": "text",
+              "content": ", 而 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\frac{1}{n}\\sum_{i=1}^{n}\\hat{f}(x_i)"
+            },
+            {
+              "type": "text",
+              "content": " 是 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E_X[\\hat{f}(X)]"
+            },
+            {
+              "type": "text",
+              "content": " 的无偏估计. 应用交叉验证法时, 需要对每个样本都剔除过一次后分别计算其效果. 设 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{f}^{-i}(x_i)"
+            },
+            {
+              "type": "text",
+              "content": " 为将第 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i"
+            },
+            {
+              "type": "text",
+              "content": " 个样本剔除后的核密度估计, 则 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sum_{i=1}^{n}\\hat{f}^{-i}(x_i)"
+            },
+            {
+              "type": "text",
+              "content": " 均匀地对每个样本都剔除过一次, 且 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\frac{1}{n}\\sum_{i=1}^{n}\\hat{f}^{-i}(x_i)"
+            },
+            {
+              "type": "text",
+              "content": " 也是 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E_X[\\hat{f}(X)]"
+            },
+            {
+              "type": "text",
+              "content": " 的无偏估计. 由于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{f}^{-i}(x_i) = \\frac{1}{(n-1)h}\\sum_{i\\neq j}K\\left(\\frac{x_j - x_i}{h}\\right)"
+            },
+            {
+              "type": "text",
+              "content": ","
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.214,
+            0.263,
+            0.822,
+            0.419
+          ],
+          "image_path": "images/page_285_equation_3.jpg",
+          "content": "\\begin{array}{l} \\frac {1}{n} \\sum_ {i = 1} ^ {n} \\hat {f} ^ {- i} (x _ {i}) = \\frac {1}{n (n - 1) h} \\sum_ {i = 1} ^ {n} \\sum_ {j \\neq i} K \\bigg (\\frac {x _ {j} - x _ {i}}{h} \\bigg) \\\\ = \\frac {1}{n (n - 1) h} \\sum_ {i = 1} ^ {n} \\left[ \\sum_ {j = 1} ^ {n} K \\bigg (\\frac {x _ {j} - x _ {i}}{h} \\bigg) - K \\bigg (\\frac {x _ {j} - x _ {i}}{h} \\bigg) I (i = j) \\right] \\\\ = \\frac {1}{n (n - 1) h} \\sum_ {i = 1} ^ {n} \\sum_ {j = 1} ^ {n} K \\left(\\frac {x _ {j} - x _ {i}}{h}\\right) - \\frac {K (0)}{(n - 1) h}. \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.165,
+            0.431,
+            0.214,
+            0.447
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "因此，"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.194,
+            0.454,
+            0.844,
+            0.591
+          ],
+          "image_path": "images/page_285_equation_5.jpg",
+          "content": "\\begin{array}{l} M (h) = \\int \\hat {f} ^ {2} (x) \\mathrm{d} x - 2 \\int \\hat {f} (x) f (x) \\mathrm{d} x \\\\ = \\frac {1}{n ^ {2} h} \\sum_ {i = 1} ^ {n} \\sum_ {j = 1} ^ {n} K \\left(\\frac {x _ {i} - x _ {j}}{h}\\right) - \\frac {2}{n (n - 1) h} \\sum_ {i = 1} ^ {n} \\sum_ {j = 1} ^ {n} K \\left(\\frac {x _ {j} - x _ {i}}{h}\\right) + \\frac {2 K (0)}{(n - 1) h} \\\\ \\approx - \\frac {1}{n ^ {2} h} \\sum_ {i = 1} ^ {n} \\sum_ {j = 1} ^ {n} K \\bigg (\\frac {x _ {i} - x _ {j}}{h} \\bigg) + \\frac {2 K (0)}{(n - 1) h}. \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.164,
+            0.603,
+            0.873,
+            0.666
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "最后一个式子是用 n 代替 n-1. 对于样本  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{1}, x_{2}, \\cdots, x_{n}"
+            },
+            {
+              "type": "text",
+              "content": " ，当核函数 K 给定时， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "M(h)"
+            },
+            {
+              "type": "text",
+              "content": "  是关于 h 的一元函数。通过优化求解该一元函数，可得最优的窗宽 h，即交叉验证法下的最优窗宽为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.41,
+            0.686,
+            0.871,
+            0.711
+          ],
+          "image_path": "images/page_285_equation_7.jpg",
+          "content": "h _ {\\mathrm{opt2}} = \\underset {h} {\\arg \\min} M (h), \\tag {6.1.5}"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.164,
+            0.725,
+            0.871,
+            0.764
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其可通过数值求解法得到. Stone (1984) 证明了当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(x)"
+            },
+            {
+              "type": "text",
+              "content": " 有界时, 该窗宽 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h_{\\mathrm{opt2}}"
+            },
+            {
+              "type": "text",
+              "content": " 是渐近最优的."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.164,
+            0.771,
+            0.875,
+            0.926
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例 6.1.1 考虑由 500 个服从  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N(0,1)"
+            },
+            {
+              "type": "text",
+              "content": "  的样本和 500 个服从  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N(4,1.2^{2})"
+            },
+            {
+              "type": "text",
+              "content": "  的样本合在一起的混合正态总体的样本, 其直方图如图 6.1.3 所示. 考虑不同的窗宽 h, 图 6.1.3 中给出 h=0.1, 0.234, 0.768 和 2 的核密度估计, 其中 h=0.768 是假设总体服从正态分布而用正态参考规则给出的推荐窗宽, h=0.234 是由交叉验证法得到近似最优窗宽 (6.1.5). 从中可见, h=2 时, 核密度估计变为单峰的, 而这与真实的情形不符; 太小的窗宽, 如 h=0.1, 则估计的密度函数变化剧烈; 若总体不是正态或近似正态的, 则并不适合用正态参考规则."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 286,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.08,
+            0.068,
+            0.107,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "274"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.264,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第六章 非参数方法"
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 2,
+          "bbox": [
+            0.229,
+            0.119,
+            0.726,
+            0.326
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 2,
+              "bbox": [
+                0.229,
+                0.119,
+                0.726,
+                0.326
+              ],
+              "image_path": "images/page_286_chart_2.jpg",
+              "content": "| Metric | Value |\n| --- | --- |\n| h=0.234 | 0.234 |\n| h=0.768 | 0.768 |\n| h=0.1 | 0.1 |\n| h=2 | 2 |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 3,
+              "bbox": [
+                0.279,
+                0.331,
+                0.673,
+                0.347
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图 6.1.3 双峰密度函数在不同窗宽下的核密度估计"
+                }
+              ]
+            }
+          ],
+          "sub_type": "histogram"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.162,
+            0.372,
+            0.823,
+            0.39
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "一维的核密度估计可推广至 d 维. 对于 d 维样本  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{1}, x_{2}, \\cdots, x_{n}"
+            },
+            {
+              "type": "text",
+              "content": " ，其核密度估计为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.354,
+            0.407,
+            0.6,
+            0.449
+          ],
+          "image_path": "images/page_286_equation_5.jpg",
+          "content": "\\hat {f} _ {h} (x) = \\frac {1}{n h ^ {d}} \\sum_ {i = 1} ^ {n} K \\bigg (\\frac {x _ {i} - x}{h} \\bigg),"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.123,
+            0.469,
+            0.832,
+            0.592
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中 d 为 x 的维数, K 为多维核函数. 通常令  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K(t) = \\prod_{i=1}^{d} K_{i}(t_{i})"
+            },
+            {
+              "type": "text",
+              "content": " , 其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "t = (t_{1}, t_{2}, \\cdots, t_{d})"
+            },
+            {
+              "type": "text",
+              "content": " ,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K_{i}(t_{i})"
+            },
+            {
+              "type": "text",
+              "content": "  为一维核函数. 在实际应用中, 经常使用多维 Gauss 乘积核, 即  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K_{i}"
+            },
+            {
+              "type": "text",
+              "content": "  都是一维的 Gauss 核. d 维核密度估计中窗宽会严重影响估计结果. 类似于一维情形的最优窗宽 (6.1.4), 应用 Taylor 展式等方法也可以得到 d 维核密度估计最优窗宽, 其与  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n^{-1/(4+d)}"
+            },
+            {
+              "type": "text",
+              "content": "  同阶. 同样地, 可用交叉验证法得到近似的最优窗宽."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.162,
+            0.6,
+            0.695,
+            0.618
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "下面给出核密度估计的大样本性质. 具体证明可参薛留根 (2015)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.124,
+            0.622,
+            0.83,
+            0.663
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定理6.1.2 设核函数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K(u)"
+            },
+            {
+              "type": "text",
+              "content": " 为概率密度函数, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x \\in \\mathbb{R}^d"
+            },
+            {
+              "type": "text",
+              "content": ", 窗宽 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "h \\to 0"
+            },
+            {
+              "type": "text",
+              "content": ", "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E[\\hat{f}(x)]"
+            },
+            {
+              "type": "text",
+              "content": " 存在, 则 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{f}(x)"
+            },
+            {
+              "type": "text",
+              "content": " 有以下性质:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.124,
+            0.67,
+            0.83,
+            0.71
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "渐近无偏性: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lim_{n\\to\\infty}E[\\hat{f}(x)]"
+            },
+            {
+              "type": "text",
+              "content": "  存在且等于  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(x)"
+            },
+            {
+              "type": "text",
+              "content": "  的充要条件是  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(1+||x||^{d})K(x)"
+            },
+            {
+              "type": "text",
+              "content": "  几乎处处有界；"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.123,
+            0.718,
+            0.829,
+            0.763
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "弱相合性: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(1+||x||^{d})K(x)"
+            },
+            {
+              "type": "text",
+              "content": " 几乎处处有界，且 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "nh^{d}\\to\\infty"
+            },
+            {
+              "type": "text",
+              "content": "，则对任意连续点 x，有 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lim_{n\\to\\infty}E[\\hat{f}(x)-f(x)]^{2}=0"
+            },
+            {
+              "type": "text",
+              "content": "，从而 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{f}(x)\\stackrel{\\mathrm{P}}{\\rightarrow}f(x)"
+            },
+            {
+              "type": "text",
+              "content": ";"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.123,
+            0.769,
+            0.83,
+            0.822
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "强相合性: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(1+||x||^{d})K(x)"
+            },
+            {
+              "type": "text",
+              "content": "  几乎处处有界，且  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\frac{nh^{d}}{\\ln n} \\rightarrow \\infty"
+            },
+            {
+              "type": "text",
+              "content": " ，则对任意连续点 x，有  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{f}(x) \\stackrel{\\mathrm{a.s.}}{\\longrightarrow} f(x)"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.161,
+            0.828,
+            0.455,
+            0.844
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在一维情况下有下面的渐近正态性."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.123,
+            0.851,
+            0.833,
+            0.929
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定理 6.1.3 设核函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K(u)"
+            },
+            {
+              "type": "text",
+              "content": "  为 R 上对称的概率密度函数, 且满足  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sup_{u}(1+|u|)K(u) \\leqslant c_{1} < \\infty, \\int u^{2} K(u) \\mathrm{d}u \\leqslant c_{2} < \\infty"
+            },
+            {
+              "type": "text",
+              "content": " , 其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c_{1}"
+            },
+            {
+              "type": "text",
+              "content": " 、 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c_{2}"
+            },
+            {
+              "type": "text",
+              "content": "  均为正的常数; 窗宽  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "nh \\to \\infty, nh^{5} \\to 0; f(x)"
+            },
+            {
+              "type": "text",
+              "content": "  存在有界的二阶导数, 则对任意满足  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(x_{i}) > 0 (i = 1, 2, \\cdots, k)"
+            },
+            {
+              "type": "text",
+              "content": "  的 k 个不同点"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 287,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.696,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "6.2 经验分布与替代原理"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.068,
+            0.917,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "275"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.164,
+            0.123,
+            0.31,
+            0.139
+          ],
+          "content": [
+            {
+              "type": "equation_inline",
+              "content": "x_{1},x_{2},\\cdots,x_{k}"
+            },
+            {
+              "type": "text",
+              "content": " ，有"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.242,
+            0.154,
+            0.795,
+            0.175
+          ],
+          "image_path": "images/page_287_equation_3.jpg",
+          "content": "\\sqrt {n h} (\\hat {f} (x _ {1}) - f (x _ {1}), \\hat {f} (x _ {2}) - f (x _ {2}), \\dots , \\hat {f} (x _ {k}) - f (x _ {k})) ^ {\\mathrm{T}} \\stackrel {\\mathrm{d}} {\\rightarrow} N (\\mathbf {0}, B),"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.166,
+            0.185,
+            0.741,
+            0.218
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B = \\mathrm{diag}(b_{11}, b_{22}, \\cdots, b_{kk}), b_{ii} = f(x_i) \\int K^2(u) \\mathrm{d}u, i = 1, 2, \\cdots, k."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.164,
+            0.22,
+            0.871,
+            0.259
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "通过核密度估计法, 得到总体的密度函数的估计之后, 可以基于估计的密度做更多的统计推断. 例如, 可对数据做非参数回归. 这里不再展开详细的介绍."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.164,
+            0.312,
+            0.475,
+            0.334
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "6.2 经验分布与替代原理"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.164,
+            0.38,
+            0.873,
+            0.468
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由概率论的知识可知，分布函数包含了总体的所有的统计信息。根据总体的样本 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1},X_{2},\\cdots,X_{n}"
+            },
+            {
+              "type": "text",
+              "content": " 对总体分布进行估计，可了解数据的性质、形态和概率特征，从而更好地分析总体的统计规律。分布估计可作为进一步数据分析的基础。此外，分位数也是一类非常有用的数字特征。基于样本 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1},X_{2},\\cdots,X_{n}"
+            },
+            {
+              "type": "text",
+              "content": " ，可以给出分位数合理的估计。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 8,
+          "bbox": [
+            0.201,
+            0.494,
+            0.418,
+            0.513
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "6.2.1 经验分布函数"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.164,
+            0.538,
+            0.873,
+            0.601
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在 (1.2.9) 式中已给出经验分布函数的定义, 本小节进一步讨论经验分布函数的性质并给出详细的证明. 给定独立同分布随机变量  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": " , 它们均服从总体分布  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x)"
+            },
+            {
+              "type": "text",
+              "content": " , 经验分布函数"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.27,
+            0.617,
+            0.873,
+            0.692
+          ],
+          "image_path": "images/page_287_equation_10.jpg",
+          "content": "F _ {n} (x) = \\left\\{ \\begin{array}{l l} 0, & x <   X _ {(1)}, \\\\ \\frac {k}{n}, & X _ {(k)} \\leqslant x <   X _ {(k + 1)}, k = 1, 2, \\dots , n - 1, \\\\ 1, & x \\geqslant X _ {(n)}, \\end{array} \\right. \\tag {6.2.1}"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.164,
+            0.706,
+            0.873,
+            0.77
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{(1)} \\leqslant X_{(2)} \\leqslant \\cdots \\leqslant X_{(n)}"
+            },
+            {
+              "type": "text",
+              "content": "  为次序统计量. 由于  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F_{n}(x)"
+            },
+            {
+              "type": "text",
+              "content": "  是一个非降的右连续函数, 故可作为总体分布  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x)"
+            },
+            {
+              "type": "text",
+              "content": "  的一个估计. 这里并没有要求总体分布的具体参数结构, 因此  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F_{n}(x)"
+            },
+            {
+              "type": "text",
+              "content": "  是  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x)"
+            },
+            {
+              "type": "text",
+              "content": "  的一个非参数估计. 下面的定理说明  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F_{n}(x)"
+            },
+            {
+              "type": "text",
+              "content": "  是  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x)"
+            },
+            {
+              "type": "text",
+              "content": "  的一个良好估计."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.165,
+            0.775,
+            0.873,
+            0.816
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定理 6.2.1 对于总体分布为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x)"
+            },
+            {
+              "type": "text",
+              "content": "  的独立同分布随机样本  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": " ，其经验分布函数有如下性质:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 13,
+          "bbox": [
+            0.193,
+            0.821,
+            0.667,
+            0.931
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 14,
+              "bbox": [
+                0.193,
+                0.821,
+                0.533,
+                0.839
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(1) 依概率收敛: "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "F_{n}(x) \\stackrel{\\mathrm{p}}{\\rightarrow} F(x), \\forall x \\in \\mathbb{R}"
+                },
+                {
+                  "type": "text",
+                  "content": "."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 15,
+              "bbox": [
+                0.194,
+                0.845,
+                0.594,
+                0.862
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(2) 均方收敛: "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "E[F_n(x) - F(x)]^2 \\longrightarrow 0, \\forall x \\in \\mathbb{R}"
+                },
+                {
+                  "type": "text",
+                  "content": "."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 16,
+              "bbox": [
+                0.194,
+                0.865,
+                0.662,
+                0.89
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(3) 几乎处处收敛: "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "P\\left(\\lim_{n\\to \\infty}F_n(x) = F(x)\\right) = 1, \\forall x\\in \\mathbb{R}"
+                },
+                {
+                  "type": "text",
+                  "content": "."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 17,
+              "bbox": [
+                0.194,
+                0.893,
+                0.667,
+                0.93
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(4) 渐近正态性: "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\frac{F_n(x) - F(x)}{\\sqrt{F(x)[1 - F(x)] / n}} \\xrightarrow{\\mathrm{d}} N(0,1), \\forall x \\in \\mathbb{R}"
+                },
+                {
+                  "type": "text",
+                  "content": "."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}

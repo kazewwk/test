@@ -1,0 +1,7793 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "created_at": "2026-05-30T23:42:17+08:00",
+      "producer_application": "jsPDF 2.4.0",
+      "page_count": 373,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 80,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 81,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 82,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 83,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 84,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 85,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 86,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 87,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 88,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 89,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 90,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 91,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 92,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 93,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 94,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        },
+        {
+          "page_idx": 95,
+          "width_pt": 595.280029296875,
+          "height_pt": 841.8900146484375
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 80,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.088,
+            0.068,
+            0.106,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "68"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.264,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第二章 参数点估计"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.122,
+            0.12,
+            0.83,
+            0.186
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "V(\\theta) = \\mathrm{Var}[\\tilde{S}(\\boldsymbol{X};\\theta)]"
+            },
+            {
+              "type": "text",
+              "content": " ,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\boldsymbol{\\Delta} = (g^{1}(\\theta), g^{2}(\\theta), \\cdots, g^{k}(\\theta))^{\\mathrm{T}}"
+            },
+            {
+              "type": "text",
+              "content": " , 而  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S^{i}(\\boldsymbol{X}, \\theta) = \\frac{\\partial^{i}S(\\boldsymbol{X};\\theta)}{\\partial\\theta^{i}}"
+            },
+            {
+              "type": "text",
+              "content": " ,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g^{i}(\\theta) = \\frac{\\partial^{i}g(\\theta)}{\\partial\\theta^{i}}"
+            },
+            {
+              "type": "text",
+              "content": " ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.123,
+            0.187,
+            0.83,
+            0.226
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在统计中, (2.1.18) 式右边的值被称为无偏估计 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T(\\mathbf{X})"
+            },
+            {
+              "type": "text",
+              "content": " 的方差的 Bhattacharya 下界. 显然, 当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k = 1"
+            },
+            {
+              "type": "text",
+              "content": " 时, 此下界就是 C-R 下界."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.16,
+            0.255,
+            0.33,
+            0.273
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2.1.4 相合估计"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.122,
+            0.299,
+            0.832,
+            0.363
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "前两小节的准则主要侧重于样本容量给定, 而本节讲述的准则侧重于样本容量趋于无穷: 相合估计 (consistent estimate) 和相合渐近正态估计 (consistent asymptotically normal estimate, 简记为 CAN 估计)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.16,
+            0.369,
+            0.6,
+            0.386
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定义 2.1.7 设统计量  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}(X)"
+            },
+            {
+              "type": "text",
+              "content": "  是参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g(\\theta)"
+            },
+            {
+              "type": "text",
+              "content": "  的估计量."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.16,
+            0.393,
+            0.771,
+            0.41
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(1) 如果当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\to \\infty"
+            },
+            {
+              "type": "text",
+              "content": " 时, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}(X)"
+            },
+            {
+              "type": "text",
+              "content": " 依概率收敛于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g(\\theta)"
+            },
+            {
+              "type": "text",
+              "content": ", 即 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\forall \\theta \\in \\Theta"
+            },
+            {
+              "type": "text",
+              "content": " 及 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\varepsilon > 0"
+            },
+            {
+              "type": "text",
+              "content": ", 有"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.343,
+            0.426,
+            0.611,
+            0.449
+          ],
+          "image_path": "images/page_80_equation_8.jpg",
+          "content": "\\lim _ {n \\to \\infty} P (| T _ {n} (X) - g (\\theta) | \\geqslant \\varepsilon) = 0,"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.125,
+            0.46,
+            0.438,
+            0.478
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "则称 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}(X)"
+            },
+            {
+              "type": "text",
+              "content": " 是 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g(\\theta)"
+            },
+            {
+              "type": "text",
+              "content": " 的（弱）相合估计."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.16,
+            0.484,
+            0.717,
+            0.502
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(2) 如果当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\to \\infty"
+            },
+            {
+              "type": "text",
+              "content": " 时, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}(X)"
+            },
+            {
+              "type": "text",
+              "content": " 以概率1收敛于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g(\\theta)"
+            },
+            {
+              "type": "text",
+              "content": ", 即 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\forall \\theta \\in \\Theta"
+            },
+            {
+              "type": "text",
+              "content": ", 有"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.359,
+            0.513,
+            0.596,
+            0.541
+          ],
+          "image_path": "images/page_80_equation_11.jpg",
+          "content": "P \\left(\\lim _ {n \\to \\infty} T _ {n} (X) = g (\\theta)\\right) = 1,"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.125,
+            0.552,
+            0.413,
+            0.57
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "则称  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}(X)"
+            },
+            {
+              "type": "text",
+              "content": "  是  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g(\\theta)"
+            },
+            {
+              "type": "text",
+              "content": "  的强相合估计."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.16,
+            0.576,
+            0.717,
+            0.594
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(3) 如果当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\to \\infty"
+            },
+            {
+              "type": "text",
+              "content": " 时, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}(X)"
+            },
+            {
+              "type": "text",
+              "content": " 依 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r"
+            },
+            {
+              "type": "text",
+              "content": " 阶矩收敛于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g(\\theta)"
+            },
+            {
+              "type": "text",
+              "content": ", 即 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\forall \\theta \\in \\Theta"
+            },
+            {
+              "type": "text",
+              "content": ", 有"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.36,
+            0.61,
+            0.594,
+            0.633
+          ],
+          "image_path": "images/page_80_equation_14.jpg",
+          "content": "\\lim _ {n \\to \\infty} E _ {\\theta} | T _ {n} (X) - g (\\theta) | ^ {r} = 0,"
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.124,
+            0.644,
+            0.719,
+            0.661
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "则称 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}(X)"
+            },
+            {
+              "type": "text",
+              "content": " 是 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g(\\theta)"
+            },
+            {
+              "type": "text",
+              "content": " 的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r"
+            },
+            {
+              "type": "text",
+              "content": " 阶矩相合估计. 当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r = 2"
+            },
+            {
+              "type": "text",
+              "content": " 时, 称为均方相合估计."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.123,
+            0.667,
+            0.83,
+            0.707
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由概率论知识知道, 强相合  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\Rightarrow"
+            },
+            {
+              "type": "text",
+              "content": "  弱相合, r 阶矩相合  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\Rightarrow"
+            },
+            {
+              "type": "text",
+              "content": "  弱相合, 反之不成立, 且强相合与 r 阶矩相合之间没有包含关系."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.214,
+            0.715,
+            0.612,
+            0.732
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "注 2.1.5 关于相合估计,有如下两个有用结论:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 18,
+          "bbox": [
+            0.251,
+            0.739,
+            0.83,
+            0.827
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 19,
+              "bbox": [
+                0.251,
+                0.739,
+                0.83,
+                0.784
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "- 如果 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "T_{n}"
+                },
+                {
+                  "type": "text",
+                  "content": " 是 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "g(\\theta)"
+                },
+                {
+                  "type": "text",
+                  "content": " 的相合估计，"
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\{c_{n}\\}, \\{d_{n}\\}"
+                },
+                {
+                  "type": "text",
+                  "content": " 是两个常数列，且 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\lim_{n} c_{n} = 0, \\lim_{n} d_{n} = 1"
+                },
+                {
+                  "type": "text",
+                  "content": "，则 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "d_{n} T_{n} + c_{n}"
+                },
+                {
+                  "type": "text",
+                  "content": " 也是 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "g(\\theta)"
+                },
+                {
+                  "type": "text",
+                  "content": " 的相合估计."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 20,
+              "bbox": [
+                0.252,
+                0.787,
+                0.829,
+                0.827
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "- 如果 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "T_{n}"
+                },
+                {
+                  "type": "text",
+                  "content": " 是 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\theta"
+                },
+                {
+                  "type": "text",
+                  "content": " 的(强)相合估计, "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "g(x)"
+                },
+                {
+                  "type": "text",
+                  "content": " 连续, 则 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "g(T_{n})"
+                },
+                {
+                  "type": "text",
+                  "content": " 也是 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "g(\\theta)"
+                },
+                {
+                  "type": "text",
+                  "content": " 的(强)相合估计."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 21,
+          "bbox": [
+            0.212,
+            0.848,
+            0.83,
+            0.912
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "注 2.1.6 关于相合估计的存在性问题, 陈希孺 (2009) 之 4.1.3 小节对此进行了较详细讨论, 由于这是纯理论研究, 而实际应用很少考虑, 故请有兴趣的读者参阅."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 81,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.697,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2.1 几个常用的估计准则"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.069,
+            0.91,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "69"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.166,
+            0.122,
+            0.871,
+            0.162
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定义 2.1.8 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  是参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g(\\theta)"
+            },
+            {
+              "type": "text",
+              "content": "  的相合估计, 如存在与样本容量 n 有关的定义于参数空间  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\Theta"
+            },
+            {
+              "type": "text",
+              "content": "  上的函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu_{n}(\\theta), \\sigma_{n}(\\theta)"
+            },
+            {
+              "type": "text",
+              "content": " , 且  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma_{n}(\\theta) > 0"
+            },
+            {
+              "type": "text",
+              "content": " , 使得当  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\to \\infty"
+            },
+            {
+              "type": "text",
+              "content": "  时有"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.421,
+            0.175,
+            0.871,
+            0.21
+          ],
+          "image_path": "images/page_81_equation_3.jpg",
+          "content": "\\frac {T _ {n} - \\mu_ {n} (\\theta)}{\\sigma_ {n} (\\theta)} \\xrightarrow {\\mathrm{d}} N (0, 1), \\tag {2.1.19}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.165,
+            0.223,
+            0.857,
+            0.242
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "则称  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g(\\theta)"
+            },
+            {
+              "type": "text",
+              "content": "  的 CAN 估计, 也称  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  渐近正态  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N(\\mu_{n}, \\sigma_{n}^{2})"
+            },
+            {
+              "type": "text",
+              "content": " , 记为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n} \\sim AN(\\mu_{n}, \\sigma_{n}^{2})"
+            },
+            {
+              "type": "text",
+              "content": " ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.164,
+            0.246,
+            0.871,
+            0.286
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "从上述定义可以看出, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma_{n}^{2}"
+            },
+            {
+              "type": "text",
+              "content": "  并不唯一,且也不是估计量 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  的方差.这一点可以由下面的结论得到:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.205,
+            0.292,
+            0.714,
+            0.311
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "- 如果 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n} \\sim AN(\\mu_{n}, \\sigma_{n}^{2})"
+            },
+            {
+              "type": "text",
+              "content": "，则 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n} \\sim AN(\\mu_{n}^{\\prime}, \\sigma_{n}^{\\prime 2})"
+            },
+            {
+              "type": "text",
+              "content": " 的充要条件是"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.411,
+            0.323,
+            0.686,
+            0.358
+          ],
+          "image_path": "images/page_81_equation_7.jpg",
+          "content": "\\lim _ {n \\to \\infty} \\frac {\\sigma_ {n} ^ {\\prime}}{\\sigma_ {n}} = 1, \\lim _ {n \\to \\infty} \\frac {\\mu_ {n} ^ {\\prime} - \\mu_ {n}}{\\sigma_ {n}} = 0."
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.205,
+            0.37,
+            0.771,
+            0.389
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "- 如果 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n} \\sim AN(\\mu_{n}, \\sigma_{n}^{2})"
+            },
+            {
+              "type": "text",
+              "content": "，则 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a_{n}T_{n} + b_{n} \\sim AN(\\mu_{n}, \\sigma_{n}^{2})"
+            },
+            {
+              "type": "text",
+              "content": " 的充要条件是"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.382,
+            0.401,
+            0.715,
+            0.435
+          ],
+          "image_path": "images/page_81_equation_9.jpg",
+          "content": "\\lim _ {n \\to \\infty} a _ {n} = 1, \\lim _ {n \\to \\infty} \\frac {\\mu_ {n} (a _ {n} - 1) + b _ {n}}{\\sigma_ {n}} = 0."
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.165,
+            0.448,
+            0.871,
+            0.488
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "对于第一章中定义的经验分布函数, 第六章将证明当样本独立同分布时, 经验分布是总体分布的相合估计, 也是其相合渐近正态估计."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.165,
+            0.494,
+            0.873,
+            0.534
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定义 2.1.9 (总体 p 分位数) 设总体 X 的累积分布函数为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(x)"
+            },
+            {
+              "type": "text",
+              "content": " ，对于给定的  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p \\in (0,1)"
+            },
+            {
+              "type": "text",
+              "content": " ，称"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.425,
+            0.54,
+            0.871,
+            0.559
+          ],
+          "image_path": "images/page_81_equation_12.jpg",
+          "content": "\\xi_ {p} = \\inf \\{x: F (x) \\geqslant p \\} \\tag {2.1.20}"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.166,
+            0.571,
+            0.614,
+            0.587
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "为该总体 p 分位数. 特别地,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\xi_{0.5}"
+            },
+            {
+              "type": "text",
+              "content": "  称为该总体的中位数."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.203,
+            0.593,
+            0.694,
+            0.61
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "虽然 (1.2.7) 式定义的样本 p 分位数, 和注 1.2.2 中所给出的"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.38,
+            0.625,
+            0.871,
+            0.647
+          ],
+          "image_path": "images/page_81_equation_15.jpg",
+          "content": "\\hat {\\xi} _ {p} = F _ {n} ^ {- 1} (p) = \\inf \\{x: F _ {n} (x) \\geqslant p \\} \\tag {2.1.21}"
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.164,
+            0.661,
+            0.871,
+            0.702
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "有所不同, 但它们都介于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{([np])}"
+            },
+            {
+              "type": "text",
+              "content": " 与 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{([np]+1)}"
+            },
+            {
+              "type": "text",
+              "content": " 之间. 从 (2.1.20) 可以看出, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\xi_p"
+            },
+            {
+              "type": "text",
+              "content": " 是一个左连续函数. 另外, 由 (2.1.21) 式知道, 当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F"
+            },
+            {
+              "type": "text",
+              "content": " 连续时, 有"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 17,
+          "bbox": [
+            0.36,
+            0.718,
+            0.676,
+            0.737
+          ],
+          "image_path": "images/page_81_equation_17.jpg",
+          "content": "F _ {n} ^ {- 1} (t) = X _ {(i)}, \\text {如} (i - 1) / n <   t \\leqslant i / n,"
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.166,
+            0.753,
+            0.19,
+            0.768
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "即"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 19,
+          "bbox": [
+            0.398,
+            0.776,
+            0.639,
+            0.795
+          ],
+          "image_path": "images/page_81_equation_19.jpg",
+          "content": "F _ {n} ^ {- 1} (t) = X _ {(\\lceil n t \\rceil)}, \\quad 0 <   t <   1,"
+        },
+        {
+          "type": "text",
+          "index": 20,
+          "bbox": [
+            0.164,
+            0.805,
+            0.871,
+            0.847
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "[x]"
+            },
+            {
+              "type": "text",
+              "content": " 表示不小于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": " 的最小整数. 于是, 我们可以通过研究 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{(m)}"
+            },
+            {
+              "type": "text",
+              "content": " 的相合渐近正态性, 而知道样本分位数的相关性质, 其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "m / n = p + o_p(n^{-1/2})"
+            },
+            {
+              "type": "text",
+              "content": ". 为此, 需要下面引理."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 21,
+          "bbox": [
+            0.163,
+            0.852,
+            0.871,
+            0.892
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "引理 2.1.1 对于两个随机变量列  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\{T_{n}\\},\\{V_{n}\\}"
+            },
+            {
+              "type": "text",
+              "content": " ，假设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}=O_{p}(1)"
+            },
+            {
+              "type": "text",
+              "content": " ，且对于任意的  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\varepsilon>0"
+            },
+            {
+              "type": "text",
+              "content": "  及常数 c，有"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 22,
+          "bbox": [
+            0.287,
+            0.91,
+            0.75,
+            0.927
+          ],
+          "image_path": "images/page_81_equation_22.jpg",
+          "content": "P (V _ {n} \\leqslant c, T _ {n} \\geqslant c + \\varepsilon) \\rightarrow 0, \\quad P (V _ {n} \\geqslant c + \\varepsilon , T _ {n} \\leqslant c) \\rightarrow 0,"
+        }
+      ]
+    },
+    {
+      "page_idx": 82,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.088,
+            0.068,
+            0.106,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "70"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.264,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第二章 参数点估计"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.125,
+            0.123,
+            0.148,
+            0.138
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "则"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.416,
+            0.143,
+            0.537,
+            0.162
+          ],
+          "image_path": "images/page_82_equation_3.jpg",
+          "content": "V _ {n} - T _ {n} \\xrightarrow {\\mathrm{p}} 0."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.159,
+            0.176,
+            0.794,
+            0.194
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "证明 由于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n} = O_{p}(1)"
+            },
+            {
+              "type": "text",
+              "content": "，故任给 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\varepsilon > 0, \\delta > 0"
+            },
+            {
+              "type": "text",
+              "content": "，存在自然数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "m"
+            },
+            {
+              "type": "text",
+              "content": "（与 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\varepsilon, \\delta"
+            },
+            {
+              "type": "text",
+              "content": " 有关），使"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.382,
+            0.213,
+            0.572,
+            0.23
+          ],
+          "image_path": "images/page_82_equation_5.jpg",
+          "content": "P (| T _ {n} | \\geqslant m \\varepsilon) <   \\delta , \\forall n."
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.162,
+            0.249,
+            0.206,
+            0.265
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "于是"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.14,
+            0.283,
+            0.822,
+            0.436
+          ],
+          "image_path": "images/page_82_equation_7.jpg",
+          "content": "\\begin{array}{l} P (| T _ {n} - V _ {n} | > 2 \\varepsilon) \\\\ <   \\delta + P (| T _ {n} | <   m \\varepsilon , | T _ {n} - V _ {n} | > 2 \\varepsilon) \\\\ <   \\delta + \\sum_ {i = - m + 1} ^ {m} P ((i - 1) \\varepsilon \\leqslant T _ {n} \\leqslant i \\varepsilon , | T _ {n} - V _ {n} | > 2 \\varepsilon) \\\\ \\leqslant \\delta + \\sum_ {i = - m + 1} ^ {m} P (T _ {n} \\leqslant i \\varepsilon , V _ {n} \\geqslant i \\varepsilon + \\varepsilon) + \\sum_ {i = - m + 1} ^ {m} P (T _ {n} \\geqslant (i - 1) \\varepsilon , V _ {n} \\leqslant (i - 1) \\varepsilon - \\varepsilon), \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.125,
+            0.451,
+            0.314,
+            0.467
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由条件可知, 结论成立."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.123,
+            0.474,
+            0.832,
+            0.543
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定理 2.1.8 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  为来自总体 X 的独立同分布样本，以  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{n1} \\leqslant X_{n2} \\leqslant \\cdots \\leqslant X_{nn}"
+            },
+            {
+              "type": "text",
+              "content": "  表示其次序统计量，以  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(x)"
+            },
+            {
+              "type": "text",
+              "content": "  记总体概率密度， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\xi_{p}"
+            },
+            {
+              "type": "text",
+              "content": "  记总体 p 分位数。如果  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(\\xi_{p}) > 0"
+            },
+            {
+              "type": "text",
+              "content": " ,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(x)"
+            },
+            {
+              "type": "text",
+              "content": "  在  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\xi_{p}"
+            },
+            {
+              "type": "text",
+              "content": "  点连续，且  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\frac{m}{n} = p + o_{p}(n^{-1/2})"
+            },
+            {
+              "type": "text",
+              "content": " ，则"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.345,
+            0.558,
+            0.83,
+            0.595
+          ],
+          "image_path": "images/page_82_equation_10.jpg",
+          "content": "X _ {n m} - \\xi_ {p} = - \\frac {F _ {n} (\\xi_ {p}) - p}{f (\\xi_ {p})} + R _ {n}, \\tag {2.1.22}"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.125,
+            0.609,
+            0.304,
+            0.629
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "R_{n}=o_{p}(n^{-1/2})"
+            },
+            {
+              "type": "text",
+              "content": " ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.123,
+            0.636,
+            0.83,
+            0.677
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "证明 记 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "V_{n} = \\sqrt{n}(X_{nm} - \\xi_{p}), T_{n} = \\sqrt{n}[p - F_{n}(\\xi_{p})] / f(\\xi_{p})"
+            },
+            {
+              "type": "text",
+              "content": ". 则所证结论转化为证明: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "V_{n} - T_{n} \\xrightarrow{\\mathrm{P}} 0"
+            },
+            {
+              "type": "text",
+              "content": ". 由此, 为证明本定理, 仅需验证引理2.1.1中的两个条件即可."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.162,
+            0.683,
+            0.205,
+            0.699
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "因为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.398,
+            0.707,
+            0.83,
+            0.725
+          ],
+          "image_path": "images/page_82_equation_14.jpg",
+          "content": "n F _ {n} (\\xi_ {p}) \\sim B (n, p), \\tag {*1}"
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.123,
+            0.735,
+            0.71,
+            0.769
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "故 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(T_{n}^{2}) = \\frac{p(1 - p)}{f^{2}(\\xi_{p})}"
+            },
+            {
+              "type": "text",
+              "content": " 与 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n"
+            },
+            {
+              "type": "text",
+              "content": " 无关. 由 Chebyshev 不等式可得 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n} = O_{p}(1)"
+            },
+            {
+              "type": "text",
+              "content": "."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.162,
+            0.772,
+            0.619,
+            0.788
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "下证引理的第二个条件. 对于任意的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\varepsilon > 0"
+            },
+            {
+              "type": "text",
+              "content": " 及常数 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c"
+            },
+            {
+              "type": "text",
+              "content": ", 令"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 17,
+          "bbox": [
+            0.267,
+            0.805,
+            0.686,
+            0.827
+          ],
+          "image_path": "images/page_82_equation_17.jpg",
+          "content": "Z _ {n} = \\sqrt {n} [ F (\\xi_ {p} + c n ^ {- 1 / 2}) - F _ {n} (\\xi_ {p} + c n ^ {- 1 / 2}) ] / f (\\xi_ {p}),"
+        },
+        {
+          "type": "equation",
+          "index": 18,
+          "bbox": [
+            0.27,
+            0.838,
+            0.55,
+            0.857
+          ],
+          "image_path": "images/page_82_equation_18.jpg",
+          "content": "U _ {n} = n [ F _ {n} (\\xi_ {p} + c n ^ {- 1 / 2}) - F _ {n} (\\xi_ {p}) ]."
+        },
+        {
+          "type": "text",
+          "index": 19,
+          "bbox": [
+            0.162,
+            0.876,
+            0.273,
+            0.892
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(*)1)"
+            },
+            {
+              "type": "text",
+              "content": " 式知,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 20,
+          "bbox": [
+            0.355,
+            0.895,
+            0.598,
+            0.931
+          ],
+          "image_path": "images/page_82_equation_20.jpg",
+          "content": "\\sqrt {n} (T _ {n} - Z _ {n}) = \\frac {U _ {n} - E (U _ {n})}{f (\\xi_ {p})},"
+        }
+      ]
+    },
+    {
+      "page_idx": 83,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.697,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2.1 几个常用的估计准则"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.068,
+            0.908,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "71"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.166,
+            0.122,
+            0.19,
+            0.137
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "则"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.382,
+            0.135,
+            0.655,
+            0.171
+          ],
+          "image_path": "images/page_83_equation_3.jpg",
+          "content": "E (T _ {n} - Z _ {n}) ^ {2} = \\frac {E [ U _ {n} - E (U _ {n}) ] ^ {2}}{n f ^ {2} (\\xi_ {p})}."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.203,
+            0.181,
+            0.737,
+            0.202
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "如记 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p_n^* = F(\\xi_p + cn^{-1/2}) - p,"
+            },
+            {
+              "type": "text",
+              "content": " 则由 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(\\ast 1)"
+            },
+            {
+              "type": "text",
+              "content": " 式知， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U_{n}\\sim B(n,p_{n}^{*})"
+            },
+            {
+              "type": "text",
+              "content": " 故"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.343,
+            0.216,
+            0.694,
+            0.235
+          ],
+          "image_path": "images/page_83_equation_5.jpg",
+          "content": "E [ U _ {n} - E (U _ {n}) ] ^ {2} = \\mathrm{Var} (U _ {n}) = n p _ {n} ^ {*} (1 - p _ {n} ^ {*})."
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.166,
+            0.251,
+            0.214,
+            0.267
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "于是，"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.405,
+            0.266,
+            0.632,
+            0.302
+          ],
+          "image_path": "images/page_83_equation_7.jpg",
+          "content": "E (T _ {n} - Z _ {n}) ^ {2} = \\frac {p _ {n} ^ {*} (1 - p _ {n} ^ {*})}{f ^ {2} (\\xi_ {p})}."
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.165,
+            0.31,
+            0.636,
+            0.329
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由于 F 在  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\xi_{p}"
+            },
+            {
+              "type": "text",
+              "content": "  处连续, 故知  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p_{n}^{*} \\rightarrow 0"
+            },
+            {
+              "type": "text",
+              "content": " . 于是, 当  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\longrightarrow \\infty"
+            },
+            {
+              "type": "text",
+              "content": "  时,"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.457,
+            0.343,
+            0.871,
+            0.363
+          ],
+          "image_path": "images/page_83_equation_9.jpg",
+          "content": "T _ {n} - Z _ {n} \\xrightarrow {\\mathrm{p}} 0. \\tag {*2}"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.203,
+            0.38,
+            0.308,
+            0.396
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "我们注意到，"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.333,
+            0.407,
+            0.872,
+            0.442
+          ],
+          "image_path": "images/page_83_equation_11.jpg",
+          "content": "c _ {n} \\stackrel {\\text {记}} {=} \\frac {1}{f \\left(\\xi_ {p}\\right)} \\left\\{\\sqrt {n} \\left[ F \\left(\\xi_ {p} + c n ^ {- 1 / 2}\\right) - \\frac {m}{n} \\right]\\right\\}\\rightarrow c. \\tag {*3}"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.165,
+            0.454,
+            0.525,
+            0.483
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "故由 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F_{n}"
+            },
+            {
+              "type": "text",
+              "content": " 的单调性, 以及 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F_{n}(X_{nm}) \\geqslant \\frac{m}{n}"
+            },
+            {
+              "type": "text",
+              "content": ", 有"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.333,
+            0.497,
+            0.705,
+            0.615
+          ],
+          "image_path": "images/page_83_equation_13.jpg",
+          "content": "\\begin{array}{l} \\{V _ {n} \\leqslant c \\} = \\{X _ {n m} \\leqslant \\xi_ {p} + c n ^ {- 1 / 2} \\} \\\\ \\subset \\{n F _ {n} (X _ {n m}) \\leqslant n F _ {n} (\\xi_ {p} + c n ^ {- 1 / 2}) \\} \\\\ \\subset \\{m \\leqslant n F _ {n} (\\xi_ {p} + c n ^ {- 1 / 2}) \\} \\\\ = \\{Z _ {n} \\leqslant c _ {n} \\}. \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.166,
+            0.631,
+            0.214,
+            0.647
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "因此，"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.304,
+            0.664,
+            0.734,
+            0.715
+          ],
+          "image_path": "images/page_83_equation_15.jpg",
+          "content": "\\begin{array}{l} P (V _ {n} \\leqslant c, T _ {n} \\geqslant c + \\varepsilon) \\leqslant P (Z _ {n} \\leqslant c _ {n}, T _ {n} \\geqslant c + \\varepsilon) \\\\ \\leqslant P (| T _ {n} - Z _ {n} | \\geqslant \\varepsilon - | c _ {n} - c |). \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.203,
+            0.731,
+            0.48,
+            0.748
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "结合 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(*1), (*2)"
+            },
+            {
+              "type": "text",
+              "content": " 及 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(*3)"
+            },
+            {
+              "type": "text",
+              "content": " 式, 则可证"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 17,
+          "bbox": [
+            0.407,
+            0.766,
+            0.63,
+            0.784
+          ],
+          "image_path": "images/page_83_equation_17.jpg",
+          "content": "P (V _ {n} \\leqslant c, T _ {n} \\geqslant c + \\varepsilon) \\rightarrow 0."
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.166,
+            0.8,
+            0.308,
+            0.816
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "类似证明另一半."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 19,
+          "bbox": [
+            0.254,
+            0.823,
+            0.874,
+            0.887
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "注2.1.7 (2.1.22)式是Bahadur(1960)提出的,故被称为样本分位数的Bahadur表示.实际上,他还证明了,当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\xi_{p}"
+            },
+            {
+              "type": "text",
+              "content": " 唯一时,(2.1.22)式中的尾项 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "R_{n}"
+            },
+            {
+              "type": "text",
+              "content": " 满足如下更强的结果:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 20,
+          "bbox": [
+            0.452,
+            0.893,
+            0.674,
+            0.913
+          ],
+          "image_path": "images/page_83_equation_20.jpg",
+          "content": "R _ {n} \\stackrel {\\text {a.s.}} {=} O (n ^ {- 3 / 4} (\\ln \\ln n) ^ {1 / 4})."
+        }
+      ]
+    },
+    {
+      "page_idx": 84,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.088,
+            0.068,
+            0.108,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "72"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.264,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第二章 参数点估计"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.165,
+            0.124,
+            0.597,
+            0.141
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定理2.1.9 在定理2.1.8的条件下，当 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n\\to \\infty"
+            },
+            {
+              "type": "text",
+              "content": " 时，"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.327,
+            0.153,
+            0.83,
+            0.189
+          ],
+          "image_path": "images/page_84_equation_3.jpg",
+          "content": "\\sqrt {n} (X _ {n m} - \\xi_ {p}) \\xrightarrow {\\mathrm{d}} N \\left(0, \\frac {p (1 - p)}{f ^ {2} (\\xi_ {p})}\\right). \\tag {2.1.23}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.16,
+            0.198,
+            0.432,
+            0.215
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "证明 由 (2.1.22) 式知: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\forall x \\in \\mathbb{R}"
+            },
+            {
+              "type": "text",
+              "content": ","
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.255,
+            0.224,
+            0.703,
+            0.401
+          ],
+          "image_path": "images/page_84_equation_5.jpg",
+          "content": "\\begin{array}{l} P (\\sqrt {n} (X _ {n m} - \\xi_ {p}) \\leqslant x) \\\\ = P \\left(- \\frac {\\sum_ {i = 1} ^ {n} [ I _ {(- \\infty , \\xi_ {p} ]} (X _ {i}) - p ]}{\\sqrt {n} f (\\xi_ {p})} + o _ {p} (1) \\leqslant x\\right) \\\\ = P \\left(\\frac {\\sum_ {i = 1} ^ {n} \\left[ I _ {(- \\infty , \\xi_ {p} ]} (X _ {i}) - p \\right]}{\\sqrt {n p (1 - p)}} \\geqslant - \\frac {x f (\\xi_ {p})}{\\sqrt {p (1 - p)}} + o _ {p} (1)\\right). \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.123,
+            0.407,
+            0.832,
+            0.446
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "又由于样本独立同分布, 故知  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I_{(-\\infty,\\xi_{p}]}(X_{i})"
+            },
+            {
+              "type": "text",
+              "content": "  独立同分布于  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "B(1,p)"
+            },
+            {
+              "type": "text",
+              "content": " , 于是, 由中心极限定理可知"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.192,
+            0.455,
+            0.763,
+            0.5
+          ],
+          "image_path": "images/page_84_equation_7.jpg",
+          "content": "P (\\sqrt {n} (X _ {n m} - \\xi_ {p}) \\leqslant x) \\longrightarrow 1 - \\Phi \\left(- \\frac {x f (\\xi_ {p})}{\\sqrt {p (1 - p)}}\\right) = \\Phi \\left(\\frac {x f (\\xi_ {p})}{\\sqrt {p (1 - p)}}\\right),"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.124,
+            0.509,
+            0.208,
+            0.525
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "结论得证."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.123,
+            0.532,
+            0.83,
+            0.572
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由于相合渐近正态估计不唯一, 故一个自然问题就是: 一个参数是否有 “最优” 的相合渐近正态估计? 为此引入下面的准则:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.16,
+            0.578,
+            0.534,
+            0.596
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定义 2.1.10 如果参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  的估计量  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  满足"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.356,
+            0.606,
+            0.83,
+            0.628
+          ],
+          "image_path": "images/page_84_equation_11.jpg",
+          "content": "\\sqrt {n} (T _ {n} - \\theta) \\xrightarrow {\\mathrm{d}} N (0, I ^ {- 1} (\\theta)), \\tag {2.1.24}"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.123,
+            0.641,
+            0.828,
+            0.68
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "则称之为最优渐近正态估计 (best asymptotic normal estimate, 简记为 BANE), 其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I(\\theta)"
+            },
+            {
+              "type": "text",
+              "content": "  为 Fisher 信息量."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.122,
+            0.686,
+            0.83,
+            0.726
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "我们注意到, 在上述定义中, 暗含  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I^{-1}(\\theta)"
+            },
+            {
+              "type": "text",
+              "content": "  为无偏估计的方差下界, 但由于这仅是渐近方差 (定义见下一小节), 故上述定义仅表示渐近最优性."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.123,
+            0.732,
+            0.83,
+            0.771
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例 2.1.11 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  为来自  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N(\\theta, 1)"
+            },
+            {
+              "type": "text",
+              "content": "  的独立同分布样本, 考虑  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  的如下估计:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.345,
+            0.773,
+            0.597,
+            0.824
+          ],
+          "image_path": "images/page_84_equation_15.jpg",
+          "content": "T _ {n} = \\left\\{ \\begin{array}{c l} \\bar {X} _ {n} / 2, & | \\bar {X} _ {n} | <   n ^ {- 1 / 2}, \\\\ \\bar {X} _ {n}, & | \\bar {X} _ {n} | \\geqslant n ^ {- 1 / 2} \\end{array} \\right."
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.124,
+            0.831,
+            0.285,
+            0.847
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "的相合渐近正态性."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.16,
+            0.854,
+            0.454,
+            0.87
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "解 可由附录中的 Delta 方法证明:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 18,
+          "bbox": [
+            0.32,
+            0.879,
+            0.625,
+            0.931
+          ],
+          "image_path": "images/page_84_equation_18.jpg",
+          "content": "\\sqrt {n} (T _ {n} - \\theta) \\xrightarrow {\\mathrm{d}} \\left\\{ \\begin{array}{l l} N (0, 1), & \\theta \\neq 0, \\\\ N (0, 1 / 4), & \\theta = 0. \\end{array} \\right."
+        }
+      ]
+    },
+    {
+      "page_idx": 85,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.697,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2.1 几个常用的估计准则"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.069,
+            0.91,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "73"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.165,
+            0.122,
+            0.423,
+            0.138
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "而总体 Fisher 信息量  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I(\\theta)=1"
+            },
+            {
+              "type": "text",
+              "content": " ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.164,
+            0.144,
+            0.873,
+            0.207
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "上例说明, 上例中的估计量  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  在某点突破了  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "I^{-1}(\\theta)"
+            },
+            {
+              "type": "text",
+              "content": "  这个下界. 统计中称这种情况为 “超有效性”. 但经过研究发现, 这种超有效性仅在很少几个  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  值上发生. 如果要求 (2.1.24) 式对所有  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta \\in \\Theta"
+            },
+            {
+              "type": "text",
+              "content": "  一致成立, 则这种情况就不会发生, 即要求"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.39,
+            0.224,
+            0.646,
+            0.251
+          ],
+          "image_path": "images/page_85_equation_4.jpg",
+          "content": "\\sup _ {\\theta \\in \\Theta} \\sup _ {x \\in \\mathbb {R}} | F _ {T _ {n}} (x; \\theta) - \\varPhi (x) | \\to 0,"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.164,
+            0.265,
+            0.871,
+            0.305
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F_{T_n}(x;\\theta)"
+            },
+            {
+              "type": "text",
+              "content": " 为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sqrt{n} (T_n - \\theta) / \\sqrt{I(\\theta)}"
+            },
+            {
+              "type": "text",
+              "content": " 的累积分布函数， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\varPhi (x)"
+            },
+            {
+              "type": "text",
+              "content": " 为标准正态的累积分布函数."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.202,
+            0.334,
+            0.418,
+            0.352
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2.1.5 渐近相对效率"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.164,
+            0.377,
+            0.873,
+            0.462
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "上述的评价准则都是由估计自身性质引出的, 由于多数情况下某个参数的估计并不唯一, 那如何比较两个估计间的优劣呢? 为此, 本小节将引进渐近相对效率这一比较准则, 同时简单介绍在统计文献中经常遇到的渐近偏差、渐近方差, 以及渐近均方误差等概念."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.165,
+            0.469,
+            0.874,
+            0.557
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定义 2.1.11(渐近偏差、渐近方差、渐近均方误差) 设统计量  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}(X)"
+            },
+            {
+              "type": "text",
+              "content": "  为基于 n 个样本关于参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  的一个估计。如果存在常数列  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a_{n} \\rightarrow a > 0"
+            },
+            {
+              "type": "text",
+              "content": "  (a 可以是  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\infty"
+            },
+            {
+              "type": "text",
+              "content": " )，以及满足  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(|Y|) < \\infty"
+            },
+            {
+              "type": "text",
+              "content": "  的 Y，使得  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a_{n}[T_{n}(X) - \\theta] \\xrightarrow{\\mathrm{d}} Y"
+            },
+            {
+              "type": "text",
+              "content": " ，则称  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(Y)/a_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  的渐近偏差；如果  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(Y^{2}) < \\infty"
+            },
+            {
+              "type": "text",
+              "content": " ，则称  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(Y^{2})/a_{n}^{2}"
+            },
+            {
+              "type": "text",
+              "content": "  为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  的渐近均方误差， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\operatorname{Var}(Y)/a_{n}^{2}"
+            },
+            {
+              "type": "text",
+              "content": "  为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  的渐近方差。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.164,
+            0.561,
+            0.873,
+            0.602
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "有了上述渐近均方误差的定义, 就可以利用渐近均方误差的大小来比较两个估计的好坏, 为此引入渐近相对效率 (asymptotic relative efficiency, 简记为 ARE) 的定义."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.165,
+            0.607,
+            0.873,
+            0.649
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定义 2.1.12 (渐近相对效率) 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}, T_{n}^{\\prime}"
+            },
+            {
+              "type": "text",
+              "content": "  为参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  的两个估计, 记二者的渐近均方误差为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "AMSE_{T_{n}}, AMSE_{T_{n}^{\\prime}}"
+            },
+            {
+              "type": "text",
+              "content": " , 则称"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.413,
+            0.661,
+            0.871,
+            0.699
+          ],
+          "image_path": "images/page_85_equation_11.jpg",
+          "content": "\\mathrm{ARE} (T _ {n} ^ {\\prime}, T _ {n}) = \\frac {\\mathrm{AMSE} _ {T _ {n}}}{\\mathrm{AMSE} _ {T _ {n} ^ {\\prime}}} \\tag {2.1.25}"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.165,
+            0.709,
+            0.871,
+            0.755
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}^{\\prime}"
+            },
+            {
+              "type": "text",
+              "content": " 相对于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}"
+            },
+            {
+              "type": "text",
+              "content": " 的渐近相对效率. 如果 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\limsup_{n}\\mathrm{ARE}(T_n', T_n) \\leqslant 1"
+            },
+            {
+              "type": "text",
+              "content": ", 且对某些参数值不等号成立, 则称 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}"
+            },
+            {
+              "type": "text",
+              "content": " 比 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{n}^{\\prime}"
+            },
+            {
+              "type": "text",
+              "content": " 渐近有效."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.164,
+            0.76,
+            0.873,
+            0.822
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例 2.1.12 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  为来自 Poisson 分布  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P(\\theta)"
+            },
+            {
+              "type": "text",
+              "content": "  的独立同分布样本, 参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta > 0"
+            },
+            {
+              "type": "text",
+              "content": " . 对于待估参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g(\\theta) = \\mathrm{e}^{-\\theta}"
+            },
+            {
+              "type": "text",
+              "content": " , 求两个估计  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{1n} = F_{n}(0), T_{2n} = \\mathrm{e}^{-\\bar{X}}"
+            },
+            {
+              "type": "text",
+              "content": "  间的渐近相对效率."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.201,
+            0.829,
+            0.862,
+            0.846
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "解 由于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g(\\theta) = P(X_1 = 0)"
+            },
+            {
+              "type": "text",
+              "content": ", 故知 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{1n}"
+            },
+            {
+              "type": "text",
+              "content": " 是 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g(\\theta)"
+            },
+            {
+              "type": "text",
+              "content": " 的无偏估计, 且由中心极限定理知"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.402,
+            0.858,
+            0.637,
+            0.898
+          ],
+          "image_path": "images/page_85_equation_15.jpg",
+          "content": "\\frac {\\sqrt {n} [ T _ {1 n} - g (\\theta) ]}{\\sqrt {g (\\theta) [ 1 - g (\\theta) ]}} \\xrightarrow {\\mathrm{d}} N (0, 1),"
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.165,
+            0.909,
+            0.624,
+            0.928
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "故知 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{1n}"
+            },
+            {
+              "type": "text",
+              "content": " 的渐近均方误差 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{AMSE}_{T_{1n}} = g(\\theta)[1 - g(\\theta)] / n."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 86,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.088,
+            0.068,
+            0.106,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "74"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.264,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第二章 参数点估计"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.16,
+            0.121,
+            0.576,
+            0.138
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "对于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{2n}"
+            },
+            {
+              "type": "text",
+              "content": " ，由于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n\\bar{X}\\sim P(n\\theta)"
+            },
+            {
+              "type": "text",
+              "content": " ，故由中心极限定理知"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.379,
+            0.154,
+            0.575,
+            0.19
+          ],
+          "image_path": "images/page_86_equation_3.jpg",
+          "content": "\\frac {\\sqrt {n} (\\bar {X} - \\theta)}{\\sqrt {\\theta}} \\xrightarrow {\\mathrm{d}} N (0, 1)."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.124,
+            0.206,
+            0.327,
+            0.222
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "于是, 由 Delta 方法可知"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.347,
+            0.24,
+            0.607,
+            0.261
+          ],
+          "image_path": "images/page_86_equation_5.jpg",
+          "content": "\\sqrt {n} [ T _ {2 n} - g (\\theta) ] \\stackrel {\\mathrm{d}} {\\longrightarrow} N (0, \\mathrm{e} ^ {- 2 \\theta} \\theta)."
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.124,
+            0.279,
+            0.536,
+            0.297
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由此知  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{2n}"
+            },
+            {
+              "type": "text",
+              "content": "  的渐近均方误差  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "AMSE_{T_{2n}} = e^{-2\\theta}\\theta/n"
+            },
+            {
+              "type": "text",
+              "content": " ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.122,
+            0.302,
+            0.831,
+            0.343
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "于是, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{1n}"
+            },
+            {
+              "type": "text",
+              "content": " 相对于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{2n}"
+            },
+            {
+              "type": "text",
+              "content": " 的渐近相对效率为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm{ARE}(T_{1n}, T_{2n}) = \\theta / (\\mathrm{e}^{\\theta} - 1) < 1"
+            },
+            {
+              "type": "text",
+              "content": ", 这说明 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{2n}"
+            },
+            {
+              "type": "text",
+              "content": " 比 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T_{1n}"
+            },
+            {
+              "type": "text",
+              "content": " 更渐近有效."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 8,
+          "bbox": [
+            0.124,
+            0.396,
+            0.271,
+            0.416
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2.2 矩估计"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.122,
+            0.464,
+            0.83,
+            0.504
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "矩估计是K.Pearson于1894年基于某些生物学方面的数据并非来自正态这一发现而提出的."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.122,
+            0.511,
+            0.83,
+            0.551
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  为来自总体 X 的独立同分布样本, 且总体 k 阶矩存在, 记参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta \\in \\Theta \\subset R^{k}"
+            },
+            {
+              "type": "text",
+              "content": " , 总体 X 的 r 阶原点矩与中心矩分别为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.315,
+            0.571,
+            0.83,
+            0.59
+          ],
+          "image_path": "images/page_86_equation_11.jpg",
+          "content": "\\mu_ {r} (\\boldsymbol {\\theta}) = E (X ^ {r}), \\nu_ {r} (\\boldsymbol {\\theta}) = E [ (X - \\mu_ {1}) ^ {r} ], \\tag {2.2.1}"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.124,
+            0.607,
+            0.267,
+            0.623
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中 r 为正整数."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.16,
+            0.631,
+            0.534,
+            0.647
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第一章给出了样本 r 阶原点矩与中心矩如下:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.314,
+            0.662,
+            0.829,
+            0.703
+          ],
+          "image_path": "images/page_86_equation_14.jpg",
+          "content": "a _ {r} = \\frac {1}{n} \\sum_ {i = 1} ^ {n} X _ {i} ^ {r}, \\quad m _ {r} = \\frac {1}{n} \\sum_ {i = 1} ^ {n} (X _ {i} - \\bar {X}) ^ {r}. \\tag {2.2.2}"
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.122,
+            0.72,
+            0.83,
+            0.784
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由 Kolmogorov(科尔莫戈罗夫) 强大数定律知, 只要总体矩存在, 样本原点矩  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "a_{r}"
+            },
+            {
+              "type": "text",
+              "content": "  就是总体原点矩  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu_{r}"
+            },
+            {
+              "type": "text",
+              "content": "  的强相合估计. 注意到中心矩  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\nu_{r}(\\boldsymbol{\\theta})"
+            },
+            {
+              "type": "text",
+              "content": "  可表示为原点矩  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu_{r}(\\boldsymbol{\\theta})"
+            },
+            {
+              "type": "text",
+              "content": "  的多项式, 故知样本中心矩  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "m_{r}"
+            },
+            {
+              "type": "text",
+              "content": "  也是总体中心矩  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\nu_{r}(\\boldsymbol{\\theta})"
+            },
+            {
+              "type": "text",
+              "content": "  的强相合估计."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.122,
+            0.789,
+            0.83,
+            0.829
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由于样本矩已知, 而总体矩包含未知参数, 故由上述强相合性, 当样本量比较大时, 我们可用样本矩 “替代” 总体矩, 即得到如下的方程组:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 17,
+          "bbox": [
+            0.362,
+            0.85,
+            0.829,
+            0.868
+          ],
+          "image_path": "images/page_86_equation_17.jpg",
+          "content": "\\mu_ {r} (\\boldsymbol {\\theta}) = a _ {r}, r = 1, 2, \\dots , k. \\tag {2.2.3}"
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.123,
+            0.886,
+            0.764,
+            0.902
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "记由此方程组得到的解为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\theta}"
+            },
+            {
+              "type": "text",
+              "content": " ，称之为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  的矩估计。上述方程被称为矩估计方程。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 19,
+          "bbox": [
+            0.16,
+            0.91,
+            0.371,
+            0.926
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "关于矩估计, 我们注意到:"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 87,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.788,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2.2 矩估计"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.069,
+            0.909,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "75"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 2,
+          "bbox": [
+            0.206,
+            0.121,
+            0.874,
+            0.277
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 3,
+              "bbox": [
+                0.206,
+                0.121,
+                0.874,
+                0.185
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "- 在方程组 (2.2.3) 中也可以通过用样本 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "k"
+                },
+                {
+                  "type": "text",
+                  "content": " 阶中心矩作为总体 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "k"
+                },
+                {
+                  "type": "text",
+                  "content": " 阶中心矩的估计而建立相应的估计方程. 这样求得的参数估计也称为矩估计. 当然, 这两种方法得到的矩估计可能不同."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 4,
+              "bbox": [
+                0.206,
+                0.19,
+                0.873,
+                0.231
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "- 方程组 (2.2.3) 的解是否存在且唯一, 取决于具体问题. 如解不存在或不唯一, 则矩估计法不可用."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 5,
+              "bbox": [
+                0.206,
+                0.236,
+                0.873,
+                0.277
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "- 在用矩方法求参数估计时, 尽可能采用低阶矩, 原因之一是避免高阶矩的计算问题, 原因之二是低阶矩提供的信息更重要."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.165,
+            0.282,
+            0.873,
+            0.322
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例 2.2.1 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  为来自总体 X 的独立同分布样本, 且  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(X^{2})"
+            },
+            {
+              "type": "text",
+              "content": "  存在有限, 求总体均值与方差的矩估计."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.202,
+            0.328,
+            0.746,
+            0.346
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "解 记 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu = E(X),\\sigma^2 = \\mathrm{Var}(X)"
+            },
+            {
+              "type": "text",
+              "content": " ，则由矩估计法知，其估计方程为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.375,
+            0.36,
+            0.655,
+            0.442
+          ],
+          "image_path": "images/page_87_equation_8.jpg",
+          "content": "\\left\\{ \\begin{array}{l} \\hat {\\mu} = a _ {1} = \\frac {1}{n} \\sum_ {i = 1} ^ {n} X _ {i}, \\\\ \\hat {\\mu} _ {2} = \\hat {\\mu} ^ {2} + \\hat {\\sigma} ^ {2} = a _ {2} = \\frac {1}{n} \\sum_ {i = 1} ^ {n} X _ {i} ^ {2}. \\end{array} \\right."
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.166,
+            0.454,
+            0.495,
+            0.47
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由此可求得总体均值与方差的矩估计为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.384,
+            0.486,
+            0.646,
+            0.556
+          ],
+          "image_path": "images/page_87_equation_10.jpg",
+          "content": "\\left\\{ \\begin{array}{l} \\hat {\\mu} = \\bar {X}, \\\\ \\hat {\\sigma} ^ {2} = \\frac {1}{n} \\sum_ {i = 1} ^ {n} (X _ {i} - \\bar {X}) ^ {2} = S _ {n *} ^ {2}. \\end{array} \\right."
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.165,
+            0.57,
+            0.755,
+            0.587
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "即总体均值的矩估计是样本均值, 总体方差的矩估计是修正的样本方差."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.164,
+            0.593,
+            0.875,
+            0.679
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "容易验证: 样本均值是总体均值的无偏估计, 但修正的样本方差并不是总体方差的无偏估计. 总之, 虽然样本 r 阶原点矩是总体相应矩的无偏估计, 但是由矩估计方程 (2.2.3) 求得的矩估计并不一定是无偏估计. 另外, 样本 r 阶中心矩也不一定是总体相应矩的无偏估计. 实际上, 有如下结论."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.165,
+            0.685,
+            0.873,
+            0.725
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定理 2.2.1 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  为来自总体 X 的独立同分布样本, 且 2r 阶矩存在, 则"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.224,
+            0.742,
+            0.873,
+            0.763
+          ],
+          "image_path": "images/page_87_equation_14.jpg",
+          "content": "E (m _ {r}) - \\nu_ {r} (\\pmb {\\theta}) = O (n ^ {- 1}), E [ (\\bar {X} _ {n} - \\mu_ {1}) ^ {2 r} ] \\leqslant c _ {r} \\mu_ {2 r} n ^ {- r} = O (n ^ {- r}), \\tag {2.2.4}"
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.166,
+            0.779,
+            0.395,
+            0.795
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c_{r}"
+            },
+            {
+              "type": "text",
+              "content": "  为依赖于 r 的常数."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.201,
+            0.803,
+            0.441,
+            0.82
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "证明 不妨设 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu_{1} = 0"
+            },
+            {
+              "type": "text",
+              "content": "。此时，"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 17,
+          "bbox": [
+            0.282,
+            0.836,
+            0.873,
+            0.857
+          ],
+          "image_path": "images/page_87_equation_17.jpg",
+          "content": "E [ (\\bar {X} _ {n} - \\mu_ {1}) ^ {2 r} ] = E (\\bar {X} _ {n} ^ {2 r}) = n ^ {- 2 r} (X _ {1} + X _ {2} + \\dots + X _ {n}) ^ {2 r}. \\tag {*} \\tag *\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\]*\\(*\\)"
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.164,
+            0.872,
+            0.875,
+            0.93
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(X_{1}+X_{2}+\\cdots+X_{n})^{2r}"
+            },
+            {
+              "type": "text",
+              "content": "  的展开式中, 每项均可表示为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}^{i_{1}}X_{2}^{i_{2}}\\cdots X_{n}^{i_{n}}"
+            },
+            {
+              "type": "text",
+              "content": " , 其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "0 \\leqslant i_{j} \\leqslant 2r, \\sum_{j=1}^{n} i_{j} = 2r"
+            },
+            {
+              "type": "text",
+              "content": " . 如果某项至少有一个  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i_{j} = 1"
+            },
+            {
+              "type": "text",
+              "content": " , 则该项期望为 0, 于是只需考虑形如"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 88,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.088,
+            0.068,
+            0.108,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "76"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.264,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第二章 参数点估计"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.124,
+            0.121,
+            0.346,
+            0.141
+          ],
+          "content": [
+            {
+              "type": "equation_inline",
+              "content": "X_{n_1}^{i_1}X_{n_2}^{i_2}\\dots X_{n_t}^{i_t}"
+            },
+            {
+              "type": "text",
+              "content": " 的项, 其中"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.235,
+            0.152,
+            0.719,
+            0.197
+          ],
+          "image_path": "images/page_88_equation_3.jpg",
+          "content": "1 \\leqslant n _ {1} <   n _ {2} <   \\dots <   n _ {t} \\leqslant n, \\quad i _ {j} \\geqslant 2, \\quad \\sum_ {j = 1} ^ {t} i _ {j} = 2 r, \\quad t \\leqslant r."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.123,
+            0.208,
+            0.83,
+            0.248
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由此可知, 在  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(X_{1} + X_{2} + \\cdots + X_{n})^{2r}"
+            },
+            {
+              "type": "text",
+              "content": "  的展开式中, 不包括某样本的一次幂的项至多有  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c_{r}n^{r}"
+            },
+            {
+              "type": "text",
+              "content": "  个, 其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "c_{r}"
+            },
+            {
+              "type": "text",
+              "content": "  为仅依赖于 r 的常数. 由 Hölder(赫尔德) 不等式有"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.321,
+            0.262,
+            0.632,
+            0.283
+          ],
+          "image_path": "images/page_88_equation_5.jpg",
+          "content": "E (| X _ {n _ {1}} ^ {i _ {1}} X _ {n _ {2}} ^ {i _ {2}} \\dots X _ {n _ {t}} ^ {i _ {t}} |) \\leqslant E (X ^ {2 r}) = \\mu_ {2 r}."
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.123,
+            0.295,
+            0.465,
+            0.312
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "结合 (*) 式, (2.2.4) 式的第二个结论得证."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.162,
+            0.318,
+            0.206,
+            0.333
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "因为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.203,
+            0.341,
+            0.75,
+            0.378
+          ],
+          "image_path": "images/page_88_equation_8.jpg",
+          "content": "m _ {r} = a _ {r} - \\binom{r}{1} \\bar {X} _ {n} a _ {r - 1} + \\dots + (- 1) ^ {j} \\binom{r}{j} \\bar {X} _ {n} ^ {j} a _ {r - j} + \\dots + (- 1) ^ {r} \\bar {X} _ {n} ^ {r}."
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.123,
+            0.387,
+            0.646,
+            0.405
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "注意到  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu_{1}=0,"
+            },
+            {
+              "type": "text",
+              "content": "  则  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "E(a_{r})=\\mu_{r}=\\nu_{r}."
+            },
+            {
+              "type": "text",
+              "content": "  由上述证明的第二部分, 有"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.214,
+            0.416,
+            0.741,
+            0.439
+          ],
+          "image_path": "images/page_88_equation_10.jpg",
+          "content": "E (| \\bar {X} _ {n} ^ {j} a _ {r - j} |) \\leqslant \\left[ E (\\bar {X} _ {n} ^ {2 j}) E (a _ {r - j} ^ {2}) \\right] ^ {1 / 2} = O (n ^ {- j / 2}), j = 2, 3, \\dots , r."
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.124,
+            0.452,
+            0.149,
+            0.467
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "而"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.291,
+            0.469,
+            0.662,
+            0.51
+          ],
+          "image_path": "images/page_88_equation_12.jpg",
+          "content": "E (\\bar {X} a _ {r - 1}) = \\frac {1}{n ^ {2}} \\sum_ {i = 1} ^ {n} E (X _ {i} ^ {r}) = \\frac {1}{n} \\mu_ {r} = O (n ^ {- 1})."
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.125,
+            0.518,
+            0.21,
+            0.533
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由此得证."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.123,
+            0.541,
+            0.83,
+            0.61
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定理 2.2.1 说明, 样本 r 阶中心矩是总体中心矩的渐近无偏估计. 陈希孺 (2009) 证明: 当  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n \\geqslant r"
+            },
+            {
+              "type": "text",
+              "content": "  时, 存在一个  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\bar{X}, m_{1}, m_{2}, \\cdots, m_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  的多项式, 使之为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\nu_{r}"
+            },
+            {
+              "type": "text",
+              "content": "  的无偏估计. 实际上, 总体方差的无偏估计就是样本方差  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S_{n}^{2} = \\frac{n}{n-1} m_{2}"
+            },
+            {
+              "type": "text",
+              "content": " ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.122,
+            0.61,
+            0.832,
+            0.734
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "结合注 2.1.5 和强大数定律, 矩估计的强相合性得到了圆满解决, 但矩估计的 r 阶矩相合性则不然. 陈希孺 (2009) 通过样本均值的 r 阶矩相合性证明, 说明了解决问题的烦琐, 且指出: 对于多项式参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(\\mu_{1}, \\mu_{2}, \\cdots, \\mu_{m})"
+            },
+            {
+              "type": "text",
+              "content": " , 如记此多项式每项指数的最大值为 t, 且总体 X 的 rt 阶矩存在, 则此多项式参数的矩估计  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "F(a_{1}, a_{2}, \\cdots, a_{m})"
+            },
+            {
+              "type": "text",
+              "content": "  是其 r 阶矩相合估计. 如把上述的原点矩换成中心矩, 结论仍成立 (项  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu_{1}^{r_{1}} \\mu_{2}^{r_{2}} \\cdots \\mu_{m}^{r_{m}}"
+            },
+            {
+              "type": "text",
+              "content": "  的指数为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sum_{i=1}^{m} r_{i}"
+            },
+            {
+              "type": "text",
+              "content": " )."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.161,
+            0.736,
+            0.797,
+            0.752
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "下面考虑矩估计的渐近正态性, 为此, 先给出下面引理所述的多元 Delta 定理."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.163,
+            0.758,
+            0.83,
+            0.777
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "引理 2.2.1 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\left\\{X_{n}=(X_{n1},X_{n2},\\cdots,X_{nk})^{\\mathrm{T}}\\right\\}_{n\\geqslant1}"
+            },
+            {
+              "type": "text",
+              "content": "  为一列 k 元随机向量，且满足"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 18,
+          "bbox": [
+            0.367,
+            0.788,
+            0.587,
+            0.809
+          ],
+          "image_path": "images/page_88_equation_18.jpg",
+          "content": "\\sqrt {n} (\\boldsymbol {X} _ {n} - \\boldsymbol {\\theta}) \\xrightarrow {\\mathrm{d}} N _ {k} (0, \\Sigma),"
+        },
+        {
+          "type": "text",
+          "index": 19,
+          "bbox": [
+            0.124,
+            0.823,
+            0.83,
+            0.863
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\boldsymbol{\\theta}=(\\theta_{1},\\theta_{2},\\cdots,\\theta_{k})^{\\mathrm{T}}"
+            },
+            {
+              "type": "text",
+              "content": "  为参数向量， "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\Sigma>0"
+            },
+            {
+              "type": "text",
+              "content": "  为 k 阶对称矩阵。又设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g_{i}(\\boldsymbol{x})"
+            },
+            {
+              "type": "text",
+              "content": "  为 k 元连续可微函数，记  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\boldsymbol{g}=(g_{1},g_{2},\\cdots,g_{m})^{\\mathrm{T}}"
+            },
+            {
+              "type": "text",
+              "content": " 。则"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 20,
+          "bbox": [
+            0.32,
+            0.875,
+            0.83,
+            0.897
+          ],
+          "image_path": "images/page_88_equation_20.jpg",
+          "content": "\\sqrt {n} [ \\boldsymbol {g} (\\boldsymbol {X} _ {n}) - \\boldsymbol {g} (\\boldsymbol {\\theta}) ] \\xrightarrow {\\mathrm{d}} N _ {m} (0, \\Delta \\Sigma \\Delta^ {\\mathrm{T}}), \\tag {2.2.5}"
+        },
+        {
+          "type": "text",
+          "index": 21,
+          "bbox": [
+            0.125,
+            0.91,
+            0.387,
+            0.928
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\Delta=(\\partial g_{i}(\\boldsymbol{\\theta})/\\partial\\theta_{j})_{m\\times k}\\neq0."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 89,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.742,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2.3 最大似然估计"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.068,
+            0.91,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "77"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.201,
+            0.122,
+            0.65,
+            0.139
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "证明 由于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g_{i}"
+            },
+            {
+              "type": "text",
+              "content": " 连续可微, 故由Taylor(泰勒)展开可知"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.295,
+            0.152,
+            0.873,
+            0.172
+          ],
+          "image_path": "images/page_89_equation_3.jpg",
+          "content": "\\sqrt {n} [ \\boldsymbol {g} (\\boldsymbol {X} _ {n}) - \\boldsymbol {g} (\\boldsymbol {\\theta}) ] = \\sqrt {n} \\Delta (\\boldsymbol {X} _ {n} - \\boldsymbol {\\theta}) + \\sqrt {n} \\cdot o (\\boldsymbol {X} _ {n} - \\boldsymbol {\\theta}). \\tag {*1}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.166,
+            0.185,
+            0.574,
+            0.202
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "又由于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sqrt{n} (\\pmb {X}_n - \\pmb {\\theta})"
+            },
+            {
+              "type": "text",
+              "content": " 有极限分布，即弱收敛，故知"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.427,
+            0.216,
+            0.871,
+            0.235
+          ],
+          "image_path": "images/page_89_equation_5.jpg",
+          "content": "\\sqrt {n} (\\boldsymbol {X} _ {n} - \\boldsymbol {\\theta}) = O _ {p} (1). \\tag {*2}"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.165,
+            0.248,
+            0.521,
+            0.266
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "结合已知条件以及  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(*1)"
+            },
+            {
+              "type": "text",
+              "content": " ,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(*2)"
+            },
+            {
+              "type": "text",
+              "content": "  式, 结论得证."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 7,
+          "bbox": [
+            0.853,
+            0.25,
+            0.872,
+            0.263
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 7,
+              "bbox": [
+                0.853,
+                0.25,
+                0.872,
+                0.263
+              ],
+              "image_path": "images/page_89_image_7.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.202,
+            0.271,
+            0.568,
+            0.288
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "结合上述引理及中心极限定理, 有如下结论:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.165,
+            0.294,
+            0.874,
+            0.357
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定理 2.2.2 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  为来自总体 X 的独立同分布样本, 假设总体 2m 阶矩存在. 对于给定的整数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 \\leqslant r_{1} \\leqslant r_{2} \\leqslant \\cdots \\leqslant r_{k} \\leqslant m"
+            },
+            {
+              "type": "text",
+              "content": " , 如一个 k 元函数 g 连续可微, 则"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.265,
+            0.361,
+            0.775,
+            0.382
+          ],
+          "image_path": "images/page_89_equation_10.jpg",
+          "content": "\\sqrt {n} [ g (a _ {r _ {1}}, a _ {r _ {2}}, \\dots , a _ {r _ {k}}) - g (\\mu_ {r _ {1}}, \\mu_ {r _ {2}}, \\dots , \\mu_ {r _ {k}}) ] \\xrightarrow {\\mathrm{d}} N (0, \\boldsymbol {\\delta} ^ {\\mathrm{T}} B \\boldsymbol {\\delta}),"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.167,
+            0.388,
+            0.803,
+            0.426
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\boldsymbol{\\delta}=\\left(\\frac{\\partial g(\\boldsymbol{x})}{\\partial x_{1}},\\frac{\\partial g(\\boldsymbol{x})}{\\partial x_{2}},\\cdots,\\frac{\\partial g(\\boldsymbol{x})}{\\partial x_{k}}\\right)^{\\mathrm{T}},B=\\left(E[(X^{r_{i}}-\\mu_{r_{i}})(X^{r_{j}}-\\mu_{r_{j}})]\\right)_{k\\times k}."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.164,
+            0.428,
+            0.873,
+            0.467
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由于样本中心矩是样本原点矩的多项式, 总体中心矩是总体原点矩的多项式, 故定理 2.2.2 的结论仍适用."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.165,
+            0.474,
+            0.873,
+            0.515
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例 2.2.2 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  为来自总体 X 的独立同分布样本, 求样本变异系数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S_{n}/\\bar{X}_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  的极限分布."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.202,
+            0.52,
+            0.561,
+            0.537
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "解 记  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma^{2}=\\mathrm{Var}(X)"
+            },
+            {
+              "type": "text",
+              "content": " . 由于总体变异系数为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.425,
+            0.546,
+            0.612,
+            0.574
+          ],
+          "image_path": "images/page_89_equation_15.jpg",
+          "content": "\\sigma / \\mu_ {1} = \\sqrt {\\mu_ {2} - \\mu_ {1} ^ {2}} / \\mu_ {1},"
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.165,
+            0.586,
+            0.735,
+            0.611
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "则取 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g(x_{1},x_{2}) = \\sqrt{x_{2} - x_{1}^{2}} /x_{1}"
+            },
+            {
+              "type": "text",
+              "content": " .由于它连续可微,则由定理2.2.2可得"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 17,
+          "bbox": [
+            0.395,
+            0.621,
+            0.646,
+            0.658
+          ],
+          "image_path": "images/page_89_equation_17.jpg",
+          "content": "\\sqrt {n} \\left(\\frac {S _ {n}}{\\bar {X} _ {n}} - \\frac {\\sigma}{\\mu_ {1}}\\right) \\xrightarrow {\\mathrm{d}} N (0, \\lambda^ {2}),"
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.166,
+            0.667,
+            0.207,
+            0.683
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 19,
+          "bbox": [
+            0.375,
+            0.681,
+            0.664,
+            0.719
+          ],
+          "image_path": "images/page_89_equation_19.jpg",
+          "content": "\\lambda^ {2} = \\frac {\\mu_ {1} ^ {2} (\\nu_ {4} - \\nu_ {2} ^ {2}) - 4 \\mu_ {1} \\nu_ {2} \\nu_ {3} + 4 \\nu_ {2} ^ {3}}{4 \\mu_ {1} ^ {4} \\nu_ {2}}."
+        },
+        {
+          "type": "text",
+          "index": 20,
+          "bbox": [
+            0.165,
+            0.724,
+            0.779,
+            0.744
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "当总体分布为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N(\\mu, \\sigma^2)"
+            },
+            {
+              "type": "text",
+              "content": " 时，上述极限分布的方差 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda^2 = (\\mu^2 + 2\\sigma^2)\\sigma^2 / (2\\mu^4)"
+            },
+            {
+              "type": "text",
+              "content": "."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 21,
+          "bbox": [
+            0.853,
+            0.727,
+            0.872,
+            0.74
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 21,
+              "bbox": [
+                0.853,
+                0.727,
+                0.872,
+                0.74
+              ],
+              "image_path": "images/page_89_image_21.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 22,
+          "bbox": [
+            0.165,
+            0.795,
+            0.394,
+            0.816
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2.3 最大似然估计"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 23,
+          "bbox": [
+            0.164,
+            0.863,
+            0.874,
+            0.927
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "最大似然估计 (MLE) 最早由德国数学家 Gauss 在 1821 年针对正态分布提出, 之后 Fisher 于 1922 年提出了一般分布下的最大似然估计. 本节将给出最大似然估计的定义和某些性质, 以及求取某些复杂情况下最大似然估计的一种有效算法——EM 算法."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 90,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.088,
+            0.068,
+            0.106,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "78"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.264,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第二章 参数点估计"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.16,
+            0.12,
+            0.37,
+            0.138
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2.3.1 MLE 的定义"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.16,
+            0.164,
+            0.768,
+            0.18
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在给出最大似然估计定义之前, 先通过下面例子解释最大似然的基本思想."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.123,
+            0.187,
+            0.83,
+            0.227
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例 2.3.1 假设一个罐中有白球和黑球, 且二者数目之比为 1:3, 但不知哪种颜色的球多. 现通过返回抽样方法估计罐中黑球数目的比例 p."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.123,
+            0.233,
+            0.83,
+            0.273
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "解 记从罐中返回抽取 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n"
+            },
+            {
+              "type": "text",
+              "content": " 次时, 抽到的黑球个数为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": ". 则由概率论知识有, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X \\sim B(n, p)"
+            },
+            {
+              "type": "text",
+              "content": ", 即"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.287,
+            0.276,
+            0.83,
+            0.328
+          ],
+          "image_path": "images/page_90_equation_6.jpg",
+          "content": "P (x; p) \\stackrel {\\mathrm{def}} {=} P (X = x | p) = \\binom {n} {x} p ^ {x} (1 - p) ^ {n - x}. \\tag {*}."
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.123,
+            0.339,
+            0.832,
+            0.402
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p"
+            },
+            {
+              "type": "text",
+              "content": " 等于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1/4"
+            },
+            {
+              "type": "text",
+              "content": " 或 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "3/4"
+            },
+            {
+              "type": "text",
+              "content": ", 故抽样的目的在于通过样本值 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X"
+            },
+            {
+              "type": "text",
+              "content": " 的大小来估计 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p"
+            },
+            {
+              "type": "text",
+              "content": ", 记 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p"
+            },
+            {
+              "type": "text",
+              "content": " 的估计为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{p}(X)"
+            },
+            {
+              "type": "text",
+              "content": ". 为此, 我们先看一个 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n = 3"
+            },
+            {
+              "type": "text",
+              "content": " 的简单情况. 此时, 对于不同的样本值 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x"
+            },
+            {
+              "type": "text",
+              "content": ", (*)式的概率见表2.3.1."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 9,
+          "bbox": [
+            0.125,
+            0.443,
+            0.832,
+            0.548
+          ],
+          "content": [
+            {
+              "type": "table_caption",
+              "index": 8,
+              "bbox": [
+                0.383,
+                0.424,
+                0.571,
+                0.438
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "表 2.3.1 最大似然原理"
+                }
+              ]
+            },
+            {
+              "type": "table_body",
+              "index": 9,
+              "bbox": [
+                0.125,
+                0.443,
+                0.832,
+                0.548
+              ],
+              "image_path": "images/page_90_table_9.jpg",
+              "content": "<table><tr><td>x</td><td>0</td><td>1</td><td>2</td><td>3</td></tr><tr><td><eq>P\\left(x;\\frac{3}{4}\\right)</eq></td><td><eq>\\frac{1}{64}</eq></td><td><eq>\\frac{9}{64}</eq></td><td><eq>\\frac{27}{64}</eq></td><td><eq>\\frac{27}{64}</eq></td></tr><tr><td><eq>P\\left(x;\\frac{1}{4}\\right)</eq></td><td><eq>\\frac{27}{64}</eq></td><td><eq>\\frac{27}{64}</eq></td><td><eq>\\frac{9}{64}</eq></td><td><eq>\\frac{1}{64}</eq></td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.123,
+            0.566,
+            0.832,
+            0.643
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由表 2.3.1 可以看出, 当 x = 0 时, 因为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\frac{27}{64} \\gg \\frac{1}{64}"
+            },
+            {
+              "type": "text",
+              "content": " , 所以认为 p 取  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\frac{1}{4}"
+            },
+            {
+              "type": "text",
+              "content": "  更有可能, 或看起来更像. 于是, 取  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{p}(0) = \\frac{1}{4}"
+            },
+            {
+              "type": "text",
+              "content": "  比  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{p}(0) = \\frac{3}{4}"
+            },
+            {
+              "type": "text",
+              "content": "  更合理. 基于这样的思想, 得到 p 的一个合理估计:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.375,
+            0.646,
+            0.567,
+            0.713
+          ],
+          "image_path": "images/page_90_equation_11.jpg",
+          "content": "\\hat {p} (x) = \\left\\{ \\begin{array}{l l} \\frac {1}{4}, & x = 0, 1, \\\\ \\frac {3}{4}, & x = 2, 3. \\end{array} \\right."
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.122,
+            0.724,
+            0.83,
+            0.764
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "实际上, 上述估计的合理性可如下解释: 概率最大的事件最有可能发生, 即估计值  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{p}(x)"
+            },
+            {
+              "type": "text",
+              "content": "  满足不等式:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.309,
+            0.771,
+            0.644,
+            0.789
+          ],
+          "image_path": "images/page_90_equation_13.jpg",
+          "content": "P (X = x | \\hat {p} (x)) \\geqslant P (X = x | p ^ {\\prime}), \\forall p ^ {\\prime}, \\forall x."
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.123,
+            0.803,
+            0.456,
+            0.819
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "这就是我们要讲的最大似然的基本思想."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.122,
+            0.827,
+            0.83,
+            0.89
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定义 2.3.1 (似然函数 (likelihood function)) 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  为来自总体分布  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(x; \\theta)"
+            },
+            {
+              "type": "text",
+              "content": "  的样本，其中参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta \\in \\Theta \\subset R^{k}"
+            },
+            {
+              "type": "text",
+              "content": " ，记样本分布为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(\\boldsymbol{x}; \\theta)"
+            },
+            {
+              "type": "text",
+              "content": " 。则对于给定的样本观测值  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\boldsymbol{x} = (x_{1}, x_{2}, \\cdots, x_{n})"
+            },
+            {
+              "type": "text",
+              "content": " ，称  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(\\boldsymbol{x}; \\theta)"
+            },
+            {
+              "type": "text",
+              "content": "  为参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  的似然函数，并记之为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 16,
+          "bbox": [
+            0.361,
+            0.909,
+            0.591,
+            0.927
+          ],
+          "image_path": "images/page_90_equation_16.jpg",
+          "content": "L (\\boldsymbol {\\theta}; \\boldsymbol {x}) = f (\\boldsymbol {x}; \\boldsymbol {\\theta}), \\forall \\boldsymbol {\\theta} \\in \\Theta ."
+        }
+      ]
+    },
+    {
+      "page_idx": 91,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.742,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2.3 最大似然估计"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.069,
+            0.91,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "79"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.165,
+            0.122,
+            0.584,
+            0.139
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "称  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\ln L(\\boldsymbol{\\theta};\\boldsymbol{x})"
+            },
+            {
+              "type": "text",
+              "content": "  为对数似然函数, 记为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "l(\\boldsymbol{\\theta};\\boldsymbol{x})"
+            },
+            {
+              "type": "text",
+              "content": "  或  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "l(\\boldsymbol{\\theta})"
+            },
+            {
+              "type": "text",
+              "content": " ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.203,
+            0.145,
+            0.729,
+            0.162
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "从定义可以看出, 似然函数就是样本分布, 但二者的含义却不同:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 4,
+          "bbox": [
+            0.205,
+            0.169,
+            0.871,
+            0.232
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 5,
+              "bbox": [
+                0.205,
+                0.169,
+                0.871,
+                0.209
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "- 样本分布表示给定参数 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\theta"
+                },
+                {
+                  "type": "text",
+                  "content": " 下, 样本取值的概率, 它是样本的函数, 定义域为样本空间 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mathcal{X}"
+                },
+                {
+                  "type": "text",
+                  "content": "."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.205,
+                0.215,
+                0.856,
+                0.232
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "- 似然函数表示给定样本值 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "x"
+                },
+                {
+                  "type": "text",
+                  "content": " 后, 参数 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\theta"
+                },
+                {
+                  "type": "text",
+                  "content": " 的取值可能, 其定义域为参数空间 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\Theta"
+                },
+                {
+                  "type": "text",
+                  "content": "."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.164,
+            0.239,
+            0.873,
+            0.302
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "如果把参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  和样本分别看作 “原因” 和 “结果”，则可以理解为:当给定参数后，样本分布告诉我们哪个样本将以多大的概率被观测到；反过来，当有了样本后，似然函数将告诉我们如何最有可能地估计参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": " ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.164,
+            0.309,
+            0.873,
+            0.349
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "“似然”的英文含义是“看起来像”，之所以称为似然函数，就是要利用这个函数得到参数看起来更合理的估计，即下面的最大似然估计."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.164,
+            0.356,
+            0.873,
+            0.395
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "为书写简单, 在不引起混淆的情况下, 我们以 X 表示样本  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": " , 而 x 表示样本 X 的取值."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.165,
+            0.403,
+            0.871,
+            0.443
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定义 2.3.2 (MLE) 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  为来自总体 X 的样本, 且总体概率分布为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(x; \\theta)"
+            },
+            {
+              "type": "text",
+              "content": " , 其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta \\in \\Theta \\subset R^{k}"
+            },
+            {
+              "type": "text",
+              "content": "  是参数, 且记  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\bar{\\Theta}"
+            },
+            {
+              "type": "text",
+              "content": "  为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\Theta"
+            },
+            {
+              "type": "text",
+              "content": "  的闭包. 如  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\theta}(x)"
+            },
+            {
+              "type": "text",
+              "content": "  满足"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.413,
+            0.462,
+            0.871,
+            0.492
+          ],
+          "image_path": "images/page_91_equation_11.jpg",
+          "content": "L (\\hat {\\boldsymbol {\\theta}} (\\boldsymbol {x}); \\boldsymbol {x}) = \\sup _ {\\boldsymbol {\\theta} \\in \\bar {\\Theta}} L (\\boldsymbol {\\theta}; \\boldsymbol {x}), \\tag {2.3.1}"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.167,
+            0.508,
+            0.285,
+            0.523
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "或等价地满足"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 13,
+          "bbox": [
+            0.419,
+            0.533,
+            0.872,
+            0.561
+          ],
+          "image_path": "images/page_91_equation_13.jpg",
+          "content": "l (\\hat {\\boldsymbol {\\theta}} (\\boldsymbol {x}); \\boldsymbol {x}) = \\sup _ {\\boldsymbol {\\theta} \\in \\bar {\\Theta}} l (\\boldsymbol {\\theta}; \\boldsymbol {x}), \\tag {2.3.2}"
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.166,
+            0.576,
+            0.376,
+            0.594
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "则称  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\theta}(X)"
+            },
+            {
+              "type": "text",
+              "content": "  为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  的 MLE."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.165,
+            0.6,
+            0.871,
+            0.64
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "从上一定义可以看出, 求某参数的 MLE, 就是求 (2.3.1) 或 (2.3.2) 式的极值问题. 如果似然函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "L(\\boldsymbol{\\theta}; \\boldsymbol{x})"
+            },
+            {
+              "type": "text",
+              "content": "  关于  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  可微, 则  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  的 MLE 可以通过解方程"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 16,
+          "bbox": [
+            0.396,
+            0.657,
+            0.871,
+            0.693
+          ],
+          "image_path": "images/page_91_equation_16.jpg",
+          "content": "\\frac {\\partial L (\\boldsymbol {\\theta} ; \\boldsymbol {x})}{\\partial \\boldsymbol {\\theta} _ {j}} = 0, j = 1, 2, \\dots , k, \\tag {2.3.3}"
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.165,
+            0.709,
+            0.247,
+            0.725
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "或解方程"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 18,
+          "bbox": [
+            0.402,
+            0.727,
+            0.871,
+            0.763
+          ],
+          "image_path": "images/page_91_equation_18.jpg",
+          "content": "\\frac {\\partial l (\\boldsymbol {\\theta} ; \\boldsymbol {x})}{\\partial \\boldsymbol {\\theta} _ {j}} = 0, j = 1, 2, \\dots , k \\tag {2.3.4}"
+        },
+        {
+          "type": "text",
+          "index": 19,
+          "bbox": [
+            0.165,
+            0.774,
+            0.744,
+            0.792
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "求得. 在统计上, 称方程 (2.3.3) 或 (2.3.4) 为似然方程或对数似然方程."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 20,
+          "bbox": [
+            0.167,
+            0.8,
+            0.242,
+            0.864
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 20,
+              "bbox": [
+                0.167,
+                0.8,
+                0.242,
+                0.864
+              ],
+              "image_path": "images/page_91_image_20.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 21,
+          "bbox": [
+            0.254,
+            0.802,
+            0.871,
+            0.867
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "注2.3.1 在上述定义中，极值在参数空间闭包上求取的原因在于，如果参数空间 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\Theta"
+            },
+            {
+              "type": "text",
+              "content": " 为开集，则似然函数的最大值有可能在边界上达到，从而导致在参数空间 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\Theta"
+            },
+            {
+              "type": "text",
+              "content": " 中无最大值解."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 22,
+          "bbox": [
+            0.165,
+            0.886,
+            0.873,
+            0.925
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例 2.3.2 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  为来自正态总体  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N(\\mu, \\sigma^{2})"
+            },
+            {
+              "type": "text",
+              "content": "  的独立同分布样本, 求  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu"
+            },
+            {
+              "type": "text",
+              "content": "  和  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma^{2}"
+            },
+            {
+              "type": "text",
+              "content": "  的 MLE."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 92,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.088,
+            0.068,
+            0.106,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "80"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.264,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第二章 参数点估计"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.16,
+            0.122,
+            0.355,
+            0.137
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "解 此时的似然函数为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.27,
+            0.157,
+            0.685,
+            0.201
+          ],
+          "image_path": "images/page_92_equation_3.jpg",
+          "content": "L (\\mu , \\sigma^ {2}; \\pmb {x}) = \\frac {1}{(\\sqrt {2 \\pi} \\sigma) ^ {n}} \\exp \\left\\{- \\frac {1}{2 \\sigma^ {2}} \\sum_ {i = 1} ^ {n} (x _ {i} - \\mu) ^ {2} \\right\\},"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.124,
+            0.22,
+            0.281,
+            0.236
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其对数似然函数为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.259,
+            0.256,
+            0.695,
+            0.297
+          ],
+          "image_path": "images/page_92_equation_5.jpg",
+          "content": "l (\\mu , \\sigma^ {2}; \\pmb {x}) = - \\frac {n}{2} \\ln (2 \\pi) - \\frac {n}{2} \\ln \\sigma^ {2} - \\frac {1}{2 \\sigma^ {2}} \\sum_ {i = 1} ^ {n} (x _ {i} - \\mu) ^ {2},"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.123,
+            0.318,
+            0.646,
+            0.335
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "两边分别对  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu"
+            },
+            {
+              "type": "text",
+              "content": "  和  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma^{2}"
+            },
+            {
+              "type": "text",
+              "content": "  求导, 再令其为零, 则得到如下的似然方程:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 7,
+          "bbox": [
+            0.306,
+            0.354,
+            0.64,
+            0.438
+          ],
+          "image_path": "images/page_92_equation_7.jpg",
+          "content": "\\left\\{ \\begin{array}{l} \\frac {\\partial l}{\\partial \\mu} = \\frac {1}{\\sigma^ {2}} \\sum_ {i = 1} ^ {n} (x _ {i} - \\mu) = 0, \\\\ \\frac {\\partial l}{\\partial \\sigma^ {2}} = - \\frac {n}{2 \\sigma^ {2}} + \\frac {1}{2 \\sigma^ {4}} \\sum_ {i = 1} ^ {n} (x _ {i} - \\mu) ^ {2} = 0, \\end{array} \\right."
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.125,
+            0.457,
+            0.262,
+            0.473
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由此求得其根为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.349,
+            0.481,
+            0.596,
+            0.549
+          ],
+          "image_path": "images/page_92_equation_9.jpg",
+          "content": "\\left\\{ \\begin{array}{l} \\mu = \\bar {x}, \\\\ \\sigma^ {2} = s _ {n *} ^ {2} = \\frac {1}{n} \\sum_ {i = 1} ^ {n} (x _ {i} - \\bar {x}) ^ {2}, \\end{array} \\right."
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.124,
+            0.565,
+            0.657,
+            0.582
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "容易验证上述两根的确使其似然达到最大, 于是, 所求的 MLE 为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.397,
+            0.605,
+            0.554,
+            0.624
+          ],
+          "image_path": "images/page_92_equation_11.jpg",
+          "content": "\\hat {\\mu} = \\bar {X}, \\hat {\\sigma} ^ {2} = S _ {n *} ^ {2}."
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.124,
+            0.649,
+            0.831,
+            0.688
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "比较例 2.2.1 与例 2.3.2 知道, 对于正态总体, 总体均值与方差的矩估计和 MLE 是一样的."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.122,
+            0.695,
+            0.83,
+            0.734
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例 2.3.3 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  为来自均匀分布  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U(0, \\theta)"
+            },
+            {
+              "type": "text",
+              "content": "  的独立同分布样本, 求参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  的 MLE."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.16,
+            0.743,
+            0.356,
+            0.76
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "解 此时的似然函数为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 15,
+          "bbox": [
+            0.27,
+            0.778,
+            0.675,
+            0.833
+          ],
+          "image_path": "images/page_92_equation_15.jpg",
+          "content": "L (\\theta ; \\pmb {x}) = \\prod_ {i = 1} ^ {n} f (x _ {i}; \\theta) = \\left\\{ \\begin{array}{l l} {{ \\frac {1}{\\theta^ {n}},}} & {{0 <   \\max _ {1 \\leqslant i \\leqslant n} x _ {i} <   \\theta ,}} \\\\ {{0,}} & {{\\text {其他}.}} \\end{array} \\right."
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.122,
+            0.856,
+            0.832,
+            0.929
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "从图 2.3.1 可以看出, 此似然函数是截断型的, 故不连续, 不能用求导法. 但从其形式上看,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "L(\\theta; \\boldsymbol{x})"
+            },
+            {
+              "type": "text",
+              "content": "  是  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  的单调下降函数, 而当  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta = \\max_{1 \\leqslant i \\leqslant n} x_i"
+            },
+            {
+              "type": "text",
+              "content": "  时,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "L(\\theta; \\boldsymbol{x})"
+            },
+            {
+              "type": "text",
+              "content": "  取得最大值, 于是  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\theta} = X_{(n)}"
+            },
+            {
+              "type": "text",
+              "content": "  是  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  的 MLE. □"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 93,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.742,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2.3 最大似然估计"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.069,
+            0.908,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "81"
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 2,
+          "bbox": [
+            0.334,
+            0.121,
+            0.728,
+            0.322
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 2,
+              "bbox": [
+                0.334,
+                0.121,
+                0.728,
+                0.322
+              ],
+              "image_path": "images/page_93_chart_2.jpg",
+              "content": "| \\(\\theta\\) | \\(L(\\theta; x)\\) |\n| --- | --- |\n| 0 | 0 |\n| X_(n) | ~High Value |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 3,
+              "bbox": [
+                0.398,
+                0.331,
+                0.64,
+                0.347
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图2.3.1 例2.3.3的似然函数"
+                }
+              ]
+            }
+          ],
+          "sub_type": "line"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.164,
+            0.369,
+            0.871,
+            0.414
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由例 2.1.6 知道,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\frac{n+1}{n}X_{(n)}"
+            },
+            {
+              "type": "text",
+              "content": "  是  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  的 UMVUE, 这就说明, 此时  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  的 MLE 并不是 UMVUE."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.253,
+            0.442,
+            0.875,
+            0.532
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "注2.3.2 从前面的例子可以看出, MLE 是充分统计量的函数. 实际上, 如果 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T"
+            },
+            {
+              "type": "text",
+              "content": " 是充分统计量, 则由因子分解定理可知, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(\\boldsymbol{x}; \\theta) = g_{\\theta}(T(\\boldsymbol{x}))h(\\boldsymbol{x})"
+            },
+            {
+              "type": "text",
+              "content": ", 于是, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "l(\\theta; \\boldsymbol{x}) = \\ln g_{\\theta}(T(\\boldsymbol{x})) + \\ln h(\\boldsymbol{x})"
+            },
+            {
+              "type": "text",
+              "content": ", 由此可见, 为使对数似然达到最大, 只需使 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g_{\\theta}(T(\\boldsymbol{x}))"
+            },
+            {
+              "type": "text",
+              "content": " 达到最大, 所以, MLE 肯定是充分统计量 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "T(\\boldsymbol{X})"
+            },
+            {
+              "type": "text",
+              "content": " 的函数."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.203,
+            0.555,
+            0.595,
+            0.572
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "最大似然估计即使存在, 也可能不唯一, 见下例."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.164,
+            0.578,
+            0.875,
+            0.617
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例 2.3.4 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  为来自  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "U(\\theta, \\theta + 1)"
+            },
+            {
+              "type": "text",
+              "content": "  的独立同分布样本,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta \\in R"
+            },
+            {
+              "type": "text",
+              "content": " , 求  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  的 MLE."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.202,
+            0.626,
+            0.399,
+            0.642
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "解 此时其似然函数为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.348,
+            0.664,
+            0.68,
+            0.725
+          ],
+          "image_path": "images/page_93_equation_9.jpg",
+          "content": "L (\\theta ; \\pmb {x}) = \\left\\{ \\begin{array}{l l} 1, & \\theta \\leqslant x _ {(1)} \\leqslant x _ {(n)} \\leqslant \\theta + 1, \\\\ 0, & \\text {其他.} \\end{array} \\right."
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.163,
+            0.746,
+            0.873,
+            0.809
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由于此时的似然函数在不为零的区域上是常数, 故只要  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  不超过  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{(1)}"
+            },
+            {
+              "type": "text",
+              "content": " , 且  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta + 1"
+            },
+            {
+              "type": "text",
+              "content": "  不小于  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "x_{(n)}"
+            },
+            {
+              "type": "text",
+              "content": " , 其似然函数均达到最大值 1, 故  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  的 MLE 不止一个, 在区间  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "[X_{(n)} - 1, X_{(1)}]"
+            },
+            {
+              "type": "text",
+              "content": "  中的任何一个均是  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  的 MLE. □"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.164,
+            0.815,
+            0.874,
+            0.854
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "例 2.3.5 设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "X_{1}, X_{2}, \\cdots, X_{n}"
+            },
+            {
+              "type": "text",
+              "content": "  为来自 Cauchy 分布  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "C(\\theta, 1)"
+            },
+            {
+              "type": "text",
+              "content": "  的独立同分布样本, 其总体概率密度为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.355,
+            0.86,
+            0.68,
+            0.894
+          ],
+          "image_path": "images/page_93_equation_12.jpg",
+          "content": "f (x; \\theta) = \\frac {1}{\\pi [ 1 + (x - \\theta) ^ {2} ]}, x \\in \\mathbb {R}, \\theta \\in \\mathbb {R}."
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.165,
+            0.909,
+            0.281,
+            0.925
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "求  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  的 MLE."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 94,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.088,
+            0.068,
+            0.108,
+            0.079
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "82"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.125,
+            0.066,
+            0.264,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第二章 参数点估计"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.16,
+            0.122,
+            0.317,
+            0.137
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "解 由于似然函数"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.35,
+            0.14,
+            0.603,
+            0.19
+          ],
+          "image_path": "images/page_94_equation_3.jpg",
+          "content": "L (\\theta ; \\boldsymbol {x}) = \\frac {1}{\\pi^ {n}} \\frac {1}{\\prod_ {i = 1} ^ {n} [ 1 + (x _ {i} - \\theta) ^ {2} ]}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.124,
+            0.203,
+            0.528,
+            0.22
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "非负, 且随着 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta \\to \\infty"
+            },
+            {
+              "type": "text",
+              "content": ", 而趋于 0, 故肯定有最大值."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.161,
+            0.227,
+            0.319,
+            0.243
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其对数似然函数为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.314,
+            0.26,
+            0.639,
+            0.302
+          ],
+          "image_path": "images/page_94_equation_6.jpg",
+          "content": "l (\\theta ; \\boldsymbol {x}) = - n \\ln \\pi - \\sum_ {i = 1} ^ {n} \\ln [ 1 + (x _ {i} - \\theta) ^ {2} ],"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.124,
+            0.318,
+            0.562,
+            0.335
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由于它可导, 故其最大值为下面的对数似然方程的解:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.356,
+            0.353,
+            0.83,
+            0.394
+          ],
+          "image_path": "images/page_94_equation_8.jpg",
+          "content": "g (\\theta) \\stackrel {\\text {def}} {=} \\sum_ {i = 1} ^ {n} \\frac {x _ {i} - \\theta}{1 + (x _ {i} - \\theta) ^ {2}} = 0. \\tag {*}"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.123,
+            0.411,
+            0.832,
+            0.451
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由于此对数似然方程没有显式解, 故只能利用迭代法求解. 为求 (*) 式的对数似然方程的解, 我们采用 Newton-Raphon 迭代算法. 由于其导数为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.325,
+            0.468,
+            0.629,
+            0.51
+          ],
+          "image_path": "images/page_94_equation_10.jpg",
+          "content": "g ^ {\\prime} (\\theta) = \\frac {\\partial g (\\theta)}{\\partial \\theta} = \\sum_ {i = 1} ^ {n} \\frac {(x _ {i} - \\theta) ^ {2} - 1}{[ 1 + (x _ {i} - \\theta) ^ {2} ] ^ {2}},"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.124,
+            0.527,
+            0.316,
+            0.544
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "故第 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k + 1"
+            },
+            {
+              "type": "text",
+              "content": " 步迭代解为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.394,
+            0.544,
+            0.559,
+            0.58
+          ],
+          "image_path": "images/page_94_equation_12.jpg",
+          "content": "\\theta_ {k + 1} = \\theta_ {k} - \\frac {g (\\theta_ {k})}{g ^ {\\prime} (\\theta_ {k})}."
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.124,
+            0.592,
+            0.83,
+            0.639
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "重复以上迭代, 直到绝对误差  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\left|\\theta_{k+1}-\\theta_{k}\\right|"
+            },
+            {
+              "type": "text",
+              "content": "  或相对误差  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\frac{\\left|\\theta_{k+1}-\\theta_{k}\\right|}{\\left|\\theta_{k}\\right|}"
+            },
+            {
+              "type": "text",
+              "content": "  满足事先给定的误差. □"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.122,
+            0.647,
+            0.832,
+            0.711
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "但利用迭代法求取MLE时必须注意到，迭代算法的结果依赖于初值的选取，故无法保证所求得之值确为最大值点，而可能是局部极大值.此时，一个最简单的方法就是尝试多个不同初值，之后再比较哪个似然函数最大."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.122,
+            0.717,
+            0.832,
+            0.782
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由例 2.3.2 知道, 修正的样本方差  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S_{n*}^{2}"
+            },
+            {
+              "type": "text",
+              "content": "  是总体方差的 MLE, 一个自然问题是: 修正的样本标准差  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S_{n*}"
+            },
+            {
+              "type": "text",
+              "content": "  是总体标准差的 MLE 吗? 此时, 一个一般问题是: 如参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  的 MLE 为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\theta}"
+            },
+            {
+              "type": "text",
+              "content": " , 则对于给定的函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g(\\cdot)"
+            },
+            {
+              "type": "text",
+              "content": " , 参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g(\\boldsymbol{\\theta})"
+            },
+            {
+              "type": "text",
+              "content": "  的 MLE 是  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g(\\hat{\\boldsymbol{\\theta}})"
+            },
+            {
+              "type": "text",
+              "content": "  吗?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.122,
+            0.787,
+            0.832,
+            0.828
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "答案是肯定的.但如果函数 g 不是一一对应，需要对似然函数做一简单修正.设  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta \\in \\Theta \\subset R^{k}"
+            },
+            {
+              "type": "text",
+              "content": " ，似然函数为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "L(\\theta)"
+            },
+            {
+              "type": "text",
+              "content": " ，对于函数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g(\\cdot)"
+            },
+            {
+              "type": "text",
+              "content": " ，定义"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 17,
+          "bbox": [
+            0.393,
+            0.849,
+            0.56,
+            0.867
+          ],
+          "image_path": "images/page_94_equation_17.jpg",
+          "content": "\\boldsymbol {\\psi} = g (\\boldsymbol {\\theta}) \\in \\varPsi \\subset \\mathbb {R} ^ {r},"
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.122,
+            0.886,
+            0.83,
+            0.926
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r \\leqslant k"
+            },
+            {
+              "type": "text",
+              "content": ". 注意到 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\psi"
+            },
+            {
+              "type": "text",
+              "content": " 的取值空间可能比 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": " 的取值空间小, 即在空间 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\Psi"
+            },
+            {
+              "type": "text",
+              "content": " 上的一个点 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\psi"
+            },
+            {
+              "type": "text",
+              "content": ", 可能对应着 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\Theta"
+            },
+            {
+              "type": "text",
+              "content": " 上的许多点. 为了求 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\psi"
+            },
+            {
+              "type": "text",
+              "content": " 的 MLE, 先定义关于它的似然函数如下:"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 95,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.742,
+            0.067,
+            0.872,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2.3 最大似然估计"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.89,
+            0.069,
+            0.91,
+            0.08
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "83"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.166,
+            0.122,
+            0.871,
+            0.161
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定义 2.3.3 (导出似然) 对于  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\psi \\in \\Psi"
+            },
+            {
+              "type": "text",
+              "content": " ，如记  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "g^{-1}(\\psi) = \\{\\theta : g(\\theta) = \\psi\\}"
+            },
+            {
+              "type": "text",
+              "content": " ，则参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\psi"
+            },
+            {
+              "type": "text",
+              "content": "  的导出似然定义为"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.35,
+            0.171,
+            0.871,
+            0.197
+          ],
+          "image_path": "images/page_95_equation_3.jpg",
+          "content": "L ^ {*} (\\psi) = \\max _ {\\{\\theta : g (\\theta) = \\psi \\}} L (\\theta) = \\max _ {\\theta \\in g ^ {- 1} (\\psi)} L (\\theta). \\tag {2.3.5}"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.167,
+            0.211,
+            0.249,
+            0.226
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "则我们称"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.438,
+            0.235,
+            0.6,
+            0.261
+          ],
+          "image_path": "images/page_95_equation_5.jpg",
+          "content": "\\hat {\\psi} = \\arg \\max _ {\\psi \\in \\varPsi} L ^ {*} (\\psi)"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.167,
+            0.271,
+            0.287,
+            0.286
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\psi"
+            },
+            {
+              "type": "text",
+              "content": "  的 MLE."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.203,
+            0.294,
+            0.372,
+            0.31
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "有了上述定义, 则有"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.263,
+            0.331,
+            0.776,
+            0.36
+          ],
+          "image_path": "images/page_95_equation_8.jpg",
+          "content": "L ^ {*} (\\hat {\\psi}) = \\max _ {\\boldsymbol {\\theta} \\in g ^ {- 1} (\\hat {\\psi})} L (\\boldsymbol {\\theta}) = \\max _ {\\boldsymbol {\\psi} \\in \\Psi} L ^ {*} (\\boldsymbol {\\psi}) \\geqslant \\max _ {\\boldsymbol {\\theta} \\in g ^ {- 1} (\\boldsymbol {\\psi})} L (\\boldsymbol {\\theta}) = L ^ {*} (\\boldsymbol {\\psi})."
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.166,
+            0.378,
+            0.576,
+            0.394
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "从而有如下被称为最大似然估计变换不变的定理:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.166,
+            0.401,
+            0.871,
+            0.442
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定理 2.3.1 设样本来自参数分布族  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(x;\\boldsymbol{\\theta})"
+            },
+            {
+              "type": "text",
+              "content": " ,  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\boldsymbol{\\theta} \\in \\Theta \\subset R^{k}"
+            },
+            {
+              "type": "text",
+              "content": " . 如果参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": "  的最大似然估计为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\theta}"
+            },
+            {
+              "type": "text",
+              "content": " , 则参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\psi = g(\\boldsymbol{\\theta}) \\in \\Psi \\subset \\mathbb{R}^{r}"
+            },
+            {
+              "type": "text",
+              "content": "  的 MLE 为  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\psi} = g(\\hat{\\boldsymbol{\\theta}})"
+            },
+            {
+              "type": "text",
+              "content": " , 其中  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "r \\leqslant k"
+            },
+            {
+              "type": "text",
+              "content": " ."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 11,
+          "bbox": [
+            0.202,
+            0.47,
+            0.436,
+            0.489
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2.3.2 MLE的相合性"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.165,
+            0.514,
+            0.873,
+            0.593
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "为简单, 本小节只考虑单参数情况, 且设参数空间 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\Theta"
+            },
+            {
+              "type": "text",
+              "content": " 是一个开区间. 另外, 假设 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n"
+            },
+            {
+              "type": "text",
+              "content": " 个样本独立同分布, 总体概率分布为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "f(x; \\theta)"
+            },
+            {
+              "type": "text",
+              "content": ", 且在参数空间 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\Theta"
+            },
+            {
+              "type": "text",
+              "content": " 上关于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": " 可导. 记对数似然函数为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "l(\\theta; \\boldsymbol{x}) = \\sum_{i=1}^{n} \\ln f(x_i; \\theta)"
+            },
+            {
+              "type": "text",
+              "content": "."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.206,
+            0.599,
+            0.524,
+            0.616
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "定理 2.3.2 记  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta_{0}"
+            },
+            {
+              "type": "text",
+              "content": "  为参数真值, 且设"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 14,
+          "bbox": [
+            0.421,
+            0.637,
+            0.873,
+            0.656
+          ],
+          "image_path": "images/page_95_equation_14.jpg",
+          "content": "E _ {\\theta_ {0}} (| \\ln f (X; \\theta_ {0}) |) <   \\infty . \\tag {2.3.6}"
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.166,
+            0.676,
+            0.568,
+            0.692
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "则以概率 1 当 n 充分大时, 可找到对数似然方程"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 16,
+          "bbox": [
+            0.468,
+            0.705,
+            0.872,
+            0.737
+          ],
+          "image_path": "images/page_95_equation_16.jpg",
+          "content": "\\frac {\\partial l (\\theta ; \\boldsymbol {x})}{\\partial \\theta} = 0 \\tag {2.3.7}"
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.166,
+            0.754,
+            0.329,
+            0.773
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "之一根 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\hat{\\theta}_n(\\pmb {x})"
+            },
+            {
+              "type": "text",
+              "content": " ，满足"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 18,
+          "bbox": [
+            0.421,
+            0.78,
+            0.871,
+            0.8
+          ],
+          "image_path": "images/page_95_equation_18.jpg",
+          "content": "\\hat {\\theta} _ {n} (\\boldsymbol {X}) \\longrightarrow \\theta_ {0}, \\text {a.s.} P _ {\\theta_ {0}}, \\tag {2.3.8}"
+        },
+        {
+          "type": "text",
+          "index": 19,
+          "bbox": [
+            0.165,
+            0.816,
+            0.873,
+            0.879
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "P_{\\theta_0}"
+            },
+            {
+              "type": "text",
+              "content": " 表示样本 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\pmb{X}"
+            },
+            {
+              "type": "text",
+              "content": " 在参数真值 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta_0"
+            },
+            {
+              "type": "text",
+              "content": " 处的概率分布.又若(2.3.6）式对一切 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta_0\\in \\Theta"
+            },
+            {
+              "type": "text",
+              "content": " 均成立，且存在 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": " 的一个强（弱）相合估计 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\tilde{\\theta}_n"
+            },
+            {
+              "type": "text",
+              "content": " ，则存在 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\theta"
+            },
+            {
+              "type": "text",
+              "content": " 的一个强（弱）相合估计，是对数似然方程(2.3.7）的一个根."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 20,
+          "bbox": [
+            0.166,
+            0.885,
+            0.873,
+            0.925
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "证明请参见陈希孺 (2009) 第 150—152 页. 另外, 陈希孺 (2009) 也研究了某些情况下, 对数似然方程的解与强相合估计间的关系."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}
