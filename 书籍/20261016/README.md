@@ -1,17 +1,17 @@
 # 2026-10-16 教材解析
 
-来源：本批 29 个 PDF，共 14,528 页。MinerU 4.0.12 Advanced，本地 Colab Tesla T4，Torch + vLLM。
+来源：本批 29 个 PDF，共 14,528 页。MinerU 4.0.12 Advanced，本地 Colab T4 / A100（断点续跑），Torch + vLLM。
 
 每本保留原 PDF 字节、逐批原始解析、FULL Markdown、结构化 JSON、图片、公式和表格、原生文本及逐页章节映射。仓库内单文件不超过 95 MB，大文件附恢复方法和 SHA-256。
 
 识别结果保留原件供核对，未宣称 OCR 和公式经过逐字人工校对。
 
-完成 6/29 本；[逐书 ZIP Release](https://github.com/kazewwk/test/releases/tag/mineru-advanced-textbooks-2026-10-16)。
+完成 7/29 本；[逐书 ZIP Release](https://github.com/kazewwk/test/releases/tag/mineru-advanced-textbooks-2026-10-16)。
 
 | 教材 | 页数 | 状态 |
 | --- | ---: | --- |
 | 101计划 数学分析(全三册) (楼红卫, 杨家忠,_ | 856 | 待完成 |
-| 101计划有机化学(上册) (张丹维 王彦广 裴坚) | 351 | 待完成 |
+| [101计划有机化学(上册) (张丹维 王彦广 裴坚)](02_organic-chemistry-101-vol1/) | 351 | 已完成 |
 | [101计划有机化学(下册) (张丹维 王彦广 裴坚)](03_organic-chemistry-101-vol2/) | 331 | 已完成 |
 | 101计划核心教材 生物信息学 (主编 陈铭 吕晖) | 622 | 待完成 |
 | [101计划概率论(下册) (李增沪,张梅,何辉)](05_probability-101-vol2/) | 246 | 已完成 |
