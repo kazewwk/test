@@ -6,7 +6,7 @@
 
 识别结果保留原件供核对，未宣称 OCR 和公式经过逐字人工校对。
 
-完成 15/29 本；[逐书 ZIP Release](https://github.com/kazewwk/test/releases/tag/mineru-advanced-textbooks-2026-10-16)。
+完成 16/29 本；[逐书 ZIP Release](https://github.com/kazewwk/test/releases/tag/mineru-advanced-textbooks-2026-10-16)。
 
 | 教材 | 页数 | 状态 |
 | --- | ---: | --- |
@@ -16,7 +16,7 @@
 | 101计划核心教材 生物信息学 (主编 陈铭 吕晖) | 622 | 待完成 |
 | [101计划概率论(下册) (李增沪,张梅,何辉)](05_probability-101-vol2/) | 246 | 已完成 |
 | [Bioinformatics Algorithms A_](06_bioinformatics-algorithms/) | 380 | 已完成 |
-| Bioinformatics Data Skills_ | 538 | 待完成 |
+| [Bioinformatics Data Skills_](07_bioinformatics-data-skills/) | 538 | 已完成 |
 | [biostat](08_biostat/) | 472 | 已完成 |
 | [Gene Cloning and DNA Analys_](09_gene-cloning-and-dna-analysis/) | 435 | 已完成 |
 | [Introduction to bioinformat_](10_introduction-to-bioinformatics/) | 440 | 已完成 |
