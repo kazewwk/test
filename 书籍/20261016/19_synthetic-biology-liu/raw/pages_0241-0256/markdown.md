@@ -1,0 +1,245 @@
+许多基因线路已成功用于抗肿瘤效应分子的表达，以提高细菌的肿瘤治疗效果，如自杀开关、群体感应基因线路、逻辑振荡器、小分子（如水杨酸）诱导线路、环境（如缺氧）诱导线路、光诱导线路、逻辑门基因线路等。
+
+下面介绍一些工程细菌在癌症诊断和治疗中的代表性应用。
+
+首先，工程细菌在癌症诊断中具备潜力。麻省理工学院与加利福尼亚大学圣地亚哥分校的研究团队将 LacZ 报告基因植入大肠杆菌中，该基因在细菌与肿瘤细胞接触时被启动表达，导致大量 LacZ 酶的产生。随后，研究人员向小鼠体内注射一种化学发光底物，该底物在 LacZ酶的作用下会释放化学发光信号，并在小鼠尿液中富集，使尿液变为红色。通过监测尿液颜色的变化，研究人员可以初步推测小鼠是否患有肿瘤及肿瘤的状态。研究人员发现，这一方法比传统显微镜检测更加敏感，可以检测出直径小于 1cm 的肿瘤<sup>[26]</sup>。
+
+在癌症治疗领域，Royo 等研究人员设计了一个水杨酸诱导的电路，用于改造经过减毒处理的沙门氏菌，以将 5-氟胞嘧啶转化为细胞毒性产物，从而选择性地杀伤肿瘤细胞<sup>[27]</sup>。沙门氏菌经注射后会定位到肿瘤组织，随着水杨酸（诱导剂）和 5-氟胞嘧啶（底物）的注射，细菌细胞内开始生成 5-氟尿嘧啶，并将其释放到肿瘤环境中，从而实现对肿瘤细胞的毒性作用。
+
+加利福尼亚大学圣地亚哥分校的研究团队设计了基于群体感应的基因线路，让细菌在肿瘤环境内生长达到一定阈值后自行裂解，并同步释放出抗癌药物。在大量裂解后，少数存活下来的细菌重新增殖并进行下一轮裂解和释放抗癌药物，因此形成脉冲式的递送周期。这一方法在实现细菌药物递送的前提下，最大限度地减少了细菌在体内的定殖数量，从而降低了对周围组织的损伤和毒副作用<sup>[28]</sup>。
+
+为了提高抗癌细菌疗法的安全性和有效性，研究人员正致力于增强细菌对肿瘤的精确靶向性。尽管一些细菌天然具有在实体瘤内的厌氧环境中定向生长的趋向性，如大肠杆菌、霍乱弧菌、沙门氏菌和李斯特菌等，但通常情况下，这种亲和力尚不足以实现精确的靶向治疗，因为细菌仍然会在体内广泛分散<sup>[29]</sup>。为增强细菌对肿瘤的特异性，策略之一是通过定向进化的方式培养细菌，使其在肿瘤内生长并产生适应性突变，以筛选出更适合在肿瘤内生长的细菌变种。此外，研究人员还可以设计细菌，使其在外膜上表达肿瘤靶向分子，如黏附肽。例如，一种减毒沙门氏菌菌株通过将精氨酸-甘氨酸-天冬氨酸（RGD）肽与细菌外膜蛋白 A（OmpA）融合，使细菌表面展示出 RGD 肽。RGD 肽能够与肿瘤细胞上广泛高表达的αvβ3 整合素结合，从而提高了细菌对肿瘤细胞的黏附性。改善细菌对肿瘤趋向性的另一种方法是利用遗传回路，将细菌的生长与肿瘤特征如高浓度乳酸盐、低氧和低 pH 等相结合。在这些感应回路中，细菌生长所需的基因转录受细菌启动子的控制，以响应这些环境线索，从而限制细菌向肿瘤生长。鉴于其他组织中可能也存在某些信号，通过“AND”逻辑门将感应回路组合在一起，可进一步提高肿瘤特异性，减少细菌突变逃逸的情况，从而实现更长期的生物封闭。这些策略的研究和发展为抗癌细菌疗法的改进提供了关键的方向，有望为患者提供更加安全和有效的治疗选择。
+
+我国研究人员在抗癌细菌疗法的开发领域取得了显著的进展。我国自主研发的 SGN1 注射液是全球首个在中国和美国均进入临床试验阶段的细菌载体基因工程生物制品，具有精确靶向和快速溶解肿瘤的能力。SGN1 采用减毒沙门氏菌载体携带甲硫氨酸水解酶，能够降解肿瘤生长所必需的甲硫氨酸，从而杀伤肿瘤。这种溶瘤产品具有高效杀伤肿瘤的特性，且适用于多种实体肿瘤。此外，中国科学院深圳先进技术研究院的团队致力于采用合成生物学方法，以降低细菌毒性、增强细菌靶向性，并赋予细菌多样化功能，旨在将细菌改造成更为特异、
+
+智能和高效的抗肿瘤工具。
+
+综上所述，工程细菌能特异性富集在肿瘤部位，诱导直接溶瘤作用，并在肿瘤微环境中产生强大的免疫调节作用，唤醒被肿瘤抑制的宿主免疫系统，还可用作药物或细胞因子的递送载体，从而增强抗肿瘤效果。
+
+## 二、工程细菌应用于糖尿病诊疗
+
+细菌已被设计用于检测尿液中的葡萄糖浓度。Courbet 等描述了一种检测人尿液样本中异常葡萄糖浓度的方法，他们将细菌传感器封装在水凝胶微珠中，尿液中的葡萄糖会在微珠中变为红色。体外细菌血糖仪的检测灵敏度比尿试纸高一个数量级<sup>[30]</sup>。
+
+工程细菌还可进一步用于糖尿病的治疗。例如，在工程肠道细菌中合成用于治疗糖尿病的蛋白质和多肽。利用经改造的益生菌格氏乳杆菌（Lactobacillus gasseri）ATCC 33323 合成了胰高糖素样肽-1（glucagon-like peptide-1，GLP-1）的多肽，口服细菌治疗糖尿病大鼠后，血糖水平下降了 33% <sup>[31]</sup>。同样，经改造的 Lactococcus lactis FI5876 也能在高浓度葡萄糖条件下生物合成 GLP-1，以刺激胰岛 B 细胞分泌胰岛素<sup>[32]</sup>；经改造的益生菌副干酪乳酸菌（Lactobacillus paracasei）ATCC 27092 能分泌血管紧张素（1-7）[Ang-（1-7）]（一种抗炎、抗血管扩张和血管生成的肽类药物），口服该细菌后，糖尿病小鼠体内的 Ang-（1-7）浓度升高，且胰岛素敏感性增加，因而减少了糖尿病小鼠的视网膜和肾损伤。此外，口服合成穿透素（一种细胞穿膜肽，具有增强胰岛素输送的能力）和 GLP-1 融合蛋白的工程长杆菌 HB15 还能增强结肠直肠中 GLP-1 的产生<sup>[33]</sup>。通过将 GLP-1 与肽聚糖锚定蛋白 PrtP 融合，研究人员也成功设计出了能在细菌膜上展示 GLP-1 类似物的 L. paracasei BL23，这种工程菌改善了糖尿病大鼠的血糖控制情况<sup>[34]</sup>。除 GLP-1 外，工程乳杆菌 MG1363 还同时表达了免疫调节细胞因子 IL-10 和人胰岛素前体等蛋白，与小剂量的全身抗 CD3 联合治疗，可逆转非肥胖糖尿病小鼠因不受控的自身免疫而引发的糖尿病<sup>[35]</sup>。这种设计可能对人类 1 型糖尿病患者也有治疗作用。
+
+## 三、工程细菌应用于代谢疾病诊疗
+
+工程化肠道微生物已被开发用于治疗代谢性疾病<sup>[36]</sup>。例如，被改造的大肠杆菌可以合成N-酰基磷脂酰乙醇胺（NAPE），其代谢物具有厌食效应，可用于治疗高脂肪饮食引起的小鼠肥胖症<sup>[37]</sup>。代谢性疾病的患者会代谢障碍而导致有毒化合物在体内堆积，造成中毒。例如，小肠是毒性物质氨的主要来源，将肠道产生的氨转化为精氨酸可以治疗高氨血症。为此，Kurtz等改造了一种肠道常驻菌—大肠杆菌 Nissle 1917 菌株，口服给药即可在小鼠和猴子模型中成功将小肠的氨转化为 L-精氨酸，并减少了肝脏疾病导致的高氨血症。该菌株在健康受试者的Ⅰ期临床试验中表现出良好的安全性，具有进一步临床开发的潜力<sup>[38]</sup>。此外，Isabella 等将大肠杆菌 Nissle 1917 重新编程为过表达苯丙氨酸降解通路基因的工程菌，以降解苯丙酮尿症（PKU）患者体内过量的苯丙氨酸。在 Pahenu2/enu2 PKU 小鼠模型中，口服给予工程菌治疗能显著降低血苯丙氨酸的浓度，降幅达 38%<sup>[39]</sup>。
+
+酒精性肝病是肝脏疾病的主要种类之一<sup>[40]</sup>。工程化的枯草芽孢杆菌和乳酸乳杆菌可用于表达乙醇降解通路的乙醇脱氢酶和乙醛脱氢酶，以加速乙醇的代谢并减轻乙醇过度摄入造成的肝损伤<sup>[41]</sup>。此外，在慢性乙醇暴露期间，抗革兰氏阳性细菌的 REG3G 蛋白在胃肠道中异常低表达，增加了感染风险。罗伊氏乳杆菌经改造后能表达白细胞介素-22（IL-22），提高了酒精性肝病小鼠肠道中 REG3G 的丰度，从而减少了肝感染导致的炎症和损伤<sup>[42]</sup>。
+
+## 四、工程细菌应用于胃肠道疾病诊疗
+
+益生菌可用于治疗炎症性肠病（inflammatory bowel disease，IBD）<sup>[43]</sup>。IBD 是消化道组织的慢性炎症，主要包括溃疡性结肠炎和克罗恩病。IBD 患者常患有腹泻、疼痛和体重减轻等症状。肠道中常驻着大量细菌，研究人员通过合成生物学的方法使肠道细菌拥有治疗胃肠道疾病的能力。Praveschotinunt 等改造了大肠杆菌 Nissle 1917，使它能表达 Curli 纤维蛋白与三叶因子（TFF，胃黏膜保护肽家族）融合蛋白，产生细胞外纤维基质，促进小肠上皮的完整性，以增强肠道黏膜的愈合能力，从而缓解小鼠的 $\mathrm { I B D } _ { \circ }$ 结果表明，工程化的大肠杆菌显著抑制了促炎细胞因子的产生，缓解了小鼠的体重减轻，保持了结肠长度，在葡聚糖硫酸钠（DSS）诱导的急性结肠炎小鼠模型中表现出抗炎能力。该设计有望作为通用模式扩展到其他针对IBD 的益生菌活体疗法中<sup>[44]</sup>。
+
+工程细菌还可以通过清除病原体来治疗胃肠道感染性疾病。铜绿假单胞菌是一种常见的多药耐药病原菌，会严重危害患者的健康。工程化大肠杆菌 Nissle 1917 已被开发用于检测、预防和治疗铜绿假单胞菌的肠道感染<sup>[45]</sup>。改造的大肠杆菌能感知铜绿假单胞菌产生的信号分子 N-酰基高丝氨酸内酯，并通过自溶释放分散素（生物膜降解酶）和细菌素（抗菌肽）以清除肠道中的病原体。重编程的细菌不仅对铜绿假单胞菌有杀灭作用，还显示出对该菌的长期预防能力（超过 15 天）。
+
+3-羟基丁酸（3-hydroxybutyrate，3HB）是人体内酮体的一种成分，已被证明对结肠炎具有治疗作用。Yan 等构建了过表达 3HB 生物合成通路的大肠杆菌 Nissle 1917。与野生型大肠杆菌相比，工程细菌在肠炎模型中对小鼠体重、结肠长度、潜血水平、肠道髓过氧化物酶活性及促炎细胞因子浓度等指标均显示出更好的疗效<sup>[46]</sup>。
+
+然而，这些研究都仅在小鼠中获得初步结果，它们尚未进入临床试验阶段，后期仍需要进一步开展系统的非临床研究并评估它们在人体中的应用潜力。
+
+## 五、工程细菌应用于抗疟原虫
+
+由于耐药性的出现，疟疾在发展中国家仍然造成了巨大的负担，因而迫切需要开发新方法来对抗这种致命疾病。疟原虫是导致疟疾的病原体，它们以雌性按蚊为传播媒介感染人类。因此，切断按蚊传播途径被认为是预防疟疾的关键手段。中国科学院上海生命科学研究院植物生理生态研究所的研究人员巧妙地利用了按蚊体内的共生细菌来控制疟疾传播。研究人员首先从雌性按蚊的卵巢中分离出沙雷氏菌属（Serratia）的新菌株 AS1，发现该菌株可以在蚊子体内的中肠和卵巢等器官定植，并可以通过交配传给后代，且对蚊子的生存和繁殖没有明显的负面影响。随后，AS1 菌被改造成可以同时分泌 5 种抗疟原虫蛋白的工程细菌。蚊子摄入这些工程菌后，疟原虫在蚊子体内的发育受到了显著的抑制，疟原虫卵囊减少 90%以上。由于 AS1 菌可以在蚊子群体中迅速传播，使蚊群失去传播疟疾的能力，因而可以从源头上阻断疟疾的传播。与改造蚊子基因组相比，这种方法操作更为简便，也避免了转基因蚊子的生
+
+物安全问题<sup>[47]</sup>。
+
+综上所述，通过合成生物学方法可以设计并构建工程细菌用于活体生物疗法。随着对细菌了解的深入和电路设计的发展，研究人员可以构建具有精确感知、诱导激活和持久作用的新一代细菌疗法。然而，在减弱细菌毒性并提高体内可控性等方面，我们仍需做更多努力。
+
+## 第四节 合成病毒的诊疗
+
+长期以来，人们都将病毒视为病原体，研究人员对其感染过程及在宿主细胞内的复制机制展开了深入研究，以期找到抗病毒的策略。然而，随着人们对病毒生物学的深入了解，以及合成生物学的迅速发展，研究人员开始将病毒工程化，使其成为强大的医疗工具。合成病毒用于医学领域具有以下优势:第一，每种病毒都有明确的宿主细胞特异性，可以利用这种选择性来靶向感染特定细胞进行治疗；第二，与细胞和细菌相比，病毒结构简单，更容易进行工程化改造以携带治疗基因；第三，病毒具有高效转导细胞的能力，可作为基因治疗载体来传递健康基因治疗遗传病；第四，病毒能激活宿主的先天和获得性免疫应答，这一特性可应用于疫苗和抗肿瘤免疫治疗开发中。目前，病毒的天然特性正在以创新方式应用于合成生物学，为开发新型诊疗策略提供了思路和手段。但是，病毒工程化也会带来生物安全隐患，需要谨慎评估风险。
+
+## 一、合成病毒应用于癌症治疗
+
+在 20 世纪早期，临床医生观察到一些感染病毒或注射疫苗后肿瘤消退的个案，从而提出了病毒可以治疗肿瘤的猜想。到了 20 世纪中叶，研究人员开始使用野生病毒或减毒毒株进行肿瘤治疗，虽然看到了一些疗效，但受限于野生病毒的毒性，以上临床研究未获成功。直到20 世纪 90 年代，随着基因工程技术的进步，研究人员才可以通过改造病毒基因组，从而提高其肿瘤选择性和杀瘤活性。此后，利用病毒治疗肿瘤的疗法步入了发展的快车道<sup>[48]</sup>。
+
+研究人员将可以选择性感染并杀伤肿瘤细胞而不影响正常细胞的可复制病毒称为溶瘤病毒。它们既可以是天然存在的，也可以是经基因工程改造的病毒。溶瘤病毒能通过多种机制发挥抗肿瘤效应:首先，病毒选择性地在肿瘤细胞中大量复制，介导了直接溶瘤效应；其次，病毒的感染和复制会招募并激活大量免疫细胞，从而克服肿瘤的免疫抑制微环境，促进抗肿瘤免疫；最后，经基因工程改造的病毒可以高效递送治疗基因。因此，溶瘤病毒是靶向治疗、免疫治疗和基因治疗相结合的新型抗癌药物<sup>[49]</sup>。
+
+Talimogene laherparepvec（T-Vec）是美国 FDA 首个批准上市的溶瘤病毒药物。它以感染人类的Ⅰ型单纯疱疹病毒（HSV-1）为骨架，敲除了病毒编码的毒性基因 ICP34.5 和 ICP47 以减少病毒在正常细胞的复制，提高其肿瘤选择性；插入了编码粒细胞-巨噬细胞集落刺激因子（GM-CSF）以招募树突状细胞（DC），从而增强抗肿瘤免疫应答。在临床应用中，单用 T-Vec可使部分患者产生持久应答；与免疫检查点抑制剂联用可增强其抗肿瘤效应<sup>[50]</sup>。
+
+John 等利用化学遗传开关系统控制溶瘤痘苗病毒的复制和（或）基因表达，从而提高其安全性和有效性。研究者首先通过核糖体定量分析病毒启动子的强度，然后将不同药物的诱导系统与病毒启动子进行融合以构建合成启动子，实现了强效的可诱导表达而基线不渗漏表达。研究者还构建了嵌合合成启动子，以增强治疗基因表达水平的精准调控<sup>[51]</sup>。
+
+近年来，我国学者在溶瘤病毒领域取得了显著的进展。上海三维生物技术有限公司的安科瑞已获批上市，武汉滨会生物科技股份有限公司的 OH2、深圳亦诺微医药科技有限公司的T3011、广州威溶特医药科技有限公司的 M1 等溶瘤病毒均已进入临床试验阶段。清华大学研究团队通过使用合成基因线路来控制腺病毒的复制和免疫效应因子的释放，从而提高了腺病毒针对特定肿瘤细胞的靶向性和疗效。他们构建了一个感知开关电路，可以整合多个肿瘤特异性启动子和 miRNA 输入来控制 E1A 基因的表达，进而选择性地启动腺病毒在肝癌细胞中的复制。结果表明，感知开关电路可以选择性地启动腺病毒在多种肝癌细胞中的复制，但不影响正常细胞。进一步通过数学模型对腺病毒治疗系统进行定量分析，发现编码免疫效应因子的腺病毒疗效优于外源给药的组合疗法<sup>[52]</sup>。他们研发的基于合成基因线路的溶瘤病毒产品SynOV1.1 于 2020 年 11 月获得美国 FDA 临床试验许可。
+
+## 二、合成病毒应用于基因治疗
+
+病毒载体是将遗传物质受控地导入细胞进行基因治疗的常用工具，目前最常用的病毒载体包括腺相关病毒（AAV）、腺病毒（Ad）和慢病毒。病毒载体具有高转导效率的优势，可将基因递送到分裂和非分裂细胞。通过选择不同血清型的毒株或改变病毒的表面蛋白，还可以使病毒载体靶向特定细胞类型。由于慢病毒可以将遗传物质整合到宿主细胞的 DNA 中，因而可以实现持续的基因表达。经历了 40 多年的发展，病毒载体研究领域积累了不少成功和失败的经验，近年来进入了临床应用的快速增长期<sup>[53]</sup>。
+
+目前，全球范围内已有 3 款基于 AAV 的基因治疗药物获批上市，分别是递送脂蛋白脂酶（lipoprotein lipase，LPL）编码基因的 alipogene tiparvovec，用于治疗 LPL 缺乏症<sup>[54]</sup>；携带维甲酸异构水解酶（retinoid isomerohydrolase，RPE65）编码基因的 voretigene neparvovec-rzyl，用于治疗遗传性视网膜疾病<sup>[55]</sup>；表达运动神经元生存蛋白（survival motor neuron，SMN1）编码基因的 onasemnogene abeparvovec，用于治疗脊髓性肌萎缩<sup>[56]</sup>。此外，还有超过 200 个临床试验正在进行中，适应证包括老年性黄斑病变、肌营养不良、血友病和 X 连锁肌管肌病等。AAV 载体基因疗法面临的主要挑战是免疫原性问题，包括对载体衣壳蛋白和外源基因的适应性免疫反应。目前的解决方法包括合理设计载体（如使用组织特异性启动子、miRNA 下调基因表达等）和优化给药途径。AAV 载体疗法在人体应用中总体上安全性良好，但仍需要持续评估其短期和长期的安全性。
+
+Ad 载体具有很强的免疫原性<sup>[57]</sup>，适用于疫苗开发和肿瘤治疗<sup>[58,59]</sup>。慢病毒载体则在 CAR-T 细胞的制备过程中有广泛的应用<sup>[60]</sup>。
+
+然而，病毒载体也存在一些关键的局限性。例如，它们的载荷容量有限，无法携带大片段基因序列；病毒蛋白也可能引起不利于疗效和安全性的免疫反应；病毒基因组的整合可能会破坏正常基因，产生遗传毒性。
+
+总体而言，病毒载体是基因疗法中不可或缺的工具。虽然其安全问题仍然存在，但研究人员会继续对病毒载体进行工程化改造，以增强其特异性、最小化毒性和提高其转导效率。随着持续创新，病毒载体技术在治疗各种遗传性疾病方面将具有光明的前景。
+
+## 三、合成病毒应用于疫苗开发
+
+疫苗是预防传染性疾病最有效的方法。目前，已有 6 种病毒载体基因疗法产品获批上市或授权紧急使用，用于预防埃博拉病毒感染和 COVID-19。所有获批产品均基于重组复制缺陷病毒载体，病毒基因组携带了目标病毒的表面蛋白基因。使用复制缺陷病毒载体可降低载体病毒本身的安全风险。这些产品的作用机制包括:①病毒载体高效进入注射部位的细胞并将基因构建体转入感染细胞；②所转入的基因指导细胞过表达目标病毒的表面蛋白，刺激免疫系统产生细胞免疫和体液免疫应答，以抗病毒感染<sup>[61]</sup>。
+
+将威胁生命的致病病毒转化为具有感染活性但无害的减毒疫苗一直是疫苗研发的重点方向。北京大学的研究团队利用合成生物学方法在甲型流感病毒基因组中引入过早终止密码子（premature termination codon，PTC），使其在感染人体细胞后不能进行完整的蛋白质翻译。这些含有 PTC 的病毒虽然保留完整的感染能力，但在常规细胞中不能复制。通过在基因组不同位置引入多个 PTC，研究者获得了在转基因细胞中能大量复制且遗传稳定的子代病毒。在小鼠、豚鼠和貂模型中，接种 PTC 病毒不仅能诱导对抗原性不同的流感病毒的强大体液、黏膜和 T 细胞免疫应答，发挥预防性作用；甚至还能中和已存在的感染病毒株，发挥治疗性效应。这一发现颠覆了传统病毒疫苗的概念，成为活病毒疫苗的重大突破。与依赖少数几个氨基酸突变的传统减毒活病毒相比，合成病毒的减毒效果来源于几百处的 PTC 所产生的累积效应，因此产生回复突变的可能性极低，其安全性显著提高。此外，通过这一方法获得减毒株所需的时间短，明显缩短了疫苗的研发周期<sup>[62]</sup>。这种利用合成生物学方法构建减毒活疫苗的策略被称为合成减毒病毒工程技术，可能成为一种将活病毒转化为疫苗的通用技术，适用于大多数病毒。
+
+类似地，中国科学院武汉病毒研究所的团队采用“密码子去优化”策略对寨卡病毒（ZIKV）的关键基因 E 和（或）NS1 进行大量同义突变，从而获得了减毒毒株。与亲本 ZIKV 相比，密码子去优化的 ZIKV 对哺乳动物的毒性减弱，而偏向于在昆虫细胞中复制。在众多合成病毒中，Min E+NS1 毒株可诱导产生强大的中和抗体，完全保护小鼠免受致命感染和孕期垂直传播。更重要的是，大量同义突变使突变体几乎不可能重获野生毒力。此外，研究人员证明密码子去优化的策略可开发包括 ZIKV、日本脑炎病毒和西尼罗病毒在内的多种减毒活疫苗，具有广谱适用性<sup>[63]</sup>。
+
+## 四、噬菌体治疗
+
+噬菌体是专一感染细菌、古菌和藻类等微生物的病毒，是地球上多样性最高和最丰富的生物体，是合成生物学研究中重要的模式生物。随着超级耐药菌威胁的日益严重，噬菌体治疗是一种有发展前景的方式。噬菌体疗法的主要优点在于:①具有很强的感染特异性，不会对宿主正常菌群有作用。②高效性，噬菌体的增殖能力强，能迅速、有效地清除感染细菌。③低毒性和不易产生耐药性。④多样性，噬菌体广泛存在，易分离、开发。⑤噬菌体个体微小，可渗透到普通药物分子无法穿透的区域，如血脑屏障。给药后，能遍布全身，迅速到达感染部位。⑥可个性化治疗，根据不同细菌的特点选择合适的病毒进行治疗。⑦具有宿主菌依赖性，随着宿主菌的清除而死亡，不会残留在体内。2014 年，噬菌体疗法被美国国家过敏和传染病研究所列为应对抗生素抗性的重要武器之一。目前，噬菌体疗法在临床治疗中已经取得了一些显著的成果。例如，噬菌体被用于治疗感染性疾病，如皮肤感染、呼吸道感染等。近年来，噬菌体疗法在治疗癌症、神经退行性疾病、痤疮等方面也开始崭露头角。然而噬菌体疗法临床上的大规模应用受到各种因素的制约，如高度特异性引起的宿主谱窄；噬菌体作用后，大量细菌的裂解可能导致内毒素和超抗原的释放，从而引起炎症等反应，出现严重的副作用；噬菌体可能会被免疫系统视为入侵者，使其难以维持有效浓度。因此，噬菌体的合成生物学改造为突破这些制约因素提供了无限可能。通过对噬菌体基因组进行编辑，乃至重新设计、合成噬菌体基因组，获得具有新功能的噬菌体，是当前噬菌体合成生物学研究的重要内容。目前利用合成生物学技术改造的噬菌体已成功提高了噬菌体侵染效率，拓宽了噬菌体宿主范围，降低了噬菌体毒性和免疫原性等<sup>[64]</sup>。
+
+近年来国内也有多个噬菌体治疗的报道。上海噬菌体与耐药研究所采用抗生素-噬菌体联合治疗方案成功治愈了多重耐药肺炎克雷伯菌尿路感染患者。中国科学院深圳先进技术研究院、深圳市人民医院和深圳市呼吸病研究所采取抗生素-针对耐药鲍曼不动杆菌的专一噬菌体联合雾化给药方式，经过连续两周的治疗，成功清除了患者肺部感染的耐药鲍曼不动杆菌<sup>[64]</sup>。
+
+## 第五节 人工细胞的诊疗
+
+细胞是人体结构和功能的基本单元，人体由数量庞大的细胞构成。据估计，成年男性约有 36 万亿个细胞，成年女性约有 28 万亿个细胞，儿童约有 17 万亿个细胞<sup>[65]</sup>。细胞对人体的健康状况起决定性作用，细胞功能异常或死亡会导致疾病发生。外源性回输正常细胞或经人工改造的“优化”细胞以替代功能异常或死亡的细胞，是一种新兴的治疗策略，称为细胞疗法。
+
+随着合成生物学的迅速发展，研究人员可以根据信号网络对活底盘细胞（如哺乳动物细胞）进行合理的重新设计，创造出各种新型疗法，以实现对疾病的诊断和治疗。在体外细胞模型和动物模型中，经基因线路改造的人工细胞在恶性肿瘤、代谢性疾病和再生医学等的治疗和干预等方面已取得重大突破，为进一步开展临床应用奠定了坚实的基础。目前，多种细胞疗法已经通过严格的新药审批和监管流程进入商业化使用，如改造 T 细胞治疗淋巴瘤，以及使用患者自体干细胞修复损伤的角膜上皮等。与生物制品和基因疗法相比，细胞疗法具有天然的定向能力，可以高度智能地感知和响应疾病状态。然而，细胞疗法依然面临一些共性的转化障碍，如安全性问题和高昂的制造成本。要实现细胞疗法的全面开发，研究人员仍需解决诸多难题，如增加细胞来源、提高存活率、定义治疗效能、阐明可复制药物的药代动力学属性、确保安全性、实现大规模制造等。利用合成生物学方法可以重编程天然细胞的功能以解决这些难题，使细胞疗法的临床应用更为广泛。
+
+## 一、人工细胞应用于癌症治疗
+
+T 细胞是人体重要的免疫细胞，可通过 T 细胞受体（TCR）识别被病原体感染的细胞或癌症细胞并将它们清除，因而在识别和抵御感染与异常细胞方面起着关键作用。然而，肿瘤细胞可以通过下调人类白细胞抗原（HLA）分子逃避 TCR 的识别，并通过多种方式抑制 T 细胞的激活。CAR 是包含抗原结合域和 T 细胞激活域的工程化受体。CAR-T 细胞疗法是从患者体内获取 T 细胞，通过基因工程使其表达识别肿瘤抗原的特异性 CAR，然后再输回到患者体内，以杀伤表面表达目标抗原的肿瘤细胞<sup>[66]</sup>。CAR-T 细胞疗法起源于 21 世纪初，使用抗体的 scFv靶向 B 细胞特异的表面抗原 CD19，以治疗 B 细胞淋巴瘤<sup>[67]</sup>。人工 CAR 的开发分为三代，第一代 CAR 仅包含 CD3ζ细胞内信号域，第二代 CAR 增加了共刺激信号域如 4-1BB 或 CD28，当前还在研究含有多个共刺激信号域的第三代 CAR <sup>[68]</sup>。CAR 中的 scFv 可识别肿瘤表面蛋白，因此 CAR-T 细胞的杀伤作用不依赖抗原的处理和呈递，也不受 HLA 表达下调的限制<sup>[68]</sup>。相较 TCR，CAR 可利用抗体的高亲和力特异性识别肿瘤相关抗原，且可靶向 TCR 难以识别的糖脂、异常糖基化蛋白及构象变异抗原。临床试验结果显示，CAR-T 细胞疗法可产生强大的抗肿瘤效应，美国 FDA 已批准靶向 CD19 的 CAR-T 细胞疗法用于急性淋巴细胞白血病和大 B 细胞淋巴瘤的治疗。
+
+CAR-T 细胞疗法已经步入商业化阶段。第一个被批准上市的 CAR-T 细胞疗法是 Novartis和宾夕法尼亚大学开发的用于治疗弥漫性大 B 细胞淋巴瘤（DLBCL）的靶向 CD19 的Kymriah。DLBCL 是非霍奇金淋巴瘤（NHL）的一种典型形式，占 NHL 的 40%。2017 年，美国 FDA 也批准了 Yescarta 用于治疗 DLBCL<sup>[69]</sup>。在临床研究中，使用靶向 CD19 的 CAR-T 细胞治疗 DLBCL 患者，有 25%的患者部分反应，50%以上完全反应。观察到 2 年以上的持续反应，说明 CAR-T 细胞的疗效显著<sup>[70]</sup>。然而，在 Yescarta 治疗的患者中观察到细胞因子风暴（13%），过度释放促炎细胞因子，说明安全性还有待进一步提高<sup>[71]</sup>。
+
+CAR-T 细胞疗法中的目标抗原选择对安全性和有效性都至关重要<sup>[72]</sup>。如果 CAR-T 细胞可以识别非恶性细胞表达的胞膜蛋白，则可能会发生严重的细胞毒性作用—脱靶效应<sup>[73]</sup>。理想的目标抗原应高度且稳定地表达于癌细胞表面，但不表达于正常细胞表面<sup>[74]</sup>。多发性骨髓瘤难以通过传统的化疗或干细胞移植治疗，CAR-T 细胞疗法在多发性骨髓瘤的临床研究中显示出治疗潜力。目前使用的抗原中，肿瘤坏死因子超家族成员 B 细胞成熟抗原（BCMA）是多发性骨髓瘤 CAR-T 细胞疗法最有希望的候选靶点。BCMA 主要表达于癌细胞，在正常细胞中的表达仅限于浆细胞和部分 B 细胞<sup>[75]</sup>。BCMA 是第一个用于 CAR-T 细胞疗法的多发性骨髓瘤靶点抗原，可以在患者体内引起系统性治疗反应。在 BCMA CAR-T 细胞的首个剂量爬坡临床试验中，12 名患者接受治疗，其中 2 名患者获得了较好的缓解，但治疗中存在与细胞因子风暴相关的毒性<sup>[76]</sup>。当前有多项关于 BCMA CAR-T 细胞安全性和疗效的临床试验正在进行或已完成，展现出良好的治疗潜力<sup>[77]</sup>。
+
+尽管 CAR-T 细胞疗法在治疗血液肿瘤方面取得了前景乐观的治疗结果，但在绝大多数的实体瘤治疗中疗效则非常有限。与血液瘤相比，实体瘤对 CAR-T 细胞疗法提出了独特的挑战:首先，实体瘤中高度的抗原异质性为其提供了逃避 CAR-T 细胞治疗的有效机制，而 CAR-T 细胞疗法通常针对单一抗原，无法识别肿瘤中的所有癌细胞。其次，实体瘤周围常存在物理屏障，如胶原蛋白等，这有效阻止了 T 细胞的浸润。此外，T 细胞还面对高度免疫抑制的实体瘤肿瘤微环境，这最终导致 T 细胞耗竭和功能失调。到目前为止，CAR-T 细胞疗法还没有很好地克服实体瘤的这些障碍<sup>[78]</sup>。
+
+## 二、人工细胞应用于感染性疾病治疗
+
+鉴于 CAR-T 细胞治疗血液肿瘤的成功，研究人员试图将其应用于其他疾病。由于 T 细胞在抗病毒感染中发挥着重要作用，CAR-T 细胞被考虑用于治疗艾滋病毒、乙型肝炎病毒、丙型肝炎病毒、人类巨细胞病毒、EB 病毒和 SARS-CoV-2 等病毒性传染病，其中大多数临床试验是针对艾滋病病毒的。
+
+尽管联合抗逆转录病毒疗法已经显著提高了 HIV 感染者的生活质量<sup>[79]</sup>，但由于潜伏感染的记忆 CD4+T 细胞仍存在，尚不能根治 HIV 感染，而且 HIV 在潜伏状态下长期存活<sup>[80,81]</sup>。因此，克服 HIV 潜伏状态成为病毒消除的主要挑战。研究人员提出了使用 CAR-T 细胞疗法来解决这一问题的可能性。CAR-T 细胞不依赖于主要组织相容性复合体（MHC）发挥功能，因此可以克服 HIV 感染细胞下调 MHC-Ⅰ表达的逃避机制<sup>[82]</sup>。此外，CAR-T 细胞可以产生功能性记忆 T 细胞，从而在感染再次发生时迅速作出反应<sup>[83]</sup>。经过进一步研究还发现 CAR-T 细胞在脑脊液中也能检测到，这是 HIV 潜伏感染的重要部位之一，提示 CAR-T 细胞可能在 HIV 潜伏库中发挥作用<sup>[84]</sup>。然而，早期的 HIV 特异性 CAR-T 细胞设计以 CD4 受体为基础，并未取得成功。目前，主要用于将抗 HIV CAR 的结构设计成广谱中和抗体（bNAb）。广谱中和抗体通过靶向 HIV 包膜糖蛋白（Env）来抑制大多数循环的 HIV 毒株，因此设计 bNAb-CAR 对 HIV治疗似乎是有益的<sup>[85]</sup>。
+
+综上所述，CAR-T 细胞疗法在解决 HIV 潜伏感染问题方面具有潜在的应用价值，特别是通过使用 bNAb-CAR 来靶向 HIV 感染细胞。这一领域的研究为寻找根治 HIV 的新方法提供了有希望的方向。
+
+## 三、人工细胞应用于代谢性疾病治疗
+
+人工设计的细胞能够感知代谢性疾病的特异信号，触发特异性表达报告分子或释放治疗药物的开关，从而实现对人体生理代谢状态的监测，以及对代谢性疾病的诊断与治疗。
+
+胰岛 B 细胞能够合成和分泌胰岛素<sup>[86]</sup>。作为哺乳动物唯一的胰岛素合成部位，胰岛 B 细胞可以通过糖酵解和刺激-感应-分泌耦合过程等信号转导途径感知血糖浓度<sup>[87,88]</sup>。胰岛素的分泌过程包括以下步骤:血糖通过细胞膜运输进入胰岛 B 细胞内并在细胞内经过糖酵解代谢，导致细胞膜去极化、能量生成和 K+ATP 通道的关闭，这将激活钙通道 Cav1.3 诱导钙内流并促使胰岛素颗粒的分泌。1 型糖尿病患者的胰岛 B 细胞胰岛素合成功能缺陷，2 型糖尿病患者的体细胞胰岛素敏感性降低，都会导致血糖浓度过高。Xie 等利用合成生物学多重筛选方法，将人胚肾细胞系 HEK-293 工程化为能够感知血糖浓度并分泌胰岛素的细胞。研究者证明 Cav1.3的过表达使细胞具备胰岛 B 细胞样葡萄糖传感功能。Cav1.3 控制的钙与合成的 $\mathbf { C a } ^ { 2 + }$ 诱导启动子的组合实现了通过调节的体内转录响应并监测葡萄糖水平。在成功构建 HEK-293-B 细胞后，研究者通过将细胞植入小鼠体内，发现这种葡萄糖响应胰岛素产生的 HEK-293-B 细胞系能维持小鼠血糖稳态超过 3 周，并在 3 天内自动纠正 1 型糖尿病小鼠的高血糖<sup>[89]</sup>。HEK-293- B 细胞的优势是显而易见的。与灵长类动物的胰岛相比，HEK-293-B 细胞在稳定 1 型糖尿病小鼠餐后血糖方面表现更为突出。此外，HEK-293-B 细胞更容易在体外大量培养，可实现规模化生产，具有良好的产品纯度、稳定性和质量。
+
+我国科研团队设计并构建了一个由人胰岛素受体和 MAPK 信号转导通路组成的合成传感器，可以检测血液中的胰岛素水平。将这个传感器与合成的 TetR-ELK1 转录因子连接，当检测到高胰岛素时启动下游基因的表达，实现了高胰岛素自动触发脂联素的表达。该电路的治疗效果在瘦素缺乏、瘦素受体缺乏和饮食诱导等三种胰岛素抵抗小鼠模型中得到验证。植入携带电路的微囊化细胞后，小鼠血液中的脂联素浓度升高，胰岛素水平、血脂和胰岛素抵抗指数降低。植入稳定表达电路的 HEK-293 细胞系 $\mathrm{HEK}_{\mathrm{IR-Adipo}}$ 后也观察到类似的治疗效果。该自调节电路可以自动检测高胰岛素并释放适量的脂联素，避免治疗剂量过高的副作用<sup>[90]</sup>。该团队还设计了一个齐墩果酸（oleanolic acid，OA）诱导型、多西环素（doxycycline，Dox）抑制型的基因表达模块，通过 OA 诱导短效 GLP-1 的表达来治疗肝源性糖尿病。在体内和体外实验中证明了该基因表达模块可以准确调控药物的表达。仅 OA 诱导短效 GLP-1 的表达可以同时缓解肝源性糖尿病小鼠的多种症状。这种将植物提取物控制蛋白质药物表达的策略，可以最大限度地利用生物系统的治疗潜力，为合成生物学在分子医学中的转化应用提供了新思路<sup>[91]</sup>。
+
+## 四、人工诱导多能干细胞在医学中的应用
+
+干细胞具有自我更新和分化能力，是替代损伤细胞的理想来源。然而，人体内绝大多数细胞是终末分化的细胞，干细胞数量极少。利用合成生物学方法可以通过过表达一系列去分化相关基因来生成人类干细胞，其中的一个应用是诱导多能干细胞（iPSC）<sup>[92]</sup>。iPSC 是从体细胞生成的多能干细胞，由日本科学家山中伸弥的实验室发现，通过引入 Oct3/4、Sox2、c-Myc和 Klf4 这 4 个转录因子可以将成纤维细胞转变为类似胚胎干细胞的细胞<sup>[93]</sup>，这些细胞可以再分化为血细胞、骨细胞或神经细胞，用于治疗各种组织和器官的损伤。与胚胎干细胞不同，iPSC 的生成不需要使用人类胚胎，避免了伦理方面的争议。此外，自体体细胞分化的 iPSC 还可以避免免疫排斥<sup>[94]</sup>。
+
+iPSC 具有自我更新和连续传代的能力，因此将患者的体细胞样本诱导生成 iPSC 可以用于医学研究。目前，国外已经建立了唐氏综合征和多囊肾病的 iPSC 细胞系医学研究资源库。一项由牛津大学牵头的名为 StemBANCC 的跨国合作项目建立了 1500 株患者来源的 iPSC 细胞系以进行药物筛选，助力新药研发<sup>[95]</sup>。多个以 iPSC 为研究模型的高通量药物筛选和分析研究正在全球范围内广泛开展<sup>[96]</sup>。
+
+iPSC 还被广泛应用于组织再生和治疗的开发中。为了满足输血的需求，研究人员成功地从 iPSC 中获得了红细胞<sup>[97]</sup>和血小板<sup>[98]</sup>。当在癌症患者的免疫治疗中需要大量的自然杀伤细胞时，可以利用 iPSC 来获得这些细胞，以克服它们在体外复制能力差的缺陷<sup>[99]</sup>。在小鼠研究中，研究人员观察到 iPSC 具有抗衰老的效应<sup>[100]</sup>。此外，化学诱导 iPSC 分化为心肌细胞已被广泛使用。这些 iPSC 来源的心肌细胞携带患者本身的遗传信息，可以建立长 QT 综合征和缺血性心脏病等疾病模型<sup>[101]</sup>。脐血细胞可以被诱导为 iPSC，用于治疗小鼠视网膜功能障碍<sup>[102]</sup>。再分化的 iPSC 还可以用于治疗脑部损伤，治疗后大鼠和猴子的运动功能得以恢复<sup>[103]</sup>。
+
+器官移植技术迅速发展而器官供体长期紧缺。通过 iPSC 实现器官再生是目前的研究热点之一。运用山中伸弥的方法，可以通过体外培育 iPSC 并将其诱导成为心肌细胞，使小鼠胎儿期心脏再生为正常心脏<sup>[104]</sup>。此外，研究人员还通过 iPSC、内皮干细胞和间充质干细胞三种细胞共培养，生成了三维血管化的、具有生物学功能的人类肝脏。这种仿生过程使肝芽能自行包装成一个复杂的器官，并成功移植到啮齿动物体内。移植后的“肝脏”能够表达肝脏特异的蛋白质并具有药物代谢功能，还可救治药物诱导的致命肝功能衰竭<sup>[105]</sup>。由此可见，iPSC 在器官再生方面展现出了巨大的应用潜力。
+
+可喜的是，部分 iPSC 技术已经进入了临床试验阶段。例如，大阪大学的一个研究组利用iPSC 分化生成“心肌薄片”，将其移植到重度心力衰竭患者体内，该临床研究计划已在日本获得批准，正在招募 92 名患者<sup>[106]</sup>。一个正在进行的Ⅰ期临床试验利用从 6 名患者皮肤细胞重编程的视网膜上皮细胞（RPC）替代病变的 RPC，已表现出良好的安全性，其有效性有待进一步的临床研究<sup>[107]</sup>。类似地，利用自体 iPSC 分化的造血干细胞治疗地中海贫血的Ⅰ期临床试验也正在进行中，正在招募患者<sup>[108]</sup>。然而，到目前为止，还没有基于 iPSC 的疗法进入Ⅲ期临床研究，主要担忧 iPSC 的安全性问题，存在致癌可能:在注入 iPSC 的小鼠体内观察到了畸胎瘤。此外，诱导效率低、基因组重编程不完全、免疫原性及载体基因组整合也都是令业界担忧的问题。因此，iPSC 的大规模临床应用仍需更多努力。
+
+## 五、人工细胞在组织工程中的应用
+
+组织工程是利用细胞培养技术在体外人工控制细胞增殖、分化并生长成需要的组织，使之工程化批量产出，用于修复由意外损伤等引起的功能丧失的组织，以满足临床需要。合成生物学可以通过设计细胞的信号网络来控制和指导细胞功能，从而实现定制化的组织工程，为医学研究开辟新的可能性。
+
+通过过表达功能基因或转录因子使干细胞分化生成特定的组织细胞，这是组织工程中一种简单常见的方法<sup>[109]</sup>。然而，基因过表达缺乏反馈控制机制，无法避免过度表达导致的细胞毒性。例如，抗凋亡因子 Bcl-2 的过量表达可能导致肿瘤发生风险<sup>[110]</sup>。使用 CRISPR/dCas9 生物开关或合成 mRNA 可以实现基因在时间和空间上的特异性表达，从而解决这个问题<sup>[111,112]</sup>。此外，引入基因转录检测小分子或细胞表面蛋白也有较多研究，如 Tet 调控系统。Gersbach 等设计了一个 Tet-off 系统来控制 Runx2 因子的表达，以调节体内成骨过程<sup>[113]</sup>。Jo 等采用 Tet-on系统在工程化大鼠软骨细胞中特异性表达维持软骨细胞活力的关键转录因子 Sox9，从而激活Ⅱ型胶原和软骨蛋白的表达。在植入的细胞支架中注射 Tet 系统诱导剂多西霉素（Dox）后，软骨细胞降解受到抑制<sup>[114]</sup>。Tet-on 系统也用于过表达白细胞介素-1 受体拮抗剂（IL-1Ra）的基因，以调节软骨发生过程中的炎症反应<sup>[115]</sup>。Tet 开关系统帮助人们实现了组织工程中基因表达的时间可控性。
+
+光遗传学激活系统可在组织工程中实现细胞行为的时空可控性。光感应蛋白能响应紫外线和远红外线的激发，使光感应成为一种可行的激活方式<sup>[116]</sup>。通过构建光遗传学回路，使光敏感蛋白与转录因子连接构成光遗传学激活系统，已成功应用于调控细胞排列<sup>[117]</sup>。Sakar 等在骨骼肌母细胞中表达了光敏钾离子通道，使其响应蓝光脉冲的刺激而收缩。多个表达该通道的成熟骨骼肌可以被精确协调激活。此外，研究者使用了一种高通量“肌肉芯片”设备，将人工肌母细胞制成了成熟、有功能的三维肌肉微组织。该设备不仅为肌母细胞提供了肌肉排列、融合和成熟所需的受控应力，还可测量微组织产生的力和表征肌管的形态<sup>[118]</sup>。在组织工程中利用光控制工程化的骨骼肌细胞，可通过对光敏感离子通道和下游元件的激发实现远程激活或抑制基因。总的来说，光遗传学为组织工程提供了在空间和时间上精确控制细胞行为的能力，是组织工程一个有前景的方向。
+
+利用合成生物学方法还可以设计人工受体，如 G 蛋白偶联受体（GPCR）<sup>[119]</sup>和 synNotch受体<sup>[120]</sup>，以控制细胞的迁移和自组装。研究人员成功设计了可以感应氯氮平-N-氧化物浓度的人工 GPCR—DREADD（designer receptor exclusively activated by designer drug），并利用浓度梯度引导细胞迁移<sup>[121]</sup>，这种技术可用于创伤愈合和组织再生。另外，利用 synNotch 方法也可以编程细胞之间的黏附信号，从而引导成纤维细胞组装成多层结构并极化<sup>[122]</sup>。这些研究展示了利用合成生物学构建人工细胞，实现对其迁移和自组装的精确控制，在组织工程等领域具有重要的应用前景。
+
+总体来说，生物电路的表达可以实现细胞的功能化，以应用于组织工程中。在这个领域已开发了多种合成生物学的设计思路，如时间和空间依赖的基因表达及感应和自体调控系统等。尽管从合成组织到临床应用还面临着许多障碍，但这些设计思路和基础研究都为将来的研究奠定了基础。
+
+## 思 考 题
+
+1. 请简述合成生物学在医学中的主要应用。
+3. 请举例说明合成生物学在药物合成中的主要应用。
+4. 请简述工程细菌应用于癌症诊疗的优点和注意事项。
+5. 简述细菌肿瘤治疗的可能机制及其发展方向。
+6. 试设计一个基因线路表达抗肿瘤效应分子。
+7. 请举例说明合成病毒在基因治疗中的主要应用。
+8. 在医学领域中使用的工程细胞主要有哪些？
+
+2. 医学合成生物学的主要研究内容有哪些？请简述工程活体治疗的原理。
+
+## 参考文献
+
+［1］Liu CZ，Zhou HY，Zhao Y. An effective method for fast determination of artemisinin in Artemisia annua L. by high performance liquid chromatography with evaporative light scattering detection. Analytica Chimica Acta，2007，581（2）:298-302
+［2］Hong GJ，Hu WL，Li JX，et al. Increased accumulation of artemisinin and anthocyanins in Artemisia annua expressing the arabidopsis blue light receptor cry1. Plant Molecular Biology Reporter，2009，27（3）:334-341
+［3］Ro DK，Paradise EM，Ouellet M，et al. Production of the antimalarial drug precursor artemisinic acid in engineered yeast. Nature，2006，440（7086）:940-943
+［4］Ajikumar PK，Xiao WH，Tyo KE，et al. Isoprenoid pathway optimization for taxol precursor overproduction in Escherichia coli. Science，2010，330（6000）:70-74
+［5］Wang P，Wei W，Ye W，et al. Synthesizing ginsenoside rh2 in Saccharomyces cerevisiae cell factory at highefficiency. Cell Discovery，2019，5:5
+［6］Shi Y，Wang D，Li R，et al. Engineering yeast subcellular compartments for increased production of the lipophilic natural products ginsenosides. Metabolic Engineering，2021，67:104-111
+［7］Galanie S，Thodey K，Trenchard IJ，et al. Complete biosynthesis of opioids in yeast. Science，2015，349（6252）:1095-1100
+［8］Nakagawa A，Matsumura E，Koyanagi T，et al. Total biosynthesis of opiates by stepwise fermentation using engineered Escherichia coli. Nat Commun，2016，7:10390
+［9］Hafner J，Payne J，MohammadiPeyhani H，et al. A computational workflow for the expansion of heterologous biosynthetic pathways to natural product derivatives. Nat Commun，2021，12（1）:1760
+［10］Luo X，Reiter MA，d’Espaux L，et al. Complete biosynthesis of cannabinoids and their unnatural analogues in yeast. Nature，2019，567（7746）:123-126
+［11］Adams AM，Kaplan NA，Wei Z，et al. In vivo production of psilocybin in E. coli. Metabolic Engineering，2019，56:111-119
+［12］Milne N，Thomsen P，Mølgaard Knudsen N，et al. Metabolic engineering of Saccharomyces cerevisiae for the de novo production of psilocybin and related tryptamine derivatives. Metabolic Engineering，2020，60:25-36
+［13］Li W，Zhou Z，Li X，et al. Biosynthesis of plant hemostatic dencichine in Escherichia coli. Nat Commun，2022，13（1）:5492
+［14］Savile CK，Janey JM，Mundorff EC，et al. Biocatalytic asymmetric synthesis of chiral amines from ketones applied to sitagliptin manufacture. Science，2010，329（5989）:305-309
+［15］Hong SH，Kwon YC，Jewett MC. Non-standard amino acid incorporation into proteins using Escherichia coli cell-free protein synthesis. Frontiers in Chemistry，2014，2:34
+［16］Gan R，Jewett MC. A combined cell-free transcription-translation system from Saccharomyces cerevisiae for rapid and robust protein synthe. Biotechnology Journal，2014，9（5）:641-651
+［17］Shimizu Y，Inoue A，Tomari Y，et al. Cell-free translation reconstituted with purified components. Nature Biotechnology，2001，19（8）:751-755
+［18］Kanter G，Yang J，Voloshin A，et al. Cell-free production of scFv fusion proteins:An efficient approach for personalized lymphoma vaccines. Blood，2007，109（8）:3393-3399
+［19］Lu Y，Welsh JP，Swartz JR. Production and stabilization of the trimeric influenza hemagglutinin stem domain for potentially broadly protective influenza vaccines. Proc Natl Acad Sci USA，2014，111（1）:125-130
+［20］Tsuboi T，Takeo S，Iriko H，et al. Wheat germ cell-free system-based production of malaria proteins for discovery of novel vaccine candidates. Infect Immun，2008，76（4）:1702-1708
+［21］Jaroentomeechai T，Stark JC，Natarajan A，et al. Single-pot glycoprotein biosynthesis using a cell-free transcription-translation system enriched with glycosylation machinery. Nat Commun，2018，9（1）:2686
+［22］Richardson MA，Ramirez T，Russell NC，et al. Coley toxins immunotherapy:A retrospective review. Alternative Therapies in Health and Medicine，1999，5（3）:42-47
+［23］Wei XY，Du M，Chen ZY，et al. Recent advances in bacteria-based cancer treatment. Cancers，2022，14（19）:4945
+［24］Zhou SB，Gravekamp C，Bermudes D，et al. Tumour-targeting bacteria engineered to fight cancer. Nat Rev Cancer，2018，18（12）:727-743
+［25］Liang K，Liu Q，Li P，et al. Genetically engineered Salmonella typhimurium:Recent advances in cancer therapy. Cancer Lett，2019，448:168-181
+［26］Danino T，Prindle A，Kwong GA，et al. Programmable probiotics for detection of cancer in urine. Science Translational Medicine，2015，7（289）:289ra284
+［27］Royo JL，Becker PD，Camacho EM，et al. In vivo gene regulation in Salmonella spp. by a salicylate-dependent
+control circuit. Nat Methods，2007，4（11）:937-942
+［28］Din MO，Danino T，Prindle A，et al. Synchronized cycles of bacterial lysis for in vivo delivery. Nature，2016，536（7614）:81-85
+［29］Yu YA，Shabahang S，Timiryasova TM，et al. Visualization of tumors and metastases in live animals with bacteria and vaccinia virus encoding light-emitting proteins. Nature Biotechnology，2004，22（3）:313-320
+［30］Courbet A，Endy D，Renard E，et al. Detection of pathological biomarkers in human clinical samples via amplifying genetic switches and logic gates. Science Translational Medicine，2015，7（289）:289ra283
+［31］Duan FF，Liu JH，March JC. Engineered commensal bacteria reprogram intestinal cells into glucose-responsive insulin-secreting cells for the treatment of diabetes. Diabetes，2015，64（5）:1794-1803
+［32］Arora T，Wegmann U，Bobhate A，et al. Microbially produced glucagon-like peptide 1 improves glucose tolerance in mice. Molecular Metabolism，2016，5（8）:725-730
+［33］Verma A，Zhu P，Xu K，et al. Angiotensin-（1-7）expressed from lactobacillus bacteria protect diabetic retina in mice. Translational Vision Sience & Technology，2020，9（13）:20
+［34］Lin Y，Krogh-Andersen K，Pelletier J，et al. Oral delivery of pentameric glucagon-like peptide-1 by recombinant lactobacillus in diabetic rats. PLoS ONE，2016，11（9）:e0162733
+［35］Takiishi T，Korf H，van Belle TL，et al. Reversal of autoimmune diabetes by restoration of antigen-specific tolerance using genetically modified lactococcus lactis in mice. J Clin Invest，2012，122（5）:1717-1725
+［36］He M，Shi B. Gut microbiota as a potential target of metabolic syndrome:The role of probiotics and prebiotics. Cell & Bioscience，2017，7（1）:54
+［37］Chen Z，Guo L，Zhang Y，et al. Incorporation of therapeutically modified bacteria into gut microbiota inhibits obesity. J Clin Invest，2014，124（8）:3391-3406
+［38］Kurtz CB，Millet YA，Puurunen MK，et al. An engineered E. coli Nissle improves hyperammonemia and survival in mice and shows dose-dependent exposure in healthy humans. Science Translational Medicine，2019，11（475）:eaau7975
+［39］Isabella VM，Ha BN，Castillo MJ，et al. Development of a synthetic live bacterial therapeutic for the human metabolic disease phenylketonuria. Nature biotechnology，2018，36（9）:857-864
+［40］Cusi K，Isaacs S，Barb D，et al. American association of clinical endocrinology clinical practice guideline for the diagnosis and management of nonalcoholic fatty liver disease in primary care and endocrinology clinical settings:Co-sponsored by the american association for the study of liver diseases（AASLD）. Endocrine Practice:Official Journal of the American College of Endocrinology and the American Association of Clinical Endocrinologists，2022，28（5）:528-562
+［41］Lu J，Zhu X，Zhang C，et al. Co-expression of alcohol dehydrogenase and aldehyde dehydrogenase in bacillus subtilis for alcohol detoxification. Food and Chemical Toxicology:An International Journal Published for the British Industrial Biological Research Association，2020，135:110890
+［42］Hendrikx T，Duan Y，Wang Y，et al. Bacteria engineered to produce IL-22 in intestine induce expression of reg3g to reduce ethanol-induced liver disease in mice. Gut，2019，68（8）:1504-1515
+［43］Jakubczyk D，Leszczyńska K，Górska S. The effectiveness of probiotics in the treatment of inflammatory bowel disease（IBD）—a critical review. Nutrients，2020，12（7）:1973
+［44］Praveschotinunt P，Duraj-Thatte AM，Gelfat I，et al. Engineered E. coli Nissle 1917 for the delivery of matrixtethered therapeutic domains to the gut. Nat Commun，2019，10（1）:5580
+［45］Hwang IY，Koh E，Wong A，et al. Engineered probiotic Escherichia coli can eliminate and prevent pseudomonas aeruginosa gut infection in animal models. Nat Commun，2017，8:15028
+［46］Yan X，Liu XY，Zhang D，et al. Construction of a sustainable 3-hydroxybutyrate-producing probiotic Escherichia coli for treatment of colitis. Cellular & Molecular Immunology，2021，18（10）:2344-2357
+［47］Wang S，Dos-Santos ALA，Huang W，et al. Driving mosquito refractoriness to plasmodium falciparum with engineered symbiotic bacteria. Science，2017，357（6358）:1399-1402
+［48］Shalhout SZ，Miller DM，Emerick KS，et al. Therapy with oncolytic viruses:Progress and challenges. Nature Reviews Clinical Oncology，2023，20（3）:160-177
+［49］Harrington K，Freeman DJ，Kelly B，et al. Optimizing oncolytic virotherapy in cancer treatment. Nature Reviews Drug Discovery，2019，18（9）:689-706
+［50］Soliman H，Hogue D，Han H，et al. Oncolytic T-Vec virotherapy plus neoadjuvant chemotherapy in nonmetastatic triple-negative breast cancer:A phase 2 trial. Nature Medicine，2023，29（2）:450-457
+［51］Azad T，Rezaei R，Singaravelu R，et al. Synthetic virology approaches to improve the safety and efficacy of oncolytic virus therapies. Nat Commun，2023，14（1）:3035
+［52］Huang H，Liu Y，Liao W，et al. Oncolytic adenovirus programmed by synthetic gene circuit for cancer immunotherapy. Nat Commun，2019，10（1）:4801
+［53］Bulcha JT，Wang Y，Ma H，et al. Viral vector platforms within the gene therapy landscape. Signal Transduct Target Ther，2021，6（1）:53
+［54］Burnett JR，Hooper AJ. Alipogene tiparvovec，an adeno-associated virus encoding the Ser（447）X variant of the human lipoprotein lipase gene for the treatment of patients with lipoprotein lipase deficiency. Current Opinion in Molecular Therapeutics，2009，11（6）:681-691
+［55］Russell S，Bennett J，Wellman JA，et al. Efficacy and safety of voretigene neparvovec（AAV2-hRPE65v2）in patients with RPE65-mediated inherited retinal dystrophy:A randomised，controlled，open-label，phase 3 trial. Lancet（London，England），2017，390（10097）:849-860
+［56］Mendell JR，Al-Zaidy S，Shell R，et al. Single-dose gene-replacement therapy for spinal muscular atrophy. The New England Journal of Medicine，2017，377（18）:1713-1722
+［57］Muruve DA. The innate immune response to adenovirus vectors. Human Gene Therapy，2004，15（12）:1157-1166
+［58］Peng Z. Current status of gendicine in china:Recombinant human ad-p53 agent for treatment of cancers. Human Gene Therapy，2005，16（9）:1016-1027
+［59］Heise C，Sampson-Johannes A，Williams A，et al. ONYX-015，an E1B gene-attenuated adenovirus，causes tumor-specific cytolysis and antitumoral efficacy that can be augmented by standard chemotherapeutic agents. Nature Medicine，1997，3（6）:639-645
+［60］Maude SL，Frey N，Shaw PA，et al. Chimeric antigen receptor t cells for sustained remissions in leukemia. The New England Journal of Medicine，2014，371（16）:1507-1517
+［61］Zhao Z，Anselmo AC，Mitragotri S. Viral vector-based gene therapies in the clinic. Bioengineering & Translational Medicine，2022，7（1）:e10258
+［62］Si L，Xu H，Zhou X，et al. Generation of influenza a viruses as live but replication-incompetent virus vaccines. Science，2016，354（6316）:1170-1173
+［63］Li P，Ke X，Wang T，et al. Zika virus attenuation by codon pair deoptimization induces sterilizing immunity
+in mouse models. Journal of Virology，2018，92（17）:E00701-E00718
+［64］袁盛建，马迎飞. 噬菌体合成生物学研究进展和应用. 合成生物学，2020，1:635-655
+［65］Hatton IA，Galbraith ED，Merleau NSC，et al. The human cell count and size distribution. Proc Natl Acad Sci USA，2023，120（39）:e2303077120
+［66］Feins S，Kong W，Williams EF，et al. An introduction to chimeric antigen receptor（CAR）T-cell immunotherapy for human cancer. American Journal of Hematology，2019，94（S1）:S3-S9
+［67］Sadelain M，Rivière I，Brentjens R. Targeting tumours with genetically enhanced T lymphocytes. Nature Reviews Cancer，2003，3（1）:35-45
+［68］Sadelain M，Brentjens R，Rivière I. The basic principles of chimeric antigen receptor design. Cancer Discovery，2013，3（4）:388-398
+［69］Locke FL，Ghobadi A，Jacobson CA，et al. Long-term safety and activity of axicabtagene ciloleucel in refractory large B-cell lymphoma（ZUMA-1）:A single-arm，multicentre，phase 1-2 trial. The Lancet Oncology，2019，20（1）:31-42
+［70］Haslauer T，Greil R，Zaborsky N，et al. CAR T-cell therapy in hematological malignancies. International Journal of Molecular Sciences，2021，22（16）:8996
+［71］Shimabukuro-Vornhagen A，Gödel P，Subklewe M，et al. Cytokine release syndrome. J Immunother Cancer，2018，6（1）:56
+［72］Sadelain M，Rivière I，Riddell S. Therapeutic T cell engineering. Nature，2017，545（7655）:423-431
+［73］Brudno JN，Kochenderfer JN. Recent advances in CAR T-cell toxicity:Mechanisms，manifestations and management. Blood Reviews，2019，34:45-55
+［74］Carpenter RO，Evbuomwan MO，Pittaluga S，et al. B-cell maturation antigen is a promising target for adoptive T-cell therapy of multiple myeloma. Clinical Cancer Research:An Official Journal of the American Association for Cancer Research，2013，19（8）:2048-2060
+［75］Novak AJ，Darce JR，Arendt BK，et al. Expression of BCMA，TACI，and BAFF-R in multiple myeloma:A mechanism for growth and survival. Blood，2004，103（2）:689-694
+［76］Ali SA，Shi V，Maric I，et al. T cells expressing an anti-b-cell maturation antigen chimeric antigen receptor cause remissions of multiple myeloma. Blood，2016，128（13）:1688-1700
+［77］Raje N，Berdeja J，Lin Y，et al. Anti-BCMA CAR T-cell therapy BB2121 in relapsed or refractory multiple myeloma. The New England Journal of Medicine，2019，380（18）:1726-1737
+［78］Hou AJ，Chen LC，Chen YY. Navigating CAR-T cells through the solid-tumour microenvironment. Nature Reviews Drug Discovery，2021，20（7）:531-550
+［79］Murphy EL，Collier AC，Kalish LA，et al. Highly active antiretroviral therapy decreases mortality and morbidity in patients with advanced HIV disease. Annals of Internal Medicine，2001，135（1）:17-26
+［80］Sadowski I，Hashemi FB. Strategies to eradicate HIV from infected patients:Elimination of latent provirus reservoirs. Cellular and Molecular Life Sciences:CMLS，2019，76（18）:3583-3600
+［81］Finzi D，Hermankova M，Pierson T，et al. Identification of a reservoir for HIV-1 in patients on highly active antiretroviral therapy. Science，1997，278（5341）:1295-1300
+［82］Schwartz O，Maréchal V，le Gall S，et al. Endocytosis of major histocompatibility complex class I molecules is induced by the HIV-1 nef protein. Nature Medicine，1996，2（3）:338-342
+［83］Scholler J，Brady TL，Binder-Scholl G，et al. Decade-long safety and function of retroviral-modified chimeric

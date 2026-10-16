@@ -1,0 +1,424 @@
+立发挥功能的不同组件从同一个转录本中分割开（如 sgRNA 需要释放出来与 dCas9 结合，而荧光蛋白报告基因需要进一步被翻译为蛋白质）；④报告基因上可以融合正交的降解标签来降低交叉干扰（cross-talk），并且 dCas9 与 Csy4 均使用组成型启动子进行表达来保证其恒定的胞内浓度<sup>[56]</sup>。基于上述的设计原则，通过 sgRNA-bs 之间的正交相互作用，便可获得具有特殊功能的基因装置。例如，利用两对正交的“sgRNA-bs”使 N1 与 N2 两个节点（node）间产生相互的抑制作用，可以得到具有双稳态（bistability）性质的拨动开关（toggle switch，TS）（图 5-18B）。该基因装置在控制器质粒（含有两个诱导表达且正交的 sgRNA）的作用下可使报告基因表达水平表现出“高”和“低”两个稳定状态。当首先使用诱导剂 1 进行处理后即使将该诱导剂移除，报告基因也可以维持在“低”表达水平，而随后使用诱导剂 2 进行处理后再将该诱导剂移除，报告基因可以切换并维持在“高”表达水平；若进行相反的处理过程（诱导剂 2-无诱导剂-诱导剂 1-无诱导剂），则可以实现由“高”表达水平到“低”表达水平两个稳定状态的切换。
+
+A
+
+![](images/page_160_image_4.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["诱导剂"] --> B["N1"]
+  B -.-> C["sg1"]
+  C -.-> D["N2"]
+```
+</details>
+
+![](images/page_160_image_5.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  subgraph N1
+  A["sgRNA-1"] -->|"Cys4切割"| B["报告基因1"]
+  B -->|"降解标签1"| C["终止子"]
+    D["RBS"] -.->|"Cys4切割"| E["报告基因2"]
+  end
+  subgraph N2
+  F["bs-1 (sgRNA1结合)"] -->|"Cys4切割"| G["报告基因2"]
+    H["降解标签2"] -.->|"降解标签2"| I["终止子"]
+  end
+  C -->|"P_i"| A
+  C -->|"P_c"| F
+  E -->|"P_i"| F
+  E -->|"P_c"| H
+```
+</details>
+
+![](images/page_160_image_6.jpg)
+
+<details>
+<summary>text_image</summary>
+
+Pex
+dCas9
+Pcy
+Csy4
+</details>
+
+P1. 诱导型启动子
+
+N1. 节点1
+
+P. 组成型启动子
+
+N2. 节点2
+
+B
+
+![](images/page_160_image_12.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["控制器质粒"] --> B["sgRNA-2"]
+  A --> C["sgRNA-1"]
+  B --> D["P_i2"]
+  C --> E["P_i1"]
+  B -.-> F["N1"]
+  C -.-> F
+  B -.-> G["bs-2"]
+  C -.-> H["bs-1"]
+  B -.-> I["sgRNA-1"]
+  C -.-> J["sgRNA-2"]
+  B -.-> K["P_c1"]
+  C -.-> L["P_c2"]
+```
+</details>
+
+![](images/page_160_chart_13.jpg)
+
+<details>
+<summary>line</summary>
+
+| 时间/h | 诱导剂1 (报告基因表达水平) | 诱导剂2 (报告基因表达水平) |
+| --- | --- | --- |
+| 10 | ~10 | — |
+| 20 | ~5 | — |
+| 30 | — | ~95 |
+| 40 | — | ~96 |
+</details>
+
+![](images/page_160_chart_14.jpg)
+
+<details>
+<summary>line</summary>
+
+| 时间/h | 诱导剂2 | 诱导剂1 |
+| --- | --- | --- |
+| 10 | 100 | — |
+| 20 | — | 100 |
+| 30 | — | ~15 |
+| 40 | — | ~20 |
+</details>
+
+![](images/page_160_image_15.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  N1["N1"] -->|"sg1"| N2["N2"]
+  N2 -->|"sg1"| N1
+  N1 -.->|"sg2"| N1
+  N2 -.->|"sg2"| N2
+  N1 -.->|"诱导剂2"| N1
+  N2 -.->|"诱导剂1"| N2
+```
+</details>
+
+图 5-18 CRISPRi 衍生基因装置的设计原则及拨动开关的构建
+
+基于 CRISPRi 系统还可以构建包括三个节点的具有空间或时间特征的基因装置。例如，通过两个 sgRNA 及其 bs 能够得到包含 N1、N2 及 N3 三个节点的 2 型非相干前馈回路（incoherent type 2 feedforward loop，I2-FFL），在该基因装置中，N1 使用诱导型启动子表达且会对 N2 与 N3 的表达产生抑制作用，N2 与 N3 均使用组成型启动子表达且 N2 会抑制 N3 的表达（图 5-19A）。当分别使用三个荧光蛋白报告基因对该 I2-FFL 装置中三个节点的表达进行表征时，随着诱导剂浓度的升高，N1 中的报告基因表达逐渐增强，N2 中的报告基因表达逐渐减弱，N3 中的报告基因表达呈现先增强后减弱的趋势且在 N1 与 N2 间的开放窗口处出现峰值；此外，将包含上述基因装置的细胞涂布在固体平板上并在其中央加入诱导剂，在诱导剂由平板中心向四周扩散形成的浓度梯度作用下，平板上可以出现一个具有“黄-绿-蓝”径向渐变的空间特征图案。利用三对相互正交的“sgRNA-bs”还可以构建包括三个节点的 CRISPRi振荡器（CRISPRi oscillator，CRISPRlator），三个节点 N1、N2 与 N3 构成首位相连的环形拓扑结构并且依次对下一个节点的表达产生抑制，通过三个荧光蛋白报告基因可以观察到各节点随时间进行周期性的振荡表达（图 5-19B）。
+
+![](images/page_161_image_3.jpg)
+
+图 5-19 CRISPRi 衍生的具有空间或时间特征的基因装置
+
+## 5. 中间产物传感器介导的 CRISPRi 基因线路
+
+将中间产物生物传感器与 CRISPRi 系统相耦合，可以构建具有反馈调节作用的基因线路，进而实现对于特定代谢网络的动态与自发调控。例如，N-乙酰氨基葡萄糖（GlcNAc）合成途径中 6-磷酸氨基葡萄糖（GlcN6P）是关键的中间产物，通过构建 GlcN6P 生物传感器并将之与 CRISPRi 相结合构建具有激活和抑制双重作用的基因线路，可以实现 GlcNAc 合成的调控。在枯草芽孢杆菌中，阻遏蛋白 GamR 可以特异性地响应胞内的 GlcN6P 浓度并对启动子 $\mathrm { P _ { g a m A } }$的转录进行调控，其具体调控机制如图 5-20A 所示:启动子 $\mathrm { P _ { g a m A } }$ 具有两个 GamR 特异性识别的位点 gamO1（与启动子-10 区和+1 区相重叠）和 gamO2（位于启动子+1 区下游 9bp 处），当胞内 GlcN6P 浓度较低时，GamR 会识别并结合到这两个位点，从而阻碍了 RNAP 的结合进而抑制 $\mathrm { P _ { g a m A } }$ 的表达；而随着胞内 GlcN6P 浓度的提高，与 GlcN6P 结合后的 GamR 会发生结构变化并丧失对 gamO1 与 gamO2 的结合能力，从而使 $\mathrm { P _ { g a m A } }$ 得以启动表达。基于上述调控机制，可以构建转录受 GamR 抑制的杂合启动子（图 5-20B），这些启动子的表达会随胞内GlcN6P 浓度的升高而增强，并可作为 GlcN6P 的生物传感器<sup>[57]</sup>。
+
+![](images/page_161_image_7.jpg)
+
+彩图
+
+![](images/page_162_chart_3.jpg)
+
+<details>
+<summary>bar</summary>
+
+| P_gamma | Relative Fluorescence Intensity (a.u.) |
+| :--- | :--- |
+| P_veg | ~2000 |
+| P_43 | ~4500 |
+| P_gamA | 5.4 |
+| P_vg1 | ~3500 |
+| P_vg2 | ~1000 |
+| P_vg3 | ~1000 |
+| P_vg4 | ~1000 |
+| P_vg5 | ~5500 |
+| P_vg6 | ~5500 |
+| P_vg7 | ~1000 |
+| P_relA + P_gamA | ~5500 |
+| P_vg5 | 0.3 |
+| P_vg6 | 3.6 |
+| P_vg7 | 4.6 |
+| P_rg | 2.8 |
+| P_lg | 1.5 |
+| P_vg | 1.1 |
+| P_sg | 1.9 |
+| P_sg1 | 2.8 |
+| P_sg2 | 13.4 |
+| P_sg3 | 2.8 |
+</details>
+
+图 5-20 6-磷酸氨基葡萄糖（GlcN6P）生物传感器的设计构建<sup>[57]</sup>
+
+胞外的氨基葡萄糖（GlcN）转运至胞内后会转变为 GlcN6P，因此可以通过增加胞外 GlcN的添加量来提高胞内 GlcN6P 的浓度。将 GlcN6P 生物传感器与基于 CRISPRi 的逻辑 NOT 门相耦合构建自发双重调控（autonomous dual-control，ADC）系统后，可以通过添加 GlcN 进行表征:在使用 GlcN6P 生物传感器调控基因 1 表达时，其表达水平会随 GlcN 浓度的升高而增强；而使用 GlcN6P 生物传感器调控 dCas9 的表达并将组成型表达的 sgRNA 靶向基因 2，其表达水平会随 GlcN 浓度的升高而减弱（图 5-21A）。基于 GlcN6P 响应的 ADC 系统构建反馈调节基因线路可以动态调控 GlcNAc 合成，上述基因线路可以同时动态激活 GlcNAc 合成模块中的关键基因 GNA1 并动态抑制三个竞争模块的关键基因 zwf、pfkA 与 glmM（图 5-21B）。在该反馈线路的调控作用下，当胞内的 GlcN6P 出现积累时，合成模块表达增强从而促进 GlcN6P流向 GlcNAc，竞争模块发生弱化作用从而进一步增加流向 GlcN6P 的代谢流，利用具有不同强度的 GlcN6P 生物传感器来组装激活模块与抑制模块，可以实现 GlcNAc 合成的动态平衡与最优调控。
+
+![](images/page_163_image_3.jpg)
+
+图 5-21 GlcN6P 生物传感器介导的 CRISPRi 基因线路<sup>[57]</sup>
+
+当前，CRISPR 系统正处于迅猛发展的阶段，新方法和新技术不断涌现。可以预见，将基于 CRISPR 的表达调控系统与引导 RNA 工程<sup>[58]</sup>、抗 CRISPR 蛋白<sup>[59]</sup>等新兴技术相结合，可以构建更加复杂、功能更为多样的基因线路，这将为合成生物学和生物医学等研究提供强大的工具，并加速人们理解生命与创造生命的过程。
+
+## 第三节 开关基因线路
+
+## 一、双稳态基因开关
+
+双稳态是由物理概念中的多稳态衍生而来的，扩展到生物学中，它表示设计的基因调控网络存在两个甚至更多离散的基因表达水平<sup>[60]</sup>。双稳态描述了一个动力学系统在参数空间的某个区域内可以切换为两种稳定状态中的任意一个，即对应生物系统中的开启/关闭和调控。形成双稳态需要具备三个特征:第一，系统状态间的平衡，两种稳定状态不能一种过强，一种过弱。第二，一个双稳态系统必须包含一些非线性，当一个激励被施加时，会产生相应的响应，且响应必须比激励的正比例数值更大或更小。第三，通路中需要有正负反馈作用或相互抑制的双向反馈调节元件或蛋白质。
+
+噬菌体 λ 的 CI-Cro 调控便是双稳态的典型代表<sup>[61]</sup>。噬菌体 λ 在生命周期中存在两种状态:一种是噬菌体进入宿主细胞并潜伏，与宿主细胞一同分裂的溶源态，维持这一状态的唯一调控蛋白是 CI 蛋白；另一种是噬菌体在宿主细胞内大量繁殖并最终分裂宿主细胞的裂解态，其中起关键作用的为 Cro 蛋白，其为裂解态初期重要的基因表达产物与调控蛋白。由于基因 cI 和 cro 有共同的调控区域，因此可以通过各种反馈来调控彼此的基因表达。
+
+计算科学的发展，为人工设计双稳态开关（又称拨动开关）提供了保障。Gardner 等在大肠杆菌中构建了一种双稳态开关，并提供了一种简单的数学模型来预测开关表现出双稳态所需的条件<sup>[3]</sup>。双稳态调控开关由两个阻遏蛋白组成（图 5-22）。一对阻遏蛋白（LacI 和 CI）抑制彼此的转录，从而在基因线路中产生双稳态现象，即在任何给定时刻只有其中一个基因是活跃的。通过使用环境输入来解除其中一个抑制子与其操作子的结合，可以将切换器“切换”到所需的转录状态（使用 IPTG 来解除 LacI 的结合，使用热量来解除 CI 的结合）。当添加 IPTG时，LacI 对阻遏蛋白 CI 和报告荧光蛋白 GFP 的转录抑制效果就会解除，CI 会更进一步地反馈抑制 LacI 的表达，最终基因线路输出 GFP 荧光信号；当提高温度时，CI 对阻遏蛋白 LacI的转录抑制效果会被解除，LacI 会进一步地反馈抑制 CI 和报告荧光蛋白 GFP 的表达，最终基因线路不再输出 GFP 荧光信号。
+
+![](images/page_164_image_5.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["IPTG"] --> B["lacI"]
+  B --> C["cl"]
+  C --> D["gfp"]
+  D --> E["热量"]
+```
+</details>
+
+图 5-22 人工设计的双稳态开关
+
+lacI. IPTG 响应转录因子的编码基因； $\begin{array} { r } { g \hat { \mathcal { P } } . } \end{array}$ 绿色荧光蛋白（GFP）的编码基因；cI. 转录因子 CI 的编码基因
+
+目前，双稳态开关已被应用于代谢网络的动态调控。Tsuruno 等在一种大肠杆菌中设计了一种双稳态开关来调控 3-羟基丙酸的代谢网络<sup>[62]</sup>。如图 5-23 所示，IPTG 响应转录因子 LacI的表达受到组成型启动子 $\mathbf { P _ { c o n } }$ 控制，转录因子 TetR 和 3-羟基丙酸合成途径相关基因的表达受到启动子 $\mathbf { P } _ { \mathrm { l a c } }$ 控制；3-羟基丙酸竞争途径相关基因（ $g l p K )$ ）的表达受到启动子 $\mathbf { P } _ { \mathrm { t e t } }$ 控制。添加IPTG 后，转录因子 LacI 会从启动子 $\mathbf { P } _ { \mathrm { l a c } }$ 上的结合位点解离，激活 TetR 和 3-羟基丙酸合成途径相关基因的表达，从而起始 3-羟基丙酸的合成。同时，表达的转录因子 TetR 会抑制 $\mathbf { P } _ { \mathrm { t e t } }$ 启动子的活性，抑制基因 $g l p K$ 的表达，从而减弱 3-羟基丙酸竞争途径的代谢流。最终，3-羟基丙酸的产量提高了 94%。
+
+## 二、基因振荡器
+
+生物体内细胞的周期性分裂、激素的周期分泌等节律性行为，大都与外界条件相隔绝，由自身体内的调控系统所决定<sup>[63]</sup>。生物振荡器是生物系统中一个重要的基本单元，调控细胞内，甚至细胞间的生化过程，但这些天然的节律调控网络较为复杂，且调控机制涉及的基因数目较多，作为单独的研究对象是不适宜的。随着合成生物学的发展，研究人员可以人工设计、构建具有特定功能的基因振荡器，使目的蛋白或基因的表达水平呈现周期性变化，大大降低了分析对象的复杂度和分析生命周期性现象的难度。基因线路产生振荡需要满足三个条件:第一，负反馈回路；第二，整个系统存在非线性；第三，负反馈回路存在合适的时间尺度。但具体的振荡特性还是需要由基因之间相互作用的形式决定。
+
+![](images/page_165_image_3.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+This diagram illustrates a biochemical process flow involving lacI, lacO, tetR, and glpK enzymes with associated P-con, P_lac, P_lac, and P_tet steps.
+</details>
+
+图 5-23 双稳态开关调控 3-羟基丙酸的代谢网络
+
+lacI. IPTG 响应转录因子的编码基因；tetR. 四环素响应转录因子的编码基因；glpK. 甘油激酶的编码基因；3HP. 3-羟基丙酸合成相关基因；lacO. 转录因子 LacI 的结合位点； $\mathbf { P _ { c o n } } .$ 组成型启动子； $\mathbf { P _ { \mathrm { t c t } } } .$ 受转录因子 TetR 调控的启动子； $\mathbf { P } _ { \mathrm { l a c } } .$ 受转录因子 LacI 调控的启动子
+
+最典型的 Goodwin 振荡器在 1963 年便被提出，由 $\mathrm { P _ { l a c 0 1 } }$ 启动子和其下游的 lacI 基因组成，此启动子能够被表达的 LacI 转录因子反馈抑制，构成最简单的负反馈回路。虽然构建和形式简单，但其振荡周期和频率极不稳定。因此，振荡器的构建逐渐向稳定化、复杂化发展，其中包括压缩振荡器、同步振荡器、张弛振荡器等。
+
+压缩振荡器由三个相互阻遏的转录因子组成，这三个转录因子形成的环状反馈回路使靶标基因的表达呈现出振荡模式。构建压缩振荡器的重要条件是使用的启动子表达强度较高，同时还能够被转录阻遏蛋白严谨阻遏。Elowitz 和 Leibler 使用表达强度高、阻遏效应强的杂合启动子和阻遏蛋白成功构建了一个压缩振荡器<sup>[4]</sup>（图 5-24）。为了增加振荡器的时效性，在各个转录因子和荧光蛋白的 C 端连接降解标签 ssrA。荧光蛋白 GFP 和转录因子 LacI 的表达受到启动子 $\mathrm { P _ { L t e t 0 1 } }$ 控制，转录因子 TetR 的表达受到启动子 $\lambda \mathrm { P } _ { \mathrm { R } }$ 控制，转录因子 CI 的表达受到启动子 $\mathrm { P _ { L l a c 0 1 } }$ 控制；当启动子 $\lambda \mathrm { P } _ { \mathrm { R } }$ 正常起始转录时，转录因子 TetR 表达，TetR 会抑制启动子$\mathrm { P _ { L t e t 0 1 } }$ 的活性，因而荧光蛋白 GFP 和转录因子 LacI 的表达受到抑制。转录因子 LacI 的表达受到抑制会解除其对启动子 $\mathrm { P _ { L l a c 0 1 } }$ 的抑制作用，转录因子 CI 的表达因此被激活，转录因子 CI 会进一步抑制启动子 $\lambda \mathrm { P } _ { \mathrm { R } }$ ，至此，整个振荡器完成了半个循环。接着，由于启动子 $\lambda \mathbf { P } _ { \mathrm { R } }$ 的活性受到抑制，转录因子 $\mathrm { T e t R }$ 不表达，TetR 对启动子 $\mathrm { P _ { L t e t 0 1 } }$ 的抑制作用解除，荧光蛋白 GFP 和转录因子 LacI 得以表达。转录因子 LacI 的表达会抑制启动子 $\mathrm { P _ { L l a c 0 1 } }$ 的活性，转录因子 CI 的表达因此被抑制，因而转录因子 CI 对启动子 $\lambda \mathrm { P } _ { \mathrm { R } }$ 的抑制作用解除，至此，整个振荡器完成了 1 个循环。在整个循环中，荧光蛋白的表达受到了 1 次激活，1 次抑制，在之后的循环过程中，会连续不断地呈现出这种表达模式，使整个基因线路的输出呈现出振荡模式。
+
+![](images/page_166_image_2.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["tetR-lite"] -->|"λPR"| A
+  B["lacI-lite"] -->|"PLtet01"| A
+  C["cl-lite"] -->|"PLlac01"| C
+  D["gfp-aav"] -->|"PLtet01"| D
+```
+</details>
+
+图 5-24 压缩振荡器示意图
+
+lacI-lite. C 端带有蛋白降解标签的 LacI 转录因子的编码基因；tetR-lite. C 端带有蛋白降解标签的 TetR 转录因子的编码基因；cI-lite. C 端带有蛋白降解标签的 CI 转录因子的编码基因；gfp-aav. C 端带有蛋白降解标签的荧光蛋白 GFP 的编码基因； $\mathrm { P _ { L t c t 0 1 } }$ . 受转录因子 TetR 调控的启动子突变体； $\mathrm { P _ { L l a c 0 1 } }$ . 受转录因子 LacI 调控的启动子突变体； $\lambda \mathrm { P } _ { \mathrm { R } } .$ 受转录因子 CI 调控的启动子突变体
+
+尽管上述的压缩振荡器可以使基因的表达呈现出振荡模式，但由于在细胞群落中，每个细胞中的转录、翻译水平存在个体差异，群落中各个细胞的振荡周期会不同步，最终影响整个群落的信号输出。为了获得同步，需要在相关联的单元中引入信号转导途径，最常使用的系统为群体响应系统。Garcia-Ojalvo 等为了克服压缩振荡器在各细胞间出现的较大周期性差异，使细胞间的振荡达到同步，将群体感应系统与压缩振荡器相耦合，构建了一个同步振荡器<sup>[64]</sup>。
+
+## 第四节 压力响应基因路线
+
+## 一、代谢反馈回路线路
+
+微生物代谢主要通过两种类型的控制来调节:一是通过控制酶表达水平的转录调节，进而影响代谢物浓度；二是通过变构抑制或激活直接改变酶活性的翻译后调节，翻译后代谢调控常见于中枢碳代谢、脂肪酸生物合成途径和氨基酸生物合成途径，可在数秒内快速调节细胞代谢物水平。另外，转录代谢调节在营养摄取、三羧酸（TCA）循环、氨基酸生物合成和能量产生中广泛发挥作用，其主要目标是优化蛋白质表达水平并避免不必要的蛋白质过度产生，从而浪费细胞资源。
+
+## 1. 反馈抑制
+
+反馈抑制（feedback inhibition）是指在代谢途径中，终产物对代谢途径中酶的活性产生抑制（图 5-25）。大多数受到调节的酶是代谢途径中第一步或是代谢分支处的酶，此类酶具有两个结合中心:一个是结合底物并进行催化的反应活性中心，另一个则可以与调节物进行结合，通过引起酶空间结构的改变导致酶活性的降低。这种变化是可逆的，当调节物脱落时，酶的结构复原，酶活性恢复。该调节物是此类酶的非竞争性抑制剂。在氨基酸的天然合成过程中，反馈抑制调节是细胞内重要的调节方式，可以防止细胞内碳源的不必要损失和氨基酸的过量积累。因此，在构建高效合成氨基酸的微生物细胞工厂时，通过对关键酶受调控位点进行突变以解除代谢通路上一些关键酶的反馈抑制作用是非常有效的策略。例如，通过将大肠杆菌中 ATP 转磷酸核糖激酶（L-组氨酸合成通路中的第一步，由 hisG 基因编码）的第 271 位谷氨酸突变成赖氨酸，可以在一定程度上解除 L-组氨酸的反馈抑制。在利用谷氨酸棒杆菌生产L-精氨酸的过程中，通过敲除 argR（精氨酸阻遏物 ArgR 的编码基因）及 farR（抑制精氨酸合成基因簇的脂肪酰基响应调节子的编码基因）后，L-精氨酸的产量相比于对照菌株提高了120%<sup>[65]</sup>。
+
+![](images/page_167_image_3.jpg)
+
+图 5-25 反馈抑制
+
+A. 没有分支代谢途径时，终产物（如 F）往往对代谢途径中的第一个酶（E1）的活性存在抑制作用；B. 当存在分支途径时，终产物（如 F 和 I）往往会抑制分支途径中第一个酶（如 E3 和 E6）的活性，并对代谢途径中的第一个酶（如E1）有部分抑制作用
+
+## 2. 反馈阻遏
+
+反馈阻遏（feedback repression）则是由于合成途径产生的高浓度终产物作为辅阻遏物与操纵子编码的无活性阻遏蛋白结合，使阻遏蛋白活化并结合到响应的 DNA 操纵区，阻止 RNA聚合酶与启动子结合或阻止其向下游转录，从而达到调控酶的表达量的目的（图 5-26）。由于涉及转录、翻译、蛋白质折叠和催化，转录调控改变代谢物浓度的速度比翻译后调控慢得多。乳糖操纵子带有大肠杆菌利用乳糖时所必需的结构基因，分别为阻遏蛋白编码基因 lacI、启动子编码基因 lacP 和操纵基因 $l a c O _ { \circ }$ 结构基因包括 β-半乳糖苷转乙酰基酶编码基因 lacA、β-半乳糖苷酶编码基因 lacZ 及乳糖透性酶编码基因 lacY。在没有乳糖存在的情况下，乳糖操纵子处于关闭状态，lacI 基因处于低水平、组成型表达，产生阻遏蛋白，结合在操纵子上阻止基因的转录。在乳糖存在的情况下，乳糖能够与阻遏蛋白结合引起阻遏蛋白构象的变化，使得阻遏蛋白无法与操纵基因结合，此时，RNA 聚合酶能够顺利向下游移动，乳糖操纵子转录水平提高，加速细胞利用乳糖的速度。由于调节基因所编码的调控蛋白和 DNA 结合后转录水平降低，因此乳糖操纵子的底物诱导系统是一个典型的反馈阻遏调控系统。
+
+乳糖操纵子还受到全局调控蛋白环腺苷酸受体蛋白（cyclic AMP receptor protein，CRP）的正调控系统的调节。正调控的信号分子是胞外的葡萄糖，腺苷酸受体蛋白的检测信号是环腺苷酸（cAMP）浓度。由于细胞内利用葡萄糖的酶是组成型的，当葡萄糖和乳糖同时存在时，细胞内 cAMP 浓度低，无法形成活化的 cAMP-CRP，此时 RNA 聚合酶与启动子的结合能力较弱，乳糖操纵子转录水平低。当胞内葡萄糖被消耗，即胞内 cAMP 浓度高时，cAMP 能够与CRP 蛋白结合形成活化的 cAMP-CRP，该复合物能够高效结合在乳糖启动子上游，促进 RNA聚合酶与启动子的结合，使得乳糖操纵子在乳糖的诱导下高效表达。乳糖操纵子表达的正、负调控机制可以很好地解释以葡萄糖和乳糖为碳源培养大肠杆菌时的二次生长现象。
+
+![](images/page_168_image_2.jpg)
+
+图 5-26 乳糖操纵子模型
+
+A. 在没有诱导剂（乳糖）存在时，lacI 基因编码有活性的阻遏蛋白 LacI，并与操纵基因 lacO 结合，阻碍 lacZ、lacY、lacA 基因的转录；B. 当诱导剂（乳糖）存在时，与阻遏蛋白 LacI 结合，使得阻遏蛋白 LacI 从有活性转变为无活性，因此无法与操纵基因 lacO 结合，lacZ、lacY、lacA 基因完成转录
+
+## 3. 反馈激活
+
+虽然在天然代谢途径中，反馈抑制与反馈阻遏是最常见的代谢反馈，但反馈激活（feedback activation）同样存在。糖酵解（glycolysis）是细胞代谢重要的中心代谢途径，通过反馈调控糖酵解代谢途径的通量，可以促进糖酵解相关途径产物的生产。Zhu 等在大肠杆菌中设计并构建了感知糖酵解通量的双功能生物传感器，利用该生物传感器下调编码磷酸果糖激酶的 pfkA表达，上调编码 6-磷酸葡萄糖脱氢酶的 zwf 表达，在 1L 发酵罐中甲羟戊酸（MVA）产量提高到 111.3g/L<sup>[66]</sup>。Xu 等基于 TF FapR，在大肠杆菌中构建了响应丙二酰辅酶 A 的双功能基因线路，能够响应胞内丙二酰辅酶 A 浓度，同时激活和抑制相关基因的表达；随后，使用该系统调控胞内丙二酰辅酶 A 的代谢池，从而动态平衡细胞生长和脂肪酸的合成，最终使脂肪酸的产量提高了 15.7 倍 <sup>[38]</sup>。在酿酒酵母中，通过将响应丙二酰辅酶 A 的生物传感器与响应葡萄糖浓度的调控手段相结合，利用响应葡萄糖浓度的 HXT1 启动子控制脂肪酸合成酶基因 FAS1 的表达，利用丙二酰辅酶 A 传感器控制 3-羟基丙酸（3-hydroxypropionic acid，3HP）的生产途径，可以在发酵后期抑制脂肪酸合成的同时，在丙二酰辅酶 A 积累量高时激活 3HP 合成酶Mcr 的表达，实现对代谢途径的分级调控<sup>[67]</sup>。
+
+丙酮酸作为中枢代谢物，是将糖酵解途径与 TCA 循环联系起来的关键代谢物，是细胞中枢代谢物的重要调节节点。Xu 等通过将丙酮酸响应 TF PdhR 结合位点插入枯草芽孢杆菌启动子 $\mathbf { P } _ { 4 3 }$ 的核心区域，设计并构建了丙酮酸激活的遗传回路。然后，以反义转录作为非门构建丙酮酸抑制遗传回路。最后，基于双功能的丙酮酸响应遗传回路，设计了一个反馈回路控制系统，通过动态上调 ino1 基因及下调 zwf 和 pgi 基因来促进葡糖酸的产生，使葡糖酸产量显著提高到 802mg/L<sup>[39]</sup>。
+
+## 二、群体感应基因线路
+
+## 1. 群体感应
+
+群体感应（quorum sensing，QS）是一种广泛存在于多种微生物中的胞间通信系统。细菌合成并分泌自诱导因子（autoinducer，AI）作为信号分子，AI 随着种群密度的增加而积累，诱导细菌对种群密度的响应，调节生物膜的形成或特定基因的表达，因此该过程也被称为“细胞密度依赖的基因表达”（cell-density-dependent gene expression）。在 AI 诱导目的基因表达的同时，自身合成酶的基因同时被诱导，进而 AI 的浓度提高，大量的 AI 进一步发挥诱导目的基因表达的功能，在 QS 系统中形成一个正反馈回路，因此称为自诱导。
+
+（1）细菌中的群体感应 根据 AI 的不同可以将 QS 系统分为由 AI-1、AI-2 和 AI-3 诱导的三种。革兰氏阴性菌的 AI-1 为 N-酰基高丝氨酸内酯（acyl-homoserine lactone，AHL）类物质。绝大多数革兰氏阴性菌的群体感应与费氏弧菌（Vibrio fischeri）的群体感应系统结构相似。该群体感应系统包括两个最基本的调控蛋白 LuxI 和 LuxR。其中 LuxI 是自诱导剂的合成酶，可以产生 AHL 的信号分子。不同细菌甚至同一细菌的不同 AHL 合成系统，其合成的 AHL结构不尽相同，酰基碳链长度为 4～16 个碳原子，通常是以 2 个碳原子为基本单元（如 $\mathrm { C } _ { 4 }$ $\mathrm { C } _ { 6 }$ 和 $\mathbf { C } _ { 8 }$ 等）。LuxR 基因编码的转录抑制因子 LuxR 与受群体感应调控的启动子 $\mathrm { P _ { l u x I } }$ 结合抑制下游基因的表达。随着细菌种群密度的增长，AHL 在细胞外富集。当 AHL 的浓度达到一定阈值时，AHL 通过跨膜进入胞内，与转录抑制因子 LuxR 结合形成 LuxR-AHL 复合物，并激活启动子 $\mathrm { P _ { l u x I } }$ 下游基因的表达（图 5-27A）。革兰氏阳性菌的 AI-1 为自诱导肽（autoinducing peptide，AIP）。AIP 通常是由 5～87 个氨基酸组成的线性或环状肽。与 AHL 等小分子不同，AIP 需要转运蛋白（比如 ABC 转运蛋白）或膜通道蛋白才能进行跨膜运输。当胞外的 AIP 积累到一定程度时，双组分传感器激酶检测到 AIP，通过一系列磷酸化反应后，磷酸化受体蛋白识别并结合特定靶序列，从而调控下游基因的表达。金黄色葡萄球菌（Staphylococcus aureus）具有典型的革兰氏阳性菌的 QS 系统。该系统包括 AIP 的 ArgD，将 AIP 进行硫代内酯环化修饰并转运到细胞外的 ArgB，双组分感受激酶 ArgC 及效应蛋白 ArgA ，以及一个具有调控功能的效应分子 RNAⅢ（图 5-27B）。AI-3 是一种芳香族化合物，但其结构仍未被解析。该群体感应系统常见于欧文氏杆菌、青紫色素杆菌等细菌中。除了同种属间的 QS 系统，不同种属微生物可以通过 AI-2 信号分子进行种间交流。AI-2 由 LuxS 催化合成，luxS 基因广泛存在于革兰氏阴性菌和革兰氏阳性菌中。AI-2 信号系统通常不是起到主导地位的 QS 系统，主要与其他 QS 系统一起参与基因表达的调控。
+（2）真菌中的群体感应 研究表明，真菌中同样存在 QS 现象。真菌中的群体感应分子同样能够调节多种生物功能，比如生物膜的形成、毒力因子的产生等。但是相较于研究较为透彻的细菌中的 QS 系统，目前真菌中的 QS 系统仍未被完全揭示。目前只对白色念珠菌中群体感应系统的调控机制研究得较为透彻。已知的白色念珠菌（Candida albicans）中的群体感应分子主要有法尼醇及酪醇，法尼醇会影响白色念珠菌生物膜的形成，抑制细胞形态向菌丝状转变，而酪醇则能促进白色念珠菌从酵母细胞到菌丝状态的转换，同白色念珠菌一样，酿酒酵母也能够发生从酵母细胞形态到丝状形态的改变。
+
+![](images/page_170_image_2.jpg)
+
+图 5-27 AI-1 类型群体感应系统
+
+A. 费氏弧菌（Vibrio fischeri）的群体感应系统由 LuxI 合成自诱导因子 AHL 类物质，达到一定阈值后与 LuxR 结合，并激活 $\mathrm { P _ { \mathrm { { l u x I } } } }$ 下游基因的表达。B. 金黄色葡萄球菌（Staphylococcus aureus）的群体感应系统由 ArgD 合成自诱导因子 AIP，由 ArgB 进行硫代内酯环化修饰后转运至胞外，达到一定阈值后，结合并激活双组分信号系统的感应激酶 ArgC，ArgC 磷酸化激活 ArgA，并激活效应分子 RNAⅢ及 argB、argD、argC、argA 操纵子的转录
+
+酿酒酵母的群体感应信号分子是 2-苯基乙醇（2-phenylethanol）、色氨醇（tryptophol）和对羟苯基乙醇（tyrosol，又称酪醇）。这三种信号分子分别由苯丙氨酸、芳香醇和酪氨酸生成，它们的合成受到环境 pH、芳香族氨基酸的含量、氧气含量及氮浓度的影响。2-苯基乙醇和色氨醇通过 cAMP 蛋白激酶 Tpk2 和 TF Flo8 促进 Flo11 基因的表达，Flo11 是细胞壁 GPI 蛋白，参与细胞伸长、两极产生等。三者的合成同时受到细胞密度调控。以色氨醇为例，当细胞达到一定数量时，ARO9 和 ARO10 基因的表达上调，刺激芳香醇的产生，进而促进色氨醇的合成。而色氨醇也可以促进芳香醇的产生，色氨醇能够激活 TF Aro80，进而促进转氨酶 Aro9 和脱羧酶 Aro10 的表达，从而形成一个正反馈回路。研究表明，2-苯基乙醇和色氨醇的积累量在稳定期达到最大值，而在指数生长期，当 2-苯基乙醇大量产生时，细胞感应到 2-苯基乙醇后，开始对其群体密度有所调整。酪醇临界值出现时间在 2-苯基乙醇和色氨醇之间。同时，酵母信息素及氨也可以作为酿酒酵母的群体感应信号分子，在高群体密度时，信号分子会引发细胞的凋亡。
+
+## 2. 基于群体感应系统的生物传感器
+
+QS 系统可以自发地将工业微生物从生长期转换到生产阶段。随着 QS 系统原理与关键元件的逐渐清晰，QS 动态调节系统由于具有不需要添加诱导剂、没有遗传干扰、不依赖代谢途径、对细胞生长没有负担等优势，已引起研究者的日益关注，基于 QS 系统的生物传感器成为研究者动态调控胞间通信和生长状况的重要手段之一。
+
+基于 QS 系统的生物传感器是双组分系统（two-component system，TCS）的典型应用。从生物传感器设计的角度来看，如果信号分子不能自然扩散或跨细胞膜运输，则必须共表达转运蛋白以感知细胞外信号。然而，对于许多化合物，其相应的转运体在细胞中不存在，限制了细胞内生物传感器的应用。此外，由于细胞膜的选择渗透性，转化到细胞质的胞外信号可能会严重减弱。因此，细胞内生物传感器无法实时定量检测细胞外信号的强度，进而调节基因表达。有必要构建特异性的生物传感器，直接感知细胞外输入信号并将其转化为细胞质中的基因表达信号。TCS 是最大的多步信号转导系统家族，也是合成生物学中重要的一类传感器。典型的基于 TCS 的生物传感器由膜上的传感器组氨酸激酶（sensor histidine kinase，SHK）、细胞质中的应答调控蛋白（response regulator，RR）和输出启动子组成。
+
+典型的 SHK 包含一个通常位于细胞质中的 C 端递质结构域和一个位于周质空间的N 端传感器结构域。由于其具有跨膜结构，基于 TCS 的生物传感器可以感知细胞外、膜内或细胞内空间的输入变化。在输入信号存在的情况下，N 端传感器结构域发生构象重排，并传递到 C 端递质结构域，诱导自磷酸化。递质结构域使 RR 的 N 端调控结构域中保守的天冬氨酸残基磷酸化，并将 RR 转化为激活状态。与 TF 一样，RR 通常包含一个调节转录的 C 端效应结构域。磷酸化的 RR 与相应的启动子结合，然后上调或下调靶基因的转录（图 5-28）。
+
+![](images/page_171_image_5.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  subgraph SensorGroup["传感器组氨酸激酶 (SHK)"]
+  A["N端传感器结构域\n跨膜结构域"] --> B["周质空间感应结构域"]
+  B --> C["二聚化结构域"]
+  C --> D["ATP结合激酶结构域"]
+  E["C端递质结构域"] --> F["ADP"]
+  F --> G["P-P junction"]
+  H["N端应答调控蛋白 (RR)"] --> I["调控结构域"]
+  J["C端应答调控蛋白 (RR)"] --> K["效应结构域"]
+  K --> L["输出信号"]
+  end
+
+  subgraph ResponsePath
+  G --> M["P-P junction"]
+  I --> M
+  M --> N["ADP"]
+  N --> O["ATP"]
+  end
+```
+</details>
+
+图 5-28 双组分系统模式图
+
+双组分系统由传感器组氨酸激酶（SHK）和应答调控蛋白（RR）组成。其中，SHK 包括位于周质空间的 N 端传感器结构域及胞质内的 C 端递质结构域，RR 包括 N 端调控结构域和 C 端效应结构域。在该系统响应输入信号后，可将组氨酸蛋白激酶侧链中组氨酸残基上的磷酸基团转移到调控结构域的天冬氨基酸残基上，催化自身磷酸化反应，调控磷酸依赖的效应结构域以调控基因的表达
+
+一般来说，TCS 生物传感器的灵敏度或工作范围可以通过调节 SHK 和 RR 的表达水平来优化。利用不同强度的启动子和 RBS 分别在转录与翻译水平上控制 SHK 和 RR 的表达水平。例如，通过优化 dcuS 与 dcuR 之间的表达比与表达强度，构建了大肠杆菌中富马酸响应的生物传感器。该生物传感器的最大动态范围增加到 6.6 倍。改善 TCS 生物传感器性能的另一种方法是修改 SHK 结构。同时，通过结合来自不同 SHK 的 C 端递质结构域和 N 端传感器结构域，可以构建基于嵌合的 TCS 生物传感器。然而，基于 TCS 的生物传感器的原型主要存在于细菌中，但是在真核生物中复制原核生物中基于 TCS 的生物传感器仍是一个重要挑战。
+
+## 3. 基于群体感应系统的基因路线
+
+作为基于 QS 生物传感器的经典应用，双功能模块化的 Phr60-Rap60-Spo0A QS 系统已在枯 草 芽 孢 杆 菌 中 成 功 应 用 。 Cui 等 利 用 该 系 统 上 调 ispH（ 4-hydroxy-3-methylbut-2-enyl diphosphate reductase，4-羟基-3-甲基-2-烯基二磷酸还原酶）和 hepS/T（七戊烯基二磷酸合成酶）基因的表达，抑制 pyk（丙酮酸激酶）和 uppS（戊烯基转移酶）基因的表达，促进七烯甲萘醌（Menaquinone-7，MK-7）的合成，使 MK-7 产量提高 40 倍<sup>[68]</sup>。此外，Ge 等创建了 Lux型 QS 系统变体库，并进一步利用 QS 系统实现了大肠杆菌中 4- 羟基香豆素（ 4- hydroxycoumarin）生物合成途径的多样化代谢控制，使产量提高了 10 倍<sup>[69]</sup>。同时，Yang 等将工程激素细胞分裂素系统与内源性 Ypd1-Skn7 信号转导途径相结合，构建了酿酒酵母的 QS系统。利用启动子工程对基于 QS 系统的正反馈电路进行了优化。随后，他们构建了一个负反馈电路，使用生长素诱导的蛋白质降解系统作为非门。他们将该双功能电路应用于 α-法尼烯的生产过程中，其效价提高了 80%<sup>[70]</sup>。
+
+上述调节系统均为单输入回路，分层和多输入回路对于调节复杂的代谢网络至关重要例如，Nozzi 等开发了一种基于“或”门电路的靶向蛋白质降解系统，该系统可响应 IPTG 和茶碱（theophylline）。单独添加 IPTG 或茶碱时，靶基因的表达仅部分开启。当这两个信号都被输入时，靶基因表达将被完全激活<sup>[71]</sup>。此外，构建了由 QS 系统和固定相生物传感器组成的可同时响应细胞群体和生理状态的自诱导“与”门。转录共激活子 HrpR 由 QS 启动子驱动，另一个转录共激活子 HrpS 由静止期启动子控制，只有当细胞群体和生理状态都满足要求时，启动子 $\mathrm { P _ { h r p } }$ 才会转录。最后，“与”门使大肠杆菌的聚羟基丁酸酯（polyhydroxybutyrate）产量增加了 2 倍<sup>[72]</sup>。同时，Dinh 和 Prather 还开发了基于半正交或完全正交的代谢枢纽开关的分层遗传回路来调节不同靶基因的表达<sup>[73]</sup>。例如，分层动态调控可以通过将 QS 系统与肌醇响应型生物传感器相结合，实现 Pfk 和 MIOX 表达的有序下调和上调<sup>[74]</sup>。
+
+## 思 题
+
+1. 常见的逻辑门基因线路有多少种？请简述各自的特征及其符号。试设计出相应的逻辑门基因线路。
+2. 简述 CRISPRi 基因线路的设计原理。试设计一个 NOT-NOR 的 CRISPRi 基因线路以调控代谢途径。
+3. 参考“与非”和“或非”门基因线路的详细设计方案，如何设计三输入-单输出的“与”门逻辑线路？
+4. 可以作为逆变器的调控有哪些？
+5. 列出双稳态开关和基因振荡器的详细设计方案。
+
+## 参考文献
+
+［1］Jacob F，Monod J. Genetic regulatory mechanisms in the synthesis of proteins. J Mol Biol，1961，3:318-356
+［2］McAdams HH，Shapiro L. Circuit simulation of genetic networks. Science，1995，269（5224）:650-656
+［3］Gardner TS，Cantor CR，Collins JJ. Construction of a genetic toggle switch in escherichia coli. Nature，2000，
+403（6767）:339-342
+［4］Elowitz MB，Leibler S. A synthetic oscillatory network of transcriptional regulators. Nature，2000，403（6767）:335-338
+［5］Ye GX，Zhang TT，Nie XR，et al. Single-chromosome fission yeast models reveal the configuration robustness of a functional genome. Cell Reports，2022，40（8）:111237
+［6］Cobb RE，Wang Y，Zhao H. High-efficiency multiplex genome editing of streptomyces species using an engineered CRISPR/Cas system. ACS Synth Biol，2015，4（6）:723-728
+［7］Xu X，Liu Y，Du G，et al. Microbial chassis development for natural product biosynthesis. Trends Biotechnol，2020，38（7）:779-796
+［8］Shi S，Xie Y，Wang G，et al. Metabolite-based biosensors for natural product discovery and overproduction. Curr Opin Biotechnol，2022，75:102699
+［9］Gao C，Xu P，Ye C，et al. Genetic circuit-assisted smart microbial engineering. Trends Microbiol，2019，27（12）:1011-1024
+［10］Deng C，Wu Y，Lv X，et al. Refactoring transcription factors for metabolic engineering. Biotechnol Adv，2022，57:107935
+［11］Brophy JA，Voigt CA. Principles of genetic circuit design. Nat Methods，2014，11（5）:508-520
+［12］Satya Lakshmi O，Rao NM. Evolving lac repressor for enhanced inducibility. Protein Eng Des Sel，2009，22（2）:53-58
+［13］Roth A，Breaker RR. The structural and functional diversity of metabolite-binding riboswitches. Annu Rev Biochem，2009，78:305-334
+［14］Mandal M，Breaker RR. Adenine riboswitches and gene activation by disruption of a transcription terminator. Nat Struct Mol Biol，2004，11（1）:29-35
+［15］Dambach M，Sandoval M，Updegrove TB，et al. The ubiquitous riboswitch is a manganese-responsive regulatory element. Mol Cell，2015，57（6）:1099-1109
+［16］Darmostuk M，Rimpelova S，Gbelcova H，et al. Current approaches in SELEX:An update to aptamer selection technology. Biotechnol Adv，2015，33（6 Pt 2）:1141-1161
+［17］Moon TS，Lou C，Tamsir A，et al. Genetic programs constructed from layered logic gates in single cells. Nature，2012，491（7423）:249-253
+［18］Jones TS，Oliveira SMD，Myers CJ，et al. Genetic circuit design automation with cello 2.0. Nat Protoc，2022，17（4）:1097-1113
+［19］Tracy BP，Gaida SM，Papoutsakis ET. Flow cytometry for bacteria:Enabling metabolic engineering，synthetic biology and the elucidation of complex phenotypes. Curr Opin Biotechnol，2010，21（1）:85-99
+［20］Tamsir A，Tabor JJ，Voigt CA. Robust multicellular computing using genetically encoded nor gates and chemical wires’. Nature，2011，469（7329）:212-215
+［21］Rogers JK，Church GM. Genetically encoded sensors enable real-time observation of metabolite production. Proc Natl Acad Sci USA，2016，113（9）:2388-2393
+［22］Sun G，Qu L，Azi F，et al. Recent progress in high-throughput droplet screening and sorting for bioanalysis. Biosens Bioelectron，2023，225:115107
+［23］Dietrich JA，McKee AE，Keasling JD. High-throughput metabolic engineering:Advances in small-molecule screening and selection. Annu Rev Biochem，2010，79:563-590
+［24］Lalwani MA，Zhao EM，Avalos JL. Current and future modalities of dynamic control in metabolic engineering. Curr Opin Biotechnol，2018，52:56-65
+［25］Roquet N，Soleimany AP，Ferris AC，et al. Synthetic recombinase-based state machines in living cells. Science，2016，353（6297）:aad8559
+［26］Soma Y，Tsuruno K，Wada M，et al. Metabolic flux redirection from a central metabolic pathway toward a synthetic pathway using a metabolic toggle switch. Metab Eng，2014，23:175-184
+［27］Tan SZ，Manchester S，Prather KL. Controlling central carbon metabolism for improved pathway yields in Saccharomyces cerevisiae. ACS Synth Biol，2016，5（2）:116-124
+［28］Fang Y，Wang J，Ma W，et al. Rebalancing microbial carbon distribution for L-threonine maximization using a thermal switch system. Metab Eng，2020，61:33-46
+［29］Zhou PP，Xie WP，Yao Z，et al. Development of a temperature-responsive yeast cell factory using engineered gal4 as a protein switch. Biotechnol Bioeng，2018，115（5）:1321-1330
+［30］Wang X，Han JN，Zhang X，et al. Reversible thermal regulation for bifunctional dynamic control of gene expression in Escherichia coli. Nat Commun，2021，12（1）:1411
+［31］Lalwani MA，Ip SS，Carrasco-Lopez C，et al. Optogenetic control of the lac operon for bacterial chemical and protein production. Nat Chem Biol，2021，17（1）:71-79
+［32］Romano E，Baumschlager A，Akmeriç EB，et al. Engineering arac to make it responsive to light instead of arabinose. Nature Chemical Biology，2021，17（7）:817-827
+［33］Castillo-Hair SM，Baerman EA，Fujita M，et al. Optogenetic control of Bacillus subtilis gene expression. Nat Commun，2019，10（1）:3099
+［34］Zhao EM，Zhang Y，Mehl J，et al. Optogenetic regulation of engineered cellular metabolism for microbial chemical production. Nature，2018，555（7698）:683-687
+［35］Wu Y，Chen T，Liu Y，et al. Design of a programmable biosensor-CRISPR genetic circuits for dynamic and autonomous dual-control of metabolic flux in Bacillus subtilis. Nucleic Acids Res，2020，48（2）:996-1009
+［36］Zhou P，Fang X，Xu N，et al. Development of a highly efficient copper-inducible gal regulation system（CuIGR）in Saccharomyces cerevisiae. ACS Synth Biol，2021，10（12）:3435-3444
+［37］Castillo-Hair SM，Fujita M，Igoshin OA，et al. An engineered B. subtilis inducible promoter system with over 10 000-fold dynamic range. ACS Synth Biol，2019，8（7）:1673-1678
+［38］Xu P，Li L，Zhang F，et al. Improving fatty acids production by engineering dynamic pathway regulation and metabolic control. Proc Natl Acad Sci USA，2014，111（31）:11299-11304
+［39］Xu X，Li X，Liu Y，et al. Pyruvate-responsive genetic circuits for dynamic control of central metabolism. Nat Chem Biol，2020，16（11）:1261-1268
+［40］Yang Y，Lin Y，Wang J，et al. Sensor-regulator and RNAi based bifunctional dynamic control network for engineered microbial synthesis. Nat Commun，2018，9（1）:3043
+［41］Bordoy AE，O’Connor NJ，Chatterjee A. Construction of two-input logic gates using transcriptional interference. ACS Synth Biol，2019，8（10）:2428-2441
+［42］Wang B，Kitney RI，Joly N，et al. Engineering modular and orthogonal genetic logic gates for robust digitallike synthetic biology. Nat Commun，2011，2:508
+［43］Makarova KS，Wolf YI，Iranzo J，et al. Evolutionary classification of CRISPR-cas systems:A burst of class 2 and derived variants. Nat Rev Microbiol，2020，18（2）:67-83
+［44］Wu Y，Liu Y，Lv X，et al. Applications of CRISPR in a microbial cell factory:From genome reconstruction to metabolic network reprogramming. ACS Synth Biol，2020，9（9）:2228-2238
+［45］Bae S，Park J，Kim JS. Cas-Offinder:A fast and versatile algorithm that searches for potential off-target sites of Cas9 RNA-guided endonucleases. Bioinformatics，2014，30（10）:1473-1475
+［46］Naeem M，Majeed S，Hoque MZ，et al. Latest developed strategies to minimize the off-target effects in CRISPR-Cas-mediated genome editing. Cell，2020，9（7）:1608
+［47］Qi LS，Larson MH，Gilbert LA，et al. Repurposing CRISPR as an RNA-guided platform for sequence-specific control of gene expression. Cell，2013，152（5）:1173-1183
+［48］Miao CS，Zhao HW，Qian L，et al. Systematically investigating the key features of the DNase deactivated CPF1 for tunable transcription regulation in prokaryotic cells. Syn Syst Biotechno，2019，4（1）:1-9
+［49］Zhai HT，Cui L，Xiong Z，et al. CRISPR-mediated protein-tagging signal amplification systems for efficient transcriptional activation and repression in. Nucleic Acids Research，2022，50（10）:5988-6000
+［50］Wu Y，Liu Y，Lv X，et al. Camers-b:CRISPR/CPF1 assisted multiple-genes editing and regulation system for Bacillus subtilis. Biotechnol Bioeng，2020，117（6）:1817-1825
+［51］Zalatan JG，Lee ME，Almeida R，et al. Engineering complex synthetic transcriptional programs with CRISPR RNA scaffolds. Cell，2015，160（1-2）:339-350
+［52］Chavez A，Tuttle M，Pruitt BW，et al. Comparison of Cas9 activators in multiple species. Nat Methods，2016，13（7）:563-567
+［53］Gander MW，Vrana JD，Voje WE，et al. Digital logic circuits in yeast with CRISPR-dCas9 nor gates. Nat Commun，2017，8:15459
+［54］Fontana J，Dong C，Kiattisewee C，et al. Effective CRISPRa- mediated control of gene expression in bacteria must overcome strict target site requirements. Nat Commun，2020，11（1）:1618
+［55］Tickman BI，Burbano DA，Chavali VP，et al. Multi-layer CRISPRa/i circuits for dynamic genetic programs in cell-free and bacterial systems. Cell Syst，2022，13（3）:215-229，e218
+［56］Santos-Moreno J，Tasiudi E，Stelling J，et al. Multistable and dynamic CRISPR-based synthetic circuits. Nat Commun，2020，11（1）:2746
+［57］Wu Y，Chen T，Liu Y，et al. Design of a programmable biosensor-CRISPR genetic circuits for dynamic and autonomous dual-control of metabolic flux in Bacillus subtilis. Nucleic Acids Res，2020，48（2）:996-1009
+［58］Hu LF，Li YX，Wang JZ，et al. Controlling CRISPR-cas9 by guide RNA engineering. Wiley Interdiscip Rev RNA，2023，14（1）:e1731
+［59］Kraus C，Sontheimer EJ. Applications of anti-CRISPR proteins in genome editing and biotechnology. J Mol Biol，2023，435（13）:168120
+［60］庞庆霄，梁泉峰，祁庆生. 合成生物学开关在代谢工程中的应用. 生物技术通报，2017，33（1）:58-63
+［61］Oppenheim AB，Kobiler O，Stavans J，et al. Switches in bacteriophage lambda development. Annu Rev Genet，2005，39:409-429
+［62］Tsuruno K，Honjo H，Hanai T. Enhancement of 3-hydroxypropionic acid production from glycerol by using a metabolic toggle switch. Microb Cell Fact，2015，14:155
+［63］Lin CL，Chen PK，Cheng YY. Synthesising gene clock with toggle switch and oscillator. IET Syst Biol，2015，9（3）:88-94
+［64］Garcia-Ojalvo J，Elowitz MB，Strogatz SH. Modeling a synthetic multicellular clock:Repressilators coupled
