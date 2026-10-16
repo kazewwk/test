@@ -6,7 +6,7 @@
 
 识别结果保留原件供核对，未宣称 OCR 和公式经过逐字人工校对。
 
-完成 11/29 本；[逐书 ZIP Release](https://github.com/kazewwk/test/releases/tag/mineru-advanced-textbooks-2026-10-16)。
+完成 12/29 本；[逐书 ZIP Release](https://github.com/kazewwk/test/releases/tag/mineru-advanced-textbooks-2026-10-16)。
 
 | 教材 | 页数 | 状态 |
 | --- | ---: | --- |
@@ -33,7 +33,7 @@
 | 微生物学(101计划) (邓子新,陈峰,陈向东) | 710 | 待完成 |
 | [数理统计 (王兆军)](22_mathematical-statistics-wang/) | 373 | 已完成 |
 | [概率论(上册)101计划核心教材 (李增沪)](23_probability-101-vol1/) | 248 | 已完成 |
-| 概率论与数理统计 第五版 (盛骤 , 谢式千 , 潘承毅) | 443 | 待完成 |
+| [概率论与数理统计 第五版 (盛骤 , 谢式千 , 潘承毅)](24_probability-and-mathematical-statistics-5e/) | 443 | 已完成 |
 | 生物化学(上册) (昌增益, 施一公, 王新泉) | 654 | 待完成 |
 | 生物化学(下册) (昌增益, 施一公, 王新泉) | 587 | 待完成 |
 | 生物物理学 (主编 施一公 汤超 王宏伟副主编 陈柱成_ | 878 | 待完成 |
