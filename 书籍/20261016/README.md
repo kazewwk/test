@@ -6,7 +6,7 @@
 
 识别结果保留原件供核对，未宣称 OCR 和公式经过逐字人工校对。
 
-完成 10/29 本；[逐书 ZIP Release](https://github.com/kazewwk/test/releases/tag/mineru-advanced-textbooks-2026-10-16)。
+完成 11/29 本；[逐书 ZIP Release](https://github.com/kazewwk/test/releases/tag/mineru-advanced-textbooks-2026-10-16)。
 
 | 教材 | 页数 | 状态 |
 | --- | ---: | --- |
@@ -37,5 +37,5 @@
 | 生物化学(上册) (昌增益, 施一公, 王新泉) | 654 | 待完成 |
 | 生物化学(下册) (昌增益, 施一公, 王新泉) | 587 | 待完成 |
 | 生物物理学 (主编 施一公 汤超 王宏伟副主编 陈柱成_ | 878 | 待完成 |
-| 生物统计学 (第六版) (李春喜, 姜丽娜, 邵云,_ | 393 | 待完成 |
+| [生物统计学 (第六版) (李春喜, 姜丽娜, 邵云,_](28_biostatistics-6e/) | 393 | 已完成 |
 | 遗传学和发育生物学 (许田 金力 主编) | 667 | 待完成 |
