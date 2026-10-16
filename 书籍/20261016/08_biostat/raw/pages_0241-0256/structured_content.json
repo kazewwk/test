@@ -1,0 +1,2475 @@
+{
+  "pages": [
+    {
+      "page_idx": 240,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.145,
+            0.026,
+            0.638,
+            0.04
+          ],
+          "content": "5.1. SINGLE-SAMPLE INFERENCE WITH THE T -DISTRIBUTION"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.932,
+            0.027,
+            0.96,
+            0.04
+          ],
+          "content": "241"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.143,
+            0.073,
+            0.856,
+            0.11
+          ],
+          "level": 2,
+          "content": "5.1.2 Using the t-distribution for tests and confidence intervals for a population mean"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.13,
+            0.856,
+            0.268
+          ],
+          "content": "Chapter 4 provided formulas for tests and confidence intervals for population means in random samples large enough for the t-statistic to have a nearly normal distribution. In samples smaller than 30 from approximately symmetric distributions without large outliers, the t-statistic has a t-distribution with degrees of freedom equal to n − 1. Just like inference in larger samples, inference using the t-distribution also requires that the observations in the sample be independent. Random samples from very large populations always produce independent observations; in smaller populations, observations will be approximately independent as long as the size of the sample is no larger than 10% of the population."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.269,
+            0.856,
+            0.32
+          ],
+          "content": "Formulas for tests and intervals using the t−distribution are very similar to those using the normal distribution. For a sample of size n with sample mean x and standard deviation $S ,$ two-sided confidence intervals with confidence coefficient $1 0 0 ( 1 - \\alpha ) \\%$ have the form"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.455,
+            0.335,
+            0.543,
+            0.354
+          ],
+          "content": "\\overline {{x}} \\pm t _ {\\mathrm{df}} ^ {\\star} \\times \\mathrm{SE},",
+          "image_source": "images/page_240_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.367,
+            0.854,
+            0.401
+          ],
+          "content": "where SE is the standard error of the sample mean $( s / { \\sqrt { n } } )$ and $t _ { \\mathrm { d f } } ^ { \\star }$ is the point on a t-distribution with $n - 1$ degrees of freedom and area $( 1 - \\alpha / 2 )$ to its left."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.402,
+            0.733,
+            0.417
+          ],
+          "content": "A one-sided interval with the same confidence coefficient will have the form"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.306,
+            0.434,
+            0.691,
+            0.452
+          ],
+          "content": "\\overline {{x}} + t _ {\\mathrm{df}} ^ {\\star} \\times \\text {SE (one - sided upper confidence interval), or}",
+          "image_source": "images/page_240_equation_8.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.31,
+            0.454,
+            0.667,
+            0.473
+          ],
+          "content": "\\overline {{x}} - t _ {\\mathrm{df}} ^ {\\star} \\times \\text {SE (one - sided lower confidence interval)},",
+          "image_source": "images/page_240_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.486,
+            0.854,
+            0.519
+          ],
+          "content": "except that in this case $t _ { \\mathrm { d f } } ^ { \\star }$ is the point on a t-distribution with $n - 1$ degrees of freedom and area $( 1 - \\alpha )$ to its left."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.522,
+            0.856,
+            0.589
+          ],
+          "content": "With the ability to conveniently calculate $t ^ { \\star }$ for any sample size or associated α via computing software, the t-distribution can be used by default over the normal distribution. The rule of thumb that $n > 3 0$ qualifies as a large enough sample size to use the normal distribution dates back to when it was necessary to rely on distribution tables."
+        }
+      ]
+    },
+    {
+      "page_idx": 241,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.041,
+            0.027,
+            0.07,
+            0.04
+          ],
+          "content": "242"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.467,
+            0.026,
+            0.857,
+            0.04
+          ],
+          "content": "CHAPTER 5. INFERENCE FOR NUMERICAL DATA"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.144,
+            0.068,
+            0.245,
+            0.081
+          ],
+          "level": 2,
+          "content": "EXAMPLE 5.3"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.088,
+            0.858,
+            0.193
+          ],
+          "content": "Dolphins are at the top of the oceanic food chain; as a consequence, dangerous substances such as mercury tend to be present in their organs and muscles at high concentrations. In areas where dolphins are regularly consumed, it is important to monitor dolphin mercury levels. This example uses data from a random sample of 19 Risso’s dolphins from the Taiji area in Japan.<sup>2</sup> Calculate the 95% confidence interval for average mercury content in Risso’s dolphins from the Taiji area using the data in Figure 5.6."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.209,
+            0.858,
+            0.279
+          ],
+          "content": "The observations are a simple random sample consisting of less than 10% of the population, so independence of the observations is reasonable. The summary statistics in Figure 5.6 do not suggest any skew or outliers; all observations are within 2.5 standard deviations of the mean. Based on this evidence, the approximate normality assumption seems reasonable."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.286,
+            0.568,
+            0.302
+          ],
+          "content": "Use the t-distribution to calculate the confidence interval:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.374,
+            0.316,
+            0.625,
+            0.38
+          ],
+          "content": "\\begin{array}{l} \\overline {{x}} \\pm t _ {\\mathrm{df}} ^ {\\star} \\times \\mathrm{SE} = \\overline {{x}} \\pm t _ {1 8} ^ {\\star} \\times s / \\sqrt {n} \\\\ = 4. 4 \\pm 2. 1 0 \\times 2. 3 / \\sqrt {1 9} \\\\ = (3. 2 9, 5. 5 1) \\mu \\mathrm{g/wet} \\mathrm{g}. \\\\ \\end{array}",
+          "image_source": "images/page_241_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.401,
+            0.856,
+            0.47
+          ],
+          "content": "The $t ^ { \\star }$ point can be read from the t-table on page 239, in the column with area totaling 0.05 in the two tails (third column) and the row with 18 degrees of freedom. Based on these data, one can be 95% confident the average mercury content of muscles in Risso’s dolphins is between 3.29 and 5.51 µg/wet gram."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.477,
+            0.858,
+            0.51
+          ],
+          "content": "Alternatively, the $t ^ { \\star }$ point can be calculated in R with the function qt, which returns a value of 2.1009."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.347,
+            0.541,
+            0.657,
+            0.576
+          ],
+          "content": "| n | $\\overline{x}$ | s | minimum | maximum |\n| --- | --- | --- | --- | --- |\n| 19 | 4.4 | 2.3 | 1.7 | 9.2 |",
+          "captions": [
+            {
+              "bbox": [
+                0.205,
+                0.585,
+                0.795,
+                0.632
+              ],
+              "content": "Figure 5.6: Summary of mercury content in the muscle of 19 Risso’s dolphins from the Taiji area. Measurements are in $\\mu \\mathrm { g } / \\mathrm { w e t }$ g (micrograms of mercury per wet gram of muscle)."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_241_table_9.jpg"
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.092,
+            0.279,
+            0.118,
+            0.299
+          ],
+          "content": "E"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.143,
+            0.9,
+            0.858,
+            0.951
+          ],
+          "content": "<sup>2</sup>Taiji is a significant source of dolphin and whale meat in Japan. Thousands of dolphins pass through the Taiji area annually; assume that these 19 dolphins represent a simple random sample. Data reference: Endo T and Haraguchi K. 2009. High mercury levels in hair samples from residents of Taiji, a Japanese whaling town. Marine Pollution Bulletin 60(5):743-747."
+        }
+      ]
+    },
+    {
+      "page_idx": 242,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.145,
+            0.026,
+            0.64,
+            0.04
+          ],
+          "content": "5.1. SINGLE-SAMPLE INFERENCE WITH THE T -DISTRIBUTION"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.932,
+            0.027,
+            0.962,
+            0.04
+          ],
+          "content": "243"
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.09,
+            0.119,
+            0.118,
+            0.14
+          ],
+          "content": "G"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.144,
+            0.068,
+            0.31,
+            0.081
+          ],
+          "level": 2,
+          "content": "GUIDED PRACTICE 5.4"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.088,
+            0.858,
+            0.192
+          ],
+          "content": "The FDA’s webpage provides some data on mercury content of various fish species.<sup>3</sup> From a sample of 15 white croaker (Pacific), a sample mean and standard deviation were computed as 0.287 and 0.069 ppm (parts per million), respectively. The 15 observations ranged from 0.18 to 0.41 ppm. Assume that these observations are independent. Based on summary statistics, does the normality assumption seem reasonable? If so, calculate a 90% confidence interval for the average mercury content of white croaker (Pacific).<sup>4</sup>"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.144,
+            0.228,
+            0.245,
+            0.242
+          ],
+          "level": 2,
+          "content": "EXAMPLE 5.5"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.249,
+            0.856,
+            0.301
+          ],
+          "content": "According to the EPA, regulatory action should be taken if fish species are found to have a mercury level of 0.5 ppm or higher. Conduct a formal significance test to evaluate whether the average mercury content of croaker white fish (Pacific) is different from 0.50 ppm. Use α = 0.05."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.318,
+            0.856,
+            0.37
+          ],
+          "content": "The FDA regulatory guideline is a ‘one-sided’ statement; fish should not be eaten if the mercury level is larger than a certain value. However, without prior information on whether the mercury in this species tends to be high or low, it is best to do a two-sided test."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.378,
+            0.592,
+            0.394
+          ],
+          "content": "State the hypotheses: $H _ { 0 } : \\mu = 0 . 5 \\; \\mathrm { v s } \\; H _ { A } : \\mu \\neq 0 . 5 . \\; \\mathrm { L e t } \\; \\alpha = 0 . 0 5 .$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.403,
+            0.321,
+            0.417
+          ],
+          "content": "Calculate the t-statistic:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.374,
+            0.413,
+            0.625,
+            0.448
+          ],
+          "content": "t = \\frac {\\overline {{x}} - \\mu_ {0}}{\\mathrm{SE}} = \\frac {0 . 2 8 7 - 0 . 5 0}{0 . 0 6 9 / \\sqrt {1 5}} = - 1 1. 9 6",
+          "image_source": "images/page_242_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.46,
+            0.856,
+            0.513
+          ],
+          "content": "The probability that the absolute value of a t-statistic with 14 df is smaller than -11.96 is smaller than 0.01. Thus, $p < 0 . 0 1$ . There is evidence to suggest at the $\\alpha = 0 . 0 5$ significance level that the average mercury content of this fish species is lower than 0.50 ppm, since x is less than 0.50."
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.09,
+            0.36,
+            0.118,
+            0.381
+          ],
+          "content": "E"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.166,
+            0.887,
+            0.612,
+            0.9
+          ],
+          "content": "<sup>3</sup>[www.fda.gov/food/foodborneillnesscontaminants/metals/ucm115644.htm](http://www.openintro.org/redirect.php?go=textbook-fda_mercury_in_fish_2010&referrer=biostat1_pdf)"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.142,
+            0.901,
+            0.856,
+            0.951
+          ],
+          "content": "<sup>4</sup>There are no obvious outliers; all observations are within 2 standard deviations of the mean. If there is skew, it is not evident. There are no red flags for the normal model based on this (limited) information. x ± t?14 × SE → 0.287 ± 1.76 × 0.0178 → (0.256,0.318). We are 90% confident that the average mercury content of croaker white fish (Pacific) is between 0.256 and 0.318 ppm."
+        }
+      ]
+    },
+    {
+      "page_idx": 243,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.041,
+            0.027,
+            0.071,
+            0.04
+          ],
+          "content": "244"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.467,
+            0.026,
+            0.857,
+            0.04
+          ],
+          "content": "CHAPTER 5. INFERENCE FOR NUMERICAL DATA"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.144,
+            0.075,
+            0.64,
+            0.101
+          ],
+          "level": 2,
+          "content": "5.2 Two-sample test for paired data"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.136,
+            0.858,
+            0.239
+          ],
+          "content": "In the 2000 Olympics, was the use of a new wetsuit design responsible for an observed increase in swim velocities? In a study designed to investigate this question, twelve competitive swimmers swam 1500 meters at maximal speed, once wearing a wetsuit and once wearing a regular swimsuit.<sup>5</sup> The order of wetsuit versus swimsuit was randomized for each of the 12 swimmers. Figure 5.7 shows the average velocity recorded for each swimmer, measured in meters per second $( \\mathbf { m } / \\mathbf { s } ) .$ <sup>6</sup>"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.212,
+            0.25,
+            0.794,
+            0.454
+          ],
+          "content": "|  | swimmer.number | wet.suit.velocity | swim.suit.velocity | velocity.diff |\n| --- | --- | --- | --- | --- |\n| 1 | 1 | 1.57 | 1.49 | 0.08 |\n| 2 | 2 | 1.47 | 1.37 | 0.10 |\n| 3 | 3 | 1.42 | 1.35 | 0.07 |\n| 4 | 4 | 1.35 | 1.27 | 0.08 |\n| 5 | 5 | 1.22 | 1.12 | 0.10 |\n| 6 | 6 | 1.75 | 1.64 | 0.11 |\n| 7 | 7 | 1.64 | 1.59 | 0.05 |\n| 8 | 8 | 1.57 | 1.52 | 0.05 |\n| 9 | 9 | 1.56 | 1.50 | 0.06 |\n| 10 | 10 | 1.53 | 1.45 | 0.08 |\n| 11 | 11 | 1.49 | 1.44 | 0.05 |\n| 12 | 12 | 1.51 | 1.41 | 0.10 |",
+          "captions": [
+            {
+              "bbox": [
+                0.375,
+                0.462,
+                0.625,
+                0.479
+              ],
+              "content": "Figure 5.7: Paired Swim Suit Data"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_243_table_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.496,
+            0.859,
+            0.652
+          ],
+          "content": "The swimsuit velocity data are an example of **paired data**, in which two sets of observations are uniquely paired so that an observation in one set matches an observation in the other; in this case, each swimmer has two measured velocities, one with a wetsuit and one with a swimsuit. A natural measure of the effect of the wetsuit on swim velocity is the difference between the measured maximum velocities (velocity.diff = wet.suit.velocity - swim.suit.velocity). Even though there are two measurements per swimmer, using the difference in velocities as the variable of interest allows for the problem to be approached like those in Section 5.1. Although it was not explicitly noted, the data used in Section 4.3.1 were paired; each respondent had both an actual and desired weight."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.653,
+            0.859,
+            0.741
+          ],
+          "content": "Suppose the parameter δ is the population average of the difference in maximum velocities during a 1500m swim if all competitive swimmers recorded swim velocities with each suit type. A hypothesis test can then be conducted with the null hypothesis that the mean population difference in swim velocities between suit types equals 0 (i.e., there is no difference in population average swim velocities), $H _ { 0 } : \\delta = 0 ,$ against the alternative that the difference is non-zero, $H _ { A } : \\delta \\neq 0$"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.16,
+            0.761,
+            0.468,
+            0.776
+          ],
+          "level": 2,
+          "content": "STATING HYPOTHESES FOR PAIRED DATA"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.159,
+            0.782,
+            0.842,
+            0.817
+          ],
+          "content": "When testing a hypothesis about paired data, compare the groups by testing whether the population mean of the differences between the groups equals 0."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.184,
+            0.827,
+            0.72,
+            0.871
+          ],
+          "sub_type": "text",
+          "content": "– For a two-sided test, $H _ { 0 } : \\delta = 0 ;   H _ { A } : \\delta \\neq 0 .$ .\n– For a one-sided test, either $H _ { 0 } : \\delta = 0 ;   H _ { A } : \\delta > 0 \\mathrm { ~ o r ~ } H _ { 0 } : \\delta = 0 ;   H _ { A } : \\delta < 0 .$"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.143,
+            0.89,
+            0.858,
+            0.916
+          ],
+          "content": "<sup>5</sup>De Lucas et. al, The effects of wetsuits on physiological and biomechanical indices during swimming. Journal of Science and Medicine in Sport, 2000; 3(1): 1-8"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.143,
+            0.917,
+            0.858,
+            0.943
+          ],
+          "content": "<sup>6</sup>The data are available as swim in the oibiostat R package. The data are also used in Lock et. al Statistics, Unlocking the Power of Data, Wiley, 2013."
+        }
+      ]
+    },
+    {
+      "page_idx": 244,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.145,
+            0.026,
+            0.486,
+            0.04
+          ],
+          "content": "5.2. TWO-SAMPLE TEST FOR PAIRED DATA"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.932,
+            0.027,
+            0.962,
+            0.04
+          ],
+          "content": "245"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.066,
+            0.858,
+            0.205
+          ],
+          "content": "Some important assumptions are being made. First, it is assumed that the data are a random sample from the population. While the observations are likely independent, it is more difficult to justify that this sample of 12 swimmers is randomly drawn from the entire population of competitive swimmers. Nevertheless, it is often assumed in problems such as these that the participants are reasonably representative of competitive swimmers. Second, it is assumed that the population of differences is normally distributed. This is a small sample, one in which normality would be difficult to confirm. The dot plot for the difference in velocities in Figure 5.8 shows approximate symmetry."
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.197,
+            0.226,
+            0.806,
+            0.299
+          ],
+          "sub_type": "scatter",
+          "content": "| Difference in Swim Velocities (m/s) | Value |\n| --- | --- |\n| 0.05 | ~0.15 |\n| 0.06 | ~0.15 |\n| 0.08 | ~0.15 |\n| 0.10 | ~0.15 |\n| 0.11 | ~0.15 |",
+          "captions": [
+            {
+              "bbox": [
+                0.3,
+                0.311,
+                0.699,
+                0.327
+              ],
+              "content": "Figure 5.8: A dot plot of differences in swim velocities."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_244_chart_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.345,
+            0.856,
+            0.395
+          ],
+          "content": "Let $\\overline { { x } } _ { \\mathrm { d i f f } }$ denote the sample average of the differences in maximum velocity, $s _ { \\mathrm { d i f f } }$ the sample standard deviation of the differences, and n the number of pairs in the dataset. The t-statistic used to test $H _ { 0 }$ vs. $H _ { A }$ is:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.465,
+            0.394,
+            0.537,
+            0.427
+          ],
+          "content": "\\frac {\\overline {{x}} _ {\\mathrm{diff}} - \\delta_ {0}}{s _ {\\mathrm{diff}} / \\sqrt {n}},",
+          "image_source": "images/page_244_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.433,
+            0.338,
+            0.451
+          ],
+          "content": "where in this case $\\delta _ { 0 } = 0 . ^ { 7 }$"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.144,
+            0.467,
+            0.245,
+            0.48
+          ],
+          "level": 2,
+          "content": "EXAMPLE 5.6"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.487,
+            0.856,
+            0.521
+          ],
+          "content": "Using the data in Figure 5.7, conduct a two-sided hypothesis test at $\\alpha = 0 . 0 5$ to assess whether there is evidence to suggest that wetsuits have an effect on swim velocities during a 1500m swim."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.54,
+            0.564,
+            0.556
+          ],
+          "content": "The hypotheses are $H _ { 0 } : \\delta = 0$ and $H _ { A } : \\delta \\neq 0$ . Let $\\alpha = 0 . 0 5$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.564,
+            0.321,
+            0.578
+          ],
+          "content": "Calculate the t-statistic:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.375,
+            0.574,
+            0.624,
+            0.609
+          ],
+          "content": "t = \\frac {\\overline {{x}} _ {\\mathrm{diff}} - \\delta_ {0}}{s _ {\\mathrm{diff}} / \\sqrt {n}} = \\frac {0 . 0 7 8 - 0}{0 . 0 2 2 / \\sqrt {1 2}} = 1 2. 3 2",
+          "image_source": "images/page_244_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.615,
+            0.327,
+            0.631
+          ],
+          "content": "The two-sided p-value is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.378,
+            0.632,
+            0.622,
+            0.648
+          ],
+          "content": "p = P (T <   - 1 2. 3 2) + P (T > 1 2. 3 2),",
+          "image_source": "images/page_244_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.658,
+            0.854,
+            0.691
+          ],
+          "content": "where t has a t-distribution with $n - 1 = 1 1$ degrees of freedom. The t-table shows that $p < 0 . 0 1$ Software can be used to show that $p = 8 . 9 \\times 1 0 ^ { - 8 }$ , a very small value indeed."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.7,
+            0.856,
+            0.751
+          ],
+          "content": "The data support the claim that the wetsuits changed swim velocity in a 1500m swim. The observed average increase of 0.078 m/s is significantly different than the null hypothesis of no change, and suggests that swim velocities are higher when swimmers wear wetsuits as opposed to swimsuits."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.768,
+            0.856,
+            0.819
+          ],
+          "content": "Calculating confidence intervals for paired data is also based on the differences between the values in each pair; the same approach as for single-sample data can be applied on the differences. For example, a two-sided 95% confidence interval for paired data has the form:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.37,
+            0.833,
+            0.629,
+            0.867
+          ],
+          "content": "\\left(\\overline {{x}} _ {\\mathrm{diff}} - t _ {d f} ^ {\\star} \\times \\frac {s _ {\\mathrm{diff}}}{\\sqrt {n}}, \\overline {{x}} _ {\\mathrm{diff}} + t _ {d f} ^ {\\star} \\times \\frac {s _ {\\mathrm{diff}}}{\\sqrt {n}}\\right),",
+          "image_source": "images/page_244_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.88,
+            0.829,
+            0.896
+          ],
+          "content": "where $t ^ { \\star }$ is the point on a t-distribution with $d f = n - 1$ for n pairs, with area 0.025 to its right."
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.092,
+            0.599,
+            0.118,
+            0.62
+          ],
+          "content": "E"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.166,
+            0.936,
+            0.533,
+            0.951
+          ],
+          "content": "<sup>7</sup>This value is specified by the null hypothesis of no difference."
+        }
+      ]
+    },
+    {
+      "page_idx": 245,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.041,
+            0.027,
+            0.07,
+            0.04
+          ],
+          "content": "246"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.467,
+            0.026,
+            0.857,
+            0.04
+          ],
+          "content": "CHAPTER 5. INFERENCE FOR NUMERICAL DATA"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.09,
+            0.085,
+            0.118,
+            0.106
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_245_image_2.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.144,
+            0.068,
+            0.31,
+            0.082
+          ],
+          "level": 2,
+          "content": "GUIDED PRACTICE 5.7"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.088,
+            0.856,
+            0.123
+          ],
+          "content": "Using the data in Figure 5.7, calculate a 95% confidence interval for the average difference in swim velocities during a 1500m swim. Is the interval consistent with the results of the hypothesis test?<sup>8</sup>"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.14,
+            0.858,
+            0.207
+          ],
+          "content": "The general approach when analyzing paired data is to first calculate the differences between the values in each pair, then use those differences in methods for confidence intervals and tests for a single sample. Any conclusion from an analysis should be stated in terms of the original paired measurements."
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.143,
+            0.906,
+            0.858,
+            0.952
+          ],
+          "content": "<sup>8</sup>Use the values of <sup>x</sup>diff and <sup>s</sup>diff as calculated previously: 0.078 and 0.022. The t? value of 2.20 has df = 11 and 0.025 area to the right. The confidence interval is (0.078±0.022) → (0.064, 0.091) m/s. With 95% confidence, δ lies between 0.064 √12 m/s and 0.09 m/s. The interval does not include 0 (no change), which is consistent with the result of the hypothesis test."
+        }
+      ]
+    },
+    {
+      "page_idx": 246,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.145,
+            0.026,
+            0.544,
+            0.04
+          ],
+          "content": "5.3. TWO-SAMPLE TEST FOR INDEPENDENT DATA"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.932,
+            0.027,
+            0.962,
+            0.04
+          ],
+          "content": "247"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.144,
+            0.075,
+            0.723,
+            0.1
+          ],
+          "level": 2,
+          "content": "5.3 Two-sample test for independent data"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.137,
+            0.856,
+            0.239
+          ],
+          "content": "Does treatment using embryonic stem cells (ESCs) help improve heart function following a heart attack? New and potentially risky treatments are sometimes tested in animals before studies in humans are conducted. In a 2005 paper in Lancet, Menard, et al. describe an experiment in which 18 sheep with induced heart attacks were randomly assigned to receive cell transplants containing either ESCs or inert material.<sup>9</sup> Various measures of cardiac function were measured 1 month after the transplant."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.241,
+            0.856,
+            0.309
+          ],
+          "content": "This design is typical of an intervention study. The analysis of such an experiment is an example of drawing inference about the difference in two population means, $\\mu _ { 1 }   -   \\mu _ { 2 }$ , when the data are independent, i.e., not paired. The point estimate of the difference, ${ \\overline { { x } } } _ { 1 } - { \\overline { { x } } } _ { 2 } ,$ , is used to calculate a t-statistic that is the basis of confidence intervals and tests."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.143,
+            0.341,
+            0.631,
+            0.359
+          ],
+          "level": 2,
+          "content": "5.3.1 Confidence interval for a difference of means"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.378,
+            0.856,
+            0.448
+          ],
+          "content": "Figure 5.9 contains summary statistics for the 18 sheep.<sup>10</sup> Percent change in heart pumping capacity was measured for each sheep. A positive value corresponds to increased pumping capacity, which generally suggests a stronger recovery from the heart attack. Is there evidence for a potential treatment effect of administering stem cells?"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.396,
+            0.458,
+            0.606,
+            0.509
+          ],
+          "content": "|  | n | $\\overline{x}$ | s |\n| --- | --- | --- | --- |\n| ESCs | 9 | 3.50 | 5.17 |\n| control | 9 | -4.33 | 2.76 |",
+          "captions": [
+            {
+              "bbox": [
+                0.266,
+                0.519,
+                0.733,
+                0.535
+              ],
+              "content": "Figure 5.9: Summary statistics of the embryonic stem cell study."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_246_table_7.jpg"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.143,
+            0.911,
+            0.856,
+            0.937
+          ],
+          "content": "<sup>9</sup>Menard C, et al., Transplantation of cardiac-committed mouse embryonic stem cells to infarcted sheep myocardium: a preclinical 2005; 366:1005-12, doi [https://doi.org/10.1016/S0140-6736(05)67380-1](https://doi.org/10.1016/S0140-6736%2805%2967380-1)"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.164,
+            0.937,
+            0.624,
+            0.951
+          ],
+          "content": "10<sub>The</sub> data are accessible as the dataset stem.cells in the openintro R package."
+        }
+      ]
+    },
+    {
+      "page_idx": 247,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.041,
+            0.027,
+            0.07,
+            0.04
+          ],
+          "content": "248"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.467,
+            0.026,
+            0.857,
+            0.04
+          ],
+          "content": "CHAPTER 5. INFERENCE FOR NUMERICAL DATA"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.307,
+            0.067,
+            0.699,
+            0.343
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.205,
+                0.353,
+                0.796,
+                0.385
+              ],
+              "content": "Figure 5.10: Histograms for both the embryonic stem cell group and the control group. Higher values are associated with greater improvement."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_247_image_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.402,
+            0.858,
+            0.489
+          ],
+          "content": "Figure 5.10 shows that the distributions of percent change do not have any prominent outliers, which would indicate a deviation from normality; this suggests that each sample mean can be modeled using a t-distribution. Additionally, the sheep in the study are independent of each other, and the sheep between groups are also independent. Thus, the t-distribution can be used to model the difference of the two sample means."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.16,
+            0.511,
+            0.588,
+            0.525
+          ],
+          "level": 2,
+          "content": "USING THE t-DISTRIBUTION FOR A DIFFERENCE IN MEANS"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.159,
+            0.531,
+            0.842,
+            0.584
+          ],
+          "content": "The t-distribution can be used for inference when working with the standardized difference of two means if (1) each sample meets the conditions for using the t-distribution and (2) the samples are independent."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.607,
+            0.857,
+            0.64
+          ],
+          "content": "A confidence interval for a difference of two means has the same basic structure as previously discussed confidence intervals:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.426,
+            0.658,
+            0.573,
+            0.679
+          ],
+          "content": "(\\overline {{x}} _ {1} - \\overline {{x}} _ {2}) \\pm t _ {d f} ^ {\\star} \\times \\mathrm{SE}.",
+          "image_source": "images/page_247_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.685,
+            0.856,
+            0.719
+          ],
+          "content": "The following formula is used to calculate the standard error of $\\overline { { x } } _ { 1 } - \\overline { { x } } _ { 2 }$ . Since $\\sigma$ is typically unknown, the standard error is estimated by using s in place of σ."
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.376,
+            0.731,
+            0.625,
+            0.774
+          ],
+          "content": "S E _ {\\overline {{x}} _ {1} - \\overline {{x}} _ {2}} = \\sqrt {\\frac {\\sigma_ {1} ^ {2}}{n _ {1}} + \\frac {\\sigma_ {2} ^ {2}}{n _ {2}}} \\approx \\sqrt {\\frac {s _ {1} ^ {2}}{n _ {1}} + \\frac {s _ {2} ^ {2}}{n _ {2}}}.",
+          "image_source": "images/page_247_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.78,
+            0.856,
+            0.832
+          ],
+          "content": "In this setting, the t-distribution has a somewhat complicated formula for the degrees of freedom that is usually calculated with software.<sup>11</sup> An alternative approach uses the smaller of $n _ { 1 } - 1$ and $n _ { 2 } - 1$ as the degrees of freedom.<sup>12</sup>"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.161,
+            0.911,
+            0.359,
+            0.924
+          ],
+          "content": "11<sub>See</sub> Section 5.6 for the formula."
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.144,
+            0.925,
+            0.856,
+            0.951
+          ],
+          "content": "12<sub>This</sub> technique for degrees of freedom is conservative with respect to a Type 1 Error; it is more difficult to reject the null hypothesis using this approach for degrees of freedom."
+        }
+      ]
+    },
+    {
+      "page_idx": 248,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.145,
+            0.026,
+            0.544,
+            0.04
+          ],
+          "content": "5.3. TWO-SAMPLE TEST FOR INDEPENDENT DATA"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.932,
+            0.027,
+            0.962,
+            0.04
+          ],
+          "content": "249"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.16,
+            0.074,
+            0.553,
+            0.088
+          ],
+          "level": 2,
+          "content": "DISTRIBUTION OF A DIFFERENCE OF SAMPLE MEANS"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.159,
+            0.095,
+            0.84,
+            0.127
+          ],
+          "content": "The sample difference of two means, ${ \\overline { { x } } } _ { 1 } - { \\overline { { x } } } _ { 2 } ,$ can be modeled using the t-distribution and the standard error"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.413,
+            0.139,
+            0.84,
+            0.166
+          ],
+          "content": "S E _ {\\overline {{x}} _ {1} - \\overline {{x}} _ {2}} = \\sqrt {\\frac {s _ {1} ^ {2}}{n _ {1}} + \\frac {s _ {2} ^ {2}}{n _ {2}}} \\tag {5.8}",
+          "image_source": "images/page_248_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.159,
+            0.178,
+            0.842,
+            0.23
+          ],
+          "content": "when each sample mean can itself be modeled using a t-distribution and the samples are independent. To calculate the degrees of freedom without using software, use the smaller of $n _ { 1 } - 1 \\mathrm { a n d } n _ { 2 } - 1$"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.144,
+            0.257,
+            0.245,
+            0.271
+          ],
+          "level": 2,
+          "content": "EXAMPLE 5.9"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.278,
+            0.857,
+            0.313
+          ],
+          "content": "Calculate and interpret a 95% confidence interval for the effect of ESCs on the change in heart pumping capacity of sheep following a heart attack."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.33,
+            0.641,
+            0.347
+          ],
+          "content": "The point estimate for the difference is $\\overline { { x } } _ { 1 } - \\overline { { x } } _ { 2 } = \\overline { { x } } _ { \\mathrm { e s c } } - \\overline { { x } } _ { \\mathrm { c o n t r o l } } = 7 . 8 3 .$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.355,
+            0.306,
+            0.37
+          ],
+          "content": "The standard error is:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.368,
+            0.367,
+            0.632,
+            0.41
+          ],
+          "content": "\\sqrt {\\frac {s _ {1} ^ {2}}{n _ {1}} + \\frac {s _ {2} ^ {2}}{n _ {2}}} = \\sqrt {\\frac {5 . 1 7 ^ {2}}{9} + \\frac {2 . 7 6 ^ {2}}{9}} = 1. 9 5.",
+          "image_source": "images/page_248_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.424,
+            0.857,
+            0.459
+          ],
+          "content": "Since $n _ { 1 } = n _ { 2 } = 9 ,$ , use $df = 8; t_{8}^{\\star} = 2.31$ for a 95% confidence interval. Alternatively, computer software can provide more accurate values: $d f = 1 2 . 2 2 5 , t ^ { \\star } = 2 . 1 7 4 .$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.466,
+            0.405,
+            0.483
+          ],
+          "content": "The confidence interval is given by:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.26,
+            0.498,
+            0.738,
+            0.518
+          ],
+          "content": "(\\overline {{x}} _ {1} - \\overline {{x}} _ {2}) \\pm t _ {d f} ^ {\\star} \\times \\text {SE} \\quad \\rightarrow \\quad 7. 8 3 \\pm 2. 3 1 \\times 1. 9 5 \\quad \\rightarrow \\quad (3. 3 8, 1 2. 3 8).",
+          "image_source": "images/page_248_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.537,
+            0.856,
+            0.572
+          ],
+          "content": "With 95% confidence, the average amount that ESCs improve heart pumping capacity lies between 3.38% to 12.38%.<sup>13</sup> The data provide evidence for a treatment effect of administering stem cells."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.143,
+            0.626,
+            0.606,
+            0.646
+          ],
+          "level": 2,
+          "content": "5.3.2 Hypothesis tests for a difference in means"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.663,
+            0.857,
+            0.734
+          ],
+          "content": "Is there evidence that newborns from mothers who smoke have a different average birth weight than newborns from mothers who do not smoke? The dataset births contains data from a random sample of 150 cases of mothers and their newborns in North Carolina over a year; there are 50 cases in the smoking group and 100 cases in the nonsmoking group.<sup>14</sup>"
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.263,
+            0.743,
+            0.74,
+            0.848
+          ],
+          "content": "|  | fAge | mAge | weeks | weight | sexBaby | smoke |\n| --- | --- | --- | --- | --- | --- | --- |\n| 1 | NA | 13 | 37 | 5.00 | female | nonsmoker |\n| 2 | NA | 14 | 36 | 5.88 | female | nonsmoker |\n| 3 | 19 | 15 | 41 | 8.13 | male | smoker |\n| $\\vdots$ | $\\vdots$ | $\\vdots$ | $\\vdots$ | $\\vdots$ | $\\vdots$ |  |\n| 150 | 45 | 50 | 36 | 9.25 | female | nonsmoker |",
+          "captions": [
+            {
+              "bbox": [
+                0.324,
+                0.858,
+                0.674,
+                0.874
+              ],
+              "content": "Figure 5.11: Four cases from the births dataset."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_248_table_17.jpg"
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.092,
+            0.405,
+            0.118,
+            0.425
+          ],
+          "content": "E"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.16,
+            0.922,
+            0.492,
+            0.936
+          ],
+          "content": "13<sub>From</sub> software, the confidence interval is (3.58, 12.08)."
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.163,
+            0.937,
+            0.479,
+            0.951
+          ],
+          "content": "14<sub>This</sub> dataset is available in the openintro R package."
+        }
+      ]
+    },
+    {
+      "page_idx": 249,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.041,
+            0.027,
+            0.07,
+            0.04
+          ],
+          "content": "250"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.467,
+            0.026,
+            0.857,
+            0.04
+          ],
+          "content": "CHAPTER 5. INFERENCE FOR NUMERICAL DATA"
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.09,
+            0.128,
+            0.118,
+            0.149
+          ],
+          "content": "",
+          "captions": [],
+          "footnotes": [],
+          "image_source": "images/page_249_image_2.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.145,
+            0.068,
+            0.254,
+            0.081
+          ],
+          "level": 2,
+          "content": "EXAMPLE 5.10"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.088,
+            0.856,
+            0.122
+          ],
+          "content": "Evaluate whether it is appropriate to apply the t-distribution to the difference in sample means between the two groups."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.14,
+            0.858,
+            0.209
+          ],
+          "content": "Since the data come from a simple random sample and consist of less than 10% of all such cases, the observations are independent. While each distribution is strongly skewed, the large sample sizes of 50 and 100 allow for the use of the t-distribution to model each mean separately. Thus, the difference in sample means may be modeled using a t-distribution."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.296,
+            0.241,
+            0.709,
+            0.51
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.204,
+                0.522,
+                0.798,
+                0.584
+              ],
+              "content": "Figure 5.12: The top panel represents birth weights for infants whose mothers smoked. The bottom panel represents the birth weights for infants whose mothers who did not smoke. The distributions exhibit moderate-to-strong and strong skew, respectively."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_249_image_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.597,
+            0.864,
+            0.719
+          ],
+          "content": "A hypothesis test can be conducted to evaluate whether there is a relationship between mother’s smoking status and average newborn birth weight. The null hypothesis represents the case of no difference between the groups, $H _ { 0 } : \\mu _ { n s } - \\mu _ { s } = 0 ,$ , where $\\mu _ { n s }$ represents the population mean of newborn birthweight for infants with mothers who did not smoke, and $\\mu _ { s }$ represents mean newborn birthweight for infants with mothers who smoked. Under the alternative hypothesis, there is some difference in average newborn birth weight between the groups, $H _ { A } : \\mu _ { n s } - \\mu _ { s } \\neq 0$ . The hypotheses can also be written as $H _ { 0 } : \\mu _ { n s } = \\mu _ { s }$ and $H _ { A } : \\mu _ { n s } \\neq \\mu _ { s }$"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.16,
+            0.741,
+            0.505,
+            0.755
+          ],
+          "level": 2,
+          "content": "STATING HYPOTHESES FOR TWO-GROUP DATA"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.761,
+            0.841,
+            0.796
+          ],
+          "content": "When testing a hypothesis about two independent groups, directly compare the two population means and state hypotheses in terms of $\\mu _ { 1 }$ and $\\mu _ { 2 }$"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.184,
+            0.806,
+            0.783,
+            0.852
+          ],
+          "sub_type": "text",
+          "content": "– For a two-sided test, $H _ { 0 } : \\mu _ { 1 } = \\mu _ { 2 } ;   H _ { A } : \\mu _ { 1 } \\neq \\mu _ { 2 } .$\n– For a one-sided test, either $H _ { 0 } : \\mu _ { 1 } = \\mu _ { 2 } ;   H _ { A } : \\mu _ { 1 } > \\mu _ { 2 } \\; \\mathrm { o r } \\; H _ { 0 } : \\mu _ { 1 } = \\mu _ { 2 } ;   H _ { A } : \\mu _ { 1 } < \\mu _ { 2 } .$"
+        }
+      ]
+    },
+    {
+      "page_idx": 250,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.145,
+            0.026,
+            0.544,
+            0.04
+          ],
+          "content": "5.3. TWO-SAMPLE TEST FOR INDEPENDENT DATA"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.932,
+            0.027,
+            0.96,
+            0.04
+          ],
+          "content": "251"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.066,
+            0.509,
+            0.081
+          ],
+          "content": "In this setting, the formula for a t-statistic is:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.335,
+            0.094,
+            0.664,
+            0.155
+          ],
+          "content": "t = \\frac {(\\overline {{x}} _ {1} - \\overline {{x}} _ {2}) - (\\mu_ {1} - \\mu_ {2})}{S E _ {\\overline {{x}} _ {1} - \\overline {{x}} _ {2}}} = \\frac {(\\overline {{x}} _ {1} - \\overline {{x}} _ {2}) - (\\mu_ {1} - \\mu_ {2})}{\\sqrt {\\frac {s _ {1} ^ {2}}{n _ {1}} + \\frac {s _ {2} ^ {2}}{n _ {2}}}}.",
+          "image_source": "images/page_250_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.167,
+            0.855,
+            0.199
+          ],
+          "content": "Under the null hypothesis of no difference between the groups, $H _ { 0 } : \\mu _ { 1 } - \\mu _ { 2 } = 0 ,$ , the formula simplifies to"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.445,
+            0.199,
+            0.556,
+            0.259
+          ],
+          "content": "t = \\frac {(\\overline {{x}} _ {1} - \\overline {{x}} _ {2})}{\\sqrt {\\frac {s _ {1} ^ {2}}{n _ {1}} + \\frac {s _ {2} ^ {2}}{n _ {2}}}}.",
+          "image_source": "images/page_250_equation_5.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.144,
+            0.276,
+            0.251,
+            0.29
+          ],
+          "level": 2,
+          "content": "EXAMPLE 5.11"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.297,
+            0.856,
+            0.346
+          ],
+          "content": "Using Figure 5.13, conduct a hypothesis test to evaluate whether there is evidence that newborns from mothers who smoke have a different average birth weight than newborns from mothers who do not smoke."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.366,
+            0.856,
+            0.416
+          ],
+          "content": "The hypotheses are $H _ { 0 } : \\mu _ { 1 } = \\mu _ { 2 }$ and $H _ { A } : \\mu _ { 1 } \\neq \\mu _ { 2 } ,$ where $\\mu _ { 1 }$ represents the average newborn birth weight for nonsmoking mothers and $\\mu _ { 2 }$ represents average newborn birth weight for mothers who smoke. Let $\\alpha = 0 . 0 5$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.425,
+            0.321,
+            0.44
+          ],
+          "content": "Calculate the t-statistic:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.36,
+            0.46,
+            0.638,
+            0.521
+          ],
+          "content": "t = \\frac {(\\overline {{x}} _ {1} - \\overline {{x}} _ {2})}{\\sqrt {\\frac {s _ {1} ^ {2}}{n _ {1}} + \\frac {s _ {2} ^ {2}}{n _ {2}}}} = \\frac {7 . 1 8 - 6 . 7 8}{\\sqrt {\\frac {1 . 6 0 ^ {2}}{1 0 0} + \\frac {1 . 4 3 ^ {2}}{5 0}}} = 1. 5 4.",
+          "image_source": "images/page_250_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.535,
+            0.856,
+            0.584
+          ],
+          "content": "Approximate the degrees of freedom as $50 - 1 = 49$ . The t-score of 1.49 falls between the first and second columns in the $d f = 4 9$ row of the t-table, so the two-sided p-value is between 0.10 and 0.20.<sup>15</sup>"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.594,
+            0.856,
+            0.663
+          ],
+          "content": "This p-value is larger than the significance value, 0.05, so the null hypothesis is not rejected. There is insufficient evidence to state there is a difference in average birth weight of newborns from North Carolina mothers who did smoke during pregnancy and newborns from North Carolina mothers who did not smoke during pregnancy."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.364,
+            0.695,
+            0.638,
+            0.759
+          ],
+          "content": "|  | smoker | nonsmoker |\n| --- | --- | --- |\n| mean | 6.78 | 7.18 |\n| st. dev. | 1.43 | 1.60 |\n| samp. size | 50 | 100 |",
+          "captions": [
+            {
+              "bbox": [
+                0.301,
+                0.77,
+                0.698,
+                0.785
+              ],
+              "content": "Figure 5.13: Summary statistics for the births dataset."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_250_table_13.jpg"
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.092,
+            0.46,
+            0.118,
+            0.48
+          ],
+          "content": "E"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.162,
+            0.935,
+            0.381,
+            0.951
+          ],
+          "content": "15<sub>From</sub> R, df = 89.277 and p = 0.138."
+        }
+      ]
+    },
+    {
+      "page_idx": 251,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.041,
+            0.027,
+            0.07,
+            0.04
+          ],
+          "content": "252"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.467,
+            0.026,
+            0.857,
+            0.04
+          ],
+          "content": "CHAPTER 5. INFERENCE FOR NUMERICAL DATA"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.143,
+            0.073,
+            0.61,
+            0.091
+          ],
+          "level": 2,
+          "content": "5.3.3 The paired test vs. independent group test"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.11,
+            0.858,
+            0.229
+          ],
+          "content": "In the two-sample setting, students often find it difficult to determine whether a paired test or an independent group test should be used. The paired test applies only in situations where there is a natural pairing of observations between groups, such as in the swim data. Pairing can be obvious, such as the two measurements for each swimmer, or more subtle, such as measurements of respiratory function in twins, where one member of the twin pair is treated with an experimental treatment and the other with a control. In the case of two independent groups, there is no natural way to pair observations."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.231,
+            0.856,
+            0.317
+          ],
+          "content": "A common error is to overlook pairing in data and assume that two groups are independent. The swimsuit data can be used to illustrate the possible harm in conducting an independent group test rather than a paired test. In Section 5.2, the paired t-test showed a significant difference in the swim velocities between swimmers wearing wetsuits versus regular swimsuits. Suppose the analysis had been conducted without accounting for the fact that the measurements were paired."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.318,
+            0.856,
+            0.352
+          ],
+          "content": "The mean and standard deviation for the 12 wet suit velocities are 1.51 and 0.14 (m/sec), respectively, and 1.43 and 0.14 (m/sec) for the 12 swim suit velocities. A two-group test statistic is:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.38,
+            0.363,
+            0.621,
+            0.398
+          ],
+          "content": "t = \\frac {1 . 5 2 - 1 . 4 3}{\\sqrt {0 . 1 4 ^ {2} / 1 2 + 0 . 1 4 ^ {2} / 1 2}} = 1. 3 7.",
+          "image_source": "images/page_251_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.409,
+            0.856,
+            0.459
+          ],
+          "content": "If the degrees of freedom are approximated as $1 1 = 1 2   -   1$ , the two-sided p-value as calculated from software is 0.20. According to this method, the null hypothesis of equal mean velocities for the two suit types would not be rejected."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.461,
+            0.856,
+            0.599
+          ],
+          "content": "It is not difficult to show that the numerator of the paired test (the average of the within swimmer differences) and the numerator of the two-group test (the difference of the average times for the two groups) are identical. The values of the test statistics differ because the denominators are different—specifically, the standard errors associated with each statistic are different. For the paired test statistic, the standard error uses the standard deviation of the within pair differences (0.22) and has value $0 . 0 2 2 / \\sqrt { 1 2 } = 0 . 0 0 6$ . The two-group test statistic combines the standard deviations for the original measurements and has value $\\sqrt { 0 . 1 4 ^ { 2 } / 1 2 + 0 . 1 4 ^ { 2 } / 1 2 } = 0 . 0 6$ . The standard error for the two-group test is 10-fold larger than for the paired test."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.6,
+            0.856,
+            0.685
+          ],
+          "content": "This striking difference in the standard errors is caused by the much lower variability of the individual velocity differences compared to the variability of the original measurements. Due to the correlation between swim velocities for a single swimmer, the differences in the two velocity measurements for each swimmer are consistently small, resulting in low variability. Pairing has allowed for increased precision in estimating the difference between groups."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.687,
+            0.856,
+            0.755
+          ],
+          "content": "The swim suit data illustrates the importance of context, which distinguishes a statistical problem from a purely mathematical one. While both the paired and two-group tests are numerically feasible to calculate, without an apparent error, the context of the problem dictates that the correct approach is to use a paired test."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.143,
+            0.772,
+            0.319,
+            0.786
+          ],
+          "level": 2,
+          "content": "GUIDED PRACTICE 5.12"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.792,
+            0.856,
+            0.827
+          ],
+          "content": "Propose an experimental design for the embryonic stem cell study in sheep that would have required analysis with a paired t-test.<sup>16</sup>"
+        },
+        {
+          "type": "aside_text",
+          "bbox": [
+            0.09,
+            0.789,
+            0.118,
+            0.811
+          ],
+          "content": "G"
+        },
+        {
+          "type": "page_footnote",
+          "bbox": [
+            0.142,
+            0.9,
+            0.856,
+            0.951
+          ],
+          "content": "16<sub>The</sub> experiment could have been done on pairs of siblings, with one assigned to the treatment group and one assigned to the control group. Alternatively, sheep could be matched up based on particular characteristics relevant to the experiment; for example, sheep could be paired based on similar weight or age. Note that in this study, a design involving two measurements taken on each sheep would be impractical."
+        }
+      ]
+    },
+    {
+      "page_idx": 252,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.145,
+            0.026,
+            0.544,
+            0.04
+          ],
+          "content": "5.3. TWO-SAMPLE TEST FOR INDEPENDENT DATA"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.932,
+            0.027,
+            0.962,
+            0.04
+          ],
+          "content": "253"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.143,
+            0.073,
+            0.798,
+            0.091
+          ],
+          "level": 2,
+          "content": "5.3.4 Case study: discrimination in developmental disability support"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.11,
+            0.858,
+            0.231
+          ],
+          "content": "Section 1.7.1 presented an analysis of the relationship between age, ethnicity, and amount of expenditures for supporting developmentally disabled residents in the state of California, using the dds.discr dataset. When the variable age is ignored, the expenditures per consumer is larger on average for White non-Hispanics than Hispanics, but Figure 1.53 showed that average differences by ethnicity were much smaller within age cohorts. This section demonstrates the use of t-tests to conduct a more formal analysis of possible differences in expenditure by ethnicity, both overall (i.e., ignoring age) and within age cohorts."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.144,
+            0.249,
+            0.393,
+            0.266
+          ],
+          "level": 2,
+          "content": "Comparing expenditures overall"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.274,
+            0.856,
+            0.327
+          ],
+          "content": "When ignoring age, expenditures within the ethnicity groups Hispanic and White non-Hispanic show substantial right-skewing (Figure 1.45). A transformation is advisable before conducting a t-test. As shown in Figure 5.14, a natural log transformation effectively eliminates skewing."
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.208,
+            0.353,
+            0.71,
+            0.622
+          ],
+          "sub_type": "boxplot",
+          "content": "| Ethnicity | Q1 | Q2 (Median) | Q3 | Min | Max |\n| --- | --- | --- | --- | --- | --- |\n| Hispanic | ~7.8 | ~8.3 | ~9.3 | ~6.1 | ~11.1 |\n| White not Hispanic | ~8.3 | ~9.7 | ~10.7 | ~5.8 | ~11.2 |",
+          "captions": [
+            {
+              "bbox": [
+                0.296,
+                0.64,
+                0.704,
+                0.657
+              ],
+              "content": "Figure 5.14: A plot of log(expenditures) by ethnicity."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_252_chart_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.674,
+            0.858,
+            0.743
+          ],
+          "content": "Is there evidence of a difference in mean expenditures by ethnic group? Conduct a t-test of the null hypothesis $H _ { 0 } : \\mu _ { 1 } = \\mu _ { 2 }$ versus the two-sided alternative $H _ { A } : \\mu _ { 1 } \\neq \\mu _ { 2 }$ , where $\\mu _ { 1 }$ is the population mean log expenditure in Hispanics and $\\mu _ { 2 }$ is the population mean log expenditure in White non-Hispanics."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.329,
+            0.754,
+            0.673,
+            0.805
+          ],
+          "content": "|  | Ethnicity | n | $\\overline{x}$ | s |\n| --- | --- | --- | --- | --- |\n| 1 | Hispanic | 376 | 8.56 | 1.17 |\n| 2 | White non Hispanic | 401 | 9.47 | 1.35 |",
+          "captions": [
+            {
+              "bbox": [
+                0.205,
+                0.815,
+                0.794,
+                0.844
+              ],
+              "content": "Figure 5.15: Summary statistics for the transformed variable log(expenditures) in the dds.discr data."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_252_table_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.864,
+            0.856,
+            0.895
+          ],
+          "content": "The summary statistics required to calculate the t-statistic are shown in Figure 5.15. The t-statistic for the test is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.371,
+            0.89,
+            0.627,
+            0.925
+          ],
+          "content": "t = \\frac {9 . 4 7 - 8 . 5 6}{\\sqrt {1 . 3 5 ^ {2} / 4 0 1 + 1 . 1 7 ^ {2} / 3 7 6}} = 1 0. 1.",
+          "image_source": "images/page_252_equation_12.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 253,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.041,
+            0.027,
+            0.071,
+            0.04
+          ],
+          "content": "254"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.467,
+            0.026,
+            0.857,
+            0.04
+          ],
+          "content": "CHAPTER 5. INFERENCE FOR NUMERICAL DATA"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.066,
+            0.859,
+            0.185
+          ],
+          "content": "The degrees of freedom of the test can be approximated as $376 - 1 = 375;$ the p-value can be calculated using a normal approximation. Regardless of whether a t or normal distribution is used, the probability of a test statistic with absolute value larger than 10 is vanishingly small—the p-value is less than 0.001. When ignoring age, there is significant evidence of a difference in mean expenditures between Hispanics and White non-Hispanics. It appears that on average, White non-Hispanics receive a higher amount of developmental disability support from the state of California $\\left( \\overline { { x } } _ { 1 } < \\overline { { x } } _ { 2 } \\right)$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.187,
+            0.859,
+            0.275
+          ],
+          "content": "However, as indicated in Section 1.7.1, this is a misleading result. The analysis as conducted does not account for the confounding effect of age, which is associated with both expenditures and ethnicity. As individuals age, they typically require more support from the government. In this dataset, White non-Hispanics tend to be older than Hispanics; this difference in age distribution contributes to the apparent difference in expenditures between two groups."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.143,
+            0.292,
+            0.48,
+            0.309
+          ],
+          "level": 2,
+          "content": "Comparing expenditures within age cohorts"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.318,
+            0.857,
+            0.368
+          ],
+          "content": "One way to account for the effect of age is to compare mean expenditures within age cohorts. When comparing individuals of similar ages but different ethnic groups, are the differences in mean expenditures larger than would be expected by chance alone?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.37,
+            0.857,
+            0.435
+          ],
+          "content": "Figure 1.52 shows that the age cohort 13-17 is the largest among the Hispanic consumers, while the cohort 22-50 is the largest among White non-Hispanics. This section will examine the evidence against the null hypothesis of no difference in mean expenditures within these two co-horts."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.439,
+            0.859,
+            0.507
+          ],
+          "content": "Figure 5.16 shows that within both the age cohorts of 13-17 years and 22-50 years, the distribution of expenditures is reasonably symmetric; there is no need to apply a transformation before conducting a t-test. The skewing evident when age was ignored is due to the differing distributions of age within ethnicities."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.158,
+            0.534,
+            0.804,
+            0.768
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.205,
+                0.783,
+                0.795,
+                0.814
+              ],
+              "content": "Figure 5.16: (a)A plot of expenditures by ethnicity in the age cohort 13 - 17. (b) A plot of expenditures by ethnicity in the age cohort 22 - 50."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_253_image_8.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 254,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.145,
+            0.026,
+            0.544,
+            0.04
+          ],
+          "content": "5.3. TWO-SAMPLE TEST FOR INDEPENDENT DATA"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.932,
+            0.027,
+            0.962,
+            0.04
+          ],
+          "content": "255"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.066,
+            0.858,
+            0.135
+          ],
+          "content": "Figure 5.17 contains the summary statistics for computing the test statistic to compare expenditures in the two groups within this age cohort. The test statistic has value t = 0.318, with degrees of freedom 66. The two-sided p-value is 0.75. There is not evidence of a difference between mean expenditures in Hispanics and White non-Hispanics ages 13-17."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.304,
+            0.145,
+            0.699,
+            0.197
+          ],
+          "content": "|  | Ethnicity | n | $\\overline{x}$ | s |\n| --- | --- | --- | --- | --- |\n| 1 | Hispanic | 103 | 3955.28 | 938.82 |\n| 2 | White not Hispanic | 67 | 3904.36 | 1071.02 |",
+          "captions": [
+            {
+              "bbox": [
+                0.273,
+                0.206,
+                0.726,
+                0.223
+              ],
+              "content": "Figure 5.17: Summary statistics for expenditures, Ages 13-17."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_254_table_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.24,
+            0.859,
+            0.307
+          ],
+          "content": "The analysis of the age cohort 22 - 50 years shows the same qualitative result. The t-statistic calculated from the summary statistics in Figure 5.18 has value t = 0.659 and p-value 0.51. Just as in the 13-17 age cohort, there is insufficient evidence to reject the null hypothesis of no difference between the means."
+        },
+        {
+          "type": "table",
+          "bbox": [
+            0.299,
+            0.317,
+            0.704,
+            0.368
+          ],
+          "content": "|  | Ethnicity | n | $\\overline{x}$ | s |\n| --- | --- | --- | --- | --- |\n| 1 | Hispanic | 43 | 40924.12 | 6467.09 |\n| 2 | White not Hispanic | 133 | 40187.62 | 6081.33 |",
+          "captions": [
+            {
+              "bbox": [
+                0.269,
+                0.378,
+                0.731,
+                0.394
+              ],
+              "content": "Figure 5.18: Summary statistics for expenditures, Ages 22 - 50."
+            }
+          ],
+          "footnotes": [],
+          "image_source": "images/page_254_table_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.414,
+            0.866,
+            0.501
+          ],
+          "content": "The inference-based analyses for these two age cohorts support the conclusions reached through the exploratory approach used in Section 1.7.1—comparing individuals of similar ages shows that there are not large differences between mean expenditures for White non-Hispanics versus Hispanics. An analysis that accounts for age as a confounding variable does not suggest there is evidence of ethnic discrimination in developmental disability support provided by the State of California."
+        }
+      ]
+    },
+    {
+      "page_idx": 255,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.041,
+            0.027,
+            0.07,
+            0.04
+          ],
+          "content": "256"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.467,
+            0.026,
+            0.857,
+            0.04
+          ],
+          "content": "CHAPTER 5. INFERENCE FOR NUMERICAL DATA"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.144,
+            0.073,
+            0.543,
+            0.091
+          ],
+          "level": 2,
+          "content": "5.3.5 Pooled standard deviation estimate"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.11,
+            0.857,
+            0.178
+          ],
+          "content": "Occasionally, two populations will have standard deviations that are so similar that they can be treated as identical. For example, historical data or a well-understood biological mechanism may justify this strong assumption. In such cases, it can be more precise to use a pooled standard deviation to make inferences about the difference in population means."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.18,
+            0.858,
+            0.248
+          ],
+          "content": "The **pooled standard deviation** of two groups uses data from both samples to estimate the common standard deviation and standard error. If there are good reasons to believe that the population standard deviations are equal, an improved estimate of the group variances can be obtained by pooling the data from the two groups:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.387,
+            0.259,
+            0.617,
+            0.297
+          ],
+          "content": "s _ {\\mathrm{pooled}} ^ {2} = \\frac {s _ {1} ^ {2} (n _ {1} - 1) + s _ {2} ^ {2} (n _ {2} - 1)}{n _ {1} + n _ {2} - 2},",
+          "image_source": "images/page_255_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.307,
+            0.856,
+            0.373
+          ],
+          "content": "where $n _ { 1 }$ and $n _ { 2 }$ are the sample sizes, and $s _ { 1 }$ and $s _ { 2 }$ represent the sample standard deviations. In this setting, the t-statistic uses $s _ { \\mathrm { p o o l e d } } ^ { 2 }$ in place of $s _ { 1 } ^ { 2 }$ and $s _ { 2 } ^ { 2 }$ in the standard error formula, and the degrees of freedom for the t−statistic is the sum of the degrees of freedom for the two sample variances:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.372,
+            0.376,
+            0.629,
+            0.394
+          ],
+          "content": "\\mathrm{df} = (n _ {1} - 1) + (n _ {2} - 1) = n _ {1} + n _ {2} - 2.",
+          "image_source": "images/page_255_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.402,
+            0.852,
+            0.419
+          ],
+          "content": "The t-statistic for testing the null hypothesis of no difference between population means becomes"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.426,
+            0.431,
+            0.575,
+            0.476
+          ],
+          "content": "t = \\frac {\\overline {{x}} _ {1} - \\overline {{x}} _ {2}}{s _ {\\mathrm{pooled}} \\sqrt {\\frac {1}{n _ {1}} + \\frac {1}{n _ {2}}}}.",
+          "image_source": "images/page_255_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.179,
+            0.487,
+            0.842,
+            0.504
+          ],
+          "content": "The formula for the two-sided confidence interval for the difference in population means is"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.384,
+            0.516,
+            0.619,
+            0.552
+          ],
+          "content": "(\\overline {{x}} _ {1} - \\overline {{x}} _ {2}) \\pm t ^ {\\star} \\times s _ {\\mathrm{pooled}} \\sqrt {\\frac {1}{n _ {1}} + \\frac {1}{n _ {2}}},",
+          "image_source": "images/page_255_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.564,
+            0.856,
+            0.597
+          ],
+          "content": "where $t ^ { \\star }$ is the point on a t-distribution with $n _ { 1 }   +   n _ { 2 }   -   2$ degrees of freedom chosen according to the confidence coefficient."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.599,
+            0.856,
+            0.702
+          ],
+          "content": "The benefits of pooling the standard deviation are realized through obtaining a better estimate of the standard deviation for each group and using a larger degrees of freedom parameter for the tdistribution. Both of these changes may permit a more accurate model of the sampling distribution of $\\overline { { x } } _ { 1 } - \\overline { { x } } _ { 2 }$ , if the standard deviations of the two groups are indeed equal. In most applications, however, it is difficult to verify the assumption of equal population standard deviations, and thus safer to use the methods discussed in Sections 5.3.1 and 5.3.2."
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "created_at": "2021-08-08T07:49:19-07:00",
+      "creator_application": "LaTeX with hyperref package",
+      "producer_application": "macOS Version 10.15.6 (Build 19G2021) Quartz PDFContext, AppendMode 1.1",
+      "page_count": 472,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 240,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 241,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 242,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 243,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 244,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 245,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 246,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 247,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 248,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 249,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 250,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 251,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 252,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 253,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 254,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 255,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

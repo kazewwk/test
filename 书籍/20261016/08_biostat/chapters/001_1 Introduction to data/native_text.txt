@@ -1,0 +1,7252 @@
+--- PDF page 10 ---
+10
+Chapter 1
+Introduction to data
+1.1 Case study
+1.2 Data basics
+1.3 Data collection principles
+1.4 Numerical data
+1.5 Categorical data
+1.6 Relationships between two variables
+1.7 Exploratory data analysis
+1.8 Notes
+1.9 Exercises
+
+
+--- PDF page 11 ---
+11
+Making observations and recording data form the backbone of empirical research,
+and represent the beginning of a systematic approach to investigating scientiﬁc
+questions. As a discipline, statistics focuses on addressing the following three
+questions in a rigorous and eﬃcient manner: How can data best be collected? How
+should data be analyzed? What can be inferred from data?
+This chapter provides a brief discussion on the principles of data collection, and
+introduces basic methods for summarizing and exploring data.
+For labs, slides, and other resources, please visit
+www.openintro.org/book/biostat
+
+
+--- PDF page 12 ---
+12
+CHAPTER 1. INTRODUCTION TO DATA
+1.1
+Case study: preventing peanut allergies
+The proportion of young children in Western countries with peanut allergies has doubled in
+the last 10 years. Previous research suggests that exposing infants to peanut-based foods, rather
+than excluding such foods from their diets, may be an eﬀective strategy for preventing the develop-
+ment of peanut allergies. The "Learning Early about Peanut Allergy" (LEAP) study was conducted
+to investigate whether early exposure to peanut products reduces the probability that a child will
+develop peanut allergies.1
+The study team enrolled children in the United Kingdom between 2006 and 2009, selecting
+640 infants with eczema, egg allergy, or both. Each child was randomly assigned to either the
+peanut consumption (treatment) group or the peanut avoidance (control) group. Children in the
+treatment group were fed at least 6 grams of peanut protein daily until 5 years of age, while chil-
+dren in the control group avoided consuming peanut protein until 5 years of age.
+At 5 years of age, each child was tested for peanut allergy using an oral food challenge (OFC): 5
+grams of peanut protein in a single dose. A child was recorded as passing the oral food challenge if
+no allergic reaction was detected, and failing the oral food challenge if an allergic reaction occurred.
+These children had previously been tested for peanut allergy through a skin test, conducted at the
+time of study entry; the main analysis presented in the paper was based on data from 530 children
+with an earlier negative skin test.2
+Individual-level data from the study are shown in Figure 1.1 for 5 of the 530 children—each
+row represents a participant and shows the participant’s study ID number, treatment group assign-
+ment, and OFC outcome.3
+participant.ID
+treatment.group
+overall.V60.outcome
+LEAP_100522
+Peanut Consumption
+PASS OFC
+LEAP_103358
+Peanut Consumption
+PASS OFC
+LEAP_105069
+Peanut Avoidance
+PASS OFC
+LEAP_994047
+Peanut Avoidance
+PASS OFC
+LEAP_997608
+Peanut Consumption
+PASS OFC
+Figure 1.1: Individual-level LEAP results, for ﬁve children.
+The data can be organized in the form of a two-way summary table; Figure 1.2 shows the
+results categorized by treatment group and OFC outcome.
+FAIL OFC
+PASS OFC
+Sum
+Peanut Avoidance
+36
+227
+263
+Peanut Consumption
+5
+262
+267
+Sum
+41
+489
+530
+Figure 1.2: Summary of LEAP results, organized by treatment group (either
+peanut avoidance or consumption) and result of the oral food challenge at 5 years
+of age (either pass or fail).
+1Du Toit, George, et al. Randomized trial of peanut consumption in infants at risk for peanut allergy. New England
+Journal of Medicine 372.9 (2015): 803-813.
+2Although a total of 542 children had an earlier negative skin test, data collection did not occur for 12 children.
+3The data are available as LEAP in the R package oibiostat.
+
+
+--- PDF page 13 ---
+1.1. CASE STUDY
+13
+The summary table makes it easier to identify patterns in the data. Recall that the question
+of interest is whether children in the peanut consumption group are more or less likely to develop
+peanut allergies than those in the peanut avoidance group. In the avoidance group, the proportion
+of children failing the OFC is 36/263 = 0.137 (13.7%); in the consumption group, the proportion
+of children failing the OFC is 5/267 = 0.019 (1.9%). Figure 1.3 shows a graphical method of dis-
+playing the study results, using either the number of individuals per category from Figure 1.2 or
+the proportion of individuals with a speciﬁc OFC outcome in a group.
+Peanut Avoidance
+Peanut Consumption
+0
+50
+100
+150
+200
+250
+FAIL OFC
+PASS OFC
+(a)
+Peanut Avoidance
+Peanut Consumption
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+FAIL OFC
+PASS OFC
+(b)
+Figure 1.3: (a) A bar plot displaying the number of individuals who failed or
+passed the OFC in each treatment group. (b) A bar plot displaying the proportions
+of individuals in each group that failed or passed the OFC.
+The proportion of participants failing the OFC is 11.8% higher in the peanut avoidance group
+than the peanut consumption group. Another way to summarize the data is to compute the ratio of
+the two proportions (0.137/0.019 = 7.31), and conclude that the proportion of participants failing
+the OFC in the avoidance group is more than 7 times as large as in the consumption group; i.e.,
+the risk of failing the OFC was more than 7 times as great for participants in the avoidance group
+relative to the consumption group.
+Based on the results of the study, it seems that early exposure to peanut products may be
+an eﬀective strategy for reducing the chances of developing peanut allergies later in life. It is
+important to note that this study was conducted in the United Kingdom at a single site of pediatric
+care; it is not clear that these results can be generalized to other countries or cultures.
+The results also raise an important statistical issue: does the study provide deﬁnitive evidence
+that peanut consumption is beneﬁcial? In other words, is the 11.8% diﬀerence between the two
+groups larger than one would expect by chance variation alone? The material on inference in later
+chapters will provide the statistical tools to evaluate this question.
+
+
+--- PDF page 14 ---
+14
+CHAPTER 1. INTRODUCTION TO DATA
+1.2
+Data basics
+Eﬀective organization and description of data is a ﬁrst step in most analyses. This section
+introduces a structure for organizing data and basic terminology used to describe data.
+1.2.1
+Observations, variables, and data matrices
+In evolutionary biology, parental investment refers to the amount of time, energy, or other
+resources devoted towards raising oﬀspring. This section introduces the frog dataset, which orig-
+inates from a 2013 study about maternal investment in a frog species.4 Reproduction is a costly
+process for female frogs, necessitating a trade-oﬀbetween individual egg size and total number of
+eggs produced. Researchers were interested in investigating how maternal investment varies with
+altitude and collected measurements on egg clutches found at breeding ponds across 11 study sites;
+for 5 sites, the body size of individual female frogs was also recorded.
+altitude
+latitude
+egg.size
+clutch.size
+clutch.volume
+body.size
+1
+3,462.00
+34.82
+1.95
+181.97
+177.83
+3.63
+2
+3,462.00
+34.82
+1.95
+269.15
+257.04
+3.63
+3
+3,462.00
+34.82
+1.95
+158.49
+151.36
+3.72
+150
+2,597.00
+34.05
+2.24
+537.03
+776.25
+NA
+Figure 1.4: Data matrix for the frog dataset.
+Figure 1.4 displays rows 1, 2, 3, and 150 of the data from the 431 clutches observed as part
+of the study.5 Each row in the table corresponds to a single clutch, indicating where the clutch
+was collected (altitude and latitude), egg.size, clutch.size, clutch.volume, and body.size of
+the mother when available. "NA" corresponds to a missing value, indicating that information on
+an individual female was not collected for that particular clutch. The recorded characteristics are
+referred to as variables; in this table, each column represents a variable.
+variable
+description
+altitude
+Altitude of the study site in meters above sea level
+latitude
+Latitude of the study site measured in degrees
+egg.size
+Average diameter of an individual egg to the 0.01 mm
+clutch.size
+Estimated number of eggs in clutch
+clutch.volume
+Volume of egg clutch in mm3
+body.size
+Length of mother frog in cm
+Figure 1.5: Variables and their descriptions for the frog dataset.
+It is important to check the deﬁnitions of variables, as they are not always obvious. For ex-
+ample, why has clutch.size not been recorded as whole numbers? For a given clutch, researchers
+counted approximately 5 grams’ worth of eggs and then estimated the total number of eggs based
+on the mass of the entire clutch. Deﬁnitions of the variables are given in Figure 1.5.6
+4Chen, W., et al. Maternal investment increases with altitude in a frog on the Tibetan Plateau. Journal of evolutionary
+biology 26.12 (2013): 2710-2715.
+5The frog dataset is available in the R package oibiostat.
+6The data discussed here are in the original scale; in the published paper, some values have undergone a natural log
+transformation.
+
+
+--- PDF page 15 ---
+1.2. DATA BASICS
+15
+The data in Figure 1.4 are organized as a data matrix. Each row of a data matrix corresponds
+to an observational unit, and each column corresponds to a variable. A piece of the data matrix for
+the LEAP study introduced in Section 1.1 is shown in Figure 1.1; the rows are study participants
+and three variables are shown for each participant. Data matrices are a convenient way to record
+and store data. If the data are collected for another individual, another row can easily be added;
+similarly, another column can be added for a new variable.
+1.2.2
+Types of variables
+The Functional polymorphisms Associated with human Muscle Size and Strength study (FA-
+MuSS) measured a variety of demographic, phenotypic, and genetic characteristics for about 1,300
+participants.7 Data from the study have been used in a number of subsequent studies,8 such as
+one examining the relationship between muscle strength and genotype at a location on the ACTN3
+gene.9
+The famuss dataset is a subset of the data for 595 participants.10 Four rows of the famuss
+dataset are shown in Figure 1.6, and the variables are described in Figure 1.7.
+sex
+age
+race
+height
+weight
+actn3.r577x
+ndrm.ch
+1
+Female
+27
+Caucasian
+65.0
+199.0
+CC
+40.0
+2
+Male
+36
+Caucasian
+71.7
+189.0
+CT
+25.0
+3
+Female
+24
+Caucasian
+65.0
+134.0
+CT
+40.0
+595
+Female
+30
+Caucasian
+64.0
+134.0
+CC
+43.8
+Figure 1.6: Four rows from the famuss data matrix.
+variable
+description
+sex
+Sex of the participant
+age
+Age in years
+race
+Race, recorded as African
+Am (African American), Caucasian, Asian,
+Hispanic or Other
+height
+Height in inches
+weight
+Weight in pounds
+actn3.r577x
+Genotype at the location r577x in the ACTN3 gene.
+ndrm.ch
+Percent change in strength in the non-dominant arm, comparing strength
+after to before training
+Figure 1.7: Variables and their descriptions for the famuss dataset.
+The variables age, height, weight, and ndrm.ch are numerical variables. They take on numer-
+ical values, and it is reasonable to add, subtract, or take averages with these values. In contrast,
+a variable reporting telephone numbers would not be classiﬁed as numerical, since sums, diﬀer-
+ences, and averages in this context have no meaning. Age measured in years is said to be discrete,
+since it can only take on numerical values with jumps; i.e., positive integer values. Percent change
+in strength in the non-dominant arm (ndrm.ch) is continuous, and can take on any value within a
+speciﬁed range.
+7Thompson PD, Moyna M, Seip, R, et al., 2004. Functional Polymorphisms Associated with Human Muscle Size and
+Strength. Medicine and Science in Sports and Exercise 36:1132 - 1139.
+8Pescatello L, et al. Highlights from the functional single nucleotide polymorphisms associated with human muscle
+size and strength or FAMuSS study, BioMed Research International 2013.
+9Clarkson P, et al., Journal of Applied Physiology 99: 154-163, 2005.
+10The subset is from Foulkes, Andrea S. Applied statistical genetics with R: for population-based association studies.
+Springer Science & Business Media, 2009. The full version of the data is available at http://people.umass.edu/foulkes/
+asg/data.html.
+
+
+--- PDF page 16 ---
+16
+CHAPTER 1. INTRODUCTION TO DATA
+Figure 1.8: Breakdown of variables into their respective types.
+The variables sex, race, and actn3.r577x are categorical variables, which take on values that
+are names or labels. The possible values of a categorical variable are called the variable’s levels.11
+For example, the levels of actn3.r577x are the three possible genotypes at this particular locus:
+CC, CT, or TT. Categorical variables without a natural ordering are called nominal categorical
+variables; sex, race, and actn3.r577x are all nominal categorical variables. Categorical variables
+with levels that have a natural ordering are referred to as ordinal categorical variables. For exam-
+ple, age of the participants grouped into 5-year intervals (15-20, 21-25, 26-30, etc.) is an ordinal
+categorical variable.
+EXAMPLE 1.1
+Classify the variables in the frog dataset:
+altitude,
+latitude,
+egg.size,
+clutch.size,
+clutch.volume, and body.size.
+The variables egg.size, clutch.size, clutch.volume, and body.size are continuous numerical
+variables, and can take on all positive values.
+In the context of this study, the variables altitude and latitude are best described as categorical
+variables, since the numerical values of the variables correspond to the 11 speciﬁc study sites where
+data were collected. Researchers were interested in exploring the relationship between altitude and
+maternal investment; it would be reasonable to consider altitude an ordinal categorical variable.
+GUIDED PRACTICE 1.2
+Characterize the variables treatment.group and overall.V60.outcome from the LEAP study (dis-
+cussed in Section 1.1).12
+GUIDED PRACTICE 1.3
+Suppose that on a given day, a research assistant collected data on the ﬁrst 20 individuals visiting a
+walk-in clinic: age (measured as less than 21, 21 - 65, and greater than 65 years of age), sex, height,
+weight, and reason for the visit. Classify each of the variables.13
+11Categorical variables are sometimes called factor variables.
+12These variables measure non-numerical quantities, and thus are categorical variables with two levels.
+13Height and weight are continuous numerical variables. Age as measured by the research assistant is ordinal categorical.
+Sex and the reason for the visit are nominal categorical variables.
+
+
+--- PDF page 17 ---
+1.2. DATA BASICS
+17
+1.2.3
+Relationships between variables
+Many studies are motivated by a researcher examining how two or more variables are related.
+For example, do the values of one variable increase as the values of another decrease? Do the values
+of one variable tend to diﬀer by the levels of another variable?
+One study used the famuss data to investigate whether ACTN3 genotype at a particular lo-
+cation (residue 577) is associated with change in muscle strength. The ACTN3 gene codes for a
+protein involved in muscle function. A common mutation in the gene at a speciﬁc location changes
+the cytosine (C) nucleotide to a thymine (T) nucleotide; individuals with the TT genotype are un-
+able to produce any ACTN3 protein.
+Researchers hypothesized that genotype at this location might inﬂuence muscle function. As
+a measure of muscle function, they recorded the percent change in non-dominant arm strength
+after strength training; this variable, ndrm.ch, is the response variable in the study. A response
+variable is deﬁned by the particular research question a study seeks to address, and measures the
+outcome of interest in the study. A study will typically examine whether the values of a response
+variable diﬀer as values of an explanatory variable change, and if so, how the two variables are
+related. A given study may examine several explanatory variables for a single response variable.14
+The explanatory variable examined in relation to ndrm.ch in the study is actn3.r557x, ACTN3
+genotype at location 577.
+EXAMPLE 1.4
+In the maternal investment study conducted on frogs, researchers collected measurements on egg
+clutches and female frogs at 11 study sites, located at diﬀering altitudes, in order to investigate
+how maternal investment varies with altitude. Identify the response and explanatory variables in
+the study.
+The variables egg.size, clutch.size, and clutch.volume are response variables indicative of ma-
+ternal investment.
+The explanatory variable examined in the study is altitude.
+While latitude is an environmental factor that might potentially inﬂuence features of the egg
+clutches, it is not a variable of interest in this particular study.
+Female body size (body.size) is neither an explanatory nor response variable.
+GUIDED PRACTICE 1.5
+Refer to the variables from the famuss dataset described in Figure 1.7 to formulate a question about
+the relationships between these variables, and identify the response and explanatory variables in
+the context of the question.15
+14Response variables are sometimes called dependent variables and explanatory variables are often called independent
+variables or predictors.
+15Two sample questions: (1) Does change in participant arm strength after training seem associated with race? The
+response variable is ndrm.ch and the explanatory variable is race. (2) Do male participants appear to respond diﬀerently to
+strength training than females? The response variable is ndrm.ch and the explanatory variable is sex.
+
+
+--- PDF page 18 ---
+18
+CHAPTER 1. INTRODUCTION TO DATA
+1.3
+Data collection principles
+The ﬁrst step in research is to identify questions to investigate. A clearly articulated research
+question is essential for selecting subjects to be studied, identifying relevant variables, and deter-
+mining how data should be collected.
+1.3.1
+Populations and samples
+Consider the following research questions:
+1. Do blueﬁn tuna from the Atlantic Ocean have particularly high levels of mercury, such that
+they are unsafe for human consumption?
+2. For infants predisposed to developing a peanut allergy, is there evidence that introducing
+peanut products early in life is an eﬀective strategy for reducing the risk of developing a
+peanut allergy?
+3. Does a recently developed drug designed to treat glioblastoma, a form of brain cancer, appear
+more eﬀective at inducing tumor shrinkage than the drug currently on the market?
+Each of these questions refers to a speciﬁc target population. For example, in the ﬁrst ques-
+tion, the target population consists of all blueﬁn tuna from the Atlantic Ocean; each individual
+blueﬁn tuna represents a case. It is almost always either too expensive or logistically impossible to
+collect data for every case in a population. As a result, nearly all research is based on information
+obtained about a sample from the population. A sample represents a small fraction of the popu-
+lation. Researchers interested in evaluating the mercury content of blueﬁn tuna from the Atlantic
+Ocean could collect a sample of 500 blueﬁn tuna (or some other quantity), measure the mercury
+content, and use the observed information to formulate an answer to the research question.
+GUIDED PRACTICE 1.6
+Identify the target populations for the remaining two research questions.16
+16In Question 2, the target population consists of infants predisposed to developing a peanut allergy. In Question 3, the
+target population consists of patients with glioblastoma.
+
+
+--- PDF page 19 ---
+1.3. DATA COLLECTION PRINCIPLES
+19
+1.3.2
+Anecdotal evidence
+Anecdotal evidence typically refers to unusual observations that are easily recalled because of
+their striking characteristics. Physicians may be more likely to remember the characteristics of a
+single patient with an unusually good response to a drug instead of the many patients who did not
+respond. The dangers of drawing general conclusions from anecdotal information are obvious; no
+single observation should be used to draw conclusions about a population.
+While it is incorrect to generalize from individual observations, unusual observations can
+sometimes be valuable. E.C. Heyde was a general practitioner from Vancouver who noticed that a
+few of his elderly patients with aortic-valve stenosis (an abnormal narrowing) caused by an accu-
+mulation of calcium had also suﬀered massive gastrointestinal bleeding. In 1958, he published his
+observation.17 Further research led to the identiﬁcation of the underlying cause of the association,
+now called Heyde’s Syndrome.18
+An anecdotal observation can never be the basis for a conclusion, but may well inspire the
+design of a more systematic study that could be deﬁnitive.
+17Heyde EC. Gastrointestinal bleeding in aortic stenosis. N Engl J Med 1958;259:196.
+18Greenstein RJ, McElhinney AJ, Reuben D, Greenstein AJ. Co-lonic vascular ectasias and aortic stenosis: coincidence or
+causal relationship? Am J Surg 1986;151:347-51.
+
+
+--- PDF page 20 ---
+20
+CHAPTER 1. INTRODUCTION TO DATA
+1.3.3
+Sampling from a population
+Sampling from a population, when done correctly, provides reliable information about the
+characteristics of a large population. The US Centers for Disease Control (US CDC) conducts sev-
+eral surveys to obtain information about the US population, including the Behavior Risk Factor
+Surveillance System (BRFSS).19 The BRFSS was established in 1984 to collect data about health-
+related risk behaviors, and now collects data from more than 400,000 telephone interviews con-
+ducted each year. Data from a recent BRFSS survey are used in Chapter 4. The CDC conducts
+similar surveys for diabetes, health care access, and immunization. Likewise, the World Health Or-
+ganization (WHO) conducts the World Health Survey in partnership with approximately 70 coun-
+tries to learn about the health of adult populations and the health systems in those countries.20
+The general principle of sampling is straightforward: a sample from a population is useful for
+learning about a population only when the sample is representative of the population. In other
+words, the characteristics of the sample should correspond to the characteristics of the population.
+Suppose that the quality improvement team at an integrated health care system, such as Har-
+vard Pilgrim Health Care, is interested in learning about how members of the health plan perceive
+the quality of the services oﬀered under the plan. A common pitfall in conducting a survey is to
+use a convenience sample, in which individuals who are easily accessible are more likely to be
+included in the sample than other individuals. If a sample were collected by approaching plan
+members visiting an outpatient clinic during a particular week, the sample would fail to enroll
+generally healthy members who typically do not use outpatient services or schedule routine phys-
+ical examinations; this method would produce an unrepresentative sample (Figure 1.9).
+Figure 1.9: Instead of sampling from all members equally, approaching members
+visiting a clinic during a particular week disproportionately selects members who
+frequently use outpatient services.
+Random sampling is the best way to ensure that a sample reﬂects a population. In a simple
+random sample, each member of a population has the same chance of being sampled. One way to
+achieve a simple random sample of the health plan members is to randomly select a certain number
+of names from the complete membership roster, and contact those individuals for an interview
+(Figure 1.10).
+19https://www.cdc.gov/brfss/index.html
+20http://www.who.int/healthinfo/survey/en/
+
+
+--- PDF page 21 ---
+1.3. DATA COLLECTION PRINCIPLES
+21
+Figure 1.10: Five members are randomly selected from the population to be in-
+terviewed.
+Even when a simple random sample is taken, it is not guaranteed that the sample is represen-
+tative of the population. If the non-response rate for a survey is high, that may be indicative of
+a biased sample. Perhaps a majority of participants did not respond to the survey because only a
+certain group within the population is being reached; for example, if questions assume that par-
+ticipants are ﬂuent in English, then a high non-response rate would be expected if the population
+largely consists of individuals who are not ﬂuent in English (Figure 1.11). Such non-response
+bias can skew results; generalizing from an unrepresentative sample may likely lead to incorrect
+conclusions about a population.
+Figure 1.11: Surveys may only reach a certain group within the population, which
+leads to non-response bias. For example, a survey written in English may only
+result in responses from health plan members ﬂuent in English.
+GUIDED PRACTICE 1.7
+It is increasingly common for health care facilities to follow-up a patient visit with an email pro-
+viding a link to a website where patients can rate their experience. Typically, less than 50% of
+patients visit the website. If half of those who respond indicate a negative experience, do you think
+that this implies that at least 25% of patient visits are unsatisfactory?21
+21It is unlikely that the patients who respond constitute a representative sample from the larger population of patients.
+This is not a random sample, because individuals are selecting themselves into a group, and it is unclear that each person
+has an equal chance of answering the survey. If our experience is any guide, dissatisﬁed people are more likely to respond
+to these informal surveys than satisﬁed patients.
+
+
+--- PDF page 22 ---
+22
+CHAPTER 1. INTRODUCTION TO DATA
+1.3.4
+Sampling methods
+Almost all statistical methods are based on the notion of implied randomness. If data are not
+sampled from a population at random, these statistical methods – calculating estimates and errors
+associated with estimates – are not reliable. Four random sampling methods are discussed in this
+section: simple, stratiﬁed, cluster, and multistage sampling.
+In a simple random sample, each case in the population has an equal chance of being included
+in the sample (Figure 1.12). Under simple random sampling, each case is sampled independently of
+the other cases; i.e., knowing that a certain case is included in the sample provides no information
+about which other cases have also been sampled.
+In stratiﬁed sampling, the population is ﬁrst divided into groups called strata before cases
+are selected within each stratum (typically through simple random sampling) (Figure 1.12). The
+strata are chosen such that similar cases are grouped together. Stratiﬁed sampling is especially
+useful when the cases in each stratum are very similar with respect to the outcome of interest, but
+cases between strata might be quite diﬀerent.
+Suppose that the health care provider has facilities in diﬀerent cities. If the range of services
+oﬀered diﬀer by city, but all locations in a given city will oﬀer similar services, it would be eﬀective
+for the quality improvement team to use stratiﬁed sampling to identify participants for their study,
+where each city represents a stratum and plan members are randomly sampled from each city.
+
+
+--- PDF page 23 ---
+1.3. DATA COLLECTION PRINCIPLES
+23
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+Stratum 1
+Stratum 2
+Stratum 3
+Stratum 4
+Stratum 5
+Stratum 6
+Figure 1.12: Examples of simple random and stratiﬁed sampling.
+In the top
+panel, simple random sampling is used to randomly select 18 cases (circled or-
+ange dots) out of the total population (all dots). The bottom panel illustrates
+stratiﬁed sampling: cases are grouped into six strata, then simple random sam-
+pling is employed within each stratum.
+
+
+--- PDF page 24 ---
+24
+CHAPTER 1. INTRODUCTION TO DATA
+In a cluster sample, the population is ﬁrst divided into many groups, called clusters. Then,
+a ﬁxed number of clusters is sampled and all observations from each of those clusters are included
+in the sample (Figure 1.13). A multistage sample is similar to a cluster sample, but rather than
+keeping all observations in each cluster, a random sample is collected within each selected cluster
+(Figure 1.13).
+Unlike with stratiﬁed sampling, cluster and multistage sampling are most helpful when there
+is high case-to-case variability within a cluster, but the clusters themselves are similar to one an-
+other. For example, if neighborhoods in a city represent clusters, cluster and multistage sampling
+work best when the population within each neighborhood is very diverse, but neighborhoods are
+relatively similar.
+Applying stratiﬁed, cluster, or multistage sampling can often be more economical than only
+drawing random samples. However, analysis of data collected using such methods is more com-
+plicated than when using data from a simple random sample; this text will only discuss analysis
+methods for simple random samples.
+EXAMPLE 1.8
+Suppose researchers are interested in estimating the malaria rate in a densely tropical portion of
+rural Indonesia. There are 30 villages in the area, each more or less similar to the others. The goal
+is to test 150 individuals for malaria. Evaluate which sampling method should be employed.
+A simple random sample would likely draw individuals from all 30 villages, which could make
+data collection extremely expensive. Stratiﬁed sampling is not advisable, since there is not enough
+information to determine how strata of similar individuals could be built. However, cluster sam-
+pling or multistage sampling are both reasonable options. For example, with multistage sampling,
+half of the villages could be randomly selected, and then 10 people selected from each village. This
+strategy is more eﬃcient than a simple random sample, and can still provide a sample representa-
+tive of the population of interest.
+1.3.5
+Introducing experiments and observational studies
+The two primary types of study designs used to collect data are experiments and observational
+studies.
+In an experiment, researchers directly inﬂuence how data arise, such as by assigning groups of
+individuals to diﬀerent treatments and assessing how the outcome varies across treatment groups.
+The LEAP study is an example of an experiment with two groups, an experimental group that
+received the intervention (peanut consumption) and a control group that received a standard ap-
+proach (peanut avoidance). In studies assessing eﬀectiveness of a new drug, individuals in the
+control group typically receive a placebo, an inert substance with the appearance of the experi-
+mental intervention. The study is designed such that on average, the only diﬀerence between the
+individuals in the treatment groups is whether or not they consumed peanut protein. This allows
+for observed diﬀerences in experimental outcome to be directly attributed to the intervention and
+constitute evidence of a causal relationship between intervention and outcome.
+In an observational study, researchers merely observe and record data, without interfering
+with how the data arise. For example, to investigate why certain diseases develop, researchers
+might collect data by conducting surveys, reviewing medical records, or following a cohort of
+many similar individuals. Observational studies can provide evidence of an association between
+variables, but cannot by themselves show a causal connection. However, there are many instances
+where randomized experiments are unethical, such as to explore whether lead exposure in young
+children is associated with cognitive impairment.
+
+
+--- PDF page 25 ---
+1.3. DATA COLLECTION PRINCIPLES
+25
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+Cluster 1
+Cluster 2
+Cluster 3
+Cluster 4
+Cluster 5
+Cluster 6
+Cluster 7
+Cluster 8
+Cluster 9
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+Cluster 1
+Cluster 2
+Cluster 3
+Cluster 4
+Cluster 5
+Cluster 6
+Cluster 7
+Cluster 8
+Cluster 9
+Figure 1.13: Examples of cluster and multistage sampling. The top panel illus-
+trates cluster sampling: data are binned into nine clusters, three of which are sam-
+pled, and all observations within these clusters are sampled. The bottom panel
+illustrates multistage sampling, which diﬀers from cluster sampling in that only
+a subset from each of the three selected clusters are sampled.
+
+
+--- PDF page 26 ---
+26
+CHAPTER 1. INTRODUCTION TO DATA
+1.3.6
+Experiments
+Experimental design is based on three principles: control, randomization, and replication.
+Control. When selecting participants for a study, researchers work to control for extraneous vari-
+ables and choose a sample of participants that is representative of the population of interest.
+For example, participation in a study might be restricted to individuals who have a condition
+that suggests they may beneﬁt from the intervention being tested. Infants enrolled in the
+LEAP study were required to be between 4 and 11 months of age, with severe eczema and/or
+allergies to eggs.
+Randomization. Randomly assigning patients to treatment groups ensures that groups are bal-
+anced with respect to both variables that can and cannot be controlled. For example, random-
+ization in the LEAP study ensures that the proportion of males to females is approximately
+the same in both groups. Additionally, perhaps some infants were more susceptible to peanut
+allergy because of an undetected genetic condition; under randomization, it is reasonable to
+assume that such infants were present in equal numbers in both groups. Randomization al-
+lows diﬀerences in outcome between the groups to be reasonably attributed to the treatment
+rather than inherent variability in patient characteristics, since the treatment represents the
+only systematic diﬀerence between the two groups.
+In situations where researchers suspect that variables other than the intervention may in-
+ﬂuence the response, individuals can be ﬁrst grouped into blocks according to a certain at-
+tribute and then randomized to treatment group within each block; this technique is referred
+to as blocking or stratiﬁcation. The team behind the LEAP study stratiﬁed infants into two
+cohorts based on whether or not the child developed a red, swollen mark (a wheal) after
+a skin test at the time of enrollment; afterwards, infants were randomized between peanut
+consumption and avoidance groups. Figure 1.14 illustrates the blocking scheme used in the
+study.
+Replication. The results of a study conducted on a larger number of cases are generally more
+reliable than smaller studies; observations made from a large sample are more likely to be
+representative of the population of interest. In a single study, replication is accomplished by
+collecting a suﬃciently large sample. The LEAP study randomized a total of 640 infants.
+Randomized experiments are an essential tool in research. The US Food and Drug Adminis-
+tration typically requires that a new drug can only be marketed after two independently conducted
+randomized trials conﬁrm its safety and eﬃcacy; the European Medicines Agency has a similar pol-
+icy. Large randomized experiments in medicine have provided the basis for major public health
+initiatives. In 1954, approximately 750,000 children participated in a randomized study compar-
+ing polio vaccine with a placebo.22 In the United States, the results of the study quickly led to the
+widespread and successful use of the vaccine for polio prevention.
+22Meier, Paul. "The biggest public health experiment ever: the 1954 ﬁeld trial of the Salk poliomyelitis vaccine." Statistics:
+a guide to the unknown. San Francisco: Holden-Day (1972): 2-13.
+
+
+--- PDF page 27 ---
+1.3. DATA COLLECTION PRINCIPLES
+27
+Figure 1.14: A simpliﬁed schematic of the blocking scheme used in the LEAP
+study, depicting 640 patients that underwent randomization. Patients are ﬁrst
+divided into blocks based on response to the initial skin test, then each block
+is randomized between the avoidance and consumption groups. This strategy
+ensures an even representation of patients in each group who had positive and
+negative skin tests.
+
+
+--- PDF page 28 ---
+28
+CHAPTER 1. INTRODUCTION TO DATA
+1.3.7
+Observational studies
+In observational studies, researchers simply observe selected potential explanatory and re-
+sponse variables. Participants who diﬀer in important explanatory variables may also diﬀer in other
+ways that inﬂuence response; as a result, it is not advisable to make causal conclusions about the re-
+lationship between explanatory and response variables based on observational data. For example,
+while observational studies of obesity have shown that obese individuals tend to die sooner than
+individuals with normal weight, it would be misleading to conclude that obesity causes shorter life
+expectancy. Instead, underlying factors are probably involved; obese individuals typically exhibit
+other health behaviors that inﬂuence life expectancy, such as reduced exercise or unhealthy diet.
+Suppose that an observational study tracked sunscreen use and incidence of skin cancer, and
+found that the more sunscreen a person uses, the more likely they are to have skin cancer. These
+results do not mean that sunscreen causes skin cancer. One important piece of missing information
+is sun exposure – if someone is often exposed to sun, they are both more likely to use sunscreen and
+to contract skin cancer. Sun exposure is a confounding variable: a variable associated with both
+the explanatory and response variables.23 There is no guarantee that all confounding variables
+can be examined or measured; as a result, it is not advisable to draw causal conclusions from
+observational studies.
+Confounding is not limited to observational studies. For example, consider a randomized
+study comparing two treatments (varenicline and buproprion) against a placebo as therapies for
+aiding smoking cessation.24 At the beginning of the study, participants were randomized into
+groups: 352 to varenicline, 329 to buproprion, and 344 to placebo. Not all participants successfully
+completed the assigned therapy: 259, 225, and 215 patients in each group did so, respectively.
+If an analysis were based only on the participants who completed therapy, this could introduce
+confounding; it is possible that there are underlying diﬀerences between individuals who complete
+the therapy and those who do not. Including all randomized participants in the ﬁnal analysis
+maintains the original randomization scheme and controls for diﬀerences between the groups.25
+GUIDED PRACTICE 1.9
+As stated in Example 1.4, female body size (body.size) in the parental investment study is neither
+an explanatory nor a response variable. Previous research has shown that larger females tend to
+produce larger eggs and egg clutches; however, large body size can be costly at high altitudes.
+Discuss a possible reason for why the study team chose to measure female body size when it is not
+directly related to their main research question.26
+23Also called a lurking variable, confounding factor, or a confounder.
+24Jorenby, Douglas E., et al. "Eﬃcacy of varenicline, an α4β2 nicotinic acetylcholine receptor partial agonist, vs placebo
+or sustained-release bupropion for smoking cessation: a randomized controlled trial." JAMA 296.1 (2006): 56-63.
+25This strategy, commonly used for analyzing clinical trial data, is referred to as an intention-to-treat analysis.
+26Female body size is a potential confounding variable, since it may be associated with both the explanatory variable
+(altitude) and response variables (measures of maternal investment). If the study team observes, for example, that clutch
+size tends to decrease at higher altitudes, they should check whether the apparent association is not simply due to frogs at
+higher altitudes having smaller body size and thus, laying smaller clutches.
+
+
+--- PDF page 29 ---
+1.3. DATA COLLECTION PRINCIPLES
+29
+Observational studies may reveal interesting patterns or associations that can be further in-
+vestigated with follow-up experiments. Several observational studies based on dietary data from
+diﬀerent countries showed a strong association between dietary fat and breast cancer in women.
+These observations led to the launch of the Women’s Health Initiative (WHI), a large randomized
+trial sponsored by the US National Institutes of Health (NIH). In the WHI, women were random-
+ized to standard versus low fat diets, and the previously observed association was not conﬁrmed.
+Observational studies can be either prospective or retrospective. A prospective study identi-
+ﬁes participants and collects information at scheduled times or as events unfold. For example, in
+the Nurses’ Health Study, researchers recruited registered nurses beginning in 1976 and collected
+data through administering biennial surveys; data from the study have been used to investigate risk
+factors for major chronic diseases in women.27 Retrospective studies collect data after events have
+taken place, such as from medical records. Some datasets may contain both retrospectively- and
+prospectively-collected variables. The Cancer Care Outcomes Research and Surveillance Consor-
+tium (CanCORS) enrolled participants with lung or colorectal cancer, collected information about
+diagnosis, treatment, and previous health behavior, but also maintained contact with participants
+to gather data about long-term outcomes.28
+27www.channing.harvard.edu/nhs
+28Ayanian, John Z., et al. "Understanding cancer treatment and outcomes: the cancer care outcomes research and
+surveillance consortium." Journal of Clinical Oncology 22.15 (2004): 2992-2996
+
+
+--- PDF page 30 ---
+30
+CHAPTER 1. INTRODUCTION TO DATA
+1.4
+Numerical data
+This section discusses techniques for exploring and summarizing numerical variables, using
+the frog data from the parental investment study introduced in Section 1.2.
+1.4.1
+Measures of center: mean and median
+The mean, sometimes called the average, is a measure of center for a distribution of data. To
+ﬁnd the average clutch volume for the observed egg clutches, add all the clutch volumes and divide
+by the total number of clutches.29
+x =177.8 + 257.0 + ··· + 933.3
+431
+= 882.5 mm3.
+The sample mean is often labeled x, to distinguish it from µ, the mean of the entire population
+x
+sample
+mean
+µ
+population
+mean
+from which the sample is drawn. The letter x is being used as a generic placeholder for the variable
+of interest, clutch.volume.
+MEAN
+The sample mean of a numerical variable is the sum of the values of all observations divided
+by the number of observations:
+x =x1 + x2 + ··· + xn
+n
+,
+(1.10)
+where x1,x2,...,xn represent the n observed values.
+The median is another measure of center; it is the middle number in a distribution after the
+values have been ordered from smallest to largest. If the distribution contains an even number of
+observations, the median is the average of the middle two observations. There are 431 clutches
+in the dataset, so the median is the clutch volume of the 216th observation in the sorted values of
+clutch.volume: 831.8 mm3.
+29For computational convenience, the volumes are rounded to the ﬁrst decimal.
+
+
+--- PDF page 31 ---
+1.4. NUMERICAL DATA
+31
+1.4.2
+Measures of spread: standard deviation and interquartile range
+The spread of a distribution refers to how similar or varied the values in the distribution are
+to each other; i.e., whether the values are tightly clustered or spread over a wide range.
+The standard deviation for a set of data describes the typical distance between an observation
+and the mean. The distance of a single observation from the mean is its deviation. Below are the
+deviations for the 1st, 2nd, 3rd, and 431st observations in the clutch.volume variable.
+x1 −x = 177.8 −882.5 = −704.7
+x2 −x = 257.0 −882.5 = −625.5
+x3 −x = 151.4 −882.5 = −731.1
+...
+x431 −x = 933.2 −882.5 = 50.7
+The sample variance, the average of the squares of these deviations, is denoted by s2:
+s2
+sample
+variance
+s2 = (−704.7)2 + (−625.5)2 + (−731.1)2 + ··· + (50.7)2
+431 −1
+= 496,602.09 + 391,250.25 + 534,507.21 + ··· + 2570.49
+430
+= 143,680.9.
+The denominator is n−1 rather than n; this mathematical nuance accounts for the fact that sample
+mean has been used to estimate the population mean in the calculation. Details on the statistical
+theory can be found in more advanced texts.
+The sample standard deviation s is the square root of the variance:
+s =
+√
+143,680.9 = 379.05mm3.
+s
+sample
+standard
+deviation
+Like the mean, the population values for variance and standard deviation are denoted by
+Greek letters: σ2 for the variance and σ for the standard deviation.
+σ 2
+population
+variance
+σ
+population
+standard
+deviation
+STANDARD DEVIATION
+The sample standard deviation of a numerical variable is computed as the square root of the
+variance, which is the sum of squared deviations divided by the number of observations minus
+1.
+s =
+s
+(x1 −x)2 + (x2 −x)2 + ··· + (xn −x)2
+n −1
+,
+(1.11)
+where x1,x2,...,xn represent the n observed values.
+
+
+--- PDF page 32 ---
+32
+CHAPTER 1. INTRODUCTION TO DATA
+Variability can also be measured using the interquartile range (IQR). The IQR for a distri-
+bution is the diﬀerence between the ﬁrst and third quartiles: Q3 −Q1. The ﬁrst quartile (Q1) is
+equivalent to the 25th percentile; i.e., 25% of the data fall below this value. The third quartile
+(Q3) is equivalent to the 75th percentile. By deﬁnition, the median represents the second quar-
+tile, with half the values falling below it and half falling above. The IQR for clutch.volume is
+1096.0 −609.6 = 486.4 mm3.
+Measures of center and spread are ways to summarize a distribution numerically. Using nu-
+merical summaries allows for a distribution to be eﬃciently described with only a few numbers.30
+For example, the calculations for clutch.volume indicate that the typical egg clutch has volume
+of about 880 mm3, while the middle 50% of egg clutches have volumes between approximately
+600 mm3 and 1100.0 mm3.
+1.4.3
+Robust estimates
+Figure 1.15 shows the values of clutch.volume as points on a single axis. There are a few
+values that seem extreme relative to the other observations: the four largest values, which appear
+distinct from the rest of the distribution. How do these extreme values aﬀect the value of the
+numerical summaries?
+Clutch Volumes
+100
+300
+500
+700
+900
+1100
+1300
+1500
+1700
+1900
+2100
+2300
+2500
+2700
+Figure 1.15: Dot plot of clutch volumes from the frog data.
+Figure 1.16 shows the summary statistics calculated under two scenarios, one with and one
+without the four largest observations. For these data, the median does not change, while the IQR
+diﬀers by only about 6 mm3. In contrast, the mean and standard deviation are much more aﬀected,
+particularly the standard deviation.
+robust
+not robust
+scenario
+median
+IQR
+x
+s
+original data (with extreme observations)
+831.8
+486.9
+882.5
+379.1
+data without four largest observations
+831.8
+493.9
+867.9
+349.2
+Figure 1.16: A comparison of how the median, IQR, mean (x), and standard devi-
+ation (s) change when extreme observations are present.
+The median and IQR are referred to as robust estimates because extreme observations have
+little eﬀect on their values. For distributions that contain extreme values, the median and IQR will
+provide a more accurate sense of the center and spread than the mean and standard deviation.
+30Numerical summaries are also known as summary statistics.
+
+
+--- PDF page 33 ---
+1.4. NUMERICAL DATA
+33
+1.4.4
+Visualizing distributions of data: histograms and boxplots
+Graphs show important features of a distribution that are not evident from numerical sum-
+maries, such as asymmetry or extreme values. While dot plots show the exact value of each obser-
+vation, histograms and boxplots graphically summarize distributions.
+In a histogram, observations are grouped into bins and plotted as bars. Figure 1.17 shows the
+number of clutches with volume between 0 and 200 mm3, 200 and 400 mm3, etc. up until 2,600
+and 2,800 mm3.31 These binned counts are plotted in Figure 1.18.
+Clutch volumes
+0-200
+200-400
+400-600
+600-800
+···
+2400-2600
+2600-2800
+Count
+4
+29
+69
+99
+···
+2
+1
+Figure 1.17: The counts for the binned clutch.volume data.
+Clutch Volume
+Frequency
+0
+500
+1000
+1500
+2000
+2500
+0
+20
+40
+60
+80
+100
+Figure 1.18: A histogram of clutch.volume.
+Histograms provide a view of the data density. Higher bars indicate more frequent obser-
+vations, while lower bars represent relatively rare observations. Figure 1.18 shows that most of
+the egg clutches have volumes between 500-1,000 mm3, and there are many more clutches with
+volumes smaller than 1,000 mm3 than clutches with larger volumes.
+Histograms show the shape of a distribution.
+The tails of a symmetric distribution are
+roughly equal, with data trailing oﬀfrom the center roughly equally in both directions. Asym-
+metry arises when one tail of the distribution is longer than the other. A distribution is said to be
+right skewed when data trail oﬀto the right, and left skewed when data trail oﬀto the left.32 Fig-
+ure 1.18 shows that the distribution of clutch volume is right skewed; most clutches have relatively
+small volumes, and only a few clutches have high volumes.
+31By default in R, the bins are left-open and right-closed; i.e., the intervals are of the form (a, b]. Thus, an observation
+with value 200 would fall into the 0-200 bin instead of the 200-400 bin.
+32Other ways to describe data that are skewed to the right/left: skewed to the right/left or skewed to the posi-
+tive/negative end.
+
+
+--- PDF page 34 ---
+34
+CHAPTER 1. INTRODUCTION TO DATA
+A mode is represented by a prominent peak in the distribution.33 Figure 1.19 shows his-
+tograms that have one, two, or three major peaks. Such distributions are called unimodal, bi-
+modal, and multimodal, respectively. Any distribution with more than two prominent peaks is
+called multimodal. Note that the less prominent peak in the unimodal distribution was not counted
+since it only diﬀers from its neighboring bins by a few observations. Prominent is a subjective term,
+but it is usually clear in a histogram where the major peaks are.
+0
+5
+10
+15
+0
+5
+10
+15
+0
+5
+10
+15
+20
+0
+5
+10
+15
+0
+5
+10
+15
+20
+0
+5
+10
+15
+20
+Figure 1.19: From left to right: unimodal, bimodal, and multimodal distributions.
+A boxplot indicates the positions of the ﬁrst, second, and third quartiles of a distribution
+in addition to extreme observations.34 Figure 1.20 shows a boxplot of clutch.volume alongside a
+vertical dot plot.
+Clutch Volume
+500
+1000
+1500
+2000
+2500
+lower whisker
+Q1  (first quartile)
+median (second quartile)
+Q3  (third quartile)
+upper whisker
+outliers
+−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−−
+Figure 1.20: A boxplot and dot plot of clutch.volume. The horizontal dashes
+indicate the bottom 50% of the data and the open circles represent the top 50%.
+33Another deﬁnition of mode, which is not typically used in statistics, is the value with the most occurrences. It is
+common that a dataset contains no observations with the same value, which makes this other deﬁnition impractical for
+many datasets.
+34Boxplots are also known as box-and-whisker plots.
+
+
+--- PDF page 35 ---
+1.4. NUMERICAL DATA
+35
+In a boxplot, the interquartile range is represented by a rectangle extending from the ﬁrst
+quartile to the third quartile, and the rectangle is split by the median (second quartile). Extending
+outwards from the box, the whiskers capture the data that fall between Q1−1.5×IQR and Q3+1.5×
+IQR. The whiskers must end at data points; the values given by adding or subtracting 1.5 × IQR
+deﬁne the maximum reach of the whiskers. For example, with the clutch.volume variable, Q3 +
+1.5×IQR = 1,096.5+1.5×486.4 = 1,826.1 mm3. However, there was no clutch with volume 1,826.1
+mm3; thus, the upper whisker extends to 1,819.7 mm3, the largest observation that is smaller than
+Q3 + 1.5 × IQR.
+Any observation that lies beyond the whiskers is shown with a dot; these observations are
+called outliers. An outlier is a value that appears extreme relative to the rest of the data. For
+the clutch.volume variable, there are several large outliers and no small outliers, indicating the
+presence of some unusually large egg clutches.
+The high outliers in Figure 1.20 reﬂect the right-skewed nature of the data. The right skew is
+also observable from the position of the median relative to the ﬁrst and third quartiles; the median
+is slightly closer to the ﬁrst quartile. In a symmetric distribution, the median will be halfway
+between the ﬁrst and third quartiles.
+GUIDED PRACTICE 1.12
+Use the histogram and boxplot in Figure 1.21 to describe the distribution of height in the famuss
+data, where height is measured in inches.35
+Height
+Frequency
+60
+65
+70
+75
+0
+50
+100
+150
+(a)
+Height
+55
+60
+65
+70
+75
+80
+(b)
+Figure 1.21: A histogram and boxplot of height in the famuss data.
+35The data are roughly symmetric (the left tail is slightly longer than the right tail), and the distribution is unimodal
+with one prominent peak at about 67 inches. The middle 50% of individuals are between 5.5 feet and just under 6 feet tall.
+There is one low outlier and one high outlier, representing individuals that are unusually short/tall relative to the other
+individuals.
+
+
+--- PDF page 36 ---
+36
+CHAPTER 1. INTRODUCTION TO DATA
+1.4.5
+Transforming data
+When working with strongly skewed data, it can be useful to apply a transformation, and
+rescale the data using a function. A natural log transformation is commonly used to clarify the
+features of a variable when there are many values clustered near zero and all observations are
+positive.
+Income (USD)
+Frequency
+$0
+$20k
+$40k
+$60k
+$80k
+$100k
+$120k
+0
+20
+40
+60
+80
+100
+(a)
+Income (log USD)
+Frequency
+5
+6
+7
+8
+9
+10
+11
+12
+0
+5
+10
+15
+20
+25
+30
+(b)
+Figure 1.22: (a) Histogram of per capita income.
+(b) Histogram of the log-
+transformed per capita income.
+For example, income data are often skewed right; there are typically large clusters of low to
+moderate income, with a few large incomes that are outliers. Figure 1.22(a) shows a histogram of
+average yearly per capita income measured in US dollars for 165 countries in 2011.36 The data are
+heavily right skewed, with the majority of countries having average yearly per capita income lower
+than $10,000. Once the data are log-transformed, the distribution becomes roughly symmetric
+(Figure 1.22(b)).37
+For symmetric distributions, the mean and standard deviation are particularly informative
+summaries. If a distribution is symmetric, approximately 70% of the data are within one standard
+deviation of the mean and 95% of the data are within two standard deviations of the mean; this
+guideline is known as the empirical rule.
+EXAMPLE 1.13
+On the log-transformed scale, mean log income is 8.50, with standard deviation 1.54. Apply the
+empirical rule to describe the distribution of average yearly per capita income among the 165
+countries.
+According to the empirical rule, the middle 70% of the data are within one standard deviation of
+the mean, in the range (8.50 - 1.54, 8.50 + 1.54) = (6.96, 10.04) log(USD). 95% of the data are within
+two standard deviations of the mean, in the range (8.50 - 2(1.54), 8.50 + 2(1.54)) = (5.42, 11.58)
+log(USD).
+Undo the log transformation.
+The middle 70% of the data are within the range (e6.96, e10.04)
+= ($1,054, $22,925).
+The middle 95% of the data are within the range (e5.42, e11.58) = ($226,
+$106,937).
+Functions other than the natural log can also be used to transform data, such as the square
+root and inverse.
+36The data are available as wdi.2011 in the R package oibiostat.
+37In statistics, the natural logarithm is usually written log. In other settings it is sometimes written as ln.
+
+
+--- PDF page 37 ---
+1.5. CATEGORICAL DATA
+37
+1.5
+Categorical data
+This section introduces tables and plots for summarizing categorical data, using the famuss
+dataset introduced in Section 1.2.2.
+A table for a single variable is called a frequency table. Figure 1.23 is a frequency table for
+the actn3.r577x variable, showing the distribution of genotype at location r577x on the ACTN3
+gene for the FAMuSS study participants.
+In a relative frequency table like Figure 1.24, the proportions per each category are shown
+instead of the counts.
+CC
+CT
+TT
+Sum
+Counts
+173
+261
+161
+595
+Figure 1.23: A frequency table for the actn3.r577x variable.
+CC
+CT
+TT
+Sum
+Proportions
+0.291
+0.439
+0.271
+1.000
+Figure 1.24: A relative frequency table for the actn3.r577x variable.
+A bar plot is a common way to display a single categorical variable. The left panel of Fig-
+ure 1.25 shows a bar plot of the counts per genotype for the actn3.r577x variable. The plot in the
+right panel shows the proportion of observations that are in each level (i.e. in each genotype).
+CC
+CT
+TT
+count
+0
+50
+100
+150
+200
+250
+300
+genotype
+CC
+CT
+TT
+0.00
+0.25
+0.50
+proportion
+genotype
+Figure 1.25: Two bar plots of actn3.r577x. The left panel shows the counts, and
+the right panel shows the proportions for each genotype.
+
+
+--- PDF page 38 ---
+38
+CHAPTER 1. INTRODUCTION TO DATA
+1.6
+Relationships between two variables
+This section introduces numerical and graphical methods for exploring and summarizing re-
+lationships between two variables. Approaches vary depending on whether the two variables are
+both numerical, both categorical, or whether one is numerical and one is categorical.
+1.6.1
+Two numerical variables
+Scatterplots
+In the frog parental investment study, researchers used clutch volume as a primary variable of
+interest rather than egg size because clutch volume represents both the eggs and the protective
+gelatinous matrix surrounding the eggs. The larger the clutch volume, the higher the energy re-
+quired to produce it; thus, higher clutch volume is indicative of increased maternal investment.
+Previous research has reported that larger body size allows females to produce larger clutches; is
+this idea supported by the frog data?
+A scatterplot provides a case-by-case view of the relationship between two numerical vari-
+ables. Figure 1.26 shows clutch volume plotted against body size, with clutch volume on the y-axis
+and body size on the x-axis. Each point represents a single case. For this example, each case is one
+egg clutch for which both volume and body size (of the female that produced the clutch) have been
+recorded.
+4.0
+4.5
+5.0
+5.5
+6.0
+500
+1000
+1500
+2000
+2500
+Clutch Volume (mm3)
+GG G G GGG G
+G
+G
+G
+G GG
+G
+G
+G
+G
+G
+G
+G
+GG
+G GG GGG
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+GGG
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GGGG
+G
+G
+GG
+GG
+G
+G
+G
+G
+GG
+GG
+GG
+G
+GG
+G
+G
+GG
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+GGGG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+GG
+G
+G
+G
+G
+Female Body Size (cm)
+Figure 1.26: A scatterplot showing clutch.volume (vertical axis) vs. body.size
+(horizontal axis).
+The plot shows a discernible pattern, which suggests an association, or relationship, between
+clutch volume and body size; the points tend to lie in a straight line, which is indicative of a linear
+association. Two variables are positively associated if increasing values of one tend to occur with
+increasing values of the other; two variables are negatively associated if increasing values of one
+variable occurs with decreasing values of the other. If there is no evident relationship between two
+variables, they are said to be uncorrelated or independent.
+As expected, clutch volume and body size are positively associated; larger frogs tend to pro-
+duce egg clutches with larger volumes. These observations suggest that larger females are capable
+of investing more energy into oﬀspring production relative to smaller females.
+
+
+--- PDF page 39 ---
+1.6. RELATIONSHIPS BETWEEN TWO VARIABLES
+39
+The National Health and Nutrition Examination Survey (NHANES) consists of a set of surveys
+and measurements conducted by the US CDC to assess the health and nutritional status of adults
+and children in the United States. The following example uses data from a sample of 500 adults
+(individuals ages 21 and older) from the NHANES dataset.38
+EXAMPLE 1.14
+Body mass index (BMI) is a measure of weight commonly used by health agencies to assess whether
+someone is overweight, and is calculated from height and weight.39 Describe the relationships
+shown in Figure 1.27. Why is it helpful to use BMI as a measure of obesity, rather than weight?
+Figure 1.27(a) shows a positive association between height and weight; taller individuals tend to
+be heavier. Figure 1.27(b) shows that height and BMI do not seem to be associated; the range of
+BMI values observed is roughly consistent across height.
+Weight itself is not a good measure of whether someone is overweight; instead, it is more reasonable
+to consider whether someone’s weight is unusual relative to other individuals of a comparable
+height. An individual weighing 200 pounds who is 6 ft tall is not necessarily an unhealthy weight;
+however, someone who weighs 200 pounds and is 5 ft tall is likely overweight. It is not reasonable
+to classify individuals as overweight or obese based only on weight.
+BMI acts as a relative measure of weight that accounts for height. Speciﬁcally, BMI is used as an
+estimate of body fat. According to US National Institutes of Health (US NIH) and the World Health
+Organization (WHO), a BMI between 25.0 - 29.9 is considered overweight and a BMI over 30 is
+considered obese.40
+150
+160
+170
+180
+190
+50
+100
+150
+200
+Weight (kg)
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G G
+G
+G
+G
+G
+G
+G
+G
+G
+G G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+Height (cm)
+(a)
+150
+160
+170
+180
+190
+20
+30
+40
+50
+60
+70
+BMI
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G G
+G
+G
+G
+G
+G
+G
+G
+G
+G G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+Height (cm)
+(b)
+Figure 1.27: (a) A scatterplot showing height versus weight from the 500 individ-
+uals in the sample from NHANES. One participant 163.9 cm tall (about 5 ft, 4 in)
+and weighing 144.6 kg (about 319 lb) is highlighted. (b) A scatterplot showing
+height versus BMI from the 500 individuals in the sample from NHANES. The same
+individual highlighted in (a) is marked here, with BMI 53.83.
+38The sample is available as nhanes.samp.adult.500 in the R oibiostat package.
+39BMI =
+weightkg
+height2m
+= weightlb
+height2
+in
+× 703.
+40https://www.nhlbi.nih.gov/health/educational/lose_wt/risk.htm
+
+
+--- PDF page 40 ---
+40
+CHAPTER 1. INTRODUCTION TO DATA
+EXAMPLE 1.15
+Figure 1.28 is a scatterplot of life expectancy versus annual per capita income for 165 countries in
+2011. Life expectancy is measured as the expected lifespan for children born in 2011 and income
+is adjusted for purchasing power in a country. Describe the relationship between life expectancy
+and annual per capita income; do they seem to be linearly associated?
+Life expectancy and annual per capita income are positively associated; higher per capita income
+is associated with longer life expectancy. However, the two variables are not linearly associated.
+When income is low, small increases in per capita income are associated with relatively large in-
+creases in life expectancy. However, once per capita income exceeds approximately $20,000 per
+year, increases in income are associated with smaller gains in life expectancy.
+In a linear association, change in the y-variable for every unit of the x-variable is consistent across
+the range of the x-variable; for example, a linear association would be present if an increase in
+income of $10,000 corresponded to an increase in life expectancy of 5 years, across the range of
+income.
+Life Expectancy (years)
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+$0
+$20k
+$40k
+$60k
+$80k
+$100k
+50
+55
+60
+65
+70
+75
+80
+Figure 1.28: A scatterplot of life expectancy (years) versus annual per capita in-
+come (US dollars) in the wdi.2011 dataset.
+Correlation
+Correlation is a numerical summary statistic that measures the strength of a linear relationship be-
+tween two variables. It is denoted by r, the correlation coeﬃcient, which takes on values between
+r
+correlation
+coeﬃcient
+-1 and 1.
+If the paired values of two variables lie exactly on a line, r = ±1; the closer the correlation
+coeﬃcient is to ±1, the stronger the linear association. When two variables are positively associated,
+with paired values that tend to lie on a line with positive slope, r > 0. If two variables are negatively
+associated, r < 0. A value of r that is 0 or approximately 0 indicates no apparent association between
+two variables.41
+41If paired values lie perfectly on either a horizontal or vertical line, there is no association and r is mathematically
+undeﬁned.
+
+
+--- PDF page 41 ---
+1.6. RELATIONSHIPS BETWEEN TWO VARIABLES
+41
+R = 0.33
+R = 0.69
+R = 0.98
+R = 1.00
+R = −0.08
+R = −0.64
+R = −0.92
+R = −1.00
+Figure 1.29: Scatterplots and their correlation coeﬃcients. The ﬁrst row shows
+positive associations and the second row shows negative associations. From left
+to right, strength of the linear association between x and y increases.
+The correlation coeﬃcient quantiﬁes the strength of a linear trend. Prior to calculating a
+correlation, it is advisable to conﬁrm that the data exhibit a linear relationship. Although it is
+mathematically possible to calculate correlation for any set of paired observations, such as the life
+expectancy versus income data in Figure 1.28, correlation cannot be used to assess the strength of
+a nonlinear relationship.
+CORRELATION
+The correlation between two variables x and y is given by:
+r =
+1
+n −1
+n
+X
+i=1
+ xi −x
+sx
+! yi −y
+sy
+!
+,
+(1.16)
+where (x1,y1),(x2,y2),...,(xn,yn) are the n paired values of x and y, and sx and sy are the sample
+standard deviations of the x and y variables, respectively.
+
+
+--- PDF page 42 ---
+42
+CHAPTER 1. INTRODUCTION TO DATA
+EXAMPLE 1.17
+Calculate the correlation coeﬃcient of x and y, plotted in Figure 1.30.
+Calculate the mean and standard deviation for x and y: x = 2, y = 3, sx = 1, and sy = 2.65.
+r =
+1
+n −1
+n
+X
+i=1
+ xi −x
+sx
+! yi −y
+sy
+!
+=
+1
+3 −1
+1 −2
+1
+5 −3
+2.65
+
++
+2 −2
+1
+4 −3
+2.65
+
++
+3 −2
+1
+0 −3
+2.65
+
+= −0.94.
+The correlation is -0.94, which reﬂects the negative association visible from the scatterplot in Fig-
+ure 1.30.
+1.0
+1.5
+2.0
+2.5
+3.0
+0
+1
+2
+3
+4
+5
+x
+y
+G
+G
+G
+Figure 1.30: A scatterplot showing three points: (1, 5), (2, 4), and (3, 0).
+
+
+--- PDF page 43 ---
+1.6. RELATIONSHIPS BETWEEN TWO VARIABLES
+43
+EXAMPLE 1.18
+Is it appropriate to use correlation as a numerical summary for the relationship between life ex-
+pectancy and income after a log transformation is applied to both variables? Refer to Figure 1.31.
+Figure 1.31 shows an approximately linear relationship; a correlation coeﬃcient is a reasonable
+numerical summary of the relationship. As calculated from statistical software, r = 0.79, which is
+indicative of a strong linear relationship.
+6
+7
+8
+9
+10
+11
+3.9
+4.0
+4.1
+4.2
+4.3
+4.4
+Life Expectancy (log years)
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+Per Capita Income (log USD)
+Figure
+1.31:
+A
+scatterplot
+showing
+log(income)
+(horizontal
+axis)
+vs.
+log(life.expectancy) (vertical axis).
+1.6.2
+Two categorical variables
+Contingency tables
+A contingency table summarizes data for two categorical variables, with each value in the table
+representing the number of times a particular combination of outcomes occurs.42
+Figure 1.32
+summarizes the relationship between race and genotype in the famuss data.
+The row totals provide the total counts across each row and the column totals are the total
+counts for each column; collectively, these are the marginal totals.
+CC
+CT
+TT
+Sum
+African Am
+16
+6
+5
+27
+Asian
+21
+18
+16
+55
+Caucasian
+125
+216
+126
+467
+Hispanic
+4
+10
+9
+23
+Other
+7
+11
+5
+23
+Sum
+173
+261
+161
+595
+Figure 1.32: A contingency table for race and actn3.r577x.
+42Contingency tables are also known as two-way tables.
+
+
+--- PDF page 44 ---
+44
+CHAPTER 1. INTRODUCTION TO DATA
+Like relative frequency tables for the distribution of one categorical variable, contingency
+tables can also be converted to show proportions. Since there are two variables, it is necessary
+to specify whether the proportions are calculated according to the row variable or the column
+variable.
+Figure 1.33 shows the row proportions for Figure 1.32; these proportions indicate how geno-
+types are distributed within each race. For example, the value of 0.593 in the upper left corner
+indicates that of the African Americans in the study, 59.3% have the CC genotype.
+CC
+CT
+TT
+Sum
+African Am
+0.593
+0.222
+0.185
+1.000
+Asian
+0.382
+0.327
+0.291
+1.000
+Caucasian
+0.268
+0.463
+0.270
+1.000
+Hispanic
+0.174
+0.435
+0.391
+1.000
+Other
+0.304
+0.478
+0.217
+1.000
+Figure 1.33:
+A contingency table with row proportions for the race and
+actn3.r577x variables.
+Figure 1.34 shows the column proportions for Figure 1.32; these proportions indicate the
+distribution of races within each genotype category. For example, the value of 0.092 indicates that
+of the CC individuals in the study, 9.2% are African American.
+CC
+CT
+TT
+African Am
+0.092
+0.023
+0.031
+Asian
+0.121
+0.069
+0.099
+Caucasian
+0.723
+0.828
+0.783
+Hispanic
+0.023
+0.038
+0.056
+Other
+0.040
+0.042
+0.031
+Sum
+1.000
+1.000
+1.000
+Figure 1.34: A contingency table with column proportions for the race and
+actn3.r577x variables.
+EXAMPLE 1.19
+For African Americans in the study, CC is the most common genotype and TT is the least common
+genotype. Does this pattern hold for the other races in the study? Do the observations from the
+study suggest that distribution of genotypes at r577x vary between populations?
+The pattern holds for Asians, but not for other races. For the Caucasian individuals sampled in the
+study, CT is the most common genotype at 46.3%. CC is the most common genotype for Asians, but
+in this population, genotypes are more evenly distributed: 38.2% of Asians sampled are CC, 32.7%
+are CT, and 29.1% are TT. The distribution of genotypes at r577x seems to vary by population.
+GUIDED PRACTICE 1.20
+As shown in Figure 1.34, 72.3% of CC individuals in the study are Caucasian. Do these data suggest
+that in the general population, people of CC genotype are highly likely to be Caucasian?43
+43No, this is not a reasonable conclusion to draw from the data. The high proportion of Caucasians among CC individuals
+primarily reﬂects the large number of Caucasians sampled in the study – 78.5% of the people sampled are Caucasian. The
+uneven representation of diﬀerent races is one limitation of the famuss data.
+
+
+--- PDF page 45 ---
+1.6. RELATIONSHIPS BETWEEN TWO VARIABLES
+45
+Segmented bar plots
+A segmented bar plot is a way of visualizing the information from a contingency table. Figure 1.35
+graphically displays the data from Figure 1.32; each bar represents a level of actn3.r577x and is
+divided by the levels of race. Figure 1.35(b) uses the row proportions to create a standardized
+segmented bar plot.
+CC
+CT
+TT
+0
+50
+100
+150
+200
+250
+300
+African Am
+Asian
+Caucasian
+Hispanic
+Other
+(a)
+CC
+CT
+TT
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+African Am
+Asian
+Caucasian
+Hispanic
+Other
+(b)
+Figure 1.35: (a) Segmented bar plot for individuals by genotype, with bars divided
+by race. (b) Standardized version of Figure (a).
+Alternatively, the data can be organized as shown in Figure 1.36, with each bar representing a
+level of race. The standardized plot is particularly useful in this case, presenting the distribution
+of genotypes within each race more clearly than in Figure 1.36(a).
+African Am
+Asian
+Caucasian
+Hispanic
+Other
+0
+100
+200
+300
+400
+500
+CC
+CT
+TT
+(a)
+African Am
+Asian
+Caucasian
+Hispanic
+Other
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+CC
+CT
+TT
+(b)
+Figure 1.36: (a) Segmented bar plot for individuals by race, with bars divided by
+genotype. (b) Standardized version of Figure (a).
+
+
+--- PDF page 46 ---
+46
+CHAPTER 1. INTRODUCTION TO DATA
+Two-by-two tables: relative risk
+The results from medical studies are often presented in two-by-two tables (2 × 2 tables), contin-
+gency tables for categorical variables that have two levels. One of the variables deﬁnes two groups
+of participants, while the other represents the two possible outcomes. Figure 1.37 shows a hypo-
+thetical two-by-two table of outcome by group.
+Outcome A
+Outcome B
+Sum
+Group 1
+a
+b
+a + b
+Group 2
+c
+d
+c + d
+Sum
+a + c
+b + d
+a + b + c + d = n
+Figure 1.37: A hypothetical two-by-two table of outcome by group.
+In the LEAP study, participants are divided into two groups based on treatment (peanut
+avoidance versus peanut consumption), while the outcome variable records whether an individ-
+ual passed or failed the oral food challenge (OFC). The results of the LEAP study as shown in
+Figure 1.2 are in the form of a 2 × 2 table; the table is reproduced below as Figure 1.38.
+A statistic called the relative risk (RR) can be used to summarize the data in a 2 × 2 table; the
+relative risk is a measure of the risk of a certain event occurring in one group relative to the risk of
+the event occurring in another group.44
+FAIL OFC
+PASS OFC
+Sum
+Peanut Avoidance
+36
+227
+263
+Peanut Consumption
+5
+262
+267
+Sum
+41
+489
+530
+Figure 1.38: Results of the LEAP study, described in Section 1.1.
+The question of interest in the LEAP study is whether the risk of developing peanut allergy
+(i.e., failing the OFC) diﬀers between the peanut avoidance and consumption groups. The relative
+risk of failing the OFC equals the ratio of the proportion of individuals in the avoidance group who
+failed the OFC to the proportion of individuals in the consumption group who failed the OFC.
+EXAMPLE 1.21
+Using the results from the LEAP study, calculate and interpret the relative risk of failing the oral
+food challenge, comparing individuals in the avoidance group to individuals in the consumption
+group.
+RRfailing OFC =
+proportion in avoidance group who failed OFC
+proportion in consumption group who failed OFC = 36/263
+5/267 = 7.31.
+The relative risk is 7.31. The risk of failing the oral food challenge was more than 7 times greater
+for participants in the peanut avoidance group than for those in the peanut consumption group.
+44Chapter 8 discusses another numerical summary for 2 × 2 tables, the odds ratio.
+
+
+--- PDF page 47 ---
+1.6. RELATIONSHIPS BETWEEN TWO VARIABLES
+47
+EXAMPLE 1.22
+An observational study is conducted to assess the association between smoking and cardiovascular
+disease (CVD), in which researchers identiﬁed a cohort of individuals and categorized them ac-
+cording to smoking and disease status. If the relative risk of CVD is calculated as the ratio of the
+proportion of smokers with CVD to the proportion of non-smokers with CVD, interpret the results
+of the study if the relative risk equals 1, is less than 1, or greater than 1.
+A relative risk of 1 indicates that the risk of CVD is equal for smokers and non-smokers.
+A relative risk less than 1 indicates that smokers are at a lower risk of CVD than non-smokers;
+i.e., the proportion of individuals with CVD among smokers is lower than the proportion among
+non-smokers.
+A relative risk greater than 1 indicates that smokers are at a higher risk of CVD than non-smokers;
+i.e., the proportion of individuals with CVD among smokers is higher than the proportion among
+non-smokers.
+GUIDED PRACTICE 1.23
+For the study described in Example 1.22, suppose that of the 231 individuals, 111 are smokers. 40
+smokers and 32 non-smokers have cardiovascular disease. Calculate and interpret the relative risk
+of CVD.45
+Relative risk relies on the assumption that the observed proportions of an event occurring in
+each group are representative of the risk, or incidence, of the event occurring within the popula-
+tions from which the groups are sampled. For example, in the LEAP data, the relative risk assumes
+that the proportions 33/263 and 5/267 are estimates of the proportion of individuals who would
+fail the OFC among the larger population of infants who avoid or consume peanut products.
+EXAMPLE 1.24
+Suppose another study to examine the association between smoking and cardiovascular disease
+is conducted, but researchers use a diﬀerent study design than described in Example 1.22. For
+the new study, 90 individuals with CVD and 110 individuals without CVD are recruited. 40 of
+the individuals with CVD are smokers, and 80 of the individuals without CVD are non-smokers.
+Should relative risk be used to summarize the observations from the new study?
+Relative risk should not be calculated for these observations. Since the number of individuals with
+and without CVD is ﬁxed by the study design, the proportion of individuals with CVD within a
+certain group (smokers or non-smokers) as calculated from the data is not a measure of CVD risk
+for that population.
+45The relative risk of CVD, comparing smokers to non-smokers, is (40/111)/(32/120) = 1.35. Smoking is associated
+with a 35% increase in the probability of CVD; in other words, the risk of CVD is 35% greater in smokers compared to
+non-smokers.
+
+
+--- PDF page 48 ---
+48
+CHAPTER 1. INTRODUCTION TO DATA
+GUIDED PRACTICE 1.25
+For a study examining the association between tea consumption and esophageal carcinoma, re-
+searchers recruited 300 patients with carcinoma and 571 without carcinoma and administered a
+questionnaire about tea drinking habits.46 Of the 47 individuals who reported that they regularly
+drink green tea, 17 had carcinoma. Of the 824 individuals who reported that they never, or very
+rarely, drink green tea, 283 had carcinoma. Evaluate whether the proportions 17/47 and 283/824
+are representative of the incidence rate of carcinoma among individuals who drink green tea regu-
+larly and those who do not.47
+RELATIVE RISK
+The relative risk of Outcome A in the hypothetical two-by-two table (Figure 1.37) can be cal-
+culated using either Group 1 or Group 2 as the reference group:
+RRA, comparing Group 1 to Group 2 = a/(a + b)
+c/(c + d)
+RRA, comparing Group 2 to Group 1 = c/(c + d)
+a/(a + b)
+The relative risk should only be calculated for data where the proportions a/(a+b) and c/(c+d)
+represent the incidence of Outcome A within the populations from which Groups 1 and 2 are
+sampled.
+1.6.3
+A numerical variable and a categorical variable
+Methods for comparing numerical data across groups are based on the approaches introduced
+in Section 1.4. Side-by-side boxplots and hollow histograms are useful for directly comparing
+how the distribution of a numerical variable diﬀers by category.
+Recall the question introduced in Section 1.2.3: is ACTN3 genotype associated with varia-
+tion in muscle function? Figure 1.39 visually shows the relationship between muscle function
+(measured as percent change in non-dominant arm strength) and ACTN3 genotype in the famuss
+data with side-by-side boxplots and hollow histograms. The hollow histograms highlight how the
+shapes of the distributions of ndrm.ch for each genotype are essentially similar, although the distri-
+bution for the CC genotype has less right skewing. The side-by-side boxplots are especially useful
+for comparing center and spread, and reveal that the T allele appears to be associated with greater
+muscle function; median percent change in non-dominant arm strength increases across the levels
+from CC to TT.
+GUIDED PRACTICE 1.26
+Using Figure 1.40, assess how maternal investment varies with altitude.48
+46Tea drinking habits and oesophageal cancer in a high risk area in northern Iran: population based casecontrol study,
+Islami F, et al., BMJ (2009), doi 10.1136/bmj.b929
+47The proportions calculated from the study data should not be used as estimates of the incidence rate of esophageal
+carcinoma among individuals who drink green tea regularly and those who do not, since the study selected participants
+based on carcinoma status.
+48As a general rule, clutches found at higher altitudes have greater volume; median clutch volume tends to increase as
+altitude increases. This suggests that increased altitude is associated with a higher level of maternal investment.
+
+
+--- PDF page 49 ---
+1.6. RELATIONSHIPS BETWEEN TWO VARIABLES
+49
+Genotype
+Percent Change in Non−Dominant Arm Strength
+CC
+CT
+TT
+0
+50
+100
+150
+200
+250
+Percent Change in Non−Dominant Arm Strength
+0
+50
+100
+150
+200
+250
+CC
+CT
+TT
+Figure 1.39: Side-by-side boxplot and hollow histograms for ndrm.ch, split by
+levels of actn3.r577x.
+Altitude
+Clutch Volume
+2,035.00
+2,926.00
+3,080.00
+3,189.00
+3,479.00
+3,493.00
+0
+500
+1000
+1500
+2000
+2500
+3000
+Figure 1.40: Side-by-side boxplot comparing the distribution of clutch.volume
+for diﬀerent altitudes.
+
+
+--- PDF page 50 ---
+50
+CHAPTER 1. INTRODUCTION TO DATA
+1.7
+Exploratory data analysis
+The simple techniques for summarizing and visualizing data that have been introduced in this
+chapter may not seem especially powerful, but when applied in practice, they can be instrumental
+for gaining insight into the interesting features of a dataset. This section provides three examples
+of data-driven research questions that can be investigated through exploratory data analysis.
+1.7.1
+Case study: discrimination in developmental disability support
+In the United States, individuals with developmental disabilities typically receive services
+and support from state governments. The State of California allocates funds to developmentally-
+disabled residents through the California Department of Developmental Services (DDS); individu-
+als receiving DDS funds are referred to as ’consumers’. The dataset dds.discr represents a sample
+of 1,000 DDS consumers (out of a total population of approximately 250,000), and includes infor-
+mation about age, gender, ethnicity, and the amount of ﬁnancial support per consumer provided
+by the DDS.49 Figure 1.41 shows the ﬁrst ﬁve rows of the dataset, and the variables are described
+in Figure 1.42.
+A team of researchers examined the mean annual expenditures on consumers by ethnicity,
+and found that the mean annual expenditures on Hispanic consumers was approximately one-
+third of the mean expenditures on White non-Hispanic consumers. As a result, an allegation of
+ethnic discrimination was brought against the California DDS.
+Does this ﬁnding represent suﬃcient evidence of ethnic discrimination, or might there be
+more to the story? This section will illustrate the process behind conducting an exploratory analysis
+that not only investigates the relationship between two variables of interest, but also considers
+whether other variables might be inﬂuencing that relationship.
+id
+age.cohort
+age
+gender
+expenditures
+ethnicity
+1
+10210
+13-17
+17
+Female
+2113
+White not Hispanic
+2
+10409
+22-50
+37
+Male
+41924
+White not Hispanic
+3
+10486
+0-5
+3
+Male
+1454
+Hispanic
+4
+10538
+18-21
+19
+Female
+6400
+Hispanic
+5
+10568
+13-17
+13
+Male
+4412
+White not Hispanic
+Figure 1.41: Five rows from the dds.discr data matrix.
+variable
+description
+id
+Unique identiﬁcation code for each resident
+age.cohort
+Age as sorted into six groups, 0-5 years, 6-12 years, 13-17 years, 18-21 years,
+22-50 years, and 51+ years
+age
+Age, measured in years
+gender
+Gender, either Female or Male
+expenditures
+Amount of expenditures spent by the State on an individual annually, mea-
+sured in USD
+ethnicity
+Ethnic group, recorded as either American Indian, Asian, Black, Hispanic,
+Multi Race, Native Hawaiian, Other, or White Not Hispanic
+Figure 1.42: Variables and their descriptions for the dds.discr dataset.
+49The dataset is based on actual attributes of consumers, but has been altered to maintain consumer privacy.
+
+
+--- PDF page 51 ---
+1.7. EXPLORATORY DATA ANALYSIS
+51
+Distributions of single variables
+To begin understanding a dataset, start by examining the distributions of single variables using
+numerical and graphical summaries. This process is essential for developing a sense of context; in
+this case, examining variables individually addresses questions such as "What is the range of an-
+nual expenditures?", "Do consumers tend to be older or younger?", and "Are there more consumers
+from one ethnic group versus another?".
+Figure 1.43 illustrates the right skew of expenditures, indicating that for the majority of
+consumers, expenditures are relatively low; most are within the $0 - $5,000 range. There are
+some consumers for which expenditures are much higher, such as within the $60,000 - $80,000
+range. Precise numerical summaries can be calculated using statistical software: the quartiles for
+expenditures are $2,899, $7,026, and $37,710.
+Expenditures (USD)
+Frequency
+0
+20000
+40000
+60000
+80000
+0
+100
+200
+300
+400
+Figure 1.43: A histogram of expenditures.
+A consumer’s age is directly recorded as the variable age; in the age.cohort variable, con-
+sumers are assigned to one of six age cohorts. The cohorts are indicative of particular life phases. In
+the ﬁrst three cohorts, consumers are still living with their parents as they move through preschool
+age, elementary/middle school age, and high school age. In the 18-21 cohort, consumers are transi-
+tioning from their parents’ homes to living on their own or in supportive group homes. From ages
+22-50, individuals are mostly no longer living with their parents but may still receive some support
+from family. In the 51+ cohort, consumers often have no living parents and typically require the
+most amount of support.
+
+
+--- PDF page 52 ---
+52
+CHAPTER 1. INTRODUCTION TO DATA
+Figure 1.44 reveals the right-skewing of age. Most consumers are younger than 30. The plot in
+Figure 1.44(b) graphically shows the number of individuals in each age cohort. There are approx-
+imately 200 individuals in each of the middle four cohorts, while there are about 100 individuals
+in the other two cohorts.
+Age (years)
+Frequency
+0
+20
+40
+60
+80
+100
+0
+100
+200
+300
+400
+(a)
+0−5
+6−12
+13−17
+18−21
+22−50
+51+
+Age (years)
+Frequency
+0
+50
+100
+150
+200
+(b)
+Figure 1.44: (a) Histogram of age. (b) Plot of age.cohort.
+There are eight ethnic groups represented in dds.discr. The two largest groups, Hispanic and
+White non-Hispanic, together represent about 80% of the consumers.
+American Indian
+Asian
+Black
+Hispanic
+Multi Race
+Native Hawaiian
+Other
+White not Hispanic
+Ethnicity
+Frequency
+0
+100
+200
+300
+400
+Figure 1.45: A plot of ethnicity.
+GUIDED PRACTICE 1.27
+Using Figure 1.46, does gender appear to be balanced in the dds.discr dataset?50
+Female
+Male
+Gender
+Frequency
+0
+100
+200
+300
+400
+500
+Figure 1.46: A plot of gender.
+50Yes, approximately half of the individuals are female and half are male.
+
+
+--- PDF page 53 ---
+1.7. EXPLORATORY DATA ANALYSIS
+53
+Relationships between two variables
+After examining variables individually, explore how variables are related to each other. While there
+exist methods for summarizing more than two variables simultaneously, focusing on two variables
+at a time can be surprisingly eﬀective for making sense of a dataset. It is useful to begin by inves-
+tigating the relationships between the primary response variable of interest and the exploratory
+variables. In this case study, the response variable is expenditures, the amount of funds the DDS
+allocates annually to each consumer. How does expenditures vary by age, ethnicity, and gender?
+Figure 1.47 shows a side-by-side boxplot of expenditures by age cohort. There is a clear
+upward trend, in which older individuals tend to receive more DDS funds. This reﬂects the under-
+lying context of the data. The purpose of providing funds to developmentally disabled individuals
+is to help them maintain a quality of life similar to those without disabilities; as individuals age, it
+is expected their ﬁnancial needs will increase. Some of the observed variation in expenditures can
+be attributed to the fact that the dataset includes a wide range of ages. If the data included only
+individuals in one cohort, such as the 22-50 cohort, the distribution of expenditures would be less
+variable, and range between $30,000 and $60,000 instead of from $0 and $80,000.
+Age (years)
+Expenditures (USD)
+0−5
+6−12
+13−17
+18−21
+22−50
+51+
+0
+20000
+40000
+60000
+80000
+Figure 1.47: A plot of expenditures by age.cohort.
+
+
+--- PDF page 54 ---
+54
+CHAPTER 1. INTRODUCTION TO DATA
+How does the distribution of expenditures vary by ethnic group? Does there seem to be a dif-
+ference in the amount of funding that a person receives, on average, between diﬀerent ethnicities?
+A side-by-side boxplot of expenditures by ethnicity (Figure 1.48) reveals that the distribution of
+expenditures is quite diﬀerent between ethnic groups. For example, there is very little variation
+in expenditures for the Multi Race, Native Hawaiian, and Other groups. Additionally, the me-
+dian expenditures are not the same between groups; the medians for American Indian and Native
+Hawaiian individuals are about $40,000, as compared to medians of approximately $10,000 for
+Asian and Black consumers.
+Ethnicity
+Expenditures (USD)
+American Indian
+Asian
+Black
+Hispanic
+Multi Race
+Native Hawaiian
+Other
+White not Hispanic
+0
+20000
+40000
+60000
+80000
+Figure 1.48: A plot of expenditures by ethnicity.
+The trend visible in Figure 1.48 seems potentially indicative of ethnic discrimination. Before
+proceeding with the analysis, however, it is important to take into account the fact that two of
+the groups, Hispanic and White non-Hispanic, comprise the majority of the data; some ethnic
+groups represent less than 10% of the observations (Figure 1.45). For ethnic groups with relatively
+small sample sizes, it is possible that the observed samples are not representative of the larger
+populations. The rest of this analysis will focus on comparing how expenditures varies between
+the two largest groups, White non-Hispanic and Hispanic.
+GUIDED PRACTICE 1.28
+Using Figure 1.49, do annual expenditures seem to vary by gender?51
+Expenditures (USD)
+Female
+Male
+0
+20000
+40000
+60000
+80000
+Gender
+Figure 1.49: A plot of expenditures by gender.
+51No, the distribution of expenditures within males and females is very similar; both are right skewed, with approxi-
+mately equal median and interquartile range.
+
+
+--- PDF page 55 ---
+1.7. EXPLORATORY DATA ANALYSIS
+55
+Figure 1.50 compares the distribution of expenditures between Hispanic and White non-
+Hispanic consumers. Most Hispanic consumers receive between about $0 to $20,000 from the
+California DDS; individuals receiving amounts higher than this are upper outliers. However, for
+White non-Hispanic consumers, median expenditures is at $20,000, and the middle 50% of con-
+sumers receive between $5,000 and $40,000. The precise summary statistics can be calculated
+from computing software, as shown in the corresponding R lab. The mean expenditures for His-
+panic consumers is $11,066, while the mean expenditures for White non-Hispanic consumers is
+over twice as large at $24,698. On average, a Hispanic consumer receives less ﬁnancial support
+from the California DDS than a White non-Hispanic consumer. Does this represent evidence of
+discrimination?
+Ethnicity
+Expenditures (USD)
+Hispanic
+White not Hispanic
+0
+20000
+40000
+60000
+80000
+Figure 1.50: A plot of expenditures by ethnicity, showing only Hispanics and
+White Non-Hispanics.
+Recall that expenditures is strongly associated with age—older individuals tend to receive
+more ﬁnancial support. Is there also an association between age and ethnicity, for these two ethnic
+groups? When using data to investigate a question, it is important to explore not only how explana-
+tory variables are related to the response variable(s), but also how explanatory variables inﬂuence
+each other.
+Figures 1.51 and 1.52 show the distribution of age within Hispanics and White non-Hispanics.
+Hispanics tend to be younger, with most Hispanic consumers falling into the 6-12, 13-17, and 18-
+21 age cohorts. In contrast, White non-Hispanics tend to be older; most consumers in this group
+are in the 22-50 age cohort, and relatively more White non-Hispanic consumers are in the 51+ age
+cohort as compared to Hispanics.
+0−5
+6−12
+13−17
+18−21
+22−50
+51+
+Age (years)
+Frequency
+0
+20
+40
+60
+80
+100
+(a)
+0−5
+6−12
+13−17
+18−21
+22−50
+51+
+Age (years)
+Frequency
+0
+20
+40
+60
+80
+100
+120
+(b)
+Figure 1.51: (a) Plot of age.cohort within Hispanics. (b) Plot of age.cohort within
+White non-Hispanics.
+
+
+--- PDF page 56 ---
+56
+CHAPTER 1. INTRODUCTION TO DATA
+Age Cohort
+Hispanic
+White Non-Hispanic
+0-5
+44/376 = 12%
+20/401 = 5%
+6-12
+91/376 = 24%
+46/401 = 11%
+13-17
+103/376 = 27%
+67/401 = 17%
+18-21
+78/376 = 21%
+69/401 = 17%
+22-50
+43/376 = 11%
+133/401 = 33%
+51+
+17/376 = 5%
+66/401 = 16%
+Sum
+376/376 = 100%
+401/401 = 100%
+Figure 1.52: Consumers by ethnicity and age cohort, shown both as counts and
+proportions.
+Recall that a confounding variable is a variable that is associated with the response variable
+and the explanatory variable under consideration; confounding was initially introduced in the
+context of sunscreen use and incidence of skin cancer, where sun exposure is a confounder. In this
+setting, age is a confounder for the relationship between expenditures and ethnicity. Just as it
+would be incorrect to claim that sunscreen causes skin cancer, it is essential here to recognize that
+there is more to the story than the apparent association between expenditures and ethnicity.
+For a closer look at the relationship between age, ethnicity, and expenditures, subset the data
+further to compare how expenditures diﬀers by ethnicity within each age cohort. If age is indeed
+the primary source of the observed variation in expenditures, then there should be little diﬀerence
+in average expenditures between individuals in diﬀerent ethnic groups but the same age cohort.
+Figure 1.53 shows the average expenditures within each age cohort, for Hispanics versus
+White non-Hispanics. The last column contains the diﬀerence between the two averages (calcu-
+lated as White Non-Hispanics average - Hispanics average).
+Age Cohort
+Hispanics
+White non-Hispanics
+Diﬀerence
+0-5
+1,393
+1,367
+-26
+6-12
+2,312
+2,052
+-260
+13-17
+3,955
+3,904
+-51
+18-21
+9,960
+10,133
+173
+22-50
+40,924
+40,188
+-736
+51+
+55,585
+52,670
+-2915
+Average
+11,066
+24,698
+13,632
+Figure 1.53: Average expenditures by ethnicity and age cohort, in USD ($). For all
+age cohorts except 18-21 years, average expenditures for White non-Hispanics is
+lower than for Hispanics.
+When expenditures is compared within age cohorts, there are not large diﬀerences between
+mean expenditures for White non-Hispanics versus Hispanics. Comparing individuals of similar
+ages reveals that the association between ethnicity and expenditures is not nearly as strong as it
+seemed from the initial comparison of overall averages.
+
+
+--- PDF page 57 ---
+1.7. EXPLORATORY DATA ANALYSIS
+57
+Instead, it is the diﬀerence in age distributions of the two populations that is driving the
+observed discrepancy in expenditures. The overall average of expenditures for the Hispanic con-
+sumers is lower because the population of Hispanic consumers is relatively young compared to the
+population of White non-Hispanic consumers, and the amount of expenditures for younger con-
+sumers tends to be lower than for older consumers. Based on an exploratory analysis that accounts
+for age as a confounding variable, there does not seem to be evidence of ethnic discrimination.
+Identifying confounding variables is essential for understanding data. Confounders are often
+context-speciﬁc; for example, age is not necessarily a confounder for the relationship between eth-
+nicity and expenditures in a diﬀerent population. Additionally, it is rarely immediately obvious
+which variables in a dataset are confounders; looking for confounding variables is an integral part
+of exploring a dataset.
+Chapter 7 introduces multiple linear regression, a method that can directly summarize the re-
+lationship between ethnicity, expenditures, and age, in addition to the tools for evaluating whether
+the observed discrepancies within age cohorts are greater than would be expected by chance vari-
+ation alone.
+Simpson’s paradox
+These data represent an extreme example of confounding known as Simpson’s paradox, in which
+an association observed in several groups may disappear or reverse direction once the groups are
+combined. In other words, an association between two variables X and Y may disappear or re-
+verse direction once data are partitioned into subpopulations based on a third variable Z (i.e., a
+confounding variable).
+Figure 1.53 shows how mean expenditures is higher for Hispanics than White non-Hispanics
+in all age cohorts except one. Yet, once all the data are aggregated, the average expenditures for
+White non-Hispanics is over twice as large as the average for Hispanics. The paradox can be ex-
+plored from a mathematical perspective by using weighted averages, where the average expendi-
+ture for each cohort is weighted by the proportion of the population in that cohort.
+EXAMPLE 1.29
+Using the proportions in Figure 1.52 and the average expenditures for each cohort in Figure 1.53,
+calculate the overall weighted average expenditures for Hispanics and for White non-Hispanics.52
+For Hispanics:
+1,393(.12) + 2,312(.24) + 3,955(.27) + 9,960(.21) + 40,924(.11) + 55,585(.05) = $11,162.
+For White non-Hispanics:
+1,367(0.05) + 2,052(.11) + 3,904(.17) + 10,133(.17) + 40,188(.33) + 52,760(.16) = $24,384.
+The weights for the youngest four cohorts, which have lower expenditures, are higher for the His-
+panic population than the White non-Hispanic population; additionally, the weights for the oldest
+two cohorts, which have higher expenditures, are higher for the White non-Hispanic population.
+This leads to overall average expenditures for the White non-Hispanics being higher than for His-
+panics.
+52Due to rounding, the overall averages calculated via this method will not exactly equal $11,066 and $24,698.
+
+
+--- PDF page 58 ---
+58
+CHAPTER 1. INTRODUCTION TO DATA
+1.7.2
+Case study: molecular cancer classiﬁcation
+The genetic code stored in DNA contains the necessary information for producing the proteins
+that ultimately determine an organism’s observable traits (phenotype). Although nearly every cell
+in an organism contains the same genes, cells may exhibit diﬀerent patterns of gene expression. Not
+only can genes be switched on or oﬀin certain tissues, but they can also be expressed at varying
+levels. These variations in gene expression underlie the wide range of physical, biochemical, and
+developmental diﬀerences that characterize speciﬁc cells and tissues.
+Originally, scientists were limited to monitoring the expression of only a single gene at a time.
+The development of microarray technology in the 1990’s made it possible to examine the expres-
+sion of thousands of genes simultaneously. While newer genomic technologies have started to
+replace microarrays for gene expression studies, microarrays continue to remain clinically relevant
+as a tool for genetic diagnosis. For example, a 2002 study examined the eﬀectiveness of gene ex-
+pression proﬁling as a tool for predicting disease outcome in breast cancer patients, reporting that
+the expression data from 70 genes constituted a more powerful predictor of survival than standard
+systems based on clinical criteria.53
+This section introduces the principles behind DNA microarrays and discusses the 1999 Golub
+leukemia study, which represents one of the earliest applications of microarray technology for
+diagnostic purposes.
+DNA microarrays
+Microarray technology is based on hybridization, a basic property of nucleic acids in which com-
+plementary nucleotide sequences speciﬁcally bind together. Each microarray consists of a glass or
+silicon slide dotted with a grid of short (25-40 base pairs long), single-stranded DNA fragments,
+known as probes. The probes in a single spot are present in millions of copies, and optimized to
+uniquely correspond to a gene.
+To measure the gene expression proﬁle of a sample, mRNA is extracted from the sample and
+converted into complementary-DNA (cDNA). The cDNA is then labeled with a ﬂuorescent dye and
+added to a microarray. When cDNA from the sample encounters complementary DNA probes, the
+two strands will hybridize, allowing the cDNA to adhere to speciﬁc spots on the slide. Once the
+chip is illuminated (to activate the ﬂuorescence) and scanned, the intensity of ﬂuorescence detected
+at each spot corresponds to the amount of bound cDNA.
+Microarrays are commonly used to compare gene expression between an experimental sample
+and a reference sample. Suppose that the reference sample is taken from healthy cells and the
+experimental sample from cancer cells. First, the cDNA from the samples are diﬀerentially labeled,
+such as green dye for the healthy cells and red dye for the cancer cells. The samples are then mixed
+together and allowed to bind to the slide. If the expression of a particular gene is higher in the
+experimental sample than in the reference sample, then the corresponding spot on the microarray
+will appear red. In contrast, the spot will appear green if expression in the experimental sample
+is lower than in the reference sample. Equal expression levels result in a yellow spot, while no
+expression in either sample shows as a black dot. The ﬂuorescence intensity data provide a relative
+measure of gene expression, showing which genes on the chip seem to be more or less active in
+relation to each other.
+53van de Vijver MJ, He YD, van’t Veer LJ, et al. A gene-expression sign as a predictor of survival in breast cancer. New
+England Journal of Medicine 2002;347:1999-2009.
+
+
+--- PDF page 59 ---
+1.7. EXPLORATORY DATA ANALYSIS
+59
+The raw data produced by a microarray is messy, due to factors such as imperfections dur-
+ing chip manufacturing or unpredictable probe behavior. It is also possible for inaccuracies to
+be introduced from cDNA binding to probes that are not precise sequence matches; this nonspe-
+ciﬁc binding will contribute to observed intensity, but not reﬂect the expression level of a gene.
+Methods to improve microarray accuracy by reducing the frequency of nonspeciﬁc binding include
+using longer probes or multiple probes per gene that correspond to diﬀerent regions of the gene
+sequence.54 The Aﬀymetrix company developed a diﬀerent strategy involving the use of probe
+pairs; one set of probes are a perfect match to the gene sequence (PM probes), while the mismatch
+probes contain a single base diﬀerence in the middle of the sequence (MM probes). The MM probes
+act as a control for any cDNA that exhibit nonspeciﬁc binding; subtracting the MM probe intensity
+from the PM intensity (PM - MM) provides a more accurate measure of ﬂuorescence produced by
+speciﬁc hybridization.
+Considerable research has been done to develop methods for pre-processing microarray data
+to adjust for various errors and produce data that can be analyzed. When analyzing "cleaned" data
+from any experiment, it is important to be aware that the reliability of any conclusions drawn from
+the data depends, to a large extent, on the care that has been taken in collecting and processing the
+data.
+Golub leukemia study
+Accurate cancer classiﬁcation is critical for determining an appropriate course of therapy. The
+chemotherapy regimens for acute leukemias diﬀers based on whether the leukemia aﬀects blood-
+forming cells (acute myeloid leukemia, AML) or white blood cells (acute lymphoblastic leukemia,
+ALL). At the time of the Golub study, no single diagnostic test was suﬃcient for distinguishing
+between AML and ALL. To investigate whether gene expression proﬁling could be a tool for clas-
+sifying acute leukemia type, Golub and co-authors used Aﬀymetrix DNA microarrays to measure
+the expression level of 7,129 genes from children known to have either AML or ALL.55
+The original data (after some initial pre-processing) are available from the Broad Institute.56
+The version of the data presented in this text have undergone further processing; the expression
+levels have been normalized to adjust for the variability between the separate arrays used for each
+sampled individual.57 Figure 1.54 describes the variables in the ﬁrst six columns of the Golub data.
+The last 7,129 columns of the dataset contain the expression data for the genes examined in the
+study; each column is named after the probe corresponding to a speciﬁc gene.
+variable
+description
+Samples
+Sample number; unique to each patient.
+BM.PB
+Type of patient material. BM for bone marrow; PB for peripheral blood.
+Gender
+F for female, M for male.
+Source
+Hospital where the patient was treated.
+tissue.mf
+Combination of BM.PB and Gender
+cancer
+Leukemia type; aml is acute myeloid leukemia, allB is acute lymphoblastic
+leukemia with B-cell origin, and allT is acute lymphoblastic leukemia with
+T-cell origin.
+Figure 1.54: Variables and their descriptions for the patient descriptors in Golub
+dataset.
+54Chou, C.C. et al. Optimization of probe length and the number of probes per gene for optimal microarray analysis of
+gene expression. Nucleic Acids Research 2004; 32: e99.
+55Golub, Todd R., et al. Molecular classiﬁcation of cancer: class discovery and class prediction by gene expression
+monitoring. Science 286 (1999): 531-537.
+56http://www-genome.wi.mit.edu/mpr/data_set_ALL_AML.html
+57John Maindonald, W. John Braun. Data Analysis and Graphics using R: An Example-Based Approach.
+
+
+--- PDF page 60 ---
+60
+CHAPTER 1. INTRODUCTION TO DATA
+Figure 1.55 shows ﬁve rows and seven columns from the dataset. Each row corresponds to a
+patient. These ﬁve patients were all treated at the Dana Farber Cancer Institute (DFCI) (Source) for
+ALL with B-cell origin (cancer), and samples were taken from bone marrow (BM.PB). Four of the
+patients were female and one was male (Gender). The last row in the table shows the normalized
+gene expression level for the gene corresponding to the probe AFFX.BioB.5.at.
+Samples
+BM.PB
+Gender
+Source
+tissue.mf
+cancer
+AFFX-BioB-5_at
+39
+BM
+F
+DFCI
+BM:f
+allB
+-1363.28
+40
+BM
+F
+DFCI
+BM:f
+allB
+-796.29
+42
+BM
+F
+DFCI
+BM:f
+allB
+-679.14
+47
+BM
+M
+DFCI
+BM:m
+allB
+-1164.40
+48
+BM
+F
+DFCI
+BM:f
+allB
+-1299.65
+Figure 1.55: Five rows and seven columns from the Golub data.
+The goal of the Golub study was to develop a procedure for distinguishing between AML
+and ALL based only on the gene expression levels of a patient. There are two major issues to be
+addressed:
+1. Which genes are the most informative for making a prediction? If a gene is diﬀerentially ex-
+pressed between individuals with AML versus ALL, then measuring the expression level of
+that gene may be informative for diagnosing leukemia type. For example, if a gene tends to be
+highly expressed in AML individuals, but only expressed at low levels in ALL individuals, it
+is more likely to be a good predictor of leukemia type than a gene that is expressed at similar
+levels in both AML and ALL patients.
+2. How can leukemia type be predicted from expression data? Suppose that a patient’s expression
+proﬁle is measured for a group of genes. In an ideal scenario, all the genes measured would
+exhibit AML-like expression, or ALL-like expression, making a prediction obvious. In reality,
+however, a patient’s expression proﬁle will not follow an idealized pattern. Some of the
+genes may have expression levels more typical of AML, while others may suggest ALL. It is
+necessary to clearly deﬁne a strategy for translating raw expression data into a prediction of
+leukemia type.
+Even though the golub dataset is relatively small by modern standards, it is already too large
+to feasibly analyze without the use of statistical computing software. In this section, conceptual
+details will be demonstrated with a small version of the dataset (golub.small) that contains only
+the data for 10 patients and 10 genes. Figure 1.56 shows the cancer type and expression data in
+golub.small; the expression values have been rounded to the nearest whole number, and the gene
+probes are labeled A-J for convenience.
+cancer
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+allB
+39308
+35232
+41171
+35793
+-593
+-1053
+-513
+-537
+1702
+1120
+allT
+32282
+41432
+59329
+49608
+-123
+-511
+265
+-272
+3567
+-489
+allB
+47430
+35569
+56075
+42858
+-208
+-712
+32
+-313
+433
+400
+allB
+25534
+16984
+28057
+32694
+89
+-534
+-24
+195
+3355
+990
+allB
+35961
+24192
+27638
+22241
+-274
+-632
+-488
+20
+2259
+348
+aml
+46178
+6189
+12557
+34485
+-331
+-776
+-551
+-48
+4074
+-578
+aml
+43791
+33662
+38380
+29758
+-47
+124
+1118
+3425
+7018
+1133
+aml
+53420
+26109
+31427
+23810
+396
+108
+1040
+1915
+4095
+-709
+aml
+41242
+37590
+47326
+30099
+15
+-429
+784
+-532
+1085
+-1912
+aml
+41301
+49198
+66026
+56249
+-418
+-948
+-340
+-905
+877
+745
+Figure 1.56: Leukemia type and expression data from golub.small.
+
+
+--- PDF page 61 ---
+1.7. EXPLORATORY DATA ANALYSIS
+61
+To start understanding how gene expression diﬀers by leukemia type, summarize the data
+separately for AML patients and for ALL patients, then make comparisons. For example, how
+does the expression of Gene A diﬀer between individuals with AML versus ALL? Among the 5
+individuals with AML, the mean expression for Gene A is 45,186; among the 5 ALL individuals,
+mean expression for Gene A is 36,103.
+Figure 1.57 shows mean expression values for each gene among AML patients and Figure 1.58
+among ALL patients.
+AML
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+46178
+6189
+12557
+34485
+-331
+-776
+-551
+-48
+4074
+-578
+43791
+33662
+38380
+29758
+-47
+124
+1118
+3425
+7018
+1133
+53420
+26109
+31427
+23810
+396
+108
+1040
+1915
+4095
+-709
+41242
+37590
+47326
+30099
+15
+-429
+784
+-532
+1085
+-1912
+41301
+49198
+66026
+56249
+-418
+-948
+-340
+-905
+877
+745
+Mean
+45186
+30550
+39143
+34880
+-77
+-384
+410
+771
+3430
+-264
+Figure 1.57: Expression data for AML patients, where the last row contains mean
+expression value for each gene among the 5 AML patients. The ﬁrst ﬁve rows are
+duplicated from the last ﬁve rows in Figure 1.56.
+ALL
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+39308
+35232
+41171
+35793
+-593
+-1053
+-513
+-537
+1702
+1120
+32282
+41432
+59329
+49608
+-123
+-511
+265
+-272
+3567
+-489
+47430
+35569
+56075
+42858
+-208
+-712
+32
+-313
+433
+400
+25534
+16984
+28057
+32694
+89
+-534
+-24
+195
+3355
+990
+35961
+24192
+27638
+22241
+-274
+-632
+-488
+20
+2259
+348
+Mean
+36103
+30682
+42454
+36639
+-222
+-689
+-146
+-181
+2263
+474
+Figure 1.58: Expression data for ALL patients, where the last row contains mean
+expression value for each gene among the 5 ALL patients. The ﬁrst ﬁve rows are
+duplicated from the ﬁrst ﬁve rows in Figure 1.56.
+EXAMPLE 1.30
+On average, which genes are more highly expressed in AML patients? Which genes are more highly
+expressed in ALL patients?
+For each gene, compare the mean expression value among ALL patients to the mean among AML
+patients. For example, the diﬀerence in mean expression levels for Gene A is
+xAML −xALL = 45186 −36103 = 9083.
+The diﬀerences in means for each gene are shown in Figure 1.59. Due to the order of subtraction
+used, genes with a positive diﬀerence value are more highly expressed in AML patients: A, E, F, G,
+H, and I. Genes B, C, D, and J are more highly expressed in ALL patients.
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+AML mean
+45186
+30550
+39143
+34880
+-77
+-384
+410
+771
+3430
+-264
+ALL mean
+36103
+30682
+42454
+36639
+-222
+-689
+-146
+-181
+2263
+474
+Diﬀerence
+9083
+-132
+-3310
+-1758
+145
+304
+556
+952
+1167
+-738
+Figure 1.59: The diﬀerence in mean expression levels by leukemia type for each
+gene in golub.small.
+
+
+--- PDF page 62 ---
+62
+CHAPTER 1. INTRODUCTION TO DATA
+The most informative genes for predicting leukemia type are ones for which the diﬀerence
+in means seems relatively large, compared to the entire distribution of diﬀerences. Figure 1.60
+visually displays the distribution of diﬀerences; the boxplot indicates that there is one large outlier
+and one small outlier.
+Difference in Mean Expression (AML−ALL)
+Frequency
+−4000
+−2000
+0
+2000
+4000
+6000
+8000
+10000
+0
+1
+2
+3
+4
+5
+6
+(a)
+Difference in Mean Expression (AML−ALL)
+−4000
+−2000
+0
+2000
+4000
+6000
+8000
+10000
+(b)
+Figure 1.60: A histogram and boxplot of the diﬀerences in mean expression level
+between AML and ALL in the golub.small data.
+It is possible to identify the outliers from simply looking at the list of diﬀerences, since the
+list is short: Genes A and C, with diﬀerences of 9,083 and -3,310, respectively.58 It is important to
+remember that Genes A and C are only outliers out of the speciﬁc 10 genes in golub.small, where
+mean expression has been calculated using data from 10 patients; these genes do not necessarily
+show outlier levels of expression relative to the complete dataset.
+With the use of computing software, the same process of calculating means, diﬀerences of
+means, and identifying outliers can easily be applied to the complete version of the data. Fig-
+ure 1.61 shows the distribution of diﬀerences in mean expression level between AML and ALL pa-
+tients for all 7,129 genes in the dataset, from 62 patients. The vast majority of genes are expressed
+at similar levels in AML and ALL patients; most genes have a diﬀerence in mean expression within
+-5,000 to 5,000. However, there are many genes that show extreme diﬀerences, as much as higher
+by 20,000 in AML or lower by 30,000 in ALL. These genes may be useful for diﬀerentiating between
+AML and ALL. The corresponding R lab illustrates the details of using R to identify these genes.59
+Note how Figure 1.61 uses data from only 62 patients out of the 72 in the Golub dataset; this
+subset is called golub.train. The remaining 10 patients have been set aside as a "test" dataset
+(golub.test). Based on what has been learned about expression patterns from the 62 patients in
+golub.train, how well can the leukemia type of the 10 patients in golub.test be predicted?60
+58For a numerical approach, calculate the outlier boundaries deﬁned by 1.5 × IQR.
+59Lab 3, Chapter 1.
+60The original analysis used data from 38 patients to identify informative genes, then tested predictions on an indepen-
+dent collection of data from 34 patients.
+
+
+--- PDF page 63 ---
+1.7. EXPLORATORY DATA ANALYSIS
+63
+Difference in Mean Expression (AML−ALL)
+Frequency
+−10000
+−5000
+0
+5000
+10000
+15000
+20000
+0
+1000
+2000
+3000
+(a)
+Difference in Mean Expression (AML−ALL)
+−10000
+−5000
+0
+5000
+10000
+15000
+20000
+(b)
+Figure 1.61: A histogram and boxplot of the diﬀerences in mean expression level
+between AML and ALL, using information from 7,129 genes and 62 patients in
+the Golub data (golub.train).
+
+
+--- PDF page 64 ---
+64
+CHAPTER 1. INTRODUCTION TO DATA
+Figure 1.62: Schematic of the prediction strategy used by the Golub team, repro-
+duced with modiﬁcations from Fig. 1B of the original paper.
+Figure 1.62 illustrates the main ideas behind the strategy developed by the Golub team to
+predict leukemia type from expression data. The vertical orange bars represent the gene expression
+levels of a patient for each gene, relative to the mean expression for AML patients and ALL patients
+from the training dataset (vertical blue bars). A gene will "vote" for either AML or ALL, depending
+on whether the patient’s expression level is closer to µAML or µALL. In the example shown, three of
+the genes are considered to have ALL-like expression, versus the other two that are more AML-like.
+The votes are also weighted to account for how far an observation is from the midpoint between
+the two means (horizontal dotted blue line), i.e. the length of the dotted line shows the deviation
+from the midpoint. For example, the observed expression value for gene 2 is not as strong an
+indicator of ALL as the expression value for gene 1. The magnitude of the deviations (v1, v2, ...) are
+summed to obtain VAML and VALL, and a higher value indicates a prediction of either AML or ALL,
+respectively.
+The published analysis chose to use 50 informative genes; a decision about how many genes
+to use in a diagnostic panel typically involves considering factors such as the number of genes
+practical for a clinical setting. For simplicity, a smaller number of genes will be used in the analysis
+shown here.
+Suppose that 10 genes are selected as predictors—the 5 largest outliers and 5 smallest outliers
+for the diﬀerence in mean expression between AML and ALL. Figure 1.63 shows expression data for
+these 10 genes from the 10 patients in golub.test, while Figure 1.64 contains the mean expression
+value for each gene among AML and ALL patients in golub.train.
+
+
+--- PDF page 65 ---
+1.7. EXPLORATORY DATA ANALYSIS
+65
+M19507_at
+M27891_at
+M11147_at
+M96326_rna1_at
+Y00787_s_at
+M14483_rna1_s_at
+X82240_rna1_at
+X58529_at
+M33680_at
+U05259_rna1_at
+1
+4481
+47532
+56261
+1785
+-77
+7824
+-231
+9520
+7181
+2757
+2
+11513
+2839
+42469
+5018
+20831
+27407
+-1116
+-221
+6978
+-187
+3
+21294
+6439
+30239
+61951
+-187
+19692
+-540
+216
+1741
+-84
+4
+-399
+26023
+40910
+1271
+26842
+30092
+-1247
+19033
+13117
+-188
+5
+-147
+29609
+37606
+20053
+12745
+26985
+-1104
+-273
+8701
+-168
+6
+-1229
+-1206
+16932
+2250
+360
+38058
+20951
+12406
+9927
+8378
+7
+-238
+-610
+21798
+-991
+-348
+23986
+6500
+20451
+8500
+7005
+8
+-1021
+-792
+17732
+730
+5102
+17893
+158
+9287
+7924
+9221
+9
+432
+-1099
+9683
+-576
+-804
+14386
+7097
+5556
+9915
+5594
+10
+-518
+-862
+26386
+-2971
+-1032
+30100
+32706
+21007
+23932
+14841
+Figure 1.63: Expression data from the 10 patients in golub.test, for the 10 genes
+selected as predictors. Each row represents a patient; the ﬁve right-most columns
+are the 5 largest outliers and the ﬁve left-most columns are the 5 smallest outliers.
+Probe
+AML Mean
+ALL Mean
+Midpoint
+M19507_at
+20143
+322
+10232
+M27891_at
+17395
+-262
+8567
+M11147_at
+32554
+16318
+24436
+M96326_rna1_at
+16745
+830
+8787
+Y00787_s_at
+16847
+1002
+8924
+M14483_rna1_s_at
+22268
+33561
+27914
+X82240_rna1_at
+-917
+9499
+4291
+X58529_at
+598
+10227
+5413
+M33680_at
+4151
+13447
+8799
+U05259_rna1_at
+74
+8458
+4266
+Table 1.64: Mean expression value for each gene among AML patients and ALL
+patients in golub.train, and the midpoint between the means.
+EXAMPLE 1.31
+Consider the expression data for the patient in the ﬁrst row of Figure 1.63. For each gene, identify
+whether the expression level is more AML-like or more ALL-like.
+For the gene represented by the M19507_at probe, the patient has a recorded expression level of
+4,481, which is closer to the ALL mean of 322 than the AML mean of 20,143. However, for the gene
+represented by the M27891_at probe, the expression level of 47,532 is closer to the AML mean of
+17,395 than the ALL mean of -262.
+Expression at genes represented by M19507_at, M96326_rna1_at, Y00787_s_at, and X58529_at are
+more ALL-like than AML-like. All other expression levels are closer to µAML.
+EXAMPLE 1.32
+Use the information in Figures 1.63 and 1.64 to calculate the magnitude of the deviations v1 and
+v10 for the ﬁrst patient.
+For the gene represented by the M19507_at probe, the magnitude of the deviation is v1 = |4,481 −
+10,232| = 5,751.
+For the gene represented by the U05259_rna1_at probe, the magnitude of the deviation is v10 =
+|2,757 −4,266| = 1,509.
+
+
+--- PDF page 66 ---
+66
+CHAPTER 1. INTRODUCTION TO DATA
+M19507_at
+M27891_at
+M11147_at
+M96326_rna1_at
+Y00787_s_at
+M14483_rna1_s_at
+X82240_rna1_at
+X58529_at
+M33680_at
+U05259_rna1_at
+1
+5751
+38966
+31825
+7003
+9001
+20090
+4522
+4108
+1618
+1509
+2
+1281
+5727
+18032
+3769
+11906
+507
+5408
+5634
+1821
+4453
+3
+11061
+2128
+5803
+53164
+9111
+8222
+4831
+5196
+7058
+4350
+4
+10632
+17457
+16474
+7516
+17918
+2178
+5538
+13621
+4318
+4454
+5
+10379
+21042
+13169
+11265
+3820
+929
+5395
+5685
+98
+4434
+6
+11461
+9773
+7504
+6537
+8564
+10144
+16660
+6994
+1128
+4112
+7
+10470
+9176
+2638
+9778
+9272
+3928
+2209
+15038
+300
+2739
+8
+11254
+9358
+6704
+8057
+3823
+10021
+4133
+3875
+875
+4955
+9
+9800
+9666
+14754
+9363
+9728
+13529
+2806
+144
+1116
+1328
+10
+10750
+9428
+1949
+11759
+9956
+2186
+28415
+15594
+15133
+10575
+Table 1.65: The magnitude of deviations from the midpoints. Cells for which the
+expression level is more ALL-like (closer to µALL than µAML) are highlighted in
+blue.
+EXAMPLE 1.33
+Using the information in Figure 1.65, make a prediction for the leukemia status of Patient 1.
+Calculate the total weighted votes for each category:
+VAML = 38,966 + 31,825 + 20,090 + 4,522 + 1,618 + 1,509 = 98,530
+VALL = 5,571 + 7,003 + 9,001 + 4,108 = 25,863
+Since VAML > VALL, Patient 1 is predicted to have AML.
+GUIDED PRACTICE 1.34
+Make a prediction for the leukemia status of Patient 10.61
+Figure 1.66 shows the comparison between actual leukemia status and predicted leukemia
+status based on the described prediction strategy. The prediction matches patient leukemia status
+for all patients.
+Actual
+Prediction
+1
+aml
+aml
+2
+aml
+aml
+3
+aml
+aml
+4
+aml
+aml
+5
+aml
+aml
+6
+allB
+all
+7
+allB
+all
+8
+allB
+all
+9
+allB
+all
+10
+allB
+all
+Figure 1.66: Actual leukemia status versus predicted leukemia status for the pa-
+tients in golub.test
+The analysis presented here is meant to illustrate how basic statistical concepts such as the def-
+inition of an outlier can be leveraged to address a relatively complex scientiﬁc question. There are
+entirely diﬀerent approaches possible for analyzing these data, and many other considerations that
+have not been discussed. For example, this method of summing the weighted votes for each gene
+assumes that each gene is equally informative; the analysis in the published paper incorporates an
+additional weighting factor when calculating VAML and VALL that accounts for how correlated each
+gene is with leukemia type. The published analysis also calculates prediction strength based on
+the values of VAML and VAML in order to provide a measure of how reliable each prediction is.
+61Since VAML = 1,949 and VALL = 113,796, Patient 10 is predicted to have ALL.
+
+
+--- PDF page 67 ---
+1.7. EXPLORATORY DATA ANALYSIS
+67
+Finally, it is important to remember that the Golub analysis represented one of the earliest in-
+vestigations into the use of gene expression data for diagnostic purposes. While the overall logical
+goals remain the same—identifying informative genes and developing a prediction strategy—the
+means of accomplishing them have become far more sophisticated. A modern study would have
+the beneﬁt of referencing established, well-deﬁned techniques for analyzing microarray data.
+1.7.3
+Case study: cold-responsive genes in the plant Arabidopsis arenosa
+In contrast to hybridization-based approaches, RNA sequencing (RNA-Seq) allows for the
+entire transcriptome to be surveyed in a high-throughput, quantitative manner.62 Microarrays
+require gene-speciﬁc probes, which limits microarray experiments to detecting transcripts that
+correspond to known gene sequences. In contrast, RNA-Seq can still be used when genome se-
+quence information is not available, such as for non-model organisms. RNA-Seq is an especially
+powerful tool for researchers interested in studying small-scale genetic variation, such as single
+nucleotide polymorphisms, which microarrays are not capable of detecting.63 Compared to mi-
+croarrays, RNA-Seq technology oﬀers increased sensitivity for detecting genes expressed at either
+low or very high levels.
+This section introduces the concepts behind RNA-Seq technology and discusses a study that
+used RNA-Seq to explore the genetic basis of cold response in the plant Arabidopsis arenosa.
+RNA sequencing (RNA-Seq)
+The ﬁrst step in an RNA-Seq experiment is to prepare cDNA sequence libraries for each RNA sam-
+ple being sequenced. RNA is converted into cDNA and sheared into short fragments; sequencing
+adapters and barcodes are added to each fragment that initiate the sequencing reaction and iden-
+tify sequences that originate from diﬀerent samples. Once all the cDNA fragments are sequenced,
+the resulting short sequence reads must be re-constructed to produce the transcriptome. At this
+point, even the simplest RNA-Seq experiment has generated a relatively large amount of data; the
+complexity involved in processing and analyzing RNA-Seq data represents a signiﬁcant challenge
+to widespread adoption of RNA-Seq technology. While a number of programs are available to help
+researchers process RNA-Seq data, improving computational methods for working with RNA-Seq
+data remains an active area of research.
+A transcriptome can be assembled from the short sequence reads by either de novo assembly
+or genome mapping. In de novo assembly, sequencing data are run through computer algorithms
+that identify overlapping regions in the short sequence reads to gradually piece together longer
+stretches of continuous sequence. Alternatively, the reads can be aligned to a reference genome, a
+genome sequence which functions as a representative template for a given species; in cases where
+a species has not been sequenced, the genome of a close relative can also function as a reference
+genome. By mapping reads against a genome, it is possible to identify the position (and thus, the
+gene) from which a given RNA transcript originated. It is also possible to use a combination of
+these two strategies, an approach that is especially advantageous when genomes have experienced
+major rearrangements, such as in the case of cancer cells.64 Once the transcripts have been assem-
+bled, information stored in sequence databases such as those hosted by the National Center for
+Biotechnology (NCBI) can be used to identify gene sequences (i.e., annotate the transcripts).
+62Wang, et al. RNA-Seq: a revolutionary tool for transcriptomics. Nature Genetics 2009; 10: 57-63.
+63A single nucleotide polymorphism (SNP) represents variation at a single position in DNA sequence among individuals.
+64Garber, et al. Computational methods for transcriptome annotation and quantiﬁcation using RNA-seq. Nature Methods
+2011; 8: 469-477.
+
+
+--- PDF page 68 ---
+68
+CHAPTER 1. INTRODUCTION TO DATA
+Quantifying gene expression levels from RNA-Seq data is based on counting the number of
+sequence reads per gene. If a particular gene is highly expressed, there will be a relatively high
+number of RNA transcripts originating from that gene; thus, the probability that transcripts from
+this gene are sequenced multiple times is also relatively high, and the gene will have a high number
+of sequencing reads associated with it. The number of read counts for a given gene provides a
+measure of gene expression level, when normalized for transcript length. If a short transcript and
+long transcript are present in equal amounts, the long transcript will have more sequencing reads
+associated with it due to the fragmentation step in library construction. Additional normalization
+steps are necessary when comparing data between samples to account for factors such as diﬀerences
+in the starting amount of RNA or the total number of sequencing reads generated (sequencing
+depth, in the language of genomics). A variety of strategies have been developed to carry out such
+normalization procedures.
+Cold-responsive genes in A. arenosa
+Arabidopsis arenosa populations exist in diﬀerent habitats, and exhibit a range of diﬀerences in ﬂow-
+ering time, cold sensitivity, and perenniality. Sensitivity to cold is an important trait for perennials,
+plants that live longer than one year. It is common for perennials to require a period of prolonged
+cold in order to ﬂower. This mechanism, known as vernalization, allows perennials to synchronize
+their life cycle with the seasons such that they ﬂower only once winter is over. Plant response to
+low temperatures is under genetic control, and mediated by a speciﬁc set of cold-responsive genes.
+In a recent study, researchers used RNA-Seq to investigate how cold responsiveness diﬀers
+in two populations of A. arenosa: TBG (collected from Triberg, Germany) and KA (collected from
+Kasparstein, Austria).65 TBG grows in and around railway tracks, while KA is found on shaded
+limestone outcrops in wooded forests. As an annual, TBG has lost the vernalization response and
+does not required extended cold in order to ﬂower; in the wild, TBG plants usually die before the
+onset of winter. In contrast, KA is a perennial plant, in which vernalization is known to greatly
+accelerate the onset of ﬂowering.
+Winter conditions can be simulated by incubating plants at 4 ◦C for several weeks; a plant that
+has undergone cold treatment is considered vernalized, while plants that have not been exposed
+to cold treatment are non-vernalized. Expression data were collected for 1,088 genes known to be
+cold-responsive in TBG and KA plants that were either vernalized or non-vernalized.
+Figure 1.67 shows the data collected for the KA plants analyzed in the study, while Figure 1.68
+shows the TBG expression data. Each row corresponds to a gene; the ﬁrst column indicates gene
+name, while the rest correspond to expression measured in a plant sample. Three individuals
+of each population were exposed to cold (vernalized, denoted by V), and three were not (non-
+vernalized, denoted by NV). Expression was measured in gene counts (i.e. the number of RNA
+transcripts present in a sample); the data were then normalized between samples to allow for com-
+parisons between gene counts. For example, a value of 288.20 for the PUX4 gene in KA NV 1
+indicates that in one of the non-vernalized KA individuals, about 288 copies of PUX4 were de-
+tected.
+A high number of transcripts indicates a high level of gene expression. As seen by comparing
+the expression levels across the ﬁrst rows of Figures 1.67 and 1.68, the expression levels of PUX4
+are higher in vernalized plants than non-vernalized plants.
+65Baduel P, et al. Habitat-Associated Life History and Stress-Tolerance Variation in Arabidopsis arenosa. Plant Physiology
+2016; 171: 437-451.
+
+
+--- PDF page 69 ---
+1.7. EXPLORATORY DATA ANALYSIS
+69
+Gene Name
+KA NV 1
+KA NV 2
+KA NV 3
+KA V 1
+KA V 2
+KA V 3
+1
+PUX4
+288.20
+322.55
+305.35
+1429.29
+1408.25
+1487.08
+2
+TZP
+79.36
+93.34
+73.44
+1203.40
+1230.49
+1214.03
+3
+GAD2
+590.59
+492.69
+458.02
+2639.42
+2645.05
+2705.32
+4
+GAUT6
+86.88
+99.25
+57.98
+586.24
+590.03
+579.71
+5
+FB
+791.08
+912.12
+746.94
+3430.03
+3680.12
+3467.06
+Figure 1.67: Five rows and seven columns from the arenosa dataset, showing
+expression levels in KA plants.
+Gene Name
+TBG NV 1
+TBG NV 2
+TBG NV 3
+TBG V 1
+TBG V 2
+TBG V 3
+1
+PUX4
+365.23
+288.13
+365.01
+601.39
+800.64
+698.73
+2
+TZP
+493.23
+210.27
+335.33
+939.72
+974.36
+993.14
+3
+GAD2
+1429.14
+1339.50
+2215.27
+1630.77
+1500.36
+1621.28
+4
+GAUT6
+129.63
+76.40
+135.02
+320.57
+298.91
+399.27
+5
+FB
+1472.35
+1120.49
+1313.14
+3092.37
+3230.72
+3173.00
+Figure 1.68: Five rows and seven columns from the arenosa dataset, showing
+expression levels in TBG plants.
+The three measured individuals in a particular group represent biological replicates, individ-
+uals of the same type grown under identical conditions; collecting data from multiple individuals
+of the same group captures the inherent biological variability between organisms. Averaging ex-
+pression levels across these replicates provides an estimate of the typical expression level in the
+larger population. Figure 1.69 shows the mean expression levels for ﬁve genes.
+Gene Name
+KA NV
+KA V
+TBG NV
+TBG V
+1
+PUX4
+305.36
+1441.54
+339.46
+700.25
+2
+TZP
+82.05
+1215.97
+346.28
+969.07
+3
+GAD2
+513.77
+2663.26
+1661.30
+1584.14
+4
+GAUT6
+81.37
+585.33
+113.68
+339.58
+5
+FB
+816.71
+3525.74
+1301.99
+3165.36
+Figure 1.69: Mean gene expression levels of ﬁve cold-responsive genes, for non-
+vernalized and vernalized KA and TBG.
+Figure 1.70(a) plots the mean gene expression levels of all 1,088 genes for each group. The
+expression levels are heavily right-skewed, with many genes present at unusually high levels rela-
+tive to other genes. This is an example of a situation in which a transformation can be useful for
+clarifying the features of a distribution. In Figure 1.70(b), it is easier to see that expression levels of
+vernalized plants are shifted upward relative to non-vernalized plants. Additionally, while median
+expression is slightly higher in non-vernalized TBG than non-vernalized KA, median expression in
+vernalized KA is higher than in vernalized TBG. Vernalization appears to trigger a stronger change
+in expression of cold-responsive genes in KA plants than in TBG plants.
+Figure 1.70 is only a starting point for exploring how expression of cold-responsive genes dif-
+fers between KA and TBG plants. Consider a gene-level approach, in which the responsiveness of
+a gene to vernalization is quantiﬁed as the ratio of expression in a vernalized sample to expression
+in a non-vernalized sample.
+
+
+--- PDF page 70 ---
+70
+CHAPTER 1. INTRODUCTION TO DATA
+Expression (Number of Transcripts)
+0
+2000
+4000
+6000
+8000
+KA NV
+KA V
+TBG NV
+TBG V
+(a)
+Expression (Log Number of Transcripts)
+−2
+0
+2
+4
+6
+8
+10
+KA NV
+KA V
+TBG NV
+TBG V
+(b)
+Figure 1.70: (a) Mean gene expression levels for non-vernalized KA, vernalized
+KA, non-vernalized TBG, and vernalized TBG plants. (b) Log-transformed mean
+gene expression levels.
+Figure 1.71(a) shows responsiveness for ﬁve genes, calculated separately between V and NV
+TBG and V and NV KA, using the means in Figure 1.69. The ratios provide a measure of how much
+expression diﬀers between vernalized and non-vernalized individuals. For example, the gene T ZP
+is expressed almost 15 times as much in vernalized KA than it is in non-vernalized KA. In contrast,
+the gene GAD2 is expressed slightly less in vernalized TBG than in non-vernalized TBG.
+As with the mean gene expression levels, it is useful to apply a log transformation (Fig-
+ure 1.71(b)). On the log scale, values close to 0 are indicative of low responsiveness, while large val-
+ues in either direction correspond to high responsiveness. Figure 1.72 shows the log2-transformed
+expression ratios as a side-by-side boxplot.66
+Gene Name
+TBG
+KA
+1
+PUX4
+2.06
+4.72
+2
+TZP
+2.80
+14.82
+3
+GAD2
+0.95
+5.18
+4
+GAUT6
+2.99
+7.19
+5
+FB
+2.43
+4.32
+(a)
+Gene Name
+TBG
+KA
+1
+PUX4
+1.04
+2.24
+2
+TZP
+1.48
+3.89
+3
+GAD2
+-0.07
+2.37
+4
+GAUT6
+1.58
+2.85
+5
+FB
+1.28
+2.11
+(b)
+Figure 1.71: (a) Ratio of mean expression in vernalized individuals to mean ex-
+pression in non-vernalized individuals. (b) Log2-transformation of expression
+ratios in Figure 1.71(a).
+66One gene is omitted because the expression ratio in KA is 0, and the logarithm of 0 is undeﬁned.
+
+
+--- PDF page 71 ---
+1.7. EXPLORATORY DATA ANALYSIS
+71
+Log2 Expression Ratio
+−10
+−5
+0
+5
+10
+TBG
+KA
+Figure 1.72: Responsiveness for 1,087 genes in arenosa, calculated as the log2
+ratio of vernalized over non-vernalized expression levels.
+Figure 1.72 directly illustrates how the magnitude of response to vernalization in TBG is
+smaller than in KA. The spread of responsiveness in KA is larger than for TBG, as indicated by the
+larger IQR and range of values; this indicates that more genes in KA are diﬀerentially expressed
+between vernalized and non-vernalized samples. Additionally, the median responsiveness in KA is
+higher than in TBG.
+There are several outliers for both KA and TBG, with large outliers representing genes that
+were much more highly expressed in vernalized plants than non-vernalized plants, and vice versa
+for low outliers. These highly cold-responsive genes likely play a role in how plants cope with
+colder temperatures; they could be involved in regulating freezing tolerance, or controlling how
+plants detect cold temperatures. With the help of computing software, it is a simple matter to iden-
+tify the outliers and address questions such as whether particular genes are highly vernalization-
+responsive in both KA and TBG.
+
+
+--- PDF page 72 ---
+72
+CHAPTER 1. INTRODUCTION TO DATA
+Advanced data visualization
+There are many ways to numerically and graphically summarize data that are not explicitly in-
+troduced in this chapter. Presentation-style graphics in published manuscripts can be especially
+complex, and may feature techniques speciﬁc to a certain ﬁeld as well as novel approaches de-
+signed to highlight particular features of a dataset. This section discusses the ﬁgures generated by
+the Baduel, et al. research team to visualize the diﬀerences in vernalization response between KA
+and TBG A. arenosa plants.
+Figure 1.73: Figure 4 from the original manuscript. Plot A compares mean ex-
+pression levels between non-vernalized KA and TBG; Plot B compares mean ex-
+pression levels between vernalized KA and TBG.
+Each dot in Figure 1.73 represents a gene; each gene is plotted by its mean expression level
+in KA against its mean expression level in TBG. The overall trend can be summarized by a line ﬁt
+to the points.67 For the slope of the line to equal 1, each gene would have to be equally expressed
+in KA and TBG. In the upper plot, the slope of the line is less than 1, which indicates that for
+non-vernalized plants, cold-responsive genes have a higher expression in TBG than in KA. In the
+lower plot, the slope is greater than 1, indicating that the trend is reversed in vernalized plants:
+cold-responsive genes are more highly expressed in KA. This trend is also discernible from the side-
+by-side boxplot in Figure 1.70. Using a scatterplot, however, makes it possible to directly compare
+expression in KA versus TBG on a gene-by-gene basis, and also locate particular genes of interest
+that are known from previous research (e.g., the labeled genes in Figure 1.73.)68 The colors in the
+plot signify plot density, with warmer colors representing a higher concentration of points.
+67Lines of best ﬁt are discussed in Chapter 6.
+68Only a subset of the 1,088 genes are plotted in Figure 1.73.
+
+
+--- PDF page 73 ---
+1.7. EXPLORATORY DATA ANALYSIS
+73
+Figure 1.74: Figure 3 from the original manuscript. Each gene is plotted based on
+the values of the log2 expression ratio in KA versus TBG.
+Figure 1.74, like Figure 1.72, compares the cold-responsiveness in KA versus TBG, calculat-
+ing responsiveness as the log2 ratio of vernalized over non-vernalized expression levels. As in
+Figure 1.73, each dot represents a single gene. The slope of the best ﬁtting line is greater than 1,
+indicating that the assayed genes typically show greater responsiveness in KA than in TBG.69
+While presentation-style graphics may use relatively sophisticated approaches to displaying
+data that seem far removed from the simple plots discussed in this chapter, the end goal remains
+the same – to eﬀectively highlight key features of data.
+69These 608 genes are a subset of the ones plotted in Figure 1.73; genes with expression ratio 0 are not included.
+
+
+--- PDF page 74 ---
+74
+CHAPTER 1. INTRODUCTION TO DATA
+1.8
+Notes
+Introductory treatments of statistics often emphasize the value of formal methods of prob-
+ability and inference, topics which are covered in the remaining chapters of this text. However,
+numerical and graphical summaries are essential for understanding the features of a dataset and
+should be applied before the process of inference begins. It is inadvisable to begin conducting
+tests or constructing models without a careful understanding of the strengths and weaknesses of a
+dataset. For example, are some measurements out of range, or the result of errors in data recording?
+The tools of descriptive statistics form the basis of exploratory data analysis; having the in-
+tuition for exploring and interpreting data in the context of a research question is an essential
+statistical skill. With computing software, it is a relatively simple matter to produce numerical
+and graphical summaries, even with large datasets. The challenge lies instead in understanding
+how to wade through a dataset, disentangle complex relationships between variables, and piece
+together the underlying story.
+It is important to note that the graphical methods illustrated in the text are relatively simple,
+static graphs that, for instance, do not show changes dynamically over time. They will be surpris-
+ingly useful in the later chapters. But there has been considerable progress in the visual display
+of data in the last decade, and many wonderful displays exist that show complex, time dependent
+data. For examples of sophisticated graphical displays, we especially recommend the bubble charts
+available at the Gapminder web site (https://www.gapminder.org) that show international trends
+in public health outcomes and the graphical displays of data in the Upshot section of the New York
+Times (https://www.nytimes.com/section/upshot).
+There are four labs associated with Chapter 1. The ﬁrst lab introduces basic commands for
+working with data in R, and shows how to produce the graphical and numerical summaries dis-
+cussed in this chapter. The exercises in Lab 1 rely heavily on the introduction to R and R Studio in
+Lab 00 (Getting Started). The Lab Notes corresponding to Lab 1 provide a systematic introduction
+to R functions useful for getting started with applied data analysis.
+The remaining three labs explore the data presented in the case studies in Section 1.7, outlin-
+ing analyses driven by questions similar to what one might encounter in practice. Does the state of
+California discriminate in its distribution of funds for developmental disability support (Lab 2)?
+Are particular genes associated with a subtype of pediatric leukemia (Lab 3)? Is there a genetic ba-
+sis to the cold weather response in the plant Arabidopsis arenosa (Lab 4)? Labs 3 and 4 demonstrate
+how computing is essential for data analysis; even though the two datasets are relatively small
+by modern standards, they are already too large to feasibly analyze without statistical computing
+software. All three labs illustrate how important questions can be examined even with relatively
+simple statistical concepts.
+
+
+--- PDF page 75 ---
+1.9. EXERCISES
+75
+1.9
+Exercises
+1.9.1
+Case study
+1.1
+Migraine and acupuncture, Part I. A migraine is a particularly painful type of headache, which pa-
+tients sometimes wish to treat with acupuncture. To determine whether acupuncture relieves migraine pain,
+researchers conducted a randomized controlled study where 89 females diagnosed with migraine headaches
+were randomly assigned to one of two groups: treatment or control. 43 patients in the treatment group re-
+ceived acupuncture that is speciﬁcally designed to treat migraines. 46 patients in the control group received
+placebo acupuncture (needle insertion at non-acupoint locations). 24 hours after patients received acupunc-
+ture, they were asked if they were pain free. Results are summarized in the contingency table below.70
+Pain free
+Yes
+No
+Total
+Treatment
+10
+33
+43
+Group
+Control
+2
+44
+46
+Total
+12
+77
+89
+Figure from the original pa-
+per displaying the appropri-
+ate area (M) versus the inap-
+propriate area (S) used in the
+treatment of migraine attacks.
+(a) What percent of patients in the treatment group were pain free 24 hours after receiving acupuncture?
+(b) What percent were pain free in the control group?
+(c) In which group did a higher percent of patients become pain free 24 hours after receiving acupuncture?
+(d) Your ﬁndings so far might suggest that acupuncture is an eﬀective treatment for migraines for all people
+who suﬀer from migraines. However this is not the only possible conclusion that can be drawn based
+on your ﬁndings so far. What is one other possible explanation for the observed diﬀerence between the
+percentages of patients that are pain free 24 hours after receiving acupuncture in the two groups?
+1.2
+Sinusitis and antibiotics, Part I. Researchers studying the eﬀect of antibiotic treatment for acute si-
+nusitis compared to symptomatic treatments randomly assigned 166 adults diagnosed with acute sinusitis to
+one of two groups: treatment or control. Study participants received either a 10-day course of amoxicillin (an
+antibiotic) or a placebo similar in appearance and taste. The placebo consisted of symptomatic treatments
+such as acetaminophen, nasal decongestants, etc. At the end of the 10-day period, patients were asked if they
+experienced improvement in symptoms. The distribution of responses is summarized below.71
+Self-reported improvement
+in symptoms
+Yes
+No
+Total
+Treatment
+66
+19
+85
+Group
+Control
+65
+16
+81
+Total
+131
+35
+166
+(a) What percent of patients in the treatment group experienced improvement in symptoms?
+(b) What percent experienced improvement in symptoms in the control group?
+(c) In which group did a higher percentage of patients experience improvement in symptoms?
+(d) Your ﬁndings so far might suggest a real diﬀerence in eﬀectiveness of antibiotic and placebo treatments
+for improving symptoms of sinusitis. However, this is not the only possible conclusion that can be drawn
+based on your ﬁndings so far. What is one other possible explanation for the observed diﬀerence between
+the percentages of patients in the antibiotic and placebo treatment groups that experience improvement
+in symptoms of sinusitis?
+70G. Allais et al. “Ear acupuncture in the treatment of migraine attacks: a randomized trial on the eﬃcacy of appropriate
+versus inappropriate acupoints”. In: Neurological Sci. 32.1 (2011), pp. 173–175.
+71J.M. Garbutt et al. “Amoxicillin for Acute Rhinosinusitis: A Randomized Controlled Trial”. In: JAMA: The Journal of
+the American Medical Association 307.7 (2012), pp. 685–692.
+
+
+--- PDF page 76 ---
+76
+CHAPTER 1. INTRODUCTION TO DATA
+1.9.2
+Data basics
+1.3
+Air pollution and birth outcomes, study components. Researchers collected data to examine the
+relationship between air pollutants and preterm births in Southern California. During the study air pollution
+levels were measured by air quality monitoring stations. Speciﬁcally, levels of carbon monoxide were recorded
+in parts per million, nitrogen dioxide and ozone in parts per hundred million, and coarse particulate matter
+(PM10) in µg/m3. Length of gestation data were collected on 143,196 births between the years 1989 and
+1993, and air pollution exposure during gestation was calculated for each birth. The analysis suggested that
+increased ambient PM10 and, to a lesser degree, CO concentrations may be associated with the occurrence of
+preterm births.72
+(a) Identify the main research question of the study.
+(b) Who are the subjects in this study, and how many are included?
+(c) What are the variables in the study? Identify each variable as numerical or categorical. If numerical, state
+whether the variable is discrete or continuous. If categorical, state whether the variable is ordinal.
+1.4
+Buteyko method, study components. The Buteyko method is a shallow breathing technique developed
+by Konstantin Buteyko, a Russian doctor, in 1952. Anecdotal evidence suggests that the Buteyko method can
+reduce asthma symptoms and improve quality of life. In a scientiﬁc study to determine the eﬀectiveness
+of this method, researchers recruited 600 asthma patients aged 18-69 who relied on medication for asthma
+treatment. These patients were randomly split into two research groups: one practiced the Buteyko method
+and the other did not. Patients were scored on quality of life, activity, asthma symptoms, and medication
+reduction on a scale from 0 to 10. On average, the participants in the Buteyko group experienced a signiﬁcant
+reduction in asthma symptoms and an improvement in quality of life.73
+(a) Identify the main research question of the study.
+(b) Who are the subjects in this study, and how many are included?
+(c) What are the variables in the study? Identify each variable as numerical or categorical. If numerical, state
+whether the variable is discrete or continuous. If categorical, state whether the variable is ordinal.
+1.5
+Cheaters, study components. Researchers studying the relationship between honesty, age and self-
+control conducted an experiment on 160 children between the ages of 5 and 15. Participants reported their
+age, sex, and whether they were an only child or not. The researchers asked each child to toss a fair coin in
+private and to record the outcome (white or black) on a paper sheet, and said they would only reward children
+who report white. The study’s ﬁndings can be summarized as follows: “Half the students were explicitly told
+not to cheat and the others were not given any explicit instructions. In the no instruction group probability
+of cheating was found to be uniform across groups based on child’s characteristics. In the group that was
+explicitly told to not cheat, girls were less likely to cheat, and while rate of cheating didn’t vary by age for
+boys, it decreased with age for girls.”74
+(a) Identify the main research question of the study.
+(b) Who are the subjects in this study, and how many are included?
+(c) How many variables were recorded for each subject in the study in order to conclude these ﬁndings? State
+the variables and their types.
+72B. Ritz et al. “Eﬀect of air pollution on preterm birth among children born in Southern California between 1989 and
+1993”. In: Epidemiology 11.5 (2000), pp. 502–511.
+73J. McGowan. “Health Education: Does the Buteyko Institute Method make a diﬀerence?” In: Thorax 58 (2003).
+74Alessandro Bucciol and Marco Piovesan. “Luck or cheating? A ﬁeld experiment on honesty with children”. In: Journal
+of Economic Psychology 32.1 (2011), pp. 73–78.
+
+
+--- PDF page 77 ---
+1.9. EXERCISES
+77
+1.6
+Hummingbird taste behavior, study components. Researchers hypothesized that a particular taste
+receptor in hummingbirds, T1R1-T1R3, played a primary role in dictating taste behavior; speciﬁcally, in de-
+termining which compounds hummingbirds detect as sweet. In a series of ﬁeld tests, hummingbirds were
+presented simultaneously with two ﬁlled containers, one containing test stimuli and a second containing su-
+crose. The test stimuli included aspartame, erythritol, water, and sucrose. Aspartame is an artiﬁcial sweetener
+that tastes sweet to humans, but is not detected by hummingbird T1R1-T1R3 , while erythritol is an artiﬁcial
+sweetener known to activate T1R1-T1R3.
+Data were collected on how long a hummingbird drank from a particular container for a given trial,
+measured in seconds. For example, in one ﬁeld test comparing aspartame and sucrose, a hummingbird drank
+from the aspartame container for 0.54 seconds and from the sucrose container for 3.21 seconds.
+(a) Which tests are controls? Which tests are treatments?
+(b) Identify the response variable(s) in the study. Are they numerical or categorical?
+(c) Describe the main research question.
+1.7
+Egg coloration. The evolutionary signiﬁcance of variation in egg coloration among birds is not fully
+understood. One hypothesis suggests that egg coloration may be an indication of female quality, with healthier
+females being capable of depositing blue-green pigment into eggshells instead of using it for themselves as an
+antioxidant. In a study conducted on 32 collared ﬂycatchers, half of the females were given supplementary
+diets before and during egg laying. Eggs were measured for darkness of blue color using spectrophotometry;
+for example, the mean amount of blue-green chroma was 0.594 absorbance units. Egg mass was also recorded.
+(a) Identify the control and treatment groups.
+(b) Describe the main research question.
+(c) Identify the primary response variable of interest, and whether it is numerical or categorical.
+1.8
+Smoking habits of UK residents. A survey was conducted to study the smoking habits of UK residents.
+Below is a data matrix displaying a portion of the data collected in this survey. Note that “£" stands for British
+Pounds Sterling, “cig" stands for cigarettes, and “N/A” refers to a missing component of the data.75
+sex
+age
+marital
+grossIncome
+smoke
+amtWeekends
+amtWeekdays
+1
+Female
+42
+Single
+Under £2,600
+Yes
+12 cig/day
+12 cig/day
+2
+Male
+44
+Single
+£10,400 to £15,600
+No
+N/A
+N/A
+3
+Male
+53
+Married
+Above £36,400
+Yes
+6 cig/day
+6 cig/day
+...
+...
+...
+...
+...
+...
+...
+...
+1691
+Male
+40
+Single
+£2,600 to £5,200
+Yes
+8 cig/day
+8 cig/day
+(a) What does each row of the data matrix represent?
+(b) How many participants were included in the survey?
+(c) For each variable, indicate whether it is numerical or categorical. If numerical, identify the variable as
+continuous or discrete. If categorical, indicate if the variable is ordinal.
+75National STEM Centre, Large Datasets from stats4schools.
+
+
+--- PDF page 78 ---
+78
+CHAPTER 1. INTRODUCTION TO DATA
+1.9
+The microbiome and colon cancer. A study was conducted to assess whether the abundance of par-
+ticular bacterial species in the gastrointestinal system is associated with the development of colon cancer.
+The following data matrix shows a subset of the data collected in the study. Cancer stage is coded 1-4, with
+larger values indicating cancer that is more diﬃcult to treat. The abundance levels are given for ﬁve bacterial
+species; abundance is calculated as the frequency of that species divided by the total number of bacteria from
+all species.
+age
+gender
+stage
+bug 1
+bug 2
+bug 3
+bug 4
+bug 5
+1
+71
+Female
+2
+0.03
+0.09
+0.52
+0.00
+0.00
+2
+53
+Female
+4
+0.16
+0.08
+0.08
+0.00
+0.00
+3
+55
+Female
+2
+0.00
+0.01
+0.31
+0.00
+0.00
+4
+44
+Male
+2
+0.11
+0.14
+0.00
+0.07
+0.05
+...
+...
+...
+...
+...
+...
+...
+...
+...
+73
+48
+Female
+3
+0.21
+0.05
+0.00
+0.00
+0.04
+(a) What does each row of the data matrix represent?
+(b) Identify explanatory and response variables.
+(c) For each variable, indicate whether it is numerical or categorical.
+1.9.3
+Data collection principles
+1.10
+Cheaters, scope of inference. Exercise 1.5 introduces a study where researchers studying the rela-
+tionship between honesty, age, and self-control conducted an experiment on 160 children between the ages of
+5 and 15. The researchers asked each child to toss a fair coin in private and to record the outcome (white or
+black) on a paper sheet, and said they would only reward children who report white. Half the students were
+explicitly told not to cheat and the others were not given any explicit instructions. Diﬀerences were observed
+in the cheating rates in the instruction and no instruction groups, as well as some diﬀerences across children’s
+characteristics within each group.
+(a) Identify the population of interest and the sample in this study.
+(b) Comment on whether or not the results of the study can be generalized to the population, and if the
+ﬁndings of the study can be used to establish causal relationships.
+1.11
+Air pollution and birth outcomes, scope of inference. Exercise 1.3 introduces a study where re-
+searchers collected data to examine the relationship between air pollutants and preterm births in Southern
+California. During the study, air pollution levels were measured by air quality monitoring stations. Length of
+gestation data were collected on 143,196 births between the years 1989 and 1993, and air pollution exposure
+during gestation was calculated for each birth. It can be assumed that the 143,196 births are eﬀectively the
+entire population of births during this time period.
+(a) Identify the population of interest and the sample in this study.
+(b) Comment on whether or not the results of the study can be generalized to the population, and if the
+ﬁndings of the study can be used to establish causal relationships.
+1.12
+Herbal remedies. Echinacea has been widely used as an herbal remedy for the common cold, but pre-
+vious studies evaluating its eﬃcacy as a remedy have produced conﬂicting results. In a new study, researchers
+randomly assigned 437 volunteers to receive either a placebo or echinacea treatment before being infected
+with rhinovirus. Healthy young adult volunteers were recruited for the study from the University of Virginia
+community.
+(a) Identify the population of interest and the sample in this study.
+(b) Comment on whether or not the results of the study can be generalized to a larger population.
+(c) Can the ﬁndings of the study be used to establish causal relationships? Justify your answer.
+
+
+--- PDF page 79 ---
+1.9. EXERCISES
+79
+1.13
+Buteyko method, scope of inference. Exercise 1.4 introduces a study on using the Buteyko shal-
+low breathing technique to reduce asthma symptoms and improve quality of life. As part of this study 600
+asthma patients aged 18-69 who relied on medication for asthma treatment were recruited and randomly as-
+signed to two groups: one practiced the Buteyko method and the other did not. Those in the Buteyko group
+experienced, on average, a signiﬁcant reduction in asthma symptoms and an improvement in quality of life.
+(a) Identify the population of interest and the sample in this study.
+(b) Comment on whether or not the results of the study can be generalized to the population, and if the
+ﬁndings of the study can be used to establish causal relationships.
+1.14
+Vitamin supplements. In order to assess the eﬀectiveness of taking large doses of vitamin C in reducing
+the duration of the common cold, researchers recruited 400 healthy volunteers from staﬀand students at a
+university. A quarter of the patients were randomly assigned a placebo, and the rest were randomly allocated
+between 1g Vitamin C, 3g Vitamin C, or 3g Vitamin C plus additives to be taken at onset of a cold for the
+following two days. All tablets had identical appearance and packaging. No signiﬁcant diﬀerences were
+observed in any measure of cold duration or severity between the four medication groups, and the placebo
+group had the shortest duration of symptoms.76
+(a) Was this an experiment or an observational study? Why?
+(b) What are the explanatory and response variables in this study?
+(c) Participants are ultimately able to choose whether or not to use the pills prescribed to them. We might
+expect that not all of them will adhere and take their pills. Does this introduce a confounding variable to
+the study? Explain your reasoning.
+1.15
+Chicks and antioxidants. Environmental factors early in life can have long-lasting eﬀects on an organ-
+ism. In one study, researchers examined whether dietary supplementation with vitamins C and E inﬂuences
+body mass and corticosterone level in yellow-legged gull chicks. Chicks were randomly assigned to either the
+nonsupplemented group or the vitamin supplement experimental group. The initial study group consisted of
+108 nests, with 3 eggs per nest. Chicks were assessed at age 7 days.
+(a) What type of study is this?
+(b) What are the experimental and control treatments in this study?
+(c) Explain why randomization is an important feature of this experiment.
+1.16
+Exercise and mental health. A researcher is interested in the eﬀects of exercise on mental health and
+he proposes the following study: Use stratiﬁed random sampling to recruit 18-30, 31-40 and 41-55 year olds
+from the population. Next, randomly assign half the subjects from each age group to exercise twice a week,
+and instruct the rest not to exercise. Conduct a mental health exam at the beginning and at the end of the
+study, and compare the results.
+(a) What type of study is this?
+(b) What are the treatment and control groups in this study?
+(c) Does this study make use of blocking? If so, what is the blocking variable?
+(d) Comment on whether or not the results of the study can be used to establish a causal relationship be-
+tween exercise and mental health, and indicate whether or not the conclusions can be generalized to the
+population at large.
+(e) Suppose you are given the task of determining if this proposed study should get funding. Would you have
+any reservations about the study proposal?
+76C. Audera et al. “Mega-dose vitamin C in treatment of the common cold: a randomised controlled trial”. In: Medical
+Journal of Australia 175.7 (2001), pp. 359–362.
+
+
+--- PDF page 80 ---
+80
+CHAPTER 1. INTRODUCTION TO DATA
+1.17
+Internet use and life expectancy. The following scatterplot was created as part of a study evaluating
+the relationship between estimated life expectancy at birth (as of 2014) and percentage of internet users (as of
+2009) in 208 countries for which such data were available.77
+(a) Describe the relationship between life ex-
+pectancy and percentage of internet users.
+(b) What type of study is this?
+(c) State a possible confounding variable that
+might explain this relationship and describe
+its potential eﬀect.
+0
+20
+40
+60
+80
+100
+50
+60
+70
+80
+90
+% Internet users
+Life expectancy at birth
+1.18
+Stressed out. A study that surveyed a random sample of otherwise healthy high school students found
+that they are more likely to get muscle cramps when they are stressed. The study also noted that students
+drink more coﬀee and sleep less when they are stressed.
+(a) What type of study is this?
+(b) Can this study be used to conclude a causal relationship between increased stress and muscle cramps?
+(c) State possible confounding variables that might explain the observed relationship between increased
+stress and muscle cramps.
+1.19
+Evaluate sampling methods. A university wants to assess how many hours of sleep students are
+getting per night. For each proposed method below, discuss whether the method is reasonable or not.
+(a) Survey a simple random sample of 500 students.
+(b) Stratify students by their ﬁeld of study, then sample 10% of students from each stratum.
+(c) Cluster students by their class year (e.g. freshmen in one cluster, sophomores in one cluster, etc.), then
+randomly sample three clusters and survey all students in those clusters.
+1.20
+City council survey. A city council has requested a household survey be conducted in a suburban
+area of their city. The area is broken into many distinct and unique neighborhoods, some including large
+homes, some with only apartments, and others a diverse mixture of housing structures. Identify the sampling
+methods described below, and comment on whether or not you think they would be eﬀective in this setting.
+(a) Randomly sample 50 households from the city.
+(b) Divide the city into neighborhoods, and sample 20 households from each neighborhood.
+(c) Divide the city into neighborhoods, randomly sample 10 neighborhoods, and sample all households from
+those neighborhoods.
+(d) Divide the city into neighborhoods, randomly sample 10 neighborhoods, and then randomly sample 20
+households from those neighborhoods.
+(e) Sample the 200 households closest to the city council oﬃces.
+77CIA Factbook, Country Comparisons, 2014.
+
+
+--- PDF page 81 ---
+1.9. EXERCISES
+81
+1.21
+Flawed reasoning. Identify the ﬂaw(s) in reasoning in the following scenarios. Explain what the
+individuals in the study should have done diﬀerently if they wanted to make such conclusions.
+(a) Students at an elementary school are given a questionnaire that they are asked to return after their parents
+have completed it. One of the questions asked is, “Do you ﬁnd that your work schedule makes it diﬃcult
+for you to spend time with your kids after school?" Of the parents who replied, 85% said “no". Based on
+these results, the school oﬃcials conclude that a great majority of the parents have no diﬃculty spending
+time with their kids after school.
+(b) A survey is conducted on a simple random sample of 1,000 women who recently gave birth, asking them
+about whether or not they smoked during pregnancy. A follow-up survey asking if the children have
+respiratory problems is conducted 3 years later, however, only 567 of these women are reached at the
+same address. The researcher reports that these 567 women are representative of all mothers.
+(c) An orthopedist administers a questionnaire to 30 of his patients who do not have any joint problems and
+ﬁnds that 20 of them regularly go running. He concludes that running decreases the risk of joint problems.
+1.22
+Reading the paper. Below are excerpts from two articles published in the NY Times:
+(a) An article titled Risks: Smokers Found More Prone to Dementia states the following:78
+“Researchers analyzed data from 23,123 health plan members who participated in a voluntary exam and health
+behavior survey from 1978 to 1985, when they were 50-60 years old. 23 years later, about 25% of the group had
+dementia, including 1,136 with Alzheimer’s disease and 416 with vascular dementia. After adjusting for other
+factors, the researchers concluded that pack-a-day smokers were 37% more likely than nonsmokers to develop
+dementia, and the risks went up with increased smoking; 44% for one to two packs a day; and twice the risk for
+more than two packs."
+Based on this study, can it be concluded that smoking causes dementia later in life? Explain your reason-
+ing.
+(b) Another article titled The School Bully Is Sleepy states the following:79
+“The University of Michigan study, collected survey data from parents on each child’s sleep habits and asked
+both parents and teachers to assess behavioral concerns. About a third of the students studied were identiﬁed by
+parents or teachers as having problems with disruptive behavior or bullying. The researchers found that children
+who had behavioral issues and those who were identiﬁed as bullies were twice as likely to have shown symptoms
+of sleep disorders."
+A friend of yours who read the article says, “The study shows that sleep disorders lead to bullying in
+school children." Is this statement justiﬁed? If not, how best can you describe the conclusion that can be
+drawn from this study?
+1.23
+Alcohol consumption and STIs. An observational study published last year in The American Journal
+of Preventive Medicine investigated the eﬀects of an increased alcohol sales tax in Maryland on the rates of gon-
+orrhea and chlamydia.80 After a tax increase from 6% to 9% in 2011, the statewide gonorrhea rate declined
+by 24%, the equivalent of 1,600 cases per year. In a statement to the New York Times, the lead author of the
+paper was quoted saying, "Policy makers should consider raising liquor taxes if they’re looking for ways to
+prevent sexually transmitted infections. In the year and a half following the alcohol tax rise in Maryland, this
+prevented 2,400 cases of gonorrhea and saved half a million dollars in health care costs." Explain whether the
+lead author’s statement is accurate.
+78R.C. Rabin. “Risks: Smokers Found More Prone to Dementia”. In: New York Times (2010).
+79T. Parker-Pope. “The School Bully Is Sleepy”. In: New York Times (2011).
+80S. Staras, et al., 2015. Maryland Alcohol Sales Tax and Sexually Transmitted Infections. The American Journal of
+Preventive Medicine 50: e73-e80.
+
+
+--- PDF page 82 ---
+82
+CHAPTER 1. INTRODUCTION TO DATA
+1.24
+Income and education in US counties. The scatterplot below shows the relationship between per
+capita income (in thousands of dollars) and percent of population with a bachelor’s degree in 3,143 counties
+in the US in 2010.
+(a) What are the explanatory and response vari-
+ables?
+(b) Describe the relationship between the two
+variables. Make sure to discuss unusual ob-
+servations, if any.
+(c) Can we conclude that having a bachelor’s
+degree increases one’s income?
+Percent with Bachelor's degree
+Per capita income (in $1,000)
+10
+30
+50
+70
+20
+40
+60
+1.25
+Eat better, feel better. In a public health study on the eﬀects of consumption of fruits and vegetables
+on psychological well-being in young adults, participants were randomly assigned to three groups: (1) diet-as-
+usual, (2) an ecological momentary intervention involving text message reminders to increase their fruits and
+vegetable consumption plus a voucher to purchase them, or (3) a fruit and vegetable intervention in which
+participants were given two additional daily servings of fresh fruits and vegetables to consume on top of their
+normal diet. Participants were asked to take a nightly survey on their smartphones. Participants were student
+volunteers at the University of Otago, New Zealand. At the end of the 14-day study, only participants in the
+third group showed improvements to their psychological well-being across the 14-days relative to the other
+groups.81
+(a) What type of study is this?
+(b) Identify the explanatory and response variables.
+(c) Comment on whether the results of the study can be generalized to the population.
+(d) Comment on whether the results of the study can be used to establish causal relationships.
+(e) A newspaper article reporting on the study states, “The results of this study provide proof that giving
+young adults fresh fruits and vegetables to eat can have psychological beneﬁts, even over a brief period of
+time.” How would you suggest revising this statement so that it can be supported by the study?
+1.9.4
+Numerical data
+1.26
+Means and SDs. For each part, compare distributions (1) and (2) based on their means and standard
+deviations. You do not need to calculate these statistics; simply state how the means and the standard de-
+viations compare. Make sure to explain your reasoning. Hint: It may be useful to sketch dot plots of the
+distributions.
+(a) (1) 3, 5, 5, 5, 8, 11, 11, 11, 13
+(2) 3, 5, 5, 5, 8, 11, 11, 11, 20
+(b) (1) -20, 0, 0, 0, 15, 25, 30, 30
+(2) -40, 0, 0, 0, 15, 25, 30, 30
+(c) (1) 0, 2, 4, 6, 8, 10
+(2) 20, 22, 24, 26, 28, 30
+(d) (1) 100, 200, 300, 400, 500
+(2) 0, 50, 300, 550, 600
+81Tamlin S Conner et al. “Let them eat fruit! The eﬀect of fruit and vegetable consumption on psychological well-being
+in young adults: A randomized controlled trial”. In: PloS one 12.2 (2017), e0171206.
+
+
+--- PDF page 83 ---
+1.9. EXERCISES
+83
+1.27
+Medians and IQRs. For each part, compare distributions (1) and (2) based on their medians and IQRs.
+You do not need to calculate these statistics; simply state how the medians and IQRs compare. Make sure to
+explain your reasoning.
+(a) (1) 3, 5, 6, 7, 9
+(2) 3, 5, 6, 7, 20
+(b) (1) 3, 5, 6, 7, 9
+(2) 3, 5, 8, 7, 9
+(c) (1) 1, 2, 3, 4, 5
+(2) 6, 7, 8, 9, 10
+(d) (1) 0, 10, 50, 60, 100
+(2) 0, 100, 500, 600, 1000
+1.28
+Mix-and-match. Describe the distribution in the histograms below and match them to the box plots.
+(a)
+50
+60
+70
+(b)
+0
+50
+100
+(c)
+0
+2
+4
+6
+(1)
+0
+2
+4
+6
+(2)
+55
+60
+65
+70
+(3)
+0
+20
+40
+60
+80
+100
+1.29
+Air quality. Daily air quality is measured by the air quality index (AQI) reported by the Environmen-
+tal Protection Agency. This index reports the pollution level and what associated health eﬀects might be a
+concern. The index is calculated for ﬁve major air pollutants regulated by the Clean Air Act and takes values
+from 0 to 300, where a higher value indicates lower air quality. AQI was reported for a sample of 91 days in
+2011 in Durham, NC. The relative frequency histogram below shows the distribution of the AQI values on
+these days.82
+(a) Based on the histogram, describe the distribution of
+daily AQI.
+(b) Estimate the median AQI value of this sample.
+(c) Would you expect the mean AQI value of this sample
+to be higher or lower than the median? Explain your
+reasoning.
+Daily AQI
+10
+20
+30
+40
+50
+60
+0
+0.05
+0.1
+0.15
+0.2
+82US Environmental Protection Agency, AirData, 2011.
+
+
+--- PDF page 84 ---
+84
+CHAPTER 1. INTRODUCTION TO DATA
+1.30
+Nursing home residents. Since states with larger numbers of elderly residents would naturally have
+more nursing home residents, the number of nursing home residents in a state is often adjusted for the number
+of people 65 years of age or order (65+). That adjustment is usually given as the number of nursing home
+residents age 65+ per 1,000 members of the population age 65+. For example, a hypothetical state with 200
+nursing home residents age 65+ and 50,000 people age 65+ would have the same adjusted number of residents
+as a state with 400 residents and a total age 65+ population of 100,000 residents: 4 residents per 1,000.
+Use the two plots below to answer the following questions. Both plots show the distribution of the
+number of nursing home residents per 1,000 members of the population 65+ (in each state).
+adjusted number of residents
+10
+20
+30
+40
+50
+60
+70
+80
+0
+2
+4
+6
+8
+10
+12
+14
+20
+30
+40
+50
+60
+70
+(a) Is the distribution of adjusted number of nursing home residents symmetric or skewed? Are there any
+states that could be considered outliers?
+(b) Which plot is more informative: the histogram or the boxplot? Explain your answer.
+(c) What factors might inﬂuence the substantial amount of variability among diﬀerent states? This question
+cannot be answered from the data; speculate using what you know about the demographics of the United
+States.
+1.31
+Income at the coffee shop. The ﬁrst histogram below shows the distribution of the yearly incomes of
+40 patrons at a college coﬀee shop. Suppose two new people walk into the coﬀee shop: one making $225,000
+and the other $250,000. The second histogram shows the new income distribution. Summary statistics are
+also provided.
+(1)
+60000
+62500
+65000
+67500
+70000
+(2)
+60000
+110000
+160000
+210000
+260000
+(1)
+(2)
+n
+40
+42
+Min.
+60,680
+60,680
+1st Qu.
+63,620
+63,710
+Median
+65,240
+65,350
+Mean
+65,090
+73,300
+3rd Qu.
+66,160
+66,540
+Max.
+69,890
+250,000
+SD
+2,122
+37,321
+(a) Would the mean or the median best represent what we might think of as a typical income for the 42
+patrons at this coﬀee shop? What does this say about the robustness of the two measures?
+(b) Would the standard deviation or the IQR best represent the amount of variability in the incomes of the 42
+patrons at this coﬀee shop? What does this say about the robustness of the two measures?
+1.32
+Midrange. The midrange of a distribution is deﬁned as the average of the maximum and the minimum
+of that distribution. Is this statistic robust to outliers and extreme skew? Explain your reasoning.
+
+
+--- PDF page 85 ---
+1.9. EXERCISES
+85
+1.9.5
+Categorical data
+1.33
+Flossing habits. Suppose that an anonymous questionnaire is given to patients at a dentist’s oﬃce
+once they arrive for an appointment. One of the questions asks "How often do you ﬂoss?", and four answer
+options are provided: a) at least twice a day, b) at least once a day, c) a few times a week, and d) a few times a
+month. At the end of a week, the answers are tabulated: 31 individuals chose answer a), 55 chose b), 39 chose
+c), and 12 chose d).
+(a) Describe how these data could be numerically and graphically summarized.
+(b) Assess whether the results of this survey can be generalized to provide information about ﬂossing habits
+in the general population.
+1.34
+Views on immigration. 910 randomly sampled registered voters from Tampa, FL were asked if they
+thought workers who have illegally entered the US should be (i) allowed to keep their jobs and apply for
+US citizenship, (ii) allowed to keep their jobs as temporary guest workers but not allowed to apply for US
+citizenship, or (iii) lose their jobs and have to leave the country. The results of the survey by political ideology
+are shown below.83
+Political ideology
+Conservative
+Moderate
+Liberal
+Total
+(i) Apply for citizenship
+57
+120
+101
+278
+(ii) Guest worker
+121
+113
+28
+262
+Response
+(iii) Leave the country
+179
+126
+45
+350
+(iv) Not sure
+15
+4
+1
+20
+Total
+372
+363
+175
+910
+(a) What percent of these Tampa, FL voters identify themselves as conservatives?
+(b) What percent of these Tampa, FL voters are in favor of the citizenship option?
+(c) What percent of these Tampa, FL voters identify themselves as conservatives and are in favor of the citi-
+zenship option?
+(d) What percent of these Tampa, FL voters who identify themselves as conservatives are also in favor of the
+citizenship option? What percent of moderates share this view? What percent of liberals share this view?
+1.9.6
+Relationships between two variables
+1.35
+Mammal life spans. Data were collected on life spans (in years) and gestation lengths (in days) for 62
+mammals. A scatterplot of life span versus length of gestation is shown below.84
+(a) Does there seem to be an association be-
+tween length of gestation and life span? If
+so, what type of association? Explain your
+reasoning.
+(b) What type of an association would you ex-
+pect to see if the axes of the plot were re-
+versed, i.e. if we plotted length of gestation
+versus life span?
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+Gestation (days)
+Life Span (years)
+0
+200
+400
+600
+0
+25
+50
+75
+100
+83SurveyUSA, News Poll #18927, data collected Jan 27-29, 2012.
+84T. Allison and D.V. Cicchetti. “Sleep in mammals: ecological and constitutional correlates”. In: Arch. Hydrobiol 75
+(1975), p. 442.
+
+
+--- PDF page 86 ---
+86
+CHAPTER 1. INTRODUCTION TO DATA
+1.36
+Associations. Indicate which of the plots show a
+(a) positive association
+(b) negative association
+(c) no association
+Also determine if the positive and
+negative associations are linear or
+nonlinear.
+Each part may refer to
+more than one plot.
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+GG
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+(1)
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+GG
+GG
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+GGG
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+(2)
+GG
+G
+G
+G
+GG
+GG
+G
+G
+GGG
+G
+GG
+G
+G
+G
+GGGGGGGG
+G
+GGGGGG
+G
+GGGG
+GGG
+GG
+GGG
+G
+GGG
+G
+GG
+G
+G
+G
+G
+GGGGGGG
+GGG
+G
+G
+G
+GG
+G
+G
+GGGGGGGG
+GGG
+G
+G
+GGG
+G
+G
+G
+GGGG
+GG
+(3)
+G
+G
+G
+G
+G
+G
+G
+GGG
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+GG
+G
+GG
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GGG
+G
+G
+G
+GG
+G
+G
+G
+GGG
+G
+G
+G
+(4)
+1.37
+Adolescent fertility. Data are available on the number of children born to women aged 15-19 from
+189 countries in the world for the years 1997, 2000, 2002, 2005, and 2006. The data are deﬁned using a
+scaling similar to that used for the nursing home data in Exercise 1.30. The values for the annual adolescent
+fertility rates represent the number of live births among women aged 15-19 per 1,000 female members of the
+population of that age.
+Fertility Rate (live births per 1000 women)
+0
+50
+100
+150
+200
+250
+1997
+2000
+2002
+2005
+2006
+(a) In 2006, the standard deviation of the distribution of adolescent fertility is 75.73. Write a sentence ex-
+plaining the 75th percentile in the context of this data.
+(b) For the years 2000-2006, data are not available for Iraq. Why might those observations be missing? Would
+the ﬁve-number summary have been aﬀected very much if the values had been available?
+(c) From the side-by-side boxplots shown above, describe how the distribution of fertility rates changes over
+time. Is there a trend?
+
+
+--- PDF page 87 ---
+1.9. EXERCISES
+87
+1.38
+Smoking and stenosis. Researchers collected data from an observational study to investigate the
+association between smoking status and the presence of aortic stenosis, a narrowing of the aorta that impedes
+blood ﬂow to the body.
+Smoking Status
+Non-smoker
+Smoker
+Total
+Absent
+67
+43
+110
+Disease Status
+Present
+54
+51
+105
+Total
+121
+94
+215
+(a) What percentage of the 215 participants were both smokers and had aortic stenosis? This percentage is
+one component of the joint distribution of smoking and stenosis; what are the other three numbers of the
+joint distribution?
+(b) Among the smokers, what proportion have aortic stenosis? This number is a component of the conditional
+distribution of stenosis for the two categories of smokers. What proportion of non-smokers have aortic
+stenosis?
+(c) In this context, relative risk is the ratio of the proportion of smokers with stenosis to the proportion of
+non-smokers with stenosis. Relative risks greater than 1 indicate that smokers are at a higher risk for
+aortic stenosis than non-smokers; relative risks of 1.2 or higher are generally considered cause for alarm.
+Calculate the relative risk for the 215 participants, comparing smokers to non-smokers. Does there seem
+to be evidence that smoking is associated with an increased probability of stenosis?
+1.39
+Anger and cardiovascular health. Trait anger is deﬁned as a relatively stable personality trait that
+is manifested in the frequency, intensity, and duration of feelings associated with anger. People with high
+trait anger have rage and fury more often, more intensely, and with long-laster episodes than people with low
+trait anger. It is thought that people with high trait anger might be particularly susceptible to coronary heart
+disease; 12,986 participants were recruited for a study examining this hypothesis. Participants were followed
+for ﬁve years. The following table shows data for the participants identiﬁed as having normal blood pressure
+(normotensives).
+Trait Anger Score
+Low
+Moderate
+High
+Total
+Yes
+53
+110
+27
+190
+CHD Event
+No
+3057
+4704
+606
+8284
+Total
+3110
+4731
+633
+8474
+(a) What percentage of participants have moderate anger scores?
+(b) What percentage of individuals who experienced a CHD event have moderate anger scores?
+(c) What percentage of participants with high trait anger scores experienced a CHD event (i.e., heart attack)?
+(d) What percentage of participants with low trait anger scores experienced a CHD event?
+(e) Are individuals with high trait anger more likely to experience a CHD event than individuals with low
+trait anger? Calculate the relative risk of a CHD event for individuals with high trait anger compared to
+low trait anger.
+(f) Researchers also collected data on various participant traits, such as level of blood cholesterol (measured
+in mg/dL). What graphical summary might be useful for examining how blood cholesterol level diﬀers
+between anger groups?
+1.9.7
+Exploratory data analysis
+Since exploratory data analysis relies heavily on the use of computation, refer to the labs for exercises
+related to this section, which are free and may be found at openintro.org/book/biostat.

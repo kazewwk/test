@@ -1,0 +1,395 @@
+## EXAMPLE 7.9
+
+Using the output in Figure 7.16, write the model equation and interpret the coefficients for age and diabetes. How does the predicted total cholesterol for a 60-year-old individual compare to that of a 50-year-old individual, if both have diabetes? What if both individuals do not have diabetes?
+
+$$
+\widehat {T o t C h o l} = 4. 8 0 + 0. 0 0 7 5 (A g e) - 0. 3 2 (D i a b e t e s Y e s)
+$$
+
+The coefficient for age indicates that with each increasing year of age, predicted total cholesterol increases by 0.0075 mmol/L. The coefficient for diabetes indicates that diabetics have an average total cholesterol that is 0.32 mmol/L lower than non-diabetic individuals.
+
+If both individuals have diabetes, then the change in predicted total cholesterol level can be determined directly from the coefficient for Age. An increase in one year of age is associated with a 0.0075 increase in total cholesterol; thus, an increase in ten years of age is associated with $1 0 ( 0 . 0 0 7 5 ) = 0 . 0 7 5$ mmol/L increase in predicted total cholesterol.
+
+The calculation does not differ if both individuals are non-diabetic. According to the model, the relationship between age and total cholesterol remains the same regardless of the values of the other variable in the model.
+
+## EXAMPLE 7.10
+
+Using the output in Figure 7.16, write two separate model equations: one for diabetic individuals and one for non-diabetic individuals. Compare the two models.
+
+For non-diabetics (  Diabetes = 0), the linear relationship between average cholesterol and age is $\widehat{\mathrm{TotChol}}=4.80+0.0075(\mathrm{Age})-0.32(0)=4.80+0.0075(\mathrm{Age})$
+
+For diabetics (  Diabetes = 1), the linear relationship between average cholesterol and age is $\mathrm{TotChol}=4.80+0.0075(\mathrm{Age})-0.32(1)=4.48+0.0075(\mathrm{Age}).$
+
+The lines predicting average cholesterol as a function of age in diabetics and non-diabetics are parallel, with the same slope and different intercepts. While predicted total cholesterol is higher overall in non-diabetics (as indicated by the higher intercept), the rate of change in predicted average total cholesterol by age is the same for both diabetics and non-diabetics.
+
+This relationship can be expressed directly from the model equation 7.8. For non-diabetics, the population regression line is $E(\mathrm{TotChol}) = \beta_{0} + \beta_{1}(\mathrm{Age})$ . For diabetics, the line is $E(\mathrm{Total}) =$ $\beta _ { 0 } + \beta _ { 1 } ( \mathrm { A g e } ) + \beta _ { 2 } = \beta _ { 0 } + \beta _ { 2 } + \beta _ { 1 } ( \mathrm { A g e } )$ . The lines have the same slope $\beta _ { 1 }$ but intercepts $\beta _ { 0 }$ and $\beta _ { 0 }   +   \beta _ { 2 }$
+
+However, a model that assumes the relationship between cholesterol and age does not depend on diabetes status might be overly simple and potentially misleading. Figure 7.17(b) shows a scatterplot of total cholesterol versus age where the least squares models have been fit separately for non-diabetic and diabetic individuals. The blue line in the plot is estimated using only non-diabetic individuals, while the red line was fit using data from diabetic individuals. The lines are not parallel, and in fact, have slopes with different signs. The plot suggests that among non-diabetics, age is positively associated with total cholesterol. Among diabetics, however, age is negatively associated with total cholesterol.
+
+![](images/page_353_chart_3.jpg)
+
+<details>
+<summary>scatter</summary>
+
+| Series | Age (yrs) (range) | Total Cholesterol (mmol/L) (range) |
+| --- | --- | --- |
+| Blue | 20~80 | 3.0~9.5 |
+| Red | 33~80 | 3.0~8.1 |
+</details>
+
+(a)
+
+![](images/page_353_chart_5.jpg)
+
+<details>
+<summary>scatter</summary>
+
+| Series | Age (yrs) (range) | Total Cholesterol (mmol/L) (range) |
+| --- | --- | --- |
+| Blue | 20~80 | 3.0~9.5 |
+| Red | 30~80 | 3.0~8.1 |
+</details>
+
+(b)
+
+Figure 7.17: Scatterplots of total cholesterol versus age in nhanes.samp.adult.500, where blue represents non-diabetics and red represents diabetics. Plot (a) shows the model equations written out in Example 7.10, estimated from the entire sample of 500 individuals. Plot (b) shows least squares models that are fit separately; coefficients of the blue line are estimated using only data from non-diabetics, while those of the red line are estimated using only data from diabetics.
+
+With the addition of another parameter (commonly referred to as an interaction term), a linear regression model can be extended to allow the relationship of one explanatory variable with the response to vary based on the values of other variables in the model. Consider the model
+
+$$
+E (\text {TotChol}) = \beta_ {0} + \beta_ {1} (\text {Age}) + \beta_ {2} (\text {Diabetes}) + \beta_ {3} (\text {Diabetes} \times \text {Age}). \tag {7.11}
+$$
+
+The interaction term allows the slope of the association with age to differ by diabetes status. Among non-diabetics (Diabetes = 0), the model reduces to the earlier one,
+
+$$
+E (\text {TotChol}) = \beta_ {0} + \beta_ {1} (\text {Age}).
+$$
+
+Among the diabetic participants, the model becomes
+
+$$
+\begin{array}{l} E (\text {TotChol}) = \beta_ {0} + \beta_ {1} (\text {Age}) + \beta_ {2} + \beta_ {3} (\text {Age}) \\ = \beta_ {0} + \beta_ {2} + (\beta_ {1} + \beta_ {3}) (\mathrm{Age}). \\ \end{array}
+$$
+
+Unlike in the original model, the slopes of the population regression lines for non-diabetics and diabetics are now different: $\beta _ { 1 }$ versus $\beta _ { 1 } + \beta _ { 3 }$
+
+Figure 7.18 shows the R output for a regression estimating model 7.11. In R, the syntax Age:DiabetesYes represents the $( \mathrm { A g e } \times \mathrm { D i a b e t e s } )$ interaction term.
+
+|  | Estimate | Std. Error | t value | Pr(>\|t\|) |
+| --- | --- | --- | --- | --- |
+| (Intercept) | 4.6957 | 0.1597 | 29.40 | 0.0000 |
+| Age | 0.0096 | 0.0031 | 3.10 | 0.0020 |
+| DiabetesYes | 1.7187 | 0.7639 | 2.25 | 0.0249 |
+| Age:DiabetesYes | -0.0335 | 0.0123 | -2.73 | 0.0067 |
+
+Figure 7.18: Regression of total cholesterol on age and diabetes with an interaction term, using nhanes.samp.adult.500
+
+## EXAMPLE 7.12
+
+Using the output in Figure 7.18, write the overall model equation, the model equation for non-diabetics, and the model equation for diabetics.
+
+The overall model equation is
+
+$$
+\widehat {\text {TotChol}} = 4. 7 0 + 0. 0 0 9 6 (\text {Age}) + 1. 7 2 (\text {DiabetesYes}) - 0. 0 3 4 (\text {Age} \times \text {DiabetesYes}).
+$$
+
+For non-diabetics (Diabetes = 0), the linear relationship between average cholesterol and age is
+
+$$
+\widehat {\text {TotChol}} = 4. 7 0 + 0. 0 0 9 6 (\text {Age}) + 1. 7 2 (0) - 0. 0 3 4 (\text {Age} \times 0) = 4. 7 0 + 0. 0 0 9 6 (\text {Age}).
+$$
+
+For diabetics (Diabetes = 1), the linear relationship between average cholesterol and age is
+
+$$
+\widehat {\text {TotChol}} = 4. 7 0 + 0. 0 0 9 6 (\text {Age}) + 1. 7 2 (1) - 0. 0 3 4 (\text {Age} \times 1) = 6. 4 2 - 0. 0 2 4 (\text {Age}).
+$$
+
+The estimated equations for non-diabetic and diabetic individuals show the same qualitative behavior seen in Figure 7.17(b), where the slope is positive in non-diabetics and negative in diabetics. However, note that the lines plotted in the figure were estimated from two separate model fits on non-diabetics and diabetics; in contrast, the equations from the interaction model are fit using data from all individuals.
+
+It is more efficient to model the data using a single model with an interaction term than working with subsets of the data.<sup>15</sup> Additionally, using a single model allows for the calculation of a t-statistic and p-value that indicates whether there is statistical evidence of an interaction. The pvalue for the Age:Diabetes interaction term is significant at the $\alpha = 0 . 0 5$ level. Thus, the estimated model suggests there is strong evidence for an interaction between age and diabetes status when predicting total cholesterol.
+
+Residual plots can be used to assess the quality of the model fit. Figure 7.19 shows that the residuals have roughly constant variance in the region with the majority of the data (predicted values between 4.9 and 5.4 mmol/L). However, there are more large positive residuals than large negative residuals, which suggests that the model tends to underpredict; i.e., predict values of TotChol that are smaller than the observed values.<sup>16</sup> Figure 7.20 shows that the residuals do not fit a normal distribution in the tails. In the right tails, the sample quantiles are larger than the theoretical quantiles, implying that there are too many large residuals. The left tail is a better fit; however, there are too few large negative residuals since the sample quantiles in the left tail are closer to 0 than the theoretical quantiles.
+
+![](images/page_355_chart_5.jpg)
+
+<details>
+<summary>scatter</summary>
+
+| Predicted Value (range) | Residual (range) |
+| --- | --- |
+| 4.5~5.6 | -2.3~4.3 |
+</details>
+
+Figure 7.19: A scatterplot of residuals versus predicted values in the model for total cholesterol that includes age, diabetes status, and the interaction of age and diabetes status.
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">15<sub>In</sub> more complex settings, such as those with potential interaction between several variables or between two numerical variables, it may not be clear how to subset the data in a way that reveals interactions. This is another advantage to using an interaction term and single model fit to the entire dataset.</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">16<sub>Recall</sub> that model residuals are calculated as yi − ŷi ; i.e., TotChol<sub>i</sub> − TotChol  i .</span></small>
+
+![](images/page_356_image_2.jpg)
+
+Figure 7.20: A histogram of the residuals and a normal probability plot of the residuals from the linear model for total cholesterol versus age, diabetes status, and the interaction of age and diabetes status.
+
+It is also important to note that the model explains very little of the observed variability in total cholesterol—the multiple $R ^ { 2 }$ of the model is 0.032. While the model falls well short of perfection, it may be reasonably adequate in applied settings. In the setting of a large study, such as one to examine factors affecting cholesterol levels in adults, a model like the one discussed here is typically a starting point for building a more refined model. Given these results, a research team might proceed by collecting more data. Regression models are commonly used as tools to work towards understanding a phenomenon, and rarely represent a ’final answer’.
+
+There are some important general points that should not be overlooked when interpreting this model. The data cannot be used to infer causality; the data simply show associations between total cholesterol, age, and diabetes status. Each of the NHANES surveys are cross-sectional; they are administered to a sample of US residents with various ages and other demographic features during a relatively short period of time. No single individual has had his or her cholesterol levels measured over a period of many years, so the model slope for diabetes is not indicative of an individual’s cholesterol level declining (or increasing) with age.
+
+Finally, the interpretation of a model often requires additional contextual information that is relevant to the study population but not captured in the dataset. What might explain increased age being associated with lower cholesterol for diabetics, but higher cholesterol for non-diabetics? The guidelines for the use of cholesterol-lowering statins suggest that these drugs should be prescribed more often in older individuals, and even more so in diabetic individuals. It is a reasonable speculation that the interaction between age and diabetes status seen in the NHANES data is a result of more frequent statin use in diabetic individuals.
+
+## 7.8 Model selection for explanatory models
+
+Previously, multiple regression modeling was shown in the context of estimating an association while adjusting for possible confounders. Another application of multiple regression is explanatory modeling, in which the goal is to construct a model that explains the observed variation in the response variable. In this context, there is no pre-specified primary predictor of interest; explanatory modeling is concerned with identifying predictors associated with the response. It is typically desirable to have a small model that avoids including variables which do not contribute much towards the $R ^ { 2 }$
+
+The intended use of a regression model influences the way in which a model is selected. Ap proaches to model selection vary from those based on careful study of a relatively small set of predictors to purely algorithmic methods that screen a large set of predictors and choose a final model by optimizing a numerical criterion. Algorithmic selection methods have gained popularity as researchers have been able to collect larger datasets, but the choice of an algorithm and the optimization criterion require more advanced material and are not covered here. This section illustrates model selection in the context of a small set of potential predictors using only the tools and ideas that have been discussed earlier in this chapter and in Chapter $6 .$
+
+Generally, model selection for explanatory modeling follows these steps:
+
+1. Data exploration. Using numerical and graphical approaches, examine both the distributions of individual variables and the relationships between variables.
+2. Initial model fitting. Fit an initial model with the predictors that seem most highly associated with the response variable, based on the data exploration.
+3. Model comparison. Work towards a model that has the highest adjusted $R ^ { 2 }$
+
+– Fit new models without predictors that were either not statistically significant or only marginally so and compare the adjusted $R ^ { 2 }$ between models; drop variables that decrease the adjusted $R ^ { 2 }$
+– If the initial set of variables is relatively small, it is prudent to add variables not in the initial model and check the adjusted $R ^ { 2 } ;$ add variables that increase the adjusted $R ^ { 2 }$
+– Examine whether interaction terms may improve the adjusted $R ^ { 2 }$
+
+4. Model assessment. Use residual plots to assess the fit of the final model.
+
+The process behind model selection will be illustrated with a case study in which a regression model is built to examine the association between the abundance of forest birds in a habitat patch and features of a patch.
+
+## Abundance of forest birds: introduction
+
+Habitat fragmentation is the process by which a habitat in a large contiguous space is divided into smaller, isolated pieces; human activities such as agricultural development can result in habitat fragmentation. Smaller patches of habitat are only able to support limited populations of organisms, which reduces genetic diversity and overall population fitness. Ecologists study habitat fragmentation to understand its effect on species abundance. The forest.birds dataset in the oibiostat package contains a subset of the variables from a 1987 study analyzing the effect of habitat fragmentation on bird abundance in the Latrobe Valley of southeastern Victoria, Australia.<sup>17</sup>
+
+The dataset consists of the following variables, measured for each of the 57 patches.
+
+– abundance: average number of forest birds observed in the patch, as calculated from several independent 20-minute counting sessions.
+– patch.area: patch area, measured in hectares. 1 hectare is 10,000 square meters and approximately 2.47 acres.
+– dist.nearest: distance to the nearest patch, measured in kilometers.
+– dist.larger: distance to the nearest patch larger than the current patch, measured in kilometers.
+– altitude: patch altitude, measured in meters above sea level.
+– grazing.intensity: extent of livestock grazing, recorded as either "light", "less than average", "average", "moderately heavy", or "heavy".
+– year.of.isolation: year in which the patch became isolated due to habitat fragmentation.
+– yrs.isolation: number of years since patch became isolated due to habitat fragmentation.<sup>18</sup>
+
+The following analysis is similar to analyses that appear in Logan (2011)<sup>19</sup> and Quinn & Keough (2002).<sup>20</sup> In the approach here, the grazing intensity variable is treated as a categorical variable; Logan and Quinn & Keough treat grazing intensity as a numerical variable, with values 1-5 corresponding to the categories. The implications of these approaches are discussed at the end of the section.
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">17<sub>Loyn</sub>, R.H. 1987. "Effects of patch area and habitat on bird abundances, species numbers and tree health in fragmented Victorian forests." Printed in Nature Conservation: The Role of Remnants of Native Vegetation. Saunders DA, Arnold GW, Burbridge AA, and Hopkins AJM eds. Surrey Beatty and Sons, Chipping Norton, NSW, 65-77, 1987.</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">18<sub>The</sub> Loyn study completed data collection in 1983; yrs.isolation = 1983 − year.of.isolation.</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">19<sub>Logan</sub>, M., 2011. Biostatistical design and analysis using R: a practical guide. John Wiley & Sons, Ch. 9.</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">20<sub>Quinn</sub>, G.P. and Keough, M.J., 2002. Experimental design and data analysis for biologists. Cambridge University Press, Ch. 6.</span></small>
+
+## Data exploration
+
+The response variable for the model is abundance. Numerical summaries calculated from software show that abundance ranges from 1.5 to 39.6. Figure 7.21 shows that the distribution of abundance is bimodal, with modes at small values of abundance and at between 25 and 30 birds. The median (21.0) and mean (19.5) are reasonably close, which confirms the distribution is near enough to symmetric to be used in the model without a transformation. The boxplot confirms that the distribution has no outliers.
+
+![](images/page_359_chart_4.jpg)
+
+<details>
+<summary>histogram</summary>
+
+| Bin (Abundance) | Frequency |
+| --- | --- |
+| 0~5 | 10 |
+| 5~10 | 3 |
+| 10~15 | 6 |
+| 15~20 | 8 |
+| 20~25 | 7 |
+| 25~30 | 13 |
+| 30~35 | 7 |
+| 35~40 | 2 |
+</details>
+
+(a)
+
+![](images/page_359_image_6.jpg)
+
+![](images/page_359_image_7.jpg)
+
+<details>
+<summary>natural_image</summary>
+
+Simple line drawing of a box with a horizontal median line (no text or symbols)
+</details>
+
+(b)
+
+Figure 7.21: A histogram (a) and boxplot (b) of abundance in the forest.birds data.
+
+There are six potential predictors in the model; the variable year.of.isolation is only used to calculate the more informative variable yrs.isolation. The plots in Figure 7.22 reveal right skewing in patch.area, dist.nearest, dist.larger, and yrs.isolation; these might benefit from a log transformation. The variable altitude is reasonably symmetric, and the predictor grazing.factor is categorical and so does not take transformations. Figure 7.23 shows the distributions of log.patch.area, log.dist.nearest, log.dist.larger, and log.yrs.isolation, which were created through a natural log transformation of the original variables. All four are more nearly symmetric. These will be more suitable for inclusion in a model than the untransformed versions.
+
+![](images/page_360_image_2.jpg)
+
+Figure 7.22: Histograms and a barplot for the potential predictors of abundance.
+
+![](images/page_360_image_4.jpg)
+
+Figure 7.23: Histograms of the log-transformed versions of patch.area, dist.nearest, dist.larger, and yrs.isolation.
+
+A **scatterplot matrix** can be useful for visualizing the relationships between the predictor and response variables, as well as the relationships between predictors. Each subplot in the matrix is a simple scatterplot; all possible plots are shown, except for the plots of a variable versus itself. The variable names are listed along the diagonal of the matrix, and the diagonal divides the matrix into symmetric plots. For instance, the first plot in the first row shows abundance on the vertical axis and log.area on the horizontal axis; the first plot in the first column shows abundance on the horizontal axis and log.area on the vertical axis. Note that for readability, grazing.intensity appears with values 1 - 5, with 1 denoting "light" and 5 denoting "heavy" grazing intensity.
+
+The plots in the first row of Figure 7.24 show the relationships between abundance and the predictors.<sup>21</sup> There is a strong positive association between abundance with log.area, and a strong negative association between abundance and log.yrs.isolation. The variables log.dist.near.patch and log.dist.larger seem weakly positively associated with abundance. There is high variance of abundance and somewhat similar centers for the first four categories, but abundance does clearly tend to be lower in the "high grazing" category versus the others.
+
+![](images/page_361_chart_4.jpg)
+
+<details>
+<summary>scatter</summary>
+
+| Variable | X-axis Range | Y-axis Range |
+| :--- | :--- | :--- |
+| abundance | -2~6 | -2~6 |
+| log.area | -2~6 | -2~6 |
+| log.dist.nearest | -2~6 | -2~6 |
+| log.dist.larger | -2~6 | -2~8 |
+| altitude | 100~200 | 100~250 |
+| log.yrs.isolation | 1~5 | 1~4.5 |
+| grazing.intensity | 0~30 | 0~5 |
+</details>
+
+Figure 7.24: Scatterplot matrix of abundance and the possible predictors: log.area, log.dist.near.patch, log.dist.larger.patch, altitude, log.yrs.isolation, and grazing.intensity.
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">21<sub>Traditionally</sub>, the response variable (i.e., the dependent variable) is plotted on the vertical axis; as a result, it seems more natural to look at the first row where abundance is on the y-axis. It is equally valid, however, to assess the association of abundance with the predictors from the plots in the first column.</span></small>
+
+The variables log.dist.nearest and log.dist.larger appear strongly associated; a model may only need one of the two, as they may be essentially "redundant" in explaining the variabil ity in the response variable.<sup>22</sup> In this case, however, since both are only weakly associated with abundance, both may be unnecessary in a model.
+
+A numerical approach confirms some of the features observable from the scatterplot matrix. Figure 7.25 shows the correlations between pairs of numerical variables in the dataset. Correlations between abundance and log.area and between abundance and log.yrs.isolation are relatively high, at 0.74 and -0.48, respectively. In contrast, the correlation between abundance and the two variables log.dist.nearest and log.dist.larger are much smaller, at 0.13 and 0.12. Additionally, the two potential predictors log.dist.nearest and log.dist.larger have a relatively high correlation of 0.60.
+
+|  | abundance | log.area | log.dist.nearest | log.dist.larger | altitude | log.yrs.isolation |
+| --- | --- | --- | --- | --- | --- | --- |
+| abundance | 1.00 | 0.74 | 0.13 | 0.12 | 0.39 | -0.48 |
+| log.area | 0.74 | 1.00 | 0.30 | 0.38 | 0.28 | -0.25 |
+| log.dist.nearest | 0.13 | 0.30 | 1.00 | 0.60 | -0.22 | 0.02 |
+| log.dist.larger | 0.12 | 0.38 | 0.60 | 1.00 | -0.27 | 0.15 |
+| altitude | 0.39 | 0.28 | -0.22 | -0.27 | 1.00 | -0.29 |
+| log.yrs.isolation | -0.48 | -0.25 | 0.02 | 0.15 | -0.29 | 1.00 |
+
+Figure 7.25: A correlation matrix for the numerical variables in forest.birds.
+
+## Initial model fitting
+
+Based on the data exploration, the initial model should include the variables log.area, altitude, log.yrs.isolation, and grazing.intensity; a summary of this model is shown in Figure 7.26. The $R ^ { 2 }$ and adjusted $R ^ { 2 }$ for this model are, respectively, 0.728 and 0.688. The model explains about 73% of the variability in abundance.
+
+|  | Estimate | Std. Error | t value | Pr(>\|t\|) |
+| --- | --- | --- | --- | --- |
+| (Intercept) | 14.1509 | 6.3006 | 2.25 | 0.0293 |
+| log.area | 3.1222 | 0.5648 | 5.53 | 0.0000 |
+| altitude | 0.0080 | 0.0216 | 0.37 | 0.7126 |
+| log.yrs.isolation | 0.1300 | 1.9193 | 0.07 | 0.9463 |
+| grazing.intensityless than average | 0.2967 | 2.9921 | 0.10 | 0.9214 |
+| grazing.intensityaverage | -0.1617 | 2.7535 | -0.06 | 0.9534 |
+| grazing.intensitymoderately heavy | -1.5936 | 3.0350 | -0.53 | 0.6019 |
+| grazing.intensityheavy | -11.7435 | 4.3370 | -2.71 | 0.0094 |
+
+Figure 7.26: Initial model: regression of abundance on log.area, altitude, log.yrs.isolation and grazing.intensity.
+
+Two of the variables in the model are not statistically significant at the $\alpha = 0 . 0 5$ level: altitude and log.yrs.isolation. Only one of the categories of grazing.intensity (heavy grazing) is highly significant.
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">22<sub>Typically</sub>, the predictor that is less strongly correlated with the response variable is the one that is "redundant" and will be statistically insignificant when included in a model with the more strongly correlated predictor. This is not always the case, and depends on the other variables in the model.</span></small>
+
+## Model comparison
+
+First, fit models excluding the predictors that were not statistically significant: altitude and log.yrs.isolation. Models excluding either variable have adjusted $R ^ { 2 }$ of 0.69, and a model excluding both variables has an adjusted $R ^ { 2 }$ of 0.70, a small but noticeable increase from the initial model. This suggests that these two variables can be dropped. At this point, the working model includes only log.area and grazing.intensity; this model has $R ^ { 2 } = 0 . 7 2 7$ and is shown in Figure 7.27.
+
+|  | Estimate | Std. Error | t value | Pr(>\|t\|) |
+| --- | --- | --- | --- | --- |
+| (Intercept) | 15.7164 | 2.7674 | 5.68 | 0.0000 |
+| log.area | 3.1474 | 0.5451 | 5.77 | 0.0000 |
+| grazing.intensityless than average | 0.3826 | 2.9123 | 0.13 | 0.8960 |
+| grazing.intensityaverage | -0.1893 | 2.5498 | -0.07 | 0.9411 |
+| grazing.intensitymoderately heavy | -1.5916 | 2.9762 | -0.53 | 0.5952 |
+| grazing.intensityheavy | -11.8938 | 2.9311 | -4.06 | 0.0002 |
+
+Figure 7.27: Working model: regression of abundance on log.area and grazing.intensity.
+
+It is prudent to check whether the two distance-related variables that were initially excluded might increase the adjusted $R ^ { 2 }$ , even though this seems unlikely. When either or both of these variables are added, the adjusted $R ^ { 2 }$ decreases from 0.70 to 0.69. Thus, these variables are not added to the working model.
+
+In this working model, only one of the coefficients associated with grazing intensity is statistically significant; when compared to the baseline grazing category (light grazing), heavy grazing is associated with a reduced predicted mean abundance of 11.9 birds (assuming that log.area is held constant). Individual categories of a categorical variable cannot be dropped, so a data analyst has the choice of leaving the variable as is, or collapsing the variable into fewer categories. For this model, it might be useful to collapse grazing intensity into a two-level variable, with one category corresponding to the original classification of heavy, and another category corresponding to the other four categories; i.e., creating a version of grazing intensity that only has the levels "heavy" and "not heavy". This is supported by the data exploration; a plot of abundance versus grazing.intensity shows that the centers of the distributions of abundance in the lowest four grazing intensity categories are roughly similar, relative to the center in the heavy grazing category. The model with the binary version of grazing intensity, grazing.binary, is shown in Figure 7.28. The model with grazing.binary has adjusted $R ^ { 2 } = 0 . 7 1$ , which is slightly larger than 0.70 in the more complex model with grazing.intensity; the model explains 72% of the variability in abundance $( R ^ { 2 } = 0 . 7 2 4 )$
+
+Incorporating an interaction term did not improve the model; adding a parameter for the interaction between log.area and grazing.binary decreased the adjusted $R ^ { 2 }$ to 0.709. Thus, the model shown in Figure 7.28 is the final model.
+
+|  | Estimate | Std. Error | t value | Pr(>\|t\|) |
+| --- | --- | --- | --- | --- |
+| (Intercept) | 15.3736 | 1.4507 | 10.60 | 0.0000 |
+| log.area | 3.1822 | 0.4523 | 7.04 | 0.0000 |
+| grazing.binaryheavy | -11.5783 | 1.9862 | -5.83 | 0.0000 |
+
+Figure 7.28: Final model: regression of abundance on log.area and grazing.binary.
+
+## Model assessment
+
+The fit of a model can be assessed using various residual plots. Figure 7.29 shows a histogram and normal probability plot of the residuals for the final model. Both show that the residuals follow the shape of a normal density in the middle range (between -10 and 10) but fit less well in the tails. There are too many large positive and large negative values) residuals.
+
+![](images/page_364_image_4.jpg)
+
+Figure 7.29: Histogram and normal probability plot of residuals in the model for abundance with predictors log.area and grazing.binary.
+
+Figure 7.30 gives a more detailed look at the residuals, plotting the residuals against predicted values and against the two predictors in the model, log.area and grazing.level. Recall that residual values closer to 0 are indicative of a more accurate prediction; positive values occur when the predicted value from the model is smaller than the observed value, and vice versa for negative values. Residuals are a measure of the prediction error of a model.
+
+![](images/page_364_image_7.jpg)
+
+Figure 7.30: Scatterplots of residuals versus predicted values and residuals versus log.area, and a side-by-side boxplot of residuals by grazing.binary. In the middle plot, red points correspond to values where grazing level is "heavy" and blue points correspond to "not heavy".
+
+In the left plot, the large positive and large negative residuals visible from Figure 7.29 are evident; the large positive residuals occur across the range of predicted values, while the large negative residuals occur around 20 (predicted birds). The middle plot shows that the large positive and negative residuals occur at intermediate values of log.area; i.e., for values of log.area between 0 and 4, or equivalently for values of area between $\exp ( 0 )   =   1$ and $\exp ( 4 )   =   5 4 . 5$ hectares. In the same range, there are also relatively accurate predictions; most residuals are between -5 and 5. Both the middle plot and the right plot show that the prediction error is smaller for patches with heavy grazing than for patches where grazing intensity was between "light" and "moderately heavy". Patches with heavy grazing are represented with red points; note how the red points mostly cluster around the $y = 0$ line, with the exception of one outlier with a residual value of about 10.
+
+## Conclusions
+
+The relatively large $R ^ { 2 }$ for the final model (0.72) suggests that patch area and extent of grazing (either heavy or not) explain a large amount of the observed variability in bird abundance. Of the features measured in the study, these two are the most highly associated with bird abundance. Larger area is associated with an increase in abundance; when grazing intensity does not change, the model predicts an increase in average abundance by 3.18 birds for every one unit increase in log area (or equivalently, when area is increased by a factor of $\exp ( 1 ) = 2 . 7 )$ . A patch with heavy grazing is estimated to have a mean abundance of about 11.58 birds lower than a patch that has not been heavily grazed.
+
+The residual plots imply that the final model may not be particularly accurate. For most observations, the predictions are accurate between ±5 birds, but there are several instances of overpredictions as high as around 10 and under-predictions of about 15. Additionally, the accurate and inaccurate predictions occur at similar ranges of of log.area; if the model only tended to be inaccurate at a specific range, such as for patches with low area, it would be possible to provide clearer advice about when the model is unreliable. The residuals plots do suggest that the model is more reliable for patches with heavy grazing, although there is a slight tendency towards overprediction.
+
+Based on these results, the ecologists might decide to proceed by collecting more data. Currently, the model seems to adequately explain the variability in bird abundance for patches that have been heavily grazed, but perhaps there are additional variables that are associated with bird abundance, especially in patches that are not heavily grazed. Adding these variables might improve model residuals, in addition to raising $R ^ { 2 }$
+
+## Final considerations
+
+Might a model including all the predictor variables be better than the final model with only log.area and grazing.binary? The model is shown in Figure 7.31. The $R ^ { 2 }$ for this model is 0.729 and the adjusted $R ^ { 2 }$ is 0.676. While the $R ^ { 2 }$ is essentially the same as for the final model, the adjusted $R ^ { 2 }$ is noticeably lower. The residual plots in Figure 7.32 do not indicate that this model is an especially better fit, although the residuals are slightly closer to normality. There would be little gained from using the larger model.
+
+In fact, there is an additional reason to avoid the larger model. When building regression models, it is important to consider that the complexity of a model is limited by sample size (i.e., the number of observations in the data). Attempting to estimate too many parameters from a small dataset can produce a model with unreliable estimates; the model may be ’overfit’, in the sense that it fits the data used to build it particularly well, but will fail to generalize to a new set of data. Methods for exploring these issues are covered in more advanced regression courses.
+
+|  | Estimate | Std. Error | t value | Pr(>\|t\|) |
+| --- | --- | --- | --- | --- |
+| (Intercept) | 10.8120 | 9.9985 | 1.08 | 0.2852 |
+| log.area | 2.9720 | 0.6587 | 4.51 | 0.0000 |
+| log.dist.near.patch | 0.1390 | 1.1937 | 0.12 | 0.9078 |
+| log.dist.larger.patch | 0.3496 | 0.9301 | 0.38 | 0.7087 |
+| altitude | 0.0117 | 0.0233 | 0.50 | 0.6169 |
+| log.yrs.isolation | 0.2155 | 1.9635 | 0.11 | 0.9131 |
+| grazing.intensityless than average | 0.5163 | 3.2631 | 0.16 | 0.8750 |
+| grazing.intensityaverage | 0.1344 | 2.9870 | 0.04 | 0.9643 |
+| grazing.intensitymoderately heavy | -1.2535 | 3.2000 | -0.39 | 0.6971 |
+| grazing.intensityheavy | -12.0642 | 4.5657 | -2.64 | 0.0112 |
+
+Figure 7.31: Full model: regression of abundance on all 6 predictors in forest.birds.
+
+![](images/page_366_image_4.jpg)
+
+Figure 7.32: Residual plots for the full model of abundance that includes all pre-dictors.
+
+A general rule of thumb is to avoid fitting a model where there are fewer than 10 observations per parameter; e.g., to fit a model with 3 parameters, there should be at least 30 observations in the data. In a regression context, all of the following are considered parameters: an intercept term, a slope term for a numerical predictor, a slope term for each level of a categorical predictor, and an interaction term. In forest.birds, there are 56 cases, but fitting the full model involves estimating 10 parameters. The rule of thumb suggests that for these data, a model can safely support at most 5 parameters.
+
+As mentioned earlier, other analyses of forest.birds have treated grazing.intensity as a nu merical variable with five values. One advantage to doing so is to produce a more stable model; only one slope parameter needs to be estimated, rather than four. However, treating grazing.intensity as a numerical variable requires assuming that any one unit change is associated with the same change in population mean abundance; under this assumption, a change between "light" and "less than average" (codes 1 to 2) is associated with the same change in population mean abundance as between "moderately heavy" to "heavy" (codes 4 to 5) grazing. Previous model fitting has shown that this assumption is not supported by the data, and that changes in mean abundance between adjacent levels in grazing intensity are not constant. In this text, it is our recommendation that categorical variables should not be treated as numerical variables.
+
+## 7.9 The connection between ANOVA and regression
+
+Regression with categorical variables and ANOVA are essentially the same method, but with some important differences in the information provided by the analysis. Earlier in this chapter, the strength of the association between RFFT scores and educational level was assessed with regression. Figure 7.33 shows the results of an ANOVA to analyze the difference in RFFT scores between education groups.
+
+|  | Df | Sum Sq | Mean Sq | F value | Pr(>F) |
+| --- | --- | --- | --- | --- | --- |
+| as.factor(Education) | 3 | 115040.88 | 38346.96 | 73.30 | 0.0000 |
+| Residuals | 496 | 259469.32 | 523.12 |  |  |
+
+Figure 7.33: Summary of ANOVA of RFFT by Education Levels
+
+In this setting, the F-statistic is used to test the null hypothesis of no difference in mean RFFT score by educational level against the alternative that at least two of the means are different. The F-statistic is 73.3 and highly significant.
+
+The F-statistic can also be calculated for regression models, although it has not been shown in the regression model summaries in this chapter. In regression, the F-statistic tests the null hypothesis that all regression coefficients are equal to 0 against the alternative that least one of the coefficients is not equal to 0.
+
+Although the phrasing of the hypotheses in ANOVA versus regression may seem different initially, they are equivalent. Consider the regression model for predicting RFFT from educational level—each of the coefficients in the model is an estimate of the difference in mean RFFT for a particular education level versus the baseline category of Education = 0. A significant F-statistic indicates that at least one of the coefficients is not zero; i.e., that at least one of the mean levels of RFFT differs from the baseline category. If all the coefficients were to equal zero, then the differences between the means would be zero, implying all the mean RFFT levels are equal. It is reasonable, then, that the F-statistic associated with the RFFT versus Education regression model is also 73.3.
+
+The assumptions behind the two approaches are identical. Both ANOVA and linear regression assume that the groups are independent, that the observations within each group are independent, that the response variable is approximately normally distributed, and that the standard deviations of the response are the same across the groups.
+
+The regression approach provides estimates of the mean at the baseline category (the intercept) and the differences of the means between each category and the baseline, along with a tstatistic and p-value for each comparison. From regression output, it is easy to calculate all the estimated means; to do the same with ANOVA requires calculating summary statistics for each group. Additionally, diagnostic plots to check model assumptions are generally easily accessible in most computing software.

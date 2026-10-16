@@ -1,0 +1,2346 @@
+# 3 Distributions of random variables
+
+原始 PDF 第 138–197 页。
+
+# Chapter 3
+
+# Distributions of random variables
+
+**3.1 Random variables**
+**3.2 Binomial distribution**
+**3.3 Normal distribution**
+**3.4 Poisson distribution**
+**3.5 Distributions related to Bernoulli trials**
+**3.6 Distributions for pairs of random variables**
+**3.7 Notes**
+**3.8 Exercises**
+
+---
+
+139
+
+When planning clinical research studies, investigators try to anticipate the results they might see under certain hypotheses. The treatments for some forms of can cer, such as advanced lung cancer, are only effective in a small percentage of patients: typically 20% or less. Suppose that a study testing a new treatment will be conducted on 20 participants, where the working assumption is that 20% of the patients will respond to the treatment. How might the possible outcomes of the study be represented, along with their probabilities? It is possible to express various outcomes using the probability notation in the previous chapter, e.g. if A were the event that one patient responds to treatment, but this would quickly become unwieldy.
+
+Instead, the anticipated outcome in the study can be represented as a **random variable**, which numerically summarizes the possible outcomes of a random experiment. For example, let X represent the number of patients who respond to treatment; a numerical value x can be assigned to each possible outcome, and the probabilities of 1,2,..., x patients having a good response can be expressed as $P(X = 1), P(X = 2), \cdots, P(X = x)$ . The distribution of a random variable specifies the probability of each possible outcome associated with the random variable.
+
+This chapter will begin by outlining general properties of random variables and their distributions. The rest of the chapter discusses specific named distributions that are commonly used throughout probability and statistics.
+
+![](../../raw/pages_0129-0144/images/page_138_image_4.jpg)
+
+For labs, slides, and other resources, please visit
+
+[**www.openintro.org/book/biostat**](http://www.openintro.org/redirect.php?go=biostat&referrer=biostat1_pdf)
+
+---
+
+140
+
+CHAPTER 3. DISTRIBUTIONS OF RANDOM VARIABLES
+
+## 3.1 Random variables
+
+## 3.1.1 Distributions of random variables
+
+Formally, a random variable assigns numerical values to the outcome of a random phenomenon, and is usually written with a capital letter such as X, Y , or Z.
+
+If a coin is tossed three times, the outcome is the sequence of observed heads and tails. One such outcome might be TTH: tails on the first two tosses, heads on the third. If the random variable X is the number of heads for the three tosses, $X = 1 ;$ if Y is the number of tails, then $Y = 2$ . For the sequence THT, only the order has changed, but the values of X and Y remain the same. For the sequence HHH, however, $X = 3$ and $Y = 0 .$ Even in this simple setting, is possible to define other random variables; for example, if Z is the toss when the first H occurs, then $Z = 3$ for the first set of tosses (TTH) and 1 for the third set (HHH).
+
+![](../../raw/pages_0129-0144/images/page_139_image_6.jpg)
+
+<details>
+<summary>text_image</summary>
+
+T T T
+X = 0
+T T H
+T H T
+H T T
+X = 1
+T H H
+H T H
+H H T
+X = 2
+H H H
+X = 3
+</details>
+
+Figure 3.1: Possible outcomes for number of heads in three tosses of a coin.
+
+If probabilities can be assigned to the outcomes in a random phenomenon or study, then those can be used to assign probabilities to values of a random variable. Using independence, $P( HHH ) = (1/2)^3 = 1/8$ . Since X in the above example can only be three if the three tosses are all heads, $P ( X = 3 ) = 1 / 8$ . The distribution of a random variable is the collection of probabilities for all of the variable’s unique values. Figure 3.1 shows the eight possible outcomes when a coin is cossed three times: TTT, HTT, THT, TTH, HHT, HTH, THH, HHH. For the first set of tosses, $X = 0 ;$ for the next three, X = 1, then X = 2 for the following three tosses and $X = 3$ for the last set (HHH).
+
+Using independence again, each of the 8 outcomes have probability 1/8, so $P(X = 0) = P(X =$ $3 ) = 1 / 8$ and $P ( X   =   1 )   =   P ( X   =   2 )   =   3 / 8$ Figure 3.2 shows the probability distribution for X. Probability distributions for random variables follow the rules for probability; for instance, the sum of the probabilities must be 1.00. The possible outcomes of X are labeled with a corresponding lower case letter x and subscripts. The values of X are $x _ { 1 } = 0 ,   x _ { 2 } = 1 ,   x _ { 3 } = 2 ,$ , and $x _ { 4 } = 3 ;$ these occur with probabilities 1/8, 3/8, 3/8 and 1/8.
+
+| i | 1 | 2 | 3 | 4 | Total |
+| --- | --- | --- | --- | --- | --- |
+| $x_{i}$ | 0 | 1 | 2 | 3 | - |
+| $P(X = x_{i})$ | 1/8 | 3/8 | 3/8 | 1/8 | 8/8 = 1.00 |
+
+Figure 3.2: Tabular form for the distribution of the number of heads in three coin tosses.
+
+---
+
+3.1. RANDOM VARIABLES
+
+141
+
+![](../../raw/pages_0129-0144/images/page_140_chart_2.jpg)
+
+<details>
+<summary>bar</summary>
+
+| Category | Probabilities |
+| --- | --- |
+| 0 | ~0.125 |
+| 1 | ~0.375 |
+| 2 | ~0.375 |
+| 3 | ~0.125 |
+</details>
+
+Figure 3.3: Bar plot of the distribution of the number of heads in three coin tosses.
+
+Bar graphs can be used to show the distribution of a random variable. Figure 3.3 is a bar graph of the distribution of X in the coin tossing example. When bar graphs are used to show the distribution of a dataset, the heights of the bars show the frequency of observations; in contrast, bar heights for a probability distribution show the probabilities of possible values of a random variable.
+
+X is an example of a **discrete random variable** since it takes on a finite number of values.<sup>1</sup> A **continuous random variable** can take on any real value in an interval.
+
+In the hypothetical clinical study described at the beginning of this section, how unlikely would it be for 12 or more patients to respond to the treatment, given that only 20% of patients are expected to respond? Suppose X is a random variable that will denote the possible number of responding patients, out of a total of 20. X will have the same probability distribution as the number of heads in a 20 tosses of a weighted coin, where the probability of landing heads is 0.20. The graph of the probability distribution for X in Figure 3.4 can be used to approximate this probability. The event of 12 or more consists of nine values (12, 13, . . . , 20); the graph shows that the probabilities for each value is extremely small, so the chance of 12 or more responses must be less than 0.01.<sup>2</sup>
+
+![](../../raw/pages_0129-0144/images/page_140_chart_7.jpg)
+
+<details>
+<summary>histogram</summary>
+
+| X | Probability |
+| --- | --- |
+| 0 | ~0.015 |
+| 1 | ~0.06 |
+| 2 | ~0.14 |
+| 3 | ~0.21 |
+| 4 | ~0.22 |
+| 5 | ~0.175 |
+| 6 | ~0.11 |
+| 7 | ~0.055 |
+| 8 | ~0.025 |
+| 9 | ~0.01 |
+| 10 | ~0.005 |
+| 11 | ~0.002 |
+| 12 | ~0.001 |
+| 13 | ~0.001 |
+| 14 | ~0.001 |
+| 15 | ~0.001 |
+| 16 | ~0.001 |
+| 17 | ~0.001 |
+| 18 | ~0.001 |
+| 19 | ~0.001 |
+| 20 | ~0.001 |
+</details>
+
+Figure 3.4: Bar plot of the distribution of the number of responses in a study with 20 participants and response probability 0.20
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280"><sup>1</sup>Some discrete random variables have an infinite number of possible values, such as all the non-negative integers.</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280"><sup>2</sup>Formulas in Section 3.2 can be used to show that the exact probability is slightly larger than 0.0001.</span></small>
+
+---
+
+142
+
+CHAPTER 3. DISTRIBUTIONS OF RANDOM VARIABLES
+
+## 3.1.2 Expectation
+
+Just like distributions of data, distributions of random variables also have means, variances, standard deviations, medians, etc.; these characteristics are computed a bit differently for random variables. The mean of a random variable is called its **expected value** and written $E ( X )$ . To calculate the mean of a random variable, multiply each possible value by its corresponding probability and add these products.
+
+## EXPECTED VALUE OF A DISCRETE RANDOM VARIABLE
+
+If X takes on outcomes $x _ { 1 } , . . . , x _ { k }$ with probabilities $P ( X = x _ { 1 } ) ,   . . . ,   P ( X = x _ { k } )$ , the expected value of X is the sum of each outcome multiplied by its corresponding probability:
+
+$$
+\begin{array}{l} E (X) = x _ {1} P (X = x _ {1}) + \dots + x _ {k} P (X = x _ {k}) \\ = \sum_ {i = 1} ^ {k} x _ {i} P (X = x _ {i}). \tag {3.1} \\ \end{array}
+$$
+
+The Greek letter $\mu$ may be used in place of the notation $E ( X )$ .
+
+## EXAMPLE 3.2
+
+Calculate the expected value of X, where X represents the number of heads in three tosses of a fair coin.
+
+X can take on values 0, 1, 2, and 3. The probability of each $x _ { k }$ is given in Figure 3.2.
+
+![](../../raw/pages_0129-0144/images/page_141_image_11.jpg)
+
+E(X)
+
+Expected Value of X
+
+$$
+\begin{array}{l} E (X) = x _ {1} P (X = x _ {1}) + \dots + x _ {k} P (X = x _ {k}) \\ = (0) (P (X = 0)) + (1) (P (X = 1)) + (2) (P (X = 2)) + (3) (P (X = 3)) \\ = (0) (1 / 8) + (1) (3 / 8) + (2) (3 / 8) + (3) (1 / 8) = 1 2 / 8 \\ = 1. 5. \\ \end{array}
+$$
+
+The expected value of X is 1.5.
+
+The expected value for a random variable represents the average outcome. For example, $E ( X ) = 1 . 5$ represents the average number of heads in three tosses of a coin, if the three tosses were repeated many times.<sup>3</sup>It often happens with discrete random variables that the expected value is not precisely one of the possible outcomes of the variable.
+
+![](../../raw/pages_0129-0144/images/page_141_image_17.jpg)
+
+## GUIDED PRACTICE 3.3
+
+Calculate the expected value of Y , where Y represents the number of heads in three tosses of an unfair coin, where the probability of heads is 0.70.<sup>4</sup>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280"><sup>3</sup>The expected value E(X) can also be expressed as µ, e.g. µ = 1.5</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280"><sup>4</sup>First, calculate the probability distribution. P (Y = 0) = (1 − 0.70)<sup>3</sup> = 0.027 and P (Y = 3) = (0.70)<sup>3</sup> = 0.343. Note that there are three ways to obtain 1 head (HTT, THT, TTH), thus, P (Y = 1) = (3)(0.70)(1 − 0.70)<sup>2</sup> = 0.189. By the same logic, P (Y = 2) = (3)(0.70)<sup>2</sup>(1−0.70) = 0.441. Thus, E(Y ) = (0)(0.027)+ (1)(0.189)+ (2)(0.441)+ (3)(0.343) = 2.1. The expected value of Y is 2.1.</span></small>
+
+---
+
+3.1. RANDOM VARIABLES
+
+143
+
+## 3.1.3 Variability of random variables
+
+The variability of a random variable can be described with variance and standard deviation. For data, the variance is computed by squaring deviations from the mean $( x _ { i } - \mu )$ and then averaging over the number of values in the dataset (Section 1.4.2).
+
+In the case of a random variable, the squared deviations from the mean of the random variable are used instead, and their sum is weighted by the corresponding probabilities. This weighted sum of squared deviations equals the variance; the standard deviation is the square root of the variance.
+
+## VARIANCE OF A DISCRETE RANDOM VARIABLE
+
+If X takes on outcomes $x _ { 1 } , . . . , x _ { k }$ with probabilities $P(X = x_1), \cdots, P(X = x_k)$ and expected value $\mu = E ( X )$ , then the variance of X, denoted by $\operatorname { V a r } ( X )$ or $\sigma ^ { 2 }$ , is
+
+$$
+\begin{array}{l} V a r (X) = (x _ {1} - \mu) ^ {2} P (X = x _ {1}) + \dots + (x _ {k} - \mu) ^ {2} P (X = x _ {k}) \\ = \sum_ {i = 1} ^ {k} (x _ {i} - \mu) ^ {2} P (X = x _ {i}). \tag {3.4} \\ \end{array}
+$$
+
+The standard deviation of X, labeled SD(X) or σ, is the square root of the variance.
+
+Var(X) Variance of X
+
+The variance of a random variable can be interpreted as the expectation of the terms $( x _ { i } - \mu ) ^ { 2 } ;$ i.e., $\sigma ^ { 2 } = E ( X - \mu ) ^ { 2 }$ . While this compact form is not useful for direct computation, it can be helpful for understanding the concept of variability in the context of a random variable; variance is simply the average of the deviations from the mean.
+
+## EXAMPLE 3.5
+
+Compute the variance and standard deviation of X, the number of heads in three tosses of a fair coin.
+
+In the formula for the variance, $k = 4$ and $\mu _ { X } = E { \bigl ( } X { \bigr ) } = 1 . 5$
+
+$$
+\begin{array}{l} \sigma_ {X} ^ {2} = (x _ {1} - \mu_ {X}) ^ {2} P (X = x _ {1}) + \dots + (x _ {4} - \mu) ^ {2} P (X = x _ {4}) \\ = (0 - 1. 5) ^ {2} (1 / 8) + (1 - 1. 5) ^ {2} (3 / 8) + (2 - 1. 5) ^ {2} (3 / 8) + (3 - 1. 5) ^ {2} (1 / 8) \\ = 3 / 4. \\ \end{array}
+$$
+
+The variance is $3 / 4 = 0 . 7 5$ and the standard deviation is ${ \sqrt { 3 / 4 } } = 0 . 8 6 6 .$
+
+The coin tossing scenario provides a simple illustration of the mean and variance of a random variable. For the rest of this section, a more realistic example will be discussed—calculating expected health care costs.
+
+In most typical health insurance plans in the United States, members of the plan pay annually in three categories: a monthly premium, a deductible amount that members pay each year before the insurance covers service, and “out-of-pocket” costs which include co-payments for each physician visit or prescription.<sup>5</sup> Picking a new health plan involves estimating costs for the next year based on a person’s best guess at the type and number of services that will be needed.
+
+E
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280"><sup>5</sup>The deductible also includes care and supplies that are not covered by insurance.</span></small>
+
+---
+
+144
+
+CHAPTER 3. DISTRIBUTIONS OF RANDOM VARIABLES
+
+In 2015, Harvard University offered several alternative plans to its employees. In the Health Maintenance Organization (HMO) plan for employees earning less than \$70,000 per year, the monthly premium was $\S 7 9 ,$ and the co-payment for each office visit or physical therapy session was \$20. After a new employee examined her health records for the last 10 years, she noticed that in three of the 10 years, she visited the office of her primary care physician only once, for one annual physical. In four of the 10 years, she visited her physician three times: once for a physical, and twice for cases of the flu. In two of the years, she had four visits. In one of the 10 years, she experienced a knee injury that required 3 office visits and 5 physical therapy sessions.
+
+## EXAMPLE 3.6
+
+Ignoring the cost of prescription drugs, over-the-counter medications, and the annual deductible amount, calculate the expectation and the standard deviation of the expected annual health care cost for this employee.
+
+Let the random variable X denote annual health care costs, where $x _ { i }$ represents the costs in a year for i number of visits. If the last ten years are an accurate picture of annual costs for this employee, X will have four possible values.
+
+The total cost of the monthly premiums in a single year is $1 2 \times \S 7 9 = \S 9 4 8 .$ . The cost of each visit is \$20, so the total visit cost for a year is \$20 times the number of visits.
+
+For example, the first column in the table contains information about the years in which the employee had one office visit. Adding the \$948 for the annual premium and \$20 for one visit results in $x _ { 1 } = \S 9 6 8 ;   P ( X = x _ { i } ) = 3 / 1 0 = 0 . 3 0$
+
+| i | 1 | 2 | 3 | 4 | Sum |
+| --- | --- | --- | --- | --- | --- |
+| Number of visits | 1 | 3 | 4 | 8 |  |
+| $x_i$ | 968 | 1008 | 1028 | 1108 |  |
+| $P(X = x_i)$ | 0.30 | 0.40 | 0.20 | 0.10 | 1.00 |
+| $x_iP(X = x_i)$ | 290.40 | 403.20 | 205.60 | 110.80 | 1010.00 |
+
+The expected cost of health care for a year, $\begin{array} { r } { \sum _ { i } x _ { i } P ( X = x _ { i } ) , } \end{array}$ is $\mu = \S 1 0 1 0 . 0 0 .$
+
+| i | 1 | 2 | 3 | 4 | Sum |
+| --- | --- | --- | --- | --- | --- |
+| Number of visits | 1 | 3 | 4 | 8 |  |
+| $x_i$ | 968 | 1008 | 1028 | 1108 |  |
+| $P(X = x_i)$ | 0.30 | 0.40 | 0.20 | 0.10 | 1.00 |
+| $(x_i)P(X = x_i)$ | 290.40 | 403.20 | 205.60 | 110.80 | 1010.00 |
+| $x_i - \mu$ | -42.00 | -2.00 | 18.00 | 98.00 |  |
+| $(x_i - \mu)^2$ | 1764.00 | 4.00 | 324.00 | 9604 |  |
+| $(x_i - \mu)^2P(X = x_i)$ | 529.20 | 1.60 | 64.80 | 960.40 | 1556.00 |
+
+The variance of X, $\textstyle \sum _ { i } ( x _ { i }   -   \mu ) ^ { 2 } P ( X = x _ { i } )$ , is $\sigma ^ { 2 } = 1 5 5 6 . 0 0 ,$ , and the standard deviation is $\sigma = \S 3 9 . 4 5 . ^ { 6 }$
+
+E
+
+<sup>6</sup>Note that the standard deviation always has the same units as the original measurements.
+
+---
+
+3.1. RANDOM VARIABLES
+
+145
+
+## 3.1.4 Linear combinations of random variables
+
+Sums of random variables arise naturally in many problems. In the health insurance example, the amount spent by the employee during her next five years of employment can be represented as $X _ { 1 } + X _ { 2 } + X _ { 3 } + X _ { 4 } + X _ { 5 }$ , where $X _ { 1 }$ is the cost of the first $\mathtt { y e a r } , X _ { 2 }$ the second year, etc. If the employee’s domestic partner has health insurance with another employer, the total annual cost to the couple would be the sum of the costs for the employee (X) and for her partner (Y ), or $X + Y$ . In each of these examples, it is intuitively clear that the average cost would be the sum of the average of each term.
+
+Sums of random variables represent a special case of linear combinations of variables.
+
+## LINEAR COMBINATIONS OF RANDOM VARIABLES AND THEIR EXPECTED VALUES
+
+If X and Y are random variables, then a linear combination of the random variables is given by
+
+$$
+a X + b Y,
+$$
+
+where a and b are constants. The mean of a linear combination of random variables is
+
+$$
+E (a X + b Y) = a E (X) + b E (Y) = a \mu_ {X} + b \mu_ {Y}.
+$$
+
+The formula easily generalizes to a sum of any number of random variables. For example, the average health care cost for 5 years, given that the cost for services remains the same, is
+
+$$
+E (X _ {1} + X _ {2} + X _ {3} + X _ {4} + X _ {5}) = E (5 X _ {1}) = 5 E (X _ {1}) = (5) (1 0 1 0) = \$ 5, 0 5 0.
+$$
+
+The formula implies that for a random variable $Z ,   E ( a + Z ) = a + E ( Z )$ . This could have been used when calculating the average health costs for the employee by defining a as the fixed cost of the premium $\left( a = \$948 \right)$ and $Z$ as the cost of the physician visits. Thus, the total annual cost for a year could be calculated as: $E(a+Z)=a+E(Z)=\$948+E(Z)=\$948+.30(1\times\$20)+.40(3\times\$20)$ + $20(4 \times \$20) + 0.10(8 \times \$20) = \$1,010.00.$
+
+## GUIDED PRACTICE 3.7
+
+Suppose the employee will begin a domestic partnership in the next year. Although she and her companion will begin living together and sharing expenses, they will each keep their existing health insurance plans; both, in fact, have the same plan from the same employer. In the last five years, her partner visited a physician only once in four of the ten years, and twice in the other six years. Calculate the expected total cost of health insurance to the couple in the next year.
+
+Calculating the variance and standard deviation of a linear combination of random variables requires more care. The formula given here requires that the random variables in the linear combination be independent, such that an observation on one of the variables provides no information about the value of the other variable.
+
+G
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280"><sup>7</sup>Let X represent the costs for the employee and Y represent the costs for her partner. E(X) = \$1,010.00, as previously calculated. E(Y ) = 948+0.4(1×\$20)+0.6(2×\$20) = \$980.00. Thus, E(X+Y ) = E(X)+E(Y ) = \$1,010.00+\$980.00 = \$1,990.00.</span></small>
+
+---
+
+146
+
+CHAPTER 3. DISTRIBUTIONS OF RANDOM VARIABLES
+
+## VARIABILITY OF LINEAR COMBINATIONS OF RANDOM VARIABLES
+
+$$
+\mathrm{Var} (a X + b Y) = a ^ {2} \mathrm{Var} (X) + b ^ {2} \mathrm{Var} (Y).
+$$
+
+This equation is valid only if the random variables are independent of each other.
+
+For the transformation $a + b Z ,$ , the variance is $b ^ { 2 } \mathrm { V a r } ( Z )$ , since a constant a has variance 0. When $b = 1$ , variance of $a + Z$ is $\operatorname { V a r } ( Z ) \cdot$ —adding a constant to a random variable has no effect on the variability of the random variable.
+
+## EXAMPLE 3.8
+
+Calculate the variance and standard deviation for the combined cost of next year’s health care for the two partners, assuming that the costs for each person are independent.
+
+Let X represent the sum of costs for the employee and Y the sum of costs for her partner.
+
+First, calculate the variance of health care costs for the partner. The partner’s costs are the sum of the annual fixed cost and the variable annual costs, so the variance will simply be the variance of the variable costs. If Z represents the component of the variable costs, $E(Z)=0.4(1 \times \$20)+0.6(2 \times \$20)=$ $\S 8 + \S 2 4 = \S 3 2$ . Thus, the variance of Z equals
+
+$$
+\mathrm{Var} (Z) = 0. 4 (2 0 - 3 2) ^ {2} + 0. 6 (4 0 - 3 2) ^ {2} = 9 6.
+$$
+
+Under the assumption of independence, $\mathrm{Var}(X + Y) = \mathrm{Var}(X) + \mathrm{Var}(Y) = 1556 + 96 = 1652$ , and the standard deviation is ${ \sqrt { 1 6 5 2 } } = { \mathfrak { H } } 4 0 . 6 4 .$
+
+The example of health insurance costs has been simplified to make the calculations clearer. It ignores the fact that many plans have a deductible amount, and that plan members pay for services at different rates before and after the deductible has been reached. Often, insured individuals no longer need to pay for services at all once a maximum amount has been reached in a year. The example also assumes that the proportions of number of physician visits per year, estimated from the last 10 years, can be treated as probabilities measured without error. Had a different timespan been chosen, the proportions might well have been different.
+
+It also relies on the assumption that health care costs for the two partners are independent. Two individuals living together may pass on infectious diseases like the flu, or may participate together in activities that lead to similar injuries, such as skiing or long distance running. Section 3.6 shows how to adjust a variance calculation when independence is unrealistic.
+
+E
+
+---
+
+3.2. BINOMIAL DISTRIBUTION
+
+147
+
+## 3.2 Binomial distribution
+
+The hypothetical clinical study and coin tossing example discussed earlier in this chapter are both examples of experiments that can be modeled with a binomial distribution. The binomial distribution is a more general case of another named distribution, the Bernoulli distribution.
+
+## 3.2.1 Bernoulli distribution
+
+Psychologist Stanley Milgram began a series of experiments in 1963 to study the effect of authority on obedience. In a typical experiment, a participant would be ordered by an authority figure to give a series of increasingly severe shocks to a stranger. Milgram found that only about 35% of people would resist the authority and stop giving shocks before the maximum voltage was reached. Over the years, additional research suggested this number is approximately consistent across communities and time.
+
+Each person in Milgram’s experiment can be thought of as a **trial**. Suppose that a trial is labeled a **success** if the person refuses to administer the worst shock. If the person does administer the worst shock, the trial is a **failure**. The **probability of a success** can be written as $p = 0 . 3 5$ . The probability of a failure is sometimes denoted with $q = 1 - p .$
+
+When an individual trial only has two possible outcomes, it is called a **Bernoulli random variable**. It is arbitrary as to which outcome is labeled success.
+
+Bernoulli random variables are often denoted as 1 for a success and 0 for a failure. Suppose that ten trials are observed, of which 6 are successes and 4 are failures:
+
+$$
+0 1 1 1 1 0 1 1 0 0.
+$$
+
+The **sample proportion**, $\hat { p } ,$ is the sample mean of these observations:
+
+$$
+\hat {p} = \frac {\# \text {of successes}}{\# \text {of trials}} = \frac {0 + 1 + 1 + 1 + 1 + 0 + 1 + 1 + 0 + 0}{1 0} = 0. 6.
+$$
+
+Since 0 and 1 are numerical outcomes, the mean and standard deviation of a Bernoulli random variable can be defined. If $p$ is the true probability of a success, then the mean of a Bernoulli random variable X is given by
+
+$$
+\begin{array}{l} \mu = E [ X ] = P (X = 0) \times 0 + P (X = 1) \times 1 \\ = (1 - p) \times 0 + p \times 1 = 0 + p = p. \\ \end{array}
+$$
+
+Similarly, the variance of X can be computed:
+
+$$
+\sigma^ {2} = P (X = 0) (0 - p) ^ {2} + P (X = 1) (1 - p) ^ {2}
+$$
+
+$$
+= (1 - p) p ^ {2} + p (1 - p) ^ {2} = p (1 - p).
+$$
+
+The standard deviation is $\sigma = \sqrt { p ( 1 - p ) }$
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280"><sup>8</sup>Find further information on Milgram’s experiment at [www.cnr.berkeley.edu/ucce50/ag-labor/7article/article35.htm](http://www.openintro.org/redirect.php?go=textbook-milgram&referrer=biostat1_pdf).</span></small>
+
+---
+
+148
+
+CHAPTER 3. DISTRIBUTIONS OF RANDOM VARIABLES
+
+## BERNOULLI RANDOM VARIABLE
+
+If X is a random variable that takes value 1 with probability of success p and 0 with probability $1 - p ,$ then X is a Bernoulli random variable with mean p and standard deviation $\sqrt { p ( 1 - p ) }$
+
+Suppose X represents the outcome of a single toss of a fair coin, where heads is labeled success. X is a Bernoulli random variable with probability of success $p   =   0.50;$ this can be expressed as $X \sim \operatorname { \mathtt { B e r n } } ( p )$ , or specifically, X ∼ Bern(0.50). It is essential to specify the probability of success when characterizing a Bernoulli random variable. For example, although the outcome of a single toss of an unfair coin can also be represented by a Bernoulli, it will have a different probability distribution since p does not equal 0.50 for an unfair coin.
+
+The success probability p is the **parameter** of the distribution, and identifies a specific Bernoulli distribution out of the entire family of Bernoulli distributions where p can be any value between 0 and 1 (inclusive).
+
+Bern(p) Bernoulli dist. with p prob. of success
+
+![](../../raw/pages_0145-0160/images/page_147_image_7.jpg)
+
+## EXAMPLE 3.9
+
+Suppose that four individuals are randomly selected to participate in Milgram’s experiment. What is the chance that there will be exactly one successful trial, assuming independence between trials? Suppose that the probability of success remains 0.35.
+
+Consider a scenario in which there is one success (i.e., one person refuses to give the strongest shock). Label the individuals as A, B, C, and D:
+
+$$
+\begin{array}{l} P (A = \text {refuse}, B = \text {shock}, C = \text {shock}, D = \text {shock}) \\ = P (A = \text {refuse}) P (B = \text {shock}) P (C = \text {shock}) P (D = \text {shock}) \\ = (0. 3 5) (0. 6 5) (0. 6 5) (0. 6 5) = (0. 3 5) ^ {1} (0. 6 5) ^ {3} = 0. 0 9 6. \\ \end{array}
+$$
+
+However, there are three other possible scenarios: either B, C, or D could have been the one to refuse. In each of these cases, the probability is also $( 0 . 3 5 ) ^ { 1 } ( 0 . 6 5 ) ^ { 3 }$ . These four scenarios exhaust all the possible ways that exactly one of these four people could refuse to administer the most severe shock, so the total probability of one success is $(4)(0.35)^{1}(0.65)^{3}=0.38$
+
+---
+
+3.2. BINOMIAL DISTRIBUTION
+
+149
+
+## 3.2.2 The binomial distribution
+
+The Bernoulli distribution is unrealistic in all but the simplest of settings. However, it is a useful building block for other distributions. The **binomial distribution** describes the probability of having exactly k successes in n independent Bernoulli trials with probability of a success $p .$ In Example 3.9, the goal was to calculate the probability of 1 success out of 4 trials, with probability of success $0 . 3 5 \; ( n = 4 ,   k = 1 ,   p = 0 . 3 5 )$
+
+Like the Bernoulli distribution, the binomial is a discrete distribution, and can take on only a finite number of values. A binomial variable has values $0 ,   1 ,   2 ,   \cdots ,   n .$
+
+A general formula for the binomial distribution can be developed from re-examining Example 3.9. There were four individuals who could have been the one to refuse, and each of these four scenarios had the same probability. Thus, the final probability can be written as:
+
+$$
+[ \# \text {of scenarios} ] \times P (\text {single scenario.}) \tag {3.10}
+$$
+
+The first component of this equation is the number of ways to arrange the $k = 1$ successes among the $n = 4$ trials. The second component is the probability of any of the four (equally probable) scenarios.
+
+Consider P (single scenario) under the general case of k successes and $n - k$ failures in the n trials. In any such scenario, the Multiplication Rule for independent events can be applied:
+
+$$
+p ^ {k} (1 - p) ^ {n - k}.
+$$
+
+Secondly, there is a general formula for the number of ways to choose k successes in n trials, i.e. arrange k successes and $n - k$ failures:
+
+$$
+\binom{n}{k} = \frac{n!}{k!(n - k)!}.
+$$
+
+The quantity ${ \binom { n } { k } }$ is read n choose ${ \bf k } . ^ { 9 }$ The exclamation point notation (e.g. k!) denotes a **factorial** expression.<sup>10</sup>
+
+Using the formula, the number of ways to choose $k = 1$ successes in $n = 4$ trials can be computed as:
+
+$$
+\binom {4} {1} = \frac {4 !}{1 ! (4 - 1) !} = \frac {4 !}{1 ! 3 !} = \frac {4 \times 3 \times 2 \times 1}{(1) (3 \times 2 \times 1)} = 4.
+$$
+
+Substituting n choose k for the number of scenarios and $p ^ { k } ( 1 - p ) ^ { n - k }$ for the single scenario probability in Equation (3.10) yields the general binomial formula.
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">9Other notation for n choose k includes nCk, Ckn, and C(n, k).</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">10<sub>0</sub>! = 1 , 1! = 1, 2! = 2 × 1 = 2, . . . , n! = n × (n − 1) × . . . 2 × 1.</span></small>
+
+---
+
+150
+
+CHAPTER 3. DISTRIBUTIONS OF RANDOM VARIABLES
+
+Bin(n,p)
+Binomial dist.
+with n trials
+& p prob. of
+success
+
+## BINOMIAL DISTRIBUTION
+
+Suppose the probability of a single trial being a success is $p .$ The probability of observing exactly k successes in n independent trials is given by
+
+$$
+P (X = k) = \binom {n} {k} p ^ {k} (1 - p) ^ {n - k} = \frac {n !}{k ! (n - k) !} p ^ {k} (1 - p) ^ {n - k}. \tag {3.11}
+$$
+
+Additionally, the mean, variance, and standard deviation of the number of observed successes are, respectively
+
+$$
+\mu = n p \quad \sigma^ {2} = n p (1 - p) \quad \sigma = \sqrt {n p (1 - p)}. \tag {3.12}
+$$
+
+A binomial random variable X can be expressed as $X \sim \operatorname { B i n } ( n , p )$
+
+## IS IT BINOMIAL? FOUR CONDITIONS TO CHECK.
+
+(1) The trials are independent.
+(2) The number of trials, n, is fixed.
+(3) Each trial outcome can be classified as a success or failure.
+(4) The probability of a success, $p ,$ is the same for each trial.
+
+## EXAMPLE 3.13
+
+What is the probability that 3 of 8 randomly selected participants will refuse to administer the worst shock?
+
+First, check the conditions for applying the binomial model. The number of trials is fixed $( n = 8 )$ and each trial outcome can be classified as either success or failure. The sample is random, so the trials are independent, and the probability of success is the same for each trial.
+
+For the outcome of interest, $k = 3$ successes occur in $n = 8$ trials, and the probability of a success is $p = 0 . 3 5$ . Thus, the probability that 3 of 8 will refuse is given by
+
+$$
+\begin{array}{l} P (X = 3) = \binom {8} {3} (0. 3 5) ^ {3} (1 - 0. 3 5) ^ {8 - 3} \quad = \quad \frac {8 !}{3 ! (8 - 3) !} (0. 3 5) ^ {3} (1 - 0. 3 5) ^ {8 - 3} \\ = \quad (5 6) (0. 3 5) ^ {3} (0. 6 5) ^ {5} \\ = \quad 0. 2 8. \\ \end{array}
+$$
+
+E
+
+---
+
+3.2. BINOMIAL DISTRIBUTION
+
+151
+
+## EXAMPLE 3.14
+
+What is the probability that at most 3 of 8 randomly selected participants will refuse to administer the worst shock?
+
+The event of at most 3 out of 8 successes can be thought of as the combined probability of 0, 1, 2, and 3 successes. Thus, the probability that at most 3 of 8 will refuse is given by:
+
+$$
+\begin{array}{l} P (X \leq 3) = P (X = 0) + P (X = 1) + P (X = 2) + P (X = 3) \\ = \binom {8} {0} (0. 3 5) ^ {0} (1 - 0. 3 5) ^ {8 - 0} + \binom {8} {1} (0. 3 5) ^ {1} (1 - 0. 3 5) ^ {8 - 1} \\ + \binom {8} {2} (0. 3 5) ^ {2} (1 - 0. 3 5) ^ {8 - 2} + \binom {8} {3} (0. 3 5) ^ {3} (1 - 0. 3 5) ^ {8 - 3} \\ = (1) (0. 3 5) ^ {0} (1 - 0. 3 5) ^ {8} + (8) (0. 3 5) ^ {1} (1 - 0. 3 5) ^ {7} \\ + (2 8) (0. 3 5) ^ {2} (1 - 0. 3 5) ^ {6} + (5 6) (0. 3 5) ^ {3} (1 - 0. 3 5) ^ {5} \\ = 0. 7 0 6. \\ \end{array}
+$$
+
+E
+
+E
+
+G
+
+## EXAMPLE 3.15
+
+If 40 individuals were randomly selected to participate in the experiment, how many individuals would be expected to refuse to administer the worst shock? What is the standard deviation of the number of people expected to refuse?
+
+Both quantities can directly be computed from the formulas in Equation (3.12). The expected value (mean) is given by: $\mu = n p = 4 0 \times 0 . 3 5 = 1 4$ . The standard deviation is: $\sigma = { \sqrt { n p ( 1 - p ) } } =$ $\sqrt { 4 0 \times 0 . 3 5 \times 0 . 6 5 } = 3 . 0 2$
+
+## GUIDED PRACTICE 3.16
+
+The probability that a smoker will develop a severe lung condition in their lifetime is about 0.30. Suppose that 5 smokers are randomly selected from the population. What is the probability that (a) one will develop a severe lung condition? (b) that no more than one will develop a severe lung condition? (c) that at least one will develop a severe lung condition?<sup>11</sup>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">11Let p = 0.30; X ∼ Bin(5, 0.30). (a) P (X = 1) =  5(0.30)1(1 − 0.30)5−1 = 0.36 (b) P (X ≤ 1) = P (X = 0) + P (X = 1) =  50(0.30)0(1 − 0.30)<sup>5−0</sup> + 0.36 = 0.53 (c) P (X ≥ 1) = 1 − P (X = 0) = 1 − 0.36 = 0.83</span></small>
+
+---
+
+152
+
+CHAPTER 3. DISTRIBUTIONS OF RANDOM VARIABLES
+
+## 3.3 Normal distribution
+
+Among the many distributions seen in practice, one is by far the most common: the **normal distribution**, which has the shape of a symmetric, unimodal bell curve. Many variables are nearly normal, which makes the normal distribution useful for a variety of problems. For example, characteristics such as human height closely follow the normal distribution.
+
+## 3.3.1 Normal distribution model
+
+The normal distribution model always describes a symmetric, unimodal, bell-shaped curve. However, the curves can differ in center and spread; the model can be adjusted using mean and standard deviation. Changing the mean shifts the bell curve to the left or the right, while changing the standard deviation stretches or constricts the curve. Figure 3.5 shows the normal distribution with mean 0 and standard deviation 1 in the left panel and the normal distribution with mean 19 and standard deviation 4 in the right panel. Figure 3.6 shows these distributions on the same axis.
+
+![](../../raw/pages_0145-0160/images/page_151_image_6.jpg)
+
+Figure 3.5: Both curves represent the normal distribution; however, they differ in their center and spread. The normal distribution with mean 0 and standard deviation 1 is called the standard normal distribution.
+
+![](../../raw/pages_0145-0160/images/page_151_chart_8.jpg)
+
+<details>
+<summary>violin</summary>
+
+| X | Y |
+| --- | --- |
+| ~0 | Peak |
+| ~19 | Peak |
+</details>
+
+Figure 3.6: The normal models shown in Figure 3.5 but plotted together and on the same scale.
+
+$N(\mu,\sigma)$ 
+Normal dist.
+with mean  $\mu$ 
+& st. dev.  $\sigma$
+
+For any given normal distribution with mean $\mu$ and standard deviation $\sigma ,$ the distribution can be written as $N ( \mu , \sigma ) ;   \mu$ and $\sigma$ are the parameters of the normal distribution. For example, $N ( 0 , 1 )$ refers to the standard normal distribution, as shown in Figure 3.5.
+
+Unlike the Bernoulli and binomial distributions, the normal distribution is a continuous distribution.
+
+---
+
+3.3. NORMAL DISTRIBUTION
+
+153
+
+## 3.3.2 Standardizing with Z-scores
+
+The **Z-score** of an observation quantifies how far the observation is from the mean, in units of standard deviation(s). If x is an observation from a distribution $N ( \mu , \sigma )$ , the Z-score is mathematically defined as:
+
+$$
+Z = \frac {x - \mu}{\sigma}.
+$$
+
+An observation equal to the mean has a Z-score of 0. Observations above the mean have positive Z-scores, while observations below the mean have negative Z-scores. For example, if an observation is one standard deviation above the mean, it has a Z-score of 1; if it is 1.5 standard deviations below the mean, its Z-score is -1.5.
+
+Z-scores can be used to identify which observations are more extreme than others, and are especially useful when comparing observations from different normal distributions. One observation $x _ { 1 }$ is said to be more unusual than another observation $x _ { 2 }$ if the absolute value of its Z-score is larger than the absolute value of the other observation’s Z-score: $| Z _ { 1 } | > | Z _ { 2 } |$ . In other words, the further an observation is from the mean in either direction, the more extreme it is.
+
+## EXAMPLE 3.17
+
+The SAT and the ACT are two standardized tests commonly used for college admissions in the United States. The distribution of test scores are both nearly normal. For the SAT, N(1500, 300); for the ACT, N(21, 5). While some colleges request that students submit scores from both tests, others allow students the choice of either the ACT or the SAT. Suppose that one student scores an 1800 on the SAT (Student A) and another scores a 24 on the ACT (Student B). A college admissions officer would like to compare the scores of the two students to determine which student performed better.
+
+Calculate a Z-score for each student; i.e., convert x to Z.
+
+Using $\mu _ { S A T } = 1 5 0 0 ,   \sigma _ { S A T } = 3 0 0 ,$ and $x _ { A } = 1 8 0 0 ,$ , find Student A’s Z-score:
+
+$$
+Z _ {A} = \frac {x _ {A} - \mu_ {S A T}}{\sigma_ {S A T}} = \frac {1 8 0 0 - 1 5 0 0}{3 0 0} = 1.
+$$
+
+For Student B:
+
+$$
+Z _ {B} = \frac {x _ {B} - \mu_ {A C T}}{\sigma_ {A C T}} = \frac {2 4 - 2 1}{5} = 0. 6.
+$$
+
+Student A’s score is 1 standard deviation above average on the SAT, while Student B’s score is 0.6 standard deviations above the mean on the ACT. As illustrated in Figure 3.7, Student A’s score is more extreme, indicating that Student A has scored higher with respect to other scores than Student B.
+
+## THE Z-SCORE
+
+The Z-score of an observation quantifies how far the observation is from the mean, in units of standard deviation(s). The Z-score for an observation x that follows a distribution with mean µ and standard deviation σ can be calculated using
+
+$$
+Z = \frac {x - \mu}{\sigma}.
+$$
+
+E
+
+Z
+
+Z-score, the standardized observation
+
+---
+
+154
+
+CHAPTER 3. DISTRIBUTIONS OF RANDOM VARIABLES
+
+![](../../raw/pages_0145-0160/images/page_153_image_2.jpg)
+
+Figure 3.7: Scores of Students A and B plotted on the distributions of SAT and ACT scores.
+
+## EXAMPLE 3.18
+
+How high would a student need to score on the ACT to have a score equivalent to Student A’s score of 1800 on the SAT?
+
+As shown in Example 3.7, a score of 1800 on the SAT is 1 standard deviation above the mean. ACT scores are normally distributed with mean 21 and standard deviation 5. To convert a value from the standard normal curve (Z) to one on a normal distribution $N ( \mu , \sigma )$ :
+
+$$
+x = \mu + Z \sigma .
+$$
+
+Thus, a student would need a score of $2 1 + 1 { \bigl ( } 5 { \bigr ) } = 2 6$ on the ACT to have a score equivalent to 1800 on the SAT.
+
+## GUIDED PRACTICE 3.19
+
+Systolic blood pressure (SBP) for adults in the United States aged 18-39 follow an approximate normal distribution, N(115, 17.5). As age increases, systolic blood pressure also tends to increase. Mean systolic blood pressure for adults 60 years of age and older is 136 mm Hg, with standard deviation 40 mm Hg. Systolic blood pressure of 140 mm Hg or higher is indicative of hypertension (high blood pressure). (a) How many standard deviations away from the mean is a 30-year-old with systolic blood pressure of 125 mm Hg? (b) Compare how unusual a systolic blood pressure of 140 mm Hg is for a 65-year-old, versus a 30-year-old.<sup>12</sup>
+
+E
+
+G
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">12(a) Calculate the Z-score: $\begin{array} { r } { \frac { \overline { { x } } - \mu } { \sigma } = \frac { 1 2 5 - 1 1 5 } { 1 7 . 5 } = 0 . 5 7 1 } \end{array}$ . A 30-year-old with systolic blood pressure of 125 mm Hg is about 0.6 standard deviations above the mean. (b) For x1 = 140 mm Hg: Z1 =x1−µσ =140−11517.5 = 1.43. For x2 = 140 mm Hg: Z2 =x2−µ=140−136= 0.1. While an SBP of 140 mm Hg is almost 1.5 standard deviations above the mean for a 30-year-old, it is only 0.1 standard deviations above the mean for a 65-year-old.</span></small>
+
+---
+
+3.3. NORMAL DISTRIBUTION
+
+155
+
+## 3.3.3 The empirical rule
+
+The empirical rule (also known as the 68-95-99.7 rule) states that for a normal distribution, almost all observations will fall within three standard deviations of the mean. Specifically, 68% of observations are within one standard deviation of the mean, 95% are within two SD’s, and 99.7% are within three SD’s.
+
+![](../../raw/pages_0145-0160/images/page_154_chart_4.jpg)
+
+<details>
+<summary>violin</summary>
+
+| Interval | Percentage |
+| --- | --- |
+| \(\mu - 3\sigma\) to μ - 2σ | 68% |
+| \(\mu - 2\sigma\) to μ - σ | 95% |
+| \(\mu - \sigma\) to μ | 99.7% |
+| \(\mu + \sigma\) to μ + 2σ | N/A |
+| \(\mu + 2\sigma\) to μ + 3σ | N/A |
+</details>
+
+Figure 3.8: Probabilities for falling within 1, 2, and 3 standard deviations of the mean in a normal distribution.
+
+While it is possible for a normal random variable to take on values 4, 5, or even more standard deviations from the mean, these occurrences are extremely rare if the data are nearly normal. For example, the probability of being further than 4 standard deviations from the mean is about 1-in-30,000.
+
+## 3.3.4 Calculating normal probabilities
+
+The normal distribution is a continuous probability distribution. Recall from Section 2.1.5 that the total area under the density curve is always equal to 1, and the probability that a variable has a value within a specified interval is the area under the curve over that interval. By using either statistical software or normal probability tables, the normal model can be used to identify a probability or percentile based on the corresponding Z-score (and vice versa).
+
+![](../../raw/pages_0145-0160/images/page_154_image_9.jpg)
+
+Figure 3.9: The area to the left of Z represents the percentile of the observation.
+
+---
+
+156
+
+CHAPTER 3. DISTRIBUTIONS OF RANDOM VARIABLES
+
+<table><tr><td rowspan="2">Z</td><td colspan="10">Second decimal place of Z</td></tr><tr><td>0.00</td><td>0.01</td><td>0.02</td><td>0.03</td><td>0.04</td><td>0.05</td><td>0.06</td><td>0.07</td><td>0.08</td><td>0.09</td></tr><tr><td>0.0</td><td>0.5000</td><td>0.5040</td><td>0.5080</td><td>0.5120</td><td>0.5160</td><td>0.5199</td><td>0.5239</td><td>0.5279</td><td>0.5319</td><td>0.5359</td></tr><tr><td>0.1</td><td>0.5398</td><td>0.5438</td><td>0.5478</td><td>0.5517</td><td>0.5557</td><td>0.5596</td><td>0.5636</td><td>0.5675</td><td>0.5714</td><td>0.5753</td></tr><tr><td>0.2</td><td>0.5793</td><td>0.5832</td><td>0.5871</td><td>0.5910</td><td>0.5948</td><td>0.5987</td><td>0.6026</td><td>0.6064</td><td>0.6103</td><td>0.6141</td></tr><tr><td>0.3</td><td>0.6179</td><td>0.6217</td><td>0.6255</td><td>0.6293</td><td>0.6331</td><td>0.6368</td><td>0.6406</td><td>0.6443</td><td>0.6480</td><td>0.6517</td></tr><tr><td>0.4</td><td>0.6554</td><td>0.6591</td><td>0.6628</td><td>0.6664</td><td>0.6700</td><td>0.6736</td><td>0.6772</td><td>0.6808</td><td>0.6844</td><td>0.6879</td></tr><tr><td>0.5</td><td>0.6915</td><td>0.6950</td><td>0.6985</td><td>0.7019</td><td>0.7054</td><td>0.7088</td><td>0.7123</td><td>0.7157</td><td>0.7190</td><td>0.7224</td></tr><tr><td>0.6</td><td>0.7257</td><td>0.7291</td><td>0.7324</td><td>0.7357</td><td>0.7389</td><td>0.7422</td><td>0.7454</td><td>0.7486</td><td>0.7517</td><td>0.7549</td></tr><tr><td>0.7</td><td>0.7580</td><td>0.7611</td><td>0.7642</td><td>0.7673</td><td>0.7704</td><td>0.7734</td><td>0.7764</td><td>0.7794</td><td>0.7823</td><td>0.7852</td></tr><tr><td>0.8</td><td>0.7881</td><td>0.7910</td><td>0.7939</td><td>0.7967</td><td>0.7995</td><td>0.8023</td><td>0.8051</td><td>0.8078</td><td>0.8106</td><td>0.8133</td></tr><tr><td>0.9</td><td>0.8159</td><td>0.8186</td><td>0.8212</td><td>0.8238</td><td>0.8264</td><td>0.8289</td><td>0.8315</td><td>0.8340</td><td>0.8365</td><td>0.8389</td></tr><tr><td>1.0</td><td>0.8413</td><td>0.8438</td><td>0.8461</td><td>0.8485</td><td>0.8508</td><td>0.8531</td><td>0.8554</td><td>0.8577</td><td>0.8599</td><td>0.8621</td></tr><tr><td>1.1</td><td>0.8643</td><td>0.8665</td><td>0.8686</td><td>0.8708</td><td>0.8729</td><td>0.8749</td><td>0.8770</td><td>0.8790</td><td>0.8810</td><td>0.8830</td></tr><tr><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td><td>⋮</td></tr></table>
+
+Figure 3.10: A section of the normal probability table. The percentile for a normal random variable with $Z = 0 . 4 3$ has been highlighted, and the percentile closest to 0.8000 has also been highlighted.
+
+A **normal probability table** is given in Appendix B.1 on page 463 and abbreviated in Figure 3.10. This table can be used to identify the **percentile** corresponding to any particular Zscore; for instance, the percentile of $Z = 0 . 4 3$ is shown in row 0.4 and column 0.03 in Figure 3.10: 0.6664, or the $6 6 . 6 4 ^ { t h }$ percentile. First, find the proper row in the normal probability table up through the first decimal, and then determine the column representing the second decimal value. The intersection of this row and column is the percentile of the observation. This value also represents the probability that the standard normal variable Z takes on a value of 0.43 or less; i.e. $P ( Z \leq 0 . 4 3 ) = 0 . 6 6 6 4 .$
+
+The table can also be used to find the Z-score associated with a percentile. For example, to identify Z for the $8 0 ^ { t h }$ percentile, look for the value closest to 0.8000 in the middle portion of the table: 0.7995. The Z-score for the $8 0 ^ { t h }$ percentile is given by combining the row and column Z values: 0.84.
+
+## EXAMPLE 3.20
+
+Student A from Example 3.17 earned a score of 1800 on the SAT, which corresponds to $Z = 1$ . What percentile is this score associated with?
+
+In this context, the **percentile** is the percentage of people who earned a lower SAT score than Student A. From the normal table, Z of 1.00 is 0.8413. Thus, the student is in the $8 4 ^ { t h }$ percentile of test takers. This area is shaded in Figure 3.11.
+
+E
+
+G
+
+## GUIDED PRACTICE 3.21
+
+Determine the proportion of SAT test takers who scored better than Student A on the SAT.<sup>13</sup>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">13<sub>If</sub> 84% had lower scores than Student A, the number of people who had better scores must be 16%.</span></small>
+
+---
+
+3.3. NORMAL DISTRIBUTION
+
+157
+
+![](../../raw/pages_0145-0160/images/page_156_chart_2.jpg)
+
+<details>
+<summary>area</summary>
+
+| X | Y |
+| --- | --- |
+| 600 | ~0.05 |
+| 900 | ~0.25 |
+| 1200 | ~0.75 |
+| 1500 | ~1.0 |
+| 1800 | ~0.75 |
+| 2100 | ~0.25 |
+| 2400 | ~0.05 |
+</details>
+
+Figure 3.11: The normal model for SAT scores, with shaded area representing scores below 1800.
+
+## 3.3.5 Normal probability examples
+
+There are two main types of problems that involve the normal distribution: calculating probabilities from a given value (whether X or Z), or identifying the observation that corresponds to a particular probability.
+
+## EXAMPLE 3.22
+
+Cumulative SAT scores are well-approximated by a normal model, N(1500,300). What is the probability that a randomly selected test taker scores at least 1630 on the SAT?
+
+For any normal probability problem, it can be helpful to start out by drawing the normal curve and shading the area of interest.
+
+![](../../raw/pages_0145-0160/images/page_156_chart_9.jpg)
+
+<details>
+<summary>violin</summary>
+
+| Metric | Value |
+| --- | --- |
+| Peak Area | 1630 |
+</details>
+
+To find the shaded area under the curve, convert 1630 to a Z-score:
+
+$$
+Z = \frac {x - \mu}{\sigma} = \frac {1 6 3 0 - 1 5 0 0}{3 0 0} = \frac {1 3 0}{3 0 0} = 0. 4 3.
+$$
+
+Look up the percentile of $Z   =   0 . 4 3$ in the normal probability table shown in Figure 3.10 or in Appendix B.1 on page 463: 0.6664. However, note that the percentile describes those who had a Z-score lower than 0.43, or in other words, the area below 0.43. To find the area above $Z = 0 . 4 3 ,$ subtract the area of the lower tail from the total area under the curve, 1:
+
+![](../../raw/pages_0145-0160/images/page_156_chart_13.jpg)
+
+<details>
+<summary>violin</summary>
+
+| Metric | Value |
+| --- | --- |
+| Difference (1.0000 - 0.6664) | 1.0000 |
+| Mean Difference | 0.6664 |
+| Cumulative Difference | 0.3336 |
+</details>
+
+The probability that a student scores at least 1630 on the SAT is 0.3336.
+
+E
+
+---
+
+158
+
+CHAPTER 3. DISTRIBUTIONS OF RANDOM VARIABLES
+
+## DISCRETE VERSUS CONTINUOUS PROBABILITIES
+
+Recall that the probability of a continuous random variable equaling some exact value is always 0. As a result, for a continuous random variable $X , P ( X   \leq   x )   =   P ( X   <   x )$ and $P(X \geq x) = P(X > x)$ . It is valid to state that $P(X \geq x) = 1 - P(X \leq x) = 1 - P(X < x)$
+
+This is not the case for discrete random variables. For example, for a discrete random variable $Y , P ( Y \geq 2 ) = 1 - P ( Y < 2 ) = 1 - P ( Y \leq 1 )$ It would be incorrect to claim that $P(Y \geq 2) = 1 - P(Y \leq$ 2).
+
+![](../../raw/pages_0145-0160/images/page_157_image_5.jpg)
+
+## GUIDED PRACTICE 3.23
+
+What is the probability of a student scoring at most 1630 on the $\mathrm { S A T 2 ^ { 1 4 } }$
+
+![](../../raw/pages_0145-0160/images/page_157_image_8.jpg)
+
+## GUIDED PRACTICE 3.24
+
+Systolic blood pressure for adults 60 years of age and older in the United States is approximately normally distributed: N(136,40). What is the probability of an adult in this age group having systolic blood pressure of 140 mm Hg or greater?<sup>15</sup>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">14<sub>This</sub> probability was calculated as part of Example 3.22: 0.6664. A picture for this exercise is represented by the shaded area below “0.6664” in Example 3.22.</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">15<sub>The</sub> Z-score for this observation was calculated in Exercise 3.19 as 0.1. From the table, the P (Z ≥ 0.1) = 1 − 0.54 = 0.46.</span></small>
+
+---
+
+3.3. NORMAL DISTRIBUTION
+
+159
+
+## EXAMPLE 3.25
+
+The height of adult males in the United States between the ages of 20 and 62 is nearly normal, with mean 70 inches and standard deviation 3.3 inches.<sup>16</sup> What is the probability that a random adult male is between $5 ^ { \prime } 9 ^ { \prime \prime }$ and $6 2 \%$
+
+These heights correspond to 69 inches and 74 inches. First, draw the figure. The area of interest is an interval, rather than a tail area.
+
+![](../../raw/pages_0145-0160/images/page_158_chart_5.jpg)
+
+<details>
+<summary>area</summary>
+
+| Metric | Value |
+| --- | --- |
+| Lower Bound (Percentile) | 69 |
+| Upper Bound (Percentile) | 74 |
+</details>
+
+![](../../raw/pages_0145-0160/images/page_158_image_6.jpg)
+
+To find the middle area, find the area to the left of 74; from that area, subtract the area to the left of 69.
+
+First, convert to Z-scores:
+
+$$
+Z _ {7 4} = \frac {x - \mu}{\sigma} = \frac {7 4 - 7 0}{3 . 3} = 1. 2 1, \quad Z _ {6 2} = \frac {x - \mu}{\sigma} = \frac {6 9 - 7 0}{3 . 3} = - 0. 3 0.
+$$
+
+From the normal probability table, the areas are respectively, 0.8868 and 0.3821. The middle area is $0 . 8 8 6 8 - 0 . 3 8 2 1 = 0 . 5 0 4 8$ . The probability of being between heights $5 ^ { \prime } 9 ^ { \prime \prime }$ and $6 ^ { \prime } 2 ^ { \prime \prime }$ is 0.5048.
+
+![](../../raw/pages_0145-0160/images/page_158_chart_11.jpg)
+
+<details>
+<summary>violin</summary>
+
+| Metric | Value |
+| --- | --- |
+| Difference (Blue) | 0.8868 |
+| Difference (White) | -0.3821 |
+| Mean Difference | 0.5048 |
+</details>
+
+![](../../raw/pages_0145-0160/images/page_158_image_12.jpg)
+
+## GUIDED PRACTICE 3.26
+
+What percentage of adults in the United States ages 60 and older have blood pressure between 145 and 130 mm $\mathrm { H g } \mathfrak { g } ^ { 1 7 }$
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">16<sub>As</sub> based on a sample of 100 men, from the USDA Food Commodity Intake Database.</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">17<sub>First</sub> calculate Z-scores, then find the percent below 145 mm Hg and below 130 mm Hg: Z<sub>145</sub> = 0.23 → 0.5890, Z<sub>130</sub> = −0.15 → 0.4404 (area above). Final answer: 0.5890 − 0.4404 = 0.1486.</span></small>
+
+---
+
+160
+
+CHAPTER 3. DISTRIBUTIONS OF RANDOM VARIABLES
+
+## EXAMPLE 3.27
+
+How tall is a man with height in the $4 0 ^ { t h }$ percentile?
+
+First, draw a picture. The lower tail probability is 0.40, so the shaded area must start before the mean.
+
+![](../../raw/pages_0145-0160/images/page_159_chart_5.jpg)
+
+<details>
+<summary>area</summary>
+
+| Metric | Value |
+| --- | --- |
+| Mean (Percentile) | 40% |
+| Lower Bound (Percentile) | 0.40 |
+| Upper Bound (Percentile) | 70 |
+</details>
+
+![](../../raw/pages_0145-0160/images/page_159_image_6.jpg)
+
+Determine the Z-score associated with the $4 0 ^ { t h }$ percentile. Because the percentile is below 50%, Z will be negative. Look for the probability inside the negative part of table that is closest to 0.40: 0.40 falls in row −0.2 and between columns 0.05 and 0.06. Since it falls closer to 0.05, choose $Z = - 0 . 2 5 .$
+
+Convert the Z-score to X, where $X \sim N ( 7 0 , 3 . 3 )$
+
+$$
+X = \mu + \sigma Z = 7 0 + (- 0. 2 5) (3. 3) = 6 9. 1 8.
+$$
+
+A man with height in the $4 0 ^ { t h }$ percentile is 69.18 inches tall, or about $5   ^ { \prime }   9   ^ { \prime \prime }$
+
+![](../../raw/pages_0145-0160/images/page_159_image_11.jpg)
+
+## GUIDED PRACTICE 3.28
+
+(a) What is the $9 5 ^ { t h }$ percentile for SAT scores? (b) What is the $9 7 . 5 ^ { t h }$ percentile of the male heights?<sup>18</sup>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">18(a) Look for 0.95 in the probability portion (middle part) of the normal probability table: row 1.6 and (about) column 0.05, i.e. Z<sub>95</sub> = 1.65. Knowing Z<sub>95</sub> = 1.65, µ = 1500, and σ = 300, convert Z to x: 1500 + (1.65)(300) = 1995. (b) Similarly, find Z<sub>97.5</sub> = 1.96, and convert to x: x<sub>97</sub>.5 = 76.5 inches.</span></small>
+
+---
+
+3.3. NORMAL DISTRIBUTION
+
+161
+
+## 3.3.6 Normal approximation to the binomial distribution
+
+The normal distribution can be used to approximate other distributions, such as the binomial distribution. The binomial formula is cumbersome when sample size is large, particularly when calculating probabilities for a large number of observations. Under certain conditions, the normal distribution can be used to approximate binomial probabilities. This method was widely used when calculating binomial probabilities by hand was the only option. Nowadays, modern statistical software is capable of calculating exact binomial probabilities even for very large n. The normal approximation to the binomial is discussed here since it is an important result that will be revisited in later chapters.
+
+Consider the binomial model when probability of success is $p = 0 . 1 0$ . Figure 3.12 shows four hollow histograms for simulated samples from the binomial distribution using four different sample sizes: $n = 1 0 , 3 0 , 1 0 0 , 3 0 0$ . As the sample size increases from $n = 10   to   n = 300$ , the distribution is transformed from a blocky and skewed distribution into one resembling the normal curve.
+
+![](../../raw/pages_0161-0176/images/page_160_image_5.jpg)
+
+Figure 3.12: Hollow histograms of samples from the binomial model when $p =$ 0.10. The sample sizes for the four plots are $n = 1 0 ,$ , 30, 100, and 300, respectively.
+
+## NORMAL APPROXIMATION OF THE BINOMIAL DISTRIBUTION
+
+The binomial distribution with probability of success p is nearly normal when the sample size n is sufficiently large such that np and $n ( 1 - p )$ are both at least 10. The approximate normal distribution has parameters corresponding to the mean and standard deviation of the binomial distribution:
+
+$$
+\mu = n p
+$$
+
+$$
+\sigma = \sqrt {n p (1 - p)}
+$$
+
+---
+
+162
+
+CHAPTER 3. DISTRIBUTIONS OF RANDOM VARIABLES
+
+## EXAMPLE 3.29
+
+Approximately 20% of the US population smokes cigarettes. A local government commissioned a survey of 400 randomly selected individuals to investigate whether their community might have a lower smoker rate than 20%. The survey found that 59 of the 400 participants smoke cigarettes. If the true proportion of smokers in the community is 20%, what is the probability of observing 59 or fewer smokers in a sample of 400 people?
+
+The desired probability is equivalent to the sum of the individual probabilities of observing $k = 0 ,$ $1 , . . . , 5 8 ,$ or 59 smokers in a sample of $n = 4 0 0 \colon P { \bigl ( } X \leq 5 9 { \bigr ) }$ . Confirm that the normal approximation is valid: $np = 400 \times 0.20 = 80,   n(1 - p) = 400 \times 0.8 = 320$ . To use the normal approximation, calculate the mean and standard deviation from the binomial model:
+
+$$
+\mu = n p = 8 0 \quad \sigma = \sqrt {n p (1 - p)} = 8.
+$$
+
+Convert 59 to a Z-score: $\left[ Z = \frac{59 - 80}{8} = - 2.63 \right.$ . Use the normal probability table to identify the left tail area, which is 0.0043.
+
+This estimate is very close to the answer derived from the exact binomial calculation:
+
+$$
+P (k = 0 \text {or} k = 1 \text {or} \dots \text {or} k = 5 9) = P (k = 0) + P (k = 1) + \dots + P (k = 5 9) = 0. 0 0 4 1.
+$$
+
+However, even when the conditions for using the approximation are met, the normal approximation to the binomial tends to perform poorly when estimating the probability of a small range of counts. Suppose the normal approximation is used to compute the probability of observing 69, 70, or 71 smokers in 400 when $p = 0 . 2 0$ . In this setting, the exact binomial and normal approximation result in notably different answers: the approximation gives 0.0476, while the binomial returns 0.0703.
+
+The cause of this discrepancy is illustrated in Figure 3.13, which shows the areas representing the binomial probability (outlined) and normal approximation (shaded). Notice that the width of the area under the normal distribution is 0.5 units too slim on both sides of the interval.
+
+![](../../raw/pages_0161-0176/images/page_161_chart_11.jpg)
+
+<details>
+<summary>histogram</summary>
+
+| Bin Range | Frequency |
+| --- | --- |
+| ~68 ~70 | ~1.5 |
+| ~70 ~72 | ~2.5 |
+</details>
+
+Figure 3.13: A normal curve with the area between 69 and 71 shaded. The outlined area represents the exact binomial probability.
+
+The normal approximation can be improved if the cutoff values for the range of observations is modified slightly: the lower value should be reduced by 0.5 and the upper value increased by 0.5. The normal approximation with continuity correction gives 0.0687 for the probability of observing 69, 70, or 71 smokers in 400 when $p = 0 . 2 0$ , which is closer to the exact binomial result of 0.0703.
+
+This adjustment method is known as a continuity correction, which allows for increased accuracy when a continuous distribution is used to approximate a discrete one. The modification is typically not necessary when computing a tail area, since the total interval in that case tends to be quite wide.
+
+E
+
+---
+
+3.3. NORMAL DISTRIBUTION
+
+163
+
+## 3.3.7 Evaluating the normal approximation
+
+The normal model can also be used to approximate data distributions. While using a normal model can be convenient, it is important to remember that normality is always an approximation. Testing the appropriateness of the normal assumption is a key step in many data analyses.
+
+![](../../raw/pages_0161-0176/images/page_162_image_4.jpg)
+
+Figure 3.14: A sample of 100 male heights. Since the observations are rounded to the nearest whole inch, the points in the normal probability plot appear to jump in increments.
+
+Example 3.27 suggests the distribution of heights of US males is well approximated by the normal model. There are two visual methods used to assess the assumption of normality. The first is a simple histogram with the best fitting normal curve overlaid on the plot, as shown in the left panel of Figure 3.14. The sample mean x¯ and standard deviation s are used as the parameters of the best fitting normal curve. The closer this curve fits the histogram, the more reasonable the normal model assumption. More commonly, a **normal probability plot** is used, such as the one shown in the right panel of Figure 3.14.<sup>19</sup> If the points fall on or near the line, the data closely follow the normal model.
+
+19<sub>Also</sub> called a quantile-quantile plot, or Q-Q plot.
+
+---
+
+164
+
+CHAPTER 3. DISTRIBUTIONS OF RANDOM VARIABLES
+
+## EXAMPLE 3.30
+
+Three datasets were simulated from a normal distribution, with sample sizes $n = 4 0 ,   n = 1 0 0 ,$ and $n = 4 0 0 ;$ ; the histograms and normal probability plots of the datasets are shown in Figure 3.15. What happens as sample size increases?
+
+As sample size increases, the data more closely follows the normal distribution; the histograms become more smooth, and the points on the Q-Q plots show fewer deviations from the line.
+
+It is important to remember that when evaluating normality in a small dataset, apparent deviations from normality may simply be due to small sample size. Remember that all three of these simulated datasets are drawn from a normal distribution.
+
+When assessing the normal approximation in real data, it will be rare to observe a Q-Q plot as clean as the one shown for $n = 4 0 0 .$ . Typically, the normal approximation is reasonable even if there are some small observed departures from normality in the tails, such as in the plot for $n = 1 0 0$
+
+![](../../raw/pages_0161-0176/images/page_163_image_7.jpg)
+
+Figure 3.15: Histograms and normal probability plots for three simulated normal data sets; n = 40 (left), $n = 1 0 0$ (middle), $n = 4 0 0$ (right).
+
+E
+
+---
+
+3.3. NORMAL DISTRIBUTION
+
+165
+
+## EXAMPLE 3.31
+
+Would it be reasonable to use the normal distribution to accurately calculate percentiles of heights of NBA players? Consider all 435 NBA players from the 2008-9 season presented in Figure 3.16.<sup>20</sup>
+
+The histogram in the left panel is slightly left skewed, and the points in the normal probability plot do not closely follow a straight line, particularly in the upper quantiles. The normal model is not an accurate approximation of NBA player heights.
+
+![](../../raw/pages_0161-0176/images/page_164_image_5.jpg)
+
+Figure 3.16: Histogram and normal probability plot for the NBA heights from the 2008-9 season.
+
+## EXAMPLE 3.32
+
+Consider the poker winnings of an individual over 50 days. A histogram and normal probability plot of these data are shown in Figure 3.17 Evaluate whether a normal approximation is appropriate.
+
+The data are very strongly right skewed in the histogram, which corresponds to the very strong deviations on the upper right component of the normal probability plot. These data show very strong deviations from the normal model; the normal approximation should not be applied to these data.
+
+![](../../raw/pages_0161-0176/images/page_164_image_10.jpg)
+
+Figure 3.17: A histogram of poker data with the best fitting normal plot and a normal probability plot.
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">20<sub>These</sub> data were collected from [www.nba.com](http://www.openintro.org/redirect.php?go=textbook-nba_com&referrer=biostat1_pdf).</span></small>
+
+E
+
+E
+
+---
+
+166
+
+CHAPTER 3. DISTRIBUTIONS OF RANDOM VARIABLES
+
+![](../../raw/pages_0161-0176/images/page_165_image_2.jpg)
+
+## GUIDED PRACTICE 3.33
+
+Determine which data sets represented in Figure 3.18 plausibly come from a nearly normal distribution.<sup>21</sup>
+
+![](../../raw/pages_0161-0176/images/page_165_image_5.jpg)
+
+Figure 3.18: Four normal probability plots for Guided Practice 3.33.
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">21<sub>Answers</sub> may vary. The top-left plot shows some deviations in the smallest values in the dataset; specifically, the left tail shows some large outliers. The top-right and bottom-left plots do not show any obvious or extreme deviations from the lines for their respective sample sizes, so a normal model would be reasonable. The bottom-right plot has a consistent curvature that suggests it is not from the normal distribution. From examining the vertical coordinates of the observations, most of the data are between -20 and 0, then there are about five observations scattered between 0 and 70; this distribution has strong right skew.</span></small>
+
+---
+
+3.3. NORMAL DISTRIBUTION
+
+167
+
+When observations spike downwards on the left side of a normal probability plot, this indicates that the data have more outliers in the left tail expected under a normal distribution. When observations spike upwards on the right side, the data have more outliers in the right tail than expected under the normal distribution.
+
+## GUIDED PRACTICE 3.34
+
+Figure 3.19 shows normal probability plots for two distributions that are skewed. One distribution is skewed to the low end (left skewed) and the other to the high end (right skewed). Which is which?<sup>22</sup>
+
+![](../../raw/pages_0161-0176/images/page_166_image_5.jpg)
+
+Figure 3.19: Normal probability plots for Guided Practice 3.34.
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">22<sub>Examine</sub> where the points fall along the vertical axis. In the first plot, most points are near the low end with fewer observations scattered along the high end; this describes a distribution that is skewed to the high end. The second plot shows the opposite features, and this distribution is skewed to the low end.</span></small>
+
+G
+
+---
+
+168
+
+CHAPTER 3. DISTRIBUTIONS OF RANDOM VARIABLES
+
+## 3.4 Poisson distribution
+
+The **Poisson distribution** is a discrete distribution used to calculate probabilities for the number of occurrences of a rare event. In technical terms, it is used as a model for count data. For example, historical records of hospitalizations in New York City indicate that among a population of approximately 8 million people, 4.4 people are hospitalized each day for an acute myocardial infarction (AMI), on average. A histogram of showing the distribution of the number of AMIs per day on 365 days for NYC is shown in Figure 3.20.<sup>23</sup>
+
+![](../../raw/pages_0161-0176/images/page_167_chart_4.jpg)
+
+<details>
+<summary>histogram</summary>
+
+| X | Y |
+| --- | --- |
+| 1 | ~14 |
+| 2 | ~50 |
+| 3 | ~69 |
+| 4 | ~82 |
+| 5 | ~54 |
+| 6 | ~43 |
+| 7 | ~23 |
+| 8 | ~17 |
+| 9 | ~6 |
+| 10 | ~6 |
+| 11 | ~1 |
+</details>
+
+Figure 3.20: A histogram of the number of people hospitalized for an AMI on 365 days for NYC, as simulated from a Poisson distribution with mean 4.4.
+
+Pois(λ) Poisson dist. with rate λ
+
+λ Rate for the Poisson dist.
+
+## POISSON DISTRIBUTION
+
+The Poisson distribution is a probability model for the number of events that occur in a population. The probability that exactly k events occur is given by
+
+$$
+P (X = k) = \frac {e ^ {- \lambda} (\lambda) ^ {k}}{k !},
+$$
+
+where k may take a value 0, 1, 2, . . . The mean and standard deviation of this distribution are λ and $\sqrt { \lambda } ,$ respectively. A Poisson random variable X can be expressed as $X \sim \operatorname { P o i s } ( \lambda )$
+
+When events accumulate over time in such a way that the probability an event occurs in an interval is proportional to the length of an interval and that the number of events in non-overlapping intervals are independent, the parameter λ (the Greek letter lambda) represents the average number of events per unit time; i.e., the rate per unit time.
+
+In this setting, the number of events in t units of time has probability
+
+$$
+P (X = k) = \frac {e ^ {- \lambda t} (\lambda t) ^ {k}}{k !},
+$$
+
+where k takes on values 0, 1, 2, . . . . When used this way, the mean and standard deviation are λt and ${ \sqrt { \lambda t } } ,$ respectively. The rate parameter λ represents the expected number of events per unit time, while the quantity λt represents the expected number events over a time period of t units.
+
+The histogram in Figure 3.20 approximates a Poisson distribution with rate equal to 4.4 events per day, for a population of 8 million.
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">23<sub>These</sub> data are simulated. In practice, it would be important to check for an association between successive days.</span></small>
+
+---
+
+3.4. POISSON DISTRIBUTION
+
+169
+
+## EXAMPLE 3.35
+
+In New York City, what is the probability that 2 individuals are hospitalized for AMI in seven days, if the rate is known to be 4.4 deaths per day?
+
+From the given information, $\lambda = 4 . 4 ,   k = 2 ,$ and $t = 7 .$
+
+$$
+P (X = k) = \frac {e ^ {- \lambda t} (\lambda t) ^ {k}}{k !}
+$$
+
+$$
+P (X = 2) = \frac {e ^ {- 4 . 4 \times 7} (4 . 4 \times 7) ^ {2}}{2 !} = 1. 9 9 \times 1 0 ^ {- 1 1}.
+$$
+
+E
+
+G
+
+E
+
+## GUIDED PRACTICE 3.36
+
+In New York City, what is the probability that (a) at most 2 individuals are hospitalized for AMI in seven days, (b) at least 3 individuals are hospitalized for AMI in seven days?<sup>24</sup>
+
+A rigorous set of conditions for the Poisson distribution is not discussed here. Generally, the Poisson distribution is used to calculate probabilities for rare events that accumulate over time, such as the occurrence of a disease in a population.
+
+## EXAMPLE 3.37
+
+For children ages 0 - 14, the incidence rate of acute lymphocytic leukemia (ALL) was approximately 30 diagnosed cases per million children per year in 2010. Approximately 20% of the US population of 319,055,000 are in this age range. What is the expected number of cases of ALL in the US over five years?
+
+The incidence rate for one year can be expressed as $30/1,000,000=0.00003;$ for five years, the rate is $(5)(0.00003) \; = \; 0.00015.$ The number of children age 0-14 in the population is (0.20)(319,055,000) ≈ 63,811,000.
+
+$$
+\begin{array}{l} \lambda = (\text {relevant population size}) (\text {rate per child}) \\ = 6 3, 8 1 1, 0 0 0 \times 0. 0 0 0 1 5 \\ = 9, 5 7 1. 5 \\ \end{array}
+$$
+
+The expected number of cases over five years is 9,571.5 cases.
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">24(a) P (X ≤ 2) = P (X = 0) + P (X = 1) + P (X = 2) = −4.4×7(4.4×7)00! + e−4.4×7(4.4×7)11! + e−4.4×7(4.4×7)22! = 2.12 × 10−11 (b) P (X ≥ 3) = 1 − P (X < 3) = 1 − P (X ≤ 2) = 1 − 2.12 × 10−1<sup>1</sup> ≈ 1</span></small>
+
+---
+
+170
+
+CHAPTER 3. DISTRIBUTIONS OF RANDOM VARIABLES
+
+## 3.5 Distributions related to Bernoulli trials
+
+The binomial distribution is not the only distribution that can be built from a series of repeated Bernoulli trials. This section discusses the geometric, negative binomial, and hypergeometric distributions.
+
+## 3.5.1 Geometric distribution
+
+The geometric distribution describes the waiting time until one success for a series of independent Bernoulli random variables, in which the probability of success p remains constant.
+
+## EXAMPLE 3.38
+
+Recall that in the Milgram shock experiments, the probability of a person refusing to give the most severe shock is $p = 0 . 3 5$ . Suppose that participants are tested one at a time until one person refuses; i.e., until the first occurrence of a successful trial. What are the chances that the first occurrence happens with the first trial? The second trial? The third?
+
+The probability that the first trial is successful is simply $p = 0 . 3 5$
+
+If the second trial is the first successful one, then the first one must have been unsuccessful. Thus, the probability is given by $( 0 . 6 5 ) ( 0 . 3 5 ) = 0 . 2 2 8$
+
+Similarly, the probability that the first success is the third trial: (0.65)(0.65)(0.35) = 0.148.
+
+This can be stated generally. If the first success is on the $n ^ { t h }$ trial, then there are n − 1 failures and finally 1 success, which corresponds to the probability $( 0 . 6 5 ) ^ { n - 1 } ( 0 . 3 5 )$
+
+The geometric distribution from Example 3.38 is shown in Figure 3.21. In general, the probabilities for a geometric distribution decrease **exponentially**.
+
+![](../../raw/pages_0161-0176/images/page_169_chart_13.jpg)
+
+<details>
+<summary>bar</summary>
+
+| Number of trials | Probability |
+| --- | --- |
+| 1 | ~0.36 |
+| 2 | ~0.23 |
+| 3 | ~0.15 |
+| 4 | ~0.10 |
+| 5 | ~0.06 |
+| 6 | ~0.04 |
+| 7 | ~0.03 |
+| 8 | ~0.02 |
+| 9 | ~0.01 |
+| 10 | ~0.01 |
+| 11 | ~0.005 |
+| 12 | ~0.005 |
+| 13 | ~0.002 |
+| 14 | ~0.002 |
+</details>
+
+Figure 3.21: The geometric distribution when the probability of success is $p = 0 . 3 5 .$
+
+E
+
+---
+
+3.5. DISTRIBUTIONS RELATED TO BERNOULLI TRIALS
+
+171
+
+## GEOMETRIC DISTRIBUTION
+
+If the probability of a success in one trial is $p$ and the probability of a failure is $1 - p ,$ then the probability of finding the first success in the $k ^ { t h }$ trial is given by
+
+$$
+P (X = k) = (1 - p) ^ {k - 1} p.
+$$
+
+The mean (i.e. expected value), variance, and standard deviation of this wait time are given by
+
+$$
+\mu = \frac {1}{p}
+$$
+
+$$
+\sigma^ {2} = \frac {1 - p}{p ^ {2}}
+$$
+
+$$
+\sigma = \sqrt {\frac {1 - p}{p ^ {2}}}
+$$
+
+A geometric random variable X can be expressed as $X \sim \operatorname { G e o m } ( p )$ .
+
+Geom(p)
+
+Geometric dist. with p prob. of success
+
+G
+
+## GUIDED PRACTICE 3.39
+
+If individuals were examined until one did not administer the most severe shock, how many might need to be tested before the first success?<sup>25</sup>
+
+## EXAMPLE 3.40
+
+What is the probability of the first success occurring within the first 4 people?
+
+This is the probability it is the first $( k = 1 )$ , second $( k = 2 )$ , third $( k = 3 )$ , or fourth (k = 4) trial that is the first success, which represent four disjoint outcomes. Compute the probability of each case and add the separate results:
+
+$$
+\begin{array}{l} P (X = 1, 2, 3, \text {or} 4) \\ = P (X = 1) + P (X = 2) + P (X = 3) + P (X = 4) \\ = (0. 6 5) ^ {1 - 1} (0. 3 5) + (0. 6 5) ^ {2 - 1} (0. 3 5) + (0. 6 5) ^ {3 - 1} (0. 3 5) + (0. 6 5) ^ {4 - 1} (0. 3 5) \\ = 0. 8 2. \\ \end{array}
+$$
+
+Alternatively, find the complement of $\mathrm { P } ( \mathrm { X } = 0 )$ , since the described event is the complement of no success in 4 trials: $1 - ( 0 . 6 5 ) ^ { 4 } ( 0 . 3 5 ) ^ { 0 } = 0 . 8 2$
+
+There is a 0.82 probability that the first success occurs within 4 trials.
+
+Note that there are differing conventions for defining the geometric distribution; while this text uses the definition that the distribution describes the total number of trials including the success, others define the distribution as the number of trials required before the success is obtained. In $\mathsf { R } ,$ the latter definition is used.
+
+E
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">25<sub>About</sub> 1/p = 1/0.35 = 2.86 individuals.</span></small>
+
+---
+
+172
+
+CHAPTER 3. DISTRIBUTIONS OF RANDOM VARIABLES
+
+## 3.5.2 Negative binomial distribution
+
+The geometric distribution describes the probability of observing the first success on the $k ^ { t h }$ trial. The **negative binomial distribution** is more general: it describes the probability of observing the $r ^ { t h }$ success on the $k ^ { t h }$ trial.
+
+Suppose a research assistant needs to successfully extract RNA from four plant samples before leaving the lab for the day. Yesterday, it took 6 attempts to attain the fourth successful extraction. The last extraction must have been a success; that leaves three successful extractions and two unsuccessful ones that make up the first five attempts. There are ten possible sequences, which are shown in 3.22.
+
+<table><tr><td rowspan="2"></td><td colspan="6">Extraction Attempt</td></tr><tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr><tr><td>1</td><td> $F$ </td><td> $F$ </td><td> $^{1}S$ </td><td> $^{2}S$ </td><td> $^{3}S$ </td><td> $^{4}S$ </td></tr><tr><td>2</td><td> $F$ </td><td> $^{1}S$ </td><td> $F$ </td><td> $^{2}S$ </td><td> $^{3}S$ </td><td> $^{4}S$ </td></tr><tr><td>3</td><td> $F$ </td><td> $^{1}S$ </td><td> $^{2}S$ </td><td> $F$ </td><td> $^{3}S$ </td><td> $^{4}S$ </td></tr><tr><td>4</td><td> $F$ </td><td> $^{1}S$ </td><td> $^{2}S$ </td><td> $^{3}S$ </td><td> $F$ </td><td> $^{4}S$ </td></tr><tr><td>5</td><td> $^{1}S$ </td><td> $F$ </td><td> $F$ </td><td> $^{2}S$ </td><td> $^{3}S$ </td><td> $^{4}S$ </td></tr><tr><td>6</td><td> $^{1}S$ </td><td> $F$ </td><td> $^{2}S$ </td><td> $F$ </td><td> $^{3}S$ </td><td> $^{4}S$ </td></tr><tr><td>7</td><td> $^{1}S$ </td><td> $F$ </td><td> $^{2}S$ </td><td> $^{3}S$ </td><td> $F$ </td><td> $^{4}S$ </td></tr><tr><td>8</td><td> $^{1}S$ </td><td> $^{2}S$ </td><td> $F$ </td><td> $F$ </td><td> $^{3}S$ </td><td> $^{4}S$ </td></tr><tr><td>9</td><td> $^{1}S$ </td><td> $^{2}S$ </td><td> $F$ </td><td> $^{3}S$ </td><td> $F$ </td><td> $^{4}S$ </td></tr><tr><td>10</td><td> $^{1}S$ </td><td> $^{2}S$ </td><td> $^{3}S$ </td><td> $F$ </td><td> $F$ </td><td> $^{4}S$ </td></tr></table>
+
+Figure 3.22: The ten possible sequences when the fourth successful extraction is on the sixth attempt.
+
+![](../../raw/pages_0161-0176/images/page_171_image_7.jpg)
+
+## GUIDED PRACTICE 3.41
+
+Each sequence in Figure 3.22 has exactly two failures and four successes with the last attempt always being a success. If the probability of a success is $p = 0 . 8 ,$ , find the probability of the first sequence.<sup>26</sup>
+
+If the probability of a successful extraction is $p = 0 . 8 ,$ , what is the probability that it takes exactly six attempts to reach the fourth successful extraction? As expressed by 3.41, there are 10 different ways that this event can occur. The probability of the first sequence was identified in Guided Practice 3.41 as 0.0164, and each of the other sequences have the same probability. Thus, the total probability is $( 1 0 ) ( 0 . 0 1 6 4 ) = 0 . 1 6 4$
+
+26<sub>The</sub> first sequence: 0.2 × 0.2 × 0.8 × 0.8 × 0.8 × 0.8 = 0.0164.
+
+---
+
+3.5. DISTRIBUTIONS RELATED TO BERNOULLI TRIALS
+
+173
+
+A general formula for computing a negative binomial probability can be generated using similar logic as for binomial probability. The probability is comprised of two pieces: the probability of a single sequence of events, and then the number of possible sequences. The probability of observing r successes out of k attempts can be expressed as $( 1 - p ) ^ { k - r } p ^ { r }$ . Next, identify the number of possible sequences. In the above example, 10 sequences were identified by fixing the last observation as a success and looking for ways to arrange the other observations. In other words, the goal is to arrange $r - 1$ successes in $k - 1$ trials. This can be expressed as:
+
+$$
+\binom {k - 1} {r - 1} = \frac {(k - 1) !}{(r - 1) ! ((k - 1) - (r - 1)) !} = \frac {(k - 1) !}{(r - 1) ! (k - r) !}.
+$$
+
+## NEGATIVE BINOMIAL DISTRIBUTION
+
+The negative binomial distribution describes the probability of observing the $r ^ { t h }$ success on the $k ^ { t h }$ trial, for independent trials:
+
+$$
+P (X = k) = \binom {k - 1} {r - 1} p ^ {r} (1 - p) ^ {k - r}, \tag {3.42}
+$$
+
+where $p$ is the probability an individual trial is a success.
+
+The mean and variance are given by
+
+$$
+\mu = \frac {r}{p} \quad \sigma^ {2} = \frac {r (1 - p)}{p ^ {2}}
+$$
+
+A negative binomial random variable X can be expressed as $X \sim \mathrm { N B } ( r , p )$
+
+NB(r,p)
+Neg. Bin. dist.
+with k
+successes
+& p prob. of
+success
+
+## IS IT NEGATIVE BINOMIAL? FOUR CONDITIONS TO CHECK.
+
+(1) The trials are independent.
+(2) Each trial outcome can be classified as a success or failure.
+(3) The probability of a success $( p )$ is the same for each trial.
+(4) The last trial must be a success.
+
+## EXAMPLE 3.43
+
+Calculate the probability of a fourth successful extraction on the fifth attempt.
+
+The probability of a single success is $p = 0 . 8 ,$ , the number of successes is $r = 4 ,$ and the number of necessary attempts under this scenario is $k = 5$
+
+$$
+\binom {k - 1} {r - 1} p ^ {r} (1 - p) ^ {k - r} = \frac {4 !}{3 ! 1 !} (0. 8) ^ {4} (0. 2) = 4 \times 0. 0 8 1 9 2 = 0. 3 2 8.
+$$
+
+E
+
+---
+
+174
+
+CHAPTER 3. DISTRIBUTIONS OF RANDOM VARIABLES
+
+![](../../raw/pages_0161-0176/images/page_173_image_2.jpg)
+
+## GUIDED PRACTICE 3.44
+
+Assume that each extraction attempt is independent. What is the probability that the fourth success occurs within 5 attempts?<sup>27</sup>
+
+## BINOMIAL VERSUS NEGATIVE BINOMIAL
+
+The binomial distribution is used when considering the number of successes for a fixed number of trials. For negative binomial problems, there is a fixed number of successes and the goal is to identify the number of trials necessary for a certain number of successes (note that the last observation must be a success).
+
+![](../../raw/pages_0161-0176/images/page_173_image_7.jpg)
+
+## GUIDED PRACTICE 3.45
+
+On 70% of days, a hospital admits at least one heart attack patient. On 30% of the days, no heart attack patients are admitted. Identify each case below as a binomial or negative binomial case, and compute the probability. (a) What is the probability the hospital will admit a heart attack patient on exactly three days this week? (b) What is the probability the second day with a heart attack patient will be the fourth day of the week? (c) What is the probability the fifth day of next month will be the first day with a heart attack patient?<sup>28</sup>
+
+In R, the negative binomial distribution is defined as the number of failures that occur before a target number of successes is reached; i.e., k − r. In this text, the distribution is defined in terms of the total number of trials required to observe r successes, where the last trial is necessarily a success.
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">27<sub>If</sub> the fourth success (r = 4) is within five attempts, it either took four or five tries (k = 4 or k = 5):</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">P (k = 4 OR k = 5) = P (k = 4) + P (k = 5)</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">= 4 − <sup>1</sup>!0.8<sup>4</sup> + 5 − <sup>1</sup>!(0.8)<sup>4</sup>(1 − 0.8) = 1 × 0.41 + 4 × 0.082 = 0.41 + 0.33 = 0.74. 4 − 1 4 − 1</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">28<sub>In</sub> each part, p = 0.7. (a) The number of days is fixed, so this is binomial. The parameters are k = 3 and n = 7: 0.097. (b) The last "success" (admitting a patient) is fixed to the last day, so apply the negative binomial distribution. The parameters are r = 2, k = 4: 0.132. (c) This problem is negative binomial with r = 1 and k = 5: 0.006. Note that the negative binomial case when r = 1 is the same as using the geometric distribution.</span></small>
+
+---
+
+3.5. DISTRIBUTIONS RELATED TO BERNOULLI TRIALS
+
+175
+
+## 3.5.3 Hypergeometric distribution
+
+Suppose that a large number of deer live in a forest. Researchers are interested in using the capture-recapture method to estimate total population size. A number of deer are captured in an initial sample and marked, then released; at a later time, another sample of deer are captured, and the number of marked and unmarked deer are recorded.<sup>29</sup> An estimate of the total population can be calculated based on the assumption that the proportion of marked deer in the second sample should equal the proportion of marked deer in the entire population. For example, if 50 deer were initially captured and marked, and then 5 out of 40 deer (12.5%) in a second sample are found to be marked, then the population estimate is 400 deer, since 50 out of 400 is 12.5%.
+
+The capture-recapture method sets up an interesting scenario that requires a new probability distribution. Let N represent the total number of deer in the forest, m the number of marked deer captured in the original sample, and n the number of deer in the second sample. What are the probabilities of obtaining $0 , 1 , . . . , m$ marked deer in the second sample, if N and m are known?
+
+It is helpful to think in terms of a series of Bernoulli trials, where each capture in the second sample represents a trial; consider the trial a success if a marked deer is captured, and a failure if an unmarked deer is captured. If the deer were sampled with replacement, such that one deer was sampled, checked if it were marked versus unmarked, then released before another deer was sampled, then the probability of obtaining some number of marked deer in the second sample would be binomially distributed with probability of success m/N (out of n trials). The trials are independent, and the probability of success remains constant across trials.
+
+However, in capture-recapture, the goal is to collect a representative sample such that the proportion of marked deer in the sample can be used to estimate the total population—the sampling is done without replacement. Once a trial occurs and a deer is sampled, it is not returned to the population before the next trial. The probability of success is not constant from trial to trial; i.e., these trials are dependent. For example, if a marked deer has just been sampled, then the probability of sampling a marked deer in the next trial decreases, since there is one fewer marked deer available.
+
+Suppose that out of 9 deer, 4 are marked. What is the probability of observing 1 marked deer in a sample of size $^ { 3 , }$ if the deer are sampled without replacement? First, consider the total number of ways to draw 3 deer from the population; As shown in Figure 3.23, samples may consist of 3, 2, 1, or 0 marked deer. There are $\textstyle { \binom { 4 } { 3 } }$ ways to obtain a sample consisting of 3 marked deer out of the 4 total marked deer. By independence, there are $( _ { 2 } ^ { 4 } ) ( _ { 1 } ^ { 5 } )$ ways to obtain a sample consisting of exactly 2 marked deer and 1 unmarked deer. In total, there are 84 possible combinations; this quantity is equivalent to $\textstyle { \binom { 9 } { 3 } }$ . Only ${ \binom { 4 } { 1 } } { \binom { 5 } { 2 } } = 4 0$ of those combinations represent the desired event of exactly 1 marked deer. Thus, the probability of observing 1 marked deer in a sample of size 3, under sampling without replacement, equals $4 0 / 8 4 = 0 . 4 7 6$
+
+![](../../raw/pages_0161-0176/images/page_174_image_8.jpg)
+
+<details>
+<summary>text_image</summary>
+
+m = 4, N - m = 5, n = 3
+    ○ ○ ○ ○ ○
+        ● ● ●
+            ● ● ○
+                ● ○ ○
+                    ○ ○ ○
+        \n    (4/3) + (4/2)(5/1) + (4/1)(5/2) + (5/3) = 84 = (9/3)
+</details>
+
+Figure 3.23: Possible samples of marked and unmarked deer in a sample $n = 3 ,$ where $m = 4$ and $N - m = 5$ . Striped circles represent marked deer, and empty circles represent unmarked deer.
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">29<sub>It</sub> is assumed that enough time has passed so that the marked deer redistribute themselves in the population, and that marked and unmarked deer have equal probability of being captured in the second sample.</span></small>
+
+---
+
+176
+
+CHAPTER 3. DISTRIBUTIONS OF RANDOM VARIABLES
+
+![](../../raw/pages_0161-0176/images/page_175_image_2.jpg)
+
+## GUIDED PRACTICE 3.46
+
+Suppose that out of 9 deer, 4 are marked. What is the probability of observing 1 marked deer in a sample of size 3, if the deer are sampled with replacement?<sup>30</sup>
+
+## HYPERGEOMETRIC DISTRIBUTION
+
+The hypergeometric distribution describes the probability of observing k successes in a sample of size n, from a population of size N, where there are m successes, and individuals are sampled without replacement:
+
+$$
+P (X = k) = \frac {\binom {m} {k} \binom {N - m} {n - k}}{\binom {N} {n}}.
+$$
+
+Let $p = m / N$ , the probability of success. The mean and variance are given by
+
+$$
+\mu = n p \quad \sigma^ {2} = n p (1 - p) \frac {N - n}{N - 1}
+$$
+
+A hypergeometric random variable X can be written as $X \sim \operatorname { H G e o m } ( m , N - m , n )$
+
+## IS IT HYPERGEOMETRIC? THREE CONDITIONS TO CHECK.
+
+(1) The trials are dependent.
+(2) Each trial outcome can be classified as a success or failure.
+(3) The probability of a success is different for each trial.
+
+![](../../raw/pages_0161-0176/images/page_175_image_16.jpg)
+
+## GUIDED PRACTICE 3.47
+
+A small clinic would like to draw a random sample of 10 individuals from their patient list of 120, of which 30 patients are smokers. (a) What is the probability of 6 individuals in the sample being smokers? (b) What is the probability that at least 2 individuals in the sample smoke?<sup>31</sup>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">30<sub>Let</sub> X represent the number of marked deer in the sample of size 3. If the deer are sampled with replacement, X ∼ Bin(3, 4/9), and P (X = 1) =  3(4/9)1(5/9)2 = 0.412. (1八</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">30 90 31(a) Let X represent the number of smokers in the sample. P (X = 6) = 64 12010  = 0.013. (b) P (X ≥ 2) = 1 − P (X ≤ 1) =</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">3090 3090 1 − P (X = 0) − P (X = 1) = 1 − 0 1 9 = 0.768. 120 120   10    10 </span></small>
+
+---
+
+3.6. DISTRIBUTIONS FOR PAIRS OF RANDOM VARIABLES
+
+177
+
+## 3.6 Distributions for pairs of random variables
+
+Example 3.8 calculated the variability in health care costs for an employee and her partner relying on the assumption that the number of health episodes between the two are not related. It could be reasonable to assume that the health status of one person gives no information about the other’s health, given that the two are not physically related and were not previously living together. However, associations between random variables can be subtle. For example, couples are often attracted to each other because of common interests or lifestyles, which suggests that health status may actually be related.
+
+The relationship between a pair of discrete random variables is a feature of the **joint distribution** of the pair. In this example the joint distribution of annual costs is a table of all possible combinations of costs for the employee and her partner, using the probabilities and costs from the last 10 years (these costs were previously calculated in Example 3.6 and Guided Practice 3.7). Entries in the table are probabilities of pairs of annual costs. For example, the entry 0.25 in the second row and second column of Figure 3.24 indicates that in approximately 25% of the last 10 years, the employee paid \$1,008 in costs while her partner paid \$988.
+
+<table><tr><td rowspan="2">Employee costs, X</td><td colspan="2">Partner costs, Y</td></tr><tr><td>$968</td><td>$988</td></tr><tr><td>$968</td><td>0.18</td><td>0.12</td></tr><tr><td>$1,008</td><td>0.15</td><td>0.25</td></tr><tr><td>$1,028</td><td>0.04</td><td>0.16</td></tr><tr><td>$1,108</td><td>0.03</td><td>0.07</td></tr></table>
+
+Figure 3.24: Joint distribution of health care costs.
+
+More generally, the definition of a joint distribution for a pair of random variables X and Y uses the notion of joint probabilities discussed in Section 2.2.1.
+
+## JOINT DISTRIBUTION
+
+The **joint distribution** $p _ { X , Y } ( x , y )$ for a pair of random variables $( X , Y )$ is the collection of prob abilities
+
+$$
+p (x _ {i}, y _ {j}) = P (X = x _ {i} \text { and } Y = y _ {j})
+$$
+
+for all pairs of values $( x _ { i } , y _ { j } )$ that the random variables X and Y take on.
+
+---
+
+178
+
+CHAPTER 3. DISTRIBUTIONS OF RANDOM VARIABLES
+
+Joint distributions are often displayed in tabular form as in Figure 3.24. If X and Y have $k _ { 1 }$ and $k _ { 2 }$ possible values respectively, there will be $( k _ { 1 } ) ( k _ { 2 } )$ possible $( x , y )$ pairs. This is unlike pairs of values $( x , y )$ observed in a dataset, where each observed value of x is usually paired with only one value of y. A joint distribution is often best displayed as a table of probabilities, with $( k _ { 1 } ) ( k _ { 2 } )$ entries. Figure 3.25 shows the general form of the table for the joint distribution of two discrete distributions.
+
+<table><tr><td colspan="5">Values of Y</td></tr><tr><td>Values of X</td><td> $y_1$ </td><td> $y_2$ </td><td>...</td><td> $y_{k_2}$ </td></tr><tr><td> $x_1$ </td><td> $p(x_1,y_1)$ </td><td> $p(x_1,y_2)$ </td><td>...</td><td> $p(x_1,y_{k_2})$ </td></tr><tr><td> $x_2$ </td><td> $p(x_2,y_1)$ </td><td> $p(x_2,y_2)$ </td><td>...</td><td> $p(x_2,y_{k_2})$ </td></tr><tr><td> $\vdots$ </td><td>...</td><td>...</td><td>...</td><td>...</td></tr><tr><td> $x_{k_1}$ </td><td> $p(x_{k_1},y_1)$ </td><td> $p(x_{k_1},y_2)$ </td><td>...</td><td> $p(x_{k_1},y_{k_2})$ </td></tr></table>
+
+Figure 3.25: Table for a joint distribution. Entries are probabilities for pairs $( x _ { i } , y _ { j } )$ These probabilities can be written as $p ( x _ { i } , y _ { j } )$ or more specifically, $p _ { X , Y } ( x _ { i } , y _ { j } )$ .
+
+When two variables X and Y have a joint distribution, the **marginal distribution** of X is the collection of probabilities for X when Y is ignored.<sup>32</sup> If X represents employee costs and Y represents partner costs, the event $( X = \S 9 6 8 )$ consists of the two disjoint events $\left( X = \$968, Y = \right.$ \$968) and $\left( X = \S 9 6 8 , Y = \S 9 8 8 \right)$ , so $P(X = 5968) = 0.18 + 0.12 = 0.30$ , the sum of the first row of the table. The row sums are the values of the marginal distribution of $X ,$ while the column sums are the values of the marginal distributions of Y . The marginal distributions of X and $Y$ are shown in Figure 3.26, along with the joint distribution of X and Y . The term marginal distribution is apt in this setting—the marginal probabilities appear in the table margins.
+
+<table><tr><td></td><td colspan="3">Partner Costs, Y</td></tr><tr><td>Employee costs, X</td><td>$968</td><td>$988</td><td>Marg. Dist., X</td></tr><tr><td>$968</td><td>0.18</td><td>0.12</td><td>0.30</td></tr><tr><td>$1,008</td><td>0.15</td><td>0.25</td><td>0.40</td></tr><tr><td>$1,028</td><td>0.04</td><td>0.16</td><td>0.20</td></tr><tr><td>$1,108</td><td>0.03</td><td>0.07</td><td>0.10</td></tr><tr><td>Marg. Dist., Y</td><td>0.40</td><td>0.60</td><td>1.00</td></tr></table>
+
+Figure 3.26: Joint and marginal distributions of health care costs
+
+For a pair of random variables X and $Y ,$ the **conditional distribution** of Y given a value x of the variable X is the probability distribution of Y when its values are restricted to the value x for X. Just as marginal and joint probabilities are used to calculate conditional probabilities, joint and marginal distributions can be used to obtain conditional distributions. If information is observed about the value of one of the correlated random variables, such as $X ,$ then this information can be used to obtain an updated distribution for $Y ;$ unlike the marginal distribution of $Y ,$ the conditional distribution of Y given X accounts for information from $X .$
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">32<sub>The</sub> marginal distribution of X can be written as p<sub>X</sub> (x), and a specific value in the marginal distribution written as p<sub>X</sub> (x<sub>i</sub> ).</span></small>
+
+---
+
+3.6. DISTRIBUTIONS FOR PAIRS OF RANDOM VARIABLES
+
+179
+
+## CONDITIONAL DISTRIBUTION
+
+The **conditional distribution** $p _ { Y | X } ( y | x )$ for a pair of random variables (X, Y ) is the collection of probabilities
+
+$$
+P (Y = y _ {j} | X = x _ {i}) = \frac {P (Y = y _ {j} \text {and} X = x _ {i})}{P (X = x _ {j})}
+$$
+
+for all pairs of values $( x _ { i } , y _ { j } )$ that the random variables X and Y take on.
+
+## EXAMPLE 3.48
+
+If it is known that the employee’s annual health care cost is \$968, what is the conditional distribution of the partner’s annual health care cost?
+
+Note that there is a different conditional distribution of Y for every possible value of X; this problem specifically asks for the conditional distribution of Y given that $X = \S 9 6 8$
+
+$$
+p _ {Y \mid X} (\$ 9 6 8 \mid \$ 9 6 8) = P (Y = \$ 9 6 8 \mid X = \$ 9 6 8) = \frac {P (Y = \$ 9 6 8 \text {and} X = \$ 9 6 8)}{P (X = \$ 9 6 8)} = \frac {0 . 1 8}{0 . 3 0} = 0. 6 0
+$$
+
+$$
+p _ {Y \mid X} (\$ 9 8 8 \mid \$ 9 6 8) = P (Y = \$ 9 8 8 \mid X = \$ 9 6 8) = \frac {P (Y = \$ 9 8 8 \text {and} X = \$ 9 6 8)}{P (X = \$ 9 6 8)} = \frac {0 . 1 2}{0 . 3 0} = 0. 4 0
+$$
+
+With the knowledge that the employee’s annual health care cost is \$968, there is a probability of 0.60 that the partner’s cost is \$968 and 0.40 that the partner’s cost is \$988.
+
+## GUIDED PRACTICE 3.49
+
+Consider two random variables, X and Y , with the joint distribution shown in Figure 3.27.
+
+(a) Compute the marginal distributions of X and Y .
+(b) Identify the joint probability $p _ { X , Y } ( 1 , 2 ) .$
+(c) What is the value of $p _ { X , Y } ( 2 , 1 ) ?$
+(d) Compute the conditional distribution of X given that $Y = 2 . ^ { 3 3 }$
+
+|  | Y = 1 | Y = 2 |
+| --- | --- | --- |
+| X = 1 | 0.20 | 0.40 |
+| X = 4 | 0.30 | 0.10 |
+
+Figure 3.27: Joint distribution of X and Y
+
+The variance calculation in Example 3.8 relied on the assumption that the patterns of health care expenses for the two partners were unrelated. In Example 3.48, 0.40 is the conditional probability that the partner’s health care costs will be \$988, given that the employee’s cost is \$968. The marginal probability that the partner’s health care cost is \$988 is 0.60, which is different from 0.40. The patterns of health care costs are related in that knowing the value of the employee’s costs changes the probabilities associated with partner’s costs. The marginal and conditional distributions of the partner’s costs are not the same.
+
+The notion of independence of two events discussed in Chapter 2 can be applied to the setting of random variables. Recall that two events A and B are independent if the conditional proba-
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">33(a) The marginal distribution of X: p<sub>X</sub> (1) = 0.60, p<sub>X</sub> (4) = 0.40. The marginal distribution of Y : p<sub>Y</sub> (1) = 0.50, p<sub>Y</sub> (2) = 0.50 (b) p<sub>X</sub>,Y (1, 2) = P (X = 1, Y = 2) = 0.40 (c) Since X cannot take on value 2, p<sub>X</sub>,Y (2, 1) = 0. (d) The conditional distribution of X given that Y = 2: p<sub>X</sub>|Y (1|2) = pX,Y (1,2) pY (2) 0.400.50 = 0.80, p<sub>X</sub>|Y (4|2) = pX,Y (4,2) pY (2) 0.100.50 = 0.20.</span></small>
+
+E
+
+G
+
+---
+
+180
+
+CHAPTER 3. DISTRIBUTIONS OF RANDOM VARIABLES
+
+bility $P ( A | B )$ equals the marginal probability $P ( A )$ or equivalently, if the product of the marginal probabilities P (A) and $P ( B )$ equals the joint probability $P ( A$ and B).
+
+A pair (X,Y ) of random variables are called **independent random variables** if the conditional distribution for Y , given any value of X, is the same as the marginal distribution of Y . Additionally, if all joint probabilities $P ( X = x _ { i } , Y = y _ { j } )$ that comprise the joint distribution of X and Y can be computed from the product of the marginal probabilities, $P ( X = x _ { i } ) P ( Y = y _ { j } )$ , X and Y are independent.
+
+## INDEPENDENT RANDOM VARIABLES
+
+Two random variables X and Y are independent if the probabilities
+
+$$
+P (Y = y _ {j} | X = x _ {i}) = P (Y = y _ {j})
+$$
+
+for all pairs of values $( x _ { i } , y _ { j } )$ .
+
+Equivalently, X and Y are independent if the probabilities
+
+$$
+P (Y = y _ {j} \text { and } X = x _ {i}) = P (Y = y _ {j}) P (X = x _ {i})
+$$
+
+for all pairs of values $( x _ { i } , y _ { j } )$ ).
+
+## EXAMPLE 3.50
+
+Demonstrate that the employee’s health care costs and the partner’s health care costs are not independent random variables.
+
+As shown in Example 3.48, the conditional distribution of the partner’s annual health care cost given that the employee’s annual cost is \$968 is $P(Y = \$968|X = \$968) = 0.60,\; P(Y = \$988|X =$ $\S 9 6 8 ) = 0 . 4 0$ . However, the marginal distribution of the partner’s annual health care cost is $P ( Y =$ $\S 9 6 8 ) = 0 . 4 0 , P ( Y = \S 9 6 8 ) = 0 . 6 0$ . Thus, X and Y are not independent.
+
+This can also be demonstrated from examining the joint distribution, as shown in Figure 3.26. The probability that the employee’s cost and partner’s cost are both \$968 is 0.18. The marginal probabilities $P ( X = 5 9 6 8 )$ and $P ( Y = \S 9 6 8 )$ , respectively, are 0.30 and 0.40. Since $(0.40)(0.30) \neq$ 0.18, X and Y are dependent random variables.
+
+Note that demonstrating $P ( Y = y _ { j } | X = x _ { i } ) = P ( Y = y _ { j } )$ or $P ( Y = y _ { j }$ and $X = x _ { i } ) = P ( Y = y _ { j } ) P ( X = x _ { i } )$ does not hold for any one $( x _ { i } , y _ { j } )$ pair is sufficient to prove that X and Y are not independent, since independence requires these conditions to hold over all pairs of values $( x _ { i } , y _ { j } )$
+
+E
+
+G
+
+## GUIDED PRACTICE 3.51
+
+Based on Figure 3.27, check whether X and Y are independent.<sup>34</sup>
+
+Two random variables that are not independent are called **correlated random variables**. The correlation between two random variables is a measure of the strength of the relationship between them, just as it was for pairs of data points explored in Section 1.6.1. There are many examples of correlated random variables, such as height and weight in a population of individuals, or the gestational age and birth weight of newborns.
+
+When two random variables are positively correlated, they tend to increase or decrease together. If one of the variables increases while the other decreases (or vice versa) they are negatively
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">34<sub>X</sub> and Y are not independent. One way to demonstrate this is to compare p<sub>X</sub>(1) with p<sub>X</sub>|Y (1|2). If X were independent of Y , then conditioning on Y = 2 should not provide any information about X, and p<sub>X</sub>(1) should equal p<sub>X</sub>|Y (1|2). However, p<sub>X</sub>(1) = 0.60 and p<sub>X</sub>|Y (1|2) = 0.80. Thus, X and Y are not independent.</span></small>
+
+---
+
+3.6. DISTRIBUTIONS FOR PAIRS OF RANDOM VARIABLES
+
+181
+
+correlated. Correlation is easy to identify in a scatterplot, but is more difficult to identify in a table of a joint distribution. Fortunately, there is a formula to calculate correlation for a joint distribution specified in a table.
+
+Correlation between random variables is similar to correlation between pairs of observations in a dataset, with some important differences. Calculating a correlation r in a dataset was introduced in Section 1.6.1 and uses the formula:
+
+$$
+r = \frac {1}{n - 1} \sum_ {i = 1} ^ {n} \left(\frac {x _ {i} - \overline {{x}}}{s _ {x}}\right) \left(\frac {y _ {i} - \overline {{y}}}{s _ {y}}\right). \tag {3.52}
+$$
+
+The correlation coefficient r is an average of products, with each term in the product measuring the distance between x and its mean x and the distance between $y$ and its mean $\overline { { y } } ,$ after the distances have been scaled by respective standard deviations.
+
+The compact formula for the correlation between two random variables X and Y uses the same idea:
+
+$$
+\rho_ {X, Y} = E \left(\frac {X - \mu_ {x}}{\sigma_ {X}}\right) \left(\frac {Y - \mu_ {Y}}{\sigma_ {Y}}\right), \tag {3.53}
+$$
+
+where $\rho _ { X , Y }$ is the correlation between the two variables, and $\mu _ { X } , \mu _ { Y } , \sigma _ { X } , \sigma _ { Y }$ are the respective means and standard deviations for X and Y . Just as with the mean of a random variable, the expectation in the formula for correlation is a weighted sum of products, with each term weighted by the probability of values for the pair $( X , Y )$ . Equation 3.53 is useful for understanding the analogy between correlation of random variables and correlation of observations in a dataset, but it cannot be used to calculate $\rho _ { X , Y }$ without the probability weights. The weights come from the **joint distribution** of the pair of variables (X, Y ).
+
+Equation 3.54 is an expansion of Equation 3.53. The double summation adds up terms over all combinations of the indices i and j.
+
+$$
+\rho_ {X, Y} = \sum_ {i} \sum_ {j} p (i, j) \frac {(x _ {i} - \mu_ {X})}{\mathrm{sd} (X)} \frac {(y _ {j} - \mu_ {Y})}{\mathrm{sd} (Y)}. \tag {3.54}
+$$
+
+## EXAMPLE 3.55
+
+Compute the correlation between annual health care costs for the employee and her partner.
+
+As calculated previously, $E(X)=\$1010,\;\mathrm{Var}(X)=1556,\;E(Y)=\$980,$ , and $\mathrm{Var}(Y) = 96$ . Thus, $S D ( X ) = \S 3 9 . 4 5$ and $S D ( Y ) = \S 9 . 8 0$
+
+$$
+\begin{array}{l} \rho_ {X, Y} = p (x _ {1}, y _ {1}) \frac {(x _ {1} - \mu_ {X})}{\mathrm{sd} (X)} \frac {(y _ {1} - \mu_ {Y})}{\mathrm{sd} (Y)} + p (x _ {1}, y _ {2}) \frac {(x _ {1} - \mu_ {X})}{\mathrm{sd} (X)} \frac {(y _ {2} - \mu_ {Y})}{\mathrm{sd} (Y)} \\ + \dots + p (x _ {4}, y _ {1}) \frac {(x _ {4} - \mu_ {X})}{\mathrm{sd} (X)} \frac {(y _ {1} - \mu_ {Y})}{\mathrm{sd} (Y)} + p (x _ {4}, y _ {2}) \frac {(x _ {4} - \mu_ {X})}{\mathrm{sd} (X)} \frac {(y _ {2} - \mu_ {Y})}{\mathrm{sd} (Y)} \\ = (0. 1 8) \frac {(9 6 8 - 1 0 1 0)}{3 9 . 4 5} \frac {(9 6 8 - 9 8 0)}{9 . 8} + (0. 1 2) \frac {(9 6 8 - 1 0 1 0)}{3 9 . 4 5} \frac {(9 8 8 - 9 8 0)}{9 . 8} \\ + \dots + (0. 0 3) \frac {(1 1 0 8 - 1 0 1 0)}{3 9 . 4 5} \frac {(9 6 8 - 9 8 0)}{9 . 8} + (0. 0 7) \frac {(1 1 0 8 - 1 0 1 0)}{3 9 . 4 5} \frac {(9 8 8 - 9 8 0)}{9 . 8} \\ = 0. 2 2. \\ \end{array}
+$$
+
+The correlation between annual health care costs for these two individuals is positive. It is reasonable to expect that there might be a positive correlation in health care costs for two individuals in a relationship; for example, if one person contracts the flu, then it is likely the other person will also contract the flu, and both may need to see a doctor.
+
+E
+
+---
+
+182
+
+CHAPTER 3. DISTRIBUTIONS OF RANDOM VARIABLES
+
+![](../../raw/pages_0177-0192/images/page_181_image_2.jpg)
+
+## GUIDED PRACTICE 3.56
+
+Based on Figure 3.27, compute the correlation between X and Y . For your convenience, the following values are provided: $E(X)=2.2,\mathrm{Var}(X)=2.16,E(Y)=1.5,\mathrm{Var}(Y)=0.25.^{35}$
+
+When two random variables X and Y are correlated:
+
+$$
+\text {Variance} (X + Y) = \text {Variance} (X) + \text {Variance} (Y) + 2 \sigma_ {X} \sigma_ {Y} \text {Correlation} (X, Y) \tag {3.57}
+$$
+
+$$
+\text {Variance} (X - Y) = \text {Variance} (X) + \text {Variance} (Y) - 2 \sigma_ {X} \sigma_ {Y} \text {Correlation} (X, Y). \tag {3.58}
+$$
+
+When random variables are positively correlated the variance of the sum or the difference of two variables will be larger than the sum of the two variances. When they are negatively correlated the variance of the sum or difference will be smaller than the sum of the two variances.
+
+The standard deviation for the sum or difference will always be the square root of the variance.
+
+## EXAMPLE 3.59
+
+Calculate the standard deviation of the sum of the health care costs for the couple.
+
+This calculation uses Equation 3.57 to calculate the variance of the sum. The standard deviation will be the square root of the variance.
+
+![](../../raw/pages_0177-0192/images/page_181_image_13.jpg)
+
+$$
+\begin{array}{l} \mathrm{Var} (X + Y) = \mathrm{Var} (X) + \mathrm{Var} (Y) + 2 \sigma_ {X} \sigma_ {Y} \rho_ {X, Y} \\ = (1 5 5 6 + 9 6) + (2) (3 9. 4 5) (9. 8 0) (0. 2 2) \\ = 1 8 2 2. 1 0. \\ \end{array}
+$$
+
+The standard deviation is ${ \sqrt { 1 8 2 2 . 1 0 } } = 5 4 2 . 6 9 .$ . Because the health care costs are correlated, the standard deviation of the total cost is larger than the value calculated in Example 3.8 under the assumption that the annual costs were independent.
+
+![](../../raw/pages_0177-0192/images/page_181_image_16.jpg)
+
+## GUIDED PRACTICE 3.60
+
+Compute the standard deviation of X − Y for the pair of random variables shown in Figure 3.27.<sup>36</sup>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">35The correlation between X and Y is ρX,Y = (0.20) (1−2.2)(1−1.5)+ · · · + (0.10) (4−2.2)(2−1.5) = −0.0208. √2.16 √0.25 √2.16 √0.25 36<sub>Var</sub>(X − Y ) = Var(X) + Var(Y ) − 2σ<sub>X</sub>σ<sub>Y</sub> ρ<sub>X</sub>,Y = 2.16 + 0.25 − 2(√2.16)(√0.25)(−0.0208) = 2.44. Thus, SD(X − Y ) = √2.44 = 1.56.</span></small>
+
+---
+
+3.6. DISTRIBUTIONS FOR PAIRS OF RANDOM VARIABLES
+
+183
+
+## EXAMPLE 3.61
+
+The Association of American Medical Colleges (AAMC) introduced a new version of the Medical College Admission Test (MCAT) in the spring of 2015. Data from the scores were recently released by $\dot{ AAMC. }^{37}$ The test consists of 4 components: chemical and physical foundations of biological systems; critical analysis and reasoning skills; biological and biochemical foundations of living systems; psychological, social and biological foundations of behavior. The overall score is the sum of the individual component scores. The grading for each of the four components is scaled so that the mean score is 125. The means and standard deviations for the four components and the total scores for the population taking the exam in May 2015 exam are shown in Figure 3.28.
+
+Show that the standard deviation in the table for the total score does not agree with that obtained under the assumption of independence.
+
+The variance of each component of the score is the square of each standard deviation. Under the assumption of independence, the variance of the total score would be
+
+$$
+\begin{array}{l} \text {Var(Total Score)} = 3. 0 ^ {2} + 3. 0 ^ {2} + 3. 0 ^ {2} + 3. 1 ^ {2} \\ = 3 6. 6 1, \\ \end{array}
+$$
+
+so the standard deviation is 6.05, which is less than 10.6.
+
+Since the observed standard deviation is larger than that calculated under independence, this suggests the component scores are positively correlated.
+
+It would not be reasonable to expect that the component scores are independent. Think about a student taking the MCAT exam: someone who scores well on one component of the exam is likely to score well on the other parts.
+
+| Component | Mean | Standard Deviation |
+| --- | --- | --- |
+| Chem. Phys. Found. | 125 | 3.0 |
+| Crit. Analysis | 125 | 3.0 |
+| Living Systems | 125 | 3.0 |
+| Found. Behavior | 125 | 3.1 |
+| Total Score | 500 | 10.6 |
+
+Figure 3.28: Means and Standard Deviations for MCAT Scores
+
+E
+
+37<a href="https://www.aamc.org/students/download/434504/data/percentilenewmcat.pdf"><sub>https</sub>://www.aamc.org/students/download/434504/data/percentilenewmcat.pdf</a>
+
+---
+
+184
+
+CHAPTER 3. DISTRIBUTIONS OF RANDOM VARIABLES
+
+## 3.7 Notes
+
+Thinking in terms of random variables and distributions of probabilities makes it easier to describe all possible outcomes of an experiment or process of interest, versus only considering probabilities on the scale of individual outcomes or sets of outcomes. Several of the fundamental concepts of probability can naturally be extended to probability distributions. For example, the process of obtaining a conditional distribution is analogous to the one for calculating a conditional probability.
+
+Many processes can be modeled using a specific named distribution. The statistical techniques discussed in later chapters, such as hypothesis testing and regression, are often based on particular distributional assumptions. In particular, many methods rely on the assumption that data are normally distributed.
+
+The discussion of random variables and their distribution provided in this chapter only represents an introduction to the topic. In this text, properties of random variables such as expected value or correlation are presented in the context of discrete random variables; these concepts are also applicable to continuous random variables. A course in probability theory will cover additional named distributions as well as more advanced methods for working with distributions.
+
+Lab 1 introduces the general notion of a random variable and its distribution using a simulation, then discusses the binomial distribution. Lab 2 discusses the normal distribution and working with normal probabilities, as well as the Poisson distribution. Lab 3 covers the geometric, negative binomial, and hypergeometric distributions. All three labs include practice problems that illustrate the use of R functions for probability distributions and introduce additional features of the R programming language. Lab 4 discusses distributions for pairs of random variables and some R functions useful for matrix calculations.
+
+---
+
+3.8. EXERCISES
+
+185
+
+## 3.8 Exercises
+
+## 3.8.1 Random variables
+
+**3.1 College smokers.** At a university, 13% of students smoke.
+
+(a) Calculate the expected number of smokers in a random sample of 100 students from this university.
+(b) The university gym opens at 9 am on Saturday mornings. One Saturday morning at 8:55 am there are 27 students outside the gym waiting for it to open. Should you use the same approach from part (a) to calculate the expected number of smokers among these 27 students?
+
+**3.2 Ace of clubs wins.** Consider the following card game with a well-shuffled deck of cards. If you draw a red card, you win nothing. If you get a spade, you win \$5. For any club, you win \$10 plus an extra \$20 for the ace of clubs.
+
+(a) Create a probability model for the amount you win at this game. Also, find the expected winnings for a single game and the standard deviation of the winnings.
+(b) What is the maximum amount you would be willing to pay to play this game? Explain your reasoning.
+
+**3.3 Hearts win.** In a new card game, you start with a well-shuffled full deck and draw 3 cards without replacement. If you draw 3 hearts, you win \$50. If you draw 3 black cards, you win \$25. For any other draws, you win nothing.
+
+(a) Create a probability model for the amount you win at this game, and find the expected winnings. Also compute the standard deviation of this distribution.
+(b) If the game costs \$5 to play, what would be the expected value and standard deviation of the net profit (or loss)?
+(c) If the game costs \$5 to play, should you play this game? Explain.
+
+**3.4 Baggage fees.** An airline charges the following baggage fees: \$25 for the first bag and \$35 for the second. Suppose 54% of passengers have no checked luggage, 34% have one piece of checked luggage and 12% have two pieces. We suppose a negligible portion of people check more than two bags.
+
+(a) Build a probability model, compute the average revenue per passenger, and compute the corresponding standard deviation.
+(b) About how much revenue should the airline expect for a flight of 120 passengers? With what standard deviation? Note any assumptions you make and if you think they are justified.
+
+**3.5 Gull clutch size.** Large black-tailed gulls usually lay one to three eggs, and rarely have a fourth egg clutch. It is thought that clutch sizes are effectively limited by how effectively parents can incubate their eggs. Suppose that on average, gulls have a 25% of laying 1 egg, 40% of laying 2 eggs, 30% chance of laying 3 eggs, and 5% chance of laying 4 eggs.
+
+(a) Calculate the expected number of eggs laid by a random sample of 100 gulls.
+(b) Calculate the standard deviation of the number of eggs laid by a random sample of 100 gulls.
+
+---
+
+186
+
+CHAPTER 3. DISTRIBUTIONS OF RANDOM VARIABLES
+
+**3.6 Scooping ice cream.** Ice cream usually comes in 1.5 quart boxes (48 fluid ounces), and ice cream scoops hold about 2 ounces. However, there is some variability in the amount of ice cream in a box as well as the amount of ice cream scooped out. We represent the amount of ice cream in the box as X and the amount scooped out as Y . Suppose these random variables have the following means, standard deviations, and variances:
+
+|  | mean | SD | variance |
+| --- | --- | --- | --- |
+| X | 48 | 1 | 1 |
+| Y | 2 | 0.25 | 0.0625 |
+
+(a) An entire box of ice cream, plus 3 scoops from a second box is served at a party. How much ice cream do you expect to have been served at this party? What is the standard deviation of the amount of ice cream served?
+(b) How much ice cream would you expect to be left in the box after scooping out one scoop of ice cream? That is, find the expected value of X − Y . What is the standard deviation of the amount left in the box?
+(c) Using the context of this exercise, explain why we add variances when we subtract one random variable from another.
+
+## 3.8.2 Binomial distribution
+
+**3.7 Underage drinking, Part I.** Data collected by the Substance Abuse and Mental Health Services Adminis tration (SAMSHA) suggests that 69.7% of 18-20 year olds consumed alcoholic beverages in any given year.<sup>38</sup>
+
+(a) Suppose a random sample of ten 18-20 year olds is taken. Is the use of the binomial distribution appropriate for calculating the probability that exactly six consumed alcoholic beverages? Explain.
+(b) Calculate the probability that exactly 6 out of 10 randomly sampled 18- 20 year olds consumed an alcoholic drink.
+(c) What is the probability that exactly four out of ten 18-20 year olds have not consumed an alcoholic beverage?
+(d) What is the probability that at most 2 out of 5 randomly sampled 18-20 year olds have consumed alcoholic beverages?
+(e) What is the probability that at least 1 out of 5 randomly sampled 18-20 year olds have consumed alcoholic beverages?
+
+**3.8 Chickenpox, Part I.** The US CDC estimates that 90% of Americans have had chickenpox by the time they reach adulthood.
+
+(a) Suppose we take a random sample of 100 American adults. Is the use of the binomial distribution appropriate for calculating the probability that exactly 97 out of 100 randomly sampled American adults had chickenpox during childhood? Explain.
+(b) Calculate the probability that exactly 97 out of 100 randomly sampled American adults had chickenpox during childhood.
+(c) What is the probability that exactly 3 out of a new sample of 100 American adults have not had chickenpox in their childhood?
+(d) What is the probability that at least 1 out of 10 randomly sampled American adults have had chickenpox?
+(e) What is the probability that at most 3 out of 10 randomly sampled American adults have not had chickenpox?
+
+38<sub>SAMHSA</sub>, Office of Applied Studies, [National Survey on Drug Use and Health, 2007 and 2008](http://www.openintro.org/redirect.php?go=textbook-SAMHSA_2007_8&referrer=biostat1_pdf).
+
+---
+
+3.8. EXERCISES
+
+187
+
+**3.9 Underage drinking, Part II.** We learned in Exercise 3.7 that about 70% of 18-20 year olds consumed alcoholic beverages in any given year. We now consider a random sample of fifty 18-20 year olds.
+
+(a) How many people would you expect to have consumed alcoholic beverages? And with what standard deviation?
+(b) Would you be surprised if there were 45 or more people who have consumed alcoholic beverages?
+(c) What is the probability that 45 or more people in this sample have consumed alcoholic beverages? How does this probability relate to your answer to part (b)?
+
+**3.10 Chickenpox, Part II.** We learned in Exercise 3.8 that about 90% of American adults had chickenpox before adulthood. We now consider a random sample of 120 American adults.
+
+(a) How many people in this sample would you expect to have had chickenpox in their childhood? And with what standard deviation?
+(b) Would you be surprised if there were 105 people who have had chickenpox in their childhood?
+(c) What is the probability that 105 or fewer people in this sample have had chickenpox in their childhood? How does this probability relate to your answer to part (b)?
+
+**3.11 Donating blood.** When patients receive blood transfusions, it is critical that the blood type of the donor is compatible with the patients, or else an immune system response will be triggered. For example, a patient with Type O- blood can only receive Type O- blood, but a patient with Type O+ blood can receive either Type O+ or Type O-. Furthermore, if a blood donor and recipient are of the same ethnic background, the chance of an adverse reaction may be reduced. According to a 10-year donor database, 0.37 of white, non-Hispanic donors are O+ and 0.08 are O-.
+
+(a) Consider a random sample of 15 white, non-Hispanic donors. Calculate the expected value of individuals who could be a donor to a patient with Type O+ blood. With what standard deviation?
+(b) What is the probability that 3 or more of the people in this sample could donate blood to a patient with Type O- blood?
+
+**3.12 Sickle cell anemia.** Sickle cell anemia is a genetic blood disorder where red blood cells lose their flexibility and assume an abnormal, rigid, “sickle" shape, which results in a risk of various complications. If both parents are carriers of the disease, then a child has a 25% chance of having the disease, 50% chance of being a carrier, and 25% chance of neither having the disease nor being a carrier. If two parents who are carriers of the disease have 3 children, what is the probability that
+
+(a) two will have the disease?
+(b) none will have the disease?
+(c) at least one will neither have the disease nor be a carrier?
+(d) the first child with the disease will the be 3<sup>rd</sup> child?
+
+**3.13 Hepatitis C.** Hepatitis C is spread primarily through contact with the blood of an infected person, and is nearly always transmitted through needle sharing among intravenous drug users. Suppose that in a month’s time, an IV drug user has a 30% chance of contracting hepatitis C through needle sharing. What is the probability that 3 out of 5 IV drug users contract hepatitis C in a month? Assume that the drug users live in different parts of the country.
+
+**3.14 Arachnophobia.** A Gallup Poll found that 7% of teenagers (ages 13 to 17) suffer from arachnophobia and are extremely afraid of spiders. At a summer camp there are 10 teenagers sleeping in each tent. Assume that these 10 teenagers are independent of each other.<sup>39</sup>
+
+(a) Calculate the probability that at least one of them suffers from arachnophobia.
+(b) Calculate the probability that exactly 2 of them suffer from arachnophobia.
+(c) Calculate the probability that at most 1 of them suffers from arachnophobia.
+(d) If the camp counselor wants to make sure no more than 1 teenager in each tent is afraid of spiders, does it seem reasonable for him to randomly assign teenagers to tents?
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">39<sub>Gallup</sub> Poll, [What Frightens America’s Youth?](http://www.openintro.org/redirect.php?go=textbook-frightens_youth_2005&referrer=biostat1_pdf), March 29, 2005.</span></small>
+
+---
+
+188
+
+CHAPTER 3. DISTRIBUTIONS OF RANDOM VARIABLES
+
+**3.15 Wolbachia infection.** Approximately 12,500 stocks of Drosophila melanogaster flies are kept at The Bloomington Drosophila Stock Center for research purposes. A 2006 study examined how many stocks were infected with Wolbachia, an intracellular microbe that can manipulate host reproduction for its own benefit. About 30% of stocks were identified as infected. Researchers working with infected stocks should be cautious of the potential confounding effects that Wolbachia infection may have on experiments. Consider a random sample of 250 stocks.
+
+(a) Calculate the probability that exactly 60 stocks are infected.
+(b) Calculate the probability that at most 60 stocks are infected.
+(c) Calculate the probability that at least 80 stocks are infected.
+(d) If a researcher wants to make sure that no more than 40% of the stocks used for an experiment are infected, does it seem reasonable to take a random sample of 250?
+
+**3.16 Male children.** While it is often assumed that the probabilities of having a boy or a girl are the same, the actual probability of having a boy is slightly higher at 0.51. Suppose a couple plans to have 3 kids.
+
+(a) Use the binomial model to calculate the probability that two of them will be boys.
+(b) Write out all possible orderings of 3 children, 2 of whom are boys. Use these scenarios to calculate the same probability from part (a) but using the addition rule for disjoint outcomes. Confirm that your answers from parts (a) and (b) match.
+(c) If we wanted to calculate the probability that a couple who plans to have 8 kids will have 3 boys, briefly describe why the approach from part (b) would be more tedious than the approach from part (a).
+
+**3.17 Hyponatremia.** Hyponatremia (low sodium levels) occurs in a certain proportion of marathon runners during a race. Suppose that historically, the proportion of runners who develop hyponatremia is 0.12. In a certain marathon, there are 200 runners participating.
+
+(a) How many cases of hyponatremia are expected during the marathon?
+(b) What is the probability of more than 30 cases of hyponatremia occurring?
+
+**3.18 Sleep deprivation.** Consider a senior Statistics concentrator with a packed extracurricular schedule, taking five classes, and writing a thesis. Each time she takes an exam, she either scores very well (at least two standard deviations above the mean) or does not. Her performance on any given exam depends on whether she is operating on a reasonable amount of sleep the night before (more than 7 hours), relatively little sleep (between 4 - 7 hours, inclusive), or practically no sleep (less than 4 hours).
+
+When she has had practically no sleep, she scores very well about 30% of the time. When she has had relatively little sleep, she scores very well 40% of the time. When she has had a reasonable amount of sleep, she scores very well 42% of the time. Over the course of a semester, she has a reasonable amount of sleep 50% of nights, and practically no sleep 30% of nights.
+
+(a) What is her overall probability of scoring very well on an exam?
+(b) What is the probability she had practically no sleep the night before an exam where she scored very well?
+(c) Suppose that one day she has three exams scheduled. What is the probability that she scores very well on exactly two of the exams, under the assumption that her performance on each exam is independent of her performance on another exam?
+(d) What is the probability that she had practically no sleep the night prior to a day when she scored very well on exactly two out of three exams?
+
+---
+
+3.8. EXERCISES
+
+189
+
+## 3.8.3 Normal distribution
+
+**3.19 Area under the curve, Part I.** What percent of a standard normal distribution $N ( \mu = 0 , \sigma = 1 )$ is found in each region? Be sure to draw a graph.
+
+(a) $Z < - 1 . 3 5$
+
+(b) $Z > 1 . 4 8$
+
+(c) $- 0 . 4   <   Z   <   1 . 5$
+
+(d) $| Z | > 2$
+
+**3.20 Area under the curve, Part II.** What percent of a standard normal distribution $N ( \mu = 0 , \sigma = 1 )$ is found in each region? Be sure to draw a graph.
+
+(a) $Z > - 1 . 1 3$
+
+(b) $Z < 0 . 1 8$
+
+(c) $Z > 8$
+
+(d) $| Z | < 0 . 5$
+
+**3.21 The standard normal distribution.** Consider the standard normal distribution with mean $\mu = 0$ and standard deviation $\sigma = 1$
+
+(a) What is the probability that an outcome Z is greater than 2.60?
+(b) What is the probability that Z is less than 1.35?
+(c) What is the probability that Z is between -1.70 and 3.10?
+(d) What value of Z cuts off the upper 15% of the distribution?
+(e) What value of Z marks off the lower 20% of the distribution?
+
+**3.22 Triathlon times.** In triathlons, it is common for racers to be placed into age and gender groups. The finishing times of men ages 30-34 has mean of 4,313 seconds with a standard deviation of 583 seconds. The finishing times of the women ages 25-29 has a mean of 5,261 seconds with a standard deviation of 807 seconds. The distribution of finishing times for both groups is approximately normal. Note that a better performance corresponds to a faster finish.
+
+(a) If a man of the 30-34 age group finishes the race in 4,948 seconds, what percent of the triathletes in the group did he finish faster than?
+(b) If a woman of the 25-29 age group finishes the race in 5,513 seconds, what percent of the triathletes in the group did she finish faster than?
+(c) Calculate the cutoff time for the fastest 5% of athletes in the men’s group.
+(d) Calculate the cutoff time for the slowest 10% of athletes in the women’s group.
+
+**3.23 GRE scores.** The Graduate Record Examination (GRE) is a standardized test commonly taken by graduate school applicants in the United States. The total score is comprised of three components: Quantitative Reasoning, Verbal Reasoning, and Analytical Writing. The first two components are scored from 130 - 170. The mean score for Verbal Reasoning section for all test takers was 151 with a standard deviation of 7, and the mean score for the Quantitative Reasoning was 153 with a standard deviation of 7.67. Suppose that both distributions are nearly normal.
+
+(a) A student scores 160 on the Verbal Reasoning section and 157 on the Quantitative Reasoning section. Relative to the scores of other students, which section did the student perform better on?
+(b) Calculate the student’s percentile scores for the two sections. What percent of test takers performed better on the Verbal Reasoning section?
+(c) Compute the score of a student who scored in the $8 0 ^ { t h }$ percentile on the Quantitative Reasoning section.
+(d) Compute the score of a student who scored worse than 70% of the test takers on the Verbal Reasoning section.
+
+**3.24 Osteoporosis.** The World Health Organization defines osteoporosis in young adults as a measured bone mineral density 2.5 or more standard deviations below the mean for young adults. Assume that bone mineral density follows a normal distribution in young adults. What percentage of young adults suffer from osteoporosis according to this criterion?
+
+---
+
+190
+
+CHAPTER 3. DISTRIBUTIONS OF RANDOM VARIABLES
+
+**3.25 LA weather.** The average daily high temperature in June in LA is $7 7 ^ { \circ } \mathrm { F }$ with a standard deviation of 5◦F. Suppose that the temperatures in June closely follow a normal distribution.
+
+(a) What is the probability of observing an $8 3 ^ { \circ } \mathrm { F }$ temperature or higher in LA during a randomly chosen day in June?
+(b) How cold are the coldest 10% of the days during June in LA?
+
+**3.26 Clutch volume.** A study investigating maternal investment in a frog species found on the Tibetan Plateau reported data on the volume of egg clutches measured across 11 study sites. The distribution is roughly normal, with approximate distribution N(882.5,380) mm<sup>3</sup>.
+
+(a) What is the probability of observing an egg clutch between volume 700-800 $m m ^ { 3 } ?$
+
+(b) How large are the largest 5% of egg clutches?
+
+**3.27 Glucose levels.** Fasting blood glucose levels for normal non-diabetic individuals are normally distributed in the population, with mean $\mu = 85\  mg/dL$ and standard deviation $\sigma = 7 . 5 \; \mathrm { m g / d L }$
+
+(a) What is the probability that a randomly chosen member of the population has a fasting glucose level higher than 100 mg/dL?
+(b) What value of fasting glucose level defines the lower $5 ^ { t h }$ percentile of the distribution?
+
+**3.28 Arsenic poisoning.** Arsenic blood concentration is normally distributed with mean $\mu = 3 . 2 \; \mu \mathrm { g / d l }$ and standard deviation $\sigma = 1 . 5 ~ \mu \mathrm { g / d l }$ . What range of arsenic blood concentration defines the middle 95% of this distribution?
+
+**3.29 Age at childbirth.** In the last decade, the average age of a mother at childbirth is 26.4 years, with standard deviation 5.8 years. The distribution of age at childbirth is approximately normal.
+
+(a) What proportion of women who give birth are 21 years of age or older?
+(b) Giving birth at what age puts a woman in the upper 2.5% of the age distribution?
+
+**3.30 Find the SD.** Find the standard deviation of the distribution in the following situations.
+
+(a) MENSA is an organization whose members have IQs in the top 2% of the population. IQs are normally distributed with mean 100, and the minimum IQ score required for admission to MENSA is 132.
+(b) Cholesterol levels for women aged 20 to 34 follow an approximately normal distribution with mean 185 milligrams per deciliter (mg/dl). Women with cholesterol levels above 220 mg/dl are considered to have high cholesterol and about 18.5% of women fall into this category.
+
+**3.31 Underage drinking, Part III.** As first referenced in Exercise 3.7, about 70% of 18-20 year olds consumed alcoholic beverages in 2008. Consider a random sample of fifty 18-20 year olds.
+
+(a) Of these fifty people, how many would be expected to have consumed alcoholic beverages? With what standard deviation?
+(b) Evaluate the conditions for using the normal approximation to the binomial. What is the probability that 45 or more people in this sample have consumed alcoholic beverages?
+
+**3.32 Chickenpox, Part III.** As first referenced in Exercise 3.8, about 90% of American adults had chickenpox before adulthood. Consider a random sample of 120 American adults.
+
+(a) How many people in this sample would be expected to have had chickenpox in their childhood? With what standard deviation?
+(b) Evaluate the conditions for using the normal approximation to the binomial. What is the probability that 105 or fewer people in this sample have had chickenpox in their childhood?
+
+---
+
+3.8. EXERCISES
+
+191
+
+**3.33 University admissions.** Suppose a university announced that it admitted 2,500 students for the following year’s freshman class. However, the university has dorm room spots for only 1,786 freshman students. If there is a 70% chance that an admitted student will decide to accept the offer and attend this university, what is the approximate probability that the university will not have enough dormitory room spots for the freshman class?
+**3.34 SAT scores.** SAT scores (out of 2400) are distributed normally with a mean of 1500 and a standard deviation of 300. Suppose a school council awards a certificate of excellence to all students who score at least 1900 on the SAT, and suppose we pick one of the recognized students at random. What is the probability this student’s score will be at least 2100? (The material covered in Section 2.2 would be useful for this question.)
+**3.35 Scores on stats final.** The final exam scores of 20 introductory statistics students are plotted below. Do these data appear to follow a normal distribution? Explain your reasoning.
+
+![](../../raw/pages_0177-0192/images/page_190_image_6.jpg)
+
+**3.36 Heights of female college students.** The heights of 25 female college students are plotted below. Do these data appear to follow a normal distribution? Explain your reasoning.
+
+![](../../raw/pages_0177-0192/images/page_190_image_8.jpg)
+
+## 3.8.4 Poisson distribution
+
+**3.37 Computing Poisson probabilities.** This is a simple exercise in computing probabilities for a Poisson random variable. Suppose that X is a Poisson random variable with rate parameter $\lambda = 2 .$ Calculate $P ( X = 2 )$ $P ( X \leq 2 )$ , and $P ( X \geq 3 )$
+**3.38 Stenographer’s typos.** A very skilled court stenographer makes one typographical error (typo) per hour on average.
+
+(a) What are the mean and the standard deviation of the number of typos this stenographer makes in an hour?
+(b) Calculate the probability that this stenographer makes at most 3 typos in a given hour.
+(c) Calculate the probability that this stenographer makes at least 5 typos over 3 hours.
+
+---
+
+192
+
+CHAPTER 3. DISTRIBUTIONS OF RANDOM VARIABLES
+
+**3.39 Customers at a coffee shop.** A coffee shop serves an average of 75 customers per hour during the morning rush.
+
+(a) What are the mean and the standard deviation of the number of customers this coffee shop serves in one hour during this time of day?
+(b) Would it be considered unusually low if only 60 customers showed up to this coffee shop in one hour during this time of day?
+(c) Calculate the probability that this coffee shop serves 70 customers in one hour during this time of day.
+
+**3.40 Osteosarcoma in NYC.** Osteosarcoma is a relatively rare type of bone cancer. It occurs most often in young adults, age 10 - 19; it is diagnosed in approximately 8 per 1,000,000 individuals per year in that age group. In New York City (including all five boroughs), the number of young adults in this age range is approximately 1,400,000.
+
+(a) What is the expected number of cases of osteosarcoma in NYC in a given year?
+(b) What is the probability that 15 or more cases will be diagnosed in a given year?
+(c) The largest concentration of young adults in NYC is in the borough of Brooklyn, where the population in that age range is approximately 450,000. What is the probability of 10 or more cases in Brooklyn in a given year?
+(d) Suppose that in a given year, 10 cases of osteosarcoma were observed in NYC, with all 10 cases occurring among young adults living in Brooklyn. An official from the NYC Public Health Department claims that the probability of this event (that is, the probability of 10 or more cases being observed, and all of them occurring in Brooklyn) is what was calculated in part c). Is the official correct? Explain your answer. You may assume that your answer to part c) is correct. This question can be answered without doing any calculations.
+(e) Suppose that over five years, there was one year in which 10 or more cases of osteosarcoma were observed in Brooklyn. Is the probability of this event equal to the probability calculated in part c)? Explain your answer.
+
+**3.41 How many cars show up?** For Monday through Thursday when there isn’t a holiday, the average number of vehicles that visit a particular retailer between 2pm and 3pm each afternoon is 6.5, and the number of cars that show up on any given day follows a Poisson distribution.
+
+(a) What is the probability that exactly 5 cars will show up next Monday?
+(b) What is the probability that 0, 1, or 2 cars will show up next Monday between 2pm and 3pm?
+(c) There is an average of 11.7 people who visit during those same hours from vehicles. Is it likely that the number of people visiting by car during this hour is also Poisson? Explain.
+
+**3.42 Lost baggage.** Occasionally an airline will lose a bag. Suppose a small airline has found it can reasonably model the number of bags lost each weekday using a Poisson model with a mean of 2.2 bags.
+
+(a) What is the probability that the airline will lose no bags next Monday?
+(b) What is the probability that the airline will lose 0, 1, or 2 bags on next Monday?
+(c) Suppose the airline expands over the course of the next 3 years, doubling the number of flights it makes, and the CEO asks you if it’s reasonable for them to continue using the Poisson model with a mean of 2.2. What is an appropriate recommendation? Explain.
+
+---
+
+3.8. EXERCISES
+
+193
+
+**3.43 Hemophilia.** Hemophilia is a sex-linked bleeding disorder that slows the blood clotting process. In severe cases of hemophilia, continued bleeding occurs after minor trauma or even in the absence of injury. Hemophilia affects 1 in 5,000 male births. In the United States, about 400 males are born with hemophilia each year; there are approximately 4,000,000 births per year. Note: this problem is best done using statistical software.
+
+(a) What is the probability that at most 380 newborns in a year are born with hemophilia?
+(b) What is the probability that 450 or more newborns in a year are born with hemophilia?
+(c) Consider a hypothetical country in which there are approximately 1.5 million births per year. If the incidence rate of hemophilia is equal to that in the US, how many newborns are expected to have hemophilia in a year, with what standard deviation?
+
+**3.44 Opioid overdose.** The US Centers for Disease Control (CDC) has been monitoring the rate of deaths from opioid overdoses for at least the last 15 years. In 2013, the rate of opioid-related deaths has risen to 6.8 deaths per year per 100,000 non-Hispanic white members. In 2014-2015, the population of Essex County, MA, was approximately 769,000, of whom 73% are non-Hispanic white. Assume that incidence rate of opioid deaths in Essex County is the same as the 2013 national rate. Note: this problem is best done using statistical software.
+
+(a) In 2014, Essex County reported 146 overdose fatalities from opioids. Assume that all of these deaths occurred in the non-Hispanic white members of the population. What is the probability of 146 or more such events a year?
+(b) What was the observed rate of opioid-related deaths in Essex County in 2014, stated in terms of deaths per 100,000 non-Hispanic white members of the population?
+(c) In 2015, Essex County reported 165 opioid-related deaths in its non-Hispanic white population. Using the rate from part (b), calculate the probability of 165 or more such events.
+
+## 3.8.5 Distributions related to Bernoulli trials
+
+**3.45 Married women.** The 2010 American Community Survey estimates that 47.1% of women ages 15 years and over are married. Suppose that a random sample of women in this age group are selected for a research study.<sup>40</sup>
+
+(a) On average, how many women would need to be sampled in order to select a married woman? What is the standard deviation?
+(b) If the proportion of married women were actually 30%, what would be the new mean and standard deviation?
+(c) Based on the answers to parts (a) and (b), how does decreasing the probability of an event affect the mean and standard deviation of the wait time until success?
+
+40<sub>U</sub>.S. Census Bureau, 2010 American Community Survey, [Marital Status](http://www.openintro.org/redirect.php?go=textbook-acs_marriage_2010&referrer=biostat1_pdf).
+
+---
+
+194
+
+CHAPTER 3. DISTRIBUTIONS OF RANDOM VARIABLES
+
+**3.46 Donating blood, Part II.** Recall from Problem 3.11 that a patient with Type O+ blood can receive either Type O+ or Type O- blood, while a patient with Type O- blood can only receive Type O- blood. According to data collected from blood donors, 0.37 of white, non-Hispanic donors are Type O+ and 0.08 are Type O-. For the following questions, assume that only white, non-Hispanic donors are being tested.
+
+(a) On average, how many donors would need to be randomly sampled for a Type O+ donor to be identified? With what standard deviation?
+(b) What is the probability that 4 donors must be sampled to identify a Type O+ donor?
+(c) What is the probability that more than 4 donors must be sampled to identify a Type O+ donor?
+(d) What is the probability of the first Type O- donor being found within the first 4 people?
+(e) On average, how many donors would need to be randomly sampled for a Type O- donor to be identified? With what standard deviation?
+(f) What is the probability that fewer than 4 donors must be tested before a Type O- donor is found?
+
+**3.47 Wolbachia infection, Part II.** Recall from Problem 3.15 that 30% of the Drosophila stocks at the BDSC are infected with Wolbachia. Suppose a research assistant randomly samples a stock one at a time until identifying an infected stock.
+
+(a) Calculate the probability that an infected stock is found within the first 5 stocks sampled.
+(b) What is the probability that no more than 5 stocks must be tested before an infected one is found?
+(c) Calculate the probability that at least 3 stocks must be tested for an infected one to be found.
+
+**3.48 With and without replacement.** In the following situations assume that half of the specified population is male and the other half is female.
+
+(a) Suppose you’re sampling from a room with 10 people. What is the probability of sampling two females in a row when sampling with replacement? What is the probability when sampling without replacement?
+(b) Now suppose you’re sampling from a stadium with 10,000 people. What is the probability of sampling two females in a row when sampling with replacement? What is the probability when sampling without replacement?
+(c) We often treat individuals who are sampled from a large population as independent. Using your findings from parts (a) and (b), explain whether or not this assumption is reasonable.
+
+**3.49 Eye color.** A husband and wife both have brown eyes but carry genes that make it possible for their children to have brown eyes (probability 0.75), blue eyes (0.125), or green eyes (0.125).
+
+(a) What is the probability the first blue-eyed child they have is their third child? Assume that the eye colors of the children are independent of each other.
+(b) On average, how many children would such a pair of parents have before having a blue-eyed child? What is the standard deviation of the number of children they would expect to have until the first blue-eyed child?
+
+---
+
+3.8. EXERCISES
+
+195
+
+**3.50 Defective rate.** A machine that produces a special type of transistor (a component of computers) has a 2% defective rate. The production is considered a random process where each transistor is independent of the others.
+
+(a) What is the probability that the $1 0 ^ { t h }$ transistor produced is the first with a defect?
+(b) What is the probability that the machine produces no defective transistors in a batch of 100?
+(c) On average, how many transistors would you expect to be produced before the first with a defect? What is the standard deviation?
+(d) Another machine that also produces transistors has a 5% defective rate where each transistor is produced independent of the others. On average how many transistors would you expect to be produced with this machine before the first with a defect? What is the standard deviation?
+(e) Based on your answers to parts (c) and (d), how does increasing the probability of an event affect the mean and standard deviation of the wait time until success?
+
+**3.51 Rolling a die.** Calculate the following probabilities and indicate which probability distribution model is appropriate in each case. You roll a fair die 5 times. What is the probability of rolling
+
+(a) the first 6 on the fifth roll?
+(b) exactly three 6s?
+(c) the third 6 on the fifth roll?
+
+**3.52 Playing darts.** Calculate the following probabilities and indicate which probability distribution model is appropriate in each case. A very good darts player can hit the direct center of the board 65% of the time. What is the probability that a player:
+
+(a) hits the bullseye for the $1 0 ^ { t h }$ time on the $1 5 ^ { t h }$ try?
+(b) hits the bullseye 10 times in 15 tries?
+(c) hits the first bullseye on the third try?
+
+**3.53 Cilantro preference.** Cilantro leaves are widely used in many world cuisines. While some people enjoy it, others claim that it has a soapy, pungent aroma. A recent study conducted on participants of European ancestry identified a genetic variant that is associated with soapy-taste detection. In the initial questionnaire, 1,994 respondents out of 14,604 reported that they thought cilantro tasted like soap. Suppose that participants are randomly selected one by one.
+
+(a) What is the probability that the first soapy-taste detector is the third person selected?
+(b) What is the probability that in a sample of ten people, no more than two are soapy-taste detectors?
+(c) What is the probability that three soapy-taste detectors are identified from sampling ten people?
+(d) What is the mean and standard deviation of the number of people that must be sampled if the goal is to identify four soapy-taste detectors?
+
+**3.54 Serving in volleyball.** A not-so-skilled volleyball player has a 15% chance of making the serve, which involves hitting the ball so it passes over the net on a trajectory such that it will land in the opposing team’s court. Suppose that serves are independent of each other.
+
+(a) What is the probability that on the $1 0 ^ { t h }$ try, the player makes their $3 ^ { r d }$ successful serve?
+(b) Suppose that the player has made two successful serves in nine attempts. What is the probability that their $1 0 ^ { t h }$ serve will be successful?
+(c) Even though parts (a) and (b) discuss the same scenario, explain the reason for the discrepancy in probabilities.
+
+---
+
+196
+
+CHAPTER 3. DISTRIBUTIONS OF RANDOM VARIABLES
+
+**3.55 Cilantro preference, Part II.** Recall from Problem 3.53 that in a questionnaire, 1,994 respondents out of 14,604 reported that they thought cilantro tasted like soap. Suppose that a random sample of 15 individuals are selected for further study.
+
+(a) What is the mean and variance of the number of people sampled that are soapy-taste detectors?
+(b) What is the probability that 4 of the people sampled are soapy-taste detectors?
+(c) What is the probability that at most 2 of the people sampled are soapy-taste detectors?
+(d) Suppose that the 15 individuals were sampled with replacement. What is the probability of selecting 4 soapy-taste detectors?
+(e) Compare the answers from parts (b) and (d). Explain why the answers are essentially the same.
+
+**3.56 Dental caries.** A study to examine oral health of schoolchildren in Belgium found that of the 4,351 children examined, 44% were caries free (i.e., free of decay, restorations, and missing teeth). Suppose that children are sampled one by one.
+
+(a) What is the probability that at least three caries free children are identified from sampling seven children?
+(b) What is the probability that the first caries free child is the second one selected?
+(c) Suppose that in a single school of 350 children, the incidence rate of caries equals the national rate. If 10 schoolchildren are selected at random, what is the probability that at most 2 have caries?
+(d) What is the probability that in a sample of 50 children, no more than 15 are caries free?
+
+## 3.8.6 Distributions for pairs of random variables
+
+**3.57 Joint distributions, Part I.** Suppose X and Y have the following joint distribution.
+
+|  | Y = -1 | Y = 1 |
+| --- | --- | --- |
+| X = 0 | 0.20 | 0.40 |
+| X = 1 | 0.30 | 0.10 |
+
+(a) Calculate the marginal distributions of X and Y .
+(b) Calculate the mean, variance, and standard deviation of X.
+(c) What are the standardized values of X?
+(d) The mean and standard deviation of Y are 0 and 1, respectively, and the two standardized values for Y are -1 and 1. Calculate ρ<sub>X</sub>,Y , the correlation coefficient of X and Y .
+(e) Are X and Y independent? Explain your answer.
+
+**3.58 Joint distributions, Part II.** Suppose X and Y have the following joint distribution.
+
+|  | Y = -1 | Y = 1 |
+| --- | --- | --- |
+| X = 0 | 0.25 | 0.25 |
+| X = 1 | 0.25 | 0.25 |
+
+(a) Are X and Y independent?
+(b) Calculate the correlation between X and Y .
+(c) Are your answers to parts (a) and (b) consistent? Explain your answer.
+
+---
+
+3.8. EXERCISES
+
+197
+
+**3.59 Joint distributions, Part III.** Consider the following joint probability distribution:
+
+<table><tr><td></td><td colspan="3">Y</td></tr><tr><td>X</td><td>-1</td><td>0</td><td>1</td></tr><tr><td>-1</td><td>0.10</td><td>0</td><td>0.35</td></tr><tr><td>0</td><td>0</td><td>0.10</td><td>0.10</td></tr><tr><td>1</td><td>0.15</td><td>0.10</td><td>0.10</td></tr></table>
+
+(a) Calculate the marginal distributions.
+(b) Compute $\mu _ { X } .$
+(c) Compute $\sigma _ { Y } ^ { 2 } .$
+(d) Calculate the conditional distribution of X, given $Y = 0 .$
+
+**3.60 Dice rolls and coin tosses.** Let X represent the outcome from a roll of a fair six-sided die. Then, toss a fair coin X times and let Y denote the number of tails observed.
+
+(a) Consider the joint probability table of X and Y . How many entries are in the table for the joint distribution of X and Y ? How many entries equal 0?
+(b) Compute the joint probability $P ( X = 1 , Y = 0 )$
+(c) Compute the joint probability P (X = 1, Y = 2).
+(d) Compute the joint probability $P ( X = 6 , Y = 3 )$
+
+**3.61 Health insurance claims.** In the health insurance example introduced in Example 3.6, the largest annual expense for the annual employee (\$1,108) was caused by 8 visits to a provider for a knee injury requiring physical therapy. The couple has confidence that this or a similar injury will not happen again in the coming year, and wonders about the effect of reduced visits on expected total health care costs and its variability.
+
+A new joint distribution of health care cost for the couple is shown in the following table:
+
+<table><tr><td rowspan="2">Employee costs, X</td><td colspan="2">Partner costs, Y</td></tr><tr><td>$968</td><td>$988</td></tr><tr><td>$968</td><td>0.18</td><td>0.12</td></tr><tr><td>$1,008</td><td>0.15</td><td>0.25</td></tr><tr><td>$1,028</td><td>0.07</td><td>0.23</td></tr></table>
+
+(c) Calculate the expected total cost for the couple.
+(d) Calculate the new correlation for employee and partner costs.
+(e) Calculate the standard deviation of the total cost.
+
+(a) For the partner, will there be a change to the expected cost and its standard deviation?
+
+(b) Calculated the expected value and standard deviation for the employee’s costs.

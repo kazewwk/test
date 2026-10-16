@@ -1,0 +1,345 @@
+**5.11** (a) We will conduct a 1-sample t-test. $H _ { 0 } \colon \mu = 5 . H _ { A } \colon \mu \neq 5$ . We’ll use $\alpha = 0 . 0 5$ . This is a random sample, so the observations are independent. To proceed, we assume the distribution of years of piano lessons is approximately normal. $SE = 2.2/\sqrt{20} = 0.4919$ . The test statistic is $T = (4.6 - 5)/SE = -0.81. df = 20 - 1 = 19.$ The one-tail area is about 0.21, so the p-value is about 0.42, which is bigger than $\alpha = 0 . 0 5$ and we do not reject $H _ { 0 } .$ . That is, we do not have sufficiently strong evidence to reject the notion that the average is 5 years. (b) Using $S E = 0 . 4 9 1 9$ and $t _ { d f = 1 9 } ^ { \star } = 2 . 0 9 3$ , the confidence interval is (3.57, 5.63). We are 95% confident that the average number of years a child takes piano lessons in this city is 3.57 to 5.63 years. (c) They agree, since we did not reject the null hypothesis and the null value of 5 was in the t-interval.
+
+**5.13** If the sample is large, then the margin of error will be about $1 . 9 6 \times 1 0 0 / \sqrt { n }$ . We want this value to be less than 10, which leads to $n \geq 3 8 4 . 1 6 ,$ meaning we need a sample size of at least 385 (round up for sample size calculations!).
+
+**5.15** (a) Since it’s the same students at the beginning and the end of the semester, there is a pairing between the datasets; for a given student their beginning and end of semester grades are dependent. (b) Since the subjects were sampled randomly, each observation in the men’s group does not have a special correspondence with exactly one observation in the other (women’s) group. (c) Since it’s the same subjects at the beginning and the end of the study, there is a pairing between the datasets; for a subject their beginning and end of semester artery thickness are dependent. (d) Since it’s the same subjects at the beginning and the end of the study, there is a pairing between the datasets; for a subject their beginning and end of semester weights are dependent.
+
+**5.17** (a) For each observation in one data set, there is exactly one specially corresponding observation in the other data set for the same geographic location. The data are paired. (b) $H _ { 0 } : \mu _ { \mathrm { d i f f } } = 0$ (There is no difference in average number of days exceeding $9 0 ^ { \circ } \mathrm { F }$ in 1948 and 2018 for NOAA stations.) $H _ { A } : \mu _ { \mathrm { d i f f } } \neq 0$ (There is a difference.) (c) Locations were randomly sampled, so independence is reasonable. The sample size is at least 30, so we’re just looking for particularly extreme outliers: none are present (the observation off left in the histogram would be considered a clear outlier, but not a particularly extreme one). Therefore, the conditions are satisfied. (d) $\begin{array} { r } { S E = 1 7 . 2 / \sqrt { 1 9 7 } = 1 . 2 3 . T = \frac { 2 . 9 - 0 } { 1 . 2 3 } = 2 . 3 6 } \end{array}$ with degrees of freedom $df = 197 - 1 = 196$ . This leads to a one-tail area of 0.0096 and a p-value of about 0.019. (e) Since the p-value is less than 0.05, we reject $H _ { 0 }$ . The data provide strong evidence that NOAA stations observed more $9 0 ^ { \circ } \mathrm { F }$ days in 2018 than in 1948. (f) Type 1 Error, since we may have incorrectly rejected $H _ { 0 }$ . This error would mean that NOAA stations did not actually observe a decrease, but the sample we took just so happened to make it appear that this was the case. (g) No, since we rejected $H _ { 0 } ,$ , which had a null value of 0.
+
+**5.19** (a) $S E = 1 . 2 3$ and $t ^ { \star } = 1 . 6 5 . ~ 2 . 9 \pm 1 . 6 5 \times 1 . 2 3 \rightarrow ( 0 . 8 7 , 4 . 9 3 )$
+
+(b) We are 90% confident that there was an increase of 0.87 to 4.93 in the average number of days that hit 90°F in 2018 relative to 1948 for NOAA stations.
+
+(c) Yes, since the interval lies entirely above 0.
+
+**5.21** (a) Each of the 36 mothers is related to exactly one of the 36 fathers (and vice-versa), so there is a special correspondence between the mothers and fathers. (b) $H _ { 0 } : \mu _ { d i f f } = 0 . H _ { A } : \mu _ { d i f f } \neq 0$ . Independence: random sample from less than 10% of population. Sample size of at least 30. The skew of the differences is, at worst, slight. $Z = 2.72 \rightarrow  p-value  = 0.0066$ . Since p-value $< 0 . 0 5 ,$ , reject $H _ { 0 }$ . The data provide strong evidence that the average IQ scores of mothers and fathers of gifted children are different, and the data indicate that mothers scores are higher than fathers’ scores for the parents of gifted children.
+
+**5.23** (a) Since $p < 0 . 0 5$ , there is statistically significant evidence that the population difference in BGC is not 0. Since the observed mean BGC is higher in the food supplemented group, these data suggest that food supplemented birds have higher BGC on average than birds that are not food supplemented. (b) The 95% confidence interval is $\begin{array} { r } { \overline { { d } } \pm t ^ { \star } \frac { s _ { d } } { \sqrt { n } } } \end{array}$ . Since the mean of the differences is equal to the difference of the means, $\overline{d}=1.70-0.586=1.114$ . The test statistic is $\begin{array} { r } { t   =   \frac { \overline { { d } } } { s _ { d } / \sqrt { n } } } \end{array}$ , so the standard error $( s _ { d } / \sqrt { n } )$ can be solved for: $s _ { d } / \sqrt { n } = \overline { { d } } / t = 1 . 1 1 4 / 2 . 6 4 = 0 . 4 2 2$ . The critical t-value for a 95% confidence interval on a t-distribution with $1 6 { - } 1 = 1 5$ degrees of freedom is 2.13. Thus, the 95% confidence interval is $1 . 1 1 4 { \pm } ( 2 . 1 3 { \times } 0 . 4 2 2 ) \rightarrow ( 0 . 2 1 5 , 2 . 0 1 )$ grams. With 95% confidence, the interval (0.215, 2.01) grams contains the population mean difference in egg mass between food supplemented birds and non supplemented birds.
+
+**5.25** (a) These data are paired. For example, the Friday the 13th in say, September 1991, would probably be more similar to the Friday the 6th in September 1991 than to Friday the 6th in another month or year.
+
+(b) Let $\mu _ { d i f f }   = \mu _ { s i x t h } - \mu _ { t h i r t e e n t h }$ $H _ { 0 } : \mu _ { d i f f }   = 0 . H _ { A } : \mu _ { d i f f }   \neq 0 .$
+
+(c) Independence: The months selected are not random. However, if we think these dates are roughly equiv alent to a simple random sample of all such Friday 6th/13th date pairs, then independence is reasonable. To proceed, we must make this strong assumption, though we should note this assumption in any reported results. Normality: With fewer than 10 observations, we would need to see clear outliers to be concerned. There is a borderline outlier on the right of the histogram of the differences, so we would want to report this in formal analysis results.
+
+(d) $T = 4 . 9 3$ for $df = 10 - 1 = 9 \rightarrow  p-value  = 0.001$
+
+(e) Since p-value $< 0 . 0 5$ , reject $H _ { 0 }$ . The data provide strong evidence that the average number of cars at the intersection is higher on Friday the $6 ^ { \mathrm { t h } }$ than on Friday the $1 3 ^ { \mathrm { t h } }$ . (We should exercise caution about generalizing the interpretation to all intersections or roads.)
+
+(f) If the average number of cars passing the intersection actually was the same on Friday the $6 ^ { \mathrm { t h } }$ and $1 3 ^ { t h }$ then the probability that we would observe a test statistic so far from zero is less than 0.01.
+
+(g) We might have made a Type 1 Error, i.e. incorrectly rejected the null hypothesis.
+
+**5.27** (a) $H _ { 0 } : \mu _ { d i f f } = 0 . \quad H _ { A } : \mu _ { d i f f } \neq 0 . \quad T = - 2 . 7 1 . \quad d f = 5 .$ $\mathrm{p-value} = 0.042$ . Since p-value $< 0 . 0 5$ , reject $H _ { 0 } .$ . The data provide strong evidence that the average number of traffic accident related emergency room admissions are different between Friday the $6 ^ { \mathrm { t h } }$ and Friday the $1 3 ^ { \mathrm { t h } }$ . Furthermore, the data indicate that the direction of that difference is that accidents are lower on Friday the $6 ^ { t h }$ relative to Friday the $1 3 ^ { \mathrm { t h } }$
+
+(b) (-6.49, -0.17).
+
+(c) This is an observational study, not an experiment, so we cannot so easily infer a causal intervention implied by this statement. It is true that there is a difference. However, for example, this does not mean that a responsible adult going out on Friday the $1 3 ^ { t h }$ has a higher chance of harm than on any other night.
+
+**5.29** (a) Chicken fed linseed weighed an average of 218.75 grams while those fed horsebean weighed an average of 160.20 grams. Both distributions are relatively symmetric with no apparent outliers. There is more variability in the weights of chicken fed linseed. (b) $H _ { 0 } : \mu _ { l s } = \mu _ { h b } . H _ { A } : \mu _ { l s } \neq \mu _ { h b }$ . We leave the conditions to you to consider. $T = 3 . 0 2 ,   d f = m i n ( 1 1 , 9 ) = 9 \rightarrow 0 . 0 1 < \mathbf { p } \mathbf { \cdot v a l u e } < 0 . 0 2 .$ Since p-value $< 0 . 0 5 ,$ , reject $H _ { 0 }$ . The data provide strong evidence that there is a significant difference between the average weights of chickens that were fed linseed and horsebean. (c) Type 1 Error, since we rejected $H _ { 0 } . ~ ( \mathbf { d } )$ Yes, since p-value $> 0 . 0 1$ , we would have failed to reject $H _ { 0 }$
+
+**5.31** $H _ { 0 } : \mu _ { C } = \mu _ { S } .   H _ { A } : \mu _ { C } \neq \mu _ { S } .   T = 3 . 2 7 ,   d f = 1 1   \rightarrow \mathtt { p - v a l u e } < 0 . 0 1$ . Since p-value $< 0 . 0 5 ,$ , reject $H _ { 0 } .$ The data provide strong evidence that the average weight of chickens that were fed casein is different than the average weight of chickens that were fed soybean (with weights from casein being higher). Since this is a randomized experiment, the observed difference can be attributed to the diet.
+**5.33** $H _ { 0 } : \mu _ { T } = \mu _ { C } . H _ { A } : \mu _ { T } \neq \mu _ { C } . T = 2 . 2 4 ,   d f = 2 1   \rightarrow 0 . 0 2 < \mathtt { p - } \mathtt { v a l u e } < 0 . 0 5 .$ Since p-value $< 0 . 0 5 ,$ , reject $H _ { 0 }$ . The data provide strong evidence that the average food consumption by the patients in the treatment and control groups are different. Furthermore, the data indicate patients in the distracted eating (treatment) group consume more food than patients in the control group.
+**5.35** Let $\mu _ { d i f f } = \mu _ { p r e } - \mu _ { p o s t } . H _ { 0 } : \mu _ { d i f f } = 0 :$ Treatment has no effect. $H _ { A } : \mu _ { d i f f } \neq 0 :$ Treatment has an effect on P.D.T. scores, either positive or negative. Conditions: The subjects are randomly assigned to treatments, so independence within and between groups is satisfied. All three sample sizes are smaller than 30, so we look for clear outliers. There is a borderline outlier in the first treatment group. Since it is borderline, we will proceed, but we should report this caveat with any results. For all three groups: $df = 13.\ T_{1} = 1.89 \rightarrow$ p-value $= 0 . 0 8 1 ,   T _ { 2 } = 1 . 3 5 \rightarrow \mathrm { p - v a l u e } = 0 . 2 0 0 ) ,   T _ { 3 } = - 1 . 4 0 \rightarrow ( \mathrm { p - v a l u e } = 0 . 1 8 5 )$ . We do not reject the null hypothesis for any of these groups. As earlier noted, there is some uncertainty about if the method applied is reasonable for the first group.
+**5.37** Difference we care about: 40. Single tail of 90%: 1.28 <u>× SE. Rej</u>ection region bounds: ±1 $. 9 6 \times S E$ (if 5% significance level). Setting $3 . 2 4   \times   S E = 4 0$ , subbing in $SE = \sqrt{\frac{94^2}{n} + \frac{94^2}{n}}$ , and solving for the sample size n gives 116 plots of land for each fertilizer.
+**5.39** $H _ { 0 } \colon \mu _ { 1 } = \mu _ { 2 } = \cdots = \mu _ { 6 } . ~ H _ { A } \colon$ The average weight varies across some (or all) groups. Independence: Chicks are randomly assigned to feed types (presumably kept separate from one another), therefore independence of observations is reasonable. Approx. normal: the distributions of weights within each feed type appear to be fairly symmetric. Constant variance: Based on the side-by-side box plots, the constant variance assumption appears to be reasonable. There are differences in the actual computed standard deviations, but these might be due to chance as these are quite small samples. $F _ { 5 , 6 5 } = 1 5 . 3 6$ and the p-value is approximately 0. With such a small p-value, we reject $H _ { 0 } .$ . The data provide convincing evidence that the average weight of chicks varies across some (or all) feed supplement groups.
+**5.41** (a) $H _ { 0 } ;$ The population mean of MET for each group is equal to the others. $H _ { A } \colon$ At least one pair of means is different. (b) Independence: We don’t have any information on how the data were collected, so we cannot assess independence. To proceed, we must assume the subjects in each group are independent. In practice, we would inquire for more details. Normality: The data are bound below by zero and the standard deviations are larger than the means, indicating very strong skew. However, since the sample sizes are extremely large, even extreme skew is acceptable. Constant variance: This condition is sufficiently met, as the standard deviations are reasonably consistent across groups. (c) See below, with the last column omitted:
+
+|  | Df | Sum Sq | Mean Sq | F value |
+| --- | --- | --- | --- | --- |
+| coffee | 4 | 10508 | 2627 | 5.2 |
+| Residuals | 50734 | 25564819 | 504 |  |
+| Total | 50738 | 25575327 |  |  |
+
+(d) Since p-value is very small, reject $H _ { 0 }$ . The data provide convincing evidence that the average MET differs between at least one pair of groups.
+
+**5.43** (a) $H _ { 0 } ;$ Average GPA is the same for all majors. $H _ { A } \colon$ At least one pair of means are different. (b) Since $\mathrm{p-value} > 0.05$ , fail to reject $H _ { 0 }$ . The data do not provide convincing evidence of a difference between the average GPAs across three groups of majors. (c) The total degrees of freedom is $1 9 5 + 2 = 1 9 7$ , so the sample size is $1 9 7 + 1 = 1 9 8$
+
+**5.45** (a) False. As the number of groups increases, so does the number of comparisons and hence the modified significance level decreases. (b) True. (c) True. (d) False. We need observations to be independent regardless of sample size.
+**5.47** (a) $H _ { 0 } ;$ Average score difference is the same for all treatments. $H _ { A } ;$ At least one pair of means are different. (b) We should check conditions. If we look back to the earlier exercise, we will see that the patients were randomized, so independence is satisfied. There are some minor concerns about skew, especially with the third group, though this may be acceptable. The standard deviations across the groups are reasonably similar. Since the p-value is less than 0.05, reject H<sub>0</sub>. The data provide convincing evidence of a difference between the average reduction in score among treatments. (c) We determined that at least two means are different in part (b), so we now conduct $K = 3 \times 2 / 2 = 3$ pairwise t-tests that each use $\alpha = 0 . 0 5 / 3 = 0 . 0 1 6 7$ for a significance level. Use the following hypotheses for each pairwise test. $H _ { 0 } ;$ The two means are equal. $H _ { A } ;$ The two means are different. The sample sizes are equal and we use the pooled SD, so we can compute $S E = 3 . 7$ with the pooled $d f = 3 9$ . The p-value for Trmt 1 vs. Trmt 3 is the only one under 0.05: $\mathrm{p-value} = 0.035$ (or 0.024 if using $s _ { p o o l e d }$ in place of $s _ { 1 }$ and $s _ { 3 }$ , though this won’t affect the final conclusion). The p-value is larger than $0 . 0 5 / 3 = 1 . 6 7$ , so we do not have strong evidence to conclude that it is this particular pair of groups that are different. That is, we cannot identify if which particular pair of groups are actually different, even though we’ve rejected the notion that they are all the same!
+
+## 6 Simple linear regression
+
+**6.1** (a) Strong relationship, but a straight line would not fit the data. (b) Strong relationship, and a linear fit would be reasonable. (c) Weak relationship, and trying a linear fit would be reasonable. (d) Moderate relationship, but a straight line would not fit the data. (e) Strong relationship, and a linear fit would be reasonable. (f) Weak relationship, and trying a linear fit would be reasonable.
+**6.3** (a) There is a moderate, positive, and linear relationship between shoulder girth and height. (b) Changing the units, even if just for one of the variables, will not change the form, direction or strength of the relationship between the two variables.
+**6.5** Over-estimate. Since the residual is calculated as observed − predicted, a negative residual means that the predicted value is higher than the observed value.
+**6.7** (a) $\widehat{under}=-29.901+2.559\times powerty\%.$ (b) Expected murder rate in metropolitan areas with no poverty is -29. 901 per million. This is obviously not a meaningful value, it just serves to adjust the height of the regression line. (c) For each additional percentage increase in poverty, we expect murders per million to be higher on average by 2.559. (e) ${ \sqrt { 0 . 7 0 5 2 } } = 0 . 8 3 9 8$
+**6.9** (a) The slope of -1.26 indicates that on average, an increase in age of 1 year is associated with a lower RFFT score by 1.26 points. The intercept of 137.55 represents the predicted mean RFFT score for an individual of age 0 years; this does not have interpretive meaning since the RFFT cannot be reasonably administered to a newborn. (b) RFFT score differs on average by $1 0 ( - 1 . 2 6 ) = 1 2 . 6$ points between an individual who is 60 years old versus 50 years old, with the older individual having the lower score. (c) According to the model, average RFFT score for a 70-year-old is $137.55 - 1.26(70) = 49.3$ points. (d) No, it is not valid to use the linear model to estimate RFFT score for a 20-year-old. As indicated in the plot, data are only available for individuals as young as about 40 years old.
+**6.11** (a) The residual plot will show randomly distributed residuals around 0. The variance is also approximately constant. (b) The residuals will show a fan shape, with higher variability for smaller x. There will also be many points on the right above the line. There is trouble with the model being fit here.
+
+**6.13** (a) The points with the lowest and highest values for height have relatively high leverage. They do not seem particularly influential because they are not outliers; the one with a low x-value has a low y-value and the one with a high x-value has a high y-value, which follows the positive trend visible in the data. (b) Yes, since the data show a linear trend, it is appropriate to use $R ^ { 2 }$ as a metric for describing the strength of the model fit. (c) Height explains about 72% of the observed variability in length.
+
+**6.15** There is an upwards trend. However, the variability is higher for higher calorie counts, and it looks like there might be two clusters of observations above and below the line on the right, so we should be cautious about fitting a linear model to these data.
+
+**6.17** (a) There is an outlier in the bottom right. Since it is far from the center of the data, it is a point with high leverage. It is also an influential point since, without that observation, the regression line would have a very different slope.
+
+(b) There is an outlier in the bottom right. Since it is far from the center of the data, it is a point with high leverage. However, it does not appear to be affecting the line much, so it is not an influential point.
+
+(c) The observation is in the center of the data (in the x-axis direction), so this point does not have high leverage. This means the point won’t have much effect on the slope of the line and so is not an influential point.
+
+**6.19** (a) Linearity is satisfied; the data scatter about the horizontal line with no apparent pattern. The variability seems constant across the predicted length values. (b) The fish were randomly sampled from a river, so without additional details about the life cycle of the fish, it seems reasonable to assume the height and length of any one fish does not provide information about the height and length of another fish. This could be vio lated, if, for example, the fish in a river tend to be closely related and height and length are highly heritable. (c) The residuals are approximately normally distributed, with some small deviations from normality in the tails. There are more outliers in both tails than expected under a normal distribution.
+
+**6.21** One possible equation is $\widehat { p r i c e }   =   4 4 . 5 1 + 1 2 . 3 ( c a r a t _ { 1 . 0 0 } )$ , where the explanatory variable is a binary variable taking on value 1 if the diamond is 1 carat.
+
+**6.23** (a) The relationship is positive, moderate-to-strong, and linear. There are a few outliers but no points that appear to be influential.
+
+(b) weight  = −105.0113 + 1.0176 × height.
+
+Slope: For each additional centimeter in height, the model predicts the average weight to be 1.0176 additional kilograms (about 2.2 pounds).
+
+Intercept: People who are 0 centimeters tall are expected to weigh - 105.0113 kilograms. This is obviously not possible. Here, the y- intercept serves only to adjust the height of the line and is meaningless by itself.
+
+$( \mathsf { c } ) \; H _ { 0 } \colon$ The true slope coefficient of height is zero $\left( \beta _ { 1 } = 0 \right)$
+
+$H _ { A } ;$ The true slope coefficient of height is different than zero $\left( \beta _ { 1 } \neq 0 \right)$
+
+The p-value for the two-sided alternative hypothesis $\left( \beta _ { 1 } \neq 0 \right)$ is incredibly small, so we reject $H _ { 0 }$ . The data provide convincing evidence that height and weight are positively correlated. The true slope parameter is indeed greater than 0.
+
+(d) $R ^ { 2 }   =   0 . 7 2 ^ { 2 }   =   0 . 5 2$ . Approximately 52% of the variability in weight can be explained by the height of individuals.
+
+**6.25** (a) H<sub>0</sub>: $\beta _ { 1 } = 0 . H _ { A } { : } \beta _ { 1 } \neq 0$ . The p-value, as reported in the table, is incredibly small and is smaller than 0.05, so we reject $H _ { 0 }$ . The data provide convincing evidence that wives’ and husbands’ heights are positively correlated.
+
+(b) $\widehat { h e i g h t } _ { W } = 4 3 . 5 7 5 5 + 0 . 2 8 6 3 \times h e i g h t _ { H }$
+(c) Slope: For each additional inch in husband’s height, the average wife’s height is expected to be an additional 0.2863 inches on average. Intercept: Men who are 0 inches tall are expected to have wives who are, on average, 43.5755 inches tall. The intercept here is meaningless, and it serves only to adjust the height of the line.
+(d) The slope is positive, so r must also be positive. $r = { \sqrt { 0 . 0 9 } } = 0 . 3 0$
+(e) 63.33. Since $R ^ { 2 }$ is low, the prediction based on this regression model is not very reliable.
+(f) No, we should avoid extrapolating.
+(g) Yes, the p-value for the slope parameter is less than $\alpha = 0 . 0 5$ . There is sufficient evidence to accept the alternative hypothesis, $H _ { A } : \beta _ { 1 } \neq 0$ . These data suggest that wife height and husband height are positively associated at the population level.
+(h) No, a 95% confidence interval for $\beta _ { 1 }$ would not be expected to contain the null value 0, since the p-value is less than 0.05.
+
+**6.27** (a) The point estimate and standard error are $b _ { 1 }   =   0 . 9 1 1 2$ and $SE   =   0.0259$ We can compute a Tscore: $T = ( 0 . 9 1 1 2 - 1 ) / 0 . 0 2 5 9 = - 3 . 4 3$ . Using $d f = 1 6 8$ , the p-value is about 0.001, which is less than $\alpha =$ 0.05. That is, the data provide strong evidence that the average difference between husbands’ and wives ages has actually changed over time. (b) $\widehat { a g e } _ { W } = 1 . 5 7 4 0 + 0 . 9 1 1 2 \times a g e _ { H }$ . (c) Slope: For each additional year in husband’s age, the model predicts an additional 0.9112 years in wife’s age. This means that wives’ ages tend to be lower for later ages, suggesting the average gap of husband and wife age is larger for older people. Intercept: Men who are 0 years old are expected to have wives who are on average 1.5740 years old. The intercept here is meaningless and serves only to adjust the height of the line. (d) $R = { \sqrt { 0 . 8 8 } } = 0 . 9 4$ . The regression of wives’ ages on husbands’ ages has a positive slope, so the correlation coefficient will be positive. (e) $\widehat { a g e } _ { W } = 1 . 5 7 4 0 + 0 . 9 1 1 2 \times 5 5 = 5 1 . 6 9$ Since $R ^ { 2 }$ is pretty high, the prediction based on this regression model is reliable. (f) No, we shouldn’t use the same model to predict an 85 year old man’s wife’s age. This would require extrapolation. The scatterplot from an earlier exercise shows that husbands in this data set are approximately 20 to 65 years old. The regression model may not be reasonable outside of this range.
+
+**6.29** (a) Yes, since $p < 0 . 0 1$ $H _ { 0 } : \beta _ { 1 } = 0 ,   H _ { A } : \beta _ { 1 } \neq 0$ , where $\beta _ { 1 }$ represents the population average change in RFFT score associated with a change in 1 year of age. There is statistically significant evidence that age is negatively associated with RFFT score. (b) With 99% confidence, the interval (-1.49, -1.03) points contains the population average difference in RFFT score between individuals who differ in age by 1 year; the older individual is predicted to have a lower RFFT score.
+
+**6.31** (a) First, compute the standard error: s.e $\begin{array} { r } { \bot ( E ( a g e _ { w i f e } | \overline { { a g e _ { h u s b a n d } } } = 5 5 ) )   =   3 . 9 5 \sqrt { \frac { 1 } { 1 7 0 } + \frac { ( 5 5 - 4 2 . 9 2 ) ^ { 2 } } { ( 1 7 0 - 1 ) 1 1 . 7 6 ^ { 2 } } }   =   } \end{array}$ 0.435. The critical value is $t _ { 0 . 9 7 5 , d f = 1 6 9 } ^ { \star } = 1 . 9 7$ . Thus, the 95% confidence interval is $51.69 \pm (1.97)(0.435)=$ (50.83, 52.55) years. (b) First, compute the standard error: s.e. $\begin{array} { r } { \iota ( a g e _ { w i f e } | \overline { { a g e _ { h u s b a n d } } } = 5 5 ) = 3 . 9 5 \sqrt { 1 + \frac { 1 } { 1 7 0 } + \frac { ( 5 5 - 4 2 . 9 2 ) ^ { 2 } } { ( 1 7 0 - 1 ) 1 1 . 7 6 ^ { 2 } } } = } \end{array}$ 3.97. The 95% prediction interval is $5 1 . 6 9 \pm ( 1 . 9 7 ) ( 3 . 9 7 ) = ( 4 3 . 8 5 , 5 9 . 5 4 )$ years. (c) For the approximate 95% confidence interval, use $s / { \sqrt { n } } = 3 . 9 5 / { \sqrt { 1 7 0 } } = 0 . 3 0 3$ as the approximate standard error: (51.09,52.29) years. For the approximate 95% prediction interval, use $s { \sqrt { 1 + 1 / n } } = 3 . 9 5 { \sqrt { 1 + 1 / 1 7 0 } } = 4 . 2 5$ as the approximate standard error: (43.30, 60.09) years.
+
+## 7 Multiple linear regression
+
+**7.1** Although the use of statins appeared to be associated with lower RFFT score when no adjustment was made for possible confounders, statin use is not significantly associated with RFFT score in a model that adjusts for age. After adjusting for age, the estimated difference in mean RFFT score between statin users and non-users is 0.85 points; there is a 74% chance of observing such a difference if there is no difference between mean RFFT score in the population of statin users and non-users.
+
+**7.3** (a) baby\_ $\widehat { \mathit { L w e i g h t } } = 1 2 3 . 5 7 - 8 . 9 6 ( s m o k e ) - 1 . 9 8 ( p a r i t y )$ (b) A child born to a mother who smokes has a birth weight about 9 ounces less, on average, than one born to a mother who does not smoke, holding birth order constant. A child who is the first born has birth weight about 2 ounces less, on average, than one who is not first born, when comparing children whose mothers were either both smokers or both nonsmokers. The intercept represents the predicted mean birth weight for a child whose mother is not a smoker and who was not the first born. (c) The estimated difference in mean birth weight for two infants born to non-smoking mothers, where one is first born and the other is not, is -1.98. (d) This is the same value as in part (c). (e) $1 2 3 . 5 7 - 8 . 9 6 ( 0 ) - 1 . 9 8 ( 1 ) = 1 2 1 . 5 9$ ounces.
+
+**7.5** (a) $\overline{buy_{-}weight}=-80.41+0.44\times gestation-3.33\times parity-0.01\times age+1.15\times height+0.05\times weight-$ 8.40 × smoke. (b) $\beta _ { g e s t a t i o n } \colon$ The model predicts a 0.44 ounce increase in the birth weight of the baby for each additional day of pregnancy, all else held constant. $\beta _ { a g e } \cdotp$ The model predicts a 0.01 ounce decrease in the birth weight of the baby for each additional year in mother’s age, all else held constant. (c) Parity might be correlated with one of the other variables in the model, which complicates model estimation. (d) baby $\widetilde { \phantom { } _ { - } w e i g h t } = 1 2 0 . 5 8$ $e = 120 - 120.58 = -0.58$ . The model over-predicts this baby’s birth weight. (e) $R ^ { 2 } = 0 . 2 5 0 4 . R _ { a d j } ^ { 2 } = 0 . 2 4 6 8$
+
+**7.7** Nearly normal residuals: With so many observations in the data set, we look for particularly extreme outliers in the histogram and do not see any. Variability of residuals: The scatterplot of the residuals versus the fitted values does not show any overall structure. However, values that have very low or very high fitted values appear to also have somewhat larger outliers. In addition, the residuals do appear to have constant variability between the two parity and smoking status groups, though these items are relatively minor.
+
+Independent residuals: The scatterplot of residuals versus the order of data collection shows a random scatter, suggesting that there is no apparent structures related to the order the data were collected.
+
+Linear relationships between the response variable and numerical explanatory variables: The residuals vs. height and weight of mother are randomly distributed around 0. The residuals vs. length of gestation plot also does not show any clear or strong remaining structures, with the possible exception of very short or long gestations. The rest of the residuals do appear to be randomly distributed around 0.
+
+All concerns raised here are relatively mild. There are some outliers, but there is so much data that the influence of such observations will be minor.
+
+**7.9** (b) True. (c) False. This would only be the case if the data was from an experiment and $x _ { 1 }$ was one of the variables set by the researchers. (Multiple regression can be useful for forming hypotheses about causal relationships, but it offers zero guarantees.) (d) False. We should check normality like we would for inference for a single mean: we look for particularly extreme outliers $\mathrm { i f } ~ n \geq 3 0 ~ \mathrm { o r }$ for clear outliers if $n < 3 0$
+
+**7.11** (a) (-0.32, 0.16). We are 95% confident that male students on average have GPAs 0.32 points lower to 0.16 points higher than females when controlling for the other variables in the model. (b) Yes, since the p-value is larger than 0.05 in all cases (not including the intercept).
+**7.13** (a) $\widehat { e g g s . l a i d } = - 1 7 . 8 8 + 4 . 2 8 ( w o l b a c h i a ) + 0 . 2 7 2 ( t i b i a )$ (b) An increase in Wolbachia density of one unit is associated with on average 4.28 more eggs laid over a lifetime, assuming body size is held constant. (c) In a multiple regression model adjusting for body size as a potential confounder, increase in Wolbachia density was significantly positively associated with realized fitness, measured as the number of eggs laid over a female’s full lifetime $( p = 0 . 0 0 2 )$ . These data are consistent with the scientific hypothesis that Wolbachia is beneficial for its host in nature. (d) (1.85, 7.05) eggs (e) As a group, the predictors Wolbachia density and tibia length are useful for predicting the number of eggs laid over a lifetime.
+**7.15** (a) Since the difference is taken in the direction (pre - post), a positive value for trt.effect indicates that the post-intervention score is lower than the pre-intervention score, which represents efficacy of the intervention. A negative value would represent a patient’s deviant T scores increasing after the intervention. (b) Let Y be the change in MMPI score for a participant in this study, $X _ { n e u t r a l }$ a variable with value 1 for participants assigned to the neutral tape and 0 otherwise, and $X _ { t h e r a p e u t i c }$ a variable with value 1 for participants in the emotional neutral group and 0 otherwise. The population-level equation is $E(Y) =$ $\beta _ { 0 } + \beta _ { n e u t r a l } X _ { n e u t r a l } + \beta _ { t h e r a p e u t i c } X _ { t h e r a p e u t i c } .$ For these data, the estimated model equation is $\widehat { y } = - 3 . 2 1 +$ $6 . 0 7 X _ { n e u t r a l } + 9 . 4 3 X _ { t h e r a p e u t i c } .$ (c) The predicted difference scores $\widehat { y }$ for a patient receiving the neutral tape will be $\widehat { y } = b _ { 0 } + b _ { n e u t r a l } X _ { n e u t r a l } + b _ { t h e r a p e u t i c } X _ { t h e r a p e u t i c } = - 3 . 2 1 + 6 . 0 7 + 0 = 2 . 8 6 .$ (d) Yes. The intercept is the average of the score difference for the group that did not hear a taped message. (e) The two slopes represent the change in average MMPI score difference from the average for the group that did not receive a tape. The Absent category is the reference group. (f) The $p \mathbf { - v }$ alue for the intercept corresponds to a test of the null hypothesis that the average difference score was 0 in the group that did not hear a taped message. The slope p-values correspond to tests of the null hypotheses of (on average) no change in difference scores between the intervention with no tape and each of the other two interventions.
+**7.17** (a) Let pre and post denote the pre- and post-intervention scores, respectively. The estimated equation for the model is $\widehat { p o s t } = 2 8 . 4 1 + 0 . 6 6 ( p r e ) - 5 . 7 3 X _ { n e u t r a l } - 9 . 7 5 X _ { t h e r a p e u t i c } .$ (b) Since the coefficient of the pre intervention score is positive, post-intervention scores tend to increase as the pre-intervention score increases. (c) Yes. The t-statistic for the coefficient of pre is 4.05 and is statistically significant. (d) In this model, treatment is a factor variable with three levels and the intervention with no tape is the baseline treatment that does not appear in the model. For a participant with ${ \mathsf { p r e } } = 7 0$ and no tape, the predicted value of post is $2 8 . 4 1 + 0 . 6 6 ( 7 3 ) - 5 . 7 3 ( 1 ) = 7 0 . 8 6$ (e) For a given value of ${ \mathsf { p r e } } ,$ the coefficient of treatmentNeutral is the predicted change in post between an participant without a tape and one with the emotionally neutral tape. The model implies that post will be 5.7 points lower with the emotionally neutral tape. The evidence for a treatment effect of the emotionally neutral tape is weak; the coefficient is not statistically significant at $\alpha = 0 . 0 5$
+
+**7.19** (a) $\widehat { p o s t } = - 1 7 . 5 8 { + } 1 . 2 8 ( p r e ) { + } 6 7 . 7 5 ( n e u t r a l ) { \cdot }$ +64.42(therapeutic)−0.99(pre×neutral)−1.01(pre×therapeutic)
+(b) The coefficient for pre is the predicted increase in post score associated with a 1 unit increase in pre-score for individuals in the absent arm, while the coefficients of the interaction terms for neutral and therapeutic represent the difference in association between pre and post scores for individuals in those groups. For example, an individual in the neutral group is expected to have a $1.28 - 0.99 = 0.29$ point increase in post score, on average, per 1 point increase in pre-score. The coefficients of the slopes for neutral and therapeutic are differences in intercept values relative to the intercept for the model, which is for the baseline group (absent).
+(c) Absent: $\widehat { p o s t } = - 1 7 . 5 8 + 1 . 2 8 ( p r e )$ Neutral: $\widehat{post} = -17.58 + 67.75 + 1.28(pre) - 0.99(pre) = 50.17 + 0.29(pre)$
+Therapeutic: $\widehat{post} = -17.58 + 64.42 + 1.28(pre) - 1.01(pre) = 46.84 + 0.27(pre)$ (d) These data suggest there is a statistically significant difference in association between pre- and post-intervention scores by treatment group relative to the group that did not receive any treatment. The coefficients of both interaction terms are statistically significant at $\alpha = 0 . 0 5$ . Since the slopes are smaller than the slope for the treatment absent group, the data demonstrate that individuals in either treatment group show less increase in MMPI score than occurs when no treatment is applied.
+
+**7.21** (a) $\widehat { R F F T } = 1 4 0 . 2 0 - 1 3 . 9 7 ( S t a t i n ) - 1 . 3 1 ( A g e ) + 0 . 2 5 ( S t a t i n \times A g e )   ( \mathrm { b } )$ The model intercept represents the predicted mean RFFT score for a statin non-user of age 0 years; the intercept does not have a meaningful interpretation. The slope coefficient for age represents the predicted change in RFFT score for a statin non-user; for non-users, a one year increase in age is associated with a 1.32 decrease in RFFT score. The slope coefficient for statin use represents the difference in intercept between the regression line for users and the regression line for non-users; the intercept for users is -13.97 points lower than that of non-users. The interaction term coefficient represents the difference in the magnitude of association between RFFT score and age between users and non-users; in users, the slope coefficient representing predicted change in RFFT score per 1 year change in age is higher by 0.25 points. (c) No, there is not evidence that the association between RFFT score and age differs by statin use. The p-value of the interaction coefficient is 0.32, which is higher than $\alpha = 0 . 0 5$
+**7.23** Age should be the first variable removed from the model. It has the highest p-value, and its removal results in an adjusted $R ^ { 2 }$ of 0.255, which is higher than the current adjusted $R ^ { 2 }$
+**7.25** (a) The strongest predictor of birth weight appears to be gestational age; these two variables show a strong positive association. Both parity and smoker status show a slight association with gestational age; the first born child tends to be a lower birth weight and children from mothers who smoke tend to have lower birth weight. While there does not appear to be an association between birth weight and age of the mother, there may be a slight positive association between both birth weight and height and birth weight and weight. All predictor variables with exception of age seem potentially useful for inclusion in an initial model. (b) Height and weight appear to be positively associated.
+**7.27** (a) The F-statistic for the model corresponds to a test of $H _ { 0 } : \beta _ { n e u t r a l } = \beta _ { t h e r a p e u t i c } = 0 .$ . (b) The intercept coefficient is the estimated mean difference score for the no intervention group, and the estimated mean difference score for the other two groups can be calculated by adding each of the slope estimates to the intercept. (c) Under the null hypothesis that the two slope coefficients are $0 ,$ all three interventions would have the same mean difference in MMPI scores. This is the same as the null hypothesis for an ANOVA with three groups $\left( H _ { 0 } : \mu _ { 1 } = \mu _ { 2 } = \mu _ { 3 } \right)$ , which states that all three population means are the same. (d) The assumptions for multiple regression and ANOVA are outlined in Sections 7.3.1 and 5.5, respectively. The assumptions for the two models are the same, though they may be phrased differently. The first assumption in multiple regression is linear change of the mean response variable when one predictor changes and the others do not change. Since each of the two predictor variables in this model can only change from 0 to 1, this assumption is simply that the means in the three groups are possibly different, which is true in ANOVA. The second assumption in regression is that the variance of the residuals is approximately constant. Since the predicted response for an intervention group is its mean, the constant variance assumption in regression is the equivalent assumption in ANOVA that the three groups have approximately constant variance. Both models assume that the observations are independent and that the residuals follow a normal distribution. This is a very long way of saying that the two models are identical!
+
+## 8 Inference for categorical data
+
+**8.1** (a) False. Doesn’t satisfy success-failure condition. (b) True. The success-failure condition is not satisfied. In most samples we would expect $\hat { p }$ to be close to 0.08, the true population proportion. While $\hat { p }$ can be much above 0.08, it is bound below by $0 ,$ suggesting it would take on a right skewed shape. Plotting the sampling distribution would confirm this suspicion. (c) False. $S E _ { \hat { p } } = 0 . 0 2 4 3 ,$ , and $\hat { p } = 0 . 1 2$ is only $\frac{0.12{-}0.08}{0.0243}=1.65$ SEs away from the mean, which would not be considered unusual. (d) True. $\hat { p } = 0 . 1 2 \mathrm { ~ i s ~ } 2 . 3 2$ standard errors away from the mean, which is often considered unusual. (e) False. Decreases the SE by a factor of $1 / \sqrt { 2 }$
+**8.3** (a) False. A confidence interval is constructed to estimate the population proportion, not the sample proportion. (b) True. 95% CI: $82\%~\pm~2\%$ . (c) True. By the definition of the confidence level. (d) True. Quadrupling the sample size decreases the SE and ME by a factor of $1 / { \sqrt { 4 } } .$ (e) True. The 95% CI is entirely above 50%.
+**8.5** <u>With</u> a random sample, independence is satisfied. The success-failure condition is also satisfied. $M E =$ $z^{\star} \sqrt{\frac{\hat{p}(1 - \hat{p})}{n}} = 1.96 \sqrt{\frac{0.56 \times 0.44}{600}} = 0.0397 \approx 4\%$
+**8.7** (a) No. The sample only represents students who took the SAT, and this was also an online survey. (b) (0.5289, 0.5711). We are 90% confident that 53% to 57% of high school seniors who took the SAT are fairly certain that they will participate in a study abroad program in college. (c) 90% of such random samples would produce a 90% confidence interval that includes the true proportion. (d) Yes. The interval lies entirely above 50%.
+**8.9** (a) We want to check for a majority (or minority), so we use the following hypotheses:
+
+$$
+H _ {0}: p = 0. 5
+$$
+
+$$
+H _ {A}: p \neq 0. 5
+$$
+
+We have a sample proportion of $\hat { p } = 0 . 5 5$ and a sample size of $n = 6 1 7$ independents.
+
+Since this is a random sample, independence is satisfied. The success-failure condition is also satisfied: 617 × 0.5 and $6 1 7 { \times } ( 1 { - } 0 . 5 )$ are both at least 10 (we use the null proportion $p _ { 0 } = 0 . 5$ for this check in a one-proportion hypothesis test).
+
+Therefore, we can model $\hat { p }$ using a normal distribution with a standard error of
+
+$$
+S E = \sqrt {\frac {p (1 - p)}{n}} = 0. 0 2
+$$
+
+(We use the null proportion $p _ { 0 }   =   0 . 5$ to compute the standard error for a one-proportion hypothesis test.) Next, we compute the test statistic:
+
+$$
+Z = \frac {0 . 5 5 - 0 . 5}{0 . 0 2} = 2. 5
+$$
+
+This yields a one-tail area of 0.0062, and a p-value of $2 \times 0 . 0 0 6 2 = 0 . 0 1 2 4$
+
+Because the p-value is smaller than 0.05, we reject the null hypothesis. We have strong evidence that the support is different from 0.5, and since the data provide a point estimate above 0.5, we have strong evidence to support this claim by the TV pundit.
+
+(b) No. Generally we expect a hypothesis test and a confidence interval to align, so we would expect the confidence interval to show a range of plausible values entirely above 0.5. However, if the confidence level is misaligned (e.g. a 99% confidence level and a $\alpha = 0 . 0 5$ significance level), then this is no longer generally true.
+
+**8.11** Since a sample proportion $\left( \hat { p }   =   0 . 5 5 \right)$ is available, we use th<u>is for</u> the sample size calculations. The margin of error for a 90% confidence interval is $\begin{array} { r } { 1 . 6 5 \times S E = 1 . 6 5 \times \sqrt { \frac { p \left( 1 - p \right) } { n } } } \end{array}$ . We want this to be less than 0.01, where we use $\hat { p }$ in place of $p ;$
+
+$$
+\begin{array}{l} 1. 6 5 \times \sqrt {\frac {0 . 5 5 (1 - 0 . 5 5)}{n}} \leq 0. 0 1 \\ 1. 6 5 ^ {2} \frac {0 . 5 5 (1 - 0 . 5 5)}{0 . 0 1 ^ {2}} \leq n \\ \end{array}
+$$
+
+From this, we get that n must be at least 6739.
+
+**8.13** (a) $H _ { 0 }   :   p   =   0 . 5 .   H _ { A }   :   p   \neq   0 . 5$ . Independence (random sample) is satisfied, as is the success-failure conditions (using $p _ { 0 } = 0 . 5$ , we expect 40 successes and 40 failures). $Z = 2 . 9 1$ → the one tail area is 0.0018, so the p-value is 0.0036. Since the p-value $< 0 . 0 5$ , we reject the null hypothesis. Since we rejected $H _ { 0 }$ and the point estimate suggests people are better than random guessing, we can conclude the rate of correctly identifying a soda for these people is significantly better than just by random guessing. (b) If in fact people cannot tell the difference between diet and regular soda and they were randomly guessing, the probability of getting a random sample of 80 people where 53 or more identify a soda correctly (or 53 or more identify a soda incorrectly) would be 0.0036.
+
+**8.15** (a) Yes, it is reasonable to use the normal approximation to the binomial distribution. The sample observations are independent and the expected numbers of successes and failures are greater than 10: $n { \hat { p } }   =   ( 1 0 0 ) ( . 1 5 )   =   1 5$ and $n ( 1 - { \hat { p } } ) = ( 1 0 0 ) ( 0 . 8 5 ) = 8 5$ . (b) An approximate 95% confidence interval is $\hat { p } \pm$ $\begin{array} { r } { 1 . 9 6 \sqrt { \frac { \hat { p } \left( 1 - \hat { p } \right) } { n } } \rightarrow ( 0 . 0 8 , 0 . 2 2 ) } \end{array}$ . (c) The interval does not support the claim. Since the interval does not contain 0.05, there is statistically significant evidence at $\alpha = 0 . 0 5$ that the proportion of young women in the neighborhood who use birth control is different than 0.05. The interval is above 0.05, which is indicative of evidence that more than 5% of young women in the neighborhood use birth control.
+
+**8.17** This is not a randomized experiment, and it is unclear whether people would be affected by the behavior of their peers. That is, independence may not hold. Additionally, there are only 5 interventions under the provocative scenario, so the success-failure condition does not hold. Even if we consider a hypothesis test where we pool the proportions, the success-failure condition will not be satisfied. Since one condition is questionable and the other is not satisfied, the difference in sample proportions will not follow a nearly normal distribution.
+
+**8.19** (a) Standard error:
+
+$$
+S E = \sqrt {\frac {0 . 7 9 (1 - 0 . 7 9)}{3 4 7} + \frac {0 . 5 5 (1 - 0 . 5 5)}{6 1 7}} = 0. 0 3
+$$
+
+Using $z ^ { \star } = 1 . 9 6$ , we get:
+
+$$
+0. 7 9 - 0. 5 5 \pm 1. 9 6 \times 0. 0 3 \rightarrow (0. 1 8 1, 0. 2 9 9)
+$$
+
+We are 95% confident that the proportion of Democrats who support the plan is 18.1% to 29.9% higher than the proportion of Independents who support the plan. (b) True.
+
+**8.21** (a) Test $H _ { 0 } : p _ { 1 } = p _ { 2 }$ against $H _ { A } : p _ { 1 } \neq p _ { 2 }$ , where $p _ { 1 }$ represents the population proportion of clinical improvement in COVID-19 patients treated with remdesivir and $p _ { 2 }$ represents the population proportion of clinical improvement in COVID-19 patients treated with placebo. Let $\alpha = 0 . 0 5$ . The $p \cdot$ value is 0.328, which is greater than $\alpha ;$ there is insufficient evidence to reject the null hypothesis of no difference. Even though the proportion of patients who experienced clinical improvement about 7% higher in the remdesivir group, this difference is not extreme enough to represent sufficient evidence that remdesivir is more effective than placebo. (b) The 95% confidence interval is (-0.067, 0.217); with 95% confidence, this interval captures the difference in population proportion of clinical mortality between COVID-19 patients treated with remdesivir and those treated with placebo. The interval contains 0, which is consistent with no statistically significant evidence of a difference. The interval reflects the lack of precision around the effect estimate that is characteristic of an insufficiently large sample size.
+**8.23** (a) False. The entire confidence interval is above 0. (b) True. (c) True. (d) True. (e) False. It is simply the negated and reordered values: (-0.06,-0.02).
+8.25 Subscript C means control group. Subscript T means truck drivers. $H _ { 0 } : p _ { C } = p _ { T } . H _ { A } : p _ { C } \neq p _ { T }$ Independence is satisfied (random samples), as is the success-failure condition, which we would check using the pooled proportion $\left( \hat { p } _ { p o o l } = 7 0 / 4 9 5 = 0 . 1 4 1 \right)$ . Z = −1.65 → p-value = 0.0989. Since the p-value is high (default to alpha = 0.05), we fail to reject $H _ { 0 } .$ . The data do not provide strong evidence that the rates of sleep deprivation are different for non-transportation workers and truck drivers.
+**8.27** (a) False. The chi-square distribution has one parameter called degrees of freedom. (b) True. (c) True. (d) False. As the degrees of freedom increases, the shape of the chi-square distribution becomes more symmetric.
+**8.29** (a) Two-way table:
+
+<table><tr><td rowspan="2">Treatment</td><td colspan="2">Quit</td><td rowspan="2">Total</td></tr><tr><td>Yes</td><td>No</td></tr><tr><td>Patch + support group</td><td>40</td><td>110</td><td>150</td></tr><tr><td>Only patch</td><td>30</td><td>120</td><td>150</td></tr><tr><td>Total</td><td>70</td><td>230</td><td>300</td></tr></table>
+
+(b-i) $E_{row_{1},col_{1}} = \frac{(row\ 1\ total) \times (col\ 1\ total)}{table\ total} = 35$ . This is lower than the observed value.
+(b-ii) $E_{row_{2},col_{2}} = \frac{(row_{2}total) \times (col_{2}total)}{label total} = 115$ . This is lower than the observed value.
+
+**8.31** (a) $H _ { 0 } ;$ There is no association between statin use and educational level. $H _ { A } ;$ : There is an association between statin use and educational level
+
+(b) It is reasonable to assume the counts are independent. The smallest expected value in the table is 39.27, so the success-failure condition is reasonably met. (c) There is statistically significant evidence at $\alpha = 0 . 0 5$ of an association between educational level and statin use. Individuals with a higher educational level are less likely to be statin users.
+
+**8.33** (a)
+
+|  | No Default | Default | Sum |
+| --- | --- | --- | --- |
+| Non-Diabetic | 1053 | 127 | 1180 |
+| Diabetic | 54 | 0 | 54 |
+| Sum | 1107 | 127 | 1234 |
+
+(b) $H _ { 0 } : p _ { 1 } = p _ { 2 }$ versus $H _ { A } : p _ { 1 } \neq p _ { 2 }$ , where $p _ { 1 }$ represents the population proportion of treatment default in diabetics and $p _ { 2 }$ represents the population proportion of treatment default in non-diabetics. (c) It is reasonable to assume the counts are independent. The smallest expected value is 5.56, which is not smaller than 5. (d) The $\chi ^ { 2 }$ test statistic is 5.37, with 1 degree of freedom. The p-value of the test statistic is 0.02. There is sufficient evidence to conclude that the proportion of treatment default is higher in non-diabetics than in diabetics.
+
+## 8.35 (a) One possible $2 \times 2$ contingency table:
+
+<table><tr><td></td><td colspan="2">Mosquito Nets</td><td></td></tr><tr><td></td><td>No</td><td>Yes</td><td>Total</td></tr><tr><td>Malaria</td><td>30</td><td>22</td><td>52</td></tr><tr><td>No Malaria</td><td>70</td><td>78</td><td>148</td></tr><tr><td>Total</td><td>100</td><td>100</td><td>200</td></tr></table>
+
+(b) Expected number of infected children among 100 families who did receive a net: $\frac { 5 2 \times 1 0 0 } { 2 0 0 } = 2 6 .$
+(c) The null hypothesis is $H _ { 0 }$ : Using a mosquito net and being infected with malaria are not associated. The alternative is $H _ { A }$ : using a net and being infected with malaria are associated. The $\chi ^ { 2 }$ statistic (1.66) has 1 degree of freedom and the table A3 can be used to show that $p > 0 . 1 0$ . There is not statistically significant evidence of an association between malaria infection and use of a net in children.
+(d) Because this is a prospective study, the relative risk can be calculated directly from the table. Let pNo Nets be the probability that a child without a net will be infected with malaria: $\hat { p } _ { \mathrm { N o \; N e t s } } = \frac { 3 0 } { 1 0 0 } = 0 . 3 0 .$ Let $p _ { \mathrm { N e t s } }$ be the probability that a child with a net will be infected with malaria: $\hat { p } _ { \mathrm { N e t s } } = \frac { 2 2 } { 1 0 0 } = 0 . 2 2$ . The estimated relative risk: $\widehat { R R } = \frac { \hat { p } _ { \mathrm { N o   N e t s } } } { \hat { p } _ { \mathrm { N e t s } } } = \frac { 0 . 3 0 } { 0 . 2 2 } = 1 . 3 6$ . The risk of malaria infection for children in the control group is 36% higher than risk for children in the treatment group.
+
+**8.37** (a) Under the null hypothesis of no association, the expected cell counts are 9.07 and 7.93 in the wait together and wait alone groups, respectively, for those considered "high anxiety" and 6.93 and 6.07 in the wait together and wait alone groups, respectively, for those considered "low anxiety". (b) Use the hypergeometric distribution with parameters $N = 3 0 ,   m = 1 6 ,$ and $n = 1 7 ;$ calculate $P ( X = 1 2 )$ . Consider the "successes" to be the individuals who wait together, and the "number sampled" to be the people randomized to the highanxiety group. The probability of the observed set of results, assuming the marginal totals are fixed and the null hypothesis is true, is 0.0304. (c) More individuals than expected in the high-anxiety group were observed to wait together; thus, tables that are more extreme in the same direction also consist of those where more people in the high-anxiety group wait together than observed. These are tables in which 13, 14, 15, or 16 individuals in the high-anxiety group wait together.
+
+|  | Wait Together | Wait Alone | Sum |
+| --- | --- | --- | --- |
+| High-Anxiety | 13 | 4 | 17 |
+| Low-Anxiety | 3 | 10 | 13 |
+| Sum | 16 | 14 | 30 |
+
+|  | Wait Together | Wait Alone | Sum |
+| --- | --- | --- | --- |
+| High-Anxiety | 14 | 3 | 17 |
+| Low-Anxiety | 2 | 11 | 13 |
+| Sum | 16 | 14 | 30 |
+
+|  | Wait Together | Wait Alone | Sum |
+| --- | --- | --- | --- |
+| High-Anxiety | 15 | 2 | 17 |
+| Low-Anxiety | 1 | 12 | 13 |
+| Sum | 16 | 14 | 30 |
+
+|  | Wait Together | Wait Alone | Sum |
+| --- | --- | --- | --- |
+| High-Anxiety | 16 | 1 | 17 |
+| Low-Anxiety | 0 | 13 | 13 |
+| Sum | 16 | 14 | 30 |
+
+(d) Let $p _ { 1 }$ represent the population proportion of individuals waiting together in the high-anxiety group and $p _ { 2 }$ represent the population proportion of individuals waiting together in the low-anxiety group. Test $H _ { 0 } : p _ { 1 } = p _ { 2 }$ against $H _ { A } : p _ { 1 } \neq p _ { 2 }$ . Let $\alpha = 0 . 0 5$ . The two-sided p-value is 0.063. There is insufficient evidence to reject the null hypothesis; the data do not suggest there is an association between high anxiety and a person’s desire to be in the company of others.
+
+**8.39** (a) $H _ { 0 } ;$ The distribution of the format of the book used by the students follows the professor’s predic tions. $H _ { A } \colon$ The distribution of the format of the book used by the students does not follow the professor’s predictions. (b) $E_{hard\ copy} = 126 \times 0.60 = 75.6. E_{print} = 126 \times 0.25 = 31.5. E_{online} = 126 \times 0.15 = 18.9.$ (c) Independence: The sample is not random. However, if the professor has reason to believe that the proportions are stable from one term to the next and students are not affecting each other’s study habits, independence is probably reasonable. Sample size: All expected counts are at least 5. (d) $\chi^{2}=2.32, df=2,  p-value =0.313.$ (e) Since the p-value is large, we fail to reject $H _ { 0 } .$ The data do not provide strong evidence indicating the professor’s predictions were statistically inaccurate.
+
+**8.41** (a)
+
+|  | CVD | No CVD |
+| --- | --- | --- |
+| Age Onset ≤ 50 Years | 15 | 25 |
+| Age Onset > 50 Years | 5 | 55 |
+
+(b) The odds of CVD for patients older than 50 years when diagnosed with diabetes is $5 / 5 5 = 0 . 0 9$ . The odds of CVD for the patients younger than 50 years at diabetes onset is $1 5 / 2 5 = 0 . 6 0$ . The relative odds (or odds ratio, OR) is $0.09/0.60=0.15$
+(c) The odds of CVD for someone with late onset diabetes is less than 1/5 that of people with earlier onset diabetes. This can be explained by the fact that people with diabetes tend to build up plaque in their arteries; with early onset diabetes, plaque has longer time to accumulate, eventually causing CVD.
+(d) $H _ { 0 } : O R = 1$
+(e) The chi-square test can be used to test $H _ { 0 }$ as long as the conditions for the test have been met. The observations are likely independent; knowing one person’s age of diabetes onset and CVD status is unlikely to provide information about another person’s age of diabetes onset and CVD status. Under $H _ { 0 } ,$ the expected cell count for the lower left cell is ${ \big ( } 6 0 { \big ) } { \big ( } 2 0 { \big ) } / 1 0 0 = 1 2$ , which is bigger than $5 ;$ all other expected cell counts will be larger.
+(f) Since the study is not a randomized experiment, it cannot demonstrate causality. It may be the case, for example, that CVD presence causes earlier onset of diabetes. The study only demonstrates an association between cardiovascular disease and diabetes.
+
+**8.43** (a) No. This is an example of outcome dependent sampling. Subjects were first identified according to presence or absence of the CNS disorder, then queried about use of the drug. It is only possible to estimate the probability that someone had used the drug, given they either did or did not have a CNS disorder.
+
+(b) The appropriate measure of association is the odds ratio.
+(c) The easiest way of calculating the OR for the table is the cross-product of the diagonal elements of the table: $[ ( 1 0 ) ( 4 0 0 0 ) ] / [ ( 2 0 0 0 ) ( 7 ) ] = 2 . 8 6$ . Using the definition, it can be calculated as:
+
+$$
+\hat {O R} = \frac {\frac {\hat {P} (\text {CNS} | \text {Usage})}{1 - \hat {P} (\text {CNS} | \text {Usage})}}{\frac {\hat {P} (\text {CNS} | \text {No Usage)}}{1 - \hat {P} (\text {CNS} | \text {No Usage})}} = \frac {a d}{b c} = \frac {(1 0) (4 0 0 0)}{(2 0 0 0) (7)} = 2. 8 6
+$$
+
+(d) The odds ratio has the interpretation of the relative odds of presence of a CNS disorder, comparing people who have used the weight loss drug to those who have not. People who have used the weight loss drug have odds of CNS that are almost three times as large as those for people who have not used the drug.
+(e) Fisher’s exact test is better than the chi-square test. The independence assumption is met, but the expected cell count corresponding the presence of a CNS disorder and the use of the drug is 5.68, so not all the expected cell counts are less than 10.
+
+**8.45** (a) The p-value is 0.92; there is insufficient evidence to reject the null hypothesis of no association. These data are plausible with the null hypothesis that green tea consumption is independent of esophageal carcinoma. (b) Since the study uses outcome-dependent sampling, the odds ratio should be used as a measure of association rather than relative risk. The odds ratio of esophageal carcinoma, comparing green tea drinkers to non-drinkers, is 1.08; the odds of carcinoma for those who regularly drink green tea are 8% larger than the odds for those who never drink green tea.
+
+# Appendix B
+
+# Distribution tables
+
+## B.1 Normal Probability Table
+
+The area to the left of Z represents the percentile of the observation. The normal probability table always lists percentiles.
+
+![](images/page_462_image_5.jpg)
+
+To find the area to the right, calculate 1 minus the area to the left.
+
+![](images/page_462_chart_7.jpg)
+
+<details>
+<summary>violin</summary>
+
+| Metric | Value |
+| --- | --- |
+| Base Value | 1.0000 |
+| Normalized Mean (Left) | 0.6664 |
+| Normalized Mean (Right) | 0.3336 |
+</details>
+
+For additional details about working with the normal distribution and the normal probability table, see Section 3.3, which starts on page 152.
+
+![](images/page_463_chart_2.jpg)
+
+<details>
+<summary>violin</summary>
+
+| Region | Description |
+| --- | --- |
+| Shaded Area | Left side (left to right) |
+</details>
+
+negative Z
+
+<table><tr><td colspan="10">Second decimal place of Z</td><td rowspan="2">Z</td></tr><tr><td>0.09</td><td>0.08</td><td>0.07</td><td>0.06</td><td>0.05</td><td>0.04</td><td>0.03</td><td>0.02</td><td>0.01</td><td>0.00</td></tr><tr><td>0.0002</td><td>0.0003</td><td>0.0003</td><td>0.0003</td><td>0.0003</td><td>0.0003</td><td>0.0003</td><td>0.0003</td><td>0.0003</td><td>0.0003</td><td>-3.4</td></tr><tr><td>0.0003</td><td>0.0004</td><td>0.0004</td><td>0.0004</td><td>0.0004</td><td>0.0004</td><td>0.0004</td><td>0.0005</td><td>0.0005</td><td>0.0005</td><td>-3.3</td></tr><tr><td>0.0005</td><td>0.0005</td><td>0.0005</td><td>0.0006</td><td>0.0006</td><td>0.0006</td><td>0.0006</td><td>0.0006</td><td>0.0007</td><td>0.0007</td><td>-3.2</td></tr><tr><td>0.0007</td><td>0.0007</td><td>0.0008</td><td>0.0008</td><td>0.0008</td><td>0.0008</td><td>0.0009</td><td>0.0009</td><td>0.0009</td><td>0.0010</td><td>-3.1</td></tr><tr><td>0.0010</td><td>0.0010</td><td>0.0011</td><td>0.0011</td><td>0.0011</td><td>0.0012</td><td>0.0012</td><td>0.0013</td><td>0.0013</td><td>0.0013</td><td>-3.0</td></tr><tr><td>0.0014</td><td>0.0014</td><td>0.0015</td><td>0.0015</td><td>0.0016</td><td>0.0016</td><td>0.0017</td><td>0.0018</td><td>0.0018</td><td>0.0019</td><td>-2.9</td></tr><tr><td>0.0019</td><td>0.0020</td><td>0.0021</td><td>0.0021</td><td>0.0022</td><td>0.0023</td><td>0.0023</td><td>0.0024</td><td>0.0025</td><td>0.0026</td><td>-2.8</td></tr><tr><td>0.0026</td><td>0.0027</td><td>0.0028</td><td>0.0029</td><td>0.0030</td><td>0.0031</td><td>0.0032</td><td>0.0033</td><td>0.0034</td><td>0.0035</td><td>-2.7</td></tr><tr><td>0.0036</td><td>0.0037</td><td>0.0038</td><td>0.0039</td><td>0.0040</td><td>0.0041</td><td>0.0043</td><td>0.0044</td><td>0.0045</td><td>0.0047</td><td>-2.6</td></tr><tr><td>0.0048</td><td>0.0049</td><td>0.0051</td><td>0.0052</td><td>0.0054</td><td>0.0055</td><td>0.0057</td><td>0.0059</td><td>0.0060</td><td>0.0062</td><td>-2.5</td></tr><tr><td>0.0064</td><td>0.0066</td><td>0.0068</td><td>0.0069</td><td>0.0071</td><td>0.0073</td><td>0.0075</td><td>0.0078</td><td>0.0080</td><td>0.0082</td><td>-2.4</td></tr><tr><td>0.0084</td><td>0.0087</td><td>0.0089</td><td>0.0091</td><td>0.0094</td><td>0.0096</td><td>0.0099</td><td>0.0102</td><td>0.0104</td><td>0.0107</td><td>-2.3</td></tr><tr><td>0.0110</td><td>0.0113</td><td>0.0116</td><td>0.0119</td><td>0.0122</td><td>0.0125</td><td>0.0129</td><td>0.0132</td><td>0.0136</td><td>0.0139</td><td>-2.2</td></tr><tr><td>0.0143</td><td>0.0146</td><td>0.0150</td><td>0.0154</td><td>0.0158</td><td>0.0162</td><td>0.0166</td><td>0.0170</td><td>0.0174</td><td>0.0179</td><td>-2.1</td></tr><tr><td>0.0183</td><td>0.0188</td><td>0.0192</td><td>0.0197</td><td>0.0202</td><td>0.0207</td><td>0.0212</td><td>0.0217</td><td>0.0222</td><td>0.0228</td><td>-2.0</td></tr><tr><td>0.0233</td><td>0.0239</td><td>0.0244</td><td>0.0250</td><td>0.0256</td><td>0.0262</td><td>0.0268</td><td>0.0274</td><td>0.0281</td><td>0.0287</td><td>-1.9</td></tr><tr><td>0.0294</td><td>0.0301</td><td>0.0307</td><td>0.0314</td><td>0.0322</td><td>0.0329</td><td>0.0336</td><td>0.0344</td><td>0.0351</td><td>0.0359</td><td>-1.8</td></tr><tr><td>0.0367</td><td>0.0375</td><td>0.0384</td><td>0.0392</td><td>0.0401</td><td>0.0409</td><td>0.0418</td><td>0.0427</td><td>0.0436</td><td>0.0446</td><td>-1.7</td></tr><tr><td>0.0455</td><td>0.0465</td><td>0.0475</td><td>0.0485</td><td>0.0495</td><td>0.0505</td><td>0.0516</td><td>0.0526</td><td>0.0537</td><td>0.0548</td><td>-1.6</td></tr><tr><td>0.0559</td><td>0.0571</td><td>0.0582</td><td>0.0594</td><td>0.0606</td><td>0.0618</td><td>0.0630</td><td>0.0643</td><td>0.0655</td><td>0.0668</td><td>-1.5</td></tr><tr><td>0.0681</td><td>0.0694</td><td>0.0708</td><td>0.0721</td><td>0.0735</td><td>0.0749</td><td>0.0764</td><td>0.0778</td><td>0.0793</td><td>0.0808</td><td>-1.4</td></tr><tr><td>0.0823</td><td>0.0838</td><td>0.0853</td><td>0.0869</td><td>0.0885</td><td>0.0901</td><td>0.0918</td><td>0.0934</td><td>0.0951</td><td>0.0968</td><td>-1.3</td></tr><tr><td>0.0985</td><td>0.1003</td><td>0.1020</td><td>0.1038</td><td>0.1056</td><td>0.1075</td><td>0.1093</td><td>0.1112</td><td>0.1131</td><td>0.1151</td><td>-1.2</td></tr><tr><td>0.1170</td><td>0.1190</td><td>0.1210</td><td>0.1230</td><td>0.1251</td><td>0.1271</td><td>0.1292</td><td>0.1314</td><td>0.1335</td><td>0.1357</td><td>-1.1</td></tr><tr><td>0.1379</td><td>0.1401</td><td>0.1423</td><td>0.1446</td><td>0.1469</td><td>0.1492</td><td>0.1515</td><td>0.1539</td><td>0.1562</td><td>0.1587</td><td>-1.0</td></tr><tr><td>0.1611</td><td>0.1635</td><td>0.1660</td><td>0.1685</td><td>0.1711</td><td>0.1736</td><td>0.1762</td><td>0.1788</td><td>0.1814</td><td>0.1841</td><td>-0.9</td></tr><tr><td>0.1867</td><td>0.1894</td><td>0.1922</td><td>0.1949</td><td>0.1977</td><td>0.2005</td><td>0.2033</td><td>0.2061</td><td>0.2090</td><td>0.2119</td><td>-0.8</td></tr><tr><td>0.2148</td><td>0.2177</td><td>0.2206</td><td>0.2236</td><td>0.2266</td><td>0.2296</td><td>0.2327</td><td>0.2358</td><td>0.2389</td><td>0.2420</td><td>-0.7</td></tr><tr><td>0.2451</td><td>0.2483</td><td>0.2514</td><td>0.2546</td><td>0.2578</td><td>0.2611</td><td>0.2643</td><td>0.2676</td><td>0.2709</td><td>0.2743</td><td>-0.6</td></tr><tr><td>0.2776</td><td>0.2810</td><td>0.2843</td><td>0.2877</td><td>0.2912</td><td>0.2946</td><td>0.2981</td><td>0.3015</td><td>0.3050</td><td>0.3085</td><td>-0.5</td></tr><tr><td>0.3121</td><td>0.3156</td><td>0.3192</td><td>0.3228</td><td>0.3264</td><td>0.3300</td><td>0.3336</td><td>0.3372</td><td>0.3409</td><td>0.3446</td><td>-0.4</td></tr><tr><td>0.3483</td><td>0.3520</td><td>0.3557</td><td>0.3594</td><td>0.3632</td><td>0.3669</td><td>0.3707</td><td>0.3745</td><td>0.3783</td><td>0.3821</td><td>-0.3</td></tr><tr><td>0.3859</td><td>0.3897</td><td>0.3936</td><td>0.3974</td><td>0.4013</td><td>0.4052</td><td>0.4090</td><td>0.4129</td><td>0.4168</td><td>0.4207</td><td>-0.2</td></tr><tr><td>0.4247</td><td>0.4286</td><td>0.4325</td><td>0.4364</td><td>0.4404</td><td>0.4443</td><td>0.4483</td><td>0.4522</td><td>0.4562</td><td>0.4602</td><td>-0.1</td></tr><tr><td>0.4641</td><td>0.4681</td><td>0.4721</td><td>0.4761</td><td>0.4801</td><td>0.4840</td><td>0.4880</td><td>0.4920</td><td>0.4960</td><td>0.5000</td><td>-0.0</td></tr></table>
+
+<sup>∗</sup>For Z ≤ −3.50, the probability is less than or equal to 0.0002.

@@ -1,0 +1,5835 @@
+--- PDF page 330 ---
+330
+Chapter 7
+Multiple linear regression
+7.1 Introduction to multiple linear regression
+7.2 Simple versus multiple regression
+7.3 Evaluating the ﬁt of a multiple regression model
+7.4 The general multiple linear regression model
+7.5 Categorical predictors with several levels
+7.6 Reanalyzing the PREVEND data
+7.7 Interaction in regression
+7.8 Model selection for explanatory models
+7.9 The connection between ANOVA and regression
+7.10 Notes
+7.11 Exercises
+
+
+--- PDF page 331 ---
+331
+In most practical settings, more than one explanatory variable is likely to be asso-
+ciated with a response. This chapter discusses how the ideas behind simple linear
+regression can be extended to a model with multiple predictor variables.
+There are several applications of multiple regression. One of the most com-
+mon applications in a clinical setting is estimating an association between a re-
+sponse variable and primary predictor of interest while adjusting for possible con-
+founding variables. Sections 7.1 and 7.2 introduce the multiple regression model
+by examining the possible association between cognitive function and the use of
+statins after adjusting for potential confounders. Section 7.8 discusses another
+application of multiple regression—constructing a model that eﬀectively explains
+the observed variation in the response variable.
+The other sections in the chapter outline general principles of multiple re-
+gression, including the statistical model, methods for assessing quality of model
+ﬁt, categorical predictors with more than two levels, interaction, and the connec-
+tion between ANOVA and regression. The methods used to conduct hypothesis
+tests and construct conﬁdence intervals for regression coeﬃcients extend natu-
+rally from simple to multiple linear regression, so the section on the statistical
+model for multiple regression can be treated as optional.
+For labs, slides, and other resources, please visit
+www.openintro.org/book/biostat
+
+
+--- PDF page 332 ---
+332
+CHAPTER 7. MULTIPLE LINEAR REGRESSION
+7.1
+Introduction to multiple linear regression
+Statins are a class of drugs widely used to lower cholesterol. There are two main types of
+cholesterol: low density lipoprotein (LDL) and high density lipoprotein (HDL).1 Research suggests
+that adults with elevated LDL may be at risk for adverse cardiovascular events such as a heart attack
+or stroke. In 2013, a panel of experts commissioned by the American College of Cardiology and
+the American Heart Association recommended that statin therapy be considered in individuals
+who either have any form of atherosclerotic cardiovascular disease2 or have LDL cholesterol levels
+≥190 mg/dL, individuals with Type II diabetes ages 40 to 75 with LDL between 70 to 189 mg/dL,
+and non-diabetic individuals ages of 40 to 75 with a predicted probability of future clogged arteries
+of at least 0.075.3
+Health policy analysts have estimated that if the new guidelines were to be followed, almost
+half of Americans ages 40 to 75 and nearly all men over 60 would be prescribed a statin. However,
+some physicians have raised the question of whether treatment with a statin might be associated
+with an increased risk of cognitive decline.4,5 Older adults are at increased risk for cardiovascular
+disease, but also for cognitive decline. A study by Joosten, et al. examined the association of statin
+use and other variables with cognitive ability in an observational cohort of 4,095 participants from
+the Netherlands who were part of the larger PREVEND study introduced in Section 6.1.6 The
+analyses presented in this chapter are based on a random sample of 500 participants from the
+cohort.7
+The investigators behind the Joosten study anticipated an issue in the analysis—statins are
+used more often in older adults than younger adults, and older adults suﬀer a natural cognitive
+decline. Age is a potential confounder in this setting. If age is not accounted for in the analysis,
+it may seem that cognitive decline is more common among individuals prescribed statins, simply
+because those prescribed statins are simply older and more likely to have reduced cognitive ability
+than those not prescribed statins.
+1Total cholesterol level is the sum of LDL and HDL levels.
+2i.e., arteries thickening and hardening with plaque
+3Stone NJ, et al. 2013 ACC/AHA Guideline on the Treatment of Blood Cholesterol to Reduce Atherosclerotic Cardio-
+vascular Risk in Adults Circulation. 2014;129:S1-S45. DOI: 10.1161/01.cir.0000437738.63853.7a
+4Muldoon, Matthew F., et al. Randomized trial of the eﬀects of simvastatin on cognitive functioning in hypercholes-
+terolemic adults. The American journal of medicine 117.11 (2004): 823-829.
+5King, Deborah S., et al. Cognitive impairment associated with atorvastatin and simvastatin. Pharmacotherapy: The
+Journal of Human Pharmacology and Drug Therapy 23.12 (2003): 1663-1667.
+6Joosten H, Visser ST, van Eersel ME, Gansevoort RT, Bilo HJG, et al.
+(2014) Statin Use and Cognitive Function:
+Population-Based Observational Study with Long-Term Follow- Up.
+PLoS ONE 9(12): e115755.
+doi:10.1371/ jour-
+nal.pone.0115755
+7The random sample is accessible as prevend.samp in the oibiostat R package.
+
+
+--- PDF page 333 ---
+7.1. INTRODUCTION TO MULTIPLE LINEAR REGRESSION
+333
+40
+50
+60
+70
+80
+20
+40
+60
+80
+100
+120
+140
+RFFT Score
+Age (yrs)
+Figure 7.1: A scatterplot showing age vs. RFFT in prevend.samp. Statin users
+are represented with red points; participants not using statins are shown as blue
+points.
+Figure 7.1 visually demonstrates why age is a potential confounder for the association be-
+tween statin use and cognitive function, where cognitive function is measured via the RuﬀFigural
+Fluency Test (RFFT). Scores range from 0 (worst) to 175 (best). The blue points indicate individu-
+als not using statins, while red points indicate statin users. First, it is clear that age and statin use
+are associated, with statin use becoming more common as age increases; the red points are more
+prevalent on the right side of the plot. Second, it is also clear that age is associated with lower
+RFFT scores; ignoring the colors, the point cloud drifts down and to the right. However, a close
+inspection of the plot suggests that for ages in relatively small ranges (e.g., ages 50-60), statin use
+may not be strongly associated with RFFT score—there are approximately as many red dots with
+low RFFT scores as with high RFFT scores in a given age range. In other words, for subsets of
+participants with approximately similar ages, statin use may not be associated with RFFT. Multiple
+regression provides a way to estimate the association of statin use with RFFT while adjusting for
+age; i.e., accounting for the underlying relationship between age and statin use.
+
+
+--- PDF page 334 ---
+334
+CHAPTER 7. MULTIPLE LINEAR REGRESSION
+7.2
+Simple versus multiple regression
+A simple linear regression model can be ﬁt for an initial examination of the association be-
+tween statin use and RFFT score,
+E(RFFT) = β0 + βStatin(Statin).
+RFFT scores in prevend.samp are approximately normally distributed, ranging between ap-
+proximately 10 and 140, with no obvious outliers (Figure 7.2(a)). The least squares regression line
+shown in Figure 7.2(b) has a negative slope, which suggests a possible negative association.
+RFFT Scores
+Frequency
+20
+40
+60
+80
+100
+120
+140
+0
+10
+20
+30
+40
+50
+60
+70
+(a)
+Statin Use
+0
+(No)
+1
+(Yes)
+20
+40
+60
+80
+100
+120
+140
+RFFT Score
+(b)
+Figure 7.2: (a) Histogram of RFFT scores. (b) Scatterplot of RFFT score versus
+statin use in prevend.samp. The variable Statin is coded 1 for statin users, and 0
+otherwise.
+Figure 7.3 gives the parameter estimates of the least squares line, and indicates that the as-
+sociation between RFFT score and statin use is highly signiﬁcant. On average, statin users score
+approximately 10 points lower on the RFFT. However, even though the association is statistically
+signiﬁcant, it is potentially misleading since the model does not account for the underlying re-
+lationship between age and statin use. The association between age and statin use visible from
+Figure 7.1 is even more apparent in Figure 7.4, which shows that the median age of statin users is
+about 10 years higher than the median age of individuals not using statins.
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+70.7143
+1.3808
+51.21
+0.0000
+Statin
+-10.0534
+2.8792
+-3.49
+0.0005
+Figure 7.3: R summary output for the simple regression model of RFFT versus
+statin use in prevend.samp.
+
+
+--- PDF page 335 ---
+7.2. SIMPLE VERSUS MULTIPLE REGRESSION
+335
+Statin Use
+Age (years)
+0
+1
+40
+50
+60
+70
+80
+Figure 7.4: Boxplot of age by statin use in prevend.samp. The variable Statin is
+coded 1 for statin users, and 0 otherwise.
+Multiple regression allows for a model that incorporates both statin use and age,
+E(RFFT) = β0 + βStatin(Statin) + βAge(Age).
+In statistical terms, the association between RFFT and Statin is being estimated after adjusting for
+Age. This is an example of one of the more important applications of multiple regression: estimat-
+ing an association between a response variable and primary predictor of interest while adjusting
+for possible confounders. In this setting, statin use is the primary predictor of interest.
+The principles and assumptions behind the multiple regression model are introduced more
+formally in Section 7.4, along with the method used to estimate the coeﬃcients. Figure 7.5 shows
+the parameter estimates for the model from R.
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+137.8822
+5.1221
+26.92
+0.0000
+Statin
+0.8509
+2.5957
+0.33
+0.7432
+Age
+-1.2710
+0.0943
+-13.48
+0.0000
+Figure 7.5: R summary output for the multiple regression model of RFFT versus
+statin use and age in prevend.samp.
+
+
+--- PDF page 336 ---
+336
+CHAPTER 7. MULTIPLE LINEAR REGRESSION
+EXAMPLE 7.1
+Using the parameter estimates in Figure 7.5, write the prediction equation for the linear model.
+How does the predicted RFFT score for a 67-year-old not using statins compare to that of an indi-
+vidual of the same age who does use statins?
+The equation of the linear model is
+
+RFFT = 137.8822 + 0.8509(Statin) −1.2710(Age).
+The predicted RFFT score for a 67-year-old not using statins (Statin = 0) is
+
+RFFT = 137.8822 + (0.8509)(0) −(1.2710)(67) = 52.7252.
+The predicted RFFT score for a 67-year-old using statins (Statin = 1) is
+
+RFFT = 137.8822 + (0.8509)(1) −(1.2710)(67) = 53.5761.
+The two calculations diﬀer only by the value of the coeﬃcient βStatin, 0.8509.8 Thus, for two in-
+dividuals who are the same age, the model predicts that RFFT score will be 0.8509 higher in the
+individual taking statins; statin use is associated with a small increase in RFFT score.
+EXAMPLE 7.2
+Suppose two individuals are both taking statins; one individual is 50 years of age, while the other
+is 60 years of age. Compare their predicted RFFT scores.
+From the model equation, the coeﬃcient of age βAge is -1.2710; an increase in one unit of age (i.e.,
+one year) is associated with a decrease in RFFT score of -1.2710, when statin use is the same. Thus,
+the individual who is 60 years of age is predicted to have an RFFT score that is about 13 points
+lower ((−1.2710)(10) = −12.710) than the individual who is 50 years of age.
+This can be conﬁrmed numerically:
+The predicted RFFT score for a 50-year-old using statins is
+
+RFFT = 137.8822 + (0.8509)(1) −(1.2710)(50) = 75.1831.
+The predicted RFFT score for a 60-year-old using statins is
+
+RFFT = 137.8822 + (0.8509)(1) −(1.2710)(60) = 62.4731.
+The scores diﬀer by 62.4731 −75.1831 = −12.710.
+8In most cases, predictions do not need to be calculated to so many signiﬁcant digits, since the coeﬃcients are only
+estimates. This example uses the additional precision to illustrate the role of the coeﬃcients.
+
+
+--- PDF page 337 ---
+7.2. SIMPLE VERSUS MULTIPLE REGRESSION
+337
+GUIDED PRACTICE 7.3
+What does the intercept represent in this model? Does the intercept have interpretive value?9
+As in simple linear regression, t-statistics can be used to test hypotheses about the slope coeﬃ-
+cients; for this model, the two null hypotheses are H0 : βStatin = 0 and H0 : βAge = 0. The p-values for
+the tests indicate that at signiﬁcance level α = 0.05, the association between RFFT score and statin
+use is not statistically signiﬁcant, but the association between RFFT score and age is signiﬁcant.
+In a clinical setting, the interpretive focus lies on reporting the nature of the association be-
+tween the primary predictor and the response and specifying which confounders have been ad-
+justed for. The results of the analysis might be summarized as follows—
+Although the use of statins appeared to be associated with lower RFFT scores when
+no adjustment was made for possible confounders, statin use is not signiﬁcantly asso-
+ciated with RFFT score in a regression model that adjusts for age.
+The results shown in Figure 7.5 do not provide information about either the quality of the
+model ﬁt or its value as a prediction model. The next section describes the residual plots that can
+be used to check model assumptions and the use of R2 to estimate how much of the variability in
+the response variable is explained by the model.
+There is an important aspect of these data that should not be overlooked. The data do not
+come from a study in which participants were followed as they aged; i.e., a longitudinal study.
+Instead, this study was a cross-sectional study, in which patient age, statin use, and RFFT score
+were recorded for all participants during a short time interval. While the results of the study
+support the conclusion that older patients tend to have lower RFFT scores, they cannot be used
+to conclude that scores decline with age in individuals; there were no repeated measurements of
+RFFT taken as individual participants aged. Older patients come from an earlier birth cohort, and
+it is possible, for instance, that younger participants have more post-secondary school education
+or better health practices generally; such a cohort eﬀect may have some explanatory eﬀect on the
+observed association. The details of how a study is designed and how data are collected should
+always be taken into account when interpreting study results.
+9The intercept represents an individual with value 0 for both Statin and Age; i.e., an individual not using statins with
+age of 0 years. It is not reasonable to predict RFFT score for a newborn, or to assess statin use; the intercept is meaningless
+and has no interpretive value.
+
+
+--- PDF page 338 ---
+338
+CHAPTER 7. MULTIPLE LINEAR REGRESSION
+7.3
+Evaluating the ﬁt of a multiple regression model
+7.3.1
+Using residuals to check model assumptions
+The assumptions behind multiple regression are essentially the same as the four assumptions
+listed in Section 6.1 for simple linear regression. The assumption of linearity is extended to multi-
+ple regression by assuming that when only one predictor variable changes, it is linearly related to
+the change in the response variable. Assumption 2 becomes the slightly more general assumption
+that the residuals have approximately constant variance. Assumptions 3 and 4 do not change; it is
+assumed that the observations on each case are independent and the residuals are approximately
+normally distributed.
+Since it is not possible to make a scatterplot of a response variable against several simultane-
+ous predictors, residual plots become even more essential as tools for checking modeling assump-
+tions.
+To assess the linearity assumption, examine plots of residuals against each of the predictors.
+These plots might show an nonlinear trend that could be corrected with a transformation. The
+scatterplot of residual values versus age in Figure 7.6 shows no apparent nonlinear trends. It is not
+necessary to assess linearity against a categorical predictor, since a line drawn through two points
+(i.e., the means of the two groups) is necessarily linear.
+40
+50
+60
+70
+80
+−60
+−40
+−20
+0
+20
+40
+60
+Residual
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+Age (yrs)
+Figure 7.6: Residuals versus age in the model for RFFT vs statins and age in the
+PREVEND data.
+
+
+--- PDF page 339 ---
+7.3. EVALUATING THE FIT OF A MULTIPLE REGRESSION MODEL
+339
+Since each case has one predicted value and one residual, regardless of the number of pre-
+dictors, residuals can still be plotted against predicted values to assess the constant variance as-
+sumption. The scatterplot in the left panel of Figure 7.7 shows that the variance of the residuals is
+slightly smaller for lower predicted values of RFFT, but is otherwise approximately constant.
+Just as in simple regression, normal probability plots can be used to check the normality
+assumption of the residuals. The normal probability plot in the right panel of Figure 7.7 shows
+that the residuals from the model are reasonably normally distributed, with only slight departures
+from normality in the tails.
+40
+50
+60
+70
+80
+90
+−60
+−40
+−20
+0
+20
+40
+60
+Predicted Value
+Residual
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G G
+G
+G
+G
+G
+G
+GG
+G
+Theoretical Quantiles
+Sample Quantiles
+−3
+−2
+−1
+0
+1
+2
+3
+−60
+−40
+−20
+0
+20
+40
+60
+Figure 7.7: Residual plots from the linear model for RFFT versus statin use and
+age in prevend.samp.
+
+
+--- PDF page 340 ---
+340
+CHAPTER 7. MULTIPLE LINEAR REGRESSION
+EXAMPLE 7.4
+Section 1.7 featured a case study examining the evidence for ethnic discrimination in the amount of
+ﬁnancial support oﬀered by the State of California to individuals with developmental disabilities.
+Although an initial look at the data suggested an association between expenditures and ethnicity,
+further analysis suggested that age is a confounding variable for the relationship.
+A multiple regression model can be ﬁt to these data to model the association between expenditures,
+age, and ethnicity in a subset that only includes data from Hispanics and White non-Hispanics.
+Two residual plots from the model ﬁt for
+E(expenditures) = β0 + βethnicity(ethnicity) + βage(age)
+are shown in Figure 7.8. From these plots, assess whether a linear regression model is appropriate
+for these data.
+The model assumptions are clearly violated. The residual versus ﬁtted plot shows obvious pat-
+terns; the residuals do not scatter randomly about the y = 0 line. Additionally, the variance of the
+residuals is not constant around the y = 0 line. As shown in the normal probability plot, the resid-
+uals show marked departures from normality, particularly in the upper tail; although this skewing
+may be partially resolved with a log transformation, the patterns in the residual versus ﬁtted plot
+are more problematic.
+Recall that a residual is the diﬀerence between an observed value and expected value; for an obser-
+vation i, the residual equals yi −ˆyi. Positive residuals occur when a model’s predictions are smaller
+that the observed values, and vice versa for negative residuals. In the residual versus ﬁtted plot,
+it can be seen that in the middle range of predicted values, the model consistently under-predicts
+expenditures; on the upper and lower ends, the model over-predicts. This is a particularly serious
+issue with the model ﬁt.
+A single linear regression model is not appropriate for these data. For a more detailed examination
+of the model residuals, refer to Chapter 7, Lab 2. With some subsetting according to age cohort, it
+can be reasonable to use linear regression for modeling these data.
+0
+20000
+60000
+−20000
+−10000
+0
+10000
+20000
+30000
+Residual
+G
+G
+G
+GG
+G
+G
+G
+GG
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+GG
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+GGG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+GG
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+Sample Quantiles
+−3
+−1
+0
+1
+2
+3
+−20000
+−10000
+0
+10000
+20000
+30000
+Theoretical Quantiles
+Figure 7.8: Residual versus ﬁtted values plot and residual normal probability
+plot from the linear model for expenditures versus ethnicity and age for a subset
+of dds.discr.
+
+
+--- PDF page 341 ---
+7.3. EVALUATING THE FIT OF A MULTIPLE REGRESSION MODEL
+341
+7.3.2
+Using R2
+R2
+R2 and adjusted R2
+R2
+R2 with multiple regression
+Section 6.3.2 provided two deﬁnitions of the R2 statistic—it is the square of the correlation
+coeﬃcient r between a response and the single predictor in simple linear regression, and equiv-
+alently, it is the proportion of the variation in the response variable explained by the model. In
+statistical terms, the second deﬁnition can be written as
+R2 = Var(yi) −Var(ei)
+Var(yi)
+= 1 −Var(ei)
+Var(yi),
+where yi and ei denote the response and residual values for the ith case.
+The ﬁrst deﬁnition cannot be used in multiple regression, since there is a correlation coef-
+ﬁcient between each predictor and the response variable. However, since there is a single set of
+residuals, the second deﬁnition remains applicable.
+Although R2 can be calculated directly from the equation, it is rarely calculated by hand since
+statistical software includes R2 as a standard part of the summary output for a regression model.10
+In the model with response RFFT and predictors Statin and Age, R2 = 0.2852. The model explains
+almost 29% of the variability in RFFT scores, a considerable improvement over the model with
+Statin alone (R2 = 0.0239).
+Adding a variable to a regression model always increases the value of R2. Sometimes that
+increase is large and clearly important, such as when age is added to the model for RFFT scores. In
+other cases, the increase is small, and may not be worth the added complexity of including another
+variable. The adjusted R-squared is often used to balance predictive ability with complexity in a
+multiple regression model. Like R2, the adjusted R2 is routinely provided in software output.
+ADJUSTED R2 AS A TOOL FOR MODEL ASSESSMENT
+The adjusted R2 is computed as
+R2
+adj = 1 −Var(ei)/(n −p −1)
+Var(yi)/(n −1)
+= 1 −Var(ei)
+Var(yi) ×
+n −1
+n −p −1,
+where n is the number of cases used to ﬁt the model and p is the number of predictor variables
+in the model.
+Essentially, the adjusted R2 imposes a penalty for including additional predictors that do not
+contribute much towards explaining the observed variation in the response variable. The value of
+the adjusted R2 in the model with both Statin and Age is 0.2823, which is essentially the same
+as the R2 value of 0.2852. The additional predictor Age considerably increases the strength of the
+model, resulting in only a small penalty to the R2 value.
+While the adjusted R2 is useful as a statistic for comparing models, it does not have an inherent
+interpretation like R2. Students often confuse the interpretation of R2 and adjusted R2; while the
+two are similar, adjusted R2 is not the proportion of variation in the response variable explained by
+the model. The use of adjusted R2 for model selection will be discussed in Section 7.8.
+10In R and other software, R2 is typically labeled ’multiple R-squared’.
+
+
+--- PDF page 342 ---
+342
+CHAPTER 7. MULTIPLE LINEAR REGRESSION
+7.4
+The general multiple linear regression model
+This section provides a compact summary of the multiple regression model and contains more
+mathematical detail than most other sections; the next section, Section 7.5, discusses categorical
+predictors with more than two levels. The ideas outlined in this section and the next are illustrated
+with an extended analysis of the PREVEND data in Section 7.6.
+7.4.1
+Model parameters and least squares estimation
+For multiple regression, the data consist of a response variable Y and p explanatory variables
+X1,X2,...,Xp. Instead of the simple regression model
+Y = β0 + β1X + ε,
+multiple regression has the form
+Y = β0 + β1X1 + β2X2 + β3X3 + ··· + βpXp + ε,
+or equivalently
+E(Y ) = β0 + β1X1 + β2X2 + β3X3 + ··· + βpXp,
+since the normally distributed error term ε is assumed to have mean 0. Each predictor xi has an
+associated coeﬃcient βi. In simple regression, the slope coeﬃcient β captures the change in the
+response variable Y associated with a one unit change in the predictor X. In multiple regression,
+the coeﬃcient βj of a predictor Xj denotes the change in the response variable Y associated with a
+one unit change in Xj when none of the other predictors change; i.e., each β coeﬃcient in multiple
+regression plays the role of a slope, as long as the other predictors are not changing.
+Multiple regression can be thought of as the model for the mean of the response Y in a pop-
+ulation where the mean depends on the values of the predictors, rather than being constant. For
+example, consider a setting with two binary predictors such as statin use and sex; the predictors
+partition the population into four subgroups, and the four predicted values from the model are
+estimates of the mean in each of the four groups.
+
+
+--- PDF page 343 ---
+7.4. THE GENERAL MULTIPLE LINEAR REGRESSION MODEL
+343
+GUIDED PRACTICE 7.5
+Figure 7.9 shows an estimated regression model for RFFT with predictors Statin and Gender, where
+Gender is coded 0 for males and 1 for females.11 Based on the model, what are the estimated mean
+RFFT scores for the four groups deﬁned by these two categorical predictors?12
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+70.4068
+1.8477
+38.11
+0.0000
+Statin
+-9.9700
+2.9011
+-3.44
+0.0006
+Gender
+0.6133
+2.4461
+0.25
+0.8021
+Figure 7.9: R summary output for the multiple regression model of RFFT versus
+statin use and sex in prevend.samp.
+Datasets for multiple regression have n cases, usually indexed algebraically by i, where i takes
+on values from 1 to n; 1 denotes the ﬁrst case in the dataset and n denotes the last case. The dataset
+prevend.samp contains n = 500 observations. Algebraic representations of the data must indicate
+both the case number and the predictor in the set of p predictors. For case i in the dataset, the
+variable Xij denotes predictor Xj; the response for case i is simply Yi, since there can only be
+one response variable. The dataset prevend.samp has many possible predictors, some of which are
+examined later in this chapter. The analysis in Section 7.2 used p = 2 predictors, Statin and Age.
+Just as in Chapter 2, upper case letters are used when thinking of data as a set of random
+observations subject to sampling from a population, and lower case letters are used for observed
+values. In a dataset, it is common for each row to contain the information on a single case; the
+observations in row i of a dataset with p predictors can be written as (yi,xi1,xi2,...,xip).
+For any given set of estimates b1,b2,...,bp and predictors xi1,xi2,...,xip, predicted values of
+the response can be calculated using
+ˆyi = b0 + b1xi1 + b2xi2 + ··· + bpxip,
+where b0,b1,...,bp are estimates of the coeﬃcients β0,β1,...,βp obtained using the principle of least
+squares estimation.
+As in simple regression, each prediction has an associated residual, which is the diﬀerence
+between the observed value yi and the predicted value ˆyi, or ei = yi −ˆyi. The least squares estimate
+of the model is the set of estimated coeﬃcients b0,b1,...bp that minimizes e2
+1 + e2
+2 + ···e2n. Explicit
+formulas for the estimates involve advanced matrix theory, but are rarely used in practice. Instead,
+estimates are calculated using software such as as R, Stata, or Minitab.
+11Until recently, it was common practice to use gender to denote biological sex. Gender is diﬀerent than biological sex,
+but this text uses the original names in published datasets.
+12The prediction equation for the model is 
+RFFT = 70.41 −9.97(Statin) + 0.61(Gender). Both Statin and Gender can take
+on values of either 0 or 1; the four possible subgroups are statin non-user / male (0, 0), statin non-user / female (0, 1), statin
+user / male (1, 0), statin user / female (1, 1). Predicted RFFT scores for these groups are 70.41, 71.02, 60.44, and 61.05,
+respectively.
+
+
+--- PDF page 344 ---
+344
+CHAPTER 7. MULTIPLE LINEAR REGRESSION
+7.4.2
+Hypothesis tests and conﬁdence intervals
+Using t-tests for individual coeﬃcients
+The test of the null hypothesis H0 : βk = 0 is a test of whether the predictor Xk is associated with the
+response variable. When a coeﬃcient of a predictor equals 0, the predicted value of the response
+does not change when the predictor changes; i.e., a value of 0 indicates there is no association
+between the predictor and response. Due to the inherent variability in observed data, an estimated
+coeﬃcient bk will almost never be 0 even when the model coeﬃcient βk is. Hypothesis testing can
+be used to assess whether the estimated coeﬃcient is signiﬁcantly diﬀerent from 0 by examining
+the ratio of the estimated coeﬃcient to its standard error.
+When the assumptions of multiple regression hold, at least approximately, this ratio has a
+t-distribution with n −(p + 1) = n −p −1 degrees of freedom when the model coeﬃcient is 0. The
+formula for the degrees of freedom follows a general rule that appears throughout statistics—the
+degrees of freedom for an estimated model is the number of cases in the dataset minus the number
+of estimated parameters. There are p+1 parameters in the multiple regression model, one for each
+of the p predictors and one for the intercept.
+SAMPLING DISTRIBUTIONS OF ESTIMATED COEFFICIENTS
+Suppose
+ˆy = b0 + b1xi + b2xi + ··· + bpxi
+is an estimated multiple regression model from a dataset with n observations on the response
+and predictor variables, and let bk be one of the estimated coeﬃcients. Under the hypothesis
+H0 : βk = 0, the standardized statistic
+bk
+s.e.(bk)
+has a t-distribution with n −p −1 degrees of freedom.
+This sampling distribution can be used to conduct hypothesis tests and construct conﬁdence
+intervals.
+TESTING A HYPOTHESIS ABOUT A REGRESSION COEFFICIENT
+A test of the two-sided hypothesis
+H0 : βk = 0 vs. HA : βk , 0
+is rejected with signiﬁcance level α when
+|bk|
+s.e.(bk) > t⋆
+df,
+where t⋆
+df is the point on a t-distribution with n−p−1 degrees of freedom and area (1−α/2) in
+the left tail.
+
+
+--- PDF page 345 ---
+7.4. THE GENERAL MULTIPLE LINEAR REGRESSION MODEL
+345
+For one-sided tests, t⋆
+df is the point on a t-distribution with n−p−1 degrees of freedom and area
+(1 −α) in the left tail. A one-sided test of H0 against HA : βk > 0 rejects when the standardized co-
+eﬃcient is greater than t⋆
+df; a one-sided test of H0 against HA : βk < 0 rejects when the standardized
+coeﬃcient is less than t⋆
+df.
+CONFIDENCE INTERVALS FOR REGRESSION COEFFICIENT
+A two-sided 100(1 −α)% conﬁdence interval for the model coeﬃcient βk is
+bk ± s.e.(bk) × t⋆
+df.
+All statistical software packages provide an estimate s of the standard deviation of the resid-
+uals ϵ.
+The F-statistic for an overall test of the model
+When all the model coeﬃcients are 0, the predictors in the model, considered as a group, are not
+associated with the response; i.e., the response variable is not associated with any linear combina-
+tion of the predictors. The F-statistic is used to test this null hypothesis of no association, using the
+following idea.
+The variability of the predicted values about the overall mean response can be estimated by
+MSM =
+P
+i( ˆyi −y)2
+p
+.
+In this expression, p is the number of predictors and is the degrees of freedom of the numerator sum
+of squares (derivation not given here). The term MSM is called the model sum of squares because
+it reﬂects the variability of the values predicted by the model ( ˆyi) about the mean (y) response.13
+In an extreme case, MSM will have value 0 when all the predicted values coincide with the overall
+mean; in this scenario, a model would be unnecessary for making predictions, since the average of
+all observations could be used to make a prediction.
+The variability in the residuals can be measured by
+MSE =
+P
+i(yi −ˆyi)2
+n −p −1 .
+MSE is called the mean square of the errors since residuals are the observed ‘errors’, the diﬀerences
+between predicted and observed values.
+When MSM is small compared to MSE, the model has captured little of the variability in the
+data, and the model is of little or no value. The F-statistic is given by
+F = MSM
+MSE .
+The formula is not used for calculation, since the numerical value of the F-statistic is a routine
+part of the output of regression software.
+13It turns out that y is also the mean of the predicted values.
+
+
+--- PDF page 346 ---
+346
+CHAPTER 7. MULTIPLE LINEAR REGRESSION
+THE F-STATISTIC IN REGRESSION
+The F-statistic in regression is used to test the null hypothesis
+H0 : β1 = β2 = ··· = βp = 0
+against the alternative that at least one of the coeﬃcients is not 0.
+Under the null hypothesis, the sampling distribution of the F-statistic is an F-distribution
+with parameters (p,n −p −1), and the null hypothesis is rejected if the value of the F-statistic
+is in the right tail of the distribution of the sampling distribution with area α, where α is the
+signiﬁcance level of the test.
+The F-test is inherently one-sided—deviations from the null hypothesis of any form will
+push the statistic to the right tail of the F-distribution. The p-value from the right tail of the
+F-distribution should never be doubled. Students also sometimes make the mistake of assuming
+that if the null hypothesis of the F-test is rejected, all coeﬃcients must be non-zero, instead of at
+least one. A signiﬁcant p-value for the F-statistic suggests that the predictor variables in the model,
+when considered as a group, are associated with the response variable.
+In practice, it is rare for the F-test not to reject the null hypothesis, since most regression
+models are used in settings where a scientist has prior evidence that at least some of the predictors
+are useful.
+Conﬁdence and Prediction Intervals
+The conﬁdence and prediction intervals discussed in Section 6.5 can be extended to multiple re-
+gression. Predictions based on speciﬁc values of the predictors are made by evaluating the esti-
+mated model at those values, and both conﬁdence intervals for the mean and prediction intervals
+for a new observation are constructed using the corresponding standard errors. The formulas for
+standard errors in the multiple predictor setting are beyond the scope of this text, and there are
+no simple approximate formulas that can be calculated by hand. They are always computed in
+software.
+Figure 7.5 shows the estimated regression model used to examine the association of age and
+statin use with RFFT score in PREVEND. As shown in Example 7.5, the predicted RFFT score for a
+67-year-old statin user is 57.6 points. Software can be used to show that a 95% conﬁdence interval
+for the mean RFFT score for 67-year-old statin users is (49.2, 58.9) points, while a 95% prediction
+interval for the RFFT score of a particular 67-year statin user is (7.8, 99.4) points. Just as with
+simple linear regression, the prediction interval is wider than the conﬁdence interval for the mean
+because it accounts for both variability in the estimated mean and variability in a new observation
+of the response, RFFT score.
+
+
+--- PDF page 347 ---
+7.5. CATEGORICAL PREDICTORS WITH SEVERAL LEVELS
+347
+7.5
+Categorical predictors with several levels
+In the initial model ﬁt with the PREVEND data, the variable Statin is coded 0 if the partici-
+pant was not using statins, and coded 1 if the participant was a statin user. The category coded 0
+is referred to as the reference category; in this model, statin non-users (Statin = 0) are the refer-
+ence category. The estimated coeﬃcient βStatin is the change in the average response between the
+reference category and the category Statin = 1.
+Since the variable Statin is categorical, the numerical codes 0 and 1 are simply labels for statin
+non-users and users. The labels can be speciﬁed more explicitly in software. For example, in R,
+categorical variables can be coded as factors; the levels of the variable are displayed as text (such
+as "NonUser" or "User"), while the data remain stored as integers. The R output with the variable
+Statin.factor is shown in Figure 7.10, where 0 corresponds to the label "NonUser" and 1 corre-
+sponds to "User". The predictor variable is now labeled Statin.factorUser; the estimate -10.05
+is the change in mean RFFT from the "NonUser" (reference) category to the "User" category. Note
+how the reference category is not explicitly labeled; instead, it is contained within the intercept.
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+70.7143
+1.3808
+51.21
+0.0000
+Statin.factorUser
+-10.0534
+2.8792
+-3.49
+0.0005
+Figure 7.10: R summary output for the simple regression model of RFFT versus
+statin use in prevend.samp, with Statin converted to a factor called Statin.factor
+that has levels NonUser and User.
+For a categorical variable with two levels, estimates from the regression model remain the
+same regardless of whether the categorical predictor is treated as numerical or not. A "one unit
+change" in the numerical sense corresponds exactly to the switch between the two categories. How-
+ever, this is not true for categorical variables with more than two levels.
+This idea will be explored with the categorical variable Education, which indicates the highest
+level of education that an individual completed in the Dutch educational system: primary school,
+lower secondary school, higher secondary education, or university education. In the PREVEND
+dataset, educational level is coded as either 0, 1, 2, or 3, where 0 denotes at most a primary school
+education, 1 a lower secondary school education, 2 a higher secondary education, and 3 a university
+education. Figure 7.11 shows the distribution of RFFT by education level; RFFT scores tend to
+increase as education level increases.
+In a regression model with a categorical variable with more than two levels, one of the cate-
+gories is set as the reference category, just as in the setting with two levels for a categorical predictor.
+The remaining categories each have an estimated coeﬃcient, which corresponds to the estimated
+change in response relative to the reference category.
+
+
+--- PDF page 348 ---
+348
+CHAPTER 7. MULTIPLE LINEAR REGRESSION
+Education level
+RFFT Score
+0
+1
+2
+3
+0
+20
+40
+60
+80
+100
+120
+140
+Figure 7.11: Box plots for RFFT score by education level in prevend.samp.
+EXAMPLE 7.6
+Is RFFT score associated with educational level?
+Interpret the coeﬃcients from the following
+model. Figure 7.12 provides the R output for the regression model of RFFT versus educational
+level in prevend.samp. The variable Education has been converted to Education.factor, which has
+levels Primary, LowerSecond, HigherSecond, and Univ.
+It is clearest to start with writing the model equation:
+
+RFFT = 40.94 + 14.78(EduLowerSecond) + 32.13(EduHigherSecond) + 44.96(EduUniv)
+Each of the predictor levels can be thought of as binary variables that can take on either 0 or 1,
+where only one level at most can be a 1 and the rest must be 0, with 1 corresponding to the category
+of interest. For example, the predicted mean RFFT score for individuals in the Lower Secondary
+group is given by
+
+RFFT = 40.94 + 14.78(1) + 32.13(0) + 44.96(0) = 55.72.
+The value of the LowerSecond coeﬃcient, 14.78, is the change in predicted mean RFFT score from
+the reference category Primary to the LowerSecond category.
+Participants with a higher secondary education scored approximately 32.1 points higher on the
+RFFT than individuals with only a primary school education, and have estimated mean RFFT score
+40.94 + 32.13 = 73.07. Those with a university education have estimated mean RFFT score 40.94 +
+44.96 = 85.90.
+The intercept value, 40.94, corresponds to the estimated mean RFFT score for individuals who at
+most completed primary school. From the regression equation,
+
+RFFT = 40.94 + 14.78(0) + 32.13(0) + 44.96(0) = 40.94.
+The p-values indicate that the change in mean score between participants with only a primary
+school education and any of the other categories is statistically signiﬁcant.
+
+
+--- PDF page 349 ---
+7.5. CATEGORICAL PREDICTORS WITH SEVERAL LEVELS
+349
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+40.9412
+3.2027
+12.78
+0.0000
+Education.factorLowerSecond
+14.7786
+3.6864
+4.01
+0.0001
+Education.factorHigherSecond
+32.1335
+3.7631
+8.54
+0.0000
+Education.factorUniv
+44.9639
+3.6835
+12.21
+0.0000
+Figure 7.12: R summary output for the regression model of RFFT versus ed-
+ucational level in prevend.samp, with Education converted to a factor called
+Education.factor that has levels Primary, LowerSecond, HigherSecond, and Univ.
+EXAMPLE 7.7
+Suppose that the model for predicting RFFT score from educational level is ﬁtted with Education,
+using the original numerical coding with 0, 1, 2, and 3; the R output is shown in Figure 7.13. What
+does this model imply about the change in mean RFFT between groups? Explain why this model is
+ﬂawed.
+According to this model, the change in mean RFFT between groups increases by 15.158 for any one
+unit change in Education. For example, the change in means between the groups coded 0 and 1
+is necessarily equal to the change in means between the groups coded 2 and 3, since the predictor
+changes by 1 in both cases.
+It is unreasonable to assume that the change in mean RFFT score when comparing the primary
+school group to the lower secondary group will be equal to the diﬀerence in means between the
+higher secondary group and university group. The numerical codes assigned to the groups are
+simply short-hand labels, and are assigned arbitrarily. As a consequence, this model would not
+provide consistent results if the numerical codes were altered; for example, if the primary school
+group and lower secondary group were relabeled such that the predictor changes by 2, the esti-
+mated diﬀerence in mean RFFT would change.
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+41.148
+2.104
+19.55
+0.0000
+Education
+15.158
+1.023
+14.81
+0.0000
+Figure 7.13: R summary output for the simple regression model of RFFT ver-
+sus educational level in prevend.samp, where Education is treated as a numerical
+variable. Note that it would be incorrect to ﬁt this model; Figure 7.12 shows the
+results from the correct approach.
+Categorical variables can be included in multiple regression models with other predictors, as
+is shown in the next section. Section 7.9 discusses the connection between ANOVA and regression
+models with only one categorical predictor.
+
+
+--- PDF page 350 ---
+350
+CHAPTER 7. MULTIPLE LINEAR REGRESSION
+7.6
+Reanalyzing the PREVEND data
+The earlier models ﬁt to examine the association between cognitive ability and statin use
+showed that considering statin use alone could be misleading. While older participants tended
+to have lower RFFT scores, they were also more likely to be taking statins. Age was found to be a
+confounder in this setting—is it the only confounder?
+Potential confounders are best identiﬁed by considering the larger scientiﬁc context of the
+analysis. For the PREVEND data, there are two natural candidates for potential confounders: ed-
+ucation level and presence of cardiovascular disease. The use of medication is known to vary by
+education levels, often because individuals with more education tend to have higher incomes and
+consequently, better access to health care; higher educational levels are associated with higher
+RFFT scores, as shown by model 7.12. Individuals with cardiovascular disease are often prescribed
+statins to lower cholesterol; cardiovascular disease can lead to vascular dementia and cognitive
+decline.
+Figure 7.14 contains the result of a regression of RFFT with statin use, adding the possible
+confounders age, educational level, and presence of cardiovascular disease. The variables Statin,
+Education and CVD have been converted to factors, and Age is a continuous predictor.
+The coeﬃcient for statin use shows the importance of adjusting for confounders. In the initial
+model for RFFT that only included statin use as a predictor, statin use was signiﬁcantly associated
+with decreased RFFT scores. After adjusting for age, statins were no longer signiﬁcantly associ-
+ated with RFFT scores, but the model suggested that statin use could be associated with increased
+RFFT scores. This ﬁnal model suggests that, after adjusting for age, education, and the presence of
+cardiovascular disease, statin use is associated with an increase in RFFT scores of approximately
+4.7 points. The p-value for the slope coeﬃcient for statin use is 0.056, which suggests moderately
+strong evidence of an association (signiﬁcant at α = 0.10, but not α = 0.05).
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+99.0351
+6.3301
+15.65
+0.0000
+Statin.factorUser
+4.6905
+2.4480
+1.92
+0.0559
+Age
+-0.9203
+0.0904
+-10.18
+0.0000
+Education.factorLowerSecond
+10.0883
+3.3756
+2.99
+0.0029
+Education.factorHigherSecond
+21.3015
+3.5777
+5.95
+0.0000
+Education.factorUniv
+33.1246
+3.5471
+9.34
+0.0000
+CVD.factorPresent
+-7.5665
+3.6516
+-2.07
+0.0388
+Figure 7.14:
+R summary output for the multiple regression model of RFFT
+versus statin use, age, education, and presence of cardiovascular disease in
+prevend.samp.
+The R2 for the model is 0.4355; a substantial increase from the model with only statin use and
+age as predictors, which had an R2 of 0.2852. The adjusted R2 for the model is 0.4286, close to the
+R2 value, which suggests that the additional predictors increase the strength of the model enough
+to justify the additional complexity.
+
+
+--- PDF page 351 ---
+7.6. REANALYZING THE PREVEND DATA
+351
+Figure 7.15 shows a plot of residuals vs predicted RFFT scores from the model in Figure 7.14
+and a normal probability plot of the residuals. These plots show that the model ﬁts the data rea-
+sonably well. The residuals show a slight increase in variability for larger predicted values, and the
+normal probability plot shows the residuals depart slightly from normality in the extreme tails.
+Model assumptions never hold exactly, and the possible violations shown in this ﬁgure are not
+suﬃcient reasons to discard the model.
+20
+40
+60
+80
+100
+−60
+−40
+−20
+0
+20
+40
+60
+Predicted Value
+Residual
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+Theoretical Quantiles
+Sample Quantiles
+−3
+−2
+−1
+0
+1
+2
+3
+−60
+−40
+−20
+0
+20
+40
+60
+Figure 7.15: A histogram and normal probability plot of the residuals from the
+linear model for RFFT vs. statin use, age, educational level and presence of car-
+diovascular disease in the PREVEND data.
+It is quite possible that even the model summarized in Figure 7.14 is not the best one to un-
+derstand the association of cognitive ability with statin use. There be other confounders that are
+not accounted for. Possible predictors that may be confounders but have not been examined are
+called residual confounders. Residual confounders can be other variables in a dataset that have
+not been examined, or variables that were not measured in the study. Residual confounders exist in
+almost all observational studies, and represent one of the main reasons that observational studies
+should be interpreted with caution. A randomized experiment is the best way to eliminate resid-
+ual confounders. Randomization ensures that, at least on average, all predictors are not associated
+with the randomized intervention, which eliminates one of the conditions for confounding. A ran-
+domized trial may be possible in some settings; there have been many randomized trials examining
+the eﬀect of using statins. However, in many other settings, such as a study of the association of
+marijuana use and later addiction to controlled substances, randomization may not be possible or
+ethical. In those instances, observational studies may be the best available approach.
+
+
+--- PDF page 352 ---
+352
+CHAPTER 7. MULTIPLE LINEAR REGRESSION
+7.7
+Interaction in regression
+An important assumption in the multiple regression model
+y = β0 + β1x1 + β2x2 + ... + βpxp + ε
+is that when one of the predictor variables xj changes by 1 unit and none of the other variables
+change, the predicted response changes by βj, regardless of the values of the other variables. A
+statistical interaction occurs when this assumption is not true, such that the relationship of one
+explanatory variable xj with the response depends on the particular value(s) of one or more other
+explanatory variables.
+Interaction is most easily demonstrated in a model with two predictors, where one of the
+predictors is categorical and the other is numerical.14 Consider a model that might be used to
+predict total cholesterol level from age and diabetes status (either diabetic or non-diabetic):
+E(TotChol) =β0 + β1(Age) + β2(Diabetes).
+(7.8)
+Figure 7.16 shows the R output for a regression estimating model 7.8, using data from a sample
+of 500 adults from the NHANES dataset (nhanes.samp.adult.500). Total cholesterol (TotChol) is
+measured in mmol/L, Age is recorded in years, and Diabetes is a factor level with the levels No
+(non-diabetic) and Yes (diabetic) where 0 corresponds to No and 1 corresponds to Yes.
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+4.8000
+0.1561
+30.75
+0.0000
+Age
+0.0075
+0.0030
+2.47
+0.0137
+DiabetesYes
+-0.3177
+0.1607
+-1.98
+0.0487
+Figure 7.16:
+Regression of total cholesterol on age and diabetes,
+using
+nhanes.samp.adult.500.
+14Interaction eﬀects between numerical variables and between more than two variables can be complicated to interpret.
+A more complete treatment of interaction is best left to a more advanced course; this text will only examine interaction in
+the setting of models with one categorical variable and one numerical variable.
+
+
+--- PDF page 353 ---
+7.7. INTERACTION IN REGRESSION
+353
+EXAMPLE 7.9
+Using the output in Figure 7.16, write the model equation and interpret the coeﬃcients for age and
+diabetes. How does the predicted total cholesterol for a 60-year-old individual compare to that of
+a 50-year-old individual, if both have diabetes? What if both individuals do not have diabetes?
+
+T otChol = 4.80 + 0.0075(Age) −0.32(DiabetesY es)
+The coeﬃcient for age indicates that with each increasing year of age, predicted total cholesterol
+increases by 0.0075 mmol/L. The coeﬃcient for diabetes indicates that diabetics have an average
+total cholesterol that is 0.32 mmol/L lower than non-diabetic individuals.
+If both individuals have diabetes, then the change in predicted total cholesterol level can be de-
+termined directly from the coeﬃcient for Age. An increase in one year of age is associated with
+a 0.0075 increase in total cholesterol; thus, an increase in ten years of age is associated with
+10(0.0075) = 0.075 mmol/L increase in predicted total cholesterol.
+The calculation does not diﬀer if both individuals are non-diabetic. According to the model, the
+relationship between age and total cholesterol remains the same regardless of the values of the
+other variable in the model.
+EXAMPLE 7.10
+Using the output in Figure 7.16, write two separate model equations: one for diabetic individuals
+and one for non-diabetic individuals. Compare the two models.
+For non-diabetics (Diabetes = 0), the linear relationship between average cholesterol and age is
+
+TotChol = 4.80 + 0.0075(Age) −0.32(0) = 4.80 + 0.0075(Age).
+For diabetics (Diabetes
+=
+1), the linear relationship between average cholesterol and age is
+
+TotChol = 4.80 + 0.0075(Age) −0.32(1) = 4.48 + 0.0075(Age).
+The lines predicting average cholesterol as a function of age in diabetics and non-diabetics are
+parallel, with the same slope and diﬀerent intercepts. While predicted total cholesterol is higher
+overall in non-diabetics (as indicated by the higher intercept), the rate of change in predicted aver-
+age total cholesterol by age is the same for both diabetics and non-diabetics.
+This relationship can be expressed directly from the model equation 7.8. For non-diabetics, the
+population regression line is E(TotChol) = β0 + β1(Age). For diabetics, the line is E(TotChol) =
+β0 +β1(Age)+β2 = β0 +β2 +β1(Age). The lines have the same slope β1 but intercepts β0 and β0 +β2.
+
+
+--- PDF page 354 ---
+354
+CHAPTER 7. MULTIPLE LINEAR REGRESSION
+However, a model that assumes the relationship between cholesterol and age does not depend
+on diabetes status might be overly simple and potentially misleading. Figure 7.17(b) shows a scat-
+terplot of total cholesterol versus age where the least squares models have been ﬁt separately for
+non-diabetic and diabetic individuals. The blue line in the plot is estimated using only non-diabetic
+individuals, while the red line was ﬁt using data from diabetic individuals. The lines are not paral-
+lel, and in fact, have slopes with diﬀerent signs. The plot suggests that among non-diabetics, age is
+positively associated with total cholesterol. Among diabetics, however, age is negatively associated
+with total cholesterol.
+20
+30
+40
+50
+60
+70
+80
+3
+4
+5
+6
+7
+8
+9
+Total Choelsterol (mmol/L)
+Age (yrs)
+(a)
+20
+30
+40
+50
+60
+70
+80
+3
+4
+5
+6
+7
+8
+9
+Total Cholesterol (mmol/L)
+Age (yrs)
+(b)
+Figure
+7.17:
+Scatterplots
+of
+total
+cholesterol
+versus
+age
+in
+nhanes.samp.adult.500, where blue represents non-diabetics and red repre-
+sents diabetics. Plot (a) shows the model equations written out in Example 7.10,
+estimated from the entire sample of 500 individuals. Plot (b) shows least squares
+models that are ﬁt separately; coeﬃcients of the blue line are estimated using
+only data from non-diabetics, while those of the red line are estimated using only
+data from diabetics.
+
+
+--- PDF page 355 ---
+7.7. INTERACTION IN REGRESSION
+355
+With the addition of another parameter (commonly referred to as an interaction term), a linear
+regression model can be extended to allow the relationship of one explanatory variable with the
+response to vary based on the values of other variables in the model. Consider the model
+E(TotChol) = β0 + β1(Age) + β2(Diabetes) + β3(Diabetes × Age).
+(7.11)
+The interaction term allows the slope of the association with age to diﬀer by diabetes status.
+Among non-diabetics (Diabetes = 0), the model reduces to the earlier one,
+E(TotChol) = β0 + β1(Age).
+Among the diabetic participants, the model becomes
+E(TotChol) = β0 + β1(Age) + β2 + β3(Age)
+= β0 + β2 + (β1 + β3)(Age).
+Unlike in the original model, the slopes of the population regression lines for non-diabetics
+and diabetics are now diﬀerent: β1 versus β1 + β3.
+Figure 7.18 shows the R output for a regression estimating model 7.11.
+In R, the syntax
+Age:DiabetesYes represents the (Age × Diabetes) interaction term.
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+4.6957
+0.1597
+29.40
+0.0000
+Age
+0.0096
+0.0031
+3.10
+0.0020
+DiabetesYes
+1.7187
+0.7639
+2.25
+0.0249
+Age:DiabetesYes
+-0.0335
+0.0123
+-2.73
+0.0067
+Figure 7.18: Regression of total cholesterol on age and diabetes with an interac-
+tion term, using nhanes.samp.adult.500
+EXAMPLE 7.12
+Using the output in Figure 7.18, write the overall model equation, the model equation for non-
+diabetics, and the model equation for diabetics.
+The overall model equation is
+
+TotChol = 4.70 + 0.0096(Age) + 1.72(DiabetesYes) −0.034(Age × DiabetesYes).
+For non-diabetics (Diabetes = 0), the linear relationship between average cholesterol and age is
+
+TotChol = 4.70 + 0.0096(Age) + 1.72(0) −0.034(Age × 0) = 4.70 + 0.0096(Age).
+For diabetics (Diabetes = 1), the linear relationship between average cholesterol and age is
+
+TotChol = 4.70 + 0.0096(Age) + 1.72(1) −0.034(Age × 1) = 6.42 −0.024(Age).
+
+
+--- PDF page 356 ---
+356
+CHAPTER 7. MULTIPLE LINEAR REGRESSION
+The estimated equations for non-diabetic and diabetic individuals show the same qualitative
+behavior seen in Figure 7.17(b), where the slope is positive in non-diabetics and negative in diabet-
+ics. However, note that the lines plotted in the ﬁgure were estimated from two separate model ﬁts
+on non-diabetics and diabetics; in contrast, the equations from the interaction model are ﬁt using
+data from all individuals.
+It is more eﬃcient to model the data using a single model with an interaction term than
+working with subsets of the data.15 Additionally, using a single model allows for the calculation of
+a t-statistic and p-value that indicates whether there is statistical evidence of an interaction. The p-
+value for the Age:Diabetes interaction term is signiﬁcant at the α = 0.05 level. Thus, the estimated
+model suggests there is strong evidence for an interaction between age and diabetes status when
+predicting total cholesterol.
+Residual plots can be used to assess the quality of the model ﬁt. Figure 7.19 shows that the
+residuals have roughly constant variance in the region with the majority of the data (predicted
+values between 4.9 and 5.4 mmol/L). However, there are more large positive residuals than large
+negative residuals, which suggests that the model tends to underpredict; i.e., predict values of
+TotChol that are smaller than the observed values.16 Figure 7.20 shows that the residuals do not
+ﬁt a normal distribution in the tails. In the right tails, the sample quantiles are larger than the
+theoretical quantiles, implying that there are too many large residuals. The left tail is a better ﬁt;
+however, there are too few large negative residuals since the sample quantiles in the left tail are
+closer to 0 than the theoretical quantiles.
+4.6
+4.8
+5.0
+5.2
+5.4
+5.6
+−2
+−1
+0
+1
+2
+3
+4
+Predicted Value
+Residual
+Figure 7.19: A scatterplot of residuals versus predicted values in the model for
+total cholesterol that includes age, diabetes status, and the interaction of age and
+diabetes status.
+15In more complex settings, such as those with potential interaction between several variables or between two numerical
+variables, it may not be clear how to subset the data in a way that reveals interactions. This is another advantage to using
+an interaction term and single model ﬁt to the entire dataset.
+16Recall that model residuals are calculated as yi −ˆyi; i.e., TotCholi −
+TotCholi.
+
+
+--- PDF page 357 ---
+7.7. INTERACTION IN REGRESSION
+357
+Residuals
+−3
+−2
+−1
+0
+1
+2
+3
+Theoretical Quantiles
+Sample Quantiles
+−3
+−2
+−1
+0
+1
+2
+3
+−2
+−1
+0
+1
+2
+3
+4
+Figure 7.20: A histogram of the residuals and a normal probability plot of the
+residuals from the linear model for total cholesterol versus age, diabetes status,
+and the interaction of age and diabetes status.
+It is also important to note that the model explains very little of the observed variability in
+total cholesterol—the multiple R2 of the model is 0.032. While the model falls well short of per-
+fection, it may be reasonably adequate in applied settings. In the setting of a large study, such as
+one to examine factors aﬀecting cholesterol levels in adults, a model like the one discussed here is
+typically a starting point for building a more reﬁned model. Given these results, a research team
+might proceed by collecting more data. Regression models are commonly used as tools to work
+towards understanding a phenomenon, and rarely represent a ’ﬁnal answer’.
+There are some important general points that should not be overlooked when interpreting
+this model. The data cannot be used to infer causality; the data simply show associations between
+total cholesterol, age, and diabetes status. Each of the NHANES surveys are cross-sectional; they
+are administered to a sample of US residents with various ages and other demographic features
+during a relatively short period of time. No single individual has had his or her cholesterol levels
+measured over a period of many years, so the model slope for diabetes is not indicative of an
+individual’s cholesterol level declining (or increasing) with age.
+Finally, the interpretation of a model often requires additional contextual information that is
+relevant to the study population but not captured in the dataset. What might explain increased age
+being associated with lower cholesterol for diabetics, but higher cholesterol for non-diabetics? The
+guidelines for the use of cholesterol-lowering statins suggest that these drugs should be prescribed
+more often in older individuals, and even more so in diabetic individuals. It is a reasonable specu-
+lation that the interaction between age and diabetes status seen in the NHANES data is a result of
+more frequent statin use in diabetic individuals.
+
+
+--- PDF page 358 ---
+358
+CHAPTER 7. MULTIPLE LINEAR REGRESSION
+7.8
+Model selection for explanatory models
+Previously, multiple regression modeling was shown in the context of estimating an associ-
+ation while adjusting for possible confounders. Another application of multiple regression is ex-
+planatory modeling, in which the goal is to construct a model that explains the observed variation
+in the response variable. In this context, there is no pre-speciﬁed primary predictor of interest;
+explanatory modeling is concerned with identifying predictors associated with the response. It is
+typically desirable to have a small model that avoids including variables which do not contribute
+much towards the R2.
+The intended use of a regression model inﬂuences the way in which a model is selected. Ap-
+proaches to model selection vary from those based on careful study of a relatively small set of
+predictors to purely algorithmic methods that screen a large set of predictors and choose a ﬁnal
+model by optimizing a numerical criterion. Algorithmic selection methods have gained popular-
+ity as researchers have been able to collect larger datasets, but the choice of an algorithm and the
+optimization criterion require more advanced material and are not covered here. This section il-
+lustrates model selection in the context of a small set of potential predictors using only the tools
+and ideas that have been discussed earlier in this chapter and in Chapter 6.
+Generally, model selection for explanatory modeling follows these steps:
+1. Data exploration. Using numerical and graphical approaches, examine both the distributions
+of individual variables and the relationships between variables.
+2. Initial model ﬁtting. Fit an initial model with the predictors that seem most highly associated
+with the response variable, based on the data exploration.
+3. Model comparison. Work towards a model that has the highest adjusted R2.
+– Fit new models without predictors that were either not statistically signiﬁcant or only
+marginally so and compare the adjusted R2 between models; drop variables that de-
+crease the adjusted R2.
+– If the initial set of variables is relatively small, it is prudent to add variables not in the
+initial model and check the adjusted R2; add variables that increase the adjusted R2.
+– Examine whether interaction terms may improve the adjusted R2.
+4. Model assessment. Use residual plots to assess the ﬁt of the ﬁnal model.
+The process behind model selection will be illustrated with a case study in which a regression
+model is built to examine the association between the abundance of forest birds in a habitat patch
+and features of a patch.
+
+
+--- PDF page 359 ---
+7.8. MODEL SELECTION FOR EXPLANATORY MODELS
+359
+Abundance of forest birds: introduction
+Habitat fragmentation is the process by which a habitat in a large contiguous space is divided into
+smaller, isolated pieces; human activities such as agricultural development can result in habitat
+fragmentation.
+Smaller patches of habitat are only able to support limited populations of or-
+ganisms, which reduces genetic diversity and overall population ﬁtness. Ecologists study habi-
+tat fragmentation to understand its eﬀect on species abundance. The forest.birds dataset in the
+oibiostat package contains a subset of the variables from a 1987 study analyzing the eﬀect of habi-
+tat fragmentation on bird abundance in the Latrobe Valley of southeastern Victoria, Australia.17
+The dataset consists of the following variables, measured for each of the 57 patches.
+– abundance: average number of forest birds observed in the patch, as calculated from several
+independent 20-minute counting sessions.
+– patch.area: patch area, measured in hectares. 1 hectare is 10,000 square meters and approx-
+imately 2.47 acres.
+– dist.nearest: distance to the nearest patch, measured in kilometers.
+– dist.larger: distance to the nearest patch larger than the current patch, measured in kilo-
+meters.
+– altitude: patch altitude, measured in meters above sea level.
+– grazing.intensity: extent of livestock grazing, recorded as either "light", "less than average",
+"average", "moderately heavy", or "heavy".
+– year.of.isolation: year in which the patch became isolated due to habitat fragmentation.
+– yrs.isolation: number of years since patch became isolated due to habitat fragmentation.18
+The following analysis is similar to analyses that appear in Logan (2011)19 and Quinn &
+Keough (2002).20 In the approach here, the grazing intensity variable is treated as a categorical
+variable; Logan and Quinn & Keough treat grazing intensity as a numerical variable, with values
+1-5 corresponding to the categories. The implications of these approaches are discussed at the end
+of the section.
+17Loyn, R.H. 1987. "Eﬀects of patch area and habitat on bird abundances, species numbers and tree health in fragmented
+Victorian forests." Printed in Nature Conservation: The Role of Remnants of Native Vegetation. Saunders DA, Arnold GW,
+Burbridge AA, and Hopkins AJM eds. Surrey Beatty and Sons, Chipping Norton, NSW, 65-77, 1987.
+18The Loyn study completed data collection in 1983; yrs.isolation = 1983 −year.of.isolation.
+19Logan, M., 2011. Biostatistical design and analysis using R: a practical guide. John Wiley & Sons, Ch. 9.
+20Quinn, G.P. and Keough, M.J., 2002. Experimental design and data analysis for biologists. Cambridge University
+Press, Ch. 6.
+
+
+--- PDF page 360 ---
+360
+CHAPTER 7. MULTIPLE LINEAR REGRESSION
+Data exploration
+The response variable for the model is abundance. Numerical summaries calculated from software
+show that abundance ranges from 1.5 to 39.6. Figure 7.21 shows that the distribution of abundance
+is bimodal, with modes at small values of abundance and at between 25 and 30 birds. The me-
+dian (21.0) and mean (19.5) are reasonably close, which conﬁrms the distribution is near enough
+to symmetric to be used in the model without a transformation. The boxplot conﬁrms that the
+distribution has no outliers.
+Abundance
+Frequency
+0
+10
+20
+30
+40
+0
+5
+10
+15
+(a)
+Abundance
+0
+10
+20
+30
+40
+50
+(b)
+Figure 7.21: A histogram (a) and boxplot (b) of abundance in the forest.birds
+data.
+There are six potential predictors in the model; the variable year.of.isolation is only used
+to calculate the more informative variable yrs.isolation. The plots in Figure 7.22 reveal right-
+skewing in patch.area, dist.nearest, dist.larger, and yrs.isolation; these might beneﬁt from a
+log transformation. The variable altitude is reasonably symmetric, and the predictor grazing.factor
+is categorical and so does not take transformations. Figure 7.23 shows the distributions of log.patch.area,
+log.dist.nearest, log.dist.larger, and log.yrs.isolation, which were created through a natu-
+ral log transformation of the original variables. All four are more nearly symmetric. These will be
+more suitable for inclusion in a model than the untransformed versions.
+
+
+--- PDF page 361 ---
+7.8. MODEL SELECTION FOR EXPLANATORY MODELS
+361
+area
+0
+500
+1000
+1500
+0
+5
+10
+15
+20
+25
+altitude
+100
+150
+200
+250
+0
+5
+10
+15
+20
+25
+dist.nearest
+0
+500
+1000
+1500
+0
+5
+10
+15
+20
+25
+dist.larger
+0
+1000
+2000
+3000
+4000
+0
+5
+10
+15
+20
+25
+yrs.isolation
+0
+20
+40
+60
+80
+100
+0
+5
+10
+15
+20
+25
+light
+average
+heavy
+grazing.intensity
+0
+5
+10
+15
+20
+25
+Figure 7.22: Histograms and a barplot for the potential predictors of abundance.
+log(area)
+−2
+0
+2
+4
+6
+8
+0
+5
+10
+15
+20
+25
+log(dist.nearest)
+3
+4
+5
+6
+7
+0
+5
+10
+15
+20
+25
+log(dist.larger)
+3
+4
+5
+6
+7
+8
+0
+5
+10
+15
+20
+25
+log(yrs.isolation)
+2.0
+2.5
+3.0
+3.5
+4.0
+4.5
+0
+5
+10
+15
+20
+25
+Figure 7.23:
+Histograms of the log-transformed versions of patch.area,
+dist.nearest, dist.larger, and yrs.isolation.
+
+
+--- PDF page 362 ---
+362
+CHAPTER 7. MULTIPLE LINEAR REGRESSION
+A scatterplot matrix can be useful for visualizing the relationships between the predictor and
+response variables, as well as the relationships between predictors. Each subplot in the matrix is
+a simple scatterplot; all possible plots are shown, except for the plots of a variable versus itself.
+The variable names are listed along the diagonal of the matrix, and the diagonal divides the matrix
+into symmetric plots. For instance, the ﬁrst plot in the ﬁrst row shows abundance on the vertical
+axis and log.area on the horizontal axis; the ﬁrst plot in the ﬁrst column shows abundance on
+the horizontal axis and log.area on the vertical axis. Note that for readability, grazing.intensity
+appears with values 1 - 5, with 1 denoting "light" and 5 denoting "heavy" grazing intensity.
+The plots in the ﬁrst row of Figure 7.24 show the relationships between abundance and the
+predictors.21 There is a strong positive association between abundance with log.area, and a strong
+negative association between abundance and log.yrs.isolation. The variables log.dist.near.patch
+and log.dist.larger seem weakly positively associated with abundance. There is high variance of
+abundance and somewhat similar centers for the ﬁrst four categories, but abundance does clearly
+tend to be lower in the "high grazing" category versus the others.
+abundance
+−2
+0
+2
+4
+6
+4
+5
+6
+7
+8
+2.0
+2.5
+3.0
+3.5
+4.0
+4.5
+0
+10
+30
+−2
+2
+6
+log.area
+log.dist.nearest
+4
+5
+6
+7
+4
+6
+8
+log.dist.larger
+altitude
+100
+200
+2.0
+3.0
+4.0
+log.yrs.isolation
+0
+10
+20
+30
+40
+4
+5
+6
+7
+100
+150
+200
+250
+1
+2
+3
+4
+5
+1
+2
+3
+4
+5
+grazing.intensity
+Figure 7.24:
+Scatterplot matrix of abundance and the possible predic-
+tors:
+log.area,
+log.dist.near.patch,
+log.dist.larger.patch,
+altitude,
+log.yrs.isolation, and grazing.intensity.
+21Traditionally, the response variable (i.e., the dependent variable) is plotted on the vertical axis; as a result, it seems
+more natural to look at the ﬁrst row where abundance is on the y-axis. It is equally valid, however, to assess the association
+of abundance with the predictors from the plots in the ﬁrst column.
+
+
+--- PDF page 363 ---
+7.8. MODEL SELECTION FOR EXPLANATORY MODELS
+363
+The variables log.dist.nearest and log.dist.larger appear strongly associated; a model
+may only need one of the two, as they may be essentially "redundant" in explaining the variabil-
+ity in the response variable.22 In this case, however, since both are only weakly associated with
+abundance, both may be unnecessary in a model.
+A numerical approach conﬁrms some of the features observable from the scatterplot matrix.
+Figure 7.25 shows the correlations between pairs of numerical variables in the dataset. Correla-
+tions between abundance and log.area and between abundance and log.yrs.isolation are rela-
+tively high, at 0.74 and -0.48, respectively. In contrast, the correlation between abundance and the
+two variables log.dist.nearest and log.dist.larger are much smaller, at 0.13 and 0.12. Addi-
+tionally, the two potential predictors log.dist.nearest and log.dist.larger have a relatively high
+correlation of 0.60.
+abundance
+log.area
+log.dist.nearest
+log.dist.larger
+altitude
+log.yrs.isolation
+abundance
+1.00
+0.74
+0.13
+0.12
+0.39
+-0.48
+log.area
+0.74
+1.00
+0.30
+0.38
+0.28
+-0.25
+log.dist.nearest
+0.13
+0.30
+1.00
+0.60
+-0.22
+0.02
+log.dist.larger
+0.12
+0.38
+0.60
+1.00
+-0.27
+0.15
+altitude
+0.39
+0.28
+-0.22
+-0.27
+1.00
+-0.29
+log.yrs.isolation
+-0.48
+-0.25
+0.02
+0.15
+-0.29
+1.00
+Figure 7.25: A correlation matrix for the numerical variables in forest.birds.
+Initial model ﬁtting
+Based on the data exploration, the initial model should include the variables log.area, altitude,
+log.yrs.isolation, and grazing.intensity; a summary of this model is shown in Figure 7.26. The
+R2 and adjusted R2 for this model are, respectively, 0.728 and 0.688. The model explains about 73%
+of the variability in abundance.
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+14.1509
+6.3006
+2.25
+0.0293
+log.area
+3.1222
+0.5648
+5.53
+0.0000
+altitude
+0.0080
+0.0216
+0.37
+0.7126
+log.yrs.isolation
+0.1300
+1.9193
+0.07
+0.9463
+grazing.intensityless than average
+0.2967
+2.9921
+0.10
+0.9214
+grazing.intensityaverage
+-0.1617
+2.7535
+-0.06
+0.9534
+grazing.intensitymoderately heavy
+-1.5936
+3.0350
+-0.53
+0.6019
+grazing.intensityheavy
+-11.7435
+4.3370
+-2.71
+0.0094
+Figure 7.26:
+Initial model:
+regression of abundance on log.area, altitude,
+log.yrs.isolation and grazing.intensity.
+Two of the variables in the model are not statistically signiﬁcant at the α = 0.05 level: altitude
+and log.yrs.isolation. Only one of the categories of grazing.intensity (heavy grazing) is highly
+signiﬁcant.
+22Typically, the predictor that is less strongly correlated with the response variable is the one that is "redundant" and
+will be statistically insigniﬁcant when included in a model with the more strongly correlated predictor. This is not always
+the case, and depends on the other variables in the model.
+
+
+--- PDF page 364 ---
+364
+CHAPTER 7. MULTIPLE LINEAR REGRESSION
+Model comparison
+First, ﬁt models excluding the predictors that were not statistically signiﬁcant: altitude and
+log.yrs.isolation. Models excluding either variable have adjusted R2 of 0.69, and a model ex-
+cluding both variables has an adjusted R2 of 0.70, a small but noticeable increase from the initial
+model. This suggests that these two variables can be dropped. At this point, the working model
+includes only log.area and grazing.intensity; this model has R2 = 0.727 and is shown in Fig-
+ure 7.27.
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+15.7164
+2.7674
+5.68
+0.0000
+log.area
+3.1474
+0.5451
+5.77
+0.0000
+grazing.intensityless than average
+0.3826
+2.9123
+0.13
+0.8960
+grazing.intensityaverage
+-0.1893
+2.5498
+-0.07
+0.9411
+grazing.intensitymoderately heavy
+-1.5916
+2.9762
+-0.53
+0.5952
+grazing.intensityheavy
+-11.8938
+2.9311
+-4.06
+0.0002
+Figure 7.27:
+Working model:
+regression of abundance on log.area and
+grazing.intensity.
+It is prudent to check whether the two distance-related variables that were initially excluded
+might increase the adjusted R2, even though this seems unlikely. When either or both of these
+variables are added, the adjusted R2 decreases from 0.70 to 0.69. Thus, these variables are not
+added to the working model.
+In this working model, only one of the coeﬃcients associated with grazing intensity is statis-
+tically signiﬁcant; when compared to the baseline grazing category (light grazing), heavy grazing
+is associated with a reduced predicted mean abundance of 11.9 birds (assuming that log.area is
+held constant). Individual categories of a categorical variable cannot be dropped, so a data ana-
+lyst has the choice of leaving the variable as is, or collapsing the variable into fewer categories.
+For this model, it might be useful to collapse grazing intensity into a two-level variable, with one
+category corresponding to the original classiﬁcation of heavy, and another category corresponding
+to the other four categories; i.e., creating a version of grazing intensity that only has the levels
+"heavy" and "not heavy". This is supported by the data exploration; a plot of abundance versus
+grazing.intensity shows that the centers of the distributions of abundance in the lowest four graz-
+ing intensity categories are roughly similar, relative to the center in the heavy grazing category. The
+model with the binary version of grazing intensity, grazing.binary, is shown in Figure 7.28. The
+model with grazing.binary has adjusted R2 = 0.71, which is slightly larger than 0.70 in the more
+complex model with grazing.intensity; the model explains 72% of the variability in abundance
+(R2 = 0.724).
+Incorporating an interaction term did not improve the model; adding a parameter for the
+interaction between log.area and grazing.binary decreased the adjusted R2 to 0.709. Thus, the
+model shown in Figure 7.28 is the ﬁnal model.
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+15.3736
+1.4507
+10.60
+0.0000
+log.area
+3.1822
+0.4523
+7.04
+0.0000
+grazing.binaryheavy
+-11.5783
+1.9862
+-5.83
+0.0000
+Figure
+7.28:
+Final
+model:
+regression
+of
+abundance
+on
+log.area
+and
+grazing.binary.
+
+
+--- PDF page 365 ---
+7.8. MODEL SELECTION FOR EXPLANATORY MODELS
+365
+Model assessment
+The ﬁt of a model can be assessed using various residual plots. Figure 7.29 shows a histogram and
+normal probability plot of the residuals for the ﬁnal model. Both show that the residuals follow
+the shape of a normal density in the middle range (between -10 and 10) but ﬁt less well in the tails.
+There are too many large positive and large negative values) residuals.
+Residuals
+−15
+−5
+0
+5
+10
+15
+Theoretical Quantiles
+−2
+−1
+0
+1
+2
+−15
+−10
+−5
+0
+5
+10
+Figure 7.29: Histogram and normal probability plot of residuals in the model for
+abundance with predictors log.area and grazing.binary.
+Figure 7.30 gives a more detailed look at the residuals, plotting the residuals against predicted
+values and against the two predictors in the model, log.area and grazing.level. Recall that resid-
+ual values closer to 0 are indicative of a more accurate prediction; positive values occur when the
+predicted value from the model is smaller than the observed value, and vice versa for negative
+values. Residuals are a measure of the prediction error of a model.
+10
+20
+30
+40
+−15
+−10
+−5
+0
+5
+10
+Predicted Value
+Residual
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G G
+−2
+0
+2
+4
+6
+−15
+−10
+−5
+0
+5
+10
+Residual
+log.area
+not heavy
+heavy
+−15
+−10
+−5
+0
+5
+10
+Residual
+grazing.binary
+Figure 7.30: Scatterplots of residuals versus predicted values and residuals ver-
+sus log.area, and a side-by-side boxplot of residuals by grazing.binary. In the
+middle plot, red points correspond to values where grazing level is "heavy" and
+blue points correspond to "not heavy".
+
+
+--- PDF page 366 ---
+366
+CHAPTER 7. MULTIPLE LINEAR REGRESSION
+In the left plot, the large positive and large negative residuals visible from Figure 7.29 are
+evident; the large positive residuals occur across the range of predicted values, while the large
+negative residuals occur around 20 (predicted birds). The middle plot shows that the large positive
+and negative residuals occur at intermediate values of log.area; i.e., for values of log.area between
+0 and 4, or equivalently for values of area between exp(0) = 1 and exp(4) = 54.5 hectares. In
+the same range, there are also relatively accurate predictions; most residuals are between -5 and
+5. Both the middle plot and the right plot show that the prediction error is smaller for patches
+with heavy grazing than for patches where grazing intensity was between "light" and "moderately
+heavy". Patches with heavy grazing are represented with red points; note how the red points mostly
+cluster around the y = 0 line, with the exception of one outlier with a residual value of about 10.
+Conclusions
+The relatively large R2 for the ﬁnal model (0.72) suggests that patch area and extent of grazing
+(either heavy or not) explain a large amount of the observed variability in bird abundance. Of
+the features measured in the study, these two are the most highly associated with bird abundance.
+Larger area is associated with an increase in abundance; when grazing intensity does not change,
+the model predicts an increase in average abundance by 3.18 birds for every one unit increase in
+log area (or equivalently, when area is increased by a factor of exp(1) = 2.7). A patch with heavy
+grazing is estimated to have a mean abundance of about 11.58 birds lower than a patch that has
+not been heavily grazed.
+The residual plots imply that the ﬁnal model may not be particularly accurate. For most
+observations, the predictions are accurate between ±5 birds, but there are several instances of over-
+predictions as high as around 10 and under-predictions of about 15. Additionally, the accurate
+and inaccurate predictions occur at similar ranges of of log.area; if the model only tended to be
+inaccurate at a speciﬁc range, such as for patches with low area, it would be possible to provide
+clearer advice about when the model is unreliable. The residuals plots do suggest that the model
+is more reliable for patches with heavy grazing, although there is a slight tendency towards over-
+prediction.
+Based on these results, the ecologists might decide to proceed by collecting more data. Cur-
+rently, the model seems to adequately explain the variability in bird abundance for patches that
+have been heavily grazed, but perhaps there are additional variables that are associated with bird
+abundance, especially in patches that are not heavily grazed. Adding these variables might im-
+prove model residuals, in addition to raising R2.
+Final considerations
+Might a model including all the predictor variables be better than the ﬁnal model with only
+log.area and grazing.binary? The model is shown in Figure 7.31. The R2 for this model is 0.729
+and the adjusted R2 is 0.676. While the R2 is essentially the same as for the ﬁnal model, the ad-
+justed R2 is noticeably lower. The residual plots in Figure 7.32 do not indicate that this model is an
+especially better ﬁt, although the residuals are slightly closer to normality. There would be little
+gained from using the larger model.
+In fact, there is an additional reason to avoid the larger model. When building regression
+models, it is important to consider that the complexity of a model is limited by sample size (i.e.,
+the number of observations in the data). Attempting to estimate too many parameters from a small
+dataset can produce a model with unreliable estimates; the model may be ’overﬁt’, in the sense
+that it ﬁts the data used to build it particularly well, but will fail to generalize to a new set of data.
+Methods for exploring these issues are covered in more advanced regression courses.
+
+
+--- PDF page 367 ---
+7.8. MODEL SELECTION FOR EXPLANATORY MODELS
+367
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+10.8120
+9.9985
+1.08
+0.2852
+log.area
+2.9720
+0.6587
+4.51
+0.0000
+log.dist.near.patch
+0.1390
+1.1937
+0.12
+0.9078
+log.dist.larger.patch
+0.3496
+0.9301
+0.38
+0.7087
+altitude
+0.0117
+0.0233
+0.50
+0.6169
+log.yrs.isolation
+0.2155
+1.9635
+0.11
+0.9131
+grazing.intensityless than average
+0.5163
+3.2631
+0.16
+0.8750
+grazing.intensityaverage
+0.1344
+2.9870
+0.04
+0.9643
+grazing.intensitymoderately heavy
+-1.2535
+3.2000
+-0.39
+0.6971
+grazing.intensityheavy
+-12.0642
+4.5657
+-2.64
+0.0112
+Figure 7.31:
+Full model:
+regression of abundance on all 6 predictors in
+forest.birds.
+0
+10
+20
+30
+40
+−15
+−10
+−5
+0
+5
+10
+Predicted Value
+Residual
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G
+G
+GG
+G
+G
+G
+G
+G G
+Theoretical Quantiles
+Sample Quantiles
+−2
+−1
+0
+1
+2
+−15
+−10
+−5
+0
+5
+10
+Figure 7.32: Residual plots for the full model of abundance that includes all pre-
+dictors.
+A general rule of thumb is to avoid ﬁtting a model where there are fewer than 10 observations
+per parameter; e.g., to ﬁt a model with 3 parameters, there should be at least 30 observations in the
+data. In a regression context, all of the following are considered parameters: an intercept term, a
+slope term for a numerical predictor, a slope term for each level of a categorical predictor, and an
+interaction term. In forest.birds, there are 56 cases, but ﬁtting the full model involves estimating
+10 parameters. The rule of thumb suggests that for these data, a model can safely support at most
+5 parameters.
+As mentioned earlier, other analyses of forest.birds have treated grazing.intensity as a nu-
+merical variable with ﬁve values. One advantage to doing so is to produce a more stable model; only
+one slope parameter needs to be estimated, rather than four. However, treating grazing.intensity
+as a numerical variable requires assuming that any one unit change is associated with the same
+change in population mean abundance; under this assumption, a change between "light" and "less
+than average" (codes 1 to 2) is associated with the same change in population mean abundance as
+between "moderately heavy" to "heavy" (codes 4 to 5) grazing. Previous model ﬁtting has shown
+that this assumption is not supported by the data, and that changes in mean abundance between
+adjacent levels in grazing intensity are not constant. In this text, it is our recommendation that
+categorical variables should not be treated as numerical variables.
+
+
+--- PDF page 368 ---
+368
+CHAPTER 7. MULTIPLE LINEAR REGRESSION
+7.9
+The connection between ANOVA and regression
+Regression with categorical variables and ANOVA are essentially the same method, but with
+some important diﬀerences in the information provided by the analysis. Earlier in this chapter, the
+strength of the association between RFFT scores and educational level was assessed with regres-
+sion. Figure 7.33 shows the results of an ANOVA to analyze the diﬀerence in RFFT scores between
+education groups.
+Df
+Sum Sq
+Mean Sq
+F value
+Pr(>F)
+as.factor(Education)
+3
+115040.88
+38346.96
+73.30
+0.0000
+Residuals
+496
+259469.32
+523.12
+Figure 7.33: Summary of ANOVA of RFFT by Education Levels
+In this setting, the F-statistic is used to test the null hypothesis of no diﬀerence in mean RFFT
+score by educational level against the alternative that at least two of the means are diﬀerent. The
+F-statistic is 73.3 and highly signiﬁcant.
+The F-statistic can also be calculated for regression models, although it has not been shown
+in the regression model summaries in this chapter. In regression, the F-statistic tests the null
+hypothesis that all regression coeﬃcients are equal to 0 against the alternative that least one of the
+coeﬃcients is not equal to 0.
+Although the phrasing of the hypotheses in ANOVA versus regression may seem diﬀerent ini-
+tially, they are equivalent. Consider the regression model for predicting RFFT from educational
+level—each of the coeﬃcients in the model is an estimate of the diﬀerence in mean RFFT for a
+particular education level versus the baseline category of Education = 0. A signiﬁcant F-statistic
+indicates that at least one of the coeﬃcients is not zero; i.e., that at least one of the mean levels
+of RFFT diﬀers from the baseline category. If all the coeﬃcients were to equal zero, then the dif-
+ferences between the means would be zero, implying all the mean RFFT levels are equal. It is
+reasonable, then, that the F-statistic associated with the RFFT versus Education regression model is
+also 73.3.
+The assumptions behind the two approaches are identical. Both ANOVA and linear regression
+assume that the groups are independent, that the observations within each group are independent,
+that the response variable is approximately normally distributed, and that the standard deviations
+of the response are the same across the groups.
+The regression approach provides estimates of the mean at the baseline category (the inter-
+cept) and the diﬀerences of the means between each category and the baseline, along with a t-
+statistic and p-value for each comparison. From regression output, it is easy to calculate all the
+estimated means; to do the same with ANOVA requires calculating summary statistics for each
+group. Additionally, diagnostic plots to check model assumptions are generally easily accessible in
+most computing software.
+
+
+--- PDF page 369 ---
+7.9. THE CONNECTION BETWEEN ANOVA AND REGRESSION
+369
+Why use ANOVA at all if ﬁtting a linear regression model seems to provide more information?
+A case can be be made that the most important ﬁrst step in analyzing the association between a
+response and a categorical variable is to compute and examine the F-statistic for evidence of any
+eﬀect, and that only when the F-statistic is signiﬁcant does it become appropriate to proceed to
+examine the nature of the diﬀerences. ANOVA displays the F-statistic prominently, emphasizing
+its importance. It is available in regression output, but may not always be easy to locate; the focus of
+regression is on the signiﬁcance of the individual coeﬃcients. ANOVA has traditionally been used
+in carefully designed experiments. There are complex versions of ANOVA that are appropriate for
+experiments in which several diﬀerent factors are set at a range of levels. More complex versions
+of ANOVA are beyond the scope of this text and are covered in more advanced books.
+Section 5.5 discussed the use of Bonferroni corrections when testing hypotheses about pair-
+wise diﬀerences among the group means when conducting ANOVA. In principle, Bonferroni cor-
+rections can be applied in regression with categorical variables, but that is not often done. In
+designed experiments in which ANOVA has historically been used, the goal was typically to show
+deﬁnitively that a categorical predictor, often a treatment or intervention, was associated with a
+response variable so that the treatment could be adopted for clinical use. In experiments where
+the predictor can be manipulated by a scientist and cases are randomized to one of several levels
+of a predictor, the association can be interpreted as causal. It can be particularly important to con-
+trol Type I error probabilities in those settings. Regression is often thought of as an exploratory
+technique, used in observational studies to discover associations that can be explored in further
+studies. Strict control of Type I error probabilities may be less critical in such settings.
+At the introductory level, ANOVA is useful in that it provides more direct access to Type I error
+control and pairwise comparisons with t-tests. In practice, with the use of techniques not covered
+in this text, any analysis done via the ANOVA approach can also be approached with regression
+modeling.
+
+
+--- PDF page 370 ---
+370
+CHAPTER 7. MULTIPLE LINEAR REGRESSION
+7.10
+Notes
+This chapter and the previous chapter cover only the basic principles behind linear regression,
+and are meant to provide useful tools for getting started with data analysis. This section summa-
+rizes the most important ideas in the chapter and makes reference to some related topics that have
+not been discussed in detail.
+Important ideas
+Keep a clear view of the purpose. Is the goal of constructing the model to understand the relationship
+between the response and a particular predictor after adjusting for confounders? Or is the
+goal to understand the joint association between a response and a set of predictors?
+Avoid rushing into model ﬁtting. Before ﬁtting models, examine the data. Assess whether the re-
+sponse variable has an approximate normal distribution, or at least a symmetric distribution;
+a log transformation will often produce approximate normality. Examine the relationships
+between the response and predictors, as well as the relationships between predictors; check
+for nonlinear trends or outliers.
+Remember the context of the problem. Context is important at each stage of a regression analysis.
+The best approach for constructing a model from a small number of potential predictors is
+based on considering the context of the problem and including predictors that have either
+been shown in the past to be associated with the response or for which there is a plausi-
+ble working hypothesis about association with the response. When interpreting coeﬃcients,
+consider whether the model results cohere with the underlying biological or medical context.
+Critically examine residual plots.
+All models are approximations, so it is not necessary to be
+concerned about relatively minor violations of assumptions; residual plots are seldom as
+well behaved as those for the PREVEND data. In some cases, like with the California DDS
+data, residual plots show obvious major violations. With intermediate cases such as in the
+forest.birds plots, examine the plots closely and provide a detailed assessment of where the
+model seems less reliable.
+
+
+--- PDF page 371 ---
+7.10. NOTES
+371
+Related topics
+Stepwise model selection. Many introductory texts recommend using “stepwise” regression. For-
+ward stepwise regression adds predictors one by one according to a set criterion (usually by
+smallest p-value). Backward stepwise regression eliminates variables one by one from a larger
+model until a criterion is met. Stepwise methods can be useful, and are usually automated
+in statistical software. However, there are weaknesses—the ﬁnal models are data-dependent
+and chance alone can lead to spurious variables being included. In very large datasets, step-
+wise regression can lead to substantially incorrect models.
+Prediction models. An application of regression not discussed in this chapter is predictive model-
+ing, in which the goal is to construct a model that best predicts outcomes. The focus is on
+overall predictive accuracy; signiﬁcance of individual coeﬃcients is less important. Evalu-
+ating a model’s predictive accuracy involves advanced methods such as cross-validation, in
+which the original data sample is divided into a training set and a test set, similar to the ap-
+proach used with the Golub leukemia data in Chapter 1. Prediction models are typically built
+from large datasets, using automated model selection procedures like stepwise regression.
+Prediction intervals. Predicted values from regression have an inherent uncertainty because model
+parameters are only estimates. There are two types of interval estimates used with prediction:
+conﬁdence intervals for a predicted mean response from a set of values for the predictors, and
+prediction intervals that show the variability in the predicted value for a new response (i.e.,
+for a case not in the dataset) given a set of values for the predictor variables. Prediction
+intervals are wider than conﬁdence intervals for a predicted mean because prediction inter-
+vals are subject to both the variability in a predicted mean response and the variability of an
+individual observation about its mean.
+Controlling Type I error in regression. Control of Type I error probabilities becomes more critical
+in regression models with very large numbers of potential predictors. Datasets containing
+measurements on genetic data often contain large numbers of potential predictors for a re-
+sponse for many cases; a stricter signiﬁcance level is used to maintain an overall error rate
+of α = 0.05. For example, in genome-wide association studies, the accepted "genome-wide
+signiﬁcance rate" for an individual marker to be considered signiﬁcantly associated with an
+outcome is 5 × 10−8.
+Because there are so many tools available in multiple regression, this chapter has a larger
+collection of labs than most other chapters. Lab 1 introduces the multiple regression model, il-
+lustrating one its most common uses—estimating an association between a response variable and
+predictor of interest while adjusting for possible confounding. Lab 2 discusses the residual plots
+used to check assumptions for multiple regression and introduces adjusted R2 using the California
+DDS dataset initially introduced in Chapter 1.
+Lab 3 explores how the association between a response variable and categorical predictors
+with more than two levels can be be estimated using multiple regression. This topic extends the
+earlier material in Chapter 6, Lab 4. Lab 4 introduces the concept of a statistical interaction using
+the NHANES dataset, examining whether the association between BMI and age among women is
+diﬀerent than that among men.
+Multiple regression is often used to examine associations between response variables and a
+small set of pre-speciﬁed predictors. It can also be used to explore and select models between a
+response variable and a set of candidate predictors. Lab 5 discusses explanatory modeling, in which
+the goal is to construct a model that eﬀectively explains the observed variation in the response
+variable.
+
+
+--- PDF page 372 ---
+372
+CHAPTER 7. MULTIPLE LINEAR REGRESSION
+7.11
+Exercises
+7.11.1
+Introduction to multiple linear regression
+There are not currently exercises available for this section.
+7.11.2
+Simple versus multiple regression
+7.1
+PREVEND, Part I. The summary table below shows the results of a multiple regression model of RFFT
+score versus statin use and age.
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+137.8822
+5.1221
+26.92
+0.0000
+Statin
+0.8509
+2.5957
+0.33
+0.7432
+Age
+-1.2710
+0.0943
+-13.48
+0.0000
+In a clinical setting, the interpretive focus lies on reporting the nature of the association between the
+primary predictor and the response, while specifying which potential confounders have been adjusted for.
+Brieﬂy respond to a clinician who is concerned about a possible association between statin use and decreased
+cognitive function, based on the above analysis.
+7.2
+PREVEND, Part II. Can the results of the analysis in Exercise 7.1 be used to conclude that as one ages,
+one’s cognitive function (as measured by RFFT score) declines? Explain your answer.
+7.3
+Baby weights, Part I. The Child Health and Development Studies investigate a range of topics. One
+study considered all pregnancies between 1960 and 1967 among women in the Kaiser Foundation Health
+Plan in the San Francisco East Bay area. The variable smoke is coded 1 if the mother is a smoker, and 0 if
+not. The variable parity is 1 if the child is the ﬁrst born, and 0 otherwise. The summary table below shows
+the results of a linear regression model for predicting the average birth weight of babies, measured in ounces,
+based on the smoking status of the mother and whether the child is the ﬁrst born.23
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+123.57
+0.72
+172.75
+0.0000
+smoke
+-8.96
+1.03
+-8.68
+0.0000
+parity
+-1.98
+1.15
+-1.72
+0.0859
+(a) Write the equation of the regression model.
+(b) Interpret the model slopes in the context of the data.
+(c) Calculate the estimated diﬀerence in mean birth weight for two infants born to non-smoking mothers, if
+one is ﬁrst born and the other is not.
+(d) Calculate the estimated diﬀerence in mean birth weight for two infants born to mothers who are smokers,
+if one is ﬁrst born and the other is not.
+(e) Calculate the predicted mean birth weight for a ﬁrst born baby born to a mother who is not a smoker.
+23Child Health and Development Studies, Baby weights data set.
+
+
+--- PDF page 373 ---
+7.11. EXERCISES
+373
+7.4
+Wolbachia, Part I. Wolbachia is a microbial symbiont estimated to be hosted by about 40% of all arthro-
+pod species, transmitted primarily from females to their oﬀspring through the eggs. Researchers conducted
+a study on a wasp species to understand the eﬀect of Wolbachia on the lifetime reproductive success of an in-
+sect host. They estimated the realized lifetime reproductive success of female wasps by collecting them soon
+after they die naturally in the ﬁeld, counting the number of eggs remaining in their ovaries and quantifying
+Wolbachia density in their body.
+In the ﬁrst stage of the experiment, researchers estimated potential reproductive success by collecting
+female wasps as they emerged from eggs then dissecting them to count the number of eggs in their ovaries.
+These data were used to create a predictive model for initial number of eggs based on tibia length (an indicator
+of body size) and Wolbachia density. Tibia length was measured in µm, and Wolbachia density in units of -ddCt.
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+-18.82
+27.26
+-0.69
+0.497
+wolbachia
+1.77
+1.07
+-1.65
+0.111
+tibia
+0.357
+0.15
+2.38
+0.0258
+(a) Write the model equation.
+(b) Interpret the model coeﬃcients in the context of the data.
+(c) Predict mean initial egg count for a wasp with tibia length of 171.4286 µm and Wolbachia density of -3.435
+-ddCt.
+7.11.3
+Evaluating the ﬁt of a multiple regression model
+7.5
+Baby weights, Part III. We considered the variables smoke and parity, one at a time, in modeling birth
+weights of babies in Exercise 7.3. A more realistic approach to modeling infant weights is to consider all
+possibly related variables at once. Other variables of interest include length of pregnancy in days (gestation),
+mother’s age in years (age), mother’s height in inches (height), and mother’s pregnancy weight in pounds
+(weight). Below are three observations from this data set.
+bwt
+gestation
+parity
+age
+height
+weight
+smoke
+1
+120
+284
+0
+27
+62
+100
+0
+2
+113
+282
+0
+33
+64
+135
+0
+...
+...
+...
+...
+...
+...
+...
+...
+1236
+117
+297
+0
+38
+65
+129
+0
+The summary table below shows the results of a regression model for predicting the average birth weight of
+babies based on all of the variables included in the data set.
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+-80.41
+14.35
+-5.60
+0.0000
+gestation
+0.44
+0.03
+15.26
+0.0000
+parity
+-3.33
+1.13
+-2.95
+0.0033
+age
+-0.01
+0.09
+-0.10
+0.9170
+height
+1.15
+0.21
+5.63
+0.0000
+weight
+0.05
+0.03
+1.99
+0.0471
+smoke
+-8.40
+0.95
+-8.81
+0.0000
+(a) Write the equation of the regression model that includes all of the variables.
+(b) Interpret the slopes of gestation and age in this context.
+(c) The coeﬃcient for parity is diﬀerent than in the linear model shown in Exercise 7.3. Why might there be
+a diﬀerence?
+(d) Calculate the residual for the ﬁrst observation in the data set.
+(e) The variance of the residuals is 249.28, and the variance of the birth weights of all babies in the data set
+is 332.57. Calculate the R2 and the adjusted R2. Note that there are 1,236 observations in the data set.
+
+
+--- PDF page 374 ---
+374
+CHAPTER 7. MULTIPLE LINEAR REGRESSION
+7.6
+Absenteeism, Part I. Researchers interested in the relationship between absenteeism from school and
+certain demographic characteristics of children collected data from 146 randomly sampled students in rural
+New South Wales, Australia, in a particular school year. Below are three observations from this data set.
+eth
+sex
+lrn
+days
+1
+0
+1
+1
+2
+2
+0
+1
+1
+11
+...
+...
+...
+...
+...
+146
+1
+0
+0
+37
+The summary table below shows the results of a linear regression model for predicting the average number of
+days absent based on ethnic background (eth: 0 - aboriginal, 1 - not aboriginal), sex (sex: 0 - female, 1 - male),
+and learner status (lrn: 0 - average learner, 1 - slow learner).24
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+18.93
+2.57
+7.37
+0.0000
+eth
+-9.11
+2.60
+-3.51
+0.0000
+sex
+3.10
+2.64
+1.18
+0.2411
+lrn
+2.15
+2.65
+0.81
+0.4177
+(a) Write the equation of the regression model.
+(b) Interpret each one of the slopes in this context.
+(c) Calculate the residual for the ﬁrst observation in the data set: a student who is aboriginal, male, a slow
+learner, and missed 2 days of school.
+(d) The variance of the residuals is 240.57, and the variance of the number of absent days for all students in
+the data set is 264.17. Calculate the R2 and the adjusted R2. Note that there are 146 observations in the
+data set.
+24W. N. Venables and B. D. Ripley. Modern Applied Statistics with S. Fourth Edition. Data can also be found in the R
+MASS package. New York: Springer, 2002.
+
+
+--- PDF page 375 ---
+7.11. EXERCISES
+375
+7.7
+Baby weights, Part VI. Exercise 7.5 presents a regression model for predicting the average birth weight
+of babies based on length of gestation, parity, height, weight, and smoking status of the mother. Use the
+following plots to assess whether the assumptions for linear regression are reasonably met. Discuss your
+reasoning.
+Residuals
+−60
+−40
+−20
+0
+20
+40
+60
+0
+50
+100
+150
+200
+250
+300
+Fitted values
+Residuals
+80
+120
+160
+−40
+0
+40
+Order of collection
+Residuals
+0
+400
+800
+1200
+−40
+0
+40
+Length of gestation
+Residuals
+150
+200
+250
+300
+350
+−40
+0
+40
+Parity
+Residuals
+0
+1
+−40
+0
+40
+Height of mother
+Residuals
+55
+60
+65
+70
+−40
+0
+40
+Weight of mother
+Residuals
+100
+150
+200
+250
+−40
+0
+40
+Smoke
+Residuals
+0
+1
+−40
+0
+40
+
+
+--- PDF page 376 ---
+376
+CHAPTER 7. MULTIPLE LINEAR REGRESSION
+7.8
+Toxemia and birth weight. A model was ﬁt for a random sample of 100 low birth weight infants born in
+two teaching hospitals in Boston, Massachusetts, regressing birthweight on the predictors gestational age and
+toxemia status. The condition toxemia, also known as preeclampsia, is characterized by high blood pressure
+and protein in urine by the 20th week of pregnancy; left untreated, toxemia can be life-threatening. Birth
+weight was measured in grams and gestational age measured in weeks.
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+-1286.200
+234.918
+-5.475
+0.0000
+toxemiaYes
+-206.591
+51.078
+-4.045
+0.0001
+gestage
+84.048
+8.251
+10.188
+0.0000
+24
+26
+28
+30
+32
+34
+−600
+−400
+−200
+0
+200
+400
+Residual vs Gestage
+Gestage (wks)
+Residual
+800
+1000
+1200
+1400
+−600
+−400
+−200
+0
+200
+400
+Residual vs Fitted
+Predicted Birthweight (g)
+Residual
+−2
+−1
+0
+1
+2
+−600
+−400
+−200
+0
+200
+400
+Normal Q−Q Plot
+Theoretical Quantiles
+Sample Quantiles
+(a) Write the model equation.
+(b) Interpret the coeﬃcients of the model, and comment on whether the intercept has a meaningful interpre-
+tation.
+(c) Predict the average birth weight for an infant born to a mother diagnosed with toxemia with gestational
+age 31 weeks.
+(d) Evaluate whether the assumptions for linear regression are reasonably satisﬁed.
+(e) A simple regression model with only toxemia status as a predictor had R2 = 0.0001 and R2
+adj = 0.010; in
+this model, the slope estimate for toxemia status is 7.785, with p = 0.907. The simple regression model
+and multiple regression model disagree regarding the nature of the association between birth weight
+and toxemia. Brieﬂy explain a potential reason behind the discrepancy. Which model do you prefer for
+understanding the relationship between birth weight and toxemia, and why?
+7.9
+Multiple regression fact checking. Determine which of the following statements are true and false.
+For each statement that is false, explain why it is false.
+(a) Suppose a numerical variable x has a coeﬃcient of b1 = 2.5 in the multiple regression model. Suppose
+also that the ﬁrst observation has x1 = 7.2, the second observation has a value of x1 = 8.2, and these
+two observations have the same values for all other predictors. Then the predicted value of the second
+observation will be 2.5 higher than the prediction of the ﬁrst observation based on the multiple regression
+model.
+(b) If a regression model’s ﬁrst variable has a coeﬃcient of b1 = 5.7, then if we are able to inﬂuence the data
+so that an observation will have its x1 be 1 larger than it would otherwise, the value y1 for this observation
+would increase by 5.7.
+(c) Suppose we ﬁt a multiple regression model based on a data set of 472 observations. We also notice that the
+distribution of the residuals includes some skew but does not include any particularly extreme outliers.
+Because the residuals are not nearly normal, we should not use this model and require more advanced
+methods to model these data.
+
+
+--- PDF page 377 ---
+7.11. EXERCISES
+377
+7.11.4
+The general multiple linear regression model
+7.10
+Cherry trees. Timber yield is approximately equal to the volume of a tree, however, this value is
+diﬃcult to measure without ﬁrst cutting the tree down. Instead, other variables, such as height and diameter,
+may be used to predict a tree’s volume and yield. Researchers wanting to understand the relationship between
+these variables for black cherry trees collected data from 31 such trees in the Allegheny National Forest,
+Pennsylvania. Height is measured in feet, diameter in inches (at 54 inches above ground), and volume in
+cubic feet.25
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+-57.99
+8.64
+-6.71
+0.00
+height
+0.34
+0.13
+2.61
+0.01
+diameter
+4.71
+0.26
+17.82
+0.00
+(a) Calculate a 95% conﬁdence interval for the coeﬃcient of height, and interpret it in the context of the data.
+(b) One tree in this sample is 79 feet tall, has a diameter of 11.3 inches, and is 24.2 cubic feet in volume.
+Determine if the model overestimates or underestimates the volume of this tree, and by how much.
+7.11
+GPA. A survey of 55 Duke University students asked about their GPA, number of hours they study at
+night, number of nights they go out, and their gender. Summary output of the regression model is shown
+below. Note that male is coded as 1.
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+3.45
+0.35
+9.85
+0.00
+studyweek
+0.00
+0.00
+0.27
+0.79
+sleepnight
+0.01
+0.05
+0.11
+0.91
+outnight
+0.05
+0.05
+1.01
+0.32
+gender
+-0.08
+0.12
+-0.68
+0.50
+(a) Calculate a 95% conﬁdence interval for the coeﬃcient of gender in the model, and interpret it in the
+context of the data.
+(b) Would you expect a 95% conﬁdence interval for the slope of the remaining variables to include 0? Explain
+7.12
+Trait inheritance of high blood pressure. One research question of public health interest is to de-
+termine the extent to which high blood pressure is a genetic phenomenon. In 20 families, the systolic blood
+pressure of the mother, father, and ﬁrst-born child in the family were measured (in units of mm Hg). A multi-
+ple linear regression model using Y = child’s blood pressure, X1 = mother’s blood pressure, and X2 = father’s
+blood pressure led to the following estimate of a least squares line: E(Y ) = −15.69 + 0.415X1 + 0.423X2. The
+standard errors associated with b0, b1, and b2, respectively, are 23.65, 0.125, and 0.119. The least squares ﬁt
+produced R2 = 0.597 and MSE = 113.8.
+(a) What proportion of the variability of a child’s systolic blood pressure is explained by this model?
+(b) Does the least squares line indicate statistically signiﬁcant associations between each of the parent’s sys-
+tolic blood pressures and that of the child? Explain your answer.
+(c) What is the predicted systolic blood pressure for a child whose mother’s and father’s systolic blood pres-
+sure is 125 mm Hg and 140 mm Hg, respectively?
+(d) A colleague tells you that something must be wrong with your model because your ﬁtted intercept is
+negative, but blood pressures are never negative. How do you respond?
+(e) Brieﬂy describe three diﬀerent plots for assessing the appropriateness or ﬁt of the above regression model.
+25D.J. Hand. A handbook of small data sets. Chapman & Hall/CRC, 1994.
+
+
+--- PDF page 378 ---
+378
+CHAPTER 7. MULTIPLE LINEAR REGRESSION
+7.13
+Wolbachia, Part II. Exercise 7.4 introduced a study about Wolbachia and reproductive success in a
+wasp host. The following table shows the model coeﬃcients for a model predicting the number of eggs laid
+over a lifetime from the predictor variables wolbachia density and tibia length. A higher number of eggs laid
+over a lifetime is indicative of greater reproductive success. The model has R2 = 0.314 and degrees of freedom
+34. The F-statistic is 7.782, with p-value 0.0016.
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+-17.88
+28.63
+-0.62
+0.537
+wolbachia
+4.28
+1.25
+3.42
+0.002
+tibia
+0.272
+0.16
+1.69
+0.010
+(a) Write the model equation.
+(b) Interpret the slope coeﬃcient of wolbachia.
+(c) Assess the evidence for whether Wolbachia is beneﬁcial for its host in nature, based on these data.
+(d) Compute and interpret a 95% conﬁdence interval for the population slope of wolbachia.
+(e) Interpret the signiﬁcance of the F-statistic.
+7.14
+Difﬁcult encounters, Part I. A study was conducted at a university outpatient primary care clinic in
+Switzerland to identify factors associated with diﬃcult doctor-patient encounters. The data consist of 527
+patient encounters, conducted by the 27 medical residents employed at the clinic. After each encounter, the
+attending physician completed two questionnaires: the Diﬃcult Doctor Patient Relationship Questionnaire
+(DDPRQ-10) and the patient’s vulnerability grid (PVG).
+A higher score on the DDPRQ-10 indicates a more diﬃcult encounter. The maximum possible score is
+60 and encounters with score 30 and higher are considered diﬃcult.
+A model was ﬁt for the association of DDPRQ-10 score with features of the attending physician: age,
+sex, and years of training. The model has F-statistic of 0.23 on 3 and 286 degrees of freedom, with p-value
+0.876.
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+30.594
+2.886
+10.601
+0.0000
+age
+-0.016
+0.104
+-0.157
+0.876
+sexM
+-0.535
+0.781
+-0.686
+0.494
+yrs.train
+0.096
+0.215
+0.445
+0.656
+(a) As a group, are these physician features useful for predicting DDPRQ-10 score?
+(b) Is there evidence of a signiﬁcant association between DDPRQ-10 score and any of the physician features?
+
+
+--- PDF page 379 ---
+7.11. EXERCISES
+379
+7.11.5
+Categorical predictors with several levels
+7.15
+Prison isolation experiment, Part III.
+Exercises 5.35 and 5.47 introduced an experiment conducted with the goal of identifying a treatment
+that reduces subjects’ psychopathic deviant T scores on the MMPI test. Exercise 5.35 evaluated the success
+of each individual treatment, and in exercise 5.47, ANOVA was used to compare the success of the three
+treatments. This exercise uses multiple regression to examine the intervention eﬀect.
+For this problem, a treatment variable (labeled treatment) has been constructed with three levels:
+(1) Therapeutic for sensory restriction plus the 15 minute "therapeutic" tape advising that professional help
+is available.
+(2) Neutral for sensory restriction plus a 15 minute "emotionally neutral" tap on training hunting dogs.
+(3) Absent for sensory restriction but no taped message.
+Forty-two subjects were randomly assigned to these treatment groups, and an MMPI test was adminis-
+tered before and after the treatment. Investigators hoped that the interventions would lower MMPI scores.
+The table below shows the result of a multiple regression in R where the response variable trt.effect is the
+change in MMPI score (pre-intervention - post-intervention) and the predictor variable is treatment.
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+-3.2143
+2.6174
+-1.23
+0.2268
+treatmentNeutral
+6.0714
+3.7015
+1.64
+0.1090
+treatmentTherapeutic
+9.4286
+3.7015
+2.55
+0.0149
+In this model, the residual standard error is 9.79, the F-statistic is 3.33 with 2 and 39 degrees of freedom;
+P (F2,39 > 3.33) = 0.0461.
+(a) Interpret the meaning of a positive value for trt.effect versus a negative value.
+(b) Write the estimated model equation.
+(c) Calculate the predicted value for trt.effect for a patient in the neutral tape group.
+(d) Does the intercept have a meaningful interpretation in this model?
+(e) What is the interpretation of the two slope coeﬃcients in the regression model?
+(f) Describe the tested hypotheses that correspond to each of the p-values in the last column of the table.
+7.16
+Poverty and educational level. This question uses data from 500 randomly selected adults in the
+larger NHANES dataset. Poverty is measured as a ratio of family income to poverty guidelines. Smaller
+numbers indicate more poverty, and ratios of 5 or larger were recorded as 5. The Education variable indicates
+the highest level of education achieved: either 8th grade, 9 - 11th grade, high school, some college, or college
+grad.
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+1.4555
+0.2703
+5.38
+0.0000
+Education9 - 11th Grade
+0.9931
+0.3302
+3.01
+0.0028
+EducationHigh School
+1.0900
+0.3113
+3.50
+0.0005
+EducationSome College
+1.4943
+0.2976
+5.02
+0.0000
+EducationCollege Grad
+2.4948
+0.2958
+8.43
+0.0000
+In this model, the residual standard error is 1.46, the F-statistic is 28.09 with 4 and 456 degrees of
+freedom; P (F4,456 > 28.09) < 0.0001.
+(a) Write the estimated model equation.
+(b) Calculate the predicted poverty ratio for an individual who at most completed high school.
+(c) Interpret the estimated intercept value.
+(d) Interpret the slope coeﬃcient for EducationCollege Grad, and describe the tested hypotheses that corre-
+spond to the p-value for this slope coeﬃcient.
+(e) Assess whether educational level, overall, is associated with poverty. Be sure to include any relevant
+numerical evidence as part of your answer.
+
+
+--- PDF page 380 ---
+380
+CHAPTER 7. MULTIPLE LINEAR REGRESSION
+7.17
+Prison isolation experiment, Part IV. Exercise 7.15 used regression to examine the eﬀect of three
+interventions on prisoner MMPI scores. The response variable in the regression was trt.effect, the change
+in MMPI score (pre-intervention - post-intervention).
+Instead of estimating the intervention eﬀect through the change in scores, suppose one is interested in
+predicting a post-intervention score based on the pre-intervention score for an individual and a particular
+intervention.
+(a) The table below shows an alternative regression model that can be ﬁt to the data. In this model, the
+response variable is the post-intervention MMPI value (post, not shown explicitly in the table) and the
+predictors are the pre-intervention score (pre) and the treatment, coded as in problem 7.15.
+Write the estimated equation for this model.
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+28.4053
+12.2949
+2.31
+0.0264
+pre
+0.6593
+0.1628
+4.05
+0.0002
+treatmentNeutral
+-5.7307
+3.5545
+-1.61
+0.1152
+treatmentTherapeutic
+-9.7450
+3.5540
+-2.74
+0.0093
+(b) In this model, describe in general terms the association of the pre-intervention and post-intervention
+scores.
+(c) Does the pre-intervention score appear to be an important predictor of a post intervention score?
+(d) What is the predicted post-intervention score for an individual with a pre-intervention score of 73 and
+receiving no tape after the isolation?
+(e) Explain the interpretation of the coeﬃcients for coeﬃcient of treatmentNeutral. Is there strong statistical
+evidence that it is an important predictor?
+7.18
+Resilience, Part I. The American Psychological Association deﬁnes resilience as "the process of adapt-
+ing well in the face of adversity, trauma, tragedy, threats, or even signiﬁcant sources of stress". Studies have
+suggested that resilience is an important factor in contributing to how medical students perceive their quality
+of life and educational environment.
+Survey data were collected from 1,350 students across 25 medical schools. At each school, 54 students
+were randomly selected to participate in the study. Participants completed questionnaires measuring re-
+silience, quality of life, perception of educational environment, depression symptoms, and anxiety symptoms.
+The following regression model was ﬁt to analyze the relationship between resilience and depressive
+symptoms. Resilience was categorized as: very low, low, moderately low, moderately high, high, and very high.
+Depressive symptoms were measured on a scale of 0 to 63 points, with higher scores indicating either more
+numerous or more severe depressive symptoms; this questionnaire is called the Beck Depression Inventory
+(BDI).
+In this model, the residual standard error is 5.867, the F-statistic is 118.1 with 5 and 1344 degrees of
+freedom; P (F5,1344 > 118.1) < 0.0001.
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+4.9754
+0.4118
+12.08
+0.0000
+resHigh
+2.2936
+0.4987
+4.60
+0.0000
+resModHigh
+4.3005
+0.5181
+8.30
+0.0000
+resModLow
+6.7108
+0.5938
+11.30
+0.0000
+resLow
+9.6538
+0.7458
+12.94
+0.0000
+resVeryLow
+15.6453
+0.7518
+20.81
+0.0000
+(a) Describe the overall trend in language accessible to someone who has not taken a statistics course.
+(b) Does the intercept have a meaningful interpretation? Explain your answer.
+(c) Compare the predicted mean BDI score for someone with low resilience to that of someone with very low
+resilience.
+(d) + (e) Continue to the next page for parts (d) and (e).
+
+
+--- PDF page 381 ---
+7.11. EXERCISES
+381
+(d) Assess whether level of resilience, overall, is associated with depressive symptoms as measured by BDI
+score. Be sure to include any relevant numerical evidence as part of your answer.
+(e) A model was ﬁtted predicting BDI score from resilience, with the categories numerically coded from 1 to
+6, with 1 being very high resilience and 6 being very low resilience. This model has a single slope estimate
+of 2.76 with p-value < 0.0001.
+i. Using this model, compare the predicted mean BDI score for someone with low resilience to that of
+someone with very low resilience. Compare this answer to the one from part (c).
+ii. What does this model imply about the change in mean BDI score between groups?
+iii. Explain why this model is ﬂawed.
+7.11.6
+Reanalyzing the PREVEND data
+There are not currently exercises available for this section.
+7.11.7
+Interaction in regression
+7.19
+Prison isolation experiment, Part V. Exercise 7.17 used regression to predict a post-intervention score
+based on pre-intervention score and a particular intervention.
+The following table shows a model incorporating interaction between pre-intervention score and inter-
+vention.
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+-17.5790
+17.7090
+-0.99
+0.3275
+pre
+1.2813
+0.2376
+5.39
+0.0000
+treatmentNeutral
+67.7518
+30.6168
+2.21
+0.0333
+treatmentTherapeutic
+64.4183
+24.2124
+2.66
+0.0116
+pre:treatmentNeutral
+-0.9890
+0.4082
+-2.42
+0.0206
+pre:treatmentTherapeutic
+-1.0080
+0.3266
+-3.09
+0.0039
+(a) Write the model equation.
+(b) Interpret the model coeﬃcients.
+(c) Write a separate model equation for each intervention group.
+(d) Do these data suggest that there is a statistically signiﬁcant diﬀerence in association between pre- and
+post-intervention scores by treatment group? Explain your answer.
+7.20
+Vitamin D. A study was conducted to evaluate Vitamin D status among schoolchildren in Thailand.
+Exposure to sunlight allows the body to produce serum 25(OH)D, which is a marker of Vitamin D status;
+serum level is measured in units of nmol/L and having serum level below 50 nmol/L is indicative of Vitamin
+D deﬁciency. The following model was ﬁt to predict serum 25(OH)D level from age, sex, and their interaction.
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+97.7709
+4.7732
+20.48
+0.0000
+age
+-3.0156
+0.4774
+-6.32
+0.0000
+sexM
+-16.2848
+7.0740
+-2.30
+0.0217
+age:sexM
+2.9369
+0.7054
+4.16
+0.0000
+(a) Write the model equation.
+(b) Interpret the model coeﬃcients.
+(c) Is there statistically signiﬁcant evidence that the association between serum 25(OH)D level and age diﬀers
+by sex? Explain your answer.
+
+
+--- PDF page 382 ---
+382
+CHAPTER 7. MULTIPLE LINEAR REGRESSION
+7.21
+PREVEND, Part III. Exercise 7.1 showed a multiple regression model predicting RFFT score from statin
+use and age. For this problem, an interaction term is added between statin use and age.
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+140.2031
+5.6209
+24.94
+0.0000
+Statin
+-13.9720
+15.0113
+-0.93
+0.3524
+Age
+-1.3149
+0.1040
+-12.65
+0.0000
+Statin:Age
+0.2474
+0.2468
+1.00
+0.3166
+(a) Write the model equation.
+(b) Interpret the model coeﬃcients.
+(c) Is there statistically signiﬁcant evidence that the association between RFFT score and age diﬀers by
+whether someone is a statin user? Explain your answer.
+7.22
+Antibiotic consumption, Part I. Antibiotic resistance represents a major public health challenge.
+Overuse of antibiotics in clinical settings is thought to be a major contributor to increased antibiotic resis-
+tance. A study was conducted across several regions in China to investigate the impact of a 2011 law pro-
+hibiting over-the-counter (OTC) sales of antibiotics in private pharmacies. The study team collected data on
+average monthly antibiotic consumption in 621 counties, in addition to information on socioeconomic deter-
+minants such as percentage of population illiterate.
+The following model was ﬁt to investigate whether the relationship between monthly antibiotic con-
+sumption and percentage of population (over 25 years of age) with an advanced degree diﬀers between coun-
+ties that are located in a metropolitan area and those that are not.
+Estimate
+Std. Error
+t value
+Pr(>|t|)
+(Intercept)
+0.8482
+0.3311
+2.56
+0.0107
+metroYes
+2.3035
+0.9612
+2.40
+0.0169
+edu
+0.5711
+0.0319
+17.90
+0.0000
+metroYes:edu
+-0.1838
+0.0752
+-2.44
+0.0148
+(a) Interpret the model coeﬃcients, including any relevant inferential results.
+(b) Make a prediction of average monthly antibiotic consumption for a county in a metropolitan area where
+10% of the population over 25 years old has an advanced degree.
+7.11.8
+Model selection for explanatory variables
+7.23
+Baby weights, Part VII. Suppose the starting point for model selection for the birth weight data were
+the full model, with all variables. The table below shows the adjusted R2 for the full model as well as the
+adjusted R2 values for all models with one fewer predictor variable. Based on examining the table from
+Exercise 7.5 and the following table, identify which variable, if any, should be removed from the model ﬁrst.
+Explain your answer.
+Model
+Adjusted R2
+1
+Full model
+0.2541
+2
+No gestation
+0.1031
+3
+No parity
+0.2492
+4
+No age
+0.2547
+5
+No height
+0.2311
+6
+No weight
+0.2536
+7
+No smoking status
+0.2072
+
+
+--- PDF page 383 ---
+7.11. EXERCISES
+383
+7.24
+Absenteeism, Part II. Suppose the starting point for model selection for the absenteeism data were the
+full model, with all variables. The table below shows the adjusted R2 for the full model as well as the adjusted
+R2 values for all models with one fewer predictor variable. Based on examining the table from Exercise 7.6
+and the following table, identify which variable, if any, should be removed from the model ﬁrst. Explain your
+answer.
+Model
+Adjusted R2
+1
+Full model
+0.0701
+2
+No ethnicity
+-0.0033
+3
+No sex
+0.0676
+4
+No learner status
+0.0723
+7.25
+Baby weights, Part VIII. Exercise 7.5 shows a regression model for predicting the average birth weight
+of babies based on all variables included in the dataset: length of pregnancy in days (gestation), mother’s age
+in years (age), mother’s height in inches (height), and mother’s pregnancy weight in pounds (weight).
+The following plots show the relationships between the response and the numerical predictor variables,
+in addition to the relationships between the response and two categorical predictor variables.
+not first born
+first born
+60
+80
+100
+120
+140
+160
+180
+Birthweight (oz)
+Birth Order
+nonsmoker
+smoker
+60
+80
+100
+120
+140
+160
+180
+Birthweight (oz)
+Mother Smoking Status
+bwt
+150
+200
+250
+300
+350
+55
+60
+65
+70
+60
+100
+160
+150
+250
+350
+gestation
+age
+15
+25
+35
+45
+55
+65
+height
+60
+80
+100
+120
+140
+160
+180
+15
+20
+25
+30
+35
+40
+45
+100
+200
+100
+150
+200
+250
+weight
+(a) Examine the relationship between the response variable and the predictor variables. Describe what you
+see. Which predictor variables seem like they would be useful to include in an initial model?
+(b) Identify any predictors that seem related to each other.
+
+
+--- PDF page 384 ---
+384
+CHAPTER 7. MULTIPLE LINEAR REGRESSION
+7.26
+Antibiotic consumption, Part II. Exercise 7.22 introduced a study conducted about antibiotic con-
+sumption in China. One aim of the study was to develop a prediction model for predicting monthly aver-
+age antibiotic consumption based on county-level data. The following plots show the association between
+monthly average antibiotic consumption and four potential predictor variables: proportion female inhabi-
+tants (female), average life expectancy in years (lifeexp), proportion of population illiterate (illiterate),
+and population density in 1,000 people / km2 (popdensity).
+46
+48
+50
+52
+54
+0
+10
+20
+30
+40
+Consumption vs Female
+Percentage Female Pop
+Consumption (DID)
+72
+73
+74
+75
+76
+77
+78
+0
+10
+20
+30
+40
+Consumption vs Life Expectancy
+Life Expectancy (yrs)
+Consumption (DID)
+5
+10
+15
+0
+10
+20
+30
+40
+Consumption vs Percent Illiterate
+Percentage Illiterate
+Consumption (DID)
+0
+2
+4
+6
+8
+10
+12
+0
+10
+20
+30
+40
+Consumption vs Pop Density
+Density (1,000 people per sq km)
+Consumption (DID)
+(a) Summarize what you see.
+(b) Identify any predictor variables that might beneﬁt from a natural log transformation and brieﬂy justify
+your choices.
+
+
+--- PDF page 385 ---
+7.11. EXERCISES
+385
+7.11.9
+The connection between ANOVA and regression
+7.27
+Prison isolation experiment, Part VI. Problem 7.15 used a regression model to examine the eﬀect of
+the interventions on possibly reducing psychopathic deviant T scores on prisoners. The regression model is
+shown in the problem statement.
+(a) The value of the F-statistic is 3.33 with 2 and 39 degrees of freedom and P (F2,39 > 3.33) = 0.0461. In terms
+of the variables in the regression model, state the null hypothesis that corresponds to the F-statistic.
+(b) Describe the relationship between the coeﬃcients from the linear model and the usual summary statistics
+for the three sets of diﬀerence scores.
+(c) Explain why the null hypothesis in this regression model is equivalent to the null hypothesis when these
+data were analyzed using ANOVA in Problem 5.47.
+(d) Explain whether the assumptions for this regression model diﬀer from those used in ANOVA.
+7.28
+Resilience, Part II. Exercise 7.18 shows a regression model for the association of BDI score with re-
+silience level.
+(a) In terms of the variables in the regression model, state the null hypothesis that corresponds to the F-
+statistic.
+(b) Describe the relationship between the coeﬃcients from the linear model and the usual summary statistics
+for the six sets of BDI scores.
+(c) Explain why the null hypothesis used in this regression model is equivalent to the null hypothesis that
+would be used if these data were analyzed with an ANOVA approach.

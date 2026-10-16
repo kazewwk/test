@@ -1,0 +1,4741 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "created_at": "2021-08-08T07:49:19-07:00",
+      "creator_application": "LaTeX with hyperref package",
+      "producer_application": "macOS Version 10.15.6 (Build 19G2021) Quartz PDFContext, AppendMode 1.1",
+      "page_count": 472,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "txt"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 256,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 257,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 258,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 259,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 260,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 261,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 262,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 263,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 264,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 265,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 266,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 267,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 268,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 269,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 270,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        },
+        {
+          "page_idx": 271,
+          "width_pt": 612.0,
+          "height_pt": 792.0
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 256,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.145,
+            0.026,
+            0.622,
+            0.04
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5.4. POWER CALCULATIONS FOR A DIFFERENCE OF MEANS"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.932,
+            0.027,
+            0.962,
+            0.04
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "257"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.144,
+            0.076,
+            0.815,
+            0.098
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5.4 Power calculations for a difference of means"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.142,
+            0.137,
+            0.857,
+            0.205
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Designing a study often involves many complex issues; perhaps the most important statistical issue in study design is the choice of an appropriate sample size. The "
+            },
+            {
+              "type": "text",
+              "content": "power",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " of a statistical test is the probability that the test will reject the null hypothesis when the alternative hypothesis is true; sample sizes are chosen to make that probability sufficiently large, typically between 80% and 90%."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.142,
+            0.206,
+            0.856,
+            0.378
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Two competing considerations arise when choosing a sample size. The sample size should be sufficiently large to allow for important group differences to be detected in a hypothesis test. Practitioners often use the term ‘detecting a difference’ to mean correctly rejecting a null hypothesis, i.e., rejecting a null hypothesis when the alternative is true. If a study is so small that detecting a statistically significant difference is unlikely even when there are potentially important differences, enrolling participants might be unethical, since subjects could potentially be exposed to a dangerous experimental treatment. However, it is also unethical to conduct studies with an overly large sample size, since more participants than necessary would be exposed to an intervention with uncertain value. Additionally, collecting data is typically expensive and time consuming; it would be a waste of valuable resources to design a study with an overly large sample size."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.142,
+            0.38,
+            0.856,
+            0.448
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This section begins by illustrating relevant concepts in the context of a hypothetical clinical trial, where the goal is to calculate a sufficient sample size for being 80% likely to detect practically important effects."
+            },
+            {
+              "type": "text",
+              "content": "17",
+              "styles": [
+                "superscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " Afterwards, formulas are provided for directly calculating sample size, as well as references to software that can perform the calculations."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.143,
+            0.483,
+            0.516,
+            0.502
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5.4.1 Reviewing the concepts of a test"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.143,
+            0.538,
+            0.254,
+            0.552
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "EXAMPLE 5.13"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.142,
+            0.559,
+            0.856,
+            0.646
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A company would like to run a clinical trial with participants whose systolic blood pressures are between 140 and 180 mmHg. Suppose previously published studies suggest that the standard deviation of patient blood pressures will be about 12 mmHg, with an approximately symmetric distribution."
+            },
+            {
+              "type": "text",
+              "content": "18",
+              "styles": [
+                "superscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " What would be the approximate standard error for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\overline { { x } } _ { \\mathrm { t r m t } } - \\overline { { x } } _ { \\mathrm { c t r l } }"
+            },
+            {
+              "type": "text",
+              "content": " if 100 participants were enrolled in each treatment group?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.143,
+            0.663,
+            0.46,
+            0.679
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The standard error is calculated as follows:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.316,
+            0.69,
+            0.685,
+            0.733
+          ],
+          "image_path": "images/page_256_equation_10.jpg",
+          "content": "S E _ {\\overline {{x}} _ {\\mathrm{trmt}} - \\overline {{x}} _ {\\mathrm{ctrl}}} = \\sqrt {\\frac {s _ {\\mathrm{trmt}} ^ {2}}{n _ {\\mathrm{trmt}}} + \\frac {s _ {\\mathrm{ctrl}} ^ {2}}{n _ {\\mathrm{ctrl}}}} = \\sqrt {\\frac {1 2 ^ {2}}{1 0 0} + \\frac {1 2 ^ {2}}{1 0 0}} = 1. 7 0."
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.142,
+            0.744,
+            0.856,
+            0.796
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This may be an imperfect estimate of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "S E _ { \\overline { { x } } _ { \\mathrm { t r m t } } - \\overline { { x } } _ { \\mathrm { c t r l } } } ,"
+            },
+            {
+              "type": "text",
+              "content": " , since the standard deviation estimate of 12 mmHg from prior data may not be correct. However, it is sufficient for getting started, and making an assumption like this is often the only available option."
+            }
+          ]
+        },
+        {
+          "type": "aside_text",
+          "index": 12,
+          "bbox": [
+            0.092,
+            0.658,
+            0.117,
+            0.678
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "E"
+            }
+          ]
+        },
+        {
+          "type": "page_footnote",
+          "index": 13,
+          "bbox": [
+            0.16,
+            0.875,
+            0.823,
+            0.889
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "17"
+            },
+            {
+              "type": "text",
+              "content": "While",
+              "styles": [
+                "subscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " sample size planning is also important for observational studies, those techniques are not discussed here."
+            }
+          ]
+        },
+        {
+          "type": "page_footnote",
+          "index": 14,
+          "bbox": [
+            0.141,
+            0.889,
+            0.856,
+            0.951
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "18"
+            },
+            {
+              "type": "text",
+              "content": "In",
+              "styles": [
+                "subscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " many studies like this one, each participant’s blood pressure would be measured at the beginning and end of the study, and the outcome measurement for the study would be the average difference in blood pressure in each of the treatment groups. For this hypothetical study, we assume for simplicity that blood pressure is measured at only the end of the study, and that the randomization ensures that blood pressures at the beginning of the study are equal (on average) between the two groups."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 257,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.04,
+            0.027,
+            0.07,
+            0.04
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "258"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.467,
+            0.026,
+            0.857,
+            0.04
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "CHAPTER 5. INFERENCE FOR NUMERICAL DATA"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.143,
+            0.066,
+            0.858,
+            0.117
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Since the degrees of freedom are greater than 30, the distribution of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\overline { { x } } _ { \\mathrm { t r m t } } - \\overline { { x } } _ { \\mathrm { c t r l } }"
+            },
+            {
+              "type": "text",
+              "content": " will be approximately normal. Under the null hypothesis, the mean is 0 and the standard deviation is 1.70 (from the standard error)."
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 3,
+          "bbox": [
+            0.197,
+            0.129,
+            0.806,
+            0.257
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 3,
+              "bbox": [
+                0.197,
+                0.129,
+                0.806,
+                0.257
+              ],
+              "image_path": "images/page_257_chart_3.jpg",
+              "content": "| X | Y |\n| --- | --- |\n| -9 | ~0 |\n| -6 | ~0.05 |\n| -3 | ~0.4 |\n| 0 | 1 |\n| 3 | ~0.4 |\n| 6 | ~0.05 |\n| 9 | ~0 |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 4,
+              "bbox": [
+                0.266,
+                0.267,
+                0.735,
+                0.284
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Figure 5.19: Null distribution for the t-statistic in Example 5.14."
+                }
+              ]
+            }
+          ],
+          "sub_type": "violin"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.145,
+            0.317,
+            0.254,
+            0.33
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "EXAMPLE 5.14"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.144,
+            0.337,
+            0.757,
+            0.355
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For what values of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\overline { { x } } _ { \\mathrm { t r m t } } - \\overline { { x } } _ { \\mathrm { c t r l } }"
+            },
+            {
+              "type": "text",
+              "content": " would the null hypothesis be rejected, using "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha = 0 . 0 5 ?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.143,
+            0.372,
+            0.856,
+            0.424
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "If the observed difference is in the far left or far right tail of the null distribution, there is sufficient evidence to reject the null hypothesis. For "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha = 0 . 0 5 ,   H _ { 0 }"
+            },
+            {
+              "type": "text",
+              "content": " is rejected if the difference is in the lower 2.5% or upper 2.5% tail:"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.144,
+            0.441,
+            0.856,
+            0.475
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Lower 2.5%:",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " For the normal model, this is 1.96 standard errors below 0, so any difference smaller than "
+            },
+            {
+              "type": "equation_inline",
+              "content": "-1.96 \\times 1.70 = -3.332"
+            },
+            {
+              "type": "text",
+              "content": " mmHg."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.144,
+            0.481,
+            0.856,
+            0.515
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Upper 2.5%:",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " For the normal model, this is 1.96 standard errors above 0, so any difference larger than "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1 . 9 6 \\times 1 . 7 0 = 3 . 3 3 2 \\; \\mathrm { m m H g } ."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.142,
+            0.533,
+            0.856,
+            0.584
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The boundaries of these "
+            },
+            {
+              "type": "text",
+              "content": "rejection regions",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " are shown below. Note that if the new treatment is effective, mean blood pressure should be lower in the treatment group than in the control group; i.e., the difference should be in the lower tail."
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 11,
+          "bbox": [
+            0.197,
+            0.598,
+            0.806,
+            0.727
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 11,
+              "bbox": [
+                0.197,
+                0.598,
+                0.806,
+                0.727
+              ],
+              "image_path": "images/page_257_chart_11.jpg",
+              "content": "| Region | Description |\n| --- | --- |\n| Left | Reject H0 |\n| Center | Do not reject H0 |\n| Right | Reject H0 |"
+            }
+          ],
+          "sub_type": "violin"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.143,
+            0.744,
+            0.858,
+            0.779
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The next step is to perform some hypothetical calculations to determine the probability of rejecting the null hypothesis if the alternative hypothesis were true."
+            }
+          ]
+        },
+        {
+          "type": "aside_text",
+          "index": 13,
+          "bbox": [
+            0.092,
+            0.512,
+            0.119,
+            0.532
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "E"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 258,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.145,
+            0.026,
+            0.622,
+            0.04
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5.4. POWER CALCULATIONS FOR A DIFFERENCE OF MEANS"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.932,
+            0.027,
+            0.962,
+            0.04
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "259"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.143,
+            0.073,
+            0.592,
+            0.091
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5.4.2 Computing the power for a 2-sample test"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.142,
+            0.11,
+            0.857,
+            0.16
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "If there is a real effect from an intervention, and the effect is large enough to have practical value, the probability of detecting that effect is referred to as the "
+            },
+            {
+              "type": "text",
+              "content": "power",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ". Power can be computed for different sample sizes or different effect sizes."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.142,
+            0.162,
+            0.857,
+            0.248
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "There is no easy way to define when an effect size is large enough to be of value; this is not a statistical issue. For example, in a clinical trial, the scientifically significant effect is the incremental value of the intervention that would justify changing current clinical recommendations from an existing intervention to a new one. In such a setting, the effect size is usually determined from long discussions between the research team and study sponsors."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.142,
+            0.249,
+            0.857,
+            0.3
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Suppose that for this hypothetical blood pressure medication study, the researchers are interested in detecting any effect on blood pressure that is 3 mmHg or larger than the standard medication. Here, 3 mmHg is the minimum "
+            },
+            {
+              "type": "text",
+              "content": "population e",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "ff"
+            },
+            {
+              "type": "text",
+              "content": "ect size",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " of interest."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.144,
+            0.316,
+            0.254,
+            0.33
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "EXAMPLE 5.15"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.142,
+            0.337,
+            0.856,
+            0.388
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Suppose the study proceeded with 100 patients per treatment group and the new drug does reduce average blood pressure by an additional 3 mmHg relative to the standard medication. What is the probability of detecting this effect?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.142,
+            0.406,
+            0.856,
+            0.475
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Determine the sampling distribution for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\overline { { x } } _ { \\mathrm { t r m t } }   -   \\overline { { x } } _ { \\mathrm { c t r l } }"
+            },
+            {
+              "type": "text",
+              "content": " when the true difference is −3 mmHg; this has the same standard deviation of 1.70 as the null distribution, but the mean is shifted 3 units to the left. Then, calculate the fraction of the distribution for "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\overline { { x } } _ { \\mathrm { t r m t } } - \\overline { { x } } _ { \\mathrm { c t r l } }"
+            },
+            {
+              "type": "text",
+              "content": " that falls within the rejection region for the null distribution, as shown in Figure 5.20."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.142,
+            0.482,
+            0.856,
+            0.517
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The probability of being in the left side of the rejection region "
+            },
+            {
+              "type": "equation_inline",
+              "content": "(x < -3.332)"
+            },
+            {
+              "type": "text",
+              "content": " can be calculated by converting to a Z-score and using either the normal probability table or statistical software."
+            },
+            {
+              "type": "text",
+              "content": "19",
+              "styles": [
+                "superscript"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.293,
+            0.536,
+            0.705,
+            0.567
+          ],
+          "image_path": "images/page_258_equation_10.jpg",
+          "content": "Z = \\frac {- 3 . 3 3 2 - (- 3)}{1 . 7} = - 0. 2 0 \\quad \\rightarrow \\quad P (Z \\leq - 0. 2 0) = 0. 4 2 0 7."
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.142,
+            0.579,
+            0.856,
+            0.611
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The power for the test is about 42% when "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu _ { \\mathrm { t r m t } } - \\mu _ { \\mathrm { c t r l } } = - 3"
+            },
+            {
+              "type": "text",
+              "content": " mm/Hg and each group has a sample size of 100."
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 12,
+          "bbox": [
+            0.191,
+            0.641,
+            0.813,
+            0.772
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 12,
+              "bbox": [
+                0.191,
+                0.641,
+                0.813,
+                0.772
+              ],
+              "image_path": "images/page_258_chart_12.jpg",
+              "content": "| Category | Distribution with \\(\\mu_trmt\\) - \\(\\mu_ctrl\\) = -3 (Peak) | Null distribution (Peak) |\n| --- | --- | --- |\n| X-axis range | -9~9 | -3~3 |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 13,
+              "bbox": [
+                0.204,
+                0.783,
+                0.795,
+                0.814
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Figure 5.20: The rejection regions are outside of the dotted lines. Recall that the boundaries for "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\alpha = 0 . 0 5"
+                },
+                {
+                  "type": "text",
+                  "content": " were calculated to be ±3.332 mmHg."
+                }
+              ]
+            }
+          ],
+          "sub_type": "violin"
+        },
+        {
+          "type": "aside_text",
+          "index": 14,
+          "bbox": [
+            0.092,
+            0.453,
+            0.118,
+            0.474
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "E"
+            }
+          ]
+        },
+        {
+          "type": "page_footnote",
+          "index": 15,
+          "bbox": [
+            0.161,
+            0.935,
+            0.733,
+            0.952
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "19"
+            },
+            {
+              "type": "text",
+              "content": "The",
+              "styles": [
+                "subscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " probability of being in the right side of the rejection region is negligible and can be ignored."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 259,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.04,
+            0.027,
+            0.072,
+            0.041
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "260"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.467,
+            0.026,
+            0.857,
+            0.04
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "CHAPTER 5. INFERENCE FOR NUMERICAL DATA"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.144,
+            0.073,
+            0.528,
+            0.092
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5.4.3 Determining a proper sample size"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.142,
+            0.11,
+            0.858,
+            0.196
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The last example demonstrated that with a sample size of 100 in each group, there is a prob ability of about 0.42 of detecting an effect size of 3 mmHg. If the study were conducted with this sample size, even if the new medication reduced blood pressure by 3 mmHg compared to the control group, there is a less than 50% chance of concluding that the medication is beneficial. Studies with low power are often inconclusive, and there are important reasons to avoid such a situation:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 4,
+          "bbox": [
+            0.167,
+            0.209,
+            0.856,
+            0.322
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 5,
+              "bbox": [
+                0.167,
+                0.209,
+                0.797,
+                0.226
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "– Participants were subjected to a drug for a study that may have little scientific value."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.167,
+                0.231,
+                0.857,
+                0.265
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "– The company may have invested hundreds of millions of dollars in developing the new drug, and may now be left with uncertainty about its potential."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.167,
+                0.271,
+                0.856,
+                0.322
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "– Another clinical trial may need to be conducted to obtain a more conclusive answer as to whether the drug does hold any practical value, and that would require substantial time and expense."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.143,
+            0.336,
+            0.856,
+            0.371
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "To ensure a higher probability of detecting a clinically important effect, a larger sample size should be chosen. What about a study with 500 patients per group?"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.144,
+            0.386,
+            0.319,
+            0.4
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "GUIDED PRACTICE 5.16"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.142,
+            0.407,
+            0.856,
+            0.442
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Calculate the power to detect a change of -3 mmHg using a sample size of 500 per group. Recall that the standard deviation of patient blood pressures was expected to be about 12 mmHg."
+            },
+            {
+              "type": "text",
+              "content": "20",
+              "styles": [
+                "superscript"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 11,
+          "bbox": [
+            0.144,
+            0.452,
+            0.856,
+            0.531
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 12,
+              "bbox": [
+                0.145,
+                0.452,
+                0.393,
+                0.467
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(a) Determine the standard error."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 13,
+              "bbox": [
+                0.144,
+                0.474,
+                0.856,
+                0.508
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(b) Identify the null distribution and rejection regions, as well as the alternative distribution when "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mu _ { t r m t } - \\mu _ { c t r l } = - 3 ."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 14,
+              "bbox": [
+                0.145,
+                0.514,
+                0.588,
+                0.531
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "(c) Compute the probability of rejecting the null hypothesis."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.142,
+            0.548,
+            0.856,
+            0.599
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "With a sample size of 500 per group, the power of the test is much larger than necessary. Not only does this lead to a study that would be overly expensive and time consuming, it also exposes more patients than necessary to the experimental drug."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.142,
+            0.6,
+            0.856,
+            0.669
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Sample sizes are generally chosen such that power is around 80%, although in some cases 90% is the target. Other values may be reasonable for a specific context, but 80% and 90% are most commonly chosen as a good balance between high power and limiting the number of patients exposed to a new treatment (as well as reducing experimental costs)."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.146,
+            0.779,
+            0.856,
+            0.824
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "20(a) The standard error will now be "
+            },
+            {
+              "type": "equation_inline",
+              "content": "SE = \\sqrt{\\frac{12^2}{500} + \\frac{12^2}{500}} = 0.76."
+            },
+            {
+              "type": "text",
+              "content": " (b) The null distribution, rejection boundaries, and alternative distribution are shown below. The rejection regions are the areas outside the two dotted lines at xtrmt − xctrl ± 0.76 × 1.96 = ±1.49."
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 18,
+          "bbox": [
+            0.144,
+            0.824,
+            0.716,
+            0.91
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 18,
+              "bbox": [
+                0.144,
+                0.824,
+                0.716,
+                0.91
+              ],
+              "image_path": "images/page_259_chart_18.jpg",
+              "content": "| Category | Distribution with \\(\\mu_trmt\\) - \\(\\mu_ctrl\\) = -3 (Peak) | Null distribution (Peak) |\n| --- | --- | --- |\n| Peak X-value | ~-3 | 0 |"
+            }
+          ],
+          "sub_type": "violin"
+        },
+        {
+          "type": "text",
+          "index": 19,
+          "bbox": [
+            0.143,
+            0.911,
+            0.856,
+            0.951
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "(c) Compute the Z-score and find the tail area, Z =−1.49−(−3) 0.76 = 1.99 → P (Z ≤ 1.99) = 0.9767, which is the power of the test for a difference of 3 mmHg. With 500 patients per group, the study would be 97.7% likely to detect an effect size of 3 mmHg."
+            }
+          ]
+        },
+        {
+          "type": "aside_text",
+          "index": 20,
+          "bbox": [
+            0.092,
+            0.449,
+            0.118,
+            0.47
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "G"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 260,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.145,
+            0.026,
+            0.622,
+            0.04
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5.4. POWER CALCULATIONS FOR A DIFFERENCE OF MEANS"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.932,
+            0.028,
+            0.96,
+            0.04
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "261"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.144,
+            0.068,
+            0.254,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "EXAMPLE 5.17"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.144,
+            0.088,
+            0.578,
+            0.105
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Identify the sample size that would lead to a power of 80%."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.142,
+            0.123,
+            0.857,
+            0.157
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The Z-score that defines a lower tail area of 0.80 is about "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z = 0 . 8 4 ."
+            },
+            {
+              "type": "text",
+              "content": " . In other words, 0.84 standard errors from -3, the mean of the alternative distribution."
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 5,
+          "bbox": [
+            0.168,
+            0.173,
+            0.835,
+            0.285
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 5,
+              "bbox": [
+                0.168,
+                0.173,
+                0.835,
+                0.285
+              ],
+              "image_path": "images/page_260_chart_5.jpg",
+              "content": "| Metric | Value |\n| --- | --- |\n| Distribution with \\(\\mu_trmt\\) - \\(\\mu_ctrl\\) | -3 |\n| Null distribution (SE) | 1.96 |\n| Distribution with \\(\\mu_trmt\\) - \\(\\mu_ctrl\\) | -3 |\n| Distribution with \\(\\mu_trmt\\) - \\(\\mu_ctrl\\) (SE) | 0.84 |"
+            }
+          ],
+          "sub_type": "violin"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.142,
+            0.309,
+            0.857,
+            0.341
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha = 0 . 0 5 ,"
+            },
+            {
+              "type": "text",
+              "content": " the rejection region always extends 1.96 standard errors from 0, the center of the null distribution."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.142,
+            0.351,
+            0.857,
+            0.383
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The distance between the centers of the null and alternative distributions can be expressed in terms of the standard error:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.371,
+            0.4,
+            0.629,
+            0.416
+          ],
+          "image_path": "images/page_260_equation_8.jpg",
+          "content": "(0. 8 4 \\times S E) + (1. 9 6 \\times S E) = 2. 8 \\times S E."
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.143,
+            0.439,
+            0.857,
+            0.473
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This quantity necessarily equals the minimum effect size of interest, 3 mmHg, which is the distance between -3 and 0. It is then possible to solve for n:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.386,
+            0.489,
+            0.614,
+            0.579
+          ],
+          "image_path": "images/page_260_equation_10.jpg",
+          "content": "\\begin{array}{l} 3 = 2. 8 \\times S E \\\\ 3 = 2. 8 \\times \\sqrt {\\frac {1 2 ^ {2}}{n} + \\frac {1 2 ^ {2}}{n}} \\\\ n = \\frac {2 . 8 ^ {2}}{3 ^ {2}} \\times \\left(1 2 ^ {2} + 1 2 ^ {2}\\right) = 2 5 0. 8 8 \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.142,
+            0.614,
+            0.857,
+            0.682
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The study should enroll at least 251 patients per group for 80% power. Note that sample size should always be rounded up in order to achieve the desired power. Even if the calculation had yielded a number closer to 250 (e.g., 250.25), the study should still enroll 251 patients per grou, since having 250 patients per group would result in a power lower than 80%."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 12,
+          "bbox": [
+            0.144,
+            0.705,
+            0.318,
+            0.719
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "GUIDED PRACTICE 5.18"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.142,
+            0.726,
+            0.857,
+            0.777
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Suppose the targeted power is 90% and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha = 0 . 0 1"
+            },
+            {
+              "type": "text",
+              "content": " . How many standard errors should separate the centers of the null and alternative distributions, where the alternative distribution is centered at the minimum effect size of interest? Assume the test is two-sided."
+            },
+            {
+              "type": "text",
+              "content": "21",
+              "styles": [
+                "superscript"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "aside_text",
+          "index": 14,
+          "bbox": [
+            0.092,
+            0.366,
+            0.118,
+            0.386
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "E"
+            }
+          ]
+        },
+        {
+          "type": "aside_text",
+          "index": 15,
+          "bbox": [
+            0.091,
+            0.73,
+            0.118,
+            0.75
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "G"
+            }
+          ]
+        },
+        {
+          "type": "page_footnote",
+          "index": 16,
+          "bbox": [
+            0.144,
+            0.924,
+            0.856,
+            0.952
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "21"
+            },
+            {
+              "type": "text",
+              "content": "Find",
+              "styles": [
+                "subscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " the Z-score such that 90% of the distribution is below it: Z = 1.28. Next, find the cutoffs for the rejection regions: ±2.58. Thus, the centers of the null and alternative distributions should be about 1.28 + 2.58 = 3.86 standard errors apart."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 261,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.04,
+            0.027,
+            0.07,
+            0.04
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "262"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.467,
+            0.026,
+            0.857,
+            0.04
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "CHAPTER 5. INFERENCE FOR NUMERICAL DATA"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.143,
+            0.066,
+            0.858,
+            0.119
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Figure 5.21 shows the power for sample sizes from 20 participants to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "^ { 5 , 0 0 0 }"
+            },
+            {
+              "type": "text",
+              "content": " participants when "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha = 0 . 0 5"
+            },
+            {
+              "type": "text",
+              "content": " and the true difference is -3 mmHg. While power increases with sample size, having more than 250-300 participants provides little additional value towards detecting an effect."
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 3,
+          "bbox": [
+            0.219,
+            0.139,
+            0.776,
+            0.319
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 3,
+              "bbox": [
+                0.219,
+                0.139,
+                0.776,
+                0.319
+              ],
+              "image_path": "images/page_261_chart_3.jpg",
+              "content": "| Sample Size Per Group | Power |\n| --- | --- |\n| 20 | ~0.12 |\n| 50 | ~0.25 |\n| 100 | ~0.45 |\n| 200 | ~0.70 |\n| 500 | ~0.98 |\n| 1000 | 1.0 |\n| 2000 | 1.0 |\n| 5000 | 1.0 |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 4,
+              "bbox": [
+                0.204,
+                0.329,
+                0.796,
+                0.361
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Figure 5.21: The curve shows the power for different sample sizes in the context of the blood pressure example when the true difference is -3."
+                }
+              ]
+            }
+          ],
+          "sub_type": "line"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.144,
+            0.412,
+            0.553,
+            0.431
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5.4.4 Formulas for power and sample size"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.142,
+            0.448,
+            0.859,
+            0.551
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The previous sections have illustrated how power and sample size can be calculated from first principles, using the fundamental ideas behind distributions and testing. In practice, power and sample size calculations are so important that statistical software should be the method of choice; there are many commercially available and public domain programs for performing such calculations. However, hand calculations using formulas can provide quick estimates in the early stages of planning a study."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.142,
+            0.553,
+            0.857,
+            0.587
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Use the following formula to calculate sample size for comparing two means, assuming each group will have n participants:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.394,
+            0.598,
+            0.606,
+            0.634
+          ],
+          "image_path": "images/page_261_equation_8.jpg",
+          "content": "n = \\frac {(\\sigma_ {1} ^ {2} + \\sigma_ {2} ^ {2}) (z _ {1 - \\alpha / 2} + z _ {1 - \\beta}) ^ {2}}{\\Delta^ {2}}."
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.144,
+            0.645,
+            0.264,
+            0.659
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In this formula:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 10,
+          "bbox": [
+            0.167,
+            0.672,
+            0.858,
+            0.831
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 11,
+              "bbox": [
+                0.167,
+                0.672,
+                0.811,
+                0.689
+              ],
+              "content": [
+                {
+                  "type": "equation_inline",
+                  "content": "- ~ \\mu _ { 1 } , \\mu _ { 2 } , \\sigma _ { 1 }"
+                },
+                {
+                  "type": "text",
+                  "content": " , and "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\sigma _ { 2 }"
+                },
+                {
+                  "type": "text",
+                  "content": " are the population means and standard deviations of the two groups."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 12,
+              "bbox": [
+                0.167,
+                0.695,
+                0.781,
+                0.71
+              ],
+              "content": [
+                {
+                  "type": "equation_inline",
+                  "content": "\\Delta = \\mu _ { 1 } - \\mu _ { 2 }"
+                },
+                {
+                  "type": "text",
+                  "content": " is the minimally important difference that investigators wish to detect."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 13,
+              "bbox": [
+                0.167,
+                0.717,
+                0.857,
+                0.75
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "– The null and alternative hypotheses are "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "H _ { 0 } : \\Delta = 0 \\; ( \\mathrm { i . e . }"
+                },
+                {
+                  "type": "text",
+                  "content": " , no difference between the means) and "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "H _ { A } : \\Delta \\neq 0 ,"
+                },
+                {
+                  "type": "text",
+                  "content": " i.e., a two-sided alternative."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 14,
+              "bbox": [
+                0.167,
+                0.756,
+                0.855,
+                0.79
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "– The two-sided significance level is "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\alpha"
+                },
+                {
+                  "type": "text",
+                  "content": " , and "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "z _ { 1 - \\alpha / 2 }"
+                },
+                {
+                  "type": "text",
+                  "content": " is the point on a standard normal distribution with area "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "1 - \\alpha / 2"
+                },
+                {
+                  "type": "text",
+                  "content": " to its left and "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\alpha / 2"
+                },
+                {
+                  "type": "text",
+                  "content": " area to its right."
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 15,
+              "bbox": [
+                0.167,
+                0.796,
+                0.855,
+                0.831
+              ],
+              "content": [
+                {
+                  "type": "equation_inline",
+                  "content": "\\beta"
+                },
+                {
+                  "type": "text",
+                  "content": " is the probability of incorrectly failing to reject "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "H _ { 0 }"
+                },
+                {
+                  "type": "text",
+                  "content": " for a specified value of "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\Delta ;   1 - \\beta"
+                },
+                {
+                  "type": "text",
+                  "content": " is the power. The value "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "z _ { 1 - \\beta }"
+                },
+                {
+                  "type": "text",
+                  "content": " is the point on a standard normal distribution with area "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "1 - \\beta"
+                },
+                {
+                  "type": "text",
+                  "content": " to its left."
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        }
+      ]
+    },
+    {
+      "page_idx": 262,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.145,
+            0.026,
+            0.622,
+            0.04
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5.4. POWER CALCULATIONS FOR A DIFFERENCE OF MEANS"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.932,
+            0.028,
+            0.962,
+            0.04
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "263"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.143,
+            0.066,
+            0.858,
+            0.1
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "For a study with sample size n per group, where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "Z"
+            },
+            {
+              "type": "text",
+              "content": " is a normal random variable with mean 0 and standard deviation 1, power is given by:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.348,
+            0.112,
+            0.652,
+            0.166
+          ],
+          "image_path": "images/page_262_equation_3.jpg",
+          "content": "\\text {Power} = P \\left(Z <   - z _ {1 - \\alpha / 2} + \\frac {\\Delta}{\\sqrt {\\sigma_ {1} ^ {2} / n + \\sigma_ {2} ^ {2} / n}}\\right)."
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.143,
+            0.178,
+            0.859,
+            0.248
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "These formulas could have been used to do the earlier power and sample size calculations for the hypothetical study of blood pressure lowering medication. To calculate the sample size needed for 80% power in detecting a change of 3 mmHg, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha = 0 . 0 5 ,   1 - \\beta = 0 . 8 0 ,   \\Delta = 3"
+            },
+            {
+              "type": "text",
+              "content": " mmHg, and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\sigma _ { 1 } = \\sigma _ { 2 } = 1 2"
+            },
+            {
+              "type": "text",
+              "content": " mmHg. The formula yields a sample size n per group of"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 5,
+          "bbox": [
+            0.36,
+            0.258,
+            0.642,
+            0.294
+          ],
+          "image_path": "images/page_262_equation_5.jpg",
+          "content": "n = \\frac {(1 2 ^ {2} + 1 2 ^ {2}) (1 . 9 6 + 0 . 8 4) ^ {2}}{(- 3 . 0) ^ {2}} = 2 5 0. 8 8,"
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.144,
+            0.306,
+            0.386,
+            0.321
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "which can be rounded up to 251."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.179,
+            0.323,
+            0.668,
+            0.339
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The formula for power can be used to verify the sample size of 251:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 8,
+          "bbox": [
+            0.333,
+            0.351,
+            0.668,
+            0.427
+          ],
+          "image_path": "images/page_262_equation_8.jpg",
+          "content": "\\begin{array}{l} \\text {Power} = P \\left(Z <   - 1. 9 6 + \\frac {3}{\\sqrt {1 2 ^ {2} / 2 5 1 + 1 2 ^ {2} / 2 5 1}}\\right) \\\\ = P (Z <   1. 2 5) \\\\ = 0. 8 5. \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.144,
+            0.444,
+            0.729,
+            0.46
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The calculated power is slightly larger than 80% because of the rounding to 251."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.142,
+            0.461,
+            0.859,
+            0.564
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The sample size calculations done before any data are collected are one of the most critical aspects of conducting a study. If an analysis is done incorrectly, it can be redone once the error is discovered. However, if data were collected for a sample size that is either too large or too small, it can be impossible to correct the error, especially in studies with human subjects. As a result, sample size calculations are nearly always done using software. For two-sample t-tests, the R function power.t.test is both freely available and easy to use."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 263,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.04,
+            0.027,
+            0.072,
+            0.041
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "264"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.467,
+            0.026,
+            0.857,
+            0.04
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "CHAPTER 5. INFERENCE FOR NUMERICAL DATA"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.144,
+            0.075,
+            0.635,
+            0.101
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5.5 Comparing means with ANOVA"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.142,
+            0.137,
+            0.858,
+            0.239
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In some settings, it is useful to compare means across several groups. It might be tempting to do pairwise comparisons between groups; for example, if there are three groups "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( A , B , C )"
+            },
+            {
+              "type": "text",
+              "content": " , why not conduct three separate t-tests (A vs. B, A vs. C, B vs. C)? Conducting multiple tests on the same data increases the rate of Type I error, making it more likely that a difference will be found by chance, even if there is no difference among the population means. Multiple testing is discussed further in Section 5.5.3."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.143,
+            0.241,
+            0.859,
+            0.31
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Instead, the methodology behind a t-test can be generalized to a procedure called "
+            },
+            {
+              "type": "text",
+              "content": "analysis of variance (ANOVA)",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ", which uses a single hypothesis test to assess whether the means across several groups are equal. Strong evidence favoring the alternative hypothesis in ANOVA is described by unusually large differences among the group means."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.151,
+            0.323,
+            0.856,
+            0.357
+          ],
+          "content": [
+            {
+              "type": "equation_inline",
+              "content": "H _ { 0 } ;"
+            },
+            {
+              "type": "text",
+              "content": " The mean outcome is the same across all k groups. In statistical notation, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu _ { 1 } = \\mu _ { 2 } = \\cdots = \\mu _ { k }"
+            },
+            {
+              "type": "text",
+              "content": " where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " represents the mean of the outcome for observations in category i."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.15,
+            0.363,
+            0.405,
+            0.379
+          ],
+          "content": [
+            {
+              "type": "equation_inline",
+              "content": "H _ { A } \\colon"
+            },
+            {
+              "type": "text",
+              "content": " At least one mean is different."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.143,
+            0.392,
+            0.859,
+            0.445
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "There are three conditions on the data that must be checked before performing ANOVA: 1) observations are independent within and across groups, 2) the data within each group are nearly normal, and 3) the variability across the groups is about equal."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 8,
+          "bbox": [
+            0.144,
+            0.46,
+            0.254,
+            0.473
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "EXAMPLE 5.19"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.142,
+            0.48,
+            0.858,
+            0.533
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Examine Figure 5.22. Compare groups I, II, and III. Is it possible to visually determine if the differences in the group centers is due to chance or not? Now compare groups IV, V, and VI. Do the differences in these group centers appear to be due to chance?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.142,
+            0.55,
+            0.859,
+            0.655
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "It is difficult to discern a difference in the centers of groups I, II, and III, because the data within each group are quite variable relative to any differences in the average outcome. However, there appear to be differences in the centers of groups IV, V, and VI. For instance, group V appears to have a higher mean than that of the other two groups. The differences in centers for groups IV, V, and VI are noticeable because those differences are large relative to the variability in the individual observations within each group."
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 11,
+          "bbox": [
+            0.264,
+            0.692,
+            0.737,
+            0.91
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 11,
+              "bbox": [
+                0.264,
+                0.692,
+                0.737,
+                0.91
+              ],
+              "image_path": "images/page_263_chart_11.jpg",
+              "content": "| Category | Outcome (range) |\n| --- | --- |\n| I | -1.2~4.6 |\n| II | -0.4~3.7 |\n| III | -1.1~3.9 |\n| IV | 0.4~2.4 |\n| V | 1.3~2.7 |\n| VI | 0.7~2.4 |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 12,
+              "bbox": [
+                0.26,
+                0.921,
+                0.741,
+                0.939
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Figure 5.22: Side-by-side dot plot for the outcomes for six groups."
+                }
+              ]
+            }
+          ],
+          "sub_type": "scatter"
+        },
+        {
+          "type": "aside_text",
+          "index": 13,
+          "bbox": [
+            0.092,
+            0.548,
+            0.119,
+            0.568
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "E"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 264,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.145,
+            0.026,
+            0.461,
+            0.04
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5.5. COMPARING MEANS WITH ANOVA"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.932,
+            0.027,
+            0.962,
+            0.04
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "265"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.143,
+            0.073,
+            0.623,
+            0.091
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5.5.1 Analysis of variance (ANOVA) and the F-test"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.142,
+            0.11,
+            0.858,
+            0.18
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The famuss dataset was introduced in Chapter 1, Section 1.2.2. In the FAMuSS study, researchers examined the relationship between muscle strength and genotype at a location on the ACTN3 gene. The measure for muscle strength is percent change in strength in the non-dominant arm (ndrm.ch). Is there a difference in muscle strength across the three genotype categories (CC, CT, TT)?"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.144,
+            0.195,
+            0.318,
+            0.209
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "GUIDED PRACTICE 5.20"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.142,
+            0.215,
+            0.856,
+            0.251
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The null hypothesis under consideration is the following: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu _ { \\mathtt { C C } }   =   \\mu _ { \\mathtt { C T } }   =   \\mu _ { \\mathtt { T T } }"
+            },
+            {
+              "type": "text",
+              "content": " . Write the null and corresponding alternative hypotheses in plain language."
+            },
+            {
+              "type": "text",
+              "content": "22",
+              "styles": [
+                "superscript"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.142,
+            0.267,
+            0.861,
+            0.422
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Figure 5.23 provides summary statistics for each group. A side-by-side boxplot for the change in non-dominant arm strength is shown in Figure 5.24; Figure 5.25 shows the Q-Q plots by each genotype. Notice that the variability appears to be approximately constant across groups; nearly constant variance across groups is an important assumption that must be satisfied for using ANOVA. Based on the Q-Q plots, there is evidence of moderate right skew; the data do not follow a normal distribution very closely, but could be considered to ’loosely’ follow a normal distribution."
+            },
+            {
+              "type": "text",
+              "content": "23",
+              "styles": [
+                "superscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " It is reasonable to assume that the observations are independent within and across groups; it is unlikely that participants in the study were related, or that data collection was carried out in a way that one participant’s change in arm strength could influence another’s."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 7,
+          "bbox": [
+            0.349,
+            0.432,
+            0.654,
+            0.494
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 7,
+              "bbox": [
+                0.349,
+                0.432,
+                0.654,
+                0.494
+              ],
+              "image_path": "images/page_264_table_7.jpg",
+              "content": "<table><tr><td></td><td>CC</td><td>CT</td><td>TT</td></tr><tr><td>Sample size (<eq>n_i</eq>)</td><td>173</td><td>261</td><td>161</td></tr><tr><td>Sample mean (<eq>\\bar{x}_i</eq>)</td><td>48.89</td><td>53.25</td><td>58.08</td></tr><tr><td>Sample SD (<eq>s_i</eq>)</td><td>29.96</td><td>33.23</td><td>35.69</td></tr></table>"
+            },
+            {
+              "type": "table_caption",
+              "index": 8,
+              "bbox": [
+                0.205,
+                0.503,
+                0.795,
+                0.534
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Figure 5.23: Summary statistics of change in non-dominant arm strength, split by genotype."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 9,
+          "bbox": [
+            0.334,
+            0.581,
+            0.637,
+            0.822
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 9,
+              "bbox": [
+                0.334,
+                0.581,
+                0.637,
+                0.822
+              ],
+              "image_path": "images/page_264_chart_9.jpg",
+              "content": "| Genotype | Q1 | Q2 (Median) | Q3 | IQR |\n| --- | --- | --- | --- | --- |\n| CC | ~30 | ~45 | ~68 | ~38 |\n| CT | ~30 | ~47 | ~72 | ~32 |\n| TT | ~35 | ~51 | ~76 | ~41 |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 10,
+              "bbox": [
+                0.205,
+                0.833,
+                0.795,
+                0.866
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Figure 5.24: Side-by-side box plot of the change in non-dominant arm strength for 595 participants across three groups."
+                }
+              ]
+            }
+          ],
+          "sub_type": "boxplot"
+        },
+        {
+          "type": "page_footnote",
+          "index": 11,
+          "bbox": [
+            0.143,
+            0.887,
+            0.856,
+            0.913
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "22H0: The average percent change in non-dominant arm strength is equal across the three genotypes. HA: The average percent change in non-dominant arm strength varies across some (or all) groups."
+            }
+          ]
+        },
+        {
+          "type": "page_footnote",
+          "index": 12,
+          "bbox": [
+            0.143,
+            0.913,
+            0.856,
+            0.951
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "23"
+            },
+            {
+              "type": "text",
+              "content": "In",
+              "styles": [
+                "subscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " a more advanced course, it can be shown that the ANOVA procedure still holds with deviations from normality when sample sizes are moderately large. Additionally, a more advanced course would discuss appropriate transformations to induce normality."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 265,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.04,
+            0.027,
+            0.072,
+            0.041
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "266"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.467,
+            0.026,
+            0.857,
+            0.04
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "CHAPTER 5. INFERENCE FOR NUMERICAL DATA"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.147,
+            0.074,
+            0.844,
+            0.343
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.147,
+                0.074,
+                0.844,
+                0.343
+              ],
+              "image_path": "images/page_265_image_2.jpg",
+              "content": ""
+            },
+            {
+              "type": "image_caption",
+              "index": 3,
+              "bbox": [
+                0.205,
+                0.353,
+                0.795,
+                0.385
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Figure 5.25: Q-Q plots of the change in non-dominant arm strength for 595 participants across three groups."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.144,
+            0.412,
+            0.251,
+            0.426
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "EXAMPLE 5.21"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.142,
+            0.433,
+            0.857,
+            0.467
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The largest difference between the sample means is between the CC and TT groups. Consider again the original hypotheses:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.151,
+            0.478,
+            0.294,
+            0.495
+          ],
+          "image_path": "images/page_265_equation_6.jpg",
+          "content": "H _ {0}: \\mu_ {\\mathrm{CC}} = \\mu_ {\\mathrm{CT}} = \\mu_ {\\mathrm{TT}}"
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.15,
+            0.5,
+            0.856,
+            0.535
+          ],
+          "content": [
+            {
+              "type": "equation_inline",
+              "content": "H _ { A } \\colon"
+            },
+            {
+              "type": "text",
+              "content": " The average percent change in non-dominant arm strength "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( \\mu _ { i } )"
+            },
+            {
+              "type": "text",
+              "content": " varies across some (or all) groups."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.142,
+            0.545,
+            0.856,
+            0.579
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Why might it be inappropriate to run the test by simply estimating whether the difference of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu _ { \\mathrm { C C } }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mu _ { \\mathrm { T T } }"
+            },
+            {
+              "type": "text",
+              "content": " is statistically significant at a 0.05 significance level?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.142,
+            0.596,
+            0.856,
+            0.667
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "It is inappropriate to informally examine the data and decide which groups to formally test. This is a form of "
+            },
+            {
+              "type": "text",
+              "content": "data fishing",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "; choosing the groups with the largest differences for the formal test will lead to an increased chance of incorrectly rejecting the null hypothesis (i.e., an inflation in the Type I error rate). Instead, all the groups should be tested using a single hypothesis test."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.142,
+            0.683,
+            0.856,
+            0.787
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Analysis of variance focuses on answering one question: is the variability in the sample means large enough that it seems unlikely to be from chance alone? The variation between groups is referred to as the "
+            },
+            {
+              "type": "text",
+              "content": "mean square between groups (",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "MSG); the MSG is a measure of how much each group mean varies from the overall mean. Let x represent the mean of outcomes across all groups, where "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\overline { { x } } } _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " is the mean of outcomes in a particular group i and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " is the sample size of group i. The mean square between groups is:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 11,
+          "bbox": [
+            0.358,
+            0.799,
+            0.642,
+            0.843
+          ],
+          "image_path": "images/page_265_equation_11.jpg",
+          "content": "M S G = \\frac {1}{k - 1} \\sum_ {i = 1} ^ {k} n _ {i} \\left(\\overline {{x}} _ {i} - \\overline {{x}}\\right) ^ {2} = \\frac {1}{\\mathrm{df} _ {G}} S S G,"
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.142,
+            0.856,
+            0.856,
+            0.893
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where SSG is the "
+            },
+            {
+              "type": "text",
+              "content": "sum of squares between groups",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ", "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\textstyle \\sum _ { i = 1 } ^ { k } n _ { i }   ( { \\overline { { x } } } _ { i } - { \\overline { { x } } } ) ^ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " , and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { d f } _ { G } = k - 1"
+            },
+            {
+              "type": "text",
+              "content": " is the degrees of freedom associated with the MSG when there are k groups."
+            }
+          ]
+        },
+        {
+          "type": "aside_text",
+          "index": 13,
+          "bbox": [
+            0.092,
+            0.53,
+            0.119,
+            0.55
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "E"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 266,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.145,
+            0.026,
+            0.461,
+            0.04
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5.5. COMPARING MEANS WITH ANOVA"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.932,
+            0.027,
+            0.962,
+            0.04
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "267"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.143,
+            0.066,
+            0.858,
+            0.187
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Under the null hypothesis, any observed variation in group means is due to chance and there is no real difference between the groups. In other words, the null hypothesis assumes that the groupings are non-informative, such that all observations can be thought of as belonging to a single group. If this scenario is true, then it is reasonable to expect that the variability between the group means should be equal to the variability observed within a single group. The "
+            },
+            {
+              "type": "text",
+              "content": "mean square error",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " (MSE) is a pooled variance estimate with associated degrees of freedom "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { d f } _ { E } = n   -   k"
+            },
+            {
+              "type": "text",
+              "content": " that provides a measure of variability within the groups. The mean square error is computed as:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 3,
+          "bbox": [
+            0.365,
+            0.199,
+            0.637,
+            0.243
+          ],
+          "image_path": "images/page_266_equation_3.jpg",
+          "content": "M S E = \\frac {1}{n - k} \\sum_ {i = 1} ^ {k} (n _ {i} - 1) s _ {i} ^ {2} = \\frac {1}{\\mathrm{df} _ {E}} S S E,"
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.143,
+            0.255,
+            0.856,
+            0.288
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where the SSE is the "
+            },
+            {
+              "type": "text",
+              "content": "sum of squared errors",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ", "
+            },
+            {
+              "type": "equation_inline",
+              "content": "n _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " is the sample size of group "
+            },
+            {
+              "type": "equation_inline",
+              "content": "i ,"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "s _ { i }"
+            },
+            {
+              "type": "text",
+              "content": " is the standard deviation of group i."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.143,
+            0.289,
+            0.856,
+            0.358
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Under the null hypothesis that all the group means are equal, any differences among the sample means are only due to chance; thus, the MSG and MSE should also be equal. ANOVA is based on comparing the MSG and MSE. The test statistic for ANOVA, the "
+            },
+            {
+              "type": "text",
+              "content": "F-statistic",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ", is the ratio of the between-group variability to the within-group variability:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.459,
+            0.369,
+            0.856,
+            0.4
+          ],
+          "image_path": "images/page_266_equation_6.jpg",
+          "content": "F = \\frac {M S G}{M S E}. \\tag {5.22}"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.144,
+            0.416,
+            0.254,
+            0.43
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "EXAMPLE 5.23"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.143,
+            0.437,
+            0.856,
+            0.469
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Calculate the F-statistic for the famuss data summarized in Figure 5.23. The overall mean x across all observations is 53.29."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.144,
+            0.489,
+            0.401,
+            0.504
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "First, calculate the MSG and MSE."
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 10,
+          "bbox": [
+            0.202,
+            0.513,
+            0.801,
+            0.712
+          ],
+          "image_path": "images/page_266_equation_10.jpg",
+          "content": "\\begin{array}{l} M S G = \\frac {1}{k - 1} \\sum_ {i = 1} ^ {k} n _ {i} \\left(\\bar {x} _ {i} - \\bar {x}\\right) ^ {2} \\\\ = \\frac {1}{3 - 1} \\left[ (1 7 3) (4 8. 8 9 - 5 3. 2 9) ^ {2} + (2 6 1) (5 3. 2 5 - 5 3. 2 9) ^ {2} + (1 6 1) (5 8. 0 8 - 5 3. 2 9) ^ {2} \\right] \\\\ = 3 5 2 1. 6 9 \\\\ M S E = \\frac {1}{n - k} \\sum_ {i = 1} ^ {k} (n _ {i} - 1) s _ {i} ^ {2} \\\\ = \\frac {1}{5 9 5 - 3} \\left[ (1 7 3 - 1) (2 9. 9 6 ^ {2}) + (2 6 1 - 1) (3 3. 2 3 ^ {2}) + (1 6 1 - 1) (3 5. 6 9 ^ {2}) \\right] \\\\ = 1 0 9 0. 0 2 \\\\ \\end{array}"
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.144,
+            0.734,
+            0.338,
+            0.748
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The F-statistic is the ratio:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.411,
+            0.767,
+            0.591,
+            0.799
+          ],
+          "image_path": "images/page_266_equation_12.jpg",
+          "content": "\\frac {M S G}{M S E} = \\frac {3 5 2 1 . 6 9}{1 0 9 0 . 0 2} = 3. 2 3."
+        },
+        {
+          "type": "aside_text",
+          "index": 13,
+          "bbox": [
+            0.092,
+            0.606,
+            0.118,
+            0.627
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "E"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 267,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.04,
+            0.027,
+            0.07,
+            0.04
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "268"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.467,
+            0.026,
+            0.857,
+            0.04
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "CHAPTER 5. INFERENCE FOR NUMERICAL DATA"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.142,
+            0.066,
+            0.859,
+            0.135
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "A p-value can be computed from the F-statistic using an F-distribution, which has two associated parameters: "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { d f _ { 1 } }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { d f } _ { 2 }"
+            },
+            {
+              "type": "text",
+              "content": " . For the F-statistic in ANOVA, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathrm { d f _ { 1 } } = \\mathrm { d f } _ { G }"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { d f } _ { 2 } = \\mathbf { d f } _ { E }"
+            },
+            {
+              "type": "text",
+              "content": " . An F distribution with 2 and 592 degrees of freedom, corresponding to the F-statistic for the genotype and muscle strength hypothesis test, is shown in Figure 5.26."
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 3,
+          "bbox": [
+            0.325,
+            0.154,
+            0.726,
+            0.277
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 3,
+              "bbox": [
+                0.325,
+                0.154,
+                0.726,
+                0.277
+              ],
+              "image_path": "images/page_267_chart_3.jpg",
+              "content": "| X | Y |\n| --- | --- |\n| 0 | ~1.0 |\n| 1 | ~0.3 |\n| 2 | ~0.1 |\n| 3 | ~0.05 |\n| 4 | ~0.02 |\n| 5 | ~0.01 |\n| 6 | ~0.005 |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 4,
+              "bbox": [
+                0.205,
+                0.286,
+                0.796,
+                0.318
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Figure 5.26: An F-distribution with "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mathrm { d f _ { 1 } } = 2"
+                },
+                {
+                  "type": "text",
+                  "content": " and "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mathbf { d f } _ { 2 } = 5 9 2"
+                },
+                {
+                  "type": "text",
+                  "content": " . The tail area greater than "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "F = 3 . 2 3"
+                },
+                {
+                  "type": "text",
+                  "content": " is shaded."
+                }
+              ]
+            }
+          ],
+          "sub_type": "area"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.142,
+            0.335,
+            0.859,
+            0.404
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The larger the observed variability in the sample means (MSG) relative to the within-group variability (MSE), the larger F will be. Larger values of F represent stronger evidence against the null hypothesis. The upper tail of the distribution is used to compute a p-value, which is typically done using statistical software."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.144,
+            0.42,
+            0.254,
+            0.434
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "EXAMPLE 5.24"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.142,
+            0.441,
+            0.857,
+            0.475
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The p-value corresponding to the test statistic is equal to about 0.04. Does this provide strong evidence against the null hypothesis at significance level "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha = 0 . 0 5 ?"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.142,
+            0.493,
+            0.858,
+            0.545
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The p-value is smaller than 0.05, indicating the evidence is strong enough to reject the null hypothesis at a significance level of 0.05. The data suggest that average change in strength in the non-dominant arm varies by participant genotype."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.16,
+            0.573,
+            0.414,
+            0.588
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "THE F-STATISTIC AND THE F-TEST"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.159,
+            0.594,
+            0.842,
+            0.682
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Analysis of variance (ANOVA) is used to test whether the mean outcome differs across two or more groups. ANOVA uses a test statistic F, which represents a standardized ratio of variability in the sample means relative to the variability within the groups. If "
+            },
+            {
+              "type": "equation_inline",
+              "content": "H _ { 0 }"
+            },
+            {
+              "type": "text",
+              "content": " is true and the model assumptions are satisfied, the statistic F follows an F distribution with parameters "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { d f } _ { 1 } = k   -   1"
+            },
+            {
+              "type": "text",
+              "content": " and "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\mathbf { d } \\mathbf { f } _ { 2 } = n   -   k ."
+            },
+            {
+              "type": "text",
+              "content": " The upper tail of the F-distribution is used to calculate the p-value."
+            }
+          ]
+        },
+        {
+          "type": "aside_text",
+          "index": 11,
+          "bbox": [
+            0.092,
+            0.473,
+            0.118,
+            0.493
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "E"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 268,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.145,
+            0.026,
+            0.461,
+            0.04
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5.5. COMPARING MEANS WITH ANOVA"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.932,
+            0.027,
+            0.962,
+            0.04
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "269"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.143,
+            0.073,
+            0.578,
+            0.091
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5.5.2 Reading an ANOVA table from software"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.142,
+            0.11,
+            0.857,
+            0.178
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The calculations required to perform an ANOVA by hand are tedious and prone to human error. Instead, it is common to use statistical software to calculate the F-statistic and associated p-value. The results of an ANOVA can be summarized in a table similar to that of a regression summary, which will be discussed in Chapters 6 and 7."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.143,
+            0.18,
+            0.858,
+            0.23
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Figure 5.27 shows an ANOVA summary to test whether the mean change in non-dominant arm strength varies by genotype. Many of these values should look familiar; in particular, the F-statistic and p-value can be retrieved from the last two columns."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 5,
+          "bbox": [
+            0.245,
+            0.259,
+            0.758,
+            0.311
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 5,
+              "bbox": [
+                0.245,
+                0.259,
+                0.758,
+                0.311
+              ],
+              "image_path": "images/page_268_table_5.jpg",
+              "content": "<table><tr><td></td><td>Df</td><td>Sum Sq</td><td>Mean Sq</td><td>F value</td><td>Pr(&gt;F)</td></tr><tr><td>famuss$actn3.r577x</td><td>2</td><td>7043</td><td>3522</td><td>3.231</td><td>0.0402</td></tr><tr><td>Residuals</td><td>592</td><td>645293</td><td>1090</td><td></td><td></td></tr></table>"
+            },
+            {
+              "type": "table_caption",
+              "index": 6,
+              "bbox": [
+                0.205,
+                0.32,
+                0.795,
+                0.368
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Figure 5.27: ANOVA summary for testing whether the mean change in non-dominant arm strength varies by genotype at the actn3.r577x location on the ACTN3 gene."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.143,
+            0.418,
+            0.715,
+            0.438
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5.5.3 Multiple comparisons and controlling Type I Error rate"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.142,
+            0.455,
+            0.856,
+            0.575
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Rejecting the null hypothesis in an ANOVA analysis only allows for a conclusion that there is evidence for a difference in group means. In order to identify the groups with different means, it is necessary to perform further testing. For example, in the famuss analysis, there are three comparisons to make: CC to CT, CC to TT, and CT to TT. While these comparisons can be made using two sample t-tests, it is important to control the Type I error rate. One of the simplest ways to reduce the overall probability of identifying a significant difference by chance in a multiple comparisons setting is to use the Bonferroni correction procedure."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.142,
+            0.577,
+            0.856,
+            0.664
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In the Bonferroni correction procedure, the p-value from a two-sample t-test is compared to a modified significance level, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha ^ { \\star } ; \\; \\alpha ^ { \\star } = \\alpha / K ,"
+            },
+            {
+              "type": "text",
+              "content": " , where K is the total number of comparisons being considered. For k groups, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\begin{array} { r } { K   =   \\frac { k ( k - 1 ) } { 2 } } \\end{array}"
+            },
+            {
+              "type": "text",
+              "content": " When calculating the t-statistic, use the pooled estimate of standard deviation between groups (which equals "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\sqrt { M S E } } ) ;"
+            },
+            {
+              "type": "text",
+              "content": " to calculate the p-value, use a tdistribution with df"
+            },
+            {
+              "type": "text",
+              "content": "2",
+              "styles": [
+                "subscript"
+              ]
+            },
+            {
+              "type": "text",
+              "content": ". It is typically more convenient to do these calculations using software."
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 10,
+          "bbox": [
+            0.161,
+            0.685,
+            0.367,
+            0.699
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "BONFERRONI CORRECTION"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.159,
+            0.706,
+            0.841,
+            0.74
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The "
+            },
+            {
+              "type": "text",
+              "content": "Bonferroni correction",
+              "styles": [
+                "bold"
+              ]
+            },
+            {
+              "type": "text",
+              "content": " suggests that a more stringent significance level is appropriate when conducting multiple tests:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.464,
+            0.755,
+            0.537,
+            0.77
+          ],
+          "image_path": "images/page_268_equation_12.jpg",
+          "content": "\\alpha^ {\\star} = \\alpha / K"
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.16,
+            0.786,
+            0.754,
+            0.809
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "where K is the number of comparisons being considered. For k groups, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\begin{array} { r } { K = \\frac { k ( k - 1 ) } { 2 } } \\end{array}"
+            },
+            {
+              "type": "text",
+              "content": " ."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 269,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.041,
+            0.027,
+            0.07,
+            0.04
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "270"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.467,
+            0.026,
+            0.857,
+            0.04
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "CHAPTER 5. INFERENCE FOR NUMERICAL DATA"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.144,
+            0.068,
+            0.254,
+            0.081
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "EXAMPLE 5.25"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.142,
+            0.088,
+            0.858,
+            0.14
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The ANOVA conducted on the famuss dataset showed strong evidence of differences in the mean strength change in the non-dominant arm between the three genotypes. Complete the three possible pairwise comparisons using the Bonferroni correction and report any differences."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.142,
+            0.157,
+            0.857,
+            0.19
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Use a modified significance level of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha ^ { \\star } = 0 . 0 5 / 3 = 0 . 0 1 6 7"
+            },
+            {
+              "type": "text",
+              "content": " . The pooled estimate of the standard deviation is "
+            },
+            {
+              "type": "equation_inline",
+              "content": "{ \\sqrt { M S E } } = { \\sqrt { 1 0 9 0 . 0 2 } } = 3 3 . 0 2"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.143,
+            0.2,
+            0.391,
+            0.216
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Genotype CC versus Genotype CT:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 6,
+          "bbox": [
+            0.327,
+            0.227,
+            0.675,
+            0.272
+          ],
+          "image_path": "images/page_269_equation_6.jpg",
+          "content": "t = \\frac {\\overline {{x}} _ {1} - \\overline {{x}} _ {2}}{s _ {\\text {pooled}} \\sqrt {\\frac {1}{n _ {1}} + \\frac {1}{n _ {2}}}} = \\frac {4 8 . 8 9 - 5 3 . 2 5}{3 3 . 0 2 \\sqrt {\\frac {1}{1 7 3} + \\frac {1}{2 6 1}}} = - 1. 3 5."
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.142,
+            0.292,
+            0.858,
+            0.327
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This results in a p-value of 0.18 on "
+            },
+            {
+              "type": "equation_inline",
+              "content": "d f = 5 9 2 ."
+            },
+            {
+              "type": "text",
+              "content": " . This p-value is larger than "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha ^ { \\star } = 0 . 0 1 6 7 ,"
+            },
+            {
+              "type": "text",
+              "content": " so there is not evidence of a difference in the means of genotypes CC and CT."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.143,
+            0.335,
+            0.39,
+            0.351
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Genotype CC versus Genotype TT:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 9,
+          "bbox": [
+            0.327,
+            0.362,
+            0.673,
+            0.408
+          ],
+          "image_path": "images/page_269_equation_9.jpg",
+          "content": "t = \\frac {\\overline {{x}} _ {1} - \\overline {{x}} _ {2}}{s _ {\\text {pooled}} \\sqrt {\\frac {1}{n _ {1}} + \\frac {1}{n _ {2}}}} = \\frac {4 8 . 8 9 - 5 8 . 0 8}{3 3 . 0 2 \\sqrt {\\frac {1}{1 7 3} + \\frac {1}{1 6 1}}} = - 2. 5 4."
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.142,
+            0.427,
+            0.859,
+            0.462
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This results in a p-value of 0.01 on "
+            },
+            {
+              "type": "equation_inline",
+              "content": "d f = 5 9 2"
+            },
+            {
+              "type": "text",
+              "content": " . This p-value is smaller than "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha ^ { \\star } = 0 . 0 1 6 7"
+            },
+            {
+              "type": "text",
+              "content": " , so there is evidence of a difference in the means of genotypes CC and TT."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.143,
+            0.469,
+            0.391,
+            0.485
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Genotype CT versus Genotype TT:"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 12,
+          "bbox": [
+            0.327,
+            0.497,
+            0.673,
+            0.543
+          ],
+          "image_path": "images/page_269_equation_12.jpg",
+          "content": "t = \\frac {\\overline {{x}} _ {1} - \\overline {{x}} _ {2}}{s _ {\\text {pooled}} \\sqrt {\\frac {1}{n _ {1}} + \\frac {1}{n _ {2}}}} = \\frac {5 3 . 2 5 - 5 8 . 0 8}{3 3 . 0 2 \\sqrt {\\frac {1}{2 6 1} + \\frac {1}{1 6 1}}} = - 1. 4 6."
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.142,
+            0.562,
+            0.857,
+            0.597
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "This results in a p-value of 0.14 on "
+            },
+            {
+              "type": "equation_inline",
+              "content": "d f = 5 9 2 ."
+            },
+            {
+              "type": "text",
+              "content": " . This p-value is larger than "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha ^ { \\star } = 0 . 0 1 6 7 ,"
+            },
+            {
+              "type": "text",
+              "content": " so there is not evidence of a difference in the means of genotypes CT and TT."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.142,
+            0.604,
+            0.858,
+            0.673
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "In summary, the mean percent strength change in the non-dominant arm for genotype CT individuals is not statistically distinguishable from those of genotype CC and TT individuals. However, there is evidence that mean percent strength change in the non-dominant arm differs between individu als of genotype CC and TT are different."
+            }
+          ]
+        },
+        {
+          "type": "aside_text",
+          "index": 15,
+          "bbox": [
+            0.092,
+            0.361,
+            0.119,
+            0.381
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "E"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 270,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.145,
+            0.026,
+            0.461,
+            0.04
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5.5. COMPARING MEANS WITH ANOVA"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.932,
+            0.027,
+            0.961,
+            0.04
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "271"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.143,
+            0.073,
+            0.703,
+            0.091
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5.5.4 Reading the results of pairwise t-tests from software"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.142,
+            0.11,
+            0.857,
+            0.16
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Statistical software can be used to calculate the p-values associated with each possible pairwise comparison of the groups in ANOVA. The results of the pairwise tests are summarized in a table that shows the p-value for each two-group test."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.142,
+            0.162,
+            0.858,
+            0.248
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Figure 5.28 shows the p-values from the three possible two-group t-tests comparing change in non-dominant arm strengths between individuals with genotypes CC, CT, and TT. For example, the table indicates that when comparing mean change in non-dominant arm strength between TT and CC individuals, the p-value is 0.01. This coheres with the calculations above, and these unadjusted p-values should be compared to "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha ^ { \\star } = 0 . 0 1 6 7"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 5,
+          "bbox": [
+            0.427,
+            0.259,
+            0.576,
+            0.31
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 5,
+              "bbox": [
+                0.427,
+                0.259,
+                0.576,
+                0.31
+              ],
+              "image_path": "images/page_270_table_5.jpg",
+              "content": "<table><tr><td></td><td>CC</td><td>CT</td></tr><tr><td>CT</td><td>0.18</td><td>-</td></tr><tr><td>TT</td><td>0.01</td><td>0.14</td></tr></table>"
+            },
+            {
+              "type": "table_caption",
+              "index": 6,
+              "bbox": [
+                0.205,
+                0.32,
+                0.796,
+                0.366
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Figure 5.28: Unadjusted p-values for pairwise comparisons testing whether the mean change in non-dominant arm strength varies by genotype at the actn3.r577x location on ACTN3 gene."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.142,
+            0.383,
+            0.859,
+            0.487
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The use of statistical software makes it easier to apply corrections for multiple testing, such that it is not necessary to explicitly calculate the value of "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha ^ { \\star }"
+            },
+            {
+              "type": "text",
+              "content": " . Figure 5.29 shows the Bonferroniadjusted p-values from the three possible tests. When statistical software applies the Bonferroni correction, the unadjusted p-value is multiplied by "
+            },
+            {
+              "type": "equation_inline",
+              "content": "K ,"
+            },
+            {
+              "type": "text",
+              "content": " the number of comparisons, allowing for the values to be directly compared to α, not "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\alpha ^ { \\star } ,"
+            },
+            {
+              "type": "text",
+              "content": " . Comparing an unadjusted p-value to α/K is equivalent to comparing the quantity "
+            },
+            {
+              "type": "equation_inline",
+              "content": "( K \\times p -  value  )"
+            },
+            {
+              "type": "text",
+              "content": " to α ."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 8,
+          "bbox": [
+            0.427,
+            0.498,
+            0.576,
+            0.55
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 8,
+              "bbox": [
+                0.427,
+                0.498,
+                0.576,
+                0.55
+              ],
+              "image_path": "images/page_270_table_8.jpg",
+              "content": "<table><tr><td></td><td>CC</td><td>CT</td></tr><tr><td>CT</td><td>0.54</td><td>-</td></tr><tr><td>TT</td><td>0.03</td><td>0.43</td></tr></table>"
+            },
+            {
+              "type": "table_caption",
+              "index": 9,
+              "bbox": [
+                0.205,
+                0.559,
+                0.796,
+                0.606
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "Figure 5.29: Bonferroni-adjusted p-values for pairwise comparisons testing whether the mean change in non-dominant arm strength varies by genotype at the actn3.r577x location on ACTN3 gene."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 271,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.04,
+            0.027,
+            0.07,
+            0.04
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "272"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.467,
+            0.026,
+            0.857,
+            0.04
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "CHAPTER 5. INFERENCE FOR NUMERICAL DATA"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.145,
+            0.076,
+            0.296,
+            0.098
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5.6 Notes"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.142,
+            0.137,
+            0.859,
+            0.239
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "The material in this chapter is particularly important. For many applications, t-tests and Analysis of Variance (ANOVA) are an essential part of the core of statistics in medicine and the life sciences. The comparison of two or more groups is often the primary aim of experiments both in the laboratory and in studies with human subjects. More generally, the approaches to interpreting and drawing conclusions from testing demonstrated in this chapter are used throughout the rest of the text and, indeed, in much of statistics."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.142,
+            0.241,
+            0.859,
+            0.395
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "While it is important to master the details of the techniques of testing for differences in two or more groups, it is even more critical to not lose sight of the fundamental principles behind the tests. A statistically significant difference in group means does not necessarily imply that group membership is the reason for the observed association. A significant association does not neces sarily imply causation, even if it is highly significant; confounding variables may be involved. In most cases, causation can only be inferred in controlled experiments when interventions have been assigned randomly. It is also essential to carefully consider the context of a problem. For instance, students often find the distinction between paired and independent group comparisons confusing; understanding the problem context is the only reliable way to choose the correct approach."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.142,
+            0.397,
+            0.859,
+            0.534
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "It is generally prudent to use the form of the t-test that does not assume equal standard de viations, but the power calculations described in Section 5.4 assume models with equal standard deviations. The formulas are simpler when standard deviations are equal, and software is more widely available for that case. The differences in sample sizes are usually minor and less important than assumptions about target differences or the values of the standard deviations. If the standard deviations are expected to be very different, then more specialized software for computing sample size and power should be used. The analysis done after the study has been completed should then use the t-test for unequal standard deviations."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.142,
+            0.536,
+            0.859,
+            0.675
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Tests for significant differences are sometimes overused in science, with not enough attention paid to estimates and confidence intervals. Confidence intervals for the difference of two population means show a range of underlying differences in means that are consistent with the data, and often lead to insights not possible from only the test statistic and p-value. Wide confidence intervals may show that a non-significant test is the result of high variability in the test statistic, perhaps caused by a sample size that was too small. Conversely, a highly significant p-value may be the result of such a large sample size that the observed differences are not scientifically meaningful; that may be evident from confidence intervals with very narrow width."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}
