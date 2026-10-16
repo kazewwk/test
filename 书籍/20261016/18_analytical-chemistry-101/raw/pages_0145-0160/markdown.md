@@ -1,0 +1,854 @@
+$$
+2 \mathrm{HPO} _ {4} ^ {2 -} + 3 \mathrm{Ca} ^ {2 +} = \mathrm{Ca} _ {3} (\mathrm{PO} _ {4}) _ {2} \downarrow + 2 \mathrm{H} ^ {+}
+$$
+
+$\mathrm{PO_4^{3 - }}$ 生成 $\mathrm{Ca_3(PO_4)_2}$ 沉淀与溶液分离，定量释放质子，此时弱酸变成了强酸，就可以用NaOH滴定第三个 $\mathrm{H^{+}}$ 。为保持 $\mathrm{Ca_3(PO_4)_2}$ 沉淀完全，应选酚酞作指示剂。
+
+(3) 碳酸钠  $Na_{2}CO_{3}$  (二元弱碱  $A^{2-}$ )
+
+$\mathrm{Na_2CO_3(pK_{a_1} = 6.351,pK_{a_2} = 10.329)}$ 常用作标定HCl的基准物质，工业碱纯度的测定也是基于其与HCl的反应。以HCl滴定 $\mathrm{Na_2CO_3}$ 的反应分两步进行:
+
+$$
+\mathrm{CO} _ {3} ^ {2 -} + \mathrm{H} ^ {+} \rightleftharpoons \mathrm{HCO} _ {3} ^ {-}
+$$
+
+$$
+\mathrm{HCO} _ {3} ^ {-} + \mathrm{H} ^ {+} \rightleftharpoons \mathrm{H} _ {2} \mathrm{CO} _ {3}
+$$
+
+$$
+\mathrm{L} \rightarrow \mathrm{CO} _ {2} + \mathrm{H} _ {2} \mathrm{O}
+$$
+
+- 第一步反应生成 $\mathrm{HCO}_3^-$，化学计量点 $\mathrm{pH}$ 为8.34。由于 $K_{\mathrm{b_1}} / K_{\mathrm{b_2}} = 10^{3.98} < 10^5$，滴定准确度不高。若以甲酚红和百里酚蓝混合指示剂指示终点，并用相同浓度的 $\mathrm{NaHCO}_3$ 作参比，结果误差约为 $0.5\%$。
+- 第二步反应的产物是 $\mathrm{H}_2\mathrm{CO}_3(\mathrm{CO}_2 + \mathrm{H}_2\mathrm{O})$ ，其饱和溶液约为 $0.04\mathrm{mol}\cdot \mathrm{L}^{-1}$ 溶液中 $[\mathrm{H}^{+}] = \sqrt{K_{\mathrm{a}_{1}}c} = \sqrt{10^{-6.351}\times 0.04} = 1.3\times 10^{-4}(\mathrm{mol}\cdot \mathrm{L}^{-1}),\mathrm{pH} = 3.9$ 。
+
+第二步滴定终点的确定可采取以下方法:
+
+(i) 用甲基橙或甲基橙-靛蓝磺酸钠混合指示剂确定终点。由于在室温下滴定，终点变化不敏锐，最好采用为  $CO_{2}$  所饱和并含有相同浓度 NaCl 和指示剂的溶液作参比。
+（ii）用甲基红-溴甲酚绿混合指示剂确定终点。当滴定至溶液变红，此时需暂时中断滴定，加热除去  $CO_{2}$  。除去  $CO_{2}$  后，体系颜色又回到绿色，冷却，继续滴定至红色。溶液的 pH 变化如图 3.2.7 虚线所示。重复此操作，直至加热后颜色不变为止，一般需要加热 2\~3 次。此滴定终点敏锐，准确度高。
+（iii）Kolthoff等推荐用双指示剂法。在溶液中先后加入酚酞和溴甲酚绿。先由酚酞变色估计滴定剂大致用量；近终点时加热除去 $CO_{2}$ ，冷却，继续滴定至溶液由紫色变为绿色。此法终点敏锐，准确度也高。
+
+![](images/page_144_chart_17.jpg)
+
+<details>
+<summary>line</summary>
+
+| T/% | pH |
+| --- | --- |
+| 50 | 8.34 |
+| 100 | 3.9 |
+</details>
+
+图 3.2.7 用  $0.10 \, mol \cdot L^{-1} HCl$  溶液滴定  $0.050 \, mol \cdot L^{-1} Na_{2}CO_{3}$  溶液的滴定曲线
+
+## 3.2.2.3 基于滴定曲线反函数( $V-[\mathrm{H}^{+}]$ 函数)绘制滴定曲线
+
+以上详细讨论了强酸(碱)和一元弱酸(碱)的滴定曲线,对于多元酸碱的滴定曲线,由于计算较复杂,难以获得滴定曲线函数 $\left[H^{*}\right]=f(V)$ ,故只简单讨论了化学计量点。实际上,基于基本定量关系式,如电荷平衡式和物料平衡式,即可容易推导出滴定曲线反函数  $V=g([H^{+}])$ ，方便获得大量  $(V, pH)$  数据点，从而准确绘制滴定曲线，获得滴定突跃范围信息。
+
+以下介绍从 CBE 出发, 利用反函数  $V = g([H^{+}])$  绘制酸碱滴定曲线。
+
+## 1. 强酸滴定曲线
+
+以 NaOH 溶液滴定同浓度的体积  $V_{0}$  (mL) HCl 溶液（浓度为 c），加入体积 V (mL) NaOH 溶液时，平衡体系中相关物质的分析浓度分别为  $c_{HCl} = \frac{cV_{0}}{V + V_{0}}$  和  $c_{NaOH} = \frac{cV}{V + V_{0}}$ 。
+
+滴定体系的 CBE 为
+
+$$
+\left[ \mathrm{H} ^ {+} \right] + \left[ \mathrm{Na} ^ {+} \right] = \left[ \mathrm{Cl} ^ {-} \right] + \left[ \mathrm{OH} ^ {-} \right]
+$$
+
+代入分析浓度:
+
+$$
+\left[ \mathrm{H} ^ {+} \right] + \frac {c V}{V + V _ {0}} = \frac {c V _ {0}}{V + V _ {0}} + \left[ \mathrm{OH} ^ {-} \right]
+$$
+
+令  $m=\left[H^{+}\right]-\left[OH^{-}\right]$ ，整理成关于 V 的代数式:
+
+$$
+V = \frac {c - m}{c + m} V _ {0} \tag {3-2-7}
+$$
+
+式(3-2-7)中，m 为与 $\left[H^{+}\right]$ 相关的项，给定 $\left[H^{+}\right]$ ，可获得相应的滴定剂加入的体积。据此，可以获得一系列 $(V,\mathrm{pH})$ 数据点，从而绘制滴定曲线。
+
+根据式(3-2-7)绘制的不同浓度的强酸滴定曲线与分段式讨论获得的图3.2.3相同。由于反应计量比为 $1:1, V_{\mathrm{sp}} = V_0$ 。化学计量点前 $0.1\%$ ，$V = 0.999V_{\mathrm{sp}}$ ，代入式(3-2-7)，经近似简化，得到对应的 $\mathrm{pH}$ 为滴定突跃的下端点，$\mathrm{pH}_{\mathrm{L}} = 3.0 + \mathrm{pc}_{\mathrm{sp}}$；化学计量点后 $0.1\%$ ，$V = 1.001V_{\mathrm{sp}}$，得到滴定突跃上端点，$\mathrm{pH}_{\mathrm{U}} = \lg K_{\mathrm{t}} - 3.0 - \mathrm{pc}_{\mathrm{sp}}$，其中，$K_{\mathrm{t}} = 1 / K_{\mathrm{w}}$；化学计量点时，$V = V_{\mathrm{sp}}$，代入式(3-2-7)，此时，$m = 0, [\mathrm{H}^{+}] = [\mathrm{OH}^{-}]$，$\mathrm{pH}_{\mathrm{sp}} = \frac{1}{2}\mathrm{p}K_{\mathrm{w}} = 7.0$。滴定曲线上下端点均与浓度相关，浓度增大为10倍，上下端点各拓宽一个 $\mathrm{pH}$ 单位。
+
+## 2. 一元弱酸滴定曲线
+
+对于 NaOH 溶液滴定体积  $V_{0}$ (mL) 同浓度一元弱酸 HA 溶液(浓度为 c)，加入体积  $V$ (mL) NaOH 溶液时，平衡体系中相关物质的分析浓度分别为  $c_{HA} = \frac{cV_{0}}{V + V_{0}}$  和  $c_{NaOH} = \frac{cV}{V + V_{0}}$ 。
+
+滴定体系的 CBE 为
+
+$$
+\left[ \mathrm{H} ^ {+} \right] + \left[ \mathrm{Na} ^ {+} \right] = \left[ \mathrm{A} ^ {-} \right] + \left[ \mathrm{OH} ^ {-} \right]
+$$
+
+将 $\left[A^{-}\right]$ 以其分析浓度和分布分数 $\left(\delta_{0}\right)$ 表示,得
+
+$$
+\left[ \mathrm{H} ^ {+} \right] + \frac {c V}{V + V _ {0}} = \frac {c V _ {0}}{V + V _ {0}} \delta_ {0} + \left[ \mathrm{OH} ^ {-} \right]
+$$
+
+令  $m=\left[H^{+}\right]-\left[OH^{-}\right]$ ，整理成关于 V 的代数式:
+
+$$
+V = \frac {c \delta_ {0} - m}{c + m} V _ {0} \tag {3-2-8}
+$$
+
+与式(3-2-7)对比,式(3-2-8)的分子部分,c多了一个系数 $f,f=\delta_{0}$ 。由此获得的HAc滴定曲线与分段式讨论获得的滴定曲线(图3.2.4)相同。根据反函数法所获得的不同强度的一元弱酸滴定曲线 $(c=0.10\ mol\cdot L^{-1})$ 等信息详见二维码。
+
+![](images/page_146_image_2.jpg)
+
+反函数法绘制酸碱滴定曲线与计算终点误差
+
+对于 $\mathrm{pK_a < 7.0}$ 的一元弱酸，同理，经过简化近似得到滴定曲线的下端点为$\mathrm{pH_L = pK_a + 3.0}$，上端点为 $\mathrm{pH_U = lgK_t - 3.0 - pc_{sp}}$ ，化学计量点 $\mathrm{pH_{sp}} = \frac{1}{2} (\mathrm{pK_a + pK_w - }$ $\mathrm{pc_{sp}})$ 。对于 $\mathrm{pK_a = 7.0}$ 的一元弱酸，与 $0.999V_{\mathrm{sp}}\sim 1.001V_{\mathrm{sp}}$ 对应的 $\mathrm{pH}$ 范围为 $9.7\sim$ 10.0，小于 $0.6~\mathrm{pH}$ 单位，滴定误差大于 $\pm 0.1\%$ 。当 $\mathrm{pH}$ 范围为 $9.56\sim 10.14$ ，基本满足 $0.6~\mathrm{pH}$ 单位，对应滴定误差为 $\pm 0.2\%$ 误差。滴定突跃 $\mathrm{pH_L}$ 与浓度近似无关，$\mathrm{pH_U}$ 与浓度相关，浓度增大为10倍， $\mathrm{pH_U}$ 增加一个 $\mathrm{pH}$ 单位。
+
+## 3. 强酸与一元弱酸混合体系滴定曲线
+
+对于体积  $V_{0}$ (mL) 的强酸与一元弱酸的混合酸体系 (HCl + HA) 的滴定, 通过前述方法可得
+
+$$
+V = \frac {c (1 + \delta_ {0}) - m}{c + m} V _ {0} \tag {3-2-9}
+$$
+
+式(3-2-9)的分子部分，c的系数是式(3-2-7)和式(3-2-8)分子部分中c的系数加和 $f=1+\delta_{0}$ 。
+
+基于式(3-2-9)绘制的 HCl 与不同  $pK_{a}$  的弱酸混合体系的滴定曲线及相关讨论详见本页二维码。
+
+## 4. 二元弱酸滴定曲线
+
+对于二元弱酸  $H_{2}A$  的滴定,通过前述方法可得
+
+$$
+V = \frac {c (\delta_ {1} + 2 \delta_ {0}) - m}{c + m} V _ {0} \tag {3-2-10}
+$$
+
+式(3-2-10)的分子部分，c的系数 $f=\delta_{1}+2\delta_{0}$ ，与一元弱酸的式(3-2-8)相比，多了 $A^{2-}$ 分布系数的贡献。
+
+基于式(3-2-10)绘制的二元弱酸的滴定曲线及相关讨论详见本页副栏二维码。
+
+从上述推导可以看出， $\left[H^{+}\right]$  和  $\left[OH^{-}\right]$  分别位于 CBE 等式两侧，来自氢氧化钠的  $\left[Na^{+}\right]$  与  $\left[H^{+}\right]$  位于同侧，而来自被滴定的酸的滴定产物的带电荷形态平衡浓度与  $\left[OH^{-}\right]$  同侧，且影响滴定曲线的形状和滴定突跃。
+
+以强碱滴定酸,滴定曲线的反函数可以总结为
+
+$$
+V = \frac {c f - m}{c + m} V _ {0} \tag {3-2-11}
+$$
+
+其中，f因子反映了带电荷的滴定产物的电荷对CBE的贡献。各种滴定体系的曲线反函数详见表3.2.4。
+
+## 5. 弱酸盐滴定曲线
+
+如果分析物是弱酸的盐，如  $\mathrm{NaH_{2}PO_{4}}$ （以下简化为  $NaH_{2}A$ ），CBE 方程中，来自该盐的  $\left[Na^{+}\right]_{NaH_{2}A}$  也与  $\left[H^{+}\right]$  同侧，且  $\left[Na^{+}\right]_{NaH_{2}A}=c_{NaH_{2}A}$ ，但未参与滴定反应。
+
+CBE为
+
+$$
+\left[ \mathrm{H} ^ {+} \right] + \left[ \mathrm{Na} ^ {+} \right] _ {\mathrm{NaOH}} + \left[ \mathrm{Na} ^ {+} \right] _ {\mathrm{NaH} _ {2} \mathrm{A}} = \left[ \mathrm{H} _ {2} \mathrm{A} ^ {-} \right] + 2 \left[ \mathrm{HA} ^ {2 -} \right] + 3 \left[ \mathrm{A} ^ {3 -} \right] + \left[ \mathrm{OH} ^ {-} \right]
+$$
+
+与物料平衡式结合,得
+
+$$
+\left[ \mathrm{H} ^ {+} \right] + \frac {c V}{V + V _ {0}} + \frac {c V _ {0}}{V + V _ {0}} = \frac {c V _ {0}}{V + V _ {0}} (\delta_ {2} + 2 \delta_ {1} + 3 \delta_ {0}) + \left[ \mathrm{OH} ^ {-} \right]
+$$
+
+表 3.2.4 以 NaOH 溶液滴定同浓度的酸的滴定曲线反函数
+
+| 酸 | CBE | 反函数($m = [H^{+}] - [OH^{-}]$) |
+| --- | --- | --- |
+| HCl | $[H^{+}] + \frac{cV}{V + V_{0}} = \frac{cV_{0}}{V + V_{0}} + [OH^{-}]$ | $V = \frac{c-m}{c+m} V_{0}$ |
+| HA | $[H^{+}] + \frac{cV}{V + V_{0}} = \frac{cV_{0}}{V + V_{0}} \delta_{0} + [OH^{-}]$ | $V = \frac{c\delta_{0}-m}{c+m} V_{0}$ |
+| $H_{2}A$ | $[H^{+}] + \frac{cV}{V + V_{0}} = \frac{cV_{0}}{V + V_{0}} (\delta_{1} + 2\delta_{0}) + [OH^{-}]$ | $V = \frac{c(\delta_{1} + 2\delta_{0})-m}{c+m} V_{0}$ |
+| HA+HB | $[H^{+}] + \frac{cV}{V + V_{0}} = \frac{cV_{0}}{V + V_{0}} (\delta_{0}^{HA} + \delta_{0}^{HB}) + [OH^{-}]$ | $V = \frac{c(\delta_{0}^{HA} + \delta_{0}^{HB})-m}{c+m} V_{0}$ |
+| HCl+HA | $[H^{+}] + \frac{cV}{V + V_{0}} = \frac{cV_{0}}{V + V_{0}} + \frac{cV_{0}}{V + V_{0}} \delta_{0} + [OH^{-}]$ | $V = \frac{c(1+\delta_{0})-m}{c+m} V_{0}$ |
+
+整理得
+
+$$
+V = \frac {c (\delta_ {1} + 2 \delta_ {0} - \delta_ {3}) - m}{c + m} V _ {0} \tag {3-2-12}
+$$
+
+由于分析物的阴离子  $H_{2}A^{-}$  被 NaOH 滴定，且其水解产物  $H_{3}A$  为非滴定产物，故 f 因子中  $H_{3}A$  的分布分数为扣除项。
+
+## 3.2.2.4 终点误差的计算
+
+确定滴定曲线后,便可知滴定突跃,从而可根据使用的指示剂的变色点 pH 判断是否误差在要求范围内。如有需要,亦可通过计算获得具体的终点误差值。
+
+## 1. 基于反函数计算终点误差
+
+根据式(3-2-1)，有
+
+$$
+E_{\mathrm{t}} = \frac{V_{\mathrm{ep}} - V_{\mathrm{sp}}}{V_{\mathrm{sp}}}\times 100\% = \left(\frac{V_{\mathrm{ep}}}{V_{\mathrm{sp}}} -1\right)\times 100\%
+$$
+
+式中， $V_{ep}$  和  $V_{sp}$  分别表示终点和化学计量点时加入滴定剂溶液的体积。
+
+计算终点误差  $E_{t}$  时，关键在于求得  $V_{ep}$ ，即指示剂变色点  $\left[H^{+}\right]_{ep}$  加入滴定剂溶液的体积；根据上述对滴定曲线的讨论，可以基于反函数计算给定 pH 条件下的滴定体积。而在特定指示剂变色点的滴定终点  $pH_{ep}$  是已知的，可以通过上述推导的反函数计算  $V_{ep}$ 。
+
+以 NaOH 溶液滴定 HCl 溶液, $V_{sp}=V_{0}$ , 根据式(3-2-7), 得到
+
+$$
+V _ {\mathrm{ep}} = \frac {c - m}{c + m} V _ {\mathrm{sp}}
+$$
+
+故
+
+$$
+E_{\mathrm{t}} = \left(\frac{c - m}{c + m} -1\right)\times 100\% \tag{3 - 2 - 13}
+$$
+
+»例 3.2.1 计算  $0.10 \, mol \cdot L^{-1}$  NaOH 溶液滴定  $0.10 \, mol \cdot L^{-1}$  HCl 溶液至甲基橙变黄 (pH 4.4) 和酚酞变红 (pH 9.0) 的终点误差。
+
+» 解: pH=4.4 时,  $m \approx [H^{+}] = 10^{-4.4}$ , 根据式(3-2-13), 有
+
+$$
+E_{\mathrm{t}} = \left(\frac{0.10 - 10^{-4.4}}{0.10 + 10^{-4.4}} -1\right)\times 100\% = -0.08\%
+$$
+
+$\mathrm{pH} = 9.0$ 时， $m\approx -[\mathrm{OH}^{-}] = -10^{-5.0}$
+
+$$
+E_{\mathrm{t}} = \left(\frac{0.10 + 10^{-5.0}}{0.10 - 10^{-5.0}} -1\right)\times 100\% = 0.02\%
+$$
+
+以甲基橙为指示剂，终点在化学计量点(pH 7.0)之前，因此终点误差为负值；以酚酞为指示剂，终点在化学计量点之后，因此终点误差为正值。此外，以酚酞为指示剂，终点pH比甲基橙为指示剂更接近化学计量点，因此绝对误差更小。
+
+以 NaOH 溶液滴定一元弱酸 HA 溶液, 根据式(3-2-8), 得到
+
+$$
+V _ {\mathrm{ep}} = \frac {c \delta_ {0} - m}{c + m} V _ {\mathrm{sp}}
+$$
+
+故
+
+$$
+E_{\mathrm{t}} = \left(\frac{c\delta_{0} - m}{c + m} -1\right)\times 100\% \tag{3 - 2 - 14}
+$$
+
+»例 3.2.2 计算  $0.10 \, mol \cdot L^{-1} \, NaOH$  溶液滴定同浓度 HAc 溶液至 pH 9.0 和 7.0 的终点误差。
+
+» 解: pH = 9.0 时,  $\delta_{0} = \frac{10^{-4.756}}{10^{-9.0} + 10^{-4.756}} \approx 1.0$ ,  $m \approx -\left[OH^{-}\right] = -10^{-5.0}$ , 根据式 (3-2-14), 有
+
+$$
+E_{\mathrm{t}} = \left(\frac{0.10\times 1.0 + 10^{-5.0}}{0.10 - 10^{-5.0}} -1\right)\times 100\% = 0.01\%
+$$
+
+$\mathrm{pH} = 7.0$ 时， $m = 0,\delta_0 = \frac{10^{-4.756}}{10^{-7.0} + 10^{-4.756}}\approx 0.994$ ，则
+
+$$
+E_{\mathrm{t}} = \left(\frac{0.10\times 0.994}{0.10} -1\right)\times 100\% = -0.6\%
+$$
+
+如前述滴定曲线的讨论,滴定终点为 pH 7.0 时,未到化学计量点,且在滴定突跃之外,故误差为负值,且绝对值大于 0.1%。
+
+同理可得二元弱酸  $H_{2}A$  的终点误差。若滴定至  $HA^{-}, V_{sp} = V_{0}$ ，则终点误差:
+
+$$
+E_{\mathrm{t}} = \left(\frac{c(\delta_{1} + 2\delta_{0}) - m}{c + m} -1\right)\times 100\% \tag{3 - 2 - 15}
+$$
+
+若滴定至 $\mathrm{A}^{2-}, V_{\mathrm{sp}} = 2V_0$ ，则终点误差:
+
+$$
+E_{\mathrm{t}} = \left(\frac{1}{2}\times \frac{c(\delta_{1} + 2\delta_{0}) - m}{c + m} -1\right)\times 100\% \tag{3 - 2 - 16}
+$$
+
+»例3.2.3 计算 $0.10\mathrm{mol}\cdot \mathrm{L}^{-1}\mathrm{NaOH}$ 溶液滴定 $0.050\mathrm{mol}\cdot \mathrm{L}^{-1}\mathrm{H}_2\mathrm{C}_2\mathrm{O}_4$ 溶液至酚酞变色(pH9.0)的终点误差。（ $\mathrm{H}_2\mathrm{C}_2\mathrm{O}_4$ 的 $\mathrm{pK_{a_1}} = 1.250,\mathrm{pK_{a_2}} = 4.266$ ）
+
+» 解: 由于  $K_{a_{2}}c_{sp}>10^{-8}, H_{2}C_{2}O_{4}$  与 NaOH 反应的物质的量之比为 1:2, 根据式 (3-2-16) 计算终点误差。
+
+$\mathrm{pH} = 9.0$ 时， $\delta_0 = \frac{10^{-1.250 - 4.266}}{10^{-9.0\times 2} + 10^{-9.0 - 1.250} + 10^{-1.250 - 4.266}}\approx 1.0,\delta_1 = \frac{10^{-9.0 - 1.250}}{10^{-9.0\times 2} + 10^{-9.0 - 1.250} + 10^{-1.250 - 4.266}}\approx$ $10^{-4.71},m\approx -[\mathrm{OH}^{-}] = -10^{-5.0}$ ，则
+
+$$
+E_{\mathrm{t}} = \left(\frac{1}{2}\times \frac{0.10\times(10^{-4.71} + 2) + 10^{-5.0}}{0.10 - 10^{-5.0}} -1\right)\times 100\% = 0.02\%
+$$
+
+基于滴定曲线反函数获得的各滴定体系的终点误差公式详见二维码。基于滴定曲线反函数进行终点误差计算，直接从体积定义式，即从式(3-2-1)出发，不必先进行各种近似，思路明确，简单方便。
+
+对于常用的指示剂，与分析物的浓度相比，误差公式分母中的 $m$ 可忽略，简化计算。先忽略分母中的 $m$ 项后计算与先计算最后忽略分母中的 $m$ 项均可。通过近似获得的基于浓度计算的（即代数法）误差公式与基于反函数获得的误差公式的近似式之比较详见二维码。除了多元弱酸、混合弱酸的总量滴定，两种思路获得的近似式相同。对于各体系总酸量滴定，使用常用指示剂如酚酞，$\mathrm{pH}_{\mathrm{ep}} = 9.0$。无论先忽略还是后忽略分母中的 $m$ 项，与传统代数法的近似式相比，两种方法的误差近似式相差 $\left|\frac{m}{4c_{\mathrm{sp}}}\right|$，为 $\left|\frac{10^{-9} - 10^{-5}}{4 \times 0.05}\right| = 5 \times 10^{-5}$，误差的差值为 $0.005\%$，可忽略。可以说两种方法的最后结果都是合理的，几乎相同。
+
+## 2. 基于林邦误差公式计算一元弱酸(碱)误差
+
+基于林邦误差公式也可以计算终点误差(推导从略)。对于不同的滴定体系,林邦误差公式不同。
+
+以一元弱酸的滴定为例,林邦误差公式为
+
+$$
+E_{\mathrm{t}} = \frac{10^{\Delta\mathrm{pH}} - 10^{-\Delta\mathrm{pH}}}{(c_{\mathrm{sp}}K_{\mathrm{t}})^{1 / 2}}\times 100\% \tag{3 - 2 - 17}
+$$
+
+其中，$\Delta \mathrm{pH} = \mathrm{pH}_{\mathrm{ep}} - \mathrm{pH}_{\mathrm{sp}}, K_{\mathrm{t}} = K_{\mathrm{a}} / K_{\mathrm{w}}$。$c_{\mathrm{sp}}$ 表示弱酸在化学计量点的分析浓度。
+
+基于林邦误差公式可以方便地讨论如下问题: 计算终点误差; 令  $E_{t} = \pm 0.1\%$ , 可以获得滴定突跃  $\Delta pH$ ; 根据目测指示剂不确定性  $\Delta pH = \pm 0.3$ , 以及  $E_{t} = \pm 0.1\%$ , 对能否进行准确滴定进行判断。
+
+## 3.2.2.5 准确滴定判别
+
+目测颜色变化存在不确定性,酸碱滴定中,有 $\pm0.3\ pH$ 单位不确定性。因此,即使使用在化学计量点变色的理想指示剂,滴定终点也可能偏离化学计量点,因此要求最小滴定突跃范围为0.6 pH单位,而突跃范围受浓度和弱酸的强弱影响。
+
+对于 $0.1\mathrm{mol}\cdot \mathrm{L}^{-1},K_{\mathrm{a}} = 10^{-7}$ 的一元弱酸，当滴定突跃为 $0.6~\mathrm{pH}$ 单位， $\mathrm{pH}_{\mathrm{ep}} =$ $\mathrm{pH}_{\mathrm{sp}}\pm 0.3$ 对应的终点误差在 $\pm 0.2\%$ ；对于更弱的酸，则无法在此浓度水平下准确滴定；因此对于一元弱酸， $K_{\mathrm{a}}c\geqslant 10^{-8}$ （对应于 $K_{\mathrm{t}}c\geqslant 10^{6}$ )，可以准确滴定。对于多元弱酸，若 $\frac{K_{\mathrm{a_1}}}{K_{\mathrm{a_2}}}\geqslant 10^6$ 且 $K_{\mathrm{a_1}}c\geqslant 10^{-8}$ ，可以准确滴定第一级解离 $\mathrm{H^{+}}$ ，第二级解离 $\mathrm{H^{+}}$ 不干扰测定；一般情况下，多元弱酸的相邻两级解离常数最多相差5个数量级，若 $\frac{K_{\mathrm{a_1}}}{K_{\mathrm{a_2}}}\geqslant$ $10^{5}$ 且 $K_{\mathrm{a_1}}c\geqslant 10^{-8}$ ，可以滴定第一级解离 $\mathrm{H^{+}}$ ，第二级解离 $\mathrm{H^{+}}$ 不干扰测定，滴定误差为$0.5\%$ 。对于浓度均为 $0.1\mathrm{mol}\cdot \mathrm{L}^{-1}$ 的强酸与弱酸混合体系（如HCl+HA），若 $K_{\mathrm{a}}c>$ $10^{-8}$ ，则可滴定酸的总量；若 $K_{\mathrm{a}}c = 10^{-8}$ ，则可分别滴定HCl和HA；若 $K_{\mathrm{a}}c <   10^{-8}$ ，则只能准确滴定HCl。
+
+![](images/page_149_image_14.jpg)
+
+基于反函数获得酸碱滴定终点误差公式
+
+![](images/page_149_image_16.jpg)
+
+代数法与反函数法终点误差公式比较
+
+## 3.2.2.6 酸碱滴定法的应用
+
+## 1. 酸碱标准溶液的配制与标定
+
+酸碱滴定法中最常用的标准溶液是 HCl 与 NaOH 溶液，有时也用  $H_{2}SO_{4}$  和  $HNO_{3}$  溶液。溶液浓度常配制成  $0.10\ mol\cdot L^{-1}$ 。
+
+（1）酸标准溶液 HCl 标准溶液一般先粗略配制成大致所需浓度，然后以基准物质或标准溶液标定，最常用于标定 HCl 的基准物质是无水碳酸钠和硼砂。
+
+无水碳酸钠和 HCl 的反应计量比为 1:2, 标定时可选择甲基橙或甲基红为指示剂。
+
+硼砂 $\left(\mathrm{Na}_{2}\mathrm{B}_{4}\mathrm{O}_{7}\cdot10\mathrm{H}_{2}\mathrm{O}\right)$ 的水溶液相当于是同浓度的 $H_{3}BO_{3}$ 和 $\mathrm{B(OH)}_{4}^{-}$ 的混合液，它与HCl反应的物质的量之比亦为1:2，由于其摩尔质量 $(381.4\ g\cdot mol^{-1})$ 较大，在直接称取单份基准物质作标定时，称量误差小。用 $0.050\ mol\cdot L^{-1}$ 硼砂溶液标定 $0.10\ mol\cdot L^{-1}$ HCl溶液的化学计量点相当于 $0.10\ mol\cdot L^{-1}\ H_{3}BO_{3}$ 溶液，此时pH为5.12，选甲基红为指示剂。
+
+（2）碱标准溶液 NaOH 具有很强的吸湿性，也易吸收空气中的  $CO_{2}$ ，因此不能用直接法配制标准溶液，而是先配成大致浓度的溶液，然后进行标定。常用来标定 NaOH 溶液的基准物质有邻苯二甲酸氢钾、草酸等。
+
+邻苯二甲酸氢钾 $\left(\mathrm{KHC}_{8}\mathrm{H}_{4}\mathrm{O}_{4}\right)$ 。邻苯二甲酸氢钾是两性物质（其 $pK_{a_{2}}$ 为5.4），与NaOH定量反应:
+
+$$
+\text {C}_6\text{H}_5\text{COOH} + \text {OH}^- = \text {C}_6\text{H}_5\text{COO}^- + \text {H}_2\text{O}
+$$
+
+滴定时选酚酞为指示剂。
+
+邻苯二甲酸氢钾容易制得很纯；在空气中不吸水，容易保存；与 NaOH 的反应计量比为 1:1；摩尔质量  $(204.2 \, \text{g} \cdot \text{mol}^{-1})$  大，可以直接称取单份作标定。
+
+草酸 $\left(\mathrm{H}_{2}\mathrm{C}_{2}\mathrm{O}_{4}\right)$ 。草酸是二元弱酸 $\left(\mathrm{p}K_{\mathrm{a}_{1}}=1.25,\mathrm{p}K_{\mathrm{a}_{2}}=4.27\right)$ ，由于其 $K_{a_{1}}/K_{a_{2}}<10^{5}$ ，只能作为二元酸一次滴定到 $C_{2}O_{4}^{2-}$ ，选酚酞为指示剂。草酸稳定性好。其与NaOH按1:2计量比反应，摩尔质量 $(126.07\mathrm{~g}\cdot\mathrm{mol}^{-1})$ 又不太大。因此，若NaOH溶液浓度不大，为减小称量误差，应当多称草酸配在容量瓶中，然后移取部分溶液作标定（即称大样）。
+
+## 2. 酸碱滴定中  $CO_{2}$  的影响
+
+$CO_{2}$ 是酸碱滴定误差的重要来源。
+
+NaOH试剂常会吸收 $\mathrm{CO}_{2}$，一分子 $\mathrm{CO}_{2}$ 与两分子NaOH反应生成 $\mathrm{Na}_{2} \mathrm{CO}_{3}$。在标定NaOH时，一般以有机弱酸为基准物质，选用酚酞为指示剂，此时 $\mathrm{CO}_{2}$ 被中和为 $\mathrm{HCO}_{3}^{-}$，一个 $\mathrm{Na}_{2} \mathrm{CO}_{3}$ 分子只相当于一个NaOH分子。以此NaOH溶液作滴定剂时，若滴定突跃处于酸性范围，则应当选甲基橙（或甲基红）为指示剂。此时 $\mathrm{CO}_{2}$ 被中和为 $\mathrm{H}_{2} \mathrm{CO}_{3}$，与标定时不同，此时一个 $\mathrm{Na}_{2} \mathrm{CO}_{3}$ 分子相当于两个NaOH分子，导致误差。因此，配制NaOH溶液时，须除去 $\mathrm{CO}_{2}$。
+
+已标定好浓度的 NaOH 溶液，在保存不当时从空气中吸收  $CO_{2}$  。以此 NaOH 溶液作滴定剂时，若需采用酚酞为指示剂，则所吸收的  $CO_{2}$  最终以  $HCO_{3}^{-}$ 形态存在，与  $CO_{2}$  反应的两分子 NaOH 中只有一分子参与滴定，导致误差；而若采用甲基橙为指示剂，则所吸收的  $CO_{2}$  最终又以  $CO_{2}$  形态放出，不影响测定结果。
+
+此外,去离子水中也含有少量  $CO_{2}$ , 其在溶液中有如下平衡:
+
+$$
+\mathrm{CO} _ {2} + \mathrm{H} _ {2} \mathrm{O} \rightleftharpoons \mathrm{H} _ {2} \mathrm{CO} _ {3}
+$$
+
+$$
+K = \frac {\left[ \mathrm{H} _ {2} \mathrm{CO} _ {3} \right]}{\left[ \mathrm{CO} _ {2} \right]} = 2. 1 6 \times 1 0 ^ {- 3}
+$$
+
+碱反应的形态是  $H_{2}CO_{3}$ ，而非  $CO_{2}$ ，同时它与碱的反应速率不太快。因此，当滴定至粉红色时，稍放置， $CO_{2}$  又转变为  $H_{2}CO_{3}$ ，致使粉红色褪去。在溶液中的  $CO_{2}$  转化完毕之前，得不到稳定的终点。因此，以酚酞为指示剂时，所用去离子水必须煮沸除去  $CO_{2}$ 。
+
+## 3. 酸碱滴定分析的典型应用示例
+
+（1）烧碱中 NaOH 和  $Na_{2}CO_{3}$  的测定（混合碱的分析） 烧碱主要成分是 NaOH，容易吸收空气中的  $CO_{2}$ ，部分生成  $Na_{2}CO_{3}$ 。可以通过酸碱滴定法测定其中碱性成分的含量，有两种具体测定方法，分别是氯化钡法和双指示剂法。
+
+氯化钡法分别测定总碱量和 NaOH。以甲基橙为指示剂，用酸标准溶液滴定至黄色变为橙色（其中  $Na_{2}CO_{3}$  被滴定到  $H_{2}CO_{3}$ ），由此测得样品中 NaOH 和  $Na_{2}CO_{3}$  总量。向另一份试液加入过量  $BaCl_{2}$  以沉淀  $Na_{2}CO_{3}$ ，然后以酚酞为指示剂（在酚酞变色点， $BaCO_{3}$  不影响滴定），通过酸标准溶液滴定，直至红色变为无色，由此测得样品中 NaOH 含量。
+
+双指示剂法分别测定总碱量和  $Na_{2}CO_{3}$ 。首先以酚酞为指示剂，通过酸标准溶液滴定，直至红色变为近无色（其中  $Na_{2}CO_{3}$  被滴定到  $NaHCO_{3}$ ），由此测得样品中 NaOH 和  $Na_{2}CO_{3}$  总量。然后加入甲基橙，继续滴定，直至黄色变为橙色 ( $NaHCO_{3}$  被滴定到  $H_{2}CO_{3}$ )，由此测得样品中  $Na_{2}CO_{3}$  含量。
+
+双指示剂法操作简单,然而不如氯化钡法准确,原因是酚酞由红色变为近无色的目测判断(滴定到第一化学计量点)较为困难,导致误差增大(约1%)。
+
+（2）纯碱中  $Na_{2}CO_{3}$  和  $NaHCO_{3}$  的测定（混合碱的分析） 纯碱主要成分是  $Na_{2}CO_{3}$ ，含有少量  $NaHCO_{3}$ 。碱性成分的测定也可以使用氯化钡法和双指示剂法。
+
+氯化钡法测定总碱量比较简单。以甲基橙为指示剂，通过酸标准溶液滴定，直至黄色变为橙色 $\left(\mathrm{Na}_{2}\mathrm{CO}_{3}\right.$  和  $NaHCO_{3}$  均被滴定到  $H_{2}CO_{3}$ ），由此测得样品中  $Na_{2}CO_{3}$  和  $NaHCO_{3}$  总量。
+
+氯化钡法测定  $NaHCO_{3}$  稍微复杂。首先向试液中加入一定量过量的 NaOH 标准溶液，将  $NaHCO_{3}$  全部转化为  $Na_{2}CO_{3}$ 。然后，加入过量  $BaCl_{2}$  以沉淀  $Na_{2}CO_{3}$ 。最后，以酚酞为指示剂（在酚酞变色点， $BaCO_{3}$  不影响滴定），通过酸标准溶液滴定，直至红色变为无色。由此测得剩余 NaOH，进而得知与  $NaHCO_{3}$  反应的 NaOH 的量，该量即等于样品中  $NaHCO_{3}$  的量。
+
+双指示剂法分别测定  $Na_{2}CO_{3}$  和总碱量。首先以酚酞为指示剂，通过酸标准溶液滴定，直至红色变为无色 ( $Na_{2}CO_{3}$  被滴定到  $NaHCO_{3}$ )，由此测得样品中  $Na_{2}CO_{3}$  的含量。然后加入甲基橙，继续滴定，直至黄色变为橙色 ( $NaHCO_{3}$  被滴定到  $H_{2}CO_{3}$ )，由此测得样品中  $Na_{2}CO_{3}$  和  $NaHCO_{3}$  总量。
+
+溶液中  $NaHCO_{3}$  会缓慢分解，释放出  $CO_{2}$ ，生成碱性更强的  $Na_{2}CO_{3}$ 。因此，对于使用酚酞指示剂的纯碱滴定分析，终点后的溶液如果久置，将从无色变为红色。
+
+(3) 硅的测定 硅酸盐中的  $SiO_{2}$ ，可以通过硅氟酸钾滴定法测定其含量。
+
+使用 KOH 熔融, 样品中  $SiO_{2}$  转化为可溶性硅酸盐  $K_{2}SiO_{3}$ 。 $K_{2}SiO_{3}$  在强酸性介质中与 KF 生成硅氟酸钾沉淀:
+
+$$
+\mathrm{K} _ {2} \mathrm{SiO} _ {3} + 6 \mathrm{HF} = \mathrm{K} _ {2} \mathrm{SiF} _ {6} \downarrow + 3 \mathrm{H} _ {2} \mathrm{O}
+$$
+
+加入 KCl 使沉淀更完全。沉淀经过滤和氯化钾-乙醇溶液洗涤后，转入氯化钾-乙醇溶液。以酚酞为指示剂，用 NaOH 中和被沉淀吸附的游离酸，直至无色变为红色。然后，向溶液中加入沸水，使  $K_{2}SiF_{6}$  水解:
+
+$$
+\mathrm{K} _ {2} \mathrm{SiF} _ {6} + 3 \mathrm{H} _ {2} \mathrm{O} = \mathrm{H} _ {2} \mathrm{SiO} _ {3} + 2 \mathrm{KF} + 4 \mathrm{HF}
+$$
+
+通过碱标准溶液滴定 HF, 直至无色变为红色, 由此测得样品中  $SiO_{2}$  含量。此处, 1 mol  $SiO_{2}$  消耗 4 mol NaOH。
+
+HF 对玻璃有腐蚀作用,测定中应该使用塑料器皿。
+
+（4）磷的测定 酸碱滴定法可以测定钢铁或矿石等样品中的磷。经过样品溶解，其中的磷转化为  $H_{3}PO_{4}$ ，然后在硝酸介质中加入钼酸铵，生成黄色的磷钼酸铵沉淀:
+
+$$
+\mathrm{PO} _ {4} ^ {3 -} + 1 2 \mathrm{MoO} _ {4} ^ {2 -} + 2 \mathrm{NH} _ {4} ^ {+} + 2 5 \mathrm{H} ^ {+} = (\mathrm{NH} _ {4}) _ {2} \mathrm{H} [ \mathrm{PMo} _ {1 2} \mathrm{O} _ {4 0} ] \cdot \mathrm{H} _ {2} \mathrm{O} \downarrow + 1 1 \mathrm{H} _ {2} \mathrm{O}
+$$
+
+沉淀经过滤和蒸馏水洗涤(不可使用盐溶液,沉淀组成会发生变化)后,将其溶于一定量过量的 NaOH 标准溶液,发生如下反应:
+
+$$
+(\mathrm{NH} _ {4}) _ {2} \mathrm{H} [ \mathrm{PMo} _ {1 2} \mathrm{O} _ {4 0} ] \cdot \mathrm{H} _ {2} \mathrm{O} + 2 7 \mathrm{OH} ^ {-} = \mathrm{PO} _ {4} ^ {3 -} + 1 2 \mathrm{MoO} _ {4} ^ {2 -} + 2 \mathrm{NH} _ {3} + 1 6 \mathrm{H} _ {2} \mathrm{O}
+$$
+
+以酚酞为指示剂,通过  $HNO_{3}$  标准溶液滴定上述溶液,直至红色变为无色,滴定产物是  $HPO_{4}^{2-}$ 、 $NH_{4}^{+}$ 和  $H_{2}O$ (来自剩余的 NaOH)。
+
+以  $n_{p}$  表示样品中磷的物质的量, 以  $n_{NaOH}$  表示加入 NaOH 的总量, 以  $n_{HNO_{3}}$  表示滴定加入  $HNO_{3}$  的量, 那么  $n_{p}=\frac{n_{NaOH}-n_{HNO_{3}}}{24}$ 。
+
+（5）铵盐中氮的测定 酸碱滴定法可以测定铵盐，有两种具体测定方法，分别是蒸馏法和甲醛法。
+
+蒸馏法向样品溶液加入浓 NaOH 溶液, 然后加热蒸馏出  $NH_{3}$  并用过量  $H_{3}BO_{3}$  吸收:
+
+$$
+\mathrm{NH} _ {3} + \mathrm{H} _ {3} \mathrm{BO} _ {3} + \mathrm{H} _ {2} \mathrm{O} = \mathrm{NH} _ {4} \mathrm{B(OH)} _ {4}
+$$
+
+使用甲基红和溴甲酚绿混合指示剂，通过  $H_{2}SO_{4}$  标准溶液滴定，直至绿色变为灰色。溶液中多余的  $H_{3}BO_{3}$  不干扰滴定。也可以用一定量 HCl 或者  $H_{2}SO_{4}$  标准溶液吸收  $NH_{3}$ ，过量的酸通过 NaOH 标准溶液滴定。
+
+甲醛法向溶液加入甲醛, 将  $NH_{4}^{+}$  转化为酸性更强的  $(\mathrm{CH}_{2})_{6}\mathrm{N}_{4}\mathrm{H}^{+}$ :
+
+$$
+4 \mathrm{NH} _ {4} \mathrm{Cl} + 6 \mathrm{HCHO} = (\mathrm{CH} _ {2}) _ {6} \mathrm{N} _ {4} \mathrm{HCl} + 3 \mathrm{HCl} + 6 \mathrm{H} _ {2} \mathrm{O}
+$$
+
+以酚酞为指示剂，通过 NaOH 标准溶液滴定。1 mol  $NH_{4}^{+}$  与 1 mol NaOH 相当。
+
+凯氏定氮法(Kjeldahl nitrogen analysis)是测定含氮量最准确的方法之一,广泛应用于蛋白质、牛奶、面粉等样品含氮量的测定。在长颈凯氏烧瓶中通过硫酸和硫酸钾消化样品,样品中的有机氮转化为 $NH_{4}^{+}$ ,铜离子对消化有催化作用。消化完成后,加入浓NaOH溶液,用蒸汽蒸馏出 $NH_{3}$ 并通入一定量HCl标准溶液中,未反应的HCl通过NaOH标准溶液滴定。
+
+## 3.2.3 络合滴定法
+
+络合滴定法(complexometric titration)，又称配位滴定法，是以络合反应为基础的滴定分析法，乙二胺四乙酸(EDTA)是应用最为广泛的络合剂。与酸碱滴定反应相比，络合滴定反应的稳定常数较大，可以在更低浓度水平下进行滴定；由于不同金属离子与EDTA的络合物稳定常数有较大差别，可以直接通过控制溶液pH进行选择性滴定(分步滴定)；结合掩蔽等手段，可以实现稳定常数几乎相同的金
+
+属离子的选择性滴定。
+
+## 3.2.3.1 金属指示剂
+
+金属指示剂(metallochromic indicator)本身是一种弱的络合剂,通常是有机显色剂。以 In 表示金属指示剂,In 与被滴定金属离子反应,生成一种与指示剂本身颜色不同的络合物(MIn)。
+
+金属指示剂与金属离子的作用为
+
+$$
+\mathrm{M+In} \rightleftharpoons \mathrm{MIn}
+$$
+
+其平衡常数为
+
+$$
+K _ {\mathrm{MIn}} = \frac {[ \mathrm{MIn} ]}{[ \mathrm{M} ] [ \mathrm{In} ]}
+$$
+
+对数形式为
+
+$$
+\mathrm{pM} + \lg \frac {[ \mathrm{MIn} ]}{[ \mathrm{In} ]} = \lg K _ {\mathrm{MIn}}
+$$
+
+$\left[\mathrm{MIn}\right] = \left[\mathrm{In}\right]$ 时， $\mathrm{pM} = \lg K_{\mathrm{MIn}}$ ，此为指示剂的理论变色点的 $\mathrm{pM}$ ，以 $\mathrm{pM}_t$ 表示。
+
+指示剂一般是弱酸,若指示剂存在副反应,则
+
+$$
+K _ {\mathrm{MIn}} ^ {\prime} = \frac {[ \mathrm{MIn} ]}{[ \mathrm{M} ] [ \mathrm{In} ^ {\prime} ]}
+$$
+
+变色点为
+
+$$
+\mathrm{pM} _ {\mathrm{t}} = \lg K _ {\mathrm{MIn}} ^ {\prime} = \lg K _ {\mathrm{MIn}} - \lg \alpha_ {\mathrm{In(H)}} \tag {3-2-18}
+$$
+
+变色点的  $pM_{t}$  即为滴定终点的  $pM_{ep}$ 。
+
+若 M 发生副反应, 则
+
+$$
+\mathrm{pM} _ {\mathrm{t}} = \mathrm{pM} _ {\mathrm{ep}} = \mathrm{pM} _ {\mathrm{ep}} ^ {\prime} + \lg \alpha_ {\mathrm{M}} \tag {3-2-19}
+$$
+
+络合滴定中常用的金属离子指示剂列于表3.2.5。关于常用指示剂的结构及其相关性质，详见二维码。
+
+表 3.2.5 络合滴定中常用的金属指示剂及其性质
+
+| 名称 | pH范围 | In颜色 | MIn颜色 | 适用离子 |
+| --- | --- | --- | --- | --- |
+| 铬黑T(EBT) | 8~10 | 蓝 | 红 | $Mg^{2+}$、$Pb^{2+}$、$Zn^{2+}$ |
+| 二甲酚橙(XO) | &lt;6 | 黄 | 红 | $Bi^{3+}$、$Pb^{2+}$、$Th^{4+}$、$Zn^{2+}$ |
+| 酸性铬蓝K | 8~13 | 蓝 | 红 | $Ca^{2+}$、$Mg^{2+}$、$Mn^{2+}$、$Zn^{2+}$ |
+| 磺基水杨酸(SSA) | 1.5~2.5 | 无 | 紫红 | $Fe^{3+}$ |
+| 钙指示剂 | 12~13 | 蓝 | 红 | $Ca^{2+}$ |
+| 1-(2-吡啶偶氮)-2-萘酚(PAN) | 2~12 | 黄 | 红 | $Cu^{2+}$、$Co^{2+}$、$Ni^{2+}$ |
+
+选择指示剂时,要注意:指示剂络合物 MIn 的稳定性不能高于螯合物 MY, 否则化学计量点后滴加的少量 EDTA, 不能夺取 MIn 中的金属离子, In 不能被释放出来, 无法产生颜色变化; MIn 的溶解度不能太小, 使得 EDTA 与 MIn 的反应缓慢, 终点拖长。
+
+## 3.2.3.2 滴定曲线
+
+在络合滴定中,随着滴定剂的加入,金属离子的浓度逐渐降低,在化学计量点附近可能出现数量级变化,在滴定曲线上表现为纵坐标 pM 或 pM' 的突跃。
+
+## 1. 分段式讨论
+
+若待测金属离子 M 的初始浓度为 c，体积为  $V_{0}$ ，EDTA 的标准溶液与待测金属
+
+![](images/page_153_image_27.jpg)
+
+常用络合滴定指示剂结构与性质
+
+离子的浓度相同,在滴定过程中加入 Y 的体积为 V。
+
+滴定百分数  $T(\%)=\frac{cV}{cV_{0}}\times100\%= \frac{V}{V_{0}}\times100\%$ 。
+
+\- 化学计量点之前,因 MY 稳定,可认为加入的 Y 全部生成 MY,则
+
+$$
+\left[ \mathrm{M} ^ {\prime} \right] \approx \frac {c V _ {0} - c V}{V _ {0} + V} \tag {3-2-20}
+$$
+
+\- 化学计量点，根据物料平衡知 $\left[\mathrm{M}^{\prime}\right]_{\mathrm{sp}} = \left[\mathrm{Y}^{\prime}\right]_{\mathrm{sp}}$；又络合物较稳定，与 $c_{\mathrm{sp}}$ 相比，忽略 $\left[\mathrm{M}^{\prime}\right]_{\mathrm{sp}}$，故 $[\mathrm{MY}] \approx c_{\mathrm{sp}}$。
+
+代入条件常数式,整理得
+
+$$
+\left[ \mathrm{M} ^ {\prime} \right] _ {\mathrm{sp}} = \sqrt {\frac {c _ {\mathrm{sp}}}{K _ {\mathrm{MY}} ^ {\prime}}}
+$$
+
+其对数式为
+
+$$
+\mathrm{pM} _ {\mathrm{sp}} ^ {\prime} = \frac {1}{2} (\lg K _ {\mathrm{MY}} ^ {\prime} + \mathrm{pc} _ {\mathrm{sp}}) \tag {3-2-21}
+$$
+
+\- 在化学计量点后，
+
+$$
+\left[ \mathrm{M} ^ {\prime} \right] = \frac {\left[ \mathrm{MY} \right]}{\left[ \mathrm{Y} ^ {\prime} \right] \times K _ {\mathrm{MY}} ^ {\prime}} \tag {3-2-22}
+$$
+
+从获得滴定曲线的计算过程可以看到，金属离子的初始浓度 $c$ 与 $K_{\mathrm{MY}}^{\prime}$ 在滴定不同阶段，分别影响滴定突跃（图3.2.8和图3.2.9）。化学计量点之前，$[\mathbf{M}^{\prime}]$ 只与金属离子的初始浓度 $c$ 有关，与 $K_{\mathrm{MY}}^{\prime}$ 无关；化学计量点之后，$[\mathbf{M}^{\prime}]$ 与金属离子的初始浓度 $c$ 无关，与 $K_{\mathrm{MY}}^{\prime}$ 有关。当 $K_{\mathrm{MY}}^{\prime}$ 一定时，金属离子初始浓度增大为10倍，突跃增加1个 $\mathrm{pM}^{\prime}$ 单位，表现为突跃下限降低，而化学计量点后，不同滴定曲线合而为一，这部分的滴定曲线与金属离子的初始浓度无关；在金属离子的初始浓度一定的条件下，$K_{\mathrm{MY}}^{\prime}$ 增大为10倍，突跃增加1个 $\mathrm{pM}^{\prime}$ 单位，表现为突跃上限增加。
+
+滴定曲线纵坐标使用 pM 或 pM' 均可, 二者的突跃范围跨度相同。
+
+## 2. 滴定曲线反函数
+
+也可以根据滴定体系中 M 和 Y 的物料平衡及条件稳定常数, 通过反函数方法求得一系列  $(V, \mathrm{pM}')$  数据点, 绘制滴定曲线。
+
+与上面的分段式讨论初始条件相同，以EDTA(Y)溶液滴定同浓度 $c$ 的体积$V_{0}(\mathrm{mL})$ 金属离子(M)溶液，加入体积 $V(\mathrm{mL})\mathrm{Y}$ 时，平衡体系中相关物质的分析浓度分别为 $c_{\mathrm{M}} = \frac{cV_0}{V + V_0}$ 和 $c_{\mathrm{Y}} = \frac{cV}{V + V_0}$
+
+体系的物料平衡为 $c_{\mathrm{M}} = [\mathrm{M}^{\prime}] + [\mathrm{MY}]$ 和 $c_{\mathrm{Y}} = [\mathrm{Y}^{\prime}] + [\mathrm{MY}]$ 由两式得 $c_{\mathrm{M}} - [\mathrm{M}^{\prime}] = c_{\mathrm{Y}} - [\mathrm{Y}^{\prime}]$
+
+令  $m=\left[M'\right]-\left[Y'\right]$ ，将浓度关系式代入上式得
+
+$$
+V = \frac {c - m}{c + m} V _ {0} \tag {3-2-23}
+$$
+
+其中， $m=\left[\mathrm{M}^{\prime}\right]-\left[\mathrm{Y}^{\prime}\right]=\left[\mathrm{M}^{\prime}\right]-\frac{\left[\mathrm{MY}\right]}{K_{\mathrm{MY}}^{\prime}\left[\mathrm{M}^{\prime}\right]}=\left[\mathrm{M}^{\prime}\right]-\frac{c_{\mathrm{M}}-\left[\mathrm{M}^{\prime}\right]}{K_{\mathrm{MY}}^{\prime}\left[\mathrm{M}^{\prime}\right]}$
+
+可通过以上反函数产生一系列 $(V,\mathrm{pM}^{\prime})$ 数据点，具体步骤是“指定 $pM^{\prime}\rightarrow$ 计算 $[M^{\prime}]\rightarrow$ 代入反函数计算 $V^{\prime\prime}$ ”；连接这些数据点，得到滴定曲线。
+
+![](images/page_155_chart_2.jpg)
+
+<details>
+<summary>line</summary>
+
+| V/mL | \(c(M) (10^{-4}\) mol·L⁻¹) | \(c(M) (10^{-3}\) mol·L⁻¹) | \(c(M) (10^{-2}\) mol·L⁻¹) |
+| --- | --- | --- | --- |
+| 0 | ~4.1 | ~3.1 | ~2.1 |
+| 20 | ~6.5 | ~5.5 | ~3.8 |
+| 40 | ~10.0 | — | — |
+</details>
+
+图 3.2.8 不同浓度溶液的滴定曲线
+
+![](images/page_155_chart_4.jpg)
+
+<details>
+<summary>line</summary>
+
+| V/mL | K'MY=10^10 (pM') | K'MY=10^8 (pM') | K'MY=10^5 (pM') |
+| --- | --- | --- | --- |
+| 0 | ~1.8 | ~1.8 | ~1.8 |
+| 10 | ~2.3 | ~2.3 | ~2.3 |
+| 20 | ~4.5 | ~4.5 | ~4.5 |
+| 30 | ~11.5 | ~9.2 | ~6.5 |
+| 40 | ~11.8 | ~9.6 | ~6.7 |
+</details>
+
+图 3.2.9 不同条件常数的滴定曲线
+
+》例 3.2.4 以 $2 \times 10^{-2} \mathrm{~mol} \cdot \mathrm{L}^{-1}$ EDTA 溶液滴定同浓度的 $\mathrm{pH} = 10.0$ 的 $\mathrm{Zn}^{2+}$ 溶液。若体系中 $c_{\mathrm{NH_3}} = 0.2 \mathrm{~mol} \cdot \mathrm{L}^{-1}$, 计算化学计量点的 $\mathrm{pZn'}$、$\mathrm{pZn}$、$\mathrm{pY'}$、$\mathrm{pY}$, 以及化学计量点前后 $0.1\%$ 时的 $\mathrm{pZn'}$ 和 $\mathrm{pY'}$。[已知: $\mathrm{NH_3}$ 的 $K_{\mathrm{a}} = 10^{-9.4} (I = 0.1)$; $K_{\mathrm{ZnY}} = 10^{16.5}$; $\lg \alpha_{\mathrm{Y(H)}} = 0.5$]
+
+》解:化学计量点时, $c_{NH_{3}}=\frac{0.2}{2}\ mol\cdot L^{-1}=0.1\ mol\cdot L^{-1}$ 。
+
+参照例 3.1.19 可算得  $\left[NH_{3}\right]=0.081\ mol\cdot L^{-1}$ ，进而  $\lg\alpha_{\mathrm{Zn(NH_{3})}}=4.7$
+
+$$
+\mathrm{lg} \alpha_ {\mathrm{Zn}} = \mathrm{lg} \alpha_ {\mathrm {Zn(NH_3)}} = 4. 7
+$$
+
+故， $\lg \alpha_{\mathrm{Y(H)}} = 0.5,\lg K_{\mathrm{ZnY}}^{\prime} = \lg K_{\mathrm{ZnY}} - \lg \alpha_{\mathrm{Zn}} - \lg \alpha_{\mathrm{Y(H)}} = 16.5 - 4.7 - 0.5 = 11.3$
+
+又 $c_{\mathrm{Zn,sp}} = 10^{-2}\mathrm{mol}\cdot \mathrm{L}^{-1}$
+
+则
+
+$$
+\mathrm{pZn} _ {\mathrm{sp}} ^ {\prime} = \frac {1}{2} (\lg K _ {\mathrm{ZnY}} ^ {\prime} + \mathrm{pc} _ {\mathrm{Zn,sp}}) = \frac {1}{2} \times (1 1. 3 + 2. 0) = 6. 6
+$$
+
+因 $\left[Zn\right]=\frac{\left[Zn^{\prime}\right]}{\alpha_{Zn}}$ ，故
+
+$$
+\mathrm{pZn} = \mathrm{pZn} ^ {\prime} + \lg \alpha_ {\mathrm{Zn}} = 6. 6 + 4. 7 = 1 1. 3
+$$
+
+又
+
+$$
+\mathrm{pY} _ {\mathrm{sp}} ^ {\prime} = \mathrm{pZn} _ {\mathrm{sp}} ^ {\prime} = 6. 6
+$$
+
+故
+
+$$
+\mathrm{pY} _ {\mathrm{sp}} = \mathrm{pY} _ {\mathrm{sp}} ^ {\prime} + \lg \alpha_ {\mathrm{Y(H)}} = 6. 6 + 0. 5 = 7. 1
+$$
+
+化学计量点前0.1%时,有
+
+$$
+[ \mathrm{Zn} ^ {\prime} ] = \frac {2 \times 10 ^ {- 2}}{2} \times 0. 1 \% \mathrm{mol} \cdot \mathrm{L} ^ {- 1} = 1 \times 1 0 ^ {- 5} \mathrm{mol} \cdot \mathrm{L} ^ {- 1}
+$$
+
+故
+
+$$
+\mathrm{pZn} ^ {\prime} = 5. 0
+$$
+
+由条件稳定常数表达式,得
+
+$$
+\left[ \mathrm{Y} ^ {\prime} \right] = \frac {\left[ \mathrm{ZnY} \right]}{\left[ \mathrm{Zn} ^ {\prime} \right] K _ {\mathrm{ZnY}} ^ {\prime}} = \frac {1 \times 1 0 ^ {- 2}}{1 \times 1 0 ^ {- 5} \times 1 0 ^ {1 1 . 3}} \mathrm{mol} \cdot \mathrm{L} ^ {- 1} = 1 0 ^ {- 8. 3} \mathrm{mol} \cdot \mathrm{L} ^ {- 1}
+$$
+
+$$
+\mathrm{pY} ^ {\prime} = 8. 3
+$$
+
+化学计量点后0.1%时,有
+
+$$
+\left[ \mathrm{Y} ^ {\prime} \right] = \frac {2 \times 10 ^ {- 2}}{2} \times 0.1 \% \mathrm{mol} \cdot \mathrm{L} ^ {- 1} = 1 \times 10 ^ {- 5} \mathrm{mol} \cdot \mathrm{L} ^ {- 1}
+$$
+
+故
+
+$$
+\mathrm{pY} ^ {\prime} = 5. 0
+$$
+
+由条件稳定常数表达式,得
+
+$$
+\left[ \mathrm{Zn} ^ {\prime} \right] = \frac {\left[ \mathrm{ZnY} \right]}{\left[ \mathrm{Y} ^ {\prime} \right] K _ {\mathrm{ZnY}} ^ {\prime}} = \frac {1 \times 1 0 ^ {- 2}}{1 \times 1 0 ^ {- 5} \times 1 0 ^ {1 1 . 3}} \mathrm{mol} \cdot \mathrm{L} ^ {- 1} = 1 0 ^ {- 8. 3} \mathrm{mol} \cdot \mathrm{L} ^ {- 1}
+$$
+
+$$
+\mathrm{pZn} ^ {\prime} = 8. 3
+$$
+
+注:化学计量点附近滴定体系的体积变化很小， $K_{ZnY}^{\prime}$  可以认为不变。此外，化学计量点时，未与 EDTA 络合的 Zn 的总浓度（即  $[Zn^{\prime}]$ ）仅  $10^{-6.6} \, mol \cdot L^{-1}$ ，故与 Zn 络合所消耗的氨可忽略。一般地，若能准确滴定，则这种忽略是合理的。
+
+## 3.2.3.3 滴定误差与准确滴定判别
+
+## 1. 终点误差公式
+
+络合滴定误差可方便使用林邦误差公式计算(推导从略)。
+
+$$
+E _ {\mathrm{t}} = \frac {1 0 ^ {\Delta \mathrm{pM} ^ {\prime}} - 1 0 ^ {- \Delta \mathrm{pM} ^ {\prime}}}{\left(K _ {\mathrm{MY}} ^ {\prime} c _ {\mathrm{M,sp}}\right) ^ {1 / 2}} \times 1 0 0 \% \tag {3-2-24}
+$$
+
+其中， $\Delta pM' = pM_{ep}' - pM_{sp}'$ ， $\Delta pM = pM_{ep} - pM_{sp}$ ；可以证明， $\Delta pM = \Delta pM'$ 。
+
+此即络合滴定终点误差公式,其形式与强碱滴定弱酸终点误差公式相似。
+
+用络合滴定法测定时所需的条件，也取决于允许的误差和检测终点的准确度。若络合滴定的目视观测终点的不确定度为 $\pm 0.2\mathrm{pM}$ 、允许误差为 $\pm 0.1\%$ ，则$K_{\mathrm{MY}}^{\prime}c_{\mathrm{M,sp}}\geqslant 10^{6}$ 。这一判别条件与酸碱滴定是一致的。
+
+》例 3.2.5 在 pH 5.5 的六亚甲基四胺缓冲溶液中以  $2 \times 10^{-2} \, mol \cdot L^{-1}$  EDTA 溶液滴定同浓度的  $Zn^{2+}$  溶液。计算滴定突跃，并选择合适的指示剂；在选择的指示剂条件下，滴定误差是多少？
+
+解:六亚甲基四胺不与  $Zn^{2+}$  络合, pH=5.5 时,  $\lg\alpha_{\mathrm{Zn(OH)}}=0,\lg\alpha_{\mathrm{Y(H)}}=5.5$ , 则
+
+$$
+\lg K _ {\mathrm{ZnY}} ^ {\prime} = 1 6. 5 - 5. 5 = 1 1. 0
+$$
+
+$$
+\lg (c K _ {\mathrm{ZnY}} ^ {\prime}) = 1 1. 0 - 2. 0 = 9. 0
+$$
+
+若 $E_{\mathrm{t}} = \pm 0.1\%$ ，则由终点误差公式得， $\Delta \mathrm{pM} = \pm 1.5$ ，有
+
+$$
+\mathrm{pZn} _ {\mathrm{sp}} = \frac {1}{2} (\lg K _ {\mathrm{ZnY}} ^ {\prime} + \mathrm{pc} _ {\mathrm{Zn,sp}}) = \frac {1}{2} \times (1 1. 0 + 2. 0) = 6. 5
+$$
+
+故滴定突跃是 $\mathrm{pZn}6.5\pm 1.5$ ，即 $\mathrm{pZn}5.0\sim 8.0$ 。
+
+或者,直接由化学计量点前0.1%得
+
+$$
+[ \mathrm{Zn} ] = \frac {2 \times 10^{-2}}{2} \times 0.1\% \mathrm{mol} \cdot \mathrm{L}^{-1} = 1\times 10^{-5}\mathrm{mol} \cdot \mathrm{L}^{-1}
+$$
+
+化学计量点后0.1%，有
+
+$$
+[\mathrm{Y}^{\prime}] = \frac{2\times 10^{-2}}{2}\times 0.1\% \mathrm{mol}\cdot \mathrm{L}^{-1} = 1\times 10^{-5}\mathrm{mol}\cdot \mathrm{L}^{-1}
+$$
+
+根据条件稳定常数表达式,有
+
+$$
+\mathrm{[Zn]} = \frac {\mathrm{[ZnY]}}{\mathrm{[Y^{\prime}]} K _ {\mathrm{ZnY}} ^ {\prime}} = \frac {1 \times 10 ^ {- 2}}{1 \times 10 ^ {- 5} \times 1 0 ^ {1 1 . 0}} \mathrm{mol} \cdot \mathrm{L} ^ {- 1} = 1 0 ^ {- 8. 0} \mathrm{mol} \cdot \mathrm{L} ^ {- 1}
+$$
+
+故滴定突跃为 pZn 5.0\~8.0。
+
+查附录得,二甲酚橙在 pH 5.5 时的  $pZn_{t}=5.7$ , 处于突跃范围内, 是合适的指示剂。
+
+以二甲酚橙为指示剂, $\Delta pM=5.7-6.5=-0.8$ ,根据误差公式,
+
+$$
+E_{\mathrm{t}} = \frac{10^{-0.8} - 10^{0.8}}{\left[10^{11.0}\times 10^{-2.0}\right]^{1 / 2}}\times 100\% = -0.02\%
+$$
+
+## 2. 通过体积误差公式计算
+
+与酸碱滴定相同,也可根据滴定曲线反函数求算滴定终点时加入的滴定剂体积  $V_{ep}$ ,通过式(3-2-1)所示的体积定义式计算络合滴定终点误差。
+
+例 3.2.5 中的滴定误差计算, $pZn_{t}=5.7$ , $V_{sp}=V_{0}$ ,终点时
+
+$$
+m = [ \mathrm{M} ^ {\prime} ] - \frac {c _ {\mathrm{sp}} - [ \mathrm{M} ^ {\prime} ]}{K _ {\mathrm{MY}} ^ {\prime} [ \mathrm{M} ^ {\prime} ]} = 1 0 ^ {- 5. 7} \mathrm{mol} \cdot \mathrm{L} ^ {- 1} - \frac {0 . 0 1 - 1 0 ^ {- 5 . 7}}{1 0 ^ {1 1 . 0} \times 1 0 ^ {- 5 . 7}} \mathrm{mol} \cdot \mathrm{L} ^ {- 1} \approx 1 0 ^ {- 5. 7} \mathrm{mol} \cdot \mathrm{L} ^ {- 1}
+$$
+
+根据滴定曲线反函数,在滴定终点有
+
+$$
+V _ {\mathrm{ep}} = \frac {c - m}{c + m} V _ {0} = \frac {c - m}{c + m} V _ {\mathrm{sp}}
+$$
+
+根据式(3-2-1)，有
+
+$$
+E _ {\mathrm{t}} = \left(\frac {V _ {\mathrm{ep}}}{V _ {\mathrm{sp}}} - 1\right) \times 100 \% = \left(\frac {c - m}{c + m} - 1\right) \times 100 \% = \frac {- 2 m}{c + m} \times 100 \%
+$$
+
+故
+
+$$
+E_{\mathrm{t}} = \frac{-2\times 10^{-5.7}}{0.02 + 10^{-5.7}}\times 100\% = -0.02\%
+$$
+
+## 3.2.3.4 络合滴定中酸度的控制
+
+对单一金属离子的滴定，假设络合反应中除EDTA的酸效应外没有其他副反应， $K_{\mathrm{MY}}^{\prime}$ 仅取决于 $\alpha_{\mathrm{Y(H)}}$ ，即仅由酸度决定。根据单一离子的准确滴定判别， $\Delta \mathrm{pM} = \pm 0.2, E_{\mathrm{t}} = \pm 0.1\% , c_{\mathrm{sp}} = 1\times 10^{-2}\mathrm{mol}\cdot \mathrm{L}^{-1}$ ，由林邦公式可知 $\lg K_{\mathrm{MY}}^{\prime} = \lg K_{\mathrm{MY}} - \lg \alpha_{\mathrm{Y(H)}}\geqslant 8$ 。$\lg \alpha_{\mathrm{Y(H)}}$ 随溶液酸度的增加而增加，因此，酸度应有一个最高限度，超过该酸度就会使 $\lg K_{\mathrm{MY}}^{\prime} < 8$ ，从而不能准确滴定，这一最高允许酸度称为“最高酸度”。因此，可基于 $\lg K_{\mathrm{MY}}^{\prime} = 8.0$ 求得 $\lg \alpha_{\mathrm{Y(H)}}$ 。通过 $\lg \alpha_{\mathrm{Y(H)}} - \mathrm{pH}$ 曲线（见图3.1.10）查得此时 $\mathrm{pH}$ ，即最低 $\mathrm{pH}$ 。
+
+常见金属-EDTA络合物的 $\lg K_{\mathrm{MY}}$ 对应的最低 $\mathrm{pH}$ 如图3.2.10所示。酸效应曲线表明了 $\mathrm{pH}$ 对络合物形成的影响。不同金属-EDTA络合物的 $\lg K_{\mathrm{MY}}$ 不同，为使$\lg K_{\mathrm{MY}}^{\prime}$ 达到8.0的最低 $\mathrm{pH}$ 也不同。对很稳定的络合物BiY（ $\lg K = 27.9$ )，可以在高酸度下测定；而对于不稳定的络合物 $\mathrm{MgY}(\lg K = 8.7)$ ，则必须在弱碱性（ $\mathrm{pH}\approx 10$ )溶液中滴定。
+
+![](images/page_158_chart_3.jpg)
+
+<details>
+<summary>line</summary>
+
+| Element | lgKMY | pHmin |
+| --- | --- | --- |
+| Mg | ~8.5 | 10 |
+| Ca | ~10.5 | ~7.5 |
+| Fe2+ | ~14.5 | ~5.2 |
+| La | ~15.5 | ~4.5 |
+| Al | ~16.5 | ~4.1 |
+| Zn | ~17.5 | ~3.8 |
+| Pb | ~18.5 | ~3.3 |
+| Cu | ~20.5 | ~2.8 |
+| Hg2+ | ~22.0 | ~2.2 |
+| Th | ~24.0 | ~1.8 |
+| Fe3+ | ~26.0 | ~1.4 |
+| Bi | ~28.0 | ~1.0 |
+| ZrO2+ | ~30.0 | ~0.6 |
+</details>
+
+图 3.2.10 滴定金属离子的最低 pH(pH $_{min}$ ) 与 lgK $_{MY}$  的关系
+
+络合滴定的“最低酸度”，是指低于该酸度时，金属离子水解形成羟基络合物甚至析出沉淀  $\mathrm{M(OH)}_{n}$ ，不仅影响络合反应的速率使终点难以确定，而且影响络合反应的计量关系。此“最低酸度”可由  $\mathrm{M(OH)}_{n}$  的溶度积求得。如果  $\mathrm{M(OH)}_{n}$  的溶度积为  $K_{sp}$ ，为了防止滴定时形成  $\mathrm{M(OH)}_{n}$  沉淀，必须使  $\left[OH^{-}\right] \leqslant \sqrt[n]{K_{sp}/c_{M}}$ ，据此可求得最低酸度。例如，滴定  $2 \times 10^{-2} mol \cdot L^{-1} Zn^{2+}$  时，为防止滴定开始时形成  $\mathrm{M(OH)}_{n}$  沉淀，必须使
+
+$$
+\mathrm {[ OH^ {-} ]\leqslant \sqrt {\frac {10^{-15.3}}{2\times 10^{-2}}} mol\cdot L^ {-1} = 10^{-6.8} mol\cdot L^ {-1}}
+$$
+
+即最高 pH 为 7.2, 故络合滴定  $Zn^{2+}$  的 pH 范围为 pH 4.0\~7.2。
+
+若加入适当的辅助络合剂(如酒石酸或氨水)防止金属离子水解沉淀,则可以在更低的酸度下滴定。但辅助络合剂与金属离子的副反应也将导致 $K_{MY}^{\prime}$ 降低,为实现准确滴定,必须控制其用量。
+
+上述酸度范围是从滴定反应的角度考虑的，即为达到准确滴定的 $K_{\mathrm{MY}}^{\prime}$ 而又不致生成沉淀所需。如前所述，误差不仅取决于 $\lg (cK')$ ，还与 $\Delta \mathrm{pM}$ 有关。酸度会影响滴定剂的 $\mathrm{pM}_{\mathrm{t}}$ ，从而影响 $\Delta \mathrm{pM}$ 。因此，为了提高滴定准确度，在上述的酸度范围内应选择合适的 $\mathrm{pH}$ 使 $\mathrm{pM}_{\mathrm{t}}$ 与 $\mathrm{pM}_{\mathrm{sp}}$ 尽可能一致。
+
+以 EDTA 滴定  $Zn^{2+}$  为例, 若选二甲酚橙为指示剂, 应该选择的酸度是多少?
+
+由图3.2.11可见，$\lg K_{\mathrm{ZnY}}'$ 和 $\mathrm{pM}_{\mathrm{sp}}$ 随 $\mathrm{pH}$ 增大而增大，表明酸度降低，络合反应越趋完全；$\mathrm{pM}_{\mathrm{t}}$ 随 $\mathrm{pH}$ 增大而增大，表明酸度越低，指示剂的灵敏度越高。在 $\mathrm{pH} = 6.5$ 时，$\mathrm{pM}_{\mathrm{sp}} = \mathrm{pM}_{\mathrm{t}}$；$\mathrm{pH} < 6.5$ 时，$\mathrm{pM}_{\mathrm{sp}} > \mathrm{pM}_{\mathrm{t}}$，终点误差为负值；$\mathrm{pH} > 6.5$ 时，$\mathrm{pM}_{\mathrm{sp}} < \mathrm{pM}_{\mathrm{t}}$，终点误差为正值。
+
+从理论上考虑，$\mathrm{pH}6.5$ 为最佳 $\mathrm{pH}$ 。实际上，二甲酚橙指示剂在 $\mathrm{pH} < 6$ 时使用，因为其在 $\mathrm{pH} > 6$ 时呈紫红色，与锌-二甲酚橙络合物的颜色相近。由 $E_{\mathrm{t}} - \mathrm{pH}$曲线可见，为使终点误差<0.1%，pH 应当大于 5.1。因此以二甲酚橙为指示剂滴定 Zn 的酸度范围是 pH 5.1\~6.0，实际滴定应避免在边界 pH 操作，而多在 pH 5.5\~5.8 进行，以免 pH 变动引起条件稳定常数发生变化。若选择 pH=4.0 滴定，尽管  $\lg K_{ZnY}^{\prime}$  达到 8，但此酸度下二甲酚橙指示剂对锌很不灵敏， $\Delta pM$  太大，终点误差高达 5%。因此，用指示剂确定终点时，pH 的选择不仅要考虑  $K_{MY}^{\prime}$ ，还要考虑指示剂的变色点与适用 pH 范围。
+
+![](images/page_159_chart_3.jpg)
+
+<details>
+<summary>line</summary>
+
+| pH | lgK'ZnY | pZnsp | pZnep | Et |
+| --- | --- | --- | --- | --- |
+| 4.0 | ~8.0 | ~5.0 | ~3.3 | ~1.5 |
+| 5.0 | ~10.0 | ~6.0 | ~4.8 | ~0.2 |
+| 5.5 | ~11.0 | ~6.5 | ~5.8 | ~0.05 |
+| 6.0 | ~11.8 | ~6.8 | ~6.8 | ~0.01 |
+| 7.0 | ~13.0 | ~7.5 | ~8.0 | ~0.001 |
+</details>
+
+图 3.2.11 pH 对  $E_{t}$  等的影响
+
+## 3.2.3.5 混合离子的选择性滴定
+
+## (1) 控制酸度进行选择性滴定
+
+如果溶液中存在 M 和 N 两种金属离子, 均能与 EDTA 形成络合物, 且  $K_{MY} > K_{NY}$ , 则用 EDTA 滴定时, M 首先被滴定。若  $K_{MY}$  与  $K_{NY}$  相差足够大, 则 M 首先被定量滴定, 也就是说在 N 存在时可以选择性滴定 M。至于 N 能否继续被滴定, 则成为单一离子滴定的问题, 前面已经讨论过。那么, 究竟  $K_{MY}$  与  $K_{NY}$  相差多大才能选择性滴定 M? 应当在什么酸度下滴定?
+
+由于要讨论的是选择性滴定 M, 可将 N 与 Y 的反应看作 Y 的副反应, 因此, 除了与  $H^{+}$  的副反应, Y 还存在与 N 的副反应。
+
+根据副反应系数定义:
+
+$$
+\alpha_ {\mathrm{Y(N)}} = \frac {[ \mathrm{Y} ] + [ \mathrm{NY} ]}{[ \mathrm{Y} ]} = 1 + [ \mathrm{N} ] K _ {\mathrm{NY}}
+$$
+
+为了能准确地滴定 M, 化学计量点时 [NY] 应当很小。若无其他络合剂与 N 反应, 则
+
+$$
+[ \mathrm{N} ] = c _ {\mathrm{N}} - [ \mathrm{NY} ] \approx c _ {\mathrm{N}}
+$$
+
+因此
+
+$$
+\alpha_ {\mathrm{Y(N)}} \approx 1 + c _ {\mathrm{N}} K _ {\mathrm{NY}} \approx c _ {\mathrm{N}} K _ {\mathrm{NY}} \tag {3-2-25}
+$$
+
+可见, 只要酸度不太低, N 不水解,  $\alpha_{\mathrm{Y(N)}}$  仅取决于  $c_{N}$  和  $K_{NY}$ , 不随 pH 变化, 为定值。
+
+Y 的总副反应系数为
+
+$$
+\alpha_ {\mathrm{Y}} = \alpha_ {\mathrm{Y(H)}} + \alpha_ {\mathrm{Y(N)}} - 1
+$$
+
+若在较高酸度下滴定，则  $\alpha_{\mathrm{Y(H)}} > \alpha_{\mathrm{Y(N)}}$ ，此时  $\alpha_{Y} \approx \alpha_{Y(H)}$ ，N 对滴定的影响可忽略。

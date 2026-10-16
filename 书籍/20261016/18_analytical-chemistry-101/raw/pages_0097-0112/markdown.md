@@ -1,0 +1,1183 @@
+$$
+\mathrm{HA} + \mathrm{H} _ {2} \mathrm{O} \rightleftharpoons \mathrm{H} _ {3} \mathrm{O} ^ {+} + \mathrm{A} ^ {-}
+$$
+
+a. 活度常数 $K_{\mathrm{a}}^{\ominus}$
+
+$$
+K _ {\mathrm{a}} ^ {\ominus} = \frac {a _ {\mathrm{H} _ {3} \mathrm{O} ^ {+}} a _ {\mathrm{A} ^ {-}}}{a _ {\mathrm{HA}}}
+$$
+
+$K_{a}^{\ominus}$ 是热力学常数,仅与温度有关。
+
+b. 浓度常数 $K_{\mathrm{a}}^{\mathrm{c}}$
+
+$$
+K _ {\mathrm{a}} ^ {\mathrm{c}} = \frac {\left[ \mathrm{H} _ {3} \mathrm{O} ^ {+} \right] \left[ \mathrm{A} ^ {-} \right]}{\left[ \mathrm{HA} \right]} = \frac {K _ {\mathrm{a}} ^ {\ominus}}{\gamma_ {\mathrm{H} _ {3} \mathrm{O} ^ {+}} \gamma_ {\mathrm{A} ^ {-}}}
+$$
+
+$K_{a}^{c}$  不仅与温度有关,还与溶液的离子强度有关。
+
+c. 混合常数 $K_{\mathrm{a}}^{\mathrm{M}}$
+
+若  $H_{3}O^{+}$  用活度表示, 其他组分用浓度表示, 就得到混合常数  $K_{a}^{M}$ 。
+
+$$
+K _ {\mathrm{a}} ^ {\mathrm{M}} = \frac {a _ {\mathrm{H} _ {3} \mathrm{O} ^ {-}} \left[ \mathrm{A} ^ {-} \right]}{\left[ \mathrm{HA} \right]} = \frac {K _ {\mathrm{a}} ^ {\ominus}}{\gamma_ {\mathrm{A} ^ {-}}}
+$$
+
+$K_{a}^{M}$  与温度和溶液的离子强度有关。
+
+在实际工作中, $H_{3}O^{+}$ 或 $OH^{-}$ 的活度能够通过pH计测得,处理平衡问题时,采用混合常数比较方便。
+
+如果只涉及分析测定中酸碱平衡的处理,通常溶液浓度不太大,若计算 pH 要求的准确度不太高时,可忽略离子强度的影响,用活度常数代替浓度常数作近似计算。在酸碱平衡与酸碱滴定中,一般都采用活度常数进行计算,仅当准确度要求较高时,才考虑离子强度的影响(如标准缓冲溶液 pH 的计算中,需进行活度校正)。若溶液离子强度较高,最好采用浓度常数或混合常数计算。
+
+## 3.1.2 酸碱平衡
+
+酸碱平衡(acid-base equilibrium)是四大化学平衡的基础,几乎任何水溶液中的反应都需要考虑酸碱作用。本节介绍酸度对弱酸碱形态分布的影响;通过酸碱溶液pH计算的讨论,介绍处理化学平衡的统一方法与思路;介绍酸碱缓冲溶液。
+
+## 3.1.2.1 酸碱反应及其平衡常数
+
+## 1. 酸碱反应
+
+根据 Brønsted-Lowry 酸碱质子理论,能给出质子的物质称为酸,能接受质子的物质称为碱。酸(HA)给出质子后变成其共轭碱( $A^{-}$ ),碱(B)接受质子后变成其共轭酸( $BH^{+}$ )。HA- $A^{-}$ 、B- $BH^{+}$ 相互依存,构成共轭酸碱对。
+
+表 3.1.2 是一些典型的共轭酸碱对。
+
+表 3.1.2 一些典型的共轭酸碱对
+
+| 酸 |  | 质子+共轭碱 |
+| --- | --- | --- |
+| $H_3O^+$ | $\rightleftharpoons$ | $H^+ + H_2O$ |
+| $H_2O$ | $\rightleftharpoons$ | $H^+ + OH^-$ |
+| HCl | $\longrightarrow$ | $H^+ + Cl^-$ |
+| $H_2PO_4^-$ | $\rightleftharpoons$ | $H^+ + HPO_4^{2-}$ |
+| $HPO_4^{2-}$ | $\rightleftharpoons$ | $H^+ + PO_4^{3-}$ |
+| $NH_4^+$ | $\rightleftharpoons$ | $H^+ + NH_3$ |
+| $[Fe(H_2O)_6]^{3+}$ | $\rightleftharpoons$ | $H^+ + [Fe(H_2O)_5(OH)]^{2+}$ |
+
+可见:共轭酸碱对之间只相差一个质子;酸或碱可以是中性分子,也可以是阳离子或阴离子;质子理论中的酸碱概念是相对的,同一个物质(如 $HPO_{4}^{2-}$ )在一个酸碱对中是酸,在另一个酸碱对中可以作为碱。
+
+酸给出质子的反应、碱接受质子的反应都称为酸碱半反应。半反应不能单独发生，酸给出质子时，必须有另一种能够接受质子的碱存在。酸碱反应由两个共轭酸碱对共同作用才能完成，其实质是质子的转移。
+
+例如,对于一元弱酸 HA 的解离,有
+
+![](images/page_97_image_5.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["半反应 1"] --> B["HA(酸 1) ⇌ A⁻(碱 1)+H⁺"]
+  C["半反应 2"] --> D["H⁺+H₂O(碱 2) ⇌ H₃O⁺(酸 2)"]
+  E["总的反应"] --> F["HA + H₂O ⇌ H₃O⁺ + A⁻"]
+```
+</details>
+
+酸 1 碱 2 酸 2 碱 1
+
+![](images/page_97_image_7.jpg)
+
+其结果是质子从 HA 转移到  $H_{2}O$ ，溶剂  $H_{2}O$  在此处起碱的作用，使 HA 的解离得以实现。
+
+平衡常数为
+
+$$
+K _ {\mathrm{a}} = \frac {[ \mathrm{H} _ {3} \mathrm{O} ^ {+} ] [ \mathrm{A} ^ {-} ]}{[ \mathrm{HA} ]} \tag {3-1-7}
+$$
+
+$K_{a}$  称为一元弱酸 HA 的解离常数。 $K_{a}$  越大，HA 给出质子的能力越强，其共轭碱 ( $A^{-}$ ) 接受质子的能力越弱。在稀溶液中， $H_{2}O$  大量存在，其浓度近似为常数 (55.6 mol· $L^{-1}$ )，不包括在此式中。
+
+为书写方便,通常将  $H_{3}O^{+}$  简写成  $H^{+}$ , 则 HA 的解离反应简写为  $HA \rightleftharpoons H^{+} + A^{-}$ 。
+
+对于一元弱碱 B, 有
+
+![](images/page_97_image_14.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["半反应 1"] --> B["B(碱 1)+H⁺ ⇌ BH⁺(酸 1)"]
+  C["半反应 2"] --> D["H₂O(酸 2) ⇌ H⁺+OH⁻(碱 2)"]
+  E["总的反应"] --> F["B + H₂O ⇌ OH⁻ + BH⁺"]
+```
+</details>
+
+碱 1 酸 2 碱 2 酸 1
+
+![](images/page_97_image_16.jpg)
+
+平衡常数为
+
+$$
+K _ {\mathrm{b}} = \frac {[ \mathrm{BH} ^ {+} ] [ \mathrm{OH} ^ {-} ]}{[ \mathrm{B} ]} \tag {3-1-8}
+$$
+
+$K_{b}$  称为一元弱碱 B 的解离常数。 $K_{b}$  越大，B 接受质子的能力越强，对应的共轭酸  $(\mathrm{BH}^{+})$  给出质子的能力越弱。
+
+## 2. 质子自递反应
+
+在酸碱反应中,水既能作为酸给出质子,又能作为碱得到质子,质子也可以在水分子之间转移,这种反应称为水的质子自递(autoprotolysis)反应。
+
+$$
+\mathrm{H} _ {2} \mathrm{O} (\text {酸} 1) + \mathrm{H} _ {2} \mathrm{O} (\text {碱} 2) \rightleftharpoons \mathrm{OH} ^ {-} (\text {碱} 1) + \mathrm{H} _ {3} \mathrm{O} ^ {*} (\text {酸} 2)
+$$
+
+$$
+K _ {\mathrm{w}} = \left[ \mathrm{H} _ {3} \mathrm{O} ^ {+} \right] \left[ \mathrm{OH} ^ {-} \right] = 1. 0 \times 1 0 ^ {- 1 4} (2 5 ℃)
+$$
+
+$K_{w}$ 称为水的质子自递常数,也称为离子积。
+
+其他溶剂，如  $C_{2}H_{5}OH$ 、 $NH_{3}$ 、HAc 等，也存在类似的质子自递反应。
+
+![](images/page_98_image_2.jpg)
+
+多元酸碱逐级解离常数及对应共轭酸碱对
+
+## 3. 共轭酸碱对的 $K_{\mathrm{a}}$ 和 $K_{\mathrm{b}}$ 的关系
+
+对于共轭酸碱对 HA-A $^{-}$ ，若 HA 的酸性强，其共轭碱 A $^{-}$  的碱性必弱。共轭酸碱对的  $K_{a}$  与  $K_{b}$  间的关系式可由式(3-1-7)和式(3-1-8)导出:
+
+$$
+K _ {\mathrm{a}} \cdot K _ {\mathrm{b}} = \frac {[ \mathrm{H} ^ {+} ] [ \mathrm{A} ^ {-} ]}{[ \mathrm{HA} ]} \cdot \frac {[ \mathrm{HA} ] [ \mathrm{OH} ^ {-} ]}{[ \mathrm{A} ^ {-} ]} = [ \mathrm{H} ^ {+} ] \cdot [ \mathrm{OH} ^ {-} ] = K _ {\mathrm{w}}
+$$
+
+$$
+\mathrm{p} K _ {\mathrm{a}} + \mathrm{p} K _ {\mathrm{b}} = \mathrm{p} K _ {\mathrm{w}} = 1 4. 0 0 (2 5 ℃)
+$$
+
+因此，由酸的解离常数  $K_{a}$ ，可求出其共轭碱的  $K_{b}$ ，反之亦然。
+
+»例 3.1.1 已知一氯乙酸  $CH_{2}ClCOOH$  的  $K_{a}=1.36\times10^{-3}$ ，求  $CH_{2}ClCOO^{-}$  的  $pK_{b}$  值。
+
+》解:一氯乙酸  $CH_{2}ClCOOH$  在水溶液中的解离反应为
+
+$$
+\mathrm{CH} _ {2} \mathrm{ClCOOH} + \mathrm{H} _ {2} \mathrm{O} \rightleftharpoons \mathrm{H} _ {3} \mathrm{O} ^ {+} + \mathrm{CH} _ {2} \mathrm{ClCOO} ^ {-} \quad \mathrm{pK} _ {\mathrm{a}} = 2. 8 7
+$$
+
+根据共轭酸碱对  $K_{a}$  与  $K_{b}$  间的关系式可得， $pK_{b}=14.00-2.87=11.13$ 。
+
+多元酸(碱)在水溶液中发生逐级解离,存在多个共轭酸碱对,每一个共轭酸碱对的 $K_{a}$ 和 $K_{b}$ 也存在上述确定关系,详见二维码。
+
+》例 3.1.2 已知磷酸  $H_{3}PO_{4}$  的  $K_{a_{1}} \sim K_{a_{3}}$  分别为  $7.11 \times 10^{-3}$ 、 $6.34 \times 10^{-8}$ 、 $4.22 \times 10^{-13}$ ，求磷酸根  $PO_{4}^{3-}$  的  $pK_{b_{1}} \sim pK_{b_{3}}$  值。
+
+» 解: 磷酸  $H_{3}PO_{4}$  在水溶液中的逐级解离反应为
+
+$$
+\mathrm{H} _ {3} \mathrm{PO} _ {4} \rightleftharpoons \mathrm{H} ^ {+} + \mathrm{H} _ {2} \mathrm{PO} _ {4} ^ {-} \quad \mathrm{pK} _ {\mathrm{a} _ {1}} = 2. 1 4 8
+$$
+
+$$
+\mathrm{H} _ {2} \mathrm{PO} _ {4} ^ {-} \rightleftharpoons \mathrm{H} ^ {+} + \mathrm{HPO} _ {4} ^ {2 -} \quad \mathrm{pK} _ {\mathrm{a} _ {2}} = 7. 1 9 8
+$$
+
+$$
+\mathrm{HPO} _ {4} ^ {2 -} \rightleftharpoons \mathrm{H} ^ {+} + \mathrm{PO} _ {4} ^ {3 -} \quad \mathrm{pK} _ {\mathrm{a} _ {3}} = 1 2. 3 7 7
+$$
+
+由此可得，磷酸根  $PO_{4}^{3-}$  的  $pK_{b_{1}} = pK_{w} - pK_{a_{3}} = 1.623, pK_{b_{2}} = pK_{w} - pK_{a_{2}} = 6.802, pK_{b_{3}} = pK_{w} - pK_{a_{1}} = 11.852$ 。
+
+## 4. 中和反应
+
+中和反应(neutralization reaction)是一类重要的酸碱反应,是解离反应的逆反应,是酸碱滴定法的基础,其平衡常数用 $K_{t}$ 表示,也称为酸碱滴定常数。
+
+强酸与强碱的中和反应,是反应完全程度最高的一类中和反应。
+
+$$
+\mathrm{H} ^ {+} + \mathrm{OH} ^ {-} \rightleftharpoons \mathrm{H} _ {2} \mathrm{O}
+$$
+
+$$
+K _ {\mathrm{t}} = \frac {1}{\left[ \mathrm{H} ^ {+} \right] \left[ \mathrm{OH} ^ {-} \right]} = \frac {1}{K _ {\mathrm{w}}} = 1. 0 \times 1 0 ^ {1 4} (2 5 ℃)
+$$
+
+强碱与弱酸的中和反应:
+
+$$
+\mathrm{HA} + \mathrm{OH} ^ {-} \rightleftharpoons \mathrm{H} _ {2} \mathrm{O} + \mathrm{A} ^ {-}
+$$
+
+$$
+K _ {\mathrm{t}} = \frac {[ \mathrm{A} ^ {-} ]}{[ \mathrm{HA} ] [ \mathrm{OH} ^ {-} ]} = \frac {K _ {\mathrm{a}}}{K _ {\mathrm{w}}}
+$$
+
+强酸与弱碱的中和反应:
+
+$$
+\mathrm{H} ^ {+} + \mathrm{B} \rightleftharpoons \mathrm{BH} ^ {+}
+$$
+
+$$
+K _ {\mathrm{t}} = \frac {[ \mathrm{BH} ^ {+} ]}{[ \mathrm{H} ^ {+} ] [ \mathrm{B} ]} = \frac {K _ {\mathrm{b}}}{K _ {\mathrm{w}}}
+$$
+
+后两类中和反应,其平衡常数小于强酸与强碱的中和反应;弱酸或弱碱的解
+
+离常数越大,反应完全程度越高。
+
+## 3.1.2.2 酸度对弱酸(碱)形态分布的影响
+
+## 1. 分布分数
+
+在平衡溶液中,由于酸度、络合或氧化还原作用的影响,一个物种往往存在多种形态。其中某一形态的平衡浓度占其总浓度(即分析浓度)的分数,称为分布分数(distribution fraction),用 $\delta$ 表示。
+
+（1）一元弱酸(碱)溶液 以分析浓度为 c 的 HA 为例, 在水溶液中存在两种形态(HA 和 A $^{-}$ ),
+
+$$
+c = \left[ \mathrm{HA} \right] + \left[ \mathrm{A} ^ {-} \right]
+$$
+
+代入解离常数表达式,得
+
+$$
+c = \left[ \mathrm{HA} \right] + \frac {\left[ \mathrm{HA} \right]}{\left[ \mathrm{H} ^ {+} \right]} K _ {\mathrm{a}} = \left[ \mathrm{HA} \right] \left(1 + \frac {K _ {\mathrm{a}}}{\left[ \mathrm{H} ^ {+} \right]}\right)
+$$
+
+分别用  $\delta_{1}$  和  $\delta_{0}$  表示 HA 和 A⁻ 的分布分数, 则
+
+$$
+\delta_ {1} = \delta_ {\mathrm{HA}} = \frac {[ \mathrm{HA} ]}{c} = \frac {[ \mathrm{HA} ]}{[ \mathrm{HA} ] \left(1 + \frac {K _ {\mathrm{a}}}{[ \mathrm{H} ^ {+} ]}\right)} = \frac {[ \mathrm{H} ^ {+} ]}{[ \mathrm{H} ^ {+} ] + K _ {\mathrm{a}}} \tag {3-1-9}
+$$
+
+$$
+\delta_ {0} = \delta_ {\mathrm{A} ^ {-}} = \frac {[ \mathrm{A} ^ {-} ]}{c} = \frac {\frac {[ \mathrm{HA} ]}{[ \mathrm{H} ^ {+} ]} K _ {\mathrm{a}}}{[ \mathrm{HA} ] \left(1 + \frac {K _ {\mathrm{a}}}{[ \mathrm{H} ^ {+} ]}\right)} = \frac {K _ {\mathrm{a}}}{[ \mathrm{H} ^ {+} ] + K _ {\mathrm{a}}} \tag {3-1-10}
+$$
+
+且有
+
+$$
+\delta_ {1} + \delta_ {0} = 1
+$$
+
+可见,一元弱酸溶液中两种形态的分布分数与其共轭酸碱对的总浓度 c 无关,对指定酸碱而言,分布分数仅是溶液  $\left[H^{+}\right]$  的函数。
+
+HAc 溶液 $\left(\mathrm{p}K_{\mathrm{a}}=4.756\right)$ 的酸碱形态分布图如图 3.1.2(a) 所示。
+
+![](images/page_99_chart_17.jpg)
+
+<details>
+<summary>line</summary>
+
+| pH | HAc \((\delta)\) | Ac- \((\delta)\) |
+| --- | --- | --- |
+| 0 | 1.0 | 0.0 |
+| 2 | 1.0 | ~0.05 |
+| 4 | ~0.6 | ~0.35 |
+| 5 | ~0.35 | 0.5 |
+| 6 | ~0.1 | ~0.75 |
+| 8 | 0.0 | 1.0 |
+| 10 | 0.0 | 1.0 |
+| 12 | 0.0 | 1.0 |
+| 14 | 0.0 | 1.0 |
+</details>
+
+(a)
+
+![](images/page_99_image_19.jpg)
+
+<details>
+<summary>text_image</summary>
+
+HAc
+pKa
+4.756
+Ac⁻
+</details>
+
+(b)
+
+图 3.1.2 HAc 的 (a) δ-pH 图及 (b) 优势区域图
+
+由图3.1.2(a)可知，随着溶液 $\mathrm{pH}$ 升高，$\delta_{1}$ 逐渐减小，而 $\delta_0$ 逐渐增大。当 $\mathrm{pH} = \mathrm{pK_a}$ 时，$\delta_{1} = \delta_{0} = 0.50$ ，HAc和 $\mathrm{Ac^{-}}$ 各占一半；当 $\mathrm{pH} < \mathrm{pK_a}$ 时，HAc是主要存在形态；
+
+![](images/page_100_image_2.jpg)
+
+一元弱酸分布分数拓展
+
+当  $pH > pK_{a}$  时， $Ac^{-}$ 是主要存在形态。更多拓展内容，详见二维码。
+
+优势区域图[图3.1.2(b)]是形态分布图的俯视图，可更直观地表示一元弱酸(碱)溶液中两种形态随溶液 $\mathrm{pH}$ 的分布。
+
+以上结论可以推广至任何一元弱酸(碱)。一元弱酸(碱)的形态分布图形状都相同,只是图中曲线的交点随其 $pK_{a}$ 值大小不同而左右移动。
+
+(2) 多元酸(碱)溶液 以分析浓度为 c 的二元弱酸  $H_{2}A$  为例, 在水溶液中存在三种形态 ( $H_{2}A, HA^{-}$  和  $A^{2-}$ ),
+
+$$
+c = \left[ \mathrm{H} _ {2} \mathrm{A} \right] + \left[ \mathrm{HA} ^ {-} \right] + \left[ \mathrm{A} ^ {2 -} \right]
+$$
+
+代入解离平衡表达式,得
+
+$$
+c = \left[ \mathrm{H} _ {2} \mathrm{A} \right] + \frac {\left[ \mathrm{H} _ {2} \mathrm{A} \right]}{\left[ \mathrm{H} ^ {+} \right]} K _ {a _ {1}} + \frac {\left[ \mathrm{H} _ {2} \mathrm{A} \right]}{\left[ \mathrm{H} ^ {+} \right] ^ {2}} K _ {a _ {1}} K _ {a _ {2}}
+$$
+
+则  $H_{2}A$ 、 $HA^{-}$ 和  $A^{2-}$  的分布分数  $\delta_{2}$ 、 $\delta_{1}$  和  $\delta_{0}$  分别为
+
+$$
+\delta_ {2} = \frac {\left[ \mathrm{H} _ {2} \mathrm{A} \right]}{c} = \frac {\left[ \mathrm{H} _ {2} \mathrm{A} \right]}{\left[ \mathrm{H} _ {2} \mathrm{A} \right] + \frac {\left[ \mathrm{H} _ {2} \mathrm{A} \right]}{\left[ \mathrm{H} ^ {+} \right]} K _ {\mathrm{a} _ {1}} + \frac {\left[ \mathrm{H} _ {2} \mathrm{A} \right]}{\left[ \mathrm{H} ^ {+} \right] ^ {2}} K _ {\mathrm{a} _ {1}} K _ {\mathrm{a} _ {2}}} = \frac {\left[ \mathrm{H} ^ {+} \right] ^ {2}}{\left[ \mathrm{H} ^ {+} \right] ^ {2} + K _ {\mathrm{a} _ {1}} \left[ \mathrm{H} ^ {+} \right] + K _ {\mathrm{a} _ {1}} K _ {\mathrm{a} _ {2}}} \tag {3-1-11}
+$$
+
+$$
+\delta_ {1} = \frac {\left[ \mathrm{HA} ^ {-} \right]}{c} = \frac {K _ {\mathrm{a} _ {1}} \left[ \mathrm{H} ^ {+} \right]}{\left[ \mathrm{H} ^ {+} \right] ^ {2} + K _ {\mathrm{a} _ {1}} \left[ \mathrm{H} ^ {+} \right] + K _ {\mathrm{a} _ {1}} K _ {\mathrm{a} _ {2}}} \tag {3-1-12}
+$$
+
+$$
+\delta_ {0} = \frac {\left[ \mathrm{A} ^ {2 -} \right]}{c} = \frac {K _ {\mathrm{a} _ {1}} K _ {\mathrm{a} _ {2}}}{\left[ \mathrm{H} ^ {+} \right] ^ {2} + K _ {\mathrm{a} _ {1}} \left[ \mathrm{H} ^ {+} \right] + K _ {\mathrm{a} _ {1}} K _ {\mathrm{a} _ {2}}} \tag {3-1-13}
+$$
+
+且有
+
+$$
+\delta_ {2} + \delta_ {1} + \delta_ {0} = 1
+$$
+
+根据如上推导,计算得到的碳酸和酒石酸的  $\delta-pH$  曲线如图 3.1.3 所示。请思考并回答如下问题: i. 碳酸和酒石酸的  $\delta-pH$  曲线存在明显不同,导致两者差异的主要原因是什么? ii. 要形成碳酸盐或酒石酸盐沉淀,应如何选择合适的酸度? iii. 碳酸和酒石酸,哪个满足分步滴定? iv. 碳酸氢根和酒石酸氢根溶液,哪个具有酸碱缓冲作用? v. 在什么条件下, $HA^{-}$ 的分布分数达到最大值? 部分相关讨论详见二维码。
+
+![](images/page_100_image_18.jpg)
+
+碳酸和酒石酸  $\delta$ -pH 曲线相关讨论
+
+![](images/page_100_chart_20.jpg)
+
+<details>
+<summary>line</summary>
+
+| pH | H2CO3 | HCO3- | CO32- |
+| --- | --- | --- | --- |
+| 0 | 1.0 | 0.0 | 0.0 |
+| 2 | 1.0 | 0.0 | 0.0 |
+| 4 | ~0.95 | ~0.05 | 0.0 |
+| 6 | ~0.5 | ~0.5 | 0.0 |
+| 8 | ~0.05 | ~0.95 | ~0.05 |
+| 10 | 0.0 | ~0.5 | ~0.5 |
+| 12 | 0.0 | 0.0 | ~0.95 |
+| 14 | 0.0 | 0.0 | 1.0 |
+</details>
+
+(a)
+
+![](images/page_100_chart_22.jpg)
+
+<details>
+<summary>line</summary>
+
+| pH | H2A | HA- | A2- |
+| --- | --- | --- | --- |
+| 0 | 1.0 | 0.0 | 0.0 |
+| 2 | ~0.85 | ~0.15 | 0.0 |
+| 4 | ~0.15 | ~0.7 | ~0.35 |
+| 6 | 0.0 | ~0.15 | ~0.9 |
+| 8 | 0.0 | 0.0 | 1.0 |
+| 10 | 0.0 | 0.0 | 1.0 |
+| 12 | 0.0 | 0.0 | 1.0 |
+| 14 | 0.0 | 0.0 | 1.0 |
+</details>
+
+(b)
+
+图 3.1.3 (a) 碳酸  $\left(\mathrm{p}K_{\mathrm{a}_{1}}=6.351,\mathrm{p}K_{\mathrm{a}_{2}}=10.329\right)$  和 (b) 酒石酸  $\left(\mathrm{p}K_{\mathrm{a}_{1}}=3.036,\mathrm{p}K_{\mathrm{a}_{2}}=4.366\right)$  的  $\delta-pH$  曲线
+
+对于三元酸  $H_{3}A$ ，在水溶液中存在  $H_{3}A$ 、 $H_{2}A^{-}$ 、 $HA^{2-}$ 、 $A^{3-}$  共 4 种形态，
+
+$$
+c = \left[ \mathrm{H} _ {3} \mathrm{A} \right] + \left[ \mathrm{H} _ {2} \mathrm{A} ^ {-} \right] + \left[ \mathrm{HA} ^ {2 -} \right] + \left[ \mathrm{A} ^ {3 -} \right]
+$$
+
+可以推导得到计算各形态分布分数的公式:
+
+$$
+\delta_ {3} = \delta_ {\mathrm{H} _ {3} \mathrm{A}} = \frac {[ \mathrm{H} _ {3} \mathrm{A} ]}{c} = \frac {[ \mathrm{H} ^ {+} ] ^ {3}}{[ \mathrm{H} ^ {+} ] ^ {3} + K _ {\mathrm{a} _ {1}} [ \mathrm{H} ^ {+} ] ^ {2} + K _ {\mathrm{a} _ {1}} K _ {\mathrm{a} _ {2}} [ \mathrm{H} ^ {+} ] + K _ {\mathrm{a} _ {1}} K _ {\mathrm{a} _ {2}} K _ {\mathrm{a} _ {3}}}
+$$
+
+$$
+\delta_ {2} = \delta_ {\mathrm{H} _ {2} \mathrm{A} ^ {-}} = \frac {\left[ \mathrm{H} _ {2} \mathrm{A} ^ {-} \right]}{c} = \frac {K _ {\mathrm{a} _ {1}} \left[ \mathrm{H} ^ {+} \right] ^ {2}}{\left[ \mathrm{H} ^ {+} \right] ^ {3} + K _ {\mathrm{a} _ {1}} \left[ \mathrm{H} ^ {+} \right] ^ {2} + K _ {\mathrm{a} _ {1}} K _ {\mathrm{a} _ {2}} \left[ \mathrm{H} ^ {+} \right] + K _ {\mathrm{a} _ {1}} K _ {\mathrm{a} _ {2}} K _ {\mathrm{a} _ {3}}}
+$$
+
+$$
+\delta_ {1} = \delta_ {\mathrm{HA} ^ {2 -}} = \frac {\left[ \mathrm{HA} ^ {2 -} \right]}{c} = \frac {K _ {\mathrm{a} _ {1}} K _ {\mathrm{a} _ {2}} \left[ \mathrm{H} ^ {+} \right]}{\left[ \mathrm{H} ^ {+} \right] ^ {3} + K _ {\mathrm{a} _ {1}} \left[ \mathrm{H} ^ {+} \right] ^ {2} + K _ {\mathrm{a} _ {1}} K _ {\mathrm{a} _ {2}} \left[ \mathrm{H} ^ {+} \right] + K _ {\mathrm{a} _ {1}} K _ {\mathrm{a} _ {2}} K _ {\mathrm{a} _ {3}}}
+$$
+
+$$
+\delta_ {0} = \delta_ {\mathrm{A} ^ {3 -}} = \frac {\left[ \mathrm{A} ^ {3 -} \right]}{c} = \frac {K _ {\mathrm{a} _ {1}} K _ {\mathrm{a} _ {2}} K _ {\mathrm{a} _ {3}}}{\left[ \mathrm{H} ^ {+} \right] ^ {3} + K _ {\mathrm{a} _ {1}} \left[ \mathrm{H} ^ {+} \right] ^ {2} + K _ {\mathrm{a} _ {1}} K _ {\mathrm{a} _ {2}} \left[ \mathrm{H} ^ {+} \right] + K _ {\mathrm{a} _ {1}} K _ {\mathrm{a} _ {2}} K _ {\mathrm{a} _ {3}}}
+$$
+
+$$
+\delta_ {3} + \delta_ {2} + \delta_ {1} + \delta_ {0} = 1
+$$
+
+图 3.1.4 给出了磷酸 $\left(\mathrm{H}_{3}\mathrm{PO}_{4}\right)$ 各形态的 $\delta-\mathrm{pH}$ 曲线，以其 3 个 $pK_{a}$ 为界分为 4 个区域，请观察曲线并指出:i. 各形态作为主要存在形态的 pH 范围；ii. 相邻 2 个形态的分布分数相等时对应的 pH；iii. $H_{2}PO_{4}^{-}$ 和 $HPO_{4}^{2-}$ 的分布分数达最大值时对应的 pH；iv. 由此可获得的更多信息。相关讨论详见副栏中二维码。
+
+![](images/page_101_chart_8.jpg)
+
+<details>
+<summary>line</summary>
+
+| pH | H3PO4 | H2PO4- | HPO4^2- | PO4^3- |
+| --- | --- | --- | --- | --- |
+| 0 | 1.0 | 0.0 | 0.0 | 0.0 |
+| 2 | ~0.5 | ~0.5 | 0.0 | 0.0 |
+| 4 | 0.0 | 1.0 | 0.0 | 0.0 |
+| 6 | 0.0 | ~0.5 | ~0.5 | 0.0 |
+| 8 | 0.0 | 0.0 | 1.0 | 0.0 |
+| 10 | 0.0 | 0.0 | ~0.5 | ~0.5 |
+| 12 | 0.0 | 0.0 | 0.0 | ~0.5 |
+| 14 | 0.0 | 0.0 | 0.0 | 1.0 |
+</details>
+
+图 3.1.4  $H_{3}PO_{4}$  的  $\delta-pH$  曲线
+
+![](images/page_101_image_10.jpg)
+
+磷酸  $\delta$ -pH 曲线相关讨论
+
+## 思考:
+
+对于多元弱酸  $H_{n}A$ ，请给出其各形态分布分数的计算公式并总结规律。相关讨论详见二维码。
+
+![](images/page_101_image_14.jpg)
+
+多元酸  $H_{n}A$  各形态分布分数
+
+## 2. 浓度对数图
+
+浓度对数图(concentration logarithmic diagram)表示在分析浓度和离子强度不变的条件下,各形态平衡浓度的对数值随pH的变化情况。酸碱平衡中的浓度对数图绘制过程见二维码,借助计算机软件如Excel、Origin等,可以更方便地绘制。通过浓度对数图,在确定溶液pH的情况下,可以直观地判断溶液中的主要存在形态,也可以反映各形态的浓度水平;在确定溶液浓度(如化学计量点时)的情况下,可以方便地计算pH;还能用于计算终点误差。
+
+## 3.1.2.3 水溶液平衡处理基本方法与酸碱溶液 $H^{+}$ 计算
+
+## 1. 基本平衡式
+
+（1）物料平衡 在一个化学平衡体系中，某一组分的总量等于该组分各种存在形态的量之和，在同一溶液中可以用浓度表示，即该组分的总浓度（即分析浓度 $c$ )等于其各种存在形态的平衡浓度之和，该数学表达式为物料平衡式（mass balance equation,MBE）。
+
+对于强电解质,在水溶液中完全解离,其总浓度由解离出来的各离子的浓度求得。如  $0.1 \, mol \cdot L^{-1} \, HCl$  溶液中  $Cl^{-}$ 的 MBE 为
+
+$$
+[ \mathrm{Cl} ^ {-} ] = 0. 1 \mathrm{mol} \cdot \mathrm{L} ^ {- 1}
+$$
+
+![](images/page_101_image_23.jpg)
+
+浓度对数图
+
+对于弱电解质,在水溶液中解离不完全,其总浓度由各种存在形态的平衡浓度之和求得。如  $0.1 \, mol \cdot L^{-1} \, Na_{3}PO_{4}$  溶液中相关的 MBE 为
+
+$$
+[ \mathrm{Na} ^ {+} ] = 0. 3 \mathrm{mol} \cdot \mathrm{L} ^ {- 1}
+$$
+
+$$
+\left[ \mathrm{H} _ {3} \mathrm{PO} _ {4} \right] + \left[ \mathrm{H} _ {2} \mathrm{PO} _ {4} ^ {-} \right] + \left[ \mathrm{HPO} _ {4} ^ {2 -} \right] + \left[ \mathrm{PO} _ {4} ^ {3 -} \right] = 0. 1 \mathrm{mol} \cdot \mathrm{L} ^ {- 1}
+$$
+
+»例 3.1.3 写出 ${0.01}\mathrm{\;{mol}} \cdot  {\mathrm{L}}^{-1}{\mathrm{{CuCl}}}_{2}$ 和 ${0.1}\mathrm{\;{mol}} \cdot  {\mathrm{L}}^{-1}{\mathrm{{NH}}}_{3}$ 混合溶液的 MBE。
+
+》解:根据酸碱平衡和络合平衡,有
+
+$$
+[ \mathrm{Cl} ^ {-} ] = 2 \times 0. 0 1 \mathrm{mol} \cdot \mathrm{L} ^ {- 1} = 0. 0 2 \mathrm{mol} \cdot \mathrm{L} ^ {- 1}
+$$
+
+$$
+\begin{array}{l} \left[ \mathrm{Cu} ^ {2 +} \right] + \left[ \mathrm{Cu} \left(\mathrm{NH} _ {3}\right) ^ {2 +} \right] + \left[ \mathrm{Cu} \left(\mathrm{NH} _ {3}\right) _ {2} ^ {2 +} \right] + \left[ \mathrm{Cu} \left(\mathrm{NH} _ {3}\right) _ {3} ^ {2 +} \right] + \left[ \mathrm{Cu} \left(\mathrm{NH} _ {3}\right) _ {4} ^ {2 +} \right] = 0. 0 1 \mathrm{mol} \cdot \mathrm{L} ^ {- 1} \\ \begin{array}{l} \left[ \mathrm{NH} _ {3} \right] + \left[ \mathrm{NH} _ {4} ^ {+} \right] + \left[ \mathrm{Cu} \left(\mathrm{NH} _ {3}\right) ^ {2 +} \right] + 2 \left[ \mathrm{Cu} \left(\mathrm{NH} _ {3}\right) _ {2} ^ {2 +} \right] + 3 \left[ \mathrm{Cu} \left(\mathrm{NH} _ {3}\right) _ {3} ^ {2 +} \right] + 4 \left[ \mathrm{Cu} \left(\mathrm{NH} _ {3}\right) _ {4} ^ {2 +} \right] = \\ 0. 1 \mathrm{mol} \cdot \mathrm{L} ^ {- 1} \end{array} \\ \end{array}
+$$
+
+（2）电荷平衡 当反应处于平衡状态时，依据电中性原则，溶液中正电荷数量的总和必须等于负电荷数量的总和，在同一溶液中可用浓度表示，其数学表达式为电荷平衡式(charge balance equation, CBE)。
+
+对于  $0.1 \, mol \cdot L^{-1} \, NaOH$  溶液, CBE 为
+
+$$
+[ \mathrm{Na} ^ {+} ] + [ \mathrm{H} ^ {+} ] = [ \mathrm{OH} ^ {-} ]
+$$
+
+对于  $0.1 \, mol \cdot L^{-1} \, Na_{3}PO_{4}$  溶液, CBE 为
+
+$$
+\left[ \mathrm{Na} ^ {+} \right] + \left[ \mathrm{H} ^ {+} \right] = \left[ \mathrm{OH} ^ {-} \right] + \left[ \mathrm{H} _ {2} \mathrm{PO} _ {4} ^ {-} \right] + 2 \left[ \mathrm{HPO} _ {4} ^ {2 -} \right] + 3 \left[ \mathrm{PO} _ {4} ^ {3 -} \right]
+$$
+
+书写 CBE 时应注意: (i) 中性分子不能出现在 CBE 中; (ii)  $H^{+}$  和  $OH^{-}$  必然出现在 CBE 中; (iii) 多价离子的平衡浓度前应乘以相应的电荷数。
+
+（3）质子条件(或质子平衡)式 酸碱反应的实质是质子的转移。酸碱反应达到平衡时，酸失去质子的数量等于碱得到质子的数量。根据质子得失数和相关组分的浓度列出的表达式为质子条件式(proton condition equation, PCE)或质子平衡式(proton balance equation, PBE)。
+
+得出质子条件式的具体步骤如下:
+
+(i) 选择质子参考水准(reference level),也称为零水准(zero level)。质子参考水准是溶液中参与质子转移的物质,以其为参考,用来衡量溶液中哪些物质是得质子产物,哪些物质是失质子产物。
+（ii）由质子参考水准确定得失质子的产物。得质子产物列于等式左侧，失质子产物列于等式右侧，平衡浓度之前应乘以相应的质子转移数。
+（iii）根据得失质子数和相关组分的浓度列出 PCE。
+
+需注意,质子参考水准不会出现在 PCE 中。
+
+质子条件式也可以由物料平衡式和电荷平衡式联立导出。此略。
+
+»例 3.1.4 写出  $0.1 \, mol \cdot L^{-1} \, Na_{3}PO_{4}$  溶液的 PCE。
+
+》解:质子参考水准为  $H_{2}O$ 、 $PO_{4}^{3-}$ ，则
+
+$H_{2}O$  得质子产物为  $H^{+}$ 、失质子产物为  $OH^{-}$ ;  $PO_{4}^{3-}$  得质子产物为  $HPO_{4}^{2-}$ 、 $H_{2}PO_{4}^{-}$  和  $H_{3}PO_{4}$ 。
+
+$$
+\mathrm{PCE} \text {为} \quad [ \mathrm{H} ^ {+} ] + [ \mathrm{HPO} _ {4} ^ {2 -} ] + 2 [ \mathrm{H} _ {2} \mathrm{PO} _ {4} ^ {-} ] + 3 [ \mathrm{H} _ {3} \mathrm{PO} _ {4} ] = [ \mathrm{OH} ^ {-} ]
+$$
+
+»例 3.1.5 写出含有浓度为  $c_{\mathrm{a}}(\mathrm{mol}\cdot\mathrm{L}^{-1})$  的 HA 和浓度为  $c_{\mathrm{b}}(\mathrm{mol}\cdot\mathrm{L}^{-1})$  的 NaA 混合溶液的质子条件式。
+
+》解:选择  $H_{2}O$  、浓度为  $c_{\mathrm{a}}(\mathrm{mol}\cdot\mathrm{L}^{-1})$  的 HA 和浓度为  $c_{\mathrm{b}}(\mathrm{mol}\cdot\mathrm{L}^{-1})$  的  $A^{-}$  为质子参考水准,体系的 PCE 为
+
+$$
+\left[ \mathrm{HA} \right] _ {2} + \left[ \mathrm{H} ^ {+} \right] = \left[ \mathrm{A} ^ {-} \right] _ {1} + \left[ \mathrm{OH} ^ {-} \right]
+$$
+
+式中下标1和2用于标识失质子产物和得质子产物分别来自浓度为 $c_{\mathrm{a}}(\mathrm{mol}\cdot \mathrm{L}^{-1})$ 的HA和浓度为 $c_{\mathrm{b}}(\mathrm{mol}\cdot \mathrm{L}^{-1})$ 的 $\mathrm{NaA}$ 。两侧同加 $[\mathrm{HA}]_1$ ，则
+
+$$
+\left[ \mathrm{HA} \right] _ {1} + \left[ \mathrm{HA} \right] _ {2} + \left[ \mathrm{H} ^ {+} \right] = \left[ \mathrm{HA} \right] _ {1} + \left[ \mathrm{A} ^ {-} \right] _ {1} + \left[ \mathrm{OH} ^ {-} \right]
+$$
+
+溶液中 $\left[\mathrm{HA}\right] = \left[\mathrm{HA}\right]_{1} + \left[\mathrm{HA}\right]_{2},\quad c_{\mathrm{a}} = \left[\mathrm{HA}\right]_{1} + \left[\mathrm{A}^{-}\right]_{1}$
+
+故，PCE 为
+
+$$
+\left[ \mathrm{HA} \right] + \left[ \mathrm{H} ^ {+} \right] = c _ {\mathrm{a}} + \left[ \mathrm{OH} ^ {-} \right]
+$$
+
+亦可两侧同加 $\left[\mathrm{A}^{-}\right]_{2}$ ，则
+
+$$
+\left[ \mathrm{A} ^ {-} \right] _ {2} + \left[ \mathrm{HA} \right] _ {2} + \left[ \mathrm{H} ^ {+} \right] = \left[ \mathrm{A} ^ {-} \right] _ {2} + \left[ \mathrm{A} ^ {-} \right] _ {1} + \left[ \mathrm{OH} ^ {-} \right]
+$$
+
+溶液中 $\left[\mathrm{A}^{-}\right] = \left[\mathrm{A}^{-}\right]_{2} + \left[\mathrm{A}^{-}\right]_{1},\quad c_{\mathrm{b}} = \left[\mathrm{A}^{-}\right]_{2} + \left[\mathrm{HA}\right]_{2}$
+
+故,PCE 为
+
+$$
+c _ {\mathrm{b}} + \left[ \mathrm{H} ^ {+} \right] = \left[ \mathrm{A} ^ {-} \right] + \left[ \mathrm{OH} ^ {-} \right]
+$$
+
+尽管上述2个PCE看起来不同，但结合物料平衡式 $\left[\mathrm{HA}\right] + \left[\mathrm{A}^{-}\right] = c_{\mathrm{a}} + c_{\mathrm{b}}$ 可知，它们在本质上是相同的，只是同一个PCE的不同表达形式。
+
+## 2. 水溶液平衡处理通用方法
+
+水溶液中,通常多个化学平衡同时存在。可应用平衡常数表达式、物料平衡式和电荷平衡式(酸碱溶液还可以采用质子平衡式),采用通用的思路与方法解决复杂体系中的平衡问题。酸碱平衡处理的具体操作如下:
+
+第一步,明确体系中所有酸碱组分。
+
+第二步,列出 CBE。在酸碱体系中,也可以方便列出 PCE。平衡常数表达式和 MBE 将在下面的分布分数中得到体现,一般不必单独列出。
+
+第三步,将上述等式中酸碱组分的平衡浓度以其分布分数与分析浓度的乘积代入 CBE,获得关于 $\left[H^{*}\right]$ 的方程。
+
+有两种求解 $\left[\mathrm{H}^{+}\right]$ 方程的方法:使用数值方法，借助计算机求解；采用简化方法。实际上，在分析化学中，一般并不要求计算结果十分精确。可以根据溶液的具体条件，分清主次，合理取舍，简化精确计算式。本节中主要介绍简化方法。简化的基本原则就是有两项之间加减时，如果一项的值远小于另一项时，次要项可以被忽略。一般认为实验获得的解离常数大都有百分之几（如 $5\%$ ）的误差。因此，在以下的计算中，当一项小于另一项的 $5\%$ 时，前者可以被忽略。
+
+## 3. 酸碱溶液 $[\mathbf{H}^{+}]$ 计算实例
+
+(1) 强酸(碱)溶液 强酸在水溶液中全部解离, 其质子条件式是(以 HCl 为例)
+
+$$
+\left[ \mathrm{H} ^ {+} \right] = \left[ \mathrm{OH} ^ {-} \right] + c _ {\mathrm{HCl}}
+$$
+
+当盐酸浓度不太低 $(c\geqslant10^{-6}\ \mathrm{mol}\cdot\mathrm{L}^{-1})$ 时,可忽略水的解离,
+
+$$
+\left[ \mathrm{H} ^ {+} \right] = c \tag {3-1-14}
+$$
+
+同理,对于强碱溶液,当  $c \geqslant 10^{-6} \, mol \cdot L^{-1}$  时,可忽略水的解离,
+
+$$
+\left[ \mathrm{OH} ^ {-} \right] = c \tag {3-1-15}
+$$
+
+(2) 一元弱酸(碱)溶液 对于浓度为  $c(\mathrm{mol} \cdot \mathrm{L}^{-1})$  的一元弱酸 HA 溶液, 质子条件式为
+
+$$
+\left[ \mathrm{H} ^ {+} \right] = \left[ \mathrm{A} ^ {-} \right] + \left[ \mathrm{OH} ^ {-} \right]
+$$
+
+利用平衡关系式将上式中各项变成 $\left[H^{+}\right]$ 的函数,即
+
+$$
+\left[ \mathrm{H} ^ {+} \right] = \frac {K _ {\mathrm{a}} \left[ \mathrm{HA} \right]}{\left[ \mathrm{H} ^ {+} \right]} + \frac {K _ {\mathrm{w}}}{\left[ \mathrm{H} ^ {+} \right]}
+$$
+
+则
+
+$$
+\left[ \mathrm{H} ^ {+} \right] = \sqrt {K _ {\mathrm{a}} \left[ \mathrm{HA} \right] + K _ {\mathrm{w}}} \tag {3-1-16}
+$$
+
+将 $\left[HA\right]=c\delta_{HA}=c\frac{\left[H^{+}\right]}{\left[H^{+}\right]+K_{a}}$ 代入上式，得到精确式，为一元三次方程，即
+
+$$
+\left[ \mathrm{H} ^ {+} \right] ^ {3} + K _ {\mathrm{a}} \left[ \mathrm{H} ^ {+} \right] ^ {2} - (K _ {\mathrm{a}} c + K _ {\mathrm{w}}) \left[ \mathrm{H} ^ {+} \right] - K _ {\mathrm{a}} K _ {\mathrm{w}} = 0
+$$
+
+对于极弱或极稀酸,水的解离不可忽略。而当  $K_{a}c>20K_{w}$  时,可忽略水的解离,即略去  $K_{w}$  项,则
+
+$$
+\left[ \mathrm{H} ^ {+} \right] = \sqrt {K _ {\mathrm{a}} \left[ \mathrm{HA} \right]}
+$$
+
+代入 $[HA]=c\delta_{HA}$ ，整理得到一元二次方程:
+
+$$
+\left[ \mathrm{H} ^ {+} \right] ^ {2} + K _ {\mathrm{a}} \left[ \mathrm{H} ^ {+} \right] - c K _ {\mathrm{a}} = 0 \tag {3-1-17}
+$$
+
+解此方程,即得 $\left[H^{+}\right]$ 。
+
+或者,对于一元弱酸,忽略水的解离时, $\left[OH^{-}\right]$ 与 $\left[H^{+}\right]$ 相比可忽略,有
+
+$$
+[ \mathrm{HA} ] = c - [ \mathrm{A} ^ {-} ] = c - ([ \mathrm{H} ^ {+} ] - [ \mathrm{OH} ^ {-} ]) \approx c - [ \mathrm{H} ^ {+} ]
+$$
+
+则
+
+$$
+\left[ \mathrm{H} ^ {+} \right] = \sqrt {K _ {\mathrm{a}} (c - \left[ \mathrm{H} ^ {+} \right])}
+$$
+
+同样得到
+
+$$
+\left[ \mathrm{H} ^ {+} \right] ^ {2} + K _ {\mathrm{a}} \left[ \mathrm{H} ^ {+} \right] - c K _ {\mathrm{a}} = 0
+$$
+
+解得 $\left[H^{+}\right]$ 。
+
+进一步地,当酸的解离度小于5%,即 $\frac{K_{a}}{c}<2.5\times10^{-3}$ 或 $\frac{c}{K_{a}}>400$ 时(见二维码)
+
+$$
+[ \mathrm{HA} ] = c - [ \mathrm{A} ^ {-} ] \approx c
+$$
+
+则得到最简式
+
+$$
+\left[ \mathrm{H} ^ {+} \right] = \sqrt {K _ {\mathrm{a}} c} \tag {3-1-18}
+$$
+
+当 $K_{\mathrm{a}}c < 20K_{\mathrm{w}}$ ，但 $\frac{K_{\mathrm{a}}}{c} < 2.5\times 10^{-3}$ 时，式(3-1-16)变为
+
+$$
+\left[ \mathrm{H} ^ {+} \right] = \sqrt {K _ {\mathrm{a}} c + K _ {\mathrm{w}}} \tag {3-1-19}
+$$
+
+»例 3.1.6 计算  $0.10 \, mol \cdot L^{-1}$  一氯乙酸 ( $CH_{2}ClCOOH, K_{a} = 1.36 \times 10^{-3}$ ) 溶液的 pH。
+
+» 解: $K_{\mathrm{a}}c \gg 20K_{\mathrm{w}}$，忽略水的解离；但 $\frac{K_{\mathrm{a}}}{c} = 1.4 \times 10^{-2} > 2.5 \times 10^{-3}$，[HA] $\neq c$。
+
+故采用近似式(3-1-17)计算,代入数据:
+
+$$
+\left[ \mathrm{H} ^ {+} \right] ^ {2} + 1. 3 6 \times 1 0 ^ {- 3} \left[ \mathrm{H} ^ {+} \right] - 0. 1 0 \times 1. 3 6 \times 1 0 ^ {- 3} = 0
+$$
+
+解之,得
+
+![](images/page_104_image_34.jpg)
+
+忽略弱酸解离条件推导
+
+$$
+[ \mathrm{H} ^ {+} ] = 1. 1 \times 1 0 ^ {- 2} \mathrm{mol} \cdot \mathrm{L} ^ {- 1}
+$$
+
+$$
+\mathrm{pH} = 1. 9 6
+$$
+
+»例 3.1.7 计算  $0.10 \, mol \cdot L^{-1}$  和  $1.0 \times 10^{-4} \, mol \cdot L^{-1}$  HCN ( $K_{a} = 6.2 \times 10^{-10}$ ) 溶液的 pH。
+
+» 解: 当  $c=0.10\ mol\cdot L^{-1}$  时,  $K_{a}c=6.2\times10^{-11}>20K_{w}$ , 且  $\frac{K_{a}}{c}=6.2\times10^{-9}\ll2.5\times10^{-3}$ , 故采用最简式(3-1-18)计算:
+
+$$
+\left[ \mathrm{H} ^ {+} \right] = \sqrt {K _ {\mathrm{a}} c} = \sqrt {0 . 1 \times 6 . 2 \times 1 0 ^ {- 1 0}} = 7. 9 \times 1 0 ^ {- 6} (\mathrm{mol} \cdot \mathrm{L} ^ {- 1})
+$$
+
+$$
+\mathrm{pH} = 5. 10
+$$
+
+当  $c=1.0\times10^{-4}\ mol\cdot L^{-1}$  时， $K_{a}c=6.2\times10^{-14}<20K_{w}$ ，而  $\frac{K_{a}}{c}=6.2\times10^{-6}\ll2.5\times10^{-3}$ ，故采用近似式(3-1-19)计算:
+
+$$
+\left[ \mathrm{H} ^ {+} \right] = \sqrt {K _ {\mathrm{a}} c + K _ {\mathrm{w}}} = \sqrt {7 . 2 \times 1 0 ^ {- 1 4}} = 2. 7 \times 1 0 ^ {- 7} (\mathrm{mol} \cdot \mathrm{L} ^ {- 1})
+$$
+
+$$
+\mathrm{pH} = 6. 5 7
+$$
+
+同理，对于一元弱碱溶液，有 $\left[\mathrm{OH}^{-}\right] = \sqrt{K_{\mathrm{b}}\left[\mathrm{A}^{-}\right] + K_{\mathrm{w}}}$
+
+当 $\frac{K_{b}}{c}<2.5\times10^{-3},K_{b}c>20K_{w}$ 时，用最简式 $\left[OH^{-}\right]=\sqrt{K_{b}c}$ ;
+
+当 $\frac{K_{\mathrm{b}}}{c} < 2.5\times 10^{-3},K_{\mathrm{b}}c <   20K_{\mathrm{w}}$ 时，仅 $[\mathrm{A}^{-}] = c - [\mathrm{HA}]\approx c;$
+
+当 $\frac{K_{b}}{c}>2.5\times10^{-3},K_{b}c>20K_{w}$ 时，仅水的解离可以忽略。
+
+>>例 3.1.8 计算  $0.050 \, mol \cdot L^{-1} \, NaAc$  溶液的 pH。
+
+» 解: 已知 HAc 的  $K_{a}=1.75\times10^{-5}$ ，则  $Ac^{-}$  的
+
+$$
+K _ {\mathrm{b}} = \frac {K _ {\mathrm{w}}}{K _ {\mathrm{a}}} = \frac {1 . 0 \times 1 0 ^ {- 1 4}}{1 . 7 5 \times 1 0 ^ {- 5}} = 5. 7 1 \times 1 0 ^ {- 1 0}
+$$
+
+此时， $K_{b}c=2.9\times10^{-11}>20K_{w}$ ，且 $\frac{K_{b}}{c}\ll2.5\times10^{-3}$ ，故采用最简式计算:
+
+$$
+\left[ \mathrm{OH} ^ {-} \right] = \sqrt {K _ {\mathrm{b}} c} = \sqrt {0 . 0 5 0 \times 5 . 7 1 \times 1 0 ^ {- 1 0}} = 5. 3 \times 1 0 ^ {- 6} (\mathrm{mol} \cdot \mathrm{L} ^ {- 1})
+$$
+
+$$
+\mathrm{pH} = 14.00 - \mathrm{pOH} = 14.00 - 5.28 = 8.72
+$$
+
+## (3) 多元酸(碱)溶液
+
+以二元酸  $H_{2}A$  为例, 其质子条件式是
+
+$$
+\left[ \mathrm{H} ^ {+} \right] = \left[ \mathrm{HA} ^ {-} \right] + 2 \left[ \mathrm{A} ^ {2 -} \right] + \left[ \mathrm{OH} ^ {-} \right]
+$$
+
+溶液为酸性， $[\mathrm{OH}^{-}]$ 可略去，结合有关平衡关系式，得
+
+$$
+\left[ \mathrm{H} ^ {+} \right] = \frac {K _ {\mathrm{a} _ {1}} \left[ \mathrm{H} _ {2} \mathrm{A} \right]}{\left[ \mathrm{H} ^ {+} \right]} + 2 \frac {K _ {\mathrm{a} _ {1}} K _ {\mathrm{a} _ {2}} \left[ \mathrm{H} _ {2} \mathrm{A} \right]}{\left[ \mathrm{H} ^ {+} \right] ^ {2}} = \frac {K _ {\mathrm{a} _ {1}} \left[ \mathrm{H} _ {2} \mathrm{A} \right]}{\left[ \mathrm{H} ^ {+} \right]} \Bigg (1 + \frac {2 K _ {\mathrm{a} _ {2}}}{\left[ \mathrm{H} ^ {+} \right]} \Bigg)
+$$
+
+即
+
+$$
+\left[ \mathrm{H} ^ {+} \right] = \sqrt {K _ {\mathrm{a} _ {1}} \left[ \mathrm{H} _ {2} \mathrm{A} \right] \left(1 + \frac {2 K _ {\mathrm{a} _ {2}}}{\left[ \mathrm{H} ^ {+} \right]}\right)}
+$$
+
+若 $\frac{2K_{\mathrm{a_2}}}{[\mathrm{H}^+]} << 1\left(\text{如}\frac{2K_{\mathrm{a_2}}}{[\mathrm{H}^+]} < 0.05\right)$，可将其略去，即忽略 $\mathrm{H}_2\mathrm{A}$ 的第二步解离，得 $[\mathrm{H}^{+}] = \sqrt{K_{\mathrm{a_1}}[\mathrm{H}_2\mathrm{A}]}$，多元酸便简化为一元酸，以后的处理就与一元弱酸的计算完全相同。一般地，先按一元弱酸进行计算，计算完毕，须检验简化条件是否成立，若不成立，则不可按照一元弱酸处理。
+
+对于多元酸,可类推。
+
+对于二元碱，当 $\frac{2K_{b_{2}}}{[OH^{-}]} \ll 1$ 时，二元碱可按照一元碱处理。对于多元碱，可类推。
+
+»例 3.1.9 计算  $0.040 \, mol \cdot L^{-1} \, H_{2}CO_{3}(CO_{2} 饱和溶液)$  的 pH。已知  $K_{a_{1}} = 4.46 \times 10^{-7}, K_{a_{2}} = 4.69 \times 10^{-11}$ 。
+
+》解: 先按照一元酸计算
+
+$$
+K _ {\mathrm{a} _ {1}} c = 1. 8 \times 1 0 ^ {- 8} \gg 2 0 K _ {\mathrm{w}}, \quad \frac {K _ {\mathrm{a} _ {1}}}{c} = \frac {4 . 4 6 \times 1 0 ^ {- 7}}{0 . 0 4 0} \ll 2. 5 \times 1 0 ^ {- 3}
+$$
+
+采用最简式计算,即
+
+$$
+\left[ \mathrm{H} ^ {+} \right] = \sqrt {K _ {\mathrm{a} _ {1}} c} = \sqrt {0 . 0 4 0 \times 4 . 4 6 \times 1 0 ^ {- 7}} = 1. 3 \times 1 0 ^ {- 4} (\mathrm{mol} \cdot \mathrm{L} ^ {- 1})
+$$
+
+检验计算结果合理性，
+
+$$
+\frac {2 K _ {\mathrm{a} _ {2}}}{[ \mathrm{H} ^ {+} ]} = \frac {2 \times 4 . 6 9 \times 1 0 ^ {- 1 1}}{1 . 3 \times 1 0 ^ {- 4}} \ll 0. 0 5
+$$
+
+故上述计算是合理的。
+
+$$
+\mathrm{pH} = 3. 8 9
+$$
+
+![](images/page_106_image_15.jpg)
+
+迭代法计算酒石酸溶液 pH
+
+对于某些二元酸(碱),如酒石酸,两级解离常数非常接近,当浓度较小时,第二级解离无法忽略,可采用迭代法或借助计算机定量计算该类溶液的 pH(见二维码)。
+
+## (4) 两性物质溶液
+
+两性物质是指在溶液中既能给出质子又能接受质子的物质，包括多元酸的酸式盐（如  $NaHCO_{3}$ 、 $NaH_{2}PO_{4}$ ）、弱酸弱碱盐（如  $NH_{4}Ac$ ）等。对生命体极其重要的氨基酸和蛋白质也属于两性物质。
+
+以二元弱酸的 NaHA 为例, 其浓度为 c, 质子条件式为
+
+$$
+\left[ \mathrm{H} ^ {+} \right] + \left[ \mathrm{H} _ {2} \mathrm{A} \right] = \left[ \mathrm{A} ^ {2 -} \right] + \left[ \mathrm{OH} ^ {-} \right]
+$$
+
+代入平衡关系式:
+
+$$
+\left[ \mathrm{H} ^ {+} \right] + \frac {\left[ \mathrm{H} ^ {+} \right] \left[ \mathrm{HA} ^ {-} \right]}{K _ {\mathrm{a} _ {1}}} = \frac {K _ {\mathrm{a} _ {2}} \left[ \mathrm{HA} ^ {-} \right]}{\left[ \mathrm{H} ^ {+} \right]} + \frac {K _ {\mathrm{w}}}{\left[ \mathrm{H} ^ {+} \right]}
+$$
+
+得到 $\left[H^{+}\right]$ 精确计算式为
+
+$$
+\mathrm {[ H^+] = \sqrt {\frac {K_{a_2} [HA^-] + K_w}{1+ \frac {[HA^-]}{K_{a_1}}}}} \tag {3-1-20}
+$$
+
+该式中 $\left[HA^{-}\right]$ 未知,可以使用数值方法求解。
+
+![](images/page_106_image_27.jpg)
+
+两性物质 HA⁻ 解离可忽略条件推导
+
+当 $K_{\mathrm{a_1}}$ 与 $K_{\mathrm{a_2}}$ 相差较大 $(\Delta \mathrm{p}K_{\mathrm{a}} > 3.2)$ 时， $\delta_{\mathrm{HA^{-}}} > 0.95$ （见二维码），则 $[\mathrm{HA^{-}}] \approx c$
+
+当 $K_{\mathrm{a_2}}c > 20K_{\mathrm{w}}$ 时，可略去 $K_{\mathrm{w}}$ 项，有
+
+$$
+\left[ \mathrm{H} ^ {+} \right] = \sqrt {\frac {K _ {\mathrm{a} _ {2}} c}{1 + \frac {c}{K _ {\mathrm{a} _ {1}}}}} \tag {3-1-21}
+$$
+
+当 $\frac{c}{K_{\mathrm{a_1}}} > 20$ 时，有
+
+$$
+\left[ \mathrm{H} ^ {+} \right] = \sqrt {\frac {K _ {\mathrm{a} _ {2}} c + K _ {\mathrm{w}}}{\frac {c}{K _ {\mathrm{a} _ {1}}}}} \tag {3-1-22}
+$$
+
+当同时满足 $K_{\mathrm{a_2}}c > 20K_{\mathrm{w}}$ 及 $\frac{c}{K_{\mathrm{a_1}}} > 20$ 时，有
+
+$$
+\left[ \mathrm{H} ^ {+} \right] = \sqrt {K _ {\mathrm{a} _ {1}} K _ {\mathrm{a} _ {2}}} \tag {3-1-23}
+$$
+
+其他多元酸的酸式盐，可按同样的方法处理。弱酸(HA)与弱碱( $B^{-}$ )的混合体系(需满足 $K_{a_{HA}}<K_{a_{HR}}$ 的条件)，如计算 $H_{3}BO_{3}$ 和NaAc混合溶液的pH，可按照类似的方法处理。
+
+»例 3.1.10 分别计算  $0.050 \, mol \cdot L^{-1} \, NaH_{2}PO_{4}$  和  $0.033 \, mol \cdot L^{-1} \, Na_{2}HPO_{4}$  溶液的 pH。已知  $K_{a_{1}} = 7.11 \times 10^{-3}, K_{a_{2}} = 6.34 \times 10^{-8}, K_{a_{3}} = 4.22 \times 10^{-13}$ 。
+
+» 解: 对于  $0.050 \, mol \cdot L^{-1} \, NaH_{2}PO_{4}$ ,  $\Delta pK_{a} = pK_{a_{2}} - pK_{a_{1}} = 5.1 > 3.2$ ,  $[H_{2}PO_{4}^{-}] \approx c$ , 则
+
+$$
+K _ {\mathrm{a} _ {2}} c \gg 2 0 K _ {\mathrm{w}}, \quad \frac {c}{K _ {\mathrm{a} _ {1}}} = \frac {0 . 0 5 0}{7 . 1 1 \times 1 0 ^ {- 3}} = 7. 0 <   2 0
+$$
+
+采用近似式(3-1-21)计算
+
+$$
+\left[ \mathrm{H} ^ {+} \right] = \sqrt {\frac {K _ {\mathrm{a} _ {2}} c}{1 + \frac {c}{K _ {\mathrm{a} _ {1}}}}} = \sqrt {\frac {0 . 0 5 0 \times 6 . 3 \times 1 0 ^ {- 8}}{1 + \frac {0 . 0 5 0}{7 . 1 1 \times 1 0 ^ {- 3}}}} = 2. 0 \times 1 0 ^ {- 5} (\mathrm{mol} \cdot \mathrm{L} ^ {- 1})
+$$
+
+$$
+\mathrm{pH} = 4. 70
+$$
+
+对于  $0.033 \, mol \cdot L^{-1} \, Na_{2}HPO_{4}, \Delta pK_{a} = pK_{a_{3}} - pK_{a_{2}} = 5.2 > 3.2, [HPO_{4}^{2-}] \approx c$ ，则
+
+$$
+K _ {\mathrm{a} _ {3}} c = 0. 0 3 3 \times 4. 2 2 \times 1 0 ^ {- 1 3} = 1. 4 \times 1 0 ^ {- 1 4} <   2 0 K _ {\mathrm{w}}, \quad \frac {c}{K _ {\mathrm{a} _ {2}}} = \frac {0 . 0 3 3}{6 . 3 4 \times 1 0 ^ {- 8}} > > 2 0
+$$
+
+故采用近似式(3-1-22)计算,有
+
+$$
+\mathrm {[ H^+] = \sqrt {\frac {K_{a_3} c+ K_w}{\frac {c}{K_{a_2}}}}} = \sqrt {\frac {0.033\times 4.22\times 10^{-13} + 1.0\times 10^{-14}}{\frac {0.033}{6.34\times 10^{-8}}}} = 2.1\times 10^{-10} (\mathrm{mol} \cdot \mathrm{L}^{-1})
+$$
+
+$$
+\mathrm{pH} = 9.68
+$$
+
+氨基酸在水溶液中以双极离子形式存在，是一类典型的两性物质。溶液中，氨基酸所有形态电荷之和为零时的 $\mathrm{pH}$ 称为氨基酸的等电点（$\mathrm{pI}$）。例如，氨基乙酸（即甘氨酸，$\mathrm{NH_2CH_2COOH}$）在水溶液中的解离平衡为
+
+$$
+^ {*} \mathrm{NH} _ {3} \mathrm{CH} _ {2} \mathrm{COOH} \xrightarrow [ K _ {\mathrm{b} _ {2}} ]{- \mathrm{H} ^ {+} , K _ {\mathrm{a} _ {1}}} ^ {*} \mathrm{NH} _ {3} \mathrm{CH} _ {2} \mathrm{COO} ^ {-} \xrightarrow [ K _ {\mathrm{b} _ {1}} ]{- \mathrm{H} ^ {+} , K _ {\mathrm{a} _ {2}}} \mathrm{NH} _ {2} \mathrm{CH} _ {2} \mathrm{COO} ^ {-}
+$$
+
+氨基乙酸阳离子
+
+氨基乙酸双极离子
+
+氨基乙酸阴离子
+
+当 $\left[\mathrm{^{+}NH_{3}CH_{2}COOH}\right] = \left[\mathrm{NH_{2}CH_{2}COO^{-}}\right]$ 时的 $\mathrm{pH}$ 为氨基乙酸的等电点。
+
+»例 3.1.11 计算  $0.010 \, mol \cdot L^{-1}$  氨基乙酸溶液的 pH。已知， $K_{a_{1}} = 4.47 \times 10^{-3}, K_{a_{2}} = 1.67 \times 10^{-10}$ 。
+
+$\gg$ 解: $K_{\mathrm{a_2}}c = 1.67\times 10^{-12} > 20K_\mathrm{w}$ ， $\frac{c}{K_{\mathrm{a_1}}} = \frac{0.010}{4.47\times 10^{-3}} = 2.2 <   20$
+
+采用近似式(3-1-21)计算:
+
+$$
+\left[ \mathrm{H} ^ {+} \right] = \sqrt {\frac {K _ {\mathrm{a} _ {2}} c}{1 + c / K _ {\mathrm{a} _ {1}}}} = \sqrt {\frac {1 . 6 7 \times 1 0 ^ {- 1 0} \times 0 . 0 1 0}{1 + \frac {0 . 0 1 0}{4 . 4 7 \times 1 0 ^ {- 3}}}} = 7. 2 \times 1 0 ^ {- 7} (\mathrm{mol} \cdot \mathrm{L} ^ {- 1})
+$$
+
+$$
+\mathrm{pH} = 6. 1 4
+$$
+
+如果是求算氨基乙酸的等电点，则 $\left[\mathrm{^{+}NH_{3}CH_{2}COOH}\right] = \left[\mathrm{NH_{2}CH_{2}COO^{-}}\right]$，故
+
+$$
+\left[ \mathrm{H} ^ {+} \right] = \sqrt {K _ {\mathrm{a} _ {1}} K _ {\mathrm{a} _ {2}}} = \sqrt {4 . 4 7 \times 1 0 ^ {- 3} \times 1 . 6 7 \times 1 0 ^ {- 1 0}} = 8. 6 \times 1 0 ^ {- 7} (\mathrm{mol} \cdot \mathrm{L} ^ {- 1})
+$$
+
+$$
+\mathrm{pH} = 6. 0 6
+$$
+
+可见氨基乙酸溶液 pH 与其等电点是不同的, 因为其作为酸给出质子的能力和作为碱得到质子的能力不同, 前者大于后者, 为了达到其等电点, 需向氨基乙酸溶液中加入酸。
+
+对于一些更加复杂的弱酸弱碱盐，如 $\left(\mathrm{NH}_{4}\right)_{2}\mathrm{CO}_{3}$ 、 $\left(\mathrm{NH}_{4}\right)_{2}\mathrm{S}$ 、 $NH_{4}H_{2}PO_{4}$ 、 $\left(\mathrm{NH}_{4}\right)_{2}\mathrm{HPO}_{4}$ 、 $\left(\mathrm{NH}_{4}\right)_{3}\mathrm{PO}_{4}$ 等，原则上仍可采用上述方法处理，但计算过程较复杂，通常应结合具体情况适当进行近似处理。
+
+## (5) 混合酸碱溶液
+
+## - 强酸(碱)和弱酸(碱)混合溶液
+
+以强碱 NaOH 和弱碱 A⁻ 混合溶液为例, 其浓度分别为  $c_{NaOH}$  和  $c_{b}$ , 溶液质子条件式为
+
+$$
+\left[ \mathrm{H} ^ {+} \right] + \left[ \mathrm{HA} \right] + c _ {\mathrm{NaOH}} = \left[ \mathrm{OH} ^ {-} \right]
+$$
+
+因为是碱性溶液,可略去 $\left[H^{+}\right]$ ,并引入
+
+$$
+\left[ \mathrm{HA} \right] = \frac {K _ {\mathrm{b}} c _ {\mathrm{b}}}{K _ {\mathrm{b}} + \left[ \mathrm{OH} ^ {-} \right]}
+$$
+
+得到近似式
+
+$$
+\mathrm {[ OH^ {-} ] = c_{NaOH} + \frac {K_ {\mathrm{b}} c_ {\mathrm{b}}}{K_ {\mathrm{b}} + [ OH^ {-} ]}} \tag {3-1-24}
+$$
+
+若 $c_{\mathrm{NaOH}} > 20[\mathrm{HA}]$，得最简式
+
+$$
+\mathrm {[ OH^ {-} ] = c_{NaOH}} \tag {3-1-25}
+$$
+
+实际计算时可先按最简式计算, 即根据 NaOH 浓度计算  $\left[OH^{-}\right]$ , 然后检验  $c_{NaOH}>20\left[HA\right]$  是否成立。
+
+对于强酸与弱酸混合溶液,如 HCl 与 HA 混合溶液,可作类似处理。
+
+»例 3.1.12 向 20.00 mL 0.1000 mol·L $^{-1}$ HAc ( $K_{a}=10^{-4.756}$ ) 溶液中加入 20.02 mL 0.1000 mol·L $^{-1}$ NaOH 溶液（即滴定至化学计量点后 0.1%），计算混合后的溶液 pH。
+
+》解: 混合后, NaOH 和  $Ac^{-}$ 的浓度分别为
+
+$$
+c _ {\mathrm{NaOH}} = \frac {0 . 1 0 0 0 \times 2 0 . 0 2 - 0 . 1 0 0 0 \times 2 0 . 0 0}{2 0 . 0 2 + 2 0 . 0 0} = 5. 0 \times 1 0 ^ {- 5} (\mathrm{mol} \cdot \mathrm{L} ^ {- 1})
+$$
+
+$$
+c _ {A c ^ {-}} = \frac {0 . 1 0 0 0 \times 2 0 . 0 0}{2 0 . 0 2 + 2 0 . 0 0} = 5. 0 \times 1 0 ^ {- 2} (\mathrm{mol} \cdot \mathrm{L} ^ {- 1})
+$$
+
+先按最简式计算, 得  $\left[OH^{-}\right]=5.0\times10^{-5}\ mol\cdot L^{-1}$ 。
+
+再由 $\left[OH^{-}\right]$ 计算 $HAc$ ，即
+
+$$
+\left[ \mathrm{HAc} \right] = \frac {c _ {\mathrm{Ac}} - K _ {\mathrm{b}}}{K _ {\mathrm{b}} + \left[ \mathrm{OH} ^ {-} \right]} = \frac {5 . 0 \times 1 0 ^ {- 2} \times 1 0 ^ {- 9 . 2 4 4}}{1 0 ^ {- 9 . 2 4 4} + 5 . 0 \times 1 0 ^ {- 5}} = 5. 7 \times 1 0 ^ {- 7} (\mathrm{mol} \cdot \mathrm{L} ^ {- 1})
+$$
+
+显然， $c_{NaOH}>20[HAc]$ ，近似合理，故
+
+$$
+\mathrm{pH} = 9.70
+$$
+
+## - 弱酸(碱)混合溶液
+
+以一元弱酸 HA 和 HB 的混合溶液为例, 其浓度分别为  $c_{HA}$  和  $c_{HB}$ , 解离常数分别为  $K_{a,HA}$  和  $K_{a,HB}$ , 其质子条件式为
+
+$$
+\left[ \mathrm{H} ^ {+} \right] = \left[ \mathrm{A} ^ {-} \right] + \left[ \mathrm{B} ^ {-} \right] + \left[ \mathrm{OH} ^ {-} \right]
+$$
+
+因为是酸性溶液,忽略水的解离,则
+
+$$
+\left[ \mathrm{H} ^ {+} \right] = \sqrt {K _ {\mathrm{a,HA}} \left[ \mathrm{HA} \right] + K _ {\mathrm{a,HB}} \left[ \mathrm{HB} \right]}
+$$
+
+若两酸均较弱，即 $\frac{K_{a}}{c}<2.5\times10^{-3}$ ，忽略其解离，则 $[HA]\approx c_{HA}$ 、 $[HB]\approx c_{HB}$ ，有
+
+$$
+\left[ \mathrm{H} ^ {+} \right] = \sqrt {K _ {\mathrm{a,HA}} c _ {\mathrm{HA}} + K _ {\mathrm{a,HB}} c _ {\mathrm{HB}}} \tag {3-1-26}
+$$
+
+若  $K_{a,HA}c_{HA} \gg K_{a,HB}c_{HB}$ ，如  $K_{a,HA}c_{HA} > 20K_{a,HB}c_{HB}$ ，则溶液 pH 由 HA 决定，则
+
+$$
+[ \mathrm{H} ^ {+} ] = \sqrt {K _ {\mathrm{a,HA}} c _ {\mathrm{HA}}} \tag {3-1-27}
+$$
+
+»例 3.1.13 将 20 mL 0.10 mol·L $^{-1}$ NH $_{3}$ ( $K_{b}=10^{-4.75}$ ) 溶液与 30 mL 0.10 mol·L $^{-1}$ HAc( $K_{a}=10^{-4.756}$ ) 溶液混合，计算混合后的溶液 pH。
+
+》解: 混合后, HAc 和  $NH_{4}^{+}$  的浓度分别为
+
+$$
+c _ {\mathrm{HAc}} = \frac {0 . 1 0 \times 3 0 - 0 . 1 0 \times 2 0}{2 0 + 3 0} = 0. 0 2 0 (\mathrm{mol} \cdot \mathrm{L} ^ {- 1})
+$$
+
+$$
+c _ {\mathrm{NH} _ {4} ^ {+}} = \frac {0 . 1 0 \times 2 0}{2 0 + 3 0} = 0. 0 4 0 (\mathrm{mol} \cdot \mathrm{L} ^ {- 1})
+$$
+
+此时， $\frac{K_{a,HAc}}{c_{HAc}}=\frac{10^{-4.756}}{0.020}=8.8\times10^{-4},\frac{K_{a,NH_{4}^{+}}}{c_{NH_{4}^{+}}}=\frac{10^{-9.25}}{0.040}\approx1.4\times10^{-8}$ ，且 $K_{a,HAc}c_{HAc}\gg K_{a,NH_{4}^{+}}c_{NH_{4}^{+}}$ ，按最简式(3-1-27)计算，得
+
+$$
+\left[ \mathrm{H} ^ {+} \right] = \sqrt {K _ {\mathrm{a,HAc}} c _ {\mathrm{HAc}}} = \sqrt {0 . 0 2 0 \times 1 0 ^ {- 4 . 7 5 6}} = 5. 9 \times 1 0 ^ {- 4} (\mathrm{mol} \cdot \mathrm{L} ^ {- 1})
+$$
+
+$$
+\mathrm{pH} = 3.23
+$$
+
+对于弱碱混合溶液,其 $\left[OH^{-}\right]$ 的计算方法与此类似。
+
+## - 弱酸及其共轭碱混合溶液
+
+以一元弱酸 HA 及其共轭碱 NaA 为例, 其分析浓度分别为  $c_{a}$  和  $c_{b}$ , 分别以  $c_{a}$  和  $c_{b}$  表示的质子条件式(详见例 3.1.5)为
+
+$$
+\left[ \mathrm{H} ^ {+} \right] = \left[ \mathrm{OH} ^ {-} \right] + \left[ \mathrm{A} ^ {-} \right] - c _ {\mathrm{b}}
+$$
+
+$$
+\left[ \mathrm{H} ^ {+} \right] + \left[ \mathrm{HA} \right] - c _ {\mathrm{a}} = \left[ \mathrm{OH} ^ {-} \right]
+$$
+
+代入解离常数式,得计算 $\left[H^{+}\right]$ 的精确式:
+
+$$
+\left[ \mathrm{H} ^ {+} \right] = K _ {\mathrm{a}} \frac {[ \mathrm{HA} ]}{[ \mathrm{A} ^ {-} ]} = K _ {\mathrm{a}} \frac {c _ {\mathrm{a}} - [ \mathrm{H} ^ {+} ] + [ \mathrm{OH} ^ {-} ]}{c _ {\mathrm{b}} + [ \mathrm{H} ^ {+} ] - [ \mathrm{OH} ^ {-} ]} \tag {3-1-28}
+$$
+
+实际上,用精确式计算 $\left[H^{+}\right]$ 的情况是极少的。
+
+当溶液为酸性时,略去 $\left[OH^{-}\right]$ 项得
+
+$$
+\left[ \mathrm{H} ^ {+} \right] = \frac {c _ {\mathrm{a}} - \left[ \mathrm{H} ^ {+} \right]}{c _ {\mathrm{b}} + \left[ \mathrm{H} ^ {+} \right]} K _ {\mathrm{a}} \tag {3-1-29}
+$$
+
+当溶液为碱性时,略去 $\left[H^{+}\right]$ 项得
+
+$$
+\mathrm {[ H^+] = \frac {c_a + [OH^-]}{c_b - [OH^-]} K_a} \tag {3-1-30}
+$$
+
+式(3-1-29)和式(3-1-30)展开后是一元二次方程,解此方程可得 $\left[H^{+}\right]$ 。
+
+若  $pK_{a}$  不是太小或太大, 或者弱酸及其共轭碱的分析浓度较大, 即同时满足  $c_{a} \gg [\mathrm{OH}^{-}] - [\mathrm{H}^{+}]$  和  $c_{b} \gg [\mathrm{H}^{+}] - [\mathrm{OH}^{-}]$ , 则得到常用的最简式:
+
+$$
+\left[ \mathrm{H} ^ {+} \right] = \frac {c _ {\mathrm{a}}}{c _ {\mathrm{b}}} K _ {\mathrm{a}}
+$$
+
+或
+
+$$
+\mathrm{pH} = \mathrm{p} K _ {\mathrm{a}} + \lg \frac {c _ {\mathrm{b}}}{c _ {\mathrm{a}}}
+$$
+
+弱酸与其共轭碱体系是常用的 pH 缓冲体系， $c_{a}$  和  $c_{b}$  一般较大且差别不大，如果  $pK_{a}$  在 3\~11 范围，可直接用最简式计算。
+
+对于这类混合溶液,一般先用最简式计算 pH,再将  $c_{a}$  或  $c_{b}$  与  $[H^{+}]$  或  $[OH^{-}]$  进行比较,检查忽略是否合理。如不合理,再用近似式计算。
+
+»例 3.1.14 一溶液由  $0.10 \, mol \cdot L^{-1}$  HCOOH 溶液和  $0.010 \, mol \cdot L^{-1}$  HCOONa 溶液组成，计算该溶液的 pH（已知 HCOOH 的  $pK_{a} = 3.744$ ）。
+
+》解: 先用最简式计算溶液 pH, 有
+
+$$
+\mathrm{pH} = \mathrm{p} K _ {\mathrm{a}} + \lg \frac {c _ {\mathrm{HCOO} ^ {-}}}{c _ {\mathrm{HCOOH}}} = 3. 7 4 4 + \lg \frac {0 . 0 1 0}{0 . 1 0} = 2. 7 4
+$$
+
+此时， $c_{HCOOH}>20[H^{+}]$ ，但 $c_{HCOO^{-}}<20[H^{+}]$ ，忽略不合理，用近似式(3-1-29)计算，
+
+$$
+\left[ \mathrm{H} ^ {+} \right] = K _ {\mathrm{a}} \frac {c _ {\mathrm{HCOOH}}}{c _ {\mathrm{HCOO} ^ {-}} + \left[ \mathrm{H} ^ {+} \right]} = 1 0 ^ {- 3. 7 4 4} \times \frac {0 . 1 0}{0 . 0 1 0 + \left[ \mathrm{H} ^ {+} \right]}
+$$
+
+解此一元二次方程,得
+
+$$
+[ \mathrm{H} ^ {+} ] = 1. 6 \times 1 0 ^ {- 3} \mathrm{mol} \cdot \mathrm{L} ^ {- 1}
+$$
+
+$$
+\mathrm{pH} = 2. 8 0
+$$
+
+»例 3.1.15 将  $100 \, mL \, 0.20 \, mol \cdot L^{-1} \, HAc$  溶液、 $40 \, mL \, 0.20 \, mol \cdot L^{-1} \, NaOH$  溶液和  $10 \, mL \, 1.5 \times 10^{-4} \, mol \cdot L^{-1} \, Na_{2}S$  溶液相混合，计算此混合溶液中的  $[S^{2-}]$ 。
+
+》解: 混合后, HAc、Ac $^{-}$ 及 S $^{2-}$ 的浓度分别为
+
+$$
+c _ {\mathrm{HAc}} = \frac {0 . 2 0 \times 1 0 0 - 0 . 2 0 \times 4 0}{1 0 0 + 4 0 + 1 0} = 0. 0 8 (\mathrm{mol} \cdot \mathrm{L} ^ {- 1})
+$$
+
+$$
+c _ {A c ^ {-}} = \frac {0 . 2 0 \times 4 0}{1 0 0 + 4 0 + 1 0} = 0. 0 5 3 (\mathrm{mol} \cdot \mathrm{L} ^ {- 1})
+$$
+
+$$
+c _ {\mathrm{S} ^ {2 -}} = \frac {1 0 \times 1 . 5 \times 1 0 ^ {- 4}}{1 0 0 + 4 0 + 1 0} = 1. 0 \times 1 0 ^ {- 5} (\mathrm{mol} \cdot \mathrm{L} ^ {- 1})
+$$
+
+要计算此混合溶液中的 $\left[S^{2-}\right]$ ，需首先计算pH。
+
+由于  $Na_{2}S$  浓度太小, 溶液的 pH 由 HAc-Ac $^{-}$ 体系决定。
+
+对于 HAc 与 Ac $^{-}$ 混合溶液, 先用最简式计算溶液 pH, 有
+
+$$
+\mathrm{pH} = \mathrm{p} K _ {\mathrm{a}} + \lg \frac {c _ {\mathrm{Ac} ^ {-}}}{c _ {\mathrm{HAe}}} = 4. 7 5 6 + \lg \frac {0 . 0 5 3}{0 . 0 8} = 4. 5 8
+$$
+
+经检验， $c_{\mathrm{HAc}} \gg [\mathrm{H}^{+}], c_{\mathrm{Ac^{-}}} \gg [\mathrm{H}^{+}]$，因此，近似合理。
+
+代入 $\left[S^{2-}\right]=c_{S^{2-}}\delta_{S^{2-}}$ ，求得 $\left[S^{2-}\right]$ :
+
+$$
+\begin{array}{l} \left[ \mathrm{S} ^ {2 -} \right] = c _ {\mathrm{S} ^ {2 -}} \frac {K _ {\mathrm{a} _ {1}} K _ {\mathrm{a} _ {2}}}{\left[ \mathrm{H} ^ {+} \right] ^ {2} + K _ {\mathrm{a} _ {1}} \left[ \mathrm{H} ^ {+} \right] + K _ {\mathrm{a} _ {1}} K _ {\mathrm{a} _ {2}}} \\ = 1. 0 \times 1 0 ^ {- 5} \times \frac {1 0 ^ {- 7 . 0 2} \times 1 0 ^ {- 1 4 . 0}}{\left(1 0 ^ {- 4 . 5 8}\right) ^ {2} + 1 0 ^ {- 4 . 5 8} \times 1 0 ^ {- 7 . 0 2} + 1 0 ^ {- 7 . 0 2} \times 1 0 ^ {- 1 4 . 0}} \\ = 1. 4 \times 1 0 ^ {- 1 7} (\mathrm{mol} \cdot \mathrm{L} ^ {- 1}) \\ \end{array}
+$$
+
+## 3.1.2.4 酸碱缓冲溶液
+
+## 1. 酸碱缓冲溶液的定义
+
+缓冲溶液是一类对溶液的酸度有稳定作用的溶液。在缓冲溶液中加入少量的酸或碱，或将溶液稍加稀释，溶液的 pH 不会发生显著的变化。
+
+常用的缓冲溶液包括弱酸及其共轭碱（如 $\mathrm{HAc - Ac^{-}}$ ）或弱碱及其共轭酸（如$\mathrm{NH_3 - NH_4^+}$ ）、高浓度的强酸（如HCl)或强碱(如NaOH)等溶液。高浓度强酸、强碱溶液中 $\mathrm{H^{+}}$ 或 $\mathrm{OH^{-}}$ 的浓度较大，增加少量的酸或碱不会对溶液的 $\mathrm{pH}$ 产生大的影响，所以可以作缓冲溶液。
+
+## 2. 缓冲容量与缓冲范围
+
+缓冲溶液的缓冲能力用缓冲容量来定量衡量。缓冲容量的定义为:使1 L缓冲溶液的pH增加dpH单位所需强碱的量 $\mathrm{db}(\mathrm{mol})$ ，或者使1 L缓冲溶液的pH降低dpH单位所需强酸的量 $\mathrm{da}(\mathrm{mol})$ ，其数学表达式为
+
+$$
+\beta = \frac {\mathrm{d} b}{\mathrm{dpH}} \quad \text {或} \quad \beta = - \frac {\mathrm{d} a}{\mathrm{dpH}}
+$$
+
+对于总浓度为 c 的 HA-NaA 缓冲溶液, 计算其缓冲容量的精确式为(推导过程详见二维码)
+
+$$
+\beta = 2. 3 [ \mathrm{H} ^ {+} ] + 2. 3 [ \mathrm{OH} ^ {-} ] + \frac {2 . 3 c K _ {\mathrm{a}} [ \mathrm{H} ^ {+} ]}{([ \mathrm{H} ^ {+} ] + K _ {\mathrm{a}}) ^ {2}} \tag {3-1-31}
+$$
+
+当弱酸 HA 不太强也不太弱时, 可以忽略式(3-1-31)中的  $\left[H^{+}\right]$  和  $\left[OH^{-}\right]$ , 得到近似式:
+
+$$
+\beta = 2. 3 \frac {c K _ {\mathrm{a}} [ \mathrm{H} ^ {+} ]}{([ \mathrm{H} ^ {+} ] + K _ {\mathrm{a}}) ^ {2}} = 2. 3 c \delta_ {\mathrm{HA}} \delta_ {\mathrm{A} ^ {-}} \tag {3-1-32}
+$$
+
+对于强酸溶液, $\beta=2.3\left[H^{+}\right]$ ;对于强碱溶液, $\beta=2.3\left[OH^{-}\right]$ 。
+
+请自行绘制  $0.1 \, mol \cdot L^{-1} \, HAc-NaAc$  溶液的  $\beta-pH$  曲线，结合其分布分数曲线，思考如下问题:(i) 影响缓冲容量的因素有哪些？(ii) 对于共轭酸碱对 HA-A 缓冲溶液，什么时候缓冲容量最大？缓冲容量极大值是多少？有效缓冲 pH 范围是多少？(iii) 在实际工作中，如何选择合适的缓冲溶液？相关讨论，详见二维码。
+
+![](images/page_111_image_23.jpg)
+
+缓冲容量推导
+
+![](images/page_111_image_25.jpg)
+
+缓冲溶液选择原则
