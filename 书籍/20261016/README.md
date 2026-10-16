@@ -6,7 +6,7 @@
 
 识别结果保留原件供核对，未宣称 OCR 和公式经过逐字人工校对。
 
-完成 19/29 本；[逐书 ZIP Release](https://github.com/kazewwk/test/releases/tag/mineru-advanced-textbooks-2026-10-16)。
+完成 20/29 本；[逐书 ZIP Release](https://github.com/kazewwk/test/releases/tag/mineru-advanced-textbooks-2026-10-16)。
 
 | 教材 | 页数 | 状态 |
 | --- | ---: | --- |
@@ -26,7 +26,7 @@
 | [分子克隆实验指南（原书第四版）（套装上中下册）（上册）_](14_molecular-cloning-4e-zh-vol1/) | 528 | 已完成 |
 | [分子克隆实验指南（原书第四版）（套装上中下册）（下册）_](15_molecular-cloning-4e-zh-vol3/) | 512 | 已完成 |
 | 分子克隆实验指南（原书第四版）（套装上中下册）（中册）_ | 613 | 待完成 |
-| 分子细胞生物学 (陈晔光，张传茂，陈佺主编, 主编陈晔_ | 561 | 待完成 |
+| [分子细胞生物学 (陈晔光，张传茂，陈佺主编, 主编陈晔_](17_molecular-cell-biology-chen/) | 561 | 已完成 |
 | 分析化学(“101计划”核心教材·化学领域) (蒋健晖_ | 683 | 待完成 |
 | [合成生物学 (刘建忠)](19_synthetic-biology-liu/) | 268 | 已完成 |
 | [基因工程 第4版 (Pdg2Pic, 张惠展编著)](20_genetic-engineering-4e/) | 566 | 已完成 |
