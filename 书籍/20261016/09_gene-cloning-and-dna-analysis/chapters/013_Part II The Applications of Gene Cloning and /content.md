@@ -1,0 +1,562 @@
+# Part II The Applications of Gene Cloning and DNA Analysis in Research / Chapter 13 Studying Transcriptomes and Proteomes
+
+原始 PDF 第 277–294 页。
+
+## Chapter 13
+
+# Studying Transcriptomes and Proteomes
+
+## Chapter contents
+
+## CHAPTER CONTENTS
+
+**13.1** Studying transcriptomes 259
+**13.2** Studying proteomes 265
+
+In Chapter 12 we considered those post‐genomics methods that are used to annotate a genome sequence by locating the genes that it contains and  assigning functions to those genes. Now we will look at the ways in which the expression products of the genome – the transcriptome and proteome – are studied.
+
+## 13.1 Studying transcriptomes
+
+Transcriptomes can have highly complex compositions, containing hundreds or thousands of different RNAs, each making up a different fraction of the overall population. To characterize a transcriptome, it is therefore necessary to identify the RNAs that it contains and, ideally, to determine their relative abundances.
+
+Gene Cloning and DNA Analysis: An Introduction, Eighth Edition. T. A. Brown.
+
+© 2021 John Wiley & Sons Ltd. Published 2021 by John Wiley & Sons Ltd.
+
+259
+
+---
+
+260
+
+Part II The Applications of Gene Cloning and DNA Analysis in Research
+
+## 13.1.1 Studying transcriptomes by microarray or chip analysis
+
+Techniques that enable accurate comparisons to be made between the amounts of individual mRNAs in a transcriptome were first developed as part of the yeast post‐genomics project. In essence, these techniques involve a sophisticated type of hybridization analysis. Every yeast gene – all 6000 of them – was obtained as an individual clone and samples spotted onto glass slides in arrays of $8 0 \times 8 0$ spots. This is called a microarray. To determine which genes are active in yeast cells grown under particular conditions, mRNA was extracted from the cells, converted to cDNA, and the cDNA labelled and hybridized to the microarrays (Figure 13.1). Fluorescent labels were used, and hybridization was detected by examining the microarrays by confocal microscopy. Those spots that gave a signal indicated genes that were active under the conditions being studied, and the intensities of the hybridization signals revealed the relative amounts of the mRNAs in the transcriptome. Changes in gene expression, when the yeast were transferred to different growth conditions (e.g. oxygen starvation), could be monitored by repeating the experiment with a second cDNA preparation.
+
+Modern microarrays differ from the original design in two ways. First, rather than using DNA clones as the hybridization targets, microarrays are nowadays prepared with immobilized oligonucleotides whose sequences match those of the genes being studied. Second, rather than making each oligonucleotide separately and then spotting them individually onto the slide, the oligonucleotides are synthesized directly on the slide surface. This requires a modified type of oligonucleotide synthesis. In the normal synthesis method, the sequence of the oligonucleotide is determined by the order in which the nucleotides are added to the reaction mixture (see Figure 8.15). This means that every oligonucleotide has the same sequence, whereas in a microarray the oligonucleotides must obviously have different sequences. To enable different oligonucleotides to be synthesized in parallel, nucleotide substrates that have to be light‐activated before they will attach to the end of a growing oligonucleotide are used. The nucleotides
+
+![](../../raw/pages_0273-0288/images/page_277_image_5.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["Microarray"] --> B["Hybridize with cDNA samples"]
+  B --> C["Hybridization detected by confocal microscopy"]
+  C --> D["Hybridization signals"]
+```
+</details>
+
+Figure 13.1
+
+Microarray analysis. The microarray shown here has been hybridized to two different cDNA preparations, each labelled with a fluorescent marker. The clones which hybridize with the cDNAs are identified by confocal microscopy.
+
+---
+
+Chapter 13 Studying Transcriptomes and Proteomes
+
+261
+
+![](../../raw/pages_0273-0288/images/page_278_image_2.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["Initial State: T, A, G, C, I"] --> B["Addition Only to Activated Oligonucleotides"]
+  B --> C["Light Stimulus: A + G"]
+```
+</details>
+
+Figure 13.2
+
+Photolithography.
+
+are added one after another to the surface of the slide, and **photolithography** used to direct pulses of light onto individual positions in the array. Only the oligonucleotides that are light‐activated will be extended by the nucleotide that is present at any particular step (Figure 13.2). This method enables microarrays with up to 300 000 oligonucleotides per square centimetre to be prepared, each one with a different sequence. These high‐density arrays are called **DNA chips** and are often prepared on a silica rather than a glass support.
+
+As well as identifying the presence of particular transcripts in a transcriptome, microarray analysis can also provide quantitative information on the relative amounts of each RNA. The expression levels of individual genes in the cells from which the transcriptome has been obtained can therefore be assessed. Quantification is carried out simply by measuring the amount of fluorescence emitted at each position on the microarray. However, it is very difficult to achieve a high degree of reproducibility between two different microarray experiments, because factors such as the efficiency of cDNA labelling and the effectiveness of the hybridization step cannot be controlled with precision. To counter this problem, when two transcriptomes are being compared the microarrays must include one or more positive controls that should give identical signals in both transcriptomes. For vertebrate transcriptomes, the actin gene is often used as a positive control, as its expression level tends to be fairly constant in a particular tissue, regardless of the developmental stage or disease state. The amount of signal obtained from the actin gene can therefore be used to calibrate the two microarrays and hence make adjustments for experimental variations.
+
+Alternatively, two transcriptomes can be directly compared in a single analysis. This is carried out by labelling the two cDNA preparations with different fluorescent probes and then scanning the array at the appropriate wavelengths to determine the relative intensities of the two fluorescent signals at each position. From the relative intensities, the differences between the RNA contents of the two transcriptomes can be measured.
+
+## 13.1.2 Studying transcriptomes by RNA sequencing
+
+The most direct way to characterize a transcriptome would be to sequence the RNA molecules that it contains, and then to use the sequence data to search the genome annotation for the genes from which the RNAs have
+
+---
+
+262
+
+Part II The Applications of Gene Cloning and DNA Analysis in Research
+
+been transcribed. This might appear to be a straightforward approach to transcriptome analysis, but in practice a number of issues have to be dealt with in order for it to be successful.
+
+## Sequencing a transcriptome by RNA‐seq
+
+Next‐generation sequencing can easily be adapted for sequencing RNA as well as DNA. All that is necessary in order to carry out **RNA‐seq** is to convert the RNA into cDNA prior to preparation of the sequencing library. However, if the entire transcriptome is sequenced in this way, then the sequence reads will be dominated by ribosomal RNA and other noncoding RNA sequences, which make up the major component of the transcriptomes of most cells and tissues. The mRNA content, comprising the transcripts of protein‐coding genes, is rarely more than 5% of the total RNA. If the entire transcriptome is sequenced, then a huge amount of computational work will be needed to filter out the noncoding RNA sequences, and some of the less‐abundant mRNAs might not be sequenced at all.
+
+It is therefore necessary to separate a transcriptome into its individual components before attempting to study any one of those components by RNA‐seq. For example, an initial fractionation step can be carried out to purify the mRNA component of the transcriptome. The RNA extract is mixed with magnetic beads coated with oligo(dT), to which the mRNAs hybridize via their poly(A) tails (Figure 13.3). Very few noncoding RNAs have a poly(A) tail, so this capture method is very specific for mRNA. After purification, the mRNAs are released from the beads and mixed with short oligonucleotides of random sequences, some of which will anneal at various positions on the RNA, priming synthesis of the first cDNA strand by reverse transcriptase. The RNA is partially degraded with RNase H and the second cDNA strand synthesized as in the standard method for preparing cDNA (see Figure 8.7). Once double‐stranded cDNA has been made, library preparation can proceed exactly as for DNA sequencing (Section  10.2.1). Modified versions of the initial fractionation step can direct the sequencing at other RNA types; for example, the small regulatory microRNAs can be sequenced after size fractionation of the RNA sample so that only transcripts with lengths between 17 and 25 nucleotides are retained.
+
+As is the case when DNA is sequenced by a next‐generation method, RNA‐seq yields many millions of individual RNA sequences. Each of these reads represents a segment of one of the transcripts in the fractionated transcriptome sample. The reads can be mapped directly onto a genome sequence, where they will form clusters revealing the genes that were being transcribed in the tissue from which the RNA sample was obtained (Figure  13.4a). Alternatively, the sequence reads can be assembled into
+
+## Figure 13.3
+
+Capture of mRNA with oligo(dT)‐coated magnetic beads.
+
+![](../../raw/pages_0273-0288/images/page_279_image_9.jpg)
+
+<details>
+<summary>text_image</summary>
+
+Oligo (dT)
+mRNA
+Magnetic bead
+Poly(A) tail
+</details>
+
+---
+
+Chapter 13 Studying Transcriptomes and Proteomes
+
+263
+
+(a) Map RNA-seq reads directly onto the genome sequence
+
+![](../../raw/pages_0273-0288/images/page_280_image_3.jpg)
+
+<details>
+<summary>text_image</summary>
+
+RNA-seq reads
+Genome sequence
+Transcribed regions
+</details>
+
+(b) Construct contigs and map these onto the genome sequence
+
+![](../../raw/pages_0273-0288/images/page_280_image_5.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["Transcribed regions"] --> B["Genome sequence"]
+  B --> C["Contigs"]
+```
+</details>
+
+Figure 13.4
+
+Two approaches to mapping RNA‐seq reads onto a genome sequence. (a) Direct mapping of reads onto the genome sequence. (b) Initial assembly of RNA‐seq contigs, followed by mapping of the contigs onto the genome.
+
+contigs, by finding overlaps between pairs of reads, and the assembled contigs then mapped on to the genome sequence (Figure  13.4b). The advantage with the latter approach is that many genes are members of multigene families, the members of which display sequence similarity. If short reads are mapped directly onto the genome sequence, it might not be possible to distinguish to which member of a multigene family a particular read belongs. This problem can be avoided if contigs are built up prior to mapping onto the genome, because the contigs, being longer sequences, are more likely to include the variations that distinguish between multigene family members.
+
+If the assignment of reads to genes is performed accurately, then the numbers of reads that are obtained for each gene will be proportional to the relative amounts of the transcripts in the transcriptome. RNA‐seq, like microarray analysis, can therefore provide quantitative as well as qualitative information on the transcriptome.
+
+## Studying a transcriptome by SAGE
+
+Even if the transcriptome is fractionated prior to sequencing, the mapping of RNA‐seq data onto a genome sequence, either by direct mapping of reads of after construction of contigs, is computationally intensive. Can any shortcuts be used to obtain the vital sequence information more quickly?
+
+**Serial analysis of gene expression (SAGE)** was the first method developed for the rapid identification of the mRNAs in a transcriptome. SAGE yields short sequences, as little as 12 bp in length, each of which represents a single mRNA. The basis of the technique is that these 12 bp sequences, despite their shortness, are sufficient in many cases to enable the gene that codes for the mRNA to be identified.
+
+The first step in generating the 12 bp sequences is to immobilize the mRNA in a chromatography column by annealing the poly(A) tails to oligo(dT) strands that have been attached to cellulose beads (Figure 13.5).
+
+---
+
+264
+
+Part II The Applications of Gene Cloning and DNA Analysis in Research
+
+Figure 13.5
+
+Serial analysis of gene expression (SAGE).
+
+![](../../raw/pages_0273-0288/images/page_281_image_4.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["Oligo (dT) strand"] -->|3' T T T T Cellulose bead| B["Add RNA"]
+  B --> C["mRNA"]
+  C --> D["Convert to double-stranded cDNA"]
+  D --> E["cDNA"]
+  E --> F["Digest with AluI"]
+  F --> G["Ligate linker containing BsmF1 sequence"]
+  G --> H["Digest with BsmF1"]
+  H --> I["Collect, ligate to other fragments, sequence"]
+  J["Discard the end fragment"] -.-> K["Feedback"]
+```
+</details>
+
+The mRNA is converted into double‐stranded cDNA and then treated with a restriction enzyme that recognizes a 4 bp target site, such as AluI, and so cuts frequently in each cDNA. The terminal restriction fragment of each cDNA remains attached to the cellulose beads, enabling all the other fragments to be eluted and discarded. A short linker is now attached to the free end of each of the terminal cDNA fragments, this linker containing a recognition sequence for BsmFI. This is an unusual restriction enzyme because rather than cutting within its recognition sequence, it cuts 10–14 nucleotides downstream. Treatment with BsmFI therefore removes a fragment with an average length of 12 bp from the end of each cDNA. The fragments are collected, ligated head‐to‐tail to produce a concatemer, and sequenced. In the original method, the concatemers were cloned and sequenced by the chain‐termination method, but they can also be sequenced by a nextgeneration approach. The individual mRNA sequences can be  identified within each concatemer, because they are separated by BsmFI sites.
+
+## CAGE follows a similar principle to SAGE but is more suited for RNA‐seq
+
+SAGE was originally developed in the 1990s as a means of studying the RNA content of a tissue by chain‐termination sequencing. The concatemers that are produced by SAGE can easily be sequenced by a next‐generation method, but the need to deconstruct the resulting reads to give the sequences of the individual BsmFI fragments that were ligated together introduces an
+
+---
+
+Chapter 13 Studying Transcriptomes and Proteomes
+
+265
+
+additional computation burden. A second problem is that these fragments represent internal regions of a transcript, close to but a variable distance away from the start of the poly(A) tail. Mapping the fragments onto the genome sequence will identify the genes that are active in a tissue but provides no other information on the transcripts.
+
+**Cap analysis gene expression (CAGE)** is an alternative method, related to SAGE, but less computationally intense, and with the added advantage that it enables the precise start point of the transcript to be located on the genome sequence. In Section 11.1, we studied the various methods that can be used to identify the start points for individual transcripts on a genome sequence, so why would we wish to obtain similar information when a transcriptome is being studied? The answer is that many genes have alternative transcription starts sites, each of these sites under a different regulatory regime. The human dystrophin gene, for example, which has been extensively studied because defects in it give rise to Duchenne muscular dystrophy, has seven alternative transcription start sites, each of which is used in a different tissue. The complete characterization of a transcriptome should therefore include not only information on the identities of the genes contributing to the transcriptome, but additionally an understanding of which transcription starts sites are being used in the tissue being studied.
+
+The CAGE technique makes use of the **cap structure**, which is present at the $S ^ { \prime }$ end of every mRNA. The cap includes a modified nucleotide, 7‐ methylguanosine, that is attached to the mRNA, after transcription, by formation of an unusual $5 ^ { \prime } { - } 5 ^ { \prime }$ phosphodiester bond (remember that in the rest of the mRNA the links are $5 ^ { \prime } { - } 3 ^ { \prime }$ phosphodiester bonds). The unusual $5 ^ { \prime } { - } 5 ^ { \prime }$ bond forms a chemical structure called a diol, which enables the mRNA to be end‐labelled with biotin. As with SAGE, the first step of a CAGE experiment is to fractionate the transcriptome so that the mRNA component is purified, in the case of CAGE by binding the cap structure, via its biotin label, to a magnetic bead coated with avidin, the egg‐white protein that has a high affinity for biotin (Figure 13.6). The mRNA is converted to cDNA, and a short oligonucleotide containing an EcoP151 restriction site attached to the start of the molecule. Like BsmF1, the EcoP151 enzyme cuts downstream of its recognition sequence, but in this case 27 bp downstream, yielding a fragment that can be sequenced by a next‐generation method without prior ligation into a concatemer. The key point is that one end of each sequence read corresponds precisely to the 5′‐end of the mRNA, enabling identification of the transcription start sites that were active in the tissue from which the transcriptome was obtained.
+
+## 13.2 Studying proteomes
+
+The proteome is the entire collection of proteins in a cell. Proteome studies (also called **proteomics**) provide additional information that is not obtainable simply by examining the transcriptome. Examination of the transcriptome gives an accurate indication of which genes are active in a particular cell but gives a less accurate indication of the proteins that are present. This is because the factors that influence protein content include not only the
+
+---
+
+266
+
+Part II The Applications of Gene Cloning and DNA Analysis in Research
+
+Figure 13.6
+
+Cap analysis gene expression (CAGE).
+
+![](../../raw/pages_0273-0288/images/page_283_image_4.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["mRNA"] -->|5' label with biotin| B["Biotin"]
+  B -->|Capture with avidin-coated beads| C["First-strand cDNA synthesis"]
+  C --> D["Degrade RNA strand"]
+  D --> E["Ligate EcoP151 oligonucleotide"]
+  E --> F["Second-strand cDNA synthesis"]
+  F --> G["Restrict with EcoP151"]
+  G --> H["Collect and sequence 27 bp fragments"]
+```
+</details>
+
+amount of each mRNA that is available, but also the rate at which an mRNA is translated into protein and the rate at which the protein is degraded.
+
+The method used to identify the constituents of a proteome is called **protein profiling** or **expression proteomics**. This is a two‐step process:
+
+1 First, the proteins in the proteome are separated from one another.
+2 Next, the individual proteins are identified, usually by **mass spectrometry**.
+
+## 13.2.1 Protein profiling
+
+In order to characterize a proteome, it is first necessary to prepare pure samples of its constituent proteins. A mammalian cell may contain 10 000–20 000 different proteins, so a highly discriminating separation system is needed.
+
+---
+
+Chapter 13 Studying Transcriptomes and Proteomes
+
+267
+
+![](../../raw/pages_0273-0288/images/page_284_image_2.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["Load the protein sample"] --> B["First electro-phoresis"]
+  B --> C["Rotate"]
+  C --> D["Second electro-phoresis"]
+```
+</details>
+
+Figure 13.7
+
+Two‐dimensional gel electrophoresis.
+
+## Separating the proteins in a proteome by polyacrylamide gel electrophoresis
+
+**Protein electrophoresis**, in a polyacrylamide gel, is the standard method for separating the proteins in a mixture. Depending on the composition of the gel and the conditions under which the electrophoresis is carried out, different chemical and physical properties of proteins can be used as the basis for their separation. The most popular technique makes use of the detergent called sodium dodecyl sulphate, which denatures proteins and confers a negative charge that is roughly equivalent to the length of the unfolded polypeptide. Under these conditions, the proteins separate according to their molecular masses, the smallest proteins migrating more quickly toward the positive electrode. Alternatively, proteins can be separated by **isoelectric focusing** in a gel that contains chemicals which establish a pH gradient when the electrical charge is applied. In this type of gel, a protein migrates to its **isoelectric point**, the position in the gradient where its net charge is zero.
+
+In protein profiling, these methods are combined in **two‐dimensional gel electrophoresis**. In the first dimension, the proteins are separated by isoelectric focusing. The gel is then soaked in sodium dodecyl sulphate, rotated by 90°, and a second electrophoresis, separating the proteins according to their sizes, is carried out at right angles to the first (Figure  13.7). This approach can separate several thousand proteins in a single gel. After electrophoresis, staining the gel reveals a complex pattern of spots, each one containing a different protein. When two gels are compared, differences in the pattern and intensities of the spots indicate differences in the identities and relative amounts of individual proteins in the two proteomes that are being studied. Interesting spots can therefore be targeted for the second stage of profiling during which actual protein identities are determined.
+
+## Separating proteins by column chromatography
+
+Two‐dimensional gel electrophoresis is the most powerful method for separating large numbers of proteins from a complex proteome, but cutting thousands of protein spots out of the gel is clearly a laborious business. Gel electrophoresis is therefore used when one or a few interesting proteins are being studied, such as those that are present at different amounts in different proteomes. If the aim of the profiling project is to identify as many of the proteins as possible in a proteome, then a different separation method is needed.
+
+Column chromatography provides an alternative. Proteins can be separated on the basis of their electric charges by ion‐exchange chromatography (Section 3.1.3), or by **reverse‐phase liquid chromatography (RPLC)**,
+
+---
+
+268
+
+Part II The Applications of Gene Cloning and DNA Analysis in Research
+
+![](../../raw/pages_0273-0288/images/page_285_image_2.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["Raw Material"] --> B["Pump"]
+  B --> C["Sample Injection"]
+  C --> D["HPLC Column"]
+  D --> E["Fraction Collector"]
+```
+</details>
+
+Figure 13.8
+
+A typical high‐performance liquid chromatography (HPLC) system.
+
+which separates according to surface hydrophobicity. To be of use in protein profiling, the column chromatography system must have sufficient resolving power to separate the thousands of proteins present in a proteome. **High‐performance liquid chromatography (HPLC)** is therefore used, with a capillary column whose internal diameter is less than 1 mm, as this enables proteins with very similar chromatographic properties to be separated. If the proteome is not too complex, fractions containing one or just a few proteins can be collected as they elute from the HPLC column (Figure  13.8). No further purification is needed, unlike with gel electrophoresis where the proteins must be extracted from the gel matrix. Further resolution can be achieved by linking together two different chromatography systems, so that each fraction collected from, say, an ion‐exchange system, is subsequently fractionated further by RPLC (Figure 13.9).
+
+## Identifying the individual proteins after separation
+
+The second stage of protein profiling is to identify the individual proteins that have been separated from the starting mixture. Although intact proteins can be examined by mass spectrometry, it is more usual in protein
+
+Figure 13.9
+
+A linked chromatography system. Each fraction from the ion‐exchange column is run individually through the RPLC column.
+
+![](../../raw/pages_0273-0288/images/page_285_image_10.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["Ion-exchange"] --> B["Component 1"]
+  C["RPLC"] --> D["Test Tube 1a-1f"]
+```
+</details>
+
+---
+
+Chapter 13 Studying Transcriptomes and Proteomes
+
+269
+
+![](../../raw/pages_0273-0288/images/page_286_image_2.jpg)
+
+Figure 13.10
+
+The use of MALDI‐TOF in mass spectrometry. Ionized peptides are injected into the mass spectrometer and their mass‐to‐charge ratios measured and displayed as a spectrum.
+
+profiling to cleave the individual proteins into fragments with a sequencespecific protease, such as trypsin, which cuts proteins immediately after arginine or lysine residues. With most proteins, this results in a series of peptides 5–75 amino acids in length.
+
+Mass spectrometry was originally designed as a means of identifying a compound from the mass‐to‐charge ratios of the ionized forms that are produced when molecules of the compound are exposed to a high‐energy field. The standard technique could not be used with proteins because they are too large to be ionized effectively, but **matrix‐assisted laser desorption ionization time‐of‐flight (MALDI‐TOF)**, gets around this problem, at least with peptides of up to 50 amino acids in length.
+
+The method is called **peptide mass fingerprinting**. Once ionized, the mass‐to‐charge ratio of a peptide is determined from its ‘time of flight’ within the mass spectrometer as it passes from the ionization source to the detector (Figure 13.10). The mass‐to‐charge ratio enables the molecular mass of the peptide to be worked out, which in turn allows its amino acid composition to be deduced. If a number of peptides from a single protein are analysed, then the resulting compositional information can be related to the genome sequence to identify the gene that specifies that protein.
+
+---
+
+270
+
+Part II The Applications of Gene Cloning and DNA Analysis in Research
+
+![](../../raw/pages_0273-0288/images/page_287_chart_2.jpg)
+
+<details>
+<summary>bar</summary>
+
+| Mass-to-charge ratio | 12C-labelled peptide (Relative intensity %) | 13C-labelled peptide (Relative intensity %) |
+| --- | --- | --- |
+| ~1200 | ~85 | ~65 |
+| ~1350 | ~75 | ~55 |
+| ~1550 | ~20 | ~15 |
+| ~1600 | ~45 | ~35 |
+| ~1700 | ~20 | ~15 |
+</details>
+
+Figure 13.11
+
+Analysing two proteomes by ICAT. In the MALDI‐TOF spectrum, peaks resulting from peptides containing $^ { 1 2 } \complement$ atoms are shown in red, and those from peptides containing $^ { 1 3 } \complement$ are shown in blue. The protein under study is approximately 1.5 times more abundant in the proteome that has been labelled with 12<sub>C</sub>.
+
+## Comparing the contents of two proteomes
+
+Often the aim of a protein profiling project is not to identify every protein in a single proteome but to understand the differences between the protein contents of two different proteomes. If the differences are relatively large, then they will be apparent simply by looking at the stained gels after twodimensional electrophoresis. However, important changes in the biochemical properties of a proteome can result from relatively minor changes in the amounts of individual proteins, and methods for detecting small changes are therefore essential.
+
+One possibility is to label the constituents of the two proteomes with different fluorescent markers, and then run them together in a single twodimensional gel. Visualization of the two‐dimensional gel at different wavelengths enables the intensities of equivalent spots to be judged more easily than is possible when two separate gels are compared.
+
+A more accurate alternative is to label each proteome with an **isotope coded affinity tag (ICAT)**. These are chemical markers that can be attached to a peptide. In one system, the tags are short hydrocarbon chains that contain either the common $^ { 1 2 } \mathrm { C }$ isotope of carbon or the less common $^ { 1 3 } \mathrm { C }$ isotope. The proteins are separated in the normal manner, and equivalent proteins from each proteome are recovered and treated with trypsin. One set of peptides is then labelled with $^ { 1 2 } \mathrm { C }$ tags and the other with $^ { 1 3 } \mathrm { C }$ tags. Because the $^ { 1 2 } \mathrm { C }$ and $^ { 1 3 } \mathrm { C }$ tags have different masses, they can be distinguished by mass spectrometry. The peptides from the two proteomes are therefore run through the mass spectrometer together. A pair of identical peptides (one from each proteome) will occupy slightly different positions in the resulting mass spectrum (Figure  13.11). Comparison of the peak heights allows the relative amounts of each peptide to be estimated.
+
+## 13.2.2 Studying protein–protein interactions
+
+Important information on a proteome can also be obtained by identifying pairs or groups of proteins that work together. Within living cells, few if any proteins act in total isolation. Instead, proteins interact with one
+
+---
+
+Chapter 13 Studying Transcriptomes and Proteomes
+
+271
+
+another in biochemical pathways and in multiprotein complexes. Three techniques, **phage display**, the **yeast two‐hybrid system**, and the use of a **functional protein array**, enable these protein–protein interactions to be examined.
+
+## Phage display
+
+This technique is called phage display because it involves the ‘display’ of proteins on the surface of a bacteriophage, usually M13 (Figure 13.12a). This is achieved by cloning the gene for the protein in a special type of M13 vector, one that results in the cloned gene becoming fused with a gene for a phage coat protein (Figure 13.12b). After transfection of E. coli, this gene fusion directs synthesis of a hybrid protein, made up partly of the coat protein and partly of the product of the cloned gene. With luck this hybrid protein will be inserted into the phage coat so that the product of the cloned gene is now located on the surface of the phage particles.
+
+Normally this technique is carried out with a **phage display library** made up of many recombinant phages, each displaying a different protein. Large libraries can be prepared by cloning a mixture of cDNAs from a particular tissue or, less easily, by cloning genomic DNA fragments. The library
+
+(a) Protein display on the surface of a phage
+
+![](../../raw/pages_0289-0304/images/page_288_image_7.jpg)
+
+<details>
+<summary>text_image</summary>
+
+Displayed proteins
+</details>
+
+(b) Fusion between the cloned gene and a coat protein gene
+
+![](../../raw/pages_0289-0304/images/page_288_image_9.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["Phage gene"] --> B["Cloned gene"]
+  B --> C["Phage coat protein"]
+  C --> D["Displayed protein"]
+```
+</details>
+
+(c) Using a phage display library
+
+![](../../raw/pages_0289-0304/images/page_288_image_11.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["Microtitre well"] --> B["Phage display library"]
+  B --> C["Washes"]
+  C --> D["Retained phage"]
+```
+</details>
+
+Figure 13.12
+
+Phage display. (a) Display of proteins on the surface of a recombinant filamentous phage. (b) The gene fusion used to display a protein. (c) One way of detecting interactions between a test protein and phages from within a display library.
+
+---
+
+272
+
+Part II The Applications of Gene Cloning and DNA Analysis in Research
+
+consists of phages displaying a range of different proteins and is used to identify those that interact with a test protein. This test protein could be a pure protein or one that is itself displayed on a phage surface. The protein is immobilized in the wells of a microtitre tray or on particles that can be  used in an affinity chromatography column, and then mixed with the phage display library (Figure 13.12c). Phages that are retained in the microtitre tray or within the column after a series of washes are ones that display proteins that interact with the immobilized test protein.
+
+## The yeast two‐hybrid system
+
+The yeast two‐hybrid system is very different to phage display. This procedure is based on research into the way in which regulatory proteins called transcription factors control gene expression in eukaryotic cells. A  transcription factor binds to the DNA upstream of a gene and then interacts with the RNA polymerase enzyme in order to activate transcription (Figure 13.13a). The two functions – DNA binding and polymerase activation  –  are specified by different parts of the transcription factor. Some transcription factors can be cut into two segments, one containing the DNA‐binding activity and the other containing the activation domain. In order to work in the cell, these two transcription factor segments must interact in some way.
+
+## Figure 13.13
+
+The yeast two‐hybrid system. (a) A typical yeast transcription factor has a DNA‐binding domain and an activation domain. (b) After the first cloning experiment, a hybrid protein that is part DNA‐binding domain is synthesized, but this cannot activate transcription. (c) After the second cloning experiment, a hybrid protein that is part activation domain is synthesized. If the two hybrid proteins can interact, then gene expression will occur
+
+(a) A transcription factor
+
+![](../../raw/pages_0289-0304/images/page_289_image_8.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["DNA-binding domain"] --> B["Activation domain"]
+  B --> C["Gene expression"]
+```
+</details>
+
+(b) Result of the first cloning experiment
+
+![](../../raw/pages_0289-0304/images/page_289_image_10.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["Hybrid protein with DNA-binding domain"] --> B["Single Gene"]
+  B --> C["No gene expression"]
+```
+</details>
+
+(c) Result of the second cloning experiment
+
+![](../../raw/pages_0289-0304/images/page_289_image_12.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["Hybrid protein with DNA-binding domain"] --> B["Hybrid protein with activation domain"]
+  B --> C["Protein-protein interaction"]
+  C --> D["Gene expression"]
+```
+</details>
+
+---
+
+Chapter 13 Studying Transcriptomes and Proteomes
+
+273
+
+The two‐hybrid system makes use of a Saccharomyces cerevisiae strain that lacks a transcription factor for a reporter gene. This gene is therefore switched off. To use the system, two yeast cloning experiments must be carried out. The first cloning experiment involves the gene for the target protein, the one whose interactions we wish to examine. This gene can come from any organism, not just yeast. The gene is ligated to a sequence specifying the DNA‐binding domain of a transcription factor, and the construct inserted into a suitable vector and cloned in yeast. Expression of the cloned gene gives rise to a hybrid protein, part target protein and part transcription factor. However, the recombinant yeasts that are produced are still not able to express the reporter gene, because this hybrid protein can only bind to the DNA upstream of the gene, it cannot activate the RNA polymerase (Figure 13.13b).
+
+In the second cloning experiment, a second hybrid gene is constructed, this hybrid comprising the gene for a test protein (one that we think might interact with the target) ligated to a sequence coding for the activation domain of the transcription factor. This second construct is cloned into the yeast cells. If the target and test proteins are able to interact, then the DNA‐binding and polymerase activation components of the transcription factor become linked, and the reporter gene is expressed (Figure 13.13c). The second cloning experiment can involve a library of recombinants representing many different proteins, so that the interactions between the target protein and a variety of test proteins can be assayed in one experiment.
+
+## Functional protein arrays
+
+A protein array is similar to a DNA microarray (Section 13.1.1), the difference being that the immobilized molecules are proteins rather than oligonucleotides. A functional protein array is one specifically designed to enable protein interactions to be studied. A fluorescently labelled version of the test protein is applied to the array, and the positions of the resulting signals used to indicate those proteins on the array that interact with the test protein.
+
+A functional protein array might appear to provide a straightforward means of identifying interactions between a test protein and a broad range of other proteins, but this is not yet a widely used method. One problem is that protein arrays are difficult to fabricate. There is no quick procedure for synthesizing proteins directly on to the array surface, equivalent to the construction of a DNA microarray by photolithography (see Figure 13.2). Each protein therefore has to be prepared, separated, and individually spotted onto the array. Also, some immobilized proteins have low stability, so the array must be stored carefully and used soon after preparation. For these reasons, phage display and the two-hybrid system remain the methods of choice for studying protein–protein interactions. Protein arrays are, however, popular for testing interactions between proteins and DNA fragments, for example to identify proteins that bind to a particular DNA sequence, and to identify proteins that bind to small molecules such as drugs. For these applications, there are no rapid alternatives equivalent to phage display and two‐hybrid testing.
+
+---
+
+274
+
+Part II The Applications of Gene Cloning and DNA Analysis in Research
+
+## Further reading
+
+- Aslam, B., Basit, M., Nisar, M.A., et al. (2017) Proteomics: technologies and their applications. Journal of Chromatographic Science, 55, 182–196. [Reviews all aspects of proteomics.]
+- Bumgarner, R. (2013) DNA microarrays: types, applications and their future. Current Protocols in Molecular Biology, 22, Unit 22.1.
+- Görg, A., Weiss, W., and Dunn, M.J. (2004) Current two‐dimensional electrophoresis technology for proteomics. Proteomics, 4, 3665–3685.
+- Hu, S., Xie, Z., Qian, J., et al. (2011) Functional protein microarray technology. Wiley Interdisciplinary Reviews. Systems Biology and Medicine, 3, 255–268.
+- Lowe, R., Shirley, N., Bleackley, M., et al. (2017) Transcriptomics technologies. PLoS Computational Biology, 13, e1005457. [Reviews all aspects of transcriptome analysis.]
+- Mann, M., Hendrickson, R.C., and Pandey, A. (2001) Analysis of proteins and proteomes by mass spectrometry. Annual Reviews of Biochemistry, 70, 437–473.
+- Pande, J., Szewczyk, M.M., and Grover, A.K. (2010) Phage display: concept, innovations, applications and future. Biotechnology Advances, 28, 849–858.
+- Parrish, J.R., Gulyas, K.D., and Finley, R.L. (2006) Yeast two‐hybrid contributions to interactome mapping. Current Opinion in Biotechnology, 17, 387–393.
+- Shiraki, T., Kondo, S., Katayama, S., et al. (2003) Cap analysis gene expression for high‐throughput analysis of transcriptional starting point and identification of promoter usage. Proceedings of the National Academy of Sciences, USA, 100, 15776–15781.
+- Stark, R., Grzelak, M., and Hadfield, J. (2019) RNA sequencing: the teenage years. Nature Reviews Genetics, 20, 631–656.
+- Stoughton, R.B. (2005) Applications of DNA microarrays in biology. Annual Review of Biochemistry, 74, 53–82.
+- Sutandy, F.X.R., Qian, J., Chen, C.‐S., and Zhu, H. (2013) Overview of protein microarrays. Current Protocols in Protein Science, 27, Unit 27.1.
+- Velculescu, V.E., Vogelstein, B., and Kinzler, K.W. (2000) Analysing uncharted transcriptomes with SAGE. Trends in Genetics, 16, 423–425.
+- Wang, Z., Gerstein, M., and Snyder, M. (2009) RNA‐Seq: a revolutionary tool for transcriptomics. Nature Reviews Genetics, 10, 57–63.
+- Zhang, Y., Fonslow, B.R., Shan, B., et al. (2013) Protein analysis by shotgun/bottom-up proteomics. Chemical Reviews, 113, 2343–2394. [Peptide mass fingerprinting.]
+
+---
+
+# PART III
+
+The Applications of Gene Cloning and DNA Analysis in Biotechnology
+
+**14** | Production of Protein from Cloned Genes 277
+**15** |   Gene Cloning and DNA Analysis in Medicine 301
+**16** |   Gene Cloning and DNA Analysis in Agriculture 327
+**17** |   Gene Cloning and DNA Analysis in Forensic Science and Archaeology 355
+
+---
+
+

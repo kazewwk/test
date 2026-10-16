@@ -1,0 +1,660 @@
+# Part I The Basic Principles of Gene Cloning and DNA Analysis / Chapter 6 Cloning Vectors for E. coli
+
+原始 PDF 第 119–138 页。
+
+## Chapter 6
+
+# Cloning Vectors for E. coli
+
+## Chapter contents
+
+**6.1** Cloning vectors based on E. coli plasmids 102
+**6.2** Cloning vectors based on λ bacteriophage 108
+**6.3** Cloning vectors for synthesis of single‐stranded DNA 115
+**6.4** Vectors for other bacteria 118
+
+The basic experimental techniques involved in gene cloning have now been described. In chapters 3, 4, and 5 we have seen how DNA is purified from cell extracts, how recombinant DNA molecules are constructed in the test tube, how DNA molecules are reintroduced into living cells, and how recombinant clones are distinguished. Now we must look more closely at the cloning vector itself, in order to consider the range of vectors available to the molecular biologist, and to understand the properties and uses of each individual type.
+
+The greatest variety of cloning vectors exists for use with E. coli as the host organism. This is not surprising in view of the central role that this bacterium has played in basic research over the past 60 years. The tremendous wealth of information that exists concerning the microbiology, biochemistry, and genetics of E. coli has meant that virtually all fundamental studies of gene structure and function were initially carried out with this bacterium as the experimental organism. Even when a eukaryote is being studied, E. coli is still used for construction of recombinant genes that will subsequently be placed back in the eukaryotic host in order to study their function and expression. In recent years, gene cloning and molecular biological research have become mutually synergistic – breakthroughs in gene
+
+Gene Cloning and DNA Analysis: An Introduction, Eighth Edition. T. A. Brown.
+
+© 2021 John Wiley & Sons Ltd. Published 2021 by John Wiley & Sons Ltd.
+
+101
+
+---
+
+102
+
+Part I The Basic Principles of Gene Cloning and DNA Analysis
+
+cloning have acted as a stimulus to research, and the needs of research have spurred on the development of new, more sophisticated cloning vectors.
+
+In this chapter the most important types of E. coli cloning vector will be described, and their specific uses outlined. In Chapter 7, cloning vectors for yeast, fungi, plants, and animals will be considered.
+
+## 6.1 Cloning vectors based on E. coli plasmids
+
+The simplest cloning vectors, and the ones most widely used in gene cloning, are those based on small bacterial plasmids. A large number of different plasmid vectors are available for use with E. coli, many obtainable from commercial suppliers. They combine ease of purification with desirable properties such as high transformation efficiency, convenient selectable markers for transformants and recombinants, and the ability to clone reasonably large (up to about 8 kb) pieces of DNA. Most routine gene cloning experiments make use of one or other of these plasmid vectors.
+
+One of the first vectors to be developed was pBR322, which was introduced in Chapter  5 to illustrate the general principles of transformant selection and recombinant identification. Although pBR322 lacks the more sophisticated features of the newest cloning vectors, and so is no longer used extensively in research, it still illustrates the important, fundamental properties of any plasmid cloning vector. We will therefore begin our study of E. coli vectors by looking more closely at pBR322.
+
+## 6.1.1 The nomenclature of plasmid cloning vectors
+
+The name ‘pBR322’ conforms with the standard rules for vector nomenclature:
+
+• ‘p’ indicates that this is indeed a plasmid.
+• ‘BR’ identifies the laboratory in which the vector was originally constructed (BR stands for Bolivar and Rodriguez, the two researchers who developed pBR322).
+• ‘322’ distinguishes this plasmid from others developed in the same laboratory (there are also plasmids called pBR325, pBR327, pBR328, etc.).
+
+## 6.1.2 The useful properties of pBR322
+
+The genetic and physical map of pBR322 (Figure 6.1) gives an indication of why this plasmid was such a popular cloning vector.
+
+The first useful feature of pBR322 is its size. In Chapter 2 it was stated that a cloning vector ought to be less than 10 kb in size, to avoid problems such as DNA breakdown during purification. pBR322 is 4361 bp, which means that not only can the vector itself be purified with ease, but so too
+
+---
+
+Chapter 6 Cloning Vectors for E. coli
+
+103
+
+![](../../raw/pages_0113-0128/images/page_120_chart_2.jpg)
+
+<details>
+<summary>donut</summary>
+
+| Region | Subunit/Region |
+| --- | --- |
+| Inner Ring | EcoRI |
+| Inner Ring | HindIII |
+| Inner Ring | BamHI |
+| Inner Ring | tetR |
+| Inner Ring | SalI |
+| Outer Ring | ori |
+| Outer Ring | PstI |
+| Outer Ring | Pvul |
+| Outer Ring | Scal |
+| Outer Ring | ampR |
+</details>
+
+Figure 6.1
+
+A map of pBR322 showing the positions of the ampicillin resistance (amp<sup>R</sup>) and tetracycline resistance (tet<sup>R</sup>) genes, the origin of replication (ori), and some of the most important restriction sites.
+
+can recombinant DNA molecules constructed with it. Even with 6 kb of additional DNA, a recombinant pBR322 molecule is still a manageable size.
+
+The second feature of pBR322 is that, as described in Chapter 5, it carries two sets of antibiotic resistance genes. Either ampicillin or tetracycline resistance can be used as a selectable marker for cells containing the plasmid, and each marker gene contains single‐copy restriction sites that can be used in cloning experiments. Insertion of new DNA into pBR322 that has been restricted with PstI, PvuI, or ScaI inactivates the amp<sup>R</sup> gene, and insertion using any one of eight restriction endonucleases (notably BamHI and HindIII) inactivates tetracycline resistance. This great variety of restriction sites that can be used for insertional inactivation means that pBR322 can be used to clone DNA fragments with any of several kinds of sticky end.
+
+A third advantage of pBR322 is that it has a reasonably high copy number. Generally, there are about 15 molecules present in a transformed E. coli cell, but this number can be increased, up to 1000–3000, by plasmid amplification in the presence of a protein synthesis inhibitor such as chloramphenicol (Section 3.2.3). An E. coli culture therefore provides a good yield of recombinant pBR322 molecules.
+
+## 6.1.3 The pedigree of pBR322
+
+The remarkable convenience of pBR322 as a cloning vector did not arise by chance. The plasmid was in fact designed in such a way that the final construct would possess these desirable properties. An outline of the scheme used to construct pBR322 is shown in Figure 6.2a. It can be seen that its production was a tortuous business that required full and skilful use of the DNA manipulative techniques described in Chapter 4. A summary of the result of these manipulations is provided in Figure 6.2b, from which it can be seen that pBR322 comprises DNA derived from three different naturally occurring plasmids:
+
+• The $a m p ^ { R }$ gene originally resided on the plasmid R1, a typical antibiotic resistance plasmid that occurs in natural populations of E. coli (Section 2.1.3).
+• The $t e t ^ { R }$ gene is derived from R6‐5, a second antibiotic resistance plasmid.
+
+---
+
+104
+
+Part I The Basic Principles of Gene Cloning and DNA Analysis
+
+![](../../raw/pages_0113-0128/images/page_121_image_2.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+This diagram illustrates the genetic construct of pBR322, showing how various plasmids (R1, ColE1, R6-5, pSC101, pMB9, pMB8, pMB1, pBR312, pBR313) are reorganized into EcoRI and TetR regions, with rearrangements resulting in two distinct fragments.
+</details>
+
+Figure 6.2
+
+The pedigree of pBR322. (a) The manipulations involved in construction of pBR322. The $a m p ^ { R }$ gene was obtained from Tn3, a type of **transposable element** carried by the R1 plasmid. The $t e t ^ { R }$ gene was excised from pSC101 by treatment with EcoR1 in a low salt solution, which decreases the specificity of the enzyme so that, as well as cutting at its standard GAATTC recognition sequence, it also cuts at related sequences such TAATTC. This is called **star activity**, and the related sequences are referred to as EcoRI\* sites. (b) A summary of the origins of pBR322.
+
+The replication origin of pBR322, which directs multiplication of the vector in host cells, is originally from pMB1, which is closely related to the colicin‐producing plasmid ColE1 (Section 2.1.3).
+
+## 6.1.4 More sophisticated E. coli plasmid cloning vectors
+
+pBR322 was developed in the late $1 9 7 0 s _ { 2 }$ the first research paper describing its use being published in 1977. Since then, many other plasmid cloning vectors have been constructed, the majority of these derived from pBR322 by manipulations similar to those summarized in Figure 6.2a. One of the first of these was pBR327, which was produced by removing a 1089 bp segment from pBR322. This deletion left the $a m p ^ { R }$ and $t e t ^ { R }$ genes intact,
+
+---
+
+Chapter 6 Cloning Vectors for E. coli
+
+105
+
+but changed the replicative and conjugative abilities of the resulting plasmid. This was an important step in the development of more sophisticated vectors, for two reasons:
+
+The change in the replicative function means that pBR327 has a higher copy number than pBR322, being present at about 30–45 molecules per E. coli cell. This is not of great relevance as far as plasmid yield is concerned, as both plasmids can be amplified to copy numbers greater than 1000. However, the higher copy number of pBR327 in normal cells makes this vector more suitable if the aim of the experiment is to study the function of the cloned gene. In these cases, gene dosage becomes important, because the more copies there are of a cloned gene, the more likely it is that the effect of the cloned gene on the host cell will be detectable.
+• The deletion also destroys the conjugative ability of pBR322, making pBR327 a non‐conjugative plasmid that cannot direct its own transfer to other E. coli cells. This is important for **biological containment**, averting the possibility of a recombinant pBR327 molecule escaping from the test tube and colonizing bacteria in the gut of a careless molecular biologist. In contrast, pBR322 could theoretically be passed to natural populations of E. coli by conjugation, though in fact pBR322 also has safeguards (though less‐comprehensive ones) to minimize the chances of this happening.
+
+Although pBR327, like pBR322, is no longer widely used, its properties have been inherited by most of today’s modern plasmid vectors. There are a great number of these, and it would be pointless to attempt to describe them all. Two additional examples will suffice to illustrate the most important features.
+
+## pUC8 – a Lac selection plasmid
+
+This vector was mentioned in Section 5.2.2 when identification of recombinants by insertional inactivation of the β‐galactosidase gene was described. pUC8 (Figure 6.3a) is descended from pBR322, although only the replication origin and the amp<sup>R</sup> gene remain. The nucleotide sequence of the amp<sup>R</sup> gene has been changed so that it no longer contains the singlecopy restriction sites. All these cloning sites are now clustered into a short segment of the lacZ′ gene carried by pUC8.
+
+pUC8 has two important advantages that have led to it becoming one of the most popular E. coli cloning vectors. The first of these was fortuitous. The manipulations involved in construction of pUC8 were accompanied by a chance mutation, within the origin of replication, which results in the plasmid having a copy number of 500–700 even before amplification. This has a significant effect on the yield of cloned DNA obtainable from E. coli cells transformed with recombinant pUC8 plasmids.
+
+The second advantage is that identification of recombinant cells can be achieved by a single‐step process, by plating onto agar medium containing ampicillin plus X‐gal (Section  5.2.2). With both pBR322 and pBR327, selection of recombinants is a two‐step procedure, requiring replica plating from one antibiotic medium to another (see Figure 5.8). A cloning
+
+---
+
+106
+
+Part I The Basic Principles of Gene Cloning and DNA Analysis
+
+(a) pUC8
+
+![](../../raw/pages_0113-0128/images/page_123_image_3.jpg)
+
+<details>
+<summary>text_image</summary>
+
+ampR
+2665 bp
+ori
+lacZ'
+Cluster of sites
+</details>
+
+(b) Restriction sites in pUC8
+
+![](../../raw/pages_0113-0128/images/page_123_image_5.jpg)
+
+<details>
+<summary>text_image</summary>
+
+pUC8
+lacZ'
+HindIII
+PstI
+Sall, Accl, HincII
+BamHI
+Smal, Xmal
+EcoRI
+</details>
+
+(c) Shuttling a DNA fragment from pUC8 to pUC9
+
+![](../../raw/pages_0113-0128/images/page_123_image_7.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["Recombinant pUC8"] -->|"BamHI\nNew DNA\nEcoRI"| B["EcoRI"]
+  B -->|"Restrict with BamHI and EcoRI"| A
+  C["pUC9"] -->|"Restriction sites"| D["Recombinant pUC9"]
+  D -->|"Restrict with BamHI and EcoRI\nLigate"| C
+```
+</details>
+
+(d) Restriction sites in pUC18
+
+![](../../raw/pages_0113-0128/images/page_123_image_9.jpg)
+
+<details>
+<summary>text_image</summary>
+
+pUC18
+lacZ'
+HindIII
+SphI
+PstI
+SalI, Accl, HincII
+XbaI
+BamHI
+Smal, Xmal
+KpnI
+SacI
+EcoRI
+</details>
+
+Figure 6.3
+
+The pUC plasmids. (a) The structure of pUC8. (b) The restriction site cluster in the lacZ′ gene of pUC8. (c) Shuttling a DNA fragment between pUC8 and pUC9, which enables the fragment to be cloned in two different directions. (d) The restriction site cluster in pUC18.
+
+experiment with pUC8 can therefore be carried out in half the time needed with pBR322 or pBR327.
+
+The cluster of cloning sites are contained in a short artificial oligonucleotide, called a **polylinker**, which was inserted into the lacZ′ gene when the first pUC8 plasmid was created. The polylinker is designed so that it does not totally disrupt the lacZ′ gene, the reading frame being maintained throughout the polylinker, so that a functional, though altered, β‐galactosidase enzyme is still produced. The polylinker in pUC8 contains nine restriction sites that are not found elsewhere in the vector (Figure 6.3b). Because these sites are clustered, a DNA fragment with two different sticky ends (say, EcoRI at one end and BamHI at the other) can be cloned without resorting to additional manipulations such as linker attachment.
+
+pUC8 is one of a family of vectors, differing only in the identity of the cloning sites. A second member of the family, pUC9, has the same polylinker as pUC8, but inserted into the lacZ′ gene in the opposite orientation. This pair of vectors can therefore be used to clone a DNA fragment in both the forward and reverse directions (Figure  6.3c), which enables **antisense RNA** to be prepared (Section 15.3.2). Other pUC vectors carry different combinations of restriction sites and provide even greater flexibility in the types of DNA fragment that can be cloned (Figure 6.3d).
+
+## pGEM3Z – in vitro transcription of cloned DNA
+
+pGEM3Z (Figure 6.4a) is very similar to a pUC vector. It carries the amp<sup>R</sup> and lacZ′ genes, the latter containing a cluster of restriction sites, and it is
+
+---
+
+Chapter 6 Cloning Vectors for E. coli
+
+107
+
+![](../../raw/pages_0113-0128/images/page_124_image_2.jpg)
+
+Figure 6.4
+
+pGEM3Z. (a) Map of the vector. ‘R’ indicates a polylinker containing restriction sites for EcoRI, SacI, KpnI, AvaI, SmaI, BamHI, XbaI, SalI, AccI, HincII, PstI, SphI, and HindIII. (b) In vitro RNA synthesis from the T7 promoter.
+
+almost exactly the same size. The distinction is that pGEM3Z has two additional short pieces of DNA, each of which acts as the recognition site for attachment of an RNA polymerase enzyme. These two **promoter** sequences lie on either side of the cluster of restriction sites used for introduction of new DNA into the pGEM3Z molecule. This means that if a recombinant pGEM3Z molecule is mixed with purified RNA polymerase in the test tube, transcription occurs, and RNA copies of the cloned fragment are synthesized (Figure 6.4b). The RNA that is produced could be used as a hybridization probe (Section  8.4.2) or might be required for experiments aimed at studying RNA processing (e.g. the removal of introns) or protein synthesis.
+
+The promoters carried by pGEM3Z and other vectors of this type are not the standard sequences recognized by the E. coli RNA polymerase. Instead, one of the promoters is specific for the RNA polymerase coded by T7 bacteriophage and the other for the RNA polymerase of SP6 phage. These RNA polymerases are synthesized during infection of E. coli with one or other of the phages and are responsible for transcribing the phage genes. They are chosen for in vitro transcription as they are very active enzymes  –  remember that the entire lytic infection cycle takes only 20 minutes (Section 2.2.1), so the phage genes must be transcribed very quickly. These polymerases are able to synthesize 5–10 μg of RNA from 1 μg of DNA, substantially more than can be produced by the standard E. coli enzyme.
+
+---
+
+108
+
+Part I The Basic Principles of Gene Cloning and DNA Analysis
+
+## 6.2 Cloning vectors based on λ bacteriophage
+
+As well as plasmid cloning vectors, a variety of vectors based on λ bacteriophage have been developed for cloning DNA in E. coli. The primary use of these vectors is to clone large pieces of DNA, from 5 to 25 kb, most of which are too big to be handled by plasmid vectors.
+
+## 6.2.1 Natural selection was used to isolate modified λ that lack certain restriction sites
+
+An essential requirement for a cloning vector is the presence of restriction sites into which new DNA can be cloned. Unfortunately, the λ genome is so large that it has more than one recognition sequence for virtually every restriction endonuclease. Restriction cannot therefore be used to cleave the normal λ molecule in a way that will allow insertion of new DNA, because the molecule would be cut into several small fragments that would be very unlikely to re‐form a viable λ genome on religation (Figure 6.5). This is a problem that is often encountered when a new vector is being developed. If just one or two sites need to be removed, then in vitro mutagenesis (Section  11.3.2) can be used to change their sequences. For example, an EcoRI site, GAATTC, could be changed to GGATTC, which is not recognized by the enzyme. However, in vitro mutagenesis was in its infancy when the first λ vectors were under development, and even today would not be an efficient means of changing more than a few sites in a single molecule.
+
+Instead, natural selection was used to provide strains of λ that lack the unwanted restriction sites. Natural selection can be brought into play by using as a host an E. coli strain that produces EcoRI. Most λ DNA molecules that invade the cell are destroyed by this restriction endonuclease, but a few survive and produce plaques. These are mutant phages, from which one or more EcoRI sites have been lost spontaneously (Figure 6.6). Several cycles of infection will eventually result in λ molecules that lack all or most of the EcoRI sites.
+
+## 6.2.2 Segments of the λ genome can be deleted without impairing viability
+
+The second problem that had to be solved when λ cloning vectors were first developed was the capacity of the phage capsid. The λ DNA molecule can be increased in size by only about 5%, representing the addition of
+
+Figure 6.5
+
+λ DNA has multiple recognition sites for almost all restriction endonucleases.
+
+![](../../raw/pages_0113-0128/images/page_125_image_11.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["1"] -->|"EcoRI"| B["1"]
+  B --> C["2"]
+  C --> D["3"]
+  D --> E["4"]
+  E --> F["5"]
+  F --> G["6"]
+  G --> H["Religation"]
+  H --> I["Complex mixture of molecules"]
+```
+</details>
+
+---
+
+Chapter 6 Cloning Vectors for E. coli
+
+109
+
+![](../../raw/pages_0113-0128/images/page_126_image_2.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["5 EcoRI sites"] --> B["Normal λ DNA"]
+  B --> C["Infect E. coli cells producing EcoRI"]
+  C --> D["Plaque formed by mutant phage"]
+  D --> E["Repeat infection with mutant phage"]
+  E --> F["Second mutant phage strain"]
+  F --> G["Few more plaques"]
+  G --> D
+```
+</details>
+
+Figure 6.6
+
+Using natural selection to isolate λ phage lacking EcoRI restriction sites.
+
+only 3 kb of new DNA. If the total size of the molecule is more than 52 kb, then it cannot be packaged into the λ head structure and infective phage particles are not formed. This severely limits the size of a DNA fragment that can be inserted into an unmodified λ vector (Figure 6.7).
+
+One way to solve this problem would be to remove one or more segments from the λ genome, to reduce its length so that larger pieces of new DNA can be inserted without exceeding the size limit for packaging. It is, of course, important that the segments that are removed do not contain genes that are essential for replication of the cloning vector, which in the case of λ includes all of the genes involved in assembly of the phage protein coat as well as those genes coding for DNA replicative enzymes. Fortunately, the genes in the λ genome are clustered together according to function; for example, all of the genes for the capsid proteins are located in the left‐hand part of the genome (as drawn in Figure 6.8), and all the genes coding for
+
+![](../../raw/pages_0113-0128/images/page_126_image_7.jpg)
+
+Figure 6.7
+
+The size limitation placed on the λ genome by the need to package it into the phage head.
+
+---
+
+110
+
+Part I The Basic Principles of Gene Cloning and DNA Analysis
+
+![](../../raw/pages_0113-0128/images/page_127_image_2.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["Capsid components"] --> B["b2"]
+  B --> C["Integration and excision"]
+  C --> D["Early regulation"]
+  D --> E["DNA synthesis"]
+  E --> F["Late regulation"]
+  F --> G["Host lysis"]
+```
+</details>
+
+Figure 6.8
+
+The λ genetic map, showing the position of the main non‐essential region that can be deleted without affecting the ability of the phage to follow the lytic infection cycle. There are other, much shorter non‐essential regions in other parts of the genome. See Figure 2.9 for the complete map of the λ genome.
+
+enzymes needed for the lytic infection cycle are in the right‐hand part. In between is a central region that contains most of the genes involved in integration and excision of the λ prophage from the E. coli chromosome. Removal of this segment therefore destroys the ability of the phage to follow its lysogenic infection cycle, but the lytic cycle is unaffected. The phage are still able to replicate, and loss of the lysogenic cycle is in fact an advantage as it means induction is not needed before plaques are formed (Section 3.3.1).
+
+This ‘non‐essential region’ lies between positions 20 and 35 on the map shown in Figure 6.8. Its removal decreases the size of the resulting λ molecule by up to 15 kb, which means that as much as 18 kb of new DNA can now be added before the cut‐off point for packaging is reached.
+
+## 6.2.3 Insertion and replacement vectors
+
+Once the problems posed by the multiple restriction sites and the packaging constraints had been solved, the way was open for the development of different types of λ‐based cloning vectors. The first two classes of vector to be produced were λ **insertion** and λ **replacement** (or substitution) vectors.
+
+## Insertion vectors
+
+With an insertion vector (Figure 6.9a), a large segment of the non‐essential region has been deleted, and the two arms ligated together. An insertion vector possesses at least one single‐copy restriction site into which new DNA can be inserted. The size of the DNA fragment that an individual
+
+λ insertion vectors. P = polylinker in the lacZ′ gene of λZAPII, containing restriction sites for SacI, NotI, XbaI, SpeI, EcoRI, and XhoI.
+
+Figure 6.9
+
+(a) Construction of a λ insertion vector
+
+![](../../raw/pages_0113-0128/images/page_127_image_14.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["Normal λ DNA (48.5 kb)"] -->|"Non-essential region"| B["λ insertion vector (35–40 kb)"]
+  B -->|"Cleave, ligate"| C["λ insertion vector (35–40 kb)"]
+```
+</details>
+
+(b) λgt10
+
+![](../../raw/pages_0113-0128/images/page_127_image_16.jpg)
+
+(c) λZAPII
+
+![](../../raw/pages_0113-0128/images/page_127_image_18.jpg)
+
+---
+
+Chapter 6 Cloning Vectors for E. coli
+
+111
+
+vector can carry depends, of course, on the extent to which the non‐essential region has been deleted. Two popular insertion vectors are:
+
+λ**gt10** (Figure 6.9b), which can carry up to 8 kb of new DNA, inserted into a unique EcoRI site located in the cI gene. Insertional inactivation of this gene means that recombinants are distinguished as clear rather than turbid plaques (Section 5.3.4).
+**λZAPII** (Figure 6.9c), with which insertion of up to 10 kb DNA into any of six restriction sites within a polylinker inactivates the lacZ′ gene carried by the vector. Recombinants give clear rather than blue plaques on X‐gal agar.
+
+## Replacement vectors
+
+A λ replacement vector has two recognition sites for the restriction endonuclease used for cloning. These sites flank a segment of DNA that is replaced by the DNA to be cloned (Figure 6.10a). Often the replaceable fragment (called the **stuffer fragment**) carries additional restriction sites that can be used to cut it up into small pieces, so that its own reinsertion during a cloning experiment is very unlikely. Replacement vectors are generally designed to carry larger pieces of DNA than insertion vectors can handle. Recombinant selection is often on the basis of size, with non‐recombinant vectors being too small to be packaged into λ phage heads (Section 5.3.4).
+
+An example of a replacement vector is:
+
+λDASHII (Figure 6.10b), which can carry inserted DNA of between 9 and 23 kb by replacing a segment flanked by various restriction sites, any of which can be used to remove the stuffer fragment, so DNA fragments with a variety of sticky ends can be cloned. Recombinant selection with λDASHII can be on the basis of size or can utilize the Spi phenotype (Section 5.3.4). The inserted DNA is flanked by the promoter sequences of T3 and T7 phage, so RNA copies can be obtained in the same way as for pGEM3Z.
+
+![](../../raw/pages_0129-0144/images/page_128_image_10.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  subgraph a_Cloning_with_a_replacement_vector["(a) Cloning with a λ replacement vector"]
+  A["Stuffer fragment"] -->|"Restrict, ligate"| B["New DNA"]
+  end
+  subgraph b_DASHII["(b) λDASHII"]
+  C["Clusters of restriction sites"] -->|"Restrict, ligate"| D["New DNA, up to 23 kb"]
+  end
+```
+</details>
+
+Figure 6.10
+
+λ replacement vectors. (a) Cloning with a λ replacement vector. (b) Cloning with λDASHII.
+
+---
+
+112
+
+Part I The Basic Principles of Gene Cloning and DNA Analysis
+
+## 6.2.4 Cloning experiments with λ insertion or replacement vectors
+
+A cloning experiment with a λ vector can proceed along the same lines as with a plasmid vector – the λ molecules are restricted, new DNA is added, the mixture is ligated, and the resulting molecules used to transfect a competent E. coli host (Figure 6.11a). This type of experiment requires that the vector be in its circular form, with the cos sites hydrogen bonded to each other.
+
+Although satisfactory for many purposes, a procedure based on transfection is not particularly efficient. A greater number of recombinants will be obtained if one or two refinements are introduced. The first is to use the linear form of the vector. When the linear form of the vector is digested with the relevant restriction endonuclease, the left and right arms are released as separate fragments. A recombinant molecule can be constructed by mixing together the DNA to be cloned with the vector arms. Ligation results in several molecular arrangements, including concatemers comprising left arm–DNA–right arm repeated many times (Figure 6.11b). If the inserted DNA is the correct size, then the cos sites that separate these structures will be the right distance apart for in vitro packaging (Section 5.3.2).
+
+![](../../raw/pages_0129-0144/images/page_129_image_5.jpg)
+
+Figure 6.11
+
+Different strategies for cloning with a λ vector. (a) Using the circular form of λ as a plasmid. (b) Using the left and right arms of the λ vector, plus in vitro packaging, to achieve a greater number of recombinant plaques.
+
+---
+
+Chapter 6 Cloning Vectors for E. coli
+
+113
+
+Recombinant phage are therefore produced in the test tube and can be used to infect an E. coli culture. This strategy, in particular the use of in vitro packaging, results in a large number of recombinant plaques.
+
+## 6.2.5 Long DNA fragments can be cloned using a cosmid
+
+The final and most sophisticated type of λ‐based vector is the **cosmid**. Cosmids are hybrids between a phage DNA molecule and a bacterial plasmid, and their design centres on the fact that the enzymes that package the λ DNA molecule into the phage protein coat need only the cos sites in order to function. The in vitro packaging reaction works not only with λ genomes, but also with any molecule that carries cos sites separated by 37–52 kb of DNA.
+
+A cosmid is basically a plasmid that carries a cos site (Figure 6.12a). It also needs a selectable marker, such as the ampicillin resistance gene, and a plasmid origin of replication, as cosmids lack all the λ genes and so do
+
+![](../../raw/pages_0129-0144/images/page_130_image_6.jpg)
+
+Figure 6.12
+
+A typical cosmid and the way it is used to clone long fragments of DNA.
+
+---
+
+114
+
+Part I The Basic Principles of Gene Cloning and DNA Analysis
+
+not produce plaques. Instead colonies are formed on selective media, just as with a plasmid vector.
+
+A cloning experiment with a cosmid is carried out as follows (Figure 6.12b). The cosmid is opened at its unique restriction site and new DNA fragments inserted. These fragments are usually produced by partial digestion with a restriction endonuclease, as total digestion almost invariably results in fragments that are too small to be cloned with a cosmid. Ligation is carried out so that concatemers are formed. Providing the inserted DNA is the right size, in vitro packaging cleaves the cos sites and places the recombinant cosmids in mature phage particles. These λ phage are then used to infect an E. coli culture, though of course plaques are not formed. Instead, infected cells are plated onto a selective medium, and antibiotic‐resistant colonies are grown. All colonies are recombinants, as non‐recombinant linear cosmids are too small to be packaged into λ heads.
+
+## 6.2.6 λ and other high‐capacity vectors enable genomic libraries to be constructed
+
+The main use of λ‐based vectors is to clone DNA fragments that are too long to be handled by plasmid vectors. A replacement vector, such as λDASHII, can carry up to 23 kb of new DNA, and some cosmids can manage fragments up to 40 kb. This compares with a maximum insert size of about 8 kb for most plasmids.
+
+The ability to clone such long DNA fragments means that **genomic libraries** can be generated. A genomic library is a set of recombinant clones that contains all of the DNA present in an individual organism. An E. coli genomic library, for example, contains all the E. coli genes, so any desired gene can be withdrawn from the library and studied. Genomic libraries can be retained for many years and propagated so that copies can be sent from one research group to another.
+
+The big question is how many clones are needed for a genomic library? The answer can be calculated with the formula:
+
+$$
+N = \frac {\ln (1 - p)}{\ln \left(1 - \frac {a}{b}\right)}
+$$
+
+where N is the number of clones that are required, p is the probability that any given gene will be present, a is the average size of the DNA fragments inserted into the vector, and b is the total size of the genome.
+
+Table 6.1 shows the number of clones needed for genomic libraries of a variety of organisms, constructed using a λ replacement vector or a cosmid. For humans and other mammals, several hundred thousand clones are required. It is by no means impossible to obtain several hundred thousand clones, and the methods used to identify a clone carrying a desired gene (Chapter 8) can be adapted to handle such large numbers, so genomic libraries of these sizes are by no means unreasonable. However, ways of reducing the number of clones needed for mammalian genomic libraries are continually being sought.
+
+---
+
+Chapter 6 Cloning Vectors for E. coli
+
+115
+
+Table 6.1
+
+Number of clones needed for genomic libraries of a variety of organisms.
+
+<table><tr><td rowspan="2">SPECIES</td><td rowspan="2">GENOME SIZE (bp)</td><td colspan="2">NUMBER OF CLONES $^{a}$ </td></tr><tr><td>17 kb FRAGMENTS $^{b}$ </td><td>35 kb FRAGMENTS $^{c}$ </td></tr><tr><td>E. coli</td><td> $4.6 \times 10^{6}$ </td><td>810</td><td>390</td></tr><tr><td>Saccharomyces cerevisiae</td><td> $1.2 \times 10^{7}$ </td><td>2115</td><td>1030</td></tr><tr><td>Drosophila melanogaster</td><td> $1.8 \times 10^{8}$ </td><td>31 700</td><td>15 400</td></tr><tr><td>Rice</td><td> $4.3 \times 10^{8}$ </td><td>75 800</td><td>36 800</td></tr><tr><td>Human</td><td> $3.2 \times 10^{9}$ </td><td>564 000</td><td>274 000</td></tr><tr><td>Wheat</td><td> $1.7 \times 10^{10}$ </td><td>2 996 000</td><td>1 456 000</td></tr></table>
+
+a Calculated for a probability (p) of 95% that any particular gene will be present in the library.
+
+b Fragments suitable for a replacement vector such as λDASHII.
+
+c Fragments suitable for a cosmid.
+
+One solution is to develop new cloning vectors able to handle longer DNA inserts. The most popular of these vectors are **bacterial artificial chromosomes (BACs)**, which are based on the F plasmid (Section 2.1.3). The F plasmid is relatively large, and vectors derived from it have a higher capacity than normal plasmid vectors. BACs can handle DNA inserts up to 300 kb in size, reducing the size of the human genomic library to just 30  000 clones. Other high‐capacity vectors have been constructed from bacteriophage P1, which has the advantage over λ of being able to squeeze 110 kb of DNA into its capsid structure. Cosmid‐type vectors based on P1 have been designed and used to clone DNA fragments ranging in size from 75 to 100 kb. Vectors that combine the features of P1 vectors and BACs, called **P1‐derived artificial chromosomes (PACs)**, also have a capacity of up to 300 kb.
+
+## 6.3 Cloning vectors for synthesis of single‐stranded DNA
+
+Cloning vectors able to provide single‐stranded versions of cloned DNA were extremely important for many years as the DNA sequencing methods used for most of the 1980s and 1990s required single‐stranded DNA as the starting material. Those sequencing methods have now been superseded by ones that use double‐stranded DNA, but the special vectors designed in the 1980s and 1990s for synthesis of single‐stranded DNA are still important because this type of DNA is also needed for specialist applications such as in vitro mutagenesis (Section 11.3.2) and phage display (Section 13.2.2).
+
+## 6.3.1 Vectors based on M13 bacteriophage
+
+The first single‐stranded DNA vectors were based on M13 bacteriophage. The normal M13 genome is 6.4 kb in length, with most of the DNA taken up by ten closely packed genes (Figure  6.13), each essential for the
+
+---
+
+116
+
+Part I The Basic Principles of Gene Cloning and DNA Analysis
+
+Figure 6.13
+
+The M13 genome, showing the positions of genes I to X and the intergenic sequence (IS).
+
+![](../../raw/pages_0129-0144/images/page_133_image_4.jpg)
+
+<details>
+<summary>text_image</summary>
+
+IS
+ori
+II
+X
+V
+VII
+IX
+VIII
+III
+6407 bp
+IV
+I
+VI
+</details>
+
+replication of the phage. There is only a single 508‐nucleotide intergenic sequence into which new DNA could be inserted without disrupting one of these genes, and this region includes the replication origin which must itself remain intact. This means that there is only limited scope for modifying the M13 genome.
+
+The first step in construction of an M13 cloning vector was to introduce the lacZ′ gene into the intergenic sequence. This gave rise to M13mp1, which forms blue plaques on X‐gal agar (Figure 6.14a). Polylinkers were then inserted into the lacZ′ gene to create a series of M13 vectors with different sets of cloning sites (Figure  6.14b). The polylinkers are the same ones used in the pUC vectors, which means that the cloned DNA can be shuttled between the equivalent M13 and pUC plasmids, so single‐ and double‐stranded versions can be obtained.
+
+A cloning experiment with an M13 vector simply involves inserting the new DNA into one of the restriction sites in the polylinker, and then transfecting competent E. coli cells. After plating out on X‐gal agar, recombinant plaques are identified by the blue‐white colour test.
+
+![](../../raw/pages_0129-0144/images/page_133_image_8.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["(a) Construction of M13mp1"] -->|"Restriction, ligation"| B["M13mp1"]
+  B --> C["(b) M13mp8"]
+  C -.-> D["lacZ' Gene"]
+  D -.-> E["EcoRI\nSmal, Xmal\nBamHI\nSall, Accl, HincII\nPstI\nHindIII"]
+```
+</details>
+
+Figure 6.14
+
+M13 vectors. (a) Construction of M13mp1. (b) M13mp8, which contains the same set of restriction sites as pUC8.
+
+---
+
+Chapter 6 Cloning Vectors for E. coli
+
+117
+
+(a) pEMBL8
+
+![](../../raw/pages_0129-0144/images/page_134_chart_3.jpg)
+
+<details>
+<summary>donut</summary>
+
+| Category | Value |
+| --- | --- |
+| ampR | ~25% |
+| lacZ' | ~10% |
+| Cluster of sites (see fig. 6.3b) | ~10% |
+| M13 DNA fragment | ~25% |
+</details>
+
+(b) Conversion of pEMBL8 into single-stranded DNA
+
+![](../../raw/pages_0129-0144/images/page_134_image_5.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["M13 replication protein"] --> B["Double-stranded pEMBL8"]
+  B --> C["The M13 protein replicates pEMBL8 into single-stranded DNA"]
+  C --> D["Single-stranded pEMBL8 molecules"]
+  D --> E["pEMBL8 'phage' particles"]
+```
+</details>
+
+Figure 6.15
+
+pEMBL8: a hybrid plasmid– M13 vector that can be converted into single‐stranded DNA.
+
+## 6.3.2 Hybrid plasmid–M13 vectors
+
+Although M13 vectors are very useful for the production of single‐stranded versions of cloned genes, they do suffer from one disadvantage. There is a limit to the size of DNA fragment that can be cloned with an M13 vector, with 1500 bp generally being looked on as the maximum capacity, though fragments up to 3 kb have occasionally been cloned. To get around this problem a number of hybrid vectors (**phagemids**) have been developed by combining a part of the M13 genome with plasmid DNA.
+
+An example is provided by pEMBL8 (Figure 6.15a), which was made by transferring into pUC8 a 1300 bp fragment of the M13 genome. This piece of M13 DNA contains the signal sequence recognized by the enzymes that convert the normal double‐stranded M13 molecule into single‐stranded DNA before secretion of new phage particles. This signal sequence is still functional even though detached from the rest of the M13 genome, so pEMBL8 molecules are also converted into single‐stranded DNA and secreted as defective phage particles (Figure 6.15b). All that is necessary is
+
+---
+
+118
+
+Part I The Basic Principles of Gene Cloning and DNA Analysis
+
+that the E. coli cells used as hosts for a pEMBL8 cloning experiment are also infected with normal M13 to act as a **helper phage**, providing the necessary replicative enzymes and phage coat proteins.
+
+pEMBL8, being derived from pUC8, has the polylinker cloning sites within the lacZ′ gene, so recombinant plaques can be identified in the standard way on agar containing X‐gal. With pEMBL8, single‐stranded versions of cloned DNA fragments up to 10 kb in length can be obtained, greatly extending the range of the M13 cloning system.
+
+## 6.4 Vectors for other bacteria
+
+Cloning vectors have also been developed for several other species of bacteria, including Streptomyces, Bacillus, and Pseudomonas. These vectors are used for basic studies of gene function and activity in these species, and also for the production of **recombinant protein**. A recombinant protein is a protein synthesized from a cloned gene, cloning being used in this way to obtain large quantities of important proteins, such as insulin, which are used as pharmaceuticals to treat human disorders (Chapter  14). Some recombinant proteins cannot be synthesized efficiently in E. coli, so other species, both bacterial and eukaryotic, are also used for recombinant protein synthesis.
+
+Some cloning vectors for these other types of bacteria are based on plasmids specific to the host species, and some on **broad host range plasmids** that are able to replicate in a variety of bacteria. The origin of replication of the RK2 plasmid, for example, functions in most Gram‐negative bacteria, and is used in cloning vectors that replicate in Pseudomonas species as well as E. coli. A cloning vector that carries the RK2 origin is therefore a type of **shuttle vector**, one that can be used in two different species. Shuttle vectors are useful because the initial stages of a gene cloning experiment, up to the point when the correct recombinant DNA molecule has been identified, are usually easier to carry out with E. coli as the host. Once the desired clone has been obtained, the broad host range properties of the shuttle vector can then be exploited to transfer the molecule to the second species.
+
+Bacteriophages have also been used as cloning vectors for bacteria other than E. coli. An example is the SV1 phage of Streptomyces venezuelae, which has been developed into a set of cloning vectors for Streptomyces species. SV1 is a lysogenic phage, but rather than deleting the genes responsible for the lysogenic infection cycle, vectors based on SV1 retain this function so that the cloned gene is inserted into the Streptomyces genome. This results in a very stable transformant, with little possibility of the cloned gene being lost from the host even after many cycles of bacterial replication. Stability is an important consideration if the aim of the gene cloning project is to obtain a recombinant bacterial strain that makes a valuable pharmaceutical protein.
+
+---
+
+Chapter 6 Cloning Vectors for E. coli
+
+119
+
+## Further reading
+
+- Bolivar, F., Rodriguez, R.L., Green, P.J., et al. (1977) Construction and characterization of new cloning vectors. II. A multipurpose cloning system. Gene, 2, 95–113. [pBR322.]
+- Choi, K.‐H., Trunck, L.A., Kumar, A., et al. (2008) Genetic tools for Pseudomonas. In: Pseudomonas Genomics and Molecular Biology (ed. Cornells, P.). Caister Academic Press, Norfolk, pp.65–86. [Describes cloning vectors for Pseudomonas.]
+- Fayed, B., Younger, E., Taylor, G., et al. (2014) A novel Streptomyces spp. integration vector, derived from the S. venezuelae phage, SV1. BMC Biotechnology, 14, 51.
+- Iouannou, P.A., Amemiya, C.T., Garnes, J., et al. (1994) P1‐derived vector for the propagation of large human DNA fragments. Nature Genetics, 6, 84–89.
+- Melton, D.A., Krieg, P.A., Rebagliati, M.R., et al. (1984) Efficient in vitro synthesis of biologically active RNA and RNA hybridization probes from plasmids containing a bacteriophage SP6 promoter. Nucleic Acids Research, 12, 7035–7056. [RNA synthesis from DNA cloned in a plasmid such as pGEM3Z.]
+- Sanger, F., Coulson, A.R., Barrell, B.G., et al. (1980) Cloning in singlestranded bacteriophage as an aid to rapid DNA sequencing. Journal of Molecular Biology, 143, 161–178. [M13 vectors.]
+- Shiyuza, H., Birren, B., Kim, U.J., et al. (1992) Cloning and stable maintenance of 300 kilobase‐pair fragments of human DNA in Escherichia coli using an F‐factor‐based vector. Proceedings of the National Academy of Sciences of the USA, 89, 8794–8797. [The first description of a BAC.]
+- Sternberg, N.L. (1992) Cloning high molecular weight DNA fragments by the bacteriophage P1 system. Trends in Genetics, 8, 11–16.
+- Yanisch‐Perron, C., Vieira, J., and Messing, J. (1985) Improved M13 phage cloning vectors and host strains: nucleotide sequences of the M13mp18 and pUC19 vectors. Gene, 33, 103–119.
+
+---
+
+
