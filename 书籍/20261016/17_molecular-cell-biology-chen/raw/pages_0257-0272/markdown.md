@@ -1,0 +1,431 @@
+失调影响Wnt蛋白的分泌。PARK2的基因产物Parkin蛋白则参与β-catenin的泛素化和降解，因此该蛋白质功能缺失会导致经典Wnt信号通路的上调，促进多巴胺神经元死亡。另外，在帕金森病患者的大脑皮层中还发现4个Wnt相关基因（FOXC1、NEURG2、SPRY1和CTNNB1）的表达下调。在多个亨廷顿病的动物疾病模型中都发现了Ryk受体的上调，Ryk可以抑制FOXO的活性，而FOXO可能通过Wnt通路影响神经元寿命与稳态。
+
+除了上述这些疾病，不断增多的证据显示Wnt通路可能还与多种精神疾病的发生发展相关，如精神分裂症、双相性精神障碍和自闭症等。大规模人类基因组测序发现Wnt信号通路基因在几个神经疾病中发生突变。基于这些发现，对Wnt信号通路在多巴胺神经元中发挥功能的机制研究有可能找到阻止帕金森病等疾病以及修复神经元损伤的新疗法。
+
+## 12.4.4 Wnt信号通路与其他疾病
+
+Wnt信号通路在肺的发育中扮演重要角色，如在肺分支形态发生以及导气管形成过程中都发挥重要功能。在成体肺中，Wnt信号通路在损伤修复和器官再生过程中被激活。越来越多的证据显示，Wnt通路的失调和一些慢性肺病的发生发展有关，如慢性阻塞性肺疾病（chronic obstructive pulmonary disease, COPD）和特发性肺纤维化（idiopathic pulmonary fibrosis, IPF）两种慢性肺病。在IPF患者中发现了Wnt信号通路的激活，同时伴随着一些靶基因（如cyclin D1和MMP7）的表达上调；而在COPD患者中则发现了FZD受体表达的下调，Wnt信号通路的再度激活可以减轻肺气肿症状。Wnt信号通路在IPF和COPD中表现出的截然不同的作用暗示Wnt通路在慢性肺病中发挥着复杂的功能。此外，Wnt通路还可能与哮喘有关。哮喘的病因很复杂，既有遗传因素也受环境的影响。虽然Wnt信号通路在肺的发育中发挥重要功能，但是这条信号通路在哮喘中的功能研究不是很多。有研究表明气道反应中Wnt1的表达可以减轻过敏性哮喘的两个主要特征，即气道高反应性和气道炎症，暗示Wnt1抑制了肺树突细胞活化从而减轻过敏性气道疾病的发生与加重。虽然目前还没有来自临床的确切证据证明Wnt信号通路在哮喘中的功能，但是基于动物模型的研究暗示Wnt/β-catenin信号通路参与哮喘气道重塑。
+
+最近的研究暗示Wnt信号通路的失调可能在一些代谢综合征如高血压和糖尿病的产生中扮演重要角色。一些新的证据暗示Wnt通路参与血压调控，并在高血压的致病机制中扮演重要角色。高血压具有遗传性，在极少数情况下，由于单个基因突变而遗传给后代。在对一些遗传性极端形式的高血压和Ⅱ型糖尿病家族的基因组测序分析中发现了Wnt信号通路相关基因的突变，如LRP6。另一个基于7万余名欧洲人的分析表明，Wnt3与脉压以及平均动脉压密切相关。而在一个针对非裔美国人的基因组分析中发现LRP6基因突变与高血压患者的动脉钙化密切相关。糖尿病是代谢综合征的一个主要疾病，与高血压密切相关。研究表明，Wnt信号通路在糖尿病中通过不同机制被抑制，暗示激活Wnt信号通路可能会有利于糖尿病症状的缓解。一些Wnt通路的正调控因子发生功能缺失突变，如TCF7L2(TCF4)、Wnt5b以及LRP5等，这些基因的突变可能会增加患Ⅱ型糖尿病的风险。而Wnt通路分泌型抑制子的表达上调，如DKK1，也与糖尿病的发生发展相关。
+
+除此以外，Wnt信号通路还与皮肤病、视网膜病变相关，并在四肢、骨骼、牙齿等形态发生变异的疾病中扮演重要角色。
+
+## 12.5 靶向 Wnt 信号通路的疾病治疗
+
+由于Wnt信号通路在人类疾病中的重要作用，靶向这条通路的小分子化合物、多肽以及抗体的研发一直是国际上生物学和医学领域研究的热点。Wnt信号通路在很多癌症中都表现出过度激活，同时与肿瘤干细胞以及肿瘤的扩散过程也密切相关，因此抑制Wnt信号通路可以有效抑制由于Wnt过度激活而产生的癌变。另一方面由于Wnt信号通路在干细胞维持中的重要作用，以及在组织器官损伤修复和神经疾病、糖尿病等中潜在的正调控功能，Wnt通路的激活剂可以用于干细胞体外扩增，缓解骨质疏松，促进骨折、肝等的损伤修复，以及治疗一些神经性和代谢疾病。此外，针对Wnt信号通路的小分子调控剂还可以作为生物探针，为研究Wnt信号通路的信号转导和调控机制提供可贵的研究工具。Wnt信号涉及Wnt蛋白的正确折叠和分泌、Wnt蛋白和受体的结合、信号从膜上的传递、降解复合物的活性、β-catenin的入核、转录复合物的活性等，针对这些不同层面都发现了相关的小分子，通过抑制或促进这些不同层面的功能从而发挥抑制或激活Wnt信号通路的功能。
+
+## 12.5.1 Wnt信号通路的抑制剂
+
+通过干扰Wnt蛋白的合成或分泌从而抑制Wnt通路。例如，IWP（inhibitor of Wnt production）是一类靶向Porcupine的小分子。Porcupine负责Wnt蛋白的棕榈酰化，对于Wnt蛋白的分泌及与受体的结合至关重要。抑制Porcupine的活性，可以抑制Porcupine催化Wnt蛋白的棕榈酰化，从而抑制Wnt信号通路。第一个靶向Porcupine抑制剂是IWP-2。另一个Porcupine抑制剂是LGK974，它可以有效抑制Wnt通路，在啮齿动物肿瘤模型中表现出较高的药效和较好的耐受性，目前已进入临床I期阶段。
+
+天然存在一些Wnt蛋白的拮抗剂sFRP、Dkk1等，通过干扰Wnt蛋白与膜上受体的结合抑制Wnt信号通路。sFRP1或sFRP1衍生的多肽在结肠癌细胞系HCT116移植瘤小鼠中，可以抑制肿瘤的生长。值得一提的是，sFRP抑制活性和肿瘤细胞所处的环境有关，例如sFRP4或sFRP3可以抑制人前列腺癌PC3细胞系的增殖，但是sFRP1却促进前列腺癌细胞系BPH1的生长。分泌型FZD受体也可以阻碍Wnt与膜上受体的结合，提高肝癌细胞对抗肿瘤药物阿霉素的敏感性。而Wnt天然拮抗剂WIF可以抑制骨肉瘤等癌细胞的生长。针对Wnt蛋白以及FZD的特异性抗体也通过干扰Wnt蛋白与受体的结合发挥作用。OMP-18R5是针对FZD7设计的抗体（同时也对FZD1、FZD2、FZD5和FZD8有交叉活性），干扰了Wnt和FZD的结合，从而抑制Wnt信号通路，OMP-18R5可以和几个常规的化疗药物特别是紫杉醇协同作用，抑制肿瘤的生长，目前已完成临床I期测试。此外，根据Wnt蛋白设计的肽段也可以通过干扰Wnt蛋白与受体的结合，发挥抑制Wnt通路的作用。例如Foxy-5和Box5是根据Wnt5a设计的肽段，可以干扰Wnt3a介导的经典Wnt信号通路。Foxy-5是一个5个氨基酸残基组成的肽段，在体外抑制乳腺癌、结肠癌、胰腺癌等多种癌细胞的生长，在小鼠乳腺癌模型中还能抑制癌细胞向肝和肺的转移；而Box5，一个6个氨基酸残基组成的肽段，可以抑制黑色素瘤细胞的增殖和迁移。UM206是根据Wnt3/Wnt5设计的由11个氨基酸残基组成的肽段，它可以与Wnt蛋白竞争性地结合FZD受体，有研究表明
+
+UM206可以在心肌梗死中减轻心脏衰竭等症状。
+
+Dvl作为Wnt信号通路一个重要的信号转导分子，调控其活性可以影响Wnt信号向下游的传递。例如靶向Dvl的PDZ结构域，可以阻碍Dvl与FZD的结合，从而干扰Wnt信号的传递。NSC668036、FJ9和3289-8625均是靶向Dvl的PDZ结构域的化合物，表现出抑制肿瘤生长的活性。由于Axin在降解复合物中的关键作用，一些小分子通过调控Axin的水平来影响降解复合物的活性。TNKS1和TNKS2属于聚腺苷二磷酸核糖聚合酶家族。TNKS1/2和Axin结合，促进Axin的泛素化和降解。IWR-1和XAV939是TNKS1/2的抑制剂，通过抑制TANK的酶活性，从而稳定Axin蛋白，促进降解复合物的功能来抑制Wnt通路。JW55是另一个TNKS1/2抑制剂，它可以有效抑制结肠癌细胞的生长，并且在APC突变导致的Wnt通路持续激活的小鼠模型中也表现出肿瘤抑制活性。扑蛲灵（Pyrvinium）则是靶向CK1的小分子，它结合并促进CK1a的激酶活性，从而增强了降解复合物的活性，促进了β-catenin的降解。
+
+抑制下游β-catenin/TCF转录复合物可以有效地抑制Wnt靶基因的表达。大规模的筛选发现了PKF115-584和CGP049090。有趣的是这两个化合物不仅干扰β-catenin/TCF转录复合物的组装，还都对β-catenin与APC的相互作用产生影响。在肝癌的临床前模型中，它们都表现出抑制肿瘤生长的活性。此外，在果蝇中进行的基于细胞的高通量筛选中发现了化合物iCRT3、iCRT5和iCRT14。这几个小分子可以阻止β-catenin与TCF4相互作用，抑制Wnt靶基因的表达以及结肠癌细胞的生长。PNU-74654也是靶向β-catenin/TCF的抑制剂。此外靶向β-catenin/TCF的转录激活因子如CBP/p300，也能抑制转录复合物的活性，从而抑制Wnt信号通路。小分子ICG-001可以特异性、高亲和力地结合CBP，阻断CBP与β-catenin的相互作用，它在几个临床前的模型中都表现出抑制肿瘤生长的活性。PRI-724是另一个特异性抑制CBP和β-catenin相互作用的小分子，目前临床I期阶段研究已经结束。值得一提的是ICG-001可以抑制具有抗药性的肿瘤起始细胞的生长，且表现出较高的安全性。小分子IQ-1和ID-8是特异性地阻碍p300与β-catenin相互作用的小分子。PNU-74654则是通过与β-catenin竞争结合TCF，从而抑制TCF的转录活性。近期研究发现了一个作用于CARF的小分子NC043，由于CARF对β-catenin/TCF转录复合物的形成与稳定发挥促进作用，因此NC043通过间接影响 $\beta$ -catenin与TCF/LEF1的结合从而抑制Wnt信号通路。
+
+## 12.5.2 Wnt信号通路的激活剂
+
+目前最主要的Wnt通路激活剂是针对激酶GSK3的抑制剂，通过抑制GSK3的活性，使其不能磷酸化β-catenin，导致β-catenin稳定与积累，从而促进了Wnt信号通路下游的转录活性。最广为人知的GSK3抑制剂是Lill。氯化锂在小鼠中以不依赖LRP5的方式提高骨量。此外，氯化锂已经超过半个世纪用于治疗躁郁症。CHIR99021是另一个被广泛使用的靶向GSK3的Wnt通路激活剂。利用CHIR99021的研究表明Wnt通路的激活剂具有治疗肺病以及促进器官损伤修复的潜在疗效。除了治疗疾病，小分子激活剂还可以作为工具研究Wnt信号通路的过度激活在一些疾病中的作用。SB-216763是一个高特异性针对GSK3β的抑制剂，可以促进视网膜干细胞增殖，可用于损伤视网膜细胞的再生。此外，利用这个Wnt通路激活剂，揭示了Wnt信号通路过度激活在皮肤纤维化和慢性淋巴细胞白血病中所扮演的角色。BIO也是一个被广泛用于Wnt信号通路研究的GSK3的抑制剂。研究表明CHIR99021和SB-216763对小鼠胚胎干细胞的细胞毒性比 BIO 低，CHIR99021 活性高而毒性较低，是目前较为优越的 Wnt 信号通路激活剂。
+
+R-spondin作为Wnt信号通路天然存在的激活剂，可以协同激活Wnt信号通路，在治疗骨质疏松等疾病中具有潜在作用。有研究表明，体外纯化的R-spondin2蛋白质可以促进骨关节炎患者骨分化过程中成骨细胞的矿化。在TNF过表达的转基因关节炎小鼠模型中，向关节部位直接注射R-spondin蛋白可以有效地抑制破骨细胞发育与骨吸收。SKL2001是另一个小分子Wnt通路激活剂。它通过阻碍Axin与β-catenin的相互作用，使β-catenin免于被降解复合物降解，从而促进Wnt通路的活性。SKL2001作为Wnt通路激活剂表现出促进成骨过程和抑制脂肪细胞分化的活性。近期一个新的Wnt信号通路的小分子激活剂HLY78被发现，该小分子通过调控Axin蛋白的构象，增强Axin与LRP6受体结合，从而和Wnt蛋白协同激活Wnt信号通路。在斑马鱼的胚胎发育中，HLY78显著促进了造血干细胞的扩增。
+
+目前搜索USPTO专利数据库，显示靶向Wnt的相关专利达700余条，然而目前临床上，还没有特异的靶向Wnt通路的药物用于疾病的治疗。一些进入临床研究的靶向Wnt信号通路的潜在药物及其临床研究状态列在表12-1中。
+
+表 12-1 靶向 Wnt 通路潜在药物的临床研究状态
+
+| 药物名称 | Wnt通路中的靶点 | 靶向疾病 | 状态 |
+| --- | --- | --- | --- |
+| LGK974 | Porcupine | 胰腺癌等实体瘤 | 临床I招募 |
+| OMP-18R5 | Frizzled | 实体瘤 | 临床I完成 |
+| WNT974 | Porcupine | 头颈鳞状细胞癌 | 临床II撤回 |
+| DKN-01 | Wnt/膜上受体结合 | 食管癌 | 临床I招募 |
+| OTSA101 | Frizzled | 滑膜肉瘤 | 临床I终止 |
+| CGX1321 | Porcupine | 结肠直肠癌等 | 临床I招募 |
+| Foxy-5 | Frizzled | 乳腺癌等 | 临床I完成 |
+| SM08502 | 靶点不明确 | 实体瘤 | 临床I招募 |
+| ETC-1922159 | Porcupine | 实体瘤 | 临床1A/B招募 |
+| SM04690 | 靶点不明确 | 腰椎间盘退行性疾病 | 临床I招募 |
+| Niclosamide | Frizzled | 结肠癌 | 临床I招募 |
+| SM04755 | 靶点不明确 | 肌腱病 | 临床I完成 |
+| Resveratrol | CBP/β-catenin | 结肠癌 | 临床I结束 |
+| CWP232291 | β-catenin | 急性髓系白血病 | 临床I结束 |
+| PRI-724 | CBP/β-catenin | 胰腺癌 | 临床I结束 |
+| LY2090314 | GSK3 | 白血病 | 临床II结束 |
+
+## □ 小结
+
+从第一个Wnt基因int-1的分离和克隆起，距今已经30余年，对于这条动物体中高度保守、决定细胞命运的最基本的信号通路之一，人们的认识在不断地深入，不断有新的通路成员以及调控机制被发现。然而关于这条通路的几个重要问题和机制目前仍然不清楚，如Dvl的活化机制、β-catenin的入核机制、Wnt信号通路在某些肿瘤中的致癌机制等。此外，越来越多的证据表明非经典Wnt信号通路在癌症的发生发展中同样扮演着重要角色，但是对于非经典Wnt信号通路的下游效应因子、信号转导机制以及如何和经典Wnt信号通路协同作用等都尚不清楚。另一个重要的问题是，Wnt信号通路并不是孤立发挥功能的，Wnt信号通路除了本身通路内分子间的相互作用，还通过与其他通路分子的相互作用，受到其他通路的调控，这些通路互相影响，形成信号网络，在生长发育、器官稳态维持以及疾病的发生发展中发挥重要作用。但是，这些信号网络相互交织的分子机制目前仍然不清晰。同时这些信号网络又是如何与肿瘤微环境以及肿瘤免疫相互影响也尚不清楚。回答这些问题对干细胞生物学、组织建造再生医学、肿瘤等疾病的治疗等都具有重要意义。
+
+## □ 思考题
+
+1. Wnt 信号通路可以分成几类，分类的依据是什么，它们各有什么特点？
+2. 你能简述一下 TCF/LEF1 家族转录因子是如何发挥双向调节功能的吗？
+3. 经典 Wnt 信号通路中，Wnt 信号如何调控  $\beta$ -catenin 的稳定性?
+4. 在绝大多数结肠癌中，Wnt 信号通路中的哪个成员发生了突变？
+
+5. Wnt 信号通路失调与肿瘤密切相关，你能举出几种 Wnt 信号通路失调导致肿瘤发生发展的机制吗？
+
+(李林 宋晓敏 朱晓亮 刘宁 中国科学院生物化学与细胞生物学研究所/中国科学院分子细胞卓越创新中心/分子生物学国家重点实验室)
+
+## □ 参考文献
+
+1 Acebron S P, Karaulanov E, Berger B S, et al. Mitotic Wnt signaling promotes protein stabilization and regulates vell size. Mol Cell, 2014,54: 663–674.
+2 Acebron S P, Niehrs C.  $\beta$ -catenin-independent roles of Wnt/LRP6 signaling. Trends Cell Biol, 2016, 26:956–967.
+3 Acebron S P, Niehrs C.  $\beta$ -catenin-independent roles of Wnt/LRP6 signaling. Trends Cell Biol, 2016, 26: 956–967.
+4 Baarsma H A, Konigshoff M. 'WNT-er is coming': WNT signalling in chronic lung diseases. Thorax, 2017,72: 746–759.
+5 Belenkaya T Y, Wu Y H, Tang X F, et al. The retromer complex influences Wnt secretion by recycling Wntless from endosomes to the trans-Golgi network. Dev Cell, 2008,14: 120–131.
+6 Clevers H. The intestinal Crypt, a prototype stem cell compartment. Cell, 2013,154: 274–284.
+7 Clevers H. Wnt/ $\beta$ -Catenin signaling in development and disease. Cell, 2006,127:469–480.
+8 Dale R M, Sisson B E, Topczewski J. The emerging role of Wnt/PCP signaling in organ formation. Zebrafish, 2009, 6: 9–14.
+9 de Rooy D P C, Yeremenko N G, Wilson A G, et al. Genetic studies on components of the Wnt signalling pathway and the severity of joint destruction in rheumatoid arthritis. Ann Rheum Dis, 2013,72:769–775.
+10 Franch-Marro X, Wendler F, Guidato S, et al. Wingless secretion requires endosome-to-Golgi retrieval of Wntless/Evi/Sprinter by the retromer complex. Nat Cell Biol, 2008, 10: 170-U140.
+11 Gwak J, Hwang S G, Park H S, et al. Small molecule-based disruption of the Axin/ $\beta$ -Catenin protein complex regulates mesenchymal stem cell differentiation. Cell Res, 2012, 22:237-
+
+247.
+
+12 Habas R, Kato Y, He X. Wnt/Frizzled activation of Rho regulates vertebrate gastrulation and requires a novel formin homology protein Daam1. Cell, 2001, 107: 843–854.
+13 Holland J D, Klaus A, Garratt A N, et al. Wnt signaling in stem and cancer stem cells. Curr Opin Cell Biol, 2013, 25: 254–264.
+14 Huang Y L, Anvarian Z, Doderlein G, et al. Maternal Wnt/STOP signaling promotes cell division during early Xenopus embryogenesis. Proc Natl Acad Sci U S A, 2015, 112: 5732–5737.
+15 Inoki K, Ouyang H, Zhu T Q, et al. TSC2 integrates Wnt and energy signals via a coordinated phosphorylation by AMPK and GSK3 to regulate cell growth. Cell, 2006, 126: 955–968.
+16 Jin Y R, Yoon J K. The R-spondin family of proteins: emerging regulators of WNT signaling. Int J Biochem Cell B, 2012, 44:
+2278-2287.
+17 Kawaguchi-Ihara N, Murohashi I, Nara N, et al. Promotion of the self-renewal capacity of human acute leukemia cells by Wnt3A. Anticancer Res, 2008, 28: 2701–2704.
+18 Lamouille S, Xu J, Derynck R. Molecular mechanisms of epithelial–mesenchymal transition. Nat Rev Mol Cell Bio, 2014,15:178–196.
+19 Liu C C, Tsai C W, Deak F, et al. Deficiency in LRP6-mediated Wnt signaling contributes to synaptic abnormalities and amyloid pathology in alzheimer's disease. Neuron, 2014, 84: 63–77.
+20 Lluis F, Pedone E, Pepe S, et al. Periodic activation of Wnt/ $\beta$ -Catenin signaling enhances somatic cell reprogramming mediated by cell fusion. Cell Stem Cell, 2008,3: 493–507.
+21 MacDonald B T, Tamai K, He X. Wnt/ $\beta$ -Catenin signaling: components, mechanisms, and diseases. Dev Cell, 2009,17: 9–26.
+22 Massague J. G $_{1}$ cell-cycle control and cancer. Nature, 2004, 432: 298–306.
+23 Mikels A J, Nusse R. Purified Wnt5a protein activates or inhibits  $\beta$ -Catenin-TCF signaling depending on receptor context. Plos Biol, 2006,4: 570–582.
+24 Mukhopadhyay M, Shtrom S, Rodriguez-Esteban C, et al. Dickkopf1 is required for embryonic head induction and limb morphogenesis in the mouse. Dev Cell, 2001, 1: 423–434.
+25 Nusse R, Brown A, Papkoff J, et al. A new nomenclature for int-1 and related genes:
+the Wnt gene family. Cell, 1991,64: 231.
+26 Nusse R, van Ooyen A, Cox D, et al. Mode of proviral activation of a putative mammary oncogene int-1, on mouse chromosome 15. Nature, 1984, 307: 131–136.
+27 Pan W, Choi S C, Wang H, et al. Wnt3a-mediated formation of phosphatidylinositol 4,5-bisphosphate regulates LRP6 phosphorylation. Science, 2008, 321: 1350–1353.
+28 Qian D, Jones C, Rzadzinska A, et al. Wnt5a functions in planar cell polarity regulation in mice. Dev Biol, 2007, 306:121–133.
+29 Rabelo F D, da Mota L M H, Lima R A C, et al. The Wnt signaling pathway and rheumatoid arthritis. Autoimmun Rev, 2010,9: 207–210.
+30 Regard J B, Zhong Z D, Williams B O, et al. Wnt signaling in bone development and disease: making stronger bone with Wnts. Csh Perspect Biol, 2012, 4.
+31 Rosi M C, Luccarini I, Grossi C, et al. Increased Dickkopf-1 expression in transgenic mouse models of neurodegenerative disease. J Neurochem, 2010, 112: 1539–1551.
+32 Sato N, Meijer L, Skaltsounis L, et al. Maintenance of pluripotency in human and mouse embryonic stem cells through activation of Wnt signaling by a pharmacological GSK3-specific inhibitor. Nat Med, 2004,10: 55–63.
+33 Sharma R P. Wingless a new mutant in Drosophila melanogaster. Drosoph Inf Serv, 1973, 50:134.
+34 Taelman V F, Dobrowolski R, Plouhinec
+J L, et al. Wnt signaling requires sequestration of glycogen synthase kinase 3 inside multivesicular endosomes. Cell, 2010,143: 1136–1148.
+35 Vinyoles M, Del Valle-Perez B, Curto J, et al. Multivesicular GSK3 sequestration upon Wnt signaling is controlled by p120-Catenin/Cadherin interaction with LRP5/6. Mol Cell, 2014, 53: 444-457.
+36 von Maltzahn J, Chang N C, Bentzinger C F, et al. Wnt signaling in myogenesis. Trends Cell Biol, 2012, 22: 602–609.
+37 Wang J B, Sinha T, Wynshaw-Boris A. Wnt signaling in mammalian development: lessons from mouse genetics. Csh Perspect Biol, 2012, 4.
+38 Wang S A, Bellen H J. The retromer complex in development and disease. Development, 2015,142: 2392–2396.
+39 Wang S, Yin J, Chen D, et al. Small-molecule modulation of Wnt signaling via modulating the Axin-LRP5/6 interaction. Nat Chem Biol, 2013, 9: 579-585.
+40 Welcker M, Singer J, Loeb K R, et al. Multisite phosphorylation by Cdk2 and GSK3 controls cyclin E degradation. Mol Cell, 2003,12: 381–392.
+41 Yang K, Wang X, Zhang H M, et al. The evolving roles of canonical WNT signaling in stem cells and tumorigenesis: implications in targeted cancer therapies. Lab Invest, 2016, 96: 116–136.
+42 Zhang L S, Deng J, Pan Q, et al. Targeted methylation sequencing reveals dysregulated Wnt signaling in Parkinson disease. J Genet Genomics, 2016, 43: 587–592.
+
+TGF-β超家族广泛参与调控细胞增殖和分化、形态建成、组织自稳态和重建等生物学过程。经典TGF-β信号传递是由Smad蛋白介导:TGF-β配体结合细胞膜上的Ⅱ型受体后，导致它们与I型受体形成复合体并通过磷酸化激活I型受体；后者进一步磷酸化细胞质中的Smad蛋白，激活的Smad蛋白复合体在细胞核内结合DNA并调控靶基因的表达。除此之外，TGF-β还能激活包括MAPK通路在内的多种其他信号通路。为保证细胞对TGF-β信号的正确应答，细胞中存在对该信号通路各个环节的精密调控机制，包括配体活性、受体活性、Smad活性以及转录因子水平的调节。此外，TGF-β通过调控细胞周期、细胞凋亡、细胞外基质蛋白分泌以及EMT，广泛影响生理和病理过程，参与调控免疫反应、血管形成、创伤愈合等生理过程，并与组织纤维化、癌症等疾病的发生发展密切相关。对TGF-β信号通路的深入研究，有助于进一步理解其广泛的生理功能，并为疾病的治疗提供指导。
+
+## 13.1 TGF- $\beta$ 超家族概述
+
+转化生长因子- $\beta$ (transforming growth factor- $\beta$, TGF- $\beta$) 超家族是一类结构相关的分泌型多肽细胞因子。在哺乳动物中，包括转化生长因子- $\beta$ (TGF- $\beta$)、活化素(activin)、抑制素(inhibin)、骨形态形成蛋白(bone morphogenetic protein, BMP)、Nodal、生长分化因子(growth and differentiation factor, GDF)、抗穆勒氏管激素(anti-Mullerian hormone, AMH)等至少30种蛋白。类似蛋白也在包括爪蟾、线虫及果蝇等多种生物中被发现，表明了该蛋白家族在进化上的保守性。在功能方面，这些生长因子参与的生物学过程十分广泛，包括调节细胞增殖、分化和死亡，控制胚胎发育、组织分化和成体内组织器官的稳态平衡（homeostasis）。
+
+TGF- $\beta$ 超家族成员虽然具有相似的序列和结构特征，但是引发的生物效应却各不相同。根据序列相似性和功能差异，TGF- $\beta$ 超家族又分为多个亚家族（表13-1）。
+
+表13-1 TGF-β超家族主要成员及功能
+
+<table><tr><td>亚家族</td><td>成员</td><td>功能</td></tr><tr><td>TGF-β</td><td>TGF-β1、TGF-β2、TGF-β3</td><td>抑制多种细胞生长;刺激细胞外基质生成;诱导上皮细胞-间充质细胞转换;诱导细胞凋亡;刺激血管生成等</td></tr><tr><td>activin</td><td>activin A、activin B、activin C</td><td>刺激垂体释放促卵泡激素 (follicle-stimulating hormone, FSH);诱导造血细胞分化;在早期胚胎生成中诱导中胚层背部化</td></tr><tr><td rowspan="2">BMP</td><td>BMP2、BMP4</td><td>在早期胚胎生成中抑制神经外胚层分化并诱导中胚层腹部化;诱导骨和软骨组织形成</td></tr><tr><td>BMP7</td><td>参与多种器官发育和神经生成</td></tr><tr><td>GDF</td><td>GDF5、GDF6</td><td>参与四肢发育中的软骨形成</td></tr><tr><td rowspan="4">其他</td><td>AMH</td><td>在胚胎发育中诱导穆勒氏管退化</td></tr><tr><td>inhibin</td><td>拮抗活化素的活性</td></tr><tr><td>Nodal</td><td>中胚层轴向诱导,左右不对称诱导</td></tr><tr><td>GDF8/Myostatin</td><td>抑制骨骼肌生长</td></tr></table>
+
+TGF- $\beta$ 超家族因子的发现可以追溯到20世纪80年代早期，最初发现TGF- $\beta$ 1可以将一些非肿瘤细胞“转化”(transformation)，形成失去接触抑制并可无限增殖的肿瘤样细胞。同时发现的另一个因子也具有转化活性，它们分别命名为TGF- $\alpha$ 和TGF- $\beta$ 。但是，TGF- $\alpha$ 属于表皮生长因子(EGF)家族。后续的研究发现TGF- $\beta$ 的功能十分复杂，不仅可以“转化”一些非肿瘤细胞，而且能抑制多种细胞增殖，并且其功能随着细胞类型和培养体系的不同有着显著的差别。随后在多个物种里都发现了TGF- $\beta$ 1的类似蛋白，进一步丰富了TGF- $\beta$ 超家族，这些生长因子调控着非常复杂的生物学过程，具有重要的生理和病理作用。
+
+随着 TGF-β1 基因于 1985 年被成功克隆，对该家族信号通路的分子生物学研究也蓬勃开展起来。通过借助生物化学、分子克隆的手段，并结合线虫、果蝇及爪蟾等生物中的突变体研究，TGF-β 家族受体、Smad 等信号传递因子相继被发现，一个从胞外配体（TGF-β）到膜上受体（TGF-β 受体）再到胞内信号转导因子（Smad），并最终入核调控靶基因表达（Smad 及其辅因子）的信号传递通路展现在了人们面前。近年来的研究不仅鉴定了大量的该通路调控因子，而且在功能上对 TGF-β 信号通路做了更为详尽的研究。目前认为，TGF-β 超家族信号可以通过调控细胞增殖、分化、迁移及凋亡等生物学过程，从而在胚胎发育、组织器官形成及内稳态维持等方面发挥重要功能。此外，该家族信号与肿瘤发生和转移（metastasis）、组织纤维化（fibrosis）等病理过程具有密切联系。因此，对于该家族信号通路的研究具有非常重要的意义，近年来一直是生物学家和临床医学界关注的热点之一。
+
+本章重点介绍最具代表性的TGF-β亚家族，包括该亚家族的成员组成、信号传递机制、在细胞和生物体内的一些重要生理功能以及在疾病发生防治中的作用。
+
+## 13.2 TGF- $\beta$  信号转导通路
+
+尽管 TGF- $\beta$  超家族不同成员的生物学功能不同，但其信号传递途径基本符合同一模式，即胞外配体与细胞膜上的Ⅱ型、Ⅰ型受体相结合，形成配体-受体复合物，配体-受体复合物进而在胞内磷酸化 Smad 分子，被磷酸化的Smad转运至细胞核内发挥转录因子的作用，调控相关靶基因表达（图13-1）。
+
+## 13.2.1 TGF-β配体
+
+人类基因组中含有3个TGF-β基因——TGF-β1、TGF-β2和TGF-β3，分别定位于染色体19q13、1q41和14q24，均含有7个外显子，核苷酸序列有高度同源性，所编码的前体分子C端都有9个保守的半胱氨酸残基。在氨基酸水平上，TGF-β1与TGF-β2有71%的同源性，TGF-β1与TGF-β3有77%的同源性，TGF-β2与TGF-β3有80%的同源性，人与小鼠TGF-β1的同源性高达99%。哺乳动物体内T淋巴细胞、单核细胞、内皮细胞、成纤维细胞等正常细胞以及多种肿瘤细胞都能分泌TGF-β。在鸟类和两栖类动物中还分别存在着TGF-β4和TGF-β5，但两者的生物学作用尚不清楚。
+
+TGF-β在细胞内以前体形式合成，TGF-β前体由390～412个氨基酸残基组成，N端含有一个信号肽。TGF-β前体在分泌到胞外前需经历一系列切割。以TGF-β1为例，TGF-β1前体的第1～29位氨基酸构成的信号肽被水解，最后生成分子量为 $6.5\times10^{4}\sim7.5\times10^{4}$ 的无活性肽（latency associated peptide，LAP）和C端成熟的TGF-β1。这种活性形式的TGF-β与LAP之间以非共价键相连，形成非活性状态的TGF-β（latent TGF-β，L-TGF-β）并分泌到细胞外。
+
+L-TGF-β不能结合细胞表面的TGF-β受体，故L-TGF-β在发挥作用前需要激活。在体外，酸、碱、高温处理，改变离子强度，以及蛋白酶水解都能够使LAP从L-TGF-β上解离，使TGF-β被活化。在体内，由血纤维蛋白溶酶原(plasminogen)产生的血纤维蛋白溶酶(plasmin)能够作用于L-TGF-β，释放出活性形式的TGF-β。存在于骨折处和正在愈合的伤口处的酸性环境也有利于释放TGF-β活性形式。另外，L-TGF-β也可在不释放LAP条件下被激活。例如，凝血栓蛋白-1(thrombospondin 1, TSP-1)能够与L-TGF-β1的LAP结合，引起分子构象改变，使TGF-β1在不释放LAP情况下与细胞膜上的TGF-β受体结合，引起TGF-β信号传递。L-TGF-β1的LAP上的RGD序列还能够与上皮细胞表面的整联蛋白(integrin)αvβ6结合，引起L-TGF-β1分子构象的改变，使TGF-β与受体相互作用。活化的TGF-β以同源二聚体形式存在，二聚体分子量为
+
+![](images/page_263_image_0.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["II型受体"] --> B["FKBP12"]
+  C["I型受体"] --> D["FKBP12"]
+  E["TGF-β"] --> F["R-Smad"]
+  E --> G["R-Smad"]
+  H["R-Smad"] --> I["Smad4"]
+  J["R-Smad"] --> K["R-Smad"]
+  L["R-Smad"] --> M["R-Smad"]
+  N["R-Smad"] --> O["R-Smad"]
+  P["DNA共结合因子"] --> Q["靶基因"]
+  R["R-Smad"] --> S["DNA共结合因子"]
+  T["R-Smad"] --> U["转录抑制因子"]
+  V["R-Smad"] --> W["转录激活因子"]
+  X["DNA共结合因子"] --> Y["开启基因转录"]
+  Z["R-Smad"] --> AA["抑制基因转录"]
+```
+</details>
+
+图13-1 TGF-β/Smads信号传递通路
+
+TGF-β存在时，先与Ⅱ型受体结合，促使受体抑制蛋白FKBP12从I型受体上解离下来，I型受体进而可以与TGF-β配体和Ⅱ型受体结合形成配体-受体复合物。Ⅱ型受体磷酸化I型受体，进而招募R-Smad与受体复合物结合。R-Smad被I型受体磷酸化后从受体复合物上解离，磷酸化的R-Smad与Smad4（co-Smad）结合。R-Smad与Smad4在细胞核内直接或在其他DNA共结合因子的辅助下结合DNA，进而招募转录激活因子或转录抑制因子，调控靶基因的转录。
+
+$2.5 \times 10^{4}$ ，每个单体由112个氨基酸组成，单体间由两个二硫键相连。
+
+## 13.2.2 TGF- $\beta$ 受体类型、结构及功能
+
+TGF-β受体是通过核素I $^{125}$ 标记的TGF-β与细胞表面结合蛋白进行化学交联，经电泳检测而被发现和鉴定的。根据其不同的电泳能力，TGF-β受体被划分为I型、II型和III型受体3类。其中I型和II型受体直接参与信号传递，是TGF-β信号传递所必需的。I型和II型受体也是目前唯一发现的具有丝氨酸/苏氨酸激酶活性的跨膜受体。III型受体是分子量最大的受体，对TGF-β，特别是TGF-β2的信号传递起促进作用。
+
+## (1) TGF- $\beta$  I型和Ⅱ型受体
+
+TβR II是迄今为止发现的传递TGF-β信号的唯一II型受体。TβRⅡ受体分子由567个氨基酸组成，分子量约为 $7\times10^{4}$ ，包括由136个氨基酸残基组成的N-糖基化且富含半胱氨酸的胞外区、单跨膜区和具有丝氨酸/苏氨酸激酶活性的胞内激酶区。在没有TGF-β信号存在时，TβRⅡ主要以单体形式分布在质膜上。在缺乏TGF-β的I型受体参与时，TβRⅡ与TGF-β1、TGF-β3有很高的亲和力但不与TGF-β2结合。
+
+Ⅱ型受体能够磷酸化自身的丝氨酸(Ser)、苏氨酸(Thr)残基，因而有自磷酸化活性(autophosphorylation)。在TβRⅡ分子中，胞质内近质膜区的第213位Ser残基的自磷酸化，以及在激酶区具有底物识别功能的T-环(T-loop)结构中的第409位Ser残基的自磷酸化是激活TβRⅡ的激酶活性所必需的。Ⅱ型受体在激酶区后延伸出一段很短的C端尾。TβRⅡ的C端尾是可被磷酸化的，但缺失C端尾序列不会影响TβRⅡ传递TGF-β信号的功能。响应不同TGF-β超家族配体的不同Ⅱ型受体之间，胞内激酶区具有一定的序列保守性。但胞外区序列保守性低，胞内邻近跨膜区和C端尾也缺乏序列保守性，这一特征可能与Ⅱ型受体选择与相应的TGF-β超家族配体结合，从而特异性传递信号有关。
+
+(A)
+
+![](images/page_264_image_1.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  subgraph Cell_Molecular
+  A["胞外区"] --> B["II型受体"]
+  C["单跨膜区"] --> D["I型受体"]
+  end
+
+  subgraph Excitatory_Domain
+  E["激酶区"] --> F["磷酸化激活位点"]
+  F --> G["TTS"]
+  F --> H["SG"]
+  F --> I["GLP"]
+  GHI["G & H & I"] --> J["FKBP12结合位点"]
+  end
+
+  K["C端尾"] -.-> E
+  L["GS区"] -.-> E
+```
+</details>
+
+(B)
+
+![](images/page_264_image_3.jpg)
+
+<details>
+<summary>text_image</summary>
+
+N
+L45-环
+</details>
+
+图13-2 TGF- $\beta$ 的I型、II型受体结构示意图及TGF- $\beta$ I型受体胞内端结构图
+
+(A) I型受体与II型受体分子结构相似，由胞外区、单跨膜区、激酶区和很短的C端尾组成。I型受体激酶区上游的特征性结构——GS区是I型受体激酶活性的关键调节区。II型受体通过磷酸化I型受体的GS区激活I型受体。FKBP12与I型受体的结合能够影响GS区的磷酸化。(B) TGF-βI型受体的胞内端结构域的结构图（仿自PDB蛋白质数据库），受体激酶区的L45环用红色标记，具有底物识别功能。
+
+TGF-β的I型受体在对不同TGF-β超家族的II型受体的响应上存在很大程度的交迭。就TGF-β信号传递而言，在TβRII存在下，已发现至少有两种I型受体结合TβRII，参与TGF-β信号传递。TβRI又称ALK5(activin receptor like kinase 5)，在大多数细胞中广泛表达，特异性响应TGF-β信号。人的TβRI蛋白由503个氨基酸组成，分子量约为 $5.5\times10^{4}$ 。TβRI通过磷酸化下游分子Smad2/3传递信号。另一个传递TGF-β信号的I型受体ALK1，主要在内皮细胞中高表达。人的ALK1蛋白由503个氨基酸组成，分子量约为 $5.7\times10^{4}$ 。ALK1通过磷酸化Smad1/5传递信号。
+
+I型受体与II型受体同属于糖蛋白，具有与II型受体相似的分子结构，一样具有N-糖基化且富含半胱氨酸的胞外区、单跨膜区和具有丝氨酸/苏氨酸激酶活性的胞内激酶区，I型受体的激酶区具有高度的序列保守性（图13-2）。
+
+I型受体与II型受体在序列和结构上的不同之处在于:I型受体在激酶区上游具有一段由约30个氨基酸残基组成的高保守的Gly（甘氨酸）-Ser（GS）结构域，该结构域以包含特征序列“SGSGSG”而得名。GS区是I型受体激酶活性的关键调节区域（图13-2）。TGF-β诱导TβRI和TβRII形成受体复合体，在此复合体内，TβRII磷酸化TβRI在GS结构域“TTSGSGSG”片段中的Ser、Thr残基，引起TβRI构象发生变化从而激活TβRI的激酶活性。单独使GS区的某个Ser或Thr突变为Ala（丙氨酸）或Val（缬氨酸），不会影响其他位点的磷酸化和受体激活；若将GS区的3个以上的Ser、Thr残基突变为Ala、Val或酸性氨基酸残基，则会阻止TβRI的激活，抑制信号传递。I型受体GS结构域的倒数第2个氨基酸残基一般为Thr或Gln（谷氨酰胺），该残基突变为Asp（天冬氨酸）或Glu（谷氨酸）可以提高包括TβRI在内的许多I型受体的激酶活性，使I型受体可以不依赖于配体和II型受体而激活，但是其激活机制尚不清楚。在所有TGF-β家族I型受体的“SGSGSG”序列之后，紧接着一个“Leu-Pro”基序，这个基序是胞质蛋白FKBP12结合并调节I型受体活性的重要位点（见本章13.3）。I型受体激酶区还包括了另一段重要结构——L45-环（L45-loop），该结构的功能与TGF-β信号传递的特异性有关。
+
+TGF-β超家族配体通过与Ⅱ型受体、I型受体结合起始信号传递，目前认为主要存在两种配体-受体结合模式。第一种是顺序结合模式，即配体先与Ⅱ型受体结合，而后招募I型受体参与结合。TGF-β及activin与受体的结合主要是按照顺序模式。第二种是同步结合模式，主要发生在BMP信号通路中。在BMP信号传递过程中，只有在Ⅱ型受体和I型受体同时存在下受体才对BMP配体有较高的亲和力；任意一种受体单独表达时都能与配体结合，但亲和力较弱。因此，在BMP信号通路中，配体与两种受体的结合是同时发生的。
+
+## (2) TGF- $\beta$  III型受体
+
+TGF-β的Ⅲ型受体属于TGF-β的附属受体，最为典型的Ⅲ型受体为β蛋白聚糖（betaglycan）。β蛋白聚糖是蛋白多糖分子，在多种细胞中都有表达。β蛋白聚糖的核心多肽分子量大小仅为 $1\times10^{5}\sim1.1\times10^{5}$ ，由于侧链N-糖基化、肝素和硫酸软骨素修饰的差异，导致β蛋白聚糖电泳迁移速度不同，在分子量为 $2.8\times10^{5}\sim3.3\times10^{5}$ 处都有分布。β蛋白聚糖与TGF-β1、TGF-β2、TGF-β3三种亚型都有结合能力，其中与TGF-β2的结合力最强，能够促进TGF-β尤其是TGF-β2与I型、Ⅱ型受体的结合，从而促进TGF-β信号传递。β蛋白聚糖与TGF-β的结合能力是由β蛋白聚糖的多肽骨架决定的。目前仅发现β蛋白聚糖与TβRII有直接结合，而未发现与TβRI有结合。β蛋白聚糖的多肽编码序列由853个氨基酸组成，包括N端信号肽、很大的胞外结构域、单跨膜区和很短的C端胞内区。胞外区有6个N-糖基化位点、16个Cys和6个黏多糖黏附位点。C端胞内区由41个氨基酸组成，富含Ser和Thr，没有任何酶活性结构域，功能未知。研究表明，β蛋白聚糖胞外区的N端和C端都有TGF-β结合活性。β蛋白聚糖的跨膜区上游还存在一个“Lys-Lys”蛋白酶切割位点，能够被蛋白酶切割，使其胞外区以可溶形式分泌于胞外。这种形式的β蛋白聚糖能够与受体竞争结合TGF-β，对信号传递起拮抗作用。
+
+内皮联蛋白(endoglin) 是另一种 TGF- $\beta$  的附属受体，属于膜糖蛋白，主要在血管内皮细胞和造血细胞中高水平表达。内皮联蛋白分子由信号肽和具有 4 个 N-糖基化接、多个O-糖基化位点的胞外区、跨膜区以及胞质区组成。内皮联蛋白和β蛋白聚糖的跨膜区序列相似性高达71%，胞内区序列相似性达63%。内皮联蛋白的功能最初认为与细胞间识别有关。与β蛋白聚糖对TGF-β的结合能力不同，内皮联蛋白主要和TGF-β1、TGF-β3结合，而不结合TGF-β2。人的内皮联蛋白有两种剪切形式，分别产生由625和658个氨基酸残基组成的分子，其区别在于胞内区的长短，两种分子都能形成以二硫键连接的二聚体。内皮联蛋白和β蛋白聚糖都可以与多种I、Ⅱ型受体相互作用，但其对下游TGF-β信号转导的作用却不尽相同，根据受体组合及下游R-Smad的不同，表现出促进或抑制作用。其具体的作用机制尚不十分清楚。
+
+除了β蛋白聚糖和内皮联蛋白之外，一个EGF-CFC家族的胞外膜蛋白——cripto也被认为可作为TGF-β家族信号的附属受体。cripto可以通过结合ALK4和ALK7两个I型受体，从而促进另一个TGF-β超家族的配体——Nodal信号的转导。此外，cripto本身还具有其他一些不依赖于Nodal信号的功能，表明其作用机制不仅仅局限于作为一个TGF-β家族信号的附属受体，更多的作用机制仍有待进一步阐明。
+
+## 13.2.3 Smad蛋白的结构与功能
+
+Smad家族蛋白是TGF-β超家族信号在细胞内的信号传递分子。Smad家族蛋白的最早成员是分别在果蝇和线虫中发现的Mad和Sma，而后其同源蛋白在爪蟾、小鼠、大鼠、人中陆续被发现，整个家族成员以Sma和Mad的简并写法Smad命名。
+
+根据功能差异，Smad蛋白分为三类亚家族:受体调控的Smad（receptor regulated Smad、R-Smad）、通用Smad（common Smad，Co-Smad）以及抑制型Smad（inhibitory Smad，I-Smad）。三类Smad蛋白在TGF-β超家族信号通路中分别发挥不同作用，每一类亚家族成员间在进化上具有很强的序列保守性。R-Smad是I型受体激酶的直接作用底物，其C端保守序列“SSXS”的后两个Ser能够被I型受体激酶磷酸化。R-Smad接收不同TGF-β超家族信号受体作用，决定生物信号传递的特异性:Smad2和Smad3能够被TGF-β和Activin的I型受体磷酸化，特异转导TGF-β/activin/Nodal信号；Smad1、Smad5和Smad8被BMP或GDF的I型受体磷酸化，介导BMP/GDF信号传递。另外，Smad1和Smad5还能被在内皮细胞特异表达的响应TGF-β的I型受体ALK1磷酸化，传递TGF-β信号。Co-Smad目前在哺乳动物细胞中仅有Smad4被确认，其功能是与磷酸化的R-Smad结合并共同转运至细胞核，在其他转录因子共同作用下特异性调控靶基因的转录。I-Smad在哺乳动物细胞中包括Smad6和Smad7两种，它们通过与激活的I型受体结合，从而竞争性抑制R-Smad的磷酸化，导致信号通路被阻断。另外，Smad6除了能够与激活的I型受体结合之外，还可以干扰Smad1-Smad4复合物的形成，并且它还可以在细胞核内作为转录抑制因子抑制信号通路的靶基因的转录。而Smad7还能够招募E3泛素连接酶家族成员Smurf到I型受体，从而介导激活受体的泛素化，最终促进它们的降解；Smad7还能与Smad2/3结合，从而阻止Smad2/3-Smad4复合体的形成并促进Smad2/3的降解；此外，Smad7在细胞核内也可干扰Smad2/3-Smad4复合体与DNA结合从而抑制信号。目前认为Smad6主要抑制BMP信号转导，Smad7对TGF-β、activin和BMP信号均有抑制作用。有趣的是，TGF-β和BMP信号可以刺激I-Smad基因的表达，因此I-Smad对整个通路起负反馈调控的作用。
+
+Smad蛋白分子由400～500个氨基酸残基构成，在Smad蛋白家族的各个亚型之间甚至不同物种间都具有较高的序列保守性。从结构上看，大多数Smad是由一段氨基酸序列低保守的衔接区(linker region)以及由它分别连接的N端约140个氨基酸残基的MH1结构域和C端约200个氨基酸残基的MH2结构域构成。
+
+MH1结构域在R-Smad和Co-Smad蛋白分子中高度保守，而I-Smad的N端序列与R-Smad和Co-Smad的MH1结构域序列相似性很低。Smad3的MH1结构域是由4个α螺旋、6个短的β链和5个环结构折叠而成的一个紧密的球状结构。在所有R-Smad和Smad4的MH1结构域中，有一段由11个氨基酸残基组成的、序列高度保守的β发夹结构。该发夹结构能够与特定的DNA序列直接结合，赋予MH1结构域结合DNA的能力。与其他Smad分子相比，Smad2分子的β发夹结构前多出一段由30个氨基酸残基组成的插入序列，该插入序列导致Smad2丧失了直接结合DNA的能力。MH1结构域还参与和Sp1、Jun、TFE3等转录调控因子的相互作用。另外，MH1结构域也参与了R-Smad与Smad4的核质转运。在Smad3的MH1结构域中包含着一段典型的核定位信号“KKLKK”，该序列是Smad3分子由细胞质向细胞核内运输所必需的。在未被激活的状态下，R-Smad的MH1和MH2结构域可能相互作用，从而抑制彼此的活性，这种相互作用在R-Smad经受体磷酸化后被破坏。
+
+MH2结构域在所有Smad蛋白中高度保守，R-Smad的MH2结构域与受体结合、R-Smad蛋白磷酸化以及Smad蛋白分子的寡聚化有关。Smad4的MH2结构域是由5个α螺旋、3个环围绕而成的β“三明治”型结构。Smad在细胞质中主要以单体或三聚体形式存在，MH2结构域是参与Smad分子寡聚化的关键结构域。Smad2和Smad3的MH2结构域还可与SARA（Smad anchor for receptor activation）以及其他一些衔接蛋白结合，定位于早期内吞体膜上。MH2结构域也是R-Smad与I型受体直接结合的区域。R-Smad与不同受体间相互作用的特异性是由位于R-Smad的MH2结构域的L3环和I型受体的L45-环共同决定的:I型受体的L45-环能够与R-Smad分子的L3环选择性结合，该结合决定了TGF-β信号与BMP信号通过不同受体分子传递给不同R-Smad分子，从而产生信号传递的特异性。与Smad4的MH2结构域相比，R-Smad在MH2结构域表面邻近L3环处有一个碱性口袋结构，这个带正电的碱性口袋结构能够识别激活的I型受体上由于磷酸化而带负电的GS区，促使R-Smad与激活的I型受体结合。除此之外，MH2结构域也是细胞核内的某些重要转录因子结合的区域。
+
+Smad连接MH1和MH2的衔接区上有很多重要基序。已知具有重要功能的基序包括:促分裂原活化的蛋白激酶（MAPK）的作用位点，在R-Smad分子中，该位点的磷酸化可影响R-Smad的活性、稳定性以及在细胞核内外的分布；Smad4的衔接区上一段特殊的Smad激活区（Smad activation domain, SAD），SAD在空间结构上与Smad4的MH2结构域上的一段特异的序列相连接，形成Smad4具有转录活性所必需的结构；Smad4的衔接区上一段核输出信号（nuclear export signal, NES）；在R-Smad和I-Smad的衔接区中的一段高保守的“PY”基序。该基序具有与E3泛素连接酶Smurf1、Smurf2的WW结构域结合的功能（图13-3）。
+
+在没有配体刺激的基础状态下，R-Smad主要存在于细胞质基质中，Smad4在细胞核与细胞质中都有分布。R-Smad的入核行为依赖于配体刺激，但不依赖于与Smad4的结合。在细胞核内，R-Smad被去磷酸化，导致
+
+(A)
+
+![](images/page_267_image_1.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  subgraph MH1 ["MH1"]
+    direction TB
+  A["与DNA结合(β发夹结构)\nSmad3的核定位信号\n与转录调节因子相互作用"] --> B["MAPK等激酶磷酸化位点\n与E3泛素连接酶结合的PY基序\nSmad4的转录活性激活区(SAD)\nSmad4的核输出信号"]
+  end
+
+  subgraph衔接区["衔接区"]
+    direction TB
+  C["Smad分子寡聚化\n与I型受体特异性识别(L3-环)\nR-Smad与Smad4相互作用\n结合SARA转录激活功能\n与DNA结合蛋白相互作用"] --> D["SMAD分子寡聚化\n与I型受体特异性识别(L3-环)\nR-Smad与Smad4相互作用\n结合SARA转录激活功能\n与DNA结合蛋白相互作用"]
+  end
+
+  subgraph MH2 ["MH2"]
+    direction TB
+  E["受体磷酸化位点"] --> F["SSXS"]
+  end
+
+  A -.-> C
+  B -.-> C
+  C -.-> E
+```
+</details>
+
+(B)
+
+![](images/page_267_image_3.jpg)
+
+<details>
+<summary>chemical</summary>
+
+3D protein structure diagram showing helices H1, H2, H3 and a central alpha helix with labeled termini C, N
+</details>
+
+(C)
+
+![](images/page_267_image_5.jpg)
+
+<details>
+<summary>text_image</summary>
+
+C
+N
+L3-环
+</details>
+
+图13-3 Smad3 MH1和Smad3 MH2结构图/Smad结构域及功能（结构图仿自PDB蛋白质数据库）
+
+(A) R-Smad 和 Smad4 蛋白分子由 MH1、MH2 结构域及其衔接区组成，结构高度相似。基础状态下，Smad 蛋白呈单聚体或三聚体存在，MH1 和 MH2 结合并相互拮抗。R-Smad 在 C 端特有一段高度保守的受体磷酸化序列 “SSXS”。R-Smad 被受体磷酸化后，MH1 和 MH2 间的结合被破坏，通过 MH2 与 Smad4 结合，进入细胞核结合 DNA 及其 DNA 结合蛋白、转录调节因子，发挥共转录因子活性。衔接区是重要的 Smad 活性调节区，MAPK 信号通路可通过磷酸化衔接区的多个位点影响 Smad 活性；E3 泛素连接酶 Smurf 也通过衔接区的 PY 基序与 Smad 结合，影响其降解。(B) Smad3 的 MH1 结构域与 DNA 上的 Smad 结合元件 (SBE) 结合的结构图。回文状的 DNA 和 MH1 结构域分别用紫色和蓝绿色标记，DNA 结合域用橙色标记。(C) Smad3 MH2 结构域的结构图，L3 环用红色标记。
+
+R-Smad-Smad4复合物发生解离，去磷酸化的R-Smad被运送回细胞质基质。与R-Smad不同，Smad4持续穿梭于细胞质与细胞核之间。
+
+在大多数细胞中，Smad6、Smad7在没有配体刺激时定位于细胞核内，有TGF-β信号刺激时出核进入细胞质，行使抑制TGF-β信号的功能。TGF-β诱导的Smad7的出核需要Smad7与Smurf-1、Smurf-2的结合；BMP诱导的Smad6于细胞质基质的定位与Smad6和细胞质基质蛋白的结合有关。
+
+## 13.2.4 Smad 蛋白的 DNA 结合活性和转录调节功能
+
+Smad4以及除了Smad2的所有R-Smad都能够以序列特异性的方式与DNA结合。经典的DNA上最小的Smad结合元件（Smad binding element，SBE）是一段以5'-CAGA-3'或5'-AGAC-3'DNA序列为核心的区域。SBE广泛存在于Smad7等多种受TGF-β、activin以及BMP信号调控的基因的启动子区。从Smad3的MH1结构域与SBE形成复合物的晶体结构上看，两分子的Smad3通过MH1上的11个氨基酸残基构成的β发夹结构分别且独立地与一分子的5'-AGAC-3'序列上的碱基和磷酸二酯骨架形成特异的氢键连接。MH1结构域上的另一段序列α螺旋2（α-helix 2）也有助于Smad3与SBE序列的结合。在
+
+表13-2 与Smad结合的DNA结合蛋白、转录调节因子
+
+| 与Smad结合的转录增强因子 | Smad结合的转录抑制因子 |
+| --- | --- |
+| AP-1:由Fos(分子量$5.5 \times 10^4$)和Jun(分子量$3.9 \times 10^4$)组成的异二聚体转录因子,通过亮氨酸拉链与DNA结合,与Smad3、Smad4结合 | Androgen受体:与Smad3结合,但不与Smad2、Smad4结合,其配体结合区抑制Smad3与DNA的结合 |
+| ATF-2:属于ATF/CREB家族蛋白,通过亮氨酸拉链与Smad3、Smad4的MH1结构域结合 | E1A:腺病毒肿瘤蛋白,与Smad1、Smad2、Smad3结合,干扰Smad与转录激活因子p300的结合 |
+| CBP/p300:与Smad1、Smad2、Smad3、Smad4结合,增强转录活性 | Evi-1:锌指蛋白,能够招募HDAC,是转录共抑制因子。与Smad3结合,抑制TGF-β信号 |
+| FAST-1,2:与Smad2、Smad3、Smad4结合,促进activin诱导的Mix2在爪蟾的表达和activin诱导的Tlx在小鼠中表达 | Hoxc-8:包含一个homeodomain的DNA结合蛋白,有抑制转录的功能,参与调节软骨细胞分化。Smad1与Hoxc-8的结合使Hoxc-8从DNA上解离,开启转录 |
+| LEF1 (lymphoid enhancer binding factor1):T细胞特异性表达,含有HMG box的转录因子,参与Wnt信号。与Smad2、Smad3、Smad4结合 | PPAR (peroxisome proliferator activated receptor):与Smad3结合,干扰TGF-β诱导的基因表达 |
+| MSG-1:转录激活因子,自身缺乏DNA结合活性,与Smad4(MH2)结合 | SIP1 (Smad interacting protein):包含一个锌指结构和一个homeodomain,是有抑制转录功能的DNA结合蛋白,与Smad1、Smad2、Smad3、Smad5(MH2)结合,SIP1与Smad的结合能使SIP1从DNA上解离,从而解除SIP1对转录的抑制作用 |
+| OAZ:锌指蛋白,与Smad1结合 | Ski and SnoN:作为核肿瘤蛋白被发现,有招募HDAC的功能,是转录抑制因子。与Smad2、Smad3、Smad4(MH2)结合,抑制TGF-β诱导的转录 |
+| SP1:与Smad2、Smad3、Smad4结合,增强Sp1对p15启动子的DNA结合和转录活性 | SNIP1 (Smad nuclear interacting protein 1):转录抑制因子,与Smad4和CBP/p300结合,过表达干扰p300与Smad4的结合 |
+| TFE3:通过亮氨酸拉链与DNA结合,与Smad2、Smad3、Smad4结合 | TGIF (TGT-interacting factor):常规转录抑制因子,包含一个homeodomain,能够招募组蛋白去乙酰化酶HDAC,与Smad2、Smad3结合 |
+| 维生素D受体:与Smad3(MH1)结合 | ATF3:属于ATF/CREB家族成员,ATF3可以结合Smad3从而介导对ID1基因的转录抑制 |
+
+Smad2的MH1结构域上，参与DNA结合的β发夹及α螺旋2之间多出一段30个氨基酸残基组成的插入序列，使Smad2失去直接结合DNA的能力。SBE在基因组中出现的概率很高，而且单个SBE与Smad的结合亲和力低，不足以引起Smad诱导的转录，仅靠Smad与DNA的直接结合不足以满足Smad调节其靶基因的选择性和亲和力的要求，因此Smad主要是作为转录共调节因子影响靶基因转录。除SBE之外，Smad1、Smad3和Smad4的MH1结构域与一些富含GC碱基的基因启动子区也有特异性结合。
+
+在细胞核中，Smad在DNA结合蛋白协助下接近靶基因，同时招募其他转录调节因子参与靶基因转录调节（表13-2）。不同的DNA结合蛋白与Smad结合，直接影响着Smad靶基因的选择。核内的转录激活或转录抑制因子种类、浓度影响Smad对靶基因转录促进或抑制的最终效果。由于细胞核内的DNA结合蛋白和转录调节因子的表达水平受到其他多种信号通路调控，并在不同类型细胞中具有特异性表达，因此，Smad对响应TGF-β信号的靶基因的选择和转录调节功能也呈现出细胞类型的特异性，不同的细胞类型中可能有不同的TGF- $\beta$ 信号靶基因。
+
+目前已知的Smad影响转录调节的一个重要机制是Smad直接或间接招募能够影响染色质上组蛋白的乙酰化状态的转录调节因子，通过引起靶基因转录调控区染色质结构的改变，开启或关闭基因转录。R-Smad与Smad4形成的复合物能够通过MH2结构域直接招募常规转录激活因子CBP/p300。CBP/p300蛋白具有组蛋白乙酰转移酶活性，并促进Smads与其他基础转录因子结合，开启转录。Smad还能与TGIF、Ski/SnoN结合，通过它们间接招募组蛋白去乙酰化酶（HDAC），抑制靶基因转录。
+
+R-Smad也可不依赖于Smad4发挥转录调控功能。在严重急性呼吸系统综合征(severe acute respiratory syndrome, SARS)中，SARS冠状病毒的核衣壳蛋白(nucleocapsid protein, NP)可调控TGF-β信号，这一过程不依赖于Smad4。一方面，NP可增强TGF-β的转录反应，促进胞外基质蛋白PAI-1的表达，促进肺纤维化；另一方面，NP可结合Smad3的MH2结构域，促进
+
+Smad3-p300复合体的形成，并干扰Smad3与Smad4的结合，从而抑制Smad3/Smad4调控的受冠状病毒感染的宿主细胞的凋亡，进一步加重组织的纤维化。此外，在造血过程中，除了经典的Smad信号通路，TGF-β还可通过不依赖于Smad4的途径发挥调控功能。转录辅因子TRIM33/TIF1γ与Smad4竞争结合受体激活的Smad2/3。TGF-β诱导的Smad2/3-TIF1γ与Smad2/3-Smad4复合体共存，前者可促进红系分化，而后者则介导TGF-β的抗增殖作用，从而进一步促进组织自稳态的维持。
+
+除了在转录调节中发挥重要作用，最近的研究发现R-Smad还参与miRNA的转录后调控。miRNA是21～24 nt的非编码RNA，调控mRNA的水平和翻译。研究发现miR-21在TGF-β和BMP信号诱导的血管平滑肌细胞收缩过程中发挥关键作用，TGF-β可上调miR-21的量，这一过程不依赖于转录。R-Smad与RNA核酸内切酶Drosha复合体成员之一p68蛋白结合在pri-miR-21上，这一过程依赖于配体的刺激，但不需要Smad4。响应TGF-β和BMP信号的miRNA的中间序列包含保守的R-Smad识别序列5'-CAGAC-3'，这段序列又被命名为RNA-Smad结合元件(RNA-Smad binding element,
+
+R-SBE)，是Smad调控的miRNA加工过程中的关键序列元件，TGF-β和BMP刺激能增强R-Smad与Drosha在pri-miRNA（primary miRNA transcript）上的结合，加快其切割速率。虽然双链DNA和双链RNA在二级结构上存在很大差异，但R-Smad既可与DNA结合调控转录过程，又可与RNA结合调控miRNA的生物合成。
+
+## 13.2.5 不依赖于Smad的TGF- $\beta$ 信号
+
+除了 Smad 介导的转录，TGF- $\beta$  还能激活包括 MAPK 通路在内的多种其他信号通路 (non-Smad pathway)。其中一部分通过激酶调节 Smad 活性来控制转录 (见本章 13.3)；另一部分则不通过 Smad 的信号传递引发细胞效应 (图 13-4)。
+
+TGF-β刺激能够在极短时间（15 min内）迅速激活细胞中的ERK、JNK和p38 MAPK通路，在Smad4缺失或表达显性抑制（dominant negative）型Smad的细胞中，TGF-β也仍然能够迅速激活ERK、JNK以及p38 MAPK激酶通路，这些说明细胞中存在着不依赖于Smad的TGF-β对MAPK的激活途径。TGF-β刺激能够磷酸化TAK1（TGF-β-activated kinase 1）和MAPKKK家族成员
+
+![](images/page_269_image_6.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["TGF-β"] --> B["RAS"]
+  A --> C["TAK1/MEKK1"]
+  A --> D["RhoA"]
+  A --> E["Rac/cdc42"]
+  A --> F["AKT"]
+  A --> G["PP2A"]
+  
+  B --> H["ERK MAPK"]
+  C --> I["MKK3/6"]
+  C --> J["MKK4"]
+  D --> K["p160 ROCK"]
+  E --> L["PAK2"]
+  F --> M["p70 S6K"]
+  
+  H --> C
+  I --> J
+  J --> M
+  G --> M
+```
+</details>
+
+图13-4 细胞内存在的不依赖于Smad的TGF- $\beta$ 信号通路
+
+在一些特定类型细胞中，TGF- $\beta$ 刺激能够直接激活RAS、TAK1、GTP结合蛋白、AKT、蛋白磷酸酶PP2A等蛋白，引发一系列不依赖于Smad传递的细胞效应（如图中箭头所示）。
+
+MEKK1，经由MKK4（MAPK kinase 4）激活JNK通路，或通过MKK3（或MKK6）激活p38途径。TGF-β还可以通过Ras激活ERK通路。TGF-β引起的MAPK途径的激活与TGF-β通过Smad途径对细胞的效应之间既具协同作用又存在拮抗作用，在不同种类的细胞中表现不同。TAK1还磷酸化IκB因子，因此TGF-β信号也能够通过TAK1影响NF-κB信号通路。
+
+TGF-β刺激能够迅速激活RhoA、Rac和cdc42等GTP结合蛋白。Rac和cdc42也能够激活JNK和p38MAPK途径。TGF-β对GTP结合蛋白的激活参与TGF-β引起的细胞骨架重塑、上皮细胞—间充质细胞转换等生物过程。TGF-β还可激活蛋白磷酸酶PP2A，导致p70 $^{S6K}$ 去磷酸化而失去活性，参与TGF-β引起的细胞生长抑制过程。TGF-β能够以不依赖于Smad的方式激活磷脂酰肌醇3-激酶途径(phosphatidylinositol-3-kinase, PI3K)和AKT。在一些细胞系中，TGF-β也通过RhoA磷酸化AKT。此外，TGF-β还能够活化PAK2(p21-activated kinase 2)，该过程也不依赖于Smad，但受到Rac1和cdc42的调节。TGF-β对PAK2的激活作用特异地发生于成纤维细胞，在上皮细胞中并不存在，这可能与TGF-β对成纤维细胞的生长刺激功能有关。
+
+需要提到的是，Smad蛋白一直认为只介导或调控TGF- $\beta$ 家族信号，但最近有证据显示，Smad还可以参与非TGF- $\beta$ 信号。例如，Smad7与gp130结合，促进LIF介导的STAT3激活、参与胚胎干细胞多能性的维持。
+
+## 13.3 TGF- $\beta$  信号转导的调控
+
+TGF- $\beta$ 超家族信号在胚胎发育、细胞分化及疾病发生等生理、病理过程中具有多方面的作用，调节的基因十分广泛，而传递TGF- $\beta$ 超家族信号的经典通路——Smad通路却相对简单。因此，细胞中存在对TGF- $\beta$ 信号通路各个环节的精密的调控机制，这些调控对于细胞对TGF- $\beta$ 信号的正确应答发挥着关键作用。
+
+## 13.3.1 配体活性的调节
+
+多种结合TGF-β的蛋白参与调控TGF-β活性。前面提到，生物体内多种细胞均分泌非活性状态的L-TGF-β，水解L-TGF-β的N端无活性肽（LAP）的纤维蛋白溶酶具有调节TGF-β活性的作用。无活性的TGF-β的结合蛋白（LTBP）属于分泌型糖蛋白家族，能够与LAP通过二硫键连接。LTBP可能有利于TGF-β的分泌、储存或激活LAP-TGF-β复合物，起到协助调节TGF-β活性的作用。饰胶蛋白聚糖（decorin）属于小分子富含亮氨酸的蛋白多糖家族（small leucine-rich proteoglycan，SLRP），由一个核心蛋白和一个共价连接的黏多糖链组成。饰胶蛋白聚糖能够直接与活性形式的TGF-β结合，并抑制其功能。
+
+## 13.3.2 受体活性的调节
+
+FKBP12是高度保守的胞质细胞因子，在大多数细胞中广泛存在，能够抑制TGF-β的I型受体的激活。FKBP12的主要功能是与I型受体在基础状态下结合，防止无配体存在时由于受体之间的相互作用而引起的非特异性的信号渗漏。在无TGF-β存在时，FKBP12通过疏水力与紧接I型受体GS结构域之后的“LP”基序结合，使I型受体GS结构域被遮盖，从而不能被II型受体磷酸化。当存在TGF-β时，TGF-β能够诱导II型受体与I型受体形成复合物，导致FKBP12与I型受体解离，I型受体的GS区重新暴露，能够被II型受体激活。
+
+除了磷酸化调控之外，TGF-β受体还受到泛素化（ubiquitination）、neddylation修饰以及SUMO化（sumoylation）的调控。Smad7可以募集泛素化酶Smurf1、Smurf2以及WWP1/Tiul1、NEDD4-2到TGF-β的I型受体，从而导致后者的泛素化降解。neddylation修饰和SUMO化是形式上类似于泛素化的一类由E1、E2和E3 NEDD8连接酶或SUMO连接酶催化的级联反应，进而影响被修饰蛋白的定位或功能。近期的研究表明，E3泛素连接酶c-Cbl蛋白可通过促进TGF-βⅡ型受体的neddylation修饰，促进其通过网格蛋白调控的内吞方式进入EEA1阳性的早期内吞体中。由于neddylation修饰会拮抗泛素化，从而稳定TβRII，进而促进TGF-β信号的传递。TβRI是目前已知的唯一能够被SUMO化修饰的跨膜受体激酶。当存在TGF-β时，SUMO修饰发生在TβRI胞内段的第389位赖氨酸（Lys389）上，该修饰可以促进TβRI对Smad2和Smad3的招募，从而促进TGF-β信号转导。
+
+近期的研究表明，跨膜金属蛋白酶TACE（tumor necrosis factor- $\alpha$  converting enzyme，即TNF- $\alpha$ 转化酶，也称为ADAM17）能够特异性切除T $\beta$ RI受体，产生一条分子量约 $4.0 \times 10^{4}$ 的胞内端和剩余的跨膜区连胞外端，导致TβRI失活，但不影响TGF-β配体结合TβRII。生长因子诱导的ERK/MAPK信号以及炎症刺激诱导的p38/MAPK信号均能促进TACE调控的TβRI的剪切，从而降低细胞膜上TβRI的数量、抑制TGF-β通过Smad通路进行的信号转导。但是，另一研究人员发现TACE介导的TβRI的切割会导致其胞内段转运至核内，作为转录调控因子发挥功能，这一过程有泛素连接酶肿瘤坏死因子受体相关因子6（TRAF6）参与。TRAF6能够与TβRI结合，导致TβRI的Lys63多聚泛素化，进而促进TβRI被TACE酶切割，而后其胞内段在核内与转录调控因子p300协同激活肿瘤侵袭相关的基因，如Snail、MMP2等。除TβRI外，TβRII型受体的活性也受到另一个金属蛋白酶ADAM12（a disintegrin and metalloprotease）的调控。与上文的调控方式不同，ADAM12通过与TβRII的胞外结构域结合，在质膜上共定位，促进TβRII通过网格蛋白介导的内吞进入早期内吞体，稳定TβRII，促进TGF-β通过Smad通路进行的信号转导。
+
+一些具有WD-40重复基序的蛋白也能够与TGF-β受体相互结合进而调控受体活性。例如，STRAP蛋白能够与TβRII、TβRI、Smad2、Smad3以及Smad7结合。STRAP能够抑制TGF-β引起的转录，并稳定Smad7与受体的结合；TGF-β受体结合蛋白-1（TGF-β-receptor interacting protein 1, TRIP-1）可以与配体结合的TβRII结合并被磷酸化，增加细胞内TRIP-1的蛋白水平会抑制TGF-β诱导的转录，TRIP-1的一些突变则能够提高细胞对TGF-β的响应；蛋白磷酸酶PP2A的Bα调节亚基也是具有WD-40重复基序的蛋白，能够直接与I型TGF-β受体结合，并增强TGF-β信号抑制细胞增殖的功能。
+
+除此之外，受体的活性还受到其他方面的调控，如受体可通过胞吞作用到溶酶体降解，从而控制细胞膜上受体的数量。
+
+## 13.3.3 Smad活性的调节
+
+TGF- $\beta$ 与受体结合诱导的受体内吞过程直接影响TGF- $\beta$ 信号的传递效率。一些受体结合蛋白在促进TGF- $\beta$ 诱导的受体内吞、囊泡运输、招募R-Smad到内吞体或质膜上与受体结合中发挥重要作用。在受体激活R-Smad过程中，SARA蛋白参与促进Smad2/3与受体的结合和活化。SARA是具有FYVE结构域的蛋白，通过FYVE结构域与早期内吞体膜上的磷脂酰肌醇-3-磷酸（PI3P）相结合，使SARA主要定位于早期内吞体膜上。SARA具有Smad结合结构域(Smad-binding domain, SBD)，可以选择性地与Smad2/3的MH2结构域结合，因此在细胞中过表达SARA，可导致Smad2/3从弥散状分布变为点状分布在内吞体膜上。受体对Smad2/3磷酸化后，磷酸化的Smad2/3从SARA上脱离并运送入细胞核内。SARA的C端还可以与激活的受体复合物结合。另有研究报道，SARA能够把蛋白磷酸酶1(protein phosphatase 1, PP1)招募到I型受体上，通过PP1对基础状态下的I型受体去磷酸化，抑制I型受体的基础活性。SARA还能结合未被磷酸化的Smad2，抑制Smad2固有的入核活性，防止Smad2在无TGF-β信号时入核。另一个具有FYVE结构域的蛋白——肝生长因子调节的酪氨酸激酶底物(hepatic growth factor-regulated tyrosine kinase substrate, Hrs)，也参与调节TGF-β信号。最初研究认为，在受体复合物与Smad2的结合过程中，Hrs能够与SARA蛋白协同促进TGF-β和activin信号的传递。另外，具有FYVE结构域的endofin蛋白也能与Smad4结合，并促进R-Smad-Smad4复合体的形成。
+
+一些细胞骨架蛋白也参与了Smad在细胞中的定位和信号传递，这对Smad的激活及信号传递具有重要作用。未被磷酸化的Smad2/3与微管蛋白微丝相结合，TGF-β信号诱导它们之间发生解离，破坏微管蛋白可以增加Smad2的磷酸化和活性。Smad还和与肌动蛋白交联的细丝蛋白结合，细胞中细丝蛋白缺失将削弱Smad2的磷酸化和TGF-β的信号传递能力。ELF（embryonic liver fodrin）是一种细胞骨架蛋白，属于β-血影蛋白(β-spectrin)家族成员。有研究报道，TGF-β刺激可诱导ELF磷酸化，使ELF脱离与锚蛋白B(ankyrin)、原肌球蛋白(tropomyosin)的结合，转而结合Smad3和Smad4，ELF可能是通过促进Smad3的磷酸化以及Smad4的核转运来促进TGF-β信号传递。
+
+R-Smad蛋白C端SXS位点的磷酸化是其激活的直接表征，I型受体介导的磷酸化激活它们的活性，而去磷酸化有相反作用。PPM1A/PP2Cα可以特异性地催化Smad2/3 C端SXS位点的去磷酸化，从而负调控TGF-β信号。另外，PPM1A不仅可以去磷酸化Smad2/3，还可以介导Smad1 C端SXS位点的去磷酸化。除PPM1A外，SCP（small C-terminal domain phosphatase）和PDP

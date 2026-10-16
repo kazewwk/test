@@ -1,0 +1,596 @@
+# 第4章 DNA损伤修复与基因组稳定性
+
+原始 PDF 第 93–109 页。
+
+第4章
+
+## DNA 损伤修复与基因组稳定性
+
+4
+
+DNA 蕴含着生物体遗传信息，指导生物的生命活动。DNA 的稳定遗传，决定着生命的延续。真核生物 DNA 分子缠绕组蛋白八聚体形成核小体。串珠状的核小体丝进一步螺旋形成 30 nm 螺线管，并最终折叠螺旋形成高度浓缩的染色质结构。在正常的生命活动过程中，DNA 时刻遭受内外环境因素（包括 ROS、DNA 复制错误、X 射线、烷化剂等）的影响，造成 DNA 损伤。DNA 损伤如果不能及时修复，对生物体的影响如何？在长期的生命进化过程中，针对不同类型的 DNA 损伤，生物体演化出怎样的损伤修复机制来维持基因组的稳定性？染色质高度螺旋折叠浓缩并且局部异染色质化，在 DNA 损伤修复过程中染色质的高级结构需要发生什么样的变化？需要哪些重要的蛋白因子参与？DNA 损伤修复和 DNA 复制有何关联？染色质组装因子 CAF-1 及 RecQ 螺旋酶家族成员在上述过程中发挥什么作用？本章着重阐述以上要点。
+
+## 4.1 DNA 损伤与基因突变
+
+## 4.1.1 DNA损伤
+
+DNA是生物体遗传信息的载体。DNA保持完整，并在细胞分裂过程中精确地复制，准确地将其中的遗传信息传递给下一代，是生命体得以延续的物质基础。但是，生物体中的DNA每时每刻都在遭受着损伤，如果这些损伤得不到修复，细胞的正常生命活动就会受到破坏，由细胞构成的生命体就会产生突变，由此诱发一系列的遗传疾病。癌症的发生通常是由于基因的突变引起的。在大多数情况下，在人的生命中，遗传不稳定性（genetic instability）会导致足够的突变的积累并最终产生癌症。
+
+造成DNA损伤的因素根据来源不同分为两类:第一类为内环境（如自由基）因素，包括DNA复制错误、自发损伤、基因转录引起的损伤、氧化代谢副产物如活性氧物质（reactive oxygen species, ROS）的攻击等；第二类为外环境（物理因素或化学物质等）因素，包括辐射（紫外线、X射线）、化学致癌物（氧化脱氨，烷化剂或代谢活化物如苯并芘、黄曲霉素等产生碱基加合物）。基因转录是细胞的重要生理过程。由于基因转录的过程中，染色质需要局部解除紧密包装的高级结构, DNA 解开双链, 充分暴露在各种损伤诱导因素的作用下, 增加了损伤发生的概率。近年来, 基因转录偶联的 DNA 损伤及基因组不稳定性逐渐引起人们的重视。
+
+## 4.1.2 DNA损伤引起的基因突变
+
+DNA损伤若不能及时修复，就会造成基因组的突变。基因组突变是指遗传物质发生的可遗传变异，具体可分为两类:染色体畸变（chromosome aberration）和基因突变（gene mutation）。染色体畸变是指染色体数目和结构的改变，基因突变是指基因的核苷酸种类或数目发生改变。在自然条件下发生的突变称为自发突变，由人工利用物理因素或化学药剂诱发的突变称为诱发突变。
+
+基因突变的形式有很多种，在人类基因组中常见的有点突变、基因缺失、插入、扩增、重复和倒位等多种形式。点突变(point mutation)是指DNA分子中单个碱基的改变，即一个碱基对被另一不同碱基对代替。根据碱基替换的方式不同，点突变又可分为两种:转换(transition)和颠换(transversion)。转换是指同型碱基之间的替换，即一种嘌呤被另外一种嘌呤替换，或一种嘧啶被另外一种嘧啶替换。颠换是指不同型碱基之间的
+
+80
+
+第 4 章 DNA损伤修复与基因组稳定性
+
+---
+
+替换，即嘌呤被嘧啶替换或嘧啶被嘌呤替换。根据遗传信息的改变方式，点突变又可分为同义突变、错义突变和无义突变3种类型。
+
+① 同义突变:有时DNA一个碱基对的改变并不影响它所编码蛋白质的氨基酸序列，这是因为改变前、后的密码子是简并密码子，它们编码同一种氨基酸。
+② 错义突变:由于一对或几对碱基对的改变而使决定某一氨基酸的密码子变为决定另一种氨基酸的密码子的基因突变称为错义突变。这种基因突变有可能使它所编码的蛋白质功能部分或完全失活。
+③ 无义突变:由于一对或几对碱基对的改变而使决定某一氨基酸的密码子变成一个终止密码子的基因突变称为无义突变。
+
+基因缺失是指由于某种原因导致某基因的全部或部分核苷酸序列丢失，引起该基因功能缺陷。基因扩增是指基因的拷贝数增加。一些正常细胞在其生长发育过程中或某些药物等选择压力下，可以通过基因扩增的方式大量表达某种相关蛋白，以满足特殊生长阶段的要求。基因插入是指基因中一些新的碱基对的插入导致编码序列阅读框的改变或终止翻译。插入序列的长度不等，可以是一个至几个碱基，也可以是十个至成百上千个碱基。基因重复是指由于同源染色体（或姐妹染色体）间发生同源重组，或在同源程度较低情况下发生非同源重组，从而导致基因的部分或全部序列出现重复。基因倒位指由于DNA借助重复序列发生同源重组而导致基因中的碱基序列重新排列的现象。
+
+人类基因组大约由 $3\times10^{9}$ 个核苷酸对组成，其中约3%的DNA为基因编码序列，共编码3万余个基因。在内外环境因素的作用下，容易导致各种各样的DNA突变。在生物体众多的突变中，绝大多数突变是无意义或有害的，只有极少数可以提高生物体在自然选择压力下的生存力，这种突变对于生物个体有利。因此，基因突变是生物变异的主要原因，同时也是物种进化的动力。
+
+## 4.1.3 DNA损伤的类型
+
+不同类型的诱发因素导致DNA产生不同类型的损伤。紫外线能量较低，诱导DNA上相邻的嘧啶碱基形成嘧啶二聚体；而X射线能量较高，诱导产生高能的游离氧自由基，导致DNA碱基改变或双链断裂。DNA损伤的具体类型如下。
+
+## (1) 碱基缺失 (base loss)
+
+DNA上连接脱氧核糖和DNA碱基的糖苷键在生理条件下并不太稳定，在哺乳动物细胞中，每天都会有几千个嘌呤和几百个嘧啶的自然缺失。丢掉一个嘌呤或嘧啶就会产生一个无嘌呤或无嘧啶位点(apurinic/apyrimidinic, AP site)（图4-1A）。
+
+## (2) 碱基修饰 (base modification)
+
+① 脱氨基 核酸碱基上的氨基有些也不稳定，如图4-1B所示，4位的氨基脱氨变成了酮类，胞嘧啶换成了尿嘧啶。其他的一些脱氨反应包括腺嘌呤转换为次黄嘌呤，鸟嘌呤转换为黄嘌呤，以及5-甲基胞嘧啶转换为胸腺嘧啶。在普通的哺乳动物细胞中，通过这种方式，每天每个单倍体基因组中会产生大约100个尿嘧啶。
+② 化学修饰 DNA碱基可以被很多化学试剂修饰。例如，在细胞氧化代谢过程中，或在细胞受到电离辐射（X射线、γ射线）后，都会产生多种类型的活性氧（纯态氧、过氧化物自由基、过氧化氢、羟自由基），它能够对碱基进行化学修饰。一个最普通的例子就是胸腺嘧啶被修饰，5位和6位都加上羟基变成胸腺乙二醇（图4-1C）。
+
+除了活性氧外，许多环境中的化学物质，包括通常存在于人类食物中的化学物质都可以对DNA碱基进行化学修饰，经常是在DNA碱基上添加一个甲基或其他烷基基团（烷基化，alkylation）。此外，正常的代谢过程也会导致DNA烷基化的产生，例如正常代谢中的甲基供体——S-腺苷甲硫氨酸（S-adenosylmethionine）偶尔也会与DNA相互作用产生烷基化的碱基，每个哺乳动物二倍体基因组中每天能产生几千个这样的碱基，这种烷基化更容易发生在碱基的亲核基团上。
+
+③ 光损伤 细胞受到紫外线照射后，核酸所吸收的紫外线的能量会引起一些化学反应，最常见的光产物就是在同一条DNA链上相邻的嘧啶之间产生一条新的化学键而形成一个嘧啶二聚体（图4-1D），如环丁烷嘧啶二聚体（CPDs）。其中，T-T CPDs最为常见，T-C或C-T配对次之，而C-C二聚体出现的比较少。
+
+## (3) 复制错误 (replication error)
+
+尽管DNA复制过程中DNA聚合酶非常精确，而且大多数复制过程中产生的错误都会被迅速地消除，但在DNA复制过程中仍然会产生碱基错配或碱基的插入（或丢失），这些被称为复制错误。
+
+4.1 DNA损伤与基因突变
+
+81
+
+---
+
+![](../../raw/pages_0081-0096/images/page_94_image_0.jpg)
+
+图4-1 碱基缺失与不同类型的碱基修饰
+
+(A) 碱基缺失；(B) 脱氨反应；(C) 氧化修饰；(D) 嘧啶二聚体
+
+## (4) 链间交联 (inter-strand crosslink)
+
+顾名思义，链间交联就是指不同DNA链上的碱基间产生的连接。主要是由一些双功能的烷基化试剂如补骨脂素（psoralens）引起的，UV照射和电离辐射也会导致链间交联。
+
+## (5) DNA-蛋白间的交联 (DNA-protein crosslink)
+
+DNA拓扑异构酶在DNA上催化反应时，会在自己与底物DNA之间生成共价键，通常这种共价键的存在是瞬时且可逆的，在拓扑异构酶完成反应后它与DNA间的键会消失。但偶尔也会出现这个共价键未被及时移除而形成DNA与蛋白之间稳定的交联。
+
+## (6) DNA链断裂 (DNA strand break)
+
+在正常的细胞代谢过程中，拓扑异构酶、核酸酶、复制叉的崩溃（collapse）和一些修复过程中都可能产生DNA单链或双链的断裂，但是产生这种DNA链断裂的概率特别低。另外，一些电离辐射也会导致DNA链断裂。
+
+## 4.2 DNA 修复与基因组稳定性的维持
+
+如前所述，各种理化因素（如放射线、紫外线和致癌物质等）促使细胞产生成千上万的DNA改变。以人体细胞为例，每天仅有极少（少于0.02%）的DNA改变能够发展为稳定遗传的DNA突变，绝大多数DNA变化得以修复，这归功于人体内高效的DNA损伤修复系统。损伤DNA必须通过检测和有效的修复，才能维持基因组的稳定性，保证细胞正常分裂和分化。如果这些损伤没有得到有效的修复，基因组的稳定性就会遭到破坏，导致多种遗传性疾病或肿瘤的发生。
+
+参与损伤修复及基因组稳定性维持的蛋白因子主要有DNA复制蛋白、拓扑异构酶、内切酶、外切酶、重组酶、连接酶和DNA螺旋酶等。修复后的DNA需要重新组装成染色质，因此多种染色质组装因子，特别是负责
+
+82
+
+第 4 章 DNA 损伤修复与基因组稳定性
+
+---
+
+新合成DNA的染色质组装因子也直接参与DNA的修复过程，维持基因组的稳定。本章我们主要介绍DNA损伤修复的具体机制以及CAF-1（染色质组装因子1）和RecQ螺旋酶是如何通过参与DNA修复从而维持细胞基因组的稳定。
+
+## 4.2.1 DNA损伤修复机制
+
+长期的进化过程中，生物体演化出多种DNA损伤修复机制。根据修复方式的不同可分为四大类:直接修复（direct reversal of damage）、切除修复（excision repair）（包括碱基切除修复、核苷酸切除修复、错配修复）、DNA双链断裂修复（DNA double-strand break repair）（包括同源重组修复、非同源末端连接）和损伤旁路（damage bypass）。其中，Tomas Lindahl首次发现了大肠杆菌的尿嘧啶N-糖基化酶（uracil N-glycosylase，UNG），从而揭示了从原核生物到人体的碱基切除修复。Aziz Sancar克隆了参与细菌光修复的重要酶——光裂合酶（photolyase），并阐述了核苷酸切除修复的分子机制。Paul Modrich发现了原核细胞依据DNA模板链和产物链甲基化状态的差异，特异修复新合成的DNA链上错配碱基的具体机制。三人因为在DNA损伤修复机制的开创性研究而共同获得2015年诺贝尔化学奖。
+
+## (1) 切除修复
+
+自然界中能够通过直接逆转的方式修复的DNA损伤相对很少，更广泛存在的DNA修复是将受损的DNA碱基或核苷从基因组切除并新合成正常的DNA代替，即切除修复。切除修复是指利用DNA分子双链的特性（即包含两套遗传信息），当DNA某条单链受损时，先将受损的碱基或核苷酸切除，然后以另一条DNA单链为模板合成新的DNA分子。切除修复从原核到真核生物中都广泛存在，包括碱基切除修复、核苷酸切除修复和错配修复。
+
+① 碱基切除修复(base excision repair, BER) 碱基切除修复主要是去除错误的碱基(如尿嘧啶)或受损的碱基(如3-甲基腺嘌呤)，是修复内源性DNA损伤(自发水解、烷基化和活性氧攻击)的主要途径。碱基切除修复包括多条途径，每条修复途径对应一种特定的碱基损伤。不过，所有的修复途径都有共同点，即修复过程一般分为三步，它们之间的区别在于第一步不同，而第二步和第三步完全相同。
+
+第一步，也是最关键的一步，通过一种特异的糖苷酶（glycosylase）先去除变异碱基（如被氧化、烷基化或脱氨的碱基）。该糖苷酶催化连接损伤碱基与脱氧核糖之间的糖苷键水解，释放游离碱基并在DNA中产生一个去碱基位点（AP site）。
+
+第二步，由去嘌呤/去嘧啶（AP）核酸内切酶在去碱基位点的上游切出一个缺口，生成一个3'-OH。
+
+第三步，DNA聚合酶以正常链为模板，在3'-OH处延伸，核酸外切酶切除AP位点，DNA连接酶把缺口接上。
+
+碱基切除修复中有很多的糖苷酶参与，表4-1中列出的是一些在人体细胞中发现的糖苷酶。有一类糖苷酶是专门去除尿嘧啶（U）的，尽管U:A并不致突变，但是如果U替换了T会改变DNA与蛋白的结合能力，所以将与A配对的U移除对细胞的健康也非常重要。大多数糖苷酶都是单体酶，不需要辅因子（cofactor）或二价阳离子。大多数糖苷酶特异对应一种错误的碱基，也有一些酶具有更广泛的底物特异性。
+
+② 核苷酸切除修复(nucleotide excision repair,
+
+表 4-1 人体细胞中的糖基化酶
+
+| 缩写 | 全称 | 大小/aa | 底物 |
+| --- | --- | --- | --- |
+| UNG | uracil DNA N-glycosylase | 313 | ssU>U=G>U=A, 5-FU |
+| TDG | thymine DNA glycosylase | 410 | U=G>ethenocytosine: G>T=G |
+| UDG2 | uracil DNA glycosylase 2 | 327 | U=A |
+| SMUG1 | single-strand-selective monofunctional uracil-DNA glycosylase 1 | 270 | ssU>U=A, U=G |
+| MBD4 | methyl-CpG binding domain 4 | 580 | U或T in U/TpG: 5l-meCpG |
+| MPG | methylpurine DNA glycosylase | 293 | 3l-meA, 7l-meA, 3l-meG, 7l-meG |
+| MYH | mutY homolog | 535 | A=G, A: 8-oxoG |
+| OGG1 | 8l-oxol-guanine glycosylase 1 | 345 | 8l-oxoG=C |
+| NTH1 | endonuclease three homolog 1 | 312 | Tl-glycol, Cl-glycol, formamidopyrimidine |
+
+4.2 DNA修复与基因组稳定性的维持
+
+83
+
+---
+
+NER）尽管碱基切除修复非常重要，但是它无法应对所有的DNA损伤。这是因为对一个特定的损伤来说，如果要通过BER修复，首先必须有一个能够识别损伤的特定糖苷酶。但是细胞中存在着多种不同类型的DNA损伤，并不是所有的DNA损伤都能被DNA糖苷酶所识别。因此，生物体在进化中又形成了一种更灵活的DNA修复机制，即核苷酸切除修复，可借此修复几乎所有较大型的DNA损伤，包括紫外辐射诱导的环丁烷嘧啶二聚体（CPD）和一些化学物质诱导产生的大化合物。
+
+相对于碱基切除修复，核苷酸切除修复的过程更加复杂，参与的蛋白更多（包括20种以上蛋白）。这些蛋白有的识别损伤位点，有的参与切除核苷酸（表4-2）。核苷酸切除修复的过程大致为:首先由多聚体复合物识别损伤，再在损伤的两侧切断受损链。受损DNA单链片段在DNA螺旋酶的作用下得以释放，由此产生的DNA缺口由DNA聚合酶填补，DNA连接酶封闭。
+
+NER 理论上可以修复发生在细胞基因组任意位置的 DNA 损伤。但是，细胞还具有一种特殊的 DNA 损伤修复机制称作转录偶联修复 (transcription-coupled repair, TCR)，确保基因组中重要的 DNA 序列（高转录活性的基因组序列）的损伤得以高效修复。这种修复方式通过
+
+RNA聚合酶偶联NER修复通路而实现:基因转录过程中，RNA聚合酶在DNA损伤处停留，将DNA损伤修复元件募集到损伤处进行DNA修复。原核生物由于基因较短，RNA聚合酶会先从DNA链上解离下来，待修复完成后再重启转录。
+
+③ 错配修复 (mismatch repair, MMR) 错配修复主要负责修复DNA复制过程中产生错误配对的碱基。通过检查新生DNA链有无错配碱基，并将其切除，以正确的序列补上缺口。生物体的错配修复系统从细菌，酵母到人体细胞中都广泛存在。一般来说，大多数的碱基错配都是由复制错误引起的，但是其他的一些因素也会引起碱基错配，如5-甲基胞嘧啶脱氨后形成胸腺嘧啶，这样就会与鸟嘌呤错误配对。
+
+人们对错配修复基因的认识首先来源于对E. coli的研究。E. coli中承担错配修复主要任务的是MutS、MutL和MutH。MutS和MutL都是以同源二聚体的形式结合在DNA上发挥功能。如果在复制过程中出现了碱基错配，MutS会识别新生链上的错配碱基并结合上去，随后MutL也会结合在这个DNA-蛋白复合体上并且对它们的结合起着稳定作用。E. coli中的GATC序列通常是被甲基化修饰的，但新生链在刚合成出来后并不是立即被甲
+
+表 4-2 参与核苷酸切除修复的蛋白
+
+| 蛋白质 | 可能的功能 |
+| --- | --- |
+| DDB1 | 结合损伤DNA(与XPE一起);是E3泛素连接酶(E3UL)的一个组分 |
+| XPE (DDB2) | 结合损伤DNA(与DDB1一起);在一些E3ULs中,与DDB1协作 |
+| XPC | 结合损伤DNA(与HR23B一起);募集其他NER蛋白 |
+| HR23B | 结合损伤DNA(与XPC一起);募集其他NER蛋白 |
+| XPB | 3'→5'解旋酶;DNA解螺旋 |
+| p62 (GTF2H1) |  |
+| p44 (GTF2H2) | 调控XPD |
+| p34 (GTF2H3) |  |
+| p52 (GTF2H4) | 调控XPB |
+| p8 (GTF2H5; TTD-A) | 刺激XPB的早期DNA解螺旋活性 |
+| XPD | 5'→3'解旋酶;晚期DNA解螺旋 |
+| MNAT1 | CDK组装因子;转录 |
+| CDK7 | CDK (C-terminal domain kinase); CAK; 转录 |
+| CCNH | cyclin; 转录 |
+| XPA | 结合并稳定开放复合体;验证损伤;募集RPA, ERCC1 |
+| RPA1, 2, 3 | 结合开放复合体中无损伤链 |
+| XPG | 核酸内切酶(3'切开);稳定开放复合体 |
+| XPF | 核酸内切酶的一部分(5'切开) |
+| ERCC1 | 核酸内切酶的一部分(5'切开) |
+
+84
+
+第4章 DNA损伤修复与基因组稳定性
+
+---
+
+基化，旧的DNA链甲基化而新生链没有被甲基化这一机制让E.coli可以简单地将新生链与旧链区分开来。MutS与MutL结合后会移位到GATC位点，激活结合上来的MutH。后者是一种核酸内切酶，在子链未甲基化的5'-GATC-3'序列靠近鸟嘌呤的5'端造成一个切口，使包括错配碱基在内的数百个核苷酸得以切除，UvrD和单链特异的核酸外切酶在碱基切除中起作用。其后，DNA聚合酶（polymerase III）和DNA连接酶合作，以正确的链为模板合成正确的新生链。值得注意的是，利用DNA序列甲基化来区分母链与新生DNA链可能只是特有地存在于E.coli中。
+
+真核细胞中的错配修复系统更加复杂，在真核细胞中存在多种MutS和MutL的同源物。其中，在人的细胞中存在5种MutS的同源物（hMSH2-6）和3种MutL的同源物（hMLH1、hPMS2和hPMS1），这些蛋白从序列到功能都具有相似性。真核细胞中MutS的同源物也是识别错配碱基并结合上去，之后MutL的同源蛋白再结合在此复合体上。但与原核细胞中不同的是，MutS和MutL的同源蛋白是以异源二聚体的形式发挥作用。人细胞中有两种MutS类似的异源二聚体，一种是MSH2-MSH6二聚体，称作MutSα；另一种是MSH2-MSH3二聚体，称作MutSβ。MutSα主要识别单个碱基错配和小的碱基插入或缺失而形成的环（1～2个碱基），而MutSβ主要识别大一点的环（2～10个碱基）。人细胞中80%～90%的MSH6都存在于MutSα中，因此MutSβ在错配修复中所起的作用比MutSα小一些。
+
+在真核细胞中MutL的类似蛋白主要以3种异源二聚体的形式存在，3种二聚体中都包含MLH1，可见MLH1在错配修复中的作用尤其重要。主要的二聚体称为MutLa，是由PMS1（酵母）或PMS2（人）和细胞中90%的MLH1组成；第二种二聚体MutLβ由MLH1和MLH2（酵母）或PMS1（人）组成；而第三种二聚体为MutLy，包括MLH1和MSH3。这3种二聚体中，MutLa发挥主要的作用。
+
+遗传非息肉性结肠癌（hereditary nonpolyposis dolon cancer, HNPCC）是一类常染色体显性遗传型疾病。临床研究发现，在HNPCC中广泛存在着错配修复基因的突变。HNPCC患者中，35%存在MSH2突变，60%有MLH1突变。因为这两个基因在所有的MutS或MutL类似的复合体中都是必需的，所以HNPCC与错配修复能力缺失有明显的关系。
+
+错配修复缺陷也使DNA聚合酶复合物滑脱（slippage）而引起的DNA序列微卫星长度变化无法得到修复，这种现象被称为微卫星不稳定（microsatellite instability，MSI），以错配修复缺陷为特征的肿瘤常显示出微卫星不稳定这一表型改变。MSI首先是在HNPCC中发现的。因此，可以说，错配修复基因的突变是HNPCC发生的根本原因，而MSI是错配修复基因缺失的重要表型。
+
+## (2) 双链断裂修复
+
+双链DNA断裂修复分为两种不同机制:同源重组修复和非同源末端连接。这两条通路都有多个修复蛋白参与，经过多步反应修复受损的DNA。
+
+① 同源重组修复 (homologous recombinational repair, HR) 同源重组修复指通过同源重组的方式，从姐妹链或同源染色体上获得正确的遗传信息，在众多修复蛋白的参与下，对断裂DNA进行正确的修复。其大致过程为:首先由细胞中的核酸外切酶，如MRE11/Rad50/NBS1(MRN)复合体中的MRE11对DNA断裂末端进行 $5'\rightarrow3'$ 方向的切割加工，暴露出 $3'$ 单链DNA末端。后者与复制蛋白RPA(replication protein A)分子结合，DNA单链被稳定并保护，防止形成二级结构。HR修复的关键步骤是Rad51依赖性链侵入过程。Rad51是大肠杆菌RecA在真核细胞中的同源物，具有DNA依赖的ATP酶活性，是HR修复途径中的核心分子，催化同源序列的寻找、链配对和链交换过程。Rad51竞争性地置换掉结合在 $3'$ 单链DNA末端上的RPA分子，并覆盖在暴露的DNA单链上，形成“核蛋白丝”(nucleoprotein filament)。Rad51引导核蛋白丝识别同源DNA模板并催化DNA链的配对，延伸并形成Holliday联结，完成链间的交换过程。Holliday联结经核酸酶和连接酶切割连接后接替，得到两个完整的双链DNA分子(图4-2)。除了以上提到的一些直接参与HR的分子外，ATM、ATR、BRCA1、BRCA2、p53和Chk1都对HR起重要的调控作用。
+
+② 非同源末端连接 (nonhomologous end joining, NHEJ) 非同源末端连接允许两条DNA末端连接，即使它们之间在DNA序列上没有相似性。非同源末端连接是指在双链断裂处两端DNA在一些修复蛋白的参与下直接连接的修复过程，从细菌到哺乳动物高度保守。NHEJ的过程大致为:双链断裂后，首先一些特异的末
+
+4.2 DNA修复与基因组稳定性的维持
+
+85
+
+---
+
+![](../../raw/pages_0097-0112/images/page_98_image_0.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["DNA双链断裂"] --> B["新链合成"]
+  C["5'→3'方向的切割加工"] --> D["连接酶连接"]
+  E["识别同源序列并配对"] --> F["形成完整DNA双链"]
+```
+</details>
+
+图4-2同源重组修复过程示意图
+
+同源重组修复通过同源重组的方式从姐妹链或同源的染色体上获得正确的遗传信息，在众多修复蛋白的参与下，对断裂的DNA进行正确的修复。
+
+![](../../raw/pages_0097-0112/images/page_98_image_3.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["DNA断裂“Synapsis”"] --> B["Ku蛋白结合在DNA双链断裂处"]
+  B --> C["Ku蛋白招募DNA-PKcs"]
+  C --> D["断裂端相互靠近"]
+  D --> E["核酸酶、聚合酶、多核苷酸激酶、XRCC4、连接酶IV结合于断裂端"]
+  E --> F["断裂端由DNA连接酶IV和XRCC4连接"]
+```
+</details>
+
+图4-3 非同源末端连接示意图
+
+Ku蛋白结合在DNA双链断裂处，并招募DNA-PK等修复蛋白，通过断裂两端蛋白的相互作用实现断裂端的相互靠近，最后在各种DNA酶的共同作用下完成DNA断链的末端连接。
+
+端结合因子（如Ku蛋白）结合在双链断裂处，在断裂处形成一个环状结构，保护DNA不被核酸酶降解，以确保遗传信息不被丢失，同时招募其他一些修复蛋白，如DNA-PK；其次，双链断裂两个末端结合的蛋白通过相互作用（Ku-Ku相互作用，DNA-PK相互作用）使断裂处的蛋白相互靠近，这一步是NHEJ的关键步骤；最后，靠近的DNA两末端通过DNA连接酶直接连接或经加工处理（如去除双链断裂末端的磷酸基团后被连接）（图4-3）。由于产生的DNA断裂形式多样，有些断裂可能不适合直接连接，这时就需要在两个末端去除几个核苷酸然后再连接起来。
+
+参与非同源末端连接的蛋白除了以上几种外，还包括XRCC4、XLF和LIG4等，这些蛋白都被Ku蛋白招募到双链断裂处完成NHEJ。此外，ATM、53BP1、MRN复合体和H2AX等蛋白都参与NHEJ修复通路。
+
+虽然有人认为非同源末端连接会导致任意两条DNA末端的连接，但事实情况并非如此。有实验表明，缺失DNA连接酶IV的小鼠细胞在遭到电离辐射后，会产生非常多的染色体易位(chromosome translocation)，但是野生细胞中就没有这样的现象，暗示着野生细胞中正常的非同源重组会优先将双链断裂的正确末端连接起来，这种现象的具体机制尚不清楚。
+
+86
+
+第4章 DNA损伤修复与基因组稳定性
+
+---
+
+![](../../raw/pages_0097-0112/images/page_99_image_0.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["DSB"] -->|"NHEJ"| B["(基因突变)"]
+  A -->|"HR"| C["Inserted GFP"]
+  A -->|"HR"| D["* + *"]
+  B --> C
+  C --> E["(单核苷酸替换)"]
+```
+</details>
+
+图4-4 DNA双链断裂修复机制在真核生物基因编辑中的应用
+
+首先利用精确靶定的核酸酶在基因组目标位置产生DSB。细胞通过NHEJ或HR来修复DSB。NHEJ产生不精确修复，在DSB附近引起核苷酸的插入或缺失。HR方式利用外源的经过编辑修饰的同源DNA序列为模板进行修复，最终在目的基因上产生相应的编辑修饰。
+
+## 4.2.2 双链断裂修复机制在真核生物基因编辑中的应用
+
+一般而言，DNA双链断裂（DSB）的产生对于细胞而言是致命的，细胞必须通过NHEJ或HR来修复断裂。如果利用核酸酶主动地在真核细胞基因组的任意位置产生DSB，再借助其自发的两种双链断裂修复方式来修复DSB，理论上就可以对细胞或生物体的基因组进行编辑。
+
+真核生物基因组编辑具体分为两个主要步骤:利用核酸酶产生DSB；细胞修复DSB，产生不同类型的基因组编辑。事实上，最近10余年陆续发展成熟的真核生物基因组编辑技术，包括ZFN、TALEN和CRISPR/Cas9技术，不同点在于产生DSB的方式不同，共同点在于都需要借助细胞的两种DNA双链断裂修复机制来达到基因编辑的目的。
+
+NHEJ修复方式直接将断裂的双链进行连接，不需要修复模板，是一种DSB的不精确修复方式，容易在修复处产生核苷酸的插入或缺失。如果这种DNA的改变发生在目的基因的编码区，就可能引起移码，产生基因突变。HR修复方式精确地以同源染色体为模板来进行双链断裂修复。利用这种特性，如果在产生DSB的同时人为引入一段事先经过修饰改造的（如加入GFP标记，单核苷酸替换等）DNA作为修复模板，细胞就会将我们预先设计的DNA修饰精确地复制进入基因组，由此产生对基因组的精确编辑（图4-4）。在基因编辑实验过程中，目的基因处产生DSB后，细胞更多的通过NHEJ来修复DNA断裂，导致通过HR获得DNA精确修饰的效率偏低。为了克服这一困难，通常突变NHEJ修复相关的重要基因，以此来抑制NHEJ的发生。例如，在黑腹果蝇的基因编辑过程中，通过突变Lig4基因来阻断NHEJ，促进HR。
+
+## 4.3 染色质重塑在维持基因组稳定性过程中的作用
+
+真核生物的基因组DNA并非裸露而存在。147bp左右的DNA分子缠绕2个H2A-H2B异二聚体和2个H3-H4异二聚体组成的组蛋白八聚体而形成核小体。串珠状的核小体丝继而形成30 nm的螺线管，最终进一步形成高度折叠浓缩的染色质结构。与基因转录一样，高度压缩的染色质结构“阻碍”了DNA损伤修复机器与受损DNA的结合。因此，DNA损伤修复过程涉及DNA解螺旋、修复及修复后的重新包装，需要染色质重塑因子、DNA复制及包装相关的一系列因子参与。
+
+INO80是染色质重塑因子SWI/SNF家族成员。INO80基因缺失阻碍酵母双链断裂染色体的同源重组修
+
+4.3 染色质重塑在维持基因组稳定性过程中的作用
+
+87
+
+---
+
+复。INO80是如何发挥作用的呢？研究表明，发生DSB时，酵母蛋白激酶Mec1和Tel1对DSB附近的组蛋白H2A的第129位丝氨酸进行磷酸化，磷酸化的H2A募集INO80至DNA双链断裂处。INO80利用自身的DNA解旋酶活性推动核小体远离DSB，从而在断裂处形成单链的DNA3'端，促进同源重组修复。
+
+染色质组装因子1(chromotin assembly factor 1, CAF-1)是一种参与染色质组装过程的蛋白复合体，对于染色质的正确装配及维持基因组的完整性非常重要(图4-5)。CAF-1最初是在人体细胞提取物的SV40启动子依赖的DNA复制过程中被鉴定为一个参与染色质组装的因子。CAF-1在人细胞中有3个亚基，即p150、p60和p48，且在不同物种中高度保守（表4-3）。
+
+在真核细胞中，DNA复制和染色质组装紧密偶联。CAF-1是介导新复制的DNA装配成染色质过程的主要蛋白因子之一。DNA合成过程中，新合成的H3和H4组蛋白在被装配到DNA链前首先发生乙酰化修饰。H3的K56和H4的K5、K12被乙酰化。乙酰化的H3-H4异二聚体被Asf1转移给CAF-1，形成H3-H4四聚体后，组装到新合成的DNA分子。Nabatiyan等人用RNA干扰的方法探索了CAF-1在人体细胞中的生理功能。研究发现把CAF-1的p60亚基沉默后将引起正在增殖的人体细胞的凋亡，而在静息期细胞中则没有这种现象。同时，缺乏p60的增殖细胞会积累DNA双链断裂以及增加磷酸化的
+
+![](../../raw/pages_0097-0112/images/page_100_image_4.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  subgraph Main_Process
+  A["DNA"] --> B["亚核小体粒子"]
+  C["四聚体H3-H4"] --> D["两个H2A-H2B二聚体"]
+  D --> E["核心粒子"]
+  E --> F["组蛋白去乙酰化\nATP调节空间间距"]
+  F --> G["核小体排列"]
+  G --> H["④折叠"]
+  H --> I["细胞核"]
+  end
+
+  subgraph Sub_Factors
+    J["DNA修饰\n组蛋白修饰\n组蛋白变异体 (H2AX、CENP-A...)"] -.-> K["组蛋白结合因子\nNucleoplasmin、dNLP\nN1-N2\nCAF-1\nNAP-1、NAP-2\nSpt-6、DF31、Asf1"]
+    L["衔接组蛋白\nHMG 14/17\n组蛋白修饰\n特异的DNA结合因子"] -.-> M["移动性因子、染色质重建机构或组蛋白修饰酶\nISWI家族(ACF、CHRAC、ISW1&2、NURF、RSF)\nSNF2家族(SWI/SNF、FSC、Brahma、?ATRX)\nMI-2/CHD家族(Mi-2复合物、NuRD)\nHAT/HD"]
+    N["在一定区域内局部浓缩特定组分"] -.-> O["使蛋白靶向特化的结构域\n异染色质蛋白质: HP1、Polycomb、Sir3p/Sir4p、ATRX\n转录因子: lkaros...\n染色质装配因子: CAF-1..."]
+  end
+
+  subgraph KeyFactors
+  K --> L
+  M --> N
+  O --> N
+  end
+```
+</details>
+
+图4-5 DNA装配成染色质的过程及各阶段的调节蛋白因子
+
+真核细胞中基因组DNA首先在特异的组蛋白伴侣分子协助下与由两个乙酰化的H3-H4异二聚体组成的四聚体结合，随后两侧分别结合一个H2A-H2B异二聚体，形成核小体。这时形成的核小体是没有最终定位的，只有在一些染色质重塑因子以及组蛋白修饰酶（如去乙酰化酶）的共同作用下，核小体被正确排列在DNA上。最后，在染色质重塑因子及其他因子（如HP1）的作用下，染色质进一步浓缩，同时区域性的组蛋白变构体在特异组蛋白伴侣分子的作用掺入染色质中以维持其高级结构。
+
+88
+
+第 4 章 DNA 损伤修复与基因组稳定性
+
+---
+
+表4-3 不同模式生物细胞中CAF-1三亚基与人类三亚基同源性比较
+
+| 人(H. sapiens) | p150 | p60 | p48 |
+| --- | --- | --- | --- |
+| 小鼠(M. musculus) | 63.9% | 82.2% | 99.8% |
+| 非洲爪蟾(X. laevis) | 44.0% | 64.5% | 97.9% |
+| 果蝇(D. melanogaster) | 23.3% (p180) | 33.5% (p105) | 87.5% (p55) |
+| 酿酒酵母(S. cerevisiae) | 15.9% (CAC1) | 27.0% (CAC2) | 27.5% (CAC3) |
+| 拟南芥(A. thaliana) | 20.7% (FAS1) | 31.7% (FAS2) | 65.3% (MSI1) |
+
+组蛋白H2AX的水平。在DNA合成期间，缺少p60的细胞的核提取物表现出核小体组装活性降低90%，而一旦增加重组p60蛋白时，这种活性得到恢复。细胞核中新生的染色质由于缺乏p60而表现出对核酸酶敏感性的显著增加，这表明体内DNA合成期间缺少染色质装配。在人体细胞中，当缺乏染色质的组装时，S期则不能顺利地完成。有研究表明，抑制酿酒酵母的CAC1蛋白（人体p150亚基的同源体）的表达似乎能诱导S期的DNA损伤和S期检验点的激活。这些结果表明了CAF-1不但参与S期特异的染色质组装，而且对于细胞的基因组稳定性维持是必要的。
+
+人的CAF-1由p150、p60和p48共3个亚基组成。p150中含有多个不同的结构域，它通过酸性的KER和ED结构域与新合成的乙酰化组蛋白相互作用，发挥组蛋白伴侣的功能。有研究还表明在p150上存在多个位点与PCNA蛋白作用。p60具有一个WD重复区域，其中包含7个WD重复单位，这个区域在各物种间保守性很高。p60和p150都有几个磷酸化位点。尽管每个位点磷酸化的生理意义还不确定，但是关于p60在细胞周期和DNA修复期间磷酸化的普遍模式已初见端倪。在有丝分裂期间，p60在HeLa核提取物中高度磷酸化。在静息期时，UV照射后，磷酸化的p60特异地募集到正在进行DNA修复的染色质上。
+
+CAF-1的p48亚基在人体细胞的细胞核和细胞质提取物中含量丰富。它单独与其他蛋白质协同作用，作为复合体的一个组分参与到许多生物的组蛋白代谢过程中。这个亚基似乎具有比CAF-1的最大亚基p150更多的功能，作为一个“联络”因子在细胞复合物之间发挥作用。研究已经表明，p48在新复制的DNA组装成染色质期间组蛋白的乙酰化/去乙酰化中发挥调节作用。因为p48与人去乙酰化酶HDAC1的催化亚基协同作用，并且它的序列与p46具有同源性，而p46能与组蛋白乙酰基转移酶HAT B相互作用。尽管目前还没有强有力的证据来表明p48 参与组蛋白的乙酰化，但是研究人员已经从 T 细胞中纯化出 p48，结果显示，包含 P48 的复合物在体外具有染色质调节和组蛋白去乙酰化的活性。
+
+作为重要的染色质组装因子，同时也是染色质表观遗传修饰因子，CAF-1在染色质组装、异染色质形成与维持、细胞分裂与分化、多细胞动物发育过程中的信号通路（如Notch信号通路）调控、DNA损伤修复和基因组稳定性维持过程中都发挥重要作用。实验表明，CAF-1与PCNA、DNA螺旋酶BLM、WRN，异染色质蛋白HP1相互作用参与DNA损伤修复的多个过程。有证据表明，在核苷酸切除修复（NER）后，CAF-1参与募集泛素化的H2A（uH2A）到修复区。更加广泛的实验表明，CAF-1在多种类型的DNA损伤修复机制，包括NER、碱基切除修复（BER）、NHEJ及HR中都发挥重要作用。小鼠细胞中，CAF-1通过在HR的早期促进HP1蛋白在DNA损伤位点的积累从而促进同源重组修复。利用果蝇模型，Song及其同事发现dCAF-1的大亚基p180的缺失抑制HR的效率，表明dCAF-1在果蝇发育过程中为保证基因组稳定性和DNA的稳定遗传发挥至关重要的作用。
+
+有关CAF-1参与调节异染色质形成和维持的实验证据很多。植物细胞中CAF-1的含量与异染色质的多少直接相关。酵母细胞中CAF-1的突变引起依赖于异染色质结构的基因表达的异常。在高等动物细胞中，CAF-1同样是维持异染色质结构的重要因子。比如，在黑腹果蝇中CAF-1大亚基的突变可以抑制位置花斑效应（position effect variegation）。CAF-1与异染色质的关系是通过与异染色质蛋白HP1的直接相互作用而实现的，这一作用受到MBD1协助。HP1被募集后的直接作用是调节H3K9的甲基化水平。H3K9的甲基化是异染色质形成的标志。组蛋白H3K9的甲基化反过来又可以募集更多的HP1以促进异染色质的形成与成熟。
+
+CAF-1通过调控目的基因的染色质表观遗传学状态从而调控基因表达。在植物细胞中, fas2 (CAF-1的p60同
+
+4.3 染色质重塑在维持基因组稳定性过程中的作用
+
+89
+
+---
+
+![](../../raw/pages_0097-0112/images/page_102_image_0.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  HAT1["HAT1"] -->|Ac| HAT1
+  HAT1 -->|5 K| MBD1["MBD1"]
+  HAT1 -->|12 K| ScRtt109["Sc Rtt109"]
+  ScRtt109 -->|Ac| HAT1
+  ScRtt109 -->|Ac| Dot1["Dot1"]
+  ScRtt109 -->|Ac| p48["p48"]
+  Dot1 -->|Ac| HAT1
+  p48 -->|Ac| HAT1
+  p48 -->|Ac| HDAC1["HDAC1"]
+  HDAC1 -->|Mi2| Mi2
+  HDAC1 -->|Mi2| HP1["HP1"]
+  HDAC1 -->|Mi2| Suv39h1["Suv39h1"]
+  Suv39h1 -->|Me| SetDB1["SetDB1"]
+  Suv39h1 -->|Me| P["P"]
+  Suv39h1 -->|Me| Me["Me"]
+  SetDB1 -->|K| Ub["Ub"]
+  SetDB1 -->|K| Ring1A/1B["Ring1A/1B"]
+  SetDB1 -->|K| Ubc["Ubc"]
+  Ring1A1b["Ring1A/1B"] --> K
+  Ubc --> K
+  K --> H3["H3"]
+  K --> H4["H4"]
+  H3 --> H2A["H2A"]
+  H3 --> H4B["H2B"]
+  H2A --> H3
+  H4B --> H3
+  H4 --> H3
+  H3 --> H4
+  H4 --> H3
+  H4B --> H3
+  H3 --> H4
+  H4 --> H3
+  H4B --> H3
+  H3 --> Ubc
+  Ubc --> K
+  K --> N["N"]
+```
+</details>
+
+图4-6 与CAF-1相关的组蛋白修饰图
+
+箭头表示促进作用，———表示抑制作用。新合成的H4上K5和K12位的乙酰化、H3K27位的甲基化都受p48亚基的调节；p150与H3K79甲基化、H3K56乙酰化、H3K9甲基化及H3S10磷酸化有关；p60则调控H2AK119位的泛素化。
+
+源物）的突变使得GL2基因的表达发生改变从而使根尖表皮细胞的分化出现障碍。GL2基因的表达变化可能是由于该基因局部区域的染色质结构发生了改变而造成的。果蝇中CAF-1的大亚基与PcG相互协同作用共同维持特定的染色质状态，以维持不同细胞类型特异的基因表达。人的CAF-1最小亚基p48与基因转录活性的关系更明显:p48存在于Mi2-NuRD、Rpd3-Sin3和PRC2等转录抑制复合物中。Mi2-NuRD和Rpd3-Sin3含有HDAC1，PRC2则具有H3K27甲基化的活性（图4-6）。HDAC介导的组蛋白去乙酰化以及H3K27的甲基化都会使染色质处于转录抑制状态。
+
+## 4.4 RecQ 螺旋酶家族在维持基因组稳定性过程中的作用
+
+RecQ螺旋酶在维持基因组的完整性上发挥至关重要的作用。在人体中RecQ螺旋酶发生突变将会导致基因组不稳定，其生物学效应是对各种肿瘤的敏感性而最终引发各种疾病。BLM、WRN和RecQ4的突变将分别导致Bloom综合征(Bloom syndrome)、Werner综合征(Werner syndrome)和Rothmund-Thomson综合征(Rothmund-Thomson syndrome)。到目前为止，还未发现RecQL和RecQ5与任何人类遗传疾病具有相关性。正是由于RecQ螺旋酶在维持基因组稳定性中的关键作用，它才被人们形象地称为“基因组卫士”。归纳起来讲，RecQ螺旋酶主要在DNA复制、DNA重组、DNA修复以及端粒的维护4个方面发挥作用。
+
+90
+
+第 4 章 DNA损伤修复与基因组稳定性
+
+---
+
+## 4.4.1 RecQ螺旋酶的功能
+
+## (1) DNA 复制
+
+细胞分裂过程中，DNA被精确地复制并分配到两个子细胞。这一重要的生物学过程受到系统严密的监控，需要大量蛋白因子的共同参与。这些因子主要有DNA聚合酶、拓扑异构酶、RPA、WHIP和FEN1等。大量的研究已经阐明RecQ螺旋酶与上述因子间的相互作用，表明其参与DNA复制过程并且发挥重要作用。图4-7A显示了RecQ螺旋酶在DNA复制过程中可能的“障碍清除器”作用。DNA复制过程中，当在前导链的模板链上出现DNA二级结构如发夹结构或G四聚体时，复制叉的正常移动受阻，DNA复制暂时中断。这时，在RecQ螺旋酶的作用下能清除这些异常结构，从而促进DNA复制叉的继续前进。图4-7B则是说明了RecQ螺旋酶在DNA复制中的另外一个作用。由于障碍物的存在而导致复制叉的移动以及前导链的合成受阻，以新合成的后滞链为模板合成前导链，从而有效地绕过障碍物，最终在RecQ螺旋酶的帮助下重新形成一个复制叉使得DNA复制继续进行，保证DNA复制的稳定性。但在缺乏RecQ螺旋酶时，复制叉受到破坏，然后形成联合，即两条DNA双链分子，一条与原来模板链等长，且其中一条链的末端是由新合成的短链组成；另一条是短的DNA双链，由一小段新合成的DNA链和对应的模板链组成。当然这两条DNA双链也可能通过同源重组（homologous recombination）重新恢复DNA的复制。当在DNA复制过程中模板链上出现缺口时，也可通过HR方式解决。
+
+![](../../raw/pages_0097-0112/images/page_103_image_4.jpg)
+
+图 4-7 RecQ 螺旋酶在 DNA 复制中的作用
+
+绿线代表DNA模板，蓝线代表新合成的前导链，红线代表新合成的滞后链。（A）复制过程中，前导链的模板有发夹结构或G四聚体等异常结构时，复制叉被阻滞；这时RecQ螺旋酶可能参与清除此异常二级结构后，DNA复制叉恢复继续前进。（B）由于障碍物导致复制叉的移动以及前导链的合成受阻时，在RecQ螺旋酶的帮助下通过形成“鸡爪”结构最终绕过障碍物，恢复复制叉，使得DNA复制继续进行。在缺少RecQ酶时，复制叉崩溃（collapse）。这种情况下，断裂的DNA有可能通过同源重组的方式借助同源染色体的序列得以修复。
+
+4.4 RecQ螺旋酶家族在维持基因组稳定性过程中的作用
+
+91
+
+---
+
+## (2) DNA 重组
+
+RecQ螺旋酶在DNA重组过程中也发挥重要作用。DNA重组主要是同源重组，对于维持机体中基因组的稳定性具有重要作用。重组是细胞生存所必需的，但是不可控或不合时宜的重组事件能导致基因组重排，比如杂合性缺失，这被认为能够导致肿瘤发生。值得指出的是，正常细胞中RecQ螺旋酶被认为能在不同场合行使促重组酶和抗重组酶双重角色。如BLM具有抗重组作用，但在重组介导的DNA修复过程中BLM又发挥着积极的作用，具体机制至今尚不清楚。在患Bloom综合征的患者细胞中可以看到姐妹染色体单体交换增加。由于同源重组介导着姐妹染色体交换过程，这同时也说明了BLM在同源重组中的作用。而在Sgs1的突变体中，同源序列（几乎一致序列）之间的重组率上升，这进一步说明了RecQ螺旋酶在调节同源重组中的作用。在重组中，当一条单链尾巴侵入到互补双链中形成D环结构时，RecQ螺旋酶会通过破坏这个D环结构而抑制非正常的同源重组现象，这对于维持基因组的完整性非常重要。
+
+体外实验中，BLM能够把入侵的单链从RAD51形成的D环上解离下来，而且能够打断RAD51-ssDNA纤维的形成。这是终止同源重组的效应。RECQ5也能打断RAD51-ssDNA纤维的形成。不同的是，RECQ5更倾向于避免DNA的D环的形成，而不是有效地将它们分开。
+
+在同源重组末期，有时会形成DHJ (double-holliday junction)。BLM和TOPO III α复合物通过新颖的解开holliday junction的解离模式来解开DHJ结构。一般的解离会形成发生交换和非交换的产物各50%，而上述解离却不产生交换的重组产物。
+
+## (3) DNA修复
+
+为保证基因组的稳定性并防止突变的发生，当细胞的DNA受到损伤时，需要一套精确的机制来检测并修复受损的DNA，保证后代子细胞拥有完整的母细胞DNA。在细胞分裂周期中，存在许多关键检控点(check point)监控DNA的合成和均匀分配。如果DNA在复制过程中发生错误，就会激活这些检控点蛋白，开始启动一系列负责监控的信号通路，激活效应蛋白，最终促使受损的DNA得以修复。正是由于机体内存在这些复杂的修复机制才保证了细胞基因组的稳定性。
+
+尽管目前关于BLM和WRN在哺乳动物细胞中S期检控点的作用不太清楚，但是最近的研究表明ATM蛋白激酶在体外能够磷酸化WRN蛋白，并且在减数分裂细胞中存在WRN与ATM和RPA蛋白共定位现象。另外，WRN在体外和体内都能与p53因子发生相互作用。除此之外，还有研究表明，当用阻断细胞DNA合成的试剂处理细胞后，发现BLM与ATM以及其他DNA修复蛋白一起形成一个大的复合体，这个复合体也被称为“BASC”(BRCA-1 associated genome surveillance complex)。这些发现表明RecQ螺旋酶在DNA的修复中扮演着重要的角色。
+
+当细胞受到刺激，引起DNA双链断裂时，RAD51会聚集到一个核灶区，而这个区域被认为是DNA进行同源重组修复的场所。据报道，人BLM和人RAD51蛋白具有直接的相互作用，而且这种作用似乎具有一定的保守性。在其他生物体内，如在酵母细胞中它们的同源基因（Sgs 1和Rad 51）之间也存在着这种相互作用。电离辐射会促进BLM和RAD51之间的共定位。最近还有研究表明WRN蛋白以依赖于RAD51蛋白的方式参与调节同源重组修复。另外，WRN蛋白与同源重组调节因子RAD52存在生理性的相互作用。而且WRN与RAD52共同定位在与停滞的DNA复制叉相关的区域，这表明两者协同参与调节由于DNA损伤而引起的重组修复过程。研究还表明，同源重组修复要达到最佳效果同时需要WRN的外切核酸酶活性和螺旋酶活性。
+
+在果蝇中，BLM通过SDSA（synthesis dependent strand annealing）途径而非DSB（DNA double strand break）修复途径来修复DNA双链缺口或断裂。当DNA双链上出现缺口时，首先通过切割产生ssDNA（single stranded DNA）3'端尾，然后侵入一个同源DNA双链形成一个D环结构，从3'C端开始合成新的DNA。D环在BLM的催化下沿着完整无缺的模板链移动，同时伴随着DNA的不断合成。当D环到达缺口的末端时，新合成好的DNA链从D环中移走，与原来的互补链重新退火，这样就完成整个DNA缺口的修复过程。在该模型中，不形成Holliday联合，供体DNA和受体DNA分子之间也不发生相应的交换现象。因此，在这种修复模式中从不发生姐妹染色体交换。尽管BLM在SDSA途径中的作用最终还未完全确定，但是有一点非常可能:在DNA的合成过程中，BLM有助于D环结构的侵入从而促进DNA链的合成与修复。在这种DNA的修复过程中，事实上是以重组方式完成的。所以RecQ螺旋酶在DNA复制、重组和修复过程中的作用是相对而言，没有严格的界限，在很
+
+92
+
+第 4 章 DNA损伤修复与基因组稳定性
+
+---
+
+多情况下相互渗透。
+
+## (4) 端粒的维持
+
+真核生物的染色体末端含有一些富含XXXTG重复序列的特殊结构，称为端粒(telomere)。这些特殊结构对于基因组的稳定性非常重要。若末端复制出现问题，端粒在细胞增殖期间会逐渐变短直至丢失。在干细胞和大部分肿瘤细胞中，端粒的长度依靠端粒酶的作用得以维持。端粒酶是一种特殊的反转录酶，它以内在的RNA链为模板，通过合成富含G的重复序列延伸端粒末端。但是据认为10%～15%的人类癌症通过一种称为ALT(alternative lengthening of telomeres)的端粒酶非依赖机制来延伸端粒。目前对ALT途径的描述很少，它主要通过一种基于重组的机制来阻止端粒的丢失，这种机制包括周期性的增加长而不稳定的端粒重复序列。
+
+人体细胞中，在非典型的PML小体中发现WRN，这种PML小体以含有被ALT激活而不凋亡的细胞为特征。人体RecQ螺旋酶在ALT细胞中定位到染色体末端，表明了这些螺旋酶在真核生物中具有保守的端粒维持功能。目前不清楚RecQ螺旋酶在端粒酶阳性细胞中对端粒是否具有作用。
+
+究竟RecQ螺旋酶在ALT或ALT相似的端粒维持过程中发挥什么作用呢?从RecQ螺旋酶的生化特性里可以推断出以下两个作用: ① 它们通过破坏G四聚体有助于端粒延长途径, 而这种G四聚体可能是在富含G的端粒序列中形成的; ② 它们在重组介导的端粒延长过程中起直接催化的作用。目前还没有确切的数据表明ALT过程是如何活化的，但是RecQ螺旋酶在这些过程中的一个可能作用是促进染色体外的端粒DNA环的同源重组介导的复制，而这些端粒DNA环可能存在于ALT细胞里。当缺乏有功能的RecQ螺旋酶时，可能引起端粒的维持无效，这样就导致染色体的融合和断裂。
+
+## 4.4.2 RecQ螺旋酶与遗传疾病
+
+由于RecQ螺旋酶在维持有机体的基因组稳定中发挥重要的作用，因此当这些螺旋酶发生基因突变时必将引起细胞中遗传物质的不稳定，从而引发生物体的各种遗传性疾病。研究已经表明，人体中3个RecQ基因（BLM、WRN和RecQ4）的突变将会导致3种不同但具有相似特征的疾病，分别是Bloom综合征、Werner综合征以及Rothmund-Thomson综合征。Bloom综合征患者的细胞主要表现为同源重组，尤其是姐妹染色单体之间的交换水平上升，而Werner综合征患者的细胞表现为染色体的过度缺失。尽管已有研究表明Rothmund-Thomson综合征细胞中染色体存在不稳定性，但是关于Rothmund-Thomson综合征细胞的具体特点还有待详细阐明。此外，除RTS外，RAPADILINO和BGS患者的细胞中也发现了RecQ4的突变。由于这3种遗传疾病的共同特征是基因组的不稳定性，所以在有些临床症状上具有相似性，如对癌症的易感性、提前衰老等，但是也有许多明显的区别。表4-4对以上3种疾病的临床特征以及肿瘤易感性进行了归纳和比较。
+
+表 4-4 三种疾病的临床特征及对其肿瘤易感性的比较
+
+| 疾病类型 | 主要临床特征 | 肿瘤易感性 |
+| --- | --- | --- |
+| Bloom综合征 | 成比例的矮小;阳光诱导的红斑(尤其在脸上);II型糖尿病;脸窄且耳朵突出;男性不育及女性少育;感染频繁 | 大多数类型,特别是非霍奇金淋巴瘤、白血病及乳腺、内脏和皮肤的肿瘤 |
+| Werner综合征 | 许多早衰的特征;头发灰白和稀少;皮下脂肪缺少;皮肤起皱;白内障;骨质疏松症;II型糖尿病;肢体萎缩;动脉硬化症;也有一些正常衰老中不常见的特征:身体矮小;腿溃疡软组织石灰化 | 间叶细胞来源的肿瘤,软组织和生骨恶性毒瘤,一些黑素瘤和甲状腺癌 |
+| Rothmund-Thomson综合征 | 身材矮小;骨骼异常(不常见);秃头症状;皮肤色素沉着变化;皮肤萎缩 | 各种各样的肿瘤,主要是生骨恶性毒瘤 |
+
+4.4 RecQ螺旋酶家族在维持基因组稳定性过程中的作用
+
+93
+
+---
+
+## □ 小结
+
+真核细胞的基因组携带了全部的遗传信息。这些遗传信息是细胞生长、增殖，机体发育的信息基础。这些遗传信息（即DNA序列）与组蛋白结合形成核小体，然后进一步压缩形成染色质与染色体结构。DNA损伤或错误频繁发生于正常细胞，这些损伤可以是细胞正常活动的结果，也可由环境因素造成。细胞内的DNA损伤包括碱基缺失、氧化、脱氨基、烷基化、交联、错配，以及单、双链断裂等。为了保证遗传信息的正确表达和传递，首先染色质的组装必须要受到精确的调控，其次基因组必须保持稳定（即DNA损伤必须得以及时修复）。针对不同类型的DNA损伤，细胞有不同的修复机制，包括直接修复、碱基切除修复、核苷酸切除修复、错配修复、双链断裂同源重组修复和双连断裂非同源末端连接等。基因组稳定性的维持需要DNA复制及DNA损伤修复相关的一系列重要蛋白的参与，包括染色质组装因子CAF-1和RecQ螺旋酶。CAF-1首先在染色质组装过程中发挥重要作用，负责将H3-H4四聚体运送并组装到新合成（新复制或新修复）的DNA上。其次，CAF-1也参与异染色质的形成和维持。更重要的是，CAF-1在多种类型的DNA损伤修复机制，包括核苷酸切除修复（NER）、碱基切除修复（BER）等过程中都发挥重要作用。RecQ家族是一类重要的参与DNA修复的螺旋酶，它们（通过与多种其他蛋白一起）直接参与各种DNA损伤的修复过程。DNA修复除了DNA序列的修复以外，染色质水平的恢复同样重要。在这一过程中，染色质组装因子（如CAF-1、ASF1等）与其他DNA修复蛋白（如RecQ）以及组蛋白表观遗传修饰因子等协同作用，共同维持细胞基因组的稳定。
+
+## □ 思考题
+
+1. 概述 DNA 损伤的类型及 DNA 损伤修复机制。
+
+2. 什么是染色质重塑？试述染色质重塑与 DNA 复制、DNA 损伤修复的关系。
+
+3. 试述维持基因组稳定性的重要性。
+
+4. 如何利用 DNA 损伤修复机制改进现有的真核生物基因组编辑技术?
+
+5. 简述 CAF-1 在 DNA 复制、基因组稳定性维持、表观遗传学调控及多细胞生物信号通路调控等生物学过程中的重要作用。
+
+(焦仁杰 刘继勇 广州医科大学广州霍夫曼免疫研究所)
+
+## □ 参考文献
+
+1 Aguilera A, García-Muse T. Causes of genome instability. Annu Rev Genet, 2013, 47:1–32.
+2 Allard S, Masson J Y, Cote J. Chromatin remodeling and the maintenance of genome integrity. Biochem Biophys Acta, 2004, 1677: 158–164.
+3 Carroll D. Genome engineering with targetable nucleases. Annu Rev Biochem, 2014, 83: 409–439.
+4 Chaudhry M A. Base excision repair of ionizing radiation-induced DNA damage in  $G_{1}$  and  $G_{2}$  cell cycle phases. Cancer Cell Int, 2007, 7:15.
+5 Chen Y, Dui W, Yu Z, et al. Drosophila RecQ5 is required for efficient SSA repair
+and suppression of LOH in vivo. Protein Cell, 2010, 1: 478–490.
+6 Chu K T, Hickson I D. RecQ helicases: multifunctional genome caretakers. Nat Rev Cancer, 2009, 9: 644–654.
+7 Corpet A, Almouzni G. Making copies of chromatin: the challenge of nucleosomal organization and epigenetic information. Trends Cell Biol, 2009, 19: 29–41.
+8 Crabbe L, Verdun R E, Haggblom C I, et al. Defective telomere lagging strand synthesis in cells lacking WRN helicase activity. Science, 2004, 306:1951–1953.
+9 Croteau D, Popuri V, Opresko P, et al. Human RecQ helicases in DNA repair, recombination and replication. Annu Rev
+Biochem, 2014, 83:519–552.
+10 Ellis N A, Groden J, Ye T Z, et al. The Bloom's syndrome geneproduct is homologous to RecQ helicases. Cell, 1995, 83:655–666.
+11 Friedberg E C. DNA damage and repair. Nature, 2003, 421:436–440.
+12 Gaillard H, Aguilera A. Transcription as a threat to genome integrity. Annu Rev Biochem, 2016, 85:291–317.
+13 Gaillard P H, Martini E M, Kaufman P D, et al. Chromatin assembly coupled to DNA repair: a new role for chromatin assembly factor I. Cell, 1996, 86:887-896.
+14 Green C M, Almouzni G. Local action of
+
+94
+
+第4章 DNA损伤修复与基因组稳定性
+
+---
+
+the chromatin assembly factor CAF 1 at sites of nucleotide excision repair in vivo. EMBO J, 2003, 22:5163–5174.
+15 Hakem R. DNA-damage repair; the good, the bad, and the ugly. EMBO J, 2008, 27:589-605.
+16 Harrigan J A, Bohr V A. Human diseases deficient in RecQ helicases. Biochimie, 2003, 85: 1185–1193.
+17 Hu Y, Raynard S, Sehorn M G, et al. RECQL5/Recql5 helicase regulates homologous recombination and suppresses tumor formation via disruption of Rad51 presynaptic filaments. Genes Dev, 2007, 21: 3073–3084.
+18 Huang H, Yu Z, Zhang S, et al. Drosophila CAF-1 regulates HP1-mediated epigenetic silencing and pericentric heterochromatin stability. J Cell Sci, 2010, 123: 2853–2861.
+19 Jiao R, Bachrati C Z, Pedrazzi G, et al. Physical and functional interaction between the Bloom's syndrome gene product and the largest subunit of chromatin assembly factor I. Mol Cell Biol, 2004, 24:4710–4719.
+20 Jiao R, Harrigan J A, Shevelev I, et al. The Werner syndrome protein is required for recruitment of chromatin assembly factor 1 following DNA damage. Oncogene, 2007, 26:3811–3822.
+21 Karow J K, Wu L, Hickson I D. RecQ family helicases: roles in cancer and aging. Curr Opin Genet Dev, 2000, 10:32–38.
+22 Kerzendorfer C, O' Driscoll M. Human DNA damage response and repair deficiency syndromes: linking genomic instability and cell cycle checkpoint proficiency. DNA Repair, 2009, 8: 1139-1152.
+23 Krude T. Chromatin assembly during DNA replication in somatic cells. Eur J Biochem, 1999, 263: 1–5.
+24 Lavelle C, Salles B, Wiesmuller L.
+DNA repair, damage signaling and carcinogenesis. DNA Repair, 2008, 7:670–680.
+25 Lazzaro F, Giannattasio M, Puddu, F, et al. Checkpoint mechanisms at the intersection between DNA damage and repair. DNA Repair, 2009, 8: 1055–1067.
+26 Li G. New insights and challenges in mismatch repair: getting over the chromatin hurdle. DNA Repair, 2014, 19: 48–54.
+27 Lindahl T. The intrinsic fragility of DNA (Nobel Lecture). Angew Chem Int Ed Engl, 2016, 55: 8528–8534.
+28 Liu J, Chen Y, Jiao R. TALEN-mediated Drosophila genome editing: protocols and applications. Methods, 2014, 69:22–31.
+29 Modrich P. Mechanisms in E. coli and human mismatch repair (Nobel Lecture). Angew Chem Int Ed Engl, 2016, 55: 8490–8501.
+30 Mohaghegh P, Hickson I D. Premature aging in RecQ helicase deficient human syndromes. Int J Biochem Cell Biol, 2002, 34:1496–1501.
+31 Myung K, Pennaneach V, Kats E S, et al. Saccharomyces cerevisiae chromatin assembly factors that act during DNA replication function in the maintenance of genome stability. Proc Natl Acad Sci U S A, 2003, 100: 6640–6645.
+32 Nabatiyan A, Krude T. Silencing of chromatin assembly factor 1 in human cells leads to cell death and loss of chromatin assembly during DNA synthesis. Mol Cell Biol, 2004, 24: 2853–2862.
+33 Pope M A, David S S. DNA damage recognition and repair by the murine MutY homologue. DNA Repair, 2005, 4: 91–102.
+34 Prince P R, Emond M J, Monnat R J. Loss of Werner syndrome protein function promotes aberrant mitotic recombination.
+
+Genes Dev, 2001, 15: 933–938.
+
+35 Ridgway P, Almouzni G. CAF 1 and the inheritance of chromatin states: at the crossroads of DNA replication and repair. J Cell Sci, 2000, 113 (15): 2647–2658.
+
+36 Sancar A. Mechanisms of DNA repair by photolyase and excision nuclease (Nobel Lecture). Angew Chem Int Ed Engl., 2016, 55:8502–8527.
+
+37 Sancar A, Lindsey-Boltz L A, Unsal-Kacmaz K, et al. Molecular mechanisms of mammalian DNA repair and the DNA damage checkpoints. Annu Rev Biochem, 2004, 73: 39–85.
+
+38 Song Y, He F, Xie G, et al. CAF-1 is essential for Drosophila development and involved in the maintenance of epigenetic memory. Dev Biol, 2007, 311:213–222.
+
+39 Vijg J. The role of DNA damage and repair in aging: new approaches to an old problem. Mech Ageing Dev, 2008, 129:498–502.
+
+40 Vitelli V, Galbiati A, Iannelli F, et al. Recent advancements in DNA damage-transcription crosstalk and high-resolution mapping of DNA breaks. Annu Rev Genomics Hum Genet, 2017, 18:87–113.
+
+41 Warmerdam D O, Kanaar R. Dealing with DNA damage: relationships between checkpoint and repair pathways. Mutat Res, 2010, 704(1-3): 2-11.
+
+42 Wu L, Hickson I D. The Blooms syndrome helicase suppresses crossing over during homologous recombination. Nature, 2003, 426: 870–874.
+
+43 Xu Y, Lei Z, Huang H, et al. dRecQ4 is required for DNA synthesis and essential for cell proliferation in Drosophila. PLoS ONE, 2009, 4: 6107.
+
+44 Yu Z, Liu J, Deng W-M, et al. Histone chaperone CAF-1: essential roles in multi-cellular organism development. Cell Mol Life Sci, 2015, 72: 327–337.
+
+参考文献
+
+95
+
+---
+
+

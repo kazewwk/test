@@ -1,0 +1,545 @@
+# 第23章 血细胞的分化与造血功能
+
+原始 PDF 第 479–495 页。
+
+第23章
+
+## 血细胞的分化与造血功能
+
+23
+
+血液是生命的源泉，为整个生命过程源源不断地输送营养物质，提供免疫保护。血细胞发育过程起始于原肠胚（gastrula），包括初级造血（primitive hematopoiesis）和次级造血（definitive hematopoiesis）两个阶段。短暂的初级造血可以为早期胚胎提供 $O_{2}$ 和免疫保护，但最终会被次级造血取代。在次级造血过程中，起源于主动脉-性腺-中肾区（aorta-gonad-mesonephros, AGM）主动脉腹侧壁生血内皮（hemogenic endothelium, HE）的造血干细胞（hematopoietic stem cell, HSC），经过扩增和分化，逐步发育为多种类型的成熟血细胞；随后，HSC迁移至骨髓（人和小鼠）或肾髓（斑马鱼）以维持终生造血。斑马鱼和小鼠等模式动物的血液发育过程与人高度相似，并且因其个体小、易饲养、繁殖周期短以及遗传操作技术成熟等诸多优势，成为血液发育及疾病研究领域的理想模型。以小鼠和斑马鱼为主的研究发现，血细胞的产生、分化和成熟过程受到多种信号通路、转录因子以及表观遗传等因素的协同调控，此外，科学家还在不断解析血液系统发育各个阶段精细的调控机制，以期为血液疾病的临床治疗提供理论基础。本章详细阐述了脊椎动物血细胞发育过程，重点介绍次级造血过程中HSC的产生、分化以及其发育过程中的遗传/表观遗传学和微环境调控机制等。同时，介绍血细胞的功能和体外造血等领域的最新研究进展，探讨其应用前景。
+
+## 23.1 血细胞发育
+
+脊椎动物血液系统发育是一个连续的过程，起始于原肠胚。胚胎通过原肠运动（gastrulation）形成外、中、内3个胚层。三胚层的出现引起了组织器官的分化，血液系统的发育始于原肠胚时期的腹侧中胚层（mesoderm），其中部分细胞特化为成血（管）前体细胞（hemangioblast），并具有分化产生血细胞和血管前体细胞的能力。在原肠胚阶段开始的血液系统分化，为快速发育的胚胎提供了必要的营养供给，保障了复杂机体各系统的建成。
+
+## 23.1.1 脊椎动物血液发育概述
+
+脊椎动物血液系统的发育分为初级造血和次级造血两个阶段。初级造血是血液发育的最初阶段，可以产生初级红细胞和初级髓系细胞，具备携氧能力的初级红细胞能为胚胎各组织器官的快速发育提供 $O_{2}$ ，而初级髓系细胞能为发育中的胚体提供必不可少的免疫保护。初级造血产生的血细胞不具有自我更新的能力。在哺乳动物和鸟类中，初级造血发生于胚外组织卵黄囊（yolk sac）上的血岛（blood island, BI）。在斑马鱼中，初级造血发生于躯干部的中间细胞团（intermediate cell mass, ICM）和前部血岛（rostral blood island, RBI）。为了建立功能完整的血液系统，紧接着出现的次级造血会取代短暂的初级造血过程。脊椎动物次级造血又可以分为两个阶段。第一阶段会在哺乳动物血岛和斑马鱼后部血岛（posterior blood island, PBI）处产生一群红系-髓系祖细胞（erythroid-myeloid progenitor, EMP），这些EMP是最早定植至哺乳动物胎肝（fetal liver, FL）并参与建立胎肝早期血液系统。此外，EMP能分化产生组织驻留巨噬细胞（tissue-resident macrophage）并贡献于成体造血。次级造血的第二个阶段是指具有自我更新和多向分化潜能的HSC的产生、迁移、扩增和分化等过程。在脊椎动物的AGM区，HSC是由动脉腹侧壁（ventral wall of dorsal aorta, VDA）一群
+
+466
+
+第 23 章 血细胞的分化与造血功能
+
+---
+
+特化的内皮细胞通过内皮-造血转换过程（endothelial-to-hematopoietic transition，EHT）产生的。经过EHT产生的HSC进入血液循环，跟随血液流动到达哺乳动物的胎肝或斑马鱼尾部造血组织（caudal hematopoietic tissue, CHT）进行扩增和早期分化。随后，一部分由HSC分化形成的前体细胞会迁移至胸腺（thymus）并发育为T淋巴细胞。最后，HSC将迁移至哺乳动物骨髓（bone marrow, BM）或斑马鱼肾髓（kidney marrow, KM），骨髓和肾髓分别是哺乳动物和斑马鱼的终生造血器官。HSC在这里进一步逐级分化产生各种功能的血细胞，以维持脊椎动物终生造血（图23-1）。
+
+脊椎动物血液系统的发育过程在进化上保守，但在不同物种之间也存在一定的差异。例如:斑马鱼和哺乳动物在初级造血发生位置上存在明显区别，在斑马鱼中，短暂的初级造血开始于受精后11 h，初级红细胞和初级髓系细胞分别产生于胚内结构中间细胞团和前部血岛；但在人和小鼠中，初级造血分别开始于21天和7.5天，初级红细胞和初级髓系细胞均产生于胚外组织卵黄囊的血岛（图23-1）。斑马鱼的HSC产生过程开始于受精后26 h，AGM区内皮细胞特化为生血内皮细胞，通过向腹侧“出芽”的形式产生HSC，成熟的HSC脱离主动脉血管壁，经由动静脉间质进入静脉血液循环；人和小鼠在胚胎发育到28天和10.5天时，AGM区动脉血管内皮发生命运转化，逐渐获得生血潜能。随后在动脉腹侧壁上会形成数个腔内血细胞簇（intra-aortic hematopoietic cluster, IAHC），成熟的HSC脱离IAHC进入动脉血液循环（图23-1）。此外，在人和小鼠胚胎分别发育到6周和11.5天时，母体与胎儿之间重要的物质交换器官——胎盘（placenta）也能参与血液系统发育。由于斑马鱼等其他经典模式动物不具备胎盘结构，因此，胎盘参与血液发育是人和小鼠次级造血的一个重要特征，但关于胎盘在哺乳动物血液系统发育过程中扮演的角色尚不明确。
+
+## 23.1.2 造血干细胞的鉴定与分离
+
+人类对于HSC的认识经历了一个漫长的过程。20世纪初，HSC仅是科学家的一个抽象推理，它的发现源于第二次世界大战后放射医学研究的兴起。1951年，美国科学家Egon Lorenz等发现将骨髓细胞移植到经致死剂量辐射的动物体内，可以在骨髓受到严重破坏的受体动物中重建造血系统，并首次提出“骨髓移植”的概念。自此，通过移植实验检测重建受体造血系统的能力，成为评定HSC功能的依据与标准之一。随后，Irving L. Weissman等逐步将HSC从其微环境细胞群中分离出来，并找到了一系列HSC的表面标记分子。他们在1988年首次报道$\mathrm{Thy-1}^{\mathrm{lo}}\mathrm{Lin}-\mathrm{Sca}-\mathrm{l}^{+}$骨髓细胞是一群具有多能性的造血细胞，并且证实100个$\mathrm{Thy-1}^{\mathrm{lo}}\mathrm{Lin}-\mathrm{Sca}-\mathrm{l}^{+}$骨髓细胞就可以快速重建经致死剂量辐射小鼠的造血系统，重建率高达 $95\%$ 。1991年，Shin-Ichi Nishikawa团队报道小鼠的HSC表达c-Kit基因，这是一种酪氨酸激酶受体，对于HSC的增殖和分化十分重要。随后，他们发现CD34也在人和小鼠的HSC表面表达。2001年，Irving L. Weissman等又发现酪氨酸激酶受体Flk-2可以用来标记HSC，$\mathrm{Flk-2^{-}}$ 的HSC具有自我更新和长期重建能力，但$\mathrm{Flk-2^{+}}$的HSC失去了自我更新能力，只具有短期重建能力。随着分子生物学和细胞生物学技术的进步，新的HSC分子标记不断被揭示。2005年，Sean J. Morrison等报道了SLAM（signaling lymphocyte activation molecule）分子家族可以在原有HSC标记组合的基础上，分离更纯的HSC，并利用体内移植实验证明了这群细胞具有长期重建能力。2016年，Irving L. Weissman等发现HoxB5是存在于长期造血干细胞(long-term HSC, LT-HSC)内的一个特殊标记物，移植实验证明，每2.1个表达HoxB5的骨髓细胞中就会有一个HSC。同年，有研究发现，CD201纯化获得的HSC在单细胞移植实验中的成功率在 $30\%$ 以上，并且首次在单细胞水平解析HSC及其前体细胞在转录组水平的规律和特点。总之，上述已报道的HSC分子标记是体内示踪其发育过程和体外获得HSC实验中不可或缺的分子工具。
+
+对于HSC体内发育起源的认识始于20世纪90年代，研究人员在鸡胚中观察到主动脉内造血细胞由内皮细胞产生。然而，直到2008年，Ann C. Zovein等通过谱系示踪追踪内皮细胞的发育，才证实HSC起源于AGM区主动脉腹侧内皮细胞。随后，Hanna M. Eilken等人在体外单细胞水平观察到中胚层细胞向血管内皮细胞分化，再分化为血细胞，形成血细胞群落的过程；同时，Christophe Lancrin等人在体外培养胚胎干细胞向血细胞分化的过程中，证实了HE的存在，揭示了内皮细胞和血细胞间的直接联系。HSC体内起源的突破性成果产生于2010年，来自荷兰、美国和法国的3个研究组分别以小鼠和斑马鱼为模型，通过活体成像追踪技术及遗传学分析，证明动脉腹侧壁上特化的HE通过EHT直接产生HSC，并且EHT过
+
+23.1 血细胞发育
+
+467
+
+---
+
+![](../../raw/pages_0481-0496/images/page_480_image_0.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  Start["初级造血"] --> Stage1["7.5 d"]
+  Stage1 --> Blood["血岛"]
+  Stage1 --> Tissue["胚胎"]
+  Stage1 --> Bone["胸腺"]
+  
+  subgraph Development
+  Blood --> Stage2["8.25 d"]
+  Stage2 --> Stage3["10.5 d"]
+  Stage3 --> Stage4["13.5 d"]
+  Stage4 --> Stage5["胸腺"]
+  Stage5 --> End["骨髓"]
+    
+  Stage2 --> Stage6["中胚层细胞"]
+  Stage6 --> Branches["血管内皮细胞"]
+  Branches --> Branches2["血管内皮细胞"]
+  Branches2 --> Branches3["红系-髓系祖细胞"]
+  Branches3 --> Branches4["血细胞"]
+  Branches4 --> Branches5["初级红细胞"]
+    
+  Stage6 --> Branches6["血管内皮细胞"]
+  Branches6 --> Branches7["生血内皮细胞"]
+  Branches7 --> Branches8["红系-髓系祖细胞"]
+  Branches8 --> Branches9["血管内皮细胞"]
+  Branches9 --> Branches10["造血干细胞"]
+  Branches10 --> Stage7["造血干细胞"]
+  Stage7 --> Stage8["造血干细胞"]
+  Stage8 --> Stage9["T淋巴细胞"]
+  Stage9 --> End
+    
+  Stage9 --> Stage11["成熟血细胞"]
+    
+  Stage11 --> Stage12["前部血岛"]
+  Stage12 --> Intermediate["中间细胞团"]
+    
+  Stage12 --> Stage13["后部血岛"]
+  Stage13 --> Stage14["主动脉"]
+  Stage14 --> Stage15["尾部造血组织"]
+    
+  Stage15 --> Stage16["胸腺"]
+  Stage16 --> End
+    
+  end
+```
+</details>
+
+图 23-1 脊椎动物（小鼠和斑马鱼）血液发育示意图
+
+小鼠的初级造血起始于胚胎期7.5天的卵黄囊血岛，最早的血细胞由部分中胚层细胞分化产生。随后，次级造血第一阶段也在卵黄囊血岛开始，主要产生红系-髓系祖细胞（EMP）。当胚胎发育到10.5天时，主动脉-性腺-中肾区（AGM）主动脉腹侧壁内皮细胞通过内皮-造血转换过程（EHT）产生造血干细胞（HSC）。然后，HSC迁移至胎肝并发生扩增，部分HSC迁移至胸腺分化为T淋巴细胞，另一部分HSC迁往骨髓，并可分化为各类成熟血细胞以维持终生造血。斑马鱼的初级造血发生于中间细胞团和前部血岛，在这两个区域分别产生初级红细胞和初级髓系细胞。受精后24 h，次级造血第一阶段在后部血岛发生，主要产生EMP。HSC自受精后26 h开始由主动脉腹侧壁内皮细胞通过“出芽”形式产生。随后，HSC迁移至尾部造血组织（CHT）进行扩增，部分HSC迁往胸腺产生T淋巴细胞，最终，HSC迁移至肾髓，以维持终生造血。
+
+468
+
+第 23 章 血细胞的分化与造血功能
+
+---
+
+程在脊椎动物进化过程中高度保守。部分研究暗示YS和胎盘也可能是HSC的起源地，但目前对这些HSC的来源还存在颇多争议，对HSC在其产生和调控过程的认识也极其有限。此外，胎肝、胚胎骨髓或其他组织是否可以原位产生造血，或仅作为YS和AGM产生HSC的扩增、分化的场所，也是探索HSC起源过程中亟待解决的问题。
+
+## 23.1.3 造血干细胞分化
+
+HSC 是一群具有自我更新和多向分化潜能的多能干细胞，除了能通过自我更新维持恒定的细胞数量外，还可以分化产生红系细胞、髓系细胞和淋系细胞。其中，红系细胞包括红细胞（red blood cell，RBC）和巨核细胞（megakaryocyte），成熟红细胞具备携氧能力，巨核细胞可以成熟为血小板（platelet），发挥凝血功能；髓系细胞包括巨噬细胞（macrophage）、单核细胞（monocyte）和粒细胞（granulocyte），它们构筑起机体免疫的第二道防线；淋系细胞包括 T 淋巴细胞（T lymphocyte）、B 淋巴细胞（B lymphocyte）和自然杀伤细胞（natural killer cell，NK）等，主要承担机体特异性免疫保护（图 23-2）。
+
+## (1) 长期造血干细胞和短期造血干细胞
+
+在正常生理条件下，骨髓中HSC分为长期造血干细胞（long-term HSC，LT-HSC）和短期造血干细胞（short-term HSC，ST-HSC）两种类型。LT-HSC数量较少，通常处于静息状态，以减少因细胞分裂而导致的基因突变。LT-HSC具有极强的自我更新和多系分化能力，并且在应激条件下可以快速进入细胞周期，通过增殖与分化维持机体血液系统的稳定。Paul S. Frenette等人发现静息状态的HSC“定居”在骨髓的小动脉中，小动脉紧靠周细胞（pericyte）且远离血窦（sinusoid），但是，血窦微环境附近的HSC处于细胞分裂状态，如果周细胞附近的HSC进入血窦微环境，这些细胞将会由静息状态转变成细胞分裂状态。与LT-HSC相比，ST-HSC的自我更新能力减弱，Thy-1.1表达变弱，但Flk-2开始表达。研究发现，ST-HSC的移植重建潜能在8～12周之间。在体外培养条件下，LT-HSC和ST-HSC具有相同的增殖潜能，但是，ST-HSC的移植重建能力却明显低于LT-HSC，这种差异性可能与它们在体内的归巢能力有关。
+
+## (2) 多潜能前体细胞
+
+HSC 分化为多潜能前体细胞 (multipotent progenitor, MPP) 后，便失去了自我更新能力，但仍具备分化为各成熟血细胞系的能力。最新研究发现，MPP又可分为MPP1、MPP2、MPP3和MPP4四个亚群，且每个亚群都可以由HSC独立产生，但其产生的速率和数量有所不同。四个MPP亚群的功能存在差异，其中，MPP1的生物学功能接近于ST-HSC，移植重建能力高于其他三类细胞；MPP2和MPP3具有髓系分化倾向性，比MPP4分化为红系细胞和髓系细胞的能力强；而MPP4具有淋系分化倾向性，但在体外诱导条件下，MPP4也能分化为髓系细胞。2014年，Fernando D. Camargo等人通过新的原位遗传标记的谱系示踪技术，发现正常生理条件下的各种血细胞系主要由MPP分化产生，而HSC主要起到维持MPP数量稳定的作用。
+
+## (3) 淋系多潜能前体细胞和共同髓系前体细胞
+
+MPP可进一步分化为淋系多潜能前体细胞(lymphoid-primed multipotent progenitor, LMPP)和共同髓系前体细胞(common myeloid progenitor, CMP)。Sten Eirik W. Jacobsen团队于2005年在ST-HSC中定义了一群新的细胞群体，即Flt3 $^{+}$ 的LMPP，这群细胞可以分化为粒细胞/巨噬细胞前体细胞(granulocyte-macrophage progenitor, GMP)和共同淋系前体细胞(common lymphoid progenitor, CLP)，但不具备分化为巨核细胞和红细胞的潜能。深入研究发现，其分化局限性是因为红系细胞分化的关键基因Gata1和EPOR等，在LMPP中是低表达的。GMP可进一步分化为粒细胞和巨噬细胞。其中，粒细胞参与机体的过敏反应，巨噬细胞具备吞噬能力，通过清除异物来维持机体内环境的稳定。CLP可进一步发育为自然杀伤细胞、T淋巴细胞和B淋巴细胞等，T淋巴细胞在胸腺中产生，参与机体的免疫应答。CMP又可以分化为巨核细胞/红细胞的前体细胞(megakaryocyte-erythroid progenitor, MkEP)和GMP，MkEP最终分化为巨核细胞和红细胞。巨核细胞成熟后形成血小板，参与机体的炎症反应和凝血反应。
+
+随着实验技术的突破与创新，HSC谱系分化图也在不断地更新和完善。2013年，Hiromitsu Nakauchi团队发现一群具有髓系分化潜能的前体细胞（myeloid-restricted progenitors，MyRP）可以直接由HSC以不对称分裂方式产生，而不需经过MPP阶段。这群细胞可以快速产生髓系细胞并响应外界的应激条件。此外，Fumio Takei等人在2016年发现LMPP中CD127 $^{+}$ 的细胞比CLP更能有效地分化为T细胞和固有淋巴细胞。这说明T淋巴细胞不只来源
+
+23.1 血细胞发育
+
+469
+
+---
+
+![](../../raw/pages_0481-0496/images/page_482_image_0.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["长期造血干细胞"] --> B["短期造血干细胞"]
+  A --> C["髓系前体细胞"]
+  A --> D["多潜能前体细胞"]
+  
+  B --> E["共同髓系前体细胞"]
+  B --> F["淋系多潜能前体细胞"]
+  
+  C --> G["巨核细胞/红细胞前体细胞"]
+  C --> H["粒细胞/巨噬细胞前体细胞"]
+  C --> I["共同淋系前体细胞"]
+  
+  D --> J["嗜酸性粒细胞"]
+  D --> K["嗜碱性粒细胞"]
+  D --> L["中性粒细胞"]
+  D --> M["巨噬细胞"]
+  
+  G --> N["巨核细胞"]
+  G --> O["红细胞"]
+  G --> P["嗜酸性粒细胞"]
+  G --> Q["嗜碱性粒细胞"]
+  G --> R["中性粒细胞"]
+  G --> S["巨噬细胞"]
+  
+  H --> T["自然杀伤细胞"]
+  H --> U["B淋巴细胞"]
+  H --> V["T淋巴细胞"]
+  
+  I --> W["巨核细胞"]
+  I --> X["红细胞"]
+  I --> Y["嗜酸性粒细胞"]
+  I --> Z["嗜碱性粒细胞"]
+  I --> AA["中性粒细胞"]
+  I --> AB["巨噬细胞"]
+```
+</details>
+
+图23-2脊椎动物造血干细胞谱系分化示意图
+
+造血干细胞包括长期造血干细胞和短期造血干细胞两种。长期造血干细胞先分化为短期造血干细胞，再由后者产生多潜能前体细胞。多潜能前体细胞继续分化，产生共同髓系前体细胞和淋系多潜能前体细胞。其中，共同髓系前体细胞可产生巨核细胞/红细胞前体细胞和粒细胞/巨噬细胞前体细胞；而淋系多潜能前体细胞可产生粒细胞/巨噬细胞前体细胞和共同淋系前体细胞。最终，上述前体细胞分化并发育为多种血细胞，包括巨核细胞（成熟后可产生血小板）、红细胞、粒细胞、巨噬细胞、自然杀伤细胞、B淋巴细胞和T淋巴细胞等。
+
+于CLP，还有其他的来源。上述研究不仅完善了HSC的谱系分化，更是对HSC生物学功能研究的补充。
+
+## (4) 红细胞
+
+红细胞是血液系统的重要组成成分，是脊椎动物体内主要的携氧细胞。红细胞发育的最初状态是原红细胞（pro-erythroblast），此时，细胞较大、呈椭圆形。细胞核大而圆，胞质染色呈深紫色，占据细胞绝大部分空间。原红细胞早期具有分裂能力，经过4～5次细胞分裂后，原红细胞失去分裂能力并发展为原红细胞晚期。晚期的原红细胞失去细胞核并分化为网织红细胞（reticulocyte）。
+
+网织红细胞体积变小，胞内含少量RNA。网织红细胞一般不再分裂，短时间内分化为成熟的红细胞。红细胞成熟后，体积继续变小，胞内RNA消失。成熟的红细胞外形呈扁平状，截面呈哑铃状且中间凹陷。人的红细胞生命周期约为120天。
+
+## (5) 巨核细胞
+
+巨核细胞是一种终端分化的细胞，且数量较少。巨核细胞的成熟伴随着一个特殊的细胞周期，即在细胞膜不消失的情况下，核内发生2～6次的有丝分裂。因此，成熟的巨核细胞常包含16倍体及其以上的巨大细胞核。
+
+470
+
+第23章 血细胞的分化与造血功能
+
+---
+
+巨核细胞的多倍体特性为后续形成血小板提供了蛋白质、颗粒、细胞骨架和细胞器等物质。巨核细胞成熟后，细胞骨架发生重排形成具有伪足状结构的前血小板，前血小板通过微管的扭转变形和血流剪切力的作用释放血小板，最后，成熟的巨核细胞只剩下裸核。血小板一般分布在肺等毛细血管丰富的部位，在人体内的存活周期是7～10天。
+
+## (6) 粒细胞
+
+粒细胞是白细胞的一种，因其胞内含有嗜色颗粒，所以称其为粒细胞。根据嗜色颗粒特征，粒细胞分为嗜酸性粒细胞(eosinophil)、嗜碱性粒细胞(basophil)和中性粒细胞(neutrophil)。中性粒细胞的细胞核呈分叶型，一般2～5叶。胞质呈无色或浅粉色，内含大量溶酶体颗粒。中性粒细胞一般分布于血液富集的地方，是白细胞中数量最多的一种细胞，占血液循环中白细胞的60%～65%，在机体需要时可以立即动员，建立机体免疫防护的屏障。嗜酸性粒细胞的细胞核呈肾形，一般2～3叶。胞质呈深紫色，嗜酸性粒细胞中的颗粒含有多种酶类和碱性蛋白质，如过氧化物酶、磷脂酶、组胺酶和一些毒性碱蛋白等，胞内颗粒随血液流动会出现脱粒的现象，分布在细胞周围，参与周围的免疫反应。嗜碱性粒细胞的细胞核呈分叶型，一般只有2叶。胞质染色呈紫色。胞内颗粒一般是组胺、肝素和血小板激活因子等物质，因其数量较多，有时会遮挡细胞核。成熟的嗜碱性粒细胞一般分布于感染部位，发挥免疫应答功能。
+
+## (7) 巨噬细胞
+
+巨噬细胞属于白细胞中的一种，细胞核呈圆形或椭圆形，胞质染色呈深色。胞内含有颗粒和空泡，具有变形运动和吞噬作用。根据功能不同，巨噬细胞可以分为两种:经典活化型巨噬细胞（M1）和代替活化型巨噬细胞（M2）。M1型巨噬细胞会分泌促炎性因子IL-1、IL-6、IL-12和TNF-$\alpha$ 等来促进细胞增殖，同时，可以诱导Th1细胞应答促炎症信号，杀伤肿瘤细胞。M2型巨噬细胞会产生抗炎性因子IL-10和TNF-$\beta$ 等抑制细胞增殖，同时诱导Th2细胞应答抗炎症信号，发挥对抗炎症、组织修复和免疫调节等功能。
+
+## (8) T淋巴细胞
+
+T淋巴细胞（T细胞）的发育和成熟是在胸腺中完成的，胸腺为T细胞的基因重排和成熟提供了特定的微环境。T细胞自身抗原受体（T cell receptor, Tcr）基因重排并在细胞表面表达，这些受体一般会经过2个筛选过程:阳性选择和阴性选择。阳性选择可以筛选具有自身主要组织相容性复合体（major histocompatibility complex, MHC）限制性的T细胞；阴性选择可以排除非自身耐受的T细胞。T细胞的发育首先是CD4和CD8分子均不表达的双阴性阶段。随后，根据c-Kit、CD44和CD25三个标记基因的表达情况，又可将双阴性阶段分为4个连续的阶段——DN1～DN4。DN1表达c-Kit和CD44而不表达CD25；DN2细胞表达c-Kit，DN3细胞表达c-Kit和CD25而不表达CD44，DN4阶段将不再表达CD25。此过程是未成熟T细胞逐渐成熟的过程，同时伴随着基因的重排，重排成功的细胞进入下一阶段，重排不成功的细胞被淘汰。DN4阶段结束后开始表达CD4和CD8分子，此时细胞进入双阳性阶段，在这些细胞中能够识别自身MHC分子的细胞将会进一步成熟并进入CD4或CD8单阳性T细胞的阶段。
+
+成熟的CD4 $^{+}$ T细胞包括辅助T细胞（T helper cell, Th）和调节T细胞(regulatory T cell, Treg)，其中，Th细胞又分为Th1、Th2、Th9、Th17、Th22、Th25和Tfh（T follicular helper cell）等细胞亚群。Th细胞主要参与细胞免疫应答，延迟过敏反应，清除细胞外异物等机体活动。Treg细胞包括Tr1和Th3等细胞亚群，它的主要功能是抑制机体免疫反应，维持机体免疫耐受。CD8 $^{+}$ T细胞分泌细胞因子和趋化因子，其主要功能是清除病毒和病原体，发挥机体适应性免疫应答效应。活化的T细胞也会产生记忆T细胞(memory T cell)，记忆T细胞又可分为中心记忆T细胞(central memory T cell)和效应记忆T细胞(effector memory T cell)，前者主要参与淋巴组织和血液部位的二次免疫应答，后者主要参与外周组织、血液和脾等部位的二次免疫应答。
+
+## (9) B淋巴细胞
+
+B淋巴细胞（B细胞）能够抵御各种病原体入侵，但每一种B细胞仅能针对一种特定的抗原。在B细胞成熟过程中，最初的原始细胞称为原B细胞，当其发生 $D_{H}$ 和 $J_{H}$ 的拼接与 $V_{H}$ 和 $D-J_{H}$ 的拼接后，便发育为前B细胞。当前B细胞完成轻链基因装配并有完整的IgM分子表达在细胞表面时，便进入非成熟B细胞阶段。最后，具有自身耐受性并能在外周存活下来的未成熟B细胞发育为成熟B细胞。成熟的B细胞在外周抗原的刺激下活化，可以合成和分泌抗体，参与机体的体液免疫。
+
+23.1 血细胞发育
+
+471
+
+---
+
+综上所述，起始于20世纪初期的血细胞起源研究，在经历了漫长的探索过程，直到2010年才取得了突破性成果，证实了HSC是通过EHT产生的。与此同时，随着谱系示踪技术的不断创新和血细胞分化图谱的逐步完善，人们对于HSC及其分化的各种前体细胞也有了全新的认识和了解。但是，目前对于成血/成血管前体细胞的起源、卵黄囊和胎盘中HSC的产生以及生血内皮的命运决定等诸多问题仍没有定论，有待进一步探索。
+
+## 23.2 血细胞发育调控及其微环境
+
+造血是一个复杂而有序的动态过程，是胚胎发育过程中一项重要的生命活动。在分子水平上，血细胞发育的调控网络包括各种关键因子、重要的信号通路、微环境因素以及表观遗传修饰等。这些因素之间相互作用，协同调控血细胞的发生、维持及分化等过程。深入、系统地研究造血过程中的关键调控因素，对于充分理解造血过程的分子机制，完善调控网络以及治疗相关疾病具有重大意义。
+
+## 23.2.1 血细胞发育的调控
+
+## (1) 血细胞发育的遗传调控
+
+细胞内源转录因子与重要信号通路相互协调形成的调控网络，是发育各阶段关键直接的调控因素。转录因子通常作为基因表达调控网络的核心而发挥至关重要的功能。在整个造血过程中，有多种转录因子在不同阶段发挥关键作用，它们直接靶定在目的基因的上游调控区域，如启动子，通过结合不同的辅因子，发挥激活或抑制作用。
+
+① 血细胞发育中的关键转录因子 HSC由生血内皮经EHT过程产生，Runx1是该过程中关键的转录调控因子，它可以标记胚胎的所有HSC，并且在脊椎动物中的功能十分保守。根据runx1增强子序列构建的转基因斑马鱼可以标记HSC并观察EHT过程。缺失runx1后，生血内皮特化不受影响，并且可发生形变及出芽，但随后细胞发生破裂，导致HSC无法产生。Runx1有2段启动子序列:远端P1区和近端P2区，分别启动runx1c和runx1b的表达。其中，runx1b在生血内皮中低表达，runx1c表达于造血干/祖细胞(hematopoietic stem and progenitor cell,
+
+HSPC）中。现已发现，Runx1b的下游基因涉及EHT过程相关的细胞连接、整联蛋白信号、细胞外基质重塑以及内皮细胞移动等过程，例如Gfi1/Gfi1b在生血内皮细胞中可抑制内皮基因的表达，从而促进细胞发生形变。
+
+许多造血相关基因的调控区域有Runx1或其他转录因子复合体（如Scl/Lmo2/Gata）的结合位点。功能性实验证明，分别缺失这些转录因子会导致次级造血发育缺陷。Scl是生血内皮细胞命运决定不可或缺的因子，在Runx1上游发挥功能，缺失Scl会导致HSC产生以及分化缺陷。scl基因有两个转录物，scla和sclβ。体内实时观察发现，sclβ在生血内皮细胞中特异表达，对生血内皮的命运决定至关重要，而scla则在新产生的HSC中特异表达，对HSC在AGM区的维持发挥作用。Gata2在主动脉及HSC簇中有特异表达。gata2b特异性表达在生血内皮中，并能够启动runx1的表达，进而调控EHT过程；此外，Gata2对于HSC产生后的维持过程也非常重要（图23-3）。
+
+HSC产生之后，会进入维持、扩增及分化阶段。此时，转录因子Cmyb发挥关键作用。敲除Cmyb的小鼠由于胎肝造血缺失而早期致死，同时红系及淋系发育严重受阻。斑马鱼实验证明Cmyb通过SDF1影响HSC产生后的迁移过程，进而调控HSC维持。
+
+在HSC分化为成熟血细胞的过程中，许多谱系特异性的调控因子参与其中。它们不仅可以促进干细胞向特定谱系分化，同时也可以抑制其向其他谱系的分化。例如:Gata1和Pu.1在红系和髓系分化过程的拮抗作用，Gata1促进红系分化，同时通过直接阻止Pu.1与靶基因的结合而抑制髓系基因的表达；而Pu.1作用机制相反，它促进髓系基因表达，同时通过蛋白-蛋白相互作用阻止Gata1结合到靶基因发挥作用。Klf1和Fli1是另外一组相互拮抗的转录因子组合，分别调控红系和巨核细胞的分化。在红细胞成熟阶段，Gata1和Eklf分别调控红系终末分化及血红蛋白转换；Klf家族的转录因子Klf3和Klf6也是关键的调控基因。在淋系分化及成熟过程中，Pax5对B淋巴细胞的命运决定发挥关键调控作用，其他B细胞特异转录因子，如E2A和EBP，可以协同调控。转录因子Irf4直接调控趋化因子受体ccr9a，促进T淋巴细胞归巢；同时，Irf4也可以抑制Pu.1表达，阻止前体细胞向髓系分化。
+
+② 血细胞发育中的重要信号通路 除了转录因子,
+
+472
+
+第23章 血细胞的分化与造血功能
+
+---
+
+许多信号通路也在HSC发育过程中发挥着重要的调控作用（图23-3）。Notch是HSC发育过程中研究较多的信号通路。Notch信号在造血发育过程中的作用是动态变化、剂量依赖性的。在动静脉分化之前，Notch信号能够促进HSC的产生。一旦动静脉分化完成，其在动脉内皮细胞中的活性就需要下调，以保证HSC基因的表达。例如:缺失Ncor2或Gpr183可导致Notch信号在内皮细胞的持续激活，进而抑制HSC的产生。不同Notch配体可以介导不同强度的Notch信号，Jagged1能够介导生血内皮细胞中低强度的Notch信号来维持HSC的产生，而Dll4维持内皮细胞中高强度的Notch信号来保证动脉的分化。另外，在T细胞发育过程中，Notch信号对T细胞命运决定发挥正向促进作用。Notch下游基因Hes1在未成熟T细胞中呈现高表达，并能够限制Cebpa的表达，进而抑制髓系潜能。
+
+ERK信号通路能够参与调控多种生命活动，如细胞增殖、分化、迁移、衰老和凋亡等。在造血发育过程中，ERK信号通路可以通过促进动脉分化而调控HSC的产生，也可以通过磷酸化并激活Scl调控Gata1和Gata2。近期研究表明，ERK信号也是剂量依赖性的，并被多因素动态协同调控（图23-3）。内皮细胞中Smad1/5招募Hdac1抑制ERK信号促进HSC产生，过量的ERK1/2导致内皮细胞间的紧密连接增强，EHT过程受到抑制。另外，ETS家族转录因子Fev（哺乳动物Pet1）可以正向调控ERK水平，促进HSC产生。
+
+Wnt/β-catenin信号通路对HSC发育也非常重要（图23-3）。过表达Wnt信号通路下游的抑制因子dkk和axin能够抑制HSC的产生，而PGE2可以调控Wnt信号通路中β-catenin的磷酸化进而调控造血发育。Wnt对HSC产生的作用也是动态变化的。在内皮-造血转化发生之前，$\beta$-catenin在内皮细胞中的激活可以促进HSC产生，一旦造血的命运决定完成，$\beta$-catenin的活性就会下调。$\beta$-catenin非依赖性的Wnt信号通路也能够调控造血发育过程。Wnt16通过调控Notch信号通路的配体DeltaC和DeltaD以细胞非自主性的方式调控HSC的产生，而且FGF信号通路的受体Fgfr4可以介导Wnt16在HSC发育过程中对DeltaC的调控。HSC具有自我更新和分化能力。Wnt/$\beta$-catenin可以通过上调Notch1和HoxB4维持HSC的增殖及自我更新能力。BMP信号可以通过调控Wnt/$\beta$-catenin通路及Akt磷酸化来促进干细胞增殖并维持干细胞的多能性。
+
+## (2) 血细胞发育的表观遗传调控
+
+表观遗传修饰为基因调控研究提供了新的视角，弥补了经典遗传学的不足。表观遗传修饰使得拥有同一基因型的多细胞个体包含具有不同功能的细胞类型。研究发现，表观遗传修饰通过调控染色质的构象和亲和性直接影响造血发育相关基因的表达，并且能协调成体HSC干性维持和分化之间的平衡。诸多表观遗传修饰，如DNA甲基化、组蛋白修饰、染色质重塑以及小RNA和长链非编码RNA等，参与造血发育调控。此外，RNA甲基化修饰也受到了广泛关注（图23-4）。
+
+① DNA甲基化 在血细胞发育过程中，DNA甲基化的变化能够影响细胞命运决定，如谱系分化、自我更新和维持等过程。在斑马鱼DNA甲基转移酶1(Dnmt1)突变体中，HSC从产生时期开始就发生缺陷，机制研究表明，Dnmt1通过调控cebpa启动子区域的甲基化影响其转录水平。在斑马鱼的众多DNA重新甲基化转移酶中，Dnmt4在HSC中特异表达。Dnmt4缺失并不影响HSC产生，而是通过影响关键基因cmyb基因编码区的甲基化程度，调控其转录水平，进而维持HSC的命运。在细胞
+
+![](../../raw/pages_0481-0496/images/page_485_image_7.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["主动脉内皮细胞"] -->|"生血内皮特化\nSclβ\nNotch ERK Wnt/β-catenin"| B["生血内皮细胞"]
+  B -->|"内皮造血转化\nRunx1/Gata2/Gfi1\nNotch/ERK/Wnt"| C["新生造血干细胞"]
+  C -->|"Sclα/Cmyb/Gata2"| D["造血干细胞"]
+```
+</details>
+
+图23-3 血细胞发育中的关键转录因子
+
+在造血干细胞产生阶段，主动脉腹侧部分内皮细胞特化为生血内皮，再经过内皮-造血转化过程产生造血干细胞。关键转录因子Sclβ、Runx1、Gata2、Gfi1、Scla以及Cmyb分别在造血干细胞产生的不同阶段进行调控；重要信号通路Notch、ERK、Wnt/β-catenin在不同阶段发挥调控作用，且是剂量依赖性的。
+
+23.2 血细胞发育调控及其微环境
+
+473
+
+---
+
+![](../../raw/pages_0481-0496/images/page_486_image_0.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["组蛋白修饰\nH3K37me"] --> B["DNA甲基化"]
+  C["H3K4me"] --> B
+  D["染色质重塑\n染色质重塑复合体"] --> E["基因合成"]
+  F["非编码RNA"] --> E
+  B --> G["造血基因"]
+  E --> G
+  G --> H["mRNA"]
+  I["miRNA"] --> J["mRNA"]
+  K["RNA甲基化"] --> L["mRNA"]
+  H --> M["mRNA"]
+  J --> N["mRNA"]
+  L --> O["mRNA"]
+```
+</details>
+
+图23-4 血细胞发育的表观遗传调控
+
+表观遗传修饰，如组蛋白修饰、DNA甲基化、染色质重塑以及长链非编码RNA等，通过调控染色质的构象以及亲和性，影响造血发育相关基因的表达。小RNA及RNA甲基化修饰在转录水平参与造血基因调控。
+
+分化阶段，整体水平上分化细胞谱系特异调控因子的甲基化水平是降低的，而维持细胞干性的基因甲基化水平会上调，Dnmt1缺失会导致髓系细胞的过度分化。Dnmt3a与Dnmt3b在调控HSC分化及维持中具有不同的功能，并相互协调共同作用。其中，Dnmt3a通过表观遗传沉默的方式，下调HSC维持因子的表达，同时促进分化过程；敲减Dnmt3b会导致HSC数量略微增加以及分化阻滞表型。
+
+② 染色质修饰及重塑 通常情况下，发育相关基因的调控区域呈现二价性，即同时含有激活性表观遗传标记H3K4me3和抑制性表观遗传标记H3K27me3，该状态既可以保持这些基因的沉默，又可以响应信号而快速激活。全基因组水平的组蛋白修饰分析解释了HSC及前体细胞中造血关键基因的调控区域也存在染色体二价性，但在谱系分化过程中，这种二价性特征被抹除。在HSC及前体细胞中发现了多种组蛋白修饰，特别是激活性标记K3K4me、K3K9ac以及抑制性标记H3K27me。Polycomb蛋白是一组通过染色质修饰调控靶基因的转录抑制因子，包括2个核心蛋白复合体PRC1和PRC2。PRC2复合体组分EZH2具有组蛋白甲基转移酶功能，可以催化H3K27me3，而H3K27me3为PRC1复合体提供了靶定平台，以发挥调控功能。PRC1的组分Bmi1可以促进血细胞存活以及胚胎干细胞来源的造血前体细胞的增殖。体内实验也证明了Bmi1在造血发育中的重要作用。Bmi1敲除小鼠中的HSC只具有短暂的造血系统重建能力。Rae28是PRC1复合体的另一个组分，该基因敲除小鼠发育缺陷并且早期致死，其胎肝中造血前体细胞的数量显著减少，并且缺乏造血重建能力，暗示了Rae28对于HSC功能以及数量的维持有重要作用。
+
+另外一个关注较多的组蛋白修饰相关催化酶是LSD1，它可以特异性地移除H3K4me和H3K9me的甲基。在HSC中特异性敲除Lsd1，导致激活性表观修饰
+
+474
+
+第23章 血细胞的分化与造血功能
+
+---
+
+H3K4me1和H3K4me2在造血相关基因的启动子以及增强子区域积累，造成HSC成熟及谱系分化异常。由此证明在HSC分化过程中，LSD1通过移除启动子及增强子区域的激活性表观修饰而使造血基因沉默，以促进分化。Chd1是一种染色体重塑催化酶，它可以正调控整个转录水平，近期发现其对于HSC产生有重要调控作用。在内皮细胞中特异性敲除Chd1后，内皮细胞可以逐渐转变成生血内皮并形成血管内HSC簇，但随后这群细胞的凋亡水平显著升高，导致无法进一步转变成为新生HSC。Smarca5也是一种染色质重塑相关因子，功能性实验证明Smarca5缺失小鼠的HSC扩增及分化发生缺陷。
+
+③ RNA甲基化 RNA作为细胞内重要的信息分子和调控分子，其转录后修饰很大程度上丰富了RNA的功能。其中， $N^{6}$ -甲基腺嘌呤 $(N^{6}$ -methyl-adenosine， $m^{6}A)$ 依赖的RNA甲基化是真核生物mRNA中最普遍的甲基化形式。 $m^{6}A$ 修饰在干细胞中发挥着适时调节器的作用，通过控制细胞不同阶段主控基因的表达，保证细胞干性维持及后续分化的启动。 $m^{6}A$ 修饰水平下降后，HSC不能正常产生，血管的内皮特性却明显增强，与此同时，一系列动脉内皮发育相关的基因表达发生变化， $m^{6}A$ 通过Ythdf2介导了notch1a的稳定性以维持内皮细胞和造血细胞基因表达的平衡，进而调控HSC的命运决定。
+
+④ 非编码RNA 在造血发育调控过程中，非编码RNA，如miRNA及lncRNA等也参与其中。很多miRNAs表达于血细胞谱系中并对造血发育中的转录因子进行调控。miR-126高度富集于人和小鼠的HSC中，通过腺病毒敲减miR-126可以降低HSC在体内的耗竭。同时，在斑马鱼中miR-126调控次级造血过程中红细胞和巨核细胞的命运选择。除此以外，miR-144和miR-451受到红细胞主要调控基因gata1的调控，对斑马鱼和小鼠的红细胞发育是必需的。miR-142-3p表达于多种类型的血细胞中。miR-142-3p通过irf7介导的炎性信号调控HSC的产生及向T淋巴细胞的分化，同时也可以通过靶向p53影响HSC的存活。miR-142-3p也可以在髓系细胞中靶向调控tab2，在树突细胞中靶向调控IL-6。同时，miR-142-3p还是淋巴细胞和巨核细胞的调控因子。
+
+## 23.2.2 血细胞发育的微环境
+
+## (1) 卵黄囊
+
+卵黄囊是富含血管的胚外囊膜，由脏壁卵黄囊（visceral yolk sac，VYS）和腔壁卵黄囊（parietal yolk sac，PYS）组成，是哺乳动物最早出现的造血器官。卵黄囊上的内皮细胞和血细胞组成血岛，它们共同起源于成血/成血管前体细胞。血岛是血管前体细胞和血细胞的原基，位于血岛外周的内皮细胞可以发育为血管前体细胞，而位于血岛中央的细胞发育分化为血细胞。小鼠胚胎中的第一个血细胞出现在胚胎期第7.5天卵黄囊血岛中，随着卵黄囊血管和脐带的发育，卵黄囊、胎盘和胚胎连接起来，初级红细胞进入血液循环，流向胚胎各处。当胚胎发育到第8.5天时，EMP在卵黄囊中产生并扩增，至胚胎期第9天时完全迁出卵黄囊。卵黄囊来源的初级红细胞与胎肝和骨髓来源的次级红细胞有明显差异。初级红细胞形态较大且有细胞核，可以合成胚胎型球蛋白。次级红细胞最早出现在胚胎期第9.5天的胎肝中，形态较小，合成成体型球蛋白。卵黄囊初级造血也能产生初级髓系细胞，以巨噬细胞为主。这些原始的巨噬细胞能够通过血液循环流向胚胎各处，为胚体提供初级的免疫保护。血液系统发育开始于原肠胚时期，卵黄囊是初级造血的重要场所。此外，在胚胎发育过程中，卵黄囊也可能是HSC的一个来源。卵黄囊内皮细胞作为卵黄囊中重要的基质细胞，参与构成卵黄囊血细胞生长发育的微环境，相关研究表明卵黄囊内皮细胞能够分泌FL、SCF、M-CSF、LIF和IL-6等因子，这些因子在胚胎血液发育过程中可能起到重要的调节作用。
+
+## (2) 胎盘
+
+胎盘是高度血管化的器官，主要介导母体和胎儿间的$\mathrm{O}_{2}$和营养交换，对有胎盘类动物胚胎的存活与发育至关重要。胎盘参与血液发育的研究最早可以追溯到1961年。Till和McCulloch将小鼠胎盘的组织移植入致死剂量辐射的小鼠后，受体小鼠的脾可以产生造血集落。因此，他们首次提出胎盘中存在HSC。此后将胎盘作为一个造血器官的研究逐渐丰富了起来。Ottersbach和Dzierzak等发现在胚胎期第11天的胎盘中可以检测到HSC，到胚胎期第12天，成熟HSC显著增加，约为AGM区的15倍。但是，关于胎盘是否能够原位产生HSC一直都存在争论。2008年，Katrin利用没有心跳的小鼠胚胎Ncx1突
+
+23.2 血细胞发育调控及其微环境
+
+475
+
+---
+
+变体发现，即使胚胎没有血液循环，胎盘中也存在HSC，该成果间接证实胎盘能够原位产生HSC。Christos等发现小鼠胎盘独立于其他造血器官，胎盘通过两种不同的方式参与血液发育:通过绒毛膜大血管直接产生HSC；通过丰富的迷路血管为HSC的迅速扩增和成熟提供微环境。与骨髓相比，胎盘富含HSC，并且也具备可供胚胎HSC发育的微环境。利用激光捕获显微切割技术可以获得HSC周围高纯度的微环境细胞，经体外培养发现，SCF/Kit信号参与胎盘HSC的增殖分化，这说明胎盘微环境细胞能够显著促进胚胎HSC增殖分化。
+
+## (3) 主动脉-性腺-中肾区
+
+AGM区是一个复杂的区域，包括背主动脉、性腺和中肾，其中，背主动脉是造血干细胞的主要来源，由血细胞、内皮细胞和间质细胞构成。以小鼠为例，HSC首次出现于胚胎期第10.5天的背主动脉。AGM区的HSC在胚胎期第11.5天时达到峰值，然后迅速下降，至胚胎期第12.5天时，几乎检测不到HSC。随着血液循环的建立，AGM区形成的HSC通过脐带迁移至胎盘，使得胚胎期第11～12天胎盘迷路血中HSC数量急剧增加。研究发现，AGM区微环境对HSC产生具有重要意义。以Notch信号为例，AGM区的内皮细胞及腔内血细胞簇表达Notch信号受体Notch1和Notch4以及配体Dll4、Jag1和Jag2，但是不表达Dll1和Dll3。敲除Rbpj和Notch1，导致胚胎在胚胎期第9.5天死亡，AGM区HSC产生受到影响。然而，敲除Notch2胚胎也会在围产期死亡，其造血功能却不受影响。研究还发现，IGF-2表达在主动脉内皮细胞、平滑肌细胞以及腔内造血细胞簇，影响AGM区造血干（祖）细胞的产生及维持。Gata3通过非细胞自主机制及儿茶酚胺信号调节AGM区HSC的活性。因此，AGM的造血微环境对HSC的产生和特化具有非常重要的作用，通过进一步了解AGM的造血微环境能够帮助我们提高HSC体外扩增及维持效率。
+
+## (4) 胎肝
+
+胎肝是胚胎早期HSC大量扩增的重要器官。哺乳动物胎肝细胞类型主要包括肝细胞、肝窦血管内皮细胞及各类血液细胞等。根据小鼠有限稀释移植实验的统计结果，HSC最早在胚胎期第11.5天开始迁入胎肝，干细胞经过0.5天的细胞分裂增殖，到胚胎期第12.0天时，可以检测到HSC数量由30个增加到120个。HSC在胎肝中扩增、分化除了受自主性因子的调控，同时也受到胎肝组织微环境的影响。研究表明，胎肝中$\mathrm{SCF}^{+}\mathrm{DLK}^{+}$的肝前体细胞可以通过分泌SCF和血小板生成素(thrombopoietin)维持和促进HSC体外扩增；由此分析，胎肝中HSC快速分裂，有赖于胎肝中大量的肝前体细胞为其提供足够的生长因子。报道显示，胎肝中HSC数量的增长与胎肝门脉血管的生长呈现一定的正相关性，实验数据也证明门静脉周血管微环境为HSC在胎肝的扩增提供了有利条件。2006年，斑马鱼的CHT被鉴定为功能上等同于哺乳动物的胎肝，可以支持胚胎期HSC的迅速扩增和分化。2015年，Leonard I. Zon实验室在斑马鱼胚胎中观察到，从AGM迁移至CHT区域的HSC可以驱使尾部血管内皮形成包裹HSC的微环境，促进HSC增殖。其他研究进一步揭示了HSC在CHT扩增中的分子机制，内皮细胞中转录因子Tfec、Klf6a和分泌性趋化因子cxcl8、ccl25b以及基质细胞来源的Naca等，都参与了CHT区域HSC的增殖分化。然而，HSC怎样迁入迁出胎肝，在胎肝中又是如何有序地扩增和定向分化，以及胎肝HSC是否具有特性更适合进行异体移植等问题都有待进一步研究。
+
+## (5) 骨髓及其他造血组织
+
+维持机体终生造血的成体HSC主要存在于骨髓中。骨髓是一种存在于长骨的骨髓腔里的海绵状组织，可以使机体内为数不多的HSC得到充分的保护，而且骨髓的低氧环境也有利于HSC干性的维持。1978年，Ray Schofield首次提出“骨髓微环境”的概念，随后，人们对骨髓中不同类型细胞群体进行鉴定，并对其在HSC维持过程中的作用开展了一系列研究。骨髓微环境中包含的细胞类型有骨细胞、成骨细胞、破骨细胞及leptin受体表达型血管周细胞 $\left(\mathrm{LepR}^{+}\right)$ 、CXCL12富集的网状细胞、 $Nestin^{+}$ 间充质干细胞 $\left(\mathrm{Nes}^{+}\mathrm{MSC}\right)$ 、血管内皮细胞、脂肪细胞以及一些血细胞前体和成熟的血细胞。研究发现，大部分骨髓微环境细胞通过分泌SCF和CXCL12等重要因子来调节HSC的归巢和维持等。Sean J. Morrison实验室的结果表明，在不同骨髓微环境的细胞中敲除CXCL12时，HSC及造血前体细胞受影响程度不尽相同，并且发现HSC多处于血管周环境，而淋系前体则靠近骨内膜分布。血管内皮细胞的E-selectin会加快HSC的增殖，从而影响HSC的自我更新和造血重建能力。骨髓中的巨核细胞通过释放TGF-β、CXCL4来维持HSC静息状态，同时也通过分泌FGF1促进HSC的增殖。骨髓微环境稳态的维持对于成体HSC及机体
+
+476
+
+第23章 血细胞的分化与造血功能
+
+---
+
+血液系统至关重要。临床证据表明，骨髓增生异常综合征（myelodysplastic syndrome，MDS）和急性髓细胞白血病（Acute myeloid leukemia，AML）患者的成骨细胞数量显著减少；恶性病变化的血细胞通过抑制骨髓中脂肪细胞进而破坏正常HSC生存环境，最终导致白血病。另外，当微环境中重要蛋白分子发生突变，或蛋白表达水平发生变化时，均可引起骨髓中静息期的HSC进入细胞周期，向外周迁移，导致恶性增殖。例如，在MDS患者的骨髓MSC中，Jagged-1表达量增高，但是SCF表达量降低。骨髓移植是目前治疗白血病最有效的手段，深入细致了解骨髓微环境也将为临床治疗提供可靠的理论依据，靶向骨髓微环境也成为治疗白血病的新思路。
+
+在应激或病理情况下，骨髓之外的其他器官恢复胚胎期造血功能的现象称为髓外造血，常见于脾、肝及淋巴结等器官。脾属于重要的外周免疫器官，能产生淋巴细胞，在炎症和免疫应答的条件下，脾会出现不同程度的肿大。当骨髓发生纤维化病变时，脾肝代偿性肿大尤为明显，能够产生幼稚型红细胞进入外周血。2017年，Mark R. Looney利用小鼠肺移植及细胞追踪实验发现，大约50%以上的血小板并非是在骨髓，而是在肺部生成的，这一发现说明，在生理条件下，肺可以进行髓外造血。成体髓外造血是骨髓造血的一个重要补充，也可以间接监测骨髓功能是否正常，是机体造血系统不可或缺的部分。
+
+综上所述，随着血细胞动态发育过程的逐步推进，卵黄囊、胎盘、主动脉-性腺-中肾区、胎肝（尾部造血组织）、胸腺以及骨髓等为不同阶段的血细胞提供特定的微环境。与此同时，微环境信号与细胞内源基因协同调控血细胞产生、维持、扩增及分化过程。目前，科学家已鉴定出多个参与血细胞发育的关键因子、信号通路和表观遗传因子，对脊椎动物血液发育过程的调控已有了基本认识。但是，血细胞体内发育的分子调控及其与微环境的关系仍有很多未解的难题。随着单细胞和高灵敏、高通量组学方法的开发，以及基于CRISPR/Cas或多色荧光的活体示踪技术的优化，人们将会从更新颖的视角去了解血细胞的起源和整个发育过程。
+
+## 23.3 血细胞功能及体外造血
+
+血细胞发育或功能异常会导致多种血液疾病，如红细胞疾病、白细胞疾病和出血性疾病等。在人临床血液肿瘤中，白血病是35岁以下发病率和病死率最高的恶性肿瘤，位居儿童肿瘤首位。在药物治疗方面，上海血液学研究所应用全反式维甲酸和砷剂联合治疗初发急性早幼粒细胞白血病，缔造了我国乃至国际医学科学史上的重大创新成果。在细胞治疗领域，同种异体的造血干细胞移植（hematopoietic stem cell transplantation，HSCT）则是被广泛认可并用于临床治疗先天性和获得性血液病的有效手段，但其广泛应用却备受供体来源及费用昂贵等诸多因素的限制。目前为止，因血液肿瘤种类繁多且病因各异，很多疾病仍没有理想的治疗策略。因此，细胞治疗的新方案、基因治疗以及体外诱导并获得有生物学功能的血细胞一直是前沿领域的研究热点。
+
+## 23.3.1 血细胞的功能与应用
+
+## (1) 血细胞的功能
+
+血细胞主要包括3类:红系细胞（如红细胞、巨核细胞和血小板），髓系细胞（如粒细胞、单核细胞和巨噬细胞）和淋系细胞（如T淋巴细胞、B淋巴细胞、自然杀伤细胞和树突细胞）。这些不同类型的血细胞在血液系统中参与调控机体生命活动，它们不仅协助机体与外界环境进行物质交换，还通过免疫防御功能，维系着体内器官和组织的正常运转。
+
+① 红细胞 红细胞是血液中数量最多的血细胞类型，是脊椎动物气体运输的主要媒介。红细胞通过血红蛋白运送 $O_{2}$ 。血红蛋白由球蛋白和亚铁血红素组成。在氧分压高时，血红素与 $O_{2}$ 结合，实现红细胞的携氧功能；在氧分压低时，血红素与 $O_{2}$ 分离，释放 $O_{2}$，实现红细胞运输氧的功能。红细胞还参与调节血管的收缩与舒张，主要通过感受血流对血管的剪切力，促进ATP和NO合成并作用于血管壁，调控血管腔的大小进而调节血流。另外，红细胞的细胞膜表面分布有C3b糖蛋白和过氧化物酶，因此具有免疫黏附和吞噬细胞的杀伤作用。当红细胞基因缺陷或功能受损时，机体的健康便会受到不良影响，常见的红细胞异常疾病包括贫血（如镰刀型细胞贫血症、地中海贫血症）和溶血等。
+
+② 巨核细胞和血小板 巨核细胞通过细胞胞质裂解
+
+23.3 血细胞功能及体外造血
+
+477
+
+---
+
+破碎产生血小板，其生物学功能也是通过血小板实现的。血小板是人体免疫系统的第一道防线，可以释放凝血酶，促进伤口附近血浆中纤维蛋白交织形成凝块，在止血、凝血和修复破损的血管中有重要作用。近年来的研究显示，血小板中的凝血酶可以协同细胞因子IL-1和TNF-$\alpha$ 等，激发伤口处单核细胞和内皮细胞的促凝血活性；血小板也作为效应细胞参与肺部的炎性反应和免疫应答，进而参与机体免疫系统的第二道和第三道防线，共同完成对病原微生物的免疫防御。血小板还可运载并传递化学小分子（如5-HT），协助肝等器官再生。此外，血小板在防止动脉粥样硬化、急性冠状动脉综合征和癌症中也起到重要作用。
+
+③ 粒细胞 粒细胞主要参与机体的固有性免疫和适应性免疫，在炎症反应和超敏反应中发挥作用。中性粒细胞是人体中数量最多的免疫细胞类群，其胞质中含有溶酶体，内含溶菌酶、过氧化物酶和各种水解酶。当机体受伤或发生感染时，中性粒细胞第一个到达感染部位并启动机体的急性炎性反应和组织修复，反应后的中性粒细胞凋亡，随后被吞噬细胞吞噬。中性粒细胞还可以协同其他血细胞，如血小板、单核细胞、肥大细胞和淋巴细胞等，参与机体的慢性炎性反应，在肥胖、动脉粥样硬化等慢性炎症反应和肿瘤中发挥着重要作用。嗜酸性粒细胞、嗜碱性粒细胞和肥大细胞均可参与I型超敏反应，促进淋巴细胞的活化，发挥免疫效应功能。
+
+④ 单核细胞/巨噬细胞 巨噬细胞存在于机体所有组织中，通过吞噬作用消化并降解死细胞、组织碎片和外来物质，同时具有协调机体炎性反应、修复受损组织、参与机体固有性免疫和适应性免疫等多种生物学功能。通常认为，成体血液的单核细胞是组织中巨噬细胞的前体细胞。当受伤或感染导致组织受损时，机体便通过血液循环招募炎性单核细胞，单核细胞分化为巨噬细胞到达特定的损伤部位。巨噬细胞可以分泌多种炎性因子，如TNF-α、IL-1或NO等，激活机体抗菌机制，杀死入侵生物，也可指导抗菌 $T_{H}$ 和 $T_{H}17$ 细胞，协助完成炎性免疫应答。近年来，人们还发现巨噬细胞在肿瘤、动脉粥样硬化、关节炎和纤维病变等慢性疾病的临床治疗中具有潜在应用价值。
+
+⑤ T淋巴细胞 T细胞是淋巴细胞中数量最多、功能最复杂的一类免疫细胞。T细胞是适应性免疫的重要组成部分，主要功能是执行机体的细胞免疫，调节机体免疫功能，在抑制肿瘤发生、病原微生物清除等过程中有重要的作用。T细胞的功能包括:细胞毒T细胞能通过细胞介导的排斥反应，对异体细胞产生攻击效应，杀死被病毒感染的细胞或肿瘤细胞；辅助T细胞协助其他淋巴细胞行使免疫学功能，如协助B细胞成熟、细胞毒T细胞及巨噬细胞的活化；调节/抑制T细胞能维持机体免疫耐受，调节机体的炎性反应；记忆T细胞能在二次接触抗原时快速响应并作为效应细胞参与免疫应答。
+
+⑥ B淋巴细胞 B细胞与T细胞共同协助机体抵御外界病原体，是维持生理内环境稳定的第三道防线，主要参与机体的适应性免疫。成熟B细胞主要定居于淋巴结皮质浅层的淋巴小结以及脾的红髓和白髓的淋巴小结内。B细胞能够介导体液免疫，在抗原的刺激下，B细胞可分化为浆细胞，并分泌抗体。此外，B细胞可作为专职抗原呈递细胞（antigen-presenting cell, APC），在CD4 $^{+}$ 辅助T细胞的协助下，摄取、加工并呈递抗原，启动再次的免疫应答。
+
+## (2) 血细胞与临床应用
+
+1956年，华盛顿大学佛雷德-哈金森医学中心的Donnall Thomas成功地通过双胞胎间的骨髓移植治疗白血病。1969年，经过组织配型和抗抑制剂药物的作用，首次成功地在实验动物中进行异体骨髓移植。20世纪70年代末，Donnall Thomas将此研究结果应用于临床，成功地实现了不同个体之间的骨髓移植。他也因此与肾移植的开创者，哈佛大学布利格汉姆医院的Joseph E. Murray，共同获得了1990年诺贝尔生理学或医学奖。骨髓移植之所以能够重建受体血液系统是因其具有多系分化潜能的HSC。临床应用已证实，来源于骨髓或脐带血的HSC均可用于重建造血与免疫系统，因此，现通常称为“造血干细胞移植”。此外，锌指核酸酶（ZFN）、TALEN和CRISPR/Cas等基因编辑技术的崛起与不断优化，为临床疾病的基因治疗奠定了技术基础。例如分别利用TALEN和CRISPR/Cas技术，在患者来源的诱导多能干细胞(induced pluripotent stem cell, iPSC)中，成功修复地中海贫血症中突变的β-globin基因(HBB)，并且在iPSC分化的成红血细胞中检测到恢复表达的HBB；利用CRISPR/Cas技术还成功地修复了范科尼贫血患者来源的成纤维细胞中FANCC c.456+4A>T的突变。
+
+嵌合抗原受体T细胞免疫疗法(chimeric antigen receptor T-cell immunotherapy, CAR-T)是当前治疗
+
+478
+
+第 23 章 血细胞的分化与造血功能
+
+---
+
+恶性肿瘤较为有效的细胞学疗法之一。CAR始于1989年，由以色列魏兹曼研究所的Gideon Gross和Zelig Eshhar开创，随后，经过不断的演化与改进，近年来备受关注。2017年，美国FDA批准基于CAR-T的“细胞过继转移(adoptive cell transfer)”疗法，即通过改造患者自身的T细胞，使其特异性表达针对患者癌症的受体，以便识别和杀死癌细胞，治疗急性淋巴细胞白血病(acute lymphoblastic leukemia, AML)。当前，CAR的核心结构包括胞外域(ectodomain)、信号肽(signal peptide)、抗原识别区域(antigen recognition region)、跨膜区(transmembrane domain)、连接抗原和跨膜区的灵活间隙(spacer)和胞内信号区(endodomain)。其中，来源于单克隆抗体的单链抗体可变区段(single-chain variable fragments, scFv)是决定CAR特异性、有效性以及改造T细胞自身安全性的关键因素，因此，目标抗原选择是CAR-T疗法最为关键的环节。
+
+## 23.3.2 造血干细胞的体外诱导和扩增
+
+## (1) 体外诱导
+
+在发育过程中，HSC是各种血细胞的原始祖细胞，这些具有多系分化潜能的干细胞更是骨髓移植治疗血液疾病的关键有效成分。如果能体外获得并扩增HSPC，将为无数血液疾病患者带来希望。目前，体外诱导HSPC主要有两种方案:一种是先获得iPSC，再诱导分化为HSPC，另一种方案则是由已分化的体细胞直接转分化为HSPC（图23-5）。
+
+自日本京都大学教授、2012年诺贝尔生理学或医学奖获得者Shinya Yamanaka首次通过4种转录因子成功获得iPSC以来，干细胞研究取得突飞猛进的发展。从胚胎干细胞或诱导多能干细胞分化获得造血前体细胞的方案也在不断地改进和更新。在人的胚胎干细胞（embryonic stem cell, ESC）培养过程中，逐步添加BMP4（或Wnt11）和Wnt3a，能够极大地提高生血内皮细胞以及HSPCs得率。此外，在人的ESC或iPSC中表达ERG/HOXA9/RORA/SOX4/MYB、ETV2/GATA2、TAL1/GATA2等不同组合的转录因子，或在小鼠的ESC中表达Gata2/Lmo2/Mycn/Pitx2/Sox17/Tal1，均可体外获得具有向红/髓系分化潜能的HSPC，这些前体细胞可分化为红细胞、巨噬细胞和巨核细胞等。也有报道表明，HoxB4可以诱导人或小鼠的ESC向造血干（祖）细胞分化。但上述方法获得的造血干（祖）细胞均不能称为真正意义上的HSC，因为这些细胞大多不具备向淋系分化的潜能，部分方案还缺乏移植实验证据。直到2017年，哈佛大学的George Q. Daley团队首先通过形态发生素介导的定向分化，将人的ESC诱导分化为生血内皮，再利用7个转录因子ERG/HOXA5/HOXA9/HOXA10/LCOR/RUNX1/SPI1介导的细胞命运转换，成功获得造血干（祖）细胞，最终通过小鼠的一次和二次移植实验证实，这些细胞可以分化为髓系细胞以及B细胞和T细胞等。
+
+在转分化探索方面，2010年，Nature首次报道了通过转分化成功获得血细胞的实验成果。加拿大麦克马斯特大学Mickie Bhatia团队在人的成纤维细胞中异位表达OCT4，激活造血相关转录因子，在体外产生具有红/髓系分化潜能的CD45 $^{+}$ 血细胞，并可分化为粒细胞、单核细胞、巨核细胞以及红细胞。随后，Kateri A. Moore团队通过共表达Gata2/Gfi1b/cFos/Etv6，诱导小鼠成纤维细胞转化为生血内皮，并产生具有造血细胞相关的表面蛋白CD34，但缺乏体内实验证据；Derrick J. Rossi团队发现Run1t1/Hlf/Lmo2/Prdm5/Pbx1/Zfp37可以诱导小鼠成熟B淋巴细胞产生HSPC。这些表达HSC表面标记基因的干/祖细胞在体内具有重建造血的能力。2017年，Shahin Rafii团队通过瞬时表达Fosb/Gfi1/Runx1/Spi1以及添加血管微环境分泌的因子，将成体小鼠的内皮细胞完全重编程为HSC，再经过一次和二次移植实验，证实体外获得的HSC可重建受体的各系血细胞。重要的是，该团队首次用实验证明由体外重编程的HSC分化而来的淋巴细胞具有适应性免疫功能。
+
+## (2) 体外扩增
+
+除来源外，限制HSC临床应用的另一因素就是其体外多能性的维持和扩增。在发育过程中，AGM区是最早产生和扩增HSC的部位。实验发现，通过培养AGM区组织块，在体外能够得到一定量的HSPC。此外，通过流式细胞仪分选小鼠胚胎期10.5天\~胚胎期11.0天AGM区的Flk-1 $^{+}$ CD31 $^{+}$ CD41 $^{-}$ CD45 $^{-}$ Ter119 $^{-}$ 细胞群，随后将其与OP9-DL1细胞共培养并添加多种细胞因子，也能够获得具有重建造血能力的HSPC。
+
+人脐带血来源的HSC是一种重要的挽救生命的再生疗法，但是，该方案最大的局限性就是脐带血中的HSC数量极其有限。来自美国的Michael P. Cooke团队和加拿
+
+23.3 血细胞功能及体外造血
+
+479
+
+---
+
+![](../../raw/pages_0481-0496/images/page_492_image_0.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+This diagram illustrates the differentiation pathways of ESC/iPSC cells into different cell types (coniculate, inner osmotic, and B-cells), showing how specific proteins are influenced by biological processes such as morphogenesis, morphogenesis, and differentiation.
+</details>
+
+图23-5 造血干细胞的体外诱导
+
+造血干细胞的体外诱导主要有两种策略:iPSC诱导分化为HSPC；体细胞转分化为HSPC。在诱导分化或转分化的过程中，部分实验方案存在共性，即先将iPSC/ESC诱导分化或体细胞转分化为生血内皮，然后再获得造血干细胞。但是，有些方案不需经过生血内皮阶段，直接诱导分化或转分化并获得造血干细胞。
+
+大的Guy Sauvageau团队分别发现，添加小分子可以促进人脐带血HSC的扩增。将人脐带血CD34 $^{+}$ 细胞与嘌呤衍生物（StemRegenin 1，SR1）共培养，可使CD34 $^{+}$ 细胞数量扩增50倍，并最终获得具有17倍移植能力的CD34 $^{+}$ 细胞；在人脐带血CD34 $^{+}$ 细胞培养时添加一种新的嘧啶吲哚（pyrimidoindole）分子UM171，移植20周后，LT-HSC的频率可增加13倍。但是，这些小分子促进HSC扩增的分子机制并不明确。随后，加拿大麦克马斯特大学Kristin J. Hope团队证实，过表达RNA结合蛋白Musashi-2(MSI2)，可通过减弱芳烃受体(aryl hydrocarbon receptor, AHR)信号，促进干细胞的自我更新并可将短期细胞扩增提升17倍，将长期体外的扩增效率提升23倍。
+
+综上所述，血细胞的生理学功能是生命活动所必需的。HSC的多系分化潜能、CAR-T细胞的精准性以及
+
+480
+
+第23章 血细胞的分化与造血功能
+
+---
+
+基因治疗的靶向性都为临床疾病治疗带来无限希望。随着2017年George Q. Daley和Shahin Rafii团队利用不同策略成功诱导HSPC并分化为各系血细胞，人们离实现体外造血的目标又迈进了一大步，与此同时，体外实验的成功，更加显示出体内实验发现的生血内皮这一中间过渡态在HSC产生和发育中的重要性。
+
+## □ 小结
+
+脊椎动物的血细胞发育分化可分为初级造血和次级造血两个阶段，其产生和迁移过程涉及卵黄囊、胎盘、主动脉-性腺-中肾、胎肝（尾部造血组织）、胸腺以及骨髓等多个组织。期间，转录因子、信号通路、miRNA、DNA甲基化、RNA甲基化以及染色质重塑等多种遗传或表观遗传因素参与协同调控。最终，成熟的血细胞参与机体的各项生命活动，维持稳态平衡，并为机体提供多重免疫保护。在基础研究领域，我们虽然对血细胞分化及功能已有初步的认识，对其调控机制也有一定的了解，但是，从成血/成血管细胞的起源到生血内皮的特化，从造血干细胞到多能前体细胞的异质性，从卵黄囊、胎盘到髓外造血，从转录组、蛋白质组到表观遗传调控等研究方向仍存在很多争议，有待深入阐释。在临床及转化医学领域，血液肿瘤及各种血液疾病严重危害人类健康，并且因其种类繁多、病因各异，目前，对很多病患者来说仍无有效的治疗方案。因此，以TALEN或CRISPR/Cas为基础的基因编辑及基因治疗、以临床转化为导向的体外造血以及精准靶向的细胞疗法CAR-T都将是未来的研究热点和突破点，这些技术的创新必将为无数患者带来新的希望。
+
+## □ 思考题
+
+1. 成血 / 成血管前体细胞和生血内皮的起源是什么?
+2. 造血干细胞的异质性及谱系分化偏好性的生理意义是什么？
+3. 血细胞发育过程中，为什么需要不同的微环境，为什么要在不同的组织中产生、扩增和分化？
+4. 随着技术方法的革新，如何实现造血干细胞体外诱导及扩增的新突破？
+5. 造血干细胞在临床疾病治疗中的应用现状及前景是什么?
+
+(刘峰 中国科学院动物研究所)
+
+## □ 参考文献
+
+1 王璐，张春霞，刘峰.造血干细胞发育的分子机制.中国科学，2016，46(1):16-24.
+2 Adolfsson J, Mansson R, Buza–Vidas N, et al. Identification of Flt3+ lymphomyeloid stem cells lacking erythromegakaryocytic potential a revised road map for adult blood lineage commitment. Cell, 2005, 121 (2): 295–306.
+3 Bertrand J Y, Chi N C, Santoso B, et al. Haematopoietic stem cells derive directly from aortic endothelium during development. Nature, 2010, 464 (7285): 108–111.
+4 Boisset J C, van Cappellen W, Andrieu-Soler C, et al. In vivo imaging of haematopoietic cells emerging from the mouse aortic endothelium. Nature, 2010,
+464 (7285): 116–120.
+5 Boitano A E, Wang J, Romeo R, et al. Aryl hydrocarbon receptor antagonists promote the expansion of human hematopoietic stem cells. Science, 2010, 329 (5997): 1345–1348.
+6 Bröske A M, Vockentanz L, Kharazi S, et al. DNA methylation protects hematopoietic stem cell multipotency from myeloerythroid restriction. Nat Genet, 2009, 41 (11): 1207–1215.
+7 Bruns I, Lucas D, Pinho S, et al. Megakaryocytes regulate hematopoietic stem cell quiescence through CXCL4 secretion. Nat Med, 2014, 20 (11): 1315–1320.
+8 Chen J Y, Miyanishi M, Wang S K, et al. Hoxb5 marks long-term haematopoietic
+stem cells and reveals a homogenous perivascular niche. Nature, 2016, 530 (7589): 223–227.
+9 Clements W K, Kim A D, Ong K G, et al. A somitic Wnt16/Notch pathway specifies haematopoietic stem cells. Nature, 2011, 474 (7350): 220–224.
+10 Cooper M D. The early history of B cells. Nat Rev Immunol, 2015, 15 (3): 191–197.
+11 Daniel M G, Pereira C F, Lemischka I R, et al. Making a hematopoietic stem cell. Trends Cell Biol, 2016, 26 (3): 202–214.
+12 Ding L, Morrison S.J. Haematopoietic stem cells and early lymphoid progenitors occupy distinct bone marrow niches. Nature, 2013, 495 (7440): 231–235.
+13 Eilken H M, Nishikawa S, Schroeder T. Continuous single-cell imaging of blood
+
+参考文献
+
+481
+
+---
+
+generation from haemogenic endothelium.
+Nature, 2009, 457 (7231): 896–900.
+14 Fares I, Chagraoui J, Gareau Y, et al. Cord blood expansion. Pyrimidoindole derivatives are agonists of human hematopoietic stem cell self-renewal. Science, 2014, 345 (6203): 1509–1512.
+15 Gomez Perdiguero E G, Klapproth K, Schulz C, et al. Tissue-resident macrophages originate from yolk-sac-derived erythro-myeloid progenitors. Nature, 2015, 518 (7540): 547–551.
+16 Hoeffel G, Chen J, Lavin Y, et al. C-Myb $^{+}$ erythro-myeloid progenitor-derived fetal monocytes give rise to adult tissue-resident macrophages. Immunity, 2015, 42 (4): 665–678.
+17 Jagannathan-Bogdan M, Zon L I. Hematopoiesis. Development, 2013, 140(12): 2463–2467.
+18 Khan J A, Mendelson A, Kunisaki Y, et al. Fetal liver hematopoietic stem cell niches associate with portal vessels. Science, 2016, 351 (6269): 176–180.
+19 Kiel M J, Yilmaz O H, Iwashita T, et al. SLAM family receptors distinguish hematopoietic stem and progenitor cells and reveal endothelial niches for stem cells. Cell, 2005, 121 (7): 1109–1121.
+20 Kissa K, Herbomel P. Blood stem cells emerge from aortic endothelium by a novel type of cell transition. Nature, 2010, 464 (7285): 112–115.
+21 Kunisaki Y, Bruns I, Scheiermann C, et al. Arteriolar niches maintain haematopoietic stem cell quiescence. Nature, 2013, 502 (7473): 637–643.
+22 Lechman E R, Gentner B, van Galen P, et al. Attenuation of miR-126 activity expands HSC in vivo without exhaustion. Cell Stem Cell, 2012, 11 (6): 799–811.
+23 Lee Y, Manegold J E, Kim A D, et al. FGF signalling specifies haematopoietic stem cells through its regulation of somitic Notch signalling. Nat Commun, 2014, 5: 5583.
+24 Lefrancais E, Ortiz-Munoz G, Caudrillier A, et al. The lung is a site of platelet biogenesis and a reservoir for haematopoietic progenitors. Nature, 2017, 544 (7648): 105–109.
+25 Leslie M. Cell biology. Beyond clotting: the powers of platelets. Science, 2010, 328 (5978): 562–564.
+26 Lis R, Karrasch C C, Poulos M G, et al.
+Conversion of adult endothelium to immunocompetent haematopoietic stem cells. Nature, 2017, 545 (7655): 439–445.
+27 Medvinsky A L, Samoylina N L, Müller A M, et al. An early pre-liver intraembryonic source of CFU-S in the developing mouse. Nature, 1993, 364 (6432): 64–67.
+28 Mucenski M L, McLain K, Kier A B, et al. A functional c-myb gene is required for normal murine fetal hepatic hematopoiesis. Cell, 1991, 65 (4): 677–689.
+29 Murayama E, Kissa K, Zapata A, et al. Tracing hematopoietic precursor migration to successive hematopoietic organs during zebrafish development. Immunity, 2006, 25 (6): 963–975.
+30 Orkin S H, Zon L I. Hematopoiesis: an evolving paradigm for stem cell biology. Cell, 2008, 132 (4): 631–644.
+31 Osawa M, Hanada K, Hamada H, et al. Long-term lymphohematopoietic reconstitution by a single CD34-low/negative hematopoietic stem cell. Science, 1996, 273 (5272): 242–245.
+32 Park I K, Qian D, Kiel M, et al. Bmi-1 is required for maintenance of adult self-renewing haematopoietic stem cells. Nature, 2003, 423 (6937): 302–305.
+33 Pietras E M, Reynaud D, Kang Y A, et al. Functionally distinct subsets of lineage-biased multipotent progenitors control blood production in normal and regenerative conditions. Cell Stem Cell, 2015, 17 (1): 35–46.
+34 Pober J S, Sessa W C. Evolving functions of endothelial cells in inflammation. Nat Rev Immunol, 2007, 7 (10): 803–815.
+35 Rentas S, Holzapfel N, Belew M S, et al. Musashi-2 attenuates AHR signalling to expand human haematopoietic stem cells. Nature, 2016, 532 (7600): 508–511.
+36 Rhodes K E, Gekas C, Wang Y, et al. The emergence of hematopoietic stem cells is initiated in the placental vasculature in the absence of circulation. Cell Stem Cell, 2008, 2 (3): 252–263.
+37 Samokhvalov I M, Samokhvalova N I, Nishikawa S. Cell tracing shows the contribution of the yolk sac to adult haematopoiesis. Nature, 2007, 446 (7139): 1056–1061.
+38 Soehnlein O, Steffens S, Hidalgo A, et al. Neutrophils as protagonists and targets in
+chronic inflammation. Nat Rev Immunol, 2017, 17 (4): 248–261.
+39 Sugimura R, Jha D K, Han A, et al. Haematopoietic stem and progenitor cells from human pluripotent stem cells. Nature, 2017, 545 (7655): 432–438.
+40 Sun J, Ramos A, Chapman B, et al. Clonal dynamics of native haematopoiesis. Nature, 2014, 514 (7522): 322–327.
+41 Szabo E, Rampalli S, Risueño R M, et al. Direct conversion of human fibroblasts to multilineage blood progenitors. Nature, 2010, 468 (7323): 521–526.
+42 Tamplin O J, Durand E M, Carr L A, et al. Hematopoietic stem cell arrival triggers dynamic remodeling of the perivascular niche. Cell, 2015, 160 (1-2): 241–252.
+43 Wang L, Liu T, Xu L, et al. Fev regulates hematopoietic stem cell development via ERK signaling. Blood, 2013, 122 (3): 367–375.
+44 Wang S, He Q, Ma D, et al. Irf4 regulates the choice between T lymphoid–primed progenitor and myeloid lineage fates during embryogenesis. Dev Cell, 2015, 34(6): 621–631.
+45 Wynn T A, Chawla A, Pollard J W. Macrophage biology in development, homeostasis and disease. Nature, 2013, 496 (7446): 445–455.
+46 Yamamoto R, Morita Y, Ooehara J, et al. Clonal analysis unveils self-renewing lineage-restricted progenitors generated directly from hematopoietic stem cells. Cell, 2013, 154 (5): 1112–1126.
+47 Zhang C, Chen Y, Sun B, et al. m $^{6}$ A modulates haematopoietic stem and progenitor cell specification. Nature, 2017, 549 (7671): 273–276.
+48 Zhang C, Lv J, He Q, et al. Inhibition of endothelial ERK signalling by Smad1/5 is essential for haematopoietic stem cell emergence. Nat Commun, 2014, 5: 3431.
+49 Zhang P, He Q, Chen D, et al. G protein-coupled receptor 183 facilitates endothelial-to-hematopoietic transition via Notch1 inhibition. Cell Research, 2015, 25 (10): 1093–1107.
+50 Zhao M, Perry J M, Marshall H, et al. Megakaryocytes maintain homeostatic quiescence and promote post-injury regeneration of hematopoietic stem cells. Nat Med, 2014, 20 (11): 1321–1326.
+
+482
+
+第 23章 血细胞的分化与造血功能

@@ -1,0 +1,398 @@
+作用，如KDM1可与KDM4C协同调控AR介导的生理与病理性转录调控，KDM1与KDM5B之间也存在类似的协同作用。但另有一些组蛋白去甲基化酶，如KDM2可能是肿瘤抑制因子；此外，抑制KDM4A可能导致DNA损伤位点与p53介导凋亡的增加。
+
+表观遗传因素也参与除肿瘤之外的其他疾病进程。如DNA甲基转移酶与一些遗传性疾病有关。着丝点不稳定和面部异常（ICF）综合征是一种常染色体隐性遗传病，主要表现为免疫缺陷和面部异常，在此疾病中DNMT3b基因发生突变。Rett综合征可能由MeCP2变异，引起DNA甲基化对特定基因的抑制发生改变所致。此外，高同型半胱氨酸血症(hypohomocysteine，HHcy)与DNMT1活性降低引起的DNA低甲基化有关，而HHcy是动脉粥样硬化和冠心病的独立危险因素，提示表观遗传调控可能参与心血管疾病的发生发展。
+
+组蛋白去乙酰化酶Sirtuin家族参与代谢调控，认为与寿命调节有关；组蛋白甲基化与神经系统发育及疾病有关，组蛋白H3K4三甲基化特异性去甲基化酶SMCX在X染色体连锁精神发育迟滞患者中高频突变，且这些突变削弱了其去甲基化酶活性。
+
+## 2.5 表观遗传与胚胎发育
+
+从受精卵形成到器官原基形成的早期胚胎发育是生物整个生命过程中重要的发育阶段之一。许多重要的转录因子以及DNA甲基化、组蛋白修饰等表观因素参与其中。
+
+受精卵形成后，来自卵细胞细胞质中的一系列转录因子如OCT4、SOX2，表观修饰因子EZH2、EED以及染色质重塑因子Brg1对受精卵的发育至关重要。OCT4、SOX2等在卵裂初期维持细胞的多分化潜能；EZH2介导分化相关基因的可逆性失活与激活，调控分化进程；Brg1作为染色质重塑复合物SWI/SNF的重要组成部分，维持发育初期的染色质处于转录活化状态，研究发现，Brg1缺失可以导致转录抑制及发育停滞在两细胞期。
+
+当受精卵发育到8细胞期时，卵裂中细胞出现极性，细胞可对称分裂成2个极性的外细胞（OC）或非对称分裂为1个外细胞和1个内细胞(IC)。OC和IC在之后分别发育形成外滋养层和内细胞层(ICM)。转录因子CDX2和OCT4分别对外滋养层和ICM的发育是必不可少的。此外，这个阶段观察到ICM有NANOG表达，提示内细胞层多分化潜能的维持与这两种转录因子(OCT4/NANOG)有关。研究表明，精氨酸甲基转移酶CARM1参与调控NANOG的表达，提示表观遗传调控也参与了这个阶段胚胎的发育。
+
+在雌性胚胎的发育早期，父源的X染色体是失活的。这是由于父源X染色体非编码RNA XIST的表达，随后出现的H3K4me2、H3K4me3的减少，以及H3K9me2、H3K27me3和H2A泛素化的增加。当胚胎发育到胚泡阶段，内细胞层中的原始外胚层细胞（PEct）失活的X染色体上抑制性标记被清除，此时两条X染色体都处于转录活化状态，而外滋养层细胞中失活的X染色体仍保持失活状态。失活X染色体的活化是ICM细胞染色质处于“开放”状态的表现，是胚胎发育中染色质重编程（reprogramming）的过程。
+
+在受精卵植入前，卵裂的细胞基因组经历一个被动DNA去甲基化过程，推测这个过程与建立转录活化的染色质状态有关，有利于发育相关基因的表达。植入后，胚泡中的ICM细胞重新建立DNA甲基化模式，而外滋养层细胞仍处于DNA低甲基化状态。这种差异是由于ICM细胞中特异性表达DNMT3b所致。当胚胎发育到11.5～12.5 d时，原生殖细胞（PGC）的DNA再次去甲基化，这个过程同时伴随着亲本印记基因的去甲基化，推测这种表观遗传变化与PGC来源的生殖细胞的多分化潜能维持有关。在精子发生或卵细胞发育时，印记基因的甲基化模式才再次建立。
+
+与发育相关基因的表观调控不同，转座子在胚胎发育和体细胞中被完全而稳定地沉默，这是因为转座子的活化破坏基因组稳定性，增加突变概率。DNA甲基化在抑制转座子活性的过程中起到重要作用，尽管胚胎发育伴随着两次广泛的DNA去甲基化，但一些转座子区域的DNA高甲基化状态没有消除，如IAPs。另外发现H3K9me3也在转座子区域富集，由于组蛋白甲基化可以指导DNA甲基化，推测H3K9me3和DNA甲基化的双重抑制作用对转座子稳定的沉默至关重要。因此，在胚胎发育过程中DNA甲基化状态的动态变化对发育相关基因的表达调控和维持基因组稳定性有着双重作用。
+
+有关胚胎干细胞的研究表明，许多与发育相关的基因启动子区同时含有抑制性标记H3K27me3和激活性标记H3K4me3，而基因表达处于抑制状态；当细胞分化时，这些基因会失去H3K27me3标记，基因表达激活。这种表观遗传状态被称为“bivalent”，而这种被标记的启动子区域被称为“bivalent domain”，提示发育相关的基因处于从抑制状态到激活状态的交界，当细胞分化时能很快地表达。研究发现这类基因很多是胚胎干细胞重要转录因子OCT4、SOX2、NANOG的靶基因，提示对这些基因的表达调控对维持胚胎干细胞状态非常重要。
+
+总体来说，发育早期与细胞分化相关的基因被暂时性地表观沉默，维持细胞多分化潜能的基因表达；伴随着发育进程，与维持细胞多潜能性相关的基因被表观沉默而分化相关的基因在特定的阶段表达。这个动态的过程受到不同转录因子及表观遗传因素共同的精细调控。
+
+## □ 小结
+
+表观遗传学信息具有两个核心特征:一是与DNA序列无关但能够相对稳定遗传；二是能够决定基因表达谱式与细胞表型。表观遗传学研究探寻基因型（DNA序列）与表型之间的复杂关联，研究控制基因表达调控的表观遗传谱式在生长发育及病变过程中的建立及维持机制。目前，对DNA去甲基化酶、DNA甲基化如何选择性作用于靶基因、组蛋白修饰的精细调控等机制方面的研究方兴未艾；表观遗传信息可塑性与重编程的分子机制（包括表观模式调控的个体发育以及干细胞全能性的维持与分化等）、表观遗传调控紊乱与疾病发生发展等方面的研究正是深刻诠释表观遗传调控的新平台。此外，表观遗传组学的兴起为表观遗传研究领域提供了新的视角与手段。
+
+## □ 思考题
+
+1. 举例说明 DNA 甲基转移酶的结构和功能的关系。
+2. DNA 甲基化和去甲基化相互协调在致癌过程中的作用是什么?
+3. 请根据 DNA 甲基化检测基本原理设计一种检测方法。
+4. 组蛋白修饰与 DNA 修饰的相关性和决定性的关系，对于组蛋白密码（histone code）调控细胞生物学功能的机制是什么？
+5. 表观遗传信息遗传给下一代的基础是什么？在发育过程中表观遗传学的主要功能有哪些？
+
+(朱卫国 文赫 朱骞 深圳大学医学部)
+
+## □ 参考文献
+
+1 Agger K, Christensen J, Cloos P A, et al. The emerging functions of histone demethylases. Curr Opin Genet Dev, 2008, 18(2):159–168.
+2 Allfrey V G, Faulkner R, Mirsky A E. Acetylation and methylation of histones and their possible role in the regulation of RNA synthesis. Proc Natl Acad Sci U S A, 1964, 51: 786–794.
+3 Allis C D, Berger S L, Cote J, et al. New nomenclature for chromatin-modifying enzymes. Cell, 2007, 131(4): 633–636.
+4 Bachman K E, Rountree M R, Baylin S B. Dnmt3a and Dnmt3b are transcriptional repressors that exhibit unique localization
+properties to heterochromatin. J Biol Chem, 2001, 276: 3228–3287.
+5 Bannister A J, Schneider R, Kouzarides T. Histone methylation: dynamic or static?. Cell, 2002, 109(7): 801–806.
+6 Bernstein B E, Mikkelsen T S, Xie X, et al. A bivalent chromatin structure marks key developmental genes in embryonic stem cells. Cell, 2006, 125(2): 315–326.
+7 Brownell J E, Allis C D. Special HATs for special occasions: linking histone acetylation to chromatin assembly and gene activation. Curr Opin Genet Dev, 1996, 6:176–184.
+8 Brownell J E, Zhou J, Ranalli T, et al.
+
+Tetrahymena histome acetylatransferase A: a homolog to yeast Gcn5p linging histone acetylatin to gene activation. Cell, 1996, 84: 843–851.
+
+9 Cameron E E, Bachman K E, Myohanen S, et al. Synergy of demethylation and histone deacetylase inhibition in the re-expression of genes silenced in cancer. Nat Genet, 1999, 21(1): 103–107.
+
+10 Cao L L, Shen C, Zhu W G. Histone modifications in DNA damage response. Sci China Life Sci, 2016, 59: 257–270.
+
+11 Cao L L, Wei F, Du Y, et al. ATM-mediated KDM2A phosphorylation is required for the DNA damage repair.
+
+Oncogene, 2016, 35(3): 301–313.
+12 Chen T, Ueda Y, Xie S, et al. A novel Dnmt3a isoform produced from an alternative promoter localizes to euchromatin and its expression correlates with active de novo methylation. J Biol Chem, 2002, 277: 38746–38754.
+13 Daujat S, Weiss T, Mohn F, et al. H3K64 trimethylation marks heterochromatin and is dynamically remodeled during developmental reprogramming. Nat Struct Mol Biol, 2009, 16(7): 777–781.
+14 Fang D, Gan H, Lee J H, et al. The histone H3.3K36M mutation reprograms the epigenome of chondroblastomas. Science, 2016, 352(6291): 1344–1348.
+15 Fuks F, Burgers W A, Godin N, et al. Dnmt3a binds deacetylases and is recruited by a sequence specific repressor to silence transcription. EMBO J, 2001, 20: 2536–2544.
+16 Gehring M, Reik W, Henikoff S. DNA demethylation by DNA repair. Trends Genet, 2009, 25(2):82–90.
+17 Goll M G, Kirpekar F, Maggert K A, et al. Methylation of tRNA $^{Asp}$ by the DNA methyltransferase homolog Dnmt2. Science, 2006, 311(5759): 395–398.
+18 Gowher H, Jeltsch A. Enzymatic properties of recombinant Dnmt3a DNA methyltransferase from mouse: the enzyme modifies DNA in a non–processive manner and also methylates non-CpA sites. J Mol Biol, 2001, 309: 1201–1208.
+19 Hansen R S, Wijmenga C, Luo P, et al. The DNMT3B DNA methyltransferase gene is mutated in the ICF immunodeficiency syndrome. Proc Natl Acad Sci U S A, 1999, 96:14412–14417.
+20 Jones P A, Liang G. Rethinking how DNA methylation patterns are maintained. Nat Rev Genet, 2009, 10(11):805–811.
+21 Kim G D, Ni J, Kelesoglu N, et al. Cooperation and communication between the human maintenance and de novo DNA (cytosine-5) methyltransferases. EMBO J, 2002, 21: 4183–4195.
+22 Kouzarides T. Chromatin modifications and their function. Cell, 2007, 128(4):693–705.
+23 Kuo M H, Brownell J E, Sobel R E, et al. Transcription linked acetylation by Gcn5p of histones H3 and H4 at specific lysines. Nature, 1996, 383: 269–272.
+24 Kutateladze T G. SnapShot: histone readers. Cell, 2011, 146(5): 842.
+25 Li Z, Zhu W. Targeting histone deacetylases for cancer therapy: from molecular mechanisms to clinical implications. Int J Biol Sci, 2014, 10(7): 757–770.
+26 Liang G, Chan M F, Tomigahara Y, et al. Cooperativity between DNA methyltransferases in the maintenance methylation of repetitive elements. Mol Cell Biol, 2002, 22:480–491.
+27 Liu X, Wang D, Zhao Y, et al. Methyltransferase Set7/9 regulates p53 activity by interacting with Sirtuin 1 (SIRT1). Proc Natl Acad Sci U S A,
+2011, 108(5): 1925–1930.
+28 Mosammaparast N, Shi Y. Reversal of histone methylation: biochemical and molecular mechanisms of histone demethylases. Annu Rev Biochem, 2010, 79: 155–179.
+29 Nan X, Ng H H, Johnson C A, et al. Transcriptional repression by the methyl-CpG-binding protein MeCP2 involves a histone deacetylase complex. Nature, 1998, 393 (6683): 386–389.
+30 Okano M, Bell D W, Haber D A, et al. DNA methyltransferases Dnmt3a and Dnmt3b are essential for de novo methylation and mammalian development. Cell, 1999, 99: 247–257.
+31 Okano M, Xie S, Li E. Cloning and charac-terization of a family of novel mammalian DNA (cytosine-5) methyltransferases. Nat Genet, 1998, 19:219–220.
+32 Ramsahoye B H, Biniszkiewicz D, Lyko F, et al. Non-CpG methylation is prevalent in embryonic stem cells and may be mediated by DNA methyltransferase 3a. Proc Natl Acad Sci U S A, 2000, 97: 5237–5242.
+33 Reik W. Stability and flexibility of epigenetic gene regulation in mammalian development. Nature, 2007, 447(7143): 425–432.
+34 Rhee I, Bachman K E, Park B H, et al. DNMT1 and DNMT3b cooperate to silence genes in human cancer cells. Nature, 2002, 416: 552–556.
+35 Robertson K D, Uzvolgyi E, Liang G, et al. The human DNA methyltransferases (DNMTs) 1, 3a and 3b: coordinate mRNA expression in normal tissues and overexpression in tumors. Nucleic Acids Res, 1999, 27: 2291–2298.
+36 Rundlett S E, Carmen A A, Kobayashi R, et al. HDA1 and RPD3 are members of distinct yeast histone deacetylase complexes that regulate silencing and transcription. Proc Natl Acad Sci U S A, 1996, 93:14503–14508.
+37 Shen C, Wang D, Liu X, et al. SET7/9 regulates cancer cell proliferation by influencing  $\beta$ -catenin stability. FASEB J, 2015, 29(10):4313–4323.
+38 Shi Y. Histone lysine demethylases: Emerging roles in development, physiology and disease. Nat Rev Genet, 2007, 8: 829–833.
+39 Surani M A, Hayashi K, Hajkova P. Genetic and epigenetic regulators of pluripotency. Cell, 2016, 128(4):747–762.
+40 Suzuki M M, Bird A. DNA methylation landscapes: provocative insights from epigenomics. Nat Rev Genet, 2008, 9(6): 465–476.
+41 Tan M, Luo H, Lee S, et al. Identification of 67 histone marks and histone lysine crotonylation as a new type of histone modification. Cell, 2011, 146(6): 1016–1028.
+42 Tang M, Lu X, Zhang C, et al. Downregulation of SIRT7 by 5-fluorouracil induces radiosensitivity in human colorectal cancer. Theranostics, 2017, 7(5):1346–1359.
+43 Taunton J, Hassig C A, Schreiber S L. A mammalian histone deacetylase related to the yeast transcriptional regulator Rpd3p. Science, 1996, 272: 408–411.
+44 Tropberger P, Pott S, Keller C, et al. Regulation of transcription through acetylation of H3K122 on the lateral surface of the histone octamer. Cell, 2013, 152(4): 859–872.
+45 Wang D, Zhou J, Liu X, et al. Methylation of SUV39H1 by SET7/9 results in heterochromatin relaxation and genome instability. Proc Natl Acad Sci U S A, 2013, 110(14):5516–5521.
+46 Wang L, Mizzen C, Ying C, et al. Histone acetyltransferase activity is conserved between yeast and human GCN5 and is required for complementation of growth and transcriptional activation. Mol Cell Biol, 1997, 17:519–527.
+47 Wang Y, Nan Z, Zhang L, et al. Autophagy regulates chromatin ubiquitination in DNA damage response through elimination of SQSTM1/p62. Mol Cell, 2016, 63(1):34–48.
+48 Wu L P, Wang X, Li L, et al. Histone deacetylase inhibitor depsipeptide activates silenced genes through decreasing both CpG and H3K9 methylation on the promoter. Mol Cell Bio, 2008, 28(10): 3219–3235.
+49 Xie W, Barr C L, Kim A, et al. Base-resolution analyses of sequence and parent-of-origin dependent DNA methylation in the mouse genome. Cell, 2012, 148: 816–831.
+50 Xu G L, Bestor T H. Chromosome instability and immunodeficiency syndrome caused by mutatins in a DNA methyltransferase gene. Nature, 1999, 402:187–191.
+51 Yang Q, Zhu Q, Lu X, et al. G9a coordinates with the RPA complex to promote DNA damage repair and cell survival. Proc Natl Acad Sci U S A, 2017, 114(30):201700694.
+52 Yang S, Zheng X, Lu C, et al. Molecular basis for oncohistone H3 recognition by SETD2 methyltransferase. Genes Dev, 2016, 30(14): 1611–1616.
+53 Yang W M, Inouye C, Zeng Y, et al. Transcriptional repression by YY1 is mediated by interaction with a mammalian homolog of the yeast global regulator RPD3. Proc Natl Acad Sci U S A, 1996, 93:12845–12850.
+54 Yu Y, Song C, Zhang Q, et al. Histone H3 lysine 56 methylation regulates DNA replication through its interaction with PCNA. Mol Cell, 2012, 46(1): 7–17.
+55 Zhang F, Pomerantz J H, Sen G, et al. Active tissue-specific DNA demethylation conferred by somatic cell nuclei in stable heterokaryons. Proc Natl Acad Sci U S A, 2007, 104: 4395–4400.
+56 Zhang P, Tu B, Wang H, et al. Tumor suppressor p53 cooperates with SIRT6 to regulate gluconeogenesis by promoting FoxO1 nuclear exclusion. Proc Natl Acad Sci U S A, 2014, 111(29):10684–10689.
+57 Zhao Y, Yang J, Liao W, et al. Cytosolic FoxO1 is essential for the induction
+of autophagy and tumour suppressor activity. Nat Cell Biol, 2010, 12: 665–675.
+58 Zheng Z, Li L, Liu X, et al. 5-Aza-2'-deoxycytidine reactivates gene expression via degradation of pRb pocket proteins. FASEB J, 2012, 26: 449–459.
+59 Zhu W G, Dai Z, Ding H, et al.
+
+Increased expression of unmethylated CdkN2D by 5-aza-2' deoxycytidine in human lung cancer cells. Oncogene, 2001, 20: 7787-7796.
+Zhu W, Lakshmanan R R, Beal M D, et al. DNA methyltransferase inhibition enhances apoptosis induced by histone
+
+deacetylase inhibitors. Cancer Res, 2001, 61:1327–1333.
+
+61 Zhu W, Srinivasan K, Dai Z, et al. Methylation of adjacent CpG sites affects Sp1/Sp3 binding and activity in the p21(Cip1) promoter. Mol Cell Biol, 2003, 23: 4056–4065.
+
+认识生命、改造生命是生命科学研究的终极目标。任何生命活动本质上都是基因及其直接或间接产物相互作用的体现，或者说是基因组协调作用的结果。因此，直接修饰基因组才能在根本上实现对生物体稳定且可控的改造。通过改变核苷酸序列对基因组DNA进行遗传修饰称为基因组编辑(genome editing)。虽然DNA仅由A、T、C、G四种简单的核苷酸构成，但是由于其序列较长且多变，靶向改造基因组这一梦想并不容易实现。多年来，仅有寥寥可数的几个物种能够进行这种遗传操作，并且效率不高，方法也没有普适性。可喜的是，近年来，受益于转录因子以及细菌免疫防御系统等其他领域基础理论研究的突破与深入，基因组靶向诱变技术迎来了一系列的革命，得到了飞速发展，形成了以人工内切核酸酶(engineered endonuclease, EEN)为基础的新一代基因组编辑技术，成了改造基因组最为有力的工具。基因组编辑技术的基本原理是针对目标位点（即基因组上特定的DNA靶序列）设计并通过基因工程的方法构建特定的内切核酸酶，使其能够特异识别、结合并切割靶序列，从而在基因组的特定位点造成DNA双链断裂(double strand break, DSB)，最终利用细胞自身的DNA损伤-修复机制的容错性造成靶位点序列突变，或提供经过设计的外源DNA供体序列，通过DNA损伤修复在目标位点插入特定的序列，实现目的基因的荧光表达标记、点突变或条件性敲除等复杂的基因组修饰效果。新型基因组编辑技术的核心是寻找和构建能够特异性切割DNA靶序列的内切核酸酶。近年来，人们巧妙地利用细菌的一些特殊的基因表达调控机制与免疫机制，以及多年来对转录因子作用机制的研究成果，逐步创建出能够根据人们的意愿特异切割DNA靶序列的内切核酸酶，并广泛运用于培养细胞以及小鼠、果蝇、斑马鱼、拟南芥等多种模式生物的基因组编辑中。目前人工内切核酸酶主要包括锌指核酸酶(zinc finger nuclease, ZFN)、类转录激活因子效应物核酸酶(transcription activator-like effector nuclease, TALEN)、规律性成簇间隔的短回文重复序列(clustered regularly interspaced short palindromic repeat, CRISPR)及相关蛋白(CRISPR-associated, Cas)系统(CRISPR/Cas系统)等3种类型。本章首先对这类基因组编辑技术的基本原理进行整体介绍，然后分别介绍上述三种人工内切核酸酶的发展、作用机制和构建方法，比较它们的优劣，并举例说明其在当代生物学研究，特别是细胞生物学和遗传发育研究中的应用。
+
+## 3.1 基因组编辑技术简介与历史沿革
+
+## 3.1.1 基因组编辑的定义与原理
+
+基因组编辑技术，特指利用DNA的重组或损伤-修复机制，在基因组上特定位置实现DNA序列的插入、删除或替换的技术。通过基因组编辑来改变生物体或细胞的DNA序列（即基因型），然后观察这一基因型改变所导致的表型变化，研究相关的分子机制，是生物学中常用的从基因型到表型的反向遗传学研究策略。正向遗传学则首先通过大规模诱变与筛选获得突变体与表型，再定位突变的基因，进而研究导致表型的机制。利用细胞固有的DNA双链断裂损伤-修复机制改造基因组序列，是近几年新兴的人工内切核酸酶实现基因组编辑的基本原理。
+
+一般而言，生物体主要通过两种途径修复DNA双链断裂:一种是非同源末端连接（non-homologous end joining, NHEJ），另一种是同源重组介导的精确修复（homology-directed repair, HDR）（图3-1，详见第4章）。HDR需要利用含有与DNA断裂处两侧相同的同源序列的另一个DNA分子（称为供体）作为模板，正常情况下通常是利用处于细胞周期中S期与 $G_{2}$ 期的姐妹染色单体；NHEJ则不依赖任何DNA模板，能够直接将两个断裂的DNA末端连接在一起，因而可以在细胞周期中的任意时刻发生，机制也相对简单，因此是高等生物中DNA双链断裂修复的主要途径。但是，NHEJ途径的修复往往并不精确，DNA断裂处经常伴随有少量碱基的插入和/或缺失，造成插入/缺失(insertion/deletion, indel)突变。基于上述特性，只要获得能够定点识别并切割DNA双链的内切酶，理论上就能够对基因组进行多种多样的靶向修饰，从而永久改变生物体的遗传特征。
+
+![](images/page_69_image_4.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["DNA双链断裂"] --> B["非同源重组末端连接修复"]
+  B --> C["靶位点产生随机插入和/或缺失"]
+  C --> D["同源重组修复"]
+  D --> E["供体"]
+  E --> F["靶位点DNA序列与重组供体相同"]
+```
+</details>
+
+图 3-1 DNA 双链断裂修复的两种机制
+
+## 3.1.2 基因组编辑技术的发展简史
+
+基因组靶向编辑技术诞生于20世纪80年代，最初是利用细胞自身偶然发生的同源重组事件完成精确的基因突变。研究者以小鼠胚胎干细胞（embryonic stem cell, ESC或ES细胞）为实验材料，选取CFTR基因的第一个外显子及其两端的部分内含子序列构建质粒DNA，并在该外显子内加入新霉素抗性基因(neo)，用于抗性筛选（正筛选），同时又可破坏内源基因的表达与功能。同时，在一侧同源的内含子序列外连接一个胸腺核苷激酶基因(TK)，该酶能够将无毒的丙氧鸟苷转化为有毒的核苷，从而起到负筛选子的作用。将上述载体转染到体外培养的小鼠ES细胞中，由于细胞内可随机发生DNA双链断裂损伤，该载体就有可能被随机整合到基因组DNA的任意位点中(概率很小)，或通过同源重组整合进入CFTR位于第一个外显子的靶点中(概率极小)(图3-2)。如图所示，没有载体插入的细胞不携带neo，在新霉素处理条件下无法存活；载体随机整合的细胞一般会同时携带neo和TK，在丙氧鸟苷处理条件下也无法存活。在培养基中加入新霉素和丙氧鸟苷，这一正负双向筛选系统（positive and negative selection, PNS）使只有发生同源重组并完成精确基因替换的细胞才可存活下来。随后，研究者将经鉴定含有正确修饰的ES细胞移植到小鼠囊胚中，借助于ES细胞的多能性，这些细胞可参与胚胎发育，如果恰巧分化为新生小鼠的生殖细胞，则这个经过人工改造的基因就可以被固定下来，稳定遗传给后代，实现对生命的永久改变。人类利用ES细胞和同源重组第一次实现了个体水平的基因组编辑，因此，该项技术获得了2007年诺贝尔生理学或医学奖。不过，这一技术始终存在很多限制和不足:①基因组编辑的效率极低，一般仅有非常少的ES细胞能够被精确编辑；②成本昂贵，需要大量培养ES细胞，同时需要小鼠胚胎细胞移植以及至少3代的繁育配种，需要耗费大量的人力、财力和时间；③技术门槛高，很难掌握，无法普及；④只能通过ES细胞途径实现基因组编辑，这是由于同源重组的效率极低，必须通过大规模双向筛选才能得到所需的细胞。但是，能够实现ES细胞培养的物种非常少，导致这一方法长期以来仅能应用于小鼠。因此，人们一直在不懈地努力拓展思路、打破常规，开发出高效、普适、简单且成本低的新型基因组编辑技术。
+
+![](images/page_70_image_0.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["Initial State"] --> B["Two types of proteins: Neomycin (neo) and TK"]
+  A --> C["Inocubation with Neomycin"]
+  B --> D["Extracellular CFTRs"]
+  D --> E["Bacterial fragments removed"]
+  C --> F["Inorganic bacterial cells"]
+  F --> G["Cell division into bacterial cells"]
+  G --> H["ES cell migration into embryo/progression"]
+```
+</details>
+
+图3-2 基于同源重组和小鼠ES细胞的基因敲除/敲入方法
+
+与此同时，分子生物学的发展让人们逐渐了解到DNA双链断裂修复的机制。NHEJ的不精确性使研究者可以利用它在DSB位点附近实现突变，而双链断裂诱导的HDR修复效率相比偶发的同源重组可提升几个数量级。因此，只要找到能够识别特定DNA序列并进行定点切割的核酸酶，理论上就能够实现基因组靶向突变。20世纪80年代末，兆核酸酶(meganuclease)，也称为归位内切核酸酶或归巢内切核酸酶(homing endonuclease)，开始进入人们的视野。这类内切核酸酶天然识别12～40 bp的特异DNA序列，在许多物种的基因组中通常可保证仅存在几个甚至唯一一个切割位点，因此能够满足靶点特异识别的需求。其中，含有“LAGLIDADG”这一序列基序的酶家族被较多地用于基因组编辑。这一家族的酶一般以同源二聚体（如I-CreI）或单体（如I-SceI）的形式工作，可直接使用其野生型形式，或通过突变筛选获得识别序列不同的变体，以及将不同的野生型或变体组装使用（如将I-CreI和I-DmoI的单体结合为DmoCre），可以识别多种多样的DNA特异序列，从而拓展其应用范围。然而，并不是所有的目的基因都能找到可用的归巢内切核酸酶或保证该酶切位点在该物种基因组中的唯一性，因此这类核酸酶距离人们对任意物种的任意基因进行编辑的目标还相差甚远。幸运的是，随着ZFN、TALEN和CRISPR/Cas系统等技术的出现和发展使实现这一目标具有了可能（图3-3）。由于这些技术工具需要人们根据靶点序列进行蛋白质或核酸的设计、合成或组装，因此统称为人工内切核酸酶。人工内切核酸酶有两个重要功能域，即能识别特定核酸序列的DNA结合结构域和具有核酸酶活性的DNA切割结构域。以下集中介绍这几种人工内切核酸酶，特别是CRISPR/Cas系统的原理、发展与构建方法，以及它们在基因组编辑中的应用。
+
+![](images/page_71_chart_0.jpg)
+
+<details>
+<summary>state_timeline</summary>
+
+| Year | Milestone |
+| --- | --- |
+| 1996 | ZFN首次实现体外DNA打靶 |
+| 2002 | 解码TALE-DNA结合规则 |
+| 2002 | ZFN首次实现体内基因编辑(果蝇) |
+| 2009 | TALEN首次实现体外DNA打靶 |
+| 2009 | TALEN首次实现体内基因编辑(人类细胞) |
+| 2010 | 7月 |
+| 2010 | 12月 |
+| 2012 | CRISPR/Cas9首次实现体外DNA打靶crRNA和tracrRNA合并为gRNA |
+| 2013 | 6月 |
+| 2013 | 1月 |
+| 2015 | CRISPR/Cpf1首次实现体外打靶与体内基因编辑(人类细胞) |
+| 2015 | 10月 |
+| 2016 | 首个Cas9单碱基编辑系统问世并实现体内编辑(人类细胞) |
+| 2016 | 4月 |
+| 2016 | CRISPR/C2c2首次验证靶向RNA酶活性并实现体外打靶 |
+| 2017 | 6月 |
+| 2017 | 10月 |
+| 2017 | CRISPR/C2c2首次实现体内RNA打靶(人类细胞) |
+</details>
+
+图3-3 基于人工内切核酸酶的基因组编辑技术的简要发展历程
+
+## 3.2 ZFN 与 TALEN——通过蛋白质特异识别靶序列的人工内切核酸酶
+
+## 3.2.1 ZFN的起源与发展
+
+人们很早就发现生物体中存在多种锌指蛋白(zinc finger protein, ZFP)，它们能够介导蛋白质与核酸、小分子或其他蛋白质之间的特异相互作用。这些ZFP的共同特点是包含数量不等（通常为3～7）的串联锌指基序(zinc finger motif)，相当一部分ZFP能够特异识别并结合基因组DNA上特定长度序列的靶位点，从而作为转录因子调控基因表达。自从发现ZFP能够特异识别并结合特定的DNA序列，人们就开始尝试利用这一特性来改造基因组。1996年，约翰·霍普金斯大学的一个课题组将源自小鼠的锌指蛋白Zif268与来自海床黄杆菌(Flavobacterium okeanokoites)的Fok I内切核酸酶融合，构建了第一例人工锌指核酸酶(图3-4)，并报道可在体外实现对靶序列的切割。2002年，美国犹他大学D. Carroll实验室利用果蝇首次实现了在体内用ZFN定点突变基因。随后，该技术逐步被扩展应用于多种生物体和体外培养细胞。
+
+在ZFN中，ZFP起识别DNA靶序列的作用，又称为ZFN结合结构域。该结构域通常由3～6个 $C_{2}H_{2}$ 类型的锌指重复单元串联而成，每个ZFP可直接特异识别DNA双链中某一条单链上3个连续的核苷酸靶点（称为三联子)。每个锌指约由30个氨基酸残基组成，折叠形成 $\alpha-\beta-\beta$ （C端→N端）类型的二级结构，其中的 $\alpha$ 螺旋可插入到DNA双螺旋的大沟中，直接同碱基发生作用。 $\alpha$ 螺旋的第-1～+6位氨基酸残基起到识别碱基的功能，尤其是第-1、+3、+6位氨基酸残基直接同三联子DNA序列中的3个碱基相互作用。在这7个氨基酸残基中，第4位是固定不变的亮氨酸，其他6个氨基酸残基可以进行改变，使其能够识别特定的DNA序列。此外，3个锌指之间也存在一定的上下文依赖效应(context effect)。其中， $\alpha$ 螺旋的第+2位氨基酸残基与上一个(N端)锌指所识别的三联子最后一个（在DNA上则是5'端）碱基的互补碱基之间存在相互作用。
+
+ZFN的切割功能由IIS型限制性内切酶Fok I完成，该蛋白需要以二聚体的方式发挥功能，因此ZFN需要成对使用。通常的做法是在切割位点的上、下游各设计一个ZFN，分别靶向DNA的正义链和反义链。同时，在一对ZFN识别序列之间需要为Fok I二聚体留出足够的作用空间，长度通常为5～7bp，称为间隔区(spacer)，便于Fok I对DNA双链进行切割，产生DSB。早期主要使用野生型的Fok I，以同源二聚体的形式起作用。不过，Fok I在细胞内可以自身二聚化，对DNA进行非靶向性切割，造成非常高的脱靶效应(off-targeting effect)，极大地影响了ZFN的效率和突变体的创建。为此，人们对Fok I内切酶进行了改造，降低其同源二聚化的活性，使其主要以异源二聚体的形式起作用。同时还对Fok I进行了多个位点的随机突变，筛选到一些切割活性较高的突变形式，称为Sharkey form。将这些不同形式的改造结合在一起，使Fok I结构域的切割活性和特异性都得到了很大程度的提升，并且在提高靶向效率的同时显著降低了脱靶效应。
+
+![](images/page_72_image_0.jpg)
+
+<details>
+<summary>text_image</summary>
+
+C端
+N端
+Fok I切割
+结构域
++6 +3 -1 +6 +3 -1 +6 +3 -1
+5' N N N N N N N N N
+3' N N N N N N N N N
+Fok I切割
+结构域
+N N N N N N N N N N 3'
+N N N N N N N N N N 5'
+NLS F1 F2 F3
+序列间隔
++2 +2 +2
+</details>
+
+图3-4 ZFN与靶序列结合并实现DNA定点切割的示意图
+
+应用该项技术的难点和瓶颈在于筛选效率高和特异性好的ZFP，为此人们付出了很多努力来试图攻克这一难题，遗憾的是进展一直不够理想。不过，由于EEN技术的飞速发展与迭代，随着相对简单的TALEN和CRISPR/Cas技术的相继崛起，人们在目前的科研实践中已很少使用ZFN，相应地，对这项技术的深度开发也基本停滞。但是，作为第一个被成功开发的EEN，ZFN在理论上能够用于靶向突变任意物种的个体或培养细胞的任意基因组序列，打破了靶向改造基因组的物种限制，为基因组编辑技术开辟了一个全新的思路和领域。这无疑为反向遗传学技术带来了革命性的改变，基因组编辑从此进入了一个新时代。
+
+## 3.2.2 ZFN/ZFP的构建与筛选
+
+ZFN应用过程中最关键的步骤是筛选有效且特异的ZFP。目前只有少量已知能够同特定DNA序列结合的ZFP，可以用于直接构建ZFN，而大多数DNA序列尚无法直接得知何种ZFP能与之有效结合，因此需要根据已知的ZFP与其靶位点的对应规律，选择合适的靶位点、构建ZFP或ZFP文库，通过DNA结合活性或切割活性检测体系筛选具有高活性和特异性的ZFP。
+
+新的ZFN/ZFP的构建与筛选策略主要分为两类。第一类是直接组装的策略，主要思路是提取已知的ZFP中锌指与三联子靶点的对应信息，根据靶位点的序列，选取对应的锌指直接组装成新的ZFP或ZFN，再验证其整体的结合或切割活性。这类策略主要包括模块组装（modular assembly，MA）和上下文依赖组装（context-dependent assembly，CoDA）两种方案，实验方法相对比较简单。MA是选择单个锌指直接组装，完全不考虑上下文依赖效应，组装出来的ZFN活性与靶点中GNN的数量有关，打靶成功率随着靶点中GNN的数量减少而显著降低。CoDA方案则是在寡聚文库构建（oligomerized pool engineering，OPEN）方案所获结果的基础上选择靶点序列和对应的锌指，从而尽量避免上下文依赖效应的影响。第二类是基于筛选的策略，主要思路是预先合成一个ZFP文库，通过各种筛选体系寻找结合力最强的ZFP。这类策略主要包括OPEN和Wolfe's两种方案。这两种方案相对于直接组装策略在实验步骤上较为烦琐，但成功率相对较高。
+
+OPEN是J. K. Joung等于2008年提出的一套ZFP构建与筛选方案。OPEN同时也有“开源”、“自由使用”之意。该方案主要分为两步:①合成锌指序列库，将直接参与识别的特征氨基酸残基的位置设为随机化残基（即将α螺旋-1～+6位大体设为XXXXLXX）。根据每个锌指在ZFP中所处的位置（F1、F2或F3），将相应的序列库连接到一个另外2个锌指已固定、并且同转录激活结构域融合的锌指激活因子（zinc finger activator，ZFA）骨架中。通过较低的筛选压，在噬菌体-大肠杆菌表达体系中筛选得到相应位置的锌指预筛库，其中含有与目标三联子具有一定结合力的锌指群。②选取与3个目标三联子的序列及位置相符的3个预筛锌指库，组装为针对3个三联子靶位点的完整ZFP混合库，并进一步建立ZFA库，在较高筛选压下进行第二轮筛选，得到与9-bp靶序列（即3个目标三联子）结合效率较高的ZFA，并据此构建ZFN。OPEN方案的优势在于，通过第一步预筛选，富集了与目标序列具有一定结合能力的单个锌指；同时保持一定规模的预筛库，可避免每个三联子靶点上锌指的选择过于单一，从而降低了因上下文依赖效应干扰而使三锌指组合而成的ZFP无效的风险。OPEN方案的另一优势在于其信息完全公开，并且可以向作者索取已建好的预筛库。但是，OPEN方案仍存在一定的缺陷:它严重依赖于目前所构建的锌指预筛库，其目标序列的覆盖范围远不够全面。此外，在第二轮筛选中是否一定能够得到高效并且特异性结合目标序列的ZFP还有待验证。
+
+以上所有方案的共同限制是都只能针对部分三联子序列进行靶点设计及建库筛选，无法涵盖所有的DNA序列，为了获取一对能够有效工作的ZFN，往往需要测试或筛选数量非常可观的锌指序列组合库，不但需要消耗相当大的人力物力，而且最终的成功率也不高。此外，ZFN的诱变效率整体而言比较低（多数情况下不超过10%），ZFN还存在较高的脱靶效应。尽管不少研究组开发了多种ZFN/ZFP构建与筛选方案，以期能够解决这些问题，但是这一技术的应用门槛始终相当高。随着简单易用的TALEN和CRISPR/Cas系统的出现与普及，目前在科研实验室中已很难再见到ZFN的身影。
+
+## 3.2.3 TALEN的起源与发展
+
+类转录激活因子效应物（transcription activator-like effector，TALE）发现于一类特殊的植物病原体——黄单胞菌（Xanthomonas）。TALE蛋白类似于真核生物的转录因子，能够通过识别并结合特异的DNA序列调控宿主植物内源基因的表达，从而为病原体侵染宿主细胞创造有利条件。人们早在1989年就克隆了TALE家族的第一个成员avrBs3。然而，20年后，人们才真正揭开了TALE蛋白特异性识别并结合特定DNA靶序列的奥秘。
+
+TALE蛋白由多个结构域组成，包括N端的转运信号(translocation signal)、C端的核定位信号(nuclear localization signal, NLS)和转录激活结构域(activation domain, AD)，以及中部与DNA特异识别并结合的结构域。中部结合结构域是TALE蛋白的核心，它由若干个（一般为1～33个）长度为33～35个氨基酸残基的重复单元串联结构和末端20个氨基酸残基的半重复单元共同构成。每个重复单元和末端的半个重复单元可以特异识别并结合DNA靶序列中的一个核苷酸。在每个重复单元中，第12位和13位的氨基酸残基是实现靶向识别特异碱基的关键位点，随靶点核苷酸序列的不同而异，称为重复可变双残基(repeat variable diresidue, RVD)；其他位置的氨基酸残基则相对固定。目前发现存在近20种RVD，其中HD(His Asp)、NG(Asn Gly)、NI(Asn Ile)和NN(Asn Asn)最常见，结合对应碱基的特异性和效率也较高。它们与碱基之间的对应关系分别为HD对应C、NG对应T、NI对应A、NN对应G。事实上，NN不仅对G的识别效率较高，对A的识别效率也较高，因此其特异性不强，有可能导致脱靶效应。不过，由于已知的对G特异性较强的RVD的结合效率均比较低，因此综合而言，NN仍是最好的对应G的RVD。由于存在如此简单的一一对应关系，在靶向突变基因组的应用上，TALE相对于ZFP的优势不言而喻。理论上，人们只需按照DNA靶点中的碱基序列将含有相对应的RVD的TALE重复单元依次组装在一起，所得到的TALE蛋白就应该可以特异识别并结合该靶序列。类似于ZFN，人们把TALE中的AD替换成内切核酸酶Fok I的切割结构域，便可构建出TALE核酸酶(TALE nuclease, TALEN)(图3-5)，从而实现对特定的DNA靶序列进行切割。由于Fok I是以二聚体的形式起作用，因此，TALEN也需要成对发挥功能。显然，相比于ZFN，TALEN的设计难度大大降低，无需再进行庞大的文库构建与筛选工作。同时，由于RVD与碱基之间具有相对良好的对应关系，并且似乎并没有明显的上下文依赖效应，因此，TALEN表现出了较好的靶向突变成功率和效率，以及较低的脱靶效应（一般G含量较低的靶点脱靶率更低）。
+
+2010年，人们成功构建出第一对TALEN，随后又很快利用TALEN在体外培养的人类细胞中成功实现了基因组靶向编辑，并在短短的2年时间内，相继在线虫、斑马鱼、果蝇、小鼠、大鼠、水稻等诸多物种中的个体水平得到成功应用。TALEN一经问世便迅速成为当时最热门的反向遗传学工具，入选了美国Science杂志“2012年度十大科学进展”，被称为基因组的“巡航导弹”。TALEN技术的飞速发展得益于TALE重复单元与核苷酸靶点之间简单、明确、特异的一一对应关系，使基于蛋白质特异识别靶序列的EEN技术变得简单易行，使TALEN成为第一个真正意义上普适的、大众化的基因组编辑工具。
+
+![](images/page_74_image_0.jpg)
+
+<details>
+<summary>text_image</summary>
+
+TALE重复序列
+N-N-H-H-H-N-N-N-N-N-N-N-N-N-G
+I-DDD-GD-G-I-D-G-N-G-N-N-G
+5't ACCCTCTAACTGTGGATnnnnnnnnnnnnnnnnnactGGATTATTGCACCCCa 3'
+3'aTGGGAGATTGACACCTAnnnnnnnnnnnnnnnttGACCTAATAACGTGGGt 5'
+C-Fok I
+-N-N-N-H-H-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-N-
+序列间隔
+</details>
+
+图3-5 TALEN与靶序列结合并实现DNA定点切割的原理示意图
+
+CRISPR/Cas系统与TALEN技术在靶点偏好性、靶向诱变成功率、效率与特异性等方面各有优劣，在某些方面TALEN仍有优越之处。理论上TALEN的特异性优于CRISPR/Cas系统，具有较低的脱靶效应。因此，直至今日，仍然有一些研究人员致力于改进TALEN的适用范围和构建技巧，以及将其运用于不同模式系统的科学研究中。例如，北京大学魏文胜与伊成器两个研究组通过构建TALE文库，筛选出能够特异识别5-mC和5-羟甲基胞嘧啶（5-hmC）等常见DNA表观遗传修饰的新型RVD，并借此在体外实现了单碱基分辨率的DNA 5-hmC修饰的检测。这一研究成果证明TALE重复序列一对一识别单个碱基的特性不仅对于基因组编辑具有独特的应用价值，有待研究者们进一步深度挖掘。
+
+## 3.2.4 TALEN的构建与筛选
+
+当破解TALE与DNA特异识别的分子密码后，研究人员首先想到的是如何借鉴ZFN的策略，把天然的TALE加以改造，使其成为能够对特定的基因组位点进行靶向突变和修饰的工具。为了保证靶点在整个基因组中存在的唯一性或特异性，靶序列一般选择大于10个碱基对。这就要求TALE需要含有至少9.5个重复单元，编码这一重复结构的核苷酸长度就会大于1000个碱基对，并且具有很强的序列重复性，无法采用常规的分子克隆方法进行载体构建。因此，构建识别特定DNA序列的TALE就成为这一技术中的关键步骤和TALE应用的主要瓶颈。目前通过分子克隆途径人工构建TALE的方法主要包括四大类（图3-6）:①基于Golden cate（GG）克隆的方法，根据TALE单体（重复单元）的来源可分为基于PCR的GG法（GG-PCR）和传统的基于质粒载体的GG法（GG-vector）；②基于连续克隆组装的方法，包括限制性酶切-连接法(restriction enzyme and ligation, REAL) 和单元组装法(unit assembly, UA); ③ 基于固相合成的高通量组装方法，包括FLASH (fast ligation-based automatable solid-phase high-throughput) 和ICA (iterative capped assembly); ④ 基于长黏末端的LIC (ligation-independent cloning) 组装方法等。其中，北京大学张博实验室开发的单元组装法利用氨基酸密码的简并性设计了一种“替代重复单元”(alternative repeat unit, 或称“旁重复单元”)，使这种重复单元的两端为一对同尾酶（5'端Spe I和3'端Nbe I）的酶切位点；同时，在载体骨架上再设计一个辅助性的Hind III位点，这样就可以利用简单、可靠的常规限制性内切酶，采用相同的酶切策略，通过“酶切-连接”的循环操作构建任意长度的TALE重复序列。该方法在保证载体构建精确性和简便性的同时，也比较容易掌握，仅仅利用4个初始质粒、3种常用的内切酶和基本的分子克隆技术就可以合成任意长度的TALE单元，同时每一步骤的中间载体都可以编号储存作为文库，从而反复用于之后的构建。运用这一方法，该实验室率先在斑马鱼中成功实现了可遗传的TALEN打靶。其余各类TALE重复单元构建方法的技术原理简述和优缺点分析见表3-1。
+
+由于针对每一个靶点都需要构建新的TALEN，因此，对于常规的科研实验室而言，大规模构建和使用TALEN仍然存在一定的难度。2013年初CRISPR/Cas技术问世后，TALEN的这一缺点就更加明显，导致使用TALEN的热度逐渐降低。不过，由于TALEN在某些方面仍然具有独特优势，依然有研究人员坚持开发能够快速、准确地大量构建TALEN的方法。例如，北京大学魏文胜实验室建立并优化了一种称为ULtiMATE（USER based ligation mediated assembly of TAL effector）的规模化
+
+![](images/page_75_image_0.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["Golden gate法"] -->|重复单元片段| B["酶切、连接"]
+  B --> C["转化、克隆生长"]
+  C --> D["TALE重复序列"]
+  E["连续克隆法"] --> F["重复单元质粒"]
+  F --> G["酶切、连接"]
+  G --> H["转化、克隆生长"]
+  H --> I["质粒提取"]
+  I --> D
+  J["高通量固相合成法"] --> K["重复单元库"]
+  K --> L["酶切、连接"]
+  L --> M["转化、克隆生长"]
+  M --> D
+  N["长黏末端法"] --> O["2单元库"]
+  O --> P["退火\n12 23 34"]
+  P --> D
+```
+</details>
+
+图3-6 四类 TALE 重复单元构建方法的示意图
+
+表 3-1 TALE 重复单元构建方法比较
+
+<table><tr><td>分类</td><td>名称</td><td>简述</td><td>优点与不足</td></tr><tr><td rowspan="3">基于Golden gate的方法</td><td>GG-PCR</td><td>通过PCR扩增TALE重复单元,用IIS型内切酶产生多种一一特异匹配的黏性末端对,一次可连接4~6个TALE单元</td><td>优点:两轮酶切-连接,速度快。不足:需要24种PCR扩增引物,易混淆;若连接失败则难以进行错误排查</td></tr><tr><td>GG-vector</td><td>基于质粒载体,用IIS型内切酶产生多种一一对应、特异匹配的黏性末端对,一次可以连接8~10个TALE单元</td><td>优点:两轮酶切-连接,速度快。不足:需准备多种骨架载体,消耗大量昂贵的IIS内切酶;建库困难,难以大量构建</td></tr><tr><td>ULtiMATE</td><td>先利用USER酶构建出512个TALE四联子文库,再利用USER或Golden gate酶构建长度为14~20个氨基酸残基的TALE重复序列</td><td>优点:能够快速完成大量TALEN构建,相对不易混淆。不足:需要预构建或获得文库,只有拥有文库才能发挥该方法的优势</td></tr><tr><td rowspan="2">基于连续克隆组装的方法</td><td>UA</td><td>用同尾酶切割产生相同的末端,逐步连接不同的重复单元</td><td>优点:易于掌握,成本低廉;中间载体可重复使用不足:构建慢,难以大量构建</td></tr><tr><td>REAL</td><td>普通的限制性内切酶与IIS型内切酶结合的逐步连接策略</td><td>优点:易于掌握,已完成建库。不足:需要预构或获得文库;IIS型内切酶导致高成本</td></tr><tr><td rowspan="2">基于固相合成的高通量组装方法</td><td>FLASH</td><td>基于磁珠和REAL方法的高通量固相合成策略</td><td>优点:省略转化和细菌生长的时间,可以快速高通量构建。不足:需要昂贵的特殊仪器与试剂;反应正确率低,需要大量测序获得正确产物</td></tr><tr><td>ICA</td><td>基于固体表面的循环合成策略。采用寡核苷酸发夹封闭未合成完整的TALE链,使完整的TALE链得到富集</td><td>优点:包含FLASH的优点,同时极大地降低了反应错误率。不足:需要昂贵的特殊仪器与试剂,每一反应需要多种反应物参与且必须相互对应</td></tr><tr><td>基于长黏末端的组装方法</td><td>LIC</td><td>不依赖连接的组装方法,在TALE双单元的两端设计不同的长单链末端(如14、22、15和10个碱基),利用不同片段末端之间的序列互补性组装所需的TALE重复序列</td><td>优点:两步反应,且不需要DNA连接酶参与,速度最快。不足:需同时用到多种长单链末端的多个单元才能实现一步反应,文库构建烦琐,序列复杂且成功率不高</td></tr></table>
+
+TALE构建方法。他们首先利用USER酶特异切割DNA序列中的尿嘧啶位点的特性，构建出含有512个载体的TALE重复单元四联子文库；在此基础上，设计与黏性末端相匹配的特异引物，根据靶点序列选取合适的四联子载体作为模板，PCR扩增重复序列；再利用USER酶或Golden gate系统切割产生一一对应的黏性末端，然后按顺序连接至带有TALE的N、C两端以及Fok I的骨架载体中，最终即可得到所需的TALEN载体。利用已有的文库，这一方案仅需要一次常规的PCR和酶切-连接反应就可完成载体构建，因此能够以较低的成本快速地大量构建TALEN。通常熟练的研究者3天即可得到5对甚至更多经测序确认的TALEN质粒。此外，这一方法相对容易在实验失败时排查错误原因。总体而言，ULtiMATE是目前能够兼顾准确与高效的一种TALEN组装方法。
+
+## 3.2.5 ZFN和TALEN的比较与小结
+
+作为通过蛋白质特异识别靶序列的EEN，ZFN与TALEN都是用Fok I作为EEN的切割结构域，两者的主要区别在于DNA结合结构域。锌指基序和TALE重复单元在识别并结合DNA靶点的原理上具有很大的差异，相应地，两者的差异也体现在靶点识别和结合的准确性与特异性、潜在的脱靶效应、EEN筛选/构建方法与难度等诸多方面。总体而言，虽然TALE重复单元的复杂性高于锌指，其载体的构建过程也较为烦琐，但是，由于TALEN结合靶序列的特异性和效率均高于锌指，并且识别靶点的规则简单，只需根据靶点序列直接设计、组装，不需要像ZFN那样进行文库构建与筛选，因此，TALEN在应用的便利性和成功率上远胜ZFN。可以说，TALEN技术的诞生，真正开启了基因组编辑的“黄金时代”，使人们随意改造任意基因组的梦想成真。然而，CRISPR/Cas系统是否确实在各个方面都优于TALEN，是否能够完全取代TALEN？这仍是一个值得思考的问题。
+
+## 3.3 CRISPR/Cas 系统——通过 RNA 特异识别靶序列的人工内切核酸酶
+
+## 3.3.1 CRISPR/Cas系统的来源与作用原理
+
+与起源于锌指转录因子或 TALE、以蛋白质与核酸的特异相互作用为基础实现靶向识别 DNA 的 ZFN 和 TALEN 技术不同，CRISPR/Cas 系统以核酸之间的相互作用为基础，通过简单的碱基互补配对实现对 DNA 序列的靶向识别与结合。该系统广泛存在于细菌和古菌中，是原核生物特有的一种由小 RNA 介导的获得性免疫系统，用来特异识别和沉默外源入侵的核酸。该系统在遗传上由一组 cas 基因和 CRISPR 基因座构成。cas 基因编码 CRISPR 相关蛋白 (Cas 蛋白)，CRISPR 基因座则包含一段高度串联重复并带有特定回文结构的区域，因而又称为 CRISPR array。细菌能够捕获入侵的病毒、质粒等外来核酸中特定的 DNA 序列片段——前间区序列 (protospacer)，将它们整合到 CRISPR 区域，相当于产生了免疫记忆。CRISPR 区域可转录生成一个 crRNA 前体 (precursor CRISPR RNA, pre-crRNA) 分子，然后经 Cas 蛋白或 RNase III 加工处理，形成多个成熟的 crRNA (CRISPR RNA)；每个 crRNA 的长度为 42 nt，在 CRISPR/Cas 系统中负责直接识别靶序列。这些 crRNA 可在一个或多个 Cas 蛋白和其他 RNA（如 tracrRNA）的辅助下，以碱基配对的方式特异性识别外源入侵序列，并通过各种不同的作用机制组装形成核酸酶切割复合物，降解入侵的核酸。
+
+目前发现的CRISPR/Cas系统可分为两大类共6种类型。第一大类包括I型、Ⅲ型和IV型CRISPR/Cas系统，它们的crRNA都是由专门的Cas蛋白加工pre-crRNA形成，成熟的crRNA需要与多种Cas蛋白共同形成核糖核酸蛋白复合体，才能识别并切断与crRNA互补的核酸序列。第二大类包含其余的所有亚型（Ⅱ型、V型和VI型），其crRNA的形成同样依赖于Cas蛋白，但是Ⅱ型与部分V型还需要结合一个能与crRNA重复回文序列互补配对的反式激活crRNA(trans-activating crRNA, tracrRNA)后，才能启动对前体crRNA的加工。成熟的crRNA只需要与一个多结构域的核酸酶结合，即可形成有活性的内切酶复合体，完成切割核酸靶序列的功能。Cas9就是一种Ⅱ型CRISPR/Cas系统特有的DNA内切核酸酶。tracrRNA通过碱基互补配对与crRNA形成部分双链，引导Cas9蛋白靶向切割DNA，使靶点产生DSB。其中，crRNA通过碱基互补配对特异识别DNA上20-bp的靶序列，Cas9蛋白HNH结构域切割互补链，RuvC结构域切割反向互补链。此外，在与被捕获的外源protospacer毗邻的区域有一个重要的元件PAM（protospacer adjacent motif）。对于最为常用的化脓性链球菌（Streptococcus pyogenes）的Cas9（称为SpCas9；后文若无特殊说明，则Cas9核酸酶一般是指SpCas9），PAM由NGG三个碱基构成，是CRISPR/Cas9系统识别protospacer、定向切割靶DNA序列的必要条件。因此，Ⅱ型CRISPR/Cas免疫系统切割DNA仅需要成熟的crRNA、tracrRNA和Cas9蛋白3个组分。利用这一特性，2012年，美国加州大学伯克利分校J.A.Doudna研究组与瑞典于默奥大学E.Charpentier研究组对该系统进行了改造，并在体外成功实现了对DNA双链靶位点的特异切割。同时，她们还进一步简化了该系统，截短了上述两个RNA分子，在不影响效率的前提下鉴定出了最短的crRNA与tracrRNA，并通过一段连接序列将其合并，设计出一个长102 nt的RNA分子，称为向导RNA（guide RNA，gRNA），也有文献称为单一向导RNA（single guide RNA，sgRNA），并证明Cas9/gRNA同样也能够实现对DNA的靶向切割（图3-7）。因此，这种经人工改造的CRISPR/Cas系统又称为Cas9/gRNA系统。仅半年之后，2013年初，陆续有研究组报道，利用Cas9/gRNA系统在体外培养的哺乳动物细胞系中可成功实现基因组的靶向切割与突变，其中包括上述两位女科学家率领的研究团队，也包括华裔科学家、美国麻省理工学院博德研究所张锋率领的团队。随后，就像当年的TALEN一样，这项新技术被迅速应用到个体水平的研究，斑马鱼、小鼠等多个物种的内源基因相继被Cas9/gRNA系统成功突变。TALEN技术建立仅仅两年之后，Cas9/gRNA系统便横空出世。从此，基因组编辑领域开始取得突飞猛进的发展，并迅速带动生命科学基础理论研究、作物改良、基因治疗等诸多领域产生了革命性的飞跃，至今仍方兴未艾。
+
+![](images/page_77_image_1.jpg)
+
+<details>
+<summary>text_image</summary>
+
+sgRNA
+5'
+HNR
+RuvC
+PAM
+5'
+双链DNA
+NGG
+</details>
+
+值得一提的是，虽然Cas9/gRNA系统应用非常简单，但是将其用于靶向诱变真核生物基因组也并非易事。这主要是由于Cas9是由原核基因编码且在原核生物中起作用，自身并不具备自主进入细胞核的能力；此外，原核生物与真核生物虽然共享同一套核苷酸密码子，但是两者在密码子的使用上存在不同的偏好性。为此，需要在Cas9编码序列的合适位置添加核定位信号，并且进行密码子优化，Cas9/gRNA系统才能在真核生物中最大限度地发挥其功能。并且，即便同为真核生物，不同的物种对密码子的偏好性也存在一定的差异。因此，针对不同物种构建特异的密码子优化的Cas9编码序列往往会有效地提高Cas9/gRNA系统的基因组编辑效率。例如，经人类密码子优化的Cas9（hCas9）mRNA能够在斑马鱼中有效地诱导靶基因突变，而根据斑马鱼密码子偏好性优化的Cas9（zCas9）mRNA在斑马鱼中能够表现出比hCas9更高的诱变活性。Cas9/gRNA系统不是通过蛋白质与核酸的相互作用，而是通过核酸与核酸之间的碱基互补配对作用来识别并结合靶序列，与gRNA配对识别的DNA靶序列仅为20 bp，靶点识别区域3'端下游的3个碱基要求必须为NGG。可以说简单的靶点识别机制是Cas9/gRNA系统的最为优越之处。在实际应用中，对于不同的靶位点，只需改变gRNA中20 nt的靶点识别序列，而Cas9蛋白则对所有的靶点都是通用的，无需多次设计和构建；gRNA的长度仅为102 nt，可以通过多种方式在体外快速合成，或快速构建体内表达系统。由此可见，与ZFN和TALEN相比，Cas9/gRNA系统在应用的简便性
+
+图3-7 Cas9/gRNA系统与靶序列结合并实现DNA靶向切割的原理示意图
+
+Cas9核酸酶与crRNA-tracrRNA或单一的sgRNA形成复合物，通过碱基互补配对原则识别并结合20 bp的DNA靶序列，通过HNH与RuvC两个核酸酶结构域切割双链，造成DSB，形成平末端。
+
+上具有巨大优势，这极大地降低了基因组编辑技术的门槛，使得人们能够以低廉的成本快速，有效、高通量地进行基因组靶向诱变。正因如此，Cas9/gRNA系统被誉为“大众化的基因组微型手术刀”与“基因魔剪”。以下分别介绍CRISPR/Cas系统在不同研究对象中的应用策略以及近年来的改进、优化与拓展。
+
+## 3.3.2 Cas9/gRNA系统的应用方法与效率检测
+
+Cas9/gRNA系统与ZFN、TALEN技术的最终目的都是发挥其特异性内切核酸酶的作用，在细胞或生物体内完成对基因组的定向切割，在靶位点造成损伤，从而激活细胞固有的DNA损伤修复系统，利用不同的修复机制对靶位点实现所需的修饰。因此，应用这些系统的几个关键步骤包括系统的构建、向实验对象的导入，以及靶点诱变效率的检测与突变的筛选。Cas9/gRNA系统的构建相对简单，下面简单介绍导入方法和靶点诱变效率的检测方法。
+
+对ZFN和TALEN而言，不同靶点对应的DNA识别结构域的蛋白质序列都不同，每个靶点都要构建新的ZFN或TALEN。通常的做法是将ZFN或TALEN的编码序列克隆至携带真核生物启动子的质粒载体上，然后成对转染到体外培养细胞中，或显微注射到生物体的雌性生殖腺（如线虫、果蝇）或受精卵中（如小鼠、斑马鱼）。对于某些卵裂较快的生物（如斑马鱼），若导入表达载体，由于通过转录和翻译积累到足够的蛋白质产物需要较长的时间，往往导致靶点切割发生得较晚，从而影响突变效率，因此对于这类实验材料，往往将ZFN或TALEN编码序列克隆至体外转录载体（携带T7、T3、SP6等原核启动子），通过体外转录获得mRNA，再将其导入生物体内，可获得更高的效率。
+
+对Cas9/gRNA系统而言，其一大优势为核酸酶是固定不变的，与靶点序列无关。无论是体外转录获得的Cas9 mRNA或表达纯化的Cas9蛋白，对任意靶点均可通用，因此，一般体外培养细胞仍然通过转染导入Cas9表达载体，而个体水平的研究则多采用导入Cas9 mRNA或蛋白质的方法进行基因组编辑工作。对于不同物种，将Cas9的密码子进行优化，可提高Cas9 mRNA的翻译效率。同时，通过构建稳定表达Cas9的细胞系或携带Cas9转基因的生物体，可以省略导入Cas9的步骤，不仅便于实验操作，而且理论上还能够提高靶点突变效率，甚至通过不同的启动子实现时空特异性的Cas9表达，进而实现更为复杂的基因组靶向修饰。gRNA的准备相对比较简单。gRNA中除了20 nt的靶点识别序列，其余序列是固定的，因此，可以将带有这部分序列的载体作为模板，设计带有靶序列的引物通过PCR扩增模板，将产物克隆至真核表达载体中转染，在细胞内转录出gRNA；或在引物前再加上T7等原核启动子，即可将PCR扩增产物直接用于体外转录，获得gRNA。此外，还可以在体外将gRNA与Cas9蛋白共孵育，获得RNA-蛋白质复合物(RNP)，将该复合物导入细胞或个体，完成基因组编辑。将该复合物直接导入细胞或胚胎能更快地起到切割靶DNA的作用，这在需要高效切割或细胞分裂旺盛的实验中尤为重要。不过，目前RNA或蛋白质对于体外培养细胞的转染效率都较低，这在一定程度上限制了Cas9蛋白或RNP在培养细胞中的应用。
+
+在导入人工内切核酸酶后，DNA靶序列就有可能产生DSB，并且绝大多数情况下会通过NHEJ的方式进行修复，造成DNA靶序列发生indel突变。据此，可以通过以下方法评估靶点的突变效率。
+
+一是限制性内切核酸酶(restriction endonuclease, RE)检测法(图3-8)。若ZFN或TALEN靶点的Spacer或Cas9靶点靠近PAM的protospacer附近存在单一的限制性内切酶识别位点，则可以通过PCR扩增周围的基因组序列，用此内切酶对PCR产物进行消化。若靶点产生了indel突变，则有可能破坏该酶的识别序列，导致其PCR产物无法被酶切，因此可以通过PCR产物中未被酶切的片段比例估计靶点效率。RE检测法是一种简单、高效且相对准确的检测方法，缺点在于不是所有的靶点都能找到合适的内切酶位点，或酶的成本较高、不宜使用。此外，此方法需要严格设置阴性对照，否则很容易导致假阳性。
+
+二是基于DNA变性以及错误配对的检测方法，包括T7内切核酸酶I法（T7 endonuclease I，T7E1）（图3-8）、高分辨率熔解法(high-resolution melting, HRM)、单链构象多态性法(single strand conformational polymorphism, SSCP)和变性高效液相色谱法(denaturing high performance liquid chromatography, DHPLC)等。T7E1能够特异性识别错配、不完全匹配、十字结构或Holliday junction结构并对其进行切割。DNA靶序列发生indel突变后与野生型序列之间或不同的indel序列之间会产生差异，通过PCR扩增靶点及附近序列，并通过变性-梯度退火使得不同的DNA单链进行匹配，再用T7E1处理退火后的DNA产物，能被T7E1切割的序列的比例即可间接反映靶点的效率。此外，从芹菜中提取的CEL I内切酶（现在常用的Surveyor酶即为其中的一种）也可以通过类似的原理检测靶点效率，但成本更高。HRM依赖于错配或不完全匹配的PCR产物的熔解温度与熔解曲线和野生型PCR产物不同，通过饱和的DNA染料进行qPCR实验，之后测定熔解曲线，能够以极高的分辨率区分不同的PCR产物，并通过软件分析靶点效率与indel的大致形式，是一种非常快捷且准确的方法，但是需要特殊的仪器，软件以及耗材的成本也较高。此外，错配或不完全匹配的双链DNA产物在色谱中的迁移速率会发生变化，可以通过高效液相色谱区分出携带突变的PCR产物，并估算其比例，反映靶点的突变效率，此即DHPLC法。同样地，携带突变的DNA单链相比于野生型单链产物，其构象发生改变，在非变性凝胶中的迁移速率会发生变化，通过非变性聚丙烯酰胺凝胶可以区分野生型与突变单链，并得到突变条带相对于野生型条带的比例，据此估算靶点的突变效率，此为SSCP法。
+
+三是测序类方法，包括克隆测序法、直接测序法、软件分解分析法（tracking of indels by decomposition, TIDE）和深度测序法等（图3-8）。克隆测序法一般是对基因组的靶点区域进行PCR扩增，然后将PCR产物连接至测序载体中进行单克隆测序，通过逐条分析、比对测序结果计算靶点的突变效率。这种方法可以获得比较准确的序列与效率信息，但是实验过程较为烦琐、周期较长。TIDE法通过混合不同细胞或个体的基因组，对靶点区域进行PCR扩增，然后直接进行Sanger测序。如果产生DSB的效率较高，则切割位点及其下游的序列会由于序列不单一而呈现“乱峰”，而上游序列则不受影响，通过TIDE软件上传实验组与对照组的测序峰图，可以分析出靶点的突变效率以及主要的indel形式。TIDE法简便快捷，但难以测定效率较低的靶点；此外，此方法中如果希望得到准确的分析结果，需要提供信号强度尽可能大且高质量的Sanger测序结果。深度测序法可以视为不需要克隆的“单克隆测序法”，并且能提供更多的测序片段，结果更准确，但成本高昂。许多研究组与公司开发了在线的EEN基因组深度测序分析软件，例如，CRISPR-GA与crispRVariants等，除了能分析靶点效率与插入/缺失形式外，也能够检测大片段删除、基因敲入以及脱靶等。
+
+## 3.3.3 Cas9/gRNA基因组编辑系统的优化
+
+## (1) Cas9核酸酶特异性的优化
+
+Cas9/gRNA基因组编辑系统问世仅一年后，多个团队便发表了多个关于其特异性和脱靶率的研究结果，发现Cas9/gRNA存在一定的脱靶效应。从理论上讲，一方
+
+![](images/page_79_image_6.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["基因组DNA"] --> B["PCR"]
+  B --> C["KEC-PCR Result"]
+  
+  subgraph Detection_Process
+    direction TB
+  D["野生型DNA"] --> E["*Indel DNA"]
+  F["RE检测法"] --> G["* Indel DNA"]
+  H["CELI或T7E1检测法"] --> I["* Indel DNA"]
+  J["克隆测序法"] --> K["结果输出"]
+  end
+  
+  style A fill:#f9f9f9,stroke:#333,stroke-width:2px
+  style B fill:#f9f9f9,stroke:#333,stroke-width:2px
+  style C fill:#f9f9f9,stroke:#333,stroke-width:2px
+  style D fill:#f9f9f9,stroke:#333,stroke-width:2px
+  style E fill:#f9f9f9,stroke:#333,stroke-width:2px
+  style F fill:#f9f9f9,stroke:#333,stroke-width:2px
+  style G fill:#f9f9f9,stroke:#333,stroke-width:2px
+  style H fill:#f9f9f9,stroke:#333,stroke-width:2px
+  style I fill:#f9f9f9,stroke:#333,stroke-width:2px
+  style J fill:#f9f9f9,stroke:#333,stroke-width:2px
+```
+</details>
+
+图3-8 几种人工内切核酸酶效率检测方法示意图

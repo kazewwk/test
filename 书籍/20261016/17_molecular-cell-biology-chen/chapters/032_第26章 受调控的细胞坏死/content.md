@@ -1,0 +1,647 @@
+# 第26章 受调控的细胞坏死
+
+原始 PDF 第 538–555 页。
+
+第 26 章
+受调控的细胞坏死
+
+26
+
+细胞坏死(necrosis)是最早被认识的细胞死亡形式，“necrosis”源自希腊语“nekros”，意为尸体。在早期，细胞坏死主要用于描述病理性细胞死亡，指细胞因物理因素（如辐射）、化学因素（如有毒物质）或生物因素（如病原体）等外界环境因素的损害而导致的被动死亡。细胞坏死的形态学特点是细胞及细胞器溶胀，细胞质囊泡化，最终细胞膜破裂。细胞坏死会导致细胞内容物流出，引发周围组织发生炎症反应。1971年，澳大利亚科学家Kerr报道了在一些组织中不同于细胞坏死的死亡形态细胞。这些细胞体积收缩，溶酶体并未被破坏，他将这种细胞死亡命名为皱缩型坏死(shrinkage necrosis)。1972年，Kerr等3位科学家提出了细胞凋亡(apoptosis)的概念，借用来源于古希腊文的“apoptosis”描述细胞如同秋天的树叶般自然凋落。细胞凋亡也被称为细胞程序性死亡(programmed cell death, PCD)。在20世纪90年代，细胞凋亡被证实是一种受到基因调控的主动死亡过程，通过一系列半胱氨酸-天冬氨酸特异性蛋白酶(cysteine aspartate-specific protease, caspase, 又称胱天蛋白酶)的水解、活化和信号传递而介导发生。凋亡的细胞伴随典型的形态学特征:细胞皱缩、细胞膜起泡、染色质凝集、DNA片段化(DNA fragmentation)和凋亡小体(apoptotic body)的产生。
+
+长期以来，细胞坏死被普遍认为是不同于细胞凋亡的一种不受调控的被动死亡方式。然而越来越多的证据表明细胞坏死也受到基因调控，并且参与许多疾病的病理过程，包括急性炎症损伤、感染性疾病、缺血性心脑血管疾病和神经退行性疾病等。在过去的十几年中，细胞坏死的发生机制及其生物学功能研究取得了重要进展。多种受到信号调控的细胞坏死类型已被发现，这些细胞坏死都被称为受调控的细胞坏死(regulated necrosis)，目前研究最为深入的2种细胞坏死类型为细胞程序性坏死(programmed necrosis)和细胞焦亡(pyroptosis)。
+
+## 26.1 细胞程序性坏死
+
+## 26.1.1 细胞程序性坏死的发现
+
+细胞程序性坏死是一种受调控的细胞坏死方式，最早被发现于死亡配体肿瘤坏死因子（tumor necrosis factor, TNF）处理的细胞。死亡配体属于肿瘤坏死因子超家族成员，通过与死亡受体结合发挥作用。死亡受体是一类具有死亡结构域的膜受体，属于肿瘤坏死因子受体超家族（tumor necrosis factor receptor super family）成员。死亡受体TNFR、Fas/CD95和TRAILR由细胞外相应的肿瘤坏死因子超家族的死亡配体TNF-α、FasL/CD95L和
+
+TRAIL激活，活化的死亡受体通路能启动外源性凋亡途径，此过程依赖于caspase的功能。1988年，研究人员发现TNF-α除了能够诱导细胞凋亡外，还能诱导细胞坏死。而且，caspase抑制剂zVAD能够促进TNF-α诱导的细胞坏死。随后，更多的证据表明在凋亡通路缺陷或受到抑制的情况下，死亡配体TNF-α、FasL/CD95L和TRAIL能够激活另一条不依赖于caspase的细胞坏死途径，因此，死亡受体通路可以介导细胞坏死。2000年，受体相互作用蛋白激酶1（receptor-interacting protein kinase 1, RIP1或RIPK1）被发现参与死亡受体介导的细胞坏死途径。RIP1缺陷的细胞不能发生TNF-α、FasL/CD95L和TRAIL介导的细胞坏死，而且RIP1的激酶活性是细胞
+
+26.1 细胞程序性坏死
+
+525
+
+---
+
+坏死途径所必需的。因此，死亡受体介导的细胞坏死受到RIP1蛋白的调控。2003年，美国Michael J. Lenardo课题组将由死亡受体介导且依赖于RIP1的细胞坏死称为程序性坏死。2005年，美国哈佛大学医学院袁钧瑛课题组发现小分子化合物necrostatin-1能够抑制死亡受体介导的细胞坏死，并将此细胞坏死命名为necroptosis。随后，necrostatin-1被证实通过特异性抑制RIP1的激酶活性从而阻断程序性坏死。2009年，受体相互作用蛋白激酶3（receptor-interacting protein kinase 3，RIP3或RIPK3）被发现在程序性坏死中发挥关键作用，RIP3与RIP1形成蛋白复合体而被活化。2012年，混合谱系激酶结构域蛋白（mixed lineage kinase domain-like protein，MLKL）被鉴定为RIP3激酶的底物蛋白，RIP3磷酸化MLKL从而激活MLKL，MLKL进而介导细胞坏死的发生。
+
+## 26.1.2 细胞程序性坏死的信号转导及调控机制
+
+死亡受体介导的程序性坏死通路是近年来细胞坏死领域的研究热点，也是目前研究得最为深入的细胞程序性坏死途径。除了死亡受体通路，Toll样受体（Toll like receptor, TLR）通路、干扰素受体（interferon receptor,
+
+IFNR）通路以及一些病原体感染都已被证实能够激活RIP3-MLKL介导的细胞程序性坏死。
+
+## (1) 死亡受体介导的细胞程序性坏死途径
+
+死亡受体介导的细胞程序性坏死的研究主要集中于TNF-α诱导的细胞坏死途径（图26-1）。当TNF-α与其受体TNFR1结合，TNFR1发生寡聚化，RIP1首先被募集到TNFR1复合体中并发生泛素化修饰，进而启动NF-κB信号通路。在去泛素化酶——头帕肿瘤综合征蛋白（cylindromatosis，CYLD）的作用下，RIP1去泛素化并释放到细胞质中，与RIP3通过各自的RIP同型结构域（RIP homotypic interaction motif，RHIM）相互作用形成蛋白复合体即坏死复合体。此过程激活RIP3，使RIP3被磷酸化（人源RIP3 S227位点发生磷酸化）。RIP1和RIP3同属受体相互作用蛋白家族（RIPs）成员，具有丝氨酸/苏氨酸蛋白激酶活性。活化的RIP3磷酸化底物蛋白MLKL（人源MLKL T357和S358位点发生磷酸化）。MLKL是具有激酶结构域但无激酶活性的假激酶。磷酸化的MLKL进而发生寡聚化，通过N端与磷脂酰肌醇磷脂（phosphatidylinositol phosphate lipid，PIP）结合进而转运到细胞膜上。膜上的MLKL如何导致细胞膜的破裂目前尚不明确，存在以下几种可能性:① MLKL可能通
+
+![](../../raw/pages_0529-0544/images/page_538_image_6.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["TNF-α"] --> B["TNFR1"]
+  B --> C["RIP1"]
+  D["CYLD"] --> E["RIP1"]
+  F["NF-κB激活"] --> G["RIP3"]
+  H["离子通道"] --> I["Ca2+"]
+  J["Mg2+ + Na+"] --> K["孔道形成"]
+  L["未知分子"] --> M["细胞膜破裂"]
+  N["P"] --> O["RIP1"]
+  P["S227"] --> Q["RIP3"]
+  R["T357 /S358"] --> S["MLKL单体"]
+  T["P"] --> U["MLKL寡聚体"]
+  V["P"] --> W["磷酸化"]
+  X["S227"] --> Y["RIP3"]
+  Z["DNA"] --> AA["细胞坏死"]
+```
+</details>
+
+图26-1 TNF受体介导的细胞程序性坏死途径
+
+TNF- $\alpha$ 结合其受体TNFR1，TNFR1发生寡聚化并募集RIP1，RIP1发生泛素化，进而启动NF- $\kappa$ B信号通路。RIP1在CYLD去泛素化酶的作用下释放到细胞质，通过RHIM结构域与RIP3形成坏死复合体。人源RIP3S227位点发生磷酸化，并募集底物蛋白MLKL并使其磷酸化。MLKL发生T357和S358位点磷酸化，进而发生寡聚化并转运到细胞膜上。膜上的MLKL导致细胞膜破裂存在3种可能性:①可能通过影响离子通道引起离子失衡；②可能直接在细胞膜上形成孔道而破膜；③可能通过下游未知分子导致细胞膜的破坏。
+
+526
+
+第26章 受调控的细胞坏死
+
+---
+
+过影响 $Ca^{2+}$ 、 $Na^{+}$ 或 $Mg^{2+}$ 通道引起离子流动失衡，从而破坏细胞膜的稳定性；② MLKL可能通过与磷脂酰肌醇磷脂的结合直接在细胞膜上形成孔道结构，从而破坏细胞膜；③ MLKL可能通过未知的下游调控因子从而导致细胞膜的破坏。
+
+值得一提的是，华人科学家王晓东课题组发现了RIP3和MLKL在细胞程序性坏死中的关键调控作用，为理解细胞程序性坏死的分子机制奠定了最为关键的基础。
+
+## (2) Toll样受体介导的细胞程序性坏死途径
+
+Toll样受体是一类病原模式识别受体(pattern-recognition receptor, PRR)，在机体对病原体的天然免疫应答中起着非常重要的作用。每种Toll样受体识别特定病原体的病原相关分子模式(pathogen-associated molecular pattern, PAMP)。例如，TLR4能识别革兰氏阴性菌细胞壁的脂多糖(lipopolysaccharide, LPS)，而TLR3特异地识别病毒双链RNA(dsRNA)以及人工合成的dsRNA类似物poly(I:C)。当TLR3和TLR4识别相应的病原体时，机体会启动相应的免疫防御应答，主要激活NF-κB信号途径和干扰素IFN-β前体。
+
+TLR3和TLR4主要表达在巨噬细胞等免疫细胞的表面。在凋亡抑制剂zVAD存在的情况下，TLR3和TLR4被相应的配体活化时可以诱导巨噬细胞发生程序性坏死，此过程依赖于RIP3和MLKL，但不依赖于TNFR通路。在TLR3或TLR4介导的细胞程序性坏死通路中，TRIF（TICAM-1）蛋白的突变显著抑制TLR3/TLR4介导的细胞坏死。TRIF（TICAM-1）含有RHIM结构域，可以与RIP1和RIP3相互作用。在巨噬细胞中，RIP1的抑制剂necrostatin-1能够抑制TLR3或TLR4介导的细胞程序性坏死。而且，RIP1激酶失活的巨噬细胞不能发生TLR3介导的程序性坏死。然而在成纤维细胞中，RIP1的缺失并不影响TLR3介导的程序性坏死。因此，目前的研究表明TLR3介导的巨噬细胞坏死依赖于TRIF/RIP1/RIP3/MLKL，而TLR3介导的成纤维细胞坏死可以在RIP1缺陷的情况下发生(图26-2)。
+
+## (3) 干扰素受体介导的细胞程序性坏死途径
+
+干扰素（IFN）是一类免疫因子，与细胞表面的干扰素受体结合激活信号转导通路，在抗病毒和调节机体免疫中发挥重要功能。I型干扰素以IFN- $\alpha$ 与IFN- $\beta$ 为主，II型干扰素只有IFN- $\gamma$ 。当巨噬细胞中存在zVAD或缺陷凋亡蛋白FADD或caspaes-8的情况下，I型或II型干扰素可以诱导细胞发生依赖于RIP1-RIP3-MLKL的细胞坏死。值得注意的是，RIP1缺陷细胞对I型干扰素或II型干
+
+![](../../raw/pages_0529-0544/images/page_539_image_8.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["LPS"] --> B["TLR4"]
+  C["革兰氏阴性菌"] --> D["TNFR1"]
+  B --> E["TRIF"]
+  D --> E
+  E --> F["desRNA<br/>内体"]
+  G["TLR3"] --> H["necrostatin-1"]
+  I["TRIF"] --> J["TRIF"]
+  K["TRIF"] --> L["TRIF"]
+  M["TRIF"] --> N["TRIF"]
+  O["TRIF"] --> P["TRIF"]
+  Q["TRIF"] --> R["TRIF"]
+  S["TRIF"] --> T["TRIF"]
+  U["TRIF"] --> V["TRIF"]
+  W["NF-κB激活<br/>表达pro-IFN-β"] --> X["NF-κB激活<br/>表达pro-IFN-β"]
+  Y["细胞坏死"] --> Z["细胞坏死"]
+  AA["表达pro-IFN-β"] --> AB["表达pro-IFN-β"]
+  AC["NF-κB激活"] --> AD["NF-κB激活"]
+```
+</details>
+
+图 26-2 Toll 样受体介导的细胞程序性坏死途径
+
+在巨噬细胞中，TLR3和TLR4分别由相应的配体外源dsRNA[如poly(I:C)]和革兰氏阴性菌细胞壁成分LPS激活，进而募集接头蛋白TRIF，启动NF-κB和表达干扰素IFN-β前体。在坏死信号的刺激下，TRIF通过RHIM结构域与RIP1和RIP3相互作用，进一步激活MLKL，导致细胞程序性坏死。但在成纤维细胞中，TLR3信号通路可以在RIP1缺陷的情况下激活TRIF-RIP3-MLKL依赖的细胞程序性坏死。
+
+26.1 细胞程序性坏死
+
+527
+
+---
+
+扰素更为敏感，I型干扰素或Ⅱ型干扰素单独处理细胞就能诱导RIP3-MLKL介导的细胞程序性坏死（图26-3）。
+
+## (4) 病原体感染介导的细胞程序性坏死途径
+
+当病原体感染宿主细胞时，宿主细胞自发死亡也是机体防御病原体的策略之一。人单纯疱疹病毒(herpes simplex virus, HSV)、流感病毒A(influenza A virus, IAV)和小鼠巨细胞病毒(murine cytomegalovirus, MCMV)的突变株等已被报道能够诱导RIP3介导的细胞程序性坏死。
+
+HSV病毒1型(herpes simplex virus type 1, HSV-1)是常见的疱疹病毒，能够引起龈口炎(gingivostomatitis)，严重时还会引起角膜结膜炎(keratoconjunctivitis)和脑炎(encephalitis)等。研究发现，HSV-1病毒感染的小鼠细胞能够启动依赖于RIP3的细胞程序性坏死，此途径不依赖于TNFR和Toll样受体。HSV-1病毒蛋白ICP6含有RHIM结构域，可以与RIP1和RIP3结合。在小鼠细胞中，RIP3与ICP6蛋白相互作用，活化RIP3，从而启动细胞程序性坏死(图26-4)。HSV-1感染介导的小鼠细胞坏死完全依赖于RIP3和MLKL，而RIP1的缺陷只能部分减弱HSV-1引起的细胞坏死。因此，HSV-1感染引起的坏死主要通过病毒蛋白ICP6直接激活鼠源RIP3，进而活化鼠源MLKL，最终导致细胞程序性坏死。
+
+![](../../raw/pages_0529-0544/images/page_540_image_4.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["IFNAR1"] --> B["RIP1表达细胞"]
+  C["IFNAR2"] --> D["RIP1缺陷细胞"]
+  E["IFN-α, IFN-β..."] -.-> B
+  E --> F["RIP3"]
+  G["IFN-γ"] --> H["RIP3"]
+  I["IFN-γR1"] -.-> B
+  I --> J["RIP3"]
+  K["IFN-γR2"] -.-> H
+  L["RIP3"] -.-> F
+  M["MLKL"] -.-> F
+  N["细胞坏死"] -.-> F
+  O["RIP1"] -.-> P["RIP1表达细胞"]
+  Q["RIP3"] -.-> R["RIP3缺陷细胞"]
+```
+</details>
+
+MCMV病毒的M45基因编码一种蛋白，被称为RIP活化病毒抑制剂(viral inhibitor of RIP activation, vI RA)，能够抑制RIP1和RIP3的RHIM结构域功能，从而阻止RIP3介导的细胞程序性坏死。vI RA突变的MCMV病毒株会丧失对RIP1和RIP3的抑制作用。vI RA突变的MCMV病毒株感染小鼠细胞后会通过细胞内DAI蛋白激活RIP3，但不依赖于RIP1和TRIF。近期的研究还发现，在流感病毒A感染小鼠细胞后，细胞内蛋白DAI能够感应流感病毒A的基因组RNA，进而DAI与RIP3结合，并启动RIP3介导的细胞程序性坏死。值得注意的是，在流感病毒A感染后，DAI与RIP3的结合还能引发RIP3所依赖的细胞凋亡，此凋亡途径依赖于RIP1/caspase-8/FADD，但不依赖于RIP3的激酶活性(图26-5)。
+
+综上所述，RIP3作为含有RHIM结构域的激酶，它通过与另一个特定的含RHIM结构域蛋白结合从而接收来自不同通路的坏死诱导信号（图26-6）。在上述的细胞程序性坏死信号通路中，含有RHIM结构域的蛋白RIP1（死亡受体介导的坏死通路）、TRIF（TLR3/4介导的坏死通路）、DAI（MCMV v1RA突变株或流感病毒A介导的坏死通路）以及病毒蛋白ICP6（HSV-1病毒介导的坏死通路）通过RHIM区域与RIP3发生作用，进而活化RIP3。因此，RIP3如同RHIM蛋白的感受器，通过感受其他RHIM蛋白传递的信息，在调控细胞程序性坏死中发挥中央感受器的作用。活化的RIP3磷酸化底物蛋白MLKL，进而将坏死信号传递给MLKL，MLKL作为目前最为明确的下游效应分子，在执行坏死中发挥关键作用。值得注意的是，在RIP1缺陷的细胞中，I型和II型干扰素受体的活化可以直接诱导RIP3的活化，此通路中是否需要含有RHIM的蛋白激活RIP3还有待阐明。
+
+## 图26-3 干扰素受体介导的细胞程序性坏死途径
+
+在RIP1表达的细胞中，I型和Ⅱ型干扰素通过激活各自的受体，进而激活RIP1-RIP3-MLKL依赖的细胞程序性坏死。在RIP1缺陷细胞中，I型和Ⅱ型干扰素可以直接激活RIP3-MLKL依赖的细胞程序性坏死。
+
+528
+
+第26章 受调控的细胞坏死
+
+---
+
+![](../../raw/pages_0529-0544/images/page_541_image_0.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["HSV-1"] --> B["ICP6"]
+  B --> C["ICP6"]
+  C --> D["ICP6\nRIP3\nMLK1"]
+  C --> E["ICP6\nRIP3\nMLK1"]
+  C --> F["ICP6\nRIP1"]
+  D --> G["细胞坏死"]
+  E --> G
+  F --> G
+```
+</details>
+
+图 26-4 HSV-1 病毒诱导的细胞程序性坏死途径
+
+小鼠细胞感染HSV-1病毒后，含有RHIM结构域的病毒蛋白ICP6与RIP3结合从而激活RIP3，活化的RIP3进一步激活MLKL，启动细胞程序性坏死。HSV-1感染引发的细胞程序性坏死主要通过ICP6-RIP3-MLKL信号通路进行，部分依赖于ICP6-RIP1-RIP3-MLKL信号通路。
+
+![](../../raw/pages_0529-0544/images/page_541_image_3.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["鼠巨细胞病毒\nM45突变株"] --> B["DAI"]
+  C["流感病毒A"] --> D["病毒RNA"]
+  D --> E["DAI\nRIP3"]
+  E --> F["vIRA"]
+  G["DIA"] --> H["DAI"]
+  I["RIP3"] --> J["MLKL"]
+  K["vIRA"] --> L["细胞坏死"]
+  M["FADD"] --> N["细胞凋亡"]
+```
+</details>
+
+图26-5 MCMV vlRA突变株及流感病毒A诱导的细胞程序性坏死途径
+
+MCMV病毒株感染小鼠细胞后，病毒蛋白vlRA（M45）能够抑制RHIM结构域从而阻止RIP3介导的细胞程序性坏死。当vlRA突变后，细胞通过DAI蛋白激活RIP3介导的细胞程序性坏死。流感病毒A感染小鼠细胞后，释放的病毒基因组RNA被细胞内蛋白DAI识别，进而DAI与RIP3结合，并启动RIP3-MLKL介导的细胞程序性坏死以及RIP1-FADD-caspase8介导的细胞凋亡。
+
+## 26.1.3 细胞程序性坏死与疾病
+
+随着对细胞程序性坏死调控机制和信号通路的揭示，科研人员利用RIP1特异性抑制剂、RIP3缺陷小鼠和MLKL缺陷小鼠等研究了细胞程序性坏死与疾病的关系。越来越多的证据表明细胞程序性坏死参与炎症、感染性疾病、神经性疾病、心血管疾病、肝疾病、肾疾病和癌症等多种疾病的发生和发展，为探索这些疾病新的治疗方案提供了重要科学依据。
+
+## (1) 细胞程序性坏死与炎症反应
+
+细胞程序性坏死导致细胞内容物的释放，这些内容物包括损伤相关分子模式（damage-associated molecular pattern, DAMP）如高迁移率族蛋白1（high mobility group box-1 protein, HMGB1）等，它们能促进炎症反应，因此诱导炎症反应是细胞程序性坏死的一个重要结果。细胞程序性坏死调控蛋白RIP1和RIP3等在炎症性疾病中起着重要的作用，包括炎症性肠炎、类风湿性关节炎、急性胰腺炎、慢性阻塞性肺疾病和TNF驱动的系统性炎症反应等。在小鼠中注射高剂量TNF-α引发系统性炎症反应综合征（systemic inflammatory response syndrome, SIRS），导致小鼠死亡。RIP3的缺失、RIP1激酶的失活或RIP1抑制剂necrostatin-1都能有效地缓解TNF-α引起的炎症反应并能提高小鼠生存率。而且，RIP3的缺陷也能够减缓炎症性肠病如克罗恩病（Crohn's disease）和急性胰腺炎等。在克罗恩病和慢性阻塞性肺疾病等患者的病理样品中，RIP3和MLKL的表达水平也上调。因此，程序性坏死能够参与到多种炎症性疾病的病理过程中。目前已有RIP1抑制剂处于Ⅱ期临床试验，用于治疗炎症性肠炎和类风湿性关节炎等。
+
+## (2) 细胞程序性坏死与感染性疾病
+
+细胞程序性坏死参与由多种病原体引发的感染性疾病。病原菌如金黄色葡萄球菌、肺炎双球菌、李斯特菌以及大肠杆菌等通过分泌成孔毒素诱导巨噬细胞发
+
+26.1 细胞程序性坏死
+
+529
+
+---
+
+![](../../raw/pages_0529-0544/images/page_542_image_0.jpg)
+
+<details>
+<summary>text_image</summary>
+
+S161/166
+K45 P
+RIP1 1 激酶结构域 R 死亡结构域 671
+22 286 504 550 583 668
+K50 S227 P
+RIP3 1 激酶结构域 R 518
+22 280 424 469
+TRIF 1 N端结构域 TIR结构域 R 712
+153 390 538 661 699
+DAI 1 Zα Zβ R RL RL MLKL 1 卷曲结构域 激酶样结构域 471
+179
+ICP6 1 R 核糖核苷酸还原酶结构域 1345
+</details>
+
+图26-6 参与细胞程序性坏死的重要蛋白结构示意图
+
+图中显示了参与细胞程序性坏死的人源细胞和病毒含有RHIM结构域的重要蛋白以及MLKL的结构。RIP1的S14/15、S20、S161和S166为自磷酸化位点，其激酶活性中心K45对激酶活性具有重要作用。RIP3的K50是其激酶活性的重要位点。同时，RIP3的S227以及MLKL的S357/358的磷酸化是细胞程序性坏死进程中的重要标志。
+
+生RIP1、RIP3和MLKL依赖的程序性坏死，从而导致细菌性出血性肺炎。I型干扰素也会诱导巨噬细胞发生依赖于RIP1和RIP3的死亡，从而减弱机体控制病毒感染的能力，因此IFNAR1敲除小鼠相较于野生型小鼠对鼠沙门氏菌感染的耐受力更强。此外，人类免疫缺陷病毒（human immunodeficiency virus，HIV）是引起艾滋病的病毒。在慢性HIV感染者中，RIP3的激活及程序性坏死导致HIV特异性的CD8 $^{+}$ 毒性T淋巴细胞增殖能力下降，进而降低了机体抵御病毒的能力，加重了慢性感染的进程。
+
+## (3) 细胞程序性坏死与神经系统疾病
+
+许多研究表明细胞程序性坏死参与了神经系统疾病的调控。RIP1抑制剂necrostatin-1在多种神经系统疾病中具有保护作用，包括成人中风、新生儿缺氧缺血性脑病、视网膜缺血、视网膜脱离、蛛网膜下腔出血、创伤性脑损伤和脊髓损伤等。RIP3敲除在小鼠视网膜脱落模型中具有一定的保护作用，RIP3敲除也能保护小鼠脊髓损伤之后的神经系统功能。近期，多项研究证实程序性坏死在神经退行性疾病中发挥重要作用，包括多发性硬化症（multiple sclerosis，MS）、阿尔茨海默病（Alzheimer disease，AD）和肌萎缩侧索硬化（ALS）。多发性硬化症是一种常见的发生于中枢神经系统的神经退行性疾病，其特点是少突胶质细胞及脱髓鞘的损伤。在多发性硬化症患者的病理样本中能够检测到RIP1、RIP3和MLKL的活化。细胞程序性坏死参与了TNF-α诱导的少突胶质细胞死亡，RIP1抑制剂能够在MS动物模型中阻止少突胶质细胞的死亡。阿尔茨海默病又被称为老年性痴呆，阿尔茨海默病患者的小胶质细胞中RIP1呈现高表达，抑制RIP1能够减轻疾病的病理程度并减少记忆障碍。肌萎缩侧索硬化是一种运动神经元退行性疾病，RIP3的缺陷、RIP1激酶活性丧失或RIP1抑制剂都能够抑制小鼠肌萎缩侧索硬化模型的发病进程。这些研究表明程序性坏死在急性或慢性的神经系统疾病中起着至关重要的作用，靶向程序性坏死有望为这些疾病的治疗提供新的策略。
+
+## (4) 细胞程序性坏死与心血管疾病
+
+细胞程序性坏死也参与调控心血管疾病的发病进程。敲除小鼠RIP3能够减少其心肌细胞对程序性坏死的响应，从而使小鼠对缺血再灌注引起的心肌损伤或阿霉素
+
+530
+
+第26章 受调控的细胞坏死
+
+---
+
+诱导的心力衰竭不敏感。然而值得注意的是，RIP3的激活所导致的心肌细胞毒性效应不依赖于MLKL，RIP3通过磷酸化钙调蛋白激酶Ⅱ（CaMKⅡ）激活钙调蛋白信号通路，并导致线粒体膜通透性改变和程序性坏死。necrostatin-1能有效降低心脏缺血再灌注导致的心肌损伤。动脉粥样硬化是最常见的动脉硬化疾病，缺乏载脂蛋白E（ApoE）或低密度脂蛋白受体（LDLR）的小鼠在高脂喂养条件下会发生动脉粥样硬化，RIP3的缺失能够缓解ApoE缺陷或LDLR缺陷导致的动脉粥样硬化。因此，细胞程序性坏死参与心血管系统多种疾病的发病过程，可能成为研制心血管疾病药物的潜在新靶点。
+
+## (5) 细胞程序性坏死与肝疾病
+
+多项研究表明细胞程序性坏死与多种炎症性肝疾病有关，但是与肝的缺血再灌注引起的损伤没有必然联系。RIP3的缺失或激酶活性受抑制在多种肝损伤模型中对肝能够起到保护作用，包括乙酰氨基酚（acetaminophen）诱导的肝损伤模型、伴刀豆球蛋白A（concanavalin A）诱导的肝炎模型、乙醇诱发的肝炎模型以及非酒精脂肪肝模型等。necrostatin-1能保护乙酰氨基酚引发的肝损伤。然而也有报道指出RIP3敲除和MLKL敲除并不能有效保护乙酰氨基酚诱导的肝损伤。因此，程序性坏死在肝疾病中的作用有待进一步阐明。
+
+## (6) 细胞程序性坏死与肾疾病
+
+RIP1、RIP3和MLKL的蛋白表达水平及磷酸化水平在多种肾疾病的小鼠模型中呈现升高趋势，包括缺血再灌注导致的急性肾损伤（acute kidney injury，AKI）、尿路结石以及单侧肾切除手术导致的慢性肾疾病等。在上述这些疾病模型中，necrostatin-1已被证实对肾损伤起到保护作用。而且，RIP3敲除和MLKL敲除小鼠相较于野生型小鼠对草酸结晶诱导和顺氯氨铂诱导的AKI敏感性较低，主要表现在肌苷酸水平降低、肾小管损伤的减少以及中性粒细胞浸润的降低。同样地，RIP3敲除也能保护缺血再灌注引起的急性肾损伤。因此，程序性坏死参与了多种肾损伤疾病的病理过程，对其深入研究有望为疾病的治疗提供新手段。
+
+## (7) 细胞程序性坏死与肿瘤
+
+细胞程序性坏死通常是在凋亡被抑制的情况下发生的主要细胞死亡方式，并会引起炎症反应。肿瘤细胞死亡的失调以及炎症的发生在肿瘤发生发展中起重要作用，因此研究细胞程序性坏死在肿瘤发病中的作用对于肿瘤的治疗有着重要的指导意义。
+
+细胞程序性坏死关键调控因子的表达在肿瘤细胞中呈现下调。RIP3在大部分肿瘤细胞中不表达，主要是由于肿瘤细胞中基因组甲基化水平的改变导致Rip3启动子发生甲基化。应用去甲基化药物能够在多种细胞系中诱导RIP3的表达，说明DNA甲基化在沉默RIP3的表达上起着重要作用。在原发大肠癌组织中，RIP3表达水平显著低于其在正常大肠黏膜组织中的表达。在急性髓系白血病以及乳腺癌患者中，癌组织中RIP3表达也下调。此外，在宫颈鳞癌患者中，MLKL的表达与肿瘤组织学分级以及淋巴结转移存在一种负相关的关系，低表达MLKL的患者往往预后较差。类似地，在胰腺癌和可切除的原发性卵巢癌中，MLKL表达的减少与患者总生存率和无病生存率的降低呈现相关性。因此，MLKL的表达在一些类型的癌症中存在普遍下调，然而其下调的机制并不清楚。逃避细胞程序性坏死的发生可能是癌症细胞应对环境刺激的一个自然的反应:为了使肿瘤细胞在体内环境中存活和增殖，自然选择那些低表达RIP3和MLKL的肿瘤细胞存活下来。
+
+细胞程序性坏死在抑制肿瘤发生发展中发挥作用。研究发现RIP3能够促进急性髓细胞白血病祖细胞的坏死和分化，从而抑制急性髓细胞白血病的发生。此外，细胞程序性坏死能够增强淋巴细胞抗肿瘤免疫的能力。发生细胞程序性坏死的细胞能够提供抗原和炎症刺激给树突细胞，促进抗原呈递，激活CD8 $^{+}$ 毒性T细胞发挥抗肿瘤免疫应答作用。
+
+然而，细胞程序性坏死也具有促进肿瘤发生和转移的作用。细胞程序性坏死作为一种促炎症的细胞死亡形式，其诱发的炎症反应可能在肿瘤的发生发展中发挥作用。在肿瘤发生的过程中，肿瘤细胞和肿瘤微环境中浸润的免疫细胞及其所分泌的细胞因子、趋化因子、生长因子等共同创造了一个炎症的环境，这个炎症环境促进了肿瘤细胞的侵袭和转移。肿瘤微环境中TNF-α的上调是很多恶性肿瘤的特征，并与不良预后具有一定的相关性。炎症性肠炎作为一种慢性炎症，是结肠癌发生的高危因素之一，RIP1抑制剂necrostatin-1能够缓解小鼠结肠炎和降低肠炎相关的肿瘤发生。肿瘤转移是促进肿瘤致死率的首要原因，肿瘤细胞透过血管内皮细胞的外渗是促进肿瘤转移的重要过程。研究发现肿瘤细胞可通过激活死亡受体6（death receptor 6，DR6）来促进血管内皮细
+
+26.1 细胞程序性坏死
+
+531
+
+---
+
+胞的程序性坏死，从而促进肿瘤细胞的外渗和转移。用necrostatin-1治疗小鼠或在内皮细胞中特异性敲除RIP3或MLKL都能够抑制内皮细胞坏死、肿瘤细胞的外渗以及转移。因此，阻止内皮细胞程序性坏死可作为抗肿瘤转移的新疗法。此外，RIP1和RIP3在胰腺导管腺癌组织中高表达，RIP1-RIP3介导的程序性坏死能通过激活巨噬细胞诱导的对T细胞抗肿瘤免疫的抑制作用，从而促进胰腺导管腺癌的进展。
+
+综上所述，细胞程序性坏死在肿瘤的发生发展过程中扮演着多重角色。一方面，肿瘤细胞通过下调RIP3和MLKL的表达，逃脱程序性坏死应答；其次，肿瘤细胞通过引发血管内皮细胞的程序性坏死，促进肿瘤细胞的转移；程序性坏死还能够通过释放DAMPs促进炎症反应，加速肿瘤生长和转移。另一方面，程序性坏死途径参与一些肿瘤细胞的坏死（如急性髓细胞白血病祖细胞的坏死），抑制肿瘤生长；程序性坏死还能促进杀伤性T细胞的激活，增强抗肿瘤反应。因此，程序性坏死在肿瘤中的调控非常复杂，未来需要在更多类型的肿瘤中深入揭示细胞程序性坏死对肿瘤发生发展的作用，以便更精准的通过干预细胞程序性坏死来促进肿瘤疗法的进步。
+
+## 26.2 细胞焦亡
+
+## 26.2.1 细胞焦亡的发现
+
+细胞焦亡是一种受到基因调控的炎性细胞坏死，最早是在细菌感染的巨噬细胞中被发现，当细菌如炭疽致死毒素（anthrax lethal toxin，LT）或志贺氏菌（Shigella）感染巨噬细胞后，诱导细胞发生裂解，并释放促炎症因子。1998年，志贺氏菌诱导的巨噬细胞死亡被证实依赖于胱天蛋白酶-1（caspase-1），但不依赖于调控凋亡的caspase-3，而当时此细胞死亡方式被认为是细胞凋亡。caspase-1最初被称为白介素1β转换酶（interleukin-1β-converting enzyme，ICE），能切割白介素1β前体（pro-interleukin-1β，pro-IL-1β）产生成熟的白介素1β（interleukin-1β，IL-1β），其也是caspase家族第一个被鉴定的成员。随后，沙门氏菌（Salmonella）感染的巨噬细胞也被证实发生caspase-1依赖性的细胞死亡。随着研究的深入，志贺氏菌以及沙门氏菌等病原体诱导的巨噬细胞死亡被认为不同于细胞凋亡，主要差异如下:① 细胞焦亡的形态学特征与坏死相似，不同于凋亡；② 细胞焦亡会导致促炎症因子的释放并诱发炎症反应，而凋亡属于非炎性的细胞死亡方式；③ 细胞焦亡依赖于caspase-1，但不依赖于参与凋亡的caspase。2001年，Cookson等提出用“pyroptosis”描述这种促炎症的程序性细胞死亡方式，“pyro”为古希腊文词根，意为火或发热。因此，细胞焦亡在传统上被认为是一种依赖于caspase-1的程序性细胞坏死方式，伴有促炎症因子白介素IL-1β和IL-18（interleukin-18）的释放，导致强烈的炎症反应。除了caspase-1，caspase-4/5（小鼠同源蛋白caspase-11）已被证实能够识别胞内脂多糖LPS而被激活，活化的caspase-4/5/11也诱导细胞焦亡的发生。在细胞焦亡中起调控作用的caspase-1、caspase-4/5和小鼠caspase-11被称为炎性caspase。2015年，gasdermin家族成员GSDMD（gasdermin D）蛋白被发现为caspase-1和caspase-4/5/11的共同底物蛋白，执行细胞焦亡。
+
+## 26.2.2 细胞焦亡的信号转导及调控机制
+
+细胞焦亡主要通过caspase-1或caspase-4/5/11活化GSDMD而发生。近期有研究表明，细胞焦亡也能被GSDMD以外的gasdermin家族成员介导发生。
+
+## (1) 炎症小体活化 caspase-1 介导的细胞焦亡途径
+
+模式识别受体是一类主要表达于免疫细胞的蛋白，能够感知外源性病原体相关分子模式或内源性危险信号即损伤相关分子模式，在机体免疫应答中发挥重要功能。2002年，瑞士Jürg Tschopp课题组提出一些模式识别受体在识别PAMPs或DAMPs后会组装炎症小体(inflammasome)，招募并激活caspase-1。目前已确定多种由不同模式识别受体组成的炎症小体能够活化caspase-1，这些模式识别受体主要来自NOD样受体（the NOD-like receptor, NLR）家族（如NLPR1、NLPR3和NAI）和PYHIN（pyrinandHIN domain containing protein）或称为AIM2类似受体（AIM2-like receptor, ALR）蛋白家族（如AIM2和IFI16）。每种炎症小体识别相应的外源性病原体或内源性危险信号，例如，NLRP1炎症小体可以识别检测炭疽致死毒素活性等；NLRP3炎症小体能识别包括细胞外ATP和胞内ROS等在内的多种病原体或危险信号；NAIP/NLRC4炎症小体主要识别细菌鞭毛蛋白及三型分泌系统组分；AIM2炎症小体主要识别细胞质
+
+532
+
+第 26 章 受调控的细胞坏死
+
+---
+
+![](../../raw/pages_0545-0560/images/page_545_image_0.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["外源性病原体相关分子模式"] --> B["损伤相关分子模式"]
+  B --> C["NLRP1b\nASC"]
+  B --> D["NLRP3\nASC"]
+  B --> E["NAIPs\nNLRC4\nASC"]
+  B --> F["AIM2\nASC"]
+  B --> G["IFI16\nASC"]
+  C --> H["CARD-P20 P10 procaspase-1"]
+  D --> H
+  E --> H
+  F --> H
+  G --> H
+  H --> I["P20 P10 caspase-1"]
+  I --> J["GSDMD\nGSDMD的N端结构域"]
+  J --> K["H2O"]
+  K --> L["GSDMD孔道"]
+  M["pro-IL-1β"] --> N["GSDMD的N端结构域"]
+  O["pro-IL-18"] --> P["GSDMD的N端结构域"]
+  Q["IL-1β"] --> R["GSDMD的N端结构域"]
+  S["IL-18"] --> T["GSDMD的N端结构域"]
+  U["H2O"] --> V["GSDMD孔道"]
+  W["细胞焦亡"] --> X["GSDMD孔道"]
+```
+</details>
+
+内的双链DNA；IFI16炎症小体主要识别细胞核内的病毒DNA。炎症小体是多蛋白复合体，一般含有模式识别受体、凋亡相关微粒蛋白（apoptosis-associated speck-like protein containing CARD, ASC）以及caspase-1。ASC是多种炎症小体的共同接头蛋白，含有PYRIN和CARD结构域，并通过PYRIN和CARD结构域分别与模式识别受体和caspase-1前体（procaspase-1）结合。炎症小体促使procaspase-1水解产生P20大亚基和P10小亚基，并形成P20/P10异二聚体，进而形成四聚体，成为有活性的caspase-1。活化的caspase-1分别切割白介素 $1\beta$ 前体蛋白和白介素18前体蛋白产生具有活性的IL- $1\beta$ 和IL-18。而且，炎症小体活化的caspase-1通过切割效应蛋白GSDMD介导细胞焦亡的发生。GSDMD含有N端和C端结构域，C端结构域对N端结构域存在自抑制作用。
+
+图26-7 caspase-1介导的细胞焦亡途径模式识别受体包括NOD样受体和PYHIN蛋白家族能够识别外源性病原体相关分子模式以及损伤相关分子模式，并募集凋亡相关微粒蛋白ASC以及pro-caspase-1组成炎症小体。Pro-caspase-1水解产生P20大亚基和P10小亚基，寡聚成为有活性的caspase-1。活化的caspase-1分别切割GSDMD、pro-IL-1β和pro-IL-18，成为具有活性的GSDMD的N端结构域以及成熟的IL-1β和IL-18。GSDMD的N端结构域直接与细胞膜结合，在细胞膜上形成孔道，导致细胞膜破裂，成熟的IL-1β和IL-18因此释放到细胞外激发炎症。
+
+活化的caspase-1或caspase-4/5切割GSDMD产生N端结构域。当解除了C端结构域的抑制作用，GSDMD的N端结构域发挥活性，直接与真核细胞膜上的磷酸化磷脂酰肌醇和原核细胞膜上的心磷脂（cardiolipin）结合，在细胞膜上形成孔道结构，导致细胞膜破裂，成熟的IL-1β和IL-18也因此释放到细胞外，诱导炎症反应（图26-7）。
+
+## (2) LPS 活化 caspase-4/5/11 介导的细胞焦亡途径
+
+LPS是革兰氏阴性菌细菌壁的主要成分，它与细胞膜上的Toll样受体TLR4结合，从而激活TLR4信号通路。在小鼠中注射高剂量LPS会引发内毒素休克，导致小鼠死亡。caspase-11缺陷小鼠表现出对高剂量LPS的抗性，而且LPS会诱导caspase-11的表达。2011年，caspase-11依赖的细胞焦亡被证实存在于多种革兰氏阴性菌感染的小鼠巨噬细胞中，而caspase-11的活化并不依赖于炎症小体。因此，caspase-11的活化被认为是通过非经典炎症小体通路介导的。2014年，caspase-11被发现为LPS的胞内受体，caspase-11能够识别细胞质内的LPS，并与LPS上的脂质A结合，进而发生寡聚化而被激活。人caspase-4和caspase-5是鼠caspase-11的同源蛋白。同样地，caspase-4和caspase-5也能直接识别胞内LPS，与之结合并被激活。活化的caspase-4/5/11与活化的capase-1相似，能够切割GSDMD产生N端结构域，通过活化的GSDMD介导细胞焦亡的发生。capase-1和caspase-4/5/11分别在经典炎症小体和非经典炎症小体信号通路介导的细胞焦亡中起关键作用。凋亡相关的caspase不能切割GSDMD，因此GSDMD是炎性caspase-1/4/5/11的特异性底物蛋白。然而与caspase-1不同的是，活化的caspase-4/5/11不能切割IL-1β和IL-18前体蛋白。在一些细胞中，活化的
+
+26.2 细胞焦亡
+
+533
+
+---
+
+![](../../raw/pages_0545-0560/images/page_546_image_0.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["革兰氏阴性菌"] --> B["GSDMD-寡聚体"]
+  B --> C["GSDMD孔道"]
+  C --> D["IL-1β"]
+  C --> E["IL-18"]
+  D --> F["caspase 1"]
+  E --> F
+  F --> G["NLRP3"]
+  G --> H["GSDMD"]
+  H --> I["GSDMD"]
+  I --> J["LPS"]
+  J --> K["CARD"]
+  K --> L["procaspase-4/5/11"]
+  L --> M["active-caspase-4/5/11"]
+  M --> N["ASC"]
+  N --> O["P20"]
+  O --> P["P10"]
+```
+</details>
+
+图26-8 caspase-4/5/11介导的细胞焦亡途径
+
+人源caspase-4/caspase-5或鼠源caspase-11的CARD结构域与胞内LPS结合，caspase-4/5/11发生寡聚化并被激活。活化的caspase-4/5/11能够切割GSDMD产生N端结构域，GSDMD的N端结构域进而在细胞膜上形成孔道，导致细胞膜破坏。在一些细胞中，活化的caspase-4/5/11通过激活NLRP3/ASC炎症小体途径而活化caspase-1，进而促进IL-1β和IL-18的成熟。
+
+caspase-4/5/11能通过激活NLRP3/ASC炎症小体途径活化caspase-1，进而促进IL-1β和IL-18的成熟(图26-8)。
+
+(3) GSDMD以外的Gasdermin家族成员介导的细胞焦亡途径
+
+GSDMD属于Gasdermin家族，该家族还包括GSDMA、GSDMB、GSDMC、DFNA5/GSDME和DFNB59。除了DFNB59，其他成员都含有N端和C端结构域。与GSDMD的N端结构域相似，GSDMA、GSDMB、GSDMC和DFNA5/GSDME的N端结构域都具有诱导细胞焦亡的功能。但GSDMD是唯一能被炎性caspase-1/4/5/11切割的Gasdermin家族成员。GSDME的N端和C端结构域之间存在caspase-3切割位点。在凋亡诱导剂的刺激下，活化的caspase-3能够切割GSDME，细胞会发生焦亡。与GSDMD相似，caspase-3切割产生的GSDME的N端结构域能够结合细胞膜上的磷脂，并在膜上形成孔道结构，导致细胞焦亡的发生(图26-9)。因此，细胞焦亡不仅能被炎性caspase活化的GSDMD所介导，还能通过GSDMD以外的Gasdermin家族成员诱导发生。
+
+GSDME在正常组织中广泛表达，但大部分癌细胞不表达GSDME，因为癌细胞中GSDME的启动子发生甲基化导致沉默。在表达GSDME的细胞中，引发DNA损伤的化疗药物能够激活caspase-3，诱导细胞发生焦亡。而在不表达GSDME的细胞中，同样的化疗药物激活caspase-3后诱导细胞发生凋亡。长期以来，caspase-3的活化是细胞凋亡的一个重要标志，而在表达GSDME的细胞中，活化的caspase-3可以通过激活GSDME诱导细胞发生焦亡。因此，细胞中GSDME的表达量是决定caspase-3活化的细胞发生凋亡还是焦亡的关键因素。比起癌细胞，化疗药物更容易诱导正常组织中的细胞发生细胞焦亡，因而GSDME介导的细胞焦亡被认为是化疗药物产生毒副作用的重要原因之一。
+
+值得一提的是，中国科学家邵峰课题组在细胞焦亡领域做出了一系列重要工作，包括发现caspase-4/5/11作为LPS的胞内受体以及GSDMD和GSDME等在细胞焦亡中的调控作用。
+
+## 26.2.3 细胞焦亡与疾病
+
+细胞焦亡与人类疾病的关系已经成为近年来细胞死亡领域的研究热点之一。研究表明细胞焦亡广泛参与感染性疾病、癌症、代谢疾病、心血管疾病和神经退行性疾病等疾病的发生、发展。
+
+## 26.2.3.1 细胞焦亡与感染相关疾病
+
+(1) 细胞焦亡与抗病原体感染
+
+炎症小体能够广泛地识别各种病原体相关分子模式，
+
+534
+
+第26章 受调控的细胞坏死
+
+---
+
+![](../../raw/pages_0545-0560/images/page_547_image_0.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["未知分子"] --> B["GSDMA"]
+  A --> C["GSDMB"]
+  A --> D["GSDMC"]
+  E["caspase-11/4/5"] --> F["GSDMD"]
+  E --> G["caspase-3"]
+  H["caspase-3"] --> I["GSDME (DFNA5)"]
+  J["Gasdermin的N端结构域"] --> K["细胞焦亡"]
+  B --> K
+  C --> K
+  D --> K
+  F --> K
+  G --> K
+  I --> K
+  K --> L["DFNB59"]
+```
+</details>
+
+图 26-9 Gasdermin 家族蛋白介导的细胞焦亡途径
+
+Gasdermin 家族蛋白GSDMA、GSDMB、GSDMC、GSDMD 和 DFNA5/GSDME 具有相似的 N 端结构域，可以在膜上形成孔道结构，导致细胞发生焦亡。它们的 C 端结构域对 N 端结构域具有自抑制作用，而 DFNB59 没有类似的 C 端结构域。GSDMD 存在 caspase-1/4/5/11 切割位点，GSDME 存在 caspase-3 切割位点。
+
+参与针对病毒、细菌和真菌等多种病原体的宿主防御反应。而且，caspase-4/5/11是革兰氏阴性细胞壁脂多糖LPS的胞内受体，能够直接结合LPS并诱发焦亡，在宿主对革兰氏阴性菌的应答中发挥作用。
+
+① 抗细菌感染 炎症小体介导的caspase-1活化导致细胞焦亡，并且分泌IL-1β和IL-18因子，帮助宿主抵御各种细菌病原体的入侵。NLRC4炎症小体能被沙门氏菌直接激活，导致炎性caspase-1活化和IL-1β分泌，并招募中性粒细胞迁移至感染位点吞噬细菌，从而有效地控制沙门氏菌感染。caspase-1敲除的小鼠体内的沙门氏菌明显增加，导致小鼠更易发生死亡。在缺乏IL-1β和IL-18的情况下，细胞焦亡也可以清除细菌感染。巨噬细胞发生细胞焦亡后将胞内的细菌如伤寒沙门氏菌释放出来，随后中性粒细胞吞噬并杀死入侵的细菌，此过程不依赖于IL-1β和IL-18。有研究指出，活细菌会“陷入”巨噬细胞焦亡产生的碎片之中，随后被中性粒细胞吞噬并清除。除了天然免疫细胞，炎症小体在小肠上皮细胞中也发挥重要功能。小肠上皮细胞在组织稳态调节、宿主防御、肠道免疫以及再生过程具有重要作用，是防御肠内病原菌的第一道防线。沙门氏菌主要通过激活小肠上皮细胞中的 caspase-4 蛋白导致小肠上皮细胞焦亡，死亡的细胞被清除，从而维持上皮层屏障的完整性。此外，gasdermin 家族蛋白的 N 端结构域能结合细菌膜上的磷脂，在细菌膜上直接打孔并破坏膜结构，从而杀死细菌。
+
+② 抗病毒与真菌感染 NLRP3炎症小体可以由多种病毒包括甲型流感病毒、西尼罗病毒和丙型肝炎病毒等所激活，在机体防御病毒感染中发挥重要功能。甲流病毒感染能够引起caspase-1的活化以及IL-1β的释放。与野生型小鼠相比，caspase-1敲除和NLRP3敲除小鼠更易感染甲型流感病毒，且在肺组织中IL-1β和IL-18分泌减少，肺功能减弱，病毒量增加。西尼罗河病毒是一种嗜神经病毒，是引发病毒性脑炎的重要病原体之一。NLRP3炎症小体成员(NLRP3、ASC或caspase-1)缺陷小鼠以及IL-1β信号通路缺陷小鼠都比野生型小鼠更易感染西尼罗河病毒，生存率降低。丙型肝炎病毒感染是导致肝病的主要病因之一，丙型肝炎病毒感染除了诱导caspase-3依赖的细胞凋亡，还激活NLRP3炎症小体和caspase-1介导的细胞焦亡。而且，慢性丙型肝炎患者的血清IL-1β水平高于正常人群。当HCV感染的肝细胞发生细胞焦亡时，非感染的健康细胞也会发生依赖
+
+26.2 细胞焦亡
+
+535
+
+---
+
+caspase-1的细胞焦亡。此外，AIM2炎症小体能被小鼠巨细胞病毒和牛痘病毒等DNA病毒激活。在巨细胞病毒感染的模型中，AIM2炎症小体缺陷导致病毒量升高，而且IL-18因子能够抑制病毒复制。因此，细胞焦亡及释放的促炎症因子也在抗病毒感染中起重要作用。
+
+caspase-1 和 caspase-11 也可在宿主防御真菌病原体感染中发挥作用。烟曲霉菌会激活人单核细胞中的 NLRP3 炎症小体、小鼠骨髓来源的树突细胞以及肺组织中的 AIM2 和 NLRP3 炎症小体，通过 caspase-1 产生保护性细胞因子 IL-1β 和 IL-18。caspase-1 和 caspase-11 双敲除小鼠更易被白色念珠菌和巴西副球孢子菌感染。然而，细胞焦亡在真菌感染中的确切生理和病理功能有待进一步研究。
+
+## (2) 细胞焦亡与败血症
+
+上述证据表明细胞焦亡和炎性因子的释放是重要的天然免疫反应，可以保护机体免受外界细菌等病原体的感染。但是，过度的细胞焦亡及其产生的免疫反应对机体有害，会诱发包括败血症在内的多种炎症反应和自身免疫性疾病。败血症是因致病细菌侵入血液循环系统所引发的急性全身性感染疾病，严重时可能导致感染性休克，甚至死亡。细菌侵入激活炎性caspase-1或caspase-11，并释放出GSDMD的N端活性片段。GSDMD的N端结构域具有双重作用，既能在感染宿主细胞的细菌膜上打孔进而杀死这些细菌，又能在宿主细胞膜上打孔诱发细胞焦亡。死亡的宿主细胞释放出细菌和炎症信号，激发机体的免疫应答。当机体的免疫应答过于强大时会造成机体损伤，体内产生大量的炎性细胞因子，如TNF-$\alpha$ 、IL-6和IL-1等，引起全身系统性炎症反应综合征，导致致命性的血管和器官损伤。在细菌内毒素LPS诱导的小鼠败血症模型中，敲除caspase-11或GSDMD能够缓解LPS导致的休克致死效应。抗菌肽LL-37可抑制LPS引起的巨噬细胞焦亡，还可以在小鼠盲肠结扎穿刺引发的败血症模型中阻止caspase-1活化和巨噬细胞焦亡，从而延长小鼠的存活时间。因此，细胞焦亡在革兰氏阴性菌诱导的败血症中起重要作用，阻断细胞焦亡有望为败血症的治疗提供新思路。
+
+## (3) 细胞焦亡与HIV感染
+
+艾滋病又称获得性免疫缺陷综合征 (acquired immune deficiency syndrome, AIDS)，是由人类免疫缺陷病毒感染所造成的免疫系统缺陷疾病。HIV病毒感染破坏患者体内的CD4 $^{+}$ T免疫细胞，导致其数量显著减少，并诱发各种感染及系统并发症。研究表明，HIV有效感染血液中的 $CD4^{+}$ T细胞后，可使初始 $CD4^{+}$ T细胞转变为活化的 $CD4^{+}$ T细胞，完成病毒RNA的反转录、整合及复制，促进宿主细胞死亡，释放新的病毒，此过程与细胞凋亡密切相关。但是艾滋病发展过程中 $CD4^{+}$ T细胞减少的数量远远超过HIV有效感染的细胞数。近期的研究发现，淋巴组织中由HIV-1感染而导致的 $CD4^{+}$ T细胞减少，主要是因细胞焦亡引发的损伤。在淋巴结中存在大量未有效感染HIV的静止 $CD4^{+}$ T细胞，病毒能够穿透这些细胞但不能完成全部的逆转录过程，而是形成部分HIV-dsDNA链。IFN诱导蛋白-16（interferon-inducible protein 16，IFI-16）或AIM2作为胞质内的DNA感受器识别外源dsDNA，随后激活下游的caspase-1蛋白，引起细胞焦亡。静止 $CD4^{+}$ T细胞通过“自杀”的方式对HIV病毒做出反应，抑制病毒在细胞内增殖。但另一方面， $CD4^{+}$ T细胞焦亡后，炎症内容物的释放使大量健康的 $CD4^{+}$ T细胞趋化至感染区域，导致更多的细胞被感染和死亡，造成 $CD4^{+}$ T细胞数量骤降，形成恶性循环。因此，抑制细胞焦亡可避免大量未被感染的 $CD4^{+}$ T细胞发生炎症和死亡，细胞焦亡抑制剂联合鸡尾酒疗法可能为AIDS临床治疗提供新的方向。
+
+## 26.2.3.2 细胞焦亡与肿瘤
+
+## (1) 结直肠癌
+
+在探索细胞焦亡与肿瘤的关系中，对NLRP3炎症小体在结直肠癌中的作用及调控机制的研究最为深入。研究证据表明，NLRP3、caspase-1及IL-18在肠炎及肠癌发生发展中发挥保护作用。在葡聚糖硫酸钠（dextran sulfate，DSS）诱导急性肠炎的模型中，NLRP3敲除小鼠和caspase-1敲除小鼠比野生型小鼠表现出更严重的病理特征，小鼠生存率降低，而且更易受细菌入侵，表明NLRP3和caspase-1参与了肠组织损伤后上皮层修复的过程。肠上皮细胞中NLRP3介导的IL-18分泌是肠上皮细胞增殖和组织再生所必需的，IL-18生成的减少可能损害了黏膜屏障，引起肠黏膜固有层免疫细胞的激活、炎性细胞因子的过度生成以及随后的组织损伤，增加了肠道炎症性疾病的易感性。此外，在肠炎逐步发展为结直肠癌的病理过程中，NLRP3对于抑制结肠炎相关癌变至关重要。相比于野生型小鼠，NLRP3敲除、caspase-1敲除或ASC敲除小鼠对结肠炎引发的癌变更易感，其机制与炎症小体调控的IL-1β/IL-18的分泌密切相关。然
+
+536
+
+第 26 章 受调控的细胞坏死
+
+---
+
+而，在不同于上述的肠癌模型中，NLRP3炎症小体被发现可能会促进结直肠癌的发生发展。在氧化偶氮甲烷（azoxymethane，AOM）/高胆固醇诱导小鼠结直肠癌的过程中，NLRP3敲除小鼠与野生型小鼠相比，其肠道肿瘤减少，生存率增加。这种相反的效果可能与NLRP3炎症小体激活不同的下游信号通路有关。在AOM/高胆固醇模型中，巨噬细胞中的胆固醇通过抑制AMPKα活性从而促进线粒体ROS产生，进而激活NLRP3炎症小体和IL-1β分泌，促进炎症和肿瘤发展。综上所述，炎症小体调控的IL-1β分泌，在不同结直肠癌的疾病模型中扮演着“抑癌”或“促癌”的角色。这可能与IL-1β分子本身的“双面性”有关:一方面诱发炎症反应，促进肿瘤的发生发展；另一方面又能激活机体的免疫效应机制从而抑制肿瘤的生长。此外，肠道上皮细胞中NLRP1炎症小体被发现在肠道肿瘤形成过程中发挥重要的抑制作用。
+
+随着NLRP3炎症小体在结直肠癌发生发展中的深入研究，以NLRP3炎症小体作为靶点的药物研发也成为热点，为结直肠癌的治疗带来新的机遇。肝X受体（liver X receptor, LXR）属于核受体超家族，是一种配体激活的转录因子，参与调节脂代谢、糖代谢以及免疫与炎症反应。最近研究发现，LXR及其激动剂介导的信号通路能够降低肿瘤细胞增殖、侵袭能力，从而抑制黑色素瘤和前列腺癌等多种恶性肿瘤的发生发展，可作为肿瘤治疗的新型潜在靶点。LXR激动剂T0901317能够诱导结肠癌细胞发生NLRP3-caspase-1依赖的细胞焦亡。LXR激动剂促进ATP释放，胞外的ATP与离子型通道受体P2X7R结合。作为NLPR3的激活剂，P2X7R促使NLRP3炎症小体组装及下游caspase-1活化，最终导致结肠癌细胞死亡。体内研究证实，LXR激动剂能通过激活NLRP3/caspase-1通路从而明显抑制肠道肿瘤生长。
+
+## (2) 皮肤癌和黑色素瘤
+
+皮肤是抵御外来微生物和非微生物（化学、机械）侵害的重要屏障之一。紫外线B（UVB）照射是皮肤物理损伤的主要因素之一，皮肤反复地、长时间暴露于UVB会引发皮肤炎症反应和损伤，甚至发展成皮肤癌。UVB照射引起的炎症反应会导致caspase-1、IL-1β和IL-18蛋白的表达水平明显升高。UVB照射能够诱导皮肤角质形成细胞中NLRP1和NLRP3炎症小体的活化，以及IL-1β和IL-18的分泌。在长期暴露于两种强致癌物砷和UVB后，皮肤会出现严重的表皮增生和DNA损伤，最终导致皮肤癌，此过程伴随着炎症小体的活化和IL-1β的增多。IL-1β抑制剂可以减少上述致癌物引起的炎症、DNA损伤和皮肤癌变的发生。与NLRP3敲除小鼠和caspase-1敲除小鼠的表型相似，ASC敲除小鼠表现出对皮肤癌发生、发展的保护作用。
+
+炎症与黑色素瘤之间存在着密切关系，炎症小体被发现在其中发挥重要作用。ATP依赖性离子通道P2X7和PANX1参与了黑色素生成和肿瘤发展。P2X7和PANX1离子通道的开放激活了NLRP3炎症小体，导致炎症因子IL-1β的释放。IL-1β的水平与黑色素瘤的转移潜能相关。绿茶中提取的表没食子儿茶素-3-没食子酸酯能够抑制炎症小体和IL-1β分泌，进而抑制黑色素瘤的生长。因此，炎症小体-caspase-1-IL-1β通路促进了黑色素瘤的发生和发展。
+
+## (3) 其他肿瘤
+
+全世界大约12%的人类癌症可能是由病毒导致的。EB病毒（Epstein-Barr virus，EBV）与多种人类恶性肿瘤相关。在EBV相关肿瘤组织中（如霍奇金淋巴瘤和鼻咽癌），NLRP3、AIM2和RIG-I炎症小体的表达上调。EBV病毒基因组DNA能够激活AIM2和RIG-I并诱导IL-1β的分泌。EBV还能降解NLRP3炎症小体，抑制IL-1β的产生，逃逸免疫监视。人乳头瘤病毒（human papilloma virus，HPV）是导致宫颈癌的主要病毒。HPV感染能够激活AIM2炎症小体以及IL-1β的分泌。HPV16病毒蛋白E6被发现可通过降解IL-1β而逃逸免疫应答。
+
+## 26.2.3.3 细胞焦亡与代谢综合征
+
+近几十年来，世界范围内肥胖症的发病率明显上升，肥胖及其相关的多器官（胰腺、脂肪、肝、心脏和肌肉组织）慢性代谢和炎症改变一起被称为“代谢综合征”。研究证据表明，炎症小体、IL-1β和IL-18分子与这些疾病相关。
+
+## (1) 炎症小体与糖尿病
+
+糖尿病是常见的以高血糖为主要特征的代谢性疾病。高脂肪饲料喂养的小鼠会发生肥胖、炎性反应，并产生胰岛素抵抗，而且NLRP3、caspase-1和IL-1β的表达水平均明显升高。炎症小体能够感受代谢应激信号的刺激而被活化，其介导的炎症反应在糖尿病的发生发展过程中发挥关键作用。
+
+炎症小体活化能增强糖尿病患者的胰岛素抵抗，使患者血糖和胰岛素水平均明显升高，引起高血糖症及
+
+26.2 细胞焦亡
+
+537
+
+---
+
+高胰岛素血症。在肥胖小鼠和人类的脂肪组织及肝中，NLRP3炎症小体和caspase-1活性明显升高；在肥胖症患者中，这些蛋白的表达水平与Ⅱ型糖尿病的严重程度呈正相关。脂肪组织中的棕榈酸酯与神经酰胺信号触发巨噬细胞中NLRP3炎症小体的激活。在肥胖小鼠的脂肪组织巨噬细胞中，NLRP3介导的caspase-1通路活化和IL-1β分泌会导致有害后果。IL-1β信号能促进胰岛素受体底物-1（IRS-1）的Ser位点磷酸化，从而抑制胰岛素信号转导。而且，IL-1β能够诱导脂肪组织炎症。与野生型小鼠相比，NLRP3敲除、ASC敲除和caspase-1敲除小鼠呈现体重和脂肪量的下降以及胰岛素抵抗的减少。此外，炎症小体在脂肪细胞中也发挥功能。caspase-1在脂肪细胞分化过程中上调，并通过自分泌IL-1β促进胰岛素抵抗。
+
+胰岛素抵抗和胰岛β细胞数量减少是Ⅱ型糖尿病的两个重要发病机制。当外周胰岛素抵抗引起的慢性高血糖症发生时，胰岛β细胞可以通过增加分泌胰岛素进行弥补。但随着时间的推移，局部炎症和高血糖将导致大量β细胞数量下降。研究表明，胰腺浸润巨噬细胞以及β细胞中分泌的IL-1β是导致长期暴露于高浓度葡萄糖环境下的β细胞死亡的关键诱因。临床试验证明IL-1β受体拮抗剂可明显改善β细胞功能，并提升对血糖浓度的控制。在Ⅱ型糖尿病发病过程中，NLRP3炎症小体可通过以下方式被激活:首先，高血糖通过增加β细胞中电子传递链活性而触发线粒体产生ROS，导致NLRP3活化；其次，Ⅱ型糖尿病的胰岛组织中沉积大量淀粉样多肽，其与糖尿病的严重程度密切相关。在胰腺巨噬细胞中，淀粉样多肽可特异性激活NLRP3炎症小体。总而言之，NLRP3介导的IL-1β分泌能诱导β细胞功能紊乱和死亡，促进趋化因子的表达，进而加重免疫细胞浸润。
+
+## (2) 炎症小体与动脉粥样硬化
+
+动脉粥样硬化是一种慢性、无菌炎症性疾病。炎症小体的活化并诱导细胞分泌的IL-1β在动脉粥样硬化中发挥重要作用。低密度脂蛋白的主要功能是把胆固醇运输到全身各处，通过细胞表面的低密度脂蛋白受体介导的内吞途径进入细胞，参与代谢。在一些因素（如吸烟、高血压）诱发下，低密度脂蛋白被氧化修饰成氧化型低密度脂蛋白，然后被巨噬细胞膜上的清道夫受体识别和吞噬，造成大量吞噬脂质的巨噬细胞（即泡沫细胞）和胆固醇结晶堆积在动脉粥样硬化斑块中。研究发现胆固醇结晶可以激活巨噬细胞中的NLRP3炎症小体，促进IL-1β等炎症因子释放，加重炎症反应。NLRP3、ASC或IL-1β敲除可以明显减少泡沫细胞数量，缓解小鼠动脉粥样硬化。
+
+## 26.2.3.4 细胞焦亡与神经系统疾病
+
+细胞焦亡与神经系统疾病密切相关，它参与神经系统中的急性和慢性无菌性炎症，在病毒性脑炎、中风、多发性硬化症和阿尔茨海默病等疾病中发挥重要作用。细胞焦亡及其相关分子可能参与感染性脑膜炎的发生发展。在肺炎链球菌脑膜炎中，NLRP3炎症小体活化后释放IL-1β和IL-18，加剧炎症反应和神经系统损伤。在急性无菌性神经系统损害（如中风和创伤性脑损伤）中，局部自身免疫激活会造成神经损伤。caspase-1敲除或IL-1α/IL-1β双敲除小鼠对中风具有一定的保护作用。外伤性脑损伤后，脑脊液中NLRP1、ASC和caspase-1水平显著升高，而且这些蛋白表达较高的患者预后较差。多发性硬化症属于一种慢性、无菌炎症性神经系统疾病。抑制NLRP3表达和IL-1β和IL-18的分泌可以控制T细胞活化及其向中枢神经系统迁移，缓解多发性硬化症。β-淀粉样蛋白是大脑皮质老年斑的主要成分，是导致阿尔茨海默病的元凶。巨噬细胞中的NLRP3炎症小体能被纤维状β-淀粉样蛋白所激活，促使IL-1β的释放，形成炎性环境，促进阿尔茨海默病的病情发展。阻断炎症小体活性可能成为治疗这些神经系统疾病的一个重要策略。
+
+细胞焦亡作为一种新的受基因调控的细胞死亡方式正逐步被人们认识，但其分子机制以及在各种疾病发生发展过程中的作用仍有待进一步探索。对细胞焦亡在疾病中作用的深入研究将有助于揭示相关疾病的发生机制，为疾病的防治提供新的科学依据。
+
+538
+
+第26章 受调控的细胞坏死
+
+---
+
+## □ 小结
+
+细胞死亡在多细胞生物的机体发育和维持内环境稳定中发挥至关重要的作用。与细胞凋亡不同，细胞坏死的形态学特征表现为细胞及细胞器溶胀和细胞膜破裂。长期以来，细胞凋亡被认为是唯一的程序性细胞死亡方式，而细胞坏死被认为是不受信号调控的被动细胞死亡方式。在过去的十几年，细胞死亡领域取得的研究进展已经改变人们对细胞坏死的传统认识。细胞程序性坏死和细胞焦亡都属于新型的程序性细胞死亡方式，是最近几年细胞死亡领域的研究热点。细胞凋亡是机体发育过程中最主要的程序性细胞死亡方式，而细胞坏死主要发生于病理过程中，而非发育过程中。为了区别发育过程和病理过程中的受到调控的细胞死亡方式，近期科学家们提出将细胞程序性坏死和细胞焦亡等受信号调控的细胞坏死类型统称为受调控的细胞坏死。
+
+细胞程序性坏死是一种不依赖于caspase的细胞坏死方式，易发生于caspase活性缺陷或受抑制的细胞中。程序性坏死可以由死亡受体、Toll样受体、干扰素受体信号通路的活化以及病原体感染而诱导发生。细胞程序性坏死主要受到蛋白激酶RIP1、RIP3和MLKL的严格调控。在Toll样受体、干扰素受体以及病毒感染介导的坏死中，RIP3可以在RIP1缺陷的细胞中被活化进而诱导细胞坏死的发生。因此，RIP3被认为是细胞程序性坏死的核心调控蛋白，它通过与含有RHIM的蛋白如RIP1、TRIF和DAI结合被激活，接收来自不同途径的坏死信号。活化的RIP3通过磷酸化下游效应蛋白MLKL将信号传递给MLKL。MLKL发生寡聚化并转运到细胞膜上介导细胞坏死的发生。目前有研究表明MLKL可以通过影响离子通道导致细胞坏死，也有数据支持MLKL直接与细胞膜上的脂质结合，可能形成孔道结构导致细胞膜破裂。因此，MLKL在细胞膜上如何导致膜裂解有待进一步阐明。
+
+细胞程序性坏死已被认为是凋亡以外另一种重要的细胞死亡方式，尤其是在凋亡缺陷或受抑制的情况下作为最主要的细胞死亡方式发生。研究已经证实细胞程序性坏死在抗病毒感染中发挥重要的生物学功能，包括抵抗小鼠巨细胞病毒、人单纯疱疹病毒和流感病毒A等。细胞程序性坏死会导致细胞内容物的释放，引发周围组织的炎症反应，过度的细胞坏死已被发现参与许多重要疾病的病理过程，与疾病的发生发展密切相关。研究人员通过利用RIP1特异性抑制剂necrostain-1、RIP3缺陷型小鼠和MLKL缺陷型小鼠等已经证实了细胞程序性坏死在炎症疾病包括结肠炎和胰腺炎等、缺血性心脑血管疾病、神经退行性疾病包括肌萎缩侧索硬化和多发性硬化等、肝损伤性疾病、肾损伤性疾病和肿瘤等疾病中的作用。目前靶向RIP1的抑制剂已用于临床试验治疗结肠炎等疾病。
+
+细胞焦亡是一种主要依赖于炎性caspase的细胞坏死方式，因而在早期曾被误认为是细胞凋亡。细胞焦亡不仅可以通过炎症小体感知病原体感染和内源性危险信号进而活化caspase-1诱导发生，也可以由细菌脂多糖LPS直接激活caspase-4/5/11介导。活化的caspase-1或caspase-4/5/11切割底物GSDMD，产生GSDMD的N端结构域，其能够直接在细胞膜上打孔，导致细胞焦亡。GSDMD属于Gasdermin家族成员，虽然这些成员中只有GSDMD能被炎性caspase切割，但几乎所有其他成员的N端结构域都具有诱导细胞焦亡的功能。GSDME能被参与凋亡的caspase-3切割活化，进而启动细胞焦亡。因此，目前细胞焦亡被认为是一种由Gasdermin家族蛋白介导的细胞坏死。然而，其他Gasdermin家族蛋白调控细胞焦亡的机制有待揭示。
+
+细胞焦亡是天然免疫应答的重要组成部分，在机体防御病原体感染和抵抗内源性危险信
+
+小结
+
+539
+
+---
+
+号中发挥重要作用。caspase-1的活化不仅能够激活GSDMD介导的细胞焦亡，而且能够促进IL-1β与IL-18的成熟和释放，进一步激发炎症反应，促进机体的免疫应答。GSDMD的N端结构域不仅能在宿主细胞膜上打孔触发焦亡，也能在感染宿主的病原体如细菌膜上打孔，杀死细菌。caspase-4/5/11不能切割IL-1β前体与IL-18前体，但可以通过NALR3炎症小体激活caspase-1进而促进IL-1β与IL-18的成熟。由于NLRP3炎症小体主要表达于巨噬细胞、单核细胞和中性粒细胞等免疫细胞，因而细胞焦亡引起的促炎因子IL-1β与IL-18的释放主要在免疫细胞中发挥功能。虽然细胞焦亡及其释放的促炎症因子具有重要的抗感染功能，但过度的感染和免疫应答又会使机体受到损伤，引发炎症性疾病和自身免疫性疾病。LPS-caspase-11-GSDMD介导的细胞焦亡参与革兰氏阴性菌诱导的败血症。而且，炎症小体-caspase-1介导的细胞焦亡与HIV感染引发的CD4 $^{+}$ T淋巴细胞死亡密切相关。因此，靶向细胞焦亡可为败血症和艾滋病的治疗提供新思路。此外，越来越多的证据表明细胞焦亡参与癌症、代谢疾病、心血管疾病和神经退行性疾病等的病理过程，在疾病的发生发展中发挥重要作用。
+
+细胞程序性坏死和细胞焦亡是目前研究最多的细胞坏死方式，虽然两者的发生机制不同，但都参与炎症、感染性疾病、心血管疾病、神经退行性疾病和癌症等疾病的病理过程。深入研究它们的分子机制以及在不同疾病中所起的调控作用，将有助于更好地理解这些疾病的发生机制。在此基础上，开发精确的体内检测手段和特异性抑制剂，用于精准检测和干预细胞程序性坏死和细胞焦亡，有望为相关疾病的治疗提供新策略。
+
+此外，受调控的坏死还包括:铁死亡，主要由铁依赖性脂质过氧化损伤引起；parthanatos，主要指PARP-1[poly（ADP-ribose）（PAR）polymerase 1]激活介导的途径；NETosis，主要指由烟酰胺腺嘌呤二核苷酸磷酸（NADPH）氧化酶介导的途径；亲环素D-介导的坏死途径等。然而，目前对这些受调控的细胞坏死的分子机制和生物学功能还了解甚少。因此，对更多受调控的细胞坏死的深入研究将会帮助人们全面认识细胞坏死的重要功能，为相关疾病的诊断和治疗提供新的方向和有效靶点。
+
+## □ 思考题
+
+1. “细胞死亡有多少种形式”是 Science 公布的 125 个科学前沿问题之一，为什么细胞需要多种死亡方式？
+2. 如何区分细胞程序性坏死与细胞焦亡?
+3. 细胞坏死与哪些疾病密切相关？例如神经退行性疾病中出现神经细胞坏死，为了有利于疾病的治疗，该对细胞坏死途径采取怎样的干预措施？
+4. 越来越多的受调控的细胞坏死形式被发现，这些细胞坏死对机体有何积极意义？
+5. 细胞坏死领域的研究还有哪些亟待解决的重要科学问题？
+
+(何苏丹 苏州系统医学研究所)
+
+540
+
+第26章 受调控的细胞坏死
+
+---
+
+□ 参考文献
+
+1 Chan K M, Shisler J, Bixby J G, et al. A role for tumor necrosis factor receptor-2 and receptor-interacting protein in programmed necrosis and antiviral responses. J Biol Chem, 2003, 278: 51613–51621.
+2 Chen I Y, Ichinohe T. Response of host inflammasomes to viral infection. Trends Microbiol, 2015, 23: 55–63.
+3 Cho Y, Challa S, Moquin D, et al. Phosphorylation-driven assembly of the RIP1-RIP3 complex regulates programmed necrosis and virus-induced inflammation. Cell, 2009, 137: 1112-1123.
+4 Cookson B T, Brennan M A. Pro-inflammatory programmed cell death. Trends Microbiol, 2001, 9:113–114.
+5 Degterev A, Hitomi J, Germscheid M, et al. Identification of RIP1 kinase as a specific cellular target of necrostatins. Nat Chem Biol, 2008, 4:313–321.
+6 Degterev A, Huang Z H, Boyce M, et al. Chemical inhibitor of nonapoptotic cell death with therapeutic potential for ischemic brain injury. Nat Chem Biol, 2005, 1: 112–119.
+7 Dillon C P, Weinlich R, Rodriguez D A, et al. RIPK1 blocks early postnatal lethality mediated by caspase-8 and RIPK3. Cell, 2014, 157: 1189–1202.
+8 Ding J, Wang K, Liu W, et al. Pore-forming activity and structural autoinhibition of the gasdermin family. Nature, 2016, 535: 111–116.
+9 Doitsh G, Galloway N L, Geng X, et al. Cell death by pyroptosis drives CD4 T $^{-}$ cell depletion in HIV-1 infection. Nature, 2014, 505: 509–514.
+10 Dondelinger Y, Declercq W, Montessuit S, et al. MLKL compromises plasma membrane integrity by binding to phosphatidylinositol phosphates. Cell Rep, 2014, 7: 971–981.
+11 Duewell P, Kono H, Rayner KJ, et al. NLRP3 inflammasomes are required for atherogenesis and activated by cholesterol crystals. Nature, 2010, 464: 1357–1361.
+12 Galluzzi L, Kepp O, Chan F K, et al. Necroptosis: mechanisms and relevance to disease. Annu Rev Pathol, 2017, 12: 103–130.
+13 He S D, Liang Y Q, Shao F, et al. Toll-like receptors activate programmed necrosis in macrophages through a receptor-interacting kinase-3-mediated pathway. Proc Natl Acad Sci U S A, 2011, 108: 20054–20059.
+14 He S D, Wang L, Miao L, et al. Receptor interacting protein kinase-3 determines cellular necrotic response to TNF-$\alpha$. Cell, 2009, 137: 1100–1111.
+15 He W T, Wan H, Hu L, et al. Gasdermin D is an executor of pyroptosis and required for interleukin-1β secretion. Cell Res, 2015, 25:1285–1298.
+16 Hilbi H, Moss J E, Hersh, D, et al. Shigella-induced apoptosis is dependent on caspase-1 which binds to IpaB. J Biol
+Chem, 1998, 273: 32895–32900.
+17 Hockendorf U, Yabal M, Herold T, et al. RIPK3 restricts myeloid leukemogenesis by promoting cell death and differentiation of leukemia initiating cells. Cancer Cell, 2016, 30: 75–91.
+18 Holler N, Zaru R, Micheau O, et al. Fas triggers an alternative, caspase-8-independent cell death pathway using the kinase RIP as effector molecule. Nat Immunol, 2000, 1: 489–495.
+19 Huang Z, Wu S Q, Liang Y J, et al. RIP1/RIP3 binding to HSV-1 ICP6 initiates necroptosis to restrict virus propagation in mice. Cell Host Microbe, 2015, 17: 229–242.
+20 Ito Y, Ofengeim D, Najafov A, et al. RIPK1 mediates axonal degeneration by promoting inflammation and necroptosis in ALS. Science, 2016, 353: 603–608.
+21 Kaiser W J, Sridharan H, Huang C Z, et al. Toll-like receptor 3-mediated necrosis via TRIF, RIP3, and MLKL. J Biol Chem, 2013, 288: 31268–31279.
+22 Kayagaki N, Stowe I B, Lee B L, et al. Caspase-11 cleaves gasdermin D for non-canonical inflammasome signalling. Nature, 2015, 526: 666–671.
+23 Kayagaki N, Warming S, Lamkanfi M, et al. Non-canonical inflammasome activation targets caspase-11. Nature, 2011, 479:117-U146.
+24 Kerr J F R, Wyllie A H, Currie A R. Apoptosis – basic biological phenomenon with wide-ranging implications in tissue kinetics. Br J Cancer, 1972, 26: 239–257.
+25 Kerr J F R. Shrinkage necrosis-distinct mode of cellular death. J Patho, 1971, l105: 13–20.
+26 Kgatle M M, Spearman C W, Kalla A A, et al. DNA oncogenic virus-induced oxidative stress, genomic damage, and aberrant epigenetic alterations. Oxid Med Cell Longev, 2017: 3179421.
+27 Laster S M, Wood J G, Gooding L R. Tumor necrosis factor can induce both apoptic and necrotic forms of cell-lysis. J Immunol, 1988, 141: 2629–2634.
+28 Lin C, Zhang J. Inflammasomes in inflammation-induced cancer. Front Immunol, 2017, 8: 271.
+29 Liu X, Zhang Z, Ruan J, et al. Inflammasome-activated gasdermin D causes pyroptosis by forming membrane pores. Nature, 2016, 535: 153–158.
+30 Mamik M K, Power C. Inflammasomes in neurological diseases: emerging pathogenic and therapeutic concepts. Brain, 2017, 140: 2273–2285.
+31 Man S M, Karki R; Kanneganti T D. Molecular mechanisms and functions of pyroptosis, inflammatory caspases and inflammasomes in infectious diseases. Immunol Rev, 2017, 277: 61–75.
+32 Masters S L, Dunne A, Subramanian S L, et al. Activation of the NLRP3 inflammasome by islet amyloid polypeptide provides a mechanism for enhanced IL-1β in type 2 diabetes. Nat
+Immuno, 2010, l11: 897–904.
+33 Mulay S R, Linkermann A, Anders H J. Necroinflammation in kidney disease. Journal of the American Society of Nephrology, 2016, 27: 27–39.
+34 Najafov A, Chen H, Yuan J. Necroptosis and cancer. Trends Cancer, 2017, 3: 294–301.
+35 Ofengeim D, Ito Y, Najafov A, et al. Activation of necroptosis in multiple sclerosis. Cell Rep, 2015, 10: 1836–1849.
+36 Shi J, Zhao Y, Wang K, et al. Cleavage of GSDMD by inflammatory caspases determines pyroptotic cell death. Nature, 2015, 526: 660–665.
+37 Shi J, Zhao Y, Wang Y, et al. Inflammatory caspases are innate immune receptors for intracellular LPS. Nature, 2014, 514:187–192.
+38 Strilic B, Yang L, Albarran-Juarez J, et al. Tumour-cell-induced endothelial cell necroptosis via death receptor 6 promotes metastasis. Nature, 2016, 536: 215-218.
+39 Sun L M, Wang H Y, Wang Z G, et al. Mixed lineage kinase domain-like protein mediates necrosis signaling downstream of RIP3 kinase. Cell, 2012, 148: 213–227.
+40 Thapa R J, Nogusa S, Chen P R, et al. Interferon-induced RIP1/RIP3-mediated necrosis requires PKR and is licensed by FADD and caspases. Proc Natl Acad Sci U S A, 2013, 110: e3109-e3118.
+41 Vandanmagsar B, Youm Y H, Ravussin A, et al. The NLRP3 inflammasome instigates obesity-induced inflammation and insulin resistance. Nat Med, 2011, 17: 179–188.
+42 Vanden Berghe T, Linkermann A, Jouan-Lanhouet S, et al. Regulated necrosis: the expanding network of non-apoptotic cell death pathways. Nat Rev Mol Cell Bio, 2014, 15: 134–146
+43 Wang H Y, Sun L M, Su L J, et al. Mixed lineage kinase domain-like protein MLKL causes necrotic membrane disruption upon phosphorylation by RIP3. Mol Cell, 2014, 54: 133–146.
+44 Wang X, Li Y, Liu S, et al. Direct activation of RIP3/MLKL-dependent necrosis by herpes simplex virus 1 (HSV-1) protein ICP6 triggers host antiviral defense. Proc Natl Acad Sci U S A, 2014, 111:15438-15443.
+45 Wang Y, Gao W, Shi X, et al. Chemotherapy drugs induce pyroptosis through caspase-3 cleavage of a Gasdermin. Nature, 2017, 547(7661):99.
+46 Weinlich R, Oberst A, Beere H M, et al. Necroptosis in development, inflammation and disease. Nat Rev Mol Cell Biol, 2017, 18:127–136.
+47 Zhang D, Shao J, Lin J, et al. RIP3, an energy metabolism regulator that switches TNF-induced cell death from apoptosis to necrosis. Science, 2009, 325: 332–336.
+48 Zhang T, Zhang Y, Cui M, et al. CaMK II is a RIP3 substrate mediating ischemia- and oxidative stress-induced
+
+参考文献
+
+541
+
+---
+
+myocardial necroptosis. Nat Med, 2016, 22: 175–182.
+
+49 Zhao J, Jitkaew S, Cai Z Y, et al. Mixed lineage kinase domain-like is a key
+
+receptor interacting protein 3 downstream component of TNF-induced necrosis. Proc Natl Acad Sci U S A, 2012, 109: 5322–5327.
+
+50 Zhou W, Yuan J. Necroptosis in health and diseases. Semi Cell Dev Biol, 2014, 35:14–23.
+
+542
+
+第26章 受调控的细胞坏死

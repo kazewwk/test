@@ -1,0 +1,449 @@
+真核细胞与原核细胞在结构上的重要差别之一，在于前者含有核膜（nuclear envelope）结构，并通过核膜将细胞质物质和细胞核物质分别界定在相对独立的环境中。核膜作为核质和胞质的界膜，不仅参与稳定细胞核结构，同时，在调控细胞功能方面也发挥着极其重要的作用。核膜主要通过调节核膜内外物质运输，实现对细胞功能的调控。
+
+核膜结构和核质与胞质之间的物质运输是高度有序的。在物种进化过程中，核膜结构和核膜内外物质运输调控作用虽然表现出一定差异，但从总体上看，这种高度有序性在物种之间高度保守。核膜在细胞周期中呈现规律性的动态变化，在高等生物细胞分裂开始时核膜崩解，在分裂完成后又在子细胞核周围重建，这种分裂方式称为开放式有丝分裂(open mitosis)。在细胞分裂间期，核膜也呈现一定的动态变化，包括核膜生长、核膜成分的变化等，以适应核膜的功能。在酵母等低等真核生物中，细胞分裂时，核膜并不出现崩解与重建等变化，而是一直保持其完整性。细胞遗传物质的分离在核膜包裹的环境中进行，分裂末期核膜拉长、开裂，围绕着子细胞染色质重新封闭融合形成核膜，这种分裂方式称为闭合式有丝分裂(close mitosis)。尽管如此，核膜也要呈现一定的动态变化，包括核膜生长、核膜成分的变化。随着科学研究的不断深入，核膜相关疾病也逐步得到科学家的认识。目前已经发现有至少数十种遗传性疾病与核膜蛋白或核纤层蛋白基因的突变有关。
+
+本章将对核膜结构和功能的研究进展及核膜相关性疾病的新认识进行简要讨论。
+
+## 7.1 核膜的基本结构和成分
+
+## 7.1.1 核膜的基本结构
+
+核膜主要由外核膜(outer nuclear membrane, ONM)、内核膜(inner nuclear membrane, INM)和两者融合处形成的核孔复合体(nuclear pore complex, NPC)所构成，广义的核膜还包括位于内核膜下方的核纤层(nuclear lamina, NL)(图7-1)。外核膜面向细胞质，与粗面内质网相连，在外核膜上也存在核糖体，外核膜的组成成分与粗面内质网相似。内核膜面向核质，与位于核膜内侧的核纤层或染色质相连。外核膜和内核膜具备典型的单位膜结构。
+
+在外核膜和内核膜之间存在着宽 $20\sim 40\mathrm{nm}$ 的间隙，称为核周隙(perinuclear space, PNS)，其中含有一些无形成分，核周隙与粗面内质网池相通。外核膜与内核膜上镶嵌不同的蛋白质。外核膜的蛋白质成分与粗面内质网相似，而内核膜有其独特的蛋白质成分，含蛋白质多达70种。主要包括Lamin B受体(Lamin B receptor, LBR)、LAP1(lamina associated polypeptide 1)、LAP2(lamina associated polypeptide 2)、Nurim、MAN1、Emerin、Otefin等。这些内核膜蛋白可以与核纤层蛋白结合，也可以直接结合染色质或DNA，从而调控染色质的组装、DNA复制以及基因的转录等。在内外核膜上，镶嵌有许多核孔复合体。核孔复合体所在区域的核膜区，常被称为孔膜区(pore membrane domain, PM)。在这个区域，内核膜和外核膜相互融合，形成核孔(nuclear pore)。这种类似花篮的通道是细胞质与细胞核之间物质运输和信息传递的重要通道，但只允许一定分子大小的物质通过，因此是选择性通道。孔膜区与内核膜一样拥有自己独特的蛋白质组成，孔膜区主要含有构成核孔复合体的整合蛋白。定位于内核膜的蛋白必须通过孔膜区内转，并通过与核质中其他蛋白的相互作用，定位在内核膜上。
+
+![](images/page_145_image_0.jpg)
+
+<details>
+<summary>text_image</summary>
+
+细胞质骨架
+外核膜
+内核膜
+Nurim Otefin MAN1
+核孔复合体
+LAP2β LBR
+HP1
+EMerin
+LAP1
+中间通道
+BAF
+SUN1/2
+染色质
+</details>
+
+图7-1 核膜和核孔复合体结构模式图
+
+位于内核膜下方的核纤层则是由中间纤维蛋白组成的网格样结构，主要由A型核纤层蛋白和B型核纤层蛋白构成。核纤层在维持细胞核膜形态结构的稳定性方面起着重要作用。核纤层通过核纤层蛋白与多种内核膜蛋白结合从而紧密附着在内核膜，其中包括LAP1、LAP2和LBR等。
+
+## 7.1.2 核孔复合体及其结构
+
+核孔复合体定位于由内外核膜融合形成的孔膜区，是由30余种高拷贝数的蛋白质组成的庞大蛋白复合体，高等真核生物的核孔复合体的分子量为 $1.13\times10^{5}\sim1.35\times10^{5}$ ，其结构高度有序。核孔复合体呈八辐射对称。然而，相对于核膜构成的平面而言，它则不具备对称性。成熟的核孔复合体位于外核膜一侧的环状结构称为胞质环(cytoplasmic ring)，向胞质中伸出纤维蛋白丝，对于物质转运具有重要作用；而位于内核膜一侧的环状结构则称为核质环(nucleoplasmic ring)，向核质中伸出纤维丝构成篮状结构。核孔复合体的中间区域则成为物质运输的通道。电镜下可以观察到在核孔中间通道中存在中央栓(central plug)结构，目前关于中央栓结构是否只是正在转运的货物或是核孔复合体的固有组分还存在争议。蛋白组学研究表明，不同物种之间的核膜上核孔复合体的密度有较大差异，但核孔复合体中很多蛋白质以及核孔复合体的基本结构在不同物种间是高度保守的。
+
+## 7.1.3 核纤层
+
+在高等动物细胞中，内核膜通过内核膜整合蛋白与核纤层紧密相连。核纤层由属于V型中间纤维蛋白的核纤层蛋白(lamin)家族成员所组成，呈现一种纵横交错的网状结构。中间纤维最早是在哺乳动物细胞中发现的直径为10 nm的纤维，因其直径介于肌粗丝和细丝之间，故被命名为中间纤维(intermediate filament)，又称为中间丝。中间纤维被认为是细胞骨架及核骨架结构，为细胞提供应对机械力和压力的能力，从而使细胞发挥亚细胞和组织特异性等正常的生物学功能，并促进细胞内通信。中间纤维蛋白目前分为6类，分别是核纤层蛋白、角蛋白(keratin)、波形蛋白(vimentin)、结蛋白(desmin，即肌间线蛋白)、神经丝(neurofilament)和胶质细胞原纤维酸性蛋白(glial fibrillary acidic protein)。
+
+所有后生动物都具有核纤层结构，但不同物种间可能会存在一些差异。绝大多数低等的后生动物的核纤层仅由单一的核纤层蛋白多肽构成；而脊椎动物则有7种核纤层蛋白，它们分属于A、B两个家族。通过电镜观察发现，由核纤层蛋白组成的核纤层是一种纤维网状结构，并与核孔复合体相互作用。研究表明，核孔复合体在核膜上的定位很大程度上取决于核纤层，因为核纤层的缺失会引起核孔复合体在核膜上的异常聚集。核纤层不仅在维持细胞核的形态结构、抵抗外界压力、为核膜和染色质提供结构支架方面起着重要作用，而且由于其与内核膜整合蛋白相互结合，因此对于内核膜蛋白的正确定位也是不可缺少的。此外，核纤层能与DNA复制中心和mRNA的剪切机器相互作用，提示其在基因表达调控中可能具有重要意义。
+
+## 7.2 核膜的蛋白质成分
+
+## 7.2.1 外核膜蛋白
+
+细胞核在细胞内不是孤立存在的，有研究表明细胞核可与中心体、高尔基体等细胞器以及微丝骨架紧密联系，共同调控细胞的生命活动。外核膜通常被看作是粗面内质网的一部分，电镜观察也显示外核膜上常常分布有核糖体。因此推论，外核膜上的蛋白质绝大多数与粗面内质网上的相同。但后来的研究证明，在外核膜上存在一组不同于粗面内质网上蛋白质的特定蛋白，这些蛋白是血影重复蛋白（spectrin repeat protein，SRP）中的成员。这些SRP是大的Ⅱ型膜整合蛋白，它们的C端都具有KASH结构域，该结构域最初是在果蝇的外核膜蛋白Klarsicht中被确定的。这些SRP都含有一个跨膜区，该跨膜区对于这类蛋白定位到核膜上起着重要作用。Nesprins和果蝇的Msp300蛋白是该组特定蛋白中的成员，其结构中都含有一个Spectrin重复杆状域。ANC1也是外核膜的一种蛋白成分，但其杆状域中不存在Spectrin重复序列。位于内核膜的SUN结构域蛋白含有SUN结构域，SUN结构域蛋白在内核膜上形成三聚体，在两个相邻的SUN结构域之间形成KASH结构域的结合区域，使得KASH结构域的C端与SUN结构域在核周隙中结合，从而使KASH结构域蛋白定位于外核膜。这种KASH-SUN蛋白之间的相互作用在内外核膜之间建立了一种稳定的结构上的联系。由KASH结构域蛋白和SUN结构域蛋白构成的内外核膜之间的联系又被称为LINC复合体（linker of the nucleoskeleton and cytoskeleton, LINC）。作为核骨架的核纤层通过LINC复合体与细胞骨架成分相联系，LINC复合体也在传导机械力的过程中起到关键性作用。当KASH蛋白被招募到外核膜后，它们的胞质结构域就开始发挥介导细胞核与细胞骨架相互作用的功能。线虫中的UNC-83、果蝇中的Klarsicht以及哺乳动物的Nesprin-4都可以招募马达蛋白dynein和（或）kinesin 1到细胞核表面。此外，KASH蛋白还可以将细胞核与微丝网络联系起来，如哺乳动物中的Nesprin-1/-2。
+
+## 7.2.2 核孔蛋白
+
+核孔复合体与核膜和核纤层紧密相连，为核孔复合体的人工分离造成困难。因此，不同的制备方法得到的核孔复合体，其蛋白质种类和含量有所不同。但各种研究综合证明，几乎每种核孔蛋白（nucleoporin）的拷贝数都是8或8的倍数，可能参与构成核孔复合体的八辐射对称结构。绝大多数核孔蛋白在核孔复合体胞质侧和核质侧都有分布。也有少数核孔蛋白仅分布于一侧。核孔蛋白通常分为跨膜蛋白、支架蛋白和屏障蛋白。
+
+核孔复合体中的跨膜蛋白可以将核孔复合体锚定在核膜上，在酵母中，POM152p、Ndc1p和POM34p就是发挥这种功能的跨膜蛋白。POM152p属于Ⅱ型孔膜蛋白，与脊椎动物中的POM210相似，其庞大的C端也暴露在核膜间隙中。POM152p可能通过在核孔周边形成环状结构，与其他核孔蛋白相互作用，将核孔复合体稳定在核孔上，或在新的核孔复合体形成过程中发挥作用。在高等动物细胞中，POM121和Gp210是位于孔膜区的跨膜蛋白，在锚定和稳定核孔复合体结构中起到至关重要的作用。POM121包含一个跨膜域，其C端较长，伸展到核孔的中心，该区段含有FG重复区域。与POM121不同，Gp210的C端较短，其分子量约 $2\times10^{5}$ 的N端能被糖基化修饰，这个部分延伸到核膜间隙中。POM121与Gp210可能形成一种功能上的亚复合体，在有丝分裂后期新的核孔复合体形成过程中发挥作用。
+
+核孔复合体的支架蛋白则构成了核孔复合体的基本框架，通过连接孔膜区的跨膜蛋白与富含FG序列的屏障蛋白，从而稳定核孔复合体结构。Nup93亚复合体与Nup107亚复合体目前被认为是组成核孔复合体支架结构的基本组分。某些核孔蛋白富含苯丙氨酸和甘氨酸，形成FxFG或FG重复区域。这些含有FG重复区域的蛋白在胞质、核质以及中间通道中都有分布，往往能够与核质转运复合体结合，在核膜内外物质选择性通过核孔的过程中发挥作用。
+
+## 7.2.3 内核膜蛋白
+
+内核膜蛋白有70种之多，能够与染色质或核纤层蛋白相互作用。LBR、LAP1和LAP2是最早被发现的定位于内核膜上的整合蛋白。它们都能与Lamin B直接结合。随着研究的进展，更多的内核膜蛋白被发现。其中包括Emerin、MAN1、Nurim、SUN1、SUN2、Unc83和RFBP等。此外，研究者在果蝇的内核膜上还发现了一种被称为Otefin的外在膜蛋白。
+
+在这些内核膜蛋白中，LAP2、Emerin、MAN1和Otefin因都含有LEM结构域而被归为一类；而SUN1和SUN2含有SUN结构域而被归为另一类。近来也有研究发现，有一些含有KASH结构域的蛋白也可能定位在内核膜上。
+
+LBR是最早被研究的内核膜蛋白。LBR是一个C端具有8次跨膜结构域的整合蛋白。其N端的第1～208位氨基酸能够与Lamin B和DNA结合；其N端伸展到核质中，通过与染色质、核纤层蛋白以及异染色质蛋白HP1α、HP1γ的作用，将LBR锚定在内核膜的特定位置。有研究者认为，LBR与HP1的结合可能不是一种直接的作用，而是通过H3、H4介导的间接结合，这种结合受到乙酰化调控。此外，LBR还能与其他蛋白成分形成蛋白复合体，其中包括LBR激酶、LBR结合蛋白p34/p32和p18。LBR激酶能磷酸化LBR N端精氨酸丝氨酸重复序列中的丝氨酸，也能磷酸化SR蛋白家族的剪切因子。有研究表明LBR与importin β结合促进核膜的装配，同时LBR的磷酸化参与调控该过程。LBR的庞大跨膜部分与固醇还原酶具有很高的同源性。体外实验表明，LBR具有部分固醇还原酶的活性，但在细胞内是否具有这种酶活性仍无定论。最近报道在细胞中转染LBR的突变体或固醇还原酶TM7SF2和DHCR7可以导致相似的表型，这提示了LBR在体内极有可能具有固醇还原酶的活性。LBR在个体发育过程中也可能扮演着重要角色。LBR的缺失或含量减少都会导致非常罕见的颗粒性白血病（Pelger-Huet anomaly, PHA），其特征表现为骨骼发育异常，在细胞水平上则表现为粒细胞的细胞核形态异常。近年来还有研究表明Lamin A/C和LBR共同调控核膜外周异染色质的装配。
+
+LAP (lamina-associated polypeptide) 最早是由于其与核纤层碎片的结合被发现的。LAP1 可以与 Lamin 直接结合，与染色体间接结合，并且还可与 Emerin 以及磷酸酶 PP1 相互作用，在维持细胞周期中核膜结构完整性中发挥重要作用。此外，LAP1 在神经元中可以与 Torsin A 结合，参与 Torsin A ATP 酶的调控。在不同物种中 LAP1 有 A、B 和 C 3 种亚型，这三种形式源自同一个基因 TOR1AIP1 的不同剪切方式。其中 LAP1A 和 LAP1B 仅存在于分化细胞中。三种亚型的 LAP1 都能通过其 N 端与 Lamin A 和 Lamin B 结合。在人中只有 LAP1B 和 LAP1C，其中 LAP1C 的 N 端较短。LAP1 蛋白仅含有一个跨膜区域，其 C 端非常保守，伸展到核膜间隙中。最近的研究发现，LAP1C 能与 Lamin B 及一种未知的蛋白激酶构成复合体。还有研究表明人的 LAP1B 有潜在的磷酸化修饰位点，并且有些位点可以被 PP1 去磷酸化。
+
+LAP中的LAP2家族最具特征性，因为LAP2、Emerin和MAN1都拥有LEM结构域。三者共同组成LEM结构域家族。LEM结构域是一个约由40个氨基酸组成的比较保守的结构域，通过折叠形成两个α螺旋。大多数LEM结构域蛋白都是内核膜蛋白的整合成分，含有1次或2次跨膜结构域，在哺乳动物中鉴定出编码LEM结构域蛋白的基因有7种，除上述3种外还包括LEM2/NET25、LEMD1、Ankle1和Ankle2。目前发现所有的LEM结构域蛋白都可与核纤层蛋白结合，也可以直接与染色体结合蛋白BAF结合，通过这种结合，不仅能使染色质与内核膜相互作用，而且还可能对染色质的凝集起调控作用。哺乳动物中LAP2家族有6个成员，是不同选择性剪切的产物，分别是LAP2α、LAP2β、LAP2γ、LAP2ε、LAP2δ和LAP2ζ。LAP2蛋白主要与B型核纤层蛋白结合，且在整个发育过程中都有表达，对于细胞存活是必需的。LAP2家族6个成员的N端第1～187位氨基酸完全相同，其中用于与BAF结合的LEM结构域位于第111～152位氨基酸，此外还有1个更靠近N端的用于直接结合DNA的LEM-like结构域。除了LAP2α与LAP2ζ，其他4个成员在C端均含有一个跨膜区域。
+
+LAP2α与其他5个LAP2家族的成员不同，拥有一个特异性的C端长链，因此LAP2α定位在核质而不是核膜上，并通过它特异的C端在核质中与A型Lamin结合。LAP2α在细胞的 $G_{1}/S$ 期转换时与Lamin A/C共同调控
+
+Rb的磷酸化，并且对于Rb在核内的正常定位是必需的。低磷酸化的Rb在细胞核内的锚定是通过其pocket C与LAP2α-Lamin A/C复合体的相互作用实现的，LAP2α突变体或缺失会引起Rb定位异常。LAP2α在许多肿瘤细胞及癌症来源的细胞系中均高表达。此外，LAP2α与许多端粒相关蛋白有结合，包括TRF1、WRN及受到PARPs修饰的多聚ADP核糖基化的蛋白，因此LAP2α可能参与了DNA损伤修复过程。LAP2β是LAP2成员中最大的蛋白，能与PKA锚定蛋白HA95结合，这种结合对于染色质的去凝集以及DNA复制起始起到关键作用。LAP2β及其结合蛋白在数量上的平衡也很重要，直接关系到核膜重建、生长、DNA复制和转录能否顺利进行。LAP2β可以单独抑制或与其结合蛋白GCL（germ-cell-less）共同调控转录抑制。LAP2β可与HDAC3在核外周相互作用并介导H4的去乙酰化。LAP2β的功能在很大程度上受到磷酸化的调控，在细胞分裂中期，LAP2β被磷酸化，并从核纤层和染色质上释放出来。LAP2β在消化道癌（胃、肝、胰腺、胆管）及淋巴癌中高表达。
+
+Emerin的N端含有一个LEM结构域，C端含有一个1次跨膜结构域。Emerin通过LEM结构域与DNA结合，并通过其中部区域与Lamin A相结合。Emerin由定位于X染色体的EMD基因编码。Emerin的缺失将导致一种先天性疾病，即X染色体连锁的退行性肌肉萎缩性Emery Dreifuss综合征(X-linked Emery-Dreifuss muscular dystrophy, X-EDMD)。EDMD主要影响心肌、骨骼肌和肌腱3种组织。有研究表明，Lamin A的缺失会使Emerin无法正确定位到内核膜上，导致常染色体遗传的肌肉萎缩性Emery Dreifuss综合征。BAF蛋白的缺失也会影响Emerin的正常定位。Emerin对于细胞存活和正常的发育不是不可或缺的，Emerin的缺失不影响HeLa细胞的存活，而在线虫的胚胎期Emerin和MAN1蛋白的缺失对胚胎则是致死的，可能是因为Emerin与MAN1有一定的功能上的互补作用。Emerin通过限制在Wnt信号通路中发挥转录共激活子功能的β-cantenin在核内的累积从而调节其活性，Emerin也可以与转录因子Lmo7结合并抑制其转录活性。Emerin还可以与HDAC3直接结合并激活HDAC3的去乙酰化酶活性。Emerin的定位较为特殊，除了定位于内核膜上，还可以存在于内质网和外核膜中甚至是细胞膜上。在外核膜上的Emerin会与β-微管蛋白结合，并调控细胞核与中心体的距离，进而调控细胞核在核内的运动。Emerin还可与核内的肌动蛋白结合，调控染色质组装及肌动蛋白的动态变化等，而Lamin A/C和Emerin可以通过肌动蛋白的动态变化调控MKL1-SRF蛋白的转录活性，这是EDMD领域病因学研究的重大突破。
+
+MAN1也被称为LEMD3，可通过其N端与BAF和DNA构成的复合体结合。其C端包含2个跨膜段，可能与核纤层蛋白结合。MAN1蛋白与BAF的相互作用受磷酸化调控，并且这种调控发生在细胞分裂期，是细胞周期依赖的。对MAN1的研究报道，MAN1可以与Smads蛋白相互结合，从而调节TGF-β信号通路。同时，MAN1通过调节Nodal信号通路来调控胚胎发育中的LR（left-right）不对称性。MAN1的缺失会引起果蝇发育、生殖能力和运动力的下降，而人中MAN1的缺失或突变会导致Buschke-Ollendorff综合征等疾病。
+
+SUN1和SUN2蛋白C端的跨膜段SUN结构域与果蝇的UNC84蛋白和酵母的Sad1p蛋白有着极高的相似性。Sad1p定位在内核膜上，且能与纺锤体极体结合。UNC84能通过其C端的SUN结构域将UNC83募集到核膜上。在果蝇发育过程中，这两种蛋白对核的正确迁移非常重要。除了作为LINC复合体的中心组分发挥重要的信号转导功能外，SUN1最近被发现可以直接与NXF1相互作用，介导哺乳动物mRNA的出核转运，后续研究发现这一功能的发挥可能依赖于SUN1被PKC的磷酸化。
+
+## 7.2.4 核纤层蛋白
+
+已经确定的核纤层蛋白主要包括两类，即A型核纤层蛋白和B型核纤层蛋白。A型核纤层蛋白包括Lamin A、Lamin C、Lamin C2及Lamin AΔ10，由LMNA基因编码；B型核纤层蛋白包括LMNB 1基因编码的Lamin B1, LMNB 2基因编码Lamin B2和Lamin B3。A型核纤层蛋白和B型核纤层蛋白在细胞中存在的时期有所不同。前者只在分化的细胞类型表达，且在胚胎干细胞中低表达；而后者则在发育的任何时期都有表达。Lamin A和Lamin C在大多数已分化的细胞中是主要的LMNA基因产物，Lamin C2则在睾丸中特异性表达。Lamin AΔ10是一种缺失LMNA10号外显子编码的残基的选择性剪切产物，丰度较低，在肿瘤细胞株以及一些正常的体细胞中存在，但整体的表达情况还不确定。Lamin B1和
+
+Lamin B2 均广泛存在于体细胞中，而 Lamin B3 只在一些精母细胞中表达。
+
+两种核纤层蛋白在结构上有很多共同点。它们都具有一个N端球状头部和C端的球状尾部，中央部分则是由4个被连接区域L1、L12、L2分隔开的卷曲螺旋结构域1A、1B、2A和2B组成的 $\alpha$ 螺旋杆状结构。核纤层蛋白属于V型中间纤维蛋白，与其他中间纤维蛋白不同，在其杆状结构域内有一段额外的42个氨基酸残基。在尾部结构域中还有一段核定位信号，使其能定位于细胞核。
+
+除Lamin C外的所有Lamin在C端均有一个CaaX基序。这个基序通过翻译后修饰，被法尼基化和甲基化。Lamin在翻译后，会在法尼基转移酶作用下在第661位半胱氨酸的侧链上连接一个含有15个碳原子的长脂肪链，接着是CaaX基序的C端最后3个氨基酸aaX被内切蛋白酶切除，其中FACE2针对B型Lamin，而金属蛋白酶ZMPSTE24则切除Lamin A。接下来是在异戊烯半胱氨酸羧甲基转移酶ICMT的作用下发生C端半胱氨酸的甲基化，C端半胱氨酸残基的异戊二烯化及甲基化对于Lamin A和B型Lamin在内核膜上的定位是必需的。与B型Lamin不同的是，Lamin A的成熟过程需要进行第二次剪切。前体Lamin A（pre-Lamin A）在C端半胱氨酸上游15个氨基酸处含有额外的内切蛋白酶位点，这个位点在内核膜上被ZMPSTE24切开，第二次切除的最后15个氨基酸当中包括新加上的异戊二烯基团。这样，Lamin A就从pre-Lamin A被加工为缺少最后18个氨基酸的成熟Lamin A。B型核纤层蛋白则没有此过程，形成含有一个法尼基化的长脂肪链的核纤层蛋白，因而具有持久的膜结合能力。在有丝分裂期，一旦核纤层解聚后，Lamin A就无法与核膜保持联系，在细胞中是可溶性的，而B型核纤层蛋白则会与膜泡结合。
+
+核纤层蛋白在内核膜下形成稳定的核纤层网状结构，为核膜提供一个稳定的支架。核纤层也为染色质和内核膜蛋白提供了结合位点。这种相互作用对于维持核的结构以及正常的功能至关重要。但是关于核纤层的结构是如何组织的尚不清楚，主要是由于核纤层处于复杂的环境造成观察的困难，核纤层不仅包括Lamin，还包括Lamin结合蛋白、丰富的核质面的异染色质以及哺乳动物体细胞细胞质中的中间纤维组分。最新的研究利用冷冻电镜三维重构的技术，已经可以观察到单根Lamin纤维。还有人利用缺失所有A型和B型Lamin的小鼠细胞研究各种Lamin在核纤层聚集中的作用，发现在每种Lamin表达量足够高时，单一成分的Lamin可以形成均一的核纤层，并可以使核孔复合体分布均匀，暗示了它们之间功能的重叠性。但关于Lamin A、Lamin C、Lamin B1及Lamin B2如何聚集成核纤层网络依然不清楚，揭示体细胞中的核纤层蛋白如何在体内进行组织是未来研究的重点之一。
+
+## 7.2.5 与内核膜及核纤层结合的蛋白
+
+BAF是一种能与LEM结构域相结合的蛋白，并且能以非序列特异的方式与DNA结合，还可与组蛋白、核纤层蛋白结合。和DNA结合后，BAF与LAP2、Emerin及MAN1的LEM结构域的亲和力会大大增强。它与LEM结构域的结合能调节染色质凝集状态并将异染色质锚定到核膜上。如果缺失了Emerin、MAN1等内核膜蛋白，将会使得BAF不能与内核膜相联系，从而改变染色质的空间组织结构，使细胞核形态异常，并会导致有丝分裂异常。BAF在细胞周期进程中受到VRK激酶家族的磷酸化，调控其与DNA及LEM结构域蛋白的结合，这对于正常的有丝分裂进程是必需的。最新的研究发现，BAF通过在有丝分裂期的染色体整体形成高密度的染色质网络，从而保证所有染色体都包裹在一个完整的细胞核中，从而维持基因组的稳定性。
+
+HP1是参与基因表达沉默调控的蛋白，能特异地与Lamin B受体的N端相结合。在人体细胞中有3种HP1，即HP1α、HP1β和HP1γ，三者均包括一个CD结构域(chromo domain)、一个CSD结构域(chromo shadow domain)以及铰链区(hinge region)。CD结构域能介导HP1与H3K9me2/3的结合，该结合是一种高度动态的过程。CSD结构域能介导HP1之间的结合以及HP1与转录激活因子TIF1α和TIF1β的结合。HP1与LBR的结合也是在CSD结构域的介导下实现的。然而，近年来的实验结果显示，HP1与LBR的结合可能不是直接的，很有可能是通过H3/H4异二聚体介导形成多聚体。而铰链区则可以使HP1蛋白与核酸相互作用。近年来的研究表明，HP1不仅能与异染色质结合，也有一些HP1的亚型能与常染色质结合。如果H3的甲基化程度过高，或染色质处于高度凝集状态，HP1与染色质的相互作用也会被削弱。最新的研究证实，HP1和BAF是从细胞核膜传递力学信号到染色质的关键蛋白，分别单独敲除这两个蛋白，力学信号就不能传递到染色质，相关基因也无法表达。
+
+HA95拥有核定位信号和两个锌指结构，能与染色质或染色体非常紧密地结合。HA95还能与LBR和LAP2β相结合，可能在DNA复制起始中发挥作用。通过与染色质和内核膜蛋白的结合，HA95能使核膜与染色质发生联系。从功能上看，HA95并不能与核纤层发生直接结合。但是，在有丝分裂过程中，HA95对核膜与染色质的分离、染色质凝集以及核膜的崩解都有着重要作用。
+
+## 7.3 跨核膜物质运输
+
+核膜包裹着遗传物质，为染色质提供了一个相对封闭和独立的空间。同时，核膜也为细胞核提供了一定的支撑力度，决定了细胞核在细胞内的位置。外核膜（ONM）与粗面内质网相连，其上镶嵌有大量的核糖体并富含内质网蛋白，可能参与一部分蛋白质翻译过程，内核膜（INM）面向核质，其上连接有大量功能性蛋白质，包括70余种镶嵌蛋白和非跨膜的结合蛋白。这些种类繁多、含量丰富的蛋白在细胞核内外的物质转运、基因转录调控和信号转导等方面发挥着重要功能。
+
+真核细胞的正常生命活动需要核质和胞质之间的物质转运。核质和胞质之间的物质转运是高度不对称的，尽管许多转运因子本身能在核质和胞质之间来回穿梭，但是入核和出核机制截然不同。这种转运的不对称性在某种程度上也来自核孔复合体周边结构的不对称性，即胞质纤维和核质纤维及核篮组成蛋白的差异。现在普遍认为，Ran-GTP酶（Ras-like nuclear GTPase）在决定转运不对称性中起着主导作用。Ran在核质中以Ran-GTP形式存在，而在胞质中则以Ran-GDP形式存在。正是这种Ran-GTP/Ran-GDP浓度梯度的不对称性决定了物质转运的方向性（图7-2）。
+
+含有核定位信号的蛋白质要转运进入细胞核，首先需要与转运因子importin α结合，importin α再与另一个转运因子importin β构成异二聚体，而importin β又能与核孔蛋白结合。正是通过importin β与核孔蛋白的结合，使得转运货物(cargo)、importin α和importin β组成的复合体能够通过核孔复合体。而在核质面，高浓度的Ran-GTP与importin β结合，会导致importin α和被转运物质的释放，从而实现入核转运。含有核输出信号的蛋白从核内向核外转运时，需要与外运蛋白CRM1/exportin和Ran-GTP结合成三聚体。三聚体通过核孔复合体由核内向外转运到细胞质后，Ran-GTP在Ran-GAP和RanBP1的作用下转化为Ran-GDP，三聚体解离，核输出信号蛋白被释放出来。CRM1的功能可被一种药物Leptomycin B（LMB）所抑制。
+
+![](images/page_150_image_7.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+This diagram illustrates the cellular signaling pathways and regulatory interactions between Ras-GDP, NLS, Importin, CAS, and various proteins (NES, CRM1, RAN-GDP, etc.) in response to Ras-GTP.
+</details>
+
+图7-2 Ran-GTP酶循环及其调控的核膜内、外物质转运
+
+importin α 和 Ran-GTP 能在一种外运因子 CAS 的协助下返回细胞质。在细胞质中，Ran-GTP 在 Ran-GAP 和 RanBP1 的作用下水解，形成 Ran-GDP，Ran-GTP-CAS-importin α 三聚体解离；Ran-GDP 通过结合 NTF2，再转运入细胞核；在核内 RCC1 的作用下，Ran-GDP 又转化为 Ran-GTP。在核膜内外物质转运过程中，核孔蛋白，尤其是含有 FG（Phe-Gly）或 FxFG 结构序列的核孔蛋白（又称为 FG-Nup），始终起着不可或缺的重要作用。这些核孔蛋白可以在核孔复合体上为 importin/exportin 提供附着位点，调控核定位信号/核输出信号运载分子的转运，同时也限制了通过自由扩散进出核孔复合体的蛋白大小，一般分子量大于 $6 \times 10^{4}$ 的蛋白便无法自由扩散进入细胞核内。
+
+多种观察结果显示，在核孔复合体中有一个桶状的中央栓，被认为起物质转运子作用。但人们对该转运子是否真实存在一直有争议。有研究者认为，这个结构不过是在样品制备过程中观察到的一些物质的聚集，并非一个真实存在的结构。但是，也有不少研究者利用各种实验手段，不仅在核孔复合体中观察到了这种中央结构，而且还发现这种结构有两种构象形式，即内径仅为9 nm的关闭构象和内径为21 nm的开放构象。然而，直径达39 nm的颗粒也能通过核孔复合体。因此，在核孔复合体中必定还存在着能调控孔径大小的其他机制。2001年，Ribbeck等人提出了选择相模型(selective phase model)，用来解释核内外物质转运。这个模型认为，在核孔复合体的中间通道并不存在一个固定的结构，而是充满了包含FG重复区的核孔蛋白，构成网状结构。整个网状结构是疏水的和非固定的，因此这些蛋白之间通过相互作用，形成比较松散的网络，从而构成相对较大的中间通道，使得较小的蛋白质分子能够自由扩散。对于一些更大的分子来说，如果它们含有能与FG重复区结合的疏水区域，就能进入到这个网状结构中，得到转运。然而，这个模型并不能解释在一些电镜观察中看到的在核孔复合体中存在的中央栓结构，同时也不能对主动运输作出很好的解释。
+
+核孔复合体位于胞质面的纤维丝在核物质转运中也发挥着不可替代的作用。入核转运复合体运输时首先接触到的是核孔复合体胞质纤维，而出核转运复合体在通过核孔复合体后，也会接触到该胞质纤维。在脊椎动物中，胞质纤维的重要成分之一是Nup358。Nup358是一个多功能蛋白，包含FG重复区，能够与转运复合体结合，同时Ran和Ran-GAP也能与之结合。Nup358既能结合Ran-GTP也能结合Ran-GDP。电镜观察显示，胞质纤维可能是动态变化的，而这种动态变化可能与物质转运过程有关。当标记了金颗粒的核质蛋白（nucleoplasmin）入核转运时，胞质纤维的纤维丝向核孔复合体的中间通道伸展，似乎在将转运物质送入其中。另有研究显示，如果向胞质中注射Ran-GTP，会引起胞质纤维发生与上述类似的反应；如果注射Ran-GDP，胞质纤维则会向胞质环的方向折叠。对这些动态变化的意义目前还缺乏很好的解释。
+
+对核孔复合体伸向核质的篮状结构的功能，目前还缺乏深入了解。已经知道，在篮状结构上存在2种核孔蛋白，即Nup153和Tpr。Nup153呈现动态变化，在核孔复合体中不断穿梭。而且，核孔复合体上的Nup153与核内的Nup153蛋白库之间存在着非常迅速的交换。Nup153在核内外物质运输中有着很明显的作用，尤其是在核定位信号入核转运途径中发挥着重要作用。研究表明，Nup153能够与核纤层蛋白结合。通过RNAi技术去除Nup153，核孔复合体则表现出高度动态性。表明Nup153可能也起到锚定核孔复合体的作用。Nup153还能与Tpr结合。Tpr与Nup153一样，在物质转运过程中发挥重要作用。
+
+## 7.4 核膜与基因转录调控和跨核膜信号转导
+
+核膜不仅参与间期细胞核形态维持，在细胞基因调控和信号转导等方面也扮演着重要的角色，在个体发育、细胞衰老以及肿瘤发生过程中都起着至关重要的作用。核膜主要通过两种方式参与调控基因转录:调控特定区域染色质高级结构和调控转录因子的定位与活性。核膜在这些细胞基因调控和信号转导等方面的功能，有可能由跨核膜物质运输参与调节，如在核孔复合体下方富含常染色质，基因转录活跃，也有可能是核膜结构成分本身直接参与了这方面的功能。
+
+## 7.4.1 调控染色质高级结构
+
+核膜对维持正常的染色质空间排布与细胞核的空间结构是至关重要的，而这种空间排布也影响到细胞基因表达的调控。在基因表达调控中，许多基因活化伴随着由细胞核外周向细胞核内部运动的过程。
+
+透射电镜结果显示，内核膜下方存在不连续的异染色质区域。线虫中的研究表明，异染色质的形成和定位可能和组蛋白甲基化密切相关。异染色质通常富含组蛋白H3第九位赖氨酸的甲基化(H3K9)，这有利于染色质与异染色质蛋白I（HP1）（heterochromatin protein）的结合，同时，HP1可以和核膜蛋白LBR结合，由此异染色质被募集到核膜下方(图7-1)。
+
+染色质上也存在能够特异结合核纤层的结构域(lamina associated domain, LAD)，帮助染色质定位于内核膜下方。LAD富含GAGA序列，可以结合转录抑制因子cKrox，从而沉默该区域的基因转录。同时，去乙酰化修饰对异染色的形成和核外周定位也非常重要，带有乙酰化修饰的组蛋白大多分布于转录活跃区域，cKrox可以和LAP2β以及去乙酰化酶HDAC3形成三元复合体，促进组蛋白H4去乙酰化和染色质的核外周定位。在果蝇中存在500余种可以与核纤层紧密结合的基因，因此核膜与染色质的广泛结合使其可能作为一个连续的平台参与基因转录调控。
+
+核外周区域并非只与基因沉默有关，许多转录活跃的基因会聚集于核孔复合体周围，使其能够持续转录。核孔复合体对基因转录的影响可分为依赖于核质转运和不依赖于核质转运的两种机制。核质转运具有组织特异性，在某些特定的细胞或细胞周期中，可以将一些特殊的转录因子转运到核内激活特异基因的转录，或控制mRNA的出核从而调控这些mRNA的翻译。核质转运的特异性可以通过控制转运受体的表达或核孔复合体本身的修饰来实现。如免疫应答因子Dorsal的入核依赖于核孔蛋白Nup88，突变Nup88可特异性阻止转录因子Dorsal入核，影响下游基因表达，导致免疫应答通路信号传递受阻。另外一些核孔蛋白如Nup153可直接与转录活跃的基因启动子区结合，显著增强基因转录。利用CHIP手段也检测到，更多的核孔蛋白如Tpr和Nup60p都倾向于结合在高转录活性的基因区。此外还有相当一部分核孔蛋白如Nup88、Nup98、Sec13和一系列FG核孔蛋白可以离开核孔复合体，游离在核之中并结合到特定基因调控区域，沉默或激活基因转录，扩展了核孔蛋白在转录调控中的作用方式。
+
+## 7.4.2 调控转录因子定位与活性
+
+核外周蛋白参与核内基因转录调控，具有组织和细胞周期特异性，对于细胞增殖、分化以及个体发育有重要影响。内核膜蛋白Emerin、Lap2β和MAN1以及核纤层蛋白Lamin A、Lamin B等都可以与多种转录因子直接结合，影响它们的细胞定位或修饰水平，从而调控其转录活性。Emerin可与Lmo7、GCL、β-cantenin、Btf和YT521-B等转录因子结合，其中Lmo7参与EMD基因的转录激活，增加Emerin转录水平，而在蛋白质水平它可以直接与Emerin结合导致自身转录活性下降，由此Lmo7与Emerin相互制衡形成负反馈机制，调控一系列肌肉发育相关的基因转录。Lamin A与转录因子c-Fos结合，使其定位在核纤层上，从而抑制AP1家族转录活性，造成特定基因转录受阻。Lamin A还能结合SREBP1、SKIP等多种转录因子或转录激活因子，协同调控Notch信号通路下游的基因转录。人MAN1蛋白C端结构域可与Smad2及Smad3结合并抑制两者的磷酸化激活，阻碍Smad2/3-Smad4异二聚体形成，从而影响TGF-β信号通路。
+
+除上述功能之外，核纤层作为细胞核骨架对于维持细胞核形态、抵抗外界压力至关重要。MEF细胞中敲除核纤层蛋白Lamin A会造成细胞核结构异常，对外界压力抵抗能力下降。细胞核骨架和细胞质骨架相互连接，将来自细胞质的机械力直接传送到细胞核中，也可以影响基因转录。起连接作用的LINC复合体(linker of the nucleoskeleton and cytoskeleton)包括一系列富含Sad1/UNC84(SUN)结构域的蛋白，这些蛋白定位在内核膜中，并与定位在外核膜上富含KASH结构域的蛋白相互作用，由此构成了横跨核膜的连接桥，传递核内外机械信号。
+
+## 7.5 核膜的动态变化
+
+核膜虽然很紧密，但在细胞周期的特定时期或发育的某些阶段，核膜也有显著的动态变化。当细胞生长或核膜出现局部损坏需要修复时，细胞需要不断合成新的核膜蛋白并将其整合入核膜。尤其是在真核细胞开放式有丝分裂过程中，核膜经历着剧烈的动态变化，包括在有丝分裂前核膜崩解以及在分裂末期核膜重建。另外，核膜也可以将某些巨大的蛋白复合体，如病毒颗粒或核糖核蛋白复合体（RNP complex），以泡状结构包装起来通过双层核膜。在细胞分化过程中，核膜组分也会发生变化。例如，核纤层蛋白Lamin A在干细胞中只有微量表达，一旦细胞开始分化，Lamin A就开始高表达。
+
+## 7.5.1 核膜崩解
+
+在多细胞真核生物中，细胞进入有丝分裂早前期的重要标志之一就是核膜的崩解。核膜崩解是一个受调控的过程。这个过程包括染色质凝集、核孔复合体解聚和核纤层解聚；核膜以及核膜蛋白与染色质分离并且一并分散到有丝分裂期的内质网中。整个核膜崩解过程是在CDK1激酶、蛋白激酶C等调节因子的调控下触发的。
+
+## (1) 核孔复合体解聚
+
+核孔复合体被认为是在有丝分裂初期最先解聚的结构，一般早于核纤层解聚几分钟。核孔复合体的解聚也是在有丝分裂期磷酸化的驱动下完成的。解聚的核孔蛋白仍然相互作用，以亚复合体的形式弥散在整个胞质当中。核孔蛋白Nup97和Nup200直接被CDK1激酶磷酸化，分别进入分子量为 $1\times10^{6}$ 和 $4.5\times10^{5}$ 的复合体中。其他被高度磷酸化的核孔蛋白包括Nup153、Nup214和Nup358。gp210在细胞分裂间期并不能被磷酸化。而在有丝分裂期，gp210的第1880位丝氨酸则会被磷酸化，这种磷酸化修饰有可能破坏gp210与未知蛋白之间的相互结合，从而使得核孔复合体不能继续定位在核膜上。然而核孔复合体解聚的机制还处在非常初步的研究中。据认为，核孔复合体解聚后，会在核膜上留下很多孔道。这些孔道使得被磷酸化了的内核膜蛋白能够自由地通过外核膜，扩散到内质网上。
+
+## (2) 核膜崩解
+
+核膜崩解的机制目前还不完全清楚。在非洲爪蟾卵提取物中，通过电镜等实验手段可以观察到有许多直径为80～300 nm的膜泡。在核膜重建时，这些膜泡结合在染色质表面，相互融合成为核膜。因此有研究者认为，这些膜泡是在有丝分裂时以一种类似于内质网产生转运小泡的机制形成的，核膜是以膜泡化的机制完成崩解的。在哺乳动物细胞中，LBR和Pom121、gp210、mNdc1都稳定存在于内核膜上。而在有丝分裂期，通过活细胞实时观察发现，这些蛋白则分散到有丝分裂内质网系统中。电镜观察结果显示，在有丝分裂期，内质网仍然是一个完整的结构。
+
+LBR具有能被PKA和CDK1磷酸化的位点。与其结合的异染色质蛋白HP1也受到细胞周期依赖性的磷酸化调控。在细胞分裂间期，LAP2β和LAP2γ一些位点被磷酸化；而在有丝分裂期，则另一些位点被磷酸化。在体外，LAP2β的某些位点被磷酸化之后，能抑制其与Lamin B的结合。Emerin也通过磷酸化而受到调控。因而，核膜蛋白的磷酸化调控可能在核膜崩解过程中起到了极其重要的作用。
+
+## (3) 核纤层崩解
+
+核纤层蛋白在细胞分裂间期组装成核纤层，主要存在于核膜内侧，而在细胞分裂期，它则以解聚的形式分散到细胞中。这种解聚的核纤层蛋白处于高度磷酸化状态。磷酸化位点一般定位于核纤层蛋白杆状区的末端。这种磷酸化很可能改变了核纤层蛋白的构象，从而使其聚合体解聚。A型核纤层蛋白和B型核纤层蛋白在有丝分裂中表现出不同的存在形式:前者先从核纤层上解离下来形成碎片，随着核膜进一步解聚逐渐弥散最终处于完全可溶的状态；而后者在分裂前期则保持着与膜的结合，在前中期逐渐碎片化并最终在中期分裂成小的片段并集中在纺锤体附近的区域。这种差异与两种类型蛋白在翻译后的不同修饰有关。
+
+## 7.5.2 核膜重建
+
+在有丝分裂中期向后期转化过程中，由于相关激酶被降解或失活，磷酸酶能迅速使得核膜整合蛋白、核纤层蛋白以及核孔蛋白发生去磷酸化。随着染色体向两极的分离，核膜的构成部分在染色体周围又重新构建核膜。
+
+## (1) 核膜成分在染色体周围的定位
+
+在核膜崩解后，核膜成分及其膜蛋白分散到内质网中。当细胞由分裂中期向后期转化时，这些成分又迅速地结合到染色质表面。核膜成分与染色质的结合则可能是通过膜上的蛋白与染色质蛋白相互作用而实现的，进而内质网管状网络发生片状的转变形成核膜，但是具体机制并没有被揭示。LAP2、LBR以及Lamin本身能直接与DNA结合。一些内核膜蛋白如LBR也能与异染色质蛋白HP1相结合。在分裂后期与末期，BAF和HP1分别定位在染色质的不同区域。BAF和Emerin共定位在每组染色体的两侧，HP1α定位在着丝粒处，而HP1γ则主要定位在染色体臂上。
+
+LBR与HP1共定位，这种空间排布可能在核膜重建过程中起重要作用。实验显示，不能结合BAF的Emerin突变体也不能够定位到正在形成的核膜上，表明BAF和Emerin之间的相互作用在核膜重建过程中对于募集Emerin是十分重要的。Lamin A也依赖于与BAF的相互作用才能正确定位到细胞核里。另有实验显示，HP1和LBR之间的相互作用对核膜重建也很重要。
+
+## (2) 核孔形成和核孔复合体装配
+
+核孔复合体装配是核膜重建过程中的重要事件。核孔复合体装配不仅对重新建立物质转运体系非常重要，对核膜重建本身也具有重要意义。例如，A型核纤层蛋白必须通过核孔复合体转运到核内，进行核纤层组建；某些内核膜蛋白和脂质也要通过核孔向核膜内侧转运。
+
+核孔复合体装配速度很快。在爪蟾提取物中，在细胞核重建7min后，就能观察到典型的核孔复合体。核孔复合体装配并不一定需要染色质，在完全没有染色质存在的情况下，核孔复合体能够在内质网样的膜结构上装配，形成所谓的环状片层（annulate lamellae，AL）结构。在形成核孔的过程中，内核膜与外核膜之间的融合非常重要。研究表明，在有丝分裂结束时，Nup107-160复合物、Nup153和Nup50首先结合到染色体上，对于形成孔膜区非常重要。同时研究报道MEL28/ELYS对于Nup107-
+
+160复合物定位于染色质至关重要。接下来，Nup93和Nup62复合物整合到正在组装的核孔复合体上。Nup214、Nup153、Tpr、Nup50和gp210在核孔复合体组装的最后的过程中被整合进来。核膜装配的最后一步是核膜的封闭，该过程需要双层膜组分连续覆盖在染色质上，不同的膜片层之间相互融合直至形成完整的核膜，在此过程中，跨膜的核孔蛋白，如Pom121、gp210和Nup107-160复合物等，在膜融合过程中起着重要作用（图7-3）。
+
+核孔复合体装配是一个高度有序的自组装过程。人们在非洲爪蟾卵提取物中观察了核孔形成和核孔复合体装配过程。首先，在孔膜区的外核膜下陷成小酒窝样结构，内外核膜融合，形成较稳固的直径为35～45 nm的小孔，在小孔的周围装配星体状环结构（star-ring）和胞质细环（thin-ring），展现出与成熟核孔复合体类似的八辐射对称结构。核孔复合体形成的最后阶段则是位于核质和胞质两个环状结构上纤维的装配。研究发现，抑制膜融合的GTPγS和NEM也能抑制核孔复合体的装配。进一步实验显示，钙离子螯合剂BAPTA也能将核孔复合体的装配阻断在星体状环结构状态。许多可溶性核孔蛋白能被糖基化，如果从提取物中去除这些核孔蛋白，同样会导致核孔复合体装配异常或抑制核孔复
+
+![](images/page_154_image_6.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["① 准备形成核孔复合体"] --> B["② 内外膜靠拢，gp210介导膜融合"]
+  B --> C["③ gp210作用下使核孔复合体扩大"]
+  C --> D["④ 形成完整的核孔复合体"]
+  D --> E["Pom121"]
+  E --> F["gp210"]
+```
+</details>
+
+图7-3 核孔复合体形成模式图
+
+合体的形成。
+
+## (3) 细胞核体积增长
+
+细胞核体积与表面积的增长也是核膜重建过程中的一个环节。在细胞核形成后，核膜表面积进一步增长，核孔复合体也会进行组装来维持单位核膜面积上特定的核孔复合体的数量，细胞核最终达到一定的大小。对于决定细胞核大小的机制存在两种理论:① 核骨架理论 (nucleoskeletal theory)，DNA 含量决定细胞核的体积大小，进而影响整个细胞的大小；② 质核比率理论 (karyoplasmic ratio theory)，细胞核体积的大小决定于细胞质的体积。到现在大部分研究成果支持质核比率理论。目前对于细胞核增长机制的认识还相对较少。有不少物质，包括某些核纤层蛋白，是在核膜重建后进入细胞核的。核纤层蛋白在维持核的结构和形态方面起重要作用。若在非洲爪蟾卵提取物非细胞体系中去除核纤层蛋白，重建的细胞核体积较小，也不能复制 DNA；若在该非细胞体系中干扰 LAP2β 的功能，尽管核膜能够重建，但核体积不能增大。
+
+## (4) Ran 在核膜重建中的作用
+
+Ran已被证明在细胞核重建过程中起重要调控作用。不具有正常功能的Ran不能有效地调控核膜重建。Ran蛋白本身也能够在非洲爪蟾卵提取物中诱导核膜的组装。将Ran黏附在多糖小球上，将该多糖小球加入卵提取物中并温育一定时间，在小球的周围，能够组建典型的核膜和核孔复合体。进一步的研究发现，Ran-GTP酶的多种调节蛋白如RCC1、Ran-GAP、RanBP1、importinβ等，均参与了核膜的装配。Ran调控核膜装配的机制可能是，在细胞分裂中期向后期转化过程中，Ran-GDP等蛋白重新结合到染色体上。在RCC1的作用下，Ran-GDP转化为Ran-GTP。在染色体的周围，importinβ与膜泡成分和核孔蛋白结合，并将后者带到染色体表面。通过Ran催化GTP分子分解，使膜泡相互融合成双层核膜，并在形成中的核膜上装配核孔复合体。当核膜和核孔复合体形成后，再重新建立起核内外的物质转运系统（图7-4）。
+
+在细胞分裂由中期向后期转化时，染色体去凝集，转化为染色质。Ran-GDP与染色质结合，Ran-GDP在染色质上结合的RCC1作用下，转化为Ran-GTP。同时，Ran结合蛋白importin与含FxFG的核孔蛋白以及核膜膜泡结合，并将后者带到染色质表面，与Ran-GTP结合。在Ran-GAP作用下，Ran水解GTP分子，核膜膜泡融合，核孔复合体装配。一旦核膜和核孔复合体完成装配，核膜内外的物质转运重新建立。
+
+## 7.6 核膜相关疾病
+
+近三十年来与核膜相关的疾病越来越受到研究者的重视。20世纪90年代有研究报道了Emerin的缺失或突变是导致X染色体连锁性遗传病Emery Dreifuss肌肉萎缩症（EDMD1）的原因。此后，人们逐步发现了更多的核膜蛋白突变导致的核膜相关性疾病（nuclear envelopathy）。目前已知的核膜相关疾病已有数十种。
+
+![](images/page_155_image_9.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["Ran-GDP"] --> B["GTP"]
+  C["Ran-GAP"] --> D["GTP"]
+  E["Ran-GAP"] --> F["GTP"]
+  G["Ran-GAP"] --> H["GTP"]
+  I["Ran-GAP"] --> J["GTP"]
+  K["Ran-GAP"] --> L["GTP"]
+  M["Ran-GAP"] --> N["GTP"]
+  O["Ran-GAP"] --> P["GTP"]
+  Q["Ran-GAP"] --> R["GTP"]
+  S["Ran-GAP"] --> T["GTP"]
+  U["Ran-GAP"] --> V["GTP"]
+  W["Ran-GAP"] --> X["GTP"]
+  Y["Ran-GAP"] --> Z["GTP"]
+  AA["Ran-GAP"] --> AB["GTP"]
+  AC["Ran-GAP"] --> AD["GTP"]
+  AE["Ran-GAP"] --> AF["GTP"]
+  AG["Ran-GAP"] --> AH["GTP"]
+  AI["Ran-GAP"] --> AJ["GTP"]
+  AK["Ran-GAP"] --> AL["GTP"]
+  AM["Ran-GAP"] --> AN["GTP"]
+  AO["Ran-GAP"] --> AP["GTP"]
+  AQ["Ran-GAP"] --> AR["GTP"]
+  AS["Ran-GAP"] --> AT["GTP"]
+  AU["Ran-GAP"] --> AV["GTP"]
+  AW["Ran-GAP"] --> AX["GTP"]
+  A --> B
+  B --> C
+  C --> D
+  D --> E
+  E --> F
+  F --> G
+  G --> H
+  H --> I
+  I --> J
+  J --> K
+  K --> L
+  L --> M
+  M --> N
+  N --> O
+  O --> P
+  P --> Q
+  Q --> R
+  R --> S
+  S --> T
+  T --> U
+  U --> V
+  V --> W
+  W --> X
+  X --> Y
+  Y --> Z
+  Z --> AA
+  AA --> AB
+  AB --> AC
+  AC --> AD
+  AD --> AE
+  AE --> AF
+  AF --> AG
+  AG --> AH
+  AH --> AI
+  AI --> AJ
+  AJ --> AK
+  AK --> AL
+  AL --> AM
+  AM --> AN
+  AN --> AO
+  AO --> AP
+  AP --> AQ
+  AQ --> AR
+  AR --> AS
+  AS --> AT
+  AT --> AU
+  AU --> AV
+  AV --> AW
+  AW --> AX
+  AX --> AY
+  AY --> AZ
+  AZ --> BA
+  BA --> BC
+  BC --> BD
+  BD --> BE
+  BE --> BF
+  BF --> BG
+  BG --> BH
+  BH --> BI
+  BI --> BJ
+  BJ --> BK
+  BK --> BL
+  BL --> BM
+  BM --> BN
+  BN --> BO
+  BO --> BP
+  BP --> BR
+  BR --> BB
+  BB --> BC
+  BC --> BD
+  BD --> BE
+  BE --> BF
+  BF --> BG
+  BG --> BH
+  BH --> BI
+  BI --> BJ
+  BJ --> BK
+  BK --> BL
+  BL --> BM
+  BM --> BN
+  BN --> BO
+  BO --> BP
+  BP --> BG
+  BG --> BH
+  BH --> BI
+  BI --> BJ
+  BJ --> BK
+  BK --> BL
+  BL --> BM
+  BM --> BN
+  BN --> BO
+  BO --> BP
+  BP --> BG
+  BG --> BH
+  BH --> BI
+  BI --> BJ
+  BJ --> BK
+  BK --> BL
+  BL --> BM
+  BM --> BN
+```
+</details>
+
+图7-4 Ran-GTP酶调控下的核膜装配过程
+
+2003年，Erriksson等人发现Lamin A的一个新突变能导致Hutchinson Gilford早老症。在世界范围内，平均每400万～800万个新生儿中就有1人患有此症。该突变为LMNA基因第11外显子内C1824T（608G→G）同义突变。突变后导致核纤层蛋白基因转录后的变异，选择性剪接产生缺失第1819～1968位碱基的mRNA序列。由此翻译出中间缺失50个氨基酸的前Lamin A（Δ50pre-Lamin A）。Δ50前Lamin A的C端CaaX序列依然存在。Lamin A的C端CaaX序列上的半胱氨酸是其法尼基化（farnasylation）位点。由于缺失了金属蛋白酶（metallo-proteinase）的识别位点，使其不能完成蛋白成熟剪切过程。后来又有发现，基因敲除金属蛋白酶Zmpste24后，前体Lamin A不能进行蛋白成熟剪切过程，也出现类似于Hutchinson Gilford早老症的病症。
+
+此后，人们报道了越来越多的与核纤层蛋白基因突变相关的疾病，这些疾病被称为核纤层病(laminopathy)(表7-1)。如Lamin A发生G602S点突变后，能导致A型胰岛素抗拒综合征(type A insulin resistance syndrome)。而Lamin A发生H222P及N195K的突变都会造成心肌病。
+
+对核纤层病的致病机制还在研究之中，目前主要有两种假说:一种是结构假说，即核纤层蛋白的突变引起核的形态结构的变异而致病；另一种是基因假说，即核纤层蛋白的突变引起基因表达紊乱而致病。两种假说都不能很好地解释核纤层病的致病机制，但更多的实验数据倾向于支持后者。
+
+近年来还发现许多核膜相关疾病，Lamin B受体的杂合子突变导致Pelger-Huet氏异常症（Pelger-Huet anomaly，PHA）。PHA的粒细胞核分叶较少，可能是由于中性粒细胞分化不完全所致。LBR的纯合子突变引起Greenberg骨骼发育不良症（一种胚胎致死型软骨营养障碍症）。此病症表现为胎儿积水、短肢、软骨钙化异常。此外，MAN1蛋白（LEMD3）的杂合子突变导致Buschke-Ollendorff综合征。这些病症有个共同点，即都是代谢综合征。此外，LAP1的基因TOR1AIP1第一个外显子中发生的缺失突变，会产生一个只有89个氨基酸的失去功能的LAP1B蛋白，导致肢带型肌营养不良和关节挛缩。近年来还发现在西班牙的两名非典型早老症患者（NGPS）中，BAF第12位的A纯合突变为T也能引起类似于HGPS的病症，但BAF的A12T突变引起的早老症更多的病症是骨骼和肌肉异常，而心血管损伤较小，患者的寿命也比人类早老症长，都超过了20岁。而核孔蛋白也被发现与多种人类疾病相关，如支架结构Nup93-205复合体中的组分之一Nup155蛋白功能缺失后，会导致心律失常。而核孔蛋白Nup98与PHD指蛋白的融合则能致使白血病的转化。
+
+表7-1 Lamin A/C突变与对应的部分核膜相关疾病名称及其缩写
+
+<table><tr><td colspan="2">疾病名称及其缩写</td><td>部分致病突变位点</td><td>部分参考文献</td></tr><tr><td>埃默里-德赖富斯氏常染色体显性遗传肌营养不良症(Emery-Dreifuss muscular dystrophy autosomal dominant)</td><td>EDMD2</td><td>G6Ter; R453W; R527P</td><td>Bonne et al., 1999</td></tr><tr><td>埃默里-德赖富斯氏常染色体隐性遗传肌营养不良症(Emery-Dreifuss muscular dystrophy autosomal recessive)</td><td>EDMD3</td><td>H222Y</td><td>Barletta et al., 2000</td></tr><tr><td>Werner氏综合征 (Werner syndrome)</td><td>WRN</td><td>A57P; R133L</td><td>Bonne and Levyn, 2003</td></tr><tr><td>常染色体显性遗传肢带型肌营养不良症(autosomal dominant limbgirdle muscular dystroph)</td><td>LGMD</td><td>delK208; R377C; R377L</td><td>Muchir et al., 2000</td></tr><tr><td>扩张型心肌症 (dilated cardiomyopathy)</td><td>DCM</td><td>R331Q; H222P; N195K</td><td>Fatkin et al., 1999; Ho et al., 2013</td></tr><tr><td>下颌骨末端发育不良症 (mandibuloacral dysplasia)</td><td>MAD</td><td>R527H; R471C</td><td>Sim ha et al., 2003; Agar wal et al., 2008</td></tr><tr><td>邓尼根型家族性局部脂肪代谢障碍(familial partial lipodystrophy of the Dunnigan type)</td><td>FPLD</td><td>V440M; G465E; R482Q/W/L</td><td>Hegele, 2001; Rajendran et al., 2012</td></tr><tr><td>腓骨肌萎缩症 (charcot-marie-tooth disorder)</td><td>CMT</td><td></td><td>de Sandre-Giovannoli et al., 2002</td></tr><tr><td>哈奇森-吉尔福特氏早年衰老综合征(Hutchison Gilford progeria syndrome)</td><td>HGPS</td><td>Val607_Gln656del</td><td>Eriksson et al., 2003</td></tr><tr><td>脂肪萎缩性糖尿病 (lipoatrophy with diabetes), 脂肪肝 (hepatic steatosis), 肥厚性心肌症 (hypertrophic cardiomyopathy) 和 leukomedlanodermic丘疹(leukomedlanodermic papules)</td><td>LDHCP</td><td>R133L</td><td>New ton and Laragh, 1968</td></tr></table>
+
+## □ 小结
+
+核膜是真核细胞区别于原核细胞的重要标志之一。它不仅作为一个结构而存在，而且在细胞的生命活动中发挥着极为重要的功能，包括物质运输、正常核结构的维持以及基因表达调控等。外核膜和内核膜存在异质性。外核膜与内质网膜相连，并结合有许多核糖体。而内核膜则与由核纤层蛋白组成的核纤层网格结构紧密连接。内外核膜所含的蛋白组分不同。内外核膜上镶嵌有许多核孔复合体。通过核孔复合体，实现核质和胞质之间的物质信息交流。内核膜蛋白在维持核结构和调控基因表达方面起着非常重要的作用，这些蛋白如果发生突变，会给个体造成严重的发育缺陷。近几年发现的诸多核膜相关疾病大多与这些蛋白的突变有关。
+
+## □ 思考题
+
+1. 当细胞受到外界力学信号刺激时，这些信号是如何传递到细胞核诱导基因表达的？目前已知哪些因素可能参与这个过程？
+2. 真核细胞中包括细胞核在内许多膜性细胞器都不是完全孤立的，其膜成分之间常常存在紧密的联系。请总结目前已知的联系有哪些？这些联系的功能意义是什么？
+3. 由于有丝分裂异常，在子细胞中可能会形成微核（micronucleus），它们会引起 DNA 损伤甚至发生染色体碎裂（chromothripsis），导致基因组不稳定。请思考这些微核可能的命运是怎样的？
+4. 自细胞自噬被发现以来，多种细胞自噬途径和调控机制逐步得以揭示。请思考细胞自噬途径是如何协调的？细胞核物质是否也会发生细胞自噬？
+5. 核膜或核膜相关蛋白基因突变可能导致核膜相关疾病的发生。这些突变蛋白通常在大多数组织细胞中都表达。为什么有些突变导致的疾病具有组织器官特异性？
+
+(张传茂 林巧玉 辛广伟 北京大学生命科学学院)
+
+## □ 参考文献
+
+1 Barton L J, Soshnev A A, Geyer P K. Networking in the nucleus: a spotlight on LEM-domain proteins. Curr Opin Cell Biol, 2015, 34: 1–8.
+2 Bione S, Maestrini E, Rivella S, et al. Identification of a novel X-linked gene responsible for Emery-Dreifuss muscular dystrophy. Nat Genet, 1994, 8: 323-327.
+3 Burke B, Stewart C L. The nuclear lamins: flexibility in function. Nat Rev Mol Cell Biol, 2013, 14:13–24.
+4 Chen Z, Wang W, Chen Y, et al. Dysregulated interactions between lamin A and SUN1 induce abnormalities in the nuclear envelope and endoplasmic reticulum in progeric laminopathies. J Cell Sci, 2014, 127: 1792–1804.
+5 Chook Y M, Blobel G. Karyopherins and nuclear import. Curr Opin Struct Biol,
+2001, 11: 703–715.
+6 Cronshaw J M, Krutchinsky A N, Zhang W, et al. Proteomic analysis of the mammalian nuclear pore complex. J Cell Biol, 2002,158: 915–927.
+7 De Sandre-Giovannoli A, Bernard R, Cau P, et al. Lamin a truncation in Hutchinson-Gilford progeria. Science, 2003, 300: 2055.
+8 Dechat T, Gotzmann J, Stockinger A, et al. Detergent-salt resistance of LAP2α in interphase nuclei and phosphorylation-dependent association with chromosomes early in nuclear assembly implies functions in nuclear structure dynamics. EMBO J, 1998, 17: 4887-4902.
+9 Dreger M, Bengtsson L, Schoneberg T, et al. Nuclear envelope proteomics: novel integral membrane proteins of the inner
+nuclear membrane. Proc Natl Acad Sci U S A, 2001, 98: 11943–11948.
+10 Ellenberg J, Siggia E D, Moreira J E, et al. Nuclear membrane dynamics and reassembly in living cells: targeting of an inner nuclear membrane protein in interphase and mitosis. J Cell Biol, 1997,138: 1193–1206.
+11 Foisner R, Gerace L. Integral membrane proteins of the nuclear envelope interact with lamins and chromosomes, and binding is modulated by mitotic phosphorylation. Cell, 1993, 73:1267–1279.
+12 Gant T M, Harris C A, Wilson K L. Roles of LAP2 proteins in nuclear assembly and DNA replication: truncated LAP2β proteins alter lamina assembly, envelope formation, nuclear size, and
+DNA replication efficiency in Xenopus laevis extracts. J Cell Biol,1999,144: 1083–1096.
+13 Goldberg M W, Wiese C, Allen T D, et al. Dimples, pores, star-rings, and thin rings on growing nuclear envelopes: evidence for structural intermediates in nuclear pore complex assembly. J Cell Sci, 1997, 110 (4): 409–420.
+14 Gorlich D, Kutay U. Transport between the cell nucleus and the cytoplasm. Annu Rev Cell Dev Biol, 1999, 15: 607–660.
+15 Greber U F, Senior A, Gerace L. A major glycoprotein of the nuclear pore complex is a membrane-spanning polypeptide with a large lumenal domain and a small cytoplasmic tail. EMBO J, 1990, 9: 1495-1502.
+16 Hallberg E, Wozniak RW, Blobel G. An integral membrane protein of the pore membrane domain of the nuclear envelope contains a nucleoporin-like region. J Cell Biol, 1993, 122: 513–521.
+17 Haraguchi T, Koujin T, Segura-Totten M, et al. BAF is required for emerin assembly into the reforming nuclear envelope. J Cell Sci, 2001, 114: 4575–4585.
+18 Hetzer M, Bilbao-Cortes D, Walther T C, et al. GTP hydrolysis by Ran is required for nuclear envelope assembly. Mol Cell, 2000, 5: 1013–1024.
+19 Hoffmann K, Dreger C K, Olins A L, et al. Mutations in the gene encoding the lamin B receptor produce an altered nuclear morphology in granulocytes Pelger-Huet anomaly. Nat Genet, 2002, 31: 410-414.
+20 Holmer L, Pezhman A, Worman H J. The human lamin B receptor/sterol reductase multigene family. Genomics, 1998, 54: 469–476.
+21 Hutchison C.J. Lamins: building blocks or regulators of gene expression? Nat Rev Mol Cell Biol, 2002, 3: 848–858.
+22 Lu X, Shi Y, Lu Q, et al. Requirement for lamin B receptor and its regulation by importin  $\beta$ and phosphorylation in nuclear envelope assembly during mitotic exit. J Biol Chem, 2010, 285: 33281–33293.
+23 Ma Y, Cai S, Lv Q, et al. Lamin B receptor plays a role in stimulating nuclear envelope production and targeting membrane vesicles to chromatin during nuclear envelope assembly through direct interaction with importin  $\beta$ . J Cell Sci, 2007, 120: 520–530.
+24 Maison C, Pyrpasopoulou A, Theodoropoulos P A, et al. The inner
+nuclear membrane protein LAP1 forms a native complex with B-type lamins and partitions with spindle-associated mitotic vesicles. EMBO J, 1997, 16: 4839–4850.
+25 Martins S B, Eide T, Steen R L, et al. HA95 is a protein of the chromatin and nuclear matrix regulating nuclear envelope dynamics. J Cell Sci, 2000,113 Pt 21:3703–3713.
+26 Meier I. The plant nuclear envelope. Cell Mol Life Sci, 2001, 58: 1774–1780.
+27 Moir R D, Spann T P. The structure and function of nuclear lamins: implications for disease. Cell Mol Life Sci, 2001, 58: 1748–1757.
+28 Nagano A, Koga R, Ogawa M, et al. Emerin deficiency at the nuclear membrane in patients with Emery-Dreifuss muscular dystrophy. Nat Genet, 1996, 12: 254–259.
+29 Nikolakaki E, Meier J, Simos G, et al. Mitotic phosphorylation of the lamin B receptor by a serine/arginine kinase and p34 cdc2, J Biol Chem, 1997, 272: 6208–6213.
+30 Polioudaki H, Kourmouli N, Drosou V, et al. Histones H3/H4 form a tight complex with the inner nuclear membrane protein LBR and heterochromatin protein 1. EMBO Rep, 2001, 2: 920–925.
+31 Roth P, Xylourgidis N, Sabri N, et al. The Drosophila nucleoporin DNup88 localizes DNup214 and CRM1 on the nuclear envelope and attenuates NES-mediated nuclear export. J Cell Biol, 2003, 163:701-706.
+32 Rout M P, Aitchison J D, Suprapto A, et al. The yeast nuclear pore complex: composition, architecture, and transport mechanism. J Cell Biol, 2000, 148: 635–651.
+33 Schwartz T. Functional insights from studies on the structure of the nuclear pore and coat protein complexes. Cold Spring Harb Perspect Biol, 2013, 5.
+34 Snider N T, Omary M B. Post-translational modifications of intermediate filament proteins: mechanisms and functions. Nat Rev Mol Cell Biol, 2014, 15: 163–177.
+35 Solovei I, Wang A S, Thanisch K, et al. LBR and lamin A/C sequentially tether peripheral heterochromatin and inversely regulate differentiation. Cell, 2013, 152: 584–598.
+36 Somech R, Shaklai S, Amariglio N, et al. Nuclear envelopathies—raising the nuclear veil. Pediatr Res, 2005, 57:
+8R-15R.
+37 Tapley E C, Starr D A. Connecting the nucleus to the cytoskeleton by SUN-KASH bridges across the nuclear envelope. Curr Opin Cell Biol, 2013, 25: 57–62.
+38 Terasaki M, Campagnola P, Rolls M M, et al. A new model for nuclear envelope breakdown. Mol Biol Cell, 2001, 12: 503–510.
+39 Turgay Y, Eibauer M, Goldman A E, et al. The molecular architecture of lamins in somatic cells. Nature, 2017, 543: 261–264.
+40 Ulitzur N, Harel A, Goldberg M, et al. Nuclear membrane vesicle targeting to chromatin in a Drosophila embryo cell-free system. Mol Biol Cell, 1997, 8: 1439-1448.
+41 Uv A E, Roth P, Xylourgidis N, et al. Members only encodes a Drosophila nucleoporin required for rel protein import and immune response activation. Genes Dev, 2000, 14: 1945–1957.
+42 von Appen A, Kosinski J, Sparks L, et al. In situ structural analysis of the human nuclear pore complex. Nature, 2015, 526:140–143.
+43 Walther T C, Pickersgill H S, Cordes V C, et al. The cytoplasmic filaments of the nuclear pore complex are dispensable for selective nuclear protein import. J Cell Biol, 2002, 158: 63–77.
+44 Worman H J, Evans C D, Blobel G. The lamin B receptor of the nuclear envelope inner membrane: a polytopic protein with eight potential transmembrane domains. J Cell Biol, 1990, 111:1535–1542.
+45 Ye Q, Worman H J. Interaction between an integral protein of the nuclear envelope inner membrane and human chromodomain proteins homologous to Drosophila HP1. J Biol Chem, 1996, 271: 14653–14656.
+46 Zhang C, Clarke P R. Chromatin-independent nuclear envelope assembly induced by Ran GTPase in Xenopus egg extracts. Science, 2000, 288: 1429–1432.
+47 Zheng R, Ghirlando R, Lee M S, et al. Barrier-to-autointegration factor (BAF) bridges DNA in a discrete, higher-order nucleoprotein complex. Proc Natl Acad Sci U S A, 2000, 97: 8997–9002.
+48 Zullo J M, Demarco I A, Pique-Regi R, et al. DNA sequence-dependent compartmentalization and silencing of chromatin at the nuclear lamina. Cell, 2012, 149: 1474–1487.
+
+## 微管与细胞内物质运输
+
+细胞骨架是真核细胞内由蛋白质组装而成的纤维状网架结构，包括肌动蛋白丝(actin filament，也称微丝)、中间丝(intermediate filament)和微管(microtubule)三种类型。这些骨架组分与细胞结构的组织、形状变化、细胞运动和细胞周期运行等过程密切相关。从最简单的原生生物到真菌，以及高度复杂的植物和动物，所有真核细胞中都存在微管。电镜图像显示，微管是中空的管状结构，其外径约为24 nm，内径约为15 nm。微管还是动物细胞中心体(centrosome)、纤毛和鞭毛的核心组分。中心体是动物细胞内主要的微管组织中心，也是纺锤体结构的组织者，还在胞质分裂过程中起主导作用。纤毛及鞭毛与细胞运动和信号转导等过程相关。细胞内微管网络的结构是高度动态的，处于不断的变化之中，如间期细胞中起源于中心体的微管、有丝分裂期的纺锤体微管等。微管的稳定性与细胞的状态和所处的区域相关，如神经元的轴突微管、中心粒微管、纤毛或鞭毛的基体和轴丝的微管都是比较稳定的结构。细胞分化过程涉及细胞结构的重组，以及细胞形态和功能的变化，微管在这些过程中发挥了关键性作用，如神经元和上皮细胞等的极性化结构的形成过程是体现微管与细胞分化相关性的最好例证。
+
+在体和体外实验的结果都显示，微管在长度和动力学方面都表现出高度的不均一性。在体外，微管的组装和去组装在其两端都可能发生，并且不同步。在细胞质内，大部分微管都在经历组装和去组装的快速循环过程。有些微管相对稳定，另一些则时而伸长、时而缩短。这种现象在细胞边缘更容易被观察到，被称为微管的“动态不稳定性”（dynamic instability），这种特性对微管功能至关重要。微管组装的动力学性质和功能是通过微管与多种微管结合蛋白（microtubule associated protein，MAP）相互作用的结果来体现的。广义的微管结合蛋白包括所有与微管相互作用的蛋白，如传统意义上结合在微管表面或两端的 MAP（也称非马达类微管结合蛋白，即本书中的 MAP）和马达蛋白（motor protein）。MAP 与微管相互作用以调节微管的稳定性和微管网络的结构、细胞形态，为细胞运动和物质运输等生命活动过程提供结构基础；马达蛋白是微管功能的执行者，其马达结构域通过水解 ATP 产生的能量沿微管运动，而其货物结合结构域则与细胞器或生物大分子复合物等相结合。马达蛋白与微管的相互作用与细胞内物质运输、细胞结构的重建、信号转导及细胞运动等事件相关联。一些马达蛋白，如 kinesin 13 家族的成员还结合在微管的正极，参与微管结构的解聚。
