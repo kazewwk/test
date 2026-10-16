@@ -1,0 +1,591 @@
+酰胺凝胶纯化，单拷贝的哺乳动物基因组模板的扩增效率会更高（参见第2章，方案10）。
+
+\- 脱氧核糖核酸三磷酸盐（dNTP）。标准的 PCR 反应含有等摩尔数的 dATP、dTTP、dCTP 和 dGTP，每种 dNTP 的推荐浓度是 200～250μmol/L，MgCl₂ 的浓度为 1.5mmol/L。在 50μL 反应体系中，这个浓度足以合成 6～6.5μg 的 DNA，即使对于含有 8 对以上引物的多重 PCR 反应来说也是足够的。dNTP 低至 20μmol/L 也能合成 0.5～1.0pmol 的 1kb 的 DNA 分子。但是，过高浓度的 dNTP（大于 4mmol/L）反而会抑制 PCR 反应，可能的原因是对 Mg²⁺ 的猝灭作用。
+
+多家公司（如 Roche、QIAGEN、Boehringer-Ingelheim、GE Healthcare Life Sciences）均出售经过高压液相色谱（HPLC）纯化后的 dNTP，以作为 PCR 反应的底物。这些 dNTP 中不含有能够抑制 PCR 反应的四磷酸盐及焦磷酸盐。储存的 dNTP 对反复冻融敏感，几次冻融后，PCR 效率会下降。解决方法是将 dNTP 分装（2～5μL）在 10mmol/L 的 Tris（pH8.0）中，保存于 -20℃，在第二轮冻融后，就应该丢弃不用了。如果使用纯水溶解保存，容易造成 dNTP 的酸水解。在长期 -20℃ 保存中，水分会蒸发到管壁上，造成 dNTP 浓度的变化，此时应短暂离心。
+
+\- 二价阳离子。二价阳离子通常为 $\mathrm{Mg}^{2+}$，是所有的热稳定 DNA 聚合酶活性所必需的。一些聚合酶在 $\mathrm{Mn}^{2+}$ 存在的情况下，虽然活性略低，但是也能工作。$\mathrm{Ca}^{2+}$ 是完全无效的。镁离子有两个功效:一是和 dNTP 结合成复合物，作为聚合酶的底物；二是稳定引物-模板复合体。一般来说，PCR 产物的产量和镁离子浓度的关系呈钟形，当镁离子浓度过低时，引物复性到模板上的效率差；当镁离子浓度过高时，DNA 二聚体配对强度过高，以至于加热也难以有效解链，由于 dNTP 和核苷酸结合镁离子，故镁离子的摩尔浓度应该超过 dNTP 和引物共同拥有的磷酸基团的摩尔数。因此，各种情况下的最佳镁离子浓度很难确定。虽然 $1.5\mathrm{mmol/L}$ 是最常使用的镁离子浓度，但是据报道，将镁离子浓度增加到 $4.5\mathrm{mmol/L}$ 或 $6\mathrm{mmol/L}$，在某些情况下可减少非特异性引发（参见 Krawetz et al. 1989; Riedel et al. 1992），也可增加非特异性引发（参见 Harris and Jones 1997）。因此，每组引物模板组合的最佳镁离子浓度都必须通过实验来确定。
+
+很多公司（如 Life Technologies、Sigma-Aldrich、Roche Applied Science 和 Alliance Bio）销售 PCR 缓冲液优化试剂盒，其中含有各种缓冲液组分，可供研究者通过实验决定最佳反应条件。一旦条件确立，就可以从这些公司购买最终的缓冲液或自己在实验室里配制。或者，研究者同时进行 10 个 PCR 反应，每个反应中镁离子的浓度从 0.5mmol/L 到 5.0mmol/L 递增，依次增加 0.5mmol/L，有时为了更精确，还得进行第二轮优化，镁离子的浓度递增按 0.2mmol/L 进行。如果可能，制备的模板中不应含有螯合剂（如 EDTA）或阴离子（如磷酸根），这些都会猝灭镁离子。
+
+- 维持 pH 的缓冲液。室温下 pH 调到 8.3～8.8 的 Tris 缓冲液经常用于 PCR 反应，浓度从 10mmol/L 到 66mmol/L 不等，当在 72°C 时（延伸温度），反应缓冲液的 pH 会下降整整一个单位，也就是降到约 7.2。
+- 单价阳离子。标准的 PCR 缓冲液含有 50mmol/L 的 KCl，这个浓度对大于 500bp 片段的扩增是很有效的，把 KCl 浓度提升到 70～100mmol/L 可提升短片段产物的产量。
+- 模板 DNA。单链或双链形式的包含靶序列的模板 DNA 都可用于 PCR，闭合环状 DNA 的扩增效率要比线性 DNA 扩增效率略低。虽然模板 DNA 的长度并不是很关键，但是，如果扩增片段位于长模板内（大于 10kb），那么使用限制性内切核酸酶先消化模板，可以提高目标片段产物的产量。当然，在目标片段内部必须不含有这种限制性内切核酸酶。
+
+原则上，只要有一个分子的模板，就可以被 PCR 扩增出来，但是，通常都需要数千拷贝的模板分子来进行 PCR 扩增。对于哺乳动物基因组 DNA 来说，每个反应需要的模板量是  $1 \mu g$ ，这里面含有的常染色体单拷贝基因约为  $3 \times 10^{5}$  拷贝。对于酵母染色体、细菌染色体和质粒等模板的通常用量分别是 10ng、1ng 和 1pg。
+
+## 热稳定 DNA 聚合酶
+
+热稳定 DNA 聚合酶从两类生物中分离获得:嗜热和超嗜热真细菌型古细菌。这些菌中含有的 DNA 聚合酶是嗜热细菌中 DNA 聚合酶 I 的活化石。嗜热古菌中含有的主要 DNA 聚合酶属于栖热水生菌聚合酶α家族，它是嗜热古菌家族的一员（Brock 1995a,b, 1997）。Taq（T. aquaticus；栖热水生菌）DNA 是首先分离及了解最透彻的热稳定 DNA 聚合酶，目前在各个实验室中依然作为 PCR 反应的主力军（参见信息栏“Taq DNA 聚合酶”）。
+
+一个单位 Taq 酶的定义是:74℃、30min 内将 10nmol 的 dNTP 掺入酸沉淀物质中的酶量。因为大部分商业化的 94kDa Taq 酶的比活是 80 000U/mg 蛋白质，1U 的酶量约含有  $8 \times 10^{10}$  个 Taq 酶分子。一般的 PCR 反应使用 1U 的酶，摩尔数远超过模板量，但是当扩增结束的时候，扩增的 DNA 的摩尔数会超过酶分子数的 100 倍。
+
+不幸的是，每个厂家出售的 $Taq$ 酶制剂是不同的，在产量、扩增长度、保真度等方面有差异（参见 Linz et al. 1990）。因此，有必要对每批次的 $Taq$ 酶优化 PCR 条件。
+
+Taq 酶的半衰期在  $97.5^{\circ}$ C 时是 9min，此酶可以在 10s 内合成 9000bp。Taq 酶在合成小片段的时候依然可作为首选，但是，由于其缺乏  $3'\rightarrow5'$  的校对功能（Lawyer et al. 1993），扩增的突变率较高（每 9000 个核苷酸中出现 1 个突变）（Tindall et al. 1988）。从其他嗜热细菌或古菌中分离的热稳定 DNA 聚合酶，如 Pfu DNA 聚合酶，拥有校对功能（Cline et al. 1996），可用于替代 Taq 酶或与之结合使用。特别是在需要确保高保真度扩增的情况下，如扩增超过数 kb 的片段或反转录扩增 mRNA。
+
+对酶的选择得由实验目的来决定，例如，如果需要高保真扩增基因，那么酶就得需要具备校对功能；如果是为了克隆扩增片段，那么以选择产生平头末端的酶为佳。直到最近，研究者对这些选择只能采取折中的方式。然而，使用两种或多种 DNA 聚合酶的混合物可以有效地提升产量，特别是对于长片段 DNA 的扩增（Barnes 1994; Cheng et al. 1994a,b; Cohen 1994）。性能提升的原因是混合物中的一种酶可以补充另外一种酶的缺陷，从而延伸并跨越模板链上可能的障碍。这些障碍包括:①二级结构（Eckert and Kunkel 1993）；②缺口，对于缺口，缺乏末端转移酶功能的聚合酶无法跨越（Hu 1993）；③错配的碱基，错配的碱基会导致无校对功能的聚合酶驻留并从引物-模板上解离下来（Barnes 1994）。目前一些公司销售鸡尾酒式聚合酶组合，以获得所需要的性能。例如，Tbr 和 Taq 的组合，商品名为 DyNAzyme（NEB 和其他供应商），具有高保真性（由 Tbr 的校对功能支持）和高效性（由 Taq 的高效性支持）。类似的，Taq 和 Pfu 的混合酶可高效生产长片段产物（能达到 35kb）。
+
+Taq 酶的产物带有 3' 突出的 A，这对 TA 克隆是有利的，这些克隆载体有一个 3' 突出的 T，可与 PCR 产物 3' 突出的 A 配对，有利于 PCR 产物克隆。
+
+## PCR 反应的程序设计
+
+PCR 反应是一个重复过程，包含三个要素:模板的加热变性；引物与单链模板的复性；复性引物在热稳定 DNA 聚合酶的作用下延伸（图 7-1）。
+
+![](images/page_386_image_2.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+This flowchart illustrates the structural evolution of a chain model, showing how components like double chain modules and variations are transformed into parallel layers with different deformation modes.
+</details>
+
+图 7-1 PCR 反应中的扩增步骤。本图显示了 PCR 前几轮反应的各个步骤。原始模板（在图的顶部）是双链 DNA，左向和右向引物分别用箭头 “←” 和 “→” 来表示。前几轮扩增反应的产物在大小上是不均一的，但是，在两条引物之间的区域随后会优先扩增，这样的产物也会迅速成为主流。
+
+\- 变性。双链 DNA 模板的变性温度部分是由其 GC 含量决定的，GC 含量越高，解链温度越高。DNA 越长，在解链温度下持续的解链时间就越长。如果变性温度过低或持续时间过短，那么只有富含 AT 区解链，当进入 PCR 反应的其他阶段时，温度降低，这个时候模板 DNA 又会复性成天然状态。
+
+Taq 酶催化的 PCR 反应中，变性温度一般是 94～95℃，这是 Taq 酶能够承受 30 个循环而不发生过度损伤的最高温度。在第一轮 PCR 中，变性时间持续约 5min，以确保长模板 DNA 完全变性，然而，根据我们的经验，对于线性 DNA 模板，这么长的变性时间可能是无用且有害的（Gustafson et al. 1993）。对于线性且 GC 含量不超过 55% 的模板 DNA，在 94～95℃ 变性 45s 即可。
+
+高 GC 含量的模板（GC 含量大于 55%）所需要的变性温度更高，来自于古细消解酶菌的 DNA 聚合酶比 Taq 更耐热，因此更适合高 GC 含量模板的扩增。
+
+\- 引物与模板的复性。复性温度的选择很关键，如果选择高了，那么引物与模板结合困难，导致产物量很少；如果低了，那么就会有非特异性复性的情况发生，导致非特异性片段的扩增。复性温度一般要比熔解温度低 $3\sim 5^{\circ}\mathrm{C}$，熔解温度是指引物从模板上解离下来的温度。有很多公式用于计算理论熔解温度，但是没有一个能够对各种长度和序列的引物的熔解温度进行精确计算。所以，最好是做一系列试验性PCR，以探索比熔解温度低 $2\sim 10^{\circ}\mathrm{C}$ 的各种温度点中哪个温度是最佳的。或者，PCR的前几个循环中复性温度逐渐降低（参见方案3“降落PCR”）（Don et al.1991）。前者得在不同复性温度下进行多个PCR反应，而后者的好处在于，在一个PCR反应中试验不同的复性温度并找到合适的温度。降落PCR解决了每对引物需要试验最佳复性温度的问题，经常用于在常规PCR中获得可靠的产物量（Peterson and Tjian 1993;Hecker and Roux 1996;Roux and Hecker 1997）。
+
+\- 引物的延伸。一般在或接近热稳定 DNA 聚合酶催化 DNA 合成的最佳温度下进行，对 Taq DNA 聚合酶来说就是 72～78℃。在前两轮 PCR 中，从一条引物发起的延伸会超越另外一条引物在模板上的结合位点，而后来的产物长度就是两条引物结合模板位点之间的长度，从第三轮反应开始，两条引物之间长度的产物几何级增长，而超过两条引物之间长度的产物则以正比例方式增长（Mullis and Faloona 1987）。作为一个经验法则，每 1kb 产物，延伸时间为 1min。在最后一轮 PCR 中，许多研究者使用的延伸时间一般为前轮循环延伸时间的 3 倍，表面上是为了让所有的扩增产物最终完成延伸。但是，我们的实验显示，延伸时间进行这样的调整不会显著改变 PCR 的结果。
+
+\- 循环数。如在信息栏“PCR理论”中讨论的那样，循环数取决于PCR起始时存在的模板数及引物延伸和扩增的效率。一旦进入指数级增长，反应会进行到PCR组分耗尽而不足以支持循环进行下去时。到这个时候，扩增产物达到最大量，而非特异性扩增几乎看不到。含有 $10^{5}$ 拷贝模板和Taq DNA聚合酶的PCR反应一般30个循环后可达到这个程度（扩增效率约0.7）。以哺乳动物基因组作为模板，扩增单拷贝序列，至少需要进行25个循环，以获得可接受的产物量。
+
+## PCR反应中可选择的成分
+
+一些助溶剂和添加剂可降低错配率及增加富含 GC 模板的扩增效率（吐温-20 和 NP-40）。助溶剂包括有机胺化合物，如甲酰胺（1.25%～10%, V/V）（Sarkar et al. 1990; Varadaraj and Skinner 1994; Chakrabarti and Schutt 2001）、二甲基亚砜（DMSO，最多可到 15%, V/V）（Bookstein et al. 1990）、甘油（1%～10%, V/V）（Lu and Nègre 1993）等。添加剂包括四甲基氯胺（Hung et al. 1990; Chevet et al. 1995）、甜菜碱（Henke et al. 1997）、谷氨酸钾（10～200mmol/L）、硫酸铵、非离子和阳离子去污剂（Bachmann et al. 1990; Pontius and Berg 1991），以及一些特异性强化剂，如 Perfect Match 聚合酶增强子（Agilent 公司产品）和 GC-Melt（Clontech 公司产品）。很多这些助溶剂及添加剂在高浓度下会抑制 PCR 反应，因此，对每个特定的引物及模板，都需要进行试验以确定最佳浓度。在动用这些助溶剂及添加剂之前，我们认为最好先优化 PCR 的常规组分，如镁离子及钾离子的浓度（Krawetz et al. 1989; Riedel et al. 1992）。唯一例外的是 GC-Melt，在我们的工作中发现，它用于对付高 GC 的模板非常有效，可极大地提升扩增效率。
+
+## 抑制剂
+
+任何成分过量都可能成为 PCR 反应的抑制剂。最常见的 PCR 杀手包括:蛋白酶 K（如果有机会，它会降解热稳定 DNA 聚合酶）、酚、EDTA。其他可能引起麻烦的成分还有:离子去污剂（Weyant et al. 1990）、肝素（Beutler et al. 1990）、多聚阴离子如亚精胺（Ahokas and Erkkila 1993）、血色素及上样染料如溴苯酚兰、二甲苯胺等（Hoppe et al. 1992）。很多情况下，扩增产物产量低或产量不稳定的主要原因在于模板的污染（参见下述“PCR 中的污染”部分）。对模板进行纯化，即可解决 PCR 中的很多问题，如对模板进行透析、乙醇沉淀、氯仿抽提及使用合适的树脂进行层析纯化等。
+
+![](images/page_387_image_8.jpg)
+
+## 基础 PCR 反应中引物的设计
+
+引物设计的主要指标就是特异性，也就是两条引物都能够稳定地结合到模板的特定靶序列上。一个经验法则是:引物越长，特异性越好。下面的方程可用于计算引物在模板上完全配对的概率，这里的模板假设为4种核苷酸完全随机分布。
+
+$$
+K = [ g / 2 ] ^ {G + C} \times [ (1 - g) / 2 ] ^ {A + T}
+$$
+
+式中，K 是指引物在一条模板上完全配对的概率；g 是指模板上 GC 的相对含量；G、C、A、T 是指引物中 4 种碱基分别的个数。一条双链模板的长度如果为 N（指核苷酸数），那么这个模板上可能的引物结合位点数（n）就是 n=2NK。
+
+按照这个方程进行计算，一条长度为 $15\mathrm{nt}$ 的引物，在哺乳动物基因组（$N$ 约等于 $3\times$
+
+$10^{9}$ ）中的结合位点（指完全匹配）只有一个。对于一个 $16\mathrm{nt}$ 的引物来说，在复杂度为 $10^{7}$ 的哺乳动物cDNA文库中恰好含有能与其完全匹配的序列的概率只有1/10。然而，这个计算方法的前提是:4种碱基在哺乳动物基因组中是随机分布的。这个前提其实不存在，因为哺乳动物具有密码子偏爱性，另外，有相当部分的基因组序列是由重复序列或基因家族组成的。为了降低非特异性结合，引物的长度要比上述方法计算出的长度长一些。由于重复序列的存在，即使引物长度超过20nt，只有不超过 $85\%$ 的哺乳动物基因组序列可以精确地配对。设计引物的时候，要用引物序列比对DNA数据库，以确保引物只和靶基因配对，而不会和载体、其他基因及重复序列配对。
+
+表7-1提供了引物设计中的一些原则，如果认真执行这些标准，那么在很大程度上可以避免失败。
+
+## 选择 PCR 引物
+
+## 下列步骤用于筛选引物:
+
+1. 分析靶基因和引物结合位点，确保不存在多个同种核苷酸的聚集区，没有明显形成二级结构的可能，不会形成自互补，也不会和靶基因的其他部位结合（参见第9章中“实时荧光PCR反应引物、探针设计和反应条件优化”部分）
+2. 按照表 7-1 的标准，把可能的正向及反向引物列出来，按照下面列出的方程，计算其熔解温度。
+3. 选择匹配良好的正、反向引物，两条引物的 GC 含量要相当。两条引物及扩增产物的 GC 含量最好能够相当，并且最好为 $40\% \sim 60\%$ 。
+4. 前后移动引物位置，确保引物的 3'端以 G 或 C 结尾，确保两条引物之间没有互补区域，原则上说，两条引物之间连续三个碱基互补是不允许的。
+
+## 计算机辅助设计引物
+
+使用计算机程序对引物进行设计、筛选及定位可节省时间，减少麻烦。关于这方面的综述，参见 Chen 等（2002）。很多独立的计算机程序可用于选择引物位点，使用者需要设定一些参数，就可以获得没有发夹、二聚体及其他问题结构的引物。这些程序可产生一系列供选择的引物，其熔解温度一般使用最近邻法进行计算，在这种计算方法中，引物和模板的热力学稳定性由相邻碱基相互作用的叠加计算而来。
+
+大部分程序使用绘图工具，界面友好，可根据各参数的权重对引物进行打分排序。有些程序还含有一些功能，如帮助搜索引物非特异性结合的数据库、优化 PCR 反应条件、把氨基酸序列转化成核苷酸序列、排除有二级结构的引物等。所有的这些 DNA 分析包都含有引物设计的先进模块（参见第 8 章中的方案 3；http://www.humgen.nl/primer\_design.html 网站提供有各种程序的链接）。
+
+## 计算引物-靶序列杂交体的熔解温度
+
+有几个方程可用于计算引物-靶序列杂交体的熔解温度，但都不是很完美，因此，对它们的选择主要取决于个人喜好。对于一对引物中的两个成员，在计算熔解温度时，必须使用同一个方程。
+
+\- 一个基于经验且很方便使用的方程，叫做 Wallace 方程（Suggs et al. 1981; Thein and Wallace 1986），可用于计算高离子强度下（如 1mol/L 的氯化钠）15～20nt 长的双链的熔解温度:
+
+$$
+T _ {\mathrm{m}} (^ {\circ} \mathrm{C}) = 2 ^ {\circ} \mathrm{C} (A + T) + 4 ^ {\circ} \mathrm{C} (G + C)
+$$
+
+式中， $A + T$ 指引物中A和T的总数； $G + C$ 指引物中G和C的总数。
+
+\- Baldino 等（1989）的方程计算更为精确，14～70nt 的引物长度，在 0.4mol/L 或更低的离子强度下的计算方程为:
+
+$$
+T _ {\mathrm{m}} (^ {\circ} \mathrm{C}) = 8 1. 5 ^ {\circ} \mathrm{C} + 1 6. 6 (\log_ {1 0} [ \mathrm{K} ^ {+} ]) + 0. 4 1 (\% [ G + C ]) - (6 7 5 / n)
+$$
+
+式中，n 是引物的核苷酸数。这个方程还可用于计算扩增产物的熔解温度，只要扩增产物的长度和序列已知。在标准 PCR 反应中，扩增产物的熔解温度最好不要超过  $85^{\circ}$ C，以确保解链步骤中扩增产物能够完全解链。需要指出的是，PCR 反应中的变性温度定义为“同源分子之间不可逆的分离温度”，不可逆的分离温度比熔解温度要高几度（对于 GC 含量 50% 的 DNA 分子来说，不可逆的分离温度为  $92^{\circ}$ C）
+
+上述的两个方程都没有考虑到碱基序列对熔解温度的影响（考虑到了碱基组成），掺入最邻热力学数据可更精确地计算熔解温度（参见 Rychlik 1995）。但是，Wallace 原则和 Baldino 方程使用起来更方便，对于大多数应用来说也已经足够了。
+
+![](images/page_389_image_6.jpg)
+
+## mRNA 的检测、分析及定量
+
+多年来, 发展出了多种检测、分析及定量 mRNA 和其他细胞转录物的方法(表 7-2), 按出现的时间排序, 这些方法罗列如下。
+
+\- Northern 杂交（Alwine et al. 1977）。①RNA 成分在变性琼脂糖凝胶中电泳分离；②转移到固相支持介质上（尼龙膜或硝酸纤维素膜）；③与标记探针杂交。比较目标 RNA 和已知大小的对照的迁移率，就可以知道目标 RNA 的大小；而杂交强度就反映了其丰度（参见第 6 章）。
+
+表 7-2 对 mRNA 的检测、分析及定量
+
+| 方法 | 目标RNA的类型 | 同时定量的目标RNA的数量 | 用途 | 缺点 |
+| --- | --- | --- | --- | --- |
+| Northern杂交 | mRNA | 通常为一个,最多几个。 | 主要用于估测不同组织、细胞中目标mRNA的分子质量,可用于mRNA的粗略定量。 | 需要大量RNA;只可同时检测一个或最多几个mRNA;与PCR方法相比,灵敏度差、耗时。 |
+| RNA酶保护 | mRNA | 通常为一个,但是如果使用混合探针,最多可同时检测12种mRNA。 | 主要用于对不同类型细胞或组织中目标mRNA的检测和定量。 | 需要特异性的反义杂交探针(通常带放射性)。RNA酶保护法远比Northern杂交灵敏,但灵敏度还是不如PCR法。 |
+| 传统反转录PCR | mRNA | 通常为一个,但是也可努力做到多重检测系统。 | 是检测目标RNA的高灵敏度方法,即使目标RNA在细胞中拷贝数很低也可检测。主要用于检测不同细胞和组织中mRNA的相对丰度。 | 由于反转录PCR取决于反转录步骤和扩增步骤所使用的引物,经常可能出现假阳性结果;反转录步骤变化大;另外,产物量的测定方法有很多缺陷,如低分辨率和低灵敏度。 |
+| 实时定量PCR | mRNA及miRNA | 通常为一个,但也可检测多个目标RNA,参见Stanley和Szewczuk (2005)等的研究结果,他们在单个多重反应中同时分析过72个mRNA | 是检测目标RNA的一种高灵敏及高精度的方法。即使目标RNA在细胞中拷贝数极少也适用。实时PCR比其他方法更灵敏、更快、更精确。最近10年内是检测细胞中mRNA相对丰度的主要方法。不仅可用于mRNA的检测,也可用于microRNA的检测(参见Chen et al. 2005; Benes and Castoldi 2010)。 | 市场上销售的几种商业设备采用的检测方法不同。另外,已出版了数百种描述实时定量PCR的方案。实时PCR的每个步骤都缺乏标准,导致可靠性和可重复性的比较即使可能,也很困难(Nolan et al. 2006; Derveaux et al. 2010)。对实时PCR提出了一些合理的建议和标准,规定了实时PCR结果发表所必需的最少信息量,也许会有助于解决目前的困境(Bustin et al. 2009; Bustin 2010)。 |
+
+\- RNA 酶保护（Zinn et al. 1983; Melton et al. 1984）。使用反义标记探针特异性结合 RNA 群体中的目标 RNA。使用 RNA 酶消化水解所有未能杂交的序列。余下的标记探针的量就能够反映起始总 RNA 中目标 RNA 的量。
+
+\- 反转录 PCR（RT-PCR）（Wang et al. 1989）。以 mRNA 群体作为反转录的模板，再用一对目标 RNA 特异性引物，通过传统 PCR 方法扩增目标序列。这两步酶促反应可在一步偶联反应中完成，也可分两步单独完成。在反转录 PCR 的步骤中，反应在产物的指数式增长最大循环数时停止，然后使用凝胶电泳和 Southern 杂交方法检测产物。在反转录 PCR 过程中，反应系统中加入一系列已知量的 mRNA，形成一套标准，以这些标准所生成的 DNA 产物的量来确定目标 RNA 的量。
+
+\- 实时定量 PCR（RT-qPCR）。以 mRNA 群体作为反转录的模板，再以一对目标 RNA 特异性引物，通过传统 PCR 方法扩增目标序列。这两步酶促反应可在一步偶联反应中完成，也可分两步单独完成。PCR 产物的量与能发光的荧光标记分子成正比，可用于检测和定量所研究的 mRNA。荧光强度的测量是实时进行的。
+
+如今，定量细胞 RNA 标准的方法是实时定量反转录 PCR（RT-qPCR）（Van Guilder et al. 2008）。RT-qPCR 在装备有能监测检测分子所发出荧光的系统的热循环仪上进行。有多种不同的技术方法，最常见的有 TaqMan（Applied Biosystems 公司产品）、LightCycler（Roche 公司产品）、LUX（Life Technologies 公司产品）、Molecular Beacons 及 SYBR Green 等。对这些技术方法的详细讨论请参见第 9 章。
+
+其他用于测定 mRNA 5'端和 3'端序列的基于 PCR 的技术有 5'-RACE(方案 9) 和 3'-RACE(方案 10) 等。
+
+![](images/page_390_image_7.jpg)
+
+## PCR 中的污染
+
+PCR 实验中经常遇到的一个问题是外源 DNA 片段的污染, 这些污染的 DNA 片段可作为模板而扩增得到产物。污染毫无例外的都是由于研究者或其同事的疏忽造成的, 这些粗心大意者把靶 DNA 弄进了仪器、溶液及 PCR 反应中用到的酶里面。麻烦的第一个征兆是在没有模板 DNA 的阴性对照中也总能扩增出目标产物。一旦如此, 所有的扩增出的产物都值得怀疑。根据我们的经验, 这个时候去探寻污染源是毫无意义的, 更简单、代价更小、破坏性更小的做法是把所有的溶液、试剂及其他用到的东西都丢弃掉, 把仪器设备擦干净去掉污染源, 并采取下述的步骤以降低将来发生污染的可能性。
+
+## 实验室
+
+最理想的是，在一个独立的实验室中配制 PCR 反应体系，这个房间得有一套设备和冰箱等，以储备缓冲液和酶。大多数研究者更实际的做法是:在实验室里划定一个特别的区域，用于配制 PCR 反应体系。PCR 反应配制的地方要有层流和紫外灯。层流柜不用的时候，要打开紫外灯。在层流柜中放一台小离心机、一次性手套、试剂和一套移液器，这套移液器只用于配制 PCR 反应体系。由于自动移液器的活塞是污染的一个主要来源，因此，用于吸取 PCR 组分的正排量移液器得配备一次性吸头和活塞。
+
+另外一种方法是为自动气压式移液器配备带滤芯的灭菌一次性吸头（如 ART 气溶胶阻滞吸头，Research Products International 公司产品）。吸头和管子开包就使用，不宜高压灭菌。PCR 仪要放在实验室的特定部位，与配制 PCR 反应体系的层流柜隔绝。
+
+## 配制和操作 PCR 的原则
+
+下面列出了配制和操作 PCR 的一些原则。打算做 PCR 的研究者必须对这些原则有充分理解并切实遵循。
+
+- 指定配制 PCR 体系的区域尽量减少物品的运入和运出。
+- 在此区域工作时戴手套，并经常更换。戴面具和头套，以减少面部皮肤和头发细胞来源的污染。
+- 建立起个人单独使用的一套试剂及一次性用品（包括 PCR 管、矿物油、蜡珠等）。使用新的玻璃器皿、塑料器具及移液器，这些用品没有在实验室的 DNA 环境中暴露过，用这些物品配制及储存溶液。缓冲液和酶要分装成小份，放在靠近层流柜的冰箱的特定区域中。使用后剩余的小份试剂丢弃不用，配制 PCR 成分的那些试剂不要用于其他实验。
+- 在打开装有 PCR 试剂的离心管前，先用层流柜中的小离心机短暂离心（10s），把液体离心到管底。这样可以减少对手套和移液器的污染。
+- 在自己的实验台上稀释 DNA 模板，只把需要使用的稀释液带入 PCR 配制区。
+- 在完成 PCR 扩增后，不要把装有扩增产物的管子带入 PCR 配制区，而应该在你自己的实验台上操作后续步骤。
+- PCR 级的水是所有 PCR 反应所必需的，不含离子、盐、核酸酶，pH 中性。可从 Ambion 公司和其他供应商购买。
+
+## 去除溶液和设备的污染
+
+对试剂（无 dNTP 的缓冲液和水）采用 254nm 波长的紫外线照射可以灭活其中的污染 DNA。紫外线照射可使双链 DNA 中邻近的嘧啶碱基形成二聚体，从而使得污染 DNA 不再能够成为 PCR 反应的模板。使用商业化的紫外交联仪（如 Stratalinker，Agilent 公司产品），透明的白色离心管内的溶液很容易完成照射处理（200～300mJ/cm² 照射 5～20min）。dNTP 对紫外线照射具有抗性，但是 Taq DNA 聚合酶不具有抗性。引物对紫外照射的敏感性差别很大，无法预测（Ou et al. 1991）。
+
+紫外照射去除小型设备（如架子、移液器等）外露面的污染。工作区、离心机、PCR仪的非金属表面可用弱漂白剂溶液（如10%的次氯酸钠）处理去污染（Prince and Andrus 1992），或使用商业化的产品（如Ambion公司的DNAZap）来处理。
+
+## 阻止来自其他 PCR 产物的污染
+
+尿嘧啶 N-糖基酶（Ung）可用于摧毁本次 PCR 反应中污染的上一次 PCR 反应的产物（Longo et al. 1990；Thornton et al. 1992；综述参见 Hartley and Rashtchian 1993）。DNA 中的 dU 代替 dT 掺入后，尿嘧啶 N-糖基酶就可切开 DNA 中的尿嘧啶-糖苷键，但是这个酶不会切割 RNA 中的 rU 和双链 DNA 中的 dT 残基。防污染程序先是在 PCR 反应中用 dUTP 代替 dTTP，这种替代对 PCR 反应的特异性及 PCR 产物的分析影响极小。但是，PCR 产物的量会略有减少（Persing 1991）。当下次的 PCR 体系用尿嘧啶 N-糖基酶短暂处理后，含有尿嘧啶残基的污染 DNA 就会被摧毁。对于从大批量样本中扩增少数 DNA 片段的 PCR 反应，如基因组筛选，使用 dUTP 和尿嘧啶 N-糖基酶控制污染会非常有效。但需要认识到的是，使用尿嘧啶 N-糖基酶控制污染的效果并不是绝对的（Niederhauser et al. 1994），它只是整个控制污染方法体系中的一个组成部分。
+
+## 参考文献
+
+- Ahokas H, Erkkila MJ. 1993. Interference of PCR amplification by the polyamines, spermine and spermidine. PCR Methods Appl 3: 65–68.
+- Alwine JC, Kemp DJ, Stark GR. 1977. Method for detection of specific RNAs in agarose gels by transfer to diazobenzyloxymethyl-paper and hybridization with DNA probes. Proc Natl Acad Sci 74: 5350–5354.
+- Bachmann B, Luke W, Hunsmann G. 1990. Improvement of PCR amplified DNA sequencing with the aid of detergents. Nucleic Acids Res 18: 1309. doi: 10.1093/nar/18.5.1309.
+- Baldino F Jr, Chesselet MF, Lewis ME. 1989. High-resolution in situ hybridization histochemistry. Methods Enzymol 168: 761–777.
+- Barnes WM, 1994. PCR amplification of up to 35-kb DNA with high fidelity and high yield from $\lambda$ bacteriophage templates. Proc Natl Acad Sci 91: 2216-2220.
+- Benes V, Castoldi M. 2010. Expression profiling of microRNA using real-time quantitative PCR, how to use it and what is available. Methods 50:244–249.
+- Beutler E, Gelbart T, Kuhl W. 1990. Interference of heparin with the polymerase chain reaction. BioTechniques 9: 166.
+- Bookstein R, Lai CC, To H, Lee WH. 1990. PCR-based detection of a polymorphic BamHI site in intron 1 of the human retinoblastoma (RB) gene. Nucleic Acids Res 18: 1666. doi: 10.1093/nar/18.6.1666.
+- Brock TD. 1995a. The road to Yellowstone—And beyond. Annu Rev Microbiol 49: 1–28.
+- Brock TD. 1995b. Photographic supplement to "The road to Yellowstone—And beyond." Available from T.D. Brock, Madison, WI.
+- Brock TD. 1997. The value of basic research: Discovery of Thermus aquaticus and other extreme thermophiles. Genetics 146: 1207–1210.
+- Bustin SA. 2010. Why the need for qPCR publication guidelines?—The case for MIQE. Methods 50: 217–226.
+- Bustin SA, Benes V, Garson JA, Hellemans J, Huggett J, Kubista M, Mueller R, Nolan T, Pfaffl MW, Shipley GL, et al. 2009. The MIQE guidelines: Minimum information for publication of quantitative real-time PCR experiments. Clin Chem 55: 611–622.
+- Chakrabarti R, Schutt CE. 2001. The enhancement of PCR amplification by low molecular weight amides. Nucleic Acids Res 29: 2377–2381.
+- Chen B-Y, Janes HW, Chen S. 2002. Computer programs for PCR primer design and analysis. Methods Mol Biol 192: 19–29.
+- Chen C, Ridzon DA, Broomer AJ, Zhou Z, Lee DH, Nguyen JT, Barbisin M, Xu NLK, Mahuvakar VR, Andersen MR, et al. 2005. Real-time quantification of microRNAs by stem-loop RT-PCR. Nucleic Acids Res 33:e179.
+- Cheng S, Chang SY, Gravitt P, Respess R. 1994a. Long PCR. Nature 369:684–685.
+- Cheng S, Fockler C, Barnes WM, Higuchi R. 1994b. Effective amplification of long targets from cloned inserts and human genomic DNA. Proc Natl Acad Sci 91: 5695–5699.
+- Chevet E, Lemaitre G, Katinka MD. 1995. Low concentrations of tetramethylammonium chloride increase yield and specificity of PCR. Nucleic Acids Res 23: 3343–3344.
+- Chien A, Edgar DB, Trela JM. 1976. Deoxyribonucleic acid polymerase from the extreme thermophile Thermus aquaticus. J Bacteriol 127:1550–1557.
+- Cline J, Braman JC, Hogrefe HH. 1996. PCR fidelity of pfu DNA polymerase and other thermostable DNA polymerases. Nucleic Acids Res 24:3546–3551.
+- Cohen J. 1994. 'Long PCR' leaps into larger DNA sequences. Science 263:1564–1565.
+- Derveaux S, Vandesompele J, Hellemans J. 2010. How to do successful gene expression analysis using real-time PCR. Methods 50: 227–230.
+- Don RH, Cox PT, Wainwright BJ, Baker K, Mattick JS. 1991. "Touchdown" PCR to circumvent spurious priming during gene amplification. Nucleic Acids Res 19: 4008. doi: 10.1093/nar/19.14.4008.
+- Eckert KA, Kunkel TA. 1993. Effect of reaction pH on the fidelity and processivity of exonuclease-deficient Klenow polymerase. J Biol Chem 268: 13462–13471.
+- Gelfand DH, White TJ. 1990. Thermostable DNA polymerases. In PCR protocols: A guide to methods and applications (ed Innes MA, et al.), pp. 121–141. Academic, San Diego.
+- Gustafson CE, Alm RA, Trust TJ. 1993. Effect of heat denaturation of target DNA on the PCR amplification. Gene 123: 241–244.
+- Harris S, Jones DB. 1997. Optimisation of the polymerase chain reaction. Br J Biomed Sci 54: 166–173.
+- Hartley JL, Rashtchian A. 1993. Dealing with contamination: Enzymatic control of carryover contamination in PCR. PCR Methods Appl 3: S10–S14.
+- Hecker KH, Roux KH. 1996. High and low annealing temperatures increase both specificity and yield in touchdown and stepdown PCR. BioTechniques 20: 478–485.
+- Henke W, Herdel K, Jung J, Schnorr D, Loenig SA. 1997. Betaine improves the PCR amplification of GC-rich sequences. Nucleic Acids Res 25:3957–3958.
+- Hoppe BL, Conti-Tronconi BM, Horton RM. 1992. Gel-loading dyes compatible with PCR. BioTechniques 12: 679–680.
+- Hu G. 1993. DNA polymerase-catalyzed addition of nontemplated extra nucleotides to the 3' end of a DNA fragment. DNA Cell Biol 12:763–770.
+- Hung T, Mak K, Fong K. 1990. A specificity enhancer for polymerase chain reaction. Nucleic Acids Res 18: 4953. doi: 10.1093/nar/18.16.4953.
+- Krawetz SA, Pon RT, Dixon GH. 1989. Increased efficiency of the Taq polymerase catalyzed polymerase chain reaction. Nucleic Acids Res 17:819. doi: 10.1093/nar/17.2.819.
+- Lawyer FC, Stoffel S, Saiki RK, Chang SY, Landre PA, Abramson RD, Gelfand DH. 1993. High-level expression, purification, and enzymatic characterization of full-length Thermus aquaticus DNA polymerase and a truncated form deficient in 5' to 3' exonuclease activity. PCR Methods Appl 2: 275–287.
+- Linz U, Delling U, Rubsamen-Waigmann H. 1990. Systematic studies on parameters influencing the performance of the polymerase chain reaction. J Clin Chem Clin Biochem 28: 5–13.
+- Liu W, Saint DA. 2002a. A new quantitative method of real time reverse transcription polymerase chain reaction assay based on simulation of polymerase chain reaction kinetics. Anal Biochem 302:52–59.
+- Liu W, Saint DA. 2002b. Validation of a quantitative method for real time PCR kinetics. Biochem Biophys Res Commun 294: 347–353.
+- Longo MC, Berninger MS, Hartley JL. 1990. Use of uracil DNA glycosylase to control carry-over contamination in polymerase chain reactions. Gene 93: 125–128.
+- Lu YH, Nègre S. 1993. Use of glycerol for enhanced efficiency and specificity of PCR amplification. Trends Genet 9: 297.
+- Lubin MB, Elashoff JD, Wang SJ, Rotter JI, Toyoda H. 1991. Precise gene dosage determination by polymerase chain reaction: Theory, methodology, and statistical approach. Mol Cell Probes 5: 307–317.
+- Melton DA, Krieg PA, Rebagliati MR, Maniatis T, Zinn K, Green MR. 1984. Efficient in vitro synthesis of biologically active RNA and RNA hybridization probes from plasmids containing a bacteriophage SP6 promoter. Nucleic Acids Res 12: 7035–7056.
+- Mullis KB. 1997. Nobel Lectures Chemistry 1991–1995 (ed Malstrom BG). World Scientific, Hackensack, NJ.
+
+## 网络资源
+
+- GeneFisher2 software http://bibiserv.techfak.uni-bielefeld.de/genefisher2/
+- OligoAnalyzer software www.itdna.com/analyzer/Applications/OligoAnalyzer
+- PCR primer design www.humgen.nl/primer\_design.html
+- Primer-Blast software www.ncbi.nlm.nih.gov/tools/primer-blast/
+- Primer3-Plus software www.bioinformatics.nl/cgi-bin/primer3plus/primer3plus.cgi
+
+## 方案 1 基础 PCR
+
+本方案概述了普通 PCR 所需的试剂和步骤。
+
+\- 引物。每条引物的长度应该为 20～30 个核苷酸，含有数量大致相同的 4 个碱基，GC 碱基平均分配，不易形成稳定的二级结构。具体细节参见在本章导言中“基础 PCR 反应中的引物设计”。如下面讨论的，限制性位点能够与设计引物合为一体。使用该类型引物扩增产生的 DNA 在两末端带有酶切位点，可方便用于克隆。
+
+自动 DNA 合成仪合成的寡核苷酸引物无需进一步纯化即可用于标准 PCR。如果引物经过市售树脂柱色谱（如 NENSORB; NEN Life Science 公司产品）或变性聚丙烯酰胺凝胶纯化，从哺乳动物基因组模板扩增单拷贝序列的效率会更高（在第 2 章，方案 3 中）。
+
+\- 模板 DNA。模板可以是 DNA 片段、制备的基因组 DNA、重组质粒，或者是任何其他含有 DNA 的样本。模板 DNA 溶解于含有低浓度 EDTA（<0.1mmol/L）的 10mmol/L Tris-Cl(pH7.6)。
+
+\- 耐热的 DNA 聚合酶。Taq DNA 聚合酶是适用于大多数形式的 PCR 扩增阶段的标准的、合适的酶。但是，当 3'端错配引物延伸可疑时，可优先考虑具有 3'→5'校正活性的热稳定 DNA 聚合酶（Chiang et al. 1993）（参见前页“热稳定 DNA 聚合酶”部分和信息栏“Taq DNA 聚合酶”）。
+
+Taq DNA 聚合酶储存于含有 50% 甘油的储存缓冲液中。该溶液相当黏稠，难以用移液器进行准确吸加。最好的办法是用离心机将盛有酶的离心管在  $4^{\circ}$ C 高速离心 10s，然后用正排量移液器吸取所需酶量。
+
+\- 自动移液器。自动微量移液器再配以带滤芯的吸头是 PCR 实验的必备工具。带有隔水屏障的一次性带滤芯的吸头可防止样品液体不小心流入微量移液器，同时减少 PCR 与 DNA 样品在实验过程中存在交叉污染的可能性。带滤芯的吸头可以从几家商业公司购买（例如，ART 带滤芯的吸头可以从 Molecular BioProducts 公司购买）。
+
+\- 正排量移液器。正排量移液器装置内的活塞直接与样品液体接触，用于准确量取高黏度的液体。
+
+\- 微量离心管或微量滴定板。紧贴于 PCR 仪模块的薄壁塑料管被应用于扩增反应。这种薄壁塑料离心管热传导性能好，大大缩短了达到程序设定温度的时间间隔。
+
+\- 热循环仪。能够按照指定扩增程序进行扩增的热循环仪是必需的。由不同商业公司销售的大量可编程热循环仪经 PerkinEler 公司许可被应用于 PCR。这些 PCR 仪的选择取决于研究人员的喜好、经费预算及仪器的使用范围。在购买 PCR 仪之前，我们建议尽可能多地征求意见以发现不同机型的优缺点。
+
+如果有必要的话，通过使用另一对结合到目标 DNA 扩增片段内的序列引物进行第二轮扩增以提高所需产物的产量。在第二轮巢式扩增后，几乎所有含有目标 DNA 片段的产物都可以通过溴化乙锭染色进行检测。也可以参照方案 10 末尾中鉴定和纯化 PCR 扩增产物的那部分内容。
+
+![](images/page_393_image_14.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+▲为了减少污染外源 DNA 的概率，要准备和使用 PCR 专用试剂和耗材。所使用的玻璃器皿要在  $150^{\circ}$ C 烘烤 6h，塑料器皿要高压灭菌。至于更多的信息，参看本章介绍中 PCR 污染部分。
+
+## 试剂
+
+含有  $MgCl_{2}$  的扩增缓冲液 (10×)，由 Taq DNA 聚合酶的生产厂商供应
+
+Bystander DNA
+
+参看步骤1中的对照表格
+
+氯仿
+
+含有 4 种 dNTP 的 dNTP 溶液，每种浓度为 20mmol/L（pH8.0）
+
+溴化乙锭或 SYBR Gold
+
+水溶正向引物（20μmol/L）及反向引物（20μmol/L）
+
+参看本章导言中有关引物的讨论
+
+使用以下公式计算寡核苷酸的分子质量:
+
+$$
+M _ {\mathrm{r}} = (C \times 2 8 9) + (A \times 3 1 3) + (T \times 3 0 4) + (G \times 3 2 9)
+$$
+
+式中，C 代表寡核苷酸内胞嘧啶脱氧核苷的残基数；A 代表寡核苷酸内腺嘌呤脱氧核苷的残基数；T 代表寡核苷酸内胸腺嘧啶脱氧核苷的残基数；G 代表寡核苷酸内胞嘧啶脱氧核苷的残基数；20mer 分子质量大概为 6000Da；100pmol 的寡核苷酸相当于约等于  $0.6\mu g$ 。
+
+PCR 级水
+
+PCR 级水不含离子、盐、核酸酶，具有平衡的 pH。Ambion 公司及其他供应商有商业化供应的 PCR 级水。
+
+聚丙烯酰胺凝胶或琼脂糖胶（参见步骤4）
+
+模板 DNA
+
+在含有低浓度 EDTA（<0.1mmol/L）的 10mmol/L Tris-Cl (pH 7.6) 中按以下浓度进行:
+
+| 哺乳动物基因组 DNA | 100μg/mL |
+| --- | --- |
+| 酵母基因组 DNA | 1μg/mL |
+| 细菌基因组 DNA | 0.1μg/mL |
+| 质粒 DNA | 1~5ng/mL |
+
+耐热 DNA 聚合酶（来自 Agilent、Life Technologies、NEB 及其他商业供货商）
+
+## 设备
+
+用于自动移液器的带滤芯的吸头
+
+微量离心管（0.5mL，扩增反应用薄壁管）或者微孔板
+
+聚丙烯酰胺或琼脂糖凝胶电泳装置
+
+正排量移液器
+
+可编程所需扩增程序的热循环仪
+
+如果 PCR 仪没有配置加热盖，在 PCR 过程中，离心管内 PCR 反应混合液的上层应加矿物油或石蜡油防止液体蒸发。石蜡油不仅有防止液体蒸发的作用，还有使 PCR 反应体系内各组分（如引物与模板）在反应液加热变性前的阻隔效应。这种阻隔可防止反应初始阶段引物的非特异结合（参见方案 2）。
+
+![](images/page_394_image_28.jpg)
+
+## 方法
+
+1. 按照以下次序，将各组分加在 $0.5\mathrm{mL}$ 灭菌管、扩增管或灭菌滴定板的孔内混合:
+
+| 10×扩增缓冲液 | 5μL |
+| --- | --- |
+| 20mmol/L 4 种 dNTP 混合液(pH8.0) | 1μL |
+| 20μmol/L 正向引物 | 2.5μmol/L |
+| 20μmol/L 反向引物 | 2.5μmol/L |
+| 耐热的 DNA 聚合酶(1~5U/μL) | 1~2U |
+| 模板 DNA | 5~10μL |
+| 加 ${\mathrm{H}}_{2}\mathrm{O}$ 至终体积为 | 50μL |
+
+下表提供了 PCR 的标准反应条件
+
+| $Mg^{2+}$ | KCl | dNTP | 引物 | DNA 聚合酶 | 模板 DNA |
+| --- | --- | --- | --- | --- | --- |
+| 1.5mmol/L | 50mmol/L | 0.4mmol/L | 1μmol/L | 1~5U | 1pg~1μg |
+
+反应缓冲液在  $25^{\circ}C$  测定 pH 应该为 8.3。因为 Tris pK $_{a}$  的高温依赖性，反应缓冲液的 pH 会在  $72^{\circ}C$  降至约 7.2 (Good et al. 1966; Ferguson et al. 1980)。模板 DNA 的复杂性不同，其加入量根据序列的复杂性也会有所不同。至于哺乳动物 DNA，每个反应可使用多达  $1.0\mu g$  模板 DNA 的量，酵母、细菌和质粒 DNA 标准的模板量分别为 10ng、1ng 和 10pg。
+
+每组 PCR 都要设有阴性和阳性对照，具体参见下表。阳性对照用于检测 PCR 的效率，而阴性对照则用于检测是否污染了含有靶序列的 DNA。
+
+<table><tr><td></td><td>Bystander  $DNA^a$ </td><td>模板  $DNA^b$ </td><td>靶  $DNA^c$ </td><td>特异性引物 $^d$ </td></tr><tr><td colspan="5">阳性对照</td></tr><tr><td>1</td><td>+</td><td>—</td><td>+</td><td>+</td></tr><tr><td>2</td><td>—</td><td>—</td><td>+</td><td>+</td></tr><tr><td colspan="5">阴性对照</td></tr><tr><td>3</td><td>—</td><td>—</td><td>—</td><td>+</td></tr><tr><td>4</td><td>+</td><td>—</td><td>—</td><td>+</td></tr></table>
+
+a. Bystander DNA 不含靶序列。它应该和模板 DNA 在复杂度、大小和浓度等各个方面都相似。
+
+b. 模板 DNA 是试验中的 DNA。
+
+c. 含有靶序列的靶 DNA。它可以是重组 DNA 克隆、纯化的 DNA 片段或者是基因组样本。它应该加到阳性对照中，浓度应该和预计的模板 DNA 的浓度相当。常常要建立一系列包含不同含量的靶 DNA 的阳性对照，其范围包括了涵盖预计的模板 DNA 的含预计量。靶序列应该事先进行适当稀释，这些操作应在实验室中的特定区域内完成，这个区域不同于其他 PCR 试剂的区域。这些预防措施降低了 PCR 的特定区域中仪器和塑料器皿被污染的可能性。
+
+d. 特异性引物是与靶 DNA 片段互补的寡核苷酸引物。
+
+2. 如果 PCR 仪没有配置加热盖，应在反应混合液上层加一滴轻矿物油（约 $50 \mu \mathrm{L}$），防止样品在反复的冷热循环中蒸发。如果使用热启动方案，也可以选择在试管中加入一滴石蜡（参见方案 2），然后将试管或微量滴定板放到 PCR 仪上。
+
+3. 按照以下方法进行 PCR 扩增, 变性、复性、聚合反应的时间和温度如下表:
+
+| 循环数 | 变性 | 复性 | 聚合 |
+| --- | --- | --- | --- |
+| 30个循环 | 94°C, 30s | 55°C, 30s | 72°C, 1min |
+| 末轮循环 | 94°C, 1min | 55°C, 30s | 72°C, 1min |
+
+这些时间适用于在 0.5mL 薄壁管中配制，在诸如 PerkinElmer 9600 或 9700、Mastercycler (Eppendorf) 和 PTC-100 (MJ Research) 等 PCR 仪上运行的 50μL 反应体系。时间和温度可以根据其他类型的设备和反应体积进行调节整。
+
+通常，每 1000bp 长 DNA 的聚合反应进行时间为 1min。
+
+大多数 PCR 仪设置的最后一个结束程序是扩增样品温育在  $4^{\circ}$ C 温育直到样品从 PCR 仪上取走。样品可以在该温度保存过夜，但是以后应该储存于  $-20^{\circ}$ C.
+
+4. 从检测的反应混合液及 4 个对照反应中抽取 $5 \sim 10 \mu \mathrm{L}$ 样品, 通过琼脂糖或聚丙烯酰胺凝胶电泳分析扩增结果 (参见第 2 章)。确定使用适合大小的 DNA markers。用溴化乙锭 (EB) 或者 SYBR Gold 染色凝胶来查看 DNA。
+
+一次成功的扩增反应应该产生清晰可见的、预期大小的 DNA 片段，条带可以通过 DNA 测序、Souhern 杂交和 /或限制性内切核酸酶酶切图谱来鉴定。
+
+如果以上这些鉴定都表明扩增产物是正确的,那么含有两个阳性对照样品(管1和管2)及检测的待检模板DNA的凝胶泳道应该出现具有正确分子质量大小的明显DNA条带,而阴性对照应该不出现这条带。相反,如果扩增产物不正确,参见“疑难解答”。
+
+5. 若用矿物油覆盖反应液（步骤 2），可用  $150 \mu L$  氯仿抽提去除矿物油。
+
+水相中含有扩增的 DNA，在接近弯月面处将形成胶束，可以使用自动移液器将其转移到新的离心管中。
+
+许多时候，例如，用 Centricon 微量离心机纯化扩增产物或进一步克隆扩增产物，都需要在操作之前把这种矿物油从样品中去除。
+
+▲不要尝试在微孔板中进行氯仿抽提，因为微孔板的塑料不能耐受有机溶剂的腐蚀。
+
+![](images/page_396_image_4.jpg)
+
+## 疑难解答
+
+当第一次使用新的模板 DNA、新引物或新的耐热 DNA 聚合酶进行 PCR 时，扩增效果往往不会是最佳的。经常需要微调反应体系以抑制非特异性扩增和/或提高扩增 DNA 的产量。以下步骤列举了一些平常遇到的问题和解决这些问题的一些建议（注意:“疑难解答”部分也适用于本章的后续方案）。
+
+问题（步骤 4）:没有扩增产物。
+
+解决方案:有可能在配制 PCR 体系或编制 PCR 仪程序，或者是检测扩增 DNA 时使用的方法出现错误，尝试按以下一个或多个方法解决。
+
+- 通过设定对照 PCR，用新的模板和试剂检测试剂。使用一个你或他人以前用过的模板和一套引物。
+- 使用引物设计软件检测引物的特异性。如果有必要的话，重新设计引物。
+- 检测 PCR 仪是否设置了正确的温度和循环次数。
+- 确保胶上包含用于分析 PCR 产物的对照 DNA。
+- 检测模板 DNA 是否未被降解。
+
+问题（步骤 4）:没有扩增产物——一条或一对引物的靶序列没有出现在模板 DNA 中。
+
+解决方案:检查合成的引物序列是否正确，以及引物是否与模板 DNA 的正确链互补。
+
+问题（步骤 4）:因为复性温度不合适，导致扩增产物的产量很少。
+
+解决方案:设置 PCR 仪的程序，按照  $2^{\circ}$ C 升高的梯度温度进行。
+
+问题（步骤 4）:因为 PCR 反应的循环数不够导致扩增产物的产量很少。
+
+解决方案:额外运行 5 个循环。当使用总的哺乳动物 DNA 作为模板时，有必要建立再扩增反应，即第一轮 PCR 产物作为第二轮的模板。
+
+问题（步骤 4）:因为  $MgCl_{2}$  浓度不正确导致扩增产量很少。
+
+解决方案:使用不含  $MgCl_{2}$  的 10×扩增缓冲液，通过设置含有不同浓度  $\mathrm{Mg}^{2+}(1.5\sim5.0\mathrm{mmol/L})$ ，按照 0.5mmol/L 的增量)的反应体系来优化  $Mg^{2+}$  的浓度。
+
+问题（步骤 4）:因为反应体系中 dNTP 的降解或过量导致扩增产物产量很少。
+
+解决方案:dNTP 溶液对于反复冻融十分敏感。分别使用旧的和新的批次的 dNTP 建立对照反应，过量的 dNTP 可以抑制 PCR。
+
+问题（步骤 4）:因为延伸时间太短导致扩增产物的产量很少。
+
+解决方案:延伸时间应该大约等于扩增片段的长度（每分钟相对于千碱基）。
+
+问题（步骤 4）:因为变性时间不正确或 Taq DNA 聚合酶不足量导致扩增产物的产量很少。
+
+解决方案:确保变性时间为 2min，使用新批次的 Taq DNA 聚合酶。
+
+问题（步骤 4）:因为模板量不够或者模板降解导致扩增产物的产量很少。
+
+解决方案:通过凝胶电泳检测模板 DNA 的浓度及完整性。
+
+问题（步骤 4）:因为样品蒸发导致扩增产物的产量很少。
+
+解决方案:检查反应的离心管盖子是否盖紧、PCR 仪的盖子是否封紧。如果使用板子，在每次运行后检测每孔的水平。确保 PCR 仪的盖子是否拧紧压住板子。使用硬的、特制的板子。
+
+问题（步骤 4）:由于形成引物二聚体导致扩增产物的产量很少。
+
+解决方案:尝试以下的一种或几种方法:
+
+- 使用引物设计软件检测引物的特异性。如果有必要，重新设计引物。
+- 提高复性温度和/或者降低反应中 $\mathrm{Mg}^{2+}$ 的浓度。
+- 确保 PCR 所用引物的浓度在 0.1～1μmol/L。
+
+问题（步骤 4）:由于模板 DNA 不纯导致扩增产物的产量很少。
+
+解决方案:进行 PCR 时确保模板 DNA 中没有乙醇。
+
+问题（步骤 4）:由于模板 DNA 中高度的二级结构导致扩增产物的产量很少。
+
+解决方案:使用降落 PCR 或热启动 Taq DNA 聚合酶（参照方案 2 和方案 3）
+
+问题（步骤 4）:由于模板富含 GC 残基导致扩增产物的产量很少。
+
+解决方案:使用降落 PCR 或热启动 Taq DNA 聚合酶，或者添加剂如甜菜碱或二甲基亚砜（DMSO）（参见本章导言，也可参照方案 2 和方案 3）
+
+问题（步骤 4）:由于靶 DNA 与杂 DNA 的比率太高或太低导致扩增产物的产量很少。
+
+解决方案:复杂的 DNA，如哺乳动物基因组 DNA，靶 DNA 与杂 DNA 的比率十分低，大约为  $1:10^{7}$ ，有必要将第一轮的扩增产物作为第二轮扩增的模板。
+
+问题（步骤 4）:因为引物与靶 DNA 的比例欠佳导致扩增产物的产量很低。
+
+解决方案:PCR 所用引物的浓度为  $0.1 \sim 1 \mu mol/L$ 。使用引物的浓度过高会导致引物二聚体的形成。如果扩增片段很小（<100bp），使用低浓度的引物也许量就不够。
+
+问题（步骤 4）:存在很多短的、强的扩增产物，故引物可能会扩增模板 DNA 中的重复序列。
+
+解决方案:用 BLAST 比对引物和模板。若有必要，更换引物。
+
+问题（步骤 4）:存在很多短的、强的扩增产物，故反应条件不是最佳的。
+
+解决方案:多种不足之处都会产生这种结果。以下是一种或几种可能的解决方案。
+
+- 提高复性温度、复性时间、延伸时间或延伸温度
+- 降低 PCR 的循环数到最小
+- 调整 KCl 的浓度至 70\~100mmol/L，调整 MgCl₂ 的浓度至 1.75mmol/L。
+- 降低引物、模板 DNA 或 Taq 聚合酶的总量
+
+问题（步骤 4）:具有不同大小的产物会在胶上形成拖尾，表明引物、Taq 聚合酶或模板的浓度过高。
+
+解决方案: 建立一系列的 PCR 反应体系: 引物浓度逐渐降低和/或 Taq 聚合酶量逐渐减少。
+
+问题（步骤 4）:具有不同大小的产物会在胶上形成拖尾，表明引物的非特异性复性。
+
+解决方案:使用热启动 DNA 聚合酶。
+
+问题（步骤 4）:具有不同大小的产物会在胶上形成拖尾，表明  $Mg^{2+}$  的浓度不是最佳的。
+
+解决方案:按照 0.5mmol/L 的增量在 1.5～5.0mmol/L 之间优化  $Mg^{2+}$  的浓度。
+
+问题（步骤 4）:扩增高 GC 含量模板。
+
+解决方案:参考方案 4，使用添加剂来解决这些困难。有关 PCR 优化和 “疑难解答” 的进一步综合建议，参见 Cha 和 Thilly(1993)、Roux(2003) 和 Radstrom 等(2003)。
+
+## 参考文献
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">Cha RS, Thilly WG. 1993. Specificity, efficiency, and fidelity of PCR. PCR Methods Appl 3: S18–S29.</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">Chiang CM, Chow LT, Broker T. 1993. Identification of alternately-spliced mRNAs and localization of 5' ends by polymerase chain reaction amplification. Methods Mol Biol 15: 189–198.</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">Ferguson WJ, Braunschweiger KI, Braunschweiger WR, Smith JR, McCormick JJ, Wasmann CC, Jarvis NP, Bell DH, Good NE. 1980. Hydrogen ion buffers for biological research. Anal Biochem 104:300–310.</span></small>
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">Good NE, Winget GD, Winter W, Connolly TN, Izawa S, Singh RM. 1966. Hydrogen ion buffers for biological research. Biochemistry 5: 467–477.<br>Rådström P, Löfström C, Lövenklev M, Knutssen R, Wolffs P. 2003. Strategies for overcoming PCR inhibition. In PCR primer: A laboratory manual, 2nd ed. (ed Dveksler GS, Dieffenbach CW), pp. 149–161. Cold Spring Harbor Laboratory Press, Cold Spring Harbor, NY.<br>Roux KH. 2003. Optimization and troubleshooting in PCR. In PCR primer: A laboratory manual, 2nd ed. (ed Dveksler GS, Dieffenbach CW), pp. 35–42. Cold Spring Harbor Laboratory Press, Cold Spring Harbor, NY.</span></small>
+
+## 方案 2 热启动 PCR
+
+在次优的复性温度时出现的引物错配会导致合成非特异性的PCR产物。当用低浓度的诸如哺乳类动物基因组DNA（Chou et al. 1992）等复杂模板进行PCR时，脱靶扩增会成为一个很严重的问题。在这类反应中，错配的可能性会随着引物:模板DNA的比率升高而增加。
+
+热启动 PCR 的目的是优化所需 PCR 反应扩增产物的产率，同时抑制非特异性扩增和引物二聚体的形成。这可以通过后加 PCR 中的一个必需组分来实现——例如，DNA 聚合酶或者引物，直到反应温度加热到可以抑制引物之间或引物与模板的非特异区域结合时再加入。
+
+在热启动 PCR 最初的描述中(D'Aquila et al. 1991; Erlich et al. 1991; Ruano et al. 1992)，模板 DNA 和引物混合在一起并保持在引物与模板链非特异性结合阈值以上的温度，然后加入除了耐热 DNA 聚合酶以外 PCR 延伸所需的所有组分。向预热的反应体系中加入聚合酶启动热循环。在 PCR 的第一个循环之前消除预热过程会减少寡核苷酸引物非特异性复性的机会，而不加 DNA 聚合酶可以防止错配引物的延伸。
+
+在最开始，热启动的方法是很困难的，因为反应混合物需在管内配制，而管的温度要在加热块上才能保持。现在有更好的方法可以实现热启动，比如在反应体系成分间制造一个物理屏障（Chou et al. 1992；Tanzer et al. 1999）。引物、$\mathrm{Mg}^{2+}$、dNTP及缓冲液可以在室温下于反应管底部混合，之后用融化的石蜡覆盖（例如，AmpliWax PCR Gem 50 or 100，可从Applied Biosystems, Life Technologies或其他供应商获取），商品化的石蜡可在 $53\sim 55^{\circ}\mathrm{C}$ 下融化，或者可以选择在反应离心管中预加入一滴石蜡（Molecular BioProducts）。融化后，蜡在预混合的反应混合物上形成一层固相的保护封印，而剩下的成分加入到石蜡封印上面。PCR中第一个循环的变性阶段，石蜡溶解，使得石蜡封印上、下部分混合到一起。这时，石蜡漂浮在反应体系的顶部，这为扩增过程及之后的PCR产物提供了一个均一的水汽屏障。一些商家售卖的石蜡珠包含PCR反应的重要成分，如TaqBead热启动聚合酶（Promega）。除了隐藏在石蜡球中的组分，PCR扩增反应体系其他组分可以混合在一起。在热启动程序第一个变性循环中，当反应体系的温度上升到石蜡的熔点时石蜡球融化，隐藏的试剂便被释放出来。
+
+用于热启动 PCR 的其他方法也得到了发展，主要是由供应商提供。常用方法如下:
+
+1. 在 PCR 配制和预热阶段，利用中和单克隆抗体阻止 DNA 聚合酶活性（Chou et al. 1992）。许多生产商售卖的以这种方式修饰的酶都有一个可爱的名字，如 GoTaq 热启动聚合酶（Promega）、PfuUltra 热启动 DNA 聚合酶（Agilent）。
+2. 一种化学修饰的耐热 DNA 聚合酶（AmpliTaq Gold 360；Applied Biosystems）在室温下无活性，而当 DNA 模板完全变性、引物无法结合时才能被激活（Birch et al. 1996; Moretti et al. 1998）。
+3. 在低温下，具热稳定保护 4-氧代-十四烷基基团（OXT）的引物（CleanAmp; TriLink）具有空间位阻，可阻止 DNA 聚合酶掺入核苷酸。在 PCR 第一个循环时温度上升，位阻解除。在固相合成时，该保护基团被合成到定制的寡核苷酸引物上（Lebedev et al. 2008）。
+
+对于只含一对精心设计的寡核苷酸引物和简单DNA模板的优化PCR体系来说，热启动PCR是没有必要的。然而，当反应体系中的模板DNA量在 $10^{4}$ 拷贝以下，模板DNA高度复杂（如哺乳类动物基因组DNA），或者当PCR反应包含几对寡核苷酸引物的时候，热启动PCR便是需要的。在所有这些情况下，热启动PCR是首选方法，并且最好和“降落”
+
+程序联合使用（见方案3）。
+
+![](images/page_399_image_3.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+含有  $MgCl_{2}$  的扩增缓冲液（10×），由生产 Taq DNA 聚合酶的厂商提供
+
+Bystander DNA（见步骤1中的对照表）
+
+含有所有 4 种 dNTP 的 dNTP 溶液，每种浓度为 20mmol/L（pH 8.0）
+
+溴化乙锭（EB）或 SYBR Gold
+
+水溶正向引物（20μmol/L）和反向引物（20μmol/L）
+
+见本章导言中有关引物的讨论
+
+聚丙烯酰胺或琼脂糖凝胶（见步骤4）
+
+利用下面的公式计算寡核苷酸的分子质量:
+
+$$
+M _ {\mathrm{r}} = (C \times 2 8 9) + (A \times 3 1 3) + (T \times 3 0 4) + (G \times 3 2 9),
+$$
+
+式中，C 是寡核苷酸中 C 残基的数目；A 是 A 残基数目；T 是 T 残基数目；G 是 G 残基数目。20mer 的分子质量约为 6000Da；100 pmol 的寡核苷酸大约相当于 0.6μg。
+
+Taq DNA 聚合酶（来自 Agilent、Life Technologies、NEB 以及其他商家）
+
+模板 DNA
+
+用含有低浓度的 EDTA（＜0.1mmol/L）的 10 mmol/L 浓度的 Tris-Cl（pH 7.6）溶解模板 DNA 至以下浓度:
+
+| 哺乳类动物基因组 DNA | 100μg/mL |
+| --- | --- |
+| 酵母基因组 DNA | 1μg/mL |
+| 细菌基因组 DNA | 0.1μg/mL |
+| 质粒 DNA | 1~5ng/mL |
+
+## 设备
+
+AmpliWax PCR Gem 50 beads (来自 Applied Biosystems, Life Technologies 或其他商家) 用于自动移液器的带滤芯的吸头
+
+微量离心管（0.5mL，壁薄以利于扩增反应）
+
+聚丙烯酰胺或琼脂糖凝胶电泳设备
+
+正排量移液管
+
+可编程所需扩增程序的热循环仪
+
+![](images/page_399_image_28.jpg)
+
+## 方法
+
+1. 将以下试剂混合。下面给出了单个热启动反应所需的试剂的体积。充分混合以适用于实验的所有样品和对照品。
+
+<table><tr><td rowspan="2">扩增缓冲液(10×),商家售卖耐热 DNA 聚合酶时提供4 种 dNTP 溶液(pH 8.0),每种浓度为 20 mmol/L</td><td>5μL</td></tr><tr><td>1μL</td></tr><tr><td>正向引物(20μmol/L)</td><td>2.5μL</td></tr><tr><td>反向引物(20μmol/L)</td><td>2.5μL</td></tr><tr><td> $H_2O$ </td><td>加至总体积 46μL</td></tr></table>

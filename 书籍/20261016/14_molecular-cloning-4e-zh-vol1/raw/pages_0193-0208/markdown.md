@@ -1,0 +1,506 @@
+插入 Master 克隆的序列可以转移到任何携带 loxP 位点的受体载体。可以从 Clontech 公司获得工程化的用于在细菌、酵母和哺乳动物细胞中表达蛋白的受体载体。如同 Gateway 的 Destination 载体，In-Fusion 表达载体可以携带各种信号、标签和选择性标记。
+
+综上所述，In-Fusion 系统是简单、高效、快速的，可以适用于高通量项目 [例如，BioBricks 项目（见信息栏 “BioBricks 和 DNA 片段的有序组合”)]。
+
+## 在 Gateway 和 In-Fusion 系统之间进行选择
+
+如果目标是创建单个克隆或质粒文库，In-Fusion 是更好的选择，仅仅因为它可以用于任何序列已知的质粒载体。但是，如果我们的目标是创建 Master 克隆（In-Fusion）或 Entry 克隆（Gateway）文库，在这两个系统之间选择是比较困难的。两者都进行了全面优化，都是标准化的，很容易适应自动化和高通量测序。到目前为止已发表的唯一比较这两个系统优势的论文（Marsischky and LaBaer 2004）中可以获知，这两个系统的效率是相似的，虽然 In-Fusion 能够更好地处理大于 2～3kb 的克隆开放读码框。然而，目前 Gateway 有更全面的目的载体，这些都可以在研究人员之间自由共享。此外，Gateway 系统与其他重组工程技术的组合可以用于分析和修改基因表达模式（Rozwadowski et al. 2008）。另一方面，In-Fusion 通过一项称为基因组装的技术可以同时且有序地将一些 DNA 片段组装成一个单一构造（Sleight et al. 2010）。不幸的是，两套系统都不便宜。所以在开始任何大型项目前，必须找出哪些克隆/库已经可用，并对这两个系统的成本做出比较，然后制定一个令人信服的方案。
+
+## 其他克隆方法
+
+## 不依赖于连接反应克隆
+
+不依赖于连接反应克隆（LIC-PCR）（也被称为无酶克隆）可同时提高克隆 PCR 产物的效率和速度。LIC-PCR 不再需要将 PCR 产物连接到载体，不依赖于限制性位点，同时也避免了热稳定 DNA 聚合酶在 PCR 产物的 3' 端添加多余碱基带来的问题(Clark 1988)。LIC-PCR 通过将 PCR 产物直接克隆到质粒载体的特定位点，避免了载体因缺乏合适克隆位点或缺少用来筛选重组体的遗传基础时所产生的复杂的构建过程（Aslanidis and de Jong 1990；Hsiao 1993；Yang et al. 1993；Kaluz and Flint 1994）。几种不同的 LIC-PCR 方法已经被报道。
+
+- 用 5' 端携带至少 24 个额外碱基的引物扩增目的片段。这些碱基与线性化质粒载体的末端序列一致。因此，通过这些引物扩增产生的 PCR 产物 5' 端序列与受体线性化质粒的 3' 端互补。在第二次 PCR 中，延伸重叠互补序列的 3' 端，将 PCR 产物和线性化的质粒，拼接在一起（Shuldiner et al. 1990）。
+- 产生携带12个或更多碱基长度的3'突出末端的PCR产物，通过复性连接到3'端含有互补单链序列的线性化载体。两套突出末端之间的碱基配对创建出的嵌合分子可以通过转化导入大肠杆菌（Aslanidis and de Jong 1990）。
+
+用来在载体和 PCR 产物的 3' 端产生互补单链尾巴的方法包括 3' 端的外切核酸酶切除。载体和 PCR 产物的序列是经过设计的，以保证四种碱基中的其中一种不会出现在 3' 端的前 12 个核苷酸中。在这种 dNTP 存在的情况下，通过 T4 DNA 聚合酶的 3'→5' 外切核酸酶活性可以产生指定长度的互补尾巴。这种酶在 3'→5' 方向切除核苷酸，直到它到达与反应混合物中的 dNTP 相同的第一个核苷酸。通过凹链的 3'-羟基端掺入 dNTP，T4 DNA 聚合酶的进一步核酸外切消化被中和。通过加热使酶失活后，PCR 产物通过复性连接到一个以类似方式产生的含有单链尾巴的载体（Aslanidis and de Jong 1990；Haun et al. 1992；Tachibana et al. 2009）。当嵌合分子被用于转化大肠杆菌后，细菌细胞中的连接酶将单链缺口封闭，产生一个共价闭合环状分子。
+
+在该方法的一个变种中, 重叠序列被设计引入用于扩增靶 DNA 和载体的 PCR 引物。
+
+通过外切核酸酶 III（Hsiao 1993；Li and Evans 1997）或 T4 DNA 聚合酶的外切核酸酶活性对 PCR 产物和载体进行可控酶切消化产生互补的突出 3' 端。由于外切核酸酶的作用产生的突出端稍微长于互补序列，杂交体形成后将保留一个伸展的单链间隙。这可以在体内（使用外切核酸酶 III 的情况下）或在体外用大肠杆菌 DNA 聚合酶 I 的 Klenow 片段（使用 T4 DNA 聚合酶的情况下）修复。
+
+## Xi 克隆（Genlantis 公司）
+
+Xi 克隆由制造商 Genlantis 公司以试剂盒形式提供，用来将 PCR 产物定向克隆到高水平体外转录和翻译的表达载体。扩增的 DNA 片段是合成的，含有一个 28～32 个核苷酸长度的单链尾巴与一个线性化 Xi-克隆质粒的 5' 和 3' 端同源。当 PCR 片段和线性 Xi 克隆载体混合后转化到含 recA 基因的大肠杆菌菌株，细菌内源性重组系统将两个 DNA 片段连接，产生一个环状质粒。Genlatis 公司提供若干种含有装配元件的线性化载体，例如，用于在哺乳动物细胞中或在体外高水平表达蛋白质。
+
+这个系统的优势在于它的速度和不再依赖于体外酶催化反应，该系统是否能够得到进一步的发展从而同模块化高通量重组系统（如 Gateway 和 In-Fusion）进行有效竞争，目前还不清楚。
+
+## 尿嘧啶 DNA 糖基化酶（UDG）克隆
+
+这种方法（Nisson et al. 1991；Rashtchian 1995）在 PCR 中使用的引物 5' 端区域包含一磷酸脱氧尿苷（dUMP）。PCR 产物通过 UDG 酶切消化后导致脱氧核糖残基和尿嘧啶之间的 N-糖苷键断裂。此裂解产生碱性残基，破坏了 PCR 产物 5' 端序列的碱基配对能力（Duncan 1981；Friedberg et al. 1981）。载体和插入片段都通过含尿嘧啶的引物扩增，然后用 UDG 处理。因此，当插入片段和载体混合时，插入片段只有一条链可用于同载体的互补链复性。一些线性化的载体是可商购的（Life Technologies 公司），携带确定的 12 个核苷酸长度的 3' 突出末端。然而，这种方法仍然只是偶尔使用，从未大量普及，并且已经在很大程度上被 TOPO TA 克隆和 TOPO 工具取代（这些方法的总结和比较，见表 4）。
+
+表 4 不使用连接酶的方法
+
+| TOPO-TA 克隆(见方案 13) | 1. 使用不具有校对功能的热稳定 DNA 聚合酶如 Taq,产生的 PCR 产物每个末端携带一个未成对 3'端(A)残基。2. 附加到一个载体(如 Life Technologies 公司的 pcDNA3.1),载体带有未成对 3'端(T)残基,连接到牛痘病毒拓扑异构酶(TOPO)以催化连接反应。 | 高效。可以很容易地用于平末端或定向克隆。Life Technologies 公司在市场上推出了 TOPO 工具,可以实现 TOPO 介导的在 PCR 产物上添加功能 DNA 元件,如启动子、终止子、表位和标签。 | TOPO 催化的载体再环化降低了克隆效率。为了改善这一问题,Life Technologies 公司提供了 TOPO 克隆载体,扩增的 DNA 插入后会破坏导致大肠杆菌死亡的 ccdB 基因(见信息栏“ccdB 基因”)。 |
+| --- | --- | --- | --- |
+| TOPO 工具(见信息栏“TOPO 工具”) | TOPO 工具是连接到牛痘病毒拓扑异构酶的功能性核酸序列(启动子、标签、转录终止子等)。拓扑异构酶功能元件可以连接到带有一个未成对 3'-A 残基的任何 PCR 扩增的 DNA。得到的重组体通常进行第二次 PCR 扩增,产生可以克隆或直接用于转染的线性构造。Life Technologies 公司市售品种多样的 TOPO 工具。 | 高效。大大加快了复杂的多组分 DNA 的设计和合成,可以直接用于转染哺乳动物细胞。适应 96 孔或 $384^{1}$孔形式。 |  |
+| 尿嘧啶 DNA 糖基化酶(UDG)(见“尿嘧啶 DNA 糖基化酶[UDG]克隆”部分) | 1. 使用 5'端序列包含(U)残基而不是(T)残基的引物。2. 使用尿嘧啶-D-糖苷酶消化扩增产物,去除一磷酸脱氧尿苷(dUMP)的碱基,同时将暴露的单链尾巴与市售载体(pAMP1;Life Technologies 公司)的互补 5'突出端复性。 | 高效。省去了若干其他用于克隆扩增 DNA 方法中必需的步骤(限制性酶切、纯化、连接等)。 | 一个重要的限制因素是市售的载体很少。出于这个原因,UDG 克隆现在很少被使用。 |
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">① 译者注:应为384孔，原文为396孔。</span></small>
+
+## 参考文献
+
+- Aslanidis C, de Jong PJ. 1990. Ligation-independent cloning of PCR products (LIC-PCR). Nucleic Acids Res 18: 6069–6074.
+- Benoit RM, Wilhelm RN, Scherer-Becker D, Ostermeier C. 2006. An improved method for fast, robust, and seamless integration of DNA fragments into multiple plasmids. Protein Expr Purif 45: 66–71.
+- Clark JM. 1988. Novel non-templated nucleotide addition reactions catalyzed by procaryotic and eucaryotic DNA polymerases. Nucleic Acids Res 16: 9677–9686.
+- D'Arpa P. 2009. Strategies for cloning PCR products. Cold Spring Harb Protoc 10.1101/pdb.ip68.
+- Duncan BK. 1981. DNA glycosylases. In The enzymes, 3rd ed. (ed Boyer PD), pp. 565–586. Academic, New York.
+- Friedberg EC, Bonurs T, Radany EH, Love JD. 1981. Enzymes that incise damaged DNA. Academic, New York.
+- Hamilton MD, Nuara AA, Gammon DB, Buller RM, Evans DH. 2007. Duplex strand joining reactions catalyzed by vaccinia virus DNA polymerase. Nucleic Acids Res 35: 143–151.
+- Hartley JL, Temple GF, Brasch MA. 2000. DNA cloning using in vitro site-specific recombination. Genome Res 10: 1788–1795.
+- Haun RS, Serventi IM, Moss J. 1992. Rapid, reliable ligation-independent cloning of PCR products using modified plasmid vectors. BioTechniques 13: 515–518.
+- Hsiao K. 1993. Exonuclease III induced ligase-free directional subcloning of PCR products. Nucleic Acids Res 21: 5528–5529.
+- Kaluz S, Flint AP. 1994. Ligation-independent cloning of PCR products with primers containing nonbase residues. Nucleic Acids Res 22: 4845.
+- Li C, Evans RM. 1997. Ligation independent cloning irrespective of restriction site compatibility. Nucleic Acids Res 25: 4165–4166.
+- Marsischky G, LaBaer J. 2004. Many paths to many clones: A comparative
+- look at high-throughput cloning methods. Genome Res 14: 2020–2028.
+- Nisson PE, Rashtchian A, Watkins PC. 1991. Rapid and efficient cloning of Alu-PCR products using uracil DNA glycosylase. PCR Methods Appl 1:120–123.
+- Rashtchian A. 1995. Novel methods for cloning and engineering genes using the polymerase chain reaction. Curr Opin Biotechnol 6: 30–36.
+- Rozwadowski K, Yang W, Kagale S. 2008. Homologous recombination-mediated cloning and manipulation of genomic DNA regions using Gateway and recombineering systems. BMC Biotechnol 8: 88.
+- Shuldiner AR, Scott LA, Roth J. 1990. PCR-induced (ligase-free) subcloning: A rapid reliable method to subclone polymerase chain reaction (PCR) products. Nucleic Acids Res 18: 1920.
+- Sleight SC, Bartley BA, Lieviant JA, Sauro HM. 2010. In-Fusion BioBrick assembly and re-engineering. Nucleic Acids Res 38: 2624–2636.
+- Tachibana A, Tohiguchi K, Ueno T, Setogawa Y, Harada A, Tanabe T. 2009. Preparation of long sticky ends for universal ligation-independent cloning: Sequential T4 DNA polymerase treatments. J Biosci Bioeng 107: 668–669.
+- Walhout AJ, Temple GF, Brasch MA, Hartley JL, Lorson MA, van den Heuvel S, Vidal M. 2000. GATEWAY recombinational cloning: Application to the cloning of large numbers of open reading frames or ORFeomes. Methods Enzymol 328: 575–592.
+- Yang YS, Watson WJ, Tucker PW, Capra JD. 1993. Construction of recombinant DNA by exonuclease recession. Nucleic Acids Res 21: 1889–1893.
+- Zhu B, Cai G, Hall EO, Freeman GJ. 2007. In-Fusion assembly: Seamless engineering of multidomain fusion proteins, modular vectors, and mutations. BioTechniques 43: 354–359.
+
+![](images/page_194_image_28.jpg)
+
+## BioBricks 和 DNA 片段的有序组装
+
+将具有确定功能的 DNA 序列 [启动子、核糖体结合位点、编码序列、poly（A）附加位点等] 组装成可以导入细胞的结构是分子克隆实验室一个老生常谈的事情。虽然这些定制的 DNA 结构已经产生了丰富的研究成果，但是它们所使用的组装技术往往是低效和特殊的。建立一套标准化、开放的模块化、乐高积木般的遗传单位的想法，来自于麻省理工学院的工程师（Knight 2003）（http://dspace.mit.edu/handle/1721.1/21168），他们想利用工程原理构建合成系统应用于“生物能源、新材料、治疗和环境治理”（Anderson et al. 2010）。其中，BioBricks 项目的既定目标是发展应用于纳米技术的生物学单位和创造完全合成生物。通过遗传单位的组装实现这些雄心勃勃的目标需要创建一个生物部件的大型文库，这些部件需要符合一套技术标准。人们希望的是，这些标准将促进发展低成本、高通量组装巨大多元遗传单位的自动化方法（Knight 2003；Shetty et al. 2008；Anderson et al. 2010）。
+
+BioBrick 标准的制定是一个开放和持续的过程，它由 BioBricks 基金会（http://www.BioBricks.org）组织。几千件符合当前 BioBrick 标准的部件的序列，可在中央 Registry of Standard Biological Parts（http://www.partsregistry.org）查到，而符合 BioBrick 的实物 DNA 片段保存于资源库中。BioBrick 和 Bio-Bricks 已被注册为商标。
+
+目前，所有 BioBrick DNA 保持在质粒载体中。因此，标准的 BioBrick 组装方案要求限制性内切核酸酶消化进而连接。其结果是，最终结构中的 BioBrick 部件是由 6～8 个核苷酸的限制性酶切位点的残基——BioBrick 术语称之为“疤痕”（scar）分开的。因为这些比较陈旧的存储和组装方法对于 BioBricks 项目的进一步发展是一个巨大障碍，已经提出几种无缝组装（例如，Che 2004；Shetty et al. 2008；http://hdl.handle.net/1721.1/39832）和分层组装（http://2008.igem.org/Team:UC\_Berkeley）的方案。迄今为止最好的似乎是 Sleight 等（2010）描述的一个基于 PCR 的方法，通过使用 Clontech 公司 In-Fusion 系统（见信息栏“聚合酶链反应克隆产品指南”）可以扩增、组装、重新加工保存在 BioBrick 质粒中的 DNA 序列。In-Fusion 系统的使用消除了疤痕，使 BioBricks 装配高效、快速和灵活。
+
+尽管如此，BioBricks 项目能够实现其宏伟目标之前，还有技术问题要解决:①当前的 In-Fusion 方法对双组件的组装效果很好，对更大的组装成功率下降；②以目前的形式，In-Fusion-BioBrick 组装不能完全标准化，因为它每个组装步骤都需要定制引物。
+
+除了 In-Fusion 以外，已经开发出一些其他的基于 PCR 的技术，以用于无缝地组装 DNA 片段。这些技术包括:
+
+- 重叠延伸（Ho et al. 1989; Horton et al. 1990; Shevchuk et al. 2004）。通过设计引物 5'端的序列，可以使得任何一对 PCR 产物在其一端具有一个共同的序列。在 PCR 反应条件下，共有序列使得两个不同片段的链彼此杂交，形成一个重叠。延长这种重叠产生的重组体，原始的 PCR 产物就被无缝连接在一起。
+- USER 融合（Geu-Flores et al. 2007）。该过程需要 PCR 引物在其 5'端附近含有一个单一的脱氧尿苷残基。用市售的脱氧尿苷切除试剂 USER（New England Biolabs 公司）处理 PCR 产物，产生长的 3' 突出末端，可被设计成相互杂交。连接的 DNA 片段作为模板通过另外的 PCR 产生重组体，原始的 PCR 产物进行了无缝连接。
+- SLIC（Li and Elledge 2007）。用外切核酸酶生成 DNA 片段的单链突出末端，然后将其通过体外重组组装。
+- 寡核苷酸组装。在 Khorana（1979）使用的基因组装的经典方法中，重叠的 5'-磷酸化的 DNA 寡核苷酸进行复性以形成双链，然后通过 T4 DNA 连接酶连接在一起。Smith 等（2003 年）改进了该方法，合成一个 5386 bp 的 fX174 RFI DNA。约 250 个 5'-磷酸化的 42 聚体复性，然后使用 Taq 连接酶在 65℃连接。连接反应产物使用 Stemmer 等（1995）的聚合酶链组装策略进行扩增。Gibson 等（2010）使用了一种更精细的方案，惊人地将约 1000 个长度为 1080 个碱基的重叠寡核苷酸组装成一个具有功能的生殖器支原体（Mycoplasma genitalium）基因组、合成副本。
+
+每个寡核苷酸与它的相邻寡核酸重叠80个核苷酸。通过联合使用酶促方法和在酿酒酵母（S. cerevisiae）体内重组，持续不断地将片段逐渐连接在一起组装成基因组。最终，完整的582970 bp的基因组作为着丝粒在酵母中传代（Benders et al. 2010），然后被插入到生殖器支原体。
+
+## 参考文献
+
+- Anderson JC, Dueber JE, Leguia M, Wu GC, Goler JA, Arkin AP, Keasling JD. 2010. BglBricks: A flexible standard for biological part assembly. J Biol Eng 4: 1.
+- Benders GA, Noskov VN, Denisova EA, Lartigue C, Gibson DG, Assad-Garcia N, Chuang RY, Carrera W, Moodie M, Algire MA, et al. 2010. Cloning whole bacterial genomes in yeast. Nucleic Acids Res 38: 2558–2569.
+- Che A. 2004. BioBricks++: Simplifying assembly of standard DNA components. MIT Libraries. http://hdl.handle.net/1721.1/39832.
+- Geu-Flores F, Nour-Eldin HH, Nielsen MT, Halkier BA. 2007. USER fusion: A rapid and efficient method for simultaneous fusion and cloning of multiple PCR products. Nucleic Acids Res 35: e55.
+- Gibson DG, Glass JI, Lartigue C, Noskov VN, Chuang RY, Algire MA, Benders GA, Montague MG, Ma L, Moodie MM, et al. 2010. Creation of a bacterial cell controlled by a chemically synthesized genome. Science 329: 52–56.
+- Ho SN, Hunt HD, Horton RM, Pullen JK, Pease LR. 1989. Site-directed mutagenesis by overlap extension using the polymerase chain reaction. Gene 77: 51–59.
+- Horton RM, Cai ZL, Ho SN, Pease LR. 1990. Gene splicing by overlap extension: Tailor-made genes using the polymerase chain reaction. BioTechniques 8: 528–535.
+- Khorana HG. 1979. Total synthesis of a gene. Science 203: 614–625.
+- Knight T. 2003. Idempotent vector design for standard assembly of Biobricks. MIT Artificial Intelligence Laboratory; MIT Synthetic Biology Working Group (http://hdl.handle.net/1721.1/21168).
+- Li MZ, Elledge SJ. 2007. Harnessing homologous recombination in vitro to generate recombinant DNA via SLIC. Nat Methods 4: 251–256.
+- Shetty RP, Endy D, Knight TF Jr. 2008. Engineering BioBrick vectors from BioBrick parts. J Biol Eng 2: 5.
+- Shevchuk NA, Bryksin AV, Nusinovich YA, Cabello FC, Sutherland M, Ladisch S. 2004. Construction of long DNA molecules using long PCR-based fusion of several fragments simultaneously. Nucleic Acids Res 32; e19.
+- Sleight SC, Bartley BA, Lieviant JA, Sauro HM. 2010. In-Fusion BioBrick assembly and re-engineering. Nucleic Acids Res 38: 2624–2636.
+- Smith HO, Hutchison CA III, Pfannkoch C, Venter JC. 2003. Generating a synthetic genome by whole genome assembly: phiX174 bacteriophage from synthetic oligonucleotides. Proc Natl Acad Sci 100:15440–15445.
+- Stemmer WP, Crameri A, Ha KD, Brennan TM, Heyneker HL. 1995. Single-step assembly of a gene and entire plasmid from large numbers of oligodeoxyribonucleotides. Gene 164: 49–53.
+
+![](images/page_196_image_2.jpg)
+
+## TOPO 工具:创建带有功能元件的线性表达结构
+
+嵌合 DNA 结构仍然是许多分子生物学的工具。表达结构通常包括一系列的功能单元（启动子、可读框、引导蛋白运输至细胞特定位置的信号、报道基因、免疫学标记和终止子）。传统上，这些元件被逐个连接在一起——过程缓慢得令人痛苦——通过联合使用限制性内切核酸酶消化、连接和必要时的定点诱变。第一篇概述了基于 PCR 的线性表达载体组装和使用方法学论文的发表（Sykes and Johnston 1999），为连接牛痘病毒拓扑异构酶的功能 DNA 元件（TOPO 工具，Life Technologies 公司；见信息栏“聚合酶链反应产物克隆指南”的表 3）的发展开辟了道路。在这个巧妙的系统中，首先通过引入牛痘病毒拓扑异构酶识别位点以及编码序列上游和下游辅助序列（见下文）的引物扩增感兴趣的编码序列。TOPO 工具元件是结合拓扑异构酶的功能核酸序列（启动子、融合标签、终止序列等），A-尾的 PCR 产物与 TOPO 工具元件混合，拓扑异构酶催化功能元件在室温下快速反应（5～10min）连接到 PCR 产物。在添加了所需的 5'或 3'元件后，所产生的重组体再次通过 PCR 扩增以产生功能性的线性组件，可以直接用于下游应用中（参见图2）。该技术可以很容易地适用于 96 孔或 384 孔 $^{①}$ 的形式。
+
+![](images/page_196_image_5.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+This diagram illustrates the structural and regulatory relationships between a DNA sequence (labeled A, B, C) and its corresponding physical components (TOPO, GACTCAA, GGAACTG). It maps specific genetic elements like CCCTT, CGGAACA, and TOPO to their respective transcriptional states and downstream functional domains.
+</details>
+
+图 2 用于产生带有确定 5' 和 3' 功能元件的线性 DNA 结构的 TOPO 工具 ( $P_{CMV/TetO}$  5' 元件)。(A) 5' 和 3' 功能元件和要添加它们的 PCR 产物如图所示。通过正向和反向引物，不同的 11bp 的序列（粗体）被添加到 PCR 产物的两端；(B) TOPO 切割 PCR 产物，产生 TOPO-活化的突出端（释放单链 6 聚体），与 TOPO-活化的功能元件突出端互补；(C) 复性突出端，使各自的 5'-OH 并列，攻击另一个的磷酸酪氨酰键，将各功能元件的两条链连接到 PCR 产物的两条链，释放两个 TOPO 分子，并生成一个直接用于体外和体内的线性重组模板。（转载自 Invitrogen 公司 2002 年，Life Technologies 公司的一部分，©2002。）
+
+TOPO 工具技术手册（Invitrogen 公司，2002 年）明确、详细地描述了将用户 PCR 产物与 Life Technologies 公司所出售的 5'-和 3'-TOPO-适应元件连接所需的所有步骤和必要对照。这些信息可以概括如下。
+
+1. 设计 PCR 引物扩增靶序列。这些引物含有 5'-OH 基团，并应包含将 PCR 产物连
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">① 译者注:应为 384 孔，原文为 393 孔。</span></small>
+
+接到 TOPO 工具 5' 和 3' 元件所需的 11bp 序列。
+
+2. 使用高保真度的 Taq DNA 聚合酶（如 Platinum Taq，Life Technologies 公司）扩增靶序列，用琼脂糖凝胶电泳确认 PCR 产物的完整性和浓度。
+3. 以适当的摩尔比将 PCR 产物与 5'-或 3'-TOPO-适应元件混合来产生一个线性结构。
+4. 使用元件特异性引物（由 Life Technologies 公司提供）进行第二轮 PCR，以扩增目标结构及其连接的元件。验证扩增产物的完整性和浓度，如果一切顺利，就可以用于转染或其他下游应用了。
+
+## 参考文献
+
+Invitrogen. 2002. TOPO tools technology. For generating functional constructs containing your PCR products and a choice of TOPO-adapted elements (version B, 072501, 25-0413). Invitrogen Life Technologies, Inc., Rockville, MD.
+
+Sykes KF, Johnston SA. 1999. Linear expression elements: A rapid, in vivo, method to screen for gene functions. Nat Biotechnol 17: 355–359.
+
+![](images/page_197_image_10.jpg)
+
+## 抗生素
+
+## 氨苄青霉素和羧苄青霉素
+
+## 性质和作用方式
+
+- 氨苄青霉素是一种氨基青霉素；羧苄青霉素是一种半合成羧基青霉素。两种化合物对诸多革兰氏阴性菌如流感嗜血杆菌（Haemophilus influenzae）和大肠杆菌等具有抗菌活性。羧苄青霉素是第一种能够显著对抗假单胞菌属（Pseudomonas）的青霉素，假单胞菌属对氨基青霉素如氨苄青霉素不敏感。
+- 青霉素敏感的生物体，部分是由于组成其细胞壁刚性的交联肽聚糖薄层，它只有一到两个分子厚。长的聚糖链完全由氨基糖组成，并且通过含有 $\delta$-氨基酸的肽链交联。青霉素抑制细胞外由转肽酶催化的交联终末期合成（综述见 Donowitz and Mandell 1988）。青霉素在细菌的对数生长期对抗细菌最有效，在静止生长期影响相对较小，此时肽多糖的合成被抑制。
+- 除了抑制转肽酶的活性，青霉素还抑制大肠杆菌形成杆状结构和分裂期形成隔膜所需的酶（称为青霉素结合蛋白或PBP）的活性（Tomasz 1986）。
+
+## 氨苄青霉素和羧苄青霉素的耐药机制
+
+- 浆周酶β-内酰胺酶催化β-内酰胺环的环状酰胺键水解，伴随着氨苄青霉素和羧苄青霉素解毒（Abraham and Chain 1940；Bush and Sykes 1984）。
+- β-内酰胺酶少量存在于抗生素耐药革兰氏阴性菌野生菌株的周质空间，编码于染色体或质粒上。最普遍的革兰氏阴性菌β-内酰胺酶——TEM β-内酰胺酶，是根据一个雅典女孩姓名首字母的缩写命名，1965年正是从这个女孩身上首次分离出一株表达此酶的大肠杆菌（Datta and Kontomichalou 1965）。TEM β-内酰胺酶被广泛用作分子克隆的选择性标记，是一种由bla基因编码的286残基的蛋白质（Sutcliffe 1978）。新生的内酰胺酶蛋白质的前23个氨基酸作为信号序列，在蛋白质易位到周质的过程中被切掉。
+- 当β-内酰胺酶由高拷贝载体表达时，例如在分子克隆中所使用，大量的酶被分泌到培养基中。单个转化菌落可以产生足够的β-内酰胺酶，水解周围培养基中的抗生素，创建一个受保护的区域使得对抗生素敏感的菌落可以生长。这导致未被转化的卫星菌落的出现。对于诸如假单胞菌属和埃希氏菌属等产生的β-内酰胺酶水解，羧苄青霉素比氨苄青霉素更耐受，因此在选择性培养基中使用羧苄青霉素而不是氨苄青霉素，可以改善此问题，但不能完全消除。
+
+## 四环素
+
+## 性质和作用方式
+
+- 所有四环素类抗生素共有一个相同的四环碳环骨架，以支持多种基团。
+- 第一种四环素——金霉素，作为生金链霉菌（Streptomyces aureofaciens）合成的一种自然产生的抗生素于1948年被发现，其活性能够对抗广谱的革兰氏阳性和革兰氏阴性菌以及原生动物。到1980年，已分离或合成约1000种四环素衍生物，估计全球产量超过500t（综述见Chopra et al. 1992）。
+- 四环素通过外膜孔蛋白通道经被动扩散进入细菌细胞，这些通道由 OmpF 蛋白组成。抗生素转运穿越细胞质膜进入细胞质需要 pH 或电极电位梯度。
+- 四环素抑制细菌生长是通过干扰核糖体的密码子-反密码子相互作用,进而阻止蛋白质的合成（综述见 Gale et al. 1981; Chopra et al. 1992）。具体而言，抗生素结合到 30S 核糖体亚基的一个位点，从而阻止氨酰-tRNA 附着到受体位点上。
+
+## 四环素的耐药机制
+
+已知有几种不同的四环素抗性机制:四环素外排、核糖体的保护和四环素修饰。该抗性基因受控于变构阻遏蛋白 TetR（Reichheld et al. 2009）和转座子 Tn10 四环素操纵子的调控元件，打开和关闭其在哺乳动物系统中的表达。TetR 蛋白检测细胞内的四环素水平。与抗生素的结合引起构象变化，减少了 TetR 与元件的结合，从而减少了其对 TetA 转录的抑制，而 TetA 编码一种膜蛋白，将四环素排出细菌细胞（Saenger et al. 2000）。
+
+## 卡那霉素
+
+## 卡那霉素的性质和作用方式
+
+卡那霉素是氨基糖苷类抗生素家族的成员，于1957年在日本国立卫生研究院从卡那霉素链霉菌（Streptomyces kanamyceticus）的培养中首次分离得到（Umezawa et al. 1967），卡那霉素链霉菌合成三种形式的抗生素:卡那霉素A、B和C。主要成分卡那霉素A对多种细菌具有广谱抗菌活性，是多年来用于治疗由革兰氏阴性杆菌引起的严重感染的一种重要抗生素。它的立体化学和绝对构型最初通过化学方法和核磁共振（NMR）获得，后经X射线衍射晶体分析法确认（综述见Hooper 1982）。
+
+氨基糖苷类抗生素是快速扩散通过革兰氏阴性菌外膜孔蛋白通道的多聚阳离子。然而，从周质空间进入细胞质的运输是由内周质膜的负膜电位驱动的，因此，这是一个需能的过程。在细胞质中，这些抗生素与至少三个核糖体蛋白以及更小的核糖体RNA亚基解码区域的特定碱基相互作用，从而抑制蛋白质的合成和增加诱发翻译错误的频率（综述见Noller 1984；Cundliffe 1990）。
+
+在体外，卡那霉素和其他缺少一个胍基基团的氨基糖苷类抗生素（如新霉素和庆大霉素）也可以抑制I类内含子的剪接（von Ahsen et al. 1991, 1992; von Ahsen and Noller 1993）。这一观察结果支持一种见解，即氨基糖苷类抗生素可以识别已在长期进化时间内保守的RNA古老结构（Davies 1990）。
+
+## 卡那霉素的耐药机制
+
+在结构上，卡那霉素与庆大霉素、新霉素、遗传霉素（G418）相似，它们可以被许多相同的细菌氨基磷酸转移酶（APH）灭活（综述见 Davies and Smith，1978；Shaw et al. 1993）。根据底物特异性区分的 APH 的 7 个主要类群中，2 个已被广泛地用作卡那霉素抗性（Kmr）的选择性标记:从转座子 Tn903 分离出的 APH(3')-I 和分离自 Tn5 的
+
+APH(3')-II。由这些基因编码的 APH 通过将 ATP 的 γ 磷酸根转移到 pseudosaccharide 3' 位置的羟基使卡那霉素失活。
+
+aph(3')-Ia 和 aph(3')-IIa 都已被用作原核表达载体的选择性标记。然而，从文献中确定哪个基因用于构建特定载体并不总是容易的。因为 aph(3')-Ia 和 aph(3')-IIa 的 DNA 序列高度趋异（Shaw et al. 1993），使得这两个基因具有不同的限制性图谱，并在正常的严格条件下不会交叉杂交。aph(3')-II 可以有效地使遗传霉素（G418）失活，用于真核细胞中的优势筛选标记（参见 Jimenez and Davies 1980；Colbè re-Garapin et al. 1981；Southern and Berg 1982；Chen and Fukuhara 1988）。
+
+## 氯霉素
+
+氯霉素抑制蛋白质的合成并且阻碍宿主 DNA 合成，但对松弛型质粒的复制没有影响。因此，在含有药物的细菌培养基温育的过程中，松弛型质粒的拷贝数增加。直到 20 世纪 80 年代初，大量培养时经常使用氯霉素以获得可观的含有野生型 colE1 复制子的质粒。1982 年后，大多数构建的高拷贝数质粒载体携带突变，将质粒 DNA 从拷贝数控制解除。含有这些突变版本的 colE1 起始点的载体维持在每个细胞数百个拷贝，即使不抑制细菌蛋白质的合成也可以得到高产量的质粒 DNA。然而，用氯霉素处理细菌培养物仍具有一定的优势:在药物的存在下，质粒的拷贝数可以进一步增加 2～3 倍，更重要的是，细菌裂解液的体积和黏度都大大降低，因为宿主的复制受到抑制。许多研究者发现，在生长培养中添加氯霉素比处理高黏稠的裂解液方便得多。
+
+## 参考文献
+
+- Abraham EP, Chain E. 1940. An enzyme from bacteria able to destroy penicillin. Nature 146: 837.
+- Bush K, Sykes RB. 1984. Interaction of β-lactam antibiotics with β-lactamases as a cause for resistance. In Antimicrobial drug resistance (ed Bryan LE), pp. 1–31. Academic, New York.
+- Chen XJ, Fukuhara H. 1988. A gene fusion system using the aminoglycoside 3'-phosphotransferase gene of the kanamycin-resistance transposon Tn903: Use in the yeast Kluyveromyces lactis and Saccharomyces cerevisiae. Gene 69: 181–192.
+- Chopra I, Hawkey PM, Hinton M. 1992. Tetracyclines, molecular and clinical aspects. J Antimicrob Chemother 29: 245–277.
+- Colbère-Garapin F, Horodniceanu F, Kourilsky P, Garapin AC. 1981. A new dominant hybrid selective marker for higher eukaryotic cells. J Mol Biol 150: 1–14.
+- Cundliffe E. 1990. Recognition sites for antibiotics within rRNA. In The ribosome: Structure, function, and evolution (ed Hill WE, et al.), pp. 479–490. American Society for Microbiology, Washington, DC.
+- Datta N, Kontomichalou P. 1965. Penicillinase synthesis controlled by infectious R factors in Enterbacteriaceae. Nature 208: 239–241.
+- Davies J. 1990. What are antibiotics? Archaic functions for modern activities. Mol Microbiol 4: 1227–1232.
+- Davies J, Smith DI. 1978. Plasmid-determined resistance to antimicrobial agents. Annu Rev Microbiol 32: 469–518.
+- Donowitz GR, Mandell GL. 1988. β-Lactam antibiotics. N Engl J Med 318:419–426, 490–500.
+- Gale EF, Cundliffe E, Reynolds PE, Richmond MH, Waring MJ. 1981. Antibiotic inhibitors of ribosome function. In The molecular basis of antibiotic action, 2nd ed., pp. 402–408. John Wiley, Chichester, UK.
+- Hooper IR. 1982. The naturally occurring aminoglycoside antibiotics. In Aminoglycoside antibiotics (ed Umezawa H, Hooper IR), pp. 1–35. Springer-Verlag, Berlin.
+- Jimenez A, Davies J. 1980. Expression of a transposable antibiotic resistance element in Saccharomyces. Nature 287: 869–871.
+- Noller HF. 1984. Structure of ribosomal RNA. Annu Rev Biochem 53: 119–162.
+- Reichheld SE, Yu Z, Davidson AR. 2009. The induction of folding cooperativity by ligand binding drives the allosteric response of tetracycline repressor. Proc Natl Acad Sci 106: 22263–22268.
+- Saenger W, Orth P, Kisker C, Hillen W, Hinrichs W. 2000. The tetracycline repressor—A paradigm for a biological switch. Angew Chem Int Ed Engl 39: 2042–2052.
+- Shaw KJ, Rather PN, Hare RS, Miller GH. 1993. Molecular genetics of aminoglycoside resistance genes and familial relationships of the aminoglycoside-modifying enzymes. Microbiol Rev 57: 138–163.
+- Southern PJ, Berg P. 1982. Transformation of mammalian cells to antibiotic resistance with a bacterial gene under control of the SV40 early region promoter. J Mol Appl Genet 1: 327–341.
+- Sutcliffe JG. 1978. Nucleotide sequence of the ampicillin resistance gene of Escherichia coli plasmid pBR322. Proc Natl Acad Sci 75: 3737–3741.
+- Tomasz A. 1986. Penicillin-binding proteins and the antibacterial effectiveness of β-lactam antibiotics. Rev Infect Dis (suppl. 3) 8: S260–S278.
+- Umezawa H, Okanishi M, Utahara R, Maeda K, Kondo S. 1967. Isolation and structure of kanamycin inactivated by a cell free system of kanamycin-resistant E. coli. J Antibiot 20: 136–141.
+- von Ahsen U, Noller HF. 1993. Footprinting the sites of interaction of antibiotics with catalytic group I intron RNA. Science 260: 1500–1503.
+- von Ahsen U, Davies J, Schroeder R. 1991. Antibiotic inhibition of group I ribozyme function. Nature 353: 368–370.
+- von Ahsen U, Davies J, Schroeder R. 1992. Non-competitive inhibition of group I intron RNA self-splicing by aminoglycoside antibiotics. J Mol Biol 226: 935–941.
+
+![](images/page_199_image_33.jpg)
+
+## 衔接子
+
+衔接子是短的双链合成寡核苷酸，在一端或两端携带限制性内切核酸酶识别位点和单链尾巴。它们可用于将研究者选择的限制位点添加到一个现有的限制位点上。衔接子的单链尾巴连接到限制性切割靶 DNA 所产生的匹配的突出单链末端。连接后，靶 DNA 的新末端序列可以用适当的限制性内切核酸酶切割，以产生新的突出末端。
+
+衔接子的鼎盛时期在前 PCR 时代。如今，在 DNA 末端添加给定序列的方法是简单地将识别序列掺入到 PCR 寡核苷酸引物 5' 端中（见方案 9）。但是，如果靶 DNA 群体由不同序列组成（如 cDNA 群体或基因组 DNA 片段集合），衔接子是一个有吸引力的选择。
+
+## 磷酸化和非磷酸化的衔接子
+
+市售的衔接子有两种基本设计和各种特异性。一些衔接子由两个不同长度的寡核苷酸之间形成一个局部双链，例如，一个 EcoR I-Not I 衔接子可能具有以下结构:
+
+![](images/page_200_image_5.jpg)
+
+在连接过程中，衔接子的 5' 突出端与靶 DNA 的互补末端接合，恢复一个 EcoR I 位点（GAATTC）。此外，磷酸化平末端的连接使得衔接子形成一个包含内部 Not I 识别位点（GCGGCCGC）的二聚体。不会形成高阶聚合物，因为突出的 5' 端没有磷酸化。
+
+其他一切都是同样的，附加这种类型衔接子的首选方法是使用非磷酸化的衔接子和磷酸化的靶标（见方案8）。如果靶DNA的两端序列是互补的，并且携带5'-磷酸基团，靶DNA将在连接反应过程中环化。为利于衔接子附加到靶DNA的末端，连接反应应采用摩尔数高度过量（至少50倍）的非磷酸化衔接子。
+
+另一类提供的衔接子是非磷酸化的单寡核苷酸，其序列是部分自我互补的。形成双链体后，一个 EcoR I-Pst I 衔接子可能具有以下结构:
+
+![](images/page_200_image_9.jpg)
+
+在连接到靶 DNA 的 5'-磷酸化 EcoR I 末端时，衔接子的一条链与靶 DNA 接合，恢复一个完整的 EcoR I 位点。进一步的连接是不可能的，除非该衔接子在研究者的实验室中被磷酸化了，在这种情况下，衔接子可以形成串联排列。磷酸化有时是必要的，因为用第二种限制性内切核酸酶切割衔接子串联阵列的效率高于单个衔接子，在此例中是 Pst I（位点:CTGCAG）。
+
+然而，其他一切都是同样的，附加这种类型衔接子的首选方法是使用非磷酸化的衔接子和磷酸化的靶标。为了抑制靶 DNA 的环化，连接反应中应该使用摩尔数过量很多（约 50 倍）的衔接子。
+
+在建立连接反应前，重要的是从准备的衔接子中消除氢键结合的二聚体，可以将准备的衔接子（溶于 TE，pH 7.5）加热到  $90^{\circ}$ C 5min，待它们冷却至室温后立即添加到连接混合物中。
+
+## 巧妙利用衔接子
+
+也许衔接子最巧妙的使用是在 cDNA 文库构建时将 cDNA 群体连接到载体中（Yang et al. 1986; Elledge et al. 1991）。载体上 Xho I 克隆位点的凹陷的 3'端被部分填补，含有与部分填补 Xho I 位点互补的 3 个碱基的突出末端的磷酸化衔接子被连接到 cDNA 上。载体或 cDNA 分子都不能与它们自己复性，但它们可以互连。由于 Xho I 位点再生，克隆的 cDNA 可以通过用 Xho I 消化恢复。这一策略大大提高了 cDNA 克隆中棘手的连接步骤的效率，并消除了插入到载体中之前对 cDNA 甲基化或限制性酶切消化的需要。
+
+现在衔接子还被用于:
+
+\- 克隆小 RNA 的 cDNA 拷贝（如 miRNA）（见 Elbashir et al. 2001；Lau et al. 2001等)。简言之，3'和5'-衔接子寡核苷酸使用T4 RNA连接酶连接到纯化的小RNA。连接产物被反转录，通过PCR扩增并克隆。
+
+- 抑制消减杂交（Rebrikov et al. 2004; Rebrikov 2008）。
+- 3'-RACE，使用衔接子-引物将 mRNA 群体转录成 cDNA，衔接子-引物 3'端有 poly(T); 5'端有 30～40 个核苷酸，含有两个或三个限制性内切核酸酶识别位点（见第 7 章，方案 11）。
+
+## 参考文献
+
+Elbashir SM, Lendeckel W, Tuschl T. 2001. RNA interference is mediated by 21- and 22-nucleotide RNAs. Genes Dev 15: 188–200.
+
+Elledge SJ, Mulligan JT, Ramer SW, Spottswood M, Davis RW. 1991. λYES: A multifunctional cDNA expression vector for the isolation of genes by complementation of yeast and Escherichia coli mutations. Proc Natl Acad Sci 88: 1731–1735.
+
+Lau NC, Lim LP, Weinstein EG, Bartel DP. 2001. An abundant class of tiny RNAs with probable regulatory roles in Caenorhabditis elegans. Science 294: 858–862.
+
+Rebrikov DV. 2008. Identification of differential genes by suppression subtractive hybridization: An overview. Cold Spring Harb Protoc 10.1101/pdb.top21.
+
+Rebrikov DV, Desai SM, Siebert PD, Lukyanov SA. 2004. Suppression subtractive hybridization. Methods Mol Biol 258: 107–134.
+
+Yang YC, Ciarletta AB, Temple PA, Chung MP, Kovacic S, Witek-Giannotti JS, Leary AC, Kriz R, Donahue RE, Wong GG, et al. 1986. Human IL-3 (multi-CSF): Identification by expression cloning of a novel hematopoietic growth factor related to murine IL-3. Cell 47: 3–10.
+
+![](images/page_201_image_13.jpg)
+
+## 接头
+
+合成接头是小的、自我互补的合成 DNA 片段，通常长度为 8～16 个核苷酸，复性形成平末端双链分子，含有一个限制性内切核酸酶识别位点。例如，在复性后，一个携带 EcoRI 识别位点的合成接头可能有如下序列:
+
+$^{5'}$ CCGGAATTCCGG $^{3'}$
+
+$^{3'}$ GGCGTTAAGGCC $^{5'}$
+
+接头曾经用来为DNA的双链平末端装上酶切位点，以助于克隆(Scheller et al. 1977)。供应商提供种类繁多的商业化接头，主要是两种形式:可直接用于连接的5'端含有磷酸残基的接头，以及连接到DNA前需要用多核苷酸激酶和ATP处理的非磷酸化接头。通常，磷酸化的接头以约100倍摩尔过量连接到平末端的靶DNA，此化学计量比使得接头末端-末端连接，同时聚合接头连接到靶DNA的每一端。用适当的限制性内切酶消化除去多余的接头，产生含有黏性突出末端的靶分子，可以连接到含有匹配末端的载体上。
+
+如今，接头是一种濒临灭绝的东西，因为大多数克隆和亚克隆使用已知序列 DNA 进行，通过在用于扩增的 PCR 引物中引入酶切位点，线性 DNA 可以简单方便地装配上选择的末端。
+
+现在的合成接头已为特殊目的而设计。例如:
+
+- 克隆小分子RNA和构建miRNA的cDNA文库(Lau et al. 2001; Bartel 2004)。New England Biolabs公司销售5'-腺苷酸化、3'-阻断的寡核苷酸，可以被RNA连接酶识别，在缺少ATP的情况下将寡核苷酸的“活化的”腺苷化5'端连接到单链miRNA的3'-OH。位于保护基团的接头3'端的氨基基团可以防止自身连接、环化或者接头连接到miRNA的5'端。
+- 长接头（80 个核苷酸）分别与载体和靶 DNA 重叠 40bp 片段。用于在酵母体内构建重组体。在构造不能轻易通过 PCR 扩增的复杂结构时，这种特殊技术是有价值的（Raymond et al. 2002）。
+- 生物素化的接头。用来捕获和克隆活跃在哺乳动物细胞中的调控元件（Boyle et al. 2008; Song and Crawford 2010）。
+
+## 参考文献
+
+- Bartel DP. 2004. MicroRNAs: Genomics, biogenesis, mechanism, and function. Cell 116: 281–297.
+- Boyle AP, Davis S, Shulha HP, Meltzer P, Margulies EH, Weng Z, Furey TS, Crawford GE. 2008. High-resolution mapping and characterization of open chromatin across the genome. Cell 132: 311–322.
+- Lau NC, Lim LP, Weinstein EG, Bartel DP. 2001. An abundant class of tiny RNAs with probable regulatory roles in Caenorhabditis elegans. Science 294: 858–862.
+- Raymond CK, Sims EH, Olson MV. 2002. Linker-mediated recombinational subcloning of large DNA fragments using yeast. Genome Res
+- 12: 190–197.
+- Scheller RH, Dickerson RE, Boyer HW, Riggs AD, Itakura K. 1977. Chemical synthesis of restriction enzyme recognition sites useful for cloning. Science 196: 177–180.
+- Song L, Crawford GE. 2010. DNase-seq. A high-resolution technique for mapping active gene regulatory elements across the genome from mammalian cells. Cold Spring Harb Protoc 10.1101/pdb.prot.5384.
+
+![](images/page_202_image_12.jpg)
+
+## 连接和连接酶
+
+## DNA 连接酶
+
+在 20 世纪 60 年代中期发现的 DNA 连接酶对于 70 年代中期分子克隆技术的发展是至关重要的。在一段时间内人们早已明白，应该存在能够封闭双链 DNA 断裂的酶，可以用于封闭 DNA 复制、重组和修复过程中引入的切口。到 1965 年，人们已经开始认真寻找一种可以连接 DNA 分子的酶。1967 年年初研究取得了突破，NIH 的 Marty Gellert 研究表明，大肠杆菌提取物可以将 λ 噬菌体 DNA 氢键环转换为共价闭合环状形式。在短短几个月内，Gellert 和其他几个组独立纯化了酶，其活性能够催化通过 Watson-Crick 配对保持双链结构的一条 DNA 链中的并列 3'-羟基和 5'-磷酸端之间形成磷酸二酯键（综述见 Lehman 1974）。
+
+DNA 的连接是一个三步反应:①形成共价的连接酶-AMP 中间体；②AMP 转移到 DNA 的 5'-磷酸末端；③并列 3'-羟基攻击 AMP-DNA 键，DNA 中的切口被封闭，AMP 被释放（综述见 Pascal 2008）。这三个连续的步骤在连接酶的三个不同域进行，与双链 DNA 接触的各个域环绕 DNA 底物形成反应域。
+
+DNA 连接酶主要用于产生新的核酸分子组合，以及在分子克隆前将其连接到载体上。
+
+用于分子克隆的 DNA 连接酶是细菌来源或者噬菌体编码。所有真细菌，无论是嗜热或嗜温，包含一个单一的连接酶基因，编码  $NAD^{+}$ -依赖型的酶（Olivera and Lehman 1967；Takahashi et al. 1984）。在连接反应的第一步中，使用  $NAD^{+}$ 的二磷酸作为磷酸酐键和腺苷基团转移到 DNA 连接酶赖氨酸残基的  $\varepsilon$ -氨基基团。腺苷酸残基然后转移到 DNA 底物的 5'-磷酰基末端，变得易于受到并列的 3'-羟基基团的亲核攻击。这导致磷酸二酯键的形成，消去 AMP，以及形成 DNA 链的共价连接（综述参见 Pascal 2008 和 Shuman 2009）。
+
+用于分子克隆的 DNA 连接酶在连接非经典底物时能力有所不同，如平末端双链、DNA-RNA 杂交体或单链 DNA。这些以及其他的属性归纳于表 5。分子克隆中最常用的催化体外连接的酶是 T4 噬菌体编码的 DNA 连接酶。
+
+## 噬菌体 T4 DNA 连接酶
+
+- T4 DNA 连接酶，由噬菌体 T4 的基因 30 所编码（Wilson and Murray 1979），是 487 个氨基酸组成的单体蛋白质 ($M_r$ 计算值 = 55230)（Weiss et al. 1968b; Armstrong et al. 1983）。
+- 由商业化高产大肠杆菌菌株纯化的 T4 DNA 连接酶（Tait et al. 1980），对于黏性末端 $K_{\mathrm{m}}$ 为 $6 \times 10^{-7} \mathrm{~mol} / \mathrm{L}$ （Sugino et al. 1977），平末端为 $5 \times 10^{-5} \mathrm{~mol} / \mathrm{L}$，切口为 $1.9 \times 10^{-9} \mathrm{~mol} / \mathrm{L}$。酶对 ATP 的 $K_{\mathrm{m}}$ 约为 $5 \times 10^{-5} \mathrm{~mol} / \mathrm{L}$（Weiss et al. 1968b）。
+
+\- 已报道 T4 RNA 连接酶能刺激 T4 DNA 连接酶的活性（Sugino et al. 1977）。但是，聚乙二醇（Pheiffer and Zimmerman 1983）和氯化六氨合高钴（Rusche and Howard-Flanders 1985）等试剂，可以增加大分子群集，提高连接速率 3 个数量级，而且更便宜（见信息栏“缩合剂和聚合剂”）。
+
+表 5 DNA 连接酶
+
+<table><tr><td rowspan="2">连接酶</td><td colspan="4">底物 $^a$ </td><td rowspan="2">辅因子和激活剂</td><td rowspan="2">温度</td><td rowspan="2">巯基试剂</td></tr><tr><td>黏性末端</td><td>平末端</td><td>DNA-RNA杂交体</td><td>RNA-RNA杂交体</td></tr><tr><td>大肠杆菌连接酶</td><td>是</td><td>是 $^b$ </td><td>否</td><td>否</td><td>DPN $^+$ Mg $^{2+}$ (1~3 mol/L)</td><td>对于黏性末端 10~15°C;对于封闭切口,37°C $^c$ </td><td>不需要 $^d$ </td></tr><tr><td>T4 连接酶</td><td>是</td><td>是 $^b$ </td><td>是 $^e$ </td><td>是 $^e$ </td><td>ATPMg $^{2+}$ (10mmol/L)</td><td>对于黏性末端 4°C $^f$ ;对于平末端 15~25°C $^h$ ;对于封闭切口,37°C $^i$ </td><td>需要二硫苏糖醇 $^g$ </td></tr><tr><td>嗜热细菌的连接酶</td><td>是</td><td>否</td><td>否</td><td>否</td><td>DPN $^{+j}$ Mg $^{2+}$ (10 mmol/L)</td><td>对于黏性末端 24~37°C;对于封闭切口,65~72°C $^{k,l,m}$ </td><td>需要 $^{k,m}$ </td></tr></table>
+
+a. 如果这些 DNA 的末端在连接位点携带以下基团，连接酶将不会连接成对的 DNA:5'-羟基和 3'-羟基；5'-羟基和 3'-磷酸；5'-磷酸和 3'-双脱氧核苷；5'-三磷酸和 3'-羟基
+
+b. 最初报道大肠杆菌 DNA 连接酶（Sugino et al. 1977）是不能连接平末端 DNA 分子的，除了在缩合剂如聚乙二醇或聚蔗糖等（Zimmerman and Pheiffer 1983）以及一价阳离子如  $Na^{+}$ 等（Hayashi et al. 1985a,b）存在的情况下。不过，最近 Barringer 等（1990）阐明，大肠杆菌 DNA 连接酶能够连接平末端和一些单链核酸，动力学依赖于酶和底物的浓度。然而，对于常规连接平末端 DNA，噬菌体 T4 连接酶是值得选择的酶。T4 DNA 连接酶可以连接平末端分子（Ehrlich et al. 1977; Sgaramella and Ehrlich 1978），但反应速率不线性依赖于酶的浓度，只有在高浓度 DNA 和酶时能有效工作。此外，聚合剂如聚乙二醇、聚蔗糖、氯化六氨合高钴等加快 T4 DNA 连接酶平末端连接速率 1000 倍，并可在较低的酶、ATP 和 DNA 浓度（Zimmerman and Pheiffer 1983；Rusche and Howard-Flanders 1985）下反应。平末端连接被高浓度的  $Na^{+}$ （≥50mmol/L）和磷酸盐（≥25mmol/L）抑制（Raae et al. 1975）。
+
+c. Dugaiczyk 等 (1975)。
+
+d. Weiss 和 Richardson (1967)。
+
+e. T4 DNA 连接酶可以将 RNA 分子复性连接到互补的 DNA 或 RNA 模板，虽然效率低（Kleppe et al.1970）。
+
+f. Ferretti Sgaramella (1981).
+
+g. Weiss 等（1968a，b）。
+
+h. Sgaramella 和 Ehrlich (1978)。
+
+i. Pohl 等（1982）。
+
+j. 几乎所有嗜热连接酶都和嗜温真细菌连接酶一样，使用 DPN $^{+}$ 作为辅因子。不过，一种需要 ATP 作为辅因子的热稳定连接酶已被克隆和测序（Kletzin 1992）。这种酶的特性还没有详细研究。
+
+k. Takahashi 等（1984）。
+
+1. Takahashi 和 Uchida (1986)。
+
+m. Barany (1991a, b).
+
+## 克隆中常用 DNA 连接酶的属性
+
+- 如表 5 所示，T4 DNA 连接酶可催化黏性末端（Hedgpeth et al. 1972；Mertz and Davis 1972）、寡脱氧核苷酸、RNA-DNA 杂交体中寡核糖核苷酸（Olivera and Lehman 1968；Kleppe et al. 1970；Fareed et al. 1971）的连接。另外，此酶可以有效地促进具有完全碱基配对末端的两个双链分子末端间的连接（Sgar-amella et al. 1970；Ehrlich et al. 1977）。
+- 对于杂交到互补模板并且在双链的3'或5'结合处含有错配碱基的寡核苷酸进行连接反应，T4 DNA 连接酶表现出强烈的排斥（Wiaderkiewicz and Ruiz-Carillo 1987; Landegren et al. 1988; Wu and Wallace 1989），但不是绝对的（Goffin et al. 1987）。这种区分完美和不完美配对末端的能力使寡核苷酸连接和扩增系统得到发展，以检测医学上感兴趣的基因突变。
+- 高浓度（>100mmol/L）的一价阳离子如 $\mathrm{Na}^{+}$ 和 $\mathrm{K}^{+}$，抑制T4 DNA连接酶的活性，抑制的程度根据DNA底物的末端序列变化（Hayashi et al. 1985a）。然而，在聚合剂如 $10\%$ 聚乙二醇的存在下，一价阳离子有相反的效果，转而刺激酶的活性。
+
+## 大肠杆菌 DNA 连接酶
+
+- 大肠杆菌 DNA 连接酶由 lig 基因进行编码，位于大肠杆菌基因图谱的 52min (Gottesman et al. 1973; Bachmann 1990)。
+- lig 基因（Gottesman 1976）和 $lop11\ lig^{+}$（Cameron et al. 1975），一个过量生产此酶的调控突变体，已被克隆到 $\lambda$ 噬菌体载体，从而有利于大规模纯化此酶（Panasenko et al. 1977, 1978）。lig 基因的核苷酸序列（Ishino et al. 1986）表明，大肠杆菌 DNA 连接酶由 671 个氨基酸组成，相对分子质量为 73690。
+- 一些年来，人们认为大肠杆菌 DNA 连接酶不能连接平末端双链 DNA。然而，随着连接酶基因的克隆和表达，获得了高活性的酶制剂，能够以中等效率催化平末端连接（Barringer et al. 1990）。反应混合物含有 10%～15% 聚乙二醇和高浓度的 K$^{+}$时，可以刺激平末端连接提高约 10 倍（Hayashi et al. 1985b）。尽管如此，分子克隆实验中没有广泛使用大肠杆菌 DNA 连接酶，因为 T4 DNA 连接酶能够在没有聚合剂的情况下有效地连接平末端 DNA。
+- 不同于 T4 DNA 连接酶, 大肠杆菌 DNA 连接酶无法有效地将 RNA 连接到 DNA, 因此无法将 cDNA 第二链置换合成过程中出现的相邻 RNA 和 DNA 片段连接 (Okayama and Berg 1982)。所以, 此细菌酶可以用于产生被 RNA 片段隔断的长链 cDNA。
+
+## 热稳定 DNA 连接酶
+
+- 来自一些嗜热菌的编码热稳定连接酶的基因已被克隆、测序并在大肠杆菌中高水平表达（例如，见 Takahashi et al. 1984 年；Barany and Gelfand 1991；Lauer et al. 1991；Jónsson et al. 1994）。这些酶可以从商业来源购得。
+- 同大肠杆菌的酶一样，几乎所有的热稳定连接酶使用 $\mathrm{NAD}^{+}$作为辅助因子，对双链DNA中的切口更有效。此外，和它们的嗜温同系物一样，热稳定连接酶在聚合剂的存在下可以催化平末端连接，甚至在高温下也可以（Takahashi and Uchida 1986）。
+- 由于热稳定连接酶在多轮热循环后仍具有活性，它们广泛用于连接酶扩增反应，以检测哺乳动物 DNA 中的突变。
+
+## 连接酶活性单位
+
+连接酶活性单位的标准化对于生物化学家和分子克隆者是有意义的，但已被证明是一个可望而不可即的目标。在过去的20年中，至少有三个不同的单位已被用来衡量连接酶的活性。
+
+- 一个 Weiss 单位（Weiss et al. 1968b）定义为在  $37^{\circ}$ C 下，20min 内催化将  $1nmol^{32}P$  从无机焦磷酸盐交换到 ATP 所需的连接酶的量。
+- Modrich-Lehman 单位（Modrich and Lehman 1971）是基于放射性标记的具有 3'-羟基和 5'-磷酰基末端的 d(A-T)$_n$ 共聚物转换为耐受外切核酸酶 III 消化的形式，现在已很少使用。一个 Modrich-Lehman 单位定义为在标准测定条件下在 30min 内将 100nmol d(A-T)$_n$ 转换为外切核酸酶 III 耐受形式所需的酶量。
+
+\- 任意单位，基于 DNA 连接酶连接黏性末端的能力，由商业供应商定义。这些单位往往比定量更主观，对重视精度的研究者几乎提供不了什么指导。在缺乏有效信息的情况下，大多数研究者必须通过估测建立连接反应，这意味着不可避免地要使用比实际需要量更多的连接酶，而这正是商业公司所寻求的。作为一个粗略的指南，1Weiss U 约相当于 60 个黏性末端单位（New England Biolabs 公司所定义的）。因此，在 16℃，30min 内，0.015 Weiss U T4 DNA 连接酶应连接 50% 的用 Hind III 消化的 5 μg λ 噬菌体 DNA 所得到的片段。
+
+## T4 RNA 连接酶
+
+T4 RNA 连接酶由 Silber 等（1972）首次报道，催化单链 RNA 或 DNA 连接到寡核糖核苷酸或寡脱氧核苷酸（England et al. 1977；Uhlenbeck and Gumport 1982）。该反应需要具有 5'端磷酸基的供体分子、具有 3'端羟基基团的受体分子和 ATP，除非供体 5'端已处于活化的中间体形式。含有 5'-磷酸基团和 3'-羟基基团的寡核苷酸既可作为受体，也可作为供体，产生环状和/或多聚体产物。
+
+T4 RNA 连接酶可从一些商业供应商买到。NEB 公司销售几种形式的酶，它们催化不同形式的 RNA 和寡脱氧核苷酸模板连接反应的效率不同。
+
+T4 RNA 连接酶已用于标记 RNA 的 3' 端（England and Uhlenbeck 1978a），在准备用于 PCR 扩增的 RNA 5' 端添加寡核糖核苷酸（Schaefer 1995），RNA 和 DNA 的分子间和分子内连接（Romaniuk and Ulhlenbeck 1983；Moore and Sharp 1992），以及酶法合成确定序列的寡核糖核苷酸（England and Uhlenbeck 1978b）。
+
+## 参考文献
+
+- Armstrong J, Brown RS, Tsugita A. 1983. Primary structure and genetic organization of phage T4 DNA ligase. Nucleic Acids Res 11: 7145–7156.
+- Bachmann BJ. 1990. Linkage map of Escherichia coli K-12, edition 8. Microbiol Rev 54: 130–197. (Erratum Microbiol Rev [1991] 55: 191.)
+- Barany F. 1991a. Genetic disease detection and DNA amplification using cloned thermostable ligase. Proc Natl Acad Sci 88: 189–193.
+- Barany F. 1991b. The ligase chain reaction in a PCR world. PCR Methods Appl 1: 5–16. (Erratum PCR Methods Appl [1991] 1: 149.)
+- Barany F, Gelfand DH. 1991. Cloning, overexpression and nucleotide sequence of a thermostable DNA ligase-encoding gene. Gene 109: 1–11.
+- Barringer KJ, Orgel L, Wahl G, Gingeras TR. 1990. Blunt-end and single-strand ligations by Escherichia coli ligase: Influence on an in vitro amplification scheme. Gene 89: 117–122.
+- Cameron JR, Panasenko SM, Lehman IR, Davis RW. 1975. In vitro construction of bacteriophage λ carrying segments of the Escherichia coli chromosome: Selection of hybrids containing the gene for DNA ligase. Proc Natl Acad Sci 72: 3416–3420.
+- Dugaiczyk A, Boyer HW, Goodman HM. 1975. Ligation of EcoRI endonuclease-generated DNA fragments into linear and circular structures. J Mol Biol 96: 171–184.
+- Ehrlich SD, Sgaramella V, Lederberg J. 1977. T4 ligase joins flush-ended DNA duplexes generated by restriction endonucleases. In Nucleic acid-protein recognition (ed Vogel HJ), pp. 261–268. Academic, New York.
+- England TE, Gumport RI, Uhlenbeck OC. 1977. Dinucleoside pyrophosphate are substrates for T4-induced RNA ligase. Proc Natl Acad Sci 74: 4839–4842.
+- England TE, Uhlenbeck OC. 1978a. 3'-Terminal labelling of RNA with T4 RNA ligase. Nature 275: 560–561.
+- England TE, Uhlenbeck OC. 1978b. Enzymatic oligoribonucleotide synthesis with T4 RNA ligase. Biochemistry 17: 2069–2076.
+- Fareed GC, Wilt EM, Richardson CC. 1971. Enzymatic breakage and joining of deoxyribonucleic acid. 8. Hybrids of ribo- and deoxyribonu
+- cleotide homopolymers as substrates for polynucleotide ligase of bacteriophage T4. J Biol Chem 246: 925–932.
+- Ferretti L, Sgaramella V. 1981. Temperature dependence of the joining by T4 DNA ligase of termini produced by type II restriction endonucleases. Nucleic Acids Res 9: 85–93.
+- Goffin C, Bailly V, Verly WG. 1987. Nicks 3' or 5' to AP sites or to mispaired bases, and one-nucleotide gaps can be sealed by T4 DNA ligase. Nucleic Acids Res 15: 8755–8771.
+- Gottesman MM. 1976. Isolation and characterization of a λ specialized transducing phage for the Escherichia coli DNA ligase gene. Virology 72: 33–44.
+- Gottesman MM, Hicks ML, Gellert M. 1973. Genetics and function of DNA ligase in Escherichia coli. J Mol Biol 77: 531–547.
+- Hayashi K, Nakazawa M, Ishizaki Y, Obayashi A. 1985a. Influence of monovalent cations on the activity of T4 DNA ligase in the presence of polyethylene glycol. Nucleic Acids Res 13: 3261–3271.
+- Hayashi K, Nakazawa M, Ishizaki Y, Hiraoka N, Obayashi A. 1985b. Stimulation of intermolecular ligation with E. coli DNA ligase by high concentrations of monovalent cations in polyethylene glycol solutions. Nucleic Acids Res 13: 7979–7992.
+- Hedgpeth J, Goodman HM, Boyer HW. 1972. DNA nucleotide sequence restricted by the RI endonuclease. Proc Natl Acad Sci 69: 3448–3452.
+- Ishino Y, Shinagawa H, Makino K, Tsunasawa S, Sakiyama F, Nakata A. 1986. Nucleotide sequence of the lig gene and primary structure of DNA ligase of Escherichia coli. Mol Gen Genet 204: 1–7.
+- Jónsson ZO, Thorbjarnardóttir SH, Eggertsson G, Palsdottir A. 1994. Sequence of the DNA ligase-encoding gene from Thermus scotoductus and conserved motifs in DNA ligases. Gene 151: 177–180.
+- Kleppe K, Van de Sande JH, Khorana HG. 1970. Polynucleotide ligase-catalyzed joining of deoxyribo-oligonucleotides on ribopolynucleotide templates and of ribo-oligonucleotides on deoxyribopolynucleotide templates. Proc Natl Acad Sci 67: 68–73.
+- Kletzin A. 1992. Molecular characterisation of a DNA ligase gene of the extremely thermophilic archaeon Desulfurolobus ambivalens shows close phylogenetic relationship to eukaryotic ligases. Nucleic Acids Res 20: 5389–5396.
+- Landegren U, Kaiser R, Sanders J, Hood L. 1988. A ligase-mediated gene detection technique. Science 241: 1077–1080.
+- Lauer G, Rudd EA, McKay DL, Ally A, Ally D, Backman KC. 1991. Cloning, nucleotide sequence, and engineered expression of Thermus thermophilus DNA ligase, a homolog of Escherichia coli DNA ligase. J Bacteriol 173: 5047–5053.
+- Lehman IR. 1974. DNA ligase: Structure, mechanism, and function. Science 186: 790–797.
+- Mertz JE, Davis RW. 1972. Cleavage of DNA by R₁ restriction endonuclease generates cohesive ends. Proc Natl Acad Sci 69: 3370–3374.
+- Modrich P, Lehman IR. 1971. Enzymatic characterization of a mutant of Escherichia coli with an altered DNA ligase. Proc Natl Acad Sci 68:1002–1005.
+- Moore MJ, Sharp PA. 1992. Site-specific modification of pre-mRNA: The 2'-hydroxyl groups at the splice sites. Science 256: 992–997.
+- Okayama H, Berg P. 1982. High-efficiency cloning of full-length cDNA. Mol Cell Biol 2: 161–170.
+- Olivera BM, Lehman IR. 1967. Diphosphopyridine nucleotide: A cofactor for the polynucleotide-joining enzyme from Escherichia coli. Proc Natl Acad Sci 57: 1700–1704.
+- Olivera BM, Lehman IR. 1968. Enzymic joining of polynucleotides. 3. The polydeoxyadenylate-polydeoxythymidylate homopolymer pair. J Mol Biol 36: 261–274.
+- Panasenko SM, Cameron JR, Davis RW, Lehman IR. 1977. Five hundred-fold overproduction of DNA ligase after induction of a hybrid λ lysogen constructed in vitro. Science 196: 188–189.
+- Panasenko SM, Alazard RJ, Lehman IR. 1978. A simple, three-step procedure for the large scale purification of DNA ligase from a hybrid λ lysogen constructed in vitro. J Biol Chem 253: 4590–4592.
+- Pascal JM. 2008. DNA and RNA ligases: Structural variations and shared mechanisms. Curr Opin Struct Biol 18: 96–105.
+- Pheiffer BH, Zimmerman SB. 1983. Polymer-stimulated ligation: Enhanced blunt- or cohesive-end ligation of DNA or deoxyribooligonucleotides by T4 DNA ligase in polymer solutions. Nucleic Acids Res 11:7853–7871.
+- Pohl FM, Thomae R, Karst A. 1982. Temperature dependence of the activity of DNA-modifying enzymes: Endonucleases and DNA ligase. Eur J Biochem 123: 141–152.
+- Raae AJ, Kleppe RK, Kleppe K. 1975. Kinetics and effect of salts and polyamines on T4 polynucleotide ligase. Eur J Biochem 60: 437–443.
+- Romaniuk PJ, Uhlenbeck OC. 1983. Joining of RNA molecules with RNA ligase. Methods Enzymol 100: 52–59.
+- Rusche JR, Howard-Flanders P. 1985. Hexamine cobalt chloride promotes intermolecular ligation of blunt end DNA fragments by T4 DNA ligase. Nucleic Acids Res 13: 1997–2008.
+- Schaefer BC. 1995. Revolutions in rapid amplification of cDNA ends: New strategies for polymerase chain reaction cloning of full-length cDNA ends. Anal Biochem 227: 255–273.
+- Sgaramella V, Ehrlich SD. 1978. Use of the T4 polynucleotide ligase in the joining of flush-ended DNA segments generated by restriction endonucleases. Eur J Biochem 86: 531–537.
+- Sgaramella V, Van de Sande JH, Khorana HG. 1970. Studies on polynucleotides, C. A novel joining reaction catalyzed by the T4-polynucleotide ligase. Proc Natl Acad Sci 67: 1468–1475.
+- Shuman S. 2009. DNA ligases: Progress and prospects. J Biol Chem 284:17365–17369.
+- Silber R, Malathi VG, Hurwitz J. 1972. Purification and properties of bacteriophage T4-induced RNA ligase. Proc Natl Acad Sci 69: 3009–3013.
+- Sugino A, Goodman HM, Heyneker HL, Shine J, Boyer HW, Cozzarelli NR. 1977. Interaction of bacteriophage T4 RNA and DNA ligases in joining of duplex DNA at base-paired ends. J Biol Chem 252: 3987–3994.
+- Tait RC, Rodriguez RL, West RWJ. 1980. The rapid purification of T4 DNA ligase from a $\lambda$T4 lig lysogen. J Biol Chem 255: 813-815.
+- Takahashi M, Uchida T. 1986. Thermophilic HB8 DNA ligase: Effects of polyethylene glycols and polyamines on blunt-end ligation of DNA. J Biochem 100: 123–131.
+- Takahashi M, Yamaguchi E, Uchida T. 1984. Thermophilic DNA ligase. Purification and properties of the enzyme from Thermus thermophilus HB8. J Biol Chem 259: 10041–10047.
+- Uhlenbeck O, Gumport RI. 1982. T4 RNA ligase. In The enzymes, 3rd ed. (ed. Boyer PD), Vol. 15, pp. 31–58. Academic, New York.
+- Weiss B, Richardson CC. 1967. Enzymatic breakage and joining of deoxyribonucleic acid. III. An enzyme-adenylate intermediate in the polynucleotide ligase reaction. J Biol Chem 242: 4270–4272.
+- Weiss B, Thompson A, Richardson CC. 1968a. Ezymatic breakage and joining of deoxyribonucleic acid. VII. Properties of the enzyme-adenylate intermediate in the polynucleotide ligase reaction. J Biol Chem 243: 4556–4563.
+- Weiss B, Jacquemin-Sablon A, Live TR, Fareed GC, Richardson CC. 1968b. Enzymatic breakage and joining of deoxyribonucleic acid. VI. Further purification and properties of polynucleotide ligase from Escherichia coli infected with bacteriophage T4. J Biol Chem 243: 4543–4555.
+- Wiadkiewicz R, Ruiz-Carillo A. 1987. Mismatch and blunt to protruding-end joining by DNA ligases. Nucleic Acids Res 15: 7831–7848.
+- Wilson GG, Murray NE. 1979. Molecular cloning of the DNA ligase gene from bacteriophage T4. I. Characterisation of the recombinants. J Mol Biol 132: 471–491.
+- Wu DY, Wallace RB. 1989. The ligation amplification reaction (LAR)—Amplification of specific DNA sequences using sequential rounds of template-dependent ligation. Genomics 4: 560–569.
+- Zimmerman SB, Pheiffer BH. 1983. Macromolecular crowding allows blunt-end ligation by DNA ligases from rat liver or Escherichia coli. Proc Natl Acad Sci 80: 5852–5856.
+
+![](images/page_206_image_39.jpg)
+
+## 缩合剂和聚合剂
+
+缩合剂如氯化六氨合高钴等、聚合剂如聚乙二醇等，对连接反应有两个方面的影响:
+
+- 它们加快平末端 DNA 连接速率 1～3 个数量级。此增加使得连接反应可以以较低浓度的酶和 DNA 进行。
+- 它们改变连接产物的分布。分子内连接被抑制，连接产物只发生在分子间。因此，即使在有利于环化的 DNA 浓度，所有的 DNA 产物都是线性多聚体。
+
+不同批次的 PEG 8000 刺激平末端 DNA 连接反应的程度不同。一个好办法是测定几个批次的 PEG 8000，以确定其中刺激连接反应最强的，然后将其专用于连接反应。对连接反应最强的刺激通常会发生在 3%～5% 的 PEG 8000，但是，这个值可以在不同批次之间波动，应根据经验来确定。在添加到连接反应前，应将 PEG 存储液（13%）加热至室温，因为 DNA 在 PEG 8000 存在时可以在低温下析出。此外，重要的是，将 PEG 存储液作为最后的成分添加至连接反应。PEG 8000 对平末端 DNA 连接的刺激高度依赖于镁离子的浓度，应在连接反应中保持 5～10mmol/L 的镁离子。
+
+从我们掌握的情况来看，对于平末端连接的刺激，PEG 比氯化六氨合高钴的重现性更好。
+
+![](images/page_206_image_47.jpg)
+
+## 限制性内切核酸酶的发现
+
+四十年前，限制性内切核酸酶提供了建立分子克隆的基础:在目前的 DNA 重组技术中它们仍然是必不可少的工具。现在可用的丰富的限制性内切核酸酶来自于最初于20世纪50年代报道的现象。四个独立的实验室几乎同时发现称为宿主控制修饰的现象，噬菌体如 $\lambda^{①}$ 在某些大肠杆菌菌株中生长良好，但在一些别的密切相关菌株中生长很差（综述见Arber 1965）。以宿主特异性方式生长不良的噬菌体被认为显示出一个受限的宿主范围。
+
+通过使用复制型的噬菌体 fd DNA，Arber 和 Linn（1969）证实，限制性宿主含有能够降解病毒 DNA 的酶，噬菌体 DNA 如果以前被甲基化修饰，可以避免被降解（Kuhnlein et al. 1969）。在思考这两个对立的细菌防御系统的组成部分时，Arber 有先见之明地表示，感染噬菌体基因组上有限制性的特定位点，这些位点上的甲基化是保护性的。他在 1965 年的综述中写道:
+
+宿主控制的修饰和限制系统为细菌细胞提供了一种独特的防御机制:菌株对外源DNA特异识别和灭活。该系统对于一种最近从外部环境引入的病毒特别有效，一种细菌种群还没有建立针对其免疫力的病毒。
+
+Arber 和 Linn 的工作激发了人们寻找和鉴定其他的限制性内切核酸酶。Hamilton Smith 和 Kent Wilcox（1970）纯化并鉴定了同源的限制和修饰酶，它们来自流感嗜血杆菌（Hemophilus influenzae），一种革兰氏阴性球杆菌。Dan Nathans 和他的同事随后发现，这种限制性内切核酸酶能将 SV40 的 DNA 切割成特定的、电泳可分离的片段，可以映射到病毒基因组（Danna et al. 1973）。1978 年，10 岁的 Sylvia Arber 记载了限制/修饰系统的美丽，就在这一年她的父亲 Werner Arber 和 Hamilton Smith、Dan Nathans 一起被授予诺贝尔奖，在一篇文章中她写道:
+
+当我来到我父亲的实验室，我经常看到桌子上放着一些平板。这些平板中含有细菌菌落。这些菌落让我想起了有很多居民的城市。每个细菌都有一个国王，是长而瘦的。国王有许多仆人，都是粗而短的，像球一样。我的父亲称国王为DNA，称仆人为酶。国王就像是一本书，书上注明了仆人要做的一切工作。对于我们人类，这些国王的指令是一个谜。
+
+我的父亲发现了一个功能像一把剪刀的仆人。如果一个外国国王侵入细菌，这仆人会把它剪成小片段，但他不会对自己的国王造成任何伤害。聪明的人使用剪刀功能的仆人找出国王的秘密。
+
+要做到这一点，他们搜集了大量剪刀功能的仆人，将它们施放到一个国王，把国王切成碎片。用得到的碎片调查秘密会容易得多。基于这个原因，我父亲因为发现剪刀功能的仆人而获得诺贝尔奖。
+
+（发表于 Nature Structural Biology 一篇 News and Views 的文章[Conforti 2000]）。
+
+## 参考文献
+
+Arber W. 1965. Host-controlled modification of bacteriophage. Annu Rev Microbiol 19: 365–378.
+Arber W, Linn S. 1969. DNA modification and restriction. Annu Rev Biochem 38: 467–500.
+Conforti B. 2000. The servant with the scissors. Nat Struct Biol 7: 99–100.
+Danna KJ, Sack GH Jr, Nathans D. 1973. Studies of simian virus 40 DNA.
+VII. A cleavage map of the SV40 genome. J Mol Biol 78: 363–376.
+
+Kuhnlein U, Linn S, Arber W. 1969. Host specificity of DNA produced by Escherichia coli. XI. In vitro modification of phage fd replicative form. Proc Natl Acad Sci 63: 556–562.
+Smith HO, Wilcox KW. 1970. A restriction enzyme from Hemophilus influenzae. I. Purification and general properties. J Mol Biol 51: 379–391.
+
+![](images/page_207_image_13.jpg)
+
+## 限制性内切核酸酶
+
+根据域结构、辅因子的要求、识别序列的长度和对称性以及切割位置，将限制性内
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">① 译者注:应为 $\lambda$ ，原文为1。</span></small>

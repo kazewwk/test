@@ -1,0 +1,670 @@
+6. 用 0.5mL 酵母重悬缓冲液重悬细胞。
+
+7. 加入 $50\mu \mathrm{L} 10\%$ 的SDS。盖上管盖，快速颠倒离心管数次混匀。将离心管 $65^{\circ}\mathrm{C}$ 温育$30\mathrm{min}$。
+
+8. 加入 0.2mL 5mol/L 的乙酸钾，冰上放置管子 1h。
+
+## 分离 DNA
+
+9. 在微型离心机中，以最大转速  $4^{\circ}$ C 离心 5min，使细胞碎片沉积。
+
+10. 室温下用宽孔吸头转移上清到一个新的微量离心管中。
+
+11. 加入等体积室温的异丙醇，沉淀核酸。将管内容物混匀，室温放置 5min。
+
+▲不要使沉淀反应超过5min。
+
+12. 在微型离心机中以最大转速离心 10s 回收沉淀的核酸。吸出上清液，沉淀在空气中干燥 10min。
+
+13. 用 $300\mu \mathrm{L}$ 含 $20\mu \mathrm{g} / \mathrm{mL}$ 胰RNA酶的TE（pH8.0）溶解沉淀。将消化混合物 $37^{\circ}C$ 温育 $30\mathrm{min}$ 。
+
+14. 加入  $30 \mu L$  3 mol/L 的乙酸钠（pH 7.0）。混匀溶液，然后加入 0.2 mL 异丙醇。再次混匀，在微型离心机中以最大转速离心 20 s，回收沉淀的 DNA。
+
+15. 吸出上清液，在空气中干燥沉淀 10min，用  $150\mu L$  TE（pH 7.4）溶解 DNA。 $4^{\circ}C$  保存 DNA。
+
+## 信息栏
+
+![](images/page_288_image_15.jpg)
+
+## CRE-loxP
+
+Cre-loxP 重组系统来源于 P1 噬菌体，其基因组是环状排列的，且末端有冗余。但是，噬菌体 DNA 的遗传图谱却是线性的。自从人们发现 P1 噬菌体含有一个重组热点 loxP (locus of crossing-over [×] in P1)，这一矛盾也随之解决。loxP 定义了遗传图谱的终点 (Sternberg et al. 1978, 1983)。在 loxP 位点上的重组仅由一个噬菌体编码蛋白 Cre (cyclization recombination protein) 介导 (Sternberg et al. 1986)。loxP 系统是线性的 P1 DNA 环化所必需的。这种环化过程在噬菌体感染大肠杆菌几分钟内发生（Segev et al. 1980; Segev and Cohen 1981; Hochman et al. 1983）。有趣的是，由于受噬菌体包装过程的限制，每 4～5 个噬菌体颗粒中只有 1 个在其末端冗余区含有 loxP 位点（图 1）。只有这类噬菌体基因组才是 CRE-loxP 系统的底物，也只有这些噬菌体的基因组能发生环化并且在 recA 缺陷型的大肠杆菌中复制（见综述 Yarmolinsky and Sternberg 1988）。loxP 位点长 34 bp，含有 2 个 13 bp 的反向重复序列，中间被 1 个 8bp 的间隔区隔开。
+
+$loxP$ 位点的重组由 $cre$ 基因编码蛋白催化，Cre 蛋白是一个含 343 个氨基酸的 I 型重组酶。每个 $loxP$ 位点都含有 2 个不完全相同的 Cre 结合域。每个 Cre 结合域都是由一个 13 bp 的重复序列和它旁侧的 4 bp 间隔序列组成。修饰反向重复序列最远端的 2 个碱基，不会影响重组的效率；但是如果反向重复序列有较大的缺失，则会引起重组产物的异常的拓扑构象（Abremski and Hoess 1985）。一个完整的 $loxP$ 位点最多可以结合 2 个 Cre 分子（一个反向重复序列结合一个 Cre 分子）。Cre-loxP 复合体与第二个 $loxP$ 位点发生联会。后者可以在同一个 DNA 分子上，也可以在另一个 DNA 分子上。在间隔区，DNA 经不对称切割后，在联会的两个 $loxP$ 位点间会发生链交换（见图 2 和 3）。因为间隔区的不对称性，所以使得在同一条 DNA 分子的 loxP 位点间进行重组具有了极性。如果发生重组的两个 loxP 位点是同向的，则此两位点间的 DNA 被切割；如果这两个位点是反向的，则会引起两位点间的插入序列倒位。因为单分子和双分子都能发生重组反应，Cre-loxP 系统能被用于转基因的整合和切除 loxP 位点结合序列的分子克隆实验。
+
+![](images/page_289_image_3.jpg)
+
+<details>
+<summary>text_image</summary>
+
+相邻IoxP位点
+间距约90kb
+包装进入P1噬菌体
+颗粒的DNA约为100kb
+</details>
+
+![](images/page_289_image_4.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["Initial Material"] --> B["Step 1: Extruded Material"]
+  B --> C["Step 2: Extruded Material"]
+  C --> D["Step 3: Extruded Material"]
+  D --> E["Step 4: Extruded Material"]
+```
+</details>
+
+图 1 来自细胞内多联体的 P1 噬菌体 DNA 的包装。包装的底物是线性的多联体 DNA（粗线表示）。在多联体上，每一个 P1 噬菌体基因组头尾相连，串联排布。包装从一处 pac 位点开始（即图示中的大剪刀图标）。此位点与最近的 loxP 位点相距约 5kb。多联体中其他的 pac 位点（小剪刀）都不是包装的起始位点。长 100kb 的 DNA 片段相继以单向前进的“头样”机制被卷入噬菌体的前头部。因为 P1 噬菌体的基因组约为 90kb，而前头部的容量能达约 100kb，所以包装进每个噬菌体颗粒中的 DNA 都有冗余末端。因为有这个冗余末端，使得每个多联体形成的第一个噬菌体颗粒都含有 2 个 loxP 位点。所以该噬菌体 DNA 进入新的细菌胞内后，可在 Cre 重组酶的催化下发生环化。每条多联体大约可以包装 4 个噬菌体。但是，其中只有一个病毒颗粒的末端冗余区含有 loxP 位点。
+
+![](images/page_289_image_6.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["ATAACTTCGTATA\nTATTGAAGCATAT"] -->|"+1\nGCAT\nCGTA"| B["TATACGAAGTTAT\nATATGCTTCAATA"]
+  B -->|"-1\nACAT\nTGTA"| A
+```
+</details>
+
+图 2 34bp 的 loxP 位点的结构。34bp 的 loxP 位点有 2 个理想的 13bp 长的反向重复序列（图示箭头内的部分），其中间被一个 8bp 的间隔区隔开。竖箭头标示的是 Cre 蛋白在 DNA 上下两条链的切割位点。为了方便起见，我们把 loxP 位点的核苷酸从间隔中心处（竖线）开始排序。竖线左侧的碱基对向左按正数排序，竖线右侧的碱基对向右按负数排序。
+
+![](images/page_290_image_2.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["Cre蛋白与一或两个\nloxP位点结合"] --> B["loxP位点联配"]
+  B --> C["loxP位点不对称切割\n随后进行链交换和联会"]
+  C --> D["kjihgfedcba"]
+```
+</details>
+
+图 3 在 loxP 位点上 Cre 介导的重组。详细内容请参阅正文。
+
+Cre 蛋白催化的重组反应不仅限于大肠杆菌，在酵母、植物和哺乳类动物细胞中都可发生。所以，Cre 重组酶能够:①在真核细胞的染色体上，驱动位点特异性的基因整合（图 3）；②催化两侧具有正向重复 loxP 位点的 DNA 片段的精确切除（此过程被称为 “floxing”）；③增强组织特异的启动子的表达。
+
+## DNA 整合
+
+DNA 整合是质粒上的 loxP 位点和靶细胞基因组引入的另一个 loxP 位点进行重组的结果。Cre 蛋白可以由一个克隆拷贝的 cre 基因临时提供或由整合于宿主细胞基因组的一个基因拷贝提供。如我们所知，酵母和小鼠的细胞的基因组不含有任何真正的 loxP 位点。然而，过表达 Cre 蛋白能导致哺乳动物细胞的染色体重排，据推测其发生在同 loxP 位点有一定序列相似性的位点。但是，通常 cre 基因的表达对真核细胞是无毒性的，受小鼠金属硫蛋白 I 启动子或巨细胞病毒启动子调控的 cre 转基因小鼠的发育、生长或生殖能力不受影响。
+
+## 染色体 DNA 片段的切除
+
+两侧带有正向重复 loxP 位点的染色体 DNA 片段的切除（floxing）效率高于将 loxP 质粒整合到细胞染色体上嵌入的 loxP 位点的效率。将选定的染色体位置中含 loxP 位点的基因工程小鼠与表达 Cre 的转基因动物交配，Cre-loxP 系统可用于产生无效等位基因及以组织特异和发育调控的方式激活基因。其他用途还包括:特定的染色体倒位和缺失、特定细胞系的去除、在预先选定的小鼠组织中产生特定基因的半合子。
+
+## 增强靶基因的表达
+
+通过在靶基因上附加一个强启动子来改造宿主细胞或生物体，可使靶基因的表达增强。在启动子和靶基因之间有数个转录终止序列，转录终止序列两侧是串联排列的 loxP 位点。在有 Cre 蛋白时，发生切除重组，靶基因立即直接受上游强启动子调控。在转基因生物中，仅需要适时、适地地调节 Cre 蛋白的表达，就能以组织特异的方式打开靶基因的表达（注意，在常规使用中，哺乳动物细胞内天然的 cre 基因缺少一个最佳的翻译起始信号。在转染的哺乳动物细胞中，将-3 位核苷酸从 T 转换为 G 能大幅提高其重组能力）。
+
+Cre-loxP 系统是当前最好的哺乳动物和植物基因组的重组系统，但并非独一无二。还有其他一些重组酶/靶序列的组合，它们在特定的时空内在真核生物中介导重组事件。它们包括:①酿酒酵母的 FLP-frt 重组酶，能在哺乳动物细胞和果蝇（Drosophila）中催化重组反应；②鲁氏接合酵母（Zygosaccharomyces rouxii）的 pSR1 重组酶，在酿酒酵母中高效发挥功能。但是，目前这些位点特异性的重组系统的开发均不如 Cre-loxP 系统。
+
+有用的 Cre-loxP 系统的综述，见 Orban 等(1992)、Kuhn 等(1995)、Sauer (1998)、Copeland 等(2001)、Van Duyne (2001)、Branda 和 Dymecki (2004)、Garcia-Otin 和 Guillou (2006)及 Grindley 等(2006)。
+
+## 参考文献
+
+- Abremski K, Hoess R. 1985. Phage P1 Cre-loxP site-specific recombination. Effects of DNA supercoiling on catenation and knotting of recombinant products. J Mol Biol 184: 211–220.
+- Branda CS, Dymecki SM. 2004. Talking about a revolution: The impact of site-specific recombinases on genetic analyses in mice. Dev Cell 6: 7–28.
+- Copeland NG, Jenkins NA, Court DL. 2001. Recombineering: A powerful new tool for mouse functional genomics. Nat Rev Genet 2: 769–779.
+- Garcia-Otin AL, Guillou F. 2006. Mammalian genome targeting using site-specific recombinases. Front Biosci 11: 1108–1136.
+- Grindley NDF, Whiteson KL, Rice P. 2006. Mechanisms of site-specific recombination. Annu Rev Biochem 75: 567–605.
+- Hochman L, Segev N, Sternberg N, Cohen G. 1983. Site-specific recombinational circularization of bacteriophage P1 DNA. Virology 131: 11–17.
+- Kuhn R, Schwenk F, Aguet M, Rajewsky K. 1995. Inducible gene targeting in mice. Science 269: 1427–1429.
+- Orban PC, Chui D, Marth JD. 1992. Tissue- and site-specific DNA recombination in transgenic mice. Proc Natl Acad Sci 89: 6861–6865.
+- Sauer B. 1998. Inducible gene targeting in mice using the Cre/lox system. Methods 14: 381–392.
+- Segev N, Cohen G. 1981. Control of circularization of bacteriophage P1 DNA in Escherichia coli. Virology 114: 333–342.
+- Segev N, Laub A, Cohen G. 1980. A circular form of bacteriophage P1 DNA made in lytically infected cells of Escherichia coli. Characterization and kinetics of formation. Virology 101: 261–271.
+- Sternberg N, Austin S, Hamilton D, Yarmolinsky M. 1978. Analysis of bacteriophage P1 immunity by using λ-P1 recombinants constructed in vitro. Proc Natl Acad Sci 75: 5594–5598.
+- Sternberg N, Hoess R, Abremski K. 1983. The P1 lox-Cre site-specific recombination system: Properties of lox sites and biochemistry of lox-Cre interactions. UCLA Symp Mol Cell Biol New Ser 10:671-684.
+- Sternberg N, Sauer B, Hoess R, Abremski K. 1986. Bacteriophage P1 cre gene and its regulatory region. Evidence for multiple promoters and for regulation by DNA methylation. J Mol Biol 187: 197–212.
+- Van Duyne GD. 2001. A structural view of Cre-loxP site-specific recombination. Annu Rev Biophys Biomol Struct 30: 87–104.
+- Yarmolinsky MB, Sternberg N. 1988. Bacteriophage P1. In The bacteriophages (ed Calendar R), Vol. 1, pp. 291–438. Plenum, New York.
+
+![](images/page_291_image_27.jpg)
+
+## 用 EGFP 作为报道分子
+
+增强型绿色荧光蛋白（EGFP）是一个含有生色团的、238个氨基酸长的蛋白质，受到激发时，在490nm处发荧光。通过其内在的荧光能直接鉴定EGFP（取决于在细胞中拷贝数），或者通过高特异性的抗体免疫标记放大其信号。
+
+我们已经利用这个特性创造了一种融合蛋白，用于鉴定特定细胞类型的 mRNA（Doyle et al. 2008; Heiman et al. 2008）。通过在大亚基核糖体蛋白（L10）的氨基末端附加
+
+EGFP 来产生 EGFP-RP 融合蛋白。在特定细胞类型中表达 EGFP-RP，通过抗 EGFP 的抗体免疫沉淀核糖体，以纯化相应的 mRNA。基于 BAC 的 EGFP-L10a 细胞系，尤其在翻译图谱中筛选特定群体的 mRNA 时非常有用。通常，EGFP-RP 融合蛋白被引入 BAC 载体，它可以靶向中枢神经系统的许多特定细胞类型，因而极大加速了 DNA 微阵列技术的研究。
+
+## 参考文献
+
+Doyle JP, Dougherty JD, Heiman M, Schmidt EF, Stevens TR, Ma G, Bupp S, Shrestha P, Shah RD, Doughty ML, et al. 2008. Application of a translational profiling approach for the comparative analysis of CNS cell types. Cell 135: 749–762.
+
+Heiman M, Schaefer A, Gong S, Peterson JD, Day M, Ramsey KE, Suárez-Fariñas M, Schwarz C, Stephan DA, Surmeier DJ, et al. 2008. A translational profiling approach for the molecular characterization of CNS cell types. Cell 135: 738–748.
+
+![](images/page_292_image_6.jpg)
+
+## 同源臂、共合体和重组体的引物设计
+
+BAC 扩增方案中使用的 PCR 引物来自 Bio-Synthesis 公司（(http://www.biosyn.com)。引物的工作浓度为  $10pmol/\mu L$ 。扩增 A 和 B 同源臂的引物长度为 25～30bp。通常，同时进行 2 个扩增反应来鉴定共合体的 BAC 克隆。第一套引物包括一个正向的 5' 共合体引物，此引物位于 A 同源臂的上游；以及位于载体修饰盒上的报道分子（或设计好的突变区）的反向 3' 引物。第二套引物包含一个正向的 5' 引物——R6kγ（用于一步 BAC 修饰）或 RecA（用于两步 BAC 修饰），以及一个位于同源臂下游的反向的 3' 共合体引物（一步 BAC 修饰中，其位于 A 同源臂下游；两步 BAC 修饰中，其位于 B 同源臂的下游）。
+
+在两步 BAC 修饰中，同时进行两个扩增实验鉴定重组的 BAC 克隆。第一套引物包括 5' 共合体引物，此引物位于 A 同源臂的上游；以及报道分子（或设计好的突变区）的反向 3' 引物。第二套引物包含报道分子（或设计好的突变区）的正向的 5' 引物，以及一个位于 B 同源臂下游的反向的 3' 共合体引物。
+
+![](images/page_292_image_10.jpg)
+
+## 酵母培养基
+
+在分离基因组 DNA 前，推荐使用丰富的 YPD 培养基，用于携带 YAC 酵母菌株的增殖。因为 YPD 培养基含有尿嘧啶和色氨酸，对保持 YAC 无选择性。然而，由于培养物只是短时间生长（过夜），并且酵母菌株生长良好，得到丢失 YAC 的变异体的风险不大。当使用生长缓慢的菌株时，它是由于其携带特定的 YAC 或宿主的基因型所导致，最好在尿嘧啶和色氨酸营养缺陷培养基（也被称为 Ura-Trp 营养缺陷培养基，参考缺少尿嘧啶和色氨酸的基本培养基）或酸水解酪蛋白（AHC）培养基中生长酵母，为保持 YAC DNA 施加选择压力。一些携带 YAC 克隆的酵母菌株在 AHC 培养基中生长得更好（Burke and Olson 1991）。它是含有腺嘌呤的完全培养基，能抑制 ade 突变体的回复突变。根据实验情况，加入低浓度（20mg/L）或高浓度（100mg/L）的腺嘌呤。在开始构建 YAC 文库，筛选含有插入片段的 YAC 载体时，使用低浓度腺嘌呤；在生长 YAC 菌株，用于 DNA 分离时，使用高浓度腺嘌呤。
+
+## 参考文献
+
+Burke DT, Olson MV. 1991. Preparation of clone libraries in yeast artificial chromosome libraries. Methods Enzymol 194: 251–270.
+
+## 第 6 章 真核细胞 RNA 的提取、纯化和分析
+
+## 导言
+
+## 方案
+
+- 用单相裂解试剂提取总 RNA 277
+1 从哺乳动物的细胞和组织中提取
+总 RNA 279
+- 替代方案 从小量样本提取 RNA 281
+2 从斑马鱼胚胎和成体中提取
+总 RNA 282
+3 从黑腹果蝇提取总 RNA 283
+4 从秀丽隐杆线虫中提取总 RNA 285
+5 从酿酒酵母菌中采用热酸酚提取总 RNA 287
+6 RNA 定量和储存 289
+7 RNA 的乙醇沉淀 295
+8 通过无 RNase 的 DNase I 处理去除 RNA 样品中的 DNA 污染 297
+9 Oligo (dT) 磁珠法提取
+poly (A) $^{+}$ mRNA 298
+- Northern 杂交进行 RNA 转移 302
+10 按照大小分离 RNA: 含甲醛的琼脂糖凝胶电泳 308
+
+11 根据分子质量大小分离 RNA:
+RNA 的尿素变性聚丙烯酰胺
+凝胶电泳 312
+12 琼脂糖凝胶中变性 RNA 的转膜和固定 319
+- 替代方案 下行毛细管转移 323
+13 聚丙烯酰胺凝胶的电转移和膜固定 325
+14 Northern 杂交 327
+15 纯化 RNA 的点杂交和狭缝杂交 330
+- RNA作图引言 334
+16 用核酸酶 S1 对 RNA 作图 342
+17 核糖核酸酶保护分析:用核糖核酸酶和放射性标记的 RNA 探针对 RNA 作图 349
+18 引物延伸法分析 RNA 355
+
+## 信息栏
+
+如何去除 RNase 359
+RNase 抑制剂 359
+焦碳酸二乙酯（DEPC） 360
+核酸酶 S1 362
+
+## 导言
+
+一个典型的哺乳动物细胞约含 $10^{-5}\mu \mathrm{g}$ 的RNA, 其中 $80\% \sim 85\%$ 是核糖体RNA(rRNA; 主要是28S、18S、5.8S和5S四种)。剩余的 $15\% \sim 20\%$ 中大部分由不同低分子质量的RNA组成(如转运RNA[tRNA]和小核RNA)。这些高丰度的RNA有固定的大小和序列, 可通过凝胶电泳、密度梯度离心、阴离子交换层析或高压液相层析(HPLC)分离。相反, 占细胞RNA总量 $1\% \sim 5\%$ 的信使RNA(mRNA), 无论大小还是序列都是不同的——其长度从几百碱基至成千上万碱基不等。然而大多数真核mRNA3'端带有足够长的多聚腺苷酸残基, 使其可通过与寡聚(dT)的亲和力进行纯化。这些不均一的RNA分子实际上共同编码了细胞内所有的多肽。
+
+由于核糖残基在 2' 和 3' 位带有羟基，所以 RNA 比 DNA 的化学性质更活跃，易于被污染的 RNase（具有水解核糖残基和磷酸二酯键能力的酶）切割。由于 RNase 从裂解的细胞中释放且存在于皮肤上，故要小心防止玻璃器皿、操作台，以及浮尘中 RNase 的污染。由于链内二硫键的存在使许多 RNase 可抵抗长时间煮沸和温和变性剂，并且变性的 RNase 可迅速重新折叠，因而目前尚无使 RNase 失活的简易办法。与大多数 DNase 不同，RNase 不需要二价阳离子激活，因此难以被缓冲溶液中加入的 EDTA 或其他金属离子螯合剂失活。防止 RNase 最好的办法就是在第一步即避免污染（请参阅本章信息栏“如何去除 RNase”、“RNase 抑制剂”和“焦碳酸二乙酯”）。
+
+本章由两部分组成(图6-1)。第一部分(方案1\~11)包括总RNA和随后的poly(A) $^{+}$ RNA的分离纯化，也包含 RNA 定量和存储方法（方案 6）。从总 RNA 分离小的非编码 RNA 将在第 18 章讨论。
+
+![](images/page_294_image_4.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["提取\n方案1~8"] --> B["单相裂解试剂"]
+  A --> C["热酸酚提取法"]
+  B --> D["总RNA"]
+  C --> D
+  D --> E["Oligo(dT)-磁珠"]
+  E --> F["Poly(A)+ RNA"]
+  F --> G["含甲醛琼脂糖凝胶RNA电泳"]
+  F --> H["变性聚丙烯酰胺凝胶RNA电泳"]
+  D --> I["Northern杂交"]
+  D --> J["斑点/狭缝印迹"]
+  D --> K["RNase保护"]
+  D --> L["构建cDNA文库"]
+  D --> M["提供小的非编码RNA（第18章）"]
+  D --> N["定量RT-PCR（第9章）"]
+  F --> O["斑点/狭缝印迹"]
+  F --> P["S1作图"]
+  F --> Q["RNase作图"]
+  F --> R["RNase保护"]
+  F --> S["引物延伸"]
+  F --> T["构建cDNA文库"]
+  G --> U["按分子质量大小分离"]
+  H --> U
+  U --> V["Northern杂交"]
+  U --> W["构建cDNA文库"]
+```
+</details>
+
+图 6-1 方法流程图。
+
+第二部分（方案 12～18）包括对纯化的 RNA 的多种分析方法，特别是评估基因表达和基因结构。Northern 杂交（方案 12～14）和斑点杂交或狭缝杂交（方案 15）可用于测定特异 RNA 的丰度和大小。特定转录物的精细结构可通过 S1 作图或核酸酶保护法（方案 16 和 17）分析。上述方法既可分析特定 mRNA 的 5' 和 3' 端，又可分析 mRNA 剪接体、前体和加工过程中的中间体。引物延伸（方案 18）提供了一种检测特异 mRNA 数量和确定 mRNA 5' 端的方法。
+
+## - 用单相裂解试剂提取总 RNA
+
+从组织和细胞中成功纯化完整 RNA 的关键是速度:大多数获得完整 RNA 的方法需要能使细胞物质快速离散并能灭活细胞内 RNase 的溶液。无论如何，在提取过程的第一阶段，细胞来源的 RNase 应尽快尽量完全灭活。一旦内源的 RNase 被破坏或失活，RNA 受损的可能就大大降低，而纯化的过程就可以按适当速度进行。
+
+为快速从细胞中分离完整的 RNA，许多方法都用到了强变性剂（如胍盐）使细胞破裂，同时溶解和变性内源性的 RNase。胍盐是离液剂，可以破坏蛋白质的高级结构。最有效常规使用的这类蛋白变性剂是异硫氰酸胍和盐酸胍，它们使大多数蛋白质转化为无规卷曲状态（Tanford 1968; Gordon 1972）。虽然看起来随着变性进程蛋白质结合更多的胍盐，但这种转变的机制还不太清楚（Gordon 1972）。首次在 RNA 提取中作为蛋白变性剂使用的胍盐是盐酸胍（图 6-2）（Cox 1968）。虽然是核酸酶的强抑制分子，但盐酸胍也不能保证从含有丰富 RNase 的组织（如胰腺）中提取完整的 RNA。异硫氰酸胍是一种强离液剂，包含的强阳离子和阴离子基团能够形成强氢键（图 6-3）。异硫氰酸胍在还原剂中可打断蛋白二硫键，在去污剂如肌氨酰中可破坏疏水相互作用。在样品匀浆或裂解时，这些试剂用于裂解细胞、溶解细胞组分并保持 RNA 的完整性。
+
+![](images/page_295_image_7.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical structure of a diazo compound with hydrogen and chlorine substituents
+</details>
+
+图 6-2 盐酸胍的结构。
+
+![](images/page_295_image_9.jpg)
+
+<details>
+<summary>chemical</summary>
+
+Chemical structure of a hydrazone compound with NH2 groups and HSCN counterion
+</details>
+
+图 6-3 异硫氰酸胍的结构。
+
+历史上这种基于胍盐的方法最初由 Han 实验室（1987）或 Chirgwin 等（1979）提出，后者不适于同时处理多种样品。Chirgwin 的方法中，培养的细胞或组织在异硫氰酸胍中匀化，然后此裂解液在高浓度的氯化铯中分层。该方法基本上被 Chomczynski 和 Sacchi（1987）的一步法所完全取代，在一步法中用低 pH 的酚:氯仿抽提硫氰酸胍匀浆。该方法不需要超速离心，因而可使许多样品同时进行操作并且提高速度，而且能保证 RNA 的产率和质量。
+
+最近，Chomczynski 和 Sacchi（1987）的一步法已几乎完全被单相裂解试剂取代，这种单相裂解试剂含有离液剂（如胍盐或硫氰酸铵）、酸化的苯酚、酚醛增溶剂（如甘油），用于加速 RNase 失活的速度和程度（Puissant and Houdebine 1990; Chomczynski, 1993, 1994;
+
+Chomczynski and Mackey, 1995a)。单相裂解试剂有一些重要的优势。首先，它们可从范围广泛的生物样品中制备 RNA，包括人类和动物的细胞和组织、植物细胞、酵母、细菌和病毒等。此外，单相裂解试剂可以同时从一种样本提取总 RNA、基因组 DNA 和蛋白质 (Chomczynski, 1993)。
+
+在该方法中，生物样品被异硫氰酸胍和苯酚的单相溶液所破坏而裂解，然后加入氯仿（或溴氯丙烷）（Chomczynski and Mackey 1995b），混匀后离心，匀浆被分离成水相和有机相。RNA仅存在于上层水相，而DNA处于水相和有机相的分界处，变性蛋白存在于下层有机相。回收水相后，通过加入异丙醇沉淀RNA。如果需要提取DNA和蛋白质，可以通过顺序沉淀分离:中间相用乙醇沉淀得到DNA，从有机相中用异丙醇沉淀获得蛋白质。从中间相回收的DNA为 $20\mathrm{kb}$ 大小，可用做PCR的模板；然而由于暴露于胍盐，蛋白质是变性的，因此主要用于免疫印迹。
+
+单相裂解试剂可以很容易地从头制备（Weber et al. 1998; Chomczynski and Sacchi 2006）。然而，普通用户可能更愿意购买商品化的产品，它们通常都提供详细的操作说明和大量的问题指南（部分商品化单相裂解试剂的列表，请参阅表 6-1）。这类产品的好处是方便和快速（通常从样品中分离 RNA 仅需 60min）。某些商品化的试剂中含有染料，使识别不同的液相更为简单（例如，下层酚:氯仿相是红色的，而上层水相为无色）。它们的缺点包括有机萃取可能导致 RNA 的损失或片段化，高速离心导致 RNA 难以重悬，胍盐残留可能干扰随后的酶促反应，并且这些专用试剂往往是昂贵的。出于这些原因，一些商品化的 RNA 分离试剂盒提供了替代的裂解方法，如变性剂裂解和/或用吸附到石英或玻璃-亲和基质替代有机萃取。在选择一个合适的用于总 RNA 提取的试剂盒时，有几个参数应被考虑，包括有机体/样品的类型、可用的起始物质的量及下游应用。
+
+表 6-1 商品化的单相裂解试剂
+
+| 商品名称 | 公司 |
+| --- | --- |
+| ISOGEN 和 ISOGEN-LS | Nippon Gene |
+| Isol-RNA 裂解试剂 | 5 Prime |
+| QIAzol 裂解试剂 | QIAGEN |
+| RNApure | GenHunter |
+| RNA STAT-60 | Tel-Test |
+| TriPure 分离试剂 | Roche Applied Science |
+| TRI 试剂 | Ambion |
+| TRIzol 和 TRIzol LS 试剂 | Life Technologies |
+
+使用单相裂解试剂分离的总 RNA 可用于多种应用，包括 Northern 印迹分析、斑点杂交、体外翻译、RNase 保护分析、反转录（cDNA 合成）或 RT-PCR（反转录—聚合酶链反应）等。对于大多数应用没有必要进一步纯化。然而，使用单相裂解试剂制备的 RNA 样品可能包含少量基因组 DNA 污染，如果这些 RNA 被用于后续分析如 RT-PCR、RNase 保护或实时定量 RT-PCR，必须去除 DNA（见方案 8 用 DNase 处理去除 RNA 样品中 DNA 污染）。获得的 RNA 总量取决于组织或细胞来源，但通常是 4～7μg/mg 初始组织或 5～10μg/10$^{6}$ 细胞。提取的 RNA 的 $A_{260}/A_{280}$ 比值可用来评估 RNA 样品的纯度（方案 6），一般是 1.7～2.0。提取的 RNA 应检测其完整性（方案 10 和 11）及定量（方案 6）。
+
+从水相中沉淀获得的 RNA 随后可以用来提取 Poly（A） $^{+}$ mRNA（方案 9）。需要注意的是异丙醇沉淀不能有效回收小分子 RNA，使得它随后不适合用于提取 microRNA 等小分子 RNA。而通过变性聚丙烯酰胺凝胶电泳可以从总 RNA 中分离出小分子 RNA（19～29个核苷酸）（见第 18 章，方案 9）。
+
+方案 1～4 描述了使用单相裂解试剂从哺乳动物细胞和组织、斑马鱼、果蝇、线虫提取
+
+RNA 的过程。虽然单相裂解试剂可用于从酵母中提取总 RNA，方案 5 描述了一种更常用的方法，即用热酸酚抽提。
+
+## 参考文献
+
+- Chirgwin JM, Przybyla AE, MacDonald RJ, Rutter WJ. 1979. Isolation of biologically active ribonucleic acid from sources enriched in ribonuclease. Biochemistry 18: 5294–5299.
+- Chomczynski P. 1993. A reagent for the single-step simultaneous isolation of RNA, DNA and proteins from cell and tissue samples. BioTechniques 15: 532–534.
+- Chomczynski P. 1994. Self-stable product and process for isolating RNA, DNA and proteins. U.S. Patent 5,346,994.
+- Chomczynski P, Mackey K. 1995a. Modification of the TRI Reagent™ procedure for isolation of RNA from polysaccharide- and proteoglycan-rich sources. BioTechniques 19: 942–945.
+- Chomczynski P, Mackey K. 1995b. Substitution of chloroform by bromochloropropane in the single-step method of RNA isolation. Anal Biochem 225: 163–164.
+- Chomczynski P, Sacchi N. 1987. Single-step method of RNA isolation by acid guanidinium thiocyanate-phenol-chloroform extraction. Anal Biochem 162: 156–159.
+- Chomczynski P, Sacchi N. 2006. The single-step method of RNA isolation by acid guanidinium thiocyanate-phenol-chloroform extraction: Twenty-something years on. Nat Protoc 1: 581–585.
+- Cox RA. 1968. The use of guanidinium chloride in the isolation of nucleic acids. Methods Enzymol 12: 120–129.
+- Gordon JA. 1972. Denaturation of globular proteins. Interaction of guanidinium salts with three proteins. Biochemistry 11: 1862–1870.
+- Han JH, Stratawa C, Rutter WJ. 1987. Isolation of full-length putative rat lysophospholipase cDNA using improved methods for mRNA isolation and cDNA cloning. Biochemistry 26: 1617–1625.
+- Puissant C, Houdebine LM. 1990. An improvement of the single-step method of RNA isolation by acid guanidinium thiocyanate-phenol-chloroform extraction. BioTechniques 8: 148–149.
+- Tanford C. 1968. Protein denaturation. Adv Protein Chem 23: 121–282.
+  Weber K, Bolander ME, Sarkar G. 1998. PIG-B: A homemade monophasic cocktail for the extraction of RNA. Mol Biotechnol 9: 73–77.
+
+## 方案 1 从哺乳动物的细胞和组织中提取总 RNA
+
+下面的操作步骤，适用于 Life Technologies/Invitrogen's 公司的 TRIzol 试剂，使用单相裂解试剂从哺乳动物细胞（单层或悬浮生长）或组织提取总 RNA。应采取避免 RNase 污染的常规措施（见在本章结尾的信息栏“如何去除 RNase”、“RNase 抑制剂”和“焦碳酸二乙酯”）。
+
+![](images/page_297_image_20.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+悬浮或单层生长的细胞样品或组织样品
+
+氯仿或溴氯丙烷
+
+溴氯丙烷是一种可取的氯仿替代物，因为它毒性更小且不易挥发。此外，溴氯丙烷可以提供更好的液相分离，从而更好地从总 RNA 中去除基因组 DNA，获得更纯的 RNA。
+
+乙醇（75%），用焦碳酸二乙酯（DEPC）处理的水配制
+
+糖原（20mg/mL 储存液）（可选）
+
+异丙醇
+
+单相裂解试剂[商品化（如 TRIzol）或从头配制（Chomczynski and Sacchi, 1987, Weber et al. 1998）]
+
+单相裂解试剂含有毒的苯酚和刺激性的异硫氰酸胍。使用时应避免接触皮肤或衣物、戴手套和保护眼睛（屏蔽、护目镜）。在化学通风柜中使用，避免吸入蒸汽。
+
+磷酸盐缓冲液（PBS）（1×），&lt;A&gt;。
+
+无RNase的水
+
+制备无 RNase 水:加水至无 RNase 的玻璃瓶，加 DEPC 至 0.1% $^{①}$ (V/V)，放置过夜并高压灭菌。
+
+## 设备
+
+Glass-Teflon 或高效匀浆器（如 Polytron，或 Tekmar's TISSUMIZER 或类似设备）
+
+![](images/page_298_image_6.jpg)
+
+## 方法
+
+除另有说明外，该过程在室温下（15～30℃）进行，并且试剂是在15～30℃放置。
+
+## 样品匀浆
+
+样品的体积应不超过用于匀浆的单相裂解试剂体积的 10%。
+
+1. 准备并匀浆单层细胞，悬浮培养物或组织样本。
+
+## 贴壁生长的单层细胞
+
+(1) 移除培养基, 并用 $1 \sim 2 \mathrm{~mL}$ 冰冷的 PBS 漂洗细胞一次。
+
+(2) 移除 PBS, 直接在培养皿中裂解细胞, 每 $100 \mathrm{~mm}$ 培养皿加入 $1 \mathrm{~mL}$ 的单相裂解试剂并用细胞刮刀刮取。
+
+(3) 用吸头吹打几次细胞裂解液, 彻底混悬。
+
+单相裂解试剂的添加量基于培养皿的面积而不是细胞数量（10cm²/mL）。单相裂解试剂不足可能导致提取的RNA有DNA污染。
+
+(4) 继续进行步骤 2。
+
+样品可以储存在-60～-70℃至少1个月。
+
+## 悬浮生长的细胞
+
+（1）200～1900g 室温在台式离心机中离心 5～10min 收集细胞（1000～3000r/min 在 Sorvall H1000 转子中）。
+
+(2) 去除培养基, 用冰冷的 PBS 重悬细胞。200\~1900g 离心 5min 沉淀细胞。
+
+（3）每  $5 \times 10^{6} \sim 10 \times 10^{6}$  个细胞，加入 1mL 的单相裂解试剂，重复吸打或通过注射器和针头抽吸裂解细胞。
+
+(4) 继续进行步骤 2。
+
+样品可以储存在-60～-70℃下至少1个月。
+
+## 组织
+
+（1）每 50～100mg 组织用 1mL 的单相裂解试剂匀浆组织样本，使用 glass-Teflon 或高效匀浆器匀浆。
+
+对于蛋白质、脂肪、糖类或细胞外物质含量高的样品，如肌肉和脂肪组织，可以执行下述可选步骤；否则，请继续步骤2。
+
+样品可以储存在-60～-70℃至少1个月。
+
+(2) 匀浆后样品于 $2 \sim 8^{\circ} \mathrm{C}$, 12000g 离心 10min, 从组织匀浆液除去不溶物。
+
+沉淀里包含细胞外膜、多糖类和高分子质量的 DNA，而上清液中包含 RNA。
+
+（3）从脂肪组织样本中去除脂肪收集顶层。
+
+（4）将澄清的匀浆溶液转移到新的管中。
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">① 译者注:DEPC 水应为 0.1% DEPC 配制，原文为 0.01%。</span></small>
+
+(5) 请继续进行步骤 2。
+
+样品可以储存在-60～-70℃至少1个月。
+
+## 相分离
+
+2. 孵育匀浆样品，室温 5min，以完全解离核蛋白复合物。
+
+3. 步骤 1 每毫升初始匀化单相裂解试剂匀化样品加入 0.2mL 氯仿。盖紧管盖，用力摇动试管 15s，并在室温下孵育 2～3min。
+
+不要涡旋样品，因为它会导致 DNA 污染。
+
+4. 2\~8℃，12000g 离心 15min。混合物分为，下层是酚:氯仿相、中间相和上层的水相。RNA 仅存在于上层水相。
+
+在这个方案，此步骤和步骤7中如果将离心时间增加到30～60min，也可使用最大速度2600g的台式离心机。
+
+5. 小心地将上层水相转移到新的离心管中，注意不要扰动中间层。每毫升初始匀化单相裂解试剂可获得约  $600 \mu L$  水相。
+
+如果需要分离 DNA 或蛋白质，请保留有机相。
+
+水相的体积应该为在步骤1中使用的单相裂解试剂体积的60%。虽然每毫升单相裂解试剂可以获取600μL水相，为了防止DNA的污染，推荐只收回500μL。
+
+## 分离 RNA
+
+6. 从水相中沉淀 RNA，每毫升单相裂解试剂加入 0.5mL 的异丙醇。颠倒离心管几次混匀。在室温下孵育样品 10min。
+
+加入  $1 \mu L$  糖原（20mg/mL）储存液使步骤 7 中形成的沉淀可见。
+
+7. 于 $2 \sim 8^{\circ} \mathrm{C}$, 不超过 $12000 \mathrm{~g}$ 离心 $10 \mathrm{~min}$, 收集 RNA 沉淀。
+
+RNA 沉淀在离心之前通常是不可见的，离心后在试管底部的一侧形成凝胶样沉淀。
+
+8. 弃去上清液，并用吸头完全去除残留液体。
+
+9. 用 $75\%$ 乙醇洗涤一次 RNA 沉淀，加入至少 $1 \mathrm{~mL} 75\%$ 乙醇，涡旋混合样品液，然后在 $2 \sim 8^{\circ} \mathrm{C}$ 以不超过 $7500 \mathrm{~g}$ 离心 $5 \mathrm{~min}$。
+
+在 75%乙醇中的 RNA 沉淀存储在 2\~8℃ 至少 1 周，或在 -5\~-20℃ 存储至少 1 年。
+
+10. 完全去除乙醇，空气干燥或真空干燥 RNA 沉淀 5～10min。
+
+除去乙醇后，沉淀应该是半透明的，在干燥时，沉淀将变成透明凝胶体状。不要真空离心干燥的 RNA。重要的是不要让 RNA 沉淀完全干燥，因为这将大大降低其溶解度。部分溶解的 RNA 样品  $A_{260}/A_{280}$  比值为 1.6。 $A_{260}/A_{280}$  比值用来衡量 RNA 样品纯度（见方案 6）。
+
+11. 用 $20\mu \mathrm{L}$ 的无RNase水溶解RNA，吸头反复吸打几次，然后在 $55\sim 60^{\circ}C$ 温育该溶液 $10\mathrm{min}$。
+
+为了更好地溶解 RNA，可以使用加热到  $40^{\circ}$ C 的无 RNase 水。RNA 也可溶于 100% 甲酰胺（去离子），可在  $-20^{\circ}$ C 下储存 1 年（请参阅方案 6 存储纯化的 RNA 样品）。甲酰胺提供了一种稳定的化学环境，保护 RNA 不被 RNase 降解。
+
+## 替代方案 从小量样本提取 RNA
+
+此方案用于从少量细胞（ $10^{2}\sim10^{4}$ 个）或组织（1～10 mg）中提取RNA。糖原作为载体增加RNA的回收率，直接加入到单相裂解试剂中。糖原除了最大化的沉淀RNA，还增大RNA沉淀量使其更容易被看到。糖原浓度不超过4mg/mL时不抑制第一链合成，也不抑
+
+制 PCR 扩增。糖原在水相与 RNA 共沉淀。
+
+![](images/page_300_image_3.jpg)
+
+## 附加材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+试剂
+
+无 RNase 糖原（如购自 Life Technologies）
+
+设备
+
+针头（26G）
+
+![](images/page_300_image_10.jpg)
+
+## 方法
+
+1. 加入 $800\mu \mathrm{L}$ 的单相裂解试剂至组织或细胞中。直接加 $200\mu \mathrm{g}$ 糖原，如方案1步骤1所述匀化样品。
+
+糖原在单相裂解试剂的终浓度为  $250 \mu g/mL$ 。
+
+2. 室温孵育样品匀浆 5min。
+
+3. 为了降低黏度，两次通过 26G 针头剪切基因组 DNA。
+
+4. 加氯仿及进行相分离，如方案 1，步骤 3 所述。
+
+## 参考文献
+
+Chomczynski P, Sacchi N. 1987. Single-step method of RNA isolation by acid guanidinium thiocyanate-phenol-chloroform extraction. Anal Biochem 162: 156–159.
+
+Weber K, Bolander ME, Sarkar G. 1998. PIG-B: A homemade monophasic cocktail for the extraction of RNA. Mol Biotechnol 9: 73–77.
+
+## 方案 2 从斑马鱼胚胎和成体中提取总 RNA
+
+此方案用单相裂解试剂法，是一种从多种样品中提取高质量 RNA 的快速方法。此方案是提取斑马鱼胚胎任何发育阶段的 RNA 的常规方法。胚胎可以用单相裂解试剂直接裂解，而无需先去绒毛膜。通常从 25 个受精后 6h 的胚胎中能提取 5～8μg RNA；从 25 个受精后 24h 的胚胎中提取 10～15μg RNA。
+
+应采取常规的预防措施，以避免 RNase 污染（见本章信息栏“如何去除 RNase”、“RNase 抑制剂”和“焦碳酸二乙酯”）。
+
+![](images/page_300_image_23.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+试剂
+
+氯仿或溴氯丙烷
+
+溴氯丙烷是一种可取的氯仿替代物，因为它毒性更小且不易挥发。此外，溴氯丙烷可以提供更好的液相分离，
+
+从而更好地从总 RNA 中去除基因组 DNA，获得更纯的 RNA。
+
+乙醇（75%），用焦碳酸二乙酯（DEPC）处理的水配制
+
+糖原（20mg/mL 储存液）（可选）
+
+异丙醇
+
+单相裂解试剂[商品化（如 TRIzol）或从头配制（Chomczynski and Sacchi, 1987, Weber et al. 1998）]
+
+单相裂解试剂含有毒的苯酚和刺激性的异硫氰酸胍。使用时应避免接触皮肤或衣物、戴手套和保护眼睛（屏蔽、护目镜）。在化学通风柜中使用，避免吸入蒸汽。
+
+无 RNase 的水
+
+制备无 RNase 水，加水至无 RNase 的玻璃瓶。加 DEPC 至 0.1% $^{①}$ （V/V），放置过夜并高压灭菌。
+
+斑马鱼胚胎（25～50个胚胎）
+
+## 设备
+
+针头（18～25G）和注射器（1mL）或塑料粉碎机
+
+![](images/page_301_image_13.jpg)
+
+## 方法
+
+1. 将胚胎放入 $1.5 \mathrm{~mL}$ 离心管中。少于 25 个胚胎时, 加入 $500 \mu \mathrm{L}$ 单相裂解试剂; $25 \sim 50$ 个胚胎时, 加 $1 \mathrm{~mL}$ 的单相裂解试剂。立即使用 $18 \sim 25 \mathrm{~G}$ 针头和注射器, 反复抽吸 (约 10 次) 使胚胎匀化。此外, 可以用塑料粉碎机匀浆胚胎。
+
+当使用 1mL 的单相裂解试剂时，由于较大体积的试剂可能在匀浆时洒到管外，初始加入少于完全量的试剂较有利。例如，匀浆时加入 300～500μL 试剂然后再加入余量补足体积。然而需要注意的是，较少量的试剂会使其匀化样品更难，并可能导致起泡。最后的组织匀浆实际上不应有胚胎碎片。
+
+2. 按照方案 1, 步骤 $2 \sim 11$ 完成 RNA 的提取。
+
+## 参考文献
+
+Chomczynski P, Sacchi N. 1987. Single-step method of RNA isolation by acid guanidinium thiocyanate-phenol-chloroform extraction. Anal Biochem 162: 156–159.
+
+Weber K, Bolander ME, Sarkar G. 1998. PIG-B: A homemade monophasic cocktail for the extraction of RNA. Mol Biotechnol 9: 73–77.
+
+## 方案 3 从黑腹果蝇提取总 RNA
+
+在可用的从果蝇提取总 RNA 的方法中，单相裂解试剂（如 TRIzol）产率稳定可靠且较其他 RNA 提取试剂盒价格便宜。在下述方案中，在微量离心管中使用塑料研棒，加入单相裂解试剂可匀化高达 50mg 的果蝇组织。对于大量样本，可以使用研钵和研杵或杜恩斯匀浆器进行匀浆，其余部分用量可以参照操作说明按比例增加。
+
+此方案通常从 10mg 胚胎（约 1000 个胚胎）、14mg 幼虫、30mg 成蝇（约 36 个苍蝇）、50 对卵巢或 84 对睾丸中可以获得 50μg 总 RNA。然而，应该指出的是，生长条件、生理状态和突变体的表型可以影响总 RNA 的产量。据报道，通过使用 1.5～2 倍更多的单相裂解试剂，可能获得更高的产量，特别是对脂肪组织如卵巢（Bogart and Andrews 2006）。
+
+<small><span class="docvortex-page-footnote" data-block-type="page_footnote" style="color:#6b7280">① 译者注:DEPC 水应为 0.1% DEPC 配制，原文为 0.01%。</span></small>
+
+![](images/page_302_image_3.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+次氯酸钙（Bleach）(50%, V/V)
+
+蒸馏水稀释次氯酸钙至50%。
+
+氯仿或溴氯丙烷
+
+溴氯丙烷是一种可取的氯仿替代物，因为它毒性更小且不易挥发。此外，溴氯丙烷可以提供更好的液相分离，从而更好地从总 RNA 中去除基因组 DNA，获得更纯的 RNA。
+
+干冰/乙醇浴或液氮
+
+乙醇（75%），用 DEPC 水配制
+
+果蝇（完整的成体或胚胎）或器官/组织
+
+异丙醇
+
+单相裂解试剂 [商品化（例如 TRIzol）或从头配制（Chomczynski and Sacchi，1987, Weber et al. 1998）]
+
+单相裂解试剂含有毒的苯酚和刺激性的异硫氰酸胍。使用时应避免接触皮肤或衣物、戴手套和保护眼睛（屏蔽、护目镜）。在化学通风柜中使用，避免吸入蒸汽。
+
+磷酸盐缓冲液 PBS (1×), &lt;A&gt;
+
+无 RNase 的蒸馏水（DEPC 处理过的蒸馏水）
+
+加水至无 RNase 的玻璃瓶，加 DEPC 至 0.1%（V/V）放置过夜并高压灭菌，以此制备无 RNase 水。
+
+## 设备
+
+配有微管（microtube）的无 RNase 的一次性颗粒研杵（手持式或电动）（如 Kontes 提供的）
+
+无 RNase 的微量离心管（1.5mL）
+
+![](images/page_302_image_24.jpg)
+
+## 方法
+
+1. 制备样品匀浆。
+
+## 洗涤组织或成虫
+
+(1)  $1 \times$  PBS 洗涤样品后转至冰上 1.5mL 的离心管。
+
+## 从胚胎去除绒毛膜
+
+(2) 吸取 50% (V/V) 的次氯酸钙 (漂白剂) 溶液加到胚胎, 并孵育 4min。
+
+（3）用冷蒸馏水彻底冲洗胚胎，直到没有明显的次氯酸钙（漂白剂）气味。使用KIMWIPES纸巾吸干多余水分。
+
+(4) 将去绒毛膜的胚胎转移到冰上的 $1.5 \mathrm{~mL}$ 离心管中。
+
+如果样品没有立即继续提取，可在液氮中速冻后-80℃存储。继续执行步骤2前置于冰上解冻。
+
+2. 加入 1mL 单相裂解试剂至冰上放置的样品中。
+
+3. 立即使用一次性塑料颗粒研杵匀浆样品 30～60s。
+
+杵可以手动或电动。如果使用电动杵，应避免使样品加热，因为这样会导致 RNA 降解。在这一步，可以将样品保存于-80℃；样品应当冰上解冻，然后再继续进行步骤4。
+
+4. 样品在  $4^{\circ}$ C 下以 12 000g 离心 10min。
+
+此离心步骤可将不溶碎片（如绒毛膜、卵黄膜、角质层等）沉淀。
+
+5. 将上清转移至一个新的 1.5mL 离心管中。
+
+小心不要取到沉淀或脂肪层，它们将使脂肪粒包含苯酚，从而导致苯酚污染水相。
+
+6. 按照方案 1 步骤 2\~11 完成 RNA 提取。
+
+## 参考文献
+
+Bogart K, Andrews J. 2006. Extraction of total RNA from Drosophila. CGB Technical Report 2006-10. https://dgrc.cgb.indiana.edu/files/microarray/protocol/SOP-RNA\_Isolation\_022805.pdf.
+Chomczynski P, Sacchi N. 1987. Single-step method of RNA isolation by acid guanidinium thiocyanate-phenol-chloroform extraction. Anal
+
+Biochem 162: 156–159.
+Weber K, Bolander ME, Sarkar G. 1998. PIG-B: A homemade monophasic cocktail for the extraction of RNA. Mol Biotechnol 9: 73–77.
+
+## 方案 4 从秀丽隐杆线虫中提取总 RNA
+
+要从线虫有效提取 RNA，必须先通透或溶解胚胎的卵壳或幼虫和成虫的角质层（表皮）。可以在液氮中研碎虫体，然后将这些细胞物质快速溶解于强变性的 RNA 提取缓冲液中（Johnstone 1999）。也可选用更快速的方法，即用单相裂解试剂从完整的虫体提取 RNA，而不用先在液氮中研碎。当需要同时处理多个样本时，这种方法更可取。应当指出的是，虽然该方法可以从幼虫和成虫有效地提取 RNA，但它还不适于从虫胚胎中提取 RNA（Johnstone 1999）。
+
+下述方案用于从幼虫（L1～L4）及成虫中用单相裂解试剂提取总RNA。要从线虫获得高质量的RNA，虫体应尽可能快地在含有胍盐作为离液剂的单相裂解试剂中直接裂解和物理匀浆。如果不能立即完成提取，匀浆物可以无限期地储存在-80℃。提取总RNA所需要的虫体的数量，依赖于所处的发育阶段。然而RNA产量通常根据线虫沉淀最终体积来标准化，而不是严格的数量。表6-2所示的线虫数可以产生0.1mL密实的线虫沉淀，从中可以提取1～1.5μg/μL的总RNA。如果需要的话，该方案可以按比例减少。用此程序提取的RNA可以用于几乎所有的下游应用而无需进一步处理。但是，如果此RNA用于对基因组DNA污染敏感的应用（如反转录），就必须用无RNase的DNase处理RNA样品以去除DNA污染（见方案8），因为它们也可能作为酶促反应的模板。
+
+应采取正常的预防措施，以避免 RNase 污染（见本章信息栏“如何去除 RNase”、“RNase 抑制剂”和“焦碳酸二乙酯”）。
+
+![](images/page_303_image_16.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。

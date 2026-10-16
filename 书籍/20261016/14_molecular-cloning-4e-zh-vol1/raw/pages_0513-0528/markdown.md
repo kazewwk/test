@@ -1,0 +1,790 @@
+期望）步骤是要找到这两个参数似然对数的期望值。MEME 的 M（maximization，最大化）步骤是在给定序列情况下，通过这些参数的对数似然比进行最大化来得到两个参数的下一步估计值。图 8-37 展示了 MEME 算法。
+
+A Data preprocessing
+
+![](images/page_512_image_4.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["ATCTAAT"] -->|"Split into 3-mers"| B["CTAGTTA"]
+  B -->|"Output State"| C["CTA"]
+  C -->|"Output State"| D["TAG"]
+  D -->|"Output State"| E["AGT"]
+  E -->|"Output State"| F["GTT"]
+  F -->|"Output State"| G["TTA"]
+```
+</details>
+
+B Initialization
+
+![](images/page_512_image_6.jpg)
+
+<details>
+<summary>text_image</summary>
+
+pos	A	T	C	G
+1	0.06	0.22	0.69	0.02
+Motif PSPM:	2	0.08	0.89	0.02	0.01
+	3	0.89	0.06	0.04	0.01
+NULL	PSPM:	1	0.25	0.25	0.25	0.25
+	2	0.25	0.25	0.25	0.25
+	3	0.25	0.25	0.25	0.25
+</details>
+
+C E step
+
+![](images/page_512_image_8.jpg)
+
+<details>
+<summary>text_image</summary>
+
+3-mer likelihood
+(motif)
+ATC	0.004
+TCT	~0.00
+CTA	0.968
+TAA	0.029
+AAT	0.001
+CTA	0.760
+TAG	~0.00
+AGT	~0.00
+GTT	0.002
+TTA	0.238
+TTA	0.233
+TAA	0.021
+AAC	~0.00
+ACT	~0.00
+CTA	0.746
+</details>
+
+D M step
+
+![](images/page_512_image_10.jpg)
+
+<details>
+<summary>text_image</summary>
+
+pos	A	T	C	G
+1	~0.0 0.17	0.82	~0.0
+Motif PSPM:	2	0.02 0.98	~0.0	~0.0
+3	0.99	~0.0	~0.0	~0.0
+</details>
+
+Repeat C and D until PSSMs converge or iteration exceeds a limit.
+
+E Output
+
+![](images/page_512_image_13.jpg)
+
+<details>
+<summary>text_image</summary>
+
+3-mer likelihood
+(motif)
+ATC 0.00
+TCT 0.00
+CTA 1.00
+TAA 0.00
+AAT 0.00
+CTA 1.00
+TAG 0.00
+AGT 0.00
+GTT 0.00
+TTA 0.00
+TTA 0.00
+TAA 0.00
+AAC 0.00
+ACT 0.00
+CTA 1.00
+</details>
+
+![](images/page_512_image_14.jpg)
+
+<details>
+<summary>text_image</summary>
+
+pos	A	T	C	G
+1	0.00	0.00	1.00	0.00
+Motif PSPM:	2	0.00	1.00	0.00	0.00
+3	1.00	0.00	0.00	0.00
+</details>
+
+![](images/page_512_image_15.jpg)
+
+<details>
+<summary>text_image</summary>
+
+Sequence Logo
+bits
+2
+1
+0
+CTA
+</details>
+
+图8-37 MEME算法的主要步骤。一个包含三段调控序列的简单例子，假定每个调控序列都包含了一个长为3bp的未知基序。（A）将序列分割成所有可能的3-mer。（B）在起始步骤中，建立一个关于基序PSPM的初始估计（first guess）及其背景模型。该初始估计可以影响最终结果，因为EM算法只能找到在基序范围内最接近的局部最佳结果。（C）期望步骤（E步骤）。基于现有的PSPM，计算每个3-mer是来自基序的概率。（D）最大化步骤（M步骤），基于C中计算得到的似然值。根据新的似然值更新PSPM，然后在C和D两个步骤之间进行迭代，直到基序的PSPM不再出现显著的变化或者当迭代数超过用户设置界限的时候。（E）输出基序的PSPM和相应的序列标识。在本例中，CTA就是找到的基序，其每个位点具有零不确定性（熵 $= 0$ ）（彩图请扫封底二维码）。
+
+EM 算法可以找到最接近局部最优结果 PSPM，但会错过全局最佳结果。因此，MEME 使用了启发式方法系统地搜索整个 PSPM 空间。MEME 报道了每个被识别基序的 E 值，即该基序被随机发现的次数。由于 MEME 所报道的 E 值为真实 E 值的上限（upper bound），所以如果 E 值很大（例如，>0.05），请谨慎处理该 E 值，因为这种情况下对应的基序可能非常显著。Nagarajan 等（2005）提供了一个在线服务器（http://www.cs.cornell.edu/w8/\~niranjan/），用于计算一个给定 MEME 基序的精确 E 值。
+
+MEME 软件包（http://meme.ncbr.net）还提供一些额外的功能:发现存在空位的基序；扫描序列以得到新发现基序的出现频率；搜索基序数据库；分析基序靶标的功能富集情况。
+
+## Clover (MotifViz)
+
+Clover 的功能是比较基序的 PSSM 在调控序列与背景序列之间的差别，并评价该基序在这些调控序列中是否是统计学上过表达（overrepresented）或低表达（underrepresented）情况。该方法包括两个步骤。首先计算一个原始记分，将基序在调控序列中的出现程度进行量化。第二步是对该原始记分进行 p 值估算:p 值是指在随机条件下，使用背景序列计算得到相同或更大原始记分的概率。如果 p 值非常低（例如，<0.001），说明基序在调控序列中显著性过表达。如果 p 值非常高（例如，>0.999），说明基序在调控序列中显著性过低表达。Clover 可以下载到本地计算机上运行，或通过 MotifViz 网页服务器（http://zlab.umassmed.edu/MotifViz/）来提交任务。
+
+## 网络资源
+
+JASPAR http://jaspar.genereg.net/
+
+MEME suite of software programs http://meme.ncbr.net
+
+MotifViz web server http://zlab.umassmed.edu/MotifViz/
+
+## 方案 7 发现顺式调控基序
+
+本方案以顺式调控基序为例，描述了一套用来找到基序的软件。通过一组从UCSC基因组浏览器下载的预测CREB-结合序列，本方案第一部分演示了MEME（Bailey et al. 2006）（从头基序发现）、JASPAR（Portales-Casamar et al. 2010）（一个基序数据库）、Clover（Frith et al. 2004）（搜索已知的被富集的基序）和MAST（Bailey and Gribskov 1998）（扫描序列寻找基序位点）的使用方法。本方案第二部分展示了如何使用MEME-ChIP（Machanickand Bailey 2011）（一套用来分析ChIP-seq数据的集成工具包）来发现STAT1 ChIP-seq峰中的基序并将其与JASPAR数据库中已知基序进行比较。
+
+![](images/page_513_image_12.jpg)
+
+## 材料
+
+## 仪器
+
+Clover 软件（http://zlab.umassmed.edu/MotifViz/）
+
+具有 Internet 连接和网页浏览器的电脑
+
+JASPAR (http://jaspar.genereg.net/)
+
+MAST (http://meme.sdsc.edu/meme/mast-intro.html)
+
+MEME-ChIP (http://meme.sdsc.edu/meme/cgi-bin/meme-chip.cgi)
+
+MEME 软件（http://meme.ncbi.net）
+
+UNIX 环境
+
+本方案使用了一部分 UNIX 指令。如果你使用的是 Windows 操作系统，请先安装 Cygwin，然后在 Cygwin 下安装运行这些指令。Cygwin 是一个免费软件，它可以在 Windows 上提供一个类似 UNIX 的环境。我们可以在 http://www.cygwin.com/上找到 Cygwin 的安装包。
+
+![](images/page_514_image_8.jpg)
+
+## 方法
+
+## 使用 MEME、JASPAR、Clover 和 MAST
+
+1. 使用UCSC表格浏览器（Table Browser，http://genome.ucsc.edu/cgi-bin/hgText）下载推定的CREB结合位点。
+
+i. 登录 UCSC 表浏览器，如图 8-38A 所示，将 clade 选为 “Mammal”，将 genome 选为 “Human”，将 assembly 选为 “Mar. 2006 (NCBI36/hg18)”，将 group 选为 “Regulation”，将 track 选为 “TFBS Conserved”，将 table 选为 “tfbsConsSites”。
+ii. 点击图 8-38A 中上方红色圈中所标示的 “edit”，该按键将打开一个如图 8-38B 所示的页面。在名字区域将名字设置为 “V\$CREB\_01”，然后点击 “submit” 回到图 8-38A 中所示页面。
+iii. 将输出格式改为“sequence”，将输出文件名设置为“creb\_01.txt”，然后点击“get output”转到图 8-38C 所示的页面。
+
+![](images/page_514_image_16.jpg)
+
+图 8-38 使用 UCSC 表格浏览器下载推定的 CREB 结合位点。（A）在人 “TFBS 保守性” 通道中选择表 “tbfs cons sites”。（B）获取仅被注释为 CREB 蛋白结合位点的序列。（C）在结合位点两侧各延长 10 个碱基（彩图请扫封底二维码）。
+
+iv. 设置添加至推定 CREB-结合序列上游和下游额外碱基的数量为“10”，点击“get sequence”，保存到文件名为“creb\_01.txt”的文件中。creb\_01.txt 文件是 FASTA 格式，该格式可用于 MEME 程序；然而，此时所有序列都被设置为相同的名字，这将导致 MEME 仅保留第一条序。使用步骤 1.v 中的指令来校正这种情况。
+
+v. 在 UNIX 电脑上使用以下 awk 指令来对所有序列设置依次增加的 ID，然后将结果输出到文件 “creb\_01\_new.txt”。
+
+```perl
+awk '{if (substr($0, 0, 1) == " > ") {a=a+1; print " > "a} else print $0}' creb_01.txt
+>creb_01_new.txt
+```
+
+或者，使用以下 awk 指令将基因组坐标添加至依次增加的序列 ID 之后:
+
+```javascript
+awk '{if (substr($0, 0, 1) == "">") {a = a + 1; split($0,token,
+"range="); split(token[2],token2," "); print ">
+"a" "token2[1]} else print $0}' creb01:txt . creb 01 new.txt
+```
+
+2. 将序列提交至 MEME。
+
+i. 登录 MEME 网站（http://meme.sdsc.edu/meme/cgi-bin/meme.cgi），然后通过点击“Browse”提交“creb\_01\_new.txt”。
+
+需要提供一个 e-mail 地址，这样作业状态和网站链接就可以被发送至用户了。
+
+ii. 指定每个序列中预期基序的出现次数（例如，仅至少一次，或任何数目）。设置每个基序的最大长度和最小长度，以及设置用于搜索基序的最大数量的数值。
+
+iii. MEME 会产生一个含有每个被发现基序详细信息的报告。本例中总计找到了 3 个基序，所找到的基序数量受之前提到的 “maximum number of motifs（基序的最大数量）” 参数的限制；图 8-39A 显示了显著性最强的一个基序。
+
+iv. 点击 “Download” 来获取 png 格式或 eps 格式的序列标识（sequence logo），文件格式可以在 “Format” 的下拉列表中进行选择。图 8-39B 显示了多重序列比对和基序在各个序列中的位置。
+
+![](images/page_515_image_13.jpg)
+
+图 8-39 MEME 输出结果。(A) 一个显著性基序的总结。点击 “Reverse Complement” 键来查看相同基序在反义互补链上的情况。eps 格式的序列标识可以被下载用于出版。(B) 包含基序的输入序列比对情况。“Bloak Diagrams” 显示了基序在各个序列中的位置（彩图请扫封底二维码）。
+
+v. 通过点击单选按钮 “PSPM”（图中未显示）来收集新发现基序的 PSPM。
+
+vi. 复制 PSPM，用于接下来的 MAST 和 Clover 程序。
+
+3. 为了确定 MEME 在推定 CREB 结合位点上刚刚发现的基序确实是 CREB 的基序，同时为了演示 JASPAR 数据库的用法:
+
+i. 登录网页 http://jaspar.genereg.net/，并搜索 “CREB1”（如图 8-40 所示）。图 8-40A 显示了 CREB1 的详细信息。尽管图 8-40A 中的序列标识与 MEME 所发现的标识相似，但图 8-40A 中的序列标识更短，而且在第一个位点上具有更大的可变性。
+
+ii. 点击标识以获取该基序的总结页面（图 8-40B），该页面上有下载该序列标识的记分矩阵和可缩放矢量图形（scalable vector graphics，SVG）文件的链接。
+
+A
+
+![](images/page_516_image_8.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["JASPAR matrix models:"] --> B["ID"]
+  B --> C["name"]
+  C --> D["species"]
+  D --> E["class"]
+  E --> F["family"]
+  F --> G["Sequence logo"]
+```
+</details>
+
+B
+
+![](images/page_516_image_10.jpg)
+
+<details>
+<summary>text_image</summary>
+
+Summary page for ID: MA0018.2 NAME: CREB1 from the JASPAR CORE database ?
+DATA
+name	CREB1
+class	Zipper-Type
+family	Leucine Zipper
+species	• Rattus norvegicus
+                        • Homo sapiens
+                        • Mus musculus
+tax_group	vertebrates
+acc	P16220
+type	COMPILED
+medline	17916232
+Pazar ID	TF0000013
+comment	Annotations from PAZAR CREB1_RAT + CREB1_HUMAN + CREB1_MOUSE in the pleiades genes project (TF0000110, TF0000150, TF0000732).
+VERSION INFORMATION
+There are 2 versions of the model
+Show me all versions	?
+SITES
+Show me
+all the
+binding
+sites	...as web page
+		...as fasta file
+SEQUENCE LOGO
+bits
+Position
+Make a SVG logo	?
+FREQUENCY MATRIX
+A	[ 0 0 11 0 1 0 2 8 ]
+C	[ 1 1 0 9 0 3 7 0 ]
+G	[ 1 10 0 2 10 0 1 1 ]
+T	[ 9 0 0 0 0 8 1 2 ]
+Reverse complement	?
+</details>
+
+图 8-40 在 JASPAR 数据库中搜索 CREB1 基序。(A) CREB1 基序的简要信息。点击红色矩形中的序列标识将会出现一个如 B 中包含了该基序详细信息的窗口。点击 “Make a SVG logo” 将得到 SVG 格式的序列标识，该文件可用于出版（彩图请扫封底二维码）。
+
+4. 在一组序列中搜索已知的富集基序可以发现与这些序列结合的 TF（或多个 TF）。
+
+出于演示目的，这里我们使用相同的推定 CREB 结合位点（UCSC 表浏览器中的“creb\_01.txt”），通过 Clover 工具来寻找被富集的基序。
+
+i. 登录 MotifViz 页面（http://zlab.umassmed.edu/MotifViz/），然后选择 “Clover” 作为要使用的程序。
+ii. 上传 “creb\_01.txt” 文件，然后选择任意数量的基序。不在列表内的基序也可以被包括在内，例如，你可以上传 MEME 所发现的 CREB PSPM。
+iii. 选择一个显著性 p 值阈值（如 0.01），然后点击 “run”。
+
+5. Clover 的结果页面（图 8-41）显示了两个过表达的基序 bZIP910 和 CREB。“Overview of Motif Distribution”和“Detailed Sequence Output”部分显示了结合位点是高度重叠的，这暗示了它们可能具有相似的结合基序，事实上，曾报道过这些基序的共现（co-occurrence）和相似性（Schones et al. 2005）。
+
+![](images/page_517_chart_8.jpg)
+
+<details>
+<summary>bar</summary>
+
+| Sequence | Position | strand | motif | score | Ranking_ratio |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | 10 - 16 | + | bZIP910 | 7.36 | |
+| 1 | 12 - 23 | - | CREB | 7.19 | |
+| 1 | 13 - 19 | - | bZIP910 | 7.78 | |
+| 3 | 6 - 17 | + | CTOS | 6.58 | |
+| 3 | 10 - 16 | + | bZIP910 | 8.77 | |
+| 3 | 12 - 23 | - | CRMS | 7.96 | |
+| 3 | 13 - 19 | - | bZIP910 | 6.84 | |
+</details>
+
+图 8-41 Clover 输出结果。结果分为三个部分:“Over/under-represented Motifs”、“Overview of Motif Distribution”和“DetailedSequence Output”。第一部分仅报道了超过用户设定的 p 值阈值的具有统计学显著性的基序。三个部分中的基序颜色是统一的；色彩值（color key）位于页面的顶部。在第二个部分中，每个模块都代表了一个基序在一个序列中位置。位于底部的第三部分显示了基序序列及其位置（彩图请扫封底二维码）。
+
+6. 搜索一个新发现基序的额外位置可以找出潜在的新靶标基因。MEME suite 中的 MAST 程序和 MotifViz suite 中的 POSSUM 程序都可以执行这个任务。在此，我们将演示 MAST 的用法。
+
+i. 登录 MAST 页面（http://meme.sdsc.edu/meme/mast-intro.html/）。图 8-39A 显示了在 MEME 的输出页面上有一个直接指向 MAST 的链接（红色圈中所示）。
+
+或者，你可以将 PSPM 直接上传至 MAST 的主页（http://meme.sdsc.edu/meme/mast-intro.html）。
+
+ii. 将 Category 选为“Upstream Sequences”，将 Database 选为“Homo\_sapiens\_EnsEMBL (upstream) (nucleotide only)”，然后点击 “Start search”。
+
+iii. 图 8-42 显示了靶标序列和基序之间的比对情况。这些靶标可以通过使用基序本体论（Gene Ontology for Motifs，GOMO）等工具，来检测它们是否存在 GO 富集情况（图 8-39A 显示了一个通向该网址的链接）。
+
+![](images/page_518_image_7.jpg)
+
+<details>
+<summary>text_image</summary>
+
+SEARCH RESULTS
+Top Scoring Sequences
+Each of the following 23 sequences has an E-value less than 50.
+The motif matches shown have a position p-value less than 0.0001.
+Click on the arrow (i) next to the E-value to view more information about a sequence.
+Motif 1
+Sequence	E-value	Block Diagram
+ENSP00000270620|NP_612420.1	15	176	300
+Change the portion of annotated sequence by dragging the buttons; hold shift to drag them individually.
+Comment: ENSP00000270620; upstream from -156 to +200; size: 357; feature type:cds,trna,rna; location:
+Homo_sapiens_EnsEMBL:chromosome:NCBI36:19:1:63811651:1:55671257-55671613:R; upstream neighbour: ENSP00000334037 (distance: 156)
+Combined p-value: 3.42e-04
+Annotated Sequence
+(-) Motif 1	(-) Motif 1	(-) Motif 1
+8.6e-05	3.7e-06	4.9e-07
+CT-T-AC-TC-A	T-AC-TCACA	T-AC-TCACA
+*** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** **** ***( )
+CTGATCTCCAGGAGCCGCCCCCCTCCA AC TCATCACAAATCAGGAGC CCCTCTGT T AC TCATAAAGCCCGCTCCCATCAT AC TCACAGTGCAGGTAGTCCCGCCCCTCCTT
+ENSP00000306220|NP_775741.1	18	+	□
+ENSP00000359741|Q5JPQ1_HUMAN	18	+	□
+</details>
+
+图8-42 MAST输出结果。点击红圈中的箭头来展开如浅蓝框中标注的详细序列信息。移动蓝色矩形中的滑动窗口来发现序列中所有可能的结合位置（彩图请扫封底二维码）。
+
+## 使用 MEME-ChIP
+
+7. 使用 MEME-ChIP 来分析 ChIP-seq 的峰。
+
+登录 MEME ChIP 网站（http://meme.sdsc.edu/meme4\_6\_0/cgi-bin/meme-chip.cgi），输入你的 e-mail 地址，然后上传名为 Top500\_summit.fa 的 FASTA 文件（方案 6 中产生的），该文件包含了前 500 个 STAT1 ChIP-seq 峰（峰顶点 ±50 bp 的序列）。MEME-ChIP 与 MEME 的界面和参数相同。
+
+8. MEME-ChIP 结果是一个包括了各种工具运行结果链接的表格（图 8-43A）。本方案的之前步骤包括了 MEME 和 MAST 的用法。这里我们聚焦 TOMTOM（Guptaet al. 2007），该软件将由 MEME 发现的基序与 JASPAR 中已知的基序进行比较。
+
+i. 点击图 8-43A 中红色圈中标识的链接，该链接将产生一个包含 TOMTOM 输出结果的页面（图 8-43B）。
+ii. TOMTOM 报道了 MEME 发现的最为显著的基序（红色矩形所标识的）与数据库中 4 个已知的基序高度相似。它们分别是 STAT1、Stat3、ARO80 和 GABPA。
+iii. 在图 8-43B 的 “Matches to Query: 1” 部分中显示了两个序列标识的比对情况。
+
+顶部的标识为 JASPAR 数据库中储存的已知的 STAT1 基序，底部基序代表了 MEME 在输入序列中所发现的基序；这些基序之间的相似性非常显著。TOMTOM 还提供了如青色矩形中所示的统计学测度（statistical measurement）。
+
+即使你的序列不是来自 ChIP 实验，你仍可以使用 MEME-ChIP；可以利用 MEME-ChIP 中整合的基序分析工作流程来分析任何 DNA 序列集。
+
+A
+
+![](images/page_519_image_5.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  MEMEOutput["MEME_output:"] --> HTML
+  TOMTOMOutput["TOMTOM_output:"] --> HTML
+  MASTOutput["MAST_output:"] --> HTML
+  AMAOutput["AMA_output:"] --> plain_text
+  DREMEOutput["DREME_output:"] --> plain_text
+  TOMTOMOutput --> HTML
+  MASTOutput --> HTML
+  AMEOutput["AME_output:"] --> plain_text
+  MEMEOutput --> plain_text
+  MEMEOutput --> plain_text
+  MEMEOutput --> plain_text
+  MEMEOutput --> plain_text
+  MEMEOutput --> plain_text
+  MEMEOutput --> plain_text
+  MEMEOutput --> plain_text
+  MEMEOutput --> plain_text
+  MEMEOutput --> plain_text
+  MEMEOutput --> plain_text
+  MEMEOutput --> plain_text
+  MEMEM outputs: // Predicted locations of all MEMEMotifs (p < 0.0001) in the inputsequences.
+  MEMEM outputs: // Estimated binding affinity of eachMEMEMotifs to each inputsequence.
+  MEMEM outputs: // Motifs discovered in the trimmed(central 100bp) input sequences.
+  MEMEM outputs: // Motifs from JASPAR CORE 2009that match motifs DREMEDiscover.
+  MEMEM outputs: // Predicted locations of all DREMEMotifs (p < 0.0005) in the inputsequences.
+  MEMEM outputs: // JASPAR CORE 2009 motifsenriched in the trimmed (central100bp) input sequences.
+```
+</details>
+
+B
+
+![](images/page_519_image_7.jpg)
+
+<details>
+<summary>text_image</summary>
+
+TOMTOM
+Motif Comparison Tool
+For further information on how to interpret these results or to get a copy of the MEME software please access http://meme.nbcr.net.
+QUERY MOTIFS | TARGET DATABASES | MATCHES | PROGRAM INFORMATION | EXPLANATION
+QUERY MOTIFS
+Next Top
+Name Preview Matches List
+1 TTCC GAA 4 MA0137.2 (STAT1), MA0144.1 (Stat3), MA0273.1 (ARQ80), MA0062.2 (GABPA)
+2 TAAATCCACCTTTTACATAAATCAA 0
+3 AAAGTTACCCTATATGTCTAAAAAAGGA 0
+TARGET DATABASES Previous Next Top
+Database Number of Motifs Motifs Matched
+JASPAR_CORE_2009.meme 476 4
+MATCHES TO QUERY: 1 Previous Next Top
+Summary
+Name MA0137.2 Alignment Known motif in JASPAR
+Alt. Name STAT1
+Database JASPAR_CORE_2009.meme
+p-value 6.15958e-07
+E-value 0.000293196
+q-value 0.00029034
+Overlap 15
+Offset -2
+Orientation Reverse Complement
+Found by MEME
+</details>
+
+图 8-43 显示基序信息。（A）MEME-ChIP 的结果是一个包括了各种工具运行结果链接的表格。点击红色椭圆中所标示的链接将产生包含 TOMTOM 输出结果的页面。（B）TOMTOM 报告了 JASPAR 数据库中与 MEME 所发现基序具有显著性相似的基序（彩图请扫封底二维码）。
+
+## 比较两个基序的PSPM
+
+除了可视化比较两个基序的序列标识之外，还可以通过量化两个基序PSPM之间的相似性来比较两个基序，而TOMTOM是一个可以执行这样任务的工具之一。假设两个PSPM对应的列遵循相同分布，常用的相似性度量包括两个列之间的欧氏距离（Euclidean distance）（Choi et al. 2004）或者Pearson相关系数（Pearson correlation coefficient）（Pietrokovski 1996）。统计学显著性可以使用 $\chi^2$ 检验、Fisher精确检验(Schones et al. 2005)或者随机化（randomization）（Pape et al. 2008）来计算。请注意，有必要比较基序以及与基序反向互补的序列，并采用两个比较中相似性强的基序。默认情况下，TOMTOM使用Pearson相关系数来测量PSPM之间的相似性。
+
+## 确定由 MEME 识别得到的基序是否具有显著性
+
+MEME 对它所发现的每个基序都会计算一个 $E$ 值（如图 8-39A），该值估计了在随机打乱的输入序列中随机发现这样基序的期望值。此概念与 BLAST 报道的 $E$ 值概念非常相似（见方案 2）。有时，尽管一些基序仅在输入序列中出现少数次数，但 MEME 仍报道具有高信息含量基序的高度显著性 $E$ 值（这样的基序标识通常很长且退行性位点很少）。这样的基序最有可能是假阳性结果，尤其是当输入序列为 ChIP-seq 数据集中排序最靠前的峰时。也许值得注意的是，MEME 计算得到的 $E$ 值通常过于悲观（Nagarajan et al. 2005），所以你可能会想要使用更为宽松的临界值来避免假阴性结果。
+
+![](images/page_520_image_6.jpg)
+
+## 讨论
+
+本方案描述了在一组序列中发现基序的几个程序。这些程序可以单独运行，或被组织成一个工作流程来运行，如MEME-ChIP工具。因为与转录因子结合位点对应的基序很短且具有高度退行性（degenerative），基因组DNA中的大多数高分匹配片段通常在体内是没有功能的。这很可能因为基序与TF结合受到染色质状态和与其他调控蛋白相互作用所影响。因此，将基序搜索工具与来自ChIP-seq数据集的峰等实验数据相结合将是最有效率的方法。因为ChIP-seq峰可以根据它们的 $p$ 值进行排序（见方案6)，我们可以测试由MEME通过排序最高的峰所发现的基序，是否在排序较低的峰，以及峰的侧翼基因组区域中富集程度较低。
+
+## 网络资源
+
+Cygwin http://www.cygwin.com/
+
+JASPAR http://jaspar.genereg.net/
+
+MEME-ChIP website http://meme.sdsc.edu/meme/cgi-bin/meme-chip.cgi
+
+MEME suite of software programs http://meme.ncbi.net
+
+MotifViz web server http://zlab.umassmed.edu/MotifViz/
+
+UCSC Table Browser http://genome.ucsc.edu/cgi-bin/hgText
+
+# 信息栏
+
+![](images/page_521_image_3.jpg)
+
+## 数据格式
+
+下面是几种可转换的数据格式，这些数据格式在生物信息学领域中经常使用，并在本章中进行介绍。
+
+## BED 格式
+
+BED 格式是一种用于指定基因组区域的常见格式。每一行代表一个基因区域，每个区域至少含有按下列顺序由制表符隔开的三个域（fields）:“chrN Start End”。其中，chrN 代表染色体（如 chr1 或 chrX），Start 和 End 代表该区域的基因组起始坐标和终止坐标。下面是一个包含两个基因组区域的 BED 文件，域（fields）之间必须用制表符隔开。
+
+```txt
+chr7 99517108 99517307 transcript_1(-strand)
+chr7 98844537 98844736 transcript_2(+strand)
+```
+
+需要注意的是，这里的坐标与被直接输入至 UCSC 基因组浏览器中的坐标不同，一个 BED 格式文件是从 0 开始索引 “Start” 列，但是从 1 开始索引 “End” 列。因此，对应于 21 号染色体最开始三个位置的 BED 行被表述为 “chr2103”。文件中可以包含用于注释的另外的域（fields）。在本章方案 1 中的图 8-40A 中，输入序列包含第 4 个域:“能够被定位的读段数”；这种含有 4 个域的 BED 格式也被称为 “bedGraph” 格式。而且，可以添加以符号 “#” 开始的注释行来描述基因区域的下一个区块（block）。UCSC 基因组浏览器可以显示这些注释行，作为由下面基因组区块所组成的定制轨道的标题。
+
+BED 形式的比对结果如下所示。从左到右的域（fields）分别代表染色体、起始位点、终止位点、读段 ID、定位得分和染色体链。
+
+```batch
+chr1 10446 10474 SRR014988.1614474 255 -
+chr1 10459 10487 SRR014991.3802529 255 -
+chr1 10496 10524 SRR014987.254257 255 -
+chr1 13051 13079 SRR014992.3833233 255 -
+```
+
+用于可视化位于不同基因组区域的读段数目的 bedGraph 格式如下例所示，从左到右的域（fields）分别为染色体、基因组区域的起始位点与终止位点，以及定位至该区域的读段数目。
+
+```txt
+chr1 566745 566746 9
+chr1 566746 566747 12
+chr1 566747 566748 15
+chr1 566748 566749 22
+chr1 566749 566750 26
+chr1 566750 566751 29
+chr1 566751 566752 32
+chr1 566752 566753 34
+chr1 566753 566754 38
+```
+
+## FASTA 格式
+
+FASTA 是一种常用的存储 DNA 或蛋白质序列的数据格式。它以单行描述开始，描述行的第一个符号必须是 “>”，描述行之后可以跟一行或多行序列数据，且每一行的最大字符数没有限制。一个文件中可以包含多个序列，这些序列分别以一个描述行开始。
+
+```txt
+>transcript_1
+```
+
+```txt
+AAACGAGGGGGAACTTCCGTTCTTTGTTCTGTCCCCGGTGTGTGGGTCTGTGA CAG
+```
+
+```txt
+GGTCCAACAGGGCCTGGTCCGTGTCCGGTCCCCCAAATCTGTCGTCCCTGCCC
+CCA
+```
+
+```csv
+GGGTGAGTCCACGCGTCCCCGGGTCTCGCGGTGAGACGGAGGCTGTGGTCGC
+CGGG
+```
+
+```txt
+GAAGGGGGTGGTGTCTGTGCCACTGCGGCCCG
+```
+
+```txt
+>transcript_2
+```
+
+```txt
+CAGCTACCCAAGCTCCAGGAGCTTCCGGTATGTGTTTTCCCTCTGTTCTCGATT AC
+```
+
+```txt
+CTTGGCAACGGCTGAGGCGGGAGACCGGTGGTCTGCACCGTCCTGGAGGGAG
+ATAT
+```
+
+```txt
+GAGTGGCTGGACTCTCAGCCAGCCACTGGGATGTGTTCGGGCTTTGGACCTTG AGG
+```
+
+```txt
+CCGGAGAGAGCTCCCGAGAGGAGGCGGCGCCA
+```
+
+## FASTQ 格式
+
+FASTQ 文件是一种基于文本的测序仪依赖的数据文件，不仅保存序列，也保存对应的编码质量分数（encoded quality score）。
+
+每一个来自测序仪器的序列读段信息被表示为如下形式:
+
+第一行:@序列 ID；可以包含其他的注释
+
+第二行:序列（A/T/C/G ...）
+
+第三行:+序列 ID；可以包含额外的注释
+
+第四行:编码的质量分数
+
+第四行的每一个符号代表第二行相对应的每一个核苷酸的测序质量。这里有一个例子:
+
+```txt
+@SRR001339.3 FC12160_04JAN08_s_3.tar:3:1:230:474 length = 36
+GTTAGTCGGGAACTAAGGCCTGTAGGCTCTTTCCAT
++SRR001339.3 FC12160_04JAN08_s_3.tar:3:1:230:474 length = 36
+IIIIBIII*II,III\$I'I9IDI%II . . : 5'E%%(H
+```
+
+SRR0013339.3 是序列 ID；其他的注释（如日期、长度等）紧随其后。一般来说，质量分数（也叫 Phred 质量分数）是根据测序仪所测对应碱基正确性的可靠性来度量的。第四行的质量分数被编码为 ASCII 码。需要注意的是，质量分数和编码方式均是依赖于测序仪的。几种常用的分数-编码方案都以 Phred+33、Solexa+64 及 Phred+64 为基础。
+
+## MAF 格式
+
+多重序列比对格式是一种用来存储多重序列比对的纯文本格式（multiple alignment format，MAF，https://cgwb.nci.nih.gov/goldenPath/help/maf.html）。保守区域（区块）的比对以“a”标志开始，不同保守区域之间使用一个空行隔开。每一块包含一些必需行和可选行来代表多重比对的每个序列。简单来说，以“s”开始的行以文本形式存储序列比对，以“i”开始的行包含这一比对的相关信息，以“e”开始的行代表一个内容为空的比对，以“q”开始的行记录了每个被比对碱基的质量。
+
+下面是一个例子:
+
+```txt
+a score = 100.0
+s hg18.chr7 27707221 13 + 158545518 GCAGCTGAAAACA
+s mm8.chr6 53310102 13 + 151104725 ACAGCTGAAAATA
+```
+
+## SAM 格式和 BAM 格式
+
+SAM（sequence alignment/map）格式是一种存储序列比对信息的通用格式，很多比对工具都可以生成 SAM 格式。一个 SAM 文件中的一个典型的行包括 12 个域（fields），这些信息使得我们可以通过基因组位置对所有比对建立索引并高效检索。SAM 格式的二进制索引文件则是 BAM（binary alignment/map）格式，可以使用 SAMtools 工具对 SAM 和 BAM 格式文件进行操作和格式相互转换。
+
+## Wiggle 格式
+
+当使用 UCSC 基因组浏览器来可视化稠密且连续的数据时（如基因组上覆盖每 10 核苷酸窗口上的读段数量），就可以使用 wiggle 格式来代替 BED 和 bedGraph 格式。Wiggle 格式包括声明行和数据行（http://genome.ucsc.edu/goldenPath/help/wiggle.html）。下面是一个例子:
+
+```txt
+variableStep chrom = chr19 span = 150
+59304701 10.0
+59304901 12.5
+59305401 15.0
+59305601 17.5
+...
+```
+
+第一行是声明行，其他四行是数据行。在声明行中，用户可以选择两种 wiggle 格式中的一种:变长（variableStep）（连续数据点之间的不规则区间）和定长（fixedStep）。声明行中的跨度（span）参数表示由数据行第一列所指定的起点位置所覆盖的染色体区域跨度。数据行的第二列是用来绘图的信号。对于定长格式，仅有信号行是必需的，此时开始位点和步长已经在声明行中指定，如下例所示。
+
+```txt
+fixedStep chrom = chr19 start = 59204701 step = 10
+10.0
+5.5
+...
+```
+
+## 网络资源
+
+Multiple alignment format (MAF) https://cgwb.nci.nih.gov/goldenPath/help/maf.html
+wiggle format http://genome.ucsc.edu/goldenPath/help/wiggle.html
+
+![](images/page_524_image_4.jpg)
+
+## 算法、门户网站和方法
+
+## AME（基序富集分析）
+
+和程序 Clover 一样，AME （http://bioinformatics.org.au/ame/）（McLeay and Bailey 2010）是在一个调控序列集合中检测已知基序（motif）的富集情况。和 Clover 不同的是，AME 需要每个输入序列都被标记一些生物信号，如 ChIP-seq 分数，并以一种类似 MAST 的方式，对每个 DNA 序列赋予一个基序得分（motif score）。然后，对 DNA 序列的基序得分和序列所带生物信号之间的关联度进行测量，从而识别出具有最强关联度的基序。AME 已被包含在 MEME 工具包，并为 MEME-ChIP 流程的一个组件。
+
+## BEDTools
+
+BEDTools 包由主要用来管理 BED 文件的一些工具组成，如寻找重叠区域和计算覆盖度等任务的功能模块，也有一些操作以 SAM/BAM 格式文件为输入。当处理高通量测序数据时，强烈建议用户熟悉 SAMtools 和 BEDTools 的操作。
+
+## BLAT
+
+BLAT 是用来寻找与查询序列相似度在 95% 以上的 DNA 序列，此时要求查询序列长度在 25 个核苷酸以上。BLAT 可能会丢掉那些较短或较分散（divergent）的序列。BLAT 在算法上与 BLAST 不同，BLAST 是用来在 DNA 或蛋白质序列中寻找远源同源关系。在方案 2 中对 BLAST 有详细描述。一般来说，在以下方面 BLAT 优于 BLAST:
+
+1. 更快的搜索速度（代价是在搜索比较分散的命中结果时敏感性低）。
+
+2. 可以比较方便地将 BLAT 结果与 UCSC 基因组浏览器直接相连，或将 BLAT 结果作为定制通道。查看 BLAT 文档:http://genome.ucsc.edu/goldenPath/help/hgTracksHelp.html#BLATAalign 以获取详细信息。
+
+3. 5个方便的输出排序选项
+
+i. Score。Score 是指通过用匹配数目减去不匹配的数目计算而来，请注意每一个命中结果的最大分数等于 “SPAN”（比对长度）。与 BLAST 不同，BLAT 并不是通过统计学显著性，而是使用分数来更快地寻找高可信度的命中结果。
+
+ii. Query, Score。当输入的 FASTA 文件中有多个序列时，所有命中结果首先将按照它们对应的查询序列 ID（在 FASTA 中在“>”之后部分指定）进行排序，其次按照分数进行排序。
+
+iii. Query, Start。和选项 ii 一样，首先按照 ID 对命中结果进行排序，其次按照配对在查询序列（query）上的起始位点排序。
+
+iv. Chrom, Score。命中结果首先按照染色体排序，其次是分数排序。
+
+v. Chrom, Start。命中结果首先按照染色体排序，其次是比对在参考基因组上的起始位点排序。
+
+## ENCODE Consortium
+
+ENCODE（Encyclopedia of DNA Elements）表示 DNA 元件百科全书，是在 2003 年由 NHGRI（National Human Genome Research Institute）启动的研究项目。ENCODE 的目标是识别人类基因组的所有功能元件并将数据公开化。ENCODE 初期阶段是以人类基因组的 1% 预选区域展开的。在这一阶段，产生了许多重要的发现和技术。在 2007 年，ENCODE 进入产出阶段，目标瞄准整个人类基因组。所有的 ENCODE 数据都存储在 UCSC 基因组浏览器（http://genome.ucsc.edu/）和 GEO 数据库中（Gene Expression Omnibus）（Edgar et al. 2002），并可实现可视化。
+
+## Galaxy
+
+Galaxy 是一个用来从不同资源中检索大规模公共数据的网络门户 (http://galaxy.psu.edu/)。该门户网站整合了许多用于数据格式变换、可视化和分析的在线工具，包括文件操作（格式转换、文件合并等）、从外部数据库获取数据（如 UCSC 基因组浏览器），以及基本的统计学信息。关于这些工具的详细情况见 http://community.g2.bx.psu.edu/。
+
+## GEO
+
+GEO 是由 NCBI 维护的一个基因组实验数据库（http://www.ncbi.nlm.nih.gov/geo），存储了微阵列数据、下一代测序数据，以及其他形式的高通量技术产生的数据。这些数据由研究团队以良好架构的格式和协议进行上传提交。通过网页界面，所有数据易于搜索和下载。
+
+## Motif Discovery Scan
+
+类似于 MEME，基序发现扫描程序（motif discovery scan，MDscan）（Liu et al. 2002）是在一组 DNA 序列中从头寻找被富集的基序。MDscan 是最早被设计用来在 ChiP-chip 峰中寻找基序的工具之一。MDscan 首先在最高的 3～20 个 ChIP-chip 峰中找到丰度最高的 k-mer（允许少量错配），然后对于每一个 k-mer 构建一个 PSSM（size = k），使用它去扫描剩余的 ChIP-chip 峰并通过迭代修改 PSSM。MDscan 也可以使用类似的方式应用于 ChIP-seq 峰数据。
+
+## 多重序列比对算法
+
+进行多重序列比对（MSA）有三种通用策略:渐进、迭代和基于一致性的方法。代表这三种方法的典型工具分别是:ClustalW、Muscle 和 T-Coffee。
+
+ClustalW 是最古老的 MSA 算法，在 1988 年发明（Higgins and Sharp）并于 2007 年（Larkin et al.）更新。它首先基于序列两两之间的相似性构建系统发育树 [采用非加权组平均法（unweighted pair group method with arithmeticmean，UPGMA）或邻接法（neighbor-joining，NJ）]，然后根据系统发育树渐进地将序列比对进行合并（即距离最近的序列优先进行比对）。由于在多序列比较过程中引入的空位不能被移除（一旦有了空位，空位将一直存在），最终得到的比对准确性高度依赖于系统发育树。尽管在一些例子中，已证明 T-Coffee 和 Muscle 运行结果优于 ClustalW，ClustalW 仍旧是最为广泛使用的 MSA 算法之一（Larkin et al. 2007）。
+
+在 ClustalW 之后，提出了基于一致性的方法，如 T-Coffee。T-Coffee 利用 ClustalW 产生的 MSA，并将此 MSA 分割成全局性的序列两两比对。然后再把这些全局性的序列两两比对与 lalign（Huang and Miller 1991）产生的局部序列两两比对进行结合。T-Coffee 非常准确，然而它的运行速度远远慢于 ClustalW。
+
+最近提出了 Muscle 等迭代 MSA 算法。Muscle 并不是完全依赖于像 ClustalW 那样逐步生成的系统发育树。它将系统发育树作为一个引导，通过比较由引导树进行限制分区所得子树（subtree）导出的 MSA，来对 MSA 进行迭代改进（Edgar 2004）。其运行结果至少和 ClustalW 产生的结果一样准确，而且它的运行非常高效。
+
+目前的研究表明，不同 MSA 算法得到的比对非常不同（Golubchik et al. 2007），所以多个 MSA 算法的结果应该被整合，进而产生更为可靠的比对；M-Coffee（Wallace et al. 2006）就是一个实现此策略的工具。
+
+## SAM
+
+为了测量两组表达水平（x 和 y）均值之间的差异显著性，SAM（significance analysis of microarrays）使用了一个统计量 d，该统计量与 Student's t 检验中的统计量 t 相似，但是它在分母中具有一个额外的稳定常数  $s_{0}$ ，其定义如下:
+
+$$
+d = \frac {\overline {{x}} - \overline {{y}}}{\mathrm{SE} + s _ {0}},
+$$
+
+而统计量 $t$ 的定义如下
+
+$$
+t = \frac {\overline {{x}} - \overline {{y}}}{\mathrm{SE}}.
+$$
+
+该稳定常数 $s_0$ 有助于控制基因特异性波动的影响；$s_0$ 被用来最小化所有基因变化的 $d$ 值。SAM通过样本标签置换方法直接估算FDR值，而不是为每个 $d$ 值计算相应的 $p$ 值。因此，SAM不像 $t$ 检验那样要求数据的正态性。
+
+## SAMtools
+
+SAMtools 是一组命令行实用工具, 可对 SAM 文件和 BAM 文件进行管理。SAMtools 可以执行分类、合并和索引等功能, 还可以产生位置对应 (per-position) 格式的比对, 该格式的比对是一种可以寻找潜在单核苷酸多态性 (single-nucleotide polymorphism, SNP) 的直观方法。
+
+## Wilcoxon 秩和检验
+
+在数据不具正态性时，Wilcoxon秩和检验是一种 $t$ 检验的常用替代。在Wilcoxon秩和检验中，在两种表型的所有样本中，某个基因表达水平被联合起来并进行排序。Wilcoxon秩和检验统计量（$T$）被定义为一种表型的所有样本的秩总和。$T$ 可以被转换为 $z$ 得分，根据高斯分布及 $z$ 得分，可以获得对应的 $p$ 值。
+
+## 网络资源
+
+```dockerfile
+AME http://bioinformatics.org.au/ame/
+BLAT http://genome.ucsc.edu/goldenPath/help/hgTracksHelp.html#BLATALign
+GALAXY http://galaxy.psu.edu
+GEO http://www.ncbi.nlm.nih.gov/geo
+UCSC Genome Browser http://genome.ucsc.edu
+```
+
+![](images/page_527_image_1.jpg)
+
+<details>
+<summary>text_image</summary>
+
+FOURTH ED
+MOLECUL
+CL
+A LABORATORY
+GREEN AND SAMBROCK
+FOURTH EDITION
+MOLECUL
+CLONING
+A LABORATORY MANUAL
+GREEN AND SAMBROCK
+</details>
+
+时隔十年，美国冷泉港实验室出版社推出了全新的《分子克隆实验指南》第四版，新版修订了第三版中的核心章节，以突出现有的核酸制备和克隆、基因转移及表达分析的策略和方法等内容。同时还增加了12个新章节，专门介绍最激动人心的研究策略，包括利用DNA甲基化技术和染色质免疫沉淀的表观遗传学分析、RNAi、新一代测序技术，以及如何处理数据生成和分析的生物信息学等。全书22章，包含247个实验操作主题。本书还保留了必不可少的附录:试剂和缓冲液、常用技术、检测系统、一般安全原则和危险材料。
+
+基于30余年的可靠性和权威性，第四版《分子克隆实验指南》将成为新的“金标准”，并再次成为一部无法绕过的分子生物学实验手册和参考指南！
+
+任何使用分子生物学技术的基础研究实验室都将因拥有一册《分子克隆实验指南》而受益。
+
+—— 美国 The Scientist 杂志
+
+![](images/page_527_image_6.jpg)
+
+生物分社
+
+联系电话:010-64012501
+
+E-mail: lifescience@mail.sciencep.com
+
+网址:http://www.lifescience.com.cn
+
+销售分类建议:生命科学/分子生物学
+
+![](images/page_527_image_12.jpg)
+
+科学出版社互联网入口
+
+![](images/page_527_image_14.jpg)
+
+生命科学订阅号赛拉艾芙
+
+![](images/page_527_image_16.jpg)
+
+本书彩图及更多资源请扫码
+
+生命因你而精彩！
+
+www.sciencep.com
+
+![](images/page_527_image_20.jpg)
+
+<details>
+<summary>text_image</summary>
+
+ISBN 978-7-03-051997-9
+9 787030 519979 >
+</details>
+
+定 价:598.00元（上、中、下册）

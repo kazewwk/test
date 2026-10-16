@@ -1,0 +1,4728 @@
+{
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "created_at": "2018-01-08T07:32:41Z",
+      "modified_at": "2021-11-22T10:26:51+08:00",
+      "producer_application": "ABBYY FineReader 12",
+      "page_count": 528,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 496,
+          "width_pt": 587.0499877929688,
+          "height_pt": 816.2499902341515
+        },
+        {
+          "page_idx": 497,
+          "width_pt": 583.4500122070312,
+          "height_pt": 811.6999926753342
+        },
+        {
+          "page_idx": 498,
+          "width_pt": 583.9000244140625,
+          "height_pt": 812.650014648214
+        },
+        {
+          "page_idx": 499,
+          "width_pt": 583.9000244140625,
+          "height_pt": 811.6999926753342
+        },
+        {
+          "page_idx": 500,
+          "width_pt": 586.2999877929688,
+          "height_pt": 814.7999877929688
+        },
+        {
+          "page_idx": 501,
+          "width_pt": 583.4500122070312,
+          "height_pt": 811.8999829106033
+        },
+        {
+          "page_idx": 502,
+          "width_pt": 584.4000244140625,
+          "height_pt": 813.8500268552452
+        },
+        {
+          "page_idx": 503,
+          "width_pt": 583.7000122070312,
+          "height_pt": 810.9500219728798
+        },
+        {
+          "page_idx": 504,
+          "width_pt": 585.8499755859375,
+          "height_pt": 814.1000170893967
+        },
+        {
+          "page_idx": 505,
+          "width_pt": 583.2000122070312,
+          "height_pt": 811.8999829106033
+        },
+        {
+          "page_idx": 506,
+          "width_pt": 583.7000122070312,
+          "height_pt": 814.3000073246658
+        },
+        {
+          "page_idx": 507,
+          "width_pt": 585.0999755859375,
+          "height_pt": 813.0999951176345
+        },
+        {
+          "page_idx": 508,
+          "width_pt": 585.8499755859375,
+          "height_pt": 815.7500097658485
+        },
+        {
+          "page_idx": 509,
+          "width_pt": 583.7000122070312,
+          "height_pt": 812.1499731447548
+        },
+        {
+          "page_idx": 510,
+          "width_pt": 583.7000122070312,
+          "height_pt": 813.8500268552452
+        },
+        {
+          "page_idx": 511,
+          "width_pt": 585.5999755859375,
+          "height_pt": 812.4000244140625
+        }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "page_idx": 496,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.127,
+            0.077,
+            0.154,
+            0.09
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "478"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.17,
+            0.075,
+            0.397,
+            0.089
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "分子克隆实验指南（原书第四版）"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.125,
+            0.121,
+            0.155,
+            0.144
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.125,
+                0.121,
+                0.155,
+                0.144
+              ],
+              "image_path": "images/page_496_image_2.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.164,
+            0.123,
+            0.215,
+            0.142
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "讨论"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.121,
+            0.161,
+            0.832,
+            0.327
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "许多关于小 RNA 深度测序数据的研究提取完美定位至基因组（有时考虑到测序错误，会允许一些错配的存在）的读段，并丢弃未定位的读段。然而，由于 SNP、转座子、重复片段和结构变体在大多数生物中都非常常见，我们很可能见到许多读段无法与参考基因组形成比对，这些现象实际上会成为有趣的生物学结果。例如，缺少 hen1 的果蝇，表现为内源 siRNA 和 piRNA 的广泛被截尾（trimming）和加尾（tailing）现象，这里 hen1 是一种给内源 siRNA 和 Piwi 互作 RNA（piRNA）的 3'端添加 2'-O-甲基基团的甲基化转移酶。这些被截尾和加尾的序列不可能通过标准短读段定位算法定位至参考基因组。为此，已设计了一种基于后缀树的算法来发现这些读段和它们未被修饰的基因位点（Ameres et al. 2010, 2011）。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.133,
+            0.343,
+            0.326,
+            0.36
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "其他快速短读段定位法"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.131,
+            0.368,
+            0.825,
+            0.48
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "用于短读段与一个参考基因组进行比对的最快算法包括 Bowtie、BWA 和 SOAP2。它们都采用了相似的 BW 变换来压缩储存一个基因组的后缀/前缀 trie。这些算法之间的区别在于它们对待错配、空位和双端测序读段的策略不同。关于这些工具的比较可参见 Li 和 Durbin（2009）的文章及 Li 和 Homer（2010）的文章。模拟结果显示 SOAP2 是最快的，BWA 是最准确的。请注意 SOAP2 需要的内存空间大约是 BWA 和 Bowtie 的两倍。通常，速度以准确度为代价，这些对准方法都是非常具有竞争力的。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 7,
+          "bbox": [
+            0.125,
+            0.502,
+            0.212,
+            0.519
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "网络资源"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.154,
+            0.541,
+            0.443,
+            0.555
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "BEDTools http://code.google.com/p/bedtools/"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.155,
+            0.56,
+            0.381,
+            0.574
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Bowtie http://bowtie.cbcb.umd.edu/"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.155,
+            0.579,
+            0.367,
+            0.593
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Cygwin http://www.cygwin.com/"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.125,
+            0.598,
+            0.83,
+            0.631
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Gene Expression Omnibus (GEO; an NCBI database for microarray and sequencing data sets) http://www.ncbi.nlm.nih.gov/geo/"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.155,
+            0.635,
+            0.506,
+            0.649
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "SAMtools http://bowtie-bio.sourceforge.net/index.shtml"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.155,
+            0.654,
+            0.504,
+            0.668
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "twoBitToFa http://hgdownload.cse.ucsc.edu/admin/exe/"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.155,
+            0.672,
+            0.654,
+            0.687
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "UCSC bedGraph format http://genome.ucsc.edu/goldenPath/help/bedgraph.html"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.155,
+            0.692,
+            0.458,
+            0.706
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "UCSC Genome Browser http://genome.ucsc.edu"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 16,
+          "bbox": [
+            0.375,
+            0.785,
+            0.588,
+            0.81
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "- 寻峰算法简介"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.125,
+            0.836,
+            0.832,
+            0.889
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "微阵列和下一代测序技术极大地促进了通过多种生化方法富集的基因组 DNA 的发现。染色质免疫共沉淀技术（ChIP）就是一种常用方法，可富集被某一抗体特异识别的染色质片段（此方法的具体信息见第 20 章）。ChIP 通常分为三个步骤。"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 20,
+          "bbox": [
+            0.16,
+            0.892,
+            0.83,
+            0.925
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 18,
+              "bbox": [
+                0.161,
+                0.892,
+                0.714,
+                0.906
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "1. 由活细胞中将染色质纯化出来，其中基因组 DNA 与结合蛋白交联。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 19,
+              "bbox": [
+                0.16,
+                0.911,
+                0.83,
+                0.925
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "2. 通过机械方法（如超声法）或酶解（如使用微球菌核酸酶进行消化）将染色质分解"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        }
+      ]
+    },
+    {
+      "page_idx": 497,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.69,
+            0.073,
+            0.83,
+            0.088
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第 8 章 生物信息学"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.848,
+            0.075,
+            0.875,
+            0.089
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "479"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.171,
+            0.108,
+            0.234,
+            0.123
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "成片段。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.171,
+            0.126,
+            0.879,
+            0.161
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3. 使用能够特异性识别转录因子、组蛋白或甲基化 DNA 的抗体将与蛋白质结合的基因组 DNA 片段拉下来。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.171,
+            0.164,
+            0.88,
+            0.218
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "得到的 DNA 片段可以通过微列阵（ChIP 芯片；Buck and Lieb2004）或测序（ChIP-seq; Robertson et al. 2007）进行测定（见第 20 章，方案 5 和方案 6）。在全基因组研究中，ChIP-seq 的准确度和通量都超过了 ChIP 芯片，因此，本方案的重点在于 ChIP-seq 数据分析。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.171,
+            0.22,
+            0.881,
+            0.538
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "由于仅基因组的一小部分与特定转录因子结合或具有表观遗传学标记（组蛋白修饰或DNA甲基化），ChIP-seq数据集中的大部分序列读段为背景。以下例子说明了这个现象。三甲基组氨酸H3赖氨酸4（H3K4me3）是一个基因转录起始位点（transcription start site，TSS）附近富集的标记。如果我们假设人类基因组中有30000个被H3K4me3标记的TSS，且H3K4me3区域的平均大小为1000个碱基对（1kb），预计在无抗体富集的情况下，仅能得到 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1\\%"
+            },
+            {
+              "type": "text",
+              "content": " 的H3K4me3区域的读段，计算过程如下:"
+            },
+            {
+              "type": "equation_inline",
+              "content": "30000 \\times 1000 / 30000000000 = 1\\%"
+            },
+            {
+              "type": "text",
+              "content": " 。如果抗体存在情况下平均富集程度为10倍的话，该数值可被提高至 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "9.2\\%"
+            },
+            {
+              "type": "text",
+              "content": " ，计算过程如下:"
+            },
+            {
+              "type": "equation_inline",
+              "content": "30000 \\times 1000 \\times 10 / [30000 \\times 1000 \\times 10 + (3000000000 - 30000 \\times 1000) \\times 1] = 9.2\\%"
+            },
+            {
+              "type": "text",
+              "content": " 。如果因抗体富集倍数为100倍的话，该数值能被提高至 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "50\\%"
+            },
+            {
+              "type": "text",
+              "content": " 。由于基因组中转录因子的结合位点比组蛋白修饰位点更少，故对转录因子来说，来自背景的读段所占比例会变得更高，背景读段在基因组上随机分布，但是由于DNA剪接、切割位点和/或测序错误的存在，背景读段的分布并不是绝对均匀的，且随组织类型和ChIP方案的不同而有所变化。因此，理想情况下，背景DNA应在无抗体的ChIP-seq实验中进行测量，来自这样实验得到的数据被称为输入（input）。分析ChIP-seq数据的第一步是识别一个ChIP样本中与对照样本相比被富集的区域，这些区域被称为峰。为此，已经设计了很多软件工具（综述和对比请见Pepke et al. 2009; Wilbanks and Facciotti 2010）。这些算法被称为寻峰算法，它们在检测点状峰（punctate peak, "
+            },
+            {
+              "type": "equation_inline",
+              "content": "< 10\\mathrm{kb}"
+            },
+            {
+              "type": "text",
+              "content": " ）时非常有效。在下一节中，我们会从概念上解释这样的算法是如何运行的。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.486,
+            0.549,
+            0.567,
+            0.567
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "寻峰算法"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.172,
+            0.579,
+            0.882,
+            0.709
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "ChIP-seq 实验中的 DNA 片段的平均大小很小，通常为数百碱基对。出于经济考虑，大多数 ChIP-seq 实验使用单端测序（single-end sequencing），读段长度仅够在基因组中的大多数位置产生单一的定位位点。方案 5 描述了定位短读段的算法。Illumina 和 ABI 测序仪默认都产生 36bp 的读段，该长度足够使读段定位至大多数真核基因组非重复区域的单一位点。由某个特定基因座产生的 DNA 片段会产生两堆短读段:一种来自正链，另一种来自负链，与 DNA 片段的两端相对应。寻峰算法是沿 3' 方向移动每个读段开始，止于平均片段长度一半的地方（图 8-27）。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.172,
+            0.711,
+            0.882,
+            0.916
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "寻峰算法的主要任务是探测在 ChIP 样本中存在的读段数（reads）显著高于输入（未结合抗体；图 8-27）的基因组区域。例如，如果某个区域中有 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N_{\\mathrm{ChIP}}"
+            },
+            {
+              "type": "text",
+              "content": " 个读段和 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N_{\\mathrm{input}}"
+            },
+            {
+              "type": "text",
+              "content": " 个读段（ChIP 数据和输入数据的总测序深度已被标准化至一致，且等于两者中较低的一方），ChIP 相对于输入的富集程度的显著性如何？显著性可以通过 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p"
+            },
+            {
+              "type": "text",
+              "content": " 值来衡量，"
+            },
+            {
+              "type": "equation_inline",
+              "content": "p"
+            },
+            {
+              "type": "text",
+              "content": " 值被定义为不被抗体（即输入数据中对应的抗体）识别的某一区域被错误地预测为峰的概率。我将 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N_{\\mathrm{input}}"
+            },
+            {
+              "type": "text",
+              "content": " 的分布称为零分布（null distribution），从该分布我们可以计算得到与一个 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N_{\\mathrm{ChIP}}"
+            },
+            {
+              "type": "text",
+              "content": " 对应的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p"
+            },
+            {
+              "type": "text",
+              "content": " 值。方案 4 讲述了在检测差异表达基因时如何计算 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p"
+            },
+            {
+              "type": "text",
+              "content": " 值，计算在 ChIP 实验中被富集区域相对于输入的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p"
+            },
+            {
+              "type": "text",
+              "content": " 值过程与此完全相同。"
+            },
+            {
+              "type": "equation_inline",
+              "content": "N_{\\mathrm{input}}"
+            },
+            {
+              "type": "text",
+              "content": " 分布可以通过分析得到（分析零假设）或通过电脑模拟得到（经验零假设）。一种广泛应用的寻峰算法——MACS（model-based analysis of ChIP-seq，基于模型的 ChIP-seq 分析）（Zhang et al. 2008），首先使用长为 DNA 片段平均长度两倍的滑动窗口（sliding window）扫描基因组。MACS 假设 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N_{\\mathrm{input}}"
+            },
+            {
+              "type": "text",
+              "content": " 遵循泊松分布（Poisson distribution）"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 498,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.123,
+            0.075,
+            0.151,
+            0.088
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "480"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.166,
+            0.073,
+            0.397,
+            0.088
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "分子克隆实验指南（原书第四版）"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.121,
+            0.106,
+            0.831,
+            0.141
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "（一种分析零假设），该分布被用于计算 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N_{\\mathrm{ChIP}}"
+            },
+            {
+              "type": "text",
+              "content": " 的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p"
+            },
+            {
+              "type": "text",
+              "content": " 值。然后MACS将相互重叠的显著性窗口进行合并。"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 3,
+          "bbox": [
+            0.226,
+            0.149,
+            0.721,
+            0.474
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 3,
+              "bbox": [
+                0.226,
+                0.149,
+                0.721,
+                0.474
+              ],
+              "image_path": "images/page_498_image_3.jpg",
+              "content": ""
+            },
+            {
+              "type": "image_caption",
+              "index": 4,
+              "bbox": [
+                0.119,
+                0.484,
+                0.832,
+                0.577
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图 8-27 寻峰算法的步骤。（步骤 1）将所有读段在 3' 方向平均片段长度一半的位置进行移位。定位至基因组正链的读段被显示为红色，定位至基因组负链的读段被显示为紫色。（步骤 2）在每个滑动窗口中，计算 ChIP 得到的读段总数（蓝色）和 input 中的读段总数（灰色）。（步骤 3）执行统计学检验来检测每个滑动窗口中的 ChIP 读段是否多于 input 读段，并基于零分布来计算统计学显著性（p 值）（彩图请扫封底二维码）。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.12,
+            0.585,
+            0.831,
+            0.641
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "与寻找过表达基因（方案4）相似，寻峰算法也面临着多重检验问题。因为大量的基因组区域被评估，其统计具有显著性。我们可以使用方案4中描述的相同方法，根据以下三个步骤来执行错误发现率校正（Benjamin and Hochberg 1995）。"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 9,
+          "bbox": [
+            0.117,
+            0.643,
+            0.829,
+            0.754
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.154,
+                0.643,
+                0.5,
+                0.658
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "1. 所有区域根据其 p 值从小到大进行排列。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.117,
+                0.661,
+                0.829,
+                0.716
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "2. 计算各个区域的 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "q"
+                },
+                {
+                  "type": "text",
+                  "content": " 值, "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "q"
+                },
+                {
+                  "type": "text",
+                  "content": " 值是指一个区域被检测认为具有显著性的最小 FDR。排序在最后的区域 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "q"
+                },
+                {
+                  "type": "text",
+                  "content": " 值等于其 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "p"
+                },
+                {
+                  "type": "text",
+                  "content": " 值。根据排序列表, 第 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "k"
+                },
+                {
+                  "type": "text",
+                  "content": " 位区域的 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "q"
+                },
+                {
+                  "type": "text",
+                  "content": " 值为 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "M \\times p_k / k"
+                },
+                {
+                  "type": "text",
+                  "content": " 与 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "q_{k+1}"
+                },
+                {
+                  "type": "text",
+                  "content": " 这两者中的较小值, 其中, "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "k"
+                },
+                {
+                  "type": "text",
+                  "content": " 是排列的位置, "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "p_k"
+                },
+                {
+                  "type": "text",
+                  "content": " 是第 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "k"
+                },
+                {
+                  "type": "text",
+                  "content": " 位的 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "p"
+                },
+                {
+                  "type": "text",
+                  "content": " 值, "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "M"
+                },
+                {
+                  "type": "text",
+                  "content": " 是区域总数量。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.117,
+                0.718,
+                0.828,
+                0.754
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "3. 仅保留其 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "q"
+                },
+                {
+                  "type": "text",
+                  "content": " 值小于事先确定的 FDR 临界值的区域（如 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\mathrm{FDR} = 0.01"
+                },
+                {
+                  "type": "text",
+                  "content": "，或者被预测的区域中 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "1\\%"
+                },
+                {
+                  "type": "text",
+                  "content": " 为假阳性）。或者，我们也可以根据一个经验零假设来进行 FDR 校正。"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.119,
+            0.756,
+            0.831,
+            0.811
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在 MACS 的例子中，峰检测是在以 ChIP 数据集为背景下在输入（input）数据集上进行的（input vs. ChIP）。某个特定 p 值所对应的 q 值是在相同参数条件下，由 input vs. ChIP 获得的峰数除以由 ChIP vs. input 获得的峰数。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 11,
+          "bbox": [
+            0.389,
+            0.82,
+            0.559,
+            0.838
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "检测尖锐峰的顶点"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.119,
+            0.849,
+            0.83,
+            0.905
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在孤立抗体附着且强烈富集情况下，例如，含有一个强序列基序的孤立转录因子结合位点，可能会产生尖锐的峰。这些峰的顶点或许对应转录因子结合位点。因此，寻峰算法通常会输出每个峰的顶点，即峰中具有大多数读段的位置（图8-27）。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 499,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.686,
+            0.07,
+            0.828,
+            0.085
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第 8 章 生物信息学"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.845,
+            0.073,
+            0.872,
+            0.086
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "481"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.353,
+            0.113,
+            0.689,
+            0.131
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "检测在多个生物样本中被富集的区域"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.164,
+            0.143,
+            0.879,
+            0.368
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "ChIP-seq 可以在多个样本中进行，例如，在最近一项研究中（Cheung et al. 2010），利用 ChIP-seq 方法来检测 9 位不同年纪的正常人前额皮质神经元（prefrontal cortex neuron）中的 H3K4me3。这项研究的目标之一就是在比较样本中 3 个婴儿（小于 1 岁）与 3 个最老个体（大于 65 岁）的基础上，找出各自的 H3K4me3 富集区域。寻峰算法 MACS 以 3 位年长者的联合脑数据集为对照，在被合并的 3 个婴儿数据集中运行；反之亦然。那些具有显著 MACS p 值的区域将被进一步研究。对每个区域还计算了另外两个数值:t 检验的 p 值和倍数变化（婴儿样本中平均读段密度与老人样本中平均读段密度的比值）。为了避免由非常小的读段密度除以更小的读段密度而带来的较大倍数变化，我们可以在计算倍数变化时，在分子和分母中各加上一个伪记数（pseudocount）。与检测差异表达基因（方案 4）相似，我们可以 - "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\log_{10}(\\text{MACS } p \\text{ value})"
+            },
+            {
+              "type": "text",
+              "content": " 或 - "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\log_{10}(t-\\text{test } p \\text{ value})"
+            },
+            {
+              "type": "text",
+              "content": " 对 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\log_{2}(\\text{倍性变化})"
+            },
+            {
+              "type": "text",
+              "content": " 作火山图（volcano plot，图 8-28）。火山图中不同区域的基因座展现了强烈富集与样本间微小变化这两者之间的平衡情况。用户可以综合以上三个标准来选择用于进一步生物学检验的区域。"
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 4,
+          "bbox": [
+            0.189,
+            0.376,
+            0.855,
+            0.798
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 4,
+              "bbox": [
+                0.189,
+                0.376,
+                0.855,
+                0.798
+              ],
+              "image_path": "images/page_499_chart_4.jpg",
+              "content": "| Series | -log (read density ratio) (range) | -log (MACS p value) (range) |\n| --- | --- | --- |\n| MLXIPL | -2.0~0.5 | 0~220 |\n| SOX11 | 0.5~2.5 | 0~230 |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 5,
+              "bbox": [
+                0.165,
+                0.808,
+                0.879,
+                0.903
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图8-28 由寻峰算法MACS计算得到的 "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "p"
+                },
+                {
+                  "type": "text",
+                  "content": " 值与婴儿和老人之间平均读段密度的倍数变化所作的火山图。每一点都是MACS找到的一个峰。红点表示该峰是在婴儿大脑中富集的H3K4me3区域，而蓝色表示的是在老人大脑中富集的H3K4me3区域。左上方和右上方的点代表了最值得进一步研究的点。读段密度（read density）被定义为一个峰中的读段总数除以峰的长度，此处使用了0.005作为伪记数（pseudocount）来将婴儿和老人大脑中读段密度低于0.005的峰进行排除（彩图请扫封底二维码）。"
+                }
+              ]
+            }
+          ],
+          "sub_type": "scatter"
+        }
+      ]
+    },
+    {
+      "page_idx": 500,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.126,
+            0.075,
+            0.155,
+            0.089
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "482"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.169,
+            0.073,
+            0.397,
+            0.088
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "分子克隆实验指南（原书第四版）"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.361,
+            0.116,
+            0.592,
+            0.134
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "ChIP-seq 峰的功能性注释"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.123,
+            0.145,
+            0.832,
+            0.35
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "根据 ChIP-seq 峰与基因转录起始位点（TSS）的接近程度，可以对 ChIP-seq 峰进行分类，因为近距（proximity）意味着调控，尽管这不是直接证据。典型地，2kb 的临界值被用于定义近距。TSS 可以从注释中获得，如 RefSeq（Pruitt et al. 2007）、GenCode（Harrow et al. 2006）或者 UCSC known genes（Hsu et al. 2006），或者理想状态下从相同实验条件下相同细胞类型的 RNA-seq 中获取。如果可以获得定量表达数据（如来自 RNA-seq），我们可以查询那些 TSS 与峰接近的基因与其他基因相比是否有差异表达。这个问题可以通过对这两组基因的表达水平执行一个统计学检验（t 检验或 Wilcoxon 秩和检验）来完成。此外，计算 ChIP-seq 信号（读段的数量）和最近基因表达水平之间的相关性是有可能的。如果 ChIP-seq 邻近的基因属于一些通路，如那些被 Gene Ontology（GO）（Ashburner et al. 2000）分类的基因，我们就可以获取关于这个转录因子生物学功能的额外的信息。还有，与峰对应的 DNA 序列也许富集了转录因子的基序。方案 7 描述了识别序列基序的方法。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.123,
+            0.352,
+            0.831,
+            0.406
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "我们很难判断 TSS 相距较远的峰是否调控基因，如果答案为是，那就需要找出它们调控了哪些基因。虽然峰与基因相距较远，这些峰仍然对最近的基因进行调控这个假设依旧非常诱人。我们有两种实验方法可以对以上假设进行检验。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.158,
+            0.409,
+            0.769,
+            0.424
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "1. 例如，使用 RNAi 敲低（或沉默）相关因子，也许会导致基因的差异表达。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.123,
+            0.428,
+            0.829,
+            0.462
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2. 使用 5C（Dostie et al. 2006）或 Chia-PET（Li et al. 2010）等技术来检验峰对应的基因组 DNA 和启动子 DNA 之间的物理联系。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.123,
+            0.465,
+            0.832,
+            0.577
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "随着越来越多的基因组数据集可被利用，一种方法就是去研究由一个 ChIP-seq 数据集获得的峰是否与另一组基因组数据集检测到的区域发生重叠。这种重叠可以通过一个统计学检验 [如超几何分布检验（hypergeometric test）] 来实现，或者通过两组数据在一个预先设定的基因组区域内（如基因组中所有被注释的启动子区域或所有 5kb 长的不重叠的窗口）的读段数量之间的相关性来完成。另一种比较多个基因组数据集的有力方法是使用接下来所描述的聚合图（aggregation plot）策略。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 8,
+          "bbox": [
+            0.24,
+            0.586,
+            0.717,
+            0.604
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "使用聚合图来展现基因组特定位置附近的平均信号谱"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.123,
+            0.616,
+            0.832,
+            0.746
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "通常，转录因子的 ChIP-seq 的峰小于 1kb。在 TSS 附近富集的组蛋白修饰（如 H3K4me3 和 H3K27ac）往往标记几千个碱基（即一部分相近的核小体可以具有这个组蛋白标志）。其他组蛋白修饰（如 H3K4me27me3 和 H3K36me3）可以标记数十万个碱基。尽管不同基因位点之间的信号谱变化很大，在一组基因组位置（锚点，anchor）将平均信号谱（signal profile）排列起来仍能说明问题。通常使用的锚点为 TSS、转录终止位点（TTS）、剪接位点和转录因子结合位点。这些图被称为聚合图（aggregation plot），因为它们聚合（平均）了通过锚点对齐的信号谱。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.124,
+            0.748,
+            0.832,
+            0.84
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "图 8-29 显示的聚合图，涉及转录因子 GATA1 和 Egr1、一种绝缘子（insulator）结合蛋白 CTCF，以及人类基因组中所有被注释的 TSS 附近的组蛋白修饰 H3K4me3、H3K27ac、H3K36me3 和 H3K27me3。这些蛋白质根据其表达水平进行分组。作为比较，图中还包括了在相同细胞系中使用相同实验方法产生的输入(input)。这些数据由 ENCODE 协会(Raney et al. 2011; ENCODE Project Consortium 2011)产生。基于此图可以得到以下结论。"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 11,
+          "bbox": [
+            0.123,
+            0.842,
+            0.831,
+            0.914
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 12,
+              "bbox": [
+                0.124,
+                0.842,
+                0.83,
+                0.876
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "1. 转录因子（GATA1、Egr1 和 CTCF）比 H3K4me3 和 H3K4me27ac 具有较小的信号谱，而 H3K4me3 和 H3K4me27ac 又比 H3K36me3 具有较小的信号谱。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 13,
+              "bbox": [
+                0.125,
+                0.879,
+                0.831,
+                0.914
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "2. H3K4me3 和 H3K4me27ac 的波形中存在凹陷，对应于与 TSS 紧接着的、上游无核小体的区域。"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        }
+      ]
+    },
+    {
+      "page_idx": 501,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.69,
+            0.072,
+            0.832,
+            0.086
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第 8 章 生物信息学"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.848,
+            0.075,
+            0.874,
+            0.088
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "483"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.204,
+            0.106,
+            0.733,
+            0.122
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3. H3K36me3 的波形在 TSS 下游上升，说明该标记位于基因之内。"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 3,
+          "bbox": [
+            0.194,
+            0.131,
+            0.856,
+            0.355
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 3,
+              "bbox": [
+                0.194,
+                0.131,
+                0.856,
+                0.355
+              ],
+              "image_path": "images/page_501_image_3.jpg",
+              "content": ""
+            },
+            {
+              "type": "image_caption",
+              "index": 4,
+              "bbox": [
+                0.168,
+                0.367,
+                0.882,
+                0.46
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图 8-29 某个 TSS 附近所锚定的不同 TF 或组蛋白修饰与输入（input，背景）的聚合图例子。（A）GATA1；（B）Egr1；（C）CTCF；（D）H3K4me3；（E）H3K27ac；（F）H3K27me3；（G）H3K36me3；（H）Input。所有标记都根据它们与最近的 TSS 之间的距离（碱基数）进行聚合。我们可以从视觉上区分 TSS 附近标记的特定分布。例如，我们可以分辨出 H3K4me3 在 TSS 附近高度富集，尤其是在 +1 核小体附近，而在 -1 核小体附近衰减（彩图请扫封底二维码）。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.171,
+            0.54,
+            0.873,
+            0.567
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "方案 6 识别 ChIP-seq 数据集中富集的区域（寻峰）"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.171,
+            0.592,
+            0.882,
+            0.647
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "本方案演示了如何使用 MACS 软件在一个 ChIP-seq 数据集中寻找峰（peak）。MACS 是使用最广泛的寻峰程序之一。本方案描述了如何在 UNIX 环境下，以及在 Galaxy 上运行 MACS 软件，如何提取由 MACS 获得的具有最显著 p 值的 500 个峰附近 50bp 距离的序列。"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 7,
+          "bbox": [
+            0.172,
+            0.662,
+            0.204,
+            0.685
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 7,
+              "bbox": [
+                0.172,
+                0.662,
+                0.204,
+                0.685
+              ],
+              "image_path": "images/page_501_image_7.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 8,
+          "bbox": [
+            0.211,
+            0.663,
+            0.262,
+            0.684
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "材料"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.504,
+            0.7,
+            0.548,
+            0.718
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "仪器"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.207,
+            0.731,
+            0.512,
+            0.746
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "具有 Internet 连接和网页浏览器的电脑"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.207,
+            0.75,
+            0.304,
+            0.765
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "MACS 软件"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.233,
+            0.77,
+            0.884,
+            0.819
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在 Unix 系统的电脑上下载并安装 MACS 软件包（安装指南见 http://liulab.dfci.harvard.edu/MACS/INSTALL.html）。或者，MACS 还可以在网页平台 Galaxy（http://main.g2.bx.psu.edu/）上运行，Galaxy 提供了一系列用于管理和分析生物数据的有用工具（Goecks et al. 2010）。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.207,
+            0.821,
+            0.324,
+            0.836
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "MS Excel 软件"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.207,
+            0.839,
+            0.298,
+            0.855
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "UNIX 环境"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.234,
+            0.86,
+            0.884,
+            0.926
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "本方案使用了 UNIX 指令。我们强烈推荐您在 Ubuntu、Centos/Red Hat 或 Mac OS X 等基于 UNIX 的操作系统中进行工作。如果你使用的是 Windows 操作系统，请先安装 Cygwin，然后在 Cygwin 下安装 Python 和 MACS。Cygwin 是一个免费的软件，它可以在 Windows 上提供一个类似 UNIX 的环境。我们可以在 http://www.cygwin.com/上找到 Cygwin 的安装包。在 Cygwin 上安装 Python 指南见 http://docs.python.org/install/index.html。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 502,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.124,
+            0.075,
+            0.151,
+            0.088
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "484"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.166,
+            0.073,
+            0.395,
+            0.088
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "分子克隆实验指南（原书第四版）"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 2,
+          "bbox": [
+            0.121,
+            0.119,
+            0.153,
+            0.142
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 2,
+              "bbox": [
+                0.121,
+                0.119,
+                0.153,
+                0.142
+              ],
+              "image_path": "images/page_502_image_2.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 3,
+          "bbox": [
+            0.16,
+            0.121,
+            0.212,
+            0.141
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "方法"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.349,
+            0.159,
+            0.602,
+            0.177
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在 UNIX 环境中运行 MACS"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.12,
+            0.188,
+            0.83,
+            0.261
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "1. 首先，如方案 5 所描述，将所有序列读段与参考基因组进行比对，MACS 接受多种格式（http://liulab.dfci.harvard.edu/MACS/00README.html）。在本方案中，我们使用方案 5 产生的 BED 文件 STAT1.sorted.bam.bed 和 INPUT.sorted.bam.bed。MACS 所要求的 BED 格式文件必须包括 6 个域（fields）（如方案 5 步骤 7.ii 所示）。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.156,
+            0.264,
+            0.446,
+            0.279
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "2. 根据实验设计设置以下三个参数。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.18,
+            0.283,
+            0.827,
+            0.316
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "i. 带宽（bandwidth）。为构建模型，设置用来扫描基因组的窗口大小。将带宽设置为被测序的 DNA 片段的平均大小。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.18,
+            0.321,
+            0.52,
+            0.335
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "ii. 标签尺寸（tag size）。序列读段的长度。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.18,
+            0.339,
+            0.827,
+            0.391
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "iii. 移位尺寸（shift size）。沿 3' 方向移动读段的核苷酸数量，如图 8-30 中步骤 1 所示。设置移位尺寸为 DNA 片段平均大小的一半。MACS 可以自动估计这个参数的大小。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.156,
+            0.396,
+            0.392,
+            0.411
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "3. 参照方案 5 中的相同例子。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.18,
+            0.415,
+            0.83,
+            0.581
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "i. 点击方案 5 图 8-25 中 “Samples” 部分的链接。在链接页面中，“Extraction protocol” 部分显示 “After adapter ligation DNA was PCR amplified with Illumina primers for 15 cycles and library fragments of ~ 250 bp (insert plus adaptorand PCR primer sequences) were band isolated from an agarose gel[在接头连接 DNA 经过 Illumina 引物 15 个循环的 PCR 扩增以后，由琼脂糖胶中分离得到长度约为 250bp 的文库片段(包含接头的插入和 PCR 的引物序列)的条带]”。此外，“Data processing” 部分中则显示“all the uniquely mapped tags reads (mapped against NCBI36) to the averaged sequenced DNA fragment size ~200 bps” [所有被单一定位的标签读段（被定位至 NCBI36）其长度至多为测序 DNA 片段平均长度大约 200bp]”。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.18,
+            0.584,
+            0.709,
+            0.6
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "ii. 带宽设置为 250 bp，标签尺寸设置为 36，移位尺寸设置为 100。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.156,
+            0.603,
+            0.561,
+            0.619
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "4. 输入以下指令使 MACS 以你所设置的参数运行:"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 14,
+          "bbox": [
+            0.178,
+            0.623,
+            0.769,
+            0.658
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 14,
+              "bbox": [
+                0.178,
+                0.623,
+                0.769,
+                0.658
+              ],
+              "content": "macs -t STAT1.sorted.bam.bed -c Input.sorted.bam.bed --format=BED --bw=250\n--tsize=36 --shiftsize=100 --name=STAT1 --pvalue=1e-5 --wig"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "batch"
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.119,
+            0.66,
+            0.83,
+            0.752
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "“--pvalue=1e-5”选项告诉 MACS 仅报道具有比 1e-5 更显著 p 值的峰。“--wig”选项告诉 MACS 为每个染色体都产生一个 wiggle 文件，该种文件可以通过 UCSC 基因组浏览器进行可视化（Fujita et al. 2010）。wiggle 格式与方案 5 中描述的 bedGraph 格式相似；这两种格式都可以用于显示被定位至染色体位点的读段数量（http://genome.ucsc.edu/goldenPath/help/wiggle.html）。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.206,
+            0.756,
+            0.748,
+            0.77
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "要求 MACS 输出 wiggle 文件需要耗时间和空间，因此，如果不要求可视化，“--wig”可以忽略。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.119,
+            0.771,
+            0.829,
+            0.825
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "5. 被 MACS 识别的峰会被储存在一个名为 “STAT1_peaks.xls” 的文件中，该文件可以被 Excel 软件用于进一步分析。MACS 还可以将峰及其顶点以 BED 格式输出等 (http://liulab.dfci.harvard.edu/MACS/00README.html)。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.119,
+            0.827,
+            0.829,
+            0.881
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "6. wiggle 结果文件可以作为一个定制通道上传至 UCSC 基因组浏览器中。上传定制通道过程见方案 1。图 8-30 比较了在相同基因座上被移位的读段与未移位的读段（方案 5，图 8-31）。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 503,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.687,
+            0.07,
+            0.828,
+            0.083
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第 8 章 生物信息学"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.845,
+            0.072,
+            0.872,
+            0.085
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "485"
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 2,
+          "bbox": [
+            0.187,
+            0.1,
+            0.849,
+            0.364
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 2,
+              "bbox": [
+                0.187,
+                0.1,
+                0.849,
+                0.364
+              ],
+              "image_path": "images/page_503_chart_2.jpg",
+              "content": "| Category | Peak Value |\n| --- | --- |\n| STAT1_negative | 59 |\n| STAT1_positive | 73 |\n| STAT1_shifted_chr1 | 150 |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 3,
+              "bbox": [
+                0.169,
+                0.375,
+                0.865,
+                0.392
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图 8-30 在 UCSC 基因组浏览器上比较读段移位前后的分布情况（彩图请扫封底二维码）。"
+                }
+              ]
+            }
+          ],
+          "sub_type": "histogram"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.412,
+            0.402,
+            0.632,
+            0.42
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在 Galaxy 上运行 MACS"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "paragraph_title",
+          "index": 5,
+          "bbox": [
+            0.202,
+            0.433,
+            0.465,
+            0.449
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "7. 为了在 Galaxy 上运行 MACS,"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.227,
+            0.451,
+            0.879,
+            0.507
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "i. 通过点击 “Get Data”，然后点击左侧栏中的 “Upload File”（如图 8-31 红色框中所示），将方案 5 中产生的 BED 文件 STAT1.sorted.bam.bed 和 INPUT.sorted.bam.bed 上传至 Galaxy（http://main.g2.bx.psu.edu/）。"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 7,
+          "bbox": [
+            0.177,
+            0.515,
+            0.868,
+            0.764
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 7,
+              "bbox": [
+                0.177,
+                0.515,
+                0.868,
+                0.764
+              ],
+              "image_path": "images/page_503_image_7.jpg",
+              "content": "Galaxy\nTools\nOptions\nGet Data\n• Upload File from your computer\n• UCSC Main table browser\n• UCSC Archaea table browser\n• BX main browser\n• BioMart Central server\n• CrameneMart Central server\n• Flymine server\n• modENCODE fly server\n• modENCODE modMine server\n• Ratmine server\n• YeastMine server\n• modENCODE worm server\n• Wormbase server\n• EuPathDB server\n• EncodeDB at NHGRI\n• EpiGRAPH server\nSend Data\nENCODE Tools\nLift-Over\nText Manipulation\nConvert Formats\nUpload File\nFile Format:\nbed\nWhich format/See help below\nFile:\nChoose File no file selected\nTIP: Due to browser limitations, uploading files larger than 2GB is guaranteed to fail. To upload large files, use the URL method (below) or FTP of enabled by the site administrator)\nURL/Text:\nHere you may specify a list of URLs (one per line) or paste the contents of a file\nFiles uploaded via FTP:\nFile\nSize\nDate\n✓ STAT1.sorted.bam.bed\n820.0 Mb\n04/06/2011 04.05 10 PM\n✓ INPUT.sorted.bam.bed\n719.3 Mb\n04/06/2011 04.05 00 PM\nThis Galaxy server allows you to upload files via FTP. To upload some files, log in to the FTP server at main.g2.bx.psu.edu using your Galaxy credentials (email address and password)\nConvert spaces to tabs:\n□ Yes\nUse this option if you are entering intervals by hand.\nGenome:\nHuman Feb. 2009 (CRCh37/hg19) (hg):\nExecute\nHistory\nOptions\nUnnamed history\n2: INPUT.sorted.bam.bed\nView data\nEdit attributes\nDelete"
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.165,
+            0.779,
+            0.879,
+            0.87
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "图 8-31 将数据上传至 Galaxy。Galaxy 的网页界面由三个栏组成。左侧 “Tools” 栏包括一系列的工具。点击每个工具标题会在中间栏中产生一个工作（job）提交页面，该页面将会显示该工具的选项和参数，并允许你运用该工具。右侧 “History” 栏记录了所有提交的任务及其结果。在本图中，使用了 “Upload File” 工具提交了两个 BED 文件。这两个文件上传任务被记录在 “History” 栏中。当这些工作结束后，点击这些任务后面的图标可以对它们进行查看、编辑和删除（彩图请扫封底二维码）。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.228,
+            0.88,
+            0.879,
+            0.914
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "ii. 在 “Upload File” 页面（图 8-31 中间栏的最上方）中，设置文件格式为 “bed” （图中顶部蓝色矩形所示）。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.255,
+            0.919,
+            0.879,
+            0.933
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "上传小文件时，通过点击 “Choose file” 按钮选择要上传的文件，提供 URL 或者将内容粘贴在 “URL/Text” 文"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 504,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.128,
+            0.075,
+            0.155,
+            0.088
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "486"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.171,
+            0.073,
+            0.397,
+            0.088
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "分子克隆实验指南（原书第四版）"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.184,
+            0.11,
+            0.831,
+            0.14
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "本框（虚线框中所示）中。对于这样的文件（例如，此处的两个 ChIP-seq BED 文件），我们最好通过 Galaxy FTP（ftp://main.g2.bx.psu.edu）将其上传。获取 Galaxy FTP 需要在 Galaxy 进行注册。"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.184,
+            0.142,
+            0.8,
+            0.158
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "iii. 文件上传至 Galaxy FTP 服务器之后，它们会被显示在图 8-31 橙色矩形中。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.184,
+            0.161,
+            0.83,
+            0.214
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "iv. 通过在文件名之前的方框中打钩可以选中这两个文件，在 “Genome” 下拉框中选择 “Human Feb. 2009(GRCh38/hg19) (hg19)”，并点击 “Execute”（绿色矩形中所示）来提交任务。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.184,
+            0.217,
+            0.83,
+            0.252
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "v. 这两个文件会显示在右侧的 “History” 栏中。点击 “History” 栏中的铅笔图标来编辑每个文件的各项属性（如文件名、文件类型等）。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.159,
+            0.255,
+            0.289,
+            0.27
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "8. 运行 MACS,"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.184,
+            0.274,
+            0.83,
+            0.308
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "i. 点击工具栏中的 “NGS: Peak Calling”，然后点击左侧栏中的 “MACS” 以进入提交页面（图 8-32）。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.184,
+            0.312,
+            0.773,
+            0.327
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "ii. 将 “Experiment Name” 设置为 “STAT1”（图 8-32 中间栏中红色矩形）。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.184,
+            0.331,
+            0.83,
+            0.384
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "iii. 在图 8-32 蓝色框中所示的下拉框中，选择你刚刚上传的两个 BED 文件:STAT1.sorted.bam.bed 作为 “ChIP-Seq Tag File”；INPUT.sorted.bam.bed 作为 “ChIP-Seq Control File”。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.184,
+            0.387,
+            0.83,
+            0.422
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "iv. 如步骤 4 中所描述的，将 “Tag size” 设置为 “36”，将 “Band width” 设置为 “250”，如图 8-32 绿色框中所示。将其他参数设置为默认值，然后点击 “Execute”。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.184,
+            0.425,
+            0.83,
+            0.478
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "v. 按照预期右侧 “History” 栏（红色虚线框所示）中会出现两个任务。其中一项任务会产生所有峰区域的 BED 文件，而另一项任务会输出一个关于这些峰的 HTML 格式总结报告。"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 12,
+          "bbox": [
+            0.143,
+            0.49,
+            0.814,
+            0.845
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 12,
+              "bbox": [
+                0.143,
+                0.49,
+                0.814,
+                0.845
+              ],
+              "image_path": "images/page_504_image_12.jpg",
+              "content": "Galaxy\nTools Options\nGet Data\nSend Data\nENCODE Tools\nLift-Over\nText Manipulation\nConvert Formats\nFASTA manipulation\nFilter and Sort\nJoin, Subtract and Group\nExtract Features\nFetch Sequences\nFetch Alignments\nGet Genomic Scores\nOperate on Genomic Intervals\nStatistics\nGraph/Display Data\nRegional Variation\nMultiple regression\nMultivariate Analysis\nEvolution\nMotif Tools\nMultiple Alignments\nMetagenomic analyses\nHuman Genome Variation\nEMBOSS\nNGS TOOLBOX BETA\nNGS: QC and manipulation\nNGS: Mapping\nNGS: SAM Tools\nNGS: Indel Analysis\nNGS: Peak Calling\n• MACS Model-based Analysis of ChIP-Seq\n• GeneTrack Indexer on a BED file\n• Peak predictor on GeneTrack index\nNGS: RNA Analysis\nROGENETICS\nSNP/WGA: Data Filters\nSNP/WGA: QC: LD; Plots\nSNP/WGA: Statistical Models\nMACS\nExperiment Name:\nSTAT1\nPaired End Sequencing:\nSingle End\nChIP-Seq Tag File:\n1: STAT1 sorted bam bed\nChIP-Seq Control File:\n2: INPUT sorted bam bed\nEffective genome size:\n270000000k\ndefault: 2.7e+9\nTag size:\n36\nBand width:\n250\nPvalue cutoff for peak detection:\n1e-05\ndefault: 1e-5\nSelect the regions with MFOLD high-confidence enrichment ratio against background to build model:\n32\nParse xds files into into distinct interval files:\nSave shifted raw tag count at every bp into a wiggle file:\nDo not create wig file listers:\nUse fixed background lambda as local lambda for every peak region:\nup to 9X more time consuming\n3 levels of regions around the peak region to calculate the maximum lambda as local lambda:\n1000.5000.10000\nBuild Model:\nBuild the shifting model:\nDiagnosis report:\nDo not product report lister:\nup to 9X more time consuming\nPerform the new peak detection method (futurefdr):\nThe default method only consider the peak location, 1k, 5k, and 10k regions in the control data, whereas the new future method also consider the 5k, 10k regions in treatment data to calculate local bias.\nExecute"
+            },
+            {
+              "type": "image_caption",
+              "index": 13,
+              "bbox": [
+                0.251,
+                0.86,
+                0.696,
+                0.877
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图 8-32 在 Galaxy 上运行 MACS（彩图请扫封底二维码）。"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 14,
+          "bbox": [
+            0.16,
+            0.888,
+            0.367,
+            0.903
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "9. 当 MACS 运行完毕后，"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.186,
+            0.906,
+            0.834,
+            0.924
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "i. 点击 “History” 栏中 MACS 输出结果 “html report” 右侧的眼睛图标。你将看到"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 505,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.688,
+            0.072,
+            0.83,
+            0.086
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第 8 章 生物信息学"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.846,
+            0.073,
+            0.874,
+            0.088
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "487"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.255,
+            0.106,
+            0.465,
+            0.122
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "中间栏中出现了 5 个链接。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.229,
+            0.125,
+            0.695,
+            0.142
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "ii. 右击 “STAT1_peaks.xls”，将其保存至你的本地磁盘中。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.167,
+            0.149,
+            0.799,
+            0.167
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "以具有最显著性 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p"
+            },
+            {
+              "type": "text",
+              "content": " 值的500个MACS峰值为中心，提取 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\pm 50\\mathrm{bp}"
+            },
+            {
+              "type": "text",
+              "content": " 的峰宽序列"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.203,
+            0.175,
+            0.735,
+            0.191
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "10. 将 MACS 输出结果 “STAT1_peaks.xls” 重新上传至 Galaxy 中。"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 6,
+          "bbox": [
+            0.238,
+            0.194,
+            0.877,
+            0.247
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.238,
+                0.194,
+                0.821,
+                0.209
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "i. 点击左侧工具栏中的 “Get Data”，然后点击左侧栏中的 “Upload File”。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.238,
+                0.213,
+                0.877,
+                0.247
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "ii. 在中间栏的 “Upload File” 页面中，点击 “Choose File”，选择你本地硬盘驱动器中的文件 “STAT1_peaks.xls”，然后点击 “Execute” 提交页面。"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.167,
+            0.25,
+            0.879,
+            0.285
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "11. 根据其显著性得分（significance score）[计算公式为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "-10*\\log_{10}(p"
+            },
+            {
+              "type": "text",
+              "content": " value)] 对文件进行排序，显著性得分是“STAT1_peaks.xls”文件中的第7列。"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 10,
+          "bbox": [
+            0.238,
+            0.288,
+            0.877,
+            0.436
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 11,
+              "bbox": [
+                0.238,
+                0.288,
+                0.877,
+                0.322
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "i. 点击 “Filter and Sort”，然后点击左侧栏中的 “Sort”，一个 “Sort” 页面将会出现在中间栏中（图 8-33A）。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 12,
+              "bbox": [
+                0.238,
+                0.326,
+                0.877,
+                0.38
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "ii. 在 “Sort Query” 中选择 “STAT1_peaks.xls”，在 “on column” 中选择 “c7”，在 “with flavor” 中选择 “Numerical sort”，然后在 “everything in” 中选择 “Descending order”。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 13,
+              "bbox": [
+                0.239,
+                0.383,
+                0.507,
+                0.398
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "iii. 点击 “Execute” 来提交任务。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 14,
+              "bbox": [
+                0.238,
+                0.401,
+                0.877,
+                0.436
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "iv. 当任务完成后，点击铅笔图标（图 8-33A 右侧红圈中所示）将文件名改为 “Sorted_peaks.xls”。"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.205,
+            0.439,
+            0.451,
+            0.455
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "12. 仅保留最前面的 500 个峰。"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 16,
+          "bbox": [
+            0.238,
+            0.458,
+            0.877,
+            0.531
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 17,
+              "bbox": [
+                0.238,
+                0.458,
+                0.87,
+                0.474
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "i. 点击左侧栏中的 “Text Manipulation”，然后点击 “Select first”（见图 8-33C）。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 18,
+              "bbox": [
+                0.238,
+                0.477,
+                0.877,
+                0.512
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "ii. 在中间页面中，在 “Select first” 区输入 “500”，然后在 “from” 下拉选项中选择 “Sorted_peaks.txt”，点击 “Execute” 来提交页面。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 19,
+              "bbox": [
+                0.239,
+                0.515,
+                0.551,
+                0.531
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "iii. 将文件名改为 “Top500_peaks.txt”。"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 20,
+          "bbox": [
+            0.167,
+            0.534,
+            0.881,
+            0.625
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "13. 得到峰顶点 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\pm 50"
+            },
+            {
+              "type": "text",
+              "content": " bp 的坐标。每个峰区域的染色体起始和终止位点被列在 MACS 输出结果中。此外，MACS 报道了每个峰的顶点，这些顶点应位于转录因子结合位点附近。MACS 记录了各个峰的起始位点以及峰顶点距离峰起始位点的相对距离。为了得到峰顶点 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\pm 50"
+            },
+            {
+              "type": "text",
+              "content": " bp 的坐标，我们将对 MACS 的输出结果执行简单的操作（即起始位点+峰顶点的相对距离 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\pm 50"
+            },
+            {
+              "type": "text",
+              "content": "）。"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 21,
+          "bbox": [
+            0.238,
+            0.628,
+            0.881,
+            0.814
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 22,
+              "bbox": [
+                0.238,
+                0.628,
+                0.86,
+                0.644
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "i. 在左侧栏中，点击 “Text Manipulation”，然后点击 “Compute”（图 8-33B）。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 23,
+              "bbox": [
+                0.239,
+                0.647,
+                0.88,
+                0.682
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "ii. 在 “Add expression” 文本框中输入 “c2+c5-50” [c 代表了列 (column), c2 为峰的起始位点坐标, c5 为峰顶点到起始位点的相对距离]。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 24,
+              "bbox": [
+                0.239,
+                0.685,
+                0.88,
+                0.719
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "iii. 在“as a new column to”的下拉选项中选择“Top500_peaks.txt”，然后将“Round result?”选择框中选择“YES”，点击“Execute”来提交任务。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 25,
+              "bbox": [
+                0.239,
+                0.723,
+                0.585,
+                0.739
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "iv. 将文件名改为 “Top500_summit.temp.”。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 26,
+              "bbox": [
+                0.239,
+                0.741,
+                0.88,
+                0.795
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "v. 再一次重复相同 “Compute” 操作，但本次操作中将 “Add expression” 文本框中的内容改为 “c2+c5+50”，在 “as a new column to” 的下拉选项中选择 “Top500_summit.temp”，然后点击 “Execute” 来提交工作。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 27,
+              "bbox": [
+                0.24,
+                0.798,
+                0.564,
+                0.814
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "vi. 将文件名改为 “Top500_summit.txt”。"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        },
+        {
+          "type": "text",
+          "index": 28,
+          "bbox": [
+            0.206,
+            0.816,
+            0.735,
+            0.833
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "14. 将步骤 13vi 中的文件 “Top500_summit.txt” 转换为 BED 格式。"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 29,
+          "bbox": [
+            0.239,
+            0.835,
+            0.881,
+            0.927
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 30,
+              "bbox": [
+                0.239,
+                0.835,
+                0.803,
+                0.851
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "i. 点击左侧栏中的 “Text Manipulation”，然后点击 “Cut”（图 8-34A）。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 31,
+              "bbox": [
+                0.24,
+                0.854,
+                0.641,
+                0.869
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "ii. 在 “Cut columns” 文本框中输入 “c1,c10,c11”。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 32,
+              "bbox": [
+                0.24,
+                0.872,
+                0.881,
+                0.907
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "iii. 在 “Form” 下拉选项中选的 “Top500_summit.txt”，然后点击 “Execute” 来提交任务。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 33,
+              "bbox": [
+                0.24,
+                0.91,
+                0.57,
+                0.927
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "iv. 将文件名改为 “Top500_summit.bed”。"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        }
+      ]
+    },
+    {
+      "page_idx": 506,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.123,
+            0.075,
+            0.151,
+            0.088
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "488"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.166,
+            0.073,
+            0.395,
+            0.088
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "分子克隆实验指南（原书第四版）"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 3,
+          "bbox": [
+            0.139,
+            0.104,
+            0.83,
+            0.277
+          ],
+          "content": [
+            {
+              "type": "image_caption",
+              "index": 2,
+              "bbox": [
+                0.12,
+                0.105,
+                0.133,
+                0.115
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "A"
+                }
+              ]
+            },
+            {
+              "type": "image_body",
+              "index": 3,
+              "bbox": [
+                0.139,
+                0.104,
+                0.83,
+                0.277
+              ],
+              "image_path": "images/page_506_image_3.jpg",
+              "content": "Galaxy\nTools\nGet Data\nSend Data\nENCODE Tools\nLift-Over\nText Manipulation\nConvert Formats\nFASTA manipulation\nFilter and Sort\n• Filter data on any column using\nsimple expressions\n• Sort data in ascending or\ndescending order\n• Select lines that match an\nexpression\n• Filter on ambiguities in\npolymorphism datasets\nSort\nSort Query:\n2: Sort on data 1\non column:\nc7\nwith flavor:\nNumerical sort\neverything in:\nDescending order\nColumn selections\nAdd new Column selection\nExecute\nHistory\nOptions\nUnnamed history\n2: Sort on data 1\n1: STAT1 peaks.xls"
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "image",
+          "index": 5,
+          "bbox": [
+            0.139,
+            0.287,
+            0.829,
+            0.563
+          ],
+          "content": [
+            {
+              "type": "image_caption",
+              "index": 4,
+              "bbox": [
+                0.12,
+                0.288,
+                0.133,
+                0.299
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "B"
+                }
+              ]
+            },
+            {
+              "type": "image_body",
+              "index": 5,
+              "bbox": [
+                0.139,
+                0.287,
+                0.829,
+                0.563
+              ],
+              "image_path": "images/page_506_image_5.jpg",
+              "content": "Galaxy\nTools\nOptions\nGet Data\nSend Data\nENCODE Tools\nLift-Over\nText Manipulation\nAdd column to an existing\ndataset\nCompute an expression on every\nrow\nConcatenate datasets tail-to-\nhead\nCondense consecutive characters\nConvert delimiters to TAB\nMerge Columns together\nCreate single interval as a new\ndataset\nCut columns from a table\nChange Case of selected columns\nPaste two files side by side\nRemove beginning of a file\nSelect random lines from a file\nSelect first lines from a dataset\nSelect last lines from a dataset\nTrim leading or trailing\ncharacters\nSelect first\nSelect first:\n10\nlines\nfrom:\n2: Sorted_peaks.txt\nExecute\nWhat it does\nThis tool outputs specified number of lines from the beginning of a dataset\nExample\nSelecting 2 lines from this:\nchr7 56632 56652 D17003_CTCF_R6 310 +\nchr7 56736 56756 D17003_CTCF_R7 354 +\nchr7 56761 56781 D17003_CTCF_R4 220 +\nchr7 56772 56792 D17003_CTCF_R7 372 +\nchr7 56775 56795 D17003_CTCF_R4 207 +\nwill produce:\nchr7 56632 56652 D17003_CTCF_R6 310 +\nchr7 56736 56756 D17003_CTCF_R7 354 +\nHistory\nOptions\nUnnamed history\n3: Select first on data 2\n2: Sorted peaks.txt\n1: STAT1_peaks.xls"
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "image",
+          "index": 7,
+          "bbox": [
+            0.139,
+            0.573,
+            0.829,
+            0.706
+          ],
+          "content": [
+            {
+              "type": "image_caption",
+              "index": 6,
+              "bbox": [
+                0.12,
+                0.574,
+                0.133,
+                0.585
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "C"
+                }
+              ]
+            },
+            {
+              "type": "image_body",
+              "index": 7,
+              "bbox": [
+                0.139,
+                0.573,
+                0.829,
+                0.706
+              ],
+              "image_path": "images/page_506_image_7.jpg",
+              "content": "Galaxy\nTools\nGet Data\nSend Data\nENCODE Tools\nLift-Over\nText Manipulation\nAdd column to an existing\ndataset\nCompute an expression on every\nrow\nConcatenate datasets tail-to-\nhead\nCompute\nAdd expression:\nc2+c5+50\nas a new column to:\n4: Top500_summit.temp\nDataset missing? See TIP below\nRound result?\nYES\nExecute\nHistory\nOptions\nUnnamed history\n5: Top500_summit.txt\n4: Top500_summit.temp\n3: Top500_peaks.txt\n2: Sorted_peaks.txt\n1: STAT1_peaks.xls"
+            },
+            {
+              "type": "image_caption",
+              "index": 8,
+              "bbox": [
+                0.117,
+                0.716,
+                0.83,
+                0.77
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图 8-33 Galaxy 中的命令设置。（A）以每个峰的分值降序方式对 MACS 输出进行排序。（B）选择 500 个最可靠的峰。（C）计算每个峰中心 ±50bp 的坐标。必须注意到该操作需要采用不同的表达和文件执行两次（彩图请扫封底二维码）。"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text_image"
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.117,
+            0.782,
+            0.83,
+            0.816
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "15. 为了使 Galaxy 了解 “Top500_summit.bed” 是一个 BED 文件，且它被定为至 hg19 基因组上，"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.188,
+            0.82,
+            0.825,
+            0.853
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "i. 点击铅笔图标，将 “Database/Build” 改为 “Human Feb. 2009 (GRCh37/hg19)”，然后点击如图 8-34B 中红色矩形中所示的 “Save”。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.188,
+            0.857,
+            0.821,
+            0.89
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "ii. 编辑属性，再次点击铅笔图标，本次在 “NewType” 下拉选项中选择 “bed”。点击图 8-34B 中蓝色矩形中所示的 “Save”。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 12,
+          "bbox": [
+            0.156,
+            0.894,
+            0.455,
+            0.91
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "16. 获取与峰顶点对应的基因组序列。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.188,
+            0.913,
+            0.829,
+            0.93
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "i. 点击 “Fetch Sequences”，然后点击 “Extract Genomic DNA”（图 8-34C 左侧栏"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 507,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.688,
+            0.072,
+            0.827,
+            0.086
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第 8 章 生物信息学"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.845,
+            0.073,
+            0.872,
+            0.087
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "489"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.265,
+            0.107,
+            0.339,
+            0.122
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "中所示）。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.239,
+            0.125,
+            0.877,
+            0.161
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "ii. 将 “Fetch sequences for intervals in” 设置为 “Top500_summit.bed”，然后在 “Interpret features when possible” 下拉选项中选择 “No”。"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "index": 4,
+          "bbox": [
+            0.242,
+            0.169,
+            0.805,
+            0.711
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 4,
+              "bbox": [
+                0.242,
+                0.169,
+                0.805,
+                0.711
+              ],
+              "image_path": "images/page_507_image_4.jpg",
+              "content": ""
+            },
+            {
+              "type": "image_caption",
+              "index": 5,
+              "bbox": [
+                0.168,
+                0.721,
+                0.88,
+                0.776
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图 8-34 Galaxy 配置工具。（A）提取峰顶点坐标，并把它们存储为 BED 格式。（B）设置文件 “Top500_summit.bed” 的属性和数据类型。请注意你需要编辑两次:一次是在红色矩形标记处，另一次是在蓝色矩形标记处。（C）提取峰顶点 ±50-bp 的 DNA 序列（彩图请扫封底二维码）。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "index": 10,
+          "bbox": [
+            0.238,
+            0.785,
+            0.879,
+            0.913
+          ],
+          "content": [
+            {
+              "type": "text",
+              "index": 6,
+              "bbox": [
+                0.238,
+                0.785,
+                0.879,
+                0.819
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "iii. 在 “Source for Genomic Data” 中选择 “Locally cached”，在 “Output data type” 中选择 “FASTA”。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 7,
+              "bbox": [
+                0.239,
+                0.823,
+                0.506,
+                0.838
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "iv. 点击 “Execute” 来提交任务。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 8,
+              "bbox": [
+                0.238,
+                0.841,
+                0.877,
+                0.875
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "v. 将文件名改为 “Top500_summit.fa”。通过点击软磁盘图标下载此文件，如图8-34C右侧红色圈中所示。"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "index": 9,
+              "bbox": [
+                0.239,
+                0.878,
+                0.877,
+                0.913
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "vi. 我们可以对这些序列进行基序分析（见方案 7）来发现 STAT1 上新的或已知的结合基序。"
+                }
+              ]
+            }
+          ],
+          "sub_type": "text"
+        }
+      ]
+    },
+    {
+      "page_idx": 508,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.127,
+            0.076,
+            0.154,
+            0.089
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "490"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.169,
+            0.074,
+            0.397,
+            0.089
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "分子克隆实验指南（原书第四版）"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 2,
+          "bbox": [
+            0.131,
+            0.113,
+            0.529,
+            0.132
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "如何在没有输入（input）的情况下运行 MACS?"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.13,
+            0.139,
+            0.82,
+            0.174
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "MACS 使用一个参数  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda"
+            },
+            {
+              "type": "text",
+              "content": "  将  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "N_{input}"
+            },
+            {
+              "type": "text",
+              "content": "  的分布模拟为泊松分布。 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda"
+            },
+            {
+              "type": "text",
+              "content": "  代表了分布均值和方差。在 MACS 中，在每个以可能峰所在位置为中心的滑动窗口中，根据以下公式对  "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda"
+            },
+            {
+              "type": "text",
+              "content": "  进行动态测量。"
+            }
+          ]
+        },
+        {
+          "type": "equation",
+          "index": 4,
+          "bbox": [
+            0.368,
+            0.179,
+            0.584,
+            0.195
+          ],
+          "image_path": "images/page_508_equation_4.jpg",
+          "content": "\\lambda = \\max (\\lambda_ {\\mathrm{BG}}, [ \\lambda_ {1 \\mathrm{k}}, ] \\lambda_ {5 \\mathrm{k}}, \\lambda_ {1 0 \\mathrm{k}})"
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.13,
+            0.195,
+            0.822,
+            0.269
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "式中，"
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda_{\\mathrm{BG}}"
+            },
+            {
+              "type": "text",
+              "content": " 是预期的标签数量（被定位至基因组的标签的数量 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\times"
+            },
+            {
+              "type": "text",
+              "content": " 窗口大小/基因组大小）；"
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda_{1\\mathrm{k}}"
+            },
+            {
+              "type": "text",
+              "content": "、"
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda_{5\\mathrm{k}}"
+            },
+            {
+              "type": "text",
+              "content": "、"
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda_{10\\mathrm{k}}"
+            },
+            {
+              "type": "text",
+              "content": " 分别指在输入中，以峰位点为中心的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "1\\mathrm{kb}"
+            },
+            {
+              "type": "text",
+              "content": "、"
+            },
+            {
+              "type": "equation_inline",
+              "content": "5\\mathrm{kb}"
+            },
+            {
+              "type": "text",
+              "content": " 或者 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "10\\mathrm{kb}"
+            },
+            {
+              "type": "text",
+              "content": " 大小的窗口中的标签数量。如果没有输入（input）数据，以上所有参数都是基于信号数据来估计的，且不使用 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "\\lambda_{1\\mathrm{k}}"
+            },
+            {
+              "type": "text",
+              "content": "。请注意，MACS 在没有输入（input）数据的情况下运行也许会漏掉宽于 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "5\\mathrm{kb}"
+            },
+            {
+              "type": "text",
+              "content": " 的峰。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.131,
+            0.271,
+            0.823,
+            0.306
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "为了使 MACS 在没有输入(input)数据的情况下运行, 只需忽略-c 参数(-c argument)即可。在我们之前的例子中, 方法部分步骤 4 将成为下列形式。"
+            }
+          ]
+        },
+        {
+          "type": "code",
+          "index": 7,
+          "bbox": [
+            0.173,
+            0.31,
+            0.778,
+            0.345
+          ],
+          "content": [
+            {
+              "type": "code_body",
+              "index": 7,
+              "bbox": [
+                0.173,
+                0.31,
+                0.778,
+                0.345
+              ],
+              "content": "macs -t STAT1.sorted.bam.bed --format=BED --bw=250 --tsize=36 --shiftsize=100\n    --name=STAT1 - pvalue=1e-5 --wig"
+            }
+          ],
+          "sub_type": "code",
+          "guess_lang": "shell"
+        },
+        {
+          "type": "image",
+          "index": 8,
+          "bbox": [
+            0.125,
+            0.357,
+            0.154,
+            0.38
+          ],
+          "content": [
+            {
+              "type": "image_body",
+              "index": 8,
+              "bbox": [
+                0.125,
+                0.357,
+                0.154,
+                0.38
+              ],
+              "image_path": "images/page_508_image_8.jpg",
+              "content": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 9,
+          "bbox": [
+            0.163,
+            0.359,
+            0.215,
+            0.379
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "讨论"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 10,
+          "bbox": [
+            0.121,
+            0.398,
+            0.832,
+            0.547
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "MACS 通过比较 ChIP-seq 和 input 数据来识别在 ChIP 中被富集的基因组区域。这些区域可能是转录因子结合位点，也可能具有表观遗传标记。比较多个生物样本的 ChIP-seq 数据是有益的。在多个样本中的重叠区域可以产生更为可靠的结果。MACS 使用了 6 个字节（byte）在内存中储存标签（tag），所以确保你的电脑有足够的内存空间来运行 MACS 非常重要。例如，如果你的数据集中有 5 亿个读段，如 MACS 文件（MACS documentation）中所指出的那样，MACS 将需要至少 3Gb 的 RAM，通常需要大约 4Gb 的空间来储存额外的信息。根据数据集大小和所使用的参数，MACS 可能会需要数个小时来完成工作（http://liulab.dfci.harvard.edu/MACS/00README.html）。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 11,
+          "bbox": [
+            0.121,
+            0.549,
+            0.832,
+            0.623
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Galaxy 是一个可执行多项任务的柔性平台。本方案中所展示的 Galaxy 功能只是给读者展现了数据逐步分析的风格。Galaxy 还提供了一个将这些所有步骤都串联成一个 “工作流（workflow）” 的功能，这个功能可以被简单地重复使用，并应用于其他数据集。更多信息请见 Galaxy wiki 的网页:https://bitbucket.org/galaxy/galaxy-central/wiki/Home。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 12,
+          "bbox": [
+            0.124,
+            0.637,
+            0.21,
+            0.655
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "网络资源"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 13,
+          "bbox": [
+            0.153,
+            0.677,
+            0.368,
+            0.691
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Cygwin http://www.cygwin.com/"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 14,
+          "bbox": [
+            0.154,
+            0.695,
+            0.37,
+            0.71
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Galaxy http://main.g2.bx.psu.edu/"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 15,
+          "bbox": [
+            0.154,
+            0.714,
+            0.576,
+            0.729
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Galaxy wiki https://bitbucket.org/galaxy/galaxy-central/wiki/Home"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 16,
+          "bbox": [
+            0.154,
+            0.733,
+            0.653,
+            0.747
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "MACS install instructions http://liulab.dfci.harvard.edu/MACS/INSTALL.html"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 17,
+          "bbox": [
+            0.154,
+            0.752,
+            0.456,
+            0.766
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "Python http://docs.python.org/install/index.html"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 18,
+          "bbox": [
+            0.154,
+            0.771,
+            0.576,
+            0.785
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "wiggle format http://genome.ucsc.edu/goldenPath/help/wiggle.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 509,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.689,
+            0.073,
+            0.83,
+            0.088
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第 8 章 生物信息学"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.847,
+            0.075,
+            0.874,
+            0.089
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "491"
+            }
+          ]
+        },
+        {
+          "type": "doc_title",
+          "index": 2,
+          "bbox": [
+            0.37,
+            0.129,
+            0.681,
+            0.155
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "- 基序（motif）寻找简介"
+            }
+          ],
+          "level": 1
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.169,
+            0.18,
+            0.88,
+            0.311
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "转录因子（transcription factor, TF）是一大类与基因组 DNA 结合并调控转录的蛋白质。人类基因组中存在数千种 TF。转录调控是对基因表达时空分布进行控制的一种常见机制，TF 的序列特异性则是这个复杂调控机制的核心。在原核生物中，单个 TF 与某个位点进行结合可能就足以进行转录调控。在真核生物中，实验数据证实了结合到相邻或重叠位点的多个 TF 之间存在相互作用，这些位点被统称为一个顺式调控模块（cis-regulatory module, CRM）。提出 CRM 这个概念的主要原因是基于这样的事实，即在任何基因组中，在不同细胞类型和受到多种刺激时被观察到的转录模式的数量，远远超过了转录因子的总数。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 4,
+          "bbox": [
+            0.17,
+            0.313,
+            0.881,
+            0.643
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "每个 TF（或者每组紧密相关的 TF）都具有特征性的结合特性，包括其 DNA 结合位点的宽度和各个位点上核苷酸的偏好，这些被统称为序列基序（sequence motif）。某些位点具有严格的核苷酸偏好（这可能是由 TF 和 DNA 上这些位点之间广泛的原子接触所导致的），而其他位点具有较弱的核苷酸偏好。可以通过将与某个 TF 结合的一组已知 DNA 序列比对来确定位置偏好（position preferences）。如果我们假设基序中的所有位点在结合过程中独立发挥作用（本方案始终承认此假设，并认为该假设是一个好的近似方法），比对结果可被总结为一个计数矩阵（count matrix，图 8-35B），运用信息论中熵（entropy）的概念可以对以上矩阵进行量化。熵（entropy）是对不确定性的测量。对于一个可能出现 4 种碱基的位点，各碱基出现的概率为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p_i"
+            },
+            {
+              "type": "text",
+              "content": " ("
+            },
+            {
+              "type": "equation_inline",
+              "content": "i = A, C, G, T"
+            },
+            {
+              "type": "text",
+              "content": ")，其熵被定义为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "-\\sum_{i=1}^{4} p_i \\times \\log_2(p_i)"
+            },
+            {
+              "type": "text",
+              "content": "。如果 4 种碱基出现的概率相同，那么该位点的最大不确定性或最大熵为 2 bit。如果该位点通常出现某种特定的碱基（例如，"
+            },
+            {
+              "type": "equation_inline",
+              "content": "p_A = 1"
+            },
+            {
+              "type": "text",
+              "content": " 且 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p_C = p_G = p_T = 0"
+            },
+            {
+              "type": "text",
+              "content": "），则该位点的不确定性或熵为 0。因此，一个基序上某个特定位点所包含的信息量为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "2 - (-\\sum p_i \\times \\log_2(p_i))"
+            },
+            {
+              "type": "text",
+              "content": " ("
+            },
+            {
+              "type": "equation_inline",
+              "content": "i = A, C, G, T"
+            },
+            {
+              "type": "text",
+              "content": ")。基序上各个位点的信息含量可以用一张修正后的条形图来表示，图中条形被 A、C、G、T 这些字母的堆叠所取代，字母堆叠的高度与相应位点的信息含量成比例，且 4 种字母的相对高度与该位点出现的碱基的相应频率成比例。这样的图通常被称为序列标识或基序标识（sequence or motif logo）（Schneider and Stephens 1990）（图 8-35A）。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.17,
+            0.645,
+            0.882,
+            0.837
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "运用相对熵（relative entropy）的概念，一个基序的计数矩阵可被用于预测一段长DNA序列中的结合位点。假设一个基序中的某个位点上出现概率为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p_i"
+            },
+            {
+              "type": "text",
+              "content": " （"
+            },
+            {
+              "type": "equation_inline",
+              "content": "i = A, C, G, T"
+            },
+            {
+              "type": "text",
+              "content": "）的4种碱基，而非基序DNA（背景）某个位点上出现概率为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "q_i"
+            },
+            {
+              "type": "text",
+              "content": " （"
+            },
+            {
+              "type": "equation_inline",
+              "content": "i = A, C, G, T"
+            },
+            {
+              "type": "text",
+              "content": "）的4种碱基，则基序位点的相对熵就被定义为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "-\\sum p_i \\times \\log_2(p_i / q_i)"
+            },
+            {
+              "type": "text",
+              "content": "。相对熵的值越高，该基序位点与背景的差异就越大。为了便于沿一段DNA序列进行基序快速扫描以找到结合位点，所有4种碱基和所有基序位点的 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "p_i \\times \\log_2(p_i / q_i)"
+            },
+            {
+              "type": "text",
+              "content": " 可以储存在矩阵中，这种矩阵通常被称为位点特异性记分矩阵（position-specific scoring matrix，PSSM）、位点权重矩阵（positionweight matrix，PWM）或者序列谱（profile）。任何与PSSM长度相等的序列都可以根据序列中各个位点的碱基所对应的分值进行求和，计算得到该序列对应的分值。图8-35A～C依次显示了TATA基序的序列标识、计数矩阵和PSSM。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 6,
+          "bbox": [
+            0.171,
+            0.839,
+            0.882,
+            0.894
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "现在有多个 TF 结合基序及其 PSSM 的集合，使用最为广泛的是 JASPAR（Sandelin and Wasserman 2004）和 TRANSFAC（Matys et al. 2003）。其中，JASPAR 为一个开源的资源（http://jaspar.genereg.net/）。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 510,
+      "blocks": [
+        {
+          "type": "page_number",
+          "index": 0,
+          "bbox": [
+            0.123,
+            0.075,
+            0.151,
+            0.088
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "492"
+            }
+          ]
+        },
+        {
+          "type": "header",
+          "index": 1,
+          "bbox": [
+            0.166,
+            0.073,
+            0.395,
+            0.087
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "分子克隆实验指南（原书第四版）"
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 2,
+          "bbox": [
+            0.33,
+            0.102,
+            0.619,
+            0.22
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 2,
+              "bbox": [
+                0.33,
+                0.102,
+                0.619,
+                0.22
+              ],
+              "image_path": "images/page_510_chart_2.jpg",
+              "content": "| Category | Bits |\n| --- | --- |\n| 1 | ~0.2 |\n| 2 | ~1.2 |\n| 3 | ~1.4 |\n| 4 | ~1.9 |\n| 5 | ~1.7 |\n| 6 | ~1.3 |\n| 7 | ~1.8 |\n| 8 | ~0.5 |\n| 9 | ~0.6 |\n| 10 | ~0.1 |\n| 11 | ~0.1 |\n| 12 | ~0.1 |\n| 13 | ~0.1 |\n| 14 | ~0.1 |\n| 15 | ~0.1 |"
+            }
+          ],
+          "sub_type": "bar"
+        },
+        {
+          "type": "table",
+          "index": 3,
+          "bbox": [
+            0.334,
+            0.233,
+            0.619,
+            0.31
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 3,
+              "bbox": [
+                0.334,
+                0.233,
+                0.619,
+                0.31
+              ],
+              "image_path": "images/page_510_table_3.jpg",
+              "content": "<table><tr><td>16</td><td>39</td><td>37</td><td>8</td></tr><tr><td>4</td><td>12</td><td>5</td><td>79</td></tr><tr><td>90</td><td>0</td><td>1</td><td>9</td></tr><tr><td>1</td><td>2</td><td>1</td><td>96</td></tr><tr><td>91</td><td>0</td><td>1</td><td>8</td></tr><tr><td>69</td><td>0</td><td>0</td><td>31</td></tr><tr><td>92</td><td>1</td><td>5</td><td>2</td></tr><tr><td>57</td><td>1</td><td>11</td><td>31</td></tr><tr><td>40</td><td>11</td><td>40</td><td>9</td></tr><tr><td>14</td><td>35</td><td>39</td><td>12</td></tr><tr><td>21</td><td>38</td><td>33</td><td>8</td></tr><tr><td>21</td><td>33</td><td>33</td><td>13</td></tr><tr><td>21</td><td>30</td><td>33</td><td>16</td></tr><tr><td>17</td><td>28</td><td>36</td><td>19</td></tr><tr><td>20</td><td>26</td><td>36</td><td>18</td></tr></table>"
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "index": 4,
+          "bbox": [
+            0.333,
+            0.343,
+            0.619,
+            0.491
+          ],
+          "content": [
+            {
+              "type": "table_body",
+              "index": 4,
+              "bbox": [
+                0.333,
+                0.343,
+                0.619,
+                0.491
+              ],
+              "image_path": "images/page_510_table_4.jpg",
+              "content": "<table><tr><td rowspan=\"16\">C</td><td rowspan=\"16\">T</td><td rowspan=\"16\">G</td><td rowspan=\"16\">C</td><td rowspan=\"16\">A</td></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr></table>"
+            },
+            {
+              "type": "table_caption",
+              "index": 5,
+              "bbox": [
+                0.118,
+                0.5,
+                0.832,
+                0.604
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图 8-35 三种常见的 TATA 基序的表现形式。（A）序列标识。x 轴对应基序的位点，y 轴为对应位点的相对熵的  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "\\log_{2}"
+                },
+                {
+                  "type": "text",
+                  "content": "  值。A/T/C/G 字母比例越高，说明基序中该位点出现这个核苷酸的频率越高。（B）计数矩阵。矩阵中每个元素上的数字可以通过基序该位置上的碱基总数进行标准化，产生该位置上各个碱基出现的频率或概率，得到的矩阵亦被称为位点特异性概率矩阵（position-specific probability matrix，PSPM）。（C）位点特异性记分矩阵（PSSM）。计算一个 PSSM 需要背景频率（即前文所提到的  "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "q_{i}"
+                },
+                {
+                  "type": "text",
+                  "content": " ），在这个例子中采用均匀分布背景（ "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "q_{i}=0.25; i=A, C, G, T"
+                },
+                {
+                  "type": "text",
+                  "content": " ）（彩图请扫封底二维码）。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 6,
+          "bbox": [
+            0.41,
+            0.613,
+            0.54,
+            0.631
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "基序搜索问题"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 7,
+          "bbox": [
+            0.118,
+            0.642,
+            0.831,
+            0.769
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "通过与一组背景序列进行比较，寻找在一组调控序列中富集的基序，通常称为基序搜索问题。调控序列通常有三个来源:①基因组同源序列（如多个物种中直系同源基因的启动子）；②一个物种中被共同调控的基因启动子（由大规模表达研究或文献所确认，在相同调控通路所确定的、具有相似表达模式的基因）；③通过大规模 TF-DNA 结合实验识别的区域，例如，与微列阵偶联的 ChIP 技术(ChIP-chip)，或者与大规模测序(massive sequencing)偶联的 ChIP 实验(ChIP-seq；见方案 6)，或者蛋白结合微列阵(protein-binding microarrays, PBM)(Mukherjee et al. 2004)(见第 10 章和第 20 章)的体外实验技术。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 8,
+          "bbox": [
+            0.118,
+            0.771,
+            0.831,
+            0.842
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "背景序列的选择需要谨慎对待，因为基因组序列是高度结构化的。理想状态下，背景序列应该与调控序列为相同类型，但不与待研究的 TF 进行结合。例如，如果调控序列为肌肉细胞中特异表达的基因启动子序列，一个用于背景序列选择的好策略就是选择在所有类型细胞中普遍表达且表达水平相同的基因启动子。"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.118,
+            0.844,
+            0.831,
+            0.934
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "有两种寻找基序的通用方法。第一种是对任何种类的基序进行从头搜索。第二种是检查一个包含已知基序的文库，并找出与背景序列相比在调控序列中统计学上过量表达的基序。从头搜索方法具有更大的通用性，利用该种方法可以找到全新的基序；但与基于文库的搜索方法相比，增加的搜索空间（整个基序范围 vs. 预先设定的列表）使得从头搜索方法敏感性较低。此外，从头搜索方法仅能预测出基序但不能预测对应的 TF，而预先编译好"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_idx": 511,
+      "blocks": [
+        {
+          "type": "header",
+          "index": 0,
+          "bbox": [
+            0.688,
+            0.07,
+            0.828,
+            0.084
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "第 8 章 生物信息学"
+            }
+          ]
+        },
+        {
+          "type": "page_number",
+          "index": 1,
+          "bbox": [
+            0.845,
+            0.073,
+            0.872,
+            0.085
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "493"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "index": 2,
+          "bbox": [
+            0.171,
+            0.104,
+            0.408,
+            0.12
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "的文库通常包括了 TF 的注释。"
+            }
+          ],
+          "continues_prev": true
+        },
+        {
+          "type": "text",
+          "index": 3,
+          "bbox": [
+            0.171,
+            0.122,
+            0.878,
+            0.212
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "在本方案中,我们将使用三种方法:①对所有 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k"
+            },
+            {
+              "type": "text",
+              "content": "-mer("
+            },
+            {
+              "type": "equation_inline",
+              "content": "k"
+            },
+            {
+              "type": "text",
+              "content": " 为基序宽度)进行穷举搜索(exhaustive search); ②MEME, 一种从头搜索的方法 (Bailey and Elkan 1994); ③Clover, 一种基于文库的方法 (Frith et al. 2004)。感兴趣的读者可以参考用于比较从头搜索 (Tompa et al. 2005) 和基于文库 (McLeay and Bailey 2010) 方法的相关资源, MDscan 是另一种从头搜索方法, 而 AME 则是另一种基于文库的方法, 这些方法在信息栏 “算法、门户网站和方法” 中介绍。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph_title",
+          "index": 4,
+          "bbox": [
+            0.421,
+            0.222,
+            0.625,
+            0.24
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "所有 k-mer 的穷举搜索"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 5,
+          "bbox": [
+            0.171,
+            0.251,
+            0.878,
+            0.434
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "当基序较短（如<8bp）且两组序列（调控序列和背景序列）中存在足够多的序列时，最直观的方法就是对这两组序列中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k"
+            },
+            {
+              "type": "text",
+              "content": "-mer 的出现频率进行比较。"
+            },
+            {
+              "type": "equation_inline",
+              "content": "k"
+            },
+            {
+              "type": "text",
+              "content": "-mer 的平均出现频率可以通过宽度为 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k"
+            },
+            {
+              "type": "text",
+              "content": " 的滑动窗口来计算，首先计算出一个序列中 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k"
+            },
+            {
+              "type": "text",
+              "content": "-mer 的百分比，然后在整组序列中计算该 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k"
+            },
+            {
+              "type": "text",
+              "content": "-mer 平均值。我们可以作一张散点图（scatter plot）来查看 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k"
+            },
+            {
+              "type": "text",
+              "content": "-mer 的分布情况，图上各点分别代表一个 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k"
+            },
+            {
+              "type": "text",
+              "content": "-mer，两条坐标轴分别代表 "
+            },
+            {
+              "type": "equation_inline",
+              "content": "k"
+            },
+            {
+              "type": "text",
+              "content": "-mer 在两组序列中的平均出现频率。图 8-36 通过对一组来自由 UCSC 表格浏览器（UCSC table browser，Karolchik et al. 2004）上获取的 TATA 结合蛋白（TATA-binding protein，TBP）的推定结合位点，阐述了这种方法的使用。关于获取 CREB 结合位点的例子见以下方法部分。为了获得背景序列，我们对 TATA 结合序列进行了随机洗牌(random shuffling)。TATA 组和背景组中共存在 113 个 6-mer。很明显，在 TATA 组中被富集的 6-mer 与 TBP 的结合基序相似（图 8-36）（Bucher 1990）。"
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "index": 6,
+          "bbox": [
+            0.214,
+            0.443,
+            0.831,
+            0.716
+          ],
+          "content": [
+            {
+              "type": "chart_body",
+              "index": 6,
+              "bbox": [
+                0.214,
+                0.443,
+                0.831,
+                0.716
+              ],
+              "image_path": "images/page_511_chart_6.jpg",
+              "content": "| TATA sequence logo | Backlog average frequency (range) | TATA 结合序列中平均出现频率 (range) |\n| --- | --- | --- |\n| TATAAA | ~0.01 | 0.6~0.6 |\n| ATAAAA | ~0.01 | 0.2~0.2 |\n| ATATAA | ~0.01 | 0.15~0.18 |\n| TAAAAA | ~0.01 | 0.1~0.12 |\n| ATAAAG | ~0.01 | 0.1~0.12 |\n| TAAAAG | ~0.01 | 0.05~0.08 |"
+            },
+            {
+              "type": "chart_caption",
+              "index": 7,
+              "bbox": [
+                0.171,
+                0.724,
+                0.878,
+                0.774
+              ],
+              "content": [
+                {
+                  "type": "text",
+                  "content": "图8-36 TATA结合序列中6-mer的平均出现频率（y轴）对随机抽取序列中平均出现频率（背景； "
+                },
+                {
+                  "type": "equation_inline",
+                  "content": "x"
+                },
+                {
+                  "type": "text",
+                  "content": " 轴）作图。（红色）如小图所示，很明显，位置最高的6个6-mer（与背景相比，在调控序列中富集的序列）为已知的TATA基序的子链（substring）（彩图请扫封底二维码）。"
+                }
+              ]
+            }
+          ],
+          "sub_type": "violin"
+        },
+        {
+          "type": "paragraph_title",
+          "index": 8,
+          "bbox": [
+            0.492,
+            0.786,
+            0.556,
+            0.802
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "MEME"
+            }
+          ],
+          "level": 2
+        },
+        {
+          "type": "text",
+          "index": 9,
+          "bbox": [
+            0.171,
+            0.813,
+            0.878,
+            0.922
+          ],
+          "content": [
+            {
+              "type": "text",
+              "content": "MEME 软件假设调控序列是由一个双组分有限混合模型（two-component finite mixture model）产生的。一种组分描述了基序的出现频率，而另一种组分描述了序列中的所有其他位点（正如在背景序列中）。MEME 使用了期望最大化（expectation maximization，EM）方法来估计模型中的两个参数:之前已提及的基序位点特异性概率矩阵（PSPM）和调控序列中核苷酸出现频率的百分比，即基序中每个位置每个核苷酸的出现频率。MEME 在两个步骤之间进行迭代。在给定调控序列和两个参数当前估计值情况下，MEME 的 E（expectation,"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "is_full_document": false,
+  "schema": "docvortex.middle",
+  "schema_version": "2.0"
+}

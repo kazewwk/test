@@ -1,0 +1,753 @@
+## 正、反向引物对靶 DNA 片段是特异的
+
+每组 PCR 都需设置阳性和阴性对照，详细见下表。阳性对照用来检测 PCR 的效率，而阴性对照用来检测包含在靶序列中的 DNA 污染。
+
+<table><tr><td></td><td>Bystander  $DNA^a$ </td><td>模板  $DNA^b$ </td><td>靶  $DNA^c$ </td><td>特异性引物 $^d$ </td></tr><tr><td colspan="5">阳性对照</td></tr><tr><td>1</td><td>+</td><td>-</td><td>+</td><td>+</td></tr><tr><td>2</td><td>-</td><td>-</td><td>+</td><td>+</td></tr><tr><td colspan="5">阴性对照</td></tr><tr><td>3</td><td>-</td><td>-</td><td>-</td><td>+</td></tr><tr><td>4</td><td>+</td><td>-</td><td>-</td><td>+</td></tr></table>
+
+a. Bystander DNA 不包含靶序列，其在其他方面与模板 DNA 相似，如复杂性、大小及浓度。
+
+b. 模板 DNA 是待测试的 DNA。
+
+c. 靶 DNA 包含靶序列。它可以是重组 DNA 克隆、一段纯化的 DNA 片段，或者是基因组 DNA 样品。它应该被添加到阳性对照中，其浓度要求和模板 DNA 中预期的一样。往往需要建立包含一系列不同的跨预期模板 DNA 的靶 DNA 的阳性对照。在准备 PCR 所需的其他试剂之前，需要准备好合适稀释度的靶序列。这种预防减少了 PCR 周围区域的设备和塑料制品的污染。
+
+d. 特异性引物是可高度特异结合靶序列的寡核苷酸，可引发与靶 DNA 互补的 DNA 的合成。
+
+2. 向每个薄壁 PCR 管中分配  $46 \mu L$  下层混合液。向每个管中加入一颗 AmpliWax PCR Gem 50 珠子。
+
+3. 盖上离心管的盖子并将其放入热循环仪，设置  $80^{\circ}$ C，5min。
+
+4. 取出离心管，将其在  $20^{\circ}$ C 放置 5～10min。
+
+5. 与此同时准备上层混合液。对每个反应，混合液如下:
+
+| Taq DNA 聚合酶 | 1~2U |
+| --- | --- |
+| 模板 DNA | 5μL |
+
+6. 将离心管放入热循环仪，运行程序如下表所示:
+
+| 循环数 | 变性 | 复性 | 延伸 |
+| --- | --- | --- | --- |
+| 1 | 94°C, 1 min |  |  |
+| 30个循环 | 94°C, 45 s | 55°C, 30 s | 72°C, 1 min |
+| 末循环 |  |  | 72°C, 7 min |
+
+这些时间适用于在 0.5mL 薄壁管中配制，在诸如 PerkinElmer 9600 或 9700、Mastercycler (Eppendorf) 和 PTC-100 (MJ Research) 等 PCR 仪上运行的 50μL 反应体系。时间和温度可以根据其他类型的设备和反应体积进行调整。
+
+大多数 PCR 仪的结束程序是扩增样品在  $4^{\circ}$ C 温育直到样品从 PCR 仪上取走。样品可以在该温度保存过夜，但是随后应该在  $-20^{\circ}$ C 保存.
+
+7. 从反应体系以及对照组体系中取出 $5 \sim 10 \mu \mathrm{L}$ 样品用聚丙烯酰胺或琼脂糖凝胶电泳进行分析。使用合适的 DNA markers。用 EB 或 SYBR Gold 染色使得 DNA 可见。
+
+一个成功的扩增反应会产出预期大小的、清晰可见的 DNA 片段。条带可以通过 DNA 序列、Southern 杂交或限制性内切核酸酶图谱来鉴别。
+
+## 参考文献
+
+- Birch DE, Kolmodin L, Laird WJ, McKinney N, Wong J, Young KKY, Zangenberg GA, Zoccoli MA. 1996. Simplified hot start PCR. Nature 381:445–446.
+- Chou Q, Russell M, Birch DE, Raymond J, Bloch W. 1992. Prevention of pre-PCR mis-priming and primer dimerization improves low-copy-number amplifications. Nucleic Acids Res 20: 1717–1723.
+- D'Aquila RT, Bechtel LJ, Videler JA, Eron JJ, Gorczyca P, Kaplan JC. 1991. Maximizing sensitivity and specificity of PCR by pre-amplification heating. Nucleic Acids Res 19: 3749. doi: 10.1093/nar/19.13.3749.
+- Erlich HA, Gelfand D, Sninsky JJ. 1991. Recent advances in the polymerase chain reaction. Science 252: 1643–1651.
+- Lebedev AV, Paul N, Yee J, Timoshchuk VA, Shum J, Miyagi K, Kellum J, Hogrefe RI, Zon G. 2008. Hot start PCR with heat-activatable primers:
+- A novel approach for improved PCR performance. Nucleic Acids Res 36: e131. doi: 10.1093/nar/gkn575.
+- Moretti T, Koons B, Budowle B. 1998. Enhancement of PCR amplification yield and specificity using AmpliTaq Gold DNA polymerase. BioTechniques 25: 716–722.
+- Ruano G, Pagliaro EM, Schwartz TR, Lamy K, Messina D, Gaensslen RE, Lee HC. 1992. Heat-soaked PCR: An efficient method for DNA amplification with applications to forensic analysis. BioTechniques 13: 266–274.
+- Tanzer LR, Hu Y, Cripe L, Moore RE. 1999. A hot-start reverse transcription-polymerase chain reaction protocol that initiates multiple analyses simultaneously. Anal Biochem 273: 307–310.
+
+## 方案 3 降落 PCR
+
+常规 PCR 的特异性随着模板 DNA 复杂性增加而降低。模板复杂性越高，引物与预期靶序列以外的序列杂乱地结合的概率就越大。通过优化 PCR 各成分的浓度可以减少错配的发生，尤其是其中的  $Mg^{2+}$  、引物、dNTP 及模板的浓度。使用严格的复性条件可以使脱靶扩增最小化，该条件可使寡核苷酸引物与靶序列高效并特异地复性。
+
+最佳复性温度的近似值可以通过 Wallace 方程计算引物之间形成完美双链的  $T_{m}$  值得到 (Suggs et al. 1981; Thein and Wallace, 1986):
+
+$$
+T _ {\mathrm{m}} (^ {\circ} \mathrm{C}) = 2 ^ {\circ} \mathrm{C} (A + T) + 4 ^ {\circ} \mathrm{C} (G + C)
+$$
+
+式中， $A+T$ 是寡核苷酸中 A 和 T 残基的总和； $G+C$ 是寡核苷酸中 G 和 C 残基的总和。 $T_{m}$ 被定义为“半数靶序列和它们同源的寡核苷酸形成完美杂交的温度”。Wallace 方程适用于高离子强度溶剂中（如 1 mol/L NaCl）长度为 15～20nt 的正确的双链。
+
+当核苷酸长度为 14～70nt，离子浓度为 0.4mol/L 或者更低时，更倾向于使用 Baldino 等（1989）方程来预测合适的熔解温度。
+
+$$
+T _ {\mathrm{m}} (^ {\circ} \mathrm{C}) = 8 1. 5 ^ {\circ} \mathrm{C} + 1 6. 6 (\log_ {1 0} [ \mathrm{K} ^ {+} ]) + 0. 4 1 (\% [ G + C ]) - (6 7 5 / n)
+$$
+
+式中，n 表示寡核苷酸中碱基对数。
+
+然而，基于这些或者其他方程（Sharrocks 1994）计算的熔解温度值只是近似值，它既不能准确也不能精确地作为实际 PCR 操作中的复性温度。
+
+这类问题的解决可使用“降落 PCR”，它最初的开发是为了测定寡核苷酸引物的最佳复性温度（Don et al. 1991）。但其价值逐渐转变为降低脱靶启动从而提高 PCR 反应的特异性（Korbie and Mattick 2008）。在降落 PCR 中，复性温度的起始设置比引物计算的  $T_{m}$  值高 5～10℃。在高度严格的条件下的复性有利于形成完善的引物-模板杂交体。在此后的循环中，复性温度以小数量逐步递减，这样至 PCR 循环结束时，复性温度会比引物计算所得的  $T_{m}$  低 2～5℃。到那时候，靶序列已经历几个循环的几何级扩增，并且成为占据主导地位的 PCR 扩增产物。在 PCR 早期为了使错配最小化，降落 PCR 最好使用热启动方案联合应用（见方案 2）。
+
+当引物序列与靶序列不十分匹配时，降落 PCR 的使用就十分必需。例如，如果引物序列是由氨基酸序列推导出的，模板 DNA 或许包含一些密切相关的目标时，或者靶 DNA 是来自不同物种设计引物的。
+
+当今大多数的热循环仪可以进行编程,在连续循环的PCR中的特定阶段可以自动降温。例如,如果计算所得的  $T_{m}$  值是  $60^{\circ}C$ , 那么编程时的循环复性温度每个周期或间隔一个周期可设置为  $1^{\circ}C$ , 从  $66^{\circ}C$  到  $55^{\circ}C$  之后, 再额外在  $55^{\circ}C$  设  $15 \sim 20$  个循环。
+
+![](images/page_401_image_14.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+含有  $MgCl_{2}$  的扩增用缓冲液（10×），Taq DNA 聚合酶
+
+Bystander DNA（见步骤1中的对照表）
+
+含有所有 4 种 dNTP 的 dNTP 溶液，每种浓度在 20mmol/L（pH 8.0）
+
+溴化乙锭（EB）或者 SYBR Gold
+
+正向引物（20μmol/L）和反向引物（20μmol/L）
+
+见本章导言中有关引物的讨论
+
+利用下面的公式计算寡核苷酸的分子质量:
+
+$$
+M _ {\mathrm{r}} = (C \times 2 8 9) + (A \times 3 1 3) + (T \times 3 0 4) + (G \times 3 2 9)
+$$
+
+式中，C 是寡核苷酸中 C 残基的数目；A 是 A 残基数目；T 是 T 残基数目；G 是 G 残基数目；20mer 的分子质量约为 6000Da；100pmol 的寡核苷酸大约相当于  $0.6\mu g$ 。
+
+聚丙烯酰胺或琼脂糖凝胶（见步骤4）
+
+Taq DNA 聚合酶（来自 Agilent、Life Technologies、NEB 及其他商家）
+
+模板 DNA
+
+用含有低浓度的 EDTA（<0.1mmol/L）的 10mmol/L Tris-Cl（pH7.6）溶解模板 DNA 至以下浓度:
+
+| 哺乳类动物基因组 DNA | 100μg/mL |
+| --- | --- |
+| 酵母基因组 DNA | 1μg/mL |
+| 细菌基因组 DNA | 0.1μg/mL |
+| 质粒 DNA | 1~5ng/mL |
+
+## 设备
+
+AmpliWax PCR Gem 50 珠子（来自 Applied Biosystems 公司，Life Technologies 公司或其他厂商）
+
+自动微量移液器用的带滤芯的吸头
+
+微量离心管（0.5 mL，壁薄以利于扩增反应）
+
+聚丙烯酰胺或琼脂糖凝胶电泳设备
+
+正排量移液器
+
+可编程所需扩增程序的热循环仪
+
+![](images/page_402_image_21.jpg)
+
+## 方法
+
+1. 设置热循环仪程序。下面的时间表适用于所计算的 $T_{\mathrm{m}}$ 值为 $60^{\circ}\mathrm{C}$ 的情况。
+
+| 循环号 | 变性 | 复性 | 延伸 |
+| --- | --- | --- | --- |
+| 1 | 94°C, 1min | 66°C, 30s | 72°C, 1min |
+| 2 | 94°C, 1min | 65°C, 30s | 72°C, 1min |
+| 3 | 94°C, 1min | 64°C, 30s | 72°C, 1min |
+| 4 | 94°C, 1min | 63°C, 30s | 72°C, 1min |
+| 5 | 94°C, 1min | 62°C, 30s | 72°C, 1min |
+| 6 | 94°C, 1min | 61°C, 30s | 72°C, 1min |
+| 7 | 94°C, 1min | 60°C, 30s | 72°C, 1min |
+| 8 | 94°C, 1min | 59°C, 30s | 72°C, 1min |
+| 9 | 94°C, 1min | 58°C, 30s | 72°C, 1min |
+| 10 | 94°C, 1min | 57°C, 30s | 72°C, 1min |
+| 11 | 94°C, 1min | 56°C, 30s | 72°C, 1min |
+| 12~27 | 94°C, 1min | 55°C, 30s | 72°C, 1min |
+| 最后一个循环 |  |  | 72°C, 7min |
+
+2. 建立一个方案 2 中描述的热启动 PCR。在方案 2 中的步骤 6，执行上面的时间表进行扩增反应。注意总循环数不要超过 30～35，否则会出现非特异性产物和/或引物二聚体。
+
+## 参考文献
+
+- Baldino F Jr, Chesselet MF, Lewis ME. 1989. High-resolution in situ hybridization histochemistry. Methods Enzymol 168: 761–777.
+- Don RH, Cox PT, Wainwright BJ, Baker K, Mattick JS. 1991. 'Touchdown' PCR to circumvent spurious priming during gene amplification. Nucleic Acids Res 19: 4008. doi: 10.1093/nar/19.14.4008.
+- Korbie DJ, Mattick JS. 2008. Touchdown PCR for increased specificity and sensitivity in PCR amplification. Nat Protoc 3: 1452–1456.
+- Sharrocks AD. 1994. The design of primers for PCR. In PCR technology: Current innovations (ed Griffin AM, Griffin HG), pp. 5–11. CRC, Boca Raton, FL.
+- Suggs SV, Wallace RB, Hirose T, Kawashima EH, Itakura K. 1981. Use of synthetic oligonucleotides as hybridization probes: Isolation of cloned cDNA sequences for human β2-microglobulin. Proc Natl Acad Sci 78:6613–6617.
+- Thein SL, Wallace RB. 1986. The use of synthetic oligonucleotides as specific hybridization probes in the diagnosis of genetic disorders. In Human genetic diseases: A practical approach (ed Davies KE), pp. 33–50. IRL, Oxford.
+
+## 方案 4 高 GC 含量模板的 PCR 扩增
+
+PCR 扩增的效率受到核苷酸组成及模板 DNA 序列的影响。问题模板包括长均聚区、反向重复序列，或者是富含 GC 区，如那些在哺乳类动物基因调控区的 GC 含量高于 60% 的序列。模板富含 GC 残基集中区域容易折叠形成复杂的二级结构，从而使得在 PCR 循环复性阶段不熔解。此外，扩增高 GC 区的引物具有很高的形成自身或者交叉二聚体的能力，并具有折叠成茎环结构的强烈倾向，这会使得 DNA 聚合酶沿着模板分子的进展受到阻碍。可以预见的是，全长模板 DNA 的扩增效率低，并且由于 DNA 聚合酶被阻碍，会导致反应产物包含较多的短片段。
+
+改变引物设计并且联合使用热启动和降落 PCR 有时会改善扩增效率。更多的时候，多管齐下的方法是必要的，比如在扩增反应中使用增强剂、调整循环程序，并且在需要时重新设计引物。
+
+- 引物设计。当设计富含 GC 序列引物时，用一个寡核苷酸设计程序来检查以下两种的 Gibbs 自由能值（$\Delta G$）:①引物与靶位点结合形成的双链；②每个寡核苷酸预测的二级结构。选择具有最高匹配得分和最低熵值（约-4kcal/mol 的最小化 $\Delta G$）的成对引物（Hube et al. 2005）。如果这些寡核苷酸在热启动 PCR 中效率低下，可在扩增反应中使用下述增强剂。如果都失败了，那么可以考虑通过向寡核苷酸的富含 GC 中心区域引入无义突变来降低寡核苷酸的熵值（Sahdev et al. 2007）。
+- 增强剂。已报道的很多添加剂可以增强高 GC 含量的模板或引物的 PCR 反应(表 7-3)。其效应是不可预测的，并且不管是单独还是综合使用它们，都不能保证改善具有大量二级或三级结构的 DNA 扩增的有效性。正如此方案中描述的一样，如果一些增强剂同时使用，那么成功的机会就会增加(Musso et al. 2006; Ralser et al. 2006; Zhang et al. 2009)。此外，从商家可以购买含有添加剂的试剂盒。大多数试剂盒中除了其他未说明的添加剂，都默认含有甜菜碱添加剂。
+- 改变 PCR 循环条件。如果联合了降落 PCR、热启动 PCR 及添加剂混合物都不能改善高 GC 模板的扩增，那么改变循环条件可能会解决这个问题。例如，Frey 等（2008）描述了一种联合使用缓慢的升温速率（2.5°C/s）和缓慢的冷却速率（1.5°C/s）的方法来处理复性温度。“缓慢降落” PCR 技术的一个基本组分是包含在反应混合物中的 7-脱氮-2'-脱氧鸟苷。
+
+在以下的方案中，使用了4种添加剂混合物——甜菜碱、二硫苏糖醇（DTT）、二甲基亚砜（DMSO）及牛血清白蛋白（BSA），该方案改编自Ralser等（2006）出版的关于使用Taq DNA聚合酶方法。当使用添加剂混合液时，要优化反应中模板DNA的量和 $Mg^{2+}$ 浓度。有报道指出，高浓度的模板DNA会抑制高GC序列的扩增（Ralser et al. 2006）。
+
+表 7-3 常被用来改善高 GC 模板的扩增效率的增强剂
+
+| 增强剂 | 作用模式 | 参考文献 |
+| --- | --- | --- |
+| 甜菜碱(N,N,N-trimethylglycine) (0.5~1mol/L)7-脱氮-2'-脱氧鸟苷 | 通过降低高 GC 区 $T_{\text{m}}$ 来减少二级结构的形成消除 Hoogsteen 键的形成,但不损害 Watson-Crick 碱基配对 | Rees et al. 1993; Henke et al. 1997McConlogue et al. 1988 |
+| DMSO 以及低分子质量砜类(1%~10%) | 结合到模板 DNA 大小沟中使双链不稳定 | Winship 1989;Pomp and Medrano 1991;Varadaraj and Skinner 1994;Chakrabarti and Schutt 2001 |
+| 甲酰胺(1%~5%)聚乙二醇(5%~15%)乙二醇和 1,2-丙二醇 | 干扰 DNA 两条链之间的氢键形成一个浓缩剂,可能破坏具高 $T_{\text{m}}$ DNA 的稳定性通过一种和甜菜碱不同的未知机制来降低 DNA 熔解温度 | Sarkar et al. 1990Zhang et al. 2009 |
+| 甘油(5%~20%),牛血清白蛋白(BSA)(0.1 mg/mL),或明胶(0.1%~1.0%) | 一般的酶稳定剂 | Giambernardi et al. 1998 |
+| 非离子化去污剂Triton X-100 (0.1%~0.5%),Nonidet P-40 润湿剂 (0.1%~0.5%) | 在准备模板时置换痕量的离子型去污剂 | Gelfand and White 1990 |
+
+![](images/page_404_image_4.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案专用试剂的配方以&lt;R&gt;表示，在本方案末尾提供。附录1给出了常用储备溶液、缓冲液和试剂的配方，标记为&lt;A&gt;。使用时稀释储备溶液到合适浓度。
+
+▲ 为了降低外源 DNA 污染的概率，使用的一套试剂和溶液应为 PCR 专用，玻璃器皿 150℃ 干烤 6h，所有塑料物品高压灭菌。更多信息请参见本章导言中的 “PCR 中的污染” 部分。
+
+## 试剂
+
+添加剂溶液（5×）&lt;R&gt;
+
+氯仿
+
+含有所有 4 种 dNTP 的 dNTP 溶液，每种浓度为 20mmol/L（pH 8.0）
+
+溴化乙锭（EB）或者 SYBR Gold
+
+正向引物（20μmol/L）和反向引物（20μmol/L）
+
+见本章导言中有关引物的讨论
+
+利用下面的公式计算寡核苷酸的分子质量:
+
+$$
+M _ {\mathrm{r}} = (C \times 2 8 9) + (A \times 3 1 3) + (T \times 3 0 4) + (G \times 3 2 9),
+$$
+
+式中，C 是寡核苷酸中 C 残基的数目；A 是 A 残基数目；T 是 T 残基数目；G 是 G 残基数目。20mer 的分子质量约为 6000Da；100pmol 的寡核苷酸大约相当于  $0.6\mu g$ 。
+
+富含 GC 的扩增缓冲液（10×）&lt;R&gt;
+
+该缓冲液中  $MgCl_{2}$  浓度为 30mmol/L；然而，最优  $Mg^{2+}$  浓度应在一系列不同  $Mg^{2+}$  浓度下（0.5～5.0mmol/L）进行试点反应所得。
+
+Taq DNA 聚合酶（来自 Agilent 公司、Life Technologies 公司、NEB 公司及其他厂商）模板 DNA（100～500ng/mL，溶解于 pH 7.6、浓度 10mmol/L 的 Tris-Cl 中）
+
+## 设备
+
+自动微量移液器用的带滤芯的吸头
+
+微量离心管（0.5mL，壁薄以利于扩增反应）或微孔板
+
+聚丙烯酰胺或琼脂糖凝胶电泳设备
+
+正排量移液管
+
+可编程所需扩增程序的热循环仪
+
+热循环仪如果没有配备热盖，那么在 PCR 循环中可以用矿物油或石蜡来防止反应混合液中液体的蒸发。石蜡不仅可以防止蒸发，在混合液加热前，它还可以隔离混合液中的成分（如引物和模板）。这种分离阻止了引物在最初阶段的非特异结合（见方案 2）。
+
+![](images/page_405_image_4.jpg)
+
+## 方法
+
+1. 在一个无菌的 0.5mL 微量离心管或者充分灭菌的微孔板中混合以下成分:
+
+| 高GC扩增缓冲液(10×) | 5μL |
+| --- | --- |
+| 4种dNTP溶液(pH 8.0),每种浓度为20mmol/L | 1μL |
+| 正向引物(20μmol/L) | 2.5μL |
+| 反向引物(20μmol/L) | 2.5μL |
+| 耐热DNA聚合酶 | 1~2U |
+| 模板DNA | 5~10μL |
+| 添加剂溶液(5×) | 5μL |
+| $H_2O$ | 加至总体积50μL |
+
+此外，像方案 2 中提及的一样，设置一系列包含合适阴阳性对照 DNA 的反应。
+
+2. 如果热循环仪没有配备热盖，那么可以在反应混合液上滴加一滴（约 $50\mu \mathrm{L}$ ）轻质矿物油，以防止样品在反复加热冷却的循环中蒸发。而使用热启动方案时可以滴加一滴石蜡（见方案2）。将离心管或微孔板放入热循环仪中。
+
+3. 通过变性、复性、延伸来扩增核酸，时间和温度如下表所列:
+
+| 循环数 | 变性 | 复性 | 延伸 |
+| --- | --- | --- | --- |
+| 30个循环 | 94°C, 30 s | 55°C, 30 s | 72°C, 1 min |
+| 末循环 | 94°C, 1min | 55°C, 30 s | 72°C, 1 min |
+
+这些时间适用于在 0.5mL 薄壁管中配制 50μL 反应体系，并在诸如 PerkinElmer 9600 或 9700、Mastercycler (Eppendorf 公司) 和 PTC-100 (MJ Research 公司) 等 PCR 仪上孵育的。时间和温度可以根据设备类型以及反应体积做适当调整。
+
+通常，每 1kb 靶 DNA 延伸所需时间为 1min。
+
+许多热循环仪的结束程序是扩增样品保持在 $4^{\circ} \mathrm{C}$ 直至被取出。样品可以在此温度下放过夜，但随后需放在 $-20^{\circ} \mathrm{C}$ 保存。
+
+4. 从样品反应体系以及对照组体系中取出 $5 \sim 10 \mu \mathrm{L}$ 样品用聚丙烯酰胺或琼脂糖凝胶电泳进行分析。使用合适的 DNA markers。用 EB 或 SYBR Gold 染色使得 DNA 可见。
+
+5. 如果反应用了矿物油覆盖（步骤 2），可用  $150 \mu L$  氯仿萃取以去除样品中的矿物油。
+
+含有扩增 DNA 的水相，在近弯液面处形成胶束。用自动微量吸管可将其转移到新的离心管中。
+
+对于许多用途，如纯化扩增产物或者克隆扩增产物，在开始之前都是需要将样品中的矿物油成分去除的。
+
+▲因微孔板的材料是不耐有机溶剂的，因此不要试图在微孔板中进行氯仿萃取。
+
+## 多重PCR
+
+“多重 PCR”是指同一 PCR 中用 N 对引物同时扩增 N 个靶序列，N>1。作为从人类基因组 DNA 中筛选 Duchenne 型肌营养不良症（Chamberlin et al. 1988）不同突变位点的一种有效方法，多重 PCR 现已被用于各种用途。例如，在病理学样品中筛选和识别多种细菌和病毒病原体（Elnifro et al. 2000）；从人基因组 DNA 中筛选临床上显著的突变、基因组重排以及多态性（Beggs et al. 1990；Schuber et al. 1993；Peter et al. 2001）；从更商业化的层面上来说，可以用来测量不同品牌 PCR 仪器控制温度的精确性（Schoder et al. 2003；Yang et al. 2005）。
+
+一旦优化了一组特定的引物-模板 DNA，那么多重 PCR 不仅可以节省时间和金钱，还能从一个有价值的模板 DNA 中有效地提取大量的信息。然而，优化是一个漫长且充满挫折的过程，尤其是当所需靶序列很多或者模板 DNA 很复杂时。
+
+必须非常小心确保反应体系中所有引物具有如下特征:
+
+- 具有大致相同的熔解温度
+- 对目标基因座特异
+- 不能与自身或其他序列有显著的同源性
+- 扩增产物的大小大致相同，但可以通过凝胶电泳区分彼此
+
+N 的值越大，扩增产物的产率越低。一般来说，在扩增产物的产率降低到不能在琼脂糖凝胶上看见的点之前，可以同时使用的引物多达 8 对。而当 N>8 时，杂乱的扩增产物（如引物二聚体）的数量就会很明显。这些产物的形成主要是由于扩增反应早期循环中出现了高浓度的引物所致。而通过仔细设计引物（见表 7-1）可以阻止这类问题，并且在某种程度上可以通过调整 PCR 中引物:模板比得到缓和。
+
+一些靶序列会优先扩增是常见的问题。多重 PCR 本质上是不同靶序列之间的竞争扩增。在这样的竞争环境中，PCR 早期阶段的随机效应会导致扩增效率的差异，特别是当模板 DNA 浓度很低的时候。优先扩增同样可以由靶序列本身具有的差异造成。例如，靶内富含 GC 区的位置，以及靶序列和模板 DNA 的其他区域形成二级结构或瞬态双链的倾向。这些问题可以通过仔细选择靶序列以及使用降落 PCR（见方案 3）得到缓和。
+
+如此多的变量影响多重 PCR 的效率和特异性, 导致其不能通过现成方案很好地运行。成功的关键是反应中每个步骤、每种成分的系统优化（图 1）。这是一个相当大量的工作, 除非多重 PCR 方案多次被使用, 将不会符合成本效益的。
+
+1997年, Henegariu等发表了一个有用的逐步流程图说明如何避免、判断及解决多重PCR中常出现的问题。图1是一个修改和升级版的流程图。Markoulatis等（2002）的文章也是建立，以及优化多重PCR的有用的参考资料（同样，见第9章中有关多重PCR的模块信息）。
+
+多重 PCR: 一步一步优化
+
+![](images/page_406_image_11.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["步骤1.用引物设计软件设计引物对。遵循章节导言中表7-1的规则。确保所有引物两两之间的Tm值差别在2℃之内。确保扩增产物的大小能在凝胶中显示出充分的差别以鉴定出来。"] --> B["步骤2.用BLAST检查引物的特异性。用引物设计软件检查不同引物对之间的同源性，形成不利的二级结构和引物二聚体的可能性。"]
+  B --> C["步骤3.用单引物对、模板DNA、Taq DNA聚合酶，以及加了增强剂混合液的标准扩增缓冲液建立一系列的多重PCR（见表7-1）。通过凝胶电泳分析分析单独的PCR产物及所有产物的混合物。"]
+  C --> D["步骤4.用与步骤3相同的条件，建立一个包含有相同摩尔浓度（在0.1~0.4μmol/L之间）的所有引物对的多重PCR。通过凝胶电泳分析产物，用步骤3中的产物作为对照组。"]
+```
+</details>
+
+## 存在的问题和可能的解决方案
+
+## 所有产物的弱扩增:
+
+1. 因为  $Mg^{2+}$  的核酸结合，多重 PCR 中高浓度的寡核苷酸可能使得游离的  $Mg^{2+}$  浓度降低到不理想的水平。可建立一系列包含不同浓度  $Mg^{2+}$  （0.1\~0.5mmol/L，每次增加 0.05mmol/L）的多重降落 PCR。
+2. 建立一系列包含最适浓度  $Mg^{2+}$  的多重降落 PCR，并增加 Taq DNA 聚合酶量。
+3. 建立一系列渐进增加延伸时间的多重降落 PCR。
+
+## 较短产物的弱扩增:
+
+1. 建立一系列复性和延伸温度按  $1^{\circ}$ C 逐步递减的多重降落 PCR。
+2. 增加微弱扩增产物的引物浓度。
+
+## 较长片段的弱扩增:
+
+1. 增加降落 PCR 的延伸时间。
+2. 以递增 $1^{\circ}\mathrm{C}$ 的方式，增加复性和延伸温度。
+3. 增加弱扩增产物的引物浓度。
+
+## 非特异性扩增强度难以接受:
+
+1. 以每次增加  $1^{\circ}$ C 的方式，增加降落 PCR 的复性温度
+2. 降低模板 DNA 和 DNA 聚合酶的使用量
+3. 如果出现引物二聚体的问题, 那么可以将复性温度设高 $1^{\circ} \mathrm{C}$ 并将 $\mathrm{Mg}^{2+}$ 浓度降低一些。建立一系列不含特异性引物的多重 PCR 去鉴别哪些引物可能会形成二聚体结构。重新设计造成这个问题引物。
+
+## 图 1 多重 RCR 优化。
+
+![](images/page_407_image_23.jpg)
+
+## 配方
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+添加剂溶液（5×）
+
+| 试剂 | 用量(配制10mL的量) | 终浓度 |
+| --- | --- | --- |
+| 甜菜碱(5mol/L) | 5.4mL | 2.7mol/L |
+| DTT(1mol/L) | 67μL | 6.7mmol/L |
+| DMSO | 670μL | 6.7%(V/V) |
+| BSA(2mg/mL) | 275μL | 55μg/mL |
+
+添加剂溶液应在  $4^{\circ}$ C 保存并且不超过 1 周。
+
+高 GC 扩增缓冲液（10×）
+
+| 试剂 | 用量(共10mL) | 终浓度 |
+| --- | --- | --- |
+| Tris-HCl (1mol/L, pH 8.5) | 6.6mL | 0.66mol/L |
+| 硫酸铵(1mol/L) | 1.66mL | 166mmol/L |
+| MgCl2 (1mol/L) | 300μL | 30mmol/L |
+| 吐温-20 | 10μL | 0.1% (V/V) |
+
+保存在  $4^{\circ}$ C。
+
+## 参考文献
+
+- Beggs AH, Koenig M, Boyce FM, Kunkel LM. 1990. Detection of 98% of DMD/BMD gene deletions by polymerase chain reactions. Hum Genet 86: 45–48.
+- Chamberlin JS, Gibbs RA, Ranier JE, Nguyen PN, Caskey CT. 1988. Deletion screening of the Duchenne muscular dystrophy locus via multiplex DNA amplification. Nucleic Acids Res 16: 11141–11156.
+- Chakrabarti R, Schutt CE. 2001. The enhancement of PCR amplification by low molecular weight amides. Nucleic Acids Res 29: 2377–2381.
+- Elnifro EM, Ashshi AM, Cooper RJ, Klapper PE. 2000. Multiplex PCR: Optimization and application in diagnostic virology. Clin Microbiol Rev 13: 559–570.
+- Frey UH, Bachmann HS, Pewters J, Siffert W. 2008. PCR-amplification of GC-rich regions: 'Slowdown PCR.' Nat Protoc 3: 1312–1317.
+- Giambernardi TA, Rodeck U, Klebe RJ. 1998. Bovine serum albumin reverses inhibition of RT-PCR by melanin. BioTechniques 25: 564–566.
+- Gelfand DH, White TJ. 1990. Thermostable DNA polymerases. In PCR protocols: A guide to methods and applications (ed Innes MA, et al.), pp. 121–141. Academic Press, San Diego.
+- Henegariu O, Heerems NA, Cloughy SR, Vance GH, Vogt PH. 1997. Multiplex PCR: Critical parameters and step-by-step protocol. Bio-Techniques 23: 504–511.
+- Henke W, Herdel K, Jung J, Schnorr D, Loenig SA. 1997. Betaine improves the PCR amplification of GC-rich sequences. Nucleic Acids Res 25:3957–3958.
+- Hubé F, Reverdiau P, Iochmann S, Gruel Y. 2005. Improved PCR method for amplification of GC-rich DNA sequences. Mol Biotechnol 31:81–84.
+- Markoulatis P, Siafakis N, Moncany M. 2002. Multiplex polymerase chain reaction: A practical approach. J Clin Lab Med 16: 47–51.
+- McConlogue L, Brow MA, Innis MA. 1988. Structure-independent DNA amplification by PCR using 7-deaza-2'-deoxyguanosine. Nucleic Acids Res 16: 9869. doi: 10.1093/nar/16.20.9869.
+- Musso M, Bocciardi R, Parodi S, Ravalazzo R, Ceccherini I. 2006. Betaine, DMSO, and 7-deaza-dGTP, a powerful mixture for amplification of GC-rich sequences. J Mol Diagn 8: 544–550.
+- Peter M, Gilbert E, Delattre O. 2001. A multiplex real time assay for the detection of gene fusions observed in solid tumors. Lab Invest 81: 905–912.
+- Pomp D, Medrano JF. 1991. Organic solvents as facilitators of polymerase chain reaction. BioTechniques 10: 58–59.
+- Ralser M, Querfurth R, Warnath HJ, Lehrach H, Yaspo ML. 2006. An efficient and common enhancer mix for PCR. Biochem Biophys Res Commun 347: 747–751.
+- Rees WA, Yager TD, Korte J, von Hippel PH. 1993. Betaine can eliminate the base pair composition dependence of DNA melting. Biochemistry 32: 137–144.
+- Sahdev S, Saini S, Tiwari P, Saxena S, Singh Saini K. 2007. Amplification of GC-rich genes by following a combination strategy of primer design, enhancers and modified PCR cycle conditions. Mol Cell Probes 21:303–307.
+- Sarkar G, Kapelner S, Sommer SS. 1990. Formamide can dramatically improve the specificity of PCR. Nucleic Acids Res 18: 7465. doi:10.1093/nar/18.24.7465.
+- Schoder D, Schmalwieser A, Schauberger G, Kuhn M, Hoorfar J, Wagner M. 2003. Physical characteristics of six new thermocyclers. Clin Chem 49: 960–963.
+- Schuber AP, Skoletsky J, Stern R, Handelin BL. 1993. Efficient 12-mutation testing in the CFTR gene: A general model for complex mutational analysis. Hum Mol Genet 2: 153–158.
+- Varadaraj K, Skinner DM. 1994. Denaturants or cosolvents improve the specificity of PCR amplification of a G+C-rich DNA using genetically engineered DNA polymerases. Gene 140: 1–5.
+- Winship PR. 1989. An improved method for directly sequencing PCR amplified material using dimethyl sulphoxide. Nucleic Acids Res 17:1266. doi: 10.1093/nar/17.3.1266.
+- Yang I, Kim Y-H, Byun J-Y, Park S-R. 2005. Use of multiplex polymerase chain reactions to indicate the accuracy of the annealing temperature of therm cycling. Anal Biochem 338: 192–200.
+- Zhang Z, Yang Y, Meng L, Liu F, Shen C, Yang W. 2009. Enhanced amplification of GC-rich DNA with two organic solvents. BioTechniques 47:775–779.
+
+## 方案 5 长片段高保真 PCR（LA PCR）
+
+标准 PCR 很容易扩增出长度小于 3000bp 的 DNA 片段，该长度能满足大部分的用途，但是不足以去扩增整个哺乳动物基因甚至是平均长度的 cDNA。与全长产物不同，较长模板的标准 PCR 扩增会产生不同长度的片段，从而在凝胶上呈现不同的条带。而关于普通 PCR 扩增长模板失败的解释有:
+
+- 当缓冲液暴露在高温下，不能维持其 $\mathrm{pH}$ 的稳定从而损坏模板和产物 DNA
+- 一些散在二价阳离子（最首要的当属 $\mathrm{Mn}^{2+}$）在高温时会促进DNA链的裂开
+- 在 PCR 循环的加热阶段，长 DNA 分子变性存在困难
+- 耐热聚合酶如 Taq 由于缺乏剪辑功能，从而导致高概率地掺入错误碱基（在延伸链 3'端掺入错误碱基会造成酶的停顿，从而会限制 PCR 产物的大小）
+
+这些潜在问题中的前三个问题通过简单调整反应条件（参见 1994 年 Foord and Rose 的综述）即可解决（至少部分地解决），然而第四个则需要更原创性的思路。Wayne Barnes（1994）发现，通过两种不同耐热 DNA 聚合酶混合液催化扩增反应可以消除 3'端错配造成的障碍。其中一种聚合酶高效但易产生错配（如 Taq），而第二种用量非常少的酶能提供 3'→5'外切核酸酶校验功能从而切除错配的 3'端（如 Pfu 或 Deep VentR；NEB 公司）。这种改善在混合液中得以体现，许多商家售卖的这种混合液能够实现高产率和长模板的精准复制，如 TaqPlus 长片段 PCR 系统（Agilent 公司）、Expand 长模板 PCR 系统（Roche Applied Science 公司）、Advantage HF 2 PCR 试剂盒（Clontech 公司）。
+
+LA PCR 的进一步改进包括以下内容。
+
+\- 用耐热的尿苷三磷酸酶（UTPase），与 $Pfu$ DNA 聚合酶一起扩增可以改善产物的产率（Hogrefe et al. 2002; Arezi et al. 2003）。在 PCR 过程中，dCTP 水解脱氨生成 dUTP，而掺入引物、模板 DNA 或者 PCR 产物中的胞嘧啶残基脱氨会转化成 dU。和大多数其他类型的 DNA 聚合酶不同，古细菌 DNA 聚合酶如 $Pfu$、Vent 及 Deep Vent，可紧密结合含 dU 的 DNA 且被其强烈抑制（Lasken et al. 1996; Greagg et al. 1999）。
+
+\- 向 LA PCR 中加入高浓度的甜菜碱（终浓度是 1.3mol/L）（Cheng et al. 1994a,b），会使 LA PCR 变性阶段的温度从 94℃ 降为 91～93℃（Barnes 2003）。
+
+\- 将延伸时间增加至 2min/kb（Barnes 2003）。
+
+以下方案改编自 Barnes（2003）。
+
+![](images/page_409_image_8.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+## 琼脂糖凝胶
+
+扩增缓冲液（与耐热 DNA 聚合酶一起提供）（10×）
+
+这种缓冲液含有高浓度的 Tris，用来在扩增长模板必需的长时间延伸阶段维持正确的 pH(Ohler and Rose 1992)，母液 pH 也很高(室温时为 9.0)，可以补偿当 Tris 缓冲液加热时造成的  $pK_{a}$  下移(Good et al. 1966; Ferguson et al. 1980)。此外，Tris 可以用三甲基甘氨酸（Tricine）（室温时 pH 8.4，终浓度为 30mmol/L）代替（Ponce and Micol 1991）。甘氨酸缓冲液的  $pK_{a}$  值对温度的依赖性远小于 Tris（Good and Izawa 1972）。
+
+在  $10 \times$  缓冲液中，硫酸铵可以用 KCl（100mmol/L）代替，并且可以终浓度为 0.01% 的明胶代替 BSA。
+
+甜菜碱（5mol/L）
+
+甜菜碱溶液用  $0.22 \mu m$  滤膜过滤除菌，室温放置。
+
+氯仿（见步骤3）
+
+dNTP 溶液（1.0mmol/L）:所有 4 种 dNTP 溶于 40mmol/L MgCl₂
+
+溴化乙锭（EB）或者 SYBR Gold
+
+溶于水的正向引物（10μmol/L）和反向引物（10μmol/L）（10pmol/μL）
+
+需严格遵守引物设计规则（见本章导言表7-1）。然而，用于长片段PCR的引物比用于普通PCR的引物一般略长（25～30个核苷酸）。尤其重要的是，要争取使两个引物有相同的熔解温度。如果熔解温度的差异超过 $1^{\circ}\mathrm{C}$，那么可能会出现错配和优先扩增一条链的问题。
+
+模板 DNA（10μg/mL，溶于含 100μg/mL BSA 的 TEN 缓冲液中&lt;R&gt;）
+
+各种模板，包括重组 P1 衍生的人工染色体（PAC）、细菌人工染色体（BAC）、黏粒、 $\lambda$  噬菌体克隆，以及高分子质量的基因组 DNA 的长 PCR 效果很好。然而 DNA 的质量是最重要的。DNA 模板的平均长度（通过凝胶成像或脉冲场凝胶电泳分析）至少应为所需 PCR 产物长度 3 倍以上。DNA 也应该广泛纯化以减少抑制剂的浓度。
+
+在使用之前, 按 1:1000 的比例将 DNA 用含  $100 \mu g/mL$  BSA 的 TEN 缓冲液稀释, 使最终 DNA 浓度为  $10 pmol/\mu L$ 。
+
+含  $100 \mu g/mL$  BSA 的 TEN 缓冲液 &lt;A&gt;
+
+适合 LA PCR 的耐热 DNA 聚合酶（TaqPlus Long PCR System [Agilent 公司]，Expand Long Template PCR System [Roche 公司]，Advantage HF 2 PCR 试剂盒 [Clontech 公司]，或者 KlenTaq LA [Clontech 公司]）
+
+使用供应商提供的  $10 \times$  扩增缓冲液，检查  $10 \times$  缓冲液是否含有  $Mg^{2+}$ 。如果不含，准备 15mmol/L 的  $Mg^{2+}$ ，并向反应体系中加入适当的量。反应体系中  $Mg^{2+}$  最终浓度约为 1.5mmol/L。
+
+## 其他试剂
+
+本方案步骤 4 所需试剂列于第 2 章，方案 3。
+
+## 设备
+
+自动微量移液器用的带滤芯的吸头
+
+微量离心管（0.5mL，壁薄以利于扩增反应）
+
+Southern 杂交所用的尼龙或硝酸纤维素滤膜（见步骤 4）
+
+聚丙烯酰胺或琼脂糖凝胶电泳设备
+
+正排量移液管
+
+可编程所需扩增程序的热循环仪
+
+热循环仪如果没有配备热盖，那么在 PCR 循环中可以用矿物油或石蜡来防止反应混合液中液体的蒸发。
+
+在编写循环程序之前，测量从  $68^{\circ}$ C 加热到  $92^{\circ}$ C 所需的时间。
+
+![](images/page_410_image_17.jpg)
+
+## 方法
+
+1. 在一个无菌的薄壁离心管中混合以下成分:
+
+| 扩增缓冲液(10×) | 5μL |
+| --- | --- |
+| 4种dNTP溶液(10mmol/L) | 5μL |
+| 正向引物(10pmol/μL) | 1μL |
+| 反向引物(10pmol/μL) | 1μL |
+| 耐热DNA聚合酶(见生产说明书) | 2~3μL |
+| 模板DNA | 100pg至2μg |
+| H2O | 至总体积50μL |
+
+从构建在 $\lambda$ 噬菌体、粘粒、细菌噬菌体P1、PAC及BAC载体上的单个重组克隆中纯化得到的模板，其使用量范围为 $50\mathrm{pg}$ 到 $300\mathrm{ng}$ 。全基因组DNA的用量较大，通常每个反应需要 $50\mathrm{ng}$ 到 $1\mu \mathrm{g}$ 。在长PCR中，反应中模板使用量的灵活性很小:太少会导致没有产物，太多会造成强的非特异性扩增。对于每一种新制备的DNA，模板的最佳用量及引物/模板的最佳比例应该通过经验来确定。
+
+2. 将热循环仪预热至 $68^{\circ} \mathrm{C}$ 。如果热循环仪没有安装热盖，向反应混合体系中加入一滴（约 $50 \mu \mathrm{L}$ ）液态轻质石蜡覆盖。或者可以用热启动PCR加一滴固体石蜡取而代之。将离心管或者微孔板放入热循环仪。利用下表所列的变性、复性及延伸时间来扩增核苷酸:
+
+| 循环数 | 变性 | 复性以及延伸 |
+| --- | --- | --- |
+| $1^a$ | 92°C,5s |  |
+| $2\sim35^a$ | 92°C,5s | 63°C,10min |
+
+a. 循环仪应编程为所需时间的总和，要求是从  $68^{\circ}$ C 加热至  $92^{\circ}$ C 的时间加上 5s。
+
+这些时间适用于配制在 0.5mL 薄壁管中，在诸如 PerkinElmer 9600 或 9700、Mastercycler (Eppendorf 公司) 和 PTC-100 (MJ Research 公司) 等 PCR 仪上孵育的 50μL 反应体系。时间和温度可以根据设备类型及反应体积做适当调整。
+
+每 1kb 靶 DNA 延伸时间应为 2min。
+
+3. 如果用矿物油覆盖反应液（步骤2），可用 $150\mu \mathrm{L}$ 氯仿萃取将其从样品中去除。
+
+含扩增 DNA 的水相，在近弯液面处形成胶束。用自动微量吸管可将其转移到新的离心管中。
+
+▲因微孔板的材料是不耐受有机溶剂的，因此不要试图在微孔板中进行氯仿萃取。
+
+4. 使用合适大小的 DNA marker，用琼脂糖凝胶电泳分析一份水相样本。用 EB 或 SYBR Gold 对 DNA 进行染色，或者转移到尼龙或硝酸纤维素滤膜后用探针进行 Southern 杂交（见第 2 章）。
+
+虽然长 PCR 比普通 PCR 要求更加苛刻，但其本质是相同的。长 PCR 和普通 PCR 存在的问题是相似的，往往都是涉及特异性和产率。在绝大多数情况下，这些问题都可以通过仔细优化 PCR 的各个阶段得以解决。
+
+![](images/page_411_image_8.jpg)
+
+## 配方
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+TEN 缓冲液（配方）
+
+| 试剂 | 量(总量为10mL) | 终浓度 |
+| --- | --- | --- |
+| Tris-Cl (1mol/L, pH 7.9) | 100μL | 10mmol/L |
+| NaCl (1mol/L) | 100μL | 10mmol/L |
+| EDTA (0.5mol/L) | 2μL | 0.1mmol/L |
+
+保存在-20℃。
+
+## 参考文献
+
+- Arezi B, Xing W, Sorge JA, Hogrefe HH. 2003. Amplification efficiency of thermostable DNA polymerases. Anal Biochem 321: 226–235.
+- Barnes WM. 1994. PCR amplification of up to 35-kb DNA with high fidelity and high yield from $\lambda$ bacteriophage templates. Proc Natl Acad Sci 91: 2216-2220.
+- Barnes WM. 2003. Tips for long and accurate PCR. In PCR primer: A laboratory manual, 2nd ed. (ed Dveksler GS, Dieffenbach CW), pp. 53–60. Cold Spring Harbor Laboratory Press, Cold Spring Harbor, NY.
+- Cheng S, Chang SY, Gravitt P, Respess R. 1994a. Long PCR. Nature 369:684–685.
+- Cheng S, Fockler C, Barnes WM, Higuchi R. 1994b. Effective amplification of long targets from cloned inserts and human genomic DNA. Proc Natl Acad Sci 91: 5695–5699.
+- Ferguson WJ, Braunschweiger KI, Braunschweiger WR, Smith JR, McCormick JJ, Wasmann CC, Jarvis NP, Bell DH, Good NE. 1980. Hydrogen ion buffers for biological research. Anal Biochem 104: 300–310.
+- Foord OS, Rose EA. 1994. Long-distance PCR. PCR Methods Appl 3: S149–S161.
+- Good NE, Izawa S. 1972. Hydrogen ion buffers. Methods Enzymol 24: 53–68.
+- Good NE, Winget GD, Winter W, Connolly TN, Izawa S, Singh RM. 1966. Hydrogen ion buffers for biological research. Biochemistry 5: 467–477.
+- Greagg MA, Fogg MJ, Panayotou G, Evans SJ, Connolly BA, Pearl LH. 1999. A read-ahead function in archaeal DNA polymerases detects promutagenic template-strand uracil. Proc Natl Acad Sci 96: 9045-9050.
+- Hogrefe HH, Hansen CJ, Scott BR, Nielson KB. 2002. Archaeal dUTPase enhances PCR amplifications with archaeal DNA polymerases by preventing dUTP incorporation. Proc Natl Acad Sci 99: 596–601.
+- Lasken RS, Schuster DM, Rashtchian A. 1996. Archaebacterial DNA polymerases tightly bind uracil-containing DNA. J Biol Chem 271: 17692–17696.
+- Ohler LD, Rose EA. 1992. Optimization of long-distance PCR using a transposon-based model system. PCR Methods Appl 2: 51–59.
+- Ponce MR, Micol JL. 1991. PCR amplification of long DNA fragments. Nucleic Acids Res 20: 623. doi: 10.1093/nar/20.3.623.
+
+## 方案 6 反向 PCR
+
+标准 PCR 用来扩增位于两条引物内侧的 DNA 片段，与此相反，反向 PCR 技术（也被称为倒置或者向外 PCR）是用于扩增一段已知 DNA 序列旁侧的 DNA 序列，这些序列中没有可以用于扩增的引物。在快速高效的 DNA 测序出现之前，这项技术在几个独立课题组内都得到很好的发展（Ochman et al. 1988; Triglia et al. 1988; Silver and Keerikatte 1989）。目前，在多数情况下，测序已成为确定未知 DNA 片段的主要选择手段。然而，反向 PCR 仍旧被广泛应用于快速的等位基因分型，以及确定整合到基因组中的反转录病毒、转基因、转座子的定位。
+
+反向 PCR 要用到一种限制性内切核酸酶对大分子 DNA 酶切消化，制备一个包含已知序列及其侧翼区域的 DNA 片段（图 7-2）。个别限制性酶切片段（哺乳动物的基因组 DNA 可能产生成千上万条片段）通过自身分子环化连接，然后这种包含已知序列的环化 DNA 可以被用来作为 PCR 模板。未知序列通过与已知序列特异结合的引物反方向扩增获得。
+
+![](images/page_412_image_4.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["基因组DNA"] --> B["限制性酶切位点"]
+  B --> C["使用限制性内切酶酶切"]
+  C --> D["核苷酸序列已知区"]
+  D --> E["在低浓度DNA条件下建立连接反应，以利于DNA环化"]
+  E --> F["引物A"]
+  F --> G["在所有环形DNA分子种类均存在的条件下进行扩增"]
+  G --> H["引物B"]
+  H --> I["PCR产物"]
+  I --> J["引物B"]
+```
+</details>
+
+图 7-2 反向 PCR 示意图。反向 PCR 用来扩增与已知序列（浅色区）相邻的未知序列（深色区）。基因组 DNA 被酶消化产生携带已知基因（及其他）的 DNA 片段，并通过 Southern 印迹杂交测定。这些 DNA 片段通过连接环化，然后从已知序列中设计反向延伸的特异引物来扩增已知序列间的未知序列。
+
+扩增产物是一条线性 DNA 片段，其中包含有最初用于消化 DNA 的限制性酶切位点。这个位点是以前克隆的已知序列与其侧翼未知序列的交界。扩增片段大小依赖于已知序列和侧翼区域中限制性酶切位点的分布。用不同限制性酶切位点得到的 DNA 为模板，通过反向 PCR 可获得 4kb 大小的 DNA 侧翼序列（Jones and Winistorfer 1993）。无论已知序列的上游还是下游侧翼区，只通过一个已知序列内不存在的限制性酶切位点的切割反应，进行一次反向 PCR 就能获得。
+
+以下方案由 Dennis McKearin 提供（University of Texas Southwestern Medical Center, Dallas）。
+
+![](images/page_413_image_2.jpg)
+
+## 材料
+
+为正确使用本方案中的器材和危险试剂，必须查阅相应的材料安全数据表并咨询所在机构的环境卫生和安全办公室。
+
+本方案的专用试剂标注&lt;R&gt;，配方在本方案末提供。常用储备溶液、缓冲液和试剂标注&lt;A&gt;，配方见附录1。储备溶液应稀释至适用浓度后使用。
+
+## 试剂
+
+琼脂糖或聚丙烯酰胺凝胶（见步骤7）
+
+含  $MgCl_{2}$  的扩增缓冲液（与耐热 DNA 聚合酶一起提供）（10×）
+
+ATP (10mmol/L)
+
+噬菌体 T4 连接酶（1U/ $\mu$ L）
+
+氯仿
+
+含有所有 4 种 dNTP（pH 8.0）的 dNTP 溶液（20mmol/L）
+
+乙醇
+
+溴化乙锭（EB）或者 SYBR Gold
+
+连接酶缓冲液（10×）（和 T4 连接酶一起提供）
+
+溶于水的正向引物（20μmol/L）和反向引物（20μmol/L）
+
+除了在模板分子上的位置不同之外（见图 7-2），反向 PCR 引物并没有其他特别之处，因此提供的是一般引物设计的规则。每个引物应该长 20～30 个核苷酸，并且其中 4 种碱基的数量大约相等，G 和 C 的分布要均衡，形成稳定二级结构的倾向低。限制性内切核酸酶酶切位点可以添加到引物 5' 端，以便扩增产物的克隆和操作。
+
+酚:氯仿（1:1，V/V）
+
+限制性内切核酸酶
+
+乙酸钠（3mol/L）
+
+TE 缓冲液（pH 8.0）
+
+10mmol/L Tris-Cl (pH 8.0)
+
+1mmol/L EDTA
+
+用含少于 0.1mmol/L EDTA 的 10mmol/L Tris-Cl（pH 7.6）溶解的模板 DNA
+
+反向 PCR 需要一个环状的 DNA 作为模板，此方案中，步骤 1～4 描述的是如何将传统方法制备的线性 DNA 转反为环形 DNA，这些线性 DNA 可为纯化的 DNA 片段，也可为总基因组 DNA，或其一定大小的组分； $\lambda$ 噬菌体 cDNA 文库；一份黏性质粒或噬菌体 P1 基因组文库；或  $\sim10^{9}$ bp 以下的 DNA 序列。线性 DNA 的使用量至少在 1 $\mu$ g 以上以便环化，并在几个浓度下进行 PCR。
+
+耐热 DNA 聚合酶
+
+Tris-Cl (10mmol/L, pH 7.6)
+
+## 其他试剂
+
+此方案步骤 7 中所需的试剂已在第 2 章，方案 1 和方案 13。
+
+## 设备
+
+自动微量移液器使用的带滤芯的吸头
+
+微量离心管（0.5mL，壁薄以利于扩增反应）或微孔板
+
+正排量移液管
+
+可编程所需扩增程序的热循环仪
+
+如果没有配备热盖，那么在 PCR 循环中可以用矿物油或石蜡来防止反应混合液中液体的蒸发。
+
+$16^{\circ} \mathrm{C}$ 的水浴
+
+![](images/page_414_image_2.jpg)
+
+## 方法
+
+1. 基于已知 DNA 序列，设计并合成寡聚核苷酸引物 1 和引物 2。
+
+2. 用合适的限制性内切核酸酶（见以下注释）消化 $2 \sim 5 \mu \mathrm{g}$ DNA 模板（序列 $< 10^{9} \mathrm{bp}$）。用酚:氯仿提取消化后的 DNA，再用氯仿单独抽提。加 0.1 倍体积的 $3 \mathrm{~mol} / \mathrm{L}$ 乙酸钠和 2.5 倍体积的乙醇使 DNA 沉淀，离心回收沉淀，用 TE 缓冲液 (pH 8.0) 溶解使浓度为 $100 \mathrm{mg} / \mathrm{mL}$。
+
+选做步骤，DNA 消化后置  $65^{\circ}$ C 加热 15～20min 使酶失活。
+
+用 Southern 印迹杂交（第 2 章，方案 13）实验来选择可以把片段切成适当大小（1～4kb）的限制性内切核酸酶。为提高模板 DNA 连接时自身环化效率，尽量选择能够产生黏性末端的酶。若只能选择平端酶，则需要在连接缓冲液中加入聚乙二醇。
+
+3. 在 $0.5 \mathrm{~mL}$ 的无菌微量离心管、PCR 管或灭菌的微孔板中，设定一系列连接反应，其中切割模板 DNA 的浓度范围为 $0.1 \sim 1 \mathrm{mg} / \mathrm{mL}$。
+
+| 模板 DNA | 10~100ng |
+| --- | --- |
+| 连接缓冲液(10×) | 10μL |
+| 噬菌体 T4 DNA 连接酶(1U/μL) | 4μL |
+| 三磷酸腺苷(10mmol/L) | 10μL |
+| 水 | 加至 100μL |
+
+反应体系置  $16^{\circ}$ C 孵育 12～16h。
+
+某些商品化的连接缓冲液包含 ATP。若使用此类缓冲液，不需要在连接体系中额外添加 ATP。
+
+理论上，利于连接过程中形成单分子环的条件很好找（Collins and Weissman 1984），但在实际中很难做到。为避免分子间的串联，更好地形成分子内环化，DNA末端的摩尔浓度必须降低。然而，在大小不同的DNA分子的分布，以及末端被损坏的分子比例未知的情况下，很难推算出合适的DNA浓度，最好的办法就是用浓度范围为1～10μg/mL的DNA进行一系列连接反应，然后把这一系列连接反应的产物用于以下步骤。
+
+4. 连接 DNA 用酚:氯仿提取后，再用氯仿单独抽提。加 0.1 倍体积的 3mol/L 乙酸钠和 2.5 倍体积的乙醇使 DNA 沉淀，离心回收沉淀并重溶于 10mmol/L Tris-Cl(pH7.6) 或水中，浓度为 100μg/mL。
+
+5. 在灭菌的 0.5mL 薄壁扩增管中加入下列试剂并混匀:
+
+| 扩增缓冲液(10×) | 5μL |
+| --- | --- |
+| 4种dNTP溶液(pH 8.0),每种浓度在20mmol/L | 1μL |
+| 寡核苷酸引物1(20μmol/L) | 2.5μL |
+| 寡核苷酸引物2(20μmol/L) | 2.5μL |
+| 耐热DNA聚合酶(1~5U/μL) | 1.0μL |
+| 水 | 28~33μL |
+| 连接后的模板DNA | 5~10μL |
+| 总体积 | 至50μL |
+
+线性 DNA 模板有时比环状 DNA 更有益于反向 PCR 的扩增效率。我们可以在两条引物 5' 端之间的已知序列区域寻找一个限制性酶切位点，把环化的 DNA 分子线性化。最好这个酶不能对未知序列进行切割。或者在制备扩增反应体系之前，将模板加热至 100°C、15min，也可以使环状分子线性化，不过效率比较低（Triglia et al. 1988; Ochman et al. 1993）。
+
+i. 设置两个对照反应。其中一个反应包含除 DNA 模板以外的上述所有试剂。另一个反应中，用一个携带已知片段大小的质粒取代 DNA 模板，此质粒包含用于设计寡核苷酸引物的 DNA 片段。
+
+第一个对照确保任何可见产物都与外源 DNA 无关。第二个反应测试 PCR 各试剂的保真性。
+
+ii. 每一个对照反应都进行所有的后续操作步骤。
+
+6. 如果热循环仪没有配备热盖，可在反应混合物中加一滴（约 $50 \mu \mathrm{L}$ ）轻质矿物油。这样可以避免样品在重复冷热循环中蒸发。另外，在使用热启动 PCR 时可在管中加一粒石蜡。将反应管或微孔板放入热循环仪。利用下表列出的变性、复性和延伸时间及温度扩增核苷酸:
+
+| 循环数 | 变性 | 复性 | 延伸 |
+| --- | --- | --- | --- |
+| 30个循环 | 94°C, 30s | 55°C, 30s | 72°C, 2.5min |
+| 末循环 | 94°C, 30s | 55°C, 30s | 72°C, 10min |
+
+这些时间适用于配制在 0.5mL 薄壁管中，在诸如 PerkinElmer 9600 或 9700、Mastercycler（Eppendorf 公司）和 PTC-100（MJ Research 公司）等 PCR 仪上孵育的 50μL 反应体系。时间和温度可以根据设备类型及反应体积做适当调整。
+
+许多热循环仪的结束程序是扩增样品保持在  $4^{\circ}$ C 直至被取出。样品可以在此温度下放置过夜，但随后需放在  $-20^{\circ}$ C 保存。
+
+在一个特定的 PCR 反应中，引物对的具体复性温度得靠经验估计。若靶 DNA 较长（大于 4kb），应当尝试延长延伸时间（每个循环延长到 10min）。另外，使用突变的、缺乏外切核酸酶活性的耐热 DNA 聚合酶可以获得较长的扩增片段。
+
+7. 从反应体系以及对照组体系中取出 $5 \sim 10 \mu \mathrm{L}$ 样品, 通过琼脂糖或聚丙烯酰胺凝胶电泳进行分析。使用合适的 DNA marker。用溴化乙锭或 SYBR Gold 进行凝胶染色。
+
+成功的扩增反应应该产生一条清晰可见的 DNA 条带，条带可以通过 DNA 测序、限制性酶切图谱分析，或者使用与已知 DNA 序列同源的探针进行 Southern 杂交来进一步鉴定。
+
+## 参考文献
+
+- Collins FS, Weissman SM. 1984. Directional cloning of DNA fragments at a large distance from an initial probe: A circularization method. Proc Natl Acad Sci 81: 6812–6816.
+- Jones DH, Winistorfer SC. 1993. A method for the amplification of unknown flanking DNA: Targeted inverted repeat amplification. Bio-Techniques 15: 894–904.
+- Ochman H, Gerber AS, Hartl DL. 1988. Genetic applications of an inverse polymerase chain reaction. Genetics 120: 621–623.
+- Ochman H, Ayala FJ, Hartl DL. 1993. Use of polymerase chain reaction to amplify segments outside boundaries of known sequences. Methods
+- Enzymol 218: 309–321.
+- Silver J, Keerikatte V. 1989. Novel use of polymerase chain reaction to amplify cellular DNA adjacent to an integrated provirus. J Virol 63:1924–1928.
+- Triglia T, Peterson MG, Kemp DJ. 1988. A procedure for in vitro amplification of DNA segments that lie outside the boundaries of known sequences. Nucleic Acids Res 16: 8186. doi: 10.1093/nar/16.16.8186.
+
+## 方案 7 巢式 PCR
+
+巢式 PCR 一般适用于一些有必要增加灵敏度和/或特异性的 PCR 反应，例如，扩增一个特定的多态基因家族成员，或者扩增一种 mRNA 丰度极低的临床标本的 cDNA 副本，并且这个标本含有几种不同的细胞类型（混合细胞群体）。
+
+巢式 PCR 通常涉及两个连续的扩增反应，每个反应使用一对不同的引物（Smit et al. 1988; Kemp et al. 1989）。第一次扩增反应的产物被用作第二次 PCR 的模板，而第二次反应的寡核苷酸引物对位于第一对引物内侧（图 7-3）。先后使用两对引物可使循环数倍增，从而提高了 PCR 的灵敏度。反应特异性的提高源于和相同模板结合的两套独立的引物。巢氏 PCR 对于扩增长模板片段是一种有效的方法，但是需要知道靶基因的序列。
+
+在 “半-巢氏 PCR” 中，第二次扩增使用的一条引物与第一次 PCR 中两条外引物的其中一条完全相同（Zhang and Ehrlich 1994）。半-巢氏 PCR 的特异性可能较常规的巢氏 PCR
