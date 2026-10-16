@@ -1,0 +1,440 @@
+盖的主题包括基因组大小，染色体组成（如中心粒、基因臂、端粒等），基因组区域（基因、调控元件等）以及基因组三维结构。由于基因组的组成和结构是所有生物体共同具有的特征，下文主要以人类或哺乳动物作为模式生物进行举例说明。
+
+## (1) 基因组大小
+
+基因组是由核酸组成的，包含了所有遗传信息和基因的集合。我们使用特定的单位来衡量基因组大小，例如 1 Gb（Gigabytes，千兆字节）等于 1 000 Mb（Megabytes，兆字节），又等于 1 000 000 个核苷酸对（base pairs，bp）的数量。不同物种的基因组大小存在较大差异（表 2-1、表 2-2）。迄今为止，已知最小的真核基因组属于寄生性微孢子虫（Encephalitozoon intestinalis），其基因组大小约为 2.3 Mb（Corradi et al., 2010）；而衣笠草（Paris japonica）拥有最大的已知基因组，大小约为 130 Gb（Pellicer et al., 2010）。相较之下，人类的基因组（知识窗 2-1）大小约为 3 Gb。
+
+## (2) 基因组的组成
+
+从结构来看，基因组可以根据其是否形成染色体形态分为两种——非染色体基因组和染色体基因组。非染色体基因组主要包括:病毒基因组、原核生物（如细菌）的质粒基因组，以及真核生物的线粒体基因组与叶绿体基因组（见上文）；染色体基因组一般指真核生物细胞核内的基因组，是真核生物体内负责存储和传递遗传信息的结构，在细胞分裂和遗传过程中起着重要的作用。从功能来看，基因组又可以分为基因区域和非基因区域。基因区域主要由蛋白质编码基因（protein-coding gene）、非编码RNA（non-coding RNA）和假基因（pseudogene）组成。其中，蛋白质编码基因负责生产具有特定功能的蛋白质，非编码RNA则在基因表达调控、染色质结构维持等生命活动中发挥关键作用。虽然假基因已失去原有功能，但它们仍可参与基因表达调控，影响其他基因的表达。此外，基因组还包括非基因区域的调控元件（regulatory
+
+表 2-1 物种间的基因组大小
+
+| 基因组 | 基因数目 | 碱基对数 /bp |
+| --- | --- | --- |
+| 有机体(organisms) |  |  |
+| 植物(plants) | &lt;50 000 | &lt;1011 |
+| 哺乳动物(mammals) | ~30 000 | ~3×10^9 |
+| 蠕虫(worms) | ~14 000 | ~10^8 |
+| 蝇类(files) | ~12 000 | ~1.6×10^8 |
+| 真菌(fungi) | ~6 000 | ~1.3×10^7 |
+| 细菌(bacteria) | 2 000~4 000 | &lt;10^7 |
+| 支原体(mycoplasma) | ~500 | &lt;10^8 |
+| 双链 DNA 病毒(dsDNA viruses) |  |  |
+| 牛痘病毒(vaccinia) | &lt;300 | ~187 000 |
+| SV40猕猴病毒(papova-SV40) | ~6 | 5 226 |
+| T4噬菌体(phage T4) | ~200 | ~165 000 |
+| 单链 DNA 病毒(ssDNA viruses) |  |  |
+| 小颗粒病毒(phage fX174) | 11 | 5 387 |
+| 双链 RNA 病毒(dsRNA viruses) |  |  |
+| 利奥巴病毒(reovirus) | - | ~23 000 |
+| 单链 RNA 病毒(ssRNA viruses) |  |  |
+| 流感病毒(influenza) | 12 | ~13 500 |
+| MS2噬菌体(phage MS2) | 4 | 3 569 |
+| 类病毒(viroids) |  |  |
+| PSTV RNA | 0 | 359 |
+
+(参考书籍:LEWIN's GENES XII)
+
+表 2-2 人及常见模式生物的基因组大小
+
+| 物种 | 拉丁学名 | 基因组大小 /Mb | 蛋白质编码基因数目 |
+| --- | --- | --- | --- |
+| 人 | Homo sapiens | ~3 000 | ~20 000 |
+| 小鼠 | Mus musculus | ~2 600 | ~20 200 |
+| 大鼠 | Rattus norvegicus | ~2 750 | ~22 000 |
+| 斑马鱼 | Danio rerio | ~1 500 | ~32 000 |
+| 果蝇 | Drosophila melanogaster | ~175 | ~13 000 |
+| 秀丽隐杆线虫 | Caenorhabditis elegans | ~100.3 | ~19 000 |
+| 拟南芥 | Arabidopsis thaliana | ~135 | ~25 500 |
+| 原绿球藻 | Prochlorococcus | ~1.7 | ~1 800 |
+| 酿酒酵母 | Saccharomyces cerevisiae | ~12.1 | ~6 000 |
+| 大肠杆菌 | Escherichia coli | ~4.6 | ~4 000 |
+
+element）和重复序列（repetitive sequence），这些在维持基因组结构和调控基因表达中都起着重要作用。
+
+染色体是由蛋白质和DNA构成的复合物，具有一些特殊的结构，包括着丝粒、基因臂和端粒等。着丝粒（centromere）是真核生物分裂过程中染色体正确分离和传递所必需的染色体区域，由两个中心粒（centrioles）和周围的蛋白质组成（图2-23）。中心粒在细胞分裂中发挥着重要的作用，它在有丝分裂过程中形成纺锤体，并参与染色体的分离。染色体臂（chromosome arms）:基因组的染色体通常由两条臂组成，即染色体长臂（q臂，由“queue”派生而来，意为尾部）和染色体短臂（p臂，由“petit”派生而来，意为小）。长臂和短臂由染色体上的中心体分割开来。端粒（telomere）是染色体末端的一段特殊的DNA序列，它在细胞的稳定性、基因组的完整性、衰老和疾病发生中起着重要的作用。端粒的主要功能是保护染色体末端免受损伤和降解。由于DNA聚合酶的限制性作用，
+
+![](images/page_65_image_7.jpg)
+
+<details>
+<summary>text_image</summary>
+
+染色体
+p臂
+着丝粒
+q臂
+端粒
+DNA双螺旋
+</details>
+
+图2-23 染色体和着丝粒、基因臂、端粒
+
+## 知识窗2-1
+
+## 人类的染色体组成
+
+人类的染色体共有46条（23对），包括44条常染色体（22对）和2条性染色体（XX或XY）（图2-24）。常染色体大致按照从长到短的顺序编号为1至22号染色体。当染色体数目异常或结构发生畸变导致疾病时，我们称之为染色体病（chromosome disorder）。三体综合征通常指13、18、21号染色体在体内出现了三条而非两条的染色体（三体现象）。其中，13三体综合征（Patau syndrome）的新生儿发病率为$1/6000\sim 1/5000$，女性患病率明显高于男性。18三体综合征（Edward syndrome）的新生儿发病率为$1/8000\sim 1/3500$。而21三体综合征被称为唐氏综合征（Down syndrome），其在新生儿中的发病率为$1/800\sim 1/600$。因此，对于高风险人群，尤其是年龄较大的孕妇，推广遗传咨询和产前筛查是降低我国新生儿三体综合征发病率的有效手段。这些措施能够提供重要的信息和支持，帮助家庭做出正确的决策，保障健康新生儿的诞生。
+
+![](images/page_66_image_5.jpg)
+
+图2-24 人类染色体核型图
+
+在染色体末端的 DNA 不能被完全复制，导致每次细胞分裂后端粒长度会略微缩短，称为“末端复制问题”。
+
+蛋白质编码基因是指基因组中能够被转录成 mRNA，并通过翻译过程转化为蛋白质的基因。蛋白质编码基因通常包括多个外显子和内含子序列，外显子是蛋白质编码基因中直接参与编码蛋白质的序列段，而内含子则是位于外显子之间的非编码序列段。在转录过程中，位于编码区（coding sequence，CDS）两端的非编码片段，被称为非翻译区（untranslated region，UTR），包括 5'UTR 和 3'UTR 两部分，分别位于 mRNA 起点和终点的外显子之外（图 2-25）。
+
+非编码 RNA 是指在基因组中存在的一类不编码蛋白质的基因，但有 RNA 转录产物，且在调控基因表达和细胞功能方面起着重要作用。常见的非编码 RNA 包括管家非编码和调节非编码 RNA（表 2-3）。管家非编码 RNA（housekeeping ncRNA）是一类细胞生存所必需的非编码 RNA，其含量相对稳定，呈现组成型表达，主要包括 tRNA、rRNA、核内小 RNA（small nuclear RNA，snRNA）、核仁小 RNA（small nucleolar RNA，snoRNA）以及端粒酶 RNA（telomerase RNA component，TERC）等。
+
+![](images/page_67_image_2.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  subgraph DNA ["DNA"]
+  A["增强子"] --> B["启动子"]
+  B --> C["内含子"]
+  C --> D["外显子"]
+  D --> E["终止子"]
+  end
+
+  subgraph pre_RNA ["pre-RNA"]
+  F["5'"] --> G["5'端加帽位点"]
+  G --> H["翻译起始位点"]
+  H --> I["翻译终止位点"]
+  I --> J["3'端加A位点"]
+  J --> K["3'"]
+  end
+
+  subgraph mRNA ["mRNA (剪接或修饰)"]
+  L["5'"] --> M["翻译起始位点"]
+  M --> N["翻译终止位点"]
+  N --> O["polyA尾"]
+  end
+
+  subgraph Final ["增强子"]
+    P["3'"] -.-> Q["增强子"]
+    Q -.-> R["3'"]
+  end
+
+  B -- "转录起始位点" --> F
+  G -- "转录终止位点" --> P
+  I -- "翻译终止位点" --> N
+  J -- "3' 端加A位点" --> K
+  K -- "翻译终止位点" --> L
+  L -- "翻译起始位点" --> M
+```
+</details>
+
+图2-25 蛋白质编码基因和调控元件
+
+它们参与基本的细胞功能，如蛋白质合成、基因表达调控和 RNA 加工等，用于维持细胞正常功能和基因组的稳定性。调节非编码 RNA（regulatory ncRNA）是一类具有明显的时空特异性表达的 ncRNA。它们在转录、翻译和其他基因表达调控过程中发挥调节作用。调节非编码 RNA 包括长链非编码 RNA（long non-coding RNA, lncRNA）、微 RNA（microRNA, miRNA）、环状 RNA（circular RNA, circRNA）等。它们可以通过与 DNA、RNA 和蛋白质相互作用，调控基因的转录水平、转录后修饰、转运和翻译等过程。调节非编码 RNA 对于细胞分化、发育、免疫应答、疾病发生和进化等方面起着关键作用。
+
+表 2-3 非编码 RNA
+
+<table><tr><td>类型</td><td>全称</td><td>缩写</td><td>长度/nt</td></tr><tr><td rowspan="7">管家非编码 RNA</td><td>核糖体 RNA (ribosomal RNA)</td><td>rRNA</td><td>120~4500</td></tr><tr><td>转运 RNA (transfer RNA)</td><td>tRNA</td><td>76~90</td></tr><tr><td>核内小 RNA (small nuclear RNA)</td><td>snRNA</td><td>100~300</td></tr><tr><td>核仁小 RNA (small nucleolar RNA)</td><td>snoRNA</td><td>60~400</td></tr><tr><td>tRNA 半分子 (tRNA halves)</td><td>tiRNA</td><td>29~50</td></tr><tr><td>tRNA 来源的小片段 RNA (tRNA-derived fragments)</td><td>tRF</td><td>16~28</td></tr><tr><td>端粒酶 RNA (telomerase RNA)</td><td>TERC</td><td>/</td></tr><tr><td rowspan="6">调节非编码 RNA</td><td>微 RNA (microRNA)</td><td>miRNA</td><td>21~23</td></tr><tr><td>小干扰 RNA (small interfering RNA)</td><td>siRNA</td><td>20~25</td></tr><tr><td>piwi 相互作用 RNA (piwi-interacting RNA)</td><td>piRNA</td><td>26~32</td></tr><tr><td>长链非编码 RNA (long non-coding RNA)</td><td>lncRNA</td><td>&gt;200</td></tr><tr><td>增强子 RNA (enhancer RNA)</td><td>eRNA</td><td>50~200</td></tr><tr><td>环状 RNA (circular RNA)</td><td>circRNA</td><td>100~10000</td></tr></table>
+
+假基因是指在基因组中存在的与功能性基因序列非常相似的 DNA 序列，但它们通常不会被转录成 RNA 或翻译成蛋白质，并且缺乏明确的生理功能。虽然假基因本身不具备功能，但是它们在基因组的进化和多样性中发挥了重要的作用，也有可能对基因表达调控产生影响。近年来的研究表明，假基因可能通过产生内源性小干扰 RNA（endogenous siRNA）、反义 RNA（antisense RNA）或 miRNA 的诱饵等方式，调控基因发挥作用。
+
+调控元件是指基因组中能够调节基因表达的时机、水平和组织特异性的 DNA 片段。常见的调控元件包括以下几种:启动子（promoter），位于基因的上游区域，是转录因子结合并启动基因转录的关键序列；增强子（enhancer），是一类位于基因上、下游或甚至远离基因的 DNA 序列，可以与转录因子结合形成调控复合物，从而增强基因的转录活性；沉默子（silencer），可以与转录因子结合并阻碍基因的转录活性，起到负调控作用，抑制基因的表达；边界元件（boundary element），可以将染色体分割成不同的染色质区域，起到隔离和保护基因的作用，确保不同基因或调控区域之间的相互独立性。
+
+重复序列是指在真核生物基因组中重复出现的相同或相似的序列，每个重复出现的序列又称为重复单位（repeats unit），包括串联重复（tandem repeats）和散在重复（interspersed repeats）等。根据串联重复单元的长度，又可将其进行分类为长度较长的卫星DNA（satellite DNA）、相对较长的小卫星DNA（minisatellite DNA）和最短的微卫星DNA（microsatellite DNA）。散在重复序列的分类则不同，可以分为长散在核元件（long interspersed nuclear element, LINE）（重复单位>500 bp）和短散在核元件（short interspersed nuclear element, SINE）（重复单位<500 bp），以及长末端重复序列（long terminal repeat, LTR）（重复单位100\~5000 bp）。
+
+## （3）基因组的三维结构
+
+一个细胞内基因组 DNA 的线性长度远远超过其细胞核或原核生物细胞能容纳的尺寸，而 DNA 本身并不具备折叠到足够小体积的能力。为了在有限的空间里有效地存储并传递基因信息，DNA 需要与蛋白质以及少量 RNA 相结合，经过盘绕、折叠及压缩等形成质地紧密的复杂结构。该过程主要包含核小体（nucleosome）的形成和染色体高级结构的形成两方面。基因组的三维结构与基因的功能和表达调控有着密切联系。
+
+## ① 核小体的形成
+
+染色质（chromatin）是细胞分裂间期，细胞核内由DNA、组蛋白（histone）、非组蛋白及少量RNA组成的线性复合物。组蛋白主要有5种分子类型:H1、H2A、H2B、H3和H4。其中4种类型（H2A、H2B、H3和H4）的分子共8个蛋白质构成了核心组蛋白（core histone）。核小体是真核生物中由DNA与核心组蛋白组成的染色质基本单位。组蛋白是带强正电的碱性蛋白质，而DNA磷酸糖骨架上的磷酸基团使得DNA具有强负电。因此，长度约 $146\mathrm{bp}$ 的DNA双链能紧紧地在核心组蛋白上盘绕1.7圈，形成染色体最基本的DNA包装单元——核小体。同时，H1组蛋白结合在核小体上的 DNA 进出口处，起到稳定核小体结构的作用，从而形成 11 nm 直径的串珠状结构，也称为染色质小体（chromotosome）。在细胞分裂间期，每条染色质由成千上万个核小体组成，相邻核小体之间由平均长度约 20 bp 的 DNA 连接。在核小体的形成过程中，DNA 双链压缩了 7 倍。大多数原核生物没有组蛋白（除古菌域外），但具有类组蛋白参与基因组三维结构的构建。
+
+## ② 染色体高级结构的形成
+
+染色质按照左手螺旋的超螺旋方式进一步盘绕卷曲，形成 $30\mathrm{nm}$ 直径的染色质纤维（chromatin fiber）。H1组蛋白处在染色质纤维内侧，再次起到稳定染色质高级结构的作用。这一过程使得DNA压缩程度达到 $40\sim 60$ 倍。研究人员通过显微镜观察发现，每转螺旋包含6个核小体。在细胞分裂间期，染色质大多以染色质纤维的形式存在，但也存在其他的折叠方式。特定区域的折叠方式往往由核小体间连接DNA的长度和H1组蛋白的存在与否所控制。在染色质的各区域上，折叠方式往往是动态的，并非一成不变。随后，染色质纤维在黏连蛋白（cohesin）和CCCTC结合蛋白（CCCTC-binding factor，CTCF）的作用下进一步形成长度为 $300~\mathrm{nm}$ 的染色质环（chromatin loop）结构。在细胞分裂时期，染色质环压缩卷曲成 $250~\mathrm{nm}$ 宽的纤维，致密地盘绕，最终形成染色体。在染色体形成的过程中，相比于裸DNA，DNA被压缩了近万倍（图2-26）。
+
+## ③ 真核细胞中的三维基因组
+
+随着显微成像技术和三维构象技术的发展，研究人员对真核细胞中的三维基因组进行了更系统全面的研究，根据染色质的状态、位置以及相互作用提出了一系列基因组三维结构的概念。
+
+![](images/page_69_image_7.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph LR
+  A["①染色质的初始状态是DNA双螺旋结构"] --> B["②DNA与组蛋白结合形成核小体"]
+  B --> C["③DNA在组蛋白八聚体分子表面盘绕1.7圈形成核小体"]
+  C --> D["④染色质小体由核小体和H1组蛋白构成"]
+  D --> E["⑤核小体经盘绕卷曲形成30nm直径的染色质纤维"]
+  E --> F["⑥染色质纤维进一步盘绕形成300 nm长的染色质环"]
+  F --> G["⑦300nm的染色质环压缩折叠形成250nm宽的纤维"]
+  G --> H["⑧250nm宽的纤维致密地盘绕形成染色体"]
+```
+</details>
+
+常染色质（euchromatin）是指处于伸展状态的染色质纤维，通常富集基因并具有转录活性；异染色质（heterochromatin）是指处于高度压缩状态下的染色体纤维，含有的基因数目较少且通常不具备转录活性。常染色质与异染色质的核小体组蛋白修饰是有区别的。组蛋白修饰（histone modification）是指组蛋白在相关酶的作用下以共价方式进行的蛋白质翻译后修饰，包括甲基化（methylation）、乙酰化（acetylation）、磷酸化（phosphorylation）、多聚腺苷酸化（polyadenylation）、泛素化（ubiquitination）和ADP核糖基化（ADP-ribosylation）等修饰。组蛋白修饰可以引起组蛋白与DNA之间的相互作用变化，或者招募非组蛋白分子来动态调整染色质的结构，从而改变转录状态。乙酰化修饰可以削弱组蛋白的正电性，进而降低组蛋白和DNA结合的能力。如H3K9ac和H3K27ac通常与活跃基因的增强子和启动子有关。甲基化修饰则不直接作用于组蛋白和DNA的结合，而是通过招募蛋白酶或蛋白质复合体介导染色质的开放与闭合。如H3K4me1标记基因增强子区域；H3K4me3标记基因启动子区域；H3K9me3则标记异染色质区域。
+
+染色体疆域（chromosome territories）是指细胞分裂间期特定染色质占据细胞核内特定且不重合的区域（图2-27）；这个概念最早由卡尔·拉布尔（Carl Rabl，1853—1917）在1885年提出（Cremer et al., 2010）。染色体的相对位置在有丝分裂开始前通常保持相对稳定。例如，早期复制位点和活性基因倾向定位于细胞核内部，而晚期复制位点和抑制基因则倾向定位于核边缘。
+
+染色体区室（chromosome compartment）分为 A 区室（A compartment）和 B 区室（B compartment），是埃雷兹·利伯曼-艾登（Erez Lieberman-Aiden）等研究人员在 2009 年使用高通量染色体构象捕获（high-throughput chromosome conformation capture，
+
+图 2-27 三维基因组
+
+![](images/page_70_image_7.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  subgraph Cell_Structure
+  A["细胞核内的染色体疆域"] --> B["染色体A区室"]
+  B --> C["染色体B区室"]
+  C --> D["核膜网"]
+  end
+
+  subgraph Binding
+    E["基因"] -.-> F["调控元件"]
+    G["拓扑关联结构域边界"] -.-> H["拓扑关联结构域边界"]
+    I["染色质环"] -.-> J["染色体质环"]
+  end
+
+  style A fill:#f9f9f9,stroke:#333,stroke-width:2px
+  style B fill:#f9f9f9,stroke:#333,stroke-width:2px
+  style C fill:#f9f9f9,stroke:#333,stroke-width:2px
+  style D fill:#f9f9f9,stroke:#333,stroke-width:2px
+  style E fill:#f9f9f9,stroke:#333,stroke-width:2px
+  style F fill:#f9f9f9,stroke:#333,stroke-width:2px
+  style G fill:#f9f9f9,stroke:#333,stroke-width:2px
+  style H fill:#f9f9f9,stroke:#333,stroke-width:2px
+  style I fill:#f9f9f9,stroke:#333,stroke-width:2px
+```
+</details>
+
+Hi-C）技术（见下文）对三维结构进行研究时提出的概念（Lieberman-Aiden et al., 2009）。A 区域通常处于染色质开放状态，主要包含常染色质区域；B 区域通常处于染色质闭合状态，主要包含异染色质区域。
+
+拓扑关联结构域（topologically associating domain，TAD）是指具有Mb级大小，高度自我相关的区域性染色体互作结构域。这种结构域是由艾尔菲吉·诺拉（Elphège Nora）和杰西·迪克森（Jesse Dixon）等研究人员在2012年，通过将Hi-C互作图谱的分辨率提高到40 kb及以上而发现的。在小鼠胚胎干细胞中，TAD的平均长度约为880 kb，约占基因组91%的区域。在非哺乳动物中，如果蝇、斑马鱼、线虫以及酵母等的基因组中均有相似的TAD结构。TAD的边界富集了结合蛋白CTCF、管家基因、tRNA和短散在重复序列等。随后，更高分辨率（1\~4 kb）的Hi-C互作图谱又使研究人员发现了更小的染色质结构域，被称为亚拓扑关联结构域（subTAD）。相比于TAD，subTAD更具有细胞类型特异性，具体功能尚未知。
+
+染色质环是指染色质中两个远距离DNA序列相互之间通过空间折叠而形成的环状结构。这种环状结构将两个DNA序列紧密相连，缩短了它们在三维空间上的距离，促进了基因调控元件（增强子等）与靶基因之间的相互作用，使调控元件高效地调节基因的表达。染色质环的形成与黏连蛋白和结合蛋白CTCF有关。2014年，苏哈斯·拉奥（Suhas Rao）等利用原位Hi-C（in situ Hi-C）技术，同时将Hi-C互作图谱的分辨率提高到 $1\mathrm{kb}$，更准确地检测并描述了染色质环结构。
+
+## 2. 基因组注释
+
+基因组注释是对基因组序列进行解读，旨在研究基因的结构、功能、调控机制和相互作用。基因组注释涉及多种策略和工具，包括基于序列相似性的比对、基于基因家族的功能预测、通路分析等。基因组注释是生物信息学和分子生物学领域至关重要的一环，为后续的生物信息学分析、基因功能研究、药物开发和临床诊断等领域打下基础。
+
+## (1) 基因组结构注释
+
+基因组结构注释的目标是准确地标识和描述基因组中的各种结构特征，以提供有关基因组的组织结构和基因组学特征信息。通过基因组结构注释，研究人员可以了解基因组的组织和编码蛋白质的方式，以及与基因表达和功能相关的调控元件。目前经常被广泛研究的基因组结构注释包含基因的注释、基因编码序列的推断、基因调控元件的注释、非编码RNA的推测和重复序列的识别等。
+
+基因的注释是指对基因组序列进行解读和标记，以确定其中的基因、非编码区域和其他功能元素。注释的目的是理解基因组的结构和功能，并推断基因的编码序列、调控元件和其他相关信息，包括从头注释、同源注释和基于转录组和蛋白质组的注释。从头注释是不利用参考基因组的注释信息，对新的基因组序列进行分析和预测，推断基因的位置、结构和功能的方法。从头注释的工具包括SNAP、TwinScan、FGENESH、Augustus、Genscan、GAZE等。同源注释是将同源物种基因的转录物序列或蛋白质序列映射到已经注释的基因组上。基于转录组和蛋白质组的注释是指将不同来源的转录物序列或蛋白质序列比对至基因组上，然后根据位置进行注释。同源注释和基于转录组和蛋白质组的注释工具包括 BLAST、BLAT、Splign、Spidey、sim4、Exonerate、gmap、Magic-BLAST 和 minimap2 等（表 2-4）。
+
+基因编码序列的推断是通过分析基因组序列确定可能存在的蛋白质编码区域和序列的过程。蛋白质编码序列通常由一系列连续的核苷酸组成，被称为开放阅读框(open reading frame, ORF)。推断基因编码序列可采用统计模型、序列比对和机器学习等方法。统计模型分析基因组序列的核苷酸组合规律和编码蛋白质特征，构建模型预测可能的编码序列。序列比对将待推断的基因组序列与已知的编码蛋白质或已注释的基因组序列比对，识别可能的开放阅读框，常用的比对工具有BLAST、BLAT和HMMER。机器学习方法是利用已知蛋白质编码和非编码序列的特征，通过机器学习算法进行预测，如核苷酸组合、二级结构和保守性等特征。推断基因编码序列常用工具有Prokka和COG数据库。Prokka适用于细菌和古菌基因组注释，可自动预测基因的编码序列和注释功能；COG数据库提供基于同源关系的基因功能注释和分类信息。
+
+基因调控元件的注释是指对基因组中的调控元件进行识别、定位和描述的过程。
+
+表 2-4 常见的基因组注释数据库
+
+| 缩写 | 全称 | 描述 |
+| --- | --- | --- |
+| NCBI | National Center for Biotechnology Information | 生物信息学资源和数据库中心，旨在收集、存储、管理和提供与生物技术和生物医学相关的信息，隶属于美国国家卫生研究院（NIH）。它为生命科学研究人员、医学专业人士和公众提供广泛的生物学数据库、工具和在线服务。NCBI的数据库包括GenBank、PubMed、Protein、Nucleotide、GEO、SRA、PubChem、ClinVar等。 |
+| UCSC | University of California, Santa Cruz | 由加州大学圣克鲁兹分校创建和维护的生物数据库，提供多个物种的基因组信息和分析工具。 |
+| Ensembl | Ensembl Genome Database Project | 欧洲生物信息研究所的科学项目，提供多种物种的基因组序列、注释和变异信息。 |
+| ENCODE | Encyclopedia of DNA Elements | 国际合作项目，旨在识别和注释人类基因组中的功能元件，包括基因、转录因子结合位点、组蛋白修饰位点、长链非编码RNA、DNA甲基化等。 |
+| GENCODE | Encyclopedia of Genes and Gene Variants | 提供准确、全面注释信息的基因注释体系。它包括蛋白质编码基因的不同转录物、非编码的基因位点和假基因的注释。GENCODE提供基因的位置、结构和功能等信息，主要有人类和小鼠两个物种的基因注释信息。研究人员可以通过访问GENCODE网站或使用相关工具和数据库获取和分析这些注释信息。 |
+| FANTOM | Functional Annotation of the Mammalian Genome | 通过实验和计算方法研究哺乳动物基因组中的转录过程，并注释基因功能。它关注转录组学和功能基因组学，以揭示基因调控网络和转录调控机制。 |
+| EPD | The Eukaryotic Promoter Database | 注释的真核生物Pol II启动子数据库，包含经实验证实的启动子序列和相关信息。每个条目包括启动子的起始位点映射数据、交叉引用和功能描述，提供指向核苷酸序列的指针，使用户可以访问启动子序列。 |
+| JASPAR | Just Another Satisfiability Problem Solver | 转录因子结合位点信息的数据库。它是一个开源的数据库，记录了多个物种的转录因子（transcription factor，TF）的DNA结合偏好信息。 |
+
+调控元件指参与调控基因表达的DNA序列片段，包括启动子、增强子、抑制子、转录因子结合位点等。这些调控元件可以在特定的细胞类型或特定的发育阶段发挥作用，调节基因的转录水平和模式。实验方法包括用于检测转录因子与DNA相互作用的染色质免疫共沉淀测序（chromatin immunoprecipitation sequencing，ChIP-seq）、用于检测开放染色质区域的DNase I超敏感位点测序（DNase I hypersensitive sites sequencing，DNase-seq），以及用于检测可访问染色质区域的转座酶可及染色质测序（assay for transposase-accessible chromatin sequencing，ATAC-seq）。对ChIP-seq数据进行分析，可以利用各种可用的工具和算法，如MACS2、HOMER、MEME-ChIP等，来鉴定转录因子结合位点。对ChIP-seq或ATAC-seq数据进行分析，可以利用工具如MACS2、HMMRATAC、SICER等，来识别染色质状态的特定区域，如开放染色质区域、启动子、增强子等。对已识别的调控元件进行注释时，可以使用现有的数据库和软件工具，如Ensembl、GENCODE、UCSC Genome Browser等，来获取调控元件的基因关联、调控因子和调控通路等信息。
+
+非编码 RNA 的预测是利用计算方法和生物信息学工具，根据基因组序列的特征和模式来确定 ncRNA 的存在和潜在功能。首先进行序列特征分析，包括序列长度、GC 含量、二级结构等特征，筛选潜在的 ncRNA 候选序列。然后将分析好的特征序列与已知的 ncRNA 数据库（如 NONCODE、miRBase）比对，或使用搜索算法寻找与候选序列相似的已知 ncRNA 序列。最后使用 RNA 二级结构预测算法（如 RNAfold、Mfold），预测 ncRNA 的二级结构和稳定性，确定非编码序列的类型和类别。
+
+重复序列的识别是通过计算方法和生物信息学工具对基因组序列中的重复序列进行辨识和标记的过程。首先将基因组序列与已知重复序列数据库比对，如Smith-Waterman或BLAST，寻找与已知重复序列模式相似的序列片段。然后分析序列片段的结构特征，如GC含量、重复单元长度和间隔，推断是否为重复序列。最后对识别出的重复序列进行分类，如简单重复序列（如微卫星、转座子）和复杂重复序列（如LINE、SINE）。常用的重复序列识别工具有RepeatMasker、CENSOR和TRF等。
+
+## (2) 基因组功能注释
+
+为了理解基因的特定功能、参与的通路以及与其他基因的关联，研究人员使用各种工具和资源对基因进行解释和注解。基因根据相似的碱基或蛋白质序列归类为基因家族（gene family）。
+
+基因家族是指源于同一个祖先，由一个基因通过基因重复而产生的一组相似基因，通常具有相似的结构和功能。根据基因的进化关系来分，基因家族分为旁系同源基因（paralogs）和直系同源基因（orthologs）。旁系同源基因是指在同一物种中的具有相似序列的基因；直系同源基因是指不同物种间的具有相似序列的基因。人类基因组组织基因命名委员会（HUGO Gene Nomenclature Committee，HGNC）利用基因家族成员的主干符号创建命名方案，并使用分层编号系统来区分各个成员。如HOX基因家族，HOX是根符号，家族成员有HOXA1、HOXB1、HOXC1、HOXD1等。基因家族中的家族成员具有相似的结构和生物学功能。因此，一方面，一些功能数据库基于序列相似性聚类形成；另一方面，研究人员可通过与功能数据库中的序列进行比对，对新基因或未知功能的基因所来自的基因家族进行分类，从而对其功能进行预测。
+
+在基因功能注释过程中，研究人员依赖于各种功能注释数据库；这些数据库提供了丰富的注释信息和工具，帮助研究人员获取特定基因的详细注释信息，理解基因的功能和特征。主要的基因功能数据库有以下几个:
+
+同源基因簇数据库（Database of Clusters of Orthologous Genes，COGs）是NCBI开发用于同源蛋白注释的数据库，通过比较完整基因组的蛋白质序列而产生。研究人员可通过将待鉴定蛋白质与该数据库序列进行比对，对蛋白质进行分类，从而预测其功能。
+
+Pfam 数据库（protein families database）是由欧洲生物信息研究所（EMBL-EBI）维护和更新的数据库，通过鉴定目标蛋白质与数据库蛋白质序列的多重序列比对和隐马尔可夫模型（Hidden Markov Model，HMM），来对蛋白质进行注释和分类，帮助研究人员理解蛋白质的结构、功能和进化。
+
+UniProt 数据库（Universal Protein resource）是包含蛋白质序列和大量功能注释信息的蛋白质数据库，共有 4 个核心数据库:UniProtKB（UniProt knowledgebase）、UniRef（UniProt reference clusters）、UniPac（UniProt archive）和 UniMES（UniProt Metagenomic and Environmental Sequences）。UniProtKB 又分为人工校正的 Swiss-Prot 和计算机自动注释的 TrEMBL 蛋白质序列数据库；UniRef 是基于序列相似性的聚类数据库；UniParc 包含来自主要公共数据库的所有蛋白质序列。
+
+GeneCards 数据库是一个综合性的人类基因数据库，提供已注释和预测的人类基因的注释信息、基因互作关系、临床和功能等全面的信息，整合了超过 150 个网络资源的基因中心数据。
+
+基因本体论（gene ontology，GO）是对基因及其产物特性进行统一化生物学描述的数据库。GO从三个方面描述生物学领域的知识:①分子功能（molecular function, MF），指单基因产物或多基因产物复合体在分子水平上的活动。分子功能的描述只表示活动本身，而不涉及执行功能的实体（分子或复合物），活动发生的地点、时间和背景，如广义的功能条目可以是“催化活性”或“转运活性”，具体的功能条目可以是“腺苷酸环化酶活性”或“类Toll受体结合”等。②细胞组分（cellular component, CC），指基因产物执行功能所处的细胞结构位置，可以是细胞区室（如线粒体）或包含产物的稳定大分子复合物（如核糖体）。③生物学过程（biological process, BP），指由多种分子活动协同完成的生物学过程，如广义生物学过程条目可以是“DNA修复”或“信号转导”，具体的条目可以是“嘧啶核苷酸生物合成过程”或“葡萄糖跨膜转运”。
+
+KEGG（Kyoto Encyclopedia of Genes and Genomes）是帮助理解生物学系统的功能和作用的一个数据库资源。它涵盖了基因和蛋白质（代表基因组信息）、分子复合物及化学反应（代表化学物质信息）、各类元素的分类、功能单元和互作网络（代表系统信息）以及疾病和药物等（代表健康信息）四大方面的信息，用来帮助理解生物学系统以及指导生物学应用。KEGG 通路是 KEGG 的核心数据库，是一系列代谢通路的集合。其主要包含生物代谢、遗传信息处理、环境资料加工、细胞过程、生物体系统、人类疾病以及新药开发等方面的分子间相互作用和反应网络。
+
+## (3) 遗传变异的功能影响注释
+
+遗传变异的功能影响注释是计算和评估基因变异对基因功能影响程度的方法。通常基于多种算法和模型，利用大量基因功能和结构信息进行预测。通过功能影响评分、研究人员可以定量比较和排序不同基因变异的功能影响，有助于识别与疾病相关的致病突变，深化对基因功能和疾病机制的理解。然而，功能影响评分方法仍然是预测性的，准确性和可靠性可能受多种因素影响。因此，在实际研究中，应结合实验验证和其他生物信息学方法综合评估遗传变异的功能影响。根据注释的范围大小，可以将其分为蛋白质编码区域的功能影响注释，如SIFT、PolyPhen-2、GERP和全基因组范围的功能影响注释，如CADD、FATHMM-MKL、GWAVA（表2-5）。
+
+表 2-5 遗传变异的功能影响注释
+
+| 注释工具 | 预测模型 | 注释区域 | 发表年份 |
+| --- | --- | --- | --- |
+| phastCons | phylo-Hidden Markov Model | coding | 2005 |
+| PhyloP | Dynamic Pogramming Algorithms | coding | 2006 |
+| MutationAssessor | Scoring System | coding | 2007 |
+| PolyPhen-2 | Naïve Bayes Classifier | coding | 2010 |
+| GERP++ | Statistical Framework | coding | 2010 |
+| SIFT | Probability Estimation | coding | 2012 |
+| FunSeq2 | Scoring System | non-coding | 2012 |
+| MISTIC | Ensemble Method | coding | 2013 |
+| CADD | Support Vector Machine | whole genome | 2014 |
+| GWAVA | Random Forest | whole genome | 2014 |
+| DANN | Deep Learning | whole genome | 2015 |
+| MetaLR | Logistic Regression | coding | 2015 |
+| MeaSVM | Support Vector Machine | coding | 2015 |
+| FATHMM-MKL | Support Vector Machine | whole genome | 2015 |
+| eigen | Meta Scores | whole genome | 2016 |
+| PredictSNP2 | Ensemble Method |  | 2016 |
+| REVEL | Random Forest | coding | 2016 |
+| M-CAP | Gradient Boosting Tree | coding | 2016 |
+| LINSIGHT | Generalized Linear Model | whole genome | 2017 |
+| CDTS | Probability Estimation | whole genome | 2018 |
+| PrimateAI | Deep Learning | coding | 2018 |
+| MVP | Deep Learning | coding | 2021 |
+| MutationTastcr | Random Forest | coding | 2021 |
+| EVE | Variantional Autoencoder | coding | 2021 |
+| Depletion rank (DR) | / | whole genome | 2022 |
+| MetaRNN | Deep Learning | coding | 2022 |
+| gMVP | Graph Attention Meural Network | coding | 2022 |
+| PrimateAI-3d | Deep Learning | coding | 2023 |
+| AlphaMissense | Deep Learning | coding | 2023 |
+
+随着医学和生物学的发展，对疾病的认识不断深化，对疾病相关信息和数据的需求也相应增加。为了方便获取和共享疾病相关数据，研究人员开发了各种疾病数据库。这些数据库满足了研究人员对疾病信息和数据的需求，促进了疾病研究的发展，并为疾病的治疗与预防提供支持和指导。下面详细介绍几个常见的疾病数据库，以便研究人员根据需要选择适合自己研究的数据库进行数据查询和分析。
+
+HGMD（Human Gene Mutation Database）是一个收集已发表文献中致病突变和与人类疾病相关的功能多态的数据库，有助于研究人员查找和分析与疾病相关的基因突变。
+
+ClinVar 是一个存储和分享遗传变异与人类健康相关信息的数据库，提供遗传变异的临床意义、相关疾病和遗传模式等信息，帮助研究人员了解遗传变异与疾病之间的关联。
+
+OMIM（Online Mendelian Inheritance in Man）是一个提供人类遗传疾病详细信息的数据库，包括表型特征、基因突变和遗传模式等，有助于研究人员深入了解人类遗传疾病的基础知识。
+
+DisGeNET 是一个研究人类疾病和基因之间关系的数据库，整合了多个公共资源的数据，包括 OMIM、PubMed、GWAS 目录等，提供疾病和基因之间的关联、共现性和功能相似性等信息。
+
+Malacards 是一个综合性的人类疾病数据库，提供关于疾病的详细信息和注释，整合了基因、表型、药物、文献等多种数据源，有助于深入了解疾病的多个方面。
+
+Orphanet 是一个罕见疾病的知识数据库，提供罕见疾病的诊断、孤儿药物、临床试验和专家网络等信息，有助于研究人员深入了解罕见疾病的特点和治疗方法。
+
+PharmGKB（Pharmacogenomics Knowledgebase）是一个关于基因变异如何影响药物反应的数据库，集中于药物基因组学领域，提供药物代谢、作用机制和基因变异对药物反应的影响等信息，支持个体化药物治疗。
+
+## 三、基因组研究技术
+
+基因组承载着生物体完整的遗传信息，可以通过测序进行解码，为生物多样性研究、疾病的诊断与治疗，以及个性化医疗等领域提供基础。1977年，科学家成功测序了噬菌体X174的基因组，这一事件标志着基因组学测序的开篇；而人类基因组计划的提出和完成则将基因组学研究推向了大规模测序的新纪元（知识窗2-2）。在本小节中，我们将系统地概括不同测序技术的原理、优势与限制，以及实际应用案例等方面的内容（图2-28）。
+
+## 1. 测序技术的发展及原理
+
+## (1) 一代测序技术
+
+20世纪70年代，英国科学家桑格等人发明了双脱氧终止法测序技术，也称为
+
+图2-28 测序技术的发展及其特点
+
+图中的时间线展示了基因组测序技术随时间的发展；同时对从一代到三代测序的特点进行了比较和总结。
+
+![](images/page_77_chart_9.jpg)
+
+<details>
+<summary>state_timeline</summary>
+
+| Year | Technology / Technologies |
+| --- | --- |
+| 1953 | DNA双螺旋模型 |
+| 1974 | 化学降解法 |
+| 1983 | PCR |
+| 2005 | 二代测序技术 |
+| 2008 | 三代测序技术 |
+| 2009 | 单分子实时测序 |
+| 2014 | 其他长读长测序 (Illumina和10xGenomics) |
+| 2015 | 合成长读长技术 (Illumina和10xGenomics) |
+</details>
+
+Sanger 测序。同年，阿伦·马克萨姆（Allan Maxam）和沃尔特·吉尔伯特（Walter Gilbert）报道了化学降解法（chemical degradation method）的测序策略，又称为Maxam-Gilbert测序。双脱氧终止法、化学降解法以及在它们基础上发展的各种DNA测序技术统称为一代测序技术（图2-29）。
+
+## ① 化学降解法
+
+通过对 DNA 进行特定的化学修饰，然后进行切割和电泳分离，最后通过读取分离的 DNA 片段来确定 DNA 序列。首先，使用  ${}^{32}$ P-dATP 和多核苷酸激酶对待测序的双链 DNA 的 5' 端进行放射性标记，使用二甲基亚砜（DMSO）将 DNA 变性，得到单链 DNA（single strand DNA，ssDNA）分子，并通过电泳将其进行分离；然后，通过氮碱基特异性反应，修饰腺嘌呤（A）、胞嘧啶（C）、鸟嘌呤（G）和胸腺嘧啶（T）的残基，使 ssDNA 在这些位置的 5' 端发生化学切割；最后，通过聚丙烯酰胺凝胶电泳和自显影，将修饰后的 ssDNA 片段按大小分离，并在 X 射线胶片上检测放射性 DNA 条带的图谱。这些条带图谱代表了 DNA 序列，通过分析图谱可以确定 DNA 的确切序列。
+
+化学降解法测序在早期的 DNA 分子测序中发挥了重要作用。然而，测序过程中涉及危险的化学物品，技术复杂，难以大规模使用。因此，逐渐被更为便捷的 Sanger 测序等方法所替代。
+
+## ② 双脱氧终止法
+
+该法包括三个主要步骤:DNA 模板制备、凝胶电泳分离和凝胶分析。在 DNA 模板制备中，待测序的 DNA 序列作为模板，与脱氧核苷酸三磷酸（dNTPs）一同引入链终止剂 ddNTPs。这些 ddNTPs 能在 DNA 聚合酶合成 DNA 链时终止延伸，产生随机长度的 DNA 片段。然后，通过凝胶电泳按大小分离这些链终止的 DNA 片段。凝胶电泳中 DNA 片段向正电极泳动，根据大小差异将其分离，较小片段泳动得更远更快。最后，在凝胶分析中，通过阅读凝胶带上的 DNA 片段来确定 DNA 序列。DNA 聚合酶合成 DNA 链时，终止的 ddNTPs 会对应原序列中的特定核苷酸。通常，从底部到顶部读取凝胶，根据每条带上 ddNTP 的标识来确定 DNA 序列。
+
+![](images/page_78_image_8.jpg)
+
+<details>
+<summary>flowchart</summary>
+
+```mermaid
+graph TD
+  A["多核苷酸激酶及32P标记的dATP"] --> B["标记"]
+  B --> C["二甲基亚砜 (90°C)"]
+  C --> D["变性"]
+  D --> E["电泳"]
+  E --> F["分离、隔离"]
+  F --> G["碱基特异性蚀变与解离"]
+  
+  G --> H["A反应 (部分G解离)\nACGTACGTACGT\nACGTACGTAC\nACGTACGT\nACGTAC\nACGT\nACG"]
+  G --> I["C反应"]
+  I --> J["G反应"]
+  J --> K["T反应 (部分C解离)\nACGTACGTACGT\nACGTACGTACG\nACGTACGT\nACGTACG\nACGTAG\nACGA"]
+  
+  subgraph Transcription
+  L1["电泳放射自显影"] --> M["分离及可视化"]
+  M --> N["A+g C G T+c"]
+  N --> O["5' -5'"]
+  O --> P["96°C 变性"]
+  P --> Q["5' -3'"]
+  Q --> R["50°C 韧化"]
+  R --> S["dATP,dCTP,dGTP,dTTP\nddATP,ddCTP,ddGTP,ddTTP"]
+  S --> T["荧光扩展"]
+  T --> U["60°C"]
+  U --> V["A终止"]
+  U --> W["C终止"]
+  U --> X["G终止"]
+  U --> Y["T终止"]
+    
+  V --> Z["ACGTACGTA\nACGTA\nA"]
+  W --> AA["ACGTACGTAC\nACGTA\nAC"]
+  X --> AB["ACGTACGTACG\nACGTACG\nACG"]
+  Y --> AC["ACGTACGTACGT\nACGTACGT\nACGT"]
+    
+  Z --> AD["电泳、检测"]
+  AA --> AD
+  AB --> AD
+  AD --> AE["分离及可视化"]
+  AE --> AF["5'-ACGT ACGT ACGT ACGT-3'"]
+```
+</details>
+
+图2-29 一代测序技术:化学降解法（上）和双脱氧终止法（下）
+
+## 知识窗2-2
+
+# 人类基因组计划及其对测序技术和基因组学研究的贡献
+
+人类基因组计划的提出和完成对DNA测序技术的发展产生了深远的影响。该计划由国际人类基因组测序联盟（International Human Genome Sequencing Consortium，IHGSC）发起，历时10年，总花费约30亿美元。其主要目标是对人类基因组上的24条染色体（22条常染色体和2条性染色体）所包含的约30亿个碱基对进行测序和解析，绘制出人类基因组图谱，识别蛋白质编码基因及其序列组成，最终实现破解人类遗传信息的终极目标。
+
+2001年2月，IHGSC和塞雷拉基因组公司（Celera Genomics）分别在Nature和Science杂志上发表了人类基因组草图的相关论文，标志着人类基因组计划的成功（International Human Genome Sequencing Consortium, 2001；Venter et al., 2001）。2003年4月14日，中、美、日、德、法、英6国科学家宣布成功绘制了完整的人类基因组序列图，开启了后基因组研究时代。2004年，国际人类基因组测序联盟报道了人类基因组的完成图（International Human Genome Sequencing Consortium, 2004），共有28.5亿个碱基位点，碱基正确率高达$99.999\%$ ，含 $20000\sim 25000$ 个蛋白质编码基因，这个基因组被定义为人类参考基因组（human reference genome）。
+
+在人类基因组计划中，主要策略是将整个基因组切割成长度约为15万个碱基的小片段，并确保相邻片段有部分重叠的DNA。然后，将每条DNA片段插入到人工培育的细菌染色体中，通过细菌的繁殖来实现DNA片段的复制。随后，这些DNA片段被分割成约1000个碱基长度的短重叠片段，并进行测序分析，生成了许多测序结果序列，每个序列被称为一个“读长”（read）。最终，通过不同DNA片段之间的重叠部分，获得了连续的图谱。这种严格的图谱测序方法虽然操作复杂，但能够将测序错误降至最低，确保了最终产生的人类基因组序列具有极高的质量。
+
+塞雷拉基因组公司提出了一种更加高效的方法，称为“全基因组鸟检测序法”（whole-genome shotgun sequencing）。该方法将整个基因组随机打断成多个短的重叠DNA片段，然后直接对这些DNA片段进行测序。最后，通过组装这些测序得到的读段数据，成功获得了完整的基因组序列。这一方法的主要优点在于速度较快，塞雷拉基因组公司仅耗时3年就完成了一个个体基因组的测序和组装。
+
+这两种方法的竞争加速了人类基因组计划的完成并推动了DNA测序技术的不断进步，特别是全基因组鸟枪测序法为下一代测序技术提供了思路，形成高通量并行测序的技术，大大推进了基因组学的发展。
+
+以Sanger测序为代表的一代测序技术，因其通量较低逐步退出主流测序领域。然而，由于其产生的序列准确性高，它仍然被视为序列测序的金标准（golden standard），用来评估新测序技术的准确性等。
+
+## (2) 二代测序技术
+
+以 Sanger 测序法为代表的一代测序技术曾经主导了几十年的基因组学研究。然而，Sanger 测序存在着诸多局限性，包括价格昂贵、通量较低和操作繁琐等，导致其在大规模测序中应用受限。为了克服这些限制，二代测序技术，又称大规模平行测序（massively parallel sequencing, MPS）（Rogers et al., 2005）应运而生。与 Sanger 测序
