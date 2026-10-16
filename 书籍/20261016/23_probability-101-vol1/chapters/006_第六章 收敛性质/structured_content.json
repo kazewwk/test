@@ -1,0 +1,3415 @@
+{
+  "pages": [
+    {
+      "page_idx": 171,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.344,
+            0.087,
+            0.461,
+            0.116
+          ],
+          "level": 2,
+          "content": "第六章"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.515,
+            0.154,
+            0.718,
+            0.192
+          ],
+          "level": 2,
+          "content": "收敛性质"
+        }
+      ]
+    },
+    {
+      "page_idx": 172,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.069,
+            0.048,
+            0.099,
+            0.06
+          ],
+          "content": "158"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.119,
+            0.047,
+            0.259,
+            0.061
+          ],
+          "content": "第六章 收敛性质"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.116,
+            0.104,
+            0.915,
+            0.217
+          ],
+          "content": "收敛性质是随机变量及其分布的重要性质。经常使用的随机变量列的收敛包括几乎必然收敛、依概率收敛、平均收敛和依分布收敛。在本章中，我们对上述几种收敛的概念、基本性质和相互关系进行简单的讨论，还将介绍关于分布函数收敛的斯科罗霍德(Skorokhod)表示定理，黑利(Helly)定理和莱维(Lévy)连续性定理。这里的讨论是后面的概率极限定理的基础。"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.116,
+            0.271,
+            0.405,
+            0.294
+          ],
+          "level": 2,
+          "content": "6.1 随机变量的收敛"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.115,
+            0.342,
+            0.912,
+            0.385
+          ],
+          "content": "本节中我们讨论几乎必然收敛、依概率收敛和平均收敛. 考虑某个概率空间  $(\\Omega, \\mathcal{F}, \\mathbf{P})$  上的随机变量  $\\xi, \\xi_{1}, \\xi_{2}, \\cdots$ ."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.156,
+            0.413,
+            0.401,
+            0.433
+          ],
+          "level": 2,
+          "content": "6.1.1 几乎必然收敛"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.116,
+            0.458,
+            0.911,
+            0.498
+          ],
+          "content": "定义 6.1.1 称序列  $\\{\\xi_{n}\\}$  几乎必然收敛到  $\\xi,$  并记作  $\\xi_{n} \\rightarrow \\xi$  (a.s.) 或  $\\xi_{n} \\stackrel{a.s.}{\\rightarrow} \\xi,$  是指有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.24,
+            0.512,
+            0.744,
+            0.542
+          ],
+          "content": "\\mathbf {P} \\Big (\\lim _ {n \\to \\infty} \\xi_ {n} = \\xi \\Big) = \\mathbf {P} \\Big (\\omega \\in \\varOmega : \\lim _ {n \\to \\infty} \\xi_ {n} (\\omega) = \\xi (\\omega) \\Big) = 1.",
+          "image_source": "../../raw/pages_0161-0176/images/page_172_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.551,
+            0.668,
+            0.574
+          ],
+          "content": "注意 $E := \\{\\lim_{n \\to \\infty} \\xi_n = \\xi\\} \\in \\mathscr{F}$, 这可由下面的表示看出:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.338,
+            0.588,
+            0.91,
+            0.632
+          ],
+          "content": "E = \\bigcap_ {k = 1} ^ {\\infty} \\bigcup_ {n = 1} ^ {\\infty} \\bigcap_ {i = n} ^ {\\infty} \\left\\{| \\xi_ {i} - \\xi | <   1 / k \\right\\}. \\tag {6.1.1}",
+          "image_source": "../../raw/pages_0161-0176/images/page_172_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.645,
+            0.911,
+            0.687
+          ],
+          "content": "上面的等式可以用语言表述为: $\\omega \\in E$ 当且仅当对任何 $k \\geqslant 1$, 存在 $n \\geqslant 1$ 使当 $i \\geqslant n$ 时有 $|\\xi_i(\\omega) - \\xi(\\omega)| < 1/k$ 成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.691,
+            0.763,
+            0.711
+          ],
+          "content": "定理6.1.1 收敛 $\\xi_{n}\\stackrel {\\mathrm{a.s.}}{\\rightarrow}\\xi$ 成立的充要条件是对任意的 $\\varepsilon >0$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.211,
+            0.724,
+            0.909,
+            0.769
+          ],
+          "content": "\\mathbf {P} \\Big (\\bigcap_ {n = 1} ^ {\\infty} \\bigcup_ {i = n} ^ {\\infty} \\left\\{| \\xi_ {i} - \\xi | \\geqslant \\varepsilon \\right\\} \\Big) = \\lim _ {n \\to \\infty} \\mathbf {P} \\Big (\\bigcup_ {i = n} ^ {\\infty} \\left\\{| \\xi_ {i} - \\xi | \\geqslant \\varepsilon \\right\\} \\Big) = 0. \\tag {6.1.2}",
+          "image_source": "../../raw/pages_0161-0176/images/page_172_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.155,
+            0.782,
+            0.879,
+            0.801
+          ],
+          "content": "证明 由概率的上连续性知 (6.1.2) 式中的第一个等号总成立. 由 (6.1.1) 式有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.266,
+            0.813,
+            0.717,
+            0.857
+          ],
+          "content": "E ^ {c} = \\bigcup_ {k = 1} ^ {\\infty} \\bigcap_ {n = 1} ^ {\\infty} \\bigcup_ {i = n} ^ {\\infty} \\left\\{| \\xi_ {i} - \\xi | \\geqslant 1 / k \\right\\} = \\bigcup_ {k = 1} ^ {\\infty} \\bigcap_ {n = 1} ^ {\\infty} A _ {k, n},",
+          "image_source": "../../raw/pages_0161-0176/images/page_172_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.113,
+            0.869,
+            0.163,
+            0.886
+          ],
+          "content": "其中"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.336,
+            0.899,
+            0.644,
+            0.942
+          ],
+          "content": "A _ {k, n} = \\bigcup_ {i = n} ^ {\\infty} \\left\\{| \\xi_ {i} - \\xi | \\geqslant 1 / k \\right\\} \\in \\mathcal {F}.",
+          "image_source": "../../raw/pages_0161-0176/images/page_172_equation_16.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 173,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.715,
+            0.047,
+            0.88,
+            0.061
+          ],
+          "content": "6.1 随机变量的收敛"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.899,
+            0.048,
+            0.929,
+            0.06
+          ],
+          "content": "159"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.083,
+            0.102,
+            0.481,
+            0.122
+          ],
+          "content": "所以  $\\xi_{n}\\stackrel{a.s.}{\\rightarrow}\\xi\\Leftrightarrow\\mathbf{P}(E)=1\\Leftrightarrow\\mathbf{P}(E^{c})=0\\Leftrightarrow$"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.335,
+            0.136,
+            0.586,
+            0.18
+          ],
+          "content": "\\mathbf {P} \\Big (\\bigcap_ {n = 1} ^ {\\infty} A _ {k, n} \\Big) = 0, \\quad k \\geqslant 1.",
+          "image_source": "../../raw/pages_0161-0176/images/page_173_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.083,
+            0.194,
+            0.75,
+            0.214
+          ],
+          "content": "注意 $A_{k,n} \\supseteq A_{k,n + 1}$, 由概率的上连续性知上式等价于对任意的 $k \\geqslant 1$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.227,
+            0.229,
+            0.694,
+            0.272
+          ],
+          "content": "\\lim _ {n \\to \\infty} \\mathbf {P} (A _ {k, n}) = \\lim _ {n \\to \\infty} \\mathbf {P} \\Big (\\bigcup_ {i = n} ^ {\\infty} \\left\\{| \\xi_ {i} - \\xi | \\geqslant 1 / k \\right\\} \\Big) = 0,",
+          "image_source": "../../raw/pages_0161-0176/images/page_173_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.083,
+            0.287,
+            0.484,
+            0.305
+          ],
+          "content": "而这等价于 (6.1.2) 式对任意的 $\\varepsilon > 0$ 成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.311,
+            0.846,
+            0.33
+          ],
+          "content": "定义 6.1.2 称序列  $\\{\\xi_{n}\\}$  完全收敛到  $\\xi$ ，并记作  $\\xi_{n} \\stackrel{c}{\\rightarrow} \\xi$ ，是指对任何  $\\varepsilon > 0$  有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.343,
+            0.345,
+            0.877,
+            0.389
+          ],
+          "content": "\\sum_ {n = 1} ^ {\\infty} \\mathbf {P} (| \\xi_ {n} - \\xi | \\geqslant \\varepsilon) <   \\infty , \\tag {6.1.3}",
+          "image_source": "../../raw/pages_0161-0176/images/page_173_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.13,
+            0.406,
+            0.474,
+            0.427
+          ],
+          "content": "定理 6.1.2 若  $\\xi_{n}\\stackrel{c}{\\rightarrow}\\xi,$  则  $\\xi_{n}\\stackrel{a.s.}{\\rightarrow}\\xi.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.432,
+            0.591,
+            0.449
+          ],
+          "content": "证明 根据概率测度的次可加性, 对任何  $\\varepsilon > 0$  有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.258,
+            0.465,
+            0.662,
+            0.508
+          ],
+          "content": "\\mathrm{P} \\Big (\\bigcup_ {i = n} ^ {\\infty} \\left\\{| \\xi_ {i} - \\xi | \\geqslant \\varepsilon \\right\\} \\Big) \\leqslant \\sum_ {i = n} ^ {\\infty} \\mathrm{P} (| \\xi_ {i} - \\xi | \\geqslant \\varepsilon).",
+          "image_source": "../../raw/pages_0161-0176/images/page_173_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.083,
+            0.525,
+            0.783,
+            0.544
+          ],
+          "content": "若 $\\xi_{n} \\stackrel{\\mathrm{c}}{\\rightarrow} \\xi$，则上式右边当 $n \\to \\infty$ 时趋于零。再根据定理6.1.1即知 $\\xi_{n} \\stackrel{\\mathrm{a.s.}}{\\rightarrow} \\xi$。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.083,
+            0.549,
+            0.879,
+            0.615
+          ],
+          "content": "我们可以将完全收敛性 (6.1.3) 理解为关于概率 $\\mathbf{P}(|\\xi_n - \\xi| \\geqslant \\varepsilon)$ 当 $n \\to \\infty$ 时的衰减速度的一个条件, 它给出了随机变量列几乎必然收敛的自然的和便于验证的充分条件. 完全收敛性经常与下面的博雷尔-坎泰利 (Borel-Cantelli) 引理结合使用. 回忆记号"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.348,
+            0.63,
+            0.572,
+            0.674
+          ],
+          "content": "\\operatorname * {l i m s u p} _ {n \\to \\infty} A _ {n} = \\bigcap_ {n = 1} ^ {\\infty} \\bigcup_ {i = n} ^ {\\infty} A _ {i}.",
+          "image_source": "../../raw/pages_0161-0176/images/page_173_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.131,
+            0.692,
+            0.728,
+            0.712
+          ],
+          "content": "引理 6.1.3 (博雷尔-坎泰利引理) (1) 对于任意事件列  $\\{A_{n}\\}$  有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.273,
+            0.727,
+            0.646,
+            0.77
+          ],
+          "content": "\\sum_ {n = 1} ^ {\\infty} \\mathbf {P} (A _ {n}) <   \\infty \\Rightarrow \\mathbf {P} \\Big (\\limsup _ {n \\to \\infty} A _ {n} \\Big) = 0.",
+          "image_source": "../../raw/pages_0161-0176/images/page_173_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.126,
+            0.785,
+            0.429,
+            0.803
+          ],
+          "content": "(2) 若 $\\{A_{n}\\}$ 为独立事件序列, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.273,
+            0.816,
+            0.646,
+            0.858
+          ],
+          "content": "\\sum_ {n = 1} ^ {\\infty} \\mathbf {P} (A _ {n}) = \\infty \\Rightarrow \\mathbf {P} \\Big (\\limsup _ {n \\to \\infty} A _ {n} \\Big) = 1.",
+          "image_source": "../../raw/pages_0161-0176/images/page_173_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.083,
+            0.874,
+            0.879,
+            0.937
+          ],
+          "content": "证明 (1) 假设 $\\sum_{n=1}^{\\infty} \\mathbf{P}(A_n) < \\infty$. 记 $B_n = \\bigcup_{i=n}^{\\infty} A_i$, 则 $B_n \\downarrow \\limsup_{n} A_n$. 由概率的上连续性,"
+        }
+      ]
+    },
+    {
+      "page_idx": 174,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.056,
+            0.048,
+            0.086,
+            0.059
+          ],
+          "content": "160"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.046,
+            0.247,
+            0.06
+          ],
+          "content": "第六章 收敛性质"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.242,
+            0.102,
+            0.72,
+            0.145
+          ],
+          "content": "\\mathbf {P} \\Big (\\operatorname * {l i m s u p} _ {n \\to \\infty} A _ {n} \\Big) = \\lim _ {n \\to \\infty} \\mathbf {P} (B _ {n}) \\leqslant \\lim _ {n \\to \\infty} \\sum_ {i = n} ^ {\\infty} \\mathbf {P} (A _ {i}) = 0.",
+          "image_source": "../../raw/pages_0161-0176/images/page_174_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.156,
+            0.719,
+            0.199
+          ],
+          "content": "(2) 设 $\\{A_{n}\\}$ 为独立事件序列, 且 $\\sum_{n=1}^{\\infty} \\mathbf{P}(A_{n}) = \\infty$. 由独立性有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.22,
+            0.21,
+            0.741,
+            0.256
+          ],
+          "content": "\\mathbf {P} \\Big (\\bigcap_ {i = n} ^ {n + k} A _ {i} ^ {c} \\Big) = \\prod_ {i = n} ^ {n + k} [ 1 - \\mathbf {P} (A _ {i}) ] = \\exp \\Big \\{\\sum_ {i = n} ^ {n + k} \\ln [ 1 - \\mathbf {P} (A _ {i}) ] \\Big \\}.",
+          "image_source": "../../raw/pages_0161-0176/images/page_174_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.266,
+            0.385,
+            0.284
+          ],
+          "content": "令 $k\\to \\infty$ ，并应用上连续性得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.302,
+            0.294,
+            0.659,
+            0.338
+          ],
+          "content": "\\mathbf {P} \\Big (\\bigcap_ {i = n} ^ {\\infty} A _ {i} ^ {c} \\Big) = \\exp \\Big \\{\\sum_ {i = n} ^ {\\infty} \\ln [ 1 - \\mathbf {P} (A _ {i}) ] \\Big \\},",
+          "image_source": "../../raw/pages_0161-0176/images/page_174_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.348,
+            0.429,
+            0.367
+          ],
+          "content": "其中 $\\ln [1 - \\mathbf{P}(A_i)]\\leqslant -\\mathbf{P}(A_i)$ .所以"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.305,
+            0.376,
+            0.697,
+            0.519
+          ],
+          "content": "\\begin{array}{l} \\sum_ {i = n} ^ {\\infty} \\mathbf {P} (A _ {i}) = \\infty \\Rightarrow \\sum_ {i = n} ^ {\\infty} \\ln [ 1 - \\mathbf {P} (A _ {i}) ] = - \\infty \\\\ \\Rightarrow \\mathbf {P} \\Big (\\bigcap_ {i = n} ^ {\\infty} A _ {i} ^ {c} \\Big) = 0 \\\\ \\Rightarrow \\mathbf {P} \\Big (\\bigcup_ {n = 1} ^ {\\infty} \\bigcap_ {i = n} ^ {\\infty} A _ {i} ^ {c} \\Big) = 0, \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0161-0176/images/page_174_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.529,
+            0.152,
+            0.545
+          ],
+          "content": "进而"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.208,
+            0.556,
+            0.75,
+            0.599
+          ],
+          "content": "\\mathbf {P} \\Big (\\operatorname * {l i m s u p} _ {n \\to \\infty} A _ {n} \\Big) = \\mathbf {P} \\Big (\\bigcap_ {n = 1} ^ {\\infty} \\bigcup_ {i = n} ^ {\\infty} A _ {i} \\Big) = 1 - \\mathbf {P} \\Big (\\bigcup_ {n = 1} ^ {\\infty} \\bigcap_ {i = n} ^ {\\infty} A _ {i} ^ {c} \\Big) = 1.",
+          "image_source": "../../raw/pages_0161-0176/images/page_174_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.609,
+            0.241,
+            0.626
+          ],
+          "content": "故得欲证结论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.633,
+            0.898,
+            0.679
+          ],
+          "content": "根据博雷尔-坎泰利引理, 若 $\\{A_{n}\\}$ 为独立事件序列, 则事件 $\\limsup_{n\\to \\infty}A_n$ 发生的概率只可能是0或1. 这个现象称为0-1律."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.685,
+            0.896,
+            0.734
+          ],
+          "content": "例 6.1.1 设有  $\\xi_{n} \\stackrel{a.s.}{\\rightarrow} \\xi$  和  $\\eta_{n} \\stackrel{a.s.}{\\rightarrow} \\eta$ . 则对  $R^{2}$  上的任何连续函数 f 有  $f(\\xi_{n}, \\eta_{n}) \\stackrel{a.s.}{\\rightarrow} f(\\xi, \\eta)$ . 事实上, 根据假设有  $\\mathbf{P}(\\lim_{n \\to \\infty} \\xi_{n} = \\xi) = 1$  和  $\\mathbf{P}(\\lim_{n \\to \\infty} \\eta_{n} = \\eta) = 1$ . 因此"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.285,
+            0.744,
+            0.672,
+            0.775
+          ],
+          "content": "\\mathbf {P} \\Big (\\Big \\{\\lim _ {n \\to \\infty} \\xi_ {n} = \\xi \\Big \\} \\cap \\Big \\{\\lim _ {n \\to \\infty} \\eta_ {n} = \\eta \\Big \\} \\Big) = 1.",
+          "image_source": "../../raw/pages_0161-0176/images/page_174_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.782,
+            0.171,
+            0.798
+          ],
+          "content": "再注意"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.19,
+            0.809,
+            0.769,
+            0.84
+          ],
+          "content": "\\Big \\{\\lim _ {n \\to \\infty} \\xi_ {n} = \\xi \\Big \\} \\cap \\Big \\{\\lim _ {n \\to \\infty} \\eta_ {n} = \\eta \\Big \\} \\subseteq \\Big \\{\\lim _ {n \\to \\infty} f (\\xi_ {n}, \\eta_ {n}) = f (\\xi , \\eta) \\Big \\},",
+          "image_source": "../../raw/pages_0161-0176/images/page_174_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.846,
+            0.15,
+            0.863
+          ],
+          "content": "故有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.325,
+            0.875,
+            0.632,
+            0.904
+          ],
+          "content": "\\mathbf {P} \\Big (\\lim _ {n \\to \\infty} f (\\xi_ {n}, \\eta_ {n}) = f (\\xi , \\eta) \\Big) = 1,",
+          "image_source": "../../raw/pages_0161-0176/images/page_174_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.914,
+            0.315,
+            0.935
+          ],
+          "content": "即  $f(\\xi_{n},\\eta_{n}) \\stackrel{\\mathrm{a.s.}}{\\rightarrow} f(\\xi,\\eta).$"
+        }
+      ]
+    },
+    {
+      "page_idx": 175,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.731,
+            0.046,
+            0.896,
+            0.061
+          ],
+          "content": "6.1 随机变量的收敛"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.915,
+            0.048,
+            0.944,
+            0.06
+          ],
+          "content": "161"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.14,
+            0.099,
+            0.359,
+            0.12
+          ],
+          "level": 2,
+          "content": "6.1.2 依概率收敛"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.144,
+            0.894,
+            0.187
+          ],
+          "content": "定义 6.1.3 称随机变量序列  $\\{\\xi_{n}\\}$  依概率收敛于随机变量  $\\xi$ ，并记作  $\\xi_{n} \\stackrel{P}{\\rightarrow} \\xi$ ，是指对任意的  $\\varepsilon > 0$ ，当  $n \\to \\infty$  时有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.23,
+            0.201,
+            0.72,
+            0.222
+          ],
+          "content": "\\mathbf {P} (| \\xi_ {n} - \\xi | \\geqslant \\varepsilon) = \\mathbf {P} \\big (\\omega \\in \\Omega : | \\xi_ {n} (\\omega) - \\xi (\\omega) | \\geqslant \\varepsilon \\big) \\rightarrow 0.",
+          "image_source": "../../raw/pages_0161-0176/images/page_175_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.232,
+            0.49,
+            0.253
+          ],
+          "content": "定理 6.1.4 若  $\\xi_{n} \\stackrel{a.s.}{\\rightarrow} \\xi$ ，则  $\\xi_{n} \\stackrel{p}{\\rightarrow} \\xi$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.258,
+            0.775,
+            0.299
+          ],
+          "content": "证明 只需注意 $\\{|\\xi_n - \\xi| \\geqslant \\varepsilon\\} \\subseteq \\bigcup_{i=n}^{\\infty} \\{|\\xi_i - \\xi| \\geqslant \\varepsilon\\}$ 并应用定理6.1.1."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.302,
+            0.894,
+            0.344
+          ],
+          "content": "例 6.1.2 取  $\\Omega=(0,1]$  和  $\\mathcal{F}=(0,1]\\cap\\mathcal{B}$ ，再令 P 为  $(\\Omega,\\mathcal{F})$  上的勒贝格测度。则  $(\\Omega,\\mathcal{F},\\mathbf{P})$  是概率空间。对于  $\\omega\\in\\Omega$ ，令  $\\eta_{11}(\\omega)=1$ ，再令"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.277,
+            0.358,
+            0.671,
+            0.38
+          ],
+          "content": "\\eta_ {2 1} (\\omega) = 1 _ {(0, 1 / 2 ]} (\\omega), \\quad \\eta_ {2 2} (\\omega) = 1 _ {(1 / 2, 1 ]} (\\omega).",
+          "image_source": "../../raw/pages_0161-0176/images/page_175_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.391,
+            0.454,
+            0.408
+          ],
+          "content": "一般地, 对整数 $k \\geqslant 1$ 和 $1 \\leqslant i \\leqslant k$, 令"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.314,
+            0.423,
+            0.637,
+            0.444
+          ],
+          "content": "\\eta_ {k i} (\\omega) = 1 _ {((i - 1) / k, i / k ]} (\\omega), \\quad \\omega \\in \\Omega .",
+          "image_source": "../../raw/pages_0161-0176/images/page_175_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.455,
+            0.394,
+            0.473
+          ],
+          "content": "这样, 我们得到可数个随机变量"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.339,
+            0.493,
+            0.609,
+            0.626
+          ],
+          "content": "\\begin{array}{l} \\eta_ {1 1}, \\\\ \\eta_ {2 1}, \\quad \\eta_ {2 2}, \\\\ \\eta_ {3 1}, \\quad \\eta_ {3 2}, \\quad \\eta_ {3 3}, \\\\ \\dots , \\\\ \\eta_ {k 1}, \\quad \\eta_ {k 2}, \\quad \\eta_ {k 3}, \\quad \\dots , \\quad \\eta_ {k k}, \\\\ \\dots , \\end{array}",
+          "image_source": "../../raw/pages_0161-0176/images/page_175_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.64,
+            0.441,
+            0.658
+          ],
+          "content": "显然, 对于 $0 < \\varepsilon < 1$ 当 $k \\to \\infty$ 时有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.309,
+            0.666,
+            0.638,
+            0.699
+          ],
+          "content": "\\mathbf {P} (| \\eta_ {k i} | \\geqslant \\varepsilon) = \\mathbf {P} (\\eta_ {k i} = 1) = \\frac {1}{k} \\rightarrow 0.",
+          "image_source": "../../raw/pages_0161-0176/images/page_175_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.096,
+            0.705,
+            0.892,
+            0.773
+          ],
+          "content": "现将 $\\{\\eta_{ki}: k \\geqslant 1, 1 \\leqslant i \\leqslant k\\}$ 按字典式排序得到序列 $\\{\\xi_n : n \\geqslant 1\\}$. 由上式易见 $\\xi_n \\stackrel{\\mathrm{P}}{\\to} 0$. 另一方面, 对任意的 $\\omega \\in (0,1]$ 和任意的 $k \\geqslant 1$, 必然存在 $1 \\leqslant i \\leqslant k$ 满足 $\\omega \\in ((i-1)/k, i/k]$, 故 $\\eta_{ki}(\\omega) = 1$. 因此 $\\xi_n(\\omega) \\to 0$ 不成立. 这说明 $\\xi_n \\stackrel{\\mathrm{a.s.}}{\\to} \\xi$ 不成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.776,
+            0.882,
+            0.797
+          ],
+          "content": "定理 6.1.5 若  $\\xi_{n}\\stackrel{p}{\\rightarrow}\\xi$ ，则存在  $\\{\\xi_{n}\\}$  的子列  $\\{\\xi_{n_{k}}\\}$  使当  $k\\to\\infty$  时有  $\\xi_{n_{k}}\\stackrel{a.s.}{\\rightarrow}\\xi$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.801,
+            0.708,
+            0.819
+          ],
+          "content": "证明 根据假设, 对任意的整数 $k \\geqslant 1$, 存在整数 $n_k \\geqslant 1$ 使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.348,
+            0.833,
+            0.597,
+            0.853
+          ],
+          "content": "\\mathbf {P} (| \\xi_ {n _ {k}} - \\xi | \\geqslant 1 / k) \\leqslant 1 / 2 ^ {k}.",
+          "image_source": "../../raw/pages_0161-0176/images/page_175_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.096,
+            0.866,
+            0.436,
+            0.884
+          ],
+          "content": "对任意的 $\\varepsilon > 0$, 取整数 $N \\geqslant 1 / \\varepsilon$, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.179,
+            0.894,
+            0.784,
+            0.941
+          ],
+          "content": "\\sum_ {k = 1} ^ {\\infty} \\mathbf {P} (| \\xi_ {n _ {k}} - \\xi | \\geqslant \\varepsilon) = \\sum_ {k = 1} ^ {N - 1} \\mathbf {P} (| \\xi_ {n _ {k}} - \\xi | \\geqslant \\varepsilon) + \\sum_ {k = N} ^ {\\infty} \\mathbf {P} (| \\xi_ {n _ {k}} - \\xi | \\geqslant \\varepsilon)",
+          "image_source": "../../raw/pages_0161-0176/images/page_175_equation_20.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 176,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.064,
+            0.047,
+            0.095,
+            0.059
+          ],
+          "content": "162"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.114,
+            0.045,
+            0.254,
+            0.059
+          ],
+          "content": "第六章 收敛性质"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.385,
+            0.103,
+            0.819,
+            0.197
+          ],
+          "content": "\\begin{array}{l} \\leqslant \\sum_ {k = 1} ^ {N - 1} \\mathbf {P} \\left(\\left| \\xi_ {n _ {k}} - \\xi \\right| \\geqslant \\varepsilon\\right) + \\sum_ {k = N} ^ {\\infty} \\mathbf {P} \\left(\\left| \\xi_ {n _ {k}} - \\xi \\right| \\geqslant 1 / k\\right) \\\\ \\leqslant \\sum_ {k = 1} ^ {N - 1} \\mathbf {P} (| \\xi_ {n _ {k}} - \\xi | \\geqslant \\varepsilon) + \\sum_ {k = N} ^ {\\infty} \\frac {1}{2 ^ {k}} <   \\infty , \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0177-0192/images/page_176_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.211,
+            0.503,
+            0.231
+          ],
+          "content": "故  $\\xi_{n_{k}}\\stackrel{c}{\\rightarrow}\\xi.$  应用定理 6.1.2 即知  $\\xi_{n_{k}}\\stackrel{a.s.}{\\rightarrow}\\xi.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.236,
+            0.906,
+            0.277
+          ],
+          "content": "定义 6.1.4 称随机变量列  $\\{\\xi_{n}\\}$  为依概率收敛的基本列或柯西列, 是指对任意的  $\\varepsilon > 0$ , 当  $m, n \\to \\infty$  时有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.23,
+            0.293,
+            0.747,
+            0.314
+          ],
+          "content": "\\mathbf {P} (| \\xi_ {m} - \\xi_ {n} | \\geqslant \\varepsilon) = \\mathbf {P} \\big (\\omega \\in \\Omega : | \\xi_ {m} (\\omega) - \\xi_ {n} (\\omega) | \\geqslant \\varepsilon \\big) \\to 0.",
+          "image_source": "../../raw/pages_0177-0192/images/page_176_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.325,
+            0.906,
+            0.369
+          ],
+          "content": "定理 6.1.6 若随机变量序列  $\\{\\xi_{n}\\}$  是依概率收敛的基本列, 则存在  $\\{\\xi_{n}\\}$  的子列  $\\{\\xi_{n_{k}}\\}$ , 使当  $k \\to \\infty$  时  $\\xi_{n_{k}} \\stackrel{a.s.}{\\rightarrow}$  某个随机变量  $\\xi$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.153,
+            0.374,
+            0.799,
+            0.392
+          ],
+          "content": "证明 在假设条件下, 对任意的 $k \\geqslant 1$ 可取 $m_{k}$, 使当 $m, n \\geqslant m_{k}$ 时有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.354,
+            0.406,
+            0.621,
+            0.427
+          ],
+          "content": "\\mathrm{P} \\{| \\xi_ {m} - \\xi_ {n} | \\geqslant 1 / 2 ^ {k} \\} <   1 / 2 ^ {k}.",
+          "image_source": "../../raw/pages_0177-0192/images/page_176_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.441,
+            0.804,
+            0.46
+          ],
+          "content": "令 $n_1 = m_1$ ，并对 $k \\geqslant 1$ 定义 $n_{k+1} = (n_k + 1) \\vee m_{k+1}$. 显然 $n_k \\to \\infty$. 再令"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.334,
+            0.47,
+            0.641,
+            0.515
+          ],
+          "content": "F _ {m} = \\bigcup_ {k = m} ^ {\\infty} \\{| \\xi_ {n _ {k}} - \\xi_ {n _ {k + 1}} | \\geqslant 1 / 2 ^ {k} \\}.",
+          "image_source": "../../raw/pages_0177-0192/images/page_176_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.526,
+            0.416,
+            0.544
+          ],
+          "content": "于是  $\\{F_{m}\\}$  为递降的事件序列且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.223,
+            0.556,
+            0.753,
+            0.599
+          ],
+          "content": "\\mathbf {P} (F _ {m}) \\leqslant \\sum_ {k = m} ^ {\\infty} \\mathbf {P} \\{| \\xi_ {n _ {k}} - \\xi_ {n _ {k + 1}} | \\geqslant 1 / 2 ^ {k} \\} \\leqslant \\sum_ {k = m} ^ {\\infty} \\frac {1}{2 ^ {k}} = \\frac {1}{2 ^ {m - 1}}.",
+          "image_source": "../../raw/pages_0177-0192/images/page_176_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.612,
+            0.629,
+            0.653
+          ],
+          "content": "令 $N = \\bigcap_{m=1}^{\\infty} F_m$. 则有 $\\mathbf{P}(N) = \\lim_{m \\to \\infty} \\mathbf{P}(F_m) = 0$. 注意当"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.314,
+            0.666,
+            0.661,
+            0.709
+          ],
+          "content": "\\omega \\in F _ {m} ^ {c} = \\bigcap_ {k = m} ^ {\\infty} \\{| \\xi_ {n _ {k}} - \\xi_ {n _ {k + 1}} | <   1 / 2 ^ {k} \\}.",
+          "image_source": "../../raw/pages_0177-0192/images/page_176_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.722,
+            0.907,
+            0.809
+          ],
+          "content": "易知 $\\{\\xi_{n_k}(\\omega)\\}$ 是通常意义下的基本列. 于是, 当 $\\omega \\in N^c = \\bigcup_{m=1}^{\\infty} F_m^c$ 时 $\\{\\xi_{n_k}(\\omega)\\}$ 是通常意义下的基本列, 故当 $n \\to \\infty$ 时 $\\xi_{n_k}(\\omega) \\to$ 某个数 $\\xi(\\omega)$. 对于 $\\omega \\in N$, 令 $\\xi(\\omega) = 0$. 显然 $\\xi_{n_k} \\stackrel{\\text{a.s.}}{\\rightarrow} \\xi$. □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.111,
+            0.813,
+            0.906,
+            0.856
+          ],
+          "content": "定理 6.1.7 随机变量列  $\\{\\xi_{n}\\}$  是依概率收敛的基本列的充要条件是当  $n \\rightarrow \\infty$  时  $\\xi_{n} \\stackrel{P}{\\rightarrow}$  某个随机变量  $\\xi$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.861,
+            0.906,
+            0.903
+          ],
+          "content": "证明 假设 $\\xi_{n} \\stackrel{\\mathrm{P}}{\\rightarrow} \\xi$。则对任意的 $\\varepsilon > 0$ 和 $\\delta > 0$, 存在 $N = N(\\varepsilon, \\delta) \\geqslant 1$ 使当 $n \\geqslant N$ 时有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.37,
+            0.918,
+            0.602,
+            0.938
+          ],
+          "content": "\\mathbf {P} \\{| \\xi_ {n} - \\xi | \\geqslant \\varepsilon / 2 \\} <   \\delta / 2.",
+          "image_source": "../../raw/pages_0177-0192/images/page_176_equation_18.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 177,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.721,
+            0.049,
+            0.886,
+            0.064
+          ],
+          "content": "6.1 随机变量的收敛"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.905,
+            0.051,
+            0.936,
+            0.063
+          ],
+          "content": "163"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.09,
+            0.103,
+            0.441,
+            0.121
+          ],
+          "content": "所以当 $m, n \\geqslant N$ 时, 根据次可加性有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.175,
+            0.133,
+            0.757,
+            0.154
+          ],
+          "content": "\\mathbf {P} \\{| \\xi_ {m} - \\xi_ {n} | \\geqslant \\varepsilon \\} \\leqslant \\mathbf {P} (\\{| \\xi_ {m} - \\xi | \\geqslant \\varepsilon / 2 \\} \\cup \\{| \\xi_ {n} - \\xi | \\geqslant \\varepsilon / 2 \\}) \\leqslant \\delta .",
+          "image_source": "../../raw/pages_0177-0192/images/page_177_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.088,
+            0.169,
+            0.885,
+            0.236
+          ],
+          "content": "这说明 $\\{\\xi_n\\}$ 是依概率收敛的基本列. 反之, 假设 $\\{\\xi_n\\}$ 是依概率收敛的基本列. 根据定理 6.1.6, 有子列 $\\{\\xi_{n_k}\\} \\subseteq \\{\\xi_n\\}$ 使得 $\\xi_{n_k} \\stackrel{\\mathrm{a.s.}}{\\rightarrow}$ 某个随机变量 $\\xi$. 于是有 $\\xi_{n_k} \\stackrel{\\mathrm{p}}{\\rightarrow} \\xi$. 这样, 对任意的 $\\varepsilon > 0$ 和 $\\delta > 0$, 存在 $N = N(\\varepsilon, \\delta) \\geqslant 1$ 使当 $m, n \\geqslant N$ 时有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.374,
+            0.248,
+            0.599,
+            0.268
+          ],
+          "content": "\\mathrm{P} \\{| \\xi_ {n} - \\xi_ {m} | \\geqslant \\varepsilon / 2 \\} <   \\delta .",
+          "image_source": "../../raw/pages_0177-0192/images/page_177_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.089,
+            0.277,
+            0.377,
+            0.295
+          ],
+          "content": "对于 $n \\geqslant N$ 取 $n_k \\geqslant n$, 此时有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.212,
+            0.306,
+            0.757,
+            0.36
+          ],
+          "content": "\\begin{array}{l} \\mathbf {P} \\{| \\xi_ {n} - \\xi | \\geqslant \\varepsilon \\} \\leqslant \\mathbf {P} \\{| \\xi_ {n} - \\xi_ {n _ {k}} | \\geqslant \\varepsilon / 2 \\} + \\mathbf {P} \\{| \\xi_ {n _ {k}} - \\xi | \\geqslant \\varepsilon / 2 \\} \\\\ \\leqslant \\delta + \\mathbf {P} \\{| \\xi_ {n _ {k}} - \\xi | \\geqslant \\varepsilon / 2 \\}. \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0177-0192/images/page_177_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.088,
+            0.375,
+            0.779,
+            0.395
+          ],
+          "content": "在上式中令 $k \\to \\infty$ 即知 $\\mathbf{P}\\{| \\xi_n - \\xi| \\geqslant \\varepsilon\\} \\leqslant \\delta$. 所以当 $n \\to \\infty$ 时有 $\\xi_n \\xrightarrow{\\mathrm{p}} \\xi$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.399,
+            0.767,
+            0.418
+          ],
+          "content": "显然, 定理 6.1.7 中的随机变量  $\\xi$  在几乎必然相等的意义下是唯一的."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.13,
+            0.445,
+            0.322,
+            0.465
+          ],
+          "level": 2,
+          "content": "6.1.3 平均收敛"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.088,
+            0.491,
+            0.884,
+            0.532
+          ],
+          "content": "设 $r > 0$ 为常数. 用 $L^r$ 表示概率空间 $(\\Omega, \\mathcal{F}, \\mathbf{P})$ 上的所有满足 $\\mathbf{E}(|\\xi|^r) < \\infty$ 的随机变量 $\\xi$ 构成的集合."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.088,
+            0.538,
+            0.883,
+            0.582
+          ],
+          "content": "定义 6.1.5 设有  $\\xi, \\xi_{1}, \\xi_{2}, \\cdots \\in L^{r}$ . 称  $\\{\\xi_{n}\\} L^{r}$  收敛或 r 阶平均收敛于  $\\xi$ , 并记作  $\\xi_{n} \\stackrel{L^{r}}{\\rightarrow} \\xi$ , 是指当  $n \\to \\infty$  时有  $\\mathbf{E}(|\\xi_{n} - \\xi|^{r}) \\to 0$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.088,
+            0.586,
+            0.882,
+            0.629
+          ],
+          "content": "定义6.1.6 称 $\\{\\xi_n\\} \\subseteq L^r$ 为 $L^r$ 基本列或 $L^r$ 柯西列, 是指当 $m, n \\to \\infty$ 时有 $\\mathbf{E}(|\\xi_m - \\xi_n|^r) \\to 0$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.088,
+            0.634,
+            0.882,
+            0.678
+          ],
+          "content": "根据推论 4.3.12, 函数 $r \\mapsto [\\mathbf{E}(|X|^r)]^{1/r}$ 在 $(0, \\infty)$ 上不降. 因此, 对于 $0 < q < r$, 若 $\\xi_n \\xrightarrow{L^r} \\xi$, 则 $\\xi_n \\xrightarrow{L^q} \\xi$. 类似地, 若 $\\{\\xi_n\\}$ 是 $L^r$ 中的基本列, 则它是 $L^q$ 中的基本列."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.681,
+            0.757,
+            0.7
+          ],
+          "content": "引理6.1.8 设对常数 $r > 0$ 有 $\\mathbf{E}[|\\xi|^r] < \\infty$. 则对任意的 $\\varepsilon > 0$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.354,
+            0.717,
+            0.572,
+            0.737
+          ],
+          "content": "\\mathbf {P} (| \\xi | \\geqslant \\varepsilon) \\leqslant \\varepsilon^ {- r} \\mathbf {E} [ | \\xi | ^ {r} ].",
+          "image_source": "../../raw/pages_0177-0192/images/page_177_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.13,
+            0.752,
+            0.6,
+            0.773
+          ],
+          "content": "证明 注意 $|\\xi|^r \\geqslant |\\xi|^r 1_{\\{|\\xi| \\geqslant \\varepsilon\\}} \\geqslant \\varepsilon^r 1_{\\{|\\xi| \\geqslant \\varepsilon\\}}$。因此有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.216,
+            0.789,
+            0.711,
+            0.81
+          ],
+          "content": "\\mathbf {E} [ | \\xi | ^ {r} ] \\geqslant \\mathbf {E} [ | \\xi | ^ {r} 1 _ {\\{| \\xi | \\geqslant \\varepsilon \\}} ] \\geqslant \\mathbf {E} [ \\varepsilon^ {r} 1 _ {\\{| \\xi | \\geqslant \\varepsilon \\}} ] = \\varepsilon^ {r} \\mathbf {P} (| \\xi | \\geqslant \\varepsilon),",
+          "image_source": "../../raw/pages_0177-0192/images/page_177_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.088,
+            0.824,
+            0.269,
+            0.842
+          ],
+          "content": "故欲证不等式成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.13,
+            0.848,
+            0.623,
+            0.867
+          ],
+          "content": "上面引理中的不等式称为马尔可夫 (Markov) 不等式."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.087,
+            0.87,
+            0.882,
+            0.913
+          ],
+          "content": "定理 6.1.9 (i) 若  $\\xi_{n} \\stackrel{L^{r}}{\\rightarrow} \\xi$ ，则  $\\xi_{n} \\stackrel{P}{\\rightarrow} \\xi$ ; (ii) 若  $\\{\\xi_{n}\\}$  是  $L^{r}$  中的基本列，则它是依概率收敛的基本列."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.128,
+            0.92,
+            0.42,
+            0.938
+          ],
+          "content": "证明 由马尔可夫不等式易证."
+        }
+      ]
+    },
+    {
+      "page_idx": 178,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.067,
+            0.048,
+            0.098,
+            0.062
+          ],
+          "content": "164"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.116,
+            0.047,
+            0.258,
+            0.062
+          ],
+          "content": "第六章 收敛性质"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.114,
+            0.105,
+            0.909,
+            0.148
+          ],
+          "content": "定理6.1.10 随机变量列 $\\{\\xi_n\\}$ 是 $L^r$ 中的基本列的充要条件是当 $n\\to \\infty$ 时$\\xi_{n}\\stackrel {L^{r}}{\\rightarrow}$ 某个随机变量 $\\xi$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.151,
+            0.769,
+            0.172
+          ],
+          "content": "证明 假设 $\\xi_{n}\\stackrel {L^{r}}{\\rightarrow}\\xi$ 对于 $\\varepsilon >0$ ，存在 $N = N(\\varepsilon)$ 使当 $n\\geqslant N$ 时有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.425,
+            0.187,
+            0.597,
+            0.207
+          ],
+          "content": "\\mathbf {E} [ | \\xi_ {n} - \\xi | ^ {r} ] <   \\varepsilon / 2.",
+          "image_source": "../../raw/pages_0177-0192/images/page_178_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.116,
+            0.221,
+            0.327,
+            0.239
+          ],
+          "content": "于是当 $m, n \\geqslant N$ 时有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.248,
+            0.255,
+            0.734,
+            0.275
+          ],
+          "content": "\\mathbf {E} [ | \\xi_ {m} - \\xi_ {n} | ^ {r} ] \\leqslant c _ {r} \\mathbf {E} [ | \\xi_ {m} - \\xi | ^ {r} ] + c _ {r} \\mathbf {E} [ | \\xi - \\xi_ {m} | ^ {r} ] \\leqslant c _ {r} \\varepsilon .",
+          "image_source": "../../raw/pages_0177-0192/images/page_178_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.114,
+            0.288,
+            0.912,
+            0.405
+          ],
+          "content": "其中 $c_{r} = 1$ (当 $0 < r \\leqslant 1$ 时) 或 $c_{r} = 2^{r - 1}$ (当 $r > 1$ 时). 因此 $\\{\\xi_n\\}$ 是 $L^r$ 中的基本列. 反之, 设 $\\{\\xi_n\\}$ 是 $L^r$ 中的基本列. 由定理6.1.9知 $\\{\\xi_n\\}$ 是依概率收敛的基本列. 根据定理6.1.6存在 $\\{\\xi_n\\}$ 的子列 $\\{\\xi_{n_k}\\}$, 使当 $k \\to \\infty$ 时 $\\xi_{n_k} \\stackrel{\\mathrm{a.s.}}{\\rightarrow}$ 某个随机变量 $\\xi$. 对于任意的 $\\varepsilon > 0$, 可取 $N = N(\\varepsilon)$ 使当 $m, n \\geqslant N$ 时有 $\\mathbf{E}[|\\xi_m - \\xi_n|^r] < \\varepsilon$. 特别地, 对 $n_k \\geqslant n \\geqslant N$ 有 $\\mathbf{E}[|\\xi_{n_k} - \\xi_n|^r] < \\varepsilon$. 再由法图定理有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.202,
+            0.415,
+            0.78,
+            0.445
+          ],
+          "content": "\\mathbf {E} [ | \\xi - \\xi_ {n} | ^ {r} ] = \\mathbf {E} \\Big [ \\operatorname * {l i m i n f} _ {k \\to \\infty} | \\xi_ {n _ {k}} - \\xi_ {n} | ^ {r} \\Big ] \\leqslant \\operatorname * {l i m i n f} _ {k \\to \\infty} \\mathbf {E} [ | \\xi_ {n _ {k}} - \\xi_ {n} | ^ {r} ] \\leqslant \\varepsilon .",
+          "image_source": "../../raw/pages_0177-0192/images/page_178_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.115,
+            0.459,
+            0.304,
+            0.479
+          ],
+          "content": "这就证明了  $\\xi_{n}\\stackrel{L^{r}}{\\rightarrow}\\xi.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.889,
+            0.462,
+            0.91,
+            0.477
+          ],
+          "content": "□"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.485,
+            0.843,
+            0.503
+          ],
+          "content": "不难证明, 定理 6.1.10 中的随机变量  $\\xi$  在几乎必然相等的意义下是唯一的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.115,
+            0.508,
+            0.909,
+            0.556
+          ],
+          "content": "例 6.1.3 令  $(\\Omega, \\mathcal{F}, \\mathbf{P})$  如例 6.1.2 所定义. 对  $n \\geqslant 1$  令  $X_{n} = n^{1/r} 1_{(0,1/n]}$ . 则  $\\lim_{n \\to \\infty} X_{n}(\\omega) = 0$  对所有  $\\omega \\in \\Omega$  成立, 故  $X_{n} \\stackrel{a.s.}{\\rightarrow} 0$ . 但  $E[|X_{n}|^{r}] = 1$ , 故  $X_{n} \\stackrel{L^{r}}{\\rightarrow} 0$  不成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.114,
+            0.56,
+            0.909,
+            0.604
+          ],
+          "content": "例 6.1.4 令  $\\{\\eta_{ki}: k \\geqslant 1, 1 \\leqslant i \\leqslant k\\}$  和  $\\{\\xi_{n}: n \\geqslant 1\\}$  如例 6.1.2 所定义, 则  $\\xi_{n} \\stackrel{a.s.}{\\rightarrow} \\xi$  不成立. 但对任意的 r > 0 有  $\\mathbf{E}(|\\eta_{ki}|^{r}) = 1/k \\rightarrow 0$ , 由此易知  $\\xi_{n} \\stackrel{L^{r}}{\\rightarrow} 0$ ."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.156,
+            0.631,
+            0.24,
+            0.651
+          ],
+          "level": 2,
+          "content": "练习题"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.114,
+            0.675,
+            0.91,
+            0.814
+          ],
+          "sub_type": "text",
+          "content": "1. 设  $\\{\\xi_{n}\\}$  为独立随机变量序列. 证明:  $\\xi_{n} \\xrightarrow{c} 0$  和  $\\xi_{n} \\xrightarrow{a.s.} 0$  等价.\n2. 设  $\\{X_{n}\\}$  为不增的非负随机变量序列且  $X_{n} \\stackrel{p}{\\rightarrow} 0$ . 证明  $X_{n} \\stackrel{a.s.}{\\rightarrow} 0$ .\n3. 证明:对于任何实随机变量 $X$，存在只取有理数值的随机变量序列 $\\{X_n\\}$ 满足 $X_n \\stackrel{\\text{a.s.}}{\\rightarrow} X$.\n4. 设 $f$ 为 $\\mathbb{R}_+$ 上的非负不降函数且当 $x > 0$ 时有 $f(x) > 0$. 证明对任何随机变量 $\\xi$ 和常数 $\\varepsilon > 0$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.367,
+            0.822,
+            0.615,
+            0.858
+          ],
+          "content": "\\mathbf {P} (| \\xi | \\geqslant \\varepsilon) \\leqslant \\frac {1}{f (\\varepsilon)} \\mathbf {E} [ f (| \\xi |) ].",
+          "image_source": "../../raw/pages_0177-0192/images/page_178_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.156,
+            0.87,
+            0.749,
+            0.892
+          ],
+          "content": "5. 设有 $\\xi_{n} \\xrightarrow{\\mathrm{p}} \\xi$ 和 $\\eta_{n} \\xrightarrow{\\mathrm{p}} \\eta$. 证明 $\\xi_{n} \\pm \\eta_{n} \\xrightarrow{\\mathrm{p}} \\xi \\pm \\eta$ 和 $\\xi_{n} \\eta_{n} \\xrightarrow{\\mathrm{p}} \\xi \\eta$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.114,
+            0.896,
+            0.909,
+            0.939
+          ],
+          "content": "6. 设 $f$ 为 $\\mathbb{R}_{+}$ 上的有界非负不降的连续函数且有 $f(0) = 0$ 和 $f(x) > 0 (x > 0)$. 证明 $\\xi_{n} \\stackrel{\\mathrm{p}}{\\to} 0$ 的充要条件是 $\\mathbf{E}f(|\\xi_{n}|) \\to 0$."
+        }
+      ]
+    },
+    {
+      "page_idx": 179,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.696,
+            0.046,
+            0.879,
+            0.061
+          ],
+          "content": "6.2 分布函数的弱收敛"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.898,
+            0.048,
+            0.927,
+            0.06
+          ],
+          "content": "165"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.082,
+            0.099,
+            0.4,
+            0.123
+          ],
+          "level": 2,
+          "content": "6.2 分布函数的弱收敛"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.122,
+            0.173,
+            0.418,
+            0.194
+          ],
+          "level": 2,
+          "content": "6.2.1 不降函数的弱收敛"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.219,
+            0.876,
+            0.26
+          ],
+          "content": "定义 6.2.1 设  $G, G_{1}, G_{2}, \\cdots$  为某个区间  $U \\subseteq R$  上的不降函数. 令  $C_{G} \\subseteq U$  为 G 的连续点集. 若"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.321,
+            0.277,
+            0.873,
+            0.3
+          ],
+          "content": "\\lim _ {n \\to \\infty} G _ {n} (x) = G (x), \\quad x \\in C _ {G}, \\tag {6.2.1}",
+          "image_source": "../../raw/pages_0177-0192/images/page_179_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.312,
+            0.487,
+            0.331
+          ],
+          "content": "则称序列  $\\{G_{n}\\}$  弱收敛于 G, 记作  $G_{n} \\xrightarrow{w} G$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.336,
+            0.876,
+            0.378
+          ],
+          "content": "定理 6.2.1 设  $G_{n}, n=1,2,\\cdots$  和 G 为开区间  $U \\subseteq R$  上的不降函数. 若对于 U 的某个稠子集 D 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.322,
+            0.394,
+            0.597,
+            0.418
+          ],
+          "content": "\\lim _ {n \\to \\infty} G _ {n} (x) = G (x), \\quad x \\in D,",
+          "image_source": "../../raw/pages_0177-0192/images/page_179_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.429,
+            0.197,
+            0.448
+          ],
+          "content": "则 $G_{n}\\xrightarrow{\\mathrm{w}}G.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.454,
+            0.673,
+            0.473
+          ],
+          "content": "证明 设 $x \\in C_G \\subseteq U$. 可取 $y, z \\in D$ 使 $y < x < z$. 这样有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.342,
+            0.484,
+            0.575,
+            0.503
+          ],
+          "content": "G _ {n} (y) \\leqslant G _ {n} (x) \\leqslant G _ {n} (z).",
+          "image_source": "../../raw/pages_0177-0192/images/page_179_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.516,
+            0.209,
+            0.534
+          ],
+          "content": "令 $n\\to \\infty$ 得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.216,
+            0.546,
+            0.743,
+            0.606
+          ],
+          "content": "\\begin{array}{l} G (y) = \\lim _ {n \\to \\infty} G _ {n} (y) \\leqslant \\operatorname * {l i m i n f} _ {n \\to \\infty} G _ {n} (x) \\\\ \\leqslant \\operatorname * {l i m s u p} _ {n \\to \\infty} G _ {n} (x) \\leqslant \\lim _ {n \\to \\infty} G _ {n} (z) = G (z). \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0177-0192/images/page_179_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.617,
+            0.354,
+            0.636
+          ],
+          "content": "在上式中令 $y \\uparrow x$ 和 $z \\downarrow x$ 得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.247,
+            0.647,
+            0.668,
+            0.674
+          ],
+          "content": "G (x) \\leqslant \\operatorname * {l i m   i n f} _ {n \\to \\infty} G _ {n} (x) \\leqslant \\operatorname * {l i m   s u p} _ {n \\to \\infty} G _ {n} (x) \\leqslant G (x).",
+          "image_source": "../../raw/pages_0177-0192/images/page_179_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.686,
+            0.456,
+            0.709
+          ],
+          "content": "故 $\\lim_{n\\to \\infty}G_n(x) = G(x)$. 因此有 $G_{n}\\stackrel{\\mathrm{w}}{\\rightarrow}G$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.711,
+            0.755,
+            0.73
+          ],
+          "content": "例6.2.1 对于任何 $n \\geqslant 1$ 可以定义 $\\mathbb{R}$ 上的概率分布函数 $F_{n}$ 如下:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.305,
+            0.745,
+            0.602,
+            0.787
+          ],
+          "content": "F _ {n} (x) = 1 _ {\\{x \\geqslant n \\}} = \\left\\{ \\begin{array}{l l} 0, & x <   n, \\\\ 1, & x \\geqslant n, \\end{array} \\right.",
+          "image_source": "../../raw/pages_0177-0192/images/page_179_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.802,
+            0.82,
+            0.821
+          ],
+          "content": "则显然 $F_{n} \\stackrel{\\mathrm{w}}{\\rightarrow} 0$. 这说明概率分布函数序列的弱收敛极限未必还是概率分布函数."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.121,
+            0.848,
+            0.34,
+            0.869
+          ],
+          "level": 2,
+          "content": "6.2.2 依分布收敛"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.894,
+            0.876,
+            0.937
+          ],
+          "content": "定义 6.2.2 设随机变量  $\\xi, \\xi_{1}, \\xi_{2}, \\cdots$  分别具有分布函数  $F, F_{1}, F_{2}, \\cdots$ . 若当  $n \\to \\infty$  时有  $F_{n} \\stackrel{w}{\\rightarrow} F$ , 则称序列  $\\{\\xi_{n}\\}$  依分布收敛或弱收敛于  $\\xi$ , 记作  $\\xi_{n} \\stackrel{d}{\\rightarrow} \\xi$  或  $\\xi_{n} \\stackrel{w}{\\rightarrow} \\xi$ ."
+        }
+      ]
+    },
+    {
+      "page_idx": 180,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.062,
+            0.048,
+            0.093,
+            0.06
+          ],
+          "content": "166"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.111,
+            0.046,
+            0.252,
+            0.06
+          ],
+          "content": "第六章 收敛性质"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.109,
+            0.103,
+            0.906,
+            0.169
+          ],
+          "content": "根据定义 6.2.1, 这里  $F_{n} \\xrightarrow{w} F$  意味着  $F_{n}(x) \\to F(x)$  对所有  $x \\in C_{F}$  成立, 其中  $C_{F}$  为 F 的连续点集. 注意, 该定义并不要求随机变量  $\\xi, \\xi_{1}, \\xi_{2}, \\cdots$  定义在同一个概率空间之上."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.109,
+            0.175,
+            0.906,
+            0.216
+          ],
+          "content": "例6.2.2 定义 $\\xi_{n}(\\omega) = 1 / n$ 和 $\\xi (\\omega) = 0, \\omega \\in \\Omega$. 则显然 $\\xi_{n} \\stackrel{\\mathrm{a.s.}}{\\rightarrow} \\xi$. 注意 $\\xi_{n}$ 和 $\\xi$ 的分布函数分别为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.321,
+            0.233,
+            0.652,
+            0.254
+          ],
+          "content": "F _ {n} (x) = 1 _ {\\{x \\geqslant 1 / n \\}}, \\quad F (x) = 1 _ {\\{x \\geqslant 0 \\}}.",
+          "image_source": "../../raw/pages_0177-0192/images/page_180_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.266,
+            0.628,
+            0.285
+          ],
+          "content": "因此 $F_{n} \\stackrel{\\mathrm{w}}{\\rightarrow} F$，但在点 $0 \\notin C_{F}$ 有 $F_{n}(0) = 0 \\nrightarrow 1 = F(0)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.157,
+            0.289,
+            0.497,
+            0.309
+          ],
+          "content": "定理 6.2.2 若  $\\xi_{n} \\stackrel{p}{\\rightarrow} \\xi,$  则  $\\xi_{n} \\stackrel{w}{\\rightarrow} \\xi.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.152,
+            0.314,
+            0.752,
+            0.333
+          ],
+          "content": "证明 设 $\\xi_{n}$ 和 $\\xi$ 的分布函数分别为 $F_{n}$ 和 $F$. 注意, 对 $y < x$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.305,
+            0.347,
+            0.707,
+            0.4
+          ],
+          "content": "\\begin{array}{l} \\{\\xi \\leqslant y \\} = \\{\\xi \\leqslant y, \\xi_ {n} \\leqslant x \\} \\cup \\{\\xi \\leqslant y, \\xi_ {n} > x \\} \\\\ \\subseteq \\{\\xi_ {n} \\leqslant x \\} \\cup \\{| \\xi_ {n} - \\xi | > x - y \\}, \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0177-0192/images/page_180_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.414,
+            0.373,
+            0.431
+          ],
+          "content": "故由概率测度的次可加性得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.322,
+            0.448,
+            0.651,
+            0.468
+          ],
+          "content": "F (y) \\leqslant F _ {n} (x) + \\mathbf {P} (| \\xi_ {n} - \\xi | > x - y)",
+          "image_source": "../../raw/pages_0177-0192/images/page_180_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.481,
+            0.448,
+            0.499
+          ],
+          "content": "由于 $\\xi_{n} \\xrightarrow{\\mathrm{P}} \\xi$ ，在上式中令 $n \\to \\infty$ 知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.349,
+            0.516,
+            0.623,
+            0.54
+          ],
+          "content": "F (y) \\leqslant \\liminf _ {n \\to \\infty} F _ {n} (x), \\quad y <   x.",
+          "image_source": "../../raw/pages_0177-0192/images/page_180_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.109,
+            0.549,
+            0.266,
+            0.566
+          ],
+          "content": "类似地可以得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.346,
+            0.583,
+            0.627,
+            0.61
+          ],
+          "content": "F (z) \\geqslant \\operatorname * {l i m s u p} _ {n \\to \\infty} F _ {n} (x), \\quad z > x.",
+          "image_source": "../../raw/pages_0177-0192/images/page_180_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.109,
+            0.622,
+            0.552,
+            0.64
+          ],
+          "content": "对于 $x \\in C_F$ 取 $y \\uparrow x$ 和 $z \\downarrow x$, 综合上面二式得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.265,
+            0.653,
+            0.748,
+            0.721
+          ],
+          "content": "\\begin{array}{l} F (x) = \\lim _ {y \\uparrow x} F (y) \\leqslant \\operatorname * {l i m i n f} _ {n \\to \\infty} F _ {n} (x) \\\\ \\leqslant \\operatorname * {l i m s u p} _ {n \\to \\infty} F _ {n} (x) \\leqslant \\lim _ {z \\downarrow x} F (z) = F (x). \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0177-0192/images/page_180_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.109,
+            0.732,
+            0.341,
+            0.755
+          ],
+          "content": "故有  $\\lim_{n\\to\\infty}F_{n}(x)=F(x)$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.108,
+            0.756,
+            0.906,
+            0.799
+          ],
+          "content": "例 6.2.3 设随机变量  $\\xi, \\eta$  相互独立且均服从伯努利分布  $B(1,1/2)$ . 令  $\\xi_{n} = \\eta, n \\geqslant 1$ . 则显然有  $\\xi_{n} \\stackrel{a.s.}{\\rightarrow} \\eta$  和  $\\xi_{n} \\stackrel{w}{\\rightarrow} \\xi$ . 但"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.242,
+            0.811,
+            0.774,
+            0.907
+          ],
+          "content": "\\begin{array}{l} \\mathbf {P} (| \\xi_ {n} - \\xi | = 1) = \\mathbf {P} (\\xi_ {n} = 1, \\xi = 0) + \\mathbf {P} (\\xi_ {n} = 0, \\xi = 1) \\\\ = \\mathbf {P} (\\xi_ {n} = 1) \\mathbf {P} (\\xi = 0) + \\mathbf {P} (\\xi_ {n} = 0) \\mathbf {P} (\\xi = 1) \\\\ = \\frac {1}{2} \\times \\frac {1}{2} + \\frac {1}{2} \\times \\frac {1}{2} = \\frac {1}{2} \\nrightarrow 0. \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0177-0192/images/page_180_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.109,
+            0.918,
+            0.281,
+            0.937
+          ],
+          "content": "故  $\\xi_{n}\\stackrel{P}{\\rightarrow}\\xi$  不成立."
+        }
+      ]
+    },
+    {
+      "page_idx": 181,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.703,
+            0.047,
+            0.884,
+            0.061
+          ],
+          "content": "6.2 分布函数的弱收敛"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.904,
+            0.048,
+            0.934,
+            0.06
+          ],
+          "content": "167"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.103,
+            0.538,
+            0.123
+          ],
+          "content": "定理 6.2.3 若  $\\xi_{n}\\xrightarrow{w}c$  (常数), 则  $\\xi_{n}\\xrightarrow{p}c$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.09,
+            0.128,
+            0.884,
+            0.17
+          ],
+          "content": "证明 注意, 常值随机变量 $\\xi = c$ 的分布函数为 $F(x) = 1_{\\{x \\geqslant c\\}}$, $x \\in \\mathbb{R}$. 对任意的 $\\varepsilon > 0$, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.269,
+            0.185,
+            0.881,
+            0.236
+          ],
+          "content": "\\begin{array}{l} \\mathbf {P} (| \\xi_ {n} - c | \\geqslant \\varepsilon) = \\mathbf {P} (\\xi_ {n} \\geqslant c + \\varepsilon) + \\mathbf {P} (\\xi_ {n} \\leqslant c - \\varepsilon) \\\\ = 1 - \\mathbf {P} (\\xi_ {n} <   c + \\varepsilon) + F _ {n} (c - \\varepsilon). \\tag {6.2.2} \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0177-0192/images/page_181_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.091,
+            0.25,
+            0.724,
+            0.269
+          ],
+          "content": "因为 $c - \\varepsilon$ 是 $F$ 的连续点, 所以 $F_{n}(c - \\varepsilon) \\to F(c - \\varepsilon) = 0$. 另外注意"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.273,
+            0.283,
+            0.702,
+            0.334
+          ],
+          "content": "\\begin{array}{l} \\mathbf {P} (\\xi_ {n} <   c + \\varepsilon) \\geqslant \\mathbf {P} (\\xi_ {n} \\leqslant c + \\varepsilon / 2) \\\\ = F _ {n} (c + \\varepsilon / 2) \\rightarrow F (c + \\varepsilon / 2) = 1. \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0177-0192/images/page_181_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.091,
+            0.348,
+            0.77,
+            0.368
+          ],
+          "content": "因此 $\\mathbf{P}(\\xi_n < c + \\varepsilon) \\to 1$. 再由 (6.2.2) 式得 $\\mathbf{P}(|\\xi_n - c| \\geqslant \\varepsilon) \\to 0$, 即 $\\xi_n \\xrightarrow{\\mathrm{p}} c$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.091,
+            0.371,
+            0.884,
+            0.414
+          ],
+          "content": "定理 6.2.4 设有  $\\xi_{n} \\stackrel{w}{\\rightarrow} \\xi$  和  $\\eta_{n} \\stackrel{p}{\\rightarrow} a$ ，其中  $a \\in R$  为常数而  $\\xi_{n}$  和  $\\eta_{n}$  定义在同一个概率空间上。则  $X_{n} := \\xi_{n} + \\eta_{n} \\stackrel{w}{\\rightarrow} \\xi + a$ 。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.089,
+            0.419,
+            0.884,
+            0.486
+          ],
+          "content": "证明 首先, 考虑 $a = 0$ 的情况. 令 $C_{F_{\\xi}}$ 为 $F_{\\xi}$ 的连续点集. 对于 $x \\in C_{F_{\\xi}}$ 存在序列 $\\{z_k\\} \\subseteq C_{F_{\\xi}}$ 满足 $z_k > x$ 且 $z_k \\downarrow x$. 由于 $\\eta_n \\stackrel{\\mathrm{P}}{\\to} 0$, 对任何 $k \\geqslant 1$, 可取 $N_k \\geqslant 1$ 使当 $n \\geqslant N_k$ 有 $\\mathbf{P}(|\\eta_n| \\geqslant z_k - x) < 1 / k$. 此时"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.166,
+            0.5,
+            0.81,
+            0.585
+          ],
+          "content": "\\begin{array}{l} F _ {X _ {n}} (x) = \\mathbf {P} (\\xi_ {n} + \\eta_ {n} \\leqslant x, | \\eta_ {n} | \\geqslant z _ {k} - x) + \\mathbf {P} (\\xi_ {n} + \\eta_ {n} \\leqslant x, | \\eta_ {n} | <   z _ {k} - x) \\\\ \\leqslant \\mathbf {P} \\left(\\left| \\eta_ {n} \\right| \\geqslant z _ {k} - x\\right) + \\mathbf {P} \\left(\\xi_ {n} \\leqslant x - \\eta_ {n}, - \\eta_ {n} <   z _ {k} - x\\right) \\\\ \\leqslant 1 / k + \\mathbf {P} (\\xi_ {n} \\leqslant z _ {k}) = 1 / k + F _ {\\xi_ {n}} (z _ {k}). \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0177-0192/images/page_181_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.091,
+            0.598,
+            0.49,
+            0.616
+          ],
+          "content": "由于 $\\xi_{n}\\xrightarrow{\\mathrm{w}}\\xi$ ，在上式两端先后令 $n\\to \\infty$ 得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.321,
+            0.632,
+            0.61,
+            0.658
+          ],
+          "content": "\\operatorname * {l i m s u p} _ {n \\to \\infty} F _ {X _ {n}} (x) \\leqslant 1 / k + F _ {\\xi} (z _ {k}),",
+          "image_source": "../../raw/pages_0177-0192/images/page_181_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.09,
+            0.669,
+            0.884,
+            0.744
+          ],
+          "content": "再令 $k \\to \\infty$ 得 $\\limsup_{n\\to \\infty}F_{X_n}(x) \\leqslant F_\\xi(x)$. 类似地有 $\\liminf_{n\\to \\infty}F_{X_n}(x) \\geqslant F_\\xi(x)$. 这说明 $X_n \\stackrel{\\mathrm{w}}{\\to} \\xi$ 成立. 对于一般情况, 由 $\\xi_n \\stackrel{\\mathrm{w}}{\\to} \\xi$ 和 $\\eta_n \\stackrel{\\mathrm{p}}{\\to} a$ 有 $\\xi_n + a \\stackrel{\\mathrm{w}}{\\to} \\xi + a$ 和 $\\eta_n - a \\stackrel{\\mathrm{p}}{\\to} 0$. 再由前面证明的结论知 $X_n = (\\xi_n + a) + (\\eta_n - a) \\stackrel{\\mathrm{w}}{\\to} \\xi + a$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.091,
+            0.748,
+            0.884,
+            0.792
+          ],
+          "content": "定理 6.2.5 设有  $\\xi_{n} \\stackrel{w}{\\rightarrow} \\xi$  和  $\\zeta_{n} \\stackrel{p}{\\rightarrow} a$ ，其中  $a \\in R$  为常数而  $\\xi_{n}$  和  $\\eta_{n}$  定义在同一个概率空间上。则  $Y_{n} := \\zeta_{n} \\xi_{n} \\stackrel{w}{\\rightarrow} a \\xi$ 。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.09,
+            0.796,
+            0.884,
+            0.841
+          ],
+          "content": "证明 首先, 考虑 $a = 0$ 的情况. 对于任意的 $\\delta > 0$ 可取充分大的 $c > 0$ 满足 $\\{c, -c\\} \\subseteq C_{F_{\\xi}}$ 和"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.185,
+            0.853,
+            0.745,
+            0.873
+          ],
+          "content": "\\mathbf {P} (| \\xi | > c) = \\mathbf {P} (\\xi <   - c) + \\mathbf {P} (\\xi > c) \\leqslant F _ {\\xi} (- c) + 1 - F _ {\\xi} (c) <   \\delta .",
+          "image_source": "../../raw/pages_0177-0192/images/page_181_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.09,
+            0.887,
+            0.273,
+            0.904
+          ],
+          "content": "这样, 对于 $\\varepsilon > 0$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.206,
+            0.918,
+            0.765,
+            0.938
+          ],
+          "content": "\\mathbf {P} (| Y _ {n} | \\geqslant \\varepsilon) = \\mathbf {P} (| \\zeta_ {n} \\xi_ {n} | \\geqslant \\varepsilon , | \\xi_ {n} | \\leqslant c) + \\mathbf {P} (| \\zeta_ {n} \\xi_ {n} | \\geqslant \\varepsilon , | \\xi_ {n} | > c)",
+          "image_source": "../../raw/pages_0177-0192/images/page_181_equation_18.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 182,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.047,
+            0.045,
+            0.076,
+            0.056
+          ],
+          "content": "168"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.096,
+            0.044,
+            0.237,
+            0.058
+          ],
+          "content": "第六章 收敛性质"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.328,
+            0.106,
+            0.689,
+            0.157
+          ],
+          "content": "\\begin{array}{l} \\leqslant \\mathbf {P} (| \\zeta_ {n} | \\geqslant \\varepsilon / c, | \\xi_ {n} | \\leqslant c) + \\mathbf {P} (| \\xi_ {n} | > c) \\\\ \\leqslant \\mathbf {P} (| \\zeta_ {n} | \\geqslant \\varepsilon / c) + F _ {\\xi_ {n}} (- c) + 1 - F _ {\\xi_ {n}} (c). \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0177-0192/images/page_182_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.094,
+            0.174,
+            0.553,
+            0.194
+          ],
+          "content": "因为 $\\xi_{n}\\stackrel{\\mathrm{w}}{\\rightarrow}\\xi$ 和 $\\zeta_n\\stackrel{\\mathrm{P}}{\\rightarrow}0,$ 在上式两端令 $n\\to \\infty$ 得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.261,
+            0.214,
+            0.68,
+            0.241
+          ],
+          "content": "\\operatorname * {l i m s u p} _ {n \\to \\infty} \\mathbf {P} (| Y _ {n} | \\geqslant \\varepsilon) \\leqslant F _ {\\xi} (- c) + 1 - F _ {\\xi} (c) <   \\delta .",
+          "image_source": "../../raw/pages_0177-0192/images/page_182_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.093,
+            0.259,
+            0.892,
+            0.327
+          ],
+          "content": "再由 $\\delta > 0$ 的任意性即知 $Y_{n} = \\zeta_{n}\\xi_{n} \\xrightarrow{\\mathrm{P}} 0$, 从而 $Y_{n} \\xrightarrow{\\mathrm{W}} 0$. 对于一般情况, 由 $\\xi_{n} \\xrightarrow{\\mathrm{W}} \\xi$ 和 $\\zeta_{n} \\xrightarrow{\\mathrm{P}} a$ 易得 $a\\xi_{n} \\xrightarrow{\\mathrm{W}} a\\xi$ 和 $\\zeta_{n} - a \\xrightarrow{\\mathrm{P}} 0$, 故由前面证明的结论知 $(\\zeta_{n} - a)\\xi_{n} \\xrightarrow{\\mathrm{W}} 0$, 再根据定理6.2.4有 $Y_{n} = a\\xi_{n} + (\\zeta_{n} - a)\\xi_{n} \\xrightarrow{\\mathrm{W}} a\\xi$."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.135,
+            0.354,
+            0.458,
+            0.375
+          ],
+          "level": 2,
+          "content": "6.2.3 斯科罗霍德表示定理"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.094,
+            0.4,
+            0.89,
+            0.443
+          ],
+          "content": "我们前面讨论过一维不降函数的广义逆. 根据一般的定义, 概率分布函数 $F$ 的广义逆 $F^{-1}$ 是区间 $(0,1)$ 上的左连续不降函数, 并且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.261,
+            0.462,
+            0.888,
+            0.482
+          ],
+          "content": "F ^ {- 1} (y) = \\inf \\{x \\in \\mathbb {R}: F (x) \\geqslant y \\}, \\quad 0 <   y <   1. \\tag {6.2.3}",
+          "image_source": "../../raw/pages_0177-0192/images/page_182_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.093,
+            0.501,
+            0.889,
+            0.542
+          ],
+          "content": "命题 6.2.6 设  $F, F_{1}, F_{2}, \\cdots$  为 R 上的概率分布函数. 若  $F_{n} \\xrightarrow{w} F$ , 则  $F_{n}^{-1} \\xrightarrow{w} F^{-1}$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.091,
+            0.549,
+            0.89,
+            0.64
+          ],
+          "content": "证明 设 $y \\in (0,1)$ 为 $F^{-1}$ 的连续点. 取 $x, z \\in U \\cap C_F$ 使 $x < F^{-1}(y) < z$. 由命题2.4.2的(6)知 $F(x) < y < F(z)$, 故当 $n$ 充分大时有 $F_n(x) < y < F_n(z)$. 再由 $F^{-1}$ 的定义有 $x < F_n^{-1}(y) \\leqslant z$. 综上, 当 $n$ 充分大时有 $|F_n^{-1}(y) - F^{-1}(y)| \\leqslant z - x$. 因 $x, z \\in U \\cap C_F$ 可以任意接近, 故推知 $F_n^{-1}(y) \\to F^{-1}(y)$. □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.645,
+            0.489,
+            0.663
+          ],
+          "content": "下面的结果称为斯科罗霍德表示定理."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.091,
+            0.669,
+            0.889,
+            0.735
+          ],
+          "content": "定理 6.2.7（斯科罗霍德）设概率分布函数序列  $\\{F_{n}\\}$  弱收敛到概率分布函数 F. 则存在某个概率空间上的随机变量序列  $\\{\\xi_{n}\\}$  和随机变量  $\\xi$  满足性质: $\\xi_{n}$  和  $\\xi$  分别有分布函数  $F_{n}$  和 F 且  $\\xi_{n} \\stackrel{a.s.}{\\rightarrow} \\xi$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.09,
+            0.741,
+            0.889,
+            0.83
+          ],
+          "content": "证明 取 $\\Omega = (0,1)$ 和 $\\mathcal{F} = (0,1) \\cap \\mathcal{B}$, 并令 $\\mathbf{P}$ 为 $(\\Omega, \\mathcal{F})$ 上的勒贝格测度. 则 $(\\Omega, \\mathcal{F}, \\mathbf{P})$ 是概率空间. 对 $\\omega \\in \\Omega$ 令 $\\eta(\\omega) = \\omega$. 则 $\\eta$ 服从均匀分布 $U(0,1)$. 令 $C_{F^{-1}} \\subseteq \\Omega$ 为 $F^{-1}$ 的连续点集, 则 $D_{F^{-1}} := \\Omega \\setminus C_{F^{-1}}$ 可数, 故 $\\mathbf{P}(D_{F^{-1}}) = 0$, 从而 $\\mathbf{P}(C_{F^{-1}}) = 1$. 对 $\\omega \\in \\Omega$ 令"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.182,
+            0.85,
+            0.754,
+            0.871
+          ],
+          "content": "\\xi_ {n} (\\omega) = F _ {n} ^ {- 1} (\\eta (\\omega)) = F _ {n} ^ {- 1} (\\omega), \\quad \\xi (\\omega) = F ^ {- 1} (\\eta (\\omega)) = F ^ {- 1} (\\omega),",
+          "image_source": "../../raw/pages_0177-0192/images/page_182_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.09,
+            0.889,
+            0.889,
+            0.933
+          ],
+          "content": "由定理2.4.3知随机变量 $\\xi_{n}$ 和 $\\xi$ 分别有分布函数 $F_{n}$ 和 $F$. 再由命题6.2.6知对 $\\omega \\in C_{F^{-1}}$ 有 $\\xi_{n}(\\omega) \\to \\xi(\\omega)$, 故 $\\xi_{n} \\stackrel{\\mathrm{a.s.}}{\\rightarrow} \\xi$."
+        }
+      ]
+    },
+    {
+      "page_idx": 183,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.709,
+            0.045,
+            0.889,
+            0.059
+          ],
+          "content": "6.3 弱收敛的等价条件"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.91,
+            0.047,
+            0.939,
+            0.058
+          ],
+          "content": "169"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.136,
+            0.099,
+            0.218,
+            0.118
+          ],
+          "level": 2,
+          "content": "练习题"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.091,
+            0.144,
+            0.889,
+            0.367
+          ],
+          "sub_type": "text",
+          "content": "1. 设 $\\{\\xi_n\\}$ 为独立同分布随机变量序列且有 $\\mathbf{P}(\\xi_n = 1) = \\mathbf{P}(\\xi_n = 0) = 1/2$。令 $X_n = \\sum_{k=1}^{n} \\xi_k / 2^k$。证明 $X_n$ 的分布弱收敛于 $(0,1)$ 上的均匀分布。\n2. 在上题的假设条件下, 令 $X = \\sum_{k=1}^{\\infty} \\xi_k / 2^k$. 证明 $X$ 服从 $(0,1)$ 上的均匀分布.\n3. 证明: 若概率分布函数序列 $\\{F_n\\}$ 弱收敛到连续的概率分布函数 $F$, 则 $\\{F_n\\}$ 在 $\\mathbb{R}$ 上逐点且一致收敛到 $F$.\n4. 证明:对于任何概率分布函数 F，存在离散型的概率分布函数序列  $\\{F_{n}\\}$  满足  $F_{n} \\stackrel{w}{\\rightarrow} F$ .\n5. 证明: 对于任何概率分布函数 $F$, 存在绝对连续型的概率分布函数序列 $\\{F_n\\}$ 满足 $F_n \\xrightarrow{\\mathrm{w}} F$."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.092,
+            0.424,
+            0.409,
+            0.446
+          ],
+          "level": 2,
+          "content": "6.3 弱收敛的等价条件"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.092,
+            0.495,
+            0.889,
+            0.536
+          ],
+          "content": "概率分布函数的弱收敛是一个重要的概念, 在很多概率论问题的研究中发挥着关键作用."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.135,
+            0.566,
+            0.327,
+            0.586
+          ],
+          "level": 2,
+          "content": "6.3.1 黑利定理"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.094,
+            0.611,
+            0.889,
+            0.658
+          ],
+          "content": "引理 6.3.1 设对每个整数  $n \\geqslant 1$  有实数列  $S_{n} := \\{S_{n,i} : i = 1, 2, \\cdots\\} \\subseteq [0, 1]$ .\n则存在子列  $\\{S_{k_{n}}\\}\\subseteq\\{S_{n}\\}$  使对每个  $i\\geqslant1$  极限  $\\lim_{n\\to\\infty}S_{k_{n},i}=T_{i}$  存在."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.092,
+            0.66,
+            0.889,
+            0.791
+          ],
+          "content": "证明 因  $\\{S_{n,1}: n=1,2,\\cdots\\}\\subseteq[0,1]$  是有界数列, 可取  $\\{S_{n}\\}$  的子列  $\\{S_{n}^{(1)}\\}$  使极限  $\\lim_{n\\to\\infty}S_{n,1}^{(1)}=T_{1}$  存在. 类似地, 可取  $\\{S_{n}^{(1)}\\}$  的子列  $\\{S_{n}^{(2)}\\}$  使极限  $\\lim_{n\\to\\infty}S_{n,2}^{(2)}=T_{2}$  存在. 注意  $\\lim_{n\\to\\infty}S_{n,1}^{(2)}=\\lim_{n\\to\\infty}S_{n,1}^{(1)}=T_{1}$ . 如此下去, 对  $i\\geqslant3$  可取  $\\{S_{n}^{(i-1)}\\}$  的子列  $\\{S_{n}^{(i)}\\}$  使极限  $\\lim_{n\\to\\infty}S_{n,i}^{(i)}=T_{i}$  存在. 同时对  $1\\leqslant j\\leqslant i-1$  有  $\\lim_{n\\to\\infty}S_{n,j}^{(i)}=T_{j}$ . 最后, 记  $S_{k_{n}}=S_{n}^{(n)}$ . 则  $\\{S_{n_{k}}\\}$  为  $\\{S_{n}\\}$  的子列, 且对每个  $i\\geqslant1$  有  $\\lim_{n\\to\\infty}S_{k_{n},i}=T_{i}$ . □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.094,
+            0.797,
+            0.889,
+            0.838
+          ],
+          "content": "定理6.3.2（黑利第一定理） 实直线 $\\mathbb{R}$ 上的任何概率分布函数序列 $\\{F_n\\}$ 都有子列弱收敛于某个有界右连续不降函数 $F$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.092,
+            0.845,
+            0.889,
+            0.935
+          ],
+          "content": "证明 记有理数集为 $D = \\{r_1, r_2, \\cdots, r_i, \\cdots\\} \\subseteq \\mathbb{R}$. 对于 $S_n = \\{F_n(r_i) : i = 1, 2, \\cdots\\} \\subseteq [0, 1]$, 应用引理 6.3.1 知, 存在子列 $\\{F_{k_n}\\} \\subseteq \\{F_n\\}$, 使对每个 $i \\geqslant 1$ 极限 $G(r_i) := \\lim_{k \\to \\infty} F_{n_k}(r_i)$ 存在. 因 $F_{n_k}$ 是概率分布函数, 故 $G$ 为 $D$ 上的有界不降函数. 补充定义"
+        }
+      ]
+    },
+    {
+      "page_idx": 184,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.058,
+            0.047,
+            0.087,
+            0.059
+          ],
+          "content": "170"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.045,
+            0.248,
+            0.06
+          ],
+          "content": "第六章 收敛性质"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.273,
+            0.103,
+            0.692,
+            0.122
+          ],
+          "content": "G (x) = \\inf \\{G (r): r \\in D, r > x \\}, \\quad x \\in \\mathbb {R} \\setminus D.",
+          "image_source": "../../raw/pages_0177-0192/images/page_184_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.138,
+            0.9,
+            0.181
+          ],
+          "content": "则 $G$ 成为 $\\mathbb{R}$ 上的有界不降函数. 根据定理6.2.1有 $F_{n_k} \\stackrel{\\mathrm{w}}{\\rightarrow} G$. 注意 $G$ 在 $\\mathbb{R}$ 上未必右连续, 但作为不降函数, 它至多只有可数个不连续点. 再定义"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.292,
+            0.195,
+            0.673,
+            0.214
+          ],
+          "content": "F (x) = \\inf \\{G (r): r \\in D, r > x \\}, \\quad x \\in \\mathbb {R}.",
+          "image_source": "../../raw/pages_0177-0192/images/page_184_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.23,
+            0.722,
+            0.25
+          ],
+          "content": "则 $F$ 是 $\\mathbb{R}$ 上的有界右连续不降函数. 显然 $C_F = C_G$, 故 $F_{n_k} \\stackrel{\\mathrm{w}}{\\to} F$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.254,
+            0.9,
+            0.297
+          ],
+          "content": "定理 6.3.3（黑利第二定理） 设  $F, F_{1}, F_{2}, \\cdots$  为 R 上的概率分布函数.则  $F_{n} \\stackrel{w}{\\rightarrow} F$  当且仅当对于 R 上的任何有界连续函数 f 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.316,
+            0.303,
+            0.9,
+            0.34
+          ],
+          "content": "\\int_ {- \\infty} ^ {\\infty} f (x) \\mathrm{d} F _ {n} (x) \\rightarrow \\int_ {- \\infty} ^ {\\infty} f (x) \\mathrm{d} F (x). \\tag {6.3.1}",
+          "image_source": "../../raw/pages_0177-0192/images/page_184_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.355,
+            0.902,
+            0.468
+          ],
+          "content": "证明 “$\\Rightarrow$”证法 1 设 $F_{n} \\stackrel{\\mathrm{w}}{\\rightarrow} F$, 即 $F_{n}(x) \\to F(x)$ 对所有 $x \\in C_{F}$ 成立, 其中 $C_{F}$ 为 $F$ 的连续点集. 给定 $\\varepsilon > 0$, 取 $a, b \\in C_{F}$ 满足 $a \\leqslant b$ 且 $1 - F(b) + F(a) < \\varepsilon$. 于是, 存在充分大的 $N \\geqslant 1$, 使当 $n \\geqslant N$ 时有 $1 - F_{n}(b) + F_{n}(a) < \\varepsilon$. 对于 $k \\geqslant 1$, 取 $[a, b]$ 的分割点 $\\{x_{k,i}\\} \\subseteq C_{F}$ 使之满足定义 4.1.1 中的条件. 因为 $C_{F}$ 在 $\\mathbb{R}$ 中稠密, 这是可以做到的. 再令"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.271,
+            0.478,
+            0.9,
+            0.521
+          ],
+          "content": "f _ {k} (x) = \\sum_ {i = 1} ^ {m _ {k}} f (x _ {k, i}) 1 _ {(x _ {k, i - 1}, x _ {k, i} ]} (x), \\quad x \\in [ a, b ]. \\tag {6.3.2}",
+          "image_source": "../../raw/pages_0177-0192/images/page_184_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.536,
+            0.9,
+            0.578
+          ],
+          "content": "由 $f$ 在 $[a, b]$ 上的一致连续性, 存在充分大的 $k \\geqslant 1$ 使 $|f_k(x) - f(x)| < \\varepsilon$, $x \\in [a, b]$. 于是有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.273,
+            0.587,
+            0.691,
+            0.626
+          ],
+          "content": "\\int_ {a} ^ {b} | f _ {k} (x) - f (x) | \\mathrm{d} F (x) \\leqslant \\varepsilon [ F (b) - F (a) ] \\leqslant \\varepsilon",
+          "image_source": "../../raw/pages_0177-0192/images/page_184_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.639,
+            0.132,
+            0.654
+          ],
+          "content": "和"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.258,
+            0.666,
+            0.705,
+            0.704
+          ],
+          "content": "\\int_ {a} ^ {b} | f _ {k} (x) - f (x) | \\mathrm{d} F _ {n} (x) \\leqslant \\varepsilon [ F _ {n} (b) - F _ {n} (a) ] \\leqslant \\varepsilon .",
+          "image_source": "../../raw/pages_0177-0192/images/page_184_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.717,
+            0.368,
+            0.745
+          ],
+          "content": "记 $\\| f\\| := \\sup_{x\\in \\mathbb{R}}|f(x)|$ ，我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.17,
+            0.754,
+            0.79,
+            0.944
+          ],
+          "content": "\\begin{array}{l} \\left| \\int_ {- \\infty} ^ {\\infty} f (x) \\mathrm{d} F _ {n} (x) - \\int_ {- \\infty} ^ {\\infty} f (x) \\mathrm{d} F (x) \\right| \\\\ \\leqslant \\left| \\int_ {a} ^ {b} f (x) \\mathrm{d} F _ {n} (x) - \\int_ {a} ^ {b} f (x) \\mathrm{d} F (x) \\right| + \\| f \\| [ 1 - F _ {n} (b) + F _ {n} (a) ] + \\\\ \\| f \\| [ 1 - F (b) + F (a) ] \\\\ \\leqslant \\left| \\int_ {a} ^ {b} f _ {k} (x) \\mathrm{d} F _ {n} (x) - \\int_ {a} ^ {b} f _ {k} (x) \\mathrm{d} F (x) \\right| + \\int_ {a} ^ {b} | f _ {k} (x) - f (x) | \\mathrm{d} F _ {n} (x) + \\\\ \\int_ {a} ^ {b} | f _ {k} (x) - f (x) | \\mathrm{d} F (x) + 2 \\varepsilon \\| f \\| \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0177-0192/images/page_184_equation_15.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 185,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.701,
+            0.047,
+            0.882,
+            0.062
+          ],
+          "content": "6.3 弱收敛的等价条件"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.902,
+            0.049,
+            0.931,
+            0.061
+          ],
+          "content": "171"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.159,
+            0.102,
+            0.831,
+            0.143
+          ],
+          "content": "\\leqslant \\sum_ {i = 1} ^ {m _ {k}} | f (x _ {k, i}) | \\big | F _ {n} (x _ {k, i}) - F (x _ {k, i}) - F _ {n} (x _ {k, i - 1}) + F (x _ {k, i - 1}) \\big | + 2 \\varepsilon (1 + \\| f \\|).",
+          "image_source": "../../raw/pages_0177-0192/images/page_185_equation_2.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.086,
+            0.16,
+            0.32,
+            0.177
+          ],
+          "content": "在上式两端令 $n\\to \\infty$ 得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.19,
+            0.188,
+            0.737,
+            0.226
+          ],
+          "content": "\\operatorname * {l i m s u p} _ {n \\to \\infty} \\Big | \\int_ {- \\infty} ^ {\\infty} f (x) \\mathrm{d} F _ {n} (x) - \\int_ {- \\infty} ^ {\\infty} f (x) \\mathrm{d} F (x) \\Big | \\leqslant 2 \\varepsilon (1 + \\| f \\|).",
+          "image_source": "../../raw/pages_0177-0192/images/page_185_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.086,
+            0.242,
+            0.443,
+            0.26
+          ],
+          "content": "再由  $\\varepsilon > 0$  的任意性知 (6.3.1) 式成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.085,
+            0.266,
+            0.88,
+            0.333
+          ],
+          "content": "“$\\Rightarrow$”证法2 根据斯科罗霍德表示定理, 存在某个概率空间上的随机变量序列 $\\{\\xi_n\\}$ 和随机变量 $\\xi$ 满足性质: $\\xi_n$ 和 $\\xi$ 分别有分布函数 $F_n$ 和 $F$ 且 $\\xi_n \\stackrel{\\mathrm{a.s.}}{\\rightarrow} \\xi$. 因函数 $f$ 连续, 有 $f(\\xi_n) \\stackrel{\\mathrm{a.s.}}{\\rightarrow} f(\\xi)$. 再根据有界收敛定理, 有 $\\mathbf{E}f(\\xi_n) \\to \\mathbf{E}f(\\xi)$. 此即为 (6.3.1) 式."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.086,
+            0.337,
+            0.881,
+            0.382
+          ],
+          "content": "“$\\Leftarrow$”设(6.3.1)式对于 $\\mathbb{R}$ 上的任何有界连续函数 $f$ 成立. 对于 $y < z \\in \\mathbb{R}$ 可取 $\\mathbb{R}$ 上的有界连续函数 $f$ 满足 $1_{(-\\infty, y]} \\leqslant f \\leqslant 1_{(-\\infty, z]}$. 于是"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.18,
+            0.396,
+            0.745,
+            0.434
+          ],
+          "content": "F (y) \\leqslant \\int_ {- \\infty} ^ {\\infty} f (t) \\mathrm{d} F (t) = \\lim _ {n \\to \\infty} \\int_ {- \\infty} ^ {\\infty} f (t) \\mathrm{d} F _ {n} (t) \\leqslant \\operatorname * {l i m i n f} _ {n \\to \\infty} F _ {n} (z)",
+          "image_source": "../../raw/pages_0177-0192/images/page_185_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.087,
+            0.448,
+            0.113,
+            0.464
+          ],
+          "content": "和"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.174,
+            0.477,
+            0.75,
+            0.515
+          ],
+          "content": "F (z) \\geqslant \\int_ {- \\infty} ^ {\\infty} f (t) \\mathrm{d} F (t) = \\lim _ {n \\to \\infty} \\int_ {- \\infty} ^ {\\infty} f (t) \\mathrm{d} F _ {n} (t) \\geqslant \\operatorname * {l i m s u p} _ {n \\to \\infty} F _ {n} (y).",
+          "image_source": "../../raw/pages_0177-0192/images/page_185_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.085,
+            0.53,
+            0.371,
+            0.548
+          ],
+          "content": "特别地, 对 $x \\in C_F$ 和 $\\delta > 0$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.222,
+            0.567,
+            0.701,
+            0.595
+          ],
+          "content": "F (x - \\delta) \\leqslant \\operatorname * {l i m i n f} _ {n \\to \\infty} F _ {n} (x) \\leqslant \\operatorname * {l i m s u p} _ {n \\to \\infty} F _ {n} (x) \\leqslant F (x + \\delta)",
+          "image_source": "../../raw/pages_0177-0192/images/page_185_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.085,
+            0.61,
+            0.307,
+            0.628
+          ],
+          "content": "在上式中令 $\\delta \\to 0$ 即得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.29,
+            0.648,
+            0.635,
+            0.676
+          ],
+          "content": "\\operatorname * {l i m i n f} _ {n \\to \\infty} F _ {n} (x) = \\operatorname * {l i m s u p} _ {n \\to \\infty} F _ {n} (x) = F (x),",
+          "image_source": "../../raw/pages_0177-0192/images/page_185_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.085,
+            0.692,
+            0.218,
+            0.71
+          ],
+          "content": "故知  $F_{n} \\xrightarrow{w} F,$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.084,
+            0.717,
+            0.88,
+            0.759
+          ],
+          "content": "我们知道, 欧氏空间 $(\\mathbb{R}^d, \\mathcal{B}^d)$ 上的概率测度和其分布函数相互唯一决定. 基于黑利第二定理, 我们可以引入下面的一般性的概念."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.085,
+            0.765,
+            0.879,
+            0.806
+          ],
+          "content": "定义 6.3.1 设  $\\mu,\\mu_{1},\\mu_{2},\\cdots$  为  $(\\mathbb{R}^{d},\\mathcal{B}^{d})$  上的概率测度. 若对于  $R^{d}$  上的任何有界连续函数 f 都有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.309,
+            0.82,
+            0.876,
+            0.854
+          ],
+          "content": "\\int_ {\\mathbb {R} ^ {d}} f (x) \\mu_ {n} (\\mathrm{d} x) \\rightarrow \\int_ {\\mathbb {R} ^ {d}} f (x) \\mu (\\mathrm{d} x). \\tag {6.3.3}",
+          "image_source": "../../raw/pages_0177-0192/images/page_185_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.085,
+            0.871,
+            0.494,
+            0.89
+          ],
+          "content": "则称序列  $\\{\\mu_{n}\\}$  弱收敛于  $\\mu,$  并记作  $\\mu_{n} \\stackrel{w}{\\rightarrow} \\mu.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.084,
+            0.895,
+            0.88,
+            0.937
+          ],
+          "content": "显然，对于 $d = 1$ 概率测度的弱收敛 $\\mu_{n} \\stackrel{\\mathrm{w}}{\\rightarrow} \\mu$ 与相应的概率分布函数的弱收敛 $F_{n} \\stackrel{\\mathrm{w}}{\\rightarrow} F$ 是等价的."
+        }
+      ]
+    },
+    {
+      "page_idx": 186,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.052,
+            0.046,
+            0.083,
+            0.058
+          ],
+          "content": "172"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.102,
+            0.045,
+            0.241,
+            0.058
+          ],
+          "content": "第六章 收敛性质"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.141,
+            0.1,
+            0.41,
+            0.12
+          ],
+          "level": 2,
+          "content": "6.3.2 莱维连续性定理"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.145,
+            0.896,
+            0.187
+          ],
+          "content": "我们在本小节将要证明, 概率分布函数与其特征函数之间的对应关系具有某种连续性, 此类结果称为莱维连续性定理."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.193,
+            0.895,
+            0.235
+          ],
+          "content": "引理 6.3.4 设概率分布函数  $F, F_{1}, F_{2}, \\cdots$  分别有特征函数  $f, f_{1}, f_{2}, \\cdots$ . 若  $F_{n} \\stackrel{w}{\\rightarrow} F$ , 则  $f_{n}$  逐点收敛到函数 f."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.24,
+            0.895,
+            0.282
+          ],
+          "content": "证明 假设 $F_{n} \\stackrel{\\mathrm{w}}{\\rightarrow} F$. 因为 $\\cos(tx)$ 和 $\\sin(tx)$ 都是有界连续函数, 由黑利第二定理, 对任何 $t \\in \\mathbb{R}$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.242,
+            0.287,
+            0.752,
+            0.369
+          ],
+          "content": "\\begin{array}{l} f _ {n} (t) = \\int_ {- \\infty} ^ {\\infty} \\cos (t x) \\mathrm{d} F _ {n} (x) + \\mathrm{i} \\int_ {- \\infty} ^ {\\infty} \\sin (t x) \\mathrm{d} F _ {n} (x) \\\\ \\rightarrow \\int_ {- \\infty} ^ {\\infty} \\cos (t x) \\mathrm{d} F (x) + \\mathrm{i} \\int_ {- \\infty} ^ {\\infty} \\sin (t x) \\mathrm{d} F (x) = f (t), \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0177-0192/images/page_186_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.38,
+            0.336,
+            0.398
+          ],
+          "content": "即 $f_{n}$ 逐点收敛到函数 $f$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.404,
+            0.896,
+            0.469
+          ],
+          "content": "定理 6.3.5（莱维连续性定理）设  $\\{f_{n}\\}$  为概率分布函数序列  $\\{F_{n}\\}$  的特征函数序列。若  $f_{n}$  逐点收敛到函数 f，且后者在 t=0 处连续，则 f 是某个概率分布函数 F 的特征函数且  $F_{n} \\stackrel{w}{\\rightarrow} F$ 。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.474,
+            0.896,
+            0.541
+          ],
+          "content": "证明 由黑利第一定理, 存在 $\\{F_n\\}$ 的子序列 $\\{F_{n_k}\\}$, 使得当 $k \\to \\infty$ 时 $F_{n_k} \\stackrel{\\mathrm{w}}{\\rightarrow} F$, 其中 $F$ 是 $\\mathbb{R}$ 上的右连续不降函数. 显然有 $0 \\leqslant F(-\\infty) \\leqslant F(\\infty) \\leqslant 1$. 对于 $t > 0$ 有 (这里承认积分和期望可以交换次序)"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.23,
+            0.551,
+            0.76,
+            0.635
+          ],
+          "content": "\\begin{array}{l} \\frac {1}{2 t} \\int_ {- t} ^ {t} f _ {n _ {k}} (s) \\mathrm{d} s = \\frac {1}{2 t} \\int_ {- t} ^ {t} \\mathbf {E} (\\mathrm{e} ^ {\\mathrm{i} s \\xi_ {n _ {k}}}) \\mathrm{d} s = \\frac {1}{2 t} \\mathbf {E} \\Big (\\int_ {- t} ^ {t} \\mathrm{e} ^ {\\mathrm{i} s \\xi_ {n _ {k}}} \\mathrm{d} s \\Big) \\\\ = \\frac {1}{2 t} \\mathbf {E} \\Big [ \\int_ {- t} ^ {t} \\cos (s \\xi_ {n _ {k}}) \\mathrm{d} s \\Big ] = \\mathbf {E} \\Big [ \\frac {\\sin (t \\xi_ {n _ {k}})}{t \\xi_ {n _ {k}}} \\Big ], \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0177-0192/images/page_186_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.645,
+            0.148,
+            0.663
+          ],
+          "content": "从而"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.249,
+            0.671,
+            0.741,
+            0.864
+          ],
+          "content": "\\begin{array}{l} 1 - \\frac {1}{2 t} \\int_ {- t} ^ {t} f _ {n _ {k}} (s) \\mathrm{d} s = \\mathbf {E} \\left[ 1 - \\frac {\\sin (t \\xi_ {n _ {k}})}{t \\xi_ {n _ {k}}} \\right] \\\\ \\geqslant \\mathbf {E} \\Big [ \\Big (1 - \\frac {1}{| t \\xi_ {n _ {k}} |} \\Big) 1 _ {\\{| t \\xi_ {n _ {k}} | \\geqslant 2 \\}} \\Big ] \\\\ \\geqslant \\frac {1}{2} \\mathbf {P} (| t \\xi_ {n _ {k}} | \\geqslant 2) \\\\ \\geqslant \\frac {1}{2} \\big [ \\mathbf {P} (t \\xi_ {n _ {k}} \\leqslant - 2) + \\mathbf {P} (t \\xi_ {n _ {k}} > 2) \\big ] \\\\ = \\frac {1}{2} \\big [ F _ {n _ {k}} (- 2 / t) + 1 - F _ {n _ {k}} (2 / t) \\big ], \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0177-0192/images/page_186_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.872,
+            0.147,
+            0.889
+          ],
+          "content": "故有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.273,
+            0.901,
+            0.677,
+            0.939
+          ],
+          "content": "F _ {n _ {k}} (2 / t) - F _ {n _ {k}} (- 2 / t) \\geqslant \\frac {1}{t} \\int_ {- t} ^ {t} f _ {n _ {k}} (s) \\mathrm{d} s - 1.",
+          "image_source": "../../raw/pages_0177-0192/images/page_186_equation_14.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 187,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.707,
+            0.048,
+            0.886,
+            0.062
+          ],
+          "content": "6.3 弱收敛的等价条件"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.907,
+            0.05,
+            0.936,
+            0.061
+          ],
+          "content": "173"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.092,
+            0.102,
+            0.887,
+            0.144
+          ],
+          "content": "由于 $F_{n_k} \\stackrel{\\mathrm{w}}{\\to} F$ 而 $f_{n_k}$ 逐点收敛到 $f$, 限制 $-2 / t, 2 / t \\in C_F$, 并对上式应用有界收敛定理有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.212,
+            0.15,
+            0.728,
+            0.189
+          ],
+          "content": "F (2 / t) - F (- 2 / t) \\geqslant \\frac {1}{t} \\int_ {- t} ^ {t} f (s) \\mathrm{d} s - 1 = \\int_ {- 1} ^ {1} f (t s) \\mathrm{d} s - 1.",
+          "image_source": "../../raw/pages_0177-0192/images/page_187_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.092,
+            0.201,
+            0.887,
+            0.243
+          ],
+          "content": "因为 $f(0) = \\lim_{n\\to \\infty}f_n(0) = 1$ 且 $f$ 在 $t = 0$ 处连续, 在上式两端令 $t\\to 0$ 知 $F(\\infty) - F(-\\infty) = 1$. 这说明 $F$ 是概率分布函数. 根据引理6.3.4知 $f$ 是 $F$ 的特征函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.092,
+            0.248,
+            0.887,
+            0.363
+          ],
+          "content": "最后, 用反证法证明 $F_{n} \\stackrel{\\mathrm{w}}{\\rightarrow} F$. 假如该结论不成立, 则存在 $x_{0} \\in C_{F}$, 使 $F_{n}(x_{0}) \\nrightarrow F(x_{0})$. 于是有子列 $\\{F_{m_k}\\} \\subseteq \\{F_n\\}$ 使 $F_{m_k}(x_0) \\to y^* \\neq F(x_0)$. 根据前面的证明, 有子列 $\\{F_{m_k}^*\\} \\subseteq \\{F_{m_k}\\}$ 使 $F_{m_k}^* \\stackrel{\\mathrm{w}}{\\rightarrow}$ 某个概率分布函数 $F^*$. 由前面的证明 $F^*$ 也有特征函数 $f$, 故有 $F^* = F$ 和 $C_{F^*} = C_F \\ni x_0$. 这导致 $F_{m_k}(x_0) \\to F(x_0) \\neq y^*$, 与子列 $\\{F_{m_k}\\} \\subseteq \\{F_n\\}$ 的取法矛盾."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.368,
+            0.469,
+            0.386
+          ],
+          "content": "综合引理 6.3.4 和定理 6.3.5, 我们有"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.092,
+            0.392,
+            0.887,
+            0.434
+          ],
+          "content": "定理 6.3.6（莱维连续性定理） 设概率分布函数 F 和  $F_{n}$  分别有特征函数 f 和  $f_{n}, n=1,2,\\cdots$  则  $F_{n}\\stackrel{w}{\\rightarrow}F$  当且仅当  $f_{n}$  逐点收敛到函数 f."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.092,
+            0.44,
+            0.887,
+            0.481
+          ],
+          "content": "上面的定理 6.3.5 和定理 6.3.6 给出了莱维连续性定理的两种形式, 它们是概率极限定理研究的重要工具. 这两个定理都可以推广到多维的情况."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.134,
+            0.509,
+            0.215,
+            0.529
+          ],
+          "level": 2,
+          "content": "练习题"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.092,
+            0.554,
+            0.887,
+            0.596
+          ],
+          "content": "1. 设 $F_{n}$ 是指数分布 $E(\\lambda_{n})$ 的分布函数且 $F_{n} \\stackrel{\\mathrm{w}}{\\rightarrow} F$. 证明极限 $\\lambda_{n} \\to \\lambda$ 存在且 $F$ 是指数分布 $E(\\lambda)$ 的分布函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.602,
+            0.718,
+            0.621
+          ],
+          "content": "2. 设正态分布函数序列 $\\{F_n\\}$ 弱收敛到概率分布函数 $F$. 证明:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.131,
+            0.626,
+            0.44,
+            0.642
+          ],
+          "content": "(1) 极限分布函数 F 也是正态的;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.131,
+            0.65,
+            0.43,
+            0.666
+          ],
+          "content": "(2) $F_{n}$ 的期望收敛到F的期望;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.131,
+            0.674,
+            0.429,
+            0.69
+          ],
+          "content": "(3) $F_{n}$ 的方差收敛到F的方差."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.092,
+            0.698,
+            0.887,
+            0.74
+          ],
+          "content": "3. 设 $g$ 为 $\\mathbb{R}$ 上的有界非负连续函数, 而 $G, G_{n}$ 为 $\\mathbb{R}$ 上的有界分布函数, $G(-\\infty) = G_{n}(-\\infty) = 0, n \\geqslant 1$. 根据定理4.1.10, 可以定义 $\\mathbb{R}$ 上的有界分布函数 $F, F_{n}, n \\geqslant 1$ 如下:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.229,
+            0.746,
+            0.705,
+            0.784
+          ],
+          "content": "F (x) = \\int_ {- \\infty} ^ {x} g (x) \\mathrm{d} G (x), F _ {n} (x) = \\int_ {- \\infty} ^ {x} g (x) \\mathrm{d} G _ {n} (x).",
+          "image_source": "../../raw/pages_0177-0192/images/page_187_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.091,
+            0.796,
+            0.814,
+            0.822
+          ],
+          "content": "证明: (1) 若 $G_{n} \\stackrel{\\mathrm{w}}{\\to} G$, 则 $F_{n} \\stackrel{\\mathrm{w}}{\\to} F$; (2) 若 $F_{n} \\stackrel{\\mathrm{w}}{\\to} F$ 且 $\\inf_{x \\in \\mathbb{R}} g(x) > 0$, 则 $G_{n} \\stackrel{\\mathrm{w}}{\\to} G$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.091,
+            0.822,
+            0.421,
+            0.838
+          ],
+          "content": "提示: 应用定理 4.1.11 和定理 6.3.3."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.091,
+            0.845,
+            0.884,
+            0.885
+          ],
+          "content": "4. 对 $n \\geqslant 1$, 令 $f_n$ 是具有分布密度 $p_n(x) = (2n)^{-1}1_{(-n,n)}(x)$ 的绝对连续型概率分布的特征函数."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.13,
+            0.886,
+            0.695,
+            0.94
+          ],
+          "sub_type": "text",
+          "content": "(1) 证明 $f_n(t) = \\frac{\\sin(nt)}{nt}$ (规定 $f_n(0) = 1$);\n(2) 说明 $f(t) := \\lim_{n \\to \\infty} f_n(t)$ 是否是某个概率分布的特征函数？"
+        }
+      ]
+    },
+    {
+      "page_idx": 188,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.057,
+            0.048,
+            0.087,
+            0.06
+          ],
+          "content": "174"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.047,
+            0.246,
+            0.06
+          ],
+          "content": "第六章 收敛性质"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.149,
+            0.103,
+            0.544,
+            0.121
+          ],
+          "level": 2,
+          "content": "本章所讲的随机变量的几种收敛的关系图:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.148,
+            0.805,
+            0.169
+          ],
+          "content": "完全收敛 → 几乎必然收敛 ← (斯科罗霍德表示定理)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.346,
+            0.182,
+            0.708,
+            0.202
+          ],
+          "content": "↓↑(子列) ↑"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.332,
+            0.213,
+            0.753,
+            0.246
+          ],
+          "content": "依概率收敛  $\\rightleftharpoons$  依分布收敛\n(极限退化)"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.379,
+            0.251,
+            0.711,
+            0.268
+          ],
+          "content": "↑ 立面不舍随意映射，↓↑"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.308,
+            0.28,
+            0.786,
+            0.299
+          ],
+          "content": "依 r 阶平均收敛 特征函数逐点收敛"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "modified_at": "2025-07-02T01:22:49+08:00",
+      "producer_application": "Haru Free PDF Library 2.2.1",
+      "page_count": 248,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 0,
+          "width_pt": 521.4992065429688,
+          "height_pt": 728.2941665649414
+        },
+        {
+          "page_idx": 1,
+          "width_pt": 481.8141860961914,
+          "height_pt": 728.2941665649414
+        },
+        {
+          "page_idx": 2,
+          "width_pt": 481.81418800354004,
+          "height_pt": 728.294189453125
+        },
+        {
+          "page_idx": 3,
+          "width_pt": 481.8141860961914,
+          "height_pt": 728.2941665649414
+        },
+        {
+          "page_idx": 4,
+          "width_pt": 481.81418800354004,
+          "height_pt": 728.294189453125
+        },
+        {
+          "page_idx": 5,
+          "width_pt": 481.8141860961914,
+          "height_pt": 728.2941665649414
+        },
+        {
+          "page_idx": 6,
+          "width_pt": 481.81418800354004,
+          "height_pt": 728.294189453125
+        },
+        {
+          "page_idx": 7,
+          "width_pt": 481.8141860961914,
+          "height_pt": 728.2941665649414
+        },
+        {
+          "page_idx": 8,
+          "width_pt": 481.81418800354004,
+          "height_pt": 728.294189453125
+        },
+        {
+          "page_idx": 9,
+          "width_pt": 481.8141860961914,
+          "height_pt": 728.2941665649414
+        },
+        {
+          "page_idx": 10,
+          "width_pt": 481.81418800354004,
+          "height_pt": 728.294189453125
+        },
+        {
+          "page_idx": 11,
+          "width_pt": 481.8141860961914,
+          "height_pt": 728.2941665649414
+        },
+        {
+          "page_idx": 12,
+          "width_pt": 481.81418800354004,
+          "height_pt": 728.294189453125
+        },
+        {
+          "page_idx": 13,
+          "width_pt": 481.8141860961914,
+          "height_pt": 728.2941665649414
+        },
+        {
+          "page_idx": 14,
+          "width_pt": 481.81418800354004,
+          "height_pt": 728.294189453125
+        },
+        {
+          "page_idx": 15,
+          "width_pt": 481.8141860961914,
+          "height_pt": 728.2941665649414
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

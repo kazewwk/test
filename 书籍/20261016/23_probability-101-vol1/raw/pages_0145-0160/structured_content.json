@@ -1,0 +1,3078 @@
+{
+  "pages": [
+    {
+      "page_idx": 144,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.056,
+            0.048,
+            0.086,
+            0.06
+          ],
+          "content": "130"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.046,
+            0.297,
+            0.06
+          ],
+          "content": "第四章 积分和数学期望"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.146,
+            0.101,
+            0.465,
+            0.121
+          ],
+          "level": 2,
+          "content": "4.5.2 独立变量和的母函数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.145,
+            0.899,
+            0.189
+          ],
+          "content": "定理4.5.3 设 $\\xi, \\eta$ 为相互独立的非负整数值随机变量，且分别有母函数 $g(s), h(s)$. 则 $\\zeta := \\xi + \\eta$ 的母函数为 $f(s) := g(s)h(s)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.194,
+            0.724,
+            0.213
+          ],
+          "content": "证明 令 $p(i) = \\mathbf{P}(\\xi = i)$ 和 $q(j) = \\mathbf{P}(\\eta = j)$. 由离散卷积公式"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.352,
+            0.228,
+            0.61,
+            0.273
+          ],
+          "content": "\\mathbf {P} (\\zeta = k) = \\sum_ {i = 0} ^ {k} p (i) q (k - i).",
+          "image_source": "images/page_144_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.288,
+            0.174,
+            0.305
+          ],
+          "content": "因此有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.251,
+            0.319,
+            0.754,
+            0.424
+          ],
+          "content": "\\begin{array}{l} f (s) = \\sum_ {k = 0} ^ {\\infty} \\mathbf {P} (\\zeta = k) s ^ {k} = \\sum_ {k = 0} ^ {\\infty} \\sum_ {i = 0} ^ {k} p (i) q (k - i) s ^ {k} \\\\ = \\sum_ {i = 0} ^ {\\infty} \\sum_ {k = i} ^ {\\infty} p (i) s ^ {i} q (k - i) s ^ {k - i} = \\sum_ {i = 0} ^ {\\infty} \\sum_ {j = 0} ^ {\\infty} p (i) s ^ {i} q (j) s ^ {j}. \\\\ \\end{array}",
+          "image_source": "images/page_144_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.439,
+            0.243,
+            0.456
+          ],
+          "content": "故得欲证结果."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.462,
+            0.9,
+            0.552
+          ],
+          "content": "例4.5.5 设随机变量 $\\xi_{1}$ 和 $\\xi_{2}$ 独立且分别服从二项分布 $B(k,p)$ 和 $B(n,p)$. 则 $\\xi_{1}$ 和 $\\xi_{2}$ 分别有母函数 $(q+ps)^{k}$ 和 $(q+ps)^{n}$. 根据定理4.5.3知 $\\xi_{1}+\\xi_{2}$ 的母函数为 $(q+ps)^{k+n}$. 再由定理4.5.1知 $\\xi_{1}+\\xi_{2}$ 服从二项分布 $B(k+n,p)$. 这给出了二项分布的再生性的简单证明. 类似地可以给出泊松分布的再生性的证明."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.557,
+            0.9,
+            0.625
+          ],
+          "content": "定理 4.5.4 设  $\\{\\xi_{i}\\}$  为相互独立的非负整数值随机变量列，且有共同的母函数  $g(s)$ . 再设  $\\eta$  为非负整数值随机变量，有母函数  $h(s)$  且与  $\\{\\xi_{i}\\}$  独立. 则  $\\xi := \\xi_{1} + \\xi_{2} + \\cdots + \\xi_{\\eta}$  的母函数为  $f(s) = h(g(s))$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.629,
+            0.9,
+            0.672
+          ],
+          "content": "证明 根据定理 4.5.3, 对于  $n \\geqslant 1$  随机变量  $\\xi_{1} + \\xi_{2} + \\cdots + \\xi_{n}$  有母函数  $g(s)^{n}$ . 根据全概率公式, 并利用  $\\eta$  与  $\\{\\xi_{i}\\}$  的独立性, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.237,
+            0.686,
+            0.767,
+            0.904
+          ],
+          "content": "\\begin{array}{l} f (s) = \\sum_ {k = 0} ^ {\\infty} \\mathbf {P} (\\xi_ {1} + \\xi_ {2} + \\dots + \\xi_ {\\eta} = k) s ^ {k} \\\\ = \\sum_ {k = 0} ^ {\\infty} \\sum_ {n = 0} ^ {\\infty} \\mathbf {P} (\\eta = n) \\mathbf {P} (\\xi_ {1} + \\xi_ {2} + \\dots + \\xi_ {n} = k | \\eta = n) s ^ {k} \\\\ = \\sum_ {n = 0} ^ {\\infty} \\mathbf {P} (\\eta = n) \\sum_ {k = 0} ^ {\\infty} \\mathbf {P} (\\xi_ {1} + \\xi_ {2} + \\dots + \\xi_ {n} = k) s ^ {k} \\\\ = \\sum_ {n = 0} ^ {\\infty} \\mathbf {P} (\\eta = n) g (s) ^ {n} = h (g (s)). \\\\ \\end{array}",
+          "image_source": "images/page_144_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.918,
+            0.243,
+            0.935
+          ],
+          "content": "故得欲证结果."
+        }
+      ]
+    },
+    {
+      "page_idx": 145,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.722,
+            0.049,
+            0.902,
+            0.064
+          ],
+          "content": "4.5 随机变量的母函数"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.923,
+            0.051,
+            0.952,
+            0.063
+          ],
+          "content": "131"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.149,
+            0.104,
+            0.903,
+            0.123
+          ],
+          "content": "例4.5.6 假设定理4.5.4中的随机变量都可积.则利用母函数与期望的关系易得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.306,
+            0.141,
+            0.66,
+            0.161
+          ],
+          "content": "\\mathbf {E} \\xi = f ^ {\\prime} (1 -) = h ^ {\\prime} (1 -) g ^ {\\prime} (1 -) = \\mathbf {E} \\eta \\mathbf {E} \\xi_ {1}.",
+          "image_source": "images/page_145_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.178,
+            0.517,
+            0.196
+          ],
+          "content": "这比例 4.4.3 中相应结果的证明简单了很多."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.148,
+            0.224,
+            0.469,
+            0.245
+          ],
+          "level": 2,
+          "content": "4.5.3 母函数的连续性定理"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.269,
+            0.903,
+            0.359
+          ],
+          "content": "定理 4.5.5（连续性定理） 设对每个  $n \\geqslant 1$  有数列  $\\{a_{n}(i): i = 0, 1, 2, \\cdots\\} \\subseteq [0, 1]$ ，并记其母函数为  $g_{n}$ 。则对每个  $i \\geqslant 0$  极限  $a(i) := \\lim_{n \\to \\infty} a_{n}(i)$  存在当且仅当对每个 0 < s < 1 极限  $g(s) := \\lim_{n \\to \\infty} g_{n}(s)$  存在。此时 g 与  $\\{a(i): i = 0, 1, 2, \\cdots\\}$  的母函数在区间 (0, 1) 内重合。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.365,
+            0.902,
+            0.408
+          ],
+          "content": "证明 设对每个  $i \\geqslant 0$  极限  $a(i) := \\lim_{n \\to \\infty} a_n(i)$  存在. 令 f 为  $\\{a(i) : i = 0, 1, 2, \\cdots\\}$  的母函数. 由于  $|a_n(i) - a(i)| \\leqslant 1$ , 对于 0 < s < 1 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.235,
+            0.421,
+            0.774,
+            0.52
+          ],
+          "content": "\\begin{array}{l} | g _ {n} (s) - f (s) | \\leqslant \\sum_ {i = 0} ^ {k} | a _ {n} (i) - a (i) | s ^ {i} + \\sum_ {i = k + 1} ^ {\\infty} | a _ {n} (i) - a (i) | s ^ {i} \\\\ \\leqslant \\sum_ {i = 0} ^ {k} | a _ {n} (i) - a (i) | + \\frac {s ^ {k + 1}}{1 - s}. \\\\ \\end{array}",
+          "image_source": "images/page_145_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.534,
+            0.903,
+            0.631
+          ],
+          "content": "对任何 $\\varepsilon > 0$, 可取充分大的 $N \\geqslant 1$ 使当 $k \\geqslant N$ 时有 $s^{k+1} / (1 - s) \\leqslant \\varepsilon$. 这样, 在上式两端取极限有 $\\liminf_{n \\to \\infty} |g_n(s) - f(s)| \\leqslant \\varepsilon$. 这说明极限 $g(s) := \\lim_{n \\to \\infty} g_n(s)$ 存在, 且 $g$ 与 $f$ 在区间 $(0,1)$ 内重合. 反之, 设对每个 $0 < s < 1$ 极限 $g(s) := \\lim_{n \\to \\infty} g_n(s)$ 存在. 则函数 $g$ 在区间 $(0,1)$ 内单调不降, 故极限 $g(0) := \\lim_{s \\downarrow 0} g(s)$ 存在. 注意, 对 $0 < s < 1$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.262,
+            0.648,
+            0.704,
+            0.692
+          ],
+          "content": "a _ {n} (0) \\leqslant g _ {n} (s) \\leqslant a _ {n} (0) + \\sum_ {i = 1} ^ {\\infty} s ^ {i} = a _ {n} (0) + \\frac {s}{1 - s},",
+          "image_source": "images/page_145_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.706,
+            0.154,
+            0.723
+          ],
+          "content": "从而"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.339,
+            0.739,
+            0.625,
+            0.769
+          ],
+          "content": "g _ {n} (s) - \\frac {s}{1 - s} \\leqslant a _ {n} (0) \\leqslant g _ {n} (s).",
+          "image_source": "images/page_145_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.78,
+            0.174,
+            0.797
+          ],
+          "content": "因此有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.247,
+            0.813,
+            0.714,
+            0.845
+          ],
+          "content": "g (s) - \\frac {s}{1 - s} \\leqslant \\operatorname * {l i m i n f} _ {n \\to \\infty} a _ {n} (0) \\leqslant \\operatorname * {l i m s u p} _ {n \\to \\infty} a _ {n} (0) \\leqslant g (s).",
+          "image_source": "images/page_145_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.859,
+            0.704,
+            0.883
+          ],
+          "content": "令 $s \\downarrow 0$ 知 $\\lim_{n \\to \\infty} a_n(0) = g(0) =: a_0$. 再利用假设, 对 $0 < s < 1$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.174,
+            0.899,
+            0.787,
+            0.942
+          ],
+          "content": "\\frac {1}{s} [ g _ {n} (s) - a _ {n} (0) ] = \\sum_ {i = 0} ^ {\\infty} a _ {n} (i + 1) s ^ {i} \\rightarrow \\frac {1}{s} [ g (s) - a _ {0} ] = \\frac {1}{s} [ g (s) - g (0) ].",
+          "image_source": "images/page_145_equation_16.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 146,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.045,
+            0.048,
+            0.076,
+            0.061
+          ],
+          "content": "132"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.095,
+            0.046,
+            0.287,
+            0.061
+          ],
+          "content": "第四章 积分和数学期望"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.102,
+            0.889,
+            0.151
+          ],
+          "content": "与前面的推导类似, 可知导数 $g'(0)$ 存在且 $\\lim_{n\\to \\infty}a_n(1) = g'(0) =: a(1)$. 利用数学归纳法可以证明每个 $i \\geqslant 0$ 极限 $a(i) := \\lim_{n\\to \\infty}a_n(i)$ 存在. 因此定理结论成立. □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.151,
+            0.465,
+            0.169
+          ],
+          "content": "作为定理 4.5.5 的特殊情况, 我们有"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.174,
+            0.889,
+            0.27
+          ],
+          "content": "定理 4.5.6（连续性定理） 设对每个 $n \\geqslant 1$ 有分布列 $\\{p_n(i): i = 0,1,2,\\cdots\\}$，并记其母函数为 $g_n$。则存在分布列 $\\{p(i): i = 0,1,2,\\cdots\\}$ 使对每个 $i \\geqslant 0$ 有 $p(i) = \\lim_{n \\to \\infty} p_n(i)$ 当且仅当对每个 $0 < s < 1$ 极限 $g(s) := \\lim_{n \\to \\infty} g_n(s)$ 存在且 $\\lim_{s \\uparrow 1} g(s) = 1$。此时 $g$ 与 $\\{p(i): i = 0,1,2,\\cdots\\}$ 的母函数在区间 $(0,1)$ 内重合。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.274,
+            0.889,
+            0.318
+          ],
+          "content": "例4.5.7 设数列 $\\{p_n\\} \\subseteq [0,1]$ 满足 $\\lim_{n\\to \\infty}np_n = \\lambda >0$。则二项分布 $B(n,p_n)$ 的母函数为 $g_{n}(s) = [1 - p_{n}(1 - s)]^{n}$。对 $0 < s < 1$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.166,
+            0.332,
+            0.775,
+            0.361
+          ],
+          "content": "\\lim _ {n \\to \\infty} g _ {n} (s) = \\lim _ {n \\to \\infty} \\left\\{\\left[ 1 - p _ {n} (1 - s) \\right] ^ {- 1 / p _ {n} (1 - s)} \\right\\} ^ {- n p _ {n} (1 - s)} = \\mathrm{e} ^ {- \\lambda (1 - s)}.",
+          "image_source": "images/page_146_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.373,
+            0.611,
+            0.392
+          ],
+          "content": "上式右端是泊松分布 $P(\\lambda)$ 的母函数. 根据定理4.5.5有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.325,
+            0.407,
+            0.617,
+            0.443
+          ],
+          "content": "\\lim _ {n \\to \\infty} \\mathrm{C} _ {n} ^ {i} (1 - p _ {n}) ^ {n - i} p _ {n} ^ {i} = \\mathrm{e} ^ {- \\lambda} \\frac {\\lambda^ {i}}{i !}.",
+          "image_source": "images/page_146_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.454,
+            0.459,
+            0.472
+          ],
+          "content": "这就给出了定理 2.2.3 的一个简单证明."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.5,
+            0.218,
+            0.521
+          ],
+          "level": 2,
+          "content": "练习题"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.545,
+            0.889,
+            0.613
+          ],
+          "content": "1. 设某公共汽车站在时间区间  $[0, t]$  到来的乘客批数  $\\eta(t)$  服从参数为  $\\lambda t (\\lambda > 0)$  的泊松分布，且第 k 批乘客的人数  $\\xi_{k}$  服从分布  $\\{p(i): i = 0, 1, \\cdots\\}$ . 再设随机变量  $\\eta(t), \\xi_{1}, \\xi_{2}, \\cdots$  相互独立. 求在时间区间  $[0, t]$  到来的乘客总数  $N(t)$  的母函数和数学期望."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.617,
+            0.581,
+            0.635
+          ],
+          "content": "2. 利用母函数方法求帕斯卡分布的期望和方差."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.64,
+            0.889,
+            0.684
+          ],
+          "content": "3. 设随机变量  $\\xi_{1}, \\xi_{2}, \\cdots, \\xi_{n}$  相互独立且均服从几何分布  $G(p)$ . 用母函数方法证明  $\\xi_{1} + \\xi_{2} + \\cdots + \\xi_{n}$  服从帕斯卡分布  $Pa(n, p)$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.688,
+            0.602,
+            0.706
+          ],
+          "content": "4. 利用母函数方法给出泊松分布的再生性的证明."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.712,
+            0.889,
+            0.785
+          ],
+          "content": "5. 设 $g$ 为离散型概率分布 $\\{p(i): i = 0,1,\\dots\\}$ 的母函数, 其中 $p(1) \\neq 1$. 令 $g_1(z) = g(z)$ 并对 $n \\geqslant 2$ 递推地定义 $g_n(z) = g_{n-1}(g(z))$. 证明: 对于任何 $0 \\leqslant z < 1$ 极限 $q := \\lim_{n \\to \\infty} g_n(z)$ 存在, 且该极限为方程 $z = g(z)$ 在区间 $[0,1]$ 的最小解."
+        }
+      ]
+    },
+    {
+      "page_idx": 147,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.376,
+            0.088,
+            0.491,
+            0.116
+          ],
+          "level": 2,
+          "content": "第五章"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.542,
+            0.158,
+            0.747,
+            0.195
+          ],
+          "level": 2,
+          "content": "特征函数"
+        }
+      ]
+    },
+    {
+      "page_idx": 148,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.054,
+            0.05,
+            0.083,
+            0.061
+          ],
+          "content": "134"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.105,
+            0.048,
+            0.242,
+            0.062
+          ],
+          "content": "第五章 特征函数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.104,
+            0.901,
+            0.267
+          ],
+          "content": "概率论中所说的随机变量或概率分布的特征函数就是分析学中的傅里叶 (Fourier) 变换, 它是研究随机变量的重要工具. 虽然特征函数不像随机变量的矩那样直观, 但它具有非常好的分析性质. 特征函数与其对应的分布函数相互唯一决定. 由于特征函数适用于任何概率分布, 它比母函数有更好的适用性. 特别是在各类概率极限定理的研究中, 特征函数扮演了不可或缺的角色. 本章分别介绍随机变量和随机向量的特征函数的概念、基本性质、反演公式, 以及非负随机变量的拉普拉斯 (Laplace) 变换, 并利用多元特征函数讨论了正态随机向量."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.105,
+            0.319,
+            0.449,
+            0.343
+          ],
+          "level": 2,
+          "content": "5.1 随机变量的特征函数"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.147,
+            0.393,
+            0.337,
+            0.414
+          ],
+          "level": 2,
+          "content": "5.1.1 预备知识"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.438,
+            0.901,
+            0.505
+          ],
+          "content": "我们知道, 每个复数都具有形式 $z = x + \\mathrm{i}y$, 其中 $x, y \\in \\mathbb{R}$ 分别称为 $z$ 的实部和虚部, 而 $\\mathrm{i} = \\sqrt{-1}$ 是虚数单位, 满足 $\\mathrm{i}^2 = -1$. 在此约定之下, 复数的运算规则与实数完全相同. 称 $\\bar{z} := x - \\mathrm{i}y$ 为 $z = x + \\mathrm{i}y$ 的共轭数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.509,
+            0.901,
+            0.552
+          ],
+          "content": "通常用 $\\mathbb{C}$ 表示全体复数构成的集合, 称之为复平面. 直观上, 可以将 $z = x + iy \\in \\mathbb{C}$ 理解为复平面上的向量. 我们称"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.377,
+            0.563,
+            0.591,
+            0.585
+          ],
+          "content": "| z | := \\sqrt {z \\bar {z}} = \\sqrt {x ^ {2} + y ^ {2}}",
+          "image_source": "images/page_148_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.108,
+            0.596,
+            0.586,
+            0.615
+          ],
+          "content": "为 $z$ 的模或绝对值. 显然, 对任何 $z = x + \\mathrm{i}y \\in \\mathbb{C}$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.421,
+            0.629,
+            0.897,
+            0.645
+          ],
+          "content": "\\left| x \\right| \\vee \\left| y \\right| \\leqslant \\left| z \\right|. \\tag {5.1.1}",
+          "image_source": "images/page_148_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.108,
+            0.658,
+            0.902,
+            0.702
+          ],
+          "content": "复变量函数的连续性和可微性可以与实变量函数类似地定义. 特别地, 复变量函数 $z \\mapsto f(z)$ 在点 $\\zeta \\in \\mathbb{C}$ 的导数定义为 (当右端极限存在时)"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.373,
+            0.711,
+            0.9,
+            0.745
+          ],
+          "content": "f ^ {\\prime} (\\zeta) = \\lim _ {z \\to \\zeta} \\frac {f (z) - f (\\zeta)}{z - \\zeta}, \\tag {5.1.2}",
+          "image_source": "images/page_148_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.108,
+            0.754,
+            0.902,
+            0.798
+          ],
+          "content": "其中 $z \\to \\zeta$ 意为 $|z - \\zeta| \\to 0$. 若分别用 $u$ 和 $v$ 表示 $f$ 的实部和虚部, 即 $f = u + \\mathrm{i}v$, 则由 (5.1.2) 式可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.384,
+            0.81,
+            0.586,
+            0.831
+          ],
+          "content": "f ^ {\\prime} (\\zeta) = u ^ {\\prime} (\\zeta) + \\mathrm{i} v ^ {\\prime} (\\zeta).",
+          "image_source": "images/page_148_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.108,
+            0.841,
+            0.782,
+            0.86
+          ],
+          "content": "称 $\\mathbb{C}$ 上的函数 $f$ 是解析的或全纯的, 是指它在每一点 $\\zeta \\in \\mathbb{C}$ 的导数存在."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.108,
+            0.865,
+            0.904,
+            0.907
+          ],
+          "content": "我们可以将熟悉的指数函数 $x \\mapsto \\mathrm{e}^x$ 的定义延拓到复平面, 得到一个复变函数, 该延拓由"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.304,
+            0.923,
+            0.9,
+            0.938
+          ],
+          "content": "\\mathrm{e} ^ {z} = \\mathrm{e} ^ {x} (\\cos y + \\mathrm{i} \\sin y), \\quad z = x + \\mathrm{i} y \\in \\mathbb {C} \\tag {5.1.3}",
+          "image_source": "images/page_148_equation_16.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 149,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.686,
+            0.048,
+            0.883,
+            0.062
+          ],
+          "content": "5.1 随机变量的特征函数"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.904,
+            0.05,
+            0.934,
+            0.061
+          ],
+          "content": "135"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.09,
+            0.103,
+            0.522,
+            0.122
+          ],
+          "content": "给出. 在 (5.1.3) 式中令 $x = 0$ 就得到欧拉公式"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.334,
+            0.135,
+            0.595,
+            0.155
+          ],
+          "content": "\\mathrm{e} ^ {\\mathrm{i} y} = \\cos y + \\mathrm{i} \\sin y, \\quad y \\in \\mathbb {R}.",
+          "image_source": "images/page_149_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.166,
+            0.829,
+            0.186
+          ],
+          "content": "命题 5.1.1 (泰勒展开式) 由 (5.1.3) 式定义的复变量指数函数可写为级数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.365,
+            0.196,
+            0.567,
+            0.239
+          ],
+          "content": "\\mathrm{e} ^ {z} = \\sum_ {n = 0} ^ {\\infty} \\frac {z ^ {n}}{n !}, \\quad z \\in \\mathbb {C}.",
+          "image_source": "images/page_149_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.248,
+            0.692,
+            0.267
+          ],
+          "content": "证明 写 $z = x + \\mathrm{i}y$ 根据实变量三角函数的泰勒展开式, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.235,
+            0.273,
+            0.695,
+            0.317
+          ],
+          "content": "\\sin y = \\sum_ {k = 1} ^ {\\infty} \\frac {(- 1) ^ {k - 1} y ^ {2 k - 1}}{(2 k - 1) !}, \\quad \\cos y = \\sum_ {k = 0} ^ {\\infty} \\frac {(- 1) ^ {k} y ^ {2 k}}{(2 k) !}.",
+          "image_source": "images/page_149_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.091,
+            0.325,
+            0.245,
+            0.343
+          ],
+          "content": "再由欧拉公式得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.273,
+            0.347,
+            0.7,
+            0.442
+          ],
+          "content": "\\begin{array}{l} \\mathrm{e} ^ {\\mathrm{i} y} = \\sum_ {k = 0} ^ {\\infty} \\frac {(- 1) ^ {k} y ^ {2 k}}{(2 k) !} + \\mathrm{i} \\sum_ {k = 1} ^ {\\infty} \\frac {(- 1) ^ {k - 1} y ^ {2 k - 1}}{(2 k - 1) !} \\\\ = \\sum_ {k = 0} ^ {\\infty} \\frac {\\mathrm{i} ^ {2 k} y ^ {2 k}}{(2 k) !} + \\sum_ {k = 1} ^ {\\infty} \\frac {\\mathrm{i} ^ {2 k - 1} y ^ {2 k - 1}}{(2 k - 1) !} = \\sum_ {k = 0} ^ {\\infty} \\frac {(\\mathrm{i} y) ^ {k}}{k !}. \\\\ \\end{array}",
+          "image_source": "images/page_149_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.09,
+            0.45,
+            0.457,
+            0.468
+          ],
+          "content": "再利用实变量指数函数的泰勒展开式有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.259,
+            0.474,
+            0.711,
+            0.572
+          ],
+          "content": "\\begin{array}{l} \\mathrm{e} ^ {x + \\mathrm{i} y} = \\sum_ {j = 0} ^ {\\infty} \\frac {x ^ {j}}{j !} \\sum_ {k = 0} ^ {\\infty} \\frac {(\\mathrm{i} y) ^ {k}}{k !} = \\sum_ {n = 0} ^ {\\infty} \\sum_ {j + k = n} \\frac {x ^ {j} (\\mathrm{i} y) ^ {k}}{j ! k !} \\\\ = \\sum_ {n = 0} ^ {\\infty} \\frac {1}{n !} \\sum_ {j + k = n} \\frac {n !}{j ! k !} x ^ {j} (\\mathrm{i} y) ^ {k} = \\sum_ {n = 0} ^ {\\infty} \\frac {(x + \\mathrm{i} y) ^ {n}}{n !}. \\\\ \\end{array}",
+          "image_source": "images/page_149_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.09,
+            0.582,
+            0.226,
+            0.599
+          ],
+          "content": "故得欲证结果."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.13,
+            0.606,
+            0.759,
+            0.625
+          ],
+          "content": "利用指数函数的定义式 (5.1.3) 或泰勒展开式, 不难证明下面的性质:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.638,
+            0.597,
+            0.657
+          ],
+          "content": "\\mathrm{e} ^ {z _ {1}} \\mathrm{e} ^ {z _ {2}} = \\mathrm{e} ^ {z _ {1} + z _ {2}}, \\quad z _ {1}, z _ {2} \\in \\mathbb {C}.",
+          "image_source": "images/page_149_equation_14.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.13,
+            0.684,
+            0.475,
+            0.705
+          ],
+          "level": 2,
+          "content": "5.1.2 复随机变量的数学期望"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.086,
+            0.729,
+            0.883,
+            0.796
+          ],
+          "content": "基于实函数积分和实随机变量数学期望, 可以定义复随机变量的数学期望. 特别地, 给定概率空间 $(\\Omega, \\mathcal{F}, \\mathbf{P})$ 上的实随机变量 $\\xi$ 和 $\\eta$, 可以定义一个复随机变量 $\\zeta = \\xi + i\\eta$. 若 $\\xi$ 和 $\\eta$ 均可积, 则称 $\\zeta$ 可积并定义其数学期望为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.393,
+            0.81,
+            0.537,
+            0.828
+          ],
+          "content": "\\mathbf {E} \\zeta = \\mathbf {E} \\xi + \\mathrm{i} \\mathbf {E} \\eta .",
+          "image_source": "images/page_149_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.086,
+            0.84,
+            0.885,
+            0.907
+          ],
+          "content": "很多关于复随机变量 $\\zeta$ 的研究可以转化为讨论实随机向量 $(\\xi, \\eta)$. 例如, 复随机变量 $\\zeta_1 = \\xi_1 + \\mathrm{i}\\eta_1$ 与 $\\zeta_2 = \\xi_2 + \\mathrm{i}\\eta_2$ 独立当且仅当随机向量 $(\\xi_1, \\eta_1)$ 与 $(\\xi_2, \\eta_2)$ 独立. 此时对复平面上的任意有界博雷尔可测函数 $f$ 和 $g$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.314,
+            0.92,
+            0.614,
+            0.941
+          ],
+          "content": "\\mathbf {E} [ f (\\zeta_ {1}) g (\\zeta_ {2}) ] = \\mathbf {E} [ f (\\zeta_ {1}) ] \\mathbf {E} [ g (\\zeta_ {2}) ].",
+          "image_source": "images/page_149_equation_19.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 150,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.03,
+            0.05,
+            0.06,
+            0.062
+          ],
+          "content": "136"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.08,
+            0.048,
+            0.22,
+            0.063
+          ],
+          "content": "第五章 特征函数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.127,
+            0.106,
+            0.633,
+            0.127
+          ],
+          "content": "命题5.1.2 若 $\\xi, \\eta \\in L^2$，则 $|\\mathbf{E}(\\xi + \\mathrm{i}\\eta)| \\leqslant \\mathbf{E}(|\\xi + \\mathrm{i}\\eta|)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.132,
+            0.439,
+            0.15
+          ],
+          "content": "证明 利用柯西-施瓦茨不等式得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.226,
+            0.159,
+            0.728,
+            0.331
+          ],
+          "content": "\\begin{array}{l} (\\mathbf {E} | \\eta |) ^ {2} = \\left\\{\\mathbf {E} \\left[ \\left(\\sqrt {\\xi^ {2} + \\eta^ {2}}\\right) ^ {2} - \\xi^ {2} \\right] ^ {1 / 2} \\right\\} ^ {2} \\\\ = \\left\\{\\mathbf {E} \\left[ \\left(\\sqrt {\\xi^ {2} + \\eta^ {2}} - \\xi\\right) ^ {1 / 2} \\left(\\sqrt {\\xi^ {2} + \\eta^ {2}} + \\xi\\right) ^ {1 / 2} \\right] \\right\\} ^ {2} \\\\ \\leqslant \\mathbf {E} \\left(\\sqrt {\\xi^ {2} + \\eta^ {2}} - \\xi\\right) \\mathbf {E} \\left(\\sqrt {\\xi^ {2} + \\eta^ {2}} + \\xi\\right) \\\\ = \\left(\\mathbf {E} \\sqrt {\\xi^ {2} + \\eta^ {2}} - \\mathbf {E} \\xi\\right) \\left(\\mathbf {E} \\sqrt {\\xi^ {2} + \\eta^ {2}} + \\mathbf {E} \\xi\\right) \\\\ = \\left(\\mathbf {E} \\sqrt {\\xi^ {2} + \\eta^ {2}}\\right) ^ {2} - (\\mathbf {E} \\xi) ^ {2}. \\\\ \\end{array}",
+          "image_source": "images/page_150_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.079,
+            0.345,
+            0.445,
+            0.366
+          ],
+          "content": "由于 $(\\mathbf{E}\\eta)^2 = |\\mathbf{E}\\eta|^2 \\leqslant (\\mathbf{E}|\\eta|)^2$ ，上式蕴涵"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.38,
+            0.621,
+            0.404
+          ],
+          "content": "(\\mathbf {E} \\xi) ^ {2} + (\\mathbf {E} \\eta) ^ {2} \\leqslant \\left(\\mathbf {E} \\sqrt {\\xi^ {2} + \\eta^ {2}}\\right) ^ {2}.",
+          "image_source": "images/page_150_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.079,
+            0.422,
+            0.26,
+            0.439
+          ],
+          "content": "此即为欲证不等式."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.853,
+            0.424,
+            0.874,
+            0.438
+          ],
+          "content": "□"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.12,
+            0.468,
+            0.388,
+            0.488
+          ],
+          "level": 2,
+          "content": "5.1.3 特征函数的定义"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.079,
+            0.514,
+            0.875,
+            0.555
+          ],
+          "content": "定义 5.1.1 设欧氏空间  $(\\mathbb{F}, \\mathcal{B})$  上的有限测度  $\\mu$  有分布函数 G. 则  $\\mu$  和 G 的特征函数定义为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.163,
+            0.568,
+            0.872,
+            0.604
+          ],
+          "content": "f (t) = \\int_ {- \\infty} ^ {\\infty} \\mathrm{e} ^ {\\mathrm{i} t x} \\mathrm{d} G (x) = \\int_ {- \\infty} ^ {\\infty} \\cos (t x) \\mathrm{d} G (x) + \\mathrm{i} \\int_ {- \\infty} ^ {\\infty} \\sin (t x) \\mathrm{d} G (x), \\tag {5.1.4}",
+          "image_source": "images/page_150_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.08,
+            0.621,
+            0.188,
+            0.638
+          ],
+          "content": "其中 $t \\in \\mathbb{R}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.079,
+            0.645,
+            0.875,
+            0.687
+          ],
+          "content": "定义 5.1.2 设随机变量  $\\xi$  有分布函数 F. 我们也称 F 的特征函数 f 为  $\\xi$  的特征函数. 根据 (5.1.4) 式, 此时有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.271,
+            0.704,
+            0.872,
+            0.739
+          ],
+          "content": "f (t) := \\mathbf {E} (\\mathrm{e} ^ {\\mathrm{i} t \\xi}) = \\int_ {- \\infty} ^ {\\infty} \\mathrm{e} ^ {\\mathrm{i} t x} \\mathrm{d} F (x), \\quad t \\in \\mathbb {R}. \\tag {5.1.5}",
+          "image_source": "images/page_150_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.078,
+            0.757,
+            0.876,
+            0.8
+          ],
+          "content": "例 5.1.1 若  $\\xi$  是取值于  $\\{x_{k}: k=1,2,\\cdots\\}$  离散型随机变量, 且有分布列  $p(x_{k})=\\mathbf{P}(\\xi=x_{k}), k=1,2,\\cdots$ , 则其特征函数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.171,
+            0.816,
+            0.741,
+            0.86
+          ],
+          "content": "f (t) = \\sum_ {k = 1} ^ {\\infty} \\mathrm{e} ^ {\\mathrm{i} t x _ {k}} p (x _ {k}) = \\sum_ {k = 1} ^ {\\infty} \\cos (t x _ {k}) p (x _ {k}) + \\mathrm{i} \\sum_ {k = 1} ^ {\\infty} \\sin (t x _ {k}) p (x _ {k}).",
+          "image_source": "images/page_150_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.12,
+            0.876,
+            0.854,
+            0.895
+          ],
+          "content": "例 5.1.2 若  $\\xi$  是绝对连续型随机变量, 且有分布密度函数 p, 则其特征函数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.148,
+            0.906,
+            0.763,
+            0.945
+          ],
+          "content": "f (t) = \\int_ {- \\infty} ^ {\\infty} \\mathrm{e} ^ {\\mathrm{i} t x} p (x) \\mathrm{d} x = \\int_ {- \\infty} ^ {\\infty} \\cos (t x) p (x) \\mathrm{d} x + \\mathrm{i} \\int_ {- \\infty} ^ {\\infty} \\sin (t x) p (x) \\mathrm{d} x.",
+          "image_source": "images/page_150_equation_18.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 151,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.69,
+            0.047,
+            0.886,
+            0.061
+          ],
+          "content": "5.1 随机变量的特征函数"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.908,
+            0.048,
+            0.937,
+            0.06
+          ],
+          "content": "137"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.091,
+            0.103,
+            0.888,
+            0.146
+          ],
+          "content": "例5.1.3 若 $\\xi$ 是非负整数值随机变量且有母函数 $g$. 若将 $g$ 理解为复变量函数, 则 $\\xi$ 的特征函数可以表示为 $f(t) = g(\\mathrm{e}^{\\mathrm{i}t}), t \\in \\mathbb{R}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.09,
+            0.151,
+            0.888,
+            0.193
+          ],
+          "content": "例5.1.4 对于 $0 \\leqslant p \\leqslant 1$, 伯努利分布 $B(1, p)$ 的特征函数为 $f(t) = 1 - p + p\\mathrm{e}^{\\mathrm{i}t}, t \\in \\mathbb{R}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.133,
+            0.199,
+            0.628,
+            0.218
+          ],
+          "content": "例 5.1.5 对于  $\\lambda \\geqslant 0$ ，泊松分布  $\\mathbf{P}(\\lambda)$  的特征函数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.227,
+            0.23,
+            0.71,
+            0.274
+          ],
+          "content": "f (t) = \\mathrm{e} ^ {- \\lambda} \\sum_ {k = 0} ^ {\\infty} \\frac {\\lambda^ {k}}{k !} \\mathrm{e} ^ {\\mathrm{i} t k} = \\mathrm{e} ^ {- \\lambda} \\mathrm{e} ^ {\\lambda \\mathrm{e} ^ {\\mathrm{i} t}} = \\mathrm{e} ^ {\\lambda (\\mathrm{e} ^ {\\mathrm{i} t} - 1)}, \\quad t \\in \\mathbb {R}.",
+          "image_source": "images/page_151_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.133,
+            0.286,
+            0.665,
+            0.305
+          ],
+          "content": "例5.1.6 对于 $0 < p < 1$ ，几何分布 $G(p)$ 的特征函数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.199,
+            0.317,
+            0.741,
+            0.361
+          ],
+          "content": "f (t) = \\sum_ {k = 1} ^ {\\infty} p (1 - p) ^ {k - 1} \\mathrm{e} ^ {\\mathrm{i} t k} = p \\mathrm{e} ^ {\\mathrm{i} t} \\lim _ {n \\to \\infty} \\sum_ {k = 1} ^ {n} (1 - p) ^ {k - 1} \\mathrm{e} ^ {\\mathrm{i} (k - 1) t}.",
+          "image_source": "images/page_151_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.094,
+            0.373,
+            0.143,
+            0.39
+          ],
+          "content": "易证"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.217,
+            0.402,
+            0.724,
+            0.445
+          ],
+          "content": "\\left[ 1 - (1 - p) \\mathrm{e} ^ {\\mathrm{i} t} \\right] \\sum_ {k = 1} ^ {n} (1 - p) ^ {k - 1} \\mathrm{e} ^ {\\mathrm{i} (k - 1) t} = 1 - (1 - p) ^ {n} \\mathrm{e} ^ {\\mathrm{i} n t}.",
+          "image_source": "images/page_151_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.093,
+            0.458,
+            0.141,
+            0.475
+          ],
+          "content": "注意"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.29,
+            0.49,
+            0.651,
+            0.517
+          ],
+          "content": "\\lim _ {n \\to \\infty} \\left| (1 - p) ^ {n} \\mathrm{e} ^ {\\mathrm{i} n t} \\right| = \\lim _ {n \\to \\infty} (1 - p) ^ {n} = 0.",
+          "image_source": "images/page_151_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.093,
+            0.526,
+            0.141,
+            0.544
+          ],
+          "content": "所以"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.197,
+            0.553,
+            0.744,
+            0.593
+          ],
+          "content": "f (t) = \\lim _ {n \\to \\infty} \\frac {p \\mathrm{e} ^ {\\mathrm{i} t} \\left[ 1 - (1 - p) ^ {n} \\mathrm{e} ^ {\\mathrm{i} n t} \\right]}{1 - (1 - p) \\mathrm{e} ^ {\\mathrm{i} t}} = \\frac {p \\mathrm{e} ^ {\\mathrm{i} t}}{1 - (1 - p) \\mathrm{e} ^ {\\mathrm{i} t}}, \\quad t \\in \\mathbb {R}.",
+          "image_source": "images/page_151_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.604,
+            0.686,
+            0.623
+          ],
+          "content": "例5.1.7 对于 $a < b \\in \\mathbb{R}$, 均匀分布 $U(a, b)$ 的特征函数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.281,
+            0.631,
+            0.7,
+            0.797
+          ],
+          "content": "\\begin{array}{l} f (t) = \\frac {1}{b - a} \\left[ \\int_ {a} ^ {b} \\cos (t x) \\mathrm{d} x + \\mathrm{i} \\int_ {a} ^ {b} \\sin (t x) \\mathrm{d} x \\right] \\\\ = \\frac {1}{b - a} \\left[ \\frac {1}{t} \\sin (t x) \\Big | _ {a} ^ {b} - \\frac {\\mathrm{i}}{t} \\cos (t x) \\Big | _ {a} ^ {b} \\right] \\\\ = \\frac {1}{(b - a) \\mathrm{i} t} \\left[ \\mathrm{i} \\sin (t x) \\Big | _ {a} ^ {b} + \\cos (t x) \\Big | _ {a} ^ {b} \\right] \\\\ = \\frac {1}{(b - a) \\mathrm{i} t} \\mathrm{e} ^ {\\mathrm{i} t x} \\Big | _ {a} ^ {b} = \\frac {1}{(b - a) \\mathrm{i} t} (\\mathrm{e} ^ {\\mathrm{i} t b} - \\mathrm{e} ^ {\\mathrm{i} t a}). \\\\ \\end{array}",
+          "image_source": "images/page_151_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.806,
+            0.734,
+            0.825
+          ],
+          "content": "例5.1.8 设 $\\xi$ 服从参数为 $\\lambda > 0$ 的指数分布. 则其特征函数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.162,
+            0.832,
+            0.781,
+            0.87
+          ],
+          "content": "f (t) = \\lambda \\int_ {0} ^ {\\infty} \\mathrm{e} ^ {- \\lambda x} \\cos (t x) \\mathrm{d} x + \\mathrm{i} \\lambda \\int_ {0} ^ {\\infty} \\mathrm{e} ^ {- \\lambda x} \\sin (t x) \\mathrm{d} x =: \\lambda (J _ {1} + \\mathrm{i} J _ {2}),",
+          "image_source": "images/page_151_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.094,
+            0.88,
+            0.143,
+            0.898
+          ],
+          "content": "其中"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.236,
+            0.905,
+            0.708,
+            0.944
+          ],
+          "content": "J _ {1} = \\int_ {0} ^ {\\infty} \\mathrm{e} ^ {- \\lambda x} \\cos (t x) \\mathrm{d} x, J _ {2} = \\int_ {0} ^ {\\infty} \\mathrm{e} ^ {- \\lambda x} \\sin (t x) \\mathrm{d} x.",
+          "image_source": "images/page_151_equation_19.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 152,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.054,
+            0.046,
+            0.083,
+            0.058
+          ],
+          "content": "138"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.105,
+            0.045,
+            0.242,
+            0.059
+          ],
+          "content": "第五章 特征函数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.102,
+            0.256,
+            0.119
+          ],
+          "content": "利用分部积分有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.273,
+            0.134,
+            0.689,
+            0.169
+          ],
+          "content": "J _ {1} = \\frac {1}{t} \\mathrm{e} ^ {- \\lambda x} \\sin (t x) \\big | _ {0} ^ {\\infty} + \\frac {\\lambda}{t} \\int_ {0} ^ {\\infty} \\mathrm{e} ^ {- \\lambda x} \\sin (t x) \\mathrm{d} x",
+          "image_source": "images/page_152_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.184,
+            0.127,
+            0.2
+          ],
+          "content": "和"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.259,
+            0.215,
+            0.699,
+            0.251
+          ],
+          "content": "J _ {2} = - \\frac {1}{t} \\mathrm{e} ^ {- \\lambda x} \\cos (t x) \\big | _ {0} ^ {\\infty} - \\frac {\\lambda}{t} \\int_ {0} ^ {\\infty} \\mathrm{e} ^ {- \\lambda x} \\cos (t x) \\mathrm{d} x.",
+          "image_source": "images/page_152_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.266,
+            0.212,
+            0.282
+          ],
+          "content": "故有方程组"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.353,
+            0.298,
+            0.603,
+            0.33
+          ],
+          "content": "J _ {1} = \\frac {\\lambda}{t} J _ {2}, \\quad J _ {2} = \\frac {1}{t} - \\frac {\\lambda}{t} J _ {1}.",
+          "image_source": "images/page_152_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.342,
+            0.192,
+            0.359
+          ],
+          "content": "由此解得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.342,
+            0.375,
+            0.614,
+            0.408
+          ],
+          "content": "J _ {1} = \\frac {\\lambda}{\\lambda^ {2} + t ^ {2}}, \\quad J _ {2} = \\frac {t}{\\lambda^ {2} + t ^ {2}}.",
+          "image_source": "images/page_152_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.419,
+            0.148,
+            0.436
+          ],
+          "content": "从而"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.358,
+            0.45,
+            0.596,
+            0.484
+          ],
+          "content": "f (t) = \\frac {\\lambda (\\lambda + \\mathrm{i} t)}{\\lambda^ {2} + t ^ {2}} = \\frac {\\lambda}{\\lambda - \\mathrm{i} t}.",
+          "image_source": "images/page_152_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.496,
+            0.656,
+            0.515
+          ],
+          "content": "例5.1.9 若对满足 $a > 0$ 的复数 $c = a + \\mathrm{i}b,$ 承认等式"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.393,
+            0.527,
+            0.559,
+            0.563
+          ],
+          "content": "c \\int_ {0} ^ {\\infty} \\mathrm{e} ^ {- c x} \\mathrm{d} x = 1,",
+          "image_source": "images/page_152_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.578,
+            0.637,
+            0.597
+          ],
+          "content": "则指数分布  $E(\\lambda)$  的特征函数可通过下面的简单计算得到:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.227,
+            0.613,
+            0.724,
+            0.65
+          ],
+          "content": "f (t) = \\lambda \\int_ {0} ^ {\\infty} \\mathrm{e} ^ {\\mathrm{i} t x} \\mathrm{e} ^ {- \\lambda x} \\mathrm{d} x = \\lambda \\int_ {0} ^ {\\infty} \\mathrm{e} ^ {- (\\lambda - \\mathrm{i} t) x} \\mathrm{d} x = \\frac {\\lambda}{\\lambda - \\mathrm{i} t}.",
+          "image_source": "images/page_152_equation_15.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.139,
+            0.668,
+            0.33,
+            0.688
+          ],
+          "level": 2,
+          "content": "5.1.4 基本性质"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.713,
+            0.839,
+            0.733
+          ],
+          "content": "命题 5.1.3 随机变量  $\\xi$  的特征函数  $f(t)=f_{\\xi}(t)=\\mathbf{E}(\\mathrm{e}^{\\mathrm{i}t\\xi})$  具有如下性质:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.096,
+            0.738,
+            0.891,
+            0.879
+          ],
+          "sub_type": "text",
+          "content": "(1) 有界性: $|f(t)| \\leqslant f(0) = 1$;\n(2) 共轭对称性:  $f(-t)=\\overline{f(t)}$ ;\n(3) 线性变换的特征函数: 对任意的 $a, b \\in \\mathbb{R}$, 随机变量 $\\eta := a + b\\xi$ 的特征函数为 $f_{\\eta}(t) = \\mathrm{e}^{\\mathrm{i}at} f_{\\xi}(bt)$;\n(4) 一致连续性: $f$ 在 $\\mathbb{R}$ 上一致连续;\n(5) 半正定: 对任意实数  $t_{1}, t_{2}, \\cdots, t_{n}$  及复数  $a_{1}, a_{2}, \\cdots, a_{n}$ ，有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.351,
+            0.895,
+            0.594,
+            0.939
+          ],
+          "content": "\\sum_ {j = 1} ^ {n} \\sum_ {k = 1} ^ {n} a _ {j} \\bar {a} _ {k} f (t _ {j} - t _ {k}) \\geqslant 0.",
+          "image_source": "images/page_152_equation_24.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 153,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.694,
+            0.046,
+            0.891,
+            0.061
+          ],
+          "content": "5.1 随机变量的特征函数"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.912,
+            0.048,
+            0.941,
+            0.059
+          ],
+          "content": "139"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.102,
+            0.634,
+            0.121
+          ],
+          "content": "证明 性质 (1), (2), (3) 显然成立. 下面证明 (4), (5)."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.126,
+            0.545,
+            0.145
+          ],
+          "content": "(4) 对于 $\\delta > 0$, 由 (5.1.5) 式和命题 5.1.2 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.239,
+            0.156,
+            0.75,
+            0.315
+          ],
+          "content": "\\begin{array}{l} | f (t + \\delta) - f (t) | = \\Big | \\int_ {\\mathbb {R}} [ \\mathrm{e} ^ {\\mathrm{i} (t + \\delta) x} - \\mathrm{e} ^ {\\mathrm{i} t x} ] \\mathrm{d} F (x) \\Big | \\\\ \\leqslant \\int_ {- \\infty} ^ {\\infty} | \\mathrm{e} ^ {\\mathrm{i} (t + \\delta) x} - \\mathrm{e} ^ {\\mathrm{i} t x} | \\mathrm{d} F (x) \\\\ = \\int_ {- \\infty} ^ {\\infty} | \\mathrm{e} ^ {\\mathrm{i} (t + \\delta / 2) x} | | \\mathrm{e} ^ {\\mathrm{i} \\delta x / 2} - \\mathrm{e} ^ {- \\mathrm{i} \\delta x / 2} | \\mathrm{d} F (x) \\\\ = \\int_ {- \\infty} ^ {\\infty} 2 | \\sin (\\delta x / 2) | \\mathrm{d} F (x). \\\\ \\end{array}",
+          "image_source": "images/page_153_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.331,
+            0.414,
+            0.348
+          ],
+          "content": "根据控制收敛定理, 当  $\\delta \\rightarrow 0$  时有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.246,
+            0.36,
+            0.7,
+            0.395
+          ],
+          "content": "\\sup _ {t \\in \\mathbb {R}} | f (t + \\delta) - f (t) | \\leqslant \\int_ {\\mathbb {R}} 2 | \\sin (\\delta x / 2) | \\mathrm{d} F (x) \\to 0.",
+          "image_source": "images/page_153_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.41,
+            0.433,
+            0.428
+          ],
+          "content": "(5) 由 (5.1.5) 式和命题 5.1.2 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.262,
+            0.443,
+            0.724,
+            0.642
+          ],
+          "content": "\\begin{array}{l} \\sum_ {j = 1} ^ {n} \\sum_ {k = 1} ^ {n} a _ {j} \\bar {a} _ {k} f (t _ {j} - t _ {k}) = \\sum_ {j = 1} ^ {n} \\sum_ {k = 1} ^ {n} a _ {j} \\bar {a} _ {k} \\mathbf {E} \\mathrm{e} ^ {\\mathrm{i} (t _ {j} - t _ {k}) \\xi} \\\\ = \\mathbf {E} \\Big (\\sum_ {j = 1} ^ {n} \\sum_ {k = 1} ^ {n} a _ {j} \\bar {a} _ {k} \\mathrm{e} ^ {\\mathrm{i} t _ {j} \\xi} \\overline {{\\mathrm{e} ^ {\\mathrm{i} t _ {k} \\xi}}} \\Big) \\\\ = \\mathbf {E} \\left(\\sum_ {j = 1} ^ {n} a _ {j} \\mathrm{e} ^ {\\mathrm{i} t _ {j} \\xi} \\cdot \\overline {{\\sum_ {k = 1} ^ {n} a _ {k} \\mathrm{e} ^ {\\mathrm{i} t _ {k} \\xi}}}\\right) \\\\ = \\mathbf {E} \\left(\\left| \\sum_ {j = 1} ^ {n} a _ {j} \\mathrm{e} ^ {\\mathrm{i} t _ {j} \\xi} \\right| ^ {2}\\right) \\geqslant 0. \\\\ \\end{array}",
+          "image_source": "images/page_153_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.096,
+            0.659,
+            0.234,
+            0.676
+          ],
+          "content": "故得欲证结果."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.705,
+            0.22,
+            0.724
+          ],
+          "level": 2,
+          "content": "练习题"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.75,
+            0.893,
+            0.817
+          ],
+          "content": "1. 设  $\\xi_{1}, \\xi_{2}, \\cdots$  为独立同分布随机变量且特征函数为  $f_{1}(t)$ ，而  $\\eta$  是非负整数值随机变量，有母函数  $h(s)$  且与  $(\\xi_{k})$  独立。求随机变量  $X := \\xi_{1} + \\xi_{2} + \\cdots + \\xi_{\\eta}$  的特征函数  $f_{X}(t)$ 。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.822,
+            0.664,
+            0.839
+          ],
+          "content": "2. 参数为 $a \\in \\mathbb{R}$ 和 $\\lambda > 0$ 的拉普拉斯分布的密度函数由"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.34,
+            0.851,
+            0.607,
+            0.883
+          ],
+          "content": "p (x) = \\frac {1}{2 \\lambda} \\mathrm{e} ^ {- | x - a | / \\lambda}, \\quad x \\in \\mathbb {R}",
+          "image_source": "images/page_153_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.894,
+            0.646,
+            0.912
+          ],
+          "content": "给出. 求其特征函数, 并利用特征函数求其数学期望和方差."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.137,
+            0.918,
+            0.714,
+            0.936
+          ],
+          "content": "3. 设随机变量 X 服从正态分布  $N(a, \\sigma^{2})$ . 求  $X^{2}$  的特征函数."
+        }
+      ]
+    },
+    {
+      "page_idx": 154,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.055,
+            0.048,
+            0.085,
+            0.06
+          ],
+          "content": "140"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.105,
+            0.047,
+            0.245,
+            0.061
+          ],
+          "content": "第五章 特征函数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.105,
+            0.899,
+            0.145
+          ],
+          "content": "4. 设随机变量 X 服从正态分布  $N(a, \\sigma^{2})$ . 试用特征函数的方法求 X 的 3 阶及 4 阶中心矩."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.152,
+            0.703,
+            0.171
+          ],
+          "content": "5. 证明: 对于任何实值特征函数 $f(t)$, 以下两个不等式成立:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.145,
+            0.176,
+            0.625,
+            0.195
+          ],
+          "content": "1 - f (2 t) \\leqslant 4 [ 1 - f (t) ]; \\quad (2) 1 + f (2 t) \\geqslant 2 f (t) ^ {2}. \\tag {1}",
+          "image_source": "images/page_154_equation_4.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.102,
+            0.248,
+            0.449,
+            0.27
+          ],
+          "level": 2,
+          "content": "5.2 分布性质和反演公式"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.319,
+            0.898,
+            0.385
+          ],
+          "content": "本节中我们应用特征函数研究随机变量的分布性质, 包括特征函数与矩的关系、特征函数的唯一性、分布的绝对连续性等. 唯一性的基本的想法是利用特征函数给出分布函数的表示, 也就是通常所说的反演公式."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.143,
+            0.414,
+            0.438,
+            0.434
+          ],
+          "level": 2,
+          "content": "5.2.1 特征函数与原点矩"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.459,
+            0.896,
+            0.501
+          ],
+          "content": "随机变量的特征函数与其原点矩之间有密切的联系. 为讨论这种联系, 我们首先给出纯虚数变量指数函数的泰勒展开式余项的一个上界估计."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.507,
+            0.566,
+            0.525
+          ],
+          "content": "命题5.2.1 对任意 $x \\in \\mathbb{R}$ 及整数 $n \\geqslant 1$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.285,
+            0.544,
+            0.668,
+            0.587
+          ],
+          "content": "\\left| \\mathrm{e} ^ {\\mathrm{i} x} - \\sum_ {k = 0} ^ {n} \\frac {(\\mathrm{i} x) ^ {k}}{k !} \\right| \\leqslant \\left(\\frac {2 | x | ^ {n}}{n !}\\right) \\wedge \\left(\\frac {| x | ^ {n + 1}}{(n + 1) !}\\right).",
+          "image_source": "images/page_154_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.604,
+            0.322,
+            0.621
+          ],
+          "content": "证明 对 $x \\in \\mathbb{R}$ 令"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.298,
+            0.636,
+            0.653,
+            0.681
+          ],
+          "content": "g _ {n} (x) = \\mathrm{e} ^ {\\mathrm{i} x} - \\sum_ {k = 0} ^ {n} \\frac {(\\mathrm{i} x) ^ {k}}{k !} = \\sum_ {k = n + 1} ^ {\\infty} \\frac {(\\mathrm{i} x) ^ {k}}{k !}.",
+          "image_source": "images/page_154_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.697,
+            0.272,
+            0.714
+          ],
+          "content": "求 $n + 1$ 次导数得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.273,
+            0.731,
+            0.677,
+            0.775
+          ],
+          "content": "\\frac {\\mathrm{d} ^ {n + 1}}{\\mathrm{d} x ^ {n + 1}} g _ {n} (x) = \\sum_ {k = n + 1} ^ {\\infty} \\frac {\\mathrm{i} ^ {k} x ^ {k - n - 1}}{(k - n - 1) !} = \\mathrm{i} ^ {n + 1} \\mathrm{e} ^ {\\mathrm{i} x}.",
+          "image_source": "images/page_154_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.791,
+            0.168,
+            0.808
+          ],
+          "content": "所以有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.279,
+            0.824,
+            0.669,
+            0.864
+          ],
+          "content": "g _ {n} (x) = \\int_ {0} ^ {x} \\mathrm{d} t _ {1} \\int_ {0} ^ {t _ {1}} \\mathrm{d} t _ {2} \\dots \\int_ {0} ^ {t _ {n}} \\mathrm{e} ^ {\\mathrm{i} t _ {n + 1}} \\mathrm{d} t _ {n + 1}",
+          "image_source": "images/page_154_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.877,
+            0.125,
+            0.893
+          ],
+          "content": "和"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.245,
+            0.905,
+            0.702,
+            0.945
+          ],
+          "content": "g _ {n} (x) = \\int_ {0} ^ {x} \\mathrm{d} t _ {1} \\int_ {0} ^ {t _ {1}} \\mathrm{d} t _ {2} \\dots \\int_ {0} ^ {t _ {n - 1}} \\mathrm{i} ^ {- 1} (\\mathrm{e} ^ {\\mathrm{i} t _ {n}} - 1) \\mathrm{d} t _ {n}.",
+          "image_source": "images/page_154_equation_18.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 155,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.69,
+            0.045,
+            0.887,
+            0.059
+          ],
+          "content": "5.2 分布性质和反演公式"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.908,
+            0.047,
+            0.936,
+            0.058
+          ],
+          "content": "141"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.093,
+            0.101,
+            0.205,
+            0.118
+          ],
+          "content": "由此分别得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.233,
+            0.134,
+            0.705,
+            0.173
+          ],
+          "content": "\\left| g _ {n} (x) \\right| \\leqslant \\left| \\int_ {0} ^ {x} \\mathrm{d} t _ {1} \\int_ {0} ^ {t _ {1}} \\mathrm{d} t _ {2} \\dots \\int_ {0} ^ {t _ {n}} \\mathrm{d} t _ {n + 1} \\right| = \\frac {| x | ^ {n + 1}}{(n + 1) !}",
+          "image_source": "images/page_155_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.093,
+            0.189,
+            0.12,
+            0.205
+          ],
+          "content": "和"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.239,
+            0.217,
+            0.7,
+            0.256
+          ],
+          "content": "\\left| g _ {n} (x) \\right| \\leqslant 2 \\Big | \\int_ {0} ^ {x} \\mathrm{d} t _ {1} \\int_ {0} ^ {t _ {1}} \\mathrm{d} t _ {2} \\dots \\int_ {0} ^ {t _ {n - 1}} \\mathrm{d} t _ {n} \\Big | = \\frac {2 | x | ^ {n}}{n !}.",
+          "image_source": "images/page_155_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.092,
+            0.271,
+            0.231,
+            0.288
+          ],
+          "content": "故得欲证估计."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.092,
+            0.294,
+            0.887,
+            0.336
+          ],
+          "content": "定理5.2.2 令 $f(t) = \\mathbf{E}(\\mathrm{e}^{\\mathrm{i}t\\xi})$ 为随机变量 $\\xi$ 的特征函数. 若 $\\xi$ 有有限的 $n$ 阶矩, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.219,
+            0.352,
+            0.719,
+            0.396
+          ],
+          "content": "\\left| \\mathbf {E} (\\mathrm{e} ^ {\\mathrm{i} t \\xi}) - \\sum_ {k = 0} ^ {n} \\frac {(\\mathrm{i} t) ^ {k}}{k !} \\mathbf {E} (\\xi^ {k}) \\right| \\leqslant \\mathbf {E} \\Big [ \\Big (\\frac {2 | t \\xi | ^ {n}}{n !} \\Big) \\wedge \\Big (\\frac {| t \\xi | ^ {n + 1}}{(n + 1) !} \\Big) \\Big ].",
+          "image_source": "images/page_155_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.413,
+            0.292,
+            0.431
+          ],
+          "content": "证明 首先注意"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.252,
+            0.446,
+            0.686,
+            0.491
+          ],
+          "content": "\\left| \\mathbf {E} (\\mathrm{e} ^ {\\mathrm{i} t \\xi}) - \\sum_ {k = 0} ^ {n} \\frac {(\\mathrm{i} t) ^ {k}}{k !} \\mathbf {E} (\\xi^ {k}) \\right| \\leqslant \\mathbf {E} \\Big | \\mathrm{e} ^ {\\mathrm{i} t \\xi} - \\sum_ {k = 0} ^ {n} \\frac {(\\mathrm{i} t \\xi) ^ {k}}{k !} \\Big |.",
+          "image_source": "images/page_155_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.092,
+            0.507,
+            0.414,
+            0.525
+          ],
+          "content": "再应用命题 5.2.1 即得欲证的估计."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.092,
+            0.531,
+            0.887,
+            0.572
+          ],
+          "content": "推论5.2.3 设随机变量 $\\xi$ 的 $k$ 阶原点矩 $m_{k}$ 有限. 则其特征函数 $f$ 为 $k$ 阶可微且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.277,
+            0.584,
+            0.662,
+            0.62
+          ],
+          "content": "\\frac {\\mathrm{d} ^ {k} f}{\\mathrm{d} t ^ {k}} (t) = \\mathbf {E} \\big [ (\\mathrm{i} \\xi) ^ {k} \\mathrm{e} ^ {\\mathrm{i} t \\xi} \\big ], \\quad m _ {k} = \\mathrm{i} ^ {- k} \\frac {\\mathrm{d} ^ {k} f}{\\mathrm{d} t ^ {k}} (0).",
+          "image_source": "images/page_155_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.633,
+            0.341,
+            0.651
+          ],
+          "content": "证明 取 $\\delta \\neq 0$ .注意"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.196,
+            0.671,
+            0.887,
+            0.693
+          ],
+          "content": "\\delta^ {- 1} [ f (t + \\delta) - f (t) ] - \\mathbf {E} \\big (\\mathrm{i} \\xi \\mathrm{e} ^ {\\mathrm{i} t \\xi} \\big) = \\mathbf {E} \\big [ \\mathrm{e} ^ {\\mathrm{i} t \\xi} \\delta^ {- 1} (\\mathrm{e} ^ {\\mathrm{i} \\delta \\xi} - 1 - \\mathrm{i} \\delta \\xi) \\big ]. \\tag {5.2.1}",
+          "image_source": "images/page_155_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.093,
+            0.711,
+            0.239,
+            0.728
+          ],
+          "content": "由命题5.2.1知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.229,
+            0.748,
+            0.709,
+            0.77
+          ],
+          "content": "\\left| \\mathrm{e} ^ {\\mathrm{i} t \\xi} \\delta^ {- 1} (\\mathrm{e} ^ {\\mathrm{i} \\delta \\xi} - 1 - \\mathrm{i} \\delta \\xi) \\right| \\leqslant (2 | \\xi |) \\land (2 ^ {- 1} | \\xi | ^ {2} | \\delta |) \\leqslant 2 | \\xi |.",
+          "image_source": "images/page_155_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.092,
+            0.788,
+            0.275,
+            0.806
+          ],
+          "content": "根据定理 4.2.20, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.312,
+            0.825,
+            0.625,
+            0.853
+          ],
+          "content": "\\lim _ {\\delta \\to 0} \\mathbf {E} \\big [ \\mathrm{e} ^ {\\mathrm{i} t \\xi} \\delta^ {- 1} (\\mathrm{e} ^ {\\mathrm{i} \\delta \\xi} - 1 - \\mathrm{i} \\delta \\xi) \\big ] = 0.",
+          "image_source": "images/page_155_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.091,
+            0.869,
+            0.887,
+            0.911
+          ],
+          "content": "再由 (5.2.1) 式得 $f'(t) = \\mathbf{E}(\\mathrm{i}\\xi \\mathrm{e}^{\\mathrm{i}t\\xi})$. 这就证明了 $k = 1$ 的情况. 应用数学归纳法, 通过类似的计算可得一般情况."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.917,
+            0.884,
+            0.936
+          ],
+          "content": "推论 5.2.4 令  $f(t)=\\mathbf{E}(\\mathrm{e}^{\\mathrm{i}t\\xi})$  为随机变量  $\\xi$  的特征函数. 则下面两个性质等价:"
+        }
+      ]
+    },
+    {
+      "page_idx": 156,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.076,
+            0.047,
+            0.106,
+            0.059
+          ],
+          "content": "142"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.125,
+            0.046,
+            0.264,
+            0.06
+          ],
+          "content": "第五章 特征函数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.167,
+            0.103,
+            0.334,
+            0.122
+          ],
+          "content": "(1) $f(t)$ 有展开式"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.402,
+            0.134,
+            0.601,
+            0.178
+          ],
+          "content": "f (t) = \\sum_ {k = 0} ^ {\\infty} \\frac {(\\mathrm{i} t) ^ {k}}{k !} \\mathbf {E} (\\xi^ {k})",
+          "image_source": "images/page_156_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.125,
+            0.189,
+            0.391,
+            0.207
+          ],
+          "content": "且等号右端的级数绝对收敛;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.166,
+            0.213,
+            0.371,
+            0.232
+          ],
+          "content": "(2) $\\xi$ 的各阶矩有限且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.404,
+            0.244,
+            0.595,
+            0.28
+          ],
+          "content": "\\lim _ {k \\to \\infty} \\frac {| t | ^ {k}}{k !} \\mathbf {E} (| \\xi | ^ {k}) = 0.",
+          "image_source": "images/page_156_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.287,
+            0.687,
+            0.306
+          ],
+          "content": "例 5.2.1 设  $\\xi$  服从正态分布  $N(0,1)$ . 求其特征函数 f."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.164,
+            0.311,
+            0.517,
+            0.329
+          ],
+          "content": "解 由例4.3.9, 对任意整数 $r \\geqslant 1$, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.335,
+            0.344,
+            0.662,
+            0.365
+          ],
+          "content": "\\mathbf {E} (\\xi^ {2 r - 1}) = 0, \\quad \\mathbf {E} (\\xi^ {2 r}) = (2 r - 1)!!,",
+          "image_source": "images/page_156_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.124,
+            0.379,
+            0.15,
+            0.396
+          ],
+          "content": "则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.285,
+            0.403,
+            0.712,
+            0.443
+          ],
+          "content": "\\lim _ {r \\to \\infty} \\frac {| t | ^ {2 r} \\mathbf {E} | \\xi | ^ {2 r}}{(2 r) !} = \\lim _ {r \\to \\infty} \\frac {| t | ^ {2 r}}{(2 r) ! !} = \\lim _ {r \\to \\infty} \\frac {| t | ^ {2 r}}{2 ^ {r} r !} = 0.",
+          "image_source": "images/page_156_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.454,
+            0.408,
+            0.473
+          ],
+          "content": "作积分变量替换 $x = \\sqrt{2t}$ 可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.261,
+            0.483,
+            0.779,
+            0.567
+          ],
+          "content": "\\begin{array}{l} \\mathbf {E} | \\xi | ^ {2 r + 1} = \\sqrt {\\frac {2}{\\pi}} \\int_ {0} ^ {\\infty} x ^ {2 r + 1} \\mathrm{e} ^ {- x ^ {2} / 2} \\mathrm{d} x = \\sqrt {\\frac {2}{\\pi}} \\int_ {0} ^ {\\infty} 2 ^ {r} t ^ {r} \\mathrm{e} ^ {- t} \\mathrm{d} t \\\\ = \\sqrt {\\frac {2}{\\pi}} 2 ^ {r} \\Gamma (r + 1) = \\sqrt {\\frac {2}{\\pi}} (2 r)!!, \\\\ \\end{array}",
+          "image_source": "images/page_156_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.123,
+            0.572,
+            0.191,
+            0.589
+          ],
+          "content": "于是有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.283,
+            0.601,
+            0.713,
+            0.641
+          ],
+          "content": "\\lim _ {r \\to \\infty} \\frac {| t | ^ {2 r + 1} \\mathbf {E} | \\xi | ^ {2 r + 1}}{(2 r + 1) !} = \\lim _ {r \\to \\infty} \\sqrt {\\frac {2}{\\pi}} \\frac {| t | ^ {2 r + 1}}{(2 r + 1) ! !} = 0.",
+          "image_source": "images/page_156_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.122,
+            0.651,
+            0.409,
+            0.669
+          ],
+          "content": "从而推论 5.2.4 的条件满足, 故"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.293,
+            0.682,
+            0.744,
+            0.726
+          ],
+          "content": "f (t) = \\sum_ {r = 0} ^ {\\infty} \\frac {(\\mathrm{i} t) ^ {2 r}}{(2 r) !} (2 r - 1)!! = \\sum_ {r = 0} ^ {\\infty} \\frac {(- t ^ {2}) ^ {r}}{2 ^ {r} r !} = \\mathrm{e} ^ {- t ^ {2} / 2}.",
+          "image_source": "images/page_156_equation_17.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.161,
+            0.746,
+            0.456,
+            0.766
+          ],
+          "level": 2,
+          "content": "5.2.2 反演公式与唯一性"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.168,
+            0.791,
+            0.48,
+            0.81
+          ],
+          "content": "引理5.2.5 对任意的 $\\alpha \\in \\mathbb{R}$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.36,
+            0.824,
+            0.634,
+            0.864
+          ],
+          "content": "\\big | \\int_ {0} ^ {T} \\frac {\\sin (\\alpha t)}{t} \\mathrm{d} t \\big | \\leqslant 4, \\quad T \\geqslant 0,",
+          "image_source": "images/page_156_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.874,
+            0.168,
+            0.89
+          ],
+          "content": "并且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.351,
+            0.903,
+            0.914,
+            0.942
+          ],
+          "content": "\\lim _ {T \\to \\infty} \\int_ {0} ^ {T} \\frac {\\sin (\\alpha t)}{t} \\mathrm{d} t = \\frac {\\pi}{2} \\mathrm{sgn} (\\alpha), \\tag {5.2.2}",
+          "image_source": "images/page_156_equation_22.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 157,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.692,
+            0.047,
+            0.889,
+            0.061
+          ],
+          "content": "5.2 分布性质和反演公式"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.91,
+            0.049,
+            0.939,
+            0.06
+          ],
+          "content": "143"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.102,
+            0.141,
+            0.118
+          ],
+          "content": "其中"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.34,
+            0.136,
+            0.592,
+            0.208
+          ],
+          "content": "\\operatorname{sgn} (\\alpha) = \\left\\{ \\begin{array}{l l} 1, & \\alpha > 0, \\\\ 0, & \\alpha = 0, \\\\ - 1, & \\alpha <   0. \\end{array} \\right.",
+          "image_source": "images/page_157_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.223,
+            0.4,
+            0.241
+          ],
+          "content": "证明 作积分变量替换可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.188,
+            0.255,
+            0.752,
+            0.296
+          ],
+          "content": "\\int_ {0} ^ {T} \\frac {\\sin (\\alpha t)}{t} \\mathrm{d} t = \\operatorname{sgn} (\\alpha) \\int_ {0} ^ {T} \\frac {\\sin | \\alpha | t}{t} \\mathrm{d} t = \\operatorname{sgn} (\\alpha) \\int_ {0} ^ {| \\alpha | T} \\frac {\\sin u}{u} \\mathrm{d} u.",
+          "image_source": "images/page_157_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.093,
+            0.308,
+            0.503,
+            0.327
+          ],
+          "content": "注意 $|\\sin u| \\leqslant |u|$，再利用分部积分公式可得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.251,
+            0.34,
+            0.729,
+            0.47
+          ],
+          "content": "\\begin{array}{l} \\left| \\int_ {0} ^ {T} \\frac {\\sin (\\alpha t)}{t} \\mathrm{d} t \\right| \\leqslant \\left| \\int_ {0} ^ {1} \\frac {\\sin u}{u} \\mathrm{d} u \\right| + \\left| \\int_ {1} ^ {| \\alpha | T} \\frac {\\sin u}{u} \\mathrm{d} u \\right| \\\\ \\leqslant 1 + \\left| \\frac {\\cos u}{u} \\right| _ {1} ^ {| \\alpha | T} + \\left| \\int_ {1} ^ {| \\alpha | T} \\frac {\\cos u}{u ^ {2}} \\mathrm{d} u \\right| \\\\ \\leqslant 3 + \\int_ {1} ^ {| \\alpha | T} \\frac {1}{u ^ {2}} \\mathrm{d} u \\leqslant 4. \\\\ \\end{array}",
+          "image_source": "images/page_157_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.093,
+            0.483,
+            0.396,
+            0.501
+          ],
+          "content": "由数学分析中的狄利克雷积分知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.39,
+            0.512,
+            0.548,
+            0.549
+          ],
+          "content": "\\int_ {0} ^ {\\infty} \\frac {\\sin t}{t} \\mathrm{d} t = \\frac {\\pi}{2};",
+          "image_source": "images/page_157_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.091,
+            0.563,
+            0.427,
+            0.581
+          ],
+          "content": "参见 [5, p.514]. 所以 (5.2.2) 式成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.586,
+            0.755,
+            0.606
+          ],
+          "content": "定理5.2.6 设随机变量 $\\xi$ 有特征函数 $f$. 则对任何 $a < b \\in \\mathbb{R}$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.268,
+            0.622,
+            0.885,
+            0.694
+          ],
+          "content": "\\begin{array}{l} \\lim _ {c \\to \\infty} \\frac {1}{2 \\pi} \\int_ {- c} ^ {c} \\frac {\\mathrm{e} ^ {- \\mathrm{i} t a} - \\mathrm{e} ^ {- \\mathrm{i} t b}}{\\mathrm{i} t} f (t) \\mathrm{d} t \\\\ = \\mathbf {P} (a <   \\xi <   b) + \\frac {1}{2} \\big [ \\mathbf {P} (\\xi = a) + \\mathbf {P} (\\xi = b) \\big ]. \\tag {5.2.3} \\\\ \\end{array}",
+          "image_source": "images/page_157_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.091,
+            0.706,
+            0.547,
+            0.723
+          ],
+          "content": "特别地, 若 a, b 均为  $\\xi$  的分布函数的连续点, 则有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.248,
+            0.739,
+            0.685,
+            0.777
+          ],
+          "content": "\\mathbf {P} (a <   \\xi <   b) = \\lim _ {c \\to \\infty} \\frac {1}{2 \\pi} \\int_ {- c} ^ {c} \\frac {\\mathrm{e} ^ {- \\mathrm{i} t a} - \\mathrm{e} ^ {- \\mathrm{i} t b}}{\\mathrm{i} t} f (t) \\mathrm{d} t.",
+          "image_source": "images/page_157_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.792,
+            0.85,
+            0.811
+          ],
+          "content": "证明 根据命题 5.1.3, 特征函数 f 在全实轴上一致连续. 另外, 显然我们可将"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.371,
+            0.824,
+            0.56,
+            0.86
+          ],
+          "content": "h (t) := \\frac {\\mathrm{e} ^ {- \\mathrm{i} t a} - \\mathrm{e} ^ {- \\mathrm{i} t b}}{\\mathrm{i} t}",
+          "image_source": "images/page_157_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.089,
+            0.871,
+            0.574,
+            0.889
+          ],
+          "content": "延拓为全实轴上的有界连续函数. 故对 $c > 0$ 可定义"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.308,
+            0.902,
+            0.623,
+            0.941
+          ],
+          "content": "J (c) = \\frac {1}{2 \\pi} \\int_ {- c} ^ {c} \\frac {\\mathrm{e} ^ {- \\mathrm{i} t a} - \\mathrm{e} ^ {- \\mathrm{i} t b}}{\\mathrm{i} t} f (t) \\mathrm{d} t.",
+          "image_source": "images/page_157_equation_18.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 158,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.068,
+            0.046,
+            0.097,
+            0.057
+          ],
+          "content": "144"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.118,
+            0.044,
+            0.257,
+            0.058
+          ],
+          "content": "第五章 特征函数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.116,
+            0.101,
+            0.534,
+            0.119
+          ],
+          "content": "交换积分和期望的次序 (承认这是允许的) 得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.295,
+            0.137,
+            0.73,
+            0.264
+          ],
+          "content": "\\begin{array}{l} J (c) = \\frac {1}{2 \\pi} \\int_ {- c} ^ {c} \\mathbf {E} \\left(\\frac {\\mathrm{e} ^ {- \\mathrm{i} t a} - \\mathrm{e} ^ {- \\mathrm{i} t b}}{\\mathrm{i} t} \\mathrm{e} ^ {\\mathrm{i} t \\xi}\\right) \\mathrm{d} t \\\\ = \\frac {1}{2 \\pi} \\mathbf {E} \\left(\\int_ {- c} ^ {c} \\frac {\\mathrm{e} ^ {\\mathrm{i} t (\\xi - a)} - \\mathrm{e} ^ {\\mathrm{i} t (\\xi - b)}}{\\mathrm{i} t} \\mathrm{d} t\\right) \\\\ = \\frac {1}{\\pi} \\mathbf {E} \\left(\\int_ {0} ^ {c} \\frac {\\sin [ t (\\xi - a) ] - \\sin [ t (\\xi - b) ]}{t} \\mathrm{d} t\\right). \\\\ \\end{array}",
+          "image_source": "images/page_158_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.116,
+            0.281,
+            0.282,
+            0.298
+          ],
+          "content": "根据引理5.2.5有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.316,
+            0.313,
+            0.669,
+            0.349
+          ],
+          "content": "\\left| \\int_ {0} ^ {c} \\frac {\\sin [ t (\\xi - a) ] - \\sin [ t (\\xi - b) ]}{t} \\mathrm{d} t \\right| \\leqslant 8",
+          "image_source": "images/page_158_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.116,
+            0.368,
+            0.163,
+            0.385
+          ],
+          "content": "并且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.339,
+            0.4,
+            0.693,
+            0.506
+          ],
+          "content": "\\begin{array}{l} \\lim _ {c \\to \\infty} \\int_ {0} ^ {c} \\frac {\\sin [ t (\\xi - a) ] - \\sin [ t (\\xi - b) ]}{t} \\mathrm{d} t \\\\ = \\frac {\\pi}{2} [ \\operatorname{sgn} (\\xi - a) - \\operatorname{sgn} (\\xi - b) ] \\\\ = \\pi 1 _ {(a, b)} (\\xi) + \\frac {\\pi}{2} \\left[ 1 _ {\\{a \\}} (\\xi) + 1 _ {\\{b \\}} (\\xi) \\right]. \\\\ \\end{array}",
+          "image_source": "images/page_158_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.115,
+            0.523,
+            0.311,
+            0.54
+          ],
+          "content": "应用有界收敛定理得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.277,
+            0.557,
+            0.745,
+            0.623
+          ],
+          "content": "\\begin{array}{l} \\lim _ {c \\to \\infty} J (c) = \\frac {1}{\\pi} \\mathbf {E} \\left\\{\\pi 1 _ {(a, b)} (\\xi) + \\frac {\\pi}{2} \\left[ 1 _ {\\{a \\}} (\\xi) + 1 _ {\\{b \\}} (\\xi) \\right] \\right\\} \\\\ = \\mathbf {P} (a <   \\xi <   b) + \\frac {1}{2} \\big [ \\mathbf {P} (\\xi = a) + \\mathbf {P} (\\xi = b) \\big ]. \\\\ \\end{array}",
+          "image_source": "images/page_158_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.115,
+            0.641,
+            0.252,
+            0.658
+          ],
+          "content": "此即欲证结论."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.16,
+            0.666,
+            0.846,
+            0.684
+          ],
+          "content": "定理 5.2.7（唯一性） 随机变量的分布函数与其特征函数相互唯一决定."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.69,
+            0.909,
+            0.804
+          ],
+          "content": "证明 显然特征函数由其分布函数唯一决定. 反之, 设 $F$ 为随机变量 $\\xi$ 的分布函数. 令 $C_F$ 和 $D_F$ 分别表示 $F$ 的连续点集和跳跃点集. 则 $D_F$ 至多可数, 故 $C_F$ 在 $\\mathbb{R}$ 上稠密. 由定理5.2.6知, 对任意的 $a \\leqslant b \\in C_F$, 增量 $F(b) - F(a)$ 由特征函数 $f$ 唯一决定. 取数列 $\\{a_n\\} \\subseteq C_F$ 满足 $a_n \\to -\\infty$. 对于 $x \\in \\mathbb{R}$ 可取数列 $\\{b_n\\} \\subseteq C_F$ 满足 $b_n \\downarrow x$. 由 $F$ 的右连续性, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.286,
+            0.826,
+            0.692,
+            0.852
+          ],
+          "content": "F (x) = \\lim _ {n \\to \\infty} F (b _ {n}) = \\lim _ {n \\to \\infty} \\big [ F (b _ {n}) - F (a _ {n}) \\big ].",
+          "image_source": "images/page_158_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.868,
+            0.519,
+            0.885
+          ],
+          "content": "这说明分布函数 F 由特征函数 f 唯一决定."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.112,
+            0.893,
+            0.908,
+            0.935
+          ],
+          "content": "我们称 (5.2.3) 式为特征函数的反演公式. 从定理 5.2.7 的证明不难看出, 此公式给出了一种由随机变量的特征函数确定其分布函数的方式."
+        }
+      ]
+    },
+    {
+      "page_idx": 159,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.686,
+            0.048,
+            0.884,
+            0.063
+          ],
+          "content": "5.2 分布性质和反演公式"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.904,
+            0.05,
+            0.934,
+            0.062
+          ],
+          "content": "145"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.13,
+            0.102,
+            0.398,
+            0.121
+          ],
+          "level": 2,
+          "content": "5.2.3 绝对连续性条件"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.089,
+            0.148,
+            0.882,
+            0.188
+          ],
+          "content": "利用特征函数可以给出概率分布函数绝对连续性的一个简单的判据, 同时给出其密度函数的表示."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.089,
+            0.195,
+            0.882,
+            0.236
+          ],
+          "content": "定理 5.2.8 若特征函数 f 模可积, 则对应的分布函数 F 是绝对连续型的且有连续的密度函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.296,
+            0.249,
+            0.632,
+            0.285
+          ],
+          "content": "p (x) = \\frac {1}{2 \\pi} \\int_ {- \\infty} ^ {\\infty} \\mathrm{e} ^ {- \\mathrm{i} t x} f (t) \\mathrm{d} t, \\quad x \\in \\mathbb {R}.",
+          "image_source": "images/page_159_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.131,
+            0.302,
+            0.37,
+            0.319
+          ],
+          "content": "证明 对任意 $a, b \\in \\mathbb{R}$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.3,
+            0.333,
+            0.669,
+            0.394
+          ],
+          "content": "\\begin{array}{l} \\mathrm{e} ^ {\\mathrm{i} a} - \\mathrm{e} ^ {\\mathrm{i} b} = \\mathrm{e} ^ {\\mathrm{i} (a + b) / 2} [ \\mathrm{e} ^ {\\mathrm{i} (a - b) / 2} - \\mathrm{e} ^ {\\mathrm{i} (b - a) / 2} ] \\\\ = 2 \\mathrm{ie} ^ {\\mathrm{i} (a + b) / 2} \\sin [ (a - b) / 2 ], \\\\ \\end{array}",
+          "image_source": "images/page_159_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.089,
+            0.41,
+            0.136,
+            0.427
+          ],
+          "content": "故得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.29,
+            0.447,
+            0.882,
+            0.468
+          ],
+          "content": "| \\mathrm{e} ^ {\\mathrm{i} a} - \\mathrm{e} ^ {\\mathrm{i} b} | = 2 | \\sin [ (a - b) / 2 ] | \\leqslant | b - a |. \\tag {5.2.4}",
+          "image_source": "images/page_159_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.087,
+            0.486,
+            0.475,
+            0.504
+          ],
+          "content": "若 $a, b$ 均为 $F$ 的连续点, 则由反演公式有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.261,
+            0.519,
+            0.71,
+            0.644
+          ],
+          "content": "\\begin{array}{l} | F (b) - F (a) | = \\lim _ {c \\to \\infty} \\frac {1}{2 \\pi} \\bigg | \\int_ {- c} ^ {c} \\frac {\\mathrm{e} ^ {- \\mathrm{i} t a} - \\mathrm{e} ^ {- \\mathrm{i} t b}}{\\mathrm{i} t} f (t) \\mathrm{d} t \\bigg | \\\\ \\leqslant \\lim _ {c \\to \\infty} \\frac {1}{2 \\pi} \\int_ {- c} ^ {c} \\left| \\frac {\\mathrm{e} ^ {- \\mathrm{i} t a} - \\mathrm{e} ^ {- \\mathrm{i} t b}}{\\mathrm{i} t} f (t) \\right| \\mathrm{d} t \\\\ \\leqslant \\frac {| b - a |}{2 \\pi} \\int_ {- \\infty} ^ {\\infty} | f (t) | \\mathrm{d} t. \\\\ \\end{array}",
+          "image_source": "images/page_159_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.088,
+            0.66,
+            0.722,
+            0.678
+          ],
+          "content": "由此可知 $F$ 在 $\\mathbb{R}$ 上连续. 设 $x, \\delta \\in \\mathbb{R}$ 且 $\\delta \\neq 0$. 再次利用反演公式得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.251,
+            0.696,
+            0.881,
+            0.779
+          ],
+          "content": "\\begin{array}{l} \\frac {F (x + \\delta) - F (x)}{\\delta} = \\frac {1}{2 \\pi} \\int_ {- \\infty} ^ {\\infty} \\frac {\\mathrm{e} ^ {- \\mathrm{i} t x} - \\mathrm{e} ^ {- \\mathrm{i} t (x + \\delta)}}{\\mathrm{i} t \\delta} f (t) \\mathrm{d} t \\\\ = \\frac {1}{2 \\pi} \\int_ {- \\infty} ^ {\\infty} \\mathrm{e} ^ {- \\mathrm{i} t x} \\frac {1 - \\mathrm{e} ^ {- \\mathrm{i} t \\delta}}{\\mathrm{i} t \\delta} f (t) \\mathrm{d} t. \\tag {5.2.5} \\\\ \\end{array}",
+          "image_source": "images/page_159_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.087,
+            0.795,
+            0.348,
+            0.812
+          ],
+          "content": "应用欧拉公式和三角公式得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.198,
+            0.836,
+            0.728,
+            0.856
+          ],
+          "content": "1 - \\mathrm{e} ^ {- \\mathrm{i} t \\delta} = 1 - \\cos (t \\delta) + \\mathrm{i} \\sin (t \\delta) = 2 \\sin^ {2} (t \\delta / 2) + \\mathrm{i} \\sin (t \\delta),",
+          "image_source": "images/page_159_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.087,
+            0.875,
+            0.134,
+            0.891
+          ],
+          "content": "故有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.343,
+            0.916,
+            0.582,
+            0.942
+          ],
+          "content": "\\lim _ {\\delta \\to 0} (1 - \\mathrm{e} ^ {- \\mathrm{i} t \\delta}) (\\mathrm{i} t \\delta) ^ {- 1} = 1.",
+          "image_source": "images/page_159_equation_17.jpg"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "modified_at": "2025-07-02T01:22:49+08:00",
+      "producer_application": "Haru Free PDF Library 2.2.1",
+      "page_count": 248,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 144,
+          "width_pt": 481.81418800354004,
+          "height_pt": 728.294189453125
+        },
+        {
+          "page_idx": 145,
+          "width_pt": 481.814208984375,
+          "height_pt": 728.2941665649414
+        },
+        {
+          "page_idx": 146,
+          "width_pt": 481.81418800354004,
+          "height_pt": 728.294189453125
+        },
+        {
+          "page_idx": 147,
+          "width_pt": 481.814208984375,
+          "height_pt": 728.2941665649414
+        },
+        {
+          "page_idx": 148,
+          "width_pt": 481.81418800354004,
+          "height_pt": 728.294189453125
+        },
+        {
+          "page_idx": 149,
+          "width_pt": 481.814208984375,
+          "height_pt": 728.2941665649414
+        },
+        {
+          "page_idx": 150,
+          "width_pt": 481.81418800354004,
+          "height_pt": 728.294189453125
+        },
+        {
+          "page_idx": 151,
+          "width_pt": 481.814208984375,
+          "height_pt": 728.2941665649414
+        },
+        {
+          "page_idx": 152,
+          "width_pt": 481.81418800354004,
+          "height_pt": 728.294189453125
+        },
+        {
+          "page_idx": 153,
+          "width_pt": 481.814208984375,
+          "height_pt": 728.2941665649414
+        },
+        {
+          "page_idx": 154,
+          "width_pt": 481.81418800354004,
+          "height_pt": 728.294189453125
+        },
+        {
+          "page_idx": 155,
+          "width_pt": 481.8141632080078,
+          "height_pt": 728.2941665649414
+        },
+        {
+          "page_idx": 156,
+          "width_pt": 481.81418800354004,
+          "height_pt": 728.294189453125
+        },
+        {
+          "page_idx": 157,
+          "width_pt": 481.814208984375,
+          "height_pt": 728.2941665649414
+        },
+        {
+          "page_idx": 158,
+          "width_pt": 481.81418800354004,
+          "height_pt": 728.294189453125
+        },
+        {
+          "page_idx": 159,
+          "width_pt": 481.814208984375,
+          "height_pt": 728.2941665649414
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}

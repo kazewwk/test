@@ -1,0 +1,5338 @@
+{
+  "pages": [
+    {
+      "page_idx": 49,
+      "blocks": [
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.358,
+            0.085,
+            0.478,
+            0.115
+          ],
+          "level": 2,
+          "content": "第二章"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.524,
+            0.154,
+            0.929,
+            0.194
+          ],
+          "level": 2,
+          "content": "随机变量及其分布"
+        }
+      ]
+    },
+    {
+      "page_idx": 50,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.062,
+            0.05,
+            0.083,
+            0.061
+          ],
+          "content": "36"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.103,
+            0.047,
+            0.31,
+            0.062
+          ],
+          "content": "第二章 随机变量及其分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.103,
+            0.9,
+            0.217
+          ],
+          "content": "在随机现象中, 有很多问题与带有随机性的数量有关. 例如, 在产品检验中我们关心抽样中残次品的数量, 在电话服务中我们关心某个时间段内的呼叫和服务次数等. 有些与随机现象有关的问题初看起来与数量无关, 但与数值联系起来之后, 可以简化表示或分析. 为研究这些问题, 需要引进随机变量的概念. 在数学上, 随机变量就是定义在概率空间上的可测函数, 而随机变量的分布或分布函数给出其取值概率的定量描述."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.222,
+            0.898,
+            0.265
+          ],
+          "content": "本章讨论随机变量及分布函数的基本构造与性质, 并分别介绍离散型和绝对连续型概率分布的若干典型的例子."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.102,
+            0.319,
+            0.449,
+            0.342
+          ],
+          "level": 2,
+          "content": "2.1 可测函数与随机变量"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.389,
+            0.898,
+            0.432
+          ],
+          "content": "在数学上, 我们将随机变量定义为概率空间上的具有可测性质的函数, 可测性保证了它在一些常见的集合中取值的概率有意义."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.145,
+            0.46,
+            0.337,
+            0.481
+          ],
+          "level": 2,
+          "content": "2.1.1 可测映射"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.504,
+            0.898,
+            0.547
+          ],
+          "content": "设 $\\xi$ 为由集合 $\\Omega$ 到集合 $E$ 的映射. 特别地, 当 $E = \\mathbb{R}$ 或 $= \\mathbb{R}^d$ 时 $\\xi$ 就是 $\\Omega$ 上的函数. 集合 $B \\subseteq E$ 在 $\\xi$ 下的原像定义为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.34,
+            0.565,
+            0.62,
+            0.586
+          ],
+          "content": "\\xi^ {- 1} (B) = \\{\\omega \\in \\Omega : \\xi (\\omega) \\in B \\}.",
+          "image_source": "../../raw/pages_0049-0064/images/page_50_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.602,
+            0.822,
+            0.622
+          ],
+          "content": "我们有时也会把上面的集合写为 $\\{\\xi \\in B\\}$ 或 $(\\xi \\in B)$. 给定 $E$ 的子集类 $\\mathcal{C}$, 记"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.346,
+            0.638,
+            0.614,
+            0.66
+          ],
+          "content": "\\xi^ {- 1} (\\mathcal {C}) = \\{\\xi^ {- 1} (B): B \\in \\mathcal {C} \\}.",
+          "image_source": "../../raw/pages_0049-0064/images/page_50_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.677,
+            0.434,
+            0.695
+          ],
+          "content": "集合 $A \\subseteq \\Omega$ 的示性函数 $1_A$ 定义为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.359,
+            0.714,
+            0.592,
+            0.756
+          ],
+          "content": "1 _ {A} (\\omega) = \\left\\{ \\begin{array}{l l} 1, & \\omega \\in A, \\\\ 0, & \\omega \\in A ^ {c}. \\end{array} \\right.",
+          "image_source": "../../raw/pages_0049-0064/images/page_50_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.775,
+            0.485,
+            0.793
+          ],
+          "content": "例2.1.1 对于任何 $B \\subseteq \\mathbb{R}$, 显然有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.319,
+            0.811,
+            0.642,
+            0.903
+          ],
+          "content": "\\begin{array}{l} B \\cap \\{0, 1 \\} = \\varnothing \\Rightarrow 1 _ {A} ^ {- 1} (B) = \\varnothing ; \\\\ B \\cap \\{0, 1 \\} = \\{1 \\} \\Rightarrow 1 _ {A} ^ {- 1} (B) = A; \\\\ B \\cap \\{0, 1 \\} = \\{0 \\} \\Rightarrow 1 _ {A} ^ {- 1} (B) = A ^ {c}; \\\\ B \\cap \\{0, 1 \\} = \\{0, 1 \\} \\Rightarrow 1 _ {A} ^ {- 1} (B) = \\Omega . \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0049-0064/images/page_50_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.147,
+            0.919,
+            0.873,
+            0.938
+          ],
+          "content": "下面的引理罗列了关于映射的原像的几个常用的结果, 请读者自行给出其证明."
+        }
+      ]
+    },
+    {
+      "page_idx": 51,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.691,
+            0.046,
+            0.889,
+            0.061
+          ],
+          "content": "2.1 可测函数与随机变量"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.91,
+            0.048,
+            0.931,
+            0.059
+          ],
+          "content": "37"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.103,
+            0.637,
+            0.122
+          ],
+          "content": "引理2.1.1 对于映射 $\\xi : \\Omega \\to E$，有如下性质成立:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.137,
+            0.127,
+            0.68,
+            0.237
+          ],
+          "sub_type": "text",
+          "content": "(1) $\\xi^{-1}(E) = \\Omega, \\xi^{-1}(B^c) = \\xi^{-1}(B)^c;$\n(2) $\\xi^{-1}\\left(\\bigcup_{i}B_{i}\\right) = \\bigcup_{i}\\xi^{-1}(B_{i}),\\xi^{-1}\\left(\\bigcap_{i}B_{i}\\right) = \\bigcap_{i}\\xi^{-1}(B_{i});$\n(3) 对 $B \\subseteq C \\subseteq E$ 有 $\\xi^{-1}(B) \\subseteq \\xi^{-1}(C)$;\n(4) 若 $\\mathcal{E}$ 是 $E$ 上的 $\\sigma$ 代数, 则 $\\xi^{-1}(\\mathcal{E})$ 是 $\\Omega$ 上的 $\\sigma$ 代数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.092,
+            0.243,
+            0.889,
+            0.285
+          ],
+          "content": "设 $\\mathcal{E}$ 是 $E$ 上的 $\\sigma$ 代数. 考虑可测空间 $(E, \\mathcal{E})$. 再设 $\\{\\xi_i : i \\in I\\}$ 是由 $\\Omega$ 到 $E$ 的一族映射, 其中 $I$ 为指标集. 我们称 $\\Omega$ 上的 $\\sigma$ 代数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.269,
+            0.303,
+            0.887,
+            0.323
+          ],
+          "content": "\\sigma \\left(\\left\\{\\xi_ {i}: i \\in I \\right\\}\\right) := \\sigma \\left(\\left\\{\\xi_ {i} ^ {- 1} (B): B \\in \\mathcal {E}, i \\in I \\right\\}\\right) \\tag {2.1.1}",
+          "image_source": "../../raw/pages_0049-0064/images/page_51_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.092,
+            0.339,
+            0.889,
+            0.381
+          ],
+          "content": "为由 $\\{\\xi_i : i \\in I\\}$ 生成的 $\\sigma$ 代数. 特别地, 由引理2.1.1(4)不难看出, 由单个映射 $\\xi$ 生成的 $\\sigma$ 代数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.308,
+            0.4,
+            0.887,
+            0.419
+          ],
+          "content": "\\sigma (\\xi) = \\xi^ {- 1} (\\mathscr {E}) = \\{\\xi^ {- 1} (B): B \\in \\mathscr {E} \\}. \\tag {2.1.2}",
+          "image_source": "../../raw/pages_0049-0064/images/page_51_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.435,
+            0.761,
+            0.455
+          ],
+          "content": "命题2.1.2 对于 $E$ 的任何子集类 $\\mathcal{C}$ 有 $\\sigma (\\xi^{-1}(\\mathcal{C})) = \\xi^{-1}(\\sigma (\\mathcal{C}))$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.092,
+            0.459,
+            0.889,
+            0.503
+          ],
+          "content": "证明 由引理2.1.1(4)知 $\\xi^{-1}(\\sigma(\\mathcal{C}))$ 是 $\\sigma$ 代数.因 $\\xi^{-1}(\\mathcal{C})\\subseteq \\xi^{-1}(\\sigma (\\mathcal{C}))$ ，有$\\sigma (\\xi^{-1}(\\mathcal{C}))\\subseteq \\xi^{-1}(\\sigma (\\mathcal{C}))$ .另一方面，令"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.299,
+            0.519,
+            0.639,
+            0.54
+          ],
+          "content": "\\mathscr {G} = \\{B \\subseteq E: \\xi^ {- 1} (B) \\in \\sigma (\\xi^ {- 1} (\\mathscr {C})) \\}.",
+          "image_source": "../../raw/pages_0049-0064/images/page_51_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.094,
+            0.556,
+            0.143,
+            0.573
+          ],
+          "content": "显然"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.275,
+            0.592,
+            0.887,
+            0.612
+          ],
+          "content": "\\xi^ {- 1} (\\mathcal {G}) = \\{\\xi^ {- 1} (B): B \\in \\mathcal {G} \\} \\subseteq \\sigma (\\xi^ {- 1} (\\mathcal {C})). \\tag {2.1.3}",
+          "image_source": "../../raw/pages_0049-0064/images/page_51_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.092,
+            0.628,
+            0.611,
+            0.647
+          ],
+          "content": "利用引理2.1.1易证 $\\mathcal{G}$ 为 $E$ 上的 $\\sigma$ 代数.若 $B\\in \\mathcal{C}$ ，则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.323,
+            0.664,
+            0.615,
+            0.686
+          ],
+          "content": "\\xi^ {- 1} (B) \\in \\xi^ {- 1} (\\mathscr {C}) \\subseteq \\sigma (\\xi^ {- 1} (\\mathscr {C})),",
+          "image_source": "../../raw/pages_0049-0064/images/page_51_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.092,
+            0.701,
+            0.52,
+            0.72
+          ],
+          "content": "故 $B \\in \\mathcal{G}$. 这说明 $\\mathcal{C} \\subseteq \\mathcal{G}$, 故 $\\sigma(\\mathcal{C}) \\subseteq \\mathcal{G}$. 于是"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.308,
+            0.737,
+            0.629,
+            0.758
+          ],
+          "content": "\\xi^ {- 1} (\\sigma (\\mathscr {C})) \\subseteq \\xi^ {- 1} (\\mathscr {G}) \\subseteq \\sigma (\\xi^ {- 1} (\\mathscr {C})).",
+          "image_source": "../../raw/pages_0049-0064/images/page_51_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.092,
+            0.774,
+            0.454,
+            0.793
+          ],
+          "content": "其中最后的包含关系是由于 $(2.1.3)$ 式."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.092,
+            0.798,
+            0.889,
+            0.839
+          ],
+          "content": "定义 2.1.1 设  $(\\Omega, \\mathcal{F})$  和  $(E, \\mathcal{E})$  均为可测空间. 我们称  $\\xi: \\Omega \\rightarrow E$  为可测映射, 是指有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.373,
+            0.858,
+            0.567,
+            0.879
+          ],
+          "content": "\\sigma (\\xi) = \\xi^ {- 1} (\\mathcal {E}) \\subseteq \\mathcal {F},",
+          "image_source": "../../raw/pages_0049-0064/images/page_51_equation_23.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.092,
+            0.894,
+            0.52,
+            0.914
+          ],
+          "content": "即对任何 $B \\in \\mathcal{E}$ 都有 $\\xi^{-1}(B) = \\{\\xi \\in B\\} \\in \\mathcal{F}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.918,
+            0.381,
+            0.937
+          ],
+          "content": "下面命题的结论显然成立."
+        }
+      ]
+    },
+    {
+      "page_idx": 52,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.056,
+            0.046,
+            0.078,
+            0.057
+          ],
+          "content": "38"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.097,
+            0.044,
+            0.305,
+            0.058
+          ],
+          "content": "第二章 随机变量及其分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.103,
+            0.892,
+            0.123
+          ],
+          "content": "命题 2.1.3 (1) 一族映射  $\\{\\xi_{i}: i \\in I\\}$  中的每个元素都关于  $\\sigma(\\{\\xi_{i}: i \\in I\\})$  可测；"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.096,
+            0.129,
+            0.891,
+            0.17
+          ],
+          "content": "(2) 一族映射 $\\{\\xi_i : i \\in I\\}$ 中的每个元素都关于 $\\mathcal{F}$ 可测当且仅当 $\\sigma(\\{\\xi_i : i \\in I\\}) \\subseteq \\mathcal{F}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.177,
+            0.891,
+            0.22
+          ],
+          "content": "例 2.1.2 设  $E=\\{x_{1},x_{2},\\cdots\\}$  是可数集, 而 E 是 E 的一切子集构成的  $\\sigma$  代数. 则映射  $\\xi:\\Omega\\to E$  可测当且仅当对每个  $k=1,2,\\cdots$  有  $A_{k}:=\\{\\xi=x_{k}\\}\\in\\mathcal{F}$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.226,
+            0.891,
+            0.268
+          ],
+          "content": "由 $(\\Omega, \\mathcal{F})$ 到 $(\\mathbb{R}, \\mathcal{B})$ 或 $(\\mathbb{R}^d, \\mathcal{B}^d)$ 的可测映射称为可测函数；而 $(\\mathbb{R}^d, \\mathcal{B}^d)$ 上的可测函数也称为博雷尔函数."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.299,
+            0.405,
+            0.319
+          ],
+          "level": 2,
+          "content": "2.1.2 可测函数的性质"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.346,
+            0.891,
+            0.389
+          ],
+          "content": "定理2.1.4 定义在可测空间 $(\\Omega, \\mathcal{F})$ 上的实值函数 $\\xi$ 可测的充要条件是，对于任意的 $x \\in \\mathbb{R}$ 有 $\\xi^{-1}(-\\infty, x] \\in \\mathcal{F}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.136,
+            0.396,
+            0.822,
+            0.416
+          ],
+          "content": "证明 必要性. 若 $\\xi$ 可测, 对 $x \\in \\mathbb{R}$, 因 $(- \\infty, x] \\in \\mathcal{B}$, 有 $\\xi^{-1}(-\\infty, x] \\in \\mathcal{F}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.093,
+            0.422,
+            0.891,
+            0.488
+          ],
+          "content": "充分性. 设对任何 $x \\in \\mathbb{R}$ 有 $\\xi^{-1}(-\\infty, x] \\in \\mathcal{F}$. 由引理2.1.1易证 $\\mathcal{E} = \\{B \\in \\mathcal{B} : \\xi^{-1}(B) \\in \\mathcal{F}\\}$ 为 $\\sigma$ 代数. 依假设有 $\\mathcal{E} \\supseteq \\mathcal{P} := \\{(-\\infty, x] : x \\in \\mathbb{R}\\}$, 故 $\\mathcal{E} \\supseteq \\sigma(\\mathcal{P}) = \\mathcal{B}$, 即对任何 $B \\in \\mathcal{B}$ 有 $\\xi^{-1}(B) \\in \\mathcal{F}$. 因此 $\\xi$ 可测."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.493,
+            0.89,
+            0.534
+          ],
+          "content": "推论2.1.5 定义在可测空间 $(\\Omega, \\mathcal{F})$ 上的实值函数 $\\xi$ 可测的充要条件是下列性质之一成立:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.135,
+            0.544,
+            0.537,
+            0.607
+          ],
+          "sub_type": "text",
+          "content": "(1) 对于任意的  $x \\in R$  有  $\\xi^{-1}(-\\infty, x) \\in \\mathcal{F}$ ;\n(2) 对于任意的 $x \\in \\mathbb{R}$ 有 $\\xi^{-1}(x, \\infty) \\in \\mathcal{F}$;\n(3) 对于任意的 $x \\in \\mathbb{R}$ 有 $\\xi^{-1}[x, \\infty) \\in \\mathcal{F}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.615,
+            0.68,
+            0.633
+          ],
+          "content": "推论 2.1.6 定义在 R 上的单调函数 f 是博雷尔可测的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.093,
+            0.641,
+            0.891,
+            0.706
+          ],
+          "content": "证明 不妨设 $f$ 不降. 则对 $x \\in \\mathbb{R}$, 原像 $f^{-1}(-\\infty, x]$ 是形如 $(- \\infty, a]$ 或 $(- \\infty, a)$ 的区间. 两种情况下都有 $f^{-1}(-\\infty, x] \\in \\mathcal{B}$. 根据定理2.1.4函数 $f$ 关于博雷尔 $\\sigma$ 代数可测."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.712,
+            0.691,
+            0.731
+          ],
+          "content": "定理2.1.7 定义在 $\\mathbb{R}^d$ 上的连续函数 $f$ 是博雷尔可测的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.091,
+            0.738,
+            0.888,
+            0.779
+          ],
+          "content": "证明 因为 $f$ 在 $\\mathbb{R}^d$ 上连续, 对任何 $G \\in \\mathcal{O}$ 有 $f^{-1}(G) \\in \\mathcal{O}^d$, 故 $f^{-1}(\\mathcal{O}) \\subseteq \\mathcal{O}^d$. 所以"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.233,
+            0.803,
+            0.705,
+            0.825
+          ],
+          "content": "f ^ {- 1} (\\mathcal {B}) = f ^ {- 1} (\\sigma (\\mathcal {O})) = \\sigma (f ^ {- 1} (\\mathcal {O})) \\subseteq \\sigma (\\mathcal {O} ^ {d}) = \\mathcal {B} ^ {d}.",
+          "image_source": "../../raw/pages_0049-0064/images/page_52_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.091,
+            0.845,
+            0.32,
+            0.864
+          ],
+          "content": "这说明 f 关于  $B^{d}$  可测."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.091,
+            0.87,
+            0.889,
+            0.935
+          ],
+          "content": "定理2.1.8 设 $\\xi$ 为 $\\Omega$ 上的函数, 而 $f$ 为 $\\mathbb{R}$ 上的博雷尔可测函数. 则 $\\eta := f(\\xi)$ 关于 $\\Omega$ 上的 $\\sigma$ 代数 $\\sigma(\\xi)$ 可测. 特别地, 若 $\\xi$ 为 $(\\Omega, \\mathcal{F})$ 上的可测函数, 则 $\\eta$ 为 $(\\Omega, \\mathcal{F})$ 上的可测函数."
+        }
+      ]
+    },
+    {
+      "page_idx": 53,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.699,
+            0.048,
+            0.896,
+            0.062
+          ],
+          "content": "2.1 可测函数与随机变量"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.918,
+            0.05,
+            0.939,
+            0.061
+          ],
+          "content": "39"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.103,
+            0.819,
+            0.122
+          ],
+          "content": "证明 任取 $B \\in \\mathcal{B}$. 因 $f$ 为 $(\\mathbb{R}, \\mathcal{B})$ 上的可测函数, 有 $f^{-1}(B) \\in \\mathcal{B}$, 因而"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.334,
+            0.137,
+            0.62,
+            0.159
+          ],
+          "content": "\\eta^ {- 1} (B) = \\xi^ {- 1} (f ^ {- 1} (B)) \\in \\sigma (\\xi).",
+          "image_source": "../../raw/pages_0049-0064/images/page_53_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.174,
+            0.536,
+            0.192
+          ],
+          "content": "这就证明了第1个结论. 第2个结论显然成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.197,
+            0.897,
+            0.241
+          ],
+          "content": "定理2.1.9 若 $\\xi$ 和 $\\eta$ 为 $(\\Omega, \\mathcal{F})$ 上的可测函数, 则 $\\xi + \\eta, \\xi - \\eta$ 和 $\\xi \\eta$ 均为 $(\\Omega, \\mathcal{F})$ 上的可测函数. 而且, 若还有 $\\eta \\neq 0$, 则 $\\xi / \\eta$ 也为 $(\\Omega, \\mathcal{F})$ 上的可测函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.246,
+            0.895,
+            0.287
+          ],
+          "content": "证明 对于 $x \\in \\mathbb{R}$ 令 $Q_x = \\{(r, s): r$ 和 $s$ 均为有理数且满足 $r + s < x\\}$. 则 $Q_x$ 为可数集且"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.29,
+            0.303,
+            0.893,
+            0.34
+          ],
+          "content": "\\{\\xi + \\eta <   x \\} = \\bigcup_ {(r, s) \\in Q _ {x}} \\{\\xi <   r \\} \\cap \\{\\eta <   s \\}. \\tag {2.1.4}",
+          "image_source": "../../raw/pages_0049-0064/images/page_53_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.354,
+            0.896,
+            0.468
+          ],
+          "content": "事实上, 若 $\\omega \\in \\Omega$ 属于 (2.1.4) 式右边的集合, 它显然属于该式左边的集合. 反之, 设 $\\omega \\in \\Omega$ 属于 (2.1.4) 式左边的集合. 则 $\\delta := x - \\xi(\\omega) - \\eta(\\omega) > 0$. 取有理数 $r \\in (\\xi(\\omega), \\xi(\\omega) + \\delta/2)$ 和 $s \\in (\\eta(\\omega), \\eta(\\omega) + \\delta/2)$. 显然 $r + s < \\xi(\\omega) + \\eta(\\omega) + \\delta = x$ 且有 $\\xi(\\omega) < r$ 和 $\\eta(\\omega) < s$, 故 $\\omega$ 属于 (2.1.4) 式右边的集合. 由推论 2.1.5 和 (2.1.4) 式知 $\\xi + \\eta$ 为 $(\\Omega, \\mathcal{F})$ 上的可测函数. 其他结论的证明类似. □"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.473,
+            0.825,
+            0.492
+          ],
+          "content": "定理2.1.10 若 $\\xi$ 和 $\\eta$ 为 $(\\Omega, \\mathcal{F})$ 上的可测函数，则下面的集合均可测:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.295,
+            0.51,
+            0.655,
+            0.53
+          ],
+          "content": "\\{\\xi <   \\eta \\}, \\{\\eta <   \\xi \\}, \\{\\xi \\neq \\eta \\}, \\{\\xi = \\eta \\}.",
+          "image_source": "../../raw/pages_0049-0064/images/page_53_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.544,
+            0.621,
+            0.562
+          ],
+          "content": "证明 注意有理数集 $\\mathbb{Q}$ 可数且在实轴上稠密. 易知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.232,
+            0.578,
+            0.72,
+            0.614
+          ],
+          "content": "\\{\\xi <   \\eta \\} = \\bigcup_ {r \\in \\mathbb {Q}} \\{\\xi <   r <   \\eta \\} = \\bigcup_ {r \\in \\mathbb {Q}} \\big (\\{\\xi <   r \\} \\cap \\{r <   \\eta \\} \\big),",
+          "image_source": "../../raw/pages_0049-0064/images/page_53_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.628,
+            0.895,
+            0.671
+          ],
+          "content": "其中 $\\{\\xi < r\\}, \\{r < \\eta\\} \\in \\mathcal{F}$, 故知 $\\{\\xi < \\eta\\} \\in \\mathcal{F}$. 类似地有 $\\{\\eta < \\xi\\} \\in \\mathcal{F}$, 进而有 $\\{\\xi \\neq \\eta\\} = \\{\\xi < \\eta\\} \\cup \\{\\eta < \\xi\\} \\in \\mathcal{F}$ 和 $\\{\\xi = \\eta\\} = \\{\\xi \\neq \\eta\\}^c \\in \\mathcal{F}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.675,
+            0.883,
+            0.695
+          ],
+          "content": "定理2.1.11 设 $\\{\\xi_n\\}$ 为 $(\\Omega, \\mathcal{F})$ 上的可测函数列. 则下面函数 (若有限) 可测:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.294,
+            0.712,
+            0.655,
+            0.739
+          ],
+          "content": "\\sup _ {n} \\xi_ {n}, \\quad \\inf _ {n} \\xi_ {n}, \\quad \\lim _ {n} \\sup _ {n} \\xi_ {n}, \\quad \\lim _ {n} \\inf _ {n} \\xi_ {n}.",
+          "image_source": "../../raw/pages_0049-0064/images/page_53_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.14,
+            0.752,
+            0.432,
+            0.77
+          ],
+          "content": "证明 对任意的 $x \\in \\mathbb{R}$, 我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.346,
+            0.786,
+            0.606,
+            0.82
+          ],
+          "content": "\\{\\sup _ {n} \\xi_ {n} \\leqslant x \\} = \\bigcap_ {n} \\{\\xi_ {n} \\leqslant x \\}",
+          "image_source": "../../raw/pages_0049-0064/images/page_53_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.833,
+            0.125,
+            0.849
+          ],
+          "content": "和"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.367,
+            0.866,
+            0.624,
+            0.901
+          ],
+          "content": "\\{\\inf _ {n} \\xi_ {n} <   x \\} = \\bigcup_ {n} \\{\\xi_ {n} <   x \\}.",
+          "image_source": "../../raw/pages_0049-0064/images/page_53_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.914,
+            0.755,
+            0.941
+          ],
+          "content": "由推论2.1.5知 $\\sup_{n}\\xi_n$ 和 $\\inf_{n}\\xi_n$ 可测，进而 $\\lim_{n}\\sup_{n}\\xi_n$ 和 $\\lim_{n}\\inf_{n}\\xi_n$ 可测."
+        }
+      ]
+    },
+    {
+      "page_idx": 54,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.055,
+            0.046,
+            0.076,
+            0.058
+          ],
+          "content": "40"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.095,
+            0.044,
+            0.304,
+            0.059
+          ],
+          "content": "第二章 随机变量及其分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.101,
+            0.893,
+            0.168
+          ],
+          "content": "设 $(\\Omega, \\mathcal{F}, \\mu)$ 为测度空间. 若可测函数 $\\xi$ 和 $\\eta$ 满足 $\\mu (\\xi \\neq \\eta) = 0$, 则称它们相对于 $\\mu$ 几乎处处相等, 记作 $\\xi = \\eta$ (a.e.) 或 $\\xi \\stackrel{\\mathrm{a.e.}}{=} \\eta$. 更一般地, 若存在 $N \\in \\mathcal{F}$ 使得 $\\mu(N) = 0$ 且某个性质对于所有 $\\omega \\in N^c$ 成立, 我们称该性质相对于测度 $\\mu$ 几乎处处 (a.e.) 成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.172,
+            0.892,
+            0.239
+          ],
+          "content": "例 2.1.3 设  $\\Omega$  上的实函数  $\\xi$  的取值范围是可数集  $E = \\{x_{1}, x_{2}, \\cdots\\}$ . 令  $A = \\{A_{k} : k = 1, 2, \\cdots\\}$ , 其中  $A_{k} = \\{\\xi = x_{k}\\}$ . 则  $\\sigma(\\xi) = \\sigma(\\mathcal{A})$  是由 A 中的集合的所有可能的并构成的集类 (规定零个集合的并为空集). 注意  $\\xi$  关于  $\\sigma(\\xi)$  可测."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.243,
+            0.892,
+            0.377
+          ],
+          "content": "例 2.1.4 在上例的情况下, 若 f 为 R 上的博雷尔可测函数, 根据定理 2.1.8 知  $X := f(\\xi)$  关于  $\\sigma(\\xi)$  可测. 反之, 若  $\\Omega$  上的函数 X 关于  $\\sigma(\\xi)$  可测, 则它在每个集合  $A_{k}$  上必为常数, 不妨设  $X = \\sum_{k=1}^{\\infty} a_{k} 1_{A_{k}}$ . 显然  $f := \\sum_{k=1}^{\\infty} a_{k} 1_{\\{x_{k}\\}}$  为 R 上的博雷尔可测函数且  $X = f(\\xi)$ . 所以  $\\Omega$  上的函数 X 关于  $\\sigma(\\xi)$  可测当且仅当存在 R 上的博雷尔可测函数 f 使得  $X = f(\\xi)$ ."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.138,
+            0.403,
+            0.403,
+            0.424
+          ],
+          "level": 2,
+          "content": "2.1.3 测度的分布函数"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.094,
+            0.448,
+            0.89,
+            0.49
+          ],
+          "content": "称 $\\mathbb{R}$ 上的函数 $G$ 为分布函数, 是指存在欧氏可测空间 $(\\mathbb{R}, \\mathcal{B})$ 上的局部有限测度 $\\mu$ 满足"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.313,
+            0.508,
+            0.884,
+            0.523
+          ],
+          "content": "G (b) - G (a) = \\mu (a, b ], \\quad a \\leqslant b \\in \\mathbb {R}. \\tag {2.1.5}",
+          "image_source": "../../raw/pages_0049-0064/images/page_54_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.094,
+            0.537,
+            0.85,
+            0.556
+          ],
+          "content": "此时也称 $G$ 是 $\\mu$ 的分布函数. 特别地, 若 $\\mu$ 是概率测度, 则称 $G$ 为概率分布函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.561,
+            0.394,
+            0.579
+          ],
+          "content": "根据测度的性质, 不难证明:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.585,
+            0.889,
+            0.604
+          ],
+          "content": "命题 2.1.12 欧氏可测空间  $(\\mathbb{R}, \\mathcal{B})$  上的局部有限测度  $\\mu$  的分布函数 G 具有性质:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.134,
+            0.609,
+            0.84,
+            0.675
+          ],
+          "sub_type": "text",
+          "content": "(1) G 右连续且单调不降;\n(2) G 有界当且仅当  $\\mu$  是有限测度, 且此时有  $\\mu(\\mathbb{R}) = G(\\infty) - G(-\\infty)$ ;\n(3) 若 $G$ 是 $\\mu$ 的分布函数, 则 $G + c$ 也是 $\\mu$ 的分布函数, 其中 $c \\in \\mathbb{R}$ 为常数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.095,
+            0.68,
+            0.888,
+            0.722
+          ],
+          "content": "例2.1.5 利用分布函数 $G$ ，可以确定相应的局部有限测度 $\\mu$ 在一些典型的集合上的取值.特别地，对于任何 $a\\leqslant b\\in \\mathbb{R}$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.238,
+            0.74,
+            0.687,
+            0.755
+          ],
+          "content": "\\mu (a, b ] = G (b) - G (a); \\quad \\mu (a, b) = G (b -) - G (a);",
+          "image_source": "../../raw/pages_0049-0064/images/page_54_equation_16.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.238,
+            0.764,
+            0.7,
+            0.779
+          ],
+          "content": "\\mu [ a, b ] = G (b) - G (a -); \\quad \\mu [ a, b) = G (b -) - G (a -).",
+          "image_source": "../../raw/pages_0049-0064/images/page_54_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.094,
+            0.794,
+            0.306,
+            0.812
+          ],
+          "content": "若 $\\mu$ 是有限测度, 则有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.193,
+            0.83,
+            0.744,
+            0.846
+          ],
+          "content": "\\mu (- \\infty , b ] = G (b) - G (- \\infty); \\quad \\mu (- \\infty , b) = G (b -) - G (- \\infty);",
+          "image_source": "../../raw/pages_0049-0064/images/page_54_equation_19.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.193,
+            0.854,
+            0.712,
+            0.869
+          ],
+          "content": "\\mu (a, \\infty) = G (\\infty) - G (a); \\quad \\mu [ a, \\infty) = G (\\infty) - G (a -).",
+          "image_source": "../../raw/pages_0049-0064/images/page_54_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.134,
+            0.884,
+            0.888,
+            0.904
+          ],
+          "content": "设 $(\\mathbb{R},\\mathcal{B})$ 上的局部有限测度 $\\mu$ 有分布函数 $G$. 称 $x\\in \\mathbb{R}$ 为 $\\mu$ 或 $G$ 的跳跃点, 是指"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.288,
+            0.917,
+            0.65,
+            0.937
+          ],
+          "content": "\\Delta G (x) := G (x) - G (x -) = \\mu (\\{x \\}) > 0.",
+          "image_source": "../../raw/pages_0049-0064/images/page_54_equation_22.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 55,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.696,
+            0.05,
+            0.896,
+            0.064
+          ],
+          "content": "2.1 可测函数与随机变量"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.915,
+            0.052,
+            0.935,
+            0.064
+          ],
+          "content": "41"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.103,
+            0.894,
+            0.17
+          ],
+          "content": "此时称  $\\Delta G(x)$  为  $\\mu$  或 G 在点 x 的跳幅. 显然, 跳跃点集  $E := \\{x \\in \\mathbb{R} : \\Delta G(x) > 0\\}$  至多为可数集, 且 G 在  $E^{c} = R \\setminus E$  上连续. 写该集合为  $E = \\{x_{1}, x_{2}, \\cdots\\}$ , 并记  $q(x_{i}) = \\Delta G(x_{i})$ . 称  $\\mu$  或 G 是离散型的, 是指有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.29,
+            0.188,
+            0.89,
+            0.223
+          ],
+          "content": "G (b) - G (a) = \\sum_ {x _ {i} \\in (a, b ]} q (x _ {i}), \\quad a \\leqslant b \\in \\mathbb {R}. \\tag {2.1.6}",
+          "image_source": "../../raw/pages_0049-0064/images/page_55_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.238,
+            0.463,
+            0.258
+          ],
+          "content": "此时称 $q$ 为 $\\mu$ 或 $G$ 的密度函数或密度."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.263,
+            0.891,
+            0.305
+          ],
+          "content": "称 $(\\mathbb{R},\\mathcal{B})$ 上的局部有限测度 $\\mu$ 或其分布函数 $G$ 是绝对连续型的, 是指存在 $\\mathbb{R}$ 上的非负黎曼可积函数 $q$ 使得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.297,
+            0.322,
+            0.888,
+            0.358
+          ],
+          "content": "G (b) - G (a) = \\int_ {a} ^ {b} q (u) \\mathrm{d} u, \\quad a \\leqslant b \\in \\mathbb {R}. \\tag {2.1.7}",
+          "image_source": "../../raw/pages_0049-0064/images/page_55_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.372,
+            0.891,
+            0.417
+          ],
+          "content": "此时称 $q$ 为 $\\mu$ 或 $G$ 的密度函数或密度. 显然, 绝对连续型分布函数是 $\\mathbb{R}$ 上的连续函数. 另外, 根据数学分析的结果, 若函数 $G$ 连续可微, 则 (2.1.7) 式对 $q = G'$ 成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.42,
+            0.891,
+            0.462
+          ],
+          "content": "下面的定理说明 $(\\mathbb{R},\\mathcal{B})$ 上的局部有限测度由其分布函数唯一决定. 定理的证明需要用到附录中介绍的邓肯类定理."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.467,
+            0.891,
+            0.513
+          ],
+          "content": "定理2.1.13 设 $\\mu$ 和 $\\nu$ 是欧氏可测空间 $(\\mathbb{R},\\mathcal{B})$ 上的局部有限测度. 若这两个测度以同一个函数 $G$ 为分布函数, 则它们相等, 即对一切 $B \\in \\mathcal{B}$ 有 $\\mu(B) = \\nu(B)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.094,
+            0.516,
+            0.891,
+            0.582
+          ],
+          "content": "证明 (1) 考虑 $G$ 为有界分布函数的情况. 令 $\\mathcal{D} = \\{A \\in \\mathcal{B} : \\mu(A) = \\nu(A)\\}$. 显然 $\\mu(\\mathbb{R}) = G(\\infty) - G(-\\infty) = \\nu(\\mathbb{R})$, 故有 $\\mathbb{R} \\in \\mathcal{D}$. 若 $A, B \\in \\mathcal{D}$ 且 $A \\subseteq B$, 则有 $\\mu(A) = \\nu(A)$ 和 $\\mu(B) = \\nu(B)$, 进而"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.231,
+            0.601,
+            0.712,
+            0.622
+          ],
+          "content": "\\mu (B \\setminus A) = \\mu (B) - \\mu (A) = \\nu (B) - \\nu (A) = \\nu (B \\setminus A),",
+          "image_source": "../../raw/pages_0049-0064/images/page_55_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.094,
+            0.637,
+            0.654,
+            0.657
+          ],
+          "content": "故 $B \\setminus A \\in \\mathcal{D}$. 若 $\\{A_n\\} \\subseteq \\mathcal{D}$ 单调不降, 由测度的下连续性有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.219,
+            0.673,
+            0.72,
+            0.717
+          ],
+          "content": "\\mu \\Big (\\bigcup_ {n = 1} ^ {\\infty} A _ {n} \\Big) = \\lim _ {n \\to \\infty} \\mu (A _ {n}) = \\lim _ {n \\to \\infty} \\nu (A _ {n}) = \\nu \\Big (\\bigcup_ {n = 1} ^ {\\infty} A _ {n} \\Big),",
+          "image_source": "../../raw/pages_0049-0064/images/page_55_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.094,
+            0.731,
+            0.473,
+            0.773
+          ],
+          "content": "故 $\\bigcup_{n=1}^{\\infty} A_n \\in \\mathcal{D}$. 这就证明了 $\\mathcal{D}$ 是邓肯类."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.091,
+            0.777,
+            0.888,
+            0.938
+          ],
+          "sub_type": "text",
+          "content": "(2) 继续考虑 $G$ 为有界分布函数的情况. 令 $\\mathcal{C}$ 是一切形如 $(a, b] \\subseteq \\mathbb{R}$ 的区间构成的集类. 显然 $\\mathcal{C}$ 对于交运算封闭. 因为 $\\mu(a, b] = G(b) - G(a) = \\nu(a, b]$, 所以有 $\\mathcal{C} \\subseteq \\mathcal{D}$. 根据邓肯类定理有 $\\mathcal{D} \\supseteq d(\\mathcal{C}) = \\sigma(\\mathcal{C}) = \\mathcal{B}$, 即对一切 $A \\in \\mathcal{B}$ 有 $\\mu(A) = \\nu(A)$.\n(3) 考虑 $G$ 为一般分布函数的情况. 对于 $n \\geqslant 1$ 和 $A \\in \\mathcal{B}$ 定义 $\\mu_n(A) = \\mu(A \\cap (-n, n])$ 和 $\\nu_n(A) = \\nu(A \\cap (-n, n])$. 则 $\\mu_n$ 和 $\\nu_n$ 都是有限测度, 且有共同的分布函数 $G_n(x) = G(x \\vee (-n) \\wedge n)$. 根据前两步证明的结论, 对任何 $n \\geqslant 1$ 有 $\\mu_n = \\nu_n$, 进而易知 $\\mu = \\nu$."
+        }
+      ]
+    },
+    {
+      "page_idx": 56,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.057,
+            0.048,
+            0.078,
+            0.06
+          ],
+          "content": "42"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.097,
+            0.046,
+            0.305,
+            0.061
+          ],
+          "content": "第二章 随机变量及其分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.096,
+            0.103,
+            0.893,
+            0.145
+          ],
+          "content": "对应于 $(\\mathbb{R},\\mathcal{B})$ 上的有限测度 $\\mu$ ，有唯一的分布函数 $G$ 满足 $G(-\\infty) = 0$ .该分布函数由"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.355,
+            0.168,
+            0.89,
+            0.183
+          ],
+          "content": "G (x) = \\mu (- \\infty , x ], \\quad x \\in \\mathbb {R} \\tag {2.1.8}",
+          "image_source": "../../raw/pages_0049-0064/images/page_56_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.096,
+            0.202,
+            0.784,
+            0.221
+          ],
+          "content": "给出. 后面当提到有限测度的分布函数时, 总是指由 (2.1.8) 式定义的函数."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.139,
+            0.248,
+            0.408,
+            0.27
+          ],
+          "level": 2,
+          "content": "2.1.4 随机变量的概念"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.293,
+            0.893,
+            0.361
+          ],
+          "content": "定义2.1.2 设 $(\\Omega, \\mathcal{F}, \\mathbf{P})$ 为概率空间. 称由 $(\\Omega, \\mathcal{F})$ 到某个可测空间 $(E, \\mathcal{E})$ 的可测映射 $\\xi$ 为随机变量. 特别地, 当 $(E, \\mathcal{E})$ 为欧氏可测空间 $(\\mathbb{R}, \\mathcal{B})$ 时, 称 $\\xi$ 为实值随机变量."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.365,
+            0.893,
+            0.432
+          ],
+          "content": "给定取值于 $(E, \\mathcal{E})$ 的随机变量 $\\xi$, 对于集合 $B \\in \\mathcal{E}$ 我们自然希望可以讨论 $\\{\\xi \\in B\\}$ 发生的概率, 而概率测度 $\\mathbf{P}$ 是 $\\mathcal{F}$ 上的集函数. 所以定义2.1.2中要求 $\\{\\xi \\in B\\} \\in \\mathcal{F}$ 是合理的. 若某个性质在 $\\Omega$ 上相对于 $\\mathbf{P}$ 几乎处处成立, 就称该性质几乎必然成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.436,
+            0.893,
+            0.479
+          ],
+          "content": "定理2.1.14 设 $\\xi$ 为定义在概率空间 $(\\Omega, \\mathcal{F}, \\mathbf{P})$ 上取值于可测空间 $(E, \\mathcal{E})$ 的随机变量. 令"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.289,
+            0.499,
+            0.89,
+            0.517
+          ],
+          "content": "\\mu (B) = \\mathbf {P} (\\xi^ {- 1} (B)) = \\mathbf {P} (\\xi \\in B), \\quad B \\in \\mathscr {E}. \\tag {2.1.9}",
+          "image_source": "../../raw/pages_0049-0064/images/page_56_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.537,
+            0.375,
+            0.556
+          ],
+          "content": "则  $\\mu$  为  $(E, \\mathcal{E})$  上的概率测度."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.56,
+            0.893,
+            0.603
+          ],
+          "content": "证明 显然, 对任何 $B \\in \\mathcal{E}$ 有 $\\mu(B) \\geqslant 0$, 且 $\\mu(E) = 1$. 现设 $\\{B_n\\} \\subseteq \\mathcal{E}$ 是两两不交的集合列. 则当 $i \\neq j$ 时有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.29,
+            0.621,
+            0.66,
+            0.643
+          ],
+          "content": "\\xi^ {- 1} (B _ {i}) \\cap \\xi^ {- 1} (B _ {j}) = \\xi^ {- 1} (B _ {i} \\cap B _ {j}) = \\varnothing ,",
+          "image_source": "../../raw/pages_0049-0064/images/page_56_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.66,
+            0.717,
+            0.679
+          ],
+          "content": "也即 $\\{\\xi^{-1}(B_n)\\}$ 两两不交. 由概率 $\\mathbf{P}$ 的可数可加性和引理2.1.1得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.295,
+            0.695,
+            0.696,
+            0.831
+          ],
+          "content": "\\begin{array}{l} \\mu \\left(\\bigcup_ {n = 1} ^ {\\infty} B _ {n}\\right) = \\mathbf {P} \\left(\\xi^ {- 1} \\left(\\bigcup_ {n = 1} ^ {\\infty} B _ {n}\\right)\\right) \\\\ = \\mathbf {P} \\left(\\bigcup_ {n = 1} ^ {\\infty} \\xi^ {- 1} (B _ {n})\\right) \\\\ = \\sum_ {n = 1} ^ {\\infty} \\mathbf {P} (\\xi^ {- 1} (B _ {n})) = \\sum_ {n = 1} ^ {\\infty} \\mu (B _ {n}). \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0049-0064/images/page_56_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.848,
+            0.397,
+            0.867
+          ],
+          "content": "所以  $\\mu$  为  $(E, \\mathcal{E})$  上的概率测度."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.871,
+            0.894,
+            0.939
+          ],
+          "content": "定义 2.1.3 称由 (2.1.9) 式定义的  $(E, \\mathcal{E})$  上的概率测度  $\\mu$  为随机变量  $\\xi$  的概率分布，简称分布。特别地，当  $(E, \\mathcal{E})$  为欧氏可测空间  $(\\mathbb{R}, \\mathcal{B})$  时，也称  $\\mu$  的分布函数 F 为  $\\xi$  的分布函数。后面经常将二者分别写作  $\\mu_{\\xi}$  和  $F_{\\xi}$ ，以标明其与  $\\xi$  的关系。"
+        }
+      ]
+    },
+    {
+      "page_idx": 57,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.698,
+            0.054,
+            0.896,
+            0.068
+          ],
+          "content": "2.1 可测函数与随机变量"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.917,
+            0.057,
+            0.939,
+            0.068
+          ],
+          "content": "43"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.106,
+            0.894,
+            0.174
+          ],
+          "content": "如无特别申明, 后面所说的随机变量都指实值随机变量. 对于概率空间 $(\\Omega, \\mathcal{F}, \\mathbf{P})$ 上的随机变量 $\\xi$ 和 $\\eta$, 如果有 $\\mathbf{P}(\\xi = \\eta) = 1$, 就称 $\\xi$ 和 $\\eta$ 几乎必然相等, 记作 $\\xi = \\eta$ (a.s.) 或 $\\xi \\stackrel{\\mathrm{a.s.}}{=} \\eta$. 特别地, 若有 $a \\in E$ 使得 $\\xi \\stackrel{\\mathrm{a.s.}}{=} a$, 则称 $\\xi$ 是退化的. 否则称 $\\xi$ 是非退化的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.177,
+            0.894,
+            0.266
+          ],
+          "content": "将随机变量定义为概率空间上的可测函数, 其优点是具有广泛的适用性. 但由于概率空间是抽象空间, 在很多时候不便于进行分析和计算. 分布和分布函数给出了随机变量的取值概率的定量描述. 它们将很多计算转移到欧氏空间 $\\mathbb{R}$, 为相关的讨论提供了方便."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.272,
+            0.892,
+            0.317
+          ],
+          "content": "若随机变量 $\\xi$ 和 $\\eta$ 具有相同的概率分布, 则称它们同分布, 并记作 $\\xi \\stackrel{\\mathrm{d}}{=} \\eta$. 根据前面的讨论, 某个随机变量 $\\xi$ 的概率分布函数 $F$ 为 $\\mathbb{R}$ 上的右连续不降函数且满足"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.353,
+            0.334,
+            0.591,
+            0.353
+          ],
+          "content": "F (- \\infty) = 0, \\quad F (\\infty) = 1.",
+          "image_source": "../../raw/pages_0049-0064/images/page_57_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.138,
+            0.368,
+            0.735,
+            0.39
+          ],
+          "content": "例2.1.6 设随机变量 $\\xi$ 有分布函数 $F_{\\xi}$. 则对任何 $a \\leqslant b \\in \\mathbb{R}$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.154,
+            0.407,
+            0.767,
+            0.43
+          ],
+          "content": "\\mathbf {P} (a <   \\xi \\leqslant b) = F _ {\\xi} (b) - F _ {\\xi} (a), \\quad \\mathbf {P} (a <   \\xi <   b) = F _ {\\xi} (b -) - F _ {\\xi} (a),",
+          "image_source": "../../raw/pages_0049-0064/images/page_57_equation_7.jpg"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.154,
+            0.432,
+            0.78,
+            0.454
+          ],
+          "content": "\\mathbf {P} (a \\leqslant \\xi \\leqslant b) = F _ {\\xi} (b) - F _ {\\xi} (a -), \\quad \\mathbf {P} (a \\leqslant \\xi <   b) = F _ {\\xi} (b -) - F _ {\\xi} (a -).",
+          "image_source": "../../raw/pages_0049-0064/images/page_57_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.092,
+            0.467,
+            0.888,
+            0.537
+          ],
+          "content": "例 2.1.7 设  $(\\Omega, \\mathcal{F}, \\mathbf{P})$  为例 1.2.11 中定义的关于成功事件  $A \\subseteq \\Omega$  的伯努利概率空间, 其中  $F = \\{\\varnothing, A, A^{c}, \\Omega\\}$ , 而  $\\mathbf{P}(A) = p (0 \\leqslant p \\leqslant 1)$ . 令  $\\xi(\\omega) = 1_{A}(\\omega)$ . 则  $\\xi$  是  $(\\Omega, \\mathcal{F}, \\mathbf{P})$  上的随机变量. 它取值 1 或 0, 代表一次伯努利随机试验中成功的次数. 显然"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.235,
+            0.552,
+            0.699,
+            0.574
+          ],
+          "content": "\\mathbf {P} (\\xi = 1) = \\mathbf {P} (A) = p, \\quad \\mathbf {P} (\\xi = 0) = \\mathbf {P} (A ^ {c}) = 1 - p.",
+          "image_source": "../../raw/pages_0049-0064/images/page_57_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.092,
+            0.587,
+            0.309,
+            0.605
+          ],
+          "content": "该随机变量有分布函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.268,
+            0.625,
+            0.664,
+            0.647
+          ],
+          "content": "F _ {\\xi} (x) = (1 - p) 1 _ {\\{0 \\leqslant x <   1 \\}} + 1 _ {\\{x \\geqslant 1 \\}}, \\quad x \\in \\mathbb {R}.",
+          "image_source": "../../raw/pages_0049-0064/images/page_57_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.088,
+            0.661,
+            0.883,
+            0.701
+          ],
+          "content": "特别地, 当 $\\xi$ 是取值为 $a \\in \\mathbb{R}$ 的退化随机变量, 其分布 $\\mu_{\\xi}$ 就是狄拉克测度 $\\delta_{a}$. 此时我们有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.348,
+            0.723,
+            0.58,
+            0.743
+          ],
+          "content": "\\mu_ {\\xi} (B) = 1 _ {B} (a), \\quad B \\in \\mathcal {B}",
+          "image_source": "../../raw/pages_0049-0064/images/page_57_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.087,
+            0.757,
+            0.113,
+            0.772
+          ],
+          "content": "和"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.348,
+            0.796,
+            0.577,
+            0.816
+          ],
+          "content": "F _ {\\xi} (x) = 1 _ {\\{x \\geqslant a \\}}, \\quad x \\in \\mathbb {R}.",
+          "image_source": "../../raw/pages_0049-0064/images/page_57_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.085,
+            0.83,
+            0.717,
+            0.85
+          ],
+          "content": "在这种情况下, 我们分别称 $\\mu$ 和 $F$ 为退化概率分布和退化分布函数."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.125,
+            0.875,
+            0.207,
+            0.895
+          ],
+          "level": 2,
+          "content": "练习题"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.127,
+            0.921,
+            0.574,
+            0.941
+          ],
+          "content": "1. 设 $\\xi$ 为定义在非空集 $\\Omega$ 上的实值函数. 证明:"
+        }
+      ]
+    },
+    {
+      "page_idx": 58,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.069,
+            0.049,
+            0.091,
+            0.06
+          ],
+          "content": "44"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.111,
+            0.047,
+            0.318,
+            0.061
+          ],
+          "content": "第二章 随机变量及其分布"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.151,
+            0.103,
+            0.698,
+            0.213
+          ],
+          "sub_type": "text",
+          "content": "(1) $\\xi^{-1}(\\mathbb{R}) = \\Omega, \\xi^{-1}(B^c) = \\xi^{-1}(B)^c;$\n(2) $\\xi^{-1}\\left(\\bigcup_{i}B_{i}\\right) = \\bigcup_{i}\\xi^{-1}(B_{i}),\\xi^{-1}\\left(\\bigcap_{i}B_{i}\\right) = \\bigcap_{i}\\xi^{-1}(B_{i});$\n(3) 对 $B \\subseteq C \\subseteq \\mathbb{R}$ 有 $\\xi^{-1}(B) \\subseteq \\xi^{-1}(C)$;\n(4) 若 $\\mathcal{E}$ 是 $\\mathbb{R}$ 上的 $\\sigma$ 代数, 则 $\\xi^{-1}(\\mathcal{E})$ 是 $\\Omega$ 上的 $\\sigma$ 代数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.219,
+            0.905,
+            0.26
+          ],
+          "content": "2. 设 $\\xi$ 为可测空间 $(\\Omega, \\mathcal{F})$ 上的实函数. 证明: 对于任何 $A \\subseteq \\Omega$ 示性函数 $1_A$ 关于 $\\mathcal{F}$ 可测当且仅当 $A \\in \\mathcal{F}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.267,
+            0.566,
+            0.285
+          ],
+          "content": "3. 设 $\\xi$ 和 $\\eta$ 为 $(\\Omega, \\mathcal{F})$ 上的可测函数. 证明:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.291,
+            0.558,
+            0.308
+          ],
+          "content": "(1)  $\\xi - \\eta$  和  $\\xi\\eta$  均为  $(\\Omega, \\mathcal{F})$  上的可测函数;"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.314,
+            0.582,
+            0.332
+          ],
+          "content": "(2) 若 $\\eta \\neq 0$, 则 $\\xi / \\eta$ 为 $(\\Omega, \\mathcal{F})$ 上的可测函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.151,
+            0.338,
+            0.7,
+            0.356
+          ],
+          "content": "4. 给出有界区间  $(a, b) \\subseteq \\mathbb{R}$  上的勒贝格测度的分布函数 G."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.108,
+            0.362,
+            0.905,
+            0.405
+          ],
+          "content": "5. 设随机变量 $\\xi$ 满足 $\\mathbf{P}(\\xi \\geqslant a) \\geqslant 1 - \\alpha$ 和 $\\mathbf{P}(\\xi \\leqslant b) \\geqslant 1 - \\beta$, 其中 $a \\leqslant b \\in \\mathbb{R}$, 而 $\\alpha, \\beta \\in [0,1]$. 证明"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.365,
+            0.419,
+            0.607,
+            0.438
+          ],
+          "content": "\\mathbf {P} (a \\leqslant \\xi \\leqslant b) \\geqslant 1 - \\alpha - \\beta.",
+          "image_source": "../../raw/pages_0049-0064/images/page_58_equation_13.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.11,
+            0.491,
+            0.396,
+            0.514
+          ],
+          "level": 2,
+          "content": "2.2 离散型随机变量"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.109,
+            0.561,
+            0.906,
+            0.604
+          ],
+          "content": "称随机变量  $\\xi$  是离散型的, 是指它具有离散型概率分布函数 F. 此时  $\\xi$  的可能的取值范围是某个可数集  $E := \\{x_{1}, x_{2}, \\cdots\\} \\subseteq R$ . 令 p 为 F 的密度函数. 则有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.306,
+            0.616,
+            0.905,
+            0.652
+          ],
+          "content": "F (x) = \\mathbf {P} (\\xi \\leqslant x) = \\sum_ {x _ {i} \\leqslant x} p (x _ {i}), \\quad x \\in \\mathbb {R}, \\tag {2.2.1}",
+          "image_source": "../../raw/pages_0049-0064/images/page_58_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.665,
+            0.158,
+            0.683
+          ],
+          "content": "其中"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.699,
+            0.905,
+            0.719
+          ],
+          "content": "p (x _ {i}) = \\mathbf {P} (\\xi = x _ {i}), \\quad i = 1, 2, \\dots . \\tag {2.2.2}",
+          "image_source": "../../raw/pages_0049-0064/images/page_58_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.733,
+            0.159,
+            0.75
+          ],
+          "content": "注意"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.422,
+            0.761,
+            0.551,
+            0.805
+          ],
+          "content": "\\sum_ {i = 1} ^ {\\infty} p (x _ {i}) = 1.",
+          "image_source": "../../raw/pages_0049-0064/images/page_58_equation_20.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.816,
+            0.838,
+            0.834
+          ],
+          "content": "此时也将 p 称为  $\\xi$  的分布列、分布密度或密度. 利用概率测度的可数可加性得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.334,
+            0.847,
+            0.639,
+            0.884
+          ],
+          "content": "\\mathbf {P} (\\xi \\in B) = \\sum_ {x _ {i} \\in B} p (x _ {i}), \\quad B \\in \\mathcal {B}.",
+          "image_source": "../../raw/pages_0049-0064/images/page_58_equation_22.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.109,
+            0.895,
+            0.906,
+            0.937
+          ],
+          "content": "给定可数集  $E := \\{x_{1}, x_{2}, \\cdots\\} \\subseteq R$  上的以 p 为密度函数的离散型概率测度  $\\mu$ ，是否一定存在以  $\\mu$  为分布的离散型随机变量呢？下面的命题回答了这个问题."
+        }
+      ]
+    },
+    {
+      "page_idx": 59,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.72,
+            0.047,
+            0.883,
+            0.062
+          ],
+          "content": "2.2 离散型随机变量"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.904,
+            0.049,
+            0.926,
+            0.061
+          ],
+          "content": "45"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.088,
+            0.103,
+            0.884,
+            0.146
+          ],
+          "content": "命题 2.2.1 在上述情况下, 令  $\\Omega=\\{1,2,\\cdots\\}$ , 并令 F 为  $\\Omega$  的所有子集构成的  $\\sigma$  代数. 对于  $A\\in F$ , 令"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.385,
+            0.161,
+            0.88,
+            0.194
+          ],
+          "content": "\\mathbf {P} (A) = \\sum_ {i \\in A} p (x _ {i}). \\tag {2.2.3}",
+          "image_source": "../../raw/pages_0049-0064/images/page_59_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.088,
+            0.206,
+            0.883,
+            0.25
+          ],
+          "content": "对任何 $i \\in \\Omega$ 令 $\\xi(i) = x_i$. 则 $\\xi$ 为概率空间 $(\\Omega, \\mathcal{F}, \\mathbf{P})$ 上的离散型随机变量, 且有分布列 $\\{p(x_1), p(x_2), \\dots\\}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.088,
+            0.254,
+            0.884,
+            0.322
+          ],
+          "content": "证明 显然, 由 (2.2.3) 式定义的 $\\mathbf{P}$ 是可测空间 $(\\Omega, \\mathcal{F})$ 上的概率测度. 因 $\\mathcal{F}$ 包含 $\\Omega$ 的所有子集, 所以 $\\xi$ 可测. 由 (2.2.3) 式知 (2.2.2) 式成立. 所以 $\\xi$ 为离散型随机变量, 且有分布列 $\\{p(x_1), p(x_2), \\cdots\\}$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.088,
+            0.325,
+            0.884,
+            0.418
+          ],
+          "content": "例 2.2.1 令  $(\\Omega_{1},\\mathcal{F}_{1},\\mathbf{P}_{1})$  为关于成功事件  $A \\subseteq \\Omega_{1}$  的伯努利概率空间, 其中  $F_{1} = \\{\\varnothing, A, A^{c}, \\Omega\\}$ . 设成功概率为  $\\mathbf{P}_{1}(A) = p (0 \\leqslant p \\leqslant 1)$ . 考虑其可数无穷维乘积概率空间  $(\\Omega, \\mathcal{F}, \\mathbf{P}) := (\\Omega_{1}^{\\infty}, \\mathcal{F}_{1}^{\\infty}, \\mathbf{P}_{1}^{\\infty})$ . 此概率空间描述可数无穷次伯努利试验. 对  $k \\geqslant 1$  记  $B_{k} = \\Omega_{1}^{k-1} \\times A \\times \\Omega_{1}^{\\infty}$ , 它表示第 k 次试验成功. 注意事件  $B_{1}, B_{2}, \\cdots$  相互独立. 再记"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.226,
+            0.433,
+            0.878,
+            0.45
+          ],
+          "content": "\\xi_ {k} (\\omega) = 1 _ {B _ {k}} (\\omega) = 1 _ {A} (\\omega_ {k}), \\quad \\omega = (\\omega_ {1}, \\omega_ {2}, \\dots) \\in \\Omega_ {1} ^ {\\infty}. \\tag {2.2.4}",
+          "image_source": "../../raw/pages_0049-0064/images/page_59_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.087,
+            0.464,
+            0.883,
+            0.554
+          ],
+          "content": "则  $\\xi_{k}$  是  $(\\Omega, \\mathcal{F}, \\mathbf{P})$  上的随机变量. 直观上, 若第 k 次试验成功, 则  $\\xi_{k}=1$ ; 否则  $\\xi_{k}=0$ . 显然有  $\\mathbf{P}(\\xi_{k}=1)=\\mathbf{P}(B_{k})=p$  和  $\\mathbf{P}(\\xi_{k}=0)=\\mathbf{P}(B_{k}^{c})=1-p$ . 注意前 n 次试验中成功的总次数可表示为  $\\xi:=\\xi_{1}+\\xi_{2}+\\cdots+\\xi_{n}$ . 由定理 2.1.9 知  $\\xi$  是  $(\\Omega, \\mathcal{F}, \\mathbf{P})$  上的随机变量."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.088,
+            0.559,
+            0.882,
+            0.603
+          ],
+          "content": "对于离散型变量的概率问题, 一般可以借助级数和的方法处理, 这为很多计算带来了方便. 本节下面讨论伯努利试验中出现的几个离散型随机变量的分布."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.127,
+            0.63,
+            0.318,
+            0.65
+          ],
+          "level": 2,
+          "content": "2.2.1 二项分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.085,
+            0.675,
+            0.882,
+            0.718
+          ],
+          "content": "令 $(\\Omega, \\mathcal{F}, \\mathbf{P})$ 是例2.2.1中定义的伯努利概率空间的可数无穷维乘积空间，而 $\\xi$ 和 $\\xi_k$ 也如那里定义。不难算出"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.289,
+            0.734,
+            0.876,
+            0.752
+          ],
+          "content": "\\mathbf {P} (\\xi = i) = \\mathrm{C} _ {n} ^ {i} p ^ {i} q ^ {n - i}, \\quad i = 0, 1, \\dots , n. \\tag {2.2.5}",
+          "image_source": "../../raw/pages_0049-0064/images/page_59_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.087,
+            0.766,
+            0.88,
+            0.809
+          ],
+          "content": "上式右端给出的离散型概率分布称为二项分布, 记作 $B(n,p)$. 特别地, 称 $B(1,p)$ 为伯努利分布. 注意"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.329,
+            0.82,
+            0.595,
+            0.863
+          ],
+          "content": "\\sum_ {i = 0} ^ {n} \\mathrm{C} _ {n} ^ {i} p ^ {i} q ^ {n - i} = (p + q) ^ {n} = 1.",
+          "image_source": "../../raw/pages_0049-0064/images/page_59_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.087,
+            0.874,
+            0.226,
+            0.893
+          ],
+          "content": "由(2.2.5)式得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.312,
+            0.904,
+            0.612,
+            0.942
+          ],
+          "content": "\\frac {\\mathbf {P} (\\xi = i)}{\\mathbf {P} (\\xi = i - 1)} = 1 + \\frac {(n + 1) p - i}{i q}.",
+          "image_source": "../../raw/pages_0049-0064/images/page_59_equation_16.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 60,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.065,
+            0.048,
+            0.087,
+            0.059
+          ],
+          "content": "46"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.107,
+            0.046,
+            0.315,
+            0.06
+          ],
+          "content": "第二章 随机变量及其分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.102,
+            0.903,
+            0.168
+          ],
+          "content": "注意当 $i < (n + 1)p$ 时, $\\mathbf{P}(\\xi = i) > \\mathbf{P}(\\xi = i - 1)$, 而当 $i > (n + 1)p$ 时, $\\mathbf{P}(\\xi = i) < \\mathbf{P}(\\xi = i - 1)$. 所以 $\\mathbf{P}(\\xi = i)$ 的值先随 $i$ 的增加而上升, 再随 $i$ 的增加而下降. 使 $\\mathbf{P}(\\xi = i)$ 取得最大值的 $i$ 称为二项分布的最可能值."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.173,
+            0.903,
+            0.217
+          ],
+          "content": "我们用 $\\lfloor x\\rfloor$ 表示不超过 $x\\in \\mathbb{R}$ 的最大整数. 显然 $i_0\\coloneqq \\lfloor (n + 1)p\\rfloor$ 是最可能值. 若 $(n + 1)p$ 是整数, 则 $i_0$ 和 $i_0 - 1$ 同为最可能值."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.221,
+            0.907,
+            0.287
+          ],
+          "content": "例 2.2.2 掷一枚质地均匀的硬币 2n 次, 记正面朝上的次数为  $\\xi$ . 则  $\\xi$  服从  $B(2n, 1/2)$  分布, 其最可能值为  $\\lfloor(2n+1)p\\rfloor=n$ . 利用斯特林 (Stirling) 公式有  $n!\\approx n^{n}e^{-n}\\sqrt{2\\pi n}$ , 得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.251,
+            0.298,
+            0.756,
+            0.387
+          ],
+          "content": "\\begin{array}{l} \\mathbf {P} (\\xi = n) = \\mathrm{C} _ {2 n} ^ {n} \\Big (\\frac {1}{2} \\Big) ^ {2 n} = \\frac {(2 n) !}{(n !) ^ {2} 2 ^ {2 n}} \\\\ \\approx \\frac {2 ^ {2 n + 1} n ^ {2 n} \\mathrm{e} ^ {- 2 n} \\sqrt {\\pi n}}{n ^ {2 n + 1} \\mathrm{e} ^ {- 2 n} 2 ^ {2 n + 1} \\pi} = \\frac {1}{\\sqrt {n \\pi}} \\rightarrow 0, \\quad n \\rightarrow \\infty . \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0049-0064/images/page_60_equation_5.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.148,
+            0.404,
+            0.339,
+            0.424
+          ],
+          "level": 2,
+          "content": "2.2.2 几何分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.449,
+            0.901,
+            0.492
+          ],
+          "content": "令 $(\\Omega, \\mathcal{F}, \\mathbf{P})$ 是例 2.2.1 中定义的伯努利概率空间的可数无穷维乘积空间.对于 $\\omega = (\\omega_1, \\omega_2, \\cdots) \\in \\Omega$ 和 $k = 1, 2, \\cdots$ 定义"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.263,
+            0.512,
+            0.701,
+            0.53
+          ],
+          "content": "\\eta (\\omega) = k, \\quad \\omega_ {1} \\in A ^ {c}, \\dots , \\omega_ {k - 1} \\in A ^ {c} \\text {且} \\omega_ {k} \\in A.",
+          "image_source": "../../raw/pages_0049-0064/images/page_60_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.548,
+            0.675,
+            0.567
+          ],
+          "content": "则 $\\eta$ 代表了首次成功时的试验次数, 称为首次成功时间. 显然"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.34,
+            0.585,
+            0.624,
+            0.607
+          ],
+          "content": "\\{\\eta = k \\} = (A ^ {c}) ^ {k - 1} \\times A \\times \\Omega_ {1} ^ {\\infty}.",
+          "image_source": "../../raw/pages_0049-0064/images/page_60_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.624,
+            0.378,
+            0.642
+          ],
+          "content": "根据乘积概率测度的定义, 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.3,
+            0.661,
+            0.664,
+            0.682
+          ],
+          "content": "\\mathbf {P} (\\eta = k) = (1 - p) ^ {k - 1} p, \\quad k = 1, 2, \\dots .",
+          "image_source": "../../raw/pages_0049-0064/images/page_60_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.7,
+            0.779,
+            0.719
+          ],
+          "content": "上式右端给出的离散型概率分布称为以 $p$ 为参数的几何分布，记作 $G(p)$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.106,
+            0.723,
+            0.901,
+            0.765
+          ],
+          "content": "定理2.2.2 取值为非负整数的随机变量 $\\eta$ 服从几何分布当且仅当对任意的 $n, k \\geqslant 1$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.338,
+            0.787,
+            0.897,
+            0.804
+          ],
+          "content": "\\mathbf {P} (\\eta > k + n | \\eta > n) = \\mathbf {P} (\\eta > k). \\tag {2.2.6}",
+          "image_source": "../../raw/pages_0049-0064/images/page_60_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.823,
+            0.549,
+            0.842
+          ],
+          "content": "证明 “$\\Rightarrow$” 假设 $\\eta$ 服从几何分布 $G(p)$. 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.234,
+            0.858,
+            0.731,
+            0.902
+          ],
+          "content": "\\mathbf {P} (\\eta > n) = \\sum_ {k = n + 1} ^ {\\infty} (1 - p) ^ {k - 1} p = \\frac {p (1 - p) ^ {n}}{1 - q} = (1 - p) ^ {n}.",
+          "image_source": "../../raw/pages_0049-0064/images/page_60_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.918,
+            0.295,
+            0.937
+          ],
+          "content": "由此易得 (2.2.6) 式."
+        }
+      ]
+    },
+    {
+      "page_idx": 61,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.733,
+            0.047,
+            0.896,
+            0.061
+          ],
+          "content": "2.2 离散型随机变量"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.916,
+            0.049,
+            0.938,
+            0.06
+          ],
+          "content": "47"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.101,
+            0.502,
+            0.12
+          ],
+          "content": "“$\\Leftarrow$”令 $q_{n} = \\mathbf{P}(\\xi > n)$. 由 (2.2.6) 式有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.331,
+            0.134,
+            0.622,
+            0.167
+          ],
+          "content": "\\frac {q _ {k + n}}{q _ {n}} = q _ {k} \\quad \\Rightarrow \\quad q _ {k + n} = q _ {n} q _ {k}.",
+          "image_source": "../../raw/pages_0049-0064/images/page_61_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.181,
+            0.385,
+            0.201
+          ],
+          "content": "因此 $q_{k} = q_{1}^{k}$ .取 $p = 1 - q_{1}$ 得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.306,
+            0.219,
+            0.645,
+            0.24
+          ],
+          "content": "\\mathbf {P} (\\eta = k) = q _ {k - 1} - q _ {k} = (1 - p) ^ {k - 1} p,",
+          "image_source": "../../raw/pages_0049-0064/images/page_61_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.256,
+            0.332,
+            0.275
+          ],
+          "content": "即  $\\eta$  服从几何分布  $G(p)$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.281,
+            0.894,
+            0.322
+          ],
+          "content": "由 (2.2.6) 式表达的性质称为几何分布的无记忆性, 其成立的原因是由于伯努利试验是独立重复进行的."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.328,
+            0.893,
+            0.371
+          ],
+          "content": "例 2.2.3 在一串 10 把外形相同的钥匙中, 只有一把能打开某扇房门, 现用这些钥匙尝试开门, 试对放回与不放回的情形, 分别求出  $E = \\{ \\text{至多试三次打开门} \\}$  的概率."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.376,
+            0.892,
+            0.418
+          ],
+          "content": "解 (1) 每次取一把钥匙试开, 然后放回, 以 $\\xi$ 表示首次打开门的试开次数. 则 $\\xi$ 服从参数为 $p = 0.1$ 的几何分布, 故"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.217,
+            0.437,
+            0.728,
+            0.456
+          ],
+          "content": "\\mathbf {P} (E) = \\mathbf {P} (\\xi \\leqslant 3) = 0. 1 + 0. 9 \\times 0. 1 + 0. 9 ^ {2} \\times 0. 1 = 0. 2 7 1.",
+          "image_source": "../../raw/pages_0049-0064/images/page_61_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.474,
+            0.48,
+            0.492
+          ],
+          "content": "(2) 每次取一把钥匙试开, 不放回, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.326,
+            0.508,
+            0.66,
+            0.547
+          ],
+          "content": "\\mathbf {P} (E) = 1 - \\mathbf {P} (E ^ {c}) = 1 - \\frac {\\mathrm{C} _ {9} ^ {3}}{\\mathrm{C} _ {1 0} ^ {3}} = 0. 3.",
+          "image_source": "../../raw/pages_0049-0064/images/page_61_equation_12.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.563,
+            0.354,
+            0.583
+          ],
+          "level": 2,
+          "content": "2.2.3 帕斯卡分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.094,
+            0.608,
+            0.892,
+            0.674
+          ],
+          "content": "考虑可数重伯努利试验. 对于 $n = 1,2,\\dots$ ，令 $\\eta_{n}$ 为到第 $n$ 次成功时的试验次数，称为第 $n$ 次成功的时间. 则 $\\{\\eta_n = k\\} = \\{\\text{前} k - 1\\text{次试验中恰有} n - 1\\text{次成功且第} k\\text{次试验成功}\\}$. 由此易得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.205,
+            0.693,
+            0.891,
+            0.715
+          ],
+          "content": "\\mathbf {P} (\\eta_ {n} = k) = \\mathrm{C} _ {k - 1} ^ {n - 1} p ^ {n} (1 - p) ^ {k - n}, \\quad k = n, n + 1, n + 2, \\dots . \\tag {2.2.7}",
+          "image_source": "../../raw/pages_0049-0064/images/page_61_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.094,
+            0.731,
+            0.891,
+            0.751
+          ],
+          "content": "上式右端给出的离散型概率分布称为以 $(n,p)$ 为参数的帕斯卡(Pascal)分布,记作 $Pa(n,p)$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.755,
+            0.731,
+            0.774
+          ],
+          "content": "显然, 几何分布  $G(p)$  是帕斯卡分布  $Pa(n,p)$  当 n=1 时的特例."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.135,
+            0.779,
+            0.511,
+            0.797
+          ],
+          "content": "考虑泰勒 (Taylor) 展开式: 对  $|x| < 1$  有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.286,
+            0.813,
+            0.694,
+            0.904
+          ],
+          "content": "\\begin{array}{l} (1 - x) ^ {- n} = \\sum_ {k = 0} ^ {\\infty} \\frac {n (n + 1) \\cdots (n + k - 1)}{k !} x ^ {k} \\\\ = \\sum_ {k = 0} ^ {\\infty} \\mathrm{C} _ {n + k - 1} ^ {n - 1} x ^ {k} = \\sum_ {k = n} ^ {\\infty} \\mathrm{C} _ {k - 1} ^ {n - 1} x ^ {k - n}. \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0049-0064/images/page_61_equation_19.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.091,
+            0.918,
+            0.526,
+            0.936
+          ],
+          "content": "取 x = 1 - p 即知 (2.2.7) 式右端之和确实为 1."
+        }
+      ]
+    },
+    {
+      "page_idx": 62,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.067,
+            0.048,
+            0.087,
+            0.059
+          ],
+          "content": "48"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.108,
+            0.046,
+            0.315,
+            0.06
+          ],
+          "content": "第二章 随机变量及其分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.102,
+            0.903,
+            0.144
+          ],
+          "content": "在可数重伯努利试验中, 令 $\\zeta_{n} = \\eta_{n} - n$ 为第 $n$ 次成功前的失败次数. 不难看出, 对 $k = 0,1,2,\\dots$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.251,
+            0.156,
+            0.757,
+            0.254
+          ],
+          "content": "\\begin{array}{l} \\mathbf {P} (\\zeta_ {n} = k) = \\mathrm{C} _ {k + n - 1} ^ {n - 1} p ^ {n} (1 - p) ^ {k} = \\mathrm{C} _ {k + n - 1} ^ {k} p ^ {n} (1 - p) ^ {k} \\\\ = \\frac {(k + n - 1) \\cdots (n + 1) n}{k !} p ^ {n} (1 - p) ^ {k} \\\\ = \\frac {(- n) (- n - 1) \\cdots (- n - k + 1)}{k !} p ^ {n} (p - 1) ^ {k}. \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0049-0064/images/page_62_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.261,
+            0.508,
+            0.279
+          ],
+          "content": "对组合记号作简单推广后, 可将上式表示为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.276,
+            0.294,
+            0.899,
+            0.312
+          ],
+          "content": "\\mathbf {P} (\\zeta_ {n} = k) = \\mathrm{C} _ {- n} ^ {k} p ^ {n} (p - 1) ^ {k}, \\quad k = 0, 1, 2, \\dots . \\tag {2.2.8}",
+          "image_source": "../../raw/pages_0049-0064/images/page_62_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.108,
+            0.326,
+            0.876,
+            0.345
+          ],
+          "content": "上式右端给出的离散型概率分布称为以 $(n,p)$ 为参数的负二项分布，记作 $NB(n,p)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.35,
+            0.903,
+            0.392
+          ],
+          "content": "例 2.2.4 口袋中有两盒火柴, 开始时每盒中都有 n 根火柴, 每次从中任取一盒并任取一根. 求此人掏出一盒发现已空而另一盒尚余 r 根的概率."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.398,
+            0.903,
+            0.439
+          ],
+          "content": "解 令 $E = \\{$ 掏出甲盒已空而乙盒尚余 $r$ 根 $\\}$. 我们将 $\\{$ 取出甲盒 $\\}$ 解释为成功, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.23,
+            0.455,
+            0.737,
+            0.473
+          ],
+          "content": "E = \\{\\text {第} n + 1 \\text {次成功发生在第} n + 1 + n - r \\text {次试验} \\}.",
+          "image_source": "../../raw/pages_0049-0064/images/page_62_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.488,
+            0.412,
+            0.505
+          ],
+          "content": "根据帕斯卡分布的概率表达式有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.361,
+            0.513,
+            0.607,
+            0.546
+          ],
+          "content": "\\mathbf {P} (E) = \\mathrm{C} _ {2 n - r} ^ {n} \\Big (\\frac {1}{2} \\Big) ^ {2 n - r + 1},",
+          "image_source": "../../raw/pages_0049-0064/images/page_62_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.108,
+            0.553,
+            0.396,
+            0.572
+          ],
+          "content": "由对称性知所求概率为  $2\\mathbf{P}(E)$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.577,
+            0.903,
+            0.618
+          ],
+          "content": "例 2.2.5 (分赌注问题) 甲、乙两人赌博水平相当, 各下赌注 d 元, 商量先胜三局者胜. 如果甲胜一局而乙尚未获胜时终止, 问赌注如何分配合理?"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.624,
+            0.904,
+            0.713
+          ],
+          "content": "解 假若在目前的形势下二人继续赌博, 则甲取得赌注 $\\Leftrightarrow$ 在后面 $p = 1/2$ 的可数重伯努利试验中, 第 2 次成功发生在第 3 次失败之前 $\\Leftrightarrow$ 到第 2 次成功为止的试验次数小于 $5 \\Leftrightarrow \\eta_{2} < 5$, 这里 $\\eta_{2}$ 服从帕斯卡分布 $Pa(2,1/2)$. 根据该帕斯卡分布的概率表达式有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.293,
+            0.713,
+            0.718,
+            0.746
+          ],
+          "content": "\\mathbf {P} (\\eta_ {2} <   5) = \\left(\\frac {1}{2}\\right) ^ {2} + \\mathrm{C} _ {2} ^ {1} \\left(\\frac {1}{2}\\right) ^ {3} + \\mathrm{C} _ {3} ^ {1} \\left(\\frac {1}{2}\\right) ^ {4} = \\frac {1 1}{1 6}.",
+          "image_source": "../../raw/pages_0049-0064/images/page_62_equation_15.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.149,
+            0.767,
+            0.34,
+            0.786
+          ],
+          "level": 2,
+          "content": "2.2.4 泊松分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.811,
+            0.904,
+            0.853
+          ],
+          "content": "在伯努利试验的应用中, 我们经常会遇到成功概率很小, 且试验次数很多的情况. 在这种时候, 下面的定理给出了相应的二项分布的一种近似."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.858,
+            0.909,
+            0.901
+          ],
+          "content": "定理2.2.3 设对每个 $n \\geqslant 1$ 有随机变量 $\\xi_{n}$ 服从二项分布 $B(n, p_n)$ 且 $\\lim_{n \\to \\infty} np_n = \\lambda > 0$. 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.292,
+            0.908,
+            0.901,
+            0.94
+          ],
+          "content": "\\lim _ {n \\to \\infty} \\mathbf {P} (\\xi_ {n} = k) = \\frac {\\lambda^ {k}}{k !} \\mathrm{e} ^ {- \\lambda}, \\quad k = 0, 1, 2, \\dots . \\tag {2.2.9}",
+          "image_source": "../../raw/pages_0049-0064/images/page_62_equation_19.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 63,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.736,
+            0.046,
+            0.899,
+            0.06
+          ],
+          "content": "2.2 离散型随机变量"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.919,
+            0.048,
+            0.94,
+            0.059
+          ],
+          "content": "49"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.101,
+            0.26,
+            0.118
+          ],
+          "content": "证明 注意"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.219,
+            0.127,
+            0.781,
+            0.201
+          ],
+          "content": "\\begin{array}{l} \\mathbf {P} (\\xi_ {n} = k) = \\frac {n (n - 1) \\cdots (n - k + 1)}{k !} p _ {n} ^ {k} (1 - p _ {n}) ^ {n - k} \\\\ = \\frac {(n p _ {n}) ^ {k}}{k !} \\cdot 1 \\cdot \\left(1 - \\frac {1}{n}\\right) \\dots \\left(1 - \\frac {k - 1}{n}\\right) (1 - p _ {n}) ^ {n - k}, \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0049-0064/images/page_63_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.21,
+            0.256,
+            0.228
+          ],
+          "content": "在假设条件下有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.26,
+            0.244,
+            0.697,
+            0.271
+          ],
+          "content": "\\lim _ {n \\to \\infty} (1 - p _ {n}) ^ {n} = \\lim _ {n \\to \\infty} (1 - p _ {n}) ^ {(1 / p _ {n}) (n p _ {n})} = \\mathrm{e} ^ {- \\lambda},",
+          "image_source": "../../raw/pages_0049-0064/images/page_63_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.281,
+            0.24,
+            0.299
+          ],
+          "content": "故得欲证结果."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.305,
+            0.897,
+            0.372
+          ],
+          "content": "等式 (2.2.9) 右端的数列构成一个离散型概率分布, 称为参数为 $\\lambda$ 的泊松 (Poisson) 分布, 记作 $P(\\lambda)$. 上面的定理称为泊松定理. 该定理说明, 当 $n$ 很大而 $np$ 不太大时, 二项分布 $B(n, p)$ 可用泊松分布 $P(np)$ 近似代替."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.377,
+            0.897,
+            0.419
+          ],
+          "content": "例 2.2.6 泊松分布  $P(\\lambda)$  的最可能的值为  $\\lfloor\\lambda\\rfloor$ ，即不超过  $\\lambda$  的最大整数。当  $\\lambda$  为整数时，最可能值有两个，即  $\\lambda$  和  $\\lambda-1$ 。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.425,
+            0.897,
+            0.492
+          ],
+          "content": "例 2.2.7 用  $\\xi$  表示在一定时间内某种仪器发射出的粒子数, 设它服从泊松分布  $P(\\lambda)$ . 再假定发射出的每个粒子被记录下来的概率为 p (0 < p < 1), 没有被记录的概率为 1 - p, 且各个粒子是否被记录相互独立. 令记录下的粒子数为  $\\eta$ , 则  $\\eta$  服从泊松分布  $P(\\lambda p)$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.142,
+            0.496,
+            0.497,
+            0.515
+          ],
+          "content": "证明 记 q = 1 - p. 利用全概率公式,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.298,
+            0.527,
+            0.695,
+            0.793
+          ],
+          "content": "\\begin{array}{l} \\mathbf {P} (\\eta = k) = \\sum_ {n = k} ^ {\\infty} \\mathbf {P} (\\xi = n) \\mathbf {P} (\\eta = k | \\xi = n) \\\\ = \\sum_ {n = k} ^ {\\infty} \\frac {\\lambda^ {n}}{n !} \\mathrm{e} ^ {- \\lambda} \\mathrm{C} _ {n} ^ {k} p ^ {k} q ^ {n - k} \\\\ = \\sum_ {n = k} ^ {\\infty} \\frac {(\\lambda p) ^ {k}}{k !} \\mathrm{e} ^ {- \\lambda p} \\frac {(q \\lambda) ^ {n - k}}{(n - k) !} \\mathrm{e} ^ {- \\lambda (1 - p)} \\\\ = \\frac {(\\lambda p) ^ {k}}{k !} \\mathrm{e} ^ {- \\lambda p} \\sum_ {i = 0} ^ {\\infty} \\frac {(q \\lambda) ^ {i}}{i !} \\mathrm{e} ^ {- \\lambda q} \\\\ = \\frac {(\\lambda p) ^ {k}}{k !} \\mathrm{e} ^ {- \\lambda p}. \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0049-0064/images/page_63_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.802,
+            0.389,
+            0.821
+          ],
+          "content": "这说明  $\\eta$  服从泊松分布  $P(\\lambda p)$ ."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.141,
+            0.848,
+            0.359,
+            0.868
+          ],
+          "level": 2,
+          "content": "2.2.5 泊松粒子流"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.893,
+            0.897,
+            0.937
+          ],
+          "content": "设有一个随机粒子流, 对于 $t \\geqslant 0$ 在时段 $(0, t]$ 内到达的粒子个数 $N_{t}$ 有限, 特别地, $N_{0} = 0$. 这里的 $N_{t}$ 是随机变量, 而当 $\\omega \\in \\Omega$ 固定后 $t \\mapsto N_{t}(\\omega)$ 是右连续不降整数值阶"
+        }
+      ]
+    },
+    {
+      "page_idx": 64,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.059,
+            0.045,
+            0.081,
+            0.056
+          ],
+          "content": "50"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.1,
+            0.043,
+            0.308,
+            0.057
+          ],
+          "content": "第二章 随机变量及其分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.1,
+            0.205,
+            0.117
+          ],
+          "content": "梯函数. 记"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.311,
+            0.139,
+            0.892,
+            0.155
+          ],
+          "content": "P _ {k} (t) = \\mathbf {P} \\left(N _ {t} = k\\right), \\quad k = 0, 1, 2, \\dots . \\tag {2.2.10}",
+          "image_source": "../../raw/pages_0065-0080/images/page_64_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.173,
+            0.528,
+            0.191
+          ],
+          "content": "从理论和应用两方面, 下面的假定都是自然的:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.099,
+            0.198,
+            0.893,
+            0.286
+          ],
+          "sub_type": "text",
+          "content": "- 独立增量性: 对 $0 \\leqslant t_1 < t_2 \\leqslant t_3 < t_4$ 和 $k_1, k_2 \\geqslant 0$, 随机事件 $\\{N_{t_1} - N_{t_2} = k_1\\}$ 与 $\\{N_{t_3} - N_{t_4} = k_2\\}$ 独立;\n- 平稳增量性: 对任意的 $s, t \\geqslant 0$ 有 $\\mathbf{P}(N_{s+t} - N_s = k) = P_k(t)$;\n- 普通性: 当 $t \\to 0$ 时有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.31,
+            0.301,
+            0.641,
+            0.344
+          ],
+          "content": "1 - P _ {0} (t) - P _ {1} (t) = \\sum_ {k = 2} ^ {\\infty} P _ {k} (t) = o (t).",
+          "image_source": "../../raw/pages_0065-0080/images/page_64_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.098,
+            0.359,
+            0.893,
+            0.401
+          ],
+          "content": "假定上面三个条件成立. 因为 $t \\mapsto N_t$ 是右连续不降整数值阶梯函数, 由全概率公式和独立平稳增量性, 对于 $n \\geqslant 0$ 和 $t, s > 0$,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.225,
+            0.418,
+            0.768,
+            0.596
+          ],
+          "content": "\\begin{array}{l} \\mathbf {P} \\left(N _ {t + s} = n\\right) = \\sum_ {k = 0} ^ {n} \\mathbf {P} \\left(N _ {s} = k\\right) \\mathbf {P} \\left(N _ {t + s} = n \\mid N _ {s} = k\\right) \\\\ = \\sum_ {k = 0} ^ {n} \\mathbf {P} \\left(N _ {s} = k\\right) \\mathbf {P} \\left(N _ {t + s} - N _ {s} = n - k \\mid N _ {s} = k\\right) \\\\ = \\sum_ {k = 0} ^ {n} \\mathbf {P} \\left(N _ {s} = k\\right) \\mathbf {P} \\left(N _ {t + s} - N _ {s} = n - k\\right) \\\\ = \\sum_ {k = 0} ^ {n} \\mathbf {P} (N _ {s} = k) \\mathbf {P} (N _ {t} = n - k). \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0065-0080/images/page_64_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.099,
+            0.612,
+            0.21,
+            0.629
+          ],
+          "content": "因此有方程"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.339,
+            0.645,
+            0.89,
+            0.686
+          ],
+          "content": "P _ {n} (t + s) = \\sum_ {k = 0} ^ {n} P _ {n - k} (t) P _ {k} (s). \\tag {2.2.11}",
+          "image_source": "../../raw/pages_0065-0080/images/page_64_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.097,
+            0.702,
+            0.409,
+            0.719
+          ],
+          "content": "基于方程 (2.2.11), 我们可以证明:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.141,
+            0.725,
+            0.801,
+            0.743
+          ],
+          "content": "定理 2.2.4 在前面三个假定条件之下, 存在  $\\lambda > 0$  使对任意 t > 0 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.309,
+            0.762,
+            0.89,
+            0.793
+          ],
+          "content": "P _ {n} (t) = \\frac {(\\lambda t) ^ {n}}{n !} \\mathrm{e} ^ {- \\lambda t}, \\quad n = 0, 1, 2, \\dots . \\tag {2.2.12}",
+          "image_source": "../../raw/pages_0065-0080/images/page_64_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.139,
+            0.806,
+            0.623,
+            0.824
+          ],
+          "content": "证明 第1步. 根据方程(2.2.11), 对 $t > 0, \\delta > 0$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.369,
+            0.844,
+            0.89,
+            0.861
+          ],
+          "content": "P _ {0} (t + \\delta) = P _ {0} (t) P _ {0} (\\delta). \\tag {2.2.13}",
+          "image_source": "../../raw/pages_0065-0080/images/page_64_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.096,
+            0.879,
+            0.689,
+            0.898
+          ],
+          "content": "反复应用上式得 $P_0(nt) = P_0(t)^n$ ，故 $P_0(t / n) = P_0(t)^{1 / n}$ ，进而有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.254,
+            0.916,
+            0.692,
+            0.935
+          ],
+          "content": "P _ {0} (k / n) = P _ {0} (1 / n) ^ {k} = P _ {0} (1) ^ {k / n}, \\quad n \\geqslant 1, k \\geqslant 0.",
+          "image_source": "../../raw/pages_0065-0080/images/page_64_equation_20.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 65,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.752,
+            0.047,
+            0.915,
+            0.062
+          ],
+          "content": "2.2 离散型随机变量"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.935,
+            0.049,
+            0.955,
+            0.06
+          ],
+          "content": "51"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.121,
+            0.101,
+            0.692,
+            0.121
+          ],
+          "content": "由 (2.2.13) 式知 $P_0(t)$ 关于 $t \\geqslant 0$ 单调减, 故得 $P_0(t) = P_0(1)^t$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.125,
+            0.915,
+            0.166
+          ],
+          "content": "第2步. 往证 $P_0(1) > 0$. 若此结论不成立, 则对任何 $t > 0$ 有 $P_0(t) = P_0(1)^t = 0$, 故"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.292,
+            0.185,
+            0.699,
+            0.205
+          ],
+          "content": "\\mathbf {P} (N _ {t} \\geqslant 1) = 1 - \\mathbf {P} (N _ {t} = 0) = 1 - P _ {0} (t) = 1.",
+          "image_source": "../../raw/pages_0065-0080/images/page_65_equation_4.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.12,
+            0.22,
+            0.168,
+            0.238
+          ],
+          "content": "注意"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.308,
+            0.252,
+            0.682,
+            0.295
+          ],
+          "content": "\\{N _ {t} \\geqslant n \\} \\supseteq \\bigcap_ {k = 1} ^ {n} \\{N _ {k t / n} - N _ {(k - 1) t / n} \\geqslant 1 \\}.",
+          "image_source": "../../raw/pages_0065-0080/images/page_65_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.119,
+            0.308,
+            0.423,
+            0.326
+          ],
+          "content": "故由独立增量性和平稳增量性有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.269,
+            0.339,
+            0.756,
+            0.476
+          ],
+          "content": "\\begin{array}{l} \\mathbf {P} (N _ {t} \\geqslant n) \\geqslant \\mathbf {P} \\left(\\bigcap_ {k = 1} ^ {n} \\left\\{N _ {k t / n} - N _ {(k - 1) t / n} \\geqslant 1 \\right\\}\\right) \\\\ = \\prod_ {k = 1} ^ {n} \\mathbf {P} \\left(N _ {k t / n} - N _ {(k - 1) t / n} \\geqslant 1\\right) \\\\ = \\prod_ {k = 1} ^ {n} \\mathbf {P} \\left(N _ {t / n} \\geqslant 1\\right) = \\left[ 1 - P _ {0} (t / n) \\right] ^ {n} = 1. \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0065-0080/images/page_65_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.49,
+            0.912,
+            0.533
+          ],
+          "content": "再由概率的上连续性得 $\\mathbf{P}(N_t = \\infty) = \\lim_{n\\to \\infty}\\mathbf{P}(N_t\\geqslant n) = 1,$ 这与 $N_{t}$ 几乎必然有限的假定矛盾.所以 $P_0(1) > 0$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.537,
+            0.912,
+            0.581
+          ],
+          "content": "第3步. 令 $\\lambda = -\\ln P_0(1)$. 则 $P_0(t) = \\mathrm{e}^{-\\lambda t}$, 即欲证等式 (2.2.12) 对于 $n = 0$ 成立. 设 (2.2.12) 式对 $n - 1$ 成立. 由普通性, 当 $\\delta \\to 0$ 时有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.321,
+            0.594,
+            0.664,
+            0.638
+          ],
+          "content": "\\sum_ {k = 2} ^ {n} P _ {n - k} (t) P _ {k} (\\delta) \\leqslant \\sum_ {k = 2} ^ {\\infty} P _ {k} (\\delta) = o (\\delta),",
+          "image_source": "../../raw/pages_0065-0080/images/page_65_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.651,
+            0.29,
+            0.67
+          ],
+          "content": "故由 (2.2.11) 式得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.285,
+            0.689,
+            0.907,
+            0.707
+          ],
+          "content": "P _ {n} (t + \\delta) = P _ {n} (t) P _ {0} (\\delta) + P _ {n - 1} (t) P _ {1} (\\delta) + o (\\delta). \\tag {2.2.14}",
+          "image_source": "../../raw/pages_0065-0080/images/page_65_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.723,
+            0.29,
+            0.741
+          ],
+          "content": "根据泰勒展开式有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.355,
+            0.758,
+            0.63,
+            0.78
+          ],
+          "content": "P _ {0} (\\delta) = \\mathrm{e} ^ {- \\lambda \\delta} = 1 - \\lambda \\delta + o (\\delta),",
+          "image_source": "../../raw/pages_0065-0080/images/page_65_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.794,
+            0.291,
+            0.812
+          ],
+          "content": "再次应用普通性得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.298,
+            0.826,
+            0.686,
+            0.869
+          ],
+          "content": "P _ {1} (\\delta) = 1 - P _ {0} (\\delta) - \\sum_ {i = 2} ^ {\\infty} P _ {i} (\\delta) = \\lambda \\delta + o (\\delta),",
+          "image_source": "../../raw/pages_0065-0080/images/page_65_equation_17.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.117,
+            0.882,
+            0.289,
+            0.901
+          ],
+          "content": "回到 (2.2.14) 式得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.283,
+            0.918,
+            0.701,
+            0.939
+          ],
+          "content": "P _ {n} (t + \\delta) = P _ {n} (t) [ 1 - \\lambda \\delta ] + P _ {n - 1} (t) \\lambda \\delta + o (\\delta),",
+          "image_source": "../../raw/pages_0065-0080/images/page_65_equation_19.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 66,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.05,
+            0.047,
+            0.07,
+            0.058
+          ],
+          "content": "52"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.091,
+            0.045,
+            0.298,
+            0.059
+          ],
+          "content": "第二章 随机变量及其分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.091,
+            0.102,
+            0.159,
+            0.119
+          ],
+          "content": "从而有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.248,
+            0.129,
+            0.686,
+            0.164
+          ],
+          "content": "\\frac {[ P _ {n} (t + \\delta) - P _ {n} (t) ]}{\\delta} + \\lambda P _ {n} (t) = \\lambda P _ {n - 1} (t) + o (1).",
+          "image_source": "../../raw/pages_0065-0080/images/page_66_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.091,
+            0.175,
+            0.359,
+            0.193
+          ],
+          "content": "令 $\\delta \\to 0$ ，并利用归纳假设得"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.322,
+            0.208,
+            0.609,
+            0.246
+          ],
+          "content": "P _ {n} ^ {\\prime} (t) + \\lambda P _ {n} (t) = \\frac {\\lambda^ {n} t ^ {n - 1}}{(n - 1) !} \\mathrm{e} ^ {- \\lambda t}.",
+          "image_source": "../../raw/pages_0065-0080/images/page_66_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.091,
+            0.26,
+            0.566,
+            0.279
+          ],
+          "content": "注意对 $n \\geqslant 1$ 有 $P_{n}(0) = 0$, 求解上述微分方程得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.377,
+            0.293,
+            0.554,
+            0.327
+          ],
+          "content": "P _ {n} (t) = \\frac {(\\lambda t) ^ {n}}{n !} \\mathrm{e} ^ {- \\lambda t}.",
+          "image_source": "../../raw/pages_0065-0080/images/page_66_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.091,
+            0.339,
+            0.545,
+            0.357
+          ],
+          "content": "根据数学归纳法知 (2.2.12) 式对任意 $n \\geqslant 0$ 成立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.089,
+            0.363,
+            0.884,
+            0.404
+          ],
+          "content": "根据定理2.2.4, 对于任何 $\\delta > 0$ 有 $P_0(\\delta) = \\mathrm{e}^{-\\lambda \\delta}$ 和 $P_1(\\delta) = \\lambda \\delta \\mathrm{e}^{-\\lambda \\delta}$, 因而对 $t > 0$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.19,
+            0.414,
+            0.738,
+            0.45
+          ],
+          "content": "\\mathbf {P} (N _ {t} - N _ {t - \\delta} = 1 | N _ {t} - N _ {t - \\delta} \\geqslant 1) = \\frac {\\lambda \\delta \\mathrm{e} ^ {- \\lambda \\delta}}{1 - \\mathrm{e} ^ {- \\lambda \\delta}} \\rightarrow 1, \\quad \\delta \\rightarrow 0.",
+          "image_source": "../../raw/pages_0065-0080/images/page_66_equation_10.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.091,
+            0.46,
+            0.759,
+            0.478
+          ],
+          "content": "这说明, 若在某时刻 $t > 0$ 有粒子到达, 则到达的粒子数几乎必然为 1 个."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.484,
+            0.614,
+            0.503
+          ],
+          "content": "基于定理 2.2.4 的结论, 我们自然地给出下面的定义."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.091,
+            0.508,
+            0.884,
+            0.55
+          ],
+          "content": "定义2.2.1 称随机变量族 $(N_{t}:t\\geqslant 0)$ 是参数为 $\\lambda \\geqslant 0$ 的泊松过程, 是指当 $\\omega \\in \\Omega$ 固定后 $t\\mapsto N_t(\\omega)$ 是右连续不降整数值阶梯函数, 且下面两个性质成立:"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.131,
+            0.556,
+            0.744,
+            0.575
+          ],
+          "content": "(i) 对任何 $s, t \\geqslant 0$, 增量 $N_{s + t} - N_s$ 服从参数为 $\\alpha t$ 的泊松分布, 即"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.24,
+            0.589,
+            0.881,
+            0.624
+          ],
+          "content": "\\mathbf {P} (N _ {s + t} - N _ {s} = k) = \\frac {\\lambda^ {k} t ^ {k}}{k !} \\mathrm{e} ^ {- \\lambda t}, \\quad k = 0, 1, 2, \\dots ; \\tag {2.2.15}",
+          "image_source": "../../raw/pages_0065-0080/images/page_66_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.089,
+            0.636,
+            0.883,
+            0.679
+          ],
+          "content": "(ii) 对任何 $0 = t_0 < t_1 < \\cdots < t_n$ 及 $k_1, k_2, \\cdots, k_n \\geqslant 0$, 随机事件 $\\{N_{t_1} = k_1\\}, \\{N_{t_2} - N_{t_1} = k_2\\}, \\cdots, \\{N_{t_n} - N_{t_{n-1}} = k_n\\}$ 相互独立."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.088,
+            0.683,
+            0.884,
+            0.774
+          ],
+          "content": "泊松过程由法国数学家泊松 (Siméon-Denis Poisson, 1781—1840) 提出. 该模型在应用中经常出现. 例如, 其取值 $N_{t}$ 常被视为某个服务系统在 $t \\geqslant 0$ 时刻前接到的服务请求的次数, 而过程的第 $n$ 次跳跃发生的时间 $S_{n}$ 可理解为第 $n$ 次服务请求的时刻. 关于泊松过程的构造和性质, 我们将在本书下册做更详细的讨论."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.13,
+            0.801,
+            0.21,
+            0.821
+          ],
+          "level": 2,
+          "content": "练习题"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.085,
+            0.847,
+            0.88,
+            0.935
+          ],
+          "sub_type": "text",
+          "content": "1. 设某市不同路口的红绿灯独立工作, 每个路口的红灯、绿灯出现的时间相同. 用 X 表示一辆汽车首次遇到红灯时已经经过的路口数. 求 X 的概率分布.\n2. 用 $\\xi$ 表示成功概率为 $p (0 \\leqslant p \\leqslant 1)$ 的伯努利实验中第一个游程（即连续成功或连续失败）的长度. 求 $\\xi$ 的分布."
+        }
+      ]
+    },
+    {
+      "page_idx": 67,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.709,
+            0.048,
+            0.907,
+            0.063
+          ],
+          "content": "2.3 绝对连续型随机变量"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.927,
+            0.05,
+            0.948,
+            0.062
+          ],
+          "content": "53"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.109,
+            0.103,
+            0.906,
+            0.169
+          ],
+          "content": "3. 连续射击某个目标, 直至第一次击中目标或者射击次数达到 5 次就停止. 假定一次射击击中目标的概率为 $p (0 \\leqslant p \\leqslant 1)$ 且各次射击结果独立. 用 $X$ 表示停止时的射击次数. 求 $X$ 的概率分布."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.109,
+            0.175,
+            0.906,
+            0.241
+          ],
+          "content": "4. 某种昆虫在单位时间内产卵的个数 $\\xi$ 服从泊松分布 $P(\\lambda)$, 其中每个卵孵化出幼虫的概率为 $p$, 各个卵是否孵化相互独立, 并且虫子产卵的个数和产出卵是否孵化相互独立. 以 $\\eta$ 表示单位时间内幼虫的个数. 求 $\\eta$ 的概率分布."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.109,
+            0.246,
+            0.904,
+            0.287
+          ],
+          "content": "5. 设随机变量 $X$ 服从泊松分布 $P(\\lambda)$. 记 $p = \\mathbf{P}(X$ 为奇数) 和 $q = \\mathbf{P}(X$ 为偶数). 证明:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.199,
+            0.296,
+            0.771,
+            0.329
+          ],
+          "content": "p = \\mathrm{e} ^ {- \\lambda} \\sinh \\lambda = \\frac {1}{2} (1 - \\mathrm{e} ^ {- 2 \\lambda}), \\quad q = \\mathrm{e} ^ {- \\lambda} \\cosh \\lambda = \\frac {1}{2} (1 + \\mathrm{e} ^ {- 2 \\lambda}).",
+          "image_source": "../../raw/pages_0065-0080/images/page_67_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.109,
+            0.336,
+            0.46,
+            0.355
+          ],
+          "content": "提示: 注意  $q + p = 1$  和  $q - p = e^{-2\\lambda}$ ."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.109,
+            0.408,
+            0.455,
+            0.431
+          ],
+          "level": 2,
+          "content": "2.3 绝对连续型随机变量"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.109,
+            0.479,
+            0.904,
+            0.52
+          ],
+          "content": "称随机变量 $\\xi$ 是绝对连续型的, 是指它具有绝对连续型概率分布函数 $F$, 即 $F$ 可以表示为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.373,
+            0.529,
+            0.9,
+            0.562
+          ],
+          "content": "F (x) = \\int_ {- \\infty} ^ {x} p (u) \\mathrm{d} u, \\quad x \\in \\mathbb {R}, \\tag {2.3.1}",
+          "image_source": "../../raw/pages_0065-0080/images/page_67_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.109,
+            0.574,
+            0.655,
+            0.593
+          ],
+          "content": "其中 $p$ 为 $F$ 的密度函数, 它是 $\\mathbb{R}$ 上的非负可积函数且满足"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.408,
+            0.599,
+            0.564,
+            0.637
+          ],
+          "content": "\\int_ {- \\infty} ^ {\\infty} p (u) \\mathrm{d} u = 1.",
+          "image_source": "../../raw/pages_0065-0080/images/page_67_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.109,
+            0.647,
+            0.518,
+            0.666
+          ],
+          "content": "我们也将 $p$ 称为 $\\xi$ 的分布密度或密度. 注意"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.3,
+            0.677,
+            0.667,
+            0.716
+          ],
+          "content": "\\mathbf {P} (a \\leqslant \\xi \\leqslant b) = \\int_ {a} ^ {b} p (u) \\mathrm{d} u, \\quad a \\leqslant b \\in \\mathbb {R}.",
+          "image_source": "../../raw/pages_0065-0080/images/page_67_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.726,
+            0.902,
+            0.768
+          ],
+          "content": "显然 $\\xi$ 取任何一个固定值 $a \\in \\mathbb{R}$ 的概率为零. 特别地, 若密度函数 $p$ 在点 $x \\in \\mathbb{R}$ 连续, 则当 $\\delta \\to 0$ 时,"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.212,
+            0.778,
+            0.754,
+            0.821
+          ],
+          "content": "\\mathbf {P} (x - \\delta / 2 \\leqslant \\xi \\leqslant x + \\delta / 2) = \\int_ {x - \\delta / 2} ^ {x + \\delta / 2} p (u) \\mathrm{d} u = p (x) \\delta + o (\\delta).",
+          "image_source": "../../raw/pages_0065-0080/images/page_67_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.831,
+            0.582,
+            0.849
+          ],
+          "content": "可见  $p(x)$  的值反映了  $\\xi$  落入 x 附近的概率的大小."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.855,
+            0.902,
+            0.895
+          ],
+          "content": "若有集合 $E \\in \\mathcal{B}$ 使当 $x \\in E^c$ 有 $p(x) = 0$, 也说 $\\xi$ 是集合 $E$ 上的绝对连续型随机变量. 此时"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.28,
+            0.904,
+            0.686,
+            0.943
+          ],
+          "content": "\\mathbf {P} (a \\leqslant \\xi \\leqslant b) = \\int_ {[ a, b ] \\cap E} p (u) \\mathrm{d} u, \\quad a \\leqslant b \\in \\mathbb {R}.",
+          "image_source": "../../raw/pages_0065-0080/images/page_67_equation_18.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 68,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.046,
+            0.049,
+            0.067,
+            0.06
+          ],
+          "content": "54"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.087,
+            0.047,
+            0.294,
+            0.061
+          ],
+          "content": "第二章 随机变量及其分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.086,
+            0.104,
+            0.882,
+            0.17
+          ],
+          "content": "对于绝对连续型随机变量的概率问题, 通常可以借助定积分的理论进行处理. 对于包括绝对连续型随机变量在内的一般随机变量的严格构造, 我们将在下节进行系统的讨论. 本节下面介绍几种常见的绝对连续型分布."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.127,
+            0.198,
+            0.317,
+            0.218
+          ],
+          "level": 2,
+          "content": "2.3.1 均匀分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.127,
+            0.244,
+            0.453,
+            0.262
+          ],
+          "content": "定义 2.3.1 给定实数 a < b, 定义"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.305,
+            0.279,
+            0.615,
+            0.341
+          ],
+          "content": "p (x) = \\left\\{ \\begin{array}{l l} { \\frac {1}{b - a},} & {a <   x <   b,} \\\\ {0,} & {x \\leqslant a \\text {或} x \\geqslant b.} \\end{array} \\right.",
+          "image_source": "../../raw/pages_0065-0080/images/page_68_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.088,
+            0.357,
+            0.81,
+            0.377
+          ],
+          "content": "以此函数为密度的绝对连续型分布称为区间 $(a,b)$ 上的均匀分布，记作 $U(a,b)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.086,
+            0.381,
+            0.879,
+            0.423
+          ],
+          "content": "均匀分布 $U(a,b)$ 描述的就是区间 $(a,b)$ 上的几何概率模型. 由(2.3.1)式得到均匀分布 $U(a,b)$ 的分布函数为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.325,
+            0.442,
+            0.594,
+            0.528
+          ],
+          "content": "F (x) = \\left\\{ \\begin{array}{l l} 0, & x <   a, \\\\ \\frac {x - a}{b - a}, & a \\leqslant x <   b, \\\\ 1, & x \\geqslant b. \\end{array} \\right.",
+          "image_source": "../../raw/pages_0065-0080/images/page_68_equation_8.jpg"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.127,
+            0.552,
+            0.317,
+            0.572
+          ],
+          "level": 2,
+          "content": "2.3.2 指数分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.085,
+            0.597,
+            0.879,
+            0.64
+          ],
+          "content": "假设 $\\{N_{t}:t\\geqslant 0\\}$ 是以 $\\lambda >0$ 为参数的泊松过程，且有 $N_0 = 0$ ，它描述了某个随机粒子流的粒子数的变化过程.令 $\\tau$ 为第一个粒子的到达时间.显然 $\\tau$ 的分布函数 $F$ 满足"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.224,
+            0.659,
+            0.697,
+            0.679
+          ],
+          "content": "F (x) = \\mathbf {P} (\\tau \\leqslant x) = \\mathbf {P} (N _ {x} \\geqslant 1) = 1 - \\mathrm{e} ^ {- \\lambda x}, \\quad x > 0.",
+          "image_source": "../../raw/pages_0065-0080/images/page_68_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.085,
+            0.697,
+            0.371,
+            0.715
+          ],
+          "content": "对上式求导得到 $\\tau$ 的密度函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.352,
+            0.735,
+            0.877,
+            0.755
+          ],
+          "content": "p (x) = \\lambda \\mathrm{e} ^ {- \\lambda x}, \\quad x > 0. \\tag {2.3.2}",
+          "image_source": "../../raw/pages_0065-0080/images/page_68_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.083,
+            0.773,
+            0.679,
+            0.792
+          ],
+          "content": "称以 (2.3.2) 式为密度的绝对连续型分布为指数分布, 记作 $E(\\lambda)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.796,
+            0.879,
+            0.838
+          ],
+          "content": "定理2.3.1 取值于非负实数的随机变量 $\\tau$ 服从指数分布当且仅当对任意的 $t \\geqslant 0, s \\geqslant 0$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.316,
+            0.859,
+            0.877,
+            0.879
+          ],
+          "content": "\\mathbf {P} (\\tau > s + t | \\tau > t) = \\mathbf {P} (\\tau > s). \\tag {2.3.3}",
+          "image_source": "../../raw/pages_0065-0080/images/page_68_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.082,
+            0.896,
+            0.879,
+            0.938
+          ],
+          "content": "证明 “$\\Rightarrow$” 假设 $\\tau$ 服从指数分布, 则对任意的 $t \\geqslant 0$ 有 $\\mathbf{P}(\\tau > t) = \\mathrm{e}^{-\\lambda t}$, 故 (2.3.3) 式成立."
+        }
+      ]
+    },
+    {
+      "page_idx": 69,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.705,
+            0.048,
+            0.902,
+            0.062
+          ],
+          "content": "2.3 绝对连续型随机变量"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.923,
+            0.05,
+            0.944,
+            0.061
+          ],
+          "content": "55"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.103,
+            0.903,
+            0.147
+          ],
+          "content": "“$\\Leftarrow$”假设(2.3.3)式成立.记 $f(s) = \\mathbf{P}(\\tau >s)$, 则 $s\\mapsto f(s)$ 单调减.根据(2.3.3)式得 $f(s + t) = f(s)f(t)$, 故有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.251,
+            0.163,
+            0.714,
+            0.185
+          ],
+          "content": "f (n s) = f (s) ^ {n}, f (s) = f (s / n) ^ {n}, f (s / n) = f (s) ^ {1 / n}.",
+          "image_source": "../../raw/pages_0065-0080/images/page_69_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.201,
+            0.414,
+            0.22
+          ],
+          "content": "这样, 对任何非负有理数 $m / n$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.34,
+            0.238,
+            0.626,
+            0.259
+          ],
+          "content": "f (m / n) = f (1 / n) ^ {m} = f (1) ^ {m / n}.",
+          "image_source": "../../raw/pages_0065-0080/images/page_69_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.275,
+            0.492,
+            0.294
+          ],
+          "content": "再利用 $f$ 的单调性, 对任何非负实数 $s$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.339,
+            0.31,
+            0.629,
+            0.332
+          ],
+          "content": "f (s) = f (1) ^ {s} = \\mathrm{e} ^ {s \\ln f (1)} = \\mathrm{e} ^ {- \\lambda s},",
+          "image_source": "../../raw/pages_0065-0080/images/page_69_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.349,
+            0.322,
+            0.368
+          ],
+          "content": "其中  $\\lambda = -\\ln f(1) \\geqslant 0.$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.373,
+            0.901,
+            0.416
+          ],
+          "content": "由 (2.3.3) 式表达的性质称为指数分布的无记忆性. 该分布经常被用作寿命的模型, 而无记忆性可以解释为 “永远年轻”."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.148,
+            0.443,
+            0.338,
+            0.463
+          ],
+          "level": 2,
+          "content": "2.3.3 伽马分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.488,
+            0.901,
+            0.531
+          ],
+          "content": "假设 $\\{N_{t}:t\\geqslant 0\\}$ 是泊松过程, 考虑第 $n$ 个粒子的到达时间 $S_{n}$. 显然 $S_{n}$ 的分布函数 $F$ 满足"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.223,
+            0.544,
+            0.744,
+            0.588
+          ],
+          "content": "F (t) = \\mathbf {P} (S _ {n} \\leqslant t) = \\mathbf {P} (N _ {t} \\geqslant n) = \\sum_ {k = n} ^ {\\infty} \\frac {(\\lambda t) ^ {k}}{k !} \\mathrm{e} ^ {- \\lambda t}, \\quad t > 0,",
+          "image_source": "../../raw/pages_0065-0080/images/page_69_equation_12.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.603,
+            0.196,
+            0.621
+          ],
+          "content": "求导得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.283,
+            0.634,
+            0.682,
+            0.679
+          ],
+          "content": "F ^ {\\prime} (t) = \\sum_ {k = n} ^ {\\infty} \\frac {\\lambda^ {k} t ^ {k - 1}}{(k - 1) !} \\mathrm{e} ^ {- \\lambda t} - \\sum_ {k = n} ^ {\\infty} \\frac {\\lambda^ {k + 1} t ^ {k}}{k !} \\mathrm{e} ^ {- \\lambda t}.",
+          "image_source": "../../raw/pages_0065-0080/images/page_69_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.693,
+            0.345,
+            0.712
+          ],
+          "content": "所以上述分布有密度函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.349,
+            0.721,
+            0.614,
+            0.76
+          ],
+          "content": "p (t) = \\frac {\\lambda^ {n} t ^ {n - 1}}{(n - 1) !} \\mathrm{e} ^ {- \\lambda t}, \\quad t > 0.",
+          "image_source": "../../raw/pages_0065-0080/images/page_69_equation_16.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.773,
+            0.901,
+            0.816
+          ],
+          "content": "上面的观察导出一类重要的绝对连续型概率分布. 我们先来回忆伽马 (Gamma) 函数的定义"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.334,
+            0.826,
+            0.63,
+            0.864
+          ],
+          "content": "\\Gamma (r) = \\int_ {0} ^ {\\infty} x ^ {r - 1} \\mathrm{e} ^ {- x} \\mathrm{d} x, \\quad r > 0.",
+          "image_source": "../../raw/pages_0065-0080/images/page_69_equation_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.876,
+            0.301,
+            0.895
+          ],
+          "content": "所以对任何 $\\lambda > 0$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.253,
+            0.904,
+            0.712,
+            0.943
+          ],
+          "content": "\\frac {\\lambda^ {r}}{\\Gamma (r)} \\int_ {0} ^ {\\infty} x ^ {r - 1} \\mathrm{e} ^ {- \\lambda x} \\mathrm{d} x = \\frac {1}{\\Gamma (r)} \\int_ {0} ^ {\\infty} y ^ {r - 1} \\mathrm{e} ^ {- y} \\mathrm{d} y = 1.",
+          "image_source": "../../raw/pages_0065-0080/images/page_69_equation_20.jpg"
+        }
+      ]
+    },
+    {
+      "page_idx": 70,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.065,
+            0.048,
+            0.085,
+            0.059
+          ],
+          "content": "56"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.106,
+            0.046,
+            0.313,
+            0.06
+          ],
+          "content": "第二章 随机变量及其分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.103,
+            0.899,
+            0.145
+          ],
+          "content": "定义2.3.2 称一个绝对连续型概率分布为以 $\\lambda, r > 0$ 为参数的伽马分布，并记作 $\\Gamma(\\lambda, r)$，是指它有密度函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.339,
+            0.158,
+            0.896,
+            0.191
+          ],
+          "content": "p (x) = \\frac {\\lambda^ {r}}{\\Gamma (r)} x ^ {r - 1} \\mathrm{e} ^ {- \\lambda x}, \\quad x > 0. \\tag {2.3.4}",
+          "image_source": "../../raw/pages_0065-0080/images/page_70_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.148,
+            0.206,
+            0.542,
+            0.224
+          ],
+          "content": "例2.3.1 伽马函数具有如下的基本性质:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.36,
+            0.244,
+            0.601,
+            0.264
+          ],
+          "content": "\\Gamma (r + 1) = r \\Gamma (r), \\quad r > 0.",
+          "image_source": "../../raw/pages_0065-0080/images/page_70_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.281,
+            0.368,
+            0.3
+          ],
+          "content": "特别地, 若 $n \\geqslant 1$ 为整数, 则"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.347,
+            0.319,
+            0.614,
+            0.338
+          ],
+          "content": "\\Gamma (n + 1) = n \\Gamma (n) = \\dots = n!.",
+          "image_source": "../../raw/pages_0065-0080/images/page_70_equation_7.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.107,
+            0.355,
+            0.174,
+            0.373
+          ],
+          "content": "另外有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.244,
+            0.392,
+            0.715,
+            0.43
+          ],
+          "content": "\\Gamma \\Big (\\frac {1}{2} \\Big) = \\int_ {0} ^ {\\infty} x ^ {- 1 / 2} \\mathrm{e} ^ {- x} \\mathrm{d} x = \\sqrt {2} \\int_ {0} ^ {\\infty} \\mathrm{e} ^ {- t ^ {2} / 2} \\mathrm{d} t = \\sqrt {\\pi}.",
+          "image_source": "../../raw/pages_0065-0080/images/page_70_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.443,
+            0.899,
+            0.485
+          ],
+          "content": "显然, 指数分布 $E(\\lambda)$ 是伽马分布 $\\Gamma(\\lambda, r)$ 当 $r = 1$ 时的特例. 事实上, 指数分布与伽马分布的关系类似于几何分布与帕斯卡分布的关系."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.146,
+            0.513,
+            0.336,
+            0.533
+          ],
+          "level": 2,
+          "content": "2.3.4 正态分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.558,
+            0.522,
+            0.577
+          ],
+          "content": "给定常数 $a \\in \\mathbb{R}$ 和 $\\sigma > 0$, 我们定义函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.321,
+            0.588,
+            0.639,
+            0.624
+          ],
+          "content": "\\phi_ {a, \\sigma} (x) = \\frac {1}{\\sigma \\sqrt {2 \\pi}} \\mathrm{e} ^ {- \\frac {(x - a) ^ {2}}{2 \\sigma^ {2}}}, \\quad x \\in \\mathbb {R}.",
+          "image_source": "../../raw/pages_0065-0080/images/page_70_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.638,
+            0.392,
+            0.656
+          ],
+          "content": "利用广义积分的计算可以证明:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.389,
+            0.676,
+            0.572,
+            0.713
+          ],
+          "content": "\\int_ {- \\infty} ^ {\\infty} \\phi_ {a, \\sigma} (x) \\mathrm{d} x = 1.",
+          "image_source": "../../raw/pages_0065-0080/images/page_70_equation_15.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.727,
+            0.898,
+            0.793
+          ],
+          "content": "定义2.3.3 对于 $a \\in \\mathbb{R}$ 和 $\\sigma > 0$, 以 $\\phi_{a, \\sigma}(x)$ 为密度函数的绝对连续型分布称为参数为 $(a, \\sigma^2)$ 的正态分布或高斯 (Gauss) 分布, 记作 $N(a, \\sigma^2)$. 称 $N(0,1)$ 为标准正态分布."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.798,
+            0.898,
+            0.841
+          ],
+          "content": "为了叙述上的方便, 人们也经常把分布函数 $F(x) \\equiv 1_{\\{x \\geqslant a\\}}$ 确定的离散型概率分布解释为对应于 $\\sigma = 0$ 的正态分布, 即退化正态分布."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.146,
+            0.847,
+            0.632,
+            0.866
+          ],
+          "content": "不难发现, 正态分布的密度函数  $\\phi_{a,\\sigma}(x)$  有如下性质:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.146,
+            0.871,
+            0.816,
+            0.936
+          ],
+          "sub_type": "text",
+          "content": "- 此分布关于 $x = a$ 对称, 即有 $\\phi_{a,\\sigma}(a - x) = \\phi_{a,\\sigma}(a + x), x \\in \\mathbb{R}$.\n- 函数 $\\phi_{a,\\sigma}$ 最大值在 $x = a$ 取到, 且 $\\max \\phi_{a,\\sigma}(x) = 1 / (\\sigma \\sqrt{2\\pi})$.\n- 数 $\\sigma^2$ 越大密度函数的图像越平缓; 数 $\\sigma^2$ 越小密度函数的图像越陡峭."
+        }
+      ]
+    },
+    {
+      "page_idx": 71,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.709,
+            0.047,
+            0.907,
+            0.062
+          ],
+          "content": "2.3 绝对连续型随机变量"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.926,
+            0.049,
+            0.948,
+            0.061
+          ],
+          "content": "57"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.102,
+            0.442,
+            0.121
+          ],
+          "content": "定义正态分布 $N(a,\\sigma^2)$ 的分布函数"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.329,
+            0.139,
+            0.901,
+            0.173
+          ],
+          "content": "\\varPhi_ {a, \\sigma} (x) = \\int_ {- \\infty} ^ {x} \\phi_ {a, \\sigma} (y) \\mathrm{d} y, \\quad x \\in \\mathbb {R}. \\tag {2.3.5}",
+          "image_source": "../../raw/pages_0065-0080/images/page_71_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.192,
+            0.906,
+            0.234
+          ],
+          "content": "特别地, 我们分别用 $\\phi := \\phi_{0,1}$ 和 $\\Phi := \\Phi_{0,1}$ 表示标准正态分布 $N(0,1)$ 的密度函数和分布函数. 易见正态分布函数具有如下性质:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.251,
+            0.248,
+            0.724,
+            0.281
+          ],
+          "content": "\\varPhi_ {a, \\sigma} (x) = \\varPhi \\Big (\\frac {x - a}{\\sigma} \\Big), \\quad \\varPhi (x) + \\varPhi (- x) = 1, \\quad x \\in \\mathbb {R}.",
+          "image_source": "../../raw/pages_0065-0080/images/page_71_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.293,
+            0.906,
+            0.335
+          ],
+          "content": "一般地, 受大量微小因素叠加影响的随机变量服从正态分布, 我们将在第五章给出这个说法的严格数学解释."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.109,
+            0.34,
+            0.906,
+            0.382
+          ],
+          "content": "例 2.3.2 (3σ 原则) 设随机变量  $\\xi$  服从正态分布  $N(a, \\sigma^{2})$ . 由 (2.3.5) 式计算可以得到"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.274,
+            0.406,
+            0.757,
+            0.449
+          ],
+          "content": "\\begin{array}{l} \\mathbf {P} (| \\xi - a | \\leqslant \\sigma) = 0. 6 8 2 6, \\quad \\mathbf {P} (| \\xi - a | \\leqslant 2 \\sigma) = 0. 9 5 4 4, \\\\ \\mathbf {P} (| \\xi - a | \\leqslant 3 \\sigma) = 0. 9 9 7 4. \\\\ \\end{array}",
+          "image_source": "../../raw/pages_0065-0080/images/page_71_equation_8.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.47,
+            0.424,
+            0.488
+          ],
+          "content": "可见  $\\xi$  的取值主要集中于 a 附近."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.109,
+            0.494,
+            0.906,
+            0.536
+          ],
+          "content": "例2.3.3 注意标准正态分布 $N(0,1)$ 的密度函数满足 $\\phi'(x) = -x\\phi(x)$. 设随机变量 $\\xi$ 服从分布 $N(0,1)$. 根据分部积分公式, 对任何 $x > 0$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.17,
+            0.551,
+            0.801,
+            0.59
+          ],
+          "content": "\\mathbf {P} (\\xi \\geqslant x) = \\int_ {x} ^ {\\infty} \\phi (z) \\mathrm{d} z = \\frac {\\phi (x)}{x} - \\int_ {x} ^ {\\infty} \\frac {\\phi (z) \\mathrm{d} z}{z ^ {2}} \\geqslant \\frac {\\phi (x)}{x} - \\frac {1}{x ^ {2}} \\mathbf {P} (\\xi \\geqslant x).",
+          "image_source": "../../raw/pages_0065-0080/images/page_71_equation_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.109,
+            0.605,
+            0.178,
+            0.622
+          ],
+          "content": "所以有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.395,
+            0.635,
+            0.576,
+            0.671
+          ],
+          "content": "\\mathbf {P} (\\xi \\geqslant x) \\geqslant \\frac {x \\phi (x)}{1 + x ^ {2}}.",
+          "image_source": "../../raw/pages_0065-0080/images/page_71_equation_13.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.109,
+            0.682,
+            0.617,
+            0.701
+          ],
+          "content": "此式给出了概率 $\\mathbf{P}(\\xi \\geqslant x)$ 的一个非常有用的下界估计."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.108,
+            0.707,
+            0.906,
+            0.798
+          ],
+          "content": "正态分布是对数学、统计学、物理及工程等领域都非常重要的一种概率分布. 该分布最早由法国裔英国籍的数学家棣莫弗 (Abraham de Moivre, 1667—1754) 在求二项分布的渐近公式中得到. 德国数学家高斯 (Carolus Fridericus Gauss, 1777—1855) 在研究测量误差时从另一个角度导出了正态分布, 并系统地讨论了它的性质."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.149,
+            0.825,
+            0.233,
+            0.845
+          ],
+          "level": 2,
+          "content": "练习题"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.106,
+            0.869,
+            0.903,
+            0.938
+          ],
+          "sub_type": "text",
+          "content": "1. 设 $\\xi$ 为绝对连续型随机变量. 证明对任意的 $a \\in \\mathbb{R}$ 有 $\\mathbf{P}(\\xi = a) = 0$.\n2. 设 $f, g$ 都是 $\\mathbb{R}$ 上的概率分布密度函数, 而 $p, q \\in [0,1]$ 满足 $p + q = 1$. 证明 $pf + qg$ 是 $\\mathbb{R}$ 上的概率分布密度函数."
+        }
+      ]
+    },
+    {
+      "page_idx": 72,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.048,
+            0.048,
+            0.07,
+            0.06
+          ],
+          "content": "58"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.089,
+            0.047,
+            0.297,
+            0.061
+          ],
+          "content": "第二章 随机变量及其分布"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.104,
+            0.584,
+            0.122
+          ],
+          "content": "3. 设绝对连续型随机变量 $X$ 的密度函数 $p$ 满足"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.334,
+            0.141,
+            0.593,
+            0.227
+          ],
+          "content": "p (x) = \\left\\{ \\begin{array}{l l} 2 a x, & 0 \\leqslant x <   1, \\\\ 2 - x, & 1 \\leqslant x <   2, \\\\ 0, & \\text {其他.} \\end{array} \\right.",
+          "image_source": "../../raw/pages_0065-0080/images/page_72_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.089,
+            0.244,
+            0.364,
+            0.264
+          ],
+          "content": "求常数 $a$ 和概率 $\\mathbf{P}(X < 3 / 2)$."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.085,
+            0.269,
+            0.88,
+            0.383
+          ],
+          "sub_type": "text",
+          "content": "4. 设 $\\mathbb{R}$ 上的绝对连续型随机变量 $\\xi$ 有密度函数 $f(x) = \\mathrm{e}^{-x - \\mathrm{e}^{-x}}$. 求 $\\xi$ 的分布函数 $F$ (称为极值分布).\n5. 设随机变量 $\\xi$ 服从标准正态分布 $N(0,1)$. 令 $X = \\sigma \\xi + a$, 其中 $\\sigma \\neq 0$ 和 $a$ 为常数. 证明 $X$ 服从正态分布 $N(a, \\sigma^2)$.\n6. 设随机变量  $\\xi$  服从指数分布  $E(\\lambda)$ . 求  $\\eta = \\lfloor \\xi \\rfloor + 1$  的分布."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.088,
+            0.437,
+            0.522,
+            0.46
+          ],
+          "level": 2,
+          "content": "2.4 概率分布函数的实现与分解"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.088,
+            0.508,
+            0.882,
+            0.575
+          ],
+          "content": "本节讨论概率分布函数的两个基本问题, 即可实现性和分解定理. 在命题 2.2.1 中我们给出了离散型随机变量的构造. 那么, 任给 R 上的概率分布函数 F, 是否必然存在以其为分布函数的随机变量  $\\xi$  呢? 如果存在, 我们就称  $\\xi$  为 F 的一个实现."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.088,
+            0.58,
+            0.882,
+            0.646
+          ],
+          "content": "命题2.4.1 取 $\\Omega = (0,1)$, 令 $\\mathcal{F} = (0,1) \\cap \\mathcal{B} = \\{(0,1) \\cap B : B \\in \\mathcal{B}\\}$, 再令 $\\mathbf{P}$ 为 $(\\Omega, \\mathcal{F})$ 上的勒贝格测度. 对于 $\\omega \\in \\Omega$ 令 $\\eta(\\omega) = \\omega$. 则 $(\\Omega, \\mathcal{F}, \\mathbf{P})$ 是概率空间, 而 $\\eta$ 是服从均匀分布 $U(0,1)$ 的随机变量."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.132,
+            0.652,
+            0.514,
+            0.671
+          ],
+          "content": "上面命题的证明很简单, 请大家自行完成."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.088,
+            0.676,
+            0.882,
+            0.719
+          ],
+          "content": "例2.4.1 设随机变量 $\\eta$ 服从均匀分布 $U(0,1)$. 对实数 $a < b$, 令 $\\xi = a + (b - a)\\eta$. 则 $a < \\xi < b$ 且有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.202,
+            0.734,
+            0.724,
+            0.766
+          ],
+          "content": "F _ {\\xi} (x) = \\mathbf {P} (\\xi \\leqslant x) = \\mathbf {P} \\Big (\\eta \\leqslant \\frac {x - a}{b - a} \\Big) = \\frac {x - a}{b - a}, \\quad a <   x <   b.",
+          "image_source": "../../raw/pages_0065-0080/images/page_72_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.088,
+            0.778,
+            0.336,
+            0.797
+          ],
+          "content": "故 $\\xi$ 服从均匀分布 $U(a,b)$"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.088,
+            0.803,
+            0.882,
+            0.845
+          ],
+          "content": "上例启发我们, 从服从均匀分布 $U(0,1)$ 的随机变量出发, 构造具有一般分布函数的随机变量. 为此需要用到不降函数的广义逆."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.128,
+            0.873,
+            0.42,
+            0.894
+          ],
+          "level": 2,
+          "content": "2.4.1 不降函数的广义逆"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.129,
+            0.919,
+            0.882,
+            0.939
+          ],
+          "content": "给定非空开区间 $(a,b)\\subseteq \\mathbb{R}$ 上的不降函数 $G$ ，令 $\\alpha = G(a+)$ 和 $\\beta = G(b-)$ .若区间"
+        }
+      ]
+    },
+    {
+      "page_idx": 73,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.652,
+            0.048,
+            0.902,
+            0.064
+          ],
+          "content": "2.4 概率分布函数的实现与分解"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.921,
+            0.05,
+            0.943,
+            0.063
+          ],
+          "content": "59"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.104,
+            0.245,
+            0.123
+          ],
+          "content": "$(\\alpha,\\beta)$  非空, 令"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.253,
+            0.142,
+            0.9,
+            0.163
+          ],
+          "content": "G ^ {- 1} (y) = \\inf \\{x \\in (a, b): y \\leqslant G (x) \\}, \\quad \\alpha <   y <   \\beta . \\tag {2.4.1}",
+          "image_source": "../../raw/pages_0065-0080/images/page_73_equation_3.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.103,
+            0.18,
+            0.324,
+            0.198
+          ],
+          "content": "称 $G^{-1}$ 为 $G$ 的广义逆."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.104,
+            0.204,
+            0.9,
+            0.246
+          ],
+          "content": "命题2.4.2 设 $F$ 为 $\\mathbb{R}$ 上的右连续不降函数且满足 $F(-\\infty) = 0$ 和 $F(\\infty) = 1$. 则如下性质成立:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.1,
+            0.251,
+            0.902,
+            0.466
+          ],
+          "sub_type": "text",
+          "content": "(1) 对任何  $y \\in (0,1)$  有  $F(F^{-1}(y)) \\geqslant y;$\n(2) 对 $x \\in \\mathbb{R}$ 和 $y \\in (0,1)$ 有 $F^{-1}(y) \\leqslant x \\Leftrightarrow y \\leqslant F(x)$, 进而 $x < F^{-1}(y) \\Leftrightarrow F(x) < y$;\n(3) $F^{-1}$  在  $(0,1)$  上不降且左连续;\n(4) 若 F 在 x 处有跳跃, 则  $F^{-1}$  在区间  $[F(x-), F(x)]$  上恒等于 x;\n(5) 若 $F$ 在非空区间 $(a, b)$ 上恒等于 $y$, 则 $F^{-1}$ 在点 $y$ 处有跳幅不小于 $b - a$ 的跳跃;\n(6) 若 $F^{-1}$ 在 $y$ 处连续, 则当 $F^{-1}(y) < z$ 时有 $y < F(z)$, 而当 $z < F^{-1}(y)$ 时有 $F(z) < y$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.469,
+            0.898,
+            0.511
+          ],
+          "content": "证明 (1) 记 $x_0 = F^{-1}(y)$. 由 (2.4.1) 式可取 $x_n \\downarrow x_0$ 满足 $F(x_n) \\geqslant y$. 再由 $F$ 的右连续性知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.383,
+            0.518,
+            0.617,
+            0.543
+          ],
+          "content": "F (x _ {0}) = \\lim _ {n \\to \\infty} F (x _ {n}) \\geqslant y.",
+          "image_source": "../../raw/pages_0065-0080/images/page_73_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.551,
+            0.898,
+            0.595
+          ],
+          "content": "(2) 若 $F^{-1}(y) \\leqslant x$, 则 $F(F^{-1}(y)) \\leqslant F(x)$. 再由 (1) 得 $y \\leqslant F(x)$. 反之, 若 $y \\leqslant F(x)$, 则由 (2.4.1) 式得 $F^{-1}(y) \\leqslant x$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.599,
+            0.898,
+            0.691
+          ],
+          "content": "(3) 显然 $F^{-1}$ 在 $(0,1)$ 内不降. 任取 $(0,1) \\ni y_n \\uparrow y$. 则 $F^{-1}(y_n) \\leqslant F^{-1}(y)$ 且 $\\{F^{-1}(y_n)\\}$ 不降. 故存在极限 $z := \\lim_{n \\to \\infty} F^{-1}(y_n)$. 显然 $F^{-1}(y_n) \\leqslant z \\leqslant F^{-1}(y)$. 因 $F$ 不降, 再利用 (2) 中所证结果有 $F(z) \\geqslant F(F^{-1}(y_n)) \\geqslant y_n$. 令 $n \\to \\infty$ 得 $F(z) \\geqslant y$. 由 (2.4.1) 式有 $z \\geqslant F^{-1}(y)$. 综上得 $z = F^{-1}(y)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.144,
+            0.696,
+            0.374,
+            0.714
+          ],
+          "content": "(4) 和 (5) 由图 2.1 易见."
+        },
+        {
+          "type": "chart",
+          "bbox": [
+            0.359,
+            0.732,
+            0.642,
+            0.829
+          ],
+          "sub_type": "line",
+          "content": "| X | Y |\n| --- | --- |\n| ~0.25 | ~0.35 |\n| ~0.65 | ~0.65 |",
+          "captions": [
+            {
+              "bbox": [
+                0.232,
+                0.837,
+                0.764,
+                0.856
+              ],
+              "content": "图 2.1 函数  $F: x \\mapsto y$  (黑色) 和广义逆  $F^{-1}: y \\mapsto X$  (蓝色)"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0065-0080/images/page_73_chart_18.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.869,
+            0.898,
+            0.937
+          ],
+          "content": "(6) 设 $F^{-1}$ 在 $y$ 处连续且 $F^{-1}(y) < z$. 显然有 $y \\leqslant F(z)$. 假若 $y = F(z)$, 则 $F$ 在 $[F^{-1}(y), z]$ 上恒等于 $y$. 由 (5) 这与 $F^{-1}$ 在 $y$ 处连续相矛盾. 根据反证法有 $y < F(z)$. 类似地, 当 $z < F^{-1}(y)$ 时有 $F(z) < y$."
+        }
+      ]
+    },
+    {
+      "page_idx": 74,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.064,
+            0.048,
+            0.085,
+            0.059
+          ],
+          "content": "60"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.105,
+            0.046,
+            0.313,
+            0.06
+          ],
+          "content": "第二章 随机变量及其分布"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.145,
+            0.101,
+            0.414,
+            0.121
+          ],
+          "level": 2,
+          "content": "2.4.2 随机变量的构造"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.146,
+            0.9,
+            0.188
+          ],
+          "content": "我们前面已经严格构造了服从均匀分布的随机变量. 从服从均匀分布 $U(0,1)$ 的随机变量出发, 可以构造出具有任意给定分布函数的随机变量. 这就是下面定理的结果."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.194,
+            0.9,
+            0.259
+          ],
+          "content": "定理2.4.3 设 $F$ 为 $\\mathbb{R}$ 上的右连续不降函数且满足 $F(-\\infty) = 0$ 和 $F(\\infty) = 1$ 而 $\\eta$ 是服从均匀分布 $U(0,1)$ 的随机变量. 则 $\\xi := F^{-1}(\\eta)$ 是随机变量且具有分布函数 $F$, 因而 $F$ 是概率分布函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.265,
+            0.9,
+            0.307
+          ],
+          "content": "证明 由推论2.1.6知不降函数 $F^{-1}$ 可测，再由定理2.1.8知 $\\xi = F^{-1}(\\eta)$ 为随机变量.根据命题2.4.2(2)，对任何 $x\\in \\mathbb{R}$ 有"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.242,
+            0.321,
+            0.719,
+            0.342
+          ],
+          "content": "\\mathbf {P} (\\xi \\leqslant x) = \\mathbf {P} \\{F ^ {- 1} (\\eta) \\leqslant x \\} = \\mathbf {P} \\{\\eta \\leqslant F (x) \\} = F (x).",
+          "image_source": "../../raw/pages_0065-0080/images/page_74_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.355,
+            0.309,
+            0.373
+          ],
+          "content": "所以 $\\xi$ 有分布函数 $F$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.145,
+            0.379,
+            0.794,
+            0.398
+          ],
+          "content": "例2.4.2 指数分布 $E(1)$ 的分布函数为 $F(x) = 1 - \\mathrm{e}^{-x}, x > 0$. 易知"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.321,
+            0.412,
+            0.638,
+            0.433
+          ],
+          "content": "F ^ {- 1} (y) = - \\ln (1 - y), \\quad y \\in (0, 1).",
+          "image_source": "../../raw/pages_0065-0080/images/page_74_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.445,
+            0.597,
+            0.464
+          ],
+          "content": "设 $\\eta$ 服从分布 $U(0,1)$. 则 $-\\ln (1 - \\eta)$ 服从分布 $E(1)$."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.469,
+            0.9,
+            0.536
+          ],
+          "content": "例 2.4.3 标准正态分布  $N(0,1)$  的分布函数  $\\Phi$  严格单增, 故必有反函数  $\\Phi^{-1}$ . (该反函数无显示表达, 但其取值可以通过反查正态分布表得到.) 若  $\\eta$  服从分布  $U(0,1)$ , 则  $\\xi := \\Phi^{-1}(\\eta)$  服从分布  $N(0,1)$ ."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.541,
+            0.9,
+            0.582
+          ],
+          "content": "例2.4.4 定理2.4.3的结论提供了人工生成具有任意分布函数 $F$ 的随机变量的方法.这可分成下面的步骤来实现:"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.144,
+            0.589,
+            0.894,
+            0.654
+          ],
+          "sub_type": "text",
+          "content": "(1) 在  $0,1,\\cdots,9$  中有放回地随机抽取 n 个数  $a_{1},a_{2},\\cdots,a_{n}$ ;\n(2) 构造小数  $\\eta_{n}=0.a_{1}a_{2}\\cdots a_{n}$ . 则  $\\eta_{n}$  近似服从分布  $U(0,1)$ ，且 n 越大精度越高；\n(3) 定义  $\\xi_{n}=F^{-1}(\\eta_{n})$ . 则  $\\xi_{n}$  为分布函数近似于 F 的随机变量."
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.144,
+            0.682,
+            0.412,
+            0.703
+          ],
+          "level": 2,
+          "content": "2.4.3 有限测度的构造"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.728,
+            0.896,
+            0.769
+          ],
+          "content": "定理2.4.4 设 $G$ 为 $\\mathbb{R}$ 上的有界右连续不降函数. 则存在 $(\\mathbb{R},\\mathcal{B})$ 上的唯一的有限测度 $\\mu$ 以 $G$ 为分布函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.775,
+            0.9,
+            0.889
+          ],
+          "content": "证明 不妨设 $G(-\\infty) = 0$。当 $G(\\infty) = 0$ 时，定理的结论显然成立。下面考虑 $G(\\infty) > 0$ 的情况。令 $F(x) = G(\\infty)^{-1}G(x), x \\in \\mathbb{R}$。则 $F$ 右连续不降且满足 $F(-\\infty) = 0$ 和 $F(\\infty) = 1$。根据定理2.4.3，存在 $(\\mathbb{R}, \\mathcal{B})$ 上概率测度 $\\mu$ 以 $F$ 为分布函数。显然 $\\nu := G(\\infty)\\mu$ 是 $(\\mathbb{R}, \\mathcal{B})$ 上的以 $G$ 为分布函数的有限测度，其唯一性由定理2.1.13保证。"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.105,
+            0.894,
+            0.9,
+            0.937
+          ],
+          "content": "上面的定理说明 $\\mathbb{R}$ 上的任何有界右连续不降函数都是某个有限测度的分布函数. 基于该定理, 可以证明 $\\mathbb{R}$ 上的任何右连续不降函数都是某个局部有限测度的分布函数."
+        }
+      ]
+    },
+    {
+      "page_idx": 75,
+      "blocks": [
+        {
+          "type": "header",
+          "bbox": [
+            0.652,
+            0.047,
+            0.9,
+            0.062
+          ],
+          "content": "2.4 概率分布函数的实现与分解"
+        },
+        {
+          "type": "page_number",
+          "bbox": [
+            0.921,
+            0.049,
+            0.94,
+            0.06
+          ],
+          "content": "61"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.137,
+            0.1,
+            0.472,
+            0.121
+          ],
+          "level": 2,
+          "content": "\\*2.4.4 概率分布函数的分解"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.146,
+            0.902,
+            0.234
+          ],
+          "content": "前面介绍过两种典型的概率分布函数, 即离散型和绝对连续型的分布函数. 我们称分布函数 $F$ 是奇异连续型的, 是指 $F$ 连续, $F'$ 几乎处处存在且为零 (即使 $F'(x) \\neq 0$ 的所有点 $x$ 构成的集合的勒贝格测度为零). 下面的定理给出了概率分布函数的基本结构的描述."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.15,
+            0.241,
+            0.869,
+            0.26
+          ],
+          "content": "定理 2.4.5（勒贝格分解）任何概率分布函数 F 有唯一的如下形式的分解:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.102,
+            0.279,
+            0.892,
+            0.298
+          ],
+          "content": "F (x) = C _ {1} F _ {1} (x) + C _ {2} F _ {2} (x) + C _ {3} F _ {3} (x), \\quad x \\in \\mathbb {R}, \\quad C _ {1}, C _ {2}, C _ {3} \\geqslant 0 \\text {且} C _ {1} + C _ {2} + C _ {3} = 1",
+          "image_source": "../../raw/pages_0065-0080/images/page_75_equation_5.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.317,
+            0.896,
+            0.357
+          ],
+          "content": "其中 $F_{1}$ 是离散型概率分布函数, $F_{2}$ 是绝对连续型概率分布函数, 而 $F_{3}$ 是奇异绝对连续型概率分布函数."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.365,
+            0.898,
+            0.406
+          ],
+          "content": "对于上面定理的证明感兴趣的读者, 可以参考实分析方面的著作, 如见 [10, pp.335-337]."
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.102,
+            0.413,
+            0.896,
+            0.454
+          ],
+          "content": "例 2.4.5 如图 2.2 所示, 利用著名的康托尔 (Cantor) 集合, 可以分步构造单位区间 [0,1] 上的康托尔函数 F 如下:"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.127,
+            0.469,
+            0.831,
+            0.556
+          ],
+          "content": "F (x) = \\frac {1}{2}, x \\in \\left[ \\frac {1}{3}, \\frac {2}{3} \\right]; F (x) = \\left\\{ \\begin{array}{l l} \\frac {1}{2 ^ {2}}, & x \\in \\left[ \\frac {1}{3 ^ {2}}, \\frac {2}{3 ^ {2}} \\right], \\\\ \\frac {1}{2} + \\frac {1}{2 ^ {2}}, & x \\in \\left[ \\frac {2}{3} + \\frac {1}{3 ^ {2}}, \\frac {2}{3} + \\frac {2}{3 ^ {2}} \\right]; \\end{array} \\right. \\dots .",
+          "image_source": "../../raw/pages_0065-0080/images/page_75_equation_9.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.101,
+            0.569,
+            0.896,
+            0.61
+          ],
+          "content": "可以证明, 函数 $F$ 在 $[0,1]$ 上连续不降, 且有 $F(0+) = 0$ 和 $F(1-) = 1$. 因此可以将其扩张为 $\\mathbb{R}$ 上的概率分布函数."
+        },
+        {
+          "type": "image",
+          "bbox": [
+            0.216,
+            0.627,
+            0.78,
+            0.798
+          ],
+          "content": "",
+          "captions": [
+            {
+              "bbox": [
+                0.381,
+                0.805,
+                0.616,
+                0.822
+              ],
+              "content": "图 2.2 康托尔函数的构造"
+            }
+          ],
+          "footnotes": [],
+          "image_source": "../../raw/pages_0065-0080/images/page_75_image_11.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.143,
+            0.836,
+            0.811,
+            0.855
+          ],
+          "content": "另外, 显然满足  $\\dot{F}^{\\prime}(x)=0$  的点  $x\\in[0,1]$  构成的集合 U 的勒贝格测度为"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.293,
+            0.87,
+            0.66,
+            0.906
+          ],
+          "content": "m (U) = \\frac {1}{3} + \\frac {2}{3 ^ {2}} + \\dots + \\frac {2 ^ {n - 1}}{3 ^ {n}} + \\dots = 1.",
+          "image_source": "../../raw/pages_0065-0080/images/page_75_equation_14.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.1,
+            0.917,
+            0.526,
+            0.935
+          ],
+          "content": "所以 F 的如上扩张是奇异型的概率分布函数."
+        }
+      ]
+    },
+    {
+      "page_idx": 76,
+      "blocks": [
+        {
+          "type": "page_number",
+          "bbox": [
+            0.07,
+            0.047,
+            0.092,
+            0.058
+          ],
+          "content": "62"
+        },
+        {
+          "type": "header",
+          "bbox": [
+            0.111,
+            0.045,
+            0.319,
+            0.059
+          ],
+          "content": "第二章 随机变量及其分布"
+        },
+        {
+          "type": "paragraph_title",
+          "bbox": [
+            0.154,
+            0.1,
+            0.235,
+            0.119
+          ],
+          "level": 2,
+          "content": "练习题"
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.152,
+            0.145,
+            0.891,
+            0.186
+          ],
+          "sub_type": "text",
+          "content": "1. 设随机变量  $\\xi$  服从均匀分布  $U(0,1)$ . 求方程  $x^{2} + 3\\xi x + 1 = 0$  有实根的概率.\n2. 设 $F$ 为 $\\mathbb{R}$ 上的概率分布函数. 定义"
+        },
+        {
+          "type": "equation",
+          "bbox": [
+            0.227,
+            0.199,
+            0.749,
+            0.232
+          ],
+          "content": "\\hat {F} (x) = 1 - F ((- x) -), \\tilde {F} (x) = \\frac {1}{2} [ F (x) + \\hat {F} (x) ], \\quad x \\in \\mathbb {R}.",
+          "image_source": "../../raw/pages_0065-0080/images/page_76_equation_6.jpg"
+        },
+        {
+          "type": "text",
+          "bbox": [
+            0.11,
+            0.243,
+            0.486,
+            0.261
+          ],
+          "content": "证明  $\\hat{F}$  和  $\\tilde{F}$  都是 R 上的概率分布函数."
+        },
+        {
+          "type": "list",
+          "bbox": [
+            0.109,
+            0.267,
+            0.906,
+            0.43
+          ],
+          "sub_type": "text",
+          "content": "3. 在上题的情况下, 设随机变量 $X, \\hat{X}$ 和 $\\tilde{X}$ 分别具有概率分布函数 $F, \\hat{F}$ 和 $\\tilde{F}$. 证明: 对任何 $a \\in \\mathbb{R}$ 有 $\\mathbf{P}(X \\geqslant a) = \\mathbf{P}(\\hat{X} \\leqslant -a)$ 和 $\\mathbf{P}(\\tilde{X} \\geqslant a) = \\mathbf{P}(\\tilde{X} \\leqslant -a)$.\n4. 设 $X$ 是取值于非空区间 $(0, a)$ 的随机变量且有连续的分布函数. 再设对任何子区间 $(b, c) \\subseteq (0, a)$ 概率 $\\mathbf{P}(b < X < c)$ 只和区间长度 $c - b$ 有关. 求 $X$ 的分布.\n5. 设一个质点在零时刻从原点出发, 在数轴的整数点上进行随机游动, 每个单位时间移动一格, 每次向右移动的概率为 $p (0 \\leqslant p \\leqslant 1)$, 向左移动的概率为 $1 - p$, 且每次的移动相互独立. 用 $X_{n}$ 表示 $n$ 时刻质点所处的位置. 对 $0 \\leqslant k \\leqslant n$ 求概率 $\\mathbf{P}(X_{n} = k)$."
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "file_suffix": "pdf",
+    "producer": {
+      "name": "mineru",
+      "version": "4.0.12"
+    },
+    "document": {
+      "modified_at": "2025-07-02T01:22:49+08:00",
+      "producer_application": "Haru Free PDF Library 2.2.1",
+      "page_count": 248,
+      "page_count_kind": "physical"
+    }
+  },
+  "extensions": {
+    "mineru": {
+      "tier": "advanced",
+      "parse_mode": "ocr"
+    },
+    "docvortex_layout": {
+      "version": 1,
+      "pages": [
+        {
+          "page_idx": 0,
+          "width_pt": 521.4992065429688,
+          "height_pt": 728.2941665649414
+        },
+        {
+          "page_idx": 1,
+          "width_pt": 481.8141860961914,
+          "height_pt": 728.2941665649414
+        },
+        {
+          "page_idx": 2,
+          "width_pt": 481.81418800354004,
+          "height_pt": 728.294189453125
+        },
+        {
+          "page_idx": 3,
+          "width_pt": 481.8141860961914,
+          "height_pt": 728.2941665649414
+        },
+        {
+          "page_idx": 4,
+          "width_pt": 481.81418800354004,
+          "height_pt": 728.294189453125
+        },
+        {
+          "page_idx": 5,
+          "width_pt": 481.8141860961914,
+          "height_pt": 728.2941665649414
+        },
+        {
+          "page_idx": 6,
+          "width_pt": 481.81418800354004,
+          "height_pt": 728.294189453125
+        },
+        {
+          "page_idx": 7,
+          "width_pt": 481.8141860961914,
+          "height_pt": 728.2941665649414
+        },
+        {
+          "page_idx": 8,
+          "width_pt": 481.81418800354004,
+          "height_pt": 728.294189453125
+        },
+        {
+          "page_idx": 9,
+          "width_pt": 481.8141860961914,
+          "height_pt": 728.2941665649414
+        },
+        {
+          "page_idx": 10,
+          "width_pt": 481.81418800354004,
+          "height_pt": 728.294189453125
+        },
+        {
+          "page_idx": 11,
+          "width_pt": 481.8141860961914,
+          "height_pt": 728.2941665649414
+        },
+        {
+          "page_idx": 12,
+          "width_pt": 481.81418800354004,
+          "height_pt": 728.294189453125
+        },
+        {
+          "page_idx": 13,
+          "width_pt": 481.8141860961914,
+          "height_pt": 728.2941665649414
+        },
+        {
+          "page_idx": 14,
+          "width_pt": 481.81418800354004,
+          "height_pt": 728.294189453125
+        },
+        {
+          "page_idx": 15,
+          "width_pt": 481.8141860961914,
+          "height_pt": 728.2941665649414
+        }
+      ]
+    }
+  },
+  "is_full_document": false
+}
